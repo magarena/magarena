@@ -1,0 +1,250 @@
+package magic.ui;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.border.Border;
+
+import magic.data.CardDefinitions;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicColoredType;
+import magic.model.MagicType;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.TitleBar;
+
+public class ExplorerFilterPanel extends TexturedPanel implements ActionListener {
+	
+	private static final long serialVersionUID = 1L;
+
+	private static final Comparator<MagicCardDefinition> NAME_COMPARATOR=new Comparator<MagicCardDefinition>() {
+
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+
+			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
+		}
+	};
+	
+	private static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR=new Comparator<MagicCardDefinition>() {
+
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+
+			final int cdif=cardDefinition1.getConvertedCost()-cardDefinition2.getConvertedCost();
+			if (cdif!=0) {
+				return cdif;
+			}
+			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
+		}
+	};
+	
+	private static final Border TYPE_BORDER=BorderFactory.createTitledBorder("Type");
+	private static final Border COLOR_BORDER=BorderFactory.createTitledBorder("Color");
+	private static final Border SORT_BORDER=BorderFactory.createTitledBorder("Sort");
+	
+	private static final String TYPES[]={"Land","Instant","Sorcery","Creature","Artifact","Enchantment"};
+	
+	private final ExplorerPanel explorerPanel;
+	private final JCheckBox typeCheckBoxes[];
+	private final JCheckBox colorCheckBoxes[];
+	private final JCheckBox exactlyCheckBox;
+	private final JCheckBox excludeCheckBox;
+	private final JCheckBox multiCheckBox;
+	private final JRadioButton nameRadioButton;
+	private final JRadioButton convertedRadioButton;
+	
+	public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
+		
+		this.explorerPanel=explorerPanel;
+
+		setLayout(new BorderLayout());
+
+		final TitleBar titleBar=new TitleBar("Filter");
+		add(titleBar,BorderLayout.NORTH);
+
+		final JPanel mainPanel=new JPanel(new BorderLayout(0,2));
+		mainPanel.setOpaque(false);
+		mainPanel.setBorder(FontsAndBorders.BLACK_BORDER);
+		add(mainPanel,BorderLayout.CENTER);
+		
+		// Type
+		final JPanel typeFilterPanel=new JPanel(new BorderLayout(8,0));
+		typeFilterPanel.setOpaque(false);
+		typeFilterPanel.setBorder(TYPE_BORDER);
+		mainPanel.add(typeFilterPanel,BorderLayout.NORTH);
+
+		final JPanel leftTypeFilterPanel=new JPanel(new GridLayout(3,1));
+		leftTypeFilterPanel.setOpaque(false);
+		typeFilterPanel.add(leftTypeFilterPanel,BorderLayout.WEST);
+		final JPanel rightTypeFilterPanel=new JPanel(new GridLayout(3,1));
+		rightTypeFilterPanel.setOpaque(false);
+		typeFilterPanel.add(rightTypeFilterPanel,BorderLayout.CENTER);
+		
+		typeCheckBoxes=new JCheckBox[TYPES.length];
+		for (int index=0;index<TYPES.length;index++) {
+			
+			typeCheckBoxes[index]=new JCheckBox(TYPES[index]);
+			typeCheckBoxes[index].addActionListener(this);
+			typeCheckBoxes[index].setOpaque(false);
+			typeCheckBoxes[index].setFocusPainted(false);
+			if (index<3) {
+				leftTypeFilterPanel.add(typeCheckBoxes[index]);
+			} else {
+				rightTypeFilterPanel.add(typeCheckBoxes[index]);
+			}
+		}
+
+		// Color
+		final JPanel colorFilterPanel=new JPanel(new BorderLayout());
+		colorFilterPanel.setOpaque(false);
+		colorFilterPanel.setBorder(COLOR_BORDER);
+		mainPanel.add(colorFilterPanel,BorderLayout.CENTER);
+
+		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
+		final JPanel colorsPanel=new JPanel(new GridLayout(1,MagicColor.NR_COLORS));
+		colorsPanel.setOpaque(false);
+		int index=0;
+		for (final MagicColor color : MagicColor.values()) {
+
+			final JPanel colorPanel=new JPanel(new BorderLayout());
+			colorPanel.setOpaque(false);
+			colorCheckBoxes[index]=new JCheckBox("",false);
+			colorCheckBoxes[index].addActionListener(this);
+			colorCheckBoxes[index].setOpaque(false);
+			colorCheckBoxes[index].setFocusPainted(false);
+			colorCheckBoxes[index].setActionCommand(""+color.getSymbol());
+			colorPanel.add(colorCheckBoxes[index],BorderLayout.WEST);
+			colorPanel.add(new JLabel(color.getManaType().getIcon(true)),BorderLayout.CENTER);
+			colorsPanel.add(colorPanel);
+			index++;
+		}
+		colorFilterPanel.add(colorsPanel,BorderLayout.NORTH);
+		
+		final JPanel otherColorPanel=new JPanel(new GridLayout(3,1));
+		otherColorPanel.setOpaque(false);
+		exactlyCheckBox=new JCheckBox("Match colors exactly",false);
+		exactlyCheckBox.addActionListener(this);
+		exactlyCheckBox.setOpaque(false);
+		exactlyCheckBox.setFocusPainted(false);
+		otherColorPanel.add(exactlyCheckBox);
+		excludeCheckBox=new JCheckBox("Exclude unselected colors",false);
+		excludeCheckBox.addActionListener(this);
+		excludeCheckBox.setOpaque(false);
+		excludeCheckBox.setFocusPainted(false);
+		otherColorPanel.add(excludeCheckBox);
+		multiCheckBox=new JCheckBox("Match multicolored only",false);
+		multiCheckBox.addActionListener(this);
+		multiCheckBox.setOpaque(false);
+		multiCheckBox.setFocusPainted(false);
+		otherColorPanel.add(multiCheckBox);
+		colorFilterPanel.add(otherColorPanel,BorderLayout.CENTER);
+
+		// Sort
+		final JPanel sortFilterPanel=new JPanel(new BorderLayout(8,0));
+		sortFilterPanel.setOpaque(false);
+		sortFilterPanel.setBorder(SORT_BORDER);
+		mainPanel.add(sortFilterPanel,BorderLayout.SOUTH);		
+
+		final ButtonGroup sortGroup=new ButtonGroup();
+		nameRadioButton=new JRadioButton("Name",true);
+		nameRadioButton.addActionListener(this);
+		nameRadioButton.setOpaque(false);
+		nameRadioButton.setFocusPainted(false);
+		sortGroup.add(nameRadioButton);
+		sortFilterPanel.add(nameRadioButton,BorderLayout.WEST);
+		convertedRadioButton=new JRadioButton("Converted cost",false);
+		convertedRadioButton.addActionListener(this);
+		convertedRadioButton.setOpaque(false);
+		convertedRadioButton.setFocusable(false);
+		sortGroup.add(convertedRadioButton);
+		sortFilterPanel.add(convertedRadioButton,BorderLayout.CENTER);
+	}
+	
+	private boolean filter(final MagicCardDefinition cardDefinition) {
+
+		if (cardDefinition.isToken()) {
+			return false;
+		}
+		
+		if (multiCheckBox.isSelected()&&cardDefinition.getColoredType()!=MagicColoredType.MultiColored) {
+			return false;
+		}
+		
+		boolean useTypes=false;
+		boolean validTypes=false;
+		for (int typeIndex=0;typeIndex<typeCheckBoxes.length;typeIndex++) {
+		
+			if (typeCheckBoxes[typeIndex].isSelected()) {
+				useTypes=true;
+				switch (typeIndex) {
+					case 0: validTypes|=cardDefinition.isLand(); break;
+					case 1: validTypes|=cardDefinition.hasType(MagicType.Instant); break;
+					case 2: validTypes|=cardDefinition.hasType(MagicType.Sorcery); break;
+					case 3: validTypes|=cardDefinition.isCreature(); break;
+					case 4: validTypes|=cardDefinition.hasType(MagicType.Artifact); break;
+					case 5: validTypes|=cardDefinition.isEnchantment(); break;
+				}
+			}
+		}
+		if (useTypes&&!validTypes) {
+			return false;
+		}
+		
+		boolean useColors=false;
+		boolean validColors=false;
+		for (int colorIndex=0;colorIndex<colorCheckBoxes.length;colorIndex++) {
+
+			final MagicColor color=MagicColor.getColor(colorCheckBoxes[colorIndex].getActionCommand().charAt(0));
+			boolean hasColor=color.hasColor(cardDefinition.getColorFlags());
+			if (colorCheckBoxes[colorIndex].isSelected()) {
+				useColors=true;
+				if (hasColor) {
+					validColors=true;
+				} else if (exactlyCheckBox.isSelected()) {
+					return false;
+				}
+			} else if (excludeCheckBox.isSelected()&&hasColor) {
+				return false;
+			}
+		}		
+		return !useColors||validColors;
+	}
+	
+	private Comparator<MagicCardDefinition> getComparator() {
+		
+		return nameRadioButton.isSelected()?NAME_COMPARATOR:CONVERTED_COMPARATOR;
+	}
+	
+	public List<MagicCardDefinition> getCardDefinitions() {
+		
+		final List<MagicCardDefinition> cardDefinitions=new ArrayList<MagicCardDefinition>();
+		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
+			
+			if (filter(cardDefinition)) {
+				cardDefinitions.add(cardDefinition);
+			}
+		}		
+		Collections.sort(cardDefinitions,getComparator());
+		return cardDefinitions;
+	}
+	
+	@Override
+	public void actionPerformed(final ActionEvent event) {
+		
+		explorerPanel.updateCards();
+	}
+}

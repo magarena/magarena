@@ -1,0 +1,257 @@
+package magic.ui.viewer;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+import javax.swing.ImageIcon;
+
+import magic.model.MagicAbility;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
+import magic.model.stack.MagicItemOnStack;
+
+public class PermanentViewerInfo {
+
+	public static final Comparator<PermanentViewerInfo> NAME_COMPARATOR=new Comparator<PermanentViewerInfo>() {
+
+		@Override
+		public int compare(final PermanentViewerInfo permanentInfo1,final PermanentViewerInfo permanentInfo2) {
+
+			final int dif=permanentInfo1.name.compareTo(permanentInfo2.name);
+			if (dif!=0) {
+				return dif;
+			}
+			return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
+		}
+	};
+	
+	public final MagicPermanent permanent;
+	public final MagicCardDefinition cardDefinition;
+	public final String name;
+	public final ImageIcon icon;
+	public final String powerToughness;
+	public final String text;
+	public final int damage;
+	public final int position;
+	public final boolean visible;
+	public final boolean basic;
+	public final boolean mana;
+	public final boolean creature;
+	public final boolean artifact;
+	public final boolean enchantment;
+	public final boolean root;
+	public final boolean tapped;
+	public final boolean attacking;
+	public final boolean blocking;
+	public final boolean blockingInvalid;
+	public final boolean lowered;
+	public final MagicColor manaColor;
+	public final List<PermanentViewerInfo> blockers;
+	public final SortedSet<PermanentViewerInfo> linked;
+	
+	public PermanentViewerInfo(final MagicGame game,final MagicPermanent permanent) {
+		
+		this.permanent=permanent;
+		cardDefinition=permanent.getCardDefinition();
+		name=permanent.getName();
+		icon=permanent.getIcon();
+		powerToughness=getPowerToughness(game,permanent);
+		text=getText(game,permanent);
+		damage=permanent.getDamage();
+		position=getPosition(permanent);
+		visible=permanent.getController()==game.getVisiblePlayer();
+		basic=permanent.hasType(MagicType.Basic);
+		mana=permanent.producesMana();
+		creature=permanent.isCreature();
+		artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature()==null);
+		enchantment=permanent.isEnchanted()||(permanent.isEnchantment()&&permanent.getEnchantedCreature()==null);
+		root=permanent.getEnchantedCreature()==null&&permanent.getEquippedCreature()==null;
+		tapped=permanent.isTapped();
+		attacking=permanent.isAttacking();
+		blocking=permanent.isBlocking();
+		blockingInvalid=permanent.getBlockedCreature()==null;
+		lowered=attacking||(permanent.getEquippedCreature()!=null&&permanent.getEquippedCreature().isAttacking())||
+			  	(permanent.getEnchantedCreature()!=null&&permanent.getEnchantedCreature().isAttacking());
+		manaColor=getManaColor(permanent);
+		blockers=getBlockers(game,permanent);
+		linked=getLinked(game,permanent);
+	}
+	
+	private static String getPowerToughness(final MagicGame game,final MagicPermanent permanent) {
+
+		if (permanent.isCreature()) {
+			final MagicPowerToughness pt=permanent.getPowerToughness(game);
+			return pt.power+"/"+pt.toughness;
+		} 
+		return "";
+	}
+		
+	private static String getText(final MagicGame game,final MagicPermanent permanent) {
+		
+		final StringBuffer textBuffer=new StringBuffer("");			
+		
+		// States
+		if (isTargeted(game,permanent)) {
+			textBuffer.append("{O}");
+		}		
+		if (permanent.isTapped()) {
+			textBuffer.append(MagicPermanentState.Tapped.getText());
+		} else if (!permanent.canTap(game)) {
+			textBuffer.append("{S}");
+		}
+		if (permanent.hasState(MagicPermanentState.DoesNotUntap)) {
+			textBuffer.append(MagicPermanentState.DoesNotUntap.getText());
+		}
+		if (permanent.isRegenerated()) {
+			textBuffer.append(MagicPermanentState.Regenerated.getText());
+		}
+		if (permanent.isBlocked()) {
+			textBuffer.append(MagicPermanentState.Blocked.getText());
+		}
+		if (permanent.getCard().isToken()) {
+			textBuffer.append("{t}");
+		}
+		
+		// Colors
+		final int colorFlags=permanent.getColorFlags();
+		for (final MagicColor color : MagicColor.values()) {
+			
+			if (color.hasColor(colorFlags)) {			
+				textBuffer.append(color.getManaType().getText());
+			}
+		}
+		if (textBuffer.length()>0) { 
+			textBuffer.append(' ');
+		}
+		
+		// Counters
+		for (final MagicCounterType counterType : MagicCounterType.values()) {
+			
+			final int amount=permanent.getCounters(counterType);
+			if (amount>0) {
+				textBuffer.append(counterType.getText()).append(amount).append(' ');
+			}
+		}
+		
+		if (permanent.isCreature()) {
+			// Damage
+			if (permanent.getDamage()>0) {
+				textBuffer.append("{D}").append(permanent.getDamage()).append(' ');
+			}
+			// Prevent damage.
+			if (permanent.getPreventDamage()>0) {
+				textBuffer.append("{P}").append(permanent.getPreventDamage()).append(' ');					
+			}
+		}
+		
+		boolean first=true;
+		final long abilityFlags=permanent.getAllAbilityFlags(game);
+
+		// Sub types.
+		if (!MagicAbility.Changeling.hasAbility(abilityFlags)) {
+			final int subTypeFlags=permanent.getSubTypeFlags();
+			for (final MagicSubType subType : MagicSubType.values()) {
+				
+				if (subType.hasSubType(subTypeFlags)) {
+					if (first) {
+						first=false;
+						if (textBuffer.length()>0) {
+							textBuffer.append("|");
+						}						
+					} else {
+						textBuffer.append(", ");						
+					}
+					textBuffer.append(subType.getName());
+				}
+			}
+		}
+
+		// Abilities
+		for (final MagicAbility ability : MagicAbility.values()) {
+			
+			if (ability.hasAbility(abilityFlags)) {						
+				if (first) {
+					first=false;
+					if (textBuffer.length()>0) {
+						textBuffer.append("|");
+					}
+				} else {
+					textBuffer.append(", ");
+				}
+				textBuffer.append(ability);
+			}
+		}
+		
+		return textBuffer.toString();
+	}	
+	
+	private static int getPosition(final MagicPermanent permanent) {
+
+		if (permanent.isCreature()) {
+			return 2;
+		} else if (permanent.isLand()) {
+			return 1;
+		} else if (permanent.isArtifact()) {
+			return 3;
+		} else {
+			return 4;
+		}
+	}
+	
+	private static boolean isTargeted(final MagicGame game,final MagicPermanent permanent) {
+		
+		for (final MagicItemOnStack itemOnStack : game.getStack()) {
+			
+			if (itemOnStack.containsInChoiceResults(permanent)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	private static MagicColor getManaColor(final MagicPermanent permanent) {
+		
+		final int flags=permanent.getSubTypeFlags();
+		for (final MagicColor color : MagicColor.values()) {
+			
+			if (color.getLandSubType().hasSubType(flags)) {
+				return color;
+			}
+		}
+		return null;
+	}
+	
+	private static List<PermanentViewerInfo> getBlockers(final MagicGame game,final MagicPermanent permanent) {
+		
+		final List<PermanentViewerInfo> blockers=new ArrayList<PermanentViewerInfo>();
+		for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
+			
+			blockers.add(new PermanentViewerInfo(game,blocker));
+		}
+		return blockers;
+	}
+	
+	private static SortedSet<PermanentViewerInfo> getLinked(final MagicGame game,final MagicPermanent permanent) {
+		
+		final SortedSet<PermanentViewerInfo> linked=new TreeSet<PermanentViewerInfo>(NAME_COMPARATOR);
+		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
+		
+			linked.add(new PermanentViewerInfo(game,equipment));
+		}
+		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
+
+			linked.add(new PermanentViewerInfo(game,aura));
+		}
+		return linked;
+	}
+}

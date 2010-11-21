@@ -1,0 +1,77 @@
+package magic.model.target;
+
+import magic.model.MagicAbility;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
+
+public class MagicPumpTargetPicker extends MagicTargetPicker {
+
+	private static final MagicTargetPicker INSTANCE=new MagicPumpTargetPicker();
+	
+	private static final int ATTACKING_UNBLOCKED=5<<12;
+	private static final int ATTACKING_TRAMPLE=4<<12;
+	private static final int ATTACKING=3<<12;
+	private static final int BLOCKING=2<<12;
+	private static final int CAN_TAP=1<<12;
+	
+	private static final int DOUBLE_STRIKE=2<<8;
+	private static final int LIFELINK=1<<8;
+
+	private MagicPumpTargetPicker() {
+		
+	}
+	
+	@Override
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
+
+		final MagicPermanent permanent=(MagicPermanent)target;
+		final MagicPowerToughness pt=permanent.getPowerToughness(game);
+		final long flags=permanent.getAllAbilityFlags(game);
+		int score=0;
+
+		// First level.
+		if (permanent.isAttacking()) {
+			if (permanent.isBlocked()) {
+				if (MagicAbility.Trample.hasAbility(flags)) {
+					score=ATTACKING_TRAMPLE;
+				} else {
+					score=ATTACKING;
+				}
+			} else {
+				score=ATTACKING_UNBLOCKED;
+			}
+		} else if (permanent.isBlocking()) {
+			score=BLOCKING;
+		} else if (permanent.canTap(game)) {
+			score=CAN_TAP;
+		} 
+
+		// Second level.
+		if (MagicAbility.DoubleStrike.hasAbility(flags)) {
+			score+=DOUBLE_STRIKE;
+		} else if (MagicAbility.LifeLink.hasAbility(flags)) {
+			score+=LIFELINK;
+		}
+
+		// Third level.
+		final int power=15-pt.getPositivePower();
+		if (power>0) {
+			score+=power<<4;
+		}
+		
+		// Fourth level.
+		final int toughness=15-pt.getPositiveToughness()+permanent.getDamage();
+		if (toughness>0) {
+			score+=toughness;
+		}
+
+		return permanent.getController()==player?score:-score;
+	}
+
+	public static MagicTargetPicker getInstance() {
+		
+		return INSTANCE;
+	}
+}

@@ -1,0 +1,72 @@
+package magic.model.choice;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.event.MagicEvent;
+import magic.ui.GameController;
+
+public abstract class MagicChoice {
+	
+	public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
+	
+	private final String description;
+	
+	public MagicChoice(final String description) {
+		
+		this.description=description;
+	}
+	
+	public final String getDescription() {
+		
+		return description;
+	}
+	
+	public MagicTargetChoice getTargetChoice() {
+		
+		return null;
+	}
+	
+	public int getManaChoiceResultIndex() {
+		
+		return -1;
+	}
+
+	/** Checks if there are valid options for the choice. */
+	public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+
+		return true;
+	}
+	
+	/** Gets the available options for AI. */
+	public abstract Collection<Object> getArtificialOptions(
+			final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source);
+	
+	/** Gets the choice results for AI. */
+	public List<Object[]> getArtificialChoiceResults(
+			final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+		
+		final Collection<Object> options=getArtificialOptions(game,event,player,source);
+		final int size=options.size();
+		if (size==1) {
+			return Collections.singletonList(new Object[]{options.iterator().next()});
+		} else if (size>1) {
+			final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
+			for (final Object option : options) {
+
+				choiceResultsList.add(new Object[]{option});
+			}
+			return choiceResultsList;
+		} else {
+			return Collections.emptyList();
+		}
+	}
+	
+	/** Gets the choice results of the player. */
+	public abstract Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source);
+}
