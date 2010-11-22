@@ -30,7 +30,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private static final String NAME="Magic Arena";
+	private static final String NAME="Magarena";
 	private static final String SAVE_TOURNAMENT_ITEM="Save";
 	private static final String RESTART_TOURNAMENT_ITEM="Restart";
 	private static final String SWAP_DECKS_ITEM="Swap";
