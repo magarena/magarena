@@ -14,7 +14,7 @@ import magic.ui.MagicFrame;
 
 public class MagicMain {
 	
-	private static final String GAME_PATH="Magic Arena";
+	private static final String GAME_PATH="Magarena";
 		
 	public static void main(String args[]) {		
 

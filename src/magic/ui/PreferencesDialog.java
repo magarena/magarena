@@ -66,12 +66,12 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		final GeneralConfig config=GeneralConfig.getInstance();
 
 		final JLabel skinLabel=new JLabel("Skin");
-		skinLabel.setBounds(25,20,50,25);
+		skinLabel.setBounds(28,20,50,25);
 		mainPanel.add(skinLabel);
 		final ComboBoxModel skinModel=new DefaultComboBoxModel(SKINS);
 		skinComboBox=new JComboBox(skinModel);
 		skinComboBox.setFocusable(false);
-		skinComboBox.setBounds(75,20,275,25);
+		skinComboBox.setBounds(75,20,280,25);
 		skinComboBox.setSelectedIndex(config.getSkin());
 		mainPanel.add(skinComboBox);		
 		
