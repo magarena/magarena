@@ -90,7 +90,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		handSlider.setBounds(190,95,270,50);
 		mainPanel.add(handSlider);
 
-		gameSlider=new SliderPanel("Games",IconImages.GAME,3,9,2,config.getNrOfGames());
+		gameSlider=new SliderPanel("Games",IconImages.GAME,3,11,2,config.getNrOfGames());
 		gameSlider.setBounds(190,165,270,50);
 		mainPanel.add(gameSlider);
 		
