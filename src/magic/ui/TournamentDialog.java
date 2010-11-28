@@ -215,6 +215,16 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			model.addElement("ugr");
 			model.addElement("urw");
 			model.addElement("grw");
+			model.addElement("bu");
+			model.addElement("bg");
+			model.addElement("br");
+			model.addElement("bw");
+			model.addElement("ug");
+			model.addElement("ur");
+			model.addElement("uw");
+			model.addElement("gr");
+			model.addElement("gw");
+			model.addElement("rw");
 			setModel(model);			
 			setSelectedItem(colors);
 			this.setFocusable(false);
@@ -226,7 +236,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 
 			final String colors=(String)value;
 			final JPanel panel=new JPanel(new GridLayout(1,3));
-			for (int i=0;i<3;i++) {
+			for (int i=0;i<colors.length();i++) {
 				
 				final MagicColor color=MagicColor.getColor(colors.charAt(i));
 				panel.add(new JLabel(color.getIcon()));

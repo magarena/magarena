@@ -324,6 +324,20 @@ public class MagicCardDefinition {
 	
 		return cost;
 	}
+	
+	public boolean isPlayable(final MagicPlayerProfile profile) {
+		
+		if (isLand()) {
+			int source=0;
+			for (final MagicColor color : profile.getColors()) {
+				
+				source+=getManaSource(color);
+			}
+			return source>4;
+		} else {
+			return cost.getCostScore(profile)>0;
+		}
+	}
 		
 	public void setEquipCost(final MagicManaCost equipCost) {
 

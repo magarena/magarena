@@ -5,6 +5,7 @@ import java.util.List;
 
 import magic.model.MagicBoosterPack;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
 public class BoosterPackGenerator {
@@ -26,7 +27,7 @@ public class BoosterPackGenerator {
 		}
 		
 		landCards=new ArrayList<MagicCardDefinition>();
-		for (int count=3;count>0;count--) {
+		for (int count=4;count>0;count--) {
 			
 			for (final MagicCardDefinition card : CardDefinitions.getInstance().getLandCards()) {
 			
@@ -35,25 +36,29 @@ public class BoosterPackGenerator {
 		}
 	}
 	
-	private MagicBoosterPack createBoosterPack(final List<MagicCardDefinition> cards,final int size) {
+	private MagicBoosterPack createBoosterPack(final List<MagicCardDefinition> cards,final int size,final MagicPlayerProfile profile) {
 		
 		final MagicBoosterPack pack=new MagicBoosterPack();
-		for (int s=size;s>0;s--) {
+		for (int s=size;s>0;) {
 			
 			final int index=MagicRandom.nextInt(cards.size());
-			pack.add(cards.get(index));
-			cards.remove(index);
+			final MagicCardDefinition cardDefinition=cards.get(index);
+			if (profile==null||cardDefinition.isPlayable(profile)) {
+				pack.add(cardDefinition);
+				cards.remove(index);
+				s--;
+			} 
 		}
 		return pack;
 	}
 	
-	public MagicBoosterPack createSpellBoosterPack(final int size) {
+	public MagicBoosterPack createSpellBoosterPack(final int size,final MagicPlayerProfile profile) {
 		
-		return createBoosterPack(spellCards,size);
+		return createBoosterPack(spellCards,size,profile);
 	}
 		
-	public MagicBoosterPack createLandBoosterPack(final int size) {
+	public MagicBoosterPack createLandBoosterPack(final int size,final MagicPlayerProfile profile) {
 
-		return createBoosterPack(landCards,size);
+		return createBoosterPack(landCards,size,profile);
 	}
 }

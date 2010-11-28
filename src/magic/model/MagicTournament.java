@@ -15,10 +15,7 @@ import magic.data.TournamentConfig;
 import magic.model.phase.MagicDefaultGameplay;
 
 public class MagicTournament {
-	
-	public static final int SPELL_BOOSTER_PACK_SIZE=60;
-	public static final int LAND_BOOSTER_PACK_SIZE=30;
-	
+			
 	private static final String OPPONENT="opponent";
 	private static final String GAME="game";
 	private static final String PLAYED="played";
@@ -184,8 +181,7 @@ public class MagicTournament {
 		final BoosterPackGenerator generator=new BoosterPackGenerator();
 		for (final MagicPlayerDefinition player : playerDefinitions) {
 			
-			player.setBoosterPack(generator.createSpellBoosterPack(SPELL_BOOSTER_PACK_SIZE));
-			player.setLandBoosterPack(generator.createLandBoosterPack(LAND_BOOSTER_PACK_SIZE));			
+			player.setBoosterPacks(generator);
 			player.buildDeck();
 		}
 	}

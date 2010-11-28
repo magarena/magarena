@@ -5,10 +5,13 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
+import magic.data.BoosterPackGenerator;
 import magic.data.CardDefinitions;
 
 public class MagicPlayerDefinition {
 
+	private static final int SPELL_BOOSTER_PACK_SIZE=60;
+	
 	private static final int DECK_COUNT[]={3,6,6,4,3,2};
 	private static final int DECK_COST[]={1,2,3,4,6,10};
 	private static final int DECK_SPELLS=24;
@@ -72,15 +75,12 @@ public class MagicPlayerDefinition {
 		
 		return face;
 	}
-	
-	public void setBoosterPack(final MagicBoosterPack boosterPack) {
+
+	public void setBoosterPacks(final BoosterPackGenerator generator) {
 		
-		this.boosterPack=boosterPack;		
-	}
-		
-	public void setLandBoosterPack(final MagicBoosterPack landBoosterPack) {
-		
-		this.landBoosterPack=landBoosterPack;
+		final boolean three=profile.getNrOfColors()>2;
+		this.boosterPack=generator.createSpellBoosterPack(three?SPELL_BOOSTER_PACK_SIZE:SPELL_BOOSTER_PACK_SIZE+20,null);
+		this.landBoosterPack=generator.createLandBoosterPack(three?MAX_NON_BASIC_SOURCE:MAX_NON_BASIC_SOURCE/2,profile);
 	}
 
 	private MagicDeckCard createCard(final MagicCardDefinition card) {
@@ -148,29 +148,13 @@ public class MagicPlayerDefinition {
 		}
 
 		// Add suitable non basic lands to deck in order of pack.
-		int nonBasicCount=0;
 		final int colorSource[]=new int[MagicColor.NR_COLORS];
 		for (final MagicCardDefinition card : landBoosterPack) {
 
-			int source=0;
+			draftedDeck.add(new MagicDeckCard(card));
 			for (final MagicColor color : MagicColor.values()) {
-				
-				if (colorCount[color.getIndex()]>0) {
-					source+=card.getManaSource(color);
-				}
-			}
-			
-			// Must equal or be better than a basic land.			
-			if (source>4) {
-				draftedDeck.add(new MagicDeckCard(card));
-				for (final MagicColor color : MagicColor.values()) {
 
-					colorSource[color.getIndex()]+=card.getManaSource(color);
-				}
-				nonBasicCount++;
-				if (nonBasicCount==MAX_NON_BASIC_SOURCE) {
-					break;
-				}
+				colorSource[color.getIndex()]+=card.getManaSource(color);
 			}
 		}
 

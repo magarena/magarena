@@ -248,21 +248,23 @@ public class MagicManaCost {
 		int doubleCount=0;
 		int maxSingleCount=0;
 		for (int index=0;index<typeCount;index++) {
-				
-			final MagicManaType profileTypes[]=types[index].getTypes(profile);
-			final int amount=amounts[index];
-			switch (profileTypes.length) {
-				case 0:
-					return 0;
-				case 1:
-					final int typeIndex=profileTypes[0].getIndex();
-					singleCounts[typeIndex]+=amount;
-					maxSingleCount=Math.max(maxSingleCount,singleCounts[typeIndex]);
-					break;
-				case 2:
-					doubleCount+=amount;
-					break;
-			}
+			
+			if (types[index]!=MagicCostManaType.Colorless) {
+				final MagicManaType profileTypes[]=types[index].getTypes(profile);
+				final int amount=amounts[index];
+				switch (profileTypes.length) {
+					case 0:
+						return 0;
+					case 1:
+						final int typeIndex=profileTypes[0].getIndex();
+						singleCounts[typeIndex]+=amount;
+						maxSingleCount=Math.max(maxSingleCount,singleCounts[typeIndex]);
+						break;
+					case 2:
+						doubleCount+=amount;
+						break;
+				}
+			} 
 		}
 		return 2*converted+3*(10-SINGLE_PENALTY[maxSingleCount]-DOUBLE_PENALTY[doubleCount]);
 	}

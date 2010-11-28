@@ -25,6 +25,11 @@ public class MagicPlayerProfile {
 		return colors;
 	}
 	
+	public int getNrOfColors() {
+		
+		return colors.length;
+	}
+	
 	public boolean allowsManaType(final MagicManaType manaType) {
 		
 		for (final MagicColor color : colors) {
