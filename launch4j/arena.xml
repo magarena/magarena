@@ -1,7 +1,7 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>arena.jar</jar>
+  <jar>Magarena.jar</jar>
   <outfile>Magarena.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>

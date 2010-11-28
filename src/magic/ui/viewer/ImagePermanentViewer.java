@@ -233,6 +233,29 @@ public class ImagePermanentViewer extends JPanel {
 				g.drawImage(image,x1,y1,x2,y2,0,0,CardImages.CARD_WIDTH,CardImages.CARD_HEIGHT,this);
 			}
 			
+			if (permanentInfo.creature) {
+				// Common combat ability icons.
+				final long abilityFlags=linkedInfo.abilityFlags;
+				int ax=x1;
+				int ay=y2-17;
+				if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
+					g.drawImage(IconImages.FLYING.getImage(),ax,ay,this);
+					ax+=16;
+				}
+				if (MagicAbility.FirstStrike.hasAbility(abilityFlags)||MagicAbility.DoubleStrike.hasAbility(abilityFlags)) {				
+					g.drawImage(IconImages.STRIKE.getImage(),ax,ay,this);
+					ax+=16;
+				}
+				if (MagicAbility.Trample.hasAbility(abilityFlags)) {
+					g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,this);
+					ax+=16;				
+				}
+				if (MagicAbility.Deathtouch.hasAbility(abilityFlags)) {
+					g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,this);
+					ax+=16;								
+				}
+			}
+			
 			final String pt=linkedInfo.powerToughness;
 			if (!pt.isEmpty()) {
 				final String damage=linkedInfo.damage>0?String.valueOf(linkedInfo.damage):null;
@@ -243,29 +266,7 @@ public class ImagePermanentViewer extends JPanel {
 					drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(damage!=null?32:18),true);
 				}
 			}
-			
-			if (permanentInfo.creature) {
-				// Common combat ability icons.
-				final long abilityFlags=permanentInfo.abilityFlags;
-				int ax=x1+4;
-				if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
-					g.drawImage(IconImages.FLYING.getImage(),ax,y1+(y2-y1)/2-8,this);
-					ax+=16;
-				}
-				if (MagicAbility.FirstStrike.hasAbility(abilityFlags)||MagicAbility.DoubleStrike.hasAbility(abilityFlags)) {				
-					g.drawImage(IconImages.STRIKE.getImage(),ax,y1+(y2-y1)/2-8,this);
-					ax+=16;
-				}
-				if (MagicAbility.Trample.hasAbility(abilityFlags)) {
-					g.drawImage(IconImages.TRAMPLE.getImage(),ax,y1+(y2-y1)/2-8,this);
-					ax+=16;				
-				}
-				if (MagicAbility.Deathtouch.hasAbility(abilityFlags)) {
-					g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,y1+(y2-y1)/2-8,this);
-					ax+=16;								
-				}
-			}
-			
+						
 			if (viewer.isValidChoice(linkedInfo)) {
 				g2d.setPaint(viewer.getController().isCombatChoice()?FontsAndBorders.COMBAT_TARGET_COLOR:FontsAndBorders.TARGET_COLOR);
 				g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);

@@ -106,6 +106,7 @@ public class TestGameBuilder {
 		addToHand(player,"Lightning Bolt",1);
 		addToHand(player,"Fire Servant",1);
 		createPermanent(game,player,"Fire Servant",false,1);
+		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);		
 		createPermanent(game,opponent,"Forest",true,1);
 		createPermanent(game,opponent,"Bottle Gnomes",false,1);
 		createPermanent(game,opponent,"Deadly Recluse",true,1);
