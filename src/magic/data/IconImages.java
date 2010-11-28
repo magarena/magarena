@@ -88,6 +88,11 @@ public class IconImages {
 	public static final ImageIcon TARGET=loadIcon("target.gif");
 	public static final ImageIcon VALID=loadIcon("valid.gif");
 	public static final ImageIcon STRENGTH=loadIcon("strength.png");
+	
+	public static final ImageIcon FLYING=loadIcon("flying.png");
+	public static final ImageIcon TRAMPLE=loadIcon("trample.png");
+	public static final ImageIcon STRIKE=loadIcon("strike.png");
+	public static final ImageIcon DEATHTOUCH=loadIcon("deathtouch.png");
 
 	public static final ImageIcon TAPPED=loadSymbolIcon("tapped.gif");
 	public static final ImageIcon ONE=loadSymbolIcon("big_one.gif");

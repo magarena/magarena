@@ -20,6 +20,8 @@ import java.util.List;
 import javax.swing.JPanel;
 
 import magic.data.CardImages;
+import magic.data.IconImages;
+import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.ui.widget.FontsAndBorders;
 
@@ -239,6 +241,28 @@ public class ImagePermanentViewer extends JPanel {
 					drawCreatureInfo(g,metrics,pt,ptWidth,damage,x1,y1,false);
 				} else {
 					drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(damage!=null?32:18),true);
+				}
+			}
+			
+			if (permanentInfo.creature) {
+				// Common combat ability icons.
+				final long abilityFlags=permanentInfo.abilityFlags;
+				int ax=x1+4;
+				if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
+					g.drawImage(IconImages.FLYING.getImage(),ax,y1+(y2-y1)/2-8,this);
+					ax+=16;
+				}
+				if (MagicAbility.FirstStrike.hasAbility(abilityFlags)||MagicAbility.DoubleStrike.hasAbility(abilityFlags)) {				
+					g.drawImage(IconImages.STRIKE.getImage(),ax,y1+(y2-y1)/2-8,this);
+					ax+=16;
+				}
+				if (MagicAbility.Trample.hasAbility(abilityFlags)) {
+					g.drawImage(IconImages.TRAMPLE.getImage(),ax,y1+(y2-y1)/2-8,this);
+					ax+=16;				
+				}
+				if (MagicAbility.Deathtouch.hasAbility(abilityFlags)) {
+					g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,y1+(y2-y1)/2-8,this);
+					ax+=16;								
 				}
 			}
 			

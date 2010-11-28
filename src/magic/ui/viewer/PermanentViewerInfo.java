@@ -41,6 +41,7 @@ public class PermanentViewerInfo {
 	public final ImageIcon icon;
 	public final String powerToughness;
 	public final String text;
+	public final long abilityFlags;
 	public final int damage;
 	public final int position;
 	public final boolean visible;
@@ -66,7 +67,8 @@ public class PermanentViewerInfo {
 		name=permanent.getName();
 		icon=permanent.getIcon();
 		powerToughness=getPowerToughness(game,permanent);
-		text=getText(game,permanent);
+		abilityFlags=permanent.getAllAbilityFlags(game);
+		text=getText(game,permanent,abilityFlags);
 		damage=permanent.getDamage();
 		position=getPosition(permanent);
 		visible=permanent.getController()==game.getVisiblePlayer();
@@ -96,7 +98,7 @@ public class PermanentViewerInfo {
 		return "";
 	}
 		
-	private static String getText(final MagicGame game,final MagicPermanent permanent) {
+	private static String getText(final MagicGame game,final MagicPermanent permanent,final long abilityFlags) {
 		
 		final StringBuffer textBuffer=new StringBuffer("");			
 		
@@ -155,7 +157,6 @@ public class PermanentViewerInfo {
 		}
 		
 		boolean first=true;
-		final long abilityFlags=permanent.getAllAbilityFlags(game);
 
 		// Sub types.
 		if (!MagicAbility.Changeling.hasAbility(abilityFlags)) {
