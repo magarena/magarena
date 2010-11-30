@@ -2593,6 +2593,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicTrampleTargetPicker.getInstance());
 	private static final MagicSpellCardEvent SERRAS_EMBRACE=new MagicPlayAuraEvent("Serra's Embrace",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
+	private static final MagicSpellCardEvent SPIDER_UMBRA=new MagicPlayAuraEvent("Spider Umbra",
+			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());	
 	private static final MagicSpellCardEvent TORPOR_DUST=new MagicPlayAuraEvent("Torpor Dust",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(3,0));
 	private static final MagicSpellCardEvent VOLCANIC_STRENGTH=new MagicPlayAuraEvent("Volcanic Strength",
@@ -2727,6 +2729,7 @@ public class CardEventDefinitions {
 		PROTECTIVE_BUBBLE,
 		RANCOR,
 		SERRAS_EMBRACE,
+		SPIDER_UMBRA,
 		TORPOR_DUST,
 		VOLCANIC_STRENGTH,
 		WEAKNESS

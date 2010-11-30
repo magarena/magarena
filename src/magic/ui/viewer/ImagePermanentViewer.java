@@ -236,7 +236,7 @@ public class ImagePermanentViewer extends JPanel {
 			if (permanentInfo.creature) {
 				// Common combat ability icons.
 				final long abilityFlags=linkedInfo.abilityFlags;
-				int ax=x1;
+				int ax=x1+1;
 				int ay=y2-17;
 				if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
 					g.drawImage(IconImages.FLYING.getImage(),ax,ay,this);

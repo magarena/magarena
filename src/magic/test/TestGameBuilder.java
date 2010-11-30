@@ -90,8 +90,8 @@ public class TestGameBuilder {
 		tournament.setDifficulty(6);
 		
 		final MagicPlayerProfile profile=new MagicPlayerProfile("bw");
-		final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,11);
-		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,16);	
+		final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
+		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);	
 		tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
 		tournament.setStartPlayer(0);
 		
@@ -105,8 +105,11 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Mogg Fanatic",1);
 		addToHand(player,"Lightning Bolt",1);
 		addToHand(player,"Fire Servant",1);
+		addToHand(player,"Spider Umbra",1);
+		addToHand(player,"Plummet",1);		
+		createPermanent(game,player,"Copperline Gorge",false,1);
 		createPermanent(game,player,"Fire Servant",false,1);
-		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);		
+		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
 		createPermanent(game,opponent,"Forest",true,1);
 		createPermanent(game,opponent,"Bottle Gnomes",false,1);
 		createPermanent(game,opponent,"Deadly Recluse",true,1);
