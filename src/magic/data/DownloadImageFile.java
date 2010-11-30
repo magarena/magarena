@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.Proxy;
 import java.net.URL;
 
 public class DownloadImageFile {
@@ -23,11 +24,11 @@ public class DownloadImageFile {
 		return file.getName();
 	}
 	
-	public void download() {
+	public void download(final Proxy proxy) {
 
 		try {
 			final OutputStream outputStream=new BufferedOutputStream(new FileOutputStream(file));
-			final InputStream inputStream=url.openStream();
+			final InputStream inputStream=url.openConnection(proxy).getInputStream();
 			final byte buffer[]=new byte[65536];
 			while (true) {
 				
