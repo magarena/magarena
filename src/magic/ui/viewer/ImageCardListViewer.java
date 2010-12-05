@@ -18,7 +18,6 @@ import javax.swing.JPanel;
 
 import magic.data.CardImages;
 import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
 import magic.ui.widget.FontsAndBorders;
@@ -73,11 +72,11 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
 				final int index=getCardIndexAt(event.getX(),event.getY());
 				if (index>=0) {
-					final MagicCardDefinition cardDefinition=cardList.get(index).getCardDefinition();					
+					final MagicCard card=cardList.get(index);
 					final Point pointOnScreen=getLocationOnScreen();
 					final Point point=cardPoints.get(index);
 					final Rectangle rect=new Rectangle(pointOnScreen.x+point.x,pointOnScreen.y+point.y,CARD_WIDTH,CARD_HEIGHT);
-					ImageCardListViewer.this.controller.viewInfoAbove(cardDefinition,rect);
+					ImageCardListViewer.this.controller.viewInfoAbove(card.getCardDefinition(),card.getImageIndex(),rect);
 				} else {
 					ImageCardListViewer.this.controller.hideInfo();
 				}
@@ -121,7 +120,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		this.cardList=cardList;
 		this.cardPoints=cardPoints;
 	}
-		
+
 	@Override
 	public void paint(final Graphics g) {
 		
@@ -138,7 +137,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			
 			final MagicCard card=cardList.get(index);
 			final Point point=cardPoints.get(index);
-			final BufferedImage image=CardImages.getInstance().getImage(card.getCardDefinition());
+			final BufferedImage image=CardImages.getInstance().getImage(card.getCardDefinition(),card.getImageIndex());
 			g.drawImage(image,point.x,point.y,point.x+CARD_WIDTH,point.y+CARD_HEIGHT,0,0,CardImages.CARD_WIDTH,CardImages.CARD_HEIGHT,this);
 			if (validChoices.contains(card)) {
 				g2d.fillRect(point.x-1,point.y-1,CARD_WIDTH+2,CARD_HEIGHT+2);

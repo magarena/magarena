@@ -138,9 +138,9 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
 			if (image) {
 				final Rectangle rect=new Rectangle(StackViewer.this.getLocationOnScreen().x,getLocationOnScreen().y,StackViewer.this.getWidth(),getHeight());
-				controller.viewInfoRight(stackInfo.cardDefinition,rect);				
+				controller.viewInfoRight(stackInfo.cardDefinition,0,rect);				
 			} else {
-				controller.viewCard(stackInfo.cardDefinition);
+				controller.viewCard(stackInfo.cardDefinition,0);
 			}
 		}
 		

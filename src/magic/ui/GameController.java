@@ -14,6 +14,7 @@ import javax.swing.SwingUtilities;
 
 import magic.ai.ArtificialWorkerPool;
 import magic.data.IconImages;
+import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicSource;
@@ -141,12 +142,17 @@ public class GameController {
 		this.gameViewer=gameViewer;
 	}
 	
-	public void viewCard(final MagicCardDefinition cardDefinition) {
-		
-		cardViewer.setCard(cardDefinition);
+	public void viewCard(final MagicCard card) {
+
+		cardViewer.setCard(card.getCardDefinition(),card.getImageIndex());
 	}
 	
-	public void viewInfoAbove(final MagicCardDefinition cardDefinition,final Rectangle rect) {
+	public void viewCard(final MagicCardDefinition cardDefinition,final int index) {
+		
+		cardViewer.setCard(cardDefinition,index);
+	}
+	
+	public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
 
 		final Dimension size=gamePanel.getSize();
 		final Point pointOnScreen=gamePanel.getLocationOnScreen();
@@ -160,12 +166,12 @@ public class GameController {
 		if (y<10) {
 			y=rect.y+rect.height+6;
 		}
-		imageCardViewer.setCard(cardDefinition);
+		imageCardViewer.setCard(cardDefinition,index);
 		imageCardViewer.setLocation(x,y);
 		DelayedViewersThread.getInstance().showViewer(imageCardViewer,CARD_VIEW_DELAY);
 	}
 	
-	public void viewInfoRight(final MagicCardDefinition cardDefinition,final Rectangle rect) {
+	public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
 
 		final Dimension size=gamePanel.getSize();
 		final Point pointOnScreen=gamePanel.getLocationOnScreen();
@@ -179,7 +185,7 @@ public class GameController {
 		} else if (y>maxY) {
 			y=maxY;
 		}
-		imageCardViewer.setCard(cardDefinition);
+		imageCardViewer.setCard(cardDefinition,index);
 		imageCardViewer.setLocation(x,y);		
 		DelayedViewersThread.getInstance().showViewer(imageCardViewer,CARD_VIEW_DELAY);
 	}

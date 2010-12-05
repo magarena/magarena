@@ -39,6 +39,7 @@ public class PermanentViewerInfo {
 	public final MagicCardDefinition cardDefinition;
 	public final String name;
 	public final ImageIcon icon;
+	public final int index;
 	public final String powerToughness;
 	public final String text;
 	public final long abilityFlags;
@@ -66,6 +67,7 @@ public class PermanentViewerInfo {
 		cardDefinition=permanent.getCardDefinition();
 		name=permanent.getName();
 		icon=permanent.getIcon();
+		index=permanent.getCard().getImageIndex();
 		powerToughness=getPowerToughness(game,permanent);
 		abilityFlags=permanent.getAllAbilityFlags(game);
 		text=getText(game,permanent,abilityFlags);

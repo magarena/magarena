@@ -216,6 +216,7 @@ Flame-Kin Zealot.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiversei
 Flametongue Kavu.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205392&type=card
 Flight of Fancy.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83677&type=card
 Forest.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=195158
+Forest2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73946&type=card
 Foul Imp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197012&type=card
 Frenzied Goblin.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=87947&type=card
 Furnace Whelp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=189227&type=card
@@ -265,6 +266,7 @@ Inkfathom Infiltrator.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiv
 Inspirit.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=84552&type=card
 Iridescent Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=31799&type=card
 Island.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=201966
+Island2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73951&type=card
 Jhessian Balmgiver.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=174791&type=card
 Jhessian Infiltrator.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175392&type=card
 Jund Hackblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188973&type=card
@@ -329,6 +331,7 @@ Mordant Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=
 Moroii.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83631&type=card
 Mortify.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96930&type=card
 Mountain.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=201968
+Mountain2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73958&type=card
 Murderous Redcap.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=153298&type=card
 Murkfiend Liege.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=152091&type=card
 Mystic Snake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=109693&type=card
@@ -350,6 +353,7 @@ Perimeter Captain.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Phyrexian Arena.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205417&type=card
 Pillory of the Sleepless.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96882&type=card
 Plains.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=195179
+Plains2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73963&type=card
 Platinum Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=206329&type=card
 Plumeveil.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=153980&type=card
 Plummet.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220514&type=card
@@ -459,6 +463,7 @@ Stupor.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=108923&t
 Sunpetal Grove.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205124&type=card
 Surveilling Sprite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=87904&type=card
 Swamp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=201977
+Swamp2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73973&type=card
 Sword of Fire and Ice.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=46429&type=card
 Sword of Light and Shadow.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=47453&type=card
 Sword of Vengeance.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205044&type=card

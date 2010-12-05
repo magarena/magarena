@@ -17,7 +17,8 @@ public class CardViewer extends JPanel {
 
 	private final JLabel cardLabel;
 	private MagicCardDefinition currentCardDefinition=null;
-		
+	private int currentIndex=0;
+	
 	public CardViewer(final boolean image) {
 		
 		this.setLayout(new BorderLayout());
@@ -32,14 +33,15 @@ public class CardViewer extends JPanel {
 		cardLabel=new JLabel();
 		add(cardLabel,BorderLayout.CENTER);
 		
-		setCard(MagicCardDefinition.EMPTY);
+		setCard(MagicCardDefinition.EMPTY,0);
 	}
 	
-	public void setCard(final MagicCardDefinition cardDefinition) {
+	public void setCard(final MagicCardDefinition cardDefinition,final int index) {
 
-		if (cardDefinition!=currentCardDefinition) {
+		if (cardDefinition!=currentCardDefinition||index!=currentIndex) {
 			currentCardDefinition=cardDefinition;
-			cardLabel.setIcon(new ImageIcon(CardImages.getInstance().getImage(cardDefinition)));
+			currentIndex=index;
+			cardLabel.setIcon(new ImageIcon(CardImages.getInstance().getImage(cardDefinition,index)));
 			repaint();
 		}
 	}

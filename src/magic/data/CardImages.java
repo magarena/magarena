@@ -17,6 +17,7 @@ import magic.model.MagicCardDefinition;
 
 public class CardImages {
 	
+	public static final String IMAGE_EXTENSION=".jpg";
 	public static final int CARD_WIDTH=203;
 	public static final int CARD_HEIGHT=289;
 	public static final int CARD_FULL_WIDTH=223;
@@ -24,16 +25,23 @@ public class CardImages {
 	
 	private static final CardImages INSTANCE=new CardImages();
 
-	private final Map<MagicCardDefinition,BufferedImage> imagesMap;
+	private final Map<MagicCardDefinition,BufferedImage[]> imagesMap;
 	
 	private CardImages() {
 		
-		imagesMap=new HashMap<MagicCardDefinition,BufferedImage>();
+		imagesMap=new HashMap<MagicCardDefinition,BufferedImage[]>();
 	}
 	
-	private String getFilename(final MagicCardDefinition card) {
+	private String[] getFilenames(final MagicCardDefinition card) {
+
+		final String filenames[]=new String[card.getImageCount()];
+		final String imagePath=MagicMain.getGamePath()+File.separator+(card.isToken()?"tokens":"cards")+File.separator;
+		final String imageFilename=card.getImageName();
+		for (int index=0;index<card.getImageCount();index++) {
 		
-		return MagicMain.getGamePath()+File.separator+(card.isToken()?"tokens":"cards")+File.separator+card.getImageName();
+			filenames[index]=imagePath+imageFilename+(index>0?String.valueOf(index+1):"")+IMAGE_EXTENSION;
+		}		
+		return filenames;
 	}
 	
 	private static BufferedImage loadCardImage(final String filename) {
@@ -59,25 +67,29 @@ public class CardImages {
 		}
 	}
 	
-	public BufferedImage getImage(final MagicCardDefinition card) {
+	public BufferedImage getImage(final MagicCardDefinition card,final int index) {
 		
 		if (card==null) {
 			return IconImages.MISSING;
 		}
 		
 		synchronized (imagesMap) {
-			final BufferedImage image=imagesMap.get(card);
-			if (image!=null) {
-				return image;
+			final BufferedImage images[]=imagesMap.get(card);
+			if (images!=null) {
+				return images[index%images.length];
 			}
 		}
 		
-		final String filename=getFilename(card);
-		final BufferedImage image=loadCardImage(filename);
+		final String[] filenames=getFilenames(card);
+		final BufferedImage images[]=new BufferedImage[filenames.length];
+		for (int i=0;i<filenames.length;i++) {
+
+			images[i]=loadCardImage(filenames[i]);
+		}
 		
 		synchronized (imagesMap) {
-			imagesMap.put(card,image);			
-			return image;
+			imagesMap.put(card,images);			
+			return images[index%images.length];
 		}
 	}
 	

@@ -64,7 +64,7 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 	@Override
 	public void mouseEntered() {
 
-		controller.viewCard(permanentInfo.cardDefinition);
+		controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);
 	}
 	
 	@Override

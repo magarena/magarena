@@ -22,7 +22,6 @@ import javax.swing.JPanel;
 import magic.data.CardImages;
 import magic.data.IconImages;
 import magic.model.MagicAbility;
-import magic.model.MagicCardDefinition;
 import magic.ui.widget.FontsAndBorders;
 
 public class ImagePermanentViewer extends JPanel {
@@ -79,12 +78,12 @@ public class ImagePermanentViewer extends JPanel {
 
 				final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
 				if (index>=0) {
-					final MagicCardDefinition cardDefinition=linkedInfos.get(index).cardDefinition;
+					final PermanentViewerInfo info=linkedInfos.get(index);
 					final Point pointOnScreen=getLocationOnScreen();
 					final Rectangle rect=new Rectangle(linkedScreenRectangles.get(index));
 					rect.x+=pointOnScreen.x;
 					rect.y+=pointOnScreen.y;
-					viewer.getController().viewInfoAbove(cardDefinition,rect);
+					viewer.getController().viewInfoAbove(info.cardDefinition,info.index,rect);
 				} else {
 					viewer.getController().hideInfo();
 				}				
@@ -213,7 +212,7 @@ public class ImagePermanentViewer extends JPanel {
 		for (int index=0;index<linkedScreenRectangles.size();index++) {
 
 			final PermanentViewerInfo linkedInfo=linkedInfos.get(index);
-			final BufferedImage image=CardImages.getInstance().getImage(linkedInfo.cardDefinition);
+			final BufferedImage image=CardImages.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index);
 			final Rectangle linkedRect=linkedScreenRectangles.get(index);
 			final int x1=linkedRect.x;
 			final int y1=linkedRect.y;

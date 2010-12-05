@@ -63,7 +63,8 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 
 		final MagicCardList cardList=getCardList();
 		if (cardList.size()>0) {
-			controller.viewCard(cardList.getCardAtBottom().getCardDefinition());
+			final MagicCard bottomCard=cardList.getCardAtBottom();
+			controller.viewCard(bottomCard);
 		}		
 	}
 		
@@ -147,7 +148,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 		@Override
 		public void mouseEntered() {
 			
-			controller.viewCard(card.getCardDefinition());
+			controller.viewCard(card);
 		}
 
 		@Override

@@ -53,7 +53,6 @@ public class MagicCardDefinition {
 	public static final Color RARITY_COLORS[]={COMMON_COLOR,COMMON_COLOR,UNCOMMON_COLOR,RARE_COLOR};
 	public static final String RARITY_NAMES[]={"Basic","Common","Uncommon","Rare"};
 	public static final int NR_OF_RARITIES=4;
-	public static final String IMAGE_EXTENSION=".jpg";
 
 	public static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES=Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
 
@@ -127,7 +126,12 @@ public class MagicCardDefinition {
 	
 	public String getImageName() {
 		
-		return fullName+IMAGE_EXTENSION;
+		return fullName;
+	}
+	
+	public int getImageCount() {
+		
+		return hasType(MagicType.Basic)?2:1;
 	}
 	
 	public void setValue(final int value) {

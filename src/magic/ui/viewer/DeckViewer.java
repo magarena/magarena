@@ -68,7 +68,7 @@ public class DeckViewer extends JPanel implements ChangeListener {
 	
 	private void setCardImage(final DeckEntry entry) {
 
-		cardViewer.setCard(entry.card);
+		cardViewer.setCard(entry.card,0);
 	}
 
 	public void setNameFont(final Font nameFont) {

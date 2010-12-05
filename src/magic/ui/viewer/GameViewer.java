@@ -98,10 +98,10 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 				final MagicCardDefinition cardDefinition=controller.getSourceCardDefinition();
 				if (cardDefinition!=null) {
 					if (GeneralConfig.getInstance().getTextView()) {
-						controller.viewCard(cardDefinition);
+						controller.viewCard(cardDefinition,0);
 					} else {
 						final Point point=getLocationOnScreen();
-						controller.viewInfoAbove(cardDefinition,new Rectangle(point.x,point.y-20,getWidth(),getHeight()));
+						controller.viewInfoAbove(cardDefinition,0,new Rectangle(point.x,point.y-20,getWidth(),getHeight()));
 					}
 				}
 			}

@@ -60,7 +60,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		cardViewer=new CardViewer(false);
 		cardViewer.setSize(CARD_WIDTH,CARD_HEIGHT);		
-		cardViewer.setCard(null);
+		cardViewer.setCard(null,0);
 		add(cardViewer);
 		
 		filterPanel=new ExplorerFilterPanel(this);
@@ -130,9 +130,9 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private void update() {
 
 		if (cardDefinitions.isEmpty()) {
-			cardViewer.setCard(null);
+			cardViewer.setCard(null,0);
  		} else {
- 			cardViewer.setCard(cardDefinitions.get(0));
+ 			cardViewer.setCard(cardDefinitions.get(0),0);
  		}
 		cardsPanel.removeAll();
 
@@ -220,7 +220,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 				@Override
 				public void mouseEntered(final MouseEvent event) {
 
-					CardLabel.this.cardViewer.setCard(CardLabel.this.cardDefinition);
+					CardLabel.this.cardViewer.setCard(CardLabel.this.cardDefinition,0);
 				}
 			});
 		}

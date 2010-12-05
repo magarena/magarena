@@ -15,12 +15,14 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	private boolean token=false;
 	private boolean known=true;
 	private int id;
+	private int imageIndex=0;
 	
 	public MagicCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner,final int id) {
 
 		this.cardDefinition=cardDefinition;
 		this.owner=owner;
 		this.id=id;
+		imageIndex=MagicRandom.nextInt(100);
 	}
 	
 	public MagicCard(final MagicDeckCard card,final MagicPlayer owner,final int id) {
@@ -63,6 +65,11 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	public long getId() {
 		
 		return id;
+	}
+	
+	public int getImageIndex() {
+		
+		return imageIndex;
 	}
 
 	public MagicCardDefinition getCardDefinition() {

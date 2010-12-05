@@ -52,7 +52,7 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
 	@Override
 	public void mouseEntered() {
 
-		controller.viewCard(permanentInfo.cardDefinition);		
+		controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);		
 	}
 	
 	@Override
