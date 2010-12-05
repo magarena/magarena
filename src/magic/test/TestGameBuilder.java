@@ -38,6 +38,15 @@ public class TestGameBuilder {
 			player.getGraveyard().addToTop(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
 		}
 	}
+
+	public static void addToExile(final MagicPlayer player,final String name,final int count) {
+		
+		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
+		for (int c=count;c>0;c--) {
+			
+			player.getExile().addToTop(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
+		}
+	}
 	
 	public static void addToHand(final MagicPlayer player,final String name,final int count) {
 		
@@ -100,20 +109,16 @@ public class TestGameBuilder {
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
 
-		addToLibrary(player,"Mountain",10);
+		addToLibrary(player,"Plains",10);
 		addToLibrary(opponent,"Forest",10);
 		addToGraveyard(player,"Mogg Fanatic",1);
-		addToHand(player,"Lightning Bolt",1);
-		addToHand(player,"Fire Servant",1);
-		addToHand(player,"Spider Umbra",1);
-		addToHand(player,"Plummet",1);		
-		createPermanent(game,player,"Copperline Gorge",false,1);
-		createPermanent(game,player,"Fire Servant",false,1);
-		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
-		createPermanent(game,opponent,"Forest",true,1);
+		addToGraveyard(opponent,"Lightning Bolt",1);
+		addToExile(player,"Stormfront Pegasus",1);
+		addToHand(player,"Unmake",1);
+		addToHand(player,"Swords to Plowshares",1);
+		createPermanent(game,player,"Wrexial, the Risen Deep",true,1);
 		createPermanent(game,opponent,"Bottle Gnomes",false,1);
-		createPermanent(game,opponent,"Deadly Recluse",true,1);
-		createPermanent(game,opponent,"Accorder's Shield",false,1);
+		createPermanent(game,opponent,"Deadly Recluse",false,1);
 		
 		return game;
 	}

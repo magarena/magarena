@@ -1419,7 +1419,7 @@ public class TriggerDefinitions {
 			return new MagicEvent(permanent,player,MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,MagicGraveyardTargetPicker.getInstance(),
 				new Object[]{player},this,
 				"Put target creature card$ in an opponent's graveyard onto the battlefield under your control. "+
-				"It has haste. At the end of your turn, remove it from the game.");
+				"It has haste. At the end of your turn, exile it.");
 		}
 		
 		@Override
@@ -2084,7 +2084,7 @@ public class TriggerDefinitions {
 				if (card!=null) {
 					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
 					final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,(MagicPlayer)data[0],MagicPayedCost.NO_COST);
-					cardOnStack.setMoveLocation(MagicLocationType.Exiled);
+					cardOnStack.setMoveLocation(MagicLocationType.Exile);
 					game.doAction(new MagicPutItemOnStackAction(cardOnStack));
 				}
 			}

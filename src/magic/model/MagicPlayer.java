@@ -19,6 +19,7 @@ public class MagicPlayer implements MagicTarget {
 	private MagicPlayerDefinition playerDefinition;
 	private MagicCardList hand;
 	private MagicCardList library;
+	private MagicCardList exile;
 	private MagicCardList graveyard;
 	private MagicPermanentSet permanents;
 	private MagicPermanentSet manaPermanents;
@@ -40,6 +41,7 @@ public class MagicPlayer implements MagicTarget {
 		hand=new MagicCardList();
 		library=new MagicCardList();
 		graveyard=new MagicCardList();
+		exile=new MagicCardList();
 		permanents=new MagicPermanentSet();
 		manaPermanents=new MagicPermanentSet();
 		life=configuration.getStartLife();
@@ -77,6 +79,7 @@ public class MagicPlayer implements MagicTarget {
 		hand=sourcePlayer.hand.copy(copyMap);
 		library=sourcePlayer.library.copy(copyMap);
 		graveyard=sourcePlayer.graveyard.copy(copyMap);
+		exile=sourcePlayer.exile.copy(copyMap);
 		permanents=new MagicPermanentSet(copyMap,sourcePlayer.permanents);
 		manaPermanents=new MagicPermanentSet(copyMap,sourcePlayer.manaPermanents);
 		cardCounter=new MagicCardCounter(sourcePlayer.cardCounter);
@@ -98,6 +101,7 @@ public class MagicPlayer implements MagicTarget {
 		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
 		playerId=playerId*ID_FACTOR+hand.getCardsId();
 		playerId=playerId*ID_FACTOR+graveyard.getCardsId();
+		// Exile is not used for id.
 		return playerId;
 	}
 	
@@ -245,6 +249,11 @@ public class MagicPlayer implements MagicTarget {
 	public MagicCardList getGraveyard() {
 		
 		return graveyard;
+	}
+	
+	public MagicCardList getExile() {
+		
+		return exile;
 	}
 	
 	public MagicPermanentSet getPermanents() {

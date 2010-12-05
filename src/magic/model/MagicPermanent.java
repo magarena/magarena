@@ -929,11 +929,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 		if (MagicPermanentState.RemoveAtEndOfTurn.hasState(stateFlags)) {
 			game.logAppendMessage(controller,"Exile "+this.getName()+" (end of turn).");
-			game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exiled));
+			game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
 			return true;
 		} else if (MagicPermanentState.RemoveAtEndOfYourTurn.hasState(stateFlags)&&controller==game.getTurnPlayer()) {
 			game.logAppendMessage(controller,"Exile "+this.getName()+" (end of turn).");
-			game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exiled));
+			game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
 			return true;
 		} else if (MagicPermanentState.SacrificeAtEndOfTurn.hasState(stateFlags)) {
 			game.logAppendMessage(controller,"Sacrifice "+this.getName()+" (end of turn).");

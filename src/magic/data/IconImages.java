@@ -67,6 +67,7 @@ public class IconImages {
 	public static final ImageIcon LIBRARY2=loadIcon("library2.gif");
 	public static final ImageIcon GRAVEYARD=loadIcon("graveyard.gif");
 	public static final ImageIcon GRAVEYARD2=loadIcon("graveyard2.gif");
+	public static final ImageIcon EXILE=loadIcon("exile.png");
 	public static final ImageIcon GAME=loadIcon("game.gif");
 	public static final ImageIcon DIFFICULTY=loadIcon("difficulty.png");
 	public static final ImageIcon DIFFICULTY2=loadIcon("difficulty2.gif");

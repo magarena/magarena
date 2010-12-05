@@ -10,7 +10,7 @@ import magic.data.IconImages;
 import magic.ui.GameController;
 import magic.ui.widget.TabSelector;
 
-public class ImageHandGraveyardViewer extends JPanel implements ChangeListener {
+public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListener {
 
 	private static final long serialVersionUID = 1L;
 
@@ -18,7 +18,7 @@ public class ImageHandGraveyardViewer extends JPanel implements ChangeListener {
 	private final TabSelector tabSelector;
 	private final ImageCardListViewer cardListViewer;
 	
-	public ImageHandGraveyardViewer(final ViewerInfo viewerInfo,final GameController controller) {
+	public ImageHandGraveyardExileViewer(final ViewerInfo viewerInfo,final GameController controller) {
 		
 		this.viewerInfo=viewerInfo;
 		
@@ -28,7 +28,9 @@ public class ImageHandGraveyardViewer extends JPanel implements ChangeListener {
 		tabSelector=new TabSelector(this,true);
 		tabSelector.addTab(IconImages.HAND);
 		tabSelector.addTab(IconImages.GRAVEYARD);
-		tabSelector.addTab(IconImages.GRAVEYARD);		
+		tabSelector.addTab(IconImages.GRAVEYARD);
+		tabSelector.addTab(IconImages.EXILE);
+		tabSelector.addTab(IconImages.EXILE);
 		add(tabSelector,BorderLayout.WEST);
 		
 		cardListViewer=new ImageCardListViewer(controller);
@@ -49,6 +51,8 @@ public class ImageHandGraveyardViewer extends JPanel implements ChangeListener {
 				case 0: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).hand); break;
 				case 1: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).graveyard); break;
 				case 2: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).graveyard); break;
+				case 3: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).exile); break;
+				case 4: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).exile); break;
 			}
 			repaint();
 		}

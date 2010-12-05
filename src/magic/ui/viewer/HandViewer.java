@@ -16,6 +16,7 @@ public class HandViewer extends CardListViewer {
 		update();
 	}
 	
+	@Override
 	public String getTitle() {
 
 		return "Hand : "+viewerInfo.getPlayerInfo(false).name;

@@ -10,6 +10,6 @@ public enum MagicLocationType {
 	BottomOfOwnersLibrary,
 	Graveyard,
 	OpponentsGraveyard,
-	Exiled,
+	Exile,
 	;
 }

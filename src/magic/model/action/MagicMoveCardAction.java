@@ -66,6 +66,9 @@ public class MagicMoveCardAction extends MagicAction {
 				case Graveyard:
 					owner.getGraveyard().addToTop(card);
 					break;
+				case Exile:
+					owner.getExile().addToTop(card);
+					break;
 			}
 		}
 
@@ -101,6 +104,9 @@ public class MagicMoveCardAction extends MagicAction {
 					break;
 				case Graveyard:
 					owner.getGraveyard().remove(card);
+					break;
+				case Exile:
+					owner.getExile().remove(card);
 					break;
 			}			
 		}

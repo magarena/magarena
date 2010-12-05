@@ -19,6 +19,7 @@ public class PlayerViewerInfo {
 	public final int lands;
 	public final MagicCardList hand;
 	public final MagicCardList graveyard;
+	public final MagicCardList exile;
 	public final MagicCardList library;
 	public final List<PermanentViewerInfo> permanents;
 	
@@ -32,6 +33,7 @@ public class PlayerViewerInfo {
 		lands=player.getNrOfPermanentsWithType(MagicType.Land);
 		hand=new MagicCardList(player.getHand());
 		graveyard=new MagicCardList(player.getGraveyard());
+		exile=new MagicCardList(player.getExile());
 		library=new MagicCardList(player.getLibrary());
 		
 		permanents=new ArrayList<PermanentViewerInfo>();

@@ -12,24 +12,26 @@ import magic.ui.GameController;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
-public class HandGraveyardViewer extends JPanel implements ChangeListener {
+public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
 
 	private static final long serialVersionUID = 1L;
 
-	private final HandViewer handViewer;
-	private final GraveyardViewer playerGraveyardViewer;
-	private final GraveyardViewer opponentGraveyardViewer;
+	private final CardListViewer viewers[];
 	private final JPanel cardPanel;
 	private final CardLayout cardLayout;
 	private final TitleBar titleBar;
 	private final TabSelector tabSelector;
 
-	public HandGraveyardViewer(final ViewerInfo viewerInfo,final GameController controller) {
+	public HandGraveyardExileViewer(final ViewerInfo viewerInfo,final GameController controller) {
+
+		viewers=new CardListViewer[]{
+			new HandViewer(viewerInfo,controller),
+			new GraveyardViewer(viewerInfo,controller,false),
+			new GraveyardViewer(viewerInfo,controller,true),
+			new ExileViewer(viewerInfo,controller,false),
+			new ExileViewer(viewerInfo,controller,true)
+		};
 				
-		handViewer=new HandViewer(viewerInfo,controller);
-		playerGraveyardViewer=new GraveyardViewer(viewerInfo,controller,false);		
-		opponentGraveyardViewer=new GraveyardViewer(viewerInfo,controller,true);
-		
 		setOpaque(false);
 		setLayout(new BorderLayout());
 		
@@ -39,25 +41,29 @@ public class HandGraveyardViewer extends JPanel implements ChangeListener {
 		cardLayout=new CardLayout();
 		cardPanel=new JPanel(cardLayout);
 		cardPanel.setOpaque(false);
-		cardPanel.add(handViewer,"0");
-		cardPanel.add(playerGraveyardViewer,"1");
-		cardPanel.add(opponentGraveyardViewer,"2");
+		for (int index=0;index<viewers.length;index++) {
+			
+			cardPanel.add(viewers[index],String.valueOf(index));
+		}		
 		add(cardPanel,BorderLayout.CENTER);
 		
 		tabSelector=new TabSelector(this,false);
 		tabSelector.addTab(IconImages.HAND);
 		tabSelector.addTab(IconImages.GRAVEYARD);
-		tabSelector.addTab(IconImages.GRAVEYARD);		
+		tabSelector.addTab(IconImages.GRAVEYARD);
+		tabSelector.addTab(IconImages.EXILE);
+		tabSelector.addTab(IconImages.EXILE);
 		titleBar.add(tabSelector,BorderLayout.EAST);
 		
-		handViewer.viewCard();
+		viewers[0].viewCard();
 	}
 	
 	public void update() {
 		
-		handViewer.update();
-		playerGraveyardViewer.update();
-		opponentGraveyardViewer.update();
+		for (final CardListViewer viewer : viewers) {
+			
+			viewer.update();
+		}
 	}
 	
 	public void setSelectedTab(final int selectedTab) {
@@ -72,16 +78,6 @@ public class HandGraveyardViewer extends JPanel implements ChangeListener {
 
 		final int selectedTab=tabSelector.getSelectedTab();
 		cardLayout.show(cardPanel,""+selectedTab);
-		switch (selectedTab) {
-			case 0: 
-				titleBar.setText(handViewer.getTitle());
-				break;
-			case 1:
-				titleBar.setText(playerGraveyardViewer.getTitle());
-				break;
-			case 2:
-				titleBar.setText(opponentGraveyardViewer.getTitle());
-				break;
-		}
+		titleBar.setText(viewers[selectedTab].getTitle());
 	}
 }

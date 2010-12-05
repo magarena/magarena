@@ -103,6 +103,8 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 			button.showValidChoices(validChoices);
 		}
 	}	
+	
+	protected abstract String getTitle();
 		
 	protected abstract MagicCardList getCardList();	
 

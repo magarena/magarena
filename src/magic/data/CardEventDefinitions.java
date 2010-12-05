@@ -1128,7 +1128,7 @@ public class CardEventDefinitions {
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicChangeLifeAction(creature.getController(),creature.getPower(game)));
-				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exiled));
+				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
 			}
 		}
 	};
@@ -1258,7 +1258,7 @@ public class CardEventDefinitions {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
-				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exiled));
+				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
 			}
 		}
 	};
