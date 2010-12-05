@@ -7,6 +7,12 @@ Otherwise you will see a lot of question marks.
 
 Have fun!
 
+December 5, 2010
+================
+
+- added Unhinged basic lands as alterate images for basic lands, use download images to update
+- added viewers for exile zone
+
 November 30, 2010
 =================
 
