@@ -57,6 +57,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		proxyComboBox=new JComboBox(proxyModel);
 		proxyComboBox.setBounds(10,25,220,25);
 		proxyComboBox.setFocusable(false);
+		proxyComboBox.addActionListener(this);
 		final JLabel addressLabel=new JLabel("Address");
 		addressLabel.setBounds(10,55,220,25);
 		addressTextField=new JTextField();
@@ -115,8 +116,19 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		} else {
 			downloadLabel.setText("Press OK to begin or Cancel.");
 		}
-		
+
+		updateProxy();
 		setVisible(true);		
+	}
+	
+	private void updateProxy() {
+		
+		final boolean use=proxyComboBox.getSelectedItem()!=Type.DIRECT;
+		addressTextField.setEnabled(use);
+		portTextField.setEnabled(use);
+		if (use) {
+			addressTextField.requestFocus();
+		}		
 	}
 
 	@Override
@@ -164,6 +176,8 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 			new Thread(this).start();	
 		} else if (source==cancelButton) {
 			dispose();
-		}		
+		} else if (source==proxyComboBox) {
+			updateProxy();
+		}
 	}
 }
