@@ -934,7 +934,7 @@ cost={G}
 power=0
 toughness=1
 ability=exalted
-timing=smain
+timing=main
 
 77:Oracle of Nectars
 value=2
