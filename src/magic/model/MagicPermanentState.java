@@ -21,6 +21,7 @@ public enum MagicPermanentState {
 
 	public static final int CLEANUP_MASK=
 		Tapped.getMask()|
+		Summoned.getMask()|
 		DoesNotUntap.getMask()|
 		RemoveAtEndOfYourTurn.getMask()|
 		ExcludeManaSource.getMask()|

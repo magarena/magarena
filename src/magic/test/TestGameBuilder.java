@@ -100,7 +100,7 @@ public class TestGameBuilder {
 		
 		final MagicPlayerProfile profile=new MagicPlayerProfile("bw");
 		final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
-		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);	
+		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
 		tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
 		tournament.setStartPlayer(0);
 		
@@ -109,16 +109,18 @@ public class TestGameBuilder {
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
 
-		addToLibrary(player,"Plains",10);
+		addToLibrary(player,"Mountain",10);
 		addToLibrary(opponent,"Forest",10);
 		addToGraveyard(player,"Mogg Fanatic",1);
-		addToGraveyard(opponent,"Lightning Bolt",1);
 		addToExile(player,"Stormfront Pegasus",1);
-		addToHand(player,"Unmake",1);
-		addToHand(player,"Swords to Plowshares",1);
-		createPermanent(game,player,"Wrexial, the Risen Deep",true,1);
-		createPermanent(game,opponent,"Bottle Gnomes",false,1);
-		createPermanent(game,opponent,"Deadly Recluse",false,1);
+		addToHand(player,"Goblin Bushwhacker",1);
+		addToHand(player,"Goblin Artillery",1);
+		addToHand(player,"Goblin Chieftain",1);
+		addToHand(player,"Utvara Scalper",1);
+		addToHand(player,"Mind Stone",1);
+		addToHand(player,"Chain Reaction",1);		
+		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
+		createPermanent(game,opponent,"Bloodrock Cyclops",true,1);
 		
 		return game;
 	}
