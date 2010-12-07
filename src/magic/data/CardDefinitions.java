@@ -91,7 +91,7 @@ public class CardDefinitions {
 			
 			if (!card.isLand()) {
 				spellCards.add(card);
-			} else if (!card.hasType(MagicType.Basic)) {
+			} else if (!card.isBasic()) {
 				landCards.add(card);
 			}
 		}

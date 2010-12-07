@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -12,18 +14,21 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicType;
+import magic.ui.EditDeckCard;
+import magic.ui.MagicFrame;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
 
@@ -36,13 +41,17 @@ public class DeckViewer extends JPanel implements ChangeListener {
 	private final List<DeckEntry> entries;
 	private final JScrollPane scrollPane;
 	private final JPanel viewPanel;
+	private final MagicFrame frame;
+	private final DeckStatisticsViewer statisticsViewer;
 	private final CardViewer cardViewer;
 	private final boolean lands;
 	private MagicPlayerDefinition player;
 	private Font nameFont=FontsAndBorders.FONT1;
 	
-	public DeckViewer(final CardViewer cardViewer,final boolean lands) {
+	public DeckViewer(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer,final boolean lands) {
 		
+		this.frame=frame;
+		this.statisticsViewer=statisticsViewer;
 		this.cardViewer=cardViewer;		
 		this.lands=lands;
 		entries=new ArrayList<DeckEntry>();
@@ -90,7 +99,7 @@ public class DeckViewer extends JPanel implements ChangeListener {
 			if (card.isLand()==lands) {
 				DeckEntry entry=entriesMap.get(card);
 				if (entry==null) {
-					entry=new DeckEntry(card);
+					entry=new DeckEntry(deckCard);
 					entriesMap.put(card,entry);
 				} else {
 					entry.count++;
@@ -122,6 +131,12 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		
 		revalidate();
 		repaint();
+	}
+	
+	public void updateAfterEdit() {
+		
+		statisticsViewer.setPlayer(player);
+		update();
 	}
 	
 	@Override
@@ -159,24 +174,26 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		}
 	}
 		
-	private class DeckEntry extends JPanel implements Comparable<DeckEntry> {
+	private class DeckEntry extends JPanel implements Comparable<DeckEntry>,ActionListener {
 		
 		private static final long serialVersionUID = 1L;
 		
-		public MagicCardDefinition card;
-		public int count;
+		private final MagicDeckCard deckCard;
+		private final MagicCardDefinition card;
+		int count;
 		
-		public DeckEntry(final MagicCardDefinition card) {
+		public DeckEntry(final MagicDeckCard deckCard) {
 
-			this.card=card;
+			this.deckCard=deckCard;
+			card=deckCard.getCardDefinition();
 			count=1;			
 		}
 
 		@Override
 		public int compareTo(final DeckEntry entry) {
 
-			boolean basic1=card.hasType(MagicType.Basic);
-			boolean basic2=entry.card.hasType(MagicType.Basic);
+			boolean basic1=card.isBasic();
+			boolean basic2=entry.card.isBasic();
 			if (basic1!=basic2) {
 				return basic1?-1:1;
 			}
@@ -231,10 +248,25 @@ public class DeckViewer extends JPanel implements ChangeListener {
 			add(centerPanel,BorderLayout.CENTER);
 	
 			// Count
+			final JPanel rightPanel=new JPanel();
+			rightPanel.setOpaque(false);
+			rightPanel.setLayout(new BorderLayout(1,0));
 			final JLabel countLabel=new JLabel(count>1?""+count:"");
 			countLabel.setPreferredSize(new Dimension(16,0));
 			countLabel.setHorizontalAlignment(JLabel.CENTER);
-			add(countLabel,BorderLayout.EAST);
+			rightPanel.add(countLabel,BorderLayout.WEST);
+			final JButton editButton=new JButton(IconImages.EDIT);
+			editButton.setPreferredSize(new Dimension(32,0));
+			rightPanel.add(editButton,BorderLayout.EAST);
+			editButton.addActionListener(this);
+			editButton.setFocusable(false);
+			add(rightPanel,BorderLayout.EAST);
+		}
+
+		@Override
+		public void actionPerformed(final ActionEvent event) {
+
+			frame.editCardWithExplorer(new EditDeckCard(DeckViewer.this,player,deckCard));
 		}
 	}
 }

@@ -49,12 +49,12 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		cardViewer=new CardViewer(false);
 		add(cardViewer);
-		
-		deckViewers=new DeckViewers(cardViewer);
-		add(deckViewers);
-		
+				
 		statsViewer=new DeckStatisticsViewer();
 		add(statsViewer);
+		
+		deckViewers=new DeckViewers(frame,statsViewer,cardViewer);
+		add(deckViewers);
 		
 		strengthViewer=new DeckStrengthViewer(tournament);
 		add(strengthViewer);

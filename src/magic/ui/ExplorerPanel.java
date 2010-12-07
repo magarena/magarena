@@ -22,6 +22,8 @@ import javax.swing.border.Border;
 
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicDeckCard;
+import magic.model.MagicPlayerProfile;
 import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.BackgroundLabel;
@@ -30,6 +32,10 @@ import magic.ui.widget.FontsAndBorders;
 public class ExplorerPanel extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
+	
+	public static final int ALL=0;
+	public static final int LAND=1;
+	public static final int SPELL=2;
 
 	private static final Border SCROLL_BORDER=BorderFactory.createEmptyBorder(0,0,5,0);
 	
@@ -44,7 +50,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
  	private static final int SPACING=20;
 	
  	private final MagicFrame frame;
-	private final BackgroundLabel backgroundLabel;
+	private final EditDeckCard editDeckCard;
+ 	private final BackgroundLabel backgroundLabel;
 	private final CardViewer cardViewer;
 	private final ExplorerFilterPanel filterPanel;
 	private final JScrollPane cardsScrollPane;
@@ -52,9 +59,10 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private final JButton closeButton;
 	private List<MagicCardDefinition> cardDefinitions;
 	
-	public ExplorerPanel(final MagicFrame frame) {
+	public ExplorerPanel(final MagicFrame frame,final int mode,final MagicPlayerProfile profile,final EditDeckCard editDeckCard) {
 
 		this.frame=frame;
+		this.editDeckCard=editDeckCard;
 		
 		setLayout(null);
 		
@@ -63,7 +71,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		cardViewer.setCard(null,0);
 		add(cardViewer);
 		
-		filterPanel=new ExplorerFilterPanel(this);
+		filterPanel=new ExplorerFilterPanel(this,mode,profile);
 		filterPanel.setSize(DefaultResolutionProfile.CARD_VIEWER_WIDTH,FILTER_HEIGHT);
 		add(filterPanel);
 
@@ -164,7 +172,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 						currentMainPanel.add(currentPanel,BorderLayout.NORTH);
 						cardsPanel.add(currentMainPanel);
 					}
-					currentPanel.add(new CardLabel(cardDefinition,cardViewer,light));
+					currentPanel.add(new CardLabel(cardDefinition,light));
 					line++;
 					size--;
 					light=!light;
@@ -192,17 +200,15 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		}
 	}
 	
-	private static class CardLabel extends JLabel {
+	private class CardLabel extends JLabel {
 
 		private static final long serialVersionUID = 1L;
 
 		private final MagicCardDefinition cardDefinition;
-		private final CardViewer cardViewer;
 		
-		public CardLabel(final MagicCardDefinition cardDefinition,final CardViewer cardViewer,final boolean light) {
+		public CardLabel(final MagicCardDefinition cardDefinition,final boolean light) {
 
 			this.cardDefinition=cardDefinition;
-			this.cardViewer=cardViewer;
 
 			setText(cardDefinition.getName());
 			setIcon(cardDefinition.getIcon());
@@ -220,7 +226,26 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 				@Override
 				public void mouseEntered(final MouseEvent event) {
 
-					CardLabel.this.cardViewer.setCard(CardLabel.this.cardDefinition,0);
+					cardViewer.setCard(CardLabel.this.cardDefinition,0);
+					setForeground(Color.RED);
+				}
+
+				@Override
+				public void mouseExited(final MouseEvent event) {
+
+					setForeground(cardDefinition.getRarityColor());
+				}
+
+				@Override
+				public void mousePressed(final MouseEvent event) {
+
+					if (editDeckCard!=null) {
+						final MagicDeckCard deckCard=new MagicDeckCard(cardDefinition);
+						editDeckCard.getPlayer().getDraftedDeck().remove(editDeckCard.getDeckCard());
+						editDeckCard.getPlayer().getDraftedDeck().add(deckCard);
+						editDeckCard.getDeckViewer().updateAfterEdit();						
+						frame.closeCardExplorer();
+					}
 				}
 			});
 		}

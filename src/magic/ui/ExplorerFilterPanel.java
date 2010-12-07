@@ -21,6 +21,7 @@ import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicColoredType;
+import magic.model.MagicPlayerProfile;
 import magic.model.MagicType;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -66,10 +67,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private final JCheckBox multiCheckBox;
 	private final JRadioButton nameRadioButton;
 	private final JRadioButton convertedRadioButton;
+	private final int mode;
+	private final MagicPlayerProfile profile;
 	
-	public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
+	public ExplorerFilterPanel(final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile) {
 		
 		this.explorerPanel=explorerPanel;
+		this.mode=mode;
+		this.profile=profile;
 
 		setLayout(new BorderLayout());
 
@@ -177,6 +182,23 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private boolean filter(final MagicCardDefinition cardDefinition) {
 
 		if (cardDefinition.isToken()) {
+			return false;
+		}
+				
+		switch (mode) {
+			case ExplorerPanel.LAND: 
+				if (!cardDefinition.isLand()) {
+					return false;
+				}
+				break;
+			case ExplorerPanel.SPELL:
+				if (cardDefinition.isLand()) {
+					return false;
+				}
+				break;
+		}
+		
+		if (profile!=null&&!cardDefinition.isBasic()&&!cardDefinition.isPlayable(profile)) {
 			return false;
 		}
 		

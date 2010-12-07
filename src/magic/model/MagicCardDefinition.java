@@ -131,7 +131,7 @@ public class MagicCardDefinition {
 	
 	public int getImageCount() {
 		
-		return hasType(MagicType.Basic)?2:1;
+		return isBasic()?2:1;
 	}
 	
 	public void setValue(final int value) {
@@ -199,6 +199,11 @@ public class MagicCardDefinition {
 	public boolean hasType(final MagicType type) {
 		
 		return (typeFlags&type.getMask())!=0;
+	}
+	
+	public boolean isBasic() {
+		
+		return hasType(MagicType.Basic);
 	}
 	
 	public boolean isLand() {
