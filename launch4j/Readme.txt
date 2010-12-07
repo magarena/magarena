@@ -7,6 +7,15 @@ Otherwise you will see a lot of question marks.
 
 Have fun!
 
+December 7, 2010
+================
+
+- version 1.1 release
+- display of version information on startup
+- support for replacing cards in decks with edit button that shows the card explorer
+- proper summoning sickness rule
+- icon for summoning sickness in graphical view
+
 December 5, 2010
 ================
 
@@ -29,4 +38,4 @@ November 28, 2010
 November 25, 2010
 =================
 
-- first release
+- version 1.0 release
