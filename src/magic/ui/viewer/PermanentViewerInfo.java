@@ -53,6 +53,7 @@ public class PermanentViewerInfo {
 	public final boolean enchantment;
 	public final boolean root;
 	public final boolean tapped;
+	public final boolean canNotTap;
 	public final boolean attacking;
 	public final boolean blocking;
 	public final boolean blockingInvalid;
@@ -81,6 +82,7 @@ public class PermanentViewerInfo {
 		enchantment=permanent.isEnchanted()||(permanent.isEnchantment()&&permanent.getEnchantedCreature()==null);
 		root=permanent.getEnchantedCreature()==null&&permanent.getEquippedCreature()==null;
 		tapped=permanent.isTapped();
+		canNotTap=!tapped&&!permanent.canTap(game);
 		attacking=permanent.isAttacking();
 		blocking=permanent.isBlocking();
 		blockingInvalid=permanent.getBlockedCreature()==null;

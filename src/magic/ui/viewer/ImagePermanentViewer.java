@@ -237,6 +237,10 @@ public class ImagePermanentViewer extends JPanel {
 				final long abilityFlags=linkedInfo.abilityFlags;
 				int ax=x1+1;
 				int ay=y2-17;
+				if (linkedInfo.canNotTap) {
+					g.drawImage(IconImages.CANNOTTAP.getImage(),ax,ay,this);
+					ax+=16;
+				}
 				if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
 					g.drawImage(IconImages.FLYING.getImage(),ax,ay,this);
 					ax+=16;
