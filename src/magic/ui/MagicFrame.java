@@ -128,7 +128,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private void setInitialContent() {
 		
-		setContent(new BackgroundLabel());			
+		setContent(new VersionPanel());			
 		if (testGame) {
 			openGame(TestGameBuilder.buildGame());
 		} 
