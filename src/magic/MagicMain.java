@@ -4,6 +4,7 @@ import java.io.File;
 
 import magic.data.CardDefinitions;
 import magic.data.CardEventDefinitions;
+import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
 import magic.data.LocalVariableDefinitions;
 import magic.data.ManaActivationDefinitions;
@@ -31,6 +32,7 @@ public class MagicMain {
 		
 		try {
 			new File(getGamePath()).mkdir();
+			DeckUtils.createDeckFolder();
 			final CardDefinitions cardDefinitions=CardDefinitions.getInstance();
 			cardDefinitions.loadCardDefinitions();
 			KeywordDefinitions.getInstance().loadKeywordDefinitions();

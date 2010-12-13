@@ -45,6 +45,14 @@ public class DeckUtils {
 		return MagicMain.getGamePath()+File.separator+"decks";
 	}
 	
+	public static void createDeckFolder() {
+		
+		final File deckFolderFile=new File(getDeckFolder());
+		if (!deckFolderFile.exists()) {
+			deckFolderFile.mkdir();
+		}
+	}
+	
 	public static void saveDeck(final String filename,final MagicPlayerDefinition player) {
 
 		final List<SortedMap<String,Integer>> cardMaps=new ArrayList<SortedMap<String,Integer>>();
