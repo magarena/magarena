@@ -7,6 +7,13 @@ Otherwise you will see a lot of question marks.
 
 Have fun!
 
+December 13, 2010
+=================
+
+- support for loading and saving decks to an editable text format in decks folder
+- disabled deck editing when duel is in progress
+- charge counters are now displayed with amount in graphical view
+
 December 7, 2010
 ================
 
@@ -19,7 +26,7 @@ December 7, 2010
 December 5, 2010
 ================
 
-- added Unhinged basic lands as alterate images for basic lands, use download images to update
+- added Unhinged basic lands as alternate images for basic lands, use download images to update
 - added viewers for exile zone
 
 November 30, 2010
