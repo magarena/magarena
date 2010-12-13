@@ -113,12 +113,14 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Forest",10);
 		addToGraveyard(player,"Mogg Fanatic",1);
 		addToExile(player,"Stormfront Pegasus",1);
+		addToHand(player,"Vivid Crag",1);
 		addToHand(player,"Goblin Bushwhacker",1);
 		addToHand(player,"Goblin Artillery",1);
 		addToHand(player,"Goblin Chieftain",1);
 		addToHand(player,"Utvara Scalper",1);
 		addToHand(player,"Mind Stone",1);
 		addToHand(player,"Chain Reaction",1);		
+		createPermanent(game,player,"Lightning Reaver",false,1);
 		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
 		createPermanent(game,opponent,"Bloodrock Cyclops",true,1);
 		
