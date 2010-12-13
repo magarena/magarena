@@ -109,6 +109,11 @@ public class MagicTournament {
 		difficulty=GeneralConfig.getInstance().getDifficulty();
 	}
 	
+	public boolean isEditable() {
+		
+		return gameNr==1;
+	}
+	
 	public boolean isFinished() {
 		
 		return getGamesPlayed()==getGamesTotal();

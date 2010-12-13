@@ -45,15 +45,17 @@ public class DeckViewer extends JPanel implements ChangeListener {
 	private final DeckStatisticsViewer statisticsViewer;
 	private final CardViewer cardViewer;
 	private final boolean lands;
+	private final boolean edit;
 	private MagicPlayerDefinition player;
 	private Font nameFont=FontsAndBorders.FONT1;
 	
-	public DeckViewer(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer,final boolean lands) {
+	public DeckViewer(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer,final boolean lands,final boolean edit) {
 		
 		this.frame=frame;
 		this.statisticsViewer=statisticsViewer;
 		this.cardViewer=cardViewer;		
 		this.lands=lands;
+		this.edit=edit;
 		entries=new ArrayList<DeckEntry>();
 
 		setOpaque(false);
@@ -90,6 +92,11 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		this.player=player;
 	}
 	
+	public MagicPlayerDefinition getPlayer() {
+		
+		return player;
+	}
+	
 	public void update() {
 		
 		final Map<MagicCardDefinition,DeckEntry> entriesMap=new HashMap<MagicCardDefinition,DeckEntry>();
@@ -117,7 +124,7 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		boolean light=true;
 		for (final DeckEntry entry : entries) {
 			
-			entry.build(light);
+			entry.build(light,edit);
 			cardPanel.add(entry,light);
 			light=!light;
 		}
@@ -205,7 +212,7 @@ public class DeckViewer extends JPanel implements ChangeListener {
 			return card.getName().compareTo(entry.card.getName());
 		}
 		
-		public void build(final boolean light) {
+		public void build(final boolean light,final boolean edit) {
 
 			setPreferredSize(new Dimension(0,LINE_HEIGHT));
 			setLayout(new BorderLayout(3,0));			
@@ -255,11 +262,15 @@ public class DeckViewer extends JPanel implements ChangeListener {
 			countLabel.setPreferredSize(new Dimension(16,0));
 			countLabel.setHorizontalAlignment(JLabel.CENTER);
 			rightPanel.add(countLabel,BorderLayout.WEST);
-			final JButton editButton=new JButton(IconImages.EDIT);
-			editButton.setPreferredSize(new Dimension(32,0));
-			rightPanel.add(editButton,BorderLayout.EAST);
-			editButton.addActionListener(this);
-			editButton.setFocusable(false);
+			
+			// Edit
+			if (edit) {
+				final JButton editButton=new JButton(IconImages.EDIT);
+				editButton.setPreferredSize(new Dimension(32,0));
+				rightPanel.add(editButton,BorderLayout.EAST);
+				editButton.addActionListener(this);
+				editButton.setFocusable(false);
+			}
 			add(rightPanel,BorderLayout.EAST);
 		}
 

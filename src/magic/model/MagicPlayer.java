@@ -233,7 +233,12 @@ public class MagicPlayer implements MagicTarget {
 			
 			library.add(new MagicCard(deckCard,this,id++));
 		}
-		library.smartShuffle();
+
+		if (library.useSmartShuffle()) {
+			library.smartShuffle();
+		} else {
+			library.shuffle();
+		}
 
 		for (int count=handSize;count>0&&!library.isEmpty();count--) {
 			

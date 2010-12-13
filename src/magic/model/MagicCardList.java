@@ -101,6 +101,25 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		}
 	}
 	
+	public int getNrOfLands() {
+		
+		int lands=0;
+		for (final MagicCard card : this) {
+			
+			if (card.getCardDefinition().isLand()) {
+				lands++;
+			}
+		}
+		return lands;
+	}
+	
+	public boolean useSmartShuffle() {
+		
+		final int lands=getNrOfLands();
+		final int total=size();
+		return lands==16&&total==40;
+	}
+	
 	public void shuffle() {
 
 		final MagicCardList oldCards=new MagicCardList(this);

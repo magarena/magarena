@@ -10,12 +10,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 import javax.swing.JComponent;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
+import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.TournamentConfig;
 import magic.model.MagicDeckCard;
@@ -33,6 +35,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String NAME="Magarena";
 	private static final String SAVE_TOURNAMENT_ITEM="Save";
 	private static final String RESTART_TOURNAMENT_ITEM="Restart";
+	private static final String LOAD_DECK_ITEM="LoadDeck";
+	private static final String SAVE_DECK_ITEM="SaveDeck";
 	private static final String SWAP_DECKS_ITEM="Swap";
 	private static final String PLAY_GAME_ITEM="Play";
 	private static final String CONCEDE_GAME_ITEM="Concede";
@@ -47,6 +51,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem loadTournamentItem;
 	private JMenuItem saveTournamentItem;
 	private JMenuItem restartTournamentItem;
+	private JMenuItem loadDeckItem;
+	private JMenuItem saveDeckItem;
 	private JMenuItem swapDecksItem;
 	private JMenuItem playGameItem;
 	private JMenuItem concedeGameItem;
@@ -113,6 +119,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 			saveTournamentItem.setEnabled(enabled);
 		} else if (RESTART_TOURNAMENT_ITEM.equals(item)) {
 			restartTournamentItem.setEnabled(enabled);
+		} else if (LOAD_DECK_ITEM.equals(item)) {
+			loadDeckItem.setEnabled(enabled);
+		} else if (SAVE_DECK_ITEM.equals(item)) {
+			saveDeckItem.setEnabled(enabled);
 		} else if (SWAP_DECKS_ITEM.equals(item)) {
 			swapDecksItem.setEnabled(enabled);
 		} else if (PLAY_GAME_ITEM.equals(item)) {
@@ -158,6 +168,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 		addContent(content);
 		enableMenuItem(SAVE_TOURNAMENT_ITEM,false);
 		enableMenuItem(RESTART_TOURNAMENT_ITEM,false);
+		enableMenuItem(LOAD_DECK_ITEM,false);
+		enableMenuItem(SAVE_DECK_ITEM,false);
 		enableMenuItem(SWAP_DECKS_ITEM,false);
 		enableMenuItem(PLAY_GAME_ITEM,false);
 		enableMenuItem(CONCEDE_GAME_ITEM,false);
@@ -190,6 +202,16 @@ public class MagicFrame extends JFrame implements ActionListener {
 		restartTournamentItem=new JMenuItem("Restart duel");
 		restartTournamentItem.addActionListener(this);
 		tournamentMenu.add(restartTournamentItem);
+		
+		tournamentMenu.addSeparator();
+		
+		loadDeckItem=new JMenuItem("Load deck...");
+		loadDeckItem.addActionListener(this);
+		tournamentMenu.add(loadDeckItem);
+		
+		saveDeckItem=new JMenuItem("Save deck...");
+		saveDeckItem.addActionListener(this);
+		tournamentMenu.add(saveDeckItem);
 		
 		swapDecksItem=new JMenuItem("Swap decks");
 		swapDecksItem.addActionListener(this);
@@ -245,7 +267,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 			tournamentPanel=newTournamentPanel;
 			enableMenuItem(SAVE_TOURNAMENT_ITEM,true);
 			enableMenuItem(RESTART_TOURNAMENT_ITEM,true);
-			enableMenuItem(SWAP_DECKS_ITEM,true);
+			enableMenuItem(LOAD_DECK_ITEM,tournament.isEditable());
+			enableMenuItem(SAVE_DECK_ITEM,tournament.isEditable());
+			enableMenuItem(SWAP_DECKS_ITEM,tournament.isEditable());
 			enableMenuItem(PLAY_GAME_ITEM,!tournament.isFinished());
 		} else {
 			setContent(new BackgroundLabel());
@@ -259,7 +283,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		showTournament();
 	}
 	
-	public void loadTournament() {
+	private void loadTournament() {
 
 		final File tournamentFile=MagicTournament.getTournamentFile();
 		if (tournamentFile.exists()) {
@@ -269,14 +293,14 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
-	public void saveTournament() {
+	private void saveTournament() {
 
 		if (tournament!=null) {
 			tournament.save(MagicTournament.getTournamentFile());
 		}
 	}
 	
-	public void restartTournament() {
+	private void restartTournament() {
 
 		if (tournament!=null) {
 			tournament.restart();
@@ -284,7 +308,43 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
-	public void swapDecks() {
+	private void loadDeck() {
+		
+		if (tournamentPanel!=null) {
+			final MagicPlayerDefinition player=tournamentPanel.getSelectedPlayer();
+			final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
+			fileChooser.setDialogTitle("Load deck");
+			fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
+			fileChooser.setAcceptAllFileFilterUsed(false);
+			final int action=fileChooser.showOpenDialog(this);
+			if (action==JFileChooser.APPROVE_OPTION) {
+				final String filename=fileChooser.getSelectedFile().getAbsolutePath();
+				DeckUtils.loadDeck(filename,player);
+				tournamentPanel.updateDecksAfterEdit();
+			}			
+		}
+	}
+	
+	private void saveDeck() {
+		
+		if (tournamentPanel!=null) {
+			final MagicPlayerDefinition player=tournamentPanel.getSelectedPlayer();
+			final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
+			fileChooser.setDialogTitle("Save deck");
+			fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
+			fileChooser.setAcceptAllFileFilterUsed(false);
+			final int action=fileChooser.showSaveDialog(this);
+			if (action==JFileChooser.APPROVE_OPTION) {
+				String filename=fileChooser.getSelectedFile().getAbsolutePath();
+				if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
+					filename+=DeckUtils.DECK_EXTENSION;
+				}
+				DeckUtils.saveDeck(filename,player);
+			}
+		}
+	}
+	
+	private void swapDecks() {
 		
 		if (tournament!=null) {
 			tournament.restart();
@@ -368,6 +428,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 			saveTournament();
 		} else if (source==restartTournamentItem) {
 			restartTournament();
+		} else if (source==loadDeckItem) {
+			loadDeck();
+		} else if (source==saveDeckItem) {
+			saveDeck();
 		} else if (source==swapDecksItem) {
 			swapDecks();
 		} else if (source==playGameItem) {

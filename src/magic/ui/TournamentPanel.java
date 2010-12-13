@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 
 import magic.data.IconImages;
 import magic.data.TournamentConfig;
+import magic.model.MagicPlayerDefinition;
 import magic.model.MagicTournament;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
@@ -53,7 +54,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		statsViewer=new DeckStatisticsViewer();
 		add(statsViewer);
 		
-		deckViewers=new DeckViewers(frame,statsViewer,cardViewer);
+		deckViewers=new DeckViewers(frame,statsViewer,cardViewer,tournament.isEditable());
 		add(deckViewers);
 		
 		strengthViewer=new DeckStrengthViewer(tournament);
@@ -124,6 +125,16 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		tournamentDifficultyViewer.setBounds(result.getBoundary(ResolutionProfileType.TournamentDifficultyViewer));
 		playButton.setBounds(result.getBoundary(ResolutionProfileType.TournamentPlayButton));
 		newButton.setBounds(result.getBoundary(ResolutionProfileType.TournamentNewButton));
+	}
+	
+	public MagicPlayerDefinition getSelectedPlayer() {
+		
+		return deckViewers.getSpellViewer().getPlayer();
+	}
+	
+	public void updateDecksAfterEdit() {
+		
+		deckViewers.updateAfterEdit();
 	}
 
 	public void haltStrengthViewer() {

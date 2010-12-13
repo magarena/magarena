@@ -23,7 +23,7 @@ public class DeckViewers extends JPanel implements ChangeListener {
 	private final CardLayout cardLayout;
 	private final TabSelector tabSelector;
 	
-	public DeckViewers(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer) {
+	public DeckViewers(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer,final boolean edit) {
 
 		setLayout(new BorderLayout());
 		setOpaque(false);
@@ -31,8 +31,8 @@ public class DeckViewers extends JPanel implements ChangeListener {
 		titleBar=new TitleBar("");
 		add(titleBar,BorderLayout.NORTH);
 		
-		spellViewer=new DeckViewer(frame,statisticsViewer,cardViewer,false);
-		landViewer=new DeckViewer(frame,statisticsViewer,cardViewer,true);
+		spellViewer=new DeckViewer(frame,statisticsViewer,cardViewer,false,edit);
+		landViewer=new DeckViewer(frame,statisticsViewer,cardViewer,true,edit);
 
 		cardLayout=new CardLayout();
 		cardPanel=new JPanel(cardLayout);
@@ -60,6 +60,12 @@ public class DeckViewers extends JPanel implements ChangeListener {
 	public void update() {
 		
 		spellViewer.update();
+		landViewer.update();
+	}
+	
+	public void updateAfterEdit() {
+		
+		spellViewer.updateAfterEdit();
 		landViewer.update();
 	}
 
