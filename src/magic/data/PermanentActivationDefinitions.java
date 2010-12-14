@@ -708,9 +708,9 @@ public class PermanentActivationDefinitions {
 			if (target!=null) {
 				final MagicDamage damage1=new MagicDamage(source,target,2,false);
 				game.doAction(new MagicDealDamageAction(damage1));
+				final MagicDamage damage2=new MagicDamage(source,(MagicTarget)data[1],3,false);
+				game.doAction(new MagicDealDamageAction(damage2));
 			}
-			final MagicDamage damage2=new MagicDamage(source,(MagicTarget)data[1],3,false);
-			game.doAction(new MagicDealDamageAction(damage2));
 		}
 	};
 

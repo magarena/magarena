@@ -200,9 +200,9 @@ public class CardEventDefinitions {
 			if (target!=null) {
 				final MagicDamage damage1=new MagicDamage(source,target,4,false);
 				game.doAction(new MagicDealDamageAction(damage1));
+				final MagicDamage damage2=new MagicDamage(source,(MagicPlayer)data[1],2,false);
+				game.doAction(new MagicDealDamageAction(damage2));
 			}
-			final MagicDamage damage2=new MagicDamage(source,(MagicPlayer)data[1],2,false);
-			game.doAction(new MagicDealDamageAction(damage2));
 		}
 	};
 	

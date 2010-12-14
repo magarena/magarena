@@ -115,12 +115,11 @@ public class TestGameBuilder {
 		addToExile(player,"Stormfront Pegasus",1);
 		addToHand(player,"Vivid Crag",1);
 		addToHand(player,"Goblin Bushwhacker",1);
-		addToHand(player,"Goblin Artillery",1);
 		addToHand(player,"Goblin Chieftain",1);
-		addToHand(player,"Utvara Scalper",1);
-		addToHand(player,"Mind Stone",1);
-		addToHand(player,"Chain Reaction",1);		
-		createPermanent(game,player,"Lightning Reaver",false,1);
+		addToHand(player,"Char",1);				
+		createPermanent(game,player,"Mountain",false,3);
+		createPermanent(game,player,"Mogg Fanatic",false,1);
+		createPermanent(game,player,"Goblin Artillery",false,1);
 		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
 		createPermanent(game,opponent,"Bloodrock Cyclops",true,1);
 		
