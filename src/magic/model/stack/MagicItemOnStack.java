@@ -166,7 +166,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
 
-		return source!=this;
+		return source!=this.source;
 	}
 
 	public abstract boolean isSpell();

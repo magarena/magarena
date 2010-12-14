@@ -117,7 +117,9 @@ public class TestGameBuilder {
 		addToHand(player,"Goblin Bushwhacker",1);
 		addToHand(player,"Goblin Chieftain",1);
 		addToHand(player,"Char",1);				
-		createPermanent(game,player,"Mountain",false,3);
+		addToHand(player,"Remand",1);			
+		addToHand(player,"Counterspell",1);					
+		createPermanent(game,player,"Crumbling Necropolis",false,5);
 		createPermanent(game,player,"Mogg Fanatic",false,1);
 		createPermanent(game,player,"Goblin Artillery",false,1);
 		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
