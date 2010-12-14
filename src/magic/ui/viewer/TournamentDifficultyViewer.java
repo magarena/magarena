@@ -39,8 +39,8 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 		add(cardPanel,BorderLayout.CENTER);
 
 		tabSelector=new TabSelector(this,false);
-		tabSelector.addTab(IconImages.TROPHY);
-		tabSelector.addTab(IconImages.DIFFICULTY);
+		tabSelector.addTab(IconImages.TROPHY,"Progress");
+		tabSelector.addTab(IconImages.DIFFICULTY,"Difficulty");
 		titleBar.add(tabSelector,BorderLayout.EAST);
 	}
 

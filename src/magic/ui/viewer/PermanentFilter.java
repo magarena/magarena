@@ -38,7 +38,10 @@ public class PermanentFilter implements ActionListener {
 	
 	private static final ImageIcon FILTER_ICONS[]={
 		IconImages.ALL,IconImages.LAND,IconImages.CREATURE,IconImages.ARTIFACT,IconImages.ENCHANTMENT,IconImages.VALID};
-
+	private static final String FILTER_TOOLTIPS[]={
+		"All","Mana","Creatures","Artifacts","Enchantments","Choices"
+	};
+	
 	private static final Dimension HORIZONTAL_BUTTON_DIMENSION=new Dimension(28,20);
 	private static final Dimension VERTICAL_BUTTON_DIMENSION=new Dimension(24,24);
 
@@ -68,6 +71,7 @@ public class PermanentFilter implements ActionListener {
 		for (int index=0;index<filterButtons.length;index++) {
 		
 			filterButtons[index]=new JToggleButton(PermanentFilter.FILTER_ICONS[index],index==0);
+			filterButtons[index].setToolTipText(FILTER_TOOLTIPS[index]);
 			filterButtons[index].setPreferredSize(dimension);
 			filterButtons[index].setActionCommand(String.valueOf(index));
 			filterButtons[index].setFocusable(false);

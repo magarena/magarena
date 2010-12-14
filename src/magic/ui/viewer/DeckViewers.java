@@ -42,8 +42,8 @@ public class DeckViewers extends JPanel implements ChangeListener {
 		add(cardPanel,BorderLayout.CENTER);
 		
 		tabSelector=new TabSelector(this,false);
-		tabSelector.addTab(IconImages.SPELL);
-		tabSelector.addTab(IconImages.LAND);
+		tabSelector.addTab(IconImages.SPELL,"Spells");
+		tabSelector.addTab(IconImages.LAND,"Lands");
 		titleBar.add(tabSelector,BorderLayout.EAST);
 	}
 	

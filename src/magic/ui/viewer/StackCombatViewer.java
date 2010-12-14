@@ -42,8 +42,8 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
 		add(titleBar,BorderLayout.NORTH);
 		
 		tabSelector=new TabSelector(this,false);
-		tabSelector.addTab(IconImages.SPELL);
-		tabSelector.addTab(IconImages.COMBAT);
+		tabSelector.addTab(IconImages.SPELL,"Stack");
+		tabSelector.addTab(IconImages.COMBAT,"Combat");
 		titleBar.add(tabSelector,BorderLayout.EAST);
 	}
 	

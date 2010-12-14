@@ -121,6 +121,7 @@ public class GamePanel extends JPanel {
 		});
 
 		textViewButton=new JToggleButton(IconImages.TEXT,isTextView());
+		textViewButton.setToolTipText("Images / Text");
 		textViewButton.setFocusable(false);
 		textViewButton.setOpaque(false);
 		add(textViewButton);
