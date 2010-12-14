@@ -577,7 +577,7 @@ public class TriggerDefinitions {
 			final MagicCardOnStack card=event.getTarget(game,choiceResults,0);
 			if (card!=null) {
 				game.doAction(new MagicCounterItemOnStackAction(card));
-				game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,card.getCardDefinition().getConvertedCost(),true));
+				game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,card.getConvertedCost(),true));
 			}
 		}
     };

@@ -14,12 +14,14 @@ import magic.model.MagicPlayer;
 public class MagicCardOnStack extends MagicItemOnStack {
 
 	private MagicLocationType moveLocation=MagicLocationType.Graveyard;
+	private int x=0;
 	
 	public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost payedCost) {
 
 		setSource(card);
 		setController(controller);
 		setEvent(card.getCardDefinition().getCardEvent().getEvent(this,payedCost));
+		x=payedCost.getX();
 	}
 	
 	public MagicCardOnStack(final MagicCard card,final MagicPayedCost payedCost) {
@@ -41,7 +43,9 @@ public class MagicCardOnStack extends MagicItemOnStack {
 	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
 
 		super.copy(copyMap,source);
-		moveLocation=((MagicCardOnStack)source).moveLocation;
+		final MagicCardOnStack sourceCardOnStack=((MagicCardOnStack)source);
+		moveLocation=sourceCardOnStack.moveLocation;
+		x=sourceCardOnStack.x;
 	}
 	
 	public MagicCard getCard() {
@@ -62,6 +66,11 @@ public class MagicCardOnStack extends MagicItemOnStack {
 	public MagicLocationType getMoveLocation() {
 		
 		return moveLocation;
+	}
+	
+	public int getConvertedCost() {
+
+		return getCardDefinition().getConvertedCost()+x;
 	}
 
 	@Override
