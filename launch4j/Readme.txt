@@ -7,6 +7,14 @@ Otherwise you will see a lot of question marks.
 
 Have fun!
 
+December 14, 2010
+=================
+
+- added tooltips for small icon buttons
+- proper converted mana cost for X spells on stack (Draining Whelk)
+- fix for self targeting of spells on stack (counters)
+- fix for wrong multiple target behavior of Char and Goblin Artillery
+
 December 13, 2010
 =================
 
