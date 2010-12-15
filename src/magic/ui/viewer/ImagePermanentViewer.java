@@ -235,10 +235,10 @@ public class ImagePermanentViewer extends JPanel {
 			int ax=x1+1;
 			int ay=y2-17;
 			// Charge counters
-			if (permanentInfo.chargeCounters>0) {
+			if (linkedInfo.chargeCounters>0) {
 				g.drawImage(IconImages.CHARGE.getImage(),ax,ay,this);
 				g.setColor(Color.DARK_GRAY);
-				g.drawString(String.valueOf(permanentInfo.chargeCounters),ax+5,ay+14);
+				g.drawString(String.valueOf(linkedInfo.chargeCounters),ax+5,ay+14);
 				ax+=16;
 			}			
 			if (permanentInfo.creature) {
