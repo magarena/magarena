@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.JLabel;
 
+import magic.data.IconImages;
 import magic.ui.widget.BackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -25,6 +26,7 @@ public class VersionPanel extends TexturedPanel {
 		setLayout(new BorderLayout());
 		add(new BackgroundLabel(),BorderLayout.CENTER);
 		final JLabel versionLabel=new JLabel(VERSION_TEXT);
+		versionLabel.setIcon(IconImages.CUBE);
 		versionLabel.setFont(FontsAndBorders.FONT2);
 		versionLabel.setBorder(FontsAndBorders.EMPTY_BORDER);
 		add(versionLabel,BorderLayout.SOUTH);

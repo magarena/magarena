@@ -1,5 +1,4 @@
 >images
-dragon.jpg;http://wallpampers.com/pictures/4747/1440_Dragon%20statue%20in%20downtown%20Ljubljana,%20Slovenia.jpg
 >textures
 texture1.jpg;http://www.spiralgraphics.biz/packs/snow_ice/previews/Chiseled%20Ice.jpg
 texture2.jpg;http://www.spiralgraphics.biz/packs/snow_ice/previews/Windshield%207%20AM.jpg

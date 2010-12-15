@@ -25,6 +25,7 @@ public class IconImages {
 	public static final BufferedImage USER1=loadUserImage("textures/texture1.jpg");
 	public static final BufferedImage USER2=loadUserImage("textures/texture2.jpg");	
 
+	public static final ImageIcon CUBE=loadIcon("cube.png");
 	public static final ImageIcon NEW=loadIcon("new.png");
 	public static final ImageIcon LOG=loadIcon("log.png");
 	public static final ImageIcon TEXT=loadIcon("text.png");
