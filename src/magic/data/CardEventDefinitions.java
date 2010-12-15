@@ -2548,6 +2548,29 @@ public class CardEventDefinitions {
 			}
 		}
 	};
+
+	// ***** ENTERS BATTLEFIELD *****
+	
+	private static final MagicSpellCardEvent CHIMERIC_MASS=new MagicSpellCardEvent("Chimeric Mass") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final int charges=payedCost.getX();
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),new Object[]{cardOnStack,charges},
+				this,"Chimeric Mass enters the battlefield with "+charges+" charge counters on it.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+			
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
+			game.doAction(action);
+			final MagicPermanent permanent=action.getPermanent();
+			game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,(Integer)data[1],true));
+		}
+	};
 	
 	// ***** AURA PERMANENTS *****
 	
@@ -2708,6 +2731,7 @@ public class CardEventDefinitions {
 		LIGHTKEEPER_OF_EMERIA,		
 		SPHINX_OF_LOST_TRUTHS,
 		WOLFBRIAR_ELEMENTAL,
+		CHIMERIC_MASS,
 		ARMADILLO_CLOAK,
 		BOAR_UMBRA,
 		CLINGING_DARKNESS,

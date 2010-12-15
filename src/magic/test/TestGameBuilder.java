@@ -117,7 +117,7 @@ public class TestGameBuilder {
 		addToHand(player,"Goblin Bushwhacker",1);
 		addToHand(player,"Goblin Chieftain",1);
 		addToHand(player,"Char",1);				
-		addToHand(player,"Blaze",1);						
+		addToHand(player,"Chimeric Mass",1);
 		addToHand(player,"Mind Spring",1);								
 		addToHand(player,"Remand",1);			
 		addToHand(player,"Counterspell",1);					
@@ -127,7 +127,7 @@ public class TestGameBuilder {
 		createPermanent(game,player,"Goblin Artillery",false,1);
 		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
 		createPermanent(game,opponent,"Bloodrock Cyclops",true,1);
-		
+				
 		return game;
 	}
 }

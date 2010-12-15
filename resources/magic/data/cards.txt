@@ -4847,13 +4847,12 @@ cost={5}
 static=player
 timing=fmain
 
-504:Gruul War Plow
+504:Chimeric Mass
 value=3
 rarity=2
 type=Artifact
-converted=4
-cost={4}
-static=player
+converted=0
+cost={X}
 timing=artifact
 
 505:Lotus Petal

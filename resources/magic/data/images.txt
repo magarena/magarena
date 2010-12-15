@@ -141,6 +141,7 @@ Chandra's Spitfire.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multivers
 Char.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=87942&type=card
 Charging Troll.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=210556&type=card
 Chastise.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83021&type=card
+Chimeric Mass.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209714&type=card
 Cinder Elemental.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205414&type=card
 Clinging Darkness.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83822&type=card
 Colossal Might.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220519&type=card
@@ -242,7 +243,6 @@ Grasp of Darkness.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Graypelt Refuge.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220467&type=card
 Great Sable Stag.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193759&type=card
 Griffin Guide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=110514&type=card
-Gruul War Plow.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=107098&type=card
 Guard Gomazoa.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193602&type=card
 Guardian of the Guildpact.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=107583&type=card
 Guardian Seraph.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193766&type=card
