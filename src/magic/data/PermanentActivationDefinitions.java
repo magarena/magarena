@@ -47,6 +47,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPayLifeEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPayManaCostSacrificeEvent;
@@ -1431,6 +1432,8 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
+	private static final MagicPermanentActivation STUDENT_OF_WARFARE=new MagicLevelUpActivation("Student of Warfare",MagicManaCost.WHITE,7);
+	
 	private static final MagicPermanentActivation STUFFY_DOLL=new MagicPermanentActivation(
 			"Stuffy Doll",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
 
@@ -2235,6 +2238,7 @@ public class PermanentActivationDefinitions {
 		SPIKETAIL_HATCHLING,
 		SPIRITMONGER1,
 		SPIRITMONGER2,
+		STUDENT_OF_WARFARE,
 		STUFFY_DOLL,
 		STUN_SNIPER,
 		THUNDERSONG_TRUMPETER,

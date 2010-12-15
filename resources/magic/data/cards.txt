@@ -5095,3 +5095,43 @@ color=g
 converted=1
 cost={G}
 timing=pump
+
+
+
+600:Student of Warfare
+value=2
+rarity=2
+type=Creature
+subtype=Human,Knight
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
+601:Szadek, Lord of Secrets
+value=5
+rarity=3
+type=Legendary,Creature
+subtype=Vampire
+color=ub
+converted=7
+cost={3}{U}{U}{B}{B}
+power=5
+toughness=5
+ability=flying
+timing=smain
+
+602:Sword of Body and Mind
+value=5
+rarity=3
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+power=2
+toughness=2
+ability=protection from green,protection from blue
+timing=equipment

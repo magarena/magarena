@@ -537,3 +537,7 @@ Wurmcoil Engine.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid
 Zealous Persecution.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179575&type=card
 Zephyr Sprite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190167&type=card
 Zombify.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220580&type=card
+
+Student of Warfare.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193598&type=card
+Sword of Body and Mind.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209280&type=card
+Szadek, Lord of Secrets.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89092&type=card

@@ -130,4 +130,9 @@ public class ArtificialScoringSystem {
 		}
 		return score;
 	}
+	
+	public static int getMillScore(final int amount) {
+		
+		return -amount;
+	}
 }

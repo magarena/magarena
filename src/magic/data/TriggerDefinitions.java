@@ -31,6 +31,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicGainControlAction;
+import magic.model.action.MagicMillLibraryAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPlayTokenAction;
@@ -1783,6 +1784,28 @@ public class TriggerDefinitions {
 		}
     };
 
+    private static final MagicTrigger SZADEK_LORD_OF_SECRETS=new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Szadek, Lord of Secrets",6) {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			final int amount=damage.getAmount();
+			if (amount>0&&damage.isCombat()&&permanent==damage.getSource()&&damage.getTarget().isPlayer()) {
+				// Replacement effect.
+				damage.setAmount(0);
+				game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
+				game.doAction(new MagicMillLibraryAction((MagicPlayer)damage.getTarget(),amount));
+			}			
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+		
+		}
+    };
+    
     private static final MagicTrigger TAUREAN_MAULER=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Taurean Mauler") {
 
 		@Override
@@ -2238,6 +2261,30 @@ public class TriggerDefinitions {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 		
 			game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],(MagicPlayer)data[1],1,false));
+		}
+    };
+    
+    private static final MagicTrigger SWORD_OF_BODY_AND_MIND=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of Body and Mind") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
+				final MagicPlayer player=permanent.getController();
+				final MagicTarget targetPlayer=damage.getTarget();
+				return new MagicEvent(permanent,player,new Object[]{player,targetPlayer},this,
+					"You put a 2/2 green Wolf creature token onto the battlefield and "+targetPlayer.getName()+
+					" puts the top ten cards of his or her library into his or her graveyard.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.WOLF_TOKEN_CARD));
+			game.doAction(new MagicMillLibraryAction((MagicPlayer)data[1],10));
 		}
     };
     
@@ -3038,6 +3085,7 @@ public class TriggerDefinitions {
 	    STONEBROW_KROSAN_HERO,
 	    STUFFY_DOLL,
 	    SURVEILLING_SPRITE,
+	    SZADEK_LORD_OF_SECRETS,
 	    TAUREAN_MAULER,
 	    TENEB_THE_HARVESTER,
 	    THIEVING_MAGPIE,
@@ -3059,6 +3107,7 @@ public class TriggerDefinitions {
 	    RONIN_WARCLUB,
 	    SHIELD_OF_THE_RIGHTEOUS,
 	    SPECTERS_SHROUD,
+	    SWORD_OF_BODY_AND_MIND,
 	    SWORD_OF_FIRE_AND_ICE,
 	    SWORD_OF_LIGHT_AND_SHADOW,
 	    BLOOD_CRYPT,
