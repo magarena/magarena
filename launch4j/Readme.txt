@@ -7,6 +7,15 @@ Otherwise you will see a lot of question marks.
 
 Have fun!
 
+December 15, 2010
+=================
+
+- added Cube logo to Magarena version information
+- removed dragon statue image from download images list
+- replaced card Gruul War Plow with Chimeric Mass
+- added cards Student of Warfare, Sword of Body and Mind and Szadek, Lord of Secrets
+- use download images to update
+
 December 14, 2010
 =================
 
