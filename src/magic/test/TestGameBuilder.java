@@ -112,6 +112,7 @@ public class TestGameBuilder {
 
 		addToLibrary(player,"Forest",10);
 		addToLibrary(opponent,"Forest",10);
+		addToHand(player,"Rakdos Guildmage",1);		
 		addToHand(player,"Bant Sureblade",1);
 		addToHand(player,"Jund Hackblade",1);
 		addToHand(player,"Esper Stormblade",1);

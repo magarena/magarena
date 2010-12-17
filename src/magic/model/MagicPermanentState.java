@@ -23,6 +23,8 @@ public enum MagicPermanentState {
 		Tapped.getMask()|
 		Summoned.getMask()|
 		DoesNotUntap.getMask()|
+		SacrificeAtEndOfTurn.getMask()|
+		RemoveAtEndOfTurn.getMask()|
 		RemoveAtEndOfYourTurn.getMask()|
 		ExcludeManaSource.getMask()|
 		ExcludeFromCombat.getMask()|
