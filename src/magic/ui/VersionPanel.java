@@ -12,10 +12,8 @@ import magic.ui.widget.TexturedPanel;
 public class VersionPanel extends TexturedPanel {
 
 	private static final long serialVersionUID = 1L;
-	
-	public static final String SNAPSHOT = " SNAPSHOT";
-	
-	private static final String VERSION = "Magarena 1.2"+SNAPSHOT;
+		
+	private static final String VERSION = "Magarena 1.2";
 	private static final String AUTHOR = "by ubeefx";
 	private static final String WEB = "http://magarena.dyndns.org";
 	private static final String SPACING = "   ";
