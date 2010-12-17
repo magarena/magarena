@@ -131,6 +131,20 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
+
+	public static final MagicTargetFilter TARGET_NONBASIC_LAND=new MagicTargetFilter() {
+
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			
+			final MagicPermanent targetPermanent=(MagicPermanent)target;
+			return targetPermanent.isLand()&&!targetPermanent.getCardDefinition().isBasic();
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {
+			
+			return targetType==MagicTargetType.Permanent;
+		}
+	};
 	
 	public static final MagicTargetFilter TARGET_NONLAND_PERMANENT=new MagicTargetFilter() {
 
@@ -166,6 +180,20 @@ public interface MagicTargetFilter {
 			
 			final MagicPermanent targetPermanent=(MagicPermanent)target;
 			return targetPermanent.isArtifact()||targetPermanent.isEnchantment();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
+
+	public static final MagicTargetFilter TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=new MagicTargetFilter() {
+
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			
+			final MagicPermanent targetPermanent=(MagicPermanent)target;
+			return targetPermanent.isLand()||targetPermanent.isArtifact()||targetPermanent.isEnchantment();
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {

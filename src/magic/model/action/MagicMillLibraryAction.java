@@ -37,7 +37,7 @@ public class MagicMillLibraryAction extends MagicAction {
 				graveyard.addToTop(milledCard);
 				milledCards.add(milledCard);
 			}
-			game.logMessage(player,"You move "+count+" cards from the top of your library into your graveyard.");
+			game.logMessage(player,"You put the top "+count+" cards of your library into your graveyard.");
 		}
 	}
 

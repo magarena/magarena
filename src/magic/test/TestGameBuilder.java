@@ -114,20 +114,21 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Forest",10);
 		addToHand(player,"Acidic Slime",1);		
 		addToHand(player,"Archon of Justice",1);
-		addToHand(player,"Ember Hauler",1);
-		addToHand(player,"Fume Spitter",1);
 		addToHand(player,"Goblin Ruinblaster",1);
 		addToHand(player,"Mycoid Shepherd",1);
 		addToHand(player,"Scuzzback Marauders",1);
 		addToHand(player,"Nemesis of Reason",1);
-		addToHand(player,"Nulltread Gargantuan",1);		
+		addToHand(player,"Nulltread Gargantuan",1);
 		addToHand(player,"Pierce Strider",1);
-		addToHand(player,"Last Gasp",1);	
+		addToHand(player,"Shivan Wurm",1);
+		addToHand(player,"Doom Blade",1);	
 		createPermanent(game,player,"Bonesplitter",false,2);
 		createPermanent(game,player,"Rupture Spire",false,10);
 		createPermanent(game,opponent,"Bonesplitter",false,1);
 		createPermanent(game,opponent,"Rhox War Monk",false,1);
+		createPermanent(game,opponent,"Glorious Anthem",false,3);
 		createPermanent(game,opponent,"Forest",false,1);
+		createPermanent(game,opponent,"Jungle Shrine",false,1);
 
 		return game;
 	}

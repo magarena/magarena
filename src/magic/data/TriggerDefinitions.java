@@ -124,6 +124,25 @@ public class TriggerDefinitions {
 	private static final MagicChoice HOBGOBLINS_CHOICE=new MagicMayChoice("You may pay {X}.",new MagicPayManaCostChoice(MagicManaCost.X));
 	private static final MagicChoice RUPTURE_SPIRE_CHOICE=new MagicMayChoice("You may pay {1}.",new MagicPayManaCostChoice(MagicManaCost.ONE));
 
+	private static final MagicTrigger ACIDIC_SLIME=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Acidic Slime") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,
+				new MagicDestroyTargetPicker(false),MagicEvent.NO_DATA,this,"Destroy target artifact, enchantment or land$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				game.doAction(new MagicDestroyAction(permanent));
+			}
+		}
+    };
+	
     private static final MagicTrigger AFFA_GUARD_HOUND=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Affa Guard Hound") {
 
 		@Override
@@ -158,6 +177,25 @@ public class TriggerDefinitions {
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
 				game.doAction(new MagicDestroyAction(permanent));
+			}
+		}
+    };
+    
+	private static final MagicTrigger ARCHON_OF_JUSTICE=new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Archon of Justice") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_PERMANENT,MagicExileTargetPicker.getInstance(),
+				MagicEvent.NO_DATA,this,"Exile target permanent$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
 			}
 		}
     };
@@ -1273,7 +1311,47 @@ public class TriggerDefinitions {
 			}
 		}
     };
+    
+    private static final MagicTrigger MYCOID_SHEPHERD1=new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Mycoid Shepherd") {
 
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		
+			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+			if (MagicLocationType.Play==triggerData.fromLocation) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 5 life.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],5));
+		}
+    };
+
+    private static final MagicTrigger MYCOID_SHEPHERD2=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Mycoid Shepherd") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			final MagicPermanent otherPermanent=(MagicPermanent)data;
+			if (otherPermanent!=permanent&&otherPermanent.getController()==player&&otherPermanent.isCreature()&&otherPermanent.getPower(game)>=5) {			
+				return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 5 life.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],5));
+		}
+    };
+    
     private static final MagicTrigger MURKFIEND_LIEGE=new MagicTrigger(MagicTriggerType.AtUpkeep,"Murkfiend Liege") {
 
 		@Override
@@ -1324,6 +1402,26 @@ public class TriggerDefinitions {
 			}
 		}
     };
+    
+    private static final MagicTrigger NEMESIS_OF_REASON=new MagicTrigger(MagicTriggerType.WhenAttacks,"Nemesis of Reason") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			if (permanent==data) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{game.getOpponent(player)},this,
+					"Defending player puts the top ten cards of his or her library into his or her graveyard.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],10));
+		}
+    };
         
     private static final MagicTrigger NOVABLAST_WURM=new MagicTrigger(MagicTriggerType.WhenAttacks,"Novablast Wurm") {
 
@@ -1349,7 +1447,26 @@ public class TriggerDefinitions {
 			}
 		}
     };
-        
+
+	private static final MagicTrigger NULLTREAD_GARGANTUAN=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Nulltread Gargantuan") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.CREATURE_YOU_CONTROL,
+				MagicBounceTargetPicker.getInstance(),MagicEvent.NO_DATA,this,"Put a creature you control$ on top of its owner's library.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.TopOfOwnersLibrary));
+			}
+		}
+    };
+    
     private static final MagicTrigger OROS_THE_AVENGER=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Oros, the Avenger") {
 
 		@Override
@@ -1430,6 +1547,25 @@ public class TriggerDefinitions {
 		
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
 		}
+    };
+    
+    private static final MagicTrigger PIERCE_STRIDER=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Pierce Strider") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_OPPONENT,
+				MagicEvent.NO_DATA,this,"Target opponent$ loses 3 life.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=event.getTarget(game,choiceResults,0);
+			if (player!=null) {
+				game.doAction(new MagicChangeLifeAction(player,-3));
+			}
+		}		
     };
     
     private static final MagicTrigger PUPPETEER_CLIQUE=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Puppeteer Clique") {
@@ -1704,7 +1840,7 @@ public class TriggerDefinitions {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 
-			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL,
+			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.RED_OR_GREEN_CREATURE_YOU_CONTROL,
 				MagicBounceTargetPicker.getInstance(),MagicEvent.NO_DATA,this,"Return a red or green creature you control$ to its owner's hand.");
 		}
 
@@ -3005,8 +3141,10 @@ public class TriggerDefinitions {
 	};
 	    
 	private static final Collection<MagicTrigger> TRIGGERS=Arrays.<MagicTrigger>asList(
+		ACIDIC_SLIME,
 		AFFA_GUARD_HOUND,
 	    ANGEL_OF_DESPAIR,
+	    ARCHON_OF_JUSTICE,
 	    ARCHON_OF_REDEMPTION1,
 	    ARCHON_OF_REDEMPTION2,
 	    AVEN_MIMEOMANCER,
@@ -3063,13 +3201,18 @@ public class TriggerDefinitions {
 	    MORDANT_DRAGON,
 	    MOROII,
 	    MURDEROUS_REDCAP,
+	    MYCOID_SHEPHERD1,
+	    MYCOID_SHEPHERD2,
 	    MURKFIEND_LIEGE,
 	    MYSTIC_SNAKE,
+	    NEMESIS_OF_REASON,
 	    NOVABLAST_WURM,
+	    NULLTREAD_GARGANTUAN,
 	    PELAKKA_WURM1,
 	    PELAKKA_WURM2,
 	    PERIMETER_CAPTAIN,
 	    OROS_THE_AVENGER,
+	    PIERCE_STRIDER,
 	    PUPPETEER_CLIQUE,
 	    RAFIQ_OF_THE_MANY,
 	    RAMPAGING_BALOTHS,

@@ -41,6 +41,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL_OR_PERMANENT,true,MagicTargetHint.Negative,"target spell or permanent");
 	public static final MagicTargetChoice TARGET_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.None,"target permanent");
+	public static final MagicTargetChoice TARGET_NONBASIC_LAND=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.None,"target non basic land");
 	public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
 	public static final MagicTargetChoice NEG_TARGET_ARTIFACT=
@@ -50,6 +52,8 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,
 			"target artifact or enchantment your opponent controls");
+	public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,true,MagicTargetHint.None,"target artifact, enchantment or land");
 	public static final MagicTargetChoice TARGET_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE,true,MagicTargetHint.None,"target creature");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE=
@@ -73,10 +77,12 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_CREATURE,true,MagicTargetHint.Negative,"target attacking creature");
 	public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_CREATURE_WITH_FLYING,true,MagicTargetHint.Negative,"target attacking creature with flying");
+	public static final MagicTargetChoice CREATURE_YOU_CONTROL=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a creature you control");
+	public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a red or green creature you control");
 	public static final MagicTargetChoice TARGET_CREATURE_YOU_CONTROL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,"target creature you control");
-	public static final MagicTargetChoice TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a red or green creature you control");
 	public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target creature your opponent controls");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_PLAYER=
