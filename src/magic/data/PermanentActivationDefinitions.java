@@ -29,6 +29,7 @@ import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicDrawAction;
+import magic.model.action.MagicExileUntilEndOfTurnAction;
 import magic.model.action.MagicPlayAbilityAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPlayTokenAction;
@@ -660,6 +661,32 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation FURNACE_WHELP=new MagicPumpActivation("Furnace Whelp",MagicManaCost.RED,1,0);
+
+	private static final MagicPermanentActivation GHOST_COUNCIL_OF_ORZHOVA=new MagicPermanentActivation("Ghost Council of Orzhova",
+			new MagicCondition[]{MagicManaCost.ONE.getCondition(),MagicCondition.TWO_CREATURES_CONDITION},new MagicActivationHints(MagicTiming.Removal,false,1)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			final MagicPlayer player=source.getController();
+			return new MagicEvent[]{					
+				new MagicPayManaCostEvent(source,player,MagicManaCost.ONE),
+				new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),new Object[]{source},this,
+				"Exile Ghost Council of Orzhova. Return it to the battlefield under its owner's control at end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicExileUntilEndOfTurnAction((MagicPermanent)data[0]));
+		}
+	};
 	
 	private static final MagicPermanentActivation GLEN_ELENDRA_ARCHMAGE=new MagicPermanentActivation(
 			"Glen Elendra Archmage",new MagicCondition[]{MagicManaCost.BLUE.getCondition()},new MagicActivationHints(MagicTiming.Counter)) {
@@ -2227,6 +2254,7 @@ public class PermanentActivationDefinitions {
 		FEMEREF_ARCHERS,
 		FIRESLINGER,
 		FURNACE_WHELP,
+		GHOST_COUNCIL_OF_ORZHOVA,
 		GLEN_ELENDRA_ARCHMAGE,
 		GOBLIN_ARTILLERY,
 		GODSIRE,

@@ -53,6 +53,7 @@ public class MagicGame {
 	private final MagicPlayer players[];
 	private final MagicPermanentTriggerMap triggers;
 	private final MagicPermanentTriggerList turnTriggers;
+	private final MagicCardList exiledUntilEndOfTurn;
 	private final MagicEventQueue events;
 	private final MagicStack stack;
 	private final MagicPlayer scorePlayer;
@@ -89,6 +90,7 @@ public class MagicGame {
 		identifiers=new long[MagicIdentifierType.NR_OF_IDENTIFIERS];
 		triggers=new MagicPermanentTriggerMap();
 		turnTriggers=new MagicPermanentTriggerList();
+		exiledUntilEndOfTurn=new MagicCardList();
 		events=new MagicEventQueue();
 		stack=new MagicStack();
 		visiblePlayer=players[0];
@@ -113,6 +115,7 @@ public class MagicGame {
 		this.identifiers=Arrays.copyOf(game.identifiers,MagicIdentifierType.NR_OF_IDENTIFIERS);
 		this.triggers=new MagicPermanentTriggerMap(copyMap,game.triggers);
 		this.turnTriggers=new MagicPermanentTriggerList(triggers,game.turnTriggers);
+		this.exiledUntilEndOfTurn=game.exiledUntilEndOfTurn.copy(copyMap);
 		this.events=new MagicEventQueue(copyMap,game.events);
 		this.stack=new MagicStack(copyMap,game.stack);
 		this.scorePlayer=copyMap.copy(scorePlayer);
@@ -692,7 +695,12 @@ public class MagicGame {
 		
 		return new MagicPermanent(createIdentifier(MagicIdentifierType.Permanent),card,controller);
 	}
-				
+	
+	public MagicCardList getExiledUntilEndOfTurn() {
+		
+		return exiledUntilEndOfTurn;
+	}
+	
 	public void setStateCheckRequired(final boolean required) {
 		
 		stateCheckRequired=required;

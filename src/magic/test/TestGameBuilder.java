@@ -85,6 +85,7 @@ public class TestGameBuilder {
 			});
 
 			game.getEvents().clear();
+			game.getStack().clear();
 			permanent.clearState(MagicPermanentState.Summoned);
 			if (tapped) {
 				permanent.setState(MagicPermanentState.Tapped);
@@ -112,11 +113,16 @@ public class TestGameBuilder {
 		addToLibrary(player,"Forest",10);
 		addToLibrary(opponent,"Forest",10);				
 		addToHand(player,"Into the Roil",1);
-		addToHand(player,"Spider Umbra",1);
+		addToHand(player,"Turn to Mist",1);
+		addToHand(player,"Unmake",1);
+		addToHand(player,"Ghost Council of Orzhova",1);		
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Birds of Paradise",false,1);
-		createPermanent(game,player,"Seaside Citadel",false,10);
-		
+		createPermanent(game,player,"Arcane Sanctum",false,10);
+		createPermanent(game,opponent,"Ghost Council of Orzhova",false,1);
+		createPermanent(game,opponent,"Watchwolf",false,1);
+		createPermanent(game,opponent,"Arcane Sanctum",false,1);
+
 		return game;
 	}
 }

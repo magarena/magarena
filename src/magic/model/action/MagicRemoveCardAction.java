@@ -32,7 +32,10 @@ public class MagicRemoveCardAction extends MagicAction {
 				break;
 			case Graveyard:
 				index=owner.getGraveyard().removeCard(card);
-				break;			
+				break;		
+			case Exile:
+				index=owner.getExile().removeCard(card);
+				break;
 		}		
 		game.setStateCheckRequired();
 	}
@@ -50,6 +53,9 @@ public class MagicRemoveCardAction extends MagicAction {
 				break;
 			case Graveyard:
 				owner.getGraveyard().add(index,card);
+				break;
+			case Exile:
+				owner.getExile().add(index,card);
 				break;
 		}
 	}

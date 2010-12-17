@@ -3,6 +3,7 @@ package magic.model.phase;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.action.MagicReturnExiledAction;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicEndOfTurnPhase extends MagicPhase {
@@ -37,6 +38,9 @@ public class MagicEndOfTurnPhase extends MagicPhase {
 				}
 			} while (changed);
 		}
+		
+		// Exiled until end of turn.
+		game.doAction(new MagicReturnExiledAction());
 		
 		// End of turn triggers.
 		game.executeTrigger(MagicTriggerType.AtEndOfTurn,game.getTurnPlayer());

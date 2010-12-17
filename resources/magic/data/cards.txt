@@ -5159,3 +5159,25 @@ power=1
 toughness=1
 ability=deathtouch
 timing=equipment
+
+605:Turn to Mist
+value=3
+removal=1
+rarity=1
+type=Instant
+color=wu
+converted=2
+cost={1}{W/U}
+timing=removal
+
+606:Ghost Council of Orzhova
+value=4
+rarity=3
+type=Legendary,Creature
+subtype=Spirit,Lord
+color=wb
+converted=4
+cost={W}{W}{B}{B}
+power=4
+toughness=4
+timing=main

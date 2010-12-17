@@ -788,6 +788,27 @@ public class TriggerDefinitions {
 			}
 		}
     };
+    
+    private static final MagicTrigger GHOST_COUNCIL_OF_ORZHOVA=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Ghost Council of Orzhova") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,MagicTargetChoice.TARGET_OPPONENT,
+				new Object[]{player},this,"Target opponent$ loses 1 life and you gain 1 life.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=event.getTarget(game,choiceResults,0);
+			if (player!=null) {
+				game.doAction(new MagicChangeLifeAction(player,-1));
+				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+			}
+		}		
+    };
 
     private static final MagicTrigger GUARD_GOMAZOA=new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Guard Gomazoa",1) {
 
@@ -3016,6 +3037,7 @@ public class TriggerDefinitions {
 	    FLAMETONGUE_KAVU,
 	    FOUL_IMP,
 	    FRENZIED_GOBLIN,
+	    GHOST_COUNCIL_OF_ORZHOVA,
 	    GOBLIN_SHORTCUTTER,
 	    GUARD_GOMAZOA,
 	    GUARDIAN_SERAPH,
