@@ -5286,3 +5286,113 @@ converted=3
 cost={1}{R}{R}
 ability=can't be countered
 timing=removal
+
+616:Acidic Slime
+value=4
+rarity=2
+type=Creature
+subtype=Ooze
+color=g
+converted=5
+cost={3}{G}{G}
+power=2
+toughness=2
+ability=deathtouch
+timing=fmain
+
+617:Archon of Justice
+value=4
+rarity=2
+type=Creature
+subtype=Archon
+color=w
+converted=5
+cost={3}{W}{W}
+power=4
+toughness=4
+ability=flying
+timing=main
+
+618:Ember Hauler
+value=3
+rarity=2
+type=Creature
+subtype=Goblin
+color=r
+converted=2
+cost={R}{R}
+power=2
+toughness=2
+timing=fmain
+
+619:Fume Spitter
+value=2
+rarity=1
+type=Creature
+subtype=Horror
+color=b
+converted=1
+cost={B}
+power=1
+toughness=1
+timing=fmain
+
+620:Goblin Ruinblaster
+value=3
+rarity=2
+type=Creature
+subtype=Goblin,Shaman
+color=r
+converted=3
+cost={2}{R}
+power=2
+toughness=1
+ability=haste
+timing=fmain
+
+621:Mycoid Shepherd
+value=4
+rarity=2
+type=Creature
+subtype=Fungus
+color=gw
+converted=4
+cost={1}{G}{G}{W}
+power=5
+toughness=4
+timing=main
+
+622:Nemesis of Reason
+value=4
+rarity=2
+type=Creature
+subtype=Leviathan,Horror
+color=ub
+converted=5
+cost={3}{U}{B}
+power=3
+toughness=7
+timing=smain
+
+623:Nulltread Gargantuan
+value=4
+rarity=2
+type=Creature
+subtype=Beast
+color=gu
+converted=3
+cost={1}{G}{U}
+power=5
+toughness=6
+timing=smain
+
+624:Pierce Strider
+value=3
+rarity=2
+type=Artifact,Creature
+subtype=Construct
+converted=4
+cost={4}
+power=3
+toughness=3
+timing=fmain

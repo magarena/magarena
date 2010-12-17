@@ -112,25 +112,22 @@ public class TestGameBuilder {
 
 		addToLibrary(player,"Forest",10);
 		addToLibrary(opponent,"Forest",10);
-		addToHand(player,"Rakdos Guildmage",1);		
-		addToHand(player,"Bant Sureblade",1);
-		addToHand(player,"Jund Hackblade",1);
-		addToHand(player,"Esper Stormblade",1);
-		addToHand(player,"Grixis Grimblade",1);
-		addToHand(player,"Goblin Gaveleer",1);
-		addToHand(player,"Kitesail Apprentice",1);
-		addToHand(player,"Student of Warfare",1);		
-		addToHand(player,"Disfigure",1);		
-		addToHand(player,"Last Gasp",1);		
-		addToHand(player,"Smash to Smithereens",1);		
-		addToHand(player,"Volcanic Fallout",1);			
-		addToHand(player,"Counterspell",1);					
+		addToHand(player,"Acidic Slime",1);		
+		addToHand(player,"Archon of Justice",1);
+		addToHand(player,"Ember Hauler",1);
+		addToHand(player,"Fume Spitter",1);
+		addToHand(player,"Goblin Ruinblaster",1);
+		addToHand(player,"Mycoid Shepherd",1);
+		addToHand(player,"Scuzzback Marauders",1);
+		addToHand(player,"Nemesis of Reason",1);
+		addToHand(player,"Nulltread Gargantuan",1);		
+		addToHand(player,"Pierce Strider",1);
+		addToHand(player,"Last Gasp",1);	
 		createPermanent(game,player,"Bonesplitter",false,2);
 		createPermanent(game,player,"Rupture Spire",false,10);
 		createPermanent(game,opponent,"Bonesplitter",false,1);
-		createPermanent(game,opponent,"Glorious Anthem",false,1);
+		createPermanent(game,opponent,"Rhox War Monk",false,1);
 		createPermanent(game,opponent,"Forest",false,1);
-		createPermanent(game,opponent,"Rhox War Monk",false,1);		
 
 		return game;
 	}

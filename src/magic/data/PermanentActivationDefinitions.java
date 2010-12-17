@@ -481,6 +481,33 @@ public class PermanentActivationDefinitions {
 			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],amount,0));
 		}
 	};
+
+	private static final MagicPermanentActivation EMBER_HAULER=new MagicPermanentActivation("Ember Hauler",
+			new MagicCondition[]{MagicManaCost.ONE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.ONE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(2),
+				new Object[]{source},this,"Ember Hauler deals 2 damage to target creature or player$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicTarget target=event.getTarget(game,choiceResults,0);
+			if (target!=null) {
+				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+	};
 	
 	private static final MagicPermanentActivation ESPER_BATTLEMAGE1=new MagicPermanentActivation("Esper Battlemage",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.WHITE.getCondition()},new MagicActivationHints(MagicTiming.Pump)) {
@@ -657,6 +684,31 @@ public class PermanentActivationDefinitions {
 			}
 			final MagicDamage damage2=new MagicDamage(source,(MagicTarget)data[1],1,false);
 			game.doAction(new MagicDealDamageAction(damage2));
+		}
+	};
+
+	private static final MagicPermanentActivation FUME_SPITTER=new MagicPermanentActivation("Fume Spitter",null,new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(1,1),
+				MagicEvent.NO_DATA,this,"Put a -1/-1 counter on target creature$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=(MagicPermanent)event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,1,true));
+			}
 		}
 	};
 	
@@ -2246,6 +2298,7 @@ public class PermanentActivationDefinitions {
 		DAUNTLESS_ESCORT,
 		DEATHLESS_ANGEL,
 		DRANA_KALASTRIA_BLOODCHIEF,
+		EMBER_HAULER,
 		ESPER_BATTLEMAGE1,
 		ESPER_BATTLEMAGE2,
 		ETHERSWORN_ADJUDICATOR1,
@@ -2253,6 +2306,7 @@ public class PermanentActivationDefinitions {
 		FALLEN_ANGEL,
 		FEMEREF_ARCHERS,
 		FIRESLINGER,
+		FUME_SPITTER,
 		FURNACE_WHELP,
 		GHOST_COUNCIL_OF_ORZHOVA,
 		GLEN_ELENDRA_ARCHMAGE,
