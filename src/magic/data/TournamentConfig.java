@@ -7,11 +7,15 @@ import java.io.IOException;
 import java.util.Properties;
 
 import magic.MagicMain;
+import magic.model.MagicColor;
 import magic.model.MagicPlayerProfile;
 
 public class TournamentConfig {
 
 	private static TournamentConfig INSTANCE=new TournamentConfig();
+
+	private static final String ANY_THREE="***";
+	private static final String ANY_TWO="**";
 	
 	private static final String CONFIG_FILENAME="tournament.cfg";
 	private static final String AVATAR="avatar";
@@ -27,8 +31,8 @@ public class TournamentConfig {
 	private int startLife=20;
 	private int handSize=7;
 	private int games=7;
-	private MagicPlayerProfile playerProfile=new MagicPlayerProfile("bgr");
-	private MagicPlayerProfile opponentProfile=new MagicPlayerProfile("urw");
+	private String playerColors=ANY_THREE;
+	private String opponentColors=ANY_THREE;
 	
 	public TournamentConfig() {
 		
@@ -40,8 +44,8 @@ public class TournamentConfig {
 		startLife=tournamentConfig.startLife;
 		handSize=tournamentConfig.handSize;
 		games=tournamentConfig.games;
-		playerProfile=tournamentConfig.playerProfile;
-		opponentProfile=tournamentConfig.opponentProfile;
+		playerColors=tournamentConfig.playerColors;
+		opponentColors=tournamentConfig.opponentColors;
 	}
 	
 	public int getAvatar() {
@@ -93,27 +97,47 @@ public class TournamentConfig {
 		
 		return games;
 	}
+	
+	private static MagicPlayerProfile getProfile(final String colorText) {
 		
+		if (ANY_THREE.equals(colorText)) {
+			return new MagicPlayerProfile(MagicColor.getRandomColors(3));
+		} else if (ANY_TWO.equals(colorText)) {
+			return new MagicPlayerProfile(MagicColor.getRandomColors(2));
+		}
+		return new MagicPlayerProfile(colorText);
+	}
+	
+	public String getPlayerColors() {
+		
+		return playerColors;
+	}
+	
+	public void setPlayerColors(final String colors) {
+
+		playerColors=colors;
+	}
+	
 	public MagicPlayerProfile getPlayerProfile() {
 		
-		return playerProfile;
+		return getProfile(playerColors);
 	}
-
-	public void setPlayerProfile(final MagicPlayerProfile profile) {
-
-		this.playerProfile=profile;
+	
+	public String getOpponentColors() {
+		
+		return opponentColors;
+	}
+	
+	public void setOpponentColors(final String colors) {
+		
+		opponentColors=colors;
 	}
 	
 	public MagicPlayerProfile getOpponentProfile() {
 		
-		return opponentProfile;
+		return getProfile(opponentColors);
 	}
-	
-	public void setOpponentProfile(final MagicPlayerProfile profile) {
-		
-		this.opponentProfile=profile;
-	}
-		
+
 	public void load(final Properties properties) {
 		
 		avatar=Integer.parseInt(properties.getProperty(AVATAR,""+avatar));
@@ -121,8 +145,8 @@ public class TournamentConfig {
 		startLife=Integer.parseInt(properties.getProperty(START_LIFE,""+startLife));
 		handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,""+handSize));
 		games=Integer.parseInt(properties.getProperty(GAMES,""+games));
-		playerProfile=new MagicPlayerProfile(properties.getProperty(PLAYER,playerProfile.getColorText()));
-		opponentProfile=new MagicPlayerProfile(properties.getProperty(OPPONENT,opponentProfile.getColorText()));
+		playerColors=properties.getProperty(PLAYER,playerColors);
+		opponentColors=properties.getProperty(OPPONENT,opponentColors);
 	}
 	
 	public void load() {
@@ -141,8 +165,8 @@ public class TournamentConfig {
 		properties.setProperty(START_LIFE,""+startLife);
 		properties.setProperty(HAND_SIZE,""+handSize);
 		properties.setProperty(GAMES, ""+games);
-		properties.setProperty(PLAYER,playerProfile.getColorText());
-		properties.setProperty(OPPONENT,opponentProfile.getColorText());
+		properties.setProperty(PLAYER,playerColors);
+		properties.setProperty(OPPONENT,opponentColors);
 	}
 	
 	public void save() {

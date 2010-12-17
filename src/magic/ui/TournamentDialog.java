@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
@@ -24,7 +25,6 @@ import magic.data.IconImages;
 import magic.data.PlayerImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicColor;
-import magic.model.MagicPlayerProfile;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 
@@ -94,7 +94,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		gameSlider.setBounds(190,165,270,50);
 		mainPanel.add(gameSlider);
 		
-		playerColorsChooser=new ColorsChooser(config.getPlayerProfile().getColorText());
+		playerColorsChooser=new ColorsChooser(config.getPlayerColors());
 		playerColorsChooser.setBounds(55,255,130,50);
 		mainPanel.add(playerColorsChooser);
 		
@@ -104,7 +104,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		versusLabel.setBounds(185,255,120,50);
 		mainPanel.add(versusLabel);
 		
-		opponentColorsChooser=new ColorsChooser(config.getOpponentProfile().getColorText());
+		opponentColorsChooser=new ColorsChooser(config.getOpponentColors());
 		opponentColorsChooser.setBounds(305,255,130,50);
 		mainPanel.add(opponentColorsChooser);
 						
@@ -121,16 +121,14 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		if (source==okButton) {			
 			final TournamentConfig config=TournamentConfig.getInstance();
 			final String playerColors=(String)playerColorsChooser.getSelectedItem();
-			final MagicPlayerProfile playerProfile=new MagicPlayerProfile(playerColors);
 			final String opponentColors=(String)opponentColorsChooser.getSelectedItem();
-			final MagicPlayerProfile opponentProfile=new MagicPlayerProfile(opponentColors);
 			config.setAvatar(avatarPanel.getAvatar());
 			config.setName(nameTextField.getText());
 			config.setStartLife(lifeSlider.getValue());
 			config.setHandSize(handSlider.getValue());
 			config.setNrOfGames(gameSlider.getValue());
-			config.setPlayerProfile(playerProfile);
-			config.setOpponentProfile(opponentProfile);
+			config.setPlayerColors(playerColors);
+			config.setOpponentColors(opponentColors);
 			config.save();
 			frame.newTournament(config);
 			dispose();
@@ -215,6 +213,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			model.addElement("ugr");
 			model.addElement("urw");
 			model.addElement("grw");
+			model.addElement("***");
 			model.addElement("bu");
 			model.addElement("bg");
 			model.addElement("br");
@@ -225,7 +224,8 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			model.addElement("gr");
 			model.addElement("gw");
 			model.addElement("rw");
-			setModel(model);			
+			model.addElement("**");
+			setModel(model);
 			setSelectedItem(colors);
 			this.setFocusable(false);
 		}
@@ -238,8 +238,9 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			final JPanel panel=new JPanel(new GridLayout(1,3));
 			for (int i=0;i<colors.length();i++) {
 				
-				final MagicColor color=MagicColor.getColor(colors.charAt(i));
-				panel.add(new JLabel(color.getIcon()));
+				final char ch=colors.charAt(i);
+				final ImageIcon icon=ch=='*'?IconImages.ANY:MagicColor.getColor(ch).getIcon();
+				panel.add(new JLabel(icon));
 			}
 			panel.setBorder(FontsAndBorders.EMPTY_BORDER);
 			if (isSelected) {

@@ -1,5 +1,9 @@
 package magic.model;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import javax.swing.ImageIcon;
 
 import magic.data.IconImages;
@@ -142,4 +146,16 @@ public enum MagicColor {
 		}		
 		return null;
 	}	
+	
+	public static String getRandomColors(final int count) {
+		
+		final List<Character> colors=new ArrayList<Character>(Arrays.<Character>asList('b','u','g','r','w'));
+		final StringBuffer colorText=new StringBuffer();
+		for (int c=count;c>0;c--) {
+
+			final int index=MagicRandom.nextInt(colors.size());
+			colorText.append((char)colors.remove(index));			
+		}
+		return colorText.toString();
+	}
 }

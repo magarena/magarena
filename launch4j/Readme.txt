@@ -1,65 +1,49 @@
 There must be a Java Runtime 6 (java.com) installed on your computer to play.
 Installing on Windows is quite simple, just put Magarena.exe on your desktop and execute.
-To execute the jar instead, use java -Xmx256m -jar Magarena.jar.
+Magarena.exe is also a zip archive that contains the Magarena.jar file.
+To execute the jar, use java -Xmx256m -jar Magarena.jar.
 
-Do not forget to execute Download images in the Arena menu the first time.
+Do not forget to execute Download images in the Arena menu the first time you run a new release.
 Otherwise you will see a lot of question marks.
 
 Have fun!
 
-December 15, 2010
-=================
+Release 1.2 (December 18, 2010)
+===========
 
-- added Cube logo to Magarena version information
-- removed dragon statue image from download images list
-- replaced card Gruul War Plow with Chimeric Mass
-- added cards Student of Warfare, Sword of Body and Mind and Szadek, Lord of Secrets
-- use download images to update
-
-December 14, 2010
-=================
-
-- added tooltips for small icon buttons
-- proper converted mana cost for X spells on stack (Draining Whelk)
-- fix for self targeting of spells on stack (counters)
-- fix for wrong multiple target behavior of Char and Goblin Artillery
-
-December 13, 2010
-=================
+- 25 new cards
+- replaced Disperse with Into the Roil 
+- replaced Gruul War Plow with Chimeric Mass
 
 - support for loading and saving decks to an editable text format in decks folder
 - disabled deck editing when duel is in progress
+- added two and three color wild cards to new duel dialog
 - charge counters are now displayed with amount in graphical view
+- added tooltips for small icon buttons
 
-December 7, 2010
-================
+- fixed aura or equipment that stays attached when creature has protection
+- fixed sacrifice or exile at and end of turn not always triggering (Rakdos Guildmage)
+- fixed self targeting of spells on stack (counters)
+- fixed wrong multiple target behavior (Char and Goblin Artillery)
+- fixed converted mana cost for X spells on stack (Draining Whelk)
+- fixed triggered ability for multiple activations of Raging Ravine
 
-- version 1.1 release
-- display of version information on startup
-- support for replacing cards in decks with edit button that shows the card explorer
-- proper summoning sickness rule
-- icon for summoning sickness in graphical view
-
-December 5, 2010
-================
-
-- added Unhinged basic lands as alternate images for basic lands, use download images to update
-- added viewers for exile zone
-
-November 30, 2010
-=================
+Release 1.1 (December 7, 2010)
+===========
 
 - new splash screen
-- fixed Spider Umbra aura
+- display of version information on startup
 - improved download images dialog with proxy support
-
-November 28, 2010
-=================
-
 - support for two color decks
-- icons for flying, first & double strike, trample and deathtouch in graphical view
+- support for replacing cards in decks with edit button that shows the card explorer
+- added Unhinged basic lands as alternate images for basic lands
+- icons for summoning sickness, flying, first & double strike, trample and deathtouch in graphical view
+- viewers for exile zone
 
-November 25, 2010
-=================
+- fixed summoning sickness rule
+- fixed Spider Umbra aura
 
-- version 1.0 release
+Release 1.0 (November 25, 2010)
+===========
+
+- initial release
