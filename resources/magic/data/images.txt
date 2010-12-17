@@ -538,6 +538,28 @@ Zealous Persecution.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiver
 Zephyr Sprite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190167&type=card
 Zombify.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220580&type=card
 
+Acidic Slime.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207333&type=card
+Archon of Justice.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=146006&type=card
+Bant Sureblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188975&type=card
+Bladed Pinions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=206354&type=card
+Ember Hauler.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208008&type=card
+Esper Stromblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188968&type=card
+Fume Spitter.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209005&type=card
+Ghost Council of Orzhova.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96908&type=card
+Goblin Gaveleer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194373&type=card
+Goblin Ruinblaster.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180411&type=card
+Gorgon Flail.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191597&type=card
+Grixis Grimblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188976&type=card
+Last Gasp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89056&type=card
+Mirran Crusader.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/9x6ggbzsnh_EN.jpg
+Mycoid Shepherd.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179548&type=card
+Nemesis of Reason.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188962&type=card
+Nulltread Gargantuan.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179580&type=card
+Pierce Strider.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=111458&stc=1&d=1286337901
+Smash to Smithereens.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158243&type=card
 Student of Warfare.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193598&type=card
 Sword of Body and Mind.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209280&type=card
 Szadek, Lord of Secrets.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89092&type=card
+Turn to Mist.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158752&type=card
+Volcanic Fallout.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220512&type=card
+Woolly Thoctar.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175062&type=card

@@ -614,12 +614,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				game.doAction(new MagicDestroyAction(this));
 			}
 		} else if (cardDefinition.isAura()) {
-			if (enchantedCreature==null||!enchantedCreature.isCreature()) {
+			if (enchantedCreature==null||!enchantedCreature.isCreature()||enchantedCreature.hasProtectionFrom(game,this)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
 		} else if (cardDefinition.isEquipment()) {
-			if (equippedCreature!=null&&!equippedCreature.isCreature()) {
+			if (equippedCreature!=null&&(!equippedCreature.isCreature()||equippedCreature.hasProtectionFrom(game,this))) {
 				game.doAction(new MagicAttachEquipmentAction(this,null));
 			}
 		}

@@ -35,7 +35,7 @@ return it to the battlefield under its owner’s control with a -1/-1 counter on i
 *plainswalk
 This creature is unblockable as long as defending player controls a Plains.
 *protection from ~
-This creature can't be blocked, targeted, dealt damage, or enchanted by anything ~.
+This creature can't be blocked, targeted, dealt damage, equipped or enchanted by anything ~.
 *reach
 This creature can block creatures with flying.
 *regenerate

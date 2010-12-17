@@ -5135,3 +5135,27 @@ power=2
 toughness=2
 ability=protection from green,protection from blue
 timing=equipment
+
+603:Bladed Pinions
+value=2
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={2}
+ability=flying,first strike
+timing=equipment
+
+604:Gorgon Flail
+value=3
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={2}
+power=1
+toughness=1
+ability=deathtouch
+timing=equipment

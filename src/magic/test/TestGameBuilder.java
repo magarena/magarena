@@ -109,11 +109,17 @@ public class TestGameBuilder {
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
 
-		addToLibrary(player,"Mountain",10);
+		addToLibrary(player,"Forest",10);
 		addToLibrary(opponent,"Forest",10);				
-		addToHand(player,"Raging Ravine",1);
-		createPermanent(game,player,"Raging Ravine",false,1);
-		createPermanent(game,player,"Jungle Shrine",false,8);
+		addToHand(player,"Chimeric Mass",1);
+		addToHand(player,"Spider Umbra",1);
+		addToHand(player,"Behemoth Sledge",1);
+		addToHand(player,"Sword of Body and Mind",1);	
+		addToHand(player,"Gorgon Flail",1);
+		addToHand(player,"Bladed Pinions",1);		
+		createPermanent(game,player,"Watchwolf",false,1);
+		createPermanent(game,player,"Birds of Paradise",false,1);
+		createPermanent(game,player,"Forest",false,10);
 		
 		return game;
 	}
