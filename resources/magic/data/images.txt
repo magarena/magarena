@@ -171,7 +171,6 @@ Deluge.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=135223&t
 Diminish.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208226&type=card
 Disfigure.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180115&type=card
 Dismal Failure.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129022&type=card
-Disperse.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=212242&type=card
 Dissipation Field.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=202635&type=card
 Divination.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190172&type=card
 Doom Blade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205088&type=card
@@ -263,6 +262,7 @@ Incinerate.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1858
 Infest.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220459&type=card
 Inkfathom Infiltrator.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=154401&type=card
 Inspirit.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=84552&type=card
+Into the Roil.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=178151&type=card
 Iridescent Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=31799&type=card
 Island.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=201966
 Island2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73951&type=card

@@ -111,15 +111,11 @@ public class TestGameBuilder {
 
 		addToLibrary(player,"Forest",10);
 		addToLibrary(opponent,"Forest",10);				
-		addToHand(player,"Chimeric Mass",1);
+		addToHand(player,"Into the Roil",1);
 		addToHand(player,"Spider Umbra",1);
-		addToHand(player,"Behemoth Sledge",1);
-		addToHand(player,"Sword of Body and Mind",1);	
-		addToHand(player,"Gorgon Flail",1);
-		addToHand(player,"Bladed Pinions",1);		
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Birds of Paradise",false,1);
-		createPermanent(game,player,"Forest",false,10);
+		createPermanent(game,player,"Seaside Citadel",false,10);
 		
 		return game;
 	}

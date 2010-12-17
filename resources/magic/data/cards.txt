@@ -3645,7 +3645,7 @@ converted=2
 cost={1}{G}
 timing=removal
 
-361:Disperse
+361:Into the Roil
 value=3
 removal=2
 rarity=2
