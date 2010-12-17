@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeExtraTurnsAction;
 import magic.model.action.MagicCleanupPlayerAction;
+import magic.model.action.MagicCleanupTurnTriggersAction;
 import magic.model.action.MagicPayDelayedCostsAction;
 
 public class MagicCleanupPhase extends MagicPhase {
@@ -22,6 +23,7 @@ public class MagicCleanupPhase extends MagicPhase {
 	
 	private void cleanup(final MagicGame game) {
 
+		game.doAction(new MagicCleanupTurnTriggersAction());
 		for (final MagicPlayer player : game.getPlayers()) {
 			
 			game.doAction(new MagicCleanupPlayerAction(player));

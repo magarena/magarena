@@ -2443,26 +2443,8 @@ public class TriggerDefinitions {
 
     private static final MagicTrigger SEACHROME_COAST=new MagicTappedIntoPlayUnlessTwoTrigger("Seachrome Coast");
         
-    private static final MagicTrigger RAGING_RAVINE1=new MagicTappedIntoPlayTrigger("Raging Ravine");
-    
-    private static final MagicTrigger RAGING_RAVINE2=new MagicTrigger(MagicTriggerType.WhenAttacks,"Raging Ravine") {
-
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
-			if (permanent==data&&permanent.isCreature()) {
-				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,"Put a +1/+1 counter on Raging Ravine.");
-			}
-			return null;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
-		}
-    };
-        
+    private static final MagicTrigger RAGING_RAVINE=new MagicTappedIntoPlayTrigger("Raging Ravine");
+            
     private static final MagicTrigger DEBTORS_KNELL=new MagicTrigger(MagicTriggerType.AtUpkeep,"Debtors' Knell") {
 
 		@Override
@@ -3155,8 +3137,7 @@ public class TriggerDefinitions {
 	    DARKSLICK_SHORES,
 	    RAZORVERGE_THICKET,
 	    SEACHROME_COAST,
-	    RAGING_RAVINE1,
-	    RAGING_RAVINE2,
+	    RAGING_RAVINE,
 	    DISSIPATION_FIELD,
 	    DEBTORS_KNELL,
 	    FERVENT_CHARGE,

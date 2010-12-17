@@ -19,6 +19,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.action.MagicAddTurnTriggerAction;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeLifeAction;
@@ -80,6 +81,8 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicUnblockableTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 
@@ -2101,6 +2104,24 @@ public class PermanentActivationDefinitions {
 		}		
 	};
 
+    private static final MagicTrigger RAGING_RAVINE_TRIGGER=new MagicTrigger(MagicTriggerType.WhenAttacks,"Raging Ravine") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			if (permanent==data&&permanent.isCreature()) {
+				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,"Put a +1/+1 counter on Raging Ravine.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+		}
+    };
+	
 	private static final MagicPermanentActivation RAGING_RAVINE=new MagicPermanentActivation(
 			"Raging Ravine",new MagicCondition[]{new MagicArtificialCondition(
 					MagicManaCost.TWO_RED_GREEN.getCondition(),MagicManaCost.ONE_RED_RED_GREEN_GREEN.getCondition())},
@@ -2123,7 +2144,9 @@ public class PermanentActivationDefinitions {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],RAGING_RAVINE_VARIABLE));
+			final MagicPermanent permanent=(MagicPermanent)data[0];
+			game.doAction(new MagicBecomesCreatureAction(permanent,RAGING_RAVINE_VARIABLE));
+			game.doAction(new MagicAddTurnTriggerAction(permanent,RAGING_RAVINE_TRIGGER));
 		}
 	};
 

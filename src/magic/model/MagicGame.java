@@ -3,6 +3,7 @@ package magic.model;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.SortedSet;
@@ -37,6 +38,7 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetType;
 import magic.model.trigger.MagicPermanentTrigger;
+import magic.model.trigger.MagicPermanentTriggerList;
 import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
@@ -50,6 +52,7 @@ public class MagicGame {
 	private final MagicTournament tournament;
 	private final MagicPlayer players[];
 	private final MagicPermanentTriggerMap triggers;
+	private final MagicPermanentTriggerList turnTriggers;
 	private final MagicEventQueue events;
 	private final MagicStack stack;
 	private final MagicPlayer scorePlayer;
@@ -85,6 +88,7 @@ public class MagicGame {
 		this.players=players;
 		identifiers=new long[MagicIdentifierType.NR_OF_IDENTIFIERS];
 		triggers=new MagicPermanentTriggerMap();
+		turnTriggers=new MagicPermanentTriggerList();
 		events=new MagicEventQueue();
 		stack=new MagicStack();
 		visiblePlayer=players[0];
@@ -108,6 +112,7 @@ public class MagicGame {
 		this.players=copyMap.copyObjects(game.players,MagicPlayer.class);		
 		this.identifiers=Arrays.copyOf(game.identifiers,MagicIdentifierType.NR_OF_IDENTIFIERS);
 		this.triggers=new MagicPermanentTriggerMap(copyMap,game.triggers);
+		this.turnTriggers=new MagicPermanentTriggerList(triggers,game.turnTriggers);
 		this.events=new MagicEventQueue(copyMap,game.events);
 		this.stack=new MagicStack(copyMap,game.stack);
 		this.scorePlayer=copyMap.copy(scorePlayer);
@@ -930,17 +935,51 @@ public class MagicGame {
 
 		final long id=createIdentifier(MagicIdentifierType.PermanentTrigger);
 		final MagicPermanentTrigger permanentTrigger=new MagicPermanentTrigger(id,permanent,trigger);
-		final SortedSet<MagicPermanentTrigger> typeTriggers=triggers.get(trigger.getType());
-		typeTriggers.add(permanentTrigger);
+		triggers.get(trigger.getType()).add(permanentTrigger);
+		return permanentTrigger;
+	}
+		
+	public void addTrigger(MagicPermanentTrigger permanentTrigger) {
+
+		triggers.get(permanentTrigger.getTrigger().getType()).add(permanentTrigger);
+	}
+
+	public MagicPermanentTrigger addTurnTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
+		
+		final MagicPermanentTrigger permanentTrigger=addTrigger(permanent,trigger);
+		turnTriggers.add(permanentTrigger);
 		return permanentTrigger;
 	}
 	
-	public void addTrigger(MagicPermanentTrigger permanentTrigger) {
-
-		final SortedSet<MagicPermanentTrigger> typeTriggers=triggers.get(permanentTrigger.getTrigger().getType());
-		typeTriggers.add(permanentTrigger);
-	}
+	public void addTurnTriggers(final List<MagicPermanentTrigger> triggersList) {
 		
+		for (final MagicPermanentTrigger permanentTrigger : triggersList) {
+			
+			triggers.get(permanentTrigger.getTrigger().getType()).add(permanentTrigger);
+		}
+		turnTriggers.addAll(triggersList);
+	}
+	
+	public void removeTurnTrigger(final MagicPermanentTrigger permanentTrigger) {
+		
+		triggers.get(permanentTrigger.getTrigger().getType()).remove(permanentTrigger);
+		turnTriggers.remove(permanentTrigger);
+	}
+
+	public List<MagicPermanentTrigger> removeTurnTriggers() {
+		
+		if (turnTriggers.isEmpty()) {
+			return Collections.<MagicPermanentTrigger>emptyList();
+		}
+		final MagicPermanentTriggerList removedTriggers=new MagicPermanentTriggerList(turnTriggers);
+		for (final MagicPermanentTrigger permanentTrigger : turnTriggers) {
+			
+			triggers.get(permanentTrigger.getTrigger().getType()).remove(permanentTrigger);
+		}
+		turnTriggers.clear();
+		return removedTriggers;
+	}
+	
 	public void removeTriggers(final MagicPermanent permanent,final Collection<MagicPermanentTrigger> removedTriggers) {
 
 		for (final MagicTriggerType type : triggers.keySet()) {

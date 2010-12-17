@@ -110,31 +110,10 @@ public class TestGameBuilder {
 		final MagicPlayer opponent=game.getPlayer(1);
 
 		addToLibrary(player,"Mountain",10);
-		addToLibrary(opponent,"Forest",3);
-		addToLibrary(opponent,"Mountain",1);
-		addToLibrary(opponent,"Plains",1);
-		addToLibrary(opponent,"Island",1);
-		addToLibrary(opponent,"Swamp",1);		
-		addToLibrary(opponent,"Forest",1);				
-		addToGraveyard(player,"Mogg Fanatic",1);
-		addToExile(player,"Stormfront Pegasus",1);
-		addToHand(player,"Vivid Crag",2);
-		addToHand(player,"Goblin Bushwhacker",1);
-		addToHand(player,"Goblin Chieftain",1);
-		addToHand(player,"Char",1);				
-		addToHand(player,"Chimeric Mass",1);
-		addToHand(player,"Mind Spring",1);								
-		addToHand(player,"Remand",1);			
-		addToHand(player,"Counterspell",1);					
-		addToHand(player,"Draining Whelk",1);
-		addToHand(player,"Student of Warfare",1);
-		addToHand(player,"Sword of Body and Mind",1);
-		addToHand(player,"Szadek, Lord of Secrets",1);		
-		createPermanent(game,player,"Crumbling Necropolis",false,10);
-		createPermanent(game,player,"Mogg Fanatic",false,1);
-		createPermanent(game,player,"Goblin Artillery",false,1);
-		createPermanent(game,player,"Akroma, Angel of Wrath",true,1);
-		createPermanent(game,opponent,"Bloodrock Cyclops",true,1);
+		addToLibrary(opponent,"Forest",10);				
+		addToHand(player,"Raging Ravine",1);
+		createPermanent(game,player,"Raging Ravine",false,1);
+		createPermanent(game,player,"Jungle Shrine",false,8);
 		
 		return game;
 	}
