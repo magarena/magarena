@@ -5255,3 +5255,34 @@ cost={G/U}{W}
 power=2
 toughness=1
 timing=main
+
+613:Last Gasp
+value=3
+removal=2
+rarity=1
+type=Instant
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+
+614:Smash to Smithereens
+value=2
+removal=1
+rarity=1
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+
+615:Volcanic Fallout
+value=3
+removal=2
+rarity=2
+type=Instant
+color=r
+converted=3
+cost={1}{R}{R}
+ability=can't be countered
+timing=removal

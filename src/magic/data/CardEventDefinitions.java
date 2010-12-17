@@ -352,9 +352,8 @@ public class CardEventDefinitions {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(2,2),
-				new Object[]{cardOnStack},this,"Target creature$ gets -2/-2 until end of turn.");
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,
+				new MagicWeakenTargetPicker(2,2),new Object[]{cardOnStack},this,"Target creature$ gets -2/-2 until end of turn.");
 		}
 
 		@Override
@@ -713,6 +712,26 @@ public class CardEventDefinitions {
 			if (creature!=null) {
 				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
 				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
+			}
+		}
+	};
+
+	private static final MagicSpellCardEvent LAST_GASP=new MagicSpellCardEvent("Last Gasp") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,
+				new MagicWeakenTargetPicker(3,3),new Object[]{cardOnStack},this,"Target creature$ gets -3/-3 until end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicChangeTurnPTAction(creature,-3,-3));
 			}
 		}
 	};
@@ -1093,6 +1112,30 @@ public class CardEventDefinitions {
 		}
 	};
 	
+	private static final MagicSpellCardEvent SMASH_TO_SMITHEREENS=new MagicSpellCardEvent("Smash to Smithereens") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_ARTIFACT,
+				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,
+				"Destroy target artifact$. Smash to Smithereens deals 3 damage to that artifact's controller.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),permanent.getController(),3,false);
+				game.doAction(new MagicDestroyAction(permanent));
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent SMOTHER=new MagicSpellCardEvent("Smother") {
 
 		@Override
@@ -1348,6 +1391,35 @@ public class CardEventDefinitions {
 			if (creature!=null) {
 				game.doAction(new MagicChangeTurnPTAction(creature,1,1));
 				game.doAction(new MagicUntapAction(creature));
+			}
+		}
+	};
+	
+	private static final MagicSpellCardEvent VOLCANIC_FALLOUT=new MagicSpellCardEvent("Volcanic Fallout") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),new Object[]{cardOnStack},this,
+				"Volcanic Fallout deals 2 damage to each creature and each player.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));			
+			final MagicSource source=cardOnStack.getCard();
+			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);
+			for (final MagicTarget target : targets) {
+
+				final MagicDamage damage=new MagicDamage(source,target,2,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+			for (final MagicPlayer player : game.getPlayers()) {
+				
+				final MagicDamage damage=new MagicDamage(source,player,2,false);
+				game.doAction(new MagicDealDamageAction(damage));
 			}
 		}
 	};
@@ -2680,6 +2752,7 @@ public class CardEventDefinitions {
 		INSPIRIT,
 		INTO_THE_ROIL,
 		KINDLED_FURY,		
+		LAST_GASP,
 		LIGHTNING_BOLT,
 		LIGHTNING_HELIX,
 		MAELSTROM_PULSE,
@@ -2697,6 +2770,7 @@ public class CardEventDefinitions {
 		SAFE_PASSAGE,
 		SCAR,
 		SIGIL_BLESSING,
+		SMASH_TO_SMITHEREENS,
 		SMOTHER,
 		SWORDS_TO_PLOWSHARES,
 		TERMINATE,
@@ -2709,6 +2783,7 @@ public class CardEventDefinitions {
 		UNSUMMON,
 		VAULT_SKYWARD,
 		VETERANS_REFLEXES,
+		VOLCANIC_FALLOUT,
 		WILDSIZE,
 		WITHSTAND,
 		WITHSTAND_DEATH,

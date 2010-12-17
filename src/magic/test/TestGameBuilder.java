@@ -120,8 +120,17 @@ public class TestGameBuilder {
 		addToHand(player,"Goblin Gaveleer",1);
 		addToHand(player,"Kitesail Apprentice",1);
 		addToHand(player,"Student of Warfare",1);		
+		addToHand(player,"Disfigure",1);		
+		addToHand(player,"Last Gasp",1);		
+		addToHand(player,"Smash to Smithereens",1);		
+		addToHand(player,"Volcanic Fallout",1);			
+		addToHand(player,"Counterspell",1);					
 		createPermanent(game,player,"Bonesplitter",false,2);
 		createPermanent(game,player,"Rupture Spire",false,10);
+		createPermanent(game,opponent,"Bonesplitter",false,1);
+		createPermanent(game,opponent,"Glorious Anthem",false,1);
+		createPermanent(game,opponent,"Forest",false,1);
+		createPermanent(game,opponent,"Rhox War Monk",false,1);		
 
 		return game;
 	}
