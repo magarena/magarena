@@ -3,18 +3,20 @@ package magic.data;
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicColoredType;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
+import magic.model.variable.MagicBladeLocalVariable;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
 
 public class LocalVariableDefinitions {
-
+	
+	private static final MagicLocalVariable BANT_SUREBLADE=new MagicBladeLocalVariable(MagicAbility.FirstStrike.getMask());
+	
 	private static final MagicLocalVariable CAIRN_WANDERER=new MagicDummyLocalVariable() {
 		
 		@Override
@@ -34,6 +36,21 @@ public class LocalVariableDefinitions {
 			return flags|(newFlags&MagicAbility.CAIRN_WANDERER_FLAGS);
 		}
 	};
+	
+	private static final MagicLocalVariable ESPER_STORMBLADE=new MagicBladeLocalVariable(MagicAbility.Flying.getMask());
+	
+	private static final MagicLocalVariable GOBLIN_GAVELEER=new MagicDummyLocalVariable() {
+
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+
+			if (permanent.isEquipped()) {
+				pt.power+=permanent.getEquipmentPermanents().size()<<1;
+			}
+		}		
+	};
+	
+	private static final MagicLocalVariable GRIXIS_GRIMBLADE=new MagicBladeLocalVariable(MagicAbility.Deathtouch.getMask());
 				
 	private static final MagicLocalVariable GUUL_DRAZ_SPECTER=new MagicDummyLocalVariable() {
 
@@ -47,34 +64,7 @@ public class LocalVariableDefinitions {
 		}		
 	};
 	
-	private static final MagicLocalVariable JUND_HACKBLADE=new MagicDummyLocalVariable() {
-
-		private boolean isValid(final MagicPermanent owner) {
-			
-			for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-				
-				if (permanent!=owner&&permanent.getColoredType()==MagicColoredType.MultiColored) {
-					return true;
-				}
-			}
-			return false;
-		}
-
-		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			
-			if (isValid(permanent)) {
-				pt.power++;
-				pt.toughness++;
-			}
-		}
-		
-		@Override
-		public long getAbilityFlags(MagicGame game,MagicPermanent permanent,long flags) {
-
-			return isValid(permanent)?flags|MagicAbility.Haste.getMask():flags;
-		}
-	};
+	private static final MagicLocalVariable JUND_HACKBLADE=new MagicBladeLocalVariable(MagicAbility.Haste.getMask()); 
 	
 	private static final MagicLocalVariable KITESAIL_APPRENTICE=new MagicDummyLocalVariable() {
 
@@ -139,11 +129,31 @@ public class LocalVariableDefinitions {
 
 		MagicCardDefinition cardDefinition;
 		
+		// Bant Sureblade
+		cardDefinition=CardDefinitions.getInstance().getCard("Bant Sureblade");
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.addLocalVariable(BANT_SUREBLADE);		
+		
 		// Cairn Wanderer
 		cardDefinition=CardDefinitions.getInstance().getCard("Cairn Wanderer");
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
 		cardDefinition.addLocalVariable(CAIRN_WANDERER);
-								
+
+		// Esper Stormblade
+		cardDefinition=CardDefinitions.getInstance().getCard("Esper Stormblade");
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.addLocalVariable(ESPER_STORMBLADE);		
+		
+		// Goblin Gaveleer
+		cardDefinition=CardDefinitions.getInstance().getCard("Goblin Gaveleer");
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.addLocalVariable(GOBLIN_GAVELEER);
+		
+		// Grixis Grimblade
+		cardDefinition=CardDefinitions.getInstance().getCard("Grixis Grimblade");
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.addLocalVariable(GRIXIS_GRIMBLADE);		
+				
 		// Guul Draz Specter
 		cardDefinition=CardDefinitions.getInstance().getCard("Guul Draz Specter");
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());

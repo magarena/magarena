@@ -959,7 +959,7 @@ cost={1}{W}{W}
 power=2
 toughness=2
 ability=first strike,protection from black,protection from red
-timing=smain
+timing=main
 
 79:Silkbind Faerie
 value=3
@@ -5180,4 +5180,78 @@ converted=4
 cost={W}{W}{B}{B}
 power=4
 toughness=4
+timing=main
+
+607:Mirran Crusader
+value=4
+rarity=2
+type=Creature
+subtype=Human,Knight
+color=w
+converted=3
+cost={1}{W}{W}
+power=2
+toughness=2
+ability=double strike,protection from black,protection from green
+timing=main
+
+608:Woolly Thoctar
+value=4
+rarity=2
+type=Creature
+subtype=Beast
+color=rgw
+converted=3
+cost={R}{G}{W}
+power=5
+toughness=4
+timing=main
+
+609:Goblin Gaveleer
+value=2
+rarity=1
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=1
+cost={R}
+power=1
+toughness=1
+ability=trample
+timing=main
+
+610:Esper Stormblade
+value=3
+rarity=2
+type=Artifact,Creature
+subtype=Vedalken,Wizard
+color=wbu
+converted=2
+cost={W/B}{U}
+power=2
+toughness=1
+timing=main
+
+611:Grixis Grimblade
+value=3
+rarity=2
+type=Creature
+subtype=Zombie,Warrior
+color=urb
+converted=2
+cost={U/R}{B}
+power=2
+toughness=1
+timing=main
+
+612:Bant Sureblade
+value=3
+rarity=2
+type=Creature
+subtype=Human,Soldier
+color=guw
+converted=2
+cost={G/U}{W}
+power=2
+toughness=1
 timing=main

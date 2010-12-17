@@ -543,7 +543,7 @@ Archon of Justice.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Bant Sureblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188975&type=card
 Bladed Pinions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=206354&type=card
 Ember Hauler.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208008&type=card
-Esper Stromblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188968&type=card
+Esper Stormblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188968&type=card
 Fume Spitter.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209005&type=card
 Ghost Council of Orzhova.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96908&type=card
 Goblin Gaveleer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194373&type=card

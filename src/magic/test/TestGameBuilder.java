@@ -111,17 +111,16 @@ public class TestGameBuilder {
 		final MagicPlayer opponent=game.getPlayer(1);
 
 		addToLibrary(player,"Forest",10);
-		addToLibrary(opponent,"Forest",10);				
-		addToHand(player,"Into the Roil",1);
-		addToHand(player,"Turn to Mist",1);
-		addToHand(player,"Unmake",1);
-		addToHand(player,"Ghost Council of Orzhova",1);		
-		createPermanent(game,player,"Watchwolf",false,1);
-		createPermanent(game,player,"Birds of Paradise",false,1);
-		createPermanent(game,player,"Arcane Sanctum",false,10);
-		createPermanent(game,opponent,"Ghost Council of Orzhova",false,1);
-		createPermanent(game,opponent,"Watchwolf",false,1);
-		createPermanent(game,opponent,"Arcane Sanctum",false,1);
+		addToLibrary(opponent,"Forest",10);
+		addToHand(player,"Bant Sureblade",1);
+		addToHand(player,"Jund Hackblade",1);
+		addToHand(player,"Esper Stormblade",1);
+		addToHand(player,"Grixis Grimblade",1);
+		addToHand(player,"Goblin Gaveleer",1);
+		addToHand(player,"Kitesail Apprentice",1);
+		addToHand(player,"Student of Warfare",1);		
+		createPermanent(game,player,"Bonesplitter",false,2);
+		createPermanent(game,player,"Rupture Spire",false,10);
 
 		return game;
 	}
