@@ -1,7 +1,6 @@
 There must be a Java Runtime 6 (java.com) installed on your computer to play.
 Installing on Windows is quite simple, just put Magarena.exe on your desktop and execute.
-Magarena.exe is also a zip archive that contains the Magarena.jar file.
-To execute the jar, use java -Xmx256m -jar Magarena.jar.
+To execute the jar instead, use java -Xmx256m -jar Magarena.jar.
 
 Do not forget to execute Download images in the Arena menu the first time you run a new release.
 Otherwise you will see a lot of question marks.
