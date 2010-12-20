@@ -110,13 +110,18 @@ public class TestGameBuilder {
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
 
-		addToLibrary(player,"Forest",10);
-		addToLibrary(opponent,"Forest",10);
-		addToHand(player,"Acidic Slime",1);		
-		createPermanent(game,player,"Bonesplitter",false,2);
-		createPermanent(game,opponent,"Forest",false,1);
-
-		createAllTokens(game,player);
+		addToLibrary(player,"Plains",10);
+		addToLibrary(opponent,"Island",10);
+		addToHand(player,"Steppe Lynx",1);
+		addToHand(player,"Rampaging Baloths",1);
+		addToHand(player,"Pongify",1);
+		addToHand(player,"Narcolepsy",1);
+		addToHand(player,"Pulse of the Tangle",1);
+		addToHand(player,"Vampire Hexmage",1);
+		addToHand(player,"Grave Titan",1);
+		addToHand(player,"Lord of Shatterskull Pass",1);
+		createPermanent(game,player,"Bonesplitter",false,1);
+		createPermanent(game,player,"Rupture Spire",false,7);
 		
 		return game;
 	}

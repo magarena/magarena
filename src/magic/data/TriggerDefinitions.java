@@ -56,7 +56,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPlayOgreUnlessEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
-import magic.model.event.MagicTapEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
@@ -907,6 +906,45 @@ public class TriggerDefinitions {
 		}
     };
 
+    private static final MagicTrigger GRAVE_TITAN1=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Grave Titan") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"You put two 2/2 black Zombie creature tokens onto the battlefield.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=(MagicPlayer)data[0];
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+		}		
+    };
+
+    private static final MagicTrigger GRAVE_TITAN2=new MagicTrigger(MagicTriggerType.WhenAttacks,"Grave Titan") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			if (permanent==data) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{player},this,"You put two 2/2 black Zombie creature tokens onto the battlefield.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=(MagicPlayer)data[0];
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+		}		
+    };
+    
     private static final MagicTrigger GUUL_DRAZ_SPECTER=new MagicSpecterTrigger("Guul Draz Specter",true,false);
     
     private static final MagicTrigger HUNGRY_SPRIGGAN=new MagicTrigger(MagicTriggerType.WhenAttacks,"Hungry Spriggan") {
@@ -1617,7 +1655,7 @@ public class TriggerDefinitions {
 
 			final MagicPlayer player=permanent.getController();
 			final MagicPermanent played=(MagicPermanent)data;
-			if (permanent.getController()==played.getController()&&played.isLand()) {
+			if (player==played.getController()&&played.isLand()) {
 				return new MagicEvent(permanent,player,new Object[]{player},this,"Put a 4/4 green Beast creature token onto the battlefield.");
 			}
 			return null;
@@ -1767,6 +1805,26 @@ public class TriggerDefinitions {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],life));
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],-life));
 		}
+    };
+    
+    private static final MagicTrigger STEPPE_LYNX=new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay,"Steppe Lynx") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			final MagicPermanent played=(MagicPermanent)data;
+			if (player==played.getController()&&played.isLand()) {
+				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Steppe Lynx gets +2/+2 until end of turn.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
+		}		
     };
     
     private static final MagicTrigger STUFFY_DOLL=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Stuffy Doll") {
@@ -2966,25 +3024,7 @@ public class TriggerDefinitions {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
 		}
     };
-    
-    private static final MagicTrigger CURSE_OF_CHAINS=new MagicTrigger(MagicTriggerType.AtUpkeep,"Curse of Chains") {
-
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
-			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (enchantedCreature!=null&&!enchantedCreature.isTapped()) {
-				return new MagicTapEvent(enchantedCreature);
-			}
-			return null;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-		}		
-    };
-                
+                    
     private static final MagicTrigger ELEPHANT_GUIDE=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Elephant Guide") {
 
 		@Override
@@ -3096,6 +3136,30 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger NARCOLEPSY=new MagicTrigger(MagicTriggerType.AtUpkeep,"Narcolepsy") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
+			if (enchantedCreature!=null&&!enchantedCreature.isTapped()) {
+				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
+					"If "+enchantedCreature.getName()+" is untapped, tap it.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPermanent permanent=(MagicPermanent)data[0];
+			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
+			if (enchantedCreature!=null&&!enchantedCreature.isTapped()) {
+				game.doAction(new MagicTapAction(enchantedCreature,true));
+			}
+		}		
+    };
+    
     private static final MagicTrigger PILLORY_OF_THE_SLEEPLESS=new MagicTrigger(MagicTriggerType.AtUpkeep,"Pillory of the Sleepless") {
 
 		@Override
@@ -3176,6 +3240,8 @@ public class TriggerDefinitions {
 	    FOUL_IMP,
 	    FRENZIED_GOBLIN,
 	    GHOST_COUNCIL_OF_ORZHOVA,
+	    GRAVE_TITAN1,
+	    GRAVE_TITAN2,
 	    GOBLIN_SHORTCUTTER,
 	    GUARD_GOMAZOA,
 	    GUARDIAN_SERAPH,
@@ -3230,6 +3296,7 @@ public class TriggerDefinitions {
 	    SPIRITMONGER,
 	    SPROUTING_THRINAX,
 	    STONEBROW_KROSAN_HERO,
+	    STEPPE_LYNX,
 	    STUFFY_DOLL,
 	    SURVEILLING_SPRITE,
 	    SZADEK_LORD_OF_SECRETS,
@@ -3319,12 +3386,12 @@ public class TriggerDefinitions {
 	    SERRATED_ARROWS2,
 	    SKULLCAGE,
 	    ARMADILLO_CLOAK,
-	    CURSE_OF_CHAINS,
 	    ELEPHANT_GUIDE,
 	    FISTS_OF_IRONWOOD,
 	    FLIGHT_OF_FANCY,
 	    GALVANIC_ARC,
 	    GRIFFIN_GUIDE,
+	    NARCOLEPSY,
 	    PILLORY_OF_THE_SLEEPLESS,
 	    RANCOR
 	);

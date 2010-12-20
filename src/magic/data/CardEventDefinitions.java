@@ -935,6 +935,30 @@ public class CardEventDefinitions {
 			}
 		}
 	};
+
+	private static final MagicSpellCardEvent PONGIFY=new MagicSpellCardEvent("Pongify") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,
+				new MagicDestroyTargetPicker(true),new Object[]{cardOnStack},this,
+				"Destroy target creature$. It can't be regenerated. That creature's controller puts a 3/3 green Ape creature onto the battlefield.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				final MagicPlayer controller=creature.getController();
+				game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
+				game.doAction(new MagicDestroyAction(creature));
+				game.doAction(new MagicPlayTokenAction(controller,TokenCardDefinitions.APE_TOKEN_CARD));
+			}
+		}
+	};
 	
 	private static final MagicSpellCardEvent PLUMMET=new MagicSpellCardEvent("Plummet") {
 
@@ -2720,8 +2744,6 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 	private static final MagicSpellCardEvent CLINGING_DARKNESS=new MagicPlayAuraEvent("Clinging Darkness",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(-4,-1));
-	private static final MagicSpellCardEvent CURSE_OF_CHAINS=new MagicPlayAuraEvent("Curse of Chains",
-			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicNoCombatTargetPicker(true,true,true));
 	private static final MagicSpellCardEvent DRAKE_UMBRA=new MagicPlayAuraEvent("Drake Umbra",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 	private static final MagicSpellCardEvent DUST_CORONA=new MagicPlayAuraEvent("Dust Corona",
@@ -2746,6 +2768,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicFirstStrikeTargetPicker.getInstance());
 	private static final MagicSpellCardEvent LIGHTNING_TALONS=new MagicPlayAuraEvent("Lightning Talons",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicFirstStrikeTargetPicker.getInstance());
+	private static final MagicSpellCardEvent NARCOLEPSY=new MagicPlayAuraEvent("Narcolepsy",
+			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicNoCombatTargetPicker(true,true,true));
 	private static final MagicSpellCardEvent PACIFISM=new MagicPlayAuraEvent("Pacifism",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicNoCombatTargetPicker(true,true,true));
 	private static final MagicSpellCardEvent PILLORY_OF_THE_SLEEPLESS=new MagicPlayAuraEvent("Pillory of the Sleepless",
@@ -2804,6 +2828,7 @@ public class CardEventDefinitions {
 		MORTIFY,
 		NATURALIZE,
 		OFFERING_TO_ASHA,
+		PONGIFY,
 		PLUMMET,
 		PUNCTURE_BLAST,
 		PUTREFY,
@@ -2880,7 +2905,6 @@ public class CardEventDefinitions {
 		ARMADILLO_CLOAK,
 		BOAR_UMBRA,
 		CLINGING_DARKNESS,
-		CURSE_OF_CHAINS,
 		DRAKE_UMBRA,
 		DUST_CORONA,
 		EEL_UMBRA,
@@ -2893,6 +2917,7 @@ public class CardEventDefinitions {
 		GRIFFIN_GUIDE,
 		HYENA_UMBRA,
 		LIGHTNING_TALONS,
+		NARCOLEPSY,
 		PACIFISM,
 		PILLORY_OF_THE_SLEEPLESS,
 		PROTECTIVE_BUBBLE,
