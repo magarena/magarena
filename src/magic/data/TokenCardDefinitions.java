@@ -227,6 +227,38 @@ public class TokenCardDefinitions {
 		}
 	};	
 	
+	public static final MagicCardDefinition APE_TOKEN_CARD=new MagicCardDefinition("Ape","Ape") {
+		
+		public void initialize() {
+
+			setToken();
+			setValue(3);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Ape"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Green);
+			setColoredType();
+			setPower(3);
+			setToughness(3);
+		}
+	};	
+	
+	public static final MagicCardDefinition BEAST3_TOKEN_CARD=new MagicCardDefinition("Beast","Beast3") {
+		
+		public void initialize() {
+
+			setToken();
+			setValue(3);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Beast"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Green);
+			setColoredType();
+			setPower(3);
+			setToughness(3);
+		}
+	};	
+	
 	public static final MagicCardDefinition BEAST4_TOKEN_CARD=new MagicCardDefinition("Beast","Beast4") {
 		
 		public void initialize() {
@@ -276,6 +308,22 @@ public class TokenCardDefinitions {
 			setToughness(3);
 		}
 	};	
+	
+	public static final MagicCardDefinition ZOMBIE_TOKEN_CARD=new MagicCardDefinition("Zombie") {
+		
+		public void initialize() {
+
+			setToken();
+			setValue(2);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Zombie"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Black);
+			setColoredType();
+			setPower(2);
+			setToughness(2);
+		}
+	};
 	
 	public static final MagicCardDefinition ZOMBIE_GIANT_TOKEN_CARD=new MagicCardDefinition("Zombie Giant") {
 		
@@ -409,9 +457,12 @@ public class TokenCardDefinitions {
 		SPIRIT_TOKEN_CARD,
 		BAT_TOKEN_CARD,
 		GRIFFIN_TOKEN_CARD,
+		APE_TOKEN_CARD,
+		BEAST3_TOKEN_CARD,
 		BEAST4_TOKEN_CARD,
 		BEAST8_TOKEN_CARD,
 		ELEPHANT_TOKEN_CARD,
+		ZOMBIE_TOKEN_CARD,
 		ZOMBIE_GIANT_TOKEN_CARD,
 		WOLF_TOKEN_CARD,
 		VOJA_TOKEN_CARD,

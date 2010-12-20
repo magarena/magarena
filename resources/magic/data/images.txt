@@ -58,7 +58,9 @@ nine.gif;http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=9&type=
 tapped.gif;http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=tap&type=symbol
 x.gif;http://gatherer.wizards.com/Handlers/Image.ashx?size=small&name=X&type=symbol
 >tokens
+Ape.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=42431&stc=1&d=1173951187
 Bat.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=19964&d=1143669815
+Beast3.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=201842
 Beast4.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=201844
 Beast8.jpg;http://www.wizards.com/mtg/images/daily/arcana/1688_token5.jpg
 Dragon4.jpg;http://www.wizards.com/mtg/images/daily/arcana/1688_token4.jpg
@@ -80,6 +82,7 @@ Wolf.jpg;http://www.halfpricehobbies.com/catalog/images/Wolf%5B1%5D.jpg
 Worm.jpg;http://www.wizards.com/magic/images/mtgcom/arcana1000/1630_2.jpg
 Wurm1.jpg;http://www.cardkingdom.com/media/images/products/standard/132150_1.jpg
 Wurm2.jpg;http://www.cardkingdom.com/media/images/products/standard/132151_1.jpg
+Zombie.jpg;http://www.wizards.com/mtg/images/daily/arcana/1689_token2a.jpg
 Zombie Giant.jpg;http://www.halfpricehobbies.com/catalog/images/ZombieGiant%5B1%5D.jpg
 >cards
 Absorb.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23155&type=card
@@ -155,7 +158,6 @@ Cruel Edict.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=196
 Crumbling Necropolis.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175112&type=card
 Cumber Stone.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180322&type=card
 Cunning Sparkmage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201563&type=card
-Curse of Chains.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=146079&type=card
 Cursecatcher.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158763&type=card
 Daggerclaw Imp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197022&type=card
 Darkslick Drake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194217&type=card
@@ -191,7 +193,6 @@ Earthquake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1905
 Eel Umbra.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193495&type=card
 Eldrazi Monument.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193398&type=card
 Elephant Guide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201832&type=card
-Elite Vanguard.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=222710&type=card
 Empyrial Archangel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175104&type=card
 Epic Proportions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=143732&type=card
 Esper Battlemage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=174872&type=card
@@ -335,6 +336,7 @@ Murderous Redcap.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiversei
 Murkfiend Liege.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=152091&type=card
 Mystic Snake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=109693&type=card
 Nantuko Shade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205229&type=card
+Narcolepsy.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193594&type=card
 Naturalize.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193439&type=card
 Noble Hierarch.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179434&type=card
 Novablast Wurm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197857&type=card
@@ -450,6 +452,7 @@ Sprouting Thrinax.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Stalker Hag.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=151120&type=card
 Steam Vents.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96923&type=card
 Steel Wall.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=222731&type=card
+Steppe Lynx.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=171012&type=card
 Steward of Valeron.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175134&type=card
 Stirring Wildwood.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=177560&type=card
 Stomping Ground.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96896&type=card
@@ -549,17 +552,22 @@ Ghost Council of Orzhova.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?mul
 Goblin Gaveleer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194373&type=card
 Goblin Ruinblaster.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180411&type=card
 Gorgon Flail.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191597&type=card
+Grave Titan.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205012&type=card
 Grixis Grimblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188976&type=card
 Last Gasp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89056&type=card
+Lord of Shatterskull Pass.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=198164&type=card
 Mirran Crusader.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/9x6ggbzsnh_EN.jpg
 Mycoid Shepherd.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179548&type=card
 Nemesis of Reason.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188962&type=card
 Nulltread Gargantuan.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179580&type=card
 Pierce Strider.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=111458&stc=1&d=1286337901
+Pongify.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129015&type=card
+Pulse of the Tangle.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39690&type=card
 Smash to Smithereens.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158243&type=card
 Student of Warfare.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193598&type=card
 Sword of Body and Mind.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209280&type=card
 Szadek, Lord of Secrets.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89092&type=card
 Turn to Mist.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158752&type=card
+Vampire Hexmage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=192232&type=card
 Volcanic Fallout.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220512&type=card
 Woolly Thoctar.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175062&type=card
