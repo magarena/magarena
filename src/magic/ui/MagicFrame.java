@@ -19,6 +19,7 @@ import javax.swing.JPanel;
 
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
+import magic.data.IconImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicDeckCard;
 import magic.model.MagicGame;
@@ -73,6 +74,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		this.setTitle(NAME);
 		this.setSize(config.getWidth(),config.getHeight());
+		this.setIconImage(IconImages.ARENA.getImage());
 		if (config.getLeft()!=-1) {
 			this.setLocation(config.getLeft(),config.getTop());
 		} else {
