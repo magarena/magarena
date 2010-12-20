@@ -13,6 +13,7 @@ import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
 import magic.ai.ArtificialWorkerPool;
+import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -28,7 +29,6 @@ import magic.ui.viewer.GameViewer;
 public class GameController {
 
 	private static final long MAX_TEST_MODE_DURATION=10000;
-	private static final int CARD_VIEW_DELAY=300;
 	
 	private final GamePanel gamePanel;
 	private final MagicGame game;
@@ -168,7 +168,7 @@ public class GameController {
 		}
 		imageCardViewer.setCard(cardDefinition,index);
 		imageCardViewer.setLocation(x,y);
-		DelayedViewersThread.getInstance().showViewer(imageCardViewer,CARD_VIEW_DELAY);
+		DelayedViewersThread.getInstance().showViewer(imageCardViewer,GeneralConfig.getInstance().getPopupDelay());
 	}
 	
 	public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
@@ -187,7 +187,7 @@ public class GameController {
 		}
 		imageCardViewer.setCard(cardDefinition,index);
 		imageCardViewer.setLocation(x,y);		
-		DelayedViewersThread.getInstance().showViewer(imageCardViewer,CARD_VIEW_DELAY);
+		DelayedViewersThread.getInstance().showViewer(imageCardViewer,GeneralConfig.getInstance().getPopupDelay());
 	}
 	
 	public void hideInfo() {

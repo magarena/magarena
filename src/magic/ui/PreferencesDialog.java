@@ -32,6 +32,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 	private final JCheckBox alwaysPassCheckBox;
 	private final JCheckBox smartTargetCheckBox;
 	private final SliderPanel undoLevelsSlider;
+	private final SliderPanel popupDelaySlider;
 	private final JButton okButton;
 	private final JButton cancelButton;
 	
@@ -39,7 +40,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 		super(frame,true);
 		this.setTitle("Preferences");
-		this.setSize(400,290);
+		this.setSize(400,340);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -91,8 +92,12 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		mainPanel.add(smartTargetCheckBox);
 				
 		undoLevelsSlider=new SliderPanel("Undo",IconImages.UNDO,1,7,1,config.getUndoLevels());
-		undoLevelsSlider.setBounds(70,155,250,50);
+		undoLevelsSlider.setBounds(60,155,270,50);
 		mainPanel.add(undoLevelsSlider);
+		
+		popupDelaySlider=new SliderPanel("Popup",IconImages.DELAY,0,500,50,config.getPopupDelay());
+		popupDelaySlider.setBounds(60,205,270,50);
+		mainPanel.add(popupDelaySlider);
 		
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(mainPanel,BorderLayout.CENTER);
@@ -112,6 +117,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 			config.setSkipSingle(skipSingleCheckBox.isSelected());
 			config.setAlwaysPass(alwaysPassCheckBox.isSelected());
 			config.setSmartTarget(smartTargetCheckBox.isSelected());
+			config.setPopupDelay(popupDelaySlider.getValue());
 			config.save();
 			frame.repaint();
 			dispose();

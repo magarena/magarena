@@ -27,6 +27,7 @@ public class GeneralConfig {
 	private static final String SMART_TARGET="target";
 	private static final String DIFFICULTY="difficulty";
 	private static final String EXTRA_LIFE="extra";
+	private static final String POPUP_DELAY="popup";
 
 	private static final int DEFAULT_LEFT=-1;
 	private static final int DEFAULT_TOP=-1;
@@ -41,6 +42,7 @@ public class GeneralConfig {
 	private static final boolean DEFAULT_TARGET=true;
 	private static final int DEFAULT_DIFFICULTY=6;
 	private static final int DEFAULT_EXTRA_LIFE=0;
+	private static final int DEFAULT_POPUP_DELAY=300;
 
 	private int left=DEFAULT_LEFT;
 	private int top=DEFAULT_TOP;
@@ -55,6 +57,7 @@ public class GeneralConfig {
 	private boolean smartTarget=DEFAULT_TARGET;
 	private int difficulty=DEFAULT_DIFFICULTY;
 	private int extraLife=DEFAULT_EXTRA_LIFE;
+	private int popupDelay=DEFAULT_POPUP_DELAY;
 	
 	private GeneralConfig() {
 		
@@ -210,6 +213,16 @@ public class GeneralConfig {
 		this.extraLife=extraLife;
 	}
 	
+	public int getPopupDelay() {
+		
+		return popupDelay;
+	}
+	
+	public void setPopupDelay(final int popupDelay) {
+		
+		this.popupDelay=popupDelay;
+	}
+	
 	public void load(final Properties properties) {
 	
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -225,6 +238,7 @@ public class GeneralConfig {
 		smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+DEFAULT_TARGET));
 		difficulty=Integer.parseInt(properties.getProperty(DIFFICULTY,""+DEFAULT_DIFFICULTY));
 		extraLife=Integer.parseInt(properties.getProperty(EXTRA_LIFE,""+DEFAULT_EXTRA_LIFE));
+		popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+DEFAULT_POPUP_DELAY));
 	}
 	
 	public void load() {
@@ -251,6 +265,7 @@ public class GeneralConfig {
 		properties.setProperty(SMART_TARGET,String.valueOf(smartTarget));
 		properties.setProperty(DIFFICULTY,String.valueOf(difficulty));
 		properties.setProperty(EXTRA_LIFE,String.valueOf(extraLife));
+		properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
 	}
 	
 	public void save() {
