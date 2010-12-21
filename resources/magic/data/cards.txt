@@ -5453,3 +5453,56 @@ cost={3}{R}
 power=3
 toughness=3
 timing=main
+
+630:Nirkana Cutthroat
+value=3
+rarity=2
+type=Creature
+subtype=Vampire,Warrior
+color=b
+converted=3
+cost={2}{B}
+power=3
+toughness=2
+timing=main
+
+631:Kitchen Finks
+value=4
+rarity=2
+type=Creature
+subtype=Ouphe
+color=gw
+converted=3
+cost={1}{G/W}{G/W}
+power=3
+toughness=2
+ability=persist
+timing=main
+
+632:Lord of Extinction
+value=5
+rarity=3
+type=Creature
+subtype=Elemental
+color=bg
+converted=5
+cost={3}{B}{G}
+timing=smain
+
+633:Awakening Zone
+value=4
+rarity=2
+type=Enchantment
+color=g
+converted=3
+cost={2}{G}
+timing=enchantment
+
+634:Force Spike
+value=3
+rarity=1
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=counter

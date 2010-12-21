@@ -111,8 +111,14 @@ public class TestGameBuilder {
 		final MagicPlayer opponent=game.getPlayer(1);
 
 		addToLibrary(player,"Plains",10);
-		addToLibrary(opponent,"Island",10);
+		addToLibrary(opponent,"Island",10);		
 		addToHand(player,"Lord of Shatterskull Pass",1);
+		addToHand(player,"Nirkana Cutthroat",1);
+		addToHand(player,"Kitchen Finks",1);
+		addToHand(player,"Lord of Extinction",1);
+		addToHand(player,"Awakening Zone",1);
+		addToHand(player,"Force Spike",1);
+		addToHand(player,"Doom Blade",1);		
 		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Rupture Spire",false,9);
 		
