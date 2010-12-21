@@ -112,17 +112,9 @@ public class TestGameBuilder {
 
 		addToLibrary(player,"Plains",10);
 		addToLibrary(opponent,"Island",10);
-		addToHand(player,"Steppe Lynx",1);
-		addToHand(player,"Rampaging Baloths",1);
-		addToHand(player,"Pongify",1);
-		addToHand(player,"Narcolepsy",1);
-		addToHand(player,"Pulse of the Tangle",1);
-		addToHand(player,"Vampire Hexmage",1);
-		addToHand(player,"Grave Titan",1);
 		addToHand(player,"Lord of Shatterskull Pass",1);
 		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Rupture Spire",false,9);
-		createPermanent(game,opponent,"Steel Wall",false,3);
 		
 		return game;
 	}

@@ -67,6 +67,7 @@ import magic.model.event.MagicUntapEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
+import magic.model.target.MagicCountersTargetPicker;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicFirstStrikeTargetPicker;
@@ -1670,7 +1671,39 @@ public class PermanentActivationDefinitions {
 			}
 		}
 	};
-		
+
+	private static final MagicPermanentActivation VAMPIRE_HEXMAGE=new MagicPermanentActivation(
+			"Vampire Hexmage",null,new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.TARGET_PERMANENT,MagicCountersTargetPicker.getInstance(),
+				MagicEvent.NO_DATA,this,"Remove all counters from target permanent$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				for (final MagicCounterType counterType : MagicCounterType.values()) {
+				
+					final int amount=permanent.getCounters(counterType);
+					if (amount>0) {
+						game.doAction(new MagicChangeCountersAction(permanent,counterType,-amount,true));
+					}
+				}
+			}
+		}
+	};
+	
 	private static final MagicPermanentActivation WALL_OF_BONE=new MagicRegenerationActivation("Wall of Bone",MagicManaCost.BLACK);
 
 	private static final MagicPermanentActivation ANGELIC_SHIELD=new MagicPermanentActivation(
@@ -2351,6 +2384,7 @@ public class PermanentActivationDefinitions {
 		TROLL_ASCETIC,
 		TWINBLADE_SLASHER,
 		URSAPINE,
+		VAMPIRE_HEXMAGE,
 		WALL_OF_BONE,
 		ANGELIC_SHIELD,
 		DRAGON_ROOST,
