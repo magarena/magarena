@@ -25,7 +25,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 	private final ViewerScrollPane viewerPane;
 	private final boolean image;
 	private Collection<StackButton> buttons;
-	private int setHeight = 0;
+	private Rectangle setRectangle = new Rectangle();
 	
 	public StackViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean image) {
 	
@@ -49,8 +49,8 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 	@Override
 	public void setBounds(final Rectangle r) {
 
+		this.setRectangle=new Rectangle(r);
 		super.setBounds(r);
-		setHeight=r.height;
 	}
 
 	public String getTitle() {
@@ -75,11 +75,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 			contentPanel.add(panel);
 		}
 
-		final int contentHeight=viewerPane.getContent().getPreferredSize().height+20;
-		if (contentHeight<setHeight) {
-			setSize(getWidth(),contentHeight);
-		} else {
-			setSize(getWidth(),setHeight);
+		if (image) {
+			final int contentHeight=viewerPane.getContent().getPreferredSize().height+20;
+			if (contentHeight<setRectangle.height) {
+				setBounds(getX(),setRectangle.y+setRectangle.height-contentHeight,getWidth(),contentHeight);
+			} else {
+				setBounds(setRectangle);
+			}
 		}
 		
 		showValidChoices(controller.getValidChoices());

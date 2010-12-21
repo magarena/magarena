@@ -149,7 +149,7 @@ public class GamePanel extends JPanel {
 
 		final TitleBar stackTitleBar = new TitleBar("Stack");
 		stackTitleBar.setIcon(IconImages.SPELL);
-		imageStackViewer.add(stackTitleBar,BorderLayout.NORTH);
+		imageStackViewer.add(stackTitleBar,BorderLayout.SOUTH);
 		
 		updateView();
 		thread=new GameControllerThread(controller);

@@ -101,8 +101,8 @@ public class ImageViewer extends JPanel {
 				@Override
 				public void mouseMoved(final MouseEvent e) {
 
-					final int y=e.getY()-getHeight()+viewerHeight;
-					if (y>=0) {
+					final int y=e.getY();
+					if (y<=viewerHeight) {
 						final int x=e.getX();
 						int px=(x*imageWidth)/getWidth();
 						int py=(y*imageHeight)/viewerHeight;
@@ -138,20 +138,18 @@ public class ImageViewer extends JPanel {
 
 		super.paint(g);
 		if (image!=null) {
-			final int height=getHeight();
-			final int y=height-viewerHeight;
 			if (scaled) {
 				final Graphics2D g2d=(Graphics2D)g;
 				g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);		
-				g.drawImage(image,0,y,VIEWER_WIDTH,height,sx1,sy1,sx2,sy2,this);
+				g.drawImage(image,0,0,VIEWER_WIDTH,viewerHeight,sx1,sy1,sx2,sy2,this);
 			} else {
 				if (scaledImage==null) {
 					scaledImage=image.getScaledInstance(VIEWER_WIDTH,viewerHeight,Image.SCALE_SMOOTH);
 				}
-				g.drawImage(scaledImage,0,y,this);
+				g.drawImage(scaledImage,0,0,this);
 			}
 			g.setColor(Color.black);
-			g.drawRect(0,y,getWidth()-1,viewerHeight-1);
+			g.drawRect(0,0,getWidth()-1,viewerHeight-1);
 		}
 	}
 }

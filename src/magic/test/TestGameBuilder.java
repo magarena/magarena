@@ -117,12 +117,12 @@ public class TestGameBuilder {
 		addToHand(player,"Lord of Shatterskull Pass",1);
 		addToHand(player,"Kitchen Finks",1);
 		addToHand(player,"Awakening Zone",1);
-		addToHand(player,"Force Spike",1);
+		addToHand(player,"Force Spike",5);
 		addToHand(player,"Doom Blade",1);
 		addToHand(opponent,"Lord of Shatterskull Pass",1);
 		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Glorious Anthem",false,1);
-		createPermanent(game,player,"Rupture Spire",false,3);
+		createPermanent(game,player,"Rupture Spire",false,8);
 		createPermanent(game,opponent,"Vampire Hexmage",false,1);
 		createPermanent(game,opponent,"Rupture Spire",false,6);
 		
