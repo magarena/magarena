@@ -1,6 +1,5 @@
 package magic.ui;
 
-import java.awt.Component;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,24 +7,24 @@ public class DelayedViewersThread extends Thread {
 
 	private static final DelayedViewersThread VIEWER_THREAD=new DelayedViewersThread();
 
-	private final Map<Component,Long> delayedViewers;
+	private final Map<DelayedViewer,Long> delayedViewers;
 	
 	private DelayedViewersThread() {
 
-		delayedViewers=new HashMap<Component,Long>();
+		delayedViewers=new HashMap<DelayedViewer,Long>();
 		start();
 	}
 	
-	public synchronized void showViewer(final Component component,final int delay) {
+	public synchronized void showViewer(final DelayedViewer delayedViewer,final int delay) {
 		
-		delayedViewers.put(component,System.currentTimeMillis()+delay);
+		delayedViewers.put(delayedViewer,System.currentTimeMillis()+delay);
 		notify();
 	}
 	
-	public synchronized void hideViewer(final Component component) {
+	public synchronized void hideViewer(final DelayedViewer delayedViewer) {
 
-		delayedViewers.remove(component);
-		component.setVisible(false);
+		delayedViewers.remove(delayedViewer);
+		delayedViewer.hideDelayed();
 	}
 	
 	@Override
@@ -38,12 +37,12 @@ public class DelayedViewersThread extends Thread {
 					wait();
 				}
 				final long time=System.currentTimeMillis();
-				for (final Component component : delayedViewers.keySet()) {
+				for (final DelayedViewer delayedViewer : delayedViewers.keySet()) {
 					
-					final long delayedTime=delayedViewers.get(component);
+					final long delayedTime=delayedViewers.get(delayedViewer);
 					if (delayedTime<=time) {
-						component.setVisible(true);
-						delayedViewers.remove(component);
+						delayedViewer.showDelayed();
+						delayedViewers.remove(delayedViewer);
 					}
 				}
 				wait(100);

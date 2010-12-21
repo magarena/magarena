@@ -17,14 +17,17 @@ import javax.swing.JPanel;
 
 import magic.MagicMain;
 import magic.model.MagicRandom;
+import magic.ui.DelayedViewer;
+import magic.ui.DelayedViewersThread;
 
 /**
  *  Landscape image viewer.
  */
-public class ImageViewer extends JPanel {
+public class ImageViewer extends JPanel implements DelayedViewer {
 
 	private static final long serialVersionUID = 1L;
 	
+	private static final int DELAY=500;
 	private static final int VIEWER_WIDTH=300;
 	private static final int ZOOM_FACTOR=4;
 	
@@ -33,6 +36,7 @@ public class ImageViewer extends JPanel {
 	
 	private final BufferedImage image;
 	private Image scaledImage=null;
+	private boolean showScaled=false;
 	private boolean scaled=false;
 	private int imageWidth;
 	private int imageHeight;
@@ -92,17 +96,22 @@ public class ImageViewer extends JPanel {
 			final MouseAdapter mouseListener=new MouseAdapter() {
 
 				@Override
+				public void mouseEntered(final MouseEvent e) {
+					
+					DelayedViewersThread.getInstance().showViewer(ImageViewer.this,DELAY);
+				}
+
+				@Override
 				public void mouseExited(final MouseEvent e) {
 
-					scaled=false;
-					repaint();
+					DelayedViewersThread.getInstance().hideViewer(ImageViewer.this);
 				}				
 
 				@Override
 				public void mouseMoved(final MouseEvent e) {
 
 					final int y=e.getY();
-					if (y<=viewerHeight) {
+					if (y<=viewerHeight&&showScaled) {
 						final int x=e.getX();
 						int px=(x*imageWidth)/getWidth();
 						int py=(y*imageHeight)/viewerHeight;
@@ -133,6 +142,21 @@ public class ImageViewer extends JPanel {
 		}
 	}
 	
+	@Override
+	public void showDelayed() {
+		
+		showScaled=true;
+		repaint();
+	}
+	
+	@Override
+	public void hideDelayed() {
+		
+		showScaled=false;
+		scaled=false;
+		repaint();
+	}
+
 	@Override
 	public void paint(final Graphics g) {
 

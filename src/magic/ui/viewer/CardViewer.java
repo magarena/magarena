@@ -8,10 +8,11 @@ import javax.swing.JPanel;
 
 import magic.data.CardImages;
 import magic.model.MagicCardDefinition;
+import magic.ui.DelayedViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 
-public class CardViewer extends JPanel {
+public class CardViewer extends JPanel implements DelayedViewer {
 
 	private static final long serialVersionUID = 1L;
 
@@ -44,5 +45,17 @@ public class CardViewer extends JPanel {
 			cardLabel.setIcon(new ImageIcon(CardImages.getInstance().getImage(cardDefinition,index)));
 			repaint();
 		}
+	}
+
+	@Override
+	public void showDelayed() {
+	
+		setVisible(true);
+	}
+	
+	@Override
+	public void hideDelayed() {
+
+		setVisible(false);
 	}
 }
