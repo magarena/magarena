@@ -121,7 +121,8 @@ public class TestGameBuilder {
 		addToHand(player,"Grave Titan",1);
 		addToHand(player,"Lord of Shatterskull Pass",1);
 		createPermanent(game,player,"Bonesplitter",false,1);
-		createPermanent(game,player,"Rupture Spire",false,7);
+		createPermanent(game,player,"Rupture Spire",false,9);
+		createPermanent(game,opponent,"Steel Wall",false,3);
 		
 		return game;
 	}
