@@ -497,6 +497,27 @@ public class CardEventDefinitions {
 			}
 		}
 	};
+	
+	private static final MagicSpellCardEvent FORCE_SPIKE=new MagicSpellCardEvent("Force Spike") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_SPELL,
+				new Object[]{cardOnStack},this,"Counter target spell$ unless its controller pays {1}.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
+			if (targetSpell!=null) {
+				game.addEvent(new MagicCounterUnlessEvent(cardOnStack.getCard(),targetSpell,MagicManaCost.ONE));
+			}
+		}
+	};
 
 	private static final MagicSpellCardEvent FISTS_OF_THE_ANVIL=new MagicSpellCardEvent("Fists of the Anvil") {
 
@@ -2832,6 +2853,7 @@ public class CardEventDefinitions {
 		DOUSE_IN_GLOOM,
 		ESSENCE_SCATTER,
 		EVACUATION,
+		FORCE_SPIKE,
 		FISTS_OF_THE_ANVIL,
 		GIANT_GROWTH,
 		GLORIOUS_CHARGE,

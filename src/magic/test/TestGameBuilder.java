@@ -109,18 +109,22 @@ public class TestGameBuilder {
 		game.setPhase(MagicMainPhase.getFirstInstance());
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
-
+		
 		addToLibrary(player,"Plains",10);
-		addToLibrary(opponent,"Island",10);		
+		addToLibrary(opponent,"Island",10);	
+		addToGraveyard(player,"Plains",2);
+		addToGraveyard(opponent,"Island",3);
 		addToHand(player,"Lord of Shatterskull Pass",1);
-		addToHand(player,"Nirkana Cutthroat",1);
 		addToHand(player,"Kitchen Finks",1);
-		addToHand(player,"Lord of Extinction",1);
 		addToHand(player,"Awakening Zone",1);
 		addToHand(player,"Force Spike",1);
-		addToHand(player,"Doom Blade",1);		
+		addToHand(player,"Doom Blade",1);
+		addToHand(opponent,"Lord of Shatterskull Pass",1);
 		createPermanent(game,player,"Bonesplitter",false,1);
-		createPermanent(game,player,"Rupture Spire",false,9);
+		createPermanent(game,player,"Glorious Anthem",false,1);
+		createPermanent(game,player,"Rupture Spire",false,3);
+		createPermanent(game,opponent,"Vampire Hexmage",false,1);
+		createPermanent(game,opponent,"Rupture Spire",false,6);
 		
 		return game;
 	}

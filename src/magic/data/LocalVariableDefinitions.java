@@ -85,6 +85,57 @@ public class LocalVariableDefinitions {
 		}
 	};
 	
+	private static final MagicLocalVariable LORD_OF_EXTINCTION=new MagicDummyLocalVariable() {
+
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+
+			final int amount=game.getPlayer(0).getGraveyard().size()+game.getPlayer(1).getGraveyard().size();
+			pt.power=amount;
+			pt.toughness=amount;
+		}
+	};
+	
+	private static final MagicLocalVariable LORD_OF_SHATTERSKULL_PASS=new MagicDummyLocalVariable() {
+
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+
+			if (permanent.getCounters(MagicCounterType.Charge)>0) {
+				pt.power=6;
+				pt.toughness=6;
+			} 
+		}		
+	};
+	
+	private static final MagicLocalVariable NIRKANA_CUTTHROAT=new MagicDummyLocalVariable() {
+
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+
+			final int charges=permanent.getCounters(MagicCounterType.Charge);
+			if (charges>=3) {
+				pt.power=5;
+				pt.toughness=4;
+			} else if (charges>=1) {
+				pt.power=4;
+				pt.toughness=3;
+			}
+		}
+		
+		@Override
+		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+
+			final int charges=permanent.getCounters(MagicCounterType.Charge);
+			if (charges>=3) {
+				return flags|MagicAbility.FirstStrike.getMask()|MagicAbility.Deathtouch.getMask();
+			} else if (charges>=1) {
+				return flags|MagicAbility.Deathtouch.getMask();
+			}
+			return flags;
+		}
+	};
+	
 	private static final MagicLocalVariable RUTHLESS_CULLBLADE=new MagicDummyLocalVariable() {
 
 		@Override
@@ -169,6 +220,21 @@ public class LocalVariableDefinitions {
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
 		cardDefinition.addLocalVariable(KITESAIL_APPRENTICE);
 
+		// Lord of Extinction
+		cardDefinition=CardDefinitions.getInstance().getCard("Lord of Extinction");
+		cardDefinition.addLocalVariable(LORD_OF_EXTINCTION);	
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+
+		// Lord of Shatterskull Pass
+		cardDefinition=CardDefinitions.getInstance().getCard("Lord of Shatterskull Pass");
+		cardDefinition.addLocalVariable(LORD_OF_SHATTERSKULL_PASS);	
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+
+		// Nirkana Cutthroat
+		cardDefinition=CardDefinitions.getInstance().getCard("Nirkana Cutthroat");
+		cardDefinition.addLocalVariable(NIRKANA_CUTTHROAT);	
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		
 		// Ruthless Cullblade
 		cardDefinition=CardDefinitions.getInstance().getCard("Ruthless Cullblade");
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());

@@ -931,6 +931,8 @@ public class PermanentActivationDefinitions {
 			}
 		}
 	};
+	
+	private static final MagicPermanentActivation LORD_OF_SHATTERSKULL_PASS=new MagicLevelUpActivation("Lord of Shatterskull Pass",MagicManaCost.ONE_RED,6);
 		
 	private static final MagicPermanentActivation LOXODON_HIERARCH=new MagicPermanentActivation(
 			"Loxodon Hierarch",new MagicCondition[]{MagicManaCost.GREEN_WHITE.getCondition()},new MagicActivationHints(MagicTiming.Pump)) {
@@ -1074,6 +1076,8 @@ public class PermanentActivationDefinitions {
 	
 	private static final MagicPermanentActivation NANTUKO_SHADE=new MagicPumpActivation("Nantuko Shade",MagicManaCost.BLACK,1,1);
 
+	private static final MagicPermanentActivation NIRKANA_CUTTHROAT=new MagicLevelUpActivation("Nirkana Cutthroat",MagicManaCost.TWO_BLACK,3);
+	
 	private static final MagicLocalVariable OMNIBIAN_VARIABLE=new MagicDummyLocalVariable() {
 
 		@Override
@@ -2351,6 +2355,7 @@ public class PermanentActivationDefinitions {
 		JHESSIAN_BALMGIVER1,
 		JHESSIAN_BALMGIVER2,
 		KABUTO_MOTH,
+		LORD_OF_SHATTERSKULL_PASS,
 		LOXODON_HIERARCH,
 		MERFOLK_SEASTALKERS,
 		MIRE_BOA,
@@ -2358,6 +2363,7 @@ public class PermanentActivationDefinitions {
 		MOGG_FANATIC,
 		MORDANT_DRAGON,
 		NANTUKO_SHADE,
+		NIRKANA_CUTTHROAT,
 		OMNIBIAN,
 		ORACLE_OF_NECTARS,
 		PUTRID_LEECH,

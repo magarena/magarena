@@ -1057,6 +1057,22 @@ public class TriggerDefinitions {
 			}
 		}
     };
+
+    private static final MagicTrigger KITCHEN_FINKS=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Kitchen Finks") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 2 life.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+			
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+		}
+    };
     
     private static final MagicTrigger KOKUSHO_THE_EVENING_STAR=new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Kokusho, the Evening Star") {
 
@@ -1160,6 +1176,33 @@ public class TriggerDefinitions {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			game.addEvent(new MagicDiscardEvent(permanent,game.getOpponent(permanent.getController()),1,false));
 		}		
+    };
+    
+    private static final MagicTrigger LORD_OF_SHATTERSKULL_PASS=new MagicTrigger(MagicTriggerType.WhenAttacks,"Lord of Shatterskull Pass") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			if (permanent==data&&permanent.getCounters(MagicCounterType.Charge)>=6) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{permanent,game.getOpponent(player)},this,
+					"Lord of Shatterskull Pass deals 6 damage to each creature defending player controls.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicSource source=(MagicSource)data[0];
+			final MagicPlayer defendingPlayer=(MagicPlayer)data[1];
+			final Collection<MagicTarget> creatures=game.filterTargets(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			for (final MagicTarget creature : creatures) {
+				
+				final MagicDamage damage=new MagicDamage(source,creature,6,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
     };
     
     private static final MagicTrigger LOXODON_HIERARCH=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Loxodon Hierarch") {
@@ -2659,7 +2702,28 @@ public class TriggerDefinitions {
     private static final MagicTrigger SEACHROME_COAST=new MagicTappedIntoPlayUnlessTwoTrigger("Seachrome Coast");
         
     private static final MagicTrigger RAGING_RAVINE=new MagicTappedIntoPlayTrigger("Raging Ravine");
-            
+
+    private static final MagicTrigger AWAKENING_ZONE=new MagicTrigger(MagicTriggerType.AtUpkeep,"Awakening Zone") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,new Object[]{player},this,
+					"You put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. "+
+					"It has \"Sacrifice this creature: Add {1} to your mana pool.\"");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.ELDRAZI_SPAWN_TOKEN_CARD));
+		}		
+    };
+    
     private static final MagicTrigger DEBTORS_KNELL=new MagicTrigger(MagicTriggerType.AtUpkeep,"Debtors' Knell") {
 
 		@Override
@@ -3252,11 +3316,13 @@ public class TriggerDefinitions {
 	    KAZUUL_TYRANT_OF_THE_CLIFFS,
 	    KEENING_BANSHEE,
 	    KEIGA_THE_TIDE_STAR,
+	    KITCHEN_FINKS,
 	    KOKUSHO_THE_EVENING_STAR,
 	    LAVABORN_MUSE,
 	    LIGHTNING_REAVER1,
 	    LIGHTNING_REAVER2,
 	    LILIANAS_SPECTER,
+	    LORD_OF_SHATTERSKULL_PASS,
 	    LOXODON_HIERARCH,
 	    MAN_O_WAR,
 	    MEGLONOTH,
@@ -3370,6 +3436,7 @@ public class TriggerDefinitions {
 	    RAZORVERGE_THICKET,
 	    SEACHROME_COAST,
 	    RAGING_RAVINE,
+	    AWAKENING_ZONE,
 	    DISSIPATION_FIELD,
 	    DEBTORS_KNELL,
 	    FERVENT_CHARGE,
