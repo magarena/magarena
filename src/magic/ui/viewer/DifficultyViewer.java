@@ -26,7 +26,7 @@ public class DifficultyViewer extends TexturedPanel implements ChangeListener {
 		
 		final GeneralConfig config=GeneralConfig.getInstance();
 
-		difficultySlider=new SliderPanel("Level",IconImages.DIFFICULTY2,1,6,1,config.getDifficulty());
+		difficultySlider=new SliderPanel("Level",IconImages.DIFFICULTY2,1,8,1,config.getDifficulty());
 		difficultySlider.setOpaque(false);
 		difficultySlider.setBounds(10,10,250,40);
 		difficultySlider.addChangeListener(this);
