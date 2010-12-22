@@ -5506,3 +5506,16 @@ color=u
 converted=1
 cost={U}
 timing=counter
+
+635:Kiki-Jiki, Mirror Breaker
+value=5
+rarity=3
+type=Legendary,Creature
+subtype=Goblin,Shaman
+color=r
+converted=5
+cost={2}{R}{R}{R}
+power=2
+toughness=2
+ability=haste
+timing=fmain

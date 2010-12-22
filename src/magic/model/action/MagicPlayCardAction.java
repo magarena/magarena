@@ -13,7 +13,8 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 	public static final int NONE=0;
 	public static final int PERSIST=1;
 	public static final int REMOVE_AT_END_OF_TURN=2;
-	public static final int REMOVE_AT_END_OF_YOUR_TURN=3;
+	public static final int HASTE_REMOVE_AT_END_OF_YOUR_TURN=3;
+	public static final int HASTE_SACRIFICE_AT_END_OF_TURN=4;
 	
 	private final MagicCard card;
 	private final MagicPlayer controller;
@@ -37,9 +38,13 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 			case REMOVE_AT_END_OF_TURN:
 				permanent.setState(MagicPermanentState.RemoveAtEndOfTurn);
 				break;
-			case REMOVE_AT_END_OF_YOUR_TURN:
+			case HASTE_REMOVE_AT_END_OF_YOUR_TURN:
 				permanent.setState(MagicPermanentState.RemoveAtEndOfYourTurn);
 				permanent.setTurnAbilityFlags(permanent.getTurnAbilityFlags()|MagicAbility.Haste.getMask());
+				break;
+			case HASTE_SACRIFICE_AT_END_OF_TURN:
+				permanent.setState(MagicPermanentState.SacrificeAtEndOfTurn);
+				permanent.setTurnAbilityFlags(permanent.getTurnAbilityFlags()|MagicAbility.Haste.getMask());				
 				break;
 		}
 		return permanent;

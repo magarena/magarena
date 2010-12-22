@@ -298,6 +298,23 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
+
+	public static final MagicTargetFilter TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
+		
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			
+			if (target.getController()==player) {
+				final MagicPermanent permanent=(MagicPermanent)target;
+				return !permanent.hasType(MagicType.Legendary)&&permanent.isCreature();
+			}
+			return false;
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
 	
 	public static final MagicTargetFilter TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
 

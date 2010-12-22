@@ -83,6 +83,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a red or green creature you control");
 	public static final MagicTargetChoice TARGET_CREATURE_YOU_CONTROL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,"target creature you control");
+	public static final MagicTargetChoice TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,"target nonlegendary creature you control");
 	public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target creature your opponent controls");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_PLAYER=

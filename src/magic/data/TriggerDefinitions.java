@@ -1666,7 +1666,7 @@ public class TriggerDefinitions {
 
 			final MagicCard card=(MagicCard)event.getTarget(game,choiceResults,0);
 			if (card!=null) {
-				game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.REMOVE_AT_END_OF_YOUR_TURN));
+				game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_YOUR_TURN));
 			}
 		}
     };
