@@ -4,12 +4,15 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
+import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
 import magic.data.CardImages;
@@ -38,6 +41,9 @@ public class GamePanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
+	private static final String ACTION_KEY="action";
+	private static final String UNDO_KEY="undo";
+	
 	private final MagicFrame frame;
 	private final MagicGame game;
 	private final GameController controller;
@@ -72,6 +78,7 @@ public class GamePanel extends JPanel {
 
 		setLayout(null);
 		setOpaque(false);
+		setFocusable(true);
 
 		logBookViewer=new LogBookViewer(game.getLogBook());
 		logBookViewer.setVisible(false);
@@ -136,6 +143,33 @@ public class GamePanel extends JPanel {
 			}
 		});
 		
+		getActionMap().put(ACTION_KEY, new AbstractAction() {
+			
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(final ActionEvent event) {
+
+				actionKeyPressed();
+			}
+		});
+		
+		getActionMap().put(UNDO_KEY, new AbstractAction() {
+			
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(final ActionEvent event) {
+			
+				undoKeyPressed();
+			}
+		});
+		
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0),ACTION_KEY);
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);		
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),UNDO_KEY);
+		
 		stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
 		handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);		
 		playerPermanentViewer=new BattlefieldViewer(viewerInfo,controller,false);
@@ -154,6 +188,20 @@ public class GamePanel extends JPanel {
 		updateView();
 		thread=new GameControllerThread(controller);
 		thread.start();
+	}
+	
+	void actionKeyPressed() {
+		
+		if (gameTournamentViewer.getGameViewer().isActionEnabled()) {
+			controller.actionClicked();
+		}
+	}
+	
+	void undoKeyPressed() {
+
+		if (gameTournamentViewer.getGameViewer().isUndoEnabled()) {
+			controller.undoClicked();
+		}
 	}
 	
 	private boolean isTextView() {

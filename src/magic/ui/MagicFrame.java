@@ -381,6 +381,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		gamePanel=new GamePanel(this,game);
 		final GameLayeredPane gamePane=new GameLayeredPane(gamePanel);
 		setContent(gamePane);		
+		gamePanel.requestFocus();
 		enableMenuItem(CONCEDE_GAME_ITEM,true);
 	}
 		
@@ -402,7 +403,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 	public void closeCardExplorer() {
 	
 		closeContent();
-		enableMenuItem(CARD_EXPLORER_ITEM,true);		
+		enableMenuItem(CARD_EXPLORER_ITEM,true);	
+		if (gamePanel!=null) {
+			gamePanel.requestFocus();
+		}
 	}
 	
 	private void openKeywords() {
