@@ -115,6 +115,15 @@ public interface MagicCondition {
 		}
 	};
 
+	public static final MagicCondition TWO_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
+
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			
+			final MagicPermanent permanent=(MagicPermanent)source;
+			return permanent.getCounters(MagicCounterType.Charge)>=2;
+		}
+	};
+	
 	public static final MagicCondition THREE_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
 
 		public boolean accept(final MagicGame game,final MagicSource source) {

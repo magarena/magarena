@@ -108,6 +108,11 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 		return counts[1-player.getIndex()]>0;
 	}
 	
+	public boolean containsSpells() {
+
+		return spells[0]>0||spells[1]>0;
+	}
+	
 	public boolean containsOpponentSpells(final MagicPlayer player) {
 
 		return spells[1-player.getIndex()]>0;

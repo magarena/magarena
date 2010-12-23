@@ -35,6 +35,7 @@ public enum MagicTiming {
 	Token("token",6),				// First main of your turn, declare attackers or end of turn opponent, as response
 	NextTurn("nextturn",9), 		// Second main
 	MustAttack("mustattack",8),		// First main opponent's turn
+	Spell("spell",9),               // When there is a spell on stack
 	
 	// No timing
 	None("none",0),				    // No restrictions.
@@ -92,6 +93,8 @@ public enum MagicTiming {
 			case Pump:
 				return (game.getTurnPlayer()==controller&&game.isPhase(MagicPhaseType.FirstMain))||
 					game.isPhase(MagicPhaseType.DeclareBlockers)||game.getStack().isResponse(controller);
+			case Spell:
+				return game.getStack().containsSpells();
 			case Counter:
 				return game.getStack().containsOpponentSpells(controller);
 			case Attack:

@@ -546,6 +546,7 @@ Archon of Justice.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Awakening Zone.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193507&type=card
 Bant Sureblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188975&type=card
 Bladed Pinions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=206354&type=card
+Echo Mage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=198163&type=card
 Ember Hauler.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208008&type=card
 Esper Stormblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188968&type=card
 Force Spike.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=11285&type=card
@@ -574,6 +575,7 @@ Student of Warfare.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multivers
 Sword of Body and Mind.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209280&type=card
 Szadek, Lord of Secrets.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89092&type=card
 Turn to Mist.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158752&type=card
+Twincast.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191322&type=card
 Vampire Hexmage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=192232&type=card
 Volcanic Fallout.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220512&type=card
 Woolly Thoctar.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175062&type=card

@@ -111,20 +111,22 @@ public class TestGameBuilder {
 		final MagicPlayer opponent=game.getPlayer(1);
 		
 		addToLibrary(player,"Plains",10);
-		addToLibrary(opponent,"Island",10);	
+		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
-		addToHand(player,"Lord of Shatterskull Pass",1);
 		addToHand(player,"Kitchen Finks",1);
 		addToHand(player,"Awakening Zone",1);
-		addToHand(player,"Force Spike",5);
+		addToHand(player,"Blaze",1);
 		addToHand(player,"Doom Blade",1);
-		addToHand(player,"Kiki-Jiki, Mirror Breaker",1);
+		addToHand(player,"Into the Roil",1);
+		addToHand(player,"Pulse of the Tangle",1);
+		addToHand(player,"Force Spike",1);
+		addToHand(player,"Twincast",1);
+		addToHand(player,"Echo Mage",1);
 		createPermanent(game,player,"Rorix Bladewing",true,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
-		createPermanent(game,player,"Glorious Anthem",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);
-		createPermanent(game,opponent,"Vampire Hexmage",false,1);
+		createPermanent(game,opponent,"Zephyr Sprite",false,4);
 		
 		return game;
 	}

@@ -5519,3 +5519,24 @@ power=2
 toughness=2
 ability=haste
 timing=fmain
+
+636:Twincast
+value=3
+rarity=2
+type=Instant
+color=u
+converted=2
+cost={U}{U}
+timing=spell
+
+637:Echo Mage
+value=3
+rarity=2
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=3
+cost={1}{U}{U}
+power=2
+toughness=3
+timing=smain

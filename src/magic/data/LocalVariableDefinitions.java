@@ -37,6 +37,22 @@ public class LocalVariableDefinitions {
 		}
 	};
 	
+	private static final MagicLocalVariable ECHO_MAGE=new MagicDummyLocalVariable() {
+
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+
+			final int charges=permanent.getCounters(MagicCounterType.Charge);
+			if (charges>=4) {
+				pt.power=2;
+				pt.toughness=5;
+			} else if (charges>=2) {
+				pt.power=2;
+				pt.toughness=4;
+			}
+		}		
+	};
+	
 	private static final MagicLocalVariable ESPER_STORMBLADE=new MagicBladeLocalVariable(MagicAbility.Flying.getMask());
 	
 	private static final MagicLocalVariable GOBLIN_GAVELEER=new MagicDummyLocalVariable() {
@@ -190,6 +206,11 @@ public class LocalVariableDefinitions {
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
 		cardDefinition.addLocalVariable(CAIRN_WANDERER);
 
+		// Echo Mage
+		cardDefinition=CardDefinitions.getInstance().getCard("Echo Mage");
+		cardDefinition.addLocalVariable(ECHO_MAGE);	
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		
 		// Esper Stormblade
 		cardDefinition=CardDefinitions.getInstance().getCard("Esper Stormblade");
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());

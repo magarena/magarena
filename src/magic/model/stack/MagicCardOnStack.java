@@ -1,5 +1,7 @@
 package magic.model.stack;
 
+import java.util.Arrays;
+
 import javax.swing.ImageIcon;
 
 import magic.model.MagicAbility;
@@ -31,6 +33,19 @@ public class MagicCardOnStack extends MagicItemOnStack {
 	
 	private MagicCardOnStack() {
 		
+	}
+	
+	public MagicCardOnStack copyCardOnStack(final MagicPlayer player) {
+
+		final MagicPayedCost cost=new MagicPayedCost();
+		cost.setX(x);
+		final MagicCard card=MagicCard.createTokenCard(getCardDefinition(),player);
+		final MagicCardOnStack copyCardOnStack=new MagicCardOnStack(card,cost);
+		final Object choiceResults[]=getChoiceResults();
+		if (choiceResults!=null) {
+			copyCardOnStack.setChoiceResults(Arrays.copyOf(choiceResults,choiceResults.length));
+		}
+		return copyCardOnStack;
 	}
 	
 	@Override

@@ -25,6 +25,7 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.MagicCopyCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDestroyAction;
@@ -484,6 +485,44 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
+	private static final MagicPermanentActivation ECHO_MAGE1=new MagicLevelUpActivation("Echo Mage",MagicManaCost.ONE_BLUE,4);
+	
+	private static final MagicPermanentActivation ECHO_MAGE2=new MagicPermanentActivation("Echo Mage",
+			new MagicCondition[]{MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
+			new MagicActivationHints(MagicTiming.Spell)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE_BLUE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			final MagicPlayer player=source.getController();
+			final int amount=source.getCounters(MagicCounterType.Charge)>=4?2:1;
+			final String description=amount==2?
+					"Copy target instant or sorcery spell$ twice. You may choose new targets for the copies.":
+					"Copy target instant or sorcery spell$. You may choose new targets for the copy.";
+			return new MagicEvent(source,player,MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,new Object[]{player,amount},this,description);
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
+			if (targetSpell!=null) {
+				final MagicPlayer player=(MagicPlayer)data[0];
+				final int amount=(Integer)data[1];
+				for (int count=amount;count>0;count--) {
+					
+					game.doAction(new MagicCopyCardOnStackAction(player,targetSpell));
+				}
+			}
+		}
+	};
+	
 	private static final MagicPermanentActivation EMBER_HAULER=new MagicPermanentActivation("Ember Hauler",
 			new MagicCondition[]{MagicManaCost.ONE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
 
@@ -2367,6 +2406,8 @@ public class PermanentActivationDefinitions {
 		DAUNTLESS_ESCORT,
 		DEATHLESS_ANGEL,
 		DRANA_KALASTRIA_BLOODCHIEF,
+		ECHO_MAGE1,
+		ECHO_MAGE2,
 		EMBER_HAULER,
 		ESPER_BATTLEMAGE1,
 		ESPER_BATTLEMAGE2,
