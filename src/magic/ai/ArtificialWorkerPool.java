@@ -11,6 +11,8 @@ import magic.model.event.MagicEvent;
 
 public class ArtificialWorkerPool {
 	
+	public static final int MAX_LEVEL=8;
+	
 	private static final int THREADS=getNrOfThreads();
 	private static final int INITIAL_MAX_DEPTH=110;
 	private static final int INITIAL_MAX_GAMES=10000;

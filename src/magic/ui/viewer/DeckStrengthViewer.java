@@ -3,15 +3,24 @@ package magic.ui.viewer;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import javax.swing.BorderFactory;
+import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
+import javax.swing.JTextField;
+import javax.swing.border.Border;
 
+import magic.ai.ArtificialWorkerPool;
+import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicGame;
@@ -27,10 +36,11 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
 	private static final String PURPOSE=
 		"<html><body>"+
-		"Calculates an indicative win percentage for your deck. " +
-		"123 games are played against your opponent at a low difficulty level. "+
+		"Calculates an indicative win percentage for your deck by playing given " +
+		"number of games against your opponent at given difficulty level. "+
 		"</body></html>";
 
+	private static final Border INPUT_BORDER=BorderFactory.createEmptyBorder(0,10,0,10);
 	private static final Color HIGH_COLOR=new Color(0x23,0x8E,0x23);
 	private static final Color MEDIUM_COLOR=new Color(0xFF,0x7F,0x00);
 	private static final Color LOW_COLOR=new Color(0xEE,0x2C,0x2C);
@@ -39,6 +49,8 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	private final JProgressBar progressBar;
 	private final JLabel gameLabel;
 	private final JLabel strengthLabel;
+	private final JTextField gamesTextField;
+	private final JComboBox difficultyComboBox;
 	private final JButton startButton;
 	private CalculateThread calculateThread=null;
 	
@@ -55,11 +67,46 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		mainPanel.setLayout(new BorderLayout(0,4));
 		mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
 		add(mainPanel,BorderLayout.CENTER);
+	
+		final JPanel topPanel=new JPanel(new BorderLayout(0,4));
+		topPanel.setOpaque(false);
 		
 		final JLabel purposeLabel=new JLabel(PURPOSE);
 		purposeLabel.setIcon(IconImages.STRENGTH);
-		mainPanel.add(purposeLabel,BorderLayout.NORTH);
-	
+
+		final GeneralConfig config=GeneralConfig.getInstance();		
+
+		final JPanel gamesPanel=new JPanel(new BorderLayout(6,0));		
+		gamesPanel.setBorder(INPUT_BORDER);
+		gamesPanel.setOpaque(false);	
+		gamesTextField=new JTextField(String.valueOf(config.getStrengthGames()));
+		final Integer levels[]=new Integer[ArtificialWorkerPool.MAX_LEVEL];
+		for (int level=1;level<=levels.length;level++) {
+
+			levels[level-1]=level;
+		}
+		gamesPanel.add(new JLabel(IconImages.TROPHY),BorderLayout.WEST);
+		gamesPanel.add(gamesTextField,BorderLayout.CENTER);
+
+		final JPanel difficultyPanel=new JPanel(new BorderLayout(6,0));
+		difficultyPanel.setBorder(INPUT_BORDER);
+		difficultyPanel.setOpaque(false);
+		final ComboBoxModel difficultyModel=new DefaultComboBoxModel(levels);
+		difficultyComboBox=new JComboBox(difficultyModel);
+		difficultyComboBox.setSelectedItem(Integer.valueOf(config.getStrengthDifficulty()));
+		difficultyComboBox.setFocusable(false);
+		difficultyPanel.add(new JLabel(IconImages.DIFFICULTY),BorderLayout.WEST);
+		difficultyPanel.add(difficultyComboBox,BorderLayout.CENTER);
+
+		final JPanel settingsPanel=new JPanel(new GridLayout(1,2));
+		settingsPanel.setOpaque(false);
+		settingsPanel.add(gamesPanel);
+		settingsPanel.add(difficultyPanel);
+
+		topPanel.add(purposeLabel,BorderLayout.CENTER);
+		topPanel.add(settingsPanel,BorderLayout.SOUTH);
+		mainPanel.add(topPanel,BorderLayout.NORTH);
+		
 		final JPanel centerPanel=new JPanel(new BorderLayout(4,0));
 		centerPanel.setOpaque(false);
 		centerPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -103,6 +150,18 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 			startButton.repaint();
 			halt();
 		} else {
+			final GeneralConfig generalConfig=GeneralConfig.getInstance();
+			generalConfig.setStrengthDifficulty((Integer)difficultyComboBox.getSelectedItem());
+			try {
+				final int games=Integer.parseInt(gamesTextField.getText());
+				if (games>0&&games<1000) {
+					generalConfig.setStrengthGames(games);
+				} else {
+					gamesTextField.setText(String.valueOf(generalConfig.getStrengthGames()));
+				}
+			} catch (final Exception ex) {
+				gamesTextField.setText(String.valueOf(generalConfig.getStrengthGames()));				
+			}
 			startButton.setIcon(IconImages.STOP);
 			startButton.repaint();
 			calculateThread=new CalculateThread();
@@ -132,10 +191,11 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		
 		public void run() {
 
+			final GeneralConfig generalConfig=GeneralConfig.getInstance();
 			final TournamentConfig config=new TournamentConfig(TournamentConfig.getInstance());
-			config.setNrOfGames(123);
+			config.setNrOfGames(generalConfig.getStrengthGames());
 			final MagicTournament testTournament=new MagicTournament(config,tournament);
-			testTournament.setDifficulty(2);
+			testTournament.setDifficulty(generalConfig.getStrengthDifficulty());
 			progressBar.setMaximum(testTournament.getGamesTotal());
 			progressBar.setValue(0);
 			setStrength(0);

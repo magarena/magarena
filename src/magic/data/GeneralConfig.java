@@ -28,6 +28,8 @@ public class GeneralConfig {
 	private static final String DIFFICULTY="difficulty";
 	private static final String EXTRA_LIFE="extra";
 	private static final String POPUP_DELAY="popup";
+	private static final String STRENGTH_DIFFICULTY="strengthDifficulty";
+	private static final String STRENGTH_GAMES="strengthGames";
 
 	private static final int DEFAULT_LEFT=-1;
 	private static final int DEFAULT_TOP=-1;
@@ -43,6 +45,8 @@ public class GeneralConfig {
 	private static final int DEFAULT_DIFFICULTY=6;
 	private static final int DEFAULT_EXTRA_LIFE=0;
 	private static final int DEFAULT_POPUP_DELAY=300;
+	private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
+	private static final int DEFAULT_STRENGTH_GAMES=123;
 
 	private int left=DEFAULT_LEFT;
 	private int top=DEFAULT_TOP;
@@ -58,6 +62,8 @@ public class GeneralConfig {
 	private int difficulty=DEFAULT_DIFFICULTY;
 	private int extraLife=DEFAULT_EXTRA_LIFE;
 	private int popupDelay=DEFAULT_POPUP_DELAY;
+	private int strengthDifficulty=DEFAULT_STRENGTH_DIFFICULTY;
+	private int strengthGames=DEFAULT_STRENGTH_GAMES;
 	
 	private GeneralConfig() {
 		
@@ -223,6 +229,26 @@ public class GeneralConfig {
 		this.popupDelay=popupDelay;
 	}
 	
+	public int getStrengthDifficulty() {
+		
+		return strengthDifficulty;
+	}
+	
+	public void setStrengthDifficulty(final int strengthDifficulty) {
+		
+		this.strengthDifficulty=strengthDifficulty;
+	}
+	
+	public int getStrengthGames() {
+		
+		return strengthGames;
+	}
+	
+	public void setStrengthGames(final int strengthGames) {
+
+		this.strengthGames=strengthGames;
+	}
+	
 	public void load(final Properties properties) {
 	
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -239,6 +265,8 @@ public class GeneralConfig {
 		difficulty=Integer.parseInt(properties.getProperty(DIFFICULTY,""+DEFAULT_DIFFICULTY));
 		extraLife=Integer.parseInt(properties.getProperty(EXTRA_LIFE,""+DEFAULT_EXTRA_LIFE));
 		popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+DEFAULT_POPUP_DELAY));
+		strengthDifficulty=Integer.parseInt(properties.getProperty(STRENGTH_DIFFICULTY,""+DEFAULT_STRENGTH_DIFFICULTY));
+		strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
 	}
 	
 	public void load() {
@@ -266,6 +294,8 @@ public class GeneralConfig {
 		properties.setProperty(DIFFICULTY,String.valueOf(difficulty));
 		properties.setProperty(EXTRA_LIFE,String.valueOf(extraLife));
 		properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
+		properties.setProperty(STRENGTH_DIFFICULTY,String.valueOf(strengthDifficulty));
+		properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
 	}
 	
 	public void save() {
