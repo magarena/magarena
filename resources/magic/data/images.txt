@@ -73,17 +73,17 @@ Goblin2.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1
 Griffin.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=32242&stc=1&d=1159379525
 Ogre.jpg;http://www.wizards.com/mtg/images/daily/arcana/371_tk3.jpg
 Saproling.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=20047&d=1143749873
-Snake.jpg;http://www.ccghouse.com/photo/ccghouse/file/124565/large/SnakeToken.jpg
+Snake.jpg;http://www.wizards.com/mtg/images/daily/arcana/283_ZEN_Token9.jpg
 Soldier.jpg;http://www.wizards.com/mtg/images/daily/arcana/1688_token1.jpg
 Spirit.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=20011&d=1143673311
 Tuktuk the Returned.jpg;http://www.cardkingdom.com/media/images/products/standard/130721_1.jpg
 Voja.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=20055&d=1143749996
-Wolf.jpg;http://www.halfpricehobbies.com/catalog/images/Wolf%5B1%5D.jpg
+Wolf.jpg;http://www.wizards.com/mtg/images/daily/arcana/283_ZEN_Token10.jpg
 Worm.jpg;http://www.wizards.com/magic/images/mtgcom/arcana1000/1630_2.jpg
 Wurm1.jpg;http://www.cardkingdom.com/media/images/products/standard/132150_1.jpg
 Wurm2.jpg;http://www.cardkingdom.com/media/images/products/standard/132151_1.jpg
 Zombie.jpg;http://www.wizards.com/mtg/images/daily/arcana/1689_token2a.jpg
-Zombie Giant.jpg;http://www.halfpricehobbies.com/catalog/images/ZombieGiant%5B1%5D.jpg
+Zombie Giant.jpg;http://www.wizards.com/mtg/images/daily/arcana/283_ZEN_Token6.jpg
 >cards
 Absorb.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23155&type=card
 Accorder's Shield.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209046&type=card
