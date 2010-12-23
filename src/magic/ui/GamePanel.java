@@ -15,7 +15,7 @@ import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
-import magic.data.CardImages;
+import magic.data.DefaultCardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicGame;
@@ -88,7 +88,7 @@ public class GamePanel extends JPanel {
 		controller.setCardViewer(cardViewer);
 		
 		imageCardViewer=new CardViewer(true);
-		imageCardViewer.setSize(CardImages.CARD_WIDTH,CardImages.CARD_HEIGHT);
+		imageCardViewer.setSize(DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT);
 		imageCardViewer.setVisible(false);
 		controller.setImageCardViewer(imageCardViewer);
 						

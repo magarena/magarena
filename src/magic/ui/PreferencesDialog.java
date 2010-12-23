@@ -28,6 +28,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 	
 	private final MagicFrame frame;
 	private final JComboBox skinComboBox;
+	private final JCheckBox highQualityCheckBox;
 	private final JCheckBox skipSingleCheckBox;
 	private final JCheckBox alwaysPassCheckBox;
 	private final JCheckBox smartTargetCheckBox;
@@ -40,7 +41,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 		super(frame,true);
 		this.setTitle("Preferences");
-		this.setSize(400,340);
+		this.setSize(400,370);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -67,36 +68,42 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		final GeneralConfig config=GeneralConfig.getInstance();
 
 		final JLabel skinLabel=new JLabel("Skin");
-		skinLabel.setBounds(28,20,50,25);
+		skinLabel.setBounds(28,20,60,25);
+		skinLabel.setIcon(IconImages.PICTURE);
 		mainPanel.add(skinLabel);
 		final ComboBoxModel skinModel=new DefaultComboBoxModel(SKINS);
 		skinComboBox=new JComboBox(skinModel);
 		skinComboBox.setFocusable(false);
-		skinComboBox.setBounds(75,20,280,25);
+		skinComboBox.setBounds(90,20,265,25);
 		skinComboBox.setSelectedIndex(config.getSkin());
 		mainPanel.add(skinComboBox);		
 		
+		highQualityCheckBox=new JCheckBox("High quality card popup images",config.isHighQuality());
+		highQualityCheckBox.setBounds(25,65,350,20);
+		highQualityCheckBox.setFocusable(false);
+		mainPanel.add(highQualityCheckBox);
+		
 		skipSingleCheckBox=new JCheckBox("Skip single option choices when appropriate",config.getSkipSingle());
-		skipSingleCheckBox.setBounds(25,65,350,20);
+		skipSingleCheckBox.setBounds(25,95,350,20);
 		skipSingleCheckBox.setFocusable(false);
 		mainPanel.add(skipSingleCheckBox);
 
 		alwaysPassCheckBox=new JCheckBox("Always pass during draw and begin of combat step",config.getAlwaysPass());
-		alwaysPassCheckBox.setBounds(25,95,350,20);
+		alwaysPassCheckBox.setBounds(25,125,350,20);
 		alwaysPassCheckBox.setFocusable(false);
 		mainPanel.add(alwaysPassCheckBox);
 		
 		smartTargetCheckBox=new JCheckBox("Filter legal targets when appropriate",config.getSmartTarget());
-		smartTargetCheckBox.setBounds(25,125,350,20);
+		smartTargetCheckBox.setBounds(25,155,350,20);
 		smartTargetCheckBox.setFocusable(false);
 		mainPanel.add(smartTargetCheckBox);
 				
 		undoLevelsSlider=new SliderPanel("Undo",IconImages.UNDO,1,7,1,config.getUndoLevels());
-		undoLevelsSlider.setBounds(60,155,270,50);
+		undoLevelsSlider.setBounds(60,185,270,50);
 		mainPanel.add(undoLevelsSlider);
 		
 		popupDelaySlider=new SliderPanel("Popup",IconImages.DELAY,0,500,50,config.getPopupDelay());
-		popupDelaySlider.setBounds(60,205,270,50);
+		popupDelaySlider.setBounds(60,235,270,50);
 		mainPanel.add(popupDelaySlider);
 		
 		getContentPane().setLayout(new BorderLayout());
@@ -113,10 +120,11 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		if (source==okButton) {
 			final GeneralConfig config=GeneralConfig.getInstance();
 			config.setSkin(skinComboBox.getSelectedIndex());
-			config.setUndoLevels(undoLevelsSlider.getValue());
+			config.setHighQuality(highQualityCheckBox.isSelected());
 			config.setSkipSingle(skipSingleCheckBox.isSelected());
 			config.setAlwaysPass(alwaysPassCheckBox.isSelected());
 			config.setSmartTarget(smartTargetCheckBox.isSelected());
+			config.setUndoLevels(undoLevelsSlider.getValue());
 			config.setPopupDelay(popupDelaySlider.getValue());
 			config.save();
 			frame.repaint();

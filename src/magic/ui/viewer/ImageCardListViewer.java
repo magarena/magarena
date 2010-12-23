@@ -16,7 +16,7 @@ import java.util.Set;
 
 import javax.swing.JPanel;
 
-import magic.data.CardImages;
+import magic.data.DefaultCardImagesProvider;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
@@ -137,8 +137,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			
 			final MagicCard card=cardList.get(index);
 			final Point point=cardPoints.get(index);
-			final BufferedImage image=CardImages.getInstance().getImage(card.getCardDefinition(),card.getImageIndex());
-			g.drawImage(image,point.x,point.y,point.x+CARD_WIDTH,point.y+CARD_HEIGHT,0,0,CardImages.CARD_WIDTH,CardImages.CARD_HEIGHT,this);
+			final BufferedImage image=DefaultCardImagesProvider.getInstance().getImage(card.getCardDefinition(),card.getImageIndex());
+			g.drawImage(image,point.x,point.y,point.x+CARD_WIDTH,point.y+CARD_HEIGHT,0,0,DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT,this);
 			if (validChoices.contains(card)) {
 				g2d.fillRect(point.x-1,point.y-1,CARD_WIDTH+2,CARD_HEIGHT+2);
 			}

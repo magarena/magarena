@@ -158,13 +158,36 @@ public class GameController {
 		final Point pointOnScreen=gamePanel.getLocationOnScreen();
 		rect.x-=pointOnScreen.x;
 		rect.y-=pointOnScreen.y;
-		int x=rect.x+(rect.width-imageCardViewer.getWidth())/2;
-		int y=rect.y-imageCardViewer.getHeight()-6;
-		if (x+imageCardViewer.getWidth()>=size.width) {	
-			x=rect.x+rect.width-imageCardViewer.getWidth();
+		final int imageWidth=imageCardViewer.getWidth();
+		final int imageHeight=imageCardViewer.getHeight();
+		int x=rect.x+(rect.width-imageWidth)/2;
+		int y1=rect.y-imageHeight-6;
+		int y2=rect.y+rect.height+6;
+		int dy2=size.height-y2-imageHeight;		
+		if (x+imageWidth>=size.width) {	
+			x=rect.x+rect.width-imageWidth;
 		}
-		if (y<10) {
-			y=rect.y+rect.height+6;
+		int y;
+		// Position is next to card?
+		if (y1<10&&dy2<10) {
+			x=rect.x-6-imageWidth;
+			if (y1>=dy2) {
+				y=rect.y+rect.height-imageHeight;
+				if (y<10) {
+					y=10;
+				}
+			} else {
+				y=rect.y;
+				if (y+imageHeight+10>size.height) {
+					y=size.height-10-imageHeight;
+				}
+			}
+		// Position is above card?
+		} else if (y1>=10) {
+			y=y1;
+		// Position if beneath card.
+		} else {
+			y=y2;
 		}
 		imageCardViewer.setCard(cardDefinition,index);
 		imageCardViewer.setLocation(x,y);

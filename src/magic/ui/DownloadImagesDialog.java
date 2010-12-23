@@ -22,13 +22,18 @@ import javax.swing.JTextField;
 
 import magic.data.DownloadImageFile;
 import magic.data.DownloadImageFiles;
+import magic.data.GeneralConfig;
 import magic.data.IconImages;
 
 public class DownloadImagesDialog extends JDialog implements Runnable,ActionListener {
 
 	private static final long serialVersionUID = 1L;
 
+	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
+	private static final String DOWNLOAD_HQ_IMAGES_FILENAME="hqimages.txt";
+	
 	private final DownloadImageFiles files;
+	private final DownloadImageFiles hqFiles;
 	private final JComboBox proxyComboBox;
 	private final JTextField addressTextField;
 	private final JTextField portTextField;
@@ -107,8 +112,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		buttonPanel.add(cancelButton);
 		add(buttonPanel,BorderLayout.SOUTH);
 
-		files=new DownloadImageFiles();
-		if (files.isEmpty()) {
+		files=new DownloadImageFiles(DOWNLOAD_IMAGES_FILENAME,true);
+		hqFiles=new DownloadImageFiles(DOWNLOAD_HQ_IMAGES_FILENAME,GeneralConfig.getInstance().isHighQuality());
+		if (files.isEmpty()&&hqFiles.isEmpty()) {
 			okButton.setEnabled(false);
 			progressBar.setMaximum(1);
 			progressBar.setValue(1);
@@ -135,10 +141,16 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	public void run() {
 		
 		progressBar.setMinimum(0);
-		progressBar.setMaximum(files.size());
+		progressBar.setMaximum(files.size()+hqFiles.size());
 		
 		int count=0;
 		for (final DownloadImageFile file : files) {
+
+			downloadLabel.setText(file.getFilename());
+			file.download(proxy);
+			progressBar.setValue(++count);
+		}
+		for (final DownloadImageFile file : hqFiles) {
 
 			downloadLabel.setText(file.getFilename());
 			file.download(proxy);

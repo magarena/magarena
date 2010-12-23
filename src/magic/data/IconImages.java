@@ -94,6 +94,7 @@ public class IconImages {
 	public static final ImageIcon STRENGTH=loadIcon("strength.png");
 	public static final ImageIcon EDIT=loadIcon("edit.png");
 	public static final ImageIcon DELAY=loadIcon("delay.png");
+	public static final ImageIcon PICTURE=loadIcon("picture.png");
 	
 	public static final ImageIcon FLYING=loadIcon("flying.png");
 	public static final ImageIcon TRAMPLE=loadIcon("trample.png");

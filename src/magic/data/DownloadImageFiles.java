@@ -13,19 +13,19 @@ import magic.MagicMain;
 public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 
 	private static final long serialVersionUID = 1L;
-	
-	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
-	
-	public DownloadImageFiles() {
+		
+	public DownloadImageFiles(final String filename,final boolean enabled) {
 	
 		try {
-			loadDownloadImageFiles();
+			if (enabled) {
+				loadDownloadImageFiles(filename);
+			}
 		} catch (final Exception ex) {}
 	}	
 	
-	private void loadDownloadImageFiles() throws IOException {
+	private void loadDownloadImageFiles(final String filename) throws IOException {
 		
-		final InputStream stream=this.getClass().getResourceAsStream(DOWNLOAD_IMAGES_FILENAME);
+		final InputStream stream=this.getClass().getResourceAsStream(filename);
 		final BufferedReader reader=new BufferedReader(new InputStreamReader(stream));
 		final File gamePathFile=new File(MagicMain.getGamePath());
 		File imagesPathFile=null;

@@ -15,19 +15,18 @@ import javax.imageio.ImageIO;
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 
-public class CardImages {
+public class DefaultCardImagesProvider implements CardImagesProvider {
 	
-	public static final String IMAGE_EXTENSION=".jpg";
 	public static final int CARD_WIDTH=203;
 	public static final int CARD_HEIGHT=289;
 	public static final int CARD_FULL_WIDTH=223;
 	public static final int CARD_FULL_HEIGHT=310;
 	
-	private static final CardImages INSTANCE=new CardImages();
+	private static final DefaultCardImagesProvider INSTANCE=new DefaultCardImagesProvider();
 
 	private final Map<MagicCardDefinition,BufferedImage[]> imagesMap;
 	
-	private CardImages() {
+	private DefaultCardImagesProvider() {
 		
 		imagesMap=new HashMap<MagicCardDefinition,BufferedImage[]>();
 	}
@@ -93,7 +92,7 @@ public class CardImages {
 		}
 	}
 	
-	public static CardImages getInstance() {
+	public static CardImagesProvider getInstance() {
 		
 		return INSTANCE;
 	}
