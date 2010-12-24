@@ -49,6 +49,7 @@ Bottle Gnomes.jpg;http://magiccards.info/scans/en/jvc/7.jpg
 Breeding Pool.jpg;http://magiccards.info/scans/en/di/172.jpg
 Brigid, Hero of Kinsbaile.jpg;http://magiccards.info/scans/en/lw/6.jpg
 Brion Stoutarm.jpg;http://magiccards.info/scans/en/lw/246.jpg
+Brittle Effigy.jpg;http://magiccards.info/scans/en/m11/202.jpg
 Broodmate Dragon.jpg;http://magiccards.info/scans/en/ala/160.jpg
 Burst Lightning.jpg;http://magiccards.info/scans/en/zen/119.jpg
 Butcher of Malakir.jpg;http://magiccards.info/scans/en/wwk/53.jpg
@@ -146,6 +147,7 @@ Fume Spitter.jpg;http://magiccards.info/scans/en/som/63.jpg
 Furnace Whelp.jpg;http://magiccards.info/scans/en/arc/39.jpg
 Galvanic Arc.jpg;http://magiccards.info/scans/en/rav/126.jpg
 Ghost Council of Orzhova.jpg;http://magiccards.info/scans/en/gp/114.jpg
+Ghostway.jpg;http://magiccards.info/scans/en/gp/6.jpg
 Giant Growth.jpg;http://magiccards.info/scans/en/m11/178.jpg
 Glacial Fortress.jpg;http://magiccards.info/scans/en/m11/225.jpg
 Glen Elendra Archmage.jpg;http://magiccards.info/scans/en/eve/22.jpg

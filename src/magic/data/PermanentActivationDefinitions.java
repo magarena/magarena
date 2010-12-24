@@ -50,6 +50,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicExileEvent;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPayLifeEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -72,6 +73,7 @@ import magic.model.target.MagicCopyTargetPicker;
 import magic.model.target.MagicCountersTargetPicker;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicFirstStrikeTargetPicker;
 import magic.model.target.MagicHasteTargetPicker;
 import magic.model.target.MagicIndestructibleTargetPicker;
@@ -1995,6 +1997,34 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
+	private static final MagicPermanentActivation BRITTLE_EFFIGY=new MagicPermanentActivation("Brittle Effigy",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{
+				new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.FOUR),
+				new MagicExileEvent((MagicPermanent)source)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,MagicExileTargetPicker.getInstance(),
+				MagicEvent.NO_DATA,this,"Exile target creature$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
+			}
+		}
+	};
+	
 	private static final MagicLocalVariable CHIMERIC_MASS_VARIABLE=new MagicLocalVariable() {
 		
 		@Override
@@ -2474,6 +2504,7 @@ public class PermanentActivationDefinitions {
 		RISE_OF_THE_HOBGOBLINS,
 		SEAL_OF_DOOM,
 		SEAL_OF_FIRE,
+		BRITTLE_EFFIGY,
 		CHIMERIC_MASS,
 		MIND_STONE,
 		MOONGLOVE_EXTRACT,

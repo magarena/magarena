@@ -135,6 +135,7 @@ Bottle Gnomes.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1
 Breeding Pool.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97088&type=card
 Brigid, Hero of Kinsbaile.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=141829&type=card
 Brion Stoutarm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=140217&type=card
+Brittle Effigy.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205002&type=card
 Broodmate Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=178101&type=card
 Burst Lightning.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=177558&type=card
 Butcher of Malakir.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197125&type=card
@@ -232,6 +233,7 @@ Fume Spitter.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=20
 Furnace Whelp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=189227&type=card
 Galvanic Arc.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=87968&type=card
 Ghost Council of Orzhova.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96908&type=card
+Ghostway.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96842&type=card
 Giant Growth.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=159037&type=card
 Glacial Fortress.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205094&type=card
 Glen Elendra Archmage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=157977&type=card

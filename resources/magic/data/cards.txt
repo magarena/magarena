@@ -5540,3 +5540,20 @@ cost={1}{U}{U}
 power=2
 toughness=3
 timing=smain
+
+638:Ghostway
+value=3
+rarity=3
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=removal
+
+639:Brittle Effigy
+value=3
+rarity=2
+type=Artifact
+converted=1
+cost={1}
+timing=artifact

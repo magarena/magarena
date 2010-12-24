@@ -125,6 +125,8 @@ public class TestGameBuilder {
 		addToHand(player,"Force Spike",1);
 		addToHand(player,"Twincast",1);
 		addToHand(player,"Echo Mage",1);
+		addToHand(player,"Ghostway",1);
+		addToHand(player,"Brittle Effigy",1);		
 		createPermanent(game,player,"Rorix Bladewing",true,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);

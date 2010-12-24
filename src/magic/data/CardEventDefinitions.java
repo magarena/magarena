@@ -541,6 +541,28 @@ public class CardEventDefinitions {
 		}
 	};
 	
+	private static final MagicSpellCardEvent GHOSTWAY=new MagicSpellCardEvent("Ghostway") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack,player},this,
+				"Exile each creature you control. Return those cards to the battlefield under their owners' control at end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));			
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			for (final MagicTarget target : targets) {
+				
+				game.doAction(new MagicExileUntilEndOfTurnAction((MagicPermanent)target));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent GIANT_GROWTH=new MagicSpellCardEvent("Giant Growth") {
 
 		@Override
@@ -2877,6 +2899,7 @@ public class CardEventDefinitions {
 		EVACUATION,
 		FORCE_SPIKE,
 		FISTS_OF_THE_ANVIL,
+		GHOSTWAY,
 		GIANT_GROWTH,
 		GLORIOUS_CHARGE,
 		GRASP_OF_DARKNESS,
