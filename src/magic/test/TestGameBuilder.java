@@ -114,12 +114,14 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
+		addToHand(player,"Archon of Justice",1);
 		addToHand(player,"Kitchen Finks",1);
 		addToHand(player,"Awakening Zone",1);
 		addToHand(player,"Blaze",1);
 		addToHand(player,"Doom Blade",1);
 		addToHand(player,"Into the Roil",1);
 		addToHand(player,"Pulse of the Tangle",1);
+		addToHand(player,"Blightning",1);
 		addToHand(player,"Force Spike",1);
 		addToHand(player,"Twincast",1);
 		addToHand(player,"Echo Mage",1);

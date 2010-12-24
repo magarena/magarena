@@ -185,8 +185,12 @@ public class TriggerDefinitions {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 
-			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_PERMANENT,MagicExileTargetPicker.getInstance(),
-				MagicEvent.NO_DATA,this,"Exile target permanent$.");
+			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+			if (MagicLocationType.Play==triggerData.fromLocation) {
+				return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_PERMANENT,MagicExileTargetPicker.getInstance(),
+						MagicEvent.NO_DATA,this,"Exile target permanent$.");
+			}
+			return null;
 		}
 
 		@Override
