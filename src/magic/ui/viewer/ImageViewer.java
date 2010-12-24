@@ -10,6 +10,7 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -31,7 +32,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	private static final int VIEWER_WIDTH=300;
 	private static final int ZOOM_FACTOR=4;
 	
-	private static final File imageFiles[];
+	private static final List<File> imageFiles;
 	private static final List<Integer> imageIndices;
 	
 	private final BufferedImage image;
@@ -53,25 +54,39 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 		final File imagePathFile=new File(MagicMain.getGamePath()+File.separator+"images");
 		imageIndices=new ArrayList<Integer>();
 		if (imagePathFile.exists()) {
-			imageFiles=imagePathFile.listFiles();
+			imageFiles=new ArrayList<File>();
+			scanFiles(imageFiles,imagePathFile);
+			System.out.println("Found "+imageFiles.size()+" user images.");
 		} else {
-			imageFiles=null;
+			imageFiles=Collections.emptyList();
+		}
+	}
+	
+	private static void scanFiles(final List<File> imageFiles,final File imagePathFile) {
+		
+		for (final File file : imagePathFile.listFiles()) {
+			
+			if (file.isDirectory()) {
+				scanFiles(imageFiles,file);
+			} else {
+				imageFiles.add(file);
+			}
 		}
 	}
 	
 	private static synchronized File nextFile() {
 		
-		if (imageFiles==null||imageFiles.length==0) {
+		if (imageFiles.isEmpty()) {
 			return null;
 		}
 		if (imageIndices.size()==0) {
-			for (int index=0;index<imageFiles.length;index++) {
+			for (int index=0;index<imageFiles.size();index++) {
 				
 				imageIndices.add(index);
 			}
 		}
 		final Integer index=imageIndices.remove(MagicRandom.nextInt(imageIndices.size()));
-		return imageFiles[index];
+		return imageFiles.get(index);
 	}
 	
 	public ImageViewer() {
