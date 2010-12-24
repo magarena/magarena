@@ -35,6 +35,7 @@ public class TransparentImagePanel extends JPanel {
 	@Override
 	public void paint(final Graphics g) {
 	
+		super.paint(g);
 		if (image!=null) {
 			if (rescaleOp==null) {
 				g.drawImage(image,0,0,this);

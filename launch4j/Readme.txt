@@ -2,15 +2,37 @@ There must be a Java Runtime 6 (java.com) installed on your computer to play.
 Installing on Windows is quite simple, just put Magarena.exe on your desktop and execute.
 To execute the jar instead, use java -Xmx256m -jar Magarena.jar.
 
-Do not forget to execute Download images in the Arena menu the first time you run a new release.
+Do not forget to execute Download Images in the Arena menu the first time you run a new release.
 Otherwise you will see a lot of question marks.
+If you want to use high quality card image popups, enable that option before downloading in the preferences.
+Because cards can be replaced, it is possible that an existing saved duel is no longer compatible.
 
 Have fun!
+
+Release 1.3 (December 24, 2010)
+===========
+ 
+- 15 new cards (490 total)
+- replaced Elite Vanguard with Steppe Lynx
+- replaced Curse of Chains with Narcolepsy
+
+- added Magarena icon to application frame
+- added keyboard shortcuts for action button : space or right key
+- added keyboard shortcuts for undo button : escape or left key
+- increased maximum difficulty level to 8 (default is 6)
+- configurable number of games and difficulty level for deck strength calculator
+- configurable card image popup delay in preferences (0 - 500 ms)
+- configurable high quality transparent card image popups (turned off by default)
+- improved display of stack in graphical view
+- zoom effect on photo gadget is now delayed
+- added support for sub folders in images data folder
+
+- fixed triggered ability of Archon of Justice when discarding
 
 Release 1.2 (December 18, 2010)
 ===========
 
-- 25 new cards
+- 25 new cards (475 total)
 - replaced Disperse with Into the Roil 
 - replaced Gruul War Plow with Chimeric Mass
 

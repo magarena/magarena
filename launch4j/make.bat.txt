@@ -1,0 +1,10 @@
+@echo off
+set JDK_HOME=
+set L4J_HOME=
+del Magarena.jar
+del Magarena.exe
+cd ..\bin
+%JDK_HOME%\bin\jar cfm ..\launch4j\Magarena.jar ..\launch4j\MANIFEST.MF magic
+cd ..\launch4j
+%L4J_HOME%\launch4jc.exe arena.xml
+pause
