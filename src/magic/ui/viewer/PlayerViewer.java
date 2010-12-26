@@ -1,6 +1,7 @@
 package magic.ui.viewer;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.util.Set;
 
@@ -28,6 +29,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 	private final ViewerInfo viewerInfo;
 	private final GameController controller;
 	private final boolean opponent;
+	private final PanelButton avatarButton;
 	private final PlayerAvatarPanel avatarPanel;
 	private final JLabel labels[];
 	private final JPanel labelsPanel;
@@ -42,7 +44,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 		
 		setLayout(new BorderLayout());
 		
-		final PanelButton avatarButton=new PanelButton() {
+		avatarButton=new PanelButton() {
 
 			private static final long serialVersionUID = 1L;
 
@@ -51,6 +53,12 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 
 				final MagicPlayer player=viewerInfo.getPlayerInfo(opponent).player;
 				PlayerViewer.this.controller.processClick(player);
+			}
+
+			@Override
+			public Color getValidColor() {
+
+				return FontsAndBorders.TARGET_COLOR;
 			}
 		};
 
@@ -114,14 +122,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
 
-		final MagicPlayer player=viewerInfo.getPlayerInfo(opponent).player;		
-		if (validChoices.contains(player)) {
-			avatarPanel.setBackground(FontsAndBorders.TARGET_FOREGROUND);
-			avatarPanel.setOpaque(true);
-		} else {
-			avatarPanel.setBackground(null);
-			avatarPanel.setOpaque(false);
-		}
-		avatarPanel.repaint();
+		final MagicPlayer player=viewerInfo.getPlayerInfo(opponent).player;
+		avatarButton.setValid(validChoices.contains(player));
 	}	
 }

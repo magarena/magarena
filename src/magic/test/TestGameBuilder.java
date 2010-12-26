@@ -121,9 +121,14 @@ public class TestGameBuilder {
 		addToHand(player,"Sylvok Lifestaff",1);
 		addToHand(player,"Spitemare",1);
 		addToHand(player,"Sunblast Angel",1);
+		addToHand(player,"Counterspell",1);
+		addToHand(player,"Twincast",1);
+		addToHand(player,"Vault Skyward",1);
+		addToHand(player,"Recover",1);
 		
 		createPermanent(game,player,"Watchwolf",true,1);
-		createPermanent(game,player,"Rupture Spire",false,8);
+		createPermanent(game,player,"Plains",false,2);
+		createPermanent(game,player,"Rupture Spire",false,6);
 		createPermanent(game,opponent,"Archon of Justice",false,1);
 		createPermanent(game,opponent,"Mire Boa",true,1);
 		createPermanent(game,opponent,"Rupture Spire",false,1);

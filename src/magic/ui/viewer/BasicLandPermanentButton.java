@@ -1,6 +1,7 @@
 package magic.ui.viewer;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.util.Set;
 
@@ -58,10 +59,12 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
 
-		if (validChoices.contains(permanentInfo.permanent)) {			
-			landPanel.setBorder(FontsAndBorders.TARGET_BORDER);
-		} else {
-			landPanel.setBorder(FontsAndBorders.NO_TARGET_BORDER);
-		}
+		setValid(validChoices.contains(permanentInfo.permanent));
+	}
+
+	@Override
+	public Color getValidColor() {
+
+		return FontsAndBorders.TARGET_COLOR;
 	}
 }

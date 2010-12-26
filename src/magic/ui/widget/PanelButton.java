@@ -1,15 +1,21 @@
 package magic.ui.widget;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.JComponent;
 
-public class PanelButton extends TexturedPanel {
+public abstract class PanelButton extends TexturedPanel {
 
 	private static final long serialVersionUID = 1L;
 
+	private boolean valid=false;
+	
 	public PanelButton() {
 		
 		setLayout(new BorderLayout());
@@ -46,6 +52,12 @@ public class PanelButton extends TexturedPanel {
 		});
 	}
 	
+	public void setValid(final boolean valid) {
+		
+		this.valid=valid;
+		repaint();
+	}
+	
 	public void setComponent(final JComponent component) {
 		
 		add(component,BorderLayout.CENTER);
@@ -61,5 +73,19 @@ public class PanelButton extends TexturedPanel {
 	
 	public void mouseExited() {
 		
+	}
+	
+	public abstract Color getValidColor();
+
+	@Override
+	public void paint(final Graphics g) {
+
+		super.paint(g);
+		final Dimension size=getSize();
+		if (valid) {
+			final Graphics2D g2d=(Graphics2D)g;
+			g2d.setPaint(getValidColor());
+			g2d.fillRect(0,0,10+size.width,10+size.height);
+		}
 	}
 }

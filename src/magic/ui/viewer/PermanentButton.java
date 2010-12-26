@@ -19,9 +19,6 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 
 	private final PermanentViewerInfo permanentInfo;
 	private final GameController controller;
-	private final JLabel nameLabel;
-	private final JLabel ptLabel;
-	private final TextLabel textLabel;
 
 	public PermanentButton(final PermanentViewerInfo permanentInfo,final GameController controller,final Border border,final int maxWidth) {
 		
@@ -38,17 +35,17 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 		topPanel.setLayout(new BorderLayout());
 		panel.add(topPanel,BorderLayout.NORTH);
 
-		nameLabel=new JLabel(permanentInfo.name);
+		final JLabel nameLabel=new JLabel(permanentInfo.name);
 		nameLabel.setIcon(permanentInfo.icon);
 		topPanel.add(nameLabel,BorderLayout.CENTER);
 		
-		ptLabel=new JLabel("");
+		final JLabel ptLabel=new JLabel("");
 		if (!permanentInfo.powerToughness.isEmpty()) {
 			ptLabel.setText(permanentInfo.powerToughness);
 			topPanel.add(ptLabel,BorderLayout.EAST);
 		}
 		
-		textLabel=new TextLabel(permanentInfo.text,maxWidth-6,false);
+		final TextLabel textLabel=new TextLabel(permanentInfo.text,maxWidth-6,false);
 		panel.add(textLabel,BorderLayout.CENTER);
 					
 		setComponent(panel);
@@ -70,16 +67,12 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
 		
-		if (validChoices.contains(permanentInfo.permanent)) {	
-			final Color targetColor=controller.isCombatChoice()?FontsAndBorders.COMBAT_TARGET_FOREGROUND:FontsAndBorders.TARGET_FOREGROUND; 
-			nameLabel.setForeground(targetColor);
-			ptLabel.setForeground(targetColor);
-			textLabel.setForeground(targetColor);
-		} else {
-			nameLabel.setForeground(Color.BLACK);
-			ptLabel.setForeground(Color.BLACK);
-			textLabel.setForeground(Color.BLACK);
-		}
-		repaint();
+		setValid(validChoices.contains(permanentInfo.permanent));
+	}
+
+	@Override
+	public Color getValidColor() {
+
+		return controller.isCombatChoice()?FontsAndBorders.COMBAT_TARGET_COLOR:FontsAndBorders.TARGET_COLOR;
 	}	
 }

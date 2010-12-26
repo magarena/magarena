@@ -8,8 +8,6 @@ import javax.swing.border.Border;
 
 public class FontsAndBorders {
 
-	public static final Color TARGET_FOREGROUND=new Color(0,128,0);
-	public static final Color COMBAT_TARGET_FOREGROUND=new Color(200,0,0);
 	public static final Color TARGET_COLOR = new Color(0,250,0,70);
 	public static final Color COMBAT_TARGET_COLOR = new Color(250,130,0,125);
 	
@@ -28,11 +26,6 @@ public class FontsAndBorders {
 
 	public static final Font FONT5=new Font("dialog",Font.BOLD,32);
 	
-	public static final Border TARGET_BORDER=BorderFactory.createCompoundBorder(
-		BorderFactory.createEmptyBorder(1,1,1,1),
-		BorderFactory.createLineBorder(TARGET_FOREGROUND,2)
-	);
-
 	public static final Border NO_TARGET_BORDER=BorderFactory.createEmptyBorder(3,3,3,3);
 
 	public static final Border WHITE_BORDER=BorderFactory.createLineBorder(Color.WHITE);

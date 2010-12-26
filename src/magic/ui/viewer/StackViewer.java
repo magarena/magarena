@@ -108,8 +108,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 		private static final long serialVersionUID = 1L;
 		
 		private final StackViewerInfo stackInfo;
-		private final JLabel sourceLabel;
-		private final TextLabel textLabel;
 		
 		public StackButton(final StackViewerInfo stackInfo,final int maxWidth) {
 			
@@ -121,11 +119,11 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 			panel.setLayout(new BorderLayout(0,2));
 			setComponent(panel);
 
-			sourceLabel=new JLabel(stackInfo.name);
+			final JLabel sourceLabel=new JLabel(stackInfo.name);
 			sourceLabel.setIcon(stackInfo.icon);
 			panel.add(sourceLabel,BorderLayout.NORTH);
 			
-			textLabel=new TextLabel(stackInfo.description,maxWidth,false);
+			final TextLabel textLabel=new TextLabel(stackInfo.description,maxWidth,false);
 			panel.add(textLabel,BorderLayout.CENTER);
 		}
 
@@ -157,14 +155,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 		@Override
 		public void showValidChoices(final Set<Object> validChoices) {
 
-			if (validChoices.contains(stackInfo.itemOnStack)) {
-				sourceLabel.setForeground(FontsAndBorders.TARGET_FOREGROUND);
-				textLabel.setForeground(FontsAndBorders.TARGET_FOREGROUND);
-			} else {
-				sourceLabel.setForeground(Color.BLACK);
-				textLabel.setForeground(Color.BLACK);
-			}
-			sourceLabel.repaint();
+			setValid(validChoices.contains(stackInfo.itemOnStack));
+		}
+
+		@Override
+		public Color getValidColor() {
+
+			return FontsAndBorders.TARGET_COLOR;
 		}
 	}
 }

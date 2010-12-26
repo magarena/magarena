@@ -1,6 +1,7 @@
 package magic.ui.viewer;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.util.ArrayList;
@@ -156,12 +157,13 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 		@Override
 		public void showValidChoices(final Set<Object> validChoices) {
 
-			if (validChoices.contains(card)) {
-				nameLabel.setForeground(FontsAndBorders.TARGET_FOREGROUND);
-			} else {
-				nameLabel.setForeground(card.getCardDefinition().getRarityColor());
-			}
-			nameLabel.repaint();
-		}		
+			setValid(validChoices.contains(card));
+		}
+
+		@Override
+		public Color getValidColor() {
+
+			return FontsAndBorders.TARGET_COLOR;
+		}			
 	} 
 }
