@@ -138,6 +138,7 @@ public class GeneralConfig {
 			case 1: return IconImages.GRANITE;
 			case 2: return IconImages.OPAL;
 			case 3: return IconImages.USER1;
+			case 4: return IconImages.WOOD2;
 			default: return IconImages.WOOD;
 		}
 	}
@@ -148,6 +149,7 @@ public class GeneralConfig {
 			case 1: return IconImages.GRANITE2;
 			case 2: return IconImages.OPAL2;
 			case 3: return IconImages.USER2;
+			case 4: return IconImages.MARBLE;
 			default: return IconImages.MARBLE;
 		}
 	}

@@ -24,7 +24,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	
-	private static final String SKINS[]={"wood","granite","opal","user"};
+	private static final String SKINS[]={"wood","granite","opal","user","light wood"};
 	
 	private final MagicFrame frame;
 	private final JComboBox skinComboBox;
