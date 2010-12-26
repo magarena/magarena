@@ -114,11 +114,19 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
-		addToHand(opponent,"Doom Blade",1);
-		addToHand(opponent,"Angel of Despair",1);
-		createPermanent(game,player,"Akroma, Angel of Wrath",false,1);
+		addToHand(player,"Lightning Bolt",1);
+		addToHand(player,"Ember Hauler",1);
+		addToHand(player,"Snake Umbra",1);
+		addToHand(player,"Wrecking Ball",1);
+		addToHand(player,"Sylvok Lifestaff",1);
+		addToHand(player,"Spitemare",1);
+		addToHand(player,"Sunblast Angel",1);
+		
+		createPermanent(game,player,"Watchwolf",true,1);
+		createPermanent(game,player,"Rupture Spire",false,8);
 		createPermanent(game,opponent,"Archon of Justice",false,1);
-		createPermanent(game,opponent,"Rupture Spire",false,7);
+		createPermanent(game,opponent,"Mire Boa",true,1);
+		createPermanent(game,opponent,"Rupture Spire",false,1);
 		
 		return game;
 	}

@@ -5557,3 +5557,62 @@ type=Artifact
 converted=1
 cost={1}
 timing=artifact
+
+640:Sylvok Lifestaff
+value=2
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={1}
+power=1
+toughness=0
+timing=equipment
+
+641:Snake Umbra
+value=3
+rarity=2
+type=Enchantment
+subtype=Aura
+color=g
+converted=3
+cost={2}{G}
+power=1
+toughness=1
+ability=totem armor
+timing=aura
+
+642:Spitemare
+value=4
+rarity=2
+type=Creature
+subtype=Elemental
+color=rw
+converted=4
+cost={2}{R/W}{R/W}
+power=3
+toughness=3
+timing=main
+
+643:Wrecking Ball
+value=3
+rarity=2
+type=Instant
+color=br
+converted=4
+cost={2}{B}{R}
+timing=removal
+
+644:Sunblast Angel
+value=5
+rarity=3
+type=Creature
+subtype=Angel
+color=w
+converted=6
+cost={4}{W}{W}
+power=4
+toughness=5
+ability=flying
+timing=fmain

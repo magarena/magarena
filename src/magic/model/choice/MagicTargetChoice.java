@@ -87,8 +87,12 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,"target nonlegendary creature you control");
 	public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,"target creature your opponent controls");
+	public static final MagicTargetChoice TARGET_CREATURE_OR_PLAYER=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.None,"target creature or player");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_PLAYER=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.Negative,"target creature or player");
+	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_LAND=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_LAND,true,MagicTargetHint.Negative,"target creature or land");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_ARTIFACT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_ARTIFACT,true,MagicTargetHint.Negative,"target artifact or creature");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_ENCHANTMENT=

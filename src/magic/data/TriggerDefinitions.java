@@ -1853,6 +1853,31 @@ public class TriggerDefinitions {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],-life));
 		}
     };
+
+    private static final MagicTrigger SPITEMARE=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Spitemare") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			if (damage.getTarget()==permanent) {
+				final int amount=damage.getDealtAmount();
+				return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(amount),
+					new Object[]{permanent,amount},this,"Spitemare deals "+amount+" damage to target creature or player$.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicTarget target=event.getTarget(game,choiceResults,0);
+			if (target!=null) {
+				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,(Integer)data[1],false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+    };
     
     private static final MagicTrigger STEPPE_LYNX=new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay,"Steppe Lynx") {
 
@@ -1894,6 +1919,26 @@ public class TriggerDefinitions {
 
 			final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],(Integer)data[2],false);
 			game.doAction(new MagicDealDamageAction(damage));
+		}
+    };
+    
+	private static final MagicTrigger SUNBLAST_ANGEL=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Sunblast Angel") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"Destroy all tapped creatures.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_TAPPED_CREATURE);
+			for (final MagicTarget target : targets) {
+
+				game.doAction(new MagicDestroyAction((MagicPermanent)target));
+			}
 		}
     };
     
@@ -2604,6 +2649,25 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger SYLVOK_LIFESTAFF=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Sylvok Lifestaff") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			if (permanent.getEquippedCreature()==data) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 3 life.");
+			}			
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+		}
+    };
+    
     private static final MagicTrigger BLOOD_CRYPT=new MagicRavnicaLandTrigger("Blood Crypt");
 
     private static final MagicTrigger BREEDING_POOL=new MagicRavnicaLandTrigger("Breeding Pool");
@@ -3271,6 +3335,26 @@ public class TriggerDefinitions {
 			game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
 		}
 	};
+	
+    private static final MagicTrigger SNAKE_UMBRA=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Snake Umbra") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			final MagicDamage damage=(MagicDamage)data;
+			final MagicTarget target=damage.getTarget();
+			if (damage.getSource()==permanent.getEnchantedCreature()&&target.isPlayer()&&target!=player) {
+				return new MagicDrawEvent(permanent,player,1);			
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+			
+		}
+    };
 	    
 	private static final Collection<MagicTrigger> TRIGGERS=Arrays.<MagicTrigger>asList(
 		ACIDIC_SLIME,
@@ -3366,7 +3450,9 @@ public class TriggerDefinitions {
 	    SPIRITMONGER,
 	    SPROUTING_THRINAX,
 	    STONEBROW_KROSAN_HERO,
+	    SPITEMARE,
 	    STEPPE_LYNX,
+	    SUNBLAST_ANGEL,
 	    STUFFY_DOLL,
 	    SURVEILLING_SPRITE,
 	    SZADEK_LORD_OF_SECRETS,
@@ -3375,7 +3461,7 @@ public class TriggerDefinitions {
 	    THIEVING_MAGPIE,
 	    TREVA_THE_RENEWER,
 	    TRYGON_PREDATOR,
-	    TUKTUK_THE_EXPLORER,	    
+	    TUKTUK_THE_EXPLORER,    
 	    VENSER_SHAPER_SAVANT,
 	    VIGOR1,
 	    VIGOR2,
@@ -3394,6 +3480,7 @@ public class TriggerDefinitions {
 	    SWORD_OF_BODY_AND_MIND,
 	    SWORD_OF_FIRE_AND_ICE,
 	    SWORD_OF_LIGHT_AND_SHADOW,
+	    SYLVOK_LIFESTAFF,
 	    BLOOD_CRYPT,
 	    BREEDING_POOL,
 	    GODLESS_SHRINE,
@@ -3464,7 +3551,8 @@ public class TriggerDefinitions {
 	    GRIFFIN_GUIDE,
 	    NARCOLEPSY,
 	    PILLORY_OF_THE_SLEEPLESS,
-	    RANCOR
+	    RANCOR,
+	    SNAKE_UMBRA
 	);
 	
 	public static void addTriggers() {

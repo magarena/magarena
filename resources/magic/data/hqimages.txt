@@ -380,6 +380,7 @@ Slave of Bolas.jpg;http://magiccards.info/scans/en/arb/136.jpg
 Sleep.jpg;http://magiccards.info/scans/en/m11/73.jpg
 Smash to Smithereens.jpg;http://magiccards.info/scans/en/shm/107.jpg
 Smother.jpg;http://magiccards.info/scans/en/wwk/68.jpg
+Snake Umbra.jpg;http://magiccards.info/scans/en/roe/207.jpg
 Solemn Offering.jpg;http://magiccards.info/scans/en/m11/32.jpg
 Soul Feast.jpg;http://magiccards.info/scans/en/10e/179.jpg
 Soul's Majesty.jpg;http://magiccards.info/scans/en/cfx/92.jpg
@@ -394,6 +395,7 @@ Spidersilk Net.jpg;http://magiccards.info/scans/en/zen/206.jpg
 Spiketail Hatchling.jpg;http://magiccards.info/scans/en/10e/111.jpg
 Spirit of the Hearth.jpg;http://magiccards.info/scans/en/eve/14.jpg
 Spiritmonger.jpg;http://magiccards.info/scans/en/ap/121.jpg
+Spitemare.jpg;http://magiccards.info/scans/en/eve/147.jpg
 Sprouting Thrinax.jpg;http://magiccards.info/scans/en/ala/197.jpg
 Stalker Hag.jpg;http://magiccards.info/scans/en/eve/129.jpg
 Steam Vents.jpg;http://magiccards.info/scans/en/gp/164.jpg
@@ -409,6 +411,7 @@ Student of Warfare.jpg;http://magiccards.info/scans/en/roe/47.jpg
 Stuffy Doll.jpg;http://magiccards.info/scans/en/ts/264.jpg
 Stun Sniper.jpg;http://magiccards.info/scans/en/arb/100.jpg
 Stupor.jpg;http://magiccards.info/scans/en/tsts/48.jpg
+Sunblast Angel.jpg;http://magiccards.info/scans/en/som/22.jpg
 Sunpetal Grove.jpg;http://magiccards.info/scans/en/m11/228.jpg
 Surveilling Sprite.jpg;http://magiccards.info/scans/en/rav/67.jpg
 Swamp.jpg;http://magiccards.info/scans/en/zen/238.jpg
@@ -418,6 +421,7 @@ Sword of Fire and Ice.jpg;http://magiccards.info/scans/en/ds/148.jpg
 Sword of Light and Shadow.jpg;http://magiccards.info/scans/en/ds/149.jpg
 Sword of Vengeance.jpg;http://magiccards.info/scans/en/m11/216.jpg
 Swords to Plowshares.jpg;http://magiccards.info/scans/en/cstd/7.jpg
+Sylvok Lifestaff.jpg;http://magiccards.info/scans/en/som/209.jpg
 Szadek, Lord of Secrets.jpg;http://magiccards.info/scans/en/rav/234.jpg
 Tattermunge Maniac.jpg;http://magiccards.info/scans/en/shm/219.jpg
 Taurean Mauler.jpg;http://magiccards.info/scans/en/arc/49.jpg
@@ -489,6 +493,7 @@ Wolfbriar Elemental.jpg;http://magiccards.info/scans/en/wwk/118.jpg
 Woolly Thoctar.jpg;http://magiccards.info/scans/en/ala/209.jpg
 Wort, Boggart Auntie.jpg;http://magiccards.info/scans/en/lw/252.jpg
 Wrap in Vigor.jpg;http://magiccards.info/scans/en/fut/141.jpg
+Wrecking Ball.jpg;http://magiccards.info/scans/en/di/139.jpg
 Wrexial, the Risen Deep.jpg;http://magiccards.info/scans/en/wwk/120.jpg
 Wurmcoil Engine.jpg;http://magiccards.info/scans/en/som/223.jpg
 Zealous Persecution.jpg;http://magiccards.info/scans/en/arb/85.jpg

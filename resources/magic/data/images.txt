@@ -466,6 +466,7 @@ Slave of Bolas.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=
 Sleep.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205120&type=card
 Smash to Smithereens.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158243&type=card
 Smother.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191578&type=card
+Snake Umbra.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193585&type=card
 Solemn Offering.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205095&type=card
 Soul Feast.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129739&type=card
 Soul's Majesty.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=185137&type=card
@@ -480,6 +481,7 @@ Spidersilk Net.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=
 Spiketail Hatchling.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129901&type=card
 Spirit of the Hearth.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=151169&type=card
 Spiritmonger.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=28009&type=card
+Spitemare.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=152044&type=card
 Sprouting Thrinax.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=174863&type=card
 Stalker Hag.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=151120&type=card
 Steam Vents.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96923&type=card
@@ -495,6 +497,7 @@ Student of Warfare.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multivers
 Stuffy Doll.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=116724&type=card
 Stun Sniper.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179589&type=card
 Stupor.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=108923&type=card
+Sunblast Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=215111&type=card
 Sunpetal Grove.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205124&type=card
 Surveilling Sprite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=87904&type=card
 Swamp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=201977
@@ -504,6 +507,7 @@ Sword of Fire and Ice.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiv
 Sword of Light and Shadow.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=47453&type=card
 Sword of Vengeance.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205044&type=card
 Swords to Plowshares.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=218581&type=card
+Sylvok Lifestaff.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207857&type=card
 Szadek, Lord of Secrets.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89092&type=card
 Tattermunge Maniac.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=142013&type=card
 Taurean Mauler.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220453&type=card
@@ -575,6 +579,7 @@ Wolfbriar Elemental.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiver
 Woolly Thoctar.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175062&type=card
 Wort, Boggart Auntie.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=140226&type=card
 Wrap in Vigor.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130331&type=card
+Wrecking Ball.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=111202&type=card
 Wrexial, the Risen Deep.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197840&type=card
 Wurmcoil Engine.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207875&type=card
 Zealous Persecution.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179575&type=card

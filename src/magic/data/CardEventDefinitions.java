@@ -1603,6 +1603,26 @@ public class CardEventDefinitions {
 		}
 	};
 	
+	private static final MagicSpellCardEvent WRECKING_BALL=new MagicSpellCardEvent("Wrecking Ball") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_LAND,
+				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,"Destroy target creature or land$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				game.doAction(new MagicDestroyAction(permanent));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent ZEALOUS_PERSECUTION=new MagicSpellCardEvent("Zealous Persecution") {
 
 		@Override
@@ -2869,6 +2889,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicTrampleTargetPicker.getInstance());
 	private static final MagicSpellCardEvent SERRAS_EMBRACE=new MagicPlayAuraEvent("Serra's Embrace",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
+	private static final MagicSpellCardEvent SNAKE_UMBRA=new MagicPlayAuraEvent("Snake Umbra",
+			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());	
 	private static final MagicSpellCardEvent SPIDER_UMBRA=new MagicPlayAuraEvent("Spider Umbra",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());	
 	private static final MagicSpellCardEvent TORPOR_DUST=new MagicPlayAuraEvent("Torpor Dust",
@@ -2947,6 +2969,7 @@ public class CardEventDefinitions {
 		WITHSTAND,
 		WITHSTAND_DEATH,
 		WRAP_IN_VIGOR,
+		WRECKING_BALL,
 		ZEALOUS_PERSECUTION,
 		ASSASSINATE,
 		BEACON_OF_UNREST,
@@ -3016,6 +3039,7 @@ public class CardEventDefinitions {
 		PROTECTIVE_BUBBLE,
 		RANCOR,
 		SERRAS_EMBRACE,
+		SNAKE_UMBRA,
 		SPIDER_UMBRA,
 		TORPOR_DUST,
 		VOLCANIC_STRENGTH,
