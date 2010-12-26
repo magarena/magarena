@@ -210,6 +210,7 @@ public class LocalVariableDefinitions {
 		cardDefinition=CardDefinitions.getInstance().getCard("Echo Mage");
 		cardDefinition.addLocalVariable(ECHO_MAGE);	
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.setVariablePT();
 		
 		// Esper Stormblade
 		cardDefinition=CardDefinitions.getInstance().getCard("Esper Stormblade");
@@ -245,16 +246,19 @@ public class LocalVariableDefinitions {
 		cardDefinition=CardDefinitions.getInstance().getCard("Lord of Extinction");
 		cardDefinition.addLocalVariable(LORD_OF_EXTINCTION);	
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
-
+		cardDefinition.setVariablePT();
+		
 		// Lord of Shatterskull Pass
 		cardDefinition=CardDefinitions.getInstance().getCard("Lord of Shatterskull Pass");
 		cardDefinition.addLocalVariable(LORD_OF_SHATTERSKULL_PASS);	
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
-
+		cardDefinition.setVariablePT();
+		
 		// Nirkana Cutthroat
 		cardDefinition=CardDefinitions.getInstance().getCard("Nirkana Cutthroat");
 		cardDefinition.addLocalVariable(NIRKANA_CUTTHROAT);	
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.setVariablePT();
 		
 		// Ruthless Cullblade
 		cardDefinition=CardDefinitions.getInstance().getCard("Ruthless Cullblade");
@@ -265,5 +269,6 @@ public class LocalVariableDefinitions {
 		cardDefinition=CardDefinitions.getInstance().getCard("Student of Warfare");
 		cardDefinition.addLocalVariable(STUDENT_OF_WARFARE);	
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.setVariablePT();
 	}
 }

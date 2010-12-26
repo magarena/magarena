@@ -92,6 +92,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		counters=Arrays.copyOf(sourcePermanent.counters,MagicCounterType.NR_COUNTERS);
 		abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
 		localVariables=new MagicLocalVariableList(sourcePermanent.localVariables);
+		turnLocalVariables=sourcePermanent.turnLocalVariables;
 		equippedCreature=copyMap.copy(sourcePermanent.equippedCreature);
 		equipmentPermanents=new MagicPermanentSet(copyMap,sourcePermanent.equipmentPermanents);
 		enchantedCreature=copyMap.copy(sourcePermanent.enchantedCreature);
@@ -217,14 +218,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
 	public void addTurnLocalVariable(final MagicLocalVariable localVariable) {
 
-		localVariables.add(turnLocalVariables,localVariable);
+		localVariables.add(cardDefinition.getTurnLocalVariableIndex()+turnLocalVariables,localVariable);
 		turnLocalVariables++;
 	}
 
 	public void removeTurnLocalVariable() {
 
 		turnLocalVariables--;
-		localVariables.remove(turnLocalVariables);
+		localVariables.remove(cardDefinition.getTurnLocalVariableIndex()+turnLocalVariables);
 	}
 	
 	public void addTurnLocalVariables(final List<MagicLocalVariable> localVariablesList) {
@@ -239,9 +240,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 		if (turnLocalVariables>0) {
 			final List<MagicLocalVariable> localVariablesList=new ArrayList<MagicLocalVariable>();
+			final int index=cardDefinition.getTurnLocalVariableIndex();
 			for (;turnLocalVariables>0;turnLocalVariables--) {
 				
-				localVariablesList.add(localVariables.remove(0));
+				localVariablesList.add(localVariables.remove(index));
 			}
 			return localVariablesList;
 		}

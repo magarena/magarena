@@ -74,6 +74,7 @@ public class MagicCardDefinition {
 	private final int manaSource[]=new int[MagicColor.NR_COLORS];
 	private int power=0;
 	private int toughness=0;
+	private int turnLocalVariableIndex=0;
 	private long abilityFlags=0;
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
@@ -406,6 +407,16 @@ public class MagicCardDefinition {
 		
 		return toughness;
 	}		
+	
+	public void setVariablePT() {
+		
+		turnLocalVariableIndex=1;
+	}
+	
+	public int getTurnLocalVariableIndex() {
+		
+		return turnLocalVariableIndex;
+	}
 	
 	public void setAbility(final MagicAbility ability) {
 		
