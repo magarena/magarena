@@ -1,13 +1,30 @@
+Magarena
+========
+
 There must be a Java Runtime 6 (java.com) installed on your computer to play.
 Installing on Windows is quite simple, just put Magarena.exe on your desktop and execute.
-To execute the jar instead, use java -Xmx256m -jar Magarena.jar.
+To obtain the Java jar, Magarena.exe can simply be renamed to Magarena.jar because it is also an archive.
+To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
 Do not forget to execute Download Images in the Arena menu the first time you run a new release.
 Otherwise you will see a lot of question marks.
 If you want to use high quality card image popups, enable that option before downloading in the preferences.
 Because cards can be replaced, it is possible that an existing saved duel is no longer compatible.
 
+Recommended difficulty level for the best balance of AI speed and strength is the default 6.
+
 Have fun!
+
+Release 1.4 (December 26, 2010)
+===========
+
+- 5 new cards (495 total)
+
+- added light wood skin
+- improved display of valid choices
+- improved AI destroy and exile target pickers
+
+- fixed Omnibian ability on level up creatures
 
 Release 1.3 (December 24, 2010)
 ===========
