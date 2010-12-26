@@ -16,7 +16,8 @@ public class MagicExileTargetPicker extends MagicTargetPicker {
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
 
 		final MagicPermanent permanent=(MagicPermanent)target;
-		return permanent.getScore(game);
+		final int score=permanent.getScore(game);
+		return permanent.getController()==player?-score:score;
 	}
 	
 	public static MagicTargetPicker getInstance() {

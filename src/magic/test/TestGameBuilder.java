@@ -97,7 +97,7 @@ public class TestGameBuilder {
 	public static MagicGame buildGame() {
 
 		final MagicTournament tournament=new MagicTournament();
-		tournament.setDifficulty(6);
+		tournament.setDifficulty(8);
 		
 		final MagicPlayerProfile profile=new MagicPlayerProfile("bw");
 		final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
@@ -114,13 +114,11 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
-		addToHand(player,"Doom Blade",1);
-		createPermanent(game,player,"Omnibian",false,2);
-		createPermanent(game,player,"Lord of Extinction",false,1);
-		createPermanent(game,player,"Student of Warfare",false,1);
-		createPermanent(game,player,"Esper Stormblade",false,1);
-		createPermanent(game,player,"Balefire Liege",false,1);
-		createPermanent(game,player,"Rupture Spire",false,8);		
+		addToHand(opponent,"Doom Blade",1);
+		addToHand(opponent,"Angel of Despair",1);
+		createPermanent(game,player,"Akroma, Angel of Wrath",false,1);
+		createPermanent(game,opponent,"Archon of Justice",false,1);
+		createPermanent(game,opponent,"Rupture Spire",false,7);
 		
 		return game;
 	}
