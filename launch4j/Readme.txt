@@ -15,6 +15,13 @@ Recommended difficulty level for the best balance of AI speed and strength is th
 
 Have fun!
 
+Release 1.5 (December 28, 2010)
+===========
+
+- 5 new cards (500 total)
+
+- added random card to the startup screen
+
 Release 1.4 (December 26, 2010)
 ===========
 
