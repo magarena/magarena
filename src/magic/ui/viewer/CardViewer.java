@@ -23,7 +23,7 @@ public class CardViewer extends JPanel implements DelayedViewer {
 	private int currentIndex=0;
 	private boolean image;
 	
-	public CardViewer(final boolean image) {
+	public CardViewer(final boolean image,final String title) {
 
 		this.image=image;
 		
@@ -33,7 +33,7 @@ public class CardViewer extends JPanel implements DelayedViewer {
 		if (image) {
 			setBorder(FontsAndBorders.WHITE_BORDER);
 		} else {
-			final TitleBar titleBar=new TitleBar("Card");
+			final TitleBar titleBar=new TitleBar(title);
 			add(titleBar,BorderLayout.NORTH);
 		}
 		
@@ -41,6 +41,11 @@ public class CardViewer extends JPanel implements DelayedViewer {
 		add(cardPanel,BorderLayout.CENTER);
 		
 		setCard(MagicCardDefinition.EMPTY,0);
+	}
+	
+	public CardViewer(final boolean image) {
+		
+		this(image,"Card");
 	}
 	
 	public void setCard(final MagicCardDefinition cardDefinition,final int index) {
