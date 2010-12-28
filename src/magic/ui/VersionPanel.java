@@ -13,7 +13,7 @@ public class VersionPanel extends TexturedPanel {
 
 	private static final long serialVersionUID = 1L;
 		
-	private static final String VERSION = "Magarena 1.4";
+	private static final String VERSION = "Magarena 1.5";
 	private static final String AUTHOR = "by ubeefx";
 	private static final String WEB = "http://magarena.dyndns.org";
 	private static final String SPACING = "   ";
