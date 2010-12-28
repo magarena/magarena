@@ -97,9 +97,9 @@ public class TestGameBuilder {
 	public static MagicGame buildGame() {
 
 		final MagicTournament tournament=new MagicTournament();
-		tournament.setDifficulty(8);
+		tournament.setDifficulty(6);
 		
-		final MagicPlayerProfile profile=new MagicPlayerProfile("bw");
+		final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
 		final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
 		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
 		tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
@@ -115,23 +115,14 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
 		addToHand(player,"Lightning Bolt",1);
-		addToHand(player,"Ember Hauler",1);
-		addToHand(player,"Snake Umbra",1);
-		addToHand(player,"Wrecking Ball",1);
-		addToHand(player,"Sylvok Lifestaff",1);
-		addToHand(player,"Spitemare",1);
-		addToHand(player,"Sunblast Angel",1);
-		addToHand(player,"Counterspell",1);
-		addToHand(player,"Twincast",1);
-		addToHand(player,"Vault Skyward",1);
-		addToHand(player,"Recover",1);
-		
-		createPermanent(game,player,"Watchwolf",true,1);
-		createPermanent(game,player,"Plains",false,2);
-		createPermanent(game,player,"Rupture Spire",false,6);
+		addToHand(opponent,"Predator Dragon",1);
+
+		createPermanent(game,player,"Akroma, Angel of Wrath",false,1);
+		createPermanent(game,opponent,"Mogg Fanatic",false,3);
 		createPermanent(game,opponent,"Archon of Justice",false,1);
-		createPermanent(game,opponent,"Mire Boa",true,1);
-		createPermanent(game,opponent,"Rupture Spire",false,1);
+		createPermanent(game,opponent,"Flameblast Dragon",false,1);
+		createPermanent(game,opponent,"Sylvok Lifestaff",false,1);
+		createPermanent(game,opponent,"Rupture Spire",false,7);
 		
 		return game;
 	}

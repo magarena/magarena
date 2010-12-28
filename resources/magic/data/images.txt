@@ -388,6 +388,7 @@ Platinum Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=
 Plumeveil.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=153980&type=card
 Plummet.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220514&type=card
 Pongify.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129015&type=card
+Predator Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=174968&type=card
 Prickly Boggart.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=152718&type=card
 Promise of Bunrei.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=84376&type=card
 Protective Bubble.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=139687&type=card

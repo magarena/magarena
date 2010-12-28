@@ -71,6 +71,7 @@ import magic.model.target.MagicTapTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.trigger.MagicDevourTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicRavnicaLandTrigger;
@@ -1652,6 +1653,8 @@ public class TriggerDefinitions {
 			}
 		}		
     };
+    
+    private static final MagicTrigger PREDATOR_DRAGON=new MagicDevourTrigger("Predator Dragon",2);
     
     private static final MagicTrigger PUPPETEER_CLIQUE=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Puppeteer Clique") {
 
@@ -3433,6 +3436,7 @@ public class TriggerDefinitions {
 	    PERIMETER_CAPTAIN,
 	    OROS_THE_AVENGER,
 	    PIERCE_STRIDER,
+	    PREDATOR_DRAGON,
 	    PUPPETEER_CLIQUE,
 	    RAFIQ_OF_THE_MANY,
 	    RAMPAGING_BALOTHS,
