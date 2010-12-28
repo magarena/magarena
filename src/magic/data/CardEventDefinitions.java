@@ -1484,6 +1484,33 @@ public class CardEventDefinitions {
 		}
 	};
 	
+	private static final MagicSpellCardEvent VINES_OF_VASTWOOD=new MagicSpellCardEvent("Vines of Vastwood") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),
+				new MagicKickerChoice(MagicTargetChoice.POS_TARGET_CREATURE,MagicManaCost.GREEN,false),
+				MagicPumpTargetPicker.getInstance(),new Object[]{cardOnStack},this,
+				"Target creature$ can't be the target of spells or abilities your opponent controls this turn. "+
+				"If Vines of Vastwood was kicked$, that creature gets +4/+4 until end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget));
+				if (((Integer)choiceResults[1])>0) {
+					game.doAction(new MagicChangeTurnPTAction(creature,4,4));
+				}
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent VOLCANIC_FALLOUT=new MagicSpellCardEvent("Volcanic Fallout") {
 
 		@Override
@@ -2891,6 +2918,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 	private static final MagicSpellCardEvent SNAKE_UMBRA=new MagicPlayAuraEvent("Snake Umbra",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());	
+	private static final MagicSpellCardEvent SOUL_LINK=new MagicPlayAuraEvent("Soul Link",
+			MagicTargetChoice.TARGET_CREATURE,new MagicNoCombatTargetPicker(true,true,true));	
 	private static final MagicSpellCardEvent SPIDER_UMBRA=new MagicPlayAuraEvent("Spider Umbra",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());	
 	private static final MagicSpellCardEvent TORPOR_DUST=new MagicPlayAuraEvent("Torpor Dust",
@@ -2964,6 +2993,7 @@ public class CardEventDefinitions {
 		UNSUMMON,
 		VAULT_SKYWARD,
 		VETERANS_REFLEXES,
+		VINES_OF_VASTWOOD,
 		VOLCANIC_FALLOUT,
 		WILDSIZE,
 		WITHSTAND,
@@ -3040,6 +3070,7 @@ public class CardEventDefinitions {
 		RANCOR,
 		SERRAS_EMBRACE,
 		SNAKE_UMBRA,
+		SOUL_LINK,
 		SPIDER_UMBRA,
 		TORPOR_DUST,
 		VOLCANIC_STRENGTH,

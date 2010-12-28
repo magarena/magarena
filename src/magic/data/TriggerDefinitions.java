@@ -1183,6 +1183,22 @@ public class TriggerDefinitions {
 		}		
     };
     
+    private static final MagicTrigger LONE_MISSIONARY=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Lone Missionary") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 4 life.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+			
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
+		}
+    };
+    
     private static final MagicTrigger LORD_OF_SHATTERSKULL_PASS=new MagicTrigger(MagicTriggerType.WhenAttacks,"Lord of Shatterskull Pass") {
 
 		@Override
@@ -2470,6 +2486,28 @@ public class TriggerDefinitions {
 			game.doAction(new MagicDealDamageAction(damage));
 		}
     };
+    
+    private static final MagicTrigger MASK_OF_MEMORY=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Mask of Memory") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			if (permanent.getEquippedCreature()==damage.getSource()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"You draw 2 cards, then you discard a card.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+		
+			final MagicPlayer player=(MagicPlayer)data[1];
+			game.doAction(new MagicDrawAction(player,2));
+			game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],player,1,false));
+		}
+    };
 
     private static final MagicTrigger MASK_OF_RIDDLES=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Mask of Riddles") {
 
@@ -3358,6 +3396,48 @@ public class TriggerDefinitions {
 			
 		}
     };
+    
+    private static final MagicTrigger SOUL_LINK1=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Soul Link") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			if (damage.getSource()==permanent.getEnchantedCreature()) {
+				final MagicPlayer player=permanent.getController();
+				final int amount=damage.getDealtAmount();
+				return new MagicEvent(permanent,player,new Object[]{player,amount},this,"You gain "+amount+" life.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+		}
+    };
+    
+    private static final MagicTrigger SOUL_LINK2=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Soul Link") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			if (damage.getTarget()==permanent.getEnchantedCreature()) {
+				final MagicPlayer player=permanent.getController();
+				final int amount=damage.getDealtAmount();
+				return new MagicEvent(permanent,player,new Object[]{player,amount},this,"You gain "+amount+" life.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+		}
+    };
 	    
 	private static final Collection<MagicTrigger> TRIGGERS=Arrays.<MagicTrigger>asList(
 		ACIDIC_SLIME,
@@ -3413,6 +3493,7 @@ public class TriggerDefinitions {
 	    LIGHTNING_REAVER1,
 	    LIGHTNING_REAVER2,
 	    LILIANAS_SPECTER,
+	    LONE_MISSIONARY,
 	    LORD_OF_SHATTERSKULL_PASS,
 	    LOXODON_HIERARCH,
 	    MAN_O_WAR,
@@ -3476,6 +3557,7 @@ public class TriggerDefinitions {
 	    WREXIAL_THE_RISEN_DEEP,
 	    WURMCOIL_ENGINE,
 	    MAGE_SLAYER,
+	    MASK_OF_MEMORY,
 	    MASK_OF_RIDDLES,
 	    QUIETUS_SPIKE,
 	    RONIN_WARCLUB,
@@ -3556,7 +3638,9 @@ public class TriggerDefinitions {
 	    NARCOLEPSY,
 	    PILLORY_OF_THE_SLEEPLESS,
 	    RANCOR,
-	    SNAKE_UMBRA
+	    SNAKE_UMBRA,
+	    SOUL_LINK1,
+	    SOUL_LINK2
 	);
 	
 	public static void addTriggers() {

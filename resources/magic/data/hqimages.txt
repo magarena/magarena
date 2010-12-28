@@ -235,6 +235,7 @@ Lightning Talons.jpg;http://magiccards.info/scans/en/ala/107.jpg
 Liliana's Specter.jpg;http://magiccards.info/scans/en/m11/104.jpg
 Lingering Tormentor.jpg;http://magiccards.info/scans/en/eve/36.jpg
 Llanowar Elves.jpg;http://magiccards.info/scans/en/m11/184.jpg
+Lone Missionary.jpg;http://magiccards.info/scans/en/roe/34.jpg
 Lord of Extinction.jpg;http://magiccards.info/scans/en/arb/91.jpg
 Lord of Shatterskull Pass.jpg;http://magiccards.info/scans/en/roe/156.jpg
 Lotus Petal.jpg;http://magiccards.info/scans/en/fve/7.jpg
@@ -248,6 +249,7 @@ Mana Leak.jpg;http://magiccards.info/scans/en/m11/62.jpg
 Marisi's Twinclaws.jpg;http://magiccards.info/scans/en/arb/140.jpg
 Marsh Casualties.jpg;http://magiccards.info/scans/en/zen/101.jpg
 Martial Coup.jpg;http://magiccards.info/scans/en/cfx/11.jpg
+Mask of Memory.jpg;http://magiccards.info/scans/en/pch/119.jpg
 Mask of Riddles.jpg;http://magiccards.info/scans/en/arb/25.jpg
 Meglonoth.jpg;http://magiccards.info/scans/en/cfx/118.jpg
 Merfolk Seastalkers.jpg;http://magiccards.info/scans/en/zen/55.jpg
@@ -384,6 +386,7 @@ Smother.jpg;http://magiccards.info/scans/en/wwk/68.jpg
 Snake Umbra.jpg;http://magiccards.info/scans/en/roe/207.jpg
 Solemn Offering.jpg;http://magiccards.info/scans/en/m11/32.jpg
 Soul Feast.jpg;http://magiccards.info/scans/en/10e/179.jpg
+Soul Link.jpg;http://magiccards.info/scans/en/ap/120.jpg
 Soul's Majesty.jpg;http://magiccards.info/scans/en/cfx/92.jpg
 Soul's Might.jpg;http://magiccards.info/scans/en/ala/149.jpg
 Souls of the Faultless.jpg;http://magiccards.info/scans/en/gp/131.jpg
@@ -465,6 +468,7 @@ Veteran Armorer.jpg;http://magiccards.info/scans/en/rav/34.jpg
 Veteran's Reflexes.jpg;http://magiccards.info/scans/en/wwk/23.jpg
 Vigor.jpg;http://magiccards.info/scans/en/lw/240.jpg
 Vine Trellis.jpg;http://magiccards.info/scans/en/gvl/4.jpg
+Vines of Vastwood.jpg;http://magiccards.info/scans/en/zen/193.jpg
 Vivid Crag.jpg;http://magiccards.info/scans/en/lw/275.jpg
 Vivid Creek.jpg;http://magiccards.info/scans/en/lw/276.jpg
 Vivid Grove.jpg;http://magiccards.info/scans/en/lw/277.jpg

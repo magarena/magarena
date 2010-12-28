@@ -114,15 +114,17 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
-		addToHand(player,"Lightning Bolt",1);
-		addToHand(opponent,"Predator Dragon",1);
+		addToHand(player,"Mana Leak",1);
+		addToHand(player,"Vines of Vastwood",1);
+		addToHand(player,"Mask of Memory",1);
+		addToHand(player,"Soul Link",1);
+		addToHand(player,"Lone Missionary",1);
+		addToHand(opponent,"Burst Lightning",1);
 
-		createPermanent(game,player,"Akroma, Angel of Wrath",false,1);
-		createPermanent(game,opponent,"Mogg Fanatic",false,3);
-		createPermanent(game,opponent,"Archon of Justice",false,1);
-		createPermanent(game,opponent,"Flameblast Dragon",false,1);
-		createPermanent(game,opponent,"Sylvok Lifestaff",false,1);
-		createPermanent(game,opponent,"Rupture Spire",false,7);
+		createPermanent(game,player,"Watchwolf",false,1);
+		createPermanent(game,player,"Rupture Spire",false,7);
+		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
+		createPermanent(game,opponent,"Rupture Spire",false,5);
 		
 		return game;
 	}

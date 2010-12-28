@@ -5629,3 +5629,44 @@ power=4
 toughness=4
 ability=flying,haste
 timing=fmain
+
+646:Mask of Memory
+value=3
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+timing=equipment
+
+647:Soul Link
+value=3
+rarity=2
+type=Enchantment
+subtype=Aura
+color=wb
+converted=3
+cost={1}{W}{B}
+timing=aura
+
+648:Vines of Vastwood
+value=3
+rarity=2
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+
+649:Lone Missionary
+value=2
+rarity=1
+type=Creature
+subtype=Kor,Monk
+color=w
+converted=2
+cost={1}{W}
+power=2
+toughness=1
+timing=fmain
