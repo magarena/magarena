@@ -2495,7 +2495,7 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (permanent.getEquippedCreature()==damage.getSource()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"You draw 2 cards, then you discard a card.");
+				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"You draw two cards, then you discard a card.");
 			}
 			return null;
 		}

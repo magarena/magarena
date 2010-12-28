@@ -74,6 +74,13 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 		final MagicItemOnStack itemOnStack=remove(index);
 		removeCount(itemOnStack);
 	}
+	
+	public void removeAllItems() {
+		
+		clear();
+		Arrays.fill(counts,0);
+		Arrays.fill(spells,0);
+	}
 		
 	public MagicItemOnStack getItemOnStack(final long id) {
 		
