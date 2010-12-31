@@ -138,6 +138,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		final int size=size();
 		final List<MagicCard> lands=new ArrayList<MagicCard>();
 		final List<MagicCard> spells=new ArrayList<MagicCard>();
+		int lowLeft=0;
 		for (final MagicCard card : this) {
 		
 			final MagicCardDefinition cardDefinition=card.getCardDefinition();
@@ -145,6 +146,9 @@ public class MagicCardList extends ArrayList<MagicCard> {
 				lands.add(card);
 			} else {
 				spells.add(card);
+				if (card.getCardDefinition().getConvertedCost()<=4) {
+					lowLeft++;
+				}
 			}
 		}
 		
@@ -168,12 +172,14 @@ public class MagicCardList extends ArrayList<MagicCard> {
 					final int index=MagicRandom.nextInt(spells.size());
 					final MagicCard card=spells.get(index);
 					final boolean high=card.getCardDefinition().getConvertedCost()>4;
-					if (!high||highCount==0||blocks==1) {
+					if (!high||lowLeft==0||highCount==0||blocks==1) {
 						add(card);
 						spells.remove(index);
  						spellCount++;
  						if (high) {
  							highCount++;
+ 						} else {
+ 							lowLeft--;
  						}
 					}
 				}
