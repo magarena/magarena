@@ -120,12 +120,12 @@ public class TestGameBuilder {
 		addToHand(player,"Mask of Memory",1);
 		addToHand(player,"Soul Link",1);
 		addToHand(player,"Lone Missionary",1);
-		addToHand(opponent,"Burst Lightning",1);
+		addToHand(player,"Followed Footsteps",1);
 
 		createPermanent(game,player,"Watchwolf",false,1);
-		createPermanent(game,player,"Rupture Spire",false,7);
+		createPermanent(game,player,"Mirri the Cursed",false,1);
+		createPermanent(game,player,"Rupture Spire",false,8);
 		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
-		createPermanent(game,opponent,"Rupture Spire",false,5);
 		
 		return game;
 	}

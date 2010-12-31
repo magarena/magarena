@@ -3270,6 +3270,31 @@ public class TriggerDefinitions {
 		}		
     };
     
+    private static final MagicTrigger FOLLOWED_FOOTSTEPS=new MagicTrigger(MagicTriggerType.AtUpkeep,"Followed Footsteps") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPlayer player=permanent.getController();
+			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
+			if (player==data&&enchantedCreature!=null) {
+				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,
+					"You put a token that's a copy of enchanted creature onto the battlefield.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPermanent permanent=(MagicPermanent)data[0];
+			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
+			if (enchantedCreature!=null) {
+				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],enchantedCreature.getCardDefinition()));
+			}
+		}		
+    };
+    
     private static final MagicTrigger GALVANIC_ARC=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Galvanic Arc") {
 
 		@Override
@@ -3633,6 +3658,7 @@ public class TriggerDefinitions {
 	    ELEPHANT_GUIDE,
 	    FISTS_OF_IRONWOOD,
 	    FLIGHT_OF_FANCY,
+	    FOLLOWED_FOOTSTEPS,
 	    GALVANIC_ARC,
 	    GRIFFIN_GUIDE,
 	    NARCOLEPSY,

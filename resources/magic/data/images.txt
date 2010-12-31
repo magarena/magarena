@@ -225,6 +225,7 @@ Flameblast Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Flametongue Kavu.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205392&type=card
 Flight of Fancy.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83677&type=card
 Force Spike.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=11285&type=card
+Followed Footsteps.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83699&type=card
 Forest.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=195158
 Forest2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73946&type=card
 Foul Imp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197012&type=card

@@ -138,6 +138,7 @@ Flame-Kin Zealot.jpg;http://magiccards.info/scans/en/rav/206.jpg
 Flameblast Dragon.jpg;http://magiccards.info/scans/en/arc/38.jpg
 Flametongue Kavu.jpg;http://magiccards.info/scans/en/pch/54.jpg
 Flight of Fancy.jpg;http://magiccards.info/scans/en/rav/49.jpg
+Followed Footsteps.jpg;http://magiccards.info/scans/en/rav/51.jpg
 Force Spike.jpg;http://magiccards.info/scans/en/7e/76.jpg
 Forest.jpg;http://magiccards.info/scans/en/zen/246.jpg
 Forest2.jpg;http://magiccards.info/scans/en/uh/140.jpg

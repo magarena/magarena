@@ -2894,6 +2894,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicTrampleTargetPicker.getInstance());
 	private static final MagicSpellCardEvent FLIGHT_OF_FANCY=new MagicPlayAuraEvent("Flight of Fancy",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicFlyingTargetPicker.getInstance());
+	private static final MagicSpellCardEvent FOLLOWED_FOOTSTEPS=new MagicPlayAuraEvent("Followed Footsteps",
+			MagicTargetChoice.TARGET_CREATURE,MagicCopyTargetPicker.getInstance());
 	private static final MagicSpellCardEvent GALVANIC_ARC=new MagicPlayAuraEvent("Galvanic Arc",
 			MagicTargetChoice.TARGET_CREATURE,MagicFirstStrikeTargetPicker.getInstance());
 	private static final MagicSpellCardEvent GOBLIN_WAR_PAINT=new MagicPlayAuraEvent("Goblin War Paint",
@@ -3058,6 +3060,7 @@ public class CardEventDefinitions {
 		EPIC_PROPORTIONS,
 		FISTS_OF_IRONWOOD,
 		FLIGHT_OF_FANCY,
+		FOLLOWED_FOOTSTEPS,
 		GALVANIC_ARC,
 		GOBLIN_WAR_PAINT,
 		GRIFFIN_GUIDE,
