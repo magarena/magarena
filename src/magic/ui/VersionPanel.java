@@ -23,7 +23,7 @@ public class VersionPanel extends TexturedPanel {
 
 	private static final long serialVersionUID = 1L;
 		
-	private static final String VERSION = "Magarena 1.5";
+	private static final String VERSION = "Magarena 1.6";
 	private static final String AUTHOR = "by ubeefx";
 	private static final String WEB = "http://magarena.dyndns.org";
 	private static final String SPACING = "   ";
@@ -48,7 +48,7 @@ public class VersionPanel extends TexturedPanel {
 		cardViewer=new CardViewer(false,"Random Card");
 		final List<MagicCardDefinition> spellCards=CardDefinitions.getInstance().getSpellCards();
 		final int index=MagicRandom.nextInt(spellCards.size());
-		cardViewer.setCard(CardDefinitions.getInstance().getSpellCards().get(index),0);
+		cardViewer.setCard(spellCards.get(index),0);
 		cardViewer.setSize(DefaultResolutionProfile.CARD_VIEWER_WIDTH,DefaultResolutionProfile.CARD_VIEWER_HEIGHT);
 		
 		centerPanel=new JPanel();

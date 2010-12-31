@@ -5096,8 +5096,6 @@ converted=1
 cost={G}
 timing=pump
 
-
-
 600:Student of Warfare
 value=2
 rarity=2
@@ -5289,6 +5287,7 @@ timing=removal
 
 616:Acidic Slime
 value=4
+removal=2
 rarity=2
 type=Creature
 subtype=Ooze
@@ -5552,6 +5551,7 @@ timing=removal
 
 639:Brittle Effigy
 value=3
+removal=4
 rarity=2
 type=Artifact
 converted=1
@@ -5597,6 +5597,7 @@ timing=main
 
 643:Wrecking Ball
 value=3
+removal=4
 rarity=2
 type=Instant
 color=br
@@ -5606,6 +5607,7 @@ timing=removal
 
 644:Sunblast Angel
 value=5
+removal=2
 rarity=3
 type=Creature
 subtype=Angel
@@ -5642,6 +5644,7 @@ timing=equipment
 
 647:Soul Link
 value=3
+removal=1
 rarity=2
 type=Enchantment
 subtype=Aura
