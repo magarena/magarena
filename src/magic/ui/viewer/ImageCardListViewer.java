@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
@@ -18,6 +19,7 @@ import javax.swing.JPanel;
 
 import magic.data.DefaultCardImagesProvider;
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
 import magic.ui.widget.FontsAndBorders;
@@ -35,6 +37,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 	private MagicCardList cardList;
 	private List<Point> cardPoints;
 	private Set<Object> validChoices;
+	private boolean showInfo=false;
 	
 	public ImageCardListViewer(final GameController controller) {
 	
@@ -96,7 +99,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		return -1;
 	}
 		
-	public void setCardList(final MagicCardList cardList) {
+	public void setCardList(final MagicCardList cardList,final boolean showInfo) {
 
 		final List<Point> cardPoints=new ArrayList<Point>();
 		final int size=cardList.size();
@@ -119,6 +122,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		}
 		this.cardList=cardList;
 		this.cardPoints=cardPoints;
+		this.showInfo=showInfo;
 	}
 
 	@Override
@@ -130,17 +134,35 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			return;
 		}
 		
+		g.setFont(FontsAndBorders.FONT1);
+		final FontMetrics metrics=g.getFontMetrics();
 		final Graphics2D g2d=(Graphics2D)g;
-		g2d.setPaint(FontsAndBorders.TARGET_COLOR);
 		g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);		
 		for (int index=0;index<cardList.size();index++) {
 			
 			final MagicCard card=cardList.get(index);
+			final MagicCardDefinition cardDefinition=card.getCardDefinition();
 			final Point point=cardPoints.get(index);
-			final BufferedImage image=DefaultCardImagesProvider.getInstance().getImage(card.getCardDefinition(),card.getImageIndex());
-			g.drawImage(image,point.x,point.y,point.x+CARD_WIDTH,point.y+CARD_HEIGHT,0,0,DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT,this);
+			final BufferedImage image=DefaultCardImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex());
+			final int x1=point.x;
+			final int y1=point.y;
+			final int x2=point.x+CARD_WIDTH;
+			final int y2=point.y+CARD_HEIGHT;
+			g.drawImage(image,x1,y1,x2,y2,0,0,DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT,this);
+			if (showInfo) {
+				if (!cardDefinition.isLand()) {
+					ImageDrawingUtils.drawCostInfo(g,this,cardDefinition.getCost(),x1,x2-1,y1+2);
+				}
+				if (cardDefinition.isCreature()) {
+					ImageDrawingUtils.drawAbilityInfo(g,this,cardDefinition.getAbilityFlags(),x1+1,y2-17);
+					final String pt=cardDefinition.getPower()+"/"+cardDefinition.getToughness();
+					final int ptWidth=metrics.stringWidth(pt);				
+					ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,null,x2-ptWidth-4,y2-18,false);
+				}
+			}
 			if (validChoices.contains(card)) {
-				g2d.fillRect(point.x-1,point.y-1,CARD_WIDTH+2,CARD_HEIGHT+2);
+				g2d.setPaint(FontsAndBorders.TARGET_COLOR);
+				g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
 			}
 		}
 	}

@@ -21,7 +21,6 @@ import javax.swing.JPanel;
 
 import magic.data.DefaultCardImagesProvider;
 import magic.data.IconImages;
-import magic.model.MagicAbility;
 import magic.ui.widget.FontsAndBorders;
 
 public class ImagePermanentViewer extends JPanel {
@@ -183,23 +182,7 @@ public class ImagePermanentViewer extends JPanel {
 		
 		return logicalRow;
 	}
-	
-	private void drawCreatureInfo(final Graphics g,final FontMetrics metrics,
-			final String pt,final int ptWidth,final String damage,final int x,final int y,final boolean flip) {
-
-		g.setColor(FontsAndBorders.GRAY2);
-		g.fillRect(x,y,ptWidth+4,damage!=null?32:18);
-		g.setColor(Color.DARK_GRAY);
-		g.drawRect(x,y,ptWidth+4,damage!=null?32:18);
-		g.drawString(pt,x+3,damage!=null&&flip?y+28:y+14);
-		if (damage!=null) {
-			final int damageWidth=metrics.stringWidth(damage);
-			int dx=x+3+(ptWidth-damageWidth)/2;
-			g.setColor(Color.RED);
-			g.drawString(damage,dx,flip?y+14:y+28);
-		}
-	}
-		
+			
 	@Override
 	public void paint(final Graphics g) {
 
@@ -248,22 +231,7 @@ public class ImagePermanentViewer extends JPanel {
 					g.drawImage(IconImages.CANNOTTAP.getImage(),ax,ay,this);
 					ax+=16;
 				}
-				if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
-					g.drawImage(IconImages.FLYING.getImage(),ax,ay,this);
-					ax+=16;
-				}
-				if (MagicAbility.FirstStrike.hasAbility(abilityFlags)||MagicAbility.DoubleStrike.hasAbility(abilityFlags)) {				
-					g.drawImage(IconImages.STRIKE.getImage(),ax,ay,this);
-					ax+=16;
-				}
-				if (MagicAbility.Trample.hasAbility(abilityFlags)) {
-					g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,this);
-					ax+=16;				
-				}
-				if (MagicAbility.Deathtouch.hasAbility(abilityFlags)) {
-					g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,this);
-					ax+=16;								
-				}
+				ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
 			}
 			
 			final String pt=linkedInfo.powerToughness;
@@ -271,9 +239,9 @@ public class ImagePermanentViewer extends JPanel {
 				final String damage=linkedInfo.damage>0?String.valueOf(linkedInfo.damage):null;
 				final int ptWidth=metrics.stringWidth(pt);				
 				if (linkedInfo.blocking) {
-					drawCreatureInfo(g,metrics,pt,ptWidth,damage,x1,y1,false);
+					ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x1,y1,false);
 				} else {
-					drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(damage!=null?32:18),true);
+					ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(damage!=null?32:18),true);
 				}
 			}
 						

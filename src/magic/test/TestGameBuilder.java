@@ -114,13 +114,13 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
-		addToHand(player,"Mana Leak",1);
 		addToHand(player,"Into the Roil",1);
 		addToHand(player,"Vines of Vastwood",1);
 		addToHand(player,"Mask of Memory",1);
-		addToHand(player,"Soul Link",1);
-		addToHand(player,"Lone Missionary",1);
+		addToHand(player,"Student of Warfare",1);
 		addToHand(player,"Followed Footsteps",1);
+		addToHand(player,"Titanic Ultimatum",1);
+		addToHand(player,"Akroma, Angel of Wrath",1);
 
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Mirri the Cursed",false,1);
