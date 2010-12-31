@@ -17,6 +17,7 @@ public enum MagicPermanentState {
 	ExcludeManaSource("exclude as mana source",null,12),
 	ExcludeFromCombat("exclude from combat",null,13),
 	Kicked("kicked",null,14),
+	Destroyed("destroyed",null,15),
 	;
 
 	public static final int CLEANUP_MASK=

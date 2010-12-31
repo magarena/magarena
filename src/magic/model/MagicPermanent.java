@@ -12,6 +12,7 @@ import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
 import magic.model.action.MagicAttachEquipmentAction;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
@@ -612,6 +613,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			if (toughness<=0) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+			} else if (hasState(MagicPermanentState.Destroyed)) {
+				game.doAction(new MagicChangeStateAction(this,MagicPermanentState.Destroyed,false));
+				game.doAction(new MagicDestroyAction(this));
 			} else if (toughness-damage<=0) {
 				game.doAction(new MagicDestroyAction(this));
 			}

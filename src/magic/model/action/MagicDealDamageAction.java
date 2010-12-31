@@ -83,7 +83,7 @@ public class MagicDealDamageAction extends MagicAction {
 				targetPermanent.setDamage(oldDamage+dealtAmount);
 			}
 			if (source.hasAbility(game,MagicAbility.Deathtouch)) {
-				game.doAction(new MagicDestroyAction(targetPermanent));
+				game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.Destroyed,true));
 			}
 		} else if (target.isPlayer()) {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)target,-dealtAmount));

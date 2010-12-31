@@ -116,16 +116,17 @@ public class TestGameBuilder {
 		addToGraveyard(opponent,"Island",3);
 		addToHand(player,"Into the Roil",1);
 		addToHand(player,"Vines of Vastwood",1);
-		addToHand(player,"Mask of Memory",1);
+		addToHand(player,"Gorgon Flail",1);
 		addToHand(player,"Student of Warfare",1);
 		addToHand(player,"Followed Footsteps",1);
-		addToHand(player,"Titanic Ultimatum",1);
-		addToHand(player,"Akroma, Angel of Wrath",1);
 
-		createPermanent(game,player,"Watchwolf",false,1);
-		createPermanent(game,player,"Mirri the Cursed",false,1);
+		createPermanent(game,player,"Cunning Sparkmage",false,1);
+		createPermanent(game,player,"Rage Nimbus",false,1);
+		createPermanent(game,player,"Spitemare",false,1);
+		createPermanent(game,player,"Deadly Recluse",false,2);
 		createPermanent(game,player,"Rupture Spire",false,8);
 		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
+		createPermanent(game,opponent,"Deadly Recluse",false,1);
 		
 		return game;
 	}
