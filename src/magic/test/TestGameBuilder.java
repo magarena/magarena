@@ -115,6 +115,7 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Plains",2);
 		addToGraveyard(opponent,"Island",3);
 		addToHand(player,"Mana Leak",1);
+		addToHand(player,"Into the Roil",1);
 		addToHand(player,"Vines of Vastwood",1);
 		addToHand(player,"Mask of Memory",1);
 		addToHand(player,"Soul Link",1);

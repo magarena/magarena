@@ -721,7 +721,7 @@ public class CardEventDefinitions {
 			
 			final MagicPlayer player=cardOnStack.getController();
 			return new MagicEvent(cardOnStack.getCard(),player,
-				new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,MagicManaCost.ONE_BLUE,false),MagicBounceTargetPicker.getInstance(),
+				new MagicKickerChoice(MagicTargetChoice.TARGET_NONLAND_PERMANENT,MagicManaCost.ONE_BLUE,false),MagicBounceTargetPicker.getInstance(),
 				new Object[]{cardOnStack,player},this,"Return target nonland permanent$ to its owner's hand. If Into the Roil was kicked$, draw a card.");
 		}
 
