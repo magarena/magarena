@@ -5683,3 +5683,17 @@ color=u
 converted=5
 cost={3}{U}{U}
 timing=aura
+
+651:Bellowing Tanglewurm
+value=4
+rarity=2
+type=Creature
+subtype=Wurm
+color=g
+converted=5
+cost={3}{G}{G}
+power=4
+toughness=4
+ability=intimidate
+static=player
+timing=fmain

@@ -114,6 +114,7 @@ Battlegrace Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Beacon of Destruction.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=135262&type=card
 Beacon of Unrest.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220482&type=card
 Behemoth Sledge.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179545&type=card
+Bellowing Tanglewurm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209048&type=card
 Beloved Chaplain.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=29798&type=card
 Bestial Menace.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197843&type=card
 Birds of Paradise.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191080&type=card

@@ -112,15 +112,20 @@ public class TestGameBuilder {
 		
 		addToLibrary(player,"Plains",10);
 		addToLibrary(opponent,"Island",10);
-		addToGraveyard(opponent,"Island",2);
 		addToGraveyard(player,"Mogg Fanatic",2);
-		addToHand(player,"Snake Umbra",1);
+		addToGraveyard(opponent,"Island",2);
+		addToHand(player,"Bellowing Tanglewurm",1);
 
+		createPermanent(game,player,"Zephyr Sprite",false,1);
 		createPermanent(game,player,"Watchwolf",false,1);
-		createPermanent(game,player,"Mask of Memory",false,1);
-		createPermanent(game,player,"Sword of Light and Shadow",false,1);
+		createPermanent(game,player,"Spiritmonger",false,1);	
+		createPermanent(game,player,"Lingering Tormentor",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);
-		
+		createPermanent(game,opponent,"Bottle Gnomes",false,1);		
+		createPermanent(game,opponent,"Llanowar Elves",false,1);
+		createPermanent(game,opponent,"Fume Spitter",false,1);
+		createPermanent(game,opponent,"Wall of Frost",false,1);
+
 		return game;
 	}
 }

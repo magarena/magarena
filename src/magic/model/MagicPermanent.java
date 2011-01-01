@@ -726,12 +726,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public boolean canBlock(final MagicGame game,final MagicPermanent attacker) {
 		
-		// Fear
 		final long attackerFlags=attacker.getAllAbilityFlags(game);
-		final int colorFlags=getColorFlags();
-		if (MagicAbility.Fear.hasAbility(attackerFlags)&&!isArtifact()&&!MagicColor.Black.hasColor(colorFlags)) {
-			return false;
-		}		
+
+		// Fear & intimidate
+		if (!isArtifact()) {
+			final int colorFlags=getColorFlags();
+			if (MagicAbility.Fear.hasAbility(attackerFlags)&&!MagicColor.Black.hasColor(colorFlags)) {
+				return false;
+			}
+			if (MagicAbility.Intimidate.hasAbility(attackerFlags)&&((colorFlags&attacker.getColorFlags())==0)) {
+				return false;
+			}
+		}
 		
 		// Flying
 		final long blockerFlags=getAllAbilityFlags(game);

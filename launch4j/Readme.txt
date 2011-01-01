@@ -18,10 +18,11 @@ Have fun!
 Release 1.6 (January, 2011)
 ===========
 
-- 1 new card (501 total)
+- 2 new cards (502 total)
 
-- display mana cost, power & toughness and some abilities on cards in hand in graphical view
+- mana cost, power & toughness and some abilities on cards in hand is displayed in graphical view
 - card drawing is now optional for Snake Umbra and Mask of Memory
+- added support for intimidate keyword
 
 - fixed how deathtouch was handled causing a number of issues
 - fixed endless loop in custom card shuffler for decks with a lot of CMC > 4 cards

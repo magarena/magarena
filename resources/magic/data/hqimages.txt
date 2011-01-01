@@ -28,6 +28,7 @@ Battlegrace Angel.jpg;http://magiccards.info/scans/en/ala/6.jpg
 Beacon of Destruction.jpg;http://magiccards.info/scans/en/10e/189.jpg
 Beacon of Unrest.jpg;http://magiccards.info/scans/en/arc/10.jpg
 Behemoth Sledge.jpg;http://magiccards.info/scans/en/arb/65.jpg
+Bellowing Tanglewurm.jpg;http://magiccards.info/scans/en/som/111.jpg
 Beloved Chaplain.jpg;http://magiccards.info/scans/en/od/11.jpg
 Bestial Menace.jpg;http://magiccards.info/scans/en/wwk/97.jpg
 Birds of Paradise.jpg;http://magiccards.info/scans/en/m11/165.jpg
