@@ -17,9 +17,6 @@ import magic.ui.GameController;
 import magic.ui.choice.MayChoicePanel;
 
 public class MagicMayChoice extends MagicChoice {
-
-	public static final String YES_CHOICE="yes";
-	public static final String NO_CHOICE="no";
 	
 	public static final List<Object[]> NO_OTHER_CHOICE_RESULTS=Arrays.asList(new Object[]{YES_CHOICE},new Object[]{NO_CHOICE});
 	
@@ -41,17 +38,7 @@ public class MagicMayChoice extends MagicChoice {
 			}
 		}
 	}
-		
-	public static boolean isYesChoice(final Object choiceResult) {
-		
-		return YES_CHOICE==choiceResult;
-	}
-
-	public static boolean isNoChoice(final Object choiceResult) {
-		
-		return NO_CHOICE==choiceResult;
-	}
-	
+			
 	public MagicChoice[] getChoices() {
 		
 		return choices;

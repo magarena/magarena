@@ -49,6 +49,7 @@ import magic.model.choice.MagicColorChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicPayManaCostResult;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicDrawEvent;
@@ -119,9 +120,11 @@ public class TriggerDefinitions {
 	private static final MagicChoice WREXIAL_CHOICE=new MagicMayChoice(
 			"You may cast target instant or sorcery card from your opponent's graveyard.",
 			MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
+	private static final MagicChoice MEMORY_CHOICE=new MagicSimpleMayChoice("You may draw two cards.",MagicSimpleMayChoice.DRAW_CARDS,2);
 	private static final MagicChoice SWORD_CHOICE=new MagicMayChoice(
 			"You may return target creature card from your graveyard to your hand.",MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
 	private static final MagicChoice HOBGOBLINS_CHOICE=new MagicMayChoice("You may pay {X}.",new MagicPayManaCostChoice(MagicManaCost.X));
+	private static final MagicChoice SNAKE_CHOICE=new MagicSimpleMayChoice("You may draw a card.",MagicSimpleMayChoice.DRAW_CARDS,1);
 	private static final MagicChoice RUPTURE_SPIRE_CHOICE=new MagicMayChoice("You may pay {1}.",new MagicPayManaCostChoice(MagicManaCost.ONE));
 
 	private static final MagicTrigger ACIDIC_SLIME=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Acidic Slime") {
@@ -2495,17 +2498,20 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (permanent.getEquippedCreature()==damage.getSource()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"You draw two cards, then you discard a card.");
+				return new MagicEvent(permanent,player,MEMORY_CHOICE,new Object[]{permanent,player},this,
+					"You may$ draw two cards. If you do, discard a card.");
 			}
 			return null;
 		}
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-		
-			final MagicPlayer player=(MagicPlayer)data[1];
-			game.doAction(new MagicDrawAction(player,2));
-			game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],player,1,false));
+
+			if (MagicChoice.isYesChoice(choiceResults[0])) {
+				final MagicPlayer player=(MagicPlayer)data[1];
+				game.doAction(new MagicDrawAction(player,2));
+				game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],player,1,false));
+			}
 		}
     };
 
@@ -3411,7 +3417,7 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			final MagicTarget target=damage.getTarget();
 			if (damage.getSource()==permanent.getEnchantedCreature()&&target.isPlayer()&&target!=player) {
-				return new MagicDrawEvent(permanent,player,1);			
+				return new MagicEvent(permanent,player,SNAKE_CHOICE,new Object[]{player},this,"You may$ draw a card.");
 			}
 			return null;
 		}
@@ -3419,6 +3425,9 @@ public class TriggerDefinitions {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			
+			if (MagicChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+			}
 		}
     };
     

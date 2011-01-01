@@ -13,6 +13,9 @@ import magic.ui.GameController;
 
 public abstract class MagicChoice {
 	
+	public static final String YES_CHOICE="yes";
+	public static final String NO_CHOICE="no";
+	
 	public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
 	
 	private final String description;
@@ -69,4 +72,14 @@ public abstract class MagicChoice {
 	
 	/** Gets the choice results of the player. */
 	public abstract Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source);
+
+	public static boolean isYesChoice(final Object choiceResult) {
+		
+		return YES_CHOICE==choiceResult;
+	}
+
+	public static boolean isNoChoice(final Object choiceResult) {
+		
+		return NO_CHOICE==choiceResult;
+	}
 }

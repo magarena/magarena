@@ -112,21 +112,14 @@ public class TestGameBuilder {
 		
 		addToLibrary(player,"Plains",10);
 		addToLibrary(opponent,"Island",10);
-		addToGraveyard(player,"Plains",2);
-		addToGraveyard(opponent,"Island",3);
-		addToHand(player,"Into the Roil",1);
-		addToHand(player,"Vines of Vastwood",1);
-		addToHand(player,"Gorgon Flail",1);
-		addToHand(player,"Student of Warfare",1);
-		addToHand(player,"Followed Footsteps",1);
+		addToGraveyard(opponent,"Island",2);
+		addToGraveyard(player,"Mogg Fanatic",2);
+		addToHand(player,"Snake Umbra",1);
 
-		createPermanent(game,player,"Cunning Sparkmage",false,1);
-		createPermanent(game,player,"Rage Nimbus",false,1);
-		createPermanent(game,player,"Spitemare",false,1);
-		createPermanent(game,player,"Deadly Recluse",false,2);
+		createPermanent(game,player,"Watchwolf",false,1);
+		createPermanent(game,player,"Mask of Memory",false,1);
+		createPermanent(game,player,"Sword of Light and Shadow",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);
-		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
-		createPermanent(game,opponent,"Deadly Recluse",false,1);
 		
 		return game;
 	}
