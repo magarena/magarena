@@ -20,7 +20,7 @@ Release 1.6 (January, 2011)
 
 - 2 new cards (502 total)
 
-- mana cost, power & toughness and some abilities on cards in hand is displayed in graphical view
+- mana cost, power & toughness and some abilities on cards in hand are displayed in graphical view
 - card drawing is now optional for Snake Umbra and Mask of Memory
 - added support for intimidate keyword
 
