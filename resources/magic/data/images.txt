@@ -272,6 +272,7 @@ Hallowed Fountain.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Harmonize.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=159033&type=card
 Hateflayer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=152155&type=card
 Hellkite Overlord.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175057&type=card
+Hero of Bladehold.jpg;http://img.coolstuffinc.net/products/mtg%20art/mirrodin%20besieged/mbs008.jpg
 Heroes' Reunion.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220501&type=card
 Hideous End.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=210141&type=card
 Hissing Miasma.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96922&type=card

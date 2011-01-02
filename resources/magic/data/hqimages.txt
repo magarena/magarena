@@ -186,6 +186,7 @@ Hallowed Fountain.jpg;http://magiccards.info/scans/en/di/174.jpg
 Harmonize.jpg;http://magiccards.info/scans/en/evg/22.jpg
 Hateflayer.jpg;http://magiccards.info/scans/en/eve/55.jpg
 Hellkite Overlord.jpg;http://magiccards.info/scans/en/ala/172.jpg
+Hero of Bladehold.jpg;http://img.coolstuffinc.net/products/mtg%20art/mirrodin%20besieged/mbs008.jpg
 Heroes' Reunion.jpg;http://magiccards.info/scans/en/arc/87.jpg
 Hideous End.jpg;http://magiccards.info/scans/en/zen/98.jpg
 Hissing Miasma.jpg;http://magiccards.info/scans/en/gp/51.jpg

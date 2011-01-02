@@ -116,7 +116,8 @@ public class TestGameBuilder {
 		addToGraveyard(opponent,"Island",2);
 		addToHand(player,"Bellowing Tanglewurm",1);
 
-		createPermanent(game,player,"Zephyr Sprite",false,1);
+		createPermanent(game,player,"Sigiled Paladin",false,1);
+		createPermanent(game,player,"Hero of Bladehold",false,1);
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Spiritmonger",false,1);	
 		createPermanent(game,player,"Lingering Tormentor",false,1);

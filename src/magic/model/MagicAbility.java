@@ -46,6 +46,7 @@ public enum MagicAbility {
 	Wither("wither",30),
 	TotemArmor("totem armor",0),
 	Intimidate("intimidate",45),
+	BattleCry("battle cry",0),
 	;
 
 	public static final long PROTECTION_FLAGS=

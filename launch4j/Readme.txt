@@ -15,14 +15,14 @@ Recommended difficulty level for the best balance of AI speed and strength is th
 
 Have fun!
 
-Release 1.6 (January, 2011)
+Release 1.6 (January 2, 2011)
 ===========
 
-- 2 new cards (502 total)
+- 3 new cards (503 total)
 
-- mana cost, power & toughness and some abilities on cards in hand are displayed in graphical view
+- mana cost, power & toughness and some abilities on cards in hand are now displayed in graphical view
 - card drawing is now optional for Snake Umbra and Mask of Memory
-- added support for intimidate keyword
+- added support for intimidate and battle cry keywords
 
 - fixed how deathtouch was handled causing a number of issues
 - fixed endless loop in custom card shuffler for decks with a lot of CMC > 4 cards

@@ -20,6 +20,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
+import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.variable.MagicAttachmentLocalVariable;
@@ -423,6 +424,8 @@ public class MagicCardDefinition {
 		abilityFlags|=ability.getMask();
 		if (ability==MagicAbility.Exalted) {
 			addTrigger(MagicExaltedTrigger.getInstance());
+		} else if (ability==MagicAbility.BattleCry) {
+			addTrigger(MagicBattleCryTrigger.getInstance());
 		}
 	}
 

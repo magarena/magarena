@@ -5697,3 +5697,16 @@ toughness=4
 ability=intimidate
 static=player
 timing=fmain
+
+652:Hero of Bladehold
+value=4
+rarity=2
+type=Creature
+subtype=Human,Knight
+color=w
+converted=4
+cost={2}{W}{W}
+power=3
+toughness=4
+ability=battle cry
+timing=fmain
