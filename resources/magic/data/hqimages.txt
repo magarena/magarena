@@ -381,6 +381,7 @@ Simic Sky Swallower.jpg;http://magiccards.info/scans/en/di/130.jpg
 Skeletal Vampire.jpg;http://magiccards.info/scans/en/gvl/46.jpg
 Skinrender.jpg;http://magiccards.info/scans/en/som/78.jpg
 Skullcage.jpg;http://magiccards.info/scans/en/arc/115.jpg
+Skullclamp.jpg;http://magiccards.info/scans/en/fve/12.jpg
 Slagwurm Armor.jpg;http://magiccards.info/scans/en/mi/243.jpg
 Slave of Bolas.jpg;http://magiccards.info/scans/en/arb/136.jpg
 Sleep.jpg;http://magiccards.info/scans/en/m11/73.jpg

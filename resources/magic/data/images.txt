@@ -467,6 +467,7 @@ Simic Sky Swallower.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiver
 Skeletal Vampire.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201809&type=card
 Skinrender.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=204958&type=card
 Skullcage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220537&type=card
+Skullclamp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194978&type=card
 Slagwurm Armor.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=46028&type=card
 Slave of Bolas.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188971&type=card
 Sleep.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205120&type=card

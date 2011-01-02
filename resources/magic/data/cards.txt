@@ -5710,3 +5710,15 @@ power=3
 toughness=4
 ability=battle cry
 timing=fmain
+
+653:Skullclamp
+value=4
+rarity=3
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={1}
+power=1
+toughness=-1
+timing=equipment

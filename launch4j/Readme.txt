@@ -18,7 +18,7 @@ Have fun!
 Release 1.6 (January 2, 2011)
 ===========
 
-- 3 new cards (503 total)
+- 4 new cards (504 total)
 
 - mana cost, power & toughness and some abilities on cards in hand are now displayed in graphical view
 - card drawing is now optional for Snake Umbra and Mask of Memory

@@ -2621,6 +2621,25 @@ public class TriggerDefinitions {
 			game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntap,true));
 		}
     };
+    
+    private static final MagicTrigger SKULLCLAMP=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Skullclamp") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			if (permanent.getEquippedCreature()==data) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{player},this,"You draw two cards.");
+			}			
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicDrawAction((MagicPlayer)data[0],2));
+		}
+    };
 
     private static final MagicTrigger SPECTERS_SHROUD=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Specter's Shroud") {
 
@@ -3622,6 +3641,7 @@ public class TriggerDefinitions {
 	    QUIETUS_SPIKE,
 	    RONIN_WARCLUB,
 	    SHIELD_OF_THE_RIGHTEOUS,
+	    SKULLCLAMP,
 	    SPECTERS_SHROUD,
 	    SWORD_OF_BODY_AND_MIND,
 	    SWORD_OF_FIRE_AND_ICE,

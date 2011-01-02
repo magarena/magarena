@@ -115,6 +115,7 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
 		addToHand(player,"Bellowing Tanglewurm",1);
+		addToHand(player,"Skullclamp",2);
 
 		createPermanent(game,player,"Sigiled Paladin",false,1);
 		createPermanent(game,player,"Hero of Bladehold",false,1);
