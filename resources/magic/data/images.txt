@@ -1,7 +1,5 @@
 >images
->textures
-texture1.jpg;http://www.spiralgraphics.biz/packs/snow_ice/previews/Chiseled%20Ice.jpg
-texture2.jpg;http://www.spiralgraphics.biz/packs/snow_ice/previews/Windshield%207%20AM.jpg
+>themes
 >avatars
 face01.png;http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Gnome-face-smile.svg/120px-Gnome-face-smile.svg.png
 face02.png;http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gnome-face-smirk.svg/120px-Gnome-face-smirk.svg.png

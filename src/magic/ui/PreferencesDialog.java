@@ -18,16 +18,15 @@ import javax.swing.JPanel;
 
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.SliderPanel;
 
 public class PreferencesDialog extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
-	
-	private static final String SKINS[]={"wood","granite","opal","user","light wood"};
-	
+		
 	private final MagicFrame frame;
-	private final JComboBox skinComboBox;
+	private final JComboBox themeComboBox;
 	private final JCheckBox highQualityCheckBox;
 	private final JCheckBox skipSingleCheckBox;
 	private final JCheckBox alwaysPassCheckBox;
@@ -67,16 +66,16 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		
 		final GeneralConfig config=GeneralConfig.getInstance();
 
-		final JLabel skinLabel=new JLabel("Skin");
-		skinLabel.setBounds(28,20,60,25);
-		skinLabel.setIcon(IconImages.PICTURE);
-		mainPanel.add(skinLabel);
-		final ComboBoxModel skinModel=new DefaultComboBoxModel(SKINS);
-		skinComboBox=new JComboBox(skinModel);
-		skinComboBox.setFocusable(false);
-		skinComboBox.setBounds(90,20,265,25);
-		skinComboBox.setSelectedIndex(config.getSkin());
-		mainPanel.add(skinComboBox);		
+		final JLabel themeLabel=new JLabel("Theme");
+		themeLabel.setBounds(28,20,70,25);
+		themeLabel.setIcon(IconImages.PICTURE);
+		mainPanel.add(themeLabel);
+		final ComboBoxModel themeModel=new DefaultComboBoxModel(ThemeFactory.getInstance().getThemeNames());
+		themeComboBox=new JComboBox(themeModel);
+		themeComboBox.setFocusable(false);
+		themeComboBox.setBounds(100,20,255,25);
+		themeComboBox.setSelectedItem(config.getTheme());
+		mainPanel.add(themeComboBox);		
 		
 		highQualityCheckBox=new JCheckBox("High quality card popup images",config.isHighQuality());
 		highQualityCheckBox.setBounds(25,65,350,20);
@@ -119,7 +118,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		final Object source=event.getSource();
 		if (source==okButton) {
 			final GeneralConfig config=GeneralConfig.getInstance();
-			config.setSkin(skinComboBox.getSelectedIndex());
+			config.setTheme((String)themeComboBox.getSelectedItem());
 			config.setHighQuality(highQualityCheckBox.isSelected());
 			config.setSkipSingle(skipSingleCheckBox.isSelected());
 			config.setAlwaysPass(alwaysPassCheckBox.isSelected());
@@ -127,6 +126,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 			config.setUndoLevels(undoLevelsSlider.getValue());
 			config.setPopupDelay(popupDelaySlider.getValue());
 			config.save();
+			ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
 			frame.repaint();
 			dispose();
 		} else if (source==cancelButton) {

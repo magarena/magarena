@@ -1,6 +1,5 @@
 package magic.data;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -19,7 +18,7 @@ public class GeneralConfig {
 	private static final String WIDTH="width";
 	private static final String HEIGHT="height";
 	private static final String MAXIMIZED="maximized";
-	private static final String SKIN="skin";
+	private static final String THEME="theme";
 	private static final String UNDO_LEVELS="undo";
 	private static final String TEXT_VIEW="text";
 	private static final String SKIP_SINGLE="single";
@@ -37,7 +36,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_WIDTH=1000;
 	private static final int DEFAULT_HEIGHT=700;
 	private static final boolean DEFAULT_MAXIMIZED=false;
-	private static final int DEFAULT_SKIN=0;
+	private static final String DEFAULT_THEME="wood";
 	private static final int DEFAULT_UNDO_LEVELS=5;
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
@@ -55,7 +54,7 @@ public class GeneralConfig {
 	private int width=DEFAULT_WIDTH;
 	private int height=DEFAULT_HEIGHT;
 	private boolean maximized=DEFAULT_MAXIMIZED;
-	private int skin=DEFAULT_SKIN;
+	private String theme=DEFAULT_THEME;
 	private int undoLevels=DEFAULT_UNDO_LEVELS;
 	private boolean textView=DEFAULT_TEXT_VIEW;
 	private boolean skipSingle=DEFAULT_SINGLE;
@@ -122,38 +121,16 @@ public class GeneralConfig {
 		this.maximized=maximized;
 	}
 	
-	public int getSkin() {
+	public String getTheme() {
 		
-		return skin;
+		return theme;
 	}
 	
-	public void setSkin(final int skin) {
+	public void setTheme(final String theme) {
 		
-		this.skin=skin;
+		this.theme=theme;
 	}
-	
-	public BufferedImage getBackgroundImage() {
-		
-		switch (skin) {
-			case 1: return IconImages.GRANITE;
-			case 2: return IconImages.OPAL;
-			case 3: return IconImages.USER1;
-			case 4: return IconImages.WOOD2;
-			default: return IconImages.WOOD;
-		}
-	}
-	
-	public BufferedImage getTextureImage() {
-		
-		switch (skin) {
-			case 1: return IconImages.GRANITE2;
-			case 2: return IconImages.OPAL2;
-			case 3: return IconImages.USER2;
-			case 4: return IconImages.MARBLE;
-			default: return IconImages.MARBLE;
-		}
-	}
-			
+				
 	public int getUndoLevels() {
 		
 		return undoLevels;
@@ -271,7 +248,7 @@ public class GeneralConfig {
 		width=Integer.parseInt(properties.getProperty(WIDTH,""+DEFAULT_WIDTH));
 		height=Integer.parseInt(properties.getProperty(HEIGHT,""+DEFAULT_HEIGHT));
 		maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+DEFAULT_MAXIMIZED));
-		skin=Integer.parseInt(properties.getProperty(SKIN,""+DEFAULT_SKIN));
+		theme=properties.getProperty(THEME,DEFAULT_THEME);
 		undoLevels=Integer.parseInt(properties.getProperty(UNDO_LEVELS,""+DEFAULT_UNDO_LEVELS));
 		textView=Boolean.parseBoolean(properties.getProperty(TEXT_VIEW,""+DEFAULT_TEXT_VIEW));
 		skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
@@ -301,7 +278,7 @@ public class GeneralConfig {
 		properties.setProperty(WIDTH,String.valueOf(width));
 		properties.setProperty(HEIGHT,String.valueOf(height));
 		properties.setProperty(MAXIMIZED,String.valueOf(maximized));
-		properties.setProperty(SKIN,String.valueOf(skin));
+		properties.setProperty(THEME,theme);
 		properties.setProperty(UNDO_LEVELS,String.valueOf(undoLevels));
 		properties.setProperty(TEXT_VIEW,String.valueOf(textView));
 		properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));

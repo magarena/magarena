@@ -6,7 +6,8 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
-import magic.data.GeneralConfig;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class TexturedPanel extends JPanel {
 
@@ -33,7 +34,7 @@ public class TexturedPanel extends JPanel {
 	
 	public void paint(final Graphics g) {
 		
-		final BufferedImage image=GeneralConfig.getInstance().getTextureImage();
+		final BufferedImage image=ThemeFactory.getInstance().getCurrentTheme().getTexture(Theme.TEXTURE_COMPONENT);
 		final int imageWidth=image.getWidth();
 		final int imageHeight=image.getHeight();
 		final int width=this.getWidth();

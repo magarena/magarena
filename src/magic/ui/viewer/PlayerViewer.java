@@ -5,13 +5,13 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.util.Set;
 
-import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import magic.data.IconImages;
 import magic.model.MagicPlayer;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.PlayerAvatarPanel;
@@ -21,9 +21,9 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final ImageIcon ICONS[]={
-		IconImages.LIFE,IconImages.PREVENT2,IconImages.LAND2,
-		IconImages.HAND2,IconImages.LIBRARY2,IconImages.GRAVEYARD2,
+	private static final String ICON_NAMES[]={
+		Theme.ICON_LIFE,Theme.ICON_PREVENT,Theme.ICON_LAND,
+		Theme.ICON_HAND,Theme.ICON_LIBRARY,Theme.ICON_GRAVEYARD
 	};
 	
 	private final ViewerInfo viewerInfo;
@@ -71,13 +71,14 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 		add(labelsPanel,BorderLayout.CENTER);
 
 		labels=new JLabel[6];
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		for (int index=0;index<labels.length;index++) {
 
 			labels[index]=new JLabel("0");
 			labels[index].setFont(FontsAndBorders.FONT2);
 			labels[index].setIconTextGap(4);
 			labels[index].setHorizontalAlignment(JLabel.CENTER);
-			labels[index].setIcon(ICONS[index]);
+			labels[index].setIcon(theme.getIcon(ICON_NAMES[index]));
 		}
 		
 		setSmall(false);

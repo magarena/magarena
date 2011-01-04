@@ -5,7 +5,8 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JLabel;
 
-import magic.data.GeneralConfig;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class BackgroundLabel extends JLabel {
 
@@ -13,7 +14,7 @@ public class BackgroundLabel extends JLabel {
 			
 	public void paint(final Graphics g) {
 
-		final BufferedImage image=GeneralConfig.getInstance().getBackgroundImage();
+		final BufferedImage image=ThemeFactory.getInstance().getCurrentTheme().getTexture(Theme.TEXTURE_BACKGROUND);
 		final int imageWidth=image.getWidth();
 		final int imageHeight=image.getHeight();
 		final int width=this.getWidth();

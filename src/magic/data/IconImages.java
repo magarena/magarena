@@ -2,7 +2,6 @@ package magic.data;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Arrays;
 
@@ -23,8 +22,6 @@ public class IconImages {
 	public static final BufferedImage GRANITE2=loadImage("textures/granite2.jpg");	
 	public static final BufferedImage OPAL=loadImage("textures/opal.jpg");
 	public static final BufferedImage OPAL2=loadImage("textures/opal2.jpg");
-	public static final BufferedImage USER1=loadUserImage("textures/texture1.jpg");
-	public static final BufferedImage USER2=loadUserImage("textures/texture2.jpg");	
 
 	public static final ImageIcon ARENA=loadIcon("arena.png");
 	public static final ImageIcon CUBE=loadIcon("cube.png");
@@ -135,19 +132,7 @@ public class IconImages {
 	public static final ImageIcon COST_EIGHT=loadSymbolIcon("eight.gif");
 	public static final ImageIcon COST_NINE=loadSymbolIcon("nine.gif");
 	public static final ImageIcon COST_X=loadSymbolIcon("x.gif");
-	
-	private static BufferedImage loadUserImage(final String name) {
 		
-		try {
-			final FileInputStream inputStream=new FileInputStream(MagicMain.getGamePath()+File.separator+name);
-			final BufferedImage image=ImageIO.read(inputStream);
-			inputStream.close();
-			return image;
-		} catch (final Exception ex) {
-			return IconImages.MISSING;
-		}
-	}
-	
 	private static BufferedImage loadImage(final String name) {
 		
 		try {
