@@ -1,4 +1,4 @@
-1:Akrasan Squire
+>Akrasan Squire
 value=2
 rarity=1
 type=Creature
@@ -11,7 +11,7 @@ toughness=1
 ability=exalted
 timing=fmain
 
-2:Ashenmoor Gouger
+>Ashenmoor Gouger
 value=3
 rarity=2
 type=Creature
@@ -24,7 +24,7 @@ toughness=4
 ability=can't block
 timing=fmain
 
-4:Akroma, Angel of Wrath
+>Akroma, Angel of Wrath
 value=5
 rarity=3
 type=Legendary,Creature
@@ -37,7 +37,7 @@ toughness=6
 ability=flying,first strike,vigilance,trample,haste,protection from black,protection from red
 timing=fmain
 
-5:Assault Zeppelid
+>Assault Zeppelid
 value=3
 rarity=1
 type=Creature
@@ -50,7 +50,7 @@ toughness=3
 ability=flying,trample
 timing=main
 
-6:Aven Mimeomancer
+>Aven Mimeomancer
 value=4
 rarity=2
 type=Creature
@@ -63,7 +63,7 @@ toughness=1
 ability=flying
 timing=smain
 
-7:Balefire Liege
+>Balefire Liege
 value=4
 rarity=2
 type=Creature
@@ -76,7 +76,7 @@ toughness=4
 static=player
 timing=fmain
 
-8:Battlegrace Angel
+>Battlegrace Angel
 value=4
 rarity=2
 type=Creature
@@ -89,7 +89,7 @@ toughness=4
 ability=flying,exalted
 timing=fmain
 
-9:Birds of Paradise
+>Birds of Paradise
 value=4
 rarity=2
 type=Creature
@@ -102,7 +102,7 @@ toughness=1
 ability=flying
 timing=smain
 
-10:Black Knight
+>Black Knight
 value=3
 rarity=2
 type=Creature
@@ -115,7 +115,7 @@ toughness=2
 ability=first strike,protection from white
 timing=main
 
-11:Cunning Sparkmage
+>Cunning Sparkmage
 value=3
 rarity=1
 type=Creature
@@ -128,7 +128,7 @@ toughness=1
 ability=haste
 timing=fmain
 
-12:Bloodmark Mentor
+>Bloodmark Mentor
 value=2
 rarity=1
 type=Creature
@@ -141,7 +141,7 @@ toughness=1
 static=player
 timing=fmain
 
-13:Bloodrock Cyclops
+>Bloodrock Cyclops
 value=2
 rarity=1
 type=Creature
@@ -154,7 +154,7 @@ toughness=3
 ability=attacks each turn if able
 timing=main
 
-14:Boartusk Liege
+>Boartusk Liege
 value=4
 rarity=2
 type=Creature
@@ -168,7 +168,7 @@ ability=trample
 static=player
 timing=fmain
 
-15:Boggart Ram-Gang
+>Boggart Ram-Gang
 value=3
 rarity=2
 type=Creature
@@ -181,7 +181,7 @@ toughness=3
 ability=haste,wither
 timing=fmain
 
-16:Brion Stoutarm
+>Brion Stoutarm
 value=5
 rarity=3
 type=Legendary,Creature
@@ -194,7 +194,7 @@ toughness=4
 ability=lifelink
 timing=smain
 
-17:Broodmate Dragon
+>Broodmate Dragon
 value=5
 rarity=3
 type=Creature
@@ -207,7 +207,7 @@ toughness=4
 ability=flying
 timing=main
 
-18:Cerodon Yearling
+>Cerodon Yearling
 value=3
 rarity=1
 type=Creature
@@ -220,7 +220,7 @@ toughness=2
 ability=vigilance,haste
 timing=fmain
 
-19:Chameleon Colossus
+>Chameleon Colossus
 value=4
 rarity=2
 type=Creature
@@ -233,7 +233,7 @@ toughness=4
 ability=changeling,protection from black
 timing=main
 
-20:Keiga, the Tide Star
+>Keiga, the Tide Star
 value=5
 rarity=3
 type=Legendary,Creature
@@ -246,7 +246,7 @@ toughness=5
 ability=flying
 timing=main
 
-21:Creakwood Liege
+>Creakwood Liege
 value=4
 rarity=2
 type=Creature
@@ -259,7 +259,7 @@ toughness=2
 static=player
 timing=fmain
 
-22:Cursecatcher
+>Cursecatcher
 value=1
 rarity=1
 type=Creature
@@ -271,7 +271,7 @@ power=1
 toughness=1
 timing=fmain
 
-23:Daggerclaw Imp
+>Daggerclaw Imp
 value=3
 rarity=1
 type=Creature
@@ -284,7 +284,7 @@ toughness=1
 ability=flying,can't block
 timing=fmain
 
-24:Dauntless Escort
+>Dauntless Escort
 value=4
 rarity=2
 type=Creature
@@ -296,7 +296,7 @@ power=3
 toughness=3
 timing=fmain
 
-25:Deathbringer Liege
+>Deathbringer Liege
 value=4
 rarity=2
 type=Creature
@@ -309,7 +309,7 @@ toughness=4
 static=player
 timing=fmain
 
-26:Doomgape
+>Doomgape
 value=5
 rarity=3
 type=Creature
@@ -322,7 +322,7 @@ toughness=10
 ability=trample
 timing=main
 
-27:Dread
+>Dread
 value=5
 rarity=3
 type=Creature
@@ -335,7 +335,7 @@ toughness=6
 ability=fear
 timing=fmain
 
-28:Skinrender
+>Skinrender
 value=4
 rarity=1
 removal=3
@@ -348,7 +348,7 @@ power=3
 toughness=3
 timing=fmain
 
-29:Safehold Elite
+>Safehold Elite
 value=2
 rarity=1
 type=Creature
@@ -361,7 +361,7 @@ toughness=2
 ability=persist
 timing=main
 
-30:Empyrial Archangel
+>Empyrial Archangel
 value=5
 rarity=3
 type=Creature
@@ -374,7 +374,7 @@ toughness=8
 ability=flying,shroud
 timing=fmain
 
-31:Femeref Archers
+>Femeref Archers
 value=3
 rarity=1
 type=Creature
@@ -386,7 +386,7 @@ power=2
 toughness=2
 timing=smain
 
-32:Fireslinger
+>Fireslinger
 value=2
 rarity=1
 type=Creature
@@ -398,7 +398,7 @@ power=1
 toughness=1
 timing=smain
 
-33:Flameblast Dragon
+>Flameblast Dragon
 value=5
 rarity=3
 type=Creature
@@ -411,7 +411,7 @@ toughness=5
 ability=flying
 timing=main
 
-34:Flametongue Kavu
+>Flametongue Kavu
 value=4
 removal=2
 rarity=2
@@ -424,7 +424,7 @@ power=4
 toughness=2
 timing=fmain
 
-35:Foul Imp
+>Foul Imp
 value=2
 rarity=1
 type=Creature
@@ -437,7 +437,7 @@ toughness=2
 ability=flying
 timing=smain
 
-36:Furnace Whelp
+>Furnace Whelp
 value=4
 rarity=1
 type=Creature
@@ -450,7 +450,7 @@ toughness=2
 ability=flying
 timing=main
 
-37:Glen Elendra Liege
+>Glen Elendra Liege
 value=4
 rarity=2
 type=Creature
@@ -464,7 +464,7 @@ ability=flying
 static=player
 timing=fmain
 
-38:Gloomwidow
+>Gloomwidow
 value=3
 rarity=1
 type=Creature
@@ -477,7 +477,7 @@ toughness=3
 ability=reach,can't block creatures without flying
 timing=main
 
-39:Godsire
+>Godsire
 value=5
 rarity=3
 type=Creature
@@ -490,7 +490,7 @@ toughness=8
 ability=vigilance
 timing=main
 
-40:Omnibian
+>Omnibian
 value=4
 rarity=2
 type=Creature
@@ -502,7 +502,7 @@ power=3
 toughness=3
 timing=smain
 
-41:Hateflayer
+>Hateflayer
 value=5
 rarity=3
 type=Creature
@@ -515,7 +515,7 @@ toughness=5
 ability=wither
 timing=main
 
-42:Boros Guildmage
+>Boros Guildmage
 value=3
 rarity=2
 type=Creature
@@ -527,7 +527,7 @@ power=2
 toughness=2
 timing=fmain
 
-43:Hellkite Overlord
+>Hellkite Overlord
 value=5
 rarity=3
 type=Creature
@@ -540,7 +540,7 @@ toughness=8
 ability=flying,trample,haste
 timing=fmain
 
-44:Hungry Spriggan
+>Hungry Spriggan
 value=3
 rarity=1
 type=Creature
@@ -553,7 +553,7 @@ toughness=1
 ability=trample
 timing=main
 
-45:Hypnotic Specter
+>Hypnotic Specter
 value=4
 rarity=2
 type=Creature
@@ -566,7 +566,7 @@ toughness=2
 ability=flying
 timing=main
 
-46:Inkfathom Infiltrator
+>Inkfathom Infiltrator
 value=3
 rarity=2
 type=Creature
@@ -579,7 +579,7 @@ toughness=1
 ability=can't block,unblockable
 timing=fmain
 
-47:Siege-Gang Commander
+>Siege-Gang Commander
 value=4
 rarity=2
 type=Creature
@@ -591,7 +591,7 @@ power=2
 toughness=2
 timing=fmain
 
-48:Jhessian Balmgiver
+>Jhessian Balmgiver
 value=3
 rarity=1
 type=Creature
@@ -603,7 +603,7 @@ power=1
 toughness=1
 timing=smain
 
-49:Jhessian Infiltrator
+>Jhessian Infiltrator
 value=3
 rarity=2
 type=Creature
@@ -616,7 +616,7 @@ toughness=2
 ability=unblockable
 timing=main
 
-50:Kabuto Moth
+>Kabuto Moth
 value=4
 rarity=1
 type=Creature
@@ -629,7 +629,7 @@ toughness=2
 ability=flying
 timing=smain
 
-51:Keening Banshee
+>Keening Banshee
 value=4
 rarity=2
 removal=2
@@ -643,7 +643,7 @@ toughness=2
 ability=flying
 timing=fmain
 
-52:Knight of Meadowgrain
+>Knight of Meadowgrain
 value=3
 rarity=1
 type=Creature
@@ -656,7 +656,7 @@ toughness=2
 ability=first strike,lifelink
 timing=main
 
-53:Watchwolf
+>Watchwolf
 value=3
 rarity=2
 type=Creature
@@ -668,7 +668,7 @@ power=3
 toughness=3
 timing=main
 
-54:Kulrath Knight
+>Kulrath Knight
 value=4
 rarity=2
 type=Creature
@@ -682,7 +682,7 @@ ability=flying,wither
 static=opponent
 timing=fmain
 
-55:Lavaborn Muse
+>Lavaborn Muse
 value=4
 rarity=2
 type=Creature
@@ -694,7 +694,7 @@ power=3
 toughness=3
 timing=smain
 
-56:Lightning Reaver
+>Lightning Reaver
 value=4
 rarity=2
 type=Creature
@@ -707,7 +707,7 @@ toughness=3
 ability=fear,haste
 timing=main
 
-57:Llanowar Elves
+>Llanowar Elves
 value=3
 rarity=1
 type=Creature
@@ -719,7 +719,7 @@ power=1
 toughness=1
 timing=smain
 
-59:Winged Coatl
+>Winged Coatl
 value=3
 removal=2
 rarity=1
@@ -733,7 +733,7 @@ toughness=1
 ability=flash,flying,deathtouch
 timing=flash
 
-60:Loxodon Hierarch
+>Loxodon Hierarch
 value=4
 rarity=2
 type=Creature
@@ -745,7 +745,7 @@ power=4
 toughness=4
 timing=fmain
 
-61:Spirit of the Hearth
+>Spirit of the Hearth
 value=5
 rarity=3
 type=Creature
@@ -758,7 +758,7 @@ toughness=5
 ability=flying
 timing=fmain
 
-62:Madrush Cyclops
+>Madrush Cyclops
 value=4
 rarity=2
 type=Creature
@@ -770,7 +770,7 @@ power=3
 toughness=4
 timing=fmain
 
-63:Terra Stomper
+>Terra Stomper
 value=5
 rarity=3
 type=Creature
@@ -783,7 +783,7 @@ toughness=8
 ability=can't be countered,trample
 timing=main
 
-64:Marisi's Twinclaws
+>Marisi's Twinclaws
 value=4
 rarity=2
 type=Creature
@@ -796,7 +796,7 @@ toughness=4
 ability=double strike
 timing=main
 
-65:Meglonoth
+>Meglonoth
 value=5
 rarity=3
 type=Creature
@@ -809,7 +809,7 @@ toughness=6
 ability=vigilance,trample
 timing=main
 
-66:Messenger Falcons
+>Messenger Falcons
 value=3
 rarity=2
 type=Creature
@@ -822,7 +822,7 @@ toughness=2
 ability=flying
 timing=fmain
 
-67:Midnight Banshee
+>Midnight Banshee
 value=5
 rarity=3
 type=Creature
@@ -835,7 +835,7 @@ toughness=5
 ability=wither
 timing=smain
 
-68:Mire Boa
+>Mire Boa
 value=2
 rarity=2
 type=Creature
@@ -848,7 +848,7 @@ toughness=1
 ability=swampwalk
 timing=main
 
-69:Mirri the Cursed
+>Mirri the Cursed
 value=4
 rarity=3
 type=Legendary,Creature
@@ -861,7 +861,7 @@ toughness=2
 ability=flying,first strike,haste
 timing=fmain
 
-71:Mogg Fanatic
+>Mogg Fanatic
 value=2
 rarity=1
 type=Creature
@@ -873,7 +873,7 @@ power=1
 toughness=1
 timing=fmain
 
-72:Moroii
+>Moroii
 value=4
 rarity=2
 type=Creature
@@ -886,7 +886,7 @@ toughness=4
 ability=flying
 timing=main
 
-73:Murkfiend Liege
+>Murkfiend Liege
 value=4
 rarity=2
 type=Creature
@@ -899,7 +899,7 @@ toughness=4
 static=player
 timing=fmain
 
-74:Steel Wall
+>Steel Wall
 value=1
 rarity=1
 type=Artifact,Creature
@@ -911,7 +911,7 @@ toughness=4
 ability=defender
 timing=smain
 
-75:Flame-Kin Zealot
+>Flame-Kin Zealot
 value=3
 rarity=2
 type=Creature
@@ -923,7 +923,7 @@ power=2
 toughness=2
 timing=fmain
 
-76:Noble Hierarch
+>Noble Hierarch
 value=3
 rarity=2
 type=Creature
@@ -936,7 +936,7 @@ toughness=1
 ability=exalted
 timing=main
 
-77:Oracle of Nectars
+>Oracle of Nectars
 value=2
 rarity=1
 type=Creature
@@ -948,7 +948,7 @@ power=2
 toughness=2
 timing=smain
 
-78:Paladin en-Vec
+>Paladin en-Vec
 value=4
 rarity=2
 type=Creature
@@ -961,7 +961,7 @@ toughness=2
 ability=first strike,protection from black,protection from red
 timing=main
 
-79:Silkbind Faerie
+>Silkbind Faerie
 value=3
 rarity=1
 type=Creature
@@ -974,7 +974,7 @@ toughness=3
 ability=flying
 timing=main
 
-80:Tidehollow Strix
+>Tidehollow Strix
 value=3
 rarity=1
 type=Artifact,Creature
@@ -987,7 +987,7 @@ toughness=1
 ability=flying,deathtouch
 timing=smain
 
-81:Prickly Boggart
+>Prickly Boggart
 value=1
 rarity=1
 type=Creature
@@ -1000,7 +1000,7 @@ toughness=1
 ability=fear
 timing=main
 
-82:Putrid Leech
+>Putrid Leech
 value=3
 rarity=1
 type=Creature
@@ -1012,7 +1012,7 @@ power=2
 toughness=2
 timing=main
 
-83:Rafiq of the Many
+>Rafiq of the Many
 value=4
 rarity=3
 type=Legendary,Creature
@@ -1025,7 +1025,7 @@ toughness=3
 ability=exalted
 timing=fmain
 
-84:Goblin Bushwhacker
+>Goblin Bushwhacker
 value=2
 rarity=1
 type=Creature
@@ -1037,7 +1037,7 @@ power=1
 toughness=1
 timing=fmain
 
-85:Rakdos Guildmage
+>Rakdos Guildmage
 value=3
 rarity=2
 type=Creature
@@ -1049,7 +1049,7 @@ power=2
 toughness=2
 timing=fmain
 
-86:Rendclaw Trow
+>Rendclaw Trow
 value=2
 rarity=1
 type=Creature
@@ -1062,7 +1062,7 @@ toughness=2
 ability=wither,persist
 timing=smain
 
-87:Retaliator Griffin
+>Retaliator Griffin
 value=4
 rarity=2
 type=Creature
@@ -1075,7 +1075,7 @@ toughness=2
 ability=flying
 timing=fmain
 
-88:Rhox Charger
+>Rhox Charger
 value=3
 rarity=1
 type=Creature
@@ -1088,7 +1088,7 @@ toughness=3
 ability=trample,exalted
 timing=fmain
 
-89:Rustrazor Butcher
+>Rustrazor Butcher
 value=2
 rarity=1
 type=Creature
@@ -1101,7 +1101,7 @@ toughness=2
 ability=first strike,wither
 timing=main
 
-90:Scattershot Archer
+>Scattershot Archer
 value=1
 rarity=1
 type=Creature
@@ -1113,7 +1113,7 @@ power=1
 toughness=2
 timing=smain
 
-91:Zephyr Sprite
+>Zephyr Sprite
 value=1
 rarity=1
 type=Creature
@@ -1126,7 +1126,7 @@ toughness=1
 ability=flying
 timing=main
 
-92:Brigid, Hero of Kinsbaile
+>Brigid, Hero of Kinsbaile
 value=4
 rarity=3
 type=Legendary,Creature
@@ -1139,7 +1139,7 @@ toughness=3
 ability=first strike
 timing=smain
 
-93:Sickle Ripper
+>Sickle Ripper
 value=2
 rarity=1
 type=Creature
@@ -1152,7 +1152,7 @@ toughness=1
 ability=wither
 timing=main
 
-94:Sigiled Paladin
+>Sigiled Paladin
 value=3
 rarity=2
 type=Creature
@@ -1165,7 +1165,7 @@ toughness=2
 ability=first strike,exalted
 timing=fmain
 
-95:Silhana Ledgewalker
+>Silhana Ledgewalker
 value=2
 rarity=1
 type=Creature
@@ -1178,7 +1178,7 @@ toughness=1
 ability=can't be blocked except by creatures with flying,can't be the target of spells or abilities your opponent controls
 timing=fmain
 
-96:Simic Sky Swallower
+>Simic Sky Swallower
 value=5
 rarity=3
 type=Creature
@@ -1191,7 +1191,7 @@ toughness=6
 ability=flying,trample,shroud
 timing=fmain
 
-97:Perimeter Captain
+>Perimeter Captain
 value=2
 rarity=1
 type=Creature
@@ -1204,7 +1204,7 @@ toughness=4
 ability=defender
 timing=smain
 
-98:Souls of the Faultless
+>Souls of the Faultless
 value=3
 rarity=2
 type=Creature
@@ -1217,7 +1217,7 @@ toughness=4
 ability=defender
 timing=smain
 
-100:Pelakka Wurm
+>Pelakka Wurm
 value=5
 rarity=3
 type=Creature
@@ -1230,7 +1230,7 @@ toughness=7
 ability=trample
 timing=fmain
 
-102:Spiketail Hatchling
+>Spiketail Hatchling
 value=2
 rarity=1
 type=Creature
@@ -1243,7 +1243,7 @@ toughness=1
 ability=flying
 timing=fmain
 
-103:Stalker Hag
+>Stalker Hag
 value=3
 rarity=2
 type=Creature
@@ -1256,7 +1256,7 @@ toughness=2
 ability=swampwalk,forestwalk
 timing=main
 
-104:Steward of Valeron
+>Steward of Valeron
 value=3
 rarity=1
 type=Creature
@@ -1269,7 +1269,7 @@ toughness=2
 ability=vigilance
 timing=smain
 
-106:Drana, Kalastria Bloodchief
+>Drana, Kalastria Bloodchief
 value=5
 rarity=3
 type=Legendary,Creature
@@ -1282,7 +1282,7 @@ toughness=4
 ability=flying
 timing=main
 
-107:Merfolk Seastalkers
+>Merfolk Seastalkers
 value=3
 rarity=1
 type=Creature
@@ -1295,7 +1295,7 @@ toughness=3
 ability=islandwalk
 timing=main
 
-108:Stun Sniper
+>Stun Sniper
 value=3
 rarity=1
 type=Creature
@@ -1307,7 +1307,7 @@ power=1
 toughness=1
 timing=main
 
-109:Affa Guard Hound
+>Affa Guard Hound
 value=3
 rarity=1
 type=Creature
@@ -1320,7 +1320,7 @@ toughness=2
 ability=flash
 timing=pumpflash
 
-110:Tattermunge Maniac
+>Tattermunge Maniac
 value=1
 rarity=1
 type=Creature
@@ -1333,7 +1333,7 @@ toughness=1
 ability=attacks each turn if able
 timing=main
 
-111:Thieving Magpie
+>Thieving Magpie
 value=2
 rarity=1
 type=Creature
@@ -1346,7 +1346,7 @@ toughness=3
 ability=flying
 timing=main
 
-112:Tolsimir Wolfblood
+>Tolsimir Wolfblood
 value=4
 rarity=3
 type=Legendary,Creature
@@ -1359,7 +1359,7 @@ toughness=4
 static=player
 timing=fmain
 
-113:Troll Ascetic
+>Troll Ascetic
 value=4
 rarity=2
 type=Creature
@@ -1372,7 +1372,7 @@ toughness=2
 ability=can't be the target of spells or abilities your opponent controls
 timing=fmain
 
-114:Twinblade Slasher
+>Twinblade Slasher
 value=1
 rarity=1
 type=Creature
@@ -1385,7 +1385,7 @@ toughness=1
 ability=wither
 timing=main
 
-115:Ursapine
+>Ursapine
 value=4
 rarity=2
 type=Creature
@@ -1397,7 +1397,7 @@ power=3
 toughness=3
 timing=fmain
 
-116:Utvara Scalper
+>Utvara Scalper
 value=2
 rarity=1
 type=Creature
@@ -1410,7 +1410,7 @@ toughness=2
 ability=flying,attacks each turn if able
 timing=main
 
-117:Veteran Armorer
+>Veteran Armorer
 value=2
 rarity=1
 type=Creature
@@ -1423,7 +1423,7 @@ toughness=2
 static=player
 timing=fmain
 
-118:Vigor
+>Vigor
 value=5
 rarity=3
 type=Creature
@@ -1436,7 +1436,7 @@ toughness=6
 ability=trample
 timing=fmain
 
-119:Guardian of the Guildpact
+>Guardian of the Guildpact
 value=4
 rarity=2
 type=Creature
@@ -1449,7 +1449,7 @@ toughness=3
 ability=protection from monocolored
 timing=main
 
-120:Vorosh, the Hunter
+>Vorosh, the Hunter
 value=5
 rarity=3
 type=Legendary,Creature
@@ -1462,7 +1462,7 @@ toughness=6
 ability=flying
 timing=smain
 
-121:Wall of Denial
+>Wall of Denial
 value=4
 rarity=2
 type=Creature
@@ -1475,7 +1475,7 @@ toughness=8
 ability=defender,flying,shroud
 timing=smain
 
-122:Wall of Reverence
+>Wall of Reverence
 value=3
 rarity=2
 type=Creature
@@ -1488,7 +1488,7 @@ toughness=6
 ability=defender,flying
 timing=smain
 
-123:Scuzzback Marauders
+>Scuzzback Marauders
 value=4
 rarity=2
 type=Creature
@@ -1501,7 +1501,7 @@ toughness=2
 ability=trample,persist
 timing=main
 
-124:Wilt-Leaf Cavaliers
+>Wilt-Leaf Cavaliers
 value=3
 rarity=2
 type=Creature
@@ -1514,7 +1514,7 @@ toughness=4
 ability=vigilance
 timing=main
 
-125:Windbrisk Raptor
+>Windbrisk Raptor
 value=5
 rarity=3
 type=Creature
@@ -1527,7 +1527,7 @@ toughness=7
 ability=flying
 timing=fmain
 
-127:Char
+>Char
 value=4
 removal=3
 rarity=2
@@ -1537,7 +1537,7 @@ converted=3
 cost={2}{R}
 timing=removal
 
-128:Colossal Might
+>Colossal Might
 value=3
 rarity=1
 type=Instant
@@ -1546,7 +1546,7 @@ converted=2
 cost={R}{G}
 timing=pump
 
-129:Swords to Plowshares
+>Swords to Plowshares
 value=3
 removal=4
 rarity=2
@@ -1556,7 +1556,7 @@ converted=1
 cost={W}
 timing=removal
 
-130:Counterspell
+>Counterspell
 value=3
 rarity=2
 type=Instant
@@ -1565,7 +1565,7 @@ converted=2
 cost={U}{U}
 timing=counter
 
-131:Cruel Edict
+>Cruel Edict
 value=2
 removal=2
 rarity=1
@@ -1575,7 +1575,7 @@ converted=2
 cost={1}{B}
 timing=removal
 
-132:Double Cleave
+>Double Cleave
 value=2
 rarity=1
 type=Instant
@@ -1584,7 +1584,7 @@ converted=2
 cost={1}{R/W}
 timing=block
 
-133:Douse in Gloom
+>Douse in Gloom
 value=2
 removal=2
 rarity=1
@@ -1594,7 +1594,7 @@ converted=3
 cost={2}{B}
 timing=removal
 
-134:Fists of the Anvil
+>Fists of the Anvil
 value=2
 rarity=1
 type=Instant
@@ -1603,7 +1603,7 @@ converted=2
 cost={1}{R}
 timing=pump
 
-135:Puncture Blast
+>Puncture Blast
 value=3
 removal=3
 rarity=2
@@ -1614,7 +1614,7 @@ cost={2}{R}
 ability=wither
 timing=removal
 
-136:Glorious Charge
+>Glorious Charge
 value=3
 rarity=1
 type=Instant
@@ -1623,7 +1623,7 @@ converted=2
 cost={1}{W}
 timing=pump
 
-137:Giant Growth
+>Giant Growth
 value=2
 rarity=1
 type=Instant
@@ -1632,7 +1632,7 @@ converted=1
 cost={G}
 timing=pump
 
-138:Incinerate
+>Incinerate
 value=3
 removal=3
 rarity=1
@@ -1642,7 +1642,7 @@ converted=2
 cost={1}{R}
 timing=removal
 
-139:Thunder Strike
+>Thunder Strike
 value=3
 rarity=1
 type=Instant
@@ -1651,7 +1651,7 @@ converted=2
 cost={1}{R}
 timing=pump
 
-140:Grasp of Darkness
+>Grasp of Darkness
 value=3
 removal=3
 rarity=1
@@ -1661,7 +1661,7 @@ converted=2
 cost={B}{B}
 timing=removal
 
-141:Lightning Helix
+>Lightning Helix
 value=4
 removal=3
 rarity=2
@@ -1671,7 +1671,7 @@ converted=2
 cost={R}{W}
 timing=removal
 
-142:Might of Oaks
+>Might of Oaks
 value=4
 rarity=2
 type=Instant
@@ -1680,7 +1680,7 @@ converted=4
 cost={3}{G}
 timing=pump
 
-143:Diminish
+>Diminish
 value=2
 removal=1
 rarity=1
@@ -1690,7 +1690,7 @@ converted=1
 cost={U}
 timing=removal
 
-144:Remand
+>Remand
 value=3
 rarity=1
 type=Instant
@@ -1699,7 +1699,7 @@ converted=2
 cost={1}{U}
 timing=counter
 
-145:Lightning Bolt
+>Lightning Bolt
 value=3
 removal=3
 rarity=1
@@ -1709,7 +1709,7 @@ converted=1
 cost={R}
 timing=removal
 
-146:Sigil Blessing
+>Sigil Blessing
 value=3
 rarity=1
 type=Instant
@@ -1718,7 +1718,7 @@ converted=2
 cost={G}{W}
 timing=pump
 
-147:Terminate
+>Terminate
 value=4
 removal=5
 rarity=2
@@ -1728,7 +1728,7 @@ converted=2
 cost={B}{R}
 timing=removal
 
-148:Doom Blade
+>Doom Blade
 value=3
 removal=4
 rarity=2
@@ -1738,7 +1738,7 @@ converted=2
 cost={1}{B}
 timing=removal
 
-149:To Arms!
+>To Arms!
 value=2
 rarity=1
 type=Instant
@@ -1747,7 +1747,7 @@ converted=2
 cost={1}{W}
 timing=tapping
 
-150:Mortify
+>Mortify
 value=4
 removal=5
 rarity=2
@@ -1757,7 +1757,7 @@ converted=3
 cost={1}{W}{B}
 timing=removal
 
-151:Unsummon
+>Unsummon
 value=2
 removal=2
 rarity=1
@@ -1767,7 +1767,7 @@ converted=1
 cost={U}
 timing=removal
 
-152:Wildsize
+>Wildsize
 value=3
 rarity=1
 type=Instant
@@ -1776,7 +1776,7 @@ converted=3
 cost={2}{G}
 timing=pump
 
-153:Withstand
+>Withstand
 value=3
 rarity=1
 type=Instant
@@ -1785,7 +1785,7 @@ converted=3
 cost={2}{W}
 timing=pump
 
-154:Putrefy
+>Putrefy
 value=4
 removal=5
 rarity=2
@@ -1795,7 +1795,7 @@ converted=3
 cost={1}{B}{G}
 timing=removal
 
-155:Zealous Persecution
+>Zealous Persecution
 value=4
 removal=1
 rarity=2
@@ -1805,7 +1805,7 @@ converted=2
 cost={W}{B}
 timing=removal
 
-156:Assassinate
+>Assassinate
 value=2
 removal=3
 rarity=1
@@ -1815,7 +1815,7 @@ converted=3
 cost={2}{B}
 timing=removal
 
-157:Blaze
+>Blaze
 value=4
 removal=4
 rarity=3
@@ -1825,7 +1825,7 @@ converted=1
 cost={X}{R}
 timing=removal
 
-158:Blightning
+>Blightning
 value=3
 rarity=1
 type=Sorcery
@@ -1834,7 +1834,7 @@ converted=3
 cost={1}{B}{R}
 timing=removal
 
-159:Beacon of Unrest
+>Beacon of Unrest
 value=4
 rarity=2
 type=Sorcery
@@ -1843,7 +1843,7 @@ converted=5
 cost={3}{B}{B}
 timing=main
 
-160:Time Ebb
+>Time Ebb
 value=3
 removal=3
 rarity=1
@@ -1853,7 +1853,7 @@ converted=3
 cost={2}{U}
 timing=removal
 
-161:Hurricane
+>Hurricane
 value=3
 removal=2
 rarity=3
@@ -1863,7 +1863,7 @@ converted=1
 cost={X}{G}
 timing=removal
 
-162:Infest
+>Infest
 value=3
 removal=2
 rarity=2
@@ -1873,7 +1873,7 @@ converted=3
 cost={1}{B}{B}
 timing=removal
 
-163:Slave of Bolas
+>Slave of Bolas
 value=4
 removal=5
 rarity=2
@@ -1883,7 +1883,7 @@ converted=5
 cost={3}{U/R}{B}
 timing=removal
 
-164:Martial Coup
+>Martial Coup
 value=4
 removal=4
 rarity=3
@@ -1893,7 +1893,7 @@ converted=2
 cost={X}{W}{W}
 timing=removal
 
-165:Overwhelming Stampede
+>Overwhelming Stampede
 value=4
 rarity=2
 type=Sorcery
@@ -1902,7 +1902,7 @@ converted=5
 cost={3}{G}{G}
 timing=pump
 
-166:Flame Slash
+>Flame Slash
 value=3
 removal=3
 rarity=2
@@ -1912,7 +1912,7 @@ converted=1
 cost={R}
 timing=removal
 
-167:Savage Twister
+>Savage Twister
 value=4
 removal=3
 rarity=3
@@ -1922,7 +1922,7 @@ converted=2
 cost={X}{R}{G}
 timing=removal
 
-168:Divination
+>Divination
 value=2
 rarity=1
 type=Sorcery
@@ -1931,7 +1931,7 @@ converted=3
 cost={2}{U}
 timing=draw
 
-169:Soul's Majesty
+>Soul's Majesty
 value=3
 rarity=2
 type=Sorcery
@@ -1940,7 +1940,7 @@ converted=5
 cost={4}{G}
 timing=draw
 
-170:Soul's Might
+>Soul's Might
 value=2
 rarity=1
 type=Sorcery
@@ -1949,7 +1949,7 @@ converted=5
 cost={4}{G}
 timing=pump
 
-171:Soul Feast
+>Soul Feast
 value=2
 rarity=1
 type=Sorcery
@@ -1958,7 +1958,7 @@ converted=5
 cost={3}{B}{B}
 timing=removal
 
-173:Backlash
+>Backlash
 value=3
 rarity=1
 type=Instant
@@ -1967,7 +1967,7 @@ converted=3
 cost={1}{B}{R}
 timing=tapping
 
-174:Mind Spring
+>Mind Spring
 value=4
 rarity=3
 type=Sorcery
@@ -1976,7 +1976,7 @@ converted=2
 cost={X}{U}{U}
 timing=draw
 
-175:Titanic Ultimatum
+>Titanic Ultimatum
 value=4
 rarity=3
 type=Sorcery
@@ -1985,7 +1985,7 @@ converted=7
 cost={R}{R}{G}{G}{G}{W}{W}
 timing=pump
 
-177:Godless Shrine
+>Godless Shrine
 value=4
 rarity=1
 type=Land
@@ -1994,7 +1994,7 @@ mana=w3b3
 basic=wb
 timing=land
 
-178:Arcane Sanctum
+>Arcane Sanctum
 value=4
 rarity=1
 type=Land
@@ -2002,7 +2002,7 @@ mana=w3u3b3
 basic=wub
 timing=tapland
 
-182:Crumbling Necropolis
+>Crumbling Necropolis
 value=4
 rarity=1
 type=Land
@@ -2010,7 +2010,7 @@ mana=u3b3r3
 basic=ubr
 timing=tapland
 
-183:Jungle Shrine
+>Jungle Shrine
 value=4
 rarity=1
 type=Land
@@ -2018,7 +2018,7 @@ mana=r3g3w3
 basic=rgw
 timing=tapland
 
-186:Overgrown Tomb
+>Overgrown Tomb
 value=4
 rarity=1
 type=Land
@@ -2027,7 +2027,7 @@ mana=b3g3
 basic=bg
 timing=land
 
-187:Breeding Pool
+>Breeding Pool
 value=4
 rarity=1
 type=Land
@@ -2036,7 +2036,7 @@ mana=g3u3
 basic=gu
 timing=land
 
-188:Savage Lands
+>Savage Lands
 value=4
 rarity=1
 type=Land
@@ -2044,7 +2044,7 @@ mana=b3r3g3
 basic=brg
 timing=tapland
 
-189:Seaside Citadel
+>Seaside Citadel
 value=4
 rarity=1
 type=Land
@@ -2052,7 +2052,7 @@ mana=g3w3u3
 basic=gwu
 timing=tapland
 
-193:Sacred Foundry
+>Sacred Foundry
 value=4
 rarity=1
 type=Land
@@ -2061,42 +2061,42 @@ mana=r3w3
 basic=rw
 timing=land
 
-195:Vivid Crag
+>Vivid Crag
 value=3
 rarity=1
 type=Land
 mana=b1g1r3u1w1
 timing=tapland
 
-196:Vivid Creek
+>Vivid Creek
 value=3
 rarity=1
 type=Land
 mana=b1g1r1u3w1
 timing=tapland
 
-197:Vivid Grove
+>Vivid Grove
 value=3
 rarity=1
 type=Land
 mana=b1g3r1u1w1
 timing=tapland
 
-198:Vivid Marsh
+>Vivid Marsh
 value=3
 rarity=1
 type=Land
 mana=b3g1r1u1w1
 timing=tapland
 
-199:Vivid Meadow
+>Vivid Meadow
 value=3
 rarity=1
 type=Land
 mana=b1g1r1u1w3
 timing=tapland
 
-201:Behemoth Sledge
+>Behemoth Sledge
 value=5
 rarity=2
 type=Artifact
@@ -2110,7 +2110,7 @@ toughness=2
 ability=lifelink,trample
 timing=equipment
 
-202:Bonesplitter
+>Bonesplitter
 value=3
 rarity=1
 type=Artifact
@@ -2122,7 +2122,7 @@ power=2
 toughness=0
 timing=equipment
 
-203:Fireshrieker
+>Fireshrieker
 value=3
 rarity=2
 type=Artifact
@@ -2133,7 +2133,7 @@ equip={2}
 ability=double strike
 timing=equipment
 
-204:Loxodon Warhammer
+>Loxodon Warhammer
 value=5
 rarity=2
 type=Artifact
@@ -2146,7 +2146,7 @@ toughness=0
 ability=lifelink,trample
 timing=equipment
 
-205:Mage Slayer
+>Mage Slayer
 value=4
 rarity=2
 type=Artifact
@@ -2157,7 +2157,7 @@ cost={1}{R}{G}
 equip={3}
 timing=equipment
 
-206:Mask of Riddles
+>Mask of Riddles
 value=3
 rarity=2
 type=Artifact
@@ -2169,7 +2169,7 @@ equip={2}
 ability=fear
 timing=equipment
 
-207:Shield of the Righteous
+>Shield of the Righteous
 value=3
 rarity=2
 type=Artifact
@@ -2183,7 +2183,7 @@ toughness=2
 ability=vigilance
 timing=equipment
 
-208:Sword of Fire and Ice
+>Sword of Fire and Ice
 value=5
 rarity=3
 type=Artifact
@@ -2196,7 +2196,7 @@ toughness=2
 ability=protection from red,protection from blue
 timing=equipment
 
-209:Vulshok Morningstar
+>Vulshok Morningstar
 value=3
 rarity=1
 type=Artifact
@@ -2208,7 +2208,7 @@ power=2
 toughness=2
 timing=equipment
 
-210:Whispersilk Cloak
+>Whispersilk Cloak
 value=3
 rarity=2
 type=Artifact
@@ -2219,7 +2219,7 @@ equip={2}
 ability=unblockable,shroud
 timing=equipment
 
-211:Blood Crypt
+>Blood Crypt
 value=4
 rarity=1
 type=Land
@@ -2228,7 +2228,7 @@ mana=b3r3
 basic=br
 timing=land
 
-212:Hallowed Fountain
+>Hallowed Fountain
 value=4
 rarity=1
 type=Land
@@ -2237,7 +2237,7 @@ mana=w3u3
 basic=wu
 timing=land
 
-213:Stomping Ground
+>Stomping Ground
 value=4
 rarity=1
 type=Land
@@ -2246,7 +2246,7 @@ mana=r3g3
 basic=rg
 timing=land
 
-214:Temple Garden
+>Temple Garden
 value=4
 rarity=1
 type=Land
@@ -2255,7 +2255,7 @@ mana=g3w3
 basic=gw
 timing=land
 
-215:Watery Grave
+>Watery Grave
 value=4
 rarity=1
 type=Land
@@ -2264,7 +2264,7 @@ mana=u3b3
 basic=ub
 timing=land
 
-216:Angel of Despair
+>Angel of Despair
 value=5
 removal=4
 rarity=3
@@ -2278,7 +2278,7 @@ toughness=5
 ability=flying
 timing=fmain
 
-217:Mirri, Cat Warrior
+>Mirri, Cat Warrior
 value=4
 rarity=3
 type=Legendary,Creature
@@ -2291,7 +2291,7 @@ toughness=3
 ability=first strike,forestwalk,vigilance
 timing=main
 
-218:Murderous Redcap
+>Murderous Redcap
 value=4
 removal=2
 rarity=1
@@ -2305,7 +2305,7 @@ toughness=2
 ability=persist
 timing=fmain
 
-220:Offering to Asha
+>Offering to Asha
 value=2
 rarity=1
 type=Instant
@@ -2314,7 +2314,7 @@ converted=4
 cost={2}{W}{U}
 timing=counter
 
-221:Beloved Chaplain
+>Beloved Chaplain
 value=3
 rarity=1
 type=Creature
@@ -2327,7 +2327,7 @@ toughness=1
 ability=protection from creatures
 timing=smain
 
-222:Blazing Specter
+>Blazing Specter
 value=4
 rarity=2
 type=Creature
@@ -2340,7 +2340,7 @@ toughness=2
 ability=flying,haste
 timing=fmain
 
-223:Chastise
+>Chastise
 value=4
 removal=4
 rarity=1
@@ -2350,7 +2350,7 @@ converted=4
 cost={3}{W}
 timing=attack
 
-224:Plumeveil
+>Plumeveil
 value=4
 rarity=2
 type=Creature
@@ -2363,7 +2363,7 @@ toughness=4
 ability=flash,flying,defender
 timing=flash
 
-225:Sift
+>Sift
 value=3
 rarity=1
 type=Sorcery
@@ -2372,7 +2372,7 @@ converted=4
 cost={3}{U}
 timing=draw
 
-226:Death Grasp
+>Death Grasp
 value=4
 removal=4
 rarity=3
@@ -2382,7 +2382,7 @@ converted=2
 cost={X}{W}{B}
 timing=removal
 
-227:Dromar, the Banisher
+>Dromar, the Banisher
 value=5
 rarity=3
 type=Legendary,Creature
@@ -2395,7 +2395,7 @@ toughness=6
 ability=flying
 timing=smain
 
-228:Kokusho, the Evening Star
+>Kokusho, the Evening Star
 value=5
 rarity=3
 type=Legendary,Creature
@@ -2408,7 +2408,7 @@ toughness=5
 ability=flying
 timing=main
 
-229:Heroes' Reunion
+>Heroes' Reunion
 value=3
 rarity=1
 type=Instant
@@ -2417,7 +2417,7 @@ converted=2
 cost={G}{W}
 timing=draw
 
-230:Iridescent Angel
+>Iridescent Angel
 value=4
 rarity=3
 type=Creature
@@ -2430,7 +2430,7 @@ toughness=4
 ability=flying,protection from all colors
 timing=smain
 
-231:Mystic Snake
+>Mystic Snake
 value=3
 rarity=2
 type=Creature
@@ -2443,7 +2443,7 @@ toughness=2
 ability=flash
 timing=counterflash
 
-233:Nantuko Shade
+>Nantuko Shade
 value=4
 rarity=2
 type=Creature
@@ -2455,7 +2455,7 @@ power=2
 toughness=1
 timing=main
 
-234:Rorix Bladewing
+>Rorix Bladewing
 value=5
 rarity=3
 type=Legendary,Creature
@@ -2468,7 +2468,7 @@ toughness=5
 ability=flying,haste
 timing=fmain
 
-235:Sabertooth Nishoba
+>Sabertooth Nishoba
 value=4
 rarity=3
 type=Creature
@@ -2481,7 +2481,7 @@ toughness=5
 ability=trample,protection from blue,protection from red
 timing=main
 
-237:Shadowmage Infiltrator
+>Shadowmage Infiltrator
 value=4
 rarity=2
 type=Creature
@@ -2494,7 +2494,7 @@ toughness=3
 ability=fear
 timing=main
 
-238:Hideous End
+>Hideous End
 value=3
 removal=4
 rarity=1
@@ -2504,7 +2504,7 @@ converted=3
 cost={1}{B}{B}
 timing=removal
 
-239:Spiritmonger
+>Spiritmonger
 value=5
 rarity=2
 type=Creature
@@ -2516,7 +2516,7 @@ power=6
 toughness=6
 timing=main
 
-241:Treva, the Renewer
+>Treva, the Renewer
 value=5
 rarity=3
 type=Legendary,Creature
@@ -2529,7 +2529,7 @@ toughness=6
 ability=flying
 timing=smain
 
-242:Undermine
+>Undermine
 value=3
 rarity=2
 type=Instant
@@ -2538,7 +2538,7 @@ converted=3
 cost={U}{U}{B}
 timing=counter
 
-243:Vine Trellis
+>Vine Trellis
 value=3
 rarity=1
 type=Creature
@@ -2551,7 +2551,7 @@ toughness=4
 ability=defender
 timing=smain
 
-244:Carnifex Demon
+>Carnifex Demon
 value=5
 rarity=3
 type=Creature
@@ -2564,7 +2564,7 @@ toughness=6
 ability=flying
 timing=fmain
 
-245:Jund Hackblade
+>Jund Hackblade
 value=3
 rarity=2
 type=Creature
@@ -2576,7 +2576,7 @@ power=2
 toughness=1
 timing=fmain
 
-247:Sphinx of the Steel Wind
+>Sphinx of the Steel Wind
 value=5
 rarity=3
 type=Artifact,Creature
@@ -2589,7 +2589,7 @@ toughness=6
 ability=flying,first strike,vigilance,lifelink,protection from red,protection from green
 timing=smain
 
-248:Wrap in Vigor
+>Wrap in Vigor
 value=3
 rarity=1
 type=Instant
@@ -2598,7 +2598,7 @@ converted=2
 cost={1}{G}
 timing=pump
 
-249:Dismal Failure
+>Dismal Failure
 value=2
 rarity=1
 type=Instant
@@ -2607,7 +2607,7 @@ converted=4
 cost={2}{U}{U}
 timing=counter
 
-250:Zombify
+>Zombify
 value=3
 rarity=1
 type=Sorcery
@@ -2616,7 +2616,7 @@ converted=4
 cost={3}{B}
 timing=main
 
-251:Sprouting Thrinax
+>Sprouting Thrinax
 value=4
 rarity=2
 type=Creature
@@ -2628,7 +2628,7 @@ power=3
 toughness=3
 timing=main
 
-252:Puppeteer Clique
+>Puppeteer Clique
 value=4
 rarity=2
 type=Creature
@@ -2641,7 +2641,7 @@ toughness=2
 ability=flying,persist
 timing=fmain
 
-253:Lingering Tormentor
+>Lingering Tormentor
 value=3
 rarity=1
 type=Creature
@@ -2654,7 +2654,7 @@ toughness=2
 ability=fear,persist
 timing=main
 
-254:Frenzied Goblin
+>Frenzied Goblin
 value=2
 rarity=1
 type=Creature
@@ -2666,7 +2666,7 @@ power=1
 toughness=1
 timing=main
 
-255:Kaervek the Merciless
+>Kaervek the Merciless
 value=5
 rarity=3
 type=Legendary,Creature
@@ -2678,7 +2678,7 @@ power=5
 toughness=4
 timing=fmain
 
-256:Scar
+>Scar
 value=1
 removal=1
 rarity=1
@@ -2688,7 +2688,7 @@ converted=1
 cost={B/R}
 timing=removal
 
-257:Deathless Angel
+>Deathless Angel
 value=5
 rarity=3
 type=Creature
@@ -2701,7 +2701,7 @@ toughness=7
 ability=flying
 timing=main
 
-258:Rampaging Baloths
+>Rampaging Baloths
 value=5
 rarity=3
 type=Creature
@@ -2714,7 +2714,7 @@ toughness=6
 ability=trample
 timing=main
 
-260:Trumpet Blast
+>Trumpet Blast
 value=3
 rarity=1
 type=Instant
@@ -2723,7 +2723,7 @@ converted=3
 cost={2}{R}
 timing=pump
 
-261:Forest
+>Forest
 value=2
 rarity=0
 type=Basic,Land
@@ -2732,7 +2732,7 @@ mana=g4
 basic=g
 timing=land
 
-262:Island
+>Island
 value=2
 rarity=0
 type=Basic,Land
@@ -2741,7 +2741,7 @@ mana=u4
 basic=u
 timing=land
 
-263:Mountain
+>Mountain
 value=2
 rarity=0
 type=Basic,Land
@@ -2750,7 +2750,7 @@ mana=r4
 basic=r
 timing=land
 
-264:Plains
+>Plains
 value=2
 rarity=0
 type=Basic,Land
@@ -2759,7 +2759,7 @@ mana=w4
 basic=w
 timing=land
 
-265:Swamp
+>Swamp
 value=2
 rarity=0
 type=Basic,Land
@@ -2768,7 +2768,7 @@ mana=b4
 basic=b
 timing=land
 
-266:Goblin Deathraiders
+>Goblin Deathraiders
 value=2
 rarity=1
 type=Creature
@@ -2781,7 +2781,7 @@ toughness=1
 ability=trample
 timing=main
 
-268:Taurean Mauler
+>Taurean Mauler
 value=3
 rarity=2
 type=Creature
@@ -2794,7 +2794,7 @@ toughness=2
 ability=changeling
 timing=fmain
 
-269:Wort, Boggart Auntie
+>Wort, Boggart Auntie
 value=4
 rarity=3
 type=Legendary,Creature
@@ -2807,7 +2807,7 @@ toughness=3
 ability=fear
 timing=main
 
-270:Surveilling Sprite
+>Surveilling Sprite
 value=2
 rarity=1
 type=Creature
@@ -2820,7 +2820,7 @@ toughness=1
 ability=flying
 timing=main
 
-271:Spider Umbra
+>Spider Umbra
 value=2
 rarity=1
 type=Enchantment
@@ -2833,7 +2833,7 @@ toughness=1
 ability=reach,totem armor
 timing=aura
 
-272:Rage Nimbus
+>Rage Nimbus
 value=3
 rarity=2
 type=Creature
@@ -2846,7 +2846,7 @@ toughness=3
 ability=defender,flying
 timing=smain
 
-273:Kinsbaile Cavalier
+>Kinsbaile Cavalier
 value=3
 rarity=2
 type=Creature
@@ -2859,7 +2859,7 @@ toughness=2
 static=player
 timing=fmain
 
-274:Kalonian Behemoth
+>Kalonian Behemoth
 value=5
 rarity=3
 type=Creature
@@ -2872,7 +2872,7 @@ toughness=9
 ability=shroud
 timing=fmain
 
-276:Kiss of the Amesha
+>Kiss of the Amesha
 value=3
 rarity=2
 type=Sorcery
@@ -2881,7 +2881,7 @@ converted=6
 cost={4}{W}{U}
 timing=draw
 
-278:Vampire Nighthawk
+>Vampire Nighthawk
 value=3
 rarity=1
 type=Creature
@@ -2894,7 +2894,7 @@ toughness=3
 ability=flying,deathtouch,lifelink
 timing=main
 
-279:Rith, the Awakener
+>Rith, the Awakener
 value=5
 rarity=3
 type=Legendary,Creature
@@ -2907,7 +2907,7 @@ toughness=6
 ability=flying
 timing=main
 
-280:Mana Leak
+>Mana Leak
 value=2
 rarity=1
 type=Instant
@@ -2916,7 +2916,7 @@ converted=2
 cost={1}{U}
 timing=counter
 
-281:Rhox War Monk
+>Rhox War Monk
 value=4
 rarity=2
 type=Creature
@@ -2929,7 +2929,7 @@ toughness=4
 ability=lifelink
 timing=smain
 
-282:Quietus Spike
+>Quietus Spike
 value=4
 rarity=2
 type=Artifact
@@ -2940,7 +2940,7 @@ equip={3}
 ability=deathtouch
 timing=equipment
 
-283:Specter's Shroud
+>Specter's Shroud
 value=3
 rarity=2
 type=Artifact
@@ -2952,7 +2952,7 @@ power=1
 toughness=0
 timing=equipment
 
-284:Vulshok Battlegear
+>Vulshok Battlegear
 value=4
 rarity=2
 type=Artifact
@@ -2964,7 +2964,7 @@ power=3
 toughness=3
 timing=equipment
 
-285:Slagwurm Armor
+>Slagwurm Armor
 value=2
 rarity=2
 type=Artifact
@@ -2976,7 +2976,7 @@ power=0
 toughness=6
 timing=equipment
 
-286:Lightning Angel
+>Lightning Angel
 value=4
 rarity=2
 type=Creature
@@ -2989,7 +2989,7 @@ toughness=4
 ability=flying,vigilance,haste
 timing=fmain
 
-287:Oros, the Avenger
+>Oros, the Avenger
 value=5
 rarity=3
 type=Legendary,Creature
@@ -3002,7 +3002,7 @@ toughness=6
 ability=flying
 timing=main
 
-289:Wall of Frost
+>Wall of Frost
 value=3
 rarity=1
 type=Creature
@@ -3015,7 +3015,7 @@ toughness=7
 ability=defender
 timing=smain
 
-290:Absorb
+>Absorb
 value=3
 rarity=2
 type=Instant
@@ -3024,28 +3024,28 @@ converted=3
 cost={W}{U}{U}
 timing=counter
 
-293:Stirring Wildwood
+>Stirring Wildwood
 value=4
 rarity=1
 type=Land
 mana=g3w3
 timing=tapland
 
-295:Creeping Tar Pit
+>Creeping Tar Pit
 value=4
 rarity=1
 type=Land
 mana=u3b3
 timing=tapland
 
-297:Raging Ravine
+>Raging Ravine
 value=4
 rarity=1
 type=Land
 mana=r3g3
 timing=tapland
 
-300:Rupture Spire
+>Rupture Spire
 value=3
 rarity=1
 type=Land
@@ -3053,7 +3053,7 @@ mana=b3g3r3u3w3
 basic=bgruw
 timing=land
 
-301:Steam Vents
+>Steam Vents
 value=4
 rarity=1
 type=Land
@@ -3062,7 +3062,7 @@ mana=u3r3
 basic=ur
 timing=land
 
-303:Stonebrow, Krosan Hero
+>Stonebrow, Krosan Hero
 value=5
 rarity=3
 type=Legendary,Creature
@@ -3075,7 +3075,7 @@ toughness=4
 ability=trample
 timing=fmain
 
-305:Evacuation
+>Evacuation
 value=4
 removal=1
 rarity=3
@@ -3085,7 +3085,7 @@ converted=5
 cost={3}{U}{U}
 timing=removal
 
-306:Draining Whelk
+>Draining Whelk
 value=4
 rarity=3
 type=Creature
@@ -3098,7 +3098,7 @@ toughness=1
 ability=flash,flying
 timing=counterflash
 
-307:Man-o'-War
+>Man-o'-War
 value=3
 removal=2
 rarity=1
@@ -3111,7 +3111,7 @@ power=2
 toughness=2
 timing=fmain
 
-308:Cairn Wanderer
+>Cairn Wanderer
 value=4
 rarity=2
 type=Creature
@@ -3124,7 +3124,7 @@ toughness=4
 ability=changeling
 timing=main
 
-309:Captain of the Watch
+>Captain of the Watch
 value=5
 rarity=3
 type=Creature
@@ -3138,7 +3138,7 @@ ability=vigilance
 static=player
 timing=smain
 
-310:Wall of Bone
+>Wall of Bone
 value=3
 rarity=1
 type=Creature
@@ -3151,7 +3151,7 @@ toughness=4
 ability=defender
 timing=smain
 
-311:Safe Passage
+>Safe Passage
 value=3
 rarity=1
 type=Instant
@@ -3160,7 +3160,7 @@ converted=3
 cost={2}{W}
 timing=pump
 
-312:Baneslayer Angel
+>Baneslayer Angel
 value=5
 rarity=3
 type=Creature
@@ -3173,7 +3173,7 @@ toughness=5
 ability=flying,first strike,lifelink,protection from Demons,protection from Dragons
 timing=main
 
-313:Deadly Recluse
+>Deadly Recluse
 value=2
 rarity=1
 type=Creature
@@ -3186,7 +3186,7 @@ toughness=2
 ability=reach,deathtouch
 timing=smain
 
-314:Steppe Lynx
+>Steppe Lynx
 value=2
 rarity=2
 type=Creature
@@ -3198,7 +3198,7 @@ power=0
 toughness=1
 timing=main
 
-315:White Knight
+>White Knight
 value=3
 rarity=2
 type=Creature
@@ -3211,7 +3211,7 @@ toughness=2
 ability=first strike,protection from black
 timing=main
 
-316:Great Sable Stag
+>Great Sable Stag
 value=4
 rarity=2
 type=Creature
@@ -3224,7 +3224,7 @@ toughness=3
 ability=can't be countered,protection from blue,protection from black
 timing=main
 
-317:Goblin Chieftain
+>Goblin Chieftain
 value=3
 rarity=1
 type=Creature
@@ -3238,7 +3238,7 @@ ability=haste
 static=player
 timing=fmain
 
-318:Guardian Seraph
+>Guardian Seraph
 value=4
 rarity=2
 type=Creature
@@ -3251,7 +3251,7 @@ toughness=4
 ability=flying
 timing=fmain
 
-319:Sleep
+>Sleep
 value=4
 removal=1
 rarity=2
@@ -3261,7 +3261,7 @@ converted=4
 cost={2}{U}{U}
 timing=removal
 
-320:Earthquake
+>Earthquake
 value=3
 removal=2
 rarity=3
@@ -3271,7 +3271,7 @@ converted=1
 cost={X}{R}
 timing=removal
 
-321:Sign in Blood
+>Sign in Blood
 value=3
 rarity=2
 type=Sorcery
@@ -3280,7 +3280,7 @@ converted=2
 cost={B}{B}
 timing=draw
 
-323:Basilisk Collar
+>Basilisk Collar
 value=4
 rarity=2
 type=Artifact
@@ -3291,7 +3291,7 @@ equip={2}
 ability=deathtouch,lifelink
 timing=equipment
 
-324:Essence Scatter
+>Essence Scatter
 value=3
 rarity=1
 type=Instant
@@ -3300,7 +3300,7 @@ converted=2
 cost={1}{U}
 timing=counter
 
-325:Sphinx of Magosi
+>Sphinx of Magosi
 value=5
 rarity=3
 type=Creature
@@ -3313,7 +3313,7 @@ toughness=6
 ability=flying
 timing=main
 
-326:Goblin Artillery
+>Goblin Artillery
 value=3
 rarity=1
 type=Creature
@@ -3325,7 +3325,7 @@ power=1
 toughness=3
 timing=main
 
-327:Stormfront Pegasus
+>Stormfront Pegasus
 value=3
 rarity=1
 type=Creature
@@ -3338,7 +3338,7 @@ toughness=1
 ability=flying
 timing=main
 
-328:River Boa
+>River Boa
 value=2
 rarity=2
 type=Creature
@@ -3351,7 +3351,7 @@ toughness=1
 ability=islandwalk
 timing=main
 
-329:Guard Gomazoa
+>Guard Gomazoa
 value=3
 rarity=2
 type=Creature
@@ -3364,7 +3364,7 @@ toughness=3
 ability=defender,flying
 timing=smain
 
-330:Ethercaste Knight
+>Ethercaste Knight
 value=2
 rarity=1
 type=Artifact,Creature
@@ -3377,7 +3377,7 @@ toughness=3
 ability=exalted
 timing=fmain
 
-331:Skeletal Vampire
+>Skeletal Vampire
 value=5
 rarity=3
 type=Creature
@@ -3390,7 +3390,7 @@ toughness=3
 ability=flying
 timing=main
 
-332:Thundersong Trumpeter
+>Thundersong Trumpeter
 value=2
 rarity=1
 type=Creature
@@ -3402,7 +3402,7 @@ power=2
 toughness=1
 timing=smain
 
-333:Razorjaw Oni
+>Razorjaw Oni
 value=4
 rarity=2
 type=Creature
@@ -3415,7 +3415,7 @@ toughness=5
 static=all
 timing=fmain
 
-334:Trygon Predator
+>Trygon Predator
 value=4
 rarity=2
 type=Creature
@@ -3428,7 +3428,7 @@ toughness=3
 ability=flying
 timing=main
 
-335:Goblin Shortcutter
+>Goblin Shortcutter
 value=2
 rarity=1
 type=Creature
@@ -3440,7 +3440,7 @@ power=2
 toughness=1
 timing=fmain
 
-336:Qasali Pridemage
+>Qasali Pridemage
 value=3
 rarity=1
 type=Creature
@@ -3453,7 +3453,7 @@ toughness=2
 ability=exalted
 timing=fmain
 
-340:Glorious Anthem
+>Glorious Anthem
 value=4
 rarity=1
 type=Enchantment
@@ -3463,7 +3463,7 @@ cost={1}{W}{W}
 static=player
 timing=enchantment
 
-341:Glory of Warfare
+>Glory of Warfare
 value=4
 rarity=2
 type=Enchantment
@@ -3473,7 +3473,7 @@ cost={2}{R}{W}
 static=player
 timing=enchantment
 
-342:Hissing Miasma
+>Hissing Miasma
 value=3
 rarity=2
 type=Enchantment
@@ -3482,7 +3482,7 @@ converted=3
 cost={1}{B}{B}
 timing=enchantment
 
-343:Debtors' Knell
+>Debtors' Knell
 value=5
 rarity=3
 type=Enchantment
@@ -3491,7 +3491,7 @@ converted=7
 cost={4}{W/B}{W/B}{W/B}
 timing=enchantment
 
-344:Seal of Fire
+>Seal of Fire
 value=2
 removal=2
 rarity=2
@@ -3501,7 +3501,7 @@ converted=1
 cost={R}
 timing=enchantment
 
-345:Phyrexian Arena
+>Phyrexian Arena
 value=4
 rarity=3
 type=Enchantment
@@ -3510,7 +3510,7 @@ converted=3
 cost={1}{B}{B}
 timing=enchantment
 
-346:Quest for the Gemblades
+>Quest for the Gemblades
 value=3
 rarity=2
 type=Enchantment
@@ -3519,7 +3519,7 @@ converted=2
 cost={1}{G}
 timing=enchantment
 
-347:True Conviction
+>True Conviction
 value=4
 rarity=3
 type=Enchantment
@@ -3529,7 +3529,7 @@ cost={3}{W}{W}{W}
 static=player
 timing=enchantment
 
-348:Raking Canopy
+>Raking Canopy
 value=3
 rarity=2
 type=Enchantment
@@ -3538,7 +3538,7 @@ converted=3
 cost={1}{G}{G}
 timing=enchantment
 
-349:Rise of the Hobgoblins
+>Rise of the Hobgoblins
 value=3
 rarity=1
 type=Enchantment
@@ -3547,7 +3547,7 @@ converted=2
 cost={R/W}{R/W}
 timing=enchantment
 
-350:Halcyon Glaze
+>Halcyon Glaze
 value=4
 rarity=2
 type=Enchantment
@@ -3556,7 +3556,7 @@ converted=3
 cost={1}{U}{U}
 timing=enchantment
 
-351:Dissipation Field
+>Dissipation Field
 value=4
 rarity=3
 type=Enchantment
@@ -3565,7 +3565,7 @@ converted=4
 cost={2}{U}{U}
 timing=enchantment
 
-352:Levitation
+>Levitation
 value=3
 rarity=2
 type=Enchantment
@@ -3575,7 +3575,7 @@ cost={2}{U}{U}
 static=player
 timing=enchantment
 
-353:Promise of Bunrei
+>Promise of Bunrei
 value=4
 rarity=2
 type=Enchantment
@@ -3584,7 +3584,7 @@ converted=3
 cost={2}{W}
 timing=enchantment
 
-354:Seal of Doom
+>Seal of Doom
 value=3
 removal=3
 rarity=2
@@ -3594,7 +3594,7 @@ converted=3
 cost={2}{B}
 timing=enchantment
 
-355:Fires of Yavimaya
+>Fires of Yavimaya
 value=4
 rarity=1
 type=Enchantment
@@ -3603,7 +3603,7 @@ converted=3
 cost={1}{R}{G}
 timing=enchantment
 
-356:Trusty Machete
+>Trusty Machete
 value=2
 rarity=1
 type=Artifact
@@ -3615,7 +3615,7 @@ power=2
 toughness=1
 timing=equipment
 
-357:Maelstrom Pulse
+>Maelstrom Pulse
 value=4
 removal=5
 rarity=2
@@ -3625,7 +3625,7 @@ converted=3
 cost={1}{B}{G}
 timing=removal
 
-358:Solemn Offering
+>Solemn Offering
 value=3
 removal=1
 rarity=1
@@ -3635,7 +3635,7 @@ converted=3
 cost={2}{W}
 timing=removal
 
-359:Naturalize
+>Naturalize
 value=2
 removal=1
 rarity=1
@@ -3645,7 +3645,7 @@ converted=2
 cost={1}{G}
 timing=removal
 
-361:Into the Roil
+>Into the Roil
 value=3
 removal=2
 rarity=2
@@ -3655,7 +3655,7 @@ converted=2
 cost={1}{U}
 timing=removal
 
-362:Unmake
+>Unmake
 value=4
 removal=5
 rarity=2
@@ -3665,7 +3665,7 @@ converted=3
 cost={W/B}{W/B}{W/B}
 timing=removal
 
-363:Mnemonic Wall
+>Mnemonic Wall
 value=3
 rarity=1
 type=Creature
@@ -3678,7 +3678,7 @@ toughness=4
 ability=defender
 timing=main
 
-364:Ethersworn Adjudicator
+>Ethersworn Adjudicator
 value=4
 rarity=2
 type=Artifact,Creature
@@ -3691,7 +3691,7 @@ toughness=4
 ability=flying
 timing=smain
 
-365:Stuffy Doll
+>Stuffy Doll
 value=4
 rarity=2
 type=Artifact,Creature
@@ -3703,7 +3703,7 @@ toughness=1
 ability=indestructible
 timing=smain
 
-366:Guul Draz Specter
+>Guul Draz Specter
 value=4
 rarity=2
 type=Creature
@@ -3716,7 +3716,7 @@ toughness=2
 ability=flying
 timing=main
 
-367:Mirror Entity
+>Mirror Entity
 value=4
 rarity=2
 type=Creature
@@ -3729,7 +3729,7 @@ toughness=1
 ability=changeling
 timing=fmain
 
-370:Harmonize
+>Harmonize
 value=4
 rarity=2
 type=Sorcery
@@ -3738,7 +3738,7 @@ converted=4
 cost={2}{G}{G}
 timing=draw
 
-371:Repulse
+>Repulse
 value=3
 removal=2
 rarity=1
@@ -3748,7 +3748,7 @@ converted=3
 cost={2}{U}
 timing=removal
 
-372:Countersquall
+>Countersquall
 value=3
 rarity=2
 type=Instant
@@ -3757,7 +3757,7 @@ converted=2
 cost={U}{B}
 timing=counter
 
-373:Glen Elendra Archmage
+>Glen Elendra Archmage
 value=3
 rarity=2
 type=Creature
@@ -3770,7 +3770,7 @@ toughness=2
 ability=flying,persist
 timing=fmain
 
-374:Venser, Shaper Savant
+>Venser, Shaper Savant
 value=4
 rarity=3
 type=Legendary,Creature
@@ -3783,7 +3783,7 @@ toughness=2
 ability=flash
 timing=counterflash
 
-380:Akoum Refuge
+>Akoum Refuge
 value=3
 rarity=1
 type=Land
@@ -3791,7 +3791,7 @@ mana=b3r3
 basic=br
 timing=tapland
 
-381:Graypelt Refuge
+>Graypelt Refuge
 value=3
 rarity=1
 type=Land
@@ -3799,7 +3799,7 @@ mana=g3w3
 basic=gw
 timing=tapland
 
-382:Jwar Isle Refuge
+>Jwar Isle Refuge
 value=3
 rarity=1
 type=Land
@@ -3807,7 +3807,7 @@ mana=u3b3
 basic=ub
 timing=tapland
 
-383:Kazandu Refuge
+>Kazandu Refuge
 value=3
 rarity=1
 type=Land
@@ -3815,7 +3815,7 @@ mana=r3g3
 basic=rg
 timing=tapland
 
-384:Sejiri Refuge
+>Sejiri Refuge
 value=3
 rarity=1
 type=Land
@@ -3823,7 +3823,7 @@ mana=w3u3
 basic=wu
 timing=tapland
 
-385:Day of Judgment
+>Day of Judgment
 value=4
 removal=2
 rarity=2
@@ -3833,7 +3833,7 @@ converted=4
 cost={2}{W}{W}
 timing=removal
 
-386:Disfigure
+>Disfigure
 value=2
 removal=2
 rarity=1
@@ -3843,7 +3843,7 @@ converted=1
 cost={B}
 timing=removal
 
-387:Leonin Scimitar
+>Leonin Scimitar
 value=2
 rarity=1
 type=Artifact
@@ -3855,7 +3855,7 @@ power=1
 toughness=1
 timing=equipment
 
-388:Spidersilk Net
+>Spidersilk Net
 value=1
 rarity=1
 type=Artifact
@@ -3868,7 +3868,7 @@ toughness=2
 ability=reach
 timing=equipment
 
-389:Angelic Shield
+>Angelic Shield
 value=3
 removal=1
 rarity=1
@@ -3879,7 +3879,7 @@ cost={W}{U}
 static=player
 timing=enchantment
 
-390:Ravenous Baloth
+>Ravenous Baloth
 value=4
 rarity=2
 type=Creature
@@ -3891,7 +3891,7 @@ power=4
 toughness=4
 timing=fmain
 
-391:Serendib Efreet
+>Serendib Efreet
 value=4
 rarity=2
 type=Creature
@@ -3904,7 +3904,7 @@ toughness=4
 ability=flying
 timing=main
 
-392:Cinder Elemental
+>Cinder Elemental
 value=3
 rarity=1
 type=Creature
@@ -3916,7 +3916,7 @@ power=2
 toughness=2
 timing=smain
 
-393:Godhead of Awe
+>Godhead of Awe
 value=5
 removal=3
 rarity=3
@@ -3931,7 +3931,7 @@ ability=flying
 static=all
 timing=smain
 
-394:Rumbling Slum
+>Rumbling Slum
 value=4
 rarity=2
 type=Creature
@@ -3943,7 +3943,7 @@ power=5
 toughness=5
 timing=main
 
-395:Ronin Warclub
+>Ronin Warclub
 value=3
 rarity=2
 type=Artifact
@@ -3955,7 +3955,7 @@ power=2
 toughness=1
 timing=enchantment
 
-396:Sword of Light and Shadow
+>Sword of Light and Shadow
 value=5
 rarity=3
 type=Artifact
@@ -3968,7 +3968,7 @@ toughness=2
 ability=protection from white,protection from black
 timing=equipment
 
-397:Fervent Charge
+>Fervent Charge
 value=4
 rarity=2
 type=Enchantment
@@ -3977,7 +3977,7 @@ converted=4
 cost={1}{W}{B}{R}
 timing=enchantment
 
-398:Dragon Roost
+>Dragon Roost
 value=4
 rarity=3
 type=Enchantment
@@ -3986,7 +3986,7 @@ converted=6
 cost={4}{R}{R}
 timing=enchantment
 
-399:Quest for the Gravelord
+>Quest for the Gravelord
 value=3
 rarity=2
 type=Enchantment
@@ -3995,7 +3995,7 @@ converted=1
 cost={B}
 timing=enchantment
 
-400:Elephant Guide
+>Elephant Guide
 value=4
 rarity=2
 type=Enchantment
@@ -4007,7 +4007,7 @@ power=3
 toughness=3
 timing=aura
 
-401:Griffin Guide
+>Griffin Guide
 value=4
 rarity=2
 type=Enchantment
@@ -4020,7 +4020,7 @@ toughness=2
 ability=flying
 timing=aura
 
-402:Rancor
+>Rancor
 value=3
 rarity=2
 type=Enchantment
@@ -4033,7 +4033,7 @@ toughness=0
 ability=trample
 timing=aura
 
-403:Pacifism
+>Pacifism
 value=3
 removal=3
 rarity=2
@@ -4045,7 +4045,7 @@ cost={1}{W}
 ability=can't attack or block
 timing=tapping
 
-404:Serra's Embrace
+>Serra's Embrace
 value=4
 rarity=2
 type=Enchantment
@@ -4058,7 +4058,7 @@ toughness=2
 ability=flying,vigilance
 timing=aura
 
-405:Clinging Darkness
+>Clinging Darkness
 value=3
 removal=1
 rarity=2
@@ -4071,7 +4071,7 @@ power=-4
 toughness=-1
 timing=removal
 
-406:Dust Corona
+>Dust Corona
 value=2
 rarity=1
 type=Enchantment
@@ -4084,7 +4084,7 @@ toughness=0
 ability=can't be blocked by creatures with flying
 timing=aura
 
-407:Goblin War Paint
+>Goblin War Paint
 value=3
 rarity=1
 type=Enchantment
@@ -4097,7 +4097,7 @@ toughness=2
 ability=haste
 timing=aura
 
-408:Epic Proportions
+>Epic Proportions
 value=4
 rarity=3
 type=Enchantment
@@ -4110,7 +4110,7 @@ toughness=5
 ability=flash,trample
 timing=pump
 
-409:Galvanic Arc
+>Galvanic Arc
 value=3
 removal=3
 rarity=2
@@ -4122,7 +4122,7 @@ cost={2}{R}
 ability=first strike
 timing=removal
 
-410:Fists of Ironwood
+>Fists of Ironwood
 value=3
 rarity=1
 type=Enchantment
@@ -4133,7 +4133,7 @@ cost={1}{G}
 ability=trample
 timing=aura
 
-411:Flight of Fancy
+>Flight of Fancy
 value=4
 rarity=2
 type=Enchantment
@@ -4144,7 +4144,7 @@ cost={3}{U}
 ability=flying
 timing=aura
 
-412:Lightning Talons
+>Lightning Talons
 value=3
 rarity=2
 type=Enchantment
@@ -4157,7 +4157,7 @@ toughness=0
 ability=first strike
 timing=aura
 
-413:Narcolepsy
+>Narcolepsy
 value=3
 removal=2
 rarity=2
@@ -4168,7 +4168,7 @@ converted=2
 cost={1}{U}
 timing=nextturn
 
-416:Pillory of the Sleepless
+>Pillory of the Sleepless
 value=4
 removal=4
 rarity=2
@@ -4180,7 +4180,7 @@ cost={1}{W}{B}
 ability=can't attack or block
 timing=tapping
 
-417:Protective Bubble
+>Protective Bubble
 value=4
 rarity=2
 type=Enchantment
@@ -4191,7 +4191,7 @@ cost={3}{U}
 ability=unblockable,shroud
 timing=aura
 
-418:Torpor Dust
+>Torpor Dust
 value=3
 rarity=2
 type=Enchantment
@@ -4204,7 +4204,7 @@ toughness=0
 ability=flash
 timing=removal
 
-419:Weakness
+>Weakness
 value=3
 removal=1
 rarity=1
@@ -4217,7 +4217,7 @@ power=-2
 toughness=-1
 timing=removal
 
-420:Deluge
+>Deluge
 value=3
 removal=1
 rarity=1
@@ -4227,7 +4227,7 @@ converted=3
 cost={2}{U}
 timing=tapping
 
-421:Plummet
+>Plummet
 value=3
 removal=3
 rarity=2
@@ -4237,7 +4237,7 @@ converted=2
 cost={1}{G}
 timing=removal
 
-422:Recover
+>Recover
 value=3
 rarity=1
 type=Sorcery
@@ -4246,7 +4246,7 @@ converted=3
 cost={2}{B}
 timing=draw
 
-423:Wurmcoil Engine
+>Wurmcoil Engine
 value=5
 rarity=3
 type=Artifact,Creature
@@ -4258,7 +4258,7 @@ toughness=6
 ability=deathtouch,lifelink
 timing=main
 
-424:Time Warp
+>Time Warp
 value=5
 rarity=2
 type=Sorcery
@@ -4267,7 +4267,7 @@ converted=5
 cost={3}{U}{U}
 timing=nextturn
 
-440:Dragonskull Summit
+>Dragonskull Summit
 value=4
 rarity=1
 type=Land
@@ -4275,7 +4275,7 @@ mana=b3r3
 basic=br
 timing=land
 
-441:Drowned Catacomb
+>Drowned Catacomb
 value=4
 rarity=1
 type=Land
@@ -4283,7 +4283,7 @@ mana=u3b3
 basic=ub
 timing=land
 
-442:Glacial Fortress
+>Glacial Fortress
 value=4
 rarity=1
 type=Land
@@ -4291,7 +4291,7 @@ mana=w3u3
 basic=wu
 timing=land
 
-443:Rootbound Crag
+>Rootbound Crag
 value=4
 rarity=1
 type=Land
@@ -4299,7 +4299,7 @@ mana=r3g3
 basic=rg
 timing=land
 
-444:Sunpetal Grove
+>Sunpetal Grove
 value=4
 rarity=1
 type=Land
@@ -4307,7 +4307,7 @@ mana=g3w3
 basic=gw
 timing=land
 
-450:Platinum Angel
+>Platinum Angel
 value=5
 rarity=3
 type=Artifact,Creature
@@ -4319,7 +4319,7 @@ toughness=4
 ability=flying
 timing=fmain
 
-451:Beacon of Destruction
+>Beacon of Destruction
 value=4
 removal=4
 rarity=2
@@ -4329,7 +4329,7 @@ converted=5
 cost={3}{R}{R}
 timing=removal
 
-452:Chain Reaction
+>Chain Reaction
 value=4
 removal=2
 rarity=2
@@ -4339,7 +4339,7 @@ converted=4
 cost={2}{R}{R}
 timing=removal
 
-453:Stupor
+>Stupor
 value=3
 rarity=1
 type=Sorcery
@@ -4348,7 +4348,7 @@ converted=3
 cost={2}{B}
 timing=removal
 
-454:Kindled Fury
+>Kindled Fury
 value=2
 rarity=1
 type=Instant
@@ -4357,7 +4357,7 @@ converted=1
 cost={R}
 timing=pump
 
-455:Exhaustion
+>Exhaustion
 value=3
 removal=1
 rarity=1
@@ -4367,7 +4367,7 @@ converted=3
 cost={2}{U}
 timing=nextturn
 
-460:Kitesail Apprentice
+>Kitesail Apprentice
 value=1
 rarity=1
 type=Creature
@@ -4379,7 +4379,7 @@ power=1
 toughness=1
 timing=main
 
-461:Ruthless Cullblade
+>Ruthless Cullblade
 value=2
 rarity=1
 type=Creature
@@ -4391,7 +4391,7 @@ power=2
 toughness=1
 timing=main
 
-462:Dragonmaster Outcast
+>Dragonmaster Outcast
 value=2
 rarity=2
 type=Creature
@@ -4403,7 +4403,7 @@ power=1
 toughness=1
 timing=smain
 
-463:Novablast Wurm
+>Novablast Wurm
 value=5
 rarity=3
 type=Creature
@@ -4415,7 +4415,7 @@ power=7
 toughness=7
 timing=smain
 
-464:Bestial Menace
+>Bestial Menace
 value=4
 rarity=2
 type=Sorcery
@@ -4424,14 +4424,14 @@ converted=5
 cost={3}{G}{G}
 timing=main
 
-465:Celestial Colonnade
+>Celestial Colonnade
 value=4
 rarity=1
 type=Land
 mana=w3u3
 timing=tapland
 
-466:Inspirit
+>Inspirit
 value=3
 rarity=1
 type=Instant
@@ -4440,7 +4440,7 @@ converted=3
 cost={2}{W}
 timing=tapping
 
-467:Shivan Wurm
+>Shivan Wurm
 value=4
 rarity=2
 type=Creature
@@ -4453,7 +4453,7 @@ toughness=7
 ability=trample
 timing=main
 
-468:Vedalken Outlander
+>Vedalken Outlander
 value=2
 rarity=1
 type=Artifact,Creature
@@ -4466,7 +4466,7 @@ toughness=2
 ability=protection from red
 timing=smain
 
-469:Teneb, the Harvester
+>Teneb, the Harvester
 value=5
 rarity=3
 type=Legendary,Creature
@@ -4479,7 +4479,7 @@ toughness=6
 ability=flying
 timing=main
 
-470:Ogre's Cleaver
+>Ogre's Cleaver
 value=3
 rarity=2
 type=Artifact
@@ -4491,7 +4491,7 @@ power=5
 toughness=0
 timing=equipment
 
-471:Goliath Sphinx
+>Goliath Sphinx
 value=5
 rarity=3
 type=Creature
@@ -4504,7 +4504,7 @@ toughness=7
 ability=flying
 timing=main
 
-472:Mordant Dragon
+>Mordant Dragon
 value=5
 rarity=3
 type=Creature
@@ -4517,7 +4517,7 @@ toughness=5
 ability=flying
 timing=main
 
-473:Butcher of Malakir
+>Butcher of Malakir
 value=5
 rarity=3
 type=Creature
@@ -4530,7 +4530,7 @@ toughness=4
 ability=flying
 timing=main
 
-474:Kazuul, Tyrant of the Cliffs
+>Kazuul, Tyrant of the Cliffs
 value=5
 rarity=3
 type=Legendary,Creature
@@ -4542,7 +4542,7 @@ power=5
 toughness=4
 timing=main
 
-475:Kitesail
+>Kitesail
 value=2
 rarity=2
 type=Artifact
@@ -4555,7 +4555,7 @@ toughness=0
 ability=flying
 timing=equipment
 
-476:Chandra's Spitfire
+>Chandra's Spitfire
 value=3
 rarity=2
 type=Creature
@@ -4568,7 +4568,7 @@ toughness=3
 timing=fmain
 ability=flying
 
-477:Veteran's Reflexes
+>Veteran's Reflexes
 value=2
 rarity=1
 type=Instant
@@ -4577,7 +4577,7 @@ converted=1
 cost={W}
 timing=tapping
 
-478:Smother
+>Smother
 value=3
 removal=2
 rarity=1
@@ -4587,7 +4587,7 @@ converted=2
 cost={1}{B}
 timing=removal
 
-479:Vault Skyward
+>Vault Skyward
 value=1
 rarity=1
 type=Instant
@@ -4596,7 +4596,7 @@ converted=1
 cost={U}
 timing=tapping
 
-480:Archon of Redemption
+>Archon of Redemption
 value=4
 rarity=2
 type=Creature
@@ -4609,7 +4609,7 @@ toughness=4
 ability=flying
 timing=smain
 
-481:Air Servant
+>Air Servant
 value=4
 rarity=1
 type=Creature
@@ -4622,7 +4622,7 @@ toughness=3
 ability=flying
 timing=main
 
-482:Wrexial, the Risen Deep
+>Wrexial, the Risen Deep
 value=5
 rarity=3
 type=Legendary,Creature
@@ -4635,7 +4635,7 @@ toughness=8
 ability=islandwalk,swampwalk
 timing=smain
 
-483:Armadillo Cloak
+>Armadillo Cloak
 value=4
 rarity=2
 type=Enchantment
@@ -4648,7 +4648,7 @@ toughness=2
 ability=trample
 timing=aura
 
-484:Fallen Angel
+>Fallen Angel
 value=4
 rarity=2
 type=Creature
@@ -4661,7 +4661,7 @@ toughness=3
 ability=flying
 timing=main
 
-485:Corpsehatch
+>Corpsehatch
 value=4
 removal=3
 rarity=2
@@ -4671,7 +4671,7 @@ converted=5
 cost={3}{B}{B}
 timing=removal
 
-486:Reanimate
+>Reanimate
 value=3
 rarity=2
 type=Sorcery
@@ -4680,7 +4680,7 @@ converted=1
 cost={B}
 timing=main
 
-487:Darkslick Drake
+>Darkslick Drake
 value=3
 rarity=1
 type=Creature
@@ -4693,7 +4693,7 @@ toughness=4
 ability=flying
 timing=main
 
-489:Kavu Titan
+>Kavu Titan
 value=3
 rarity=2
 type=Creature
@@ -4705,7 +4705,7 @@ power=2
 toughness=2
 timing=main
 
-490:Burst Lightning
+>Burst Lightning
 value=2
 removal=3
 rarity=1
@@ -4715,7 +4715,7 @@ converted=1
 cost={R}
 timing=removal
 
-491:Rite of Replication
+>Rite of Replication
 value=4
 rarity=2
 type=Sorcery
@@ -4724,7 +4724,7 @@ converted=4
 cost={2}{U}{U}
 timing=main
 
-492:Marsh Casualties
+>Marsh Casualties
 value=3
 removal=2
 rarity=2
@@ -4734,7 +4734,7 @@ converted=2
 cost={B}{B}
 timing=removal
 
-487:Lightkeeper of Emeria
+>Lightkeeper of Emeria
 value=3
 rarity=1
 type=Creature
@@ -4747,7 +4747,7 @@ toughness=4
 ability=flying
 timing=main
 
-488:Wolfbriar Elemental
+>Wolfbriar Elemental
 value=5
 rarity=2
 type=Creature
@@ -4759,7 +4759,7 @@ power=4
 toughness=4
 timing=main
 
-489:Sphinx of Lost Truths
+>Sphinx of Lost Truths
 value=4
 rarity=2
 type=Creature
@@ -4772,7 +4772,7 @@ toughness=5
 ability=flying
 timing=main
 
-490:Fire Servant
+>Fire Servant
 value=4
 rarity=2
 type=Creature
@@ -4784,7 +4784,7 @@ power=4
 toughness=3
 timing=main
 
-491:Strider Harness
+>Strider Harness
 value=3
 rarity=2
 type=Artifact
@@ -4797,7 +4797,7 @@ toughness=1
 ability=haste
 timing=equipment
 
-492:Accorder's Shield
+>Accorder's Shield
 value=2
 rarity=2
 type=Artifact
@@ -4810,7 +4810,7 @@ toughness=3
 ability=vigilance
 timing=equipment
 
-500:Akroma's Memorial
+>Akroma's Memorial
 value=5
 rarity=3
 type=Legendary,Artifact
@@ -4819,7 +4819,7 @@ cost={7}
 static=player
 timing=artifact
 
-501:Cumber Stone
+>Cumber Stone
 value=3
 removal=1
 rarity=2
@@ -4830,7 +4830,7 @@ cost={3}{U}
 static=opponent
 timing=artifact
 
-502:Mind Stone
+>Mind Stone
 value=3
 rarity=1
 type=Artifact
@@ -4838,7 +4838,7 @@ converted=2
 cost={2}
 timing=artifact
 
-503:Eldrazi Monument
+>Eldrazi Monument
 value=5
 rarity=3
 type=Artifact
@@ -4847,7 +4847,7 @@ cost={5}
 static=player
 timing=fmain
 
-504:Chimeric Mass
+>Chimeric Mass
 value=3
 rarity=2
 type=Artifact
@@ -4855,7 +4855,7 @@ converted=0
 cost={X}
 timing=artifact
 
-505:Lotus Petal
+>Lotus Petal
 value=3
 rarity=2
 type=Artifact
@@ -4863,7 +4863,7 @@ converted=0
 cost={0}
 timing=artifact
 
-506:Moonglove Extract
+>Moonglove Extract
 value=3
 removal=2
 rarity=2
@@ -4872,7 +4872,7 @@ converted=3
 cost={3}
 timing=artifact
 
-507:Serrated Arrows
+>Serrated Arrows
 value=4
 removal=2
 rarity=2
@@ -4881,7 +4881,7 @@ converted=4
 cost={4}
 timing=artifact
 
-508:Skullcage
+>Skullcage
 value=4
 rarity=2
 type=Artifact
@@ -4889,7 +4889,7 @@ converted=4
 cost={4}
 timing=smain
 
-509:Trip Noose
+>Trip Noose
 value=3
 removal=2
 rarity=2
@@ -4898,7 +4898,7 @@ converted=2
 cost={2}
 timing=artifact
 
-510:Mighty Leap
+>Mighty Leap
 value=3
 rarity=1
 type=Instant
@@ -4907,7 +4907,7 @@ converted=2
 cost={1}{W}
 timing=pump
 
-520:Liliana's Specter
+>Liliana's Specter
 value=3
 rarity=1
 type=Creature
@@ -4920,7 +4920,7 @@ toughness=1
 ability=flying
 timing=fmain
 
-521:Charging Troll
+>Charging Troll
 value=4
 rarity=2
 type=Creature
@@ -4933,7 +4933,7 @@ toughness=3
 ability=vigilance
 timing=main
 
-522:Bottle Gnomes
+>Bottle Gnomes
 value=3
 rarity=2
 type=Artifact,Creature
@@ -4944,7 +4944,7 @@ power=1
 toughness=3
 timing=main
 
-523:Esper Battlemage
+>Esper Battlemage
 value=3
 rarity=2
 type=Artifact,Creature
@@ -4956,7 +4956,7 @@ power=2
 toughness=2
 timing=smain
 
-524:Tuktuk the Explorer
+>Tuktuk the Explorer
 value=4
 rarity=3
 type=Legendary,Creature
@@ -4969,7 +4969,7 @@ toughness=1
 ability=haste
 timing=fmain
 
-525:Eel Umbra
+>Eel Umbra
 value=3
 rarity=1
 type=Enchantment
@@ -4982,7 +4982,7 @@ toughness=1
 ability=flash,totem armor
 timing=pump
 
-526:Hyena Umbra
+>Hyena Umbra
 value=2
 rarity=1
 type=Enchantment
@@ -4995,7 +4995,7 @@ toughness=1
 ability=totem armor,first strike
 timing=aura
 
-527:Boar Umbra
+>Boar Umbra
 value=3
 rarity=1
 type=Enchantment
@@ -5008,7 +5008,7 @@ toughness=3
 ability=totem armor
 timing=aura
 
-528:Drake Umbra
+>Drake Umbra
 value=4
 rarity=2
 type=Enchantment
@@ -5021,7 +5021,7 @@ toughness=3
 ability=totem armor,flying
 timing=aura
 
-529:Volcanic Strength
+>Volcanic Strength
 value=3
 rarity=1
 type=Enchantment
@@ -5034,7 +5034,7 @@ toughness=2
 ability=mountainwalk
 timing=aura
 
-530:Sword of Vengeance
+>Sword of Vengeance
 value=4
 rarity=3
 type=Artifact
@@ -5047,7 +5047,7 @@ toughness=0
 ability=first strike,vigilance,trample,haste
 timing=equipment
 
-531:Blackcleave Cliffs
+>Blackcleave Cliffs
 value=4
 rarity=1
 type=Land
@@ -5055,7 +5055,7 @@ mana=b3r3
 basic=br
 timing=land
 
-532:Copperline Gorge
+>Copperline Gorge
 value=4
 rarity=1
 type=Land
@@ -5063,7 +5063,7 @@ mana=r3g3
 basic=rg
 timing=land
 
-533:Darkslick Shores
+>Darkslick Shores
 value=4
 rarity=1
 type=Land
@@ -5071,7 +5071,7 @@ mana=u3b3
 basic=ub
 timing=land
 
-534:Razorverge Thicket
+>Razorverge Thicket
 value=4
 rarity=1
 type=Land
@@ -5079,7 +5079,7 @@ mana=g3w3
 basic=gw
 timing=land
 
-535:Seachrome Coast
+>Seachrome Coast
 value=4
 rarity=1
 type=Land
@@ -5087,7 +5087,7 @@ mana=w3u3
 basic=wu
 timing=land
 
-536:Withstand Death
+>Withstand Death
 value=2
 rarity=1
 type=Instant
@@ -5096,7 +5096,7 @@ converted=1
 cost={G}
 timing=pump
 
-600:Student of Warfare
+>Student of Warfare
 value=2
 rarity=2
 type=Creature
@@ -5108,7 +5108,7 @@ power=1
 toughness=1
 timing=main
 
-601:Szadek, Lord of Secrets
+>Szadek, Lord of Secrets
 value=5
 rarity=3
 type=Legendary,Creature
@@ -5121,7 +5121,7 @@ toughness=5
 ability=flying
 timing=smain
 
-602:Sword of Body and Mind
+>Sword of Body and Mind
 value=5
 rarity=3
 type=Artifact
@@ -5134,7 +5134,7 @@ toughness=2
 ability=protection from green,protection from blue
 timing=equipment
 
-603:Bladed Pinions
+>Bladed Pinions
 value=2
 rarity=2
 type=Artifact
@@ -5145,7 +5145,7 @@ equip={2}
 ability=flying,first strike
 timing=equipment
 
-604:Gorgon Flail
+>Gorgon Flail
 value=3
 rarity=2
 type=Artifact
@@ -5158,7 +5158,7 @@ toughness=1
 ability=deathtouch
 timing=equipment
 
-605:Turn to Mist
+>Turn to Mist
 value=3
 removal=1
 rarity=1
@@ -5168,7 +5168,7 @@ converted=2
 cost={1}{W/U}
 timing=removal
 
-606:Ghost Council of Orzhova
+>Ghost Council of Orzhova
 value=4
 rarity=3
 type=Legendary,Creature
@@ -5180,7 +5180,7 @@ power=4
 toughness=4
 timing=main
 
-607:Mirran Crusader
+>Mirran Crusader
 value=4
 rarity=2
 type=Creature
@@ -5193,7 +5193,7 @@ toughness=2
 ability=double strike,protection from black,protection from green
 timing=main
 
-608:Woolly Thoctar
+>Woolly Thoctar
 value=4
 rarity=2
 type=Creature
@@ -5205,7 +5205,7 @@ power=5
 toughness=4
 timing=main
 
-609:Goblin Gaveleer
+>Goblin Gaveleer
 value=2
 rarity=1
 type=Creature
@@ -5218,7 +5218,7 @@ toughness=1
 ability=trample
 timing=main
 
-610:Esper Stormblade
+>Esper Stormblade
 value=3
 rarity=2
 type=Artifact,Creature
@@ -5230,7 +5230,7 @@ power=2
 toughness=1
 timing=main
 
-611:Grixis Grimblade
+>Grixis Grimblade
 value=3
 rarity=2
 type=Creature
@@ -5242,7 +5242,7 @@ power=2
 toughness=1
 timing=main
 
-612:Bant Sureblade
+>Bant Sureblade
 value=3
 rarity=2
 type=Creature
@@ -5254,7 +5254,7 @@ power=2
 toughness=1
 timing=main
 
-613:Last Gasp
+>Last Gasp
 value=3
 removal=2
 rarity=1
@@ -5264,7 +5264,7 @@ converted=2
 cost={1}{B}
 timing=removal
 
-614:Smash to Smithereens
+>Smash to Smithereens
 value=2
 removal=1
 rarity=1
@@ -5274,7 +5274,7 @@ converted=2
 cost={1}{R}
 timing=removal
 
-615:Volcanic Fallout
+>Volcanic Fallout
 value=3
 removal=2
 rarity=2
@@ -5285,7 +5285,7 @@ cost={1}{R}{R}
 ability=can't be countered
 timing=removal
 
-616:Acidic Slime
+>Acidic Slime
 value=4
 removal=2
 rarity=2
@@ -5299,7 +5299,7 @@ toughness=2
 ability=deathtouch
 timing=fmain
 
-617:Archon of Justice
+>Archon of Justice
 value=4
 rarity=2
 type=Creature
@@ -5312,7 +5312,7 @@ toughness=4
 ability=flying
 timing=main
 
-618:Ember Hauler
+>Ember Hauler
 value=3
 rarity=2
 type=Creature
@@ -5324,7 +5324,7 @@ power=2
 toughness=2
 timing=fmain
 
-619:Fume Spitter
+>Fume Spitter
 value=2
 rarity=1
 type=Creature
@@ -5336,7 +5336,7 @@ power=1
 toughness=1
 timing=fmain
 
-620:Goblin Ruinblaster
+>Goblin Ruinblaster
 value=3
 rarity=2
 type=Creature
@@ -5349,7 +5349,7 @@ toughness=1
 ability=haste
 timing=fmain
 
-621:Mycoid Shepherd
+>Mycoid Shepherd
 value=4
 rarity=2
 type=Creature
@@ -5361,7 +5361,7 @@ power=5
 toughness=4
 timing=main
 
-622:Nemesis of Reason
+>Nemesis of Reason
 value=4
 rarity=2
 type=Creature
@@ -5373,7 +5373,7 @@ power=3
 toughness=7
 timing=smain
 
-623:Nulltread Gargantuan
+>Nulltread Gargantuan
 value=4
 rarity=2
 type=Creature
@@ -5385,7 +5385,7 @@ power=5
 toughness=6
 timing=smain
 
-624:Pierce Strider
+>Pierce Strider
 value=3
 rarity=2
 type=Artifact,Creature
@@ -5396,7 +5396,7 @@ power=3
 toughness=3
 timing=fmain
 
-625:Pongify
+>Pongify
 value=3
 removal=3
 rarity=2
@@ -5406,7 +5406,7 @@ converted=1
 cost={U}
 timing=removal
 
-626:Pulse of the Tangle
+>Pulse of the Tangle
 value=4
 rarity=1
 type=Sorcery
@@ -5415,7 +5415,7 @@ converted=3
 cost={1}{G}{G}
 timing=main
 
-627:Vampire Hexmage
+>Vampire Hexmage
 value=3
 rarity=2
 type=Creature
@@ -5428,7 +5428,7 @@ toughness=1
 ability=first strike
 timing=fmain
 
-628:Grave Titan
+>Grave Titan
 value=5
 rarity=3
 type=Creature
@@ -5441,7 +5441,7 @@ toughness=6
 ability=deathtouch
 timing=fmain
 
-629:Lord of Shatterskull Pass
+>Lord of Shatterskull Pass
 value=4
 rarity=2
 type=Creature
@@ -5453,7 +5453,7 @@ power=3
 toughness=3
 timing=main
 
-630:Nirkana Cutthroat
+>Nirkana Cutthroat
 value=3
 rarity=2
 type=Creature
@@ -5465,7 +5465,7 @@ power=3
 toughness=2
 timing=main
 
-631:Kitchen Finks
+>Kitchen Finks
 value=4
 rarity=2
 type=Creature
@@ -5478,7 +5478,7 @@ toughness=2
 ability=persist
 timing=main
 
-632:Lord of Extinction
+>Lord of Extinction
 value=5
 rarity=3
 type=Creature
@@ -5488,7 +5488,7 @@ converted=5
 cost={3}{B}{G}
 timing=smain
 
-633:Awakening Zone
+>Awakening Zone
 value=4
 rarity=2
 type=Enchantment
@@ -5497,7 +5497,7 @@ converted=3
 cost={2}{G}
 timing=enchantment
 
-634:Force Spike
+>Force Spike
 value=3
 rarity=1
 type=Instant
@@ -5506,7 +5506,7 @@ converted=1
 cost={U}
 timing=counter
 
-635:Kiki-Jiki, Mirror Breaker
+>Kiki-Jiki, Mirror Breaker
 value=5
 rarity=3
 type=Legendary,Creature
@@ -5519,7 +5519,7 @@ toughness=2
 ability=haste
 timing=fmain
 
-636:Twincast
+>Twincast
 value=3
 rarity=2
 type=Instant
@@ -5528,7 +5528,7 @@ converted=2
 cost={U}{U}
 timing=spell
 
-637:Echo Mage
+>Echo Mage
 value=3
 rarity=2
 type=Creature
@@ -5540,7 +5540,7 @@ power=2
 toughness=3
 timing=smain
 
-638:Ghostway
+>Ghostway
 value=3
 rarity=3
 type=Instant
@@ -5549,7 +5549,7 @@ converted=3
 cost={2}{W}
 timing=removal
 
-639:Brittle Effigy
+>Brittle Effigy
 value=3
 removal=4
 rarity=2
@@ -5558,7 +5558,7 @@ converted=1
 cost={1}
 timing=artifact
 
-640:Sylvok Lifestaff
+>Sylvok Lifestaff
 value=2
 rarity=2
 type=Artifact
@@ -5570,7 +5570,7 @@ power=1
 toughness=0
 timing=equipment
 
-641:Snake Umbra
+>Snake Umbra
 value=3
 rarity=2
 type=Enchantment
@@ -5583,7 +5583,7 @@ toughness=1
 ability=totem armor
 timing=aura
 
-642:Spitemare
+>Spitemare
 value=4
 rarity=2
 type=Creature
@@ -5595,7 +5595,7 @@ power=3
 toughness=3
 timing=main
 
-643:Wrecking Ball
+>Wrecking Ball
 value=3
 removal=4
 rarity=2
@@ -5605,7 +5605,7 @@ converted=4
 cost={2}{B}{R}
 timing=removal
 
-644:Sunblast Angel
+>Sunblast Angel
 value=5
 removal=2
 rarity=3
@@ -5619,7 +5619,7 @@ toughness=5
 ability=flying
 timing=fmain
 
-645:Predator Dragon
+>Predator Dragon
 value=5
 rarity=3
 type=Creature
@@ -5632,7 +5632,7 @@ toughness=4
 ability=flying,haste
 timing=fmain
 
-646:Mask of Memory
+>Mask of Memory
 value=3
 rarity=2
 type=Artifact
@@ -5642,7 +5642,7 @@ cost={2}
 equip={1}
 timing=equipment
 
-647:Soul Link
+>Soul Link
 value=3
 removal=1
 rarity=2
@@ -5653,7 +5653,7 @@ converted=3
 cost={1}{W}{B}
 timing=aura
 
-648:Vines of Vastwood
+>Vines of Vastwood
 value=3
 rarity=2
 type=Instant
@@ -5662,7 +5662,7 @@ converted=1
 cost={G}
 timing=pump
 
-649:Lone Missionary
+>Lone Missionary
 value=2
 rarity=1
 type=Creature
@@ -5674,7 +5674,7 @@ power=2
 toughness=1
 timing=fmain
 
-650:Followed Footsteps
+>Followed Footsteps
 value=4
 rarity=2
 type=Enchantment
@@ -5684,7 +5684,7 @@ converted=5
 cost={3}{U}{U}
 timing=aura
 
-651:Bellowing Tanglewurm
+>Bellowing Tanglewurm
 value=4
 rarity=2
 type=Creature
@@ -5698,7 +5698,7 @@ ability=intimidate
 static=player
 timing=fmain
 
-652:Hero of Bladehold
+>Hero of Bladehold
 value=4
 rarity=2
 type=Creature
@@ -5711,7 +5711,7 @@ toughness=4
 ability=battle cry
 timing=fmain
 
-653:Skullclamp
+>Skullclamp
 value=4
 rarity=3
 type=Artifact

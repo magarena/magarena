@@ -135,10 +135,10 @@ public class CardDefinitions {
 		while ((line=reader.readLine())!=null) {
 
 			line=line.trim();
-			int pos=line.indexOf(':');
-			if (pos>0) {
+			int pos=line.indexOf('>');
+			if (pos==0) {
 				checkCard(cardDefinition);
-				final String name=line.substring(pos+1);
+				final String name=line.substring(1);
 				cardDefinition=new MagicCardDefinition(name);
 				addDefinition(cardDefinition);
 			} else {
