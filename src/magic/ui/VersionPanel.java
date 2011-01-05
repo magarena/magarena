@@ -21,9 +21,8 @@ import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.BackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 
-public class VersionPanel extends TexturedPanel {
+public class VersionPanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 		
@@ -35,16 +34,17 @@ public class VersionPanel extends TexturedPanel {
 
 	private static final Border LOGO_BORDER=BorderFactory.createMatteBorder(2,2,2,2,new Color(0x8C,0x78,0x53));
 	
-	private final JPanel centerPanel;	
 	private final BackgroundLabel backgroundLabel;
+	private final JLabel versionLabel;
 	private final JLabel logoLabel;
 	private final CardViewer cardViewer;
 	
 	public VersionPanel() {
 
-		setLayout(new BorderLayout());
+		setLayout(null);
 
-		final JLabel versionLabel=new JLabel(VERSION_TEXT);
+		versionLabel=new JLabel(VERSION_TEXT);
+		versionLabel.setForeground(Color.WHITE);
 		versionLabel.setIcon(IconImages.CUBE);
 		versionLabel.setFont(FontsAndBorders.FONT2);
 		versionLabel.setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -55,7 +55,8 @@ public class VersionPanel extends TexturedPanel {
 		final ImageIcon logoIcon=new ImageIcon(IconImages.LOGO);
 		logoLabel=new JLabel(logoIcon);
 		logoLabel.setBorder(LOGO_BORDER);
-		logoLabel.setBounds(10,10,logoIcon.getIconWidth(),logoIcon.getIconHeight());
+		logoLabel.setSize(logoIcon.getIconWidth(),logoIcon.getIconHeight());
+		versionLabel.setSize(logoIcon.getIconWidth(),20);
 				
 		cardViewer=new CardViewer(false,"Random Card");
 		final List<MagicCardDefinition> spellCards=CardDefinitions.getInstance().getSpellCards();
@@ -63,23 +64,22 @@ public class VersionPanel extends TexturedPanel {
 		cardViewer.setCard(spellCards.get(index),0);
 		cardViewer.setSize(DefaultResolutionProfile.CARD_VIEWER_WIDTH,DefaultResolutionProfile.CARD_VIEWER_HEIGHT);
 		
-		centerPanel=new JPanel();
-		centerPanel.setLayout(null);
-		centerPanel.add(cardViewer);
-		centerPanel.add(logoLabel);
-		centerPanel.add(backgroundLabel);
-		add(centerPanel,BorderLayout.CENTER);
+		add(cardViewer);
+		add(versionLabel);
+		add(logoLabel);
+		add(backgroundLabel);
 		
-		centerPanel.addComponentListener(new ComponentAdapter()  {
+		addComponentListener(new ComponentAdapter()  {
 			
 			@Override
 			public void componentResized(final ComponentEvent event) {
 				
-				final Dimension size=centerPanel.getSize();
+				final Dimension size=getSize();
 				backgroundLabel.setSize(size);
 				final int lx=(size.width-logoLabel.getWidth()-cardViewer.getWidth()-10)/2;
 				final int ly=(size.height-logoLabel.getHeight())/2;
 				logoLabel.setLocation(lx>0?lx:0,ly>0?ly:0);
+				versionLabel.setLocation(lx+10,ly+10);
 				cardViewer.setLocation(size.width-cardViewer.getWidth()-10,size.height-cardViewer.getHeight()-10);
 			}
 		});
