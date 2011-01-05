@@ -9,6 +9,8 @@ import javax.swing.JPanel;
 
 import magic.data.IconImages;
 import magic.model.MagicTournament;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -37,6 +39,8 @@ public class TournamentViewer extends TexturedPanel {
 		
 	private JPanel createProgressPanel() {
 
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		
 		final int gamesPlayed=tournament.getGamesPlayed();
 		final int gamesWon=tournament.getGamesWon();		
 		final int percentage=getPercentage(gamesWon,gamesPlayed);
@@ -69,6 +73,7 @@ public class TournamentViewer extends TexturedPanel {
 			final JLabel gameLabel=new JLabel("Game "+tournament.getGameNr()+" of "+tournament.getConfiguration().getNrOfGames());
 			gameLabel.setHorizontalAlignment(JLabel.CENTER);
 			gameLabel.setFont(FontsAndBorders.FONT3);
+			gameLabel.setForeground(theme.getColor(Theme.COLOR_TEXT_FOREGROUND));
 			mainPanel.add(gameLabel,BorderLayout.CENTER);
 		}
 		
@@ -76,6 +81,7 @@ public class TournamentViewer extends TexturedPanel {
 		winLabel.setPreferredSize(new Dimension(0,24));
 		winLabel.setHorizontalAlignment(JLabel.CENTER);
 		winLabel.setIcon(IconImages.TROPHY);
+		winLabel.setForeground(theme.getColor(Theme.COLOR_TEXT_FOREGROUND));
 		mainPanel.add(winLabel,BorderLayout.SOUTH);
 				
 		return mainPanel;

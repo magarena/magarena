@@ -19,6 +19,7 @@ import javax.swing.border.Border;
 import magic.data.IconImages;
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
+import magic.ui.theme.Theme;
 import magic.ui.widget.BackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -65,7 +66,7 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 		final JPanel keywordsPanel=createKeywordsPanel();
 		keywordsPane.getViewport().add(keywordsPanel);
 		
-		backgroundLabel=new BackgroundLabel();
+		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_BACKGROUND);
 		backgroundLabel.setBounds(0,0,0,0);
 		add(backgroundLabel);
 		

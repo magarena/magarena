@@ -27,6 +27,8 @@ import magic.model.variable.MagicAttachmentLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
 import magic.model.variable.MagicStaticLocalVariable;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class MagicCardDefinition {
 
@@ -48,10 +50,6 @@ public class MagicCardDefinition {
 		}
 	};
 	
-	public static final Color COMMON_COLOR=Color.BLACK;
-	public static final Color UNCOMMON_COLOR=new Color(0x8C,0x78,0x53);
-	public static final Color RARE_COLOR=new Color(0xCD,0x7F,0x32);	
-	public static final Color RARITY_COLORS[]={COMMON_COLOR,COMMON_COLOR,UNCOMMON_COLOR,RARE_COLOR};
 	public static final String RARITY_NAMES[]={"Basic","Common","Uncommon","Rare"};
 	public static final int NR_OF_RARITIES=4;
 
@@ -176,10 +174,11 @@ public class MagicCardDefinition {
 	
 	public Color getRarityColor() {
 		
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		switch (rarity) {
-			case 2: return UNCOMMON_COLOR;
-			case 3: return RARE_COLOR;
-			default: return COMMON_COLOR;
+			case 2: return theme.getColor(Theme.COLOR_UNCOMMON_FOREGROUND);
+			case 3: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
+			default: return theme.getColor(Theme.COLOR_COMMON_FOREGROUND);
 		}
 	}
 				

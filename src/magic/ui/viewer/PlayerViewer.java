@@ -72,10 +72,12 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 
 		labels=new JLabel[6];
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		final Color foreground=theme.getColor(Theme.COLOR_TEXT_FOREGROUND);
 		for (int index=0;index<labels.length;index++) {
 
 			labels[index]=new JLabel("0");
 			labels[index].setFont(FontsAndBorders.FONT2);
+			labels[index].setForeground(foreground);
 			labels[index].setIconTextGap(4);
 			labels[index].setHorizontalAlignment(JLabel.CENTER);
 			labels[index].setIcon(theme.getIcon(ICON_NAMES[index]));

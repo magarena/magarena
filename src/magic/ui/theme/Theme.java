@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 public interface Theme {
 
 	public static final String TEXTURE_BACKGROUND="texture_background";
+	public static final String TEXTURE_GAME="texture_game";
 	public static final String TEXTURE_COMPONENT="texture_component";
 	
 	public static final String ICON_LIFE="icon_life";
@@ -19,6 +20,10 @@ public interface Theme {
 
 	public static final String COLOR_TITLE_FOREGROUND="color_title_foreground";
 	public static final String COLOR_TITLE_BACKGROUND="color_title_background";
+	public static final String COLOR_TEXT_FOREGROUND="color_text_foreground";
+	public static final String COLOR_COMMON_FOREGROUND="color_common_foreground";
+	public static final String COLOR_UNCOMMON_FOREGROUND="color_uncommon_foreground";
+	public static final String COLOR_RARE_FOREGROUND="color_rare_foreground";
 	
 	public String getName();
 	

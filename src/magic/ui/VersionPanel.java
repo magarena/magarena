@@ -18,6 +18,7 @@ import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.resolution.DefaultResolutionProfile;
+import magic.ui.theme.Theme;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.BackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
@@ -50,7 +51,7 @@ public class VersionPanel extends JPanel {
 		versionLabel.setBorder(FontsAndBorders.EMPTY_BORDER);
 		add(versionLabel,BorderLayout.SOUTH);
 				
-		backgroundLabel=new BackgroundLabel();
+		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_BACKGROUND);
 
 		final ImageIcon logoIcon=new ImageIcon(IconImages.LOGO);
 		logoLabel=new JLabel(logoIcon);

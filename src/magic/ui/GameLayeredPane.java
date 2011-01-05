@@ -5,6 +5,7 @@ import java.awt.event.ComponentEvent;
 
 import javax.swing.JLayeredPane;
 
+import magic.ui.theme.Theme;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.LogBookViewer;
 import magic.ui.widget.BackgroundLabel;
@@ -19,7 +20,7 @@ public class GameLayeredPane extends JLayeredPane {
 		
 		setLayout(null);
 		
-		backgroundLabel=new BackgroundLabel();
+		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_GAME);
 		backgroundLabel.setLocation(0,0);
 		add(backgroundLabel);
 		setLayer(backgroundLabel,new Integer(0));

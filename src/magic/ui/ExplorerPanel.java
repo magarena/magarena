@@ -25,6 +25,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerProfile;
 import magic.ui.resolution.DefaultResolutionProfile;
+import magic.ui.theme.Theme;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.BackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
@@ -103,7 +104,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		closeButton.addActionListener(this);
 		add(closeButton);
 		
-		backgroundLabel=new BackgroundLabel();
+		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_BACKGROUND);
 		backgroundLabel.setBounds(0,0,0,0);
 		add(backgroundLabel);
 		

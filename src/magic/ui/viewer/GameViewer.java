@@ -23,6 +23,8 @@ import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TexturedPanel;
@@ -135,6 +137,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 	public void showMessage(final String message) {
 
 		final TextLabel messageLabel=new TextLabel(message,TEXT_WIDTH,true);
+		messageLabel.setForeground(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TEXT_FOREGROUND));
 		showComponent(messageLabel);
 	}
 			

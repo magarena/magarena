@@ -1,5 +1,6 @@
 package magic.ui.theme;
 
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,10 +24,10 @@ public class ThemeFactory {
 	private static List<Theme> loadThemes() {
 
 		final List<Theme> themes=new ArrayList<Theme>();
-		themes.add(new DefaultTheme("wood",IconImages.WOOD,IconImages.MARBLE));
-		themes.add(new DefaultTheme("light wood",IconImages.WOOD2,IconImages.MARBLE));
-		themes.add(new DefaultTheme("granite",IconImages.GRANITE,IconImages.GRANITE2));
-		themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2));
+		themes.add(new DefaultTheme("wood",IconImages.WOOD,IconImages.MARBLE,Color.BLACK));
+		themes.add(new DefaultTheme("light wood",IconImages.WOOD2,IconImages.MARBLE,Color.BLACK));
+		themes.add(new DefaultTheme("granite",IconImages.GRANITE,IconImages.GRANITE2,Color.BLACK));
+		themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2,Color.BLUE));
 		return themes;
 	}
 	

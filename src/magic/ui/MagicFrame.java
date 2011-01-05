@@ -27,6 +27,7 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicTournament;
 import magic.test.TestGameBuilder;
+import magic.ui.theme.Theme;
 import magic.ui.widget.BackgroundLabel;
 
 public class MagicFrame extends JFrame implements ActionListener {
@@ -274,7 +275,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 			enableMenuItem(SWAP_DECKS_ITEM,tournament.isEditable());
 			enableMenuItem(PLAY_GAME_ITEM,!tournament.isFinished());
 		} else {
-			setContent(new BackgroundLabel());
+			setContent(new BackgroundLabel(Theme.TEXTURE_BACKGROUND));
 		}
 	}
 	

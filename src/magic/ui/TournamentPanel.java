@@ -16,6 +16,7 @@ import magic.model.MagicTournament;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
+import magic.ui.theme.Theme;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
@@ -85,7 +86,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		newButton.setFocusable(false);
 		add(newButton);
 		
-		backgroundLabel=new BackgroundLabel();
+		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_BACKGROUND);
 		backgroundLabel.setBounds(0,0,0,0);
 		add(backgroundLabel);
 				
