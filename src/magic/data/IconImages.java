@@ -15,6 +15,7 @@ public class IconImages {
 	public static final BufferedImage MISSING=loadImage("icons/missing.png");
 	public static final ImageIcon MISSING2=loadIcon("missing2.png");
 	
+	public static final BufferedImage LOGO=loadImage("textures/logo.jpg");
 	public static final BufferedImage WOOD=loadImage("textures/wood.jpg");
 	public static final BufferedImage WOOD2=loadImage("textures/wood2.jpg");
 	public static final BufferedImage MARBLE=loadImage("textures/marble.jpg");

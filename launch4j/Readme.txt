@@ -13,7 +13,14 @@ Because cards can be replaced, it is possible that an existing saved duel is no 
 
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
+Thanks to Epiko for creating the very nice logo.
+
 Have fun!
+
+Release 1.7
+===========
+
+- new splash screen created by Epiko
 
 Release 1.6 (January 2, 2011)
 ===========
