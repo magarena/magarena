@@ -20,6 +20,7 @@ import magic.data.IconImages;
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
 import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.BackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -81,6 +82,8 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 	}
 
 	private JPanel createKeywordsPanel() {
+
+		final Color textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 		
 		final JPanel keywordsPanel=new JPanel();
 		keywordsPanel.setOpaque(false);
@@ -98,9 +101,11 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 			innerPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
 			keywordPanel.add(innerPanel,BorderLayout.CENTER);
 			final JLabel nameLabel=new JLabel(HTML_OPEN+keywordDefinition.name+HTML_CLOSE);
+			nameLabel.setForeground(textColor);
 			nameLabel.setFont(FontsAndBorders.FONT2);
 			innerPanel.add(nameLabel,BorderLayout.NORTH);
 			final JLabel descriptionLabel=new JLabel(HTML_OPEN+keywordDefinition.description+HTML_CLOSE);
+			descriptionLabel.setForeground(textColor);
 			innerPanel.add(descriptionLabel,BorderLayout.CENTER);
 		}
 		

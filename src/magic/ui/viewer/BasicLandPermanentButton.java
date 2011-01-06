@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 
 import magic.data.IconImages;
 import magic.ui.GameController;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 
@@ -65,6 +66,6 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
 	@Override
 	public Color getValidColor() {
 
-		return FontsAndBorders.TARGET_COLOR;
+		return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 	}
 }

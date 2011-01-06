@@ -16,6 +16,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
@@ -163,7 +164,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 		@Override
 		public Color getValidColor() {
 
-			return FontsAndBorders.TARGET_COLOR;
+			return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 		}			
 	} 
 }

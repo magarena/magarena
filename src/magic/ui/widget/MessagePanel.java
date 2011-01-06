@@ -43,6 +43,7 @@ public class MessagePanel extends JPanel {
 		leftPanel.add(lifeLabel,BorderLayout.EAST);
 		
 		final TextLabel textLabel=new TextLabel(message.getText(),maxWidth,false);
+		textLabel.setColors(Color.BLACK,Color.BLUE);
 		add(textLabel,BorderLayout.CENTER);
 						
 		final JPanel gamePanel=new JPanel(new BorderLayout());

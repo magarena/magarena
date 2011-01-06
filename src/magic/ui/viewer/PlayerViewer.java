@@ -58,7 +58,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 			@Override
 			public Color getValidColor() {
 
-				return FontsAndBorders.TARGET_COLOR;
+				return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 			}
 		};
 
@@ -72,7 +72,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 
 		labels=new JLabel[6];
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-		final Color foreground=theme.getColor(Theme.COLOR_TEXT_FOREGROUND);
+		final Color foreground=theme.getTextColor();
 		for (int index=0;index<labels.length;index++) {
 
 			labels[index]=new JLabel("0");

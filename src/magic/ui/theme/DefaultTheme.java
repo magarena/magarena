@@ -25,8 +25,12 @@ public class DefaultTheme extends AbstractTheme {
 		addToTheme(COLOR_TITLE_FOREGROUND,Color.WHITE);
 		addToTheme(COLOR_TITLE_BACKGROUND,new Color(0x23,0x6B,0x8E));
 		addToTheme(COLOR_TEXT_FOREGROUND,textColor);
+		addToTheme(COLOR_NAME_FOREGROUND,textColor);
+		addToTheme(COLOR_CHOICE_FOREGROUND,Color.BLUE);
 		addToTheme(COLOR_COMMON_FOREGROUND,Color.BLACK);
 		addToTheme(COLOR_UNCOMMON_FOREGROUND,new Color(0x8C,0x78,0x53));
 		addToTheme(COLOR_RARE_FOREGROUND,new Color(0xCD,0x7F,0x32));
+		addToTheme(COLOR_CHOICE,new Color(0,250,0,70));
+		addToTheme(COLOR_COMBAT_CHOICE,new Color(250,130,0,125));
 	}
 }

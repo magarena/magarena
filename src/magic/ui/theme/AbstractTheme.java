@@ -51,4 +51,22 @@ public abstract class AbstractTheme implements Theme {
 		final Object value=themeMap.get(name);
 		return value==null?Color.BLACK:(Color)value;
 	}
+
+	@Override
+	public Color getTextColor() {
+
+		return getColor(COLOR_TEXT_FOREGROUND);
+	}
+
+	@Override
+	public Color getNameColor() {
+
+		return getColor(COLOR_NAME_FOREGROUND);
+	}
+
+	@Override
+	public Color getChoiceColor() {
+
+		return getColor(COLOR_CHOICE);
+	}
 }

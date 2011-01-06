@@ -73,7 +73,7 @@ public class TournamentViewer extends TexturedPanel {
 			final JLabel gameLabel=new JLabel("Game "+tournament.getGameNr()+" of "+tournament.getConfiguration().getNrOfGames());
 			gameLabel.setHorizontalAlignment(JLabel.CENTER);
 			gameLabel.setFont(FontsAndBorders.FONT3);
-			gameLabel.setForeground(theme.getColor(Theme.COLOR_TEXT_FOREGROUND));
+			gameLabel.setForeground(theme.getTextColor());
 			mainPanel.add(gameLabel,BorderLayout.CENTER);
 		}
 		

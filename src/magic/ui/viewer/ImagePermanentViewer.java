@@ -21,6 +21,8 @@ import javax.swing.JPanel;
 
 import magic.data.DefaultCardImagesProvider;
 import magic.data.IconImages;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 public class ImagePermanentViewer extends JPanel {
@@ -188,6 +190,13 @@ public class ImagePermanentViewer extends JPanel {
 
 		super.paint(g);
 
+		final Color choiceColor;
+		if (viewer.getController().isCombatChoice()) {
+			choiceColor=ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);			
+		} else {
+			choiceColor=ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+		}
+		
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
 		final Graphics2D g2d=(Graphics2D)g;
@@ -249,7 +258,7 @@ public class ImagePermanentViewer extends JPanel {
 			}
 						
 			if (viewer.isValidChoice(linkedInfo)) {
-				g2d.setPaint(viewer.getController().isCombatChoice()?FontsAndBorders.COMBAT_TARGET_COLOR:FontsAndBorders.TARGET_COLOR);
+				g2d.setPaint(choiceColor);
 				g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
 			}
 		}

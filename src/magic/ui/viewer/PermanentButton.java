@@ -9,7 +9,8 @@ import javax.swing.JPanel;
 import javax.swing.border.Border;
 
 import magic.ui.GameController;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
 
@@ -25,6 +26,8 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 		this.permanentInfo=permanentInfo;
 		this.controller=controller;
 		
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		
 		final JPanel panel=new JPanel();
 		panel.setLayout(new BorderLayout(0,2));
 		panel.setBorder(border);
@@ -36,10 +39,12 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 		panel.add(topPanel,BorderLayout.NORTH);
 
 		final JLabel nameLabel=new JLabel(permanentInfo.name);
+		nameLabel.setForeground(theme.getNameColor());
 		nameLabel.setIcon(permanentInfo.icon);
 		topPanel.add(nameLabel,BorderLayout.CENTER);
 		
 		final JLabel ptLabel=new JLabel("");
+		ptLabel.setForeground(theme.getTextColor());
 		if (!permanentInfo.powerToughness.isEmpty()) {
 			ptLabel.setText(permanentInfo.powerToughness);
 			topPanel.add(ptLabel,BorderLayout.EAST);
@@ -73,6 +78,10 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 	@Override
 	public Color getValidColor() {
 
-		return controller.isCombatChoice()?FontsAndBorders.COMBAT_TARGET_COLOR:FontsAndBorders.TARGET_COLOR;
+		if (controller.isCombatChoice()) {
+			return ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);
+		} else {
+			return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+		}		
 	}	
 }

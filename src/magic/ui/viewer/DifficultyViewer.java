@@ -6,6 +6,8 @@ import javax.swing.event.ChangeListener;
 import magic.ai.ArtificialWorkerPool;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 import magic.ui.widget.TexturedPanel;
@@ -26,14 +28,17 @@ public class DifficultyViewer extends TexturedPanel implements ChangeListener {
 		setBorder(FontsAndBorders.BLACK_BORDER);
 		
 		final GeneralConfig config=GeneralConfig.getInstance();
-
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		
 		difficultySlider=new SliderPanel("Level",IconImages.DIFFICULTY2,1,ArtificialWorkerPool.MAX_LEVEL,1,config.getDifficulty());
+		difficultySlider.setTextColor(theme.getTextColor());
 		difficultySlider.setOpaque(false);
 		difficultySlider.setBounds(10,10,250,40);
 		difficultySlider.addChangeListener(this);
 		add(difficultySlider);
 		
-		extraLifeSlider=new SliderPanel("Life +",IconImages.LIFE,0,10,1,config.getExtraLife());
+		extraLifeSlider=new SliderPanel("Life +",theme.getIcon(Theme.ICON_LIFE),0,10,1,config.getExtraLife());
+		extraLifeSlider.setTextColor(theme.getTextColor());
 		extraLifeSlider.setOpaque(false);
 		extraLifeSlider.setBounds(10,60,250,40);
 		extraLifeSlider.addChangeListener(this);

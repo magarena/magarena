@@ -17,6 +17,8 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 import magic.data.TextImages;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class TextLabel extends JPanel {
 
@@ -33,6 +35,8 @@ public class TextLabel extends JPanel {
 	private final List<TComponent> components;
 	private final int maxWidth;
 	private final boolean center;
+	private Color textColor;
+	private Color choiceColor;
 
 	static {
 		
@@ -41,7 +45,10 @@ public class TextLabel extends JPanel {
 	}
 	
 	public TextLabel(final String text,final int maxWidth,final boolean center) {
-		
+
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		textColor=theme.getTextColor();
+		choiceColor=theme.getColor(Theme.COLOR_CHOICE_FOREGROUND);
 		components=new ArrayList<TComponent>();
 		this.maxWidth=maxWidth;
 		this.center=center;
@@ -50,18 +57,13 @@ public class TextLabel extends JPanel {
 		buildComponents(text);
 		layoutComponents();
 	}
-		
-	@Override
-	public void setForeground(final Color foreground) {
-		
-		if (components!=null) {
-			for (final TComponent component : components) {
 	
-				component.setForeground(foreground);		
-			}
-		}
+	public void setColors(final Color textColor,final Color choiceColor) {
+		
+		this.textColor=textColor;
+		this.choiceColor=choiceColor;
 	}
-	
+			
 	private void addComponent(final TComponent component) {
 		
 		if (component!=null) {
@@ -78,9 +80,9 @@ public class TextLabel extends JPanel {
 		if (textPart.charAt(0)=='{') {
 			component=new IconComponent(TextImages.getIcon(textPart));
 		} else if (info) {
-			component=new TextComponent(textPart,this,FontsAndBorders.FONT0,Color.BLUE);
+			component=new TextComponent(textPart,this,FontsAndBorders.FONT0,true);
 		} else {
-			component=new TextComponent(textPart,this,FontsAndBorders.FONT1,null);
+			component=new TextComponent(textPart,this,FontsAndBorders.FONT1,false);
 		}
 		return component;
 	}
@@ -168,19 +170,13 @@ public class TextLabel extends JPanel {
 
 		protected int lx=0;
 		protected int ly=0;
-		protected Color foreground=Color.BLACK;
 		
 		public void setLocation(final int x,final int y) {
 			
 			this.lx=x;
 			this.ly=y;
 		}
-		
-		public void setForeground(final Color foreground) {
-			
-			this.foreground=foreground;
-		}
-		
+				
 		public abstract boolean requiresNewLine();
 
 		public abstract Dimension getPreferredSize();
@@ -208,20 +204,20 @@ public class TextLabel extends JPanel {
 		}		
 	}
 	
-	private static class TextComponent extends TComponent {
+	private class TextComponent extends TComponent {
 
 		private final String text;
 		private final Font font;
 		private final FontMetrics metrics;
-		private final Color primaryForeground;
+		private final boolean choice;
 		private final boolean newLine;
 		
-		public TextComponent(final String text,final JComponent component,final Font font,final Color foreground) {
+		public TextComponent(final String text,final JComponent component,final Font font,final boolean choice) {
 
 			this.text=text;
 			this.font=font;
 			this.metrics=component.getFontMetrics(font);
-			this.primaryForeground=foreground;
+			this.choice=choice;
 			this.newLine=!(".".equals(text)||",".equals(text));
 		}
 
@@ -240,7 +236,7 @@ public class TextLabel extends JPanel {
 		@Override
 		public void paint(final JComponent com,final Graphics g,final int x,final int y) {
 
-			g.setColor(primaryForeground!=null?primaryForeground:foreground);
+			g.setColor(choice?choiceColor:textColor);
 			g.setFont(font);
 			g.drawString(text,lx+x,ly+y+metrics.getAscent());
 		}

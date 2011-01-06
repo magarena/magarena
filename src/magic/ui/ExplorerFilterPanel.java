@@ -1,6 +1,7 @@
 package magic.ui;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,7 +16,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-import javax.swing.border.Border;
+import javax.swing.border.TitledBorder;
 
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
@@ -23,6 +24,7 @@ import magic.model.MagicColor;
 import magic.model.MagicColoredType;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicType;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -52,11 +54,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
 		}
 	};
-	
-	private static final Border TYPE_BORDER=BorderFactory.createTitledBorder("Type");
-	private static final Border COLOR_BORDER=BorderFactory.createTitledBorder("Color");
-	private static final Border SORT_BORDER=BorderFactory.createTitledBorder("Sort");
-	
+		
 	private static final String TYPES[]={"Land","Instant","Sorcery","Creature","Artifact","Enchantment"};
 	
 	private final ExplorerPanel explorerPanel;
@@ -71,11 +69,13 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private final MagicPlayerProfile profile;
 	
 	public ExplorerFilterPanel(final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile) {
-		
+				
 		this.explorerPanel=explorerPanel;
 		this.mode=mode;
 		this.profile=profile;
 
+		final Color textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
+		
 		setLayout(new BorderLayout());
 
 		final TitleBar titleBar=new TitleBar("Filter");
@@ -87,9 +87,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		add(mainPanel,BorderLayout.CENTER);
 		
 		// Type
+		final TitledBorder typeBorder=BorderFactory.createTitledBorder("Type");
+		typeBorder.setTitleColor(textColor);
 		final JPanel typeFilterPanel=new JPanel(new BorderLayout(8,0));
 		typeFilterPanel.setOpaque(false);
-		typeFilterPanel.setBorder(TYPE_BORDER);
+		typeFilterPanel.setBorder(typeBorder);
 		mainPanel.add(typeFilterPanel,BorderLayout.NORTH);
 
 		final JPanel leftTypeFilterPanel=new JPanel(new GridLayout(3,1));
@@ -105,6 +107,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			typeCheckBoxes[index]=new JCheckBox(TYPES[index]);
 			typeCheckBoxes[index].addActionListener(this);
 			typeCheckBoxes[index].setOpaque(false);
+			typeCheckBoxes[index].setForeground(textColor);
 			typeCheckBoxes[index].setFocusPainted(false);
 			if (index<3) {
 				leftTypeFilterPanel.add(typeCheckBoxes[index]);
@@ -114,9 +117,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		}
 
 		// Color
+		final TitledBorder colorBorder=BorderFactory.createTitledBorder("Color");
+		colorBorder.setTitleColor(textColor);
 		final JPanel colorFilterPanel=new JPanel(new BorderLayout());
 		colorFilterPanel.setOpaque(false);
-		colorFilterPanel.setBorder(COLOR_BORDER);
+		colorFilterPanel.setBorder(colorBorder);
 		mainPanel.add(colorFilterPanel,BorderLayout.CENTER);
 
 		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
@@ -143,36 +148,43 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		otherColorPanel.setOpaque(false);
 		exactlyCheckBox=new JCheckBox("Match colors exactly",false);
 		exactlyCheckBox.addActionListener(this);
+		exactlyCheckBox.setForeground(textColor);
 		exactlyCheckBox.setOpaque(false);
 		exactlyCheckBox.setFocusPainted(false);
 		otherColorPanel.add(exactlyCheckBox);
 		excludeCheckBox=new JCheckBox("Exclude unselected colors",false);
 		excludeCheckBox.addActionListener(this);
+		excludeCheckBox.setForeground(textColor);
 		excludeCheckBox.setOpaque(false);
 		excludeCheckBox.setFocusPainted(false);
 		otherColorPanel.add(excludeCheckBox);
 		multiCheckBox=new JCheckBox("Match multicolored only",false);
 		multiCheckBox.addActionListener(this);
+		multiCheckBox.setForeground(textColor);
 		multiCheckBox.setOpaque(false);
 		multiCheckBox.setFocusPainted(false);
 		otherColorPanel.add(multiCheckBox);
 		colorFilterPanel.add(otherColorPanel,BorderLayout.CENTER);
 
 		// Sort
+		final TitledBorder sortBorder=BorderFactory.createTitledBorder("Sort");
+		sortBorder.setTitleColor(textColor);
 		final JPanel sortFilterPanel=new JPanel(new BorderLayout(8,0));
 		sortFilterPanel.setOpaque(false);
-		sortFilterPanel.setBorder(SORT_BORDER);
-		mainPanel.add(sortFilterPanel,BorderLayout.SOUTH);		
+		sortFilterPanel.setBorder(sortBorder);
+		mainPanel.add(sortFilterPanel,BorderLayout.SOUTH);
 
 		final ButtonGroup sortGroup=new ButtonGroup();
 		nameRadioButton=new JRadioButton("Name",true);
 		nameRadioButton.addActionListener(this);
+		nameRadioButton.setForeground(textColor);
 		nameRadioButton.setOpaque(false);
 		nameRadioButton.setFocusPainted(false);
 		sortGroup.add(nameRadioButton);
 		sortFilterPanel.add(nameRadioButton,BorderLayout.WEST);
 		convertedRadioButton=new JRadioButton("Converted cost",false);
 		convertedRadioButton.addActionListener(this);
+		convertedRadioButton.setForeground(textColor);
 		convertedRadioButton.setOpaque(false);
 		convertedRadioButton.setFocusable(false);
 		sortGroup.add(convertedRadioButton);

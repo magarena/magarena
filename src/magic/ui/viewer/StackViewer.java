@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import magic.ui.GameController;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
@@ -121,6 +122,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
 			final JLabel sourceLabel=new JLabel(stackInfo.name);
 			sourceLabel.setIcon(stackInfo.icon);
+			sourceLabel.setForeground(ThemeFactory.getInstance().getCurrentTheme().getNameColor());
 			panel.add(sourceLabel,BorderLayout.NORTH);
 			
 			final TextLabel textLabel=new TextLabel(stackInfo.description,maxWidth,false);
@@ -161,7 +163,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 		@Override
 		public Color getValidColor() {
 
-			return FontsAndBorders.TARGET_COLOR;
+			return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 		}
 	}
 }

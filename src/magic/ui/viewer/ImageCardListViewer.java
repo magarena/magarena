@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -22,6 +23,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 public class ImageCardListViewer extends JPanel implements ChoiceViewer {
@@ -134,6 +136,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			return;
 		}
 		
+		final Color choiceColor=ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+		
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
 		final Graphics2D g2d=(Graphics2D)g;
@@ -163,7 +167,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 				}
 			}
 			if (validChoices.contains(card)) {
-				g2d.setPaint(FontsAndBorders.TARGET_COLOR);
+				g2d.setPaint(choiceColor);
 				g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
 			}
 		}

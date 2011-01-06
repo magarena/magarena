@@ -1,6 +1,7 @@
 package magic.ui.widget;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.ImageIcon;
@@ -15,12 +16,13 @@ public class SliderPanel extends JPanel implements ChangeListener {
 	private static final long serialVersionUID = 1L;
 	
 	private final JSlider slider;
+	private final JLabel titleLabel;
 	private final JLabel valueLabel;
 	
 	public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value) {
 		
 		setLayout(new BorderLayout(5,0));
-		final JLabel titleLabel=new JLabel(title);
+		titleLabel=new JLabel(title);
 		titleLabel.setPreferredSize(new Dimension(80,0));
 		titleLabel.setIcon(icon);
 		add(titleLabel,BorderLayout.WEST);
@@ -42,6 +44,12 @@ public class SliderPanel extends JPanel implements ChangeListener {
 		add(slider,BorderLayout.CENTER);
 	}
 
+	public void setTextColor(final Color color) {
+		
+		titleLabel.setForeground(color);
+		valueLabel.setForeground(color);
+	}
+	
 	public int getValue() {
 		
 		return slider.getValue();

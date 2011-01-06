@@ -7,9 +7,6 @@ import javax.swing.BorderFactory;
 import javax.swing.border.Border;
 
 public class FontsAndBorders {
-
-	public static final Color TARGET_COLOR = new Color(0,250,0,70);
-	public static final Color COMBAT_TARGET_COLOR = new Color(250,130,0,125);
 	
 	public static final Color GRAY1=new Color(200,200,200);
 	public static final Color GRAY2=new Color(210,210,210);

@@ -26,6 +26,7 @@ import magic.data.TournamentConfig;
 import magic.model.MagicGame;
 import magic.model.MagicTournament;
 import magic.ui.GameController;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -52,11 +53,13 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	private final JTextField gamesTextField;
 	private final JComboBox difficultyComboBox;
 	private final JButton startButton;
+	private final Color textColor;
 	private CalculateThread calculateThread=null;
 	
 	public DeckStrengthViewer(final MagicTournament tournament) {
 		
 		this.tournament=tournament;
+		textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 		
 		setLayout(new BorderLayout());
 		
@@ -73,6 +76,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		
 		final JLabel purposeLabel=new JLabel(PURPOSE);
 		purposeLabel.setIcon(IconImages.STRENGTH);
+		purposeLabel.setForeground(textColor);
 
 		final GeneralConfig config=GeneralConfig.getInstance();		
 
@@ -114,11 +118,13 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
 		gameLabel=new JLabel("");
 		gameLabel.setFont(FontsAndBorders.FONT2);
+		gameLabel.setForeground(textColor);
 		gameLabel.setHorizontalAlignment(JLabel.CENTER);
 		gameLabel.setPreferredSize(new Dimension(75,0));
 		centerPanel.add(gameLabel,BorderLayout.WEST);
 		
 		strengthLabel=new JLabel("0 %");
+		strengthLabel.setForeground(textColor);
 		strengthLabel.setHorizontalAlignment(JLabel.CENTER);
 		strengthLabel.setFont(FontsAndBorders.FONT5);
 		centerPanel.add(strengthLabel,BorderLayout.CENTER);
@@ -179,7 +185,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		} else if (percentage>0) {
 			strengthLabel.setForeground(LOW_COLOR);
 		} else {
-			strengthLabel.setForeground(Color.BLACK);
+			strengthLabel.setForeground(textColor);
 		}
 		strengthLabel.repaint();
 	}
