@@ -16,6 +16,7 @@ import magic.ui.MagicFrame;
 public class MagicMain {
 	
 	private static final String GAME_PATH="Magarena";
+	private static final String MODS_PATH="mods";
 		
 	public static void main(String args[]) {		
 
@@ -26,6 +27,11 @@ public class MagicMain {
 	public static String getGamePath() {
 
 		return System.getProperty("user.home")+File.separatorChar+GAME_PATH;
+	}
+	
+	public static String getModsPath() {
+		
+		return getGamePath()+File.separatorChar+MODS_PATH;
 	}
 	
 	public static void initializeCards() {

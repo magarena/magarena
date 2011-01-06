@@ -8,12 +8,10 @@ To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
 Do not forget to execute Download Images in the Arena menu the first time you run a new release.
 Otherwise you will see a lot of question marks.
-If you want to use high quality card image popups, enable that option before downloading in the preferences.
-Because cards can be replaced, it is possible that an existing saved duel is no longer compatible.
 
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
-Thanks to Epiko for creating the very nice logo.
+Thanks to Epiko for creating the very nice Magarena splash screen.
 
 Have fun!
 

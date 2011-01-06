@@ -2,6 +2,7 @@ package magic.data;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -25,7 +26,12 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 	
 	private void loadDownloadImageFiles(final String filename) throws IOException {
 		
-		final InputStream stream=this.getClass().getResourceAsStream(filename);
+		final InputStream stream;
+		if (filename.startsWith("file://")) {
+			stream=new FileInputStream(filename.substring(7));
+		} else {
+			stream=this.getClass().getResourceAsStream(filename);
+		}
 		final BufferedReader reader=new BufferedReader(new InputStreamReader(stream));
 		final File gamePathFile=new File(MagicMain.getGamePath());
 		File imagesPathFile=null;
