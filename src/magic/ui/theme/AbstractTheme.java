@@ -69,4 +69,11 @@ public abstract class AbstractTheme implements Theme {
 
 		return getColor(COLOR_CHOICE);
 	}
+
+	@Override
+	public int getValue(final String name) {
+		
+		final Object value=themeMap.get(name);
+		return value==null?0:(Integer)value;
+	}
 }

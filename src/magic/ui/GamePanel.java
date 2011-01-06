@@ -35,6 +35,7 @@ import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
+import magic.ui.widget.BattlefieldBackgroundLabel;
 import magic.ui.widget.TitleBar;
 
 public class GamePanel extends JPanel {
@@ -47,6 +48,7 @@ public class GamePanel extends JPanel {
 	
 	private final MagicFrame frame;
 	private final MagicGame game;
+	private final BattlefieldBackgroundLabel backgroundLabel;
 	private final GameController controller;
 	private final ViewerInfo viewerInfo;
 	private final PlayerViewer playerViewer;
@@ -69,10 +71,11 @@ public class GamePanel extends JPanel {
 	private final ImageCombatViewer imageCombatViewer;
 	private final ImageViewer imageViewer;
 	
-	public GamePanel(final MagicFrame frame,final MagicGame game) {
+	public GamePanel(final MagicFrame frame,final MagicGame game,final BattlefieldBackgroundLabel backgroundLabel) {
 
 		this.frame=frame;
 		this.game=game;
+		this.backgroundLabel=backgroundLabel;
 		controller=new GameController(this,game);
 		viewerInfo=new ViewerInfo();
 		viewerInfo.update(game);
@@ -290,6 +293,7 @@ public class GamePanel extends JPanel {
 	public void updateView() {
 		
 		if (isTextView()) {
+			backgroundLabel.setImage(false);
 			remove(imageStackViewer);
 			remove(imageHandGraveyardViewer);
 			remove(imagePlayerPermanentViewer);
@@ -303,6 +307,7 @@ public class GamePanel extends JPanel {
 			add(opponentPermanentViewer);		
 			imageCardViewer.setVisible(false);
 		} else if (imageHandGraveyardViewer!=null) {
+			backgroundLabel.setImage(true);
 			remove(cardViewer);
 			remove(handGraveyardViewer);
 			remove(stackCombatViewer);
@@ -331,6 +336,8 @@ public class GamePanel extends JPanel {
 		
 		final Dimension size=getSize();
 		final ResolutionProfileResult result=ResolutionProfiles.calculate(size);
+
+		backgroundLabel.setZones(result);
 		
 		playerViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerViewer));
 		playerViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));

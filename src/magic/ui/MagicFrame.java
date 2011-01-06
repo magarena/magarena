@@ -29,6 +29,7 @@ import magic.model.MagicTournament;
 import magic.test.TestGameBuilder;
 import magic.ui.theme.Theme;
 import magic.ui.widget.BackgroundLabel;
+import magic.ui.widget.BattlefieldBackgroundLabel;
 
 public class MagicFrame extends JFrame implements ActionListener {
 	
@@ -379,8 +380,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private void openGame(final MagicGame game) {
 
-		gamePanel=new GamePanel(this,game);
-		final GameLayeredPane gamePane=new GameLayeredPane(gamePanel);
+		final BattlefieldBackgroundLabel backgroundLabel=new BattlefieldBackgroundLabel();
+		gamePanel=new GamePanel(this,game,backgroundLabel);
+		final GameLayeredPane gamePane=new GameLayeredPane(gamePanel,backgroundLabel);
 		setContent(gamePane);		
 		gamePanel.requestFocus();
 		enableMenuItem(CONCEDE_GAME_ITEM,true);

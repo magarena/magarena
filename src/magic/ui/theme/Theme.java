@@ -8,9 +8,11 @@ import javax.swing.ImageIcon;
 public interface Theme {
 
 	public static final String TEXTURE_BACKGROUND="texture_background";
-	public static final String TEXTURE_GAME="texture_game";
 	public static final String TEXTURE_COMPONENT="texture_component";
-	
+	public static final String TEXTURE_BATTLEFIELD="texture_battlefield";
+	public static final String TEXTURE_PLAYER="texture_player";
+	public static final String TEXTURE_HAND="texture_hand";
+
 	public static final String ICON_LIFE="icon_life";
 	public static final String ICON_PREVENT="icon_prevent";
 	public static final String ICON_LAND="icon_land";
@@ -29,6 +31,9 @@ public interface Theme {
 	public static final String COLOR_CHOICE="color_choice";
 	public static final String COLOR_COMBAT_CHOICE="color_combat_choice";
 	
+	public static final String VALUE_GAME_LAYOUT="value_game_layout";
+	public static final String VALUE_GAME_STRETCH="value_game_stretch";
+	
 	public String getName();
 	
 	public BufferedImage getTexture(final String name);
@@ -42,4 +47,6 @@ public interface Theme {
 	public Color getNameColor();
 	
 	public Color getChoiceColor();
+	
+	public int getValue(final String name);
 }

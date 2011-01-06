@@ -1,26 +1,23 @@
 package magic.ui;
 
+import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 import javax.swing.JLayeredPane;
 
-import magic.ui.theme.Theme;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.LogBookViewer;
-import magic.ui.widget.BackgroundLabel;
+import magic.ui.widget.BattlefieldBackgroundLabel;
 
 public class GameLayeredPane extends JLayeredPane {
 	
 	private static final long serialVersionUID = 1L;
 
-	private final BackgroundLabel backgroundLabel;
-
-	public GameLayeredPane(final GamePanel gamePanel) {
+	public GameLayeredPane(final GamePanel gamePanel,final BattlefieldBackgroundLabel backgroundLabel) {
 		
 		setLayout(null);
 		
-		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_GAME);
 		backgroundLabel.setLocation(0,0);
 		add(backgroundLabel);
 		setLayer(backgroundLabel,new Integer(0));
@@ -42,8 +39,9 @@ public class GameLayeredPane extends JLayeredPane {
 			@Override
 			public void componentResized(final ComponentEvent event) {
 
-				backgroundLabel.setSize(getSize());
-				gamePanel.setSize(getSize());
+				final Dimension size=getSize();
+				backgroundLabel.setSize(size);
+				gamePanel.setSize(size);
 				gamePanel.resizeComponents();
 				repaint();
 			}

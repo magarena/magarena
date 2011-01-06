@@ -25,6 +25,8 @@ import magic.data.IconImages;
 import magic.data.PlayerImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicColor;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 
@@ -53,6 +55,8 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		
 		final TournamentConfig config=TournamentConfig.getInstance();
 		config.load();		
 		
@@ -82,11 +86,11 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		avatarPanel.setBounds(35,50,120,180);
 		mainPanel.add(avatarPanel);
 		
-		lifeSlider=new SliderPanel("Life",IconImages.LIFE,15,30,5,config.getStartLife());
+		lifeSlider=new SliderPanel("Life",theme.getIcon(Theme.ICON_LIFE),15,30,5,config.getStartLife());
 		lifeSlider.setBounds(190,25,270,50);
 		mainPanel.add(lifeSlider);
 		
-		handSlider=new SliderPanel("Hand",IconImages.HAND2,6,8,1,config.getHandSize());
+		handSlider=new SliderPanel("Hand",theme.getIcon(Theme.ICON_HAND),6,8,1,config.getHandSize());
 		handSlider.setBounds(190,95,270,50);
 		mainPanel.add(handSlider);
 

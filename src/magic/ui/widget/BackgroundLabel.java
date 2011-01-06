@@ -17,7 +17,8 @@ public class BackgroundLabel extends JLabel {
 		
 		this.texture=texture;
 	}
-	
+
+	@Override
 	public void paint(final Graphics g) {
 
 		final BufferedImage image=ThemeFactory.getInstance().getCurrentTheme().getTexture(texture);

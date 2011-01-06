@@ -119,6 +119,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 		final int width3=size.width-PLAYER_VIEWER_WIDTH-spacing*3;
 		y=size.height-spacing-IMAGE_HAND_VIEWER_HEIGHT;
 		result.setBoundary(ResolutionProfileType.GameImageHandGraveyardViewer,new Rectangle(x,y,width3,IMAGE_HAND_VIEWER_HEIGHT));
+		result.setBoundary(ResolutionProfileType.GameZones,new Rectangle(0,0,x,y));
 		
 		final int height3=size.height-spacing*5-IMAGE_HAND_VIEWER_HEIGHT;
 		final int height4=(height3*3)/8;

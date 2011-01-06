@@ -12,9 +12,11 @@ public class DefaultTheme extends AbstractTheme {
 		super(name);
 		
 		addToTheme(TEXTURE_BACKGROUND,background);
-		addToTheme(TEXTURE_GAME,background);
 		addToTheme(TEXTURE_COMPONENT,component);
-		
+		addToTheme(TEXTURE_BATTLEFIELD,background);
+		addToTheme(TEXTURE_PLAYER,background);
+		addToTheme(TEXTURE_HAND,background);
+				
 		addToTheme(ICON_LIFE,IconImages.LIFE);
 		addToTheme(ICON_PREVENT,IconImages.PREVENT2);
 		addToTheme(ICON_LAND,IconImages.LAND2);
@@ -31,6 +33,9 @@ public class DefaultTheme extends AbstractTheme {
 		addToTheme(COLOR_UNCOMMON_FOREGROUND,new Color(0x8C,0x78,0x53));
 		addToTheme(COLOR_RARE_FOREGROUND,new Color(0xCD,0x7F,0x32));
 		addToTheme(COLOR_CHOICE,new Color(0,250,0,70));
-		addToTheme(COLOR_COMBAT_CHOICE,new Color(250,130,0,125));
+		addToTheme(COLOR_COMBAT_CHOICE,new Color(250,130,0,125));		
+		
+		addToTheme(VALUE_GAME_LAYOUT,0);
+		addToTheme(VALUE_GAME_STRETCH,0);
 	}
 }

@@ -10,7 +10,8 @@ public enum ResolutionProfileType {
 	TournamentDifficultyViewer,
 	TournamentPlayButton,
 	TournamentNewButton,
-	
+
+	GameZones,
 	GamePlayerViewerSmall,
 	GamePlayerViewer,
 	GameOpponentViewer,
