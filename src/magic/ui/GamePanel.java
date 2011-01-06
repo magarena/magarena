@@ -43,6 +43,7 @@ public class GamePanel extends JPanel {
 
 	private static final String ACTION_KEY="action";
 	private static final String UNDO_KEY="undo";
+	private static final String SWITCH_KEY="switch";
 	
 	private final MagicFrame frame;
 	private final MagicGame game;
@@ -165,11 +166,23 @@ public class GamePanel extends JPanel {
 			}
 		});
 		
+		getActionMap().put(SWITCH_KEY, new AbstractAction() {
+			
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(final ActionEvent e) {
+				
+				switchKeyPressed();
+			}
+		});
+		
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0),ACTION_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);		
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),UNDO_KEY);
-		
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0),SWITCH_KEY);
+				
 		stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
 		handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);		
 		playerPermanentViewer=new BattlefieldViewer(viewerInfo,controller,false);
@@ -201,6 +214,16 @@ public class GamePanel extends JPanel {
 
 		if (gameTournamentViewer.getGameViewer().isUndoEnabled()) {
 			controller.undoClicked();
+		}
+	}
+	
+	void switchKeyPressed() {
+
+		if (textViewButton.isEnabled()) {
+			final boolean selected=!textViewButton.isSelected();
+			textViewButton.setSelected(selected);
+			GeneralConfig.getInstance().setTextView(selected);
+			updateView();
 		}
 	}
 	
