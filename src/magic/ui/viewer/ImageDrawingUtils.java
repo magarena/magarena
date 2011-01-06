@@ -4,12 +4,15 @@ import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.image.ImageObserver;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.ImageIcon;
 
 import magic.data.IconImages;
 import magic.model.MagicAbility;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.ui.widget.FontsAndBorders;
 
@@ -27,7 +30,30 @@ public class ImageDrawingUtils {
 			x+=16;
 		}
 	}
-	
+
+	public static int drawManaInfo(final Graphics g,final ImageObserver observer,final MagicCardDefinition cardDefinition,int ax,int ay) {
+
+		final List<ImageIcon> icons=new ArrayList<ImageIcon>();
+		for (final MagicColor color : MagicColor.values()) {
+
+			if (cardDefinition.getManaSource(color)>0) {
+				icons.add(color.getManaType().getIcon(true));
+			}
+		}	
+		if (icons.size()==MagicColor.NR_COLORS) {
+			icons.clear();
+			icons.add(IconImages.ANY_MANA);
+		}
+		if (!icons.isEmpty()) {
+			for (final ImageIcon icon : icons) {
+				
+				g.drawImage(icon.getImage(),ax,ay,observer);
+				ax+=16;
+			}
+		}
+		return ax;
+	}
+
 	public static int drawAbilityInfo(final Graphics g,final ImageObserver observer,final long abilityFlags,int ax,int ay) {
 
 		if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
@@ -63,5 +89,5 @@ public class ImageDrawingUtils {
 			g.setColor(Color.RED);
 			g.drawString(damage,dx,flip?y+14:y+28);
 		}
-	}	
+	}		
 }

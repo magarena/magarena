@@ -19,6 +19,7 @@ Release 1.7
 ===========
 
 - new splash screen created by Epiko
+- added mana info for lands in hand and on battlefield
 
 Release 1.6 (January 2, 2011)
 ===========

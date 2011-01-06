@@ -233,6 +233,9 @@ public class ImagePermanentViewer extends JPanel {
 				}
 				ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
 			}
+			if (permanentInfo.cardDefinition.isLand()) {
+				ax=ImageDrawingUtils.drawManaInfo(g,this,permanentInfo.cardDefinition,ax,ay);
+			}
 			
 			final String pt=linkedInfo.powerToughness;
 			if (!pt.isEmpty()) {

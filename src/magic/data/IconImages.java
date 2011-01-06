@@ -100,6 +100,7 @@ public class IconImages {
 	public static final ImageIcon STRIKE=loadIcon("strike.png");
 	public static final ImageIcon DEATHTOUCH=loadIcon("deathtouch.png");
 
+	public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
 	public static final ImageIcon TAPPED=loadSymbolIcon("tapped.gif");
 	public static final ImageIcon ONE=loadSymbolIcon("big_one.gif");
 	public static final ImageIcon BLACK=loadSymbolIcon("big_black.gif");

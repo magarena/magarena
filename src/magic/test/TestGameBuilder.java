@@ -114,6 +114,7 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
+		addToHand(player,"Vivid Creek",1);
 		addToHand(player,"Bellowing Tanglewurm",1);
 		addToHand(player,"Skullclamp",2);
 
@@ -123,6 +124,7 @@ public class TestGameBuilder {
 		createPermanent(game,player,"Spiritmonger",false,1);	
 		createPermanent(game,player,"Lingering Tormentor",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);
+		createPermanent(game,player,"Celestial Colonnade",false,1);		
 		createPermanent(game,opponent,"Bottle Gnomes",false,1);		
 		createPermanent(game,opponent,"Llanowar Elves",false,1);
 		createPermanent(game,opponent,"Fume Spitter",false,1);
