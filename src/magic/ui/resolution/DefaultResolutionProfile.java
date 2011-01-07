@@ -4,6 +4,8 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 
 import magic.data.DefaultCardImagesProvider;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class DefaultResolutionProfile implements ResolutionProfile {
 
@@ -31,13 +33,17 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 	@Override
 	public ResolutionProfileResult calculate(final Dimension size) {
 
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		final int offset=theme.getValue(Theme.VALUE_GAME_OFFSET);
 		final ResolutionProfileResult result=new ResolutionProfileResult();
-		final int spacing;
-		
-		if (size.width>1250) {
-			spacing=20;
-		} else {
-			spacing=10;
+		int spacing=theme.getValue(Theme.VALUE_SPACING);
+
+		if (spacing<=0) {
+			if (size.width>1250) {
+				spacing=20;
+			} else {
+				spacing=10;
+			}
 		}
 		
 		// Tournament
@@ -90,11 +96,11 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 		final int logWidth=Math.min(MAX_LOGBOOK_VIEWER_WIDTH,size.width-spacing*3-BUTTON_SIZE);
 		result.setBoundary(ResolutionProfileType.GameLogBookViewer,new Rectangle(x+BUTTON_SIZE+6,spacing,logWidth,size.height-spacing*2));
 
-		x+=PLAYER_VIEWER_WIDTH+spacing;
+		x+=PLAYER_VIEWER_WIDTH+spacing+offset;
 		
-		int width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*5)/3;
+		int width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*5-offset)/3;
 		if (width2<MIN_HAND_VIEWER_WIDTH) {
-			width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*4)/2;			
+			width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*4-offset)/2;			
 			int height2=(size.height-spacing*3)/2;
 			int x2=x+width2+spacing;
 			y=spacing;
@@ -116,12 +122,12 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 		y+=2*height2+spacing;
 		result.setBoundary(ResolutionProfileType.GameHandGraveyardViewer,new Rectangle(x,y,width2,height2));
 
-		final int width3=size.width-PLAYER_VIEWER_WIDTH-spacing*3;
+		final int width3=size.width-PLAYER_VIEWER_WIDTH-spacing*3-offset;
 		y=size.height-spacing-IMAGE_HAND_VIEWER_HEIGHT;
 		result.setBoundary(ResolutionProfileType.GameImageHandGraveyardViewer,new Rectangle(x,y,width3,IMAGE_HAND_VIEWER_HEIGHT));
-		result.setBoundary(ResolutionProfileType.GameZones,new Rectangle(0,0,x,y));
+		result.setBoundary(ResolutionProfileType.GameZones,new Rectangle(0,0,x-offset,y-offset));
 		
-		final int height3=size.height-spacing*5-IMAGE_HAND_VIEWER_HEIGHT;
+		final int height3=size.height-spacing*5-IMAGE_HAND_VIEWER_HEIGHT-offset;
 		final int height4=(height3*3)/8;
 		final int height5=height3-height4*2;
 		y=spacing;

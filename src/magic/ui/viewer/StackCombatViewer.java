@@ -7,8 +7,9 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import magic.data.IconImages;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
@@ -24,6 +25,8 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
 	private final TabSelector tabSelector;
 	
 	public StackCombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
+		
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		
 		stackViewer=new StackViewer(viewerInfo,controller,false);
 		combatViewer=new CombatViewer(viewerInfo,controller);		
@@ -42,8 +45,8 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
 		add(titleBar,BorderLayout.NORTH);
 		
 		tabSelector=new TabSelector(this,false);
-		tabSelector.addTab(IconImages.SPELL,"Stack");
-		tabSelector.addTab(IconImages.COMBAT,"Combat");
+		tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_STACK),"Stack");
+		tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_COMBAT),"Combat");
 		titleBar.add(tabSelector,BorderLayout.EAST);
 	}
 	

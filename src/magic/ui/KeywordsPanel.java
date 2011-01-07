@@ -83,7 +83,9 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 
 	private JPanel createKeywordsPanel() {
 
-		final Color textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		final Color nameColor=theme.getColor(Theme.COLOR_NAME_FOREGROUND);
+		final Color textColor=theme.getTextColor();
 		
 		final JPanel keywordsPanel=new JPanel();
 		keywordsPanel.setOpaque(false);
@@ -101,7 +103,7 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 			innerPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
 			keywordPanel.add(innerPanel,BorderLayout.CENTER);
 			final JLabel nameLabel=new JLabel(HTML_OPEN+keywordDefinition.name+HTML_CLOSE);
-			nameLabel.setForeground(textColor);
+			nameLabel.setForeground(nameColor);
 			nameLabel.setFont(FontsAndBorders.FONT2);
 			innerPanel.add(nameLabel,BorderLayout.NORTH);
 			final JLabel descriptionLabel=new JLabel(HTML_OPEN+keywordDefinition.description+HTML_CLOSE);

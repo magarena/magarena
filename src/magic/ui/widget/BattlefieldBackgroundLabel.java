@@ -51,7 +51,18 @@ public class BattlefieldBackgroundLabel extends JLabel {
 	
 	private void paintZoneStretch(final Graphics g,final BufferedImage image,final Rectangle rect) {
 
-		g.drawImage(image,rect.x,rect.y,rect.x+rect.width,rect.y+rect.height,this);
+		final int iw=image.getWidth();
+		final int ih=image.getHeight();
+		final int iw2=ih*rect.width/rect.height;
+		final Rectangle imageRect;
+		if (iw2<=iw) {
+			imageRect=new Rectangle((iw-iw2)/2,0,iw2,ih);
+		} else {
+			final int ih2=iw*rect.height/rect.width;			
+			imageRect=new Rectangle(0,(ih-ih2)/2,iw,ih2);
+		}	
+		g.drawImage(image,rect.x,rect.y,rect.x+rect.width,rect.y+rect.height,
+				imageRect.x,imageRect.y,imageRect.x+imageRect.width,imageRect.y+imageRect.height,this);
 	}
 	
 	private void paintZone(final Graphics g,final BufferedImage image,final Rectangle rect,final boolean stretch) {

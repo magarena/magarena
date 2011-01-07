@@ -22,6 +22,8 @@ import magic.model.MagicGame;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.viewer.BattlefieldViewer;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.GameTournamentViewer;
@@ -83,6 +85,8 @@ public class GamePanel extends JPanel {
 		setLayout(null);
 		setOpaque(false);
 		setFocusable(true);
+		
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 
 		logBookViewer=new LogBookViewer(game.getLogBook());
 		logBookViewer.setVisible(false);
@@ -106,7 +110,7 @@ public class GamePanel extends JPanel {
 		controller.setGameViewer(gameTournamentViewer.getGameViewer());
 		add(gameTournamentViewer);
 						
-		logBookButton=new JLabel(IconImages.LOG);
+		logBookButton=new JLabel(theme.getIcon(Theme.ICON_MESSAGE));
 		add(logBookButton);		
 		logBookButton.addMouseListener(new MouseAdapter() {
 
@@ -198,7 +202,7 @@ public class GamePanel extends JPanel {
 		imageViewer=new ImageViewer();
 
 		final TitleBar stackTitleBar = new TitleBar("Stack");
-		stackTitleBar.setIcon(IconImages.SPELL);
+		stackTitleBar.setIcon(theme.getIcon(Theme.ICON_SMALL_STACK));
 		imageStackViewer.add(stackTitleBar,BorderLayout.SOUTH);
 		
 		updateView();

@@ -1,16 +1,32 @@
 package magic.ui.theme;
 
 import java.awt.Color;
+import java.io.File;
+import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.List;
 
+import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 
 public class ThemeFactory {
 
-	private static final ThemeFactory INSTANCE=new ThemeFactory();
+	private static final String THEME_ZIP="_theme.zip";
+	private static final String THEME_FOLDER="_theme";
 	
+	// Must be before instance!
+	private static final FileFilter THEME_FILE_FILTER=new FileFilter() {
+		
+		@Override
+		public boolean accept(final File file) {
+
+			return (file.isFile()&&file.getName().endsWith(THEME_ZIP))||(file.isDirectory()&&file.getName().endsWith(THEME_FOLDER));
+		}
+	};
+	
+	private static final ThemeFactory INSTANCE=new ThemeFactory();
+		
 	private final List<Theme> themes;
 	private Theme currentTheme;
 	
@@ -28,9 +44,20 @@ public class ThemeFactory {
 		themes.add(new DefaultTheme("light wood",IconImages.WOOD2,IconImages.MARBLE,Color.BLACK));
 		themes.add(new DefaultTheme("granite",IconImages.GRANITE,IconImages.GRANITE2,Color.BLACK));
 		themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2,Color.BLUE));
+		
+		final File files[]=new File(MagicMain.getModsPath()).listFiles(THEME_FILE_FILTER);
+		for (final File file : files) {
+			
+			final String name=file.getName();
+			int index=name.indexOf(THEME_ZIP);
+			if (index<0) {
+				index=name.indexOf(THEME_FOLDER);
+			}
+			themes.add(new CustomTheme(file,name.substring(0,index)));
+		}
 		return themes;
 	}
-	
+
 	public List<Theme> getThemes() {
 		
 		return themes;
@@ -51,6 +78,7 @@ public class ThemeFactory {
 		for (final Theme theme : themes) {
 			
 			if (theme.getName().equals(name)) {
+				theme.load();
 				currentTheme=theme;
 				break;
 			}

@@ -1,25 +1,82 @@
 package magic.ui.theme;
 
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Map;
+import java.util.Properties;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 
-import magic.MagicMain;
 import magic.data.IconImages;
 
 public class CustomTheme extends AbstractTheme {
 
-	public CustomTheme() {
+	private static final String THEME_PROPERTIES_FILE="theme.properties";
+	
+	private final File file;
+	private ZipFile zipFile=null;
+	private boolean loaded=false;
+	
+	public CustomTheme(final File file,final String name) {
 		
-		super("custom");
+		super(name);
+		this.file=file;
 	}
 	
-	static BufferedImage loadUserImage(final String name) {
+	private void parseEntry(final String key,final String value) {
+
+		if (value.isEmpty()) {
+			return;
+		}
+		final int index=key.indexOf('_');
+		if (index<0) {
+			return;
+		}
+		Object typeValue=null;
+		final String type=key.substring(0,index);
+		if ("value".equals(type)) {
+			typeValue=Integer.parseInt(value);
+		} else if ("color".equals(type)) {
+			final String parts[]=value.split(",");
+			final int r=Integer.parseInt(parts[0],16);
+			final int g=Integer.parseInt(parts[1],16);
+			final int b=Integer.parseInt(parts[2],16);
+			if (parts.length==4) {
+				typeValue=new Color(r,g,b,Integer.parseInt(parts[3],16));
+			} else if (parts.length==3) {
+				typeValue=new Color(r,g,b);
+			}
+		} else if ("texture".equals(type)) {
+			typeValue=loadImage(value);
+		} else if ("icon".equals(type)) {
+			typeValue=new ImageIcon(loadImage(value));
+		}
+		if (typeValue!=null) {
+			addToTheme(key,typeValue);
+		}
+	}
+	
+	private InputStream getInputStream(final String filename) throws IOException {
+
+		if (zipFile!=null) {
+			final ZipEntry zipEntry=zipFile.getEntry(filename);
+			return zipFile.getInputStream(zipEntry);
+		} else {
+			return new FileInputStream(new File(file,filename));
+		}
+	}
+	
+	private BufferedImage loadImage(final String filename) {
 		
 		try {
-			final FileInputStream inputStream=new FileInputStream(MagicMain.getGamePath()+File.separator+name);
+			final InputStream inputStream=getInputStream(filename);
 			final BufferedImage image=ImageIO.read(inputStream);
 			inputStream.close();
 			return image;
@@ -27,4 +84,37 @@ public class CustomTheme extends AbstractTheme {
 			return IconImages.MISSING;
 		}
 	}
+	
+	@Override
+	public void load() {
+		
+		if (loaded) {
+			return;
+		}
+		
+		try {			
+			if (file.isFile()) {
+				zipFile=new ZipFile(file);
+			}
+			
+			final InputStream inputStream=getInputStream(THEME_PROPERTIES_FILE);
+			final Properties properties=new Properties();
+			properties.load(inputStream);
+			inputStream.close();
+			
+			for (final Map.Entry<Object,Object> entry : properties.entrySet()) {
+				
+				parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
+			}			
+		} catch (final Exception ex) {						
+		} finally {
+			if (zipFile!=null) {
+				try {
+					zipFile.close();
+				} catch (final IOException ex) {}
+				zipFile=null;
+			}
+			loaded=true;
+		}		
+	}	
 }

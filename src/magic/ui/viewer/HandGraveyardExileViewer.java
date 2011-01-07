@@ -7,8 +7,9 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import magic.data.IconImages;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
@@ -24,6 +25,8 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
 
 	public HandGraveyardExileViewer(final ViewerInfo viewerInfo,final GameController controller) {
 
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		
 		viewers=new CardListViewer[]{
 			new HandViewer(viewerInfo,controller),
 			new GraveyardViewer(viewerInfo,controller,false),
@@ -51,11 +54,11 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
 		final String opponentName=viewerInfo.getPlayerInfo(true).name;
 		
 		tabSelector=new TabSelector(this,false);
-		tabSelector.addTab(IconImages.HAND,"Hand : "+playerName);
-		tabSelector.addTab(IconImages.GRAVEYARD,"Graveyard : "+playerName);
-		tabSelector.addTab(IconImages.GRAVEYARD,"Graveyard : "+opponentName);
-		tabSelector.addTab(IconImages.EXILE,"Exile : "+playerName);
-		tabSelector.addTab(IconImages.EXILE,"Exile : "+opponentName);
+		tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Hand : "+playerName);
+		tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+playerName);
+		tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+opponentName);
+		tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
+		tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+opponentName);
 		titleBar.add(tabSelector,BorderLayout.EAST);
 		
 		viewers[0].viewCard();

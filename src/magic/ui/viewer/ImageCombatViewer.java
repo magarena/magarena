@@ -9,8 +9,9 @@ import java.util.TreeSet;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import magic.data.IconImages;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 public class ImageCombatViewer extends JPanel implements ChoiceViewer {
@@ -22,6 +23,8 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 	
 	public ImageCombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
 
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		
 		this.viewerInfo=viewerInfo;
 
 		controller.registerChoiceViewer(this);
@@ -33,8 +36,9 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 		leftPanel.setOpaque(false);
 		add(leftPanel,BorderLayout.WEST);
 		
-		final JLabel combatLabel=new JLabel(IconImages.COMBAT);
+		final JLabel combatLabel=new JLabel(theme.getIcon(Theme.ICON_SMALL_COMBAT));
 		combatLabel.setOpaque(true);
+		combatLabel.setBackground(theme.getColor(Theme.COLOR_ICON_BACKGROUND));
 		combatLabel.setPreferredSize(new Dimension(24,24));
 		combatLabel.setBorder(FontsAndBorders.BLACK_BORDER);
 		leftPanel.add(combatLabel,BorderLayout.NORTH);
