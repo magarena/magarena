@@ -43,6 +43,7 @@ public abstract class AbstractTheme implements Theme {
 		addToTheme(COLOR_RARE_FOREGROUND,new Color(0xCD,0x7F,0x32));
 		addToTheme(COLOR_CHOICE,new Color(0,250,0,70));
 		addToTheme(COLOR_COMBAT_CHOICE,new Color(250,130,0,125));
+		addToTheme(COLOR_SELECTED_PLAYER,Color.RED);
 		
 		addToTheme(VALUE_SPACING,0);
 		addToTheme(VALUE_GAME_LAYOUT,0);

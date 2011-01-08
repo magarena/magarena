@@ -38,6 +38,7 @@ public interface Theme {
 	public static final String COLOR_RARE_FOREGROUND="color_rare_foreground";
 	public static final String COLOR_CHOICE="color_choice";
 	public static final String COLOR_COMBAT_CHOICE="color_combat_choice";
+	public static final String COLOR_SELECTED_PLAYER="color_selected_player";
 
 	public static final String VALUE_SPACING="value_spacing";
 	public static final String VALUE_GAME_LAYOUT="value_game_layout";

@@ -1,7 +1,6 @@
 package magic.ui.widget;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.BorderFactory;
@@ -11,18 +10,12 @@ import javax.swing.border.Border;
 
 import magic.data.PlayerImages;
 import magic.model.MagicPlayerDefinition;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class PlayerAvatarPanel extends TexturedPanel {
 	
 	private static final long serialVersionUID = 1L;
-
-	private static final Border SELECTED_BORDER=BorderFactory.createCompoundBorder(
-		BorderFactory.createEmptyBorder(2,2,2,2),
-		BorderFactory.createCompoundBorder(
-				BorderFactory.createLineBorder(Color.RED,2),
-				BorderFactory.createEmptyBorder(2,2,2,2)
-			)
-		);
 	
 	private static final Border NORMAL_BORDER=BorderFactory.createEmptyBorder(6,6,6,6);	
 	
@@ -31,6 +24,7 @@ public class PlayerAvatarPanel extends TexturedPanel {
 	private final TitleBar titleBar;
 	private MagicPlayerDefinition playerDefinition;
 	private boolean small;
+	private Border selectedBorder;
 	
 	public PlayerAvatarPanel(final int index) {
 
@@ -43,6 +37,15 @@ public class PlayerAvatarPanel extends TexturedPanel {
 		add(titleBar,BorderLayout.SOUTH);
 		setSelected(false);
 		small=false;
+
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		selectedBorder=BorderFactory.createCompoundBorder(
+				BorderFactory.createEmptyBorder(2,2,2,2),
+				BorderFactory.createCompoundBorder(
+						BorderFactory.createLineBorder(theme.getColor(Theme.COLOR_SELECTED_PLAYER),2),
+						BorderFactory.createEmptyBorder(2,2,2,2)
+					)
+				);
 	}
 	
 	public void setPlayerDefinition(final MagicPlayerDefinition playerDefinition) {
@@ -71,7 +74,7 @@ public class PlayerAvatarPanel extends TexturedPanel {
 	
 	public void setSelected(final boolean selected) {
 
-		this.setBorder(selected?SELECTED_BORDER:NORMAL_BORDER);
+		this.setBorder(selected?selectedBorder:NORMAL_BORDER);
 	}	
 	
 	public void update() {
