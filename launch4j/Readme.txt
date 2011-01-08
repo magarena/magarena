@@ -7,7 +7,12 @@ To obtain the Java jar, Magarena.exe can simply be renamed to Magarena.jar becau
 To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
 Do not forget to execute Download Images in the Arena menu the first time you run a new release.
-Otherwise you will see a lot of question marks.
+Otherwise you will see a lot of question marks. The application stops automatically after downloading is finished.
+
+Magarena supports the following keyboard shortcuts :
+- Space or Right key : action button
+- Escape or Left key : undo button
+- Enter : switch between graphical and text mode
 
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
@@ -21,7 +26,7 @@ Release 1.7
 - new splash screen
 - added mana info for lands in hand and on battlefield
 - added Enter as hotkey to switch between image and text mode
-- added support for user made UI themes, check out the moon theme
+- added support for user made UI themes, check out the downloadable moon theme
 - added support for user defined card cubes next to the default cube
 
 Release 1.6 (January 2, 2011)
