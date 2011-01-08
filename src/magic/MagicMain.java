@@ -4,6 +4,7 @@ import java.io.File;
 
 import magic.data.CardDefinitions;
 import magic.data.CardEventDefinitions;
+import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
 import magic.data.LocalVariableDefinitions;
@@ -39,8 +40,8 @@ public class MagicMain {
 		try {
 			new File(getGamePath()).mkdir();
 			DeckUtils.createDeckFolder();
-			final CardDefinitions cardDefinitions=CardDefinitions.getInstance();
-			cardDefinitions.loadCardDefinitions();
+			CardDefinitions.getInstance().loadCardDefinitions();
+			CubeDefinitions.getInstance().loadCubeDefinitions();
 			KeywordDefinitions.getInstance().loadKeywordDefinitions();
 			TriggerDefinitions.addTriggers();
 			LocalVariableDefinitions.addLocalVariables();

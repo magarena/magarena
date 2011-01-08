@@ -9,6 +9,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -21,6 +22,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.ListCellRenderer;
 
+import magic.data.CubeDefinitions;
 import magic.data.IconImages;
 import magic.data.PlayerImages;
 import magic.data.TournamentConfig;
@@ -42,6 +44,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 	private final SliderPanel gameSlider;
 	private final ColorsChooser playerColorsChooser;
 	private final ColorsChooser opponentColorsChooser;
+	private final JComboBox cubeComboBox;
 	private final JButton okButton;
 	private final JButton cancelButton;
 	
@@ -50,7 +53,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		super(frame,true);
 		this.frame=frame;
 		this.setTitle("New duel");
-		this.setSize(500,400);
+		this.setSize(500,450);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -111,7 +114,19 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		opponentColorsChooser=new ColorsChooser(config.getOpponentColors());
 		opponentColorsChooser.setBounds(305,255,130,50);
 		mainPanel.add(opponentColorsChooser);
-						
+
+		final JLabel cubeLabel=new JLabel("Cube");
+		cubeLabel.setIcon(IconImages.CUBE);
+		cubeLabel.setBounds(55,330,80,25);
+		mainPanel.add(cubeLabel);
+		
+		final ComboBoxModel cubeModel=new DefaultComboBoxModel(CubeDefinitions.getInstance().getCubeNames());
+		cubeComboBox=new JComboBox(cubeModel);
+		cubeComboBox.setFocusable(false);
+		cubeComboBox.setBounds(135,330,300,25);
+		cubeComboBox.setSelectedItem(config.getCube());
+		mainPanel.add(cubeComboBox);
+		
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(mainPanel,BorderLayout.CENTER);
 		getContentPane().add(buttonPanel,BorderLayout.SOUTH);
@@ -133,6 +148,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			config.setNrOfGames(gameSlider.getValue());
 			config.setPlayerColors(playerColors);
 			config.setOpponentColors(opponentColors);
+			config.setCube((String)cubeComboBox.getSelectedItem());
 			config.save();
 			frame.newTournament(config);
 			dispose();

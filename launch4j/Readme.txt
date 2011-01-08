@@ -18,9 +18,11 @@ Have fun!
 Release 1.7
 ===========
 
-- new splash screen created by Epiko
+- new splash screen
 - added mana info for lands in hand and on battlefield
-- added Enter as new hotkey to switch between image and text mode
+- added Enter as hotkey to switch between image and text mode
+- added support for user made UI themes, check out the moon theme
+- added support for user defined card cubes next to the default cube
 
 Release 1.6 (January 2, 2011)
 ===========

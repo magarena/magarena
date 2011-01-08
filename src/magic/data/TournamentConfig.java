@@ -25,6 +25,7 @@ public class TournamentConfig {
 	private static final String GAMES="games";
 	private static final String PLAYER="player";
 	private static final String OPPONENT="opponent";
+	private static final String CUBE="cube";
 
 	private int avatar=0;
 	private String name="Player";
@@ -33,6 +34,7 @@ public class TournamentConfig {
 	private int games=7;
 	private String playerColors=ANY_THREE;
 	private String opponentColors=ANY_THREE;
+	private String cube=CubeDefinitions.DEFAULT_NAME;
 	
 	public TournamentConfig() {
 		
@@ -137,6 +139,16 @@ public class TournamentConfig {
 		
 		return getProfile(opponentColors);
 	}
+	
+	public String getCube() {
+		
+		return cube;
+	}
+	
+	public void setCube(final String cube) {
+		
+		this.cube=cube;
+	}
 
 	public void load(final Properties properties) {
 		
@@ -147,6 +159,7 @@ public class TournamentConfig {
 		games=Integer.parseInt(properties.getProperty(GAMES,""+games));
 		playerColors=properties.getProperty(PLAYER,playerColors);
 		opponentColors=properties.getProperty(OPPONENT,opponentColors);
+		cube=properties.getProperty(CUBE,cube);
 	}
 	
 	public void load() {
@@ -167,6 +180,7 @@ public class TournamentConfig {
 		properties.setProperty(GAMES, ""+games);
 		properties.setProperty(PLAYER,playerColors);
 		properties.setProperty(OPPONENT,opponentColors);
+		properties.setProperty(CUBE,cube);
 	}
 	
 	public void save() {

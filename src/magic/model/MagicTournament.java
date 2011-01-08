@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import magic.MagicMain;
 import magic.data.BoosterPackGenerator;
+import magic.data.CubeDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.PlayerImages;
 import magic.data.TournamentConfig;
@@ -183,7 +184,8 @@ public class MagicTournament {
 	
 	private void buildDecks() {
 		
-		final BoosterPackGenerator generator=new BoosterPackGenerator();
+		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(configuration.getCube());
+		final BoosterPackGenerator generator=new BoosterPackGenerator(cubeDefinition);
 		for (final MagicPlayerDefinition player : playerDefinitions) {
 			
 			player.setBoosterPacks(generator);

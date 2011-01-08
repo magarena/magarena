@@ -5,6 +5,7 @@ import java.util.List;
 
 import magic.model.MagicBoosterPack;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
@@ -13,14 +14,14 @@ public class BoosterPackGenerator {
 	private final List<MagicCardDefinition> spellCards;
 	private final List<MagicCardDefinition> landCards;
 	
-	public BoosterPackGenerator() {
+	public BoosterPackGenerator(final MagicCubeDefinition cubeDefinition) {
 				
 		spellCards=new ArrayList<MagicCardDefinition>();
 		for (int rarity=1;rarity<=3;rarity++) {
 			
 			for (final MagicCardDefinition card : CardDefinitions.getInstance().getSpellCards()) {
 				
-				if (card.getRarity()<=rarity) {
+				if (card.getRarity()<=rarity&&cubeDefinition.containsCard(card)) {
 					spellCards.add(card);
 				}
 			}
@@ -30,8 +31,10 @@ public class BoosterPackGenerator {
 		for (int count=4;count>0;count--) {
 			
 			for (final MagicCardDefinition card : CardDefinitions.getInstance().getLandCards()) {
-			
-				landCards.add(card);
+
+				if (cubeDefinition.containsCard(card)) {
+					landCards.add(card);
+				}
 			}			
 		}
 	}
