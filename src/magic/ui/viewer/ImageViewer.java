@@ -20,6 +20,7 @@ import magic.MagicMain;
 import magic.model.MagicRandom;
 import magic.ui.DelayedViewer;
 import magic.ui.DelayedViewersThread;
+import magic.ui.theme.ThemeFactory;
 
 /**
  *  Landscape image viewer.
@@ -92,14 +93,16 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	public ImageViewer() {
 
 		setOpaque(false);
-		BufferedImage readImage=null;
-		try {
-			final File imageFile=nextFile();
-			if (imageFile!=null) {
-				readImage=ImageIO.read(imageFile);
-			}			
-		} catch (final Exception ex) {}
-
+		BufferedImage readImage=ThemeFactory.getInstance().getCurrentTheme().getLogoTexture();
+		if (readImage==null) {
+			try {
+				final File imageFile=nextFile();
+				if (imageFile!=null) {
+					readImage=ImageIO.read(imageFile);
+				}			
+			} catch (final Exception ex) {}
+		}
+		
 		image=readImage;
 		if (image!=null) {
 			imageWidth=image.getWidth();

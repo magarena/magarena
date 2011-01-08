@@ -20,6 +20,8 @@ public abstract class AbstractTheme implements Theme {
 		this.name=name;
 		themeMap=new HashMap<String,Object>();
 		
+		addToTheme(TEXTURE_LOGO,null);
+		
 		addToTheme(ICON_LIFE,IconImages.LIFE);
 		addToTheme(ICON_PREVENT,IconImages.PREVENT2);
 		addToTheme(ICON_LAND,IconImages.LAND2);
@@ -72,6 +74,12 @@ public abstract class AbstractTheme implements Theme {
 
 		final Object value=themeMap.get(name);
 		return value==null?IconImages.MISSING:(BufferedImage)value;
+	}
+
+	@Override
+	public BufferedImage getLogoTexture() {
+
+		return (BufferedImage)themeMap.get(Theme.TEXTURE_LOGO);
 	}
 
 	@Override

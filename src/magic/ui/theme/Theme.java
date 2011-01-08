@@ -7,6 +7,7 @@ import javax.swing.ImageIcon;
 
 public interface Theme {
 
+	public static final String TEXTURE_LOGO="texture_logo";
 	public static final String TEXTURE_BACKGROUND="texture_background";
 	public static final String TEXTURE_COMPONENT="texture_component";
 	public static final String TEXTURE_BATTLEFIELD="texture_battlefield";
@@ -50,6 +51,8 @@ public interface Theme {
 	public String getName();
 	
 	public BufferedImage getTexture(final String name);
+	
+	public BufferedImage getLogoTexture();
 	
 	public ImageIcon getIcon(final String name);
 	
