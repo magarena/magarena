@@ -3,7 +3,6 @@ package magic.ui.widget;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
-import java.awt.Shape;
 import java.awt.image.BufferedImage;
 
 import javax.swing.JLabel;
@@ -67,14 +66,11 @@ public class BattlefieldBackgroundLabel extends JLabel {
 	
 	private void paintZone(final Graphics g,final BufferedImage image,final Rectangle rect,final boolean stretch) {
 
-		final Shape clip=g.getClip();
-		g.setClip(rect);
 		if (stretch) {
 			paintZoneStretch(g,image,rect);
 		} else {
 			paintZoneTile(g,image,rect);
 		}
-		g.setClip(clip);
 	}
 	
 	@Override
@@ -91,10 +87,10 @@ public class BattlefieldBackgroundLabel extends JLabel {
 			final boolean handStretch=(stretch&4)==4;
 			paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),new Rectangle(0,0,playerX,size.height),playerStretch);
 			if (image) {
-				paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);
+				paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);				
 				paintZone(g,theme.getTexture(Theme.TEXTURE_HAND),new Rectangle(playerX,handY,size.width-playerX,handY),handStretch);
 			} else {
-				paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);				
+				paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);								
 			}
 		}		
 		super.paint(g);
