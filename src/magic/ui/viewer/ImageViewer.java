@@ -94,14 +94,12 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 
 		setOpaque(false);
 		BufferedImage readImage=ThemeFactory.getInstance().getCurrentTheme().getLogoTexture();
-		if (readImage==null) {
-			try {
-				final File imageFile=nextFile();
-				if (imageFile!=null) {
-					readImage=ImageIO.read(imageFile);
-				}			
-			} catch (final Exception ex) {}
-		}
+		try {
+			final File imageFile=nextFile();
+			if (imageFile!=null) {
+				readImage=ImageIO.read(imageFile);
+			}			
+		} catch (final Exception ex) {}
 		
 		image=readImage;
 		if (image!=null) {

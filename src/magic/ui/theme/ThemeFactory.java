@@ -46,14 +46,16 @@ public class ThemeFactory {
 		themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2,Color.BLUE));
 		
 		final File files[]=new File(MagicMain.getModsPath()).listFiles(THEME_FILE_FILTER);
-		for (final File file : files) {
-			
-			final String name=file.getName();
-			int index=name.indexOf(THEME_ZIP);
-			if (index<0) {
-				index=name.indexOf(THEME_FOLDER);
+		if (files!=null) {
+			for (final File file : files) {
+				
+				final String name=file.getName();
+				int index=name.indexOf(THEME_ZIP);
+				if (index<0) {
+					index=name.indexOf(THEME_FOLDER);
+				}
+				themes.add(new CustomTheme(file,name.substring(0,index)));
 			}
-			themes.add(new CustomTheme(file,name.substring(0,index)));
 		}
 		return themes;
 	}

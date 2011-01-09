@@ -98,6 +98,7 @@ Arcane Sanctum.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=
 Archon of Justice.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=146006&type=card
 Archon of Redemption.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201575&type=card
 Armadillo Cloak.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220498&type=card
+Asceticism.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=215082&type=card
 Ashenmoor Gouger.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=153981&type=card
 Assassinate.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205217&type=card
 Assault Zeppelid.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97107&type=card
@@ -608,6 +609,7 @@ Arcane Sanctum.jpg;http://magiccards.info/scans/en/ala/220.jpg
 Archon of Justice.jpg;http://magiccards.info/scans/en/eve/1.jpg
 Archon of Redemption.jpg;http://magiccards.info/scans/en/wwk/3.jpg
 Armadillo Cloak.jpg;http://magiccards.info/scans/en/arc/78.jpg
+Asceticism.jpg;http://magiccards.info/scans/en/som/110.jpg
 Ashenmoor Gouger.jpg;http://magiccards.info/scans/en/shm/180.jpg
 Assassinate.jpg;http://magiccards.info/scans/en/m11/81.jpg
 Assault Zeppelid.jpg;http://magiccards.info/scans/en/di/103.jpg

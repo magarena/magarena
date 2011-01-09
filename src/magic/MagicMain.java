@@ -39,6 +39,7 @@ public class MagicMain {
 		
 		try {
 			new File(getGamePath()).mkdir();
+			new File(getModsPath()).mkdir();
 			DeckUtils.createDeckFolder();
 			CardDefinitions.getInstance().loadCardDefinitions();
 			CubeDefinitions.getInstance().loadCubeDefinitions();

@@ -81,6 +81,7 @@ import magic.model.target.MagicMustAttackTargetPicker;
 import magic.model.target.MagicNoCombatTargetPicker;
 import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicPumpTargetPicker;
+import magic.model.target.MagicRegenerateTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -1809,6 +1810,32 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
+	private static final MagicPermanentActivation ASCETICISM=new MagicPermanentActivation(
+			"Asceticism",new MagicCondition[]{MagicManaCost.ONE_GREEN.getCondition()},new MagicActivationHints(MagicTiming.Pump,true)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_GREEN)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.POS_TARGET_CREATURE,
+				MagicRegenerateTargetPicker.getInstance(),MagicEvent.NO_DATA,this,"Regenerate target creature$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicRegenerateAction(creature));
+			}
+		}
+	};
+	
 	private static final MagicPermanentActivation DRAGON_ROOST=new MagicPermanentActivation(
 			"Dragon Roost",new MagicCondition[]{MagicManaCost.FIVE_RED_RED.getCondition()},new MagicActivationHints(MagicTiming.Token)) {
 
@@ -2497,6 +2524,7 @@ public class PermanentActivationDefinitions {
 		VAMPIRE_HEXMAGE,
 		WALL_OF_BONE,
 		ANGELIC_SHIELD,
+		ASCETICISM,
 		DRAGON_ROOST,
 		FIRES_OF_YAVIMAYA,
 		QUEST_FOR_THE_GEMBLADES,

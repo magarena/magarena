@@ -17,6 +17,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 	
 	private static int akromasMemorial;
 	private static int angelicShield;
+	private static int asceticism;
 	private static int balefireLiege;
 	private static int bellowingTanglewurm;
 	private static int bloodmarkMentor;
@@ -142,6 +143,9 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 			if (controller.getCount(trueConviction)>0) {
 				flags|=MagicAbility.TRUE_CONVICTION_FLAGS;
 			}
+			if (controller.getCount(asceticism)>0) {
+				flags|=MagicAbility.CannotBeTheTarget.getMask();
+			}
 			if (controller.getCount(bellowingTanglewurm)>0&&MagicColor.Green.hasColor(permanent.getColorFlags())) {
 				flags|=MagicAbility.Intimidate.getMask();
 			}
@@ -201,6 +205,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		final CardDefinitions definitions=CardDefinitions.getInstance();
 		akromasMemorial=definitions.getCard("Akroma's Memorial").getIndex();
 		angelicShield=definitions.getCard("Angelic Shield").getIndex();
+		asceticism=definitions.getCard("Asceticism").getIndex();
 		balefireLiege=definitions.getCard("Balefire Liege").getIndex();
 		bellowingTanglewurm=definitions.getCard("Bellowing Tanglewurm").getIndex();
 		bloodmarkMentor=definitions.getCard("Bloodmark Mentor").getIndex();

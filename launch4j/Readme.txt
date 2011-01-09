@@ -7,7 +7,7 @@ To obtain the Java jar, Magarena.exe can simply be renamed to Magarena.jar becau
 To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
 Do not forget to execute Download Images in the Arena menu the first time you run a new release.
-Otherwise you will see a lot of question marks. The application stops automatically after downloading is finished.
+Otherwise you will see a lot of question marks. The application stops automatically when downloading is finished.
 
 Magarena supports the following keyboard shortcuts :
 - Space or Right key : action button
@@ -20,8 +20,10 @@ Thanks to Epiko for creating the very nice Magarena splash screen.
 
 Have fun!
 
-Release 1.7
+Release 1.7 (January , 2011)
 ===========
+
+- 1 new card (505 total)
 
 - new splash screen
 - added mana info for lands in hand and on battlefield
