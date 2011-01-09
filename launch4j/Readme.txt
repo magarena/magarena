@@ -31,6 +31,8 @@ Release 1.7 (January , 2011)
 - added support for user made UI themes, check out the downloadable moon theme
 - added support for user defined card cubes next to the default cube
 
+- fixed Pongify, it can now target your own permanents with filter legal targets enabled
+
 Release 1.6 (January 2, 2011)
 ===========
 
