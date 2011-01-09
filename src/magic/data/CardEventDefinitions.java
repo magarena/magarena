@@ -985,7 +985,7 @@ public class CardEventDefinitions {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.TARGET_CREATURE,
 				new MagicDestroyTargetPicker(true),new Object[]{cardOnStack},this,
 				"Destroy target creature$. It can't be regenerated. That creature's controller puts a 3/3 green Ape creature onto the battlefield.");
 		}

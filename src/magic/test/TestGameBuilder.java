@@ -120,6 +120,7 @@ public class TestGameBuilder {
 		addToHand(player,"Skullclamp",2);
 		addToHand(player,"Blaze",1);
 		addToHand(player,"Asceticism",1);
+		addToHand(player,"Pongify",1);
 
 		createPermanent(game,player,"Sigiled Paladin",false,1);
 		createPermanent(game,player,"Hero of Bladehold",false,1);
