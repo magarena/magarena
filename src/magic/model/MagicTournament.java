@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -11,9 +12,10 @@ import magic.MagicMain;
 import magic.data.BoosterPackGenerator;
 import magic.data.CubeDefinitions;
 import magic.data.GeneralConfig;
-import magic.data.PlayerImages;
 import magic.data.TournamentConfig;
 import magic.model.phase.MagicDefaultGameplay;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class MagicTournament {
 			
@@ -136,19 +138,30 @@ public class MagicTournament {
 			determineStartPlayer();
 		}
 	}
+	
+	private List<Integer> getAvatarIndices(final int avatars) {
+		
+		final List<Integer> indices=new ArrayList<Integer>();
+		for (int index=0;index<avatars;index++) {
+			
+			indices.add(index);
+		}
+		return indices;
+	}
 
 	private MagicPlayerDefinition[] createPlayers() {
 
-		final List<Integer> faces=PlayerImages.getInstance().getImageIndices();
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		final List<Integer> avatars=getAvatarIndices(theme.getNumberOfAvatars());
 
 		final MagicPlayerDefinition players[]=new MagicPlayerDefinition[2];
 
 		final MagicPlayerDefinition player=new MagicPlayerDefinition(configuration.getName(),false,configuration.getPlayerProfile(),configuration.getAvatar());
 		players[0]=player;
-		faces.remove(player.getFace());
+		avatars.remove(player.getFace());
 		
-		final int findex=MagicRandom.nextInt(faces.size());
-		final Integer face=faces.get(findex);
+		final int findex=MagicRandom.nextInt(avatars.size());
+		final Integer face=avatars.get(findex);
 		players[1]=new MagicPlayerDefinition(COMPUTER,true,configuration.getOpponentProfile(),face);
 
 		return players;

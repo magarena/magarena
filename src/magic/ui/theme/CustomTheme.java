@@ -19,17 +19,40 @@ import magic.data.IconImages;
 public class CustomTheme extends AbstractTheme {
 
 	private static final String THEME_PROPERTIES_FILE="theme.properties";
+
+	private static final int MAX_AVATARS=100;
 	
 	private final File file;
 	private ZipFile zipFile=null;
 	private boolean loaded=false;
+	private PlayerAvatar playerAvatars[];
+	private int nrOfAvatars=0;
 	
 	public CustomTheme(final File file,final String name) {
 		
 		super(name);
 		this.file=file;
+		playerAvatars=new PlayerAvatar[MAX_AVATARS];
 	}
 	
+	@Override
+	public int getNumberOfAvatars() {
+		
+		if (nrOfAvatars==0) {
+			return super.getNumberOfAvatars();
+		}
+		return nrOfAvatars;
+	}
+
+	@Override
+	public ImageIcon getAvatarIcon(final int index,final int size) {
+
+		if (index>=nrOfAvatars) {
+			return super.getAvatarIcon(index, size);
+		}
+		return playerAvatars[index].getIcon(index,size);
+	}
+
 	private void parseEntry(final String key,final String value) {
 
 		if (value.isEmpty()) {
@@ -41,6 +64,15 @@ public class CustomTheme extends AbstractTheme {
 		}
 		Object typeValue=null;
 		final String type=key.substring(0,index);
+		if ("avatar".equals(type)) {
+			final int avatarIndex=Integer.parseInt(key.substring(index+1));
+			if (avatarIndex>0&&avatarIndex<=MAX_AVATARS) {
+				final BufferedImage image=loadImage("avatars/"+value);
+				playerAvatars[avatarIndex-1]=new PlayerAvatar(image);
+				nrOfAvatars=Math.max(avatarIndex,nrOfAvatars);
+			}
+			return;
+		}
 		if ("value".equals(type)) {
 			typeValue=Integer.parseInt(value);
 		} else if ("color".equals(type)) {
@@ -105,7 +137,7 @@ public class CustomTheme extends AbstractTheme {
 			for (final Map.Entry<Object,Object> entry : properties.entrySet()) {
 				
 				parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
-			}			
+			}						
 		} catch (final Exception ex) {						
 		} finally {
 			if (zipFile!=null) {

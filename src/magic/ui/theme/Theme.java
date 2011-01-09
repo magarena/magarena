@@ -65,4 +65,8 @@ public interface Theme {
 	public Color getChoiceColor();
 	
 	public int getValue(final String name);
+	
+	public int getNumberOfAvatars();
+	
+	public ImageIcon getAvatarIcon(final int index,final int size);
 }

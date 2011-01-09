@@ -8,8 +8,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import magic.data.IconImages;
-import magic.data.PlayerImages;
 import magic.model.MagicMessage;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 public class MessagePanel extends JPanel {
 
@@ -27,9 +28,10 @@ public class MessagePanel extends JPanel {
 		final JPanel leftPanel=new JPanel(new BorderLayout(2,0));
 		leftPanel.setOpaque(false);
 		add(leftPanel,BorderLayout.WEST);
-		
+
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		final int face=message.getPlayer().getPlayerDefinition().getFace();		
-		final JLabel playerLabel=new JLabel(PlayerImages.getInstance().getIcon(face,1));
+		final JLabel playerLabel=new JLabel(theme.getAvatarIcon(face,1));
 		leftPanel.add(playerLabel,BorderLayout.WEST);
 		
 		final int life=message.getLife();

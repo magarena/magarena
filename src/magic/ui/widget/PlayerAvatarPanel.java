@@ -8,7 +8,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.border.Border;
 
-import magic.data.PlayerImages;
 import magic.model.MagicPlayerDefinition;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -79,7 +78,8 @@ public class PlayerAvatarPanel extends TexturedPanel {
 	
 	public void update() {
 
-		final ImageIcon faceIcon=PlayerImages.getInstance().getIcon(playerDefinition.getFace(),small?2:3);
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		final ImageIcon faceIcon=theme.getAvatarIcon(playerDefinition.getFace(),small?2:3);
 		faceLabel.setIcon(faceIcon);
 		titleBar.setText(playerDefinition.getName());
 		if (small) {

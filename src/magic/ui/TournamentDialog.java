@@ -24,7 +24,6 @@ import javax.swing.ListCellRenderer;
 
 import magic.data.CubeDefinitions;
 import magic.data.IconImages;
-import magic.data.PlayerImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicColor;
 import magic.ui.theme.Theme;
@@ -47,6 +46,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 	private final JComboBox cubeComboBox;
 	private final JButton okButton;
 	private final JButton cancelButton;
+	private final Theme theme;
 	
 	public TournamentDialog(final MagicFrame frame) {
 		
@@ -58,7 +58,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		theme=ThemeFactory.getInstance().getCurrentTheme();
 		
 		final TournamentConfig config=TournamentConfig.getInstance();
 		config.load();		
@@ -157,7 +157,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		} 
 	}
 	
-	private static class AvatarPanel extends JPanel implements ActionListener {
+	private class AvatarPanel extends JPanel implements ActionListener {
 	
 		private static final long serialVersionUID = 1L;
 
@@ -173,7 +173,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			setLayout(new BorderLayout(0,5));
 						
 			avatarLabel=new JLabel();
-			avatarLabel.setIcon(PlayerImages.getInstance().getIcon(avatar,3));
+			avatarLabel.setIcon(theme.getAvatarIcon(avatar,3));
 			add(avatarLabel,BorderLayout.CENTER);
 
 			final JPanel buttonPanel=new JPanel();
@@ -202,15 +202,15 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			if (source==leftButton) {
 				avatar--;
 				if (avatar<0) {
-					avatar=PlayerImages.getInstance().getNrOfImages()-1;
+					avatar=theme.getNumberOfAvatars()-1;
 				}
 			} else {
 				avatar++;
-				if (avatar==PlayerImages.getInstance().getNrOfImages()) {
+				if (avatar==theme.getNumberOfAvatars()) {
 					avatar=0;
 				}
 			}
-			avatarLabel.setIcon(PlayerImages.getInstance().getIcon(avatar,3));
+			avatarLabel.setIcon(theme.getAvatarIcon(avatar,3));
 		}
 	}
 		
