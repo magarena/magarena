@@ -10,6 +10,8 @@ import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.ui.DelayedViewer;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.TransparentImagePanel;
@@ -55,12 +57,13 @@ public class CardViewer extends JPanel implements DelayedViewer {
 			currentIndex=index;
 			final BufferedImage cardImage;
 			if (image&&GeneralConfig.getInstance().isHighQuality()) {
+				final float opacity=((float)ThemeFactory.getInstance().getCurrentTheme().getValue(Theme.VALUE_POPUP_OPACITY))/100.0f;
 				final BufferedImage sourceImage=HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index);
 				final int imageWidth=sourceImage.getWidth(this);
 				final int imageHeight=sourceImage.getHeight(this);
 				cardImage=new BufferedImage(imageWidth,imageHeight,BufferedImage.TYPE_INT_ARGB);
 				cardImage.getGraphics().drawImage(sourceImage,0,0,null);
-				cardPanel.setOpacity(0.8f);
+				cardPanel.setOpacity(opacity);
 				setSize(imageWidth,imageHeight);
 				revalidate();
 			} else {

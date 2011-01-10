@@ -59,11 +59,14 @@ public abstract class AbstractTheme implements Theme {
 		addToTheme(COLOR_CHOICE,new Color(0,250,0,70));
 		addToTheme(COLOR_COMBAT_CHOICE,new Color(250,130,0,125));
 		addToTheme(COLOR_SELECTED_PLAYER,Color.RED);
+		addToTheme(COLOR_GAME_BORDER,Color.BLACK);
 		
 		addToTheme(VALUE_SPACING,0);
-		addToTheme(VALUE_GAME_LAYOUT,0);
+		addToTheme(VALUE_GAME_LAYOUT,1);
 		addToTheme(VALUE_GAME_STRETCH,0);
 		addToTheme(VALUE_GAME_OFFSET,0);
+		addToTheme(VALUE_GAME_BORDER,0);
+		addToTheme(VALUE_POPUP_OPACITY,80);
 	}
 	
 	protected void addToTheme(final String name,final Object value) {

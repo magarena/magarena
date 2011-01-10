@@ -40,11 +40,14 @@ public interface Theme {
 	public static final String COLOR_CHOICE="color_choice";
 	public static final String COLOR_COMBAT_CHOICE="color_combat_choice";
 	public static final String COLOR_SELECTED_PLAYER="color_selected_player";
+	public static final String COLOR_GAME_BORDER="color_game_border";
 
 	public static final String VALUE_SPACING="value_spacing";
 	public static final String VALUE_GAME_LAYOUT="value_game_layout";
 	public static final String VALUE_GAME_STRETCH="value_game_stretch";
 	public static final String VALUE_GAME_OFFSET="value_game_offset";
+	public static final String VALUE_GAME_BORDER="value_game_border";
+	public static final String VALUE_POPUP_OPACITY="value_popup_opacity";
 	
 	public void load();
 	
