@@ -109,6 +109,7 @@ public class TestGameBuilder {
 		game.setPhase(MagicMainPhase.getFirstInstance());
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
+		opponent.setLife(12);
 		
 		addToLibrary(player,"Plains",10);
 		addToLibrary(opponent,"Island",10);
@@ -121,6 +122,9 @@ public class TestGameBuilder {
 		addToHand(player,"Blaze",1);
 		addToHand(player,"Asceticism",1);
 		addToHand(player,"Pongify",1);
+		addToHand(player,"Accorder Paladin",1);
+		addToHand(player,"Guul Draz Vampire",1);
+		addToHand(player,"Flayer Husk",1);
 
 		createPermanent(game,player,"Sigiled Paladin",false,1);
 		createPermanent(game,player,"Hero of Bladehold",false,1);
@@ -130,8 +134,6 @@ public class TestGameBuilder {
 		createPermanent(game,player,"Rupture Spire",false,8);
 		createPermanent(game,player,"Celestial Colonnade",false,1);		
 		createPermanent(game,opponent,"Bottle Gnomes",false,1);		
-		createPermanent(game,opponent,"Llanowar Elves",false,1);
-		createPermanent(game,opponent,"Fume Spitter",false,1);
 		createPermanent(game,opponent,"Wall of Frost",false,1);
 
 		return game;

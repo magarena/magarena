@@ -14,16 +14,20 @@ Magarena supports the following keyboard shortcuts :
 - Escape or Left key : undo button
 - Enter : switch between graphical and text mode
 
+The UI of Magarena can be customized with downloadable themes coming in zip files.
+These files can be put into the mods folder of the Magarena data folder.
+It is best to restart the application first after switching to one of these themes in preferences.
+
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
 Thanks to Epiko for creating the very nice Magarena splash screen.
 
 Have fun!
 
-Release 1.7 (January , 2011)
+Release 1.7 (January 14, 2011)
 ===========
 
-- 1 new card (505 total)
+- 4 new cards (508 total)
 
 - new splash screen
 - added mana info for lands in hand and on battlefield

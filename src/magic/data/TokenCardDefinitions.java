@@ -309,6 +309,22 @@ public class TokenCardDefinitions {
 		}
 	};	
 	
+	public static final MagicCardDefinition GERM_TOKEN_CARD=new MagicCardDefinition("Germ") {
+		
+		public void initialize() {
+
+			setToken();
+			setValue(1);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Germ"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Black);
+			setColoredType();
+			setPower(0);
+			setToughness(0);
+		}
+	};
+	
 	public static final MagicCardDefinition ZOMBIE_TOKEN_CARD=new MagicCardDefinition("Zombie") {
 		
 		public void initialize() {
@@ -462,6 +478,7 @@ public class TokenCardDefinitions {
 		BEAST4_TOKEN_CARD,
 		BEAST8_TOKEN_CARD,
 		ELEPHANT_TOKEN_CARD,
+		GERM_TOKEN_CARD,
 		ZOMBIE_TOKEN_CARD,
 		ZOMBIE_GIANT_TOKEN_CARD,
 		WOLF_TOKEN_CARD,

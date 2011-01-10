@@ -1,5 +1,6 @@
 Absorb
 Accorder's Shield
+Accorder Paladin
 Acidic Slime
 Affa Guard Hound
 Air Servant
@@ -138,6 +139,7 @@ Flame Slash
 Flame-Kin Zealot
 Flameblast Dragon
 Flametongue Kavu
+Flayer Husk
 Flight of Fancy
 Followed Footsteps
 Force Spike
@@ -180,6 +182,7 @@ Guard Gomazoa
 Guardian Seraph
 Guardian of the Guildpact
 Guul Draz Specter
+Guul Draz Vampire
 Halcyon Glaze
 Hallowed Fountain
 Harmonize

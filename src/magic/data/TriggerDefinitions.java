@@ -2492,6 +2492,25 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger FLAYER_HUSK=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Flayer Husk") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{permanent,player},this,
+				"You put a 0/0 black Germ creature token onto the battlefield, then attach Flayer Husk to it.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayTokenAction action=new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.GERM_TOKEN_CARD);
+			game.doAction(action);
+			game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],action.getPermanent()));
+		}
+    };
+    
     private static final MagicTrigger MAGE_SLAYER=new MagicTrigger(MagicTriggerType.WhenAttacks,"Mage Slayer",1) {
 
 		@Override
@@ -3635,6 +3654,7 @@ public class TriggerDefinitions {
 	    WORT_BOGGART_AUNTIE,
 	    WREXIAL_THE_RISEN_DEEP,
 	    WURMCOIL_ENGINE,
+	    FLAYER_HUSK,
 	    MAGE_SLAYER,
 	    MASK_OF_MEMORY,
 	    MASK_OF_RIDDLES,

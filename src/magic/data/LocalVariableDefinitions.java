@@ -79,6 +79,24 @@ public class LocalVariableDefinitions {
 			}
 		}		
 	};
+
+	private static final MagicLocalVariable GUUL_DRAZ_VAMPIRE=new MagicDummyLocalVariable() {
+
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+
+			if (game.getOpponent(permanent.getController()).getLife()<=10) {
+				pt.power+=2;
+				pt.toughness++;
+			}
+		}	
+		
+		@Override
+		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+		
+			return game.getOpponent(permanent.getController()).getLife()<=10?flags|MagicAbility.Intimidate.getMask():flags;
+		}
+	};
 	
 	private static final MagicLocalVariable JUND_HACKBLADE=new MagicBladeLocalVariable(MagicAbility.Haste.getMask()); 
 	
@@ -92,8 +110,7 @@ public class LocalVariableDefinitions {
 				pt.toughness++;
 			}
 		}
-		
-		
+				
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 		
@@ -231,6 +248,11 @@ public class LocalVariableDefinitions {
 		cardDefinition=CardDefinitions.getInstance().getCard("Guul Draz Specter");
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
 		cardDefinition.addLocalVariable(GUUL_DRAZ_SPECTER);
+
+		// Guul Draz Vampire
+		cardDefinition=CardDefinitions.getInstance().getCard("Guul Draz Vampire");
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.addLocalVariable(GUUL_DRAZ_VAMPIRE);
 		
 		// Jund Hackblade
 		cardDefinition=CardDefinitions.getInstance().getCard("Jund Hackblade");

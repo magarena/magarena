@@ -65,6 +65,7 @@ Dragon4.jpg;http://www.wizards.com/mtg/images/daily/arcana/1688_token4.jpg
 Dragon5.jpg;http://www.wizards.com/mtg/images/daily/arcana/371_tk2.jpg
 Eldrazi Spawn.jpg;http://www.wizards.com/mtg/images/daily/arcana/421_spawn1.jpg
 Elephant.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201843&type=card
+Germ.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/07he2j6tbi_en.jpg
 Goblin Soldier.jpg;http://www.wizards.com/magic/images/mtgcom/arcana1000/1630_1.jpg
 Goblin1.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=20001&d=1143672913
 Goblin2.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1157620938
@@ -84,6 +85,7 @@ Zombie.jpg;http://www.wizards.com/mtg/images/daily/arcana/1689_token2a.jpg
 Zombie Giant.jpg;http://www.wizards.com/mtg/images/daily/arcana/283_ZEN_Token6.jpg
 >cards
 Absorb.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23155&type=card
+Accorder Paladin.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/b0egpqoyqe_en.jpg
 Accorder's Shield.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209046&type=card
 Acidic Slime.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207333&type=card
 Affa Guard Hound.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=198305&type=card
@@ -223,6 +225,7 @@ Flame Slash.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193
 Flame-Kin Zealot.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83562&type=card
 Flameblast Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220458&type=card
 Flametongue Kavu.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205392&type=card
+Flayer Husk.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/8zp2d3kicu_en.jpg
 Flight of Fancy.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83677&type=card
 Force Spike.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=11285&type=card
 Followed Footsteps.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83699&type=card
@@ -266,6 +269,7 @@ Guard Gomazoa.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1
 Guardian Seraph.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193766&type=card
 Guardian of the Guildpact.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=107583&type=card
 Guul Draz Specter.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=183418&type=card
+Guul Draz Vampire.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180498&type=card
 Halcyon Glaze.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83764&type=card
 Hallowed Fountain.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97071&type=card
 Harmonize.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=159033&type=card
@@ -595,6 +599,7 @@ Zephyr Sprite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1
 Zombify.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220580&type=card
 >hqcards
 Absorb.jpg;http://magiccards.info/scans/en/in/226.jpg
+Accorder Paladin.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/b0egpqoyqe_en.jpg
 Accorder's Shield.jpg;http://magiccards.info/scans/en/som/136.jpg
 Acidic Slime.jpg;http://magiccards.info/scans/en/m11/161.jpg
 Affa Guard Hound.jpg;http://magiccards.info/scans/en/roe/14.jpg
@@ -734,6 +739,7 @@ Flame Slash.jpg;http://magiccards.info/scans/en/roe/145.jpg
 Flame-Kin Zealot.jpg;http://magiccards.info/scans/en/rav/206.jpg
 Flameblast Dragon.jpg;http://magiccards.info/scans/en/arc/38.jpg
 Flametongue Kavu.jpg;http://magiccards.info/scans/en/pch/54.jpg
+Flayer Husk.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/8zp2d3kicu_en.jpg
 Flight of Fancy.jpg;http://magiccards.info/scans/en/rav/49.jpg
 Followed Footsteps.jpg;http://magiccards.info/scans/en/rav/51.jpg
 Force Spike.jpg;http://magiccards.info/scans/en/7e/76.jpg
@@ -777,6 +783,7 @@ Guard Gomazoa.jpg;http://magiccards.info/scans/en/roe/70.jpg
 Guardian Seraph.jpg;http://magiccards.info/scans/en/m10/13.jpg
 Guardian of the Guildpact.jpg;http://magiccards.info/scans/en/di/10.jpg
 Guul Draz Specter.jpg;http://magiccards.info/scans/en/zen/92.jpg
+Guul Draz Vampire.jpg;http://magiccards.info/scans/en/zen/93.jpg
 Halcyon Glaze.jpg;http://magiccards.info/scans/en/rav/54.jpg
 Hallowed Fountain.jpg;http://magiccards.info/scans/en/di/174.jpg
 Harmonize.jpg;http://magiccards.info/scans/en/evg/22.jpg

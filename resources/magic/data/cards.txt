@@ -5731,3 +5731,40 @@ color=g
 converted=5
 cost={3}{G}{G}
 timing=enchantment
+
+>Accorder Paladin
+value=2
+rarity=1
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={1}{W}
+power=3
+toughness=1
+ability=battle cry
+timing=main
+
+>Guul Draz Vampire
+value=2
+rarity=2
+type=Creature
+subtype=Vampire,Rogue
+color=b
+converted=1
+cost={B}
+power=1
+toughness=1
+timing=main
+
+>Flayer Husk
+value=2
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+power=1
+toughness=1
+timing=equipment
