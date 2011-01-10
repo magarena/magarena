@@ -156,13 +156,14 @@ public class MagicTournament {
 
 		final MagicPlayerDefinition players[]=new MagicPlayerDefinition[2];
 
-		final MagicPlayerDefinition player=new MagicPlayerDefinition(configuration.getName(),false,configuration.getPlayerProfile(),configuration.getAvatar());
+		final int playerFace=configuration.getAvatar()%theme.getNumberOfAvatars();
+		final MagicPlayerDefinition player=new MagicPlayerDefinition(configuration.getName(),false,configuration.getPlayerProfile(),playerFace);
 		players[0]=player;
-		avatars.remove(player.getFace());
+		avatars.remove(playerFace);
 		
 		final int findex=MagicRandom.nextInt(avatars.size());
-		final Integer face=avatars.get(findex);
-		players[1]=new MagicPlayerDefinition(COMPUTER,true,configuration.getOpponentProfile(),face);
+		final Integer computerFace=avatars.get(findex);
+		players[1]=new MagicPlayerDefinition(COMPUTER,true,configuration.getOpponentProfile(),computerFace);
 
 		return players;
 	}
