@@ -24,6 +24,7 @@ import javax.swing.event.ChangeListener;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
@@ -46,16 +47,19 @@ public class DeckViewer extends JPanel implements ChangeListener {
 	private final CardViewer cardViewer;
 	private final boolean lands;
 	private final boolean edit;
+	private final MagicCubeDefinition cubeDefinition;
 	private MagicPlayerDefinition player;
 	private Font nameFont=FontsAndBorders.FONT1;
 	
-	public DeckViewer(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer,final boolean lands,final boolean edit) {
+	public DeckViewer(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer,
+			final boolean lands,final boolean edit,final MagicCubeDefinition cubeDefinition) {
 		
 		this.frame=frame;
 		this.statisticsViewer=statisticsViewer;
 		this.cardViewer=cardViewer;		
 		this.lands=lands;
 		this.edit=edit;
+		this.cubeDefinition=cubeDefinition;
 		entries=new ArrayList<DeckEntry>();
 
 		setOpaque(false);
@@ -277,7 +281,7 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		@Override
 		public void actionPerformed(final ActionEvent event) {
 
-			frame.editCardWithExplorer(new EditDeckCard(DeckViewer.this,player,deckCard));
+			frame.editCardWithExplorer(new EditDeckCard(DeckViewer.this,player,cubeDefinition,deckCard));
 		}
 	}
 }

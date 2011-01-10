@@ -22,6 +22,7 @@ import javax.swing.border.Border;
 
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerProfile;
 import magic.ui.resolution.DefaultResolutionProfile;
@@ -60,7 +61,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private final JButton closeButton;
 	private List<MagicCardDefinition> cardDefinitions;
 	
-	public ExplorerPanel(final MagicFrame frame,final int mode,final MagicPlayerProfile profile,final EditDeckCard editDeckCard) {
+	public ExplorerPanel(final MagicFrame frame,final int mode,final EditDeckCard editDeckCard) {
 
 		this.frame=frame;
 		this.editDeckCard=editDeckCard;
@@ -72,7 +73,14 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		cardViewer.setCard(null,0);
 		add(cardViewer);
 		
-		filterPanel=new ExplorerFilterPanel(this,mode,profile);
+		MagicPlayerProfile profile=null;
+		MagicCubeDefinition cube=null;
+		if (editDeckCard!=null) {
+			profile=editDeckCard.getPlayer().getProfile();
+			cube=editDeckCard.getCube();
+		}
+		
+		filterPanel=new ExplorerFilterPanel(this,mode,profile,cube);
 		filterPanel.setSize(DefaultResolutionProfile.CARD_VIEWER_WIDTH,FILTER_HEIGHT);
 		add(filterPanel);
 

@@ -2316,7 +2316,7 @@ timing=counter
 
 >Beloved Chaplain
 value=3
-rarity=1
+rarity=2
 type=Creature
 subtype=Cleric
 color=w

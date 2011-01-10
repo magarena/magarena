@@ -8,6 +8,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import magic.data.IconImages;
+import magic.model.MagicCubeDefinition;
 import magic.ui.MagicFrame;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
@@ -23,7 +24,8 @@ public class DeckViewers extends JPanel implements ChangeListener {
 	private final CardLayout cardLayout;
 	private final TabSelector tabSelector;
 	
-	public DeckViewers(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,final CardViewer cardViewer,final boolean edit) {
+	public DeckViewers(final MagicFrame frame,final DeckStatisticsViewer statisticsViewer,
+			final CardViewer cardViewer,final boolean edit,final MagicCubeDefinition cubeDefinition) {
 
 		setLayout(new BorderLayout());
 		setOpaque(false);
@@ -31,8 +33,8 @@ public class DeckViewers extends JPanel implements ChangeListener {
 		titleBar=new TitleBar("");
 		add(titleBar,BorderLayout.NORTH);
 		
-		spellViewer=new DeckViewer(frame,statisticsViewer,cardViewer,false,edit);
-		landViewer=new DeckViewer(frame,statisticsViewer,cardViewer,true,edit);
+		spellViewer=new DeckViewer(frame,statisticsViewer,cardViewer,false,edit,cubeDefinition);
+		landViewer=new DeckViewer(frame,statisticsViewer,cardViewer,true,edit,cubeDefinition);
 
 		cardLayout=new CardLayout();
 		cardPanel=new JPanel(cardLayout);

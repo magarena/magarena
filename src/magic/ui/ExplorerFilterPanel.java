@@ -22,6 +22,7 @@ import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicColoredType;
+import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicType;
 import magic.ui.theme.ThemeFactory;
@@ -67,12 +68,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private final JRadioButton convertedRadioButton;
 	private final int mode;
 	private final MagicPlayerProfile profile;
+	private final MagicCubeDefinition cube;
 	
-	public ExplorerFilterPanel(final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile) {
+	public ExplorerFilterPanel(final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile,final MagicCubeDefinition cube) {
 				
 		this.explorerPanel=explorerPanel;
 		this.mode=mode;
 		this.profile=profile;
+		this.cube=cube;
 
 		final Color textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 		
@@ -194,6 +197,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private boolean filter(final MagicCardDefinition cardDefinition) {
 
 		if (cardDefinition.isToken()) {
+			return false;
+		}
+		if (cube!=null&&!cube.containsCard(cardDefinition)) {
 			return false;
 		}
 				

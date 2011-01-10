@@ -9,8 +9,10 @@ import java.awt.event.ComponentEvent;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+import magic.data.CubeDefinitions;
 import magic.data.IconImages;
 import magic.data.TournamentConfig;
+import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicTournament;
 import magic.ui.resolution.ResolutionProfileResult;
@@ -55,7 +57,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		statsViewer=new DeckStatisticsViewer();
 		add(statsViewer);
 		
-		deckViewers=new DeckViewers(frame,statsViewer,cardViewer,tournament.isEditable());
+		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(tournament.getConfiguration().getCube());
+		deckViewers=new DeckViewers(frame,statsViewer,cardViewer,tournament.isEditable(),cubeDefinition);
 		add(deckViewers);
 		
 		strengthViewer=new DeckStrengthViewer(tournament);

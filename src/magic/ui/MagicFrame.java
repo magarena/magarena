@@ -391,7 +391,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private void openCardExplorer() {
 		
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
-		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,null,null);
+		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,null);
 		addContent(explorerPanel);
 	}
 	
@@ -399,7 +399,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
 		final int mode=editDeckCard.getDeckCard().getCardDefinition().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
-		final ExplorerPanel explorerPanel=new ExplorerPanel(this,mode,editDeckCard.getPlayer().getProfile(),editDeckCard);
+		final ExplorerPanel explorerPanel=new ExplorerPanel(this,mode,editDeckCard);
 		addContent(explorerPanel);
 	}
 	
