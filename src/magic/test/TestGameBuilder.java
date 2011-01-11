@@ -115,16 +115,16 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
-		addToHand(player,"Vivid Creek",1);
-		addToHand(player,"Rupture Spire",1);
 		addToHand(player,"Bellowing Tanglewurm",1);
-		addToHand(player,"Skullclamp",2);
+		addToHand(player,"Skullclamp",1);
 		addToHand(player,"Blaze",1);
 		addToHand(player,"Asceticism",1);
 		addToHand(player,"Pongify",1);
 		addToHand(player,"Accorder Paladin",1);
 		addToHand(player,"Guul Draz Vampire",1);
 		addToHand(player,"Flayer Husk",1);
+		addToHand(player,"Memnite",1);
+		addToHand(player,"Bull Cerodon",1);		
 
 		createPermanent(game,player,"Sigiled Paladin",false,1);
 		createPermanent(game,player,"Hero of Bladehold",false,1);

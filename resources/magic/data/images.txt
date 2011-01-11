@@ -139,6 +139,7 @@ Brigid, Hero of Kinsbaile.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?mu
 Brion Stoutarm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=140217&type=card
 Brittle Effigy.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205002&type=card
 Broodmate Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=178101&type=card
+Bull Cerodon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205321&type=card
 Burst Lightning.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=177558&type=card
 Butcher of Malakir.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197125&type=card
 Cairn Wanderer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=140171&type=card
@@ -344,6 +345,7 @@ Martial Coup.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=17
 Mask of Memory.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205316&type=card
 Mask of Riddles.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179584&type=card
 Meglonoth.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179886&type=card
+Memnite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194078&type=card
 Merfolk Seastalkers.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=189625&type=card
 Messenger Falcons.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=189644&type=card
 Midnight Banshee.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147431&type=card
@@ -653,6 +655,7 @@ Brigid, Hero of Kinsbaile.jpg;http://magiccards.info/scans/en/lw/6.jpg
 Brion Stoutarm.jpg;http://magiccards.info/scans/en/lw/246.jpg
 Brittle Effigy.jpg;http://magiccards.info/scans/en/m11/202.jpg
 Broodmate Dragon.jpg;http://magiccards.info/scans/en/ala/160.jpg
+Bull Cerodon.jpg;http://magiccards.info/scans/en/pch/84.jpg
 Burst Lightning.jpg;http://magiccards.info/scans/en/zen/119.jpg
 Butcher of Malakir.jpg;http://magiccards.info/scans/en/wwk/53.jpg
 Cairn Wanderer.jpg;http://magiccards.info/scans/en/lw/105.jpg
@@ -858,6 +861,7 @@ Martial Coup.jpg;http://magiccards.info/scans/en/cfx/11.jpg
 Mask of Memory.jpg;http://magiccards.info/scans/en/pch/119.jpg
 Mask of Riddles.jpg;http://magiccards.info/scans/en/arb/25.jpg
 Meglonoth.jpg;http://magiccards.info/scans/en/cfx/118.jpg
+Memnite.jpg;http://magiccards.info/scans/en/som/174.jpg
 Merfolk Seastalkers.jpg;http://magiccards.info/scans/en/zen/55.jpg
 Messenger Falcons.jpg;http://magiccards.info/scans/en/arb/145.jpg
 Midnight Banshee.jpg;http://magiccards.info/scans/en/shm/72.jpg

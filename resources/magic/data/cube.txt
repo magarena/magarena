@@ -53,6 +53,7 @@ Brigid, Hero of Kinsbaile
 Brion Stoutarm
 Brittle Effigy
 Broodmate Dragon
+Bull Cerodon
 Burst Lightning
 Butcher of Malakir
 Cairn Wanderer
@@ -256,6 +257,7 @@ Martial Coup
 Mask of Memory
 Mask of Riddles
 Meglonoth
+Memnite
 Merfolk Seastalkers
 Messenger Falcons
 Midnight Banshee
