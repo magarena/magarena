@@ -20,7 +20,7 @@ It is best to restart the application first after switching to one of these them
 
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
-Thanks to Epiko for creating the very nice Magarena splash screen.
+Thanks to Epiko for creating the very nice Magarena splash screen and Marble theme.
 
 Have fun!
 
@@ -32,7 +32,7 @@ Release 1.7 (January 14, 2011)
 - new splash screen
 - added mana info for lands in hand and on battlefield
 - added Enter as hotkey to switch between image and text mode
-- added support for user made UI themes, check out the downloadable moon theme
+- added support for user made UI themes, check out the downloadable Marble and Moon themes
 - added support for user defined card cubes next to the default cube
 
 - fixed Pongify, it can now target your own permanents with filter legal targets enabled

@@ -10,7 +10,6 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import magic.data.CubeDefinitions;
-import magic.data.IconImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerDefinition;
@@ -75,7 +74,6 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		add(tournamentDifficultyViewer);
 
 		playButton=new JButton("Play game");
-		playButton.setIcon(IconImages.START);
 		playButton.setFont(FontsAndBorders.FONT4);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
@@ -83,7 +81,6 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		add(playButton);
 				
 		newButton=new JButton("New");
-		newButton.setIcon(IconImages.NEW);
 		newButton.setFont(FontsAndBorders.FONT4);
 		newButton.addActionListener(this);
 		newButton.setFocusable(false);

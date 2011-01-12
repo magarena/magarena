@@ -27,7 +27,6 @@ public class IconImages {
 	public static final ImageIcon ARENA=loadIcon("arena.png");
 	public static final ImageIcon CUBE=loadIcon("cube.png");
 	public static final ImageIcon ANY=loadIcon("any.png");
-	public static final ImageIcon NEW=loadIcon("new.png");
 	public static final ImageIcon LOG=loadIcon("log.png");
 	public static final ImageIcon TEXT=loadIcon("text.png");
 	public static final ImageIcon OK=loadIcon("ok.gif");
@@ -70,7 +69,7 @@ public class IconImages {
 	public static final ImageIcon GRAVEYARD=loadIcon("graveyard.gif");
 	public static final ImageIcon GRAVEYARD2=loadIcon("graveyard2.gif");
 	public static final ImageIcon EXILE=loadIcon("exile.png");
-	public static final ImageIcon GAME=loadIcon("game.gif");
+	public static final ImageIcon NUMBER=loadIcon("number.png");
 	public static final ImageIcon DIFFICULTY=loadIcon("difficulty.png");
 	public static final ImageIcon DIFFICULTY2=loadIcon("difficulty2.gif");
 	public static final ImageIcon CANNOTTAP=loadIcon("cannottap.png");
@@ -82,6 +81,7 @@ public class IconImages {
 	public static final ImageIcon BLOCK=loadIcon("block.gif");	
 	public static final ImageIcon BLOCKED=loadIcon("blocked.gif");
 	public static final ImageIcon MESSAGE=loadIcon("message.png");
+	public static final ImageIcon PROGRESS=loadIcon("progress.png");
 	public static final ImageIcon TROPHY=loadIcon("trophy.gif");
 	public static final ImageIcon GOLD=loadIcon("gold.png");
 	public static final ImageIcon SILVER=loadIcon("silver.png");

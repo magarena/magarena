@@ -42,7 +42,7 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 
 		tabSelector=new TabSelector(this,false);
 		tabSelector.addTab(IconImages.MESSAGE,"Message");
-		tabSelector.addTab(IconImages.TROPHY,"Progress");
+		tabSelector.addTab(IconImages.PROGRESS,"Progress");
 		titleBar.add(tabSelector,BorderLayout.EAST);
 	}
 	
