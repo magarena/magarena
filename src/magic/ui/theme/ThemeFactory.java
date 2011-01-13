@@ -41,7 +41,6 @@ public class ThemeFactory {
 
 		final List<Theme> themes=new ArrayList<Theme>();
 		themes.add(new DefaultTheme("wood",IconImages.WOOD,IconImages.MARBLE,Color.BLACK));
-		themes.add(new DefaultTheme("light wood",IconImages.WOOD2,IconImages.MARBLE,Color.BLACK));
 		themes.add(new DefaultTheme("granite",IconImages.GRANITE,IconImages.GRANITE2,Color.BLACK));
 		themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2,Color.BLUE));
 		

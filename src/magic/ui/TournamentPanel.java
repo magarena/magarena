@@ -73,14 +73,14 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		tournamentDifficultyViewer=new TournamentDifficultyViewer(tournament);
 		add(tournamentDifficultyViewer);
 
-		playButton=new JButton("Play game");
+		playButton=new JButton("PLAY GAME");
 		playButton.setFont(FontsAndBorders.FONT4);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
 		playButton.setEnabled(!tournament.isFinished());
 		add(playButton);
 				
-		newButton=new JButton("New");
+		newButton=new JButton("NEW");
 		newButton.setFont(FontsAndBorders.FONT4);
 		newButton.addActionListener(this);
 		newButton.setFocusable(false);
