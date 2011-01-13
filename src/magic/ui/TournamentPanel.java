@@ -17,14 +17,13 @@ import magic.model.MagicTournament;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
-import magic.ui.theme.Theme;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.viewer.DeckViewers;
 import magic.ui.viewer.PlayersViewer;
 import magic.ui.viewer.TournamentDifficultyViewer;
-import magic.ui.widget.BackgroundLabel;
+import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
 
 public class TournamentPanel extends JPanel implements ActionListener {
@@ -33,7 +32,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	
 	private final MagicFrame frame;
 	private final MagicTournament tournament;
-	private final BackgroundLabel backgroundLabel;
+	private final ZoneBackgroundLabel backgroundLabel;
 	private final PlayersViewer playersViewer;
 	private final CardViewer cardViewer;
 	private final DeckViewers deckViewers;
@@ -86,7 +85,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		newButton.setFocusable(false);
 		add(newButton);
 		
-		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_BACKGROUND);
+		backgroundLabel=new ZoneBackgroundLabel();
 		backgroundLabel.setBounds(0,0,0,0);
 		add(backgroundLabel);
 				

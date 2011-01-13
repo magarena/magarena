@@ -37,7 +37,7 @@ import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
-import magic.ui.widget.BattlefieldBackgroundLabel;
+import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.TitleBar;
 
 public class GamePanel extends JPanel {
@@ -50,7 +50,7 @@ public class GamePanel extends JPanel {
 	
 	private final MagicFrame frame;
 	private final MagicGame game;
-	private final BattlefieldBackgroundLabel backgroundLabel;
+	private final ZoneBackgroundLabel backgroundLabel;
 	private final GameController controller;
 	private final ViewerInfo viewerInfo;
 	private final PlayerViewer playerViewer;
@@ -73,7 +73,7 @@ public class GamePanel extends JPanel {
 	private final ImageCombatViewer imageCombatViewer;
 	private final ImageViewer imageViewer;
 	
-	public GamePanel(final MagicFrame frame,final MagicGame game,final BattlefieldBackgroundLabel backgroundLabel) {
+	public GamePanel(final MagicFrame frame,final MagicGame game,final ZoneBackgroundLabel backgroundLabel) {
 
 		this.frame=frame;
 		this.game=game;

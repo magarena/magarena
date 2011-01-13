@@ -43,6 +43,7 @@ public interface Theme {
 	public static final String COLOR_GAME_BORDER="color_game_border";
 
 	public static final String VALUE_SPACING="value_spacing";
+	public static final String VALUE_BACKGROUND_STRETCH="value_background_stretch";
 	public static final String VALUE_GAME_LAYOUT="value_game_layout";
 	public static final String VALUE_GAME_STRETCH="value_game_stretch";
 	public static final String VALUE_GAME_OFFSET="value_game_offset";

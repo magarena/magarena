@@ -62,6 +62,7 @@ public abstract class AbstractTheme implements Theme {
 		addToTheme(COLOR_GAME_BORDER,Color.BLACK);
 		
 		addToTheme(VALUE_SPACING,0);
+		addToTheme(VALUE_BACKGROUND_STRETCH,0);
 		addToTheme(VALUE_GAME_LAYOUT,1);
 		addToTheme(VALUE_GAME_STRETCH,0);
 		addToTheme(VALUE_GAME_OFFSET,0);

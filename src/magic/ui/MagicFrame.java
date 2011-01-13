@@ -27,9 +27,7 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicTournament;
 import magic.test.TestGameBuilder;
-import magic.ui.theme.Theme;
-import magic.ui.widget.BackgroundLabel;
-import magic.ui.widget.BattlefieldBackgroundLabel;
+import magic.ui.widget.ZoneBackgroundLabel;
 
 public class MagicFrame extends JFrame implements ActionListener {
 	
@@ -276,7 +274,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 			enableMenuItem(SWAP_DECKS_ITEM,tournament.isEditable());
 			enableMenuItem(PLAY_GAME_ITEM,!tournament.isFinished());
 		} else {
-			setContent(new BackgroundLabel(Theme.TEXTURE_BACKGROUND));
+			setContent(new ZoneBackgroundLabel());
 		}
 	}
 	
@@ -380,7 +378,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private void openGame(final MagicGame game) {
 
-		final BattlefieldBackgroundLabel backgroundLabel=new BattlefieldBackgroundLabel();
+		final ZoneBackgroundLabel backgroundLabel=new ZoneBackgroundLabel();
+		backgroundLabel.setGame(true);
 		gamePanel=new GamePanel(this,game,backgroundLabel);
 		final GameLayeredPane gamePane=new GameLayeredPane(gamePanel,backgroundLabel);
 		setContent(gamePane);		

@@ -21,7 +21,7 @@ import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.BackgroundLabel;
+import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 
@@ -39,7 +39,7 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 	);
 		
 	private final MagicFrame frame;
-	private final BackgroundLabel backgroundLabel;
+	private final ZoneBackgroundLabel backgroundLabel;
 	private final JScrollPane keywordsPane;
 	private final JButton closeButton;
 	
@@ -67,7 +67,7 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 		final JPanel keywordsPanel=createKeywordsPanel();
 		keywordsPane.getViewport().add(keywordsPanel);
 		
-		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_BACKGROUND);
+		backgroundLabel=new ZoneBackgroundLabel();
 		backgroundLabel.setBounds(0,0,0,0);
 		add(backgroundLabel);
 		

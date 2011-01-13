@@ -8,13 +8,13 @@ import javax.swing.JLayeredPane;
 
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.LogBookViewer;
-import magic.ui.widget.BattlefieldBackgroundLabel;
+import magic.ui.widget.ZoneBackgroundLabel;
 
 public class GameLayeredPane extends JLayeredPane {
 	
 	private static final long serialVersionUID = 1L;
 
-	public GameLayeredPane(final GamePanel gamePanel,final BattlefieldBackgroundLabel backgroundLabel) {
+	public GameLayeredPane(final GamePanel gamePanel,final ZoneBackgroundLabel backgroundLabel) {
 		
 		setLayout(null);
 		

@@ -26,9 +26,8 @@ import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerProfile;
 import magic.ui.resolution.DefaultResolutionProfile;
-import magic.ui.theme.Theme;
 import magic.ui.viewer.CardViewer;
-import magic.ui.widget.BackgroundLabel;
+import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
 
 public class ExplorerPanel extends JPanel implements ActionListener {
@@ -53,7 +52,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	
  	private final MagicFrame frame;
 	private final EditDeckCard editDeckCard;
- 	private final BackgroundLabel backgroundLabel;
+ 	private final ZoneBackgroundLabel backgroundLabel;
 	private final CardViewer cardViewer;
 	private final ExplorerFilterPanel filterPanel;
 	private final JScrollPane cardsScrollPane;
@@ -112,7 +111,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		closeButton.addActionListener(this);
 		add(closeButton);
 		
-		backgroundLabel=new BackgroundLabel(Theme.TEXTURE_BACKGROUND);
+		backgroundLabel=new ZoneBackgroundLabel();
 		backgroundLabel.setBounds(0,0,0,0);
 		add(backgroundLabel);
 		

@@ -31,7 +31,7 @@ Release 1.7 (January 14, 2011)
 - new splash screen
 - added mana info for lands in hand and on battlefield
 - added Enter as hotkey to switch between image and text mode
-- added support for user made UI themes that must be downloaded separately
+- added support for user made UI themes that can be downloaded separately
 - added support for user defined card cubes next to the default cube
 
 - fixed Pongify, it can now target your own permanents with filter legal targets enabled
