@@ -5792,3 +5792,25 @@ cost={0}
 power=1
 toughness=1
 timing=main
+
+>Drudge Reavers
+value=3
+rarity=1
+type=Creature
+subtype=Skeleton
+color=b
+converted=4
+cost={3}{B}
+power=2
+toughness=1
+ability=flash
+timing=flash
+
+>Thoughtweft Gambit
+value=4
+rarity=2
+type=Instant
+color=wu
+converted=6
+cost={4}{W/U}{W/U}
+timing=tapping

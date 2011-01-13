@@ -197,6 +197,7 @@ Drana, Kalastria Bloodchief.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?
 Dread.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=140168&type=card
 Dromar, the Banisher.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23206&type=card
 Drowned Catacomb.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205090&type=card
+Drudge Reavers.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=108850&type=card
 Dust Corona.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=110501&type=card
 Earthquake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190551&type=card
 Echo Mage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=198163&type=card
@@ -529,6 +530,7 @@ Teneb, the Harvester.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multive
 Terminate.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220524&type=card
 Terra Stomper.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=186321&type=card
 Thieving Magpie.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129764&type=card
+Thoughtweft Gambit.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=146024&type=card
 Thunder Strike.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=204973&type=card
 Thundersong Trumpeter.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83611&type=card
 Tidehollow Strix.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175015&type=card
@@ -713,6 +715,7 @@ Drana, Kalastria Bloodchief.jpg;http://magiccards.info/scans/en/roe/107.jpg
 Dread.jpg;http://magiccards.info/scans/en/lw/107.jpg
 Dromar, the Banisher.jpg;http://magiccards.info/scans/en/in/244.jpg
 Drowned Catacomb.jpg;http://magiccards.info/scans/en/m11/224.jpg
+Drudge Reavers.jpg;http://magiccards.info/scans/en/ts/105.jpg
 Dust Corona.jpg;http://magiccards.info/scans/en/pc/97.jpg
 Earthquake.jpg;http://magiccards.info/scans/en/m10/134.jpg
 Echo Mage.jpg;http://magiccards.info/scans/en/roe/64.jpg
@@ -1045,6 +1048,7 @@ Teneb, the Harvester.jpg;http://magiccards.info/scans/en/pc/163.jpg
 Terminate.jpg;http://magiccards.info/scans/en/arc/95.jpg
 Terra Stomper.jpg;http://magiccards.info/scans/en/zen/187.jpg
 Thieving Magpie.jpg;http://magiccards.info/scans/en/10e/115.jpg
+Thoughtweft Gambit.jpg;http://magiccards.info/scans/en/shm/154.jpg
 Thunder Strike.jpg;http://magiccards.info/scans/en/m11/157.jpg
 Thundersong Trumpeter.jpg;http://magiccards.info/scans/en/rav/235.jpg
 Tidehollow Strix.jpg;http://magiccards.info/scans/en/ala/203.jpg

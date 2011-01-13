@@ -111,6 +111,7 @@ Drana, Kalastria Bloodchief
 Dread
 Dromar, the Banisher
 Drowned Catacomb
+Drudge Reavers
 Dust Corona
 Earthquake
 Echo Mage
@@ -438,6 +439,7 @@ Teneb, the Harvester
 Terminate
 Terra Stomper
 Thieving Magpie
+Thoughtweft Gambit
 Thunder Strike
 Thundersong Trumpeter
 Tidehollow Strix

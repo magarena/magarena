@@ -26,7 +26,7 @@ Have fun!
 Release 1.7 (January 14, 2011)
 ===========
 
-- 6 new cards (510 total)
+- 8 new cards (512 total)
 
 - new splash screen
 - added mana info for lands in hand and on battlefield

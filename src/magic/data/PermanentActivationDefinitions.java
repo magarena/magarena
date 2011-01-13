@@ -488,6 +488,8 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
+	private static final MagicPermanentActivation DRUDGE_REAVERS=new MagicRegenerationActivation("Drudge Reavers",MagicManaCost.BLACK);
+	
 	private static final MagicPermanentActivation ECHO_MAGE1=new MagicLevelUpActivation("Echo Mage",MagicManaCost.ONE_BLUE,4);
 	
 	private static final MagicPermanentActivation ECHO_MAGE2=new MagicPermanentActivation("Echo Mage",
@@ -2463,6 +2465,7 @@ public class PermanentActivationDefinitions {
 		DAUNTLESS_ESCORT,
 		DEATHLESS_ANGEL,
 		DRANA_KALASTRIA_BLOODCHIEF,
+		DRUDGE_REAVERS,
 		ECHO_MAGE1,
 		ECHO_MAGE2,
 		EMBER_HAULER,

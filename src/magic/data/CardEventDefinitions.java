@@ -1270,6 +1270,36 @@ public class CardEventDefinitions {
 			}
 		}
 	};
+
+	private static final MagicSpellCardEvent THOUGHTWEFT_GAMBIT=new MagicSpellCardEvent("Thoughtweft Gambit") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack,player},this,
+				"Tap all creatures your opponent controls and untap all creatures you control.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			
+			final MagicPlayer player=(MagicPlayer)data[1];
+			final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
+			for (final MagicTarget target : targets) {
+
+				final MagicPermanent creature=(MagicPermanent)target;
+				if (creature.getController()==player) {
+					game.doAction(new MagicUntapAction(creature));
+				} else {
+					game.doAction(new MagicTapAction(creature,true));
+				}
+			}
+		}
+	};
 	
 	private static final MagicSpellCardEvent THUNDER_STRIKE=new MagicSpellCardEvent("Thunder Strike") {
 
@@ -2985,6 +3015,7 @@ public class CardEventDefinitions {
 		SMOTHER,
 		SWORDS_TO_PLOWSHARES,
 		TERMINATE,
+		THOUGHTWEFT_GAMBIT,
 		THUNDER_STRIKE,
 		TO_ARMS,
 		TRUMPET_BLAST,

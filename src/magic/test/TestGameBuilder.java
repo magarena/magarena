@@ -125,7 +125,9 @@ public class TestGameBuilder {
 		addToHand(player,"Flayer Husk",1);
 		addToHand(player,"Memnite",1);
 		addToHand(player,"Bull Cerodon",1);		
-
+		addToHand(player,"Drudge Reavers",1);		
+		addToHand(player,"Thoughtweft Gambit",1);		
+		
 		createPermanent(game,player,"Sigiled Paladin",false,1);
 		createPermanent(game,player,"Hero of Bladehold",false,1);
 		createPermanent(game,player,"Watchwolf",false,1);
