@@ -43,8 +43,8 @@ public class IconImages {
 	public static final ImageIcon ALL=loadIcon("all.gif");
 	public static final ImageIcon LEFT=loadIcon("left.gif");
 	public static final ImageIcon RIGHT=loadIcon("right.gif");
-	public static final ImageIcon CREATURE=loadIcon("creature.gif");
-	public static final ImageIcon ARTIFACT=loadIcon("artifact.gif");
+	public static final ImageIcon CREATURE=loadIcon("creature.png");
+	public static final ImageIcon ARTIFACT=loadIcon("artifact.png");
 	public static final ImageIcon EQUIPMENT=loadIcon("equipment.gif");
 	public static final ImageIcon ENCHANTMENT=loadIcon("enchantment.gif");
 	public static final ImageIcon AURA=loadIcon("aura.png");
