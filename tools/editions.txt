@@ -1,0 +1,67 @@
+# List of allowed editions, used to filter which cards can be automatically imported by a script
+# One edition per line, comments start with hash, empty lines are ignored
+
+# Base sets
+Seventh Edition
+Eighth Edition
+Ninth Edition
+Tenth Edition
+Magic 2010
+Magic 2011
+
+# Invasion block
+Invasion
+Planeshift
+Apocalypse
+
+# Odyssey block
+Odyssey
+Torment
+Judgment
+
+# Onslaught block
+Onslaught
+Legions
+Scourge
+
+# Mirrodin block
+Mirrodin
+Darksteel
+Fifth Dawn
+
+# Kamigawa block
+Champions of Kamigawa
+Betrayers of Kamigawa
+Saviors of Kamigawa
+
+# Ravnica block
+Ravnica: City of Guilds
+Guildpact
+Dissension
+
+# Time Spiral block
+Time Spiral
+Planar Chaos
+Future Sight
+
+# Lorwyn block
+Lorwyn
+Morningtide
+
+# Shadowmoor block
+Shadowmoor
+Eventide
+
+# Shards of Alara block
+Shards of Alara
+Conflux
+Alara Reborn
+
+# Zendikar block
+Zendikar
+Worldwake
+Rise of the Eldrazi
+
+# Scars of Mirrodin block
+Scars of Mirrodin
+Mirrodin Besieged

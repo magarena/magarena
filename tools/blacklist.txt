@@ -1,0 +1,10 @@
+# Card blacklist - list of cards to never automatically import by script
+# Special cards, such as tokens, or cards that failt to import correctly should be put here
+
+# List one card name per line, empty lines are ignored, hash mark starts a comment
+
+# Tokens
+Elemental Shaman
+Spirit
+Elemental
+Goblin

@@ -1,0 +1,253 @@
+# Config file for cube generator
+# Cubes are generated based on sets, with possibility of additionally allowing or banning single cards
+#
+# Syntax of this file:
+# [Name of the cube]
+# Name of set to include in cube (if line is not understood as special command)
+# * = all sets
+# Special commands are allowed:
+# allow:Name of single card to allow
+# universal:Name of single card to allow in all cubes
+# disallow:Name of card to ban
+# restrict:Name of card do restrict
+#
+# Leading and trailing whitespace is removed, empty lines are ignored, comments begin with hash sign
+
+universal:Forest
+universal:Swamp
+universal:Mountain
+universal:Plains
+universal:Island
+
+# This cube is equivalent to all implemented cards that can be used in Legacy tournament format
+[Legacy]
+*
+disallow:Amulet of Quoz
+disallow:Ancestral Recall
+disallow:Balance
+disallow:Bazaar of Baghdad
+disallow:Black Lotus
+disallow:Black Vise
+disallow:Bronze Tablet
+disallow:Channel
+disallow:Chaos Orb
+disallow:Contract from Below
+disallow:Darkpact
+disallow:Demonic Attorney
+disallow:Demonic Consultation
+disallow:Demonic Tutor
+disallow:Earthcraft
+disallow:Falling Star
+disallow:Fastbond
+disallow:Flash
+disallow:Frantic Search
+disallow:Goblin Recruiter
+disallow:Gush
+disallow:Hermit Druid
+disallow:Imperial Seal
+disallow:Jeweled Bird
+disallow:Land Tax
+disallow:Library of Alexandria
+disallow:Mana Crypt
+disallow:Mana Drain
+disallow:Mana Vault
+disallow:Memory Jar
+disallow:Mind Twist
+disallow:Mind's Desire
+disallow:Mishra's Workshop
+disallow:Mox Emerald
+disallow:Mox Jet
+disallow:Mox Pearl
+disallow:Mox Ruby
+disallow:Mox Sapphire
+disallow:Mystical Tutor
+disallow:Necropotence
+disallow:Oath of Druids
+disallow:Rebirth
+disallow:Shahrazad
+disallow:Skullclamp
+disallow:Sol Ring
+disallow:Strip Mine
+disallow:Survival of the Fittest
+disallow:Tempest Efreet
+disallow:Time Vault
+disallow:Time Walk
+disallow:Timetwister
+disallow:Timmerian Fiends
+disallow:Tinker
+disallow:Tolarian Academy
+disallow:Vampiric Tutor
+disallow:Wheel of Fortune
+disallow:Windfall
+disallow:Worldgorger Dragon
+disallow:Yawgmoth's Bargain
+disallow:Yawgmoth's Will
+
+# This cube is equivalent to all implemented cards that can be used in Vintage tournament format
+[Vintage]
+*
+disallow:Amulet of Quoz
+disallow:Bronze Tablet
+disallow:Chaos Orb
+disallow:Contract from Below
+disallow:Darkpact
+disallow:Demonic Attorney
+disallow:Falling Star
+disallow:Jeweled Bird
+disallow:Rebirth
+disallow:Shahrazad
+disallow:Tempest Efreet
+disallow:Timmerian Fiends
+restrict:Ancestral Recall
+restrict:Balance
+restrict:Black Lotus
+restrict:Brainstorm
+restrict:Burning Wish
+restrict:Channel
+restrict:Demonic Consultation
+restrict:Demonic Tutor
+restrict:Fact or Fiction
+restrict:Fastbond
+restrict:Flash
+restrict:Gifts Ungiven
+restrict:Imperial Seal
+restrict:Library of Alexandria
+restrict:Lion’s Eye Diamond
+restrict:Lotus Petal
+restrict:Mana Crypt
+restrict:Mana Vault
+restrict:Memory Jar
+restrict:Merchant Scroll
+restrict:Mind’s Desire
+restrict:Mox Emerald
+restrict:Mox Jet
+restrict:Mox Pearl
+restrict:Mox Ruby
+restrict:Mox Sapphire
+restrict:Mystical Tutor
+restrict:Necropotence
+restrict:Ponder
+restrict:Regrowth
+restrict:Sol Ring
+restrict:Strip Mine
+restrict:Thirst for Knowledge
+restrict:Time Vault
+restrict:Time Walk
+restrict:Timetwister
+restrict:Tinker
+restrict:Tolarian Academy
+restrict:Trinisphere
+restrict:Vampiric Tutor
+restrict:Wheel of Fortune
+restrict:Windfall
+restrict:Yawgmoth’s Bargain
+restrict:Yawgmoth’s Will
+
+# This cube is equivalent to all implemented cards that can be used in Standard tournament format
+[Standard]
+Magic 2011
+Zendikar
+Worldwake
+Rise of the Eldrazi
+Scars of Mirrodin
+Mirrodin Besieged
+
+# This cube is equivalent to all implemented cards that can be used in Extended tournament format
+[Extended]
+Magic 2010
+Magic 2011
+Lorwyn
+Morningtide
+Shadowmoor
+Eventide
+Shards of Alara
+Conflux
+Alara Reborn
+Zendikar
+Worldwake
+Rise of the Eldrazi
+Scars of Mirrodin
+Mirrodin Besieged
+
+# This cube is equivalent to all implemented cards that can be used in Invasion block tournament format
+[Invasion block]
+Invasion
+Planeshift
+Apocalypse
+
+# This cube is equivalent to all implemented cards that can be used in Odyssey block tournament format
+[Odyssey block]
+Odyssey
+Torment
+Judgment
+
+# This cube is equivalent to all implemented cards that can be used in Onslaught block tournament format
+[Onslaught block]
+Onslaught
+Legions
+Scourge
+
+# This cube is equivalent to all implemented cards that can be used in Mirrodin block tournament format
+[Mirrodin block]
+Mirrodin
+Darksteel
+Fifth Dawn
+disallow:AEther Vial
+disallow:Ancient Den
+disallow:Arcbound Ravager
+disallow:Darksteel Citadel
+disallow:Disciple of the Vault
+disallow:Great Furnace
+disallow:Seat of the Synod
+disallow:Tree of Tales
+disallow:Vault of Whispers
+disallow:Skullclamp
+
+# This cube is equivalent to all implemented cards that can be used in Kamigawa block tournament format
+[Kamigawa block]
+Champions of Kamigawa
+Betrayers of Kamigawa
+Saviors of Kamigawa
+
+# This cube is equivalent to all implemented cards that can be used in Ravnica block tournament format
+[Ravnica block]
+Ravnica: City of Guilds
+Guildpact
+Dissension
+
+# This cube is equivalent to all implemented cards that can be used in Time Spiral block tournament format
+[Time Spiral block]
+Time Spiral
+Planar Chaos
+Future Sight
+
+# This cube is equivalent to all implemented cards that can be used in Lorwyn block tournament format
+[Lorwyn block]
+Lorwyn
+Morningtide
+
+# This cube is equivalent to all implemented cards that can be used in Shadowmoor block tournament format
+[Shadowmoor block]
+Shadowmoor
+Eventide
+
+# This cube is equivalent to all implemented cards that can be used in Shards of Alara block tournament format
+[Shards of Alara block]
+Shards of Alara
+Conflux
+Alara Reborn
+
+# This cube is equivalent to all implemented cards that can be used in Zendikar block tournament format
+[Zendikar block]
+Zendikar
+Worldwake
+Rise of the Eldrazi
+
+# This cube is equivalent to all implemented cards that can be used in Scars of Mirrodin block tournament format
+[Scars of Mirrodin block]
+Scars of Mirrodin
+Mirrodin Besieged
+
+# This cube contains all implemented cards
+[All]
+*
