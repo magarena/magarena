@@ -168,6 +168,7 @@ Crumbling Necropolis.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multive
 Cumber Stone.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180322&type=card
 Cunning Sparkmage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201563&type=card
 Cursecatcher.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158763&type=card
+Curse of Chains.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=146079&type=card
 Daggerclaw Imp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197022&type=card
 Darkslick Drake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194217&type=card
 Darkslick Shores.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209400&type=card
@@ -182,6 +183,7 @@ Deluge.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=135223&t
 Diminish.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208226&type=card
 Disfigure.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180115&type=card
 Dismal Failure.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129022&type=card
+Disperse.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=212242&type=card
 Dissipation Field.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=202635&type=card
 Divination.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190172&type=card
 Doom Blade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205088&type=card
@@ -204,6 +206,7 @@ Echo Mage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=19816
 Eel Umbra.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193495&type=card
 Eldrazi Monument.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193398&type=card
 Elephant Guide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201832&type=card
+Elite Vanguard.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208291&type=card
 Ember Hauler.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208008&type=card
 Empyrial Archangel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175104&type=card
 Epic Proportions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=143732&type=card
@@ -266,6 +269,7 @@ Grave Titan.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205
 Graypelt Refuge.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220467&type=card
 Great Sable Stag.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193759&type=card
 Griffin Guide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=110514&type=card
+Gruul War Plow.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=107098&type=card
 Grixis Grimblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188976&type=card
 Guard Gomazoa.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193602&type=card
 Guardian Seraph.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193766&type=card
@@ -540,6 +544,7 @@ Titanic Ultimatum.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 To Arms!.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83739&type=card
 Tolsimir Wolfblood.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=89110&type=card
 Torpor Dust.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=142053&type=card
+Tranquility.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=11540&type=card
 Treva, the Renewer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209121&type=card
 Trip Noose.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=222759&type=card
 Troll Ascetic.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130498&type=card
@@ -686,6 +691,7 @@ Crumbling Necropolis.jpg;http://magiccards.info/scans/en/ala/222.jpg
 Cumber Stone.jpg;http://magiccards.info/scans/en/cfx/24.jpg
 Cunning Sparkmage.jpg;http://magiccards.info/scans/en/wwk/79.jpg
 Cursecatcher.jpg;http://magiccards.info/scans/en/shm/34.jpg
+Curse of Chains.jpg;http://magiccards.info/scans/en/shm/139.jpg
 Daggerclaw Imp.jpg;http://magiccards.info/scans/en/dvd/33.jpg
 Darkslick Drake.jpg;http://magiccards.info/scans/en/som/30.jpg
 Darkslick Shores.jpg;http://magiccards.info/scans/en/som/226.jpg
@@ -700,6 +706,7 @@ Deluge.jpg;http://magiccards.info/scans/en/10e/79.jpg
 Diminish.jpg;http://magiccards.info/scans/en/m11/52.jpg
 Disfigure.jpg;http://magiccards.info/scans/en/zen/87.jpg
 Dismal Failure.jpg;http://magiccards.info/scans/en/pc/39.jpg
+Disperse.jpg;http://magiccards.info/scans/en/som/31.jpg
 Dissipation Field.jpg;http://magiccards.info/scans/en/som/32.jpg
 Divination.jpg;http://magiccards.info/scans/en/m10/49.jpg
 Doom Blade.jpg;http://magiccards.info/scans/en/m11/95.jpg
@@ -722,6 +729,7 @@ Echo Mage.jpg;http://magiccards.info/scans/en/roe/64.jpg
 Eel Umbra.jpg;http://magiccards.info/scans/en/roe/65.jpg
 Eldrazi Monument.jpg;http://magiccards.info/scans/en/zen/199.jpg
 Elephant Guide.jpg;http://magiccards.info/scans/en/gvl/18.jpg
+Elite Vanguard.jpg;http://magiccards.info/scans/en/ddf/2.jpg
 Ember Hauler.jpg;http://magiccards.info/scans/en/m11/135.jpg
 Empyrial Archangel.jpg;http://magiccards.info/scans/en/ala/166.jpg
 Epic Proportions.jpg;http://magiccards.info/scans/en/lw/209.jpg
@@ -785,6 +793,7 @@ Graypelt Refuge.jpg;http://magiccards.info/scans/en/arc/125.jpg
 Great Sable Stag.jpg;http://magiccards.info/scans/en/m10/186.jpg
 Griffin Guide.jpg;http://magiccards.info/scans/en/ts/21.jpg
 Grixis Grimblade.jpg;http://magiccards.info/scans/en/arb/134.jpg
+Gruul War Plow.jpg;http://magiccards.info/scans/en/gp/151.jpg
 Guard Gomazoa.jpg;http://magiccards.info/scans/en/roe/70.jpg
 Guardian Seraph.jpg;http://magiccards.info/scans/en/m10/13.jpg
 Guardian of the Guildpact.jpg;http://magiccards.info/scans/en/di/10.jpg
@@ -1058,6 +1067,7 @@ Titanic Ultimatum.jpg;http://magiccards.info/scans/en/ala/204.jpg
 To Arms!.jpg;http://magiccards.info/scans/en/gp/20.jpg
 Tolsimir Wolfblood.jpg;http://magiccards.info/scans/en/rav/236.jpg
 Torpor Dust.jpg;http://magiccards.info/scans/en/shm/177.jpg
+Tranquility.jpg;http://magiccards.info/scans/en/7e/276.jpg
 Treva, the Renewer.jpg;http://magiccards.info/scans/en/pvc/49.jpg
 Trip Noose.jpg;http://magiccards.info/scans/en/shm/266.jpg
 Troll Ascetic.jpg;http://magiccards.info/scans/en/10e/305.jpg

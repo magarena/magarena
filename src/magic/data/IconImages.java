@@ -132,6 +132,7 @@ public class IconImages {
 	public static final ImageIcon COST_SEVEN=loadSymbolIcon("seven.gif");
 	public static final ImageIcon COST_EIGHT=loadSymbolIcon("eight.gif");
 	public static final ImageIcon COST_NINE=loadSymbolIcon("nine.gif");
+	public static final ImageIcon COST_NINE_OR_MORE=loadIcon("nineplus.gif");
 	public static final ImageIcon COST_X=loadSymbolIcon("x.gif");
 		
 	private static BufferedImage loadImage(final String name) {

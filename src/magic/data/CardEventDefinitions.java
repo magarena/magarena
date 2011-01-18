@@ -390,7 +390,28 @@ public class CardEventDefinitions {
 			}
 		}
 	};
-		
+	
+	private static final MagicSpellCardEvent DISPERSE=new MagicSpellCardEvent("Disperse") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,MagicBounceTargetPicker.getInstance(),
+				new Object[]{cardOnStack},this,"Return target nonland permanent$ to its owner's hand.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent DOOM_BLADE=new MagicSpellCardEvent("Doom Blade") {
 
 		@Override
@@ -2634,6 +2655,27 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent TRANQUILITY=new MagicSpellCardEvent("Tranquility") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),new Object[]{cardOnStack},this,"Destroy all enchantments.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_ENCHANTMENT);
+			for (final MagicTarget target : targets) {
+				
+				game.doAction(new MagicDestroyAction((MagicPermanent)target));
+			}
+		}
+	};
+
 	private static final MagicSpellCardEvent ZOMBIFY=new MagicSpellCardEvent("Zombify") {
 
 		@Override
@@ -2910,6 +2952,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 	private static final MagicSpellCardEvent CLINGING_DARKNESS=new MagicPlayAuraEvent("Clinging Darkness",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(-4,-1));
+	private static final MagicSpellCardEvent CURSE_OF_CHAINS=new MagicPlayAuraEvent("Curse of Chains",
+			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicNoCombatTargetPicker(true,true,true));
 	private static final MagicSpellCardEvent DRAKE_UMBRA=new MagicPlayAuraEvent("Drake Umbra",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 	private static final MagicSpellCardEvent DUST_CORONA=new MagicPlayAuraEvent("Dust Corona",
@@ -2975,6 +3019,7 @@ public class CardEventDefinitions {
 		DIMINISH,
 		DISFIGURE,
 		DISMAL_FAILURE,
+		DISPERSE,
 		DOOM_BLADE,
 		DOUBLE_CLEAVE,
 		DOUSE_IN_GLOOM,
@@ -3073,6 +3118,7 @@ public class CardEventDefinitions {
 		TIME_EBB,
 		TIME_WARP,
 		TITANIC_ULTIMATUM,
+		TRANQUILITY,
 		ZOMBIFY,
 		GOBLIN_BUSHWHACKER,
 		GOBLIN_RUINBLASTER,
@@ -3084,6 +3130,7 @@ public class CardEventDefinitions {
 		ARMADILLO_CLOAK,
 		BOAR_UMBRA,
 		CLINGING_DARKNESS,
+		CURSE_OF_CHAINS,
 		DRAKE_UMBRA,
 		DUST_CORONA,
 		EEL_UMBRA,

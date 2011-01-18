@@ -40,17 +40,19 @@ public class BoosterPackGenerator {
 	}
 	
 	private MagicBoosterPack createBoosterPack(final List<MagicCardDefinition> cards,final int size,final MagicPlayerProfile profile) {
-		
 		final MagicBoosterPack pack=new MagicBoosterPack();
 		for (int s=size;s>0;) {
-			
+			if (cards.size()<=0) {
+				System.err.println("Run out of cards during booster generation, "+s+"/"+size+" cards remain to be chosen");
+				break;
+			}
 			final int index=MagicRandom.nextInt(cards.size());
 			final MagicCardDefinition cardDefinition=cards.get(index);
 			if (profile==null||cardDefinition.isPlayable(profile)) {
 				pack.add(cardDefinition);
-				cards.remove(index);
 				s--;
 			} 
+			cards.remove(index);
 		}
 		return pack;
 	}

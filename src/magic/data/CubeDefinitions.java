@@ -20,6 +20,8 @@ public class CubeDefinitions {
 	public static final String DEFAULT_NAME="default";
 
 	private static final String DEFAULT_FILENAME="cube.txt";
+	private static final String[] INCLUDED_CUBES={"Extended","Legacy","Standard","Vintage"};
+
 	private static final String CUBE_FILE_EXTENSION="_cube.txt";
 
 	private static final FileFilter CUBE_FILE_FILTER=new FileFilter() {
@@ -90,6 +92,11 @@ public class CubeDefinitions {
 		final InputStream inputStream=this.getClass().getResourceAsStream(DEFAULT_FILENAME);
 		loadCubeDefinition(DEFAULT_NAME,inputStream);
 		inputStream.close();
+		for (final String s : INCLUDED_CUBES) {
+			final InputStream cubeInputStream=this.getClass().getResourceAsStream(s+CUBE_FILE_EXTENSION);
+			loadCubeDefinition(s,cubeInputStream);
+			cubeInputStream.close();
+		}
 		
 		final File cubeFiles[]=new File(MagicMain.getModsPath()).listFiles(CUBE_FILE_FILTER);
 		if (cubeFiles!=null) {

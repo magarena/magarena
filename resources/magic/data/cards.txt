@@ -5732,6 +5732,48 @@ converted=5
 cost={3}{G}{G}
 timing=enchantment
 
+>Disperse
+value=3
+removal=2
+rarity=2
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
+
+>Elite Vanguard
+value=2
+rarity=2
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+power=2
+toughness=1
+timing=main
+
+>Curse of Chains
+value=3
+removal=2
+rarity=2
+type=Enchantment
+subtype=Aura
+color=wu
+converted=2
+cost={1}{W/U}
+timing=nextturn
+
+>Gruul War Plow
+value=3
+rarity=2
+type=Artifact
+converted=4
+cost={4}
+static=player
+timing=artifact
+
 >Accorder Paladin
 value=2
 rarity=1
@@ -5792,6 +5834,16 @@ cost={0}
 power=1
 toughness=1
 timing=main
+
+>Tranquility
+value=1
+removal=3
+rarity=1
+type=Sorcery
+converted=3
+cost={2}{G}
+color=g
+timing=removal
 
 >Drudge Reavers
 value=3

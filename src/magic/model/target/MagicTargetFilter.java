@@ -287,6 +287,20 @@ public interface MagicTargetFilter {
 		}		
 	};
 
+	public static final MagicTargetFilter TARGET_ENCHANTMENT=new MagicTargetFilter() {
+
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			
+			final MagicPermanent targetPermanent=(MagicPermanent)target;
+			return targetPermanent.isEnchantment();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			
+			return targetType==MagicTargetType.Permanent;
+		}
+	};
+
 	public static final MagicTargetFilter TARGET_PERMANENT_YOU_CONTROL=new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {

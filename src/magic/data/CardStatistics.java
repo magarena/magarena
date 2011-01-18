@@ -11,7 +11,7 @@ import magic.model.MagicDeckCard;
 
 public class CardStatistics {
 
-	public static final String MANA_CURVE_TEXT[]={"X","1","2","3","4","5","6","7","8"};
+	public static final String MANA_CURVE_TEXT[]={"X","1","2","3","4","5","6","7","8","9+"};
 	public static final ImageIcon MANA_CURVE_ICONS[]={
 		IconImages.COST_X,
 		IconImages.COST_ONE,
@@ -22,6 +22,7 @@ public class CardStatistics {
 		IconImages.COST_SIX,
 		IconImages.COST_SEVEN,
 		IconImages.COST_EIGHT,
+		IconImages.COST_NINE_OR_MORE,
 	};
 	public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.length;
 	
@@ -87,7 +88,8 @@ public class CardStatistics {
 				if (card.hasX()) {
 					manaCurve[0]++;
 				} else {
-					manaCurve[card.getConvertedCost()]++;
+					int convertedCost=card.getConvertedCost();
+					manaCurve[convertedCost>=MANA_CURVE_SIZE?MANA_CURVE_SIZE-1:convertedCost]++;
 				}
 				
 				averageCost+=card.getConvertedCost();
