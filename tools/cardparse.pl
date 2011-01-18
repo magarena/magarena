@@ -112,23 +112,6 @@ sub emit {
  my $complex=1;
  my $type=$k{'Type'};
  my $subtype=$k{'Subtype'};
-
-   # Output images
-   my $id=$k{'id'};
-   if ($id) {
-    print IO "${name}.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=$id&type=card\n";
-   } else {
-    print STDERR "Missing image id for $name\n";
-   }
-   my $hqi=$hqim{$name};
-   if ($hqi) {
-    print IOH "${name}.jpg;$hqi\n";
-   } else {
-    print STDERR "Missing HQ image for $name\n";
-   }
-
-
-
  if ($type=~/^(Legendary,|Artifact,|)Creature$/) { 
   my $complex=0;
   my @abil=();
