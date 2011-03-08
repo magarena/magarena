@@ -603,7 +603,7 @@ Wurmcoil Engine.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid
 Zealous Persecution.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179575&type=card
 Zephyr Sprite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190167&type=card
 Zombify.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220580&type=card
-Air Elemental.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221985&type=card
+Air Elemental.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=189884&type=card
 Alpha Myr.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=49045&type=card
 Alpha Tyrranax.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=202651&type=card
 Anaba Bodyguard.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=134753&type=card
@@ -771,7 +771,7 @@ Loamdragger Giant.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Longbow Archer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=25549&type=card
 Loxodon Wayfarer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207885&type=card
 Lumengrid Warden.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129631&type=card
-Mahamoti Djinn.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=228263&type=card
+Mahamoti Djinn.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129633&type=card
 Makindi Griffin.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193514&type=card
 Maritime Guard.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205040&type=card
 Marsh Threader.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194718&type=card
@@ -797,7 +797,7 @@ Nip Gwyllion.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=15
 Norwood Ranger.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83188&type=card
 Oakgnarl Warrior.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=139494&type=card
 Ogre Sentry.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193583&type=card
-Ogre Taskmaster.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220965&type=card
+Ogre Taskmaster.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83190&type=card
 Old Ghastbark.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=142007&type=card
 Omega Myr.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=48605&type=card
 Oona's Gatewarden.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=141975&type=card
@@ -906,14 +906,14 @@ Warpath Ghoul.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1
 Wasp Lancer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=153967&type=card
 Waveskimmer Aven.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=174955&type=card
 Welkin Tern.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191353&type=card
-Wild Griffin.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221639&type=card
+Wild Griffin.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208275&type=card
 Wildslayer Elves.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=135436&type=card
 Wind Drake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193962&type=card
 Woodland Changeling.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=145816&type=card
 Woodland Druid.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=29772&type=card
 Yavimaya Barbarian.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23161&type=card
 Yavimaya Wurm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205221&type=card
-Yotian Soldier.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=202548&type=card
+Yotian Soldier.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=46026&type=card
 Youthful Knight.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129790&type=card
 Zealous Guardian.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=142028&type=card
 Zendikar Farguide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=189620&type=card
