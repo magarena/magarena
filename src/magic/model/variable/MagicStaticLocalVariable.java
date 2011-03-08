@@ -33,7 +33,6 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 	private static int gloryOfWarfare;
 	private static int goblinChieftain;
 	private static int godheadOfAwe;
-	private static int gruulWarPlow;
 	private static int kinsbaileCavalier;
 	private static int kulrathKnight;
 	private static int levitation;
@@ -153,9 +152,6 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 			if (controller.getCount(bloodmarkMentor)>0&&MagicColor.Red.hasColor(permanent.getColorFlags())) {
 				flags|=MagicAbility.FirstStrike.getMask();
 			}
-			if (controller.getCount(gruulWarPlow)>0) {
-				flags|=MagicAbility.Trample.getMask();
-			}
 			if (controller.getCount(captainOfTheWatch)>0&&permanent.hasSubType(MagicSubType.Soldier)) {
 				flags|=MagicAbility.Vigilance.getMask();
 			}
@@ -225,7 +221,6 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		gloryOfWarfare=definitions.getCard("Glory of Warfare").getIndex();
 		goblinChieftain=definitions.getCard("Goblin Chieftain").getIndex();
 		godheadOfAwe=definitions.getCard("Godhead of Awe").getIndex();
-		gruulWarPlow=definitions.getCard("Gruul War Plow").getIndex();
 		kinsbaileCavalier=definitions.getCard("Kinsbaile Cavalier").getIndex();
 		kulrathKnight=definitions.getCard("Kulrath Knight").getIndex();
 		levitation=definitions.getCard("Levitation").getIndex();

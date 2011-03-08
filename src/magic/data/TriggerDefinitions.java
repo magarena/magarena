@@ -57,7 +57,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPlayOgreUnlessEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
-import magic.model.event.MagicTapEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
@@ -3251,25 +3250,7 @@ public class TriggerDefinitions {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
 		}
     };
-    
-    private static final MagicTrigger CURSE_OF_CHAINS=new MagicTrigger(MagicTriggerType.AtUpkeep,"Curse of Chains") {
-
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
-			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (enchantedCreature!=null&&!enchantedCreature.isTapped()) {
-				return new MagicTapEvent(enchantedCreature);
-			}
-			return null;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-		}		
-    };
-    
+        
     private static final MagicTrigger ELEPHANT_GUIDE=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Elephant Guide") {
 
 		@Override
@@ -3733,7 +3714,6 @@ public class TriggerDefinitions {
 	    SERRATED_ARROWS2,
 	    SKULLCAGE,
 	    ARMADILLO_CLOAK,
-	    CURSE_OF_CHAINS,
 	    ELEPHANT_GUIDE,
 	    FISTS_OF_IRONWOOD,
 	    FLIGHT_OF_FANCY,

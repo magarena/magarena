@@ -4,21 +4,21 @@ Whenever this creature attacks, each other attacking creature gets +1/+0 until e
 This card is every creature type at all times.
 *deathtouch
 Creatures dealt damage by this creature are destroyed. 
-You can divide this creature’s combat damage among any of the creatures blocking or blocked by it.
+You can divide this creature's combat damage among any of the creatures blocking or blocked by it.
 *defender
-This creature can’t attack.
+This creature can't attack.
 *double strike
 This creature deals both first-strike and regular combat damage.
 *exalted
 Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.
 *fear
-This creature can’t be blocked except by artifact creatures and/or black creatures.
+This creature can't be blocked except by artifact creatures and/or black creatures.
 *first strike
 This creature deals combat damage before creatures without first strike.
 *flash
 You may cast this spell any time you could cast an instant.
 *flying
-This creature can’t be blocked except by creatures with flying or reach.
+This creature can't be blocked except by creatures with flying or reach.
 *haste
 This creature can attack and tap the turn it comes under your control.
 *forestwalk
@@ -35,7 +35,7 @@ Damage dealt by this creature also causes you to gain that much life.
 This creature is unblockable as long as defending player controls a Mountain.
 *persist
 When this creature is put into a graveyard from the battlefield, if it had no -1/-1 counters on it, 
-return it to the battlefield under its owner’s control with a -1/-1 counter on it.
+return it to the battlefield under its owner's control with a -1/-1 counter on it.
 *plainswalk
 This creature is unblockable as long as defending player controls a Plains.
 *protection from ~
@@ -43,10 +43,10 @@ This creature can't be blocked, targeted, dealt damage, equipped or enchanted by
 *reach
 This creature can block creatures with flying.
 *regenerate
-The next time this creature would be destroyed this turn, it isn’t.
+The next time this creature would be destroyed this turn, it isn't.
 Instead tap it, remove all damage from it, and remove it from combat.
 *shroud
-This can’t be the target of spells or abilities.
+This can't be the target of spells or abilities.
 *swampwalk
 This creature is unblockable as long as defending player controls a Swamp.
 *totem armor
@@ -55,6 +55,6 @@ If enchanted creature would be destroyed, instead remove all damage from it and 
 If this creature would deal enough damage to its blockers to destroy them, 
 you may have it deal the rest of its damage to defending player.
 *vigilance
-Attacking doesn’t cause this creature to tap.
+Attacking doesn't cause this creature to tap.
 *wither
 This deals damage to creatures in the form of -1/-1 counters.

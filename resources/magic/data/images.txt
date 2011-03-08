@@ -168,7 +168,6 @@ Crumbling Necropolis.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multive
 Cumber Stone.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180322&type=card
 Cunning Sparkmage.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=201563&type=card
 Cursecatcher.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=158763&type=card
-Curse of Chains.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=146079&type=card
 Daggerclaw Imp.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197022&type=card
 Darkslick Drake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194217&type=card
 Darkslick Shores.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209400&type=card
@@ -183,7 +182,6 @@ Deluge.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=135223&t
 Diminish.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208226&type=card
 Disfigure.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=180115&type=card
 Dismal Failure.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129022&type=card
-Disperse.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=212242&type=card
 Dissipation Field.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=202635&type=card
 Divination.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190172&type=card
 Doom Blade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205088&type=card
@@ -269,7 +267,6 @@ Grave Titan.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205
 Graypelt Refuge.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220467&type=card
 Great Sable Stag.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193759&type=card
 Griffin Guide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=110514&type=card
-Gruul War Plow.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=107098&type=card
 Grixis Grimblade.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=188976&type=card
 Guard Gomazoa.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193602&type=card
 Guardian Seraph.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193766&type=card
@@ -743,7 +740,6 @@ Hearthfire Hobgoblin.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multive
 Hill Giant.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129591&type=card
 Hillcomber Giant.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=145971&type=card
 Hobgoblin Dragoon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=151090&type=card
-Horned Cheetah.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23163&type=card
 Horned Turtle.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190178&type=card
 Hoverguard Observer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=49020&type=card
 Hulking Cyclops.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=45371&type=card
@@ -834,7 +830,7 @@ Rootwater Commando.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multivers
 Runeclaw Bear.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207337&type=card
 Rushwood Dryad.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=136285&type=card
 Sabretooth Tiger.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=45347&type=card
-Savannah Lions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221577&type=card
+Savannah Lions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83246&type=card
 Scaled Wurm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83272&type=card
 Scathe Zombies.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129718&type=card
 Scavenging Scarab.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=46093&type=card
@@ -842,7 +838,7 @@ Scoria Elemental.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiversei
 Scuzzback Scrapper.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=142052&type=card
 Sea Eagle.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=47786&type=card
 Sentinels of Glen Elendra.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=139426&type=card
-Serra Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=202561&type=card
+Serra Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=196999&type=card
 Serra Sphinx.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=125873&type=card
 Severed Legion.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129693&type=card
 Sewn-Eye Drake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179594&type=card
@@ -1009,7 +1005,6 @@ Crumbling Necropolis.jpg;http://magiccards.info/scans/en/ala/222.jpg
 Cumber Stone.jpg;http://magiccards.info/scans/en/cfx/24.jpg
 Cunning Sparkmage.jpg;http://magiccards.info/scans/en/wwk/79.jpg
 Cursecatcher.jpg;http://magiccards.info/scans/en/shm/34.jpg
-Curse of Chains.jpg;http://magiccards.info/scans/en/shm/139.jpg
 Daggerclaw Imp.jpg;http://magiccards.info/scans/en/dvd/33.jpg
 Darkslick Drake.jpg;http://magiccards.info/scans/en/som/30.jpg
 Darkslick Shores.jpg;http://magiccards.info/scans/en/som/226.jpg
@@ -1024,7 +1019,6 @@ Deluge.jpg;http://magiccards.info/scans/en/10e/79.jpg
 Diminish.jpg;http://magiccards.info/scans/en/m11/52.jpg
 Disfigure.jpg;http://magiccards.info/scans/en/zen/87.jpg
 Dismal Failure.jpg;http://magiccards.info/scans/en/pc/39.jpg
-Disperse.jpg;http://magiccards.info/scans/en/som/31.jpg
 Dissipation Field.jpg;http://magiccards.info/scans/en/som/32.jpg
 Divination.jpg;http://magiccards.info/scans/en/m10/49.jpg
 Doom Blade.jpg;http://magiccards.info/scans/en/m11/95.jpg
@@ -1111,7 +1105,6 @@ Graypelt Refuge.jpg;http://magiccards.info/scans/en/arc/125.jpg
 Great Sable Stag.jpg;http://magiccards.info/scans/en/m10/186.jpg
 Griffin Guide.jpg;http://magiccards.info/scans/en/ts/21.jpg
 Grixis Grimblade.jpg;http://magiccards.info/scans/en/arb/134.jpg
-Gruul War Plow.jpg;http://magiccards.info/scans/en/gp/151.jpg
 Guard Gomazoa.jpg;http://magiccards.info/scans/en/roe/70.jpg
 Guardian Seraph.jpg;http://magiccards.info/scans/en/m10/13.jpg
 Guardian of the Guildpact.jpg;http://magiccards.info/scans/en/di/10.jpg
@@ -1584,7 +1577,6 @@ Hearthfire Hobgoblin.jpg;http://magiccards.info/scans/en/pch/102.jpg
 Hill Giant.jpg;http://magiccards.info/scans/en/dpa/47.jpg
 Hillcomber Giant.jpg;http://magiccards.info/scans/en/lw/20.jpg
 Hobgoblin Dragoon.jpg;http://magiccards.info/scans/en/eve/142.jpg
-Horned Cheetah.jpg;http://magiccards.info/scans/en/in/251.jpg
 Horned Turtle.jpg;http://magiccards.info/scans/en/m10/55.jpg
 Hoverguard Observer.jpg;http://magiccards.info/scans/en/ds/22.jpg
 Hulking Cyclops.jpg;http://magiccards.info/scans/en/8e/195.jpg
@@ -1675,7 +1667,7 @@ Rootwater Commando.jpg;http://magiccards.info/scans/en/10e/102.jpg
 Runeclaw Bear.jpg;http://magiccards.info/scans/en/dpa/82.jpg
 Rushwood Dryad.jpg;http://magiccards.info/scans/en/10e/294.jpg
 Sabretooth Tiger.jpg;http://magiccards.info/scans/en/8e/217.jpg
-Savannah Lions.jpg;http://magiccards.info/scans/en/me4/24.jpg
+Savannah Lions.jpg;http://magiccards.info/scans/en/9e/41.jpg
 Scaled Wurm.jpg;http://magiccards.info/scans/en/9e/269.jpg
 Scathe Zombies.jpg;http://magiccards.info/scans/en/10e/175.jpg
 Scavenging Scarab.jpg;http://magiccards.info/scans/en/ds/51.jpg
@@ -1683,7 +1675,7 @@ Scoria Elemental.jpg;http://magiccards.info/scans/en/som/102.jpg
 Scuzzback Scrapper.jpg;http://magiccards.info/scans/en/shm/217.jpg
 Sea Eagle.jpg;http://magiccards.info/scans/en/8eb/4.jpg
 Sentinels of Glen Elendra.jpg;http://magiccards.info/scans/en/lw/84.jpg
-Serra Angel.jpg;http://magiccards.info/scans/en/m11/27.jpg
+Serra Angel.jpg;http://magiccards.info/scans/en/dvd/10.jpg
 Serra Sphinx.jpg;http://magiccards.info/scans/en/pc/62.jpg
 Severed Legion.jpg;http://magiccards.info/scans/en/dpa/33.jpg
 Sewn-Eye Drake.jpg;http://magiccards.info/scans/en/arb/135.jpg

@@ -2107,57 +2107,6 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicLocalVariable GRUUL_WAR_PLOW_VARIABLE=new MagicLocalVariable() {
- 		
- 		@Override
- 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
- 			
-			pt.power=4;
-			pt.toughness=4;
-		}
-
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
-			return flags;
-		}
-		
-		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-
-			return 0;
-		}
-				
-		@Override
-		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-
-			return flags;
-		}		
-	};
-
-	private static final MagicPermanentActivation GRUUL_WAR_PLOW=new MagicPermanentActivation("Gruul War Plow",
-			new MagicCondition[]{MagicManaCost.ONE_RED_GREEN.getCondition()},new MagicActivationHints(MagicTiming.Animate,false,1)) {
- 
- 		@Override
- 		public MagicEvent[] getCostEvent(final MagicSource source) {
- 
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED_GREEN)};
- 		}
- 
- 		@Override
- 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
- 
- 			return new MagicEvent(source,source.getController(),new Object[]{source},this,
-				"Gruul War Plow becomes a 4/4 Juggernaut artifact creature until end of turn.");
- 		}
- 
- 		@Override
- 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
- 
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],GRUUL_WAR_PLOW_VARIABLE));
- 		}
- 	};
-
 	private static final MagicPermanentActivation MIND_STONE=new MagicPermanentActivation("Mind Stone",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO.getCondition()},new MagicActivationHints(MagicTiming.Draw)) {
 
@@ -2586,7 +2535,6 @@ public class PermanentActivationDefinitions {
 		RISE_OF_THE_HOBGOBLINS,
 		SEAL_OF_DOOM,
 		SEAL_OF_FIRE,
-		GRUUL_WAR_PLOW,
 		BRITTLE_EFFIGY,
 		CHIMERIC_MASS,
 		MIND_STONE,

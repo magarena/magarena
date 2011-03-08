@@ -17,13 +17,11 @@ public class CubeDefinitions {
 
 	private static final CubeDefinitions INSTANCE=new CubeDefinitions();
 	
-	public static final String DEFAULT_NAME="default";
-
-	private static final String DEFAULT_FILENAME="cube.txt";
-	private static final String[] INCLUDED_CUBES={"Extended","Legacy","Standard","Vintage"};
-
+	private static final String[] INCLUDED_CUBES={"ubeefx","singularita"};
 	private static final String CUBE_FILE_EXTENSION="_cube.txt";
 
+	public static final String DEFAULT_NAME=INCLUDED_CUBES[0];
+	
 	private static final FileFilter CUBE_FILE_FILTER=new FileFilter() {
 
 		@Override
@@ -89,12 +87,10 @@ public class CubeDefinitions {
 	
 	public void loadCubeDefinitions() throws IOException {
 		
-		final InputStream inputStream=this.getClass().getResourceAsStream(DEFAULT_FILENAME);
-		loadCubeDefinition(DEFAULT_NAME,inputStream);
-		inputStream.close();
-		for (final String s : INCLUDED_CUBES) {
-			final InputStream cubeInputStream=this.getClass().getResourceAsStream(s+CUBE_FILE_EXTENSION);
-			loadCubeDefinition(s,cubeInputStream);
+		for (final String cubeName : INCLUDED_CUBES) {
+			
+			final InputStream cubeInputStream=this.getClass().getResourceAsStream(cubeName+CUBE_FILE_EXTENSION);
+			loadCubeDefinition(cubeName,cubeInputStream);
 			cubeInputStream.close();
 		}
 		
