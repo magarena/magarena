@@ -1,4 +1,5 @@
 Absorb
+Accorder Paladin
 Accorder's Shield
 Acidic Slime
 Affa Guard Hound
@@ -229,6 +230,7 @@ Flame-Kin Zealot
 Flameblast Dragon
 Flameborn Hellion
 Flametongue Kavu
+Flayer Husk
 Flight of Fancy
 Followed Footsteps
 Fomori Nomad
@@ -323,6 +325,7 @@ Hateflayer
 Havenwood Wurm
 Hearthfire Hobgoblin
 Hellkite Overlord
+Hero of Bladehold
 Heroes' Reunion
 Hideous End
 Hill Giant
@@ -439,6 +442,7 @@ Mighty Leap
 Mind Spring
 Mind Stone
 Mire Boa
+Mirran Crusader
 Mirri the Cursed
 Mirri, Cat Warrior
 Mirror Entity
@@ -503,6 +507,7 @@ Perimeter Captain
 Phantom Warrior
 Phyrexian Arena
 Phyrexian Hulk
+Pierce Strider
 Pillarfield Ox
 Pillory of the Sleepless
 Pincher Beetles
