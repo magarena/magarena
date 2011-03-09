@@ -24,6 +24,14 @@ Recommended difficulty level for the best balance of AI speed and strength is th
 
 Have fun!
 
+Release 1.8 (March 11, 2011)
+===========
+
+- ubeefx cube (530 cards)
+- singularita cube (850 cards)
+
+- fixed apostrophes in Keywords screen
+
 Release 1.7 (January 14, 2011)
 ===========
 

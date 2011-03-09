@@ -6489,7 +6489,7 @@ toughness=1
 timing=fmain
 
 >Cloudcrown Oak
-value=1
+value=2
 ability=reach
 rarity=1
 type=Creature
@@ -7067,7 +7067,7 @@ toughness=4
 timing=main
 
 >Garruk's Companion
-value=1
+value=3
 ability=trample
 rarity=1
 type=Creature
@@ -9850,3 +9850,223 @@ power=2
 toughness=2
 timing=main
 
+>Goblin Wardriver
+value=3
+rarity=2
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={R}{R}
+power=2
+toughness=2
+ability=battle cry
+timing=main
+
+>Victory's Herald
+value=5
+rarity=3
+type=Creature
+subtype=Angel
+color=w
+converted=6
+cost={3}{W}{W}{W}
+power=4
+toughness=4
+ability=flying
+timing=main
+
+>Black Sun's Zenith
+value=4
+removal=3
+rarity=3
+type=Sorcery
+color=b
+converted=2
+cost={X}{B}{B}
+timing=removal
+
+>Massacre Wurm
+value=5
+rarity=3
+type=Creature
+subtype=Wurm
+color=b
+converted=6
+cost={3}{B}{B}{B}
+power=6
+toughness=5
+timing=fmain
+
+>Thrun, the Last Troll
+value=4
+rarity=3
+type=Legendary,Creature
+subtype=Troll,Shaman
+color=g
+converted=4
+cost={2}{G}{G}
+power=4
+toughness=4
+ability=can't be countered,can't be the target of spells or abilities your opponent controls
+timing=fmain
+
+>Viridian Claw
+value=3
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+power=1
+toughness=0
+ability=first strike
+timing=equipment
+
+>Strandwalker
+value=3
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=5
+cost={5}
+equip={4}
+power=2
+toughness=4
+ability=reach
+timing=equipment
+
+>Turn the Tide
+value=3
+rarity=1
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
+
+>Captive Flame
+value=3
+rarity=2
+type=Enchantment
+color=r
+converted=3
+cost={2}{R}
+timing=enchantment
+
+>Smite
+value=3
+rarity=1
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=block
+
+>Neurok Invisimancer
+value=3
+rarity=2
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=3
+cost={1}{U}{U}
+power=2
+toughness=1
+ability=unblockable
+timing=fmain
+
+>Vedalken Mastermind
+value=3
+rarity=2
+type=Creature
+subtype=Vedalken,Wizard
+color=u
+converted=2
+cost={U}{U}
+power=1
+toughness=2
+timing=main
+
+>Gelectrode
+value=3
+rarity=2
+type=Creature
+subtype=Weird
+color=ur
+converted=3
+cost={1}{U}{R}
+power=0
+toughness=1
+timing=smain
+
+>Recoil
+value=3
+rarity=2
+type=Instant
+color=ub
+converted=3
+cost={1}{U}{B}
+timing=removal
+
+>Ezuri's Archers
+value=2
+rarity=2
+type=Creature
+subtype=Elf,Archer
+color=g
+converted=1
+cost={G}
+power=1
+toughness=2
+ability=reach
+timing=smain
+
+>Eland Umbra
+value=2
+rarity=1
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+power=0
+toughness=4
+ability=totem armor
+timing=aura
+
+>Abyssal Specter
+value=3
+rarity=2
+type=Creature
+subtype=Specter
+color=b
+converted=4
+cost={2}{B}{B}
+power=2
+toughness=3
+ability=flying
+timing=main
+
+>Gratuitous Violence
+value=4
+rarity=3
+type=Enchantment
+color=r
+converted=5
+cost={2}{R}{R}{R}
+timing=enchantment
+
+>Neurok Commando
+value=2
+rarity=2
+type=Creature
+subtype=Human,Rogue
+color=u
+converted=3
+cost={1}{U}{U}
+power=2
+toughness=1
+ability=shroud
+timing=main
