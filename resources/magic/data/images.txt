@@ -85,7 +85,7 @@ Zombie.jpg;http://www.wizards.com/mtg/images/daily/arcana/1689_token2a.jpg
 Zombie Giant.jpg;http://www.wizards.com/mtg/images/daily/arcana/283_ZEN_Token6.jpg
 >cards
 Absorb.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23155&type=card
-Accorder Paladin.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/b0egpqoyqe_en.jpg
+Accorder Paladin.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213818&type=card
 Accorder's Shield.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=209046&type=card
 Acidic Slime.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207333&type=card
 Affa Guard Hound.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=198305&type=card
@@ -228,7 +228,7 @@ Flame Slash.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193
 Flame-Kin Zealot.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83562&type=card
 Flameblast Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220458&type=card
 Flametongue Kavu.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205392&type=card
-Flayer Husk.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/8zp2d3kicu_en.jpg
+Flayer Husk.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221560&type=card
 Flight of Fancy.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83677&type=card
 Force Spike.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=11285&type=card
 Followed Footsteps.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83699&type=card
@@ -278,7 +278,7 @@ Hallowed Fountain.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Harmonize.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=159033&type=card
 Hateflayer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=152155&type=card
 Hellkite Overlord.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=175057&type=card
-Hero of Bladehold.jpg;http://img.coolstuffinc.net/products/mtg%20art/mirrodin%20besieged/mbs008.jpg
+Hero of Bladehold.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214064&type=card
 Heroes' Reunion.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220501&type=card
 Hideous End.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=210141&type=card
 Hissing Miasma.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96922&type=card
@@ -356,7 +356,7 @@ Mighty Leap.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208
 Mind Spring.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191323&type=card
 Mind Stone.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=189228&type=card
 Mire Boa.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=122420&type=card
-Mirran Crusader.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/9x6ggbzsnh_EN.jpg
+Mirran Crusader.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213802&type=card
 Mirri the Cursed.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=122406&type=card
 Mirri, Cat Warrior.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=106405&type=card
 Mirror Entity.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=141818&type=card
@@ -392,7 +392,7 @@ Paladin en-Vec.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=
 Pelakka Wurm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193621&type=card
 Perimeter Captain.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=198361&type=card
 Phyrexian Arena.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205417&type=card
-Pierce Strider.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=111458&stc=1&d=1286337901
+Pierce Strider.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221561&type=card
 Pillory of the Sleepless.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96882&type=card
 Plains.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid=195179
 Plains2.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=73963&type=card
@@ -764,7 +764,7 @@ Lagac Lizard.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=19
 Lantern Kami.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=75319&type=card
 Leaf Dancer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=29782&type=card
 Leatherback Baloth.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197856&type=card
-Leonin Skyhunter.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83416&type=card
+Leonin Skyhunter.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213770&type=card
 Lightning Elemental.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=191054&type=card
 Llanowar Knight.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23157&type=card
 Loamdragger Giant.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=142001&type=card
@@ -922,7 +922,7 @@ Zombie Goliath.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=
 Zombie Outlander.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=185138&type=card
 >hqcards
 Absorb.jpg;http://magiccards.info/scans/en/in/226.jpg
-Accorder Paladin.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/b0egpqoyqe_en.jpg
+Accorder Paladin.jpg;http://magiccards.info/scans/en/mbs/1.jpg
 Accorder's Shield.jpg;http://magiccards.info/scans/en/som/136.jpg
 Acidic Slime.jpg;http://magiccards.info/scans/en/m11/161.jpg
 Affa Guard Hound.jpg;http://magiccards.info/scans/en/roe/14.jpg
@@ -1065,7 +1065,7 @@ Flame Slash.jpg;http://magiccards.info/scans/en/roe/145.jpg
 Flame-Kin Zealot.jpg;http://magiccards.info/scans/en/rav/206.jpg
 Flameblast Dragon.jpg;http://magiccards.info/scans/en/arc/38.jpg
 Flametongue Kavu.jpg;http://magiccards.info/scans/en/pch/54.jpg
-Flayer Husk.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/8zp2d3kicu_en.jpg
+Flayer Husk.jpg;http://magiccards.info/scans/en/mbs/107.jpg
 Flight of Fancy.jpg;http://magiccards.info/scans/en/rav/49.jpg
 Followed Footsteps.jpg;http://magiccards.info/scans/en/rav/51.jpg
 Force Spike.jpg;http://magiccards.info/scans/en/7e/76.jpg
@@ -1115,7 +1115,7 @@ Hallowed Fountain.jpg;http://magiccards.info/scans/en/di/174.jpg
 Harmonize.jpg;http://magiccards.info/scans/en/evg/22.jpg
 Hateflayer.jpg;http://magiccards.info/scans/en/eve/55.jpg
 Hellkite Overlord.jpg;http://magiccards.info/scans/en/ala/172.jpg
-Hero of Bladehold.jpg;http://img.coolstuffinc.net/products/mtg%20art/mirrodin%20besieged/mbs008.jpg
+Hero of Bladehold.jpg;http://magiccards.info/scans/en/mbs/8.jpg
 Heroes' Reunion.jpg;http://magiccards.info/scans/en/arc/87.jpg
 Hideous End.jpg;http://magiccards.info/scans/en/zen/98.jpg
 Hissing Miasma.jpg;http://magiccards.info/scans/en/gp/51.jpg
@@ -1193,7 +1193,7 @@ Mighty Leap.jpg;http://magiccards.info/scans/en/m11/22.jpg
 Mind Spring.jpg;http://magiccards.info/scans/en/m10/64.jpg
 Mind Stone.jpg;http://magiccards.info/scans/en/jvc/22.jpg
 Mire Boa.jpg;http://magiccards.info/scans/en/pc/135.jpg
-Mirran Crusader.jpg;http://media.wizards.com/images/magic/tcg/products/mbs/9x6ggbzsnh_EN.jpg
+Mirran Crusader.jpg;http://magiccards.info/scans/en/mbs/14.jpg
 Mirri the Cursed.jpg;http://magiccards.info/scans/en/pc/75.jpg
 Mirri, Cat Warrior.jpg;http://magiccards.info/scans/en/10e/279.jpg
 Mirror Entity.jpg;http://magiccards.info/scans/en/lw/31.jpg
@@ -1229,7 +1229,7 @@ Paladin en-Vec.jpg;http://magiccards.info/scans/en/10e/32.jpg
 Pelakka Wurm.jpg;http://magiccards.info/scans/en/roe/204.jpg
 Perimeter Captain.jpg;http://magiccards.info/scans/en/wwk/16.jpg
 Phyrexian Arena.jpg;http://magiccards.info/scans/en/pch/36.jpg
-Pierce Strider.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=111458&stc=1&d=1286337901
+Pierce Strider.jpg;http://magiccards.info/scans/en/mbs/123.jpg
 Pillory of the Sleepless.jpg;http://magiccards.info/scans/en/gp/125.jpg
 Plains.jpg;http://magiccards.info/scans/en/zen/230.jpg
 Plains2.jpg;http://magiccards.info/scans/en/uh/136.jpg
@@ -1601,7 +1601,7 @@ Lagac Lizard.jpg;http://magiccards.info/scans/en/roe/154.jpg
 Lantern Kami.jpg;http://magiccards.info/scans/en/chk/32.jpg
 Leaf Dancer.jpg;http://magiccards.info/scans/en/od/249.jpg
 Leatherback Baloth.jpg;http://magiccards.info/scans/en/wwk/107.jpg
-Leonin Skyhunter.jpg;http://magiccards.info/scans/en/9e/25.jpg
+Leonin Skyhunter.jpg;http://magiccards.info/scans/en/mbs/11.jpg
 Lightning Elemental.jpg;http://magiccards.info/scans/en/dpa/50.jpg
 Llanowar Knight.jpg;http://magiccards.info/scans/en/in/254.jpg
 Loamdragger Giant.jpg;http://magiccards.info/scans/en/shm/210.jpg
