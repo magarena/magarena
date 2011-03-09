@@ -5805,13 +5805,13 @@ power=1
 toughness=1
 timing=main
 
->Tranquility
+>Back to Nature
 value=1
-removal=3
-rarity=1
-type=Sorcery
-converted=3
-cost={2}{G}
+removal=2
+rarity=2
+type=Instant
+converted=2
+cost={1}{G}
 color=g
 timing=removal
 

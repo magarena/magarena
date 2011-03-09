@@ -108,6 +108,27 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent BACK_TO_NATURE=new MagicSpellCardEvent("Back to Nature") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),new Object[]{cardOnStack},this,"Destroy all enchantments.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_ENCHANTMENT);
+			for (final MagicTarget target : targets) {
+				
+				game.doAction(new MagicDestroyAction((MagicPermanent)target));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent BACKLASH=new MagicSpellCardEvent("Backlash") {
 
 		@Override
@@ -2634,27 +2655,6 @@ public class CardEventDefinitions {
 		}
 	};
 
-	private static final MagicSpellCardEvent TRANQUILITY=new MagicSpellCardEvent("Tranquility") {
-
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),new Object[]{cardOnStack},this,"Destroy all enchantments.");
-		}
-
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_ENCHANTMENT);
-			for (final MagicTarget target : targets) {
-				
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
-			}
-		}
-	};
-
 	private static final MagicSpellCardEvent ZOMBIFY=new MagicSpellCardEvent("Zombify") {
 
 		@Override
@@ -2984,6 +2984,7 @@ public class CardEventDefinitions {
 	
 	private static final Collection<MagicSpellCardEvent> CARD_EVENTS=Arrays.asList(
 		ABSORB,
+		BACK_TO_NATURE,
 		BACKLASH,
 		BEACON_OF_DESTRUCTION,
 		BURST_LIGHTNING,
@@ -3094,7 +3095,6 @@ public class CardEventDefinitions {
 		TIME_EBB,
 		TIME_WARP,
 		TITANIC_ULTIMATUM,
-		TRANQUILITY,
 		ZOMBIFY,
 		GOBLIN_BUSHWHACKER,
 		GOBLIN_RUINBLASTER,

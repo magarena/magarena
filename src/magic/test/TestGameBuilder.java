@@ -51,9 +51,11 @@ public class TestGameBuilder {
 	public static void addToHand(final MagicPlayer player,final String name,final int count) {
 		
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
-		for (int c=count;c>0;c--) {
-			
-			player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
+		if (cardDefinition!=null) {
+			for (int c=count;c>0;c--) {
+				
+				player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
+			}
 		}
 	}
 
@@ -115,28 +117,20 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
-		addToHand(player,"Bellowing Tanglewurm",1);
-		addToHand(player,"Skullclamp",1);
-		addToHand(player,"Blaze",1);
-		addToHand(player,"Asceticism",1);
-		addToHand(player,"Pongify",1);
-		addToHand(player,"Accorder Paladin",1);
-		addToHand(player,"Guul Draz Vampire",1);
-		addToHand(player,"Flayer Husk",1);
-		addToHand(player,"Memnite",1);
-		addToHand(player,"Bull Cerodon",1);		
-		addToHand(player,"Drudge Reavers",1);		
-		addToHand(player,"Thoughtweft Gambit",1);		
+		addToHand(player,"Back to Nature",1);
+		addToHand(player,"Black Sun's Zenith",1);
+		addToHand(player,"Goblin Wardriver",1);
+		addToHand(player,"Massacre Wurm",1);
+		addToHand(player,"Strandwalker",1);
+		addToHand(player,"Thrun, the Last Troll",1);
+		addToHand(player,"Turn the Tide",1);
+		addToHand(player,"Victory's Herald",1);
+		addToHand(player,"Viridian Claw",1);
+		addToHand(player,"Spider Umbra",1);
 		
-		createPermanent(game,player,"Sigiled Paladin",false,1);
-		createPermanent(game,player,"Hero of Bladehold",false,1);
 		createPermanent(game,player,"Watchwolf",false,1);
-		createPermanent(game,player,"Spiritmonger",false,1);	
-		createPermanent(game,player,"Lingering Tormentor",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);
-		createPermanent(game,player,"Celestial Colonnade",false,1);		
-		createPermanent(game,opponent,"Bottle Gnomes",false,1);		
-		createPermanent(game,opponent,"Wall of Frost",false,1);
+		createPermanent(game,opponent,"Glorious Anthem",false,1);		
 
 		return game;
 	}

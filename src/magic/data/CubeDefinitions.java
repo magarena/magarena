@@ -83,6 +83,7 @@ public class CubeDefinitions {
 			}
 		}
 		cubeDefinitions.add(cubeDefinition);
+		System.out.println("Cube "+cubeDefinition.getName()+" : "+cubeDefinition.size()+" cards");
 	}
 	
 	public void loadCubeDefinitions() throws IOException {
