@@ -245,6 +245,12 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			model.addElement("gw");
 			model.addElement("rw");
 			model.addElement("**");
+			model.addElement("b");
+			model.addElement("u");
+			model.addElement("g");
+			model.addElement("r");
+			model.addElement("w");
+			model.addElement("*");
 			setModel(model);
 			setSelectedItem(colors);
 			this.setFocusable(false);
