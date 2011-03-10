@@ -1650,7 +1650,9 @@ public class PermanentActivationDefinitions {
 			}
 		}
 	};
-		
+	
+	private static final MagicPermanentActivation THRUN_THE_LAST_TROLL=new MagicRegenerationActivation("Thrun, the Last Troll",MagicManaCost.ONE_GREEN);
+
 	private static final MagicPermanentActivation THUNDERSONG_TRUMPETER=new MagicPermanentActivation(
 			"Thundersong Trumpeter",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Tapping)) {
 
@@ -2519,6 +2521,7 @@ public class PermanentActivationDefinitions {
 		STUDENT_OF_WARFARE,
 		STUFFY_DOLL,
 		STUN_SNIPER,
+		THRUN_THE_LAST_TROLL,
 		THUNDERSONG_TRUMPETER,
 		TOLSIMIR_WOLFBLOOD,
 		TROLL_ASCETIC,

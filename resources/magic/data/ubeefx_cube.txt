@@ -526,5 +526,5 @@ Gelectrode
 Recoil
 Ezuri's Archers
 Eland Umbra
-Abyssal Specter
 Gratuitous Violence
+Rally the Forces

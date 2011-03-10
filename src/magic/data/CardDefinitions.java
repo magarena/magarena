@@ -23,6 +23,7 @@ public class CardDefinitions {
 	private static final CardDefinitions INSTANCE=new CardDefinitions();
 	
 	private static final String CARDS_FILENAME="cards.txt";
+	private static final String EXTRA_CARDS_FILENAME="cards2.txt";
 	
 	private final List<MagicCardDefinition> cards;
 	private final List<MagicCardDefinition> landCards;
@@ -125,10 +126,10 @@ public class CardDefinitions {
 		}
 	}
 	
-	public void loadCardDefinitions() throws IOException {
+	private void loadCardDefinitions(final String filename) throws IOException {
 
 		// Cards.
-		final InputStream stream=this.getClass().getResourceAsStream(CARDS_FILENAME);
+		final InputStream stream=this.getClass().getResourceAsStream(filename);
 		final BufferedReader reader=new BufferedReader(new InputStreamReader(stream));
 		MagicCardDefinition cardDefinition=null;
 		String line;
@@ -152,6 +153,12 @@ public class CardDefinitions {
 		}
 		checkCard(cardDefinition);
 		reader.close();
+	}
+	
+	public void loadCardDefinitions() throws IOException {
+
+		loadCardDefinitions(CARDS_FILENAME);
+		loadCardDefinitions(EXTRA_CARDS_FILENAME);
 		filterCards();
 		printStatistics();
 		

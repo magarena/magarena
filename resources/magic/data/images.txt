@@ -839,7 +839,6 @@ Scuzzback Scrapper.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multivers
 Sea Eagle.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=47786&type=card
 Sentinels of Glen Elendra.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=139426&type=card
 Serra Angel.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=196999&type=card
-Serra Sphinx.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=125873&type=card
 Severed Legion.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129693&type=card
 Sewn-Eye Drake.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179594&type=card
 Shanodin Dryads.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=11494&type=card
@@ -920,6 +919,27 @@ Zendikar Farguide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverse
 Zodiac Monkey.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83237&type=card
 Zombie Goliath.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190545&type=card
 Zombie Outlander.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=185138&type=card
+Sacred Wolf.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205023&type=card
+Loxodon Partisan.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213761&type=card
+Koth's Courier.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213766&type=card
+Glissa's Courier.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213783&type=card
+Goblin Wardriver.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213782&type=card
+Victory's Herald.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214030&type=card
+Black Sun's Zenith.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214061&type=card
+Massacre Wurm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214044&type=card
+Thrun, the Last Troll.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214050&type=card
+Viridian Claw.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213784&type=card
+Strandwalker.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213790&type=card
+Turn the Tide.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213821&type=card
+Captive Flame.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=88810&type=card
+Smite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=193595&type=card
+Neurok Invisimancer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194109&type=card
+Vedalken Mastermind.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130834&type=card
+Gelectrode.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=96891&type=card
+Recoil.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23154&type=card
+Ezuri's Archers.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194092&type=card
+Gratuitous Violence.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39666&type=card
+Rally the Forces.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213767&type=card
 >hqcards
 Absorb.jpg;http://magiccards.info/scans/en/in/226.jpg
 Accorder Paladin.jpg;http://magiccards.info/scans/en/mbs/1.jpg
@@ -1676,7 +1696,6 @@ Scuzzback Scrapper.jpg;http://magiccards.info/scans/en/shm/217.jpg
 Sea Eagle.jpg;http://magiccards.info/scans/en/8eb/4.jpg
 Sentinels of Glen Elendra.jpg;http://magiccards.info/scans/en/lw/84.jpg
 Serra Angel.jpg;http://magiccards.info/scans/en/dvd/10.jpg
-Serra Sphinx.jpg;http://magiccards.info/scans/en/pc/62.jpg
 Severed Legion.jpg;http://magiccards.info/scans/en/dpa/33.jpg
 Sewn-Eye Drake.jpg;http://magiccards.info/scans/en/arb/135.jpg
 Shanodin Dryads.jpg;http://magiccards.info/scans/en/7e/269.jpg
@@ -1757,3 +1776,24 @@ Zendikar Farguide.jpg;http://magiccards.info/scans/en/zen/194.jpg
 Zodiac Monkey.jpg;http://magiccards.info/scans/en/9e/285.jpg
 Zombie Goliath.jpg;http://magiccards.info/scans/en/m10/123.jpg
 Zombie Outlander.jpg;http://magiccards.info/scans/en/cfx/133.jpg
+Sacred Wolf.jpg;http://magiccards.info/scans/en/m11/196.jpg
+Loxodon Partisan.jpg;http://magiccards.info/scans/en/mbs/12.jpg
+Koth's Courier.jpg;http://magiccards.info/scans/en/mbs/68.jpg
+Glissa's Courier.jpg;http://magiccards.info/scans/en/mbs/80.jpg
+Goblin Wardriver.jpg;http://magiccards.info/scans/en/mbs/64.jpg
+Victory's Herald.jpg;http://magiccards.info/scans/en/mbs/18.jpg
+Black Sun's Zenith.jpg;http://magiccards.info/scans/en/mbs/39.jpg
+Massacre Wurm.jpg;http://magiccards.info/scans/en/mbs/46.jpg
+Thrun, the Last Troll.jpg;http://magiccards.info/scans/en/mbs/92.jpg
+Viridian Claw.jpg;http://magiccards.info/scans/en/mbs/143.jpg
+Strandwalker.jpg;http://magiccards.info/scans/en/mbs/137.jpg
+Turn the Tide.jpg;http://magiccards.info/scans/en/mbs/35.jpg
+Captive Flame.jpg;http://magiccards.info/scans/en/sok/96.jpg
+Smite.jpg;http://magiccards.info/scans/en/roe/43.jpg
+Neurok Invisimancer.jpg;http://magiccards.info/scans/en/som/37.jpg
+Vedalken Mastermind.jpg;http://magiccards.info/scans/en/10e/123.jpg
+Gelectrode.jpg;http://magiccards.info/scans/en/gp/113.jpg
+Recoil.jpg;http://magiccards.info/scans/en/in/264.jpg
+Ezuri's Archers.jpg;http://magiccards.info/scans/en/som/120.jpg
+Gratuitous Violence.jpg;http://magiccards.info/scans/en/on/212.jpg
+Rally the Forces.jpg;http://magiccards.info/scans/en/mbs/73.jpg

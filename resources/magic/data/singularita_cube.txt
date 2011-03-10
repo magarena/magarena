@@ -62,6 +62,7 @@ Berserkers of Blood Ridge
 Bestial Menace
 Birds of Paradise
 Black Knight
+Black Sun's Zenith
 Blackcleave Cliffs
 Blade of the Sixth Pride
 Bladed Pinions
@@ -102,6 +103,7 @@ Canopy Spider
 Canyon Minotaur
 Canyon Wildcat
 Captain of the Watch
+Captive Flame
 Caravan Hurda
 Carnifex Demon
 Celestial Colonnade
@@ -198,7 +200,6 @@ Echo Mage
 Eel Umbra
 Eldrazi Monument
 Elephant Guide
-Elite Vanguard
 Elvish Archers
 Elvish Warrior
 Ember Hauler
@@ -214,6 +215,7 @@ Ethercaste Knight
 Ethersworn Adjudicator
 Evacuation
 Exhaustion
+Ezuri's Archers
 Fallen Angel
 Fangren Hunter
 Femeref Archers
@@ -251,6 +253,7 @@ Galina's Knight
 Galvanic Arc
 Game-Trail Changeling
 Garruk's Companion
+Gelectrode
 Ghost Council of Orzhova
 Ghostway
 Giant Cockroach
@@ -265,6 +268,7 @@ Glacial Wall
 Glass Golem
 Glen Elendra Archmage
 Glen Elendra Liege
+Glissa's Courier
 Gloomhunter
 Gloomwidow
 Glorious Anthem
@@ -292,6 +296,7 @@ Goblin Sky Raider
 Goblin Spelunkers
 Goblin Striker
 Goblin War Paint
+Goblin Wardriver
 Godhead of Awe
 Godless Shrine
 Godsire
@@ -300,6 +305,7 @@ Goliath Spider
 Gorgon Flail
 Grappler Spider
 Grasp of Darkness
+Gratuitous Violence
 Grave Titan
 Gravelgill Axeshark
 Graypelt Refuge
@@ -385,6 +391,7 @@ Knight Errant
 Knight of Meadowgrain
 Kodama of the North Tree
 Kokusho, the Evening Star
+Koth's Courier
 Kraken Hatchling
 Kulrath Knight
 Lagac Lizard
@@ -414,6 +421,7 @@ Lord of Extinction
 Lord of Shatterskull Pass
 Lotus Petal
 Loxodon Hierarch
+Loxodon Partisan
 Loxodon Warhammer
 Loxodon Wayfarer
 Lumengrid Warden
@@ -432,6 +440,7 @@ Martial Coup
 Mask of Memory
 Mask of Riddles
 Mass of Ghouls
+Massacre Wurm
 Meglonoth
 Memnite
 Merfolk Seastalkers
@@ -475,6 +484,7 @@ Nema Siltlurker
 Nemesis of Reason
 Nessian Courser
 Nether Horror
+Neurok Invisimancer
 Nezumi Cutthroat
 Nightguard Patrol
 Nightshade Stinger
@@ -541,6 +551,7 @@ Raging Kavu
 Raging Ravine
 Rakdos Guildmage
 Raking Canopy
+Rally the Forces
 Rampaging Baloths
 Rancor
 Ravenous Baloth
@@ -550,6 +561,7 @@ Razorjaw Oni
 Razortooth Rats
 Razorverge Thicket
 Reanimate
+Recoil
 Recover
 Redwood Treefolk
 Remand
@@ -582,6 +594,7 @@ Ruthless Cullblade
 Sabertooth Nishoba
 Sabretooth Tiger
 Sacred Foundry
+Sacred Wolf
 Safe Passage
 Safehold Elite
 Savage Lands
@@ -604,7 +617,6 @@ Sejiri Refuge
 Sentinels of Glen Elendra
 Serendib Efreet
 Serra Angel
-Serra Sphinx
 Serra's Embrace
 Serrated Arrows
 Severed Legion
@@ -642,6 +654,7 @@ Slave of Bolas
 Sleep
 Slinking Serpent
 Smash to Smithereens
+Smite
 Smoldering Butcher
 Smother
 Snake Umbra
@@ -684,6 +697,7 @@ Stonebrow, Krosan Hero
 Stonework Puma
 Storm Crow
 Stormfront Pegasus
+Strandwalker
 Stratozeppelid
 Streetbreaker Wurm
 Strider Harness
@@ -714,6 +728,7 @@ Terra Stomper
 Thieving Magpie
 Thornweald Archer
 Thoughtweft Gambit
+Thrun, the Last Troll
 Thunder Strike
 Thundering Giant
 Thundersong Trumpeter
@@ -741,6 +756,7 @@ Trusty Machete
 Trygon Predator
 Tuktuk the Explorer
 Tundra Wolves
+Turn the Tide
 Turn to Mist
 Twinblade Slasher
 Twincast
@@ -756,6 +772,7 @@ Vampire Hexmage
 Vampire Nighthawk
 Vastwood Gorger
 Vault Skyward
+Vedalken Mastermind
 Vedalken Outlander
 Venser's Sliver
 Venser, Shaper Savant
@@ -763,9 +780,11 @@ Veteran Armorer
 Veteran Cavalier
 Veteran's Reflexes
 Viashino Spearhunter
+Victory's Herald
 Vigor
 Vine Trellis
 Vines of Vastwood
+Viridian Claw
 Vivid Crag
 Vivid Creek
 Vivid Grove
@@ -829,22 +848,3 @@ Zodiac Monkey
 Zombie Goliath
 Zombie Outlander
 Zombify
-Black Sun's Zenith
-Goblin Wardriver
-Massacre Wurm
-Strandwalker
-Thrun, the Last Troll
-Turn the Tide
-Victory's Herald
-Viridian Claw
-Captive Flame
-Smite
-Neurok Commando
-Neurok Invisimancer
-Vedalken Mastermind
-Gelectrode
-Recoil
-Ezuri's Archers
-Eland Umbra
-Abyssal Specter
-Gratuitous Violence

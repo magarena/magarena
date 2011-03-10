@@ -2665,6 +2665,8 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger STRANDWALKER=new MagicLivingWeaponTrigger("Strandwalker");
+    
     private static final MagicTrigger SWORD_OF_BODY_AND_MIND=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of Body and Mind") {
 
 		@Override
@@ -3647,6 +3649,7 @@ public class TriggerDefinitions {
 	    SHIELD_OF_THE_RIGHTEOUS,
 	    SKULLCLAMP,
 	    SPECTERS_SHROUD,
+	    STRANDWALKER,
 	    SWORD_OF_BODY_AND_MIND,
 	    SWORD_OF_FIRE_AND_ICE,
 	    SWORD_OF_LIGHT_AND_SHADOW,

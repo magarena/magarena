@@ -118,13 +118,9 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
 		addToHand(player,"Black Sun's Zenith",1);
-		addToHand(player,"Goblin Wardriver",1);
 		addToHand(player,"Massacre Wurm",1);
-		addToHand(player,"Strandwalker",1);
-		addToHand(player,"Thrun, the Last Troll",1);
 		addToHand(player,"Turn the Tide",1);
 		addToHand(player,"Victory's Herald",1);
-		addToHand(player,"Viridian Claw",1);
 		addToHand(player,"Captive Flame",1);
 		addToHand(player,"Smite",1);
 		addToHand(player,"Neurok Invisimancer",1);
@@ -132,10 +128,8 @@ public class TestGameBuilder {
 		addToHand(player,"Gelectrode",1);
 		addToHand(player,"Recoil",1);
 		addToHand(player,"Ezuri's Archers",1);
-		addToHand(player,"Eland Umbra",1);
-		addToHand(player,"Abyssal Specter",1);
 		addToHand(player,"Gratuitous Violence",1);
-		addToHand(player,"Neurok Commando",1);
+		addToHand(player,"Rally the Forces",1);
 		
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);

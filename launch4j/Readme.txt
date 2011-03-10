@@ -24,12 +24,17 @@ Recommended difficulty level for the best balance of AI speed and strength is th
 
 Have fun!
 
-Release 1.8 (March 11, 2011)
+Release 1.8 (March, 2011)
 ===========
 
 - ubeefx cube (530 cards)
 - singularita cube (850 cards)
 
+- improved deck generator
+- added option to play with monocolored generated decks
+- changed function of Life+ slider in difficulty setting so that it gives extra life to computer for added difficulty
+
+- fixed must attack if able when power is 0 or lower
 - fixed apostrophes in Keywords screen
 
 Release 1.7 (January 14, 2011)
