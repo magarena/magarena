@@ -45,7 +45,7 @@ public class MagicPlayer implements MagicTarget {
 		permanents=new MagicPermanentSet();
 		manaPermanents=new MagicPermanentSet();
 		life=configuration.getStartLife();
-		if (index==0) {
+		if (index!=0) {
 			life+=GeneralConfig.getInstance().getExtraLife();
 		}
 		cardCounter=new MagicCardCounter();

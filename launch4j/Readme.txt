@@ -32,7 +32,7 @@ Release 1.8 (March, 2011)
 
 - improved deck generator
 - added option to play with monocolored generated decks
-- changed function of Life+ slider in difficulty setting so that it gives extra life to computer for added difficulty
+- changed function of Life + slider in difficulty settings so that it gives extra life to computer for added difficulty
 
 - fixed must attack if able when power is 0 or lower
 - fixed apostrophes in Keywords screen
