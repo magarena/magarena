@@ -71,6 +71,7 @@ import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicUnblockableTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.trigger.MagicDevourTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
@@ -704,6 +705,27 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger EZURIS_ARCHERS=new MagicTrigger(MagicTriggerType.WhenBlocks,"Ezuri's Archers") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			if (permanent==data) {
+				final MagicPermanent blocked=permanent.getBlockedCreature();
+				if (blocked!=null&&blocked.hasAbility(game,MagicAbility.Flying)) {
+					return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,"Ezuri's Archers gets +3/+0 until end of turn.");
+				}
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+		
+			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
+		}
+    };
+    
     private static final MagicTrigger FIRE_SERVANT=new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Fire Servant",3) {
 
 		@Override
@@ -832,6 +854,26 @@ public class TriggerDefinitions {
 					game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBlock));
 				}
 			}
+		}
+    };
+    
+    private static final MagicTrigger GELECTRODE=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Gelectrode") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data;
+			if (cardOnStack.getController()==player&&cardOnStack.getCardDefinition().isSpell()) {
+				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Untap Gelectrode.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
 		}
     };
     
@@ -1289,6 +1331,48 @@ public class TriggerDefinitions {
 			}
 		}
     };
+    
+	private static final MagicTrigger MASSACRE_WURM1=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Massacre Wurm") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{game.getOpponent(player)},this,
+				"Creatures your opponent controls get -2/-2 until end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			for (final MagicTarget target : targets) {
+				
+				game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,-2,-2));
+			}
+		}
+    };
+
+    private static final MagicTrigger MASSACRE_WURM2=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Massacre Wurm") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			final MagicPermanent otherPermanent=(MagicPermanent)data;
+			final MagicPlayer otherController=otherPermanent.getController();
+			if (otherController!=player&&otherPermanent.isCreature()) {			
+				return new MagicEvent(permanent,player,new Object[]{otherController},this,"Your opponent loses 2 life.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-2));
+		}
+    };
 
     private static final MagicTrigger MEGLONOTH=new MagicTrigger(MagicTriggerType.WhenBlocks,"Meglonoth") {
 
@@ -1553,7 +1637,26 @@ public class TriggerDefinitions {
 			game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],10));
 		}
     };
-        
+
+    private static final MagicTrigger NEUROK_INVISIMANCER=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Neurok Invisimancer") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_CREATURE,MagicUnblockableTargetPicker.getInstance(),
+				MagicEvent.NO_DATA,this,"Target creature$ is unblockable this turn.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Unblockable));
+			}
+		}
+    };
+    
     private static final MagicTrigger NOVABLAST_WURM=new MagicTrigger(MagicTriggerType.WhenAttacks,"Novablast Wurm") {
 
 		@Override
@@ -2315,7 +2418,30 @@ public class TriggerDefinitions {
 			}
 		}
     };
-     
+
+    private static final MagicTrigger VICTORYS_HERALD=new MagicTrigger(MagicTriggerType.WhenAttacks,"Victory's Herald") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			if (permanent==data) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{player},this,"Attacking creatures gain flying and lifelink until end of turn.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+			for (final MagicTarget target : targets) {
+				
+				game.doAction(new MagicSetAbilityAction((MagicPermanent)target,MagicAbility.VICTORYS_HERALD_FLAGS));
+			}
+		}		
+    };
+    
     private static final MagicTrigger VIGOR1=new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Vigor",4) {
 
 		@Override
@@ -2932,6 +3058,29 @@ public class TriggerDefinitions {
 		}
     };
         
+    private static final MagicTrigger GRATUITOUS_VIOLENCE=new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Gratuitous Violence",3) {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			final MagicSource source=damage.getSource();
+			if (source.getController()==permanent.getController()&&source.isPermanent()) {
+				final MagicPermanent sourcePermanent=(MagicPermanent)source;
+				if (sourcePermanent.isCreature()) {
+					// Generates no event or action.
+					damage.setAmount(damage.getAmount()<<1);
+				}
+			}			
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+		
+		}
+    };
+    
 	private static final MagicLocalVariable HALCYON_GLAZE_VARIABLE=new MagicLocalVariable() {
 		
 		@Override
@@ -3521,7 +3670,7 @@ public class TriggerDefinitions {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
 		}
     };
-	    
+    
 	private static final Collection<MagicTrigger> TRIGGERS=Arrays.<MagicTrigger>asList(
 		ACIDIC_SLIME,
 		AFFA_GUARD_HOUND,
@@ -3551,12 +3700,14 @@ public class TriggerDefinitions {
 	    DREAD2,
 	    DROMAR_THE_BANISHER,
 	    EMPYRIAL_ARCHANGEL,
+	    EZURIS_ARCHERS,
 	    FIRE_SERVANT,
 	    FLAMEBLAST_DRAGON,
 	    FLAME_KIN_ZEALOT,
 	    FLAMETONGUE_KAVU,
 	    FOUL_IMP,
 	    FRENZIED_GOBLIN,
+	    GELECTRODE,
 	    GHOST_COUNCIL_OF_ORZHOVA,
 	    GRAVE_TITAN1,
 	    GRAVE_TITAN2,
@@ -3581,6 +3732,8 @@ public class TriggerDefinitions {
 	    LORD_OF_SHATTERSKULL_PASS,
 	    LOXODON_HIERARCH,
 	    MAN_O_WAR,
+	    MASSACRE_WURM1,
+	    MASSACRE_WURM2,
 	    MEGLONOTH,
 	    MESSENGER_FALCONS,
 	    MIDNIGHT_BANSHEE,
@@ -3594,6 +3747,7 @@ public class TriggerDefinitions {
 	    MURKFIEND_LIEGE,
 	    MYSTIC_SNAKE,
 	    NEMESIS_OF_REASON,
+	    NEUROK_INVISIMANCER,
 	    NOVABLAST_WURM,
 	    NULLTREAD_GARGANTUAN,
 	    PELAKKA_WURM1,
@@ -3632,6 +3786,7 @@ public class TriggerDefinitions {
 	    TRYGON_PREDATOR,
 	    TUKTUK_THE_EXPLORER,    
 	    VENSER_SHAPER_SAVANT,
+	    VICTORYS_HERALD,
 	    VIGOR1,
 	    VIGOR2,
 	    VOROSH_THE_HUNTER,
@@ -3682,7 +3837,7 @@ public class TriggerDefinitions {
 	    AKOUM_REFUGE1,
 	    AKOUM_REFUGE2,	    
 	    GRAYPELT_REFUGE1,
-	    GRAYPELT_REFUGE2,	    
+	    GRAYPELT_REFUGE2,
 	    JWAR_ISLE_REFUGE1,
 	    JWAR_ISLE_REFUGE2,
 	    KAZANDU_REFUGE1,
@@ -3704,6 +3859,7 @@ public class TriggerDefinitions {
 	    DISSIPATION_FIELD,
 	    DEBTORS_KNELL,
 	    FERVENT_CHARGE,
+	    GRATUITOUS_VIOLENCE,
 	    HALCYON_GLAZE,
 	    HISSING_MIASMA,
 	    PHYREXIAN_ARENA,

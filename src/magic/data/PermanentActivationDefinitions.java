@@ -760,6 +760,33 @@ public class PermanentActivationDefinitions {
 	
 	private static final MagicPermanentActivation FURNACE_WHELP=new MagicPumpActivation("Furnace Whelp",MagicManaCost.RED,1,0);
 
+	private static final MagicPermanentActivation GELECTRODE=new MagicPermanentActivation(
+			"Gelectrode",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(1),
+				new Object[]{source},this,"Gelectrode deals 1 damage to target creature or player$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicTarget target=event.getTarget(game,choiceResults,0);
+			if (target!=null) {
+				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+	};
+	
 	private static final MagicPermanentActivation GHOST_COUNCIL_OF_ORZHOVA=new MagicPermanentActivation("Ghost Council of Orzhova",
 			new MagicCondition[]{MagicManaCost.ONE.getCondition(),MagicCondition.TWO_CREATURES_CONDITION},new MagicActivationHints(MagicTiming.Removal,false,1)) {
 
@@ -1786,6 +1813,32 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
+	private static final MagicPermanentActivation VEDALKEN_MASTERMIND=new MagicPermanentActivation("Vedalken Mastermind",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,MagicBounceTargetPicker.getInstance(),
+				MagicEvent.NO_DATA,this,"Return target permanent you control$ to its owner's hand.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+			}
+		}
+	};
+	
 	private static final MagicPermanentActivation WALL_OF_BONE=new MagicRegenerationActivation("Wall of Bone",MagicManaCost.BLACK);
 
 	private static final MagicPermanentActivation ANGELIC_SHIELD=new MagicPermanentActivation(
@@ -1836,6 +1889,32 @@ public class PermanentActivationDefinitions {
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicRegenerateAction(creature));
+			}
+		}
+	};
+	
+	private static final MagicPermanentActivation CAPTIVE_FLAME=new MagicPermanentActivation(
+			"Captive Flame",new MagicCondition[]{MagicManaCost.RED.getCondition()},new MagicActivationHints(MagicTiming.Pump,true)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance(),
+				MagicEvent.NO_DATA,this,"Target creature$ gets +1/+0 until end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
 			}
 		}
 	};
@@ -2480,6 +2559,7 @@ public class PermanentActivationDefinitions {
 		FIRESLINGER,
 		FUME_SPITTER,
 		FURNACE_WHELP,
+		GELECTRODE,
 		GHOST_COUNCIL_OF_ORZHOVA,
 		GLEN_ELENDRA_ARCHMAGE,
 		GOBLIN_ARTILLERY,
@@ -2528,9 +2608,11 @@ public class PermanentActivationDefinitions {
 		TWINBLADE_SLASHER,
 		URSAPINE,
 		VAMPIRE_HEXMAGE,
+		VEDALKEN_MASTERMIND,
 		WALL_OF_BONE,
 		ANGELIC_SHIELD,
 		ASCETICISM,
+		CAPTIVE_FLAME,
 		DRAGON_ROOST,
 		FIRES_OF_YAVIMAYA,
 		QUEST_FOR_THE_GEMBLADES,

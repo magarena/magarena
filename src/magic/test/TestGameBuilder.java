@@ -117,23 +117,14 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
-		addToHand(player,"Black Sun's Zenith",1);
-		addToHand(player,"Massacre Wurm",1);
-		addToHand(player,"Turn the Tide",1);
-		addToHand(player,"Victory's Herald",1);
-		addToHand(player,"Captive Flame",1);
-		addToHand(player,"Smite",1);
-		addToHand(player,"Neurok Invisimancer",1);
-		addToHand(player,"Vedalken Mastermind",1);
-		addToHand(player,"Gelectrode",1);
-		addToHand(player,"Recoil",1);
 		addToHand(player,"Ezuri's Archers",1);
 		addToHand(player,"Gratuitous Violence",1);
-		addToHand(player,"Rally the Forces",1);
+		addToHand(player,"Lightning Bolt",1);
 		
 		createPermanent(game,player,"Watchwolf",false,1);
+		createPermanent(game,player,"Guardian of the Guildpact",false,1);
 		createPermanent(game,player,"Rupture Spire",false,8);
-		createPermanent(game,opponent,"Glorious Anthem",false,1);		
+		createPermanent(game,opponent,"Goliath Sphinx",false,1);
 
 		return game;
 	}

@@ -1090,6 +1090,55 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent RALLY_THE_FORCES=new MagicSpellCardEvent("Rally the Forces") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack},this,
+				"Attacking creatures get +1/+0 and gain first strike until end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];			
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+			for (final MagicTarget target : targets) {
+
+				final MagicPermanent creature=(MagicPermanent)target;
+				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
+				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
+			}
+		}
+	};
+	
+	private static final MagicSpellCardEvent RECOIL=new MagicSpellCardEvent("Recoil") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.TARGET_PERMANENT,
+				MagicBounceTargetPicker.getInstance(),new Object[]{cardOnStack},this,
+				"Return target permanent$ to its owner's hand. Then that player discards a card.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				final MagicPlayer owner=permanent.getCard().getOwner();
+				game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+				game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),owner,1,false));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent REMAND=new MagicSpellCardEvent("Remand") {
 
 		@Override
@@ -1221,6 +1270,26 @@ public class CardEventDefinitions {
 				final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),permanent.getController(),3,false);
 				game.doAction(new MagicDestroyAction(permanent));
 				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+	};
+	
+	private static final MagicSpellCardEvent SMITE=new MagicSpellCardEvent("Smite") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_BLOCKED_CREATURE,
+				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,"Destroy target blocked creature$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicDestroyAction(creature));
 			}
 		}
 	};
@@ -1388,6 +1457,29 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent TURN_THE_TIDE=new MagicSpellCardEvent("Turn the Tide") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack,player},this,
+				"Creatures your opponent controls get -2/-0 until end of turn.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPlayer opponent=game.getOpponent((MagicPlayer)data[1]);
+			final Collection<MagicTarget> targets=game.filterTargets(opponent,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			for (final MagicTarget target : targets) {
+				
+				game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,-2,0));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent TURN_TO_MIST=new MagicSpellCardEvent("Turn to Mist") {
 
 		@Override
@@ -1820,6 +1912,31 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent BLACK_SUNS_ZENITH=new MagicSpellCardEvent("Black Sun's Zenith") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+
+			final MagicPlayer player=cardOnStack.getController();
+			final MagicCard card=cardOnStack.getCard();
+			final int amount=payedCost.getX();
+			return new MagicEvent(card,player,new Object[]{card,player,amount},this,
+				"Put "+amount+" -1/-1 counters on each creature. Shuffle Black Sun's Zenith into its owner's library.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final int amount=(Integer)data[2];
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE);
+			for (final MagicTarget target : targets) {
+			
+				game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.MinusOne,amount,true));
+			}
+			game.doAction(new MagicShuffleIntoLibraryAction((MagicCard)data[0]));
+		}
+	};
+	
 	private static final MagicSpellCardEvent BLIGHTNING=new MagicSpellCardEvent("Blightning") {
 
 		@Override
@@ -3028,12 +3145,15 @@ public class CardEventDefinitions {
 		PLUMMET,
 		PUNCTURE_BLAST,
 		PUTREFY,
+		RALLY_THE_FORCES,
+		RECOIL,
 		REMAND,
 		REPULSE,
 		SAFE_PASSAGE,
 		SCAR,
 		SIGIL_BLESSING,
 		SMASH_TO_SMITHEREENS,
+		SMITE,
 		SMOTHER,
 		SWORDS_TO_PLOWSHARES,
 		TERMINATE,
@@ -3041,6 +3161,7 @@ public class CardEventDefinitions {
 		THUNDER_STRIKE,
 		TO_ARMS,
 		TRUMPET_BLAST,
+		TURN_THE_TIDE,
 		TURN_TO_MIST,
 		TWINCAST,
 		UNDERMINE,
@@ -3059,6 +3180,7 @@ public class CardEventDefinitions {
 		ASSASSINATE,
 		BEACON_OF_UNREST,
 		BESTIAL_MENACE,
+		BLACK_SUNS_ZENITH,
 		BLAZE,
 		BLIGHTNING,
 		CHAIN_REACTION,

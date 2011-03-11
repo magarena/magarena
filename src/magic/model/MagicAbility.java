@@ -102,7 +102,10 @@ public enum MagicAbility {
 	
 	public static final long TRUE_CONVICTION_FLAGS=
 		DoubleStrike.getMask()|LifeLink.getMask();
-			
+
+	public static final long VICTORYS_HERALD_FLAGS=
+		Flying.getMask()|LifeLink.getMask();
+	
 	public static final long EXCLUDE_MASK=Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
 	
 	private final String name;

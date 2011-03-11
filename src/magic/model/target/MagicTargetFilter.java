@@ -570,6 +570,20 @@ public interface MagicTargetFilter {
 		}
 	};
 	
+	public static final MagicTargetFilter TARGET_BLOCKED_CREATURE=new MagicTargetFilter() {
+
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+
+			final MagicPermanent permanent=(MagicPermanent)target;
+			return permanent.isCreature()&&permanent.isBlocked();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
+	
 	public static final MagicTargetFilter TARGET_CREATURE_CARD_FROM_GRAVEYARD=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {

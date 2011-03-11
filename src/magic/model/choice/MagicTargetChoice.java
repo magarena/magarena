@@ -41,6 +41,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL_OR_PERMANENT,true,MagicTargetHint.Negative,"target spell or permanent");
 	public static final MagicTargetChoice TARGET_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.None,"target permanent");
+	public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,true,MagicTargetHint.None,"target permanent you control");	
 	public static final MagicTargetChoice TARGET_NONBASIC_LAND=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.None,"target non basic land");
 	public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
@@ -79,6 +81,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_CREATURE,true,MagicTargetHint.Negative,"target attacking creature");
 	public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_CREATURE_WITH_FLYING,true,MagicTargetHint.Negative,"target attacking creature with flying");
+	public static final MagicTargetChoice NEG_TARGET_BLOCKED_CREATURE=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_BLOCKED_CREATURE,true,MagicTargetHint.Negative,"target blocked creature");
 	public static final MagicTargetChoice CREATURE_YOU_CONTROL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a creature you control");
 	public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL=
