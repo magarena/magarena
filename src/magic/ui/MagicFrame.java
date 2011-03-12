@@ -7,7 +7,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
 import java.util.LinkedList;
-import java.util.List;
 
 import javax.swing.JComponent;
 import javax.swing.JFileChooser;
@@ -21,7 +20,7 @@ import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.TournamentConfig;
-import magic.model.MagicDeckCard;
+import magic.model.MagicDeck;
 import magic.model.MagicGame;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
@@ -353,12 +352,12 @@ public class MagicFrame extends JFrame implements ActionListener {
 			final MagicPlayerDefinition players[]=tournament.getPlayers();
 			final MagicPlayerProfile profile1=players[0].getProfile();
 			final MagicPlayerProfile profile2=players[1].getProfile();
-			final List<MagicDeckCard> draftedDeck1=players[0].getDraftedDeck();			
-			final List<MagicDeckCard> draftedDeck2=players[1].getDraftedDeck();
+			final MagicDeck deck1=players[0].getDeck();			
+			final MagicDeck deck2=players[1].getDeck();
 			players[0].setProfile(profile2);
-			players[0].setDraftedDeck(draftedDeck2);
+			players[0].setDeck(deck2);
 			players[1].setProfile(profile1);
-			players[1].setDraftedDeck(draftedDeck1);
+			players[1].setDeck(deck1);
 			showTournament();
 		}
 	}
@@ -397,7 +396,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	public void editCardWithExplorer(final EditDeckCard editDeckCard) {
 		
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
-		final int mode=editDeckCard.getDeckCard().getCardDefinition().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
+		final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
 		final ExplorerPanel explorerPanel=new ExplorerPanel(this,mode,editDeckCard);
 		addContent(explorerPanel);
 	}

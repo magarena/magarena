@@ -15,7 +15,7 @@ import javax.swing.filechooser.FileFilter;
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicDeckCard;
+import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 
@@ -61,9 +61,8 @@ public class DeckUtils {
 			cardMaps.add(new TreeMap<String, Integer>());
 		}
 		
-		for (final MagicDeckCard deckCard : player.getDraftedDeck()) {
+		for (final MagicCardDefinition cardDefinition : player.getDeck()) {
 						
-			final MagicCardDefinition cardDefinition=deckCard.getCardDefinition();
 			final String name=cardDefinition.getName();
 			int index;
 			if (cardDefinition.isLand()) {
@@ -101,7 +100,7 @@ public class DeckUtils {
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
 		
 		try {
-			final List<MagicDeckCard> deck=new ArrayList<MagicDeckCard>();
+			final MagicDeck deck=new MagicDeck();
 			final int colorCount[]=new int[MagicColor.NR_COLORS];
 			final BufferedReader reader=new BufferedReader(new FileReader(filename));
 
@@ -129,7 +128,7 @@ public class DeckUtils {
 											colorCount[color.getIndex()]++;
 										}
 									}
-									deck.add(new MagicDeckCard(cardDefinition));
+									deck.add(cardDefinition);
 								}
 							}
 						} catch (final Exception ex) {}
@@ -158,7 +157,7 @@ public class DeckUtils {
 				colorCount[index]=0;
 			}
 			player.setProfile(new MagicPlayerProfile(colorText.toString()));
-			player.setDraftedDeck(deck);			
+			player.setDeck(deck);			
 		} catch (final Exception ex) {}
 	}
 }

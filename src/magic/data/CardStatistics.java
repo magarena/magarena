@@ -7,7 +7,6 @@ import javax.swing.ImageIcon;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicDeckCard;
 
 public class CardStatistics {
 
@@ -38,7 +37,7 @@ public class CardStatistics {
 	};
 	public static final int NR_OF_TYPES=TYPE_NAMES.length;
 	
-	private final Collection<MagicDeckCard> cards;
+	private final Collection<MagicCardDefinition> cards;
 	
 	public int totalCards=0;
 	public int totalTypes[]=new int[NR_OF_TYPES];
@@ -56,7 +55,7 @@ public class CardStatistics {
 	public int multiColor=0;
 	public int colorless=0;
 	
-	public CardStatistics(final Collection<MagicDeckCard> cards) {
+	public CardStatistics(final Collection<MagicCardDefinition> cards) {
 
 		this.cards=cards;
 		createStatistics();
@@ -70,9 +69,7 @@ public class CardStatistics {
 			return;
 		}
 		
-		for (final MagicDeckCard draftedCard : cards) {
-
-			final MagicCardDefinition card=draftedCard.getCardDefinition();
+		for (final MagicCardDefinition card : cards) {
 												
 			totalRarity[card.getRarity()]++;
 						

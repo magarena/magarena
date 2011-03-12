@@ -25,7 +25,6 @@ import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCubeDefinition;
-import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.ui.EditDeckCard;
@@ -104,13 +103,12 @@ public class DeckViewer extends JPanel implements ChangeListener {
 	public void update() {
 		
 		final Map<MagicCardDefinition,DeckEntry> entriesMap=new HashMap<MagicCardDefinition,DeckEntry>();
-		for (final MagicDeckCard deckCard : player.getDraftedDeck()) {
+		for (final MagicCardDefinition card : player.getDeck()) {
 
-			final MagicCardDefinition card=deckCard.getCardDefinition();
 			if (card.isLand()==lands) {
 				DeckEntry entry=entriesMap.get(card);
 				if (entry==null) {
-					entry=new DeckEntry(deckCard);
+					entry=new DeckEntry(card);
 					entriesMap.put(card,entry);
 				} else {
 					entry.count++;
@@ -184,20 +182,18 @@ public class DeckViewer extends JPanel implements ChangeListener {
 			}
 		}
 	}
-		
+
 	private class DeckEntry extends JPanel implements Comparable<DeckEntry>,ActionListener {
 		
 		private static final long serialVersionUID = 1L;
 		
-		private final MagicDeckCard deckCard;
 		private final MagicCardDefinition card;
 		int count;
 		
-		public DeckEntry(final MagicDeckCard deckCard) {
+		public DeckEntry(final MagicCardDefinition card) {
 
-			this.deckCard=deckCard;
-			card=deckCard.getCardDefinition();
-			count=1;			
+			this.card=card;
+			count=1;
 		}
 
 		@Override
@@ -281,7 +277,7 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		@Override
 		public void actionPerformed(final ActionEvent event) {
 
-			frame.editCardWithExplorer(new EditDeckCard(DeckViewer.this,player,cubeDefinition,deckCard));
+			frame.editCardWithExplorer(new EditDeckCard(DeckViewer.this,player,cubeDefinition,card));
 		}
 	}
 }

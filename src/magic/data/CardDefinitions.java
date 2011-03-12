@@ -12,7 +12,6 @@ import java.util.Map;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicDeckCard;
 import magic.model.MagicManaCost;
 import magic.model.MagicStaticType;
 import magic.model.MagicType;
@@ -216,12 +215,7 @@ public class CardDefinitions {
 	
 	public void printStatistics() {
 		
-		final List<MagicDeckCard> allCards=new ArrayList<MagicDeckCard>();
-		for (final MagicCardDefinition card : cards) {
-			
-			allCards.add(new MagicDeckCard(card));
-		}
-		final CardStatistics statistics=new CardStatistics(allCards);
+		final CardStatistics statistics=new CardStatistics(cards);
 		statistics.printStatictics(System.out);
 	}
 	

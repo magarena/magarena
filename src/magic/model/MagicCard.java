@@ -24,12 +24,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 		this.id=id;
 		imageIndex=MagicRandom.nextInt(100);
 	}
-	
-	public MagicCard(final MagicDeckCard card,final MagicPlayer owner,final int id) {
-
-		this(card.getCardDefinition(),owner,id);
-	}
-	
+		
 	private MagicCard() {
 		
 	}

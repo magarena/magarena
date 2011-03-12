@@ -1,7 +1,7 @@
 package magic.ui;
 
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
-import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerDefinition;
 import magic.ui.viewer.DeckViewer;
 
@@ -10,14 +10,14 @@ public class EditDeckCard {
 	private final DeckViewer deckViewer;
 	private final MagicPlayerDefinition player;
 	private final MagicCubeDefinition cube;
-	private final MagicDeckCard deckCard;
+	private final MagicCardDefinition card;
 	
-	public EditDeckCard(final DeckViewer deckViewer,final MagicPlayerDefinition player,final MagicCubeDefinition cube,final MagicDeckCard deckCard) {
+	public EditDeckCard(final DeckViewer deckViewer,final MagicPlayerDefinition player,final MagicCubeDefinition cube,final MagicCardDefinition card) {
 		
 		this.deckViewer=deckViewer;
 		this.player=player;
 		this.cube=cube;
-		this.deckCard=deckCard;
+		this.card=card;
 	}
 	
 	public DeckViewer getDeckViewer() {
@@ -35,8 +35,8 @@ public class EditDeckCard {
 		return cube;
 	}
 	
-	public MagicDeckCard getDeckCard() {
+	public MagicCardDefinition getCard() {
 		
-		return deckCard;
+		return card;
 	}
 }

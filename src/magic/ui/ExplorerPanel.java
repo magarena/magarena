@@ -23,12 +23,11 @@ import javax.swing.border.Border;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
-import magic.model.MagicDeckCard;
 import magic.model.MagicPlayerProfile;
 import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.viewer.CardViewer;
-import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.ZoneBackgroundLabel;
 
 public class ExplorerPanel extends JPanel implements ActionListener {
 
@@ -248,9 +247,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 				public void mousePressed(final MouseEvent event) {
 
 					if (editDeckCard!=null) {
-						final MagicDeckCard deckCard=new MagicDeckCard(cardDefinition);
-						editDeckCard.getPlayer().getDraftedDeck().remove(editDeckCard.getDeckCard());
-						editDeckCard.getPlayer().getDraftedDeck().add(deckCard);
+						editDeckCard.getPlayer().getDeck().remove(editDeckCard.getCard());
+						editDeckCard.getPlayer().getDeck().add(cardDefinition);
 						editDeckCard.getDeckViewer().updateAfterEdit();						
 						frame.closeCardExplorer();
 					}

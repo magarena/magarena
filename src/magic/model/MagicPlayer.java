@@ -229,9 +229,9 @@ public class MagicPlayer implements MagicTarget {
 	private void createHandAndLibrary(final int handSize) {
 				
 		int id=0;
-		for (final MagicDeckCard deckCard : playerDefinition.getDraftedDeck()) {
+		for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
 			
-			library.add(new MagicCard(deckCard,this,id++));
+			library.add(new MagicCard(cardDefinition,this,id++));
 		}
 
 		if (library.useSmartShuffle()) {

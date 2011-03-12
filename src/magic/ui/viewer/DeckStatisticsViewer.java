@@ -94,7 +94,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		
 		titleBar.setText("Deck Statistics : "+player.getName());
 		
-		final CardStatistics statistics=new CardStatistics(player.getDraftedDeck());
+		final CardStatistics statistics=new CardStatistics(player.getDeck());
 
 		topPanel.removeAll();
 		for (int index=0;index<CardStatistics.NR_OF_TYPES;index++) {
