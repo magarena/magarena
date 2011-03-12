@@ -21,7 +21,7 @@ public class CardStatistics {
 		IconImages.COST_SIX,
 		IconImages.COST_SEVEN,
 		IconImages.COST_EIGHT,
-		IconImages.COST_NINE_OR_MORE,
+		IconImages.COST_NINE,
 	};
 	public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.length;
 	
