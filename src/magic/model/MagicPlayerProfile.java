@@ -30,6 +30,15 @@ public class MagicPlayerProfile {
 		return colors.length;
 	}
 	
+	public int getNrOfNonBasicLands(final int amount) {
+		
+		switch (colors.length) {
+			case 3: return amount/2;
+			case 2: return amount/4;
+			default: return 0;
+		}
+	}
+	
 	public boolean allowsManaType(final MagicManaType manaType) {
 		
 		for (final MagicColor color : colors) {

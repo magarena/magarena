@@ -122,7 +122,7 @@ public class MagicPlayerDefinition {
 	
 	public void generateDeck(final DeckGenerator generator) {
 		
-		this.deck=generator.buildDeck(DECK_SIZE, profile);
+		this.deck=generator.generateDeck(DECK_SIZE, profile);
 		addBasicLandsToDeck();
 	}
 	
