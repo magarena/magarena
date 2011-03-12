@@ -830,7 +830,6 @@ Rootwater Commando.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multivers
 Runeclaw Bear.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=207337&type=card
 Rushwood Dryad.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=136285&type=card
 Sabretooth Tiger.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=45347&type=card
-Savannah Lions.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83246&type=card
 Scaled Wurm.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=83272&type=card
 Scathe Zombies.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129718&type=card
 Scavenging Scarab.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=46093&type=card
@@ -1687,7 +1686,6 @@ Rootwater Commando.jpg;http://magiccards.info/scans/en/10e/102.jpg
 Runeclaw Bear.jpg;http://magiccards.info/scans/en/dpa/82.jpg
 Rushwood Dryad.jpg;http://magiccards.info/scans/en/10e/294.jpg
 Sabretooth Tiger.jpg;http://magiccards.info/scans/en/8e/217.jpg
-Savannah Lions.jpg;http://magiccards.info/scans/en/9e/41.jpg
 Scaled Wurm.jpg;http://magiccards.info/scans/en/9e/269.jpg
 Scathe Zombies.jpg;http://magiccards.info/scans/en/10e/175.jpg
 Scavenging Scarab.jpg;http://magiccards.info/scans/en/ds/51.jpg

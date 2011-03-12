@@ -1,5 +1,6 @@
 package magic;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -9,7 +10,7 @@ import magic.model.MagicCardDefinition;
 
 public class MagicTools {
 
-	private static void listAllCards() throws IOException {
+	static void listAllCards() throws IOException {
 		
 		CardDefinitions.getInstance().loadCardDefinitions();
 		
@@ -26,8 +27,23 @@ public class MagicTools {
 		}
 	}
 	
+	static void checkCards() throws IOException {
+		
+		final CardDefinitions cardDefinitions = CardDefinitions.getInstance();
+		cardDefinitions.loadCardDefinitions();
+		
+		final String filenames[] = new File(MagicMain.getGamePath(),"cards").list();
+		for (final String filename : filenames) {
+			
+			final String name = filename.substring(0,filename.length()-4);
+			if (cardDefinitions.getCard(name) == null) {
+				System.out.println(name);
+			}
+		}
+	}
+	
 	public static void main(final String args[]) throws Exception {
 
-		listAllCards();
+		checkCards();
 	}
 }

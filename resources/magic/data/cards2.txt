@@ -2868,11 +2868,11 @@ power=2
 toughness=1
 timing=main
 
->Savannah Lions
+>Elite Vanguard
 value=3
-rarity=3
+rarity=2
 type=Creature
-subtype=Cat
+subtype=Human,Soldier
 color=w
 converted=1
 cost={W}

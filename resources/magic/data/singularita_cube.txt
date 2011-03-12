@@ -200,6 +200,7 @@ Echo Mage
 Eel Umbra
 Eldrazi Monument
 Elephant Guide
+Elite Vanguard
 Elvish Archers
 Elvish Warrior
 Ember Hauler
@@ -599,7 +600,6 @@ Safe Passage
 Safehold Elite
 Savage Lands
 Savage Twister
-Savannah Lions
 Scaled Wurm
 Scar
 Scathe Zombies
