@@ -45,7 +45,7 @@ public class DeckGenerator {
 		final MagicDeck deck=new MagicDeck();		
 		final int spells=(size*3)/5;
 		final int lands=profile.getNrOfNonBasicLands(size-spells);		
-		final int maxCreatures=(spells*3)/4;
+		final int maxCreatures=(spells*2)/3;
 		final int maxColorless=spells/6;
 		final int maxHigh=spells/6;
 		final int maxOther=(spells-maxHigh)/2;

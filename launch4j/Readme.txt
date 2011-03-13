@@ -6,7 +6,7 @@ Installing on Windows is quite simple, just put Magarena.exe on your desktop and
 To obtain the Java jar, Magarena.exe can simply be renamed to Magarena.jar because it is also an archive.
 To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
-Do not forget to execute Download Images in the Arena menu the first time you run a new release.
+Do not forget to execute "Download images" in the Arena menu the first time you run a new release.
 Otherwise you will see a lot of question marks. The application stops automatically when downloading is finished.
 
 Magarena supports the following keyboard shortcuts :
@@ -18,13 +18,16 @@ The UI of Magarena can be customized with downloadable themes coming in zip file
 A theme pack with seven themes can be downloaded on the project page.
 The theme pack should be unzipped into the mods folder of the Magarena data folder.
 It is best to restart the application each time after switching to one of these themes in preferences.
-Thanks to Epiko for creating the very nice Magarena splash screen and the amazing color themes!
+Thanks to epiko for creating the very nice Magarena splash screen and the amazing color themes.
+
+Thanks to singularita for creating the scripts to add 320 additional creature cards to Magarena.
+You can play with these cards when selecting the singularita cube in the "New duel" dialog. 
 
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
 Have fun!
 
-Release 1.8 (March, 2011)
+Release 1.8 (March 13, 2011)
 ===========
 
 - ubeefx cube (530 cards)
@@ -34,7 +37,7 @@ Release 1.8 (March, 2011)
 - added option to play with monocolored generated decks
 - changed function of Life + slider in difficulty settings so that it gives extra life to computer for added difficulty
 
-- fixed must attack if able when power is 0 or lower
+- fixed must attack if able when power is zero or lower
 - fixed apostrophes in Keywords screen
 
 Release 1.7 (January 14, 2011)
