@@ -320,6 +320,21 @@ public class MagicCardDefinition {
 		return convertedCost;
 	}
 	
+	public int getCostBucket() {
+		
+		switch (convertedCost) {
+			case 0:
+			case 1:
+			case 2:
+				return 0;
+			case 3:
+			case 4:
+				return 1;
+			default: 
+				return 2;
+		}
+	}
+	
 	public boolean hasX() {
 		
 		return cost.hasX();

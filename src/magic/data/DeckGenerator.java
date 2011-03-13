@@ -48,9 +48,11 @@ public class DeckGenerator {
 		final int maxCreatures=(spells*3)/4;
 		final int maxColorless=spells/6;
 		final int maxHigh=spells/6;
+		final int maxOther=(spells-maxHigh)/2;
+		final int maxCost[]=new int[]{maxOther,maxOther+1,maxHigh};
 		int countCreatures=0;
 		int countColorless=0;
-		int countHigh=0;
+		int countCost[]=new int[3];
 		
 		// Add spells to deck.
 		while (deck.size()<spells) {
@@ -66,20 +68,18 @@ public class DeckGenerator {
 				if (colorless&&countColorless>=maxColorless) {
 					continue;
 				}
-				final boolean high=cardDefinition.getConvertedCost()>=5;
-				if (high&&countHigh>=maxHigh) {
+				final int bucket=cardDefinition.getCostBucket();
+				if (countCost[bucket]>=maxCost[bucket]) {
 					continue;
 				}
 				deck.add(cardDefinition);
 				spellCards.remove(index);
+				countCost[bucket]++;
 				if (creature) {
 					countCreatures++;
 				}
 				if (colorless) {
 					countColorless++;
-				}
-				if (high) {
-					countHigh++;
 				}
 			}
 		}	
