@@ -43,11 +43,11 @@ public class MagicDeclareAttackersResultBuilder {
 		int count=0;
 		for (final Iterator<MagicCombatCreature> iterator=attackersSet.iterator();iterator.hasNext();) {
 
-			final MagicCombatCreature attacker=iterator.next();
-			if (attacker.power<=0) {
-				iterator.remove();
-			} else if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {
+			final MagicCombatCreature attacker=iterator.next();			 
+			if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {
 				current[count++]=attacker.permanent;
+				iterator.remove();
+			} else if (attacker.power<=0) {
 				iterator.remove();
 			}
 		}
