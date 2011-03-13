@@ -21,7 +21,7 @@ It is best to restart the application each time after switching to one of these 
 Thanks to epiko for creating the very nice Magarena splash screen and the amazing color themes.
 
 Thanks to singularita for creating the scripts to add 320 additional creature cards to Magarena.
-You can play with these cards when selecting the singularita cube in the "New duel" dialog. 
+You can play with these cards by selecting the singularita cube in the "New duel" dialog. 
 
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
