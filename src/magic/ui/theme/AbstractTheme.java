@@ -160,8 +160,10 @@ public abstract class AbstractTheme implements Theme {
 	@Override
 	public synchronized ImageIcon getAvatarIcon(int index,final int size) {
 
-		if (index<0||index>=avatars.length) {
+		if (index<0) {
 			index=0;
+		} else if (index>=avatars.length) {
+			index%=avatars.length;
 		}
 		PlayerAvatar avatar=avatars[index];
 		if (avatar==null) {

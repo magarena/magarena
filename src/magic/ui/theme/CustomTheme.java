@@ -47,10 +47,10 @@ public class CustomTheme extends AbstractTheme {
 	@Override
 	public ImageIcon getAvatarIcon(final int index,final int size) {
 
-		if (index>=nrOfAvatars) {
+		if (nrOfAvatars==0) {
 			return super.getAvatarIcon(index, size);
 		}
-		return playerAvatars[index].getIcon(index,size);
+		return playerAvatars[index%nrOfAvatars].getIcon(index,size);
 	}
 
 	private void parseEntry(final String key,final String value) {
