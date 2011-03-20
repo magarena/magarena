@@ -1176,18 +1176,6 @@ power=1
 toughness=1
 timing=main
 
->Fusion Elemental
-value=2
-rarity=2
-type=Creature
-subtype=Elemental
-color=rgbuw
-converted=5
-cost={W}{U}{B}{R}{G}
-power=8
-toughness=8
-timing=main
-
 >Gaea's Skyfolk
 value=1
 ability=flying

@@ -26,7 +26,7 @@ public class VersionPanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 		
-	private static final String VERSION = "Magarena 1.8";
+	private static final String VERSION = "Magarena 1.9";
 	private static final String AUTHOR = "by ubeefx";
 	private static final String WEB = "http://magarena.dyndns.org";
 	private static final String SPACING = "   ";
