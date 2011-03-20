@@ -847,3 +847,9 @@ Zodiac Monkey
 Zombie Goliath
 Zombie Outlander
 Zombify
+Septic Rats
+Phyrexian Crusader
+Phyrexian Vatmother
+Plague Stinger
+Skithiryx, the Blight Dragon
+Phyrexian Juggernaut

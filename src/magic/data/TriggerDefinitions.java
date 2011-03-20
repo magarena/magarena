@@ -24,6 +24,7 @@ import magic.model.action.MagicAttachEquipmentAction;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicChangePoisonAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicCounterItemOnStackAction;
@@ -1783,6 +1784,25 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger PHYREXIAN_VATMOTHER=new MagicTrigger(MagicTriggerType.AtUpkeep,"Phyrexian Vatmother") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,new Object[]{player},this,"You get a poison counter.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangePoisonAction((MagicPlayer)data[0],1));
+		}
+    };
+    
     private static final MagicTrigger PIERCE_STRIDER=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Pierce Strider") {
 
 		@Override
@@ -1917,6 +1937,27 @@ public class TriggerDefinitions {
 					}
 				}
 			}
+		}
+    };
+    
+    private static final MagicTrigger SEPTIC_RATS=new MagicTrigger(MagicTriggerType.WhenAttacks,"Septic Rats") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			if (permanent==data) {
+				final MagicPlayer player=permanent.getController();
+				if (game.getOpponent(player).getPoison()>0) {
+					return new MagicEvent(permanent,player,new Object[]{permanent},this,"Septic Rats gets +1/+1 until end of turn.");
+				}
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],1,1));
 		}
     };
     
@@ -3754,6 +3795,7 @@ public class TriggerDefinitions {
 	    PELAKKA_WURM2,
 	    PERIMETER_CAPTAIN,
 	    OROS_THE_AVENGER,
+	    PHYREXIAN_VATMOTHER,
 	    PIERCE_STRIDER,
 	    PREDATOR_DRAGON,
 	    PUPPETEER_CLIQUE,
@@ -3762,6 +3804,7 @@ public class TriggerDefinitions {
 	    RETALIATOR_GRIFFIN,
 	    RITH_THE_AWAKENER,
 	    RUMBLING_SLUM,
+	    SEPTIC_RATS,
 	    SERENDIB_EFREET,
 	    SIEGE_GANG_COMMANDER,
 	    SKELETAL_VAMPIRE,

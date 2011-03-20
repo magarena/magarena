@@ -24,6 +24,8 @@ public class MagicMarkerAction extends MagicAction {
 	private long oldIdentifiers[];
 	private int oldLife1;
 	private int oldLife2;
+	private int oldPoison1;
+	private int oldPoison2;
 	private MagicActivationPriority oldActivationPriority1;
 	private MagicActivationPriority oldActivationPriority2;
 	
@@ -45,10 +47,12 @@ public class MagicMarkerAction extends MagicAction {
 		oldIdentifiers=game.getIdentifiers();
 		final MagicPlayer player1=game.getPlayer(0);
 		oldLife1=player1.getLife();
+		oldPoison1=player1.getPoison();
 		oldActivationPriority1=player1.getActivationPriority();
 		player1.setActivationPriority(new MagicActivationPriority(oldActivationPriority1));
 		final MagicPlayer player2=game.getPlayer(1);
 		oldLife2=player2.getLife();
+		oldPoison2=player2.getPoison();
 		oldActivationPriority2=player2.getActivationPriority();
 		player2.setActivationPriority(new MagicActivationPriority(oldActivationPriority2));
 	}
@@ -71,9 +75,11 @@ public class MagicMarkerAction extends MagicAction {
 		game.setIdentifiers(oldIdentifiers);
 		final MagicPlayer player1=game.getPlayer(0);
 		player1.setLife(oldLife1);
+		player1.setPoison(oldPoison1);
 		player1.setActivationPriority(oldActivationPriority1);
 		final MagicPlayer player2=game.getPlayer(1);
 		player2.setLife(oldLife2);
+		player2.setPoison(oldPoison2);
 		player2.setActivationPriority(oldActivationPriority2);
 	}
 }

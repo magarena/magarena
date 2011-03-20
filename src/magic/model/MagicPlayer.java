@@ -26,6 +26,7 @@ public class MagicPlayer implements MagicTarget {
 	private int stateFlags=0;
 	private int index;
 	private int life;
+	private int poison;
 	private int preventDamage=0;
 	private int extraTurns=0;
 	private int attackers=0;
@@ -48,6 +49,7 @@ public class MagicPlayer implements MagicTarget {
 		if (index!=0) {
 			life+=GeneralConfig.getInstance().getExtraLife();
 		}
+		poison=0;
 		cardCounter=new MagicCardCounter();
 		activationMap=new MagicActivationMap();
 		builderCost=new MagicBuilderManaCost();
@@ -73,6 +75,7 @@ public class MagicPlayer implements MagicTarget {
 		stateFlags=sourcePlayer.stateFlags;
 		index=sourcePlayer.index;
 		life=sourcePlayer.life;
+		poison=sourcePlayer.poison;
 		preventDamage=sourcePlayer.preventDamage;
 		extraTurns=sourcePlayer.extraTurns;
 		attackers=sourcePlayer.attackers;
@@ -97,6 +100,7 @@ public class MagicPlayer implements MagicTarget {
 	public long getPlayerId(final long id) {
 
 		long playerId=id*ID_FACTOR+life;
+		playerId=playerId*ID_FACTOR+poison;
 		playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
 		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
 		playerId=playerId*ID_FACTOR+hand.getCardsId();
@@ -161,6 +165,16 @@ public class MagicPlayer implements MagicTarget {
 		return life;
 	}
 	
+	public void setPoison(final int poison) {
+		
+		this.poison=poison;
+	}
+	
+	public int getPoison() {
+		
+		return poison;
+	}
+	
 	public boolean canLose() {
 		
 		return getCount(MagicStaticLocalVariable.platinumAngel)==0;
@@ -173,6 +187,15 @@ public class MagicPlayer implements MagicTarget {
 			return life;
 		}
 		return 1;
+	}
+	
+	/** Poison to use when determining if a player has lost. */
+	public int getLosingPoison() {
+		
+		if (poison<MagicGame.LOSING_POISON||canLose()) {
+			return poison;
+		}
+		return MagicGame.LOSING_POISON-1;
 	}
 	
 	public void changeExtraTurns(final int amount) {

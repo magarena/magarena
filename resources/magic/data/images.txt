@@ -696,7 +696,6 @@ Foot Soldiers.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=8
 Force of Savagery.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130713&type=card
 Frost Ogre.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=74589&type=card
 Fugitive Wizard.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=134762&type=card
-Fusion Elemental.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=179443&type=card
 Gaea's Skyfolk.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=26757&type=card
 Galina's Knight.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23158&type=card
 Game-Trail Changeling.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=143253&type=card
@@ -939,6 +938,12 @@ Recoil.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23154&ty
 Ezuri's Archers.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194092&type=card
 Gratuitous Violence.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39666&type=card
 Rally the Forces.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213767&type=card
+Septic Rats.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213748&type=card
+Phyrexian Crusader.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213724&type=card
+Phyrexian Vatmother.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214074&type=card
+Plague Stinger.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208261&type=card
+Skithiryx, the Blight Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=212249&type=card
+Phyrexian Juggernaut.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214038&type=card
 >hqcards
 Absorb.jpg;http://magiccards.info/scans/en/in/226.jpg
 Accorder Paladin.jpg;http://magiccards.info/scans/en/mbs/1.jpg
@@ -1552,7 +1557,6 @@ Foot Soldiers.jpg;http://magiccards.info/scans/en/9e/14.jpg
 Force of Savagery.jpg;http://magiccards.info/scans/en/fut/126.jpg
 Frost Ogre.jpg;http://magiccards.info/scans/en/bok/102.jpg
 Fugitive Wizard.jpg;http://magiccards.info/scans/en/10e/86.jpg
-Fusion Elemental.jpg;http://magiccards.info/scans/en/cfx/107.jpg
 Gaea's Skyfolk.jpg;http://magiccards.info/scans/en/ap/101.jpg
 Galina's Knight.jpg;http://magiccards.info/scans/en/in/248.jpg
 Game-Trail Changeling.jpg;http://magiccards.info/scans/en/mt/123.jpg
@@ -1795,3 +1799,9 @@ Recoil.jpg;http://magiccards.info/scans/en/in/264.jpg
 Ezuri's Archers.jpg;http://magiccards.info/scans/en/som/120.jpg
 Gratuitous Violence.jpg;http://magiccards.info/scans/en/on/212.jpg
 Rally the Forces.jpg;http://magiccards.info/scans/en/mbs/73.jpg
+Septic Rats.jpg;http://magiccards.info/scans/en/mbs/55.jpg
+Phyrexian Crusader.jpg;http://magiccards.info/scans/en/mbs/50.jpg
+Phyrexian Vatmother.jpg;http://magiccards.info/scans/en/mbs/52.jpg
+Plague Stinger.jpg;http://magiccards.info/scans/en/som/75.jpg
+Skithiryx, the Blight Dragon.jpg;http://magiccards.info/scans/en/som/79.jpg
+Phyrexian Juggernaut.jpg;http://magiccards.info/scans/en/mbs/121.jpg

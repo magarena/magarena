@@ -46,6 +46,7 @@ import magic.model.trigger.MagicTriggerType;
 public class MagicGame {
 
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
+	public static final int LOSING_POISON=10;
 	
 	private static final long ID_FACTOR=13;
 	
@@ -743,6 +744,10 @@ public class MagicGame {
 		final MagicPlayer lowestLifePlayer=(players[1].getLosingLife()<=players[0].getLosingLife())?players[1]:players[0];
 		if (lowestLifePlayer.getLosingLife()<=0) {
 			doAction(new MagicLoseGameAction(lowestLifePlayer,MagicLoseGameAction.LIFE_REASON));			
+		}
+		final MagicPlayer highestPoisonPlayer=(players[1].getLosingPoison()>=players[0].getLosingPoison())?players[1]:players[0];
+		if (highestPoisonPlayer.getLosingPoison()>=LOSING_POISON) {
+			doAction(new MagicLoseGameAction(highestPoisonPlayer,MagicLoseGameAction.POISON_REASON));
 		}
 	}
 

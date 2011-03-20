@@ -51,6 +51,7 @@ import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicExileEvent;
+import magic.model.event.MagicGainActivation;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPayLifeEvent;
 import magic.model.event.MagicPayManaCostEvent;
@@ -1544,6 +1545,11 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
+	private static final MagicPermanentActivation SKITHIRYX1=new MagicGainActivation(
+			"Skithiryx, the Blight Dragon",MagicManaCost.BLACK,MagicAbility.Haste,new MagicActivationHints(MagicTiming.FirstMain,false,1));
+	
+	private static final MagicPermanentActivation SKITHIRYX2=new MagicRegenerationActivation("Skithiryx, the Blight Dragon",MagicManaCost.BLACK_BLACK);
+	
 	private static final MagicPermanentActivation SPHINX_OF_MAGOSI=new MagicPermanentActivation(
 			"Sphinx of Magosi",new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},new MagicActivationHints(MagicTiming.Draw)) {
 
@@ -2594,6 +2600,8 @@ public class PermanentActivationDefinitions {
 		SILKBIND_FAERIE,
 		SKELETAL_VAMPIRE1,
 		SKELETAL_VAMPIRE2,
+		SKITHIRYX1,
+		SKITHIRYX2,
 		SPHINX_OF_MAGOSI,
 		SPIKETAIL_HATCHLING,
 		SPIRITMONGER1,

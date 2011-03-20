@@ -19,6 +19,8 @@ public class ArtificialScoringSystem {
 	
 	private static final int LIFE_SCORES[]={0,1000,2000,3000,4000, 4500,5000,5500,6000,6500, 7000,7400,7800,8200,8600, 9000,9200,9400,9600,9800, 10000};
 	private static final int MAX_LIFE=LIFE_SCORES.length-1;
+	private static final int POISON_SCORES[]={5000,4700,4400,4100,3800,3400,3000,2500,2000,1000,0};
+	private static final int MAX_POISON=10;
 	private static final int LIFE_ABOVE_MULTIPLIER=100;
 	private static final int UNKNOWN_CARD_SCORE=300;
 	private static final int PERMANENT_SCORE=300;
@@ -102,6 +104,14 @@ public class ArtificialScoringSystem {
 		} else {
 			return 0;
 		}
+	}
+	
+	public static int getPoisonScore(final int poison) {
+		
+		if (poison>MAX_POISON) {
+			return POISON_SCORES[MAX_POISON];
+		}
+		return POISON_SCORES[poison];
 	}
 	
 	public static int getManaScore(final int amount) {

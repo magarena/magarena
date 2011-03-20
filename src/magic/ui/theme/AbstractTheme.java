@@ -37,6 +37,7 @@ public abstract class AbstractTheme implements Theme {
 		
 		addToTheme(ICON_LIFE,IconImages.LIFE);
 		addToTheme(ICON_PREVENT,IconImages.PREVENT2);
+		addToTheme(ICON_POISON,IconImages.POISON);
 		addToTheme(ICON_LAND,IconImages.LAND2);
 		addToTheme(ICON_HAND,IconImages.HAND2);
 		addToTheme(ICON_LIBRARY,IconImages.LIBRARY2);

@@ -76,7 +76,7 @@ public class MagicDealDamageAction extends MagicAction {
 			if (damage.hasNoRegeneration()) {
 				game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.CannotBeRegenerated,true));
 			}
-			if (source.hasAbility(game,MagicAbility.Wither)) {
+			if (source.hasAbility(game,MagicAbility.Wither)||source.hasAbility(game,MagicAbility.Infect)) {
 				game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.MinusOne,dealtAmount,true));
 			} else {
 				oldDamage=targetPermanent.getDamage();
@@ -86,7 +86,11 @@ public class MagicDealDamageAction extends MagicAction {
 				game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.Destroyed,true));
 			}
 		} else if (target.isPlayer()) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)target,-dealtAmount));
+			if (source.hasAbility(game,MagicAbility.Infect)) {
+				game.doAction(new MagicChangePoisonAction((MagicPlayer)target,dealtAmount));
+			} else {
+				game.doAction(new MagicChangeLifeAction((MagicPlayer)target,-dealtAmount));
+			}
 		}
 
 		damage.setDealtAmount(dealtAmount);

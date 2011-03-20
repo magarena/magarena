@@ -16,6 +16,7 @@ public interface Theme {
 
 	public static final String ICON_LIFE="icon_life";
 	public static final String ICON_PREVENT="icon_prevent";
+	public static final String ICON_POISON="icon_poison";
 	public static final String ICON_LAND="icon_land";
 	public static final String ICON_HAND="icon_hand";
 	public static final String ICON_LIBRARY="icon_library";

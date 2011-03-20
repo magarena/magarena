@@ -2957,7 +2957,7 @@ toughness=3
 timing=main
 
 >Serra Angel
-value=3
+value=4
 ability=flying,vigilance
 rarity=3
 type=Creature
@@ -3795,7 +3795,7 @@ toughness=4
 timing=main
 
 >Welkin Tern
-value=1
+value=2
 ability=flying,can't block creatures without flying
 rarity=1
 type=Creature
@@ -3805,7 +3805,7 @@ converted=2
 cost={1}{U}
 power=2
 toughness=1
-timing=fmain
+timing=main
 
 >Wild Griffin
 value=1
@@ -4013,7 +4013,7 @@ ability=battle cry
 timing=main
 
 >Koth's Courier
-value=2
+value=3
 rarity=1
 type=Creature
 subtype=Human,Rogue

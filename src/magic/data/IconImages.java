@@ -61,6 +61,7 @@ public class IconImages {
 	public static final ImageIcon LIFE=loadIcon("life.gif");
 	public static final ImageIcon PREVENT=loadIcon("prevent.gif");
 	public static final ImageIcon PREVENT2=loadIcon("prevent2.gif");
+	public static final ImageIcon POISON=loadIcon("poison.png");
 	public static final ImageIcon HAND=loadIcon("hand.gif");
 	public static final ImageIcon HAND2=loadIcon("hand2.png");
 	public static final ImageIcon LIBRARY=loadIcon("library.gif");

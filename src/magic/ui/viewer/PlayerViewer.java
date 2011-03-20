@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.util.Set;
 
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -33,6 +34,8 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 	private final PlayerAvatarPanel avatarPanel;
 	private final JLabel labels[];
 	private final JPanel labelsPanel;
+	private final ImageIcon preventIcon;
+	private final ImageIcon poisonIcon;
 	
 	public PlayerViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean opponent) {
 		
@@ -72,6 +75,8 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 
 		labels=new JLabel[6];
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+		preventIcon=theme.getIcon(Theme.ICON_PREVENT);
+		poisonIcon=theme.getIcon(Theme.ICON_POISON);
 		final Color foreground=theme.getTextColor();
 		for (int index=0;index<labels.length;index++) {
 
@@ -113,7 +118,8 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 		avatarPanel.setPlayerDefinition(playerInfo.player.getPlayerDefinition());
 		
 		labels[0].setText(""+playerInfo.life);
-		labels[1].setText(""+playerInfo.preventDamage);
+		labels[1].setIcon(playerInfo.poison>0?poisonIcon:preventIcon);
+		labels[1].setText(playerInfo.poison>0?""+playerInfo.poison:""+playerInfo.preventDamage);
 		labels[2].setText(""+playerInfo.lands);
 		labels[3].setText(""+playerInfo.hand.size());
 		labels[4].setText(""+playerInfo.library.size());

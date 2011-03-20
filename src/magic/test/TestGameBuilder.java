@@ -117,18 +117,18 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
-		addToHand(player,"Ezuri's Archers",1);
-		addToHand(player,"Gratuitous Violence",1);
 		addToHand(player,"Lightning Bolt",1);
+		addToHand(player,"Phyrexian Juggernaut",1);
+		addToHand(player,"Septic Rats",1);
+		addToHand(player,"Phyrexian Crusader",1);
+		addToHand(player,"Phyrexian Vatmother",1);
+		addToHand(player,"Plague Stinger",1);
+		addToHand(player,"Skithiryx, the Blight Dragon",1);
 
-		createPermanent(game,player,"Cumber Stone",false,1);
-		createPermanent(game,player,"Cumber Stone",false,1);
 		createPermanent(game,player,"Watchwolf",false,1);
-		createPermanent(game,player,"Rupture Spire",false,8);
+		createPermanent(game,player,"Rupture Spire",false,6);
 		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
-		createPermanent(game,opponent,"Utvara Scalper",false,1);
-		createPermanent(game,opponent,"Crazed Goblin",false,1);
-		createPermanent(game,opponent,"Mogg Fanatic",false,1);
+		createPermanent(game,opponent,"Platinum Angel",false,1);
 
 		return game;
 	}

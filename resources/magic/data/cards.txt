@@ -6015,3 +6015,80 @@ color=r
 converted=3
 cost={2}{R}
 timing=pump
+
+>Septic Rats
+value=3
+rarity=1
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={1}{B}{B}
+power=2
+toughness=2
+ability=infect
+timing=main
+
+>Phyrexian Crusader
+value=4
+rarity=2
+type=Creature
+subtype=Zombie,Knight
+color=b
+converted=3
+cost={1}{B}{B}
+power=2
+toughness=2
+ability=first strike,protection from red,protection from white,infect
+timing=main
+
+>Phyrexian Vatmother
+value=4
+rarity=2
+type=Creature
+subtype=Horror
+color=b
+converted=4
+cost={2}{B}{B}
+power=4
+toughness=5
+ability=infect
+timing=main
+
+>Plague Stinger
+value=2
+rarity=1
+type=Creature
+subtype=Insect,Horror
+color=b
+converted=2
+cost={1}{B}
+power=1
+toughness=1
+ability=flying,infect
+timing=main
+
+>Skithiryx, the Blight Dragon
+value=5
+rarity=3
+type=Legendary,Creature
+subtype=Dragon,Skeleton
+color=b
+converted=5
+cost={3}{B}{B}
+power=4
+toughness=4
+ability=flying,infect
+timing=fmain
+
+>Phyrexian Juggernaut
+value=4
+rarity=3
+type=Artifact,Creature
+subtype=Juggernaut
+converted=6
+cost={6}
+power=5
+toughness=5
+ability=infect,attacks each turn if able
+timing=main

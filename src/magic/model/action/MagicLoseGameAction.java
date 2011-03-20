@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 public class MagicLoseGameAction extends MagicAction {
 
 	public static final String LIFE_REASON="{L} You lose the game.";
+	public static final String POISON_REASON="{L} You are poisoned. You lose the game.";
 	public static final String DRAW_REASON="{L} You attempt to draw from an empty library. You lose the game.";
 	
 	private final MagicPlayer player;

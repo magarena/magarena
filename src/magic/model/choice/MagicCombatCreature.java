@@ -31,7 +31,7 @@ public class MagicCombatCreature {
 		lethalDamage=permanent.getLethalDamage(pt.toughness);
 		flags=permanent.getAllAbilityFlags(game);
 		power=MagicAbility.DoubleStrike.hasAbility(flags)?pt.getPositivePower()*2:pt.getPositivePower();
-		normalDamage=!MagicAbility.Deathtouch.hasAbility(flags)&&!MagicAbility.Wither.hasAbility(flags);
+		normalDamage=!MagicAbility.Deathtouch.hasAbility(flags)&&!MagicAbility.Wither.hasAbility(flags)&&!MagicAbility.Infect.hasAbility(flags);
 	}
 	
 	public MagicCombatCreature(final MagicGame game,final MagicCombatCreature creature) {

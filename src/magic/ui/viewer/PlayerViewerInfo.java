@@ -15,6 +15,7 @@ public class PlayerViewerInfo {
 	public final boolean turn;
 	public final String name;
 	public final int life;
+	public final int poison;
 	public final int preventDamage;
 	public final int lands;
 	public final MagicCardList hand;
@@ -29,6 +30,7 @@ public class PlayerViewerInfo {
 		turn=player==game.getTurnPlayer();
 		name=player.getName();
 		life=player.getLife();
+		poison=player.getPoison();
 		preventDamage=player.getPreventDamage();
 		lands=player.getNrOfPermanentsWithType(MagicType.Land);
 		hand=new MagicCardList(player.getHand());
