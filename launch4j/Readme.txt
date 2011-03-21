@@ -37,6 +37,7 @@ Release 1.9 (March, 2011)
 - added extra settings to themes
 - added support for infect keyword and poison counters
 
+- fixed Solemn Offering, it can now target your own permanents with filter legal targets enabled
 - fixed handing of invalid avatars
 
 Release 1.8 (March 13, 2011)

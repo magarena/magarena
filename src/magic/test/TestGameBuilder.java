@@ -122,10 +122,13 @@ public class TestGameBuilder {
 		addToHand(player,"Blightwidow",1);
 		addToHand(player,"Contagious Nim",1);
 		addToHand(player,"Cystbearer",1);
+		addToHand(player,"Solemn Offering",1);
 
 		createPermanent(game,player,"Watchwolf",false,1);
+		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Rupture Spire",false,6);
 		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
+		createPermanent(game,opponent,"Glorious Anthem",false,1);
 
 		return game;
 	}

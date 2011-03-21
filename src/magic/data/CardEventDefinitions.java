@@ -2605,7 +2605,7 @@ public class CardEventDefinitions {
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,new MagicDestroyTargetPicker(false),
+			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT,new MagicDestroyTargetPicker(false),
 				new Object[]{cardOnStack,player},this,"Destroy target artifact or enchantment$. You gain 4 life.");
 		}
 
