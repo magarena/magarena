@@ -13,13 +13,13 @@ import javax.swing.JPanel;
 import javax.swing.border.Border;
 
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 public class PermanentPanel extends JPanel implements ChoiceViewer {
 
 	private static final long serialVersionUID = 1L;
-
-	private static final Border ATTACHED_BORDER=BorderFactory.createMatteBorder(0,10,0,0,Color.LIGHT_GRAY);
 		
 	private final PermanentButton button;
 	private final List<PermanentButton> linkedButtons;
@@ -36,9 +36,11 @@ public class PermanentPanel extends JPanel implements ChoiceViewer {
 		final SortedSet<PermanentViewerInfo> linked=permanentInfo.linked;
 		if (!linked.isEmpty()) {			
 			
+			final Color attachedColor=ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_SEPARATOR_BACKGROUND);
+			final Border attachedBorder=BorderFactory.createMatteBorder(0,10,0,0,attachedColor);
 			final JPanel attachedPanel=new JPanel();
-			attachedPanel.setLayout(new BoxLayout(attachedPanel,BoxLayout.Y_AXIS));
-			attachedPanel.setBorder(ATTACHED_BORDER);
+			attachedPanel.setLayout(new BoxLayout(attachedPanel,BoxLayout.Y_AXIS));			
+			attachedPanel.setBorder(attachedBorder);
 			for (final PermanentViewerInfo linkedPermanentInfo : linked) {
 
 				final PermanentButton linkedButton=new PermanentButton(linkedPermanentInfo,controller,null,maxWidth-10);

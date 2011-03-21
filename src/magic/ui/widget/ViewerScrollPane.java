@@ -7,6 +7,9 @@ import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+
 public class ViewerScrollPane extends JScrollPane {
 
 	private static final long serialVersionUID = 1L;
@@ -29,6 +32,7 @@ public class ViewerScrollPane extends JScrollPane {
 			contentPanel=new JPanel();
 			contentPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
 			contentPanel.setLayout(new BoxLayout(contentPanel,BoxLayout.Y_AXIS));
+			contentPanel.setBackground(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_VIEWER_BACKGROUND));
 		}
 		return contentPanel;
 	}

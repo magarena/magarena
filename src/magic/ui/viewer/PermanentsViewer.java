@@ -14,6 +14,8 @@ import javax.swing.JPanel;
 import javax.swing.border.Border;
 
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.ViewerScrollPane;
 
@@ -57,8 +59,10 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 		targetViewers.clear();
 		final JPanel contentPanel=viewerPane.getContent();		
 		final JPanel basicLandsPanel=new JPanel(null);
+		basicLandsPanel.setOpaque(false);
 		contentPanel.add(basicLandsPanel);
 
+		final Color separatorColor=ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_SEPARATOR_BACKGROUND);
 		PermanentViewerInfo previousPermanentInfo=null;
 		final SortedSet<PermanentViewerInfo> basicLands=new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
 		for (final PermanentViewerInfo permanentInfo : getPermanents()) {
@@ -71,7 +75,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 			if (previousPermanentInfo!=null&&isSeparated(previousPermanentInfo,permanentInfo)) {
 				final JPanel separatorPanel=new JPanel();
 				separatorPanel.setPreferredSize(SEPARATOR_DIMENSION);
-				separatorPanel.setBackground(Color.LIGHT_GRAY);
+				separatorPanel.setBackground(separatorColor);
 				separatorPanel.setOpaque(true);
 				contentPanel.add(separatorPanel);
 			}

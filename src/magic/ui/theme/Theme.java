@@ -42,6 +42,8 @@ public interface Theme {
 	public static final String COLOR_COMBAT_CHOICE="color_combat_choice";
 	public static final String COLOR_SELECTED_PLAYER="color_selected_player";
 	public static final String COLOR_GAME_BORDER="color_game_border";
+	public static final String COLOR_VIEWER_BACKGROUND="color_viewer_background";
+	public static final String COLOR_SEPARATOR_BACKGROUND="color_separator_background";
 
 	public static final String VALUE_SPACING="value_spacing";
 	public static final String VALUE_BACKGROUND_STRETCH="value_background_stretch";
