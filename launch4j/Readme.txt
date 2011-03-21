@@ -15,17 +15,29 @@ Magarena supports the following keyboard shortcuts :
 - Enter : switch between graphical and text mode
 
 The UI of Magarena can be customized with downloadable themes coming in zip files.
-A theme pack with seven themes can be downloaded on the project page.
+A theme pack with five color themes can be downloaded on the project page.
 The theme pack should be unzipped into the mods folder of the Magarena data folder.
+There are also separate themes like the moon and mystic theme which can be placed directly into the mods folder.
 It is best to restart the application each time after switching to one of these themes in preferences.
 Thanks to epiko for creating the very nice Magarena splash screen and the amazing color themes.
 
-Thanks to singularita for creating the scripts to add 320 additional creature cards to Magarena.
+Thanks to singularita for creating the scripts to add over 300 additional creature cards to Magarena.
 You can play with these cards by selecting the singularita cube in the "New duel" dialog. 
 
 Recommended difficulty level for the best balance of AI speed and strength is the default 6.
 
 Have fun!
+
+Release 1.9 (March, 2011)
+===========
+
+- ubeefx cube (540 cards)
+- singularita cube (860 cards)
+
+- added extra settings to themes
+- added support for infect keyword and poison counters
+
+- fixed handing of invalid avatars
 
 Release 1.8 (March 13, 2011)
 ===========

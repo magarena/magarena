@@ -944,6 +944,11 @@ Phyrexian Vatmother.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiver
 Plague Stinger.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=208261&type=card
 Skithiryx, the Blight Dragon.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=212249&type=card
 Phyrexian Juggernaut.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214038&type=card
+Priests of Norn.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213814&type=card
+Flensermite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213817&type=card
+Blightwidow.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213820&type=card
+Contagious Nim.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194150&type=card
+Cystbearer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205477&type=card
 >hqcards
 Absorb.jpg;http://magiccards.info/scans/en/in/226.jpg
 Accorder Paladin.jpg;http://magiccards.info/scans/en/mbs/1.jpg
@@ -1805,3 +1810,8 @@ Phyrexian Vatmother.jpg;http://magiccards.info/scans/en/mbs/52.jpg
 Plague Stinger.jpg;http://magiccards.info/scans/en/som/75.jpg
 Skithiryx, the Blight Dragon.jpg;http://magiccards.info/scans/en/som/79.jpg
 Phyrexian Juggernaut.jpg;http://magiccards.info/scans/en/mbs/121.jpg
+Priests of Norn.jpg;http://magiccards.info/scans/en/mbs/16.jpg
+Flensermite.jpg;http://magiccards.info/scans/en/mbs/41.jpg
+Blightwidow.jpg;http://magiccards.info/scans/en/mbs/77.jpg
+Contagious Nim.jpg;http://magiccards.info/scans/en/som/58.jpg
+Cystbearer.jpg;http://magiccards.info/scans/en/som/117.jpg

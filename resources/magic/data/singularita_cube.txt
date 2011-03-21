@@ -853,3 +853,8 @@ Phyrexian Vatmother
 Plague Stinger
 Skithiryx, the Blight Dragon
 Phyrexian Juggernaut
+Priests of Norn
+Flensermite
+Blightwidow
+Contagious Nim
+Cystbearer

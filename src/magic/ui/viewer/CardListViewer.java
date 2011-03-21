@@ -16,6 +16,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
@@ -75,6 +76,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 		final MagicCardList cardList=getCardList();
 		
 		final JPanel cardPanel=new JPanel();
+		cardPanel.setBackground(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_VIEWER_BACKGROUND));
 		cardPanel.setBorder(FontsAndBorders.BLACK_BORDER);
 		cardPanel.setLayout(new GridLayout(cardList.size(),1));
 
