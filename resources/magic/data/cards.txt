@@ -5863,6 +5863,7 @@ timing=removal
 
 >Massacre Wurm
 value=5
+removal=2
 rarity=3
 type=Creature
 subtype=Wurm
@@ -5932,6 +5933,7 @@ timing=enchantment
 
 >Smite
 value=3
+removal=3
 rarity=1
 type=Instant
 color=w
@@ -6092,3 +6094,26 @@ power=5
 toughness=5
 ability=infect,attacks each turn if able
 timing=main
+
+>Go for the Throat
+value=3
+removal=4
+rarity=2
+type=Instant
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+
+>Sword of Feast and Famine
+value=5
+rarity=3
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+power=2
+toughness=2
+ability=protection from black,protection from green
+timing=equipment

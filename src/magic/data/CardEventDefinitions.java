@@ -625,6 +625,26 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent GO_FOR_THE_THROAT=new MagicSpellCardEvent("Go for the Throat") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_NONARTIFACT_CREATURE,
+				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,"Destroy target nonartifact creature$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicDestroyAction(creature));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent GRASP_OF_DARKNESS=new MagicSpellCardEvent("Grasp of Darkness") {
 
 		@Override
@@ -3124,6 +3144,7 @@ public class CardEventDefinitions {
 		GHOSTWAY,
 		GIANT_GROWTH,
 		GLORIOUS_CHARGE,
+		GO_FOR_THE_THROAT,
 		GRASP_OF_DARKNESS,
 		HEROES_REUNION,
 		HIDEOUS_END,

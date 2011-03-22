@@ -949,6 +949,8 @@ Flensermite.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213
 Blightwidow.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213820&type=card
 Contagious Nim.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=194150&type=card
 Cystbearer.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205477&type=card
+Go for the Throat.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213799&type=card
+Sword of Feast and Famine.jpg;http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214070&type=card
 >hqcards
 Absorb.jpg;http://magiccards.info/scans/en/in/226.jpg
 Accorder Paladin.jpg;http://magiccards.info/scans/en/mbs/1.jpg
@@ -1815,3 +1817,5 @@ Flensermite.jpg;http://magiccards.info/scans/en/mbs/41.jpg
 Blightwidow.jpg;http://magiccards.info/scans/en/mbs/77.jpg
 Contagious Nim.jpg;http://magiccards.info/scans/en/som/58.jpg
 Cystbearer.jpg;http://magiccards.info/scans/en/som/117.jpg
+Go for the Throat.jpg;http://magiccards.info/scans/en/mbs/43.jpg
+Sword of Feast and Famine.jpg;http://magiccards.info/scans/en/mbs/138.jpg

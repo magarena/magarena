@@ -123,6 +123,7 @@ public class TestGameBuilder {
 		addToHand(player,"Cystbearer",1);
 		addToHand(player,"Go for the Throat",1);
 		addToHand(player,"Sword of Feast and Famine",1);
+		addToHand(opponent,"Island",3);
 
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
