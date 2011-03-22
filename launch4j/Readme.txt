@@ -28,17 +28,18 @@ Recommended difficulty level for the best balance of AI speed and strength is th
 
 Have fun!
 
-Release 1.9 (March, 2011)
+Release 1.9 (March 22, 2011)
 ===========
 
-- ubeefx cube (540 cards)
-- singularita cube (860 cards)
+- ubeefx cube (542 cards)
+- singularita cube (862 cards)
 
-- added extra settings to themes
+- when a folder Magarena is present in the same folder as where Magarena is started, that is used as the Magarena data folder
+- added extra settings to themes (see customizing Wiki page)
 - added support for infect keyword and poison counters
 
 - fixed Solemn Offering, it can now target your own permanents with filter legal targets enabled
-- fixed handing of invalid avatars
+- fixed handling of invalid avatars
 
 Release 1.8 (March 13, 2011)
 ===========

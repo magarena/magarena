@@ -18,7 +18,19 @@ public class MagicMain {
 	
 	private static final String GAME_PATH="Magarena";
 	private static final String MODS_PATH="mods";
-		
+
+	private static final String gamePath;
+	
+	static {
+		final File dataDirFile=new File(System.getProperty("user.dir"),GAME_PATH);
+		if (dataDirFile.exists()&&dataDirFile.isDirectory()) {
+			gamePath=dataDirFile.toString();
+		} else {		
+			gamePath=System.getProperty("user.home")+File.separatorChar+GAME_PATH;		
+		}
+		System.out.println("Data folder : "+gamePath);
+	}
+	
 	public static void main(String args[]) {		
 
 		initializeCards();
@@ -27,7 +39,7 @@ public class MagicMain {
 	
 	public static String getGamePath() {
 
-		return System.getProperty("user.home")+File.separatorChar+GAME_PATH;
+		return gamePath;
 	}
 	
 	public static String getModsPath() {
