@@ -33,7 +33,7 @@ Release 1.10 (April 1, 2011)
 ============
 
 - ubeefx cube (544 cards)
-- singularity cube (865 cards)
+- singularita cube (865 cards)
 
 - redesigned card image loading (low quality images are no longer needed)
 - high quality random card at startup if enabled in settings
