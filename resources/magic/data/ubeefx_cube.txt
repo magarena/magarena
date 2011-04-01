@@ -540,3 +540,5 @@ Skithiryx, the Blight Dragon
 Phyrexian Juggernaut
 Go for the Throat
 Sword of Feast and Famine
+Suture Priest
+Elesh Norn, Grand Cenobite

@@ -117,20 +117,19 @@ public class TestGameBuilder {
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
-		addToHand(player,"Flensermite",1);
-		addToHand(player,"Blightwidow",1);
-		addToHand(player,"Contagious Nim",1);
-		addToHand(player,"Cystbearer",1);
+		addToHand(opponent,"Zephyr Sprite",3);
 		addToHand(player,"Go for the Throat",1);
-		addToHand(player,"Sword of Feast and Famine",1);
-		addToHand(opponent,"Island",3);
+		addToHand(player,"Cumber Stone",1);
+		addToHand(player,"Phyrexian Digester",1);
+		addToHand(player,"Suture Priest",1);
+		addToHand(player,"Elesh Norn, Grand Cenobite",1);
 
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
-		createPermanent(game,player,"Rupture Spire",false,6);
+		createPermanent(game,player,"Rupture Spire",false,7);
 		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
-		createPermanent(game,opponent,"Memnite",false,1);
-
+		createPermanent(game,opponent,"Suture Priest",false,1);
+		
 		return game;
 	}
 }

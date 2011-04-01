@@ -860,3 +860,6 @@ Contagious Nim
 Cystbearer
 Go for the Throat
 Sword of Feast and Famine
+Phyrexian Digester
+Suture Priest
+Elesh Norn, Grand Cenobite

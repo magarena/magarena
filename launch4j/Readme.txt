@@ -5,6 +5,7 @@ There must be a Java Runtime 6 (java.com) installed on your computer to play.
 Installing on Windows is quite simple, just put Magarena.exe on your desktop and execute.
 To obtain the Java jar, Magarena.exe can simply be renamed to Magarena.jar because it is also an archive.
 To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
+If a Magarena folder is present where the program is executed, that folder is used as data folder.
 
 Do not forget to execute "Download images" in the Arena menu the first time you run a new release.
 Otherwise you will see a lot of question marks. The application stops automatically when downloading is finished.
@@ -28,13 +29,22 @@ Recommended difficulty level for the best balance of AI speed and strength is th
 
 Have fun!
 
+Release 1.10 (April 1, 2011)
+============
+
+- ubeefx cube (544 cards)
+- singularity cube (865 cards)
+
+- redesigned card image loading (low quality images are no longer needed)
+- high quality random card at startup if enabled in settings
+
 Release 1.9 (March 22, 2011)
 ===========
 
 - ubeefx cube (542 cards)
 - singularita cube (862 cards)
 
-- when a folder Magarena is present in the same folder as where Magarena is started, that is used as the Magarena data folder
+- if a folder Magarena is present in the same folder as where Magarena is started, that is used as the Magarena data folder
 - added extra settings to themes (see customizing Wiki page)
 - added support for infect keyword and poison counters
 

@@ -951,3 +951,6 @@ Contagious Nim.jpg;http://magiccards.info/scans/en/som/58.jpg
 Cystbearer.jpg;http://magiccards.info/scans/en/som/117.jpg
 Go for the Throat.jpg;http://magiccards.info/scans/en/mbs/43.jpg
 Sword of Feast and Famine.jpg;http://magiccards.info/scans/en/mbs/138.jpg
+Phyrexian Digester.jpg;http://magiccards.info/scans/en/mbs/120.jpg
+Suture Priest.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=115363&d=1297746104
+Elesh Norn, Grand Cenobite.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=116363&stc=1&d=1301374681

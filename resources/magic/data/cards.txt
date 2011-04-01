@@ -6117,3 +6117,28 @@ power=2
 toughness=2
 ability=protection from black,protection from green
 timing=equipment
+
+>Suture Priest
+value=2
+rarity=2
+type=Creature
+subtype=Cleric
+color=w
+converted=2
+cost={1}{W}
+power=1
+toughness=1
+timing=fmain
+
+>Elesh Norn, Grand Cenobite
+value=5
+rarity=3
+type=Legendary,Creature
+subtype=Praetor
+color=w
+converted=7
+cost={5}{W}{W}
+power=4
+toughness=7
+ability=vigilance
+timing=fmain

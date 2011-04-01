@@ -27,6 +27,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 	private static int cumberStone;
 	private static int deathbringerLiege;
 	private static int eldraziMonument;
+	private static int eleshNorn;
 	private static int firesOfYavimaya;
 	private static int glenElendraLiege;
 	private static int gloriousAnthem;
@@ -61,6 +62,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 	public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 
 		final MagicPlayer controller=permanent.getController();
+		final MagicPlayer opponent=game.getOpponent(controller);
 
 		// Power and toughness change.
 		if (getOtherCount(godheadOfAwe,permanent,game.getCount(godheadOfAwe))>0) {
@@ -82,7 +84,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 				pt.toughness+=count*2;
 			}
 		}
-		pt.power-=game.getOpponent(controller).getCount(cumberStone);
+		pt.power-=opponent.getCount(cumberStone);
 		
 		// Power and toughness increase.
 		int both=permanent.getCounters(MagicCounterType.PlusOne)-permanent.getCounters(MagicCounterType.MinusOne);
@@ -97,6 +99,9 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		if (count>0&&permanent.hasSubType(MagicSubType.Goblin)) {
 			both+=getOtherCount(goblinChieftain,permanent,count);
 		}
+		count=controller.getCount(eleshNorn);
+		both+=getOtherCount(eleshNorn,permanent,count)*2;
+		both-=opponent.getCount(eleshNorn)*2;
 	
 		final int colorFlags=permanent.getColorFlags();
 		if (MagicColor.Black.hasColor(colorFlags)) {
@@ -215,6 +220,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		cumberStone=definitions.getCard("Cumber Stone").getIndex();
 		deathbringerLiege=definitions.getCard("Deathbringer Liege").getIndex();
 		eldraziMonument=definitions.getCard("Eldrazi Monument").getIndex();
+		eleshNorn=definitions.getCard("Elesh Norn, Grand Cenobite").getIndex();
 		firesOfYavimaya=definitions.getCard("Fires of Yavimaya").getIndex();
 		glenElendraLiege=definitions.getCard("Glen Elendra Liege").getIndex();
 		gloriousAnthem=definitions.getCard("Glorious Anthem").getIndex();
