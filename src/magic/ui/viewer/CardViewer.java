@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
-import magic.data.DefaultCardImagesProvider;
+import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.model.MagicCardDefinition;
@@ -24,15 +24,17 @@ public class CardViewer extends JPanel implements DelayedViewer {
 	private MagicCardDefinition currentCardDefinition=null;
 	private int currentIndex=0;
 	private boolean image;
+	private boolean opaque;
 	
-	public CardViewer(final boolean image,final String title) {
+	public CardViewer(final String title,final boolean image,final boolean opaque) {
 
 		this.image=image;
+		this.opaque=opaque;
 		
 		this.setLayout(new BorderLayout());
 		this.setOpaque(false);
 
-		if (image) {
+		if (title==null) {
 			setBorder(FontsAndBorders.WHITE_BORDER);
 		} else {
 			final TitleBar titleBar=new TitleBar(title);
@@ -44,21 +46,19 @@ public class CardViewer extends JPanel implements DelayedViewer {
 		
 		setCard(MagicCardDefinition.EMPTY,0);
 	}
-	
-	public CardViewer(final boolean image) {
 		
-		this(image,"Card");
-	}
-	
 	public void setCard(final MagicCardDefinition cardDefinition,final int index) {
 
 		if (cardDefinition!=currentCardDefinition||index!=currentIndex) {
 			currentCardDefinition=cardDefinition;
 			currentIndex=index;
 			final BufferedImage cardImage;
+			float opacity=1.0f;
 			if (image&&GeneralConfig.getInstance().isHighQuality()) {
-				final float opacity=((float)ThemeFactory.getInstance().getCurrentTheme().getValue(Theme.VALUE_POPUP_OPACITY))/100.0f;
-				final BufferedImage sourceImage=HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index);
+				if (!opaque) {
+					opacity=((float)ThemeFactory.getInstance().getCurrentTheme().getValue(Theme.VALUE_POPUP_OPACITY))/100.0f;
+				}
+				final BufferedImage sourceImage=HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,true);
 				final int imageWidth=sourceImage.getWidth(this);
 				final int imageHeight=sourceImage.getHeight(this);
 				cardImage=new BufferedImage(imageWidth,imageHeight,BufferedImage.TYPE_INT_ARGB);
@@ -67,14 +67,14 @@ public class CardViewer extends JPanel implements DelayedViewer {
 				setSize(imageWidth,imageHeight);
 				revalidate();
 			} else {
-				cardImage=DefaultCardImagesProvider.getInstance().getImage(cardDefinition,index);
+				cardImage=HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,false);
 				if (image) {
-					cardPanel.setOpacity(1.0f);
-					setSize(DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT);
+					setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
 					revalidate();
 				}
 			}
-			
+
+			cardPanel.setOpacity(opacity);
 			cardPanel.setImage(cardImage);
 			repaint();
 		}

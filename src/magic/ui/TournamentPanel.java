@@ -49,7 +49,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		setLayout(null);
 		
-		cardViewer=new CardViewer(false);
+		cardViewer=new CardViewer("Card",false,true);
 		add(cardViewer);
 				
 		statsViewer=new DeckStatisticsViewer();

@@ -15,7 +15,7 @@ import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
-import magic.data.DefaultCardImagesProvider;
+import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicGame;
@@ -37,8 +37,8 @@ import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
-import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.TitleBar;
+import magic.ui.widget.ZoneBackgroundLabel;
 
 public class GamePanel extends JPanel {
 
@@ -91,12 +91,12 @@ public class GamePanel extends JPanel {
 		logBookViewer=new LogBookViewer(game.getLogBook());
 		logBookViewer.setVisible(false);
 		
-		cardViewer=new CardViewer(false);
+		cardViewer=new CardViewer("Card",false,true);
 		add(cardViewer);
 		controller.setCardViewer(cardViewer);
 		
-		imageCardViewer=new CardViewer(true);
-		imageCardViewer.setSize(DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT);
+		imageCardViewer=new CardViewer(null,true,false);
+		imageCardViewer.setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
 		imageCardViewer.setVisible(false);
 		controller.setImageCardViewer(imageCardViewer);
 						

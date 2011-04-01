@@ -18,7 +18,8 @@ import java.util.Set;
 
 import javax.swing.JPanel;
 
-import magic.data.DefaultCardImagesProvider;
+import magic.data.CardImagesProvider;
+import magic.data.HighQualityCardImagesProvider;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -147,12 +148,12 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			final MagicCard card=cardList.get(index);
 			final MagicCardDefinition cardDefinition=card.getCardDefinition();
 			final Point point=cardPoints.get(index);
-			final BufferedImage image=DefaultCardImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex());
+			final BufferedImage image=HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex(),false);
 			final int x1=point.x;
 			final int y1=point.y;
 			final int x2=point.x+CARD_WIDTH;
 			final int y2=point.y+CARD_HEIGHT;
-			g.drawImage(image,x1,y1,x2,y2,0,0,DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT,this);
+			g.drawImage(image,x1,y1,x2,y2,0,0,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT,this);
 			if (showInfo) {
 				if (cardDefinition.isLand()) {
 					ImageDrawingUtils.drawManaInfo(g,this,cardDefinition,x1+1,y2-17);

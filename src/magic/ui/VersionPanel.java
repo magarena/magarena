@@ -17,16 +17,15 @@ import magic.data.CardDefinitions;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
-import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.viewer.CardViewer;
-import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.ZoneBackgroundLabel;
 
 public class VersionPanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 		
-	private static final String VERSION = "Magarena 1.9";
+	private static final String VERSION = "Magarena 1.10";
 	private static final String AUTHOR = "by ubeefx";
 	private static final String WEB = "http://magarena.dyndns.org";
 	private static final String SPACING = "   ";
@@ -58,11 +57,10 @@ public class VersionPanel extends JPanel {
 		logoLabel.setSize(logoIcon.getIconWidth(),logoIcon.getIconHeight());
 		versionLabel.setSize(logoIcon.getIconWidth(),20);
 				
-		cardViewer=new CardViewer(false,"Random Card");
+		cardViewer=new CardViewer(null,true,true);
 		final List<MagicCardDefinition> spellCards=CardDefinitions.getInstance().getSpellCards();
 		final int index=MagicRandom.nextInt(spellCards.size());
 		cardViewer.setCard(spellCards.get(index),0);
-		cardViewer.setSize(DefaultResolutionProfile.CARD_VIEWER_WIDTH,DefaultResolutionProfile.CARD_VIEWER_HEIGHT);
 		
 		add(cardViewer);
 		add(versionLabel);

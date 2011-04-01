@@ -66,7 +66,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		setLayout(null);
 		
-		cardViewer=new CardViewer(false);
+		cardViewer=new CardViewer("Card",false,true);
 		cardViewer.setSize(CARD_WIDTH,CARD_HEIGHT);		
 		cardViewer.setCard(null,0);
 		add(cardViewer);

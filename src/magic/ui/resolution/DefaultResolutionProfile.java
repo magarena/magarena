@@ -3,7 +3,7 @@ package magic.ui.resolution;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 
-import magic.data.DefaultCardImagesProvider;
+import magic.data.CardImagesProvider;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
@@ -16,8 +16,8 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 	public static final int DECK_STATISTICS_VIEWER_HEIGHT=200;
 	public static final int DECK_STRENGTH_VIEWER_HEIGHT=200;
 	public static final int PLAY_BUTTON_HEIGHT=50;
-	public static final int CARD_VIEWER_WIDTH=DefaultCardImagesProvider.CARD_WIDTH;
-	public static final int CARD_VIEWER_HEIGHT=DefaultCardImagesProvider.CARD_HEIGHT+20;
+	public static final int CARD_VIEWER_WIDTH=CardImagesProvider.CARD_WIDTH;
+	public static final int CARD_VIEWER_HEIGHT=CardImagesProvider.CARD_HEIGHT+20;
 	public static final int PLAYER_VIEWER_WIDTH=300;
 	public static final int PLAYER_VIEWER_HEIGHT=154;
 	public static final int PLAYER_VIEWER_HEIGHT_SMALL=80;

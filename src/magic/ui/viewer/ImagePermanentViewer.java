@@ -19,7 +19,8 @@ import java.util.List;
 
 import javax.swing.JPanel;
 
-import magic.data.DefaultCardImagesProvider;
+import magic.data.CardImagesProvider;
+import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -125,13 +126,13 @@ public class ImagePermanentViewer extends JPanel {
 			final int y=linkedInfo.lowered?LOGICAL_Y_MARGIN:0;
 			final Rectangle rect;
 			if (linkedInfo.tapped) {
-				width=Math.max(width,x+DefaultCardImagesProvider.CARD_HEIGHT);
-				height=Math.max(height,y+DefaultCardImagesProvider.CARD_WIDTH);			
-				rect=new Rectangle(x,y,DefaultCardImagesProvider.CARD_HEIGHT,DefaultCardImagesProvider.CARD_WIDTH);
+				width=Math.max(width,x+CardImagesProvider.CARD_HEIGHT);
+				height=Math.max(height,y+CardImagesProvider.CARD_WIDTH);			
+				rect=new Rectangle(x,y,CardImagesProvider.CARD_HEIGHT,CardImagesProvider.CARD_WIDTH);
 			} else {
-				width=Math.max(width,x+DefaultCardImagesProvider.CARD_WIDTH);
-				height=Math.max(height,y+DefaultCardImagesProvider.CARD_HEIGHT);							
-				rect=new Rectangle(x,y,DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT);
+				width=Math.max(width,x+CardImagesProvider.CARD_WIDTH);
+				height=Math.max(height,y+CardImagesProvider.CARD_HEIGHT);							
+				rect=new Rectangle(x,y,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
 			}
 			linkedLogicalRectangles.add(rect);
 		}
@@ -204,7 +205,7 @@ public class ImagePermanentViewer extends JPanel {
 		for (int index=0;index<linkedScreenRectangles.size();index++) {
 
 			final PermanentViewerInfo linkedInfo=linkedInfos.get(index);
-			final BufferedImage image=DefaultCardImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index);
+			final BufferedImage image=HighQualityCardImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
 			final Rectangle linkedRect=linkedScreenRectangles.get(index);
 			final int x1=linkedRect.x;
 			final int y1=linkedRect.y;
@@ -213,15 +214,15 @@ public class ImagePermanentViewer extends JPanel {
 
 			if (linkedInfo.tapped) {
 				final AffineTransform transform=new AffineTransform();
-				final float scale=((float)linkedRect.width)/DefaultCardImagesProvider.CARD_HEIGHT;
+				final float scale=((float)linkedRect.width)/CardImagesProvider.CARD_HEIGHT;
 				transform.translate(x1,y1);
 				transform.scale(scale,scale);			
-				transform.translate(DefaultCardImagesProvider.CARD_HEIGHT/2,DefaultCardImagesProvider.CARD_WIDTH/2);
+				transform.translate(CardImagesProvider.CARD_HEIGHT/2,CardImagesProvider.CARD_WIDTH/2);
 				transform.rotate(Math.PI/2);
-				transform.translate(-DefaultCardImagesProvider.CARD_WIDTH/2,-DefaultCardImagesProvider.CARD_HEIGHT/2);
+				transform.translate(-CardImagesProvider.CARD_WIDTH/2,-CardImagesProvider.CARD_HEIGHT/2);
 				g2d.drawImage(image,transform,this);
 			} else {
-				g.drawImage(image,x1,y1,x2,y2,0,0,DefaultCardImagesProvider.CARD_WIDTH,DefaultCardImagesProvider.CARD_HEIGHT,this);
+				g.drawImage(image,x1,y1,x2,y2,0,0,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT,this);
 			}
 
 			int ax=x1+1;

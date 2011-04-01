@@ -1,5 +1,6 @@
 package magic.data;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,14 +18,16 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	
 	private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
 	
-	private static final int MAX_IMAGES=50;
+	private static final int MAX_IMAGES=100;
 
-	private final Map<String,BufferedImage> imagesMap;
+	private final Map<String,BufferedImage> lowImagesMap;
+	private final Map<String,BufferedImage> highImagesMap;
 	private final LinkedList<String> retrievedList;
 	
 	public HighQualityCardImagesProvider() {
-	
-		imagesMap=new HashMap<String,BufferedImage>();
+
+		lowImagesMap=new HashMap<String,BufferedImage>();
+		highImagesMap=new HashMap<String,BufferedImage>();
 		retrievedList=new LinkedList<String>();
 	}
 	
@@ -52,22 +55,37 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	}
 	
 	@Override
-	public BufferedImage getImage(final MagicCardDefinition cardDefinition,final int index) {
+	public BufferedImage getImage(final MagicCardDefinition cardDefinition,final int index,final boolean high) {
 
+		if (cardDefinition==null) {
+			return IconImages.MISSING;
+		}
 		final String filename=getFilename(cardDefinition,index);
-		BufferedImage image=imagesMap.get(filename);
+		final Map<String,BufferedImage> map=high?highImagesMap:lowImagesMap;
+		BufferedImage image=map.get(filename);
 		if (image!=null) {
 			retrievedList.remove(filename);
 			retrievedList.addLast(filename);
 			return image;
 		}
 		if (retrievedList.size()>=MAX_IMAGES) {
-			imagesMap.remove(retrievedList.removeFirst());
+			final String first=retrievedList.removeFirst();
+			lowImagesMap.remove(first);
+			highImagesMap.remove(first);
 		}
 		image=loadCardImage(filename);
-		imagesMap.put(filename,image);
-		retrievedList.addLast(filename);		
-		return image;
+		BufferedImage lowImage;
+		if (image==IconImages.MISSING) {
+			lowImage=image;
+		} else {
+			final Image scaledImage=image.getScaledInstance(CARD_WIDTH,CARD_HEIGHT,Image.SCALE_SMOOTH);
+			lowImage=new BufferedImage(CARD_WIDTH,CARD_HEIGHT,BufferedImage.TYPE_INT_RGB);
+			lowImage.getGraphics().drawImage(scaledImage,0,0,null);
+		}
+		lowImagesMap.put(filename,lowImage);
+		highImagesMap.put(filename,image);
+		retrievedList.addLast(filename);
+		return high?image:lowImage;
 	}
 	
 	public static CardImagesProvider getInstance() {
