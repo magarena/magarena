@@ -6141,4 +6141,5 @@ cost={5}{W}{W}
 power=4
 toughness=7
 ability=vigilance
+static=all
 timing=fmain
