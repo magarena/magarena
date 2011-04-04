@@ -16,6 +16,8 @@ import magic.data.TournamentConfig;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+import magic.ai.MagicAI;
+import magic.ai.MagicAIImpl;
 
 public class MagicTournament {
 			
@@ -28,6 +30,7 @@ public class MagicTournament {
 	
 	private final TournamentConfig configuration;
 	private MagicPlayerDefinition playerDefinitions[];
+	private MagicAI ais[] = {MagicAIImpl.DEFAULT.getAI(), MagicAIImpl.DEFAULT.getAI()};
 	private int opponentIndex;
 	private int gameNr;
 	private int gamesPlayed;
@@ -96,6 +99,15 @@ public class MagicTournament {
 		
 		return startPlayer;
 	}
+
+    public void setAIs(MagicAI ai1, MagicAI ai2) {
+        ais[0] = ai1;
+        ais[1] = ai2;
+    }
+
+    public MagicAI[] getAIs() {
+        return ais;
+    }
 	
 	public void setDifficulty(final int difficulty) {
 		

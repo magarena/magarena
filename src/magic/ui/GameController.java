@@ -12,12 +12,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
-import magic.ai.ArtificialWorkerPool;
+import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.choice.MagicChoice;
 import magic.model.event.MagicEvent;
@@ -325,13 +326,15 @@ public class GameController {
 	}
 
 	private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
-
 		if (!testMode) {
 			disableActionButton(true);
 			showMessage(event.getSource(),event.getChoiceDescription());
 		}
-		final ArtificialWorkerPool aiThreadPool=new ArtificialWorkerPool(game,event.getPlayer());
-		final Object choiceResults[]=aiThreadPool.findNextEventChoiceResults();
+
+		//dynamically get the AI based on the player's index
+		final MagicPlayer player = event.getPlayer();
+		final MagicAI ai = game.getTournament().getAIs()[player.getIndex()];
+		final Object choiceResults[]=ai.findNextEventChoiceResults(game, player);
 		return choiceResults;
 	}
 
