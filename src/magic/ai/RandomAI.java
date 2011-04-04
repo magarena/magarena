@@ -1,13 +1,10 @@
 package magic.ai;
 
-import java.util.Random;
-import java.util.Arrays;
-import java.util.List;
-import java.util.LinkedList;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 import magic.model.MagicGame;
-import magic.model.phase.MagicPhase;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 
@@ -27,8 +24,6 @@ public class RandomAI implements MagicAI {
             final MagicGame game, 
             final MagicPlayer scorePlayer) {
 
-        long time=System.currentTimeMillis();
-
         //get a list of choices
         MagicGame choiceGame = new MagicGame(game, scorePlayer);
         final MagicEvent event=choiceGame.getNextEvent();
@@ -40,7 +35,7 @@ public class RandomAI implements MagicAI {
       
         if (size == 0) {
             log(info + " NO CHOICE");
-            System.exit(1);
+            // System.exit(1);
             return null;
         } else { //size >= 1
             //build a list of artificial choice results

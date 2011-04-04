@@ -61,9 +61,10 @@ function getValueByMC(node)
 */
 
 //AI using Monte Carlo Tree Search
+@SuppressWarnings("unused")
 public class MCTSAI implements MagicAI {
     
-    private static final int MaxSim = 100;
+	private static final int MaxSim = 100;
     private static final boolean LOGGING=true;
     private MagicPlayer scorePlayer = null;
 

@@ -603,7 +603,7 @@ Wurmcoil Engine.jpg;http://magiccards.info/scans/en/som/223.jpg
 Zealous Persecution.jpg;http://magiccards.info/scans/en/arb/85.jpg
 Zephyr Sprite.jpg;http://magiccards.info/scans/en/m10/82.jpg
 Zombify.jpg;http://magiccards.info/scans/en/arc/29.jpg
-Air Elemental.jpg;http://magiccards.info/scans/en/dpa/1.jpg
+Air Elemental.jpg;http://magiccards.info/scans/en/jvc/13.jpg
 Alpha Myr.jpg;http://magiccards.info/scans/en/mi/142.jpg
 Alpha Tyrranax.jpg;http://magiccards.info/scans/en/som/109.jpg
 Anaba Bodyguard.jpg;http://magiccards.info/scans/en/10e/187.jpg
@@ -677,13 +677,13 @@ Dragonstalker.jpg;http://magiccards.info/scans/en/sc/11.jpg
 Dreg Reaver.jpg;http://magiccards.info/scans/en/ala/73.jpg
 Dross Crocodile.jpg;http://magiccards.info/scans/en/10e/138.jpg
 Dross Prowler.jpg;http://magiccards.info/scans/en/mi/64.jpg
-Dusk Imp.jpg;http://magiccards.info/scans/en/dpa/23.jpg
+Dusk Imp.jpg;http://magiccards.info/scans/en/dvd/34.jpg
 Duskdale Wurm.jpg;http://magiccards.info/scans/en/dpa/58.jpg
 Dwarven Grunt.jpg;http://magiccards.info/scans/en/od/185.jpg
 Eager Cadet.jpg;http://magiccards.info/scans/en/9eb/1.jpg
 Earth Elemental.jpg;http://magiccards.info/scans/en/dpa/42.jpg
 Elvish Archers.jpg;http://magiccards.info/scans/en/7e/239.jpg
-Elvish Warrior.jpg;http://magiccards.info/scans/en/dpa/64.jpg
+Elvish Warrior.jpg;http://magiccards.info/scans/en/mt/120.jpg
 Emerald Oryx.jpg;http://magiccards.info/scans/en/m10/179.jpg
 Enormous Baloth.jpg;http://magiccards.info/scans/en/m10/180.jpg
 Esper Cormorants.jpg;http://magiccards.info/scans/en/cfx/105.jpg
@@ -846,7 +846,7 @@ Shivan Zombie.jpg;http://magiccards.info/scans/en/in/271.jpg
 Siege Mastodon.jpg;http://magiccards.info/scans/en/m11/29.jpg
 Sigiled Behemoth.jpg;http://magiccards.info/scans/en/arb/79.jpg
 Silver Knight.jpg;http://magiccards.info/scans/en/sc/23.jpg
-Silverback Ape.jpg;http://magiccards.info/scans/en/st/141.jpg
+Silverback Ape.jpg;http://magiccards.info/scans/en/8eb/7.jpg
 Silvercoat Lion.jpg;http://magiccards.info/scans/en/m11/31.jpg
 Sky Ruin Drake.jpg;http://magiccards.info/scans/en/zen/66.jpg
 Skyknight Legionnaire.jpg;http://magiccards.info/scans/en/rav/232.jpg
@@ -887,7 +887,7 @@ Valeron Outlander.jpg;http://magiccards.info/scans/en/cfx/130.jpg
 Valiant Guard.jpg;http://magiccards.info/scans/en/cfx/19.jpg
 Vastwood Gorger.jpg;http://magiccards.info/scans/en/zen/192.jpg
 Venser's Sliver.jpg;http://magiccards.info/scans/en/ts/267.jpg
-Veteran Cavalier.jpg;http://magiccards.info/scans/en/st/30.jpg
+Veteran Cavalier.jpg;http://magiccards.info/scans/en/9e/52.jpg
 Viashino Spearhunter.jpg;http://magiccards.info/scans/en/m10/161.jpg
 Vizzerdrix.jpg;http://magiccards.info/scans/en/9eb/7.jpg
 Vodalian Zombie.jpg;http://magiccards.info/scans/en/in/286.jpg

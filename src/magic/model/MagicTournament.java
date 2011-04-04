@@ -100,12 +100,14 @@ public class MagicTournament {
 		return startPlayer;
 	}
 
-    public void setAIs(MagicAI ai1, MagicAI ai2) {
+    public void setAIs(final MagicAI ai1, final MagicAI ai2) {
+    	
         ais[0] = ai1;
         ais[1] = ai2;
     }
 
     public MagicAI[] getAIs() {
+    	
         return ais;
     }
 	
