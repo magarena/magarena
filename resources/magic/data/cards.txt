@@ -6143,3 +6143,15 @@ toughness=7
 ability=vigilance
 static=all
 timing=fmain
+
+>Barbed Battlegear
+value=3
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+power=4
+toughness=-1
+timing=equipment
