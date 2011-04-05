@@ -110,7 +110,9 @@ public class DeckStrCal {
         
         System.out.println(
                  "#deck1" +
+                "\tai1" +
                 "\tdeck2" +
+                "\tai2" +
                 "\tstrength" +
                 "\tgames" +
                 "\td1win"+
@@ -124,8 +126,10 @@ public class DeckStrCal {
             controller.runGame();
             if (testTournament.getGamesPlayed() > played) {
                 System.out.println(
-                        deck1 + "\t" + 
+                        deck1 + "\t" +
+                        ai1 + "\t" +
                         deck2 + "\t" + 
+                        ai2 + "\t" +
                         strength + "\t" +
                         testTournament.getGamesTotal() + "\t" +
                         testTournament.getGamesWon() + "\t" +
