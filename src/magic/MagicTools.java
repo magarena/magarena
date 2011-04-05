@@ -32,7 +32,7 @@ public class MagicTools {
 		final CardDefinitions cardDefinitions = CardDefinitions.getInstance();
 		cardDefinitions.loadCardDefinitions();
 		
-		final String filenames[] = new File(MagicMain.getGamePath(),"cards").list();
+		final String filenames[] = new File(MagicMain.getGamePath(),"hqcards").list();
 		for (final String filename : filenames) {
 			
 			final String name = filename.substring(0,filename.length()-4);

@@ -11,7 +11,7 @@ import magic.model.event.MagicEvent;
 //AI that plays randomly
 public class RandomAI implements MagicAI {
     
-    private static final boolean LOGGING=true;
+    private static final boolean LOGGING = false;
     private static final Random RNG = new Random();
     
     private static void log(final String message) {
@@ -35,7 +35,6 @@ public class RandomAI implements MagicAI {
       
         if (size == 0) {
             log(info + " NO CHOICE");
-            // System.exit(1);
             return null;
         } else { //size >= 1
             //build a list of artificial choice results

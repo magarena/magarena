@@ -19,8 +19,7 @@ import magic.ui.GameController;
 import magic.ai.MagicAIImpl;
 
 public class DeckStrCal {
-
-    
+   
     public static void main(final String[] args) {
         int games = 10;
         int strength = 6;
