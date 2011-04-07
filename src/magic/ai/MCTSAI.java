@@ -84,10 +84,8 @@ public class MCTSAI implements MagicAI {
             final MagicGame game, 
             final MagicPlayer scorePlayer) {
 
-        final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
-        
         final long startTime = System.currentTimeMillis();
-        
+        final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         final List<Object[]> choices = getCR(game, scorePlayer);
         final int size = choices.size();
         
@@ -131,7 +129,7 @@ public class MCTSAI implements MagicAI {
         }
         logc('\n');
 
-        //select the best choice (child that has the most number of simulations)
+        //select the best choice (child that has the largest value)
         double maxV = -1e10;
         int idx = -1;
         final List<ArtificialChoiceResults> achoices = getACR(choices);
@@ -177,8 +175,8 @@ public class MCTSAI implements MagicAI {
     // select node n (child of node) that maximize v[n]
     // where v[n] = 1 - n.value/n.nb + sqrt(2 * log(nb) / n.nb)
     // find a path from root to an unexplored node
-    private List<MCTSGameTree> genNewTreeNode(MCTSGameTree root, MagicGame game) {
-        List<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
+    private List<MCTSGameTree> genNewTreeNode(final MCTSGameTree root, final MagicGame game) {
+        final List<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
         MCTSGameTree curr = root;
         path.add(curr);
 
@@ -187,33 +185,40 @@ public class MCTSAI implements MagicAI {
              event = getNextMultiChoiceEvent(game, curr != root)) {
 
             final List<Object[]> choices = event.getArtificialChoiceResults(game);
+           
+            assert(choices.size() > 1);
             
-            //multiple choices
             if (curr.size() < choices.size()) {
                 //there are unexplored children of node
                 //assume we explore children of a node in increasing order of the choices
                 game.executeNextEvent(choices.get(curr.size()));
-                MCTSGameTree child = new MCTSGameTree(curr.size());
+                final MCTSGameTree child = new MCTSGameTree(curr.size());
                 curr.addChild(child);
                 path.add(child);
                 return path;
             } else {
                 final int totalSim = curr.getNumSim();
                 double bestV = -1e10;
+                MCTSGameTree child = null;
                 for (MCTSGameTree node : curr.children) {
-                    double v = 
+                    final double v = 
                         ((game.getScorePlayer() == event.getPlayer()) ? 1.0 : -1.0) * node.getV() + 
                         Math.sqrt(2.0 * Math.log(totalSim) / node.getNumSim());
                     if (v >= bestV) {
                         bestV = v;
-                        curr = node;
+                        child = node;
                     }
                 }
+
+                //move down the tree
+                curr = child;
                 game.executeNextEvent(choices.get(curr.getChoice()));
                 path.add(curr);
             }
         } 
-        
+       
+        //game is finished
+        assert(game.isFinished());
         return path;
     }
         
@@ -229,8 +234,11 @@ public class MCTSAI implements MagicAI {
             //logc('-');
             game.executeNextEvent(selected);
         }
-
+        
         // game is finished, check who lost
+        assert(game.isFinished());
+        assert(game.getLosingPlayer() != null);
+        
         if (game.getLosingPlayer() == game.getScorePlayer()) {
             return -1;
         } else {
@@ -242,13 +250,14 @@ public class MCTSAI implements MagicAI {
         game.setFastChoices(fastChoices);
         while (!game.isFinished()) {
             if (game.hasNextEvent()) {
-                final MagicEvent event=game.getNextEvent();
+                final MagicEvent event = game.getNextEvent();
                 if (event.hasChoice()) {
                     final List<Object[]> choices = event.getArtificialChoiceResults(game);
                     final int size = choices.size();
                     if (size == 0) {
                         //QQQ: when does this occur?
                         log("NO CHOICE");
+                        assert(size != 0);
                         return event;
                     } else if (size == 1) {
                         game.executeNextEvent(choices.get(0));
