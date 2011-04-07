@@ -955,3 +955,4 @@ Phyrexian Digester.jpg;http://magiccards.info/scans/en/mbs/120.jpg
 Suture Priest.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=115363&d=1297746104
 Elesh Norn, Grand Cenobite.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=116363&stc=1&d=1301374681
 Barbed Battlegear.jpg;http://magiccards.info/scans/en/som/139.jpg
+Lightning Greaves.jpg;http://magiccards.info/scans/en/pvc/19.jpg

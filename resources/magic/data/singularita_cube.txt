@@ -864,3 +864,4 @@ Phyrexian Digester
 Suture Priest
 Elesh Norn, Grand Cenobite
 Barbed Battlegear
+Lightning Greaves

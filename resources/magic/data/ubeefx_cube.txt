@@ -543,3 +543,4 @@ Sword of Feast and Famine
 Suture Priest
 Elesh Norn, Grand Cenobite
 Barbed Battlegear
+Lightning Greaves

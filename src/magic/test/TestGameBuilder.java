@@ -118,6 +118,7 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
 		addToHand(opponent,"Zephyr Sprite",3);
+		addToHand(player,"Lightning Greaves",1);
 		addToHand(player,"Barbed Battlegear",1);
 		addToHand(player,"Go for the Throat",1);
 		addToHand(player,"Cumber Stone",1);
