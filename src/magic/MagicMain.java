@@ -1,6 +1,7 @@
 package magic;
 
 import java.io.File;
+import java.io.IOException;
 
 import magic.data.CardDefinitions;
 import magic.data.CardEventDefinitions;
@@ -46,6 +47,19 @@ public class MagicMain {
 		
 		return getGamePath()+File.separatorChar+MODS_PATH;
 	}
+
+	public static void initializeEngine() throws IOException {
+
+		CardDefinitions.getInstance().loadCardDefinitions();
+		CubeDefinitions.getInstance().loadCubeDefinitions();
+		KeywordDefinitions.getInstance().loadKeywordDefinitions();
+		TriggerDefinitions.addTriggers();
+		LocalVariableDefinitions.addLocalVariables();
+		ManaActivationDefinitions.addManaActivations();
+		PermanentActivationDefinitions.addPermanentActivations();
+		CardEventDefinitions.setCardEvents();
+		MagicStaticLocalVariable.initializeCardDefinitions();
+	}
 	
 	public static void initializeCards() {
 		
@@ -53,15 +67,7 @@ public class MagicMain {
 			new File(getGamePath()).mkdir();
 			new File(getModsPath()).mkdir();
 			DeckUtils.createDeckFolder();
-			CardDefinitions.getInstance().loadCardDefinitions();
-			CubeDefinitions.getInstance().loadCubeDefinitions();
-			KeywordDefinitions.getInstance().loadKeywordDefinitions();
-			TriggerDefinitions.addTriggers();
-			LocalVariableDefinitions.addLocalVariables();
-			ManaActivationDefinitions.addManaActivations();
-			PermanentActivationDefinitions.addPermanentActivations();
-			CardEventDefinitions.setCardEvents();
-			MagicStaticLocalVariable.initializeCardDefinitions();
+			initializeEngine();
 		} catch (final Exception ex) {
 			ex.printStackTrace();
 		}

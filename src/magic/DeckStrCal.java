@@ -2,21 +2,12 @@ package magic;
 
 import java.io.File;
 
-import magic.data.CardDefinitions;
-import magic.data.CardEventDefinitions;
-import magic.data.CubeDefinitions;
+import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
-import magic.data.KeywordDefinitions;
-import magic.data.LocalVariableDefinitions;
-import magic.data.ManaActivationDefinitions;
-import magic.data.PermanentActivationDefinitions;
 import magic.data.TournamentConfig;
-import magic.data.TriggerDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicTournament;
-import magic.model.variable.MagicStaticLocalVariable;
 import magic.ui.GameController;
-import magic.ai.MagicAIImpl;
 
 public class DeckStrCal {
         
@@ -96,15 +87,7 @@ public class DeckStrCal {
     private static MagicTournament setupTournament() {
         // Load cards and cubes.
         try {
-            CardDefinitions.getInstance().loadCardDefinitions();
-            CubeDefinitions.getInstance().loadCubeDefinitions();
-            KeywordDefinitions.getInstance().loadKeywordDefinitions();
-            TriggerDefinitions.addTriggers();
-            LocalVariableDefinitions.addLocalVariables();
-            ManaActivationDefinitions.addManaActivations();
-            PermanentActivationDefinitions.addPermanentActivations();
-            CardEventDefinitions.setCardEvents();
-            MagicStaticLocalVariable.initializeCardDefinitions();
+        	MagicMain.initializeEngine();
         } catch (final Exception ex) {
             System.err.println("Error: unable to initialize game engine");
             ex.printStackTrace();
