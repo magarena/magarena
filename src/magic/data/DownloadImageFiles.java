@@ -10,17 +10,16 @@ import java.net.URL;
 import java.util.ArrayList;
 
 import magic.MagicMain;
+import magic.model.MagicCardDefinition;
 
 public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 
 	private static final long serialVersionUID = 1L;
 
-	public DownloadImageFiles(final String filename,final boolean enabled) {
+	public DownloadImageFiles(final String filename) {
 	
 		try {
-			if (enabled) {
-				loadDownloadImageFiles(filename);
-			}
+			loadDownloadImageFiles(filename);
 		} catch (final Exception ex) {}
 	}	
 	
@@ -57,5 +56,17 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 		}
 		
 		reader.close();
+		
+		final File cardsPathFile=new File(gamePathFile,"hqcards");
+		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
+			
+			final String imageUrl=cardDefinition.getImageUrl();
+			if (imageUrl!=null) {
+				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName()+".jpg");
+				if (!imageFile.exists()) {
+					add(new DownloadImageFile(imageFile,new URL(imageUrl)));
+				}
+			}
+		}
 	}
 }

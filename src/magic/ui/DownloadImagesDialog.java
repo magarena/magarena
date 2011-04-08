@@ -109,7 +109,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		buttonPanel.add(cancelButton);
 		add(buttonPanel,BorderLayout.SOUTH);
 
-		files=new DownloadImageFiles(DOWNLOAD_IMAGES_FILENAME,true);
+		files=new DownloadImageFiles(DOWNLOAD_IMAGES_FILENAME);
 		if (files.isEmpty()) {
 			okButton.setEnabled(false);
 			progressBar.setMaximum(1);

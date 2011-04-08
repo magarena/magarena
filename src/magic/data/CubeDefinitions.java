@@ -14,10 +14,8 @@ import magic.MagicMain;
 import magic.model.MagicCubeDefinition;
 
 public class CubeDefinitions {
-
-	private static final CubeDefinitions INSTANCE=new CubeDefinitions();
 	
-	private static final String[] INCLUDED_CUBES={"ubeefx","singularita"};
+	private static final String[] INCLUDED_CUBES={"default","all"};
 	private static final String CUBE_FILE_EXTENSION="_cube.txt";
 
 	public static final String DEFAULT_NAME=INCLUDED_CUBES[0];
@@ -31,11 +29,17 @@ public class CubeDefinitions {
 		}
 	};
 
+	private static final CubeDefinitions INSTANCE=new CubeDefinitions();
+	
 	private final List<MagicCubeDefinition> cubeDefinitions;
 	
 	private CubeDefinitions() {
 		
 		cubeDefinitions=new ArrayList<MagicCubeDefinition>();
+		for (final String cubeName : INCLUDED_CUBES) {
+
+			cubeDefinitions.add(new MagicCubeDefinition(cubeName));
+		}
 	}
 		
 	public String[] getCubeNames() {
@@ -83,18 +87,10 @@ public class CubeDefinitions {
 			}
 		}
 		cubeDefinitions.add(cubeDefinition);
-		System.out.println("Cube "+cubeDefinition.getName()+" : "+cubeDefinition.size()+" cards");
 	}
 	
 	public void loadCubeDefinitions() throws IOException {
-		
-		for (final String cubeName : INCLUDED_CUBES) {
-			
-			final InputStream cubeInputStream=this.getClass().getResourceAsStream(cubeName+CUBE_FILE_EXTENSION);
-			loadCubeDefinition(cubeName,cubeInputStream);
-			cubeInputStream.close();
-		}
-		
+				
 		final File cubeFiles[]=new File(MagicMain.getModsPath()).listFiles(CUBE_FILE_FILTER);
 		if (cubeFiles!=null) {
 			for (final File file : cubeFiles) {
@@ -108,6 +104,10 @@ public class CubeDefinitions {
 		}
 		
 		System.out.println(cubeDefinitions.size()+" cube definitions");
+		for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
+			
+			System.out.println("Cube "+cubeDefinition.getName()+" : "+cubeDefinition.size()+" cards");
+		}
 	}
 	
 	public static CubeDefinitions getInstance() {

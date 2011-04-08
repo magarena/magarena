@@ -39,7 +39,14 @@ public class CardDefinitions {
 	
 	private void setProperty(final MagicCardDefinition card,final String property,final String value) {
 		
-		if ("value".equals(property)) {
+		if ("image".equals(property)) {
+			card.setImageUrl(value);
+		} else if ("cube".equals(property)) {
+			if ("default".equals(value)) {
+				CubeDefinitions.getInstance().getCubeDefinition("all").add(card.getName());
+			}
+			CubeDefinitions.getInstance().getCubeDefinition(value).add(card.getName());
+		} else if ("value".equals(property)) {
 			card.setValue(Integer.parseInt(value));
 		} else if ("removal".equals(property)) {
 			card.setRemoval(Integer.parseInt(value));
