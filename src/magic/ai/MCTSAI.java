@@ -65,9 +65,10 @@ function getValueByMC(node)
 @SuppressWarnings("unused")
 public class MCTSAI implements MagicAI {
     
-    private static final int MAXSIM = 500;
-    private static final boolean LOGGING = true;
-    private static final Random RNG = new Random(123);
+    private static final int MAXSIM = 1000;
+    private static final int MAXTIME = 10000;
+    private static final boolean LOGGING = false;
+    private final Random RNG = new Random(123);
 
     private static void log(final String message) {
         if (LOGGING) {
@@ -86,7 +87,9 @@ public class MCTSAI implements MagicAI {
             final MagicPlayer scorePlayer) {
 
         final long startTime = System.currentTimeMillis();
-        final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
+        final String pinfo = "MCTS " + scorePlayer.getIndex() + 
+            " life=" + scorePlayer.getLife() + " " +
+            " lib=" + scorePlayer.getLibrary().size();
         final List<Object[]> choices = getCR(game, scorePlayer);
         final int size = choices.size();
         
@@ -109,11 +112,12 @@ public class MCTSAI implements MagicAI {
         //   score the leaf by doing a random play to the end of the game
         //   update the score of all the ancestors of the leaf
         // return the "best" choice
-        
+       
         //root represents the start state
-        final MCTSGameTree root = new MCTSGameTree(-1);
-        for (int i = 1; i <= MAXSIM; i++) {
+        final MCTSGameTree root = new MCTSGameTree(-1, -1);
+        for (int i = 1; i <= MAXSIM && System.currentTimeMillis() - startTime < MAXTIME; i++) {
             //create a new MagicGame for simulation
+            //final MagicGame start = new MagicGame(game, scorePlayer, true);
             final MagicGame start = new MagicGame(game, scorePlayer);
             
             //pass in a clone of the state, genNewTreeNode grows the tree by one node
@@ -123,7 +127,6 @@ public class MCTSAI implements MagicAI {
             // play a simulated game to get score
             // update all nodes along the path from root to new node 
             final int score = randomPlay(start);
-
             logc((score == 1) ? '.' : 'X');
             for (MCTSGameTree node : path) {
                 node.updateScore(score);
@@ -133,23 +136,19 @@ public class MCTSAI implements MagicAI {
 
         //select the best choice (child that has the largest value)
         double maxV = -1e10;
+        int maxS = 0;
         int idx = -1;
         final List<ArtificialChoiceResults> achoices = getACR(choices);
         for (MCTSGameTree node : root) {
             achoices.get(node.getChoice()).worker = node.getScore();
             achoices.get(node.getChoice()).gameCount = node.getNumSim();
-            if (node.getV() >= maxV) {
+            if (node.getV() > maxV) { 
                 maxV = node.getV();
+                maxS = node.getEvalScore();
                 idx = node.getChoice();
             }
         }
-       
-        /*
-        // using random choice
-        final List<ArtificialChoiceResults> achoices = getACR(choices);
-        final int idx = RNG.nextInt(choices.size());
-        */
-
+        
         final long duration = System.currentTimeMillis() - startTime;
         log("MCTS took " + duration);
         
@@ -199,15 +198,15 @@ public class MCTSAI implements MagicAI {
             if (curr.size() < choices.size()) {
                 //there are unexplored children of node
                 //assume we explore children of a node in increasing order of the choices
-                final MCTSGameTree child = new MCTSGameTree(curr.size());
                 game.executeNextEvent(choices.get(curr.size()));
+                final MCTSGameTree child = new MCTSGameTree(curr.size(), game.getScore());
                 curr.addChild(child);
                 path.add(child);
                 return path;
             } else {
                 final int totalSim = curr.getNumSim();
                 double bestV = -1e10;
-                MCTSGameTree child = null;
+                MCTSGameTree child = curr.first();
                 for (MCTSGameTree node : curr) {
                     final double v = 
                         ((game.getScorePlayer() == event.getPlayer()) ? 1.0 : -1.0) * node.getV() + 
@@ -220,6 +219,7 @@ public class MCTSAI implements MagicAI {
 
                 //move down the tree
                 curr = child;
+                assert curr != null;
                 game.executeNextEvent(choices.get(curr.getChoice()));
                 path.add(curr);
             }
@@ -239,14 +239,15 @@ public class MCTSAI implements MagicAI {
             final List<Object[]> choices = event.getArtificialChoiceResults(game);
             final int idx = RNG.nextInt(choices.size());
             final Object[] selected = choices.get(idx);
-            //logc((char)('a' + idx));
+            //logc('-');
             game.executeNextEvent(selected);
         }
         
         // game is finished, check who lost
         assert game.isFinished() : "game is not finished";
         assert (game.getLosingPlayer() != null) : "losing player is null";
-        
+        assert (game.getMainPhaseCount() > 0) : "main phase count is zero";
+       
         if (game.getLosingPlayer() == game.getScorePlayer()) {
             return -1;
         } else {
@@ -256,29 +257,39 @@ public class MCTSAI implements MagicAI {
     
     private MagicEvent getNextMultiChoiceEvent(MagicGame game, boolean fastChoices) {
         game.setFastChoices(fastChoices);
+        
         while (!game.isFinished()) {
-            if (game.hasNextEvent()) {
-                final MagicEvent event = game.getNextEvent();
-                if (event.hasChoice()) {
-                    final List<Object[]> choices = event.getArtificialChoiceResults(game);
-                    final int size = choices.size();
-                    if (size == 0) {
-                        //QQQ: when does this occur?
-                        assert false : "size of choices is 0" ;
-                        return event;
-                    } else if (size == 1) {
-                        game.executeNextEvent(choices.get(0));
-                    } else {
-                        //multiple choice
-                        return event;
-                    }
-                } else {
-                    game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
-                }
-            } else {
+            if (!game.hasNextEvent()) {
                 game.getPhase().executePhase(game);
+                continue;
+            }
+
+            //game has next event
+            //logc('e');
+            final MagicEvent event = game.getNextEvent();
+            //logc('E');
+
+            if (!event.hasChoice()) {
+                game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
+                continue;
+            }
+
+            //event has choice
+            //logc('c');
+            final List<Object[]> choices = event.getArtificialChoiceResults(game);
+            //logc('C');
+            final int size = choices.size();
+            if (size == 0) {
+                //QQQ: when does this occur?
+                assert false : "size of choices is 0" ;
+            } else if (size == 1) {
+                game.executeNextEvent(choices.get(0));
+            } else {
+                //multiple choice
+                return event;
             }
         }
+
         //game is finished
         return null;
     }
@@ -292,9 +303,15 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private final List<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
     private int numSim = 0;
     private int score = 0;
+    private int evalScore = 0;
 
-    public MCTSGameTree(int choice) {
+    public MCTSGameTree(int choice, int evalScore) {
+        this.evalScore = evalScore;
         this.choice = choice;
+    }
+
+    public MCTSGameTree first() {
+        return children.get(0);
     }
     
     public Iterator<MCTSGameTree> iterator() {
@@ -303,6 +320,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public int getChoice() {
         return choice;
+    }
+
+    public int getEvalScore() {
+        return evalScore;
     }
 
     public int getScore() {
