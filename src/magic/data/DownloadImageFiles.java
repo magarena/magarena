@@ -14,7 +14,7 @@ import magic.MagicMain;
 public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 
 	private static final long serialVersionUID = 1L;
-		
+
 	public DownloadImageFiles(final String filename,final boolean enabled) {
 	
 		try {

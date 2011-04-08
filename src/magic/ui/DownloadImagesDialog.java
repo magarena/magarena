@@ -5,7 +5,6 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.net.Proxy.Type;
@@ -21,10 +20,8 @@ import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 
-import magic.MagicMain;
 import magic.data.DownloadImageFile;
 import magic.data.DownloadImageFiles;
-import magic.data.GeneralConfig;
 import magic.data.IconImages;
 
 public class DownloadImagesDialog extends JDialog implements Runnable,ActionListener {
@@ -32,10 +29,8 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private static final long serialVersionUID = 1L;
 
 	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
-	private static final String DOWNLOAD_MODS_IMAGES_FILENAME="file://"+MagicMain.getModsPath()+File.separatorChar+"images.txt";
 	
 	private final DownloadImageFiles files;
-	private final DownloadImageFiles modsFiles;
 	private final JComboBox proxyComboBox;
 	private final JTextField addressTextField;
 	private final JTextField portTextField;
@@ -115,8 +110,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		add(buttonPanel,BorderLayout.SOUTH);
 
 		files=new DownloadImageFiles(DOWNLOAD_IMAGES_FILENAME,true);
-		modsFiles=new DownloadImageFiles(DOWNLOAD_MODS_IMAGES_FILENAME,GeneralConfig.getInstance().isHighQuality());
-		if (files.isEmpty()&&modsFiles.isEmpty()) {
+		if (files.isEmpty()) {
 			okButton.setEnabled(false);
 			progressBar.setMaximum(1);
 			progressBar.setValue(1);
@@ -143,16 +137,10 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	public void run() {
 		
 		progressBar.setMinimum(0);
-		progressBar.setMaximum(files.size()+modsFiles.size());
+		progressBar.setMaximum(files.size());
 		
 		int count=0;
 		for (final DownloadImageFile file : files) {
-
-			downloadLabel.setText(file.getFilename());
-			file.download(proxy);
-			progressBar.setValue(++count);
-		}
-		for (final DownloadImageFile file : modsFiles) {
 
 			downloadLabel.setText(file.getFilename());
 			file.download(proxy);
