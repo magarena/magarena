@@ -11,10 +11,18 @@ import magic.model.event.MagicEvent;
 //AI that plays randomly
 public class RandomAI implements MagicAI {
     
-    private static final boolean LOGGING = false;
+    private final boolean LOGGING;
     private static final Random RNG = new Random();
+   
+    public RandomAI() {
+        this(false);
+    }
+
+    public RandomAI(boolean printLog) {
+        LOGGING = printLog;
+    }
     
-    private static void log(final String message) {
+    private void log(final String message) {
         if (LOGGING) {
             System.out.println(message);
         }

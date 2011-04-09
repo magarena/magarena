@@ -67,16 +67,24 @@ public class MCTSAI implements MagicAI {
     
     private static final int MAXSIM = 1000;
     private static final int MAXTIME = 10000;
-    private static final boolean LOGGING = false;
+    private final boolean LOGGING;
     private final Random RNG = new Random(123);
 
-    private static void log(final String message) {
+    public MCTSAI() {
+        this(false);
+    }
+
+    public MCTSAI(boolean printLog) {
+        LOGGING = printLog;
+    }
+
+    private void log(final String message) {
         if (LOGGING) {
             System.out.println(message);
         }
     }
     
-    private static void logc(final char message) {
+    private void logc(final char message) {
         if (LOGGING) {
             System.out.print(message);
         }
