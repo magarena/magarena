@@ -87,9 +87,7 @@ public class MCTSAI implements MagicAI {
             final MagicPlayer scorePlayer) {
 
         final long startTime = System.currentTimeMillis();
-        final String pinfo = "MCTS " + scorePlayer.getIndex() + 
-            " life=" + scorePlayer.getLife() + " " +
-            " lib=" + scorePlayer.getLibrary().size();
+        final String pinfo = "MCTS " + scorePlayer.getIndex() + "(" + scorePlayer.getLife() + ")";
         final List<Object[]> choices = getCR(game, scorePlayer);
         final int size = choices.size();
         
@@ -117,8 +115,7 @@ public class MCTSAI implements MagicAI {
         final MCTSGameTree root = new MCTSGameTree(-1, -1);
         for (int i = 1; i <= MAXSIM && System.currentTimeMillis() - startTime < MAXTIME; i++) {
             //create a new MagicGame for simulation
-            //final MagicGame start = new MagicGame(game, scorePlayer, true);
-            final MagicGame start = new MagicGame(game, scorePlayer);
+            final MagicGame start = new MagicGame(game, scorePlayer, true);
             
             //pass in a clone of the state, genNewTreeNode grows the tree by one node
             //and returns the path from the root to the new node
@@ -134,16 +131,16 @@ public class MCTSAI implements MagicAI {
         }
         logc('\n');
 
-        //select the best choice (child that has the largest value)
-        double maxV = -1e10;
+        //select the best choice (child that has the largest visit count)
+        int maxV = -1;
         int maxS = 0;
         int idx = -1;
         final List<ArtificialChoiceResults> achoices = getACR(choices);
         for (MCTSGameTree node : root) {
             achoices.get(node.getChoice()).worker = node.getScore();
             achoices.get(node.getChoice()).gameCount = node.getNumSim();
-            if (node.getV() > maxV) { 
-                maxV = node.getV();
+            if (node.getNumSim() > maxV) { 
+                maxV = node.getNumSim();
                 maxS = node.getEvalScore();
                 idx = node.getChoice();
             }
@@ -211,7 +208,7 @@ public class MCTSAI implements MagicAI {
                     final double v = 
                         ((game.getScorePlayer() == event.getPlayer()) ? 1.0 : -1.0) * node.getV() + 
                         Math.sqrt(2.0 * Math.log(totalSim) / node.getNumSim());
-                    if (v >= bestV) {
+                    if (v > bestV) {
                         bestV = v;
                         child = node;
                     }
@@ -220,6 +217,8 @@ public class MCTSAI implements MagicAI {
                 //move down the tree
                 curr = child;
                 assert curr != null;
+                
+                //QQQ: choices.get crashed with out of bounds exception (index 4, size 4)
                 game.executeNextEvent(choices.get(curr.getChoice()));
                 path.add(curr);
             }

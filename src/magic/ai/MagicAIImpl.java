@@ -2,7 +2,8 @@ package magic.ai;
 
 public enum MagicAIImpl {
 	
-    DEFAULT(new MiniMaxAlphaBetaAI()),
+    //DEFAULT(new MiniMaxAlphaBetaAI()),
+    DEFAULT(new MCTSAI()),
     MMAB(new MiniMaxAlphaBetaAI()), 
     RND(new RandomAI()),
     MCTS(new MCTSAI());
