@@ -6,6 +6,7 @@ import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.border.Border;
 
 import magic.model.MagicLogBook;
@@ -23,10 +24,12 @@ public class LogBookViewer extends JPanel {
 		FontsAndBorders.EMPTY_BORDER
 	);
 	
-	private static final int MAX_LINES=30;
+	private static final int MAX_LINES=200;
+	private static final int INCREMENT=108;
 	
 	private final MagicLogBook logBook;
 	private final JPanel messagePanel;
+	private final JScrollPane scrollPane;
 	
 	public LogBookViewer(final MagicLogBook logBook) {
 		
@@ -37,15 +40,23 @@ public class LogBookViewer extends JPanel {
 		setOpaque(true);
 
 		add(new TitleBar("Messages"),BorderLayout.NORTH);
-		
+
 		final JPanel centerPanel=new JPanel();
 		centerPanel.setLayout(new BorderLayout());
-		centerPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
 		add(centerPanel,BorderLayout.CENTER);
 		
 		messagePanel=new JPanel();
 		messagePanel.setLayout(new BoxLayout(messagePanel,BoxLayout.Y_AXIS));
 		centerPanel.add(messagePanel,BorderLayout.NORTH);
+		
+		scrollPane=new JScrollPane();
+		scrollPane.getViewport().setView(centerPanel);
+		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+		scrollPane.getVerticalScrollBar().setUnitIncrement(INCREMENT);
+		scrollPane.getVerticalScrollBar().setBlockIncrement(INCREMENT);
+		scrollPane.setBorder(FontsAndBorders.BLACK_BORDER_2);
+		add(scrollPane,BorderLayout.CENTER);
 	}
 	
 	public MagicLogBook getLogBook() {
@@ -72,5 +83,6 @@ public class LogBookViewer extends JPanel {
 			messagePanel.add(panel);
 		}
 		revalidate();
+		scrollPane.getVerticalScrollBar().setValue(0);
 	}	
 }

@@ -9,7 +9,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.AbstractAction;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
@@ -47,6 +46,7 @@ public class GamePanel extends JPanel {
 	private static final String ACTION_KEY="action";
 	private static final String UNDO_KEY="undo";
 	private static final String SWITCH_KEY="switch";
+	private static final String LOG_KEY="log";
 	
 	private final MagicFrame frame;
 	private final MagicGame game;
@@ -58,7 +58,7 @@ public class GamePanel extends JPanel {
 	private final CardViewer cardViewer;
 	private final GameTournamentViewer gameTournamentViewer;
 	private final LogBookViewer logBookViewer;
-	private final JLabel logBookButton;
+	private final JToggleButton logBookButton;
 	private final JToggleButton textViewButton;
 	private final GameControllerThread thread;
 	private final StackCombatViewer stackCombatViewer;
@@ -110,28 +110,32 @@ public class GamePanel extends JPanel {
 		controller.setGameViewer(gameTournamentViewer.getGameViewer());
 		add(gameTournamentViewer);
 						
-		logBookButton=new JLabel(theme.getIcon(Theme.ICON_MESSAGE));
+		logBookButton=new JToggleButton(theme.getIcon(Theme.ICON_MESSAGE),false);
+		logBookButton.setFocusable(false);
+		logBookButton.setOpaque(false);
 		add(logBookButton);		
+		logBookButton.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(final ActionEvent event) {
+			
+				logBookViewer.setVisible(logBookButton.isSelected());
+			}
+		});
 		logBookButton.addMouseListener(new MouseAdapter() {
 
 			@Override
 			public void mouseEntered(final MouseEvent event) {
 
-				logBookViewer.update();
-				SwingUtilities.invokeLater(new Runnable() {
-
-					@Override
-					public void run() {
-												
-						logBookViewer.setVisible(true);
-					}
-				});
+				showLogBook(true);
 			}
 
 			@Override
 			public void mouseExited(final MouseEvent event) {
 
-				logBookViewer.setVisible(false);
+				if (!logBookButton.isSelected()) {
+					showLogBook(false);
+				}
 			}
 		});
 
@@ -184,11 +188,25 @@ public class GamePanel extends JPanel {
 			}
 		});
 		
+		getActionMap().put(LOG_KEY, new AbstractAction() {
+			
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(final ActionEvent e) {
+
+				final boolean selected=!logBookButton.isSelected();
+				logBookButton.setSelected(selected);
+				showLogBook(selected);
+			}
+		});
+		
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0),ACTION_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);		
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),UNDO_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0),SWITCH_KEY);
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0), LOG_KEY);
 				
 		stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
 		handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);		
@@ -232,6 +250,23 @@ public class GamePanel extends JPanel {
 			GeneralConfig.getInstance().setTextView(selected);
 			updateView();
 		}
+	}
+	
+	void showLogBook(final boolean visible) {
+
+		if (visible) {
+			logBookViewer.update();
+			SwingUtilities.invokeLater(new Runnable() {
+
+				@Override
+				public void run() {
+										
+					logBookViewer.setVisible(true);
+				}
+			});
+		} else {
+			logBookViewer.setVisible(false);	
+		}		
 	}
 	
 	private boolean isTextView() {

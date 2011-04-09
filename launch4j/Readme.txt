@@ -13,7 +13,8 @@ Otherwise you will see a lot of question marks. The application stops automatica
 Magarena supports the following keyboard shortcuts :
 - Space or Right key : action button
 - Escape or Left key : undo button
-- Enter : switch between graphical and text mode
+- Enter key : switch between graphical and text mode
+- F1 key : show or hide game messages
 
 The UI of Magarena can be customized with downloadable themes coming in zip files.
 A theme pack with five color themes can be downloaded on the project page.
@@ -36,9 +37,10 @@ Release 1.11 (April 11, 2011)
 - all cube (875 cards)
 
 - renamed the two standard cubes to default and all
-- added AI selection in preferences (default is same as MiniMax AI, random AI does random moves)
+- improved displaying of messages with scroll bar and toggle button + F1 shortcut to show or hide messages
 - improved mana cost images (if already installed, delete symbols folder in Magarena data folder and load images)
 - improved card definition files, they now also contain the image url and cube information
+- added AI selection in preferences (default is same as MiniMax AI, random AI does random moves)
 
 - fixed Lightning Helix, it can now target your own permanents with filter legal targets enabled
 
