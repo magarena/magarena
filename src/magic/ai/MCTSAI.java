@@ -87,7 +87,7 @@ public class MCTSAI implements MagicAI {
             final MagicPlayer scorePlayer) {
 
         final long startTime = System.currentTimeMillis();
-        final String pinfo = "MCTS " + scorePlayer.getIndex() + "(" + scorePlayer.getLife() + ")";
+        final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         final List<Object[]> choices = getCR(game, scorePlayer);
         final int size = choices.size();
         
@@ -205,6 +205,11 @@ public class MCTSAI implements MagicAI {
                 double bestV = -1e10;
                 MCTSGameTree child = curr.first();
                 for (MCTSGameTree node : curr) {
+                    if (node.getChoice() >= choices.size()) {
+                        log("MCTS: INVALID NODE");
+                        continue;
+                    }
+
                     final double v = 
                         ((game.getScorePlayer() == event.getPlayer()) ? 1.0 : -1.0) * node.getV() + 
                         Math.sqrt(2.0 * Math.log(totalSim) / node.getNumSim());
@@ -218,7 +223,6 @@ public class MCTSAI implements MagicAI {
                 curr = child;
                 assert curr != null;
                 
-                //QQQ: choices.get crashed with out of bounds exception (index 4, size 4)
                 game.executeNextEvent(choices.get(curr.getChoice()));
                 path.add(curr);
             }
@@ -242,12 +246,12 @@ public class MCTSAI implements MagicAI {
             game.executeNextEvent(selected);
         }
         
-        // game is finished, check who lost
-        assert game.isFinished() : "game is not finished";
-        assert (game.getLosingPlayer() != null) : "losing player is null";
+        // game is finished or in an invalid state
         assert (game.getMainPhaseCount() > 0) : "main phase count is zero";
-       
-        if (game.getLosingPlayer() == game.getScorePlayer()) {
+      
+        if (game.getLosingPlayer() == null) {
+            return 0;
+        } else if (game.getLosingPlayer() == game.getScorePlayer()) {
             return -1;
         } else {
             return 1;
@@ -279,8 +283,8 @@ public class MCTSAI implements MagicAI {
             //logc('C');
             final int size = choices.size();
             if (size == 0) {
-                //QQQ: when does this occur?
-                assert false : "size of choices is 0" ;
+                //invalid game state
+                return null;
             } else if (size == 1) {
                 game.executeNextEvent(choices.get(0));
             } else {
