@@ -52,7 +52,7 @@ public class ArtificialWorkerPool {
 		
 		return new ArtificialMultiPruneScore();
 	}
-		
+	
 	public synchronized Object[] findNextEventChoiceResults() {
 
 		// Logging
@@ -60,6 +60,7 @@ public class ArtificialWorkerPool {
 
 		// Copying the game is necessary because for some choices game scores might be calculated.
 		MagicGame choiceGame=new MagicGame(sourceGame,scorePlayer);
+		choiceGame.setKnownCards();
 		final MagicEvent event=choiceGame.getNextEvent();
 
 		// Find all possible choice results.
@@ -69,7 +70,7 @@ public class ArtificialWorkerPool {
 		if (choiceResultsList.size()==0) {
 			return null;
 		}
-				
+		
 		final int size=choiceResultsList.size();
 		// Single choice result.
 		if (size==1) {
@@ -91,6 +92,7 @@ public class ArtificialWorkerPool {
 		for (int index=0;index<workerSize;index++) {
 
 			final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
+			workerGame.setKnownCards();
 			workerGame.setFastChoices(true);
 			workers.add(new ArtificialWorker(index,workerGame,scoreBoard));
 		}

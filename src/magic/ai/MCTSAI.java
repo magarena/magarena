@@ -123,7 +123,7 @@ public class MCTSAI implements MagicAI {
         final MCTSGameTree root = new MCTSGameTree(-1, -1);
         for (int i = 1; i <= MAXSIM && System.currentTimeMillis() - startTime < MAXTIME; i++) {
             //create a new MagicGame for simulation
-            final MagicGame start = new MagicGame(game, scorePlayer, true);
+            final MagicGame start = new MagicGame(game, scorePlayer);
             
             //pass in a clone of the state, genNewTreeNode grows the tree by one node
             //and returns the path from the root to the new node

@@ -105,13 +105,8 @@ public class MagicGame {
 		changePhase(gameplay.getStartPhase(this));
 	}
 	
-	// Create a game to do AI processing.
 	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
-		this(game, scorePlayer, false);
-	}
-
-	// Allows the AI to cheat by not hidding the cards that AI is not supposed to know about
-	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer, final boolean viewCards) {
+		
 		artificial=true;
 		final MagicCopyMap copyMap=new MagicCopyMap();		
 		this.tournament=game.tournament;
@@ -139,9 +134,6 @@ public class MagicGame {
 		this.undoPoints=null;
 		this.logBook=null;
 		this.logMessageBuilder=null;
-		if (!viewCards) {
-			setKnownCards();
-		}
 	}
 		
 	public void setScore(final int score) {
@@ -339,7 +331,7 @@ public class MagicGame {
 		return logBook;
 	}
 		
-	private void setKnownCards() {
+	public void setKnownCards() {
 
 		getOpponent(scorePlayer).setHandToUnknown();
 		for (final MagicPlayer player : players) {
