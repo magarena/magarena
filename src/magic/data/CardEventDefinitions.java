@@ -849,7 +849,7 @@ public class CardEventDefinitions {
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(3),
+			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(3),
 				new Object[]{cardOnStack,player},this,"Lightning Bolt deals 3 damage to target creature or player$ and you gain 3 life.");
 		}
 
