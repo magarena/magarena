@@ -107,7 +107,7 @@ public class MagicGame {
 	
 	// Create a game to do AI processing.
 	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
-		MagicGame(game, scorePlayer, false);
+		this(game, scorePlayer, false);
 	}
 
 	// Allows the AI to cheat by not hidding the cards that AI is not supposed to know about
