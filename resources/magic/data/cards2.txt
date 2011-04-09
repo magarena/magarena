@@ -4130,19 +4130,6 @@ power=5
 toughness=6
 timing=main
 
->Venser's Sliver
-image=http://magiccards.info/scans/en/ts/267.jpg
-cube=all
-value=1
-rarity=1
-type=Artifact,Creature
-subtype=Sliver
-converted=5
-cost={5}
-power=3
-toughness=3
-timing=main
-
 >Veteran Cavalier
 image=http://magiccards.info/scans/en/9e/52.jpg
 cube=all
