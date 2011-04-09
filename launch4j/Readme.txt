@@ -29,6 +29,18 @@ Recommended difficulty level for the best balance of AI speed and strength is th
 
 Have fun!
 
+Release 1.11 (April 11, 2011)
+============
+
+- ubeefx cube (555 cards)
+- singularita cube (875 cards)
+
+- added AI selection in preferences (default is same as MiniMax AI, random AI does random moves)
+- improved mana cost images (if already installed, delete symbols folder in Magarena data folder and load images)
+- improved card definition files, they now also contain the image url and cube information
+
+- fixed Lightning Helix, it can now target your own permanents with filter legal targets enabled
+
 Release 1.10 (April 1, 2011)
 ============
 
