@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 import magic.MagicMain;
+import magic.ai.MagicAI;
+import magic.ai.MagicAIImpl;
 
 public class GeneralConfig {
 
@@ -19,6 +21,7 @@ public class GeneralConfig {
 	private static final String HEIGHT="height";
 	private static final String MAXIMIZED="maximized";
 	private static final String THEME="theme";
+	private static final String AI="ai";
 	private static final String UNDO_LEVELS="undo";
 	private static final String TEXT_VIEW="text";
 	private static final String SKIP_SINGLE="single";
@@ -37,6 +40,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_HEIGHT=700;
 	private static final boolean DEFAULT_MAXIMIZED=false;
 	private static final String DEFAULT_THEME="wood";
+	private static final String DEFAULT_AI="default";
 	private static final int DEFAULT_UNDO_LEVELS=5;
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
@@ -55,6 +59,7 @@ public class GeneralConfig {
 	private int height=DEFAULT_HEIGHT;
 	private boolean maximized=DEFAULT_MAXIMIZED;
 	private String theme=DEFAULT_THEME;
+	private String ai=DEFAULT_AI;
 	private int undoLevels=DEFAULT_UNDO_LEVELS;
 	private boolean textView=DEFAULT_TEXT_VIEW;
 	private boolean skipSingle=DEFAULT_SINGLE;
@@ -129,6 +134,22 @@ public class GeneralConfig {
 	public void setTheme(final String theme) {
 		
 		this.theme=theme;
+	}
+	
+	public String getAi() {
+		
+		return ai;
+	}
+	
+	public void setAi(final String ai) {
+		
+		this.ai=ai;
+	}
+	
+	public MagicAI[] getPlayerAis() {
+		
+		final MagicAI playerAi = MagicAIImpl.getAI(ai).getAI();
+		return new MagicAI[]{playerAi, playerAi};
 	}
 				
 	public int getUndoLevels() {
@@ -249,6 +270,7 @@ public class GeneralConfig {
 		height=Integer.parseInt(properties.getProperty(HEIGHT,""+DEFAULT_HEIGHT));
 		maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+DEFAULT_MAXIMIZED));
 		theme=properties.getProperty(THEME,DEFAULT_THEME);
+		ai=properties.getProperty(AI,DEFAULT_AI);
 		undoLevels=Integer.parseInt(properties.getProperty(UNDO_LEVELS,""+DEFAULT_UNDO_LEVELS));
 		textView=Boolean.parseBoolean(properties.getProperty(TEXT_VIEW,""+DEFAULT_TEXT_VIEW));
 		skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
@@ -279,6 +301,7 @@ public class GeneralConfig {
 		properties.setProperty(HEIGHT,String.valueOf(height));
 		properties.setProperty(MAXIMIZED,String.valueOf(maximized));
 		properties.setProperty(THEME,theme);
+		properties.setProperty(AI,ai);
 		properties.setProperty(UNDO_LEVELS,String.valueOf(undoLevels));
 		properties.setProperty(TEXT_VIEW,String.valueOf(textView));
 		properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));

@@ -2,6 +2,7 @@ package magic;
 
 import java.io.File;
 
+import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
 import magic.data.TournamentConfig;
@@ -104,7 +105,7 @@ public class DeckStrCal {
         testTournament.setDifficulty(strength);
         
         // Set the AI
-        testTournament.setAIs(ai1.getAI(), ai2.getAI());
+        testTournament.setAIs(new MagicAI[]{ai1.getAI(), ai2.getAI()});
 
         // Set the deck.
         DeckUtils.loadDeck(deck1, testTournament.getPlayer(0)); 

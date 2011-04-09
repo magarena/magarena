@@ -9,15 +9,14 @@ import java.util.List;
 import java.util.Properties;
 
 import magic.MagicMain;
-import magic.data.DeckGenerator;
+import magic.ai.MagicAI;
 import magic.data.CubeDefinitions;
+import magic.data.DeckGenerator;
 import magic.data.GeneralConfig;
 import magic.data.TournamentConfig;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ai.MagicAI;
-import magic.ai.MagicAIImpl;
 
 public class MagicTournament {
 			
@@ -30,7 +29,7 @@ public class MagicTournament {
 	
 	private final TournamentConfig configuration;
 	private MagicPlayerDefinition playerDefinitions[];
-	private MagicAI ais[] = {MagicAIImpl.DEFAULT.getAI(), MagicAIImpl.DEFAULT.getAI()};
+	private MagicAI ais[];
 	private int opponentIndex;
 	private int gameNr;
 	private int gamesPlayed;
@@ -41,6 +40,7 @@ public class MagicTournament {
 	public MagicTournament(final TournamentConfig configuration) {
 
 		this.configuration=configuration;
+		ais=GeneralConfig.getInstance().getPlayerAis();
 		restart();
 	}
 	
@@ -100,10 +100,9 @@ public class MagicTournament {
 		return startPlayer;
 	}
 
-    public void setAIs(final MagicAI ai1, final MagicAI ai2) {
+    public void setAIs(final MagicAI[] ais) {
     	
-        ais[0] = ai1;
-        ais[1] = ai2;
+    	this.ais = ais;
     }
 
     public MagicAI[] getAIs() {
