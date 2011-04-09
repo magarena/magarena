@@ -118,20 +118,26 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
 		addToHand(opponent,"Zephyr Sprite",3);
-		addToHand(player,"Lightning Helix",1);
 		addToHand(player,"Lightning Greaves",1);
 		addToHand(player,"Barbed Battlegear",1);
-		addToHand(player,"Go for the Throat",1);
-		addToHand(player,"Cumber Stone",1);
-		addToHand(player,"Phyrexian Digester",1);
-		addToHand(player,"Suture Priest",1);
-		addToHand(player,"Elesh Norn, Grand Cenobite",1);
-
+		addToHand(player,"Vulshok Battlegear",1);
+		addToHand(player,"Vindicate",1);
+		addToHand(player,"Dragon Fodder",1);
+		addToHand(player,"Juniper Order Ranger",1);
+		addToHand(player,"Knight Exemplar",1);
+		addToHand(player,"Silver Knight",1);
+		addToHand(player,"Silvos, Rogue Elemental",1);
+		addToHand(player,"Visara the Dreadful",1);
+		addToHand(player,"Havoc Demon",1);
+		addToHand(player,"Thunder Dragon",1);
+		addToHand(player,"Arcanis the Omnipotent",1);
+		addToHand(player,"Perilous Myr",1);
+		
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Rupture Spire",false,7);
 		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
-		createPermanent(game,opponent,"Suture Priest",false,1);
+		createPermanent(game,opponent,"Silver Knight",false,1);
 		
 		return game;
 	}

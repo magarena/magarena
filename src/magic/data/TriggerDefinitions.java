@@ -999,6 +999,30 @@ public class TriggerDefinitions {
     
     private static final MagicTrigger GUUL_DRAZ_SPECTER=new MagicSpecterTrigger("Guul Draz Specter",true,false);
     
+	private static final MagicTrigger HAVOC_DEMON=new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Havoc Demon") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+			if (MagicLocationType.Play==triggerData.fromLocation) {
+				final MagicPlayer player=permanent.getController();
+				return new MagicEvent(permanent,player,new Object[]{player},this,"All creatures get -5/-5 until end of turn.");
+			}
+			return null;
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE);
+			for (final MagicTarget target : targets) {
+				
+				game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,-5,-5));
+			}
+		}
+    };
+    
     private static final MagicTrigger HERO_OF_BLADEHOLD=new MagicTrigger(MagicTriggerType.WhenAttacks,"Hero of Bladehold") {
 
 		@Override
@@ -1043,6 +1067,28 @@ public class TriggerDefinitions {
     };
 
     private static final MagicTrigger HYPNOTIC_SPECTER=new MagicSpecterTrigger("Hypnotic Specter",false,true);
+    
+    private static final MagicTrigger JUNIPER_ORDER_RANGER=new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay,"Juniper Order Ranger") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPermanent otherPermanent=(MagicPermanent)data;
+			final MagicPlayer player=permanent.getController();
+			if (otherPermanent!=permanent&&otherPermanent.isCreature()&&otherPermanent.getController()==player) {
+				return new MagicEvent(permanent,player,new Object[]{otherPermanent,permanent},this,
+					"Put a +1/+1 counter on "+otherPermanent.getName()+" and a +1/+1 counter on Juniper Order Ranger.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));			
+		}		
+    };
     
     private static final MagicTrigger KAERVEK_THE_MERCILESS=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Kaervek the Merciless") {
 
@@ -1764,6 +1810,30 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger PERILOUS_MYR=new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Perilous Myr") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+			if (MagicLocationType.Play==triggerData.fromLocation) {
+				return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(2),
+					new Object[]{permanent},this,"Perilous Myr deals 2 damage to target creature or player$.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicTarget target=event.getTarget(game,choiceResults,0);
+			if (target!=null) {
+				final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],target,2,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+    };
+    
     private static final MagicTrigger PERIMETER_CAPTAIN=new MagicTrigger(MagicTriggerType.WhenBlocks,"Perimeter Captain") {
 
 		@Override
@@ -2376,6 +2446,28 @@ public class TriggerDefinitions {
     
     private static final MagicTrigger THIEVING_MAGPIE=new MagicThiefTrigger("Thieving Magpie",false,1);
 
+    private static final MagicTrigger THUNDER_DRAGON=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Thunder Dragon") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"Thunder Dragon deals 3 damage to each creature without flying.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicSource source=(MagicSource)data[0];
+			final Collection<MagicTarget> creatures=game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+			for (final MagicTarget creature : creatures) {
+				
+				final MagicDamage damage=new MagicDamage(source,creature,3,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+    };
+    
     private static final MagicTrigger TREVA_THE_RENEWER=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Treva, the Renewer") {
 
 		@Override
@@ -3807,9 +3899,11 @@ public class TriggerDefinitions {
 	    GUARD_GOMAZOA,
 	    GUARDIAN_SERAPH,
 	    GUUL_DRAZ_SPECTER,
+	    HAVOC_DEMON,
 	    HERO_OF_BLADEHOLD,
 	    HUNGRY_SPRIGGAN,
 	    HYPNOTIC_SPECTER,
+	    JUNIPER_ORDER_RANGER,
 	    KAERVEK_THE_MERCILESS,
 	    KAZUUL_TYRANT_OF_THE_CLIFFS,
 	    KEENING_BANSHEE,
@@ -3844,6 +3938,7 @@ public class TriggerDefinitions {
 	    NULLTREAD_GARGANTUAN,
 	    PELAKKA_WURM1,
 	    PELAKKA_WURM2,
+	    PERILOUS_MYR,
 	    PERIMETER_CAPTAIN,
 	    OROS_THE_AVENGER,
 	    PHYREXIAN_VATMOTHER,
@@ -3877,6 +3972,7 @@ public class TriggerDefinitions {
 	    TAUREAN_MAULER,
 	    TENEB_THE_HARVESTER,
 	    THIEVING_MAGPIE,
+	    THUNDER_DRAGON,
 	    TREVA_THE_RENEWER,
 	    TRYGON_PREDATOR,
 	    TUKTUK_THE_EXPLORER,    

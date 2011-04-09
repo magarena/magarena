@@ -35,6 +35,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 	private static int goblinChieftain;
 	private static int godheadOfAwe;
 	private static int kinsbaileCavalier;
+	private static int knightExemplar;
 	private static int kulrathKnight;
 	private static int levitation;
 	private static int madrushCyclops;
@@ -98,6 +99,10 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		count=controller.getCount(goblinChieftain);
 		if (count>0&&permanent.hasSubType(MagicSubType.Goblin)) {
 			both+=getOtherCount(goblinChieftain,permanent,count);
+		}
+		count=controller.getCount(knightExemplar);
+		if (count>0&&permanent.hasSubType(MagicSubType.Knight)) {
+			both+=getOtherCount(knightExemplar,permanent,count);
 		}
 		count=controller.getCount(eleshNorn);
 		both+=getOtherCount(eleshNorn,permanent,count)*2;
@@ -165,6 +170,9 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 				(controller.getCount(goblinChieftain)>0&&permanent.hasSubType(MagicSubType.Goblin))) {
 				flags|=MagicAbility.Haste.getMask();
 			}
+			if (getOtherCount(knightExemplar,permanent,controller)>0&&permanent.hasSubType(MagicSubType.Knight)) {
+				flags|=MagicAbility.Indestructible.getMask();
+			}
 			if (game.getOtherPlayerCount(kulrathKnight,controller)>0&&permanent.hasCounters()) {
 				flags|=MagicAbility.CannotAttackOrBlock.getMask();
 			}
@@ -228,6 +236,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		goblinChieftain=definitions.getCard("Goblin Chieftain").getIndex();
 		godheadOfAwe=definitions.getCard("Godhead of Awe").getIndex();
 		kinsbaileCavalier=definitions.getCard("Kinsbaile Cavalier").getIndex();
+		knightExemplar=definitions.getCard("Knight Exemplar").getIndex();
 		kulrathKnight=definitions.getCard("Kulrath Knight").getIndex();
 		levitation=definitions.getCard("Levitation").getIndex();
 		madrushCyclops=definitions.getCard("Madrush Cyclops").getIndex();

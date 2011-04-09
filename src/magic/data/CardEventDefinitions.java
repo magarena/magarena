@@ -2119,6 +2119,26 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent DRAGON_FODDER=new MagicSpellCardEvent("Dragon Fodder") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack,player},this,
+				"Put two 1/1 red Goblin creature tokens onto the battlefield.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPlayer player=(MagicPlayer)data[1];
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.GOBLIN1_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.GOBLIN1_TOKEN_CARD));
+		}
+	};
+	
 	private static final MagicSpellCardEvent EARTHQUAKE=new MagicSpellCardEvent("Earthquake") {
 
 		@Override
@@ -2791,6 +2811,26 @@ public class CardEventDefinitions {
 			}
 		}
 	};
+	
+	private static final MagicSpellCardEvent VINDICATE=new MagicSpellCardEvent("Vindicate") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_PERMANENT,
+				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,"Destroy target permanent$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
+			if (permanent!=null) {
+				game.doAction(new MagicDestroyAction(permanent));
+			}
+		}
+	};
 
 	private static final MagicSpellCardEvent ZOMBIFY=new MagicSpellCardEvent("Zombify") {
 
@@ -3210,6 +3250,7 @@ public class CardEventDefinitions {
 		DAY_OF_JUDGMENT,
 		DEATH_GRASP,
 		DIVINATION,
+		DRAGON_FODDER,
 		EARTHQUAKE,
 		EXHAUSTION,
 		FLAME_SLASH,
@@ -3238,6 +3279,7 @@ public class CardEventDefinitions {
 		TIME_EBB,
 		TIME_WARP,
 		TITANIC_ULTIMATUM,
+		VINDICATE,
 		ZOMBIFY,
 		GOBLIN_BUSHWHACKER,
 		GOBLIN_RUINBLASTER,

@@ -95,7 +95,7 @@ import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 
 public class PermanentActivationDefinitions {
-
+	
 	private static final MagicPermanentActivation AIR_SERVANT=new MagicPermanentActivation("Air Servant",
 			new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},new MagicActivationHints(MagicTiming.Tapping)) {
 
@@ -119,6 +119,51 @@ public class PermanentActivationDefinitions {
 			if (creature!=null&&!creature.isTapped()) {
 				game.doAction(new MagicTapAction(creature,true));
 			}
+		}
+	};
+	
+	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT1=new MagicPermanentActivation("Arcanis the Omnipotent",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Token)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			final MagicPlayer player=source.getController();
+			return new MagicEvent(source,player,new Object[]{player},this,"You draw three cards.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicDrawAction((MagicPlayer)data[0],3));
+		}
+	};
+	
+	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT2=new MagicPermanentActivation("Arcanis the Omnipotent",
+			new MagicCondition[]{MagicManaCost.TWO_BLUE_BLUE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE_BLUE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Return Arcanis the Omnipotent to its owner's hand.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
 		}
 	};
 	
@@ -1492,6 +1537,8 @@ public class PermanentActivationDefinitions {
 			}
 		}
 	};
+	
+	private static final MagicPermanentActivation SILVOS_ROGUE_ELEMENTAL=new MagicRegenerationActivation("Silvos, Rogue Elemental",MagicManaCost.GREEN);
 
 	private static final MagicPermanentActivation SKELETAL_VAMPIRE1=new MagicPermanentActivation("Skeletal Vampire",
 			new MagicCondition[]{MagicManaCost.THREE_BLACK_BLACK.getCondition(),MagicCondition.CONTROL_BAT_CONDITION},
@@ -1841,6 +1888,33 @@ public class PermanentActivationDefinitions {
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+			}
+		}
+	};
+	
+	private static final MagicPermanentActivation VISARA_THE_DREADFUL=new MagicPermanentActivation("Visara the Dreadful",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,new MagicDestroyTargetPicker(true),
+				MagicEvent.NO_DATA,this,"Destroy target creature$. It can't be regenerated.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
+				game.doAction(new MagicDestroyAction(creature));
 			}
 		}
 	};
@@ -2538,6 +2612,8 @@ public class PermanentActivationDefinitions {
 	
 	private static Collection<MagicPermanentActivation> ACTIVATIONS=Arrays.asList(
 		AIR_SERVANT,
+		ARCANIS_THE_OMNIPOTENT1,
+		ARCANIS_THE_OMNIPOTENT2,
 		BOROS_GUILDMAGE1,
 		BOROS_GUILDMAGE2,
 		BOTTLE_GNOMES,
@@ -2598,6 +2674,7 @@ public class PermanentActivationDefinitions {
 		SCATTERSHOT_ARCHER,
 		SIEGE_GANG_COMMANDER,
 		SILKBIND_FAERIE,
+		SILVOS_ROGUE_ELEMENTAL,
 		SKELETAL_VAMPIRE1,
 		SKELETAL_VAMPIRE2,
 		SKITHIRYX1,
@@ -2617,6 +2694,7 @@ public class PermanentActivationDefinitions {
 		URSAPINE,
 		VAMPIRE_HEXMAGE,
 		VEDALKEN_MASTERMIND,
+		VISARA_THE_DREADFUL,
 		WALL_OF_BONE,
 		ANGELIC_SHIELD,
 		ASCETICISM,
