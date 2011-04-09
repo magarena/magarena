@@ -32,9 +32,10 @@ Have fun!
 Release 1.11 (April 11, 2011)
 ============
 
-- ubeefx cube (555 cards)
-- singularita cube (875 cards)
+- default cube (555 cards)
+- all cube (875 cards)
 
+- renamed the two standard cubes to default and all
 - added AI selection in preferences (default is same as MiniMax AI, random AI does random moves)
 - improved mana cost images (if already installed, delete symbols folder in Magarena data folder and load images)
 - improved card definition files, they now also contain the image url and cube information
