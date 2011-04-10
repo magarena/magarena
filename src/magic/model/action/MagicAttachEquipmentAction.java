@@ -37,7 +37,11 @@ public class MagicAttachEquipmentAction extends MagicAction {
 			score+=oldEquippedCreature.getScore(game);
 			if (oldEquippedCreature.getController()==equipment.getController()) {
 				// Prevent unnecessary equips.
-				score+=ArtificialScoringSystem.UNEQUIP_SCORE;
+				if (oldEquippedCreature==creature) {
+					score+=ArtificialScoringSystem.UNNECESSARY_EQUIP_SCORE;
+				} else {
+					score+=ArtificialScoringSystem.UNEQUIP_SCORE;
+				}
 			} else {
 				score=-score;
 			}

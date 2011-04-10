@@ -15,7 +15,8 @@ public class ArtificialScoringSystem {
 	public static final int WIN_GAME_SCORE=100000000;
 	public static final int LOSE_GAME_SCORE=-WIN_GAME_SCORE;
 	public static final int ITEM_ON_STACK_SCORE=-1;
-	public static final int UNEQUIP_SCORE=-50;
+	public static final int UNEQUIP_SCORE=-100;
+	public static final int UNNECESSARY_EQUIP_SCORE=-1000;
 	
 	private static final int LIFE_SCORES[]={0,1000,2000,3000,4000, 4500,5000,5500,6000,6500, 7000,7400,7800,8200,8600, 9000,9200,9400,9600,9800, 10000};
 	private static final int MAX_LIFE=LIFE_SCORES.length-1;
