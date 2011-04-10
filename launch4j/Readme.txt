@@ -27,9 +27,10 @@ Thanks to Salasnet for the felt theme.
 Thanks to singularita for creating the scripts to add over 300 additional creature cards to Magarena.
 You can play with these cards by selecting the all cube in the "New duel" dialog. 
 
-Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search or MCTS AI.
-The AI you want to play against can be selected in the preferences.
+The desired AI can be selected in the preferences.
 Recommended MiniMax AI difficulty level for the best balance of speed and strength is the default 6.
+The Vegas AI should be fast on all difficulty levels.
+Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search AI.
 
 Have fun!
 
