@@ -99,6 +99,6 @@ public class MagicTools {
 	public static void main(final String args[]) throws Exception {
 
 		MagicMain.initializeEngine();
-		moveCardImages();
+		listAllCards();
 	}
 }

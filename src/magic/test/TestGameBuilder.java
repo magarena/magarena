@@ -132,6 +132,7 @@ public class TestGameBuilder {
 		addToHand(player,"Thunder Dragon",1);
 		addToHand(player,"Arcanis the Omnipotent",1);
 		addToHand(player,"Perilous Myr",1);
+		addToHand(player,"Blackcleave Goblin",1);
 		
 		createPermanent(game,player,"Watchwolf",false,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
