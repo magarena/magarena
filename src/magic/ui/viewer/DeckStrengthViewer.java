@@ -20,6 +20,8 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 
 import magic.ai.ArtificialWorkerPool;
+import magic.ai.MagicAI;
+import magic.ai.MagicAIImpl;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.TournamentConfig;
@@ -40,12 +42,14 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		"Calculates an indicative win percentage for your deck by playing given " +
 		"number of games against your opponent at given difficulty level. "+
 		"</body></html>";
-
+	
 	private static final Border INPUT_BORDER=BorderFactory.createEmptyBorder(0,10,0,10);
 	private static final Color HIGH_COLOR=new Color(0x23,0x8E,0x23);
 	private static final Color MEDIUM_COLOR=new Color(0xFF,0x7F,0x00);
 	private static final Color LOW_COLOR=new Color(0xEE,0x2C,0x2C);
 	
+	private static final MagicAI DEFAULT_AIS[]=new MagicAI[]{MagicAIImpl.DEFAULT.getAI(),MagicAIImpl.DEFAULT.getAI()};
+
 	private final MagicTournament tournament;
 	private final JProgressBar progressBar;
 	private final JLabel gameLabel;
@@ -202,6 +206,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 			config.setNrOfGames(generalConfig.getStrengthGames());
 			final MagicTournament testTournament=new MagicTournament(config,tournament);
 			testTournament.setDifficulty(generalConfig.getStrengthDifficulty());
+			testTournament.setAIs(DEFAULT_AIS);
 			progressBar.setMaximum(testTournament.getGamesTotal());
 			progressBar.setValue(0);
 			setStrength(0);
