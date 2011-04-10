@@ -52,10 +52,12 @@ public class MagicActivationMap extends HashMap<MagicActivation,SortedSet<MagicS
 	private void removeActivation(final MagicActivation activation,final MagicSource source) {
 
 		final Set<MagicSource> sources=get(activation);		
-		sources.remove(source);
-		if (sources.isEmpty()) {
-			remove(activation);
-			activations.remove(activation);
+		if (sources!=null) {
+			sources.remove(source);
+			if (sources.isEmpty()) {
+				remove(activation);
+				activations.remove(activation);
+			}
 		}
 	}
 	

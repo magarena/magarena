@@ -40,7 +40,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_HEIGHT=700;
 	private static final boolean DEFAULT_MAXIMIZED=false;
 	private static final String DEFAULT_THEME="wood";
-	private static final String DEFAULT_AI="default";
+	private static final String DEFAULT_AI=MagicAIImpl.DEFAULT.getName();
 	private static final int DEFAULT_UNDO_LEVELS=5;
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
