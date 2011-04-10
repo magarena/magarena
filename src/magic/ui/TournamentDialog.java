@@ -251,6 +251,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			model.addElement("r");
 			model.addElement("w");
 			model.addElement("*");
+			model.addElement("@");
 			setModel(model);
 			setSelectedItem(colors);
 			this.setFocusable(false);
@@ -265,7 +266,12 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			for (int i=0;i<colors.length();i++) {
 				
 				final char ch=colors.charAt(i);
-				final ImageIcon icon=ch=='*'?IconImages.ANY:MagicColor.getColor(ch).getIcon();
+				final ImageIcon icon;
+				switch (ch) {
+					case '*': icon=IconImages.ANY; break;
+					case '@': icon=IconImages.FOLDER; break;
+					default: icon=MagicColor.getColor(ch).getIcon(); break;
+				}
 				panel.add(new JLabel(icon));
 			}
 			panel.setBorder(FontsAndBorders.EMPTY_BORDER);

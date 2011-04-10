@@ -27,7 +27,7 @@ Thanks to Salasnet for the felt theme.
 Thanks to singularita for creating the scripts to add over 300 additional creature cards to Magarena.
 You can play with these cards by selecting the all cube in the "New duel" dialog. 
 
-Thanks to Melvin Zhang for implementing the new Monte Carlo Tree Search or MCTS AI.
+Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search or MCTS AI.
 The AI you want to play against can be selected in the preferences.
 Recommended MiniMax AI difficulty level for the best balance of speed and strength is the default 6.
 
@@ -43,9 +43,11 @@ Release 1.11 (April 11, 2011)
 - improved displaying of messages with scroll bar and toggle button + F1 shortcut to show or hide messages
 - improved mana cost images (if already installed, delete symbols folder in Magarena data folder and load images)
 - improved card definition files, they now also contain the image url and cube information
-- improved scoring for unnecessary equips
+- improved scoring for unnecessary equiping
 - three new AI implementations are available next to the default MiniMax AI : Monte Carlo, Vegas and Random
-- preferred AI can be selected in preferences
+- the preferred AI can be selected in preferences, the deck strength calculator always uses MiniMax AI
+- added New and Load Duel buttons on startup screen
+- added option to a select random deck from decks folder in New Duel dialog (folder icon)
 
 - fixed Lightning Helix, it can now target your own permanents with filter legal targets enabled
 

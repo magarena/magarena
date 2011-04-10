@@ -63,8 +63,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		add(strengthViewer);
 		
 		playersViewer=new PlayersViewer(tournament);
-		playersViewer.addChangeListener(deckViewers.getSpellViewer());
-		playersViewer.addChangeListener(deckViewers.getLandViewer());
+		playersViewer.addChangeListener(deckViewers);
 		playersViewer.addChangeListener(statsViewer);
 		playersViewer.changePlayer(0);
 		add(playersViewer);

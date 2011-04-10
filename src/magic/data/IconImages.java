@@ -26,6 +26,7 @@ public class IconImages {
 	public static final ImageIcon ARENA=loadIcon("arena.png");
 	public static final ImageIcon CUBE=loadIcon("cube.png");
 	public static final ImageIcon ANY=loadIcon("any.png");
+	public static final ImageIcon FOLDER=loadIcon("folder.png");
 	public static final ImageIcon LOG=loadIcon("log.png");
 	public static final ImageIcon TEXT=loadIcon("text.png");
 	public static final ImageIcon OK=loadIcon("ok.gif");

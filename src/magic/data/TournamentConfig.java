@@ -14,6 +14,7 @@ public class TournamentConfig {
 
 	private static TournamentConfig INSTANCE=new TournamentConfig();
 
+	private static final String ANY_DECK="@";
 	private static final String ANY_THREE="***";
 	private static final String ANY_TWO="**";
 	private static final String ANY_ONE="*";
@@ -103,7 +104,9 @@ public class TournamentConfig {
 	
 	private static MagicPlayerProfile getProfile(final String colorText) {
 		
-		if (ANY_THREE.equals(colorText)) {
+		if (ANY_DECK.equals(colorText)) {
+			return new MagicPlayerProfile("");
+		} else if (ANY_THREE.equals(colorText)) {
 			return new MagicPlayerProfile(MagicColor.getRandomColors(3));
 		} else if (ANY_TWO.equals(colorText)) {
 			return new MagicPlayerProfile(MagicColor.getRandomColors(2));

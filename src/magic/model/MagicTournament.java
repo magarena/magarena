@@ -12,6 +12,7 @@ import magic.MagicMain;
 import magic.ai.MagicAI;
 import magic.data.CubeDefinitions;
 import magic.data.DeckGenerator;
+import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.TournamentConfig;
 import magic.model.phase.MagicDefaultGameplay;
@@ -215,7 +216,11 @@ public class MagicTournament {
 		final DeckGenerator generator=new DeckGenerator(cubeDefinition);
 		for (final MagicPlayerDefinition player : playerDefinitions) {
 
-			player.generateDeck(generator);
+			if (player.getProfile().getNrOfColors()==0) {
+				DeckUtils.loadRandomDeck(player);
+			} else {
+				player.generateDeck(generator);
+			}
 		}
 	}
 					

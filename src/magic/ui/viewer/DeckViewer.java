@@ -18,8 +18,6 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
@@ -32,7 +30,7 @@ import magic.ui.MagicFrame;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
 
-public class DeckViewer extends JPanel implements ChangeListener {
+public class DeckViewer extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -89,15 +87,21 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		
 		this.nameFont=nameFont;
 	}
-	
-	public void setPlayer(final MagicPlayerDefinition player) {
 		
+	public void changePlayer(final MagicPlayerDefinition player) {
+
 		this.player=player;
+		update();
 	}
 	
 	public MagicPlayerDefinition getPlayer() {
 		
 		return player;
+	}
+	
+	public String getDeckName() {
+		
+		return player==null?"Deck":player.getDeck().getName();
 	}
 	
 	public void update() {
@@ -148,13 +152,6 @@ public class DeckViewer extends JPanel implements ChangeListener {
 		update();
 	}
 	
-	@Override
-	public void stateChanged(ChangeEvent event) {
-
-		setPlayer((MagicPlayerDefinition)event.getSource());
-		update();
-	}
-
 	private static class ColorPanel extends JPanel {
 
 		private static final long serialVersionUID = 1L;

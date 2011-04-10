@@ -9,6 +9,7 @@ import javax.swing.event.ChangeListener;
 
 import magic.data.IconImages;
 import magic.model.MagicCubeDefinition;
+import magic.model.MagicPlayerDefinition;
 import magic.ui.MagicFrame;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
@@ -59,23 +60,38 @@ public class DeckViewers extends JPanel implements ChangeListener {
 		return landViewer;
 	}
 	
+	private void updateTitle() {
+		
+		final String deckName=spellViewer.getDeckName();
+		titleBar.setText(tabSelector.getSelectedTab()==0?deckName+" : Spells":deckName+" : Lands");
+	}
+	
 	public void update() {
 		
 		spellViewer.update();
 		landViewer.update();
+		updateTitle();
 	}
 	
 	public void updateAfterEdit() {
 		
 		spellViewer.updateAfterEdit();
 		landViewer.update();
+		updateTitle();
 	}
 
 	@Override
 	public void stateChanged(final ChangeEvent event) {
 
-		final int selectedTab=tabSelector.getSelectedTab();
-		titleBar.setText(selectedTab==0?"Deck : Spells":"Deck : Lands");
-		cardLayout.show(cardPanel,""+selectedTab);
+		final Object source=event.getSource();
+		if (source instanceof MagicPlayerDefinition) {
+			final MagicPlayerDefinition player=(MagicPlayerDefinition)source;
+			spellViewer.changePlayer(player);
+			landViewer.changePlayer(player);
+		} else {
+			final int selectedTab=tabSelector.getSelectedTab();			
+			cardLayout.show(cardPanel,""+selectedTab);			
+		}
+		updateTitle();
 	}
 }
