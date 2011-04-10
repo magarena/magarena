@@ -5,10 +5,11 @@ public enum MagicAIImpl {
     DEFAULT("default", new MiniMaxAlphaBetaAI()),
     MMAB("minimax", new MiniMaxAlphaBetaAI()), 
     MCTS("monte carlo", new MCTSAI()),
+    VEGAS("vegas", new VegasAI()),
     RND("random", new RandomAI()),
     ;
     
-    private static MagicAIImpl SUPPORTED_AIS[] = new MagicAIImpl[]{DEFAULT, MMAB, MCTS, RND};
+    private static MagicAIImpl SUPPORTED_AIS[] = new MagicAIImpl[]{DEFAULT, MMAB, MCTS, VEGAS, RND};
     
     private final String name;
     private final MagicAI ai;
