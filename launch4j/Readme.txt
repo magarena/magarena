@@ -19,9 +19,9 @@ Magarena supports the following keyboard shortcuts :
 The UI of Magarena can be customized with downloadable themes coming in zip files.
 A theme pack with five color themes can be downloaded on the project page.
 The theme pack should be unzipped into the mods folder of the Magarena data folder.
-Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
 There are also separate themes like the mystic theme which can be placed directly into the mods folder.
 It is best to restart the application each time after switching to one of these themes in preferences.
+Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
 Thanks to Salasnet for the felt theme.
 
 Thanks to singularita for creating the scripts to add over 300 additional creature cards to Magarena.
