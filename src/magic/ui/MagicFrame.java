@@ -139,7 +139,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private void setInitialContent() {
 		
-		setContent(new VersionPanel());			
+		setContent(new VersionPanel(this));			
 		if (testGame) {
 			openGame(TestGameBuilder.buildGame());
 		} 
@@ -277,6 +277,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
+	public void showNewTournamentDialog() {
+		
+		new TournamentDialog(this);
+	}
+	
 	public void newTournament(final TournamentConfig configuration) {
 
 		tournament=new MagicTournament(configuration);
@@ -284,7 +289,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		showTournament();
 	}
 	
-	private void loadTournament() {
+	public void loadTournament() {
 
 		final File tournamentFile=MagicTournament.getTournamentFile();
 		if (tournamentFile.exists()) {
@@ -428,7 +433,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 
 		final Object source=event.getSource();
 		if (source==newTournamentItem) {
-			new TournamentDialog(this);
+			showNewTournamentDialog();
 		} else if (source==loadTournamentItem) {
 			loadTournament();
 		} else if (source==saveTournamentItem) {
