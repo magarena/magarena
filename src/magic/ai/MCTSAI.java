@@ -66,7 +66,7 @@ function getValueByMC(node)
 public class MCTSAI implements MagicAI {
     
     private static final int MAXSIM = 100000;
-    private static final double C = 1.0;
+    private static final double C = 0.3;
     private final boolean LOGGING;
     private final Random RNG = new Random(123);
 
@@ -150,13 +150,13 @@ public class MCTSAI implements MagicAI {
         }
         logc('\n');
 
-        //select the best choice (child that has the largest visit count)
-        int maxV = -1;
+        //select the best choice (child that has the highest secure score)
+        double maxV = -1e10;
         int maxS = 0;
         int idx = -1;
         final List<ArtificialChoiceResults> achoices = getACR(choices);
         for (MCTSGameTree node : root) {
-            achoices.get(node.getChoice()).worker = (int)(100 * node.getScore());
+            achoices.get(node.getChoice()).worker = (int)(node.getV() * 100);
             achoices.get(node.getChoice()).gameCount = node.getNumSim();
             if (node.getNumSim() > maxV) { 
                 maxV = node.getNumSim();
@@ -166,7 +166,7 @@ public class MCTSAI implements MagicAI {
         }
         
         final long duration = System.currentTimeMillis() - startTime;
-        log("MCTS took " + duration + "ms to execute " + numSim + " simulations");
+        log("MCTS took " + duration + "ms to run " + numSim + " simulations");
         
         log(pinfo); 
         final ArtificialChoiceResults selected = achoices.get(idx);
@@ -269,14 +269,14 @@ public class MCTSAI implements MagicAI {
         assert (game.getMainPhaseCount() > 0) : "main phase count is zero";
 	
         final int mainPhaseCount = 100000000;
-        final int length = mainPhaseCount - game.getMainPhaseCount();
+        final int length = Math.max(1,mainPhaseCount - game.getMainPhaseCount());
       
         if (game.getLosingPlayer() == null) {
             return 0;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return -1.0/Math.sqrt(length);
+            return -1.0/Math.pow(length, 0.25);
         } else {
-            return 1.0/Math.sqrt(length);
+            return 1.0/Math.pow(length, 0.25);
         }
     }
     
@@ -330,13 +330,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         this.evalScore = evalScore;
         this.choice = choice;
     }
-
-    public MCTSGameTree first() {
-        return children.get(0);
-    }
     
-    public Iterator<MCTSGameTree> iterator() {
-        return children.iterator();
+    public void updateScore(final double score) {
+        this.score += score;
+        numSim += 1;
     }
 
     public int getChoice() {
@@ -351,11 +348,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return score;
     }
 
-    public void updateScore(final double score) {
-        this.score += score;
-        numSim += 1;
-    }
-
     public int getNumSim() {
         return numSim;
     }
@@ -363,9 +355,21 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public double getV() {
         return score / numSim;
     }
+    
+    public double getSecureScore() {
+        return getV() + 1.0/Math.sqrt(getNumSim());
+    }
 
     public void addChild(MCTSGameTree child) {
         children.add(child);
+    }
+    
+    public MCTSGameTree first() {
+        return children.get(0);
+    }
+    
+    public Iterator<MCTSGameTree> iterator() {
+        return children.iterator();
     }
 
     public int size() {
