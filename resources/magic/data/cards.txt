@@ -1,5 +1,4 @@
 >Akrasan Squire
-image=http://magiccards.info/scans/en/ala/1.jpg
 cube=default
 value=2
 rarity=1
@@ -14,7 +13,6 @@ ability=exalted
 timing=fmain
 
 >Ashenmoor Gouger
-image=http://magiccards.info/scans/en/shm/180.jpg
 cube=default
 value=3
 rarity=2
@@ -29,7 +27,6 @@ ability=can't block
 timing=fmain
 
 >Akroma, Angel of Wrath
-image=http://magiccards.info/scans/en/tsts/1.jpg
 cube=default
 value=5
 rarity=3
@@ -44,7 +41,6 @@ ability=flying,first strike,vigilance,trample,haste,protection from black,protec
 timing=fmain
 
 >Assault Zeppelid
-image=http://magiccards.info/scans/en/di/103.jpg
 cube=default
 value=3
 rarity=1
@@ -59,7 +55,6 @@ ability=flying,trample
 timing=main
 
 >Aven Mimeomancer
-image=http://magiccards.info/scans/en/arb/2.jpg
 cube=default
 value=4
 rarity=2
@@ -74,7 +69,6 @@ ability=flying
 timing=smain
 
 >Balefire Liege
-image=http://magiccards.info/scans/en/pch/97.jpg
 cube=default
 value=4
 rarity=2
@@ -89,7 +83,6 @@ static=player
 timing=fmain
 
 >Battlegrace Angel
-image=http://magiccards.info/scans/en/ala/6.jpg
 cube=default
 value=4
 rarity=2
@@ -104,7 +97,6 @@ ability=flying,exalted
 timing=fmain
 
 >Birds of Paradise
-image=http://magiccards.info/scans/en/m11/165.jpg
 cube=default
 value=4
 rarity=2
@@ -119,7 +111,6 @@ ability=flying
 timing=smain
 
 >Black Knight
-image=http://magiccards.info/scans/en/m11/83.jpg
 cube=default
 value=3
 rarity=2
@@ -134,7 +125,6 @@ ability=first strike,protection from white
 timing=main
 
 >Cunning Sparkmage
-image=http://magiccards.info/scans/en/wwk/79.jpg
 cube=default
 value=3
 rarity=1
@@ -149,7 +139,6 @@ ability=haste
 timing=fmain
 
 >Bloodmark Mentor
-image=http://magiccards.info/scans/en/shm/83.jpg
 cube=default
 value=2
 rarity=1
@@ -164,7 +153,6 @@ static=player
 timing=fmain
 
 >Bloodrock Cyclops
-image=http://magiccards.info/scans/en/10e/192.jpg
 cube=default
 value=2
 rarity=1
@@ -179,7 +167,6 @@ ability=attacks each turn if able
 timing=main
 
 >Boartusk Liege
-image=http://magiccards.info/scans/en/shm/202.jpg
 cube=default
 value=4
 rarity=2
@@ -195,7 +182,6 @@ static=player
 timing=fmain
 
 >Boggart Ram-Gang
-image=http://magiccards.info/scans/en/shm/203.jpg
 cube=default
 value=3
 rarity=2
@@ -210,7 +196,6 @@ ability=haste,wither
 timing=fmain
 
 >Brion Stoutarm
-image=http://magiccards.info/scans/en/lw/246.jpg
 cube=default
 value=5
 rarity=3
@@ -225,7 +210,6 @@ ability=lifelink
 timing=smain
 
 >Broodmate Dragon
-image=http://magiccards.info/scans/en/ala/160.jpg
 cube=default
 value=5
 rarity=3
@@ -240,7 +224,6 @@ ability=flying
 timing=main
 
 >Cerodon Yearling
-image=http://magiccards.info/scans/en/pch/86.jpg
 cube=default
 value=3
 rarity=1
@@ -255,7 +238,6 @@ ability=vigilance,haste
 timing=fmain
 
 >Chameleon Colossus
-image=http://magiccards.info/scans/en/arc/52.jpg
 cube=default
 value=4
 rarity=2
@@ -270,7 +252,6 @@ ability=changeling,protection from black
 timing=main
 
 >Keiga, the Tide Star
-image=http://magiccards.info/scans/en/chk/72.jpg
 cube=default
 value=5
 rarity=3
@@ -285,7 +266,6 @@ ability=flying
 timing=main
 
 >Creakwood Liege
-image=http://magiccards.info/scans/en/eve/117.jpg
 cube=default
 value=4
 rarity=2
@@ -300,7 +280,6 @@ static=player
 timing=fmain
 
 >Cursecatcher
-image=http://magiccards.info/scans/en/shm/34.jpg
 cube=default
 value=1
 rarity=1
@@ -314,7 +293,6 @@ toughness=1
 timing=fmain
 
 >Daggerclaw Imp
-image=http://magiccards.info/scans/en/dvd/33.jpg
 cube=default
 value=3
 rarity=1
@@ -329,7 +307,6 @@ ability=flying,can't block
 timing=fmain
 
 >Dauntless Escort
-image=http://magiccards.info/scans/en/arb/67.jpg
 cube=default
 value=4
 rarity=2
@@ -343,7 +320,6 @@ toughness=3
 timing=fmain
 
 >Deathbringer Liege
-image=http://magiccards.info/scans/en/eve/85.jpg
 cube=default
 value=4
 rarity=2
@@ -358,7 +334,6 @@ static=player
 timing=fmain
 
 >Doomgape
-image=http://magiccards.info/scans/en/eve/120.jpg
 cube=default
 value=5
 rarity=3
@@ -373,7 +348,6 @@ ability=trample
 timing=main
 
 >Dread
-image=http://magiccards.info/scans/en/lw/107.jpg
 cube=default
 value=5
 rarity=3
@@ -388,7 +362,6 @@ ability=fear
 timing=fmain
 
 >Skinrender
-image=http://magiccards.info/scans/en/som/78.jpg
 cube=default
 value=4
 rarity=1
@@ -403,7 +376,6 @@ toughness=3
 timing=fmain
 
 >Safehold Elite
-image=http://magiccards.info/scans/en/shm/239.jpg
 cube=default
 value=2
 rarity=1
@@ -418,7 +390,6 @@ ability=persist
 timing=main
 
 >Empyrial Archangel
-image=http://magiccards.info/scans/en/ala/166.jpg
 cube=default
 value=5
 rarity=3
@@ -433,7 +404,6 @@ ability=flying,shroud
 timing=fmain
 
 >Femeref Archers
-image=http://magiccards.info/scans/en/10e/264.jpg
 cube=default
 value=3
 rarity=1
@@ -447,7 +417,6 @@ toughness=2
 timing=smain
 
 >Fireslinger
-image=http://magiccards.info/scans/en/jvc/36.jpg
 cube=default
 value=2
 rarity=1
@@ -461,7 +430,6 @@ toughness=1
 timing=smain
 
 >Flameblast Dragon
-image=http://magiccards.info/scans/en/arc/38.jpg
 cube=default
 value=5
 rarity=3
@@ -476,7 +444,6 @@ ability=flying
 timing=main
 
 >Flametongue Kavu
-image=http://magiccards.info/scans/en/pch/54.jpg
 cube=default
 value=4
 removal=2
@@ -491,7 +458,6 @@ toughness=2
 timing=fmain
 
 >Foul Imp
-image=http://magiccards.info/scans/en/dvd/32.jpg
 cube=default
 value=2
 rarity=1
@@ -506,7 +472,6 @@ ability=flying
 timing=smain
 
 >Furnace Whelp
-image=http://magiccards.info/scans/en/arc/39.jpg
 cube=default
 value=4
 rarity=1
@@ -521,7 +486,6 @@ ability=flying
 timing=main
 
 >Glen Elendra Liege
-image=http://magiccards.info/scans/en/shm/163.jpg
 cube=default
 value=4
 rarity=2
@@ -537,7 +501,6 @@ static=player
 timing=fmain
 
 >Gloomwidow
-image=http://magiccards.info/scans/en/shm/117.jpg
 cube=default
 value=3
 rarity=1
@@ -552,7 +515,6 @@ ability=reach,can't block creatures without flying
 timing=main
 
 >Godsire
-image=http://magiccards.info/scans/en/ala/170.jpg
 cube=default
 value=5
 rarity=3
@@ -567,7 +529,6 @@ ability=vigilance
 timing=main
 
 >Omnibian
-image=http://magiccards.info/scans/en/di/119.jpg
 cube=default
 value=4
 rarity=2
@@ -581,7 +542,6 @@ toughness=3
 timing=smain
 
 >Hateflayer
-image=http://magiccards.info/scans/en/eve/55.jpg
 cube=default
 value=5
 rarity=3
@@ -596,7 +556,6 @@ ability=wither
 timing=main
 
 >Boros Guildmage
-image=http://magiccards.info/scans/en/pch/99.jpg
 cube=default
 value=3
 rarity=2
@@ -610,7 +569,6 @@ toughness=2
 timing=fmain
 
 >Hellkite Overlord
-image=http://magiccards.info/scans/en/ala/172.jpg
 cube=default
 value=5
 rarity=3
@@ -625,7 +583,6 @@ ability=flying,trample,haste
 timing=fmain
 
 >Hungry Spriggan
-image=http://magiccards.info/scans/en/shm/120.jpg
 cube=default
 value=3
 rarity=1
@@ -640,7 +597,6 @@ ability=trample
 timing=main
 
 >Hypnotic Specter
-image=http://magiccards.info/scans/en/m10/100.jpg
 cube=default
 value=4
 rarity=2
@@ -655,7 +611,6 @@ ability=flying
 timing=main
 
 >Inkfathom Infiltrator
-image=http://magiccards.info/scans/en/shm/167.jpg
 cube=default
 value=3
 rarity=2
@@ -670,7 +625,6 @@ ability=can't block,unblockable
 timing=fmain
 
 >Siege-Gang Commander
-image=http://magiccards.info/scans/en/m10/157.jpg
 cube=default
 value=4
 rarity=2
@@ -684,7 +638,6 @@ toughness=2
 timing=fmain
 
 >Jhessian Balmgiver
-image=http://magiccards.info/scans/en/cfx/112.jpg
 cube=default
 value=3
 rarity=1
@@ -698,7 +651,6 @@ toughness=1
 timing=smain
 
 >Jhessian Infiltrator
-image=http://magiccards.info/scans/en/ala/174.jpg
 cube=default
 value=3
 rarity=2
@@ -713,7 +665,6 @@ ability=unblockable
 timing=main
 
 >Kabuto Moth
-image=http://magiccards.info/scans/en/chk/20.jpg
 cube=default
 value=4
 rarity=1
@@ -728,7 +679,6 @@ ability=flying
 timing=smain
 
 >Keening Banshee
-image=http://magiccards.info/scans/en/rav/92.jpg
 cube=default
 value=4
 rarity=2
@@ -744,7 +694,6 @@ ability=flying
 timing=fmain
 
 >Knight of Meadowgrain
-image=http://magiccards.info/scans/en/lw/28.jpg
 cube=default
 value=3
 rarity=1
@@ -759,7 +708,6 @@ ability=first strike,lifelink
 timing=main
 
 >Watchwolf
-image=http://magiccards.info/scans/en/arc/100.jpg
 cube=default
 value=3
 rarity=2
@@ -773,7 +721,6 @@ toughness=3
 timing=main
 
 >Kulrath Knight
-image=http://magiccards.info/scans/en/shm/190.jpg
 cube=default
 value=4
 rarity=2
@@ -789,7 +736,6 @@ static=opponent
 timing=fmain
 
 >Lavaborn Muse
-image=http://magiccards.info/scans/en/10e/216.jpg
 cube=default
 value=4
 rarity=2
@@ -803,7 +749,6 @@ toughness=3
 timing=smain
 
 >Lightning Reaver
-image=http://magiccards.info/scans/en/arb/42.jpg
 cube=default
 value=4
 rarity=2
@@ -818,7 +763,6 @@ ability=fear,haste
 timing=main
 
 >Llanowar Elves
-image=http://magiccards.info/scans/en/m11/184.jpg
 cube=default
 value=3
 rarity=1
@@ -832,7 +776,6 @@ toughness=1
 timing=smain
 
 >Winged Coatl
-image=http://magiccards.info/scans/en/arb/105.jpg
 cube=default
 value=3
 removal=2
@@ -848,7 +791,6 @@ ability=flash,flying,deathtouch
 timing=flash
 
 >Loxodon Hierarch
-image=http://magiccards.info/scans/en/rav/214.jpg
 cube=default
 value=4
 rarity=2
@@ -862,7 +804,6 @@ toughness=4
 timing=fmain
 
 >Spirit of the Hearth
-image=http://magiccards.info/scans/en/eve/14.jpg
 cube=default
 value=5
 rarity=3
@@ -877,7 +818,6 @@ ability=flying
 timing=fmain
 
 >Madrush Cyclops
-image=http://magiccards.info/scans/en/arb/119.jpg
 cube=default
 value=4
 rarity=2
@@ -891,7 +831,6 @@ toughness=4
 timing=fmain
 
 >Terra Stomper
-image=http://magiccards.info/scans/en/zen/187.jpg
 cube=default
 value=5
 rarity=3
@@ -906,7 +845,6 @@ ability=can't be countered,trample
 timing=main
 
 >Marisi's Twinclaws
-image=http://magiccards.info/scans/en/arb/140.jpg
 cube=default
 value=4
 rarity=2
@@ -921,7 +859,6 @@ ability=double strike
 timing=main
 
 >Meglonoth
-image=http://magiccards.info/scans/en/cfx/118.jpg
 cube=default
 value=5
 rarity=3
@@ -936,7 +873,6 @@ ability=vigilance,trample
 timing=main
 
 >Messenger Falcons
-image=http://magiccards.info/scans/en/arb/145.jpg
 cube=default
 value=3
 rarity=2
@@ -951,7 +887,6 @@ ability=flying
 timing=fmain
 
 >Midnight Banshee
-image=http://magiccards.info/scans/en/shm/72.jpg
 cube=default
 value=5
 rarity=3
@@ -966,7 +901,6 @@ ability=wither
 timing=smain
 
 >Mire Boa
-image=http://magiccards.info/scans/en/pc/135.jpg
 cube=default
 value=2
 rarity=2
@@ -981,7 +915,6 @@ ability=swampwalk
 timing=main
 
 >Mirri the Cursed
-image=http://magiccards.info/scans/en/pc/75.jpg
 cube=default
 value=4
 rarity=3
@@ -996,7 +929,6 @@ ability=flying,first strike,haste
 timing=fmain
 
 >Mogg Fanatic
-image=http://magiccards.info/scans/en/10e/219.jpg
 cube=default
 value=2
 rarity=1
@@ -1010,7 +942,6 @@ toughness=1
 timing=fmain
 
 >Moroii
-image=http://magiccards.info/scans/en/rav/216.jpg
 cube=default
 value=4
 rarity=2
@@ -1025,7 +956,6 @@ ability=flying
 timing=main
 
 >Murkfiend Liege
-image=http://magiccards.info/scans/en/eve/156.jpg
 cube=default
 value=4
 rarity=2
@@ -1040,7 +970,6 @@ static=player
 timing=fmain
 
 >Steel Wall
-image=http://magiccards.info/scans/en/mi/248.jpg
 cube=default
 value=1
 rarity=1
@@ -1054,7 +983,6 @@ ability=defender
 timing=smain
 
 >Flame-Kin Zealot
-image=http://magiccards.info/scans/en/rav/206.jpg
 cube=default
 value=3
 rarity=2
@@ -1068,7 +996,6 @@ toughness=2
 timing=fmain
 
 >Noble Hierarch
-image=http://magiccards.info/scans/en/cfx/87.jpg
 cube=default
 value=3
 rarity=2
@@ -1083,7 +1010,6 @@ ability=exalted
 timing=main
 
 >Oracle of Nectars
-image=http://magiccards.info/scans/en/shm/233.jpg
 cube=default
 value=2
 rarity=1
@@ -1097,7 +1023,6 @@ toughness=2
 timing=smain
 
 >Paladin en-Vec
-image=http://magiccards.info/scans/en/10e/32.jpg
 cube=default
 value=4
 rarity=2
@@ -1112,7 +1037,6 @@ ability=first strike,protection from black,protection from red
 timing=main
 
 >Silkbind Faerie
-image=http://magiccards.info/scans/en/shm/148.jpg
 cube=default
 value=3
 rarity=1
@@ -1127,7 +1051,6 @@ ability=flying
 timing=main
 
 >Tidehollow Strix
-image=http://magiccards.info/scans/en/ala/203.jpg
 cube=default
 value=3
 rarity=1
@@ -1142,7 +1065,6 @@ ability=flying,deathtouch
 timing=smain
 
 >Prickly Boggart
-image=http://magiccards.info/scans/en/mt/74.jpg
 cube=default
 value=1
 rarity=1
@@ -1157,7 +1079,6 @@ ability=fear
 timing=main
 
 >Putrid Leech
-image=http://magiccards.info/scans/en/arb/95.jpg
 cube=default
 value=3
 rarity=1
@@ -1171,7 +1092,6 @@ toughness=2
 timing=main
 
 >Rafiq of the Many
-image=http://magiccards.info/scans/en/ala/185.jpg
 cube=default
 value=4
 rarity=3
@@ -1186,7 +1106,6 @@ ability=exalted
 timing=fmain
 
 >Goblin Bushwhacker
-image=http://magiccards.info/scans/en/zen/125.jpg
 cube=default
 value=2
 rarity=1
@@ -1200,7 +1119,6 @@ toughness=1
 timing=fmain
 
 >Rakdos Guildmage
-image=http://magiccards.info/scans/en/di/145.jpg
 cube=default
 value=3
 rarity=2
@@ -1214,7 +1132,6 @@ toughness=2
 timing=fmain
 
 >Rendclaw Trow
-image=http://magiccards.info/scans/en/eve/127.jpg
 cube=default
 value=2
 rarity=1
@@ -1229,7 +1146,6 @@ ability=wither,persist
 timing=smain
 
 >Retaliator Griffin
-image=http://magiccards.info/scans/en/arb/123.jpg
 cube=default
 value=4
 rarity=2
@@ -1244,7 +1160,6 @@ ability=flying
 timing=fmain
 
 >Rhox Charger
-image=http://magiccards.info/scans/en/ala/145.jpg
 cube=default
 value=3
 rarity=1
@@ -1259,7 +1174,6 @@ ability=trample,exalted
 timing=fmain
 
 >Rustrazor Butcher
-image=http://magiccards.info/scans/en/shm/105.jpg
 cube=default
 value=2
 rarity=1
@@ -1274,7 +1188,6 @@ ability=first strike,wither
 timing=main
 
 >Scattershot Archer
-image=http://magiccards.info/scans/en/cfx/90.jpg
 cube=default
 value=1
 rarity=1
@@ -1288,7 +1201,6 @@ toughness=2
 timing=smain
 
 >Zephyr Sprite
-image=http://magiccards.info/scans/en/m10/82.jpg
 cube=default
 value=1
 rarity=1
@@ -1303,7 +1215,6 @@ ability=flying
 timing=main
 
 >Brigid, Hero of Kinsbaile
-image=http://magiccards.info/scans/en/lw/6.jpg
 cube=default
 value=4
 rarity=3
@@ -1318,7 +1229,6 @@ ability=first strike
 timing=smain
 
 >Sickle Ripper
-image=http://magiccards.info/scans/en/shm/77.jpg
 cube=default
 value=2
 rarity=1
@@ -1333,7 +1243,6 @@ ability=wither
 timing=main
 
 >Sigiled Paladin
-image=http://magiccards.info/scans/en/ala/27.jpg
 cube=default
 value=3
 rarity=2
@@ -1348,7 +1257,6 @@ ability=first strike,exalted
 timing=fmain
 
 >Silhana Ledgewalker
-image=http://magiccards.info/scans/en/gp/94.jpg
 cube=default
 value=2
 rarity=1
@@ -1363,7 +1271,6 @@ ability=can't be blocked except by creatures with flying,can't be the target of 
 timing=fmain
 
 >Simic Sky Swallower
-image=http://magiccards.info/scans/en/di/130.jpg
 cube=default
 value=5
 rarity=3
@@ -1378,7 +1285,6 @@ ability=flying,trample,shroud
 timing=fmain
 
 >Perimeter Captain
-image=http://magiccards.info/scans/en/wwk/16.jpg
 cube=default
 value=2
 rarity=1
@@ -1393,7 +1299,6 @@ ability=defender
 timing=smain
 
 >Souls of the Faultless
-image=http://magiccards.info/scans/en/gp/131.jpg
 cube=default
 value=3
 rarity=2
@@ -1408,7 +1313,6 @@ ability=defender
 timing=smain
 
 >Pelakka Wurm
-image=http://magiccards.info/scans/en/roe/204.jpg
 cube=default
 value=5
 rarity=3
@@ -1423,7 +1327,6 @@ ability=trample
 timing=fmain
 
 >Spiketail Hatchling
-image=http://magiccards.info/scans/en/10e/111.jpg
 cube=default
 value=2
 rarity=1
@@ -1438,7 +1341,6 @@ ability=flying
 timing=fmain
 
 >Stalker Hag
-image=http://magiccards.info/scans/en/eve/129.jpg
 cube=default
 value=3
 rarity=2
@@ -1453,7 +1355,6 @@ ability=swampwalk,forestwalk
 timing=main
 
 >Steward of Valeron
-image=http://magiccards.info/scans/en/ala/198.jpg
 cube=default
 value=3
 rarity=1
@@ -1468,7 +1369,6 @@ ability=vigilance
 timing=smain
 
 >Drana, Kalastria Bloodchief
-image=http://magiccards.info/scans/en/roe/107.jpg
 cube=default
 value=5
 rarity=3
@@ -1483,7 +1383,6 @@ ability=flying
 timing=main
 
 >Merfolk Seastalkers
-image=http://magiccards.info/scans/en/zen/55.jpg
 cube=default
 value=3
 rarity=1
@@ -1498,7 +1397,6 @@ ability=islandwalk
 timing=main
 
 >Stun Sniper
-image=http://magiccards.info/scans/en/arb/100.jpg
 cube=default
 value=3
 rarity=1
@@ -1512,7 +1410,6 @@ toughness=1
 timing=main
 
 >Affa Guard Hound
-image=http://magiccards.info/scans/en/roe/14.jpg
 cube=default
 value=3
 rarity=1
@@ -1527,7 +1424,6 @@ ability=flash
 timing=pumpflash
 
 >Tattermunge Maniac
-image=http://magiccards.info/scans/en/shm/219.jpg
 cube=default
 value=1
 rarity=1
@@ -1542,7 +1438,6 @@ ability=attacks each turn if able
 timing=main
 
 >Thieving Magpie
-image=http://magiccards.info/scans/en/10e/115.jpg
 cube=default
 value=2
 rarity=1
@@ -1557,7 +1452,6 @@ ability=flying
 timing=main
 
 >Tolsimir Wolfblood
-image=http://magiccards.info/scans/en/rav/236.jpg
 cube=default
 value=4
 rarity=3
@@ -1572,7 +1466,6 @@ static=player
 timing=fmain
 
 >Troll Ascetic
-image=http://magiccards.info/scans/en/10e/305.jpg
 cube=default
 value=4
 rarity=2
@@ -1587,7 +1480,6 @@ ability=can't be the target of spells or abilities your opponent controls
 timing=fmain
 
 >Twinblade Slasher
-image=http://magiccards.info/scans/en/eve/79.jpg
 cube=default
 value=1
 rarity=1
@@ -1602,7 +1494,6 @@ ability=wither
 timing=main
 
 >Ursapine
-image=http://magiccards.info/scans/en/rav/188.jpg
 cube=default
 value=4
 rarity=2
@@ -1616,7 +1507,6 @@ toughness=3
 timing=fmain
 
 >Utvara Scalper
-image=http://magiccards.info/scans/en/di/76.jpg
 cube=default
 value=2
 rarity=1
@@ -1631,7 +1521,6 @@ ability=flying,attacks each turn if able
 timing=main
 
 >Veteran Armorer
-image=http://magiccards.info/scans/en/rav/34.jpg
 cube=default
 value=2
 rarity=1
@@ -1646,7 +1535,6 @@ static=player
 timing=fmain
 
 >Vigor
-image=http://magiccards.info/scans/en/lw/240.jpg
 cube=default
 value=5
 rarity=3
@@ -1661,7 +1549,6 @@ ability=trample
 timing=fmain
 
 >Guardian of the Guildpact
-image=http://magiccards.info/scans/en/di/10.jpg
 cube=default
 value=4
 rarity=2
@@ -1676,7 +1563,6 @@ ability=protection from monocolored
 timing=main
 
 >Vorosh, the Hunter
-image=http://magiccards.info/scans/en/pc/164.jpg
 cube=default
 value=5
 rarity=3
@@ -1691,7 +1577,6 @@ ability=flying
 timing=smain
 
 >Wall of Denial
-image=http://magiccards.info/scans/en/arb/16.jpg
 cube=default
 value=4
 rarity=2
@@ -1706,7 +1591,6 @@ ability=defender,flying,shroud
 timing=smain
 
 >Wall of Reverence
-image=http://magiccards.info/scans/en/cfx/20.jpg
 cube=default
 value=3
 rarity=2
@@ -1721,7 +1605,6 @@ ability=defender,flying
 timing=smain
 
 >Scuzzback Marauders
-image=http://magiccards.info/scans/en/shm/216.jpg
 cube=default
 value=4
 rarity=2
@@ -1736,7 +1619,6 @@ ability=trample,persist
 timing=main
 
 >Wilt-Leaf Cavaliers
-image=http://magiccards.info/scans/en/shm/244.jpg
 cube=default
 value=3
 rarity=2
@@ -1751,7 +1633,6 @@ ability=vigilance
 timing=main
 
 >Windbrisk Raptor
-image=http://magiccards.info/scans/en/shm/26.jpg
 cube=default
 value=5
 rarity=3
@@ -1766,7 +1647,6 @@ ability=flying
 timing=fmain
 
 >Char
-image=http://magiccards.info/scans/en/rav/117.jpg
 cube=default
 value=4
 removal=3
@@ -1778,7 +1658,6 @@ cost={2}{R}
 timing=removal
 
 >Colossal Might
-image=http://magiccards.info/scans/en/arc/83.jpg
 cube=default
 value=3
 rarity=1
@@ -1789,7 +1668,6 @@ cost={R}{G}
 timing=pump
 
 >Swords to Plowshares
-image=http://magiccards.info/scans/en/cstd/7.jpg
 cube=default
 value=3
 removal=4
@@ -1801,7 +1679,6 @@ cost={W}
 timing=removal
 
 >Counterspell
-image=http://magiccards.info/scans/en/jvc/24.jpg
 cube=default
 value=3
 rarity=2
@@ -1812,7 +1689,6 @@ cost={U}{U}
 timing=counter
 
 >Cruel Edict
-image=http://magiccards.info/scans/en/dvd/48.jpg
 cube=default
 value=2
 removal=2
@@ -1824,7 +1700,6 @@ cost={1}{B}
 timing=removal
 
 >Double Cleave
-image=http://magiccards.info/scans/en/pch/100.jpg
 cube=default
 value=2
 rarity=1
@@ -1835,7 +1710,6 @@ cost={1}{R/W}
 timing=block
 
 >Douse in Gloom
-image=http://magiccards.info/scans/en/gp/49.jpg
 cube=default
 value=2
 removal=2
@@ -1847,7 +1721,6 @@ cost={2}{B}
 timing=removal
 
 >Fists of the Anvil
-image=http://magiccards.info/scans/en/10e/201.jpg
 cube=default
 value=2
 rarity=1
@@ -1858,7 +1731,6 @@ cost={1}{R}
 timing=pump
 
 >Puncture Blast
-image=http://magiccards.info/scans/en/eve/60.jpg
 cube=default
 value=3
 removal=3
@@ -1871,7 +1743,6 @@ ability=wither
 timing=removal
 
 >Glorious Charge
-image=http://magiccards.info/scans/en/m10/11.jpg
 cube=default
 value=3
 rarity=1
@@ -1882,7 +1753,6 @@ cost={1}{W}
 timing=pump
 
 >Giant Growth
-image=http://magiccards.info/scans/en/m11/178.jpg
 cube=default
 value=2
 rarity=1
@@ -1893,7 +1763,6 @@ cost={G}
 timing=pump
 
 >Incinerate
-image=http://magiccards.info/scans/en/jvc/51.jpg
 cube=default
 value=3
 removal=3
@@ -1905,7 +1774,6 @@ cost={1}{R}
 timing=removal
 
 >Thunder Strike
-image=http://magiccards.info/scans/en/m11/157.jpg
 cube=default
 value=3
 rarity=1
@@ -1916,7 +1784,6 @@ cost={1}{R}
 timing=pump
 
 >Grasp of Darkness
-image=http://magiccards.info/scans/en/som/65.jpg
 cube=default
 value=3
 removal=3
@@ -1928,7 +1795,6 @@ cost={B}{B}
 timing=removal
 
 >Lightning Helix
-image=http://magiccards.info/scans/en/pch/90.jpg
 cube=default
 value=4
 removal=3
@@ -1940,7 +1806,6 @@ cost={R}{W}
 timing=removal
 
 >Might of Oaks
-image=http://magiccards.info/scans/en/m10/192.jpg
 cube=default
 value=4
 rarity=2
@@ -1951,7 +1816,6 @@ cost={3}{G}
 timing=pump
 
 >Diminish
-image=http://magiccards.info/scans/en/m11/52.jpg
 cube=default
 value=2
 removal=1
@@ -1963,7 +1827,6 @@ cost={U}
 timing=removal
 
 >Remand
-image=http://magiccards.info/scans/en/rav/63.jpg
 cube=default
 value=3
 rarity=1
@@ -1974,7 +1837,6 @@ cost={1}{U}
 timing=counter
 
 >Lightning Bolt
-image=http://magiccards.info/scans/en/m11/149.jpg
 cube=default
 value=3
 removal=3
@@ -1986,7 +1848,6 @@ cost={R}
 timing=removal
 
 >Sigil Blessing
-image=http://magiccards.info/scans/en/ala/195.jpg
 cube=default
 value=3
 rarity=1
@@ -1997,7 +1858,6 @@ cost={G}{W}
 timing=pump
 
 >Terminate
-image=http://magiccards.info/scans/en/arc/95.jpg
 cube=default
 value=4
 removal=5
@@ -2009,7 +1869,6 @@ cost={B}{R}
 timing=removal
 
 >Doom Blade
-image=http://magiccards.info/scans/en/m11/95.jpg
 cube=default
 value=3
 removal=4
@@ -2021,7 +1880,6 @@ cost={1}{B}
 timing=removal
 
 >To Arms!
-image=http://magiccards.info/scans/en/gp/20.jpg
 cube=default
 value=2
 rarity=1
@@ -2032,7 +1890,6 @@ cost={1}{W}
 timing=tapping
 
 >Mortify
-image=http://magiccards.info/scans/en/gp/122.jpg
 cube=default
 value=4
 removal=5
@@ -2044,7 +1901,6 @@ cost={1}{W}{B}
 timing=removal
 
 >Unsummon
-image=http://magiccards.info/scans/en/m11/78.jpg
 cube=default
 value=2
 removal=2
@@ -2056,7 +1912,6 @@ cost={U}
 timing=removal
 
 >Wildsize
-image=http://magiccards.info/scans/en/evg/23.jpg
 cube=default
 value=3
 rarity=1
@@ -2067,7 +1922,6 @@ cost={2}{G}
 timing=pump
 
 >Withstand
-image=http://magiccards.info/scans/en/gp/21.jpg
 cube=default
 value=3
 rarity=1
@@ -2078,7 +1932,6 @@ cost={2}{W}
 timing=pump
 
 >Putrefy
-image=http://magiccards.info/scans/en/rav/221.jpg
 cube=default
 value=4
 removal=5
@@ -2090,7 +1943,6 @@ cost={1}{B}{G}
 timing=removal
 
 >Zealous Persecution
-image=http://magiccards.info/scans/en/arb/85.jpg
 cube=default
 value=4
 removal=1
@@ -2102,7 +1954,6 @@ cost={W}{B}
 timing=removal
 
 >Assassinate
-image=http://magiccards.info/scans/en/m11/81.jpg
 cube=default
 value=2
 removal=3
@@ -2114,7 +1965,6 @@ cost={2}{B}
 timing=removal
 
 >Blaze
-image=http://magiccards.info/scans/en/pch/47.jpg
 cube=default
 value=4
 removal=4
@@ -2126,7 +1976,6 @@ cost={X}{R}
 timing=removal
 
 >Blightning
-image=http://magiccards.info/scans/en/ala/156.jpg
 cube=default
 value=3
 rarity=1
@@ -2137,7 +1986,6 @@ cost={1}{B}{R}
 timing=removal
 
 >Beacon of Unrest
-image=http://magiccards.info/scans/en/arc/10.jpg
 cube=default
 value=4
 rarity=2
@@ -2148,7 +1996,6 @@ cost={3}{B}{B}
 timing=main
 
 >Time Ebb
-image=http://magiccards.info/scans/en/9e/107.jpg
 cube=default
 value=3
 removal=3
@@ -2160,7 +2007,6 @@ cost={2}{U}
 timing=removal
 
 >Hurricane
-image=http://magiccards.info/scans/en/10e/270.jpg
 cube=default
 value=3
 removal=2
@@ -2172,7 +2018,6 @@ cost={X}{G}
 timing=removal
 
 >Infest
-image=http://magiccards.info/scans/en/arc/19.jpg
 cube=default
 value=3
 removal=2
@@ -2184,7 +2029,6 @@ cost={1}{B}{B}
 timing=removal
 
 >Slave of Bolas
-image=http://magiccards.info/scans/en/arb/136.jpg
 cube=default
 value=4
 removal=5
@@ -2196,7 +2040,6 @@ cost={3}{U/R}{B}
 timing=removal
 
 >Martial Coup
-image=http://magiccards.info/scans/en/cfx/11.jpg
 cube=default
 value=4
 removal=4
@@ -2208,7 +2051,6 @@ cost={X}{W}{W}
 timing=removal
 
 >Overwhelming Stampede
-image=http://magiccards.info/scans/en/m11/189.jpg
 cube=default
 value=4
 rarity=2
@@ -2219,7 +2061,6 @@ cost={3}{G}{G}
 timing=pump
 
 >Flame Slash
-image=http://magiccards.info/scans/en/roe/145.jpg
 cube=default
 value=3
 removal=3
@@ -2231,7 +2072,6 @@ cost={R}
 timing=removal
 
 >Savage Twister
-image=http://magiccards.info/scans/en/pch/94.jpg
 cube=default
 value=4
 removal=3
@@ -2243,7 +2083,6 @@ cost={X}{R}{G}
 timing=removal
 
 >Divination
-image=http://magiccards.info/scans/en/m10/49.jpg
 cube=default
 value=2
 rarity=1
@@ -2254,7 +2093,6 @@ cost={2}{U}
 timing=draw
 
 >Soul's Majesty
-image=http://magiccards.info/scans/en/cfx/92.jpg
 cube=default
 value=3
 rarity=2
@@ -2265,7 +2103,6 @@ cost={4}{G}
 timing=draw
 
 >Soul's Might
-image=http://magiccards.info/scans/en/ala/149.jpg
 cube=default
 value=2
 rarity=1
@@ -2276,7 +2113,6 @@ cost={4}{G}
 timing=pump
 
 >Soul Feast
-image=http://magiccards.info/scans/en/10e/179.jpg
 cube=default
 value=2
 rarity=1
@@ -2287,7 +2123,6 @@ cost={3}{B}{B}
 timing=removal
 
 >Backlash
-image=http://magiccards.info/scans/en/in/234.jpg
 cube=default
 value=3
 rarity=1
@@ -2298,7 +2133,6 @@ cost={1}{B}{R}
 timing=tapping
 
 >Mind Spring
-image=http://magiccards.info/scans/en/m10/64.jpg
 cube=default
 value=4
 rarity=3
@@ -2309,7 +2143,6 @@ cost={X}{U}{U}
 timing=draw
 
 >Titanic Ultimatum
-image=http://magiccards.info/scans/en/ala/204.jpg
 cube=default
 value=4
 rarity=3
@@ -2320,7 +2153,6 @@ cost={R}{R}{G}{G}{G}{W}{W}
 timing=pump
 
 >Godless Shrine
-image=http://magiccards.info/scans/en/gp/157.jpg
 cube=default
 value=4
 rarity=1
@@ -2331,7 +2163,6 @@ basic=wb
 timing=land
 
 >Arcane Sanctum
-image=http://magiccards.info/scans/en/ala/220.jpg
 cube=default
 value=4
 rarity=1
@@ -2341,7 +2172,6 @@ basic=wub
 timing=tapland
 
 >Crumbling Necropolis
-image=http://magiccards.info/scans/en/ala/222.jpg
 cube=default
 value=4
 rarity=1
@@ -2351,7 +2181,6 @@ basic=ubr
 timing=tapland
 
 >Jungle Shrine
-image=http://magiccards.info/scans/en/ala/226.jpg
 cube=default
 value=4
 rarity=1
@@ -2361,7 +2190,6 @@ basic=rgw
 timing=tapland
 
 >Overgrown Tomb
-image=http://magiccards.info/scans/en/rav/279.jpg
 cube=default
 value=4
 rarity=1
@@ -2372,7 +2200,6 @@ basic=bg
 timing=land
 
 >Breeding Pool
-image=http://magiccards.info/scans/en/di/172.jpg
 cube=default
 value=4
 rarity=1
@@ -2383,7 +2210,6 @@ basic=gu
 timing=land
 
 >Savage Lands
-image=http://magiccards.info/scans/en/ala/228.jpg
 cube=default
 value=4
 rarity=1
@@ -2393,7 +2219,6 @@ basic=brg
 timing=tapland
 
 >Seaside Citadel
-image=http://magiccards.info/scans/en/ala/229.jpg
 cube=default
 value=4
 rarity=1
@@ -2403,7 +2228,6 @@ basic=gwu
 timing=tapland
 
 >Sacred Foundry
-image=http://magiccards.info/scans/en/rav/280.jpg
 cube=default
 value=4
 rarity=1
@@ -2414,7 +2238,6 @@ basic=rw
 timing=land
 
 >Vivid Crag
-image=http://magiccards.info/scans/en/lw/275.jpg
 cube=default
 value=3
 rarity=1
@@ -2423,7 +2246,6 @@ mana=b1g1r3u1w1
 timing=tapland
 
 >Vivid Creek
-image=http://magiccards.info/scans/en/lw/276.jpg
 cube=default
 value=3
 rarity=1
@@ -2432,7 +2254,6 @@ mana=b1g1r1u3w1
 timing=tapland
 
 >Vivid Grove
-image=http://magiccards.info/scans/en/lw/277.jpg
 cube=default
 value=3
 rarity=1
@@ -2441,7 +2262,6 @@ mana=b1g3r1u1w1
 timing=tapland
 
 >Vivid Marsh
-image=http://magiccards.info/scans/en/lw/278.jpg
 cube=default
 value=3
 rarity=1
@@ -2450,7 +2270,6 @@ mana=b3g1r1u1w1
 timing=tapland
 
 >Vivid Meadow
-image=http://magiccards.info/scans/en/lw/279.jpg
 cube=default
 value=3
 rarity=1
@@ -2459,7 +2278,6 @@ mana=b1g1r1u1w3
 timing=tapland
 
 >Behemoth Sledge
-image=http://magiccards.info/scans/en/arb/65.jpg
 cube=default
 value=5
 rarity=2
@@ -2475,7 +2293,6 @@ ability=lifelink,trample
 timing=equipment
 
 >Bonesplitter
-image=http://magiccards.info/scans/en/mi/146.jpg
 cube=default
 value=3
 rarity=1
@@ -2489,7 +2306,6 @@ toughness=0
 timing=equipment
 
 >Fireshrieker
-image=http://magiccards.info/scans/en/mi/171.jpg
 cube=default
 value=3
 rarity=2
@@ -2502,7 +2318,6 @@ ability=double strike
 timing=equipment
 
 >Loxodon Warhammer
-image=http://magiccards.info/scans/en/pch/118.jpg
 cube=default
 value=5
 rarity=2
@@ -2517,7 +2332,6 @@ ability=lifelink,trample
 timing=equipment
 
 >Mage Slayer
-image=http://magiccards.info/scans/en/arb/57.jpg
 cube=default
 value=4
 rarity=2
@@ -2530,7 +2344,6 @@ equip={3}
 timing=equipment
 
 >Mask of Riddles
-image=http://magiccards.info/scans/en/arb/25.jpg
 cube=default
 value=3
 rarity=2
@@ -2544,7 +2357,6 @@ ability=fear
 timing=equipment
 
 >Shield of the Righteous
-image=http://magiccards.info/scans/en/arb/11.jpg
 cube=default
 value=3
 rarity=2
@@ -2560,7 +2372,6 @@ ability=vigilance
 timing=equipment
 
 >Sword of Fire and Ice
-image=http://magiccards.info/scans/en/ds/148.jpg
 cube=default
 value=5
 rarity=3
@@ -2575,7 +2386,6 @@ ability=protection from red,protection from blue
 timing=equipment
 
 >Vulshok Morningstar
-image=http://magiccards.info/scans/en/ds/157.jpg
 cube=default
 value=3
 rarity=1
@@ -2589,7 +2399,6 @@ toughness=2
 timing=equipment
 
 >Whispersilk Cloak
-image=http://magiccards.info/scans/en/m11/221.jpg
 cube=default
 value=3
 rarity=2
@@ -2602,7 +2411,6 @@ ability=unblockable,shroud
 timing=equipment
 
 >Blood Crypt
-image=http://magiccards.info/scans/en/di/171.jpg
 cube=default
 value=4
 rarity=1
@@ -2613,7 +2421,6 @@ basic=br
 timing=land
 
 >Hallowed Fountain
-image=http://magiccards.info/scans/en/di/174.jpg
 cube=default
 value=4
 rarity=1
@@ -2624,7 +2431,6 @@ basic=wu
 timing=land
 
 >Stomping Ground
-image=http://magiccards.info/scans/en/gp/165.jpg
 cube=default
 value=4
 rarity=1
@@ -2635,7 +2441,6 @@ basic=rg
 timing=land
 
 >Temple Garden
-image=http://magiccards.info/scans/en/rav/284.jpg
 cube=default
 value=4
 rarity=1
@@ -2646,7 +2451,6 @@ basic=gw
 timing=land
 
 >Watery Grave
-image=http://magiccards.info/scans/en/rav/286.jpg
 cube=default
 value=4
 rarity=1
@@ -2657,7 +2461,6 @@ basic=ub
 timing=land
 
 >Angel of Despair
-image=http://magiccards.info/scans/en/gp/101.jpg
 cube=default
 value=5
 removal=4
@@ -2673,7 +2476,6 @@ ability=flying
 timing=fmain
 
 >Mirri, Cat Warrior
-image=http://magiccards.info/scans/en/10e/279.jpg
 cube=default
 value=4
 rarity=3
@@ -2688,7 +2490,6 @@ ability=first strike,forestwalk,vigilance
 timing=main
 
 >Murderous Redcap
-image=http://magiccards.info/scans/en/shm/192.jpg
 cube=default
 value=4
 removal=2
@@ -2704,7 +2505,6 @@ ability=persist
 timing=fmain
 
 >Offering to Asha
-image=http://magiccards.info/scans/en/arb/9.jpg
 cube=default
 value=2
 rarity=1
@@ -2715,7 +2515,6 @@ cost={2}{W}{U}
 timing=counter
 
 >Beloved Chaplain
-image=http://magiccards.info/scans/en/od/11.jpg
 cube=default
 value=3
 rarity=2
@@ -2730,7 +2529,6 @@ ability=protection from creatures
 timing=smain
 
 >Blazing Specter
-image=http://magiccards.info/scans/en/in/236.jpg
 cube=default
 value=4
 rarity=2
@@ -2745,7 +2543,6 @@ ability=flying,haste
 timing=fmain
 
 >Chastise
-image=http://magiccards.info/scans/en/9e/9.jpg
 cube=default
 value=4
 removal=4
@@ -2757,7 +2554,6 @@ cost={3}{W}
 timing=attack
 
 >Plumeveil
-image=http://magiccards.info/scans/en/shm/145.jpg
 cube=default
 value=4
 rarity=2
@@ -2772,7 +2568,6 @@ ability=flash,flying,defender
 timing=flash
 
 >Sift
-image=http://magiccards.info/scans/en/10e/108.jpg
 cube=default
 value=3
 rarity=1
@@ -2783,7 +2578,6 @@ cost={3}{U}
 timing=draw
 
 >Death Grasp
-image=http://magiccards.info/scans/en/ap/95.jpg
 cube=default
 value=4
 removal=4
@@ -2795,7 +2589,6 @@ cost={X}{W}{B}
 timing=removal
 
 >Dromar, the Banisher
-image=http://magiccards.info/scans/en/in/244.jpg
 cube=default
 value=5
 rarity=3
@@ -2810,7 +2603,6 @@ ability=flying
 timing=smain
 
 >Kokusho, the Evening Star
-image=http://magiccards.info/scans/en/chk/122.jpg
 cube=default
 value=5
 rarity=3
@@ -2825,7 +2617,6 @@ ability=flying
 timing=main
 
 >Heroes' Reunion
-image=http://magiccards.info/scans/en/arc/87.jpg
 cube=default
 value=3
 rarity=1
@@ -2836,7 +2627,6 @@ cost={G}{W}
 timing=draw
 
 >Iridescent Angel
-image=http://magiccards.info/scans/en/od/288.jpg
 cube=default
 value=4
 rarity=3
@@ -2851,7 +2641,6 @@ ability=flying,protection from all colors
 timing=smain
 
 >Mystic Snake
-image=http://magiccards.info/scans/en/tsts/97.jpg
 cube=default
 value=3
 rarity=2
@@ -2866,7 +2655,6 @@ ability=flash
 timing=counterflash
 
 >Nantuko Shade
-image=http://magiccards.info/scans/en/m11/106.jpg
 cube=default
 value=4
 rarity=2
@@ -2880,7 +2668,6 @@ toughness=1
 timing=main
 
 >Rorix Bladewing
-image=http://magiccards.info/scans/en/pch/65.jpg
 cube=default
 value=5
 rarity=3
@@ -2895,7 +2682,6 @@ ability=flying,haste
 timing=fmain
 
 >Sabertooth Nishoba
-image=http://magiccards.info/scans/en/in/268.jpg
 cube=default
 value=4
 rarity=3
@@ -2910,7 +2696,6 @@ ability=trample,protection from blue,protection from red
 timing=main
 
 >Shadowmage Infiltrator
-image=http://magiccards.info/scans/en/tsts/99.jpg
 cube=default
 value=4
 rarity=2
@@ -2925,7 +2710,6 @@ ability=fear
 timing=main
 
 >Hideous End
-image=http://magiccards.info/scans/en/zen/98.jpg
 cube=default
 value=3
 removal=4
@@ -2937,7 +2721,6 @@ cost={1}{B}{B}
 timing=removal
 
 >Spiritmonger
-image=http://magiccards.info/scans/en/ap/121.jpg
 cube=default
 value=5
 rarity=2
@@ -2951,7 +2734,6 @@ toughness=6
 timing=main
 
 >Treva, the Renewer
-image=http://magiccards.info/scans/en/pvc/49.jpg
 cube=default
 value=5
 rarity=3
@@ -2966,7 +2748,6 @@ ability=flying
 timing=smain
 
 >Undermine
-image=http://magiccards.info/scans/en/in/282.jpg
 cube=default
 value=3
 rarity=2
@@ -2977,7 +2758,6 @@ cost={U}{U}{B}
 timing=counter
 
 >Vine Trellis
-image=http://magiccards.info/scans/en/gvl/4.jpg
 cube=default
 value=3
 rarity=1
@@ -2992,7 +2772,6 @@ ability=defender
 timing=smain
 
 >Carnifex Demon
-image=http://magiccards.info/scans/en/som/57.jpg
 cube=default
 value=5
 rarity=3
@@ -3007,7 +2786,6 @@ ability=flying
 timing=fmain
 
 >Jund Hackblade
-image=http://magiccards.info/scans/en/arb/138.jpg
 cube=default
 value=3
 rarity=2
@@ -3021,7 +2799,6 @@ toughness=1
 timing=fmain
 
 >Sphinx of the Steel Wind
-image=http://magiccards.info/scans/en/arb/110.jpg
 cube=default
 value=5
 rarity=3
@@ -3036,7 +2813,6 @@ ability=flying,first strike,vigilance,lifelink,protection from red,protection fr
 timing=smain
 
 >Wrap in Vigor
-image=http://magiccards.info/scans/en/fut/141.jpg
 cube=default
 value=3
 rarity=1
@@ -3047,7 +2823,6 @@ cost={1}{G}
 timing=pump
 
 >Dismal Failure
-image=http://magiccards.info/scans/en/pc/39.jpg
 cube=default
 value=2
 rarity=1
@@ -3058,7 +2833,6 @@ cost={2}{U}{U}
 timing=counter
 
 >Zombify
-image=http://magiccards.info/scans/en/arc/29.jpg
 cube=default
 value=3
 rarity=1
@@ -3069,7 +2843,6 @@ cost={3}{B}
 timing=main
 
 >Sprouting Thrinax
-image=http://magiccards.info/scans/en/ala/197.jpg
 cube=default
 value=4
 rarity=2
@@ -3083,7 +2856,6 @@ toughness=3
 timing=main
 
 >Puppeteer Clique
-image=http://magiccards.info/scans/en/shm/75.jpg
 cube=default
 value=4
 rarity=2
@@ -3098,7 +2870,6 @@ ability=flying,persist
 timing=fmain
 
 >Lingering Tormentor
-image=http://magiccards.info/scans/en/eve/36.jpg
 cube=default
 value=3
 rarity=1
@@ -3113,7 +2884,6 @@ ability=fear,persist
 timing=main
 
 >Frenzied Goblin
-image=http://magiccards.info/scans/en/rav/125.jpg
 cube=default
 value=2
 rarity=1
@@ -3127,7 +2897,6 @@ toughness=1
 timing=main
 
 >Kaervek the Merciless
-image=http://magiccards.info/scans/en/arc/88.jpg
 cube=default
 value=5
 rarity=3
@@ -3141,7 +2910,6 @@ toughness=4
 timing=fmain
 
 >Scar
-image=http://magiccards.info/scans/en/shm/194.jpg
 cube=default
 value=1
 removal=1
@@ -3153,7 +2921,6 @@ cost={B/R}
 timing=removal
 
 >Deathless Angel
-image=http://magiccards.info/scans/en/roe/17.jpg
 cube=default
 value=5
 rarity=3
@@ -3168,7 +2935,6 @@ ability=flying
 timing=main
 
 >Rampaging Baloths
-image=http://magiccards.info/scans/en/zen/178.jpg
 cube=default
 value=5
 rarity=3
@@ -3183,7 +2949,6 @@ ability=trample
 timing=main
 
 >Trumpet Blast
-image=http://magiccards.info/scans/en/m10/160.jpg
 cube=default
 value=3
 rarity=1
@@ -3194,7 +2959,6 @@ cost={2}{R}
 timing=pump
 
 >Forest
-image=http://magiccards.info/scans/en/zen/246.jpg
 cube=default
 value=2
 rarity=0
@@ -3205,7 +2969,6 @@ basic=g
 timing=land
 
 >Island
-image=http://magiccards.info/scans/en/zen/234.jpg
 cube=default
 value=2
 rarity=0
@@ -3216,7 +2979,6 @@ basic=u
 timing=land
 
 >Mountain
-image=http://magiccards.info/scans/en/zen/242.jpg
 cube=default
 value=2
 rarity=0
@@ -3227,7 +2989,6 @@ basic=r
 timing=land
 
 >Plains
-image=http://magiccards.info/scans/en/zen/230.jpg
 cube=default
 value=2
 rarity=0
@@ -3238,7 +2999,6 @@ basic=w
 timing=land
 
 >Swamp
-image=http://magiccards.info/scans/en/zen/238.jpg
 cube=default
 value=2
 rarity=0
@@ -3249,7 +3009,6 @@ basic=b
 timing=land
 
 >Goblin Deathraiders
-image=http://magiccards.info/scans/en/ala/169.jpg
 cube=default
 value=2
 rarity=1
@@ -3264,7 +3023,6 @@ ability=trample
 timing=main
 
 >Taurean Mauler
-image=http://magiccards.info/scans/en/arc/49.jpg
 cube=default
 value=3
 rarity=2
@@ -3279,7 +3037,6 @@ ability=changeling
 timing=fmain
 
 >Wort, Boggart Auntie
-image=http://magiccards.info/scans/en/lw/252.jpg
 cube=default
 value=4
 rarity=3
@@ -3294,7 +3051,6 @@ ability=fear
 timing=main
 
 >Surveilling Sprite
-image=http://magiccards.info/scans/en/rav/67.jpg
 cube=default
 value=2
 rarity=1
@@ -3309,7 +3065,6 @@ ability=flying
 timing=main
 
 >Spider Umbra
-image=http://magiccards.info/scans/en/arc/70.jpg
 cube=default
 value=2
 rarity=1
@@ -3324,7 +3079,6 @@ ability=reach,totem armor
 timing=aura
 
 >Rage Nimbus
-image=http://magiccards.info/scans/en/roe/160.jpg
 cube=default
 value=3
 rarity=2
@@ -3339,7 +3093,6 @@ ability=defender,flying
 timing=smain
 
 >Kinsbaile Cavalier
-image=http://magiccards.info/scans/en/mt/15.jpg
 cube=default
 value=3
 rarity=2
@@ -3354,7 +3107,6 @@ static=player
 timing=fmain
 
 >Kalonian Behemoth
-image=http://magiccards.info/scans/en/m10/188.jpg
 cube=default
 value=5
 rarity=3
@@ -3369,7 +3121,6 @@ ability=shroud
 timing=fmain
 
 >Kiss of the Amesha
-image=http://magiccards.info/scans/en/ala/177.jpg
 cube=default
 value=3
 rarity=2
@@ -3380,7 +3131,6 @@ cost={4}{W}{U}
 timing=draw
 
 >Vampire Nighthawk
-image=http://magiccards.info/scans/en/zen/116.jpg
 cube=default
 value=3
 rarity=1
@@ -3395,7 +3145,6 @@ ability=flying,deathtouch,lifelink
 timing=main
 
 >Rith, the Awakener
-image=http://magiccards.info/scans/en/pvc/48.jpg
 cube=default
 value=5
 rarity=3
@@ -3410,7 +3159,6 @@ ability=flying
 timing=main
 
 >Mana Leak
-image=http://magiccards.info/scans/en/m11/62.jpg
 cube=default
 value=2
 rarity=1
@@ -3421,7 +3169,6 @@ cost={1}{U}
 timing=counter
 
 >Rhox War Monk
-image=http://magiccards.info/scans/en/ala/188.jpg
 cube=default
 value=4
 rarity=2
@@ -3436,7 +3183,6 @@ ability=lifelink
 timing=smain
 
 >Quietus Spike
-image=http://magiccards.info/scans/en/ala/217.jpg
 cube=default
 value=4
 rarity=2
@@ -3449,7 +3195,6 @@ ability=deathtouch
 timing=equipment
 
 >Specter's Shroud
-image=http://magiccards.info/scans/en/ds/142.jpg
 cube=default
 value=3
 rarity=2
@@ -3463,7 +3208,6 @@ toughness=0
 timing=equipment
 
 >Vulshok Battlegear
-image=http://magiccards.info/scans/en/mi/272.jpg
 cube=default
 value=4
 rarity=2
@@ -3477,7 +3221,6 @@ toughness=3
 timing=equipment
 
 >Slagwurm Armor
-image=http://magiccards.info/scans/en/mi/243.jpg
 cube=default
 value=2
 rarity=2
@@ -3491,7 +3234,6 @@ toughness=6
 timing=equipment
 
 >Lightning Angel
-image=http://magiccards.info/scans/en/tsts/94.jpg
 cube=default
 value=4
 rarity=2
@@ -3506,7 +3248,6 @@ ability=flying,vigilance,haste
 timing=fmain
 
 >Oros, the Avenger
-image=http://magiccards.info/scans/en/pc/161.jpg
 cube=default
 value=5
 rarity=3
@@ -3521,7 +3262,6 @@ ability=flying
 timing=main
 
 >Wall of Frost
-image=http://magiccards.info/scans/en/m11/79.jpg
 cube=default
 value=3
 rarity=1
@@ -3536,7 +3276,6 @@ ability=defender
 timing=smain
 
 >Absorb
-image=http://magiccards.info/scans/en/in/226.jpg
 cube=default
 value=3
 rarity=2
@@ -3547,7 +3286,6 @@ cost={W}{U}{U}
 timing=counter
 
 >Stirring Wildwood
-image=http://magiccards.info/scans/en/wwk/144.jpg
 cube=default
 value=4
 rarity=1
@@ -3556,7 +3294,6 @@ mana=g3w3
 timing=tapland
 
 >Creeping Tar Pit
-image=http://magiccards.info/scans/en/wwk/134.jpg
 cube=default
 value=4
 rarity=1
@@ -3565,7 +3302,6 @@ mana=u3b3
 timing=tapland
 
 >Raging Ravine
-image=http://magiccards.info/scans/en/wwk/141.jpg
 cube=default
 value=4
 rarity=1
@@ -3574,7 +3310,6 @@ mana=r3g3
 timing=tapland
 
 >Rupture Spire
-image=http://magiccards.info/scans/en/cfx/144.jpg
 cube=default
 value=3
 rarity=1
@@ -3584,7 +3319,6 @@ basic=bgruw
 timing=land
 
 >Steam Vents
-image=http://magiccards.info/scans/en/gp/164.jpg
 cube=default
 value=4
 rarity=1
@@ -3595,7 +3329,6 @@ basic=ur
 timing=land
 
 >Stonebrow, Krosan Hero
-image=http://magiccards.info/scans/en/ts/247.jpg
 cube=default
 value=5
 rarity=3
@@ -3610,7 +3343,6 @@ ability=trample
 timing=fmain
 
 >Evacuation
-image=http://magiccards.info/scans/en/10e/83.jpg
 cube=default
 value=4
 removal=1
@@ -3622,7 +3354,6 @@ cost={3}{U}{U}
 timing=removal
 
 >Draining Whelk
-image=http://magiccards.info/scans/en/ts/57.jpg
 cube=default
 value=4
 rarity=3
@@ -3637,7 +3368,6 @@ ability=flash,flying
 timing=counterflash
 
 >Man-o'-War
-image=http://magiccards.info/scans/en/jvc/8.jpg
 cube=default
 value=3
 removal=2
@@ -3652,7 +3382,6 @@ toughness=2
 timing=fmain
 
 >Cairn Wanderer
-image=http://magiccards.info/scans/en/lw/105.jpg
 cube=default
 value=4
 rarity=2
@@ -3667,7 +3396,6 @@ ability=changeling
 timing=main
 
 >Captain of the Watch
-image=http://magiccards.info/scans/en/m10/6.jpg
 cube=default
 value=5
 rarity=3
@@ -3683,7 +3411,6 @@ static=player
 timing=smain
 
 >Wall of Bone
-image=http://magiccards.info/scans/en/gvl/41.jpg
 cube=default
 value=3
 rarity=1
@@ -3698,7 +3425,6 @@ ability=defender
 timing=smain
 
 >Safe Passage
-image=http://magiccards.info/scans/en/m11/26.jpg
 cube=default
 value=3
 rarity=1
@@ -3709,7 +3435,6 @@ cost={2}{W}
 timing=pump
 
 >Baneslayer Angel
-image=http://magiccards.info/scans/en/m11/7.jpg
 cube=default
 value=5
 rarity=3
@@ -3724,7 +3449,6 @@ ability=flying,first strike,lifelink,protection from Demons,protection from Drag
 timing=main
 
 >Deadly Recluse
-image=http://magiccards.info/scans/en/m10/175.jpg
 cube=default
 value=2
 rarity=1
@@ -3739,7 +3463,6 @@ ability=reach,deathtouch
 timing=smain
 
 >Steppe Lynx
-image=http://magiccards.info/scans/en/zen/36.jpg
 cube=default
 value=2
 rarity=2
@@ -3753,7 +3476,6 @@ toughness=1
 timing=main
 
 >White Knight
-image=http://magiccards.info/scans/en/m11/39.jpg
 cube=default
 value=3
 rarity=2
@@ -3768,7 +3490,6 @@ ability=first strike,protection from black
 timing=main
 
 >Great Sable Stag
-image=http://magiccards.info/scans/en/m10/186.jpg
 cube=default
 value=4
 rarity=2
@@ -3783,7 +3504,6 @@ ability=can't be countered,protection from blue,protection from black
 timing=main
 
 >Goblin Chieftain
-image=http://magiccards.info/scans/en/m11/141.jpg
 cube=default
 value=3
 rarity=1
@@ -3799,7 +3519,6 @@ static=player
 timing=fmain
 
 >Guardian Seraph
-image=http://magiccards.info/scans/en/m10/13.jpg
 cube=default
 value=4
 rarity=2
@@ -3814,7 +3533,6 @@ ability=flying
 timing=fmain
 
 >Sleep
-image=http://magiccards.info/scans/en/m11/73.jpg
 cube=default
 value=4
 removal=1
@@ -3826,7 +3544,6 @@ cost={2}{U}{U}
 timing=removal
 
 >Earthquake
-image=http://magiccards.info/scans/en/m10/134.jpg
 cube=default
 value=3
 removal=2
@@ -3838,7 +3555,6 @@ cost={X}{R}
 timing=removal
 
 >Sign in Blood
-image=http://magiccards.info/scans/en/m11/117.jpg
 cube=default
 value=3
 rarity=2
@@ -3849,7 +3565,6 @@ cost={B}{B}
 timing=draw
 
 >Basilisk Collar
-image=http://magiccards.info/scans/en/wwk/122.jpg
 cube=default
 value=4
 rarity=2
@@ -3862,7 +3577,6 @@ ability=deathtouch,lifelink
 timing=equipment
 
 >Essence Scatter
-image=http://magiccards.info/scans/en/m10/51.jpg
 cube=default
 value=3
 rarity=1
@@ -3873,7 +3587,6 @@ cost={1}{U}
 timing=counter
 
 >Sphinx of Magosi
-image=http://magiccards.info/scans/en/roe/89.jpg
 cube=default
 value=5
 rarity=3
@@ -3888,7 +3601,6 @@ ability=flying
 timing=main
 
 >Goblin Artillery
-image=http://magiccards.info/scans/en/m10/138.jpg
 cube=default
 value=3
 rarity=1
@@ -3902,7 +3614,6 @@ toughness=3
 timing=main
 
 >Stormfront Pegasus
-image=http://magiccards.info/scans/en/m11/34.jpg
 cube=default
 value=3
 rarity=1
@@ -3917,7 +3628,6 @@ ability=flying
 timing=main
 
 >River Boa
-image=http://magiccards.info/scans/en/zen/180.jpg
 cube=default
 value=2
 rarity=2
@@ -3932,7 +3642,6 @@ ability=islandwalk
 timing=main
 
 >Guard Gomazoa
-image=http://magiccards.info/scans/en/roe/70.jpg
 cube=default
 value=3
 rarity=2
@@ -3947,7 +3656,6 @@ ability=defender,flying
 timing=smain
 
 >Ethercaste Knight
-image=http://magiccards.info/scans/en/arb/3.jpg
 cube=default
 value=2
 rarity=1
@@ -3962,7 +3670,6 @@ ability=exalted
 timing=fmain
 
 >Skeletal Vampire
-image=http://magiccards.info/scans/en/gvl/46.jpg
 cube=default
 value=5
 rarity=3
@@ -3977,7 +3684,6 @@ ability=flying
 timing=main
 
 >Thundersong Trumpeter
-image=http://magiccards.info/scans/en/rav/235.jpg
 cube=default
 value=2
 rarity=1
@@ -3991,7 +3697,6 @@ toughness=1
 timing=smain
 
 >Razorjaw Oni
-image=http://magiccards.info/scans/en/sok/87.jpg
 cube=default
 value=4
 rarity=2
@@ -4006,7 +3711,6 @@ static=all
 timing=fmain
 
 >Trygon Predator
-image=http://magiccards.info/scans/en/di/133.jpg
 cube=default
 value=4
 rarity=2
@@ -4021,7 +3725,6 @@ ability=flying
 timing=main
 
 >Goblin Shortcutter
-image=http://magiccards.info/scans/en/zen/128.jpg
 cube=default
 value=2
 rarity=1
@@ -4035,7 +3738,6 @@ toughness=1
 timing=fmain
 
 >Qasali Pridemage
-image=http://magiccards.info/scans/en/arb/75.jpg
 cube=default
 value=3
 rarity=1
@@ -4050,7 +3752,6 @@ ability=exalted
 timing=fmain
 
 >Glorious Anthem
-image=http://magiccards.info/scans/en/10e/17.jpg
 cube=default
 value=4
 rarity=1
@@ -4062,7 +3763,6 @@ static=player
 timing=enchantment
 
 >Glory of Warfare
-image=http://magiccards.info/scans/en/arb/98.jpg
 cube=default
 value=4
 rarity=2
@@ -4074,7 +3774,6 @@ static=player
 timing=enchantment
 
 >Hissing Miasma
-image=http://magiccards.info/scans/en/gp/51.jpg
 cube=default
 value=3
 rarity=2
@@ -4085,7 +3784,6 @@ cost={1}{B}{B}
 timing=enchantment
 
 >Debtors' Knell
-image=http://magiccards.info/scans/en/gp/141.jpg
 cube=default
 value=5
 rarity=3
@@ -4096,7 +3794,6 @@ cost={4}{W/B}{W/B}{W/B}
 timing=enchantment
 
 >Seal of Fire
-image=http://magiccards.info/scans/en/di/71.jpg
 cube=default
 value=2
 removal=2
@@ -4108,7 +3805,6 @@ cost={R}
 timing=enchantment
 
 >Phyrexian Arena
-image=http://magiccards.info/scans/en/pch/36.jpg
 cube=default
 value=4
 rarity=3
@@ -4119,7 +3815,6 @@ cost={1}{B}{B}
 timing=enchantment
 
 >Quest for the Gemblades
-image=http://magiccards.info/scans/en/zen/177.jpg
 cube=default
 value=3
 rarity=2
@@ -4130,7 +3825,6 @@ cost={1}{G}
 timing=enchantment
 
 >True Conviction
-image=http://magiccards.info/scans/en/som/25.jpg
 cube=default
 value=4
 rarity=3
@@ -4142,7 +3836,6 @@ static=player
 timing=enchantment
 
 >Raking Canopy
-image=http://magiccards.info/scans/en/shm/127.jpg
 cube=default
 value=3
 rarity=2
@@ -4153,7 +3846,6 @@ cost={1}{G}{G}
 timing=enchantment
 
 >Rise of the Hobgoblins
-image=http://magiccards.info/scans/en/eve/145.jpg
 cube=default
 value=3
 rarity=1
@@ -4164,7 +3856,6 @@ cost={R/W}{R/W}
 timing=enchantment
 
 >Halcyon Glaze
-image=http://magiccards.info/scans/en/rav/54.jpg
 cube=default
 value=4
 rarity=2
@@ -4175,7 +3866,6 @@ cost={1}{U}{U}
 timing=enchantment
 
 >Dissipation Field
-image=http://magiccards.info/scans/en/som/32.jpg
 cube=default
 value=4
 rarity=3
@@ -4186,7 +3876,6 @@ cost={2}{U}{U}
 timing=enchantment
 
 >Levitation
-image=http://magiccards.info/scans/en/m10/60.jpg
 cube=default
 value=3
 rarity=2
@@ -4198,7 +3887,6 @@ static=player
 timing=enchantment
 
 >Promise of Bunrei
-image=http://magiccards.info/scans/en/sok/24.jpg
 cube=default
 value=4
 rarity=2
@@ -4209,7 +3897,6 @@ cost={2}{W}
 timing=enchantment
 
 >Seal of Doom
-image=http://magiccards.info/scans/en/di/53.jpg
 cube=default
 value=3
 removal=3
@@ -4221,7 +3908,6 @@ cost={2}{B}
 timing=enchantment
 
 >Fires of Yavimaya
-image=http://magiccards.info/scans/en/pch/87.jpg
 cube=default
 value=4
 rarity=1
@@ -4232,7 +3918,6 @@ cost={1}{R}{G}
 timing=enchantment
 
 >Trusty Machete
-image=http://magiccards.info/scans/en/zen/209.jpg
 cube=default
 value=2
 rarity=1
@@ -4246,7 +3931,6 @@ toughness=1
 timing=equipment
 
 >Maelstrom Pulse
-image=http://magiccards.info/scans/en/arb/92.jpg
 cube=default
 value=4
 removal=5
@@ -4258,7 +3942,6 @@ cost={1}{B}{G}
 timing=removal
 
 >Solemn Offering
-image=http://magiccards.info/scans/en/m11/32.jpg
 cube=default
 value=3
 removal=1
@@ -4270,7 +3953,6 @@ cost={2}{W}
 timing=removal
 
 >Naturalize
-image=http://magiccards.info/scans/en/m11/186.jpg
 cube=default
 value=2
 removal=1
@@ -4282,7 +3964,6 @@ cost={1}{G}
 timing=removal
 
 >Into the Roil
-image=http://magiccards.info/scans/en/zen/48.jpg
 cube=default
 value=3
 removal=2
@@ -4294,7 +3975,6 @@ cost={1}{U}
 timing=removal
 
 >Unmake
-image=http://magiccards.info/scans/en/arc/98.jpg
 cube=default
 value=4
 removal=5
@@ -4306,7 +3986,6 @@ cost={W/B}{W/B}{W/B}
 timing=removal
 
 >Mnemonic Wall
-image=http://magiccards.info/scans/en/roe/78.jpg
 cube=default
 value=3
 rarity=1
@@ -4321,7 +4000,6 @@ ability=defender
 timing=main
 
 >Ethersworn Adjudicator
-image=http://magiccards.info/scans/en/cfx/26.jpg
 cube=default
 value=4
 rarity=2
@@ -4336,7 +4014,6 @@ ability=flying
 timing=smain
 
 >Stuffy Doll
-image=http://magiccards.info/scans/en/ts/264.jpg
 cube=default
 value=4
 rarity=2
@@ -4350,7 +4027,6 @@ ability=indestructible
 timing=smain
 
 >Guul Draz Specter
-image=http://magiccards.info/scans/en/zen/92.jpg
 cube=default
 value=4
 rarity=2
@@ -4365,7 +4041,6 @@ ability=flying
 timing=main
 
 >Mirror Entity
-image=http://magiccards.info/scans/en/lw/31.jpg
 cube=default
 value=4
 rarity=2
@@ -4380,7 +4055,6 @@ ability=changeling
 timing=fmain
 
 >Harmonize
-image=http://magiccards.info/scans/en/evg/22.jpg
 cube=default
 value=4
 rarity=2
@@ -4391,7 +4065,6 @@ cost={2}{G}{G}
 timing=draw
 
 >Repulse
-image=http://magiccards.info/scans/en/jvc/25.jpg
 cube=default
 value=3
 removal=2
@@ -4403,7 +4076,6 @@ cost={2}{U}
 timing=removal
 
 >Countersquall
-image=http://magiccards.info/scans/en/cfx/103.jpg
 cube=default
 value=3
 rarity=2
@@ -4414,7 +4086,6 @@ cost={U}{B}
 timing=counter
 
 >Glen Elendra Archmage
-image=http://magiccards.info/scans/en/eve/22.jpg
 cube=default
 value=3
 rarity=2
@@ -4429,7 +4100,6 @@ ability=flying,persist
 timing=fmain
 
 >Venser, Shaper Savant
-image=http://magiccards.info/scans/en/fut/46.jpg
 cube=default
 value=4
 rarity=3
@@ -4444,7 +4114,6 @@ ability=flash
 timing=counterflash
 
 >Akoum Refuge
-image=http://magiccards.info/scans/en/zen/210.jpg
 cube=default
 value=3
 rarity=1
@@ -4454,7 +4123,6 @@ basic=br
 timing=tapland
 
 >Graypelt Refuge
-image=http://magiccards.info/scans/en/arc/125.jpg
 cube=default
 value=3
 rarity=1
@@ -4464,7 +4132,6 @@ basic=gw
 timing=tapland
 
 >Jwar Isle Refuge
-image=http://magiccards.info/scans/en/zen/215.jpg
 cube=default
 value=3
 rarity=1
@@ -4474,7 +4141,6 @@ basic=ub
 timing=tapland
 
 >Kazandu Refuge
-image=http://magiccards.info/scans/en/arc/126.jpg
 cube=default
 value=3
 rarity=1
@@ -4484,7 +4150,6 @@ basic=rg
 timing=tapland
 
 >Sejiri Refuge
-image=http://magiccards.info/scans/en/zen/224.jpg
 cube=default
 value=3
 rarity=1
@@ -4494,7 +4159,6 @@ basic=wu
 timing=tapland
 
 >Day of Judgment
-image=http://magiccards.info/scans/en/m11/12.jpg
 cube=default
 value=4
 removal=2
@@ -4506,7 +4170,6 @@ cost={2}{W}{W}
 timing=removal
 
 >Disfigure
-image=http://magiccards.info/scans/en/zen/87.jpg
 cube=default
 value=2
 removal=2
@@ -4518,7 +4181,6 @@ cost={B}
 timing=removal
 
 >Leonin Scimitar
-image=http://magiccards.info/scans/en/10e/331.jpg
 cube=default
 value=2
 rarity=1
@@ -4532,7 +4194,6 @@ toughness=1
 timing=equipment
 
 >Spidersilk Net
-image=http://magiccards.info/scans/en/zen/206.jpg
 cube=default
 value=1
 rarity=1
@@ -4547,7 +4208,6 @@ ability=reach
 timing=equipment
 
 >Angelic Shield
-image=http://magiccards.info/scans/en/in/228.jpg
 cube=default
 value=3
 removal=1
@@ -4560,7 +4220,6 @@ static=player
 timing=enchantment
 
 >Ravenous Baloth
-image=http://magiccards.info/scans/en/gvl/8.jpg
 cube=default
 value=4
 rarity=2
@@ -4574,7 +4233,6 @@ toughness=4
 timing=fmain
 
 >Serendib Efreet
-image=http://magiccards.info/scans/en/fve/11.jpg
 cube=default
 value=4
 rarity=2
@@ -4589,7 +4247,6 @@ ability=flying
 timing=main
 
 >Cinder Elemental
-image=http://magiccards.info/scans/en/pch/51.jpg
 cube=default
 value=3
 rarity=1
@@ -4603,7 +4260,6 @@ toughness=2
 timing=smain
 
 >Godhead of Awe
-image=http://magiccards.info/scans/en/shm/142.jpg
 cube=default
 value=5
 removal=3
@@ -4620,7 +4276,6 @@ static=all
 timing=smain
 
 >Rumbling Slum
-image=http://magiccards.info/scans/en/pch/93.jpg
 cube=default
 value=4
 rarity=2
@@ -4634,7 +4289,6 @@ toughness=5
 timing=main
 
 >Ronin Warclub
-image=http://magiccards.info/scans/en/bok/158.jpg
 cube=default
 value=3
 rarity=2
@@ -4648,7 +4302,6 @@ toughness=1
 timing=enchantment
 
 >Sword of Light and Shadow
-image=http://magiccards.info/scans/en/ds/149.jpg
 cube=default
 value=5
 rarity=3
@@ -4663,7 +4316,6 @@ ability=protection from white,protection from black
 timing=equipment
 
 >Fervent Charge
-image=http://magiccards.info/scans/en/ap/98.jpg
 cube=default
 value=4
 rarity=2
@@ -4674,7 +4326,6 @@ cost={1}{W}{B}{R}
 timing=enchantment
 
 >Dragon Roost
-image=http://magiccards.info/scans/en/10e/197.jpg
 cube=default
 value=4
 rarity=3
@@ -4685,7 +4336,6 @@ cost={4}{R}{R}
 timing=enchantment
 
 >Quest for the Gravelord
-image=http://magiccards.info/scans/en/zen/108.jpg
 cube=default
 value=3
 rarity=2
@@ -4696,7 +4346,6 @@ cost={B}
 timing=enchantment
 
 >Elephant Guide
-image=http://magiccards.info/scans/en/gvl/18.jpg
 cube=default
 value=4
 rarity=2
@@ -4710,7 +4359,6 @@ toughness=3
 timing=aura
 
 >Griffin Guide
-image=http://magiccards.info/scans/en/ts/21.jpg
 cube=default
 value=4
 rarity=2
@@ -4725,7 +4373,6 @@ ability=flying
 timing=aura
 
 >Rancor
-image=http://magiccards.info/scans/en/gvl/15.jpg
 cube=default
 value=3
 rarity=2
@@ -4740,7 +4387,6 @@ ability=trample
 timing=aura
 
 >Pacifism
-image=http://magiccards.info/scans/en/dvd/17.jpg
 cube=default
 value=3
 removal=3
@@ -4754,7 +4400,6 @@ ability=can't attack or block
 timing=tapping
 
 >Serra's Embrace
-image=http://magiccards.info/scans/en/dvd/21.jpg
 cube=default
 value=4
 rarity=2
@@ -4769,7 +4414,6 @@ ability=flying,vigilance
 timing=aura
 
 >Clinging Darkness
-image=http://magiccards.info/scans/en/rav/80.jpg
 cube=default
 value=3
 removal=1
@@ -4784,7 +4428,6 @@ toughness=-1
 timing=removal
 
 >Dust Corona
-image=http://magiccards.info/scans/en/pc/97.jpg
 cube=default
 value=2
 rarity=1
@@ -4799,7 +4442,6 @@ ability=can't be blocked by creatures with flying
 timing=aura
 
 >Goblin War Paint
-image=http://magiccards.info/scans/en/zen/129.jpg
 cube=default
 value=3
 rarity=1
@@ -4814,7 +4456,6 @@ ability=haste
 timing=aura
 
 >Epic Proportions
-image=http://magiccards.info/scans/en/lw/209.jpg
 cube=default
 value=4
 rarity=3
@@ -4829,7 +4470,6 @@ ability=flash,trample
 timing=pump
 
 >Galvanic Arc
-image=http://magiccards.info/scans/en/rav/126.jpg
 cube=default
 value=3
 removal=3
@@ -4843,7 +4483,6 @@ ability=first strike
 timing=removal
 
 >Fists of Ironwood
-image=http://magiccards.info/scans/en/rav/164.jpg
 cube=default
 value=3
 rarity=1
@@ -4856,7 +4495,6 @@ ability=trample
 timing=aura
 
 >Flight of Fancy
-image=http://magiccards.info/scans/en/rav/49.jpg
 cube=default
 value=4
 rarity=2
@@ -4869,7 +4507,6 @@ ability=flying
 timing=aura
 
 >Lightning Talons
-image=http://magiccards.info/scans/en/ala/107.jpg
 cube=default
 value=3
 rarity=2
@@ -4884,7 +4521,6 @@ ability=first strike
 timing=aura
 
 >Narcolepsy
-image=http://magiccards.info/scans/en/roe/79.jpg
 cube=default
 value=3
 removal=2
@@ -4897,7 +4533,6 @@ cost={1}{U}
 timing=nextturn
 
 >Pillory of the Sleepless
-image=http://magiccards.info/scans/en/gp/125.jpg
 cube=default
 value=4
 removal=4
@@ -4911,7 +4546,6 @@ ability=can't attack or block
 timing=tapping
 
 >Protective Bubble
-image=http://magiccards.info/scans/en/lw/80.jpg
 cube=default
 value=4
 rarity=2
@@ -4924,7 +4558,6 @@ ability=unblockable,shroud
 timing=aura
 
 >Torpor Dust
-image=http://magiccards.info/scans/en/shm/177.jpg
 cube=default
 value=3
 rarity=2
@@ -4939,7 +4572,6 @@ ability=flash
 timing=removal
 
 >Weakness
-image=http://magiccards.info/scans/en/m10/121.jpg
 cube=default
 value=3
 removal=1
@@ -4954,7 +4586,6 @@ toughness=-1
 timing=removal
 
 >Deluge
-image=http://magiccards.info/scans/en/10e/79.jpg
 cube=default
 value=3
 removal=1
@@ -4966,7 +4597,6 @@ cost={2}{U}
 timing=tapping
 
 >Plummet
-image=http://magiccards.info/scans/en/m11/190.jpg
 cube=default
 value=3
 removal=3
@@ -4978,7 +4608,6 @@ cost={1}{G}
 timing=removal
 
 >Recover
-image=http://magiccards.info/scans/en/10e/172.jpg
 cube=default
 value=3
 rarity=1
@@ -4989,7 +4618,6 @@ cost={2}{B}
 timing=draw
 
 >Wurmcoil Engine
-image=http://magiccards.info/scans/en/som/223.jpg
 cube=default
 value=5
 rarity=3
@@ -5003,7 +4631,6 @@ ability=deathtouch,lifelink
 timing=main
 
 >Time Warp
-image=http://magiccards.info/scans/en/m10/75.jpg
 cube=default
 value=5
 rarity=2
@@ -5014,7 +4641,6 @@ cost={3}{U}{U}
 timing=nextturn
 
 >Dragonskull Summit
-image=http://magiccards.info/scans/en/m11/223.jpg
 cube=default
 value=4
 rarity=1
@@ -5024,7 +4650,6 @@ basic=br
 timing=land
 
 >Drowned Catacomb
-image=http://magiccards.info/scans/en/m11/224.jpg
 cube=default
 value=4
 rarity=1
@@ -5034,7 +4659,6 @@ basic=ub
 timing=land
 
 >Glacial Fortress
-image=http://magiccards.info/scans/en/m11/225.jpg
 cube=default
 value=4
 rarity=1
@@ -5044,7 +4668,6 @@ basic=wu
 timing=land
 
 >Rootbound Crag
-image=http://magiccards.info/scans/en/m11/227.jpg
 cube=default
 value=4
 rarity=1
@@ -5054,7 +4677,6 @@ basic=rg
 timing=land
 
 >Sunpetal Grove
-image=http://magiccards.info/scans/en/m11/228.jpg
 cube=default
 value=4
 rarity=1
@@ -5064,7 +4686,6 @@ basic=gw
 timing=land
 
 >Platinum Angel
-image=http://magiccards.info/scans/en/m11/212.jpg
 cube=default
 value=5
 rarity=3
@@ -5078,7 +4699,6 @@ ability=flying
 timing=fmain
 
 >Beacon of Destruction
-image=http://magiccards.info/scans/en/10e/189.jpg
 cube=default
 value=4
 removal=4
@@ -5090,7 +4710,6 @@ cost={3}{R}{R}
 timing=removal
 
 >Chain Reaction
-image=http://magiccards.info/scans/en/wwk/74.jpg
 cube=default
 value=4
 removal=2
@@ -5102,7 +4721,6 @@ cost={2}{R}{R}
 timing=removal
 
 >Stupor
-image=http://magiccards.info/scans/en/tsts/48.jpg
 cube=default
 value=3
 rarity=1
@@ -5113,7 +4731,6 @@ cost={2}{B}
 timing=removal
 
 >Kindled Fury
-image=http://magiccards.info/scans/en/mt/92.jpg
 cube=default
 value=2
 rarity=1
@@ -5124,7 +4741,6 @@ cost={R}
 timing=pump
 
 >Exhaustion
-image=http://magiccards.info/scans/en/9e/76.jpg
 cube=default
 value=3
 removal=1
@@ -5136,7 +4752,6 @@ cost={2}{U}
 timing=nextturn
 
 >Kitesail Apprentice
-image=http://magiccards.info/scans/en/wwk/10.jpg
 cube=default
 value=1
 rarity=1
@@ -5150,7 +4765,6 @@ toughness=1
 timing=main
 
 >Ruthless Cullblade
-image=http://magiccards.info/scans/en/wwk/65.jpg
 cube=default
 value=2
 rarity=1
@@ -5164,7 +4778,6 @@ toughness=1
 timing=main
 
 >Dragonmaster Outcast
-image=http://magiccards.info/scans/en/wwk/81.jpg
 cube=default
 value=2
 rarity=2
@@ -5178,7 +4791,6 @@ toughness=1
 timing=smain
 
 >Novablast Wurm
-image=http://magiccards.info/scans/en/wwk/119.jpg
 cube=default
 value=5
 rarity=3
@@ -5192,7 +4804,6 @@ toughness=7
 timing=smain
 
 >Bestial Menace
-image=http://magiccards.info/scans/en/wwk/97.jpg
 cube=default
 value=4
 rarity=2
@@ -5203,7 +4814,6 @@ cost={3}{G}{G}
 timing=main
 
 >Celestial Colonnade
-image=http://magiccards.info/scans/en/wwk/133.jpg
 cube=default
 value=4
 rarity=1
@@ -5212,7 +4822,6 @@ mana=w3u3
 timing=tapland
 
 >Inspirit
-image=http://magiccards.info/scans/en/9e/22.jpg
 cube=default
 value=3
 rarity=1
@@ -5223,7 +4832,6 @@ cost={2}{W}
 timing=tapping
 
 >Shivan Wurm
-image=http://magiccards.info/scans/en/ps/124.jpg
 cube=default
 value=4
 rarity=2
@@ -5238,7 +4846,6 @@ ability=trample
 timing=main
 
 >Vedalken Outlander
-image=http://magiccards.info/scans/en/cfx/132.jpg
 cube=default
 value=2
 rarity=1
@@ -5253,7 +4860,6 @@ ability=protection from red
 timing=smain
 
 >Teneb, the Harvester
-image=http://magiccards.info/scans/en/pc/163.jpg
 cube=default
 value=5
 rarity=3
@@ -5268,7 +4874,6 @@ ability=flying
 timing=main
 
 >Ogre's Cleaver
-image=http://magiccards.info/scans/en/roe/220.jpg
 cube=default
 value=3
 rarity=2
@@ -5282,7 +4887,6 @@ toughness=0
 timing=equipment
 
 >Goliath Sphinx
-image=http://magiccards.info/scans/en/wwk/28.jpg
 cube=default
 value=5
 rarity=3
@@ -5297,7 +4901,6 @@ ability=flying
 timing=main
 
 >Mordant Dragon
-image=http://magiccards.info/scans/en/wwk/85.jpg
 cube=default
 value=5
 rarity=3
@@ -5312,7 +4915,6 @@ ability=flying
 timing=main
 
 >Butcher of Malakir
-image=http://magiccards.info/scans/en/wwk/53.jpg
 cube=default
 value=5
 rarity=3
@@ -5327,7 +4929,6 @@ ability=flying
 timing=main
 
 >Kazuul, Tyrant of the Cliffs
-image=http://magiccards.info/scans/en/wwk/84.jpg
 cube=default
 value=5
 rarity=3
@@ -5341,7 +4942,6 @@ toughness=4
 timing=main
 
 >Kitesail
-image=http://magiccards.info/scans/en/wwk/126.jpg
 cube=default
 value=2
 rarity=2
@@ -5356,7 +4956,6 @@ ability=flying
 timing=equipment
 
 >Chandra's Spitfire
-image=http://magiccards.info/scans/en/m11/129.jpg
 cube=default
 value=3
 rarity=2
@@ -5371,7 +4970,6 @@ timing=fmain
 ability=flying
 
 >Veteran's Reflexes
-image=http://magiccards.info/scans/en/wwk/23.jpg
 cube=default
 value=2
 rarity=1
@@ -5382,7 +4980,6 @@ cost={W}
 timing=tapping
 
 >Smother
-image=http://magiccards.info/scans/en/wwk/68.jpg
 cube=default
 value=3
 removal=2
@@ -5394,7 +4991,6 @@ cost={1}{B}
 timing=removal
 
 >Vault Skyward
-image=http://magiccards.info/scans/en/som/51.jpg
 cube=default
 value=1
 rarity=1
@@ -5405,7 +5001,6 @@ cost={U}
 timing=tapping
 
 >Archon of Redemption
-image=http://magiccards.info/scans/en/wwk/3.jpg
 cube=default
 value=4
 rarity=2
@@ -5420,7 +5015,6 @@ ability=flying
 timing=smain
 
 >Air Servant
-image=http://magiccards.info/scans/en/m11/42.jpg
 cube=default
 value=4
 rarity=1
@@ -5435,7 +5029,6 @@ ability=flying
 timing=main
 
 >Wrexial, the Risen Deep
-image=http://magiccards.info/scans/en/wwk/120.jpg
 cube=default
 value=5
 rarity=3
@@ -5450,7 +5043,6 @@ ability=islandwalk,swampwalk
 timing=smain
 
 >Armadillo Cloak
-image=http://magiccards.info/scans/en/arc/78.jpg
 cube=default
 value=4
 rarity=2
@@ -5465,7 +5057,6 @@ ability=trample
 timing=aura
 
 >Fallen Angel
-image=http://magiccards.info/scans/en/dvd/42.jpg
 cube=default
 value=4
 rarity=2
@@ -5480,7 +5071,6 @@ ability=flying
 timing=main
 
 >Corpsehatch
-image=http://magiccards.info/scans/en/roe/103.jpg
 cube=default
 value=4
 removal=3
@@ -5492,7 +5082,6 @@ cost={3}{B}{B}
 timing=removal
 
 >Reanimate
-image=http://magiccards.info/scans/en/arc/21.jpg
 cube=default
 value=3
 rarity=2
@@ -5503,7 +5092,6 @@ cost={B}
 timing=main
 
 >Darkslick Drake
-image=http://magiccards.info/scans/en/som/30.jpg
 cube=default
 value=3
 rarity=1
@@ -5518,7 +5106,6 @@ ability=flying
 timing=main
 
 >Kavu Titan
-image=http://magiccards.info/scans/en/in/194.jpg
 cube=default
 value=3
 rarity=2
@@ -5532,7 +5119,6 @@ toughness=2
 timing=main
 
 >Burst Lightning
-image=http://magiccards.info/scans/en/zen/119.jpg
 cube=default
 value=2
 removal=3
@@ -5544,7 +5130,6 @@ cost={R}
 timing=removal
 
 >Rite of Replication
-image=http://magiccards.info/scans/en/zen/61.jpg
 cube=default
 value=4
 rarity=2
@@ -5555,7 +5140,6 @@ cost={2}{U}{U}
 timing=main
 
 >Marsh Casualties
-image=http://magiccards.info/scans/en/zen/101.jpg
 cube=default
 value=3
 removal=2
@@ -5567,7 +5151,6 @@ cost={B}{B}
 timing=removal
 
 >Lightkeeper of Emeria
-image=http://magiccards.info/scans/en/wwk/12.jpg
 cube=default
 value=3
 rarity=1
@@ -5582,7 +5165,6 @@ ability=flying
 timing=main
 
 >Wolfbriar Elemental
-image=http://magiccards.info/scans/en/wwk/118.jpg
 cube=default
 value=5
 rarity=2
@@ -5596,7 +5178,6 @@ toughness=4
 timing=main
 
 >Sphinx of Lost Truths
-image=http://magiccards.info/scans/en/zen/69.jpg
 cube=default
 value=4
 rarity=2
@@ -5611,7 +5192,6 @@ ability=flying
 timing=main
 
 >Fire Servant
-image=http://magiccards.info/scans/en/m11/137.jpg
 cube=default
 value=4
 rarity=2
@@ -5625,7 +5205,6 @@ toughness=3
 timing=main
 
 >Strider Harness
-image=http://magiccards.info/scans/en/som/207.jpg
 cube=default
 value=3
 rarity=2
@@ -5640,7 +5219,6 @@ ability=haste
 timing=equipment
 
 >Accorder's Shield
-image=http://magiccards.info/scans/en/som/136.jpg
 cube=default
 value=2
 rarity=2
@@ -5655,7 +5233,6 @@ ability=vigilance
 timing=equipment
 
 >Akroma's Memorial
-image=http://magiccards.info/scans/en/fut/159.jpg
 cube=default
 value=5
 rarity=3
@@ -5666,7 +5243,6 @@ static=player
 timing=artifact
 
 >Cumber Stone
-image=http://magiccards.info/scans/en/cfx/24.jpg
 cube=default
 value=3
 removal=1
@@ -5679,7 +5255,6 @@ static=opponent
 timing=artifact
 
 >Mind Stone
-image=http://magiccards.info/scans/en/jvc/22.jpg
 cube=default
 value=3
 rarity=1
@@ -5689,7 +5264,6 @@ cost={2}
 timing=artifact
 
 >Eldrazi Monument
-image=http://magiccards.info/scans/en/zen/199.jpg
 cube=default
 value=5
 rarity=3
@@ -5700,7 +5274,6 @@ static=player
 timing=fmain
 
 >Chimeric Mass
-image=http://magiccards.info/scans/en/som/141.jpg
 cube=default
 value=3
 rarity=2
@@ -5710,7 +5283,6 @@ cost={X}
 timing=artifact
 
 >Lotus Petal
-image=http://magiccards.info/scans/en/fve/7.jpg
 cube=default
 value=3
 rarity=2
@@ -5720,7 +5292,6 @@ cost={0}
 timing=artifact
 
 >Moonglove Extract
-image=http://magiccards.info/scans/en/evg/24.jpg
 cube=default
 value=3
 removal=2
@@ -5731,7 +5302,6 @@ cost={3}
 timing=artifact
 
 >Serrated Arrows
-image=http://magiccards.info/scans/en/gvl/20.jpg
 cube=default
 value=4
 removal=2
@@ -5742,7 +5312,6 @@ cost={4}
 timing=artifact
 
 >Skullcage
-image=http://magiccards.info/scans/en/arc/115.jpg
 cube=default
 value=4
 rarity=2
@@ -5752,7 +5321,6 @@ cost={4}
 timing=smain
 
 >Trip Noose
-image=http://magiccards.info/scans/en/shm/266.jpg
 cube=default
 value=3
 removal=2
@@ -5763,7 +5331,6 @@ cost={2}
 timing=artifact
 
 >Mighty Leap
-image=http://magiccards.info/scans/en/m11/22.jpg
 cube=default
 value=3
 rarity=1
@@ -5774,7 +5341,6 @@ cost={1}{W}
 timing=pump
 
 >Liliana's Specter
-image=http://magiccards.info/scans/en/m11/104.jpg
 cube=default
 value=3
 rarity=1
@@ -5789,7 +5355,6 @@ ability=flying
 timing=fmain
 
 >Charging Troll
-image=http://magiccards.info/scans/en/pvc/45.jpg
 cube=default
 value=4
 rarity=2
@@ -5804,7 +5369,6 @@ ability=vigilance
 timing=main
 
 >Bottle Gnomes
-image=http://magiccards.info/scans/en/jvc/7.jpg
 cube=default
 value=3
 rarity=2
@@ -5817,7 +5381,6 @@ toughness=3
 timing=main
 
 >Esper Battlemage
-image=http://magiccards.info/scans/en/ala/40.jpg
 cube=default
 value=3
 rarity=2
@@ -5831,7 +5394,6 @@ toughness=2
 timing=smain
 
 >Tuktuk the Explorer
-image=http://magiccards.info/scans/en/roe/169.jpg
 cube=default
 value=4
 rarity=3
@@ -5846,7 +5408,6 @@ ability=haste
 timing=fmain
 
 >Eel Umbra
-image=http://magiccards.info/scans/en/roe/65.jpg
 cube=default
 value=3
 rarity=1
@@ -5861,7 +5422,6 @@ ability=flash,totem armor
 timing=pump
 
 >Hyena Umbra
-image=http://magiccards.info/scans/en/roe/26.jpg
 cube=default
 value=2
 rarity=1
@@ -5876,7 +5436,6 @@ ability=totem armor,first strike
 timing=aura
 
 >Boar Umbra
-image=http://magiccards.info/scans/en/roe/179.jpg
 cube=default
 value=3
 rarity=1
@@ -5891,7 +5450,6 @@ ability=totem armor
 timing=aura
 
 >Drake Umbra
-image=http://magiccards.info/scans/en/roe/63.jpg
 cube=default
 value=4
 rarity=2
@@ -5906,7 +5464,6 @@ ability=totem armor,flying
 timing=aura
 
 >Volcanic Strength
-image=http://magiccards.info/scans/en/m11/158.jpg
 cube=default
 value=3
 rarity=1
@@ -5921,7 +5478,6 @@ ability=mountainwalk
 timing=aura
 
 >Sword of Vengeance
-image=http://magiccards.info/scans/en/m11/216.jpg
 cube=default
 value=4
 rarity=3
@@ -5936,7 +5492,6 @@ ability=first strike,vigilance,trample,haste
 timing=equipment
 
 >Blackcleave Cliffs
-image=http://magiccards.info/scans/en/som/224.jpg
 cube=default
 value=4
 rarity=1
@@ -5946,7 +5501,6 @@ basic=br
 timing=land
 
 >Copperline Gorge
-image=http://magiccards.info/scans/en/som/225.jpg
 cube=default
 value=4
 rarity=1
@@ -5956,7 +5510,6 @@ basic=rg
 timing=land
 
 >Darkslick Shores
-image=http://magiccards.info/scans/en/som/226.jpg
 cube=default
 value=4
 rarity=1
@@ -5966,7 +5519,6 @@ basic=ub
 timing=land
 
 >Razorverge Thicket
-image=http://magiccards.info/scans/en/som/228.jpg
 cube=default
 value=4
 rarity=1
@@ -5976,7 +5528,6 @@ basic=gw
 timing=land
 
 >Seachrome Coast
-image=http://magiccards.info/scans/en/som/229.jpg
 cube=default
 value=4
 rarity=1
@@ -5986,7 +5537,6 @@ basic=wu
 timing=land
 
 >Withstand Death
-image=http://magiccards.info/scans/en/som/134.jpg
 cube=default
 value=2
 rarity=1
@@ -5997,7 +5547,6 @@ cost={G}
 timing=pump
 
 >Student of Warfare
-image=http://magiccards.info/scans/en/roe/47.jpg
 cube=default
 value=2
 rarity=2
@@ -6011,7 +5560,6 @@ toughness=1
 timing=main
 
 >Szadek, Lord of Secrets
-image=http://magiccards.info/scans/en/rav/234.jpg
 cube=default
 value=5
 rarity=3
@@ -6026,7 +5574,6 @@ ability=flying
 timing=smain
 
 >Sword of Body and Mind
-image=http://magiccards.info/scans/en/som/208.jpg
 cube=default
 value=5
 rarity=3
@@ -6041,7 +5588,6 @@ ability=protection from green,protection from blue
 timing=equipment
 
 >Bladed Pinions
-image=http://magiccards.info/scans/en/som/140.jpg
 cube=default
 value=2
 rarity=2
@@ -6054,7 +5600,6 @@ ability=flying,first strike
 timing=equipment
 
 >Gorgon Flail
-image=http://magiccards.info/scans/en/m10/211.jpg
 cube=default
 value=3
 rarity=2
@@ -6069,7 +5614,6 @@ ability=deathtouch
 timing=equipment
 
 >Turn to Mist
-image=http://magiccards.info/scans/en/shm/155.jpg
 cube=default
 value=3
 removal=1
@@ -6081,7 +5625,6 @@ cost={1}{W/U}
 timing=removal
 
 >Ghost Council of Orzhova
-image=http://magiccards.info/scans/en/gp/114.jpg
 cube=default
 value=4
 rarity=3
@@ -6095,7 +5638,6 @@ toughness=4
 timing=main
 
 >Mirran Crusader
-image=http://magiccards.info/scans/en/mbs/14.jpg
 cube=default
 value=4
 rarity=2
@@ -6110,7 +5652,6 @@ ability=double strike,protection from black,protection from green
 timing=main
 
 >Woolly Thoctar
-image=http://magiccards.info/scans/en/ala/209.jpg
 cube=default
 value=4
 rarity=2
@@ -6124,7 +5665,6 @@ toughness=4
 timing=main
 
 >Goblin Gaveleer
-image=http://magiccards.info/scans/en/som/92.jpg
 cube=default
 value=2
 rarity=1
@@ -6139,7 +5679,6 @@ ability=trample
 timing=main
 
 >Esper Stormblade
-image=http://magiccards.info/scans/en/arb/132.jpg
 cube=default
 value=3
 rarity=2
@@ -6153,7 +5692,6 @@ toughness=1
 timing=main
 
 >Grixis Grimblade
-image=http://magiccards.info/scans/en/arb/134.jpg
 cube=default
 value=3
 rarity=2
@@ -6167,7 +5705,6 @@ toughness=1
 timing=main
 
 >Bant Sureblade
-image=http://magiccards.info/scans/en/arb/143.jpg
 cube=default
 value=3
 rarity=2
@@ -6181,7 +5718,6 @@ toughness=1
 timing=main
 
 >Last Gasp
-image=http://magiccards.info/scans/en/rav/93.jpg
 cube=default
 value=3
 removal=2
@@ -6193,7 +5729,6 @@ cost={1}{B}
 timing=removal
 
 >Smash to Smithereens
-image=http://magiccards.info/scans/en/shm/107.jpg
 cube=default
 value=2
 removal=1
@@ -6205,7 +5740,6 @@ cost={1}{R}
 timing=removal
 
 >Volcanic Fallout
-image=http://magiccards.info/scans/en/arc/51.jpg
 cube=default
 value=3
 removal=2
@@ -6218,7 +5752,6 @@ ability=can't be countered
 timing=removal
 
 >Acidic Slime
-image=http://magiccards.info/scans/en/m11/161.jpg
 cube=default
 value=4
 removal=2
@@ -6234,7 +5767,6 @@ ability=deathtouch
 timing=fmain
 
 >Archon of Justice
-image=http://magiccards.info/scans/en/eve/1.jpg
 cube=default
 value=4
 rarity=2
@@ -6249,7 +5781,6 @@ ability=flying
 timing=main
 
 >Ember Hauler
-image=http://magiccards.info/scans/en/m11/135.jpg
 cube=default
 value=3
 rarity=2
@@ -6263,7 +5794,6 @@ toughness=2
 timing=fmain
 
 >Fume Spitter
-image=http://magiccards.info/scans/en/som/63.jpg
 cube=default
 value=2
 rarity=1
@@ -6277,7 +5807,6 @@ toughness=1
 timing=fmain
 
 >Goblin Ruinblaster
-image=http://magiccards.info/scans/en/zen/127.jpg
 cube=default
 value=3
 rarity=2
@@ -6292,7 +5821,6 @@ ability=haste
 timing=fmain
 
 >Mycoid Shepherd
-image=http://magiccards.info/scans/en/arb/73.jpg
 cube=default
 value=4
 rarity=2
@@ -6306,7 +5834,6 @@ toughness=4
 timing=main
 
 >Nemesis of Reason
-image=http://magiccards.info/scans/en/arb/28.jpg
 cube=default
 value=4
 rarity=2
@@ -6320,7 +5847,6 @@ toughness=7
 timing=smain
 
 >Nulltread Gargantuan
-image=http://magiccards.info/scans/en/arb/102.jpg
 cube=default
 value=4
 rarity=2
@@ -6334,7 +5860,6 @@ toughness=6
 timing=smain
 
 >Pierce Strider
-image=http://magiccards.info/scans/en/mbs/123.jpg
 cube=default
 value=3
 rarity=2
@@ -6347,7 +5872,6 @@ toughness=3
 timing=fmain
 
 >Pongify
-image=http://magiccards.info/scans/en/pc/44.jpg
 cube=default
 value=3
 removal=3
@@ -6359,7 +5883,6 @@ cost={U}
 timing=removal
 
 >Pulse of the Tangle
-image=http://magiccards.info/scans/en/ds/80.jpg
 cube=default
 value=4
 rarity=1
@@ -6370,7 +5893,6 @@ cost={1}{G}{G}
 timing=main
 
 >Vampire Hexmage
-image=http://magiccards.info/scans/en/zen/114.jpg
 cube=default
 value=3
 rarity=2
@@ -6385,7 +5907,6 @@ ability=first strike
 timing=fmain
 
 >Grave Titan
-image=http://magiccards.info/scans/en/m11/97.jpg
 cube=default
 value=5
 rarity=3
@@ -6400,7 +5921,6 @@ ability=deathtouch
 timing=fmain
 
 >Lord of Shatterskull Pass
-image=http://magiccards.info/scans/en/roe/156.jpg
 cube=default
 value=4
 rarity=2
@@ -6414,7 +5934,6 @@ toughness=3
 timing=main
 
 >Nirkana Cutthroat
-image=http://magiccards.info/scans/en/roe/119.jpg
 cube=default
 value=3
 rarity=2
@@ -6428,7 +5947,6 @@ toughness=2
 timing=main
 
 >Kitchen Finks
-image=http://magiccards.info/scans/en/shm/229.jpg
 cube=default
 value=4
 rarity=2
@@ -6443,7 +5961,6 @@ ability=persist
 timing=main
 
 >Lord of Extinction
-image=http://magiccards.info/scans/en/arb/91.jpg
 cube=default
 value=5
 rarity=3
@@ -6455,7 +5972,6 @@ cost={3}{B}{G}
 timing=smain
 
 >Awakening Zone
-image=http://magiccards.info/scans/en/roe/176.jpg
 cube=default
 value=4
 rarity=2
@@ -6466,7 +5982,6 @@ cost={2}{G}
 timing=enchantment
 
 >Force Spike
-image=http://magiccards.info/scans/en/7e/76.jpg
 cube=default
 value=3
 rarity=1
@@ -6477,7 +5992,6 @@ cost={U}
 timing=counter
 
 >Kiki-Jiki, Mirror Breaker
-image=http://magiccards.info/scans/en/chk/175.jpg
 cube=default
 value=5
 rarity=3
@@ -6492,7 +6006,6 @@ ability=haste
 timing=fmain
 
 >Twincast
-image=http://magiccards.info/scans/en/m10/78.jpg
 cube=default
 value=3
 rarity=2
@@ -6503,7 +6016,6 @@ cost={U}{U}
 timing=spell
 
 >Echo Mage
-image=http://magiccards.info/scans/en/roe/64.jpg
 cube=default
 value=3
 rarity=2
@@ -6517,7 +6029,6 @@ toughness=3
 timing=smain
 
 >Ghostway
-image=http://magiccards.info/scans/en/gp/6.jpg
 cube=default
 value=3
 rarity=3
@@ -6528,7 +6039,6 @@ cost={2}{W}
 timing=removal
 
 >Brittle Effigy
-image=http://magiccards.info/scans/en/m11/202.jpg
 cube=default
 value=3
 removal=4
@@ -6539,7 +6049,6 @@ cost={1}
 timing=artifact
 
 >Sylvok Lifestaff
-image=http://magiccards.info/scans/en/som/209.jpg
 cube=default
 value=2
 rarity=2
@@ -6553,7 +6062,6 @@ toughness=0
 timing=equipment
 
 >Snake Umbra
-image=http://magiccards.info/scans/en/roe/207.jpg
 cube=default
 value=3
 rarity=2
@@ -6568,7 +6076,6 @@ ability=totem armor
 timing=aura
 
 >Spitemare
-image=http://magiccards.info/scans/en/eve/147.jpg
 cube=default
 value=4
 rarity=2
@@ -6582,7 +6089,6 @@ toughness=3
 timing=main
 
 >Wrecking Ball
-image=http://magiccards.info/scans/en/di/139.jpg
 cube=default
 value=3
 removal=4
@@ -6594,7 +6100,6 @@ cost={2}{B}{R}
 timing=removal
 
 >Sunblast Angel
-image=http://magiccards.info/scans/en/som/22.jpg
 cube=default
 value=5
 removal=2
@@ -6610,7 +6115,6 @@ ability=flying
 timing=fmain
 
 >Predator Dragon
-image=http://magiccards.info/scans/en/ala/109.jpg
 cube=default
 value=5
 rarity=3
@@ -6625,7 +6129,6 @@ ability=flying,haste
 timing=fmain
 
 >Mask of Memory
-image=http://magiccards.info/scans/en/pch/119.jpg
 cube=default
 value=3
 rarity=2
@@ -6637,7 +6140,6 @@ equip={1}
 timing=equipment
 
 >Soul Link
-image=http://magiccards.info/scans/en/ap/120.jpg
 cube=default
 value=3
 removal=1
@@ -6650,7 +6152,6 @@ cost={1}{W}{B}
 timing=aura
 
 >Vines of Vastwood
-image=http://magiccards.info/scans/en/zen/193.jpg
 cube=default
 value=3
 rarity=2
@@ -6661,7 +6162,6 @@ cost={G}
 timing=pump
 
 >Lone Missionary
-image=http://magiccards.info/scans/en/roe/34.jpg
 cube=default
 value=2
 rarity=1
@@ -6675,7 +6175,6 @@ toughness=1
 timing=fmain
 
 >Followed Footsteps
-image=http://magiccards.info/scans/en/rav/51.jpg
 cube=default
 value=4
 rarity=2
@@ -6687,7 +6186,6 @@ cost={3}{U}{U}
 timing=aura
 
 >Bellowing Tanglewurm
-image=http://magiccards.info/scans/en/som/111.jpg
 cube=default
 value=4
 rarity=2
@@ -6703,7 +6201,6 @@ static=player
 timing=fmain
 
 >Hero of Bladehold
-image=http://magiccards.info/scans/en/mbs/8.jpg
 cube=default
 value=4
 rarity=2
@@ -6718,7 +6215,6 @@ ability=battle cry
 timing=fmain
 
 >Skullclamp
-image=http://magiccards.info/scans/en/fve/12.jpg
 cube=default
 value=4
 rarity=3
@@ -6732,7 +6228,6 @@ toughness=-1
 timing=equipment
 
 >Asceticism
-image=http://magiccards.info/scans/en/som/110.jpg
 cube=default
 value=5
 rarity=3
@@ -6743,7 +6238,6 @@ cost={3}{G}{G}
 timing=enchantment
 
 >Accorder Paladin
-image=http://magiccards.info/scans/en/mbs/1.jpg
 cube=default
 value=2
 rarity=1
@@ -6758,7 +6252,6 @@ ability=battle cry
 timing=main
 
 >Guul Draz Vampire
-image=http://magiccards.info/scans/en/zen/93.jpg
 cube=default
 value=2
 rarity=2
@@ -6772,7 +6265,6 @@ toughness=1
 timing=main
 
 >Flayer Husk
-image=http://magiccards.info/scans/en/mbs/107.jpg
 cube=default
 value=2
 rarity=2
@@ -6786,7 +6278,6 @@ toughness=1
 timing=equipment
 
 >Bull Cerodon
-image=http://magiccards.info/scans/en/pch/84.jpg
 cube=default
 value=5
 rarity=3
@@ -6801,7 +6292,6 @@ ability=vigilance,haste
 timing=fmain
 
 >Memnite
-image=http://magiccards.info/scans/en/som/174.jpg
 cube=default
 value=1
 rarity=2
@@ -6814,7 +6304,6 @@ toughness=1
 timing=main
 
 >Drudge Reavers
-image=http://magiccards.info/scans/en/ts/105.jpg
 cube=default
 value=3
 rarity=1
@@ -6829,7 +6318,6 @@ ability=flash
 timing=flash
 
 >Thoughtweft Gambit
-image=http://magiccards.info/scans/en/shm/154.jpg
 cube=default
 value=4
 rarity=2
@@ -6840,7 +6328,6 @@ cost={4}{W/U}{W/U}
 timing=tapping
 
 >Back to Nature
-image=http://magiccards.info/scans/en/m11/164.jpg
 cube=default
 value=1
 removal=2
@@ -6852,7 +6339,6 @@ color=g
 timing=removal
 
 >Goblin Wardriver
-image=http://magiccards.info/scans/en/mbs/64.jpg
 cube=default
 value=3
 rarity=2
@@ -6867,7 +6353,6 @@ ability=battle cry
 timing=main
 
 >Victory's Herald
-image=http://magiccards.info/scans/en/mbs/18.jpg
 cube=default
 value=5
 rarity=3
@@ -6882,7 +6367,6 @@ ability=flying
 timing=main
 
 >Black Sun's Zenith
-image=http://magiccards.info/scans/en/mbs/39.jpg
 cube=default
 value=4
 removal=3
@@ -6894,7 +6378,6 @@ cost={X}{B}{B}
 timing=removal
 
 >Massacre Wurm
-image=http://magiccards.info/scans/en/mbs/46.jpg
 cube=default
 value=5
 removal=2
@@ -6909,7 +6392,6 @@ toughness=5
 timing=fmain
 
 >Thrun, the Last Troll
-image=http://magiccards.info/scans/en/mbs/92.jpg
 cube=default
 value=4
 rarity=3
@@ -6924,7 +6406,6 @@ ability=can't be countered,can't be the target of spells or abilities your oppon
 timing=fmain
 
 >Viridian Claw
-image=http://magiccards.info/scans/en/mbs/143.jpg
 cube=default
 value=3
 rarity=2
@@ -6939,7 +6420,6 @@ ability=first strike
 timing=equipment
 
 >Strandwalker
-image=http://magiccards.info/scans/en/mbs/137.jpg
 cube=default
 value=3
 rarity=2
@@ -6954,7 +6434,6 @@ ability=reach
 timing=equipment
 
 >Turn the Tide
-image=http://magiccards.info/scans/en/mbs/35.jpg
 cube=default
 value=3
 rarity=1
@@ -6965,7 +6444,6 @@ cost={1}{U}
 timing=removal
 
 >Captive Flame
-image=http://magiccards.info/scans/en/sok/96.jpg
 cube=default
 value=3
 rarity=2
@@ -6976,7 +6454,6 @@ cost={2}{R}
 timing=enchantment
 
 >Smite
-image=http://magiccards.info/scans/en/roe/43.jpg
 cube=default
 value=3
 removal=3
@@ -6988,7 +6465,6 @@ cost={W}
 timing=block
 
 >Neurok Invisimancer
-image=http://magiccards.info/scans/en/som/37.jpg
 cube=default
 value=3
 rarity=2
@@ -7003,7 +6479,6 @@ ability=unblockable
 timing=fmain
 
 >Vedalken Mastermind
-image=http://magiccards.info/scans/en/10e/123.jpg
 cube=default
 value=3
 rarity=2
@@ -7017,7 +6492,6 @@ toughness=2
 timing=main
 
 >Gelectrode
-image=http://magiccards.info/scans/en/gp/113.jpg
 cube=default
 value=3
 rarity=2
@@ -7031,7 +6505,6 @@ toughness=1
 timing=smain
 
 >Recoil
-image=http://magiccards.info/scans/en/in/264.jpg
 cube=default
 value=3
 rarity=2
@@ -7042,7 +6515,6 @@ cost={1}{U}{B}
 timing=removal
 
 >Ezuri's Archers
-image=http://magiccards.info/scans/en/som/120.jpg
 cube=default
 value=2
 rarity=2
@@ -7057,7 +6529,6 @@ ability=reach
 timing=smain
 
 >Gratuitous Violence
-image=http://magiccards.info/scans/en/on/212.jpg
 cube=default
 value=4
 rarity=3
@@ -7068,7 +6539,6 @@ cost={2}{R}{R}{R}
 timing=enchantment
 
 >Rally the Forces
-image=http://magiccards.info/scans/en/mbs/73.jpg
 cube=default
 value=3
 rarity=1
@@ -7079,7 +6549,6 @@ cost={2}{R}
 timing=pump
 
 >Septic Rats
-image=http://magiccards.info/scans/en/mbs/55.jpg
 cube=default
 value=3
 rarity=1
@@ -7094,7 +6563,6 @@ ability=infect
 timing=main
 
 >Phyrexian Crusader
-image=http://magiccards.info/scans/en/mbs/50.jpg
 cube=default
 value=4
 rarity=2
@@ -7109,7 +6577,6 @@ ability=first strike,protection from red,protection from white,infect
 timing=main
 
 >Phyrexian Vatmother
-image=http://magiccards.info/scans/en/mbs/52.jpg
 cube=default
 value=4
 rarity=2
@@ -7124,7 +6591,6 @@ ability=infect
 timing=main
 
 >Plague Stinger
-image=http://magiccards.info/scans/en/som/75.jpg
 cube=default
 value=2
 rarity=1
@@ -7139,7 +6605,6 @@ ability=flying,infect
 timing=main
 
 >Skithiryx, the Blight Dragon
-image=http://magiccards.info/scans/en/som/79.jpg
 cube=default
 value=5
 rarity=3
@@ -7154,7 +6619,6 @@ ability=flying,infect
 timing=fmain
 
 >Phyrexian Juggernaut
-image=http://magiccards.info/scans/en/mbs/121.jpg
 cube=default
 value=4
 rarity=3
@@ -7168,7 +6632,6 @@ ability=infect,attacks each turn if able
 timing=main
 
 >Go for the Throat
-image=http://magiccards.info/scans/en/mbs/43.jpg
 cube=default
 value=3
 removal=4
@@ -7180,7 +6643,6 @@ cost={1}{B}
 timing=removal
 
 >Sword of Feast and Famine
-image=http://magiccards.info/scans/en/mbs/138.jpg
 cube=default
 value=5
 rarity=3
@@ -7195,7 +6657,6 @@ ability=protection from black,protection from green
 timing=equipment
 
 >Suture Priest
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=115363&d=1297746104
 cube=default
 value=2
 rarity=2
@@ -7209,7 +6670,6 @@ toughness=1
 timing=fmain
 
 >Elesh Norn, Grand Cenobite
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=116363&stc=1&d=1301374681
 cube=default
 value=5
 rarity=3
@@ -7225,7 +6685,6 @@ static=all
 timing=fmain
 
 >Barbed Battlegear
-image=http://magiccards.info/scans/en/som/139.jpg
 cube=default
 value=3
 rarity=2
@@ -7239,7 +6698,6 @@ toughness=-1
 timing=equipment
 
 >Lightning Greaves
-image=http://magiccards.info/scans/en/pvc/19.jpg
 cube=default
 value=4
 rarity=2
@@ -7252,7 +6710,6 @@ ability=shroud,haste
 timing=equipment
 
 >Garruk's Companion
-image=http://magiccards.info/scans/en/m11/176.jpg
 cube=default
 value=3
 ability=trample
@@ -7267,7 +6724,6 @@ toughness=2
 timing=main
 
 >Serra Angel
-image=http://magiccards.info/scans/en/dvd/10.jpg
 cube=default
 value=4
 ability=flying,vigilance
@@ -7282,7 +6738,6 @@ toughness=4
 timing=main
 
 >Welkin Tern
-image=http://magiccards.info/scans/en/zen/76.jpg
 cube=default
 value=2
 ability=flying,can't block creatures without flying
@@ -7297,7 +6752,6 @@ toughness=1
 timing=main
 
 >Vindicate
-image=http://magiccards.info/scans/en/jr/33.jpg
 cube=default
 value=4
 removal=5
@@ -7309,7 +6763,6 @@ cost={1}{W}{B}
 timing=removal
 
 >Juniper Order Ranger
-image=http://magiccards.info/scans/en/cs/130.jpg
 cube=default
 value=4
 rarity=2
@@ -7323,7 +6776,6 @@ toughness=4
 timing=fmain
 
 >Dragon Fodder
-image=http://magiccards.info/scans/en/arc/34.jpg
 cube=default
 value=3
 rarity=1
@@ -7334,7 +6786,6 @@ cost={1}{R}
 timing=main
 
 >Knight Exemplar
-image=http://magiccards.info/scans/en/m11/20.jpg
 cube=default
 value=4
 rarity=2
@@ -7350,7 +6801,6 @@ static=player
 timing=fmain
 
 >Silvos, Rogue Elemental
-image=http://magiccards.info/scans/en/on/282.jpg
 cube=default
 value=5
 rarity=3
@@ -7365,7 +6815,6 @@ ability=trample
 timing=main
 
 >Visara the Dreadful
-image=http://magiccards.info/scans/en/on/179.jpg
 cube=default
 value=5
 rarity=3
@@ -7380,7 +6829,6 @@ ability=flying
 timing=main
 
 >Havoc Demon
-image=http://magiccards.info/scans/en/le/74.jpg
 cube=default
 value=5
 rarity=3
@@ -7395,7 +6843,6 @@ ability=flying
 timing=main
 
 >Thunder Dragon
-image=http://magiccards.info/scans/en/fvd/14.jpg
 cube=default
 value=5
 rarity=3
@@ -7410,7 +6857,6 @@ ability=flying
 timing=main
 
 >Perilous Myr
-image=http://magiccards.info/scans/en/som/192.jpg
 cube=default
 value=3
 rarity=2
@@ -7423,7 +6869,6 @@ toughness=1
 timing=main
 
 >Arcanis the Omnipotent
-image=http://magiccards.info/scans/en/10e/66.jpg
 cube=default
 value=5
 rarity=3
@@ -7435,3 +6880,38 @@ cost={3}{U}{U}{U}
 power=3
 toughness=4
 timing=smain
+
+>Overrun
+cube=default
+value=4
+rarity=2
+type=Sorcery
+color=g
+converted=5
+cost={2}{G}{G}{G}
+timing=pump
+
+>Bitterblossom
+cube=default
+value=4
+rarity=3
+type=Enchantment
+subtype=Faerie
+color=b
+converted=2
+cost={1}{B}
+timing=enchantment
+
+>Goblin Piledriver
+cube=default
+value=3
+rarity=2
+type=Creature
+subtype=Goblin
+color=r
+converted=2
+cost={1}{R}
+power=1
+toughness=2
+ability=protection from blue
+timing=main

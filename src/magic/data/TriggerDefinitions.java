@@ -899,6 +899,39 @@ public class TriggerDefinitions {
 		}		
     };
 
+    private static final MagicTrigger GOBLIN_PILEDRIVER=new MagicTrigger(MagicTriggerType.WhenAttacks,"Goblin Piledriver") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			if (permanent==data) {
+				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
+					"Goblin Piledriver gets +2/+0 until end of turn for each other attacking Goblin.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			int power=0;
+			final MagicPermanent creature=(MagicPermanent)data[0];
+			final Collection<MagicTarget> targets=game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+			for (final MagicTarget target : targets) {
+
+				if (creature!=target) {
+					final MagicPermanent attacker=(MagicPermanent)target;
+					if (attacker.hasSubType(MagicSubType.Goblin)) {
+						power+=2;
+					}
+				}
+			}
+			if (power>0) {
+				game.doAction(new MagicChangeTurnPTAction(creature,power,0));
+			}
+		}
+    };
+    
     private static final MagicTrigger GUARD_GOMAZOA=new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Guard Gomazoa",1) {
 
 		@Override
@@ -3198,6 +3231,28 @@ public class TriggerDefinitions {
 		}		
     };
     
+    private static final MagicTrigger BITTERBLOSSOM=new MagicTrigger(MagicTriggerType.AtUpkeep,"Bitterblossom") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,new Object[]{player},this,
+					"You lose 1 life and put a 1/1 black Faerie Rogue creature token with flying onto the battlefield.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=(MagicPlayer)(MagicPlayer)data[0];
+			game.doAction(new MagicChangeLifeAction(player,-1));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.FAERIE_ROGUE_TOKEN_CARD));
+		}		
+    };
+    
     private static final MagicTrigger DEBTORS_KNELL=new MagicTrigger(MagicTriggerType.AtUpkeep,"Debtors' Knell") {
 
 		@Override
@@ -3895,6 +3950,7 @@ public class TriggerDefinitions {
 	    GHOST_COUNCIL_OF_ORZHOVA,
 	    GRAVE_TITAN1,
 	    GRAVE_TITAN2,
+	    GOBLIN_PILEDRIVER,
 	    GOBLIN_SHORTCUTTER,
 	    GUARD_GOMAZOA,
 	    GUARDIAN_SERAPH,
@@ -4048,6 +4104,7 @@ public class TriggerDefinitions {
 	    SEACHROME_COAST,
 	    RAGING_RAVINE,
 	    AWAKENING_ZONE,
+	    BITTERBLOSSOM,
 	    DISSIPATION_FIELD,
 	    DEBTORS_KNELL,
 	    FERVENT_CHARGE,

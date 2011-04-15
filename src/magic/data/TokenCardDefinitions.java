@@ -210,6 +210,23 @@ public class TokenCardDefinitions {
 		}
 	};	
 	
+	public static final MagicCardDefinition FAERIE_ROGUE_TOKEN_CARD=new MagicCardDefinition("Faerie Rogue") {
+		
+		public void initialize() {
+
+			setToken();
+			setValue(2);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Faerie","Rogue"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Black);
+			setColoredType();
+			setPower(1);
+			setToughness(1);
+			setAbility(MagicAbility.Flying);
+		}
+	};	
+	
 	public static final MagicCardDefinition GRIFFIN_TOKEN_CARD=new MagicCardDefinition("Griffin") {
 		
 		public void initialize() {
@@ -472,6 +489,7 @@ public class TokenCardDefinitions {
 		OGRE_TOKEN_CARD,
 		SPIRIT_TOKEN_CARD,
 		BAT_TOKEN_CARD,
+		FAERIE_ROGUE_TOKEN_CARD,
 		GRIFFIN_TOKEN_CARD,
 		APE_TOKEN_CARD,
 		BEAST3_TOKEN_CARD,

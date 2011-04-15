@@ -1,5 +1,4 @@
 >Air Elemental
-image=http://magiccards.info/scans/en/jvc/13.jpg
 cube=all
 value=2
 ability=flying
@@ -14,7 +13,6 @@ toughness=4
 timing=main
 
 >Alpha Myr
-image=http://magiccards.info/scans/en/mi/142.jpg
 cube=all
 value=1
 rarity=1
@@ -27,7 +25,6 @@ toughness=1
 timing=main
 
 >Alpha Tyrranax
-image=http://magiccards.info/scans/en/som/109.jpg
 cube=all
 value=1
 rarity=1
@@ -41,7 +38,6 @@ toughness=5
 timing=main
 
 >Anaba Bodyguard
-image=http://magiccards.info/scans/en/10e/187.jpg
 cube=all
 value=1
 ability=first strike
@@ -56,7 +52,6 @@ toughness=3
 timing=main
 
 >Anaconda
-image=http://magiccards.info/scans/en/9e/229.jpg
 cube=all
 value=2
 ability=swampwalk
@@ -71,7 +66,6 @@ toughness=3
 timing=main
 
 >Ancient Spider
-image=http://magiccards.info/scans/en/ps/96.jpg
 cube=all
 value=3
 ability=first strike,reach
@@ -86,7 +80,6 @@ toughness=5
 timing=main
 
 >Angel of Retribution
-image=http://magiccards.info/scans/en/tr/1.jpg
 cube=all
 value=3
 ability=flying,first strike
@@ -101,7 +94,6 @@ toughness=5
 timing=main
 
 >Angelic Wall
-image=http://magiccards.info/scans/en/10e/5.jpg
 cube=all
 value=1
 ability=defender,flying
@@ -116,7 +108,6 @@ toughness=4
 timing=smain
 
 >Anurid Murkdiver
-image=http://magiccards.info/scans/en/on/124.jpg
 cube=all
 value=1
 ability=swampwalk
@@ -131,7 +122,6 @@ toughness=3
 timing=main
 
 >Arachnoid
-image=http://magiccards.info/scans/en/5dn/102.jpg
 cube=all
 value=2
 ability=reach
@@ -145,7 +135,6 @@ toughness=6
 timing=main
 
 >Ardent Militia
-image=http://magiccards.info/scans/en/8e/3.jpg
 cube=all
 value=2
 ability=vigilance
@@ -160,7 +149,6 @@ toughness=5
 timing=main
 
 >Armored Cancrix
-image=http://magiccards.info/scans/en/m11/44.jpg
 cube=all
 value=1
 rarity=1
@@ -174,7 +162,6 @@ toughness=5
 timing=main
 
 >Ashcoat Bear
-image=http://magiccards.info/scans/en/ts/190.jpg
 cube=all
 value=1
 ability=flash
@@ -189,7 +176,6 @@ toughness=2
 timing=main
 
 >Ashen Monstrosity
-image=http://magiccards.info/scans/en/bok/93.jpg
 cube=all
 value=2
 ability=haste,attacks each turn if able
@@ -204,7 +190,6 @@ toughness=4
 timing=fmain
 
 >Assault Griffin
-image=http://magiccards.info/scans/en/m11/6.jpg
 cube=all
 value=1
 ability=flying
@@ -219,7 +204,6 @@ toughness=2
 timing=main
 
 >Aven Envoy
-image=http://magiccards.info/scans/en/le/30.jpg
 cube=all
 value=1
 ability=flying
@@ -234,7 +218,6 @@ toughness=2
 timing=main
 
 >Aven Smokeweaver
-image=http://magiccards.info/scans/en/od/64.jpg
 cube=all
 value=2
 ability=flying,protection from red
@@ -249,7 +232,6 @@ toughness=3
 timing=main
 
 >Aven Squire
-image=http://magiccards.info/scans/en/cfx/3.jpg
 cube=all
 value=1
 ability=flying,exalted
@@ -264,7 +246,6 @@ toughness=1
 timing=main
 
 >Avian Changeling
-image=http://magiccards.info/scans/en/lw/4.jpg
 cube=all
 value=1
 ability=changeling,flying
@@ -279,7 +260,6 @@ toughness=2
 timing=main
 
 >Axegrinder Giant
-image=http://magiccards.info/scans/en/lw/151.jpg
 cube=all
 value=1
 rarity=1
@@ -293,7 +273,6 @@ toughness=4
 timing=main
 
 >Azure Drake
-image=http://magiccards.info/scans/en/9e/63.jpg
 cube=all
 value=2
 ability=flying
@@ -308,7 +287,6 @@ toughness=4
 timing=main
 
 >Balduvian Barbarians
-image=http://magiccards.info/scans/en/9e/174.jpg
 cube=all
 value=1
 rarity=1
@@ -322,7 +300,6 @@ toughness=2
 timing=main
 
 >Barony Vampire
-image=http://magiccards.info/scans/en/m11/82.jpg
 cube=all
 value=1
 rarity=1
@@ -336,7 +313,6 @@ toughness=2
 timing=main
 
 >Battle Hurda
-image=http://magiccards.info/scans/en/wwk/4.jpg
 cube=all
 value=1
 ability=first strike
@@ -351,7 +327,6 @@ toughness=3
 timing=main
 
 >Benalish Knight
-image=http://magiccards.info/scans/en/10e/11.jpg
 cube=all
 value=1
 ability=flash,first strike
@@ -366,7 +341,6 @@ toughness=2
 timing=main
 
 >Benthic Behemoth
-image=http://magiccards.info/scans/en/7e/63.jpg
 cube=all
 value=3
 ability=islandwalk
@@ -381,7 +355,6 @@ toughness=6
 timing=main
 
 >Berserkers of Blood Ridge
-image=http://magiccards.info/scans/en/m11/124.jpg
 cube=all
 value=1
 ability=attacks each turn if able
@@ -396,7 +369,6 @@ toughness=4
 timing=main
 
 >Blade of the Sixth Pride
-image=http://magiccards.info/scans/en/fut/19.jpg
 cube=all
 value=1
 rarity=1
@@ -410,7 +382,6 @@ toughness=1
 timing=main
 
 >Bladetusk Boar
-image=http://magiccards.info/scans/en/zen/118.jpg
 cube=all
 value=1
 ability=intimidate
@@ -425,7 +396,6 @@ toughness=2
 timing=main
 
 >Blind Phantasm
-image=http://magiccards.info/scans/en/fut/49.jpg
 cube=all
 value=1
 rarity=1
@@ -439,7 +409,6 @@ toughness=3
 timing=main
 
 >Blood Knight
-image=http://magiccards.info/scans/en/pc/115.jpg
 cube=all
 value=2
 ability=first strike,protection from white
@@ -454,7 +423,6 @@ toughness=2
 timing=main
 
 >Blurred Mongoose
-image=http://magiccards.info/scans/en/in/183.jpg
 cube=all
 value=3
 ability=can't be countered,shroud
@@ -469,7 +437,6 @@ toughness=1
 timing=fmain
 
 >Bog Imp
-image=http://magiccards.info/scans/en/9e/116.jpg
 cube=all
 value=1
 ability=flying
@@ -484,7 +451,6 @@ toughness=1
 timing=main
 
 >Bog Raiders
-image=http://magiccards.info/scans/en/m11/86.jpg
 cube=all
 value=1
 ability=swampwalk
@@ -499,7 +465,6 @@ toughness=2
 timing=main
 
 >Bog Tatters
-image=http://magiccards.info/scans/en/zen/84.jpg
 cube=all
 value=1
 ability=swampwalk
@@ -514,7 +479,6 @@ toughness=2
 timing=main
 
 >Bog Wraith
-image=http://magiccards.info/scans/en/m10/86.jpg
 cube=all
 value=2
 ability=swampwalk
@@ -529,7 +493,6 @@ toughness=3
 timing=main
 
 >Border Patrol
-image=http://magiccards.info/scans/en/ju/6.jpg
 cube=all
 value=1
 ability=vigilance
@@ -544,7 +507,6 @@ toughness=6
 timing=main
 
 >Boros Recruit
-image=http://magiccards.info/scans/en/rav/243.jpg
 cube=all
 value=1
 ability=first strike
@@ -559,7 +521,6 @@ toughness=1
 timing=main
 
 >Boros Swiftblade
-image=http://magiccards.info/scans/en/pch/82.jpg
 cube=all
 value=2
 ability=double strike
@@ -574,7 +535,6 @@ toughness=2
 timing=main
 
 >Bull Hippo
-image=http://magiccards.info/scans/en/7e/233.jpg
 cube=all
 value=2
 ability=islandwalk
@@ -589,7 +549,6 @@ toughness=3
 timing=main
 
 >Canopy Spider
-image=http://magiccards.info/scans/en/10e/254.jpg
 cube=all
 value=1
 ability=reach
@@ -604,7 +563,6 @@ toughness=3
 timing=main
 
 >Canyon Minotaur
-image=http://magiccards.info/scans/en/m11/126.jpg
 cube=all
 value=1
 rarity=1
@@ -618,7 +576,6 @@ toughness=3
 timing=main
 
 >Canyon Wildcat
-image=http://magiccards.info/scans/en/8e/181.jpg
 cube=all
 value=1
 ability=mountainwalk
@@ -633,7 +590,6 @@ toughness=1
 timing=main
 
 >Caravan Hurda
-image=http://magiccards.info/scans/en/zen/5.jpg
 cube=all
 value=1
 ability=lifelink
@@ -648,7 +604,6 @@ toughness=5
 timing=main
 
 >Centaur Courser
-image=http://magiccards.info/scans/en/m10/172.jpg
 cube=all
 value=1
 rarity=1
@@ -662,7 +617,6 @@ toughness=3
 timing=main
 
 >Changeling Sentinel
-image=http://magiccards.info/scans/en/mt/6.jpg
 cube=all
 value=1
 ability=changeling,vigilance
@@ -677,7 +631,6 @@ toughness=2
 timing=main
 
 >Child of Night
-image=http://magiccards.info/scans/en/m11/88.jpg
 cube=all
 value=1
 ability=lifelink
@@ -692,7 +645,6 @@ toughness=1
 timing=main
 
 >Cliff Threader
-image=http://magiccards.info/scans/en/zen/7.jpg
 cube=all
 value=1
 ability=mountainwalk
@@ -707,7 +659,6 @@ toughness=1
 timing=main
 
 >Cloud Crusader
-image=http://magiccards.info/scans/en/m11/10.jpg
 cube=all
 value=1
 ability=flying,first strike
@@ -722,7 +673,6 @@ toughness=3
 timing=main
 
 >Cloud Elemental
-image=http://magiccards.info/scans/en/m11/50.jpg
 cube=all
 value=1
 ability=flying,can't block creatures without flying
@@ -737,7 +687,6 @@ toughness=3
 timing=fmain
 
 >Cloud Sprite
-image=http://magiccards.info/scans/en/dpa/4.jpg
 cube=all
 value=1
 ability=flying,can't block creatures without flying
@@ -752,7 +701,6 @@ toughness=1
 timing=fmain
 
 >Cloudcrown Oak
-image=http://magiccards.info/scans/en/lw/201.jpg
 cube=all
 value=2
 ability=reach
@@ -767,7 +715,6 @@ toughness=4
 timing=main
 
 >Coast Watcher
-image=http://magiccards.info/scans/en/sc/30.jpg
 cube=all
 value=1
 ability=flying,protection from green
@@ -782,7 +729,6 @@ toughness=1
 timing=main
 
 >Commander Eesha
-image=http://magiccards.info/scans/en/ju/9.jpg
 cube=all
 value=3
 ability=flying,protection from creatures
@@ -797,7 +743,6 @@ toughness=4
 timing=main
 
 >Coral Eel
-image=http://magiccards.info/scans/en/9eb/3.jpg
 cube=all
 value=1
 rarity=1
@@ -811,7 +756,6 @@ toughness=1
 timing=main
 
 >Coral Merfolk
-image=http://magiccards.info/scans/en/m10/47.jpg
 cube=all
 value=1
 rarity=1
@@ -825,7 +769,6 @@ toughness=1
 timing=main
 
 >Courier Hawk
-image=http://magiccards.info/scans/en/rav/12.jpg
 cube=all
 value=1
 ability=flying,vigilance
@@ -840,7 +783,6 @@ toughness=2
 timing=main
 
 >Court Archers
-image=http://magiccards.info/scans/en/ala/126.jpg
 cube=all
 value=1
 ability=reach,exalted
@@ -855,7 +797,6 @@ toughness=3
 timing=main
 
 >Covert Operative
-image=http://magiccards.info/scans/en/le/33.jpg
 cube=all
 value=1
 ability=unblockable
@@ -870,7 +811,6 @@ toughness=2
 timing=main
 
 >Craw Wurm
-image=http://magiccards.info/scans/en/m10/173.jpg
 cube=all
 value=1
 rarity=1
@@ -884,7 +824,6 @@ toughness=4
 timing=main
 
 >Crazed Goblin
-image=http://magiccards.info/scans/en/ds/56.jpg
 cube=all
 value=1
 ability=attacks each turn if able
@@ -899,7 +838,6 @@ toughness=1
 timing=main
 
 >Cylian Elf
-image=http://magiccards.info/scans/en/ala/127.jpg
 cube=all
 value=1
 rarity=1
@@ -913,7 +851,6 @@ toughness=2
 timing=main
 
 >Daggerback Basilisk
-image=http://magiccards.info/scans/en/roe/182.jpg
 cube=all
 value=1
 ability=deathtouch
@@ -928,7 +865,6 @@ toughness=2
 timing=main
 
 >Dancing Scimitar
-image=http://magiccards.info/scans/en/9e/292.jpg
 cube=all
 value=3
 ability=flying
@@ -942,7 +878,6 @@ toughness=5
 timing=main
 
 >Darksteel Gargoyle
-image=http://magiccards.info/scans/en/ds/111.jpg
 cube=all
 value=2
 ability=flying,indestructible
@@ -956,7 +891,6 @@ toughness=3
 timing=main
 
 >Darksteel Myr
-image=http://magiccards.info/scans/en/som/151.jpg
 cube=all
 value=2
 ability=indestructible
@@ -970,7 +904,6 @@ toughness=1
 timing=main
 
 >Darksteel Sentinel
-image=http://magiccards.info/scans/en/som/152.jpg
 cube=all
 value=2
 ability=flash,vigilance,indestructible
@@ -984,7 +917,6 @@ toughness=3
 timing=main
 
 >Defiant Elf
-image=http://magiccards.info/scans/en/le/123.jpg
 cube=all
 value=1
 ability=trample
@@ -999,7 +931,6 @@ toughness=1
 timing=main
 
 >Deft Duelist
-image=http://magiccards.info/scans/en/ala/165.jpg
 cube=all
 value=1
 ability=first strike,shroud
@@ -1014,7 +945,6 @@ toughness=1
 timing=fmain
 
 >Diving Griffin
-image=http://magiccards.info/scans/en/8e/17.jpg
 cube=all
 value=1
 ability=flying,vigilance
@@ -1029,7 +959,6 @@ toughness=2
 timing=main
 
 >Dragonstalker
-image=http://magiccards.info/scans/en/sc/11.jpg
 cube=all
 value=2
 ability=flying,protection from dragons
@@ -1044,7 +973,6 @@ toughness=3
 timing=main
 
 >Dreg Reaver
-image=http://magiccards.info/scans/en/ala/73.jpg
 cube=all
 value=1
 rarity=1
@@ -1058,7 +986,6 @@ toughness=3
 timing=main
 
 >Dross Crocodile
-image=http://magiccards.info/scans/en/10e/138.jpg
 cube=all
 value=1
 rarity=1
@@ -1072,7 +999,6 @@ toughness=1
 timing=main
 
 >Dross Prowler
-image=http://magiccards.info/scans/en/mi/64.jpg
 cube=all
 value=1
 ability=fear
@@ -1087,7 +1013,6 @@ toughness=1
 timing=main
 
 >Dusk Imp
-image=http://magiccards.info/scans/en/dvd/34.jpg
 cube=all
 value=1
 ability=flying
@@ -1102,7 +1027,6 @@ toughness=1
 timing=main
 
 >Duskdale Wurm
-image=http://magiccards.info/scans/en/dpa/58.jpg
 cube=all
 value=2
 ability=trample
@@ -1117,7 +1041,6 @@ toughness=7
 timing=main
 
 >Dwarven Grunt
-image=http://magiccards.info/scans/en/od/185.jpg
 cube=all
 value=1
 ability=mountainwalk
@@ -1132,7 +1055,6 @@ toughness=1
 timing=main
 
 >Eager Cadet
-image=http://magiccards.info/scans/en/9eb/1.jpg
 cube=all
 value=1
 rarity=1
@@ -1146,7 +1068,6 @@ toughness=1
 timing=main
 
 >Earth Elemental
-image=http://magiccards.info/scans/en/dpa/42.jpg
 cube=all
 value=2
 rarity=2
@@ -1160,7 +1081,6 @@ toughness=5
 timing=main
 
 >Elvish Archers
-image=http://magiccards.info/scans/en/7e/239.jpg
 cube=all
 value=3
 ability=first strike
@@ -1175,7 +1095,6 @@ toughness=1
 timing=main
 
 >Elvish Warrior
-image=http://magiccards.info/scans/en/mt/120.jpg
 cube=all
 value=1
 rarity=1
@@ -1189,7 +1108,6 @@ toughness=3
 timing=main
 
 >Emerald Oryx
-image=http://magiccards.info/scans/en/m10/179.jpg
 cube=all
 value=1
 ability=forestwalk
@@ -1204,7 +1122,6 @@ toughness=3
 timing=main
 
 >Enormous Baloth
-image=http://magiccards.info/scans/en/m10/180.jpg
 cube=all
 value=2
 rarity=2
@@ -1218,7 +1135,6 @@ toughness=7
 timing=main
 
 >Esper Cormorants
-image=http://magiccards.info/scans/en/cfx/105.jpg
 cube=all
 value=1
 ability=flying
@@ -1233,7 +1149,6 @@ toughness=3
 timing=main
 
 >Fangren Hunter
-image=http://magiccards.info/scans/en/mi/119.jpg
 cube=all
 value=1
 ability=trample
@@ -1248,7 +1163,6 @@ toughness=4
 timing=main
 
 >Fighting Drake
-image=http://magiccards.info/scans/en/8e/77.jpg
 cube=all
 value=2
 ability=flying
@@ -1263,7 +1177,6 @@ toughness=4
 timing=main
 
 >Fire Elemental
-image=http://magiccards.info/scans/en/7e/183.jpg
 cube=all
 value=2
 rarity=2
@@ -1277,7 +1190,6 @@ toughness=4
 timing=main
 
 >Flameborn Hellion
-image=http://magiccards.info/scans/en/som/89.jpg
 cube=all
 value=1
 ability=haste,attacks each turn if able
@@ -1292,7 +1204,6 @@ toughness=4
 timing=fmain
 
 >Fomori Nomad
-image=http://magiccards.info/scans/en/fut/114.jpg
 cube=all
 value=1
 rarity=1
@@ -1306,7 +1217,6 @@ toughness=4
 timing=main
 
 >Foot Soldiers
-image=http://magiccards.info/scans/en/9e/14.jpg
 cube=all
 value=1
 rarity=1
@@ -1320,7 +1230,6 @@ toughness=4
 timing=main
 
 >Force of Savagery
-image=http://magiccards.info/scans/en/fut/126.jpg
 cube=all
 value=3
 ability=trample
@@ -1335,7 +1244,6 @@ toughness=0
 timing=main
 
 >Frost Ogre
-image=http://magiccards.info/scans/en/bok/102.jpg
 cube=all
 value=1
 rarity=1
@@ -1349,7 +1257,6 @@ toughness=3
 timing=main
 
 >Fugitive Wizard
-image=http://magiccards.info/scans/en/10e/86.jpg
 cube=all
 value=1
 rarity=1
@@ -1363,7 +1270,6 @@ toughness=1
 timing=main
 
 >Gaea's Skyfolk
-image=http://magiccards.info/scans/en/ap/101.jpg
 cube=all
 value=1
 ability=flying
@@ -1378,7 +1284,6 @@ toughness=2
 timing=main
 
 >Galina's Knight
-image=http://magiccards.info/scans/en/in/248.jpg
 cube=all
 value=1
 ability=protection from red
@@ -1393,7 +1298,6 @@ toughness=2
 timing=main
 
 >Game-Trail Changeling
-image=http://magiccards.info/scans/en/mt/123.jpg
 cube=all
 value=1
 ability=changeling,trample
@@ -1408,7 +1312,6 @@ toughness=4
 timing=main
 
 >Giant Cockroach
-image=http://magiccards.info/scans/en/9e/133.jpg
 cube=all
 value=1
 rarity=1
@@ -1422,7 +1325,6 @@ toughness=2
 timing=main
 
 >Giant Octopus
-image=http://magiccards.info/scans/en/9eb/4.jpg
 cube=all
 value=1
 rarity=1
@@ -1436,7 +1338,6 @@ toughness=3
 timing=main
 
 >Giant Scorpion
-image=http://magiccards.info/scans/en/zen/90.jpg
 cube=all
 value=1
 ability=deathtouch
@@ -1451,7 +1352,6 @@ toughness=3
 timing=main
 
 >Giant Solifuge
-image=http://magiccards.info/scans/en/gp/143.jpg
 cube=all
 value=3
 ability=trample,haste,shroud
@@ -1466,7 +1366,6 @@ toughness=1
 timing=fmain
 
 >Giant Spider
-image=http://magiccards.info/scans/en/dpa/67.jpg
 cube=all
 value=3
 ability=reach
@@ -1481,7 +1380,6 @@ toughness=4
 timing=main
 
 >Giant Warthog
-image=http://magiccards.info/scans/en/ju/118.jpg
 cube=all
 value=1
 ability=trample
@@ -1496,7 +1394,6 @@ toughness=5
 timing=main
 
 >Glacial Wall
-image=http://magiccards.info/scans/en/7e/78.jpg
 cube=all
 value=2
 ability=defender
@@ -1511,7 +1408,6 @@ toughness=7
 timing=smain
 
 >Glass Golem
-image=http://magiccards.info/scans/en/rav/261.jpg
 cube=all
 value=2
 rarity=2
@@ -1524,7 +1420,6 @@ toughness=2
 timing=main
 
 >Gloomhunter
-image=http://magiccards.info/scans/en/roe/111.jpg
 cube=all
 value=1
 ability=flying
@@ -1539,7 +1434,6 @@ toughness=1
 timing=main
 
 >Glory Seeker
-image=http://magiccards.info/scans/en/ddf/7.jpg
 cube=all
 value=1
 rarity=1
@@ -1553,7 +1447,6 @@ toughness=2
 timing=main
 
 >Gluttonous Zombie
-image=http://magiccards.info/scans/en/9e/134.jpg
 cube=all
 value=2
 ability=fear
@@ -1568,7 +1461,6 @@ toughness=3
 timing=main
 
 >Gnarled Mass
-image=http://magiccards.info/scans/en/bok/127.jpg
 cube=all
 value=1
 rarity=1
@@ -1582,7 +1474,6 @@ toughness=3
 timing=main
 
 >Goblin Brigand
-image=http://magiccards.info/scans/en/9e/190.jpg
 cube=all
 value=1
 ability=attacks each turn if able
@@ -1597,7 +1488,6 @@ toughness=2
 timing=main
 
 >Goblin Chariot
-image=http://magiccards.info/scans/en/9e/191.jpg
 cube=all
 value=1
 ability=haste
@@ -1612,7 +1502,6 @@ toughness=2
 timing=fmain
 
 >Goblin Glider
-image=http://magiccards.info/scans/en/8e/189.jpg
 cube=all
 value=2
 ability=flying,can't block
@@ -1627,7 +1516,6 @@ toughness=1
 timing=fmain
 
 >Goblin Mountaineer
-image=http://magiccards.info/scans/en/ala/102.jpg
 cube=all
 value=1
 ability=mountainwalk
@@ -1642,7 +1530,6 @@ toughness=1
 timing=main
 
 >Goblin Outlander
-image=http://magiccards.info/scans/en/cfx/109.jpg
 cube=all
 value=1
 ability=protection from white
@@ -1657,7 +1544,6 @@ toughness=2
 timing=main
 
 >Goblin Piker
-image=http://magiccards.info/scans/en/dpa/45.jpg
 cube=all
 value=1
 rarity=1
@@ -1671,7 +1557,6 @@ toughness=1
 timing=main
 
 >Goblin Raider
-image=http://magiccards.info/scans/en/9eb/8.jpg
 cube=all
 value=1
 ability=can't block
@@ -1686,7 +1571,6 @@ toughness=2
 timing=fmain
 
 >Goblin Roughrider
-image=http://magiccards.info/scans/en/wwk/82.jpg
 cube=all
 value=1
 rarity=1
@@ -1700,7 +1584,6 @@ toughness=2
 timing=main
 
 >Goblin Sky Raider
-image=http://magiccards.info/scans/en/dpa/46.jpg
 cube=all
 value=1
 ability=flying
@@ -1715,7 +1598,6 @@ toughness=2
 timing=main
 
 >Goblin Spelunkers
-image=http://magiccards.info/scans/en/rav/128.jpg
 cube=all
 value=1
 ability=mountainwalk
@@ -1730,7 +1612,6 @@ toughness=2
 timing=main
 
 >Goblin Striker
-image=http://magiccards.info/scans/en/mi/94.jpg
 cube=all
 value=1
 ability=first strike,haste
@@ -1745,7 +1626,6 @@ toughness=1
 timing=fmain
 
 >Goliath Spider
-image=http://magiccards.info/scans/en/rav/168.jpg
 cube=all
 value=2
 ability=reach
@@ -1760,7 +1640,6 @@ toughness=6
 timing=main
 
 >Grappler Spider
-image=http://magiccards.info/scans/en/wwk/102.jpg
 cube=all
 value=1
 ability=reach
@@ -1775,7 +1654,6 @@ toughness=1
 timing=main
 
 >Gravelgill Axeshark
-image=http://magiccards.info/scans/en/shm/164.jpg
 cube=all
 value=1
 ability=persist
@@ -1790,7 +1668,6 @@ toughness=3
 timing=main
 
 >Grayscaled Gharial
-image=http://magiccards.info/scans/en/rav/52.jpg
 cube=all
 value=1
 ability=islandwalk
@@ -1805,7 +1682,6 @@ toughness=1
 timing=main
 
 >Greater Basilisk
-image=http://magiccards.info/scans/en/m11/180.jpg
 cube=all
 value=1
 ability=deathtouch
@@ -1820,7 +1696,6 @@ toughness=5
 timing=main
 
 >Griffin Sentinel
-image=http://magiccards.info/scans/en/m10/12.jpg
 cube=all
 value=1
 ability=flying,vigilance
@@ -1835,7 +1710,6 @@ toughness=3
 timing=main
 
 >Grizzled Leotau
-image=http://magiccards.info/scans/en/arb/69.jpg
 cube=all
 value=1
 rarity=1
@@ -1849,7 +1723,6 @@ toughness=5
 timing=main
 
 >Grizzly Bears
-image=http://magiccards.info/scans/en/10e/268.jpg
 cube=all
 value=1
 rarity=1
@@ -1863,7 +1736,6 @@ toughness=2
 timing=main
 
 >Guardians of Akrasa
-image=http://magiccards.info/scans/en/ala/12.jpg
 cube=all
 value=1
 ability=defender,exalted
@@ -1878,7 +1750,6 @@ toughness=4
 timing=smain
 
 >Halberdier
-image=http://magiccards.info/scans/en/od/196.jpg
 cube=all
 value=1
 ability=first strike
@@ -1893,7 +1764,6 @@ toughness=1
 timing=main
 
 >Harvest Gwyllion
-image=http://magiccards.info/scans/en/eve/90.jpg
 cube=all
 value=1
 ability=wither
@@ -1908,7 +1778,6 @@ toughness=4
 timing=main
 
 >Havenwood Wurm
-image=http://magiccards.info/scans/en/ts/199.jpg
 cube=all
 value=1
 ability=flash,trample
@@ -1923,7 +1792,6 @@ toughness=6
 timing=main
 
 >Hearthfire Hobgoblin
-image=http://magiccards.info/scans/en/pch/102.jpg
 cube=all
 value=2
 ability=double strike
@@ -1938,7 +1806,6 @@ toughness=2
 timing=main
 
 >Hill Giant
-image=http://magiccards.info/scans/en/dpa/47.jpg
 cube=all
 value=1
 rarity=1
@@ -1952,7 +1819,6 @@ toughness=3
 timing=main
 
 >Hillcomber Giant
-image=http://magiccards.info/scans/en/lw/20.jpg
 cube=all
 value=1
 ability=mountainwalk
@@ -1967,7 +1833,6 @@ toughness=3
 timing=main
 
 >Hobgoblin Dragoon
-image=http://magiccards.info/scans/en/eve/142.jpg
 cube=all
 value=1
 ability=flying,first strike
@@ -1982,7 +1847,6 @@ toughness=2
 timing=main
 
 >Horned Turtle
-image=http://magiccards.info/scans/en/m10/55.jpg
 cube=all
 value=1
 rarity=1
@@ -1996,7 +1860,6 @@ toughness=4
 timing=main
 
 >Hoverguard Observer
-image=http://magiccards.info/scans/en/ds/22.jpg
 cube=all
 value=2
 ability=flying,can't block creatures without flying
@@ -2011,7 +1874,6 @@ toughness=3
 timing=fmain
 
 >Hulking Cyclops
-image=http://magiccards.info/scans/en/8e/195.jpg
 cube=all
 value=2
 ability=can't block
@@ -2026,7 +1888,6 @@ toughness=5
 timing=fmain
 
 >Humble Budoka
-image=http://magiccards.info/scans/en/chk/214.jpg
 cube=all
 value=1
 ability=shroud
@@ -2041,7 +1902,6 @@ toughness=2
 timing=fmain
 
 >Incurable Ogre
-image=http://magiccards.info/scans/en/ala/105.jpg
 cube=all
 value=1
 rarity=1
@@ -2055,7 +1915,6 @@ toughness=1
 timing=main
 
 >Indomitable Ancients
-image=http://magiccards.info/scans/en/mt/13.jpg
 cube=all
 value=3
 rarity=3
@@ -2069,7 +1928,6 @@ toughness=10
 timing=main
 
 >Inkwell Leviathan
-image=http://magiccards.info/scans/en/cfx/30.jpg
 cube=all
 value=3
 ability=islandwalk,trample,shroud
@@ -2084,7 +1942,6 @@ toughness=11
 timing=fmain
 
 >Iron-Barb Hellion
-image=http://magiccards.info/scans/en/5dn/69.jpg
 cube=all
 value=2
 ability=haste,can't block
@@ -2099,7 +1956,6 @@ toughness=4
 timing=fmain
 
 >Isamaru, Hound of Konda
-image=http://magiccards.info/scans/en/chk/19.jpg
 cube=all
 value=3
 rarity=3
@@ -2113,7 +1969,6 @@ toughness=2
 timing=main
 
 >Jagwasp Swarm
-image=http://magiccards.info/scans/en/wwk/58.jpg
 cube=all
 value=1
 ability=flying
@@ -2128,7 +1983,6 @@ toughness=2
 timing=main
 
 >Jhessian Lookout
-image=http://magiccards.info/scans/en/ala/46.jpg
 cube=all
 value=1
 rarity=1
@@ -2142,7 +1996,6 @@ toughness=1
 timing=main
 
 >Jukai Messenger
-image=http://magiccards.info/scans/en/chk/218.jpg
 cube=all
 value=1
 ability=forestwalk
@@ -2157,7 +2010,6 @@ toughness=1
 timing=main
 
 >Juvenile Gloomwidow
-image=http://magiccards.info/scans/en/shm/121.jpg
 cube=all
 value=1
 ability=reach,wither
@@ -2172,7 +2024,6 @@ toughness=3
 timing=main
 
 >Jwari Scuttler
-image=http://magiccards.info/scans/en/roe/73.jpg
 cube=all
 value=1
 rarity=1
@@ -2186,7 +2037,6 @@ toughness=3
 timing=main
 
 >Kami of Old Stone
-image=http://magiccards.info/scans/en/9e/24.jpg
 cube=all
 value=2
 rarity=2
@@ -2200,7 +2050,6 @@ toughness=7
 timing=main
 
 >Kelinore Bat
-image=http://magiccards.info/scans/en/m10/101.jpg
 cube=all
 value=1
 ability=flying
@@ -2215,7 +2064,6 @@ toughness=1
 timing=main
 
 >King Cheetah
-image=http://magiccards.info/scans/en/9e/250.jpg
 cube=all
 value=2
 ability=flash
@@ -2230,7 +2078,6 @@ toughness=2
 timing=main
 
 >Knight Errant
-image=http://magiccards.info/scans/en/7e/24.jpg
 cube=all
 value=1
 rarity=1
@@ -2244,7 +2091,6 @@ toughness=2
 timing=main
 
 >Kodama of the North Tree
-image=http://magiccards.info/scans/en/chk/222.jpg
 cube=all
 value=3
 ability=trample,shroud
@@ -2259,7 +2105,6 @@ toughness=4
 timing=fmain
 
 >Kraken Hatchling
-image=http://magiccards.info/scans/en/zen/50.jpg
 cube=all
 value=1
 rarity=1
@@ -2273,7 +2118,6 @@ toughness=4
 timing=main
 
 >Lagac Lizard
-image=http://magiccards.info/scans/en/roe/154.jpg
 cube=all
 value=1
 rarity=1
@@ -2287,7 +2131,6 @@ toughness=3
 timing=main
 
 >Lantern Kami
-image=http://magiccards.info/scans/en/chk/32.jpg
 cube=all
 value=1
 ability=flying
@@ -2302,7 +2145,6 @@ toughness=1
 timing=main
 
 >Leaf Dancer
-image=http://magiccards.info/scans/en/od/249.jpg
 cube=all
 value=1
 ability=forestwalk
@@ -2317,7 +2159,6 @@ toughness=2
 timing=main
 
 >Leatherback Baloth
-image=http://magiccards.info/scans/en/wwk/107.jpg
 cube=all
 value=2
 rarity=2
@@ -2331,7 +2172,6 @@ toughness=5
 timing=main
 
 >Leonin Skyhunter
-image=http://magiccards.info/scans/en/mbs/11.jpg
 cube=all
 value=2
 ability=flying
@@ -2346,7 +2186,6 @@ toughness=2
 timing=main
 
 >Lightning Elemental
-image=http://magiccards.info/scans/en/dpa/50.jpg
 cube=all
 value=1
 ability=haste
@@ -2361,7 +2200,6 @@ toughness=1
 timing=fmain
 
 >Llanowar Knight
-image=http://magiccards.info/scans/en/in/254.jpg
 cube=all
 value=1
 ability=protection from black
@@ -2376,7 +2214,6 @@ toughness=2
 timing=main
 
 >Loamdragger Giant
-image=http://magiccards.info/scans/en/shm/210.jpg
 cube=all
 value=1
 rarity=1
@@ -2390,7 +2227,6 @@ toughness=6
 timing=main
 
 >Longbow Archer
-image=http://magiccards.info/scans/en/7e/26.jpg
 cube=all
 value=2
 ability=first strike,reach
@@ -2405,7 +2241,6 @@ toughness=2
 timing=main
 
 >Loxodon Wayfarer
-image=http://magiccards.info/scans/en/som/15.jpg
 cube=all
 value=1
 rarity=1
@@ -2419,7 +2254,6 @@ toughness=5
 timing=main
 
 >Lumengrid Warden
-image=http://magiccards.info/scans/en/10e/89.jpg
 cube=all
 value=1
 rarity=1
@@ -2433,7 +2267,6 @@ toughness=3
 timing=main
 
 >Mahamoti Djinn
-image=http://magiccards.info/scans/en/dpa/10.jpg
 cube=all
 value=3
 ability=flying
@@ -2448,7 +2281,6 @@ toughness=6
 timing=main
 
 >Makindi Griffin
-image=http://magiccards.info/scans/en/roe/36.jpg
 cube=all
 value=1
 ability=flying
@@ -2463,7 +2295,6 @@ toughness=4
 timing=main
 
 >Maritime Guard
-image=http://magiccards.info/scans/en/m11/63.jpg
 cube=all
 value=1
 rarity=1
@@ -2477,7 +2308,6 @@ toughness=3
 timing=main
 
 >Marsh Threader
-image=http://magiccards.info/scans/en/wwk/14.jpg
 cube=all
 value=1
 ability=swampwalk
@@ -2492,7 +2322,6 @@ toughness=1
 timing=main
 
 >Mass of Ghouls
-image=http://magiccards.info/scans/en/10e/156.jpg
 cube=all
 value=1
 rarity=1
@@ -2506,7 +2335,6 @@ toughness=3
 timing=main
 
 >Merfolk of the Pearl Trident
-image=http://magiccards.info/scans/en/7e/90.jpg
 cube=all
 value=1
 rarity=1
@@ -2520,7 +2348,6 @@ toughness=1
 timing=main
 
 >Mist Leopard
-image=http://magiccards.info/scans/en/m10/193.jpg
 cube=all
 value=1
 ability=shroud
@@ -2535,7 +2362,6 @@ toughness=2
 timing=fmain
 
 >Mistral Charger
-image=http://magiccards.info/scans/en/di/13.jpg
 cube=all
 value=2
 ability=flying
@@ -2550,7 +2376,6 @@ toughness=1
 timing=main
 
 >Moonglove Winnower
-image=http://magiccards.info/scans/en/dpa/29.jpg
 cube=all
 value=1
 ability=deathtouch
@@ -2565,7 +2390,6 @@ toughness=3
 timing=main
 
 >Moriok Reaver
-image=http://magiccards.info/scans/en/som/70.jpg
 cube=all
 value=1
 rarity=1
@@ -2579,7 +2403,6 @@ toughness=2
 timing=main
 
 >Moss Kami
-image=http://magiccards.info/scans/en/chk/228.jpg
 cube=all
 value=1
 ability=trample
@@ -2594,7 +2417,6 @@ toughness=5
 timing=main
 
 >Moss Monster
-image=http://magiccards.info/scans/en/8e/267.jpg
 cube=all
 value=1
 rarity=1
@@ -2608,7 +2430,6 @@ toughness=6
 timing=main
 
 >Mourning Thrull
-image=http://magiccards.info/scans/en/gp/146.jpg
 cube=all
 value=1
 ability=flying,lifelink
@@ -2623,7 +2444,6 @@ toughness=1
 timing=main
 
 >Nacatl Outlander
-image=http://magiccards.info/scans/en/cfx/119.jpg
 cube=all
 value=1
 ability=protection from blue
@@ -2638,7 +2458,6 @@ toughness=2
 timing=main
 
 >Needlepeak Spider
-image=http://magiccards.info/scans/en/pc/105.jpg
 cube=all
 value=1
 ability=reach
@@ -2653,7 +2472,6 @@ toughness=2
 timing=main
 
 >Needleshot Gourna
-image=http://magiccards.info/scans/en/le/133.jpg
 cube=all
 value=1
 ability=reach
@@ -2668,7 +2486,6 @@ toughness=6
 timing=main
 
 >Nema Siltlurker
-image=http://magiccards.info/scans/en/roe/200.jpg
 cube=all
 value=1
 rarity=1
@@ -2682,7 +2499,6 @@ toughness=5
 timing=main
 
 >Nessian Courser
-image=http://magiccards.info/scans/en/fut/148.jpg
 cube=all
 value=1
 rarity=1
@@ -2696,7 +2512,6 @@ toughness=3
 timing=main
 
 >Nether Horror
-image=http://magiccards.info/scans/en/m11/108.jpg
 cube=all
 value=1
 rarity=1
@@ -2710,7 +2525,6 @@ toughness=2
 timing=main
 
 >Nezumi Cutthroat
-image=http://magiccards.info/scans/en/chk/128.jpg
 cube=all
 value=1
 ability=fear,can't block
@@ -2725,7 +2539,6 @@ toughness=1
 timing=fmain
 
 >Nightguard Patrol
-image=http://magiccards.info/scans/en/rav/26.jpg
 cube=all
 value=1
 ability=first strike,vigilance
@@ -2740,7 +2553,6 @@ toughness=1
 timing=main
 
 >Nightshade Stinger
-image=http://magiccards.info/scans/en/lw/132.jpg
 cube=all
 value=1
 ability=flying,can't block
@@ -2755,7 +2567,6 @@ toughness=1
 timing=fmain
 
 >Nip Gwyllion
-image=http://magiccards.info/scans/en/eve/92.jpg
 cube=all
 value=1
 ability=lifelink
@@ -2770,7 +2581,6 @@ toughness=1
 timing=main
 
 >Norwood Ranger
-image=http://magiccards.info/scans/en/9e/260.jpg
 cube=all
 value=1
 rarity=1
@@ -2784,7 +2594,6 @@ toughness=2
 timing=main
 
 >Oakgnarl Warrior
-image=http://magiccards.info/scans/en/lw/232.jpg
 cube=all
 value=1
 ability=vigilance,trample
@@ -2799,7 +2608,6 @@ toughness=7
 timing=main
 
 >Ogre Sentry
-image=http://magiccards.info/scans/en/roe/159.jpg
 cube=all
 value=1
 ability=defender
@@ -2814,7 +2622,6 @@ toughness=3
 timing=smain
 
 >Ogre Taskmaster
-image=http://magiccards.info/scans/en/9e/205.jpg
 cube=all
 value=2
 ability=can't block
@@ -2829,7 +2636,6 @@ toughness=3
 timing=fmain
 
 >Old Ghastbark
-image=http://magiccards.info/scans/en/shm/232.jpg
 cube=all
 value=1
 rarity=1
@@ -2843,7 +2649,6 @@ toughness=6
 timing=main
 
 >Omega Myr
-image=http://magiccards.info/scans/en/mi/223.jpg
 cube=all
 value=1
 rarity=1
@@ -2856,7 +2661,6 @@ toughness=2
 timing=main
 
 >Oona's Gatewarden
-image=http://magiccards.info/scans/en/shm/173.jpg
 cube=all
 value=1
 ability=defender,flying,wither
@@ -2871,7 +2675,6 @@ toughness=1
 timing=smain
 
 >Order of the Sacred Bell
-image=http://magiccards.info/scans/en/9e/261.jpg
 cube=all
 value=1
 rarity=1
@@ -2885,7 +2688,6 @@ toughness=3
 timing=main
 
 >Ornithopter
-image=http://magiccards.info/scans/en/m11/211.jpg
 cube=all
 value=2
 ability=flying
@@ -2899,7 +2701,6 @@ toughness=2
 timing=main
 
 >Outrider of Jhess
-image=http://magiccards.info/scans/en/ala/52.jpg
 cube=all
 value=1
 ability=exalted
@@ -2914,7 +2715,6 @@ toughness=2
 timing=main
 
 >Pegasus Charger
-image=http://magiccards.info/scans/en/9e/34.jpg
 cube=all
 value=1
 ability=flying,first strike
@@ -2929,7 +2729,6 @@ toughness=1
 timing=main
 
 >Phantom Warrior
-image=http://magiccards.info/scans/en/dpa/14.jpg
 cube=all
 value=3
 ability=unblockable
@@ -2944,7 +2743,6 @@ toughness=2
 timing=main
 
 >Phyrexian Hulk
-image=http://magiccards.info/scans/en/pvc/14.jpg
 cube=all
 value=2
 rarity=2
@@ -2957,7 +2755,6 @@ toughness=4
 timing=main
 
 >Pillarfield Ox
-image=http://magiccards.info/scans/en/zen/31.jpg
 cube=all
 value=1
 rarity=1
@@ -2971,7 +2768,6 @@ toughness=4
 timing=main
 
 >Pincher Beetles
-image=http://magiccards.info/scans/en/10e/285.jpg
 cube=all
 value=1
 ability=shroud
@@ -2986,7 +2782,6 @@ toughness=1
 timing=fmain
 
 >Plague Beetle
-image=http://magiccards.info/scans/en/10e/168.jpg
 cube=all
 value=1
 ability=swampwalk
@@ -3001,7 +2796,6 @@ toughness=1
 timing=main
 
 >Plasma Elemental
-image=http://magiccards.info/scans/en/5dn/34.jpg
 cube=all
 value=2
 ability=unblockable
@@ -3016,7 +2810,6 @@ toughness=1
 timing=main
 
 >Plated Seastrider
-image=http://magiccards.info/scans/en/som/38.jpg
 cube=all
 value=1
 rarity=1
@@ -3030,7 +2823,6 @@ toughness=4
 timing=main
 
 >Plover Knights
-image=http://magiccards.info/scans/en/lw/35.jpg
 cube=all
 value=1
 ability=flying,first strike
@@ -3045,7 +2837,6 @@ toughness=3
 timing=main
 
 >Raging Goblin
-image=http://magiccards.info/scans/en/m10/153.jpg
 cube=all
 value=1
 ability=haste
@@ -3060,7 +2851,6 @@ toughness=1
 timing=fmain
 
 >Raging Kavu
-image=http://magiccards.info/scans/en/in/262.jpg
 cube=all
 value=3
 ability=flash,haste
@@ -3075,7 +2865,6 @@ toughness=1
 timing=fmain
 
 >Razorfoot Griffin
-image=http://magiccards.info/scans/en/m10/25.jpg
 cube=all
 value=1
 ability=flying,first strike
@@ -3090,7 +2879,6 @@ toughness=2
 timing=main
 
 >Razortooth Rats
-image=http://magiccards.info/scans/en/9e/158.jpg
 cube=all
 value=1
 ability=fear
@@ -3105,7 +2893,6 @@ toughness=1
 timing=main
 
 >Redwood Treefolk
-image=http://magiccards.info/scans/en/7e/264.jpg
 cube=all
 value=1
 rarity=1
@@ -3119,7 +2906,6 @@ toughness=6
 timing=main
 
 >Rhox Brute
-image=http://magiccards.info/scans/en/arb/59.jpg
 cube=all
 value=1
 rarity=1
@@ -3133,7 +2919,6 @@ toughness=4
 timing=main
 
 >Ridgetop Raptor
-image=http://magiccards.info/scans/en/le/108.jpg
 cube=all
 value=2
 ability=double strike
@@ -3148,7 +2933,6 @@ toughness=1
 timing=main
 
 >Rip-Clan Crasher
-image=http://magiccards.info/scans/en/ala/189.jpg
 cube=all
 value=1
 ability=haste
@@ -3163,7 +2947,6 @@ toughness=2
 timing=fmain
 
 >River Bear
-image=http://magiccards.info/scans/en/9e/266.jpg
 cube=all
 value=2
 ability=islandwalk
@@ -3178,7 +2961,6 @@ toughness=3
 timing=main
 
 >River Kaijin
-image=http://magiccards.info/scans/en/chk/83.jpg
 cube=all
 value=1
 rarity=1
@@ -3192,7 +2974,6 @@ toughness=4
 timing=main
 
 >Rock Badger
-image=http://magiccards.info/scans/en/mm/210.jpg
 cube=all
 value=2
 ability=mountainwalk
@@ -3207,7 +2988,6 @@ toughness=3
 timing=main
 
 >Rootbreaker Wurm
-image=http://magiccards.info/scans/en/9e/267.jpg
 cube=all
 value=2
 ability=trample
@@ -3222,7 +3002,6 @@ toughness=6
 timing=main
 
 >Rootwater Commando
-image=http://magiccards.info/scans/en/10e/102.jpg
 cube=all
 value=1
 ability=islandwalk
@@ -3237,7 +3016,6 @@ toughness=2
 timing=main
 
 >Runeclaw Bear
-image=http://magiccards.info/scans/en/dpa/82.jpg
 cube=all
 value=1
 rarity=1
@@ -3251,7 +3029,6 @@ toughness=2
 timing=main
 
 >Rushwood Dryad
-image=http://magiccards.info/scans/en/10e/294.jpg
 cube=all
 value=1
 ability=forestwalk
@@ -3266,7 +3043,6 @@ toughness=1
 timing=main
 
 >Sabretooth Tiger
-image=http://magiccards.info/scans/en/8e/217.jpg
 cube=all
 value=1
 ability=first strike
@@ -3281,7 +3057,6 @@ toughness=1
 timing=main
 
 >Elite Vanguard
-image=http://magiccards.info/scans/en/ddf/2.jpg
 cube=all
 value=3
 rarity=2
@@ -3295,7 +3070,6 @@ toughness=1
 timing=main
 
 >Scaled Wurm
-image=http://magiccards.info/scans/en/9e/269.jpg
 cube=all
 value=1
 rarity=1
@@ -3309,7 +3083,6 @@ toughness=6
 timing=main
 
 >Scathe Zombies
-image=http://magiccards.info/scans/en/10e/175.jpg
 cube=all
 value=1
 rarity=1
@@ -3323,7 +3096,6 @@ toughness=2
 timing=main
 
 >Scavenging Scarab
-image=http://magiccards.info/scans/en/ds/51.jpg
 cube=all
 value=1
 ability=can't block
@@ -3338,7 +3110,6 @@ toughness=3
 timing=fmain
 
 >Scoria Elemental
-image=http://magiccards.info/scans/en/som/102.jpg
 cube=all
 value=1
 rarity=1
@@ -3352,7 +3123,6 @@ toughness=1
 timing=main
 
 >Scuzzback Scrapper
-image=http://magiccards.info/scans/en/shm/217.jpg
 cube=all
 value=1
 ability=wither
@@ -3367,7 +3137,6 @@ toughness=1
 timing=main
 
 >Sea Eagle
-image=http://magiccards.info/scans/en/8eb/4.jpg
 cube=all
 value=1
 ability=flying
@@ -3382,7 +3151,6 @@ toughness=1
 timing=main
 
 >Sentinels of Glen Elendra
-image=http://magiccards.info/scans/en/lw/84.jpg
 cube=all
 value=1
 ability=flash,flying
@@ -3397,7 +3165,6 @@ toughness=3
 timing=main
 
 >Severed Legion
-image=http://magiccards.info/scans/en/dpa/33.jpg
 cube=all
 value=1
 ability=fear
@@ -3412,7 +3179,6 @@ toughness=2
 timing=main
 
 >Sewn-Eye Drake
-image=http://magiccards.info/scans/en/arb/135.jpg
 cube=all
 value=1
 ability=flying,haste
@@ -3427,7 +3193,6 @@ toughness=1
 timing=fmain
 
 >Shanodin Dryads
-image=http://magiccards.info/scans/en/7e/269.jpg
 cube=all
 value=1
 ability=forestwalk
@@ -3442,7 +3207,6 @@ toughness=1
 timing=main
 
 >Shatterskull Giant
-image=http://magiccards.info/scans/en/zen/148.jpg
 cube=all
 value=1
 rarity=1
@@ -3456,7 +3220,6 @@ toughness=3
 timing=main
 
 >Shepherd of the Lost
-image=http://magiccards.info/scans/en/zen/34.jpg
 cube=all
 value=2
 ability=flying,first strike,vigilance
@@ -3471,7 +3234,6 @@ toughness=3
 timing=main
 
 >Shivan Zombie
-image=http://magiccards.info/scans/en/in/271.jpg
 cube=all
 value=1
 ability=protection from white
@@ -3486,7 +3248,6 @@ toughness=2
 timing=main
 
 >Siege Mastodon
-image=http://magiccards.info/scans/en/m11/29.jpg
 cube=all
 value=1
 rarity=1
@@ -3500,7 +3261,6 @@ toughness=5
 timing=main
 
 >Sigiled Behemoth
-image=http://magiccards.info/scans/en/arb/79.jpg
 cube=all
 value=1
 ability=exalted
@@ -3515,7 +3275,6 @@ toughness=4
 timing=main
 
 >Silver Knight
-image=http://magiccards.info/scans/en/sc/23.jpg
 cube=all
 value=2
 ability=first strike,protection from red
@@ -3530,7 +3289,6 @@ toughness=2
 timing=main
 
 >Silverback Ape
-image=http://magiccards.info/scans/en/8eb/7.jpg
 cube=all
 value=2
 rarity=2
@@ -3544,7 +3302,6 @@ toughness=5
 timing=main
 
 >Silvercoat Lion
-image=http://magiccards.info/scans/en/m11/31.jpg
 cube=all
 value=1
 rarity=1
@@ -3558,7 +3315,6 @@ toughness=2
 timing=main
 
 >Sky Ruin Drake
-image=http://magiccards.info/scans/en/zen/66.jpg
 cube=all
 value=1
 ability=flying
@@ -3573,7 +3329,6 @@ toughness=5
 timing=main
 
 >Skyknight Legionnaire
-image=http://magiccards.info/scans/en/rav/232.jpg
 cube=all
 value=1
 ability=flying,haste
@@ -3588,7 +3343,6 @@ toughness=2
 timing=fmain
 
 >Skyshroud Falcon
-image=http://magiccards.info/scans/en/7e/45.jpg
 cube=all
 value=1
 ability=flying,vigilance
@@ -3603,7 +3357,6 @@ toughness=1
 timing=main
 
 >Slinking Serpent
-image=http://magiccards.info/scans/en/in/274.jpg
 cube=all
 value=2
 ability=forestwalk
@@ -3618,7 +3371,6 @@ toughness=3
 timing=main
 
 >Smoldering Butcher
-image=http://magiccards.info/scans/en/eve/42.jpg
 cube=all
 value=1
 ability=wither
@@ -3633,7 +3385,6 @@ toughness=2
 timing=main
 
 >Snapping Drake
-image=http://magiccards.info/scans/en/dpa/15.jpg
 cube=all
 value=1
 ability=flying
@@ -3648,7 +3399,6 @@ toughness=2
 timing=main
 
 >Sokenzan Bruiser
-image=http://magiccards.info/scans/en/chk/188.jpg
 cube=all
 value=1
 ability=mountainwalk
@@ -3663,7 +3413,6 @@ toughness=3
 timing=main
 
 >Soulbound Guardians
-image=http://magiccards.info/scans/en/roe/45.jpg
 cube=all
 value=2
 ability=defender,flying
@@ -3678,7 +3427,6 @@ toughness=5
 timing=smain
 
 >Spined Wurm
-image=http://magiccards.info/scans/en/dpa/83.jpg
 cube=all
 value=1
 rarity=1
@@ -3692,7 +3440,6 @@ toughness=4
 timing=main
 
 >Spineless Thug
-image=http://magiccards.info/scans/en/10e/180.jpg
 cube=all
 value=1
 ability=can't block
@@ -3707,7 +3454,6 @@ toughness=2
 timing=fmain
 
 >Sporecap Spider
-image=http://magiccards.info/scans/en/roe/209.jpg
 cube=all
 value=1
 ability=reach
@@ -3722,7 +3468,6 @@ toughness=5
 timing=main
 
 >Stampeding Rhino
-image=http://magiccards.info/scans/en/m10/204.jpg
 cube=all
 value=1
 ability=trample
@@ -3737,7 +3482,6 @@ toughness=4
 timing=main
 
 >Standing Troops
-image=http://magiccards.info/scans/en/8e/48.jpg
 cube=all
 value=1
 ability=vigilance
@@ -3752,7 +3496,6 @@ toughness=4
 timing=main
 
 >Steadfast Guard
-image=http://magiccards.info/scans/en/10e/48.jpg
 cube=all
 value=1
 ability=vigilance
@@ -3767,7 +3510,6 @@ toughness=2
 timing=main
 
 >Stomper Cub
-image=http://magiccards.info/scans/en/roe/210.jpg
 cube=all
 value=1
 ability=trample
@@ -3782,7 +3524,6 @@ toughness=3
 timing=main
 
 >Stone Golem
-image=http://magiccards.info/scans/en/m11/215.jpg
 cube=all
 value=2
 rarity=2
@@ -3795,7 +3536,6 @@ toughness=4
 timing=main
 
 >Stonework Puma
-image=http://magiccards.info/scans/en/zen/207.jpg
 cube=all
 value=1
 rarity=1
@@ -3808,7 +3548,6 @@ toughness=2
 timing=main
 
 >Storm Crow
-image=http://magiccards.info/scans/en/9e/100.jpg
 cube=all
 value=1
 ability=flying
@@ -3823,7 +3562,6 @@ toughness=2
 timing=main
 
 >Stratozeppelid
-image=http://magiccards.info/scans/en/gp/36.jpg
 cube=all
 value=2
 ability=flying,can't block creatures without flying
@@ -3838,7 +3576,6 @@ toughness=4
 timing=fmain
 
 >Streetbreaker Wurm
-image=http://magiccards.info/scans/en/gp/133.jpg
 cube=all
 value=1
 rarity=1
@@ -3852,7 +3589,6 @@ toughness=4
 timing=main
 
 >Suntail Hawk
-image=http://magiccards.info/scans/en/10e/50.jpg
 cube=all
 value=1
 ability=flying
@@ -3867,7 +3603,6 @@ toughness=1
 timing=main
 
 >Talon Trooper
-image=http://magiccards.info/scans/en/arb/14.jpg
 cube=all
 value=1
 ability=flying
@@ -3882,7 +3617,6 @@ toughness=3
 timing=main
 
 >Tangle Spider
-image=http://magiccards.info/scans/en/10e/303.jpg
 cube=all
 value=2
 ability=flash,reach
@@ -3897,7 +3631,6 @@ toughness=4
 timing=main
 
 >Thornweald Archer
-image=http://magiccards.info/scans/en/fut/154.jpg
 cube=all
 value=1
 ability=reach,deathtouch
@@ -3912,7 +3645,6 @@ toughness=1
 timing=main
 
 >Thundering Giant
-image=http://magiccards.info/scans/en/10e/243.jpg
 cube=all
 value=2
 ability=haste
@@ -3927,7 +3659,6 @@ toughness=3
 timing=fmain
 
 >Tidal Kraken
-image=http://magiccards.info/scans/en/9e/105.jpg
 cube=all
 value=3
 ability=unblockable
@@ -3942,7 +3673,6 @@ toughness=6
 timing=main
 
 >Tower Gargoyle
-image=http://magiccards.info/scans/en/ala/205.jpg
 cube=all
 value=2
 ability=flying
@@ -3957,7 +3687,6 @@ toughness=4
 timing=main
 
 >Trained Armodon
-image=http://magiccards.info/scans/en/dpa/85.jpg
 cube=all
 value=1
 rarity=1
@@ -3971,7 +3700,6 @@ toughness=3
 timing=main
 
 >Trained Orgg
-image=http://magiccards.info/scans/en/7e/224.jpg
 cube=all
 value=3
 rarity=3
@@ -3985,7 +3713,6 @@ toughness=6
 timing=main
 
 >Trapjaw Kelpie
-image=http://magiccards.info/scans/en/eve/164.jpg
 cube=all
 value=1
 ability=flash,persist
@@ -4000,7 +3727,6 @@ toughness=3
 timing=main
 
 >Tree Monkey
-image=http://magiccards.info/scans/en/9e/275.jpg
 cube=all
 value=1
 ability=reach
@@ -4015,7 +3741,6 @@ toughness=1
 timing=main
 
 >Treetop Scout
-image=http://magiccards.info/scans/en/sc/130.jpg
 cube=all
 value=1
 ability=can't be blocked except by creatures with flying
@@ -4030,7 +3755,6 @@ toughness=1
 timing=main
 
 >Treetop Sentinel
-image=http://magiccards.info/scans/en/od/111.jpg
 cube=all
 value=2
 ability=flying,protection from green
@@ -4045,7 +3769,6 @@ toughness=3
 timing=main
 
 >Tundra Wolves
-image=http://magiccards.info/scans/en/10e/54.jpg
 cube=all
 value=1
 ability=first strike
@@ -4060,7 +3783,6 @@ toughness=1
 timing=main
 
 >Urborg Drake
-image=http://magiccards.info/scans/en/in/283.jpg
 cube=all
 value=2
 ability=flying,attacks each turn if able
@@ -4075,7 +3797,6 @@ toughness=3
 timing=main
 
 >Valeron Outlander
-image=http://magiccards.info/scans/en/cfx/130.jpg
 cube=all
 value=1
 ability=protection from black
@@ -4090,7 +3811,6 @@ toughness=2
 timing=main
 
 >Valiant Guard
-image=http://magiccards.info/scans/en/cfx/19.jpg
 cube=all
 value=1
 rarity=1
@@ -4104,7 +3824,6 @@ toughness=3
 timing=main
 
 >Vastwood Gorger
-image=http://magiccards.info/scans/en/zen/192.jpg
 cube=all
 value=1
 rarity=1
@@ -4118,7 +3837,6 @@ toughness=6
 timing=main
 
 >Veteran Cavalier
-image=http://magiccards.info/scans/en/9e/52.jpg
 cube=all
 value=2
 ability=vigilance
@@ -4133,7 +3851,6 @@ toughness=2
 timing=main
 
 >Viashino Spearhunter
-image=http://magiccards.info/scans/en/m10/161.jpg
 cube=all
 value=1
 ability=first strike
@@ -4148,7 +3865,6 @@ toughness=1
 timing=main
 
 >Vizzerdrix
-image=http://magiccards.info/scans/en/9eb/7.jpg
 cube=all
 value=3
 rarity=3
@@ -4162,7 +3878,6 @@ toughness=6
 timing=main
 
 >Vodalian Zombie
-image=http://magiccards.info/scans/en/in/286.jpg
 cube=all
 value=1
 ability=protection from green
@@ -4177,7 +3892,6 @@ toughness=2
 timing=main
 
 >Vulshok Berserker
-image=http://magiccards.info/scans/en/m11/159.jpg
 cube=all
 value=1
 ability=haste
@@ -4192,7 +3906,6 @@ toughness=2
 timing=fmain
 
 >Wall of Air
-image=http://magiccards.info/scans/en/10e/124.jpg
 cube=all
 value=2
 ability=defender,flying
@@ -4207,7 +3920,6 @@ toughness=5
 timing=smain
 
 >Wall of Spears
-image=http://magiccards.info/scans/en/8e/320.jpg
 cube=all
 value=2
 ability=defender,first strike
@@ -4221,7 +3933,6 @@ toughness=3
 timing=smain
 
 >Wall of Stone
-image=http://magiccards.info/scans/en/8e/232.jpg
 cube=all
 value=2
 ability=defender
@@ -4236,7 +3947,6 @@ toughness=8
 timing=smain
 
 >Wall of Swords
-image=http://magiccards.info/scans/en/10e/57.jpg
 cube=all
 value=2
 ability=defender,flying
@@ -4251,7 +3961,6 @@ toughness=5
 timing=smain
 
 >Wall of Vines
-image=http://magiccards.info/scans/en/m11/199.jpg
 cube=all
 value=1
 ability=defender,reach
@@ -4266,7 +3975,6 @@ toughness=3
 timing=smain
 
 >Wall of Wood
-image=http://magiccards.info/scans/en/dpa/89.jpg
 cube=all
 value=1
 ability=defender
@@ -4281,7 +3989,6 @@ toughness=3
 timing=smain
 
 >Wandering Ones
-image=http://magiccards.info/scans/en/chk/100.jpg
 cube=all
 value=1
 rarity=1
@@ -4295,7 +4002,6 @@ toughness=1
 timing=main
 
 >Warpath Ghoul
-image=http://magiccards.info/scans/en/m10/120.jpg
 cube=all
 value=1
 rarity=1
@@ -4309,7 +4015,6 @@ toughness=2
 timing=main
 
 >Wasp Lancer
-image=http://magiccards.info/scans/en/shm/179.jpg
 cube=all
 value=2
 ability=flying
@@ -4324,7 +4029,6 @@ toughness=2
 timing=main
 
 >Waveskimmer Aven
-image=http://magiccards.info/scans/en/ala/207.jpg
 cube=all
 value=1
 ability=flying,exalted
@@ -4339,7 +4043,6 @@ toughness=4
 timing=main
 
 >Wild Griffin
-image=http://magiccards.info/scans/en/m11/40.jpg
 cube=all
 value=1
 ability=flying
@@ -4354,7 +4057,6 @@ toughness=2
 timing=main
 
 >Wildslayer Elves
-image=http://magiccards.info/scans/en/shm/133.jpg
 cube=all
 value=1
 ability=wither
@@ -4369,7 +4071,6 @@ toughness=3
 timing=main
 
 >Wind Drake
-image=http://magiccards.info/scans/en/m10/81.jpg
 cube=all
 value=1
 ability=flying
@@ -4384,7 +4085,6 @@ toughness=2
 timing=main
 
 >Woodland Changeling
-image=http://magiccards.info/scans/en/lw/242.jpg
 cube=all
 value=1
 ability=changeling
@@ -4399,7 +4099,6 @@ toughness=2
 timing=main
 
 >Woodland Druid
-image=http://magiccards.info/scans/en/od/284.jpg
 cube=all
 value=1
 rarity=1
@@ -4413,7 +4112,6 @@ toughness=2
 timing=main
 
 >Yavimaya Barbarian
-image=http://magiccards.info/scans/en/in/290.jpg
 cube=all
 value=1
 ability=protection from blue
@@ -4428,7 +4126,6 @@ toughness=2
 timing=main
 
 >Yavimaya Wurm
-image=http://magiccards.info/scans/en/m11/200.jpg
 cube=all
 value=1
 ability=trample
@@ -4443,7 +4140,6 @@ toughness=4
 timing=main
 
 >Yotian Soldier
-image=http://magiccards.info/scans/en/mi/277.jpg
 cube=all
 value=1
 ability=vigilance
@@ -4457,7 +4153,6 @@ toughness=4
 timing=main
 
 >Youthful Knight
-image=http://magiccards.info/scans/en/10e/62.jpg
 cube=all
 value=1
 ability=first strike
@@ -4472,7 +4167,6 @@ toughness=1
 timing=main
 
 >Zealous Guardian
-image=http://magiccards.info/scans/en/shm/157.jpg
 cube=all
 value=1
 ability=flash
@@ -4487,7 +4181,6 @@ toughness=1
 timing=main
 
 >Zendikar Farguide
-image=http://magiccards.info/scans/en/zen/194.jpg
 cube=all
 value=1
 ability=forestwalk
@@ -4502,7 +4195,6 @@ toughness=3
 timing=main
 
 >Zodiac Monkey
-image=http://magiccards.info/scans/en/9e/285.jpg
 cube=all
 value=1
 ability=forestwalk
@@ -4517,7 +4209,6 @@ toughness=1
 timing=main
 
 >Zombie Goliath
-image=http://magiccards.info/scans/en/m10/123.jpg
 cube=all
 value=1
 rarity=1
@@ -4531,7 +4222,6 @@ toughness=3
 timing=main
 
 >Zombie Outlander
-image=http://magiccards.info/scans/en/cfx/133.jpg
 cube=all
 value=1
 ability=protection from green
@@ -4546,7 +4236,6 @@ toughness=2
 timing=main
 
 >Sacred Wolf
-image=http://magiccards.info/scans/en/m11/196.jpg
 cube=all
 value=2
 rarity=1
@@ -4561,7 +4250,6 @@ ability=can't be the target of spells or abilities your opponent controls
 timing=fmain
 
 >Loxodon Partisan
-image=http://magiccards.info/scans/en/mbs/12.jpg
 cube=all
 value=2
 rarity=1
@@ -4576,7 +4264,6 @@ ability=battle cry
 timing=main
 
 >Glissa's Courier
-image=http://magiccards.info/scans/en/mbs/80.jpg
 cube=all
 value=2
 rarity=1
@@ -4591,7 +4278,6 @@ ability=mountainwalk
 timing=main
 
 >Priests of Norn
-image=http://magiccards.info/scans/en/mbs/16.jpg
 cube=all
 value=2
 ability=vigilance,infect
@@ -4606,7 +4292,6 @@ toughness=4
 timing=main
 
 >Flensermite
-image=http://magiccards.info/scans/en/mbs/41.jpg
 cube=all
 value=2
 ability=infect,lifelink
@@ -4621,7 +4306,6 @@ toughness=1
 timing=main
 
 >Blightwidow
-image=http://magiccards.info/scans/en/mbs/77.jpg
 cube=all
 value=3
 ability=reach,infect
@@ -4636,7 +4320,6 @@ toughness=4
 timing=main
 
 >Contagious Nim
-image=http://magiccards.info/scans/en/som/58.jpg
 cube=all
 value=2
 ability=infect
@@ -4651,7 +4334,6 @@ toughness=2
 timing=main
 
 >Cystbearer
-image=http://magiccards.info/scans/en/som/117.jpg
 cube=all
 value=2
 ability=infect
@@ -4666,7 +4348,6 @@ toughness=3
 timing=main
 
 >Phyrexian Digester
-image=http://magiccards.info/scans/en/mbs/120.jpg
 cube=all
 value=2
 ability=infect
@@ -4680,7 +4361,6 @@ toughness=1
 timing=main
 
 >Koth's Courier
-image=http://magiccards.info/scans/en/mbs/68.jpg
 cube=all
 value=3
 rarity=1
@@ -4695,7 +4375,6 @@ ability=forestwalk
 timing=main
 
 >Blackcleave Goblin
-image=http://magiccards.info/scans/en/som/54.jpg
 cube=all
 value=3
 ability=haste,infect

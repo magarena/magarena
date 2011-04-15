@@ -143,7 +143,7 @@ public abstract class AbstractTheme implements Theme {
 
 	private PlayerAvatar[] loadAvatars(final List<File> avatarFiles) {
 
-		final File files[]=new File(MagicMain.getGamePath()+File.separator+"avatars").listFiles();
+		final File files[]=new File(MagicMain.getGamePath()+File.separator+"avatars/classic").listFiles();
 		if (files==null||files.length<2) {
 			avatarFiles.add(new File("unknown"));
 			avatarFiles.add(new File("unknown"));

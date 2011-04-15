@@ -2386,6 +2386,30 @@ public class CardEventDefinitions {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[1],(Integer)data[2]));
 		}
 	};
+	
+	private static final MagicSpellCardEvent OVERRUN=new MagicSpellCardEvent("Overrun") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack,player},this,
+				"Creatures you control get +3/+3 and gain trample until end of turn.");
+		}
+	
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			for (final MagicTarget target : targets) {
+				
+				final MagicPermanent creature=(MagicPermanent)target;
+				game.doAction(new MagicChangeTurnPTAction(creature,3,3));
+				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+			}
+		}
+	};
 
 	private static final MagicSpellCardEvent OVERWHELMING_STAMPEDE=new MagicSpellCardEvent("Overwhelming Stampede") {
 
@@ -3261,6 +3285,7 @@ public class CardEventDefinitions {
 		MARSH_CASUALTIES,
 		MARTIAL_COUP,
 		MIND_SPRING,
+		OVERRUN,
 		OVERWHELMING_STAMPEDE,
 		PULSE_OF_THE_TANGLE,
 		REANIMATE,
