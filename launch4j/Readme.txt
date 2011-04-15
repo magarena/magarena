@@ -1,14 +1,8 @@
-Magarena by ubeefx
-==================
+Magarena Limited Edition by ubeefx
+==================================
 
 There must be a Java Runtime 6 (java.com) installed on your computer to play.
-Installing on Windows is quite simple, just put Magarena.exe on your desktop and execute.
-To obtain the Java jar, Magarena.exe can simply be renamed to Magarena.jar because it is also an archive.
-To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
-If a Magarena folder is present where the program is executed, that folder is used as data folder.
-
-Do not forget to execute "Download images" in the Arena menu the first time you run a new release.
-Otherwise you will see a lot of question marks. The application stops automatically when downloading is finished.
+An executable is provided for Windows. To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
 Magarena supports the following keyboard shortcuts :
 - Space or Right key : action button
@@ -16,23 +10,23 @@ Magarena supports the following keyboard shortcuts :
 - Enter key : switch between graphical and text mode
 - F1 key : show or hide game messages
 
-The UI of Magarena can be customized with downloadable themes coming in zip files.
-A theme pack with five color themes can be downloaded on the project page.
-The theme pack should be unzipped into the mods folder of the Magarena data folder.
-There are also separate themes like the mystic theme which can be placed directly into the mods folder.
-It is best to restart the application each time after switching to one of these themes in preferences.
-Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
-Thanks to Salasnet for the felt theme.
-
-Thanks to singularita for creating the scripts to add over 300 additional creature cards to Magarena.
-You can play with these cards by selecting the all cube in the "New duel" dialog. 
-
 The desired AI can be selected in the preferences.
 Recommended MiniMax AI difficulty level for the best balance of speed and strength is the default 6.
 The Vegas AI should be fast on all difficulty levels.
-Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search AI.
 
-Have fun!
+Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
+Thanks to Salasnet for the felt theme.
+Thanks to singularita for creating the scripts to add over 300 additional creature cards.
+Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search AI.
+Thanks for your support and have fun!
+
+Release 1.12 (April 17, 2011)
+============
+
+- default cube (558 cards)
+- all cube (879 cards)
+
+- modified game to work only with an existing Magarena data folder
 
 Release 1.11 (April 11, 2011)
 ============
@@ -48,7 +42,7 @@ Release 1.11 (April 11, 2011)
 - three new AI implementations are available next to the default MiniMax AI : Monte Carlo, Vegas and Random
 - the preferred AI can be selected in preferences, the deck strength calculator always uses MiniMax AI
 - added New and Load Duel buttons on startup screen
-- added option to a select random deck from decks folder in New Duel dialog (folder icon)
+- added option to select a random deck from decks folder in New Duel dialog (folder icon)
 
 - fixed Lightning Helix, it can now target your own permanents with filter legal targets enabled
 
