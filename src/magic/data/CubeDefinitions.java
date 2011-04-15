@@ -41,6 +41,11 @@ public class CubeDefinitions {
 			cubeDefinitions.add(new MagicCubeDefinition(cubeName));
 		}
 	}
+	
+	public String getCardText() {
+		
+		return cubeDefinitions.get(0).size()+" / "+cubeDefinitions.get(1).size()+" cards";
+	}
 		
 	public String[] getCubeNames() {
 		
