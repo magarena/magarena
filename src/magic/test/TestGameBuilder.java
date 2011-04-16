@@ -118,10 +118,16 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
 		addToHand(opponent,"Zephyr Sprite",3);
-		addToHand(player,"Overrun",1);
-		addToHand(player,"Bitterblossom",1);
-		addToHand(player,"Goblin Piledriver",1);
-		
+		addToHand(player,"Shivan Dragon",1);
+		addToHand(player,"Necrogen Scudder",1);
+		addToHand(player,"Tangle Mantis",1);
+		addToHand(player,"Lumengrid Gargoyle",1);
+		addToHand(player,"Scourge Servant",1);
+		addToHand(player,"Tine Shrike",1);
+		addToHand(player,"Ogre Resister",1);
+		addToHand(player,"Hexplate Golem",1);
+		addToHand(player,"Kuldotha Ringleader",1);
+						
 		createPermanent(game,player,"Raging Goblin",false,2);
 		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Rupture Spire",false,7);
