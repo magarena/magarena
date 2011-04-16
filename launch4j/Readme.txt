@@ -23,10 +23,14 @@ Thanks for your support and have fun!
 Release 1.12 (April 17, 2011)
 ============
 
-- default cube (558 cards)
-- all cube (879 cards)
+- default cube (560 cards)
+- all cube (882 cards)
 
-- modified game to work only with an existing Magarena data folder
+- modified game to work with a premade Magarena data folder
+- added selectable avatar sets in preferences, separate from theme
+- added unlimited undo support 
+- added "Reset game" in menu, undoing all moves
+- added counter for number of games played in startup screen
 
 Release 1.11 (April 11, 2011)
 ============
