@@ -206,7 +206,8 @@ public class GamePanel extends JPanel {
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);		
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),UNDO_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0),SWITCH_KEY);
-		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0), LOG_KEY);
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0),LOG_KEY);
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_M, 0),LOG_KEY);
 				
 		stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
 		handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);		

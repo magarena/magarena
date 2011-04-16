@@ -1,6 +1,8 @@
 Magarena Limited Edition by ubeefx
 ==================================
 
+Project page url : http://magarena.dyndns.org or http://code.google.com/p/arena-card-game/
+
 There must be a Java Runtime 6 (java.com) installed on your computer to play.
 An executable is provided for Windows. To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
@@ -8,12 +10,13 @@ Magarena supports the following keyboard shortcuts :
 - Space or Right key : action button
 - Escape or Left key : undo button
 - Enter key : switch between graphical and text mode
-- F1 key : show or hide game messages
+- F1 or M key : show or hide game messages
 
 The desired AI can be selected in the preferences.
 Recommended MiniMax AI difficulty level for the best balance of speed and strength is the default 6.
 The Vegas AI should be fast on all difficulty levels.
 
+Thanks to everyone one the CCGHQ forum (slightlymagic.net).
 Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
 Thanks to Salasnet for the felt theme.
 Thanks to singularita for creating the scripts to add over 300 additional creature cards.
@@ -24,13 +27,14 @@ Release 1.12 (April 17, 2011)
 ============
 
 - default cube (560 cards)
-- all cube (882 cards)
+- all cube (888 cards)
 
 - modified game to work with a premade Magarena data folder
 - added selectable avatar sets in preferences, separate from theme
 - added unlimited undo support 
 - added "Reset game" in menu, undoing all moves
 - added counter for number of games played in startup screen
+- added M key as additional shortcut for messages
 
 Release 1.11 (April 11, 2011)
 ============
