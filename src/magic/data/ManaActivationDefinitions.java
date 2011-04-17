@@ -67,5 +67,6 @@ public class ManaActivationDefinitions {
 		addCreatureActivations("Noble Hierarch",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Blue,MagicManaType.Green,MagicManaType.White});
 		addCreatureActivations("Steward of Valeron",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Green});
 		addCreatureActivations("Vine Trellis",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Green});
+		addCreatureActivations("Plague Myr",new MagicManaType[]{MagicManaType.Colorless});
 	}
 }

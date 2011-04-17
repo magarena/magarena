@@ -1569,6 +1569,8 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
+	private static final MagicPermanentActivation SHIVAN_DRAGON=new MagicPumpActivation("Shivan Dragon",MagicManaCost.RED,1,0);
+	
 	private static final MagicPermanentActivation SKELETAL_VAMPIRE2=new MagicPermanentActivation("Skeletal Vampire",
 			new MagicCondition[]{MagicCondition.CAN_REGENERATE_CONDITION,MagicCondition.CONTROL_BAT_CONDITION,new MagicSingleActivationCondition()},
 			new MagicActivationHints(MagicTiming.Pump)) {
@@ -2675,6 +2677,7 @@ public class PermanentActivationDefinitions {
 		SIEGE_GANG_COMMANDER,
 		SILKBIND_FAERIE,
 		SILVOS_ROGUE_ELEMENTAL,
+		SHIVAN_DRAGON,
 		SKELETAL_VAMPIRE1,
 		SKELETAL_VAMPIRE2,
 		SKITHIRYX1,

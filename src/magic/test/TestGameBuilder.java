@@ -119,7 +119,7 @@ public class TestGameBuilder {
 		addToGraveyard(opponent,"Island",2);
 		addToHand(opponent,"Zephyr Sprite",3);
 		addToHand(player,"Shivan Dragon",1);
-		addToHand(player,"Necrogen Scudder",1);
+		addToHand(player,"Phyrexian Rager",1);
 		addToHand(player,"Plague Myr",1);
 		addToHand(player,"Tangle Mantis",1);
 		addToHand(player,"Lumengrid Gargoyle",1);

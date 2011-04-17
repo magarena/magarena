@@ -34,9 +34,13 @@ public class MagicMain {
 	
 	public static void main(String args[]) {		
 
-		initializeCards();
-		new MagicFrame();
-	}
+		initialize();
+		if (new File(gamePath,"ubeefx.txt").exists()) {
+			new MagicFrame();
+		} else {
+			System.out.println("Incompatible data folder!");
+		}
+	}		
 	
 	public static String getGamePath() {
 
@@ -61,7 +65,7 @@ public class MagicMain {
 		MagicStaticLocalVariable.initializeCardDefinitions();
 	}
 	
-	public static void initializeCards() {
+	public static void initialize() {
 		
 		try {
 			new File(getGamePath()).mkdir();

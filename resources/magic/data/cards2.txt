@@ -1,6 +1,6 @@
 >Air Elemental
 cube=all
-value=2
+value=4
 ability=flying
 rarity=2
 type=Creature
@@ -26,7 +26,7 @@ timing=main
 
 >Alpha Tyrranax
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Beast
@@ -53,7 +53,7 @@ timing=main
 
 >Anaconda
 cube=all
-value=2
+value=3
 ability=swampwalk
 rarity=2
 type=Creature
@@ -81,7 +81,7 @@ timing=main
 
 >Angel of Retribution
 cube=all
-value=3
+value=4
 ability=flying,first strike
 rarity=3
 type=Creature
@@ -95,7 +95,7 @@ timing=main
 
 >Angelic Wall
 cube=all
-value=1
+value=2
 ability=defender,flying
 rarity=1
 type=Creature
@@ -109,7 +109,7 @@ timing=smain
 
 >Anurid Murkdiver
 cube=all
-value=1
+value=4
 ability=swampwalk
 rarity=1
 type=Creature
@@ -123,7 +123,7 @@ timing=main
 
 >Arachnoid
 cube=all
-value=2
+value=4
 ability=reach
 rarity=2
 type=Artifact,Creature
@@ -136,7 +136,7 @@ timing=main
 
 >Ardent Militia
 cube=all
-value=2
+value=3
 ability=vigilance
 rarity=2
 type=Creature
@@ -150,7 +150,7 @@ timing=main
 
 >Armored Cancrix
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Crab
@@ -163,7 +163,7 @@ timing=main
 
 >Ashcoat Bear
 cube=all
-value=1
+value=2
 ability=flash
 rarity=1
 type=Creature
@@ -177,7 +177,7 @@ timing=main
 
 >Ashen Monstrosity
 cube=all
-value=2
+value=4
 ability=haste,attacks each turn if able
 rarity=2
 type=Creature
@@ -191,7 +191,7 @@ timing=fmain
 
 >Assault Griffin
 cube=all
-value=1
+value=3
 ability=flying
 rarity=1
 type=Creature
@@ -219,7 +219,7 @@ timing=main
 
 >Aven Smokeweaver
 cube=all
-value=2
+value=3
 ability=flying,protection from red
 rarity=2
 type=Creature
@@ -233,7 +233,7 @@ timing=main
 
 >Aven Squire
 cube=all
-value=1
+value=2
 ability=flying,exalted
 rarity=1
 type=Creature
@@ -247,7 +247,7 @@ timing=main
 
 >Avian Changeling
 cube=all
-value=1
+value=2
 ability=changeling,flying
 rarity=1
 type=Creature
@@ -261,7 +261,7 @@ timing=main
 
 >Axegrinder Giant
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Giant,Warrior
@@ -274,7 +274,7 @@ timing=main
 
 >Azure Drake
 cube=all
-value=2
+value=3
 ability=flying
 rarity=2
 type=Creature
@@ -288,7 +288,7 @@ timing=main
 
 >Balduvian Barbarians
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Human,Barbarian
@@ -301,7 +301,7 @@ timing=main
 
 >Barony Vampire
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Vampire
@@ -314,7 +314,7 @@ timing=main
 
 >Battle Hurda
 cube=all
-value=1
+value=3
 ability=first strike
 rarity=1
 type=Creature
@@ -328,7 +328,7 @@ timing=main
 
 >Benalish Knight
 cube=all
-value=1
+value=3
 ability=flash,first strike
 rarity=1
 type=Creature
@@ -342,7 +342,7 @@ timing=main
 
 >Benthic Behemoth
 cube=all
-value=3
+value=4
 ability=islandwalk
 rarity=3
 type=Creature
@@ -356,7 +356,7 @@ timing=main
 
 >Berserkers of Blood Ridge
 cube=all
-value=1
+value=4
 ability=attacks each turn if able
 rarity=1
 type=Creature
@@ -370,7 +370,7 @@ timing=main
 
 >Blade of the Sixth Pride
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Cat,Rebel
@@ -383,7 +383,7 @@ timing=main
 
 >Bladetusk Boar
 cube=all
-value=1
+value=3
 ability=intimidate
 rarity=1
 type=Creature
@@ -397,7 +397,7 @@ timing=main
 
 >Blind Phantasm
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Illusion
@@ -410,7 +410,7 @@ timing=main
 
 >Blood Knight
 cube=all
-value=2
+value=3
 ability=first strike,protection from white
 rarity=2
 type=Creature
@@ -438,7 +438,7 @@ timing=fmain
 
 >Bog Imp
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -452,7 +452,7 @@ timing=main
 
 >Bog Raiders
 cube=all
-value=1
+value=2
 ability=swampwalk
 rarity=1
 type=Creature
@@ -466,7 +466,7 @@ timing=main
 
 >Bog Tatters
 cube=all
-value=1
+value=3
 ability=swampwalk
 rarity=1
 type=Creature
@@ -480,7 +480,7 @@ timing=main
 
 >Bog Wraith
 cube=all
-value=2
+value=3
 ability=swampwalk
 rarity=2
 type=Creature
@@ -494,7 +494,7 @@ timing=main
 
 >Border Patrol
 cube=all
-value=1
+value=2
 ability=vigilance
 rarity=1
 type=Creature
@@ -536,7 +536,7 @@ timing=main
 
 >Bull Hippo
 cube=all
-value=2
+value=3
 ability=islandwalk
 rarity=2
 type=Creature
@@ -550,7 +550,7 @@ timing=main
 
 >Canopy Spider
 cube=all
-value=1
+value=2
 ability=reach
 rarity=1
 type=Creature
@@ -564,7 +564,7 @@ timing=main
 
 >Canyon Minotaur
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Minotaur,Warrior
@@ -577,7 +577,7 @@ timing=main
 
 >Canyon Wildcat
 cube=all
-value=1
+value=2
 ability=mountainwalk
 rarity=1
 type=Creature
@@ -591,7 +591,7 @@ timing=main
 
 >Caravan Hurda
 cube=all
-value=1
+value=2
 ability=lifelink
 rarity=1
 type=Creature
@@ -605,7 +605,7 @@ timing=main
 
 >Centaur Courser
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Centaur,Warrior
@@ -618,7 +618,7 @@ timing=main
 
 >Changeling Sentinel
 cube=all
-value=1
+value=3
 ability=changeling,vigilance
 rarity=1
 type=Creature
@@ -632,7 +632,7 @@ timing=main
 
 >Child of Night
 cube=all
-value=1
+value=2
 ability=lifelink
 rarity=1
 type=Creature
@@ -646,7 +646,7 @@ timing=main
 
 >Cliff Threader
 cube=all
-value=1
+value=2
 ability=mountainwalk
 rarity=1
 type=Creature
@@ -660,7 +660,7 @@ timing=main
 
 >Cloud Crusader
 cube=all
-value=1
+value=4
 ability=flying,first strike
 rarity=1
 type=Creature
@@ -674,7 +674,7 @@ timing=main
 
 >Cloud Elemental
 cube=all
-value=1
+value=3
 ability=flying,can't block creatures without flying
 rarity=1
 type=Creature
@@ -702,7 +702,7 @@ timing=fmain
 
 >Cloudcrown Oak
 cube=all
-value=2
+value=3
 ability=reach
 rarity=1
 type=Creature
@@ -716,7 +716,7 @@ timing=main
 
 >Coast Watcher
 cube=all
-value=1
+value=2
 ability=flying,protection from green
 rarity=1
 type=Creature
@@ -730,7 +730,7 @@ timing=main
 
 >Commander Eesha
 cube=all
-value=3
+value=5
 ability=flying,protection from creatures
 rarity=3
 type=Legendary,Creature
@@ -770,7 +770,7 @@ timing=main
 
 >Courier Hawk
 cube=all
-value=1
+value=2
 ability=flying,vigilance
 rarity=1
 type=Creature
@@ -784,7 +784,7 @@ timing=main
 
 >Court Archers
 cube=all
-value=1
+value=2
 ability=reach,exalted
 rarity=1
 type=Creature
@@ -798,7 +798,7 @@ timing=main
 
 >Covert Operative
 cube=all
-value=1
+value=3
 ability=unblockable
 rarity=1
 type=Creature
@@ -812,7 +812,7 @@ timing=main
 
 >Craw Wurm
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Wurm
@@ -852,7 +852,7 @@ timing=main
 
 >Daggerback Basilisk
 cube=all
-value=1
+value=2
 ability=deathtouch
 rarity=1
 type=Creature
@@ -879,7 +879,7 @@ timing=main
 
 >Darksteel Gargoyle
 cube=all
-value=2
+value=4
 ability=flying,indestructible
 rarity=2
 type=Artifact,Creature
@@ -892,7 +892,7 @@ timing=main
 
 >Darksteel Myr
 cube=all
-value=2
+value=3
 ability=indestructible
 rarity=2
 type=Artifact,Creature
@@ -905,7 +905,7 @@ timing=main
 
 >Darksteel Sentinel
 cube=all
-value=2
+value=4
 ability=flash,vigilance,indestructible
 rarity=2
 type=Artifact,Creature
@@ -932,7 +932,7 @@ timing=main
 
 >Deft Duelist
 cube=all
-value=1
+value=2
 ability=first strike,shroud
 rarity=1
 type=Creature
@@ -946,7 +946,7 @@ timing=fmain
 
 >Diving Griffin
 cube=all
-value=1
+value=3
 ability=flying,vigilance
 rarity=1
 type=Creature
@@ -960,7 +960,7 @@ timing=main
 
 >Dragonstalker
 cube=all
-value=2
+value=3
 ability=flying,protection from dragons
 rarity=2
 type=Creature
@@ -974,7 +974,7 @@ timing=main
 
 >Dreg Reaver
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Zombie,Beast
@@ -987,7 +987,7 @@ timing=main
 
 >Dross Crocodile
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Zombie,Crocodile
@@ -1000,7 +1000,7 @@ timing=main
 
 >Dross Prowler
 cube=all
-value=1
+value=3
 ability=fear
 rarity=1
 type=Creature
@@ -1014,7 +1014,7 @@ timing=main
 
 >Dusk Imp
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -1028,7 +1028,7 @@ timing=main
 
 >Duskdale Wurm
 cube=all
-value=2
+value=4
 ability=trample
 rarity=2
 type=Creature
@@ -1069,7 +1069,7 @@ timing=main
 
 >Earth Elemental
 cube=all
-value=2
+value=4
 rarity=2
 type=Creature
 subtype=Elemental
@@ -1096,7 +1096,7 @@ timing=main
 
 >Emerald Oryx
 cube=all
-value=1
+value=3
 ability=forestwalk
 rarity=1
 type=Creature
@@ -1110,7 +1110,7 @@ timing=main
 
 >Enormous Baloth
 cube=all
-value=2
+value=4
 rarity=2
 type=Creature
 subtype=Beast
@@ -1123,7 +1123,7 @@ timing=main
 
 >Esper Cormorants
 cube=all
-value=1
+value=3
 ability=flying
 rarity=1
 type=Artifact,Creature
@@ -1137,7 +1137,7 @@ timing=main
 
 >Fangren Hunter
 cube=all
-value=1
+value=4
 ability=trample
 rarity=1
 type=Creature
@@ -1151,7 +1151,7 @@ timing=main
 
 >Fighting Drake
 cube=all
-value=2
+value=3
 ability=flying
 rarity=2
 type=Creature
@@ -1165,7 +1165,7 @@ timing=main
 
 >Fire Elemental
 cube=all
-value=2
+value=4
 rarity=2
 type=Creature
 subtype=Elemental
@@ -1178,7 +1178,7 @@ timing=main
 
 >Flameborn Hellion
 cube=all
-value=1
+value=4
 ability=haste,attacks each turn if able
 rarity=1
 type=Creature
@@ -1192,7 +1192,7 @@ timing=fmain
 
 >Fomori Nomad
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Nomad,Giant
@@ -1205,7 +1205,7 @@ timing=main
 
 >Foot Soldiers
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Human,Soldier
@@ -1232,7 +1232,7 @@ timing=main
 
 >Frost Ogre
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Ogre,Warrior
@@ -1258,7 +1258,7 @@ timing=main
 
 >Gaea's Skyfolk
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -1272,7 +1272,7 @@ timing=main
 
 >Galina's Knight
 cube=all
-value=1
+value=2
 ability=protection from red
 rarity=1
 type=Creature
@@ -1286,7 +1286,7 @@ timing=main
 
 >Game-Trail Changeling
 cube=all
-value=1
+value=4
 ability=changeling,trample
 rarity=1
 type=Creature
@@ -1300,7 +1300,7 @@ timing=main
 
 >Giant Cockroach
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Insect
@@ -1313,7 +1313,7 @@ timing=main
 
 >Giant Octopus
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Octopus
@@ -1326,7 +1326,7 @@ timing=main
 
 >Giant Scorpion
 cube=all
-value=1
+value=2
 ability=deathtouch
 rarity=1
 type=Creature
@@ -1368,7 +1368,7 @@ timing=main
 
 >Giant Warthog
 cube=all
-value=1
+value=4
 ability=trample
 rarity=1
 type=Creature
@@ -1396,7 +1396,7 @@ timing=smain
 
 >Glass Golem
 cube=all
-value=2
+value=3
 rarity=2
 type=Artifact,Creature
 subtype=Golem
@@ -1408,7 +1408,7 @@ timing=main
 
 >Gloomhunter
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -1435,7 +1435,7 @@ timing=main
 
 >Gluttonous Zombie
 cube=all
-value=2
+value=4
 ability=fear
 rarity=2
 type=Creature
@@ -1449,7 +1449,7 @@ timing=main
 
 >Gnarled Mass
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Spirit
@@ -1476,7 +1476,7 @@ timing=main
 
 >Goblin Chariot
 cube=all
-value=1
+value=2
 ability=haste
 rarity=1
 type=Creature
@@ -1518,7 +1518,7 @@ timing=main
 
 >Goblin Outlander
 cube=all
-value=1
+value=2
 ability=protection from white
 rarity=1
 type=Creature
@@ -1559,7 +1559,7 @@ timing=fmain
 
 >Goblin Roughrider
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Goblin,Knight
@@ -1572,7 +1572,7 @@ timing=main
 
 >Goblin Sky Raider
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -1586,7 +1586,7 @@ timing=main
 
 >Goblin Spelunkers
 cube=all
-value=1
+value=2
 ability=mountainwalk
 rarity=1
 type=Creature
@@ -1614,7 +1614,7 @@ timing=fmain
 
 >Goliath Spider
 cube=all
-value=2
+value=4
 ability=reach
 rarity=2
 type=Creature
@@ -1642,7 +1642,7 @@ timing=main
 
 >Gravelgill Axeshark
 cube=all
-value=1
+value=3
 ability=persist
 rarity=1
 type=Creature
@@ -1670,7 +1670,7 @@ timing=main
 
 >Greater Basilisk
 cube=all
-value=1
+value=4
 ability=deathtouch
 rarity=1
 type=Creature
@@ -1684,7 +1684,7 @@ timing=main
 
 >Griffin Sentinel
 cube=all
-value=1
+value=2
 ability=flying,vigilance
 rarity=1
 type=Creature
@@ -1698,7 +1698,7 @@ timing=main
 
 >Grizzled Leotau
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Cat
@@ -1724,7 +1724,7 @@ timing=main
 
 >Guardians of Akrasa
 cube=all
-value=1
+value=2
 ability=defender,exalted
 rarity=1
 type=Creature
@@ -1738,7 +1738,7 @@ timing=smain
 
 >Halberdier
 cube=all
-value=1
+value=3
 ability=first strike
 rarity=1
 type=Creature
@@ -1752,7 +1752,7 @@ timing=main
 
 >Harvest Gwyllion
 cube=all
-value=1
+value=2
 ability=wither
 rarity=1
 type=Creature
@@ -1766,7 +1766,7 @@ timing=main
 
 >Havenwood Wurm
 cube=all
-value=1
+value=4
 ability=flash,trample
 rarity=1
 type=Creature
@@ -1780,7 +1780,7 @@ timing=main
 
 >Hill Giant
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Giant
@@ -1793,7 +1793,7 @@ timing=main
 
 >Hillcomber Giant
 cube=all
-value=1
+value=3
 ability=mountainwalk
 rarity=1
 type=Creature
@@ -1807,7 +1807,7 @@ timing=main
 
 >Hobgoblin Dragoon
 cube=all
-value=1
+value=3
 ability=flying,first strike
 rarity=1
 type=Creature
@@ -1821,7 +1821,7 @@ timing=main
 
 >Horned Turtle
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Turtle
@@ -1834,7 +1834,7 @@ timing=main
 
 >Hoverguard Observer
 cube=all
-value=2
+value=3
 ability=flying,can't block creatures without flying
 rarity=2
 type=Creature
@@ -1848,7 +1848,7 @@ timing=fmain
 
 >Hulking Cyclops
 cube=all
-value=2
+value=4
 ability=can't block
 rarity=2
 type=Creature
@@ -1876,7 +1876,7 @@ timing=fmain
 
 >Incurable Ogre
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Ogre,Mutant
@@ -1889,7 +1889,7 @@ timing=main
 
 >Indomitable Ancients
 cube=all
-value=3
+value=4
 rarity=3
 type=Creature
 subtype=Treefolk,Warrior
@@ -1902,7 +1902,7 @@ timing=main
 
 >Inkwell Leviathan
 cube=all
-value=3
+value=5
 ability=islandwalk,trample,shroud
 rarity=3
 type=Artifact,Creature
@@ -1916,7 +1916,7 @@ timing=fmain
 
 >Iron-Barb Hellion
 cube=all
-value=2
+value=4
 ability=haste,can't block
 rarity=2
 type=Creature
@@ -1943,7 +1943,7 @@ timing=main
 
 >Jagwasp Swarm
 cube=all
-value=1
+value=3
 ability=flying
 rarity=1
 type=Creature
@@ -1984,7 +1984,7 @@ timing=main
 
 >Juvenile Gloomwidow
 cube=all
-value=1
+value=2
 ability=reach,wither
 rarity=1
 type=Creature
@@ -1998,7 +1998,7 @@ timing=main
 
 >Jwari Scuttler
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Crab
@@ -2011,7 +2011,7 @@ timing=main
 
 >Kami of Old Stone
 cube=all
-value=2
+value=3
 rarity=2
 type=Creature
 subtype=Spirit
@@ -2024,7 +2024,7 @@ timing=main
 
 >Kelinore Bat
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -2038,7 +2038,7 @@ timing=main
 
 >King Cheetah
 cube=all
-value=2
+value=3
 ability=flash
 rarity=2
 type=Creature
@@ -2065,7 +2065,7 @@ timing=main
 
 >Kodama of the North Tree
 cube=all
-value=3
+value=5
 ability=trample,shroud
 rarity=3
 type=Legendary,Creature
@@ -2079,7 +2079,7 @@ timing=fmain
 
 >Kraken Hatchling
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Kraken
@@ -2092,7 +2092,7 @@ timing=main
 
 >Lagac Lizard
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Lizard
@@ -2105,7 +2105,7 @@ timing=main
 
 >Lantern Kami
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -2119,7 +2119,7 @@ timing=main
 
 >Leaf Dancer
 cube=all
-value=1
+value=2
 ability=forestwalk
 rarity=1
 type=Creature
@@ -2133,7 +2133,7 @@ timing=main
 
 >Leatherback Baloth
 cube=all
-value=2
+value=4
 rarity=2
 type=Creature
 subtype=Beast
@@ -2146,7 +2146,7 @@ timing=main
 
 >Leonin Skyhunter
 cube=all
-value=2
+value=3
 ability=flying
 rarity=2
 type=Creature
@@ -2160,7 +2160,7 @@ timing=main
 
 >Lightning Elemental
 cube=all
-value=1
+value=2
 ability=haste
 rarity=1
 type=Creature
@@ -2174,7 +2174,7 @@ timing=fmain
 
 >Llanowar Knight
 cube=all
-value=1
+value=2
 ability=protection from black
 rarity=1
 type=Creature
@@ -2188,8 +2188,8 @@ timing=main
 
 >Loamdragger Giant
 cube=all
-value=1
-rarity=1
+value=4
+rarity=2
 type=Creature
 subtype=Giant,Warrior
 color=rg
@@ -2215,7 +2215,7 @@ timing=main
 
 >Loxodon Wayfarer
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Elephant,Monk
@@ -2241,7 +2241,7 @@ timing=main
 
 >Mahamoti Djinn
 cube=all
-value=3
+value=5
 ability=flying
 rarity=3
 type=Creature
@@ -2255,7 +2255,7 @@ timing=main
 
 >Makindi Griffin
 cube=all
-value=1
+value=3
 ability=flying
 rarity=1
 type=Creature
@@ -2296,7 +2296,7 @@ timing=main
 
 >Mass of Ghouls
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Zombie,Warrior
@@ -2322,7 +2322,7 @@ timing=main
 
 >Mist Leopard
 cube=all
-value=1
+value=3
 ability=shroud
 rarity=1
 type=Creature
@@ -2350,7 +2350,7 @@ timing=main
 
 >Moonglove Winnower
 cube=all
-value=1
+value=3
 ability=deathtouch
 rarity=1
 type=Creature
@@ -2364,7 +2364,7 @@ timing=main
 
 >Moriok Reaver
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Human,Warrior
@@ -2377,7 +2377,7 @@ timing=main
 
 >Moss Kami
 cube=all
-value=1
+value=4
 ability=trample
 rarity=1
 type=Creature
@@ -2391,7 +2391,7 @@ timing=main
 
 >Moss Monster
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Elemental
@@ -2404,7 +2404,7 @@ timing=main
 
 >Mourning Thrull
 cube=all
-value=1
+value=2
 ability=flying,lifelink
 rarity=1
 type=Creature
@@ -2418,7 +2418,7 @@ timing=main
 
 >Nacatl Outlander
 cube=all
-value=1
+value=2
 ability=protection from blue
 rarity=1
 type=Creature
@@ -2432,7 +2432,7 @@ timing=main
 
 >Needlepeak Spider
 cube=all
-value=1
+value=3
 ability=reach
 rarity=1
 type=Creature
@@ -2446,7 +2446,7 @@ timing=main
 
 >Needleshot Gourna
 cube=all
-value=1
+value=4
 ability=reach
 rarity=1
 type=Creature
@@ -2460,7 +2460,7 @@ timing=main
 
 >Nema Siltlurker
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Lizard
@@ -2473,7 +2473,7 @@ timing=main
 
 >Nessian Courser
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Centaur,Warrior
@@ -2486,7 +2486,7 @@ timing=main
 
 >Nether Horror
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Horror
@@ -2499,7 +2499,7 @@ timing=main
 
 >Nezumi Cutthroat
 cube=all
-value=1
+value=2
 ability=fear,can't block
 rarity=1
 type=Creature
@@ -2513,7 +2513,7 @@ timing=fmain
 
 >Nightguard Patrol
 cube=all
-value=1
+value=2
 ability=first strike,vigilance
 rarity=1
 type=Creature
@@ -2568,7 +2568,7 @@ timing=main
 
 >Oakgnarl Warrior
 cube=all
-value=1
+value=4
 ability=vigilance,trample
 rarity=1
 type=Creature
@@ -2582,7 +2582,7 @@ timing=main
 
 >Ogre Sentry
 cube=all
-value=1
+value=2
 ability=defender
 rarity=1
 type=Creature
@@ -2596,7 +2596,7 @@ timing=smain
 
 >Ogre Taskmaster
 cube=all
-value=2
+value=3
 ability=can't block
 rarity=2
 type=Creature
@@ -2610,7 +2610,7 @@ timing=fmain
 
 >Old Ghastbark
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Treefolk,Warrior
@@ -2649,7 +2649,7 @@ timing=smain
 
 >Order of the Sacred Bell
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Human,Monk
@@ -2675,7 +2675,7 @@ timing=main
 
 >Outrider of Jhess
 cube=all
-value=1
+value=3
 ability=exalted
 rarity=1
 type=Creature
@@ -2689,7 +2689,7 @@ timing=main
 
 >Pegasus Charger
 cube=all
-value=1
+value=2
 ability=flying,first strike
 rarity=1
 type=Creature
@@ -2717,7 +2717,7 @@ timing=main
 
 >Phyrexian Hulk
 cube=all
-value=2
+value=4
 rarity=2
 type=Artifact,Creature
 subtype=Golem
@@ -2729,7 +2729,7 @@ timing=main
 
 >Pillarfield Ox
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Ox
@@ -2742,7 +2742,7 @@ timing=main
 
 >Pincher Beetles
 cube=all
-value=1
+value=2
 ability=shroud
 rarity=1
 type=Creature
@@ -2770,7 +2770,7 @@ timing=main
 
 >Plasma Elemental
 cube=all
-value=2
+value=4
 ability=unblockable
 rarity=2
 type=Creature
@@ -2784,7 +2784,7 @@ timing=main
 
 >Plated Seastrider
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Beast
@@ -2797,7 +2797,7 @@ timing=main
 
 >Plover Knights
 cube=all
-value=1
+value=4
 ability=flying,first strike
 rarity=1
 type=Creature
@@ -2839,7 +2839,7 @@ timing=fmain
 
 >Razorfoot Griffin
 cube=all
-value=1
+value=3
 ability=flying,first strike
 rarity=1
 type=Creature
@@ -2853,7 +2853,7 @@ timing=main
 
 >Razortooth Rats
 cube=all
-value=1
+value=2
 ability=fear
 rarity=1
 type=Creature
@@ -2867,7 +2867,7 @@ timing=main
 
 >Redwood Treefolk
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Treefolk
@@ -2880,7 +2880,7 @@ timing=main
 
 >Rhox Brute
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Rhino,Warrior
@@ -2893,7 +2893,7 @@ timing=main
 
 >Ridgetop Raptor
 cube=all
-value=2
+value=3
 ability=double strike
 rarity=2
 type=Creature
@@ -2907,7 +2907,7 @@ timing=main
 
 >Rip-Clan Crasher
 cube=all
-value=1
+value=2
 ability=haste
 rarity=1
 type=Creature
@@ -2921,7 +2921,7 @@ timing=fmain
 
 >River Bear
 cube=all
-value=2
+value=3
 ability=islandwalk
 rarity=2
 type=Creature
@@ -2935,7 +2935,7 @@ timing=main
 
 >River Kaijin
 cube=all
-value=1
+value=2
 rarity=1
 type=Creature
 subtype=Spirit
@@ -2950,7 +2950,7 @@ timing=main
 cube=all
 value=2
 ability=mountainwalk
-rarity=2
+rarity=3
 type=Creature
 subtype=Badger,Beast
 color=r
@@ -2962,7 +2962,7 @@ timing=main
 
 >Rootbreaker Wurm
 cube=all
-value=2
+value=4
 ability=trample
 rarity=2
 type=Creature
@@ -2976,7 +2976,7 @@ timing=main
 
 >Rootwater Commando
 cube=all
-value=1
+value=2
 ability=islandwalk
 rarity=1
 type=Creature
@@ -3031,7 +3031,7 @@ timing=main
 
 >Scaled Wurm
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Wurm
@@ -3057,7 +3057,7 @@ timing=main
 
 >Scavenging Scarab
 cube=all
-value=1
+value=2
 ability=can't block
 rarity=1
 type=Creature
@@ -3071,7 +3071,7 @@ timing=fmain
 
 >Scoria Elemental
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Elemental
@@ -3098,7 +3098,7 @@ timing=main
 
 >Sentinels of Glen Elendra
 cube=all
-value=1
+value=3
 ability=flash,flying
 rarity=1
 type=Creature
@@ -3112,7 +3112,7 @@ timing=main
 
 >Severed Legion
 cube=all
-value=1
+value=2
 ability=fear
 rarity=1
 type=Creature
@@ -3126,7 +3126,7 @@ timing=main
 
 >Sewn-Eye Drake
 cube=all
-value=1
+value=3
 ability=flying,haste
 rarity=1
 type=Creature
@@ -3154,7 +3154,7 @@ timing=main
 
 >Shatterskull Giant
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Giant,Warrior
@@ -3167,7 +3167,7 @@ timing=main
 
 >Shepherd of the Lost
 cube=all
-value=2
+value=4
 ability=flying,first strike,vigilance
 rarity=2
 type=Creature
@@ -3183,7 +3183,7 @@ timing=main
 cube=all
 value=1
 ability=protection from white
-rarity=1
+rarity=2
 type=Creature
 subtype=Barbarian,Zombie
 color=rb
@@ -3195,7 +3195,7 @@ timing=main
 
 >Siege Mastodon
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Elephant
@@ -3208,7 +3208,7 @@ timing=main
 
 >Sigiled Behemoth
 cube=all
-value=1
+value=4
 ability=exalted
 rarity=1
 type=Creature
@@ -3222,7 +3222,7 @@ timing=main
 
 >Silver Knight
 cube=all
-value=2
+value=3
 ability=first strike,protection from red
 rarity=2
 type=Creature
@@ -3236,7 +3236,7 @@ timing=main
 
 >Silverback Ape
 cube=all
-value=2
+value=4
 rarity=2
 type=Creature
 subtype=Ape
@@ -3262,7 +3262,7 @@ timing=main
 
 >Sky Ruin Drake
 cube=all
-value=1
+value=3
 ability=flying
 rarity=1
 type=Creature
@@ -3276,7 +3276,7 @@ timing=main
 
 >Skyknight Legionnaire
 cube=all
-value=1
+value=3
 ability=flying,haste
 rarity=1
 type=Creature
@@ -3290,7 +3290,7 @@ timing=fmain
 
 >Skyshroud Falcon
 cube=all
-value=1
+value=2
 ability=flying,vigilance
 rarity=1
 type=Creature
@@ -3304,7 +3304,7 @@ timing=main
 
 >Slinking Serpent
 cube=all
-value=2
+value=3
 ability=forestwalk
 rarity=2
 type=Creature
@@ -3318,7 +3318,7 @@ timing=main
 
 >Snapping Drake
 cube=all
-value=1
+value=3
 ability=flying
 rarity=1
 type=Creature
@@ -3332,7 +3332,7 @@ timing=main
 
 >Sokenzan Bruiser
 cube=all
-value=1
+value=3
 ability=mountainwalk
 rarity=1
 type=Creature
@@ -3346,7 +3346,7 @@ timing=main
 
 >Soulbound Guardians
 cube=all
-value=2
+value=3
 ability=defender,flying
 rarity=2
 type=Creature
@@ -3360,7 +3360,7 @@ timing=smain
 
 >Spined Wurm
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Wurm
@@ -3387,7 +3387,7 @@ timing=fmain
 
 >Sporecap Spider
 cube=all
-value=1
+value=2
 ability=reach
 rarity=1
 type=Creature
@@ -3401,7 +3401,7 @@ timing=main
 
 >Stampeding Rhino
 cube=all
-value=1
+value=4
 ability=trample
 rarity=1
 type=Creature
@@ -3415,7 +3415,7 @@ timing=main
 
 >Standing Troops
 cube=all
-value=1
+value=2
 ability=vigilance
 rarity=1
 type=Creature
@@ -3429,7 +3429,7 @@ timing=main
 
 >Steadfast Guard
 cube=all
-value=1
+value=2
 ability=vigilance
 rarity=1
 type=Creature
@@ -3443,7 +3443,7 @@ timing=main
 
 >Stomper Cub
 cube=all
-value=1
+value=4
 ability=trample
 rarity=1
 type=Creature
@@ -3457,7 +3457,7 @@ timing=main
 
 >Stone Golem
 cube=all
-value=2
+value=4
 rarity=2
 type=Artifact,Creature
 subtype=Golem
@@ -3495,7 +3495,7 @@ timing=main
 
 >Stratozeppelid
 cube=all
-value=2
+value=4
 ability=flying,can't block creatures without flying
 rarity=2
 type=Creature
@@ -3509,7 +3509,7 @@ timing=fmain
 
 >Streetbreaker Wurm
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Wurm
@@ -3522,7 +3522,7 @@ timing=main
 
 >Suntail Hawk
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -3536,7 +3536,7 @@ timing=main
 
 >Talon Trooper
 cube=all
-value=1
+value=3
 ability=flying
 rarity=1
 type=Creature
@@ -3550,7 +3550,7 @@ timing=main
 
 >Tangle Spider
 cube=all
-value=2
+value=3
 ability=flash,reach
 rarity=2
 type=Creature
@@ -3564,7 +3564,7 @@ timing=main
 
 >Thornweald Archer
 cube=all
-value=1
+value=2
 ability=reach,deathtouch
 rarity=1
 type=Creature
@@ -3578,7 +3578,7 @@ timing=main
 
 >Thundering Giant
 cube=all
-value=2
+value=3
 ability=haste
 rarity=2
 type=Creature
@@ -3592,7 +3592,7 @@ timing=fmain
 
 >Tidal Kraken
 cube=all
-value=3
+value=5
 ability=unblockable
 rarity=3
 type=Creature
@@ -3606,7 +3606,7 @@ timing=main
 
 >Tower Gargoyle
 cube=all
-value=2
+value=4
 ability=flying
 rarity=2
 type=Artifact,Creature
@@ -3620,7 +3620,7 @@ timing=main
 
 >Trained Armodon
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Elephant
@@ -3633,7 +3633,7 @@ timing=main
 
 >Trained Orgg
 cube=all
-value=3
+value=4
 rarity=3
 type=Creature
 subtype=Orgg
@@ -3646,7 +3646,7 @@ timing=main
 
 >Trapjaw Kelpie
 cube=all
-value=1
+value=4
 ability=flash,persist
 rarity=1
 type=Creature
@@ -3688,7 +3688,7 @@ timing=main
 
 >Treetop Sentinel
 cube=all
-value=2
+value=3
 ability=flying,protection from green
 rarity=2
 type=Creature
@@ -3730,7 +3730,7 @@ timing=main
 
 >Valeron Outlander
 cube=all
-value=1
+value=2
 ability=protection from black
 rarity=1
 type=Creature
@@ -3757,7 +3757,7 @@ timing=main
 
 >Vastwood Gorger
 cube=all
-value=1
+value=4
 rarity=1
 type=Creature
 subtype=Wurm
@@ -3798,7 +3798,7 @@ timing=main
 
 >Vizzerdrix
 cube=all
-value=3
+value=4
 rarity=3
 type=Creature
 subtype=Rabbit,Beast
@@ -3811,7 +3811,7 @@ timing=main
 
 >Vodalian Zombie
 cube=all
-value=1
+value=2
 ability=protection from green
 rarity=1
 type=Creature
@@ -3825,7 +3825,7 @@ timing=main
 
 >Vulshok Berserker
 cube=all
-value=1
+value=3
 ability=haste
 rarity=1
 type=Creature
@@ -3839,7 +3839,7 @@ timing=fmain
 
 >Wall of Air
 cube=all
-value=2
+value=3
 ability=defender,flying
 rarity=2
 type=Creature
@@ -3880,7 +3880,7 @@ timing=smain
 
 >Wall of Swords
 cube=all
-value=2
+value=3
 ability=defender,flying
 rarity=2
 type=Creature
@@ -3935,7 +3935,7 @@ timing=main
 
 >Warpath Ghoul
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Zombie
@@ -3948,7 +3948,7 @@ timing=main
 
 >Waveskimmer Aven
 cube=all
-value=1
+value=3
 ability=flying,exalted
 rarity=1
 type=Creature
@@ -3962,7 +3962,7 @@ timing=main
 
 >Wild Griffin
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -3976,7 +3976,7 @@ timing=main
 
 >Wind Drake
 cube=all
-value=1
+value=2
 ability=flying
 rarity=1
 type=Creature
@@ -4017,7 +4017,7 @@ timing=main
 
 >Yavimaya Barbarian
 cube=all
-value=1
+value=2
 ability=protection from blue
 rarity=1
 type=Creature
@@ -4031,7 +4031,7 @@ timing=main
 
 >Yavimaya Wurm
 cube=all
-value=1
+value=4
 ability=trample
 rarity=1
 type=Creature
@@ -4045,7 +4045,7 @@ timing=main
 
 >Yotian Soldier
 cube=all
-value=1
+value=2
 ability=vigilance
 rarity=1
 type=Artifact,Creature
@@ -4058,7 +4058,7 @@ timing=main
 
 >Youthful Knight
 cube=all
-value=1
+value=2
 ability=first strike
 rarity=1
 type=Creature
@@ -4086,7 +4086,7 @@ timing=main
 
 >Zendikar Farguide
 cube=all
-value=1
+value=3
 ability=forestwalk
 rarity=1
 type=Creature
@@ -4114,7 +4114,7 @@ timing=main
 
 >Zombie Goliath
 cube=all
-value=1
+value=3
 rarity=1
 type=Creature
 subtype=Zombie,Giant
@@ -4127,7 +4127,7 @@ timing=main
 
 >Zombie Outlander
 cube=all
-value=1
+value=2
 ability=protection from green
 rarity=1
 type=Creature
@@ -4155,7 +4155,7 @@ timing=fmain
 
 >Loxodon Partisan
 cube=all
-value=2
+value=3
 rarity=1
 type=Creature
 subtype=Elephant,Soldier
@@ -4169,7 +4169,7 @@ timing=main
 
 >Glissa's Courier
 cube=all
-value=2
+value=3
 rarity=1
 type=Creature
 subtype=Horror
@@ -4239,7 +4239,7 @@ timing=main
 
 >Cystbearer
 cube=all
-value=2
+value=3
 ability=infect
 rarity=1
 type=Creature
@@ -4294,7 +4294,7 @@ timing=fmain
 
 >Wildslayer Elves
 cube=all
-value=1
+value=3
 ability=wither
 rarity=1
 type=Creature
@@ -4304,4 +4304,87 @@ converted=4
 cost={3}{G}
 power=3
 toughness=3
+timing=main
+
+>Kuldotha Ringleader
+cube=all
+value=4
+ability=battle cry,attacks each turn if able
+rarity=2
+type=Creature
+subtype=Giant,Berserker
+color=r
+converted=5
+cost={4}{R}
+power=4
+toughness=4
+timing=fmain
+
+>Lumengrid Gargoyle
+cube=all
+value=4
+ability=flying
+rarity=2
+type=Artifact,Creature
+subtype=Gargoyle
+converted=6
+cost={6}
+power=4
+toughness=4
+timing=main
+
+>Oversoul of Dusk
+cube=all
+value=5
+rarity=3
+type=Creature
+subtype=Spirit,Avatar
+color=gw
+converted=5
+cost={G/W}{G/W}{G/W}{G/W}{G/W}
+power=5
+toughness=5
+ability=protection from blue,protection from black,protection from red
+timing=fmain
+
+>Tine Shrike
+cube=all
+value=3
+ability=flying,infect
+rarity=2
+type=Creature
+subtype=Bird
+color=w
+converted=4
+cost={3}{W}
+power=2
+toughness=1
+timing=main
+
+>Scourge Servant
+cube=all
+value=3
+ability=infect
+rarity=1
+type=Creature
+subtype=Zombie
+color=b
+converted=5
+cost={4}{B}
+power=3
+toughness=3
+timing=main
+
+>Tangle Mantis
+cube=all
+value=3
+ability=trample
+rarity=1
+type=Creature
+subtype=Insect
+color=g
+converted=4
+cost={2}{G}{G}
+power=3
+toughness=4
 timing=main

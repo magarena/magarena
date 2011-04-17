@@ -6997,3 +6997,43 @@ cost={R/W}{R/W}{R/W}
 power=2
 toughness=2
 timing=main
+
+>Phyrexian Rager
+cube=default
+value=3
+rarity=2
+type=Creature
+subtype=Horror
+color=b
+converted=3
+cost={2}{B}
+power=2
+toughness=2
+timing=fmain
+
+>Plague Myr
+cube=default
+value=2
+rarity=2
+type=Artifact,Creature
+subtype=Myr
+converted=2
+cost={2}
+power=1
+toughness=1
+ability=infect
+timing=smain
+
+>Shivan Dragon
+cube=default
+value=5
+rarity=3
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+power=5
+toughness=5
+ability=flying
+timing=main

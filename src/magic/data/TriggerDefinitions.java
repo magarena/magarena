@@ -1697,7 +1697,7 @@ public class TriggerDefinitions {
 			}
 		}
     };
-    
+        
     private static final MagicTrigger NEMESIS_OF_REASON=new MagicTrigger(MagicTriggerType.WhenAttacks,"Nemesis of Reason") {
 
 		@Override
@@ -1884,6 +1884,24 @@ public class TriggerDefinitions {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 		
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+		}
+    };
+    
+    private static final MagicTrigger PHYREXIAN_RAGER=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Phyrexian Rager") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw a card and you lose 1 life.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=(MagicPlayer)data[0];
+			game.doAction(new MagicDrawAction(player,1));
+			game.doAction(new MagicChangeLifeAction(player,-1));
 		}
     };
     
@@ -3997,6 +4015,7 @@ public class TriggerDefinitions {
 	    PERILOUS_MYR,
 	    PERIMETER_CAPTAIN,
 	    OROS_THE_AVENGER,
+	    PHYREXIAN_RAGER,
 	    PHYREXIAN_VATMOTHER,
 	    PIERCE_STRIDER,
 	    PREDATOR_DRAGON,
