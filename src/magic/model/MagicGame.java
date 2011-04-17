@@ -399,14 +399,6 @@ public class MagicGame {
 	}
 	
 	public void createUndoPoint() {
-
-		if (undoPoints.size()==GeneralConfig.getInstance().getUndoLevels()) {
-			final MagicAction firstMarkerAction=undoPoints.removeFirst();
-			while (actions.getFirst()!=firstMarkerAction) {
-				
-				actions.removeFirst();
-			}
-		}		
 		
 		final MagicAction markerAction=new MagicMarkerAction();
 		doAction(markerAction);

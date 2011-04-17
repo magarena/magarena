@@ -2,20 +2,12 @@ package magic.ui.theme;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-import magic.MagicMain;
+import magic.data.AvatarImages;
 import magic.data.IconImages;
 import magic.ui.widget.FontsAndBorders;
 
@@ -23,15 +15,11 @@ public abstract class AbstractTheme implements Theme {
 
 	private final String name;
 	private final Map<String,Object> themeMap;
-	private final List<File> avatarFiles;
-	private final PlayerAvatar avatars[];
 	
 	public AbstractTheme(final String name) {
 		
 		this.name=name;
 		themeMap=new HashMap<String,Object>();
-		avatarFiles=new ArrayList<File>();
-		avatars=loadAvatars(avatarFiles);
 		
 		addToTheme(TEXTURE_LOGO,null);
 		
@@ -140,47 +128,16 @@ public abstract class AbstractTheme implements Theme {
 		final Object value=themeMap.get(name);
 		return value==null?0:(Integer)value;
 	}
-
-	private PlayerAvatar[] loadAvatars(final List<File> avatarFiles) {
-
-		final File files[]=new File(MagicMain.getGamePath()+File.separator+"avatars/classic").listFiles();
-		if (files==null||files.length<2) {
-			avatarFiles.add(new File("unknown"));
-			avatarFiles.add(new File("unknown"));
-		} else {
-			avatarFiles.addAll(Arrays.asList(files));
-		}
-		Collections.sort(avatarFiles);
-		return new PlayerAvatar[avatarFiles.size()];
-	}
 	
 	@Override
 	public int getNumberOfAvatars() {
 
-		return avatars.length;
+		return AvatarImages.getInstance().getNumberOfAvatars();
 	}
 
 	@Override
-	public synchronized ImageIcon getAvatarIcon(int index,final int size) {
+	public ImageIcon getAvatarIcon(int index,final int size) {
 
-		if (index<0) {
-			index=0;
-		} else if (index>=avatars.length) {
-			index%=avatars.length;
-		}
-		PlayerAvatar avatar=avatars[index];
-		if (avatar==null) {
-			BufferedImage image;
-			try {
-				final InputStream stream=new FileInputStream(avatarFiles.get(index));
-				image=ImageIO.read(stream);	
-				stream.close();
-			} catch (final Exception ex) {
-				image=IconImages.MISSING;
-			}		
-			avatar=new PlayerAvatar(image);
-			avatars[index]=avatar;
-		}
-		return avatar.getIcon(index,size);
+		return AvatarImages.getInstance().getAvatarIcon(index,size);		
 	}
 }

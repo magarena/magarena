@@ -70,7 +70,6 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 		actionPanel.add(actionButton,"2");
 
 		undoButton=new JButton(IconImages.UNDO);
-		undoButton.setFont(FontsAndBorders.FONT0);
 		undoButton.setMargin(new Insets(1,1,1,1));
 		undoButton.setIconTextGap(2);
 		undoButton.setEnabled(false);
@@ -158,11 +157,6 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 		final int undoPoints=game.getNrOfUndoPoints();
 		final boolean allowUndo=undoPoints>0&&!thinking;
 		undoButton.setEnabled(allowUndo);
-		if (undoButton.isEnabled()) {
-			undoButton.setText(String.valueOf(undoPoints));
-		} else {
-			undoButton.setText("");
-		}
 	}
 	
 	public void enableButton(final ImageIcon icon) {

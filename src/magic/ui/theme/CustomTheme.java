@@ -50,7 +50,7 @@ public class CustomTheme extends AbstractTheme {
 		if (nrOfAvatars==0) {
 			return super.getAvatarIcon(index, size);
 		}
-		return playerAvatars[index%nrOfAvatars].getIcon(index,size);
+		return playerAvatars[index%nrOfAvatars].getIcon(size);
 	}
 
 	private void parseEntry(final String key,final String value) {
