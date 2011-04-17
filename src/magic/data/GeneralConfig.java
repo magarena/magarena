@@ -51,7 +51,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_POPUP_DELAY=300;
 	private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
 	private static final int DEFAULT_STRENGTH_GAMES=123;
-	private static final boolean DEFAULT_HIGH_QUALITY=false;
+	private static final boolean DEFAULT_HIGH_QUALITY=true;
 
 	private int left=DEFAULT_LEFT;
 	private int top=DEFAULT_TOP;
