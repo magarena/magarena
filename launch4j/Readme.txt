@@ -38,7 +38,6 @@ Release 1.12 (April 17, 2011)
 - added selectable avatar sets in preferences, separate from theme
 - added unlimited undo support 
 - added "Reset game" in menu, undoing all moves
-- added counter for number of games played in startup screen
 - added M key as additional shortcut for messages
 
 Release 1.11 (April 11, 2011)

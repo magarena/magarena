@@ -44,6 +44,7 @@ public class GameController {
 	private boolean undoClicked=false;
 	private boolean actionClicked=false;
 	private boolean combatChoice=false;
+	private boolean resetGame=false;
 	private Object choiceClicked=null;
 	private MagicCardDefinition sourceCardDefinition;
 	
@@ -359,11 +360,19 @@ public class GameController {
 				return;
 			}
 			if (choiceResults==MagicChoice.UNDO_CHOICE_RESULTS) {
-				game.gotoLastUndoPoint();
+				performUndo();
 				return;
 			}
 		}
 		game.executeNextEvent(choiceResults);
+	}
+	
+	public synchronized void resetGame() {
+		
+		if (game.hasUndoPoints()) {
+			resetGame=true;
+			undoClicked();
+		}
 	}
 	
 	public synchronized void concede() {
@@ -374,6 +383,19 @@ public class GameController {
 			gameConceded=true;
 			undoClicked=true;
 			notifyAll();
+		}
+	}
+	
+	public void performUndo() {
+		
+		if (resetGame) {
+			resetGame=false;
+			while (game.hasUndoPoints()) {
+				
+				game.gotoLastUndoPoint();
+			}
+		} else {
+			game.gotoLastUndoPoint();
 		}
 	}
 
@@ -400,7 +422,7 @@ public class GameController {
 				showMessage(null,"{L} "+game.getLosingPlayer()+" "+(gameConceded?"conceded":"lost")+" the game.|Press {f} to continue.");
 				enableForwardButton();
 				if (waitForInputOrUndo()) {
-					game.gotoLastUndoPoint();
+					performUndo();
 					update();
 					continue;
 				} else {

@@ -39,6 +39,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String SAVE_DECK_ITEM="SaveDeck";
 	private static final String SWAP_DECKS_ITEM="Swap";
 	private static final String PLAY_GAME_ITEM="Play";
+	private static final String RESET_GAME_ITEM="Reset";
 	private static final String CONCEDE_GAME_ITEM="Concede";
 	private static final String CARD_EXPLORER_ITEM="Explorer";
 	private static final String KEYWORDS_ITEM="Keywords";
@@ -55,6 +56,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem saveDeckItem;
 	private JMenuItem swapDecksItem;
 	private JMenuItem playGameItem;
+	private JMenuItem resetGameItem;
 	private JMenuItem concedeGameItem;
 	private JMenuItem preferencesItem;
 	private JMenuItem quitItem;
@@ -127,13 +129,15 @@ public class MagicFrame extends JFrame implements ActionListener {
 			swapDecksItem.setEnabled(enabled);
 		} else if (PLAY_GAME_ITEM.equals(item)) {
 			playGameItem.setEnabled(enabled);
+		} else if (RESET_GAME_ITEM.equals(item)) {
+			resetGameItem.setEnabled(enabled);
 		} else if (CONCEDE_GAME_ITEM.equals(item)) {
 			concedeGameItem.setEnabled(enabled);
 		} else if (CARD_EXPLORER_ITEM.equals(item)) {
 			cardExplorerItem.setEnabled(enabled);
 		} else if (KEYWORDS_ITEM.equals(item)) {
 			keywordsItem.setEnabled(enabled);
-		} 
+		}
 	}
 	
 	private void setInitialContent() {
@@ -172,6 +176,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		enableMenuItem(SAVE_DECK_ITEM,false);
 		enableMenuItem(SWAP_DECKS_ITEM,false);
 		enableMenuItem(PLAY_GAME_ITEM,false);
+		enableMenuItem(RESET_GAME_ITEM,false);
 		enableMenuItem(CONCEDE_GAME_ITEM,false);
 		enableMenuItem(CARD_EXPLORER_ITEM,true);
 		enableMenuItem(KEYWORDS_ITEM,true);
@@ -222,6 +227,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 		playGameItem=new JMenuItem("Play game");
 		playGameItem.addActionListener(this);
 		tournamentMenu.add(playGameItem);
+		
+		resetGameItem=new JMenuItem("Reset game");
+		resetGameItem.addActionListener(this);
+		tournamentMenu.add(resetGameItem);
 		
 		concedeGameItem=new JMenuItem("Concede game");
 		concedeGameItem.addActionListener(this);
@@ -362,13 +371,20 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
+	public void resetGame() {
+		
+		if (gamePanel!=null) {
+			gamePanel.getController().resetGame();
+		}
+	}
+	
 	public void concedeGame() {
 		
 		if (gamePanel!=null) {
 			gamePanel.getController().concede();
 		}
 	}
-	
+		
 	public void nextGame() {
 
 		tournament.updateDifficulty();
@@ -383,6 +399,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		final GameLayeredPane gamePane=new GameLayeredPane(gamePanel,backgroundLabel);
 		setContent(gamePane);		
 		gamePanel.requestFocus();
+		enableMenuItem(RESET_GAME_ITEM,true);
 		enableMenuItem(CONCEDE_GAME_ITEM,true);
 	}
 		
@@ -443,6 +460,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			swapDecks();
 		} else if (source==playGameItem) {
 			nextGame();
+		} else if (source==resetGameItem) {
+			resetGame();
 		} else if (source==concedeGameItem) {
 			concedeGame();
 		} else if (source==preferencesItem) {
