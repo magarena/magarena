@@ -1094,19 +1094,6 @@ power=2
 toughness=1
 timing=main
 
->Elvish Warrior
-cube=all
-value=1
-rarity=1
-type=Creature
-subtype=Elf,Warrior
-color=g
-converted=2
-cost={G}{G}
-power=2
-toughness=3
-timing=main
-
 >Emerald Oryx
 cube=all
 value=1
@@ -1789,20 +1776,6 @@ converted=7
 cost={6}{G}
 power=5
 toughness=6
-timing=main
-
->Hearthfire Hobgoblin
-cube=all
-value=2
-ability=double strike
-rarity=2
-type=Creature
-subtype=Goblin,Soldier
-color=rw
-converted=3
-cost={R/W}{R/W}{R/W}
-power=2
-toughness=2
 timing=main
 
 >Hill Giant
@@ -3056,19 +3029,6 @@ power=2
 toughness=1
 timing=main
 
->Elite Vanguard
-cube=all
-value=3
-rarity=2
-type=Creature
-subtype=Human,Soldier
-color=w
-converted=1
-cost={W}
-power=2
-toughness=1
-timing=main
-
 >Scaled Wurm
 cube=all
 value=1
@@ -3119,20 +3079,6 @@ color=r
 converted=5
 cost={4}{R}
 power=6
-toughness=1
-timing=main
-
->Scuzzback Scrapper
-cube=all
-value=1
-ability=wither
-rarity=1
-type=Creature
-subtype=Goblin,Warrior
-color=rg
-converted=1
-cost={R/G}
-power=1
 toughness=1
 timing=main
 
@@ -3368,20 +3314,6 @@ converted=4
 cost={2}{U}{B}
 power=2
 toughness=3
-timing=main
-
->Smoldering Butcher
-cube=all
-value=1
-ability=wither
-rarity=1
-type=Creature
-subtype=Elemental,Warrior
-color=b
-converted=4
-cost={3}{B}
-power=4
-toughness=2
 timing=main
 
 >Snapping Drake
@@ -4014,20 +3946,6 @@ power=3
 toughness=2
 timing=main
 
->Wasp Lancer
-cube=all
-value=2
-ability=flying
-rarity=2
-type=Creature
-subtype=Faerie,Soldier
-color=bu
-converted=3
-cost={U/B}{U/B}{U/B}
-power=3
-toughness=2
-timing=main
-
 >Waveskimmer Aven
 cube=all
 value=1
@@ -4054,20 +3972,6 @@ converted=3
 cost={2}{W}
 power=2
 toughness=2
-timing=main
-
->Wildslayer Elves
-cube=all
-value=1
-ability=wither
-rarity=1
-type=Creature
-subtype=Elf,Warrior
-color=g
-converted=4
-cost={3}{G}
-power=3
-toughness=3
 timing=main
 
 >Wind Drake
@@ -4387,3 +4291,17 @@ cost={3}{B}
 power=2
 toughness=1
 timing=fmain
+
+>Wildslayer Elves
+cube=all
+value=1
+ability=wither
+rarity=1
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=4
+cost={3}{G}
+power=3
+toughness=3
+timing=main

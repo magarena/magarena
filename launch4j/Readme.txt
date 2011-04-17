@@ -3,6 +3,11 @@ Magarena Limited Edition by ubeefx
 
 Project page url : http://magarena.dyndns.org or http://code.google.com/p/arena-card-game/
 
+The Limited Edition needs a premade Magarena data folder that must be downloaded separately.
+The download comes as a password protected zip archive and the location can be found on the forum.
+This archive must be unzipped to the same folder as where this release is unzipped.
+The data folder is not fully compatible with the regular release of Magarena.
+
 There must be a Java Runtime 6 (java.com) installed on your computer to play.
 An executable is provided for Windows. To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
 
@@ -26,7 +31,7 @@ Thanks for your support and have fun!
 Release 1.12 (April 17, 2011)
 ============
 
-- default cube (560 cards)
+- default cube (567 cards)
 - all cube (888 cards)
 
 - modified game to work with a premade Magarena data folder

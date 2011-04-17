@@ -6915,3 +6915,85 @@ power=1
 toughness=2
 ability=protection from blue
 timing=main
+
+>Elite Vanguard
+cube=default
+value=3
+rarity=2
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+power=2
+toughness=1
+timing=main
+
+>Elvish Warrior
+cube=default
+value=3
+rarity=1
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=2
+cost={G}{G}
+power=2
+toughness=3
+timing=main
+
+>Scuzzback Scrapper
+cube=default
+value=1
+ability=wither
+rarity=1
+type=Creature
+subtype=Goblin,Warrior
+color=rg
+converted=1
+cost={R/G}
+power=1
+toughness=1
+timing=main
+
+>Smoldering Butcher
+cube=default
+value=3
+ability=wither
+rarity=1
+type=Creature
+subtype=Elemental,Warrior
+color=b
+converted=4
+cost={3}{B}
+power=4
+toughness=2
+timing=main
+
+>Wasp Lancer
+cube=default
+value=3
+ability=flying
+rarity=2
+type=Creature
+subtype=Faerie,Soldier
+color=bu
+converted=3
+cost={U/B}{U/B}{U/B}
+power=3
+toughness=2
+timing=main
+
+>Hearthfire Hobgoblin
+cube=default
+value=3
+ability=double strike
+rarity=2
+type=Creature
+subtype=Goblin,Soldier
+color=rw
+converted=3
+cost={R/W}{R/W}{R/W}
+power=2
+toughness=2
+timing=main

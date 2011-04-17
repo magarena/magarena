@@ -120,12 +120,12 @@ public class TestGameBuilder {
 		addToHand(opponent,"Zephyr Sprite",3);
 		addToHand(player,"Shivan Dragon",1);
 		addToHand(player,"Necrogen Scudder",1);
+		addToHand(player,"Plague Myr",1);
 		addToHand(player,"Tangle Mantis",1);
 		addToHand(player,"Lumengrid Gargoyle",1);
 		addToHand(player,"Scourge Servant",1);
 		addToHand(player,"Tine Shrike",1);
-		addToHand(player,"Ogre Resister",1);
-		addToHand(player,"Hexplate Golem",1);
+		addToHand(player,"Oversoul of Dusk",1);
 		addToHand(player,"Kuldotha Ringleader",1);
 						
 		createPermanent(game,player,"Raging Goblin",false,2);
