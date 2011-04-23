@@ -28,7 +28,7 @@ Thanks to singularita for creating the scripts to add over 300 additional creatu
 Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search AI.
 Thanks for your support and have fun!
 
-Release LE 1.13 (April 23, 2011)
+Release LE 1.13 (April 24, 2011)
 ===============
 
 - default cube (600 cards)

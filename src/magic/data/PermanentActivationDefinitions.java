@@ -398,6 +398,8 @@ public class PermanentActivationDefinitions {
 
 	private static final MagicPermanentActivation CHARGING_TROLL=new MagicRegenerationActivation("Charging Troll",MagicManaCost.GREEN);
 
+	private static final MagicPermanentActivation CUDGEL_TROLL=new MagicRegenerationActivation("Cudgel Troll",MagicManaCost.GREEN);
+	
 	private static final MagicPermanentActivation CUNNING_SPARKMAGE=new MagicPermanentActivation(
 			"Cunning Sparkmage",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
 
@@ -2189,6 +2191,28 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
+	private static final MagicPermanentActivation BATTERSKULL=new MagicPermanentActivation("Batterskull",
+			new MagicCondition[]{MagicManaCost.THREE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Return Batterskull to its owner's hand.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
+		}
+	};
+	
 	private static final MagicPermanentActivation BRITTLE_EFFIGY=new MagicPermanentActivation("Brittle Effigy",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
 
@@ -2625,6 +2649,7 @@ public class PermanentActivationDefinitions {
 		CINDER_ELEMENTAL,
 		CHAMELEON_COLOSSUS,
 		CHARGING_TROLL,
+		CUDGEL_TROLL,
 		CUNNING_SPARKMAGE,
 		CURSECATCHER,
 		DAUNTLESS_ESCORT,
@@ -2709,6 +2734,7 @@ public class PermanentActivationDefinitions {
 		RISE_OF_THE_HOBGOBLINS,
 		SEAL_OF_DOOM,
 		SEAL_OF_FIRE,
+		BATTERSKULL,
 		BRITTLE_EFFIGY,
 		CHIMERIC_MASS,
 		MIND_STONE,

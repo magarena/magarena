@@ -2826,6 +2826,8 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger BATTERSKULL=new MagicLivingWeaponTrigger("Batterskull");
+    
     private static final MagicTrigger FLAYER_HUSK=new MagicLivingWeaponTrigger("Flayer Husk");
     
     private static final MagicTrigger MAGE_SLAYER=new MagicTrigger(MagicTriggerType.WhenAttacks,"Mage Slayer",1) {
@@ -4061,6 +4063,7 @@ public class TriggerDefinitions {
 	    WORT_BOGGART_AUNTIE,
 	    WREXIAL_THE_RISEN_DEEP,
 	    WURMCOIL_ENGINE,
+	    BATTERSKULL,
 	    FLAYER_HUSK,
 	    MAGE_SLAYER,
 	    MASK_OF_MEMORY,
