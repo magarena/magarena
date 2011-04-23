@@ -34,8 +34,8 @@ Release LE 1.13 (April 23, 2011)
 - default cube (600 cards)
 - all cube (900 cards)
 
-- added "Save replay" to menu, useful for sharing game state when reporting issues
 - right mouse click on hand zone can now be used as a shortcut for action button
+- infect and wither abilities are also shown on cards with same icon as deathtouch
 
 Release LE 1.12 (April 17, 2011)
 ===============

@@ -68,7 +68,9 @@ public class ImageDrawingUtils {
 			g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,observer);
 			ax+=16;				
 		}
-		if (MagicAbility.Deathtouch.hasAbility(abilityFlags)) {
+		if (MagicAbility.Deathtouch.hasAbility(abilityFlags)||
+			MagicAbility.Wither.hasAbility(abilityFlags)||
+			MagicAbility.Infect.hasAbility(abilityFlags)) {
 			g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,observer);
 			ax+=16;								
 		}
