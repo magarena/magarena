@@ -1,17 +1,3 @@
->Air Elemental
-cube=all
-value=4
-ability=flying
-rarity=2
-type=Creature
-subtype=Elemental
-color=u
-converted=5
-cost={3}{U}{U}
-power=4
-toughness=4
-timing=main
-
 >Alpha Myr
 cube=all
 value=1
@@ -903,19 +889,6 @@ power=0
 toughness=1
 timing=main
 
->Darksteel Sentinel
-cube=all
-value=4
-ability=flash,vigilance,indestructible
-rarity=2
-type=Artifact,Creature
-subtype=Golem
-converted=6
-cost={6}
-power=3
-toughness=3
-timing=main
-
 >Defiant Elf
 cube=all
 value=1
@@ -929,20 +902,6 @@ cost={G}
 power=1
 toughness=1
 timing=main
-
->Deft Duelist
-cube=all
-value=2
-ability=first strike,shroud
-rarity=1
-type=Creature
-subtype=Human,Rogue
-color=uw
-converted=2
-cost={W}{U}
-power=2
-toughness=1
-timing=fmain
 
 >Diving Griffin
 cube=all
@@ -1324,20 +1283,6 @@ power=3
 toughness=3
 timing=main
 
->Giant Scorpion
-cube=all
-value=2
-ability=deathtouch
-rarity=1
-type=Creature
-subtype=Scorpion
-color=b
-converted=3
-cost={2}{B}
-power=1
-toughness=3
-timing=main
-
 >Giant Solifuge
 cube=all
 value=3
@@ -1514,20 +1459,6 @@ converted=1
 cost={R}
 power=1
 toughness=1
-timing=main
-
->Goblin Outlander
-cube=all
-value=2
-ability=protection from white
-rarity=1
-type=Creature
-subtype=Goblin,Scout
-color=rb
-converted=2
-cost={B}{R}
-power=2
-toughness=2
 timing=main
 
 >Goblin Piker
@@ -1887,33 +1818,6 @@ power=5
 toughness=1
 timing=main
 
->Indomitable Ancients
-cube=all
-value=4
-rarity=3
-type=Creature
-subtype=Treefolk,Warrior
-color=w
-converted=4
-cost={2}{W}{W}
-power=2
-toughness=10
-timing=main
-
->Inkwell Leviathan
-cube=all
-value=5
-ability=islandwalk,trample,shroud
-rarity=3
-type=Artifact,Creature
-subtype=Leviathan
-color=u
-converted=9
-cost={7}{U}{U}
-power=7
-toughness=11
-timing=fmain
-
 >Iron-Barb Hellion
 cube=all
 value=4
@@ -2050,17 +1954,18 @@ power=3
 toughness=2
 timing=main
 
->Knight Errant
+>Lost Leonin
 cube=all
 value=1
+ability=infect
 rarity=1
 type=Creature
-subtype=Human,Knight
+subtype=Cat,Soldier
 color=w
 converted=2
 cost={1}{W}
 power=2
-toughness=2
+toughness=1
 timing=main
 
 >Kodama of the North Tree
@@ -2090,17 +1995,18 @@ power=0
 toughness=4
 timing=main
 
->Lagac Lizard
+>Razor Swine
 cube=all
 value=3
+ability=first strike,infect
 rarity=1
 type=Creature
-subtype=Lizard
+subtype=Boar
 color=r
-converted=4
-cost={3}{R}
-power=3
-toughness=3
+converted=3
+cost={2}{R}
+power=2
+toughness=1
 timing=main
 
 >Lantern Kami
@@ -2237,20 +2143,6 @@ converted=2
 cost={1}{U}
 power=1
 toughness=3
-timing=main
-
->Mahamoti Djinn
-cube=all
-value=5
-ability=flying
-rarity=3
-type=Creature
-subtype=Djinn
-color=u
-converted=6
-cost={4}{U}{U}
-power=5
-toughness=6
 timing=main
 
 >Makindi Griffin
@@ -2553,17 +2445,18 @@ power=1
 toughness=1
 timing=main
 
->Norwood Ranger
+>Glistener Elf
 cube=all
 value=1
+ability=infect
 rarity=1
 type=Creature
-subtype=Elf,Scout
+subtype=Elf,Warrior
 color=g
 converted=1
 cost={G}
 power=1
-toughness=2
+toughness=1
 timing=main
 
 >Oakgnarl Warrior
@@ -2658,19 +2551,6 @@ converted=4
 cost={3}{G}
 power=4
 toughness=3
-timing=main
-
->Ornithopter
-cube=all
-value=2
-ability=flying
-rarity=2
-type=Artifact,Creature
-subtype=Thopter
-converted=0
-cost={0}
-power=0
-toughness=2
 timing=main
 
 >Outrider of Jhess
@@ -2809,20 +2689,6 @@ power=3
 toughness=3
 timing=main
 
->Raging Goblin
-cube=all
-value=1
-ability=haste
-rarity=1
-type=Creature
-subtype=Goblin,Berserker
-color=r
-converted=1
-cost={R}
-power=1
-toughness=1
-timing=fmain
-
 >Raging Kavu
 cube=all
 value=3
@@ -2944,20 +2810,6 @@ converted=3
 cost={2}{U}
 power=1
 toughness=4
-timing=main
-
->Rock Badger
-cube=all
-value=2
-ability=mountainwalk
-rarity=3
-type=Creature
-subtype=Badger,Beast
-color=r
-converted=5
-cost={4}{R}
-power=3
-toughness=3
 timing=main
 
 >Rootbreaker Wurm
@@ -3096,20 +2948,6 @@ power=1
 toughness=1
 timing=main
 
->Sentinels of Glen Elendra
-cube=all
-value=3
-ability=flash,flying
-rarity=1
-type=Creature
-subtype=Faerie,Soldier
-color=u
-converted=4
-cost={3}{U}
-power=2
-toughness=3
-timing=main
-
 >Severed Legion
 cube=all
 value=2
@@ -3123,20 +2961,6 @@ cost={1}{B}{B}
 power=2
 toughness=2
 timing=main
-
->Sewn-Eye Drake
-cube=all
-value=3
-ability=flying,haste
-rarity=1
-type=Creature
-subtype=Zombie,Drake
-color=rbu
-converted=4
-cost={2}{B}{U/R}
-power=3
-toughness=1
-timing=fmain
 
 >Shanodin Dryads
 cube=all
@@ -3162,20 +2986,6 @@ color=r
 converted=4
 cost={2}{R}{R}
 power=4
-toughness=3
-timing=main
-
->Shepherd of the Lost
-cube=all
-value=4
-ability=flying,first strike,vigilance
-rarity=2
-type=Creature
-subtype=Angel
-color=w
-converted=5
-cost={4}{W}
-power=3
 toughness=3
 timing=main
 
@@ -3220,20 +3030,6 @@ power=5
 toughness=4
 timing=main
 
->Silver Knight
-cube=all
-value=3
-ability=first strike,protection from red
-rarity=2
-type=Creature
-subtype=Human,Knight
-color=w
-converted=2
-cost={W}{W}
-power=2
-toughness=2
-timing=main
-
 >Silverback Ape
 cube=all
 value=4
@@ -3273,20 +3069,6 @@ cost={4}{U}
 power=2
 toughness=5
 timing=main
-
->Skyknight Legionnaire
-cube=all
-value=3
-ability=flying,haste
-rarity=1
-type=Creature
-subtype=Human,Knight
-color=rw
-converted=3
-cost={1}{R}{W}
-power=2
-toughness=2
-timing=fmain
 
 >Skyshroud Falcon
 cube=all
@@ -3602,20 +3384,6 @@ converted=8
 cost={5}{U}{U}{U}
 power=6
 toughness=6
-timing=main
-
->Tower Gargoyle
-cube=all
-value=4
-ability=flying
-rarity=2
-type=Artifact,Creature
-subtype=Gargoyle
-color=buw
-converted=4
-cost={1}{W}{U}{B}
-power=4
-toughness=4
 timing=main
 
 >Trained Armodon
@@ -4125,20 +3893,6 @@ power=4
 toughness=3
 timing=main
 
->Zombie Outlander
-cube=all
-value=2
-ability=protection from green
-rarity=1
-type=Creature
-subtype=Zombie,Scout
-color=bu
-converted=2
-cost={U}{B}
-power=2
-toughness=2
-timing=main
-
 >Sacred Wolf
 cube=all
 value=2
@@ -4264,20 +4018,6 @@ power=2
 toughness=1
 timing=main
 
->Koth's Courier
-cube=all
-value=3
-rarity=1
-type=Creature
-subtype=Human,Rogue
-color=r
-converted=3
-cost={1}{R}{R}
-power=2
-toughness=3
-ability=forestwalk
-timing=main
-
 >Blackcleave Goblin
 cube=all
 value=3
@@ -4291,20 +4031,6 @@ cost={3}{B}
 power=2
 toughness=1
 timing=fmain
-
->Wildslayer Elves
-cube=all
-value=3
-ability=wither
-rarity=1
-type=Creature
-subtype=Elf,Warrior
-color=g
-converted=4
-cost={3}{G}
-power=3
-toughness=3
-timing=main
 
 >Kuldotha Ringleader
 cube=all
@@ -4332,20 +4058,6 @@ cost={6}
 power=4
 toughness=4
 timing=main
-
->Oversoul of Dusk
-cube=all
-value=5
-rarity=3
-type=Creature
-subtype=Spirit,Avatar
-color=gw
-converted=5
-cost={G/W}{G/W}{G/W}{G/W}{G/W}
-power=5
-toughness=5
-ability=protection from blue,protection from black,protection from red
-timing=fmain
 
 >Tine Shrike
 cube=all
