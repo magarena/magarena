@@ -58,6 +58,11 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			@Override
 			public void mousePressed(final MouseEvent event) {
 
+				if (event.getButton() == MouseEvent.BUTTON3) {
+					controller.actionKeyPressed();
+					return;
+				}
+				
 				final int index=getCardIndexAt(event.getX(),event.getY());
 				if (index>=0) {
 					controller.processClick(cardList.get(index));

@@ -23,13 +23,22 @@ The Vegas AI should be fast on all difficulty levels.
 
 Thanks to everyone one the CCGHQ forum (slightlymagic.net).
 Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
-Thanks to Salasnet for the felt theme.
+Thanks to Salasnet for the felt theme and pedro1973 for the dark battle theme.
 Thanks to singularita for creating the scripts to add over 300 additional creature cards.
 Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search AI.
 Thanks for your support and have fun!
 
-Release 1.12 (April 17, 2011)
-============
+Release LE 1.13 (April 23, 2011)
+===============
+
+- default cube (600 cards)
+- all cube (900 cards)
+
+- added "Save replay" to menu, useful for sharing game state when reporting issues
+- right mouse click on hand zone can now be used as a shortcut for action button
+
+Release LE 1.12 (April 17, 2011)
+===============
 
 - default cube (567 cards)
 - all cube (888 cards)
@@ -38,7 +47,7 @@ Release 1.12 (April 17, 2011)
 - added selectable avatar sets in preferences, separate from theme
 - added unlimited undo support 
 - added "Reset game" in menu, undoing all moves
-- added M key as additional shortcut for messages
+- added M key as an additional shortcut for messages
 
 Release 1.11 (April 11, 2011)
 ============
@@ -195,4 +204,4 @@ Release 1.1 (December 7, 2010)
 Release 1.0 (November 25, 2010)
 ===========
 
-- initial release
+- initial release (450 cards)

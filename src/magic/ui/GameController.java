@@ -89,12 +89,26 @@ public class GameController {
 		}
 	}
 	
+	public void actionKeyPressed() {
+		
+		if (gamePanel.canClickAction()) {
+			actionClicked();
+		}
+	}
+	
 	public synchronized void actionClicked() {
 
 		undoClicked=false;
 		actionClicked=true;
 		choiceClicked=null;
 		notifyAll();
+	}
+	
+	public void undoKeyPressed() {
+		
+		if (gamePanel.canClickUndo()) {
+			undoClicked();
+		}
 	}
 	
 	public synchronized void undoClicked() {

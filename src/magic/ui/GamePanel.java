@@ -162,7 +162,7 @@ public class GamePanel extends JPanel {
 			@Override
 			public void actionPerformed(final ActionEvent event) {
 
-				actionKeyPressed();
+				controller.actionKeyPressed();
 			}
 		});
 		
@@ -173,7 +173,7 @@ public class GamePanel extends JPanel {
 			@Override
 			public void actionPerformed(final ActionEvent event) {
 			
-				undoKeyPressed();
+				controller.undoKeyPressed();
 			}
 		});
 		
@@ -229,20 +229,16 @@ public class GamePanel extends JPanel {
 		thread.start();
 	}
 	
-	void actionKeyPressed() {
+	public boolean canClickAction() {
 		
-		if (gameTournamentViewer.getGameViewer().isActionEnabled()) {
-			controller.actionClicked();
-		}
+		return gameTournamentViewer.getGameViewer().isActionEnabled();
 	}
 	
-	void undoKeyPressed() {
-
-		if (gameTournamentViewer.getGameViewer().isUndoEnabled()) {
-			controller.undoClicked();
-		}
+	public boolean canClickUndo() {
+		
+		return gameTournamentViewer.getGameViewer().isUndoEnabled();
 	}
-	
+		
 	void switchKeyPressed() {
 
 		if (textViewButton.isEnabled()) {
