@@ -159,7 +159,7 @@ converted=2
 cost={1}{G}
 power=2
 toughness=2
-timing=main
+timing=flash
 
 >Ashen Monstrosity
 cube=all
@@ -324,7 +324,7 @@ converted=3
 cost={2}{W}
 power=2
 toughness=2
-timing=main
+timing=flash
 
 >Benthic Behemoth
 cube=all
@@ -1707,7 +1707,7 @@ converted=7
 cost={6}{G}
 power=5
 toughness=6
-timing=main
+timing=flash
 
 >Hill Giant
 cube=all
@@ -1952,7 +1952,7 @@ converted=4
 cost={3}{G}
 power=3
 toughness=2
-timing=main
+timing=flash
 
 >Lost Leonin
 cube=all
@@ -2962,19 +2962,19 @@ power=2
 toughness=2
 timing=main
 
->Shanodin Dryads
+>Spire Monitor
 cube=all
-value=1
-ability=forestwalk
+value=3
+ability=flash,flying
 rarity=1
 type=Creature
-subtype=Dryad
-color=g
-converted=1
-cost={G}
-power=1
-toughness=1
-timing=main
+subtype=Drake
+color=u
+converted=5
+cost={4}{U}
+power=3
+toughness=3
+timing=flash
 
 >Shatterskull Giant
 cube=all
@@ -3342,7 +3342,7 @@ converted=6
 cost={4}{G}{G}
 power=3
 toughness=4
-timing=main
+timing=flash
 
 >Thornweald Archer
 cube=all
@@ -3424,7 +3424,7 @@ converted=6
 cost={4}{G/U}{G/U}
 power=3
 toughness=3
-timing=main
+timing=flash
 
 >Tree Monkey
 cube=all
@@ -3850,7 +3850,7 @@ converted=1
 cost={W/U}
 power=1
 toughness=1
-timing=main
+timing=flash
 
 >Zendikar Farguide
 cube=all
