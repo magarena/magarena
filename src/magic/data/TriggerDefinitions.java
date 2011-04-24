@@ -2937,6 +2937,8 @@ public class TriggerDefinitions {
 		}
     };
 
+    private static final MagicTrigger SICKLESLICER=new MagicLivingWeaponTrigger("Sickleslicer");
+    
     private static final MagicTrigger SHIELD_OF_THE_RIGHTEOUS=new MagicTrigger(MagicTriggerType.WhenBlocks,"Shield of the Righteous") {
 
 		@Override
@@ -3104,6 +3106,39 @@ public class TriggerDefinitions {
 					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard)); 
 					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
 				}
+			}
+		}
+    };
+    
+    private static final MagicTrigger SWORD_OF_WAR_AND_PEACE=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of War and Peace") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
+				final MagicPlayer player=permanent.getController();
+				final MagicTarget targetPlayer=damage.getTarget();
+				return new MagicEvent(permanent,player,new Object[]{permanent,player,targetPlayer},this,
+					"Sword of War and Peace deals damage to "+targetPlayer.getName()+" equal to the number of cards in his or her hand and "+
+					"you gain 1 life for each card in your hand.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer targetPlayer=(MagicPlayer)data[2];
+			final int amount1=targetPlayer.getHand().size();
+			if (amount1>0) {
+				final MagicDamage damage=new MagicDamage((MagicSource)data[0],targetPlayer,amount1,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+			final MagicPlayer player=(MagicPlayer)data[1];
+			final int amount2=player.getHand().size();
+			if (amount2>0) {
+				game.doAction(new MagicChangeLifeAction(player,amount2));
 			}
 		}
     };
@@ -3930,6 +3965,22 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger UNQUESTIONED_AUTHORITY=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Unquestioned Authority") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw a card.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+		}
+    };
+    
 	private static final Collection<MagicTrigger> TRIGGERS=Arrays.<MagicTrigger>asList(
 		ACIDIC_SLIME,
 		AFFA_GUARD_HOUND,
@@ -4070,6 +4121,7 @@ public class TriggerDefinitions {
 	    MASK_OF_RIDDLES,
 	    QUIETUS_SPIKE,
 	    RONIN_WARCLUB,
+	    SICKLESLICER,
 	    SHIELD_OF_THE_RIGHTEOUS,
 	    SKULLCLAMP,
 	    SPECTERS_SHROUD,
@@ -4078,6 +4130,7 @@ public class TriggerDefinitions {
 	    SWORD_OF_FEAST_AND_FAMINE,
 	    SWORD_OF_FIRE_AND_ICE,
 	    SWORD_OF_LIGHT_AND_SHADOW,
+	    SWORD_OF_WAR_AND_PEACE,
 	    SYLVOK_LIFESTAFF,
 	    BLOOD_CRYPT,
 	    BREEDING_POOL,
@@ -4155,7 +4208,8 @@ public class TriggerDefinitions {
 	    RANCOR,
 	    SNAKE_UMBRA,
 	    SOUL_LINK1,
-	    SOUL_LINK2
+	    SOUL_LINK2,
+	    UNQUESTIONED_AUTHORITY
 	);
 	
 	public static void addTriggers() {

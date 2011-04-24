@@ -1065,6 +1065,28 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent PSYCHIC_BARRIER=new MagicSpellCardEvent("Psychic Barrier") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_CREATURE_SPELL,
+				new Object[]{cardOnStack},this,"Counter target creature spell$. Its controller loses 1 life.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
+			if (targetSpell!=null) {
+				game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+				game.doAction(new MagicChangeLifeAction(targetSpell.getController(),-1));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent PUNCTURE_BLAST=new MagicSpellCardEvent("Puncture Blast") {
 
 		@Override
@@ -3212,6 +3234,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());	
 	private static final MagicSpellCardEvent TORPOR_DUST=new MagicPlayAuraEvent("Torpor Dust",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(3,0));
+	private static final MagicSpellCardEvent UNQUESTIONED_AUTHORITY=new MagicPlayAuraEvent("Unquestioned Authority",
+			MagicTargetChoice.POS_TARGET_CREATURE,MagicUnblockableTargetPicker.getInstance());
 	private static final MagicSpellCardEvent VOLCANIC_STRENGTH=new MagicPlayAuraEvent("Volcanic Strength",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 	private static final MagicSpellCardEvent WEAKNESS=new MagicPlayAuraEvent("Weakness",
@@ -3261,6 +3285,7 @@ public class CardEventDefinitions {
 		NATURALIZE,
 		OFFERING_TO_ASHA,
 		PONGIFY,
+		PSYCHIC_BARRIER,
 		PLUMMET,
 		PUNCTURE_BLAST,
 		PUTREFY,
@@ -3374,6 +3399,7 @@ public class CardEventDefinitions {
 		SOUL_LINK,
 		SPIDER_UMBRA,
 		TORPOR_DUST,
+		UNQUESTIONED_AUTHORITY,
 		VOLCANIC_STRENGTH,
 		WEAKNESS
 	);

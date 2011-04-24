@@ -7378,3 +7378,65 @@ cost={2}{G}{G}
 power=4
 toughness=3
 timing=main
+
+>Hovermyr
+cube=default
+value=2
+ability=flying,vigilance
+rarity=1
+type=Artifact,Creature
+subtype=Myr
+converted=2
+cost={2}
+power=1
+toughness=2
+timing=main
+
+>Sword of War and Peace
+cube=default
+value=5
+rarity=3
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+power=2
+toughness=2
+ability=protection from red,protection from white
+timing=equipment
+
+>Psychic Barrier
+cube=default
+value=3
+rarity=2
+type=Instant
+color=u
+converted=2
+cost={U}{U}
+timing=counter
+
+>Sickleslicer
+cube=default
+value=2
+rarity=2
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={4}
+power=2
+toughness=2
+timing=equipment
+
+>Unquestioned Authority
+cube=default
+value=4
+rarity=2
+type=Enchantment
+subtype=Aura
+color=w
+converted=3
+cost={2}{W}
+ability=protection from creatures
+timing=aura

@@ -123,14 +123,14 @@ public class TestGameBuilder {
 		addToHand(player,"Batterskull",1);
 		addToHand(player,"Breath of Darigaaz",1);
 		addToHand(player,"Cudgel Troll",1);
-		addToHand(player,"Geth's Verdict",1);
 		addToHand(player,"Hovermyr",1);
-		addToHand(player,"Phyrexian Vault",1);
-		addToHand(player,"Pristine Talisman",1);
+		addToHand(player,"Shrine of Burning Rage",1);
+		addToHand(player,"Unquestioned Authority",1);
 		addToHand(player,"Psychic Barrier",1);
 		addToHand(player,"Sheoldred, Whispering One",1);
 		addToHand(player,"Sword of War and Peace",1);
 		addToHand(player,"Urabrask the Hidden",1);
+		addToHand(player,"Sickleslicer",1);
 
 		createPermanent(game,player,"Raging Goblin",false,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
