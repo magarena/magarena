@@ -34,6 +34,7 @@ Release LE 1.13 (April 24, 2011)
 - default cube (600 cards)
 - all cube (900 cards)
 
+- added sound effects, disabled by default, can be enabled in preferences
 - right mouse click on hand zone can now be used as a shortcut for action button
 - infect and wither abilities are also shown on cards with same icon as deathtouch
 

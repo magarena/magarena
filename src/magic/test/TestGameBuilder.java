@@ -107,11 +107,11 @@ public class TestGameBuilder {
 		tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
 		tournament.setStartPlayer(0);
 		
-		final MagicGame game=tournament.nextGame();
+		final MagicGame game=tournament.nextGame(true);
 		game.setPhase(MagicMainPhase.getFirstInstance());
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
-		opponent.setLife(12);
+		opponent.setLife(1);
 		
 		addToLibrary(player,"Plains",10);
 		addToLibrary(opponent,"Island",10);

@@ -388,7 +388,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	public void nextGame() {
 
 		tournament.updateDifficulty();
-		openGame(tournament.nextGame());
+		openGame(tournament.nextGame(true));
 	}
 	
 	private void openGame(final MagicGame game) {

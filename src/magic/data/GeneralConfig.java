@@ -33,6 +33,7 @@ public class GeneralConfig {
 	private static final String STRENGTH_DIFFICULTY="strengthDifficulty";
 	private static final String STRENGTH_GAMES="strengthGames";
 	private static final String HIGH_QUALITY="hq";
+	private static final String SOUND="sound";
 
 	private static final int DEFAULT_LEFT=-1;
 	private static final int DEFAULT_TOP=-1;
@@ -52,6 +53,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
 	private static final int DEFAULT_STRENGTH_GAMES=123;
 	private static final boolean DEFAULT_HIGH_QUALITY=true;
+	private static final boolean DEFAULT_SOUND=false;
 
 	private int left=DEFAULT_LEFT;
 	private int top=DEFAULT_TOP;
@@ -71,6 +73,7 @@ public class GeneralConfig {
 	private int strengthDifficulty=DEFAULT_STRENGTH_DIFFICULTY;
 	private int strengthGames=DEFAULT_STRENGTH_GAMES;
 	private boolean highQuality=DEFAULT_HIGH_QUALITY;
+	private boolean sound=DEFAULT_SOUND;
 	
 	private GeneralConfig() {
 		
@@ -262,6 +265,16 @@ public class GeneralConfig {
 		this.highQuality=highQuality;
 	}
 	
+	public boolean isSound() {
+		
+		return sound;
+	}
+	
+	public void setSound(final boolean sound) {
+		
+		this.sound=sound;
+	}
+	
 	public void load(final Properties properties) {
 	
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -282,6 +295,7 @@ public class GeneralConfig {
 		strengthDifficulty=Integer.parseInt(properties.getProperty(STRENGTH_DIFFICULTY,""+DEFAULT_STRENGTH_DIFFICULTY));
 		strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
 		highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
+		sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
 	}
 	
 	public void load() {
@@ -313,6 +327,7 @@ public class GeneralConfig {
 		properties.setProperty(STRENGTH_DIFFICULTY,String.valueOf(strengthDifficulty));
 		properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
 		properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
+		properties.setProperty(SOUND,String.valueOf(sound));
 	}
 	
 	public void save() {

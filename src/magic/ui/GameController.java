@@ -15,6 +15,7 @@ import javax.swing.SwingUtilities;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
+import magic.data.SoundEffects;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
@@ -434,6 +435,11 @@ public class GameController {
 				game.logMessages();
 				clearValidChoices();
 				showMessage(null,"{L} "+game.getLosingPlayer()+" "+(gameConceded?"conceded":"lost")+" the game.|Press {f} to continue.");
+				if (game.getLosingPlayer().getIndex()==0) {
+					SoundEffects.getInstance().playClip(SoundEffects.LOSE_SOUND);
+				} else {
+					SoundEffects.getInstance().playClip(SoundEffects.WIN_SOUND);
+				}
 				enableForwardButton();
 				if (waitForInputOrUndo()) {
 					performUndo();

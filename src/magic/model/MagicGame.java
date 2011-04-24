@@ -58,6 +58,7 @@ public class MagicGame {
 	private final MagicEventQueue events;
 	private final MagicStack stack;
 	private final MagicPlayer scorePlayer;
+	private final boolean sound;
 	private long identifiers[];
 	private int score=0;
 	private int turn=1;
@@ -82,12 +83,13 @@ public class MagicGame {
 	private final MagicLogBook logBook;
 	private final MagicLogMessageBuilder logMessageBuilder;
 	
-	public MagicGame(final MagicTournament tournament,final MagicGameplay gameplay,final MagicPlayer players[],final MagicPlayer startPlayer) {
+	public MagicGame(final MagicTournament tournament,final MagicGameplay gameplay,final MagicPlayer players[],final MagicPlayer startPlayer,final boolean sound) {
 
 		artificial=false;
 		this.tournament=tournament;
 		this.gameplay=gameplay;
 		this.players=players;
+		this.sound=sound;
 		identifiers=new long[MagicIdentifierType.NR_OF_IDENTIFIERS];
 		triggers=new MagicPermanentTriggerMap();
 		turnTriggers=new MagicPermanentTriggerList();
@@ -108,6 +110,7 @@ public class MagicGame {
 	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
 		
 		artificial=true;
+		sound=false;
 		final MagicCopyMap copyMap=new MagicCopyMap();		
 		this.tournament=game.tournament;
 		this.gameplay=game.gameplay;
@@ -196,6 +199,11 @@ public class MagicGame {
 	public boolean isArtificial() {
 		
 		return artificial;
+	}
+	
+	public boolean isSound() {
+		
+		return sound;
 	}
 	
 	public void setFastChoices(final boolean fastChoices) {
