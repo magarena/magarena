@@ -58,6 +58,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPlayOgreUnlessEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
+import magic.model.event.MagicTapEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
@@ -2321,6 +2322,51 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger SHEOLDRED_WHISPERING_ONE1=new MagicTrigger(MagicTriggerType.AtUpkeep,"Sheoldred, Whispering One") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,MagicGraveyardTargetPicker.getInstance(),
+					new Object[]{player},this,"Return target creature card$ from your graveyard to the battlefield.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicCard card=event.getTarget(game,choiceResults,0);
+			if (card!=null) {
+				game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+			}
+		}
+    };
+    
+    private static final MagicTrigger SHEOLDRED_WHISPERING_ONE2=new MagicTrigger(MagicTriggerType.AtUpkeep,"Sheoldred, Whispering One") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			if (player!=data) {
+				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent,data},this,"Your opponent sacrifices a creature.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer opponent=(MagicPlayer)data[1];
+			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+				game.addEvent(new MagicSacrificePermanentEvent((MagicPermanent)data[0],opponent,MagicTargetChoice.SACRIFICE_CREATURE));
+			}
+		}
+    };
+    
 	private static final MagicTrigger SHIVAN_WURM=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Shivan Wurm") {
 
 		@Override
@@ -2600,7 +2646,31 @@ public class TriggerDefinitions {
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.TUKTUK_THE_RETURNED_TOKEN_CARD));
 		}
     };
-        
+
+    private static final MagicTrigger URABRASK_THE_HIDDEN=new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay,"Urabrask the Hidden") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPermanent otherPermanent=(MagicPermanent)data;
+			if (otherPermanent.isCreature()&&otherPermanent.getController()!=permanent.getController()) {
+				return new MagicTapEvent(otherPermanent);
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+		}
+
+		@Override
+		public boolean usesStack() {
+
+			return false;
+		}		
+    };
+    
     private static final MagicTrigger VENSER_SHAPER_SAVANT=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Venser, Shaper Savant") {
 
 		@Override
@@ -3650,6 +3720,45 @@ public class TriggerDefinitions {
 		}
     };
 
+    private static final MagicTrigger SHRINE_OF_BURNING_RAGE1=new MagicTrigger(MagicTriggerType.AtUpkeep,"Shrine of Burning Rage") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Put a charge counter on Shrine of Burning Rage.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+		}		
+    };
+    
+    private static final MagicTrigger SHRINE_OF_BURNING_RAGE2=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Shrine of Burning Rage") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			final MagicCard card=((MagicCardOnStack)data).getCard();
+			if (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) {
+				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Put a charge counter on Shrine of Burning Rage.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+		}		
+    };
+    
     private static final MagicTrigger SKULLCAGE=new MagicTrigger(MagicTriggerType.AtUpkeep,"Skullcage") {
 
 		@Override
@@ -4084,6 +4193,8 @@ public class TriggerDefinitions {
 	    SKELETAL_VAMPIRE,
 	    SHADOWMAGE_INFILTRATOR,
 	    SKINRENDER,
+	    SHEOLDRED_WHISPERING_ONE1,
+	    SHEOLDRED_WHISPERING_ONE2,
 	    SHIVAN_WURM,
 	    SOULS_OF_THE_FAULTLESS,
 	    SPHINX_OF_LOST_TRUTHS,
@@ -4104,6 +4215,7 @@ public class TriggerDefinitions {
 	    TREVA_THE_RENEWER,
 	    TRYGON_PREDATOR,
 	    TUKTUK_THE_EXPLORER,    
+	    URABRASK_THE_HIDDEN,
 	    VENSER_SHAPER_SAVANT,
 	    VICTORYS_HERALD,
 	    VIGOR1,
@@ -4195,6 +4307,8 @@ public class TriggerDefinitions {
 	    ELDRAZI_MONUMENT,
 	    SERRATED_ARROWS1,
 	    SERRATED_ARROWS2,
+	    SHRINE_OF_BURNING_RAGE1,
+	    SHRINE_OF_BURNING_RAGE2,
 	    SKULLCAGE,
 	    ARMADILLO_CLOAK,
 	    ELEPHANT_GUIDE,

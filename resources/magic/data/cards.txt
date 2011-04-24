@@ -7440,3 +7440,39 @@ converted=3
 cost={2}{W}
 ability=protection from creatures
 timing=aura
+
+>Urabrask the Hidden
+cube=default
+value=5
+rarity=3
+type=Legendary,Creature
+subtype=Praetor
+color=r
+converted=5
+cost={3}{R}{R}
+power=4
+toughness=4
+timing=fmain
+
+>Sheoldred, Whispering One
+cube=default
+value=5
+rarity=3
+type=Legendary,Creature
+subtype=Praetor
+color=b
+converted=7
+cost={5}{B}{B}
+power=6
+toughness=6
+ability=swampwalk
+timing=smain
+
+>Shrine of Burning Rage
+cube=default
+value=3
+rarity=2
+type=Artifact
+converted=2
+cost={2}
+timing=artifact

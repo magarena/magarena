@@ -118,7 +118,7 @@ public class TestGameBuilder {
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
 		addToHand(opponent,"Zephyr Sprite",3);
-		addToHand(player,"Spire Monitor",1);
+		addToHand(player,"Raging Goblin",1);
 		addToHand(player,"Alloy Myr",1);
 		addToHand(player,"Batterskull",1);
 		addToHand(player,"Breath of Darigaaz",1);

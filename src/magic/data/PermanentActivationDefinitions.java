@@ -2377,6 +2377,42 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
+	private static final MagicPermanentActivation SHRINE_OF_BURNING_RAGE=new MagicPermanentActivation("Shrine of Burning Rage",
+		new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.THREE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			final MagicPermanent permanent=(MagicPermanent)source;
+			return new MagicEvent[]{
+				new MagicTapEvent(permanent),
+				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE),
+				new MagicSacrificeEvent(permanent)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+				new MagicDamageTargetPicker(source.getCounters(MagicCounterType.Charge)),new Object[]{source},this,
+				"Shrine of Burning Rage deals damage equal to the number of charge counters on it to target creature or player$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicTarget target=event.getTarget(game,choiceResults,0);
+			if (target!=null) {
+				final MagicPermanent source=(MagicPermanent)data[0];
+				final int amount=source.getCounters(MagicCounterType.Charge);
+				if (amount>0) {
+					final MagicDamage damage=new MagicDamage(source,target,amount,false);
+					game.doAction(new MagicDealDamageAction(damage));
+				}
+			}
+		}
+	};
+	
 	private static final MagicPermanentActivation TRIP_NOOSE=new MagicPermanentActivation("Trip Noose",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO.getCondition()},new MagicActivationHints(MagicTiming.Tapping)) {
 
@@ -2740,6 +2776,7 @@ public class PermanentActivationDefinitions {
 		MIND_STONE,
 		MOONGLOVE_EXTRACT,
 		SERRATED_ARROWS,
+		SHRINE_OF_BURNING_RAGE,
 		TRIP_NOOSE,
 		CELESTIAL_COLONNADE,
 		CREEPING_TAR_PIT,
