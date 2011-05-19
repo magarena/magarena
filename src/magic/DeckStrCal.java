@@ -138,7 +138,7 @@ public class DeckStrCal {
 
         int played = 0;
         while (!testTournament.isFinished()) {
-            final MagicGame game=testTournament.nextGame();
+            final MagicGame game=testTournament.nextGame(false);
             final GameController controller=new GameController(null,game);
             controller.runGame();
             if (testTournament.getGamesPlayed() > played) {

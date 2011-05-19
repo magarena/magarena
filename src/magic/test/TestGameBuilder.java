@@ -107,34 +107,32 @@ public class TestGameBuilder {
 		tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
 		tournament.setStartPlayer(0);
 		
-		final MagicGame game=tournament.nextGame();
+		final MagicGame game=tournament.nextGame(true);
 		game.setPhase(MagicMainPhase.getFirstInstance());
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);
-		opponent.setLife(12);
+		opponent.setLife(1);
 		
 		addToLibrary(player,"Plains",10);
 		addToLibrary(opponent,"Island",10);
 		addToGraveyard(player,"Mogg Fanatic",2);
 		addToGraveyard(opponent,"Island",2);
 		addToHand(opponent,"Zephyr Sprite",3);
-		addToHand(player,"Lightning Greaves",1);
-		addToHand(player,"Barbed Battlegear",1);
-		addToHand(player,"Vulshok Battlegear",1);
-		addToHand(player,"Vindicate",1);
-		addToHand(player,"Dragon Fodder",1);
-		addToHand(player,"Juniper Order Ranger",1);
-		addToHand(player,"Knight Exemplar",1);
-		addToHand(player,"Silver Knight",1);
-		addToHand(player,"Silvos, Rogue Elemental",1);
-		addToHand(player,"Visara the Dreadful",1);
-		addToHand(player,"Havoc Demon",1);
-		addToHand(player,"Thunder Dragon",1);
-		addToHand(player,"Arcanis the Omnipotent",1);
-		addToHand(player,"Perilous Myr",1);
-		addToHand(player,"Blackcleave Goblin",1);
-		
-		createPermanent(game,player,"Watchwolf",false,1);
+		addToHand(player,"Raging Goblin",1);
+		addToHand(player,"Alloy Myr",1);
+		addToHand(player,"Batterskull",1);
+		addToHand(player,"Breath of Darigaaz",1);
+		addToHand(player,"Cudgel Troll",1);
+		addToHand(player,"Hovermyr",1);
+		addToHand(player,"Shrine of Burning Rage",1);
+		addToHand(player,"Unquestioned Authority",1);
+		addToHand(player,"Psychic Barrier",1);
+		addToHand(player,"Sheoldred, Whispering One",1);
+		addToHand(player,"Sword of War and Peace",1);
+		addToHand(player,"Urabrask the Hidden",1);
+		addToHand(player,"Sickleslicer",1);
+
+		createPermanent(game,player,"Raging Goblin",false,1);
 		createPermanent(game,player,"Bonesplitter",false,1);
 		createPermanent(game,player,"Rupture Spire",false,7);
 		createPermanent(game,opponent,"Bloodrock Cyclops",false,1);

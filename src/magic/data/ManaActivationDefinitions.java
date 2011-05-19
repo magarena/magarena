@@ -62,10 +62,12 @@ public class ManaActivationDefinitions {
 		addCreatureActivations("Stirring Wildwood",new MagicManaType[]{MagicManaType.Green,MagicManaType.White});		
 
 		// Creatures.
+		addCreatureActivations("Alloy Myr",MagicManaType.ALL_TYPES);
 		addCreatureActivations("Birds of Paradise",MagicManaType.ALL_TYPES);
 		addCreatureActivations("Llanowar Elves",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Green});
 		addCreatureActivations("Noble Hierarch",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Blue,MagicManaType.Green,MagicManaType.White});
 		addCreatureActivations("Steward of Valeron",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Green});
 		addCreatureActivations("Vine Trellis",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Green});
+		addCreatureActivations("Plague Myr",new MagicManaType[]{MagicManaType.Colorless});
 	}
 }

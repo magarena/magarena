@@ -21,8 +21,8 @@ public class GeneralConfig {
 	private static final String HEIGHT="height";
 	private static final String MAXIMIZED="maximized";
 	private static final String THEME="theme";
+	private static final String AVATAR="avatar";
 	private static final String AI="ai";
-	private static final String UNDO_LEVELS="undo";
 	private static final String TEXT_VIEW="text";
 	private static final String SKIP_SINGLE="single";
 	private static final String ALWAYS_PASS="pass";
@@ -33,6 +33,7 @@ public class GeneralConfig {
 	private static final String STRENGTH_DIFFICULTY="strengthDifficulty";
 	private static final String STRENGTH_GAMES="strengthGames";
 	private static final String HIGH_QUALITY="hq";
+	private static final String SOUND="sound";
 
 	private static final int DEFAULT_LEFT=-1;
 	private static final int DEFAULT_TOP=-1;
@@ -40,8 +41,8 @@ public class GeneralConfig {
 	private static final int DEFAULT_HEIGHT=700;
 	private static final boolean DEFAULT_MAXIMIZED=false;
 	private static final String DEFAULT_THEME="wood";
+	private static final String DEFAULT_AVATAR="default";
 	private static final String DEFAULT_AI="default";
-	private static final int DEFAULT_UNDO_LEVELS=5;
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
 	private static final boolean DEFAULT_PASS=true;
@@ -51,7 +52,8 @@ public class GeneralConfig {
 	private static final int DEFAULT_POPUP_DELAY=300;
 	private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
 	private static final int DEFAULT_STRENGTH_GAMES=123;
-	private static final boolean DEFAULT_HIGH_QUALITY=false;
+	private static final boolean DEFAULT_HIGH_QUALITY=true;
+	private static final boolean DEFAULT_SOUND=false;
 
 	private int left=DEFAULT_LEFT;
 	private int top=DEFAULT_TOP;
@@ -59,8 +61,8 @@ public class GeneralConfig {
 	private int height=DEFAULT_HEIGHT;
 	private boolean maximized=DEFAULT_MAXIMIZED;
 	private String theme=DEFAULT_THEME;
+	private String avatar=DEFAULT_AVATAR;
 	private String ai=DEFAULT_AI;
-	private int undoLevels=DEFAULT_UNDO_LEVELS;
 	private boolean textView=DEFAULT_TEXT_VIEW;
 	private boolean skipSingle=DEFAULT_SINGLE;
 	private boolean alwaysPass=DEFAULT_PASS;
@@ -71,6 +73,7 @@ public class GeneralConfig {
 	private int strengthDifficulty=DEFAULT_STRENGTH_DIFFICULTY;
 	private int strengthGames=DEFAULT_STRENGTH_GAMES;
 	private boolean highQuality=DEFAULT_HIGH_QUALITY;
+	private boolean sound=DEFAULT_SOUND;
 	
 	private GeneralConfig() {
 		
@@ -136,6 +139,16 @@ public class GeneralConfig {
 		this.theme=theme;
 	}
 	
+	public String getAvatar() {
+		
+		return avatar;
+	}
+	
+	public void setAvatar(final String avatar) {
+		
+		this.avatar=avatar;
+	}
+	
 	public String getAi() {
 		
 		return ai;
@@ -150,16 +163,6 @@ public class GeneralConfig {
 		
 		final MagicAI playerAi = MagicAIImpl.getAI(ai).getAI();
 		return new MagicAI[]{playerAi, playerAi};
-	}
-				
-	public int getUndoLevels() {
-		
-		return undoLevels;
-	}
-	
-	public void setUndoLevels(final int undoLevels) {
-		
-		this.undoLevels=undoLevels;
 	}
 	
 	public boolean getTextView() {
@@ -262,6 +265,16 @@ public class GeneralConfig {
 		this.highQuality=highQuality;
 	}
 	
+	public boolean isSound() {
+		
+		return sound;
+	}
+	
+	public void setSound(final boolean sound) {
+		
+		this.sound=sound;
+	}
+	
 	public void load(final Properties properties) {
 	
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -270,8 +283,8 @@ public class GeneralConfig {
 		height=Integer.parseInt(properties.getProperty(HEIGHT,""+DEFAULT_HEIGHT));
 		maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+DEFAULT_MAXIMIZED));
 		theme=properties.getProperty(THEME,DEFAULT_THEME);
+		avatar=properties.getProperty(AVATAR,DEFAULT_AVATAR);
 		ai=properties.getProperty(AI,DEFAULT_AI);
-		undoLevels=Integer.parseInt(properties.getProperty(UNDO_LEVELS,""+DEFAULT_UNDO_LEVELS));
 		textView=Boolean.parseBoolean(properties.getProperty(TEXT_VIEW,""+DEFAULT_TEXT_VIEW));
 		skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
 		alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+DEFAULT_PASS));
@@ -282,6 +295,7 @@ public class GeneralConfig {
 		strengthDifficulty=Integer.parseInt(properties.getProperty(STRENGTH_DIFFICULTY,""+DEFAULT_STRENGTH_DIFFICULTY));
 		strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
 		highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
+		sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
 	}
 	
 	public void load() {
@@ -301,8 +315,8 @@ public class GeneralConfig {
 		properties.setProperty(HEIGHT,String.valueOf(height));
 		properties.setProperty(MAXIMIZED,String.valueOf(maximized));
 		properties.setProperty(THEME,theme);
+		properties.setProperty(AVATAR,avatar);
 		properties.setProperty(AI,ai);
-		properties.setProperty(UNDO_LEVELS,String.valueOf(undoLevels));
 		properties.setProperty(TEXT_VIEW,String.valueOf(textView));
 		properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));
 		properties.setProperty(ALWAYS_PASS,String.valueOf(alwaysPass));
@@ -313,6 +327,7 @@ public class GeneralConfig {
 		properties.setProperty(STRENGTH_DIFFICULTY,String.valueOf(strengthDifficulty));
 		properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
 		properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
+		properties.setProperty(SOUND,String.valueOf(sound));
 	}
 	
 	public void save() {

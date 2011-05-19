@@ -1,5 +1,6 @@
 package magic.model.phase;
 
+import magic.data.SoundEffects;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicCombatDamageAction;
@@ -41,5 +42,6 @@ public class MagicCombatDamagePhase extends MagicPhase {
 			game.logMessage(defendingPlayer,"{c}"+message.toString());			
 		}
 		game.setStep(MagicStep.NextPhase);
+		SoundEffects.getInstance().playClip(game,SoundEffects.COMBAT_SOUND);
 	}	
 }

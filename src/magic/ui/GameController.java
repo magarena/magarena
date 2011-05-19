@@ -15,6 +15,7 @@ import javax.swing.SwingUtilities;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
+import magic.data.SoundEffects;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
@@ -44,6 +45,7 @@ public class GameController {
 	private boolean undoClicked=false;
 	private boolean actionClicked=false;
 	private boolean combatChoice=false;
+	private boolean resetGame=false;
 	private Object choiceClicked=null;
 	private MagicCardDefinition sourceCardDefinition;
 	
@@ -88,12 +90,26 @@ public class GameController {
 		}
 	}
 	
+	public void actionKeyPressed() {
+		
+		if (gamePanel.canClickAction()) {
+			actionClicked();
+		}
+	}
+	
 	public synchronized void actionClicked() {
 
 		undoClicked=false;
 		actionClicked=true;
 		choiceClicked=null;
 		notifyAll();
+	}
+	
+	public void undoKeyPressed() {
+		
+		if (gamePanel.canClickUndo()) {
+			undoClicked();
+		}
 	}
 	
 	public synchronized void undoClicked() {
@@ -359,11 +375,19 @@ public class GameController {
 				return;
 			}
 			if (choiceResults==MagicChoice.UNDO_CHOICE_RESULTS) {
-				game.gotoLastUndoPoint();
+				performUndo();
 				return;
 			}
 		}
 		game.executeNextEvent(choiceResults);
+	}
+	
+	public synchronized void resetGame() {
+		
+		if (game.hasUndoPoints()) {
+			resetGame=true;
+			undoClicked();
+		}
 	}
 	
 	public synchronized void concede() {
@@ -374,6 +398,19 @@ public class GameController {
 			gameConceded=true;
 			undoClicked=true;
 			notifyAll();
+		}
+	}
+	
+	public void performUndo() {
+		
+		if (resetGame) {
+			resetGame=false;
+			while (game.hasUndoPoints()) {
+				
+				game.gotoLastUndoPoint();
+			}
+		} else {
+			game.gotoLastUndoPoint();
 		}
 	}
 
@@ -398,9 +435,14 @@ public class GameController {
 				game.logMessages();
 				clearValidChoices();
 				showMessage(null,"{L} "+game.getLosingPlayer()+" "+(gameConceded?"conceded":"lost")+" the game.|Press {f} to continue.");
+				if (game.getLosingPlayer().getIndex()==0) {
+					SoundEffects.getInstance().playClip(SoundEffects.LOSE_SOUND);
+				} else {
+					SoundEffects.getInstance().playClip(SoundEffects.WIN_SOUND);
+				}
 				enableForwardButton();
 				if (waitForInputOrUndo()) {
-					game.gotoLastUndoPoint();
+					performUndo();
 					update();
 					continue;
 				} else {

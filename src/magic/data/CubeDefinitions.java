@@ -41,7 +41,7 @@ public class CubeDefinitions {
 			cubeDefinitions.add(new MagicCubeDefinition(cubeName));
 		}
 	}
-		
+			
 	public String[] getCubeNames() {
 		
 		final String names[]=new String[cubeDefinitions.size()];

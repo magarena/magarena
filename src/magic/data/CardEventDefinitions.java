@@ -1065,6 +1065,28 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent PSYCHIC_BARRIER=new MagicSpellCardEvent("Psychic Barrier") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_CREATURE_SPELL,
+				new Object[]{cardOnStack},this,"Counter target creature spell$. Its controller loses 1 life.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
+			if (targetSpell!=null) {
+				game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+				game.doAction(new MagicChangeLifeAction(targetSpell.getController(),-1));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent PUNCTURE_BLAST=new MagicSpellCardEvent("Puncture Blast") {
 
 		@Override
@@ -1981,6 +2003,40 @@ public class CardEventDefinitions {
 		}
 	};
 
+	private static final MagicSpellCardEvent BREATH_OF_DARIGAAZ=new MagicSpellCardEvent("Breath of Darigaaz") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,
+				new MagicKickerChoice(null,MagicManaCost.TWO,false),
+				new Object[]{cardOnStack},this,
+				"Breath of Darigaaz deals 1 damage to each creature without flying and each player. "+
+				"If Breath of Darigaaz was kicked$$, it deals 4 damage to each creature without flying and each player instead.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			final MagicSource source=cardOnStack.getSource();
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final int amount=(Integer)choiceResults[1]>0?4:1;
+			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+			for (final MagicTarget target : targets) {
+
+				final MagicDamage damage=new MagicDamage(source,target,amount,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+			for (final MagicPlayer player : game.getPlayers()) {
+				
+				final MagicDamage damage=new MagicDamage(source,player,amount,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent CHAIN_REACTION=new MagicSpellCardEvent("Chain Reaction") {
 
 		@Override
@@ -2384,6 +2440,30 @@ public class CardEventDefinitions {
 
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			game.doAction(new MagicDrawAction((MagicPlayer)data[1],(Integer)data[2]));
+		}
+	};
+	
+	private static final MagicSpellCardEvent OVERRUN=new MagicSpellCardEvent("Overrun") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack,player},this,
+				"Creatures you control get +3/+3 and gain trample until end of turn.");
+		}
+	
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			for (final MagicTarget target : targets) {
+				
+				final MagicPermanent creature=(MagicPermanent)target;
+				game.doAction(new MagicChangeTurnPTAction(creature,3,3));
+				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+			}
 		}
 	};
 
@@ -3154,6 +3234,8 @@ public class CardEventDefinitions {
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());	
 	private static final MagicSpellCardEvent TORPOR_DUST=new MagicPlayAuraEvent("Torpor Dust",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(3,0));
+	private static final MagicSpellCardEvent UNQUESTIONED_AUTHORITY=new MagicPlayAuraEvent("Unquestioned Authority",
+			MagicTargetChoice.POS_TARGET_CREATURE,MagicUnblockableTargetPicker.getInstance());
 	private static final MagicSpellCardEvent VOLCANIC_STRENGTH=new MagicPlayAuraEvent("Volcanic Strength",
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 	private static final MagicSpellCardEvent WEAKNESS=new MagicPlayAuraEvent("Weakness",
@@ -3203,6 +3285,7 @@ public class CardEventDefinitions {
 		NATURALIZE,
 		OFFERING_TO_ASHA,
 		PONGIFY,
+		PSYCHIC_BARRIER,
 		PLUMMET,
 		PUNCTURE_BLAST,
 		PUTREFY,
@@ -3244,6 +3327,7 @@ public class CardEventDefinitions {
 		BLACK_SUNS_ZENITH,
 		BLAZE,
 		BLIGHTNING,
+		BREATH_OF_DARIGAAZ,
 		CHAIN_REACTION,
 		CRUEL_EDICT,
 		CORPSEHATCH,
@@ -3261,6 +3345,7 @@ public class CardEventDefinitions {
 		MARSH_CASUALTIES,
 		MARTIAL_COUP,
 		MIND_SPRING,
+		OVERRUN,
 		OVERWHELMING_STAMPEDE,
 		PULSE_OF_THE_TANGLE,
 		REANIMATE,
@@ -3314,6 +3399,7 @@ public class CardEventDefinitions {
 		SOUL_LINK,
 		SPIDER_UMBRA,
 		TORPOR_DUST,
+		UNQUESTIONED_AUTHORITY,
 		VOLCANIC_STRENGTH,
 		WEAKNESS
 	);

@@ -27,12 +27,9 @@ import magic.ui.widget.ZoneBackgroundLabel;
 public class VersionPanel extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
-		
-	private static final String VERSION = "Magarena 1.11";
-	private static final String AUTHOR = "by ubeefx";
-	private static final String WEB = "http://magarena.dyndns.org";
-	private static final String SPACING = "   ";
-	private static final String VERSION_TEXT = VERSION + SPACING + AUTHOR + SPACING + WEB;
+	
+	private static final String VERSION = "1.13";
+	private static final String VERSION_TEXT = "Magarena Limited Edition "+VERSION+"   by ubeefx";
 
 	private static final Border LOGO_BORDER=BorderFactory.createMatteBorder(2,2,2,2,new Color(0x8C,0x78,0x53));
 	

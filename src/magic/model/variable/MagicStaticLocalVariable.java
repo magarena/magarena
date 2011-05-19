@@ -45,6 +45,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 	public static int spiritOfTheHearth; // You can't be target of spells or abilities your opponent controls.
 	private static int tolsimirWolfblood;
 	private static int trueConviction;
+	private static int urabraskTheHidden;
 	private static int veteranArmorer;
 	private static int windbriskRaptor;
 	
@@ -167,6 +168,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 			}
 			if (controller.getCount(firesOfYavimaya)>0||
 				controller.getCount(madrushCyclops)>0||
+				controller.getCount(urabraskTheHidden)>0||
 				(controller.getCount(goblinChieftain)>0&&permanent.hasSubType(MagicSubType.Goblin))) {
 				flags|=MagicAbility.Haste.getMask();
 			}
@@ -246,6 +248,7 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		spiritOfTheHearth=definitions.getCard("Spirit of the Hearth").getIndex();
 		tolsimirWolfblood=definitions.getCard("Tolsimir Wolfblood").getIndex();
 		trueConviction=definitions.getCard("True Conviction").getIndex();
+		urabraskTheHidden=definitions.getCard("Urabrask the Hidden").getIndex();
 		veteranArmorer=definitions.getCard("Veteran Armorer").getIndex();
 		windbriskRaptor=definitions.getCard("Windbrisk Raptor").getIndex();
 	}

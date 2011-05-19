@@ -58,6 +58,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPlayOgreUnlessEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
+import magic.model.event.MagicTapEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.target.MagicBounceTargetPicker;
@@ -899,6 +900,39 @@ public class TriggerDefinitions {
 		}		
     };
 
+    private static final MagicTrigger GOBLIN_PILEDRIVER=new MagicTrigger(MagicTriggerType.WhenAttacks,"Goblin Piledriver") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			if (permanent==data) {
+				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
+					"Goblin Piledriver gets +2/+0 until end of turn for each other attacking Goblin.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			int power=0;
+			final MagicPermanent creature=(MagicPermanent)data[0];
+			final Collection<MagicTarget> targets=game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+			for (final MagicTarget target : targets) {
+
+				if (creature!=target) {
+					final MagicPermanent attacker=(MagicPermanent)target;
+					if (attacker.hasSubType(MagicSubType.Goblin)) {
+						power+=2;
+					}
+				}
+			}
+			if (power>0) {
+				game.doAction(new MagicChangeTurnPTAction(creature,power,0));
+			}
+		}
+    };
+    
     private static final MagicTrigger GUARD_GOMAZOA=new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Guard Gomazoa",1) {
 
 		@Override
@@ -1664,7 +1698,7 @@ public class TriggerDefinitions {
 			}
 		}
     };
-    
+        
     private static final MagicTrigger NEMESIS_OF_REASON=new MagicTrigger(MagicTriggerType.WhenAttacks,"Nemesis of Reason") {
 
 		@Override
@@ -1851,6 +1885,24 @@ public class TriggerDefinitions {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 		
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+		}
+    };
+    
+    private static final MagicTrigger PHYREXIAN_RAGER=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Phyrexian Rager") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw a card and you lose 1 life.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=(MagicPlayer)data[0];
+			game.doAction(new MagicDrawAction(player,1));
+			game.doAction(new MagicChangeLifeAction(player,-1));
 		}
     };
     
@@ -2270,6 +2322,51 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger SHEOLDRED_WHISPERING_ONE1=new MagicTrigger(MagicTriggerType.AtUpkeep,"Sheoldred, Whispering One") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,MagicGraveyardTargetPicker.getInstance(),
+					new Object[]{player},this,"Return target creature card$ from your graveyard to the battlefield.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicCard card=event.getTarget(game,choiceResults,0);
+			if (card!=null) {
+				game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+			}
+		}
+    };
+    
+    private static final MagicTrigger SHEOLDRED_WHISPERING_ONE2=new MagicTrigger(MagicTriggerType.AtUpkeep,"Sheoldred, Whispering One") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			if (player!=data) {
+				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent,data},this,"Your opponent sacrifices a creature.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer opponent=(MagicPlayer)data[1];
+			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+				game.addEvent(new MagicSacrificePermanentEvent((MagicPermanent)data[0],opponent,MagicTargetChoice.SACRIFICE_CREATURE));
+			}
+		}
+    };
+    
 	private static final MagicTrigger SHIVAN_WURM=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Shivan Wurm") {
 
 		@Override
@@ -2549,7 +2646,31 @@ public class TriggerDefinitions {
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.TUKTUK_THE_RETURNED_TOKEN_CARD));
 		}
     };
-        
+
+    private static final MagicTrigger URABRASK_THE_HIDDEN=new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay,"Urabrask the Hidden") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPermanent otherPermanent=(MagicPermanent)data;
+			if (otherPermanent.isCreature()&&otherPermanent.getController()!=permanent.getController()) {
+				return new MagicTapEvent(otherPermanent);
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+		}
+
+		@Override
+		public boolean usesStack() {
+
+			return false;
+		}		
+    };
+    
     private static final MagicTrigger VENSER_SHAPER_SAVANT=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Venser, Shaper Savant") {
 
 		@Override
@@ -2775,6 +2896,8 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger BATTERSKULL=new MagicLivingWeaponTrigger("Batterskull");
+    
     private static final MagicTrigger FLAYER_HUSK=new MagicLivingWeaponTrigger("Flayer Husk");
     
     private static final MagicTrigger MAGE_SLAYER=new MagicTrigger(MagicTriggerType.WhenAttacks,"Mage Slayer",1) {
@@ -2884,6 +3007,8 @@ public class TriggerDefinitions {
 		}
     };
 
+    private static final MagicTrigger SICKLESLICER=new MagicLivingWeaponTrigger("Sickleslicer");
+    
     private static final MagicTrigger SHIELD_OF_THE_RIGHTEOUS=new MagicTrigger(MagicTriggerType.WhenBlocks,"Shield of the Righteous") {
 
 		@Override
@@ -3055,6 +3180,39 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger SWORD_OF_WAR_AND_PEACE=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of War and Peace") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicDamage damage=(MagicDamage)data;
+			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
+				final MagicPlayer player=permanent.getController();
+				final MagicTarget targetPlayer=damage.getTarget();
+				return new MagicEvent(permanent,player,new Object[]{permanent,player,targetPlayer},this,
+					"Sword of War and Peace deals damage to "+targetPlayer.getName()+" equal to the number of cards in his or her hand and "+
+					"you gain 1 life for each card in your hand.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer targetPlayer=(MagicPlayer)data[2];
+			final int amount1=targetPlayer.getHand().size();
+			if (amount1>0) {
+				final MagicDamage damage=new MagicDamage((MagicSource)data[0],targetPlayer,amount1,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+			final MagicPlayer player=(MagicPlayer)data[1];
+			final int amount2=player.getHand().size();
+			if (amount2>0) {
+				game.doAction(new MagicChangeLifeAction(player,amount2));
+			}
+		}
+    };
+    
     private static final MagicTrigger SYLVOK_LIFESTAFF=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Sylvok Lifestaff") {
 
 		@Override
@@ -3195,6 +3353,28 @@ public class TriggerDefinitions {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.ELDRAZI_SPAWN_TOKEN_CARD));
+		}		
+    };
+    
+    private static final MagicTrigger BITTERBLOSSOM=new MagicTrigger(MagicTriggerType.AtUpkeep,"Bitterblossom") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,new Object[]{player},this,
+					"You lose 1 life and put a 1/1 black Faerie Rogue creature token with flying onto the battlefield.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			final MagicPlayer player=(MagicPlayer)(MagicPlayer)data[0];
+			game.doAction(new MagicChangeLifeAction(player,-1));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.FAERIE_ROGUE_TOKEN_CARD));
 		}		
     };
     
@@ -3540,6 +3720,45 @@ public class TriggerDefinitions {
 		}
     };
 
+    private static final MagicTrigger SHRINE_OF_BURNING_RAGE1=new MagicTrigger(MagicTriggerType.AtUpkeep,"Shrine of Burning Rage") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			if (player==data) {
+				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Put a charge counter on Shrine of Burning Rage.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+		}		
+    };
+    
+    private static final MagicTrigger SHRINE_OF_BURNING_RAGE2=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Shrine of Burning Rage") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			final MagicCard card=((MagicCardOnStack)data).getCard();
+			if (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) {
+				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Put a charge counter on Shrine of Burning Rage.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+		}		
+    };
+    
     private static final MagicTrigger SKULLCAGE=new MagicTrigger(MagicTriggerType.AtUpkeep,"Skullcage") {
 
 		@Override
@@ -3855,6 +4074,22 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger UNQUESTIONED_AUTHORITY=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Unquestioned Authority") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+			
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw a card.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+		}
+    };
+    
 	private static final Collection<MagicTrigger> TRIGGERS=Arrays.<MagicTrigger>asList(
 		ACIDIC_SLIME,
 		AFFA_GUARD_HOUND,
@@ -3895,6 +4130,7 @@ public class TriggerDefinitions {
 	    GHOST_COUNCIL_OF_ORZHOVA,
 	    GRAVE_TITAN1,
 	    GRAVE_TITAN2,
+	    GOBLIN_PILEDRIVER,
 	    GOBLIN_SHORTCUTTER,
 	    GUARD_GOMAZOA,
 	    GUARDIAN_SERAPH,
@@ -3941,6 +4177,7 @@ public class TriggerDefinitions {
 	    PERILOUS_MYR,
 	    PERIMETER_CAPTAIN,
 	    OROS_THE_AVENGER,
+	    PHYREXIAN_RAGER,
 	    PHYREXIAN_VATMOTHER,
 	    PIERCE_STRIDER,
 	    PREDATOR_DRAGON,
@@ -3956,6 +4193,8 @@ public class TriggerDefinitions {
 	    SKELETAL_VAMPIRE,
 	    SHADOWMAGE_INFILTRATOR,
 	    SKINRENDER,
+	    SHEOLDRED_WHISPERING_ONE1,
+	    SHEOLDRED_WHISPERING_ONE2,
 	    SHIVAN_WURM,
 	    SOULS_OF_THE_FAULTLESS,
 	    SPHINX_OF_LOST_TRUTHS,
@@ -3976,6 +4215,7 @@ public class TriggerDefinitions {
 	    TREVA_THE_RENEWER,
 	    TRYGON_PREDATOR,
 	    TUKTUK_THE_EXPLORER,    
+	    URABRASK_THE_HIDDEN,
 	    VENSER_SHAPER_SAVANT,
 	    VICTORYS_HERALD,
 	    VIGOR1,
@@ -3986,12 +4226,14 @@ public class TriggerDefinitions {
 	    WORT_BOGGART_AUNTIE,
 	    WREXIAL_THE_RISEN_DEEP,
 	    WURMCOIL_ENGINE,
+	    BATTERSKULL,
 	    FLAYER_HUSK,
 	    MAGE_SLAYER,
 	    MASK_OF_MEMORY,
 	    MASK_OF_RIDDLES,
 	    QUIETUS_SPIKE,
 	    RONIN_WARCLUB,
+	    SICKLESLICER,
 	    SHIELD_OF_THE_RIGHTEOUS,
 	    SKULLCLAMP,
 	    SPECTERS_SHROUD,
@@ -4000,6 +4242,7 @@ public class TriggerDefinitions {
 	    SWORD_OF_FEAST_AND_FAMINE,
 	    SWORD_OF_FIRE_AND_ICE,
 	    SWORD_OF_LIGHT_AND_SHADOW,
+	    SWORD_OF_WAR_AND_PEACE,
 	    SYLVOK_LIFESTAFF,
 	    BLOOD_CRYPT,
 	    BREEDING_POOL,
@@ -4048,6 +4291,7 @@ public class TriggerDefinitions {
 	    SEACHROME_COAST,
 	    RAGING_RAVINE,
 	    AWAKENING_ZONE,
+	    BITTERBLOSSOM,
 	    DISSIPATION_FIELD,
 	    DEBTORS_KNELL,
 	    FERVENT_CHARGE,
@@ -4063,6 +4307,8 @@ public class TriggerDefinitions {
 	    ELDRAZI_MONUMENT,
 	    SERRATED_ARROWS1,
 	    SERRATED_ARROWS2,
+	    SHRINE_OF_BURNING_RAGE1,
+	    SHRINE_OF_BURNING_RAGE2,
 	    SKULLCAGE,
 	    ARMADILLO_CLOAK,
 	    ELEPHANT_GUIDE,
@@ -4076,7 +4322,8 @@ public class TriggerDefinitions {
 	    RANCOR,
 	    SNAKE_UMBRA,
 	    SOUL_LINK1,
-	    SOUL_LINK2
+	    SOUL_LINK2,
+	    UNQUESTIONED_AUTHORITY
 	);
 	
 	public static void addTriggers() {

@@ -25,7 +25,7 @@ public class PlayerAvatar {
 		smallIcon=new ImageIcon(smallImage);
 	}
 	
-	public ImageIcon getIcon(final int index,final int size) {
+	public ImageIcon getIcon(final int size) {
 
 		switch (size) {
 			case 2: return mediumIcon;

@@ -182,12 +182,12 @@ public class MagicTournament {
 		return players;
 	}
 		
-	public MagicGame nextGame() {
+	public MagicGame nextGame(final boolean sound) {
 
 		final MagicPlayer player=new MagicPlayer(configuration,playerDefinitions[0],0);
 		final MagicPlayer opponent=new MagicPlayer(configuration,playerDefinitions[opponentIndex],1);
 		final MagicPlayer start=startPlayer==0?player:opponent;
-		return new MagicGame(this,MagicDefaultGameplay.getInstance(),new MagicPlayer[]{player,opponent},start);
+		return new MagicGame(this,MagicDefaultGameplay.getInstance(),new MagicPlayer[]{player,opponent},start,sound);
 	}
 	
 	public int getNrOfPlayers() {

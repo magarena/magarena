@@ -1,5 +1,6 @@
 package magic.model.phase;
 
+import magic.data.SoundEffects;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -46,4 +47,10 @@ public class MagicEndOfTurnPhase extends MagicPhase {
 		game.executeTrigger(MagicTriggerType.AtEndOfTurn,game.getTurnPlayer());
 		game.setStep(MagicStep.ActivePlayer);
 	}	
+	
+	@Override
+	protected void executeEndOfPhase(final MagicGame game) {
+		
+		SoundEffects.getInstance().playClip(game,SoundEffects.TURN_SOUND);
+	}
 }

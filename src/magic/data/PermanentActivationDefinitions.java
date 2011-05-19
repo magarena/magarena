@@ -398,6 +398,8 @@ public class PermanentActivationDefinitions {
 
 	private static final MagicPermanentActivation CHARGING_TROLL=new MagicRegenerationActivation("Charging Troll",MagicManaCost.GREEN);
 
+	private static final MagicPermanentActivation CUDGEL_TROLL=new MagicRegenerationActivation("Cudgel Troll",MagicManaCost.GREEN);
+	
 	private static final MagicPermanentActivation CUNNING_SPARKMAGE=new MagicPermanentActivation(
 			"Cunning Sparkmage",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
 
@@ -1569,6 +1571,8 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
+	private static final MagicPermanentActivation SHIVAN_DRAGON=new MagicPumpActivation("Shivan Dragon",MagicManaCost.RED,1,0);
+	
 	private static final MagicPermanentActivation SKELETAL_VAMPIRE2=new MagicPermanentActivation("Skeletal Vampire",
 			new MagicCondition[]{MagicCondition.CAN_REGENERATE_CONDITION,MagicCondition.CONTROL_BAT_CONDITION,new MagicSingleActivationCondition()},
 			new MagicActivationHints(MagicTiming.Pump)) {
@@ -2187,6 +2191,28 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
+	private static final MagicPermanentActivation BATTERSKULL=new MagicPermanentActivation("Batterskull",
+			new MagicCondition[]{MagicManaCost.THREE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Return Batterskull to its owner's hand.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
+		}
+	};
+	
 	private static final MagicPermanentActivation BRITTLE_EFFIGY=new MagicPermanentActivation("Brittle Effigy",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
 
@@ -2351,6 +2377,42 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
+	private static final MagicPermanentActivation SHRINE_OF_BURNING_RAGE=new MagicPermanentActivation("Shrine of Burning Rage",
+		new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.THREE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			final MagicPermanent permanent=(MagicPermanent)source;
+			return new MagicEvent[]{
+				new MagicTapEvent(permanent),
+				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE),
+				new MagicSacrificeEvent(permanent)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+				new MagicDamageTargetPicker(source.getCounters(MagicCounterType.Charge)),new Object[]{source},this,
+				"Shrine of Burning Rage deals damage equal to the number of charge counters on it to target creature or player$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicTarget target=event.getTarget(game,choiceResults,0);
+			if (target!=null) {
+				final MagicPermanent source=(MagicPermanent)data[0];
+				final int amount=source.getCounters(MagicCounterType.Charge);
+				if (amount>0) {
+					final MagicDamage damage=new MagicDamage(source,target,amount,false);
+					game.doAction(new MagicDealDamageAction(damage));
+				}
+			}
+		}
+	};
+	
 	private static final MagicPermanentActivation TRIP_NOOSE=new MagicPermanentActivation("Trip Noose",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO.getCondition()},new MagicActivationHints(MagicTiming.Tapping)) {
 
@@ -2623,6 +2685,7 @@ public class PermanentActivationDefinitions {
 		CINDER_ELEMENTAL,
 		CHAMELEON_COLOSSUS,
 		CHARGING_TROLL,
+		CUDGEL_TROLL,
 		CUNNING_SPARKMAGE,
 		CURSECATCHER,
 		DAUNTLESS_ESCORT,
@@ -2675,6 +2738,7 @@ public class PermanentActivationDefinitions {
 		SIEGE_GANG_COMMANDER,
 		SILKBIND_FAERIE,
 		SILVOS_ROGUE_ELEMENTAL,
+		SHIVAN_DRAGON,
 		SKELETAL_VAMPIRE1,
 		SKELETAL_VAMPIRE2,
 		SKITHIRYX1,
@@ -2706,11 +2770,13 @@ public class PermanentActivationDefinitions {
 		RISE_OF_THE_HOBGOBLINS,
 		SEAL_OF_DOOM,
 		SEAL_OF_FIRE,
+		BATTERSKULL,
 		BRITTLE_EFFIGY,
 		CHIMERIC_MASS,
 		MIND_STONE,
 		MOONGLOVE_EXTRACT,
 		SERRATED_ARROWS,
+		SHRINE_OF_BURNING_RAGE,
 		TRIP_NOOSE,
 		CELESTIAL_COLONNADE,
 		CREEPING_TAR_PIT,
