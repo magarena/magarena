@@ -1,0 +1,46 @@
+<project name="Magarena" basedir="." default="jar">
+  <description>
+    ANT Build file for Magarena.
+  </description>
+  <property environment="env"/>
+  <property name="debuglevel" value="source,lines,vars"/>
+  <property name="target" value="1.6"/>
+  <property name="source" value="1.6"/>
+
+  <!-- init - Create temporary directory to build the program -->
+  <target name="init">
+    <mkdir dir="build"/>
+  </target>
+
+  <!-- clean - Remove temporary directory -->
+  <target name="clean">
+    <delete dir="build"/>
+  </target>
+
+  <!-- build - Compile sources and copy resources to build directory -->
+  <target depends="init" name="build">
+    <javac debug="true" debuglevel="${debuglevel}" destdir="build" source="${source}" target="${target}">
+      <src path="src"/>
+    </javac>
+    <copy includeemptydirs="false" todir="build">
+      <fileset dir="resources">
+        <exclude name="**/.svn"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- jar (default target) - Create .jar file -->
+  <target depends="build" name="jar">
+    <jar destfile="launch4j/Magarena.jar" basedir="build" includes="**/*.*">
+      <manifest>
+        <attribute name="Main-Class" value="magic.MagicMain" />
+      </manifest>
+    </jar>
+  </target>
+
+  <!-- javadoc -  Generate Javadoc -->
+  <target name="javadoc">
+    <javadoc sourcepath="src" destdir="javadoc" />
+  </target>
+
+</project>
