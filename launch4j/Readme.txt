@@ -1,15 +1,10 @@
-Magarena Limited Edition by ubeefx
-==================================
-
-Project page url : http://magarena.dyndns.org or http://code.google.com/p/arena-card-game/
-
-The Limited Edition needs a premade Magarena data folder that must be downloaded separately.
-The download comes as a password protected zip archive and the location can be found on the forum.
-This archive must be unzipped to the same folder as where this release is unzipped.
-The data folder is not fully compatible with the regular release of Magarena.
+Magarena 
+========
+Homepage: http://magarena.googlecode.com
+Forum: http://www.slightlymagic.net/forum/viewforum.php?f=82
 
 There must be a Java Runtime 6 (java.com) installed on your computer to play.
-An executable is provided for Windows. To execute the Java jar, use java -Xmx256m -jar Magarena.jar.
+An executable is provided for Windows. On Linux, execute ./Magarena.sh
 
 Magarena supports the following keyboard shortcuts :
 - Space or Right key : action button
@@ -17,16 +12,26 @@ Magarena supports the following keyboard shortcuts :
 - Enter key : switch between graphical and text mode
 - F1 or M key : show or hide game messages
 
-The desired AI can be selected in the preferences.
-Recommended MiniMax AI difficulty level for the best balance of speed and strength is the default 6.
+The desired AI can be selected in the preferences.  Recommended MiniMax AI
+difficulty level for the best balance of speed and strength is the default 6.
 The Vegas AI should be fast on all difficulty levels.
 
-Thanks to everyone one the CCGHQ forum (slightlymagic.net).
+Thanks to ubeefx for creating such a great game
 Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
 Thanks to Salasnet for the felt theme and pedro1973 for the dark battle theme.
 Thanks to singularita for creating the scripts to add over 300 additional creature cards.
 Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search AI.
+Thanks to everyone on the CCGHQ forum (slightlymagic.net).
+
 Thanks for your support and have fun!
+
+Release 1.14 (May XX, 2011)
+============
+
+- default cube (600 cards)
+- all cube (900 cards)
+
+- restored ability to download card images from the WWW
 
 Release LE 1.13 (April 24, 2011)
 ===============
