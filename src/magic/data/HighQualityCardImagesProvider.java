@@ -40,7 +40,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 		final StringBuffer buffer=new StringBuffer();
 		buffer.append(MagicMain.getGamePath()).append(File.separator);
 		buffer.append(cardDefinition.isToken()?"tokens":"cards").append(File.separator);
-		buffer.append(cardDefinition.getImageName())
+		buffer.append(cardDefinition.getImageName());
         buffer.append(imageIndex>0?String.valueOf(imageIndex+1):"");
 		buffer.append(IMAGE_EXTENSION);
 		return buffer.toString();

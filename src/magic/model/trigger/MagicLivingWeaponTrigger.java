@@ -48,7 +48,7 @@ public class MagicLivingWeaponTrigger extends MagicTrigger {
         //attach the equipment to the token
         final MagicAttachEquipmentAction attach_equip = new MagicAttachEquipmentAction(
                 (MagicPermanent)data[0],
-                action.getPermanent());
-        game.doAction(attach_equip)
+                play_token.getPermanent());
+        game.doAction(attach_equip);
 	}
 }
