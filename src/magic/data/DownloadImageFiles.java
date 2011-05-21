@@ -12,15 +12,19 @@ import java.util.ArrayList;
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 
+/** 
+ * Download the necessary images from the WWW
+ */
 public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 
 	private static final long serialVersionUID = 1L;
 
 	public DownloadImageFiles(final String filename) {
-	
 		try {
 			loadDownloadImageFiles(filename);
-		} catch (final Exception ex) {}
+		} catch (final Exception ex) {
+            System.err.println("ERROR during DownloadImageFiles");
+        }
 	}	
 	
 	private void loadDownloadImageFiles(final String filename) throws IOException {
