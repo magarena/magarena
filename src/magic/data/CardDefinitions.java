@@ -17,6 +17,9 @@ import magic.model.MagicStaticType;
 import magic.model.MagicType;
 import magic.model.event.MagicTiming;
 
+/**
+ * Load card definitions from cards.txt and cards2.txt
+ */
 public class CardDefinitions {
 
 	private static final CardDefinitions INSTANCE=new CardDefinitions();
@@ -30,7 +33,6 @@ public class CardDefinitions {
 	private final Map<String,MagicCardDefinition> cardsMap;
 	
 	private CardDefinitions() {
-		
 		cards=new ArrayList<MagicCardDefinition>();
 		landCards=new ArrayList<MagicCardDefinition>();
 		spellCards=new ArrayList<MagicCardDefinition>();
@@ -38,8 +40,10 @@ public class CardDefinitions {
 	}
 	
 	private void setProperty(final MagicCardDefinition card,final String property,final String value) {
-		
-		if ("cube".equals(property)) {
+	
+        if ("image".equals(property)) {
+            card.setImageURL(value);
+        } if ("cube".equals(property)) {
 			if ("default".equals(value)) {
 				CubeDefinitions.getInstance().getCubeDefinition("all").add(card.getName());
 			}

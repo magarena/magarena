@@ -35,11 +35,11 @@ public class MagicMain {
 	public static void main(String args[]) {		
 
 		initialize();
-		if (new File(gamePath,"ubeefx.txt").exists()) {
+		//if (new File(gamePath,"ubeefx.txt").exists()) {
 			new MagicFrame();
-		} else {
-			System.out.println("Incompatible data folder!");
-		}
+		//} else {
+		//	System.out.println("Incompatible data folder!");
+		//}
 	}		
 	
 	public static String getGamePath() {
