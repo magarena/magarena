@@ -57,7 +57,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 		
 		reader.close();
 		
-		final File cardsPathFile=new File(gamePathFile,"hqcards");
+		final File cardsPathFile=new File(gamePathFile,"cards");
 		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
 			
 			final String imageURL=cardDefinition.getImageURL();
