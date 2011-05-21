@@ -58,7 +58,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem playGameItem;
 	private JMenuItem resetGameItem;
 	private JMenuItem concedeGameItem;
-	private JMenuItem preferencesItem;
+    private JMenuItem downloadImagesItem;	
+    private JMenuItem preferencesItem;
 	private JMenuItem quitItem;
 	private JMenuItem cardExplorerItem;
 	private JMenuItem keywordsItem;
@@ -238,7 +239,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		tournamentMenu.addSeparator();
 				
-		preferencesItem=new JMenuItem("Preferences...");
+        downloadImagesItem = new JMenuItem("Download images");
+        downloadImagesItem.addActionListener(this);
+		tournamentMenu.add(downloadImagesItem);
+        
+        preferencesItem=new JMenuItem("Preferences");
 		preferencesItem.addActionListener(this);
 		tournamentMenu.add(preferencesItem);
 		
@@ -464,6 +469,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			resetGame();
 		} else if (source==concedeGameItem) {
 			concedeGame();
+        } else if (source==downloadImagesItem) {
+            new DownloadImagesDialog(this);
 		} else if (source==preferencesItem) {
 			new PreferencesDialog(this);
 		} else if (source==quitItem) {

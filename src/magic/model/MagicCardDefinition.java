@@ -57,6 +57,7 @@ public class MagicCardDefinition {
 
 	private final String name;
 	private final String fullName;
+	private String imageURL;
 	private int index=-1;
 	private int value=0;
 	private int removal=0;
@@ -133,6 +134,14 @@ public class MagicCardDefinition {
 		
 		return isBasic()?2:1;
 	}
+
+    public void setImageURL(final String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
 		
 	public void setValue(final int value) {
 		

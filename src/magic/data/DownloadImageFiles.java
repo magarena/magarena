@@ -60,11 +60,11 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 		final File cardsPathFile=new File(gamePathFile,"hqcards");
 		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
 			
-			final String imageUrl=cardDefinition.getImageUrl();
-			if (imageUrl!=null) {
+			final String imageURL=cardDefinition.getImageURL();
+			if (imageURL!=null) {
 				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName()+".jpg");
 				if (!imageFile.exists()) {
-					add(new DownloadImageFile(imageFile,new URL(imageUrl)));
+					add(new DownloadImageFile(imageFile,new URL(imageURL)));
 				}
 			}
 		}
