@@ -43,7 +43,7 @@ public class CardDefinitions {
 	
         if ("image".equals(property)) {
             card.setImageURL(value);
-        } if ("cube".equals(property)) {
+        } else if ("cube".equals(property)) {
 			if ("default".equals(value)) {
 				CubeDefinitions.getInstance().getCubeDefinition("all").add(card.getName());
 			}

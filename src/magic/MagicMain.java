@@ -33,27 +33,19 @@ public class MagicMain {
 	}
 	
 	public static void main(String args[]) {		
-
 		initialize();
-		//if (new File(gamePath,"ubeefx.txt").exists()) {
-			new MagicFrame();
-		//} else {
-		//	System.out.println("Incompatible data folder!");
-		//}
+        new MagicFrame();
 	}		
 	
 	public static String getGamePath() {
-
 		return gamePath;
 	}
 	
 	public static String getModsPath() {
-		
 		return getGamePath()+File.separatorChar+MODS_PATH;
 	}
 
 	public static void initializeEngine() throws IOException {
-
 		CardDefinitions.getInstance().loadCardDefinitions();
 		CubeDefinitions.getInstance().loadCubeDefinitions();
 		KeywordDefinitions.getInstance().loadKeywordDefinitions();
@@ -66,7 +58,6 @@ public class MagicMain {
 	}
 	
 	public static void initialize() {
-		
 		try {
 			new File(getGamePath()).mkdir();
 			new File(getModsPath()).mkdir();
