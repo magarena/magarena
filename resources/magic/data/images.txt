@@ -1,6 +1,6 @@
 >images
 >mods
->hqcards
+>cards
 Forest2.jpg;http://magiccards.info/scans/en/uh/140.jpg
 Island2.jpg;http://magiccards.info/scans/en/uh/137.jpg
 Mountain2.jpg;http://magiccards.info/scans/en/uh/139.jpg
