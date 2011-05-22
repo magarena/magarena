@@ -28,12 +28,14 @@ public class AvatarImages {
 		
 		final File[] files=avatarPath.listFiles();
 		names=new Vector<String>();
-		for (final File file : files) {
-		
-			if (file.isDirectory()) {
-				names.add(file.getName());
-			}
-		}
+		if (files != null) {
+            for (final File file : files) {
+            
+                if (file.isDirectory()) {
+                    names.add(file.getName());
+                }
+            }
+        }
 	}
 	
 	public Vector<String> getNames() {
