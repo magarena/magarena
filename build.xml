@@ -19,7 +19,7 @@
 
   <!-- build - Compile sources and copy resources to build directory -->
   <target depends="init" name="build">
-    <javac debug="true" debuglevel="${debuglevel}" destdir="build" source="${source}" target="${target}">
+    <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" destdir="build" source="${source}" target="${target}">
       <src path="src"/>
     </javac>
     <copy includeemptydirs="false" todir="build">
