@@ -153,7 +153,13 @@ public class IconImages {
 	private static ImageIcon loadIcon(final String name) {
 
 		final BufferedImage image=loadImage("icons/"+name);
-		return image!=null?new ImageIcon(image):MISSING2;
+		ImageIcon icon = null;
+        try {
+            icon = new ImageIcon(image);
+        } catch (Error e) {
+
+        }
+        return image != null ? icon : MISSING2;
 	}
 
 	private static ImageIcon loadSymbolIcon(final String name) {
@@ -182,6 +188,8 @@ public class IconImages {
 			return new ImageIcon(Arrays.copyOf(data,size));
 		} catch (final Exception ex) {
 			return MISSING2;
-		}
+		} catch (final Error er) {
+            return MISSING2;
+        }
 	}
 }
