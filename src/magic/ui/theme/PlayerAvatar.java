@@ -11,18 +11,21 @@ public class PlayerAvatar {
 	private static final int MEDIUM_SIZE=LARGE_SIZE/2;
 	private static final int SMALL_SIZE=LARGE_SIZE/4;
 
-	private final ImageIcon largeIcon;
-	private final ImageIcon mediumIcon;
-	private final ImageIcon smallIcon;
+	private ImageIcon largeIcon = null;
+	private ImageIcon mediumIcon = null;
+	private ImageIcon smallIcon = null;
 	
 	public PlayerAvatar(final BufferedImage image) {
-		
-		final Image largeImage=image.getScaledInstance(LARGE_SIZE,LARGE_SIZE,Image.SCALE_SMOOTH);
-		largeIcon=new ImageIcon(largeImage);
-		final Image mediumImage=image.getScaledInstance(MEDIUM_SIZE,MEDIUM_SIZE,Image.SCALE_SMOOTH);
-		mediumIcon=new ImageIcon(mediumImage);
-		final Image smallImage=image.getScaledInstance(SMALL_SIZE,SMALL_SIZE,Image.SCALE_SMOOTH);
-		smallIcon=new ImageIcon(smallImage);
+        try {
+            final Image largeImage=image.getScaledInstance(LARGE_SIZE,LARGE_SIZE,Image.SCALE_SMOOTH);
+            largeIcon=new ImageIcon(largeImage);
+            final Image mediumImage=image.getScaledInstance(MEDIUM_SIZE,MEDIUM_SIZE,Image.SCALE_SMOOTH);
+            mediumIcon=new ImageIcon(mediumImage);
+            final Image smallImage=image.getScaledInstance(SMALL_SIZE,SMALL_SIZE,Image.SCALE_SMOOTH);
+            smallIcon=new ImageIcon(smallImage);
+        } catch (Error err) {
+
+        }
 	}
 	
 	public ImageIcon getIcon(final int size) {
