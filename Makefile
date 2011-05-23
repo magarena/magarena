@@ -1,15 +1,15 @@
 DSC=java -ea -cp $^ magic.DeckStrCal
-MAG:=launch4j/Magarena-$(shell hg id -n).jar
+MAG:=release/Magarena-$(shell hg id -n).jar
 
 tags: $(MAG) 
 	ctags -R .
 
 $(MAG): 
 	-ant
-	-cp launch4j/Magarena.jar $(MAG)
+	-cp release/Magarena.jar $(MAG)
 
 Magarena.exe: $(MAG)
-	cd launch4j-app; ./launch4j ../launch4j/arena.xml
+	cd launch4j; ./launch4j ../release/arena.xml
 
 clean:
 	ant clean

@@ -31,7 +31,7 @@
 
   <!-- jar (default target) - Create .jar file -->
   <target depends="build" name="jar">
-    <jar destfile="launch4j/Magarena.jar" basedir="build" includes="**/*.*">
+    <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
       </manifest>
