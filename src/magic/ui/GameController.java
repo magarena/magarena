@@ -30,7 +30,7 @@ import magic.ui.viewer.GameViewer;
 
 public class GameController {
 
-	private static final long MAX_TEST_MODE_DURATION=100000;
+	private static long MAX_TEST_MODE_DURATION=10000;
 	
 	private final GamePanel gamePanel;
 	private final MagicGame game;
@@ -143,7 +143,11 @@ public class GameController {
 		
 		return choiceClicked;
 	}
-	
+
+    public void setMaxTestGameDuration(final long duration) {
+        MAX_TEST_MODE_DURATION = duration;
+    }
+
 	public void setCardViewer(final CardViewer cardViewer) {
 		
 		this.cardViewer=cardViewer;
@@ -212,7 +216,6 @@ public class GameController {
 	}
 	
 	public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
-
 		final Dimension size=gamePanel.getSize();
 		final Point pointOnScreen=gamePanel.getLocationOnScreen();
 		rect.x-=pointOnScreen.x;
@@ -226,17 +229,15 @@ public class GameController {
 			y=maxY;
 		}
 		imageCardViewer.setCard(cardDefinition,index);
-		imageCardViewer.setLocation(x,y);		
+		imageCardViewer.setLocation(x,y);
 		DelayedViewersThread.getInstance().showViewer(imageCardViewer,GeneralConfig.getInstance().getPopupDelay());
 	}
 	
 	public void hideInfo() {
-		
 		DelayedViewersThread.getInstance().hideViewer(imageCardViewer);
 	}
 
 	public void setSourceCardDefinition(final MagicSource source) {
-		
 		if (source!=null) {
 			sourceCardDefinition=source.getCardDefinition();
 		} else {
@@ -245,73 +246,64 @@ public class GameController {
 	}
 	
 	public MagicCardDefinition getSourceCardDefinition() {
-		
 		return sourceCardDefinition;
 	}
 	
 	public void focusViewers(final int handGraveyard,final int stackCombat) {
-
 		gamePanel.focusViewers(handGraveyard,stackCombat);
 	}
 	
 	public void registerChoiceViewer(final ChoiceViewer choiceViewer) {
-		
 		choiceViewers.add(choiceViewer);
 	}
 	
 	private void showValidChoices() {
-		
-		SwingUtilities.invokeLater(new Runnable() {
-
-			public void run() {
-				
-				for (final ChoiceViewer choiceViewer : choiceViewers) {
-					
-					choiceViewer.showValidChoices(validChoices);
-				}
-			}
-		});
+        try {
+            SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    
+                    for (final ChoiceViewer choiceViewer : choiceViewers) {
+                        
+                        choiceViewer.showValidChoices(validChoices);
+                    }
+                }
+            });
+        } catch (Error err) {
+            //there will be an error if X windows is not present on Linux
+        }
 	}
-		
+
 	public boolean isCombatChoice() {
-		
 		return combatChoice;
 	}
 	
 	public void clearValidChoices() {
-
 		validChoices=Collections.emptySet();
 		combatChoice=false;
 		showValidChoices();
 	}
 	
 	public void setValidChoices(final Set<Object> validChoices,final boolean combatChoice) {
-		
 		this.validChoices=validChoices;
 		this.combatChoice=combatChoice;
 		showValidChoices();
 	}
 	
 	public Set<Object> getValidChoices() {
-		
 		return validChoices;
 	}
 
-	public void update() {
-		
-		hideInfo();
-		gamePanel.updateInfo();
-		SwingUtilities.invokeLater(new Runnable() {
-
-			public void run() {
-
-				gamePanel.update();
-			}
-		});
-	}
+    public void update() {
+        hideInfo();
+        gamePanel.updateInfo();
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                gamePanel.update();
+            }
+        });
+    }
 	
 	public String getMessageWithSource(final MagicSource source,final String message) {
-
 		if (source==null) {
 			return message;
 		} else {
@@ -320,22 +312,16 @@ public class GameController {
 	}
 		
 	public void showMessage(final MagicSource source,final String message) {
-
 		SwingUtilities.invokeLater(new Runnable() {
-
 			public void run() {
-
 				gameViewer.showMessage(getMessageWithSource(source,message));
 			}
 		});
 	}
 	
 	public void showComponent(final JComponent content) {
-
 		SwingUtilities.invokeLater(new Runnable() {
-
 			public void run() {
-
 				gameViewer.showComponent(content);
 			}
 		});
@@ -355,7 +341,6 @@ public class GameController {
 	}
 
 	private Object[] getPlayerNextEventChoiceResults(final MagicEvent event) {
-
 		final MagicSource source=event.getSource();
 		setSourceCardDefinition(source);
 		final Object choiceResults[]=event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
@@ -365,7 +350,6 @@ public class GameController {
 	}
 
 	private void executeNextEventWithChoices(final MagicEvent event) {
-
 		final Object[] choiceResults;
 		if (testMode||event.getPlayer().getPlayerDefinition().isArtificial()) {
 			choiceResults=getArtificialNextEventChoiceResults(event);
@@ -383,7 +367,6 @@ public class GameController {
 	}
 	
 	public synchronized void resetGame() {
-		
 		if (game.hasUndoPoints()) {
 			resetGame=true;
 			undoClicked();
@@ -391,7 +374,6 @@ public class GameController {
 	}
 	
 	public synchronized void concede() {
-
 		if (!gameConceded&&!game.isFinished()) {
 			game.setLosingPlayer(game.getPlayer(0));
 			game.clearUndoPoints();
@@ -402,7 +384,6 @@ public class GameController {
 	}
 	
 	public void performUndo() {
-		
 		if (resetGame) {
 			resetGame=false;
 			while (game.hasUndoPoints()) {
@@ -415,7 +396,6 @@ public class GameController {
 	}
 
 	public void haltGame() {
-		
 		running.set(false);
 	}
 	
@@ -466,13 +446,13 @@ public class GameController {
 				game.getPhase().executePhase(game);
 			}
 
-			if (testMode) {
-				if (System.currentTimeMillis()-startTime>MAX_TEST_MODE_DURATION) {
-					break;
-				}
-			} else {
-				update();				
-			}
+            if (testMode) {
+                if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
+                    break;
+                }
+            } else {
+                update();
+            }
 		}
 		running.set(false);
 	}	

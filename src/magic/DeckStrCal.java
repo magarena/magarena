@@ -140,6 +140,7 @@ public class DeckStrCal {
         while (!testTournament.isFinished()) {
             final MagicGame game=testTournament.nextGame(false);
             final GameController controller=new GameController(null,game);
+            controller.setMaxTestGameDuration(Long.MAX_VALUE);
             controller.runGame();
             if (testTournament.getGamesPlayed() > played) {
                 System.out.println(
