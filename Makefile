@@ -8,6 +8,9 @@ $(MAG):
 	-ant
 	-cp launch4j/Magarena.jar $(MAG)
 
+Magarena.exe: $(MAG)
+	cd launch4j-app; ./launch4j ../launch4j/arena.xml
+
 clean:
 	ant clean
 
