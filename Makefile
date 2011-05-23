@@ -31,4 +31,4 @@ test: $(MAG)
 	--ai2 RND --games 10 --strength 3
 
 exp/%.log: $(MAG)
-	exp/evaluate_ai.sh $* > $@ 
+	scripts/evaluate_ai.sh $* > $@ 
