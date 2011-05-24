@@ -25,9 +25,9 @@ clean:
 
 test: $(MAG)
 	$(DSC) \
-	--deck1 decks/LSK_G.dec \
-	--ai1 MCTSD \
-	--deck2 decks/LSK_G.dec \
+	--deck1 release/decks/LSK_G.dec \
+	--ai1 VEGAS \
+	--deck2 release/decks/LSK_G.dec \
 	--ai2 RND --games 10 --strength 3
 
 exp/%.log: $(MAG)
