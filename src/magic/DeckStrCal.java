@@ -146,7 +146,7 @@ public class DeckStrCal {
 
             controller.runGame();
             if (testTournament.getGamesPlayed() > played) {
-                System.out.println(
+                System.err.println(
                         deck1 + "\t" +
                         ai1 + "\t" +
                         deck2 + "\t" + 
@@ -159,5 +159,15 @@ public class DeckStrCal {
                 played = testTournament.getGamesPlayed();
             }
         }
+        System.out.println(
+                deck1 + "\t" +
+                ai1 + "\t" +
+                deck2 + "\t" + 
+                ai2 + "\t" +
+                strength + "\t" +
+                testTournament.getGamesTotal() + "\t" +
+                testTournament.getGamesWon() + "\t" +
+                (testTournament.getGamesPlayed() - testTournament.getGamesWon())
+        ); 
     }
 }
