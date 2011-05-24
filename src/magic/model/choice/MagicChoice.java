@@ -52,16 +52,18 @@ public abstract class MagicChoice {
 	
 	/** Gets the choice results for AI. */
 	public List<Object[]> getArtificialChoiceResults(
-			final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+			final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 		
 		final Collection<Object> options=getArtificialOptions(game,event,player,source);
 		final int size=options.size();
 		if (size==1) {
 			return Collections.singletonList(new Object[]{options.iterator().next()});
 		} else if (size>1) {
-			final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
+			final List<Object[]> choiceResultsList=new ArrayList<Object[]>(size);
 			for (final Object option : options) {
-
 				choiceResultsList.add(new Object[]{option});
 			}
 			return choiceResultsList;
