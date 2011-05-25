@@ -12,7 +12,7 @@
   <customProcName>false</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>arena.ico</icon>
+  <icon>magarena.ico</icon>
   <jre>
     <path></path>
     <minVersion>1.6.0</minVersion>
@@ -22,7 +22,7 @@
     <maxHeapSize>256</maxHeapSize>
   </jre>
   <splash>
-    <file>arena.bmp</file>
+    <file>magarena.bmp</file>
     <waitForWindow>true</waitForWindow>
     <timeout>60</timeout>
     <timeoutErr>true</timeoutErr>

@@ -11,14 +11,13 @@ jar: $(MAG)
 exe: $(EXE)
 
 $(MAG): $(SRC) 
-	-ant
-#	-cp release/Magarena.jar $(MAG)
+	ant
 
 tags: $(SRC) 
 	ctags -R .
 
 $(EXE): $(MAG)
-	cd launch4j; ./launch4j ../release/arena.xml
+	cd launch4j; ./launch4j ../release/magarena.xml
 
 clean:
 	ant clean
