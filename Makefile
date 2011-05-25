@@ -18,6 +18,7 @@ $(MAG): $(SRC)
 $(BUILD)/javac.last: $(SRC)
 	-mkdir $(BUILD)
 	javac $(JOPTS) $?
+	cp -r resources/* $(BUILD)
 	touch $@
 
 tags: $(SRC) 
