@@ -1,4 +1,6 @@
 DSC=java -ea -cp $^ magic.DeckStrCal
+BUILD=build
+JOPTS=-Xlint:all -d $(BUILD) -cp $(BUILD):.
 SRC=$(shell find -iname *.java) 
 #MAG:=release/Magarena-$(shell hg id -n).jar
 MAG:=release/Magarena.jar
@@ -13,6 +15,11 @@ exe: $(EXE)
 $(MAG): $(SRC) 
 	ant
 
+$(BUILD)/javac.last: $(SRC)
+	-mkdir $(BUILD)
+	javac $(JOPTS) $?
+	touch $@
+
 tags: $(SRC) 
 	ctags -R .
 
@@ -20,7 +27,8 @@ $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
 
 clean:
-	ant clean
+	-ant clean
+	-rm $(BUILD)/javac.last
 
 test: $(MAG)
 	$(DSC) \

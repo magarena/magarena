@@ -2068,7 +2068,7 @@ public class CardEventDefinitions {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			
-			final MagicPlayer player=(MagicPlayer)cardOnStack.getController();
+			final MagicPlayer player=cardOnStack.getController();
 			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
 				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack,player},this,
 				"Destroy target nonblack creature$. Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. "+

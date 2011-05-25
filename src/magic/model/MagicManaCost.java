@@ -154,7 +154,7 @@ public class MagicManaCost {
 			hasX=true;
 			return true;
 		} else if (symbol>='0'&&symbol<='9') {
-			addType(MagicCostManaType.Colorless,(int)(symbol-'0'));
+			addType(MagicCostManaType.Colorless,symbol-'0');
 			return true;
 		} else {
 			for (final MagicCostManaType type : MagicCostManaType.values()) {

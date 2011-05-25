@@ -30,7 +30,7 @@ public class MagicMayChoice extends MagicChoice {
 		this.choices=choices;
 		for (int index=0;index<choices.length;index++) {
 			
-			final MagicChoice choice=(MagicChoice)choices[index];
+			final MagicChoice choice=choices[index];
 			if (choice instanceof MagicTargetChoice) {
 				targetChoice=(MagicTargetChoice)choice;
 			} else if (choice instanceof MagicPayManaCostChoice) {

@@ -3372,7 +3372,7 @@ public class TriggerDefinitions {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 
-			final MagicPlayer player=(MagicPlayer)(MagicPlayer)data[0];
+			final MagicPlayer player=(MagicPlayer)data[0];
 			game.doAction(new MagicChangeLifeAction(player,-1));
 			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.FAERIE_ROGUE_TOKEN_CARD));
 		}		
