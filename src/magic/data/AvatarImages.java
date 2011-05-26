@@ -57,9 +57,8 @@ public class AvatarImages {
 	}
 	
 	private synchronized void loadAvatars() {
-		
 		final String avatar=GeneralConfig.getInstance().getAvatar();
-		if (avatar!=current) {
+		if (!avatar.equals(current)) {
 			current=avatar;
 			final File files[]=new File(avatarPath,current).listFiles();
 			if (files!=null&&files.length>=2) {
@@ -77,8 +76,7 @@ public class AvatarImages {
 		}
 	}
 	
-	public ImageIcon getAvatarIcon(int index,final int size) {
-
+	public synchronized ImageIcon getAvatarIcon(int index,final int size) {
 		loadAvatars();
 		if (index<0) {
 			index=0;
@@ -89,13 +87,11 @@ public class AvatarImages {
 	}
 	
 	public int getNumberOfAvatars() {
-
 		loadAvatars();
 		return avatars.length;
 	}
 
 	public static AvatarImages getInstance() {
-
 		return INSTANCE;
 	}
 }
