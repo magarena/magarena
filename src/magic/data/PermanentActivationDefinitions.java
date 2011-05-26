@@ -2568,7 +2568,6 @@ public class PermanentActivationDefinitions {
 				
 		@Override
 		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-
 			return MagicColor.Red.getMask()|MagicColor.Green.getMask();
 		}		
 	};

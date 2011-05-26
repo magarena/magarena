@@ -640,10 +640,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		}
 		
 		// From monocolored.
-		if (source.getColoredType() == MagicColoredType.MonoColored &&
+		if (//source.getColoredType() == MagicColoredType.MonoColored &&
             //added to fix bug with Raging Raving creature not able to block
             //creature with protection from monocolored
-            MagicColor.isMono(source.getColorFlags()) &&             
+            MagicColor.isMono(source.getColorFlags()) &&
             MagicAbility.ProtectionFromMonoColored.hasAbility(abilityFlags)) {
 			return true;
 		}
