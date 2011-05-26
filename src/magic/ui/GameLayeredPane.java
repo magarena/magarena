@@ -20,19 +20,19 @@ public class GameLayeredPane extends JLayeredPane {
 		
 		backgroundLabel.setLocation(0,0);
 		add(backgroundLabel);
-		setLayer(backgroundLabel,new Integer(0));
+		setLayer(backgroundLabel,0);
 		
 		gamePanel.setLocation(0,0);
 		add(gamePanel);
-		setLayer(gamePanel,new Integer(1));
+		setLayer(gamePanel,1);
 
 		final CardViewer cardViewer=gamePanel.getImageCardViewer();
 		add(cardViewer);
-		setLayer(cardViewer,new Integer(2));
+		setLayer(cardViewer,2);
 		
 		final LogBookViewer logBookViewer=gamePanel.getLogBookViewer();
 		add(logBookViewer);
-		setLayer(logBookViewer,new Integer(3));
+		setLayer(logBookViewer,3);
 		
 		this.addComponentListener(new ComponentAdapter() {
 

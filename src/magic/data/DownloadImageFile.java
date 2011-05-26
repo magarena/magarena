@@ -2,6 +2,7 @@ package magic.data;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.IOException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -14,24 +15,20 @@ public class DownloadImageFile {
 	private final URL url;
 	
 	public DownloadImageFile(final File file, final URL url) {
-		
 		this.file=file;
 		this.url=url;
 	}
 	
 	public String getFilename() {
-		
 		return file.getName();
 	}
 	
 	public void download(final Proxy proxy) {
-
 		try {
 			final OutputStream outputStream=new BufferedOutputStream(new FileOutputStream(file));
 			final InputStream inputStream=url.openConnection(proxy).getInputStream();
 			final byte buffer[]=new byte[65536];
 			while (true) {
-				
 				final int len=inputStream.read(buffer);
 				if (len<0) {
 					break;
@@ -40,7 +37,10 @@ public class DownloadImageFile {
 			}
 			inputStream.close();
 			outputStream.close();
-		} catch (final Exception ex) {
+		} catch (final IOException ex) {
+            System.err.println("ERROR: unable to download file");
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
 			file.delete();
 		}
 	}

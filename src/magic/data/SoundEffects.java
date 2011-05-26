@@ -25,7 +25,6 @@ public class SoundEffects {
 	}
 	
 	public void playClip(final String name) {
-
 		if (GeneralConfig.getInstance().isSound()) {
 			try {
 				final Clip clip=AudioSystem.getClip();
@@ -33,19 +32,21 @@ public class SoundEffects {
 		        clip.open(inputStream);
 		        inputStream.close();
 		        clip.start();
-		    } catch (Exception e) {}
+		    } catch (final Exception ex) {
+                System.err.println("ERROR: unable to load clip " + name);
+                System.err.println(ex.getMessage());
+                ex.printStackTrace();
+            }
 		}
 	}
 	
 	public void playClip(final MagicGame game,final String name) {
-		
 		if (game.isSound()) {
 			playClip(name);
 		}
 	}
 
 	public static SoundEffects getInstance() {
-		
 		return INSTANCE;
 	}
 } 

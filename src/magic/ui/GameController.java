@@ -30,7 +30,7 @@ import magic.ui.viewer.GameViewer;
 
 public class GameController {
 
-	private static long MAX_TEST_MODE_DURATION=10000;
+	private long MAX_TEST_MODE_DURATION=10000;
 	
 	private final GamePanel gamePanel;
 	private final MagicGame game;

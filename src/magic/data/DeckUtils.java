@@ -3,6 +3,7 @@ package magic.data;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.IOException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -95,7 +96,11 @@ public class DeckUtils {
 				}
 			}			
 			writer.close();
-		} catch (final Exception ex) {}
+		} catch (final IOException ex) {
+            System.err.println("ERROR: unable to save deck");
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
+        }
 	}
 	
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
@@ -133,7 +138,11 @@ public class DeckUtils {
 									deck.add(cardDefinition);
 								}
 							}
-						} catch (final Exception ex) {}
+						} catch (final Exception ex) {
+                            System.err.println("ERROR: unable to load line " + line);
+                            System.err.println(ex.getMessage());
+                            ex.printStackTrace();
+                        }
 					}
 				}
 			}
@@ -160,7 +169,11 @@ public class DeckUtils {
 			}
 			player.setProfile(new MagicPlayerProfile(colorText.toString()));
 			player.setDeck(deck);			
-		} catch (final Exception ex) {}
+		} catch (final IOException ex) {
+            System.err.println("ERROR: unable to load deck " + filename);
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
+        }
 	}
 	
 	private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
