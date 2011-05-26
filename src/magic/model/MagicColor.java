@@ -158,4 +158,12 @@ public enum MagicColor {
 		}
 		return colorText.toString();
 	}
+
+    public static boolean isMono(final int flag) {
+        return flag == Black.getMask() || 
+            flag == Blue.getMask() || 
+            flag == Green.getMask() || 
+            flag == Red.getMask() || 
+            flag == White.getMask();
+    }
 }

@@ -2593,7 +2593,8 @@ public class PermanentActivationDefinitions {
 	
 	private static final MagicPermanentActivation RAGING_RAVINE=new MagicPermanentActivation(
 			"Raging Ravine",new MagicCondition[]{new MagicArtificialCondition(
-					MagicManaCost.TWO_RED_GREEN.getCondition(),MagicManaCost.ONE_RED_RED_GREEN_GREEN.getCondition())},
+					MagicManaCost.TWO_RED_GREEN.getCondition(),
+                    MagicManaCost.ONE_RED_RED_GREEN_GREEN.getCondition())},
 			new MagicActivationHints(MagicTiming.Animate)) {
 
 		@Override
@@ -2611,7 +2612,8 @@ public class PermanentActivationDefinitions {
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        public void executeEvent(final MagicGame game,final MagicEvent
+                event,final Object[] data,final Object[] choiceResults) {
 
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			game.doAction(new MagicBecomesCreatureAction(permanent,RAGING_RAVINE_VARIABLE));

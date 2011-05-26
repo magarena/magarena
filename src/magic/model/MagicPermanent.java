@@ -20,6 +20,7 @@ import magic.model.event.MagicActivation;
 import magic.model.target.MagicTarget;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
+import magic.model.MagicColor;
 
 public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
 
@@ -639,7 +640,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		}
 		
 		// From monocolored.
-		if (source.getColoredType()==MagicColoredType.MonoColored&&MagicAbility.ProtectionFromMonoColored.hasAbility(abilityFlags)) {
+		if (source.getColoredType() == MagicColoredType.MonoColored &&
+            //added to fix bug with Raging Raving creature not able to block
+            //creature with protection from monocolored
+            MagicColor.isMono(source.getColorFlags()) &&             
+            MagicAbility.ProtectionFromMonoColored.hasAbility(abilityFlags)) {
 			return true;
 		}
 		
