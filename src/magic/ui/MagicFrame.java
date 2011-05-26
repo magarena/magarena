@@ -43,8 +43,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String CONCEDE_GAME_ITEM="Concede";
 	private static final String CARD_EXPLORER_ITEM="Explorer";
 	private static final String KEYWORDS_ITEM="Keywords";
-	
-	private static final boolean testGame=System.getProperty("testGame")!=null;
+
+    //java -DtestGame=X to start with a specific game 
+	private static final String testGame=System.getProperty("testGame");
 	
 	private final GeneralConfig config;
 	private final JPanel contentPanel;
@@ -142,10 +143,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void setInitialContent() {
-		
 		setContent(new VersionPanel(this));			
-		if (testGame) {
-			openGame(TestGameBuilder.buildGame());
+		if (testGame != null) {
+			openGame(TestGameBuilder.buildGame(testGame));
 		} 
 	}
 	
