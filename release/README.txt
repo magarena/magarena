@@ -38,7 +38,7 @@ Release 1.14 (May XX, 2011)
 - print error messages to stderr when an exception occurs
 - by default all card pics shown at 312x445 for consistency, can be changed
   via option in preference menu to show original image size
-- QQQ preferences moved to top level menu to make it more obvious
+- filter legal targets off by default as it is confusing to new users
 
 Release LE 1.13 (April 24, 2011)
 ===============

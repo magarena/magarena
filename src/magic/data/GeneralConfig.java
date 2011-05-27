@@ -40,18 +40,18 @@ public class GeneralConfig {
 	private static final int DEFAULT_WIDTH=1000;
 	private static final int DEFAULT_HEIGHT=700;
 	private static final boolean DEFAULT_MAXIMIZED=false;
-	private static final String DEFAULT_THEME="wood";
-	private static final String DEFAULT_AVATAR="default";
+	private static final String DEFAULT_THEME="felt";
+	private static final String DEFAULT_AVATAR="legend";
 	private static final String DEFAULT_AI="default";
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
 	private static final boolean DEFAULT_PASS=true;
-	private static final boolean DEFAULT_TARGET=true;
+	private static final boolean DEFAULT_TARGET=false;
 	private static final int DEFAULT_DIFFICULTY=6;
 	private static final int DEFAULT_EXTRA_LIFE=0;
 	private static final int DEFAULT_POPUP_DELAY=300;
 	private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
-	private static final int DEFAULT_STRENGTH_GAMES=123;
+	private static final int DEFAULT_STRENGTH_GAMES=100;
 	private static final boolean DEFAULT_HIGH_QUALITY=false;
 	private static final boolean DEFAULT_SOUND=false;
 
