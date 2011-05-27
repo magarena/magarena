@@ -11,6 +11,7 @@ import magic.model.MagicGame;
 import magic.model.phase.MagicPhase;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
+import magic.model.MagicRandom;
 
 /*
 UCT algorithm from Kocsis and Sezepesvari 2006
@@ -67,7 +68,6 @@ public class MCTSAI implements MagicAI {
     private static final int MAXSIM = 100000;
     private static final double C = 0.3;
     private final boolean LOGGING;
-    private final Random RNG = new Random(123);
 
     public MCTSAI() {
         this(false);
@@ -258,7 +258,7 @@ public class MCTSAI implements MagicAI {
              event != null;
              event = getNextMultiChoiceEvent(game, true)) {
             final List<Object[]> choices = event.getArtificialChoiceResults(game);
-            final int idx = RNG.nextInt(choices.size());
+            final int idx = MagicRandom.nextInt(choices.size());
             final Object[] selected = choices.get(idx);
             //logc('-');
             game.executeNextEvent(selected);

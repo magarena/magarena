@@ -47,7 +47,12 @@ public class VegasAI implements MagicAI {
 			scores.add(score);
 			for (int count=THREADS;count>0;count--) {
 				
-				final VegasWorker worker=new VegasWorker(choiceGame,choiceGame.getScorePlayer(),score,new Random(),simulations);
+				final VegasWorker worker=new VegasWorker(
+                        choiceGame,
+                        choiceGame.getScorePlayer(),
+                        score,
+                        new Random(12345 + count),
+                        simulations);
 				executor.execute(worker);
 			}
 		}

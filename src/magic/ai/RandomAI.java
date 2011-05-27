@@ -7,12 +7,12 @@ import java.util.Random;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
+import magic.model.MagicRandom;
 
 //AI that plays randomly
 public class RandomAI implements MagicAI {
     
     private final boolean LOGGING;
-    private static final Random RNG = new Random();
    
     public RandomAI() {
         this(false);
@@ -52,7 +52,7 @@ public class RandomAI implements MagicAI {
             }
 		
             // Select a random artificial choice result
-            final int idx = RNG.nextInt(size);
+            final int idx = MagicRandom.nextInt(size);
 		    final ArtificialChoiceResults selected=achoices.get(idx);
             if (size >= 2) {
                 log(info); 
