@@ -30,8 +30,15 @@ Release 1.14 (May XX, 2011)
 
 - default cube (600 cards)
 - all cube (900 cards)
+- tokens (28 cards)
+- (same as last version, no new cards added)
 
 - restored ability to download card images from the WWW
+- fixed bug with protection from monocolored
+- print error messages to stderr when an exception occurs
+- by default all card pics shown at 312x445 for consistency, can be changed
+  via option in preference menu to show original image size
+- QQQ preferences moved to top level menu to make it more obvious
 
 Release LE 1.13 (April 24, 2011)
 ===============
