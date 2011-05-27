@@ -349,7 +349,7 @@ public class GameController {
 		return choiceResults;
 	}
 
-	private void executeNextEventWithChoices(final MagicEvent event) {
+	private synchronized void executeNextEventWithChoices(final MagicEvent event) {
 		final Object[] choiceResults;
 		if (testMode||event.getPlayer().getPlayerDefinition().isArtificial()) {
 			choiceResults=getArtificialNextEventChoiceResults(event);
@@ -399,7 +399,7 @@ public class GameController {
 		running.set(false);
 	}
 	
-	public void runGame() {
+	public synchronized void runGame() {
 
 		final long startTime=System.currentTimeMillis();
 		
