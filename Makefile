@@ -1,4 +1,5 @@
-DSC=java -ea -cp $^ magic.DeckStrCal
+JAR=java -ea -cp $^ 
+DSC=$(JAR) magic.DeckStrCal
 BUILD=build
 JOPTS=-Xlint:all -d $(BUILD) -cp $(BUILD):.
 SRC=$(shell find -iname *.java) 
@@ -7,6 +8,18 @@ MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
 
 all: $(MAG) $(EXE) tags
+
+1.14:
+	cp \
+			release/gpl-3.0.html \
+			release/Magarena.exe \
+			release/Magarena.sh \
+			release/Magarena.command \
+			release/README.txt \
+			Magarena-1.14
+	-rm Magarena-1.14/Magarena/*.cfg
+	-rm Magarena-1.14.zip
+	-zip -r Magarena-1.14.zip Magarena-1.14
 
 jar: $(MAG)
 
@@ -32,7 +45,7 @@ clean:
 	-rm $(BUILD)/javac.last
 
 test: $(MAG)
-	$(DSC) \
+	$(JAR) -DrndSeed=123 magic.DeckStrCal \
 	--deck1 release/decks/LSK_G.dec \
 	--ai1 VEGAS \
 	--deck2 release/decks/LSK_G.dec \
