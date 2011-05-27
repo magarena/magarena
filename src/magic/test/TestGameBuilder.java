@@ -100,8 +100,17 @@ public class TestGameBuilder {
         return null;
     }
 	
-	public static MagicGame buildGame(final String id) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-        TestGameBuilder gb = (TestGameBuilder)Class.forName("magic.test." + id).newInstance();
-        return gb.getGame(); 
+	public static MagicGame buildGame(final String id) {
+        MagicGame game = null;
+        try {
+            TestGameBuilder gb = (TestGameBuilder)Class.forName("magic.test." + id).newInstance();
+            game = gb.getGame();
+        } catch (final Exception ex) {
+            System.err.println("ERROR: unable to build game " + id);
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
+            System.exit(1); 
+        }
+        return game;
 	}
 }
