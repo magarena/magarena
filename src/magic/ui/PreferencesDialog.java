@@ -108,7 +108,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		soundCheckBox.setFocusable(false);
 		mainPanel.add(soundCheckBox);
 		
-		highQualityCheckBox=new JCheckBox("High quality card popup images",config.isHighQuality());
+		highQualityCheckBox=new JCheckBox("Show card images in original size",config.isHighQuality());
 		highQualityCheckBox.setBounds(25,165,350,20);
 		highQualityCheckBox.setFocusable(false);
 		mainPanel.add(highQualityCheckBox);

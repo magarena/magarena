@@ -16,6 +16,9 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.TransparentImagePanel;
 
+/**
+ * Class responsible for showing the card pic popup
+ */
 public class CardViewer extends JPanel implements DelayedViewer {
 
 	private static final long serialVersionUID = 1L;
