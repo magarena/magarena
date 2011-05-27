@@ -193,7 +193,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 
 		final JMenu tournamentMenu=new JMenu("Arena");
 		
-		newTournamentItem=new JMenuItem("New duel...");
+		newTournamentItem=new JMenuItem("New duel");
 		newTournamentItem.addActionListener(this);
 		tournamentMenu.add(newTournamentItem);
 		
@@ -211,11 +211,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		tournamentMenu.addSeparator();
 		
-		loadDeckItem=new JMenuItem("Load deck...");
+		loadDeckItem=new JMenuItem("Load deck");
 		loadDeckItem.addActionListener(this);
 		tournamentMenu.add(loadDeckItem);
 		
-		saveDeckItem=new JMenuItem("Save deck...");
+		saveDeckItem=new JMenuItem("Save deck");
 		saveDeckItem.addActionListener(this);
 		tournamentMenu.add(saveDeckItem);
 		
@@ -253,16 +253,16 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		final JMenu helpMenu=new JMenu("Help");
 		
-		cardExplorerItem=new JMenuItem("Card explorer...");
+		cardExplorerItem=new JMenuItem("Card explorer");
 		cardExplorerItem.addActionListener(this);
 		helpMenu.add(cardExplorerItem);
 
-		keywordsItem=new JMenuItem("Keywords...");
+		keywordsItem=new JMenuItem("Keywords");
 		keywordsItem.addActionListener(this);
 		helpMenu.add(keywordsItem);
 		
 		final JMenuBar menuBar=new JMenuBar();
-		menuBar.add(tournamentMenu);		
+		menuBar.add(tournamentMenu);
 		menuBar.add(helpMenu);
 		
 		this.setJMenuBar(menuBar);
