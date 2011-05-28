@@ -2,6 +2,7 @@ package magic.data;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 
@@ -146,6 +147,9 @@ public class IconImages {
 			inputStream.close();
 			return image;
 		} catch (final Exception ex) {
+            System.err.println("ERROR: unable to load icon " + name);
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
 			return null;
 		}
 	}
@@ -156,8 +160,10 @@ public class IconImages {
 		ImageIcon icon = null;
         try {
             icon = new ImageIcon(image);
-        } catch (Error e) {
-
+        } catch (Error err) {
+            System.err.println("ERROR: unable to load icon " + name);
+            System.err.println(err.getMessage());
+            err.printStackTrace();
         }
         return image != null ? icon : MISSING2;
 	}
@@ -168,8 +174,59 @@ public class IconImages {
 		if (iconFile.exists()) {
 			return new ImageIcon(iconFile.getAbsolutePath());
 		}
-		return MISSING2;
+		return loadIcon("missing2.png");
 	}
+	
+    private static void reloadSymbolIcon(final ImageIcon imgico, final String name) {
+
+		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
+		if (iconFile.exists()) {
+            try {
+                final BufferedImage img = ImageIO.read(iconFile);
+                imgico.setImage(img);
+            } catch (final IOException ex) {
+                System.err.println("ERROR: unable to load icon " + name);
+                System.err.println(ex.getMessage());
+                ex.printStackTrace();
+            }
+		}
+	}
+
+    public static void reloadSymbols() {
+        reloadSymbolIcon(TAPPED, "tapped.gif");
+	    reloadSymbolIcon(ONE, "big_one.gif");
+        reloadSymbolIcon(BLACK, "big_black.gif");
+        reloadSymbolIcon(BLUE, "big_blue.gif");
+        reloadSymbolIcon(GREEN, "big_green.gif");	
+        reloadSymbolIcon(RED, "big_red.gif");
+        reloadSymbolIcon(WHITE, "big_white.gif");
+        reloadSymbolIcon(COST_BLACK, "black.gif");
+        reloadSymbolIcon(COST_BLUE, "blue.gif");
+        reloadSymbolIcon(COST_GREEN, "green.gif");	
+        reloadSymbolIcon(COST_RED, "red.gif");
+        reloadSymbolIcon(COST_WHITE, "white.gif");
+        reloadSymbolIcon(COST_BLACK_GREEN, "black_green.gif");
+        reloadSymbolIcon(COST_BLACK_RED, "black_red.gif");
+        reloadSymbolIcon(COST_BLUE_BLACK, "blue_black.gif");
+        reloadSymbolIcon(COST_BLUE_RED, "blue_red.gif");
+        reloadSymbolIcon(COST_GREEN_BLUE, "green_blue.gif");
+        reloadSymbolIcon(COST_GREEN_WHITE, "green_white.gif");
+        reloadSymbolIcon(COST_RED_GREEN, "red_green.gif");
+        reloadSymbolIcon(COST_RED_WHITE, "red_white.gif");
+        reloadSymbolIcon(COST_WHITE_BLACK, "white_black.gif");
+        reloadSymbolIcon(COST_WHITE_BLUE, "white_blue.gif");
+        reloadSymbolIcon(COST_ZERO, "zero.gif");
+        reloadSymbolIcon(COST_ONE, "one.gif");
+        reloadSymbolIcon(COST_TWO, "two.gif");
+        reloadSymbolIcon(COST_THREE, "three.gif");
+        reloadSymbolIcon(COST_FOUR, "four.gif");
+        reloadSymbolIcon(COST_FIVE, "five.gif");
+        reloadSymbolIcon(COST_SIX, "six.gif");
+        reloadSymbolIcon(COST_SEVEN, "seven.gif");
+        reloadSymbolIcon(COST_EIGHT, "eight.gif");
+        reloadSymbolIcon(COST_NINE, "nine.gif");
+        reloadSymbolIcon(COST_X, "x.gif");
+    }
 	
 	private static ImageIcon loadAnimatedIcon(final String name) {
 		

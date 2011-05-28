@@ -148,6 +148,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		}
 		
 		dispose();
+        IconImages.reloadSymbols();
 		//System.exit(0);
 	}
 
