@@ -4190,7 +4190,7 @@ converted=3
 cost={2}{G}
 power=3
 toughness=1
-ability=can't be the target of spells or abilities your opponent controls
+ability=hexproof
 timing=fmain
 
 >Loxodon Partisan

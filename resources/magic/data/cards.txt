@@ -1359,7 +1359,7 @@ converted=2
 cost={1}{G}
 power=1
 toughness=1
-ability=can't be blocked except by creatures with flying,can't be the target of spells or abilities your opponent controls
+ability=can't be blocked except by creatures with flying,hexproof
 timing=fmain
 
 >Simic Sky Swallower
@@ -1583,7 +1583,7 @@ converted=3
 cost={1}{G}{G}
 power=3
 toughness=2
-ability=can't be the target of spells or abilities your opponent controls
+ability=hexproof
 timing=fmain
 
 >Twinblade Slasher
@@ -6920,7 +6920,7 @@ converted=4
 cost={2}{G}{G}
 power=4
 toughness=4
-ability=can't be countered,can't be the target of spells or abilities your opponent controls
+ability=can't be countered,hexproof
 timing=fmain
 
 >Viridian Claw
