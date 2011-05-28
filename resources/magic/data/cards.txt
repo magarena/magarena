@@ -8076,3 +8076,17 @@ type=Artifact
 converted=2
 cost={2}
 timing=artifact
+
+>Naya Hushblade
+image=http://magiccards.info/scans/en/arb/141.jpg
+cube=default
+value=3
+rarity=2
+type=Creature
+subtype=Elf,Rogue
+color=rwg
+converted=2
+cost={R/W}{G}
+power=2
+toughness=1
+timing=main

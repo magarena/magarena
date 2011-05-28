@@ -55,6 +55,8 @@ public class LocalVariableDefinitions {
 	
 	private static final MagicLocalVariable ESPER_STORMBLADE=new MagicBladeLocalVariable(MagicAbility.Flying.getMask());
 	
+    private static final MagicLocalVariable NAYA_HUSHBLADE=new MagicBladeLocalVariable(MagicAbility.Shroud.getMask());
+	
 	private static final MagicLocalVariable GOBLIN_GAVELEER=new MagicDummyLocalVariable() {
 
 		@Override
@@ -233,6 +235,11 @@ public class LocalVariableDefinitions {
 		cardDefinition=CardDefinitions.getInstance().getCard("Esper Stormblade");
 		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
 		cardDefinition.addLocalVariable(ESPER_STORMBLADE);		
+		
+        // Naya Hushblade
+		cardDefinition=CardDefinitions.getInstance().getCard("Naya Hushblade");
+		cardDefinition.addLocalVariable(MagicStaticLocalVariable.getInstance());
+		cardDefinition.addLocalVariable(NAYA_HUSHBLADE);		
 		
 		// Goblin Gaveleer
 		cardDefinition=CardDefinitions.getInstance().getCard("Goblin Gaveleer");
