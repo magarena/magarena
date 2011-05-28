@@ -3,42 +3,53 @@ Magarena
 Homepage: http://magarena.googlecode.com
 Forum: http://www.slightlymagic.net/forum/viewforum.php?f=82
 
-There must be a Java Runtime 6 (java.com) installed on your computer to play.
-An executable is provided for Windows. On Linux, execute ./Magarena.sh
+Requirements: Java Runtime 6 (http://java.com) must be installed on your computer
+
+Starting Magarena:
+  On Windows, double click on Magarena.exe
+  On Linux, execute ./Magarena.sh. 
+  On Mac, run Magarena.command
 
 Magarena supports the following keyboard shortcuts :
-- Space or Right key : action button
-- Escape or Left key : undo button
-- Enter key : switch between graphical and text mode
-- F1 or M key : show or hide game messages
+  Space or Right key : action button
+  Escape or Left key : undo button
+  Enter key : switch between graphical and text mode
+  F1 or M key : show or hide game messages
 
-The desired AI can be selected in the preferences.  Recommended MiniMax AI
-difficulty level for the best balance of speed and strength is the default 6.
-The Vegas AI should be fast on all difficulty levels.
+Selecting the AI to play against:
+The desired AI can be selected in the preferences (Arena -> Preferences).
+Default is MiniMax. AI difficulty level for the best balance of speed and
+strength is the default 6.  The Vegas AI should be fast on all difficulty
+levels. The MCTS AI is considered experimental but it is also the strongest.
 
-Thanks to ubeefx for creating such a great game
-Thanks to epiko for creating the very nice Magarena logo and the amazing color themes.
-Thanks to Salasnet for the felt theme and pedro1973 for the dark battle theme.
-Thanks to singularita for creating the scripts to add over 300 additional creature cards.
-Thanks to Melvin Zhang for implementing the Monte Carlo Tree Search AI.
-Thanks to everyone on the CCGHQ forum (slightlymagic.net).
+Thanks to
+  ubeefx for creating such a great game
+  epiko for creating the very nice Magarena logo and the amazing color themes
+  Salasnet for the felt theme and pedro1973 for the dark battle theme
+  singularita for creating the scripts to add over 300 additional creature cards
+  Melvin Zhang for implementing the Monte Carlo Tree Search AI
+  LSK and Kuno for contributing custom decks
+  pedro1973 for creating new themes  (http://www.slightlymagic.net/forum/viewforum.php?f=89)
+  mtgrares for the publicity
+  everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
-Thanks for your support and have fun!
+Thank you for your support and have fun!
 
-Release 1.14 (May XX, 2011)
+Release 1.14 (May 28, 2011)
 ============
-- 600 cards in default cube
-- 900 cards in all cube (includes those in default)
-- 28 tokens
+- 601 cards in default cube
+- 901 cards in all cube (includes those in default)
 
-- added Naya Hushblade (Alara Reborn Common)
+- added Naya Hushblade (Alara Reborn, Common)
 
 - restored ability to download card images from the WWW
 - fixed bug with protection from monocolored and land that become creatures
 - fixed bug with "as long as you control another multicolored permanent" and
   land that become creatures
-- print error messages to stderr when an exception occurs
-- by default all card pics shown at 312x445 for consistency, can be changed
+- enhanced error handling by printing error messages to stderr when an exception occurs
+- renamed "can't be the target of spells or abilities your opponents control"
+  to hexproof
+- by default all card images shown at 312x445 for consistency, can be changed
   via option in preference menu to show original image size
 - filter legal targets off by default as it is confusing to new users
 
