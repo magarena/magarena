@@ -2,9 +2,15 @@ package magic.model.variable;
 
 import magic.model.MagicColoredType;
 import magic.model.MagicGame;
+import magic.model.MagicColor;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 
+/**
+ * Implements the following static ability:
+ * As long as you control another multicolored permanent, XXX gets +1/+1 and has YYY ability
+ * Needed by Bant Sureblade, Esper Stormblade, Grixis Grimblade, Jund Hackblade, Naya Hushblade
+ */
 public class MagicBladeLocalVariable implements MagicLocalVariable {
 
 	private final long abilityMask;
@@ -18,7 +24,7 @@ public class MagicBladeLocalVariable implements MagicLocalVariable {
 		
 		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
 			
-			if (permanent!=owner&&permanent.getColoredType()==MagicColoredType.MultiColored) {
+			if (permanent!=owner && MagicColor.isMulti(permanent.getColorFlags())) {
 				return true;
 			}
 		}
