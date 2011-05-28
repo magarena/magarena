@@ -166,4 +166,12 @@ public enum MagicColor {
             flag == Red.getMask() || 
             flag == White.getMask();
     }
+
+    public static boolean isColorless(final int flag) {
+        return flag == 0;
+    }
+
+    public static boolean isMulti(final int flag) {
+        return !isMono(flag) && !isColorless(flag);
+    }
 }
