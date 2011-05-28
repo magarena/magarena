@@ -1,6 +1,7 @@
 package magic.ui;
 
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -14,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JPanel;
 
 import magic.data.DeckUtils;
@@ -264,7 +266,17 @@ public class MagicFrame extends JFrame implements ActionListener {
 		final JMenuBar menuBar=new JMenuBar();
 		menuBar.add(tournamentMenu);
 		menuBar.add(helpMenu);
-		
+
+        /*
+        final JMenu prefMenu = new JMenu("Preferences");
+        prefMenu.add(new JCheckBoxMenuItem("Enable sound effects"));
+        prefMenu.add(new JCheckBoxMenuItem("Show card image in original size"));
+		prefMenu.add(new JCheckBoxMenuItem("Skip single option choices when appropriate"));
+		prefMenu.add(new JCheckBoxMenuItem("Always pass during draw and begin of combat step"));
+		prefMenu.add(new JCheckBoxMenuItem("Filter legal targets when appropriate"));
+        menuBar.add(prefMenu);
+        */
+
 		this.setJMenuBar(menuBar);
 	}
 	
