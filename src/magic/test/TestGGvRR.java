@@ -26,11 +26,13 @@ class TestGGvRR extends TestGameBuilder {
 	
         player.setLife(1);
 		addToLibrary(player,"Plains",10);
-		createPermanent(game,player,"Rupture Spire",false,7);
+		createPermanent(game,player,"Rupture Spire",false,8);
 		createPermanent(game,player,"Raging Ravine",false,1);
 		createPermanent(game,player,"Giant Spider",false,1);
-		createPermanent(game,player,"Godsire",false,1);
-		createPermanent(game,player,"Murderous Redcap",false,1);
+		//createPermanent(game,player,"Esper Stormblade",false,1);
+		createPermanent(game,player,"Naya Hushblade",false,1);
+		//createPermanent(game,player,"Godsire",false,1);
+		//createPermanent(game,player,"Murderous Redcap",false,1);
 		
         opponent.setLife(1);
         addToLibrary(opponent,"Island",10);
