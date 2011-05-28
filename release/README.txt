@@ -52,6 +52,7 @@ Release 1.14 (May 28, 2011)
 - by default all card images shown at 312x445 for consistency, can be changed
   via option in preference menu to show original image size
 - filter legal targets off by default as it is confusing to new users
+- no need to restart after downloading images
 
 Release LE 1.13 (April 24, 2011)
 ===============
