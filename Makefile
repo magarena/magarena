@@ -37,12 +37,19 @@ $(BUILD)/javac.last: $(SRC)
 tags: $(SRC) 
 	ctags -R .
 
+Test%: 
+	java -cp $(MAG) -DtestGame=Test$* magic.MagicMain
+
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
 
 clean:
 	-ant clean
 	-rm $(BUILD)/javac.last
+	-rm $(MAG)
+
+start: jar
+	java -Xmx256M -cp build magic.MagicMain
 
 test: $(MAG)
 	$(JAR) -DrndSeed=123 magic.DeckStrCal \

@@ -27,14 +27,16 @@ Thanks for your support and have fun!
 
 Release 1.14 (May XX, 2011)
 ============
+- 600 cards in default cube
+- 900 cards in all cube (includes those in default)
+- 28 tokens
 
-- default cube (600 cards)
-- all cube (900 cards)
-- tokens (28 cards)
-- (same as last version, no new cards added)
+- added Naya Hushblade (Alara Reborn Common)
 
 - restored ability to download card images from the WWW
-- fixed bug with protection from monocolored
+- fixed bug with protection from monocolored and land that become creatures
+- fixed bug with "as long as you control another multicolored permanent" and
+  land that become creatures
 - print error messages to stderr when an exception occurs
 - by default all card pics shown at 312x445 for consistency, can be changed
   via option in preference menu to show original image size
