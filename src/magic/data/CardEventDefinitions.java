@@ -1688,7 +1688,12 @@ public class CardEventDefinitions {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget));
+                final MagicPlayer player = event.getPlayer();
+                if (player.getIndex() == 0) {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget1));
+                } else {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget0));
+                }
 				if (((Integer)choiceResults[1])>0) {
 					game.doAction(new MagicChangeTurnPTAction(creature,4,4));
 				}

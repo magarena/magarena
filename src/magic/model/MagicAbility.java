@@ -10,6 +10,8 @@ public enum MagicAbility {
 	CannotBeBlockedExceptWithFlying("can't be blocked except by creatures with flying",30),
 	CannotBeCountered("can't be countered",0),
 	CannotBeTheTarget("hexproof",80),
+	CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
+	CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
 	Changeling("changeling",10),
 	Deathtouch("deathtouch",60),
 	Defender("defender",-100),

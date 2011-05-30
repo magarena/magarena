@@ -920,6 +920,17 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (MagicAbility.CannotBeTheTarget.hasAbility(flags)&&source.getController()!=controller) {
 			return false;
 		}
+
+		// Can't be the target of spells or abilities player 0 controls.
+        if (MagicAbility.CannotBeTheTarget0.hasAbility(flags) && source.getController().getIndex() == 0) {
+            return false;
+        }
+		
+        // Can't be the target of spells or abilities player 1 controls.
+        if (MagicAbility.CannotBeTheTarget1.hasAbility(flags) && source.getController().getIndex() == 1) {
+            return false;
+        }
+
 		// Protection.
 		return !hasProtectionFrom(flags,source);
 	}
