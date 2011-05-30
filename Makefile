@@ -12,7 +12,7 @@ all: $(MAG) $(EXE) tags
 1.%:
 	-rm -rf Magarena-1.$*
 	-rm Magarena-1.$*.zip
-	mkdir -p Magarena-1.$*/Magarena
+	mkdir -p Magarena-1.$*/Magarena/mods
 	cp \
 			release/gpl-3.0.html \
 			release/Magarena.exe \
@@ -23,9 +23,11 @@ all: $(MAG) $(EXE) tags
 	cp -r \
 			release/avatars \
 			release/decks \
-			release/mods \
 			release/sounds \
 			Magarena-1.$*/Magarena
+	cp \
+			release/mods/felt_theme.zip \
+			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 
 jar: $(MAG)
