@@ -10,6 +10,9 @@ EXE:=release/Magarena.exe
 all: $(MAG) $(EXE) tags
 
 1.14:
+	-rm -rf Magarena-1.14
+	-rm Magarena-1.14.zip
+	mkdir -p Magarena-1.14/Magarena
 	cp \
 			release/gpl-3.0.html \
 			release/Magarena.exe \
@@ -17,8 +20,12 @@ all: $(MAG) $(EXE) tags
 			release/Magarena.command \
 			release/README.txt \
 			Magarena-1.14
-	-rm Magarena-1.14/Magarena/*.cfg
-	-rm Magarena-1.14.zip
+	cp -r \
+			release/avatars \
+			release/decks \
+			release/mods \
+			release/sounds \
+			Magarena-1.14/Magarena
 	-zip -r Magarena-1.14.zip Magarena-1.14
 
 jar: $(MAG)

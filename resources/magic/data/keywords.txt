@@ -21,6 +21,8 @@ You may cast this spell any time you could cast an instant.
 This creature can't be blocked except by creatures with flying or reach.
 *haste
 This creature can attack and tap the turn it comes under your control.
+*hexproof
+This creature can't be the targets of spells or abilities your opponents control.
 *forestwalk
 This creature is unblockable as long as defending player controls a Forest.
 *indestructible
