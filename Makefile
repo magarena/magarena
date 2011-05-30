@@ -46,7 +46,7 @@ $(BUILD)/javac.last: $(SRC)
 tags: $(SRC) 
 	ctags -R .
 
-Test%: 
+.Test%: $(MAG)
 	java -cp $(MAG) -DtestGame=Test$* magic.MagicMain
 
 $(EXE): $(MAG)
