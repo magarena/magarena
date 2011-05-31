@@ -35,6 +35,13 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.15 (June QQQ, 2011)
+============
+- 601 cards in default cube
+- 901 cards in all cube (includes those in default)
+
+
+
 Release 1.14 (May 28, 2011)
 ============
 - 601 cards in default cube
