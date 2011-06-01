@@ -9,7 +9,7 @@ EXE:=release/Magarena.exe
 
 all: $(MAG) $(EXE) tags
 
-1.%:
+M1.%:
 	-rm -rf Magarena-1.$*
 	-rm Magarena-1.$*.zip
 	mkdir -p Magarena-1.$*/Magarena/mods
@@ -69,3 +69,6 @@ test: $(MAG)
 
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@ 
+
+%.dec: scripts/dailyhtml2dec.awk
+	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$* | awk -f $^ > $@
