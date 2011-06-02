@@ -177,6 +177,13 @@ public interface MagicCondition {
 			return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=2;
 		}
 	};
+
+	public static final MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
+		@Override
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return game.getOpponent(source.getController()).getNrOfPermanentsWithType(MagicType.Land)>=4;
+		}
+	};
 		
 	public boolean accept(final MagicGame game,final MagicSource source);
 }

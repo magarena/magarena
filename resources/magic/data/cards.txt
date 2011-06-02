@@ -8090,3 +8090,12 @@ cost={R/W}{G}
 power=2
 toughness=1
 timing=main
+
+>Tectonic Edge
+image=http://magiccards.info/scans/en/wwk/145.jpg
+cube=default
+value=3
+rarity=2
+type=Land
+basic=
+timing=land
