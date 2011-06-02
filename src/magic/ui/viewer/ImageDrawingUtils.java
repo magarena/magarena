@@ -44,6 +44,9 @@ public class ImageDrawingUtils {
 			icons.clear();
 			icons.add(IconImages.ANY_MANA);
 		}
+        if (icons.isEmpty() && !cardDefinition.getManaActivations().isEmpty()) {
+            icons.add(IconImages.COST_ONE);
+        }
 		if (!icons.isEmpty()) {
 			for (final ImageIcon icon : icons) {
 				
