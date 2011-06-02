@@ -9,6 +9,12 @@ EXE:=release/Magarena.exe
 
 all: $(MAG) $(EXE) tags
 
+newcards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
+	cat $^ | grep "^>" | sed 's/>//' | sort > $@
+
+newcards/existing_full.txt: newcards/existing.txt data/mtg-data.txt
+	awk -f scripts/extract_existing.awk $^ > $@
+
 M1.%:
 	-rm -rf Magarena-1.$*
 	-rm Magarena-1.$*.zip
