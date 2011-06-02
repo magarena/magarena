@@ -1,8 +1,16 @@
 score	card name	comments
+669.371	Mountain	implemented
+637.49	Plains	implemented
+631.267	Forest	implemented
+608.73	Swamp	implemented
+608.614	Island	implemented
+81.4737	Lightning Bolt	implemented
 74.6385	Jace, the Mind Sculptor	planeswalker
 73.4872	Misty Rainforest	search lib
 63.5289	Scalding Tarn	search lib
 54.703	Tectonic Edge	land, can tap to destroy target nonbasic land*
+54.6766	Mana Leak	implemented
+49.7466	Darkslick Shores	implemented
 48.5611	Preordain	look at lib
 45.6009	Arid Mesa	search lib
 44.5653	Stoneforge Mystic	search lib
@@ -13,32 +21,51 @@ score	card name	comments
 37.991	Inquisition of Kozilek	reveal hand
 36.3406	Inkmoth Nexus	animate land, become 1/1 Blinkmoth artifact creature with flying, infect*
 35.9694	Path to Exile	search lib
+35.9587	Creeping Tar Pit	implemented
 35.412	Flashfreeze	counter red or green spell*
+35.0196	Go for the Throat	implemented
 33.4731	Duress	reveal hand
 33.1125	Goblin Guide	reveal top lib card
 29.6912	Spell Pierce	counter noncreature spell unless pays 2*
 28.498	Vengevine	checks for second creature spell this turn*
 27.5745	Arc Trail	two targets
+27.4014	Memnite	implemented
 27.0657	Squadron Hawk	search lib
+25.8203	Raging Ravine	implemented
+25.7994	Noble Hierarch	implemented
 25.1273	Force of Will	alternate casting cost, loss of life that cannot be prevented or redirected
 25.1005	Everflowing Chalice	multikicker 2, charge counters*
 25.0035	Wasteland	tap and sacrifce to destory target non basic land*
 24.723	Fauna Shaman	search lib
+24.6298	Birds of Paradise	implemented
+24.5927	Ornithopter	implemented
 24.1755	Joraga Treespeaker	level up, grant mana ability to elves*
 23.8682	Obstinate Baloth	if discarded goes to battlefield instead of graveyard*
+23.8665	Glacial Fortress	implemented
 23.6007	Sphere of the Suns	remove charge counter, get one mana of any color
+23.4536	Llanowar Elves	implemented
+23.1379	Acidic Slime	implemented
+22.9979	Cunning Sparkmage	implemented
+22.9752	Seachrome Coast	implemented
+22.927	Celestial Colonnade	implemented
+22.6583	Blackcleave Cliffs	implemented
+22.5479	Drowned Catacomb	implemented
 22.4274	Thoughtseize	reveal hand
+22.1129	Day of Judgment	implemented
 21.8455	Ratchet Bomb	two abilities, tap to charge, tap and sac to destroy non land perms with cmc equal to # charge counters
 21.6415	Primeval Titan	search lib
 21.3871	Tezzeret, Agent of Bolas	planeswalker
 21.2851	Celestial Purge	exile black or red permanent*
 21.006	Mox Opal	metalcraft, tap to add one mana of any color
+20.7203	Mirran Crusader	implemented
+20.5758	Doom Blade	implemented
 20.5394	Terramorphic Expanse	search lib
 20.4245	Koth of the Hammer	planeswalker
 20.0635	Negate	counter noncreature spell*
 20.0435	Explore	may play additional land this turn*
 19.8092	Memoricide	name a card
 19.5866	Overgrown Battlement	give green for each creature with defender*
+19.5628	Burst Lightning	implemented
 19.4828	Knight of the Reliquary	search lib
 19.3204	Signal Pest	battle cry, can't be blocked except by creatures with flying or reach*
 19.3158	Gideon Jura	planeswalker
@@ -48,14 +75,20 @@ score	card name	comments
 18.7184	Khalni Garden	effect on entering bf, need 0/1 green plant token, tap for green*
 18.3287	Staggershock	rebound
 18.044	Contagion Clasp	proliferate
+17.9083	Phyrexian Crusader	implemented
 17.7791	Mark of Mutiny	gain control until end of turn, put +1/+1, gain haste*
 17.491	Valakut, the Molten Pinnacle	trigger when mountain enters bf and you control at least five other mountains
 17.4463	Cryptic Command	choose two of four effects
 17.4182	Halimar Depths	look at lib
 17.194	Summoning Trap	alternate casting cost, look at lib
+17.174	Dragonskull Summit	implemented
+17.1534	Black Sun's Zenith	implemented
 17.1135	Brainstorm	put cards in lib in order
 16.6633	Kor Firewalker	protection from red, cast a red spell gain 1 life*
+16.6366	Razorverge Thicket	implemented
 16.6325	Nature's Claim	destory target artifact or enchantment, its controller gain 4 life*
+16.5059	Sword of Feast and Famine	implemented
+16.4505	Baneslayer Angel	implemented
 16.4395	Oblivion Ring	complex rules dealing with bringing back exile permanent
 16.2773	Bloodbraid Elf	uses cascade
 16.0302	Nest Invader	when enters bf, put 0/1 Eldrazi spawn token*
@@ -66,63 +99,83 @@ score	card name	comments
 15.634	Divine Offering	destroy target artifact, you gain life equal to cmc*
 15.5965	Elvish Archdruid	tap for green for each elf you control*
 15.542	Brave the Elements	choose a color
+15.4906	Wurmcoil Engine	implemented
 15.4671	Soul's Attendant	whenever another creature enter bf, gain one life*
 15.4185	Wall of Omens	defender, draw card when it enters battlefield*
 15.4092	Glint Hawk	when it enters bf, sac it unless you bounce an artifact*
+15.3116	Steppe Lynx	implemented
 15.3038	Evolving Wilds	search lib
+15.1827	Copperline Gorge	implemented
 14.9795	Teetering Peaks	land, effect on entering bf, tap for red*
 14.945	Galvanic Blast	deal 2 damage to player or creature, 4 if you control three or more artifacts*
 14.9343	Contested War Zone	keeps changing controller
 14.8879	Green Sun's Zenith	search lib
 14.8434	Plated Geopede	landfall get +2/+2 until EOT*
 14.7894	Figure of Destiny	can be upgraded...
+14.6617	Swords to Plowshares	implemented
+14.6581	Qasali Pridemage	implemented
 14.6403	Manic Vandal	when enters bf, destroy target artifact*
 14.5572	Ranger of Eos	search lib
 14.5225	Necropede	infect, when dies put -1/-1 on target creature*
 14.5088	Gatekeeper of Malakir	if it was kicked, target player sac creature*
 14.4493	Jace Beleren	planeswalker
 14.4198	Elspeth, Knight-Errant	planeswalker
+14.1307	Disfigure	implemented
 14.1263	Bloodghast	comment
 13.7757	Slagstorm	comment
 13.7596	Daze	alternative casting cost of returning on island to owner hand
 13.506	Kor Skyfisher	comment
+13.4512	Goblin Bushwhacker	implemented
 13.2696	Mutavault	land that can change into 2/2 creature with all creature types*
 13.1175	Spikeshot Elder	comment
+13.0831	Leatherback Baloth	implemented
+12.9896	Stirring Wildwood	implemented
+12.9046	Kitchen Finks	implemented
+12.7819	Into the Roil	implemented
 12.6923	Inferno Titan	comment
 12.6269	Glimmerpost	comment
 12.5284	Honor of the Pure	comment
 12.4512	Burrenton Forge-Tender	reinforce keyword
 12.4177	Pithing Needle	name a card
+12.3892	Hero of Bladehold	implemented
 12.3023	Oracle of Mul Daya	comment
 12.2976	Umezawa's Jitte	choose one of three effects
 12.0861	Condemn	put attacking creature on bottom of lib, conroller gain life*
 12.0336	Molten-Tail Masticore	comment
 11.9329	Stoic Rebuttal	comment
+11.8705	Sword of Body and Mind	implemented
 11.8198	Revoke Existence	comment
 11.8073	Serra Ascendant	comment
 11.7151	Journey to Nowhere	comment
+11.6962	Goblin Ruinblaster	implemented
 11.6537	Leonin Relic-Warder	comment
 11.5788	Steel Overseer	comment
 11.4397	Oran-Rief, the Vastwood	comment
+11.3656	Goblin Chieftain	implemented
 11.3122	Garruk Wildspeaker	planeswalker
 11.2326	Hero of Oxid Ridge	comment
 11.1874	Mental Misstep	comment
 11.1147	Windswept Heath	search lib
+11.0699	Great Sable Stag	implemented
 11.0608	Lavaclaw Reaches	comment
 10.9931	Repeal	comment
 10.8534	Leonin Arbiter	comment
 10.7696	Tempered Steel	comment
 10.7473	Emrakul, the Aeons Torn	comment
+10.7127	Eldrazi Monument	implemented
 10.6811	Refraction Trap	comment
+10.6588	Ember Hauler	implemented
 10.6399	Quest for the Holy Relic	comment
 10.6294	Harrow	comment
 10.6189	Coralhelm Commander	comment
+10.5767	Grasp of Darkness	implemented
 10.5491	Fireball	comment
 10.5102	Frost Titan	comment
 10.3853	Flooded Strand	search lib
 10.2824	Snow-Covered Island	comment
 10.2466	Glint Hawk Idol	comment
 10.2465	Spellskite	comment
+10.2326	Plague Myr	implemented
 10.1996	Searing Blaze	multiple targets
 10.1365	Tundra	comment
 10.0533	Vampire Lacerator	comment
@@ -130,17 +183,25 @@ score	card name	comments
 9.98367	Pulse Tracker	comment
 9.93898	Rampant Growth	search lib
 9.89722	Sun Titan	comment
+9.88328	Volcanic Fallout	implemented
 9.82206	Leyline of Vitality	comment
+9.75576	Basilisk Collar	implemented
+9.72495	Vampire Hexmage	implemented
 9.69145	Phyrexian Metamorph	comment
 9.67581	Shatter	comment
 9.66396	Ezuri, Renegade Leader	comment
+9.5843	Vines of Vastwood	implemented
+9.57369	Vampire Nighthawk	implemented
 9.56193	Tarmogoyf	p/t eq to number of card types in all graveyards*
+9.42161	Lone Missionary	implemented
 9.42034	Volition Reins	comment
 9.37279	Unified Will	comment
+9.35966	Goblin Wardriver	implemented
 9.10513	Mishra's Factory	comment
 9.08353	Splinter Twin	comment
 9.07795	Viridian Corrupter	comment
 9.04708	Bloodstained Mire	search lib
+9.04083	Bitterblossom	implemented
 8.92873	Luminarch Ascension	quest counter
 8.90456	Thoughtcast	comment
 8.89238	War Priest of Thune	comment
@@ -158,29 +219,37 @@ score	card name	comments
 8.40761	Kuldotha Rebirth	comment
 8.34339	Darksteel Citadel	comment
 8.2994	Wall of Tanglecord	comment
+8.29105	Student of Warfare	implemented
 8.28207	Krosan Grip	comment
 8.26766	Ajani Goldmane	comment
 8.24541	Linvala, Keeper of Silence	comment
+8.20409	Grave Titan	implemented
 8.14395	Kor Duelist	comment
 8.13387	Mortarpod	comment
 8.13152	Virulent Wound	comment
 8.1115	Polluted Delta	search lib
 8.05276	Throne of Geth	comment
 8.03346	Groundswell	comment
+8.03224	Hideous End	implemented
+8.01454	Sunpetal Grove	implemented
 8.00339	Leyline of the Void	if in opening hand may begin with it on bf, cards are exiled instead of going to battlefield
+7.99247	Skinrender	implemented
 7.98042	Spectral Procession	comment
 7.9413	Dark Ritual	comment
 7.93949	Glimmerpoint Stag	comment
 7.91605	Kalastria Highborn	comment
 7.88879	Grim Lavamancer	comment
+7.8804	Suture Priest	implemented
 7.8804	Inquisitor Exarch	comment
 7.86627	Vendilion Clique	comment
+7.86275	Phyrexian Vatmother	implemented
 7.85557	Leyline of Sanctity	comment
 7.82853	Genesis Wave	comment
 7.80078	Mimic Vat	comment
 7.79346	Dark Confidant	reveal lib
 7.78786	Carrion Call	comment
 7.77776	Kor Outfitter	comment
+7.73594	Sylvok Lifestaff	implemented
 7.71445	Wooded Foothills	search lib
 7.66428	Ichor Wellspring	comment
 7.54905	Argentum Armor	comment
@@ -189,16 +258,22 @@ score	card name	comments
 7.49737	Putrefax	comment
 7.49588	Dismember	comment
 7.49548	Consecrated Sphinx	comment
+7.49158	Awakening Zone	implemented
 7.48875	Myr Battlesphere	comment
 7.47991	Kuldotha Forgemaster	comment
+7.4661	Sign in Blood	implemented
 7.43568	Cultivate	comment
 7.34261	Llawan, Cephalid Empress	comment
+7.3217	Brittle Effigy	implemented
 7.25702	Eldrazi Temple	comment
 7.2409	Tezzeret's Gambit	comment
+7.2343	Accorder Paladin	implemented
 7.20704	Death's Shadow	comment
+7.19231	Chimeric Mass	implemented
 7.19169	Lord of Atlantis	comment
 7.18991	Growth Spasm	comment
 7.18116	Viscera Seer	comment
+7.18057	Earthquake	implemented
 7.14644	Silvergill Adept	comment
 7.14644	Merrow Reejerey	comment
 7.10861	Devastating Summons	comment
@@ -206,13 +281,16 @@ score	card name	comments
 7.10106	Palladium Myr	comment
 7.08071	Sower of Temptation	gain control as long as SoT in play*
 7.03592	Windbrisk Heights	comment
+7.03161	Rootbound Crag	implemented
 7.02159	Myr Superion	comment
 6.98173	Primal Bellow	comment
 6.9758	Prophetic Prism	comment
 6.95561	Consume the Meek	comment
 6.95471	Twisted Image	comment
+6.91798	Naturalize	implemented
 6.82014	Underground Sea	comment
 6.81685	Seat of the Synod	comment
+6.74858	Cursecatcher	implemented
 6.74448	Sunken Ruins	mana pool
 6.69733	Kozilek's Predator	comment
 6.6755	Calcite Snapper	comment
@@ -244,6 +322,7 @@ score	card name	comments
 6.30122	Glimmervoid	comment
 6.28325	Kargan Dragonlord	comment
 6.26034	Manabarbs	comment
+6.24967	Flayer Husk	implemented
 6.24322	Volt Charge	comment
 6.23248	Nissa's Chosen	comment
 6.22471	Great Furnace	comment
@@ -265,9 +344,12 @@ score	card name	comments
 6.01821	Ulamog, the Infinite Gyre	comment
 6.00378	Liliana Vess	comment
 5.98128	Aether Vial	comment
+5.92266	White Knight	implemented
+5.9175	Cystbearer	implemented
 5.899	Oust	comment
 5.88938	Sejiri Steppe	comment
 5.88936	Worldly Tutor	comment
+5.88677	Smother	implemented
 5.87566	Jinxed Idol	comment
 5.87455	Secluded Glen	comment
 5.87165	Panic Spellbomb	comment
@@ -280,6 +362,7 @@ score	card name	comments
 5.6858	Dispel	comment
 5.68067	City of Traitors	comment
 5.65949	Tormod's Crypt	exile all cards from target graveyard*
+5.62429	Nantuko Shade	implemented
 5.60241	Scrubland	comment
 5.59528	Dragon's Claw	comment
 5.59043	Kor Sanctifiers	comment
@@ -287,16 +370,21 @@ score	card name	comments
 5.55193	Blue Sun's Zenith	comment
 5.54313	Punishing Fire	comment
 5.53664	Bant Charm	choose one of three effects
+5.53639	Skithiryx, the Blight Dragon	implemented
 5.5263	Channel	comment
 5.51925	Pyroblast	target blue spell/permanent (if spell counter, if permanent destory)*
+5.49932	Counterspell	implemented
 5.47298	Nihil Spellbomb	comment
 5.46005	Pawn of Ulamog	comment
 5.43961	Mindbreak Trap	comment
 5.42625	Foresee	comment
+5.42232	Remand	implemented
 5.41236	All Is Dust	comment
 5.40887	Cascade Bluffs	comment
 5.40593	Steel Sabotage	comment
+5.40438	Perilous Myr	implemented
 5.39879	Shivan Reef	comment
+5.39859	Plummet	implemented
 5.3835	Firespout	different effect depending on mana spent to cast it
 5.3738	Destructive Force	comment
 5.35092	Master of Etherium	comment
@@ -305,8 +393,11 @@ score	card name	comments
 5.31431	Grand Architect	comment
 5.30311	Prismatic Omen	comment
 5.27173	Lux Cannon	comment
+5.25432	Lightning Helix	implemented
 5.23691	Mistbind Clique	comment
+5.23527	Tuktuk the Explorer	implemented
 5.19672	Oxidda Scrapmelter	comment
+5.17636	Sphinx of Lost Truths	implemented
 5.15398	Thirst for Knowledge	complex discard
 5.13166	Indomitable Archangel	comment
 5.12813	Gold Myr	comment
@@ -316,8 +407,10 @@ score	card name	comments
 5.03325	Chrome Mox	imprint, add mana from color of imprinted card*
 5.03211	Mindslaver	comment
 5.01757	Scapeshift	comment
+5.01749	Thrun, the Last Troll	implemented
 5.00778	Fling	comment
 4.99366	Furnace Celebration	comment
+4.99011	Incinerate	implemented
 4.98872	Deathmark	comment
 4.96143	Soul Warden	comment
 4.93347	Autumn's Veil	comment
@@ -327,9 +420,12 @@ score	card name	comments
 4.90104	Neurok Commando	comment
 4.90104	Fuel for the Cause	comment
 4.89242	Flooded Grove	comment
+4.882	Fume Spitter	implemented
 4.87815	Jace's Ingenuity	comment
 4.8699	Corpse Cur	comment
 4.86764	Nettle Sentinel	comment
+4.86257	Batterskull	implemented
+4.85167	Pelakka Wurm	implemented
 4.82423	Smoldering Spires	comment
 4.80205	Heritage Druid	comment
 4.75939	Mulldrifter	alternate casting cost
@@ -348,18 +444,30 @@ score	card name	comments
 4.60752	Snow-Covered Forest	comment
 4.60193	Combust	comment
 4.59007	Chromatic Sphere	comment
+4.58062	River Boa	implemented
+4.56966	Vindicate	implemented
 4.56338	Act of Treason	comment
 4.54948	Chain Lightning	comment
+4.5128	Steam Vents	implemented
+4.50076	Flame Slash	implemented
 4.48695	Devout Lightcaster	comment
 4.48677	Disperse	comment
+4.48054	Contagious Nim	implemented
+4.46384	Bestial Menace	implemented
+4.45088	Marsh Casualties	implemented
+4.44266	Sejiri Refuge	implemented
 4.44027	Dross Ripper	comment
 4.43385	Deep Analysis	comment
 4.42427	Iona, Shield of Emeria	comment
 4.42019	Pestermite	comment
 4.40154	Demystify	comment
 4.3805	Runeflare Trap	comment
+4.35956	Knight Exemplar	implemented
 4.35189	Meddling Mage	comment
+4.35159	Plague Stinger	implemented
 4.32766	Enclave Cryptologist	comment
+4.32495	Phyrexian Rager	implemented
+4.32119	Wolfbriar Elemental	implemented
 4.31902	Standstill	comment
 4.31861	Darksteel Axe	comment
 4.30527	Eldrazi Conscription	comment
@@ -367,6 +475,7 @@ score	card name	comments
 4.30108	Intuition	comment
 4.28469	Blight Mamba	comment
 4.2813	Nightscape Familiar	comment
+4.27551	Galina's Knight	implemented
 4.27387	Gaddock Teeg	prevent spells from being cast*
 4.2734	Sunscape Familiar	comment
 4.27121	Frantic Search	comment
@@ -374,6 +483,7 @@ score	card name	comments
 4.26747	Sea Gate Oracle	comment
 4.25845	Necrogen Scudder	comment
 4.25135	Bojuka Bog	comment
+4.24752	Narcolepsy	implemented
 4.24317	Disciple of the Vault	comment
 4.23718	Treasure Mage	comment
 4.23407	Natural Order	comment
@@ -382,26 +492,33 @@ score	card name	comments
 4.21166	Oxidize	comment
 4.20141	Renegade Doppelganger	comment
 4.20106	Myrsmith	comment
+4.19365	Trygon Predator	implemented
 4.16923	Vulshok Replica	comment
+4.16559	Guul Draz Vampire	implemented
 4.15458	Origin Spellbomb	comment
 4.14683	Leyline of Anticipation	comment
+4.13373	Overwhelming Stampede	implemented
 4.13227	Silence	comment
 4.11627	Creeping Corrosion	comment
 4.10548	Sphinx of Jwar Isle	comment
 4.09533	Mystifying Maze	comment
 4.09406	Temple Bell	comment
 4.07426	Vulshok Heartstoker	comment
+4.03332	Bellowing Tanglewurm	implemented
 4.00498	Heavy Arbalest	comment
 3.99889	Sunspear Shikari	comment
 3.96976	Blinkmoth Nexus	comment
 3.96575	Snap	comment
+3.95696	Black Knight	implemented
 3.95146	Emerge Unscathed	comment
 3.94588	Traitorous Instinct	comment
+3.94543	Glissa's Courier	implemented
 3.94543	Blistergrub	comment
 3.93538	Prototype Portal	comment
 3.93353	Tunnel Ignus	comment
 3.93086	Eye of Ugin	comment
 3.92694	Survival Cache	comment
+3.92109	Sword of War and Peace	implemented
 3.92084	Corrupted Conscience	comment
 3.9129	Bloodthrone Vampire	comment
 3.91221	Taiga	comment
@@ -411,6 +528,7 @@ score	card name	comments
 3.86677	Strata Scythe	comment
 3.86149	Hornet Sting	comment
 3.85836	Salvage Scout	comment
+3.84779	Mnemonic Wall	implemented
 3.8432	Kemba's Skyguard	comment
 3.84238	Immolating Souleater	comment
 3.84238	Gitaxian Probe	comment
@@ -420,6 +538,7 @@ score	card name	comments
 3.82468	Skyshroud Elite	comment
 3.82275	Strip Mine	comment
 3.82101	Oran-Rief Survivalist	comment
+3.81603	Graypelt Refuge	implemented
 3.81148	Fetid Heath	comment
 3.81103	Dimir Aqueduct	comment
 3.8109	Mitotic Slime	comment
@@ -461,7 +580,9 @@ score	card name	comments
 3.61753	Deceiver Exarch	comment
 3.61444	Unstable Footing	comment
 3.61231	Golem Foundry	comment
+3.61231	Goblin Gaveleer	implemented
 3.61199	Demon of Death's Gate	comment
+3.59834	Accorder's Shield	implemented
 3.58698	Akoum Battlesinger	comment
 3.58135	Beast Within	comment
 3.57613	Show and Tell	comment
@@ -472,17 +593,25 @@ score	card name	comments
 3.55692	Tree of Tales	comment
 3.55637	Arc Runner	comment
 3.55234	Gigantiform	comment
+3.55092	Rampaging Baloths	implemented
+3.54554	Glistener Elf	implemented
 3.54508	Heartstabber Mosquito	comment
 3.54475	Ricochet Trap	comment
 3.54181	Terravore	comment
+3.54114	Sleep	implemented
+3.53549	Elite Vanguard	implemented
 3.52224	Talus Paladin	comment
 3.51084	Terastodon	comment
 3.51008	Fresh Meat	comment
+3.50772	Pacifism	implemented
 3.50155	Ob Nixilis, the Fallen	comment
 3.48862	Steel Hellkite	comment
 3.48778	Esper Charm	choose one of three effects
+3.48514	Hyena Umbra	implemented
 3.47614	Cosi's Trickster	comment
+3.47498	Shrine of Burning Rage	implemented
 3.47076	See Beyond	comment
+3.47034	Wall of Frost	implemented
 3.46674	Battle of Wits	comment
 3.45547	Kira, Great Glass-Spinner	comment
 3.44668	Masticore	comment
@@ -490,20 +619,26 @@ score	card name	comments
 3.44346	Dread Statuary	comment
 3.44054	Myr Turbine	comment
 3.44054	Carapace Forger	comment
+3.44053	Unsummon	implemented
 3.4321	Halt Order	comment
 3.43184	Time Reversal	comment
 3.43184	Semblance Anvil	comment
 3.42391	Tangle Angler	comment
 3.42388	Mul Daya Channelers	comment
+3.42169	Blackcleave Goblin	implemented
+3.41686	Strider Harness	implemented
 3.41511	Soliton	comment
+3.41503	Rite of Replication	implemented
 3.40583	Goblin Arsonist	comment
 3.40487	Harabaz Druid	comment
 3.40289	Blade of the Bloodchief	comment
 3.37862	Plateau	comment
 3.37239	Nim Deathmantle	comment
 3.37239	Flesh Allergy	comment
+3.36465	Quest for the Gravelord	implemented
 3.36465	Mortician Beetle	comment
 3.36465	Death Cultist	comment
+3.36234	Moriok Reaver	implemented
 3.35347	Razor Hippogriff	comment
 3.35125	Urge to Feed	comment
 3.34342	Whitesun's Passage	comment
@@ -518,18 +653,25 @@ score	card name	comments
 3.33806	Kjeldoran Royal Guard	comment
 3.33806	Castle Raptors	comment
 3.33484	Cruel Ultimatum	comment
+3.3345	Garruk's Companion	implemented
 3.32829	Reverberate	comment
 3.31545	Mind Control	comment
 3.31209	Phyrexian Rebirth	comment
+3.31209	Phyrexian Juggernaut	implemented
 3.31209	Phyrexian Hydra	comment
+3.31209	Phyrexian Digester	implemented
 3.31164	Pyretic Ritual	comment
 3.30898	Archive Trap	comment
 3.30733	Necrotic Ooze	comment
 3.30608	Kor Cartographer	comment
+3.30588	Hypnotic Specter	implemented
 3.30467	Eladamri's Call	comment
 3.29354	Ondu Cleric	comment
 3.29277	Roil Elemental	comment
+3.29161	Whispersilk Cloak	implemented
 3.26918	Expedition Map	comment
+3.26614	Giant Growth	implemented
+3.26448	Siege-Gang Commander	implemented
 3.25032	Drain Life	comment
 3.23336	Contaminated Ground	comment
 3.22166	Mold Shambler	comment
@@ -537,11 +679,14 @@ score	card name	comments
 3.21147	Nevinyrral's Disk	comment
 3.20951	Untamed Might	comment
 3.20245	Sarkhan the Mad	comment
+3.19768	Serrated Arrows	implemented
 3.19224	Spine of Ish Sah	comment
 3.18488	Emeria Angel	comment
+3.18242	Watery Grave	implemented
 3.18117	Triskelion	comment
 3.17623	Blood Seeker	comment
 3.17446	Æther Vial	comment
+3.17354	Akoum Refuge	implemented
 3.17221	Elephant Grass	comment
 3.17185	Trigon of Corruption	comment
 3.1686	Sensei's Divining Top	comment
@@ -553,38 +698,51 @@ score	card name	comments
 3.1535	Lodestone Golem	comment
 3.15295	Transcendent Master	comment
 3.15192	Elemental Appeal	comment
+3.15117	Maelstrom Pulse	implemented
 3.14914	Priest of Titania	comment
+3.14497	Alpha Tyrranax	implemented
 3.14316	Sedraxis Specter	comment
 3.14182	Knight of the White Orchid	comment
 3.13556	Hellspark Elemental	comment
+3.13492	Safe Passage	implemented
 3.13398	Oran-Rief Recluse	comment
 3.13093	Bloodhusk Ritualist	comment
 3.12996	Infiltration Lens	comment
 3.12843	Rest for the Weary	comment
 3.12752	Vedalken Anatomist	comment
+3.12752	Vault Skyward	implemented
+3.12752	Turn the Tide	implemented
 3.12752	Tangle Hulk	comment
+3.12752	Scoria Elemental	implemented
 3.12752	Saberclaw Golem	comment
 3.12752	Rot Wolf	comment
 3.12752	Razorfield Rhino	comment
+3.12752	Plated Seastrider	implemented
 3.12752	Piston Sledge	comment
 3.12752	Oxidda Daredevil	comment
 3.12752	Ogre Resister	comment
 3.12752	Mirran Spy	comment
 3.12752	Melira's Keepers	comment
 3.12752	Magnetic Mine	comment
+3.12752	Loxodon Partisan	implemented
+3.12752	Kuldotha Ringleader	implemented
 3.12752	Kuldotha Flamefiend	comment
 3.12752	Hexplate Golem	comment
 3.12752	Ghalma's Warden	comment
 3.12752	Frantic Salvage	comment
+3.12752	Flensermite	implemented
 3.12752	Fangren Marauder	comment
 3.12752	Copper Carapace	comment
 3.12752	Concussive Bolt	comment
 3.12752	Chrome Steed	comment
 3.12752	Bonehoard	comment
 3.12752	Blisterstick Shaman	comment
+3.12752	Blightwidow	implemented
+3.12752	Bladed Pinions	implemented
 3.12752	Banishment Decree	comment
 3.12752	Auriok Sunchaser	comment
 3.12752	Acid Web Spider	comment
+3.12327	Time Warp	implemented
 3.12231	Hand of the Praetors	comment
 3.12076	Excommunicate	comment
 3.11748	Training Drone	comment
@@ -592,9 +750,11 @@ score	card name	comments
 3.11748	Psychic Miasma	comment
 3.11748	Peace Strider	comment
 3.11748	Painful Quandary	comment
+3.11748	Lumengrid Gargoyle	implemented
 3.11748	Echo Circlet	comment
 3.11748	Crush	comment
 3.11748	Caustic Hound	comment
+3.11748	Carnifex Demon	implemented
 3.11748	Bleak Coven Vampires	comment
 3.11748	Ardent Recruit	comment
 3.11715	Liliana's Caress	comment
@@ -609,6 +769,7 @@ score	card name	comments
 3.09345	Seize the Initiative	comment
 3.09292	Mass Polymorph	comment
 3.09225	Turntimber Ranger	comment
+3.08386	Zendikar Farguide	implemented
 3.08386	Mindless Null	comment
 3.08386	Crypt Ripper	comment
 3.0838	Pitfall Trap	comment
@@ -625,7 +786,9 @@ score	card name	comments
 3.0541	Obsidian Fireheart	comment
 3.04325	Hedron-Field Purists	comment
 3.03532	Quest for Pure Flame	comment
+3.02845	Stormfront Pegasus	implemented
 3.02793	Stifle	comment
+3.02546	Sword of Vengeance	implemented
 3.01906	Shared Discovery	comment
 3.01522	Thrummingbird	comment
 3.00846	Sleight of Hand	comment
@@ -633,15 +796,26 @@ score	card name	comments
 3.00126	Crypt of Agadeem	comment
 3.00006	Stone Idol Trap	comment
 3	Phyrexian Obliterator	comment
+2.99975	Maritime Guard	implemented
+2.99975	Azure Drake	implemented
 2.99918	Marshal's Anthem	comment
 2.9952	Tajuru Archer	comment
 2.99352	Blood Tithe	comment
+2.9894	Solemn Offering	implemented
 2.98705	Simian Spirit Guide	comment
+2.98518	Diminish	implemented
+2.98518	Cloud Elemental	implemented
+2.98016	Chain Reaction	implemented
 2.97936	Pyromancer Ascension	comment
+2.9757	Cudgel Troll	implemented
 2.97082	Ironclaw Orcs	comment
 2.97062	Infantry Veteran	comment
+2.9702	Child of Night	implemented
+2.96755	Trusty Machete	implemented
 2.96725	Wild Evocation	comment
 2.9638	Venser, the Sojourner	comment
+2.96369	Sacred Wolf	implemented
+2.96369	Canyon Minotaur	implemented
 2.95859	Ravenous Trap	comment
 2.94805	Quest for the Goblin Lord	comment
 2.93724	Permafrost Trap	comment
@@ -654,24 +828,32 @@ score	card name	comments
 2.91902	Lifesmith	comment
 2.91902	Engulfing Slagwurm	comment
 2.91833	Red Elemental Blast	comment
+2.91606	Vulshok Berserker	implemented
 2.91606	Skitter of Lizards	comment
 2.91606	Ruinous Minotaur	comment
+2.91606	Lord of Shatterskull Pass	implemented
 2.91606	Juggernaut	comment
 2.91606	Crusher Zendikon	comment
+2.91487	Blightning	implemented
 2.91423	Azorius Chancery	comment
+2.91313	Withstand Death	implemented
 2.91313	Grafted Exoskeleton	comment
 2.91022	Rusted Relic	comment
 2.91022	Neurok Replica	comment
 2.91022	Golden Urn	comment
 2.91022	Flight Spellbomb	comment
+2.90654	Perimeter Captain	implemented
 2.89871	Roiling Terrain	comment
 2.89321	Mire's Toll	comment
 2.88617	Ancient Stirrings	comment
 2.88179	Gut Shot	comment
 2.88179	Apostle's Blessing	comment
 2.87854	Sunspring Expedition	comment
+2.87341	Kitesail	implemented
 2.87247	Trigon of Infestation	comment
 2.87247	Ichor Rats	comment
+2.87231	Archon of Redemption	implemented
+2.872	Dauntless Escort	implemented
 2.8675	Painsmith	comment
 2.8675	Auriok Edgewright	comment
 2.86739	Join the Ranks	comment
@@ -686,24 +868,30 @@ score	card name	comments
 2.85389	Vent Sentinel	comment
 2.85297	Vault Skirge	comment
 2.85297	Porcelain Legionnaire	comment
+2.85181	Watchwolf	implemented
 2.85097	Lavaball Trap	comment
 2.85033	Sea Gate Loremaster	comment
 2.84859	Soul Parry	comment
 2.84859	Slice in Twain	comment
 2.84859	Scrapdiver Serpent	comment
+2.84859	Loxodon Wayfarer	implemented
 2.84859	Golem Artisan	comment
 2.84859	Ferrovore	comment
 2.84859	Dross Hopper	comment
+2.84859	Darksteel Myr	implemented
 2.84859	Bloodshot Trainee	comment
 2.84633	Elixir of Immortality	comment
+2.84633	Asceticism	implemented
 2.84474	Telling Time	comment
 2.83912	Alluring Siren	comment
 2.83783	Dreamstone Hedron	comment
 2.83783	Artisan of Kozilek	comment
 2.83751	Vampire's Bite	comment
 2.83751	Reassembling Skeleton	comment
+2.83536	Sunblast Angel	implemented
 2.83358	Comet Storm	comment
 2.83045	Demon's Horn	comment
+2.83045	Assassinate	implemented
 2.82969	Spire Barrage	comment
 2.82691	Royal Assassin	comment
 2.82617	Ice Cage	comment
@@ -714,26 +902,37 @@ score	card name	comments
 2.81796	Perish	comment
 2.81757	Momentous Fall	comment
 2.81562	Irresistible Prey	comment
+2.81381	Kazandu Refuge	implemented
 2.81344	Serum Visions	comment
 2.81119	Vengeful Archon	comment
 2.81119	Tome Scour	comment
+2.81119	Spined Wurm	implemented
 2.81119	Rotting Legion	comment
 2.81119	Relentless Rats	comment
 2.81119	Prized Unicorn	comment
 2.81119	Necrotic Plague	comment
+2.81119	Mighty Leap	implemented
 2.81119	Disentomb	comment
 2.81119	Conundrum Sphinx	comment
 2.81119	Call to Mind	comment
+2.81119	Armored Cancrix	implemented
 2.81119	Angel's Feather	comment
 2.80738	Nimana Sell-Sword	comment
+2.80735	Spider Umbra	implemented
 2.80608	Necropotence	comment
+2.80371	Leonin Skyhunter	implemented
 2.80367	Contagion	comment
+2.80308	Stupor	implemented
 2.80146	Trapmaker's Snare	comment
 2.79771	Whiplash Trap	comment
 2.79663	Water Servant	comment
 2.79663	Phantom Beast	comment
+2.79663	Cloud Crusader	implemented
+2.79316	Yavimaya Wurm	implemented
+2.79316	Volcanic Strength	implemented
 2.79316	Sorcerer's Strongbox	comment
 2.79316	Prodigal Pyromancer	comment
+2.79316	Greater Basilisk	implemented
 2.79311	Dread Drone	comment
 2.78987	Dystopia	comment
 2.78966	Blazing Torch	comment
@@ -743,6 +942,7 @@ score	card name	comments
 2.78262	Wooded Bastion	comment
 2.78153	Heat Ray	comment
 2.78153	Grotag Siege-Runner	comment
+2.77999	Sphinx of Magosi	implemented
 2.77999	Recurring Insight	comment
 2.77999	Domestication	comment
 2.77917	Suffer the Past	comment
@@ -756,6 +956,7 @@ score	card name	comments
 2.77681	Bala Ged Scorpion	comment
 2.76823	Mindcrank	comment
 2.76823	Geth's Verdict	comment
+2.76774	Dragonmaster Outcast	implemented
 2.76501	Mishra's Helix	comment
 2.7619	Sorin Markov	comment
 2.76115	Chandra Ablaze	comment
@@ -765,9 +966,12 @@ score	card name	comments
 2.74136	Strength of the Tajuru	comment
 2.73547	Hagra Crocodile	comment
 2.73022	Gaea's Might	comment
+2.73022	Boros Swiftblade	implemented
 2.72614	Haunting Echoes	comment
 2.72372	Quest for Ancient Secrets	comment
 2.72106	Rise from the Grave	comment
+2.71702	Glory Seeker	implemented
+2.71501	Stonework Puma	implemented
 2.71501	Soul Stair Expedition	comment
 2.71501	Makindi Shieldmate	comment
 2.71501	Hagra Diabolist	comment
@@ -775,12 +979,15 @@ score	card name	comments
 2.71409	Kor Hookmaster	comment
 2.71409	Kor Aeronaut	comment
 2.71314	Cabal Therapy	comment
+2.71224	Kazuul, Tyrant of the Cliffs	implemented
 2.70787	Wildheart Invoker	comment
 2.70787	Ondu Giant	comment
 2.70787	Null Champion	comment
 2.70787	Jaddi Lifestrider	comment
 2.70787	Essence Feed	comment
+2.70787	Corpsehatch	implemented
 2.70787	Broodwarden	comment
+2.70519	Siege Mastodon	implemented
 2.70239	Talisman of Dominance	comment
 2.70214	Survival of the Fittest	comment
 2.70208	Warmonger's Chariot	comment
@@ -788,6 +995,7 @@ score	card name	comments
 2.70208	Reinforced Bulwark	comment
 2.70208	Reality Spasm	comment
 2.70208	Raid Bombardment	comment
+2.70208	Ogre Sentry	implemented
 2.70208	Not of This World	comment
 2.70208	Merfolk Skyscout	comment
 2.70208	Living Destiny	comment
@@ -795,13 +1003,16 @@ score	card name	comments
 2.70208	Ikiral Outrider	comment
 2.70208	Hedron Matrix	comment
 2.70208	Guard Duty	comment
+2.70208	Gloomhunter	implemented
 2.70208	Eland Umbra	comment
+2.70208	Drana, Kalastria Bloodchief	implemented
 2.70208	Aura Finesse	comment
 2.70208	Akoum Boulderfoot	comment
 2.69972	Zof Shade	comment
 2.69972	Wrap in Flames	comment
 2.69972	Virulent Swipe	comment
 2.69972	Soulsurge Elemental	comment
+2.69972	Nirkana Cutthroat	implemented
 2.69972	Lavafume Invoker	comment
 2.69972	Frostwind Invoker	comment
 2.69972	Fleeting Distraction	comment
@@ -813,19 +1024,30 @@ score	card name	comments
 2.69972	Baneful Omen	comment
 2.69741	Admonition Angel	comment
 2.69444	Umara Raptor	comment
+2.68697	Boar Umbra	implemented
 2.67972	Murmuring Bosk	comment
+2.67801	Serra Angel	implemented
+2.67653	Silvercoat Lion	implemented
 2.6754	Holy Strength	comment
+2.67276	Spidersilk Net	implemented
 2.67153	Seething Song	comment
 2.67095	Blinding Mage	comment
 2.66911	Shriekmaw	comment
+2.66834	Platinum Angel	implemented
+2.66355	Vastwood Gorger	implemented
 2.66355	Trailblazer's Boots	comment
 2.66355	Relic Crush	comment
 2.66275	Shiv's Embrace	comment
 2.65964	Magosi, the Waterveil	comment
+2.65928	Goliath Sphinx	implemented
+2.65231	Giant Spider	implemented
+2.65184	Martial Coup	implemented
 2.65085	Magma Phoenix	comment
+2.64987	Goblin Piker	implemented
 2.64613	Clone	comment
 2.64537	Talisman of Progress	comment
 2.64309	Trapfinder's Trick	comment
+2.64309	Pillarfield Ox	implemented
 2.64309	Hellfire Mongrel	comment
 2.64309	Greenweaver Druid	comment
 2.64309	Frontier Guide	comment
@@ -833,22 +1055,30 @@ score	card name	comments
 2.64309	Beast Hunt	comment
 2.6419	Armored Ascension	comment
 2.64041	Lethargy Trap	comment
+2.63988	Quest for the Gemblades	implemented
 2.63762	Lava Axe	comment
 2.63687	Traumatize	comment
 2.63577	Corrupt	comment
 2.62264	Zulaport Enforcer	comment
 2.62264	Wurm's Tooth	comment
+2.62264	Wrexial, the Risen Deep	implemented
 2.62264	World at War	comment
 2.62264	Wing Puncture	comment
 2.62264	Wind Zendikon	comment
 2.62264	Windrider Eel	comment
 2.62264	Windborne Charge	comment
+2.62264	Wild Griffin	implemented
 2.62264	White Sun's Zenith	comment
+2.62264	Welkin Tern	implemented
 2.62264	Warlord's Axe	comment
+2.62264	Wall of Vines	implemented
 2.62264	Walking Atlas	comment
 2.62264	Voyager Drake	comment
 2.62264	Vivisection	comment
+2.62264	Viridian Claw	implemented
 2.62264	Vigil for the Lost	comment
+2.62264	Victory's Herald	implemented
+2.62264	Veteran's Reflexes	implemented
 2.62264	Venser's Journal	comment
 2.62264	Venerated Teacher	comment
 2.62264	Vedalken Infuser	comment
@@ -862,6 +1092,7 @@ score	card name	comments
 2.62264	Turntimber Basilisk	comment
 2.62264	Turn Aside	comment
 2.62264	Tuktuk Grunts	comment
+2.62264	True Conviction	implemented
 2.62264	Trigon of Thought	comment
 2.62264	Trigon of Rage	comment
 2.62264	Trigon of Mending	comment
@@ -872,23 +1103,31 @@ score	card name	comments
 2.62264	Tomb Hex	comment
 2.62264	Titan Forge	comment
 2.62264	Tireless Missionaries	comment
+2.62264	Tine Shrike	implemented
 2.62264	Time of Heroes	comment
 2.62264	Tideforce Elemental	comment
+2.62264	Thunder Strike	implemented
 2.62264	Thought Gorger	comment
 2.62264	Thopter Assembly	comment
 2.62264	Thada Adel, Acquisitor	comment
+2.62264	Terra Stomper	implemented
 2.62264	Terra Eternal	comment
 2.62264	Tempest Owl	comment
 2.62264	Tanglesap	comment
+2.62264	Tangle Mantis	implemented
 2.62264	Tainted Strike	comment
 2.62264	Surrakar Spellblade	comment
 2.62264	Surrakar Marauder	comment
 2.62264	Surrakar Banisher	comment
 2.62264	Summoner's Bane	comment
 2.62264	Summit Apes	comment
+2.62264	Strandwalker	implemented
+2.62264	Stone Golem	implemented
+2.62264	Stomper Cub	implemented
 2.62264	Steady Progress	comment
 2.62264	Stalwart Shield-Bearers	comment
 2.62264	Stabbing Pain	comment
+2.62264	Sporecap Spider	implemented
 2.62264	Spire Serpent	comment
 2.62264	Spiraling Duelist	comment
 2.62264	Spin Engine	comment
@@ -896,13 +1135,17 @@ score	card name	comments
 2.62264	Spell Contortion	comment
 2.62264	Spawnsire of Ulamog	comment
 2.62264	Spawning Breath	comment
+2.62264	Soulbound Guardians	implemented
 2.62264	Soaring Seacliff	comment
 2.62264	Snapsail Glider	comment
 2.62264	Snapping Creeper	comment
+2.62264	Snake Umbra	implemented
+2.62264	Smite	implemented
 2.62264	Slingbow Trap	comment
 2.62264	Slavering Nulls	comment
 2.62264	Slaughter Cry	comment
 2.62264	Skywatcher Adept	comment
+2.62264	Sky Ruin Drake	implemented
 2.62264	Sky-Eel School	comment
 2.62264	Skittering Invasion	comment
 2.62264	Skinwing	comment
@@ -912,8 +1155,11 @@ score	card name	comments
 2.62264	Shoal Serpent	comment
 2.62264	Shimmer Myr	comment
 2.62264	Shieldmate's Blessing	comment
+2.62264	Shepherd of the Lost	implemented
+2.62264	Shatterskull Giant	implemented
 2.62264	Shape Anew	comment
 2.62264	Serum Raker	comment
+2.62264	Septic Rats	implemented
 2.62264	Selective Memory	comment
 2.62264	Seismic Shudder	comment
 2.62264	Seer's Sundial	comment
@@ -921,10 +1167,13 @@ score	card name	comments
 2.62264	Scythe Tiger	comment
 2.62264	Scrib Nibblers	comment
 2.62264	Screeching Silcaw	comment
+2.62264	Scourge Servant	implemented
 2.62264	Savage Silhouette	comment
 2.62264	Sangromancer	comment
+2.62264	Ruthless Cullblade	implemented
 2.62264	Rust Tick	comment
 2.62264	Rusted Slasher	comment
+2.62264	Runeclaw Bear	implemented
 2.62264	Rumbling Aftershocks	comment
 2.62264	Ruin Ghost	comment
 2.62264	Roc Egg	comment
@@ -936,6 +1185,8 @@ score	card name	comments
 2.62264	Realms Uncharted	comment
 2.62264	Razor Boomerang	comment
 2.62264	Rapacious One	comment
+2.62264	Rally the Forces	implemented
+2.62264	Rage Nimbus	implemented
 2.62264	Quilled Slagwurm	comment
 2.62264	Quicksilver Geyser	comment
 2.62264	Quicksilver Gargantuan	comment
@@ -948,12 +1199,14 @@ score	card name	comments
 2.62264	Psychosis Crawler	comment
 2.62264	Protean Hydra	comment
 2.62264	Primal Cocoon	comment
+2.62264	Priests of Norn	implemented
 2.62264	Prey's Vengeance	comment
 2.62264	Predatory Urge	comment
 2.62264	Praetor's Counsel	comment
 2.62264	Plaguemaw Beast	comment
 2.62264	Pistus Strike	comment
 2.62264	Piranha Marsh	comment
+2.62264	Pierce Strider	implemented
 2.62264	Phyresis	comment
 2.62264	Phylactery Lich	comment
 2.62264	Phantasmal Abomination	comment
@@ -963,13 +1216,18 @@ score	card name	comments
 2.62264	Pathrazer of Ulamog	comment
 2.62264	Paralyzing Grasp	comment
 2.62264	Palace Guard	comment
+2.62264	Ogre's Cleaver	implemented
 2.62264	Ogre Geargrabber	comment
+2.62264	Novablast Wurm	implemented
 2.62264	Noble Vestige	comment
 2.62264	Nimbus Wings	comment
 2.62264	Nightwing Shade	comment
 2.62264	Nighthaze	comment
+2.62264	Neurok Invisimancer	implemented
+2.62264	Nether Horror	implemented
 2.62264	Nested Ghoul	comment
 2.62264	Nemesis Trap	comment
+2.62264	Nema Siltlurker	implemented
 2.62264	Needlebite Trap	comment
 2.62264	Near-Death Experience	comment
 2.62264	Nature's Spiral	comment
@@ -981,6 +1239,7 @@ score	card name	comments
 2.62264	Myr Propagator	comment
 2.62264	Myr Galvanizer	comment
 2.62264	Murasa Pyromancer	comment
+2.62264	Mordant Dragon	implemented
 2.62264	Morbid Plunder	comment
 2.62264	Molten Ravager	comment
 2.62264	Mitotic Manipulation	comment
@@ -991,9 +1250,13 @@ score	card name	comments
 2.62264	Metallic Mastery	comment
 2.62264	Merfolk Wayfinder	comment
 2.62264	Merfolk Spy	comment
+2.62264	Merfolk Seastalkers	implemented
 2.62264	Merfolk Observer	comment
 2.62264	Melt Terrain	comment
+2.62264	Massacre Wurm	implemented
+2.62264	Marsh Threader	implemented
 2.62264	Mammoth Umbra	comment
+2.62264	Makindi Griffin	implemented
 2.62264	Magmaw	comment
 2.62264	Magma Rift	comment
 2.62264	Lust for War	comment
@@ -1002,7 +1265,9 @@ score	card name	comments
 2.62264	Lullmage Mentor	comment
 2.62264	Lorthos, the Tidemaker	comment
 2.62264	Living Tsunami	comment
+2.62264	Liliana's Specter	implemented
 2.62264	Lightmine Field	comment
+2.62264	Lightkeeper of Emeria	implemented
 2.62264	Lighthouse Chronologist	comment
 2.62264	Liege of the Tangle	comment
 2.62264	Leyline of Punishment	comment
@@ -1010,10 +1275,13 @@ score	card name	comments
 2.62264	Lay Bare	comment
 2.62264	Landbind Ritual	comment
 2.62264	Kraken's Eye	comment
+2.62264	Kraken Hatchling	implemented
+2.62264	Koth's Courier	implemented
 2.62264	Kor Spiritdancer	comment
 2.62264	Kor Line-Slinger	comment
 2.62264	Knowledge Pool	comment
 2.62264	Knight of Cliffhaven	comment
+2.62264	Kitesail Apprentice	implemented
 2.62264	Khalni Hydra	comment
 2.62264	Khalni Gem	comment
 2.62264	Kemba's Legion	comment
@@ -1021,6 +1289,9 @@ score	card name	comments
 2.62264	Kazuul Warlord	comment
 2.62264	Kazandu Tuskcaller	comment
 2.62264	Kalitas, Bloodchief of Ghet	comment
+2.62264	Jwar Isle Refuge	implemented
+2.62264	Jwari Scuttler	implemented
+2.62264	Jagwasp Swarm	implemented
 2.62264	Jace's Erasure	comment
 2.62264	It That Betrays	comment
 2.62264	Ior Ruin Expedition	comment
@@ -1048,23 +1319,30 @@ score	card name	comments
 2.62264	Halo Hunter	comment
 2.62264	Halimar Wavewatch	comment
 2.62264	Hada Spy Patrol	comment
+2.62264	Guul Draz Specter	implemented
 2.62264	Guul Draz Assassin	comment
 2.62264	Guardian Zendikon	comment
+2.62264	Guard Gomazoa	implemented
 2.62264	Gruesome Encore	comment
 2.62264	Grotag Thrasher	comment
 2.62264	Grindclock	comment
 2.62264	Gravity Well	comment
 2.62264	Gravedigger	comment
+2.62264	Grappler Spider	implemented
 2.62264	Gore Vassal	comment
 2.62264	Gomazoa	comment
 2.62264	Golem's Heart	comment
 2.62264	Goldenglow Moth	comment
+2.62264	Goblin War Paint	implemented
 2.62264	Goblin Tunneler	comment
+2.62264	Goblin Shortcutter	implemented
+2.62264	Goblin Roughrider	implemented
 2.62264	Goblin Balloon Brigade	comment
 2.62264	Gnathosaur	comment
 2.62264	Gnarlid Pack	comment
 2.62264	Glissa, the Traitor	comment
 2.62264	Gigantomancer	comment
+2.62264	Giant Scorpion	implemented
 2.62264	Geyser Glider	comment
 2.62264	Geth, Lord of the Vault	comment
 2.62264	Gelatinous Genesis	comment
@@ -1074,9 +1352,12 @@ score	card name	comments
 2.62264	Fulgent Distraction	comment
 2.62264	Flesh-Eater Imp	comment
 2.62264	Fledgling Griffin	comment
+2.62264	Flameborn Hellion	implemented
+2.62264	Fire Servant	implemented
 2.62264	Fiery Hellhound	comment
 2.62264	Feral Contest	comment
 2.62264	Ezuri's Brigade	comment
+2.62264	Ezuri's Archers	implemented
 2.62264	Exsanguinate	comment
 2.62264	Explorer's Scope	comment
 2.62264	Eternity Vessel	comment
@@ -1085,20 +1366,29 @@ score	card name	comments
 2.62264	Enatu Golem	comment
 2.62264	Embersmith	comment
 2.62264	Electropotence	comment
+2.62264	Eel Umbra	implemented
+2.62264	Echo Mage	implemented
 2.62264	Earth Servant	comment
+2.62264	Duskdale Wurm	implemented
 2.62264	Dryad's Favor	comment
+2.62264	Drake Umbra	implemented
 2.62264	Dormant Gomazoa	comment
 2.62264	Distant Memories	comment
+2.62264	Dissipation Field	implemented
 2.62264	Disaster Radius	comment
 2.62264	Desecrated Earth	comment
 2.62264	Demonic Appetite	comment
 2.62264	Demolish	comment
 2.62264	Decimator Web	comment
+2.62264	Deathless Angel	implemented
 2.62264	Deathforge Shaman	comment
 2.62264	Dead Reckoning	comment
 2.62264	Dawnglare Invoker	comment
+2.62264	Darksteel Sentinel	implemented
 2.62264	Darksteel Plate	comment
 2.62264	Darksteel Juggernaut	comment
+2.62264	Darkslick Drake	implemented
+2.62264	Daggerback Basilisk	implemented
 2.62264	Cyclops Gladiator	comment
 2.62264	Culling Dais	comment
 2.62264	Crystal Ball	comment
@@ -1110,8 +1400,10 @@ score	card name	comments
 2.62264	Core Prowler	comment
 2.62264	Conquering Manticore	comment
 2.62264	Clone Shell	comment
+2.62264	Cliff Threader	implemented
 2.62264	Claws of Valakut	comment
 2.62264	Choking Fumes	comment
+2.62264	Chandra's Spitfire	implemented
 2.62264	Chandra's Outrage	comment
 2.62264	Champion's Drake	comment
 2.62264	Cerebral Eruption	comment
@@ -1119,9 +1411,11 @@ score	card name	comments
 2.62264	Caustic Crawler	comment
 2.62264	Cast Through Time	comment
 2.62264	Carnage Altar	comment
+2.62264	Caravan Hurda	implemented
 2.62264	Caravan Escort	comment
 2.62264	Canopy Cover	comment
 2.62264	Caller of Gales	comment
+2.62264	Butcher of Malakir	implemented
 2.62264	Burn the Impure	comment
 2.62264	Bull Rush	comment
 2.62264	Brink of Disaster	comment
@@ -1132,18 +1426,27 @@ score	card name	comments
 2.62264	Bonds of Quicksilver	comment
 2.62264	Bold Defense	comment
 2.62264	Bojuka Brigand	comment
+2.62264	Bog Tatters	implemented
+2.62264	Bog Raiders	implemented
 2.62264	Blunt the Assault	comment
 2.62264	Blood Tribute	comment
 2.62264	Bloodcrazed Goblin	comment
+2.62264	Bladetusk Boar	implemented
 2.62264	Bladed Sentinel	comment
+2.62264	Berserkers of Blood Ridge	implemented
 2.62264	Beastbreaker of Bala Ged	comment
 2.62264	Bear Umbra	comment
 2.62264	Bazaar Trader	comment
 2.62264	Battle-Rattle Shaman	comment
 2.62264	Battle Rampart	comment
+2.62264	Battle Hurda	implemented
 2.62264	Barrage Ogre	comment
+2.62264	Barony Vampire	implemented
+2.62264	Barbed Battlegear	implemented
 2.62264	Baloth Woodcrasher	comment
+2.62264	Back to Nature	implemented
 2.62264	Aura Gnarlid	comment
+2.62264	Assault Griffin	implemented
 2.62264	Armament Master	comment
 2.62264	Archmage Ascension	comment
 2.62264	Apex Hawks	comment
@@ -1153,7 +1456,9 @@ score	card name	comments
 2.62264	Ancient Hellkite	comment
 2.62264	Amulet of Vigor	comment
 2.62264	Ajani's Mantra	comment
+2.62264	Air Servant	implemented
 2.62264	Agadeem Occultist	comment
+2.62264	Affa Guard Hound	implemented
 2.62264	Æther Tradewinds	comment
 2.62264	Æther Figment	comment
 2.62264	Æther Adept	comment
@@ -1174,6 +1479,7 @@ score	card name	comments
 2.55585	Wrath of God	destroy all creatures, can't be regenerated*
 2.55575	Fabricate	comment
 2.54425	Graven Cairns	comment
+2.53947	Knight of Meadowgrain	implemented
 2.52226	Pillage	comment
 2.52126	Eternal Witness	comment
 2.51901	Lotus Bloom	comment
@@ -1181,14 +1487,17 @@ score	card name	comments
 2.51231	Worn Powerstone	comment
 2.4872	Merchant Scroll	comment
 2.48521	Broken Ambitions	comment
+2.48329	Skullclamp	implemented
 2.48268	Shock	comment
 2.47701	Shattering Pulse	comment
 2.47677	Steel of the Godhead	comment
+2.4522	Sword of Fire and Ice	implemented
 2.44631	Somber Hoverguard	comment
 2.44544	Arcbound Worker	comment
 2.44106	Temporal Fissure	comment
 2.41251	Abeyance	comment
 2.40409	Scion of Oona	comment
+2.39907	Vivid Creek	implemented
 2.39815	Crucible of Worlds	comment
 2.39127	Wild Mongrel	comment
 2.38535	Phyrexian Processor	comment
@@ -1207,14 +1516,18 @@ score	card name	comments
 2.25562	Time Spiral	comment
 2.25562	High Tide	comment
 2.25527	Leyline of Lifeforce	comment
+2.25081	Isamaru, Hound of Konda	implemented
+2.22549	Terminate	implemented
 2.21636	Vampiric Tutor	comment
 2.20412	Darkblast	comment
 2.19691	Dwarven Lieutenant	comment
 2.19691	Active Volcano	comment
 2.17704	Teferi, Mage of Zhalfir	comment
+2.16427	Armadillo Cloak	implemented
 2.15516	Urborg, Tomb of Yawgmoth	comment
 2.14434	Vedalken Shackles	comment
 2.13591	City of Solitude	comment
+2.1217	Glen Elendra Archmage	implemented
 2.11086	Wirewood Symbiote	comment
 2.10797	Hammer of Bogardan	comment
 2.1068	Goblin Replica	comment
@@ -1229,21 +1542,29 @@ score	card name	comments
 2.02595	Undiscovered Paradise	comment
 2.02268	Ghitu Encampment	comment
 2.01197	Karakas	comment
+2.00926	Mind Spring	implemented
 2.0054	Manamorphose	comment
+1.98837	Flametongue Kavu	implemented
 1.98416	Reveillark	comment
 1.98247	Extirpate	comment
 1.96278	Tendrils of Corruption	comment
+1.962	Boggart Ram-Gang	implemented
 1.95618	Painter's Servant	comment
 1.95109	Nim Replica	comment
 1.94885	Grindstone	comment
+1.9461	Rhox War Monk	implemented
 1.92625	Basking Rootwalla	comment
+1.9185	Lotus Petal	implemented
+1.89407	Bottle Gnomes	implemented
 1.88606	Treetop Village	land that becomes 3/3 Ape creature with trample until EOT*
 1.8851	Dryad Arbor	comment
 1.88296	Shrine of Limitless Power	comment
 1.88296	Lashwrithe	comment
 1.88296	Karn Liberated	comment
 1.8741	Cloudgoat Ranger	comment
+1.86064	Putrid Leech	implemented
 1.85296	Priest of Gix	comment
+1.8455	Woolly Thoctar	implemented
 1.84334	Rack and Ruin	comment
 1.83676	Squandered Resources	comment
 1.83676	Prosperity	comment
@@ -1256,6 +1577,7 @@ score	card name	comments
 1.82105	Lion's Eye Diamond	comment
 1.81502	Scale of Chiss-Goria	comment
 1.81261	Gigadrowse	comment
+1.81203	Essence Scatter	implemented
 1.80405	Dragonstorm	comment
 1.80106	Fact or Fiction	comment
 1.8002	Ancient Ziggurat	comment
@@ -1276,27 +1598,35 @@ score	card name	comments
 1.69027	Blood Moon	comment
 1.67051	Urza's Rage	comment
 1.66903	Trenching Steed	comment
+1.66607	Arcane Sanctum	implemented
 1.65778	Electrolyze	comment
+1.63475	Eager Cadet	implemented
 1.63423	Thopter Foundry	comment
 1.62895	Serum Powder	comment
 1.62734	Ball Lightning	comment
 1.61204	Avalanche Riders	comment
 1.60897	Chalice of the Void	XX casting cost
 1.60875	Sneak Attack	comment
+1.59656	Seaside Citadel	implemented
 1.58671	Goblin Welder	comment
+1.56762	Sacred Foundry	implemented
 1.56049	Memory Lapse	comment
+1.5597	Temple Garden	implemented
 1.55381	Grove of the Burnwillows	comment
 1.54667	Brine Elemental	comment
 1.54009	Savage Thallid	comment
 1.54009	Mwonvuli Acid-Moss	comment
+1.54009	Havenwood Wurm	implemented
 1.54009	Errant Ephemeron	comment
 1.54009	Coral Trickster	comment
+1.54009	Ashcoat Bear	implemented
 1.52623	Meloku the Clouded Mirror	comment
 1.52453	Demonic Consultation	comment
 1.52419	Opalescence	comment
 1.52419	Leyline of the Meek	comment
 1.52419	Leyline of Lightning	comment
 1.52419	Crop Rotation	comment
+1.52049	Phyrexian Arena	implemented
 1.51668	Sterling Grove	comment
 1.51668	Enchantress's Presence	comment
 1.51668	Argothian Enchantress	comment
@@ -1307,6 +1637,9 @@ score	card name	comments
 1.47871	Secluded Steppe	comment
 1.47831	Auntie's Hovel	comment
 1.47734	Phyrexian Negator	comment
+1.47621	Keiga, the Tide Star	implemented
+1.4744	Vivid Meadow	implemented
+1.47386	Mogg Fanatic	implemented
 1.4728	Sulfurous Springs	comment
 1.46878	Gilded Drake	comment
 1.46674	Orcish Cannoneers	comment
@@ -1316,12 +1649,16 @@ score	card name	comments
 1.46461	Dwarven Trader	comment
 1.46461	Brothers of Fire	comment
 1.4537	Circle of Protection: Red	comment
+1.45367	Sword of Light and Shadow	implemented
 1.45253	Wren's Run Vanquisher	comment
+1.44504	Vivid Marsh	implemented
+1.43589	Giant Solifuge	implemented
 1.43073	Urza's Tower	comment
 1.43073	Urza's Power Plant	comment
 1.43073	Urza's Mine	comment
 1.42894	Aura of Silence	comment
 1.42531	Wall of Roots	comment
+1.41716	Repulse	implemented
 1.41513	Ancient Den	comment
 1.4118	Viridian Shaman	comment
 1.41098	Rift Bolt	comment
@@ -1336,12 +1673,14 @@ score	card name	comments
 1.38031	Bad River	comment
 1.37497	Pyrite Spellbomb	comment
 1.37373	Violent Outburst	comment
+1.37137	Dragon Fodder	implemented
 1.37091	Gainsay	comment
 1.36757	Blastoderm	comment
 1.36423	Tooth of Chiss-Goria	comment
 1.35842	Phyrexian Vault	comment
 1.35842	Phyrexian Totem	comment
 1.35842	Phyrexian Plaguelord	comment
+1.35842	Phyrexian Hulk	implemented
 1.35842	Phyrexian Ghoul	comment
 1.35842	Phyrexian Gargantua	comment
 1.35842	Phyrexian Denouncer	comment
@@ -1356,6 +1695,7 @@ score	card name	comments
 1.34619	Echoing Truth	comment
 1.34221	Kavu Chameleon	comment
 1.33888	Saproling Burst	comment
+1.33888	Fires of Yavimaya	implemented
 1.33794	Puppet Strings	comment
 1.32942	Divert	comment
 1.32512	Eternal Dragon	comment
@@ -1371,16 +1711,19 @@ score	card name	comments
 1.2581	Castle	comment
 1.25648	Gaea's Cradle	comment
 1.25328	Plow Under	comment
+1.2488	Jungle Shrine	implemented
 1.23708	Finest Hour	comment
 1.22717	Predict	comment
 1.22594	Brute Force	comment
 1.22584	Talisman of Indulgence	comment
 1.22443	Sylvan Library	comment
+1.21902	Infest	implemented
 1.21331	Atog	comment
 1.21267	Agony Warp	comment
 1.21001	Welding Jar	comment
 1.21001	Genesis Chamber	comment
 1.21001	Broodstar	comment
+1.20753	Overrun	implemented
 1.20551	Brushland	choice of adding mana
 1.20488	Keldon Marauders	comment
 1.20316	Jund Charm	comment
@@ -1392,11 +1735,14 @@ score	card name	comments
 1.19791	Irradiate	comment
 1.19791	Cathodion	comment
 1.18846	Vampire Nocturnus	comment
+1.18688	Savage Lands	implemented
 1.18606	Open the Vaults	comment
+1.17462	Seal of Fire	implemented
 1.16935	Price of Progress	comment
 1.14633	Pyrostatic Pillar	comment
 1.14314	Orim's Chant	comment
 1.13354	Lava Spike	comment
+1.12976	Stomping Ground	implemented
 1.12744	Goblin Patrol	comment
 1.12744	Goblin Cadets	comment
 1.12472	Thought Hemorrhage	comment
@@ -1404,12 +1750,15 @@ score	card name	comments
 1.12377	Wild Growth	comment
 1.11978	Disenchant	comment
 1.11211	Font of Mythos	comment
+1.10746	Godless Shrine	implemented
 1.106	Solitary Confinement	comment
 1.10326	Mistvein Borderpost	comment
 1.10172	Magus of the Moon	comment
 1.09844	Erhnam Djinn	comment
 1.09648	Whirling Dervish	comment
+1.09396	Elvish Archers	implemented
 1.07792	Jester's Cap	comment
+1.07572	Chameleon Colossus	implemented
 1.07043	Snuff Out	comment
 1.06884	Quenchable Fire	comment
 1.06563	Rule of Law	comment
@@ -1417,14 +1766,20 @@ score	card name	comments
 1.04182	Ardent Plea	comment
 1.03886	Jhovall Queen	comment
 1.03453	Maze of Ith	comment
+1.03141	Twincast	implemented
 1.02877	Mind Shatter	comment
+1.0241	Lightning Greaves	implemented
 1.01366	Diabolic Edict	comment
 1.01203	Tendo Ice Bridge	comment
+1.00275	Divination	implemented
 1.00136	Wake Thrasher	comment
 0.987266	Karmic Guide	comment
 0.983778	Shaman en-Kor	comment
 0.978219	Thunderscape Battlemage	comment
 0.96883	Wanderwine Hub	comment
+0.966707	Breeding Pool	implemented
+0.965729	Kiki-Jiki, Mirror Breaker	implemented
+0.964535	Fireslinger	implemented
 0.961915	Blood Oath	comment
 0.960269	Tolaria West	comment
 0.958706	Doran, the Siege Tower	comment
@@ -1432,6 +1787,7 @@ score	card name	comments
 0.954482	Scepter of Dominance	comment
 0.951561	Prophetic Bolt	comment
 0.946178	Prismatic Strands	comment
+0.94148	Sheoldred, Whispering One	implemented
 0.94148	Life's Finale	comment
 0.934983	Scrabbling Claws	comment
 0.933029	Realm Razer	comment
@@ -1451,14 +1807,19 @@ score	card name	comments
 0.902025	Hunted Dragon	comment
 0.896283	Vexing Shusher	comment
 0.886388	Firewild Borderpost	comment
+0.885729	Crumbling Necropolis	implemented
 0.883299	Propaganda	comment
 0.880235	Loaming Shaman	comment
+0.879395	Sprouting Thrinax	implemented
+0.873551	Boartusk Liege	implemented
 0.871985	Wildfield Borderpost	comment
+0.870781	Loxodon Hierarch	implemented
 0.867556	Wipe Away	comment
 0.865645	Spinneret Sliver	comment
 0.860058	Wing Splicer	comment
 0.860058	Chancellor of the Tangle	comment
 0.854315	Goblin Warchief	comment
+0.854315	Goblin Piledriver	implemented
 0.847548	Goblin Ringleader	comment
 0.845674	Rebuild	comment
 0.845582	Rhystic Lightning	comment
@@ -1468,6 +1829,7 @@ score	card name	comments
 0.841552	Flame Javelin	comment
 0.840583	Obliterate	comment
 0.837126	Syncopate	comment
+0.837126	Glacial Wall	implemented
 0.835753	Slay	comment
 0.834514	Sword of the Chosen	comment
 0.834514	Royal Decree	comment
@@ -1477,9 +1839,12 @@ score	card name	comments
 0.834514	Jester's Scepter	comment
 0.834514	Jester's Mask	comment
 0.834514	Darien, King of Kjeldor	comment
+0.834514	Beloved Chaplain	implemented
+0.833392	Tattermunge Maniac	implemented
 0.822708	Tranquility	comment
 0.822599	Jokulhaups	comment
 0.821682	Aven Mindcensor	comment
+0.818723	Mystic Snake	implemented
 0.81185	Savannah Lions	comment
 0.811153	Goblin Lackey	comment
 0.810968	Benalish Cavalry	comment
@@ -1488,6 +1853,7 @@ score	card name	comments
 0.803003	Hive Mind	comment
 0.800398	Confiscate	comment
 0.794582	Mana Drain	comment
+0.793546	Wall of Reverence	implemented
 0.789623	Llanowar Wastes	comment
 0.786371	Call of the Herd	comment
 0.785632	Regal Force	comment
@@ -1514,6 +1880,7 @@ score	card name	comments
 0.770043	Crookclaw Transmuter	comment
 0.770043	Clockwork Hydra	comment
 0.770043	Brass Gnat	comment
+0.76973	Wall of Denial	implemented
 0.766352	Oath of Druids	comment
 0.764493	Treefolk Harbinger	comment
 0.761846	Mindlock Orb	comment
@@ -1521,6 +1888,7 @@ score	card name	comments
 0.746824	Serra Avatar	comment
 0.745041	Black Vise	comment
 0.744523	Wheel of Sun and Moon	comment
+0.744103	Harmonize	implemented
 0.743037	Earwig Squad	comment
 0.732303	Immolation	comment
 0.732303	An-Zerrin Ruins	comment
@@ -1536,6 +1904,7 @@ score	card name	comments
 0.701202	Dark Depths	comment
 0.699775	Ihsan's Shade	comment
 0.697191	Phyrexian Walker	comment
+0.697153	Sphinx of the Steel Wind	implemented
 0.696413	Soul Burn	comment
 0.696202	Akroma's Vengeance	comment
 0.696186	Smash	comment
@@ -1587,6 +1956,8 @@ score	card name	comments
 0.663557	Mark of Asylum	comment
 0.663306	Polymorph	comment
 0.662681	Badlands	comment
+0.661092	Venser, Shaper Savant	implemented
+0.657922	Skeletal Vampire	implemented
 0.655232	Extractor Demon	comment
 0.652284	Angelsong	comment
 0.64826	Mystical Tutor	comment
@@ -1598,14 +1969,19 @@ score	card name	comments
 0.638471	Bituminous Blast	comment
 0.637356	Search for Tomorrow	comment
 0.636785	Lapse of Certainty	comment
+0.635978	Spiritmonger	implemented
 0.631273	Fyndhorn Elves	comment
 0.63021	Demonic Tutor	comment
 0.629618	Flowstone Flood	comment
 0.628204	Tezzeret the Seeker	comment
+0.628032	Behemoth Sledge	implemented
+0.627338	Vivid Crag	implemented
 0.626803	Mana Tithe	comment
 0.625446	Moat	comment
+0.625266	Rancor	implemented
 0.623525	Goblin Cannon	comment
 0.623322	Rude Awakening	comment
+0.622067	Goblin Outlander	implemented
 0.604809	Warmth	comment
 0.604809	Suppression Field	comment
 0.604809	Ground Seal	comment
@@ -1616,9 +1992,11 @@ score	card name	comments
 0.598956	Dross Scorpion	comment
 0.598566	Warren Weirding	comment
 0.597869	Brain Freeze	comment
+0.597795	Hallowed Fountain	implemented
 0.596652	Ghostfire	comment
 0.595467	Magma Jet	comment
 0.591207	Banefire	comment
+0.590995	Vedalken Outlander	implemented
 0.583123	Chill	comment
 0.57806	Architects of Will	comment
 0.57498	Flame Rift	comment
@@ -1643,6 +2021,7 @@ score	card name	comments
 0.542207	Goblin Assault	comment
 0.542206	Choke	comment
 0.541313	Slaughter Pact	comment
+0.541091	Overgrown Tomb	implemented
 0.538037	Ghastly Demise	comment
 0.536537	Aether Adept	comment
 0.533894	Faerie Conclave	comment
@@ -1665,18 +2044,23 @@ score	card name	comments
 0.506466	Ego Erasure	comment
 0.5048	Glassdust Hulk	comment
 0.5048	Filigree Angel	comment
+0.502458	Wrecking Ball	implemented
 0.501913	Gerrard's Wisdom	comment
 0.501003	Grasslands	comment
+0.498143	Zealous Persecution	implemented
 0.495119	Wilt-Leaf Liege	if discard goes to battlefield instead of graveyard*
 0.494516	Burning Inquiry	comment
 0.491279	Life from the Loam	comment
 0.486177	Electrostatic Bolt	comment
+0.485331	Putrefy	implemented
 0.484675	Mulch	comment
 0.484532	Chain of Vapor	comment
 0.481995	Castle Sengir	comment
 0.479591	Hissing Iguanar	comment
 0.478425	Merfolk Traders	comment
 0.47232	Vithian Stinger	comment
+0.472118	Last Gasp	implemented
+0.46848	Cylian Elf	implemented
 0.467719	Academy Ruins	comment
 0.462931	Carrion Thrash	comment
 0.459532	Borderland Ranger	comment
@@ -1691,6 +2075,7 @@ score	card name	comments
 0.453543	Resounding Roar	comment
 0.453543	Mosstodon	comment
 0.453543	Kresh the Bloodbraided	comment
+0.452305	Blaze	implemented
 0.449843	Rakdos Signet	comment
 0.449175	Warp World	comment
 0.447491	Trace of Abundance	comment
@@ -1702,6 +2087,7 @@ score	card name	comments
 0.438942	Arcane Laboratory	comment
 0.437492	Countryside Crusher	comment
 0.435327	Recurring Nightmare	comment
+0.432984	Mind Stone	implemented
 0.427382	Ancient Grudge	comment
 0.427274	Academy Rector	comment
 0.425313	Great Whale	comment
@@ -1733,7 +2119,9 @@ score	card name	comments
 0.377786	Mouth of Ronom	comment
 0.376372	Imperial Recruiter	comment
 0.376301	Scrying Sheets	comment
+0.375459	Broodmate Dragon	implemented
 0.371858	Curiosity	comment
+0.370711	Rafiq of the Many	implemented
 0.370539	Mind's Eye	comment
 0.370539	Ice Floe	comment
 0.370539	Ice Cauldron	comment
@@ -1809,7 +2197,9 @@ score	card name	comments
 0.344166	Rhystic Study	comment
 0.341963	Executioner's Capsule	comment
 0.341166	Zealous Inquisitor	comment
+0.341166	Windbrisk Raptor	implemented
 0.341166	Starlit Sanctum	comment
+0.341166	Spirit of the Hearth	implemented
 0.341166	Snowfall	comment
 0.341166	Sentry Oak	comment
 0.341166	Recumbent Bliss	comment
@@ -1844,10 +2234,12 @@ score	card name	comments
 0.338002	Enlisted Wurm	comment
 0.333786	Cataclysm	comment
 0.332709	Defense Grid	comment
+0.331252	Force Spike	implemented
 0.329794	Samurai of the Pale Curtain	comment
 0.327806	Kaleidostone	comment
 0.325461	Dwarven Miners	comment
 0.325104	Energy Flux	comment
+0.324174	Smash to Smithereens	implemented
 0.323849	Personal Tutor	comment
 0.322209	Guttural Response	counter blue instant spell*
 0.321985	Ophidian	comment
@@ -1855,12 +2247,14 @@ score	card name	comments
 0.32041	Sword of the Meek	comment
 0.316342	Archangel	comment
 0.308444	Trolls of Tel-Jilad	comment
+0.308444	Goblin Striker	implemented
 0.306703	Cloudstone Curio	comment
 0.306094	Ancestral Vision	comment
 0.305769	Smallpox	comment
 0.302494	Loyal Retainers	comment
 0.302404	Ghostly Prison	comment
 0.302005	Gorilla Shaman	comment
+0.300015	Countersquall	implemented
 0.29963	Compost	comment
 0.292849	Identity Crisis	comment
 0.292454	Idyllic Tutor	comment
@@ -1879,12 +2273,15 @@ score	card name	comments
 0.276122	Mox Jet	comment
 0.276122	Mox Emerald	comment
 0.276122	Ancestral Recall	comment
+0.274603	Inkwell Leviathan	implemented
 0.2734	Necrogenesis	comment
+0.272488	Blood Crypt	implemented
 0.272305	Captured Sunlight	comment
 0.269217	Battlefield Forge	comment
 0.26692	Tolarian Academy	comment
 0.266012	Gather Specimens	comment
 0.266011	Blue Elemental Blast	comment
+0.264654	Guardian Seraph	implemented
 0.264643	Boomerang	comment
 0.264221	Morphling	comment
 0.263843	Blazing Archon	comment
@@ -1893,6 +2290,7 @@ score	card name	comments
 0.26031	Granger Guildmage	comment
 0.260001	Berserk	comment
 0.255069	Soltari Priest	comment
+0.254414	Reanimate	implemented
 0.254414	Exhume	comment
 0.254414	Entomb	comment
 0.253472	Hallowed Burial	comment
@@ -1916,15 +2314,19 @@ score	card name	comments
 0.227178	Tomb of Urami	comment
 0.227127	Dread Warlock	comment
 0.223718	Forgotten Cave	comment
+0.222949	Wort, Boggart Auntie	implemented
+0.21749	Plumeveil	implemented
 0.215547	Eureka	comment
 0.214874	Zombie Cannibal	comment
 0.214874	Wall of Tombstones	comment
 0.214874	Vampiric Feast	comment
 0.214874	Vampire Bats	comment
 0.214874	Treacherous Vampire	comment
+0.214874	Soul Feast	implemented
 0.214874	Season of the Witch	comment
 0.214874	Scarecrow	comment
 0.214874	Reaper King	comment
+0.214874	Mass of Ghouls	implemented
 0.214874	Khabál Ghoul	comment
 0.214874	Jandor's Saddlebags	comment
 0.214874	Gutless Ghoul	comment
@@ -1957,6 +2359,7 @@ score	card name	comments
 0.208353	Sigil of Distinction	comment
 0.207779	Empty the Warrens	comment
 0.207707	Armillary Sphere	comment
+0.207646	Sigiled Paladin	implemented
 0.206847	Coffin Queen	comment
 0.206605	Swans of Bryn Argoll	comment
 0.206195	Seismic Assault	comment
@@ -1964,14 +2367,18 @@ score	card name	comments
 0.205547	Stinkweed Imp	comment
 0.205438	Peek	comment
 0.2049	Tinker	comment
+0.204572	Lightning Angel	implemented
 0.204343	Lord of the Undead	comment
 0.204343	King Suleiman	comment
 0.203868	Coastal Tower	comment
+0.202848	Angel of Despair	implemented
 0.202603	Worldly Counsel	comment
 0.202438	Desperate Ritual	comment
 0.201304	Tin Street Hooligan	comment
+0.197366	Safehold Elite	implemented
 0.196733	Grapeshot	comment
 0.195661	Absolute Law	comment
+0.192441	Rupture Spire	implemented
 0.192422	Disrupt	comment
 0.191892	Ant Queen	comment
 0.187574	Goblin Sharpshooter	comment
@@ -1983,9 +2390,12 @@ score	card name	comments
 0.18134	Angel's Grace	comment
 0.181127	Fodder Launch	comment
 0.179257	Raise the Alarm	comment
+0.179257	Leonin Scimitar	implemented
 0.179257	Arcbound Bruiser	comment
 0.178108	Krark-Clan Shaman	comment
 0.177835	Reverent Silence	comment
+0.177834	Oversoul of Dusk	implemented
+0.177748	Wilt-Leaf Cavaliers	implemented
 0.177523	Veinfire Borderpost	comment
 0.176301	Etched Oracle	comment
 0.176301	Brainspoil	comment
@@ -2006,8 +2416,11 @@ score	card name	comments
 0.167368	Profane Command	comment
 0.167002	Fertile Ground	comment
 0.165355	Aether Burst	comment
+0.164236	Paladin en-Vec	implemented
 0.163808	Sedraxis Alchemist	comment
+0.162762	Steward of Valeron	implemented
 0.16253	Time Vault	comment
+0.162346	Goblin Artillery	implemented
 0.162064	Voidslime	comment
 0.162064	Simic Signet	comment
 0.161294	Gilt-Leaf Palace	comment
@@ -2017,6 +2430,9 @@ score	card name	comments
 0.157722	Gargoyle Castle	comment
 0.157685	Festercreep	comment
 0.157222	Journey of Discovery	comment
+0.157034	Murderous Redcap	implemented
+0.155823	Vivid Grove	implemented
+0.155736	Silver Knight	implemented
 0.155678	Vampire Hounds	comment
 0.155678	Tortured Existence	comment
 0.155678	Grave Scrabbler	comment
@@ -2035,6 +2451,7 @@ score	card name	comments
 0.154222	Molder Slug	comment
 0.154222	Incite War	comment
 0.154222	Goblin War Wagon	comment
+0.154222	Fists of the Anvil	implemented
 0.154222	Farsight Mask	comment
 0.154222	Duskworker	comment
 0.154222	Disarm	comment
@@ -2042,8 +2459,10 @@ score	card name	comments
 0.154222	Dead-Iron Sledge	comment
 0.154222	Clockwork Beetle	comment
 0.154222	Battlegrowth	comment
+0.154222	Alpha Myr	implemented
 0.154102	Golgari Grave-Troll	comment
 0.154039	Capsize	comment
+0.153382	Loxodon Warhammer	implemented
 0.153158	Maelstrom Nexus	comment
 0.152831	Tendrils of Agony	comment
 0.151573	Weathered Wayfarer	comment
@@ -2074,11 +2493,13 @@ score	card name	comments
 0.132261	Misdirection	comment
 0.130493	Balance	comment
 0.129699	Land Tax	comment
+0.129204	Deft Duelist	implemented
 0.129103	Sakashima the Impostor	comment
 0.128024	Kodama's Reach	comment
 0.126098	Lone Missionary 	comment
 0.125798	Golgari Rot Farm	comment
 0.124857	Spike Weaver	comment
+0.124016	Undermine	implemented
 0.122075	Martyr of Sands	comment
 0.121174	Pendelhaven	comment
 0.120636	Ideas Unbound	comment
@@ -2096,6 +2517,7 @@ score	card name	comments
 0.114435	Tsabo's Web	comment
 0.114004	Ethereal Usher	comment
 0.113592	Regrowth	comment
+0.113549	Akrasan Squire	implemented
 0.113419	Carpet of Flowers	comment
 0.113122	Krosan Tusker	comment
 0.113055	Vitu-Ghazi, the City-Tree	comment
@@ -2115,6 +2537,7 @@ score	card name	comments
 0.109502	Ray of Revelation	comment
 0.108593	Wax // Wane	comment
 0.108487	The Abyss	comment
+0.108205	Mirror Entity	implemented
 0.107834	Fleshbag Marauder	comment
 0.107777	Soltari Monk	comment
 0.106995	Devoted Druid	comment
@@ -2127,6 +2550,7 @@ score	card name	comments
 0.105265	Molimo, Maro-Sorcerer	comment
 0.105265	Llanowar Reborn	comment
 0.105265	Hunting Moa	comment
+0.105265	Heroes' Reunion	implemented
 0.105265	Forgotten Ancient	comment
 0.105063	Convincing Mirage	comment
 0.104401	Wellwisher	comment
@@ -2144,12 +2568,16 @@ score	card name	comments
 0.102558	Spinerock Knoll	comment
 0.102105	Maelstrom Archangel	comment
 0.101185	Dispeller's Capsule	comment
+0.100608	Taurean Mauler	implemented
 0.100275	Pollen Lullaby	comment
 0.10024	Wretched Banquet	comment
 0.0991672	Elves of Deep Shadow	comment
 0.0987457	Intimidation Bolt	comment
+0.0981523	Bonesplitter	implemented
 0.0980187	Waterfront Bouncer	comment
 0.0973459	Concentrate	comment
+0.0967991	Griffin Sentinel	implemented
+0.0962831	Glorious Charge	implemented
 0.0954871	Knotvine Paladin	comment
 0.0949659	Elvish Branchbender	comment
 0.0930432	Shadow Sliver	comment
@@ -2158,8 +2586,11 @@ score	card name	comments
 0.0930432	Homing Sliver	comment
 0.0928626	Karma	comment
 0.0927486	Children of Korlis	comment
+0.092443	Valeron Outlander	implemented
+0.092312	Captain of the Watch	implemented
 0.0920773	Lobotomy	comment
 0.0914484	Whipcorder	comment
+0.0914484	Suntail Hawk	implemented
 0.0914484	Stonecloaker	comment
 0.0914484	Soltari Trooper	comment
 0.0914484	Soltari Foot Soldier	comment
@@ -2167,8 +2598,10 @@ score	card name	comments
 0.0914484	Rune of Protection: Red	comment
 0.0914484	Ronom Unicorn	comment
 0.0914484	Pianna, Nomad Captain	comment
+0.0914484	Mistral Charger	implemented
 0.0914484	Knight of the Holy Nimbus	comment
 0.0914484	Kami of Ancient Law	comment
+0.0914484	Griffin Guide	implemented
 0.0914484	Grafted Wargear	comment
 0.0914484	Goldmeadow Harrier	comment
 0.0914484	Empyrial Plate	comment
@@ -2190,11 +2623,14 @@ score	card name	comments
 0.0896286	Emissary of Hope	comment
 0.0896286	Auriok Transfixer	comment
 0.0889202	Fracturing Gust	comment
+0.0888144	Wind Drake	implemented
 0.0885852	Civic Wayfinder	comment
 0.0879966	Dryad Sophisticate	comment
 0.0877878	Mind Funeral	comment
 0.0870341	Lightning Rift	comment
 0.0861463	Reliquary Tower	comment
+0.0858654	Kodama of the North Tree	implemented
+0.0853026	Puppeteer Clique	implemented
 0.0850696	Mad Auntie	comment
 0.0849652	Distress	comment
 0.0846477	Blitz Hellion	comment
@@ -2223,9 +2659,11 @@ score	card name	comments
 0.0778391	Gorgon Recluse	comment
 0.0778391	Brain Gorgers	comment
 0.076308	Terminal Moraine	comment
+0.0761997	Akroma, Angel of Wrath	implemented
 0.0761616	Beseech the Queen	comment
 0.0756042	Sygg, River Guide	comment
 0.0750273	Timberwatch Elf	comment
+0.0749621	Zombie Outlander	implemented
 0.0740662	Sharuum the Hegemon	comment
 0.0739916	Grixis Panorama	comment
 0.0737216	Llanowar Empath	comment
@@ -2246,24 +2684,30 @@ score	card name	comments
 0.0733079	Child of Alara	comment
 0.0733079	Childhood Horror	comment
 0.0733079	Abbey Matron	comment
+0.0732694	Glorious Anthem	implemented
 0.0732601	Viscera Dragger	comment
 0.0731517	Knight-Captain of Eos	comment
 0.0730432	Torture Chamber	comment
+0.0725275	Cerodon Yearling	implemented
 0.0721408	Circular Logic	comment
 0.0718522	Veteran Armorsmith	comment
 0.0715584	Mycoloth	comment
 0.0712817	Vodalian Merchant	comment
 0.0712817	Static Orb	comment
 0.0712817	Opposition	comment
+0.0712817	Merfolk of the Pearl Trident	implemented
 0.0708078	Illusions of Grandeur	comment
+0.070706	Esper Stormblade	implemented
 0.0704535	Hinder	comment
 0.0704192	Spirit of the Night	comment
 0.0704192	Spike Hatcher	comment
+0.0703733	Mycoid Shepherd	implemented
 0.0701605	Demonic Dread	comment
 0.0701496	Bloom Tender	comment
 0.0700885	Crypt Rats	comment
 0.0698923	Sickening Shoal	comment
 0.0698267	Molten Rain	comment
+0.0698225	Jhessian Infiltrator	implemented
 0.0696923	Thalakos Drifters	comment
 0.0696923	Ertai, Wizard Adept	comment
 0.0694336	Ignite Disorder	comment
@@ -2271,6 +2715,7 @@ score	card name	comments
 0.0683577	Flashfires	comment
 0.0681932	Hideous Laughter	comment
 0.0680644	Sygg, River Cutthroat	comment
+0.0676004	River Kaijin	implemented
 0.0676004	Jushi Apprentice	comment
 0.0676004	Hisoka's Defiance	comment
 0.0675733	Divine Verdict	comment
@@ -2281,11 +2726,15 @@ score	card name	comments
 0.0668782	Primalcrux	comment
 0.0666814	Goblin Charbelcher	comment
 0.0665846	Dwarven Miner	comment
+0.0665059	Madrush Cyclops	implemented
 0.0664427	Vampire Aristocrat	comment
 0.0662551	Petrified Field	comment
 0.0662551	Bazaar of Baghdad	comment
+0.0662037	Scattershot Archer	implemented
+0.0660022	Jund Hackblade	implemented
 0.0659299	Yosei, the Morning Star	comment
 0.0658199	Lonely Sandbar	comment
+0.0655926	Wrap in Vigor	implemented
 0.0655926	Distant Melody	comment
 0.0650541	Shorecrasher Mimic	comment
 0.0649047	Rakdos Pit Dragon	comment
@@ -2311,6 +2760,8 @@ score	card name	comments
 0.0623779	Drake Hatchling	comment
 0.0617944	Rite of Consumption	comment
 0.0617309	Suq'Ata Firewalker	comment
+0.0615539	Man-o'-War	implemented
+0.0615384	Kokusho, the Evening Star	implemented
 0.0614703	Sapphire Medallion	comment
 0.0611478	Wispmare	comment
 0.0611366	Nimbus Maze	comment
@@ -2320,9 +2771,11 @@ score	card name	comments
 0.0581592	Volcanic Submersion	comment
 0.0576882	Sparksmith	comment
 0.0575535	Wirewood Herald	comment
+0.0570697	Empyrial Archangel	implemented
 0.0566962	Soul Manipulation	comment
 0.0564134	Savor the Moment	comment
 0.0564098	Mogg Raider	comment
+0.056093	Battlegrace Angel	implemented
 0.0560418	Talara's Battalion	comment
 0.0559902	Ethersworn Shieldmage	comment
 0.0558857	Rainbow Efreet	comment
@@ -2332,17 +2785,21 @@ score	card name	comments
 0.0556358	Dream Fracture	comment
 0.0552659	Raven's Crime	comment
 0.0550794	Sage's Dousing	comment
+0.054989	Ravenous Baloth	implemented
 0.0542259	Spellbound Dragon	comment
 0.0542166	Holy Day	comment
 0.0539678	Shizo, Death's Storehouse	comment
 0.0538888	Lifelink	comment
 0.0538888	Bramble Creeper	comment
+0.0537444	Tidehollow Strix	implemented
 0.0536581	Horobi's Whisper	comment
 0.0535824	Flamekin Harbinger	comment
 0.053521	Jade Leech	comment
 0.0534613	Mana Maze	comment
 0.0534454	Rith's Grove	comment
+0.0531438	Char	implemented
 0.0531121	Manta Riders	comment
+0.0530243	Unmake	implemented
 0.0528206	Chittering Rats	comment
 0.0522506	Incendiary Command	comment
 0.0521179	Telekinetic Sliver	comment
@@ -2378,8 +2835,10 @@ score	card name	comments
 0.0505908	Elvish Champion	comment
 0.050362	Skycloud Expanse	comment
 0.0501933	Two-Headed Dragon	comment
+0.0500758	Colossal Might	implemented
 0.0495364	Dross Golem	comment
 0.0495363	Clarion Ultimatum	comment
+0.04932	Deadly Recluse	implemented
 0.0492328	Mana Vault	comment
 0.0491944	Luminescent Rain	comment
 0.0491944	Commune with Nature	comment
@@ -2397,10 +2856,12 @@ score	card name	comments
 0.0484847	Wall of Faith	comment
 0.0477333	Contamination	comment
 0.0476592	Esper Panorama	comment
+0.0475802	Snapping Drake	implemented
 0.0475	Greater Good	comment
 0.0464169	Coat of Arms	comment
 0.0463156	Pernicious Deed	comment
 0.0458524	Relearn	comment
+0.0457704	Hellkite Overlord	implemented
 0.0456795	Trial // Error	comment
 0.0454169	Ember Weaver	comment
 0.0445488	Duergar Hedge-Mage	comment
@@ -2464,6 +2925,7 @@ score	card name	comments
 0.0389088	Angel's Mercy	comment
 0.0388081	Elvish Harbinger	comment
 0.0388081	Drove of Elves	comment
+0.0387609	Flame-Kin Zealot	implemented
 0.0385178	Righteousness	comment
 0.0385052	Toils of Night and Day	comment
 0.0385052	Magister Sphinx	comment
@@ -2477,23 +2939,28 @@ score	card name	comments
 0.0375435	Jungle Weaver	comment
 0.0374244	Dwarven Blastminer	comment
 0.0373616	Pure // Simple	comment
+0.0373376	Evacuation	implemented
 0.0373186	Eyeblight's Ending	comment
 0.0372073	Sulfuric Vortex	comment
 0.0370688	Fellwar Stone	comment
 0.0370063	Shivan Oasis	comment
 0.0369821	Gilded Light	comment
 0.0369095	Pox	comment
+0.0364554	Puncture Blast	implemented
 0.0357323	Rustic Clachan	comment
 0.0356409	Wash Out	comment
 0.0356409	Darting Merfolk	comment
 0.0355508	Dust Bowl	comment
 0.0355258	Burning-Tree Shaman	comment
 0.0352216	Kjeldoran Outpost	comment
+0.0351353	Stuffy Doll	implemented
 0.0349319	Wolf-Skull Shaman	comment
 0.0348868	Jenara, Asura of War	comment
+0.0348235	Nip Gwyllion	implemented
 0.0347799	Aether Spellbomb	comment
 0.0346129	Goblin Vandal	comment
 0.0344752	Frenetic Efreet	comment
+0.0344482	Troll Ascetic	implemented
 0.034417	Quirion Dryad	comment
 0.0341755	Makeshift Mannequin	comment
 0.0341274	Boseiju, Who Shelters All	comment
@@ -2507,6 +2974,8 @@ score	card name	comments
 0.0335047	Tempest of Light	comment
 0.0335047	Rhox Pikemaster	comment
 0.0334513	Farhaven Elf	comment
+0.0334513	Elvish Warrior	implemented
+0.0333344	Razorfoot Griffin	implemented
 0.033247	Soulless Revival	comment
 0.0330767	Miren, the Moaning Well	comment
 0.0327835	Wood Elves	comment
@@ -2517,10 +2986,15 @@ score	card name	comments
 0.0321436	Oblation	comment
 0.0321436	Decree of Annihilation	comment
 0.0321332	Traumatic Visions	comment
+0.0319153	Blood Knight	implemented
 0.0319022	Wall of Fire	comment
+0.0318731	Rip-Clan Crasher	implemented
 0.0318222	Krovikan Horror	comment
 0.0318041	Peppersmoke	comment
 0.0317576	Sinkhole	comment
+0.0316583	Levitation	implemented
+0.0316533	Frenzied Goblin	implemented
+0.0315111	Weakness	implemented
 0.0315111	Seismic Strike	comment
 0.0311991	Hide // Seek	comment
 0.0311889	Bribery	comment
@@ -2531,12 +3005,14 @@ score	card name	comments
 0.0307692	Hana Kami	comment
 0.0305583	Straw Golem	comment
 0.0305583	Lava Hounds	comment
+0.0302545	Waveskimmer Aven	implemented
 0.02996	Disorient	comment
 0.02996	Bountiful Harvest	comment
 0.0298815	Shard Phoenix	comment
 0.0296901	Contested Cliffs	comment
 0.02967	Web	comment
 0.02967	Venerable Kumo	comment
+0.02967	Tangle Spider	implemented
 0.02967	Steam Spitter	comment
 0.02967	Spitting Spider	comment
 0.02967	Spidersilk Armor	comment
@@ -2548,10 +3024,17 @@ score	card name	comments
 0.02967	Pincer Spider	comment
 0.02967	Penumbra Spider	comment
 0.02967	Orbweaver Kumo	comment
+0.02967	Needlepeak Spider	implemented
+0.02967	Juvenile Gloomwidow	implemented
 0.02967	Hidden Spider	comment
+0.02967	Goliath Spider	implemented
 0.02967	Gloomwidow's Feast	comment
+0.02967	Gloomwidow	implemented
 0.02967	Frostweb Spider	comment
+0.02967	Canopy Spider	implemented
+0.02967	Arachnoid	implemented
 0.02967	Aquastrand Spider	comment
+0.02967	Ancient Spider	implemented
 0.02967	Aether Web	comment
 0.0293733	Wirewood Lodge	comment
 0.0293733	Wirewood Channeler	comment
@@ -2579,6 +3062,7 @@ score	card name	comments
 0.0293733	Heedless One	comment
 0.0293733	Goblin Snowman	comment
 0.0293733	Gempalm Strider	comment
+0.0293733	Frost Ogre	implemented
 0.0293733	Elvish Piper	comment
 0.0293733	Elf Replica	comment
 0.0293733	Craw Giant	comment
@@ -2594,9 +3078,11 @@ score	card name	comments
 0.0288789	Street Wraith	comment
 0.0286645	Magebane Armor	comment
 0.0283692	Scepter of Fugue	comment
+0.0280212	Savage Twister	implemented
 0.0280212	Lavalanche	comment
 0.0280212	Hit // Run	comment
 0.0279246	Talisman of Impulse	comment
+0.0277439	Tower Gargoyle	implemented
 0.0277402	Death Denied	comment
 0.0276761	Elvish Promenade	comment
 0.0276022	Duergar Assailant	comment
@@ -2618,14 +3104,19 @@ score	card name	comments
 0.0250431	Shadow Guildmage	comment
 0.0250063	Sidewinder Sliver	comment
 0.0250063	Plated Sliver	comment
+0.0249939	Vine Trellis	implemented
 0.0249939	Vernal Bloom	comment
 0.0249939	Tooth and Nail	comment
 0.024752	Soul's Fire	comment
 0.0247469	Withered Wretch	comment
 0.0244965	Burning Wish	comment
 0.0243229	Fire-Field Ogre	comment
+0.0243082	Rorix Bladewing	implemented
+0.0242515	Yavimaya Barbarian	implemented
 0.0242515	Utopia Tree	comment
 0.0242515	Thornscape Familiar	comment
+0.0242515	Shivan Wurm	implemented
+0.0242515	Kavu Titan	implemented
 0.024181	Kathari Remnant	comment
 0.0241402	Annul	comment
 0.0240855	Spitebellows	comment
@@ -2637,11 +3128,13 @@ score	card name	comments
 0.0235312	Sudden Impact	comment
 0.0235312	Kami of the Crescent Moon	comment
 0.0235312	Eye of Nowhere	comment
+0.0235312	Exhaustion	implemented
 0.0235312	Ebony Owl Netsuke	comment
 0.0230776	Firestorm	comment
 0.0229187	Kaervek's Torch	comment
 0.0229187	Goblin Digging Team	comment
 0.0228398	Malfegor	comment
+0.022604	Titanic Ultimatum	implemented
 0.022604	Knotvine Mystic	comment
 0.0225645	Exile	comment
 0.0223926	Enigma Sphinx	comment
@@ -2652,6 +3145,7 @@ score	card name	comments
 0.0219832	Exclude	comment
 0.0219337	Thistledown Liege	comment
 0.0213858	Mudbrawler Cohort	comment
+0.0212951	Arcanis the Omnipotent	implemented
 0.021241	Oversold Cemetery	comment
 0.021222	Selesnya Sanctuary	comment
 0.0209687	Sundering Titan	comment
@@ -2663,15 +3157,20 @@ score	card name	comments
 0.0203849	Marsh Flitter	comment
 0.019867	Sun Droplet	comment
 0.0197013	Nucklavee	comment
+0.0196499	Emerald Oryx	implemented
 0.0196015	Mistmeadow Witch	comment
 0.0195143	Batwing Brume	comment
 0.0194527	Wren's Run Packmaster	comment
 0.0194408	Kami of False Hope	comment
+0.0194408	Guardian of the Guildpact	implemented
 0.0194408	Grim Harvest	comment
 0.0193342	Kumano, Master Yamabushi	comment
 0.0192589	Sparkmage Apprentice	comment
 0.0192589	Regenerate	comment
+0.0192589	Lightning Elemental	implemented
+0.0192589	Centaur Courser	implemented
 0.0191967	Blistering Firecat	comment
+0.019186	Sigil Blessing	implemented
 0.0191618	Crovax, Ascendant Hero	comment
 0.0190196	Izzet Boilerworks	comment
 0.0189977	Genesis	comment
@@ -2681,6 +3180,7 @@ score	card name	comments
 0.0188643	Seal of Primordium	comment
 0.0187454	Reap and Sow	comment
 0.0186768	Lash Out	comment
+0.0186747	Scathe Zombies	implemented
 0.0186747	Raging Bull	comment
 0.0186747	Pearled Unicorn	comment
 0.0186747	Gray Ogre	comment
@@ -2701,7 +3201,9 @@ score	card name	comments
 0.0177683	Mind's Desire	comment
 0.0174719	Fire Whip	comment
 0.0174618	Wall of Blossoms	comment
+0.0174117	Rendclaw Trow	implemented
 0.0174117	Odious Trow	comment
+0.0174117	Bant Sureblade	implemented
 0.0173742	Deity of Scars	comment
 0.0173064	Viashino Sandstalker	comment
 0.0172839	Sleight of Mind	comment
@@ -2713,19 +3215,24 @@ score	card name	comments
 0.0169622	Indrik Stomphowler	comment
 0.0169001	Overwhelming Intellect	comment
 0.0169001	Oboro, Palace in the Clouds	comment
+0.0167256	Moonglove Winnower	implemented
 0.0167256	Gaea's Herald	comment
 0.0167256	Elven Riders	comment
 0.0166863	Order of the Ebon Hand	comment
 0.0166163	Violent Ultimatum	comment
 0.0164451	Squeaking Pie Sneak	comment
+0.0163986	Guardians of Akrasa	implemented
 0.0163875	Mystic Remora	comment
 0.0163825	Stasis	comment
 0.0163282	Nantuko Vigilante	comment
 0.0163282	Mountain Valley	comment
+0.0163282	Mire Boa	implemented
 0.0162855	Simic Growth Chamber	comment
 0.0162342	Stir the Grave	comment
 0.0162342	Myojin of Night's Reach	comment
 0.0162342	Ethereal Haze	comment
+0.0162289	Ethercaste Knight	implemented
+0.0162289	Esper Cormorants	implemented
 0.0161665	Violent Eruption	comment
 0.0161665	Rakdos Carnarium	comment
 0.0161665	Gruul Turf	comment
@@ -2737,6 +3244,7 @@ score	card name	comments
 0.0159111	Ashes to Ashes	comment
 0.0159111	Ascendant Evincar	comment
 0.0158808	Circle of Protection: Black	comment
+0.0158013	Moonglove Extract	implemented
 0.0156433	Sphinx Summoner	comment
 0.0156433	Master Transmuter	comment
 0.0156433	Etherium Astrolabe	comment
@@ -2747,12 +3255,15 @@ score	card name	comments
 0.0152841	Possessed Portal	comment
 0.0152792	Dwarven Soldier	comment
 0.0151659	Unwilling Recruit	comment
+0.0151264	Slave of Bolas	implemented
 0.0151072	Icatian Javelineers	comment
 0.01498	Yawning Fissure	comment
 0.01498	Spellbook	comment
 0.01498	Serpent of the Endless Sea	comment
 0.01498	Burst of Speed	comment
+0.0149369	Woodland Changeling	implemented
 0.0149369	Knight Errant	comment
+0.0149369	Grizzly Bears	implemented
 0.0149369	Fresh Volunteers	comment
 0.0149369	Forest Bear	comment
 0.0149369	Bear Cub	comment
@@ -2762,10 +3273,12 @@ score	card name	comments
 0.0148205	Overgrowth	comment
 0.0148205	Impromptu Raid	comment
 0.0148205	Dramatic Entrance	comment
+0.0147374	Absorb	implemented
 0.0146819	Zo-Zu the Punisher	comment
 0.0146819	Voracious Dragon	comment
 0.0146819	Skirk Marauder	comment
 0.0146819	Rakka Mar	comment
+0.0146819	Predator Dragon	implemented
 0.0146819	Jinxed Choker	comment
 0.0146819	Goblin Recruiter	comment
 0.0146819	Goblin Grappler	comment
@@ -2784,7 +3297,10 @@ score	card name	comments
 0.01434	Angelic Page	comment
 0.0142957	Proclamation of Rebirth	comment
 0.0142458	Undead Slayer	comment
+0.0142458	Trumpet Blast	implemented
 0.0142458	Sage Owl	comment
+0.0142458	Raging Goblin	implemented
+0.0142458	Phantom Warrior	implemented
 0.0142458	Panic Attack	comment
 0.0142365	Vedalken Aethermage	comment
 0.0142365	Shuko	comment
@@ -2798,12 +3314,14 @@ score	card name	comments
 0.0139532	Flash	comment
 0.0138137	Obsidian Acolyte	comment
 0.0138137	Holy Light	comment
+0.0136845	Horned Turtle	implemented
 0.0136026	Anurid Brushhopper	comment
 0.0135473	Memory Plunder	comment
 0.0134034	Scalding Tongs	comment
 0.0134034	Mogg Conscripts	comment
 0.0134034	Kindle	comment
 0.0134034	Giant Strength	comment
+0.0134034	Canyon Wildcat	implemented
 0.0132854	Thawing Glaciers	comment
 0.0132854	Dissipate	comment
 0.0132694	Slice and Dice	comment
@@ -2823,22 +3341,28 @@ score	card name	comments
 0.0124969	Duplicant	comment
 0.0124778	Vesuvan Shapeshifter	comment
 0.0123462	Peat Bog	comment
+0.0122522	Viashino Spearhunter	implemented
 0.0122522	Rod of Ruin	comment
 0.0122522	Nightmare	comment
 0.0122522	Inferno Elemental	comment
 0.0122522	Drudge Skeletons	comment
 0.0121218	Heartwood Storyteller	comment
+0.0120084	Shivan Dragon	implemented
 0.0120084	Oakenform	comment
 0.0120084	Howl of the Night Pack	comment
 0.0120084	Entangling Vines	comment
+0.0120084	Craw Wurm	implemented
 0.0119255	Putrid Imp	comment
 0.0118883	Orim's Thunder	comment
 0.0118883	Fiery Justice	comment
 0.0117618	Stinkdrinker Bandit	comment
+0.0117618	Prickly Boggart	implemented
 0.0117618	Oona's Prowler	comment
 0.0117618	Oona's Blackguard	comment
+0.0117618	Nightshade Stinger	implemented
 0.0117618	Frogtosser Banneret	comment
 0.0117618	Festering Goblin	comment
+0.0117299	Shadowmage Infiltrator	implemented
 0.0117265	Fatal Frenzy	comment
 0.0117059	Epochrasite	comment
 0.0116442	Peer Through Depths	comment
@@ -2899,7 +3423,10 @@ score	card name	comments
 0.0111926	Armor Sliver	comment
 0.0111926	Acidic Sliver	comment
 0.011189	Time Stretch	comment
+0.0111708	Godsire	implemented
 0.0110599	Nullmage Shepherd	comment
+0.0109943	Kiss of the Amesha	implemented
+0.0109663	Flameblast Dragon	implemented
 0.0109627	Chain of Plasma	comment
 0.0109011	Old Man of the Sea	comment
 0.010755	Serra Advocate	comment
@@ -2908,12 +3435,14 @@ score	card name	comments
 0.0107375	Sapseep Forest	comment
 0.0105706	Punish Ignorance	comment
 0.0104323	Sphere of Law	comment
+0.0104323	Simic Sky Swallower	implemented
 0.0104323	Return to Dust	comment
 0.0104323	Mana Severance	comment
 0.0104323	Dismantling Blow	comment
 0.0104323	Complicate	comment
 0.0103603	Thrill of the Hunt	comment
 0.0103246	Skarrg, the Rage Pits	comment
+0.0103246	Rumbling Slum	implemented
 0.010218	Rain of Gore	comment
 0.010218	Obelisk of Grixis	comment
 0.010218	Lich's Mirror	comment
@@ -2925,15 +3454,20 @@ score	card name	comments
 0.0100147	Hermit Druid	comment
 0.00997807	Seedborn Muse	comment
 0.00997022	Deadly Insect	comment
+0.00981856	Mortify	implemented
 0.00978139	Riptide Laboratory	comment
 0.00972038	Shrieking Grotesque	comment
 0.00972038	Shred Memory	comment
 0.00972038	Evincar's Justice	comment
+0.00970432	Draining Whelk	implemented
 0.00964447	Marble Chalice	comment
 0.00962631	Karrthus, Tyrant of Jund	comment
 0.00961792	Riftsweeper	comment
 0.00960334	Cenn's Enlistment	comment
 0.00955988	Iwamori of the Open Fist	comment
+0.00953687	Outrider of Jhess	implemented
+0.00943475	Twinblade Slasher	implemented
+0.00943475	Thornweald Archer	implemented
 0.00943475	Sylvan Messenger	comment
 0.00943475	Steely Resolve	comment
 0.00943475	Slate of Ancestry	comment
@@ -2957,8 +3491,10 @@ score	card name	comments
 0.00916273	Compulsion	comment
 0.0089665	Hand of Cruelty	comment
 0.00887684	Voidmage Prodigy	comment
+0.0087938	Lord of Extinction	implemented
 0.00878787	Pull from Eternity	comment
 0.00870019	Lim-Dul's Vault	comment
+0.0086718	Recoil	implemented
 0.00862315	Furystoke Giant	comment
 0.0086188	Desertion	comment
 0.0086046	Diamond Valley	comment
@@ -2971,25 +3507,36 @@ score	card name	comments
 0.00818848	Vulshok Sorcerer	comment
 0.00818848	Stigma Lasher	comment
 0.00818848	Slith Firewalker	comment
+0.00818848	Beacon of Destruction	implemented
 0.00813338	Spell Burst	comment
+0.00811443	Winged Coatl	implemented
 0.00811443	Vedalken Heretic	comment
 0.00811443	Vectis Dominator	comment
+0.00811443	Valiant Guard	implemented
 0.00811443	Tukatongue Thallid	comment
+0.00811443	Soul's Majesty	implemented
+0.00811443	Naya Hushblade	implemented
+0.00811443	Messenger Falcons	implemented
 0.00811443	Illusory Demon	comment
 0.00811443	Frontline Sage	comment
 0.00811443	Esper Sojourners	comment
 0.00811443	Crystallization	comment
 0.00811443	Cathartic Adept	comment
 0.00811443	Bone Saw	comment
+0.00811443	Aven Squire	implemented
 0.0079595	Resounding Scream	comment
 0.00795036	Cephalid Sage	comment
+0.00794777	Goblin Raider	implemented
 0.00787343	Wandering Goblins	comment
 0.00787343	Vagrant Plowbeasts	comment
 0.00787343	Sylvan Bounty	comment
 0.00787343	Stormcaller's Boon	comment
 0.00787343	Skyward Eye Prophets	comment
+0.00787343	Shield of the Righteous	implemented
 0.00787343	Shard Convergence	comment
 0.00787343	Sangrite Backlash	comment
+0.00787343	Rhox Brute	implemented
+0.00787343	Quietus Spike	implemented
 0.00787343	Paragon of the Amesha	comment
 0.00787343	Jund Sojourners	comment
 0.00787343	Gorger Wurm	comment
@@ -2997,6 +3544,7 @@ score	card name	comments
 0.00787343	Drumhunter	comment
 0.00787343	Drastic Revelation	comment
 0.00787343	Deadshot Minotaur	comment
+0.00787343	Cumber Stone	implemented
 0.00787343	Banewasp Affliction	comment
 0.00787343	Aerie Mystics	comment
 0.00766349	Puca's Mischief	comment
@@ -3020,6 +3568,7 @@ score	card name	comments
 0.00670461	Mistveil Plains	comment
 0.00670389	Thunderblust	comment
 0.00670389	Rolling Thunder	comment
+0.00670389	Rakdos Guildmage	implemented
 0.00670389	Lava Dart	comment
 0.00670389	Hostility	comment
 0.00670389	Guerrilla Tactics	comment
@@ -3037,6 +3586,7 @@ score	card name	comments
 0.00612412	Hull Breach	comment
 0.00612412	Diminishing Returns	comment
 0.00610849	Elfhame Palace	comment
+0.00610181	Gaea's Skyfolk	implemented
 0.00596176	Haunting Hymn	comment
 0.00596083	Tectonic Instability	comment
 0.00596083	Skizzik	comment
@@ -3058,12 +3608,15 @@ score	card name	comments
 0.00512666	Overbeing of Myth	comment
 0.00510733	Mercy Killing	comment
 0.0051052	Chaos Orb	comment
+0.00505626	Serendib Efreet	implemented
 0.00500733	Skyshroud Forest	comment
 0.00500733	Rootwater Depths	comment
 0.00495564	Yukora, the Prisoner	comment
 0.00495564	Psychic Spear	comment
 0.00495564	Nezumi Shortfang	comment
 0.00495564	Manriki-Gusari	comment
+0.00491473	Jhessian Lookout	implemented
+0.00489943	Soul's Might	implemented
 0.00486019	Disturbed Burial	comment
 0.00485702	Wirewood Elf	comment
 0.00485702	Thoughtbound Primoc	comment
@@ -3073,6 +3626,7 @@ score	card name	comments
 0.00485702	Avarax	comment
 0.00477838	Changeling Berserker	comment
 0.00476843	Spell Snip	comment
+0.00476843	Rhox Charger	implemented
 0.00476843	Knight of the Skyward Eye	comment
 0.00476843	Cloudheath Drake	comment
 0.00476347	Proteus Staff	comment
@@ -3082,6 +3636,7 @@ score	card name	comments
 0.00466868	Smoldering Crater	comment
 0.00462199	Quagnoth	comment
 0.00457279	Sulfurous Blast	comment
+0.00457279	Ashenmoor Gouger	implemented
 0.00453001	O-Naginata	comment
 0.00448325	Stromgald Crusader	comment
 0.00448325	Crypt Creeper	comment
@@ -3089,9 +3644,11 @@ score	card name	comments
 0.00443697	Ancient Hydra	comment
 0.00440923	Panic	comment
 0.00440656	Tower Above	comment
+0.00440656	Kinsbaile Cavalier	implemented
 0.00439547	Grim Poppet	comment
 0.00439403	Incremental Blight	comment
 0.0043926	Dromar's Charm	comment
+0.00435009	Wall of Air	implemented
 0.0043489	Aura Blast	comment
 0.00430519	Stormscape Apprentice	comment
 0.00430519	Crimson Acolyte	comment
@@ -3142,6 +3699,7 @@ score	card name	comments
 0.00346423	Threaten	comment
 0.00346423	Nantuko Husk	comment
 0.00343068	Razormane Masticore	comment
+0.00341777	Godhead of Awe	implemented
 0.00341777	Dreamborn Muse	comment
 0.00339197	Oona's Grace	comment
 0.0033847	Savage Hunger	comment
@@ -3153,6 +3711,7 @@ score	card name	comments
 0.00334976	Genju of the Spires	comment
 0.00332773	Tsabo's Decree	comment
 0.00331626	Goblin Lore	comment
+0.00329445	Dromar, the Banisher	implemented
 0.00329445	Collective Restraint	comment
 0.00322889	Pure Reflection	comment
 0.00322889	Crusading Knight	comment
@@ -3184,10 +3743,12 @@ score	card name	comments
 0.00321882	High Seas	comment
 0.00321882	Gulf Squid	comment
 0.00321882	Giant Shark	comment
+0.00321882	Giant Octopus	implemented
 0.00321882	Ghost Ship	comment
 0.00321882	Electric Eel	comment
 0.00321882	Dwarven Sea Clan	comment
 0.00321882	Deep-Sea Serpent	comment
+0.00321882	Coral Eel	implemented
 0.00321882	Coral Atoll	comment
 0.00321882	Aquitect's Will	comment
 0.0031966	Stormbind	comment
@@ -3255,6 +3816,7 @@ score	card name	comments
 0.00271239	Squall Line	comment
 0.00263933	Kher Keep	comment
 0.00257946	Torrent of Souls	comment
+0.00255367	Creakwood Liege	implemented
 0.00252813	Tsunami	comment
 0.00252813	Psionic Blast	comment
 0.00252813	Lifeforce	comment
@@ -3273,6 +3835,7 @@ score	card name	comments
 0.00221921	Funeral Charm	comment
 0.00221921	Darkness	comment
 0.00221849	Simoon	comment
+0.00221849	Rith, the Awakener	implemented
 0.0021963	Yawgmoth's Agenda	comment
 0.00217505	Feldon's Cane	comment
 0.00213107	Vexing Arcanix	comment
@@ -3289,15 +3852,19 @@ score	card name	comments
 0.00202663	Arenson's Aura	comment
 0.0019863	Cloak and Dagger	comment
 0.00190865	Story Circle	comment
+0.00159279	Dragon Roost	implemented
 0.00153003	Tortoise Formation	comment
 0.00153003	Puppet Conjurer	comment
 0.00153003	Obelisk of Esper	comment
 0.00153003	Gustrider Exuberant	comment
 0.00153003	Filigree Sages	comment
+0.00153003	Esper Battlemage	implemented
 0.00151473	Topan Ascetic	comment
 0.00151473	Rockslide Elemental	comment
 0.00151473	Immortal Coil	comment
 0.00151473	Godtoucher	comment
+0.00151473	Goblin Mountaineer	implemented
+0.00151473	Goblin Deathraiders	implemented
 0.00151473	Demon's Herald	comment
 0.00151473	Deathgreeter	comment
 0.00151473	Bloodpyre Elemental	comment
@@ -3348,6 +3915,7 @@ score	card name	comments
 0.00106553	Primitive Justice	comment
 0.00106553	Monsoon	comment
 0.00105488	Woodripper	comment
+0.00105488	Visara the Dreadful	implemented
 0.00105488	Urborg Shambler	comment
 0.00105488	Symbiotic Wurm	comment
 0.00105488	Stronghold Taskmaster	comment
