@@ -41,7 +41,8 @@ class TestTectonicEdge extends TestGameBuilder {
         P.setLife(1);
         P.setPoison(8);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,4);
+        createPermanent(game,P,"Rupture Spire",false,3);
+        createPermanent(game,P,"Tectonic Edge",false,3);
         addToHand(P,"Vines of Vastwood",1);
         addToHand(P,"Inkwell Leviathan",1);
         
