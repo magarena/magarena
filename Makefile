@@ -63,8 +63,8 @@ clean:
 	-rm $(BUILD)/javac.last
 	-rm $(MAG)
 
-start: jar
-	java -Xmx256M -cp build magic.MagicMain
+run: $(MAG)
+	java -Xmx256M -jar $^
 
 test: $(MAG)
 	$(JAR) -DrndSeed=123 magic.DeckStrCal \
