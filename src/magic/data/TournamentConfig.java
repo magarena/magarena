@@ -9,6 +9,8 @@ import java.util.Properties;
 import magic.MagicMain;
 import magic.model.MagicColor;
 import magic.model.MagicPlayerProfile;
+import magic.ai.MagicAI;
+import magic.ai.MagicAIImpl;
 
 public class TournamentConfig {
 
@@ -28,6 +30,7 @@ public class TournamentConfig {
 	private static final String PLAYER="player";
 	private static final String OPPONENT="opponent";
 	private static final String CUBE="cube";
+	private static final String AI="ai";
 
 	private int avatar=0;
 	private String name="Player";
@@ -37,73 +40,63 @@ public class TournamentConfig {
 	private String playerColors=ANY_THREE;
 	private String opponentColors=ANY_THREE;
 	private String cube=CubeDefinitions.DEFAULT_NAME;
+	private String ai="minimax";
 	
 	public TournamentConfig() {
 		
 	}
 	
 	public TournamentConfig(final TournamentConfig tournamentConfig) {
-		
 		avatar=tournamentConfig.avatar;
 		startLife=tournamentConfig.startLife;
 		handSize=tournamentConfig.handSize;
 		games=tournamentConfig.games;
 		playerColors=tournamentConfig.playerColors;
 		opponentColors=tournamentConfig.opponentColors;
+        ai=tournamentConfig.ai;
 	}
 	
 	public int getAvatar() {
-		
 		return avatar;
 	}
 
 	public void setAvatar(final int avatar) {
-
 		this.avatar = avatar;
 	}
 	
 	public String getName() {
-		
 		return name;
 	}
 	
 	public void setName(final String name) {
-		
 		this.name=name;
 	}
 
 	public int getStartLife() {
-
 		return startLife;
 	}
 
 	public void setStartLife(final int startLife) {
-		
 		this.startLife = startLife;
 	}
 
 	public int getHandSize() {
-		
 		return handSize;
 	}
 
 	public void setHandSize(final int handSize) {
-		
 		this.handSize = handSize;
 	}
 	
 	public void setNrOfGames(final int games) {
-		
 		this.games = games; 
 	}
 	
 	public int getNrOfGames() {
-		
 		return games;
 	}
 	
 	private static MagicPlayerProfile getProfile(final String colorText) {
-		
 		if (ANY_DECK.equals(colorText)) {
 			return new MagicPlayerProfile("");
 		} else if (ANY_THREE.equals(colorText)) {
@@ -117,47 +110,51 @@ public class TournamentConfig {
 	}
 	
 	public String getPlayerColors() {
-		
 		return playerColors;
 	}
 	
 	public void setPlayerColors(final String colors) {
-
 		playerColors=colors;
 	}
 	
 	public MagicPlayerProfile getPlayerProfile() {
-		
 		return getProfile(playerColors);
 	}
 	
 	public String getOpponentColors() {
-		
 		return opponentColors;
 	}
 	
 	public void setOpponentColors(final String colors) {
-		
 		opponentColors=colors;
 	}
 	
 	public MagicPlayerProfile getOpponentProfile() {
-		
 		return getProfile(opponentColors);
 	}
 	
 	public String getCube() {
-		
 		return cube;
 	}
 	
 	public void setCube(final String cube) {
-		
 		this.cube=cube;
+	}
+	
+    public MagicAI[] getPlayerAIs() {
+		final MagicAI playerAI = MagicAIImpl.getAI(ai).getAI();
+		return new MagicAI[]{playerAI, playerAI};
+	}
+	
+    public String getAI() {
+		return ai;
+	}
+	
+	public void setAI(final String ai) {
+		this.ai=ai;
 	}
 
 	public void load(final Properties properties) {
-		
 		avatar=Integer.parseInt(properties.getProperty(AVATAR,""+avatar));
 		name=properties.getProperty(NAME,name);
 		startLife=Integer.parseInt(properties.getProperty(START_LIFE,""+startLife));
@@ -166,19 +163,21 @@ public class TournamentConfig {
 		playerColors=properties.getProperty(PLAYER,playerColors);
 		opponentColors=properties.getProperty(OPPONENT,opponentColors);
 		cube=properties.getProperty(CUBE,cube);
+		ai=properties.getProperty(AI,ai);
 	}
 	
 	public void load() {
-
 		try {
 			final Properties properties=new Properties();
 			properties.load(new FileInputStream(getConfigFile()));
 			load(properties);
-		} catch (final IOException ex) {}
+            System.out.println("Loaded tournament config");
+		} catch (final IOException ex) {
+            System.err.println("ERROR: unable to load tournament config");
+        }
 	}
 	
 	public void save(final Properties properties) {
-
 		properties.setProperty(AVATAR,""+avatar);
 		properties.setProperty(NAME,name);
 		properties.setProperty(START_LIFE,""+startLife);
@@ -187,24 +186,25 @@ public class TournamentConfig {
 		properties.setProperty(PLAYER,playerColors);
 		properties.setProperty(OPPONENT,opponentColors);
 		properties.setProperty(CUBE,cube);
+		properties.setProperty(AI,ai);
 	}
 	
 	public void save() {
-		
 		try {
 			final Properties properties=new Properties();
 			save(properties);
 			properties.store(new FileOutputStream(getConfigFile()),"Tournament configuration");
-		} catch (final IOException ex) {}		
+            System.out.println("Saved tournament config");
+		} catch (final IOException ex) {
+            System.err.println("ERROR: unable to save tournament config");
+        }		
 	}
 	
 	private static File getConfigFile() {
-		
 		return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
 	}
 	
 	public static TournamentConfig getInstance() {
-		
 		return INSTANCE;
 	}
 }

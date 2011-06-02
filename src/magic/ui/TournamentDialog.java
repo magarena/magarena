@@ -30,6 +30,7 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
+import magic.ai.MagicAIImpl;
 
 public class TournamentDialog extends JDialog implements ActionListener {
 
@@ -44,6 +45,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 	private final ColorsChooser playerColorsChooser;
 	private final ColorsChooser opponentColorsChooser;
 	private final JComboBox cubeComboBox;
+	private final JComboBox aiComboBox;
 	private final JButton okButton;
 	private final JButton cancelButton;
 	private final Theme theme;
@@ -53,7 +55,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		super(frame,true);
 		this.frame=frame;
 		this.setTitle("New duel");
-		this.setSize(500,450);
+		this.setSize(500,500);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -119,13 +121,23 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		cubeLabel.setIcon(IconImages.CUBE);
 		cubeLabel.setBounds(55,330,80,25);
 		mainPanel.add(cubeLabel);
-		
 		final ComboBoxModel cubeModel=new DefaultComboBoxModel(CubeDefinitions.getInstance().getCubeNames());
 		cubeComboBox=new JComboBox(cubeModel);
 		cubeComboBox.setFocusable(false);
 		cubeComboBox.setBounds(135,330,300,25);
 		cubeComboBox.setSelectedItem(config.getCube());
 		mainPanel.add(cubeComboBox);
+        
+        final JLabel aiLabel=new JLabel("AI");
+		aiLabel.setBounds(55,365,80,25);
+		aiLabel.setIcon(IconImages.DIFFICULTY);
+		mainPanel.add(aiLabel);
+		final ComboBoxModel aiModel=new DefaultComboBoxModel(MagicAIImpl.getNames());
+		aiComboBox=new JComboBox(aiModel);
+		aiComboBox.setFocusable(false);
+		aiComboBox.setBounds(135,365,300,25);
+		aiComboBox.setSelectedItem(config.getAI());
+		mainPanel.add(aiComboBox);
 		
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(mainPanel,BorderLayout.CENTER);
@@ -149,6 +161,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			config.setPlayerColors(playerColors);
 			config.setOpponentColors(opponentColors);
 			config.setCube((String)cubeComboBox.getSelectedItem());
+			config.setAI((String)aiComboBox.getSelectedItem());
 			config.save();
 			frame.newTournament(config);
 			dispose();

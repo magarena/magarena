@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 import magic.MagicMain;
-import magic.ai.MagicAI;
-import magic.ai.MagicAIImpl;
 
 public class GeneralConfig {
 
@@ -22,7 +20,6 @@ public class GeneralConfig {
 	private static final String MAXIMIZED="maximized";
 	private static final String THEME="theme";
 	private static final String AVATAR="avatar";
-	private static final String AI="ai";
 	private static final String TEXT_VIEW="text";
 	private static final String SKIP_SINGLE="single";
 	private static final String ALWAYS_PASS="pass";
@@ -42,7 +39,6 @@ public class GeneralConfig {
 	private static final boolean DEFAULT_MAXIMIZED=false;
 	private static final String DEFAULT_THEME="felt";
 	private static final String DEFAULT_AVATAR="legend";
-	private static final String DEFAULT_AI="default";
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
 	private static final boolean DEFAULT_PASS=true;
@@ -62,7 +58,6 @@ public class GeneralConfig {
 	private boolean maximized=DEFAULT_MAXIMIZED;
 	private String theme=DEFAULT_THEME;
 	private String avatar=DEFAULT_AVATAR;
-	private String ai=DEFAULT_AI;
 	private boolean textView=DEFAULT_TEXT_VIEW;
 	private boolean skipSingle=DEFAULT_SINGLE;
 	private boolean alwaysPass=DEFAULT_PASS;
@@ -145,53 +140,30 @@ public class GeneralConfig {
 	}
 	
 	public void setAvatar(final String avatar) {
-		
 		this.avatar=avatar;
 	}
 	
-	public String getAi() {
-		
-		return ai;
-	}
-	
-	public void setAi(final String ai) {
-		
-		this.ai=ai;
-	}
-	
-	public MagicAI[] getPlayerAis() {
-		
-		final MagicAI playerAi = MagicAIImpl.getAI(ai).getAI();
-		return new MagicAI[]{playerAi, playerAi};
-	}
-	
 	public boolean getTextView() {
-		
 		return textView;
 	}
 	
 	public void setTextView(final boolean textView) {
-		
 		this.textView=textView;
 	}
 	
 	public boolean getSkipSingle() {
-		
 		return skipSingle;
 	}
 
 	public void setSkipSingle(final boolean skipSingle) {
-		
 		this.skipSingle=skipSingle;
 	}
 	
 	public boolean getAlwaysPass() {
-		
 		return alwaysPass;
 	}
 	
 	public void setAlwaysPass(final boolean alwaysPass) {
-		
 		this.alwaysPass=alwaysPass;
 	}
 	
@@ -284,7 +256,6 @@ public class GeneralConfig {
 		maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+DEFAULT_MAXIMIZED));
 		theme=properties.getProperty(THEME,DEFAULT_THEME);
 		avatar=properties.getProperty(AVATAR,DEFAULT_AVATAR);
-		ai=properties.getProperty(AI,DEFAULT_AI);
 		textView=Boolean.parseBoolean(properties.getProperty(TEXT_VIEW,""+DEFAULT_TEXT_VIEW));
 		skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
 		alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+DEFAULT_PASS));
@@ -316,7 +287,6 @@ public class GeneralConfig {
 		properties.setProperty(MAXIMIZED,String.valueOf(maximized));
 		properties.setProperty(THEME,theme);
 		properties.setProperty(AVATAR,avatar);
-		properties.setProperty(AI,ai);
 		properties.setProperty(TEXT_VIEW,String.valueOf(textView));
 		properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));
 		properties.setProperty(ALWAYS_PASS,String.valueOf(alwaysPass));
@@ -335,8 +305,11 @@ public class GeneralConfig {
 		try {
 			final Properties properties=new Properties();
 			save(properties);
-			properties.store(new FileOutputStream(getConfigFile()),"Tournament configuration");
-		} catch (final IOException ex) {}		
+			properties.store(new FileOutputStream(getConfigFile()),"General configuration");
+            System.out.println("Saved general config");
+		} catch (final IOException ex) {
+            System.err.println("ERROR: unable to save general config");
+        }		
 	}
 
 	private static File getConfigFile() {

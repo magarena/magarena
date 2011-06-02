@@ -16,7 +16,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import magic.ai.MagicAIImpl;
 import magic.data.AvatarImages;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -30,7 +29,6 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 	private final MagicFrame frame;
 	private final JComboBox themeComboBox;
 	private final JComboBox avatarComboBox;
-	private final JComboBox aiComboBox;
 	private final JCheckBox soundCheckBox;
 	private final JCheckBox highQualityCheckBox;
 	private final JCheckBox skipSingleCheckBox;
@@ -44,7 +42,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 		super(frame,true);
 		this.setTitle("Preferences");
-		this.setSize(400,420);
+		this.setSize(400,400);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -69,67 +67,70 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		mainPanel.setLayout(null);
 		
 		final GeneralConfig config=GeneralConfig.getInstance();
+       
+        int Y=20;
+        final int X=28, W=70, H=25;
+        final int X2=100, W2=255;
+        final int X3=25, H3=20, W3=350;
 		
 		final JLabel themeLabel=new JLabel("Theme");
-		themeLabel.setBounds(28,20,70,25);
+		themeLabel.setBounds(X,Y,W,H);
 		themeLabel.setIcon(IconImages.PICTURE);
 		mainPanel.add(themeLabel);
-		final ComboBoxModel themeModel=new DefaultComboBoxModel(ThemeFactory.getInstance().getThemeNames());
+		final ComboBoxModel themeModel=new DefaultComboBoxModel(
+                ThemeFactory.getInstance().getThemeNames());
 		themeComboBox=new JComboBox(themeModel);
 		themeComboBox.setFocusable(false);
-		themeComboBox.setBounds(100,20,255,25);
+		themeComboBox.setBounds(X2,Y,W2,H);
 		themeComboBox.setSelectedItem(config.getTheme());
 		mainPanel.add(themeComboBox);
-		
+	
+
+        Y += 35;
 		final JLabel avatarLabel=new JLabel("Avatar");
-		avatarLabel.setBounds(28,55,70,25);
+		avatarLabel.setBounds(X,Y,W,H);
 		avatarLabel.setIcon(IconImages.AVATAR);
 		mainPanel.add(avatarLabel);
 		final ComboBoxModel avatarModel=new DefaultComboBoxModel(AvatarImages.getInstance().getNames());
 		avatarComboBox=new JComboBox(avatarModel);
 		avatarComboBox.setFocusable(false);
-		avatarComboBox.setBounds(100,55,255,25);
+		avatarComboBox.setBounds(X2,Y,W2,H);
 		avatarComboBox.setSelectedItem(config.getAvatar());
 		mainPanel.add(avatarComboBox);
-		
-		final JLabel aiLabel=new JLabel("AI");
-		aiLabel.setBounds(28,90,70,25);
-		aiLabel.setIcon(IconImages.DIFFICULTY);
-		mainPanel.add(aiLabel);
-		final ComboBoxModel aiModel=new DefaultComboBoxModel(MagicAIImpl.getNames());
-		aiComboBox=new JComboBox(aiModel);
-		aiComboBox.setFocusable(false);
-		aiComboBox.setBounds(100,90,255,25);
-		aiComboBox.setSelectedItem(config.getAi());
-		mainPanel.add(aiComboBox);
 
+        Y += 35;
 		soundCheckBox=new JCheckBox("Enable sound effects",config.isSound());
-		soundCheckBox.setBounds(25,135,350,20);
+		soundCheckBox.setBounds(X3,Y,W3,H3);
 		soundCheckBox.setFocusable(false);
 		mainPanel.add(soundCheckBox);
-		
+	
+        Y += 30;
 		highQualityCheckBox=new JCheckBox("Show card images in original size",config.isHighQuality());
-		highQualityCheckBox.setBounds(25,165,350,20);
+		highQualityCheckBox.setBounds(X3,Y,W3,H3);
 		highQualityCheckBox.setFocusable(false);
 		mainPanel.add(highQualityCheckBox);
 		
+        Y += 30;
 		skipSingleCheckBox=new JCheckBox("Skip single option choices when appropriate",config.getSkipSingle());
-		skipSingleCheckBox.setBounds(25,195,350,20);
+		skipSingleCheckBox.setBounds(X3,Y,W3,H3);
 		skipSingleCheckBox.setFocusable(false);
 		mainPanel.add(skipSingleCheckBox);
 
+        Y += 30;
 		alwaysPassCheckBox=new JCheckBox("Always pass during draw and begin of combat step",config.getAlwaysPass());
-		alwaysPassCheckBox.setBounds(25,225,350,20);
+		alwaysPassCheckBox.setBounds(X3,Y,W3,H3);
 		alwaysPassCheckBox.setFocusable(false);
 		mainPanel.add(alwaysPassCheckBox);
-		
+	
+        Y += 30;
 		smartTargetCheckBox=new JCheckBox("Filter legal targets when appropriate",config.getSmartTarget());
-		smartTargetCheckBox.setBounds(25,255,350,20);
+		smartTargetCheckBox.setBounds(X3,Y,W3,H3);
 		smartTargetCheckBox.setFocusable(false);
 		mainPanel.add(smartTargetCheckBox);
-						
+				
+        Y += 30;
 		popupDelaySlider=new SliderPanel("Popup",IconImages.DELAY,0,500,50,config.getPopupDelay());
-		popupDelaySlider.setBounds(60,285,270,50);
+		popupDelaySlider.setBounds(60,Y,270,50);
 		mainPanel.add(popupDelaySlider);
 		
 		getContentPane().setLayout(new BorderLayout());
@@ -147,7 +148,6 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 			final GeneralConfig config=GeneralConfig.getInstance();
 			config.setTheme((String)themeComboBox.getSelectedItem());
 			config.setAvatar((String)avatarComboBox.getSelectedItem());
-			config.setAi((String)aiComboBox.getSelectedItem());
 			config.setSound(soundCheckBox.isSelected());
 			config.setHighQuality(highQualityCheckBox.isSelected());
 			config.setSkipSingle(skipSingleCheckBox.isSelected());

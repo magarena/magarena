@@ -41,7 +41,7 @@ public class MagicTournament {
 	public MagicTournament(final TournamentConfig configuration) {
 
 		this.configuration=configuration;
-		ais=GeneralConfig.getInstance().getPlayerAis();
+		ais=configuration.getPlayerAIs();
 		restart();
 	}
 	
