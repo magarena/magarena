@@ -91,6 +91,7 @@ import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicVeteranTrigger;
 import magic.model.trigger.MagicVividLandTrigger;
 import magic.model.variable.MagicLocalVariable;
+import magic.model.variable.MagicDummyLocalVariable;
 
 public class TriggerDefinitions {
 	
@@ -3445,32 +3446,28 @@ public class TriggerDefinitions {
 		}
     };
     
-	private static final MagicLocalVariable HALCYON_GLAZE_VARIABLE=new MagicLocalVariable() {
+	private static final MagicLocalVariable HALCYON_GLAZE_VARIABLE=new MagicDummyLocalVariable() {
 		
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			pt.power=4;
 			pt.toughness=4;
 		}
 
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
 			return flags|MagicAbility.Flying.getMask();
 		}
 
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			
-			return 0;
+			return flags|MagicSubType.Illusion.getMask();
 		}
-
-		@Override
-		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-
-			return flags;
-		}		
+		
+        @Override
+		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
+		}
 	};
 	
     private static final MagicTrigger HALCYON_GLAZE=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Halcyon Glaze") {
