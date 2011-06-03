@@ -32,10 +32,10 @@ public class GeneralConfig {
 	private static final String HIGH_QUALITY="hq";
 	private static final String SOUND="sound";
 
-	private static final int DEFAULT_LEFT=-1;
-	private static final int DEFAULT_TOP=-1;
-	private static final int DEFAULT_WIDTH=1000;
-	private static final int DEFAULT_HEIGHT=700;
+	private static final int DEFAULT_LEFT=0;
+	private static final int DEFAULT_TOP=0;
+	private static final int DEFAULT_WIDTH=1024;
+	private static final int DEFAULT_HEIGHT=600;
 	private static final boolean DEFAULT_MAXIMIZED=false;
 	private static final String DEFAULT_THEME="felt";
 	private static final String DEFAULT_AVATAR="legend";
