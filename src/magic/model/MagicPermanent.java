@@ -859,25 +859,24 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		abilityPlayedThisTurn--;
 	}
 	
-	public boolean hasType(final MagicType type) {
-		
-		if (type==MagicType.Creature) {
-			return isCreature();
+    public int getTypeFlags() {
+		int flags=cardDefinition.getTypeFlags();
+		for (final MagicLocalVariable localVariable : localVariables) {
+			flags=localVariable.getTypeFlags(this,flags);
 		}
-		return cardDefinition.hasType(type);				
+		return flags;
+	}
+	
+	public boolean hasType(final MagicType type) {
+		return type.hasType(getTypeFlags());				
 	}
 	
 	public boolean isLand() {
-		
 		return cardDefinition.isLand();
 	}
 	
 	public boolean isCreature() {
-		
-		if (hasState(MagicPermanentState.Animated)) {
-			return true;
-		}		
-		return cardDefinition.isCreature();
+		return MagicType.Creature.hasType(getTypeFlags());
 	}
 	
 	public boolean isArtifact() {
