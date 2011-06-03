@@ -13,5 +13,7 @@ public interface MagicLocalVariable {
 
 	public abstract int getSubTypeFlags(final MagicPermanent permanent,final int flags);
 	
+    public abstract int getTypeFlags(final MagicPermanent permanent,final int flags);
+	
 	public abstract int getColorFlags(final MagicPermanent permanent,final int flags);	
 }
