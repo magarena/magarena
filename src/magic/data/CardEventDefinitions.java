@@ -2062,6 +2062,31 @@ public class CardEventDefinitions {
 		}
 	};
 	
+    private static final MagicSpellCardEvent PYROCLASM=new MagicSpellCardEvent("Pyroclasm") {
+
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			
+			final MagicPlayer player=cardOnStack.getController();
+			return new MagicEvent(cardOnStack.getCard(),player,new Object[]{cardOnStack},this,
+				"Pyroclasm deals 2 damage to each creature.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+			game.doAction(new MagicMoveCardAction(cardOnStack));
+			final int amount=2;
+			final MagicSource source=cardOnStack.getCard();
+			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);
+			for (final MagicTarget target : targets) {
+				final MagicDamage damage=new MagicDamage(source,target,amount,false);
+				game.doAction(new MagicDealDamageAction(damage));
+			}
+		}
+	};
+	
 	private static final MagicSpellCardEvent CHAIN_REACTION=new MagicSpellCardEvent("Chain Reaction") {
 
 		@Override
@@ -3355,6 +3380,7 @@ public class CardEventDefinitions {
 		BLIGHTNING,
 		BREATH_OF_DARIGAAZ,
 		CHAIN_REACTION,
+        PYROCLASM,
 		CRUEL_EDICT,
 		CORPSEHATCH,
 		DAY_OF_JUDGMENT,
