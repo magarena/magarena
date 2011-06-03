@@ -15,6 +15,9 @@ newcards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards
 newcards/existing_full.txt: newcards/existing.txt data/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
+candidate_cards_full.txt: scripts/extract_candidates.awk candidate_cards.tsv data/mtg-data.txt
+	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
+
 M1.%:
 	-rm -rf Magarena-1.$*
 	-rm Magarena-1.$*.zip
