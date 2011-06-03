@@ -3678,6 +3678,29 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger TUMBLE_MAGNET=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Tumble Magnet") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+						
+			final MagicPlayer player=permanent.getController();
+			return new MagicEvent(permanent,player,new Object[]{permanent},this,
+					"Tumble Magnet enters the battlefield with three charge counters on it.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,3,false));
+		}
+
+		@Override
+		public boolean usesStack() {
+
+			return false;
+		}
+    };
+    
     private static final MagicTrigger SERRATED_ARROWS1=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Serrated Arrows") {
 
 		@Override
@@ -4305,7 +4328,8 @@ public class TriggerDefinitions {
 	    RAKING_CANOPY,
 	    RISE_OF_THE_HOBGOBLINS,
 	    ELDRAZI_MONUMENT,
-	    SERRATED_ARROWS1,
+	    TUMBLE_MAGNET,
+        SERRATED_ARROWS1,
 	    SERRATED_ARROWS2,
 	    SHRINE_OF_BURNING_RAGE1,
 	    SHRINE_OF_BURNING_RAGE2,

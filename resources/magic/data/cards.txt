@@ -8122,3 +8122,13 @@ color=r
 converted=2
 cost={1}{R}
 timing=removal
+
+>Tumble Magnet
+image=http://magiccards.info/scans/en/som/218.jpg
+cube=default
+value=4
+rarity=1
+type=Artifact
+converted=3
+cost={3}
+timing=artifact

@@ -2347,6 +2347,35 @@ public class PermanentActivationDefinitions {
 			}
 		}
 	};
+	
+    private static final MagicPermanentActivation TUMBLE_MAGNET=new MagicPermanentActivation("Tumble Magnet",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicCondition.CHARGE_COUNTER_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+
+			final MagicPermanent permanent=(MagicPermanent)source;
+			return new MagicEvent[]{
+				new MagicTapEvent(permanent),
+				new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,new MagicTapTargetPicker(true,false),
+				MagicEvent.NO_DATA,this,"Tap target artifact or creature$.");
+		}
+
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=(MagicPermanent)event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				game.doAction(new MagicTapAction(creature,true));
+			}
+		}
+	};
 
 	private static final MagicPermanentActivation SERRATED_ARROWS=new MagicPermanentActivation("Serrated Arrows",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicCondition.CHARGE_COUNTER_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
@@ -2820,7 +2849,8 @@ public class PermanentActivationDefinitions {
 		CREEPING_TAR_PIT,
 		RAGING_RAVINE,
 		STIRRING_WILDWOOD,
-        TECTONIC_EDGE
+        TECTONIC_EDGE,
+        TUMBLE_MAGNET
 	);
 	
 	public static void addPermanentActivations() {
