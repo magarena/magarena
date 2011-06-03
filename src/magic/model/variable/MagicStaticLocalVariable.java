@@ -11,7 +11,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 
 // Implements all static abilities of cards.
-public class MagicStaticLocalVariable implements MagicLocalVariable {
+public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 
 	private static final MagicLocalVariable INSTANCE=new MagicStaticLocalVariable();
 	
@@ -201,12 +201,6 @@ public class MagicStaticLocalVariable implements MagicLocalVariable {
 		if (permanent.getCardDefinition().hasAbility(MagicAbility.Changeling)) {
 			return flags|MagicSubType.ALL_CREATURES;
 		}		
-		return flags;
-	}
-
-	@Override
-	public int getColorFlags(final MagicPermanent permanent,final int flags) {
-		
 		return flags;
 	}
 	

@@ -11,7 +11,7 @@ import magic.model.MagicPowerToughness;
  * As long as you control another multicolored permanent, XXX gets +1/+1 and has YYY ability
  * Needed by Bant Sureblade, Esper Stormblade, Grixis Grimblade, Jund Hackblade, Naya Hushblade
  */
-public class MagicBladeLocalVariable implements MagicLocalVariable {
+public class MagicBladeLocalVariable extends MagicDummyLocalVariable {
 
 	private final long abilityMask;
 	
@@ -43,15 +43,5 @@ public class MagicBladeLocalVariable implements MagicLocalVariable {
 	@Override
 	public long getAbilityFlags(MagicGame game,MagicPermanent permanent,long flags) {
 		return isValid(permanent)?flags|abilityMask:flags;
-	}
-	
-	@Override
-	public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-		return flags;
-	}
-
-	@Override
-	public int getColorFlags(final MagicPermanent permanent,final int flags) {
-		return flags;
 	}
 }
