@@ -200,9 +200,12 @@ public class MagicCardDefinition {
 		
 		return token;
 	}
+
+    public int getTypeFlags() {
+        return typeFlags;
+    }
 	
 	public void addType(final MagicType type) {
-		
 		typeFlags|=type.getMask();
 	}
 	
@@ -269,7 +272,6 @@ public class MagicCardDefinition {
 	}
 	
 	public int getSubTypeFlags() {
-		
 		return subTypeFlags;
 	}
 	
