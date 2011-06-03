@@ -1,8 +1,7 @@
 package magic.ai;
 
 public enum MagicAIImpl {
-	
-    DEFAULT("default", new MiniMaxAlphaBetaAI()),
+    DEFAULT("default", new MiniMaxAlphaBetaAI()), 
     MMAB("minimax", new MiniMaxAlphaBetaAI()), 
     MCTS("monte carlo", new MCTSAI()),
     MCTSD("monte carlo", new MCTSAI(true)),
@@ -10,7 +9,7 @@ public enum MagicAIImpl {
     RND("random", new RandomAI()),
     ;
     
-    private static MagicAIImpl SUPPORTED_AIS[] = new MagicAIImpl[]{DEFAULT, MMAB, MCTS, VEGAS, RND};
+    private static final MagicAIImpl SUPPORTED_AIS[] = new MagicAIImpl[]{MMAB, MCTS, VEGAS, RND};
     
     private final String name;
     private final MagicAI ai;
@@ -32,9 +31,7 @@ public enum MagicAIImpl {
     }
     
     public static MagicAIImpl getAI(final String name) {
-    	
     	for (final MagicAIImpl ai : values()) {
-    		
     		if (ai.getName().equals(name)) {
     			return ai;
     		}
@@ -43,11 +40,9 @@ public enum MagicAIImpl {
     }
     
     public static String[] getNames() {
-    	
     	final String names[]=new String[SUPPORTED_AIS.length];
     	int index=0;
     	for (final MagicAIImpl ai : SUPPORTED_AIS) {
-    		
     		names[index++]=ai.getName();
     	}
     	return names;
