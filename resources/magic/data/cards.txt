@@ -8099,3 +8099,14 @@ rarity=2
 type=Land
 basic=
 timing=land
+
+>Flashfreeze
+image=http://magiccards.info/scans/en/m11/53.jpg
+cube=default
+value=3
+rarity=2
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter

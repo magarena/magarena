@@ -25,6 +25,22 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Stack;
 		}
 	};
+	
+    public static final MagicTargetFilter TARGET_RED_GREEN_SPELL=new MagicTargetFilter() {
+
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			if (target.isSpell()) { 
+				final MagicCardOnStack cardOnStack = (MagicCardOnStack)target;
+				final int colors = cardOnStack.getCardDefinition().getColorFlags();
+				return MagicColor.Red.hasColor(colors) || MagicColor.Green.hasColor(colors);
+			}
+			return false;
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Stack;
+		}
+	};
 
 	public static final MagicTargetFilter TARGET_CREATURE_SPELL=new MagicTargetFilter() {
 

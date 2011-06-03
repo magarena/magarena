@@ -21,6 +21,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.None,"target spell");
 	public static final MagicTargetChoice NEG_TARGET_SPELL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.Negative,"target spell");
+	public static final MagicTargetChoice NEG_TARGET_RED_GREEN_SPELL=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_RED_GREEN_SPELL,true,MagicTargetHint.Negative,"target red or green spell");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_SPELL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_SPELL,true,MagicTargetHint.Negative,"target creature spell");
 	public static final MagicTargetChoice NEG_TARGET_NONCREATURE_SPELL=
