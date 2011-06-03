@@ -16,11 +16,24 @@ public enum MagicSubType {
 	Goblin("Goblin",true,11),
 	Knight("Knight",true,12),
 	Soldier("Soldier",true,13),
+	Illusion("Illusion",true,14),
+	Elemental("Elemental",true,15),
+	Construct("Construct",true,16),
 	;
 
 	public static final int ALL_BASIC_LANDS=Forest.getMask()|Island.getMask()|Mountain.getMask()|Plains.getMask()|Swamp.getMask();
 	
-	public static final int ALL_CREATURES=Beast.getMask()|Demon.getMask()|Dragon.getMask()|Goblin.getMask()|Knight.getMask()|Soldier.getMask();
+	public static final int ALL_CREATURES=
+        Bat.getMask()|
+        Beast.getMask()|
+        Demon.getMask()|
+        Dragon.getMask()|
+        Goblin.getMask()|
+        Knight.getMask()|
+        Soldier.getMask()|
+        Illusion.getMask()|
+        Elemental.getMask()|
+        Construct.getMask();
 	
 	private final String name;
 	private final boolean creature;
