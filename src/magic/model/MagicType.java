@@ -32,7 +32,6 @@ public enum MagicType {
 	}
 	
 	public int getMask() {
-		
 		return 1<<index;
 	}
 	
@@ -45,5 +44,9 @@ public enum MagicType {
 			}
 		}
 		return null;
+	}
+	
+    public boolean hasType(final int flags) {
+		return (flags & getMask()) != 0;
 	}
 }
