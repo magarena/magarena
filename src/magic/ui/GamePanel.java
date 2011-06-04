@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.awt.event.InputEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -47,6 +48,7 @@ public class GamePanel extends JPanel {
 	private static final String UNDO_KEY="undo";
 	private static final String SWITCH_KEY="switch";
 	private static final String LOG_KEY="log";
+	private static final String PASS_KEY="pass";
 	
 	private final MagicFrame frame;
 	private final MagicGame game;
@@ -201,6 +203,17 @@ public class GamePanel extends JPanel {
 			}
 		});
 		
+        getActionMap().put(PASS_KEY, new AbstractAction() {
+			
+			private static final long serialVersionUID = 1L;
+
+			@Override
+			public void actionPerformed(final ActionEvent e) {
+				controller.passKeyPressed();
+			}
+		});
+	
+        //defining shortcut keys
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0),ACTION_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);		
@@ -208,6 +221,8 @@ public class GamePanel extends JPanel {
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0),SWITCH_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0),LOG_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_M, 0),LOG_KEY);
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.SHIFT_MASK),PASS_KEY);
+		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, InputEvent.SHIFT_MASK),PASS_KEY);
 				
 		stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
 		handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);		

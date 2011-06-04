@@ -90,8 +90,14 @@ public class GameController {
 		}
 	}
 	
+    public void passKeyPressed() {
+		if (gamePanel.canClickAction()) {
+			actionClicked();
+		    game.setPassPriority(true);
+		}
+	}
+	
 	public void actionKeyPressed() {
-		
 		if (gamePanel.canClickAction()) {
 			actionClicked();
 		}
