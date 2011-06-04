@@ -174,9 +174,9 @@ public class MagicGame {
 	public boolean canSkipSingleChoice() {
 		if (GeneralConfig.getInstance().getSkipSingle()) {
 			if (phase.getType()==MagicPhaseType.DeclareBlockers) {
-				return (turnPlayer!=visiblePlayer||turnPlayer.getNrOfAttackers()==0)&&stack.isEmpty();
+				return (turnPlayer!=visiblePlayer||turnPlayer.getNrOfAttackers()==0); //&&stack.isEmpty();
 			}
-			return stack.isEmpty();
+			return true; //stack.isEmpty();
 		}
 		return false;
 	}
@@ -264,12 +264,13 @@ public class MagicGame {
 	}
 	
 	public void setPhase(final MagicPhase phase) {
-		
 		this.phase=phase;
 	}
 	
 	public void changePhase(final MagicPhase phase) {
-		
+        if (phase.getType() == MagicPhaseType.Untap && turnPlayer.getIndex() == 0) {
+            passPriority=false;
+        }
 		this.phase=phase;
 		step=MagicStep.Begin;
 		priorityPassedCount=0;
