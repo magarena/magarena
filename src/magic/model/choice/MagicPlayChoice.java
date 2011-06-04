@@ -27,7 +27,6 @@ public class MagicPlayChoice extends MagicChoice {
 	private static final Object PASS_CHOICE_RESULTS[]=new Object[]{MagicPlayChoiceResult.PASS};
 	
 	private MagicPlayChoice() {
-		
 		super("Choose a card or ability to play.");
 	}
 	
@@ -88,9 +87,13 @@ public class MagicPlayChoice extends MagicChoice {
 		} else {
 			validChoices=getValidChoices(game,player);
 		}
-		if (validChoices.isEmpty()&&game.canSkipSingleChoice()) {
+
+		if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
 			return PASS_CHOICE_RESULTS;
 		}
+        if (game.getStack().isEmpty() && game.getPassPriority()) {
+            return PASS_CHOICE_RESULTS;
+        }
 
 		controller.focusViewers(0,0);
 		if (validChoices.isEmpty()) {
