@@ -202,12 +202,11 @@ public class MCTSAI implements MagicAI {
         MCTSGameTree curr = root;
         path.add(curr);
 
-        for (MagicEvent event = getNextMultiChoiceEvent(game, curr != root);
-             event != null;
-             event = getNextMultiChoiceEvent(game, curr != root)) {
-
-            final List<Object[]> choices = event.getArtificialChoiceResults(game);
-           
+        for (List<Object[]> choices = getNextMultiChoiceEvent(game, curr != root);
+             choices != null;
+             choices = getNextMultiChoiceEvent(game, curr != root)) {
+          
+            final MagicEvent event = game.getNextEvent();
             assert choices.size() > 1 : "number of choices is " + choices.size();
             
             if (curr.size() < choices.size()) {
@@ -254,10 +253,9 @@ public class MCTSAI implements MagicAI {
 
     private double randomPlay(final MagicGame game) {
         // play game until it is finished
-        for (MagicEvent event = getNextMultiChoiceEvent(game, true);
-             event != null;
-             event = getNextMultiChoiceEvent(game, true)) {
-            final List<Object[]> choices = event.getArtificialChoiceResults(game);
+        for (List<Object[]> choices = getNextMultiChoiceEvent(game, true);
+             choices != null;
+             choices = getNextMultiChoiceEvent(game, true)) {
             final int idx = MagicRandom.nextInt(choices.size());
             final Object[] selected = choices.get(idx);
             //logc('-');
@@ -279,7 +277,7 @@ public class MCTSAI implements MagicAI {
         }
     }
     
-    private MagicEvent getNextMultiChoiceEvent(MagicGame game, boolean fastChoices) {
+    private List<Object[]> getNextMultiChoiceEvent(MagicGame game, boolean fastChoices) {
         game.setFastChoices(fastChoices);
         
         while (!game.isFinished()) {
@@ -306,7 +304,7 @@ public class MCTSAI implements MagicAI {
                 game.executeNextEvent(choices.get(0));
             } else {
                 //multiple choice
-                return event;
+                return choices;
             }
         }
 
