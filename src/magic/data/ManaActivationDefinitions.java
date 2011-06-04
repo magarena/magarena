@@ -54,12 +54,16 @@ public class ManaActivationDefinitions {
 		// Artifacts.
 		addManaActivation("Lotus Petal",new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
 		addManaActivation("Mind Stone",new MagicTapManaActivation(new MagicManaType[]{MagicManaType.Colorless},0));
+
+        // Land generating colorless mana
+        addManaActivation("Tectonic Edge",new MagicTapManaActivation(new MagicManaType[]{MagicManaType.Colorless},0));
 		
 		// Man lands.
 		addCreatureActivations("Celestial Colonnade",new MagicManaType[]{MagicManaType.Blue,MagicManaType.White});
 		addCreatureActivations("Creeping Tar Pit",new MagicManaType[]{MagicManaType.Blue,MagicManaType.Black});
 		addCreatureActivations("Raging Ravine",new MagicManaType[]{MagicManaType.Red,MagicManaType.Green});
 		addCreatureActivations("Stirring Wildwood",new MagicManaType[]{MagicManaType.Green,MagicManaType.White});		
+		addCreatureActivations("Inkmoth Nexus",new MagicManaType[]{MagicManaType.Colorless});		
 
 		// Creatures.
 		addCreatureActivations("Alloy Myr",MagicManaType.ALL_TYPES);

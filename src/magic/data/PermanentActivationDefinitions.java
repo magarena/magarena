@@ -19,6 +19,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.MagicType;
 import magic.model.action.MagicAddTurnTriggerAction;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicChangeCountersAction;
@@ -2241,33 +2242,24 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicLocalVariable CHIMERIC_MASS_VARIABLE=new MagicLocalVariable() {
+	private static final MagicLocalVariable CHIMERIC_MASS_VARIABLE=new MagicDummyLocalVariable() {
 		
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			
 			final int charge=permanent.getCounters(MagicCounterType.Charge);
 			pt.power=charge;
 			pt.toughness=charge;
 		}
-
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
-			return flags;
-		}
 		
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-
-			return 0;
+			return flags|MagicSubType.Construct.getMask();
 		}
-				
-		@Override
-		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-
-			return flags;
-		}		
+		
+        @Override
+		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
+		}
 	};
 	
 	private static final MagicPermanentActivation CHIMERIC_MASS=new MagicPermanentActivation("Chimeric Mass",
@@ -2468,30 +2460,31 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicLocalVariable CELESTIAL_COLONNADE_VARIABLE=new MagicLocalVariable() {
+	private static final MagicLocalVariable CELESTIAL_COLONNADE_VARIABLE=new MagicDummyLocalVariable() {
 		
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			
 			pt.power=4;
 			pt.toughness=4;
 		}
 
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
 			return flags|MagicAbility.Flying.getMask()|MagicAbility.Vigilance.getMask();
 		}
 		
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-
-			return 0;
+			return flags|MagicSubType.Elemental.getMask();
+		}
+		
+        @Override
+		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
 		}
 				
 		@Override
 		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-
 			return MagicColor.White.getMask()|MagicColor.Blue.getMask();
 		}		
 	};
@@ -2521,30 +2514,30 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicLocalVariable CREEPING_TAR_PIT_VARIABLE=new MagicLocalVariable() {
-		
+	private static final MagicLocalVariable CREEPING_TAR_PIT_VARIABLE=new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			
 			pt.power=3;
 			pt.toughness=2;
 		}
 
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
 			return flags|MagicAbility.Unblockable.getMask();
 		}
 		
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-
-			return 0;
+			return flags|MagicSubType.Elemental.getMask();
+		}
+		
+        @Override
+		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
 		}
 				
 		@Override
 		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-
 			return MagicColor.Blue.getMask()|MagicColor.Black.getMask();
 		}		
 	};
@@ -2574,25 +2567,22 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicLocalVariable RAGING_RAVINE_VARIABLE=new MagicLocalVariable() {
+	private static final MagicLocalVariable RAGING_RAVINE_VARIABLE=new MagicDummyLocalVariable() {
 		
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			
 			pt.power=3;
 			pt.toughness=3;
-		}
-
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
-			return flags;
 		}
 		
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-
-			return 0;
+			return flags|MagicSubType.Elemental.getMask();
+		}
+		
+        @Override
+		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
 		}
 				
 		@Override
@@ -2618,6 +2608,54 @@ public class PermanentActivationDefinitions {
 			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
 		}
     };
+	
+    private static final MagicLocalVariable INKMOTH_NEXUS_VARIABLE=new MagicDummyLocalVariable() {
+		
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+			pt.power=1;
+			pt.toughness=1;
+		}
+
+		@Override
+		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+			return flags|MagicAbility.Flying.getMask()|MagicAbility.Infect.getMask();
+		}
+
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Artifact.getMask()|MagicType.Creature.getMask();
+		}
+	};
+
+	
+    private static final MagicPermanentActivation INKMOTH_NEXUS=new MagicPermanentActivation(
+			"Inkmoth Nexus",new MagicCondition[]{new MagicArtificialCondition(
+					MagicManaCost.ONE.getCondition(),
+                    MagicManaCost.ONE.getCondition())},
+			new MagicActivationHints(MagicTiming.Animate)) {
+
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
+		}
+
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+
+			return new MagicEvent(source,source.getController(),new Object[]{source},this, 
+                "Inkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn." + 
+                " It's still a land.");
+		}
+
+		@Override
+        public void executeEvent(final MagicGame game,final MagicEvent
+                event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent permanent=(MagicPermanent)data[0];
+			game.doAction(new MagicBecomesCreatureAction(permanent,INKMOTH_NEXUS_VARIABLE));
+		}
+	};
 	
 	private static final MagicPermanentActivation RAGING_RAVINE=new MagicPermanentActivation(
 			"Raging Ravine",new MagicCondition[]{new MagicArtificialCondition(
@@ -2649,30 +2687,31 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicLocalVariable STIRRING_WILDWOOD_VARIABLE=new MagicLocalVariable() {
+	private static final MagicLocalVariable STIRRING_WILDWOOD_VARIABLE=new MagicDummyLocalVariable() {
 		
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			
 			pt.power=3;
 			pt.toughness=4;
 		}
 
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
 			return flags|MagicAbility.Reach.getMask();
 		}
 		
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags|MagicSubType.Elemental.getMask();
+		}
 
-			return 0;
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
 		}
 				
 		@Override
 		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-
 			return MagicColor.Green.getMask()|MagicColor.White.getMask();
 		}		
 	};
@@ -2850,7 +2889,8 @@ public class PermanentActivationDefinitions {
 		RAGING_RAVINE,
 		STIRRING_WILDWOOD,
         TECTONIC_EDGE,
-        TUMBLE_MAGNET
+        TUMBLE_MAGNET,
+        INKMOTH_NEXUS
 	);
 	
 	public static void addPermanentActivations() {

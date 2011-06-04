@@ -8097,7 +8097,6 @@ cube=default
 value=3
 rarity=2
 type=Land
-basic=
 timing=land
 
 >Flashfreeze
@@ -8132,3 +8131,11 @@ type=Artifact
 converted=3
 cost={3}
 timing=artifact
+
+>Inkmoth Nexus
+image=http://magiccards.info/scans/en/mbs/145.jpg
+cube=default
+value=4
+rarity=3
+type=Land
+timing=land
