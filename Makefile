@@ -39,10 +39,6 @@ M1.%:
 			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 
-jar: $(MAG)
-
-exe: $(EXE)
-
 $(MAG): $(SRC) 
 	ant
 
@@ -66,7 +62,7 @@ clean:
 	-rm $(BUILD)/javac.last
 	-rm $(MAG)
 
-run: $(MAG)
+jar: $(MAG)
 	java -Xmx256M -jar $^
 
 test: $(MAG)
@@ -79,5 +75,8 @@ test: $(MAG)
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@ 
 
-%.dec: scripts/dailyhtml2dec.awk
-	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$* | awk -f $^ > $@
+decks/dd_%.dec: scripts/dailyhtml2dec.awk
+	curl "http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$*" | awk -f $^ > $@
+
+decks/ml_%.dec: scripts/apprentice2dec.awk 
+	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
