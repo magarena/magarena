@@ -11,21 +11,17 @@ public abstract class MagicPhase {
 	
 	private final MagicPhaseType type;
 	
+    protected abstract void executeBeginStep(final MagicGame game);
+	
 	public MagicPhase(final MagicPhaseType type) {
-		
 		this.type=type;
 	}
 	
 	public final MagicPhaseType getType() {
-		
 		return type;
 	}
-
-	protected abstract void executeBeginStep(final MagicGame game);
 	
-	protected void executeEndOfPhase(final MagicGame game) {
-		
-	}
+	protected void executeEndOfPhase(final MagicGame game) {}
 	
 	public void executePhase(final MagicGame game) {
 
