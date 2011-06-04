@@ -9,6 +9,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import magic.model.MagicGame;
+import magic.model.MagicRandom;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 
@@ -51,7 +52,7 @@ public class VegasAI implements MagicAI {
                         choiceGame,
                         choiceGame.getScorePlayer(),
                         score,
-                        new Random(12345 + count),
+                        new Random(MagicRandom.nextInt(1000000)),
                         simulations);
 				executor.execute(worker);
 			}
