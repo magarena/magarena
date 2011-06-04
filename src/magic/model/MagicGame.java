@@ -67,6 +67,7 @@ public class MagicGame {
 	private boolean landPlayed=false;
 	private boolean priorityPassed=false;
 	private int priorityPassedCount=0;
+    private boolean passPriority=false;
 	private boolean stateCheckRequired=false;
 	private boolean artificial;
 	private boolean fastChoices=false;
@@ -138,7 +139,15 @@ public class MagicGame {
 		this.logBook=null;
 		this.logMessageBuilder=null;
 	}
-		
+	
+    public void setPassPriority(final boolean pp) {
+        passPriority = pp;
+    }
+
+    public boolean getPassPriority() {
+        return passPriority;
+    }
+
 	public void setScore(final int score) {
 		
 		this.score=score;
@@ -163,7 +172,6 @@ public class MagicGame {
 	}
 	
 	public boolean canSkipSingleChoice() {
-	
 		if (GeneralConfig.getInstance().getSkipSingle()) {
 			if (phase.getType()==MagicPhaseType.DeclareBlockers) {
 				return (turnPlayer!=visiblePlayer||turnPlayer.getNrOfAttackers()==0)&&stack.isEmpty();
@@ -174,12 +182,10 @@ public class MagicGame {
 	}
 	
 	public boolean canSkipSingleManaChoice() {
-		
 		return GeneralConfig.getInstance().getSkipSingle();
 	}
 	
 	public boolean canSkipDeclareBlockersSingleChoice() {
-	
 		return GeneralConfig.getInstance().getSkipSingle()&&turnPlayer.getNrOfAttackers()==0;
 	}		
 	
