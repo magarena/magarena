@@ -53,6 +53,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private MagicPowerToughness cachedTurnPowerToughness=null;
 	private long cachedTurnAbilityFlags=0;
 	private int cachedSubTypeFlags=0;
+	private int cachedTypeFlags=0;
 	private int cachedColorFlags=0;
 	
 	public MagicPermanent(final long id,final MagicCard card,final MagicPlayer controller) {
@@ -488,6 +489,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			cachedTurnPowerToughness=getPowerToughness(game,true);
 			cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
 			cachedSubTypeFlags=getSubTypeFlags();
+			cachedTypeFlags=getTypeFlags();
 			cachedColorFlags=getColorFlags();
 			this.cached=true;
 		} else {
@@ -860,7 +862,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
     public int getTypeFlags() {
-		int flags=cardDefinition.getTypeFlags();
+		// Check if cached.
+		if (cached) {
+			return cachedTypeFlags;
+		}
+		
+        int flags=cardDefinition.getTypeFlags();
 		for (final MagicLocalVariable localVariable : localVariables) {
 			flags=localVariable.getTypeFlags(this,flags);
 		}
