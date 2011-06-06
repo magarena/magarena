@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Collection;
 
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhase;
@@ -65,9 +66,11 @@ function getValueByMC(node)
 //AI using Monte Carlo Tree Search
 public class MCTSAI implements MagicAI {
     
-    private static final int MAXSIM = 100000;
     private static final double C = 0.3;
+    private final List<Integer> simLengths = new LinkedList<Integer>();
     private final boolean LOGGING;
+    private int MAXTIME;
+    private long STARTTIME;
 
     public MCTSAI() {
         this(false);
@@ -98,9 +101,8 @@ public class MCTSAI implements MagicAI {
     public synchronized Object[] findNextEventChoiceResults(
             final MagicGame game, 
             final MagicPlayer scorePlayer) {
-
-        final int MAXTIME = (10000 / 6) * game.getArtificialLevel();
-        final long startTime = System.currentTimeMillis();
+        MAXTIME = (10000 / 6) * game.getArtificialLevel();
+        STARTTIME = System.currentTimeMillis();
         final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         final List<Object[]> choices = getCR(game, scorePlayer);
         final int size = choices.size();
@@ -128,7 +130,8 @@ public class MCTSAI implements MagicAI {
         //root represents the start state
         final MCTSGameTree root = new MCTSGameTree(-1, -1);
         int numSim = 0;
-        for (int i = 1; i <= MAXSIM && System.currentTimeMillis() - startTime < MAXTIME; i++) {
+        simLengths.clear();
+        for (int i = 1; System.currentTimeMillis() - STARTTIME < MAXTIME; i++) {
             //create a new MagicGame for simulation
             final MagicGame start = new MagicGame(game, scorePlayer);
             //start.setKnownCards();
@@ -164,8 +167,20 @@ public class MCTSAI implements MagicAI {
             }
         }
         
-        final long duration = System.currentTimeMillis() - startTime;
+        final long duration = System.currentTimeMillis() - STARTTIME;
         log("MCTS took " + duration + "ms to run " + numSim + " simulations");
+
+        if (LOGGING) {
+            int minL = 1000000;
+            int maxL = -1;
+            int sumL = 0;
+            for (int len : simLengths) {
+                sumL += len;
+                if (len > maxL) maxL = len;
+                if (len < minL) minL = len;
+            }
+            log("min: " + minL + "  max: " + maxL + "  avg: " + (sumL / simLengths.size()));
+        }
         
         log(pinfo); 
         final ArtificialChoiceResults selected = achoices.get(idx);
@@ -254,11 +269,10 @@ public class MCTSAI implements MagicAI {
     private double randomPlay(final MagicGame game) {
         // play game until it is finished
         for (List<Object[]> choices = getNextMultiChoiceEvent(game, true);
-             choices != null;
+             choices != null && System.currentTimeMillis() - STARTTIME < MAXTIME;
              choices = getNextMultiChoiceEvent(game, true)) {
             final int idx = MagicRandom.nextInt(choices.size());
             final Object[] selected = choices.get(idx);
-            //logc('-');
             game.executeNextEvent(selected);
         }
         
@@ -267,6 +281,10 @@ public class MCTSAI implements MagicAI {
 	
         final int mainPhaseCount = 100000000;
         final int length = Math.max(1,mainPhaseCount - game.getMainPhaseCount());
+
+        if (LOGGING) {
+            simLengths.add(length);
+        }
       
         if (game.getLosingPlayer() == null) {
             return 0;
