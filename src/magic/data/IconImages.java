@@ -1,5 +1,6 @@
 package magic.data;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -12,6 +13,25 @@ import javax.swing.ImageIcon;
 import magic.MagicMain;
 
 public class IconImages {
+
+    //use mana symbols by goblin hero if it exists
+    static final BufferedImage MANA = loadImage("icons/Mana.png");
+    /*
+	static {
+		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+"Mana.png");
+		if (iconFile.exists()) {
+            BufferedImage img = null;
+            try {
+                img = ImageIO.read(iconFile);
+            } catch (Exception err) {
+               
+            }
+            MANA = img;
+		} else {
+            MANA = null;
+        }
+	}
+    */
 
 	public static final BufferedImage MISSING=loadImage("icons/missing.png");
 	public static final ImageIcon MISSING2=loadIcon("missing2.png");
@@ -104,43 +124,42 @@ public class IconImages {
 	public static final ImageIcon DEATHTOUCH=loadIcon("deathtouch.png");
 
 	public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
-	public static final ImageIcon TAPPED=loadSymbolIcon("tapped.gif");
-	public static final ImageIcon ONE=loadSymbolIcon("big_one.gif");
-	public static final ImageIcon BLACK=loadSymbolIcon("big_black.gif");
-	public static final ImageIcon BLUE=loadSymbolIcon("big_blue.gif");
-	public static final ImageIcon GREEN=loadSymbolIcon("big_green.gif");	
-	public static final ImageIcon RED=loadSymbolIcon("big_red.gif");
-	public static final ImageIcon WHITE=loadSymbolIcon("big_white.gif");
-	public static final ImageIcon COST_BLACK=loadSymbolIcon("black.gif");
-	public static final ImageIcon COST_BLUE=loadSymbolIcon("blue.gif");
-	public static final ImageIcon COST_GREEN=loadSymbolIcon("green.gif");	
-	public static final ImageIcon COST_RED=loadSymbolIcon("red.gif");
-	public static final ImageIcon COST_WHITE=loadSymbolIcon("white.gif");
-	public static final ImageIcon COST_BLACK_GREEN=loadSymbolIcon("black_green.gif");
-	public static final ImageIcon COST_BLACK_RED=loadSymbolIcon("black_red.gif");
-	public static final ImageIcon COST_BLUE_BLACK=loadSymbolIcon("blue_black.gif");
-	public static final ImageIcon COST_BLUE_RED=loadSymbolIcon("blue_red.gif");
-	public static final ImageIcon COST_GREEN_BLUE=loadSymbolIcon("green_blue.gif");
-	public static final ImageIcon COST_GREEN_WHITE=loadSymbolIcon("green_white.gif");
-	public static final ImageIcon COST_RED_GREEN=loadSymbolIcon("red_green.gif");
-	public static final ImageIcon COST_RED_WHITE=loadSymbolIcon("red_white.gif");
-	public static final ImageIcon COST_WHITE_BLACK=loadSymbolIcon("white_black.gif");
-	public static final ImageIcon COST_WHITE_BLUE=loadSymbolIcon("white_blue.gif");
-	public static final ImageIcon COST_ZERO=loadSymbolIcon("zero.gif");
-	public static final ImageIcon COST_ONE=loadSymbolIcon("one.gif");
-	public static final ImageIcon COST_TWO=loadSymbolIcon("two.gif");
-	public static final ImageIcon COST_THREE=loadSymbolIcon("three.gif");
-	public static final ImageIcon COST_FOUR=loadSymbolIcon("four.gif");
-	public static final ImageIcon COST_FIVE=loadSymbolIcon("five.gif");
-	public static final ImageIcon COST_SIX=loadSymbolIcon("six.gif");
-	public static final ImageIcon COST_SEVEN=loadSymbolIcon("seven.gif");
-	public static final ImageIcon COST_EIGHT=loadSymbolIcon("eight.gif");
-	public static final ImageIcon COST_NINE=loadSymbolIcon("nine.gif");
+	public static final ImageIcon TAPPED=loadSymbolIcon("tapped.gif", 50, false);
+	public static final ImageIcon ONE=loadSymbolIcon("big_one.gif", 1, true);
+	public static final ImageIcon WHITE=loadSymbolIcon("big_white.gif", 24, true);
+	public static final ImageIcon BLUE=loadSymbolIcon("big_blue.gif", 25, true);
+	public static final ImageIcon BLACK=loadSymbolIcon("big_black.gif", 26, true);
+	public static final ImageIcon RED=loadSymbolIcon("big_red.gif", 27, true);
+	public static final ImageIcon GREEN=loadSymbolIcon("big_green.gif", 28, true);	
+	public static final ImageIcon COST_WHITE=loadSymbolIcon("white.gif", 24, false);
+	public static final ImageIcon COST_BLUE=loadSymbolIcon("blue.gif", 25, false);
+	public static final ImageIcon COST_BLACK=loadSymbolIcon("black.gif", 26, false);
+	public static final ImageIcon COST_RED=loadSymbolIcon("red.gif", 27, false);
+	public static final ImageIcon COST_GREEN=loadSymbolIcon("green.gif", 28, false);	
+	public static final ImageIcon COST_WHITE_BLUE=loadSymbolIcon("white_blue.gif", 30, false);
+	public static final ImageIcon COST_WHITE_BLACK=loadSymbolIcon("white_black.gif", 31, false);
+	public static final ImageIcon COST_BLUE_BLACK=loadSymbolIcon("blue_black.gif", 32, false);
+	public static final ImageIcon COST_BLUE_RED=loadSymbolIcon("blue_red.gif", 33, false);
+	public static final ImageIcon COST_BLACK_RED=loadSymbolIcon("black_red.gif", 34, false);
+	public static final ImageIcon COST_BLACK_GREEN=loadSymbolIcon("black_green.gif", 35, false);
+	public static final ImageIcon COST_RED_WHITE=loadSymbolIcon("red_white.gif", 36, false);
+	public static final ImageIcon COST_RED_GREEN=loadSymbolIcon("red_green.gif", 37, false);
+	public static final ImageIcon COST_GREEN_WHITE=loadSymbolIcon("green_white.gif", 38, false);
+	public static final ImageIcon COST_GREEN_BLUE=loadSymbolIcon("green_blue.gif", 39, false);
+	public static final ImageIcon COST_ZERO=loadSymbolIcon("zero.gif", 0, false);
+	public static final ImageIcon COST_ONE=loadSymbolIcon("one.gif", 1, false);
+	public static final ImageIcon COST_TWO=loadSymbolIcon("two.gif", 2, false);
+	public static final ImageIcon COST_THREE=loadSymbolIcon("three.gif", 3, false);
+	public static final ImageIcon COST_FOUR=loadSymbolIcon("four.gif", 4, false);
+	public static final ImageIcon COST_FIVE=loadSymbolIcon("five.gif", 5, false);
+	public static final ImageIcon COST_SIX=loadSymbolIcon("six.gif", 6, false);
+	public static final ImageIcon COST_SEVEN=loadSymbolIcon("seven.gif", 7, false);
+	public static final ImageIcon COST_EIGHT=loadSymbolIcon("eight.gif", 8, false);
+	public static final ImageIcon COST_NINE=loadSymbolIcon("nine.gif", 9, false);
 	public static final ImageIcon COST_NINE_OR_MORE=loadIcon("nineplus.gif");
-	public static final ImageIcon COST_X=loadSymbolIcon("x.gif");
+	public static final ImageIcon COST_X=loadSymbolIcon("x.gif", 21, false);
 		
 	private static BufferedImage loadImage(final String name) {
-		
 		try {
 			final InputStream inputStream=IconImages.class.getResourceAsStream(name);
 			final BufferedImage image=ImageIO.read(inputStream);
@@ -168,8 +187,24 @@ public class IconImages {
         return image != null ? icon : MISSING2;
 	}
 
-	private static ImageIcon loadSymbolIcon(final String name) {
-
+	private static ImageIcon loadSymbolIcon(final String name, final int pos, final boolean big) {
+        if (MANA != null) {
+            final int imgW = 75;
+            final int imgH = 75;
+            final int icoW = 15;
+            final int icoH = 15;
+            final int bigW = 25;
+            final int bigH = 25;
+            final int row = pos / 10;
+            final int col = pos % 10;
+            if (big) {
+                return new ImageIcon(MANA.getSubimage(col * imgW, row * imgH, imgW, imgH).getScaledInstance(
+                            bigW,bigH,Image.SCALE_SMOOTH));
+            } else {
+                return new ImageIcon(MANA.getSubimage(col * imgW, row * imgH, imgW, imgH).getScaledInstance(
+                            icoW,icoH,Image.SCALE_SMOOTH));
+            }
+        }
 		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
 		if (iconFile.exists()) {
 			return new ImageIcon(iconFile.getAbsolutePath());
@@ -178,7 +213,6 @@ public class IconImages {
 	}
 	
     private static void reloadSymbolIcon(final ImageIcon imgico, final String name) {
-
 		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
 		if (iconFile.exists()) {
             try {
