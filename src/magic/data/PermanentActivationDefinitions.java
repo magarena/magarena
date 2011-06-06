@@ -2,6 +2,7 @@ package magic.data;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.lang.reflect.Field;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -2778,128 +2779,23 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static Collection<MagicPermanentActivation> ACTIVATIONS=Arrays.asList(
-		AIR_SERVANT,
-		ARCANIS_THE_OMNIPOTENT1,
-		ARCANIS_THE_OMNIPOTENT2,
-		BOROS_GUILDMAGE1,
-		BOROS_GUILDMAGE2,
-		BOTTLE_GNOMES,
-		BRION_STOUTARM,
-		BRIGID_HERO_OF_KINSBAILE,
-		CARNIFEX_DEMON,
-		CINDER_ELEMENTAL,
-		CHAMELEON_COLOSSUS,
-		CHARGING_TROLL,
-		CUDGEL_TROLL,
-		CUNNING_SPARKMAGE,
-		CURSECATCHER,
-		DAUNTLESS_ESCORT,
-		DEATHLESS_ANGEL,
-		DRANA_KALASTRIA_BLOODCHIEF,
-		DRUDGE_REAVERS,
-		ECHO_MAGE1,
-		ECHO_MAGE2,
-		EMBER_HAULER,
-		ESPER_BATTLEMAGE1,
-		ESPER_BATTLEMAGE2,
-		ETHERSWORN_ADJUDICATOR1,
-		ETHERSWORN_ADJUDICATOR2,
-		FALLEN_ANGEL,
-		FEMEREF_ARCHERS,
-		FIRESLINGER,
-		FUME_SPITTER,
-		FURNACE_WHELP,
-		GELECTRODE,
-		GHOST_COUNCIL_OF_ORZHOVA,
-		GLEN_ELENDRA_ARCHMAGE,
-		GOBLIN_ARTILLERY,
-		GODSIRE,
-		HATEFLAYER,
-		HELLKITE_OVERLORD1,
-		HELLKITE_OVERLORD2,
-		JHESSIAN_BALMGIVER1,
-		JHESSIAN_BALMGIVER2,
-		KABUTO_MOTH,
-		KIKI_JIKI_MIRROR_BREAKER,
-		LORD_OF_SHATTERSKULL_PASS,
-		LOXODON_HIERARCH,
-		MERFOLK_SEASTALKERS,
-		MIRE_BOA,
-		MIRROR_ENTITY,
-		MOGG_FANATIC,
-		MORDANT_DRAGON,
-		NANTUKO_SHADE,
-		NIRKANA_CUTTHROAT,
-		OMNIBIAN,
-		ORACLE_OF_NECTARS,
-		PUTRID_LEECH,
-		QASALI_PRIDEMAGE,
-		RAGE_NIMBUS,
-		RAKDOS_GUILDMAGE1,
-		RAKDOS_GUILDMAGE2,
-		RAVENOUS_BALOTH,
-		RIVER_BOA,
-		SCATTERSHOT_ARCHER,
-		SIEGE_GANG_COMMANDER,
-		SILKBIND_FAERIE,
-		SILVOS_ROGUE_ELEMENTAL,
-		SHIVAN_DRAGON,
-		SKELETAL_VAMPIRE1,
-		SKELETAL_VAMPIRE2,
-		SKITHIRYX1,
-		SKITHIRYX2,
-		SPHINX_OF_MAGOSI,
-		SPIKETAIL_HATCHLING,
-		SPIRITMONGER1,
-		SPIRITMONGER2,
-		STUDENT_OF_WARFARE,
-		STUFFY_DOLL,
-		STUN_SNIPER,
-		THRUN_THE_LAST_TROLL,
-		THUNDERSONG_TRUMPETER,
-		TOLSIMIR_WOLFBLOOD,
-		TROLL_ASCETIC,
-		TWINBLADE_SLASHER,
-		URSAPINE,
-		VAMPIRE_HEXMAGE,
-		VEDALKEN_MASTERMIND,
-		VISARA_THE_DREADFUL,
-		WALL_OF_BONE,
-		ANGELIC_SHIELD,
-		ASCETICISM,
-		CAPTIVE_FLAME,
-		DRAGON_ROOST,
-		FIRES_OF_YAVIMAYA,
-		QUEST_FOR_THE_GEMBLADES,
-		QUEST_FOR_THE_GRAVELORD,
-		RISE_OF_THE_HOBGOBLINS,
-		SEAL_OF_DOOM,
-		SEAL_OF_FIRE,
-		BATTERSKULL,
-		BRITTLE_EFFIGY,
-		CHIMERIC_MASS,
-		MIND_STONE,
-		MOONGLOVE_EXTRACT,
-		SERRATED_ARROWS,
-		SHRINE_OF_BURNING_RAGE,
-		TRIP_NOOSE,
-		CELESTIAL_COLONNADE,
-		CREEPING_TAR_PIT,
-		RAGING_RAVINE,
-		STIRRING_WILDWOOD,
-        TECTONIC_EDGE,
-        TUMBLE_MAGNET,
-        INKMOTH_NEXUS
-	);
-	
 	public static void addPermanentActivations() {
-		
-		System.out.println("Adding "+ACTIVATIONS.size()+" activations...");
-		for (final MagicPermanentActivation activation : ACTIVATIONS) {
+        Class c = PermanentActivationDefinitions.class;
+        Field[] fields = c.getDeclaredFields();
+        int cnt = 0;
+        for (final Field field : fields) {
+            try {
+                final Object obj = field.get(null);
+                if (obj instanceof MagicPermanentActivation) {
+                    final MagicPermanentActivation pact = (MagicPermanentActivation)obj;
+                    final MagicCardDefinition card=pact.getCardDefinition();
+                    card.addActivation(pact);
+                    cnt++;
+                }
+            } catch (IllegalAccessException err) {
+            }
+        }
 
-			final MagicCardDefinition card=activation.getCardDefinition();
-			card.addActivation(activation);
-		}
+		System.err.println("Added " + cnt + " activations");
 	}
 }
