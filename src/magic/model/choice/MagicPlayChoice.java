@@ -89,9 +89,17 @@ public class MagicPlayChoice extends MagicChoice {
 		}
 
 		if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
+            if (!game.getStack().isEmpty()) {
+                try {
+                     Thread.sleep(1000);
+                } catch (final Exception err) {
+
+                }
+
+            }
 			return PASS_CHOICE_RESULTS;
 		}
-        if (game.getStack().isEmpty() && game.getPassPriority()) {
+        if ((game.getStack().isEmpty() || game.getStack().hasItemOnTopOfPlayer(player)) && game.getPassPriority()) {
             return PASS_CHOICE_RESULTS;
         }
 

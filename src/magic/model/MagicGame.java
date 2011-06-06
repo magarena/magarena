@@ -269,7 +269,7 @@ public class MagicGame {
 	
 	public void changePhase(final MagicPhase phase) {
         if (phase.getType() == MagicPhaseType.Untap && turnPlayer.getIndex() == 0) {
-            passPriority=false;
+            setPassPriority(false);
         }
 		this.phase=phase;
 		step=MagicStep.Begin;
