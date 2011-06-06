@@ -13,6 +13,6 @@ public class GameControllerThread extends Thread {
 	public void run() {
 		
 		controller.runGame();
-		System.out.println("Stopping game...");
+		System.err.println("Stopping game...");
 	}
 }

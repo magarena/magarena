@@ -34,9 +34,8 @@ public class ArtificialWorkerPool {
 	}
 	
 	private static void logMessage(final String message) {
-		
 		if (LOGGING) {
-			System.out.println(message);
+			System.err.println(message);
 		}
 	}
 	

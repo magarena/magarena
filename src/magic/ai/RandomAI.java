@@ -24,7 +24,7 @@ public class RandomAI implements MagicAI {
     
     private void log(final String message) {
         if (LOGGING) {
-            System.out.println(message);
+            System.err.println(message);
         }
     }
     

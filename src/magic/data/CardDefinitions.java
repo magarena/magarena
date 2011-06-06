@@ -174,7 +174,7 @@ public class CardDefinitions {
 		addDefinitions(TokenCardDefinitions.TOKEN_CARDS);
 		addDefinition(MagicCardDefinition.EMPTY);
 		
-		System.out.println(getNumberOfCards()+" card definitions");
+		System.err.println(getNumberOfCards()+" card definitions");
 	}
 	
 	public int getNumberOfCards() {

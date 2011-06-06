@@ -79,19 +79,19 @@ public class MCTSAI implements MagicAI {
 
     private void log(final String message) {
         if (LOGGING) {
-            System.out.println(message);
+            System.err.println(message);
         }
     }
     
     private void logi(final int num) {
         if (LOGGING) {
-            System.out.print(num);
+            System.err.print(num);
         }
     }
     
     private void logc(final char message) {
         if (LOGGING) {
-            System.out.print(message);
+            System.err.print(message);
         }
     }
     

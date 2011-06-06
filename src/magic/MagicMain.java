@@ -29,7 +29,7 @@ public class MagicMain {
 		} else {		
 			gamePath=System.getProperty("user.home")+File.separatorChar+GAME_PATH;		
 		}
-		System.out.println("Data folder : "+gamePath);
+		System.err.println("Data folder : "+gamePath);
 	}
 	
 	public static void main(String args[]) {		

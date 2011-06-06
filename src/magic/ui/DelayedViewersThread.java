@@ -47,7 +47,7 @@ public class DelayedViewersThread extends Thread {
 				}
 				wait(100);
 			} catch (final InterruptedException ex) {
-				System.out.println("Interrupted : "+ex.getMessage());
+				System.err.println("Interrupted : "+ex.getMessage());
 			}
 		}
 	}

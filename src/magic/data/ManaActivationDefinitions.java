@@ -41,9 +41,6 @@ public class ManaActivationDefinitions {
 	}
 	
 	public static void addManaActivations() {
-
-		System.out.println("Adding mana activations...");
-				
 		// Vivid lands.
 		addVividActivations("Vivid Crag",MagicManaType.Red);
 		addVividActivations("Vivid Creek",MagicManaType.Blue);
@@ -73,5 +70,7 @@ public class ManaActivationDefinitions {
 		addCreatureActivations("Steward of Valeron",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Green});
 		addCreatureActivations("Vine Trellis",new MagicManaType[]{MagicManaType.Colorless,MagicManaType.Green});
 		addCreatureActivations("Plague Myr",new MagicManaType[]{MagicManaType.Colorless});
+		
+        System.err.println("Added 20 mana activations");
 	}
 }

@@ -171,7 +171,7 @@ public class TournamentConfig {
 			final Properties properties=new Properties();
 			properties.load(new FileInputStream(getConfigFile()));
 			load(properties);
-            System.out.println("Loaded tournament config");
+            System.err.println("Loaded tournament config");
 		} catch (final IOException ex) {
             System.err.println("ERROR: unable to load tournament config");
         }
@@ -194,7 +194,7 @@ public class TournamentConfig {
 			final Properties properties=new Properties();
 			save(properties);
 			properties.store(new FileOutputStream(getConfigFile()),"Tournament configuration");
-            System.out.println("Saved tournament config");
+            System.err.println("Saved tournament config");
 		} catch (final IOException ex) {
             System.err.println("ERROR: unable to save tournament config");
         }		

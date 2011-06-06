@@ -126,7 +126,7 @@ public class ArtificialWorker {
 			aiChoiceResults.aiScore=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE;
 		} catch (final Exception ex) {
 			aiChoiceResults.aiScore=ArtificialScore.INVALID_SCORE;
-			System.out.println(MagicGameReport.buildReport(game));
+			System.err.println(MagicGameReport.buildReport(game));
 			ex.printStackTrace();
 		}
 		aiChoiceResults.gameCount=gameCount;

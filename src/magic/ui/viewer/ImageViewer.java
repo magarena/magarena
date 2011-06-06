@@ -57,7 +57,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 		if (imagePathFile.exists()) {
 			imageFiles=new ArrayList<File>();
 			scanFiles(imageFiles,imagePathFile);
-			System.out.println("Found "+imageFiles.size()+" user images.");
+			System.err.println("Found "+imageFiles.size()+" user images.");
 		} else {
 			imageFiles=Collections.emptyList();
 		}
