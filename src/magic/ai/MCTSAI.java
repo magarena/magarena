@@ -154,8 +154,8 @@ public class MCTSAI implements MagicAI {
         logc('\n');
 
         //select the best choice (child that has the highest secure score)
-        double maxV = -1e10;
-        int maxS = 0;
+        int maxV = -1;
+        int maxS = -1;
         int idx = -1;
         final List<ArtificialChoiceResults> achoices = getACR(choices);
         for (MCTSGameTree node : root) {
@@ -169,7 +169,7 @@ public class MCTSAI implements MagicAI {
         }
         
         final long duration = System.currentTimeMillis() - STARTTIME;
-        log("MCTS took " + duration + "ms to run " + numSim + " simulations");
+        log("MCTS:  time: " + duration + "  sims:  " + numSim);
 
         if (LOGGING) {
             int minL = 1000000;
