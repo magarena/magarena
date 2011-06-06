@@ -44,8 +44,8 @@ public class CardStatistics {
 	
 	public int totalRarity[]=new int[MagicCardDefinition.NR_OF_RARITIES];
 	
-	public int averageCost=0;
-	public int averageValue=0;
+	public double averageCost=0;
+	public double averageValue=0;
 	
 	public int colorCount[]=new int[MagicColor.NR_COLORS];
 	public int colorMono[]=new int[MagicColor.NR_COLORS];
@@ -129,8 +129,8 @@ public class CardStatistics {
 		
 		int total=totalCards-totalTypes[0];
 		if (total>0) {
-			averageValue=(averageValue*10)/total;
-			averageCost=(averageCost*10)/total;
+			averageValue /= total;
+			averageCost /= total;
 		}
 	}
 	
@@ -148,7 +148,7 @@ public class CardStatistics {
 			stream.print(MagicCardDefinition.RARITY_NAMES[index]+" : "+totalRarity[index]+"  ");
 		}
 		stream.println();
-		stream.println("Average Cost : "+averageCost+"  Value : "+averageValue);
+		stream.printf("Average Cost : %.2f  Value : %.2f\n", averageCost, averageValue);
 		stream.println("Monocolor : "+monoColor+"  Multicolor : "+multiColor+"  Colorless : "+colorless);
 
 		for (final MagicColor color : MagicColor.values()) {

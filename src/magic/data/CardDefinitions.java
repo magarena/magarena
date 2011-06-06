@@ -223,9 +223,8 @@ public class CardDefinitions {
 	}
 	
 	public void printStatistics() {
-		
 		final CardStatistics statistics=new CardStatistics(cards);
-		statistics.printStatictics(System.out);
+		statistics.printStatictics(System.err);
 	}
 	
 	public static CardDefinitions getInstance() {
