@@ -95,11 +95,12 @@ public class MagicPlayChoice extends MagicChoice {
                 } catch (final Exception err) {
 
                 }
-
             }
 			return PASS_CHOICE_RESULTS;
 		}
-        if ((game.getStack().isEmpty() || game.getStack().hasItemOnTopOfPlayer(player)) && game.getPassPriority()) {
+        if ((game.getStack().isEmpty() || game.getStack().hasItemOnTopOfPlayer(player)) && 
+             game.getTurnPlayer() == player &&                
+             game.getPassPriority()) {
             return PASS_CHOICE_RESULTS;
         }
 
