@@ -3,6 +3,7 @@ package magic.data;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.lang.reflect.Field;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -3291,178 +3292,22 @@ public class CardEventDefinitions {
 	private static final MagicSpellCardEvent WEAKNESS=new MagicPlayAuraEvent("Weakness",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(2,1));
 	
-	private static final Collection<MagicSpellCardEvent> CARD_EVENTS=Arrays.asList(
-		ABSORB,
-		BACK_TO_NATURE,
-		BACKLASH,
-		BEACON_OF_DESTRUCTION,
-		BURST_LIGHTNING,
-		CHAR,
-		CHASTISE,
-		COLOSSAL_MIGHT,
-		COUNTERSPELL,
-        FLASHFREEZE,
-		COUNTERSQUALL,
-		DELUGE,
-		DIMINISH,
-		DISFIGURE,
-		DISMAL_FAILURE,
-		DOOM_BLADE,
-		DOUBLE_CLEAVE,
-		DOUSE_IN_GLOOM,
-		ESSENCE_SCATTER,
-		EVACUATION,
-		FORCE_SPIKE,
-		FISTS_OF_THE_ANVIL,
-		GHOSTWAY,
-		GIANT_GROWTH,
-		GLORIOUS_CHARGE,
-		GO_FOR_THE_THROAT,
-		GRASP_OF_DARKNESS,
-		HEROES_REUNION,
-		HIDEOUS_END,
-		INCINERATE,
-		INSPIRIT,
-		INTO_THE_ROIL,
-		KINDLED_FURY,		
-		LAST_GASP,
-		LIGHTNING_BOLT,
-		LIGHTNING_HELIX,
-		MAELSTROM_PULSE,
-		MANA_LEAK,
-		MIGHT_OF_OAKS,
-		MIGHTY_LEAP,
-		MORTIFY,
-		NATURALIZE,
-		OFFERING_TO_ASHA,
-		PONGIFY,
-		PSYCHIC_BARRIER,
-		PLUMMET,
-		PUNCTURE_BLAST,
-		PUTREFY,
-		RALLY_THE_FORCES,
-		RECOIL,
-		REMAND,
-		REPULSE,
-		SAFE_PASSAGE,
-		SCAR,
-		SIGIL_BLESSING,
-		SMASH_TO_SMITHEREENS,
-		SMITE,
-		SMOTHER,
-		SWORDS_TO_PLOWSHARES,
-		TERMINATE,
-		THOUGHTWEFT_GAMBIT,
-		THUNDER_STRIKE,
-		TO_ARMS,
-		TRUMPET_BLAST,
-		TURN_THE_TIDE,
-		TURN_TO_MIST,
-		TWINCAST,
-		UNDERMINE,
-		UNMAKE,
-		UNSUMMON,
-		VAULT_SKYWARD,
-		VETERANS_REFLEXES,
-		VINES_OF_VASTWOOD,
-		VOLCANIC_FALLOUT,
-		WILDSIZE,
-		WITHSTAND,
-		WITHSTAND_DEATH,
-		WRAP_IN_VIGOR,
-		WRECKING_BALL,
-		ZEALOUS_PERSECUTION,
-		ASSASSINATE,
-		BEACON_OF_UNREST,
-		BESTIAL_MENACE,
-		BLACK_SUNS_ZENITH,
-		BLAZE,
-		BLIGHTNING,
-		BREATH_OF_DARIGAAZ,
-		CHAIN_REACTION,
-        PYROCLASM,
-		CRUEL_EDICT,
-		CORPSEHATCH,
-		DAY_OF_JUDGMENT,
-		DEATH_GRASP,
-		DIVINATION,
-		DRAGON_FODDER,
-		EARTHQUAKE,
-		EXHAUSTION,
-		FLAME_SLASH,
-		HARMONIZE,
-		HURRICANE,
-		INFEST,
-		KISS_OF_THE_AMESHA,
-		MARSH_CASUALTIES,
-		MARTIAL_COUP,
-		MIND_SPRING,
-		OVERRUN,
-		OVERWHELMING_STAMPEDE,
-		PULSE_OF_THE_TANGLE,
-		REANIMATE,
-		RECOVER,
-		RITE_OF_REPLICATION,
-		SAVAGE_TWISTER,
-		SOLEMN_OFFERING,
-		SIFT,
-		SIGN_IN_BLOOD,
-		SLAVE_OF_BOLAS,
-		SLEEP,
-		SOULS_MAJESTY,
-		SOULS_MIGHT,
-		SOUL_FEAST,
-		STUPOR,
-		TIME_EBB,
-		TIME_WARP,
-		TITANIC_ULTIMATUM,
-		VINDICATE,
-		ZOMBIFY,
-		GOBLIN_BUSHWHACKER,
-		GOBLIN_RUINBLASTER,
-		KAVU_TITAN,
-		LIGHTKEEPER_OF_EMERIA,		
-		SPHINX_OF_LOST_TRUTHS,
-		WOLFBRIAR_ELEMENTAL,
-		CHIMERIC_MASS,
-		ARMADILLO_CLOAK,
-		BOAR_UMBRA,
-		CLINGING_DARKNESS,
-		DRAKE_UMBRA,
-		DUST_CORONA,
-		EEL_UMBRA,
-		ELEPHANT_GUIDE,
-		EPIC_PROPORTIONS,
-		FISTS_OF_IRONWOOD,
-		FLIGHT_OF_FANCY,
-		FOLLOWED_FOOTSTEPS,
-		GALVANIC_ARC,
-		GOBLIN_WAR_PAINT,
-		GRIFFIN_GUIDE,
-		HYENA_UMBRA,
-		LIGHTNING_TALONS,
-		NARCOLEPSY,
-		PACIFISM,
-		PILLORY_OF_THE_SLEEPLESS,
-		PROTECTIVE_BUBBLE,
-		RANCOR,
-		SERRAS_EMBRACE,
-		SNAKE_UMBRA,
-		SOUL_LINK,
-		SPIDER_UMBRA,
-		TORPOR_DUST,
-		UNQUESTIONED_AUTHORITY,
-		VOLCANIC_STRENGTH,
-		WEAKNESS
-	);
-	
 	public static void setCardEvents() {
-
-		System.out.println("Setting "+CARD_EVENTS.size()+" card events...");
-		for (final MagicSpellCardEvent cardEvent : CARD_EVENTS) {
-
-			final MagicCardDefinition card=cardEvent.getCardDefinition();
-			card.setCardEvent(cardEvent);
-		}
+        Class c = CardEventDefinitions.class;
+        Field[] fields = c.getDeclaredFields();
+        int cnt = 0;
+        for (final Field field : fields) {
+            try {
+                final Object obj = field.get(null);
+                if (obj instanceof MagicSpellCardEvent) {
+                    final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
+                    final MagicCardDefinition card=cevent.getCardDefinition();
+                    card.setCardEvent(cevent);
+                    cnt++;
+                }
+            } catch (IllegalAccessException err) {
+            }
+        }
+		System.err.println("Added " + cnt + " card events");
 	}
 }
