@@ -65,7 +65,8 @@ function getValueByMC(node)
 
 //AI using Monte Carlo Tree Search
 public class MCTSAI implements MagicAI {
-    
+
+    //higher C -> more exploration less exploitation
     private static final double C = 0.3;
     private final List<Integer> simLengths = new LinkedList<Integer>();
     private final boolean LOGGING;
@@ -267,31 +268,29 @@ public class MCTSAI implements MagicAI {
         
 
     private double randomPlay(final MagicGame game) {
-        // play game until it is finished
+        // play game until it is finished or simulated 300 events
+        // empirical evidence suggest that number of events should be less than 300
+        final int MAXEVENTS = 300;
+        int events = 0;
         for (List<Object[]> choices = getNextMultiChoiceEvent(game, true);
-             choices != null && System.currentTimeMillis() - STARTTIME < MAXTIME;
+             choices != null && events < MAXEVENTS;
              choices = getNextMultiChoiceEvent(game, true)) {
             final int idx = MagicRandom.nextInt(choices.size());
             final Object[] selected = choices.get(idx);
             game.executeNextEvent(selected);
+            events++;
         }
-        
-        // game is finished or in an invalid state
-        assert (game.getMainPhaseCount() > 0) : "main phase count is zero";
-	
-        final int mainPhaseCount = 100000000;
-        final int length = Math.max(1,mainPhaseCount - game.getMainPhaseCount());
 
         if (LOGGING) {
-            simLengths.add(length);
+            simLengths.add(events);
         }
       
         if (game.getLosingPlayer() == null) {
             return 0;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return -1.0/Math.pow(length, 0.25);
+            return  events/300.0 - 1.0;
         } else {
-            return 1.0/Math.pow(length, 0.25);
+            return -events/300.0 + 1.0;
         }
     }
     
