@@ -50,8 +50,8 @@ public class MagicCardDefinition {
 		}
 	};
 	
-	public static final String RARITY_NAMES[]={"Basic","Common","Uncommon","Rare"};
-	public static final int NR_OF_RARITIES=4;
+	public static final String RARITY_NAMES[]={"Basic","Common","Uncommon","Rare","Mythic Rare"};
+	public static final int NR_OF_RARITIES=RARITY_NAMES.length;
 
 	public static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES=Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
 
@@ -187,6 +187,7 @@ public class MagicCardDefinition {
 		switch (rarity) {
 			case 2: return theme.getColor(Theme.COLOR_UNCOMMON_FOREGROUND);
 			case 3: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
+			case 4: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
 			default: return theme.getColor(Theme.COLOR_COMMON_FOREGROUND);
 		}
 	}
