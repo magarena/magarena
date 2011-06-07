@@ -185,12 +185,13 @@ public class MCTSAI implements MagicAI {
             log("min: " + minL + "  max: " + maxL + "  avg: " + (sumL / simLengths.size()));
         }
         
-        log(pinfo); 
-        final ArtificialChoiceResults selected = achoices.get(idx);
+        log(pinfo);
+
+        final ArtificialChoiceResults selected = (idx >= 0) ? achoices.get(idx) : null;
         for (final ArtificialChoiceResults achoice : achoices) {
             log((achoice == selected ? "* ":"  ") + achoice);
         }
-        
+                
         return game.map(selected.choiceResults);
     }
 
@@ -276,9 +277,9 @@ public class MCTSAI implements MagicAI {
         if (game.getLosingPlayer() == null) {
             return 0;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return  events/300.0 - 1.0;
+            return  -(1.0 - events/300.0);
         } else {
-            return -events/300.0 + 1.0;
+            return  1.0 - events/300.0;
         }
     }
     
