@@ -9,7 +9,7 @@ import magic.model.trigger.*;
 import magic.model.*;
 
 class Sphere_of_the_Suns {
-    public static final MagicTrigger SPHERE_SUN=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"") {
+    static final MagicTrigger SPHERE_SUN=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 		    return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
@@ -34,5 +34,5 @@ class Sphere_of_the_Suns {
 	    }
     };
     
-    public static final MagicManaActivation MANA=new MagicVividManaActivation(MagicManaType.ALL_TYPES);
+    static final MagicManaActivation MANA=new MagicVividManaActivation(MagicManaType.ALL_TYPES);
 }

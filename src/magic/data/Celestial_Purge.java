@@ -8,7 +8,7 @@ import magic.model.action.*;
 import magic.model.*;
 
 class Celestial_Purge {
-    public static final MagicSpellCardEvent EXILE=new MagicSpellCardEvent(null) {
+    static final MagicSpellCardEvent EXILE=new MagicSpellCardEvent() {
 
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
