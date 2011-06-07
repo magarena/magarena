@@ -115,6 +115,13 @@ public interface MagicCondition {
 		}
 	};
 
+	public static final MagicCondition METALCRAFT_CONDITION=new MagicCondition() {
+		@Override
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return source.getController().getNrOfPermanentsWithType(MagicType.Artifact)>=3;
+		}
+    };
+
 	public static final MagicCondition TWO_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
 
 		public boolean accept(final MagicGame game,final MagicSource source) {
