@@ -306,7 +306,7 @@ public class MCTSAI implements MagicAI {
 
             if (sim) {
                 //get simulation choice and execute
-                game.executeNextEvent(event.getSimulationChoiceResults(game));
+                game.executeNextEvent(event.getSimulationChoiceResult(game));
                 events++;
             } else {
                 //get possible AI choices, if more than one return list of choices
