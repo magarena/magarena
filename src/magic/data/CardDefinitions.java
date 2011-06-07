@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
@@ -133,7 +134,7 @@ public class CardDefinitions {
             Class c = Class.forName("magic.card." + cname);
             Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
-                final Object obj = field.get(null);
+                final Object obj = Modifier.isPublic(field.getModifiers()) ? field.get(null) : "";
                 if (obj instanceof MagicSpellCardEvent) {
                     final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
                     cardDefinition.setCardEvent(cevent);
@@ -151,7 +152,7 @@ public class CardDefinitions {
                 }
             }
         } catch (Exception err) {
-            //System.err.println("No companion obj for " + cname);
+            //System.err.println("No companion class for " + fname);
         }
 	}
 	
