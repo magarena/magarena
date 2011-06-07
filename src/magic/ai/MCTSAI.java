@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Collection;
+import java.util.Collections;
 
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhase;
@@ -218,9 +219,9 @@ public class MCTSAI implements MagicAI {
         MCTSGameTree curr = root;
         path.add(curr);
 
-        for (List<Object[]> choices = getNextMultiChoiceEvent(game, curr != root);
+        for (List<Object[]> choices = getNextMultiChoiceEvent(game, curr != root, false);
              choices != null;
-             choices = getNextMultiChoiceEvent(game, curr != root)) {
+             choices = getNextMultiChoiceEvent(game, curr != root, false)) {
           
             final MagicEvent event = game.getNextEvent();
             assert choices.size() > 1 : "number of choices is " + choices.size();
@@ -265,25 +266,11 @@ public class MCTSAI implements MagicAI {
         assert game.isFinished() : "game is not finished";
         return path;
     }
-        
 
     private double randomPlay(final MagicGame game) {
-        // play game until it is finished or simulated 300 events
         // empirical evidence suggest that number of events should be less than 300
-        final int MAXEVENTS = 300;
-        int events = 0;
-        for (List<Object[]> choices = getNextMultiChoiceEvent(game, true);
-             choices != null && events < MAXEVENTS;
-             choices = getNextMultiChoiceEvent(game, true)) {
-            final int idx = MagicRandom.nextInt(choices.size());
-            final Object[] selected = choices.get(idx);
-            game.executeNextEvent(selected);
-            events++;
-        }
-
-        if (LOGGING) {
-            simLengths.add(events);
-        }
+        final List<Object[]> elist = getNextMultiChoiceEvent(game, true, true);
+        final int events = (Integer)(elist.get(0)[0]);
       
         if (game.getLosingPlayer() == null) {
             return 0;
@@ -294,10 +281,14 @@ public class MCTSAI implements MagicAI {
         }
     }
     
-    private List<Object[]> getNextMultiChoiceEvent(MagicGame game, boolean fastChoices) {
+    private List<Object[]> getNextMultiChoiceEvent(MagicGame game, boolean fastChoices, boolean sim) {
         game.setFastChoices(fastChoices);
         
-        while (!game.isFinished()) {
+        final int MAXEVENTS = 300;
+        int events = 0;
+        
+        // simulate game until it is finished or simulated 300 events
+        while (!game.isFinished() && events < MAXEVENTS) {
             if (!game.hasNextEvent()) {
                 game.getPhase().executePhase(game);
                 continue;
@@ -310,23 +301,39 @@ public class MCTSAI implements MagicAI {
                 game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
                 continue;
             }
-
+            
             //event has choice
-            final List<Object[]> choices = event.getArtificialChoiceResults(game);
-            final int size = choices.size();
-            if (size == 0) {
-                //invalid game state
-                return null;
-            } else if (size == 1) {
-                game.executeNextEvent(choices.get(0));
+
+            if (sim) {
+                //get simulation choice and execute
+                game.executeNextEvent(event.getSimulationChoiceResults(game));
+                events++;
             } else {
-                //multiple choice
-                return choices;
+                //get possible AI choices, if more than one return list of choices
+                final List<Object[]> choices = event.getArtificialChoiceResults(game);
+                final int size = choices.size();
+                if (size == 0) {
+                    //invalid game state
+                    return null;
+                } else if (size == 1) {
+                    game.executeNextEvent(choices.get(0));
+                } else {
+                    //multiple choice
+                    return choices;
+                }
             }
+        }
+        
+        if (LOGGING) {
+            simLengths.add(events);
         }
 
         //game is finished
-        return null;
+        if (sim) {
+            return Collections.<Object[]>singletonList(new Object[]{events}); 
+        } else {
+            return null;
+        }
     }
 }
 
