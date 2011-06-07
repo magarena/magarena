@@ -172,13 +172,16 @@ public class MagicGame {
 	}
 	
 	public boolean canSkipSingleChoice() {
+        return GeneralConfig.getInstance().getSkipSingle();
+        /*
 		if (GeneralConfig.getInstance().getSkipSingle()) {
-			if (phase.getType()==MagicPhaseType.DeclareBlockers) {
+            if (phase.getType()==MagicPhaseType.DeclareBlockers) {
 				return (turnPlayer!=visiblePlayer||turnPlayer.getNrOfAttackers()==0); //&&stack.isEmpty();
 			}
 			return true; //stack.isEmpty();
 		}
 		return false;
+        */
 	}
 	
 	public boolean canSkipSingleManaChoice() {
