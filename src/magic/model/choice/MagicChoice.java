@@ -8,6 +8,7 @@ import java.util.List;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicRandom;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 
@@ -71,6 +72,16 @@ public abstract class MagicChoice {
 			return Collections.emptyList();
 		}
 	}
+
+	/** Gets one choice results for simulation. */
+    public Object[] getSimulationChoiceResults(
+			final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
+        final List<Object[]> choices = getArtificialChoiceResults(game, event, player, source);
+        return choices.get(MagicRandom.nextInt(choices.size()));
+    }
 	
 	/** Gets the choice results of the player. */
 	public abstract Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source);
