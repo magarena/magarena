@@ -3234,6 +3234,28 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger SPHERE_SUN=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Sphere of the Suns") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		    return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
+			    permanent.getName()+" enters the battlefield tapped with three charge counters on it.");
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+            final MagicPermanent permanent=(MagicPermanent)data[0];
+            game.doAction(new MagicTapAction(permanent,false));
+            game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,3,false));
+		}
+	
+        @Override
+    	public boolean usesStack() {
+    		return false;
+	    }
+    };
+    
     private static final MagicTrigger BLOOD_CRYPT=new MagicRavnicaLandTrigger("Blood Crypt");
 
     private static final MagicTrigger BREEDING_POOL=new MagicRavnicaLandTrigger("Breeding Pool");
@@ -3694,7 +3716,6 @@ public class TriggerDefinitions {
 
 		@Override
 		public boolean usesStack() {
-
 			return false;
 		}
     };

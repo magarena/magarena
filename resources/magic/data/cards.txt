@@ -8139,3 +8139,24 @@ value=4
 rarity=3
 type=Land
 timing=land
+
+>Spell Pierce
+image=http://magiccards.info/scans/en/zen/67.jpg
+cube=default
+value=3
+rarity=1
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=counter
+
+>Sphere of the Suns
+image=http://magiccards.info/scans/en/mbs/134.jpg
+cube=default
+value=3
+rarity=2
+type=Artifact
+converted=2
+cost={2}
+timing=tapland

@@ -112,7 +112,7 @@ ROE U
 
 
 36.3406
-NOTE:animate land, become 1/1 Blinkmoth artifact creature with flying, infect*
+NOTE:IMPL
 NAME:Inkmoth Nexus
 TEXT:
 Land
@@ -164,7 +164,7 @@ ZEN R
 
 
 29.6912
-NOTE:counter noncreature spell unless pays 2*
+NOTE:IMPL
 NAME:Spell Pierce
 TEXT:
 {U}
@@ -174,7 +174,7 @@ ZEN C
 
 
 28.498
-NOTE:checks for second creature spell this turn*
+NOTE:return from graveyeard
 NAME:Vengevine
 TEXT:
 {2}{G}{G}
@@ -219,7 +219,7 @@ ALL U, MED R
 
 
 25.1005
-NOTE:multikicker 2, charge counters*
+NOTE:mana pool
 NAME:Everflowing Chalice
 TEXT:
 {0}
@@ -252,7 +252,7 @@ M11 R
 
 
 24.1755
-NOTE:level up, grant mana ability to elves*
+NOTE:mana pool
 NAME:Joraga Treespeaker
 TEXT:
 {G}
