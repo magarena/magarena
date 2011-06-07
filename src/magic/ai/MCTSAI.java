@@ -103,7 +103,8 @@ public class MCTSAI implements MagicAI {
     public synchronized Object[] findNextEventChoiceResults(
             final MagicGame game, 
             final MagicPlayer scorePlayer) {
-        MAXTIME = (10000 / 6) * game.getArtificialLevel();
+        //ArtificialLevel = number of seconds to run MCTSAI
+        MAXTIME = 1000 * game.getArtificialLevel();
         STARTTIME = System.currentTimeMillis();
         final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         final List<Object[]> choices = getCR(game, scorePlayer);
@@ -306,8 +307,14 @@ public class MCTSAI implements MagicAI {
 
             if (sim) {
                 //get simulation choice and execute
-                game.executeNextEvent(event.getSimulationChoiceResult(game));
-                events++;
+                final Object[] choice = event.getSimulationChoiceResult(game);
+                if (choice == null) {
+                    //invalid game state
+                    return Collections.<Object[]>singletonList(new Object[]{-1}); 
+                } else {
+                    game.executeNextEvent(choice);
+                    events++;
+                }
             } else {
                 //get possible AI choices, if more than one return list of choices
                 final List<Object[]> choices = event.getArtificialChoiceResults(game);
