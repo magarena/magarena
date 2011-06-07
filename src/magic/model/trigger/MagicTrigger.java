@@ -13,8 +13,8 @@ public abstract class MagicTrigger implements MagicEventAction {
 	private static final int DEFAULT_PRIORITY=10;
 	
 	private final MagicTriggerType type;
-	private final MagicCardDefinition card;
 	private final int priority;
+	private MagicCardDefinition card;
 
 	private MagicTrigger(final MagicTriggerType type,final MagicCardDefinition card,final int priority) {
 		
@@ -37,6 +37,10 @@ public abstract class MagicTrigger implements MagicEventAction {
 		
 		this(type,(MagicCardDefinition)null,DEFAULT_PRIORITY);
 	}
+
+    public void setCardDefinition(final MagicCardDefinition card) {
+        this.card = card;
+    }
 	
 	public final MagicCardDefinition getCardDefinition() {
 		
