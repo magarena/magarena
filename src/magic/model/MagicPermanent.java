@@ -746,7 +746,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			}
 		}
 		
-		// Flying
+		// Flying and Reach
 		final long blockerFlags=getAllAbilityFlags(game);
 		final boolean blockerFlying=MagicAbility.Flying.hasAbility(blockerFlags);
 		if (blockerFlying) {
@@ -767,6 +767,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				return false;
 			}
 		}
+        if (MagicAbility.CannotBeBlockedExceptWithFlyingOrReach.hasAbility(attackerFlags)) {
+            if (!MagicAbility.Flying.hasAbility(blockerFlags) && !MagicAbility.Reach.hasAbility(blockerFlags)) {
+                return false;
+            }
+        }
 
 		// Protection
 		return !hasProtectionFrom(attackerFlags,this);
