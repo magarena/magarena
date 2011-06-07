@@ -137,7 +137,7 @@ public class CardDefinitions {
                 if (obj instanceof MagicSpellCardEvent) {
                     final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
                     cardDefinition.setCardEvent(cevent);
-                    cevent.setCard(cardDefinition);
+                    cevent.setCardDefinition(cardDefinition);
                     System.err.println("Adding spell card event to " + fname);
                 } else if (obj instanceof MagicManaActivation) {
                     final MagicManaActivation mact = (MagicManaActivation)obj;
