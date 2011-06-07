@@ -6,6 +6,9 @@ import magic.model.MagicCardDefinition;
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction {
 
 	private MagicCardDefinition card;
+    
+    public MagicSpellCardEvent() {
+	}
 
     public MagicSpellCardEvent(final String name) {
 	    card=CardDefinitions.getInstance().getCard(name);
