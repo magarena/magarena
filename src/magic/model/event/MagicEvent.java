@@ -103,8 +103,11 @@ public class MagicEvent implements MagicCopyable {
 	}
 	
 	public final List<Object[]> getArtificialChoiceResults(final MagicGame game) {
-	
 		return choice.getArtificialChoiceResults(game,this,player,source);
+	}
+	
+    public final Object[] getSimulationChoiceResults(final MagicGame game) {
+		return choice.getSimulationChoiceResults(game,this,player,source);
 	}
 
 	public final MagicTargetChoice getTargetChoice() {
