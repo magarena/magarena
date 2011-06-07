@@ -28,6 +28,7 @@ public enum MagicPermanentState {
 		SacrificeAtEndOfTurn.getMask()|
 		RemoveAtEndOfTurn.getMask()|
 		RemoveAtEndOfYourTurn.getMask()|
+		ReturnToOwnerAtEndOfTurn.getMask()|
 		ExcludeManaSource.getMask()|
 		ExcludeFromCombat.getMask()|
 		Kicked.getMask();

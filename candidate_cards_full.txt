@@ -435,7 +435,7 @@ CON R, DDG M
 
 
 19.3204
-NOTE:battle cry, can't be blocked except by creatures with flying or reach*
+NOTE:IMPL
 NAME:Signal Pest
 TEXT:
 {1}
@@ -524,7 +524,7 @@ EVT U, SOM U
 
 
 17.7791
-NOTE:gain control until end of turn, put +1/+1, gain haste*
+NOTE:IMPL
 NAME:Mark of Mutiny
 TEXT:
 {2}{R}

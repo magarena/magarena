@@ -8207,3 +8207,15 @@ power=0
 toughness=1
 ability=battle cry,can't be blocked except by creatures with flying or reach
 timing=smain
+
+>Mark of Mutiny
+image=http://magiccards.info/scans/en/zen/137.jpg
+cube=default
+value=4
+removal=5
+rarity=2
+type=Sorcery
+color=r
+converted=3
+cost={2}{R}
+timing=removal
