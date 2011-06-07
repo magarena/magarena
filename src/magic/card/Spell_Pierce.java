@@ -1,4 +1,4 @@
-package magic.data;
+package magic.card;
 
 import magic.model.event.*;
 import magic.model.stack.*;
@@ -7,8 +7,8 @@ import magic.model.target.*;
 import magic.model.action.*;
 import magic.model.*;
 
-class Spell_Pierce {
-    static final MagicSpellCardEvent SPELL_PIERCE=new MagicSpellCardEvent() {
+public class Spell_Pierce {
+    public static final MagicSpellCardEvent SPELL_PIERCE=new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			

@@ -130,7 +130,7 @@ public class CardDefinitions {
         final String fname = cardDefinition.getFullName();
         final String cname = fname.replace(' ', '_');
         try {
-            Class c = Class.forName("magic.data." + cname);
+            Class c = Class.forName("magic.card." + cname);
             Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
                 final Object obj = field.get(null);

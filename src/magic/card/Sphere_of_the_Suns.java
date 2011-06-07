@@ -1,4 +1,4 @@
-package magic.data;
+package magic.card;
 
 import magic.model.event.*;
 import magic.model.stack.*;
@@ -8,8 +8,8 @@ import magic.model.action.*;
 import magic.model.trigger.*;
 import magic.model.*;
 
-class Sphere_of_the_Suns {
-    static final MagicTrigger SPHERE_SUN=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+public class Sphere_of_the_Suns {
+    public static final MagicTrigger SPHERE_SUN=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 		    return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
@@ -34,5 +34,5 @@ class Sphere_of_the_Suns {
 	    }
     };
     
-    static final MagicManaActivation MANA=new MagicVividManaActivation(MagicManaType.ALL_TYPES);
+    public static final MagicManaActivation MANA=new MagicVividManaActivation(MagicManaType.ALL_TYPES);
 }
