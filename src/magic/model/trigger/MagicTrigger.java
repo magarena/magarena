@@ -43,7 +43,6 @@ public abstract class MagicTrigger implements MagicEventAction {
     }
 	
 	public final MagicCardDefinition getCardDefinition() {
-		
 		return card;
 	}
 	
