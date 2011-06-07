@@ -12,6 +12,7 @@ import magic.model.MagicPermanentList;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicRandom;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 
@@ -127,6 +128,34 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 		game.createUndoPoint();
 		return new Object[]{result};
 	}
+	
+	@Override
+    public Object[] getSimulationChoiceResult(
+			final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
+		
+        final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
+		final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,game.getOpponent(player),player);
+		builder.buildBlockers();
+
+		if (!builder.buildBlockableAttackers()&&game.canSkipDeclareBlockersSingleChoice()) {
+			return new Object[]{result};
+		}
+			
+        final Set<MagicPermanent> blockers = builder.getCandidateBlockers();
+        for (final MagicPermanent blocker : blockers) {
+	        MagicPermanent[] attackers = builder.getBlockableAttackers(blocker).toArray(new MagicPermanent[]{});
+            MagicPermanent attacker = attackers[MagicRandom.nextInt(attackers.length)];
+            attacker.addBlockingCreature(blocker);
+            blocker.setState(MagicPermanentState.Blocking);
+            blocker.setBlockedCreature(attacker);
+        }
+				
+        buildResult(builder,result);
+		return new Object[]{result};
+    }
 
 	public static MagicDeclareBlockersChoice getInstance() {
 		

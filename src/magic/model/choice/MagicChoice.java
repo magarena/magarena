@@ -74,7 +74,7 @@ public abstract class MagicChoice {
 	}
 
 	/** Gets one choice results for simulation. */
-    public Object[] getSimulationChoiceResults(
+    public Object[] getSimulationChoiceResult(
 			final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,
