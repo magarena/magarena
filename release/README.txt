@@ -31,15 +31,31 @@ Thanks to
   LSK and Kuno for contributing custom decks
   pedro1973 for creating new themes  (http://www.slightlymagic.net/forum/viewforum.php?f=89)
   mtgrares for the publicity
+  Goblin Hero for providing the images for some of the symbols
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
 
 Release 1.15 (June QQQ, 2011)
 ============
-- 601 cards in default cube
-- 901 cards in all cube (includes those in default)
+- 60X cards in default cube
+- 90X cards in all cube (includes those in default)
 
+- added Tectonic Edge
+- added Flashfreeze
+- added Pyroclasm
+- added Tumble Magnet
+- added Inkmoth Nexus
+- added Spell Pierce
+- added Sphere of the Suns
+- added Celestial Purge
+- reduce the number of passes needed if you have the skip single option
+  preference enabled (item on the stack is shown for 1s before resolving)
+- changed default height and width of the application window to be 1024x600
+- use symbols drawn by Goblin Hero
+- fixed Vines of Vastwood so that if you target an opponent's creature, the
+  opponent cannot target the creature (previously Vines of Vastwood prevents
+  the opponent of the controller of the creature from targetting it)
 
 
 Release 1.14 (May 28, 2011)
