@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.lang.reflect.Field;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
@@ -15,7 +16,8 @@ import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicStaticType;
 import magic.model.MagicType;
-import magic.model.event.MagicTiming;
+import magic.model.event.*;
+import magic.model.trigger.*;
 
 /**
  * Load card definitions from cards.txt and cards2.txt
@@ -120,10 +122,37 @@ public class CardDefinitions {
 	}
 	
 	public void addDefinition(final MagicCardDefinition cardDefinition) {
-
 		cardDefinition.setIndex(cards.size());
 		cards.add(cardDefinition);
 		cardsMap.put(cardDefinition.getFullName(),cardDefinition);
+        
+        //link to companion object containing static variables
+        final String fname = cardDefinition.getFullName();
+        final String cname = fname.replace(' ', '_');
+        try {
+            Class c = Class.forName("magic.data." + cname);
+            Field[] fields = c.getDeclaredFields();
+            for (final Field field : fields) {
+                final Object obj = field.get(null);
+                if (obj instanceof MagicSpellCardEvent) {
+                    final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
+                    cardDefinition.setCardEvent(cevent);
+                    cevent.setCard(cardDefinition);
+                    System.err.println("Adding spell card event to " + fname);
+                } else if (obj instanceof MagicManaActivation) {
+                    final MagicManaActivation mact = (MagicManaActivation)obj;
+            		cardDefinition.addManaActivation(mact);
+                    System.err.println("Adding mana activation to " + fname);
+                } else if (obj instanceof MagicTrigger) {
+                    final MagicTrigger mtrig = (MagicTrigger)obj;
+            		cardDefinition.addTrigger(mtrig);
+                    mtrig.setCardDefinition(cardDefinition);
+                    System.err.println("Adding trigger to " + fname);
+                }
+            }
+        } catch (Exception err) {
+            //System.err.println("No companion obj for " + cname);
+        }
 	}
 	
 	public void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
@@ -142,7 +171,6 @@ public class CardDefinitions {
 		MagicCardDefinition cardDefinition=null;
 		String line;
 		while ((line=reader.readLine())!=null) {
-
 			line=line.trim();
 			int pos=line.indexOf('>');
 			if (pos==0) {
@@ -159,6 +187,7 @@ public class CardDefinitions {
 				}
 			}
 		}
+
 		checkCard(cardDefinition);
 		reader.close();
 	}
