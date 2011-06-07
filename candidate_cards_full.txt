@@ -348,7 +348,7 @@ CON U, M10 U, M11 U
 
 
 21.006
-NOTE:metalcraft, tap to add one mana of any color
+NOTE:IMPL
 NAME:Mox Opal
 TEXT:
 {0}
@@ -380,7 +380,7 @@ SOM M
 
 
 20.0635
-NOTE:counter noncreature spell*
+NOTE:IMPL
 NAME:Negate
 TEXT:
 {1}{U}

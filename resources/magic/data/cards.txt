@@ -8172,3 +8172,38 @@ color=w
 converted=2
 cost={1}{W}
 timing=removal
+
+>Mox Opal
+image=http://magiccards.info/scans/en/som/179.jpg
+cube=default
+value=5
+rarity=4
+type=Legendary,Artifact
+converted=0
+cost={0}
+timing=artifact
+
+>Negate
+image=http://magiccards.info/scans/en/dpa/13.jpg
+cube=default
+value=3
+rarity=1
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
+
+>Signal Pest
+image=http://magiccards.info/scans/en/mbs/131.jpg
+cube=default
+value=2
+rarity=2
+type=Artifact,Creature
+subtype=Pest
+converted=1
+cost={1}
+power=0
+toughness=1
+ability=battle cry,can't be blocked except by creatures with flying or reach
+timing=smain
