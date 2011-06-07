@@ -18,6 +18,7 @@ public enum MagicPermanentState {
 	ExcludeFromCombat("exclude from combat",null,13),
 	Kicked("kicked",null,14),
 	Destroyed("destroyed",null,15),
+	ReturnToOwnerAtEndOfTurn("return to owner at end of turn",null,16),
 	;
 
 	public static final int CLEANUP_MASK=
@@ -37,7 +38,6 @@ public enum MagicPermanentState {
 	private final int mask;
 	
 	private MagicPermanentState(final String description,final String text,final int index) {
-		
 		this.description=description;
 		this.text=text;
 		this.index=index;
@@ -45,27 +45,22 @@ public enum MagicPermanentState {
 	}
 	
 	public String getDescription() {
-		
 		return description;
 	}
 	
 	public String getText() {
-		
 		return text;
 	}
 	
 	public int getIndex() {
-		
 		return index;
 	}
 	
 	public int getMask() {
-		
 		return mask;
 	}
 	
 	public boolean hasState(final int flags) {
-		
 		return (flags&mask)!=0;
 	}
 }

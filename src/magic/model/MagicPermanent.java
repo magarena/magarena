@@ -16,6 +16,7 @@ import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
+import magic.model.action.MagicGainControlAction;
 import magic.model.event.MagicActivation;
 import magic.model.target.MagicTarget;
 import magic.model.variable.MagicLocalVariable;
@@ -30,6 +31,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private MagicCard card;
 	private MagicCardDefinition cardDefinition;
 	private MagicPlayer controller;
+    private MagicPlayer owner;
 	private MagicLocalVariableList localVariables;
 	private MagicPermanent equippedCreature=null;
 	private MagicPermanentSet equipmentPermanents;
@@ -57,11 +59,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private int cachedColorFlags=0;
 	
 	public MagicPermanent(final long id,final MagicCard card,final MagicPlayer controller) {
-		
 		this.id=id;
 		this.card=card;
 		this.cardDefinition=card.getCardDefinition();
 		this.controller=controller;
+		this.owner=controller;
 		localVariables=new MagicLocalVariableList(cardDefinition.getLocalVariables());
 		equipmentPermanents=new MagicPermanentSet();
 		auraPermanents=new MagicPermanentSet();
@@ -87,6 +89,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		cardDefinition=sourcePermanent.cardDefinition; // Must be before the rest for compareTo!
 		card=copyMap.copy(sourcePermanent.card);
 		controller=copyMap.copy(sourcePermanent.controller);
+		owner=copyMap.copy(sourcePermanent.owner);
 		stateFlags=sourcePermanent.stateFlags;
 		turnColorFlags=sourcePermanent.turnColorFlags;
 		turnAbilityFlags=sourcePermanent.turnAbilityFlags;
@@ -965,7 +968,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 
 	public boolean endOfTurn(final MagicGame game) {
-		
 		if (MagicPermanentState.RemoveAtEndOfTurn.hasState(stateFlags)) {
 			game.logAppendMessage(controller,"Exile "+this.getName()+" (end of turn).");
 			game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
@@ -978,7 +980,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			game.logAppendMessage(controller,"Sacrifice "+this.getName()+" (end of turn).");
 			game.doAction(new MagicSacrificeAction(this));
 			return true;
-		}
+		} else if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
+			game.logAppendMessage(controller,"Return "+this.getName()+" to its owner (end of turn).");
+	        clearState(MagicPermanentState.ReturnToOwnerAtEndOfTurn);
+            game.doAction(new MagicGainControlAction(owner,this));
+			return true;
+        }
 		return false;
 	}
 	
