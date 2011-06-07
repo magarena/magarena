@@ -138,12 +138,23 @@ public interface MagicTargetFilter {
 	public static final MagicTargetFilter TARGET_PERMANENT=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
-			return true;
+            return true;
 		}
 
 		public boolean acceptType(final MagicTargetType targetType) {
 			
+			return targetType==MagicTargetType.Permanent;
+		}
+	};
+	
+    public static final MagicTargetFilter TARGET_BLACK_RED_PERMANENT=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent targetPermanent=(MagicPermanent)target;
+			final int colors = targetPermanent.getColorFlags();
+            return MagicColor.Black.hasColor(colors)||MagicColor.Red.hasColor(colors);
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType==MagicTargetType.Permanent;
 		}
 	};

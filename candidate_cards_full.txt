@@ -281,7 +281,7 @@ M11 R
 
 
 23.6007
-NOTE:remove charge counter, get one mana of any color
+NOTE:IMPL
 NAME:Sphere of the Suns
 TEXT:
 {2}
@@ -338,7 +338,7 @@ MBS M
 
 
 21.2851
-NOTE:exile black or red permanent*
+NOTE:IMPL
 NAME:Celestial Purge
 TEXT:
 {1}{W}

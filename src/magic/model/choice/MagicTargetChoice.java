@@ -47,6 +47,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,true,MagicTargetHint.None,"target permanent you control");	
 	public static final MagicTargetChoice NEG_TARGET_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.Negative,"target permanent");
+	public static final MagicTargetChoice NEG_TARGET_BLACK_RED_PERMANENT=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_BLACK_RED_PERMANENT,true,MagicTargetHint.Negative,"target black or red permanent");
 	public static final MagicTargetChoice TARGET_NONBASIC_LAND=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.None,"target non basic land");
 	public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
