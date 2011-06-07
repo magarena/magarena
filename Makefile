@@ -18,8 +18,8 @@ newcards/existing_full.txt: newcards/existing.txt data/mtg-data.txt
 candidate_cards_full.txt: scripts/extract_candidates.awk candidate_cards.tsv data/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
-%.err: $(MAG)
-	SGE_TASK_ID=$* exp/show_cmd.sh 
+%.out: $(MAG)
+	SGE_TASK_ID=$* exp/array_mag.sh
 
 M1.%:
 	-rm -rf Magarena-1.$*
