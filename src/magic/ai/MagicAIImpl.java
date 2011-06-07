@@ -4,7 +4,8 @@ public enum MagicAIImpl {
     DEFAULT("default", new MiniMaxAlphaBetaAI()), 
     MMAB("minimax", new MiniMaxAlphaBetaAI()), 
     MCTS("monte carlo", new MCTSAI()),
-    MCTSD("monte carlo", new MCTSAI(true)),
+    MCTSNC("monte carlo", new MCTSAI(false, false)),
+    MCTSD("monte carlo", new MCTSAI(true, true)),
     VEGAS("vegas", new VegasAI()),
     RND("random", new RandomAI()),
     ;

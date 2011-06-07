@@ -71,15 +71,17 @@ public class MCTSAI implements MagicAI {
     private static final double C = 0.3;
     private final List<Integer> simLengths = new LinkedList<Integer>();
     private final boolean LOGGING;
+	private final boolean CHEAT;
     private int MAXTIME;
     private long STARTTIME;
 
     public MCTSAI() {
-        this(false);
+        this(false, true);
     }
 
-    public MCTSAI(boolean printLog) {
+    public MCTSAI(boolean printLog, boolean cheat) {
         LOGGING = printLog;
+        CHEAT = cheat;
     }
 
     private void log(final String message) {
@@ -137,7 +139,9 @@ public class MCTSAI implements MagicAI {
         for (int i = 1; System.currentTimeMillis() - STARTTIME < MAXTIME; i++) {
             //create a new MagicGame for simulation
             final MagicGame start = new MagicGame(game, scorePlayer);
-            //start.setKnownCards();
+            if (!CHEAT) {
+                start.setKnownCards();
+            }
             
             //pass in a clone of the state, genNewTreeNode grows the tree by one node
             //and returns the path from the root to the new node
