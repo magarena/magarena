@@ -51,7 +51,6 @@ public class ManaActivationDefinitions {
 		// Artifacts.
 		addManaActivation("Lotus Petal",new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
 		addManaActivation("Mind Stone",new MagicTapManaActivation(new MagicManaType[]{MagicManaType.Colorless},0));
-        addManaActivation("Sphere of the Suns", new MagicVividManaActivation(MagicManaType.ALL_TYPES));
 
         // Land generating colorless mana
         addManaActivation("Tectonic Edge",new MagicTapManaActivation(new MagicManaType[]{MagicManaType.Colorless},0));
