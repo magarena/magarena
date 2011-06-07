@@ -80,7 +80,11 @@ public abstract class MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
         final List<Object[]> choices = getArtificialChoiceResults(game, event, player, source);
-        return choices.get(MagicRandom.nextInt(choices.size()));
+        if (choices.size() == 0) {
+            return null;
+        } else {
+            return choices.get(MagicRandom.nextInt(choices.size()));
+        }
     }
 	
 	/** Gets the choice results of the player. */
