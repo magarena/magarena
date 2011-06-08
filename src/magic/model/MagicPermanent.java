@@ -31,7 +31,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private MagicCard card;
 	private MagicCardDefinition cardDefinition;
 	private MagicPlayer controller;
-    private MagicPlayer owner;
 	private MagicLocalVariableList localVariables;
 	private MagicPermanent equippedCreature=null;
 	private MagicPermanentSet equipmentPermanents;
@@ -63,7 +62,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		this.card=card;
 		this.cardDefinition=card.getCardDefinition();
 		this.controller=controller;
-		this.owner=controller;
 		localVariables=new MagicLocalVariableList(cardDefinition.getLocalVariables());
 		equipmentPermanents=new MagicPermanentSet();
 		auraPermanents=new MagicPermanentSet();
@@ -89,7 +87,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		cardDefinition=sourcePermanent.cardDefinition; // Must be before the rest for compareTo!
 		card=copyMap.copy(sourcePermanent.card);
 		controller=copyMap.copy(sourcePermanent.controller);
-		owner=copyMap.copy(sourcePermanent.owner);
 		stateFlags=sourcePermanent.stateFlags;
 		turnColorFlags=sourcePermanent.turnColorFlags;
 		turnAbilityFlags=sourcePermanent.turnAbilityFlags;
@@ -983,7 +980,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		} else if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
 			game.logAppendMessage(controller,"Return "+this.getName()+" to its owner (end of turn).");
 	        clearState(MagicPermanentState.ReturnToOwnerAtEndOfTurn);
-            game.doAction(new MagicGainControlAction(owner,this));
+            game.doAction(new MagicGainControlAction(card.getOwner(),this));
 			return true;
         }
 		return false;
