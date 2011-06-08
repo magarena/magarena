@@ -44,7 +44,7 @@ public class MagicCleanupPhase extends MagicPhase {
 			game.doAction(new MagicPayDelayedCostsAction(turnPlayer));
 		}
 		game.setTurn(game.getTurn()+1);
-		game.setLandPlayed(false);
+		game.resetLandPlayed();
 	}
 	
 	@Override

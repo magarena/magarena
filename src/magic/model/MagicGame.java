@@ -64,7 +64,7 @@ public class MagicGame {
 	private int turn=1;
 	private int startTurn=0;
 	private int mainPhaseCount=100000000;
-	private boolean landPlayed=false;
+	private int landPlayed=0;
 	private boolean priorityPassed=false;
 	private int priorityPassedCount=0;
     private boolean passPriority=false;
@@ -657,17 +657,27 @@ public class MagicGame {
 	
 	public boolean canPlayLand(final MagicPlayer controller) {
 		
-		return !landPlayed&&canPlaySorcery(controller);
+		return landPlayed < 1 && canPlaySorcery(controller);
 	}
 
-	public boolean isLandPlayed() {
-		
-		return landPlayed;
+    public int getLandPlayed() {
+        return landPlayed;
+    }
+	
+	public void incLandPlayed() {
+		this.landPlayed++;
 	}
 	
-	public void setLandPlayed(final boolean landPlayed) {
+    public void decLandPlayed() {
+		this.landPlayed--;
+	}
+    
+    public void resetLandPlayed() {
+		this.landPlayed = 0;
+	}
 
-		this.landPlayed=landPlayed;
+    public void setLandPlayed(final int lp) {
+		this.landPlayed = lp;
 	}
 			
 	public MagicStack getStack() {

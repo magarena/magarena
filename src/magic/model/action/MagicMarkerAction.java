@@ -15,7 +15,7 @@ public class MagicMarkerAction extends MagicAction {
 	private int oldTurn;
 	private int oldMainPhaseCount;
 	private int oldScore;
-	private boolean oldLandPlayed;
+	private int oldLandPlayed;
 	private boolean oldPriorityPassed;
 	private int oldPriorityPassedCount;
 	private boolean oldStateCheckRequired;
@@ -38,7 +38,7 @@ public class MagicMarkerAction extends MagicAction {
 		oldTurn=game.getTurn();
 		oldMainPhaseCount=game.getMainPhaseCount();
 		oldScore=game.getScore();
-		oldLandPlayed=game.isLandPlayed();
+		oldLandPlayed=game.getLandPlayed();
 		oldPriorityPassed=game.getPriorityPassed();
 		oldPriorityPassedCount=game.getPriorityPassedCount();
 		oldStateCheckRequired=game.getStateCheckRequired();
