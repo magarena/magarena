@@ -2,18 +2,16 @@ package magic.ai;
 
 public class ArtificialChoiceResults {
 	
-	public final Object choiceResults[];
+    public final Object choiceResults[];
 	public ArtificialScore aiScore=ArtificialScore.INVALID_SCORE;
 	public int worker=-1;
 	public int gameCount=1;
 
 	public ArtificialChoiceResults(final Object choiceResults[]) {
-		
 		this.choiceResults=choiceResults;
 	}
 	
 	public String toString() {
-
 		final StringBuffer buffer=new StringBuffer();
 		buffer.append("[").append(worker).append('/').append(gameCount).append('/').append(aiScore).append("]");
 		if (choiceResults!=null) {
