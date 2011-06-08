@@ -587,7 +587,7 @@ ICE C, 5ED C, MMQ C, BTD C, ME2 C
 
 
 16.6633
-NOTE:protection from red, cast a red spell gain 1 life*
+NOTE:IMPL
 NAME:Kor Firewalker
 TEXT:
 {W}{W}
