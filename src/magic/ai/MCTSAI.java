@@ -160,17 +160,18 @@ public class MCTSAI implements MagicAI {
         logc('\n');
 
         //select the best choice (child that has the highest secure score)
-        int maxV = -1;
-        int maxS = -1;
-        int idx = -1;
+        final MCTSGameTree first = root.first();
+        int maxV = first.getNumSim();
+        int bestC = first.getChoice();
         final List<ArtificialChoiceResults> achoices = getACR(choices);
         for (MCTSGameTree node : root) {
             achoices.get(node.getChoice()).worker = (int)(node.getV() * 100);
             achoices.get(node.getChoice()).gameCount = node.getNumSim();
-            if (node.getNumSim() > maxV) { 
-                maxV = node.getNumSim();
-                maxS = node.getEvalScore();
-                idx = node.getChoice();
+            final int V = node.getNumSim();
+            final int C = node.getChoice();
+            if (V > maxV) { 
+                maxV = V;
+                bestC = C;
             }
         }
         
@@ -191,7 +192,7 @@ public class MCTSAI implements MagicAI {
         
         log(pinfo);
 
-        final ArtificialChoiceResults selected = (idx >= 0) ? achoices.get(idx) : null;
+        final ArtificialChoiceResults selected = (bestC >= 0) ? achoices.get(bestC) : null;
         for (final ArtificialChoiceResults achoice : achoices) {
             log((achoice == selected ? "* ":"  ") + achoice);
         }
