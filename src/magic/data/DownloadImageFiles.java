@@ -23,7 +23,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 		try {
 			loadDownloadImageFiles(filename);
 		} catch (final Exception ex) {
-            System.err.println("ERROR during DownloadImageFiles");
+            System.err.println("ERROR! unable to download images");
         }
 	}	
 	

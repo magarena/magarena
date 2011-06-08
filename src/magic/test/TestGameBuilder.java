@@ -106,7 +106,7 @@ public class TestGameBuilder {
             TestGameBuilder gb = (TestGameBuilder)Class.forName("magic.test." + id).newInstance();
             game = gb.getGame();
         } catch (final Exception ex) {
-            System.err.println("ERROR: unable to build game " + id);
+            System.err.println("ERROR! unable to build game " + id);
             System.err.println(ex.getMessage());
             ex.printStackTrace();
             System.exit(1); 

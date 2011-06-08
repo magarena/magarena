@@ -308,7 +308,7 @@ public class GeneralConfig {
 			properties.store(new FileOutputStream(getConfigFile()),"General configuration");
             System.err.println("Saved general config");
 		} catch (final IOException ex) {
-            System.err.println("ERROR: unable to save general config");
+            System.err.println("ERROR! unable to save general config");
         }		
 	}
 

@@ -139,7 +139,7 @@ public class CustomTheme extends AbstractTheme {
 				parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
 			}						
 		} catch (final IOException ex) {
-            System.err.println("ERROR: unable to load theme");
+            System.err.println("ERROR! unable to load theme");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
 		} finally {

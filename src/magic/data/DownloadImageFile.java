@@ -38,7 +38,7 @@ public class DownloadImageFile {
 			inputStream.close();
 			outputStream.close();
 		} catch (final IOException ex) {
-            System.err.println("ERROR: unable to download file");
+            System.err.println("ERROR! unable to download file");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
 			file.delete();

@@ -97,7 +97,7 @@ public class DeckUtils {
 			}			
 			writer.close();
 		} catch (final IOException ex) {
-            System.err.println("ERROR: unable to save deck");
+            System.err.println("ERROR! unable to save deck");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
         }
@@ -139,7 +139,7 @@ public class DeckUtils {
 								}
 							}
 						} catch (final Exception ex) {
-                            System.err.println("ERROR: unable to load line " + line);
+                            System.err.println("ERROR! unable to load line " + line);
                             System.err.println(ex.getMessage());
                             ex.printStackTrace();
                         }
@@ -170,7 +170,7 @@ public class DeckUtils {
 			player.setProfile(new MagicPlayerProfile(colorText.toString()));
 			player.setDeck(deck);			
 		} catch (final IOException ex) {
-            System.err.println("ERROR: unable to load deck " + filename);
+            System.err.println("ERROR! unable to load deck " + filename);
             System.err.println(ex.getMessage());
             ex.printStackTrace();
         }

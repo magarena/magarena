@@ -166,7 +166,7 @@ public class IconImages {
 			inputStream.close();
 			return image;
 		} catch (final Exception ex) {
-            System.err.println("ERROR: unable to load icon " + name);
+            System.err.println("ERROR! unable to load icon " + name);
             System.err.println(ex.getMessage());
             ex.printStackTrace();
 			return null;
@@ -180,7 +180,7 @@ public class IconImages {
         try {
             icon = new ImageIcon(image);
         } catch (Error err) {
-            System.err.println("ERROR: unable to load icon " + name);
+            System.err.println("ERROR! unable to load icon " + name);
             System.err.println(err.getMessage());
             err.printStackTrace();
         }
@@ -219,7 +219,7 @@ public class IconImages {
                 final BufferedImage img = ImageIO.read(iconFile);
                 imgico.setImage(img);
             } catch (final IOException ex) {
-                System.err.println("ERROR: unable to load icon " + name);
+                System.err.println("ERROR! unable to load icon " + name);
                 System.err.println(ex.getMessage());
                 ex.printStackTrace();
             }
