@@ -390,7 +390,7 @@ MOR C, M10 C, M11 C
 
 
 20.0435
-NOTE:may play additional land this turn*
+NOTE:IMPL
 NAME:Explore
 TEXT:
 {1}{G}
@@ -411,7 +411,7 @@ SOM R
 
 
 19.5866
-NOTE:give green for each creature with defender*
+NOTE:mana pool
 NAME:Overgrown Battlement
 TEXT:
 {1}{G}

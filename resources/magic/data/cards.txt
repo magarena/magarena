@@ -8219,3 +8219,14 @@ color=r
 converted=3
 cost={2}{R}
 timing=removal
+
+>Explore
+image=http://magiccards.info/scans/en/wwk/99.jpg
+cube=default
+value=3
+rarity=1
+type=Sorcery
+color=g
+converted=2
+cost={1}{G}
+timing=main

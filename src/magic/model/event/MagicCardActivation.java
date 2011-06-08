@@ -49,7 +49,7 @@ public class MagicCardActivation extends MagicActivation {
 
 		final MagicCard card=(MagicCard)data[0];
 		if (card.getCardDefinition().isLand()) {
-			game.setLandPlayed(true);
+			game.incLandPlayed();
 		}
 		game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
 		if (card.getCardDefinition().usesStack()) {
