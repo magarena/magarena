@@ -247,7 +247,7 @@ public class MCTSAI implements MagicAI {
                 MCTSGameTree child = curr.first();
                 for (MCTSGameTree node : curr) {
                     if (node.getChoice() >= choices.size()) {
-                        log("MCTS: INVALID NODE");
+                        log("ERROR! MCTS: INVALID NODE");
                         continue;
                     }
 
