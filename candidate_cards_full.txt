@@ -599,7 +599,7 @@ WWK U
 
 
 16.6325
-NOTE:destory target artifact or enchantment, its controller gain 4 life*
+NOTE:IMPL
 NAME:Nature's Claim
 TEXT:
 {G}

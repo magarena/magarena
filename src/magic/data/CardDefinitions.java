@@ -129,7 +129,7 @@ public class CardDefinitions {
         
         //link to companion object containing static variables
         final String fname = cardDefinition.getFullName();
-        final String cname = fname.replace(' ', '_');
+        final String cname = fname.replace(' ', '_').replace('\'','_');
         try {
             Class c = Class.forName("magic.card." + cname);
             Field[] fields = c.getDeclaredFields();

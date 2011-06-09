@@ -8244,3 +8244,15 @@ cost={W}{W}
 power=2
 toughness=2
 timing=fmain
+
+>Nature's Claim
+image=http://magiccards.info/scans/en/wwk/108.jpg
+cube=default
+value=2
+removal=1
+rarity=1
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=removal
