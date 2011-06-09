@@ -213,9 +213,8 @@ public class MagicTournament {
 	private void buildDecks() {
 		
 		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(configuration.getCube());
-		final DeckGenerator generator=new DeckGenerator(cubeDefinition);
 		for (final MagicPlayerDefinition player : playerDefinitions) {
-
+		    final DeckGenerator generator=new DeckGenerator(cubeDefinition);
 			if (player.getProfile().getNrOfColors()==0) {
 				DeckUtils.loadRandomDeck(player);
 			} else {
