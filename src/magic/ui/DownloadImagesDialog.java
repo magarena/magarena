@@ -25,7 +25,6 @@ import magic.data.DownloadImageFiles;
 import magic.data.IconImages;
 
 public class DownloadImagesDialog extends JDialog implements Runnable,ActionListener {
-
 	private static final long serialVersionUID = 1L;
 
 	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
@@ -36,10 +35,12 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private final JTextField portTextField;
 	private final JProgressBar progressBar;
 	private final JLabel downloadLabel;
+	private final JLabel downloadProgressLabel;
 	private final JButton okButton;
 	private final JButton cancelButton;
+	private Thread downloader=null;
 	private Proxy proxy=null;
-	
+	long startDownload ;
 	public DownloadImagesDialog(final MagicFrame frame) {
 
 		super(frame,true);
@@ -84,13 +85,16 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		progressBar.setBounds(10,30,220,25);
 		downloadLabel=new JLabel();
 		downloadLabel.setBounds(10,60,220,25);
-		
+		downloadProgressLabel = new JLabel();
+		downloadProgressLabel.setBounds(10,80,220,25);
+		downloadProgressLabel.setText("");
 		final JPanel progressPanel=new JPanel();
 		progressPanel.setBorder(BorderFactory.createTitledBorder("Progress"));
-		progressPanel.setBounds(25,210,240,100);
+		progressPanel.setBounds(25,200,240,120);
 		progressPanel.setLayout(null);
 		progressPanel.add(progressBar);
 		progressPanel.add(downloadLabel);
+		progressPanel.add(downloadProgressLabel);
 		downloadPanel.add(progressPanel);
 
 		okButton=new JButton("OK");
@@ -133,15 +137,28 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		}		
 	}
 
+	/*
+	 * Checks if the thread is still uninterrupted. If it is, sleep  (not sure if return would be better). If not continue and update the labels, then repaint.
+	 */
 	@Override
-	public void run() {
-		
+	public void run() {	
+		if(downloader==null){
+			try{
+			Thread.sleep(1000);
+			}catch(InterruptedException ex){
+				System.out.println("RunningThread InterruptedException");
+				System.out.println("running time in millis: "
+						+ (System.currentTimeMillis() - startDownload));
+				Thread.currentThread().interrupt();
+
+			}
+		}else{
 		progressBar.setMinimum(0);
 		progressBar.setMaximum(files.size());
 		
 		int count=0;
 		for (final DownloadImageFile file : files) {
-
+			downloadProgressLabel.setText((count+1)+"/"+(files.size()+1));
 			downloadLabel.setText(file.getFilename());
 			file.download(proxy);
 			progressBar.setValue(++count);
@@ -149,9 +166,10 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		
 		dispose();
         IconImages.reloadSymbols();
+		}
 		//System.exit(0);
 	}
-
+	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
 
@@ -175,9 +193,23 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 			addressTextField.setEnabled(false);
 			portTextField.setEnabled(false);
 			okButton.setEnabled(false);
-			cancelButton.setEnabled(false);
-			new Thread(this).start();	
+			//cancelButton.setEnabled(false);
+			startDownload = System.currentTimeMillis();
+			downloader = new Thread(this);
+			downloader.start();	
 		} else if (source==cancelButton) {
+			if(downloader!=null){
+				try{
+				Thread tmpThread = downloader;
+				downloader = null;
+					if(tmpThread!=null){
+						tmpThread.interrupt();
+					}
+				}
+				catch(Exception ex) {
+					System.out.println(ex);
+				}
+			}
 			dispose();
 		} else if (source==proxyComboBox) {
 			updateProxy();
