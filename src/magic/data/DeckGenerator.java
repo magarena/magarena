@@ -12,33 +12,37 @@ import magic.model.MagicRandom;
 
 public class DeckGenerator {
 	
-	private final List<MagicCardDefinition> spellCards;
-	private final List<MagicCardDefinition> landCards;
+	private final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
+	private final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
+    private final MagicCubeDefinition cubeDefinition;
 	
 	public DeckGenerator(final MagicCubeDefinition cubeDefinition) {
-				
-		spellCards=new ArrayList<MagicCardDefinition>();
-		for (int rarity=1;rarity<=3;rarity++) {
-			
+        this.cubeDefinition = cubeDefinition;
+        genSpells();
+        genLands();
+	}
+
+    private void genSpells() {
+		spellCards.clear();
+		for (int rarity=1;rarity<=4;rarity++) {
 			for (final MagicCardDefinition card : CardDefinitions.getInstance().getSpellCards()) {
-				
 				if (card.getRarity()<=rarity&&cubeDefinition.containsCard(card)) {
 					spellCards.add(card);
 				}
 			}
 		}
-		
-		landCards=new ArrayList<MagicCardDefinition>();
-		for (int count=4;count>0;count--) {
-			
-			for (final MagicCardDefinition card : CardDefinitions.getInstance().getLandCards()) {
+    }
 
-				if (cubeDefinition.containsCard(card)) {
-					landCards.add(card);
-				}
-			}			
-		}
-	}
+    private void genLands() {
+		landCards.clear();
+        for (final MagicCardDefinition card : CardDefinitions.getInstance().getLandCards()) {
+            if (cubeDefinition.containsCard(card)) {
+                for (int count=4;count>0;count--) {
+                    landCards.add(card);
+                }
+            }
+        }			
+    }
 	
 	public MagicDeck generateDeck(final int size,final MagicPlayerProfile profile) {
 		
@@ -56,10 +60,11 @@ public class DeckGenerator {
 		
 		// Add spells to deck.
 		while (deck.size()<spells) {
-
 			final int index=MagicRandom.nextInt(spellCards.size());
 			final MagicCardDefinition cardDefinition=spellCards.get(index);
-			if (cardDefinition.isPlayable(profile)) {
+            spellCards.remove(index);
+			
+            if (cardDefinition.isPlayable(profile)) {
 				final boolean creature=cardDefinition.isCreature();
 				if (creature&&countCreatures>=maxCreatures) {
 					continue;
@@ -73,7 +78,6 @@ public class DeckGenerator {
 					continue;
 				}
 				deck.add(cardDefinition);
-				spellCards.remove(index);
 				countCost[bucket]++;
 				if (creature) {
 					countCreatures++;
@@ -81,17 +85,21 @@ public class DeckGenerator {
 				if (colorless) {
 					countColorless++;
 				}
-			}
+			} 
+            
+            if (spellCards.size() == 0) {
+                genSpells();
+            }
 		}	
 		
 		// Add non basic lands to deck.
-		while (deck.size()<spells+lands) {
-			
+		while (deck.size()<spells+lands && landCards.size() > 0) {
 			final int index=MagicRandom.nextInt(landCards.size());
 			final MagicCardDefinition cardDefinition=landCards.get(index);
-			if (cardDefinition.isPlayable(profile)) {
+            landCards.remove(index);
+            
+            if (cardDefinition.isPlayable(profile)) {
 				deck.add(cardDefinition);
-				landCards.remove(index);
 			}
 		}
 		
