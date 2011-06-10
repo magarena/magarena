@@ -163,11 +163,18 @@ public class MagicGame {
 		return score;
 	}
 	
+    public long getGameId() {
+        return getGameId(0);
+    }
+	
 	public long getGameId(final int pruneScore) {
-		
-		long id=(turn*ID_FACTOR+phase.getType().getIndex())*ID_FACTOR+score+pruneScore;
-		id=players[0].getPlayerId(id);
-		id=players[1].getPlayerId(id);
+		long id=0; 
+        id = id*ID_FACTOR + turn;
+        id = id*ID_FACTOR + phase.getType().getIndex();
+        id = id*ID_FACTOR + score;
+        id = id*ID_FACTOR + pruneScore;
+		id = players[0].getPlayerId(id);
+		id = players[1].getPlayerId(id);
 		return id;
 	}
 	
