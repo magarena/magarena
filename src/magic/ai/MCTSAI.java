@@ -368,7 +368,7 @@ public class MCTSAI implements MagicAI {
                 if (size == 0) {
                     //invalid game state
                     System.err.println("ERROR! MCTS: Invalid game state");
-                    return null;
+                    game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
                 } else if (size == 1) {
                     game.executeNextEvent(choices.get(0));
                 } else {
