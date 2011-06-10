@@ -66,6 +66,8 @@ M1.%:
 $(MAG): $(SRC) 
 	ant
 
+class: $(BUILD)/javac.last
+
 $(BUILD)/javac.last: $(SRC)
 	-mkdir $(BUILD)
 	javac $(JOPTS) $?
