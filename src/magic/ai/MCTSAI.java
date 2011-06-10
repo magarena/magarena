@@ -116,10 +116,6 @@ public class MCTSAI implements MagicAI {
         }
     }
     
-    private double UCT(final boolean isMax, final MCTSGameTree parent, final MCTSGameTree child) {
-        return (isMax ? 1.0 : -1.0) * child.getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
-    }
-    
     private MCTSGameTree getNode(final long gid, final int choice, final int evalScore) {
         final MCTSGameTree node = getNode(gid);
         if (node.getEvalScore() == evalScore && node.getChoice() == choice) {
@@ -128,6 +124,10 @@ public class MCTSAI implements MagicAI {
             return new MCTSGameTree(choice, evalScore);
         }
     }
+    
+    private double UCT(final boolean isMax, final MCTSGameTree parent, final MCTSGameTree child) {
+        return (isMax ? 1.0 : -1.0) * child.getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
+    }
 
     public synchronized Object[] findNextEventChoiceResults(
             final MagicGame game, 
@@ -135,20 +135,21 @@ public class MCTSAI implements MagicAI {
         //ArtificialLevel = number of seconds to run MCTSAI
         MAXTIME = 1000 * game.getArtificialLevel();
         STARTTIME = System.currentTimeMillis();
+   
         final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         final List<Object[]> choices = getCR(game, scorePlayer);
         final int size = choices.size();
         
         // No choice results
         if (size == 0) {
-            log(pinfo + " NO CHOICE");
+            log(pinfo);
+            System.err.println("ERROR! MCTS: no choice found at start");
             return null;
         }
     
         // Single choice result
         if (size == 1) {
-            final ArtificialChoiceResults selected = getACR(choices).get(0);
-            log(pinfo + " " + selected);
+            log(pinfo + " SINGLE CHOICE");
             return game.map(choices.get(0));
         }
         
@@ -310,13 +311,10 @@ public class MCTSAI implements MagicAI {
             }
         } 
        
-        //game is finished
-        assert game.isFinished() : "game is not finished";
         return path;
     }
 
     private double randomPlay(final MagicGame game) {
-        // empirical evidence suggest that number of events should be less than 300
         final List<Object[]> elist = getNextMultiChoiceEvent(game, true, true);
         final double events = (Integer)(elist.get(0)[0]);
       
@@ -367,8 +365,8 @@ public class MCTSAI implements MagicAI {
                 final int size = choices.size();
                 if (size == 0) {
                     //invalid game state
-                    System.err.println("ERROR! MCTS: Invalid game state");
-                    game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
+                    System.err.println("ERROR! MCTS: no choice found");
+                    game.executeNextEvent(null);
                 } else if (size == 1) {
                     game.executeNextEvent(choices.get(0));
                 } else {
