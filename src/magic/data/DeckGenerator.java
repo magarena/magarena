@@ -18,8 +18,6 @@ public class DeckGenerator {
 	
 	public DeckGenerator(final MagicCubeDefinition cubeDefinition) {
         this.cubeDefinition = cubeDefinition;
-        genSpells();
-        genLands();
 	}
 
     private void genSpells() {
@@ -45,6 +43,8 @@ public class DeckGenerator {
     }
 	
 	public MagicDeck generateDeck(final int size,final MagicPlayerProfile profile) {
+        genSpells();
+        genLands();
 		
 		final MagicDeck deck=new MagicDeck();		
 		final int spells=(size*3)/5;
