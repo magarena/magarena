@@ -107,7 +107,7 @@ public class MagicEvent implements MagicCopyable {
         final List<Object[]> choices = choice.getArtificialChoiceResults(game,this,player,source);
 		final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
-            System.err.println("\nACR:  " + choice.getDescription() + " time: " + time);
+            System.err.println("ACR:  " + choice.getDescription() + description + " time: " + time);
         }
         return choices;
 	}
@@ -117,7 +117,7 @@ public class MagicEvent implements MagicCopyable {
         final Object[] res = choice.getSimulationChoiceResult(game,this,player,source);
 		final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
-            System.err.println("\nRCR:  " + choice.getDescription() + " time: " + time);
+            System.err.println("RCR:  " + choice.getDescription() + description + " time: " + time);
         }
         return res;
 	}
