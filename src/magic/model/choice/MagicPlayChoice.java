@@ -81,14 +81,15 @@ public class MagicPlayChoice extends MagicChoice {
 	@Override
 	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
 
-		final Set<Object> validChoices;
 		if (game.canAlwaysPass()) {
-			validChoices=Collections.emptySet();
-		} else {
-			validChoices=getValidChoices(game,player);
-		}
+			return PASS_CHOICE_RESULTS;
+		} 
+		
+		final Set<Object> validChoices;
+        validChoices=getValidChoices(game,player);
 
-		if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
+		if ((validChoices.isEmpty() && game.canSkipSingleChoice()) ||
+		    game.getStack().hasItemOnTopOfPlayer(player)) {
             if (!game.getStack().isEmpty()) {
                 try {
                      Thread.sleep(1000);
@@ -98,6 +99,8 @@ public class MagicPlayChoice extends MagicChoice {
             }
 			return PASS_CHOICE_RESULTS;
 		}
+
+        /*
         if ((game.getStack().isEmpty() || game.getStack().hasItemOnTopOfPlayer(player)) && 
              game.getTurnPlayer() == player &&                
              game.getPassPriority()) {
@@ -110,6 +113,7 @@ public class MagicPlayChoice extends MagicChoice {
             }
             return PASS_CHOICE_RESULTS;
         }
+        */
 
 		controller.focusViewers(0,0);
 		if (validChoices.isEmpty()) {
