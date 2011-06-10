@@ -10,10 +10,15 @@ EXE:=release/Magarena.exe
 
 all: $(MAG) $(EXE) tags
 
-release/mods/extended_cube.txt: existing.txt extended_all.txt
+cubes: release/mods/legacy_cube.txt release/mods/extended_cube.txt release/mods/standard_cube.txt
+
+release/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
+	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
+
+release/mods/extended_cube.txt: cards/existing.txt cards/extended_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-release/mods/standard_cube.txt: existing.txt standard_all.txt
+release/mods/standard_cube.txt: cards/existing.txt cards/standard_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 cards/extended_all.txt:
