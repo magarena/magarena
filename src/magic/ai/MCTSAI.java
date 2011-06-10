@@ -266,7 +266,8 @@ public class MCTSAI implements MagicAI {
                 MCTSGameTree child = curr.first();
                 for (MCTSGameTree node : curr) {
                     if (node.getChoice() >= choices.size()) {
-                        log("ERROR! MCTS: INVALID NODE");
+                        System.err.println("ERROR! MCTS: Invalid node removed");
+                        curr.removeChild(node);
                         continue;
                     }
 
@@ -415,6 +416,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public void addChild(MCTSGameTree child) {
         children.add(child);
+    }
+    
+    public void removeChild(MCTSGameTree child) {
+        children.remove(child);
     }
     
     public MCTSGameTree first() {
