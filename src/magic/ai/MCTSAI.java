@@ -60,8 +60,6 @@ function getValueByMC(node)
 //AI using Monte Carlo Tree Search
 public class MCTSAI implements MagicAI {
 
-    //higher C -> more exploration less exploitation
-    private static final double C = 0.3;
     private final List<Integer> simLengths = new LinkedList<Integer>();
     private final boolean LOGGING;
 	private final boolean CHEAT;
@@ -276,21 +274,16 @@ public class MCTSAI implements MagicAI {
 
                 //curr.size() == choices.size()
 
-                final int totalSim = curr.getNumSim();
                 MCTSGameTree child = curr.first();
-                double bestV = 
-                        ((game.getScorePlayer() == event.getPlayer()) ? 1.0 : -1.0) * child.getV() + 
-                        C * Math.sqrt(Math.log(totalSim) / child.getNumSim());
+                final boolean isMax = game.getScorePlayer() == event.getPlayer();
+                double bestV = child.getRank(isMax, curr); 
                 final List<MCTSGameTree> invalid = new LinkedList<MCTSGameTree>();
                 for (MCTSGameTree node : curr) {
                     if (node.getChoice() >= choices.size()) {
                         invalid.add(node);
                         continue;
                     }
-
-                    final double v = 
-                        ((game.getScorePlayer() == event.getPlayer()) ? 1.0 : -1.0) * node.getV() + 
-                        C * Math.sqrt(Math.log(totalSim) / node.getNumSim());
+                    final double v = node.getRank(isMax, curr);
                     if (v > bestV) {
                         bestV = v;
                         child = node;
@@ -390,6 +383,9 @@ public class MCTSAI implements MagicAI {
 //each tree node stores the choice from the parent that leads to this node
 //so we only need one copy of MagicGame for MCTSAI
 class MCTSGameTree implements Iterable<MCTSGameTree> {
+    //higher C -> more exploration less exploitation
+    private static final double C = 0.3;
+    
     private final int choice;
     private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
     private int numSim = 0;
@@ -416,6 +412,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public double getScore() {
         return score;
+    }
+    
+    public double getRank(final boolean isMax, final MCTSGameTree parent) {
+        return (isMax ? 1.0 : -1.0) * getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
     }
 
     public int getNumSim() {
