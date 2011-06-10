@@ -71,7 +71,7 @@ public class MCTSAI implements MagicAI {
     static final double C = 1.0;
 
     //store the top 10000 most used nodes
-    private final CacheNode cache = new CacheNode(10000);
+    private final CacheNode cache = null;// = new CacheNode(10000);
 
     public MCTSAI() {
         this(false, true);
@@ -162,9 +162,8 @@ public class MCTSAI implements MagicAI {
        
         //root represents the start state
         final MCTSGameTree root = new MCTSGameTree(-1, -1);
-        int numSim = 0;
         simLengths.clear();
-        for (int i = 1; System.currentTimeMillis() - STARTTIME < MAXTIME; i++) {
+        for (; System.currentTimeMillis() - STARTTIME < MAXTIME; ) {
             //create a new MagicGame for simulation
             final MagicGame start = new MagicGame(game, scorePlayer);
             if (!CHEAT) {
@@ -182,10 +181,13 @@ public class MCTSAI implements MagicAI {
             for (MCTSGameTree node : path) {
                 node.updateScore(score);
             }
-
-            numSim++;
         }
         //logc('\n');
+
+        if (root.size() == 0) {
+            System.err.println("ERROR! MCTS: root has no children but there are " + size + " choices");
+            System.exit(1);
+        }
 
         //select the best choice (child that has the highest secure score)
         final MCTSGameTree first = root.first();
@@ -204,7 +206,7 @@ public class MCTSAI implements MagicAI {
         }
         
         final long duration = System.currentTimeMillis() - STARTTIME;
-        log("MCTS:  time: " + duration + "  sims:  " + numSim);
+        log("MCTS:  time: " + duration + "  sims:  " + root.getNumSim());
 
         if (LOGGING) {
             int minL = 1000000;
@@ -281,11 +283,15 @@ public class MCTSAI implements MagicAI {
                 return path;
             } else {
                 while (curr.size() > choices.size()) {
-                    System.err.println("ERROR! MCTS: Invalid node encountered");
+                    System.err.println("ERROR! MCTS: invalid node removed");
                     curr.removeLast();
                 }
 
                 //curr.size() == choices.size()
+                if (curr.size() == 0) {
+                    System.err.println("ERROR! MCTS: curr has size 0, choices has size " + choices.size());
+                    System.exit(1);
+                }
 
                 final List<MCTSGameTree> invalid = new LinkedList<MCTSGameTree>();
                 
@@ -351,16 +357,23 @@ public class MCTSAI implements MagicAI {
 
             if (sim) {
                 //get simulation choice and execute
-                final Object[] choice = event.getSimulationChoiceResult(game);
+                Object[] choice = null;
+                try {
+                    choice = event.getSimulationChoiceResult(game);
+                } catch (OutOfMemoryError err) {
+                    System.err.println(err.getMessage());
+                    err.printStackTrace();
+                    System.exit(1);
+                }
                 if (choice == null) {
-                    //invalid game state
-                    return Collections.<Object[]>singletonList(new Object[]{-1}); 
+                    System.err.println("ERROR! MCTS: no choice found during sim");
+                    game.executeNextEvent(null);
                 } else {
                     game.executeNextEvent(choice);
                     events++;
                 }
             } else {
-                //get possible AI choices, if more than one return list of choices
+                //get list of possible AI choices
                 final List<Object[]> choices = event.getArtificialChoiceResults(game);
                 final int size = choices.size();
                 if (size == 0) {
@@ -457,6 +470,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
 
 class CacheNode extends LinkedHashMap<Long, MCTSGameTree> {
+	private static final long serialVersionUID = 1L;
     private final int capacity;
     public CacheNode(int capacity) {
         super(capacity + 1, 1.1f, true);
