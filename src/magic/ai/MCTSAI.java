@@ -68,7 +68,7 @@ public class MCTSAI implements MagicAI {
     private boolean USE_CACHE = true;
     private static final int MAXEVENTS = 1000;
     //higher C -> more exploration less exploitation
-    static final double C = 0.3;
+    static final double C = 1.0;
 
     //store the top 10000 most used nodes
     private final CacheNode cache = new CacheNode(10000);
@@ -185,6 +185,11 @@ public class MCTSAI implements MagicAI {
         }
         logc('\n');
 
+        if (root.size() == 0) {
+            System.err.println("ERROR! MCTS: No choice at root");
+            return null;
+        }
+
         //select the best choice (child that has the highest secure score)
         final MCTSGameTree first = root.first();
         int maxV = first.getNumSim();
@@ -258,7 +263,6 @@ public class MCTSAI implements MagicAI {
              choices = getNextMultiChoiceEvent(game, curr != root, false)) {
           
             final MagicEvent event = game.getNextEvent();
-            assert choices.size() > 1 : "number of choices is " + choices.size();
             
             if (curr.size() < choices.size()) {
                 //there are unexplored children of node
@@ -291,7 +295,7 @@ public class MCTSAI implements MagicAI {
                         invalid.add(node);
                         continue;
                     }
-                    final double v = UCT(isMax, curr, child);
+                    final double v = UCT(isMax, curr, node);
                     if (v > bestV) {
                         bestV = v;
                         child = node;
@@ -314,14 +318,14 @@ public class MCTSAI implements MagicAI {
     private double randomPlay(final MagicGame game) {
         // empirical evidence suggest that number of events should be less than 300
         final List<Object[]> elist = getNextMultiChoiceEvent(game, true, true);
-        final int events = (Integer)(elist.get(0)[0]);
+        final double events = (Integer)(elist.get(0)[0]);
       
         if (game.getLosingPlayer() == null) {
             return 0;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return  -(1.0 - events/300.0);
+            return  -(1.0 - events/MAXEVENTS);
         } else {
-            return  1.0 - events/300.0;
+            return  1.0 - events/MAXEVENTS;
         }
     }
     
@@ -363,6 +367,7 @@ public class MCTSAI implements MagicAI {
                 final int size = choices.size();
                 if (size == 0) {
                     //invalid game state
+                    System.err.println("ERROR! MCTS: Invalid game state");
                     return null;
                 } else if (size == 1) {
                     game.executeNextEvent(choices.get(0));
