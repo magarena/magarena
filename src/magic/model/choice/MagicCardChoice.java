@@ -58,7 +58,9 @@ public class MagicCardChoice extends MagicChoice {
 		final int actualAmount=Math.min(amount,hand.size());
 		if (actualAmount>0) {
 			createOptions(options,hand,new MagicCard[actualAmount],0,actualAmount,0);
-		}
+		} else {
+            options.add(new MagicCardChoiceResult());
+        }
 		return options;
 	}
 
