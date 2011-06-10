@@ -98,8 +98,8 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public long getPlayerId(final long id) {
-
-		long playerId=id*ID_FACTOR+life;
+		long playerId=id;
+        playerId=playerId*ID_FACTOR+life;
 		playerId=playerId*ID_FACTOR+poison;
 		playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
 		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
