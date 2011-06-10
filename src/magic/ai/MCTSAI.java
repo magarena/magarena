@@ -1,13 +1,6 @@
 package magic.ai;
 
-import java.util.Random;
-import java.util.Arrays;
-import java.util.List;
-import java.util.LinkedList;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhase;
@@ -75,6 +68,9 @@ public class MCTSAI implements MagicAI {
     private int MAXTIME;
     private long STARTTIME;
 
+    //store the top 10000 most used nodes
+    private final CacheNode cache = new CacheNode(10000);
+
     public MCTSAI() {
         this(false, true);
     }
@@ -101,7 +97,24 @@ public class MCTSAI implements MagicAI {
             System.err.print(message);
         }
     }
+
+    private MCTSGameTree getNode(long gid) {
+        if (cache.containsKey(gid)) {
+            return cache.get(gid);
+        } else {
+            return new MCTSGameTree(-1, -1);
+        }
+    }
     
+    private MCTSGameTree getNode(final long gid, final int choice, final int evalScore) {
+        final MCTSGameTree node = getNode(gid);
+        if (node.getEvalScore() == evalScore && node.getChoice() == choice) {
+            return node;
+        } else {
+            return new MCTSGameTree(choice, evalScore);
+        }
+    }
+
     public synchronized Object[] findNextEventChoiceResults(
             final MagicGame game, 
             final MagicPlayer scorePlayer) {
@@ -133,7 +146,7 @@ public class MCTSAI implements MagicAI {
         // return the "best" choice
        
         //root represents the start state
-        final MCTSGameTree root = new MCTSGameTree(-1, -1);
+        final MCTSGameTree root = getNode(game.getGameId());
         int numSim = 0;
         simLengths.clear();
         for (int i = 1; System.currentTimeMillis() - STARTTIME < MAXTIME; i++) {
@@ -190,14 +203,15 @@ public class MCTSAI implements MagicAI {
             log("min: " + minL + "  max: " + maxL + "  avg: " + (sumL / simLengths.size()));
         }
         
-        log(pinfo);
-
-        final ArtificialChoiceResults selected = (bestC >= 0) ? achoices.get(bestC) : null;
-        for (final ArtificialChoiceResults achoice : achoices) {
-            log((achoice == selected ? "* ":"  ") + achoice);
+        if (LOGGING) {
+            log(pinfo);
+            final ArtificialChoiceResults selected = (bestC >= 0) ? achoices.get(bestC) : null;
+            for (final ArtificialChoiceResults achoice : achoices) {
+                log((achoice == selected ? "* ":"  ") + achoice);
+            }
         }
-                
-        return game.map(selected.choiceResults);
+
+        return game.map(choices.get(bestC));
     }
 
     private List<Object[]> getCR(final MagicGame game, final MagicPlayer player) {
@@ -237,7 +251,12 @@ public class MCTSAI implements MagicAI {
                 //there are unexplored children of node
                 //assume we explore children of a node in increasing order of the choices
                 game.executeNextEvent(choices.get(curr.size()));
-                final MCTSGameTree child = new MCTSGameTree(curr.size(), game.getScore());
+
+                final MCTSGameTree child = getNode(game.getGameId(), curr.size(), game.getScore());
+                if (event.getPlayer() == game.getScorePlayer()) {
+                    cache.put(game.getGameId(), child);
+                }
+                
                 curr.addChild(child);
                 path.add(child);
                 return path;
@@ -408,5 +427,18 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public int size() {
         return children.size();
+    }
+}
+
+
+class CacheNode extends LinkedHashMap<Long, MCTSGameTree> {
+    private final int capacity;
+    public CacheNode(int capacity) {
+        super(capacity + 1, 1.1f, true);
+        this.capacity = capacity;
+    }
+
+    protected boolean removeEldestEntry(Map.Entry eldest) {
+        return size() > capacity;
     }
 }
