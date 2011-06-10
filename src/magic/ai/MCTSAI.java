@@ -67,6 +67,7 @@ public class MCTSAI implements MagicAI {
 	private final boolean CHEAT;
     private int MAXTIME;
     private long STARTTIME;
+    private boolean USE_CACHE = true;
 
     //store the top 10000 most used nodes
     private final CacheNode cache = new CacheNode(10000);
@@ -98,8 +99,15 @@ public class MCTSAI implements MagicAI {
         }
     }
 
+
+    private void addNode(final long gid, final MCTSGameTree node) {
+        if (USE_CACHE) {
+            cache.put(gid, node);
+        }
+    }
+
     private MCTSGameTree getNode(long gid) {
-        if (cache.containsKey(gid)) {
+        if (USE_CACHE && cache.containsKey(gid)) {
             return cache.get(gid);
         } else {
             return new MCTSGameTree(-1, -1);
@@ -254,7 +262,7 @@ public class MCTSAI implements MagicAI {
 
                 final MCTSGameTree child = getNode(game.getGameId(), curr.size(), game.getScore());
                 if (event.getPlayer() == game.getScorePlayer()) {
-                    cache.put(game.getGameId(), child);
+                    addNode(game.getGameId(), child);
                 }
                 
                 curr.addChild(child);
