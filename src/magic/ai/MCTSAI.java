@@ -109,6 +109,7 @@ public class MCTSAI implements MagicAI {
 
     private MCTSGameTree getNode(long gid) {
         if (USE_CACHE && cache.containsKey(gid)) {
+            log("root is a cache hit");
             return cache.get(gid);
         } else {
             return new MCTSGameTree(-1, -1);
@@ -148,7 +149,7 @@ public class MCTSAI implements MagicAI {
         if (size == 1) {
             final ArtificialChoiceResults selected = getACR(choices).get(0);
             log(pinfo + " " + selected);
-            return game.map(selected.choiceResults);
+            return game.map(choices.get(0));
         }
         
         // repeat a number of simulations
@@ -159,7 +160,7 @@ public class MCTSAI implements MagicAI {
         // return the "best" choice
        
         //root represents the start state
-        final MCTSGameTree root = getNode(game.getGameId());
+        final MCTSGameTree root = new MCTSGameTree(-1, -1);
         int numSim = 0;
         simLengths.clear();
         for (int i = 1; System.currentTimeMillis() - STARTTIME < MAXTIME; i++) {
@@ -176,19 +177,14 @@ public class MCTSAI implements MagicAI {
             // play a simulated game to get score
             // update all nodes along the path from root to new node 
             final double score = randomPlay(start);
-            logc((score > 0.0) ? '.' : 'X');
+            //logc((score > 0.0) ? '.' : 'X');
             for (MCTSGameTree node : path) {
                 node.updateScore(score);
             }
 
             numSim++;
         }
-        logc('\n');
-
-        if (root.size() == 0) {
-            System.err.println("ERROR! MCTS: No choice at root");
-            return null;
-        }
+        //logc('\n');
 
         //select the best choice (child that has the highest secure score)
         final MCTSGameTree first = root.first();
@@ -255,6 +251,7 @@ public class MCTSAI implements MagicAI {
     // find a path from root to an unexplored node
     private List<MCTSGameTree> genNewTreeNode(final MCTSGameTree root, final MagicGame game) {
         final List<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
+        boolean cached = false;
         MCTSGameTree curr = root;
         path.add(curr);
 
@@ -263,17 +260,21 @@ public class MCTSAI implements MagicAI {
              choices = getNextMultiChoiceEvent(game, curr != root, false)) {
           
             final MagicEvent event = game.getNextEvent();
+            final boolean isMax = game.getScorePlayer() == event.getPlayer();
+
+            //cache the first non root node along the path that belongs to AI
+            /*
+            if (curr != root && isMax && !cached) {
+                addNode(game.getGameId(), curr);
+                cached = true;
+            }
+            */
             
             if (curr.size() < choices.size()) {
                 //there are unexplored children of node
                 //assume we explore children of a node in increasing order of the choices
                 game.executeNextEvent(choices.get(curr.size()));
-
-                final MCTSGameTree child = getNode(game.getGameId(), curr.size(), game.getScore());
-                if (event.getPlayer() == game.getScorePlayer()) {
-                    addNode(game.getGameId(), child);
-                }
-                
+                final MCTSGameTree child = new MCTSGameTree(curr.size(), game.getScore());
                 curr.addChild(child);
                 path.add(child);
                 return path;
@@ -285,7 +286,6 @@ public class MCTSAI implements MagicAI {
 
                 //curr.size() == choices.size()
 
-                final boolean isMax = game.getScorePlayer() == event.getPlayer();
                 final List<MCTSGameTree> invalid = new LinkedList<MCTSGameTree>();
                 
                 MCTSGameTree child = curr.first();
