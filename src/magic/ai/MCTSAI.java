@@ -261,6 +261,13 @@ public class MCTSAI implements MagicAI {
                 path.add(child);
                 return path;
             } else {
+                while (curr.size() > choices.size()) {
+                    System.err.println("ERROR! MCTS: Invalid node encountered");
+                    curr.removeLast();
+                }
+
+                //curr.size() == choices.size()
+
                 final int totalSim = curr.getNumSim();
                 MCTSGameTree child = curr.first();
                 double bestV = 
@@ -269,7 +276,6 @@ public class MCTSAI implements MagicAI {
                 final List<MCTSGameTree> invalid = new LinkedList<MCTSGameTree>();
                 for (MCTSGameTree node : curr) {
                     if (node.getChoice() >= choices.size()) {
-                        System.err.println("ERROR! MCTS: Invalid node encountered");
                         invalid.add(node);
                         continue;
                     }
@@ -281,11 +287,6 @@ public class MCTSAI implements MagicAI {
                         bestV = v;
                         child = node;
                     }
-                }
-
-                //remove invalid nodes
-                for (MCTSGameTree node : invalid) {
-                    curr.removeChild(node);
                 }
 
                 //move down the tree
@@ -382,7 +383,7 @@ public class MCTSAI implements MagicAI {
 //so we only need one copy of MagicGame for MCTSAI
 class MCTSGameTree implements Iterable<MCTSGameTree> {
     private final int choice;
-    private final List<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
+    private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
     private int numSim = 0;
     private double score = 0;
     private int evalScore = 0;
@@ -425,8 +426,8 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         children.add(child);
     }
     
-    public void removeChild(MCTSGameTree child) {
-        children.remove(child);
+    public void removeLast() {
+        children.removeLast();
     }
     
     public MCTSGameTree first() {
