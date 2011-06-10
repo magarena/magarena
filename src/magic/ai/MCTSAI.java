@@ -262,12 +262,15 @@ public class MCTSAI implements MagicAI {
                 return path;
             } else {
                 final int totalSim = curr.getNumSim();
-                double bestV = -1e10;
                 MCTSGameTree child = curr.first();
+                double bestV = 
+                        ((game.getScorePlayer() == event.getPlayer()) ? 1.0 : -1.0) * child.getV() + 
+                        C * Math.sqrt(Math.log(totalSim) / child.getNumSim());
+                final List<MCTSGameTree> invalid = new LinkedList<MCTSGameTree>();
                 for (MCTSGameTree node : curr) {
                     if (node.getChoice() >= choices.size()) {
-                        System.err.println("ERROR! MCTS: Invalid node removed");
-                        curr.removeChild(node);
+                        System.err.println("ERROR! MCTS: Invalid node encountered");
+                        invalid.add(node);
                         continue;
                     }
 
@@ -280,9 +283,13 @@ public class MCTSAI implements MagicAI {
                     }
                 }
 
+                //remove invalid nodes
+                for (MCTSGameTree node : invalid) {
+                    curr.removeChild(node);
+                }
+
                 //move down the tree
                 curr = child;
-                assert curr != null;
                 
                 game.executeNextEvent(choices.get(curr.getChoice()));
                 path.add(curr);
