@@ -16,22 +16,22 @@ release/mods/extended_cube.txt: existing.txt extended_all.txt
 release/mods/standard_cube.txt: existing.txt standard_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-extended_all.txt:
+cards/extended_all.txt:
 	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' > $@
 	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=3" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 
-standard_all.txt:
+cards/standard_all.txt:
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' > $@
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 
-existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
+cards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 
-existing_full.txt: newcards/existing.txt data/mtg-data.txt
+cards/existing_full.txt: newcards/existing.txt data/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
-candidate_cards_full.txt: scripts/extract_candidates.awk candidate_cards.tsv data/mtg-data.txt
+cards/candidate_cards_full.txt: scripts/extract_candidates.awk candidate_cards.tsv data/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
 %.out: $(MAG)
