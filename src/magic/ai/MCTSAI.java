@@ -292,15 +292,9 @@ public class MCTSAI implements MagicAI {
                     System.exit(1);
                 }
 
-                final List<MCTSGameTree> invalid = new LinkedList<MCTSGameTree>();
-                
                 MCTSGameTree child = curr.first();
                 double bestV = UCT(isMax, curr, child); 
                 for (MCTSGameTree node : curr) {
-                    if (node.getChoice() >= choices.size()) {
-                        invalid.add(node);
-                        continue;
-                    }
                     final double v = UCT(isMax, curr, node);
                     if (v > bestV) {
                         bestV = v;
@@ -320,8 +314,9 @@ public class MCTSAI implements MagicAI {
     }
 
     private double randomPlay(final MagicGame game) {
-        final List<Object[]> elist = getNextMultiChoiceEvent(game, true, true);
-        final double events = (Integer)(elist.get(0)[0]);
+        final int startEvents = game.getEventsExecuted();
+        getNextMultiChoiceEvent(game, true, true);
+        final double events = game.getEventsExecuted() - startEvents;
       
         if (game.getLosingPlayer() == null) {
             return 0;
@@ -362,6 +357,7 @@ public class MCTSAI implements MagicAI {
                 } catch (OutOfMemoryError err) {
                     System.err.println(err.getMessage());
                     err.printStackTrace();
+                    game.executeNextEvent(null);
                     System.exit(1);
                 }
                 if (choice == null) {
@@ -393,11 +389,7 @@ public class MCTSAI implements MagicAI {
         }
 
         //game is finished
-        if (sim) {
-            return Collections.<Object[]>singletonList(new Object[]{events}); 
-        } else {
-            return null;
-        }
+        return null;
     }
 }
 
