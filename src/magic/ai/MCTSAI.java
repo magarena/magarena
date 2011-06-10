@@ -66,6 +66,9 @@ public class MCTSAI implements MagicAI {
     private int MAXTIME;
     private long STARTTIME;
     private boolean USE_CACHE = true;
+    private static final int MAXEVENTS = 1000;
+    //higher C -> more exploration less exploitation
+    static final double C = 0.3;
 
     //store the top 10000 most used nodes
     private final CacheNode cache = new CacheNode(10000);
@@ -110,6 +113,10 @@ public class MCTSAI implements MagicAI {
         } else {
             return new MCTSGameTree(-1, -1);
         }
+    }
+    
+    private double UCT(final boolean isMax, final MCTSGameTree parent, final MCTSGameTree child) {
+        return (isMax ? 1.0 : -1.0) * child.getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
     
     private MCTSGameTree getNode(final long gid, final int choice, final int evalScore) {
@@ -274,16 +281,17 @@ public class MCTSAI implements MagicAI {
 
                 //curr.size() == choices.size()
 
-                MCTSGameTree child = curr.first();
                 final boolean isMax = game.getScorePlayer() == event.getPlayer();
-                double bestV = child.getRank(isMax, curr); 
                 final List<MCTSGameTree> invalid = new LinkedList<MCTSGameTree>();
+                
+                MCTSGameTree child = curr.first();
+                double bestV = UCT(isMax, curr, child); 
                 for (MCTSGameTree node : curr) {
                     if (node.getChoice() >= choices.size()) {
                         invalid.add(node);
                         continue;
                     }
-                    final double v = node.getRank(isMax, curr);
+                    final double v = UCT(isMax, curr, child);
                     if (v > bestV) {
                         bestV = v;
                         child = node;
@@ -320,7 +328,6 @@ public class MCTSAI implements MagicAI {
     private List<Object[]> getNextMultiChoiceEvent(MagicGame game, boolean fastChoices, boolean sim) {
         game.setFastChoices(fastChoices);
         
-        final int MAXEVENTS = 300;
         int events = 0;
         
         // simulate game until it is finished or simulated 300 events
@@ -383,8 +390,6 @@ public class MCTSAI implements MagicAI {
 //each tree node stores the choice from the parent that leads to this node
 //so we only need one copy of MagicGame for MCTSAI
 class MCTSGameTree implements Iterable<MCTSGameTree> {
-    //higher C -> more exploration less exploitation
-    private static final double C = 0.3;
     
     private final int choice;
     private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
@@ -414,10 +419,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return score;
     }
     
-    public double getRank(final boolean isMax, final MCTSGameTree parent) {
-        return (isMax ? 1.0 : -1.0) * getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
-    }
-
     public int getNumSim() {
         return numSim;
     }
