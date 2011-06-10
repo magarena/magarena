@@ -62,6 +62,7 @@ public class MagicGame {
 	private long identifiers[];
 	private int score=0;
 	private int turn=1;
+    private int eventsExecuted=0;
 	private int startTurn=0;
 	private int mainPhaseCount=100000000;
 	private int landPlayed=0;
@@ -125,6 +126,7 @@ public class MagicGame {
 		this.scorePlayer=copyMap.copy(scorePlayer);
 		this.score=0;
 		this.turn=game.turn;
+        this.eventsExecuted=game.eventsExecuted;
 		this.startTurn=game.startTurn;
 		this.landPlayed=game.landPlayed;
 		this.priorityPassed=game.priorityPassed;
@@ -241,6 +243,10 @@ public class MagicGame {
 		
 		return turn;
 	}
+
+    public int getEventsExecuted() {
+        return eventsExecuted;
+    }
 	
 	public void setMainPhases(final int count) {
 
@@ -531,7 +537,7 @@ public class MagicGame {
 	}
 	
 	public void executeEvent(final MagicEvent event,final Object choiceResults[]) {
-			
+		eventsExecuted++;	
 		if (choiceResults!=null) {
 			logAppendEvent(event,choiceResults);
 			// Payed cost.
@@ -540,7 +546,9 @@ public class MagicGame {
 			}
 			event.executeEvent(this,choiceResults);
 			checkState();
-		}
+		} else {
+            System.err.println("ERROR: choiceResults is null in executeEvent");
+        }
 	}
 
 	public MagicEventQueue getEvents() {
