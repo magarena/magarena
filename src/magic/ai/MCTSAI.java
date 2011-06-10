@@ -149,7 +149,6 @@ public class MCTSAI implements MagicAI {
     
         // Single choice result
         if (size == 1) {
-            log(pinfo + " SINGLE CHOICE");
             return game.map(choices.get(0));
         }
         
