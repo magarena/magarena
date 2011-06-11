@@ -297,6 +297,13 @@ public class MCTSAI implements MagicAI {
                     if (!child.desc.equals(desc)) {
                         System.err.println("ERROR! choices do not match" +
                                 " TREE: " + child.desc + " CHOICE: " + desc);
+                        for (MCTSGameTree child2 : curr) {
+                            System.err.println("TREE: " + child2.desc);
+                        }
+                        for (Object[] choice2 : choices) {
+                            System.err.println("CHOICE: " + choice2[0]);
+                        }
+                        System.exit(1);
                     }
                     idx++;
                 }
