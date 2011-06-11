@@ -40,7 +40,7 @@ cards/candidate_cards_full.txt: scripts/extract_candidates.awk candidate_cards.t
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
 %.out: $(MAG)
-	SGE_TASK_ID=$* exp/array_mag.sh
+	SGE_TASK_ID=$* exp/eval_mcts.sh
 
 M1.%:
 	-rm -rf Magarena-1.$*
@@ -89,7 +89,7 @@ clean:
 	-rm $(MAG)
 
 jar: $(MAG)
-	java -Xmx256M -jar $^
+	java -Ddebug=true -Xmx256M -jar $^
 
 test: $(MAG)
 	$(JAR) -DrndSeed=123 magic.DeckStrCal \
