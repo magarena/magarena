@@ -33,7 +33,7 @@ public class MagicPlayChoice extends MagicChoice {
 	@Override
 	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
 
-		// When something is allready on top of stack for the player, always pass.
+		// When something is already on top of stack for the player, always pass.
 		if (game.getStack().hasItemOnTopOfPlayer(player)) {
 			return PASS_OPTIONS;
 		}
