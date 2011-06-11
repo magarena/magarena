@@ -162,6 +162,7 @@ public class MCTSAI implements MagicAI {
         //root represents the start state
         final MCTSGameTree root = new MCTSGameTree(-1, -1);
         simLengths.clear();
+        //end simulations once root is solved or time is up
         for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isSolved(); ) {
             //create a new MagicGame for simulation
             final MagicGame start = new MagicGame(game, scorePlayer);
@@ -179,7 +180,8 @@ public class MCTSAI implements MagicAI {
             //logc((score > 0.0) ? '.' : 'X');
             
             for (MCTSGameTree child = null, parent = null; 
-                 !path.isEmpty(); child = parent) {
+                 !path.isEmpty(); 
+                 child = parent) {
                 
                 parent = path.removeLast(); 
                 parent.updateScore(score);
@@ -195,10 +197,6 @@ public class MCTSAI implements MagicAI {
                     } else if (!parent.isAI() && child.isAILose()) {
                         parent.setAILose();
                     }
-                    //end simulations once root is solved
-                    if (root.isSolved()) {
-                        System.err.println("root is AI " + (root.isAIWin() ? "win" : "lose"));
-                    }
                 }
             }
         }
@@ -213,10 +211,7 @@ public class MCTSAI implements MagicAI {
         final MCTSGameTree first = root.first();
         double maxR = first.getRank();
         int bestC = first.getChoice();
-        final List<ArtificialChoiceResults> achoices = getACR(choices);
         for (MCTSGameTree node : root) {
-            achoices.get(node.getChoice()).worker = (int)(node.getV() * 100);
-            achoices.get(node.getChoice()).gameCount = node.getNumSim();
             final double R = node.getRank();
             final int C = node.getChoice();
             if (R > maxR) { 
@@ -224,6 +219,7 @@ public class MCTSAI implements MagicAI {
                 bestC = C;
             }
         }
+        final Object[] selected = choices.get(bestC); 
         
         final long duration = System.currentTimeMillis() - STARTTIME;
         log("MCTS:  time: " + duration + "  sims:  " + root.getNumSim());
@@ -242,28 +238,56 @@ public class MCTSAI implements MagicAI {
         
         if (LOGGING) {
             log(pinfo);
-            final ArtificialChoiceResults selected = (bestC >= 0) ? achoices.get(bestC) : null;
-            for (final ArtificialChoiceResults achoice : achoices) {
-                log((achoice == selected ? "* ":"  ") + achoice);
+            for (MCTSGameTree node : root) {
+                final StringBuffer out = new StringBuffer();
+                if (node.getChoice() == bestC) {
+                    out.append("* ");
+                } else {
+                    out.append("  ");
+                }
+                out.append('[');
+                out.append((int)(node.getV() * 100));
+                out.append('/');
+                out.append(node.getNumSim());
+                out.append('/');
+                if (node.isAIWin()) {
+                    out.append("win");
+                } else if (node.isAILose()) {
+                    out.append("lose");
+                } else {
+                    out.append("?");
+                }
+                out.append(']');
+                out.append(CR2String(choices.get(node.getChoice())));
+                log(out.toString());
             }
         }
 
-        return game.map(choices.get(bestC));
+        return game.map(selected);
+    }
+
+    private String CR2String(Object[] choiceResults) {
+		final StringBuffer buffer=new StringBuffer();
+		if (choiceResults!=null) {
+			buffer.append(" (");
+			boolean first=true;
+			for (final Object choiceResult : choiceResults) {
+				if (first) {
+					first=false;
+				} else {
+					buffer.append(',');
+				}
+				buffer.append(choiceResult);
+			}
+			buffer.append(')');
+		}
+        return buffer.toString();
     }
 
     private List<Object[]> getCR(final MagicGame game, final MagicPlayer player) {
         final MagicGame choiceGame = new MagicGame(game, player);
         final MagicEvent event = choiceGame.getNextEvent();
         return event.getArtificialChoiceResults(choiceGame);
-    }
-
-    private List<ArtificialChoiceResults> getACR(final List<Object[]> choices) {
-        final List<ArtificialChoiceResults> aiChoiceResultsList = 
-            new ArrayList<ArtificialChoiceResults>();
-        for (final Object choiceResults[] : choices) {
-            aiChoiceResultsList.add(new ArtificialChoiceResults(choiceResults));
-        }
-        return aiChoiceResultsList;
     }
 
     // p is parent of n
@@ -358,7 +382,7 @@ public class MCTSAI implements MagicAI {
         final int startEvents = game.getEventsExecuted();
         getNextMultiChoiceEvent(game, true, true);
         final double events = game.getEventsExecuted() - startEvents;
-      
+
         if (game.getLosingPlayer() == null) {
             return 0;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
