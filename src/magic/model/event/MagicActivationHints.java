@@ -13,39 +13,32 @@ public class MagicActivationHints {
 	private final int maximum; 
 	
 	public MagicActivationHints(final MagicTiming timing,final boolean independent,final int maximum) {
-		
 		this.timing=timing;
 		this.independent=independent;
 		this.maximum=maximum;
 	}
 	
 	public MagicActivationHints(final MagicTiming timing,final boolean independent) {
-		
 		this(timing,independent,0);
 	}
 	
 	public MagicActivationHints(final MagicTiming timing) {
-		
 		this(timing,false);
 	}
 	
 	public MagicTiming getTiming() {
-		
 		return timing;
 	}
 	
 	public boolean isIndependent() {
-		
 		return independent;
 	}
 	
 	public int getMaximum() {
-		
 		return maximum;
 	}
 	
 	public boolean isMaximum(final MagicSource source) {
-		
 		if (maximum==0) {
 			return false;
 		}
