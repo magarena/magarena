@@ -10,7 +10,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
 
-public abstract class MagicActivation implements MagicEventAction,Comparable<MagicActivation> {
+public abstract class MagicActivation implements MagicEventAction, Comparable<MagicActivation> {
 
 	private final MagicCardDefinition cardDefinition;
 	private final MagicCondition conditions[];
@@ -105,7 +105,7 @@ public abstract class MagicActivation implements MagicEventAction,Comparable<Mag
 		final boolean useTargetHints=useHints||GeneralConfig.getInstance().getSmartTarget();
 		return game.hasLegalTargets(player,source,targetChoice,useTargetHints);
 	}
-		
+	
 	@Override
 	public int compareTo(final MagicActivation other) {
 
