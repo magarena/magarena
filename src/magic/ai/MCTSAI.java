@@ -420,6 +420,7 @@ public class MCTSAI implements MagicAI {
                 try {
                     choice = event.getSimulationChoiceResult(game);
                 } catch (OutOfMemoryError err) {
+                    System.err.println(event);
                     System.err.println(err.getMessage());
                     err.printStackTrace();
                     game.executeNextEvent(null);
