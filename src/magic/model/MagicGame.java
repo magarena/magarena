@@ -547,7 +547,8 @@ public class MagicGame {
 			event.executeEvent(this,choiceResults);
 			checkState();
 		} else {
-            System.err.println("ERROR: choiceResults is null in executeEvent");
+            System.err.println("ERROR! choiceResults is null in executeEvent");
+            Thread.dumpStack();
         }
 	}
 
