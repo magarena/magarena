@@ -45,10 +45,8 @@ public class MagicPlayChoice extends MagicChoice {
 		options.add(MagicPlayChoiceResult.PASS);
 		
 		for (final MagicActivation activation : activationMap.getActivations()) {
-			
 			final Set<MagicSource> sources=activationMap.get(activation);
 			for (final MagicSource activationSource : sources) {
-				
 				if (activation.canPlay(game,player,activationSource,true)) {
 					options.add(new MagicPlayChoiceResult(activationSource,activation));
 					if (activation.getActivationHints().isIndependent()) {
@@ -88,8 +86,7 @@ public class MagicPlayChoice extends MagicChoice {
 		final Set<Object> validChoices;
         validChoices=getValidChoices(game,player);
 
-		if ((validChoices.isEmpty() && game.canSkipSingleChoice()) ||
-		    game.getStack().hasItemOnTopOfPlayer(player)) {
+		if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
             if (!game.getStack().isEmpty()) {
                 try {
                      Thread.sleep(1000);
