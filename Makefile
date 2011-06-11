@@ -91,6 +91,12 @@ clean:
 jar: $(MAG)
 	java -Ddebug=true -Xmx256M -jar $^
 
+# bug with invalid nodes 
+bug: 11.jar
+
+%.jar: $(MAG)
+	java -DrndSeed=$* -Ddebug=true -Xmx256M -jar $^
+
 test: $(MAG)
 	$(JAR) -DrndSeed=123 magic.DeckStrCal \
 	--deck1 release/decks/LSK_G.dec \
