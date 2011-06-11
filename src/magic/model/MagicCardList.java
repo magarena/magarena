@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.util.Random;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -124,9 +125,9 @@ public class MagicCardList extends ArrayList<MagicCard> {
 
 		final MagicCardList oldCards=new MagicCardList(this);
 		clear();
+        final Random rng = new Random(oldCards.size());
 		for (int size=oldCards.size();size>0;size--) {
-			
-			final int index=MagicRandom.nextInt(size);
+			final int index=rng.nextInt(size);
 			final MagicCard card=oldCards.get(index);
 			oldCards.remove(index);			
 			add(card);
