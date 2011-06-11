@@ -230,17 +230,14 @@ public class MagicGame {
 	}
 	
 	public boolean getFastChoices() {
-		
 		return fastChoices;
 	}
 			
 	public void setTurn(final int turn) {
-		
 		this.turn=turn;
 	}
 	
 	public int getTurn() {
-		
 		return turn;
 	}
 
@@ -249,33 +246,27 @@ public class MagicGame {
     }
 	
 	public void setMainPhases(final int count) {
-
 		startTurn=turn;
 		mainPhaseCount=count;
 	}
 	
 	public int getRelativeTurn() {
-	
 		return startTurn>0?turn-startTurn:0;
 	}
 	
 	public void decreaseMainPhaseCount() {
-		
 		mainPhaseCount--;
 	}
 	
 	public void setMainPhaseCount(final int count) {
-		
 		mainPhaseCount=count;
 	}
 	
 	public int getMainPhaseCount() {
-		
 		return mainPhaseCount;
 	}
 	
 	public MagicGameplay getGameplay() {
-		
 		return gameplay;
 	}
 	
@@ -335,7 +326,6 @@ public class MagicGame {
 	
 	/** Determines if game score should be cached for this game state. */
 	public boolean cacheState() {
-		
 		switch (phase.getType()) {
 			case FirstMain:
 			case EndOfCombat:
@@ -348,41 +338,33 @@ public class MagicGame {
 
 	/** Tells gameplay that is can skip certain parts during AI processing. */
 	public boolean canSkip() {
-		
 		return stack.isEmpty()&&artificial;
 	}
 	
 	public boolean isFinished() {
-		
 		return losingPlayer!=null||mainPhaseCount<=0;
 	}
 
 	public MagicLogBook getLogBook() {
-		
 		return logBook;
 	}
 		
 	public void setKnownCards() {
-
 		getOpponent(scorePlayer).setHandToUnknown();
 		for (final MagicPlayer player : players) {
-			
 			player.getLibrary().setKnown(false);
 		}		
 	}
 
 	public long createIdentifier(final MagicIdentifierType type) {
-
 		return identifiers[type.getIndex()]++;
 	}
 	
 	public void releaseIdentifier(final MagicIdentifierType type) {
-		
 		identifiers[type.getIndex()]--;
 	}
 	
 	public void setIdentifiers(final long identifiers[]) {
-		
 		this.identifiers=identifiers;
 	}
 	
