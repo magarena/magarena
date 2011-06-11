@@ -67,8 +67,12 @@ public class MCTSAI implements MagicAI {
     private long STARTTIME;
     private boolean USE_CACHE = true;
     private static final int MAXEVENTS = 1000;
+    
     //higher C -> more exploration less exploitation
     static final double C = 1.0;
+
+    //boost score of win nodes by BOOST and decrease scores of lost nodes by BOOST
+    static final int BOOST = 1000000;
 
     //store the top 10000 most used nodes
     private final CacheNode cache = null;// = new CacheNode(10000);
@@ -532,9 +536,9 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public double getRank() {
         if (isAIWin()) {
-            return 10000 + getNumSim();
+            return MCTSAI.BOOST + getNumSim();
         } else if (isAILose()) {
-            return -10000 + getNumSim();
+            return -MCTSAI.BOOST + getNumSim();
         } else {
             return getNumSim();
         }
