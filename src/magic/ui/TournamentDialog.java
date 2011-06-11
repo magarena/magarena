@@ -91,7 +91,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		avatarPanel.setBounds(35,50,120,180);
 		mainPanel.add(avatarPanel);
 		
-		lifeSlider=new SliderPanel("Life",theme.getIcon(Theme.ICON_LIFE),15,30,5,config.getStartLife());
+		lifeSlider=new SliderPanel("Life",theme.getIcon(Theme.ICON_LIFE),10,30,5,config.getStartLife());
 		lifeSlider.setBounds(190,25,270,50);
 		mainPanel.add(lifeSlider);
 		
