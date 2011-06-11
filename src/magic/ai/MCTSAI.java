@@ -416,16 +416,7 @@ public class MCTSAI implements MagicAI {
 
             if (sim) {
                 //get simulation choice and execute
-                Object[] choice = null;
-                try {
-                    choice = event.getSimulationChoiceResult(game);
-                } catch (OutOfMemoryError err) {
-                    System.err.println(event);
-                    System.err.println(err.getMessage());
-                    err.printStackTrace();
-                    game.executeNextEvent(null);
-                    System.exit(1);
-                }
+                final Object[] choice = event.getSimulationChoiceResult(game);
                 if (choice == null) {
                     System.err.println("ERROR! MCTS: no choice found during sim");
                     game.executeNextEvent(null);
