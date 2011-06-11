@@ -78,7 +78,7 @@ public class MCTSAI implements MagicAI {
     }
 
     public MCTSAI(boolean printLog, boolean cheat) {
-        LOGGING = printLog;
+        LOGGING = printLog || (System.getProperty("debug") != null);
         CHEAT = cheat;
     }
 
