@@ -18,19 +18,16 @@ public class MagicExcludeResult implements MagicMappable {
 	private final int excludeFlags;
 	
 	public MagicExcludeResult(final List<MagicPermanent> excludePermanents,final int excludeFlags) {
-		
 		this.excludePermanents=excludePermanents;
 		this.excludeFlags=excludeFlags;
 	}
 	
 	public MagicExcludeResult() {
-		
 		this(NO_EXCLUDE_PERMANENTS,0);
 	}
 	
 	@Override
 	public Object map(final MagicGame game) {
-
 		final List<MagicPermanent> mappedExcludePermanents=new ArrayList<MagicPermanent>();
 		for (final MagicPermanent excludePermanent : excludePermanents) {
 			
@@ -40,10 +37,8 @@ public class MagicExcludeResult implements MagicMappable {
 	}
 	
 	public void exclude(final MagicGame game) {
-
 		final int size=excludePermanents.size();
 		for (int index=0,flag=1;index<size;index++,flag<<=1) {
-		
 			final MagicPermanent permanent=excludePermanents.get(index);
 			final boolean combat=(excludeFlags&flag)==0;
 			game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.ExcludeFromCombat,combat));
@@ -53,10 +48,8 @@ public class MagicExcludeResult implements MagicMappable {
 	
 	@Override
 	public String toString() {
-		
 		final StringBuffer buffer=new StringBuffer();
 		for (int index=0,flag=1;index<excludePermanents.size();index++,flag<<=1) {
-			
 			if (buffer.length()>0) {
 				buffer.append(", ");
 			}
