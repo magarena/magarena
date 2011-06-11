@@ -167,7 +167,7 @@ public class MCTSAI implements MagicAI {
         for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isSolved(); ) {
             //create a new MagicGame for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
-            rootGame.setMainPhases(MAXEVENTS);
+            //rootGame.setMainPhases(MAXEVENTS);
             if (!CHEAT) {
                 rootGame.setKnownCards();
             }
