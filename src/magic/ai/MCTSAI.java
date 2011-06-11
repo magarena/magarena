@@ -60,7 +60,7 @@ function getValueByMC(node)
 //AI using Monte Carlo Tree Search
 public class MCTSAI implements MagicAI {
 
-    private final List<Integer> simLengths = new LinkedList<Integer>();
+    private final List<Integer> LENS = new LinkedList<Integer>();
     private final boolean LOGGING;
 	private final boolean CHEAT;
     private int MAXTIME;
@@ -161,7 +161,7 @@ public class MCTSAI implements MagicAI {
        
         //root represents the start state
         final MCTSGameTree root = new MCTSGameTree(-1, -1);
-        simLengths.clear();
+        LENS.clear();
 
         //end simulations once root is solved or time is up
         for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isSolved(); ) {
@@ -175,7 +175,12 @@ public class MCTSAI implements MagicAI {
             //pass in a clone of the state, genNewTreeNode grows the tree by one node
             //and returns the path from the root to the new node
             final LinkedList<MCTSGameTree> path = genNewTreeNode(root, rootGame);
-            
+           
+            if (path.size() < 2) {
+                System.err.println("ERROR! MCTS: length of path is " + path.size());
+                System.exit(1);
+            }
+
             // play a simulated game to get score
             // update all nodes along the path from root to new node 
             final double score = randomPlay(path.getLast(), rootGame);
@@ -229,12 +234,12 @@ public class MCTSAI implements MagicAI {
             int minL = 1000000;
             int maxL = -1;
             int sumL = 0;
-            for (int len : simLengths) {
+            for (int len : LENS) {
                 sumL += len;
                 if (len > maxL) maxL = len;
                 if (len < minL) minL = len;
             }
-            log("min: " + minL + "  max: " + maxL + "  avg: " + (sumL / simLengths.size()));
+            log("min: " + minL + "  max: " + maxL + "  avg: " + (sumL / LENS.size()));
             log(pinfo);
             for (MCTSGameTree node : root) {
                 final StringBuffer out = new StringBuffer();
@@ -382,7 +387,7 @@ public class MCTSAI implements MagicAI {
         final int events = game.getEventsExecuted() - startEvents;
         
         if (LOGGING) {
-            simLengths.add(events);
+            LENS.add(events);
         }
 
         if (game.getLosingPlayer() == null) {
