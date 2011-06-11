@@ -78,27 +78,22 @@ public class MagicEvent implements MagicCopyable {
 	}
 	
 	public final MagicSource getSource() {
-		
 		return source;
 	}
 	
 	public final MagicPlayer getPlayer() {
-		
 		return player;
 	}
 		
 	public final boolean hasChoice() {
-		
 		return choice!=null;
 	}
 	
 	public final MagicChoice getChoice() {
-		
 		return choice;
 	}
 	
 	public final MagicTargetPicker getTargetPicker() {
-		
 		return targetPicker;
 	}
 	
@@ -106,7 +101,7 @@ public class MagicEvent implements MagicCopyable {
         final long start = System.currentTimeMillis();
         final List<Object[]> choices = choice.getArtificialChoiceResults(game,this,player,source);
 		final long time = System.currentTimeMillis() - start;
-        if (time > 1000) {
+        if (time > 2000) {
             System.err.println("ACR:  " + choice.getDescription() + description + " time: " + time);
         }
         return choices;
@@ -116,29 +111,25 @@ public class MagicEvent implements MagicCopyable {
         final long start = System.currentTimeMillis();
         final Object[] res = choice.getSimulationChoiceResult(game,this,player,source);
 		final long time = System.currentTimeMillis() - start;
-        if (time > 1000) {
+        if (time > 2000) {
             System.err.println("RCR:  " + choice.getDescription() + description + " time: " + time);
         }
         return res;
 	}
 
 	public final MagicTargetChoice getTargetChoice() {
-		
 		return choice!=null?choice.getTargetChoice():null;
 	}
 	
 	public final int getManaChoiceResultIndex() {
-		
 		return choice!=null?choice.getManaChoiceResultIndex():-1;
 	}
 
 	public final Object[] getData() {
-		
 		return data;
 	}
 	
 	public final String getDescription(final Object choiceResults[]) {
-
 		if (description!=null) {
 			return MagicMessage.replaceChoices(description,choiceResults);
 		}
@@ -146,7 +137,6 @@ public class MagicEvent implements MagicCopyable {
 	}
 
 	public final String getChoiceDescription() {
-
 		final String description=getDescription(MagicEvent.NO_CHOICE_RESULTS);
 		if (description!=null) {
 			return description;
@@ -156,7 +146,6 @@ public class MagicEvent implements MagicCopyable {
 	
 	@SuppressWarnings("unchecked")
 	public final <E extends MagicTarget> E getTarget(final MagicGame game,final Object choiceResults[],final int index) {
-
 		final MagicTargetChoice targetChoice=getTargetChoice();
 		final MagicTarget target=(MagicTarget)choiceResults[index];
 		if (game.isLegalTarget(player,source,targetChoice,target)) {
@@ -166,7 +155,6 @@ public class MagicEvent implements MagicCopyable {
 	}
 
 	public final void payManaCost(final MagicGame game,final MagicPlayer player,final Object choiceResults[],final int index) {
-		
 		final MagicPayManaCostResult result=(MagicPayManaCostResult)choiceResults[index];
 		// Result can be null when paying cost is optional.
 		if (result!=null) {
@@ -177,7 +165,6 @@ public class MagicEvent implements MagicCopyable {
 	}
 	
 	public final void payManaCost(final MagicGame game,final MagicPlayer player,final Object choiceResults[]) {
-		
 		final int manaIndex=getManaChoiceResultIndex();
 		if (manaIndex>=0) {
 			payManaCost(game,player,choiceResults,manaIndex);
@@ -185,7 +172,6 @@ public class MagicEvent implements MagicCopyable {
 	}
 	
 	public final void executeEvent(final MagicGame game,final Object choiceResults[]) {
-
 		action.executeEvent(game,this,data,choiceResults);
 	}
 
