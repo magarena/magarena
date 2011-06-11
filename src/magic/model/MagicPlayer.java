@@ -98,6 +98,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public long getPlayerId(final long id) {
+		// Exile is not used for id.
 		long playerId=id;
         playerId=playerId*ID_FACTOR+life;
 		playerId=playerId*ID_FACTOR+poison;
@@ -105,9 +106,18 @@ public class MagicPlayer implements MagicTarget {
 		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
 		playerId=playerId*ID_FACTOR+hand.getCardsId();
 		playerId=playerId*ID_FACTOR+graveyard.getCardsId();
-		// Exile is not used for id.
 		return playerId;
 	}
+
+    public String getIdString() {
+        return life + "," + 
+               poison + "," + 
+               builderCost.getMinimumAmount() + "," + 
+               permanents.getPermanentsId() + "," +
+               hand.getCardsId() + "," +
+               graveyard.getCardsId();
+    }
+
 	
 	@Override
 	public String toString() {

@@ -173,12 +173,20 @@ public class MagicGame {
 		long id=0; 
         id = id*ID_FACTOR + turn;
         id = id*ID_FACTOR + phase.getType().getIndex();
-        id = id*ID_FACTOR + score;
-        id = id*ID_FACTOR + pruneScore;
+        id = id*ID_FACTOR + score + pruneScore;
 		id = players[0].getPlayerId(id);
 		id = players[1].getPlayerId(id);
 		return id;
 	}
+
+    public String getIdString() {
+        return turn + "," + 
+               phase.getType().getIndex() + "," + 
+               score + "-" + 
+               players[0].getIdString() + "-" +
+               players[1].getIdString();
+    }
+
 	
 	public boolean canSkipSingleChoice() {
         return GeneralConfig.getInstance().getSkipSingle();
