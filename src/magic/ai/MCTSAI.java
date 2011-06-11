@@ -125,8 +125,8 @@ public class MCTSAI implements MagicAI {
         }
     }
     
-    private double UCT(final boolean isMax, final MCTSGameTree parent, final MCTSGameTree child) {
-        return (isMax ? 1.0 : -1.0) * child.getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
+    private double UCT(final boolean isAI, final MCTSGameTree parent, final MCTSGameTree child) {
+        return (isAI ? 1.0 : -1.0) * child.getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
 
     public synchronized Object[] findNextEventChoiceResults(
@@ -162,7 +162,7 @@ public class MCTSAI implements MagicAI {
         //root represents the start state
         final MCTSGameTree root = new MCTSGameTree(-1, -1);
         simLengths.clear();
-        for (; System.currentTimeMillis() - STARTTIME < MAXTIME; ) {
+        for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isSolved(); ) {
             //create a new MagicGame for simulation
             final MagicGame start = new MagicGame(game, scorePlayer);
             if (!CHEAT) {
@@ -171,14 +171,35 @@ public class MCTSAI implements MagicAI {
             
             //pass in a clone of the state, genNewTreeNode grows the tree by one node
             //and returns the path from the root to the new node
-            final List<MCTSGameTree> path = genNewTreeNode(root, start);
+            final LinkedList<MCTSGameTree> path = genNewTreeNode(root, start);
             
             // play a simulated game to get score
             // update all nodes along the path from root to new node 
-            final double score = randomPlay(start);
+            final double score = randomPlay(path.getLast(), start);
             //logc((score > 0.0) ? '.' : 'X');
-            for (MCTSGameTree node : path) {
-                node.updateScore(score);
+            
+            for (MCTSGameTree child = null, parent = null; 
+                 !path.isEmpty(); child = parent) {
+                
+                parent = path.removeLast(); 
+                parent.updateScore(score);
+
+                //update game theoretic value
+                if (child != null && child.isSolved()) {
+                    if (parent.isAI() && child.isAIWin()) {
+                        parent.setAIWin();
+                    } else if (parent.isAI() && child.isAILose()) {
+                        parent.incLose();
+                    } else if (!parent.isAI() && child.isAIWin()) {
+                        parent.incLose();
+                    } else if (!parent.isAI() && child.isAILose()) {
+                        parent.setAILose();
+                    }
+                    //end simulations once root is solved
+                    if (root.isSolved()) {
+                        System.err.println("root is AI " + (root.isAIWin() ? "win" : "lose"));
+                    }
+                }
             }
         }
         //logc('\n');
@@ -190,16 +211,16 @@ public class MCTSAI implements MagicAI {
 
         //select the best choice (child that has the highest secure score)
         final MCTSGameTree first = root.first();
-        int maxV = first.getNumSim();
+        double maxR = first.getRank();
         int bestC = first.getChoice();
         final List<ArtificialChoiceResults> achoices = getACR(choices);
         for (MCTSGameTree node : root) {
             achoices.get(node.getChoice()).worker = (int)(node.getV() * 100);
             achoices.get(node.getChoice()).gameCount = node.getNumSim();
-            final int V = node.getNumSim();
+            final double R = node.getRank();
             final int C = node.getChoice();
-            if (V > maxV) { 
-                maxV = V;
+            if (R > maxR) { 
+                maxR = R;
                 bestC = C;
             }
         }
@@ -251,8 +272,8 @@ public class MCTSAI implements MagicAI {
     // select node n (child of node) that maximize v[n]
     // where v[n] = 1 - n.value/n.nb + C * sqrt(log(nb) / n.nb)
     // find a path from root to an unexplored node
-    private List<MCTSGameTree> genNewTreeNode(final MCTSGameTree root, final MagicGame game) {
-        final List<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
+    private LinkedList<MCTSGameTree> genNewTreeNode(final MCTSGameTree root, final MagicGame game) {
+        final LinkedList<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
         boolean cached = false;
         MCTSGameTree curr = root;
         path.add(curr);
@@ -262,11 +283,13 @@ public class MCTSAI implements MagicAI {
              choices = getNextMultiChoiceEvent(game, curr != root, false)) {
           
             final MagicEvent event = game.getNextEvent();
-            final boolean isMax = game.getScorePlayer() == event.getPlayer();
+            final boolean isAI = game.getScorePlayer() == event.getPlayer();
+            curr.setIsAI(isAI);
+            curr.setMaxChildren(choices.size());
 
             //cache the first non root node along the path that belongs to AI
             /*
-            if (curr != root && isMax && !cached) {
+            if (curr != root && isAI && !cached) {
                 addNode(game.getGameId(), curr);
                 cached = true;
             }
@@ -292,18 +315,22 @@ public class MCTSAI implements MagicAI {
                     System.exit(1);
                 }
 
-                MCTSGameTree child = curr.first();
-                double bestV = UCT(isMax, curr, child); 
-                for (MCTSGameTree node : curr) {
-                    final double v = UCT(isMax, curr, node);
+                MCTSGameTree next = null;
+                double bestV = Double.NEGATIVE_INFINITY;
+                for (MCTSGameTree child : curr) {
+                    //skip solved nodes
+                    if (child.isSolved()) {
+                        continue;
+                    }
+                    final double v = UCT(isAI, curr, child);
                     if (v > bestV) {
                         bestV = v;
-                        child = node;
+                        next = child;
                     }
                 }
 
                 //move down the tree
-                curr = child;
+                curr = next;
                 
                 game.executeNextEvent(choices.get(curr.getChoice()));
                 path.add(curr);
@@ -313,7 +340,21 @@ public class MCTSAI implements MagicAI {
         return path;
     }
 
-    private double randomPlay(final MagicGame game) {
+    private double randomPlay(final MCTSGameTree node, final MagicGame game) {
+        //terminal node, no need for random play
+        if (game.isFinished()) {
+            if (game.getLosingPlayer() == null) {
+                System.err.println("ERROR! game finished but no losing player");
+                System.exit(1);
+            } else if (game.getLosingPlayer() == game.getScorePlayer()) {
+                node.setAILose();
+                return -1.0;
+            } else {
+                node.setAIWin();
+                return 1.0;
+            }
+        }
+
         final int startEvents = game.getEventsExecuted();
         getNextMultiChoiceEvent(game, true, true);
         final double events = game.getEventsExecuted() - startEvents;
@@ -398,15 +439,34 @@ public class MCTSAI implements MagicAI {
 //so we only need one copy of MagicGame for MCTSAI
 class MCTSGameTree implements Iterable<MCTSGameTree> {
     
-    private final int choice;
     private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
+    private final int choice;
+    private boolean isAI;
+    private int maxChildren;
+    private int numLose = 0;
     private int numSim = 0;
     private double score = 0;
     private int evalScore = 0;
 
-    public MCTSGameTree(int choice, int evalScore) {
+    public MCTSGameTree(final int choice, final int evalScore) { 
         this.evalScore = evalScore;
         this.choice = choice;
+    }
+
+    public void setMaxChildren(final int mc) {
+        maxChildren = mc;
+    }
+
+    public boolean isAI() {
+        return isAI;
+    }
+    
+    public void setIsAI(final boolean ai) {
+        this.isAI = ai;
+    }
+
+    public boolean isSolved() {
+        return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
     
     public void updateScore(final double score) {
@@ -414,8 +474,35 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         numSim += 1;
     }
 
+    public boolean isAIWin() {
+        return evalScore == Integer.MAX_VALUE;
+    }
+    
+    public boolean isAILose() {
+        return evalScore == Integer.MIN_VALUE;
+    }
+
+    public void incLose() {
+        numLose++;
+        if (numLose == maxChildren) {
+            if (isAI) {
+                setAILose();
+            } else {
+                setAIWin();
+            }
+        }
+    }
+
     public int getChoice() {
         return choice;
+    }
+
+    public void setAIWin() {
+        evalScore = Integer.MAX_VALUE;
+    }
+
+    public void setAILose() {
+        evalScore = Integer.MIN_VALUE;
     }
 
     public int getEvalScore() {
@@ -424,6 +511,16 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public double getScore() {
         return score;
+    }
+
+    public double getRank() {
+        if (isAIWin()) {
+            return 10000 + getNumSim();
+        } else if (isAILose()) {
+            return -10000 + getNumSim();
+        } else {
+            return getNumSim();
+        }
     }
     
     public int getNumSim() {
