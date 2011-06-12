@@ -13,7 +13,7 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
     @Override
     public boolean add(MagicMessage msg) {
         if (System.getProperty("debug") != null) {
-            System.err.println(msg.getText());
+            System.err.println("LOG: " + msg.getText());
         }
         return super.add(msg);
     }
