@@ -9,6 +9,14 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
 	public MagicLogBook() {
 		
 	}
+
+    @Override
+    public boolean add(MagicMessage msg) {
+        if (System.getProperty("debug") != null) {
+            System.err.println(msg.getText());
+        }
+        return super.add(msg);
+    }
 	
 	/** Removes all messages from end to given index, inclusive. */
 	public void removeTo(final int toIndex) {
