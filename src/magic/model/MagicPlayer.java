@@ -253,28 +253,24 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public void setHandToUnknown() {
-		
 		activationMap.removeActivations(hand);
 		hand.setKnown(false);
 		activationMap.addActivations(hand);
 	}
 
 	private void createHandAndLibrary(final int handSize) {
-				
 		int id=0;
 		for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
-			
 			library.add(new MagicCard(cardDefinition,this,id++));
 		}
 
 		if (library.useSmartShuffle()) {
 			library.smartShuffle();
 		} else {
-			library.shuffle();
+			library.shuffle(MagicRandom.nextInt(library.size()));
 		}
 
 		for (int count=handSize;count>0&&!library.isEmpty();count--) {
-			
 			addCardToHand(library.removeCardAtTop());
 		}
 	}
