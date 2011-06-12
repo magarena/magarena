@@ -140,17 +140,20 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 		final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,game.getOpponent(player),player);
 		builder.buildBlockers();
 
-		if (!builder.buildBlockableAttackers()&&game.canSkipDeclareBlockersSingleChoice()) {
+		if (!builder.buildBlockableAttackers()) {
 			return new Object[]{result};
 		}
 			
         final Set<MagicPermanent> blockers = builder.getCandidateBlockers();
         for (final MagicPermanent blocker : blockers) {
 	        MagicPermanent[] attackers = builder.getBlockableAttackers(blocker).toArray(new MagicPermanent[]{});
-            MagicPermanent attacker = attackers[MagicRandom.nextInt(attackers.length)];
-            attacker.addBlockingCreature(blocker);
-            blocker.setState(MagicPermanentState.Blocking);
-            blocker.setBlockedCreature(attacker);
+            final int idx = MagicRandom.nextInt(attackers.length + 1);
+            if (idx < attackers.length) {
+                MagicPermanent attacker = attackers[idx];
+                attacker.addBlockingCreature(blocker);
+                blocker.setState(MagicPermanentState.Blocking);
+                blocker.setBlockedCreature(attacker);
+            }
         }
 				
         buildResult(builder,result);
@@ -158,7 +161,6 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     }
 
 	public static MagicDeclareBlockersChoice getInstance() {
-		
 		return INSTANCE;
 	}
 }
