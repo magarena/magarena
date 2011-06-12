@@ -8,9 +8,15 @@ BEGIN {
     s2 = 0
 }
 
-$2 == ai && $6 == $7 + $8 {
-    s1 += $7
-    s2 += $8
+$2 == ai {
+    if ($7 + $8 > win + lose) {
+        s1 -= win
+        s2 -= lose
+    }
+    win = $7
+    lose = $8
+    s1 += win
+    s2 += lose
 }
 
 END {
