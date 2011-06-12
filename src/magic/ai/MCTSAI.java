@@ -140,7 +140,7 @@ public class MCTSAI implements MagicAI {
         LENS.clear();
 
         //end simulations once root is solved or time is up
-        for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isSolved(); ) {
+        for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isAIWin(); ) {
             //create a new MagicGame for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
             if (!CHEAT) {
@@ -315,7 +315,7 @@ public class MCTSAI implements MagicAI {
                 path.add(child);
                 return path;
             } else {
-                checkNode(curr, choices);
+                //checkNode(curr, choices);
 
                 while (curr.size() > choices.size()) {
                     System.err.println(
@@ -345,8 +345,8 @@ public class MCTSAI implements MagicAI {
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
                 for (MCTSGameTree child : curr) {
-                    //skip solved nodes
-                    if (child.isSolved()) {
+                    //skip won nodes
+                    if (child.isAIWin()) {
                         continue;
                     }
                     final double v = UCT(curr, child);
@@ -403,7 +403,7 @@ public class MCTSAI implements MagicAI {
             final MagicGame game, 
             final boolean fastChoices, 
             final boolean sim) {
-        game.setFastChoices(fastChoices);
+        //game.setFastChoices(fastChoices);
         final int startEvents = game.getEventsExecuted();
         
         // simulate game until it is finished or simulated 300 events
