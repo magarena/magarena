@@ -267,6 +267,30 @@ public class MCTSAI implements MagicAI {
         final MagicEvent event = choiceGame.getNextEvent();
         return event.getArtificialChoiceResults(choiceGame);
     }
+                
+    private static void checkNode(final MCTSGameTree curr, List<Object[]> choices) {
+        int idx = 0;
+        for (MCTSGameTree child : curr) {
+            String desc = "" + choices.get(idx)[0];
+            if (!child.desc.equals(desc)) {
+                System.err.println(
+                        "ERROR! choices do not match" +
+                        " TREE: " + child.desc + " CHOICE: " + desc);
+                printNode(curr, choices);
+                System.exit(1);
+            }
+            idx++;
+        }
+    }
+                    
+    private static void printNode(final MCTSGameTree curr, List<Object[]> choices) {
+        for (MCTSGameTree child : curr) {
+            System.err.println("TREE: " + child.desc);
+        }
+        for (Object[] choice : choices) {
+            System.err.println("CHOICES: " + choice[0]);
+        }
+    }
 
     private LinkedList<MCTSGameTree> genNewTreeNode(final MCTSGameTree root, final MagicGame game) {
         final LinkedList<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
@@ -291,43 +315,30 @@ public class MCTSAI implements MagicAI {
                 path.add(child);
                 return path;
             } else {
-                int idx = 0;
-                for (MCTSGameTree child : curr) {
-                    String desc = "" + choices.get(idx)[0];
-                    if (!child.desc.equals(desc)) {
-                        System.err.println("ERROR! choices do not match" +
-                                " TREE: " + child.desc + " CHOICE: " + desc);
-                        for (MCTSGameTree child2 : curr) {
-                            System.err.println("TREE: " + child2.desc);
-                        }
-                        for (Object[] choice2 : choices) {
-                            System.err.println("CHOICE: " + choice2[0]);
-                        }
-                        System.exit(1);
-                    }
-                    idx++;
-                }
+                checkNode(curr, choices);
 
                 while (curr.size() > choices.size()) {
-                    System.err.println("ERROR! MCTS: invalid nodes! " + 
+                    System.err.println(
+                            "ERROR! MCTS: too many children nodes! " + 
                             "curr.size = " + curr.size() + 
                             ", choices.size = " + choices.size());
                     System.err.println("curr == root? " + (curr == root));
                     System.err.println("fast choices = " + game.getFastChoices());
-                    System.err.println(event.toString());
-                    for (MCTSGameTree child : curr) {
-                        System.err.println("TREE: " + child.desc);
-                    }
-                    for (Object[] choice : choices) {
-                        System.err.println("CHOICES: " + choice[0]);
-                    }
+                    System.err.println(event);
+                    printNode(curr, choices);
                     curr.removeLast();
                 }
 
                 //curr.size() == choices.size()
                 if (curr.size() == 0) {
-                    System.err.println("ERROR! MCTS: curr.size = 0" + 
+                    System.err.println(
+                            "ERROR! MCTS: no children nodes! " +
+                            "curr.size = " + curr.size() + 
                             ", choices.size = " + choices.size());
+                    System.err.println("curr == root? " + (curr == root));
+                    System.err.println("fast choices = " + game.getFastChoices());
+                    System.err.println(event);
+                    printNode(curr, choices);
                     System.exit(1);
                 }
 
