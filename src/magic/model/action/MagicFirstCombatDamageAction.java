@@ -16,19 +16,17 @@ import magic.model.MagicPlayer;
  * - the first blocker gets all remaining damage when the attacker does not have trample.
  * - when the attacker has deathtouch, lethal damage for each blocker is 1.
  */
-public class MagicCombatDamageAction extends MagicAction {
+public class MagicFirstCombatDamageAction extends MagicAction {
 	
 	private final MagicPlayer attackingPlayer;
 	private final MagicPlayer defendingPlayer;
 	
-	public MagicCombatDamageAction(final MagicPlayer attackingPlayer,final MagicPlayer defendingPlayer) {
-	
+	public MagicFirstCombatDamageAction(final MagicPlayer attackingPlayer,final MagicPlayer defendingPlayer) {
 		this.attackingPlayer=attackingPlayer;
 		this.defendingPlayer=defendingPlayer;
 	}
 
 	private boolean dealsCombatDamage(final boolean first,final long flags) {
-		
 		if (first) {
 			return MagicAbility.FirstStrike.hasAbility(flags)||MagicAbility.DoubleStrike.hasAbility(flags);
 		} 
@@ -39,8 +37,8 @@ public class MagicCombatDamageAction extends MagicAction {
             final MagicGame game,
             final MagicPlayer attackingPlayer,
             final MagicPlayer defendingPlayer) {
+        final boolean first = true;
 
-        final boolean first = false;
 		final Collection<MagicDamage> combatDamage=new ArrayList<MagicDamage>();
 
 		// Determine all combat damage that must be dealt.
@@ -109,7 +107,6 @@ public class MagicCombatDamageAction extends MagicAction {
 		// Deal combat damage.
 		if (!combatDamage.isEmpty()) {
 			for (final MagicDamage damage: combatDamage) {
-				
 				game.doAction(new MagicDealDamageAction(damage));
 			}
 			game.setStateCheckRequired();

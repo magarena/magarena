@@ -4,6 +4,7 @@ import magic.data.SoundEffects;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicCombatDamageAction;
+import magic.model.action.MagicFirstCombatDamageAction;
 
 public class MagicCombatDamagePhase extends MagicPhase {
 
@@ -26,6 +27,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
 		final MagicPlayer defendingPlayer=game.getOpponent(attackingPlayer);
 		final int lifeBefore=defendingPlayer.getLife();
 		final int poisonBefore=defendingPlayer.getPoison();
+		game.doAction(new MagicFirstCombatDamageAction(attackingPlayer,defendingPlayer));
 		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer));
 		final int lifeAfter=defendingPlayer.getLife();
 		final int poisonAfter=defendingPlayer.getPoison();
