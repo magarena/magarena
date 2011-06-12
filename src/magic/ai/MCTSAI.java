@@ -286,14 +286,14 @@ public class MCTSAI implements MagicAI {
                 //assume we explore children of a node in increasing order of the choices
                 game.executeNextEvent(choices.get(curr.size()));
                 final MCTSGameTree child = new MCTSGameTree(curr.size(), game.getScore());
-                child.desc = choices.get(curr.size())[0].toString();
+                child.desc = "" + choices.get(curr.size())[0];
                 curr.addChild(child);
                 path.add(child);
                 return path;
             } else {
                 int idx = 0;
                 for (MCTSGameTree child : curr) {
-                    String desc = choices.get(idx)[0].toString();
+                    String desc = "" + choices.get(idx)[0];
                     if (!child.desc.equals(desc)) {
                         System.err.println("ERROR! choices do not match" +
                                 " TREE: " + child.desc + " CHOICE: " + desc);
