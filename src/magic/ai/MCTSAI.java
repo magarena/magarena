@@ -267,7 +267,8 @@ public class MCTSAI implements MagicAI {
         final MagicEvent event = choiceGame.getNextEvent();
         return event.getArtificialChoiceResults(choiceGame);
     }
-                
+               
+    /* 
     private static void checkNode(final MCTSGameTree curr, List<Object[]> choices) {
         int idx = 0;
         for (MCTSGameTree child : curr) {
@@ -291,6 +292,7 @@ public class MCTSAI implements MagicAI {
             System.err.println("CHOICES: " + choice[0]);
         }
     }
+    */
 
     private LinkedList<MCTSGameTree> genNewTreeNode(final MCTSGameTree root, final MagicGame game) {
         final LinkedList<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
@@ -310,7 +312,7 @@ public class MCTSAI implements MagicAI {
                 //assume we explore children of a node in increasing order of the choices
                 game.executeNextEvent(choices.get(curr.size()));
                 final MCTSGameTree child = new MCTSGameTree(curr.size(), game.getScore());
-                child.desc = "" + choices.get(curr.size())[0];
+                //child.desc = "" + choices.get(curr.size())[0];
                 curr.addChild(child);
                 path.add(child);
                 return path;
@@ -325,7 +327,7 @@ public class MCTSAI implements MagicAI {
                     System.err.println("curr == root? " + (curr == root));
                     System.err.println("fast choices = " + game.getFastChoices());
                     System.err.println(event);
-                    printNode(curr, choices);
+                    //printNode(curr, choices);
                     curr.removeLast();
                 }
 
@@ -338,7 +340,7 @@ public class MCTSAI implements MagicAI {
                     System.err.println("curr == root? " + (curr == root));
                     System.err.println("fast choices = " + game.getFastChoices());
                     System.err.println(event);
-                    printNode(curr, choices);
+                    //printNode(curr, choices);
                     System.exit(1);
                 }
 
@@ -467,7 +469,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private int numSim = 0;
     private double score = 0;
     private int evalScore = 0;
-    public String desc;
+    //public String desc;
 
     public MCTSGameTree(final int choice, final int evalScore) { 
         this.evalScore = evalScore;
