@@ -2,35 +2,41 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareBlockersResult;
 
 public class MagicDeclareBlockersAction extends MagicAction {
 
+	private final MagicPlayer player;
 	private final MagicDeclareBlockersResult result;
+	private int oldBlockers;
 	
-	public MagicDeclareBlockersAction(final MagicDeclareBlockersResult result) {
-		
-		this.result=result;
+	public MagicDeclareBlockersAction(final MagicPlayer player, final MagicDeclareBlockersResult result) {
+        this.player = player;
+		this.result = result;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		
+		oldBlockers=player.getNrOfBlockers();
+        int count = 0;
+
 		for (final MagicCombatCreature creatures[] : result) {
-			
 			if (creatures.length>1) {
 				final MagicPermanent attacker=creatures[0].permanent;
 				for (int index=1;index<creatures.length;index++) {
-				
 					game.doAction(new MagicDeclareBlockerAction(attacker,creatures[index].permanent));
+                    count++;
 				}
 			}
 		}
+
+        player.setNrOfBlockers(count);
 	}
 	
 	@Override
 	public void undoAction(final MagicGame game) {
-		
+		player.setNrOfBlockers(oldBlockers);
 	}
 }
