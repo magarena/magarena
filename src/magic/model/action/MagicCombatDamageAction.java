@@ -20,19 +20,20 @@ public class MagicCombatDamageAction extends MagicAction {
 	
 	private final MagicPlayer attackingPlayer;
 	private final MagicPlayer defendingPlayer;
+    private final boolean first;
 	
-	public MagicCombatDamageAction(final MagicPlayer attackingPlayer,final MagicPlayer defendingPlayer) {
-	
+	public MagicCombatDamageAction(
+            final MagicPlayer attackingPlayer,
+            final MagicPlayer defendingPlayer, 
+            final boolean first) {
 		this.attackingPlayer=attackingPlayer;
 		this.defendingPlayer=defendingPlayer;
+        this.first = first;
 	}
 
-	private boolean dealsCombatDamage(final boolean first,final long flags) {
-		
-		if (first) {
-			return MagicAbility.FirstStrike.hasAbility(flags)||MagicAbility.DoubleStrike.hasAbility(flags);
-		} 
-		return !MagicAbility.FirstStrike.hasAbility(flags)||MagicAbility.DoubleStrike.hasAbility(flags);
+	private boolean dealsCombatDamage(final long flags) {
+        return first ? MagicAbility.FirstStrike.hasAbility(flags) || MagicAbility.DoubleStrike.hasAbility(flags) :
+                      !MagicAbility.FirstStrike.hasAbility(flags) || MagicAbility.DoubleStrike.hasAbility(flags);
 	}
 	
 	private void combatDamage(
@@ -40,7 +41,6 @@ public class MagicCombatDamageAction extends MagicAction {
             final MagicPlayer attackingPlayer,
             final MagicPlayer defendingPlayer) {
 
-        final boolean first = false;
 		final Collection<MagicDamage> combatDamage=new ArrayList<MagicDamage>();
 
 		// Determine all combat damage that must be dealt.
@@ -52,7 +52,7 @@ public class MagicCombatDamageAction extends MagicAction {
 
 					// Checks if blocker deals first strike or regular combat damage.
 					final long flags=blocker.getAllAbilityFlags(game);
-					if (dealsCombatDamage(first,flags)) {
+					if (dealsCombatDamage(flags)) {
 						final int power=blocker.getPower(game);
 						// Checks if blocker has power > 0.
 						if (power>0) {
@@ -63,7 +63,7 @@ public class MagicCombatDamageAction extends MagicAction {
 
 				// Check if attacker deals first strike or regular combat damage.
 				final long flags=attacker.getAllAbilityFlags(game);
-				if (dealsCombatDamage(first,flags)) {
+				if (dealsCombatDamage(flags)) {
 					// Checks if attacker has power > 0.
 					int power=attacker.getPower(game);
 					if (power>0) {
