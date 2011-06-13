@@ -13,7 +13,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicActivationMap;
 import magic.model.event.MagicEvent;
-import magic.model.phase.MagicCombatDamagePhase;
+import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
 import magic.ui.choice.PlayChoicePanel;
 
@@ -66,9 +66,12 @@ public class MagicPlayChoice extends MagicChoice {
 	
 	private Set<Object> getValidChoices(final MagicGame game,final MagicPlayer player) {
 		final Set<Object> validChoices=new HashSet<Object>();
-		if (game.getPhase() == MagicCombatDamagePhase.getInstance()) {
+
+        //no actions can be taken during combat damage phase
+		if (game.isPhase(MagicPhaseType.CombatDamage)) {
             return validChoices;
         }
+
 		final MagicActivationMap activationMap=player.getActivationMap();
 		for (final MagicActivation activation : activationMap.getActivations()) {
 			final Set<MagicSource> sources=activationMap.get(activation);
