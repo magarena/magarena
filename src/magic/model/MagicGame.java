@@ -210,7 +210,6 @@ public class MagicGame {
 	}		
 	
 	public boolean canAlwaysPass() {
-		
 		if (GeneralConfig.getInstance().getAlwaysPass()) {
 			return phase.getType()==MagicPhaseType.Draw||phase.getType()==MagicPhaseType.BeginOfCombat;
 		}
