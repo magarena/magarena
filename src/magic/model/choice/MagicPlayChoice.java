@@ -42,6 +42,11 @@ public class MagicPlayChoice extends MagicChoice {
 		if (game.getStack().hasItemOnTopOfPlayer(player)) {
 			return PASS_OPTIONS;
 		}
+
+        //can't play spells or abilities during combat damage phase
+        if (game.isPhase(MagicPhaseType.CombatDamage)) {
+            return PASS_OPTIONS;
+        }
 		
 		final List<Object> options=new ArrayList<Object>();
 		final MagicActivationMap activationMap=player.getActivationMap();
@@ -89,11 +94,21 @@ public class MagicPlayChoice extends MagicChoice {
 		if (game.canAlwaysPass()) {
 			return PASS_CHOICE_RESULTS;
 		} 
+        
+        if ((game.isPhase(MagicPhaseType.DeclareAttackers) ||
+             game.isPhase(MagicPhaseType.DeclareBlockers) ||
+             game.isPhase(MagicPhaseType.CombatDamage) ||
+             game.isPhase(MagicPhaseType.EndOfCombat)) &&
+            player.getNrOfAttackers() == 0 && 
+            game.getOpponent(player).getNrOfAttackers() == 0) {
+			return PASS_CHOICE_RESULTS;
+        }
 		
 		final Set<Object> validChoices;
         validChoices=getValidChoices(game,player);
-
-		if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
+		
+        if ((game.isPhase(MagicPhaseType.CombatDamage)) ||
+            (validChoices.isEmpty() && game.canSkipSingleChoice())) {
             if (!game.getStack().isEmpty()) {
                 try {
                      Thread.sleep(1000);
@@ -103,16 +118,6 @@ public class MagicPlayChoice extends MagicChoice {
             }
 			return PASS_CHOICE_RESULTS;
 		}
-
-        if ((game.isPhase(MagicPhaseType.DeclareAttackers) ||
-             game.isPhase(MagicPhaseType.DeclareBlockers) ||
-             game.isPhase(MagicPhaseType.CombatDamage) ||
-             game.isPhase(MagicPhaseType.EndOfCombat)) &&
-            player.getNrOfAttackers() == 0 && 
-            game.getOpponent(player).getNrOfAttackers() == 0) {
-			return PASS_CHOICE_RESULTS;
-        }
-
 
         /*
         if ((game.getStack().isEmpty() || game.getStack().hasItemOnTopOfPlayer(player)) && 

@@ -10,6 +10,7 @@ import magic.model.event.MagicPriorityEvent;
 public class MagicCombatDamagePhase extends MagicPhase {
 
 	private static final MagicPhase INSTANCE=new MagicCombatDamagePhase();
+    private boolean regular = false;
 
 	private MagicCombatDamagePhase() {
 		super(MagicPhaseType.CombatDamage);
@@ -27,14 +28,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
 		final int poisonBefore=defendingPlayer.getPoison();
         
   		//deal first strike damage
-        game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, true));
-        //resolve stack
-        while (!game.getStack().isEmpty()) {
-            game.doAction(new MagicStackResolveAction());
-            SoundEffects.getInstance().playClip(game,SoundEffects.RESOLVE_SOUND);
-        }
-        //deal regular damage
-  		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, false));
+        game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, !regular));
 
 		final int lifeAfter=defendingPlayer.getLife();
 		final int poisonAfter=defendingPlayer.getPoison();
@@ -51,7 +45,16 @@ public class MagicCombatDamagePhase extends MagicPhase {
 			game.logMessage(defendingPlayer,"{c}"+message.toString());			
 		}
 
-        game.setStep(MagicStep.NextPhase);
-		SoundEffects.getInstance().playClip(game,SoundEffects.COMBAT_SOUND);
+        if (!regular) {
+            game.setStep(MagicStep.ActivePlayer);
+        } else {
+            SoundEffects.getInstance().playClip(game,SoundEffects.COMBAT_SOUND);
+        }
 	}	
+	
+    protected void executeEndOfPhase(final MagicGame game) {
+        regular = true;
+        executeBeginStep(game);
+        regular = false;
+    }
 }
