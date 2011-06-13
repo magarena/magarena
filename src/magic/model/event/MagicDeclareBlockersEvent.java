@@ -15,7 +15,7 @@ public class MagicDeclareBlockersEvent extends MagicEvent {
 
 			final MagicPlayer player=(MagicPlayer)data[0];
 			final MagicDeclareBlockersResult result=(MagicDeclareBlockersResult)choiceResults[0];
-			game.doAction(new MagicDeclareBlockersAction(result));
+			game.doAction(new MagicDeclareBlockersAction(player,result));
 			game.logBlockers(player,result);
 		}
 	};

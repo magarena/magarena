@@ -32,23 +32,23 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 	@Override
 	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
 		
-		final MagicDeclareBlockersResultBuilder builder=new MagicDeclareBlockersResultBuilder(game,player,game.getFastChoices());
+		final MagicDeclareBlockersResultBuilder builder=new MagicDeclareBlockersResultBuilder(
+                game,player,game.getFastChoices());
 		return builder.buildResults();
 	}
 	
 	/** Builds result and does cleanup for blockers. */
-	private void buildResult(final MagicCombatCreatureBuilder builder,final MagicDeclareBlockersResult result) {
-		
+	private void buildResult(
+            final MagicCombatCreatureBuilder builder,
+            final MagicDeclareBlockersResult result) {
+
 		for (final MagicCombatCreature attacker : builder.getAttackers()) {
-			
 			final MagicPermanentList blockers=attacker.permanent.getBlockingCreatures();
 			if (!blockers.isEmpty()) {
 				final List<MagicCombatCreature> creatures=new ArrayList<MagicCombatCreature>();
 				creatures.add(attacker);
 				for (final MagicPermanent blocker : blockers) {
-					
 					for (final MagicCombatCreature candidateBlocker : attacker.candidateBlockers) {
-						
 						if (candidateBlocker.permanent==blocker) {
 							creatures.add(candidateBlocker);
 							break;
