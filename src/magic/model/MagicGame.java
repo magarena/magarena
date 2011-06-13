@@ -189,24 +189,19 @@ public class MagicGame {
 
 	
 	public boolean canSkipSingleChoice() {
-        return GeneralConfig.getInstance().getSkipSingle();
-        /*
-		if (GeneralConfig.getInstance().getSkipSingle()) {
-            if (phase.getType()==MagicPhaseType.DeclareBlockers) {
-				return (turnPlayer!=visiblePlayer||turnPlayer.getNrOfAttackers()==0); //&&stack.isEmpty();
-			}
-			return true; //stack.isEmpty();
-		}
-		return false;
-        */
+        //human is attacking, AI is blocking, 
+        //pass priority during declare blockers if AI is not blocking and nothing else to do
+		return GeneralConfig.getInstance().getSkipSingle() &&
+            !(isPhase(MagicPhaseType.DeclareBlockers) && getOpponent(turnPlayer).getNrOfBlockers() > 0);
 	}
 	
 	public boolean canSkipSingleManaChoice() {
 		return GeneralConfig.getInstance().getSkipSingle();
 	}
-	
+
+    //human is declaring blockers, skip if AI is not attacking
 	public boolean canSkipDeclareBlockersSingleChoice() {
-		return GeneralConfig.getInstance().getSkipSingle()&&turnPlayer.getNrOfAttackers()==0;
+		return GeneralConfig.getInstance().getSkipSingle() && turnPlayer.getNrOfAttackers() == 0;
 	}		
 	
 	public boolean canAlwaysPass() {
