@@ -293,32 +293,26 @@ public class MagicGame {
 	}
 	
 	public MagicPhase getPhase() {
-		
 		return phase;
 	}
 	
 	public boolean isPhase(final MagicPhaseType type) {
-		
 		return phase.getType()==type;
 	}
 	
 	public boolean isMainPhase() {
-		
 		return phase.getType().isMain();
 	}
 	
 	public void setStep(final MagicStep step) {
-		
 		this.step=step;
 	}
 		
 	public MagicStep getStep() {
-		
 		return step;
 	}
 			
 	public void resolve() {
-
 		if (stack.isEmpty()) {
 			step=MagicStep.NextPhase;
 		} else {
@@ -327,7 +321,6 @@ public class MagicGame {
 	}
 		
 	public MagicPayedCost getPayedCost() {
-		
 		return payedCost;
 	}
 	
