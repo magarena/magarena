@@ -67,11 +67,6 @@ public class MagicPlayChoice extends MagicChoice {
 	private Set<Object> getValidChoices(final MagicGame game,final MagicPlayer player) {
 		final Set<Object> validChoices=new HashSet<Object>();
 
-        //no actions can be taken during combat damage phase
-		if (game.isPhase(MagicPhaseType.CombatDamage)) {
-            return validChoices;
-        }
-
 		final MagicActivationMap activationMap=player.getActivationMap();
 		for (final MagicActivation activation : activationMap.getActivations()) {
 			final Set<MagicSource> sources=activationMap.get(activation);

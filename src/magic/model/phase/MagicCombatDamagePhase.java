@@ -10,7 +10,6 @@ import magic.model.event.MagicPriorityEvent;
 public class MagicCombatDamagePhase extends MagicPhase {
 
 	private static final MagicPhase INSTANCE=new MagicCombatDamagePhase();
-    private boolean regular = false;
 
 	private MagicCombatDamagePhase() {
 		super(MagicPhaseType.CombatDamage);
@@ -27,9 +26,15 @@ public class MagicCombatDamagePhase extends MagicPhase {
 		final int lifeBefore=defendingPlayer.getLife();
 		final int poisonBefore=defendingPlayer.getPoison();
         
-        //regular == false -> do first strike damage
-        //regular == true  -> do regular damage
-  		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, !regular));
+  		//deal first strike damage
+        game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, true));
+        //resolve stack
+        while (!game.getStack().isEmpty()) {
+            game.doAction(new MagicStackResolveAction());
+            SoundEffects.getInstance().playClip(game,SoundEffects.RESOLVE_SOUND);
+        }
+        //deal regular damage
+  		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, false));
 
 		final int lifeAfter=defendingPlayer.getLife();
 		final int poisonAfter=defendingPlayer.getPoison();
@@ -46,49 +51,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
 			game.logMessage(defendingPlayer,"{c}"+message.toString());			
 		}
 
-		if (!regular) {
-            regular = true;
-            game.setStep(MagicStep.ActivePlayer);
-        } else {
-            regular = false;
-            game.setStep(MagicStep.NextPhase);
-		    SoundEffects.getInstance().playClip(game,SoundEffects.COMBAT_SOUND);
-        }
+        game.setStep(MagicStep.NextPhase);
+		SoundEffects.getInstance().playClip(game,SoundEffects.COMBAT_SOUND);
 	}	
-	
-    @Override
-    public void executePhase(final MagicGame game) {
-
-		switch (game.getStep()) {
-			case Begin:
-				executeBeginStep(game);
-				break;
-			case ActivePlayer:
-				game.addEvent(new MagicPriorityEvent(game.getPlayer(0)));
-				break;
-			case OtherPlayer:
-				game.addEvent(new MagicPriorityEvent(game.getOpponent(game.getTurnPlayer())));
-				break;
-			case Resolve:
-				// Stack can be empty at this point, for instance by a counter unless event.
-				if (!game.getStack().isEmpty()) {
-					game.doAction(new MagicStackResolveAction());
-					SoundEffects.getInstance().playClip(game,SoundEffects.RESOLVE_SOUND);
-				}
-                if (game.isArtificial()) {
-					// Resolve stack in one go.
-					if (game.getStack().isEmpty()) {
-                        game.setStep(MagicStep.NextPhase);
-					}
-                } else {
-                    game.setStep(MagicStep.ActivePlayer);						
-                }
-				break;
-			case NextPhase:
-				executeEndOfPhase(game);
-				game.changePhase(game.getGameplay().getNextPhase(game));
-				break;
-		}
-		game.checkState();
-	}
 }

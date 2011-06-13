@@ -20,15 +20,7 @@ public class MagicPriorityEvent extends MagicEvent {
                 final Object[] choiceResults) {
 			
 			final MagicPlayChoiceResult playChoiceResult=(MagicPlayChoiceResult)choiceResults[0];
-            if (game.isPhase(MagicPhaseType.CombatDamage)) {
-		        if (game.getStack().isEmpty()) {
-                    //go back to begin and deal regular damage
-                    game.setStep(MagicStep.Begin);
-                } else {
-                    //resolve triggers due to first strike
-                    game.setStep(MagicStep.Resolve);
-                }
-            } else if (playChoiceResult==MagicPlayChoiceResult.PASS) {
+            if (playChoiceResult==MagicPlayChoiceResult.PASS) {
 				game.incrementPriorityPassedCount();
 				// When passing, the last played activation can no longer be played.
 				game.getPriorityPlayer().getActivationPriority().activationId++;
