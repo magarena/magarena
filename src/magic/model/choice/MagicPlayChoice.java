@@ -13,6 +13,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicActivationMap;
 import magic.model.event.MagicEvent;
+import magic.model.phase.MagicCombatDamagePhase;
 import magic.ui.GameController;
 import magic.ui.choice.PlayChoicePanel;
 
@@ -31,7 +32,11 @@ public class MagicPlayChoice extends MagicChoice {
 	}
 	
 	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	public Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		// When something is already on top of stack for the player, always pass.
 		if (game.getStack().hasItemOnTopOfPlayer(player)) {
@@ -60,14 +65,14 @@ public class MagicPlayChoice extends MagicChoice {
 	}
 	
 	private Set<Object> getValidChoices(final MagicGame game,final MagicPlayer player) {
-
 		final Set<Object> validChoices=new HashSet<Object>();
+		if (game.getPhase() == MagicCombatDamagePhase.getInstance()) {
+            return validChoices;
+        }
 		final MagicActivationMap activationMap=player.getActivationMap();
 		for (final MagicActivation activation : activationMap.getActivations()) {
-			
 			final Set<MagicSource> sources=activationMap.get(activation);
 			for (final MagicSource activationSource : sources) {
-				
 				if (activation.canPlay(game,player,activationSource,false)) {
 					validChoices.add(activationSource);
 				}
@@ -77,7 +82,11 @@ public class MagicPlayChoice extends MagicChoice {
 	}
 	
 	@Override
-	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+	public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		if (game.canAlwaysPass()) {
 			return PASS_CHOICE_RESULTS;
@@ -157,7 +166,6 @@ public class MagicPlayChoice extends MagicChoice {
 	}
 
 	public static MagicChoice getInstance() {
-		
 		return INSTANCE;
 	}
 }
