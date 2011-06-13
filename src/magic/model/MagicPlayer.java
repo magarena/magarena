@@ -267,7 +267,7 @@ public class MagicPlayer implements MagicTarget {
 		if (library.useSmartShuffle()) {
 			library.smartShuffle();
 		} else {
-			library.shuffle(MagicRandom.nextInt(library.size()));
+			library.shuffle(MagicRandom.nextInt(library.size()+1));
 		}
 
 		for (int count=handSize;count>0&&!library.isEmpty();count--) {
