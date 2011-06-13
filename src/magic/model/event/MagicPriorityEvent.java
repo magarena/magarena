@@ -54,7 +54,6 @@ public class MagicPriorityEvent extends MagicEvent {
 	};
 
 	public MagicPriorityEvent(final MagicPlayer player) {
-		
 		super(null,player,MagicPlayChoice.getInstance(),MagicEvent.NO_DATA,EVENT_ACTION,null);
 	}
 }

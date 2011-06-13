@@ -3,7 +3,6 @@ package magic.model.score;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicCombatDamageAction;
-import magic.model.action.MagicFirstCombatDamageAction;
 import magic.model.action.MagicDeclareBlockersAction;
 import magic.model.choice.MagicDeclareBlockersResult;
 
@@ -25,8 +24,8 @@ public class MagicGameCombatScore implements MagicCombatScore {
 
 		game.startActions();
 		game.doAction(new MagicDeclareBlockersAction(result));
-		game.doAction(new MagicFirstCombatDamageAction(attackingPlayer,defendingPlayer));
-		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer));
+		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer,true));
+		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer,false));
 		// Give extra points for extra blocked creatures.
 		final int score=game.getScore()+result.size();
 		game.undoActions();

@@ -4,7 +4,8 @@ import magic.data.SoundEffects;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicCombatDamageAction;
-import magic.model.action.MagicFirstCombatDamageAction;
+import magic.model.action.MagicStackResolveAction;
+import magic.model.event.MagicPriorityEvent;
 
 public class MagicCombatDamagePhase extends MagicPhase {
 
@@ -27,8 +28,17 @@ public class MagicCombatDamagePhase extends MagicPhase {
 		final MagicPlayer defendingPlayer=game.getOpponent(attackingPlayer);
 		final int lifeBefore=defendingPlayer.getLife();
 		final int poisonBefore=defendingPlayer.getPoison();
-		game.doAction(new MagicFirstCombatDamageAction(attackingPlayer,defendingPlayer));
-		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer));
+        //first strike damage round
+        //clear trigger abilities
+        while (!game.getStack().isEmpty()) {
+            if (!game.isArtificial()) {
+                game.addEvent(new MagicPriorityEvent(game.getPlayer(0)));
+            }
+            game.doAction(new MagicStackResolveAction());
+            SoundEffects.getInstance().playClip(game,SoundEffects.RESOLVE_SOUND);
+        }
+        //regular combat damage round
+		game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, false));
 		final int lifeAfter=defendingPlayer.getLife();
 		final int poisonAfter=defendingPlayer.getPoison();
 		final StringBuffer message=new StringBuffer();
