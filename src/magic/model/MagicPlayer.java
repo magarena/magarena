@@ -30,6 +30,7 @@ public class MagicPlayer implements MagicTarget {
 	private int preventDamage=0;
 	private int extraTurns=0;
 	private int attackers=0;
+	private int blockers=0;
 	private MagicCardCounter cardCounter;
 	private MagicActivationMap activationMap;
 	private MagicBuilderManaCost builderCost;
@@ -79,6 +80,7 @@ public class MagicPlayer implements MagicTarget {
 		preventDamage=sourcePlayer.preventDamage;
 		extraTurns=sourcePlayer.extraTurns;
 		attackers=sourcePlayer.attackers;
+		blockers=sourcePlayer.blockers;
 		hand=sourcePlayer.hand.copy(copyMap);
 		library=sourcePlayer.library.copy(copyMap);
 		graveyard=sourcePlayer.graveyard.copy(copyMap);
@@ -413,13 +415,19 @@ public class MagicPlayer implements MagicTarget {
 	}
 
 	public void setNrOfAttackers(final int attackers) {
-		
 		this.attackers=attackers;
 	}
 	
 	public int getNrOfAttackers() {
-		
 		return attackers;
+	}
+	
+    public void setNrOfBlockers(final int blockers) {
+		this.blockers=blockers;
+	}
+	
+	public int getNrOfBlockers() {
+		return blockers;
 	}
 	
 	public boolean controlsPermanentWithType(final MagicType type) {
