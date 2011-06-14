@@ -167,7 +167,12 @@ public class MagicGame {
 	}
 	
     public long getGameId() {
-        return getGameId(0);
+		long id=0; 
+        id = id*ID_FACTOR + turn;
+        id = id*ID_FACTOR + phase.getType().getIndex();
+		id = players[0].getPlayerId(id);
+		id = players[1].getPlayerId(id);
+		return id;
     }
 	
 	public long getGameId(final int pruneScore) {
@@ -183,7 +188,6 @@ public class MagicGame {
     public String getIdString() {
         return turn + "," + 
                phase.getType().getIndex() + "," + 
-               score + "-" + 
                players[0].getIdString() + "-" +
                players[1].getIdString();
     }
