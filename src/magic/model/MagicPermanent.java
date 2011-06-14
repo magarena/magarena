@@ -600,9 +600,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		blockingCreatures.clear();
 	}
 	
-	public List<MagicAction> checkState(final MagicGame game) {
-        final List<MagicAction> actions = new LinkedList<MagicAction>();
-
+	public void checkState(final MagicGame game, final List<MagicAction> actions) {
 		// +1/+1 and -1/-1 counters cancel each other out.
 		int plusCounters=getCounters(MagicCounterType.PlusOne);
 		if (plusCounters>0) {
@@ -635,8 +633,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicAttachEquipmentAction(this,null));
 			}
 		}
-
-        return actions;
 	}
 	
 	private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source) {

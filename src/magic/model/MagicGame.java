@@ -680,98 +680,88 @@ public class MagicGame {
 	}
 			
 	public MagicStack getStack() {
-		
 		return stack;
 	}
 	
 	public void setPriorityPassed(final boolean passed) {
-		
 		priorityPassed=passed;
 	}
 	
 	public boolean getPriorityPassed() {
-		
 		return priorityPassed;
 	}
 	
 	public void incrementPriorityPassedCount() {
-		
 		priorityPassedCount++;
 	}
 	
 	public void setPriorityPassedCount(final int count) {
-		
 		priorityPassedCount=count;
 	}
 	
 	public int getPriorityPassedCount() {
-		
 		return priorityPassedCount;
 	}
 						
 	public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
-		
 		return new MagicPermanent(createIdentifier(MagicIdentifierType.Permanent),card,controller);
 	}
 	
 	public MagicCardList getExiledUntilEndOfTurn() {
-		
 		return exiledUntilEndOfTurn;
 	}
 	
 	public void setStateCheckRequired(final boolean required) {
-		
-		stateCheckRequired=required;
+		stateCheckRequired = required;
 	}
 	
 	public void setStateCheckRequired() {
-		
-		stateCheckRequired=true;
+		stateCheckRequired = true;
 	}
 	
 	public boolean getStateCheckRequired() {
-		
 		return stateCheckRequired;
 	}
 	
 	public void checkState() {
+		while (stateCheckRequired) {
+			stateCheckRequired = false;
+           
+            //accumulate the state-based actions
+            final List<MagicAction> actions = new ArrayList<MagicAction>(100);
 		
-		if (!stateCheckRequired) {
-			return;
-		}
+            // Check if a player has lost
+            final MagicPlayer lowestLifePlayer =
+                (players[1].getLosingLife() <= players[0].getLosingLife()) ? 
+                players[1]:
+                players[0];
 
-		// Check permanents.
-		do {
-			stateCheckRequired=false;
+            if (lowestLifePlayer.getLosingLife() <= 0) {
+                actions.add(new MagicLoseGameAction(lowestLifePlayer,MagicLoseGameAction.LIFE_REASON));			
+            }
 
-            final List<List<MagicAction>> actionLists = new LinkedList<List<MagicAction>>();
-			for (final MagicPlayer player : players) {
+            final MagicPlayer highestPoisonPlayer =
+                (players[1].getLosingPoison() >= players[0].getLosingPoison()) ? 
+                players[1]:
+                players[0];
+
+            if (highestPoisonPlayer.getLosingPoison() >= LOSING_POISON) {
+                actions.add(new MagicLoseGameAction(highestPoisonPlayer,MagicLoseGameAction.POISON_REASON));
+            }
+		    
+            // Check permanents' state
+            for (final MagicPlayer player : players) {
 				for (final MagicPermanent permanent : player.getPermanents()) {
-					actionLists.add(permanent.checkState(this));
-					// Stop at first change because a permanent could be removed from play.
-                    // when that happens, the iterator is invalid
-					//if (stateCheckRequired) {
-					//	break;
-					//}
+					permanent.checkState(this, actions);
 				}
 			}
 
-            //perform all the actions in sequence
-            for (List<MagicAction> list : actionLists) {
-                for (MagicAction action : list) {
-                    doAction(action);
-                }
+            //perform all the actions at once
+            for (MagicAction action : actions) {
+                doAction(action);
             }
-		} while (stateCheckRequired);
 
-		// Check if a player has lost.
-		final MagicPlayer lowestLifePlayer=(players[1].getLosingLife()<=players[0].getLosingLife())?players[1]:players[0];
-		if (lowestLifePlayer.getLosingLife()<=0) {
-			doAction(new MagicLoseGameAction(lowestLifePlayer,MagicLoseGameAction.LIFE_REASON));			
-		}
-		final MagicPlayer highestPoisonPlayer=(players[1].getLosingPoison()>=players[0].getLosingPoison())?players[1]:players[0];
-		if (highestPoisonPlayer.getLosingPoison()>=LOSING_POISON) {
-			doAction(new MagicLoseGameAction(highestPoisonPlayer,MagicLoseGameAction.POISON_REASON));
+            //some action may set stateCheckRequired to true, if so loop again
 		}
 	}
 
