@@ -1,10 +1,8 @@
-JAR=java -ea -cp $^ 
+JAVA=java -ea -Xms256M -Xmx256M -Ddebug=true 
 SHELL=/bin/bash
-DSC=$(JAR) magic.DeckStrCal
 BUILD=build
 JOPTS=-Xlint:all -d $(BUILD) -cp $(BUILD):.
 SRC=$(shell find -iname *.java) 
-#MAG:=release/Magarena-$(shell hg id -n).jar
 MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
 
@@ -78,7 +76,7 @@ tags: $(SRC)
 	ctags -R .
 
 .Test%: $(MAG)
-	java -cp $(MAG) -DtestGame=Test$* magic.MagicMain
+	$(JAVA) -DtestGame=Test$* magic.MagicMain
 
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
@@ -89,16 +87,16 @@ clean:
 	-rm $(MAG)
 
 jar: $(MAG)
-	java -Ddebug=true -Xmx256M -jar $^
+	$(JAVA) -jar $^
 
 # bug with invalid nodes 
 bug: 11.jar
 
 %.jar: $(MAG)
-	java -DrndSeed=$* -Ddebug=true -Xmx256M -jar $^
+	$(JAVA) -DrndSeed=$* -jar $^
 
 test: $(MAG)
-	$(JAR) -DrndSeed=123 magic.DeckStrCal \
+	$(JAVA) -DrndSeed=123 magic.DeckStrCal \
 	--deck1 release/decks/LSK_G.dec \
 	--ai1 VEGAS \
 	--deck2 release/decks/LSK_G.dec \
