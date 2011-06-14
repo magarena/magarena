@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.LinkedList;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -741,19 +742,26 @@ public class MagicGame {
 
 		// Check permanents.
 		do {
-			
 			stateCheckRequired=false;
+
+            final List<List<MagicAction>> actionLists = new LinkedList<List<MagicAction>>();
 			for (final MagicPlayer player : players) {
-				
 				for (final MagicPermanent permanent : player.getPermanents()) {
-					
-					permanent.checkState(this);
+					actionLists.add(permanent.checkState(this));
 					// Stop at first change because a permanent could be removed from play.
-					if (stateCheckRequired) {
-						break;
-					}
+                    // when that happens, the iterator is invalid
+					//if (stateCheckRequired) {
+					//	break;
+					//}
 				}
 			}
+
+            //perform all the actions in sequence
+            for (List<MagicAction> list : actionLists) {
+                for (MagicAction action : list) {
+                    doAction(action);
+                }
+            }
 		} while (stateCheckRequired);
 
 		// Check if a player has lost.

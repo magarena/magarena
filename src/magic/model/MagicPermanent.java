@@ -5,11 +5,13 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.LinkedList;
 
 import javax.swing.ImageIcon;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
+import magic.model.action.MagicAction;
 import magic.model.action.MagicAttachEquipmentAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeStateAction;
@@ -598,7 +600,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		blockingCreatures.clear();
 	}
 	
-	public void checkState(final MagicGame game) {
+	public List<MagicAction> checkState(final MagicGame game) {
+        final List<MagicAction> actions = new LinkedList<MagicAction>();
 
 		// +1/+1 and -1/-1 counters cancel each other out.
 		int plusCounters=getCounters(MagicCounterType.PlusOne);
@@ -606,8 +609,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			int minusCounters=getCounters(MagicCounterType.MinusOne);
 			if (minusCounters>0) {
 				final int amount=-Math.min(plusCounters,minusCounters);
-				game.doAction(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));
-				game.doAction(new MagicChangeCountersAction(this,MagicCounterType.MinusOne,amount,false));
+				actions.add(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));
+				actions.add(new MagicChangeCountersAction(this,MagicCounterType.MinusOne,amount,false));
 			}
 		}
 		
@@ -615,23 +618,25 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			final int toughness=getToughness(game);
 			if (toughness<=0) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
-				game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			} else if (hasState(MagicPermanentState.Destroyed)) {
-				game.doAction(new MagicChangeStateAction(this,MagicPermanentState.Destroyed,false));
-				game.doAction(new MagicDestroyAction(this));
+				actions.add(new MagicChangeStateAction(this,MagicPermanentState.Destroyed,false));
+				actions.add(new MagicDestroyAction(this));
 			} else if (toughness-damage<=0) {
-				game.doAction(new MagicDestroyAction(this));
+				actions.add(new MagicDestroyAction(this));
 			}
 		} else if (cardDefinition.isAura()) {
 			if (enchantedCreature==null||!enchantedCreature.isCreature()||enchantedCreature.hasProtectionFrom(game,this)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
-				game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
 		} else if (cardDefinition.isEquipment()) {
 			if (equippedCreature!=null&&(!equippedCreature.isCreature()||equippedCreature.hasProtectionFrom(game,this))) {
-				game.doAction(new MagicAttachEquipmentAction(this,null));
+				actions.add(new MagicAttachEquipmentAction(this,null));
 			}
 		}
+
+        return actions;
 	}
 	
 	private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source) {
