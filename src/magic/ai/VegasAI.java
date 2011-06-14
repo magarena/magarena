@@ -41,7 +41,7 @@ public class VegasAI implements MagicAI {
 		final BlockingQueue<Runnable> queue=new ArrayBlockingQueue<Runnable>(size*THREADS);
 		final ThreadPoolExecutor executor=new ThreadPoolExecutor(THREADS,THREADS,2,TimeUnit.MINUTES,queue);
 		final List<VegasScore> scores=new ArrayList<VegasScore>();
-		final int simulations=(sourceGame.getArtificialLevel()*SIMULATIONS)/THREADS;
+		final int simulations=(sourceGame.getArtificialLevel(scorePlayer.getIndex())*SIMULATIONS)/THREADS;
 		for (final Object[] choiceResults : choiceResultsList) {
 		
 			final VegasScore score=new VegasScore(choiceResults);

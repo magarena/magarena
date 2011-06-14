@@ -36,7 +36,7 @@ public class MagicTournament {
 	private int gamesPlayed;
 	private int gamesWon;
 	private int startPlayer;
-	private int difficulty;
+	private int[] difficulty = new int[2];
 	
 	public MagicTournament(final TournamentConfig configuration) {
 
@@ -111,33 +111,37 @@ public class MagicTournament {
         return ais;
     }
 	
-	public void setDifficulty(final int difficulty) {
-		
-		this.difficulty=difficulty;
+	public void setDifficulty(final int diff) {
+        setDifficulty(0,diff);
+        setDifficulty(1,diff);
 	}
 	
-	public int getDifficulty() {
-		
-		return difficulty;
+    public void setDifficulty(final int idx, final int diff) {
+        difficulty[idx] = diff;
+	}
+	
+    public int getDifficulty() {
+		return getDifficulty(0);
+	}
+	
+	public int getDifficulty(final int idx) {
+        return difficulty[idx];
 	}
 	
 	public void updateDifficulty() {
-		
-		difficulty=GeneralConfig.getInstance().getDifficulty();
+		difficulty[0] = GeneralConfig.getInstance().getDifficulty();
+		difficulty[1] = GeneralConfig.getInstance().getDifficulty();
 	}
 	
 	public boolean isEditable() {
-		
 		return gameNr==1;
 	}
 	
 	public boolean isFinished() {
-		
 		return getGamesPlayed()==getGamesTotal();
 	}
 	
 	public void advance(final boolean won) {
-
 		gamesPlayed++;
 		if (won) {
 			gamesWon++;

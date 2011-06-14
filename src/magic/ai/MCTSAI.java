@@ -136,7 +136,7 @@ public class MCTSAI implements MagicAI {
         // return the "best" choice
         
         //ArtificialLevel = number of seconds to run MCTSAI
-        MAXTIME = 1000 * startGame.getArtificialLevel();
+        MAXTIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
         STARTTIME = System.currentTimeMillis();
        
         //root represents the start state

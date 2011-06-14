@@ -13,7 +13,8 @@ import magic.ui.GameController;
 public class DeckStrCal {
         
     private static int games = 10;
-    private static int strength = 6;
+    private static int str1 = 6;
+    private static int str2 = 6;
     private static String deck1 = "";
     private static String deck2 = "";
     private static MagicAIImpl ai1 = MagicAIImpl.DEFAULT;
@@ -33,9 +34,17 @@ public class DeckStrCal {
                     ex.printStackTrace();
                     System.exit(1);
                 }
-            } else if (curr.equals("--strength")) {
+            } else if (curr.equals("--str1")) {
                 try {
-                    strength = Integer.parseInt(next);
+                    str1 = Integer.parseInt(next);
+                } catch (final Exception ex) {
+                    System.err.println("Error: AI strength not an integer");
+                    ex.printStackTrace();
+                    System.exit(1);
+                }
+            } else if (curr.equals("--str2")) {
+                try {
+                    str2 = Integer.parseInt(next);
                 } catch (final Exception ex) {
                     System.err.println("Error: AI strength not an integer");
                     ex.printStackTrace();
@@ -102,7 +111,8 @@ public class DeckStrCal {
         // Set difficulty.
         final MagicTournament testTournament=new MagicTournament(config);
         testTournament.initialize();
-        testTournament.setDifficulty(strength);
+        testTournament.setDifficulty(0, str1);
+        testTournament.setDifficulty(1, str2);
         
         // Set the AI
         testTournament.setAIs(new MagicAI[]{ai1.getAI(), ai2.getAI()});
@@ -128,9 +138,10 @@ public class DeckStrCal {
         System.out.println(
                  "#deck1" +
                 "\tai1" +
+                "\tstr1" +
                 "\tdeck2" +
                 "\tai2" +
-                "\tstrength" +
+                "\tstr2" +
                 "\tgames" +
                 "\td1win"+
                 "\td1lose" 
@@ -149,9 +160,10 @@ public class DeckStrCal {
                 System.err.println(
                         deck1 + "\t" +
                         ai1 + "\t" +
+                        str1 + "\t" +
                         deck2 + "\t" + 
                         ai2 + "\t" +
-                        strength + "\t" +
+                        str2 + "\t" +
                         testTournament.getGamesTotal() + "\t" +
                         testTournament.getGamesWon() + "\t" +
                         (testTournament.getGamesPlayed() - testTournament.getGamesWon())
@@ -162,9 +174,10 @@ public class DeckStrCal {
         System.out.println(
                 deck1 + "\t" +
                 ai1 + "\t" +
+                str1 + "\t" +
                 deck2 + "\t" + 
                 ai2 + "\t" +
-                strength + "\t" +
+                str2 + "\t" +
                 testTournament.getGamesTotal() + "\t" +
                 testTournament.getGamesWon() + "\t" +
                 (testTournament.getGamesPlayed() - testTournament.getGamesWon())

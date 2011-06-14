@@ -214,8 +214,11 @@ public class MagicGame {
 	}
 	
 	public int getArtificialLevel() {
-		
 		return tournament.getDifficulty();
+	}
+	
+    public int getArtificialLevel(final int idx) {
+		return tournament.getDifficulty(idx);
 	}
 
 	public boolean isArtificial() {

@@ -97,7 +97,7 @@ public class ArtificialWorkerPool {
 		}
 		
 		// Find optimal number of main phases and best score and first result single-threaded.
-		int mainPhases=sourceGame.getArtificialLevel();
+		int mainPhases=sourceGame.getArtificialLevel(scorePlayer.getIndex());
 		final ArtificialChoiceResults firstAiChoiceResults=aiChoiceResultsList.get(0);
 		while (true) {
 			pruneScore=createPruneScore();
