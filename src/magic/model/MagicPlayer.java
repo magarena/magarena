@@ -104,6 +104,9 @@ public class MagicPlayer implements MagicTarget {
 		long playerId=id;
         playerId=playerId*ID_FACTOR+life;
 		playerId=playerId*ID_FACTOR+poison;
+		playerId=playerId*ID_FACTOR+stateFlags;
+		playerId=playerId*ID_FACTOR+library.size();
+		playerId=playerId*ID_FACTOR+activationMap.size();
 		playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
 		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
 		playerId=playerId*ID_FACTOR+hand.getCardsId();
