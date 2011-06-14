@@ -14,7 +14,7 @@ import magic.model.variable.MagicStaticLocalVariable;
 
 public class MagicPlayer implements MagicTarget {
 	
-	private static final long ID_FACTOR=13;
+	private static final long ID_FACTOR=31;
 	
 	private MagicPlayerDefinition playerDefinition;
 	private MagicCardList hand;
@@ -117,6 +117,9 @@ public class MagicPlayer implements MagicTarget {
     public String getIdString() {
         return life + "," + 
                poison + "," + 
+               stateFlags + "," + 
+               library.size() + "," + 
+               activationMap.size() + "," + 
                builderCost.getMinimumAmount() + "," + 
                permanents.getPermanentsId() + "," +
                hand.getCardsId() + "," +
