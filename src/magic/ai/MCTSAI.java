@@ -115,6 +115,8 @@ public class MCTSAI implements MagicAI {
             System.err.println("***** cache hit! *****");
             return candidate;
         } else {
+            System.err.println("***** cache miss! *****");
+            cache.clear();
             return new MCTSGameTree(-1, -1, -1);
         }
     }
