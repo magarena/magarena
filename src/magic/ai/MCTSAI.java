@@ -175,7 +175,7 @@ public class MCTSAI implements MagicAI {
         STARTTIME = System.currentTimeMillis();
        
         //root represents the start state
-        final MCTSGameTree root = getNode(startGame, rootChoices);
+        final MCTSGameTree root = new MCTSGameTree(-1, -1, -1); //getNode(startGame, rootChoices);
         LENS.clear();
 
         //end simulations once root is solved or time is up
@@ -331,10 +331,12 @@ public class MCTSAI implements MagicAI {
             curr.setIsAI(game.getScorePlayer() == event.getPlayer());
             curr.setMaxChildren(choices.size());
 
+            /*
             if (curr != root && curr.isAI() && !cached) {
                 cached = true;
                 addNode(game, curr);
             }
+            */
 
             if (curr.size() < choices.size()) {
                 //there are unexplored children of node

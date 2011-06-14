@@ -174,7 +174,6 @@ public class MagicGame {
         id = id*ID_FACTOR + turnTriggers.size();
         id = id*ID_FACTOR + events.size();
         id = id*ID_FACTOR + stack.size();
-        id = id*ID_FACTOR + eventsExecuted;
 		id = players[0].getPlayerId(id);
 		id = players[1].getPlayerId(id);
 		return id;
