@@ -6,4 +6,4 @@
 #$ -o /dev/null
 #SGE_TASK_ID=100
 args=`grep MCTS exp/args | head -$SGE_TASK_ID | tail -1`
-java -Xms256M -Xmx256M -Ddebug=true -DrndSeed=$SGE_TASK_ID -cp build magic.DeckStrCal $args > $SGE_TASK_ID.out 2> $SGE_TASK_ID.err
+java -ea -Xms256M -Xmx256M -Ddebug=true -DrndSeed=$SGE_TASK_ID -cp build magic.DeckStrCal $args > $SGE_TASK_ID.out 2> $SGE_TASK_ID.err
