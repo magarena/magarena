@@ -298,7 +298,7 @@ public class MCTSAI implements MagicAI {
     private boolean checkNode(final MCTSGameTree curr, List<Object[]> choices) {
         for (MCTSGameTree child : curr) {
             final int checksum = getStringHash(choices.get(child.getChoice())[0]);
-            if (child.getChecksum() == checksum) {
+            if (child.getChecksum() != checksum) {
                 System.err.println("ERROR! tree node and choice do not match");
                 printNode(curr, choices);
                 return false;
