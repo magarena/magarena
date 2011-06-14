@@ -267,9 +267,8 @@ public class MCTSAI implements MagicAI {
     }
                
     private static void checkNode(final MCTSGameTree curr, List<Object[]> choices) {
-        int idx = 0;
         for (MCTSGameTree child : curr) {
-            String desc = "" + choices.get(idx)[0];
+            String desc = "" + choices.get(child.getChoice())[0];
             if (!child.desc.equals(desc)) {
                 System.err.println(
                         "ERROR! choices do not match" +
@@ -277,7 +276,6 @@ public class MCTSAI implements MagicAI {
                 printNode(curr, choices);
                 System.exit(1);
             }
-            idx++;
         }
     }
                     
