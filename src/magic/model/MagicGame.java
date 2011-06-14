@@ -169,7 +169,8 @@ public class MagicGame {
     public long getGameId() {
 		long id=0; 
         id = id*ID_FACTOR + turn;
-        id = id*ID_FACTOR + phase.getType().getIndex();
+        id = id*ID_FACTOR + phase.getType().hashCode();
+        id = id*ID_FACTOR + step.hashCode();
         id = id*ID_FACTOR + triggers.size();
         id = id*ID_FACTOR + turnTriggers.size();
         id = id*ID_FACTOR + events.size();
@@ -191,11 +192,11 @@ public class MagicGame {
 
     public String getIdString() {
         return turn + "," + 
-               phase.getType().getIndex() + "," + 
+               phase.getType().hashCode() + "," + 
+               step.hashCode() + "," + 
                triggers.size() + "," +
                turnTriggers.size() + "," +
                events.size() + "," +
-               actions.size() + "," +
                stack.size() + 
                "--" + players[0].getIdString() + "--" +
                players[1].getIdString();
