@@ -51,7 +51,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private int damage=0;
 	private int preventDamage=0;
 	private int fixedScore;
-	// Allows cached retrieval of power, toughness and abilities.
+
+    // Allows cached retrieval of power, toughness and abilities.
 	private boolean cached=false;
 	private MagicPowerToughness cachedTurnPowerToughness=null;
 	private long cachedTurnAbilityFlags=0;
@@ -117,19 +118,35 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public long getId() {
-		
 		return id;
 	}
 	
-	public int getPermanentId() {
-		
-		int id=cardDefinition.getIndex()+stateFlags+damage*7+preventDamage*13;
+	public long getPermanentId() {
+		long pid = cardDefinition.getIndex();
+        pid = pid * 31 + stateFlags;
+        pid = pid * 31 + damage;
+        pid = pid * 31 + preventDamage;
+        pid = pid * 31 + localVariables.size();
+        pid = pid * 31 + (equippedCreature != null ? equippedCreature.getPermanentId() : 1);
+        pid = pid * 31 + (enchantedCreature != null ? enchantedCreature.getPermanentId() : 1);
+        pid = pid * 31 + (blockedCreature != null ? blockedCreature.getPermanentId() : 1);
+        for (int cnt : counters) {
+            pid = pid * 31 + cnt;
+        }
+	    pid = pid * 31 + turnAbilityFlags;
+        pid = pid * 31 + turnPowerIncr;
+        pid = pid * 31 + turnToughnessIncr;
+        pid = pid * 31 + turnColorFlags;
+        pid = pid * 31 + abilityPlayedThisTurn;
+        pid = pid * 31 + turnLocalVariables;
+        /*		
 		if (equippedCreature!=null) {
-			id+=equippedCreature.cardDefinition.getIndex();
+			pid+=equippedCreature.cardDefinition.getIndex();
 		} else if (enchantedCreature!=null) {
-			id+=enchantedCreature.cardDefinition.getIndex();
+			pid+=enchantedCreature.cardDefinition.getIndex();
 		}
-		return id;
+        */
+		return pid;
  	}
 	
 	/** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */
