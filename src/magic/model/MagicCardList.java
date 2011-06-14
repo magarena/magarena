@@ -22,10 +22,10 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return cardList;
 	}
 	
-	public int getCardsId() {
-		int id=size()*97;
+	public long getCardsId() {
+		long id = 0;
 		for (final MagicCard card : this) {
-			id+=card.getCardDefinition().getIndex();
+			id = id * 31 + card.getCardDefinition().getIndex();
 		}
 		return id;
 	}
