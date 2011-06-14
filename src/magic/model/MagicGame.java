@@ -49,7 +49,7 @@ public class MagicGame {
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
 	public static final int LOSING_POISON=10;
 	
-	private static final long ID_FACTOR=13;
+	private static final long ID_FACTOR=31;
 	
 	private final MagicTournament tournament;
 	private final MagicPlayer players[];
@@ -192,7 +192,12 @@ public class MagicGame {
     public String getIdString() {
         return turn + "," + 
                phase.getType().getIndex() + "," + 
-               players[0].getIdString() + "-" +
+               triggers.size() + "," +
+               turnTriggers.size() + "," +
+               events.size() + "," +
+               actions.size() + "," +
+               stack.size() + 
+               "--" + players[0].getIdString() + "--" +
                players[1].getIdString();
     }
 
