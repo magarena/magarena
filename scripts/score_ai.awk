@@ -1,5 +1,5 @@
-#release/decks/LSK_RW.dec        RND     release/decks/LSK_RW.dec        VEGAS   6       10      0       10
-#release/decks/LSK_RW.dec        RND     release/decks/LSK_RW.dec        VEGAS   6       10      3       7
+#release/decks/LSK_RW.dec        RND     6	release/decks/LSK_RW.dec        VEGAS   6       10      0       10
+#release/decks/LSK_RW.dec        RND     6	release/decks/LSK_RW.dec        VEGAS   6       10      3       7
 
 BEGIN {
     FS = "\t"
@@ -9,12 +9,12 @@ BEGIN {
 }
 
 $2 == ai {
-    if ($7 + $8 > win + lose) {
+    if ($8 + $9 > win + lose) {
         s1 -= win
         s2 -= lose
     }
-    win = $7
-    lose = $8
+    win = $8
+    lose = $9
     s1 += win
     s2 += lose
 }
