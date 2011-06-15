@@ -70,17 +70,18 @@ public class MCTSAI implements MagicAI {
     //higher C -> more exploration less exploitation
     static final double C = 1.0;
 
-    //boost score of win nodes by BOOST and decrease scores of lost nodes by BOOST
+    //boost score of win nodes by BOOST 
     static final int BOOST = 1000000;
 
-    //cache nodes that might be used in subsequent decision
+    //cache nodes to reuse them in later decision
     private final NodeCache cache = new NodeCache(1000);
 
     public MCTSAI() {
+        //no loggig, cheats
         this(false, true);
     }
 
-    public MCTSAI(boolean printLog, boolean cheat) {
+    public MCTSAI(final boolean printLog, final boolean cheat) {
         LOGGING = printLog || (System.getProperty("debug") != null);
         CHEAT = cheat;
     }
