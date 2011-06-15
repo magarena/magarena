@@ -189,9 +189,9 @@ public class MagicGame {
                turnTriggers.size() + "," +
                events.getEventsId() + "," +
                stack.getItemsId() + 
-               "--" + 
+               "\n" + 
                players[0].getIdString() + 
-               "--" +
+               "\n" +
                players[1].getIdString();
     }
 	
