@@ -19,4 +19,14 @@ public class MagicEventQueue extends LinkedList<MagicEvent> {
 			add(copyMap.copy(event));
 		}
 	}	
+
+    public long getEventsId() {
+        int idx = 0;
+        long[] input = new long[size() + 1];
+        for (MagicEvent event : this) {
+            input[idx] = event.getEventId();
+            idx++;
+        }
+        return magic.MurmurHash3.hash(input);
+    }
 }
