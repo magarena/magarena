@@ -31,8 +31,14 @@ public class MagicEvent implements MagicCopyable {
 	private MagicEventAction action;
 	private String description;
 
-	public MagicEvent(final MagicSource source,final MagicPlayer player,final MagicChoice choice,
-			final MagicTargetPicker targetPicker,final Object data[],final MagicEventAction action,final String description) {
+	public MagicEvent(
+            final MagicSource source,
+            final MagicPlayer player,
+            final MagicChoice choice,
+			final MagicTargetPicker targetPicker,
+            final Object data[],
+            final MagicEventAction action,
+            final String description) {
 
 		this.source=source;
 		this.player=player;
@@ -43,14 +49,18 @@ public class MagicEvent implements MagicCopyable {
 		this.description=description;
 	}
 
-	public MagicEvent(final MagicSource source,final MagicPlayer player,final MagicChoice choice,
-			final Object data[],final MagicEventAction action,final String description) {
+	public MagicEvent(
+            final MagicSource source,
+            final MagicPlayer player,
+            final MagicChoice choice,
+			final Object data[],
+            final MagicEventAction action,
+            final String description) {
 		
 		this(source,player,choice,MagicDefaultTargetPicker.getInstance(),data,action,description);
 	}
 	
 	public MagicEvent(final MagicSource source,final MagicPlayer player,final Object data[],final MagicEventAction action,final String description) {
-		
 		this(source,player,NO_CHOICES,null,data,action,description);
 	}
 	
@@ -177,5 +187,9 @@ public class MagicEvent implements MagicCopyable {
 
     public String toString() {
         return "EVENT: " + description + " " + (choice != null ? choice.getDescription() : "null");
+    }
+
+    public int getEventId() {
+        return toString().hashCode();
     }
 }
