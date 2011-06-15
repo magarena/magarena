@@ -18,7 +18,7 @@ public class MagicExcludeChoice extends MagicChoice {
 	private static final Collection<Object> EMPTY_EXCLUDE_RESULT=Collections.<Object>singleton(new MagicExcludeResult());
 	
 	private MagicExcludeChoice() {
-		super("Exclude Mana or Combat Choice (AI only)");
+		super("...");
 	}
 	
     public static MagicChoice getInstance() {
@@ -48,9 +48,9 @@ public class MagicExcludeChoice extends MagicChoice {
         final int numOptions = excludeAllFlags + 1;
 		
 		// In later turns, favour mana over combat when there are more than one exclude permanents.
-		if (numOptions > 16 ||
-           (game.getRelativeTurn() > 1 && excludePermanents.size() > 1)) {
-			return Collections.<Object>singleton(new MagicExcludeResult(excludePermanents,0));
+		if (numOptions > 8) {
+            //(game.getRelativeTurn() > 1 && excludePermanents.size() > 1)) {
+		    return Collections.<Object>singleton(new MagicExcludeResult(excludePermanents,0));
 		}
 
 		final List<Object> excludeOptions = new ArrayList<Object>(numOptions);
