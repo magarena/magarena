@@ -115,6 +115,7 @@ public class MCTSAI implements MagicAI {
         if (candidate != null) { 
             System.err.println("CACHE: HIT");
             System.err.println("HIT  : " + game.getIdString());
+            printNode(candidate, rootChoices);
             return candidate;
         } else {
             System.err.println("CACHE: MISS");
@@ -184,7 +185,8 @@ public class MCTSAI implements MagicAI {
         LENS.clear();
 
         //end simulations once root is solved or time is up
-        for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isAIWin(); ) {
+        int sims = 0;
+        for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isAIWin(); sims++) {
             //create a new MagicGame for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
             if (!CHEAT) {
@@ -243,7 +245,7 @@ public class MCTSAI implements MagicAI {
 
         if (LOGGING) {
             final long duration = System.currentTimeMillis() - STARTTIME;
-            log("MCTS:  time: " + duration + "  sims:  " + root.getNumSim());
+            log("MCTS:  time: " + duration + "  sims:  " + (root.getNumSim() - sims) + "+" + sims);
             int minL = 1000000;
             int maxL = -1;
             int sumL = 0;
