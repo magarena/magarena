@@ -122,23 +122,27 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public long getPermanentId() {
-		long pid = cardDefinition.getIndex();
-        pid = pid * 31 + stateFlags;
-        pid = pid * 31 + damage;
-        pid = pid * 31 + preventDamage;
-        pid = pid * 31 + localVariables.size();
-        pid = pid * 31 + (equippedCreature != null ? equippedCreature.getPermanentId() : 1);
-        pid = pid * 31 + (enchantedCreature != null ? enchantedCreature.getPermanentId() : 1);
-        pid = pid * 31 + (blockedCreature != null ? blockedCreature.getPermanentId() : 1);
-        for (int cnt : counters) {
-            pid = pid * 31 + cnt;
-        }
-	    pid = pid * 31 + turnAbilityFlags;
-        pid = pid * 31 + turnPowerIncr;
-        pid = pid * 31 + turnToughnessIncr;
-        pid = pid * 31 + turnColorFlags;
-        pid = pid * 31 + abilityPlayedThisTurn;
-        pid = pid * 31 + turnLocalVariables;
+        long[] input = {
+            cardDefinition.getIndex(),
+            stateFlags,
+            damage,
+            preventDamage,
+            localVariables.size(),
+            (equippedCreature != null ? equippedCreature.getPermanentId() : 1),
+            (enchantedCreature != null ? enchantedCreature.getPermanentId() : 1),
+            (blockedCreature != null ? blockedCreature.getPermanentId() : 1),
+            counters[0],
+            counters[1],
+            counters[2],
+            counters[3],
+	        turnAbilityFlags,
+            turnPowerIncr,
+            turnToughnessIncr,
+            turnColorFlags,
+            abilityPlayedThisTurn,
+            turnLocalVariables
+        };
+		return magic.MurmurHash3.hash(input);
         /*		
 		if (equippedCreature!=null) {
 			pid+=equippedCreature.cardDefinition.getIndex();
@@ -146,7 +150,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			pid+=enchantedCreature.cardDefinition.getIndex();
 		}
         */
-		return pid;
  	}
 	
 	/** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */
