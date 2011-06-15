@@ -88,7 +88,7 @@ public class MCTSAI implements MagicAI {
     private void addNode(final MagicGame game, final MCTSGameTree node) {
         final long gid = game.getGameId();
         if (!cache.containsKey(gid)) {
-            System.err.println("ADD : " + game.getIdString());
+            System.err.println("ADD  : " + game.getIdString());
             cache.put(gid, node);
         }
     }
@@ -113,12 +113,14 @@ public class MCTSAI implements MagicAI {
         }
         
         if (candidate != null) { 
+            System.err.println("CACHE: HIT");
+            System.err.println("HIT  : " + game.getIdString());
             return candidate;
         } else {
             System.err.println("CACHE: MISS");
+            System.err.println("MISS : " + game.getIdString());
             printNode(candidate, rootChoices);
             cache.clear();
-            System.err.println("MISS: " + game.getIdString());
             return new MCTSGameTree(-1, -1, -1);
         }
     }
@@ -310,18 +312,21 @@ public class MCTSAI implements MagicAI {
         return true;
     }
                     
-    private static void printNode(final MCTSGameTree curr, List<Object[]> choices) {
+    private static String printNode(final MCTSGameTree curr, List<Object[]> choices) {
         if (curr == null) {
-            System.err.println("NODE is null");
-            return;
+            return "NODE is null";
+        }
+        for (String str : curr.choicesStr) {
+            System.err.println("PAREN: " + str);
         }
         for (MCTSGameTree child : curr) {
-            System.err.println("NODE: " + child.desc + " " + child.getChecksum());
+            System.err.println("CHILD: " + child.desc + " " + child.getChecksum());
         }
         for (Object[] choice : choices) {
             final int checksum = getStringHash(choice[0]);
-            System.err.println("GAME: " + choice[0] + " " + checksum);
+            System.err.println("GAME : " + choice[0] + " " + checksum);
         }
+        return "";
     }
 
     private LinkedList<MCTSGameTree> genNewTreeNode(final MCTSGameTree root, final MagicGame game) {
@@ -336,11 +341,13 @@ public class MCTSAI implements MagicAI {
 
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
             assert curr.getMaxChildren() < 0 || curr.getMaxChildren() == choices.size() : 
-                "ERROR! Capacity of node is " + curr.getMaxChildren() + ", number of choices is " + choices.size();
+                "ERROR! Capacity of node is " + curr.getMaxChildren() + ", number of choices is " + choices.size() 
+                 + printNode(curr, choices);
           
             final MagicEvent event = game.getNextEvent();
             curr.setIsAI(game.getScorePlayer() == event.getPlayer());
             curr.setMaxChildren(choices.size());
+            curr.setChoicesStr(choices);
 
             if (curr != root && curr.isAI() && !cached) {
                 cached = true;
@@ -363,7 +370,8 @@ public class MCTSAI implements MagicAI {
             } else {
                 //assert checkNode(curr, choices);
 
-                assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game"; 
+                assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game" + 
+                    printNode(curr,choices); 
 
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
@@ -485,6 +493,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private int evalScore = 0;
     private double score = 0;
     public String desc;
+    public String[] choicesStr;
 
     public MCTSGameTree(final int choice, final int evalScore, final int checksum) { 
         this.evalScore = evalScore;
@@ -494,6 +503,13 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public int getChecksum() {
         return checksum;
+    }
+
+    public void setChoicesStr(List<Object[]> choices) {
+        choicesStr = new String[choices.size()];
+        for (int i = 0; i < choices.size(); i++) {
+            choicesStr[i] = "" + choices.get(i)[0];
+        }
     }
 
     public void setMaxChildren(final int mc) {
