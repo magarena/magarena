@@ -113,10 +113,10 @@ public class MCTSAI implements MagicAI {
         }
         
         if (candidate != null) { 
-            System.err.println("***** cache hit! *****");
             return candidate;
         } else {
-            System.err.println("***** cache miss! *****");
+            System.err.println("CACHE: MISS");
+            printNode(candidate, rootChoices);
             cache.clear();
             System.err.println("MISS: " + game.getIdString());
             return new MCTSGameTree(-1, -1, -1);
@@ -311,6 +311,10 @@ public class MCTSAI implements MagicAI {
     }
                     
     private static void printNode(final MCTSGameTree curr, List<Object[]> choices) {
+        if (curr == null) {
+            System.err.println("NODE is null");
+            return;
+        }
         for (MCTSGameTree child : curr) {
             System.err.println("NODE: " + child.desc + " " + child.getChecksum());
         }
@@ -329,6 +333,10 @@ public class MCTSAI implements MagicAI {
         for (List<Object[]> choices = getNextChoices(game, curr == root, false);
              choices != null;
              choices = getNextChoices(game, curr == root, false)) {
+
+            assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
+            assert curr.getMaxChildren() < 0 || curr.getMaxChildren() == choices.size() : 
+                "ERROR! Capacity of node is " + curr.getMaxChildren() + ", number of choices is " + choices.size();
           
             final MagicEvent event = game.getNextEvent();
             curr.setIsAI(game.getScorePlayer() == event.getPlayer());
@@ -355,30 +363,7 @@ public class MCTSAI implements MagicAI {
             } else {
                 //assert checkNode(curr, choices);
 
-                while (curr.size() > choices.size()) {
-                    System.err.println(
-                            "ERROR! MCTS: too many children nodes! " + 
-                            "curr.size = " + curr.size() + 
-                            ", choices.size = " + choices.size());
-                    System.err.println("curr == root? " + (curr == root));
-                    System.err.println("fast choices = " + game.getFastChoices());
-                    System.err.println(event);
-                    printNode(curr, choices);
-                    System.exit(1);
-                }
-
-                //curr.size() == choices.size()
-                if (curr.size() == 0) {
-                    System.err.println(
-                            "ERROR! MCTS: no children nodes! " +
-                            "curr.size = " + curr.size() + 
-                            ", choices.size = " + choices.size());
-                    System.err.println("curr == root? " + (curr == root));
-                    System.err.println("fast choices = " + game.getFastChoices());
-                    System.err.println(event);
-                    printNode(curr, choices);
-                    System.exit(1);
-                }
+                assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game"; 
 
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
@@ -494,7 +479,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private final int choice;
     private final int checksum;
     private boolean isAI;
-    private int maxChildren;
+    private int maxChildren = -1;
     private int numLose = 0;
     private int numSim = 0;
     private int evalScore = 0;
@@ -513,6 +498,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
 
     public void setMaxChildren(final int mc) {
         maxChildren = mc;
+    }
+    
+    public int getMaxChildren() {
+        return maxChildren;
     }
 
     public boolean isAI() {
@@ -594,6 +583,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
 
     public void addChild(MCTSGameTree child) {
+        assert children.size() < maxChildren : "ERROR! Number of children nodes exceed maxChildren";
         children.add(child);
     }
     
