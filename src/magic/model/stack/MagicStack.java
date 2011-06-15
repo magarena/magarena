@@ -124,4 +124,14 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 
 		return spells[1-player.getIndex()]>0;
 	}
+
+    public long getItemsId() {
+        int idx = 0;
+        long[] input = new long[size() + 1];
+        for (MagicItemOnStack item : this) {
+            input[idx] = item.getId();
+            idx++;
+        }
+        return magic.MurmurHash3.hash(input);
+    }
 }
