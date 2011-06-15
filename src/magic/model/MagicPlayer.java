@@ -100,18 +100,32 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
     public long getPlayerId() {
-		long playerId=0;
-        playerId=playerId*ID_FACTOR+life;
-		playerId=playerId*ID_FACTOR+poison;
-		playerId=playerId*ID_FACTOR+stateFlags;
-		playerId=playerId*ID_FACTOR+library.size();
-		playerId=playerId*ID_FACTOR+activationMap.size();
-		playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
-		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
-		playerId=playerId*ID_FACTOR+hand.getCardsId();
-		playerId=playerId*ID_FACTOR+graveyard.getCardsId();
-		return playerId;
-	}
+		long[] input = {
+            life,
+            poison,
+            stateFlags,
+            exile.size(),
+            library.size(),
+            activationMap.size(),
+            builderCost.getMinimumAmount(),
+            permanents.getPermanentsId(),
+            hand.getCardsId(),
+            graveyard.getCardsId()
+        };
+		return magic.MurmurHash3.hash(input);
+    }
+    
+    public String getIdString() {
+        return life + "," + 
+               poison + "," + 
+               stateFlags + "," + 
+               library.size() + "," + 
+               activationMap.size() + "," + 
+               builderCost.getMinimumAmount() + "," + 
+               permanents.getPermanentsId() + "," +
+               hand.getCardsId() + "," +
+               graveyard.getCardsId();
+    }
 	
 	public long getPlayerId(final long id) {
 		// Exile is not used for id.
@@ -127,19 +141,6 @@ public class MagicPlayer implements MagicTarget {
 		playerId=playerId*ID_FACTOR+graveyard.getCardsId();
 		return playerId;
 	}
-
-    public String getIdString() {
-        return life + "," + 
-               poison + "," + 
-               stateFlags + "," + 
-               library.size() + "," + 
-               activationMap.size() + "," + 
-               builderCost.getMinimumAmount() + "," + 
-               permanents.getPermanentsId() + "," +
-               hand.getCardsId() + "," +
-               graveyard.getCardsId();
-    }
-
 	
 	@Override
 	public String toString() {
