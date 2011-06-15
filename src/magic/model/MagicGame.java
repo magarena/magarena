@@ -167,17 +167,32 @@ public class MagicGame {
 	}
 	
     public long getGameId() {
-		long id=0; 
-        id = id*ID_FACTOR + turn;
-        id = id*ID_FACTOR + phase.hashCode();
-        id = id*ID_FACTOR + step.hashCode();
-        id = id*ID_FACTOR + triggers.size();
-        id = id*ID_FACTOR + turnTriggers.size();
-        id = id*ID_FACTOR + events.size();
-        id = id*ID_FACTOR + stack.size();
-		id = id*ID_FACTOR + players[0].getPlayerId();
-		id = id*ID_FACTOR + players[1].getPlayerId();
-		return id;
+		long[] input = { 
+            turn,
+            phase.hashCode(),
+            step.hashCode(),
+            triggers.size(),
+            turnTriggers.size(),
+            events.getEventsId(),
+            stack.getItemsId(),
+            players[0].getPlayerId(),
+            players[1].getPlayerId()
+        };
+		return magic.MurmurHash3.hash(input);
+    }
+    
+    public String getIdString() {
+        return turn + "," + 
+               phase.hashCode() + "," + 
+               step.hashCode() + "," + 
+               triggers.size() + "," +
+               turnTriggers.size() + "," +
+               events.getEventsId() + "," +
+               stack.getItemsId() + 
+               "--" + 
+               players[0].getIdString() + 
+               "--" +
+               players[1].getIdString();
     }
 	
 	public long getGameId(final int pruneScore) {
@@ -189,19 +204,6 @@ public class MagicGame {
 		id = players[1].getPlayerId(id);
 		return id;
 	}
-
-    public String getIdString() {
-        return turn + "," + 
-               phase.hashCode() + "," + 
-               step.hashCode() + "," + 
-               triggers.size() + "," +
-               turnTriggers.size() + "," +
-               events.size() + "," +
-               stack.size() + 
-               "--" + players[0].getIdString() + "--" +
-               players[1].getIdString();
-    }
-
 	
 	public boolean canSkipSingleChoice() {
         //human is attacking, AI is blocking, 
