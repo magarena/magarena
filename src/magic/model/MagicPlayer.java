@@ -99,6 +99,20 @@ public class MagicPlayer implements MagicTarget {
 		return game.getPlayer(index);
 	}
 	
+    public long getPlayerId() {
+		long playerId=0;
+        playerId=playerId*ID_FACTOR+life;
+		playerId=playerId*ID_FACTOR+poison;
+		playerId=playerId*ID_FACTOR+stateFlags;
+		playerId=playerId*ID_FACTOR+library.size();
+		playerId=playerId*ID_FACTOR+activationMap.size();
+		playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
+		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
+		playerId=playerId*ID_FACTOR+hand.getCardsId();
+		playerId=playerId*ID_FACTOR+graveyard.getCardsId();
+		return playerId;
+	}
+	
 	public long getPlayerId(final long id) {
 		// Exile is not used for id.
 		long playerId=id;
