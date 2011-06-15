@@ -83,7 +83,7 @@ Ogre.jpg;http://magiccards.info/extras/token/worldwake/ogre.jpg
 Saproling.jpg;http://magiccards.info/extras/token/tenth-edition/saproling.jpg
 Snake.jpg;http://magiccards.info/extras/token/zendikar/snake.jpg
 Soldier.jpg;http://magiccards.info/extras/token/magic-2010/soldier.jpg
-Spirit.jpg;http://magiccards.info/extras/token/shadowmoor/spirit.jpg
+Spirit.jpg;http://magiccards.info/extras/token/player-rewards-2004/spirit.jpg
 Tuktuk the Returned.jpg;http://magiccards.info/extras/token/rise-of-the-eldrazi/tuktuk-the-returned.jpg
 Wolf.jpg;http://magiccards.info/extras/token/zendikar/wolf.jpg
 Worm.jpg;http://magiccards.info/extras/token/eventide/worm.jpg

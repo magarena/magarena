@@ -1,7 +1,6 @@
 package magic.ui;
 
 import java.awt.BorderLayout;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -15,7 +14,6 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JPanel;
 
 import magic.data.DeckUtils;
@@ -45,7 +43,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String CONCEDE_GAME_ITEM="Concede";
 	private static final String CARD_EXPLORER_ITEM="Explorer";
 	private static final String KEYWORDS_ITEM="Keywords";
-
+	private static final String README_ITEM="ReadMe";
     //java -DtestGame=X to start with a specific game 
 	private static final String testGame=System.getProperty("testGame");
 	
@@ -66,6 +64,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem quitItem;
 	private JMenuItem cardExplorerItem;
 	private JMenuItem keywordsItem;
+	private JMenuItem readMeItem;
 	private MagicTournament tournament=null;
 	private TournamentPanel tournamentPanel=null;
 	private GamePanel gamePanel=null;
@@ -141,6 +140,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			cardExplorerItem.setEnabled(enabled);
 		} else if (KEYWORDS_ITEM.equals(item)) {
 			keywordsItem.setEnabled(enabled);
+		}else if (README_ITEM.equals(item)) {
+			readMeItem.setEnabled(enabled);
 		}
 	}
 	
@@ -183,6 +184,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		enableMenuItem(CONCEDE_GAME_ITEM,false);
 		enableMenuItem(CARD_EXPLORER_ITEM,true);
 		enableMenuItem(KEYWORDS_ITEM,true);
+		enableMenuItem(README_ITEM,true);
 	}
 	
 	private void closeContent() {
@@ -254,6 +256,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 		tournamentMenu.add(quitItem);
 		
 		final JMenu helpMenu=new JMenu("Help");
+		
+		readMeItem=new JMenuItem("Read Me");
+		readMeItem.addActionListener(this);
+		helpMenu.add(readMeItem);
 		
 		cardExplorerItem=new JMenuItem("Card explorer");
 		cardExplorerItem.addActionListener(this);
@@ -491,6 +497,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			openCardExplorer();
 		} else if (source==keywordsItem) {
 			openKeywords();
+		}else if (source==readMeItem) {
+			new ReadMeDialog(this);
 		}
 	}
 }
