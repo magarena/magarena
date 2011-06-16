@@ -6,7 +6,7 @@ import magic.model.MagicMappable;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 
-public interface MagicTarget extends MagicCopyable,MagicMappable {
+public interface MagicTarget extends MagicCopyable, MagicMappable {
 	
 	public String getName();
 	

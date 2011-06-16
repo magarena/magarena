@@ -16,13 +16,11 @@ public class MagicTargetNone implements MagicTarget {
 	
 	@Override
 	public Object map(final MagicGame game) {
-
 		return this;
 	}
 	
 	@Override
 	public MagicCopyable create() {
-
 		return this;
 	}
 	
@@ -38,54 +36,45 @@ public class MagicTargetNone implements MagicTarget {
 	
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
-
 		return false;
 	}
 	
 	@Override
 	public boolean isSpell() {
-
 		return false;
 	}
 	
 	@Override
 	public boolean isPlayer() {
-
 		return false;
 	}
 	
 	@Override
 	public boolean isPermanent() {
-		
 		return false;
 	}
 	
 	@Override
 	public int getPreventDamage() {
-
 		return 0;
 	}
 	
 	@Override
 	public String getName() {
-
 		return "no legal targets";
 	}
 	
 	@Override
 	public String toString() {
-
 		return getName();
 	}
 
 	@Override
 	public MagicPlayer getController() {
-
 		return null;
 	}
 	
 	public static final MagicTarget getInstance() {
-		
 		return INSTANCE;
 	}
 }
