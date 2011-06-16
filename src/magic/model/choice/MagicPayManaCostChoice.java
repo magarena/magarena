@@ -8,6 +8,7 @@ import java.util.Set;
 
 import magic.model.MagicCostManaType;
 import magic.model.MagicGame;
+import magic.model.MagicRandom;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -65,14 +66,25 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
 	@Override
 	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
-
 		if (game.getFastChoices()) {
 			return buildDelayedPayManaCostResults(game,player);
 		} else {
-			final MagicPayManaCostResultBuilder builder=new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost());		
+			final MagicPayManaCostResultBuilder builder = 
+                new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost());		
 			return builder.getResults();
 		}
 	}
+	
+    @Override
+    public Object[] getSimulationChoiceResult(
+			final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
+        //in simulation use delayed pay mana cost
+		List<Object> choices = (List<Object>)buildDelayedPayManaCostResults(game,player);
+        return new Object[]{choices.get(MagicRandom.nextInt(choices.size()))};
+    }
 	
 	@Override
 	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
