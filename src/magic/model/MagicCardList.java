@@ -23,11 +23,13 @@ public class MagicCardList extends ArrayList<MagicCard> {
 	}
 	
 	public long getCardsId() {
-		long id = 0;
+        int idx = 0;
+		long[] keys = new long[size() + 1];
 		for (final MagicCard card : this) {
-			id = id * 31 + card.getCardDefinition().getIndex();
+			keys[idx] = card.getCardDefinition().getIndex();
+            idx++;
 		}
-		return id;
+		return magic.MurmurHash3.hash(keys);
 	}
 	
 	public void addToBottom(final MagicCard card) {
