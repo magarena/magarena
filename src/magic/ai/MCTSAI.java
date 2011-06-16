@@ -112,12 +112,12 @@ public class MCTSAI implements MagicAI {
         MCTSGameTree candidate = cache.get(gid);
         
         if (candidate != null) { 
-            System.err.println("CACHE: HIT");
+            System.err.println("CACHE HIT");
             System.err.println("HIT  : " + game.getIdString());
             printNode(candidate, rootChoices);
             return candidate;
         } else {
-            System.err.println("CACHE: MISS");
+            System.err.println("CACHE MISS");
             System.err.println("MISS : " + game.getIdString());
             printNode(candidate, rootChoices);
             return new MCTSGameTree(-1, -1, -1);
