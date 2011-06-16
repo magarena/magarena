@@ -3,10 +3,10 @@ package magic.ai;
 import java.util.*;
 
 import magic.model.MagicGame;
-import magic.model.phase.MagicPhase;
 import magic.model.MagicPlayer;
+import magic.model.phase.MagicPhase;
 import magic.model.event.MagicEvent;
-import magic.model.MagicRandom;
+import magic.model.choice.*;
 
 /*
 UCT algorithm from Kocsis and Sezepesvari 2006
@@ -86,19 +86,25 @@ public class MCTSAI implements MagicAI {
         CHEAT = cheat;
     }
     
-    static private int getStringHash(Object obj) {
-        return obj == null ? 0 : obj.toString().hashCode();
+    static public int obj2StringHash(Object obj) {
+        return obj2String(obj).hashCode();
+    }
+
+    static public String obj2String(Object obj) {
+        if (obj == null) {
+            return "null";
+        } else if (obj instanceof MagicBuilderPayManaCostResult) {
+            return ((MagicBuilderPayManaCostResult)obj).getText();
+        } else {
+            return obj.toString();
+        }
     }
 
     private void addNode(final MagicGame game, final MCTSGameTree node) {
-        if (node.isCached()) {
-            return;
-        }
-
         final long gid = game.getGameId();
         cache.put(gid, node);
         node.setCached();
-        System.err.println("ADD  : " + game.getIdString());
+        System.err.println("ADDED: " + game.getIdString());
     }
 
     private MCTSGameTree getNode(final MagicGame game, List<Object[]> rootChoices) {
@@ -279,7 +285,7 @@ public class MCTSAI implements MagicAI {
                
     private boolean checkNode(final MCTSGameTree curr, List<Object[]> choices) {
         for (MCTSGameTree child : curr) {
-            final int checksum = getStringHash(choices.get(child.getChoice())[0]);
+            final int checksum = obj2StringHash(choices.get(child.getChoice())[0]);
             if (child.getChecksum() != checksum) {
                 System.err.println("ERROR! tree node and choice do not match");
                 printNode(curr, choices);
@@ -304,8 +310,8 @@ public class MCTSAI implements MagicAI {
             System.err.println("CHILD: " + child.desc);
         }
         for (Object[] choice : choices) {
-            final int checksum = getStringHash(choice[0]);
-            System.err.println("GAME : " + choice[0]);
+            final int checksum = obj2StringHash(choice[0]);
+            System.err.println("GAME : " + obj2String(choice[0]));
         }
         return "";
     }
@@ -337,7 +343,13 @@ public class MCTSAI implements MagicAI {
             //look for first non root AI node along this path and add it to cache
             if (!found && curr != root && curr.isAI()) {
                 found = true;
-                addNode(game, curr);
+                if (!curr.isCached()) {
+                    for (MCTSGameTree p : path) {
+                        System.err.print(" -> " + p.desc);
+                    }
+                    System.err.println();
+                    addNode(game, curr);
+                }
             }
 
             //there are unexplored children of node
@@ -348,8 +360,8 @@ public class MCTSAI implements MagicAI {
                 final MCTSGameTree child = new MCTSGameTree(
                         curr.size(), 
                         game.getScore(), 
-                        getStringHash(choice[0]));
-                child.desc = "" + choice[0];
+                        obj2StringHash(choice[0]));
+                child.desc = obj2String(choice[0]);
                 curr.addChild(child);
                 path.add(child);
                 return path;
@@ -509,7 +521,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public void setChoicesStr(List<Object[]> choices) {
         choicesStr = new String[choices.size()];
         for (int i = 0; i < choices.size(); i++) {
-            choicesStr[i] = "" + choices.get(i)[0];
+            choicesStr[i] = MCTSAI.obj2String(choices.get(i)[0]);
         }
     }
 
