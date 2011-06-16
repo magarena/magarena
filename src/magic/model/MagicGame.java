@@ -69,7 +69,7 @@ public class MagicGame {
 	private int landPlayed=0;
 	private boolean priorityPassed=false;
 	private int priorityPassedCount=0;
-    private boolean passPriority=false;
+    private boolean skipTurn=false;
 	private boolean stateCheckRequired=false;
 	private boolean artificial;
 	private boolean fastChoices=false;
@@ -86,7 +86,12 @@ public class MagicGame {
 	private final MagicLogBook logBook;
 	private final MagicLogMessageBuilder logMessageBuilder;
 	
-	public MagicGame(final MagicTournament tournament,final MagicGameplay gameplay,final MagicPlayer players[],final MagicPlayer startPlayer,final boolean sound) {
+	public MagicGame(
+            final MagicTournament tournament,
+            final MagicGameplay gameplay,
+            final MagicPlayer players[],
+            final MagicPlayer startPlayer,
+            final boolean sound) {
 
 		artificial=false;
 		this.tournament=tournament;
@@ -137,18 +142,20 @@ public class MagicGame {
 		this.phase=game.phase;
 		this.step=game.step;
 		this.payedCost=new MagicPayedCost(copyMap,game.payedCost);
-		this.actions=new MagicActionList();
+		
+        //the following are NOT copied when game state is cloned
+        this.actions=new MagicActionList();
 		this.undoPoints=null;
 		this.logBook=null;
 		this.logMessageBuilder=null;
 	}
 	
-    public void setPassPriority(final boolean pp) {
-        passPriority = pp;
+    public void setSkipTurn(final boolean skip) {
+        skipTurn = skip;
     }
 
-    public boolean getPassPriority() {
-        return passPriority;
+    public boolean getSkipTurn() {
+        return skipTurn;
     }
 
 	public void setScore(final int score) {
@@ -171,24 +178,23 @@ public class MagicGame {
             turn,
             phase.hashCode(),
             step.hashCode(),
-            triggers.size(),
-            turnTriggers.size(),
-            events.getEventsId(),
-            stack.getItemsId(),
+	        priorityPassedCount,
+	        landPlayed,
+            eventsExecuted,
             players[0].getPlayerId(),
-            players[1].getPlayerId()
+            players[1].getPlayerId(),
         };
 		return magic.MurmurHash3.hash(input);
     }
     
     public String getIdString() {
-        return turn + "," + 
-               phase.hashCode() + "," + 
-               step.hashCode() + "," + 
-               triggers.size() + "," +
-               turnTriggers.size() + "," +
-               events.getEventsId() + "," +
-               stack.getItemsId() + 
+        return "\n" +
+               turn + " " + 
+               phase.hashCode() + " " + 
+               step.hashCode() + " " + 
+	           priorityPassedCount + " " +
+	           landPlayed + " " +
+               eventsExecuted + " " +
                "\n" + 
                players[0].getIdString() + 
                "\n" +
@@ -299,9 +305,6 @@ public class MagicGame {
 	}
 	
 	public void changePhase(final MagicPhase phase) {
-        if (phase.getType() == MagicPhaseType.Untap && turnPlayer.getIndex() == 0) {
-            setPassPriority(false);
-        }
 		this.phase=phase;
 		step=MagicStep.Begin;
 		priorityPassedCount=0;
@@ -386,50 +389,41 @@ public class MagicGame {
 	}
 	
 	public long[] getIdentifiers() {
-		
 		return Arrays.copyOf(identifiers,identifiers.length);
 	}
 		
 	public void startActions() {
-		
 		doAction(new MagicMarkerAction());
 	}
 		
 	public void doAction(final MagicAction action) {
-
 		actions.add(action);
 		action.doAction(this);
-		score+=action.getScore(scorePlayer);
+
+        //performing actions update the score
+		score += action.getScore(scorePlayer);
 	}
 		
 	public void undoActions() {
-		
-		while (true) {
-
-			final MagicAction action=actions.removeLast();
+        //undo each action up to and including the first MagicMarkerAction
+        MagicAction action;
+		do {
+			action = actions.removeLast();
 			action.undoAction(this);
-			if (action instanceof MagicMarkerAction) {
-				break;
-			}
-		}
+		} while (!(action instanceof MagicMarkerAction));
 	}
 	
 	public void undoAllActions() {
-
 		while (!actions.isEmpty()) {
-
-			final MagicAction action=actions.removeLast();
-			action.undoAction(this);
+			actions.removeLast().undoAction(this);
 		}
 	}
 	
 	public Collection<MagicAction> getActions() {
-		
 		return actions;
 	}
 	
 	public void createUndoPoint() {
-		
 		final MagicAction markerAction=new MagicMarkerAction();
 		doAction(markerAction);
 		doAction(new MagicLogMarkerAction());
@@ -437,10 +431,8 @@ public class MagicGame {
 	}
 		
 	public void gotoLastUndoPoint() {
-
 		final MagicAction markerAction=undoPoints.removeLast();
 		while (true) {
-
 			final MagicAction action=actions.removeLast();
 			action.undoAction(this);
 			if (action==markerAction) {
@@ -450,34 +442,28 @@ public class MagicGame {
 	}
 			
 	public int getNrOfUndoPoints() {
-		
 		return undoPoints.size();
 	}
 	
 	public boolean hasUndoPoints() {
-		
 		return !undoPoints.isEmpty();
 	}
 	
 	public void clearUndoPoints() {
-		
 		undoPoints.clear();
 	}
 	
 	public void clearMessages() {
-		
 		logMessageBuilder.clearMessages();
 	}
 	
 	public void logMessages() {
-		
 		if (logMessageBuilder!=null) {
 			logMessageBuilder.logMessages();
 		}
 	}
 
 	public void logAppendEvent(final MagicEvent event,final Object choiceResults[]) {
-		
 		if (logMessageBuilder!=null) {
 			final String message=event.getDescription(choiceResults);
 			if (message!=null) {
@@ -487,25 +473,21 @@ public class MagicGame {
 	}
 	
 	public void logAppendMessage(final MagicPlayer player,final String message) {
-		
 		if (logMessageBuilder!=null) {
 			logMessageBuilder.appendMessage(player,message);
 		}
 	}
 	
 	public void logMessage(final MagicPlayer player,final String message) {
-		
 		if (logBook!=null) {
 			logBook.add(new MagicMessage(this,player,message));
 		}
 	}
 	
 	public void logAttackers(final MagicPlayer player,final MagicDeclareAttackersResult result) {
-		
 		if (logBook!=null&&!result.isEmpty()) {
 			final SortedSet<String> names=new TreeSet<String>();
 			for (final MagicPermanent attacker : result) {
-				
 				names.add(attacker.getName());
 			}
 			final StringBuilder builder=new StringBuilder("You attack with ");
@@ -536,123 +518,101 @@ public class MagicGame {
 	}
 	
 	public void executeEvent(final MagicEvent event,final Object choiceResults[]) {
+        assert choiceResults != null : "ERROR! choiceResults is null in executeEvent";
+        
+        logAppendEvent(event,choiceResults);
 		eventsExecuted++;	
-		if (choiceResults!=null) {
-			logAppendEvent(event,choiceResults);
-			// Payed cost.
-			if (choiceResults.length==1) {
-				payedCost.set(choiceResults[0]);
-			}
-			event.executeEvent(this,choiceResults);
-			checkState();
-		} else {
-            System.err.println("ERROR! choiceResults is null in executeEvent");
-            Thread.dumpStack();
+    
+        // Payed cost.
+        if (choiceResults.length==1) {
+            payedCost.set(choiceResults[0]);
         }
+        
+        event.executeEvent(this,choiceResults);
+        checkState();
 	}
 
 	public MagicEventQueue getEvents() {
-		
 		return events;
 	}
 		
 	public boolean hasNextEvent() {
-		
 		return !events.isEmpty();
 	}
 	
 	public MagicEvent getNextEvent() {
-		
 		return events.getFirst();
 	}
 	
 	public void addEvent(final MagicEvent event) {
-		
 		doAction(new MagicAddEventAction(event));
 	}
 		
 	public void executeNextEvent(final Object choiceResults[]) {
-
 		doAction(new MagicExecuteFirstEventAction(choiceResults));
 	}
 	
 	public MagicTournament getTournament() {
-		
 		return tournament;
 	}
 	
 	public void advanceTournament() {
-		
 		tournament.advance(losingPlayer!=players[0]);
 	}
 	
 	public MagicPlayer[] getPlayers() {
-
 		return players;
 	}
 	
 	public MagicPlayer getPlayer(final int index) {
-
 		return players[index];
 	}
 	
 	public MagicPlayer getOpponent(final MagicPlayer player) {
-
 		return players[1-player.getIndex()];		
 	}
 	
 	public void setVisiblePlayer(final MagicPlayer visiblePlayer) {
-		
 		this.visiblePlayer=visiblePlayer;
 	}
 	
 	public MagicPlayer getVisiblePlayer() {
-		
 		return visiblePlayer;
 	}
 		
 	public void setTurnPlayer(final MagicPlayer turnPlayer) {
-		
 		this.turnPlayer=turnPlayer;
 	}
 		
 	public MagicPlayer getTurnPlayer() {
-		
 		return turnPlayer;
 	}
 	
 	public MagicPlayer getPriorityPlayer() {
-		
 		return step==MagicStep.ActivePlayer?turnPlayer:getOpponent(turnPlayer);
 	}
 		
 	public MagicPlayer getScorePlayer() {
-		
 		return scorePlayer;
 	}
 	
 	public void setLosingPlayer(final MagicPlayer player) {
-		
 		losingPlayer=player;
 	}
 	
 	public MagicPlayer getLosingPlayer() {
-		
 		return losingPlayer;
 	}
 			
 	public boolean hasTurn(final MagicPlayer player) {
-
 		return player==turnPlayer;
 	}
 	
 	public int getCount(final int cardDefinitionIndex) {
-		
 		return players[0].getCount(cardDefinitionIndex)+players[1].getCount(cardDefinitionIndex);
 	}
 	
 	public int getOtherPlayerCount(final int cardDefinitionIndex,final MagicPlayer player) {
-		
 		if (players[0]!=player) {
 			return players[0].getCount(cardDefinitionIndex);
 		} else {
@@ -661,17 +621,14 @@ public class MagicGame {
 	}
 	
 	public int getNrOfPermanents(final MagicType type) {
-		
 		return players[0].getNrOfPermanentsWithType(type)+players[1].getNrOfPermanentsWithType(type);
 	}
 			
 	public boolean canPlaySorcery(final MagicPlayer controller) {
-
 		return phase.getType().isMain()&&stack.isEmpty()&&turnPlayer==controller;
 	}
 	
 	public boolean canPlayLand(final MagicPlayer controller) {
-		
 		return landPlayed < 1 && canPlaySorcery(controller);
 	}
 
