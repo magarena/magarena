@@ -71,7 +71,6 @@ public class MagicPlayChoice extends MagicChoice {
 	
 	private Set<Object> getValidChoices(final MagicGame game,final MagicPlayer player) {
 		final Set<Object> validChoices=new HashSet<Object>();
-
 		final MagicActivationMap activationMap=player.getActivationMap();
 		for (final MagicActivation activation : activationMap.getActivations()) {
 			final Set<MagicSource> sources=activationMap.get(activation);
@@ -156,25 +155,23 @@ public class MagicPlayChoice extends MagicChoice {
 		final MagicSource activationSource=(MagicSource)controller.getChoiceClicked();
 		final List<MagicPlayChoiceResult> results=new ArrayList<MagicPlayChoiceResult>();
 		for (final MagicActivation activation : activationSource.getActivations()) {
-			
 			if (activation.canPlay(game,player,activationSource,false)) {
 				results.add(new MagicPlayChoiceResult(activationSource,activation));
 			}
 		}
+
+        assert results.size() > 0 : "ERROR! There should be at least one activation possible.";
 		
-		switch (results.size()) {
-			case 0: 
-				throw new IllegalStateException("There should be at least one activation possible.");
-			case 1:
-				return new Object[]{results.get(0)};
-			default: 
-				final PlayChoicePanel choicePanel=new PlayChoicePanel(controller,activationSource,results);
-				controller.setSourceCardDefinition(activationSource);
-				controller.showComponent(choicePanel);
-				if (controller.waitForInputOrUndo()) {
-					return UNDO_CHOICE_RESULTS;
-				}
-				return new Object[]{choicePanel.getResult()};
+		if (results.size() == 1) {
+            return new Object[]{results.get(0)};
+        } else {
+            final PlayChoicePanel choicePanel=new PlayChoicePanel(controller,activationSource,results);
+            controller.setSourceCardDefinition(activationSource);
+            controller.showComponent(choicePanel);
+            if (controller.waitForInputOrUndo()) {
+                return UNDO_CHOICE_RESULTS;
+            }
+            return new Object[]{choicePanel.getResult()};
 		}
 	}
 
