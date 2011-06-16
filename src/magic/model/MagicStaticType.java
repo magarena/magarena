@@ -11,17 +11,14 @@ public enum MagicStaticType {
 	private final String name;
 	
 	private MagicStaticType(final String name) {
-		
 		this.name=name;
 	}
 	
 	public String getName() {
-		
 		return name;
 	}
 	
 	public int getScore(final MagicGame game,final MagicPermanent scorePermanent) {
-		
 		if (this==None) {
 			return 0;
 		}
@@ -48,9 +45,7 @@ public enum MagicStaticType {
 	}
 	
 	public static MagicStaticType getStaticTypeFor(final String name) {
-		
 		for (final MagicStaticType type : values()) {
-			
 			if (type.getName().equalsIgnoreCase(name)) {
 				return type;
 			}
