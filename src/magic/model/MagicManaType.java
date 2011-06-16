@@ -6,12 +6,12 @@ import magic.data.IconImages;
 
 public enum MagicManaType {
 
-	Colorless("colorless","{1}",0),
-	Black("black","{B}",1),
-	Blue("blue","{U}",2),
-	Green("green","{G}",3),
-	Red("red","{R}",4),
-	White("white","{W}",5),
+	Colorless("colorless","{1}"),
+	Black("black","{B}"),
+	Blue("blue","{U}"),
+	Green("green","{G}"),
+	Red("red","{R}"),
+	White("white","{W}"),
 	;
 	
 	public static final MagicManaType[] ALL_COLORS={Black,Blue,Green,Red,White};
@@ -21,38 +21,26 @@ public enum MagicManaType {
 	
 	private final String name;
 	private final String text;
-	private final int index;
 	
-	private MagicManaType(final String name,final String text,final int index) {
-		
+	private MagicManaType(final String name, final String text) {
 		this.name=name;
 		this.text=text;
-		this.index=index;
 	}
 	
 	public String getName() {
-		
 		return name;
 	}
 		
 	public String getText() {
-		
 		return text;
 	}
 
 	@Override
 	public String toString() {
-		
 		return text;
 	}
 	
-	public int getIndex() {
-		
-		return index;
-	}
-			
 	public ImageIcon getIcon(final boolean small) {
-
 		switch (this) {
 			case Colorless: return small?IconImages.COST_ONE:IconImages.ONE;
 			case Black: return small?IconImages.COST_BLACK:IconImages.BLACK;

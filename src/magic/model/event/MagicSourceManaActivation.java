@@ -25,7 +25,7 @@ public class MagicSourceManaActivation {
 				available=true;
 				for (final MagicManaType manaType : activation.getManaTypes()) {
 					
-					activations[manaType.getIndex()]=activation;
+					activations[manaType.ordinal()]=activation;
 				}
 			}
 		}
@@ -36,7 +36,7 @@ public class MagicSourceManaActivation {
 		if (available) {
 			for (final MagicManaType manaType : costManaType.getTypes()) {
 			
-				if (activations[manaType.getIndex()]!=null) {
+				if (activations[manaType.ordinal()]!=null) {
 					return manaType;
 				}
 			}
@@ -49,7 +49,7 @@ public class MagicSourceManaActivation {
 		MagicManaActivation bestManaActivation=null;				
 		for (final MagicManaType manaType : costManaType.getTypes()) {
 			
-			final MagicManaActivation manaActivation=activations[manaType.getIndex()];
+			final MagicManaActivation manaActivation=activations[manaType.ordinal()];
 			if (manaActivation!=null&&(bestManaActivation==null||bestManaActivation.getWeight()>manaActivation.getWeight())) {
 				bestManaActivation=manaActivation;
 			}
@@ -64,11 +64,11 @@ public class MagicSourceManaActivation {
 			
 	public int getWeight() {
 		
-		return activations[manaType.getIndex()].getWeight();
+		return activations[manaType.ordinal()].getWeight();
 	}
 	
 	public MagicSourceManaActivationResult getResult() {
 		
-		return new MagicSourceManaActivationResult(permanent,activations[manaType.getIndex()]);
+		return new MagicSourceManaActivationResult(permanent,activations[manaType.ordinal()]);
 	}
 }

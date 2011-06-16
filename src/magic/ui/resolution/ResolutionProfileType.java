@@ -1,7 +1,6 @@
 package magic.ui.resolution;
 
 public enum ResolutionProfileType {
-	
 	TournamentPlayersViewer,
 	TournamentDeckViewers,
 	TournamentDeckStatisticsViewer,

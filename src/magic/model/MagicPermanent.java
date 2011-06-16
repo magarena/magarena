@@ -316,7 +316,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 	public void changeCounters(final MagicCounterType counterType,final int amount) {
 		
-		counters[counterType.getIndex()]+=amount;
+		counters[counterType.ordinal()]+=amount;
 		if (cached) {
 			switch (counterType) {
 				case PlusOne:
@@ -331,7 +331,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public int getCounters(final MagicCounterType counterType) {
 		
-		return counters[counterType.getIndex()];
+		return counters[counterType.ordinal()];
 	}
 	
 	public boolean hasCounters() {

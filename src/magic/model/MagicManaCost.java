@@ -259,7 +259,7 @@ public class MagicManaCost {
 					case 0:
 						return 0;
 					case 1:
-						final int typeIndex=profileTypes[0].getIndex();
+						final int typeIndex=profileTypes[0].ordinal();
 						singleCounts[typeIndex]+=amount;
 						maxSingleCount=Math.max(maxSingleCount,singleCounts[typeIndex]);
 						break;

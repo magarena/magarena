@@ -58,10 +58,6 @@ public enum MagicSubType {
 	    return (ALL_CREATURES & mask) != 0;
 	}
 	
-	public int getIndex() {
-	    return ordinal();
-	}
-	
 	public int getMask() {
 		return mask;
 	}

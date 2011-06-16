@@ -18,12 +18,10 @@ public enum MagicTriggerType {
 	private final boolean stack;
 	
 	private MagicTriggerType(final boolean stack) {
-		
 		this.stack=stack;
 	}
 	
 	public boolean usesStack() {
-		
 		return stack;
 	}
 }

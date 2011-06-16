@@ -25,8 +25,4 @@ public enum MagicCounterType {
 	public String getText() {
 		return text;
 	}
-		
-	public int getIndex() {
-		return ordinal();
-	}
 }

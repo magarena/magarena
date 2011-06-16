@@ -91,7 +91,7 @@ public class MagicBuilderManaCost {
 	public void addType(final MagicCostManaType type,final int amount) {
 
 		if (amount>0) {
-			final int index=type.getIndex();
+			final int index=type.ordinal();
 			if (amounts[index]==0) {
 				typeCount++;
 			}
@@ -102,7 +102,7 @@ public class MagicBuilderManaCost {
 	
 	public void removeType(final MagicCostManaType type,final int amount) {
 
-		final int index=type.getIndex();
+		final int index=type.ordinal();
 		amounts[index]-=amount;
 		if (amounts[index]<=0) {
 			typeCount--;

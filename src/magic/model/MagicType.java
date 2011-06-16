@@ -2,43 +2,34 @@ package magic.model;
 
 public enum MagicType {
 
-	Basic("Basic",0),
-	Legendary("Legendary",1),
-	Land("Land",2),
-	Creature("Creature",3),
-	Sorcery("Sorcery",4),
-	Instant("Instant",5),
-	Artifact("Artifact",6),
-	Enchantment("Enchantment",7)
+	Basic("Basic"),
+	Legendary("Legendary"),
+	Land("Land"),
+	Creature("Creature"),
+	Sorcery("Sorcery"),
+	Instant("Instant"),
+	Artifact("Artifact"),
+	Enchantment("Enchantment")
 	;
 	
 	private final String name;
-	private final int index;
+    private final int mask;
 	
-	private MagicType(final String name,final int index) {
-		
+	private MagicType(final String name) {
 		this.name=name;
-		this.index=index;
+        this.mask=1<<ordinal();
 	}
 	
 	public String getName() {
-		
 		return name;
 	}
 	
-	public int getIndex() {
-		
-		return index;
-	}
-	
 	public int getMask() {
-		return 1<<index;
+		return mask;
 	}
 	
 	public static MagicType getType(final String name) {
-		
 		for (final MagicType type : values()) {
-			
 			if (type.getName().equalsIgnoreCase(name)) {
 				return type;
 			}

@@ -114,53 +114,38 @@ public enum MagicAbility {
 	
 	private final String name;
 	private final int score;
-	private final int index;
 	private final long mask;
 	
 	private MagicAbility(final String name,final int score) {
-	
 		this.name=name;
 		this.score=score;
-		this.index=AbilityCount.nextIndex();
-		mask=1L<<index;
+		mask=1L<<ordinal();
 	}
 	
 	public String getName() {
-		
 		return name;
 	}
 	
 	@Override
 	public String toString() {
-
 		return name;
 	}
 
 	public int getScore() {
-		
 		return score;
 	}
 	
-	public int getIndex() {
-		
-		return index;
-	}
-	
 	public long getMask() {
-		
 		return mask;
 	}
 
 	public boolean hasAbility(final long flags) {
-		
 		return (flags&mask)!=0;
 	}
 	
 	public static int getScore(final long flags) {
-		
 		int score=0;
 		for (final MagicAbility ability : values()) {
-			
 			if (ability.hasAbility(flags)) {
 				score+=ability.getScore();
 			}
@@ -169,23 +154,11 @@ public enum MagicAbility {
 	}
 	
 	public static MagicAbility getAbility(final String name) {
-		
 		for (final MagicAbility ability : values()) {
-			
 			if (ability.getName().equalsIgnoreCase(name)) {
 				return ability;
 			}
 		}
 		return null;
-	}
-	
-	private static final class AbilityCount {
-		
-		private static int count=0;
-		
-		public static int nextIndex() {
-			
-			return count++;
-		}
 	}
 }
