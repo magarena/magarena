@@ -123,6 +123,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public long getPermanentId() {
         long[] input = {
+            card.getId(),
             cardDefinition.getIndex(),
             stateFlags,
             damage,
@@ -140,7 +141,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             turnToughnessIncr,
             turnColorFlags,
             abilityPlayedThisTurn,
-            turnLocalVariables
+            turnLocalVariables,
         };
 		return magic.MurmurHash3.hash(input);
         /*		
