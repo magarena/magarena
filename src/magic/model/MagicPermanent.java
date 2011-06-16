@@ -125,8 +125,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         long[] input = {
             card.getId(),
             cardDefinition.getIndex(),
-	        controller.getIndex(),
-            card.getOwner().getIndex(),
             stateFlags,
             damage,
             preventDamage,
