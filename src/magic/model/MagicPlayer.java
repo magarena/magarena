@@ -35,7 +35,8 @@ public class MagicPlayer implements MagicTarget {
 	private MagicActivationMap activationMap;
 	private MagicBuilderManaCost builderCost;
 	private MagicActivationPriority activationPriority;
-	
+    private long[] keys;
+
 	public MagicPlayer(final TournamentConfig configuration,final MagicPlayerDefinition playerDefinition,final int index) {
 		
 		this.playerDefinition=playerDefinition;
@@ -101,30 +102,32 @@ public class MagicPlayer implements MagicTarget {
 	
     public long getPlayerId() {
 		long[] input = {
+            index,
             life,
             poison,
             stateFlags,
-            exile.size(),
+	        preventDamage,
+	        extraTurns,
+            attackers,
+            blockers,
             library.size(),
-            activationMap.size(),
-            builderCost.getMinimumAmount(),
-            permanents.getPermanentsId(),
             hand.getCardsId(),
-            graveyard.getCardsId()
+            graveyard.getCardsId(),
+            exile.getCardsId(),
+            permanents.getPermanentsId(),
         };
+        keys = input;
 		return magic.MurmurHash3.hash(input);
     }
     
     public String getIdString() {
-        return life + "," + 
-               poison + "," + 
-               stateFlags + "," + 
-               library.size() + "," + 
-               activationMap.size() + "," + 
-               builderCost.getMinimumAmount() + "," + 
-               permanents.getPermanentsId() + "," +
-               hand.getCardsId() + "," +
-               graveyard.getCardsId();
+        StringBuffer sb = new StringBuffer();
+        sb.append(keys[0]);
+        for (int i = 1; i < keys.length; i++) {
+            sb.append(' ');
+            sb.append(keys[i]);
+        }
+        return sb.toString();
     }
 	
 	public long getPlayerId(final long id) {
