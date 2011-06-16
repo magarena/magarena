@@ -102,7 +102,6 @@ public class MagicPlayer implements MagicTarget {
 	
     public long getPlayerId() {
 		keys = new long[] {
-            index,
             life,
             poison,
             stateFlags,
@@ -115,6 +114,7 @@ public class MagicPlayer implements MagicTarget {
             graveyard.getCardsId(),
             exile.getCardsId(),
             permanents.getPermanentsId(),
+		    builderCost.getMinimumAmount(),
         };
 		return magic.MurmurHash3.hash(keys);
     }
