@@ -50,7 +50,6 @@ public class GameController {
 	private MagicCardDefinition sourceCardDefinition;
 	
 	public GameController(final GamePanel gamePanel,final MagicGame game) {
-		
 		this.gamePanel=gamePanel;
 		this.game=game;
 		testMode=(gamePanel==null);
@@ -61,23 +60,19 @@ public class GameController {
 	
 	/** Fully artificial test game. */
 	public GameController(final MagicGame game) {
-		
 		this(null,game);
 	}
 		
 	public void enableForwardButton() {
-		
 		gameViewer.enableButton(IconImages.FORWARD);
 	}
 	
 	public void disableActionButton(final boolean thinking) {
-		
 		gameViewer.disableButton(thinking);
 	}
 	
 	/** Returns true when undo was clicked. */
 	public synchronized boolean waitForInputOrUndo() {
-
 		try {
 			wait();
 			if (undoClicked) {
@@ -104,7 +99,6 @@ public class GameController {
 	}
 	
 	public synchronized void actionClicked() {
-
 		undoClicked=false;
 		actionClicked=true;
 		choiceClicked=null;
@@ -112,14 +106,12 @@ public class GameController {
 	}
 	
 	public void undoKeyPressed() {
-		
 		if (gamePanel.canClickUndo()) {
 			undoClicked();
 		}
 	}
 	
 	public synchronized void undoClicked() {
-		
 		if (game.hasUndoPoints()) {
 			undoClicked=true;
 			actionClicked=false;
@@ -131,7 +123,6 @@ public class GameController {
 	}
 
 	public synchronized void processClick(final Object choice) {
-
 		if (validChoices.contains(choice)) {
 			undoClicked=false;
 			actionClicked=false;
@@ -141,12 +132,10 @@ public class GameController {
 	}
 	
 	public boolean isActionClicked() {
-		
 		return actionClicked;
 	}
 	
 	public Object getChoiceClicked() {
-		
 		return choiceClicked;
 	}
 
@@ -155,32 +144,26 @@ public class GameController {
     }
 
 	public void setCardViewer(final CardViewer cardViewer) {
-		
 		this.cardViewer=cardViewer;
 	}
 	
 	public void setImageCardViewer(final CardViewer cardViewer) {
-		
 		this.imageCardViewer=cardViewer;
 	}
 	
 	public void setGameViewer(final GameViewer gameViewer) {
-		
 		this.gameViewer=gameViewer;
 	}
 	
 	public void viewCard(final MagicCard card) {
-
 		cardViewer.setCard(card.getCardDefinition(),card.getImageIndex());
 	}
 	
 	public void viewCard(final MagicCardDefinition cardDefinition,final int index) {
-		
 		cardViewer.setCard(cardDefinition,index);
 	}
 	
 	public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
-
 		final Dimension size=gamePanel.getSize();
 		final Point pointOnScreen=gamePanel.getLocationOnScreen();
 		rect.x-=pointOnScreen.x;

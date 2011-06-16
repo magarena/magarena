@@ -116,6 +116,8 @@ public class DeckStrCal {
         
         // Set the AI
         testTournament.setAIs(new MagicAI[]{ai1.getAI(), ai2.getAI()});
+        testTournament.getPlayer(0).setArtificial(true);
+        testTournament.getPlayer(1).setArtificial(true);
 
         // Set the deck.
         DeckUtils.loadDeck(deck1, testTournament.getPlayer(0)); 
