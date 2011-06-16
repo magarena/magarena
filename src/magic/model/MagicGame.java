@@ -176,8 +176,8 @@ public class MagicGame {
     public long getGameId() {
 		long[] input = { 
             turn,
-            phase.hashCode(),
-            step.hashCode(),
+            phase.getType().ordinal(),
+            step.ordinal(),
 	        priorityPassedCount,
 	        landPlayed,
             players[0].getPlayerId(),
@@ -189,8 +189,8 @@ public class MagicGame {
     public String getIdString() {
         return "\n" +
                turn + " " + 
-               phase.hashCode() + " " +
-               step.hashCode() + " " +
+               phase.getType() + " " +
+               step + " " +
                priorityPassedCount + " " +
 	           landPlayed + " " +
                "\n" + 
@@ -202,7 +202,7 @@ public class MagicGame {
 	public long getGameId(final int pruneScore) {
 		long id=0; 
         id = id*ID_FACTOR + turn;
-        id = id*ID_FACTOR + phase.getType().getIndex();
+        id = id*ID_FACTOR + phase.getType().ordinal();
         id = id*ID_FACTOR + score + pruneScore;
 		id = players[0].getPlayerId(id);
 		id = players[1].getPlayerId(id);
@@ -375,11 +375,11 @@ public class MagicGame {
 	}
 
 	public long createIdentifier(final MagicIdentifierType type) {
-		return identifiers[type.getIndex()]++;
+		return identifiers[type.ordinal()]++;
 	}
 	
 	public void releaseIdentifier(final MagicIdentifierType type) {
-		identifiers[type.getIndex()]--;
+		identifiers[type.ordinal()]--;
 	}
 	
 	public void setIdentifiers(final long identifiers[]) {
