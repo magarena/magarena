@@ -243,17 +243,14 @@ public class MagicGame {
 	}
 
 	public boolean isArtificial() {
-		
 		return artificial;
 	}
 	
 	public boolean isSound() {
-		
 		return sound;
 	}
 	
 	public void setFastChoices(final boolean fastChoices) {
-		
 		this.fastChoices=fastChoices;
 	}
 	

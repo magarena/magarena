@@ -27,7 +27,8 @@ public class MagicDrawPhase extends MagicPhase {
 			game.doAction(new MagicDrawAction(player,1));
 			game.setStep(game.canSkip()?MagicStep.NextPhase:MagicStep.ActivePlayer);
 
-			// Determines what the purpose is for permanents that can attack, block or produce mana. Do this after draw, could be a land card.
+            // Determines what the purpose is for permanents that can attack,
+            // block or produce mana. Do this after draw, could be a land card.
 			if (player.getPlayerDefinition().isArtificial()) {
 				game.addEvent(new MagicExcludeEvent(player));
 			}
