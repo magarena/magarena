@@ -24,7 +24,11 @@ public enum MagicSubType {
 	;
 
 	public static final int ALL_BASIC_LANDS = 
-        Forest.getMask()|Island.getMask()|Mountain.getMask()|Plains.getMask()|Swamp.getMask();
+        Forest.getMask()|
+        Island.getMask()|
+        Mountain.getMask()|
+        Plains.getMask()|
+        Swamp.getMask();
 	
 	public static final int ALL_CREATURES=
         Bat.getMask()|
@@ -44,7 +48,6 @@ public enum MagicSubType {
 	private MagicSubType(final String name) {
 		this.name=name;
 		this.mask=1<<ordinal();
-        System.err.println(name + " " + mask);
 	}
 	
 	public String getName() {
@@ -56,7 +59,7 @@ public enum MagicSubType {
 	}
 	
 	public int getIndex() {
-	    return ordinal();	
+	    return ordinal();
 	}
 	
 	public int getMask() {
