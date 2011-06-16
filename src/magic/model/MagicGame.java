@@ -178,7 +178,6 @@ public class MagicGame {
             turn,
             phase.hashCode(),
             step.hashCode(),
-            eventsExecuted,
 	        priorityPassedCount,
 	        landPlayed,
             players[0].getPlayerId(),
@@ -192,8 +191,7 @@ public class MagicGame {
                turn + " " + 
                phase.hashCode() + " " +
                step.hashCode() + " " +
-               eventsExecuted + " " +
-	           priorityPassedCount + " " +
+               priorityPassedCount + " " +
 	           landPlayed + " " +
                "\n" + 
                players[0].getIdString() + 
