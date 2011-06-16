@@ -23,7 +23,6 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	
 	@Override
 	public void copy(final MagicCopyMap copyMap,final MagicCopyable copySource) {
-		
 		final MagicItemOnStack sourceItem=(MagicItemOnStack)copySource;
 		source=(MagicSource)copyMap.copyObject(sourceItem.source);
 		controller=copyMap.copy(sourceItem.controller);
@@ -35,68 +34,55 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	
 	@Override
 	public Object map(final MagicGame game) {
-
 		return game.getStack().getItemOnStack(id);
 	}
 
 	public void setSource(final MagicSource source) {
-		
 		this.source=source;
 	}
 		
 	public MagicSource getSource() {
-		
 		return source;
 	}
 	
 	public void setController(final MagicPlayer controller) {
-		
 		this.controller=controller;
 	}
 	
 	@Override
 	public MagicPlayer getController() {
-
 		return controller;
 	}
 	
 	public void setActivation(final MagicActivation activation) {
-		
 		this.activation=activation;
 	}
 	
 	public MagicActivation getActivation() {
-		
 		return activation;
 	}
 			
 	public void setEvent(final MagicEvent event) {
-		
 		this.event=event;
 	}
 	
 	public MagicEvent getEvent() {
-		
 		return event;
 	}
 	
 	public boolean hasChoices() {
-		
 		return event.hasChoice();
 	}
 
 	public void setChoiceResults(final Object choiceResults[]) {
-		
 		this.choiceResults=choiceResults;
 	}
 	
 	public Object[] getChoiceResults() {
-		
 		return choiceResults;
 	}
 	
 	public boolean containsInChoiceResults(final MagicPermanent permanent) {
-		
 		if (choiceResults!=null) {
 			for (final Object choiceResult : choiceResults) {
 				
@@ -109,52 +95,43 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	}
 	
 	public void setId(final long id) {
-		
 		this.id=id;
 	}
 	
 	public long getId() {
-		
 		return id;
 	}
 	
 	public void resolve(final MagicGame game) {
-		
 		game.executeEvent(event,choiceResults);
 	}
 	
 	@Override
 	public String getName() {
-		
 		return source.getName();
 	}
 	
 	public String getDescription() {
-		
 		return event.getDescription(choiceResults);
 	}
 	
 	@Override
 	public String toString() {
-		
 		return getName();
 	}
 		
 	@Override
 	public boolean isPermanent() {
-
 		return false;
 	}
 
 	@Override
 	public boolean isPlayer() {
-
 		return false;
 	}
 
 	@Override
 	public int getPreventDamage() {
-
 		return 0;
 	}
 	
@@ -165,7 +142,6 @@ public abstract class MagicItemOnStack implements MagicTarget {
 
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
-
 		return source!=this.source;
 	}
 
