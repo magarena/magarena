@@ -93,7 +93,7 @@ public class GameController {
     public void passKeyPressed() {
 		if (gamePanel.canClickAction()) {
 			actionClicked();
-		    game.setPassPriority(true);
+		    game.setSkipTurn(true);
 		}
 	}
 	
