@@ -18,7 +18,8 @@ public class ArtificialWorkerPool {
 	private static final int INITIAL_MAX_GAMES=10000;
 	private static final int MAX_DEPTH=120;
 	private static final int MAX_GAMES=12000;
-	private static final boolean LOGGING=false;
+	private static boolean LOGGING=false;
+	private boolean CHEAT=false;
 	
 	private final MagicGame sourceGame;
 	private final MagicPlayer scorePlayer;
@@ -27,13 +28,16 @@ public class ArtificialWorkerPool {
 	private ArtificialPruneScore pruneScore;
 
 	public ArtificialWorkerPool(final MagicGame game,final MagicPlayer scorePlayer) {
-
 		sourceGame=game;
 		this.scorePlayer=scorePlayer;
 		workers=new LinkedList<ArtificialWorker>();
 	}
+
+    public void setCheat(final boolean cheat) {
+        CHEAT = cheat;
+    }
 	
-	private static void logMessage(final String message) {
+	private static void log(final String message) {
 		if (LOGGING) {
 			System.err.println(message);
 		}
@@ -43,7 +47,7 @@ public class ArtificialWorkerPool {
 		
 		// Use maximum 4 artificial worker threads.
 		final int threads=Math.min(4,Runtime.getRuntime().availableProcessors()); 
-		logMessage(threads+" AI worker threads.");
+		log(threads+" AI worker threads.");
 		return threads;
 	}
 	
@@ -59,7 +63,9 @@ public class ArtificialWorkerPool {
 
 		// Copying the game is necessary because for some choices game scores might be calculated.
 		MagicGame choiceGame=new MagicGame(sourceGame,scorePlayer);
-		choiceGame.setKnownCards();
+        if (!CHEAT) {
+    		choiceGame.setKnownCards();
+        }
 		final MagicEvent event=choiceGame.getNextEvent();
 
 		// Find all possible choice results.
@@ -74,7 +80,7 @@ public class ArtificialWorkerPool {
 		// Single choice result.
 		if (size==1) {
 			final Object bestChoiceResults[]=choiceResultsList.get(0);
-			logMessage("Single : "+Arrays.toString(bestChoiceResults));
+			log("Single : "+Arrays.toString(bestChoiceResults));
 			return sourceGame.map(bestChoiceResults);
 		}
 		
@@ -91,7 +97,9 @@ public class ArtificialWorkerPool {
 		for (int index=0;index<workerSize;index++) {
 
 			final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
-			workerGame.setKnownCards();
+            if (!CHEAT) {
+    			workerGame.setKnownCards();
+            }
 			workerGame.setFastChoices(true);
 			workers.add(new ArtificialWorker(index,workerGame,scoreBoard));
 		}
@@ -134,10 +142,10 @@ public class ArtificialWorkerPool {
 
 		// Logging.
 		time=System.currentTimeMillis()-time;
-		logMessage("Time : "+time+"  Workers : "+workerSize+"  Main : "+mainPhases);
+		log("Time : "+time+"  Workers : "+workerSize+"  Main : "+mainPhases);
 		for (final ArtificialChoiceResults aiChoiceResults : aiChoiceResultsList) {
 			
-			logMessage((aiChoiceResults==bestChoiceResults?"* ":"  ")+aiChoiceResults);
+			log((aiChoiceResults==bestChoiceResults?"* ":"  ")+aiChoiceResults);
 		}
 
 		return sourceGame.map(bestChoiceResults.choiceResults);
