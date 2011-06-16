@@ -11,19 +11,16 @@ public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
 	private boolean kicked=false;
 	
 	public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack,final MagicPermanent enchantedPermanent) {
-
 		this.cardOnStack=cardOnStack;
 		setEnchantedPermanent(enchantedPermanent);
 	}
 	
 	public void setKicked(final boolean kicked) {
-		
 		this.kicked=kicked;
 	}
 
 	@Override
 	protected MagicPermanent createPermanent(final MagicGame game) {
-
 		final MagicPermanent permanent=game.createPermanent(cardOnStack.getCard(),cardOnStack.getController());
 		if (kicked) {
 			permanent.setState(MagicPermanentState.Kicked);
