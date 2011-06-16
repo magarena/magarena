@@ -10,61 +10,47 @@ import magic.data.IconImages;
 
 public enum MagicColor {
 
-	Black("black",'b',0),
-	Blue("blue",'u',1),
-	Green("green",'g',2),
-	Red("red",'r',3),
-	White("white",'w',4)
+	Black("black",'b'),
+	Blue("blue",'u'),
+	Green("green",'g'),
+	Red("red",'r'),
+	White("white",'w')
 	;
 	
 	public static final int NR_COLORS=values().length;
 	
 	private final String name;
 	private final char symbol;
-	private final int index;
 	private final int mask;
 	
-	private MagicColor(final String name,final char symbol,final int index) {
-		
+	private MagicColor(final String name,final char symbol) {
 		this.name=name;	
 		this.symbol=symbol;
-		this.index=index;
-		this.mask=1<<index;
+		this.mask=1<<ordinal();
 	}
 	
 	public String getName() {
-		
 		return name;
 	}
 	
 	@Override
 	public String toString() {
-		
 		return name;
 	}
 	
 	public char getSymbol() {
-		
 		return symbol;
 	}
 	
-	public int getIndex() {
-		
-		return index;
-	}
-	
 	public int getMask() {
-		
 		return mask;
 	}
 	
 	public boolean hasColor(final int flags) {
-		
 		return (flags&mask)!=0;
 	}
 	
 	public MagicAbility getProtectionAbility() {
-		
 		switch (this) {
 			case Black: return MagicAbility.ProtectionFromBlack;
 			case Blue: return MagicAbility.ProtectionFromBlue;
@@ -76,7 +62,6 @@ public enum MagicColor {
 	}
 	
 	public MagicAbility getLandwalkAbility() {
-	
 		switch (this) {
 			case Black: return MagicAbility.Swampwalk;
 			case Blue: return MagicAbility.Islandwalk;
@@ -88,7 +73,6 @@ public enum MagicColor {
 	}
 	
 	public MagicSubType getLandSubType() {
-		
 		switch (this) {
 			case Black: return MagicSubType.Swamp;
 			case Blue: return MagicSubType.Island;
@@ -100,7 +84,6 @@ public enum MagicColor {
 	}
 	
 	public MagicManaType getManaType() {
-		
 		switch (this) {
 			case Black: return MagicManaType.Black;
 			case Blue: return MagicManaType.Blue;
@@ -112,7 +95,6 @@ public enum MagicColor {
 	}
 	
 	public ImageIcon getIcon() {
-
 		switch (this) {
 			case Black: return IconImages.BLACK;
 			case Blue: return IconImages.BLUE;
@@ -124,10 +106,8 @@ public enum MagicColor {
 	}
 
 	public static int getFlags(final String colors) {
-		
 		int flags=0;
 		for (int index=0;index<colors.length();index++) {
-
 			final char symbol=colors.charAt(index);
 			final MagicColor color=getColor(symbol);
 			flags|=color.getMask();
@@ -136,10 +116,8 @@ public enum MagicColor {
 	}
 	
 	public static MagicColor getColor(final char symbol) {
-		
 		final char usymbol=Character.toLowerCase(symbol);
 		for (final MagicColor color : values()) {
-			
 			if (color.symbol==usymbol) {
 				return color;
 			}
@@ -148,11 +126,9 @@ public enum MagicColor {
 	}	
 	
 	public static String getRandomColors(final int count) {
-		
 		final List<Character> colors=new ArrayList<Character>(Arrays.<Character>asList('b','u','g','r','w'));
 		final StringBuffer colorText=new StringBuffer();
 		for (int c=count;c>0;c--) {
-
 			final int index=MagicRandom.nextInt(colors.size());
 			colorText.append((char)colors.remove(index));			
 		}

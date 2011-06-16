@@ -389,7 +389,7 @@ public class MagicCardDefinition {
 			final char symbol=sourceText.charAt(index);
 			final int source=sourceText.charAt(index+1)-'0';
 			final MagicColor color=MagicColor.getColor(symbol);
-			manaSource[color.getIndex()]=source;
+			manaSource[color.ordinal()]=source;
 		}
 	}
 
@@ -400,7 +400,7 @@ public class MagicCardDefinition {
 	
 	public int getManaSource(final MagicColor color) {
 
-		return manaSource[color.getIndex()];
+		return manaSource[color.ordinal()];
 	}
 	
 	public void setBasicManaActivations(final String basicText) {

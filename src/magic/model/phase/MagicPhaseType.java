@@ -29,8 +29,4 @@ public enum MagicPhaseType {
 	public boolean isMain() {
 	    return this == FirstMain || this == SecondMain;	
 	}
-	
-	public int getIndex() {
-		return ordinal();
-	}
 }

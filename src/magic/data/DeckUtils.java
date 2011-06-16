@@ -132,7 +132,7 @@ public class DeckUtils {
 									for (final MagicColor color : MagicColor.values()) {
 										
 										if (color.hasColor(colorFlags)) {
-											colorCount[color.getIndex()]++;
+											colorCount[color.ordinal()]++;
 										}
 									}
 									deck.add(cardDefinition);

@@ -73,14 +73,14 @@ public class MagicPlayerDefinition {
 			if (cardDefinition.isLand()) {
 				for (final MagicColor color : MagicColor.values()) {
 
-					colorSource[color.getIndex()]+=cardDefinition.getManaSource(color);
+					colorSource[color.ordinal()]+=cardDefinition.getManaSource(color);
 				}
 			} else {
 				final int colorFlags=cardDefinition.getColorFlags();
 				for (final MagicColor color : profile.getColors()) {
 
 					if (color.hasColor(colorFlags)) {
-						colorCount[color.getIndex()]++;
+						colorCount[color.ordinal()]++;
 					}
 				}				
 			}
@@ -93,7 +93,7 @@ public class MagicPlayerDefinition {
 			int lowestRatio=Integer.MAX_VALUE;
 			for (final MagicColor color : MagicColor.values()) {
 				
-				final int index=color.getIndex();
+				final int index=color.ordinal();
 				final int count=colorCount[index];
 				if (count>0) {
 					final int source=colorSource[index];
@@ -110,7 +110,7 @@ public class MagicPlayerDefinition {
 				}
 			}
 			final MagicCardDefinition landCard=CardDefinitions.getInstance().getBasicLand(bestColor);
-			colorSource[bestColor.getIndex()]+=landCard.getManaSource(bestColor);
+			colorSource[bestColor.ordinal()]+=landCard.getManaSource(bestColor);
 			deck.add(landCard);
 		}
 	}

@@ -119,7 +119,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		final MagicPlayerProfile profile=player.getProfile();
 		for (final MagicColor color : profile.getColors()) {
 			
-			final int index=color.getIndex();
+			final int index=color.ordinal();
 			final JLabel label=new JLabel(color.getManaType().getIcon(true));
 			label.setForeground(textColor);
 			label.setHorizontalAlignment(JLabel.LEFT);

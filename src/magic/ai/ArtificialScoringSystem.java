@@ -34,7 +34,7 @@ public class ArtificialScoringSystem {
 	public static int getLoseGameScore(final MagicGame game) {
 
 		// Lose score is lowered in function of the turn and phase when it occurs. Encourages AI to win as fast as possible.
-		return LOSE_GAME_SCORE+game.getTurn()*2500+game.getPhase().getType().getIndex()*200;
+		return LOSE_GAME_SCORE+game.getTurn()*2500+game.getPhase().getType().ordinal()*200;
 	}
 	
 	public static int getCardDefinitionScore(final MagicCardDefinition cardDefinition) {

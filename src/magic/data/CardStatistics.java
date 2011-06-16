@@ -78,7 +78,7 @@ public class CardStatistics {
 				for (final MagicColor color : MagicColor.values()) {
 					
 					if (card.getManaSource(color)>0) {
-						colorLands[color.getIndex()]++;
+						colorLands[color.ordinal()]++;
 					}
 				}				
 			} else {
@@ -111,7 +111,7 @@ public class CardStatistics {
 				for (final MagicColor color : MagicColor.values()) {
 				
 					if (color.hasColor(card.getColorFlags())) {
-						index=color.getIndex();
+						index=color.ordinal();
 						colorCount[index]++;
 						count++;
 					}
@@ -153,7 +153,7 @@ public class CardStatistics {
 
 		for (final MagicColor color : MagicColor.values()) {
 			
-			final int index=color.getIndex();
+			final int index=color.ordinal();
 			stream.print("Color "+color.getName()+" : "+colorCount[index]);
 			stream.print("  Mono : "+colorMono[index]);
 			stream.print("  Lands : "+colorLands[index]);

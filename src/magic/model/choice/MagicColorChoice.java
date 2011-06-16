@@ -54,7 +54,7 @@ public class MagicColorChoice extends MagicChoice {
 			for (final MagicColor color : MagicColor.values()) {
 				
 				if (color.hasColor(colorFlags)) {
-					counts[color.getIndex()]++;
+					counts[color.ordinal()]++;
 				}
 			}
 		}
@@ -63,7 +63,7 @@ public class MagicColorChoice extends MagicChoice {
 		MagicColor bestColor=null;
 		for (final MagicColor color : MagicColor.values()) {
 			
-			final int count=counts[color.getIndex()];
+			final int count=counts[color.ordinal()];
 			if (count>bestCount) {
 				bestCount=count;
 				bestColor=color;
@@ -87,7 +87,7 @@ public class MagicColorChoice extends MagicChoice {
 			for (final MagicColor color : MagicColor.values()) {
 				
 				if (color.hasColor(colorFlags)) {
-					scores[color.getIndex()]+=score;
+					scores[color.ordinal()]+=score;
 				}
 			}			
 		}
@@ -96,7 +96,7 @@ public class MagicColorChoice extends MagicChoice {
 		MagicColor bestColor=null;
 		for (final MagicColor color : MagicColor.values()) {
 			
-			final int score=scores[color.getIndex()];
+			final int score=scores[color.ordinal()];
 			if (score>bestScore) {
 				bestScore=score;
 				bestColor=color;
