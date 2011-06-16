@@ -285,8 +285,8 @@ public class MCTSAI implements MagicAI {
                
     private boolean checkNode(final MCTSGameTree curr, List<Object[]> choices) {
         for (MCTSGameTree child : curr) {
-            final int checksum = obj2StringHash(choices.get(child.getChoice())[0]);
-            if (child.getChecksum() != checksum) {
+            final String checkStr = obj2String(choices.get(child.getChoice())[0]);
+            if (!child.desc.equals(checkStr)) {
                 System.err.println("ERROR! tree node and choice do not match");
                 printNode(curr, choices);
                 return false;
@@ -368,7 +368,7 @@ public class MCTSAI implements MagicAI {
             
             //all the children are in the tree, find the "best" child to explore
             } else {
-                //assert checkNode(curr, choices);
+                assert checkNode(curr, choices);
 
                 assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game" + 
                     printNode(curr,choices); 
