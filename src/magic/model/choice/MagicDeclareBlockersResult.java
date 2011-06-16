@@ -16,23 +16,19 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 	private final int score;
 
 	public MagicDeclareBlockersResult(final int position,final int score) {
-
 		this.position=position;
 		this.score=score;		
 	}
 	
 	public MagicDeclareBlockersResult(final MagicDeclareBlockersResult result,final int position,final int score) {
-
 		this(position,score);
 		for (final MagicCombatCreature creatures[] : result) {
-			
 			add(Arrays.copyOf(creatures,creatures.length));
 		}
 	}
 
 	@Override
 	public Object map(final MagicGame game) {
-
 		final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(position,score);
 		for (final MagicCombatCreature creatures[] : this) {
 
@@ -49,25 +45,25 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 
 	@Override
 	public int getPosition() {
-
 		return position;
 	}
 
 	@Override
 	public int getScore() {
-		
 		return score;
 	}
 	
 	@Override
 	public String toString() {
-		
 		final StringBuilder builder=new StringBuilder();
-		builder.append(score);
+		//builder.append(score);
 		for (final MagicCombatCreature creatures[] : this) {
-			
 			if (creatures.length>1) {
-				builder.append(',').append(creatures[0].getName()+'='+creatures[1].getName()+(creatures.length>2?"+"+(creatures.length-2):""));
+				builder.append(' ');
+                builder.append(creatures[0].getName());
+                builder.append('=');
+                builder.append(creatures[1].getName());
+                builder.append(creatures.length > 2 ? "+" + (creatures.length-2) : "");
 			}
 		}
 		return builder.toString();
