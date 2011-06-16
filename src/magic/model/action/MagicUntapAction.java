@@ -12,13 +12,11 @@ public class MagicUntapAction extends MagicAction {
 	private boolean untap;
 	
 	public MagicUntapAction(final MagicPermanent permanent) {
-		
 		this.permanent=permanent;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		untap=permanent.hasState(MagicPermanentState.Tapped);
 		if (untap) {
 			permanent.clearState(MagicPermanentState.Tapped);
@@ -29,7 +27,6 @@ public class MagicUntapAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		if (untap) {
 			permanent.setState(MagicPermanentState.Tapped);
 		}
@@ -37,7 +34,6 @@ public class MagicUntapAction extends MagicAction {
 	
 	@Override
 	public String toString() {
-		
 		return getClass().getSimpleName()+" ("+permanent.getName()+')';
-	}	
+	}
 }

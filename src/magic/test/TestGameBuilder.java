@@ -78,10 +78,8 @@ public class TestGameBuilder {
 			lastPermanent=permanent;
 			
 			game.doAction(new MagicPutIntoPlayAction() {
-				
 				@Override
 				protected MagicPermanent createPermanent(final MagicGame game) {
-
 					return permanent;
 				}
 			});
