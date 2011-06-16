@@ -10,7 +10,8 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.event.MagicSourceManaActivationResult;
 
-public class MagicBuilderPayManaCostResult implements MagicPayManaCostResult,MagicMappable,Comparable<MagicBuilderPayManaCostResult> {
+public class MagicBuilderPayManaCostResult implements 
+    MagicPayManaCostResult, MagicMappable, Comparable<MagicBuilderPayManaCostResult> {
 
 	private MagicSourceManaActivationResult results[];
 	private short amountLeft[];
@@ -115,8 +116,7 @@ public class MagicBuilderPayManaCostResult implements MagicPayManaCostResult,Mag
 	
 	@Override
 	public String toString() {
-
-		return x>0?"X is "+x:"";
+        return x > 0 ? "X is " + x : "";
 	}
 
 	@Override
