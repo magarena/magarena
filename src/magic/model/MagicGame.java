@@ -142,7 +142,7 @@ public class MagicGame {
 		this.phase=game.phase;
 		this.step=game.step;
 		this.payedCost=new MagicPayedCost(copyMap,game.payedCost);
-		
+
         //the following are NOT copied when game state is cloned
         this.actions=new MagicActionList();
 		this.undoPoints=null;
@@ -178,9 +178,9 @@ public class MagicGame {
             turn,
             phase.hashCode(),
             step.hashCode(),
+            eventsExecuted,
 	        priorityPassedCount,
 	        landPlayed,
-            eventsExecuted,
             players[0].getPlayerId(),
             players[1].getPlayerId(),
         };
@@ -190,11 +190,11 @@ public class MagicGame {
     public String getIdString() {
         return "\n" +
                turn + " " + 
-               phase.hashCode() + " " + 
-               step.hashCode() + " " + 
+               phase.hashCode() + " " +
+               step.hashCode() + " " +
+               eventsExecuted + " " +
 	           priorityPassedCount + " " +
 	           landPlayed + " " +
-               eventsExecuted + " " +
                "\n" + 
                players[0].getIdString() + 
                "\n" +
