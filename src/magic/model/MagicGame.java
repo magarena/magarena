@@ -63,7 +63,6 @@ public class MagicGame {
 	private long identifiers[];
 	private int score=0;
 	private int turn=1;
-    private int eventsExecuted=0;
 	private int startTurn=0;
 	private int mainPhaseCount=100000000;
 	private int landPlayed=0;
@@ -85,6 +84,7 @@ public class MagicGame {
 	private MagicActionList undoPoints;
 	private final MagicLogBook logBook;
 	private final MagicLogMessageBuilder logMessageBuilder;
+    private long[] keys;
 	
 	public MagicGame(
             final MagicTournament tournament,
@@ -132,7 +132,6 @@ public class MagicGame {
 		this.scorePlayer=copyMap.copy(scorePlayer);
 		this.score=0;
 		this.turn=game.turn;
-        this.eventsExecuted=game.eventsExecuted;
 		this.startTurn=game.startTurn;
 		this.landPlayed=game.landPlayed;
 		this.priorityPassed=game.priorityPassed;
@@ -172,25 +171,41 @@ public class MagicGame {
 		
 		return score;
 	}
-	
+
+    //follow factors in MagicMarkerAction
     public long getGameId() {
-		long[] input = { 
+		keys = new long[] { 
             turn,
             phase.getType().ordinal(),
+            step.ordinal(),
+            turnPlayer.getIndex(),
+            landPlayed,
+            priorityPassedCount,
+            (priorityPassed ? 999 : 111),
+            (stateCheckRequired ? 9999 : 1111),
+            getPayedCost().getX(),
+            identifiers[0],
+            identifiers[1],
+            identifiers[2],
             players[0].getPlayerId(),
             players[1].getPlayerId(),
         };
-		return magic.MurmurHash3.hash(input);
+		return magic.MurmurHash3.hash(keys);
     }
     
     public String getIdString() {
-        return "\n" +
-               turn + " " + 
-               phase.getType() + " " +
-               "\n" + 
-               players[0].getIdString() + 
-               "\n" +
-               players[1].getIdString();
+        StringBuffer sb = new StringBuffer();
+        sb.append('\n');
+        sb.append(keys[0]);
+        for (int i = 1; i < keys.length; i++) {
+            sb.append(' ');
+            sb.append(keys[i]);
+        }
+        sb.append('\n');
+        sb.append(players[0].getIdString());
+        sb.append('\n');
+        sb.append(players[1].getIdString());
+        return sb.toString();
     }
 	
 	public long getGameId(final int pruneScore) {
@@ -264,10 +279,6 @@ public class MagicGame {
 		return turn;
 	}
 
-    public int getEventsExecuted() {
-        return eventsExecuted;
-    }
-	
 	public void setMainPhases(final int count) {
 		startTurn=turn;
 		mainPhaseCount=count;
@@ -384,6 +395,10 @@ public class MagicGame {
 	public long[] getIdentifiers() {
 		return Arrays.copyOf(identifiers,identifiers.length);
 	}
+
+    public int getNumActions() {
+        return actions.size();
+    }
 		
 	public void startActions() {
 		doAction(new MagicMarkerAction());
@@ -514,7 +529,6 @@ public class MagicGame {
         assert choiceResults != null : "ERROR! choiceResults is null in executeEvent";
         
         logAppendEvent(event,choiceResults);
-		eventsExecuted++;	
     
         // Payed cost.
         if (choiceResults.length==1) {
