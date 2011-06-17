@@ -18,15 +18,12 @@ public class MagicActivationMap extends HashMap<MagicActivation,SortedSet<MagicS
 	private final SortedSet<MagicActivation> activations; // Must be ordered.
 	
 	public MagicActivationMap() {
-
 		activations=new TreeSet<MagicActivation>();
 	}
 	
 	public MagicActivationMap(final MagicCopyMap copyMap,final MagicActivationMap map) {
-
 		activations=new TreeSet<MagicActivation>(map.activations);
 		for (final MagicActivation activation : activations) {
-			
 			final SortedSet<MagicSource> sources=new TreeSet<MagicSource>();
 			copyMap.copyCollection(map.get(activation),sources);
 			put(activation,sources);
@@ -34,12 +31,10 @@ public class MagicActivationMap extends HashMap<MagicActivation,SortedSet<MagicS
 	}
 	
 	public SortedSet<MagicActivation> getActivations() {
-		
 		return activations;
 	}
 	
 	private void addActivation(final MagicActivation activation,final MagicSource source) {
-		
 		SortedSet<MagicSource> sources=get(activation);
 		if (sources==null) {
 			sources=new TreeSet<MagicSource>();
@@ -50,7 +45,6 @@ public class MagicActivationMap extends HashMap<MagicActivation,SortedSet<MagicS
 	}
 	
 	private void removeActivation(final MagicActivation activation,final MagicSource source) {
-
 		final Set<MagicSource> sources=get(activation);		
 		if (sources!=null) {
 			sources.remove(source);
@@ -62,43 +56,33 @@ public class MagicActivationMap extends HashMap<MagicActivation,SortedSet<MagicS
 	}
 	
 	public void addActivations(final MagicCard card) {
-		
 		addActivation(card.getCardDefinition().getCardActivation(),card);
 	}
 	
 	public void addActivations(final MagicCardList cardList) {
-		
 		for (final MagicCard card : cardList) {
-			
 			addActivations(card);
 		}
 	}
 
 	public void addActivations(final MagicPermanent permanent) {
-
 		for (final MagicActivation activation : permanent.getCardDefinition().getActivations()) {
-			
 			addActivation(activation,permanent);
 		}
 	}
 	
 	public void removeActivations(final MagicCard card) {
-
 		removeActivation(card.getCardDefinition().getCardActivation(),card);
 	}
 	
 	public void removeActivations(final MagicCardList cardList) {
-		
 		for (final MagicCard card : cardList) {
-			
 			removeActivations(card);
 		}
 	}
 	
 	public void removeActivations(final MagicPermanent permanent) {
-		
 		for (final MagicActivation activation : permanent.getCardDefinition().getActivations()) {
-
 			removeActivation(activation,permanent);
 		}
 	}
