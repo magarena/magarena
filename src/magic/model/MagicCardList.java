@@ -14,12 +14,10 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		super(cardList);
 	}
 	
-	public MagicCardList copy(final MagicCopyMap copyMap) {
-		final MagicCardList cardList=new MagicCardList();
-		for (final MagicCard card : this) {
-			cardList.add(copyMap.copy(card));
+	public MagicCardList(final MagicCopyMap copyMap, final MagicCardList cardList) {
+		for (final MagicCard card : cardList) {
+			add(copyMap.copy(card));
 		}
-		return cardList;
 	}
 	
 	public long getCardsId() {
