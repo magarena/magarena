@@ -2,8 +2,8 @@ package magic.model.event;
 
 public class MagicActivationPriority {
 
-	public int priority;
-	public int activationId;
+	private int priority;
+	private int activationId;
 	
 	public MagicActivationPriority() {
 		clear();
@@ -18,6 +18,26 @@ public class MagicActivationPriority {
 		priority=-1;
 		activationId=-1;
 	}
+
+    public int getPriority() {
+        return priority;
+    }
+
+    public int getActivationId() {
+        return activationId;
+    }
+
+    public void incActivationId() {
+        activationId++;
+    }
+
+    public void setPriority(final int pri) {
+        priority = pri;
+    }
+
+    public void setActivationId(final int id) {
+        activationId = id;
+    }
 
 	@Override
 	public String toString() {

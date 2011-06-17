@@ -7,7 +7,6 @@ import magic.model.choice.MagicPlayChoice;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.phase.MagicStep;
 import magic.model.phase.MagicPhaseType;
-import magic.model.event.MagicActivationPriority;
 
 public class MagicPriorityEvent extends MagicEvent {
 	

@@ -42,47 +42,40 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	}
 	
 	public MagicActivation(final String name,final int index,final MagicCondition conditions[],final MagicActivationHints hints) {
-
 		this(CardDefinitions.getInstance().getCard(name),index,conditions,hints);		
 	}
 		
 	public final MagicCardDefinition getCardDefinition() {
-		
 		return cardDefinition;
 	}
 		
 	public final MagicCondition[] getConditions() {
-		
 		return conditions;
 	}
 
 	public final MagicActivationHints getActivationHints() {
-		
 		return hints;
 	}
 	
 	public final int getId() {
-		
 		return id;
 	}
 	
 	private final boolean checkActivationPriority(final MagicSource source) {
-
 		final MagicActivationPriority activationPriority=source.getController().getActivationPriority();
-		final int priorityDif=priority-activationPriority.priority;
+		final int priorityDif=priority-activationPriority.getPriority();
 		if (priorityDif>0) {
 			return true;
 		} else if (priorityDif<0) {
 			return false;
 		} 
-		return id>=activationPriority.activationId;		
+		return id >= activationPriority.getActivationId();		
 	}
 	
 	public void changeActivationPriority(final MagicGame game,final MagicSource source) {
-		
 		final MagicActivationPriority activationPriority=source.getController().getActivationPriority();
-		activationPriority.priority=priority;
-		activationPriority.activationId=id;
+		activationPriority.setPriority(priority);
+		activationPriority.setActivationId(id);
 	}
 	
 	public final boolean canPlay(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean useHints) {
