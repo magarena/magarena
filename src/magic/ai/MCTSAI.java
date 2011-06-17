@@ -436,7 +436,7 @@ public class MCTSAI implements MagicAI {
         
         final int startEvents = game.getEventsExecuted();
         
-        // simulate game until it is finished or simulated 300 events
+        // simulate game until it is finished or simulated MAXEVENTS events
         while (!game.isFinished() && (game.getEventsExecuted() - startEvents) < MAXEVENTS) {
             if (!game.hasNextEvent()) {
                 game.getPhase().executePhase(game);
