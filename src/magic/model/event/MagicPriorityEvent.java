@@ -7,6 +7,7 @@ import magic.model.choice.MagicPlayChoice;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.phase.MagicStep;
 import magic.model.phase.MagicPhaseType;
+import magic.model.event.MagicActivationPriority;
 
 public class MagicPriorityEvent extends MagicEvent {
 	
@@ -23,7 +24,7 @@ public class MagicPriorityEvent extends MagicEvent {
             if (playChoiceResult==MagicPlayChoiceResult.PASS) {
 				game.incrementPriorityPassedCount();
 				// When passing, the last played activation can no longer be played.
-				game.getPriorityPlayer().getActivationPriority().activationId++;
+                game.getPriorityPlayer().getActivationPriority().incActivationId();
 				if (game.getPriorityPassed()) {
 					game.setPriorityPassed(false);
 					game.resolve();
