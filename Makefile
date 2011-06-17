@@ -93,7 +93,7 @@ jar: $(MAG)
 bug: 11.jar
 
 %.jar: $(MAG)
-	$(JAVA) -DrndSeed=$* -jar $^
+	$(JAVA) -DrndSeed=$* -jar $^ |& tee $*.log
 
 test: $(MAG)
 	$(JAVA) -DrndSeed=123 magic.DeckStrCal \
