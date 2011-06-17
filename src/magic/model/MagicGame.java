@@ -177,9 +177,6 @@ public class MagicGame {
 		long[] input = { 
             turn,
             phase.getType().ordinal(),
-            step.ordinal(),
-	        priorityPassedCount,
-	        landPlayed,
             players[0].getPlayerId(),
             players[1].getPlayerId(),
         };
@@ -190,9 +187,6 @@ public class MagicGame {
         return "\n" +
                turn + " " + 
                phase.getType() + " " +
-               step + " " +
-               priorityPassedCount + " " +
-	           landPlayed + " " +
                "\n" + 
                players[0].getIdString() + 
                "\n" +
@@ -244,6 +238,10 @@ public class MagicGame {
 
 	public boolean isArtificial() {
 		return artificial;
+	}
+	
+    public void setArtificial(final boolean art) {
+		artificial = art;
 	}
 	
 	public boolean isSound() {
