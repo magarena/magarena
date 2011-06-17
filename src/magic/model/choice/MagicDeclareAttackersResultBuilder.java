@@ -21,17 +21,16 @@ public class MagicDeclareAttackersResultBuilder {
 	private final MagicPlayer defendingPlayer;
 	
 	public MagicDeclareAttackersResultBuilder(final MagicGame game,final MagicPlayer attackingPlayer) {
-
 		this.game=game;
 		this.attackingPlayer=attackingPlayer;
 		this.defendingPlayer=game.getOpponent(attackingPlayer);
 	}
 	
 	public Collection<Object> buildResults() {
-				
 		final MagicCombatCreatureBuilder creatureBuilder=new MagicCombatCreatureBuilder(game,attackingPlayer,defendingPlayer);
 		creatureBuilder.buildBlockers();
-		// Check if none of the attacking player's creatures can attack.
+		
+        // Check if none of the attacking player's creatures can attack.
 		if (!creatureBuilder.buildAttackers()) {
 			return EMPTY_RESULT;
 		}
@@ -42,7 +41,6 @@ public class MagicDeclareAttackersResultBuilder {
 		final MagicPermanent current[]=new MagicPermanent[attackersSet.size()];
 		int count=0;
 		for (final Iterator<MagicCombatCreature> iterator=attackersSet.iterator();iterator.hasNext();) {
-
 			final MagicCombatCreature attacker=iterator.next();			 
 			if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {
 				current[count++]=attacker.permanent;
@@ -54,7 +52,8 @@ public class MagicDeclareAttackersResultBuilder {
 
 		int maxAttackers=MAX_ATTACKERS[game.getRelativeTurn()];
 		int size=attackersSet.size();
-		// Single result with the required attackers only.
+
+        // Single result with the required attackers only.
 		if (maxAttackers==0||size==0) {
 			return Collections.<Object>singletonList(new MagicDeclareAttackersResult(current,count,0,0));
 		}
@@ -65,7 +64,6 @@ public class MagicDeclareAttackersResultBuilder {
 		
 		// Get the best remaining optional attackers.
 		for (;size>maxAttackers;) {
-
 			// Add option to attack with all creatures for an alpha strike.
 			final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult(current,count,position++,0);
 			result.addCreatures(attackersSet);
@@ -74,6 +72,7 @@ public class MagicDeclareAttackersResultBuilder {
 			size--;
 			attackersSet.remove(attackersSet.first());
 		}
+
 		final MagicCombatCreature attackers[]=new MagicCombatCreature[size];
 		attackersSet.toArray(attackers);
 		
@@ -81,13 +80,11 @@ public class MagicDeclareAttackersResultBuilder {
 		final int step[]=new int[size];
 		int index=0;
 		while (index>=0) {
-			
 			if (index==size) {
 				results.add(new MagicDeclareAttackersResult(current,count,position++,0));
 				index--;
 				continue;
 			}
-
 			switch (step[index]++) {
 				case 0:
 					current[count++]=attackers[index++].permanent;
