@@ -63,8 +63,6 @@ public class MCTSAI implements MagicAI {
     private final List<Integer> LENS = new LinkedList<Integer>();
     private final boolean LOGGING;
 	private final boolean CHEAT;
-    private int MAXTIME;
-    private long STARTTIME;
     private static final int MAX_ACTIONS = 10000;
     
     //higher C -> more exploration less exploitation
@@ -155,8 +153,13 @@ public class MCTSAI implements MagicAI {
         }
         
         //ArtificialLevel = number of seconds to run MCTSAI
-        MAXTIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
-        STARTTIME = System.currentTimeMillis();
+        //debugging: max time is 1 billion, max sim is 500
+        //normal   : max time is 1000 * str, max sim is 1 billion
+        final int MAXTIME = System.getProperty("debug") != null ?
+            1000000000 : 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
+        final int MAXSIM = System.getProperty("debug") != null ? 
+            500 : 1000000000;
+        final long STARTTIME = System.currentTimeMillis();
        
         //root represents the start state
         //final MCTSGameTree root = new MCTSGameTree(-1, -1, -1);
@@ -166,7 +169,9 @@ public class MCTSAI implements MagicAI {
 
         //end simulations once root is solved or time is up
         int sims = 0;
-        for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isAIWin(); sims++) {
+        for (; System.currentTimeMillis() - STARTTIME < MAXTIME &&
+               sims < MAXSIM && 
+               !root.isAIWin(); sims++) {
             //clone the MagicGame object for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
             if (!CHEAT) {
