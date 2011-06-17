@@ -39,75 +39,61 @@ public class MagicTournament {
 	private int[] difficulty = new int[2];
 	
 	public MagicTournament(final TournamentConfig configuration) {
-
 		this.configuration=configuration;
 		ais=configuration.getPlayerAIs();
 		restart();
 	}
 	
 	public MagicTournament() {
-
 		this(new TournamentConfig());
 	}
 	
 	public MagicTournament(final TournamentConfig configuration,final MagicTournament tournament) {
-		
 		this(configuration);
 		playerDefinitions=tournament.playerDefinitions;
 	}
 	
 	public TournamentConfig getConfiguration() {
-		
 		return configuration;
 	}
 	
 	public MagicPlayerDefinition getOpponent() {
-		
 		return playerDefinitions[opponentIndex];
 	}
 
 	public int getGameNr() {
-		
 		return gameNr;
 	}
 
 	public int getGamesPlayed() {
-		
 		return gamesPlayed;
 	}
 	
 	public int getGamesTotal() {
-		
 		return (playerDefinitions.length-1)*configuration.getNrOfGames();
 	}
 
 	public int getGamesWon() {
-		
 		return gamesWon;
 	}
 
 	public void determineStartPlayer() {
-		
 		startPlayer=MagicRandom.nextInt(2);
 	}
 	
 	public void setStartPlayer(final int startPlayer) {
-		
 		this.startPlayer=startPlayer;
 	}
 	
 	public int getStartPlayer() {
-		
 		return startPlayer;
 	}
 
     public void setAIs(final MagicAI[] ais) {
-    	
     	this.ais = ais;
     }
 
     public MagicAI[] getAIs() {
-    	
         return ais;
     }
 	
@@ -158,7 +144,6 @@ public class MagicTournament {
 	}
 	
 	private List<Integer> getAvatarIndices(final int avatars) {
-		
 		final List<Integer> indices=new ArrayList<Integer>();
 		for (int index=0;index<avatars;index++) {
 			
@@ -168,7 +153,6 @@ public class MagicTournament {
 	}
 
 	private MagicPlayerDefinition[] createPlayers() {
-
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		final List<Integer> avatars=getAvatarIndices(theme.getNumberOfAvatars());
 
@@ -195,27 +179,22 @@ public class MagicTournament {
 	}
 	
 	public int getNrOfPlayers() {
-		
 		return playerDefinitions.length;
 	}
 	
 	public MagicPlayerDefinition getPlayer(final int index) {
-		
 		return playerDefinitions[index];
 	}
 		
 	public MagicPlayerDefinition[] getPlayers() {
-		
 		return playerDefinitions;
 	}
 	
 	public void setPlayers(final MagicPlayerDefinition playerDefinitions[]) {
-		
 		this.playerDefinitions=playerDefinitions;
 	}
 	
 	private void buildDecks() {
-		
 		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(configuration.getCube());
         final DeckGenerator generator=new DeckGenerator(cubeDefinition);
 		for (final MagicPlayerDefinition player : playerDefinitions) {
@@ -228,23 +207,19 @@ public class MagicTournament {
 	}
 					
 	public void initialize() {
-
 		playerDefinitions=createPlayers();
 		buildDecks();
 	}
 	
 	public static final File getTournamentFile() {
-
 		return new File(MagicMain.getGamePath(),"tournament.txt");		
 	}
 	
 	private String getPlayerPrefix(final int index) {
-		
 		return "p"+(index+1)+".";
 	}
 	
 	public void save(final Properties properties) {
-		
 		configuration.save(properties);
 		
 		properties.setProperty(OPPONENT,""+opponentIndex);
@@ -260,7 +235,6 @@ public class MagicTournament {
 	}
 	
 	public void save(final File file) {
-		
 		try {
 			final Properties properties=new Properties();
 			save(properties);
@@ -269,7 +243,6 @@ public class MagicTournament {
 	}
 	
 	public void load(final Properties properties) {
-
 		configuration.load(properties);
 		
 		opponentIndex=Integer.parseInt(properties.getProperty(OPPONENT,"1"));
@@ -287,7 +260,6 @@ public class MagicTournament {
 	}
 	
 	public void load(final File file) {
-
 		try {
 			final Properties properties=new Properties();
 			properties.load(new FileInputStream(file));
@@ -296,7 +268,6 @@ public class MagicTournament {
 	}
 	
 	public void restart() {
-		
 		opponentIndex=1;
 		gameNr=1;
 		gamesPlayed=0;

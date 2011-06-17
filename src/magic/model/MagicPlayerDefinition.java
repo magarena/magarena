@@ -21,12 +21,9 @@ public class MagicPlayerDefinition {
 	private int face;
 	private MagicDeck deck=new MagicDeck();
 
-	public MagicPlayerDefinition() {
-		
-	}
+	public MagicPlayerDefinition() {}
 	
 	public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile,final int face) {
-		
 		this.name=name;
 		this.artificial=artificial;
 		this.profile=profile;
@@ -34,37 +31,30 @@ public class MagicPlayerDefinition {
 	}
 	
 	public String getName() {
-		
 		return name;
 	}
 
-	public void setArtificial(final boolean artificial) {
-		
-		this.artificial=artificial;
+	public void setArtificial(final boolean art) {
+		this.artificial=art;
 	}
 	
 	public boolean isArtificial() {
-		
 		return artificial;
 	}
 	
 	public void setProfile(final MagicPlayerProfile profile) {
-		
 		this.profile=profile;
 	}
 	
 	public MagicPlayerProfile getProfile() {
-		
 		return profile;
 	}
 	
 	public int getFace() {
-		
 		return face;
 	}
 				
 	private void addBasicLandsToDeck() {
-
 		// Calculate statistics per color.
 		final int colorCount[]=new int[MagicColor.NR_COLORS];
 		final int colorSource[]=new int[MagicColor.NR_COLORS];
@@ -116,28 +106,23 @@ public class MagicPlayerDefinition {
 	}
 	
 	public MagicDeck getDeck() {
-
 		return deck;
 	}	
 	
 	public void generateDeck(final DeckGenerator generator) {
-		
 		this.deck=generator.generateDeck(DECK_SIZE, profile);
 		addBasicLandsToDeck();
 	}
 	
 	public void setDeck(final MagicDeck deck) {
-
 		this.deck=deck;
 	}
 	
 	private String getDeckPrefix(final String prefix,final int index) {
-		
 		return prefix+"deck"+index;
 	}
 	
 	public void load(final Properties properties,final String prefix) {
-
 		name=properties.getProperty(prefix+NAME,"");
 		artificial=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
 		final String colors=properties.getProperty(prefix+COLORS,"");
@@ -153,7 +138,6 @@ public class MagicPlayerDefinition {
 	}
 	
 	public void save(final Properties properties,final String prefix) {
-
 		properties.setProperty(prefix+NAME,name);
 		properties.setProperty(prefix+ARTIFICIAL,""+artificial);
 		properties.setProperty(prefix+COLORS,getProfile().getColorText());
