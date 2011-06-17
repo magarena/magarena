@@ -23,10 +23,10 @@ public class MagicPlayer implements MagicTarget {
 	private MagicCardList graveyard;
 	private MagicPermanentSet permanents;
 	private MagicPermanentSet manaPermanents;
-	private int stateFlags=0;
 	private int index;
 	private int life;
 	private int poison;
+	private int stateFlags=0;
 	private int preventDamage=0;
 	private int extraTurns=0;
 	private int attackers=0;
@@ -59,19 +59,15 @@ public class MagicPlayer implements MagicTarget {
 		createHandAndLibrary(configuration.getHandSize());
 	}
 	
-	private MagicPlayer() {
-		
-	}
+	private MagicPlayer() {}
 	
 	@Override
 	public MagicCopyable create() {
-
 		return new MagicPlayer();
 	}
 	
 	@Override
 	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
-
 		final MagicPlayer sourcePlayer=(MagicPlayer)source;
 		playerDefinition=sourcePlayer.playerDefinition;
 		stateFlags=sourcePlayer.stateFlags;
@@ -105,16 +101,10 @@ public class MagicPlayer implements MagicTarget {
             life,
             poison,
             stateFlags,
-	        preventDamage,
-	        extraTurns,
-            attackers,
-            blockers,
-            library.size(),
             hand.getCardsId(),
             graveyard.getCardsId(),
             exile.getCardsId(),
             permanents.getPermanentsId(),
-		    builderCost.getMinimumAmount(),
         };
 		return magic.MurmurHash3.hash(keys);
     }
@@ -134,9 +124,6 @@ public class MagicPlayer implements MagicTarget {
 		long playerId=id;
         playerId=playerId*ID_FACTOR+life;
 		playerId=playerId*ID_FACTOR+poison;
-		playerId=playerId*ID_FACTOR+stateFlags;
-		playerId=playerId*ID_FACTOR+library.size();
-		playerId=playerId*ID_FACTOR+activationMap.size();
 		playerId=playerId*ID_FACTOR+builderCost.getMinimumAmount();
 		playerId=playerId*ID_FACTOR+permanents.getPermanentsId();
 		playerId=playerId*ID_FACTOR+hand.getCardsId();
