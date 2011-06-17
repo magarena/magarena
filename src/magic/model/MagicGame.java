@@ -150,10 +150,13 @@ public class MagicGame {
        
         //construct a new object
         this.turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
-	
-
+    
         //the following are NOT copied when game state is cloned
+	
+        //score is RESET to zero
 		this.score=0;
+        
+        //historical items are cleared
         this.actions=new MagicActionList();
 		this.undoPoints=null;
 		this.logBook=null;

@@ -167,7 +167,7 @@ public class MCTSAI implements MagicAI {
         //end simulations once root is solved or time is up
         int sims = 0;
         for (; System.currentTimeMillis() - STARTTIME < MAXTIME && !root.isAIWin(); sims++) {
-            //create a new MagicGame for simulation
+            //clone the MagicGame object for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
             if (!CHEAT) {
                 rootGame.setKnownCards();
@@ -440,6 +440,9 @@ public class MCTSAI implements MagicAI {
         
         // simulate game until it is finished or simulated MAX_ACTIONS actions
         while (!game.isFinished() && (game.getNumActions() - startActions) < MAX_ACTIONS) {
+            //do not accumulate score down the tree
+            game.setScore(0);
+
             if (!game.hasNextEvent()) {
                 game.getPhase().executePhase(game);
                 continue;
