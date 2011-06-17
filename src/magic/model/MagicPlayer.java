@@ -80,10 +80,10 @@ public class MagicPlayer implements MagicTarget {
 		extraTurns=sourcePlayer.extraTurns;
 		attackers=sourcePlayer.attackers;
 		blockers=sourcePlayer.blockers;
-		hand=sourcePlayer.hand.copy(copyMap);
-		library=sourcePlayer.library.copy(copyMap);
-		graveyard=sourcePlayer.graveyard.copy(copyMap);
-		exile=sourcePlayer.exile.copy(copyMap);
+		hand=new MagicCardList(copyMap, sourcePlayer.hand);
+		library=new MagicCardList(copyMap, sourcePlayer.library);
+		graveyard=new MagicCardList(copyMap, sourcePlayer.graveyard);
+		exile=new MagicCardList(copyMap, sourcePlayer.exile);
 		permanents=new MagicPermanentSet(copyMap,sourcePlayer.permanents);
 		manaPermanents=new MagicPermanentSet(copyMap,sourcePlayer.manaPermanents);
 		cardCounter=new MagicCardCounter(sourcePlayer.cardCounter);
