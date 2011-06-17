@@ -48,7 +48,7 @@ public class MagicExcludeChoice extends MagicChoice {
         final int numOptions = excludeAllFlags + 1;
 		
 		// In later turns, favour mana over combat when there are more than one exclude permanents.
-		if (numOptions > 8) {
+		if (excludePermanents.size() > 3) {
             //(game.getRelativeTurn() > 1 && excludePermanents.size() > 1)) {
 		    return Collections.<Object>singleton(new MagicExcludeResult(excludePermanents,0));
 		}
