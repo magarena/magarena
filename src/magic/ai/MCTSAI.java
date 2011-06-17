@@ -348,8 +348,8 @@ public class MCTSAI implements MagicAI {
                     for (MCTSGameTree p : path) {
                         System.err.print(" -> " + p.desc);
                     }
-                    */
                     System.err.println();
+                    */
                     addNode(game, curr);
                 }
             }
