@@ -10,13 +10,13 @@ public class MagicActivationPriority {
 	}
 
 	public MagicActivationPriority(final MagicActivationPriority abilityPriority) {
-		priority=abilityPriority.priority;
-		activationId=abilityPriority.activationId;
+		priority = abilityPriority.priority;
+		activationId = abilityPriority.activationId;
 	}
 	
 	public void clear() {
-		priority=-1;
-		activationId=-1;
+		priority = -1;
+		activationId = -1;
 	}
 
     public int getPriority() {
