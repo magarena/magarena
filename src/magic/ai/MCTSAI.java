@@ -65,7 +65,7 @@ public class MCTSAI implements MagicAI {
 	private final boolean CHEAT;
     private int MAXTIME;
     private long STARTTIME;
-    private static final int MAX_ACTIONS = 5000;
+    private static final int MAX_ACTIONS = 10000;
     
     //higher C -> more exploration less exploitation
     static final double C = 1.0;
@@ -104,7 +104,7 @@ public class MCTSAI implements MagicAI {
         final long gid = game.getGameId();
         cache.put(gid, node);
         node.setCached();
-        System.err.println("ADDED: " + game.getIdString());
+        //System.err.println("ADDED: " + game.getIdString());
     }
 
     private MCTSGameTree getNode(final MagicGame game, List<Object[]> rootChoices) {
@@ -344,9 +344,11 @@ public class MCTSAI implements MagicAI {
             if (!found && curr != root && curr.isAI()) {
                 found = true;
                 if (!curr.isCached()) {
+                    /*
                     for (MCTSGameTree p : path) {
                         System.err.print(" -> " + p.desc);
                     }
+                    */
                     System.err.println();
                     addNode(game, curr);
                 }
