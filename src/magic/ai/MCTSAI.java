@@ -65,7 +65,7 @@ public class MCTSAI implements MagicAI {
 	private final boolean CHEAT;
     private int MAXTIME;
     private long STARTTIME;
-    private static final int MAXEVENTS = 1000;
+    private static final int MAX_ACTIONS = 5000;
     
     //higher C -> more exploration less exploitation
     static final double C = 1.0;
@@ -412,20 +412,20 @@ public class MCTSAI implements MagicAI {
             }
         }
 
-        final int startEvents = game.getEventsExecuted();
+        final int startActions = game.getNumActions();
         getNextChoices(game, false, true);
-        final int events = game.getEventsExecuted() - startEvents;
+        final int actions = game.getNumActions() - startActions;
         
         if (LOGGING) {
-            LENS.add(events);
+            LENS.add(actions);
         }
 
         if (game.getLosingPlayer() == null) {
             return 0;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return  -(1.0 - events/((double)MAXEVENTS));
+            return  -(1.0 - actions/((double)MAX_ACTIONS));
         } else {
-            return  1.0 - events/((double)MAXEVENTS);
+            return  1.0 - actions/((double)MAX_ACTIONS);
         }
     }
     
@@ -434,10 +434,10 @@ public class MCTSAI implements MagicAI {
             final boolean isRoot, 
             final boolean sim) {
         
-        final int startEvents = game.getEventsExecuted();
+        final int startActions = game.getNumActions();
         
-        // simulate game until it is finished or simulated MAXEVENTS events
-        while (!game.isFinished() && (game.getEventsExecuted() - startEvents) < MAXEVENTS) {
+        // simulate game until it is finished or simulated MAX_ACTIONS actions
+        while (!game.isFinished() && (game.getNumActions() - startActions) < MAX_ACTIONS) {
             if (!game.hasNextEvent()) {
                 game.getPhase().executePhase(game);
                 continue;
