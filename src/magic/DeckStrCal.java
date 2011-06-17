@@ -152,6 +152,7 @@ public class DeckStrCal {
         int played = 0;
         while (!testTournament.isFinished()) {
             final MagicGame game=testTournament.nextGame(false);
+            game.setArtificial(true);
             final GameController controller=new GameController(null,game);
         
             //maximum duration of a game is 16.666 minutes
