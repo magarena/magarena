@@ -119,30 +119,41 @@ public class MagicGame {
 		
 		artificial=true;
 		sound=false;
-		final MagicCopyMap copyMap=new MagicCopyMap();		
+       
+        //copy the reference
 		this.tournament=game.tournament;
 		this.gameplay=game.gameplay;
-		this.players=copyMap.copyObjects(game.players,MagicPlayer.class);		
+
+        //copying primitives, array of primitive
 		this.identifiers=Arrays.copyOf(game.identifiers,MagicIdentifierType.NR_OF_IDENTIFIERS);
-		this.triggers=new MagicPermanentTriggerMap(copyMap,game.triggers);
-		this.turnTriggers=new MagicPermanentTriggerList(triggers,game.turnTriggers);
-		this.exiledUntilEndOfTurn=game.exiledUntilEndOfTurn.copy(copyMap);
-		this.events=new MagicEventQueue(copyMap,game.events);
-		this.stack=new MagicStack(copyMap,game.stack);
-		this.scorePlayer=copyMap.copy(scorePlayer);
-		this.score=0;
-		this.turn=game.turn;
+        this.turn=game.turn;
 		this.startTurn=game.startTurn;
+		this.phase=game.phase;
+		this.step=game.step;
 		this.landPlayed=game.landPlayed;
 		this.priorityPassed=game.priorityPassed;
 		this.stateCheckRequired=game.stateCheckRequired;
+		
+        //copied and stored in copyMap
+        final MagicCopyMap copyMap=new MagicCopyMap();		
+		this.players=copyMap.copyObjects(game.players,MagicPlayer.class);		
+		this.scorePlayer=copyMap.copy(scorePlayer);
 		this.visiblePlayer=copyMap.copy(game.visiblePlayer);
 		this.turnPlayer=copyMap.copy(game.turnPlayer);
-		this.phase=game.phase;
-		this.step=game.step;
-		this.payedCost=new MagicPayedCost(copyMap,game.payedCost);
+		
+        //construct a new object using copyMap to copy internals
+        this.events=new MagicEventQueue(copyMap, game.events);
+		this.stack=new MagicStack(copyMap, game.stack);
+		this.triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
+		this.payedCost=new MagicPayedCost(copyMap, game.payedCost);
+		this.exiledUntilEndOfTurn=new MagicCardList(copyMap, game.exiledUntilEndOfTurn);
+       
+        //construct a new object
+        this.turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
+	
 
         //the following are NOT copied when game state is cloned
+		this.score=0;
         this.actions=new MagicActionList();
 		this.undoPoints=null;
 		this.logBook=null;
@@ -158,17 +169,14 @@ public class MagicGame {
     }
 
 	public void setScore(final int score) {
-		
 		this.score=score;
 	}
 	
 	public void changeScore(final int amount) {
-		
 		score+=amount;
 	}
 	
 	public int getScore() {
-		
 		return score;
 	}
 
@@ -184,6 +192,8 @@ public class MagicGame {
             (priorityPassed ? 999 : 111),
             (stateCheckRequired ? 9999 : 1111),
             getPayedCost().getX(),
+            stack.size(),
+            events.size(),
             identifiers[0],
             identifiers[1],
             identifiers[2],
@@ -580,7 +590,7 @@ public class MagicGame {
 	}
 	
 	public void setVisiblePlayer(final MagicPlayer visiblePlayer) {
-		this.visiblePlayer=visiblePlayer;
+		this.visiblePlayer = visiblePlayer;
 	}
 	
 	public MagicPlayer getVisiblePlayer() {
@@ -588,7 +598,7 @@ public class MagicGame {
 	}
 		
 	public void setTurnPlayer(final MagicPlayer turnPlayer) {
-		this.turnPlayer=turnPlayer;
+		this.turnPlayer = turnPlayer;
 	}
 		
 	public MagicPlayer getTurnPlayer() {
@@ -596,7 +606,7 @@ public class MagicGame {
 	}
 	
 	public MagicPlayer getPriorityPlayer() {
-		return step==MagicStep.ActivePlayer?turnPlayer:getOpponent(turnPlayer);
+		return step == MagicStep.ActivePlayer ? turnPlayer : getOpponent(turnPlayer);
 	}
 		
 	public MagicPlayer getScorePlayer() {
@@ -604,7 +614,7 @@ public class MagicGame {
 	}
 	
 	public void setLosingPlayer(final MagicPlayer player) {
-		losingPlayer=player;
+		losingPlayer = player;
 	}
 	
 	public MagicPlayer getLosingPlayer() {
@@ -612,15 +622,16 @@ public class MagicGame {
 	}
 			
 	public boolean hasTurn(final MagicPlayer player) {
-		return player==turnPlayer;
+		return player == turnPlayer;
 	}
 	
 	public int getCount(final int cardDefinitionIndex) {
-		return players[0].getCount(cardDefinitionIndex)+players[1].getCount(cardDefinitionIndex);
+		return players[0].getCount(cardDefinitionIndex) + 
+               players[1].getCount(cardDefinitionIndex);
 	}
 	
 	public int getOtherPlayerCount(final int cardDefinitionIndex,final MagicPlayer player) {
-		if (players[0]!=player) {
+		if (players[0] != player) {
 			return players[0].getCount(cardDefinitionIndex);
 		} else {
 			return players[1].getCount(cardDefinitionIndex);
@@ -628,11 +639,14 @@ public class MagicGame {
 	}
 	
 	public int getNrOfPermanents(final MagicType type) {
-		return players[0].getNrOfPermanentsWithType(type)+players[1].getNrOfPermanentsWithType(type);
+		return players[0].getNrOfPermanentsWithType(type) + 
+               players[1].getNrOfPermanentsWithType(type);
 	}
 			
 	public boolean canPlaySorcery(final MagicPlayer controller) {
-		return phase.getType().isMain()&&stack.isEmpty()&&turnPlayer==controller;
+		return phase.getType().isMain() && 
+               stack.isEmpty() && 
+               turnPlayer == controller;
 	}
 	
 	public boolean canPlayLand(final MagicPlayer controller) {
