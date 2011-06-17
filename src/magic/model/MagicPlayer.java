@@ -38,7 +38,6 @@ public class MagicPlayer implements MagicTarget {
     private long[] keys;
 
 	public MagicPlayer(final TournamentConfig configuration,final MagicPlayerDefinition playerDefinition,final int index) {
-		
 		this.playerDefinition=playerDefinition;
 		this.index=index;
 		hand=new MagicCardList();
@@ -48,9 +47,12 @@ public class MagicPlayer implements MagicTarget {
 		permanents=new MagicPermanentSet();
 		manaPermanents=new MagicPermanentSet();
 		life=configuration.getStartLife();
-		if (index!=0) {
-			life+=GeneralConfig.getInstance().getExtraLife();
+
+        //give the AI player extra life
+		if (index != 0) {
+			life += GeneralConfig.getInstance().getExtraLife();
 		}
+
 		poison=0;
 		cardCounter=new MagicCardCounter();
 		activationMap=new MagicActivationMap();
@@ -87,7 +89,10 @@ public class MagicPlayer implements MagicTarget {
 		cardCounter=new MagicCardCounter(sourcePlayer.cardCounter);
 		activationMap=new MagicActivationMap(copyMap,sourcePlayer.activationMap);
 		builderCost=new MagicBuilderManaCost(sourcePlayer.builderCost);
-		activationPriority=new MagicActivationPriority();
+
+        //Why is activationPriority the only member variable not copied?
+        //activationPriority=new MagicActivationPriority();
+        activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
 	}
 	
 	@Override
@@ -105,6 +110,9 @@ public class MagicPlayer implements MagicTarget {
             graveyard.getCardsId(),
             exile.getCardsId(),
             permanents.getPermanentsId(),
+		    builderCost.getMinimumAmount(),
+            activationPriority.getPriority(),
+            activationPriority.getActivationId(),
         };
 		return magic.MurmurHash3.hash(keys);
     }
@@ -392,35 +400,28 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public void setCached(final MagicGame game,final boolean cached) {
-		
 		for (final MagicPermanent permanent : permanents) {
-			
 			permanent.setCached(game,cached);
 		}
 	}
 	
 	public void setBuilderCost(final MagicBuilderManaCost builderCost) {
-		
 		this.builderCost=builderCost;
 	}
 	
 	public MagicBuilderManaCost getBuilderCost() {
-		
 		return builderCost;
 	}
 
 	public void setActivationPriority(final MagicActivationPriority abilityPriority) {
-		
 		this.activationPriority=abilityPriority;
 	}
 	
 	public MagicActivationPriority getActivationPriority() {
-		
 		return activationPriority;
 	}
 	
 	public int getMaximumX(final MagicGame game,final MagicManaCost cost) {
-		
 		return getManaActivationsCount(game)-builderCost.getMinimumAmount()-cost.getConvertedCost();
 	}
 
