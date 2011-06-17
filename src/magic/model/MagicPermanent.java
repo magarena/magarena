@@ -497,8 +497,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public int getScore(final MagicGame game) {
-		
-		return fixedScore+ArtificialScoringSystem.getVariablePermanentScore(game,this);
+		return fixedScore + ArtificialScoringSystem.getVariablePermanentScore(game,this);
 	}
 	
 	public int getStaticScore(final MagicGame game) {

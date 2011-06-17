@@ -24,18 +24,21 @@ public class MagicCombatCreature {
 	private final long flags;
 	
 	public MagicCombatCreature(final MagicGame game,final MagicPermanent permanent) {
-
-		this.permanent=permanent;
-		this.score=permanent.getScore(game);
-		final MagicPowerToughness pt=permanent.getPowerToughness(game);
-		lethalDamage=permanent.getLethalDamage(pt.toughness);
-		flags=permanent.getAllAbilityFlags(game);
-		power=MagicAbility.DoubleStrike.hasAbility(flags)?pt.getPositivePower()*2:pt.getPositivePower();
-		normalDamage=!MagicAbility.Deathtouch.hasAbility(flags)&&!MagicAbility.Wither.hasAbility(flags)&&!MagicAbility.Infect.hasAbility(flags);
+		this.permanent = permanent;
+		this.score = permanent.getScore(game);
+		final MagicPowerToughness pt = permanent.getPowerToughness(game);
+		lethalDamage = permanent.getLethalDamage(pt.toughness);
+		flags = permanent.getAllAbilityFlags(game);
+		power = MagicAbility.DoubleStrike.hasAbility(flags) ? 
+            pt.getPositivePower() * 2 : 
+            pt.getPositivePower();
+		normalDamage =
+            !MagicAbility.Deathtouch.hasAbility(flags) &&
+            !MagicAbility.Wither.hasAbility(flags) && 
+            !MagicAbility.Infect.hasAbility(flags);
 	}
 	
 	public MagicCombatCreature(final MagicGame game,final MagicCombatCreature creature) {
-		
 		permanent=(MagicPermanent)creature.permanent.map(game);
 		score=creature.score;
 		power=creature.power;
@@ -45,15 +48,12 @@ public class MagicCombatCreature {
 	}
 	
 	public boolean hasAbility(final MagicAbility ability) {
-		
 		return ability.hasAbility(flags);
 	}
 	
 	public void setAttacker(final MagicGame game,final Set<MagicCombatCreature> blockers) {
-		
 		final SortedSet<MagicCombatCreature> candidateBlockersSet=new TreeSet<MagicCombatCreature>(new BlockerComparator(this));
 		for (final MagicCombatCreature blocker : blockers) {
-			
 			if (blocker.permanent.canBlock(game,permanent)) {
 				candidateBlockersSet.add(blocker);
 			}
@@ -65,16 +65,14 @@ public class MagicCombatCreature {
 	}
 		
 	public String getName() {
-		
 		return permanent.getName();
 	}
 	
 	public String toString() {	
-
 		final StringBuilder builder=new StringBuilder();
-		builder.append(permanent.getName()).append('(').append(power).append(',').append(lethalDamage).append(',').append(attackerScore).append(')');
+		builder.append(permanent.getName());
+        builder.append('(').append(power).append(',').append(lethalDamage).append(',').append(attackerScore).append(')');
 		if (candidateBlockers!=null) {
-
 			builder.append(" = ").append(Arrays.toString(candidateBlockers));
 		}
 		return builder.toString();
@@ -82,16 +80,14 @@ public class MagicCombatCreature {
 
 	private static final class BlockerComparator implements Comparator<MagicCombatCreature> {
 
-		private final MagicCombatCreature attacker;
+        private final MagicCombatCreature attacker;
 		
 		public BlockerComparator(final MagicCombatCreature attacker) {
-			
 			this.attacker=attacker;
 		}
 		
  		@Override
 		public int compare(final MagicCombatCreature blocker1,final MagicCombatCreature blocker2) {
-
  			int ldif=blocker1.lethalDamage-blocker2.lethalDamage;	
 			if (attacker.normalDamage) {
 				final boolean front=blocker1.lethalDamage>attacker.power;

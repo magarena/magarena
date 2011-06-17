@@ -27,18 +27,15 @@ public class ArtificialScoringSystem {
 	private static final int PERMANENT_SCORE=300;
 	
 	public static int getTurnScore(final MagicGame game) {
-		
 		return Math.max(0,10-(game.getTurn()-1)>>1);
 	}
 	
 	public static int getLoseGameScore(final MagicGame game) {
-
 		// Lose score is lowered in function of the turn and phase when it occurs. Encourages AI to win as fast as possible.
 		return LOSE_GAME_SCORE+game.getTurn()*2500+game.getPhase().getType().ordinal()*200;
 	}
 	
 	public static int getCardDefinitionScore(final MagicCardDefinition cardDefinition) {
-		
 		if (cardDefinition.isLand()) {
 			int score=cardDefinition.getValue()*50;
 			for (final MagicColor color : MagicColor.values()) {
@@ -56,12 +53,10 @@ public class ArtificialScoringSystem {
 	}
 	
 	public static int getCardScore(final MagicCard card) {
-		
 		return card.isKnown()?card.getCardDefinition().getScore():UNKNOWN_CARD_SCORE;
 	}
 
 	public static int getFixedPermanentScore(final MagicPermanent permanent) {
-
 		final MagicCardDefinition cardDefinition=permanent.getCardDefinition();
 		int score=cardDefinition.getScore();
 		if (permanent.isCreature()) {
@@ -77,7 +72,6 @@ public class ArtificialScoringSystem {
 	}
 	
 	public static int getVariablePermanentScore(final MagicGame game,final MagicPermanent permanent) {
-
 		int score=permanent.getCounters(MagicCounterType.Charge)*30;
 		if (!permanent.canTap(game)) {
 			score+=getTappedScore(permanent);
@@ -92,12 +86,10 @@ public class ArtificialScoringSystem {
 	}
 	
 	public static int getTappedScore(final MagicPermanent permanent) {
-		
 		return permanent.isCreature()?-10:-5;
 	}
 	
 	public static int getLifeScore(final int life) {
-		
 		if (life>MAX_LIFE) {
 			return LIFE_SCORES[MAX_LIFE]+(life-MAX_LIFE)*LIFE_ABOVE_MULTIPLIER;
 		} else if (life>=0) {
@@ -108,7 +100,6 @@ public class ArtificialScoringSystem {
 	}
 	
 	public static int getPoisonScore(final int poison) {
-		
 		if (poison>MAX_POISON) {
 			return POISON_SCORES[MAX_POISON];
 		}
@@ -116,34 +107,34 @@ public class ArtificialScoringSystem {
 	}
 	
 	public static int getManaScore(final int amount) {
-
 		return -amount;
 	}
 	
 	public static int getAttackerScore(final MagicCombatCreature attacker) {
-		
 		int score=attacker.power*5+attacker.lethalDamage*2-attacker.candidateBlockers.length;
 		for (final MagicCombatCreature blocker : attacker.candidateBlockers) {
-			
 			score-=blocker.power;
 		}
 		// Dedicated attacker.
-		if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble)||attacker.hasAbility(MagicAbility.CannotBlock)) {
+		if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble) || 
+            attacker.hasAbility(MagicAbility.CannotBlock)) {
 			score+=10;
 		}
 		// Abilities for attacking.
-		if (attacker.hasAbility(MagicAbility.Trample)||attacker.hasAbility(MagicAbility.Vigilance)) {
+		if (attacker.hasAbility(MagicAbility.Trample) || 
+            attacker.hasAbility(MagicAbility.Vigilance)) {
 			score+=8;
 		}
 		// Dangerous to block.
-		if (!attacker.normalDamage||attacker.hasAbility(MagicAbility.FirstStrike)||attacker.hasAbility(MagicAbility.Indestructible)) {
+		if (!attacker.normalDamage || 
+            attacker.hasAbility(MagicAbility.FirstStrike) || 
+            attacker.hasAbility(MagicAbility.Indestructible)) {
 			score+=7;
 		}
 		return score;
 	}
 	
 	public static int getMillScore(final int amount) {
-		
 		return -amount;
 	}
 }
