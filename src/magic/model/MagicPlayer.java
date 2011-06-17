@@ -89,15 +89,11 @@ public class MagicPlayer implements MagicTarget {
 		cardCounter=new MagicCardCounter(sourcePlayer.cardCounter);
 		activationMap=new MagicActivationMap(copyMap,sourcePlayer.activationMap);
 		builderCost=new MagicBuilderManaCost(sourcePlayer.builderCost);
-
-        //Why is activationPriority the only member variable not copied?
-        //activationPriority=new MagicActivationPriority();
         activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
 	}
 	
 	@Override
 	public Object map(final MagicGame game) {
-
 		return game.getPlayer(index);
 	}
 	
@@ -155,68 +151,55 @@ public class MagicPlayer implements MagicTarget {
 	}
 			
 	public MagicPlayerDefinition getPlayerDefinition() {
-		
 		return playerDefinition;
 	}
 	
 	public int getIndex() {
-		
 		return index;
 	}
 	
 	public void setState(final MagicPlayerState state) {
-		
 		stateFlags|=state.getMask();
 	}
 	
 	public void clearState(final MagicPlayerState state) {
-	
 		stateFlags&=Integer.MAX_VALUE-state.getMask();
 	}
 	
 	public boolean hasState(final MagicPlayerState state) {
-		
 		return state.hasState(stateFlags);
 	}
 	
 	public int getStateFlags() {
-		
 		return stateFlags;
 	}
 	
 	public void setStateFlags(final int flags) {
-		
 		stateFlags=flags;
 	}
 					
 	public void setLife(final int life) {
-		
 		this.life=life;
 	}
 			
 	public int getLife() {
-		
 		return life;
 	}
 	
 	public void setPoison(final int poison) {
-		
 		this.poison=poison;
 	}
 	
 	public int getPoison() {
-		
 		return poison;
 	}
 	
 	public boolean canLose() {
-		
 		return getCount(MagicStaticLocalVariable.platinumAngel)==0;
 	}
 
 	/** Life to use when determining if a player has lost. */
 	public int getLosingLife() {
-		
 		if (life>0||canLose()) {
 			return life;
 		}
@@ -225,7 +208,6 @@ public class MagicPlayer implements MagicTarget {
 	
 	/** Poison to use when determining if a player has lost. */
 	public int getLosingPoison() {
-		
 		if (poison<MagicGame.LOSING_POISON||canLose()) {
 			return poison;
 		}
@@ -233,45 +215,37 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public void changeExtraTurns(final int amount) {
-		
 		extraTurns+=amount;
 	}
 	
 	public int getExtraTurns() {
-		
 		return extraTurns;
 	}
 		
 	public int getHandSize() {
-
 		return hand.size();
 	}
 	
 	public MagicCardList getHand() {
-		
 		return hand;
 	}
 
 	public void addCardToHand(final MagicCard card) {
-
 		hand.addToTop(card);
 		activationMap.addActivations(card);
 	}
 	
 	public void addCardToHand(final MagicCard card,final int index) {
-		
 		hand.add(index,card);
 		activationMap.addActivations(card);
 	}
 		
 	public int removeCardFromHand(final MagicCard card) {
-		
 		activationMap.removeActivations(card);
 		return hand.removeCard(card);
 	}
 	
 	public void removeAllCardsFromHand() {
-		
 		activationMap.removeActivations(hand);
 		hand.clear();
 	}
@@ -300,27 +274,22 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public MagicCardList getLibrary() {
-		
 		return library;
 	}
 	
 	public MagicCardList getGraveyard() {
-		
 		return graveyard;
 	}
 	
 	public MagicCardList getExile() {
-		
 		return exile;
 	}
 	
 	public MagicPermanentSet getPermanents() {
-		
 		return permanents;
 	}
 
 	public void addPermanent(final MagicPermanent permanent) {
-		
 		permanents.add(permanent);
 		if (permanent.producesMana()) {
 			manaPermanents.add(permanent);
@@ -330,7 +299,6 @@ public class MagicPlayer implements MagicTarget {
 	}
 
 	public void removePermanent(final MagicPermanent permanent) {
-		
 		permanents.remove(permanent);
 		if (permanent.producesMana()) {
 			manaPermanents.remove(permanent);
@@ -340,12 +308,10 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public boolean controlsPermanent(final MagicPermanent permanent) {
-		
 		return permanents.contains(permanent);
 	}
 	
 	public List<MagicSourceManaActivation> getManaActivations(final MagicGame game) {
-		
 		final List<MagicSourceManaActivation> activations=new ArrayList<MagicSourceManaActivation>();
 		for (final MagicPermanent permanent : manaPermanents) {
 						
@@ -362,7 +328,6 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	private int getManaActivationsCount(final MagicGame game) {
-		
 		int count=0;
 		for (final MagicPermanent permanent : manaPermanents) {
 
@@ -375,12 +340,10 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public int getCount(final int cardDefinitionIndex) {
-		
 		return cardCounter.getCount(cardDefinitionIndex);
 	}
 	
 	public int getNrOfPermanentsWithType(final MagicType type) {
-		
 		int count=0;
 		for (final MagicPermanent permanent : permanents) {
 			
@@ -392,7 +355,6 @@ public class MagicPlayer implements MagicTarget {
 	}
 
 	public int getNrOfPermanentsWithSubType(final MagicSubType subType) {
-		
 		int count=0;
 		for (final MagicPermanent permanent : permanents) {
 			
@@ -446,9 +408,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public boolean controlsPermanentWithType(final MagicType type) {
-		
 		for (final MagicPermanent permanent : permanents) {
-			
 			if (permanent.hasType(type)) {
 				return true;
 			}
@@ -457,9 +417,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public boolean controlsPermanentWithSubType(final MagicSubType subType) {
-		
 		for (final MagicPermanent permanent : permanents) {
-			
 			if (permanent.hasSubType(subType)) {
 				return true;
 			}
@@ -469,49 +427,41 @@ public class MagicPlayer implements MagicTarget {
 	
 	@Override
 	public String getName() {
-		
 		return playerDefinition.getName();
 	}
 	
 	@Override
 	public boolean isPermanent() {
-
 		return false;
 	}
 
 	@Override
 	public boolean isPlayer() {
-
 		return true;
 	}
 
 	@Override
 	public boolean isSpell() {
-
 		return false;
 	}
 
 	@Override
 	public int getPreventDamage() {
-
 		return preventDamage;
 	}
 
 	@Override
 	public void setPreventDamage(int amount) {
-
 		preventDamage=amount;
 	}
 
 	@Override
 	public MagicPlayer getController() {
-
 		return this;
 	}
 	
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
-
 		if (source.getController()!=this&&getCount(MagicStaticLocalVariable.spiritOfTheHearth)>0) {
 			return false;
 		}
