@@ -102,15 +102,19 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
     public long getPlayerId() {
-		keys = new long[] {
+        keys = new long[] {
             life,
             poison,
             stateFlags,
+            preventDamage,
+            extraTurns,
+            attackers,
+            blockers,
             hand.getCardsId(),
             graveyard.getCardsId(),
             exile.getCardsId(),
             permanents.getPermanentsId(),
-		    builderCost.getMinimumAmount(),
+            builderCost.getMinimumAmount(),
             activationPriority.getPriority(),
             activationPriority.getActivationId(),
         };
