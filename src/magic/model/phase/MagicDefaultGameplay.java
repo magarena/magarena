@@ -6,19 +6,15 @@ public class MagicDefaultGameplay implements MagicGameplay {
 
 	private static final MagicGameplay INSTANCE=new MagicDefaultGameplay();
 	
-	private MagicDefaultGameplay() {
-		
-	}
+	private MagicDefaultGameplay() {}
 	
 	@Override
 	public MagicPhase getStartPhase(MagicGame game) {
-
 		return MagicUntapPhase.getInstance();
 	}
 	
 	@Override
 	public MagicPhase getNextPhase(final MagicGame game) {
-
 		switch (game.getPhase().getType()) {
 			case Untap:
 				return MagicUpkeepPhase.getInstance();
@@ -27,11 +23,15 @@ public class MagicDefaultGameplay implements MagicGameplay {
 			case Draw:
 				return MagicMainPhase.getFirstInstance();
 			case FirstMain:
-				return game.canSkip()?MagicDeclareAttackersPhase.getInstance():MagicBeginOfCombatPhase.getInstance();				
+				return game.canSkip() ? 
+                    MagicDeclareAttackersPhase.getInstance() : 
+                    MagicBeginOfCombatPhase.getInstance();				
 			case BeginOfCombat:
 				return MagicDeclareAttackersPhase.getInstance();
 			case DeclareAttackers:
-				return game.getTurnPlayer().getNrOfAttackers()>0?MagicDeclareBlockersPhase.getInstance():MagicEndOfCombatPhase.getInstance();
+				return game.getTurnPlayer().getNrOfAttackers() > 0 ? 
+                    MagicDeclareBlockersPhase.getInstance() :
+                    MagicEndOfCombatPhase.getInstance();
 			case DeclareBlockers:
 				return MagicCombatDamagePhase.getInstance();
 			case CombatDamage:
@@ -50,7 +50,6 @@ public class MagicDefaultGameplay implements MagicGameplay {
 	}
 
 	public static MagicGameplay getInstance() {
-		
 		return INSTANCE;
 	}
 }
