@@ -17,7 +17,6 @@ public class MagicBuilderManaCost {
 	private boolean hasX;
 
 	public MagicBuilderManaCost() {
-
 		amounts=new int[MagicCostManaType.NR_OF_TYPES];
 		compressedTypes=new MagicCostManaType[0];
 		compressedAmounts=new int[0];
@@ -27,7 +26,6 @@ public class MagicBuilderManaCost {
 	}
 	
 	public MagicBuilderManaCost(final MagicBuilderManaCost cost) {
-		
 		amounts=Arrays.copyOf(cost.amounts,cost.amounts.length);;
 		compressedTypes=Arrays.copyOf(cost.compressedTypes,cost.compressedTypes.length);
 		compressedAmounts=Arrays.copyOf(cost.compressedAmounts,cost.compressedAmounts.length);
@@ -37,7 +35,6 @@ public class MagicBuilderManaCost {
 	}
 
 	public void compress() {
-		
 		compressedTypes=new MagicCostManaType[typeCount];
 		compressedAmounts=new int[typeCount];
 		int compressedIndex=0;
@@ -53,43 +50,35 @@ public class MagicBuilderManaCost {
 	}
 	
 	public MagicCostManaType[] getTypes() {
-		
 		return compressedTypes;
 	}
 	
 	public int[] getAmounts() {
-		
 		return compressedAmounts;
 	}
 	
 	public int getMinimumAmount() {
-		
 		return minimumAmount;
 	}
 	
 	public void setHasX() {
-		
 		addType(MagicCostManaType.Colorless,1);
 		hasX=true;
 	}
 		
 	public boolean hasX() {
-		
 		return hasX;
 	}
 	
 	public int getX(final int amount) {
-		
 		return hasX?amount-minimumAmount+1:0;
 	}
 
 	public boolean isEmpty() {
-		
 		return typeCount==0;
 	}
 	
 	public void addType(final MagicCostManaType type,final int amount) {
-
 		if (amount>0) {
 			final int index=type.ordinal();
 			if (amounts[index]==0) {
@@ -101,7 +90,6 @@ public class MagicBuilderManaCost {
 	}
 	
 	public void removeType(final MagicCostManaType type,final int amount) {
-
 		final int index=type.ordinal();
 		amounts[index]-=amount;
 		if (amounts[index]<=0) {
@@ -111,9 +99,7 @@ public class MagicBuilderManaCost {
 	}
 	
 	public void addTypes(final List<MagicCostManaType> types) {
-		
 		for (final MagicCostManaType type : types) {
-			
 			addType(type,1);
 		}
 		compress();
@@ -121,7 +107,6 @@ public class MagicBuilderManaCost {
 	
 	@Override
 	public String toString() {
-		
 		final StringBuilder builder=new StringBuilder();
 		for (int index=0;index<compressedTypes.length;index++) {
 			
