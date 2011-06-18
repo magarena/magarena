@@ -120,7 +120,7 @@ public class MagicGame {
 		artificial=true;
 		sound=false;
        
-        //copy the reference
+        //copy the reference, these are singletons
 		this.tournament=game.tournament;
 		this.gameplay=game.gameplay;
 
@@ -375,11 +375,12 @@ public class MagicGame {
 
 	/** Tells gameplay that is can skip certain parts during AI processing. */
 	public boolean canSkip() {
-		return stack.isEmpty()&&artificial;
+        return stack.isEmpty() && artificial;
 	}
 	
 	public boolean isFinished() {
-		return losingPlayer!=null||mainPhaseCount<=0;
+        return losingPlayer !=null || 
+               mainPhaseCount <= 0;
 	}
 
 	public MagicLogBook getLogBook() {
@@ -452,14 +453,12 @@ public class MagicGame {
 	}
 		
 	public void gotoLastUndoPoint() {
-		final MagicAction markerAction=undoPoints.removeLast();
-		while (true) {
-			final MagicAction action=actions.removeLast();
+		final MagicAction markerAction = undoPoints.removeLast();
+		MagicAction action;
+        do {
+			action = actions.removeLast();
 			action.undoAction(this);
-			if (action==markerAction) {
-				break;
-			}
-		}
+        } while (!(action == markerAction));
 	}
 			
 	public int getNrOfUndoPoints() {
@@ -479,63 +478,68 @@ public class MagicGame {
 	}
 	
 	public void logMessages() {
-		if (logMessageBuilder!=null) {
-			logMessageBuilder.logMessages();
-		}
+        if (logMessageBuilder == null) {
+            return;
+        }
+        logMessageBuilder.logMessages();
 	}
 
 	public void logAppendEvent(final MagicEvent event,final Object choiceResults[]) {
-		if (logMessageBuilder!=null) {
-			final String message=event.getDescription(choiceResults);
-			if (message!=null) {
-				logMessageBuilder.appendMessage(event.getPlayer(),message);
-			}
-		}
+	    if (logMessageBuilder == null) {
+            return;
+        }
+		final String message=event.getDescription(choiceResults);
+        if (message == null) {
+            return;
+        }
+        logMessageBuilder.appendMessage(event.getPlayer(),message);
 	}
 	
 	public void logAppendMessage(final MagicPlayer player,final String message) {
-		if (logMessageBuilder!=null) {
-			logMessageBuilder.appendMessage(player,message);
-		}
+        if (logMessageBuilder == null) {
+            return;
+        }
+        logMessageBuilder.appendMessage(player,message);
 	}
 	
 	public void logMessage(final MagicPlayer player,final String message) {
-		if (logBook!=null) {
-			logBook.add(new MagicMessage(this,player,message));
-		}
+        if (logBook == null) {
+            return;
+        }
+        logBook.add(new MagicMessage(this,player,message));
 	}
 	
 	public void logAttackers(final MagicPlayer player,final MagicDeclareAttackersResult result) {
-		if (logBook!=null&&!result.isEmpty()) {
-			final SortedSet<String> names=new TreeSet<String>();
-			for (final MagicPermanent attacker : result) {
-				names.add(attacker.getName());
-			}
-			final StringBuilder builder=new StringBuilder("You attack with ");
-			MagicMessage.addNames(builder,names);
-			builder.append('.');
-			logBook.add(new MagicMessage(this,player,builder.toString()));
-		}
+        if (logBook == null || result.isEmpty()) {
+            return;
+        }
+        final SortedSet<String> names=new TreeSet<String>();
+        for (final MagicPermanent attacker : result) {
+            names.add(attacker.getName());
+        }
+        final StringBuilder builder=new StringBuilder("You attack with ");
+        MagicMessage.addNames(builder,names);
+        builder.append('.');
+        logBook.add(new MagicMessage(this,player,builder.toString()));
 	}
 	
 	public void logBlockers(final MagicPlayer player,final MagicDeclareBlockersResult result) {
-
-		if (logBook!=null) {
-			final SortedSet<String> names=new TreeSet<String>();
-			for (final MagicCombatCreature[] creatures : result) {
-				
-				for (int index=1;index<creatures.length;index++) {
-					
-					names.add(creatures[index].getName());
-				}
-			}
-			if (!names.isEmpty()) {
-				final StringBuilder builder=new StringBuilder("You block with ");
-				MagicMessage.addNames(builder,names);
-				builder.append('.');
-				logBook.add(new MagicMessage(this,player,builder.toString()));
-			}
-		}
+        if (logBook == null) {
+            return;
+        }
+        final SortedSet<String> names=new TreeSet<String>();
+        for (final MagicCombatCreature[] creatures : result) {
+            for (int index=1;index<creatures.length;index++) {
+                names.add(creatures[index].getName());
+            }
+        }
+        if (names.isEmpty()) {
+            return;
+        }
+        final StringBuilder builder=new StringBuilder("You block with ");
+        MagicMessage.addNames(builder,names);
+        builder.append('.');
+        logBook.add(new MagicMessage(this,player,builder.toString()));
 	}
 	
 	public void executeEvent(final MagicEvent event,final Object choiceResults[]) {
@@ -763,14 +767,13 @@ public class MagicGame {
 	}
 
 	public void checkLegendRule(final MagicPermanent permanent) {
-		
 		final MagicCardDefinition cardDefinition=permanent.getCardDefinition();
-		if (cardDefinition.hasType(MagicType.Legendary)&&getCount(cardDefinition.getIndex())>1) {
+		if (cardDefinition.hasType(MagicType.Legendary) && 
+            getCount(cardDefinition.getIndex()) > 1) {
 			final String message="Put "+cardDefinition.getName()+" into its owner's graveyard (legend rule).";
 			final MagicTargetFilter targetFilter=new MagicTargetFilter.CardTargetFilter(cardDefinition);
 			final Collection<MagicTarget> targets=filterTargets(permanent.getController(),targetFilter);
 			for (final MagicTarget target : targets) {
-				
 				final MagicPermanent targetPermanent=(MagicPermanent)target;
 				logAppendMessage(targetPermanent.getController(),message);
 				doAction(new MagicRemoveFromPlayAction(targetPermanent,MagicLocationType.Graveyard));
@@ -779,11 +782,9 @@ public class MagicGame {
 	}
 		
 	public Object[] map(final Object data[]) {
-
 		final int length=data.length;
 		final Object mappedData[]=new Object[length];
 		for (int index=0;index<length;index++) {
-			
 			final Object obj=data[index];
 			if (obj!=null&&obj instanceof MagicMappable) {
 				mappedData[index]=((MagicMappable)obj).map(this);
@@ -795,8 +796,11 @@ public class MagicGame {
 	}
 	
 	// ***** TARGETS *****
-	
-	public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter targetFilter,final MagicTargetHint targetHint) {
+
+	public List<MagicTarget> filterTargets(
+            final MagicPlayer player,
+            final MagicTargetFilter targetFilter,
+            final MagicTargetHint targetHint) {
 
 		final List<MagicTarget> targets=new ArrayList<MagicTarget>();
 		
@@ -857,18 +861,21 @@ public class MagicGame {
 	}
 		
 	public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter targetFilter) {
-		
 		return filterTargets(player,targetFilter,MagicTargetHint.None);
 	}
 
-	public boolean hasLegalTargets(final MagicPlayer player,final MagicSource source,final MagicTargetChoice targetChoice,final boolean hints) {
+	public boolean hasLegalTargets(
+            final MagicPlayer player,
+            final MagicSource source,
+            final MagicTargetChoice targetChoice,
+            final boolean hints) {
 	
-		final Collection<MagicTarget> targets=filterTargets(player,targetChoice.getTargetFilter(),targetChoice.getTargetHint(hints));
+		final Collection<MagicTarget> targets =
+            filterTargets(player,targetChoice.getTargetFilter(),targetChoice.getTargetHint(hints));
 		if (!targetChoice.isTargeted()) {
 			return !targets.isEmpty();
 		}
 		for (final MagicTarget target : targets) {
-
 			if (target.isValidTarget(this,source)) {
 				return true;
 			}
@@ -876,15 +883,17 @@ public class MagicGame {
 		return false;
 	}
 	
-	public List<Object> getLegalTargets(final MagicPlayer player,final MagicSource source,
-			final MagicTargetChoice targetChoice,final MagicTargetHint targetHint) {
+	public List<Object> getLegalTargets(
+            final MagicPlayer player,
+            final MagicSource source,
+			final MagicTargetChoice targetChoice,
+            final MagicTargetHint targetHint) {
 
 		final Collection<MagicTarget> targets=filterTargets(player,targetChoice.getTargetFilter(),targetHint);
 		final List<Object> options;
 		if (targetChoice.isTargeted()) {
 			options=new ArrayList<Object>();
 			for (final MagicTarget target : targets) {
-	
 				if (target.isValidTarget(this,source)) {
 					options.add(target);
 				}
@@ -901,7 +910,9 @@ public class MagicGame {
 	
 	public boolean filterTarget(final MagicPlayer player,final MagicTargetFilter targetFilter,final MagicTarget target) {
 	
-		if (target==null||target==MagicTargetNone.getInstance()||!targetFilter.accept(this,player,target)) {
+		if (target==null || 
+            target==MagicTargetNone.getInstance() || 
+            !targetFilter.accept(this,player,target)) {
 			return false;
 		}			
 		
@@ -919,12 +930,14 @@ public class MagicGame {
 		// Card
 		if (target instanceof MagicCard) {
 			// Card in graveyard
-			if (targetFilter.acceptType(MagicTargetType.Graveyard)&&player.getGraveyard().contains(target)) {
+			if (targetFilter.acceptType(MagicTargetType.Graveyard) && 
+                player.getGraveyard().contains(target)) {
 				return true;
 			}
 					
 			// Card in opponent's graveyard
-			if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)&&getOpponent(player).getGraveyard().contains(target)) {
+			if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard) && 
+                getOpponent(player).getGraveyard().contains(target)) {
 				return true;
 			}
 			
@@ -939,7 +952,11 @@ public class MagicGame {
 		return false;
 	}
 	
-	public boolean isLegalTarget(final MagicPlayer player,final MagicSource source,final MagicTargetChoice targetChoice,final MagicTarget target) {
+	public boolean isLegalTarget(
+            final MagicPlayer player,
+            final MagicSource source,
+            final MagicTargetChoice targetChoice,
+            final MagicTarget target) {
 		
 		if (filterTarget(player,targetChoice.getTargetFilter(),target)) {
 			return !targetChoice.isTargeted()||target.isValidTarget(this,source);
@@ -951,12 +968,10 @@ public class MagicGame {
 	
 	/** Executes triggers immediately when they have no choices, otherwise ignore them. */
 	public void setImmediate(final boolean immediate) {
-		
 		this.immediate=immediate;
 	}
 	
 	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
-
 		final long id=createIdentifier(MagicIdentifierType.PermanentTrigger);
 		final MagicPermanentTrigger permanentTrigger=new MagicPermanentTrigger(id,permanent,trigger);
 		triggers.get(trigger.getType()).add(permanentTrigger);
@@ -964,40 +979,33 @@ public class MagicGame {
 	}
 		
 	public void addTrigger(MagicPermanentTrigger permanentTrigger) {
-
 		triggers.get(permanentTrigger.getTrigger().getType()).add(permanentTrigger);
 	}
 
 	public MagicPermanentTrigger addTurnTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
-		
 		final MagicPermanentTrigger permanentTrigger=addTrigger(permanent,trigger);
 		turnTriggers.add(permanentTrigger);
 		return permanentTrigger;
 	}
 	
 	public void addTurnTriggers(final List<MagicPermanentTrigger> triggersList) {
-		
 		for (final MagicPermanentTrigger permanentTrigger : triggersList) {
-			
 			triggers.get(permanentTrigger.getTrigger().getType()).add(permanentTrigger);
 		}
 		turnTriggers.addAll(triggersList);
 	}
 	
 	public void removeTurnTrigger(final MagicPermanentTrigger permanentTrigger) {
-		
 		triggers.get(permanentTrigger.getTrigger().getType()).remove(permanentTrigger);
 		turnTriggers.remove(permanentTrigger);
 	}
 
 	public List<MagicPermanentTrigger> removeTurnTriggers() {
-		
 		if (turnTriggers.isEmpty()) {
 			return Collections.<MagicPermanentTrigger>emptyList();
 		}
 		final MagicPermanentTriggerList removedTriggers=new MagicPermanentTriggerList(turnTriggers);
 		for (final MagicPermanentTrigger permanentTrigger : turnTriggers) {
-			
 			triggers.get(permanentTrigger.getTrigger().getType()).remove(permanentTrigger);
 		}
 		turnTriggers.clear();
@@ -1005,11 +1013,8 @@ public class MagicGame {
 	}
 	
 	public void removeTriggers(final MagicPermanent permanent,final Collection<MagicPermanentTrigger> removedTriggers) {
-
 		for (final MagicTriggerType type : triggers.keySet()) {
-			
 			for (final Iterator<MagicPermanentTrigger> iterator=triggers.get(type).iterator();iterator.hasNext();) {
-
 				final MagicPermanentTrigger permanentTrigger=iterator.next();
 				if (permanentTrigger.getPermanent()==permanent) {
 					iterator.remove();
@@ -1021,7 +1026,11 @@ public class MagicGame {
 		}
 	}
 
-	public void executeTrigger(final MagicTrigger trigger,final MagicPermanent permanent,final MagicSource source,final Object data) {
+	public void executeTrigger(
+            final MagicTrigger trigger,
+            final MagicPermanent permanent,
+            final MagicSource source,
+            final Object data) {
 
 		final MagicEvent event=trigger.executeTrigger(this,permanent,data);
 		if (event!=null) {
@@ -1038,16 +1047,13 @@ public class MagicGame {
 	}
 	
 	public void executeTrigger(final MagicTriggerType type,final Object data) {
-		
 		final SortedSet<MagicPermanentTrigger> typeTriggers=triggers.get(type);
 		if (typeTriggers.isEmpty()) {
 			return;
 		}
 		
 		final Collection<MagicPermanentTrigger> copiedTriggers=new ArrayList<MagicPermanentTrigger>(typeTriggers);
-		
 		for (final MagicPermanentTrigger permanentTrigger : copiedTriggers) {
-
 			final MagicPermanent permanent=permanentTrigger.getPermanent();
 			executeTrigger(permanentTrigger.getTrigger(),permanent,permanent,data);
 		}
