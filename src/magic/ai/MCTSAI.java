@@ -321,6 +321,14 @@ public class MCTSAI implements MagicAI {
         return "";
     }
 
+    public static String printPath(final List<MCTSGameTree> path) {
+        for (MCTSGameTree p : path) {
+            System.err.print(" -> " + p.desc);
+        }
+        System.err.println();
+        return "";
+    }
+
     private LinkedList<MCTSGameTree> growTree(final MCTSGameTree root, final MagicGame game) {
         final LinkedList<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
         boolean found = false;
@@ -334,7 +342,7 @@ public class MCTSAI implements MagicAI {
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
             assert !curr.hasDetails() || curr.getMaxChildren() == choices.size() : 
                 "ERROR! Capacity of node is " + curr.getMaxChildren() + ", number of choices is " + choices.size() 
-                 + printNode(curr, choices);
+                 + printPath(path) + printNode(curr, choices);
           
             final MagicEvent event = game.getNextEvent();
            
@@ -349,10 +357,6 @@ public class MCTSAI implements MagicAI {
             if (!found && curr != root && curr.isAI()) {
                 found = true;
                 if (!curr.isCached()) {
-                    for (MCTSGameTree p : path) {
-                        System.err.print(" -> " + p.desc);
-                    }
-                    System.err.println();
                     addNode(game, curr);
                 }
             }
