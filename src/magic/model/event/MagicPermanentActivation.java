@@ -49,7 +49,8 @@ public abstract class MagicPermanentActivation extends MagicActivation {
             ) {
 		super(carddef,currentIndex++,conditions,hints,txt);
 	}
-	
+
+    //without name but has txt (name defaults to null) 
     public MagicPermanentActivation(
             final MagicCondition conditions[],
             final MagicActivationHints hints,
@@ -57,6 +58,7 @@ public abstract class MagicPermanentActivation extends MagicActivation {
 		super(null,currentIndex++,conditions,hints,txt);
 	}
 	
+    //has name without txt (txt defaults to "")
 	public MagicPermanentActivation(
             final String name,
             final MagicCondition conditions[],
