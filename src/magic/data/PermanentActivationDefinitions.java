@@ -98,8 +98,12 @@ import magic.model.variable.MagicLocalVariable;
 
 public class PermanentActivationDefinitions {
 	
-	private static final MagicPermanentActivation AIR_SERVANT=new MagicPermanentActivation("Air Servant",
-			new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},new MagicActivationHints(MagicTiming.Tapping)) {
+	private static final MagicPermanentActivation AIR_SERVANT=new MagicPermanentActivation(
+            "Air Servant",
+			new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
+            new MagicActivationHints(MagicTiming.Tapping),
+            "Tap"            
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -124,8 +128,12 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT1=new MagicPermanentActivation("Arcanis the Omnipotent",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Token)) {
+	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT1=new MagicPermanentActivation(
+            "Arcanis the Omnipotent",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Token),
+            "Draw"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -147,8 +155,12 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT2=new MagicPermanentActivation("Arcanis the Omnipotent",
-			new MagicCondition[]{MagicManaCost.TWO_BLUE_BLUE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT2=new MagicPermanentActivation(
+            "Arcanis the Omnipotent",
+			new MagicCondition[]{MagicManaCost.TWO_BLUE_BLUE.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Return"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -170,7 +182,11 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation BOROS_GUILDMAGE1=new MagicPermanentActivation(
-			"Boros Guildmage",new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},new MagicActivationHints(MagicTiming.Pump,true)) {
+			"Boros Guildmage",
+            new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},
+            new MagicActivationHints(MagicTiming.Pump,true),
+            "Haste"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -196,7 +212,11 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation BOROS_GUILDMAGE2=new MagicPermanentActivation(
-			"Boros Guildmage",new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},new MagicActivationHints(MagicTiming.Block,true)) {
+			"Boros Guildmage",
+            new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
+            new MagicActivationHints(MagicTiming.Block,true),
+            "First strike"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -222,7 +242,11 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation BOTTLE_GNOMES=new MagicPermanentActivation(
-			"Bottle Gnomes",null,new MagicActivationHints(MagicTiming.Removal)) {
+			"Bottle Gnomes",
+            null,
+            new MagicActivationHints(MagicTiming.Removal),
+            "Sac"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -245,7 +269,11 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation BRIGID_HERO_OF_KINSBAILE=new MagicPermanentActivation(
-			"Brigid, Hero of Kinsbaile",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Block)) {
+			"Brigid, Hero of Kinsbaile",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Block),
+            "Damage"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -276,9 +304,15 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation BRION_STOUTARM=new MagicPermanentActivation("Brion Stoutarm",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.RED.getCondition(),MagicCondition.TWO_CREATURES_CONDITION},
-			new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation BRION_STOUTARM=new MagicPermanentActivation(
+            "Brion Stoutarm",
+			new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,MagicManaCost.RED.getCondition(),
+                MagicCondition.TWO_CREATURES_CONDITION
+            },
+			new MagicActivationHints(MagicTiming.Removal),
+            "Damage"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -312,8 +346,15 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation CARNIFEX_DEMON=new MagicPermanentActivation("Carnifex Demon",
-			new MagicCondition[]{MagicCondition.MINUS_COUNTER_CONDITION,MagicManaCost.BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation CARNIFEX_DEMON=new MagicPermanentActivation(
+            "Carnifex Demon",
+			new MagicCondition[]{
+                MagicCondition.MINUS_COUNTER_CONDITION,
+                MagicManaCost.BLACK.getCondition()
+            },
+            new MagicActivationHints(MagicTiming.Removal),
+            "-1/-1"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -343,12 +384,18 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation CINDER_ELEMENTAL=new MagicPermanentActivation("Cinder Elemental",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.X_RED.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation CINDER_ELEMENTAL=new MagicPermanentActivation(
+            "Cinder Elemental",
+			new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicManaCost.X_RED.getCondition()
+            },
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{
 				new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.X_RED),
 				new MagicSacrificeEvent((MagicPermanent)source)};
@@ -356,10 +403,15 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final int amount=payedCost.getX();
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(amount),
-				new Object[]{source,amount},this,"Cinder Elemental deals "+amount+" damage to target creature or player$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(amount),
+                    new Object[]{source,amount},
+                    this,
+                    "Cinder Elemental deals "+amount+" damage to target creature or player$.");
 		}
 
 		@Override
@@ -374,7 +426,11 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation CHAMELEON_COLOSSUS=new MagicPermanentActivation(
-			"Chameleon Colossus",new MagicCondition[]{MagicManaCost.TWO_GREEN_GREEN.getCondition()},new MagicActivationHints(MagicTiming.Pump)) {
+			"Chameleon Colossus",
+            new MagicCondition[]{MagicManaCost.TWO_GREEN_GREEN.getCondition()},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Pump"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -398,12 +454,18 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation CHARGING_TROLL=new MagicRegenerationActivation("Charging Troll",MagicManaCost.GREEN);
+	private static final MagicPermanentActivation CHARGING_TROLL=
+        new MagicRegenerationActivation("Charging Troll",MagicManaCost.GREEN);
 
-	private static final MagicPermanentActivation CUDGEL_TROLL=new MagicRegenerationActivation("Cudgel Troll",MagicManaCost.GREEN);
+	private static final MagicPermanentActivation CUDGEL_TROLL=
+        new MagicRegenerationActivation("Cudgel Troll",MagicManaCost.GREEN);
 	
-	private static final MagicPermanentActivation CUNNING_SPARKMAGE=new MagicPermanentActivation(
-			"Cunning Sparkmage",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation CUNNING_SPARKMAGE = new MagicPermanentActivation(
+			"Cunning Sparkmage",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -2193,27 +2255,6 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation BATTERSKULL=new MagicPermanentActivation("Batterskull",
-			new MagicCondition[]{MagicManaCost.THREE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
-
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE)};
-		}
-
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Return Batterskull to its owner's hand.");
-		}
-
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
-		}
-	};
 	
 	private static final MagicPermanentActivation BRITTLE_EFFIGY=new MagicPermanentActivation("Brittle Effigy",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
