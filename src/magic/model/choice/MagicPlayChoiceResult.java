@@ -32,4 +32,8 @@ public class MagicPlayChoiceResult implements MagicMappable {
 			return source.getName();
 		}
 	}
+
+    public String getText() {
+        return activation.getText();
+    }
 }
