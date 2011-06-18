@@ -12,22 +12,30 @@ import magic.model.condition.MagicSingleActivationCondition;
 
 public abstract class MagicActivation implements MagicEventAction, Comparable<MagicActivation> {
 
-	private final MagicCardDefinition cardDefinition;
+	private MagicCardDefinition cardDefinition;
 	private final MagicCondition conditions[];
 	private final MagicTargetChoice targetChoice;
+    private final String text;
 	protected final MagicActivationHints hints;
 	protected final int priority;
-	protected final int id;
+	protected int id;
+    private final int index;
 
 	/** Conditions can be null. */
 	public MagicActivation(
             final MagicCardDefinition cardDefinition,
             final int index,
             final MagicCondition conditions[],
-            final MagicActivationHints hints) {
+            final MagicActivationHints hints,
+            final String txt
+            ) {
 
-		this.cardDefinition=cardDefinition;
-		this.id=(cardDefinition.getIndex()<<16)+index;
+        this.text = txt;
+        this.index = index;
+        if (cardDefinition != null) {
+            this.cardDefinition=cardDefinition;
+            this.id=(cardDefinition.getIndex()<<16)+index;
+        }
 		this.conditions=conditions;
 		this.targetChoice=getTargetChoice();
 		this.hints=hints;
@@ -43,18 +51,27 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 			}
 		}
 	}
-	
+
+    /*
 	public MagicActivation(
             final String name,
             final int index,
             final MagicCondition conditions[],
-            final MagicActivationHints hints) {
-		this(CardDefinitions.getInstance().getCard(name),index,conditions,hints);		
+            final MagicActivationHints hints,
+            final String txt            
+            ) {
+		this(CardDefinitions.getInstance().getCard(name),index,conditions,hints,txt);		
 	}
+    */
 		
 	public final MagicCardDefinition getCardDefinition() {
 		return cardDefinition;
 	}
+    
+    public void setCardDefinition(final MagicCardDefinition cdef) {
+        this.cardDefinition = cdef;
+        this.id=(this.cardDefinition.getIndex()<<16)+index;
+    }
 		
 	public final MagicCondition[] getConditions() {
 		return conditions;
@@ -67,6 +84,10 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	public final int getId() {
 		return id;
 	}
+
+    public final String getText() {
+        return text;
+    }
 	
 	private final boolean checkActivationPriority(final MagicSource source) {
 		final MagicActivationPriority actpri = source.getController().getActivationPriority();
