@@ -2898,8 +2898,6 @@ public class TriggerDefinitions {
 		}
     };
     
-    private static final MagicTrigger BATTERSKULL=new MagicLivingWeaponTrigger("Batterskull");
-    
     private static final MagicTrigger FLAYER_HUSK=new MagicLivingWeaponTrigger("Flayer Husk");
     
     private static final MagicTrigger MAGE_SLAYER=new MagicTrigger(MagicTriggerType.WhenAttacks,"Mage Slayer",1) {
