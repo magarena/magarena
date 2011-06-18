@@ -23,13 +23,15 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 
 	private static final String MESSAGE="Choose which ability to play.";
 	private static final Dimension BUTTON_DIMENSION=new Dimension(80,35);
-	private static final String CHOICES[]={"First","Second"};
 	
 	private final GameController controller;
 	private final List<MagicPlayChoiceResult> results;
 	private MagicPlayChoiceResult result=null;
 	
-	public PlayChoicePanel(final GameController controller,final MagicSource source,final List<MagicPlayChoiceResult> results) {
+	public PlayChoicePanel(
+            final GameController controller,
+            final MagicSource source,
+            final List<MagicPlayChoiceResult> results) {
 		
 		this.controller=controller;
 		this.results=results;
@@ -46,8 +48,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 		add(buttonPanel,BorderLayout.SOUTH);
 		
 		for (int index=0;index<results.size();index++) {
-			
-			final JButton button=new JButton(CHOICES[index]);
+			final JButton button=new JButton(results.get(index).getText());
 			button.setPreferredSize(BUTTON_DIMENSION);
 			button.setActionCommand(""+index);
 			button.addActionListener(this);
@@ -57,13 +58,11 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 	}
 
 	public MagicPlayChoiceResult getResult() {
-		
 		return result;
 	}
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-
 		result=results.get(Integer.parseInt(event.getActionCommand()));
 		controller.actionClicked();
 	}
