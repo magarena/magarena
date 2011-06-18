@@ -10,6 +10,7 @@ import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
+import magic.data.CardDefinitions;
 
 public abstract class MagicPermanentActivation extends MagicActivation {
 	
@@ -29,22 +30,41 @@ public abstract class MagicPermanentActivation extends MagicActivation {
 		}
 	};
 
-	private static int currentIndex=1;
+	private static int currentIndex = 1;
+	
+    public MagicPermanentActivation(
+            final String name,
+            final MagicCondition conditions[],
+            final MagicActivationHints hints,
+            final String txt
+            ) {
+		super(CardDefinitions.getInstance().getCard(name),currentIndex++,conditions,hints,txt);
+	}
+    
+    public MagicPermanentActivation(
+            final MagicCardDefinition carddef,
+            final MagicCondition conditions[],
+            final MagicActivationHints hints,
+            final String txt
+            ) {
+		super(carddef,currentIndex++,conditions,hints,txt);
+	}
+	
+    public MagicPermanentActivation(
+            final MagicCondition conditions[],
+            final MagicActivationHints hints,
+            final String txt) {
+		super(null,currentIndex++,conditions,hints,txt);
+	}
 	
 	public MagicPermanentActivation(
             final String name,
             final MagicCondition conditions[],
-            final MagicActivationHints hints) {
-		super(name,currentIndex++,conditions,hints);
+            final MagicActivationHints hints
+            ) {
+		super(CardDefinitions.getInstance().getCard(name),currentIndex++,conditions,hints,"");
 	}
-	
-	protected MagicPermanentActivation(
-            final MagicCardDefinition cardDefinition,
-            final MagicCondition conditions[],
-            final MagicActivationHints hints) {
-		super(cardDefinition,currentIndex++,conditions,hints);
-	}
-	
+
 	@Override
 	public final boolean usesStack() {
 		return true;
