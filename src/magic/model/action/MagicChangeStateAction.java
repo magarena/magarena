@@ -12,7 +12,6 @@ public class MagicChangeStateAction extends MagicAction {
 	private boolean changed;
 	
 	public MagicChangeStateAction(final MagicPermanent permanent,final MagicPermanentState state,final boolean set) {
-		
 		this.permanent=permanent;
 		this.state=state;
 		this.set=set;
@@ -20,7 +19,6 @@ public class MagicChangeStateAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		changed=permanent.hasState(state)!=set;
 		if (changed) {
 			if (set) {
@@ -34,7 +32,6 @@ public class MagicChangeStateAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		if (changed) {
 			if (set) {
 				permanent.clearState(state);				
