@@ -76,7 +76,7 @@ tags: $(SRC)
 	ctags -R .
 
 .Test%: $(MAG)
-	$(JAVA) -DtestGame=Test$* magic.MagicMain
+	$(JAVA) -DtestGame=Test$* -jar $^
 
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
