@@ -151,6 +151,11 @@ public class CardDefinitions {
             		cardDefinition.addTrigger(mtrig);
                     mtrig.setCardDefinition(cardDefinition);
                     System.err.println("Adding trigger to " + fname);
+                } else if (obj instanceof MagicPermanentActivation) {
+                    final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
+            		cardDefinition.addActivation(mact);
+                    mact.setCardDefinition(cardDefinition);
+                    System.err.println("Adding permanent activation to " + fname);
                 }
             }
         } catch (Exception err) {
