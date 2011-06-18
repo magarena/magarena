@@ -17,6 +17,10 @@ public class MagicLivingWeaponTrigger extends MagicTrigger {
 		super(MagicTriggerType.WhenComesIntoPlay,name);
 	}
 	
+    public MagicLivingWeaponTrigger() {
+		super(MagicTriggerType.WhenComesIntoPlay);
+	}
+	
 	@Override
 	public MagicEvent executeTrigger(
             final MagicGame game,
