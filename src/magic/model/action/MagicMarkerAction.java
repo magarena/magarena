@@ -31,7 +31,6 @@ public class MagicMarkerAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		oldTurnPlayer=game.getTurnPlayer();
 		oldPhase=game.getPhase();
 		oldStep=game.getStep();
@@ -59,7 +58,6 @@ public class MagicMarkerAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		game.setTurnPlayer(oldTurnPlayer);
 		game.setPhase(oldPhase);
 		game.setStep(oldStep);

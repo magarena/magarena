@@ -192,7 +192,7 @@ public class MagicGame {
             turnPlayer.getIndex(),
             landPlayed,
             priorityPassedCount,
-            (priorityPassed ? 999 : 111),
+            (priorityPassed ? 9999 : 1111),
             (stateCheckRequired ? 9999 : 1111),
             getPayedCost().getX(),
             stack.size(),
