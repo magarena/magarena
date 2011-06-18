@@ -20,7 +20,8 @@ public class MagicCardActivation extends MagicActivation {
 		super(cardDefinition,
               0,
               new MagicCondition[]{MagicCondition.CARD_CONDITION,cardDefinition.getCost().getCondition()},
-              cardDefinition.getActivationHints()
+              cardDefinition.getActivationHints(),
+              "Play"
              );
 	}
 	
