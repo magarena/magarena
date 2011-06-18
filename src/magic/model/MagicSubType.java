@@ -21,6 +21,7 @@ public enum MagicSubType {
 	Illusion("Illusion"),
 	Elemental("Elemental"),
 	Construct("Construct"),
+	Frog("Frog"),
 	;
 
 	public static final int ALL_BASIC_LANDS = 
@@ -31,16 +32,18 @@ public enum MagicSubType {
         Swamp.getMask();
 	
 	public static final int ALL_CREATURES=
-        Bat.getMask()|
-        Beast.getMask()|
-        Demon.getMask()|
-        Dragon.getMask()|
-        Goblin.getMask()|
-        Knight.getMask()|
-        Soldier.getMask()|
-        Illusion.getMask()|
-        Elemental.getMask()|
-        Construct.getMask();
+        Bat.getMask() |
+        Beast.getMask() |
+        Demon.getMask() |
+        Dragon.getMask() |
+        Goblin.getMask() |
+        Knight.getMask() |
+        Soldier.getMask() |
+        Illusion.getMask() |
+        Elemental.getMask() |
+        Construct.getMask() |
+        Frog.getMask() |
+        0;
 	
 	private final String name;
 	private final int mask;
