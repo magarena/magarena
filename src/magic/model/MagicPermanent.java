@@ -72,19 +72,15 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		fixedScore=ArtificialScoringSystem.getFixedPermanentScore(this);
 	}
 	
-	private MagicPermanent() {
-		
-	}
+	private MagicPermanent() {}
 	
 	@Override
 	public MagicCopyable create() {
-
 		return new MagicPermanent();
 	}
 
 	@Override
 	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
-
 		final MagicPermanent sourcePermanent=(MagicPermanent)source;
 		id=sourcePermanent.id;
 		cardDefinition=sourcePermanent.cardDefinition; // Must be before the rest for compareTo!
@@ -112,7 +108,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	@Override
 	public Object map(final MagicGame game) {
-
 		final MagicPlayer mappedController=(MagicPlayer)controller.map(game);
 		return mappedController.getPermanents().getPermanent(id);
 	}
@@ -142,6 +137,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             turnColorFlags,
             abilityPlayedThisTurn,
             turnLocalVariables,
+	        damage,
+            preventDamage,
         };
 		return magic.MurmurHash3.hash(input);
         /*		
@@ -155,7 +152,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	/** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */
 	public int getManaId() {
-		
 		// Creatures or lands that can be animated are unique by default.
 		if (cardDefinition.hasExcludeManaOrCombat()) {
 			return (int)id;
@@ -165,110 +161,89 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public MagicCard getCard() {
-		
 		return card;
 	}
 	
 	@Override
 	public MagicCardDefinition getCardDefinition() {
-
 		return cardDefinition;
 	}
 	
 	@Override
 	public Collection<MagicActivation> getActivations() {
-
 		return cardDefinition.getActivations();
 	}
 
 	public boolean producesMana() {
-		
 		return !cardDefinition.getManaActivations().isEmpty();
 	}
 	
 	public String getName() {
-		
 		return card.getName();
 	}
 	
 	@Override
 	public String toString() {
-		
 		return getName();
 	}
 		
 	public void setController(final MagicPlayer controller) {
-		
 		this.controller=controller;
 	}
 	
 	public MagicPlayer getController() {
-		
 		return controller;
 	}
 			
 	public void setState(final MagicPermanentState state) {
-		
 		stateFlags|=state.getMask();
 	}
 	
 	public void clearState(final MagicPermanentState state) {
-	
 		stateFlags&=Integer.MAX_VALUE-state.getMask();
 	}
 	
 	public boolean hasState(final MagicPermanentState state) {
-		
 		return state.hasState(stateFlags);
 	}
 	
 	public int getStateFlags() {
-		
 		return stateFlags;
 	}
 	
 	public void setStateFlags(final int flags) {
-		
 		stateFlags=flags;
 	}
 	
 	public boolean isTapped() {
-		
 		return hasState(MagicPermanentState.Tapped);
 	}
 	
 	public void addLocalVariable(final MagicLocalVariable localVariable) {
-
 		localVariables.add(localVariable);
 	}
 
 	public void addTurnLocalVariable(final MagicLocalVariable localVariable) {
-
 		localVariables.add(cardDefinition.getTurnLocalVariableIndex()+turnLocalVariables,localVariable);
 		turnLocalVariables++;
 	}
 
 	public void removeTurnLocalVariable() {
-
 		turnLocalVariables--;
 		localVariables.remove(cardDefinition.getTurnLocalVariableIndex()+turnLocalVariables);
 	}
 	
 	public void addTurnLocalVariables(final List<MagicLocalVariable> localVariablesList) {
-		
 		for (final MagicLocalVariable localVariable : localVariablesList) {
-			
 			addTurnLocalVariable(localVariable);
 		}
 	}
 	
 	public List<MagicLocalVariable> removeTurnLocalVariables() {
-		
 		if (turnLocalVariables>0) {
 			final List<MagicLocalVariable> localVariablesList=new ArrayList<MagicLocalVariable>();
 			final int index=cardDefinition.getTurnLocalVariableIndex();
 			for (;turnLocalVariables>0;turnLocalVariables--) {
-				
 				localVariablesList.add(localVariables.remove(index));
 			}
 			return localVariablesList;
@@ -278,23 +253,19 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 	@Override
 	public MagicColoredType getColoredType() {
-
 		return cardDefinition.getColoredType();
 	}
 	
 	public void setTurnColorFlags(final int colorFlags) {
-		
 		turnColorFlags=colorFlags;
 	}
 	
 	public int getTurnColorFlags() {
-		
 		return turnColorFlags;
 	}
 	
 	@Override
 	public int getColorFlags() {
-
 		// Check if cached.
 		if (cached) {
 			return cachedColorFlags;
@@ -315,7 +286,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 		
 	public void changeCounters(final MagicCounterType counterType,final int amount) {
-		
 		counters[counterType.ordinal()]+=amount;
 		if (cached) {
 			switch (counterType) {
@@ -330,14 +300,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public int getCounters(final MagicCounterType counterType) {
-		
 		return counters[counterType.ordinal()];
 	}
 	
 	public boolean hasCounters() {
-		
 		for (final int amount : counters) {
-
 			if (amount>0) {
 				return true;
 			}
@@ -346,7 +313,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public int getSubTypeFlags() {
-
 		// Check if cached.
 		if (cached) {
 			return cachedSubTypeFlags;
@@ -361,12 +327,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 
 	public boolean hasSubType(final MagicSubType subType) {
-
 		return subType.hasSubType(getSubTypeFlags());
 	}
 
 	public MagicPowerToughness getPowerToughness(final MagicGame game,final boolean turn) {
-
 		// Check if cached.
 		if (cached&&turn) {
 			return cachedTurnPowerToughness;
@@ -385,32 +349,26 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public MagicPowerToughness getPowerToughness(final MagicGame game) {
-		
 		return getPowerToughness(game,true);
 	}
 		
 	public int getPower(final MagicGame game) {
-		
 		return getPowerToughness(game,true).getPositivePower();
 	}
 	
 	public int getToughness(final MagicGame game) {
-		
 		return getPowerToughness(game,true).getPositiveToughness();
 	}
 	
 	public int getTurnPower() {
-		
 		return turnPowerIncr;
 	}
 	
 	public void setTurnPower(final int power) {
-		
 		turnPowerIncr=power;
 	}
 	
 	public void changeTurnPower(final int amount) {
-
 		turnPowerIncr+=amount;
 		if (cached) {
 			cachedTurnPowerToughness.power+=amount;
@@ -418,17 +376,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public int getTurnToughness() {
-		
 		return turnToughnessIncr;
 	}
 	
 	public void setTurnToughness(final int toughness) {
-		
 		turnToughnessIncr=toughness;
 	}
 	
 	public void changeTurnToughness(final int amount) {
-
 		turnToughnessIncr+=amount;
 		if (cached) {
 			cachedTurnPowerToughness.toughness+=amount;
@@ -436,7 +391,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 			
 	public void setTurnAbilityFlags(final long flags) {
-		
 		turnAbilityFlags=flags;
 		if (cached) {
 			cachedTurnAbilityFlags|=flags;
@@ -444,12 +398,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public long getTurnAbilityFlags() {
-		
 		return turnAbilityFlags;
 	}
 	
 	public long getAllAbilityFlags(final MagicGame game,final boolean turn) {
-		
 		// Check if cached.
 		if (cached&&turn) {
 			return cachedTurnAbilityFlags;
@@ -470,13 +422,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public long getAllAbilityFlags(final MagicGame game) {
-
 		return getAllAbilityFlags(game,true);
 	}
 
 	@Override
 	public boolean hasAbility(final MagicGame game,final MagicAbility ability) {
-
 		// Check if cached.
 		if (cached) {
 			return ability.hasAbility(cachedTurnAbilityFlags);
@@ -521,102 +471,91 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public int getDamage() {
-		
 		return damage;
 	}
 	
 	public void setDamage(final int damage) {
-		
 		this.damage=damage;
 	}
 		
 	@Override
 	public int getPreventDamage() {
-
 		return preventDamage;
 	}
 
 	@Override
 	public void setPreventDamage(final int amount) {
-
 		preventDamage=amount;
 	}
 
 	public int getLethalDamage(final int toughness) {
-		
 		return toughness<=damage?0:toughness-damage;
 	}
 	
 	// Tap symbol.
 	public boolean canTap(final MagicGame game) {
-		
-		return !hasState(MagicPermanentState.Tapped)&&(!hasState(MagicPermanentState.Summoned)||!isCreature()||hasAbility(game,MagicAbility.Haste));
+		return !hasState(MagicPermanentState.Tapped) && 
+            (!hasState(MagicPermanentState.Summoned) || 
+             !isCreature() || 
+             hasAbility(game,MagicAbility.Haste)
+            );
 	}
 	
 	// Untap symbol.
 	public boolean canUntap(final MagicGame game) {
-
-		return hasState(MagicPermanentState.Tapped)&&(!hasState(MagicPermanentState.Summoned)||!isCreature()||hasAbility(game,MagicAbility.Haste));		
+		return hasState(MagicPermanentState.Tapped) && 
+            (!hasState(MagicPermanentState.Summoned) || 
+             !isCreature() || 
+             hasAbility(game,MagicAbility.Haste)
+            );		
 	}
 	
 	public boolean canRegenerate() {
-		
 		return !hasState(MagicPermanentState.Regenerated)&&!hasState(MagicPermanentState.CannotBeRegenerated);
 	}
 	
 	public boolean isRegenerated() {
-		
 		return hasState(MagicPermanentState.Regenerated)&&!hasState(MagicPermanentState.CannotBeRegenerated);
 	}
 	
 	public boolean isAttacking() {
-		
 		return hasState(MagicPermanentState.Attacking);
 	}
 	
 	public boolean isBlocked() {
-
 		return hasState(MagicPermanentState.Blocked);
 	}
 	
 	public boolean isBlocking() {
-		
 		return hasState(MagicPermanentState.Blocking);
 	}
 	
 	public MagicPermanent getBlockedCreature() {
-
 		return blockedCreature;
 	}
 	
 	public void setBlockedCreature(final MagicPermanent creature) {
-		
 		blockedCreature=creature;
 	}
 
 	public MagicPermanentList getBlockingCreatures() {
-		
 		return blockingCreatures;
 	}
 	
 	public void setBlockingCreatures(final MagicPermanentList creatures) {
-		
 		blockingCreatures.clear();
 		blockingCreatures.addAll(creatures);
 	}
 		
 	public void addBlockingCreature(final MagicPermanent creature) {
-		
 		blockingCreatures.add(creature);
 	}
 	
 	public void removeBlockingCreature(final MagicPermanent creature) {
-		
 		blockingCreatures.remove(creature);
 	}
 	
 	public void removeBlockingCreatures() {
-		
 		blockingCreatures.clear();
 	}
 	
