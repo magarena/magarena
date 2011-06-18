@@ -19,7 +19,12 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 	
 	public MagicEquipActivation(final MagicCardDefinition cardDefinition,final MagicManaCost equipCost) {
 	
-		super(cardDefinition,new MagicCondition[]{MagicCondition.SORCERY_CONDITION,equipCost.getCondition()},EQUIP_ACTIVATION_HINTS);
+		super(
+            cardDefinition,
+            new MagicCondition[]{MagicCondition.SORCERY_CONDITION,equipCost.getCondition()},
+            EQUIP_ACTIVATION_HINTS,
+            "Equip"
+            );
 		this.equipCost=equipCost;
 	}
 
