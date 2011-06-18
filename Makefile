@@ -110,3 +110,11 @@ decks/dd_%.dec: scripts/dailyhtml2dec.awk
 
 decks/ml_%.dec: scripts/apprentice2dec.awk 
 	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
+
+# Mike Flores 1 - 212
+decks/mf_%.dec: scripts/dailyhtml2dec.awk
+	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtgcom/daily/mf$* | awk -f $^ > $@
+
+# Top Decks 1 - 147
+decks/td_%.dec: scripts/dailyhtml2dec.awk
+	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/td/$* | awk -f $^ > $@
