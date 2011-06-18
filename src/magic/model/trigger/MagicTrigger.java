@@ -17,24 +17,20 @@ public abstract class MagicTrigger implements MagicEventAction {
 	private MagicCardDefinition card;
 
 	private MagicTrigger(final MagicTriggerType type,final MagicCardDefinition card,final int priority) {
-		
 		this.type=type;
 		this.card=card;
 		this.priority=priority;
 	}
 	
 	public MagicTrigger(final MagicTriggerType type,final String name,final int priority) {
-		
 		this(type,CardDefinitions.getInstance().getCard(name),priority);
 	}
 	
 	public MagicTrigger(final MagicTriggerType type,final String name) {
-		
 		this(type,name,DEFAULT_PRIORITY);
 	}
 	
 	public MagicTrigger(final MagicTriggerType type) {
-		
 		this(type,(MagicCardDefinition)null,DEFAULT_PRIORITY);
 	}
 
@@ -47,17 +43,14 @@ public abstract class MagicTrigger implements MagicEventAction {
 	}
 	
 	public final MagicTriggerType getType() {
-		
 		return type;
 	}
 		
 	public final int getPriority() {
-		
 		return priority;
 	}
 	
 	public boolean usesStack() {
-		
 		return type.usesStack();
 	}
 	
