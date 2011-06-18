@@ -17,19 +17,20 @@ import magic.model.stack.MagicCardOnStack;
 public class MagicCardActivation extends MagicActivation {
 	
 	public MagicCardActivation(final MagicCardDefinition cardDefinition) {
-		
-		super(cardDefinition,0,new MagicCondition[]{MagicCondition.CARD_CONDITION,cardDefinition.getCost().getCondition()},cardDefinition.getActivationHints());
+		super(cardDefinition,
+              0,
+              new MagicCondition[]{MagicCondition.CARD_CONDITION,cardDefinition.getCost().getCondition()},
+              cardDefinition.getActivationHints()
+             );
 	}
 	
 	@Override
 	public boolean usesStack() {
-
 		return getCardDefinition().usesStack();
 	}
 
 	@Override
 	public MagicEvent[] getCostEvent(final MagicSource source) {
-
 		final MagicManaCost cost=getCardDefinition().getCost();
 		if (cost!=MagicManaCost.ZERO) {
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
@@ -40,13 +41,11 @@ public class MagicCardActivation extends MagicActivation {
 
 	@Override
 	public MagicEvent getEvent(final MagicSource source) {
-
 		return new MagicEvent(source,source.getController(),new Object[]{source},this,"Play "+source.getName()+".");
 	}
 
 	@Override
 	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-
 		final MagicCard card=(MagicCard)data[0];
 		if (card.getCardDefinition().isLand()) {
 			game.incLandPlayed();
@@ -62,7 +61,6 @@ public class MagicCardActivation extends MagicActivation {
 
 	@Override
 	public final MagicTargetChoice getTargetChoice() {
-
 		// Not the cleanest way to do this by far...
 		final MagicCard card=new MagicCard(getCardDefinition(),null,0);
 		final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,MagicPayedCost.NO_COST);

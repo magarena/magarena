@@ -20,7 +20,11 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	protected final int id;
 
 	/** Conditions can be null. */
-	public MagicActivation(final MagicCardDefinition cardDefinition,final int index,final MagicCondition conditions[],final MagicActivationHints hints) {
+	public MagicActivation(
+            final MagicCardDefinition cardDefinition,
+            final int index,
+            final MagicCondition conditions[],
+            final MagicActivationHints hints) {
 
 		this.cardDefinition=cardDefinition;
 		this.id=(cardDefinition.getIndex()<<16)+index;
@@ -32,7 +36,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 		// Sets the activation for the condition.
 		if (conditions!=null) {
 			for (final MagicCondition condition : conditions) {
-				
 				if (condition instanceof MagicSingleActivationCondition) {
 					final MagicSingleActivationCondition singleCondition=(MagicSingleActivationCondition)condition;
 					singleCondition.setActivation(this);
@@ -41,7 +44,11 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 		}
 	}
 	
-	public MagicActivation(final String name,final int index,final MagicCondition conditions[],final MagicActivationHints hints) {
+	public MagicActivation(
+            final String name,
+            final int index,
+            final MagicCondition conditions[],
+            final MagicActivationHints hints) {
 		this(CardDefinitions.getInstance().getCard(name),index,conditions,hints);		
 	}
 		
@@ -62,30 +69,38 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	}
 	
 	private final boolean checkActivationPriority(final MagicSource source) {
-		final MagicActivationPriority activationPriority=source.getController().getActivationPriority();
-		final int priorityDif=priority-activationPriority.getPriority();
-		if (priorityDif>0) {
+		final MagicActivationPriority actpri = source.getController().getActivationPriority();
+		final int priorityDif = priority - actpri.getPriority();
+		if (priorityDif > 0) {
 			return true;
-		} else if (priorityDif<0) {
+		} else if (priorityDif < 0) {
 			return false;
 		} 
-		return id >= activationPriority.getActivationId();		
+		return id >= actpri.getActivationId();		
 	}
 	
 	public void changeActivationPriority(final MagicGame game,final MagicSource source) {
-		final MagicActivationPriority activationPriority=source.getController().getActivationPriority();
-		activationPriority.setPriority(priority);
-		activationPriority.setActivationId(id);
+		final MagicActivationPriority actpri = source.getController().getActivationPriority();
+		actpri.setPriority(priority);
+		actpri.setActivationId(id);
 	}
 	
-	public final boolean canPlay(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean useHints) {
+	public final boolean canPlay(
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source,
+            final boolean useHints) {
 		
-		if (useHints&&(!checkActivationPriority(source)||!hints.getTiming().canPlay(game,source)||hints.isMaximum(source))) {
+		if (useHints && 
+            (!checkActivationPriority(source) || 
+             !hints.getTiming().canPlay(game,source) || 
+             hints.isMaximum(source)
+            )
+           ) {
 			return false;
 		}
 		if (conditions!=null) {
 			for (final MagicCondition condition : conditions) {
-				
 				if (!condition.accept(game,source)) {
 					return false;
 				}
@@ -101,7 +116,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	
 	@Override
 	public int compareTo(final MagicActivation other) {
-
 		return id-other.id;
 	}
 	
