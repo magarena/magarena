@@ -17,8 +17,7 @@ public class MagicPumpActivation extends MagicPermanentActivation {
 	private final int toughness;
 	
 	public MagicPumpActivation(final String name,final MagicManaCost cost,final int power,final int toughness) {
-		
-		super(name,new MagicCondition[]{cost.getCondition()},ACTIVATION_HINTS);
+		super(name,new MagicCondition[]{cost.getCondition()},ACTIVATION_HINTS,"Pump");
 		this.cost=cost;
 		this.power=power;
 		this.toughness=toughness;
