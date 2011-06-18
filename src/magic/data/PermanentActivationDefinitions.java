@@ -113,7 +113,6 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(
                     source,
                     source.getController(),
@@ -125,8 +124,11 @@ public class PermanentActivationDefinitions {
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null&&!creature.isTapped()) {
 				game.doAction(new MagicTapAction(creature,true));
@@ -134,7 +136,7 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT1=new MagicPermanentActivation(
+	private static final MagicPermanentActivation ARCANIS_THE_OMNIPOTENT1 = new MagicPermanentActivation(
             "Arcanis the Omnipotent",
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Token),
@@ -143,20 +145,21 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player},this,"You draw three cards.");
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[0],3));
 		}
 	};
@@ -170,19 +173,25 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE_BLUE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Return Arcanis the Omnipotent to its owner's hand.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    new Object[]{source},
+                    this,
+                    "Return Arcanis the Omnipotent to its owner's hand.");
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
 		}
 	};
@@ -251,25 +260,22 @@ public class PermanentActivationDefinitions {
 			"Bottle Gnomes",
             null,
             new MagicActivationHints(MagicTiming.Removal),
-            "Sacrifice"
+            "Life+3"
             ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player},this,"You gain 3 life.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
 		}
 	};
@@ -302,7 +308,6 @@ public class PermanentActivationDefinitions {
 				final MagicSource source=(MagicSource)data[0];
 				final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
 				for (final MagicTarget target : targets) {
-					
 					final MagicDamage damage=new MagicDamage(source,target,2,false);
 					game.doAction(new MagicDealDamageAction(damage));
 				}
@@ -501,7 +506,7 @@ public class PermanentActivationDefinitions {
 			"Cursecatcher",
             null,
             new MagicActivationHints(MagicTiming.Counter),
-            "Sacrifice"
+            "Counter"
             ) {
 
 		@Override
@@ -531,7 +536,7 @@ public class PermanentActivationDefinitions {
 			"Dauntless Escort",
             null,
             new MagicActivationHints(MagicTiming.Pump),
-            "Sacrifice"
+            "Indestr"
             ) {
 
 		@Override
@@ -558,7 +563,7 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation DEATHLESS_ANGEL=new MagicPermanentActivation(
+	private static final MagicPermanentActivation DEATHLESS_ANGEL = new MagicPermanentActivation(
 			"Deathless Angel",
             new MagicCondition[]{MagicManaCost.WHITE_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
@@ -567,20 +572,23 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.WHITE_WHITE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.POS_TARGET_CREATURE,MagicIndestructibleTargetPicker.getInstance(),
-				MagicEvent.NO_DATA,this,"Target creature$ is indestructible this turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicIndestructibleTargetPicker.getInstance(),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Target creature$ is indestructible this turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Indestructible));
@@ -592,18 +600,16 @@ public class PermanentActivationDefinitions {
             "Drana, Kalastria Bloodchief",
 			new MagicCondition[]{MagicManaCost.X_BLACK_BLACK.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
-            "-0/-X"
+            "Pump"
             ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X_BLACK_BLACK)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final int amount=payedCost.getX();
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.TARGET_CREATURE,
 				new MagicWeakenTargetPicker(0,1),new Object[]{source,amount},this,
@@ -612,7 +618,6 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final int amount=(Integer)data[1];
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
@@ -622,67 +627,79 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation DRUDGE_REAVERS=new MagicRegenerationActivation("Drudge Reavers",MagicManaCost.BLACK);
+	private static final MagicPermanentActivation DRUDGE_REAVERS = 
+        new MagicRegenerationActivation("Drudge Reavers",MagicManaCost.BLACK);
 	
-	private static final MagicPermanentActivation ECHO_MAGE1=new MagicLevelUpActivation("Echo Mage",MagicManaCost.ONE_BLUE,4);
+	private static final MagicPermanentActivation ECHO_MAGE1 = 
+        new MagicLevelUpActivation("Echo Mage",MagicManaCost.ONE_BLUE,4);
 	
 	private static final MagicPermanentActivation ECHO_MAGE2=new MagicPermanentActivation("Echo Mage",
-			new MagicCondition[]{MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
+			new MagicCondition[]{
+                MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,
+                MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
 			new MagicActivationHints(MagicTiming.Spell),
             "Copy"
             ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE_BLUE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			final int amount=source.getCounters(MagicCounterType.Charge)>=4?2:1;
-			final String description=amount==2?
+			final String description = amount == 2 ?
 					"Copy target instant or sorcery spell$ twice. You may choose new targets for the copies.":
 					"Copy target instant or sorcery spell$. You may choose new targets for the copy.";
-			return new MagicEvent(source,player,MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,new Object[]{player,amount},this,description);
+			return new MagicEvent(
+                    source,
+                    player,
+                    MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
+                    new Object[]{player,amount},
+                    this,
+                    description);
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
 			if (targetSpell!=null) {
 				final MagicPlayer player=(MagicPlayer)data[0];
 				final int amount=(Integer)data[1];
 				for (int count=amount;count>0;count--) {
-					
 					game.doAction(new MagicCopyCardOnStackAction(player,targetSpell));
 				}
 			}
 		}
 	};
 	
-	private static final MagicPermanentActivation EMBER_HAULER=new MagicPermanentActivation("Ember Hauler",
-			new MagicCondition[]{MagicManaCost.ONE.getCondition()},new MagicActivationHints(MagicTiming.Removal),"Damage") {
+	private static final MagicPermanentActivation EMBER_HAULER=new MagicPermanentActivation(
+            "Ember Hauler",
+			new MagicCondition[]{MagicManaCost.ONE.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.ONE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(2),
-				new Object[]{source},this,"Ember Hauler deals 2 damage to target creature or player$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(2),
+                    new Object[]{source},
+                    this,
+                    "Ember Hauler deals 2 damage to target creature or player$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
@@ -691,48 +708,65 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation ESPER_BATTLEMAGE1=new MagicPermanentActivation("Esper Battlemage",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.WHITE.getCondition()},new MagicActivationHints(MagicTiming.Pump),"Prevent") {
+	private static final MagicPermanentActivation ESPER_BATTLEMAGE1=new MagicPermanentActivation(
+            "Esper Battlemage",
+			new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicManaCost.WHITE.getCondition()},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Prevent") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.WHITE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,new Object[]{player},this,"Prevent the next 2 damage that would be dealt to you this turn.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "Prevent the next 2 damage that would be dealt to you this turn.");
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicPreventDamageAction((MagicPlayer)data[0],2));
 		}
 	};
 
-	private static final MagicPermanentActivation ESPER_BATTLEMAGE2=new MagicPermanentActivation("Esper Battlemage",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal),"-1/-1") {
+	private static final MagicPermanentActivation ESPER_BATTLEMAGE2=new MagicPermanentActivation(
+            "Esper Battlemage",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLACK.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal),
+            "-1/-1") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLACK)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(1,1),
-				MagicEvent.NO_DATA,this,"Target creature$ gets -1/-1 until end of turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicWeakenTargetPicker(1,1),
+				    MagicEvent.NO_DATA,
+                    this,
+                    "Target creature$ gets -1/-1 until end of turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
@@ -740,25 +774,25 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation ETHERSWORN_ADJUDICATOR1=new MagicPermanentActivation("Ethersworn Adjudicator",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE_WHITE_BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal),"Destroy") {
+	private static final MagicPermanentActivation ETHERSWORN_ADJUDICATOR1=new MagicPermanentActivation(
+            "Ethersworn Adjudicator",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE_WHITE_BLACK.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Destroy") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_WHITE_BLACK)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_ENCHANTMENT,new MagicDestroyTargetPicker(false),
 				MagicEvent.NO_DATA,this,"Destroy target creature or enchantment$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
 				game.doAction(new MagicDestroyAction(permanent));
@@ -766,70 +800,78 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation ETHERSWORN_ADJUDICATOR2=new MagicPermanentActivation("Ethersworn Adjudicator",
-			new MagicCondition[]{MagicCondition.TAPPED_CONDITION,MagicManaCost.TWO_BLUE.getCondition(),new MagicSingleActivationCondition()},
-			new MagicActivationHints(MagicTiming.Tapping),"Untap") {
+	private static final MagicPermanentActivation ETHERSWORN_ADJUDICATOR2=new MagicPermanentActivation(
+            "Ethersworn Adjudicator",
+			new MagicCondition[]{
+                MagicCondition.TAPPED_CONDITION,
+                MagicManaCost.TWO_BLUE.getCondition(),
+                new MagicSingleActivationCondition()},
+			new MagicActivationHints(MagicTiming.Tapping),
+            "Untap") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Untap Ethersworn Adjudicator.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
 		}
 	};
 
 	private static final MagicPermanentActivation FALLEN_ANGEL=new MagicPermanentActivation(
-			"Fallen Angel",new MagicCondition[]{MagicCondition.TWO_CREATURES_CONDITION},new MagicActivationHints(MagicTiming.Pump)) {
+			"Fallen Angel",
+            new MagicCondition[]{MagicCondition.TWO_CREATURES_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Pump"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicSacrificePermanentEvent(source,source.getController(),MagicTargetChoice.SACRIFICE_CREATURE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Fallen Angel gets +2/+1 until end of turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,1));
 		}
 	};
 	
 	private static final MagicPermanentActivation FEMEREF_ARCHERS=new MagicPermanentActivation(
-			"Femeref Archers",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Attack)) {
+			"Femeref Archers",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Attack),
+            "Damage"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING,new MagicDamageTargetPicker(4),
-				new Object[]{source},this,"Femeref Archers deals 4 damage to target attacking creature$ with flying.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING,
+                    new MagicDamageTargetPicker(4),
+                    new Object[]{source},this,"Femeref Archers deals 4 damage to target attacking creature$ with flying.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],creature,4,false);
@@ -839,25 +881,32 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation FIRESLINGER=new MagicPermanentActivation(
-			"Fireslinger",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+			"Fireslinger",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(1),
-				new Object[]{source,player},this,"Fireslinger deals 1 damage to target creature or player$ and 1 damage to you.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(1),
+                    new Object[]{source,player},
+                    this,
+                    "Fireslinger deals 1 damage to target creature or player$ and 1 damage to you.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicSource source=(MagicSource)data[0];
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
@@ -869,17 +918,19 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation FUME_SPITTER=new MagicPermanentActivation("Fume Spitter",null,new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation FUME_SPITTER=new MagicPermanentActivation(
+            "Fume Spitter",
+            null,
+            new MagicActivationHints(MagicTiming.Removal),
+            "-1/-1") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(1,1),
 				MagicEvent.NO_DATA,this,"Put a -1/-1 counter on target creature$.");
 		}
@@ -897,24 +948,30 @@ public class PermanentActivationDefinitions {
 	private static final MagicPermanentActivation FURNACE_WHELP=new MagicPumpActivation("Furnace Whelp",MagicManaCost.RED,1,0);
 
 	private static final MagicPermanentActivation GELECTRODE=new MagicPermanentActivation(
-			"Gelectrode",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+			"Gelectrode",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(1),
-				new Object[]{source},this,"Gelectrode deals 1 damage to target creature or player$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(1),
+                    new Object[]{source},
+                    this,
+                    "Gelectrode deals 1 damage to target creature or player$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
@@ -923,12 +980,15 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation GHOST_COUNCIL_OF_ORZHOVA=new MagicPermanentActivation("Ghost Council of Orzhova",
-			new MagicCondition[]{MagicManaCost.ONE.getCondition(),MagicCondition.TWO_CREATURES_CONDITION},new MagicActivationHints(MagicTiming.Removal,false,1)) {
+	private static final MagicPermanentActivation GHOST_COUNCIL_OF_ORZHOVA=new MagicPermanentActivation(
+            "Ghost Council of Orzhova",
+			new MagicCondition[]{MagicManaCost.ONE.getCondition(),MagicCondition.TWO_CREATURES_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal,false,1),
+            "Exile"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent[]{					
 				new MagicPayManaCostEvent(source,player,MagicManaCost.ONE),
@@ -937,37 +997,35 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),new Object[]{source},this,
 				"Exile Ghost Council of Orzhova. Return it to the battlefield under its owner's control at end of turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicExileUntilEndOfTurnAction((MagicPermanent)data[0]));
 		}
 	};
 	
 	private static final MagicPermanentActivation GLEN_ELENDRA_ARCHMAGE=new MagicPermanentActivation(
-			"Glen Elendra Archmage",new MagicCondition[]{MagicManaCost.BLUE.getCondition()},new MagicActivationHints(MagicTiming.Counter)) {
+			"Glen Elendra Archmage",
+            new MagicCondition[]{MagicManaCost.BLUE.getCondition()},
+            new MagicActivationHints(MagicTiming.Counter),
+            "Counter") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.BLUE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_NONCREATURE_SPELL,
 				MagicEvent.NO_DATA,this,"Counter target noncreature spell$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
 			if (targetSpell!=null) {
 				game.doAction(new MagicCounterItemOnStackAction(targetSpell));
@@ -976,20 +1034,27 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation GOBLIN_ARTILLERY=new MagicPermanentActivation(
-			"Goblin Artillery",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+			"Goblin Artillery",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(2),
-				new Object[]{source,player},this,"Goblin Artillery deals 2 damage to target creature or player$ and 3 damage to you.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(2),
+                    new Object[]{source,player},
+                    this,
+                    "Goblin Artillery deals 2 damage to target creature or player$ and 3 damage to you.");
 		}
 
 		@Override
@@ -1007,34 +1072,41 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation GODSIRE=new MagicPermanentActivation(
-			"Godsire",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Token)) {
+			"Godsire",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Token),
+            "Token") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,new Object[]{player},this,"Put an 8/8 Beast creature token that's red, green and white onto the battlefield.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "Put an 8/8 Beast creature token that's red, green and white onto the battlefield.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.BEAST8_TOKEN_CARD));
 		}
 	};
 	
-	private static final MagicPermanentActivation HATEFLAYER=new MagicPermanentActivation("Hateflayer",
-			new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicManaCost.TWO_RED.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation HATEFLAYER=new MagicPermanentActivation(
+            "Hateflayer",
+			new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicManaCost.TWO_RED.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{
 				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED),
 				new MagicUntapEvent((MagicPermanent)source)};
@@ -1042,14 +1114,18 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(5),
-				new Object[]{source},this,"Hateflayer deals damage equal to its power to target creature or player$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(5),
+                    new Object[]{source},
+                    this,
+                    "Hateflayer deals damage equal to its power to target creature or player$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicPermanent permanent=(MagicPermanent)data[0];
@@ -1059,28 +1135,37 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation HELLKITE_OVERLORD1=new MagicPumpActivation("Hellkite Overlord",MagicManaCost.RED,1,0);
-	private static final MagicPermanentActivation HELLKITE_OVERLORD2=new MagicRegenerationActivation("Hellkite Overlord",MagicManaCost.BLACK_GREEN);
+	private static final MagicPermanentActivation HELLKITE_OVERLORD1 = 
+        new MagicPumpActivation("Hellkite Overlord",MagicManaCost.RED,1,0);
+
+	private static final MagicPermanentActivation HELLKITE_OVERLORD2 =
+        new MagicRegenerationActivation("Hellkite Overlord",MagicManaCost.BLACK_GREEN);
 	
 	private static final MagicPermanentActivation JHESSIAN_BALMGIVER1=new MagicPermanentActivation(
-			"Jhessian Balmgiver",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Pump)) {
+			"Jhessian Balmgiver",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Prevent") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,MagicPreventTargetPicker.getInstance(),
-				MagicEvent.NO_DATA,this,"Prevent the next 1 damage that would be dealt to target creature or player$ this turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
+                    MagicPreventTargetPicker.getInstance(),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Prevent the next 1 damage that would be dealt to target creature or player$ this turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				game.doAction(new MagicPreventDamageAction(target,1));
@@ -1089,24 +1174,24 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation JHESSIAN_BALMGIVER2=new MagicPermanentActivation(
-			"Jhessian Balmgiver",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Attack)) {
+			"Jhessian Balmgiver",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Attack),
+            "Unblockable") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.POS_TARGET_CREATURE,MagicUnblockableTargetPicker.getInstance(),
 				MagicEvent.NO_DATA,this,"Target creature$ is unblockable this turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Unblockable));
@@ -1115,24 +1200,30 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation KABUTO_MOTH=new MagicPermanentActivation(
-			"Kabuto Moth",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Pump)) {
+			"Kabuto Moth",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Pump") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance(),
-				MagicEvent.NO_DATA,this,"Target creature$ gets +1/+2 until end of turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicPumpTargetPicker.getInstance(),
+				    MagicEvent.NO_DATA,
+                    this,
+                    "Target creature$ gets +1/+2 until end of turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicChangeTurnPTAction(creature,1,2));
@@ -1141,17 +1232,18 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation KIKI_JIKI_MIRROR_BREAKER=new MagicPermanentActivation(
-			"Kiki-Jiki, Mirror Breaker",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Token)) {
+			"Kiki-Jiki, Mirror Breaker",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Token),
+            "Copy") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
 				MagicCopyTargetPicker.getInstance(),new Object[]{player},this,
@@ -1161,7 +1253,6 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				final MagicPlayer player=(MagicPlayer)data[0];
@@ -1171,30 +1262,32 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation LORD_OF_SHATTERSKULL_PASS=new MagicLevelUpActivation("Lord of Shatterskull Pass",MagicManaCost.ONE_RED,6);
+	private static final MagicPermanentActivation LORD_OF_SHATTERSKULL_PASS=
+        new MagicLevelUpActivation("Lord of Shatterskull Pass",MagicManaCost.ONE_RED,6);
 		
 	private static final MagicPermanentActivation LOXODON_HIERARCH=new MagicPermanentActivation(
-			"Loxodon Hierarch",new MagicCondition[]{MagicManaCost.GREEN_WHITE.getCondition()},new MagicActivationHints(MagicTiming.Pump)) {
+			"Loxodon Hierarch",
+            new MagicCondition[]{MagicManaCost.GREEN_WHITE.getCondition()},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Regen") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
-			return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.GREEN_WHITE)};
+			return new MagicEvent[]{
+                new MagicPayManaCostSacrificeEvent(source,source.getController(),
+                MagicManaCost.GREEN_WHITE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player},this,"Regenerate each creature you control.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
 			for (final MagicTarget target : targets) {
-				
 				final MagicPermanent permanent=(MagicPermanent)target;
 				if (permanent.canRegenerate()) {
 					game.doAction(new MagicRegenerateAction(permanent));
@@ -1203,25 +1296,31 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation MERFOLK_SEASTALKERS=new MagicPermanentActivation("Merfolk Seastalkers",
-			new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},new MagicActivationHints(MagicTiming.Tapping)) {
+	private static final MagicPermanentActivation MERFOLK_SEASTALKERS=new MagicPermanentActivation(
+            "Merfolk Seastalkers",
+			new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
+            new MagicActivationHints(MagicTiming.Tapping),
+            "Tap") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_WITHOUT_FLYING,new MagicTapTargetPicker(true,false),
-				MagicEvent.NO_DATA,this,"Tap target creature$ without flying.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_WITHOUT_FLYING,
+                    new MagicTapTargetPicker(true,false),
+				    MagicEvent.NO_DATA,
+                    this,
+                    "Tap target creature$ without flying.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null&&!creature.isTapped()) {
 				game.doAction(new MagicTapAction(creature,true));
@@ -1229,43 +1328,43 @@ public class PermanentActivationDefinitions {
 		}
 	};
 		
-	private static final MagicPermanentActivation MIRE_BOA=new MagicRegenerationActivation("Mire Boa",MagicManaCost.GREEN);
+	private static final MagicPermanentActivation MIRE_BOA = 
+        new MagicRegenerationActivation("Mire Boa",MagicManaCost.GREEN);
 
 	private static final class MirrorEntityLocalVariable extends MagicDummyLocalVariable {
 		
 		private final int x;
 		
 		public MirrorEntityLocalVariable(final int x) {
-			
 			this.x=x;
 		}
 
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			pt.power=x;
 			pt.toughness=x;
 		}
 
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-
 			return flags|MagicSubType.ALL_CREATURES;
 		}
 	}
 	
-	private static final MagicPermanentActivation MIRROR_ENTITY=new MagicPermanentActivation("Mirror Entity",
-			new MagicCondition[]{MagicManaCost.X.getCondition()},new MagicActivationHints(MagicTiming.Pump,true,1)) {
+	private static final MagicPermanentActivation MIRROR_ENTITY = new MagicPermanentActivation(
+            "Mirror Entity",
+			new MagicCondition[]{MagicManaCost.X.getCondition()},
+            new MagicActivationHints(MagicTiming.Pump,true,1),
+            "X/X"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final int x=payedCost.getX();
 			return new MagicEvent(source,source.getController(),new Object[]{source,x},this,
 				"Creatures you control become "+x+"/"+x+" and gain all creature types until end of turn.");
@@ -1278,31 +1377,38 @@ public class PermanentActivationDefinitions {
 			final MagicLocalVariable localVariable=new MirrorEntityLocalVariable((Integer)data[1]);
 			final Collection<MagicTarget> creatures=game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
 			for (final MagicTarget creature : creatures) {
-
 				game.doAction(new MagicBecomesCreatureAction((MagicPermanent)creature,localVariable));
 			}
 			game.doAction(new MagicPlayAbilityAction(permanent));
 		}
 	};
 	
-	private static final MagicPermanentActivation MOGG_FANATIC=new MagicPermanentActivation("Mogg Fanatic",null,new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation MOGG_FANATIC=new MagicPermanentActivation(
+            "Mogg Fanatic",
+            null,
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(1),
-				new Object[]{source},this,"Mogg Fanatic deals 1 damage to target creature or player$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(1),
+				    new Object[]{source},
+                    this,
+                    "Mogg Fanatic deals 1 damage to target creature or player$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
@@ -1311,47 +1417,51 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation MORDANT_DRAGON=new MagicPumpActivation("Mordant Dragon",MagicManaCost.ONE_RED,1,0);
+	private static final MagicPermanentActivation MORDANT_DRAGON = 
+        new MagicPumpActivation("Mordant Dragon",MagicManaCost.ONE_RED,1,0);
 	
-	private static final MagicPermanentActivation NANTUKO_SHADE=new MagicPumpActivation("Nantuko Shade",MagicManaCost.BLACK,1,1);
+	private static final MagicPermanentActivation NANTUKO_SHADE = 
+        new MagicPumpActivation("Nantuko Shade",MagicManaCost.BLACK,1,1);
 
-	private static final MagicPermanentActivation NIRKANA_CUTTHROAT=new MagicLevelUpActivation("Nirkana Cutthroat",MagicManaCost.TWO_BLACK,3);
+	private static final MagicPermanentActivation NIRKANA_CUTTHROAT = 
+        new MagicLevelUpActivation("Nirkana Cutthroat",MagicManaCost.TWO_BLACK,3);
 	
 	private static final MagicLocalVariable OMNIBIAN_VARIABLE=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			pt.power=3;
 			pt.toughness=3;
 		}
 
 		@Override
 		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			
-			return 0;
+			return MagicSubType.Frog.getMask() ;
 		}
 	};
 	
 	private static final MagicPermanentActivation OMNIBIAN=new MagicPermanentActivation(
-			"Omnibian",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+			"Omnibian",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Frog") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.TARGET_CREATURE,new MagicBecomeTargetPicker(3,3,false),
-				MagicEvent.NO_DATA,this,"Target creature$ becomes a 3/3 Frog until end of turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.TARGET_CREATURE,
+                    new MagicBecomeTargetPicker(3,3,false),
+                    MagicEvent.NO_DATA,this,"Target creature$ becomes a 3/3 Frog until end of turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicBecomesCreatureAction(creature,OMNIBIAN_VARIABLE));
@@ -1359,18 +1469,19 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation ORACLE_OF_NECTARS=new MagicPermanentActivation("Oracle of Nectars",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.X.getCondition()},new MagicActivationHints(MagicTiming.Draw)) {
+	private static final MagicPermanentActivation ORACLE_OF_NECTARS = new MagicPermanentActivation(
+            "Oracle of Nectars",
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.X.getCondition()},
+            new MagicActivationHints(MagicTiming.Draw),
+            "Life+X") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.X)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final int amount=payedCost.getX();
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player,amount},this,"You gain "+amount+" life.");
@@ -1378,54 +1489,64 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPlayer player=(MagicPlayer)data[0];
 			game.doAction(new MagicChangeLifeAction(player,(Integer)data[1]));
 		}
 	};
 		
-	private static final MagicPermanentActivation PUTRID_LEECH=new MagicPermanentActivation("Putrid Leech",
-			new MagicCondition[]{MagicCondition.ABILITY_ONCE_CONDITION,MagicCondition.TWO_LIFE_CONDITION},new MagicActivationHints(MagicTiming.Pump)) {
+	private static final MagicPermanentActivation PUTRID_LEECH=new MagicPermanentActivation(
+            "Putrid Leech",
+			new MagicCondition[]{MagicCondition.ABILITY_ONCE_CONDITION,MagicCondition.TWO_LIFE_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump),
+            "Pump") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayLifeEvent(source,source.getController(),2),new MagicPlayAbilityEvent(source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Putrid Leech gets +2/+2 until end of turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    new Object[]{source},
+                    this,
+                    "Putrid Leech gets +2/+2 until end of turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			game.doAction(new MagicChangeTurnPTAction(permanent,2,2));
 		}
 	};
 	
 	private static final MagicPermanentActivation QASALI_PRIDEMAGE=new MagicPermanentActivation(
-			"Qasali Pridemage",new MagicCondition[]{MagicManaCost.ONE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+			"Qasali Pridemage",
+            new MagicCondition[]{MagicManaCost.ONE.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Destory") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.ONE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,new MagicDestroyTargetPicker(false),
-				MagicEvent.NO_DATA,this,"Destroy target artifact or enchantment$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                    new MagicDestroyTargetPicker(false),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Destroy target artifact or enchantment$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
 				game.doAction(new MagicDestroyAction(permanent));
@@ -1433,25 +1554,26 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation RAGE_NIMBUS=new MagicPermanentActivation("Rage Nimbus",
-			new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},new MagicActivationHints(MagicTiming.MustAttack)) {
+	private static final MagicPermanentActivation RAGE_NIMBUS=new MagicPermanentActivation(
+            "Rage Nimbus",
+			new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},
+            new MagicActivationHints(MagicTiming.MustAttack),
+            "Attacks"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,MagicMustAttackTargetPicker.getInstance(),
 				MagicEvent.NO_DATA,this,"Target creature$ attacks this turn if able.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				game.doAction(new MagicSetAbilityAction((MagicPermanent)target,MagicAbility.AttacksEachTurnIfAble));
@@ -1459,12 +1581,14 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation RAKDOS_GUILDMAGE1=new MagicPermanentActivation("Rakdos Guildmage",
-			new MagicCondition[]{MagicCondition.HAS_CARD_CONDITION,MagicManaCost.THREE_BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal,true)) {
+	private static final MagicPermanentActivation RAKDOS_GUILDMAGE1=new MagicPermanentActivation(
+            "Rakdos Guildmage",
+			new MagicCondition[]{MagicCondition.HAS_CARD_CONDITION,MagicManaCost.THREE_BLACK.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal,true),
+            "-2/-2") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{
 				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_BLACK),
 				new MagicDiscardEvent(source,source.getController(),1,false)
@@ -1473,14 +1597,18 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(2,2),
-				MagicEvent.NO_DATA,this,"Target creature$ gets -2/-2 until end of turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicWeakenTargetPicker(2,2),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Target creature$ gets -2/-2 until end of turn.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicChangeTurnPTAction(creature,-2,-2));
@@ -1489,17 +1617,18 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation RAKDOS_GUILDMAGE2=new MagicPermanentActivation(
-			"Rakdos Guildmage",new MagicCondition[]{MagicManaCost.THREE_RED.getCondition()},new MagicActivationHints(MagicTiming.Token,true)) {
+			"Rakdos Guildmage",
+            new MagicCondition[]{MagicManaCost.THREE_RED.getCondition()},
+            new MagicActivationHints(MagicTiming.Token,true),
+            "Token") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_RED)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player},this,
 				"Put a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at end of turn.");
@@ -1507,7 +1636,6 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPlayer player=(MagicPlayer)data[0];
 			final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.GOBLIN2_TOKEN_CARD,player);
 			game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.REMOVE_AT_END_OF_TURN));
@@ -1515,66 +1643,67 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation RAVENOUS_BALOTH=new MagicPermanentActivation(
-			"Ravenous Baloth",new MagicCondition[]{MagicCondition.CONTROL_BEAST_CONDITION},new MagicActivationHints(MagicTiming.Pump,true)) {
+			"Ravenous Baloth",
+            new MagicCondition[]{MagicCondition.CONTROL_BEAST_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump,true),
+            "Life+4") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicSacrificePermanentEvent(source,source.getController(),MagicTargetChoice.SACRIFICE_BEAST)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player},this,"You gain 4 life.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
 		}
 	};
 	
-	private static final MagicPermanentActivation RIVER_BOA=new MagicRegenerationActivation("River Boa",MagicManaCost.GREEN);
+	private static final MagicPermanentActivation RIVER_BOA = 
+        new MagicRegenerationActivation("River Boa",MagicManaCost.GREEN);
 	
 	private static final MagicPermanentActivation SCATTERSHOT_ARCHER=new MagicPermanentActivation(
-			"Scattershot Archer",new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},new MagicActivationHints(MagicTiming.Removal)) {
+			"Scattershot Archer",
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal),
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),new Object[]{source},this,
 				"Scattershot Archer deals 1 damage to each creature with flying.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final Collection<MagicTarget> targets=game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_WITH_FLYING);
 			for (final MagicTarget target : targets) {
-				
 				final MagicDamage damage=new MagicDamage(permanent,target,1,false);
 				game.doAction(new MagicDealDamageAction(damage));
 			}
 		}
 	};
 	
-	private static final MagicPermanentActivation SIEGE_GANG_COMMANDER=new MagicPermanentActivation("Siege-Gang Commander",
+	private static final MagicPermanentActivation SIEGE_GANG_COMMANDER=new MagicPermanentActivation(
+            "Siege-Gang Commander",
 			new MagicCondition[]{MagicManaCost.ONE_RED.getCondition(),MagicCondition.CONTROL_GOBLIN_CONDITION},
-			new MagicActivationHints(MagicTiming.Removal,true)) {
+			new MagicActivationHints(MagicTiming.Removal,true),
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent[]{					
 				new MagicPayManaCostEvent(source,player,MagicManaCost.ONE_RED),
@@ -1583,14 +1712,12 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(2),
 				new Object[]{source},this,"Siege-Gang Commander deals 2 damage to target creature or player$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
@@ -1601,11 +1728,11 @@ public class PermanentActivationDefinitions {
 	
 	private static final MagicPermanentActivation SILKBIND_FAERIE=new MagicPermanentActivation("Silkbind Faerie",
 			new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicManaCost.ONE_WHITE_OR_BLUE.getCondition()},
-			new MagicActivationHints(MagicTiming.Tapping)) {
+			new MagicActivationHints(MagicTiming.Tapping),
+            "Tap") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{
 				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_WHITE_OR_BLUE),
 				new MagicUntapEvent((MagicPermanent)source)};
@@ -1613,14 +1740,18 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,new MagicTapTargetPicker(true,false),
-				MagicEvent.NO_DATA,this,"Tap target creature$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicTapTargetPicker(true,false),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Tap target creature$.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null&&!creature.isTapped()) {
 				game.doAction(new MagicTapAction(creature,true));
@@ -1628,15 +1759,17 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation SILVOS_ROGUE_ELEMENTAL=new MagicRegenerationActivation("Silvos, Rogue Elemental",MagicManaCost.GREEN);
+	private static final MagicPermanentActivation SILVOS_ROGUE_ELEMENTAL=
+        new MagicRegenerationActivation("Silvos, Rogue Elemental",MagicManaCost.GREEN);
 
-	private static final MagicPermanentActivation SKELETAL_VAMPIRE1=new MagicPermanentActivation("Skeletal Vampire",
+	private static final MagicPermanentActivation SKELETAL_VAMPIRE1=new MagicPermanentActivation(
+            "Skeletal Vampire",
 			new MagicCondition[]{MagicManaCost.THREE_BLACK_BLACK.getCondition(),MagicCondition.CONTROL_BAT_CONDITION},
-			new MagicActivationHints(MagicTiming.Token,true)) {
+			new MagicActivationHints(MagicTiming.Token,true),
+            "Token") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent[]{					
 				new MagicPayManaCostEvent(source,player,MagicManaCost.THREE_BLACK_BLACK),
@@ -1645,93 +1778,99 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player},this,"Put two 1/1 black Bat creature tokens with flying onto the battlefield.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicPlayer player=(MagicPlayer)data[0];
 			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.BAT_TOKEN_CARD));
 			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.BAT_TOKEN_CARD));			
 		}
 	};
 
-	private static final MagicPermanentActivation SHIVAN_DRAGON=new MagicPumpActivation("Shivan Dragon",MagicManaCost.RED,1,0);
+	private static final MagicPermanentActivation SHIVAN_DRAGON = 
+        new MagicPumpActivation("Shivan Dragon",MagicManaCost.RED,1,0);
 	
-	private static final MagicPermanentActivation SKELETAL_VAMPIRE2=new MagicPermanentActivation("Skeletal Vampire",
-			new MagicCondition[]{MagicCondition.CAN_REGENERATE_CONDITION,MagicCondition.CONTROL_BAT_CONDITION,new MagicSingleActivationCondition()},
-			new MagicActivationHints(MagicTiming.Pump)) {
+	private static final MagicPermanentActivation SKELETAL_VAMPIRE2=new MagicPermanentActivation(
+            "Skeletal Vampire",
+			new MagicCondition[]{
+                MagicCondition.CAN_REGENERATE_CONDITION,
+                MagicCondition.CONTROL_BAT_CONDITION,
+                new MagicSingleActivationCondition()},
+			new MagicActivationHints(MagicTiming.Pump),
+            "Regen") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicSacrificePermanentEvent(source,source.getController(),MagicTargetChoice.SACRIFICE_BAT)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Regenerate Skeletal Vampire.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicRegenerateAction((MagicPermanent)data[0]));
 		}
 	};
 	
 	private static final MagicPermanentActivation SKITHIRYX1=new MagicGainActivation(
-			"Skithiryx, the Blight Dragon",MagicManaCost.BLACK,MagicAbility.Haste,new MagicActivationHints(MagicTiming.FirstMain,false,1));
+			"Skithiryx, the Blight Dragon",
+            MagicManaCost.BLACK,
+            MagicAbility.Haste,
+            new MagicActivationHints(MagicTiming.FirstMain,false,1)
+            );
 	
-	private static final MagicPermanentActivation SKITHIRYX2=new MagicRegenerationActivation("Skithiryx, the Blight Dragon",MagicManaCost.BLACK_BLACK);
+	private static final MagicPermanentActivation SKITHIRYX2=
+        new MagicRegenerationActivation("Skithiryx, the Blight Dragon",MagicManaCost.BLACK_BLACK);
 	
 	private static final MagicPermanentActivation SPHINX_OF_MAGOSI=new MagicPermanentActivation(
-			"Sphinx of Magosi",new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},new MagicActivationHints(MagicTiming.Draw)) {
+			"Sphinx of Magosi",
+            new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
+            new MagicActivationHints(MagicTiming.Draw),
+            "Draw") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(source,player,new Object[]{player,source},this,"Draw a card, then put a +1/+1 counter on Magosi Sphinx.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
 			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));
 		}
 	};
 	
 	private static final MagicPermanentActivation SPIKETAIL_HATCHLING=new MagicPermanentActivation(
-			"Spiketail Hatchling",null,new MagicActivationHints(MagicTiming.Counter)) {
+			"Spiketail Hatchling",
+            null,
+            new MagicActivationHints(MagicTiming.Counter),
+            "Counter") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_SPELL,
 				new Object[]{source},this,"Counter target spell$ unless its controller pays {1}.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
 			if (targetSpell!=null) {
 				game.addEvent(new MagicCounterUnlessEvent((MagicSource)data[0],targetSpell,MagicManaCost.ONE));
@@ -1739,21 +1878,22 @@ public class PermanentActivationDefinitions {
 		}
 	};
 
-	private static final MagicPermanentActivation SPIRITMONGER1=new MagicRegenerationActivation("Spiritmonger",MagicManaCost.BLACK);
+	private static final MagicPermanentActivation SPIRITMONGER1 = 
+        new MagicRegenerationActivation("Spiritmonger",MagicManaCost.BLACK);
 
-	private static final MagicPermanentActivation SPIRITMONGER2=new MagicPermanentActivation(
-			"Spiritmonger",new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
-			new MagicActivationHints(MagicTiming.Pump,false,1)) {
+	private static final MagicPermanentActivation SPIRITMONGER2 = new MagicPermanentActivation(
+			"Spiritmonger",
+            new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
+			new MagicActivationHints(MagicTiming.Pump,false,1),
+            "Color") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
 		}
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-
 			return new MagicEvent(source,source.getController(),MagicColorChoice.BLUE_RED_WHITE_INSTANCE,new Object[]{source},this,
 				"Spiritmonger becomes the color$ of your choice until end of turn.");
 		}
