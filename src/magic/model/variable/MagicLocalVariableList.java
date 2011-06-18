@@ -7,12 +7,9 @@ public class MagicLocalVariableList extends ArrayList<MagicLocalVariable> {
 
 	private static final long serialVersionUID = 1L;
 	
-	public MagicLocalVariableList() {
-		
-	}
+	public MagicLocalVariableList() {}
 	
 	public MagicLocalVariableList(final Collection<MagicLocalVariable> localVariables) {
-		
 		addAll(localVariables);
 	}
 }
