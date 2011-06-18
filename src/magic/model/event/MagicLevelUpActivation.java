@@ -16,8 +16,13 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
 	private final MagicManaCost cost;
 	
 	public MagicLevelUpActivation(final String name,final MagicManaCost cost,final int maximum) {
-		
-		super(name,new MagicCondition[]{MagicCondition.SORCERY_CONDITION,new MaximumCondition(maximum),cost.getCondition()},ACTIVATION_HINTS);
+		super(
+            name,
+            new MagicCondition[]{
+                MagicCondition.SORCERY_CONDITION,
+                new MaximumCondition(maximum),cost.getCondition()},
+            ACTIVATION_HINTS,
+            "Level");
 		this.cost=cost;
 	}
 	

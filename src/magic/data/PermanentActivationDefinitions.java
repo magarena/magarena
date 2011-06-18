@@ -114,8 +114,14 @@ public class PermanentActivationDefinitions {
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,new MagicTapTargetPicker(true,false),
-				MagicEvent.NO_DATA,this,"Tap target creature$ with flying.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
+                    new MagicTapTargetPicker(true,false),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Tap target creature$ with flying.");
 		}
 
 		@Override
@@ -245,7 +251,7 @@ public class PermanentActivationDefinitions {
 			"Bottle Gnomes",
             null,
             new MagicActivationHints(MagicTiming.Removal),
-            "Sac"
+            "Sacrifice"
             ) {
 
 		@Override
@@ -492,7 +498,11 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation CURSECATCHER=new MagicPermanentActivation(
-			"Cursecatcher",null,new MagicActivationHints(MagicTiming.Counter)) {
+			"Cursecatcher",
+            null,
+            new MagicActivationHints(MagicTiming.Counter),
+            "Sacrifice"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -518,7 +528,11 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation DAUNTLESS_ESCORT=new MagicPermanentActivation(
-			"Dauntless Escort",null,new MagicActivationHints(MagicTiming.Pump)) {
+			"Dauntless Escort",
+            null,
+            new MagicActivationHints(MagicTiming.Pump),
+            "Sacrifice"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -545,7 +559,11 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation DEATHLESS_ANGEL=new MagicPermanentActivation(
-			"Deathless Angel",new MagicCondition[]{MagicManaCost.WHITE_WHITE.getCondition()},new MagicActivationHints(MagicTiming.Pump,true)) {
+			"Deathless Angel",
+            new MagicCondition[]{MagicManaCost.WHITE_WHITE.getCondition()},
+            new MagicActivationHints(MagicTiming.Pump,true),
+            "Indestr"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -570,8 +588,12 @@ public class PermanentActivationDefinitions {
 		}
 	};
 	
-	private static final MagicPermanentActivation DRANA_KALASTRIA_BLOODCHIEF=new MagicPermanentActivation("Drana, Kalastria Bloodchief",
-			new MagicCondition[]{MagicManaCost.X_BLACK_BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+	private static final MagicPermanentActivation DRANA_KALASTRIA_BLOODCHIEF=new MagicPermanentActivation(
+            "Drana, Kalastria Bloodchief",
+			new MagicCondition[]{MagicManaCost.X_BLACK_BLACK.getCondition()},
+            new MagicActivationHints(MagicTiming.Removal),
+            "-0/-X"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -606,7 +628,9 @@ public class PermanentActivationDefinitions {
 	
 	private static final MagicPermanentActivation ECHO_MAGE2=new MagicPermanentActivation("Echo Mage",
 			new MagicCondition[]{MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
-			new MagicActivationHints(MagicTiming.Spell)) {
+			new MagicActivationHints(MagicTiming.Spell),
+            "Copy"
+            ) {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -641,7 +665,7 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation EMBER_HAULER=new MagicPermanentActivation("Ember Hauler",
-			new MagicCondition[]{MagicManaCost.ONE.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+			new MagicCondition[]{MagicManaCost.ONE.getCondition()},new MagicActivationHints(MagicTiming.Removal),"Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -668,7 +692,7 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation ESPER_BATTLEMAGE1=new MagicPermanentActivation("Esper Battlemage",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.WHITE.getCondition()},new MagicActivationHints(MagicTiming.Pump)) {
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.WHITE.getCondition()},new MagicActivationHints(MagicTiming.Pump),"Prevent") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -691,7 +715,7 @@ public class PermanentActivationDefinitions {
 	};
 
 	private static final MagicPermanentActivation ESPER_BATTLEMAGE2=new MagicPermanentActivation("Esper Battlemage",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal),"-1/-1") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -717,7 +741,7 @@ public class PermanentActivationDefinitions {
 	};
 	
 	private static final MagicPermanentActivation ETHERSWORN_ADJUDICATOR1=new MagicPermanentActivation("Ethersworn Adjudicator",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE_WHITE_BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal)) {
+			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE_WHITE_BLACK.getCondition()},new MagicActivationHints(MagicTiming.Removal),"Destroy") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -744,7 +768,7 @@ public class PermanentActivationDefinitions {
 
 	private static final MagicPermanentActivation ETHERSWORN_ADJUDICATOR2=new MagicPermanentActivation("Ethersworn Adjudicator",
 			new MagicCondition[]{MagicCondition.TAPPED_CONDITION,MagicManaCost.TWO_BLUE.getCondition(),new MagicSingleActivationCondition()},
-			new MagicActivationHints(MagicTiming.Tapping)) {
+			new MagicActivationHints(MagicTiming.Tapping),"Untap") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
