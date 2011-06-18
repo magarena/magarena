@@ -293,9 +293,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition BEAST8_TOKEN_CARD=new MagicCardDefinition("Beast","Beast8") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(5);
 			addType(MagicType.Creature);
@@ -311,9 +309,7 @@ public class TokenCardDefinitions {
 	};	
 
 	public static final MagicCardDefinition ELEPHANT_TOKEN_CARD=new MagicCardDefinition("Elephant") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(3);
 			addType(MagicType.Creature);
@@ -327,9 +323,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition GERM_TOKEN_CARD=new MagicCardDefinition("Germ") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -343,9 +337,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition ZOMBIE_TOKEN_CARD=new MagicCardDefinition("Zombie") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(2);
 			addType(MagicType.Creature);
@@ -359,9 +351,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition ZOMBIE_GIANT_TOKEN_CARD=new MagicCardDefinition("Zombie Giant") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(4);
 			addType(MagicType.Creature);
