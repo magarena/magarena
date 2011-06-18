@@ -289,6 +289,12 @@ public class MCTSAI implements MagicAI {
     }
                
     private boolean checkNode(final MCTSGameTree curr, List<Object[]> choices) {
+        for (int i = 0; i < choices.size(); i++) {
+            final String checkStr = obj2String(choices.get(i)[0]);
+            if (!curr.choicesStr[i].equals(checkStr)) {
+                return false;
+            }
+        }
         for (MCTSGameTree child : curr) {
             final String checkStr = obj2String(choices.get(child.getChoice())[0]);
             if (!child.desc.equals(checkStr)) {
@@ -338,9 +344,14 @@ public class MCTSAI implements MagicAI {
              choices = getNextChoices(game, curr == root, false)) {
 
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
+            
             assert !curr.hasDetails() || curr.getMaxChildren() == choices.size() : 
                 "ERROR! Capacity of node is " + curr.getMaxChildren() + ", number of choices is " + choices.size() 
-                 + printPath(path) + printNode(curr, choices);
+                + printPath(path) + printNode(curr, choices);
+            
+            assert !curr.hasDetails() || checkNode(curr, choices) : 
+                "ERROR! Inconsistent node found" + 
+                printPath(path) + printNode(curr, choices);
           
             final MagicEvent event = game.getNextEvent();
            
@@ -378,9 +389,6 @@ public class MCTSAI implements MagicAI {
 
                 assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game" + 
                     printPath(path) + printNode(curr, choices); 
-                
-                assert checkNode(curr, choices) : "ERROR! Inconsistent node found" + 
-                    printPath(path) + printNode(curr, choices);
 
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
