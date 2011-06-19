@@ -75,13 +75,11 @@ public class MagicEvent implements MagicCopyable {
 
 	@Override
 	public MagicCopyable create() {
-
 		return new MagicEvent();
 	}
 	
 	@Override
 	public void copy(final MagicCopyMap copyMap,final MagicCopyable copySource) {
-
 		final MagicEvent sourceEvent=(MagicEvent)copySource;
 		source=(MagicSource)copyMap.copyObject(sourceEvent.source);
 		player=copyMap.copy(sourceEvent.player);
@@ -194,7 +192,7 @@ public class MagicEvent implements MagicCopyable {
         return "EVENT: " + player.getIndex() + " " + description + " " + (choice != null ? choice.getDescription() : "null");
     }
 
-    public int getEventId() {
-        return toString().hashCode();
+    public long getEventId() {
+        return source.getId() + action.hashCode();
     }
 }
