@@ -101,6 +101,7 @@ public class MurmurHash3 {
     * @param seed random value
     * @return 128 bit hashed key, in an array containing two longs
     */
+   @SuppressWarnings("fallthrough")
    public static long[] MurmurHash3_x64_128(final byte[] key, final int seed) {
       State state = new State();
 
