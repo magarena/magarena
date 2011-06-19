@@ -52,7 +52,8 @@ public class MagicCombatCreature {
 	}
 	
 	public void setAttacker(final MagicGame game,final Set<MagicCombatCreature> blockers) {
-		final SortedSet<MagicCombatCreature> candidateBlockersSet=new TreeSet<MagicCombatCreature>(new BlockerComparator(this));
+		final SortedSet<MagicCombatCreature> candidateBlockersSet = 
+            new TreeSet<MagicCombatCreature>(new BlockerComparator(this));
 		for (final MagicCombatCreature blocker : blockers) {
 			if (blocker.permanent.canBlock(game,permanent)) {
 				candidateBlockersSet.add(blocker);
