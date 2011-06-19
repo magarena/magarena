@@ -6,19 +6,19 @@ public enum MagicPermanentState {
 	Summoned("summoned","{n}"),
 	DoesNotUntap("doesn't untap during its controller's next untap step","{s}"),
 	Regenerated("regenerated","{r}"),
-	CannotBeRegenerated("can't be regenerated","{cr}"),
+	CannotBeRegenerated("can't be regenerated","{~r}"),
 	Attacking("attacking","{c}"),
 	Blocking("blocking","{c}"),
 	Blocked("blocked","{b}"),
 	Animated("animated","{A}"), // until end of turn
 	SacrificeAtEndOfTurn("sacrifice at end of turn","{S}"),
-	RemoveAtEndOfTurn("remove from game at end of turn","{R}"),
-	RemoveAtEndOfYourTurn("remove from game at end of your turn","{R}"),
+	RemoveAtEndOfTurn("remove from game at end of turn","{E}"),
+	RemoveAtEndOfYourTurn("remove from game at end of your turn","{E}"),
 	ExcludeManaSource("exclude as mana source",null),
 	ExcludeFromCombat("exclude from combat",null),
 	Kicked("kicked",null),
 	Destroyed("destroyed",null),
-	ReturnToOwnerAtEndOfTurn("return to owner at end of turn",null),
+	ReturnToOwnerAtEndOfTurn("return to owner at end of turn","{R}"),
 	;
 
 	public static final int CLEANUP_MASK=
