@@ -3,17 +3,17 @@ package magic.model;
 public enum MagicPermanentState {
 	
 	Tapped("tapped","{T}"),
-	Summoned("summoned",null),
+	Summoned("summoned","{n}"),
 	DoesNotUntap("doesn't untap during its controller's next untap step","{s}"),
 	Regenerated("regenerated","{r}"),
-	CannotBeRegenerated("can't be regenerated",null),
+	CannotBeRegenerated("can't be regenerated","{cr}"),
 	Attacking("attacking","{c}"),
 	Blocking("blocking","{c}"),
 	Blocked("blocked","{b}"),
 	Animated("animated","{A}"), // until end of turn
-	SacrificeAtEndOfTurn("sacrifice at end of turn",null),
-	RemoveAtEndOfTurn("remove from game at end of turn",null),
-	RemoveAtEndOfYourTurn("remove from game at end of your turn",null),
+	SacrificeAtEndOfTurn("sacrifice at end of turn","{S}"),
+	RemoveAtEndOfTurn("remove from game at end of turn","{R}"),
+	RemoveAtEndOfYourTurn("remove from game at end of your turn","{R}"),
 	ExcludeManaSource("exclude as mana source",null),
 	ExcludeFromCombat("exclude from combat",null),
 	Kicked("kicked",null),
