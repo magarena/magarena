@@ -193,6 +193,8 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public long getEventId() {
-        return source.getId() + action.hashCode();
+        return (player != null ? player.getIndex() : 1) +
+               (source != null ? source.getId() : 10) +
+               (action != null ? action.hashCode() : 100);
     }
 }
