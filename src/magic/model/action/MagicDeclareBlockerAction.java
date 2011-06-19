@@ -12,14 +12,12 @@ public class MagicDeclareBlockerAction extends MagicAction {
 	private boolean unblocked;
 	
 	public MagicDeclareBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
-		
 		this.attacker=attacker;
 		this.blocker=blocker;
 	}
 
 	@Override
 	public void doAction(final MagicGame game) {
-
 		attacker.addBlockingCreature(blocker);
 		blocker.setBlockedCreature(attacker);
 		blocker.setState(MagicPermanentState.Blocking);
@@ -32,7 +30,6 @@ public class MagicDeclareBlockerAction extends MagicAction {
 	
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		attacker.removeBlockingCreature(blocker);
 		blocker.setBlockedCreature(null);
 		blocker.clearState(MagicPermanentState.Blocking);

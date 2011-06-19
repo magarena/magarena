@@ -20,7 +20,6 @@ public class MagicDeclareAttackersAction extends MagicAction {
 	public void doAction(final MagicGame game) {
 		oldAttackers=player.getNrOfAttackers();
 		player.setNrOfAttackers(result.size());
-		
 		for (final MagicPermanent attacker : result) {
 			game.doAction(new MagicDeclareAttackerAction(attacker));
 		}		
