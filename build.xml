@@ -20,7 +20,8 @@
   <!-- build - Compile sources and copy resources to build directory -->
   <target depends="init" name="build">
     <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" destdir="build" source="${source}" target="${target}">
-      <src path="src"/>
+        <src path="src"/>
+        <compilerarg value="-Xlint"/>
     </javac>
     <copy includeemptydirs="false" todir="build">
       <fileset dir="resources">
