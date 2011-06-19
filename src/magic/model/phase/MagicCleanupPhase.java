@@ -12,26 +12,21 @@ public class MagicCleanupPhase extends MagicPhase {
 	private static final MagicPhase INSTANCE=new MagicCleanupPhase();
 	
 	private MagicCleanupPhase() {
-		
 		super(MagicPhaseType.Cleanup);	
 	}
 	
 	public static MagicPhase getInstance() {
-		
 		return INSTANCE;
 	}
 	
 	private void cleanup(final MagicGame game) {
-
 		game.doAction(new MagicCleanupTurnTriggersAction());
 		for (final MagicPlayer player : game.getPlayers()) {
-			
 			game.doAction(new MagicCleanupPlayerAction(player));
 		}
 	}
 	
 	private void nextTurn(final MagicGame game) {
-
 		MagicPlayer turnPlayer=game.getTurnPlayer();
 		if (turnPlayer.getExtraTurns()>0) {
 			game.doAction(new MagicChangeExtraTurnsAction(turnPlayer,-1));
@@ -49,7 +44,6 @@ public class MagicCleanupPhase extends MagicPhase {
 	
 	@Override
 	public void executeBeginStep(final MagicGame game) {
-
 		cleanup(game);
 		nextTurn(game);
 		game.setStep(MagicStep.NextPhase);
