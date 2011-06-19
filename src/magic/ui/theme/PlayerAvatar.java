@@ -23,8 +23,8 @@ public class PlayerAvatar {
             mediumIcon=new ImageIcon(mediumImage);
             final Image smallImage=image.getScaledInstance(SMALL_SIZE,SMALL_SIZE,Image.SCALE_SMOOTH);
             smallIcon=new ImageIcon(smallImage);
-        } catch (Error err) {
-
+        } catch (final Throwable th) {
+            System.err.println("WARNING. Unable to load player avatar");
         }
 	}
 	

@@ -39,12 +39,10 @@ public class AvatarImages {
 	}
 	
 	public Vector<String> getNames() {
-		
 		return names;
 	}
 	
 	private PlayerAvatar loadAvatar(final File file) {
-		
 		BufferedImage image;
 		try {
 			final InputStream stream=new FileInputStream(file);
