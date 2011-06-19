@@ -194,10 +194,10 @@ public class MagicEvent implements MagicCopyable {
 
     public long getEventId() {
         long[] keys = {
-            (player != null ? player.getIndex() : 1),
-            (source != null ? source.getId() : 10),
-            (action != null ? action.hashCode() : 100),
-            (data[0] instanceof MagicTarget) ? ((MagicTarget)data[0]).getId() : 1000,
+            (player != null ? player.getIndex() : 7),
+            (source != null ? source.getId() : 7),
+            (action != null ? action.hashCode() : 7),
+            (data.length > 0 && data[0] instanceof MagicTarget) ? ((MagicTarget)data[0]).getId() : 7,
         };
         return magic.MurmurHash3.hash(keys);
     }
