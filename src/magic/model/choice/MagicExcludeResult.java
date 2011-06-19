@@ -30,7 +30,6 @@ public class MagicExcludeResult implements MagicMappable {
 	public Object map(final MagicGame game) {
 		final List<MagicPermanent> mappedExcludePermanents=new ArrayList<MagicPermanent>();
 		for (final MagicPermanent excludePermanent : excludePermanents) {
-			
 			mappedExcludePermanents.add((MagicPermanent)excludePermanent.map(game));
 		}
 		return new MagicExcludeResult(mappedExcludePermanents,excludeFlags);
