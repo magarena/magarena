@@ -50,14 +50,12 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int windbriskRaptor;
 	
 	private int getOtherCount(final int cardDefinitionIndex,final MagicPermanent permanent,final int count) {
-		
-		return permanent.getCardDefinition().getIndex()!=cardDefinitionIndex?count:count-1;
+		return permanent.getCardDefinition().getIndex() != cardDefinitionIndex ? count : count - 1;
 	}
 	
 	private int getOtherCount(final int cardDefinitionIndex,final MagicPermanent permanent,final MagicPlayer controller) {
-
-		final int count=controller.getCount(cardDefinitionIndex);
-		return count==0?0:getOtherCount(cardDefinitionIndex,permanent,count);
+		final int count = controller.getCount(cardDefinitionIndex);
+		return count == 0 ? 0 : getOtherCount(cardDefinitionIndex,permanent,count);
 	}
 
 	@Override
@@ -76,67 +74,68 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		}
 
 		// Power or toughness increase.
-		pt.toughness+=controller.getCount(angelicShield);
-		pt.toughness+=getOtherCount(veteranArmorer,permanent,controller);
-		int count=controller.getCount(gloryOfWarfare);
-		if (count>0) {
+		pt.toughness += controller.getCount(angelicShield);
+		pt.toughness += getOtherCount(veteranArmorer,permanent,controller);
+		int count = controller.getCount(gloryOfWarfare);
+		if (count > 0) {
 			if (game.hasTurn(controller)) {
-				pt.power+=count*2;
+				pt.power += count * 2;
 			} else {
-				pt.toughness+=count*2;
+				pt.toughness += count * 2;
 			}
 		}
-		pt.power-=opponent.getCount(cumberStone);
+		pt.power -= opponent.getCount(cumberStone);
 		
 		// Power and toughness increase.
-		int both=permanent.getCounters(MagicCounterType.PlusOne)-permanent.getCounters(MagicCounterType.MinusOne);
+		int both = permanent.getCounters(MagicCounterType.PlusOne)-permanent.getCounters(MagicCounterType.MinusOne);
 
-		both+=controller.getCount(eldraziMonument);
-		both+=controller.getCount(gloriousAnthem);
-		count=controller.getCount(captainOfTheWatch);
-		if (count>0&&permanent.hasSubType(MagicSubType.Soldier)) {
-			both+=getOtherCount(captainOfTheWatch,permanent,count);
+		both += controller.getCount(eldraziMonument);
+		both += controller.getCount(gloriousAnthem);
+
+		count = controller.getCount(captainOfTheWatch);
+		if (count > 0 && permanent.hasSubType(MagicSubType.Soldier)) {
+			both += getOtherCount(captainOfTheWatch,permanent,count);
 		}
-		count=controller.getCount(goblinChieftain);
-		if (count>0&&permanent.hasSubType(MagicSubType.Goblin)) {
-			both+=getOtherCount(goblinChieftain,permanent,count);
+		count = controller.getCount(goblinChieftain);
+		if (count > 0 && permanent.hasSubType(MagicSubType.Goblin)) {
+			both += getOtherCount(goblinChieftain,permanent,count);
 		}
 		count=controller.getCount(knightExemplar);
-		if (count>0&&permanent.hasSubType(MagicSubType.Knight)) {
-			both+=getOtherCount(knightExemplar,permanent,count);
+		if (count > 0 && permanent.hasSubType(MagicSubType.Knight)) {
+			both += getOtherCount(knightExemplar,permanent,count);
 		}
-		count=controller.getCount(eleshNorn);
-		both+=getOtherCount(eleshNorn,permanent,count)*2;
-		both-=opponent.getCount(eleshNorn)*2;
+		count = controller.getCount(eleshNorn);
+		both += getOtherCount(eleshNorn,permanent,count) * 2;
+		both -= opponent.getCount(eleshNorn) * 2;
 	
 		final int colorFlags=permanent.getColorFlags();
 		if (MagicColor.Black.hasColor(colorFlags)) {
-			both+=getOtherCount(creakwoodLiege,permanent,controller);
-			both+=getOtherCount(deathbringerLiege,permanent,controller);
-			both+=getOtherCount(glenElendraLiege,permanent,controller);
+			both += getOtherCount(creakwoodLiege,permanent,controller);
+			both += getOtherCount(deathbringerLiege,permanent,controller);
+			both += getOtherCount(glenElendraLiege,permanent,controller);
 		}
 		if (MagicColor.Blue.hasColor(colorFlags)) {
-			both+=getOtherCount(glenElendraLiege,permanent,controller);
-			both+=getOtherCount(murkfiendLiege,permanent,controller);
+			both += getOtherCount(glenElendraLiege,permanent,controller);
+			both += getOtherCount(murkfiendLiege,permanent,controller);
 		}
 		if (MagicColor.Green.hasColor(colorFlags)) {
-			both+=getOtherCount(boartuskLiege,permanent,controller);
-			both+=getOtherCount(creakwoodLiege,permanent,controller);
-			both+=getOtherCount(murkfiendLiege,permanent,controller);
-			both+=getOtherCount(tolsimirWolfblood,permanent,controller);			
+			both += getOtherCount(boartuskLiege,permanent,controller);
+			both += getOtherCount(creakwoodLiege,permanent,controller);
+			both += getOtherCount(murkfiendLiege,permanent,controller);
+			both += getOtherCount(tolsimirWolfblood,permanent,controller);			
 		}
 		if (MagicColor.Red.hasColor(colorFlags)) {
-			both+=getOtherCount(boartuskLiege,permanent,controller);
-			both+=getOtherCount(balefireLiege,permanent,controller);
+			both += getOtherCount(boartuskLiege,permanent,controller);
+			both += getOtherCount(balefireLiege,permanent,controller);
 		}
 		if (MagicColor.White.hasColor(colorFlags)) {
-			both+=getOtherCount(balefireLiege,permanent,controller);
-			both+=getOtherCount(deathbringerLiege,permanent,controller);
-			both+=getOtherCount(tolsimirWolfblood,permanent,controller);
+			both += getOtherCount(balefireLiege,permanent,controller);
+			both += getOtherCount(deathbringerLiege,permanent,controller);
+			both += getOtherCount(tolsimirWolfblood,permanent,controller);
 		}
 		
-		pt.power+=both;
-		pt.toughness+=both;
+		pt.power += both;
+		pt.toughness += both;
 	}
 	
 	@Override
@@ -197,7 +196,6 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 
 	@Override
 	public int getSubTypeFlags(final MagicPermanent permanent,int flags) {
-		
 		if (permanent.getCardDefinition().hasAbility(MagicAbility.Changeling)) {
 			return flags|MagicSubType.ALL_CREATURES;
 		}		
@@ -205,12 +203,10 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	}
 	
 	public static final MagicLocalVariable getInstance() {
-		
 		return INSTANCE;
 	}
 	
 	public static void initializeCardDefinitions() {
-
 		final CardDefinitions definitions=CardDefinitions.getInstance();
 		akromasMemorial=definitions.getCard("Akroma's Memorial").getIndex();
 		angelicShield=definitions.getCard("Angelic Shield").getIndex();

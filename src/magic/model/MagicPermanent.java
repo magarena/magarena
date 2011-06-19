@@ -338,7 +338,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 		final MagicPowerToughness pt=new MagicPowerToughness(cardDefinition.getPower(),cardDefinition.getToughness());
 		for (final MagicLocalVariable localVariable : localVariables) {
-			
 			localVariable.getPowerToughness(game,this,pt);
 		}		
 		if (turn) {

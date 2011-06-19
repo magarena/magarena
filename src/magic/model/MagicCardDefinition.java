@@ -416,37 +416,30 @@ public class MagicCardDefinition {
 	}
 
 	public void setPower(final int power) {
-		
 		this.power = power;
 	}
 
 	public int getPower() {
-
 		return power;
 	}
 	
 	public void setToughness(final int toughness) {
-		
 		this.toughness = toughness;
 	}
 	
 	public int getToughness() {
-		
 		return toughness;
 	}		
 	
 	public void setVariablePT() {
-		
 		turnLocalVariableIndex=1;
 	}
 	
 	public int getTurnLocalVariableIndex() {
-		
 		return turnLocalVariableIndex;
 	}
 	
 	public void setAbility(final MagicAbility ability) {
-		
 		abilityFlags|=ability.getMask();
 		if (ability==MagicAbility.Exalted) {
 			addTrigger(MagicExaltedTrigger.getInstance());
@@ -456,47 +449,38 @@ public class MagicCardDefinition {
 	}
 
 	public long getAbilityFlags() {
-		
 		return abilityFlags;
 	}
 	
 	public boolean hasAbility(final MagicAbility ability) {
-		
 		return ability.hasAbility(abilityFlags);
 	}
 	
 	public void setStaticType(final MagicStaticType staticType) {
-
 		this.staticType=staticType;
 	}
 	
 	public MagicStaticType getStaticType() {
-		
 		return staticType;
 	}
 	
 	public void setTiming(final MagicTiming timing) {
-		
 		this.timing=timing;
 	}
 	
 	public MagicTiming getTiming() {
-		
 		return timing;
 	}
 				
 	public MagicLocalVariable getAttachmentLocalVariable() {
-		
 		return attachmentLocalVariable;
 	}
 	
 	public void addLocalVariable(final MagicLocalVariable localVariable) {
-
 		localVariables.add(localVariable);
 	}
 	
 	public List<MagicLocalVariable> getLocalVariables() {
-		
 		if (localVariables.isEmpty()) {
 			return DEFAULT_LOCAL_VARIABLES;
 		} else {
@@ -505,17 +489,14 @@ public class MagicCardDefinition {
 	}
 	
 	public void setCardEvent(final MagicCardEvent cardEvent) {
-		
 		this.cardEvent=cardEvent;
 	}
 	
 	public MagicCardEvent getCardEvent() {
-		
 		return cardEvent;
 	}
 
 	public MagicActivationHints getActivationHints() {
-		
 		return new MagicActivationHints(timing,true,0);
 	}
 	
@@ -528,7 +509,6 @@ public class MagicCardDefinition {
 	}
 		
 	public void addTrigger(final MagicTrigger trigger) {
-
 		switch (trigger.getType()) {
 			case WhenComesIntoPlay:
 				comeIntoPlayTriggers.add(trigger);
@@ -543,52 +523,42 @@ public class MagicCardDefinition {
 	}
 	
 	public Collection<MagicTrigger> getTriggers() {
-		
 		return triggers;
 	}
 	
 	public Collection<MagicTrigger> getComeIntoPlayTriggers() {
-		
 		return comeIntoPlayTriggers;
 	}
 	
 	public Collection<MagicTrigger> getPutIntoGraveyardTriggers() {
-		
 		return putIntograveyardTriggers;
 	}
 	
 	public void addActivation(final MagicPermanentActivation activation) {
-		
 		activations.add(activation);
 	}
 	
 	public Collection<MagicActivation> getActivations() {
-		
 		return activations;
 	}
 	
 	public void addManaActivation(final MagicManaActivation activation) {
-		
 		manaActivations.add(activation);
 	}
 	
 	public Collection<MagicManaActivation> getManaActivations() {
-		
 		return manaActivations;
 	}
 	
 	public void setExcludeManaOrCombat() {
-		
 		excludeManaOrCombat=true;
 	}
 	
 	public boolean hasExcludeManaOrCombat() {
-		
 		return excludeManaOrCombat;
 	}
 	
 	public ImageIcon getIcon() {
-		
 		if (isLand()) {
 			return IconImages.LAND; 
 		} else if (isCreature()) {

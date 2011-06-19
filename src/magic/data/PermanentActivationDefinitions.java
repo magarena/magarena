@@ -1370,11 +1370,14 @@ public class PermanentActivationDefinitions {
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+		public void executeEvent(final MagicGame game,final MagicEvent event,
+                final Object[] data,final Object[] choiceResults) {
 
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicLocalVariable localVariable=new MirrorEntityLocalVariable((Integer)data[1]);
-			final Collection<MagicTarget> creatures=game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			final Collection<MagicTarget> creatures=game.filterTargets(
+                    permanent.getController(),
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
 			for (final MagicTarget creature : creatures) {
 				game.doAction(new MagicBecomesCreatureAction((MagicPermanent)creature,localVariable));
 			}
