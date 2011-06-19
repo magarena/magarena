@@ -257,7 +257,7 @@ public class GameController {
                     }
                 }
             });
-        } catch (Error err) {
+        } catch (final Throwable th) {
             //there will be an error if X windows is not present on Linux
         }
 	}

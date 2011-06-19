@@ -263,7 +263,6 @@ public class IconImages {
     }
 	
 	private static ImageIcon loadAnimatedIcon(final String name) {
-		
 		try {
 			final byte data[]=new byte[1<<16];
 			int size=0;
@@ -277,10 +276,8 @@ public class IconImages {
 				size+=len;
 			}			
 			return new ImageIcon(Arrays.copyOf(data,size));
-		} catch (final Exception ex) {
+		} catch (final Throwable th) {
 			return MISSING2;
-		} catch (final Error er) {
-            return MISSING2;
-        }
+		} 
 	}
 }
