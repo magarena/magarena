@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import magic.model.event.MagicActivation;
 
-public interface MagicSource extends MagicCopyable,MagicMappable {
+public interface MagicSource extends MagicCopyable, MagicMappable {
 
 	public MagicCardDefinition getCardDefinition();
 	

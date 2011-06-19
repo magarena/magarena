@@ -24,7 +24,6 @@ public abstract class MagicPhase {
 	protected void executeEndOfPhase(final MagicGame game) {}
 	
 	public void executePhase(final MagicGame game) {
-
 		switch (game.getStep()) {
 			case Begin:
 				executeBeginStep(game);

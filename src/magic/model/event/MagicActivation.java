@@ -70,7 +70,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     
     public void setCardDefinition(final MagicCardDefinition cdef) {
         this.cardDefinition = cdef;
-        this.id=(this.cardDefinition.getIndex()<<16)+index;
+        this.id = (cdef.getIndex() << 16) + index;
     }
 		
 	public final MagicCondition[] getConditions() {
@@ -120,18 +120,18 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
            ) {
 			return false;
 		}
-		if (conditions!=null) {
+		if (conditions != null) {
 			for (final MagicCondition condition : conditions) {
 				if (!condition.accept(game,source)) {
 					return false;
 				}
 			}
 		}
-		if (targetChoice==null) {
+		if (targetChoice == null) {
 			return true;
 		}
 		// Check for legal targets.
-		final boolean useTargetHints=useHints||GeneralConfig.getInstance().getSmartTarget();
+		final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
 		return game.hasLegalTargets(player,source,targetChoice,useTargetHints);
 	}
 	
