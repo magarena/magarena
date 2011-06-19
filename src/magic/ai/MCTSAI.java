@@ -366,6 +366,7 @@ public class MCTSAI implements MagicAI {
             if (!found && curr != root && curr.isAI()) {
                 found = true;
                 if (!curr.isCached()) {
+                    printPath(path);
                     addNode(game, curr);
                 }
             }
