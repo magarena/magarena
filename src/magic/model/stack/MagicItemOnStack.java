@@ -144,8 +144,11 @@ public abstract class MagicItemOnStack implements MagicTarget {
 		return source!=this.source;
 	}
 
-    public long getEventId() {
-        return event.getEventId();
+    public long getItemId() {
+        return 
+            event.getEventId() +
+            ((choiceResults.length > 0 && choiceResults[0] instanceof MagicTarget) ? 
+                ((MagicTarget)choiceResults[0]).getId() : 7);
     }
 
 	public abstract boolean isSpell();
