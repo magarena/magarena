@@ -113,7 +113,6 @@ public class MagicGame {
 		logMessageBuilder=new MagicLogMessageBuilder(this);
 		payedCost=new MagicPayedCost();
 		changePhase(gameplay.getStartPhase(this));
-
 	}
 	
 	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
@@ -133,6 +132,7 @@ public class MagicGame {
 		this.step=game.step;
 		this.landPlayed=game.landPlayed;
 		this.priorityPassed=game.priorityPassed;
+        this.priorityPassedCount=game.priorityPassedCount;
 		this.stateCheckRequired=game.stateCheckRequired;
 		
         //copied and stored in copyMap
@@ -188,8 +188,8 @@ public class MagicGame {
     public long getGameId() {
 		keys = new long[] { 
             turn,
-            phase.getType().ordinal(),
-            step.ordinal(),
+            phase.hashCode(),
+            step.hashCode(),
             turnPlayer.getIndex(),
             landPlayed,
             priorityPassedCount,
