@@ -206,6 +206,20 @@ public class MagicGame {
         };
 		return magic.MurmurHash3.hash(keys);
     }
+
+    public String toString() {
+        return "t=" + turn + " " + 
+               "p=" + phase.getType() + " " + 
+               "s=" + step + " " + 
+               "tp=" + turnPlayer.getIndex() + " " +
+               "lp=" + landPlayed + " " +
+               "ppc=" + priorityPassedCount + " " +
+               "pp=" + priorityPassed + " " +
+               "sc=" + stateCheckRequired + " " +
+               "x=" + getPayedCost().getX() + " " +
+               "e=" + events.size() + " " +
+               "s=" + stack.size();
+    }
     
     public String getIdString() {
         StringBuffer sb = new StringBuffer();

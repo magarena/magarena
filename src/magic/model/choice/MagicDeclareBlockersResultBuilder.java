@@ -173,7 +173,6 @@ public class MagicDeclareBlockersResultBuilder {
 	}
 
 	public Collection<Object> buildResults() {
-
 		// Caching for better speed and immediate mode for triggers.
 		game.setImmediate(true);
 		attackingPlayer.setCached(game,true);
@@ -183,6 +182,6 @@ public class MagicDeclareBlockersResultBuilder {
 		game.setImmediate(false);
 		attackingPlayer.setCached(game,false);
 		defendingPlayer.setCached(game,false);
-		return results==null?EMPTY_RESULT:results.getResults();
+		return results == null ? EMPTY_RESULT : results.getResults();
 	}
 }
