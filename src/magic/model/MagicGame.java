@@ -113,6 +113,7 @@ public class MagicGame {
 		logMessageBuilder=new MagicLogMessageBuilder(this);
 		payedCost=new MagicPayedCost();
 		changePhase(gameplay.getStartPhase(this));
+
 	}
 	
 	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
@@ -150,7 +151,7 @@ public class MagicGame {
        
         //construct a new object
         this.turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
-    
+   
         //the following are NOT copied when game state is cloned
 	
         //score is RESET to zero
@@ -195,8 +196,8 @@ public class MagicGame {
             (priorityPassed ? 9999 : 1111),
             (stateCheckRequired ? 9999 : 1111),
             getPayedCost().getX(),
-            stack.size(),
-            events.size(),
+            stack.getItemsId(),
+            events.getEventsId(),
             identifiers[0],
             identifiers[1],
             identifiers[2],
@@ -541,7 +542,7 @@ public class MagicGame {
         builder.append('.');
         logBook.add(new MagicMessage(this,player,builder.toString()));
 	}
-	
+
 	public void executeEvent(final MagicEvent event,final Object choiceResults[]) {
         assert choiceResults != null : "ERROR! choiceResults is null in executeEvent";
         
