@@ -107,7 +107,6 @@ public class PermanentActivationDefinitions {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE)};
 		}
 

@@ -147,8 +147,11 @@ public class MagicTargetChoice extends MagicChoice {
 	private final boolean targeted;
 	private final MagicTargetHint targetHint;
 	
-	public MagicTargetChoice(final MagicTargetFilter targetFilter,final boolean targeted,final MagicTargetHint hint,final String targetDesciption) {
-		
+	public MagicTargetChoice(
+            final MagicTargetFilter targetFilter,
+            final boolean targeted,
+            final MagicTargetHint hint,
+            final String targetDesciption) {
 		super("Choose "+targetDesciption+'.');
 		this.targetDescription=targetDesciption;
 		this.targetFilter=targetFilter;
@@ -157,39 +160,36 @@ public class MagicTargetChoice extends MagicChoice {
 	}
 	
 	public final String getTargetDescription() {
-		
 		return targetDescription;
 	}
 
 	public final MagicTargetFilter getTargetFilter() {
-		
 		return targetFilter;
 	}
 	
 	public final boolean isTargeted() {
-		
 		return targeted;
 	}
 
 	public final MagicTargetHint getTargetHint(final boolean hints) {
-
 		return hints?targetHint:MagicTargetHint.None;
 	}
 	
 	@Override
 	public final MagicTargetChoice getTargetChoice() {
-
 		return this;
 	}
 
 	@Override
-	public final boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+	public final boolean hasOptions(final MagicGame game,final MagicPlayer player,
+            final MagicSource source,final boolean hints) {
 
 		return game.hasLegalTargets(player,source,this,hints);
 	}
 	
 	@Override
-	public final Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	public final Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,
+            final MagicPlayer player,final MagicSource source) {
 
 		final Collection<Object> targets=game.getLegalTargets(player,source,this,targetHint);
 		if (game.getFastChoices()) {
@@ -199,7 +199,8 @@ public class MagicTargetChoice extends MagicChoice {
 	}
 
 	@Override
-	public final Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+	public final Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,
+            final MagicPlayer player,final MagicSource source) {
 
 		controller.disableActionButton(false);		
 		controller.showMessage(source,getDescription());
