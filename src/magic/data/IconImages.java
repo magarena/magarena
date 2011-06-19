@@ -165,10 +165,10 @@ public class IconImages {
 			final BufferedImage image=ImageIO.read(inputStream);
 			inputStream.close();
 			return image;
-		} catch (final Exception ex) {
-            System.err.println("ERROR! unable to load icon " + name);
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
+		} catch (final Throwable th) {
+            System.err.println("WARNING! unable to load icon " + name);
+            System.err.println(th.getMessage());
+            //th.printStackTrace();
 			return null;
 		}
 	}
@@ -179,10 +179,10 @@ public class IconImages {
 		ImageIcon icon = null;
         try {
             icon = new ImageIcon(image);
-        } catch (Error err) {
-            System.err.println("ERROR! unable to load icon " + name);
-            System.err.println(err.getMessage());
-            err.printStackTrace();
+        } catch (final Throwable th) {
+            System.err.println("WARNING! unable to load icon " + name);
+            System.err.println(th.getMessage());
+            //th.printStackTrace();
         }
         return image != null ? icon : MISSING2;
 	}
