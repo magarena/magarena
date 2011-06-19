@@ -23,4 +23,6 @@ public interface MagicSource extends MagicCopyable, MagicMappable {
 	public boolean hasAbility(final MagicGame game,final MagicAbility ability);	
 	
 	public Collection<MagicActivation> getActivations();
+
+    public long getId();
 }
