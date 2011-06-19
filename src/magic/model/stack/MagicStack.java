@@ -111,7 +111,7 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
         int idx = 0;
         long[] input = new long[size() + 1];
         for (MagicItemOnStack item : this) {
-            input[idx] = item.getId();
+            input[idx] = item.getEventId();
             idx++;
         }
         return magic.MurmurHash3.hash(input);

@@ -77,4 +77,8 @@ public class MagicTargetNone implements MagicTarget {
 	public static final MagicTarget getInstance() {
 		return INSTANCE;
 	}
+
+    public long getId() {
+        return hashCode();
+    }
 }

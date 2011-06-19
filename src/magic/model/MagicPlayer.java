@@ -158,6 +158,10 @@ public class MagicPlayer implements MagicTarget {
 	public int getIndex() {
 		return index;
 	}
+
+    public long getId() {
+        return index;
+    }
 	
 	public void setState(final MagicPlayerState state) {
 		stateFlags|=state.getMask();

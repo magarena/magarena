@@ -85,7 +85,6 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	public boolean containsInChoiceResults(final MagicPermanent permanent) {
 		if (choiceResults!=null) {
 			for (final Object choiceResult : choiceResults) {
-				
 				if (choiceResult==permanent) {
 					return true;
 				}
@@ -144,6 +143,10 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
 		return source!=this.source;
 	}
+
+    public long getEventId() {
+        return event.getEventId();
+    }
 
 	public abstract boolean isSpell();
 

@@ -23,4 +23,6 @@ public interface MagicTarget extends MagicCopyable, MagicMappable {
 	public void setPreventDamage(int amount);
 	
 	public boolean isValidTarget(final MagicGame game,final MagicSource source);
+
+    public long getId();
 }
