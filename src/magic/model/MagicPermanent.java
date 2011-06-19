@@ -654,12 +654,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public boolean canAttack(final MagicGame game) {
-
-		if (!isCreature()||!canTap(game)||hasState(MagicPermanentState.ExcludeFromCombat)) {
+		if (!isCreature() || 
+            !canTap(game) || 
+            hasState(MagicPermanentState.ExcludeFromCombat)) {
 			return false;
 		}
 		final long flags=getAllAbilityFlags(game);
-		return !MagicAbility.CannotAttackOrBlock.hasAbility(flags)&&!MagicAbility.Defender.hasAbility(flags);
+		return !MagicAbility.CannotAttackOrBlock.hasAbility(flags) && !MagicAbility.Defender.hasAbility(flags);
 	}
 	
 	public boolean canBeBlocked(final MagicGame game,final MagicPlayer player) {
