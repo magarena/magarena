@@ -119,3 +119,7 @@ decks/mf_%.dec: scripts/dailyhtml2dec.awk
 # Top Decks 1 - 147
 decks/td_%.dec: scripts/dailyhtml2dec.awk
 	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/td/$* | awk -f $^ > $@
+
+ref/rules.txt:
+	curl http://www.wizards.com/magic/comprules/MagicCompRules_20110617.txt | fmt -s > $@
+	flip -u $@
