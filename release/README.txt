@@ -45,8 +45,10 @@ Thank you for your support and have fun!
 
 Release 1.15 (June 20, 2011)
 ============
-- 916 cards in all cube
-- added standard, extended and legacy cube
+- 916 cards in total
+- added standard cube (303 cards)
+- added extended cube (557 cards)
+- added legacy cube (915 cards, all except Skullclamp)
 
 - added Tectonic Edge
 - added Flashfreeze
