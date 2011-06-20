@@ -125,8 +125,8 @@ public class MagicPlayChoice extends MagicChoice {
         //skip single choice except during declare blockers phase and stack is empty so that
         //user can observe the final combat sitation before damage is delt
         if (validChoices.isEmpty() && 
-            game.canSkipSingleChoice() &&
-            !(game.isPhase(MagicPhaseType.DeclareBlockers) && game.getStack().isEmpty())) {
+            game.canSkipSingleChoice()) {
+            //!(game.isPhase(MagicPhaseType.DeclareBlockers) && game.getStack().isEmpty())) {
             if (!game.getStack().isEmpty()) {
                 try {
                      Thread.sleep(1000);
