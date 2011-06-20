@@ -213,7 +213,8 @@ public class MagicGame {
     }
 
     public String toString() {
-        return "t=" + turn + " " + 
+        return "GAME: " +
+               "t=" + turn + " " + 
                "p=" + phase.getType() + " " + 
                "s=" + step + " " + 
                "tp=" + turnPlayer.getIndex() + " " +
