@@ -59,6 +59,7 @@ M1.%:
 			Magarena-1.$*/Magarena
 	cp \
 			release/mods/felt_theme.zip \
+			release/mods/*.txt \
 			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 

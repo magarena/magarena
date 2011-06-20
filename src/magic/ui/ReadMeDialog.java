@@ -4,7 +4,9 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JScrollBar;
 import javax.swing.JTextArea;
+import javax.swing.SwingUtilities;
 
 import magic.data.ReadMeFile;
 
@@ -35,7 +37,15 @@ public class ReadMeDialog extends JDialog {
 		
 		readMeScrollPane = new JScrollPane(readMeTextArea);
 		readMeScrollPane.setSize(this.getSize().width-5,this.getSize().height);
-		readMePanel.add(readMeScrollPane,BorderLayout.CENTER);	
+
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run()
+            {
+                readMeScrollPane.getVerticalScrollBar().setValue(0);              
+            }           
+        }); 
+
+		readMePanel.add(readMeScrollPane,BorderLayout.CENTER);
 		
 		this.add(readMePanel);
 		this.setVisible(true);	
