@@ -228,7 +228,7 @@ public class MagicGame {
     }
     
     public String getIdString() {
-        StringBuffer sb = new StringBuffer();
+        StringBuffer sb = new StringBuffer(toString());
         sb.append('\n');
         sb.append(keys[0]);
         for (int i = 1; i < keys.length; i++) {
