@@ -123,13 +123,13 @@ public class MagicGame {
         //copy the reference, these are singletons
 		this.tournament=game.tournament;
 		this.gameplay=game.gameplay;
-
-        //copying primitives, array of primitive
-		this.identifiers=Arrays.copyOf(game.identifiers,MagicIdentifierType.NR_OF_IDENTIFIERS);
-        this.turn=game.turn;
-		this.startTurn=game.startTurn;
 		this.phase=game.phase;
 		this.step=game.step;
+
+        //copying primitives, array of primitive
+		this.identifiers=Arrays.copyOf(game.identifiers,game.identifiers.length);
+        this.turn=game.turn;
+		this.startTurn=game.startTurn;
 		this.landPlayed=game.landPlayed;
 		this.priorityPassed=game.priorityPassed;
         this.priorityPassedCount=game.priorityPassedCount;
@@ -141,6 +141,7 @@ public class MagicGame {
 		this.scorePlayer=copyMap.copy(scorePlayer);
 		this.visiblePlayer=copyMap.copy(game.visiblePlayer);
 		this.turnPlayer=copyMap.copy(game.turnPlayer);
+        //this.losingPlayer
 		
         //construct a new object using copyMap to copy internals
         this.events=new MagicEventQueue(copyMap, game.events);
@@ -153,6 +154,10 @@ public class MagicGame {
         this.turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
    
         //the following are NOT copied when game state is cloned
+        //fastChoices
+        //immediate
+        //skipTurn
+        //mainPhaseCount
 	
         //score is RESET to zero
 		this.score=0;
