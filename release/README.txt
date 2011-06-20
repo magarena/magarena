@@ -17,10 +17,16 @@ Magarena supports the following keyboard shortcuts :
   F1 or M key : show or hide game messages
 
 Selecting the AI to play against:
-The desired AI can be selected in the preferences (Arena -> Preferences).
-Default is MiniMax. AI difficulty level for the best balance of speed and
-strength is the default 6.  The Vegas AI should be fast on all difficulty
-levels. The MCTS AI is considered experimental but it is also the strongest.
+  The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
+
+  Default is MiniMax. AI difficulty level for the best balance of speed and
+  strength is the default 6.
+
+  The Monte Carlo AI spends at most N seconds to consider each move, where N is
+  the AI difficulty level. It is the strongest AI available, however it cheats
+  as it has knowledge of all cards in the game.
+
+  The Vegas AI should be fast on all difficulty levels. 
 
 Thanks to
   ubeefx for creating such a great game
@@ -32,14 +38,15 @@ Thanks to
   pedro1973 for creating new themes  (http://www.slightlymagic.net/forum/viewforum.php?f=89)
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
+  Rachel for help in resolving a number of issues from the project page
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
 
-Release 1.15 (June QQQ, 2011)
+Release 1.15 (June 20, 2011)
 ============
-- 60X cards in default cube
-- 90X cards in all cube (includes those in default)
+- 916 cards in all cube
+- added standard, extended and legacy cube
 
 - added Tectonic Edge
 - added Flashfreeze
@@ -49,6 +56,13 @@ Release 1.15 (June QQQ, 2011)
 - added Spell Pierce
 - added Sphere of the Suns
 - added Celestial Purge
+- added Mox Opal
+- added Signal Pest
+- added Negate
+- added Mark of Mutiny
+- added Explore
+- added Nature's Claim
+
 - reduce the number of passes needed if you have the skip single option
   preference enabled (item on the stack is shown for 1s before resolving)
 - changed default height and width of the application window to be 1024x600
@@ -56,7 +70,19 @@ Release 1.15 (June QQQ, 2011)
 - fixed Vines of Vastwood so that if you target an opponent's creature, the
   opponent cannot target the creature (previously Vines of Vastwood prevents
   the opponent of the controller of the creature from targetting it)
-
+- fixed implementation of first strike, so that triggers may occur after
+  dealing first strike damage and before regular damage is dealt (fixes issue
+  11: "Double Strike creature that leaves play after first strike still deals
+  regular damage (Dread bug)")
+- state-based actions are carried out simultaneously instead of one permanent
+  at a time (fixes issue 7: "Problem in interaction between 704.3/704.5g and
+  613.4")
+- fixed card pic for spirit token
+- added cancel button to download images dialog, not it is possible to stop
+  downloading
+- add this README.txt to the game's help menu
+- added caching to Monte Carlo Tree Search AI so that simulations performed
+  for one decision can be reused when computing the next decision
 
 Release 1.14 (May 28, 2011)
 ============
