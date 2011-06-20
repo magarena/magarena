@@ -145,10 +145,16 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	}
 
     public long getItemId() {
-        return 
-            event.getEventId() +
+        final long[] keys = {
+            event.getEventId(),
             ((choiceResults.length > 0 && choiceResults[0] instanceof MagicTarget) ? 
-                ((MagicTarget)choiceResults[0]).getId() : 7);
+                ((MagicTarget)choiceResults[0]).getId() : -1L),
+            ((choiceResults.length > 1 && choiceResults[1] instanceof MagicTarget) ? 
+                ((MagicTarget)choiceResults[1]).getId() : -1L),
+            ((choiceResults.length > 2 && choiceResults[2] instanceof MagicTarget) ? 
+                ((MagicTarget)choiceResults[2]).getId() : -1L),
+        };
+        return magic.MurmurHash3.hash(keys);
     }
 
 	public abstract boolean isSpell();
