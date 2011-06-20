@@ -83,6 +83,8 @@ Release 1.15 (June 20, 2011)
 - add this README.txt to the game's help menu
 - added caching to Monte Carlo Tree Search AI so that simulations performed
   for one decision can be reused when computing the next decision
+- evaluated the AIs with different parameters, results available at
+  http://code.google.com/p/magarena/wiki/AIStrength
 
 Release 1.14 (May 28, 2011)
 ============
