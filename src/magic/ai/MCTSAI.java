@@ -106,7 +106,7 @@ public class MCTSAI implements MagicAI {
         final long gid = game.getGameId();
         cache.put(gid, node);
         node.setCached();
-        //log("ADDED: " + game.getIdString());
+        log("ADDED: " + game.getIdString());
     }
 
     private MCTSGameTree getNode(final MagicGame game, List<Object[]> rootChoices) {
@@ -114,14 +114,14 @@ public class MCTSAI implements MagicAI {
         MCTSGameTree candidate = cache.get(gid);
         
         if (candidate != null) { 
-            //log("CACHE HIT");
-            //log("HIT  : " + game.getIdString());
-            //printNode(candidate, rootChoices);
+            log("CACHE HIT");
+            log("HIT  : " + game.getIdString());
+            printNode(candidate, rootChoices);
             return candidate;
         } else {
-            //log("CACHE MISS");
-            //log("MISS : " + game.getIdString());
-            //printNode(candidate, rootChoices);
+            log("CACHE MISS");
+            log("MISS : " + game.getIdString());
+            printNode(candidate, rootChoices);
             return new MCTSGameTree(-1, -1, -1);
         }
     }
@@ -141,6 +141,10 @@ public class MCTSAI implements MagicAI {
             final MagicGame startGame, 
             final MagicPlayer scorePlayer) {
 
+        boolean isAssert = false;
+    
+        assert isAssert = true;
+
         final MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
         final MagicEvent event = choiceGame.getNextEvent();
         final List<Object[]> rootChoices = event.getArtificialChoiceResults(choiceGame);
@@ -159,9 +163,9 @@ public class MCTSAI implements MagicAI {
         //ArtificialLevel = number of seconds to run MCTSAI
         //debugging: max time is 1 billion, max sim is 500
         //normal   : max time is 1000 * str, max sim is 1 billion
-        final int MAXTIME = System.getProperty("debug") != null ?
+        final int MAXTIME = isAssert ?
             1000000000 : 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
-        final int MAXSIM = System.getProperty("debug") != null ? 
+        final int MAXSIM = isAssert ? 
             500 : 1000000000;
         final long STARTTIME = System.currentTimeMillis();
        

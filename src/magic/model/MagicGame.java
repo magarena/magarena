@@ -257,8 +257,9 @@ public class MagicGame {
         //pass priority during declare blockers if AI is not blocking and nothing else to do
 		return GeneralConfig.getInstance().getSkipSingle() &&
             !(isPhase(MagicPhaseType.DeclareBlockers) && 
-              turnPlayer.getIndex() == 0 && 
-              getOpponent(turnPlayer).getNrOfBlockers() > 0);
+              turnPlayer.getIndex() == 0 &&
+              getOpponent(turnPlayer).getNrOfBlockers() > 0 &&
+              stack.isEmpty());
 	}
 	
 	public boolean canSkipSingleManaChoice() {

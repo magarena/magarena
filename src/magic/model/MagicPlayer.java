@@ -142,12 +142,10 @@ public class MagicPlayer implements MagicTarget {
 	
 	@Override
 	public String toString() {
-		
 		return playerDefinition.getName();
 	}
 	
 	public MagicActivationMap getActivationMap() {
-		
 		return activationMap;
 	}
 			
@@ -160,7 +158,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 
     public long getId() {
-        return index;
+        return 1000000000L + index;
     }
 	
 	public void setState(final MagicPlayerState state) {

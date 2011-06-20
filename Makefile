@@ -1,4 +1,5 @@
-JAVA=java -ea -Xms256M -Xmx256M -Ddebug=true 
+JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true 
+JAVA=java -Xms256M -Xmx256M -Ddebug=true 
 SHELL=/bin/bash
 BUILD=build
 JOPTS=-Xlint:all -d $(BUILD) -cp $(BUILD):.
@@ -92,7 +93,7 @@ jar: $(MAG)
 # bug with invalid nodes 
 bug: 11.jar
 
-%.jar: $(MAG)
+%.game: $(MAG)
 	$(JAVA) -DrndSeed=$* -jar $^ |& tee $*.log
 
 test: $(MAG)
