@@ -106,7 +106,7 @@ public class MCTSAI implements MagicAI {
         final long gid = game.getGameId();
         cache.put(gid, node);
         node.setCached();
-        log("ADDED: " + game.getIdString());
+        //log("ADDED: " + game.getIdString());
     }
 
     private MCTSGameTree getNode(final MagicGame game, List<Object[]> rootChoices) {
@@ -114,14 +114,14 @@ public class MCTSAI implements MagicAI {
         MCTSGameTree candidate = cache.get(gid);
         
         if (candidate != null) { 
-            log("CACHE HIT");
-            log("HIT  : " + game.getIdString());
-            printNode(candidate, rootChoices);
+            //log("CACHE HIT");
+            //log("HIT  : " + game.getIdString());
+            //printNode(candidate, rootChoices);
             return candidate;
         } else {
-            log("CACHE MISS");
-            log("MISS : " + game.getIdString());
-            printNode(candidate, rootChoices);
+            //log("CACHE MISS");
+            //log("MISS : " + game.getIdString());
+            //printNode(candidate, rootChoices);
             return new MCTSGameTree(-1, -1, -1);
         }
     }
