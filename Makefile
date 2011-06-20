@@ -93,7 +93,7 @@ jar: $(MAG)
 # bug with invalid nodes 
 bug: 11.jar
 
-%.game: $(MAG)
+%.g: $(MAG)
 	$(JAVA) -DrndSeed=$* -jar $^ |& tee $*.log
 
 test: $(MAG)
