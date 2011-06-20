@@ -90,10 +90,12 @@ public class MagicPlayChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
+        //always pass draw and begin combat option
 		if (game.canAlwaysPass()) {
 			return PASS_CHOICE_RESULTS;
 		} 
-        
+       
+        //skip all combat phases if nobody is attacking
         if ((game.isPhase(MagicPhaseType.DeclareAttackers) ||
              game.isPhase(MagicPhaseType.DeclareBlockers) ||
              game.isPhase(MagicPhaseType.CombatDamage) ||
@@ -102,12 +104,29 @@ public class MagicPlayChoice extends MagicChoice {
             game.getOpponent(player).getNrOfAttackers() == 0) {
 			return PASS_CHOICE_RESULTS;
         }
+
+        //skip is phase is combat damage, not supposed to be able to do
+        //anything but resolve triggers
+        if (game.isPhase(MagicPhaseType.CombatDamage)) {
+            if (!game.getStack().isEmpty()) {
+                try {
+                     Thread.sleep(1000);
+                } catch (final Exception err) {
+
+                }
+            }
+			return PASS_CHOICE_RESULTS;
+        }
+
 		
 		final Set<Object> validChoices;
         validChoices=getValidChoices(game,player);
-		
-        if ((game.isPhase(MagicPhaseType.CombatDamage)) ||
-            (validChoices.isEmpty() && game.canSkipSingleChoice())) {
+	
+        //skip single choice except during declare blockers phase and stack is empty so that
+        //user can observe the final combat sitation before damage is delt
+        if (validChoices.isEmpty() && 
+            game.canSkipSingleChoice() &&
+            !(game.isPhase(MagicPhaseType.DeclareBlockers) && game.getStack().isEmpty())) {
             if (!game.getStack().isEmpty()) {
                 try {
                      Thread.sleep(1000);
