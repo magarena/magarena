@@ -63,7 +63,8 @@ public class MCTSAI implements MagicAI {
     private static final int MAX_ACTIONS = 10000;
 
     private final boolean LOGGING;
-	private final boolean CHEAT;
+    private final boolean CHEAT;
+    private boolean ASSERT;
     private final List<Integer> LENS = new LinkedList<Integer>();
     
     //higher C -> more exploration less exploitation
@@ -78,6 +79,9 @@ public class MCTSAI implements MagicAI {
     public MCTSAI() {
         //no logging, cheats
         this(false, true);
+        
+        ASSERT = false;
+        assert ASSERT = true;
     }
 
     public MCTSAI(final boolean printLog, final boolean cheat) {
@@ -141,9 +145,6 @@ public class MCTSAI implements MagicAI {
             final MagicGame startGame, 
             final MagicPlayer scorePlayer) {
 
-        boolean isAssert = false;
-    
-        assert isAssert = true;
 
         final MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
         final MagicEvent event = choiceGame.getNextEvent();
@@ -163,9 +164,9 @@ public class MCTSAI implements MagicAI {
         //ArtificialLevel = number of seconds to run MCTSAI
         //debugging: max time is 1 billion, max sim is 500
         //normal   : max time is 1000 * str, max sim is 1 billion
-        final int MAXTIME = isAssert ?
+        final int MAXTIME = ASSERT ?
             1000000000 : 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
-        final int MAXSIM = isAssert ? 
+        final int MAXSIM = ASSERT ? 
             500 : 1000000000;
         final long STARTTIME = System.currentTimeMillis();
        
