@@ -130,11 +130,11 @@ public class MagicPlayChoice extends MagicChoice {
 
                 }
             }
-            //if AI blocks, don't skip this
+            //if AI blocks, don't skip priority so that user can observe how the AI is blocking
             if (game.isPhase(MagicPhaseType.DeclareBlockers) && 
                 game.getOpponent(player).getNrOfBlockers() > 0 && 
                 game.getStack().isEmpty()) {
-                //contine
+                //continue to let user observe the combat state
             } else {
     			return PASS_CHOICE_RESULTS;
             }
