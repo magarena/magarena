@@ -122,11 +122,7 @@ public class MagicPlayChoice extends MagicChoice {
 		final Set<Object> validChoices;
         validChoices=getValidChoices(game,player);
 	
-        //skip single choice except during declare blockers phase and stack is empty so that
-        //user can observe the final combat sitation before damage is delt
-        if (validChoices.isEmpty() && 
-            game.canSkipSingleChoice()) {
-            //!(game.isPhase(MagicPhaseType.DeclareBlockers) && game.getStack().isEmpty())) {
+        if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
             if (!game.getStack().isEmpty()) {
                 try {
                      Thread.sleep(1000);
@@ -134,7 +130,14 @@ public class MagicPlayChoice extends MagicChoice {
 
                 }
             }
-			return PASS_CHOICE_RESULTS;
+            //if AI blocks, don't skip this
+            if (game.isPhase(MagicPhaseType.DeclareBlockers) && 
+                game.getOpponent(player).getNrOfBlockers() > 0 && 
+                game.getStack().isEmpty()) {
+                //contine
+            } else {
+    			return PASS_CHOICE_RESULTS;
+            }
 		}
 
         /*
