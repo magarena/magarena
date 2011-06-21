@@ -80,7 +80,7 @@ Release 1.15 (June 20, 2011)
   at a time (fixes issue 7: "Problem in interaction between 704.3/704.5g and
   613.4")
 - fixed card pic for spirit token
-- added cancel button to download images dialog, not it is possible to stop
+- added cancel button to download images dialog, now it is possible to stop
   downloading
 - add this README.txt to the game's help menu
 - added caching to Monte Carlo Tree Search AI so that simulations performed
