@@ -117,7 +117,6 @@ public class GamePanel extends JPanel {
 		logBookButton.setOpaque(false);
 		add(logBookButton);		
 		logBookButton.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(final ActionEvent event) {
 			
@@ -125,13 +124,11 @@ public class GamePanel extends JPanel {
 			}
 		});
 		logBookButton.addMouseListener(new MouseAdapter() {
-
 			@Override
 			public void mouseEntered(final MouseEvent event) {
 
 				showLogBook(true);
 			}
-
 			@Override
 			public void mouseExited(final MouseEvent event) {
 
@@ -147,7 +144,6 @@ public class GamePanel extends JPanel {
 		textViewButton.setOpaque(false);
 		add(textViewButton);
 		textViewButton.addActionListener(new ActionListener() {
-
 			@Override
 			public void actionPerformed(final ActionEvent event) {
 				
@@ -158,45 +154,33 @@ public class GamePanel extends JPanel {
 		});
 		
 		getActionMap().put(ACTION_KEY, new AbstractAction() {
-			
 			private static final long serialVersionUID = 1L;
-
 			@Override
 			public void actionPerformed(final ActionEvent event) {
-
 				controller.actionKeyPressed();
 			}
 		});
 		
 		getActionMap().put(UNDO_KEY, new AbstractAction() {
-			
 			private static final long serialVersionUID = 1L;
-
 			@Override
 			public void actionPerformed(final ActionEvent event) {
-			
 				controller.undoKeyPressed();
 			}
 		});
 		
 		getActionMap().put(SWITCH_KEY, new AbstractAction() {
-			
 			private static final long serialVersionUID = 1L;
-
 			@Override
 			public void actionPerformed(final ActionEvent e) {
-				
 				switchKeyPressed();
 			}
 		});
 		
 		getActionMap().put(LOG_KEY, new AbstractAction() {
-			
 			private static final long serialVersionUID = 1L;
-
 			@Override
 			public void actionPerformed(final ActionEvent e) {
-
 				final boolean selected=!logBookButton.isSelected();
 				logBookButton.setSelected(selected);
 				showLogBook(selected);
@@ -204,9 +188,7 @@ public class GamePanel extends JPanel {
 		});
 		
         getActionMap().put(PASS_KEY, new AbstractAction() {
-			
 			private static final long serialVersionUID = 1L;
-
 			@Override
 			public void actionPerformed(final ActionEvent e) {
 				controller.passKeyPressed();
@@ -245,17 +227,14 @@ public class GamePanel extends JPanel {
 	}
 	
 	public boolean canClickAction() {
-		
 		return gameTournamentViewer.getGameViewer().isActionEnabled();
 	}
 	
 	public boolean canClickUndo() {
-		
 		return gameTournamentViewer.getGameViewer().isUndoEnabled();
 	}
 		
 	void switchKeyPressed() {
-
 		if (textViewButton.isEnabled()) {
 			final boolean selected=!textViewButton.isSelected();
 			textViewButton.setSelected(selected);
@@ -265,14 +244,11 @@ public class GamePanel extends JPanel {
 	}
 	
 	void showLogBook(final boolean visible) {
-
 		if (visible) {
 			logBookViewer.update();
 			SwingUtilities.invokeLater(new Runnable() {
-
 				@Override
 				public void run() {
-										
 					logBookViewer.setVisible(true);
 				}
 			});
@@ -282,32 +258,26 @@ public class GamePanel extends JPanel {
 	}
 	
 	private boolean isTextView() {
-		
 		return GeneralConfig.getInstance().getTextView();
 	}
 	
 	public MagicGame getGame() {
-		
 		return game;
 	}
 	
 	public GameController getController() {
-		
 		return controller;
 	}
 	
 	public CardViewer getImageCardViewer() {
-		
 		return imageCardViewer;
 	}
 	
 	public LogBookViewer getLogBookViewer() {
-		
 		return logBookViewer;
 	}
 	
 	public void focusViewers(final int handGraveyard,final int stackCombat) {
-		
 		if (isTextView()) {
 			handGraveyardViewer.setSelectedTab(handGraveyard);
 			stackCombatViewer.setSelectedTab(stackCombat);
@@ -317,12 +287,10 @@ public class GamePanel extends JPanel {
 	}
 
 	public void updateInfo() {
-		
 		viewerInfo.update(game);
 	}
 	
 	public void update() {
-
 		playerViewer.update();
 		opponentViewer.update();
 		gameTournamentViewer.update();
@@ -342,7 +310,6 @@ public class GamePanel extends JPanel {
 	}
 	
 	public void updateView() {
-		
 		if (isTextView()) {
 			backgroundLabel.setImage(false);
 			remove(imageStackViewer);
@@ -371,7 +338,6 @@ public class GamePanel extends JPanel {
 			add(imageCombatViewer);
 			add(imageViewer);
 		}
-				
 		resizeComponents();
 		update();
 		revalidate();
@@ -379,12 +345,10 @@ public class GamePanel extends JPanel {
 	}
 	
 	public void close() {
-		
 		frame.showTournament();
 	}
 	
 	public void resizeComponents() {
-		
 		final Dimension size=getSize();
 		final ResolutionProfileResult result=ResolutionProfiles.calculate(size);
 
