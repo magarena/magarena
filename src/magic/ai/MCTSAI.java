@@ -453,6 +453,9 @@ public class MCTSAI implements MagicAI {
             final boolean sim) {
         
         final int startActions = game.getNumActions();
+
+        //use fact choices during simulation
+        game.setFastChoices(sim);
         
         // simulate game until it is finished or simulated MAX_ACTIONS actions
         while (!game.isFinished() && (game.getNumActions() - startActions) < MAX_ACTIONS) {
