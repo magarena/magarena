@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.EnumSet;
 
 import javax.swing.ImageIcon;
 
@@ -65,7 +66,7 @@ public class MagicCardDefinition {
 	private int rarity=0;
 	private boolean token=false;
 	private int typeFlags=0;
-	private int subTypeFlags=0;
+	private EnumSet<MagicSubType> subTypeFlags;
 	private int colorFlags=0;
 	private int convertedCost=0;
 	private MagicColoredType coloredType=MagicColoredType.Colorless;
@@ -261,18 +262,14 @@ public class MagicCardDefinition {
 	}
 	
 	public void setSubTypes(final String[] subTypeNames) {
-		
-		subTypeFlags=0;
+		subTypeFlags = EnumSet.noneOf(MagicSubType.class);
 		for (final String subTypeName : subTypeNames) {
-			
 			final MagicSubType subType=MagicSubType.getSubType(subTypeName); 
-			if (subType!=null) {
-				subTypeFlags|=subType.getMask();
-			}
+            subTypeFlags.add(subType);
 		}
 	}
 	
-	public int getSubTypeFlags() {
+	public EnumSet<MagicSubType> getSubTypeFlags() {
 		return subTypeFlags;
 	}
 	

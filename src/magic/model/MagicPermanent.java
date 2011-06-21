@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.LinkedList;
+import java.util.EnumSet;
 
 import javax.swing.ImageIcon;
 
@@ -56,7 +57,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private boolean cached=false;
 	private MagicPowerToughness cachedTurnPowerToughness=null;
 	private long cachedTurnAbilityFlags=0;
-	private int cachedSubTypeFlags=0;
+	private EnumSet<MagicSubType> cachedSubTypeFlags;
 	private int cachedTypeFlags=0;
 	private int cachedColorFlags=0;
 	
@@ -312,15 +313,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return false;
 	}
 	
-	public int getSubTypeFlags() {
+	public EnumSet<MagicSubType> getSubTypeFlags() {
 		// Check if cached.
 		if (cached) {
 			return cachedSubTypeFlags;
 		}
 		
-		int flags=cardDefinition.getSubTypeFlags();
+		EnumSet<MagicSubType> flags=cardDefinition.getSubTypeFlags();
 		for (final MagicLocalVariable localVariable : localVariables) {
-			
 			flags=localVariable.getSubTypeFlags(this,flags);
 		}
 		return flags;

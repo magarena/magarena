@@ -1,5 +1,7 @@
 package magic.model.variable;
 
+import java.util.EnumSet;
+
 import magic.data.CardDefinitions;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
@@ -195,9 +197,11 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	}
 
 	@Override
-	public int getSubTypeFlags(final MagicPermanent permanent,int flags) {
+	public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
 		if (permanent.getCardDefinition().hasAbility(MagicAbility.Changeling)) {
-			return flags|MagicSubType.ALL_CREATURES;
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.addAll(MagicSubType.ALL_CREATURES);
+			return mod;
 		}		
 		return flags;
 	}

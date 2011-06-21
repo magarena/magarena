@@ -1,8 +1,11 @@
 package magic.model.variable;
 
+import java.util.EnumSet;
+
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
+import magic.model.MagicSubType;
 
 // Determines variable power, toughness, abilities, sub types and colors for a single creature permanent.
 public interface MagicLocalVariable {
@@ -11,7 +14,7 @@ public interface MagicLocalVariable {
 	
 	public abstract long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags);
 
-	public abstract int getSubTypeFlags(final MagicPermanent permanent,final int flags);
+	public abstract EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags);
 	
     public abstract int getTypeFlags(final MagicPermanent permanent,final int flags);
 	

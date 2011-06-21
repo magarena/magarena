@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import java.util.EnumSet;
 
 import javax.swing.ImageIcon;
 
@@ -166,9 +167,8 @@ public class PermanentViewerInfo {
 
 		// Sub types.
 		if (!MagicAbility.Changeling.hasAbility(abilityFlags)) {
-			final int subTypeFlags=permanent.getSubTypeFlags();
+			final EnumSet<MagicSubType> subTypeFlags=permanent.getSubTypeFlags();
 			for (final MagicSubType subType : MagicSubType.values()) {
-				
 				if (subType.hasSubType(subTypeFlags)) {
 					if (first) {
 						first=false;
@@ -178,7 +178,7 @@ public class PermanentViewerInfo {
 					} else {
 						textBuffer.append(", ");						
 					}
-					textBuffer.append(subType.getName());
+					textBuffer.append(subType.toString());
 				}
 			}
 		}
@@ -228,7 +228,7 @@ public class PermanentViewerInfo {
 	
 	private static MagicColor getManaColor(final MagicPermanent permanent) {
 		
-		final int flags=permanent.getSubTypeFlags();
+		final EnumSet<MagicSubType> flags=permanent.getSubTypeFlags();
 		for (final MagicColor color : MagicColor.values()) {
 			
 			if (color.getLandSubType().hasSubType(flags)) {

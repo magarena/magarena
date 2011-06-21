@@ -2,6 +2,7 @@ package magic.data;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.EnumSet;
 import java.lang.reflect.Field;
 
 import magic.model.MagicAbility;
@@ -3464,8 +3465,10 @@ public class TriggerDefinitions {
 		}
 
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicSubType.Illusion.getMask();
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.add(MagicSubType.Illusion);
+			return mod;
 		}
 		
         @Override

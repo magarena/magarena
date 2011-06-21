@@ -2,6 +2,7 @@ package magic.data;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.EnumSet;
 import java.lang.reflect.Field;
 
 import magic.model.MagicAbility;
@@ -1345,10 +1346,12 @@ public class PermanentActivationDefinitions {
 		}
 
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicSubType.ALL_CREATURES;
-		}
-	}
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.addAll(MagicSubType.ALL_CREATURES);
+			return mod;
+	    }
+    }
 	
 	private static final MagicPermanentActivation MIRROR_ENTITY = new MagicPermanentActivation(
             "Mirror Entity",
@@ -1436,8 +1439,8 @@ public class PermanentActivationDefinitions {
 		}
 
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			return MagicSubType.Frog.getMask() ;
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+			return EnumSet.of(MagicSubType.Frog);
 		}
 	};
 	
@@ -2679,8 +2682,10 @@ public class PermanentActivationDefinitions {
 		}
 		
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicSubType.Construct.getMask();
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.add(MagicSubType.Construct);
+			return mod;
 		}
 		
         @Override
@@ -2961,8 +2966,10 @@ public class PermanentActivationDefinitions {
 			return flags|MagicAbility.Flying.getMask()|MagicAbility.Vigilance.getMask();
 		}
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicSubType.Elemental.getMask();
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.add(MagicSubType.Elemental);
+			return mod;
 		}
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
@@ -3018,8 +3025,10 @@ public class PermanentActivationDefinitions {
 			return flags|MagicAbility.Unblockable.getMask();
 		}
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicSubType.Elemental.getMask();
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.add(MagicSubType.Elemental);
+			return mod;
 		}
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
@@ -3120,8 +3129,10 @@ public class PermanentActivationDefinitions {
 			pt.toughness=3;
 		}
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicSubType.Elemental.getMask();
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.add(MagicSubType.Elemental);
+			return mod;
 		}
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
@@ -3189,8 +3200,10 @@ public class PermanentActivationDefinitions {
 			return flags|MagicAbility.Reach.getMask();
 		}
 		@Override
-		public int getSubTypeFlags(final MagicPermanent permanent,final int flags) {
-            return flags|MagicSubType.Elemental.getMask();
+		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.add(MagicSubType.Elemental);
+            return mod;
 		}
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
