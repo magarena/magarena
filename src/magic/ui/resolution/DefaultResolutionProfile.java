@@ -113,7 +113,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
                 new Rectangle(x,y,IMAGE_VIEWER_WIDTH,IMAGE_VIEWER_HEIGHT));
 		result.setBoundary(ResolutionProfileType.GameImageStackViewer,
                 new Rectangle(x,y,PLAYER_VIEWER_WIDTH,cardHeight-BUTTON_Y_SPACING-BUTTON_SIZE));
-		y+=(cardHeight-CARD_VIEWER_HEIGHT)/2;
+		//y+=(cardHeight-CARD_VIEWER_HEIGHT)/2;
 
         //card viewer
 		result.setBoundary(ResolutionProfileType.GameCardViewer,

@@ -64,7 +64,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final boolean high) {
 
 		if (cardDefinition == null) {
-			return IconImages.MISSING;
+			return IconImages.MISSING_CARD;
 		}
 
 		final String filename=getFilename(cardDefinition,index);
@@ -85,7 +85,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 
 		image=loadCardImage(filename);
 		BufferedImage lowImage;
-		if (image==IconImages.MISSING) {
+		if (image==IconImages.MISSING_CARD) {
 			lowImage=image;
 		} else {
 			final Image scaledImage=image.getScaledInstance(

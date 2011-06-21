@@ -126,4 +126,5 @@ ref/rules.txt:
 	flip -u $@
 
 resources/magic/data/icons/missing_card.png:
-	convert -background white -size 312x445 -pointsize 30 label:'No card image found\n\nSelect\n\"Download images\"\nfrom Arena menu\n\nOR\n\nSwitch to text mode\nusing the Enter key' $@
+	convert -background gray -bordercolor black -border 5x5 -size 302x435 \
+	-pointsize 30 label:'\nNo card image found\n\nSelect\n\"Download images\"\nfrom Arena menu\n\nOR\n\nSwitch to text mode\nusing the Enter key' $@
