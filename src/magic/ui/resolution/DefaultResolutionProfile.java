@@ -89,34 +89,46 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 			playerHeight=PLAYER_VIEWER_HEIGHT_SMALL;
 		}
 		cardHeight-=playerHeight*2;
-
+       
 		result.setFlag(ResolutionProfileType.GamePlayerViewerSmall,small);
-		result.setBoundary(ResolutionProfileType.GameOpponentViewer,
+		
+        //opponent viewer
+        result.setBoundary(ResolutionProfileType.GameOpponentViewer,
                 new Rectangle(x,y,PLAYER_VIEWER_WIDTH,playerHeight));
 		y+=playerHeight+spacing;
-		result.setBoundary(ResolutionProfileType.GameImageViewer,
-                new Rectangle(x,y,IMAGE_VIEWER_WIDTH,IMAGE_VIEWER_HEIGHT));
-		result.setBoundary(ResolutionProfileType.GameImageStackViewer,
-                new Rectangle(x,y,PLAYER_VIEWER_WIDTH,cardHeight-BUTTON_Y_SPACING-BUTTON_SIZE));
-		y+=(cardHeight-CARD_VIEWER_HEIGHT)/2;
-		result.setBoundary(ResolutionProfileType.GameCardViewer,
-				new Rectangle(x+(PLAYER_VIEWER_WIDTH-CARD_VIEWER_WIDTH)/2,y,CARD_VIEWER_WIDTH,CARD_VIEWER_HEIGHT));
-		y+=CARD_VIEWER_HEIGHT+spacing;
-		y=size.height-spacing-playerHeight;
-		result.setBoundary(ResolutionProfileType.GamePlayerViewer,
-                new Rectangle(x,y,PLAYER_VIEWER_WIDTH,playerHeight));
-		y-=GAME_VIEWER_HEIGHT+spacing;
-		result.setBoundary(ResolutionProfileType.GameTournamentViewer,
-                new Rectangle(x,y,PLAYER_VIEWER_WIDTH,GAME_VIEWER_HEIGHT));
-
-		y-=BUTTON_SIZE+BUTTON_Y_SPACING;
+        
+        //log book, text view button and log book viewer
+		//y-=BUTTON_SIZE+BUTTON_Y_SPACING;
 		result.setBoundary(ResolutionProfileType.GameLogBookButton,
                 new Rectangle(x,y,BUTTON_SIZE,BUTTON_SIZE));
 		result.setBoundary(ResolutionProfileType.TextViewButton,
                 new Rectangle(x+PLAYER_VIEWER_WIDTH-BUTTON_SIZE,y,BUTTON_SIZE,BUTTON_SIZE));
-		final int logWidth=Math.min(MAX_LOGBOOK_VIEWER_WIDTH,size.width-spacing*3-BUTTON_SIZE);
+        final int logWidth=Math.min(MAX_LOGBOOK_VIEWER_WIDTH,size.width-spacing*3-BUTTON_SIZE);
 		result.setBoundary(ResolutionProfileType.GameLogBookViewer,
                 new Rectangle(x+BUTTON_SIZE+6,spacing,logWidth,size.height-spacing*2));
+        y += BUTTON_SIZE+BUTTON_Y_SPACING;
+		
+        //image viewer, image stack viewer
+        result.setBoundary(ResolutionProfileType.GameImageViewer,
+                new Rectangle(x,y,IMAGE_VIEWER_WIDTH,IMAGE_VIEWER_HEIGHT));
+		result.setBoundary(ResolutionProfileType.GameImageStackViewer,
+                new Rectangle(x,y,PLAYER_VIEWER_WIDTH,cardHeight-BUTTON_Y_SPACING-BUTTON_SIZE));
+		y+=(cardHeight-CARD_VIEWER_HEIGHT)/2;
+
+        //card viewer
+		result.setBoundary(ResolutionProfileType.GameCardViewer,
+				new Rectangle(x+(PLAYER_VIEWER_WIDTH-CARD_VIEWER_WIDTH)/2,y,CARD_VIEWER_WIDTH,CARD_VIEWER_HEIGHT));
+		y+=CARD_VIEWER_HEIGHT+spacing;
+
+        //game player viewer
+		y=size.height-spacing-playerHeight;
+		result.setBoundary(ResolutionProfileType.GamePlayerViewer,
+                new Rectangle(x,y,PLAYER_VIEWER_WIDTH,playerHeight));
+
+        //tournament viewer
+        y-=GAME_VIEWER_HEIGHT+spacing;
+		result.setBoundary(ResolutionProfileType.GameTournamentViewer,
+                new Rectangle(x,y,PLAYER_VIEWER_WIDTH,GAME_VIEWER_HEIGHT));
 
 		x+=PLAYER_VIEWER_WIDTH+spacing+offset;
 		
