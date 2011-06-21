@@ -62,6 +62,8 @@ public enum MagicSubType {
 				return type;
 			}
 		}
+        System.err.println("ERROR: Unknown subtype " + name);
+        System.exit(1);
         return null;
 	}
 }

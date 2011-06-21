@@ -66,7 +66,7 @@ public class MagicCardDefinition {
 	private int rarity=0;
 	private boolean token=false;
 	private int typeFlags=0;
-	private EnumSet<MagicSubType> subTypeFlags;
+	private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
 	private int colorFlags=0;
 	private int convertedCost=0;
 	private MagicColoredType coloredType=MagicColoredType.Colorless;
@@ -242,13 +242,11 @@ public class MagicCardDefinition {
 	}
 	
 	public boolean isEnchantment() {
-		
 		return hasType(MagicType.Enchantment);
 	}
 	
 	public boolean isAura() {
-		
-		return isEnchantment()&&hasSubType(MagicSubType.Aura);
+		return isEnchantment() && hasSubType(MagicSubType.Aura);
 	}
 	
 	public boolean isSpell() {
@@ -274,8 +272,7 @@ public class MagicCardDefinition {
 	}
 	
 	public boolean hasSubType(final MagicSubType subType) {
-
-		if (subType.isCreatureType()&&hasAbility(MagicAbility.Changeling)) {
+		if (subType.isCreatureType() && hasAbility(MagicAbility.Changeling)) {
 			return true;
 		}
 		return subType.hasSubType(subTypeFlags);		
