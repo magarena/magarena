@@ -123,19 +123,31 @@ public class MagicPlayChoice extends MagicChoice {
         validChoices=getValidChoices(game,player);
 	
         if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
-            if (!game.getStack().isEmpty()) {
-                try {
-                     Thread.sleep(1000);
-                } catch (final Exception err) {
+            boolean skip = true;
 
-                }
-            }
             //if AI blocks, don't skip priority so that user can observe how the AI is blocking
             if (game.isPhase(MagicPhaseType.DeclareBlockers) && 
                 game.getOpponent(player).getNrOfBlockers() > 0 && 
                 game.getStack().isEmpty()) {
-                //continue to let user observe the combat state
-            } else {
+                skip = false;
+            }
+
+            /*
+            //if top item belongs to AI, stop so that player can see what AI is doing
+		    if (game.getStack().hasItemOnTopOfPlayer(game.getOpponent(player))) {
+                skip = false;
+            }
+            */
+
+            if (skip) {
+                //if there is an item on the stack, pause for 1s
+                if (!game.getStack().isEmpty()) {
+                    try {
+                         Thread.sleep(1500);
+                    } catch (final Exception err) {
+
+                    }
+                }
     			return PASS_CHOICE_RESULTS;
             }
 		}
