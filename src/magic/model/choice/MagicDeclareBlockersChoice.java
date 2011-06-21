@@ -138,8 +138,13 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 		
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
 		final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,game.getOpponent(player),player);
-		builder.buildBlockers();
 
+        //check if any of the defending creatures can block
+		if (!builder.buildBlockers()) {
+			return new Object[]{result};
+        }
+
+        //check if non of the attackers can be blocked
 		if (!builder.buildBlockableAttackers()) {
 			return new Object[]{result};
 		}
@@ -147,6 +152,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
         final Set<MagicPermanent> blockers = builder.getCandidateBlockers();
         for (final MagicPermanent blocker : blockers) {
 	        MagicPermanent[] attackers = builder.getBlockableAttackers(blocker).toArray(new MagicPermanent[]{});
+            //choose one of the attackers or don't block
             final int idx = MagicRandom.nextInt(attackers.length + 1);
             if (idx < attackers.length) {
                 MagicPermanent attacker = attackers[idx];
