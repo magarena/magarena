@@ -1,6 +1,5 @@
 syntax: glob
 crash/*
-data/*
 build/*
 ref/*
 launch4j/*

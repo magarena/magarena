@@ -124,3 +124,6 @@ decks/td_%.dec: scripts/dailyhtml2dec.awk
 ref/rules.txt:
 	curl http://www.wizards.com/magic/comprules/MagicCompRules_20110617.txt | fmt -s > $@
 	flip -u $@
+
+resources/magic/data/icons/missing_card.png:
+	convert -background white -size 312x445 -pointsize 30 label:'No card image found\n\nSelect\n\"Download images\"\nfrom Arena menu\n\nOR\n\nSwitch to text mode\nusing the Enter key' $@

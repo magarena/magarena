@@ -34,6 +34,7 @@ public class IconImages {
     */
 
 	public static final BufferedImage MISSING=loadImage("icons/missing.png");
+	public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
 	public static final ImageIcon MISSING2=loadIcon("missing2.png");
 	
 	public static final BufferedImage LOGO=loadImage("textures/logo.jpg");

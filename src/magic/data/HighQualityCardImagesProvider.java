@@ -53,7 +53,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 			inputStream.close();
 			return fullImage;
 		} catch (final Exception ex) {
-			return IconImages.MISSING;
+			return IconImages.MISSING_CARD;
 		}
 	}
 	
