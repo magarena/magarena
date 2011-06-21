@@ -164,9 +164,7 @@ public class CardDefinitions {
 	}
 	
 	public void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
-		
 		for (final MagicCardDefinition cardDefinition : cardDefinitions) {
-			
 			addDefinition(cardDefinition);
 		}
 	}

@@ -14,9 +14,7 @@ import magic.model.event.MagicSacrificeManaActivation;
 public class TokenCardDefinitions {
 
 	public static final MagicCardDefinition DRAGON4_TOKEN_CARD=new MagicCardDefinition("Dragon","Dragon4") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(4);
 			addType(MagicType.Creature);
@@ -31,9 +29,7 @@ public class TokenCardDefinitions {
 	};
 
 	public static final MagicCardDefinition DRAGON5_TOKEN_CARD=new MagicCardDefinition("Dragon","Dragon5") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(5);
 			addType(MagicType.Creature);
@@ -48,9 +44,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition WORM_TOKEN_CARD=new MagicCardDefinition("Worm") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -65,9 +59,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition SAPROLING_TOKEN_CARD=new MagicCardDefinition("Saproling") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -81,9 +73,7 @@ public class TokenCardDefinitions {
 	};	
 
 	public static final MagicCardDefinition SNAKE_TOKEN_CARD=new MagicCardDefinition("Snake") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -97,9 +87,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition SOLDIER_TOKEN_CARD=new MagicCardDefinition("Soldier") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -113,9 +101,7 @@ public class TokenCardDefinitions {
 	};
 
 	public static final MagicCardDefinition GOBLIN1_TOKEN_CARD=new MagicCardDefinition("Goblin","Goblin1") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -129,9 +115,7 @@ public class TokenCardDefinitions {
 	};
 
 	public static final MagicCardDefinition GOBLIN2_TOKEN_CARD=new MagicCardDefinition("Goblin","Goblin2") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -146,9 +130,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition GOBLIN_SOLDIER_TOKEN_CARD=new MagicCardDefinition("Goblin Soldier") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -163,9 +145,7 @@ public class TokenCardDefinitions {
 	};
 
 	public static final MagicCardDefinition OGRE_TOKEN_CARD=new MagicCardDefinition("Ogre") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(3);
 			addType(MagicType.Creature);
@@ -179,9 +159,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition SPIRIT_TOKEN_CARD=new MagicCardDefinition("Spirit") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -194,9 +172,7 @@ public class TokenCardDefinitions {
 	};	
 
 	public static final MagicCardDefinition BAT_TOKEN_CARD=new MagicCardDefinition("Bat") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(2);
 			addType(MagicType.Creature);
@@ -211,9 +187,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition FAERIE_ROGUE_TOKEN_CARD=new MagicCardDefinition("Faerie Rogue") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(2);
 			addType(MagicType.Creature);
@@ -228,9 +202,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition GRIFFIN_TOKEN_CARD=new MagicCardDefinition("Griffin") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(3);
 			addType(MagicType.Creature);
@@ -245,9 +217,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition APE_TOKEN_CARD=new MagicCardDefinition("Ape","Ape") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(3);
 			addType(MagicType.Creature);
@@ -261,9 +231,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition BEAST3_TOKEN_CARD=new MagicCardDefinition("Beast","Beast3") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(3);
 			addType(MagicType.Creature);
@@ -277,9 +245,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition BEAST4_TOKEN_CARD=new MagicCardDefinition("Beast","Beast4") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(4);
 			addType(MagicType.Creature);
@@ -381,9 +347,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition VOJA_TOKEN_CARD=new MagicCardDefinition("Voja") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(2);
 			addType(MagicType.Legendary);
@@ -399,9 +363,7 @@ public class TokenCardDefinitions {
 	};
 
 	public static final MagicCardDefinition TUKTUK_THE_RETURNED_TOKEN_CARD=new MagicCardDefinition("Tuktuk the Returned") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(4);
 			addType(MagicType.Legendary);
@@ -433,9 +395,7 @@ public class TokenCardDefinitions {
 	};	
 	
 	public static final MagicCardDefinition WURM1_TOKEN_CARD=new MagicCardDefinition("Wurm","Wurm1") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(3);
 			addType(MagicType.Artifact);
@@ -450,9 +410,7 @@ public class TokenCardDefinitions {
 	};
 
 	public static final MagicCardDefinition WURM2_TOKEN_CARD=new MagicCardDefinition("Wurm","Wurm2") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(3);
 			addType(MagicType.Artifact);
