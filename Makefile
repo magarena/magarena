@@ -35,7 +35,7 @@ cards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.t
 cards/existing_full.txt: newcards/existing.txt data/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
-cards/candidate_cards_full.txt: scripts/extract_candidates.awk candidate_cards.tsv data/mtg-data.txt
+cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt data/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
 %.out: $(MAG)

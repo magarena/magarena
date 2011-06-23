@@ -7640,3 +7640,10 @@ color=g
 converted=1
 cost={G}
 timing=removal
+
+>Mutavault
+image=http://magiccards.info/scans/en/mt/148.jpg
+value=3
+rarity=3
+type=Land
+timing=land

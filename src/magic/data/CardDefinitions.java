@@ -13,6 +13,7 @@ import java.lang.reflect.Modifier;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicStaticType;
@@ -156,6 +157,9 @@ public class CardDefinitions {
             		cardDefinition.addActivation(mact);
                     mact.setCardDefinition(cardDefinition);
                     System.err.println("Adding permanent activation to " + fname);
+                } else if (obj instanceof MagicChangeCardDefinition) {
+                    final MagicChangeCardDefinition chg = (MagicChangeCardDefinition)obj;
+                    chg.change(cardDefinition);
                 }
             }
         } catch (Exception err) {
