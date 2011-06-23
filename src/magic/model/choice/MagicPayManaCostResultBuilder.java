@@ -152,23 +152,18 @@ public class MagicPayManaCostResultBuilder {
 	}
 	
 	public boolean hasResults() {
-				
 		// Check if there are enough mana sources.
 		if (cost.getMinimumAmount()>activationsSize) {
 			return false;
 		}		
-
 		return build(0,true);
 	}
 
 	/** Finds all possible options to pay the cost for AI. */
 	public Collection<Object> getResults() {
-
 		for (final MagicSourceManaActivation activation : activations) {
-			
 			activation.available=true;
 		}
-		
 		results=new HashMap<MagicBuilderPayManaCostResult,MagicBuilderPayManaCostResult>();
 		build(0,false);
 		return new TreeSet<Object>(results.values());
@@ -185,11 +180,9 @@ public class MagicPayManaCostResultBuilder {
 		final Set<Object> manaSources=new HashSet<Object>();
 		final Set<Integer> manaIds=new HashSet<Integer>();
 		for (final MagicSourceManaActivation currentActivation : activations) {
-			
 			currentActivation.available=true;
 			if (currentActivation.canProduce(type)!=null) {
 				for (final MagicSourceManaActivation activation : activations) {
-				
 					activation.available=activation!=currentActivation;
 				}
 				if (hasResults()) {
@@ -235,7 +228,6 @@ public class MagicPayManaCostResultBuilder {
 		}
 		
 		for (final MagicSourceManaActivation activation : activations) {
-			
 			final MagicSourceManaActivation sourceActivation=new MagicSourceManaActivation(game,activation.permanent);
 			if (sourceActivation.available) {
 				sourceActivation.produce(game,MagicCostManaType.Colorless);
