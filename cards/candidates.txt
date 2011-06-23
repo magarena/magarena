@@ -1,0 +1,2696 @@
+509.747	Jace, the Mind Sculptor
+421.113	Path to Exile
+412.776	Misty Rainforest
+387.633	Scalding Tarn
+333.522	Arid Mesa
+320.701	Cryptic Command
+308.004	Thoughtseize
+304.643	Verdant Catacombs
+297.99	Preordain
+245.842	Bloodbraid Elf
+234.269	Tarmogoyf
+230.518	Mutavault
+224.849	Duress
+222.436	Oblivion Ring
+202.619	Reflecting Pool
+196.945	Marsh Flats
+192.647	Knight of the Reliquary
+187.188	Lotus Cobra
+186.554	Jace Beleren
+158.316	Elspeth, Knight-Errant
+157.087	Vengevine
+156.051	Stoneforge Mystic
+155.571	Wrath of God
+153.425	Sunken Ruins
+153.011	Wall of Omens
+151.084	Obstinate Baloth
+144.269	Goblin Guide
+141.371	Vendilion Clique
+138.853	Spreading Seas
+132.007	Treetop Village
+129.976	Gideon Jura
+129.539	Figure of Destiny
+128.413	Burrenton Forge-Tender
+126.527	Wasteland
+124.051	Force of Will
+121.601	Condemn
+119.518	Brainstorm
+118.819	Spellstutter Sprite
+118.249	Umezawa's Jitte
+118.172	Secluded Glen
+118.114	Sower of Temptation
+117.624	Terramorphic Expanse
+112.87	Primeval Titan
+111.971	Chrome Mox
+111.286	Mistbind Clique
+110.037	Ranger of Eos
+107.983	Ajani Vengeant
+107.857	Everflowing Chalice
+104.523	Cloudthresher
+104.087	Pithing Needle
+103.329	Firespout
+102.67	Fauna Shaman
+102.361	Squadron Hawk
+101.754	Mystic Gate
+100.687	Snow-Covered Mountain
+100.111	Ponder
+96.7231	Dark Confidant
+94.102	Tormod's Crypt
+92.0932	Polluted Delta
+92.0132	Arc Trail
+89.2482	Underground River
+89.0829	Plated Geopede
+88.877	Valakut, the Molten Pinnacle
+88.3811	Windbrisk Heights
+87.9552	Inquisition of Kozilek
+86.2163	Flooded Strand
+85.7193	Shriekmaw
+85.3093	Garruk Wildspeaker
+84.9231	Windswept Heath
+84.7819	Mulldrifter
+84.4785	Sensei's Divining Top
+84.4615	Meddling Mage
+84.3262	Scion of Oona
+82.3383	Flame Javelin
+81.2996	Teetering Peaks
+80.5999	Rampant Growth
+79.1502	Damnation
+78.7206	Esper Charm
+78.6115	Ratchet Bomb
+78.0907	Snow-Covered Island
+77.4643	Relic of Progenitus
+76.8282	Extirpate
+76.5036	Wooded Foothills
+75.9407	Spectral Procession
+74.6442	Sakura-Tribe Elder
+73.4381	Sea Gate Oracle
+72.8896	Deathmark
+71.1726	Bituminous Blast
+68.2194	Krosan Grip
+67.3222	Luminarch Ascension
+67.075	Nameless Inversion
+67.0139	Summoning Trap
+66.9021	Demigod of Revenge
+66.8199	Wild Nacatl
+66.1467	Adarkar Wastes
+63.3813	Spell Snare
+63.1305	Primal Command
+62.362	Broken Ambitions
+62.3184	Searing Blaze
+62.0786	Guttural Response
+61.9056	Engineered Explosives
+61.4745	Sovereigns of Lost Alara
+60.5696	Cultivate
+60.3037	Ancient Grudge
+60.2124	Evolving Wilds
+60.1231	Repeal
+60.0783	Grove of the Burnwillows
+59.5427	Thirst for Knowledge
+59.5194	Leyline of the Void
+59.0657	Cascade Bluffs
+58.9089	Deprive
+58.7551	Llanowar Wastes
+56.9353	Khalni Heart Expedition
+56.76	Ethersworn Canonist
+56.683	Cabal Therapy
+56.6805	Lavaclaw Reaches
+56.3596	River of Tears
+56.0536	Gilt-Leaf Palace
+55.7159	Sun Titan
+55.3621	Bloodstained Mire
+54.8478	Karplusan Forest
+54.8293	Knight of the White Orchid
+54.6955	Gatekeeper of Malakir
+54.3845	Ghost Quarter
+53.9816	Linvala, Keeper of Silence
+53.8761	Disenchant
+53.5072	Blood Moon
+52.464	Ancestral Vision
+51.8455	Runed Halo
+51.6943	Halimar Depths
+51.3581	Frost Titan
+51.0563	Khalni Garden
+50.887	Memoricide
+50.7822	Hellspark Elemental
+50.4628	Flooded Grove
+50.168	Reveillark
+50.1415	Cloudgoat Ranger
+49.9416	Harrow
+49.7666	Tropical Island
+49.4114	Manabarbs
+49.1313	Rift Bolt
+48.9956	Hell's Thunder
+48.738	Wren's Run Vanquisher
+48.4742	Urborg, Tomb of Yawgmoth
+48.1817	Journey to Nowhere
+48.0344	Daze
+47.7407	Scapeshift
+47.7	Fire-Lit Thicket
+47.6224	Tundra
+47.5155	Punishing Fire
+47.439	Compulsive Research
+47.0017	Terror
+46.7644	Bloodghast
+46.7109	City of Brass
+46.6825	Dismember
+46.5259	Snow-Covered Forest
+46.0355	Kird Ape
+45.929	Leyline of Sanctity
+45.2476	Inferno Titan
+45.2353	Jund Charm
+45.1912	Overgrown Battlement
+45.0057	Blinkmoth Nexus
+44.9715	Gemstone Mine
+44.8795	Brushland
+44.7842	Flagstones of Trokair
+44.7337	Magus of the Moon
+44.3122	Koth of the Hammer
+44.1774	Chalice of the Void
+43.9675	Mental Misstep
+43.9248	Bant Charm
+43.8121	Oracle of Mul Daya
+43.7983	Wall of Roots
+43.6382	Seething Song
+43.4735	Oust
+43.1556	Nettle Sentinel
+43.0349	Graven Cairns
+42.9487	Anathemancer
+42.8245	Rune Snag
+42.6319	Gaddock Teeg
+42.5522	Tolaria West
+41.8035	Seat of the Synod
+41.7986	Thought Hemorrhage
+41.4238	Divine Offering
+41.2938	Dark Ritual
+40.7207	Wispmare
+40.7179	Cancel
+40.6255	Mishra's Factory
+40.604	Magma Spray
+40.603	Peppersmoke
+40.5753	Emrakul, the Aeons Torn
+40.3428	Stillmoon Cavalier
+40.1452	Sphinx of Jwar Isle
+40.0068	Engineered Plague
+39.7526	Threads of Disloyalty
+39.5925	Sejiri Steppe
+39.5648	Agony Warp
+39.4913	Caves of Koilos
+39.2777	Wooded Bastion
+39.1753	Elvish Visionary
+39.155	Murmuring Bosk
+39.1537	Life from the Loam
+39.0422	Fulminator Mage
+39.0022	Underground Sea
+38.7238	Profane Command
+38.4996	Shivan Reef
+38.4677	Horizon Canopy
+38.2193	Eternal Witness
+38.0125	Heritage Druid
+37.6541	Cruel Ultimatum
+37.5966	Makeshift Mannequin
+37.5291	Pact of Negation
+37.4237	Battlefield Forge
+37.3268	Staggershock
+37.0229	Ajani Goldmane
+36.8152	Cranial Extraction
+36.6352	Yavimaya Coast
+36.6079	Rite of Flame
+36.5026	Slaughter Pact
+36.315	Ball Lightning
+36.2343	Nest Invader
+35.6041	Imperious Perfect
+35.1056	Pendelhaven
+35.0985	Eldrazi Conscription
+34.9848	Great Furnace
+34.5937	Faerie Conclave
+34.01	Viridian Shaman
+33.6979	Elvish Archdruid
+33.5736	Lotus Bloom
+33.4449	Rugged Prairie
+33.2715	Malakir Bloodwitch
+33.2631	Twilight Mire
+33.2461	Trinket Mage
+33.0411	Tendo Ice Bridge
+32.997	Simian Spirit Guide
+32.7026	Splinter Twin
+32.6811	Wilt-Leaf Liege
+32.6808	Shock
+32.5358	Call of the Herd
+32.4334	Wizened Cenn
+32.3879	Gifts Ungiven
+32.3458	Pyroblast
+32.2978	Intuition
+32.2508	Kalastria Highborn
+32.2423	Fieldmist Borderpost
+32.2301	Pernicious Deed
+32.1631	Ghitu Encampment
+32.102	Urza's Tower
+32.102	Urza's Mine
+32.083	Volcanic Island
+31.9957	Urza's Power Plant
+31.9201	Avenger of Zendikar
+31.8876	Greater Gargadon
+31.3047	Cursed Scroll
+31.2747	Faerie Macabre
+31.2217	Teferi, Mage of Zhalfir
+31.1354	Remove Soul
+31.0435	Hymn to Tourach
+30.9333	Goldmeadow Stalwart
+30.9166	Fact or Fiction
+30.5943	Vault of Whispers
+30.3279	Doran, the Siege Tower
+30.1564	Tidehollow Sculler
+30.1317	Rishadan Port
+30.108	Aether Vial
+29.865	Manic Vandal
+29.5863	Ravenous Trap
+29.4763	Muddle the Mixture
+29.4069	Frogmite
+29.3225	Bogardan Hellkite
+29.3215	Vampire Lacerator
+29.3215	Pulse Tracker
+29.1924	Echoing Truth
+28.9443	Vexing Shusher
+28.9197	Snow-Covered Swamp
+28.8749	Contagion Clasp
+28.8709	Arcbound Ravager
+28.8316	Arcbound Worker
+28.5708	Tranquil Thicket
+28.3785	Kodama's Reach
+28.3521	Grim Lavamancer
+28.2729	Shatter
+28.1837	Darkblast
+27.8976	Search for Tomorrow
+27.861	Spikeshot Elder
+27.7249	Consuming Vapors
+27.7159	Pestermite
+27.6251	Joraga Treespeaker
+27.5102	Burning Wish
+27.3235	Dragon's Claw
+27.0463	Silvergill Adept
+27.0463	Merrow Reejerey
+27.0404	Vampiric Tutor
+26.871	Meloku the Clouded Mirror
+26.807	Volcanic Hammer
+26.728	Unified Will
+26.6277	Devastating Summons
+26.6247	Devout Lightcaster
+26.5653	Prismatic Omen
+26.4148	Azorius Signet
+26.2637	Keldon Marauders
+26.2498	Captured Sunlight
+26.0182	Kor Skyfisher
+25.988	Exotic Orchard
+25.9591	Stifle
+25.9332	Thoughtcast
+25.7045	Viscera Seer
+25.59	War Priest of Thune
+25.5888	Circle of Protection: Red
+25.5679	Galvanic Blast
+25.508	Lash Out
+25.4561	Lord of Atlantis
+25.434	Hydroblast
+25.353	Stigma Lasher
+25.1779	Condescend
+24.9043	Mogg War Marshal
+24.8945	Honor of the Pure
+24.7454	Tezzeret, Agent of Bolas
+24.6757	Fetid Heath
+24.6671	Cranial Plating
+24.6432	Dreadship Reef
+24.5955	Hallowed Burial
+24.5893	Vedalken Shackles
+24.5183	Sulfurous Springs
+24.322	Tunnel Ignus
+24.2732	Forked Bolt
+24.0823	Manamorphose
+24.0775	Brave the Elements
+23.9442	Consume the Meek
+23.8424	Faith's Fetters
+23.8337	Seismic Assault
+23.8042	Rustic Clachan
+23.7211	Oran-Rief, the Vastwood
+23.6965	Kuldotha Rebirth
+23.367	Persecute
+23.3606	Savannah Lions
+23.2936	Ancient Tomb
+22.8737	Castigate
+22.8339	Academy Ruins
+22.526	Deceiver Exarch
+22.4662	Summoner's Pact
+22.4627	Mindslaver
+22.3761	Submerge
+22.3117	Tribal Flames
+22.3022	Tendrils of Corruption
+22.2575	Eldrazi Temple
+22.1676	Dark Depths
+22.1439	Vesuvan Shapeshifter
+22.1131	Ricochet Trap
+22.052	Myr Enforcer
+22.0326	All Is Dust
+22.0296	Howling Mine
+21.8036	Coralhelm Commander
+21.7496	Mind Shatter
+21.6921	See Beyond
+21.675	Cryoclasm
+21.6255	Careful Consideration
+21.5833	Dead // Gone
+21.5619	Darksteel Citadel
+21.5475	Destructive Force
+21.4077	Mox Diamond
+21.3457	Magma Jet
+21.3136	Chill
+21.3022	Riftsweeper
+21.209	Llawan, Cephalid Empress
+21.1455	Oxidize
+21.132	Combust
+21.1201	Stone Rain
+21.0994	Mystical Teachings
+20.9062	Dark Tutelage
+20.7874	Mortarpod
+20.7477	Hedron Crab
+20.6499	Fog
+20.6181	Urza's Factory
+20.5751	Civic Wayfinder
+20.5035	Tarfire
+20.4519	Kataki, War's Wage
+20.1484	Dispel
+20.1381	Standstill
+20.124	Volition Reins
+19.9372	Slagstorm
+19.9143	Enlisted Wurm
+19.8252	Impulse
+19.8224	Chromatic Star
+19.7965	Identity Crisis
+19.7803	Solemn Simulacrum
+19.7735	Red Elemental Blast
+19.7592	Smoldering Spires
+19.7056	Desperate Ritual
+19.6526	Martyr of Ashes
+19.4214	Green Sun's Zenith
+19.4133	Kor Sanctifiers
+19.3946	Liliana Vess
+19.2982	Master of the Wild Hunt
+19.2549	Time Spiral
+19.2096	Auntie's Hovel
+19.0131	Court Hussar
+18.973	Shrapnel Blast
+18.9435	Terastodon
+18.8632	Dodecapod
+18.8303	Forgotten Cave
+18.7561	Zektar Shrine Expedition
+18.7347	Molten Rain
+18.4344	Glimpse of Nature
+18.379	Jace's Ingenuity
+18.3604	Damping Matrix
+18.3225	Dimir Signet
+18.2564	Sedraxis Specter
+18.187	Thopter Foundry
+18.1507	Sarkhan the Mad
+18.125	Cunning Wish
+17.8298	Living Wish
+17.6525	Savannah
+17.4293	Swans of Bryn Argoll
+17.415	Pyromancer Ascension
+17.3168	Mosswort Bridge
+17.271	Stoic Rebuttal
+17.2134	Survival of the Fittest
+17.1759	Fungal Reaches
+17.1592	Narcomoeba
+17.0741	Exalted Angel
+17.0317	Ardent Plea
+17.0209	Decree of Justice
+16.9933	Prismatic Lens
+16.8715	Snow-Covered Plains
+16.8264	Arbor Elf
+16.7411	Realm Razer
+16.6516	Counterbalance
+16.6029	City of Traitors
+16.5407	Disciple of the Vault
+16.5395	Mindbreak Trap
+16.3612	Power Sink
+16.1376	Nevinyrral's Disk
+16.0933	Orim's Chant
+16.0855	Mimic Vat
+15.9878	Pollen Lullaby
+15.9419	Temporal Isolation
+15.94	Plateau
+15.9348	Eternal Dragon
+15.9184	Panic Spellbomb
+15.7776	Stonybrook Banneret
+15.7331	Devoted Druid
+15.6183	Electrostatic Bolt
+15.6046	Spellskite
+15.4646	Adventuring Gear
+15.4629	Riftwing Cloudskate
+15.4402	Kami of Ancient Law
+15.3072	Aeon Chronicler
+15.2915	Chromatic Sphere
+15.2776	Basking Rootwalla
+15.2501	Bayou
+15.1952	Merfolk Looter
+15.1062	Annul
+15.0984	Kabira Crossroads
+15.0921	Revoke Existence
+14.9752	Oona, Queen of the Fae
+14.9655	Everlasting Torment
+14.9211	Sage's Dousing
+14.9096	Diabolic Edict
+14.9054	Mana Vault
+14.8615	Sundering Titan
+14.8124	Turnabout
+14.7652	Skred
+14.7194	Shattering Spree
+14.7093	Precursor Golem
+14.7015	Eyeblight's Ending
+14.684	Plow Under
+14.6734	Beseech the Queen
+14.6688	Leonin Relic-Warder
+14.6611	Detritivore
+14.6569	Gaea's Revenge
+14.6377	Bramblewood Paragon
+14.6312	Enclave Cryptologist
+14.6198	Boreal Druid
+14.5981	Chord of Calling
+14.5954	Iona, Shield of Emeria
+14.5924	Scorched Rusalka
+14.4554	Crovax, Ascendant Hero
+14.3491	Mind Control
+14.346	Growth Spasm
+14.3402	Glint Hawk
+14.3061	Dread Return
+14.2987	Deus of Calamity
+14.0668	Chandra Nalaar
+14.0172	Gempalm Incinerator
+14.0141	Threaten
+13.9901	Wirewood Symbiote
+13.9901	Birchlore Rangers
+13.9889	Wild Mongrel
+13.9661	Jackal Pup
+13.9427	Springleaf Drum
+13.9312	Fireball
+13.9181	Taiga
+13.894	Raven's Crime
+13.8773	Avalanche Riders
+13.8508	Shard Volley
+13.8296	Snakeform
+13.8006	Crib Swap
+13.7708	Emeria, the Sky Ruin
+13.7227	Cephalid Illusionist
+13.6297	Progenitus
+13.6149	Barren Moor
+13.6047	Banefire
+13.5922	Icy Manipulator
+13.5749	Empty the Warrens
+13.5001	Boseiju, Who Shelters All
+13.398	Forbidden Orchard
+13.3027	Orzhov Basilica
+13.2378	Mind Sludge
+13.2103	Keldon Megaliths
+13.1999	Sulfur Elemental
+13.1866	Nissa Revane
+13.1707	Fireblast
+13.1407	Extractor Demon
+13.107	Sleight of Hand
+13.1066	Wood Elves
+13.0863	Kargan Dragonlord
+13.0833	Ulamog, the Infinite Gyre
+13.0545	Demonfire
+13.015	Perish
+12.9928	Merchant Scroll
+12.9871	Sulfurous Blast
+12.9611	Boil
+12.9337	Scrubland
+12.9117	Soul Warden
+12.8667	Tin Street Hooligan
+12.8087	Accumulated Knowledge
+12.8045	Violent Outburst
+12.7836	Stroke of Genius
+12.7179	Wall of Tanglecord
+12.6565	Hinder
+12.6486	Death Cloud
+12.5781	Salt Marsh
+12.5702	Aven Riftwatcher
+12.5651	Mystifying Maze
+12.5577	Aura of Silence
+12.5399	Ancient Den
+12.5312	Abeyance
+12.524	Edge of Autumn
+12.504	Ravenous Rats
+12.4328	Countryside Crusher
+12.4152	Wildfire
+12.4149	High Tide
+12.4145	Foresee
+12.4002	Firebolt
+12.3931	Desert
+12.386	Sword of the Meek
+12.335	Thorn of Amethyst
+12.3137	Scute Mob
+12.2506	Razormane Masticore
+12.2479	Temple of the False God
+12.2377	Hero of Oxid Ridge
+12.2329	Brine Elemental
+12.1856	Magus of the Scroll
+12.1425	Wanderwine Hub
+12.1185	Strip Mine
+12.1142	Quenchable Fire
+12.0923	Nissa's Chosen
+12.0889	Order of the Ebon Hand
+12.0718	Martyr of Sands
+12.0568	Regal Force
+11.9696	Flames of the Blood Hand
+11.9014	Renewed Faith
+11.8719	Calcite Snapper
+11.789	Voltaic Key
+11.7664	Choke
+11.7563	Masticore
+11.7353	Bridge from Below
+11.7275	Font of Mythos
+11.6922	Careful Study
+11.679	Bojuka Bog
+11.6147	Secluded Steppe
+11.5768	Stinkweed Imp
+11.5557	Tooth and Nail
+11.5539	Treefolk Harbinger
+11.5511	Show and Tell
+11.5169	Necropotence
+11.5048	Vitu-Ghazi, the City-Tree
+11.4807	Coastal Tower
+11.475	Venser, the Sojourner
+11.475	Tempered Steel
+11.473	Unwilling Recruit
+11.473	AEther Vial
+11.4514	Pyrostatic Pillar
+11.4294	Momentary Blink
+11.4155	Deny Reality
+11.4088	Soltari Priest
+11.3757	Gaea's Blessing
+11.3623	Svyelunite Temple
+11.3393	Goblin Warchief
+11.3227	Mind Over Matter
+11.2818	Coalition Relic
+11.2541	Duplicant
+11.2462	Yosei, the Morning Star
+11.2126	Chainer's Edict
+11.1506	Emeria Angel
+11.125	Mouth of Ronom
+11.1001	Worldly Tutor
+11.0849	Mystic Enforcer
+11.0722	Grim Monolith
+11.0402	Thornling
+11.004	Annex
+10.982	Prophetic Prism
+10.9339	Demonic Consultation
+10.9105	Polymorph
+10.8906	Tombstalker
+10.8809	Phyrexian Revoker
+10.8417	Consecrated Sphinx
+10.7851	Trickbind
+10.783	Despise
+10.7739	Millstone
+10.7659	Kuldotha Phoenix
+10.7559	Ad Nauseam
+10.7531	Naya Panorama
+10.7478	Smallpox
+10.7403	Spitebellows
+10.7402	Ironclaw Orcs
+10.714	Fire // Ice
+10.7083	Tidings
+10.7063	Caldera Hellion
+10.6688	Borderland Ranger
+10.662	Spinerock Knoll
+10.6506	Sickening Shoal
+10.6444	Mind's Desire
+10.5677	Sylvan Ranger
+10.5299	Carven Caryatid
+10.4686	Molten-Tail Masticore
+10.4655	Renegade Doppelganger
+10.4582	Stalking Stones
+10.4313	Ohran Viper
+10.4219	Defense Grid
+10.4077	Scab-Clan Mauler
+10.4022	Vithian Renegades
+10.3924	Misdirection
+10.3828	Calciform Pools
+10.3689	Golgari Grave-Troll
+10.3639	Harm's Way
+10.3491	Soul Snuffers
+10.3432	Finest Hour
+10.2539	Joraga Warcaller
+10.1689	Phyrexian Negator
+10.1294	Wolf-Skull Shaman
+10.0887	Saffi Eriksdotter
+10.0877	Reap and Sow
+10.0123	Aven Mindcensor
+9.98164	Goblin Ringleader
+9.98164	Goblin Matron
+9.9723	Brain Freeze
+9.97066	Resounding Thunder
+9.93	Act of Aggression
+9.92398	Grapeshot
+9.92159	Sulfuric Vortex
+9.89968	Elves of Deep Shadow
+9.84709	Rule of Law
+9.83443	Enlightened Tutor
+9.83337	Leonin Arbiter
+9.83175	Whispers of the Muse
+9.81536	Land Tax
+9.81106	Spell Burst
+9.80829	Essence Warden
+9.78385	Twisted Image
+9.76735	Coldsteel Heart
+9.76237	Mistvein Borderpost
+9.74099	Akroma's Vengeance
+9.72401	Arc-Slogger
+9.72255	Nomads en-Kor
+9.69378	Seal of Primordium
+9.68072	Rewind
+9.55142	Kazandu Blademaster
+9.54006	Meditate
+9.53512	Atog
+9.53011	Spectral Force
+9.51791	Unstable Footing
+9.50767	Selesnya Guildmage
+9.50187	Glimmervoid
+9.49917	Mold Shambler
+9.4896	Elspeth Tirel
+9.45467	Vapor Snare
+9.45329	Psychatog
+9.37973	Naya Charm
+9.35981	Leyline of Vitality
+9.34848	Open the Vaults
+9.34459	Chimeric Idol
+9.33085	Ancient Ziggurat
+9.32751	Ensnaring Bridge
+9.29323	Delay
+9.29259	Crucible of Worlds
+9.27407	Terravore
+9.25854	Boomerang
+9.25014	Master of Etherium
+9.24907	Jushi Apprentice
+9.24032	Lapse of Certainty
+9.22579	Nantuko Husk
+9.21108	Quest for the Holy Relic
+9.18103	Boros Garrison
+9.16455	Gerrard's Verdict
+9.11995	Selesnya Sanctuary
+9.11197	Winter Orb
+9.09889	Powder Keg
+9.08313	Land Grant
+9.07169	Eye of Ugin
+9.06403	Hive Mind
+9	Vault Skirge
+9	Dispatch
+8.94946	Abyssal Persecutor
+8.94796	Memory Lapse
+8.92574	Chaotic Backlash
+8.91231	Glare of Subdual
+8.90733	Double Negative
+8.90138	Telling Time
+8.88081	Contested War Zone
+8.87689	Squall Line
+8.83893	Trace of Abundance
+8.83104	Lava Spike
+8.82547	Quirion Dryad
+8.81157	Yixlid Jailer
+8.81135	Ezuri, Renegade Leader
+8.79835	Skirk Prospector
+8.77977	Werebear
+8.77876	Crush
+8.77097	Quicksand
+8.74589	Leyline of Punishment
+8.74241	Price of Progress
+8.74108	Kiln Fiend
+8.70229	Deglamer
+8.66236	Sulfur Vent
+8.63952	Boom // Bust
+8.61529	Willbender
+8.58872	Psionic Blast
+8.57399	Vampire Nocturnus
+8.57246	Wing Shards
+8.54823	Hindering Light
+8.53571	Dismiss
+8.51116	Ancient Spring
+8.488	Electrolyze
+8.44237	Gush
+8.44013	Sylvan Scrying
+8.42302	Heartbeat of Spring
+8.42302	Early Harvest
+8.42231	Spike Feeder
+8.4021	Stonewood Invocation
+8.34946	Pulse of the Fields
+8.32515	Chain Lightning
+8.29608	Moldervine Cloak
+8.29527	Architects of Will
+8.28064	Think Twice
+8.27532	Sylvan Library
+8.27481	Barbarian Ring
+8.24311	Epochrasite
+8.23237	Body Double
+8.22812	Gorilla Shaman
+8.22513	Augur of Skulls
+8.21006	Ghastly Demise
+8.1978	Lion's Eye Diamond
+8.17706	Oblivion Stone
+8.17622	Austere Command
+8.09499	Phyrexian Ironfoot
+8.08964	Wickerbough Elder
+8.08555	Scryb Ranger
+8.08407	Zuran Orb
+8.05626	Disrupt
+8.05233	Duergar Hedge-Mage
+8.04189	Lavaball Trap
+8.04054	Crystal Vein
+8.02229	Night of Souls' Betrayal
+8.00439	Hokori, Dust Drinker
+8	Mutagenic Growth
+8	Glint Hawk Idol
+7.9967	Scrying Sheets
+7.9933	Archive Trap
+7.98269	Serra Avenger
+7.96883	Moment's Peace
+7.95683	Tinder Farm
+7.94421	Glassdust Hulk
+7.92177	Blastoderm
+7.90959	Pulse of the Forge
+7.89712	Maze of Ith
+7.88804	Jinxed Idol
+7.87814	Badlands
+7.87803	Flood Plain
+7.87728	Hypergenesis
+7.87367	Serum Visions
+7.87033	Mirrorweave
+7.84954	Arcane Denial
+7.84949	Hideous Laughter
+7.83392	Lightning Rift
+7.82523	Orzhov Pontiff
+7.8201	Shadow Guildmage
+7.80603	Mother of Runes
+7.76289	Kozilek, Butcher of Truth
+7.75916	Demon of Death's Gate
+7.69675	Daru Spiritualist
+7.6806	Expedition Map
+7.66948	Purge
+7.66354	Sudden Death
+7.66183	Molten Slagheap
+7.64251	Gilded Light
+7.62742	Emerald Charm
+7.58138	Fertile Ground
+7.57571	Akroma, Angel of Fury
+7.57558	Forbid
+7.57159	Energy Flux
+7.55383	Vinelasher Kudzu
+7.55345	Knight of Stromgald
+7.55344	The Rack
+7.55293	Wirewood Hivemaster
+7.54944	Solitary Confinement
+7.54174	Gainsay
+7.46326	Nezumi Graverobber
+7.43081	Shizo, Death's Storehouse
+7.42709	Detonate
+7.42674	Candelabra of Tawnos
+7.41179	Kavu Predator
+7.41027	Llanowar Reborn
+7.39139	Triskelion
+7.38861	Samurai of the Pale Curtain
+7.38233	Necropede
+7.37912	Courier's Capsule
+7.37302	Ronom Unicorn
+7.36872	Tezzeret the Seeker
+7.35657	Mystical Tutor
+7.34673	Sea Sprite
+7.33867	Contagion
+7.27968	Ink-Eyes, Servant of Oni
+7.24786	Take Possession
+7.2245	Putrid Imp
+7.21906	Refraction Trap
+7.21316	Korlash, Heir to Blackblade
+7.18941	Mana Tithe
+7.13968	Angelsong
+7.13551	Pyromancer's Swath
+7.12263	Wheel of Sun and Moon
+7.11923	Natural Order
+7.10826	Vesuva
+7.10722	Dissipate
+7.09579	Peer Through Depths
+7.08821	Into the North
+7.07197	Dismantling Blow
+7.06698	Yawgmoth's Will
+7.05511	Conqueror's Pledge
+7.04923	Capsize
+7.04827	Looter il-Kor
+7.04685	Dwarven Ruins
+7.03066	Uktabi Orangutan
+7.00095	Cephalid Coliseum
+7	Oxidda Scrapmelter
+6.99804	Kozilek's Predator
+6.98511	Worship
+6.98331	Gigadrowse
+6.98248	Trinisphere
+6.97805	Orzhov Signet
+6.97189	Haunting Echoes
+6.96961	Tree of Tales
+6.94839	Minamo, School at Water's Edge
+6.91706	Shadow of Doubt
+6.91635	Exhume
+6.9038	Innocent Blood
+6.89077	Trapmaker's Snare
+6.8895	Snapback
+6.88634	Unmask
+6.87154	Firestorm
+6.84268	Weird Harvest
+6.83998	Windfall
+6.83998	Tolarian Academy
+6.83557	Tajuru Preserver
+6.83181	Farseek
+6.81187	Lobotomy
+6.79841	Deep Analysis
+6.79802	Pact of the Titan
+6.79105	Tinker
+6.78178	Devastating Dreams
+6.76388	Mind Rot
+6.74075	Dwarven Miner
+6.73191	Enduring Ideal
+6.71521	Dromar's Charm
+6.71363	Sygg, River Guide
+6.68802	Fiery Justice
+6.68283	Circular Logic
+6.66033	Okina, Temple to the Grandfathers
+6.65959	Lava Dart
+6.65819	Flamekin Harbinger
+6.65267	Faerie Trickery
+6.63668	Starstorm
+6.6309	Kor Outfitter
+6.60303	Starlit Sanctum
+6.5749	Aquamoeba
+6.56295	Ingot Chewer
+6.56286	Sacred Ground
+6.56043	Wall of Blossoms
+6.53684	Drift of Phantasms
+6.48963	Sarcomancy
+6.48963	Carnophage
+6.48746	Gargoyle Castle
+6.48592	Hearth Kami
+6.45973	Astral Slide
+6.44325	Windstorm
+6.42194	Thawing Glaciers
+6.41301	Sapphire Medallion
+6.402	Demonic Dread
+6.39702	Burning-Tree Shaman
+6.37666	Painter's Servant
+6.37664	Rude Awakening
+6.35899	Anarchy
+6.33497	Steal Artifact
+6.32336	Armillary Sphere
+6.31748	Izzet Signet
+6.30301	Grim Discovery
+6.29186	Shining Shoal
+6.28555	Saproling Burst
+6.28555	Kavu Chameleon
+6.2817	Descendant of Kiyomaro
+6.27986	Scroll Rack
+6.25007	Miren, the Moaning Well
+6.24267	Primal Beyond
+6.2421	Autumn's Veil
+6.21916	Chandra Ablaze
+6.21796	Spell Blast
+6.21735	Angel's Grace
+6.2049	Void
+6.18383	Eladamri's Call
+6.17923	Knight of the Holy Nimbus
+6.17736	Wayfarer's Bauble
+6.17321	Honorable Passage
+6.17117	Swerve
+6.13752	Skycloud Expanse
+6.12761	Rain of Tears
+6.11438	Spectral Lynx
+6.10932	Armageddon
+6.10876	Spark Elemental
+6.09717	Dimir House Guard
+6.05559	Dust Bowl
+6.05277	Addle
+6.03216	Wildfire Emissary
+6.02466	Riptide Laboratory
+6.00292	Sudden Shock
+6	Mycosynth Wellspring
+6	Into the Core
+5.98674	Thistledown Liege
+5.9854	Knotvine Paladin
+5.97842	Firemane Angel
+5.95191	Arashi, the Sky Asunder
+5.94809	Bloodthrone Vampire
+5.94669	Sneak Attack
+5.91766	Shield of the Oversoul
+5.91641	Icatian Javelineers
+5.89267	Kemba, Kha Regent
+5.8809	Phyrexian Obliterator
+5.87531	Calciderm
+5.87092	Blue Elemental Blast
+5.81073	Null Rod
+5.80917	Tithe
+5.80841	Eye of Nowhere
+5.80426	Dragonstorm
+5.80368	Goblin Sharpshooter
+5.78185	Incremental Blight
+5.77878	Pentad Prism
+5.76969	Gilded Drake
+5.75613	Iwamori of the Open Fist
+5.74457	Drain Life
+5.72865	Consign to Dream
+5.72233	Massacre
+5.71773	Fatal Frenzy
+5.71503	Call to Mind
+5.71155	Stonecloaker
+5.71075	Illusions of Grandeur
+5.70292	Piston Sledge
+5.69123	Elfhame Palace
+5.69123	Akroma’s Vengeance
+5.68889	Disrupting Scepter
+5.68837	Sun Droplet
+5.68471	Survival Cache
+5.68471	Soul's Attendant
+5.68471	Serra Ascendant
+5.68471	Ajani's Pridemate
+5.6835	Grazing Gladehart
+5.67371	Blinking Spirit
+5.66794	Sinkhole
+5.65934	Gaea's Cradle
+5.64207	Mwonvuli Acid-Moss
+5.63194	Story Circle
+5.6289	Pillage
+5.62758	Spawning Breath
+5.6163	Form of the Dragon
+5.61417	Undiscovered Paradise
+5.58783	Pilgrim's Eye
+5.57355	Masked Admirers
+5.56657	Furnace Dragon
+5.53345	Azorius Chancery
+5.53131	Kabira Evangel
+5.53131	Hada Freeblade
+5.51047	Donate
+5.50116	Final Judgment
+5.49504	Eiganjo Castle
+5.4868	Funeral Charm
+5.47685	Thran Dynamo
+5.45214	Marsh Flitter
+5.44857	Ant Queen
+5.44409	Goblin Welder
+5.43834	Withered Wretch
+5.43422	Felidar Sovereign
+5.42448	Nihil Spellbomb
+5.42112	Loam Lion
+5.42082	Tsabo's Decree
+5.41327	Nezumi Shortfang
+5.41185	Pyrokinesis
+5.38215	Bonded Fetch
+5.37399	Spark Spray
+5.33146	Jester's Cap
+5.33027	Jötun Grunt
+5.28678	Beastmaster Ascension
+5.28215	Infernal Tutor
+5.2764	Teferi's Moat
+5.27097	Nimbus Maze
+5.26028	Distress
+5.2519	Runeflare Trap
+5.22648	Yavimaya Elder
+5.22514	Ancient Stirrings
+5.21588	Genesis Wave
+5.19796	Yavimaya Dryad
+5.19337	Blade of the Bloodchief
+5.17735	Dimir Aqueduct
+5.17447	Arc Lightning
+5.16343	Shattering Pulse
+5.15664	Control Magic
+5.12806	Geothermal Crevice
+5.08052	Kjeldoran Outpost
+5.07867	Wake Thrasher
+5.06593	Molder Slug
+5.05967	Skittering Skirge
+5.04844	Rout
+5.02709	Cloudpost
+5.02319	Vithian Stinger
+5.002	Rend Flesh
+5.00082	Gamble
+5	Marrow Shards
+4.99929	Pull from Eternity
+4.96513	Wargate
+4.9612	Yawgmoth's Agenda
+4.95334	Bloom Tender
+4.94713	Plaxmanta
+4.93734	Mind Harness
+4.9263	Talus Paladin
+4.91157	Boros Signet
+4.91014	Woodfall Primus
+4.89422	Dakmor Salvage
+4.89242	Oboro, Palace in the Clouds
+4.89204	Simic Signet
+4.88836	Wear Away
+4.88063	Tel-Jilad Justice
+4.87677	Karakas
+4.87653	Haunting Hymn
+4.87013	Erhnam Djinn
+4.84983	Horobi's Whisper
+4.82537	Elvish Champion
+4.82459	Mikokoro, Center of the Sea
+4.82176	Ichorid
+4.80848	Kor Duelist
+4.80356	Mana Short
+4.78609	Mogg Flunkies
+4.78541	Cloudstone Curio
+4.77691	Grindstone
+4.7492	Wonder
+4.74726	Sedraxis Alchemist
+4.7259	Grand Arbiter Augustin IV
+4.72359	Breakthrough
+4.70055	Urza's Rage
+4.66963	Myr Retriever
+4.65342	Sunspring Expedition
+4.64453	Ivory Tower
+4.64198	Scepter of Fugue
+4.63213	Captivating Vampire
+4.63117	Weathered Wayfarer
+4.61697	Cabal Ritual
+4.60983	Grim Harvest
+4.59562	Imp's Mischief
+4.58636	Kira, Great Glass-Spinner
+4.57883	Fountain of Youth
+4.55991	Flash
+4.55912	Harmonic Sliver
+4.55471	Jotun Grunt
+4.54703	Jester's Scepter
+4.53398	Rise // Fall
+4.53301	Rage Forger
+4.53268	Dwarven Blastminer
+4.51697	Goblin Lackey
+4.51373	Serra Avatar
+4.50389	Rite of Consumption
+4.49632	Sphere of Law
+4.49289	Tendrils of Agony
+4.47177	Seed Spark
+4.4672	Creeping Mold
+4.46635	Demolish
+4.46066	Terashi's Grasp
+4.45366	Warren Instigator
+4.43615	Somber Hoverguard
+4.42635	Darksteel Colossus
+4.38961	Blistering Firecat
+4.38551	Emblazoned Golem
+4.38397	Crime // Punishment
+4.3737	Disintegrate
+4.36891	Circle of Protection: Black
+4.36471	Slith Firewalker
+4.34462	Mycoloth
+4.33683	Plagued Rusalka
+4.32087	Teysa, Orzhov Scion
+4.29436	Royal Assassin
+4.29315	Jade Leech
+4.2774	Scarblade Elite
+4.27044	Relic Barrier
+4.26973	Tireless Tribe
+4.26854	Proclamation of Rebirth
+4.25881	Dystopia
+4.25649	Stormbind
+4.2428	Elvish Lyrist
+4.23794	Ideas Unbound
+4.22389	Feldon's Cane
+4.22264	Compost
+4.2213	Eyes of the Wisent
+4.21683	Gaea's Might
+4.21077	Hurkyl's Recall
+4.20589	Porphyry Nodes
+4.18244	Sunlance
+4.17982	Gather Specimens
+4.17979	Assault // Battery
+4.17612	Morphling
+4.15525	Seal of Removal
+4.14691	Thornscape Battlemage
+4.14245	Wipe Away
+4.134	Glittering Wish
+4.13122	Flashfires
+4.1295	Jund Panorama
+4.12842	Slay
+4.1236	Confiscate
+4.12138	Evasive Action
+4.1153	Fledgling Mawcor
+4.10613	Goblin Sledder
+4.10569	Magnivore
+4.10175	Energy Field
+4.09938	Goblin King
+4.09806	Hammer of Bogardan
+4.08339	Last Breath
+4.06724	Sowing Salt
+4.05949	Convincing Mirage
+4.05765	Mesmeric Fiend
+4.05757	Elixir of Immortality
+4.05583	Phyrexian Processor
+4.0514	Nekrataal
+4.04677	Balance
+4.0434	Echoing Decay
+4.03259	Ghostly Prison
+4.01102	Comet Storm
+4.00881	Sparksmith
+4	Whispering Specter
+4	Volt Charge
+4	Virulent Wound
+4	Spined Thopter
+4	Shrine of Loyal Legions
+4	Red Sun's Zenith
+4	Puresteel Paladin
+4	Origin Spellbomb
+4	Ichor Wellspring
+4	Ichorclaw Myr
+4	Artillerize
+3.98495	Hobble
+3.98383	Gathan Raiders
+3.98351	Final Fortune
+3.98268	Dauthi Slayer
+3.98	Gitaxian Probe
+3.97732	Opt
+3.97547	Smokebraider
+3.96463	Echoing Ruin
+3.96	Torpor Orb
+3.96	Furnace Scamp
+3.94478	Sunscape Familiar
+3.93706	Quagnoth
+3.92694	Cloud of Faeries
+3.92261	Golgari Rot Farm
+3.88781	Argentum Armor
+3.88741	Cry of Contrition
+3.88368	Recall
+3.88212	Collective Restraint
+3.86655	Nightmare Void
+3.86323	Hibernation
+3.85314	Militia's Pride
+3.85297	Horizon Spellbomb
+3.83343	Furystoke Giant
+3.82542	Overload
+3.81852	Manabond
+3.81852	Exploration
+3.81608	Monstrous Carabid
+3.81476	Waterfront Bouncer
+3.80825	Fathom Seer
+3.80488	Phantom Centaur
+3.80396	Primal Bellow
+3.80396	Groundswell
+3.80396	Æther Vial
+3.79342	Gemstone Caverns
+3.77941	Skeletal Scrying
+3.77569	Worldly Counsel
+3.77569	Allied Strategies
+3.77421	Mana Drain
+3.76592	Obsidian Fireheart
+3.76327	Blazing Shoal
+3.76213	Indrik Stomphowler
+3.75645	Eradicate
+3.75363	Rebuff the Wicked
+3.75119	Elvish Hexhunter
+3.74949	Greater Good
+3.72465	Ancient Amphitheater
+3.71337	Blue Sun's Zenith
+3.70603	Ivory Mask
+3.69984	Goldmeadow Harrier
+3.69871	Fire Diamond
+3.69539	Whirling Dervish
+3.67726	Foil
+3.67118	Time Sieve
+3.66393	Barbed Lightning
+3.65909	Incandescent Soulstoke
+3.65017	Magus of the Tabernacle
+3.62815	Protean Hulk
+3.62427	Moat
+3.62039	Otherworldly Journey
+3.61753	Mul Daya Channelers
+3.61753	Flickerwisp
+3.60211	Reverent Silence
+3.59483	Skarrg, the Rage Pits
+3.58019	Giantbaiting
+3.5733	Bonehoard
+3.56264	Elsewhere Flask
+3.55277	Pyretic Ritual
+3.54882	Dread of Night
+3.53341	Talisman of Impulse
+3.53021	Jayemdae Tome
+3.52995	Act of Treason
+3.52883	Worm Harvest
+3.52435	Sacred Mesa
+3.51524	Aeolipile
+3.51223	Goblin Vandal
+3.51008	Thrummingbird
+3.51008	Grand Architect
+3.50254	Gerrard's Wisdom
+3.49262	Treasure Mage
+3.47498	Court Homunculus
+3.47373	Krark-Clan Shaman
+3.46269	Bad Moon
+3.45774	Dromar's Cavern
+3.45274	Festercreep
+3.44023	Kuldotha Forgemaster
+3.43517	Steel Golem
+3.42711	Hisoka's Defiance
+3.41154	Incendiary Command
+3.41023	Spellshock
+3.40627	Goblin Assault
+3.40583	Shape Anew
+3.40219	Fiery Temper
+3.37832	Dryad Arbor
+3.37505	Genesis
+3.37066	Ondu Cleric
+3.36773	Arc Slogger
+3.34889	Divert
+3.34299	Sorin Markov
+3.34207	Tangle Wire
+3.33938	Isochron Scepter
+3.33289	Magus of the Bazaar
+3.3161	Rising Waters
+3.30828	Gilt-Leaf Archdruid
+3.30181	Mishra's Helix
+3.29609	Ghitu Fire
+3.2727	Thelonite Hermit
+3.26717	Dovescape
+3.26051	Rakdos Pit Dragon
+3.24021	Mental Note
+3.23965	Golgari Thug
+3.23786	Holy Day
+3.22018	Oath of Druids
+3.21647	Through the Breach
+3.21647	Sandstone Needle
+3.21647	Dragon Tyrant
+3.20667	Frostling
+3.20168	Tel-Jilad Chosen
+3.20007	Muse Vessel
+3.19868	Admonition Angel
+3.19051	Lay of the Land
+3.18268	Dark Banishing
+3.18174	Concentrate
+3.17788	Rebuild
+3.17227	Strangling Soot
+3.1527	Scepter of Dominance
+3.15169	Return to Dust
+3.14758	Silence
+3.14069	Upheaval
+3.13529	Deranged Hermit
+3.13107	Genju of the Spires
+3.1264	Zombie Infestation
+3.12406	Hull Breach
+3.12319	Dauthi Horror
+3.12319	Blood Pet
+3.11593	Shambling Remains
+3.11508	Leaf-Crowned Elder
+3.11129	Bojuka Brigand
+3.11129	Bala Ged Thief
+3.11056	Bottled Cloister
+3.10425	Hand of Cruelty
+3.09835	Fledgling Dragon
+3.0972	Congregation at Dawn
+3.09047	Coffin Purge
+3.08702	Tsabo's Web
+3.08702	Mageta the Lion
+3.07705	Phyrexian Dreadnought
+3.07431	Fellwar Stone
+3.07296	Chain of Vapor
+3.06605	Izzet Boilerworks
+3.0623	Fire/Ice
+3.05719	Desolation Angel
+3.05393	Black Vise
+3.03672	Nomads En-Kor
+3.02923	Molten Disaster
+3.0205	Thran Foundry
+3.01888	Vendetta
+3.01888	Pawn of Ulamog
+3.01888	Copperhorn Scout
+3.01634	Grave Pact
+3.00845	Nostalgic Dreams
+3	Hex Parasite
+3	Gremlin Mine
+3	Entomber Exarch
+3	Blade Splicer
+3	Beast Within
+2.98504	Empty-Shrine Kannushi
+2.98463	Dryad Sophisticate
+2.98403	Rescind
+2.97987	March of the Machines
+2.97669	Bribery
+2.97258	Metalworker
+2.97066	Two-Headed Dragon
+2.97033	Torrent of Souls
+2.96088	Shelldock Isle
+2.95661	Humility
+2.95507	Shaman en-Kor
+2.94735	Nimble Mongoose
+2.9447	Auriok Champion
+2.9348	Seal of Cleansing
+2.93361	Demystify
+2.93059	Beacon of Creation
+2.92921	Iron Myr
+2.92921	Assault Strobe
+2.92859	Temporal Aperture
+2.92859	Covetous Dragon
+2.9109	Surgical Extraction
+2.90728	Manriki-Gusari
+2.90143	Darkwater Catacombs
+2.89803	Entomb
+2.89181	Dread Statuary
+2.88555	Faceless Butcher
+2.88264	Merfolk Sovereign
+2.87927	Enigma Sphinx
+2.87459	Squandered Resources
+2.87459	Prosperity
+2.87459	Natural Balance
+2.87459	Infernal Contract
+2.87459	Cadaverous Bloom
+2.87115	Sky Hussar
+2.87092	Myrsmith
+2.87092	Gold Myr
+2.85635	Ruins of Trokair
+2.85315	Phyrexian Totem
+2.85297	Shriekhorn
+2.85297	Mirran Mettle
+2.84221	Amrou Scout
+2.8413	Sutured Ghoul
+2.83933	Smash
+2.82444	Traitorous Instinct
+2.82401	Wirewood Elf
+2.82401	Broodhatch Nantuko
+2.82379	Telemin Performance
+2.80985	Last Word
+2.80024	Urborg Volcano
+2.79438	Forsaken Wastes
+2.78866	Talisman of Indulgence
+2.78565	Stromgald Crusader
+2.78565	Serum Powder
+2.78083	Obliterate
+2.78047	Brass Man
+2.7578	Temple Bell
+2.7563	Nightscape Familiar
+2.74631	Hero's Demise
+2.74578	Roar of the Wurm
+2.74135	Tallowisp
+2.7408	River Kelpie
+2.74022	Invoke the Firemind
+2.73235	Genesis Chamber
+2.73022	Doomsday
+2.72228	Sharuum the Hegemon
+2.71315	Lead the Stampede
+2.71315	Elvish Harbinger
+2.7097	Simic Growth Chamber
+2.70793	Back to Basics
+2.69846	Lonely Sandbar
+2.69318	Legacy's Allure
+2.69158	Mercy Killing
+2.68859	Fecundity
+2.68304	Soulless Revival
+2.67198	Kaleidostone
+2.67127	Eight-and-a-Half-Tails
+2.66565	Sakashima the Impostor
+2.66067	Bad River
+2.64799	Flamebreak
+2.64731	Zo-Zu the Punisher
+2.64494	Ignite Memories
+2.63744	Viridian Zealot
+2.63704	Talisman of Dominance
+2.63502	Light from Within
+2.63243	Psychotic Episode
+2.63159	Symbiotic Wurm
+2.62264	Shuko
+2.61557	Timbermare
+2.6155	Moriok Rigger
+2.61127	Browbeat
+2.61009	Snap
+2.60624	Steel Overseer
+2.60563	Thunderscape Battlemage
+2.59455	Goblin Legionnaire
+2.58904	Blightsteel Colossus
+2.57628	Triskelavus
+2.56334	Mark of Asylum
+2.55036	Raven Familiar
+2.55036	Cavern Harpy
+2.55036	Aluren
+2.54474	Lodestone Golem
+2.54206	Obelisk of Alara
+2.53021	Okiba-Gang Shinobi
+2.52017	Ihsan's Shade
+2.51515	Lim-Dul's Vault
+2.51294	Worthy Cause
+2.51176	Windborn Muse
+2.50371	Pyrite Spellbomb
+2.49817	Hatred
+2.49493	Spellbreaker Behemoth
+2.4941	Quest for the Goblin Lord
+2.49407	Mana Web
+2.49318	Flaring Pain
+2.48855	Commune with Nature
+2.47791	Dream Tides
+2.47526	Thwart
+2.4644	Seize the Soul
+2.46405	Sins of the Past
+2.46282	Fortune Thief
+2.46037	Dragon Breath
+2.45299	Lightning Blast
+2.44976	Hallowed Ground
+2.44447	Brilliant Ultimatum
+2.44417	Quillspike
+2.43009	Memory Jar
+2.4257	Hoodwink
+2.42555	Rancid Earth
+2.42555	Mutilate
+2.42555	Braids, Cabal Minion
+2.4232	Highland Weald
+2.42183	Rending Vines
+2.42099	Journeyer's Kite
+2.42002	Oran-Rief Survivalist
+2.42002	Akoum Battlesinger
+2.41564	Talisman of Progress
+2.41375	Destructive Flow
+2.39727	Stalking Yeti
+2.39634	Aquitect's Will
+2.38565	Miscalculation
+2.38531	Thrill of the Hunt
+2.37187	Wash Out
+2.37187	Vodalian Merchant
+2.37187	Rishadan Airship
+2.37187	Jolting Merfolk
+2.37187	Crypt Angel
+2.37032	Hit/Run
+2.36967	Cloudchaser Kestrel
+2.36788	Urza's Bauble
+2.34815	Shred Memory
+2.32164	Irrigation Ditch
+2.32091	Crater Hellion
+2.31197	Fyndhorn Elves
+2.30253	Tradewind Rider
+2.30142	Valley Rannet
+2.30142	Street Wraith
+2.30142	Jungle Weaver
+2.30142	Deadshot Minotaur
+2.29259	Rakdos Carnarium
+2.29055	Zur the Enchanter
+2.28673	Diabolic Tutor
+2.2846	Avarax
+2.2784	Nyxathid
+2.27352	Insidious Dreams
+2.26975	Greenseeker
+2.26542	Contested Cliffs
+2.26354	Wheel of Fate
+2.2631	Might of Old Krosa
+2.25562	Spike Weaver
+2.25562	Filigree Angel
+2.25382	Arcane Laboratory
+2.25229	Buried Alive
+2.24361	Bosk Banneret
+2.23736	Thoughtbound Primoc
+2.23419	Infiltration Lens
+2.22999	Gruul Signet
+2.22901	Drowned Rusalka
+2.2263	Quirion Ranger
+2.22545	Wall of Mulch
+2.22545	Tranquil thicket
+2.22545	Explosive Vegetation
+2.22486	Rapid Decay
+2.2191	Necrotic Ooze
+2.21684	Ob Nixilis, the Fallen
+2.21073	Stronghold Zeppelin
+2.21073	Stinging Barrier
+2.21073	Stench of Evil
+2.21073	Saprazzan Skerry
+2.21073	Eye of Ramos
+2.21073	Drake Hatchling
+2.20581	Skyshroud Elite
+2.17977	Night's Whisper
+2.1753	Time of Need
+2.16798	Culling Scales
+2.16374	Orcish Artillery
+2.16015	Guile
+2.16012	Exclude
+2.15653	Rise from the Grave
+2.14575	Soul Manipulation
+2.13138	Dream Leash
+2.13024	Vision Charm
+2.1284	Blasting Station
+2.12832	Yukora, the Prisoner
+2.12535	Loaming Shaman
+2.11727	Voidslime
+2.11609	Burnout
+2.11159	Snuff Out
+2.11034	Treasure Hunt
+2.10891	Ethereal Haze
+2.10774	Cabal Coffers
+2.08535	Dwarven Lieutenant
+2.08535	Active Volcano
+2.08434	Nullmage Shepherd
+2.08415	Ophidian
+2.07942	Mountains
+2.07612	Gruul Guildmage
+2.07309	Filigree Fracture
+2.06844	Tarnished Citadel
+2.06475	Uril, the Miststalker
+2.06475	Sarkhan Vol
+2.06475	Fleshbag Marauder
+2.06447	Knight of the Mists
+2.06055	Violent Ultimatum
+2.06055	Kor Hookmaster
+2.05635	Orcish Cannoneers
+2.05451	Shard Phoenix
+2.05364	Spinning Darkness
+2.05343	Terrarion
+2.05051	Choking Sands
+2.0454	Crypt Champion
+2.04413	Skizzik
+2.04376	Crusade
+2.03994	Sigil of the Empty Throne
+2.03962	Volrath's Stronghold
+2.03719	Rainbow Efreet
+2.03568	Rack and Ruin
+2.0322	Elephant Grass
+2.03184	Batwing Brume
+2.02366	Hoofprints of the Stag
+2.01954	Viscera Dragger
+2.01954	Tome Scour
+2.01954	Rotting Rats
+2.01954	Crypt of Agadeem
+2.0172	Meekstone
+2.01027	Spire Golem
+2.00573	Ribbons of Night
+2.00298	Wild Dogs
+2	White Sun's Zenith
+2	Tezzeret's Gambit
+2	Indomitable Archangel
+1.99927	Ray of Revelation
+1.99305	Horde of Notions
+1.99192	Nath of the Gilt-Leaf
+1.98656	Future Sight
+1.98044	Tangle
+1.9784	Vicious Hunger
+1.97627	Stoic Angel
+1.96698	Steelshaper's Gift
+1.96307	Blood Oath
+1.9602	Phyrexian Metamorph
+1.95956	Kor Cartographer
+1.95574	Daru Sanctifier
+1.9549	Hand of Honor
+1.9483	Balancing Act
+1.9483	Archaeological Dig
+1.94731	Roil Elemental
+1.94036	Hana Kami
+1.93363	Skittering Horror
+1.92631	Burn Trail
+1.92513	Recollect
+1.9224	Lignify
+1.92057	Glimpse the Unthinkable
+1.91766	Mountain Valley
+1.9163	Lodestone Bauble
+1.90892	Voice of All
+1.90798	Bone Shredder
+1.90655	Clickslither
+1.90436	Order of Whiteclay
+1.90116	Phyrexian Plaguelord
+1.90016	Nucklavee
+1.89293	Violent Eruption
+1.88619	Shrieking Grotesque
+1.88173	Oona's Prowler
+1.87874	Guerrilla Tactics
+1.87734	Karmic Guide
+1.87232	Prowess of the Fair
+1.86732	Anurid Brushhopper
+1.86025	Azorius Guildmage
+1.84922	Quiet Speculation
+1.83723	Wild Ricochet
+1.83158	Honden of Seeing Winds
+1.82756	Oblation
+1.82592	Horobi, Death's Wail
+1.82418	Hide // Seek
+1.82412	Arrogant Wurm
+1.82093	Blind Hunter
+1.81826	Kagemaro, First to Suffer
+1.81523	Sengir Vampire
+1.81502	Harabaz Druid
+1.81102	Counterbore
+1.80876	Glimmerpoint Stag
+1.80724	Unknown Card
+1.80452	Havenwood Battleground
+1.79202	Abbey Gargoyles
+1.79098	Juntu Stakes
+1.78947	Nicol Bolas, Planeswalker
+1.78925	Temporal Adept
+1.78601	Stromgald Cabal
+1.7789	Marauding Knight
+1.77888	Unknown Cards
+1.77651	City of Solitude
+1.77547	Overgrown Estate
+1.75584	Verdant Force
+1.75552	Benalish Emissary
+1.75267	Goblin Goon
+1.75118	Rakdos Signet
+1.74932	Tower Above
+1.73758	Platinum Emperion
+1.73687	Sundering Vitae
+1.73182	Circle of Protection: Green
+1.73182	Binding Grasp
+1.72606	Living End
+1.72456	Kaervek's Torch
+1.72418	Familiar's Ruse
+1.72036	Commandeer
+1.71823	Wren's Run Packmaster
+1.71486	Wreak Havoc
+1.71238	Pandemonium
+1.71133	Orcish Librarian
+1.71133	Dragon Whelp
+1.70705	Hunted Wumpus
+1.70602	Llanowar Mentor
+1.70594	Phyrexian Furnace
+1.70204	Welding Jar
+1.69679	Mistveil Plains
+1.69155	Curiosity
+1.68603	Akroma's Blessing
+1.68555	Gemhide Sliver
+1.68555	Frenetic Sliver
+1.68555	Dormant Sliver
+1.68268	Raise the Alarm
+1.68092	Rofellos, Llanowar Emissary
+1.67973	Seedtime
+1.67245	Arctic Flats
+1.66848	Rhox Meditant
+1.66507	Planar Void
+1.66153	Barter in Blood
+1.65922	Task Force
+1.65334	Deadly Insect
+1.6518	Karrthus, Tyrant of Jund
+1.64688	Tideshaper Mystic
+1.6464	Chittering Rats
+1.64473	Orochi Sustainer
+1.63005	Thoughtweft Trio
+1.62959	Rise/Fall
+1.62485	Heartmender
+1.61946	Mindlock Orb
+1.61635	Compulsion
+1.61557	Forsaken City
+1.61535	Spite // Malice
+1.61352	Resurrection
+1.60445	Mossfire Valley
+1.60274	Shorecrasher Mimic
+1.59953	Shambling Swarm
+1.59739	Clone
+1.59296	Skyshroud Poacher
+1.58592	Glory
+1.58549	Rites of Flourishing
+1.58338	Rushing River
+1.57994	Peek
+1.57482	Jareth, Leonine Titan
+1.57267	Crop Rotation
+1.56343	Riptide Pilferer
+1.54562	Memnarch
+1.53922	Gleeful Sabotage
+1.53626	Global Ruin
+1.53343	Etched Oracle
+1.53027	Thornscape Familiar
+1.53018	Kumano, Master Yamabushi
+1.52996	Mesa Enchantress
+1.52463	Maga, Traitor to Mortals
+1.5206	Gaea's Herald
+1.51913	Grim Poppet
+1.5174	Twilight Shepherd
+1.51703	Wydwen, the Biting Gale
+1.51466	Immortal Coil
+1.51466	Blister Beetle
+1.50496	Adarkar Valkyrie
+1.49966	World Queller
+1.49863	Seedborn Muse
+1.49784	Disrupting Shoal
+1.49492	Elemental Appeal
+1.49406	Arbiter of Knollridge
+1.49264	Mind Warp
+1.49179	Morningtide
+1.48695	Pitfall Trap
+1.47916	Shaman En-Kor
+1.47779	Golgari Brownscale
+1.47438	Pristine Angel
+1.47092	Truce
+1.47092	Arenson's Aura
+1.46967	Bloodchief Ascension
+1.46851	Telekinetic Sliver
+1.46429	Worn Powerstone
+1.46419	Viashino Sandstalker
+1.46418	Recumbent Bliss
+1.45728	Darksteel Axe
+1.4513	Channel the Suns
+1.45013	Ankh of Mishra
+1.44996	Trigon of Mending
+1.44366	Haakon, Stromgald Scourge
+1.4433	Shivan Oasis
+1.4412	Envelop
+1.44042	Necrotic Sliver
+1.44042	Might of Alara
+1.43696	Patriarch's Bidding
+1.43535	Mournwhelk
+1.42997	The Tabernacle at Pendrell Vale
+1.42948	Ill-Gotten Gains
+1.4257	Graveborn Muse
+1.42397	Sudden Spoiling
+1.42179	Head Games
+1.42124	Krosan Reclamation
+1.42111	Intervention Pact
+1.42064	Sanctimony
+1.42064	Order of the White Shield
+1.41708	Restore Balance
+1.41708	Clockspinning
+1.4113	Gauntlet of Power
+1.4069	Mass Polymorph
+1.40605	Darkwater Egg
+1.40194	Prohibit
+1.40194	Probe
+1.39808	Argivian Restoration
+1.39471	Zur's Weirding
+1.39191	Pulverize
+1.39023	Goblins of the Flarg
+1.39023	Dwarven Trader
+1.39023	Brothers of Fire
+1.37332	Squee, Goblin Nabob
+1.37328	Bathe in Light
+1.37214	Riftstone Portal
+1.37103	Goblin Charbelcher
+1.36983	Savor the Moment
+1.36954	Leonin Abunas
+1.36934	Stern Proctor
+1.36749	Twisted Abomination
+1.36511	Nature's Ruin
+1.36257	Cloudcrest Lake
+1.36117	Ninja of the Deep Hours
+1.36019	Tranquility
+1.36019	Barbed Sextant
+1.35146	Mitotic Slime
+1.34714	Dwarven Thaumaturgist
+1.3467	Utopia Vow
+1.34402	Political Trickery
+1.33062	Thoughts of Ruin
+1.3243	Scald
+1.31986	Shinka, the Bloodsoaked Keep
+1.31822	Hidden Gibbons
+1.31794	Emerge Unscathed
+1.31585	Warren Weirding
+1.31499	Devouring Light
+1.31175	Premature Burial
+1.31132	Outrider en-Kor
+1.3067	Piracy Charm
+1.30538	Corrupt
+1.30383	Mindslicer
+1.30267	Legacy Weapon
+1.30107	Persuasion
+1.30076	Spawning Pool
+1.29818	Living Death
+1.29778	Gift of the Gargantuan
+1.2885	Corpse Dance
+1.28589	Wirewood Savage
+1.28539	Goblin Pyromancer
+1.2848	Spring Cleaning
+1.27237	Paralyzing Grasp
+1.27237	Jaddi Lifestrider
+1.27237	Gigantiform
+1.2693	Treachery
+1.26656	Plunge into Darkness
+1.26531	Soltari Monk
+1.26453	Disciple of Grace
+1.2635	Smokestack
+1.26331	Spiteful Visions
+1.26267	Ryusei, the Falling Star
+1.26074	Gaea's Anthem
+1.25335	Sigil of Distinction
+1.25136	Wildfield Borderpost
+1.25064	Cursed Totem
+1.24624	Waylay
+1.24047	Delirium Skeins
+1.23885	Sygg, River Cutthroat
+1.23885	Cliffrunner Behemoth
+1.23885	Bloodhall Ooze
+1.23873	Order of Leitbur
+1.23667	Kindle
+1.23546	Hickory Woodlot
+1.23474	Chronosavant
+1.23425	Vulshok Sorcerer
+1.23418	Wax // Wane
+1.23306	Logic Knot
+1.23263	Spellbane Centaur
+1.2291	Menacing Ogre
+1.2267	Elven Cache
+1.22488	Wizards' School
+1.22488	Deflection
+1.22178	Radha, Heir to Keld
+1.21781	Albino Troll
+1.21776	Grab the Reins
+1.21356	Crimson Acolyte
+1.21212	Lake of the Dead
+1.21093	Lava Burst
+1.21001	Tuktuk Scrapper
+1.20962	Dramatic Entrance
+1.20387	Oona's Grace
+1.19752	Briarhorn
+1.19558	Jokulhaups
+1.19316	Shadowblood Ridge
+1.19206	Time Walk
+1.19206	Timetwister
+1.19206	Regrowth
+1.19206	Mox Ruby
+1.19206	Mox Pearl
+1.19206	Library of Alexandria
+1.19206	Black Lotus
+1.19206	Ancestral Recall
+1.18555	Inside Out
+1.18516	Rolling Spoil
+1.18446	Myojin of Night's Reach
+1.18101	Waterveil Cavern
+1.17906	Clutch of the Undercity
+1.17526	Pyrohemia
+1.17035	Restock
+1.16999	Frenetic Efreet
+1.16996	Monk Realist
+1.16233	Simoon
+1.16233	Chroatic Sphere
+1.16195	Intimidator Initiate
+1.1543	Laquatus's Champion
+1.15267	Recurring Nightmare
+1.15033	Mudbrawler Cohort
+1.15033	Leaf Gilder
+1.14528	Steel of the Godhead
+1.13883	Dusk Urchins
+1.13847	Academy Rector
+1.13704	Consuming Vortex
+1.13488	Nether Spirit
+1.13157	Meltdown
+1.12744	Sunflare Shaman
+1.12744	Spiteflame Witch
+1.12744	Manaforge Cinder
+1.12744	Heat Shimmer
+1.12386	Straw Golem
+1.12386	Lava Hounds
+1.11924	Bound in Silence
+1.11744	Leyline of Lifeforce
+1.11635	Rain of Gore
+1.11272	Gigapede
+1.10632	Moonlight Bargain
+1.10549	Ignite Disorder
+1.10537	Barrow Ghoul
+1.10129	Ignorant Bliss
+1.0991	Darkheart Sliver
+1.09774	Bind
+1.0977	Carbonize
+1.09568	Brute Force
+1.09341	Hit // Run
+1.0926	Cave-In
+1.08846	Hunted Dragon
+1.08547	Tar Fiend
+1.0826	Apocalypse
+1.08248	Overabundance
+1.08136	Fangren Firstborn
+1.07624	Penumbra Bobcat
+1.07027	Delusions of Mediocrity
+1.06548	Repentant Blacksmith
+1.06543	Krosan Tusker
+1.06416	Genju of the Fens
+1.05572	Kher Keep
+1.05437	Aether Burst
+1.05219	Psychic Spear
+1.05085	Mana Severance
+1.0486	Mystic Melting
+1.04625	Fiery Fall
+1.04034	Icequake
+1.04	Sudden Impact
+1.04	Kami of the Crescent Moon
+1.04	Ebony Owl Netsuke
+1.03701	Golgari Signet
+1.03587	Kiku's Shadow
+1.03355	Squirrel Nest
+1.03091	Consult the Necrosages
+1.02835	Luminesce
+1.02513	Decree of Annihilation
+1.02445	Dimir Cutpurse
+1.02167	Plague Sliver
+1.02035	Urborg Shambler
+1.01964	Oona's Blackguard
+1.01748	Mephidross Vampire
+1.01667	Fathom Trawl
+1.01396	Suq'Ata Firewalker
+1.01114	Woolly Spider
+1.01114	Giant Trap Door Spider
+1.00977	Kederekt Leviathan
+1.00977	Fatestitcher
+1.00944	Empyrial Armor
+1.00776	Ticking Gnomes
+1	Karn Liberated
+1	Birthing Pod
+0.999459	Echoing Courage
+0.998174	Yawgmoth's Bargain
+0.994379	Voidmage Prodigy
+0.994027	Yavimaya Ants
+0.994027	Ghazban Ogre
+0.994027	Assault/Battery
+0.983225	Goblin Burrows
+0.982737	Kaijin of the Vanishing Touch
+0.98259	Crumbling Sanctuary
+0.982344	Stir the Grave
+0.9801	Transmute Artifact
+0.9801	Sylvan Safekeeper
+0.979781	Knight of New Alara
+0.979781	Jenara, Asura of War
+0.977279	Ghost Ship
+0.970894	Beast Attack
+0.970299	Stingscourger
+0.970299	Etched Champion
+0.965592	Peacekeeper
+0.965181	Intruder Alarm
+0.962089	Darigaaz's Caldera
+0.960164	Frost Marsh
+0.956867	Marble Diamond
+0.954631	Glacial Chasm
+0.952555	Wipe Clean
+0.95099	Crippling Fatigue
+0.948273	Granulate
+0.944428	Contamination
+0.943552	Sol Ring
+0.943552	Mox Sapphire
+0.943552	Mox Jet
+0.943552	Mox Emerald
+0.943552	Mirror Universe
+0.943552	Demonic Tutor
+0.943552	Braingeyser
+0.943552	Amnesia
+0.942924	Gleancrawler
+0.942784	Boom+Bust
+0.942643	Infernal Darkness
+0.940867	Verdeloth the Ancient
+0.940867	Dawn Charm
+0.940867	Dauntless Dourbark
+0.936676	Lose Hope
+0.935174	Niv-Mizzet, the Firemind
+0.934203	Scour
+0.933953	Godo, Bandit Warlord
+0.932779	Still Life
+0.931762	Hammerhead Shark
+0.931061	Diminishing Returns
+0.922608	Karn, Silver Golem
+0.921263	Hour of Reckoning
+0.921263	Culling Sun
+0.919506	Pariah
+0.915707	Silklash Spider
+0.911079	Opposition
+0.910465	Belfry Spirit
+0.907213	Beckon Apparition
+0.907112	Lava Tubes
+0.907038	Carrion Feeder
+0.907038	Body Snatcher
+0.904382	Sages of the Anima
+0.900608	Karstoderm
+0.897304	Wax/Wane
+0.895046	Magma Phoenix
+0.894755	Perilous Research
+0.894755	Karplusan Wolverine
+0.894755	Hatching Plans
+0.894755	Claws of Gix
+0.894755	Boreal Shelf
+0.892708	Aura Graft
+0.892347	Sphere of Resistance
+0.879866	Centaur Garden
+0.879114	Splinter
+0.878596	Guardian Idol
+0.877521	Steel Hellkite
+0.877521	Contagion Engine
+0.876949	Solar Blast
+0.876949	Misguided Rage
+0.876949	Living Hive
+0.876949	Lay Waste
+0.876949	Last Rites
+0.876949	Baleful Stare
+0.875097	Spawning Pit
+0.871465	Thunderblust
+0.871465	Flame Jab
+0.871465	Ember Gale
+0.86989	Dralnu, Lich Lord
+0.868843	Grave-Shell Scarab
+0.868463	Planar Cleansing
+0.86818	Virulent Sliver
+0.86818	Firewake Sliver
+0.868072	Erayo, Soratami Ascendant
+0.863619	Isao, Enlightened Bushi
+0.860058	Myr Battlesphere
+0.859498	Riddle of Lightning
+0.859498	Nether Traitor
+0.859498	Maelstrom Djinn
+0.859498	Liege of the Pit
+0.859498	Dunerider Outlaw
+0.859498	Deepcavern Imp
+0.859498	Dash Hopes
+0.854123	Leechridden Swamp
+0.853724	Rootwater Thief
+0.853724	Dragon Shadow
+0.853724	Battlefield Scrounger
+0.852574	Sungrass Prairie
+0.852021	Titania's Chosen
+0.852021	Symbiosis
+0.852021	Scalding Tongs
+0.852021	Pouncing Jaguar
+0.852021	Mogg Raider
+0.852021	Mogg Conscripts
+0.852021	Hidden Stag
+0.852021	Hidden Predators
+0.852021	Hidden Guerrillas
+0.852021	Giant Strength
+0.850903	Groundbreaker
+0.850903	Aethermage's Touch
+0.850528	Eron the Relentless
+0.843945	Svogthos, the Restless Tomb
+0.842898	Goblin Digging Team
+0.842645	Consume Spirit
+0.84074	Sunbeam Spellbomb
+0.837126	Barkshell Blessing
+0.834242	Corpse Connoisseur
+0.828755	Vedalken Aethermage
+0.825899	Wretched Banquet
+0.825899	Vengeful Rebirth
+0.825899	Rakka Mar
+0.825899	Algae Gharial
+0.82563	Dreamscape Artist
+0.82563	Dark Withering
+0.822466	Evangelize
+0.821234	Takenuma Bleeder
+0.821234	Ogre Marauder
+0.820948	Anger
+0.820467	Surge of Thoughtweft
+0.820467	Kinsbaile Borderguard
+0.81811	Ancient Hydra
+0.817374	Wild Pair
+0.817374	Hedge Troll
+0.815032	Tatsumasa, the Dragon's Fang
+0.81452	Word of Seizing
+0.811061	Gaze of Adamaro
+0.809464	Reliquary Tower
+0.8092	Sedge Sliver
+0.8092	Rakdos Augermage
+0.805044	Trade Routes
+0.805044	Light of Day
+0.805044	Abundance
+0.80414	Tattermunge Duo
+0.802565	Numot, the Devastator
+0.802182	Cage of Hands
+0.801108	Samite Archer
+0.801108	Plague Spitter
+0.801108	Phyrexian Scuta
+0.801108	Mishra, Artificer Prodigy
+0.801108	Kris Mage
+0.800117	Prahv, Spires of Order
+0.796099	Merfolk Assassin
+0.793614	Warmth
+0.793614	Feast of Blood
+0.79225	An-Zerrin Ruins
+0.78869	Karma
+0.787927	Auriok Salvagers
+0.785166	Vine Dryad
+0.785166	Tanglewalker
+0.785166	Rogue Elephant
+0.785166	Predator's Strike
+0.785166	Elvish Spirit Guide
+0.785166	Deconstruct
+0.785166	Copper Myr
+0.785166	Briar Shield
+0.781323	Rathi Dragon
+0.776773	Goryo's Vengeance
+0.775638	Dance of the Dead
+0.770128	Suq'Ata Lancer
+0.76708	Execute
+0.765943	Shatterstorm
+0.761846	Skirk Fire Marshal
+0.761846	Hermit Druid
+0.761846	Hapless Researcher
+0.757082	Phyrexian War Beast
+0.757082	Frantic Search
+0.756339	Exile into Darkness
+0.755739	Orzhova, the Church of Deals
+0.750279	Call the Skybreaker
+0.747172	Bloodhusk Ritualist
+0.746929	Fracturing Gust
+0.745649	Azami, Lady of Scrolls
+0.745521	Lhurgoyf
+0.745521	Karoo Meerkat
+0.745521	Jolrael's Centaur
+0.745521	Granger Guildmage
+0.744297	Jinxed Choker
+0.74268	Tranquil Garden
+0.74268	Eerie Procession
+0.741291	Rootrunner
+0.7397	Phyrexian Devourer
+0.7397	Loyal Retainers
+0.734622	Convolute
+0.72258	Goblin Flectomancer
+0.721451	Phyrexian Colossus
+0.72065	Animate Land
+0.719227	Myojin of Cleansing Fire
+0.718648	Three Wishes
+0.718064	O-Naginata
+0.717263	Sage of Epityr
+0.717263	Patron Wizard
+0.712495	Sickening Dreams
+0.710553	Rest for the Weary
+0.710553	Conflagrate
+0.70565	Chronomantic Escape
+0.705363	Circle of Protection: White
+0.702989	Predict
+0.702875	Obsessive Search
+0.699038	Winding Canyons
+0.699038	Essence Bottle
+0.699038	Amber Prison
+0.689156	Undead Gladiator
+0.689156	Decree of Pain
+0.687475	Hall of Gemstone
+0.684691	Stalking Vengeance
+0.682558	Stench of Decay
+0.682555	Shared Fate
+0.682332	Curse of Chains
+0.678371	Gloom
+0.676257	Death Spark
+0.675509	Dominus of Fealty
+0.668972	Redirect
+0.666435	Shunt
+0.664976	Roar of the Kha
+0.662151	Flowstone Flood
+0.658756	Talara's Battalion
+0.658756	Howl of the Night Pack
+0.658756	Door of Destinies
+0.658631	Null Brooch
+0.657712	Twilight's Call
+0.657712	Thorn Elemental
+0.657497	Perplex
+0.657407	Inspiration
+0.657186	Spectral Shift
+0.655662	Portcullis
+0.655232	Coiling Oracle
+0.651135	Two-Headed Sliver
+0.651135	Screeching Sliver
+0.651135	Homing Sliver
+0.649103	Marshal's Anthem
+0.648891	Farhaven Elf
+0.64868	Blackmail
+0.648532	Acquire
+0.647733	Reverence
+0.644623	Walk the Aeons
+0.642193	Winter's Grasp
+0.642193	Stampeding Wildebeests
+0.642193	Root Maze
+0.642193	Hunting Moa
+0.642193	Goblin Balloon Brigade
+0.642193	Eladamri's Vineyard
+0.639016	Pox
+0.639016	Hush
+0.637591	Maggot Carrier
+0.636185	Hellkite Charger
+0.636185	Emrakul's Hatcher
+0.635491	Stronghold Taskmaster
+0.635164	Oppressive Will
+0.632751	Erratic Explosion
+0.632751	Draco
+0.632246	Mimeofacture
+0.631795	Stupefying Touch
+0.629618	Trench Wurm
+0.629618	Krovikan Horror
+0.629618	Crosis, the Purger
+0.628226	Thought Courier
+0.625644	Flash of Insight
+0.623119	Warrior en-Kor
+0.623119	Soltari Foot Soldier
+0.623119	Resistance Fighter
+0.623119	Erase
+0.619912	Yamabushi's Flame
+0.619223	Pentarch Paladin
+0.619223	Heartwood Storyteller
+0.617823	Peace of Mind
+0.617089	Genju of the Cedars
+0.615181	Petrified Field
+0.614175	Woebringer Demon
+0.61106	Browse
+0.607521	Megrim
+0.606716	Thrull Surgeon
+0.604606	Blazing Archon
+0.600831	Tectonic Instability
+0.600831	Ruination
+0.598761	Primalcrux
+0.598761	Deity of Scars
+0.598566	Wood Foothills
+0.598566	Tephraderm
+0.598566	Jungle Barrier
+0.598566	Canopy Crawler
+0.597244	Deadwood Treefolk
+0.59258	Utopia Sprawl
+0.59258	Trial/Error
+0.59258	Supply/Demand
+0.59258	Sunhome Enforcer
+0.59258	Lyzolda, the Blood Witch
+0.59258	Hellhole Rats
+0.59258	Helldozer
+0.59258	Bound/Determined
+0.592511	Befoul
+0.589014	Phantom Nishoba
+0.588875	Rushwood Legate
+0.588875	Bounty of the Hunt
+0.588445	Blinkmoth Well
+0.585173	Rakavolver
+0.583976	Mirrodin's Core
+0.583839	Soldevi Excavations
+0.582078	Opportunity
+0.581129	Revive
+0.57715	Morbid Hunger
+0.576968	Lightning Dragon
+0.576802	Crypt Creeper
+0.575355	Ethereal Usher
+0.571198	Waterspout Djinn
+0.570276	Ashes to Ashes
+0.56923	 Isamaru, Hound of Konda 
+0.563905	Sanguine Bond
+0.563538	Zirilan of the Claw
+0.563538	Shallow Grave
+0.563538	Dragonspeaker Shaman
+0.563538	Conjurer's Bauble
+0.563538	Cathodion
+0.563538	Bladewing's Thrall
+0.561932	Dwarven Soldier
+0.561102	Keldon Necropolis
+0.558084	Timber Protector
+0.558084	Seedcradle Witch
+0.558084	Prison Term
+0.557902	Stormscape Apprentice
+0.552683	Rath's Edge
+0.552683	Kaervek's Spite
+0.552683	Bone Dancer
+0.547157	Krark-Clan Ironworks
+0.546782	Searing Meditation
+0.54566	Indomitable Will
+0.54559	Aether Spellbomb
+0.54489	Voidstone Gargoyle
+0.540426	Stalking Bloodsucker
+0.53654	Death Denied
+0.536093	Rhys the Redeemed
+0.536093	Hunting Triad
+0.536093	Gilt-Leaf Ambush
+0.535919	Thief of Hope
+0.533824	Filth
+0.528863	Nourish
+0.527242	Syncopate
+0.524999	Krosan Cloudscraper
+0.521969	Grizzly Fate
+0.520001	Cerebral Vortex
+0.516196	Counsel of the Soratami
+0.514969	Brooding Saurian
+0.513853	Patron of the Kitsune
+0.511582	Nantuko Blightcutter
+0.510934	Jalum Tome
+0.510934	Ebon Stronghold
+0.50982	Reckless Charge
+0.50982	Notorious Throng
+0.509653	Skyshroud Vampire
+0.509653	Rats of Rath
+0.509653	Gravedigger
+0.505901	Sonic Burst
+0.505571	Vexing Arcanix
+0.505571	Storm Shaman
+0.505571	Essence Filter
+0.505271	Avatar of Woe
+0.504778	Quash
+0.504721	Suleiman's Legacy
+0.504721	Sand Golem
+0.503814	Scrabbling Claws
+0.498732	Arrest
+0.497375	Glacial Ray
+0.494601	Thrashing Wumpus
+0.494601	Thran Lens
+0.491424	Children of Korlis
+0.490079	Tower of Fortunes
+0.48651	Gather Courage
+0.484945	Shivan Gorge
+0.482986	Soul Burn
+0.481778	Orgg
+0.481645	Tsunami
+0.481645	Scragnoth
+0.481645	Mogg Maniac
+0.481645	Lifeforce
+0.481645	Desert Twister
+0.481645	Constant Mists
+0.480141	Nature's Spiral
+0.480141	Ghastly Discovery
+0.476828	Sky Diamond
+0.476828	Goblin Grenade
+0.47534	Qasali Ambusher
+0.470433	Mobilization
+0.470433	Imperial Mask
+0.470433	Beacon of Immortality
+0.47028	Tolarian Winds
+0.467339	Field Surgeon
+0.46689	Charge Across the Araba
+0.466702	Tomb of Urami
+0.465388	Prismatic Strands
+0.45661	Mirror Sheen
+0.453174	Gilded Lotus
+0.447377	Magus of the Disk
+0.444435	Wit's End
+0.444435	Twisted Justice
+0.444435	Swift Silence
+0.44276	Desertion
+0.440508	Sunforger
+0.438618	Faerie Harbinger
+0.438332	Spectral Searchlight
+0.438332	Leave No Trace
+0.438332	Induce Paranoia
+0.438332	Brainspoil
+0.438332	Battle of Wits
+0.429749	Zoetic Cavern
+0.429749	Sangrophage
+0.429749	Rough // Tumble
+0.429749	Magus of the Abyss
+0.429749	Ghostfire
+0.426922	 Vitu-Ghazi, the City-Tree 
+0.426011	Elvish Herder
+0.425451	Shimian Specter
+0.423594	Maze of Shadows
+0.422653	Bladewing the Risen
+0.421388	Might Sliver
+0.421197	Thought Eater
+0.421197	Seton's Scout
+0.421197	Rootwater Depths
+0.421197	Aboshan, Cephalid Emperor
+0.42106	Phantom Wings
+0.42106	Jiwari, the Earth Aflame
+0.42106	Ishi-Ishi, Akki Crackshot
+0.42106	Ghost-Lit Raider
+0.418427	Pure Reflection
+0.418427	Crusading Knight
+0.417121	Sphinx Summoner
+0.417121	Protomatter Powder
+0.414804	Test of Endurance
+0.414804	Animal Boneyard
+0.41295	Lavalanche
+0.412681	Celestial Kirin
+0.40882	Necromancer's Covenant
+0.408687	Whitemane Lion
+0.408687	Penumbra Spider
+0.408554	Raving Oni-Slave
+0.408554	Orb of Dreams
+0.400554	Spinal Embrace
+0.400554	Rage Weaver
+0.400554	Lava Runner
+0.400554	Hull Breach 
+0.400554	Firebrand Ranger
+0.400554	Engulfing Flames
+0.400541	Devout Witness
+0.39781	Torture Chamber
+0.388531	Spurnmage Advocate
+0.388531	Divine Sacrament
+0.388531	Battle Screech
+0.3869	Uyo, Silent Prophet
+0.384645	Tectonic Break
+0.384645	Bogardan Phoenix
+0.38224	Tel-Jihad Justice
+0.380923	Bosh, Iron Golem
+0.380799	Portent
+0.380799	Foreshadow
+0.380799	Dandan
+0.377759	Megatog
+0.377114	Sunhome, Fortress of the Legion
+0.375928	Overwhelming Intellect
+0.370624	False Cure
+0.369489	Goblin Cadets
+0.367178	Thalakos Drifters
+0.365913	Guilty Conscience
+0.365794	Expunge
+0.36131	Dosan the Falling Leaf
+0.360825	Wallop
+0.358748	Ordered Migration
+0.358748	Goblin Trenches
+0.358631	Clearwater Goblet
+0.356896	Shadow Rift
+0.355161	Rocky Tar Pit
+0.355161	Greater Realm of Preservation
+0.354813	Autumn Willow
+0.3526	Apocalypse Chime
+0.351495	Gloomdrifter
+0.350031	Biorhythm
+0.349737	Alter Reality
+0.345685	Genju of the Realm
+0.335956	Dizzy Spell
+0.332069	Scale of Chiss-Goria
+0.330925	Govern the Guildless
+0.329071	Elkin Bottle
+0.328749	Plague Boiler
+0.328749	Greater Mossdog
+0.328725	Korsan Cloudscraper
+0.324356	Jolrael, Empress of Beasts
+0.32434	Rimefeather Owl
+0.32434	Plagiarize
+0.32434	Pardic Dragon
+0.32434	Parallectric Feedback
+0.323631	Nullmage Advocate
+0.323631	Intrepid Hero
+0.322207	Minamo's Meddling
+0.322207	Boiling Seas
+0.321096	Spectral Bears
+0.321096	Sliver Queen
+0.321096	Oath of Lieges
+0.321096	Moss Diamond
+0.321096	Fire Whip
+0.321096	Cataclysm
+0.318985	Test of Faith
+0.315795	Higure, the Still Wind
+0.315795	First Volley
+0.314809	Seize the Day
+0.314809	Multani, Maro-Sorcerer
+0.314809	Ascendant Evincar
+0.314809	Animate Dead
+0.311661	Springjack Pasture
+0.311661	Loyal Sentry
+0.311559	Carrion Beetles
+0.311559	Allay
+0.30951	Sosuke's Summons
+0.308544	Grasslands
+0.308444	Wojek Siren
+0.308444	Steamcore Weird
+0.308444	Opal-Eye, Konda's Yojimbo
+0.306415	Scourge of Numai
+0.306415	Minamo Scrollkeeper
+0.306415	Honor-Worn Shaku
+0.306415	Cleanfall
+0.305359	Ivory Gargoyle
+0.303863	Daring Apprentice
+0.302207	Greater Harvester
+0.302207	Darksteel Ingot
+0.29938	Spitting Image
+0.29938	Phosphorescent Feast
+0.29938	Cenn's Enlistment
+0.299351	Reclaim
+0.299283	Barkhide Mauler
+0.299185	Wayfarer’s Bauble
+0.299185	Paradise Mantle
+0.299185	March of the Machine
+0.298886	Sleight of Mind
+0.296387	Rekindled Flame
+0.29629	Skullmead Cauldron
+0.29629	Selesnya Signet
+0.29629	Copy Enchantment
+0.296193	Sylvok Explorer
+0.294341	Erg Raiders
+0.293858	Bringer of the Black Dawn
+0.291398	Patrol Hound
+0.290488	Ashling the Pilgrim
+0.290394	Flesh Reaver
+0.288484	Viashino Cutthroat
+0.288484	Spitting Earth
+0.28615	Hoverguard Sweepers
+0.285599	Tainted Pact
+0.284615	Golgari Grave-troll
+0.281861	Mistmeadow Witch
+0.279042	Swell of Courage
+0.278951	Aura Blast
+0.276252	Safewright Quest
+0.276162	Nikko-Onna
+0.274345	Acridian
+0.268047	Shimmering Grotto
+0.267959	Blessed Breath
+0.255467	Torture
+0.255467	Safe Haven
+0.254827	Dimir Guildmage
+0.254827	Altar of Dementia
+0.252786	Primitive Justice
+0.252786	Monsoon
+0.252361	Palinchron
+0.249756	Skarrgan Firebird
+0.248507	Wheel of Fortune
+0.24432	Giant Tortoise
+0.242559	Pinecrest Ridge
+0.239992	Uktabi Orangantun
+0.239992	Starlit Sanctuim
+0.239992	Prismatic Strand
+0.237762	Nagao, Bound by Honor
+0.237593	Hostility
+0.235217	Sprout Swarm
+0.228729	Krosan Verge
+0.22823	Shambling Shell
+0.227015	Tainted Field
+0.226656	Vex
+0.224389	Somber Hovergaurd
+0.223616	Seafloor Debris
+0.223616	Ravaged Highlands
+0.222498	Words of Wisdom
+0.222145	Cosmic Larva
+0.219237	Woodripper
+0.219237	Petradon
+0.219237	Grand Coliseum
+0.219166	Honden of Infinite Rage
+0.219166	Festering Goblin
+0.219166	Duskmantle, House of Shadow
+0.219062	Crystal Shard
+0.219062	All Suns' Dawn
+0.217045	Psionic Sliver
+0.217045	Essence Sliver
+0.216985	Meishin, the Mind Cage
+0.216974	Dust to Dust
+0.214874	Demonic Collusion
+0.214804	Squelch
+0.212656	Shifting Borders
+0.210598	Upheval
+0.207969	Overmaster
+0.20634	Waxmane Baku
+0.20634	Three Tragedies
+0.20634	Terashi's Verdict
+0.20634	Infernal Kirin
+0.204343	Sliver Legion
+0.204343	Reflex Sliver
+0.204277	Thoughtbind
+0.204277	Mark of the Oni
+0.204277	Konda's Banner
+0.20221	Sundering Titan 
+0.20221	Darksteel Colussus
+0.200277	Gurzigost
+0.198274	Traitor's Clutch
+0.194265	Stern Judge
+0.194265	Sphere of Truth
+0.194265	Kirtar's Desire
+0.194265	Icatian Town
+0.192385	Weatherseed Totem
+0.192323	Flaming Gambit
+0.192323	Aftershock
+0.190461	Staunch Defenders
+0.190461	Spirit of the Night
+0.190461	Pentavus
+0.190461	Orcish Settlers
+0.190461	Krosan Colossus
+0.190461	Elf Replica
+0.190461	Cloudchaser Eagle
+0.190461	Citanul Flute
+0.184744	Mana Maze
+0.179316	Mystic Crusader
+0.179316	Hunting Pack
+0.17569	New Frontiers
+0.174812	Parallax Wave
+0.17399	Reprocess
+0.17399	Howling Gale
+0.17399	Bearscape
+0.17399	Acorn Harvest
+0.168767	Talisman of Unity
+0.167134	Cremate
+0.165463	Vanish into Memory
+0.163808	Mangara of Corondor
+0.16217	Rix Maadi, Dungeon Palace
+0.160548	Yavimaya Hollow
+0.160548	Tranquil Domain
+0.160548	Radiant's Dragoons
+0.160548	Ghitu Slinger
+0.15578	Phyrexian Tower
+0.15578	Evincar's Justice
+0.154222	Research/Development
+0.154222	Infantry Veteran
+0.154222	Dimir Infiltrator
+0.154222	Crime/Punishment
+0.151104	Neurok Transmuter
+0.149593	Qumulox
+0.149593	Override
+0.148145	Primeval Light
+0.148145	Pillar of the Paruns
+0.148145	Overrule
+0.148145	Nivix, Aerie of the Firemind
+0.148145	Netherborn Phalanx
+0.148145	Leyline of Singularity
+0.148145	Gruul Turf
+0.148145	Dark Heart of the Wood
+0.148097	Leonin Bladetrap
+0.145197	Agonizing Memories
+0.142307	Leave no Trace
+0.140884	True Believer
+0.140884	Summoner's Egg
+0.140884	Silent Arbiter
+0.140884	Sapphire Charm
+0.140884	Kuro, Pitlord
+0.140884	Kilnmouth Dragon
+0.140884	Kami of False Hope
+0.140884	Homura, Human Ascendant
+0.140884	Bloodfire Colossus
+0.140884	AEther Spellbomb
+0.13398	Strands of Undeath
+0.13398	Enfeeblement
+0.1287	Privileged Position
+0.122393	Caldera Lake
+0.116394	Stabilizer
+0.116394	Nantuko Monastery
+0.11069	Natural Affinity
+0.109583	Reminisce
+0.109583	Reito Lantern
+0.109583	Needle Storm
+0.109583	Honden of Life's Web
+0.109583	Honden of Cleansing Fire
+0.109583	Ghost-Lit Stalker
+0.109583	Akuta, Born of Ash
+0.108487	Soldevi Digger
+0.106328	Blinding Angel
+0.105265	Mistblade Shinobi
+0.10317	Seshiro the Anointed
+0.10317	Sachi, Daughter of Seshiro
+0.10317	Patron of the Nezumi
+0.0971326	Ring of Renewal
+0.0971326	Reverse Damage
+0.0971326	Ray of Distortion
+0.0971326	Frantic Purification
+0.0971326	Energy Storm
+0.0971326	Dwarven Catapult
+0.0961613	Slice and Dice
+0.0961613	Price of Glory
+0.0961613	Lightning Surge
+0.0961613	Jeska, Warrior Adept
+0.0951997	Time Elemental
+0.0923722	Dominate
+0.0914484	Nantuko Vigilante
+0.0896286	Sunder
+0.087845	Sterling Grove
+0.087845	Spirit Cairn
+0.087845	Ambassador Laquatus
+0.0869666	Serenity
+0.0843836	Penumbra Wurm
+0.0843836	Caltrops
+0.0835397	Pain Kami
+0.0835397	Masako the Humorless
+0.0818773	Kamahl, Fist of Krosa
+0.0778645	Soratami Savant
+0.0778645	Soratami Rainshaper
+0.0778645	Soratami Mirror-Guard
+0.0778645	Soratami Cloudskater
+0.0778645	Rend Spirit
+0.0778645	Mystic Restraints
+0.0778645	Mothrider Samurai
+0.0778645	Kusari-Gama
+0.0778645	Konda, Lord of Eiganjo
+0.0778645	Kitsune Riftwalker
+0.0778645	Hundred-Talon Kami
+0.0778645	Harsh Deceiver
+0.0778645	Callous Deceiver
+0.076315	Wicked Akuba
+0.076315	Waking Nightmare
+0.076315	Orochi Ranger
+0.076315	Nezumi Ronin
+0.076315	Matsu-Tribe Decoy
+0.076315	Lantern-Lit Graveyard
+0.076315	Kashi-Tribe Warriors
+0.076315	Kami of the Hunt
+0.076315	Honden of Night's Reach
+0.076315	He Who Hungers
+0.076315	Hankyu
+0.076315	Cruel Deceiver
+0.076315	Ashen-Skin Zubera
