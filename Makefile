@@ -128,3 +128,6 @@ ref/rules.txt:
 resources/magic/data/icons/missing_card.png:
 	convert -background gray -bordercolor black -border 5x5 -size 302x435 \
 	-pointsize 30 label:'\nNo card image found\n\nSelect\n\"Download images\"\nfrom Arena menu\n\nOR\n\nSwitch to text mode\nusing the Enter key' $@
+
+release/mods/%_theme.zip: release/mods/%_theme
+	 zip -j $@ $^/*
