@@ -4,13 +4,7 @@ BEGIN {
     ORS = ""
 }
 
-FILENAME ~ /candidate/ && $3 != "implemented" {
-    score[$2] = $1
-    comment[$2] = $3
-    next
-}
-
-{
+FILENAME ~ /data/ {
     if ($1 in score) {
         print score[$1] "\t"
         print "NOTE:"comment[$1] "\t"
@@ -23,6 +17,17 @@ FILENAME ~ /candidate/ && $3 != "implemented" {
         cnt++
         print "\n"
     }
+    next
+}
+
+NF == 1 {
+    score[$1] = 1
+}
+
+NF >= 2 {
+    score[$2] = $1
+    comment[$2] = $3
+    next
 }
 
 END {
