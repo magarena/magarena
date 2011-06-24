@@ -33,7 +33,7 @@ public class SoundEffects {
 		        inputStream.close();
 		        clip.start();
 		    } catch (final Exception ex) {
-                System.err.println("ERROR! unable to load clip " + name);
+                System.err.println("ERROR! Unable to load clip " + name);
                 System.err.println(ex.getMessage());
                 ex.printStackTrace();
             }

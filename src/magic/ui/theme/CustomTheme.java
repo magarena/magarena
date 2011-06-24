@@ -138,7 +138,7 @@ public class CustomTheme extends AbstractTheme {
 				parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
 			}						
 		} catch (final IOException ex) {
-            System.err.println("ERROR! unable to load theme");
+            System.err.println("ERROR! Unable to load theme");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
 		} finally {
@@ -146,7 +146,7 @@ public class CustomTheme extends AbstractTheme {
 				try {
 					zipFile.close();
 				} catch (final IOException ex) {
-                    System.err.println("ERROR! unable to close zip file");
+                    System.err.println("ERROR! Unable to close zip file");
                 }
 				zipFile=null;
 			}

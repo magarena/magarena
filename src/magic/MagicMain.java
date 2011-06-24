@@ -64,7 +64,7 @@ public class MagicMain {
 			DeckUtils.createDeckFolder();
 			initializeEngine();
 		} catch (final Exception ex) {
-            System.err.println("ERROR! unable to initialize the engine");
+            System.err.println("ERROR! Unable to initialize the engine");
             System.err.println(ex.getMessage());
 			ex.printStackTrace();
 		}

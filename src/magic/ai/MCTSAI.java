@@ -154,7 +154,7 @@ public class MCTSAI implements MagicAI {
         final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         
         // No choice results
-        assert size > 0 : "ERROR! MCTS: no choice found at start";
+        assert size > 0 : "ERROR! No choice found at start of MCTS";
     
         // Single choice result
         if (size == 1) {
@@ -191,7 +191,7 @@ public class MCTSAI implements MagicAI {
             //and returns the path from the root to the new node
             final LinkedList<MCTSGameTree> path = growTree(root, rootGame);
           
-            assert path.size() >= 2 : "ERROR! MCTS: length of path is " + path.size();
+            assert path.size() >= 2 : "ERROR! length of MCTS path is " + path.size();
 
             // play a simulated game to get score
             // update all nodes along the path from root to new node 
@@ -218,7 +218,7 @@ public class MCTSAI implements MagicAI {
             }
         }
 
-        assert root.size() > 0 : "ERROR! MCTS: root has no children but there are " + size + " choices";
+        assert root.size() > 0 : "ERROR! Root has no children but there are " + size + " choices";
 
         //select the best choice (child that has the highest secure score)
         final MCTSGameTree first = root.first();
@@ -419,7 +419,7 @@ public class MCTSAI implements MagicAI {
     private double randomPlay(final MCTSGameTree node, final MagicGame game) {
         //terminal node, no need for random play
         if (game.isFinished()) {
-            assert game.getLosingPlayer() != null : "ERROR! game finished but no losing player";
+            assert game.getLosingPlayer() != null : "ERROR! Game finished but no losing player";
             
             if (game.getLosingPlayer() == game.getScorePlayer()) {
                 node.setAILose();
@@ -479,13 +479,13 @@ public class MCTSAI implements MagicAI {
             if (sim) {
                 //get simulation choice and execute
                 final Object[] choice = event.getSimulationChoiceResult(game);
-                assert choice != null : "ERROR! MCTS: no choice found during sim";
+                assert choice != null : "ERROR! No choice found during MCTS sim";
                 game.executeNextEvent(choice);
             } else {
                 //get list of possible AI choices
                 final List<Object[]> choices = event.getArtificialChoiceResults(game);
                 final int size = choices.size();
-                assert size > 0 : "ERROR! MCTS: no choice found getACR";
+                assert size > 0 : "ERROR! No choice found during MCTS getACR";
                 if (size == 1) {
                     //single choice
                     game.executeNextEvent(choices.get(0));
