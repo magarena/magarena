@@ -2,6 +2,9 @@ package magic.data;
 
 import java.io.PrintStream;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.swing.ImageIcon;
 
@@ -10,8 +13,9 @@ import magic.model.MagicColor;
 
 public class CardStatistics {
 
-	public static final String MANA_CURVE_TEXT[]={"X","1","2","3","4","5","6","7","8","9+"};
-	public static final ImageIcon MANA_CURVE_ICONS[]={
+	private static final List<String> MANA_CURVE_TEXT = Collections.unmodifiableList(Arrays.asList(
+        "X","1","2","3","4","5","6","7","8","9+"));
+	public static final List<ImageIcon> MANA_CURVE_ICONS = Collections.unmodifiableList(Arrays.asList(
 		IconImages.COST_X,
 		IconImages.COST_ONE,
 		IconImages.COST_TWO,
@@ -21,12 +25,13 @@ public class CardStatistics {
 		IconImages.COST_SIX,
 		IconImages.COST_SEVEN,
 		IconImages.COST_EIGHT,
-		IconImages.COST_NINE,
-	};
-	public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.length;
+		IconImages.COST_NINE
+	));
+	public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.size();
 	
-	public static final String TYPE_NAMES[]={"Land","Spell","Creature","Equipment","Aura","Enchantment","Artifact"};
-	public static final ImageIcon TYPE_ICONS[]={
+	private static final List<String> TYPE_NAMES = Collections.unmodifiableList(Arrays.asList(
+        "Land","Spell","Creature","Equipment","Aura","Enchantment","Artifact"));
+	public static final List<ImageIcon> TYPE_ICONS = Collections.unmodifiableList(Arrays.asList(
 		IconImages.LAND,
 		IconImages.SPELL,
 		IconImages.CREATURE,
@@ -34,8 +39,8 @@ public class CardStatistics {
 		IconImages.AURA,	
 		IconImages.ENCHANTMENT,
 		IconImages.ARTIFACT
-	};
-	public static final int NR_OF_TYPES=TYPE_NAMES.length;
+	));
+	public static final int NR_OF_TYPES=TYPE_NAMES.size();
 	
 	private final Collection<MagicCardDefinition> cards;
 	
@@ -56,7 +61,6 @@ public class CardStatistics {
 	public int colorless=0;
 	
 	public CardStatistics(final Collection<MagicCardDefinition> cards) {
-
 		this.cards=cards;
 		createStatistics();
 	}
@@ -138,8 +142,7 @@ public class CardStatistics {
 
 		stream.print("Cards : "+totalCards);
 		for (int index=0;index<NR_OF_TYPES;index++) {
-		
-			stream.print("  "+TYPE_NAMES[index]+" : "+totalTypes[index]);
+			stream.print("  "+TYPE_NAMES.get(index)+" : "+totalTypes[index]);
 		}
 		stream.println();
 		
@@ -162,7 +165,7 @@ public class CardStatistics {
 		
 		for (int index=0;index<MANA_CURVE_SIZE;index++) {
 			
-			stream.print(MANA_CURVE_TEXT[index]+" = "+manaCurve[index]+"  ");
+			stream.print(MANA_CURVE_TEXT.get(index)+" = "+manaCurve[index]+"  ");
 		}
 		stream.println();
 	}
