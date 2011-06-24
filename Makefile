@@ -131,3 +131,10 @@ resources/magic/data/icons/missing_card.png:
 
 release/mods/%_theme.zip: release/mods/%_theme
 	 zip -j $@ $^/*
+
+cards/evan_cube.txt:
+	curl http://www.cubedrafting.com/view-the-cube/ | grep jTip | sed "s/<[^>]*>//g;s/\&\#8217;/'/" > $@
+
+cards/brett_cube.txt:
+	curl http://www.snazzorama.com/magic/cube/ | grep ":WizardsAutoCard" | sed "s/<\/td>.*//;s/<[^>]*>//g;s/\&\#8217;/'/" > $@
+	
