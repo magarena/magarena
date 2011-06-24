@@ -33,7 +33,7 @@ public class ArtificialWorkerPool {
 		workers=new LinkedList<ArtificialWorker>();
 	}
 
-    public void setCheat(final boolean cheat) {
+    public synchronized void setCheat(final boolean cheat) {
         CHEAT = cheat;
     }
 	
