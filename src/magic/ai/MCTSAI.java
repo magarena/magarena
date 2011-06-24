@@ -173,7 +173,7 @@ public class MCTSAI implements MagicAI {
         //root represents the start state
         //final MCTSGameTree root = new MCTSGameTree(-1, -1, -1);
         final MCTSGameTree root = getNode(startGame, rootChoices);
-        assert root.desc != (root.desc = "root");
+        assert (root.desc = "root").equals(root.desc);
         LENS.clear();
 
         //end simulations once root is solved or time is up
@@ -380,7 +380,7 @@ public class MCTSAI implements MagicAI {
                 Object[] choice = choices.get(idx);
                 game.executeNextEvent(choice);
                 final MCTSGameTree child = new MCTSGameTree(idx, game.getScore()); 
-                assert child.desc != (child.desc = obj2String(choice[0]));
+                assert (child.desc = obj2String(choice[0])).equals(child.desc);
                 curr.addChild(child);
                 path.add(child);
                 return path;
