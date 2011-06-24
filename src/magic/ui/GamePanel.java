@@ -40,7 +40,7 @@ import magic.ui.viewer.ViewerInfo;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.ZoneBackgroundLabel;
 
-public class GamePanel extends JPanel {
+public final class GamePanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
