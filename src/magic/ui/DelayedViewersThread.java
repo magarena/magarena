@@ -3,7 +3,7 @@ package magic.ui;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DelayedViewersThread extends Thread {
+public final class DelayedViewersThread extends Thread {
 
 	private static final DelayedViewersThread VIEWER_THREAD=new DelayedViewersThread();
 
