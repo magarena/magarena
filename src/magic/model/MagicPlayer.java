@@ -198,7 +198,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	public boolean canLose() {
-		return getCount(MagicStaticLocalVariable.platinumAngel)==0;
+		return MagicStaticLocalVariable.canLose(this);
 	}
 
 	/** Life to use when determining if a player has lost. */
@@ -465,7 +465,7 @@ public class MagicPlayer implements MagicTarget {
 	
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
-		if (source.getController()!=this&&getCount(MagicStaticLocalVariable.spiritOfTheHearth)>0) {
+		if (source.getController() != this && !MagicStaticLocalVariable.canTarget(this)) {
 			return false;
 		}
 		return true;

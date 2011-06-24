@@ -42,14 +42,22 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int levitation;
 	private static int madrushCyclops;
 	private static int murkfiendLiege;
-	public static int platinumAngel; // You can't lose the game.
+	private static int platinumAngel; // You can't lose the game.
 	private static int razorjawOni;
-	public static int spiritOfTheHearth; // You can't be target of spells or abilities your opponent controls.
+	private static int spiritOfTheHearth; // You can't be target of spells or abilities your opponent controls.
 	private static int tolsimirWolfblood;
 	private static int trueConviction;
 	private static int urabraskTheHidden;
 	private static int veteranArmorer;
 	private static int windbriskRaptor;
+
+    public static boolean canLose(final MagicPlayer controller) {
+        return controller.getCount(platinumAngel) == 0;
+    }
+
+    public static boolean canTarget(final MagicPlayer controller) {
+        return controller.getCount(spiritOfTheHearth) == 0;
+    }
 	
 	private int getOtherCount(final int cardDefinitionIndex,final MagicPermanent permanent,final int count) {
 		return permanent.getCardDefinition().getIndex() != cardDefinitionIndex ? count : count - 1;
