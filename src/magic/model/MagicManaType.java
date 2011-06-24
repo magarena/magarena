@@ -1,5 +1,8 @@
 package magic.model;
 
+import java.util.List;
+import java.util.Collections;
+import java.util.Arrays;
 import javax.swing.ImageIcon;
 
 import magic.data.IconImages;
@@ -14,8 +17,10 @@ public enum MagicManaType {
 	White("white","{W}"),
 	;
 	
-	public static final MagicManaType[] ALL_COLORS={Black,Blue,Green,Red,White};
-	public static final MagicManaType[] ALL_TYPES={Colorless,Black,Blue,Green,Red,White}; // Colorless must be in front.
+	public static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(Arrays.asList(
+        Black,Blue,Green,Red,White));
+	public static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(Arrays.asList(
+        Colorless,Black,Blue,Green,Red,White)); // Colorless must be in front.
 	
 	public static final int NR_OF_TYPES=values().length;
 	

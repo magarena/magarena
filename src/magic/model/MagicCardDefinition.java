@@ -396,12 +396,11 @@ public class MagicCardDefinition {
 	public void setBasicManaActivations(final String basicText) {
 
 		final int length=basicText.length();
-		final MagicManaType manaTypes[]=new MagicManaType[length+1];
+		final List<MagicManaType> manaTypes=new ArrayList<MagicManaType>(length+1);
 		for (int index=0;index<length;index++) {
-			
-			manaTypes[index]=MagicColor.getColor(basicText.charAt(index)).getManaType();
+			manaTypes.add(MagicColor.getColor(basicText.charAt(index)).getManaType());
 		}
-		manaTypes[length]=MagicManaType.Colorless;
+		manaTypes.add(MagicManaType.Colorless);
 		addManaActivation(new MagicTapManaActivation(manaTypes,0));
 	}
 

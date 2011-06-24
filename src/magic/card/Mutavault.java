@@ -1,5 +1,7 @@
 package magic.card;
 
+import java.util.Arrays;
+
 import magic.model.event.*;
 import magic.model.stack.*;
 import magic.model.choice.*;
@@ -11,7 +13,7 @@ import magic.model.variable.*;
 import magic.model.*;
 
 public class Mutavault {
-    public static final MagicManaActivation TAP = new MagicTapManaActivation(new MagicManaType[]{MagicManaType.Colorless},0);
+    public static final MagicManaActivation TAP = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
 
 	public static final MagicPermanentActivation RAGING_RAVINE=new MagicPermanentActivation(
 			new MagicCondition[]{new MagicArtificialCondition(

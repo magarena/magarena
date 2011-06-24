@@ -1,5 +1,7 @@
 package magic.model.event;
 
+import java.util.List;
+
 import magic.model.MagicCounterType;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
@@ -12,7 +14,7 @@ public class MagicVividManaActivation extends MagicManaActivation {
         MagicCondition.CAN_TAP_CONDITION,
         MagicCondition.CHARGE_COUNTER_CONDITION};
 			
-	public MagicVividManaActivation(final MagicManaType manaTypes[]) {
+	public MagicVividManaActivation(final List<MagicManaType> manaTypes) {
 		super(manaTypes,CONDITIONS,2);
 	}
 		

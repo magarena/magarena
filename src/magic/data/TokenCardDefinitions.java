@@ -389,7 +389,7 @@ public class TokenCardDefinitions {
 			setColoredType();
 			setPower(0);
 			setToughness(1);
-			addManaActivation(new MagicSacrificeManaActivation(new MagicManaType[]{MagicManaType.Colorless}));
+			addManaActivation(new MagicSacrificeManaActivation(Arrays.asList(MagicManaType.Colorless)));
 			setExcludeManaOrCombat();
 		}
 	};	

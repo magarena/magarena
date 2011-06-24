@@ -7,7 +7,7 @@ public enum MagicRarity {
     Rare('R'),
     Mythic_Rare('M');
 
-    public static int length = values().length;
+    public static final int length = values().length;
     
     private char c;
 
