@@ -238,7 +238,12 @@ public class MagicTournament {
 		try {
 			final Properties properties=new Properties();
 			save(properties);
-			properties.store(new FileOutputStream(file),"Tournament");
+            final FileOutputStream fos = new FileOutputStream(file);
+            try {
+    			properties.store(fos,"Tournament");
+            } finally {
+                fos.close();
+            }
 		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to save tournament");
             System.err.println(ex.getMessage());
@@ -266,7 +271,12 @@ public class MagicTournament {
 	public void load(final File file) {
 		try {
 			final Properties properties=new Properties();
-			properties.load(new FileInputStream(file));
+            final FileInputStream fis = new FileInputStream(file);
+            try {
+    			properties.load(fis);
+            } finally {
+                fis.close();
+            }
 			load(properties);
 		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to load tournament");
