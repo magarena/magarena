@@ -270,12 +270,15 @@ public class GeneralConfig {
 	}
 	
 	public void load() {
-
 		try {
 			final Properties properties=new Properties();
 			properties.load(new FileInputStream(getConfigFile()));
 			load(properties);
-		} catch (final IOException ex) {}
+		} catch (final IOException ex) {
+            System.err.println("ERROR! unable to load " + getConfigFile());
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
+        }
 	}
 	
 	public void save(final Properties properties) {
@@ -301,7 +304,6 @@ public class GeneralConfig {
 	}
 	
 	public void save() {
-		
 		try {
 			final Properties properties=new Properties();
 			save(properties);
@@ -309,6 +311,8 @@ public class GeneralConfig {
             System.err.println("Saved general config");
 		} catch (final IOException ex) {
             System.err.println("ERROR! unable to save general config");
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
         }		
 	}
 

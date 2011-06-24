@@ -162,8 +162,10 @@ public class CardDefinitions {
                     chg.change(cardDefinition);
                 }
             }
-        } catch (Exception err) {
+        } catch (ClassNotFoundException err) {
             //System.err.println("No companion class for " + fname);
+        } catch (IllegalAccessException err) {
+
         }
 	}
 	

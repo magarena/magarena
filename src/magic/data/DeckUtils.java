@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
+import java.util.Map;
 
 import javax.swing.filechooser.FileFilter;
 
@@ -48,10 +49,12 @@ public class DeckUtils {
 	}
 	
 	public static void createDeckFolder() {
-		
 		final File deckFolderFile=new File(getDeckFolder());
 		if (!deckFolderFile.exists()) {
-			deckFolderFile.mkdir();
+			final boolean isCreated = deckFolderFile.mkdir();
+            if (!isCreated) {
+                System.err.println("ERROR! Unable to create " + getDeckFolder());
+            }
 		}
 	}
 	
@@ -87,9 +90,8 @@ public class DeckUtils {
 				if (!cardMap.isEmpty()) {
 					writer.write("# "+cardMap.size()+" "+CARD_TYPES[index]);
 					writer.newLine();
-					for (final String name : cardMap.keySet()) {
-						
-						writer.write(cardMap.get(name)+" "+name);
+					for (final Map.Entry<String,Integer> entry : cardMap.entrySet()) {
+						writer.write(entry.getValue()+" "+entry.getKey());
 						writer.newLine();
 					}
 					writer.newLine();
@@ -97,7 +99,7 @@ public class DeckUtils {
 			}			
 			writer.close();
 		} catch (final IOException ex) {
-            System.err.println("ERROR! unable to save deck");
+            System.err.println("ERROR! Unable to save deck");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
         }
@@ -139,7 +141,7 @@ public class DeckUtils {
 								}
 							}
 						} catch (final Exception ex) {
-                            System.err.println("ERROR! unable to load line " + line);
+                            System.err.println("ERROR! Unable to load line " + line);
                             System.err.println(ex.getMessage());
                             ex.printStackTrace();
                         }
@@ -170,7 +172,7 @@ public class DeckUtils {
 			player.setProfile(new MagicPlayerProfile(colorText.toString()));
 			player.setDeck(deck);			
 		} catch (final IOException ex) {
-            System.err.println("ERROR! unable to load deck " + filename);
+            System.err.println("ERROR! Unable to load deck " + filename);
             System.err.println(ex.getMessage());
             ex.printStackTrace();
         }

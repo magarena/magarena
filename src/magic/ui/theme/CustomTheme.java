@@ -119,7 +119,6 @@ public class CustomTheme extends AbstractTheme {
 	
 	@Override
 	public void load() {
-		
 		if (loaded) {
 			return;
 		}
@@ -146,7 +145,9 @@ public class CustomTheme extends AbstractTheme {
 			if (zipFile!=null) {
 				try {
 					zipFile.close();
-				} catch (final IOException ex) {}
+				} catch (final IOException ex) {
+                    System.err.println("ERROR! unable to close zip file");
+                }
 				zipFile=null;
 			}
 			loaded=true;

@@ -347,9 +347,9 @@ public class MCTSAI implements MagicAI {
         MCTSGameTree curr = root;
         path.add(curr);
 
-        for (List<Object[]> choices = getNextChoices(game, curr == root, false);
+        for (List<Object[]> choices = getNextChoices(game, false);
              choices != null;
-             choices = getNextChoices(game, curr == root, false)) {
+             choices = getNextChoices(game, false)) {
 
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
             
@@ -431,7 +431,7 @@ public class MCTSAI implements MagicAI {
         }
 
         final int startActions = game.getNumActions();
-        getNextChoices(game, false, true);
+        getNextChoices(game, true);
         final int actions = game.getNumActions() - startActions;
         
         if (LOGGING) {
@@ -449,7 +449,6 @@ public class MCTSAI implements MagicAI {
     
     private List<Object[]> getNextChoices(
             final MagicGame game, 
-            final boolean isRoot, 
             final boolean sim) {
         
         final int startActions = game.getNumActions();

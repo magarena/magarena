@@ -41,7 +41,10 @@ public class DownloadImageFile {
             System.err.println("ERROR! unable to download file");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
-			file.delete();
+			final boolean isDeleted = file.delete();
+            if (!isDeleted) {
+                System.err.println("ERROR! Unable to delete " + file);
+            }
 		}
 	}
 }
