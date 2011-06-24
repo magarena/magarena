@@ -978,7 +978,7 @@ TSP U
 
 
 67.3222
-NOTE:
+NOTE:**
 NAME:Luminarch Ascension
 TEXT:
 {1}{W}
@@ -989,7 +989,7 @@ ZEN R
 
 
 67.075
-NOTE:
+NOTE:**
 NAME:Nameless Inversion
 TEXT:
 {1}{B}
@@ -1023,7 +1023,7 @@ SHM R
 
 
 66.8199
-NOTE:
+NOTE:**
 NAME:Wild Nacatl
 TEXT:
 {G}
@@ -1035,7 +1035,7 @@ ALA C
 
 
 66.1467
-NOTE:
+NOTE:**
 NAME:Adarkar Wastes
 TEXT:
 Land
@@ -1045,7 +1045,7 @@ ICE R, 5ED R, 6ED R, 7ED R, 9ED R, 10E R
 
 
 63.3813
-NOTE:
+NOTE:**
 NAME:Spell Snare
 TEXT:
 {U}
@@ -1086,7 +1086,7 @@ WWK C
 
 
 62.0786
-NOTE:
+NOTE:**
 NAME:Guttural Response
 TEXT:
 {R/G}
@@ -1149,7 +1149,7 @@ ROE C, COM C
 
 
 60.1231
-NOTE:
+NOTE:**
 NAME:Repeal
 TEXT:
 {X}{U}
@@ -1160,7 +1160,7 @@ GPT C
 
 
 60.0783
-NOTE:
+NOTE:**
 NAME:Grove of the Burnwillows
 TEXT:
 Land
@@ -1212,7 +1212,7 @@ ROE C
 
 
 58.7551
-NOTE:
+NOTE:**
 NAME:Llanowar Wastes
 TEXT:
 Land
@@ -1255,7 +1255,7 @@ JUD U
 
 
 56.6805
-NOTE:
+NOTE:**
 NAME:Lavaclaw Reaches
 TEXT:
 Land
@@ -1285,7 +1285,7 @@ LRW R
 
 
 55.7159
-NOTE:
+NOTE:**
 NAME:Sun Titan
 TEXT:
 {4}{W}{W}
@@ -1306,7 +1306,7 @@ ONS R
 
 
 54.8478
-NOTE:
+NOTE:**
 NAME:Karplusan Forest
 TEXT:
 Land
@@ -1328,7 +1328,7 @@ ALA R, DDG R
 
 
 54.6955
-NOTE:
+NOTE:**
 NAME:Gatekeeper of Malakir
 TEXT:
 {B}{B}
@@ -1350,7 +1350,7 @@ DIS U
 
 
 53.9816
-NOTE:
+NOTE:**
 NAME:Linvala, Keeper of Silence
 TEXT:
 {2}{W}{W}
@@ -1362,7 +1362,7 @@ ROE M
 
 
 53.8761
-NOTE:
+NOTE:**
 NAME:Disenchant
 TEXT:
 {1}{W}
@@ -1415,7 +1415,7 @@ WWK C
 
 
 51.3581
-NOTE:
+NOTE:**
 NAME:Frost Titan
 TEXT:
 {4}{U}{U}
@@ -1427,7 +1427,7 @@ M11 M
 
 
 51.0563
-NOTE:
+NOTE:**
 NAME:Khalni Garden
 TEXT:
 Land
@@ -1515,7 +1515,7 @@ LEA R, LEB R, 2ED R, 3ED R, ME3 R, ME4 R
 
 
 49.4114
-NOTE:
+NOTE:**
 NAME:Manabarbs
 TEXT:
 {3}{R}
@@ -1570,7 +1570,7 @@ PLC R
 
 
 48.1817
-NOTE:
+NOTE:**
 NAME:Journey to Nowhere
 TEXT:
 {1}{W}
@@ -1641,7 +1641,7 @@ RAV C
 
 
 47.0017
-NOTE:
+NOTE:**
 NAME:Terror
 TEXT:
 {1}{B}
