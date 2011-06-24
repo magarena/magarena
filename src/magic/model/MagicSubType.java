@@ -39,7 +39,6 @@ public enum MagicSubType {
     Thalakos, Thopter, Thrull, Treefolk, Triskelavite, Troll, Turtle, Unicorn,
     Vampire, Vedalken, Viashino, Volver, Wall, Warrior, Weird, Whale, Wizard,
     Wolf, Wolverine, Wombat, Worm, Wraith, Wurm, Yeti, Zombie, Zubera;
-	;
 
 	public static final EnumSet<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
 	
