@@ -112,7 +112,7 @@ FUT R
 
 
 230.518
-NOTE:
+NOTE:DONE
 NAME:Mutavault
 TEXT:
 Land
@@ -234,7 +234,7 @@ WWK R
 
 
 155.571
-NOTE:
+NOTE:**
 NAME:Wrath of God
 TEXT:
 {2}{W}{W}
@@ -254,7 +254,7 @@ SHM R
 
 
 153.011
-NOTE:
+NOTE:**
 NAME:Wall of Omens
 TEXT:
 {1}{W}
@@ -315,7 +315,7 @@ ZEN C
 
 
 132.007
-NOTE:
+NOTE:**
 NAME:Treetop Village
 TEXT:
 Land
@@ -385,7 +385,7 @@ ALL U, MED R
 
 
 121.601
-NOTE:
+NOTE:**
 NAME:Condemn
 TEXT:
 {W}
@@ -405,7 +405,7 @@ ICE C, 5ED C, MMQ C, BTD C, ME2 C, COM C
 
 
 118.819
-NOTE:
+NOTE:**
 NAME:Spellstutter Sprite
 TEXT:
 {1}{U}
@@ -418,7 +418,7 @@ LRW C
 
 
 118.249
-NOTE:
+NOTE:**
 NAME:Umezawa's Jitte
 TEXT:
 {2}
@@ -440,7 +440,7 @@ LRW R
 
 
 118.114
-NOTE:
+NOTE:**
 NAME:Sower of Temptation
 TEXT:
 {2}{U}{U}
@@ -633,7 +633,7 @@ RAV R
 
 
 94.102
-NOTE:
+NOTE:**
 NAME:Tormod's Crypt
 TEXT:
 {0}
@@ -662,7 +662,7 @@ SOM U
 
 
 89.2482
-NOTE:
+NOTE:**
 NAME:Underground River
 TEXT:
 Land
@@ -672,7 +672,7 @@ ICE R, 5ED R, 6ED R, 7ED R, 9ED R, 10E R
 
 
 89.0829
-NOTE:
+NOTE:**
 NAME:Plated Geopede
 TEXT:
 {1}{R}
@@ -684,7 +684,7 @@ ZEN C
 
 
 88.877
-NOTE:
+NOTE:**
 NAME:Valakut, the Molten Pinnacle
 TEXT:
 Land
@@ -796,7 +796,7 @@ PLS R, ARB R
 
 
 84.3262
-NOTE:
+NOTE:**
 NAME:Scion of Oona
 TEXT:
 {2}{U}
@@ -821,7 +821,7 @@ SHM U, JVC U
 
 
 81.2996
-NOTE:
+NOTE:**
 NAME:Teetering Peaks
 TEXT:
 Land
@@ -842,7 +842,7 @@ MIR C, TMP C, 6ED C, BTD C, 7ED C, 8ED C, 9ED C, 10E C, M10 C, HOP C
 
 
 79.1502
-NOTE:
+NOTE:**
 NAME:Damnation
 TEXT:
 {2}{B}{B}
@@ -852,7 +852,7 @@ PLC R
 
 
 78.7206
-NOTE:
+NOTE:**
 NAME:Esper Charm
 TEXT:
 {W}{U}{B}
@@ -862,7 +862,7 @@ ALA U
 
 
 78.6115
-NOTE:
+NOTE:**
 NAME:Ratchet Bomb
 TEXT:
 {2}
@@ -882,7 +882,7 @@ ICE L, CSP C, ME2 L
 
 
 77.4643
-NOTE:
+NOTE:**
 NAME:Relic of Progenitus
 TEXT:
 {1}
@@ -946,7 +946,7 @@ ROE C
 
 
 72.8896
-NOTE:
+NOTE:**
 NAME:Deathmark
 TEXT:
 {B}

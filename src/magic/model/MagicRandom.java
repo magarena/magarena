@@ -1,27 +1,24 @@
 package magic.model;
 
-import java.util.Random;
+import magic.*;
 
 public class MagicRandom {
 
-	private static final Random RNG;
+	private static final MersenneTwisterFast RNG;
 	
     static {
         String seedStr = System.getProperty("rndSeed");
         if (seedStr != null) {
-            RNG = new Random(Long.parseLong(seedStr));
+            RNG = new MersenneTwisterFast(Long.parseLong(seedStr));
             System.err.println("Using random seed " + seedStr);
         } else {
-            RNG = new Random();
+            RNG = new MersenneTwisterFast();
         }
     }
 
-	private MagicRandom() {
-		
-	}
+	private MagicRandom() {}
 	
 	public static int nextInt(final int n) {
-		
 		return RNG.nextInt(n);
 	}	
 }
