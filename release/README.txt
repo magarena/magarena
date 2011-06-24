@@ -43,6 +43,18 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.16 (July XX, 2011)
+============
+- 9XX cards in total
+- added ubeefx cube (617 cards)
+
+- added Mutavault
+- 
+
+- do not auto pass priority when AI blocks your attackers
+- increased delay when auto passing priority with item on stack to 2s
+-    
+
 Release 1.15 (June 20, 2011)
 ============
 - 916 cards in total
