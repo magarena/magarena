@@ -169,7 +169,12 @@ public class TournamentConfig {
 	public void load() {
 		try {
 			final Properties properties=new Properties();
-			properties.load(new FileInputStream(getConfigFile()));
+			final FileInputStream fis = new FileInputStream(getConfigFile());
+            try {
+                properties.load(fis);
+            } finally {
+                fis.close();
+            }
 			load(properties);
             System.err.println("Loaded tournament config");
 		} catch (final IOException ex) {
@@ -193,7 +198,12 @@ public class TournamentConfig {
 		try {
 			final Properties properties=new Properties();
 			save(properties);
-			properties.store(new FileOutputStream(getConfigFile()),"Tournament configuration");
+            final FileOutputStream fos = new FileOutputStream(getConfigFile());
+            try {
+    			properties.store(fos,"Tournament configuration");
+            } finally {
+                fos.close();
+            }
             System.err.println("Saved tournament config");
 		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to save tournament config");

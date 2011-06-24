@@ -97,9 +97,12 @@ public class CubeDefinitions {
 				
 				final String name=file.getName();
 				final int index=name.indexOf(CUBE_FILE_EXTENSION);
-				final InputStream fileInputStream=new FileInputStream(file);
-				loadCubeDefinition(name.substring(0,index),fileInputStream);
-				fileInputStream.close();
+                    final InputStream fileInputStream=new FileInputStream(file);
+                try {
+                    loadCubeDefinition(name.substring(0,index),fileInputStream);
+                } finally {
+    				fileInputStream.close();
+                }
 			}
 		}
 		

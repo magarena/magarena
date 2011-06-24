@@ -268,14 +268,17 @@ public class IconImages {
 			final byte data[]=new byte[1<<16];
 			int size=0;
 			final InputStream inputStream=IconImages.class.getResourceAsStream("icons/"+name);
-			while (true) {
-				
-				final int len=inputStream.read(data,size,data.length-size);
-				if (len<0) {
-					break;
-				}
-				size+=len;
-			}			
+            try {
+                while (true) {
+                    final int len=inputStream.read(data,size,data.length-size);
+                    if (len<0) {
+                        break;
+                    }
+                    size+=len;
+                }
+            } finally {
+                inputStream.close();
+            }
 			return new ImageIcon(Arrays.copyOf(data,size));
 		} catch (final Throwable th) {
 			return MISSING2;
