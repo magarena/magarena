@@ -74,7 +74,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		final Dimension labelSize=new Dimension(25,20);
 		for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
 			
-			final JLabel label=new JLabel(CardStatistics.MANA_CURVE_ICONS[index]);
+			final JLabel label=new JLabel(CardStatistics.MANA_CURVE_ICONS.get(index));
 			label.setPreferredSize(labelSize);
 			label.setHorizontalAlignment(JLabel.CENTER);
 			label.setBorder(FontsAndBorders.TABLE_BORDER);
@@ -103,7 +103,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 			if (total>0) {
 				final JLabel label=new JLabel(""+total);
 				label.setForeground(textColor);
-				label.setIcon(CardStatistics.TYPE_ICONS[index]);
+				label.setIcon(CardStatistics.TYPE_ICONS.get(index));
 				label.setIconTextGap(4);
 				topPanel.add(label);
 			}
