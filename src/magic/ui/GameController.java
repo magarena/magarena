@@ -139,7 +139,7 @@ public class GameController {
 		return choiceClicked;
 	}
 
-    public void setMaxTestGameDuration(final long duration) {
+    public synchronized void setMaxTestGameDuration(final long duration) {
         MAX_TEST_MODE_DURATION = duration;
     }
 
