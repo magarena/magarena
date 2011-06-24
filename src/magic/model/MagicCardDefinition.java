@@ -51,8 +51,6 @@ public class MagicCardDefinition {
 		}
 	};
 	
-	public static final String RARITY_NAMES[]={"Basic","Common","Uncommon","Rare","Mythic Rare"};
-	public static final int NR_OF_RARITIES=RARITY_NAMES.length;
 
 	public static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES=Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
 
@@ -63,7 +61,7 @@ public class MagicCardDefinition {
 	private int value=0;
 	private int removal=0;
 	private int score=-1; // not initialized
-	private int rarity=0;
+	private MagicRarity rarity = null;
 	private boolean token=false;
 	private int typeFlags=0;
 	private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
@@ -172,20 +170,18 @@ public class MagicCardDefinition {
 		return score;
 	}
 					
-	public void setRarity(final int rarity) {
-		
-		this.rarity = rarity;
+	public void setRarity(final char c) {
+		this.rarity = MagicRarity.getRarity(c);
 	}
 
 	public int getRarity() {
-
-		return rarity;
+		return rarity.ordinal();
 	}
 	
 	public Color getRarityColor() {
 		
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-		switch (rarity) {
+		switch (getRarity()) {
 			case 2: return theme.getColor(Theme.COLOR_UNCOMMON_FOREGROUND);
 			case 3: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
 			case 4: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);

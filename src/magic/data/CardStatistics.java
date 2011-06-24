@@ -10,6 +10,7 @@ import javax.swing.ImageIcon;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicRarity;
 
 public class CardStatistics {
 
@@ -47,7 +48,7 @@ public class CardStatistics {
 	public int totalCards=0;
 	public int totalTypes[]=new int[NR_OF_TYPES];
 	
-	public int totalRarity[]=new int[MagicCardDefinition.NR_OF_RARITIES];
+	public int totalRarity[]=new int[MagicRarity.length];
 	
 	public double averageCost=0;
 	public double averageValue=0;
@@ -146,9 +147,9 @@ public class CardStatistics {
 		}
 		stream.println();
 		
-		for (int index=0;index<MagicCardDefinition.NR_OF_RARITIES;index++) {
+		for (int index=0;index<MagicRarity.length;index++) {
 			
-			stream.print(MagicCardDefinition.RARITY_NAMES[index]+" : "+totalRarity[index]+"  ");
+			stream.print(MagicRarity.values()[index].getName() + " : " + totalRarity[index] + "  ");
 		}
 		stream.println();
 		stream.printf("Average Cost : %.2f  Value : %.2f\n", averageCost, averageValue);

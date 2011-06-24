@@ -54,7 +54,7 @@ public class CardDefinitions {
 		} else if ("removal".equals(property)) {
 			card.setRemoval(Integer.parseInt(value));
 		} else if ("rarity".equals(property)) {
-			card.setRarity(Integer.parseInt(value));
+			card.setRarity(value.charAt(0));
 		} else if ("type".equals(property)) {
 			final String names[]=value.split(",");
 			for (final String name : names) {
@@ -108,14 +108,17 @@ public class CardDefinitions {
 	}
 
 	private void checkCard(final MagicCardDefinition card) {
-		
-		if (card!=null) {		
-			if (card.hasType(MagicType.Legendary)&&card.getRarity()<3) {
-				card.setRarity(3);
+		if (card!=null) {	
+            //legendaries are at least Rare
+			if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
+				card.setRarity('R');
 				System.err.println("Rarity for Legendary : "+card.getName());
+                System.exit(1);
 			}
+            //every card should have a timing hint
 			if (card.getTiming()==MagicTiming.None) {
 				System.err.println("No timing : "+card.getName());
+                System.exit(1);
 			}
 		}
 	}
