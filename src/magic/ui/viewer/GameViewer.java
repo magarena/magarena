@@ -115,13 +115,11 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 	}
 	
 	public void setTitle(final TitleBar titleBar) {
-
-		titleBar.setText("Turn "+game.getTurn()+" : "+game.getPhase().getType().getName());
-		titleBar.setIcon(game.getTurnPlayer()==game.getVisiblePlayer()?IconImages.YOU:IconImages.OPPONENT);
+		titleBar.setText("Turn " + game.getTurn() + " : " + game.getPhase().getType().getName());
+		titleBar.setIcon(game.getTurnPlayer() == game.getVisiblePlayer() ? IconImages.YOU : IconImages.OPPONENT);
 	}
 	
 	public void showComponent(final JComponent newContent) {
-
 		if (content!=null) {
 			contentPanel.remove(content);
 		}

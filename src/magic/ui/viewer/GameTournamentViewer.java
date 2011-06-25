@@ -25,7 +25,6 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 	private final TabSelector tabSelector;
 	
 	public GameTournamentViewer(final MagicGame game,final GameController controller) {
-		
 		gameViewer=new GameViewer(game,controller);
 		tournamentViewer=new TournamentViewer(game.getTournament());
 
@@ -47,12 +46,10 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 	}
 	
 	public GameViewer getGameViewer() {
-		
 		return gameViewer;
 	}
 	
 	public void update() {
-
 		switch (tabSelector.getSelectedTab()) {
 			case 0: 
 				gameViewer.setTitle(titleBar);
@@ -65,7 +62,6 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 		
 	@Override
 	public void stateChanged(ChangeEvent e) {
-
 		final int selectedTab=tabSelector.getSelectedTab();
 		cardLayout.show(cardPanel,""+selectedTab);
 		update();

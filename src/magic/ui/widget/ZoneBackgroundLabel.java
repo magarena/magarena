@@ -23,40 +23,32 @@ public class ZoneBackgroundLabel extends JLabel {
 	private int handY=0;
 	
 	public void setGame(final boolean game) {
-		
 		this.game=game;
 	}
 	
 	public void setImage(final boolean image) {
-		
 		this.image=image;
 	}
 	
 	public void setZones(final ResolutionProfileResult result) {
-		
 		final Rectangle rect=result.getBoundary(ResolutionProfileType.GameZones);
 		playerX=rect.width;
 		handY=rect.height;
 	}
 	
 	private void paintZoneTile(final Graphics g,final BufferedImage image,final Rectangle rect) {
-		
 		final int imageWidth=image.getWidth();
 		final int imageHeight=image.getHeight();
 		final int x2=rect.x+rect.width;
 		final int y2=rect.y+rect.height;
-		
 		for (int y=rect.y;y<y2;y+=imageHeight) {
-			
 			for (int x=rect.x;x<x2;x+=imageWidth) {
-				
 				g.drawImage(image,x,y,this);
 			}
 		}
 	}
 	
 	private void paintZoneStretch(final Graphics g,final BufferedImage image,final Rectangle rect) {
-
 		final int iw=image.getWidth();
 		final int ih=image.getHeight();
 		final int iw2=ih*rect.width/rect.height;
@@ -72,7 +64,6 @@ public class ZoneBackgroundLabel extends JLabel {
 	}
 	
 	private void paintZone(final Graphics g,final BufferedImage image,final Rectangle rect,final boolean stretch) {
-
 		if (stretch) {
 			paintZoneStretch(g,image,rect);
 		} else {
@@ -94,24 +85,33 @@ public class ZoneBackgroundLabel extends JLabel {
 	
 			switch (theme.getValue(Theme.VALUE_GAME_LAYOUT)) {
 				case 1:
-					paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(0,0,size.width,size.height),battlefieldStretch);
+					paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                            new Rectangle(0,0,size.width,size.height),battlefieldStretch);
 					break;
 				case 2:
 					if (image) {
-						paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),new Rectangle(0,0,size.width,size.height),playerStretch);
-						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);
+						paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),
+                                new Rectangle(0,0,size.width,size.height),playerStretch);
+						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                                new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);
 					} else {
-						paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),new Rectangle(0,0,playerX,size.height),playerStretch);
-						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);													
+						paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),
+                                new Rectangle(0,0,playerX,size.height),playerStretch);
+						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);													
 					}
 					break;
 				case 3:
-					paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),new Rectangle(0,0,playerX,size.height),playerStretch);
+					paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),
+                            new Rectangle(0,0,playerX,size.height),playerStretch);
 					if (image) {
-						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);				
-						paintZone(g,theme.getTexture(Theme.TEXTURE_HAND),new Rectangle(playerX,handY,size.width-playerX,handY),handStretch);
+						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                                new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);				
+						paintZone(g,theme.getTexture(Theme.TEXTURE_HAND),
+                                new Rectangle(playerX,handY,size.width-playerX,handY),handStretch);
 					} else {
-						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);								
+						paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);								
 					}
 					break;
 			}		
@@ -128,7 +128,8 @@ public class ZoneBackgroundLabel extends JLabel {
 			}
 		} else {
 			final boolean stretchTexture=theme.getValue(Theme.VALUE_BACKGROUND_STRETCH)==1;
-			paintZone(g,theme.getTexture(Theme.TEXTURE_BACKGROUND),new Rectangle(0,0,size.width,size.height),stretchTexture);
+			paintZone(g,theme.getTexture(Theme.TEXTURE_BACKGROUND),
+                    new Rectangle(0,0,size.width,size.height),stretchTexture);
 		}
 		
 		super.paint(g);
