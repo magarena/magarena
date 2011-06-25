@@ -59,25 +59,21 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 
 	@Override
 	public void mouseClicked() {
-
 		controller.processClick(permanentInfo.permanent);
 	}
 
 	@Override
 	public void mouseEntered() {
-
 		controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);
 	}
 	
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
-		
 		setValid(validChoices.contains(permanentInfo.permanent));
 	}
 
 	@Override
 	public Color getValidColor() {
-
 		if (controller.isCombatChoice()) {
 			return ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);
 		} else {
