@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
+import java.awt.BasicStroke;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -205,7 +206,8 @@ public class ImagePermanentViewer extends JPanel {
 		for (int index=0;index<linkedScreenRectangles.size();index++) {
 
 			final PermanentViewerInfo linkedInfo=linkedInfos.get(index);
-			final BufferedImage image=HighQualityCardImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
+			final BufferedImage image=
+                HighQualityCardImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
 			final Rectangle linkedRect=linkedScreenRectangles.get(index);
 			final int x1=linkedRect.x;
 			final int y1=linkedRect.y;
@@ -257,10 +259,15 @@ public class ImagePermanentViewer extends JPanel {
 					ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(damage!=null?32:18),true);
 				}
 			}
-						
+					
 			if (viewer.isValidChoice(linkedInfo)) {
-				g2d.setPaint(choiceColor);
-				g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
+                //draw a transparent overlay of choiceColor
+				// g2d.setPaint(choiceColor);
+				// g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
+                //draw a one pixel border of choiceColor
+				g2d.setPaint(new Color(choiceColor.getRGB()));
+                g2d.setStroke(new BasicStroke(1));
+				g2d.drawRect(x1,y1,x2-x1,y2-y1);
 			}
 		}
 	}

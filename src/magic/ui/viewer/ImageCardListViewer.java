@@ -3,6 +3,7 @@ package magic.ui.viewer;
 import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
+import java.awt.BasicStroke;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -43,7 +44,6 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 	private boolean showInfo=false;
 	
 	public ImageCardListViewer(final GameController controller) {
-	
 		setOpaque(false);
 
 		this.controller=controller;
@@ -54,39 +54,33 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		controller.registerChoiceViewer(this);
 		
 		addMouseListener(new MouseAdapter() {
-
 			@Override
 			public void mousePressed(final MouseEvent event) {
-
 				if (event.getButton() == MouseEvent.BUTTON3) {
 					controller.actionKeyPressed();
 					return;
 				}
-				
 				final int index=getCardIndexAt(event.getX(),event.getY());
 				if (index>=0) {
 					controller.processClick(cardList.get(index));
 				}
 			}
-
 			@Override
 			public void mouseExited(final MouseEvent event) {
-				
 				controller.hideInfo();
 			}			
 		});
 		
 		addMouseMotionListener(new MouseMotionAdapter() {
-
 			@Override
 			public void mouseMoved(final MouseEvent event) {
-
 				final int index=getCardIndexAt(event.getX(),event.getY());
 				if (index>=0) {
 					final MagicCard card=cardList.get(index);
 					final Point pointOnScreen=getLocationOnScreen();
 					final Point point=cardPoints.get(index);
-					final Rectangle rect=new Rectangle(pointOnScreen.x+point.x,pointOnScreen.y+point.y,CARD_WIDTH,CARD_HEIGHT);
+					final Rectangle rect=
+                        new Rectangle(pointOnScreen.x+point.x,pointOnScreen.y+point.y,CARD_WIDTH,CARD_HEIGHT);
 					ImageCardListViewer.this.controller.viewInfoAbove(card.getCardDefinition(),card.getImageIndex(),rect);
 				} else {
 					ImageCardListViewer.this.controller.hideInfo();
@@ -96,9 +90,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 	}
 	
 	private int getCardIndexAt(final int x,final int y) {
-
 		for (int index=cardPoints.size()-1;index>=0;index--) {
-
 			final Point point=cardPoints.get(index);
 			if (x>=point.x&&y>=point.y&&x<point.x+CARD_WIDTH&&y<point.y+CARD_HEIGHT) {
 				return index;
@@ -108,7 +100,6 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 	}
 		
 	public void setCardList(final MagicCardList cardList,final boolean showInfo) {
-
 		final List<Point> cardPoints=new ArrayList<Point>();
 		final int size=cardList.size();
 		final int cardWidth=CARD_WIDTH*size+(size-1)*SPACING;			
@@ -147,18 +138,23 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
 		final Graphics2D g2d=(Graphics2D)g;
-		g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);		
-		for (int index=0;index<cardList.size();index++) {
-			
+		g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+
+		for (int index=0; index < cardList.size(); index++) {
 			final MagicCard card=cardList.get(index);
 			final MagicCardDefinition cardDefinition=card.getCardDefinition();
 			final Point point=cardPoints.get(index);
-			final BufferedImage image=HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex(),false);
+			final BufferedImage image=
+                HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex(),false);
 			final int x1=point.x;
 			final int y1=point.y;
 			final int x2=point.x+CARD_WIDTH;
 			final int y2=point.y+CARD_HEIGHT;
+
+            //draw the card image
 			g.drawImage(image,x1,y1,x2,y2,0,0,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT,this);
+
+            //draw the overlay icons
 			if (showInfo) {
 				if (cardDefinition.isLand()) {
 					ImageDrawingUtils.drawManaInfo(g,this,cardDefinition,x1+1,y2-17);
@@ -172,16 +168,22 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 					ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,null,x2-ptWidth-4,y2-18,false);
 				}
 			}
+
+            //show that card is a valid choice
+            //instead of adding a choiceColor transparent layer,
+            //draw a one pixel border of the choiceColor
 			if (validChoices.contains(card)) {
-				g2d.setPaint(choiceColor);
-				g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
+                //g2d.setPaint(choiceColor);
+                //g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
+				g2d.setPaint(new Color(choiceColor.getRGB()));
+                g2d.setStroke(new BasicStroke(1));
+				g2d.drawRect(x1,y1,CARD_WIDTH-1,CARD_HEIGHT);
 			}
 		}
 	}
 
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
-		
 		this.validChoices=validChoices;
 		repaint();
 	}
