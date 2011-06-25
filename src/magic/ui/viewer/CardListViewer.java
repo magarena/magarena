@@ -85,7 +85,6 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 			cardPanel.setPreferredSize(new Dimension(0,6));
 		} else {
 			for (final MagicCard card : cardList) {
-	
 				final CardButton button=new CardButton(card);
 				buttons.add(button);
 				cardPanel.add(button);
@@ -101,9 +100,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 	
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
-		
 		for (final CardButton button : buttons) {
-
 			button.showValidChoices(validChoices);
 		}
 	}	
