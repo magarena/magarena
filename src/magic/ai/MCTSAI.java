@@ -206,13 +206,13 @@ public class MCTSAI implements MagicAI {
 
                 if (child != null && child.isSolved()) {
                     if (parent.isAI() && child.isAIWin()) {
-                        parent.setAIWin();
+                        parent.setAIWin(child.getSteps() + 1);
                     } else if (parent.isAI() && child.isAILose()) {
                         parent.incLose();
                     } else if (!parent.isAI() && child.isAIWin()) {
                         parent.incLose();
                     } else if (!parent.isAI() && child.isAILose()) {
-                        parent.setAILose();
+                        parent.setAILose(child.getSteps() + 1);
                     }
                 }
             }
@@ -264,8 +264,12 @@ public class MCTSAI implements MagicAI {
                 out.append('/');
                 if (node.isAIWin()) {
                     out.append("win");
+                    out.append(':');
+                    out.append(node.getSteps());
                 } else if (node.isAILose()) {
                     out.append("lose");
+                    out.append(':');
+                    out.append(node.getSteps());
                 } else {
                     out.append("?");
                 }
@@ -422,10 +426,10 @@ public class MCTSAI implements MagicAI {
             assert game.getLosingPlayer() != null : "ERROR! Game finished but no losing player";
             
             if (game.getLosingPlayer() == game.getScorePlayer()) {
-                node.setAILose();
+                node.setAILose(0);
                 return -1.0;
             } else {
-                node.setAIWin();
+                node.setAIWin(0);
                 return 1.0;
             }
         }
@@ -512,6 +516,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private int numLose = 0;
     private int numSim = 0;
     private int evalScore = 0;
+    private int steps = 0;
     private double score = 0;
     public String desc;
     public String[] choicesStr;
@@ -577,10 +582,14 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public void incLose() {
         numLose++;
         if (numLose == maxChildren) {
+            int max = 0;
+            for (MCTSGameTree child : children) {
+                max = Math.max(max, child.getSteps());
+            }
             if (isAI) {
-                setAILose();
+                setAILose(max + 1);
             } else {
-                setAIWin();
+                setAIWin(max + 1);
             }
         }
     }
@@ -588,13 +597,19 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public int getChoice() {
         return choice;
     }
-
-    public void setAIWin() {
-        evalScore = Integer.MAX_VALUE;
+    
+    public int getSteps() {
+        return steps;
     }
 
-    public void setAILose() {
+    public void setAIWin(final int steps) {
+        this.evalScore = Integer.MAX_VALUE;
+        this.steps = steps;
+    }
+
+    public void setAILose(final int steps) {
         evalScore = Integer.MIN_VALUE;
+        this.steps = steps;
     }
 
     public int getEvalScore() {
