@@ -197,13 +197,13 @@ public class MagicEvent implements MagicCopyable {
             (player != null ? player.getIndex() : -1L),
             (source != null ? source.getId() : -1L),
             (action != null ? action.hashCode() : -1L),
-            (data.length > 0) ?
+            (data.length > 0 && data[0] != null) ?
                 ((data[0] instanceof MagicTarget) ? ((MagicTarget)data[0]).getId() : data[0].hashCode()) :
                 -1L,
-            (data.length > 1) ?
+            (data.length > 1 && data[1] != null) ?
                 ((data[1] instanceof MagicTarget) ? ((MagicTarget)data[1]).getId() : data[1].hashCode()) :
                 -1L,
-            (data.length > 2) ?
+            (data.length > 2 && data[2] != null) ?
                 ((data[2] instanceof MagicTarget) ? ((MagicTarget)data[2]).getId() : data[2].hashCode()) :
                 -1L,
         };
