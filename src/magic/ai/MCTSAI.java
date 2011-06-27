@@ -137,14 +137,24 @@ public class MCTSAI implements MagicAI {
     }
 
     private double UCT(final MCTSGameTree parent, final MCTSGameTree child) {
-        return (parent.isAI() ? 1.0 : -1.0) * child.getV() + 
-            C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
+        return parent.sign() * child.getV() + 
+               C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
+    }
+    
+    private double Ratio(final MCTSGameTree parent, final MCTSGameTree child) {
+        //skip lose nodes
+        if (!parent.isAI() && child.isAIWin()) {
+            return -10.0 + parent.sign() * child.getV();
+        } else if (parent.isAI() && child.isAILose()) {
+            return -10.0 + parent.sign() * child.getV();
+        } else {
+            return (parent.sign() * child.getScore() + 5)/(child.getNumSim() + 10);
+        }
     }
 
     public synchronized Object[] findNextEventChoiceResults(
             final MagicGame startGame, 
             final MagicPlayer scorePlayer) {
-
 
         final MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
         final MagicEvent event = choiceGame.getNextEvent();
@@ -164,10 +174,12 @@ public class MCTSAI implements MagicAI {
         //ArtificialLevel = number of seconds to run MCTSAI
         //debugging: max time is 1 billion, max sim is 500
         //normal   : max time is 1000 * str, max sim is 1 billion
-        final int MAXTIME = ASSERT ?
-            1000000000 : 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
-        final int MAXSIM = ASSERT ? 
-            500 : 1000000000;
+        int MAXTIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
+        assert (MAXTIME = 1000000000) != 1;
+
+        int MAXSIM = 1000000000;
+        assert (MAXSIM = 500) != 1;
+
         final long STARTTIME = System.currentTimeMillis();
        
         //root represents the start state
@@ -222,10 +234,10 @@ public class MCTSAI implements MagicAI {
 
         //select the best choice (child that has the highest secure score)
         final MCTSGameTree first = root.first();
-        double maxR = first.getRank();
+        double maxR = first.getDecision();
         int bestC = first.getChoice();
         for (MCTSGameTree node : root) {
-            final double R = node.getRank();
+            final double R = node.getDecision();
             final int C = node.getChoice();
             if (R > maxR) { 
                 maxR = R;
@@ -398,11 +410,7 @@ public class MCTSAI implements MagicAI {
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
                 for (MCTSGameTree child : curr) {
-                    //skip won nodes
-                    if (child.isAIWin()) {
-                        continue;
-                    }
-                    final double v = UCT(curr, child);
+                    final double v = Ratio(curr, child);
                     if (v > bestV) {
                         bestV = v;
                         next = child;
@@ -554,6 +562,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return maxChildren;
     }
 
+    public double sign() {
+        return isAI ? 1.0 : -1.0;
+    }
+
     public boolean isAI() {
         return isAI;
     }
@@ -620,7 +632,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return score;
     }
 
-    public double getRank() {
+    public double getDecision() {
         if (isAIWin()) {
             return MCTSAI.BOOST + getNumSim();
         } else if (isAILose()) {
