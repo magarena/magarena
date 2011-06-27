@@ -127,9 +127,14 @@ public class TriggerDefinitions {
 	private static final MagicChoice WREXIAL_CHOICE=new MagicMayChoice(
 			"You may cast target instant or sorcery card from your opponent's graveyard.",
 			MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
-	private static final MagicChoice MEMORY_CHOICE=new MagicSimpleMayChoice("You may draw two cards.",MagicSimpleMayChoice.DRAW_CARDS,2);
+	
+    private static final MagicChoice MEMORY_CHOICE=new MagicSimpleMayChoice(
+            "You may draw two cards.",MagicSimpleMayChoice.DRAW_CARDS,2);
+
 	private static final MagicChoice SWORD_CHOICE=new MagicMayChoice(
-			"You may return target creature card from your graveyard to your hand.",MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
+			"You may return target creature card from your graveyard to your hand.",
+            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
+
 	private static final MagicChoice HOBGOBLINS_CHOICE=new MagicMayChoice("You may pay {X}.",new MagicPayManaCostChoice(MagicManaCost.X));
 	private static final MagicChoice SNAKE_CHOICE=new MagicSimpleMayChoice("You may draw a card.",MagicSimpleMayChoice.DRAW_CARDS,1);
 	private static final MagicChoice RUPTURE_SPIRE_CHOICE=new MagicMayChoice("You may pay {1}.",new MagicPayManaCostChoice(MagicManaCost.ONE));
@@ -3157,11 +3162,12 @@ public class TriggerDefinitions {
 		}
     };
 
-    private static final MagicTrigger SWORD_OF_LIGHT_AND_SHADOW=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of Light and Shadow") {
+    private static final MagicTrigger SWORD_OF_LIGHT_AND_SHADOW=new MagicTrigger(
+            MagicTriggerType.WhenDamageIsDealt,
+            "Sword of Light and Shadow") {
 
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
