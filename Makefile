@@ -91,11 +91,11 @@ clean:
 jar: $(MAG)
 	$(JAVA) -jar $^
 
-# bug with invalid nodes 
-bug: 11.jar
-
 %.g: $(MAG)
 	$(JAVA) -DrndSeed=$* -jar $^ |& tee $*.log
+
+%.d: $(MAG)
+	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
 
 test: $(MAG)
 	$(JAVA) -DrndSeed=123 magic.DeckStrCal \
