@@ -119,7 +119,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public long getPermanentId() {
         long[] input = {
-            card.getId(),
             cardDefinition.getIndex(),
             stateFlags,
             damage,
