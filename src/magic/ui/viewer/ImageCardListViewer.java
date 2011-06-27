@@ -176,7 +176,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 //g2d.setPaint(choiceColor);
                 //g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
 				g2d.setPaint(new Color(choiceColor.getRGB()));
-                g2d.setStroke(new BasicStroke(1));
+                g2d.setStroke(new BasicStroke(2));
 				g2d.drawRect(x1,y1,CARD_WIDTH-1,CARD_HEIGHT);
 			}
 		}

@@ -266,8 +266,8 @@ public class ImagePermanentViewer extends JPanel {
 				// g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
                 //draw a one pixel border of choiceColor
 				g2d.setPaint(new Color(choiceColor.getRGB()));
-                g2d.setStroke(new BasicStroke(1));
-				g2d.drawRect(x1,y1,x2-x1,y2-y1);
+                g2d.setStroke(new BasicStroke(2));
+				g2d.drawRect(x1+1,y1+1,x2-x1-1,y2-y1-1);
 			}
 		}
 	}
