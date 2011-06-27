@@ -145,14 +145,18 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	}
 
     public long getItemId() {
+        final Object[] CR = choiceResults;
         final long[] keys = {
             event.getEventId(),
-            ((choiceResults.length > 0 && choiceResults[0] instanceof MagicTarget) ? 
-                ((MagicTarget)choiceResults[0]).getId() : -1L),
-            ((choiceResults.length > 1 && choiceResults[1] instanceof MagicTarget) ? 
-                ((MagicTarget)choiceResults[1]).getId() : -1L),
-            ((choiceResults.length > 2 && choiceResults[2] instanceof MagicTarget) ? 
-                ((MagicTarget)choiceResults[2]).getId() : -1L),
+            (CR.length > 0) ?
+                ((CR[0] instanceof MagicTarget) ? ((MagicTarget)CR[0]).getId() : CR[0].hashCode()) :
+                -1L,
+            (CR.length > 1) ?
+                ((CR[1] instanceof MagicTarget) ? ((MagicTarget)CR[1]).getId() : CR[1].hashCode()) :
+                -1L,
+            (CR.length > 2) ?
+                ((CR[2] instanceof MagicTarget) ? ((MagicTarget)CR[2]).getId() : CR[2].hashCode()) :
+                -1L,
         };
         return magic.MurmurHash3.hash(keys);
     }
