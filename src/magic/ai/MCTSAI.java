@@ -142,13 +142,15 @@ public class MCTSAI implements MagicAI {
     }
     
     private double Ratio(final MCTSGameTree parent, final MCTSGameTree child) {
-        //skip lose nodes
+        final double ratio = (parent.sign() * child.getScore() + 10)/(child.getNumSim() + 10);
+
+        //selection score of lose nodes is lower than all normal nodes by subtracting by 2.0
         if (!parent.isAI() && child.isAIWin()) {
-            return -10.0 + parent.sign() * child.getV();
+            return ratio - 2.0;
         } else if (parent.isAI() && child.isAILose()) {
-            return -10.0 + parent.sign() * child.getV();
+            return ratio - 2.0;
         } else {
-            return (parent.sign() * child.getScore() + 5)/(child.getNumSim() + 10);
+            return ratio;
         }
     }
 
