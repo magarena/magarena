@@ -1,8 +1,9 @@
 package magic.model;
 
 import java.util.Random;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
 
 public class MagicCardList extends ArrayList<MagicCard> {
 	
@@ -27,6 +28,17 @@ public class MagicCardList extends ArrayList<MagicCard> {
 			keys[idx] = card.getCardDefinition().getIndex();
             idx++;
 		}
+		return magic.MurmurHash3.hash(keys);
+	}
+	
+    public long getSortedCardsId() {
+        int idx = 0;
+		long[] keys = new long[size() + 1];
+		for (final MagicCard card : this) {
+			keys[idx] = card.getCardDefinition().getIndex();
+            idx++;
+		}
+        Arrays.sort(keys);
 		return magic.MurmurHash3.hash(keys);
 	}
 	

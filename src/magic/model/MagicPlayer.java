@@ -1,6 +1,7 @@
 package magic.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import magic.data.GeneralConfig;
@@ -106,7 +107,7 @@ public class MagicPlayer implements MagicTarget {
             extraTurns,
             attackers,
             blockers,
-            hand.getCardsId(),
+            hand.getSortedCardsId(),
             library.size(),
             graveyard.getCardsId(),
             exile.getCardsId(),

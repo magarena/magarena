@@ -63,17 +63,21 @@ public class MagicPlayChoice extends MagicChoice {
 	private void addValidChoices(
             final MagicGame game,
             final MagicPlayer player,
-            final boolean useHints,
+            final boolean isAI,
             final Collection<Object> validChoices) {
 		final MagicActivationMap activationMap=player.getActivationMap();
 		for (final MagicActivation activation : activationMap.getActivations()) {
 			final Set<MagicSource> sources=activationMap.get(activation);
 			for (final MagicSource activationSource : sources) {
-				if (activation.canPlay(game,player,activationSource,useHints)) {
-					validChoices.add(activationSource);
-					if (activation.getActivationHints().isIndependent()) {
-						break;
-					}
+				if (activation.canPlay(game,player,activationSource,isAI)) {
+                    if (isAI) { //only AI uses hints
+                        validChoices.add(new MagicPlayChoiceResult(activationSource,activation));
+                        if (activation.getActivationHints().isIndependent()) {
+                            break;
+                        }
+                    } else {
+    					validChoices.add(activationSource);
+                    }
 				}
 			}
 		}
