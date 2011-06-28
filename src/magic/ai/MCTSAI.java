@@ -74,7 +74,7 @@ public class MCTSAI implements MagicAI {
     static final int BOOST = 1000000;
 
     //cache nodes to reuse them in later decision
-    private final NodeCache cache = new NodeCache(1000);
+    private final NodeCache CACHE = new NodeCache(1000);
 
     public MCTSAI() {
         //no logging, cheats
@@ -89,51 +89,11 @@ public class MCTSAI implements MagicAI {
         CHEAT = cheat;
     }
     
-    static public int obj2StringHash(Object obj) {
-        return obj2String(obj).hashCode();
-    }
 
-    static public String obj2String(Object obj) {
-        if (obj == null) {
-            return "null";
-        } else if (obj instanceof MagicBuilderPayManaCostResult) {
-            return ((MagicBuilderPayManaCostResult)obj).getText();
-        } else {
-            return obj.toString();
-        }
-    }
-
-    private void addNode(final MagicGame game, final MCTSGameTree node) {
-        if (node.isCached()) {
-            return;
-        }
-        final long gid = game.getGameId();
-        cache.put(gid, node);
-        node.setCached();
-        assert log("ADDED: " + game.getIdString());
-    }
-
-    private MCTSGameTree getNode(final MagicGame game, List<Object[]> rootChoices) {
-        final long gid = game.getGameId();
-        MCTSGameTree candidate = cache.get(gid);
-        
-        if (candidate != null) { 
-            assert log("CACHE HIT");
-            assert log("HIT  : " + game.getIdString());
-            assert printNode(candidate, rootChoices);
-            return candidate;
-        } else {
-            assert log("CACHE MISS");
-            assert log("MISS : " + game.getIdString());
-            return new MCTSGameTree(-1, -1);
-        }
-    }
-
-    private boolean log(final String message) {
+    private void log(final String message) {
         if (LOGGING) {
             System.err.println(message);
         }
-        return true;
     }
 
     private double UCT(final MCTSGameTree parent, final MCTSGameTree child) {
@@ -186,8 +146,7 @@ public class MCTSAI implements MagicAI {
        
         //root represents the start state
         //final MCTSGameTree root = new MCTSGameTree(-1, -1, -1);
-        final MCTSGameTree root = getNode(startGame, rootChoices);
-        assert (root.desc = "root").equals(root.desc);
+        final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, rootChoices);
         LENS.clear();
 
         //end simulations once root is solved or time is up
@@ -313,42 +272,6 @@ public class MCTSAI implements MagicAI {
         }
         return buffer.toString();
     }
-               
-    private boolean checkNode(final MCTSGameTree curr, List<Object[]> choices) {
-        if (curr.getMaxChildren() != choices.size()) {
-            return false;
-        }
-        for (int i = 0; i < choices.size(); i++) {
-            final String checkStr = obj2String(choices.get(i)[0]);
-            if (!curr.choicesStr[i].equals(checkStr)) {
-                return false;
-            }
-        }
-        for (MCTSGameTree child : curr) {
-            final String checkStr = obj2String(choices.get(child.getChoice())[0]);
-            if (!child.desc.equals(checkStr)) {
-                return false;
-            }
-        }
-        return true;
-    }
-                    
-    private boolean printNode(final MCTSGameTree curr, List<Object[]> choices) {
-        if (curr.choicesStr != null) {
-            for (String str : curr.choicesStr) {
-                log("PAREN: " + str);
-            }
-        } else {
-            log("PAREN: not defined");
-        }
-        for (MCTSGameTree child : curr) {
-            log("CHILD: " + child.desc);
-        }
-        for (Object[] choice : choices) {
-            log("GAME : " + obj2String(choice[0]));
-        }
-        return true;
-    }
 
     public boolean printPath(final List<MCTSGameTree> path) {
         StringBuffer sb = new StringBuffer();
@@ -371,8 +294,8 @@ public class MCTSAI implements MagicAI {
 
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
             
-            assert !curr.hasDetails() || checkNode(curr, choices) : 
-                "ERROR! Inconsistent node found" + "\n" + game + printPath(path) + printNode(curr, choices);
+            assert !curr.hasDetails() || MCTSGameTree.checkNode(curr, choices) : 
+                "ERROR! Inconsistent node found" + "\n" + game + printPath(path) + MCTSGameTree.printNode(curr, choices);
           
             final MagicEvent event = game.getNextEvent();
            
@@ -388,7 +311,7 @@ public class MCTSAI implements MagicAI {
             if (!found && curr != root && curr.isAI()) {
                 found = true;
                 assert curr.isCached() || printPath(path);
-                addNode(game, curr);
+                MCTSGameTree.addNode(CACHE, game, curr);
             }
 
             //there are unexplored children of node
@@ -398,7 +321,7 @@ public class MCTSAI implements MagicAI {
                 Object[] choice = choices.get(idx);
                 game.executeNextEvent(choice);
                 final MCTSGameTree child = new MCTSGameTree(idx, game.getScore()); 
-                assert (child.desc = obj2String(choice[0])).equals(child.desc);
+                assert (child.desc = MCTSGameTree.obj2String(choice[0])).equals(child.desc);
                 curr.addChild(child);
                 path.add(child);
                 return path;
@@ -407,7 +330,7 @@ public class MCTSAI implements MagicAI {
             } else {
 
                 assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game" + 
-                    printPath(path) + printNode(curr, choices); 
+                    printPath(path) + MCTSGameTree.printNode(curr, choices); 
 
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
@@ -530,6 +453,90 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private double score = 0;
     public String desc;
     public String[] choicesStr;
+    
+    private static boolean log(final String message) {
+        System.err.println(message);
+        return true;
+    }
+    
+    static public int obj2StringHash(Object obj) {
+        return obj2String(obj).hashCode();
+    }
+
+    static public String obj2String(Object obj) {
+        if (obj == null) {
+            return "null";
+        } else if (obj instanceof MagicBuilderPayManaCostResult) {
+            return ((MagicBuilderPayManaCostResult)obj).getText();
+        } else {
+            return obj.toString();
+        }
+    }
+    
+    static void addNode(final NodeCache cache, final MagicGame game, final MCTSGameTree node) {
+        if (node.isCached()) {
+            return;
+        }
+        final long gid = game.getGameId();
+        cache.put(gid, node);
+        node.setCached();
+        assert log("ADDED: " + game.getIdString());
+    }
+
+    static MCTSGameTree getNode(final NodeCache cache, final MagicGame game, List<Object[]> rootChoices) {
+        final long gid = game.getGameId();
+        MCTSGameTree candidate = cache.get(gid);
+        
+        if (candidate != null) { 
+            assert log("CACHE HIT");
+            assert log("HIT  : " + game.getIdString());
+            assert printNode(candidate, rootChoices);
+            return candidate;
+        } else {
+            assert log("CACHE MISS");
+            assert log("MISS : " + game.getIdString());
+            final MCTSGameTree root = new MCTSGameTree(-1, -1);
+            assert (root.desc = "root").equals(root.desc);
+            return root;
+        }
+    }
+               
+    static boolean checkNode(final MCTSGameTree curr, List<Object[]> choices) {
+        if (curr.getMaxChildren() != choices.size()) {
+            return false;
+        }
+        for (int i = 0; i < choices.size(); i++) {
+            final String checkStr = obj2String(choices.get(i)[0]);
+            if (!curr.choicesStr[i].equals(checkStr)) {
+                return false;
+            }
+        }
+        for (MCTSGameTree child : curr) {
+            final String checkStr = obj2String(choices.get(child.getChoice())[0]);
+            if (!child.desc.equals(checkStr)) {
+                return false;
+            }
+        }
+        return true;
+    }
+                    
+    
+    static boolean printNode(final MCTSGameTree curr, List<Object[]> choices) {
+        if (curr.choicesStr != null) {
+            for (String str : curr.choicesStr) {
+                log("PAREN: " + str);
+            }
+        } else {
+            log("PAREN: not defined");
+        }
+        for (MCTSGameTree child : curr) {
+            log("CHILD: " + child.desc);
+        }
+        for (Object[] choice : choices) {
+            log("GAME : " + obj2String(choice[0]));
+        }
+        return true;
+    }
 
     public MCTSGameTree(final int choice, final int evalScore) { 
         this.evalScore = evalScore;
@@ -551,7 +558,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public boolean setChoicesStr(List<Object[]> choices) {
         choicesStr = new String[choices.size()];
         for (int i = 0; i < choices.size(); i++) {
-            choicesStr[i] = MCTSAI.obj2String(choices.get(i)[0]);
+            choicesStr[i] = obj2String(choices.get(i)[0]);
         }
         return true;
     }
