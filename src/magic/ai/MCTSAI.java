@@ -96,7 +96,7 @@ public class MCTSAI implements MagicAI {
     }
 
     private double selectUCT(final MCTSGameTree parent, final MCTSGameTree child) {
-        final double C = 1.0;
+        final double C = 1.41421356;
         return parent.sign() * child.getV() + 
                C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
@@ -343,7 +343,7 @@ public class MCTSAI implements MagicAI {
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
                 for (MCTSGameTree child : curr) {
-                    final double raw = selectRatio(curr, child);
+                    final double raw = selectUCT(curr, child);
                     final double v = modifySolved(curr, child, raw);
                     if (v > bestV) {
                         bestV = v;
