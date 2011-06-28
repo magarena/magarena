@@ -101,7 +101,9 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	}
 	
 	public void changeActivationPriority(final MagicGame game,final MagicSource source) {
-		final MagicActivationPriority actpri = source.getController().getActivationPriority();
+		assert game != null;
+        assert source != null;
+        final MagicActivationPriority actpri = source.getController().getActivationPriority();
 		actpri.setPriority(priority);
 		actpri.setActivationId(id);
 	}
