@@ -106,7 +106,7 @@ public class MagicPlayer implements MagicTarget {
             extraTurns,
             attackers,
             blockers,
-            hand.size(),
+            hand.getCardsId(),
             library.size(),
             graveyard.getCardsId(),
             exile.getCardsId(),

@@ -53,34 +53,30 @@ public class MagicPlayChoice extends MagicChoice {
 
 		// Pass is first choice when scores are equal.
 		options.add(MagicPlayChoiceResult.PASS);
+
+        // add rest of the options
+        addValidChoices(game, player, true, options);
 		
+		return options;
+	}
+	
+	private void addValidChoices(
+            final MagicGame game,
+            final MagicPlayer player,
+            final boolean useHints,
+            final Collection<Object> validChoices) {
+		final MagicActivationMap activationMap=player.getActivationMap();
 		for (final MagicActivation activation : activationMap.getActivations()) {
 			final Set<MagicSource> sources=activationMap.get(activation);
 			for (final MagicSource activationSource : sources) {
-				if (activation.canPlay(game,player,activationSource,true)) {
-					options.add(new MagicPlayChoiceResult(activationSource,activation));
+				if (activation.canPlay(game,player,activationSource,useHints)) {
+					validChoices.add(activationSource);
 					if (activation.getActivationHints().isIndependent()) {
 						break;
 					}
 				}
 			}
 		}
-		
-		return options;
-	}
-	
-	private Set<Object> getValidChoices(final MagicGame game,final MagicPlayer player) {
-		final Set<Object> validChoices=new HashSet<Object>();
-		final MagicActivationMap activationMap=player.getActivationMap();
-		for (final MagicActivation activation : activationMap.getActivations()) {
-			final Set<MagicSource> sources=activationMap.get(activation);
-			for (final MagicSource activationSource : sources) {
-				if (activation.canPlay(game,player,activationSource,false)) {
-					validChoices.add(activationSource);
-				}
-			}
-		}
-		return validChoices;
 	}
 	
 	@Override
@@ -119,8 +115,8 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
 		
-		final Set<Object> validChoices;
-        validChoices=getValidChoices(game,player);
+		final Set<Object> validChoices = new HashSet<Object>();
+        addValidChoices(game, player, false, validChoices);
 	
         if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
             boolean skip = true;
