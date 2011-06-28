@@ -16,36 +16,38 @@ public class MagicRandomCardChoice extends MagicChoice {
 	private final int amount;
 	
 	public MagicRandomCardChoice(final int amount) {
-		
 		super("");
 		this.amount=amount;
 	}
 
-	/** Always pick the first cards of hand in AI to create determinism. */
-	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
-
+	/** Seed the rng with source id + player id */
+    private MagicCardChoiceResult discard(final MagicPlayer player, final MagicSource source) {
 		final MagicCardChoiceResult result=new MagicCardChoiceResult();
-		final MagicCardList hand=player.getHand();
-		final int actualAmount=Math.min(hand.size(),amount);
-		for (int index=0;index<actualAmount;index++) {
-			
-			result.add(hand.get(index));
+		final MagicCardList hand=new MagicCardList(player.getHand());
+        final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(source.getId() + player.getId());
+		int actualAmount=Math.min(hand.size(),amount);
+		for (;actualAmount>0;actualAmount--) {
+            final int index = rng.nextInt(hand.size());
+			result.add(hand.remove(index));
 		}
-		return Collections.<Object>singletonList(result);
+        return result;
+    }
+
+	@Override
+	public Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
+		return Collections.<Object>singletonList(discard(player, source));
 	}
 
 	@Override
-	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
-
-		final MagicCardChoiceResult result=new MagicCardChoiceResult();
-		final MagicCardList hand=new MagicCardList(player.getHand());
-		int actualAmount=Math.min(hand.size(),amount);
-		for (;actualAmount>0;actualAmount--) {
-			
-			final int index=MagicRandom.nextInt(hand.size());
-			result.add(hand.remove(index));
-		}
-		return new Object[]{result};
+	public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
+		return new Object[]{discard(player, source)};
 	}
 }
