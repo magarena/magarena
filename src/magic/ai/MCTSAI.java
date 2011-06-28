@@ -431,6 +431,7 @@ public class MCTSAI implements MagicAI {
                 //get list of possible AI choices
                 List<Object[]> choices = null;
                 if (game.getNumActions() == 0) {
+                    //map the rootChoices to the current game instead of recomputing the choices
                     choices = new ArrayList<Object[]>(rootChoices.size());
                     for (Object[] choice : rootChoices) {
                         choices.add(game.map(choice));
