@@ -67,9 +67,6 @@ public class MCTSAI implements MagicAI {
     private boolean ASSERT;
     private final List<Integer> LENS = new LinkedList<Integer>();
     
-    //higher C -> more exploration less exploitation
-    static final double C = 1.0;
-
     //boost score of win nodes by BOOST 
     static final int BOOST = 1000000;
 
@@ -96,22 +93,29 @@ public class MCTSAI implements MagicAI {
         }
     }
 
-    private double UCT(final MCTSGameTree parent, final MCTSGameTree child) {
+    private double selectUCT(final MCTSGameTree parent, final MCTSGameTree child) {
+        final double C = 1.0;
         return parent.sign() * child.getV() + 
                C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
     
-    private double Ratio(final MCTSGameTree parent, final MCTSGameTree child) {
-        final double ratio = (parent.sign() * child.getScore() + 10)/(child.getNumSim() + 10);
+    private double selectRatio(final MCTSGameTree parent, final MCTSGameTree child) {
+        return (parent.sign() * child.getScore() + 10)/(child.getNumSim() + 10);
+    }
 
-        //selection score of lose nodes is lower than all normal nodes by subtracting by 2.0
-        if (!parent.isAI() && child.isAIWin()) {
-            return ratio - 2.0;
-        } else if (parent.isAI() && child.isAILose()) {
-            return ratio - 2.0;
+    private double selectNormal(final MCTSGameTree parent, final MCTSGameTree child) {
+        return parent.sign() * child.getV() + 2 * Math.sqrt(child.getVar());
+    }
+    
+    //decrease score of lose node, boost score of win nodes
+    private double modifySolved(final MCTSGameTree parent, final MCTSGameTree child, final double sc) {
+        if ((!parent.isAI() && child.isAIWin()) || (parent.isAI() && child.isAILose())) {
+            return sc - 2.0;
+        } else if ((parent.isAI() && child.isAIWin()) || (!parent.isAI() && child.isAILose())) {
+            return sc + 2.0;
         } else {
-            return ratio;
-        }
+            return sc; 
+        } 
     }
 
     public synchronized Object[] findNextEventChoiceResults(
@@ -335,7 +339,8 @@ public class MCTSAI implements MagicAI {
                 MCTSGameTree next = null;
                 double bestV = Double.NEGATIVE_INFINITY;
                 for (MCTSGameTree child : curr) {
-                    final double v = Ratio(curr, child);
+                    final double raw = selectRatio(curr, child);
+                    final double v = modifySolved(curr, child, raw);
                     if (v > bestV) {
                         bestV = v;
                         next = child;
@@ -451,6 +456,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private int evalScore = 0;
     private int steps = 0;
     private double score = 0;
+    private double S = 0;
     public String desc;
     public String[] choicesStr;
     
@@ -588,8 +594,20 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
     
     public void updateScore(final double score) {
+        final double prevMean = (numSim > 0) ? score/numSim : 0;
         this.score += score;
         numSim += 1;
+        final double newMean = score/numSim;
+        S += (score - prevMean) * (score - newMean);   
+    }
+
+    public double getVar() {
+        final int MIN_SAMPLES = 10;
+        if (numSim < MIN_SAMPLES) {
+            return (MIN_SAMPLES - numSim);
+        } else {
+            return S/(numSim - 1);
+        }
     }
 
     public boolean isAIWin() {
