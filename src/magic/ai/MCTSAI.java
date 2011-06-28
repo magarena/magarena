@@ -67,6 +67,8 @@ public class MCTSAI implements MagicAI {
     private boolean ASSERT;
     private final List<Integer> LENS = new LinkedList<Integer>();
     
+    private List<Object[]> rootChoices;
+    
     //boost score of win nodes by BOOST 
     static final int BOOST = 1000000;
 
@@ -124,7 +126,8 @@ public class MCTSAI implements MagicAI {
 
         final MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
         final MagicEvent event = choiceGame.getNextEvent();
-        final List<Object[]> rootChoices = event.getArtificialChoiceResults(choiceGame);
+        //final List<Object[]> rootChoices = event.getArtificialChoiceResults(choiceGame);
+        rootChoices = event.getArtificialChoiceResults(choiceGame);
 
         final int size = rootChoices.size();
         final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
@@ -149,7 +152,6 @@ public class MCTSAI implements MagicAI {
         final long STARTTIME = System.currentTimeMillis();
        
         //root represents the start state
-        //final MCTSGameTree root = new MCTSGameTree(-1, -1, -1);
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, rootChoices);
         LENS.clear();
 
@@ -158,11 +160,13 @@ public class MCTSAI implements MagicAI {
         for (; System.currentTimeMillis() - STARTTIME < MAXTIME &&
                sims < MAXSIM && 
                !root.isAIWin(); sims++) {
+            
             //clone the MagicGame object for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
             if (!CHEAT) {
                 rootGame.setKnownCards();
             }
+
             
             //pass in a clone of the state, genNewTreeNode grows the tree by one node
             //and returns the path from the root to the new node
@@ -425,9 +429,20 @@ public class MCTSAI implements MagicAI {
                 game.executeNextEvent(choice);
             } else {
                 //get list of possible AI choices
-                final List<Object[]> choices = event.getArtificialChoiceResults(game);
+                List<Object[]> choices = null;
+                if (game.getNumActions() == 0) {
+                    choices = new ArrayList<Object[]>(rootChoices.size());
+                    for (Object[] choice : rootChoices) {
+                        choices.add(game.map(choice));
+                    }
+                } else {
+                    choices = event.getArtificialChoiceResults(game);
+                }
+                assert choices != null;
+                
                 final int size = choices.size();
                 assert size > 0 : "ERROR! No choice found during MCTS getACR";
+                
                 if (size == 1) {
                     //single choice
                     game.executeNextEvent(choices.get(0));

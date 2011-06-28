@@ -20,10 +20,11 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
 	
 	public MagicPermanent getPermanent(final long id) {
 		for (final MagicPermanent permanent : this) {
-			if (permanent.getId()==id) {
+			if (permanent.getId() == id) {
 				return permanent;
 			}
 		}
+        assert false : "ERROR! Mapping permanent failed, permanent " + id + " not found";
 		return null;
 	}	
 	
