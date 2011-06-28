@@ -20,8 +20,9 @@ public class MagicPlayChoiceResult implements MagicMappable {
 	public Object map(final MagicGame game) {
 		if (this==PASS) {
 			return PASS;
-		}
-		return new MagicPlayChoiceResult((MagicSource)source.map(game),activation);
+		} else {
+    		return new MagicPlayChoiceResult((MagicSource)source.map(game),activation);
+        }
 	}
 	
 	@Override
@@ -29,6 +30,7 @@ public class MagicPlayChoiceResult implements MagicMappable {
 		if (this==PASS) {
 			return "pass";
 		} else {
+            assert source != null;
 			return source.getName();
 		}
 	}
