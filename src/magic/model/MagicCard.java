@@ -44,27 +44,19 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	@Override
 	public Object map(final MagicGame game) {
 		final MagicPlayer mappedOwner=(MagicPlayer)owner.map(game);
-		MagicCard card=mappedOwner.getHand().getCard(id);
 
-        if (card != null) {
-			return card;
-		} else {
+        MagicCard card = mappedOwner.getHand().getCard(id);
+        if (card == null) {
             card = mappedOwner.getGraveyard().getCard(id);
         }
-
-        if (card != null) {
-            return card;
-        } else {
+        if (card == null) {
             card = mappedOwner.getExile().getCard(id);
         }
-        
-        if (card != null) {
-            return card;
-        } else {
+        if (card == null) {
             card = mappedOwner.getLibrary().getCard(id);
         }
 
-        assert card != null: "Card " + id + " not found";
+        assert card != null: "ERROR! Mapping card failed, card " + id + " not found";
 		return card;
     }
 	
