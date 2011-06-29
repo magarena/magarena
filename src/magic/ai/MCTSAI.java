@@ -151,7 +151,7 @@ public class MCTSAI implements MagicAI {
         assert (MAXTIME = 1000000000) != 1;
 
         int MAXSIM = 1000000000;
-        assert (MAXSIM = 500) != 1;
+        assert (MAXSIM = 10000) != 1;
 
         final long STARTTIME = System.currentTimeMillis();
        
@@ -390,11 +390,11 @@ public class MCTSAI implements MagicAI {
         }
 
         if (game.getLosingPlayer() == null) {
-            return 0;
+            return 0.5;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return  actions/(2.0 * MAX_ACTIONS);
+            return 0.0;// actions/(2.0 * MAX_ACTIONS);
         } else {
-            return  1.0 - actions/(2.0 * MAX_ACTIONS);
+            return 1.0;//- actions/(2.0 * MAX_ACTIONS);
         }
     }
     
