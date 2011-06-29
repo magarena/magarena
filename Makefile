@@ -138,6 +138,14 @@ cards/evan_cube.txt:
 cards/brett_cube.txt:
 	curl http://www.snazzorama.com/magic/cube/ | grep ":WizardsAutoCard" | sed "s/<\/td>.*//;s/<[^>]*>//g;s/\&\#8217;/'/" > $@
 
+cards/tom_cube.txt:
+	wget -O - http://www.tomlapille.com/cube/tom_list.html | sed 's/<[^>]*>//g;s/^[ ]*//g;/^$$/d' > $@
+
+cards/adam_cube.txt:
+	wget -O - http://www.tomlapille.com/cube/adam_list.html | sed 's/<[^>]*>//g;s/^[ ]*//g;/^$$/d' > $@
+
+cards/AWinnarIsYou_cube.txt:
+	wget -O - http://www.tomlapille.com/cube/winnar_list.html | sed 's/<[^>]*>//g;s/^[ ]*//g;/^$$/d' > $@
 
 daily: $(EXE)
 	mv $^ Magarena_`hg id -n`.exe
