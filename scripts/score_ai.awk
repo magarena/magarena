@@ -1,3 +1,5 @@
+#!/usr/bin/awk -f
+
 #release/decks/LSK_RW.dec        RND     6	release/decks/LSK_RW.dec        VEGAS   6       10      0       10
 #release/decks/LSK_RW.dec        RND     6	release/decks/LSK_RW.dec        VEGAS   6       10      3       7
 
