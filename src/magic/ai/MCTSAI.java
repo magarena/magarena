@@ -9,85 +9,52 @@ import magic.model.event.MagicEvent;
 import magic.model.choice.*;
 
 /*
+AI using Monte Carlo Tree Search
+
+Classical MCTS (UCT)
+ - use UCB1 formula for selection with C = sqrt(2)
+ - reward either 0 or 1
+ - backup by averaging
+ - uniform random simulated playout
+ - score = XX% (25000 matches against MMAB-1)
+
+Enchancements to basic UCT
+ - use ratio selection (v + 10)/(n + 10) 
+ - UCB1 with C = 1.0
+ - UCB1 with C = 2.0
+ - UCB1 with C = 3.0
+ - use normal bound max(1,v + 2 * std(v))
+ - reward depends on length of playout
+ - backup by robust max
+
+References:
 UCT algorithm from Kocsis and Sezepesvari 2006
-
-function playOneSeq(root)
-    nodes = [root]
-    while (nodes.last is not leaf) do
-      nodes append descendByUCB1(node.last)
-    //assume value of leaf nodes are known
-    //node.init is all elements except the last one
-    updateValue(nodes.init, -nodes.last.value) 
-
-function descendByUCB1(node)
-    nb = sum of nb in node's children
-    for each node n in node's children
-        if n.nb = 0
-          v[n] = infinity
-        else
-          v[n] = 1 - n.value/n.nb + sqrt(2 * log(nb) / n.nb)
-    return n that maximizes v[n]
-
-function updateValue(nodes, value)
-    for each node n in nodes
-        n.value += value
-        n.nb += 1
-        value = 1 - value
-
-Modified UCT for MoGO in Wang and Gelly 2007
-
-function playOneGame(state)
-   create node root from current game state
-   init tree to empty tree
-   while there is time and memory
-     //build the game tree one node at a time
-     playOneSeqMC(root, tree)
-   return descendByUCB1(root)
-
-function playOneSeqMC(root, tree)
-   nodes = [root]
-   while (nodes.last is not in the tree)
-     nodes append descendByUCB1(node.last)
-   tree add nodes.last
-   nodes.last.value = getValueByMC(nodes.last)
-   updateValue(nodes.init, -nodes.last.value)
-
-function getValueByMC(node) 
-   play one random game starting from node
-   return 1 if player 1 (max) wins, 0 if player 2 wins (min)
 */
-
-//AI using Monte Carlo Tree Search
 public class MCTSAI implements MagicAI {
     
     private static final int MAX_ACTIONS = 10000;
 
     private final boolean LOGGING;
     private final boolean CHEAT;
-    private boolean ASSERT;
+
+    //for checking the length of playouts
     private final List<Integer> LENS = new LinkedList<Integer>();
     
-    private List<Object[]> rootChoices;
-    
-    //boost score of win nodes by BOOST 
-    static final int BOOST = 1000000;
+    //cache the set of choices at the root to avoid recomputing it all the time
+    private List<Object[]> RCHOICES;
 
     //cache nodes to reuse them in later decision
     private final NodeCache CACHE = new NodeCache(1000);
 
     public MCTSAI() {
-        //no logging, cheats
+        //default: no logging, cheats
         this(false, true);
-        
-        ASSERT = false;
-        assert ASSERT = true;
     }
 
-    public MCTSAI(final boolean printLog, final boolean cheat) {
-        LOGGING = printLog || (System.getProperty("debug") != null);
+    public MCTSAI(final boolean log, final boolean cheat) {
+        LOGGING = log || (System.getProperty("debug") != null);
         CHEAT = cheat;
     }
-    
 
     private void log(final String message) {
         if (LOGGING) {
@@ -99,10 +66,6 @@ public class MCTSAI implements MagicAI {
         final double C = 1.41421356;
         return parent.sign() * child.getV() + 
                C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
-    }
-
-    private double selectMOSS(final MCTSGameTree parent, final MCTSGameTree child) {
-        return 0.0;
     }
     
     private double selectRatio(final MCTSGameTree parent, final MCTSGameTree child) {
@@ -128,12 +91,12 @@ public class MCTSAI implements MagicAI {
             final MagicGame startGame, 
             final MagicPlayer scorePlayer) {
 
-        final MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
+        MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
         final MagicEvent event = choiceGame.getNextEvent();
-        //final List<Object[]> rootChoices = event.getArtificialChoiceResults(choiceGame);
-        rootChoices = event.getArtificialChoiceResults(choiceGame);
+        RCHOICES = event.getArtificialChoiceResults(choiceGame);
+        choiceGame = null;
 
-        final int size = rootChoices.size();
+        final int size = RCHOICES.size();
         final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         
         // No choice results
@@ -141,7 +104,7 @@ public class MCTSAI implements MagicAI {
     
         // Single choice result
         if (size == 1) {
-            return startGame.map(rootChoices.get(0));
+            return startGame.map(RCHOICES.get(0));
         }
         
         //ArtificialLevel = number of seconds to run MCTSAI
@@ -152,27 +115,30 @@ public class MCTSAI implements MagicAI {
 
         int MAXSIM = 1000000000;
         assert (MAXSIM = 10000) != 1;
+        
+        LENS.clear();
 
         final long STARTTIME = System.currentTimeMillis();
        
         //root represents the start state
-        final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, rootChoices);
-        LENS.clear();
+        final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, RCHOICES);
 
-        //end simulations once root is solved or time is up
+        //end simulations once root is AI win or time is up
         int sims = 0;
-        for (; System.currentTimeMillis() - STARTTIME < MAXTIME &&
-               sims < MAXSIM && 
-               !root.isAIWin(); sims++) {
+        for (;
+             System.currentTimeMillis() - STARTTIME < MAXTIME &&
+             sims < MAXSIM && 
+             !root.isAIWin(); 
+             sims++) {
             
             //clone the MagicGame object for simulation
             final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
             if (!CHEAT) {
                 rootGame.setKnownCards();
             }
-
             
-            //pass in a clone of the state, genNewTreeNode grows the tree by one node
+            //pass in a clone of the state, 
+            //genNewTreeNode grows the tree by one node
             //and returns the path from the root to the new node
             final LinkedList<MCTSGameTree> path = growTree(root, rootGame);
           
@@ -205,19 +171,19 @@ public class MCTSAI implements MagicAI {
 
         assert root.size() > 0 : "ERROR! Root has no children but there are " + size + " choices";
 
-        //select the best choice (child that has the highest secure score)
+        //select the best child/choice
         final MCTSGameTree first = root.first();
-        double maxR = first.getDecision();
+        double maxD = first.getDecision();
         int bestC = first.getChoice();
         for (MCTSGameTree node : root) {
-            final double R = node.getDecision();
+            final double D = node.getDecision();
             final int C = node.getChoice();
-            if (R > maxR) { 
-                maxR = R;
+            if (D > maxD) { 
+                maxD = D;
                 bestC = C;
             }
         }
-        final Object[] selected = rootChoices.get(bestC); 
+        final Object[] selected = RCHOICES.get(bestC); 
 
         if (LOGGING) {
             final long duration = System.currentTimeMillis() - STARTTIME;
@@ -259,7 +225,7 @@ public class MCTSAI implements MagicAI {
                     out.append("?");
                 }
                 out.append(']');
-                out.append(CR2String(rootChoices.get(node.getChoice())));
+                out.append(CR2String(RCHOICES.get(node.getChoice())));
                 log(out.toString());
             }
         }
@@ -344,20 +310,21 @@ public class MCTSAI implements MagicAI {
                 assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game" + 
                     printPath(path) + MCTSGameTree.printNode(curr, choices); 
 
-                MCTSGameTree next = null;
-                double bestV = Double.NEGATIVE_INFINITY;
+                MCTSGameTree next = curr.first();
+                double bestS = selectUCT(curr, next);
                 for (MCTSGameTree child : curr) {
                     final double raw = selectUCT(curr, child);
-                    final double v = modifySolved(curr, child, raw);
-                    if (v > bestV) {
-                        bestV = v;
+                    final double S = raw; //modifySolved(curr, child, raw);
+                    if (S > bestS) {
+                        bestS = S;
                         next = child;
                     }
                 }
 
                 //move down the tree
                 curr = next;
-                
+               
+                //update the game state and path
                 game.executeNextEvent(choices.get(curr.getChoice()));
                 path.add(curr);
             }
@@ -404,11 +371,12 @@ public class MCTSAI implements MagicAI {
         
         final int startActions = game.getNumActions();
 
-        //use fact choices during simulation
+        //use fast choices during simulation
         game.setFastChoices(sim);
         
         // simulate game until it is finished or simulated MAX_ACTIONS actions
-        while (!game.isFinished() && (game.getNumActions() - startActions) < MAX_ACTIONS) {
+        while (!game.isFinished() && 
+               (game.getNumActions() - startActions) < MAX_ACTIONS) {
             //do not accumulate score down the tree
             game.setScore(0);
 
@@ -436,9 +404,9 @@ public class MCTSAI implements MagicAI {
                 //get list of possible AI choices
                 List<Object[]> choices = null;
                 if (game.getNumActions() == 0) {
-                    //map the rootChoices to the current game instead of recomputing the choices
-                    choices = new ArrayList<Object[]>(rootChoices.size());
-                    for (Object[] choice : rootChoices) {
+                    //map the RCHOICES to the current game instead of recomputing the choices
+                    choices = new ArrayList<Object[]>(RCHOICES.size());
+                    for (Object[] choice : RCHOICES) {
                         choices.add(game.map(choice));
                     }
                 } else {
@@ -459,7 +427,7 @@ public class MCTSAI implements MagicAI {
             }
         }
         
-        //game is finished
+        //game is finished or number of actions > MAX_ACTIONS
         return null;
     }
 }
@@ -510,14 +478,14 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         assert log("ADDED: " + game.getIdString());
     }
 
-    static MCTSGameTree getNode(final NodeCache cache, final MagicGame game, List<Object[]> rootChoices) {
+    static MCTSGameTree getNode(final NodeCache cache, final MagicGame game, final List<Object[]> choices) {
         final long gid = game.getGameId();
         MCTSGameTree candidate = cache.get(gid);
         
         if (candidate != null) { 
             assert log("CACHE HIT");
             assert log("HIT  : " + game.getIdString());
-            assert printNode(candidate, rootChoices);
+            assert printNode(candidate, choices);
             return candidate;
         } else {
             assert log("CACHE MISS");
@@ -681,8 +649,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
 
     public double getDecision() {
+        //boost score of win nodes by BOOST 
+        final int BOOST = 1000000;
         if (isAIWin()) {
-            return MCTSAI.BOOST + getNumSim();
+            return BOOST + getNumSim();
         } else if (isAILose()) {
             return getNumSim();
         } else {
