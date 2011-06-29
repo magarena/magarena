@@ -16,7 +16,8 @@ import magic.model.score.MagicSingleScoreRanking;
 
 public class MagicDeclareBlockersResultBuilder {
 
-	private static final Collection<Object> EMPTY_RESULT=Collections.<Object>singletonList(new MagicDeclareBlockersResult(0,0));
+	private static final Collection<Object> EMPTY_RESULT = 
+        Collections.<Object>singletonList(new MagicDeclareBlockersResult(0,0));
 	private static final int MAX_RESULTS=12;
 	private static final int MAX_ATTACKERS=3;
 	private static final int MAX_TURN=1;
@@ -33,7 +34,6 @@ public class MagicDeclareBlockersResultBuilder {
 	private int position;
 		
 	public MagicDeclareBlockersResultBuilder(final MagicGame game,final MagicPlayer defendingPlayer,final boolean fast) {
-		
 		this.game=game;
 		this.defendingPlayer=defendingPlayer;
 		this.attackingPlayer=game.getOpponent(defendingPlayer);
@@ -56,7 +56,6 @@ public class MagicDeclareBlockersResultBuilder {
 		final MagicCombatCreature candidateBlockers[]=new MagicCombatCreature[attacker.candidateBlockers.length];
 		int blockersSize=0;
 		for (MagicCombatCreature blocker : attacker.candidateBlockers) {
-			
 			if (blockers.contains(blocker)) {
 				candidateBlockers[blockersSize++]=blocker;
 			}
@@ -66,13 +65,13 @@ public class MagicDeclareBlockersResultBuilder {
 		result.addLast(new MagicCombatCreature[]{attacker});
 		buildAttacker(index+1);
 		result.removeLast();
-		if (blockersSize==0) {
+		if (blockersSize == 0) {
 			return;
 		}
 		
 		// One blocker.
-		if (blockersSize==1) {
-			final MagicCombatCreature blocker=candidateBlockers[0];
+		if (blockersSize == 1) {
+			final MagicCombatCreature blocker = candidateBlockers[0];
 			blockers.remove(blocker);
 			result.addLast(new MagicCombatCreature[]{attacker,blocker});
 			buildAttacker(index+1);
@@ -82,11 +81,10 @@ public class MagicDeclareBlockersResultBuilder {
 		}
 		
 		// Single blocker which does not deal lethal damage to the attacker.
-		int lethalDamage=attacker.lethalDamage;
-		for (int blockerIndex=0;blockerIndex<blockersSize;blockerIndex++) {
-			
+		int lethalDamage = attacker.lethalDamage;
+		for (int blockerIndex = 0; blockerIndex < blockersSize; blockerIndex++) {
 			final MagicCombatCreature blocker=candidateBlockers[blockerIndex];
-			if (blocker.power<lethalDamage) {
+			if (blocker.power < lethalDamage) {
 				blockers.remove(blocker);
 				result.addLast(new MagicCombatCreature[]{attacker,blocker});
 				buildAttacker(index+1);
@@ -96,55 +94,55 @@ public class MagicDeclareBlockersResultBuilder {
 		}
 		
 		// All combinations of blockers that deal lethal damage to the attacker.
-		final MagicCombatCreature creatures[]=new MagicCombatCreature[blockersSize+1];
-		creatures[0]=attacker;
-		int size=1;
-		final int blockerSteps[]=new int[blockersSize];
-		final int lastBlockerIndex=blockersSize-1;
-		int blockerIndex=0;
+		final MagicCombatCreature creatures[] = new MagicCombatCreature[blockersSize+1];
+		creatures[0] = attacker;
+		int size = 1;
+		final int blockerSteps[] = new int[blockersSize];
+		final int lastBlockerIndex = blockersSize-1;
+		int blockerIndex = 0;
 		MagicCombatCreature blocker;			
-		while (blockerIndex>=0) {
-			
+		while (blockerIndex >= 0) {
 			switch (blockerSteps[blockerIndex]++) {
 				case 0:
-					blocker=candidateBlockers[blockerIndex];
+					blocker = candidateBlockers[blockerIndex];
 					blockers.remove(blocker);
-					lethalDamage-=blocker.power;
-					creatures[size++]=blocker;
+					lethalDamage -= blocker.power;
+					creatures[size++] = blocker;
 					// Lethal blocking combination.
-					if (lethalDamage<=0) {
+					if (lethalDamage <= 0) {
 						result.addLast(Arrays.copyOf(creatures,size));
 						buildAttacker(index+1);
 						result.removeLast();
-					} else if (blockerIndex<lastBlockerIndex) {
+					} else if (blockerIndex < lastBlockerIndex) {
 						blockerIndex++;
 					}
 					break;
 				case 1:
-					blocker=candidateBlockers[blockerIndex];
+					blocker = candidateBlockers[blockerIndex];
 					blockers.add(blocker);
-					lethalDamage+=blocker.power;
+					lethalDamage += blocker.power;
 					size--;
-					if (blockerIndex<lastBlockerIndex) {
+					if (blockerIndex < lastBlockerIndex) {
 						blockerIndex++;
 					}
 					break;
 				case 2:
-					blockerSteps[blockerIndex--]=0;
+					blockerSteps[blockerIndex--] = 0;
 					break;
 			}
 		}
 	}
 
 	private void build() {
-		
 		final MagicCombatCreatureBuilder creatureBuilder=new MagicCombatCreatureBuilder(game,attackingPlayer,defendingPlayer);
-		// Check if none of the defending player's creatures can block.
+		
+        // Check if none of the defending player's creatures can block.
 		if (!creatureBuilder.buildBlockers()) {
 			return;
 		}
-		blockers=creatureBuilder.getBlockers();
+		
 		// Check if none of the attackers can be blocked.
+        blockers=creatureBuilder.getBlockers();
 		if (!creatureBuilder.buildBlockableAttackers()) {
 			return;
 		}
@@ -177,7 +175,7 @@ public class MagicDeclareBlockersResultBuilder {
 		game.setImmediate(true);
 		attackingPlayer.setCached(game,true);
 		defendingPlayer.setCached(game,true);
-		results=null;
+		results = null;
 		build();
 		game.setImmediate(false);
 		attackingPlayer.setCached(game,false);
