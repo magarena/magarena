@@ -137,4 +137,8 @@ cards/evan_cube.txt:
 
 cards/brett_cube.txt:
 	curl http://www.snazzorama.com/magic/cube/ | grep ":WizardsAutoCard" | sed "s/<\/td>.*//;s/<[^>]*>//g;s/\&\#8217;/'/" > $@
-	
+
+
+daily: $(EXE)
+	mv $^ Magarena_`hg id -n`.exe
+	scripts/googlecode_upload.py -s "build `hg id -n`" -p magarena -u melvinzhang@gmail.com Magarena_*.exe
