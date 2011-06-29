@@ -100,6 +100,10 @@ public class MCTSAI implements MagicAI {
         return parent.sign() * child.getV() + 
                C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
+
+    private double selectMOSS(final MCTSGameTree parent, final MCTSGameTree child) {
+        return 0.0;
+    }
     
     private double selectRatio(final MCTSGameTree parent, final MCTSGameTree child) {
         return (parent.sign() * child.getScore() + 10)/(child.getNumSim() + 10);
@@ -362,6 +366,7 @@ public class MCTSAI implements MagicAI {
         return path;
     }
 
+    //returns a reward in the range [0, 1]
     private double randomPlay(final MCTSGameTree node, final MagicGame game) {
         //terminal node, no need for random play
         if (game.isFinished()) {
@@ -369,7 +374,7 @@ public class MCTSAI implements MagicAI {
             
             if (game.getLosingPlayer() == game.getScorePlayer()) {
                 node.setAILose(0);
-                return -1.0;
+                return 0.0;
             } else {
                 node.setAIWin(0);
                 return 1.0;
@@ -387,9 +392,9 @@ public class MCTSAI implements MagicAI {
         if (game.getLosingPlayer() == null) {
             return 0;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return  -(1.0 - actions/((double)MAX_ACTIONS));
+            return  actions/(2.0 * MAX_ACTIONS);
         } else {
-            return  1.0 - actions/((double)MAX_ACTIONS);
+            return  1.0 - actions/(2.0 * MAX_ACTIONS);
         }
     }
     
