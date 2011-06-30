@@ -88,9 +88,8 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		gamesPanel.setBorder(INPUT_BORDER);
 		gamesPanel.setOpaque(false);	
 		gamesTextField=new JTextField(String.valueOf(config.getStrengthGames()));
-		final Integer levels[]=new Integer[ArtificialWorkerPool.MAX_LEVEL];
+		final Integer levels[]=new Integer[MagicAI.MAX_LEVEL];
 		for (int level=1;level<=levels.length;level++) {
-
 			levels[level-1]=level;
 		}
 		gamesPanel.add(new JLabel(IconImages.TROPHY),BorderLayout.WEST);

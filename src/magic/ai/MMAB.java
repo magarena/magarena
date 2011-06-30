@@ -9,7 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 
-public class ArtificialWorkerPool {
+public class MMAB implements MagicAI {
 	
 	private static final int THREADS=getNrOfThreads();
 	private static final int INITIAL_MAX_DEPTH=110;
@@ -17,19 +17,11 @@ public class ArtificialWorkerPool {
 	private static final int MAX_DEPTH=120;
 	private static final int MAX_GAMES=12000;
 	private static boolean LOGGING=false;
-	private boolean CHEAT=false;
-	
-	private final MagicGame sourceGame;
-	private final MagicPlayer scorePlayer;
-	private final LinkedList<ArtificialWorker> workers;
+
+    private boolean CHEAT=false;
+	private final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
 	private int processingLeft;
 	private ArtificialPruneScore pruneScore;
-
-	public ArtificialWorkerPool(final MagicGame game,final MagicPlayer scorePlayer) {
-		sourceGame=game;
-		this.scorePlayer=scorePlayer;
-		workers=new LinkedList<ArtificialWorker>();
-	}
 
     public synchronized void setCheat(final boolean cheat) {
         CHEAT = cheat;
@@ -42,7 +34,6 @@ public class ArtificialWorkerPool {
 	}
 	
 	private static final int getNrOfThreads() {
-		
 		// Use maximum 4 artificial worker threads.
 		final int threads=Math.min(4,Runtime.getRuntime().availableProcessors()); 
 		log(threads+" AI worker threads.");
@@ -50,50 +41,38 @@ public class ArtificialWorkerPool {
 	}
 	
 	private ArtificialPruneScore createPruneScore() {
-		
 		return new ArtificialMultiPruneScore();
 	}
-	
-	public synchronized Object[] findNextEventChoiceResults() {
-
+    
+    public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
 		// Logging
 		long time=System.currentTimeMillis();
 
 		// Copying the game is necessary because for some choices game scores might be calculated.
-		MagicGame choiceGame=new MagicGame(sourceGame,scorePlayer);
-        if (!CHEAT) {
-    		choiceGame.setKnownCards();
-        }
-		final MagicEvent event=choiceGame.getNextEvent();
-
 		// Find all possible choice results.
-		final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(choiceGame);
-		choiceGame=null;
-		// No choice results.
-		if (choiceResultsList.size()==0) {
-			return null;
-		}
+		MagicGame choiceGame = new MagicGame(sourceGame,scorePlayer);
+		final MagicEvent event = choiceGame.getNextEvent();
+		final List<Object[]> choices = event.getArtificialChoiceResults(choiceGame);
+		final int size = choices.size();
+		choiceGame = null;
 		
-		final int size=choiceResultsList.size();
+		assert size != 0 : "ERROR: no choices available for MMAB";
+		
 		// Single choice result.
 		if (size==1) {
-			final Object bestChoiceResults[]=choiceResultsList.get(0);
-			log("Single : "+Arrays.toString(bestChoiceResults));
-			return sourceGame.map(bestChoiceResults);
+			return sourceGame.map(choices.get(0));
 		}
 		
 		// Build list with choice results.
-		final List<ArtificialChoiceResults> aiChoiceResultsList=new ArrayList<ArtificialChoiceResults>();
-		for (final Object choiceResults[] : choiceResultsList) {
-
-			aiChoiceResultsList.add(new ArtificialChoiceResults(choiceResults));
+		final List<ArtificialChoiceResults> achoices = new ArrayList<ArtificialChoiceResults>(size);
+		for (final Object[] choice : choices) {
+			achoices.add(new ArtificialChoiceResults(choice));
 		}
 		
 		// Create workers.
 		final ArtificialScoreBoard scoreBoard=new ArtificialScoreBoard();
-		final int workerSize=size>THREADS?THREADS:size;
-		for (int index=0;index<workerSize;index++) {
-
+		final int workerSize = Math.min(size, THREADS);
+		for (int index = 0; index < workerSize; index++) {
 			final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
             if (!CHEAT) {
     			workerGame.setKnownCards();
@@ -103,14 +82,14 @@ public class ArtificialWorkerPool {
 		}
 		
 		// Find optimal number of main phases and best score and first result single-threaded.
-		int mainPhases=sourceGame.getArtificialLevel(scorePlayer.getIndex());
-		final ArtificialChoiceResults firstAiChoiceResults=aiChoiceResultsList.get(0);
+		int mainPhases = sourceGame.getArtificialLevel(scorePlayer.getIndex());
+		final ArtificialChoiceResults firstChoice = achoices.get(0);
 		while (true) {
-			pruneScore=createPruneScore();
-			processingLeft=1;
-			startWorker(firstAiChoiceResults,mainPhases,INITIAL_MAX_DEPTH,INITIAL_MAX_GAMES);
+			pruneScore = createPruneScore();
+			processingLeft = 1;
+			startWorker(firstChoice,mainPhases,INITIAL_MAX_DEPTH,INITIAL_MAX_GAMES);
 			waitUntilProcessed();
-			if (mainPhases<2||firstAiChoiceResults.aiScore!=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE) {
+			if (mainPhases < 2 || firstChoice.aiScore != ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE) {
 				break;
 			}
 			scoreBoard.clear();
@@ -118,51 +97,51 @@ public class ArtificialWorkerPool {
 		} 
 		
 		// Find best score for the other choice results multi-threaded.
-		if (size>1) {
-			processingLeft=size-1;
-			for (int index=1;index<size;index++) {
-				
-				startWorker(aiChoiceResultsList.get(index),mainPhases,MAX_DEPTH,MAX_GAMES);
+		if (size > 1) {
+			processingLeft = size-1;
+			for (int index = 1; index < size; index++) {
+				startWorker(achoices.get(index),mainPhases,MAX_DEPTH,MAX_GAMES);
 			}
 			waitUntilProcessed();
 		}
 		
 		// Select the best scoring choice result.
-		ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
-		ArtificialChoiceResults bestChoiceResults=aiChoiceResultsList.get(0);
-		for (final ArtificialChoiceResults aiChoiceResults : aiChoiceResultsList) {
-		
-			if (bestScore.isBetter(aiChoiceResults.aiScore,true)) {
-				bestScore=aiChoiceResults.aiScore;
-				bestChoiceResults=aiChoiceResults;				
+		ArtificialScore bestScore = ArtificialScore.INVALID_SCORE;
+		ArtificialChoiceResults bestAchoice = achoices.get(0);
+		for (final ArtificialChoiceResults achoice : achoices) {
+			if (bestScore.isBetter(achoice.aiScore,true)) {
+				bestScore = achoice.aiScore;
+				bestAchoice = achoice;				
 			}
 		}
 
 		// Logging.
 		time=System.currentTimeMillis()-time;
 		log("Time : "+time+"  Workers : "+workerSize+"  Main : "+mainPhases);
-		for (final ArtificialChoiceResults aiChoiceResults : aiChoiceResultsList) {
-			
-			log((aiChoiceResults==bestChoiceResults?"* ":"  ")+aiChoiceResults);
+		for (final ArtificialChoiceResults achoice : achoices) {
+			log((achoice == bestAchoice ? "* " : "  ") + achoice);
 		}
 
-		return sourceGame.map(bestChoiceResults.choiceResults);
+		return sourceGame.map(bestAchoice.choiceResults);
 	}
 	
-	private synchronized void startWorker(final ArtificialChoiceResults aiChoiceResults,final int mainPhases,final int maxDepth,final int maxGames) {
-		
+	private synchronized void startWorker(
+            final ArtificialChoiceResults aiChoiceResults,
+            final int mainPhases,
+            final int maxDepth,
+            final int maxGames) {
 		while (workers.isEmpty()) {
-			
 			try {
 				wait();
-			} catch (final Exception ex) {}
+			} catch (final Exception ex) {
+				ex.printStackTrace();
+            }
 		}
 		final ArtificialWorker worker=workers.removeLast();
 		new ArtificialWorkerThread(worker,aiChoiceResults,pruneScore,mainPhases,maxDepth,maxGames).start();
 	}
 	
 	private synchronized void releaseWorker(final ArtificialWorker worker,final ArtificialChoiceResults aiChoiceResults) {
-
 		pruneScore=pruneScore.getPruneScore(aiChoiceResults.aiScore.score,true);
 		processingLeft--;
 		workers.add(worker);
@@ -170,9 +149,7 @@ public class ArtificialWorkerPool {
 	}
 	
 	private synchronized void waitUntilProcessed() {
-		
 		while (processingLeft>0) {
-			
 			try {
 				wait();
 			} catch (final Exception ex) {
@@ -182,16 +159,20 @@ public class ArtificialWorkerPool {
 	}
 	
 	private final class ArtificialWorkerThread extends Thread {
-
-		private final ArtificialWorker worker;
+        private final ArtificialWorker worker;
 		private final ArtificialChoiceResults aiChoiceResults;
 		private final ArtificialPruneScore pruneScore;
 		private final int mainPhases;
 		private final int maxDepth;
 		private final int maxGames;
 		
-		public ArtificialWorkerThread(final ArtificialWorker worker,final ArtificialChoiceResults aiChoiceResults,
-				final ArtificialPruneScore pruneScore,final int mainPhases,final int maxDepth,final int maxGames) {
+		public ArtificialWorkerThread(
+                final ArtificialWorker worker,
+                final ArtificialChoiceResults aiChoiceResults,
+				final ArtificialPruneScore pruneScore,
+                final int mainPhases,
+                final int maxDepth,
+                final int maxGames) {
 			
 			this.worker=worker;
 			this.aiChoiceResults=aiChoiceResults;
@@ -203,7 +184,6 @@ public class ArtificialWorkerPool {
 				
 		@Override
 		public void run() {
-
 			worker.evaluateGame(aiChoiceResults,pruneScore,mainPhases,maxDepth,maxGames);
 			releaseWorker(worker,aiChoiceResults);
 		}
