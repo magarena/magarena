@@ -13,14 +13,12 @@ public class MagicRemoveCardAction extends MagicAction {
 	private int index;
 	
 	public MagicRemoveCardAction(final MagicCard card,final MagicLocationType locationType) {
-		
 		this.card=card;
 		this.locationType=locationType;
 	}
 	
 	@Override
 	public void doAction(MagicGame game) {
-
 		final MagicPlayer owner=card.getOwner();
 		switch (locationType) {
 			case OwnersHand:
@@ -42,7 +40,6 @@ public class MagicRemoveCardAction extends MagicAction {
 
 	@Override
 	public void undoAction(MagicGame game) {
-
 		final MagicPlayer owner=card.getOwner();
 		switch (locationType) {
 			case OwnersHand:
@@ -62,7 +59,6 @@ public class MagicRemoveCardAction extends MagicAction {
 	
 	@Override
 	public String toString() {
-
 		return getClass().getSimpleName()+" ("+card.getName()+")";
 	}	
 }

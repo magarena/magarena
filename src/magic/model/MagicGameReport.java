@@ -53,20 +53,18 @@ public class MagicGameReport {
 	}
 	
 	private static void buildStack(final MagicGame game,final StringBuilder report) {
-
 		report.append("Stack : ").append(game.getStack().size()).append('\n');
-		
 		for (final MagicItemOnStack itemOnStack : game.getStack()) {
-			
-			report.append("   - Name : ").append(itemOnStack.getName()).append("  Player : ").append(itemOnStack.getController().getName());
+			report.append("   - Name : ");
+            report.append(itemOnStack.getName());
+            report.append("  Player : ");
+            report.append(itemOnStack.getController().getName());
 		}
 	}
 
 	private static void buildScore(final MagicGame game,final StringBuilder report) {
-		
 		int totalScore=0,count=0;
 		for (final MagicAction action : game.getActions()) {
-			
 			final int score=action.getScore(game.getScorePlayer());
 			totalScore+=score;
 			final String text=action.toString();
@@ -78,7 +76,6 @@ public class MagicGameReport {
 	}
 	
 	public static String buildReport(final MagicGame game) {
-		
 		final StringBuilder report=new StringBuilder();
 		report.append("Turn : ").append(game.getTurn());
 		report.append("  Phase : ").append(game.getPhase().getType());
@@ -88,7 +85,6 @@ public class MagicGameReport {
 		report.append("\n");
 		
 		for (final MagicPlayer player : game.getPlayers()) {
-			
 			buildPlayer(game,player,report);
 		}
 
