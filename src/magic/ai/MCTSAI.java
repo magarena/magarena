@@ -37,9 +37,6 @@ public class MCTSAI implements MagicAI {
     private final boolean LOGGING;
     private final boolean CHEAT;
 
-    //for checking the length of playouts
-    private final List<Integer> LENS = new LinkedList<Integer>();
-    
     //cache the set of choices at the root to avoid recomputing it all the time
     private List<Object[]> RCHOICES;
 
@@ -116,8 +113,6 @@ public class MCTSAI implements MagicAI {
         int MAXSIM = 1000000000;
         assert (MAXSIM = 10000) != 1;
         
-        LENS.clear();
-
         final long STARTTIME = System.currentTimeMillis();
        
         //root represents the start state
@@ -187,19 +182,8 @@ public class MCTSAI implements MagicAI {
 
         if (LOGGING) {
             final long duration = System.currentTimeMillis() - STARTTIME;
-            int minL = 1000000;
-            int maxL = -1;
-            int sumL = 0;
-            for (int len : LENS) {
-                sumL += len;
-                if (len > maxL) maxL = len;
-                if (len < minL) minL = len;
-            }
             log("MCTS:\ttime: " + duration + 
-                     "\tsims: " + (root.getNumSim() - sims) + "+" + sims +
-                     "\tmin: " + minL + 
-                     "\tmax: " + maxL + 
-                     "\tavg: " + (sumL / (LENS.size()+1)));
+                     "\tsims: " + (root.getNumSim() - sims) + "+" + sims);
             log(pinfo);
             for (MCTSGameTree node : root) {
                 final StringBuffer out = new StringBuffer();
@@ -351,10 +335,6 @@ public class MCTSAI implements MagicAI {
         final int startActions = game.getNumActions();
         getNextChoices(game, true);
         final int actions = game.getNumActions() - startActions;
-        
-        if (LOGGING) {
-            LENS.add(actions);
-        }
 
         if (game.getLosingPlayer() == null) {
             return 0.5;
