@@ -61,16 +61,16 @@ public class MCTSAI implements MagicAI {
 
     private double selectUCT(final MCTSGameTree parent, final MCTSGameTree child) {
         final double C = 1.0;
-        return parent.sign() * child.getV() + 
-               C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
+        return child.getV(parent) + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
     
     private double selectRatio(final MCTSGameTree parent, final MCTSGameTree child) {
-        return (parent.sign() * child.getScore() + 10)/(child.getNumSim() + 10);
+        final double K = 1.0;
+        return (child.getScore(parent) + K)/(child.getNumSim() + 2*K);
     }
 
     private double selectNormal(final MCTSGameTree parent, final MCTSGameTree child) {
-        return parent.sign() * child.getV() + 2 * Math.sqrt(child.getVar());
+        return Math.max(1.0, child.getV(parent) + 2 * Math.sqrt(child.getVar()));
     }
     
     //decrease score of lose node, boost score of win nodes
@@ -193,7 +193,7 @@ public class MCTSAI implements MagicAI {
                     out.append("  ");
                 }
                 out.append('[');
-                out.append((int)(node.getV() * 100));
+                out.append((int)(node.getV(root) * 100));
                 out.append('/');
                 out.append(node.getNumSim());
                 out.append('/');
@@ -546,10 +546,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return maxChildren;
     }
 
-    public double sign() {
-        return isAI ? 1.0 : -1.0;
-    }
-
     public boolean isAI() {
         return isAI;
     }
@@ -624,8 +620,8 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return evalScore;
     }
 
-    public double getScore() {
-        return score;
+    public double getScore(final MCTSGameTree par) {
+        return par.isAI() ? score : 1.0 - score;
     }
 
     public double getDecision() {
@@ -644,12 +640,12 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return numSim;
     }
 
-    public double getV() {
-        return score / numSim;
+    public double getV(final MCTSGameTree par) {
+        return getScore(par) / numSim;
     }
-    
-    public double getSecureScore() {
-        return getV() + 1.0/Math.sqrt(getNumSim());
+   
+    public double getSecureScore(final MCTSGameTree par) {
+        return getV(par) + 1.0/Math.sqrt(numSim);
     }
 
     public void addChild(MCTSGameTree child) {
