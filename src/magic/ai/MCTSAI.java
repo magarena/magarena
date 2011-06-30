@@ -60,7 +60,7 @@ public class MCTSAI implements MagicAI {
     }
 
     private double selectUCT(final MCTSGameTree parent, final MCTSGameTree child) {
-        final double C = 1.41421356;
+        final double C = 1.0;
         return parent.sign() * child.getV() + 
                C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
