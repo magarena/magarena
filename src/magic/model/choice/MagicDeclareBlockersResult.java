@@ -31,11 +31,9 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 	public Object map(final MagicGame game) {
 		final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(position,score);
 		for (final MagicCombatCreature creatures[] : this) {
-
 			final int size=creatures.length;
 			final MagicCombatCreature mappedCreatures[]=new MagicCombatCreature[size];
 			for (int index=size-1;index>=0;index--) {
-				
 				mappedCreatures[index]=new MagicCombatCreature(game,creatures[index]);
 			}
 			result.add(mappedCreatures);
@@ -68,4 +66,21 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 		}
 		return builder.toString();
 	}
+
+    @Override
+    public long getId() {
+        int size = 1;
+		for (final MagicCombatCreature[] creatures : this) {
+            size += creatures.length;
+		}
+        int idx = 0;
+		long[] input = new long[size + 1];
+		for (final MagicCombatCreature[] creatures : this) {
+            for (final MagicCombatCreature creature : creatures) {
+                input[idx] = creature.permanent.getId();
+                idx++;
+            }
+        }
+		return magic.MurmurHash3.hash(input);
+    }
 }
