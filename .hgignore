@@ -1,4 +1,5 @@
 syntax: glob
+doxygen/*
 crash/*
 build/*
 ref/*
