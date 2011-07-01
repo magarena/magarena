@@ -11,6 +11,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
+import magic.model.MagicMappable;
 
 public abstract class MagicItemOnStack implements MagicTarget {
 	
@@ -147,15 +148,18 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public long getItemId() {
         final Object[] CR = choiceResults;
         final long[] keys = {
-            event.getEventId(),
+	        source != null ?  source.getId() : -1L,
+            controller != null ? controller.getId() : -1L,
+            activation != null ? activation.hashCode() : -1L,
+            event != null ? event.getEventId() : -1L,
             (CR.length > 0 && CR[0] != null) ?
-                ((CR[0] instanceof MagicTarget) ? ((MagicTarget)CR[0]).getId() : CR[0].hashCode()) :
+                ((CR[0] instanceof MagicMappable) ? ((MagicMappable)CR[0]).getId() : CR[0].hashCode()) :
                 -1L,
             (CR.length > 1 && CR[1] != null) ?
-                ((CR[1] instanceof MagicTarget) ? ((MagicTarget)CR[1]).getId() : CR[1].hashCode()) :
+                ((CR[1] instanceof MagicMappable) ? ((MagicMappable)CR[1]).getId() : CR[1].hashCode()) :
                 -1L,
             (CR.length > 2 && CR[2] != null) ?
-                ((CR[2] instanceof MagicTarget) ? ((MagicTarget)CR[2]).getId() : CR[2].hashCode()) :
+                ((CR[2] instanceof MagicMappable) ? ((MagicMappable)CR[2]).getId() : CR[2].hashCode()) :
                 -1L,
         };
         return magic.MurmurHash3.hash(keys);
