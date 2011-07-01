@@ -21,15 +21,12 @@ public class MagicBuilderPayManaCostResult implements
 	private int hashCode;
 	
 	public MagicBuilderPayManaCostResult(final List<MagicSourceManaActivation> sourceActivations) {
-
 		count=0;
 		x=0;
 		amountLeft=new short[MagicManaType.NR_OF_TYPES];
 		for (final MagicSourceManaActivation activation : sourceActivations) {
-			
 			if (activation.available) {
 				for (int index=0;index<MagicManaType.NR_OF_TYPES;index++) {
-					
 					if (activation.activations[index]!=null) {
 						amountLeft[index]++;
 					}
@@ -42,17 +39,13 @@ public class MagicBuilderPayManaCostResult implements
 		hashCode=Arrays.hashCode(amountLeft);
 	}
 	
-	private MagicBuilderPayManaCostResult() {
-				
-	}
+	private MagicBuilderPayManaCostResult() {}
 	
 	@Override
 	public Object map(final MagicGame game) {
-
 		final MagicBuilderPayManaCostResult result=new MagicBuilderPayManaCostResult();
 		result.results=new MagicSourceManaActivationResult[results.length];
 		for (int index=0;index<results.length;index++) {
-			
 			result.results[index]=(MagicSourceManaActivationResult)results[index].map(game);
 		}
 		result.amountLeft=Arrays.copyOf(amountLeft,amountLeft.length);
@@ -65,12 +58,10 @@ public class MagicBuilderPayManaCostResult implements
 
 	/** Finishes construction when needed. */
 	public void buildResults(final List<MagicSourceManaActivation> sourceActivations,final MagicBuilderManaCost cost) {
-
 		x=cost.getX(count);
 		results=new MagicSourceManaActivationResult[count];
 		int index=0;
 		for (final MagicSourceManaActivation activation : sourceActivations) {
-			
 			if (!activation.available) {
 				results[index++]=activation.getResult();
 			}
@@ -78,36 +69,29 @@ public class MagicBuilderPayManaCostResult implements
 	}
 		
 	public int getWeight() {
-		
 		return weight;
 	}
 	
 	@Override
 	public int getX() {
-
 		return x;
 	}
 	
 	@Override
 	public int getConverted() {
-
 		return count;
 	}
 
 	public void doAction(final MagicGame game,final MagicPlayer player) {
-
 		for (final MagicSourceManaActivationResult result : results) {
-			
 			result.doActivation(game);
 		}		
 	}
 	
 	public String getText() {
-
 		final StringBuilder builder=new StringBuilder();
 		builder.append(count);
 		for (final int amount : amountLeft) {
-			
 			builder.append('-').append(amount);
 		}
 		builder.append('-').append(weight);
@@ -121,13 +105,11 @@ public class MagicBuilderPayManaCostResult implements
 
 	@Override
 	public int hashCode() {
-
 		return hashCode;
 	}
 	
 	@Override
 	public boolean equals(final Object obj) {
-		
 		if (this==obj) {
 			return true;
 		}
@@ -140,9 +122,7 @@ public class MagicBuilderPayManaCostResult implements
 
 	@Override
 	public int compareTo(final MagicBuilderPayManaCostResult result) {
-
 		for (int index=0;index<MagicManaType.NR_OF_TYPES;index++) {
-			
 			final int dif=amountLeft[index]-result.amountLeft[index];
 			if (dif!=0) {
 				return dif;
@@ -150,4 +130,9 @@ public class MagicBuilderPayManaCostResult implements
 		}
 		return 0;
 	}
+
+    @Override
+    public long getId() {
+        return hashCode;
+    }
 }
