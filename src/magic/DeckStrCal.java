@@ -17,8 +17,8 @@ public class DeckStrCal {
     private static int str2 = 6;
     private static String deck1 = "";
     private static String deck2 = "";
-    private static MagicAIImpl ai1 = MagicAIImpl.DEFAULT;
-    private static MagicAIImpl ai2 = MagicAIImpl.DEFAULT;
+    private static MagicAIImpl ai1 = MagicAIImpl.MMAB;
+    private static MagicAIImpl ai2 = MagicAIImpl.MMAB;
 
     // Command line parsing.
     private static boolean parseArguments(final String[] args) {

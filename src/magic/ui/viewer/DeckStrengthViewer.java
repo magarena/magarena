@@ -48,7 +48,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	private static final Color MEDIUM_COLOR=new Color(0xFF,0x7F,0x00);
 	private static final Color LOW_COLOR=new Color(0xEE,0x2C,0x2C);
 	
-	private static final MagicAI DEFAULT_AIS[]=new MagicAI[]{MagicAIImpl.DEFAULT.getAI(),MagicAIImpl.DEFAULT.getAI()};
+	private static final MagicAI DEFAULT_AIS[]=new MagicAI[]{MagicAIImpl.MMAB.getAI(),MagicAIImpl.MMAB.getAI()};
 
 	private final MagicTournament tournament;
 	private final JProgressBar progressBar;

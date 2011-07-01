@@ -1,17 +1,15 @@
 package magic.ai;
 
 public enum MagicAIImpl {
-    DEFAULT("default", new MiniMaxAlphaBetaAI()), 
-    MMAB("minimax", new MiniMaxAlphaBetaAI()), 
-    MMABC("minimax (c)", new MiniMaxAlphaBetaAI(true)), 
-    MCTS("monte carlo", new MCTSAI()),
-    MCTSNC("monte carlo (nc)", new MCTSAI(false, false)),
-    MCTSD("monte carlo (debug)", new MCTSAI(true, true)),
+    MMAB("minimax", new MMAB()), 
+    MMABC("minimax (cheat)", new MMAB(false, true)), 
+    MCTS("monte carlo (cheat)", new MCTSAI()),
+    MCTSNC("monte carlo", new MCTSAI(false, false)),
     VEGAS("vegas", new VegasAI()),
     RND("random", new RandomAI()),
     ;
     
-    private static final MagicAIImpl SUPPORTED_AIS[] = new MagicAIImpl[]{MMAB, MCTS, VEGAS};
+    private static final MagicAIImpl SUPPORTED_AIS[] = new MagicAIImpl[]{MMAB, MMABC, MCTS, VEGAS};
     
     private final String name;
     private final MagicAI ai;
@@ -38,7 +36,7 @@ public enum MagicAIImpl {
     			return ai;
     		}
     	}
-    	return DEFAULT;
+    	return MMAB;
     }
     
     public static String[] getNames() {
