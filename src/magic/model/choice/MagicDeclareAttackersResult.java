@@ -39,4 +39,15 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
 	public String toString() {
 		return Arrays.toString(toArray());
 	}
+
+    @Override
+    public long getId() {
+        int idx = 0;
+		long[] input = new long[size() + 1];
+		for (final MagicPermanent permanent : this) {
+            input[idx] = permanent.getId();
+            idx++;
+		}
+		return magic.MurmurHash3.hash(input);
+    }
 }
