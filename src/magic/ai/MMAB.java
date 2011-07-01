@@ -11,29 +11,35 @@ import magic.model.event.MagicEvent;
 
 public class MMAB implements MagicAI {
 	
-	private static final int THREADS=getNrOfThreads();
 	private static final int INITIAL_MAX_DEPTH=110;
 	private static final int INITIAL_MAX_GAMES=10000;
 	private static final int MAX_DEPTH=120;
 	private static final int MAX_GAMES=12000;
-	private static boolean LOGGING=false;
 
-    private boolean CHEAT=false;
+    private final boolean LOGGING;
+    private final boolean CHEAT;
+	private final int THREADS=getNrOfThreads();
 	private final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
 	private int processingLeft;
 	private ArtificialPruneScore pruneScore;
 
-    public synchronized void setCheat(final boolean cheat) {
+    public MMAB() {
+        //default: no logging, no cheats
+        this(false, false);
+    }
+    
+    public MMAB(final boolean log, final boolean cheat) {
+        LOGGING = log || (System.getProperty("debug") != null);
         CHEAT = cheat;
     }
 	
-	private static void log(final String message) {
+	private void log(final String message) {
 		if (LOGGING) {
 			System.err.println(message);
 		}
 	}
 	
-	private static final int getNrOfThreads() {
+	private final int getNrOfThreads() {
 		// Use maximum 4 artificial worker threads.
 		final int threads=Math.min(4,Runtime.getRuntime().availableProcessors()); 
 		log(threads+" AI worker threads.");
@@ -44,7 +50,7 @@ public class MMAB implements MagicAI {
 		return new ArtificialMultiPruneScore();
 	}
     
-    public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
+    public synchronized Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
 		// Logging
 		long time=System.currentTimeMillis();
 
@@ -70,6 +76,7 @@ public class MMAB implements MagicAI {
 		}
 		
 		// Create workers.
+        workers.clear();
 		final ArtificialScoreBoard scoreBoard=new ArtificialScoreBoard();
 		final int workerSize = Math.min(size, THREADS);
 		for (int index = 0; index < workerSize; index++) {
