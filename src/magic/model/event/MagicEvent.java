@@ -9,6 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicMappable;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicTargetChoice;
@@ -198,13 +199,13 @@ public class MagicEvent implements MagicCopyable {
             (source != null ? source.getId() : -1L),
             (action != null ? action.hashCode() : -1L),
             (data.length > 0 && data[0] != null) ?
-                ((data[0] instanceof MagicTarget) ? ((MagicTarget)data[0]).getId() : data[0].hashCode()) :
+                ((data[0] instanceof MagicMappable) ? ((MagicMappable)data[0]).getId() : data[0].hashCode()) :
                 -1L,
             (data.length > 1 && data[1] != null) ?
-                ((data[1] instanceof MagicTarget) ? ((MagicTarget)data[1]).getId() : data[1].hashCode()) :
+                ((data[1] instanceof MagicMappable) ? ((MagicMappable)data[1]).getId() : data[1].hashCode()) :
                 -1L,
             (data.length > 2 && data[2] != null) ?
-                ((data[2] instanceof MagicTarget) ? ((MagicTarget)data[2]).getId() : data[2].hashCode()) :
+                ((data[2] instanceof MagicMappable) ? ((MagicMappable)data[2]).getId() : data[2].hashCode()) :
                 -1L,
         };
         return magic.MurmurHash3.hash(keys);
