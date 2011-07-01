@@ -38,4 +38,9 @@ public class MagicPlayChoiceResult implements MagicMappable {
     public String getText() {
         return activation.getText();
     }
+
+    @Override
+    public long getId() {
+        return source.getId() * 31 + activation.hashCode();
+    }
 }
