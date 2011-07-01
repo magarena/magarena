@@ -7,22 +7,12 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 
 public interface MagicTarget extends MagicCopyable, MagicMappable {
-	
-	public String getName();
-	
-	public boolean isPlayer();
-	
-	public boolean isSpell();
-	
-	public boolean isPermanent();
-		
+	public boolean     isPlayer();
+	public boolean     isSpell();
+	public boolean     isPermanent();
+	public boolean     isValidTarget(final MagicGame game,final MagicSource source);
+	public int         getPreventDamage();
+	public String      getName();
 	public MagicPlayer getController();
-			
-	public int getPreventDamage();
-	
-	public void setPreventDamage(int amount);
-	
-	public boolean isValidTarget(final MagicGame game,final MagicSource source);
-
-    public long getId();
+	public void        setPreventDamage(int amount);
 }
