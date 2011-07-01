@@ -150,3 +150,6 @@ cards/AWinnarIsYou_cube.txt:
 daily: $(EXE)
 	mv $^ Magarena_`hg id -n`.exe
 	scripts/googlecode_upload.py -s "build `hg id -n`" -p magarena -u melvinzhang@gmail.com Magarena_*.exe
+
+cards/scriptable.txt: scripts/analyze_cards.scala
+	scala $^ data/cards.xml > $@ 2> cards/others.txt
