@@ -60,7 +60,7 @@ public class MCTSAI implements MagicAI {
     }
 
     private double selectUCT(final MCTSGameTree parent, final MCTSGameTree child) {
-        final double C = 1.0;
+        final double C = 1.41421;
         return child.getV(parent) + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
     }
     
@@ -148,7 +148,7 @@ public class MCTSAI implements MagicAI {
                  !path.isEmpty(); child = parent) {
                 
                 parent = path.removeLast(); 
-                parent.updateScore(score);
+                parent.updateScore(child, score);
 
                 if (child != null && child.isSolved()) {
                     if (parent.isAI() && child.isAIWin()) {
@@ -424,7 +424,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private int numSim = 0;
     private int evalScore = 0;
     private int steps = 0;
-    private double score = 0;
+    private double sum = 0;
     private double S = 0;
     public String desc;
     public String[] choicesStr;
@@ -564,18 +564,29 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
     
-    public void updateScore(final double score) {
-        final double prevMean = (numSim > 0) ? score/numSim : 0;
-        this.score += score;
+    public void updateScore(final MCTSGameTree child, final double delta) {
+        final double prevMean = (numSim > 0) ? sum/numSim : 0;
+        sum += delta;
         numSim += 1;
-        final double newMean = score/numSim;
-        S += (score - prevMean) * (score - newMean);   
+        final double newMean = sum/numSim;
+        S += (delta - prevMean) * (delta - newMean);   
+
+        //if child has sufficient simulations, use robust max/min instead of average
+        final int MIN_SIM = 100;
+        if (child != null && child.getNumSim() > MIN_SIM) {
+            if (isAI && child.getV() > getV()) {
+                sum = child.getV() * numSim;
+            }
+            if (!isAI && child.getV() < getV()) {
+                sum = child.getV() * numSim;
+            }
+        }
     }
 
     public double getVar() {
         final int MIN_SAMPLES = 10;
         if (numSim < MIN_SAMPLES) {
-            return (MIN_SAMPLES - numSim);
+            return 1.0;
         } else {
             return S/(numSim - 1);
         }
@@ -625,13 +636,17 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public int getEvalScore() {
         return evalScore;
     }
+    
+    public double getScore() {
+        return sum;
+    }
 
     public double getScore(final MCTSGameTree par) {
-        return par.isAI() ? score : 1.0 - score;
+        return par.isAI() ? sum : 1.0 - sum;
     }
 
     public double getDecision() {
-        //boost score of win nodes by BOOST 
+        //boost decision score of win nodes by BOOST 
         final int BOOST = 1000000;
         if (isAIWin()) {
             return BOOST + getNumSim();
@@ -644,6 +659,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     
     public int getNumSim() {
         return numSim;
+    }
+    
+    public double getV() {
+        return getScore() / numSim;
     }
 
     public double getV(final MCTSGameTree par) {
