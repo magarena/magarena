@@ -41,7 +41,7 @@ public class MCTSAI implements MagicAI {
     private List<Object[]> RCHOICES;
 
     //cache nodes to reuse them in later decision
-    private final NodeCache CACHE = new NodeCache(1000);
+    private final StateCache<Long, MCTSGameTree> CACHE = new StateCache<Long, MCTSGameTree>(1000);
 
     public MCTSAI() {
         //default: no logging, cheats
@@ -448,7 +448,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         }
     }
     
-    static void addNode(final NodeCache cache, final MagicGame game, final MCTSGameTree node) {
+    static void addNode(
+            final StateCache<Long, MCTSGameTree> cache, 
+            final MagicGame game, 
+            final MCTSGameTree node) {
         if (node.isCached()) {
             return;
         }
@@ -458,7 +461,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         assert log("ADDED: " + game.getIdString());
     }
 
-    static MCTSGameTree getNode(final NodeCache cache, final MagicGame game, final List<Object[]> choices) {
+    static MCTSGameTree getNode(
+            final StateCache<Long, MCTSGameTree> cache, 
+            final MagicGame game, 
+            final List<Object[]> choices) {
         final long gid = game.getGameId();
         MCTSGameTree candidate = cache.get(gid);
         
@@ -670,15 +676,3 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
 }
 
-class NodeCache extends LinkedHashMap<Long, MCTSGameTree> {
-	private static final long serialVersionUID = 1L;
-    private final int capacity;
-    public NodeCache(int capacity) {
-        super(capacity + 1, 1.1f, true);
-        this.capacity = capacity;
-    }
-
-    protected boolean removeEldestEntry(Map.Entry eldest) {
-        return size() > capacity;
-    }
-}
