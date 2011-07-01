@@ -21,42 +21,51 @@ public class MagicCardChoice extends MagicChoice {
 	private final int amount;
 	
 	public MagicCardChoice(final int amount) {
-		
 		super(getDescription(amount));
 		this.amount=amount;
 	}
 	
 	private static final String getDescription(final int amount) {
-
 		if (amount==1) {
 			return "Choose a card from your hand.";
 		} else {
-			return "Choose "+amount+" cards from your hand.";
+			return "Choose " + amount + " cards from your hand.";
 		}
 	}
 	
-	private void createOptions(final Collection<Object> options,final MagicCardList hand,
-			final MagicCard cards[],final int count,final int amount,final int index) {
+	private void createOptions(
+            final Collection<Object> options,
+            final MagicCardList hand,
+			final MagicCard cards[],
+            final int count,
+            final int amount,
+            final int index) {
 
-		if (count==amount) {
+		if (count == amount) {
 			options.add(new MagicCardChoiceResult(cards));
 			return;
 		}		
-		if (index==hand.size()) {
+
+		if (index == hand.size()) {
 			return;
 		}
+
 		cards[count]=hand.get(index);
 		createOptions(options,hand,cards,count+1,amount,index+1);		
 		createOptions(options,hand,cards,count,amount,index+1);
 	}
 	
 	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	public Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 
-		final List<Object> options=new ArrayList<Object>();
-		final MagicCardList hand=player.getHand();
-		final int actualAmount=Math.min(amount,hand.size());
-		if (actualAmount>0) {
+		final List<Object> options = new ArrayList<Object>();
+		final MagicCardList hand = player.getHand();
+		final int actualAmount = Math.min(amount,hand.size());
+		if (actualAmount > 0) {
 			createOptions(options,hand,new MagicCard[actualAmount],0,actualAmount,0);
 		} else {
             options.add(new MagicCardChoiceResult());
@@ -65,13 +74,16 @@ public class MagicCardChoice extends MagicChoice {
 	}
 
 	@Override
-	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+	public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		final MagicCardChoiceResult result=new MagicCardChoiceResult();
 		final Set<Object> validCards=new HashSet<Object>(player.getHand());
 		int actualAmount=Math.min(amount,validCards.size());
 		for (;actualAmount>0;actualAmount--) {
-
 			final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
 			controller.focusViewers(0,-1);
 			controller.disableActionButton(false);
