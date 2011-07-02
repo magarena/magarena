@@ -110,6 +110,7 @@ public class MMAB implements MagicAI {
 				startWorker(achoices.get(index),mainPhases,MAX_DEPTH,MAX_GAMES);
 			}
 			waitUntilProcessed();
+            workers.clear();
 		}
 		
 		// Select the best scoring choice result.
