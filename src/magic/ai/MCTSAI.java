@@ -429,6 +429,9 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public String desc;
     public String[] choicesStr;
     
+    //min sim for using robust max
+    private int maxChildSim = 100;     
+    
     private static boolean log(final String message) {
         System.err.println(message);
         return true;
@@ -565,15 +568,15 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
     
     public void updateScore(final MCTSGameTree child, final double delta) {
-        final double prevMean = (numSim > 0) ? sum/numSim : 0;
+        final double oldMean = (numSim > 0) ? sum/numSim : 0;
         sum += delta;
         numSim += 1;
         final double newMean = sum/numSim;
-        S += (delta - prevMean) * (delta - newMean);   
+        S += (delta - oldMean) * (delta - newMean);   
 
-        //if child has sufficient simulations, use robust max/min instead of average
-        final int MIN_SIM = 100;
-        if (child != null && child.getNumSim() > MIN_SIM) {
+        //if child has sufficient simulations, backup using robust max instead of average
+        if (child != null && child.getNumSim() > maxChildSim) {
+            maxChildSim = child.getNumSim();
             if (isAI && child.getV() > getV()) {
                 sum = child.getV() * numSim;
             }
