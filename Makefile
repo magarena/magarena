@@ -151,5 +151,5 @@ daily: $(EXE)
 	mv $^ Magarena_`hg id -n`.exe
 	scripts/googlecode_upload.py -s "build `hg id -n`" -p magarena -u melvinzhang@gmail.com Magarena_*.exe
 
-cards/scriptable.txt: scripts/analyze_cards.scala
-	scala $^ data/cards.xml > $@ 2> cards/others.txt
+cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt data/cards.xml
+	scala $^ > $@ 2> cards/others.txt

@@ -37,6 +37,7 @@ for (card <- src \ "card") {
         for (rule <- rules \ "rule" if rule.text.trim != "") {
             Console.println(rule.text)
         }
+        Console.println()
     }
 }
 
