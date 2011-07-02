@@ -1696,7 +1696,7 @@ public class CardEventDefinitions {
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			
 			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),
-				new MagicKickerChoice(MagicTargetChoice.POS_TARGET_CREATURE,MagicManaCost.GREEN,false),
+				new MagicKickerChoice(MagicTargetChoice.TARGET_CREATURE,MagicManaCost.GREEN,false),
 				MagicPumpTargetPicker.getInstance(),new Object[]{cardOnStack},this,
 				"Target creature$ can't be the target of spells or abilities your opponent controls this turn. "+
 				"If Vines of Vastwood was kicked$, that creature gets +4/+4 until end of turn.");
