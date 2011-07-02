@@ -339,9 +339,9 @@ public class MCTSAI implements MagicAI {
         if (game.getLosingPlayer() == null) {
             return 0.5;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return 0.0;// actions/(2.0 * MAX_ACTIONS);
+            return actions/(2.0 * MAX_ACTIONS);
         } else {
-            return 1.0;//- actions/(2.0 * MAX_ACTIONS);
+            return 1.0 - actions/(2.0 * MAX_ACTIONS);
         }
     }
     
@@ -574,6 +574,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         final double newMean = sum/numSim;
         S += (delta - oldMean) * (delta - newMean);   
 
+        /*
         //if child has sufficient simulations, backup using robust max instead of average
         if (child != null && child.getNumSim() > maxChildSim) {
             maxChildSim = child.getNumSim();
@@ -584,6 +585,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
                 sum = child.getV() * numSim;
             }
         }
+        */
     }
 
     public double getVar() {
