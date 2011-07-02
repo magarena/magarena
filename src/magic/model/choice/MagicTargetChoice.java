@@ -181,16 +181,20 @@ public class MagicTargetChoice extends MagicChoice {
 	}
 
 	@Override
-	public final boolean hasOptions(final MagicGame game,final MagicPlayer player,
-            final MagicSource source,final boolean hints) {
-
+	public final boolean hasOptions(
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source,
+            final boolean hints) {
 		return game.hasLegalTargets(player,source,this,hints);
 	}
 	
 	@Override
-	public final Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,
-            final MagicPlayer player,final MagicSource source) {
-
+	public final Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 		final Collection<Object> targets=game.getLegalTargets(player,source,this,targetHint);
 		if (game.getFastChoices()) {
 			return event.getTargetPicker().pickTargets(game,player,targets);
