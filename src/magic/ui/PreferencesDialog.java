@@ -123,7 +123,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		mainPanel.add(alwaysPassCheckBox);
 	
         Y += 30;
-		smartTargetCheckBox=new JCheckBox("Remove unusual choices",config.getSmartTarget());
+		smartTargetCheckBox=new JCheckBox("Remove unusual target choices",config.getSmartTarget());
 		smartTargetCheckBox.setBounds(X3,Y,W3,H3);
 		smartTargetCheckBox.setFocusable(false);
 		mainPanel.add(smartTargetCheckBox);
