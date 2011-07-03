@@ -298,7 +298,7 @@ public class MCTSAI implements MagicAI {
                 double bestS = selectUCT(curr, next);
                 for (MCTSGameTree child : curr) {
                     final double raw = selectUCT(curr, child);
-                    final double S = raw; //modifySolved(curr, child, raw);
+                    final double S = modifySolved(curr, child, raw);
                     if (S > bestS) {
                         bestS = S;
                         next = child;
@@ -339,9 +339,9 @@ public class MCTSAI implements MagicAI {
         if (game.getLosingPlayer() == null) {
             return 0.5;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return 0.0;// actions/(2.0 * MAX_ACTIONS);
+            return actions/(2.0 * MAX_ACTIONS);
         } else {
-            return 1.0;//- actions/(2.0 * MAX_ACTIONS);
+            return 1.0 - actions/(2.0 * MAX_ACTIONS);
         }
     }
     
