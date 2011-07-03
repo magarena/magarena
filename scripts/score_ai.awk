@@ -6,24 +6,24 @@
 BEGIN {
     FS = "\t"
     OFS = "\t"
-    ai = "MCTS"
-    s1 = 0
-    s2 = 0
 }
 
-$2 == ai {
-    if ($8 + $9 > win + lose) {
-        s1 -= win
-        s2 -= lose
+NF == 9 {
+    if ($8 + $9 > win[$2] + lose[$2]) {
+        s1[$2] -= win[$2]
+        s2[$2] -= lose[$2]
     }
-    win = $8
-    lose = $9
-    s1 += win
-    s2 += lose
+    win[$2] = $8
+    lose[$2] = $9
+    s1[$2] += win[$2]
+    s2[$2] += lose[$2]
 }
 
 END {
-    print s1, s2, s1+s2
-    print ai, s1*100/(s1+s2)
+    for (ai in s1) {
+        total = s1[ai] + s2[ai]
+        print "Total = " total
+        print ai, s1[ai], s2[ai], s1[ai]*100/total
+    }
 }
 
