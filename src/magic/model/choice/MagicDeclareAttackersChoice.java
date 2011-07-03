@@ -9,6 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
@@ -33,6 +34,31 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
 		final MagicDeclareAttackersResultBuilder builder=new MagicDeclareAttackersResultBuilder(game,player);
 		return builder.buildResults();
 	}
+	
+    @Override
+    public Object[] getSimulationChoiceResult(
+			final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
+		
+        final MagicDeclareAttackersResult result = new MagicDeclareAttackersResult();
+		final MagicCombatCreatureBuilder builder = new MagicCombatCreatureBuilder(game,player,game.getOpponent(player));
+		builder.buildBlockers();		
+		
+		if (builder.buildAttackers()) {
+			for (final MagicCombatCreature attacker : builder.getAttackers()) {
+				if (attacker.hasAbility(MagicAbility.AttacksEachTurnIfAble) ||
+				    MagicRandom.nextInt(2) == 1) {
+                    //creatures must attack OR
+                    //creature has 50% chance of attacking
+					result.add(attacker.permanent);
+				}
+			}		
+		}
+
+        return new Object[]{result};
+    }
 	
 	@Override
 	public Object[] getPlayerChoiceResults(
