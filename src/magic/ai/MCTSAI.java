@@ -574,6 +574,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         final double newMean = sum/numSim;
         S += (delta - oldMean) * (delta - newMean);   
 
+        /*
         //if child has sufficient simulations, backup using robust max instead of average
         if (child != null && child.getNumSim() > maxChildSim) {
             maxChildSim = child.getNumSim();
@@ -584,6 +585,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
                 sum = child.getV() * numSim;
             }
         }
+        */
     }
 
     public double getVar() {
