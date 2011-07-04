@@ -29,6 +29,7 @@ Enchancements to basic UCT
 
 References:
 UCT algorithm from Kocsis and Sezepesvari 2006
+
 Consistency Modifications for Automatically Tuned Monte-Carlo Tree Search
   consistent -> child of root with greatest number of simulations is optimal
   frugal -> do not need to visit the whole tree
@@ -39,6 +40,14 @@ Consistency Modifications for Automatically Tuned Monte-Carlo Tree Search
   score = (total reward + K)/(total simulation + 2K) is consistent and frugal!
   using v_t threshold ensures consistency for case of reward in {0,1} using any score function
     v(s) < v_t (0.3), randomy pick a child, else pick child that maximize score
+
+Monte-Carlo Tree Search in Lines of Action 
+  1-ply lookahread to detect direct win for player to move
+  secure child formula for decision v + A/sqrt(n)
+  evaluation cut-off: use score function to stop simulation early
+  use evaluation score to remove "bad" moves during simulation
+  use evaluation score to keep k-best moves
+  mixed: start with corrective, rest of the moves use greedy
 */
 public class MCTSAI implements MagicAI {
     
