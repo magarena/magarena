@@ -16,11 +16,13 @@ public class MMAB implements MagicAI {
 	private static final int MAX_DEPTH=120;
 	private static final int MAX_GAMES=12000;
 
-    private final boolean LOGGING;
-    private final boolean CHEAT;
 	private final int THREADS=getNrOfThreads();
 	private final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
-	private int processingLeft;
+    
+    private final boolean LOGGING;
+    private final boolean CHEAT;
+
+    private int processingLeft;
 	private ArtificialPruneScore pruneScore;
 
     public MMAB() {
@@ -40,7 +42,7 @@ public class MMAB implements MagicAI {
 	}
 	
 	private final int getNrOfThreads() {
-		// Use maximum 4 artificial worker threads.
+		// maximum of 4 artificial worker threads.
 		final int threads=Math.min(4,Runtime.getRuntime().availableProcessors()); 
 		log(threads+" AI worker threads.");
 		return threads;
@@ -51,11 +53,10 @@ public class MMAB implements MagicAI {
 	}
     
     public synchronized Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
-		// Logging
-		long time=System.currentTimeMillis();
+		final long start_time = System.currentTimeMillis();
 
-		// Copying the game is necessary because for some choices game scores might be calculated.
-		// Find all possible choice results.
+		// copying the game is necessary because for some choices game scores might be calculated, 
+        // find all possible choice results.
 		MagicGame choiceGame = new MagicGame(sourceGame,scorePlayer);
 		final MagicEvent event = choiceGame.getNextEvent();
 		final List<Object[]> choices = event.getArtificialChoiceResults(choiceGame);
@@ -64,12 +65,12 @@ public class MMAB implements MagicAI {
 		
 		assert size != 0 : "ERROR: no choices available for MMAB";
 		
-		// Single choice result.
-		if (size==1) {
+		// single choice result.
+		if (size == 1) {
 			return sourceGame.map(choices.get(0));
 		}
 		
-		// Build list with choice results.
+		// build list with choice results.
 		final List<ArtificialChoiceResults> achoices = new ArrayList<ArtificialChoiceResults>(size);
 		for (final Object[] choice : choices) {
 			achoices.add(new ArtificialChoiceResults(choice));
@@ -88,7 +89,7 @@ public class MMAB implements MagicAI {
 			workers.add(new ArtificialWorker(index,workerGame,scoreBoard));
 		}
 		
-		// Find optimal number of main phases and best score and first result single-threaded.
+		// find optimal number of main phases and best score and first result single-threaded.
 		int mainPhases = sourceGame.getArtificialLevel(scorePlayer.getIndex());
 		final ArtificialChoiceResults firstChoice = achoices.get(0);
 		while (true) {
@@ -103,7 +104,7 @@ public class MMAB implements MagicAI {
 			mainPhases--;
 		} 
 		
-		// Find best score for the other choice results multi-threaded.
+		// find best score for the other choice results multi-threaded.
 		if (size > 1) {
 			processingLeft = size-1;
 			for (int index = 1; index < size; index++) {
@@ -113,7 +114,7 @@ public class MMAB implements MagicAI {
             workers.clear();
 		}
 		
-		// Select the best scoring choice result.
+		// select the best scoring choice result.
 		ArtificialScore bestScore = ArtificialScore.INVALID_SCORE;
 		ArtificialChoiceResults bestAchoice = achoices.get(0);
 		for (final ArtificialChoiceResults achoice : achoices) {
@@ -124,8 +125,8 @@ public class MMAB implements MagicAI {
 		}
 
 		// Logging.
-		time=System.currentTimeMillis()-time;
-		log("Time : "+time+"  Workers : "+workerSize+"  Main : "+mainPhases);
+		final long time_taken = System.currentTimeMillis() - start_time;
+		log("Time : " + time_taken + "  Workers : " + workerSize + "  Main : " + mainPhases);
 		for (final ArtificialChoiceResults achoice : achoices) {
 			log((achoice == bestAchoice ? "* " : "  ") + achoice);
 		}
@@ -150,14 +151,14 @@ public class MMAB implements MagicAI {
 	}
 	
 	private synchronized void releaseWorker(final ArtificialWorker worker,final ArtificialChoiceResults aiChoiceResults) {
-		pruneScore=pruneScore.getPruneScore(aiChoiceResults.aiScore.score,true);
+		pruneScore = pruneScore.getPruneScore(aiChoiceResults.aiScore.score,true);
 		processingLeft--;
 		workers.add(worker);
 		notifyAll();
 	}
 	
 	private synchronized void waitUntilProcessed() {
-		while (processingLeft>0) {
+		while (processingLeft > 0) {
 			try {
 				wait();
 			} catch (final Exception ex) {
