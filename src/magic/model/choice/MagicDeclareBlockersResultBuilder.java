@@ -75,12 +75,15 @@ public class MagicDeclareBlockersResultBuilder {
 			blockers.remove(blocker);
 			result.addLast(new MagicCombatCreature[]{attacker,blocker});
 			buildAttacker(index+1);
-			result.removeLast();			
+			result.removeLast();
 			blockers.add(blocker);
 			return;
 		}
 		
-		// Single blocker which does not deal lethal damage to the attacker.
+        // Single blocker which does not deal lethal damage to the attacker.
+        // Not sufficient: might want to chump block with multiple blockers to
+        // survive the attack or damage the attackers enough to finish it off
+        // with direct damage
 		int lethalDamage = attacker.lethalDamage;
 		for (int blockerIndex = 0; blockerIndex < blockersSize; blockerIndex++) {
 			final MagicCombatCreature blocker=candidateBlockers[blockerIndex];
@@ -100,7 +103,7 @@ public class MagicDeclareBlockersResultBuilder {
 		final int blockerSteps[] = new int[blockersSize];
 		final int lastBlockerIndex = blockersSize-1;
 		int blockerIndex = 0;
-		MagicCombatCreature blocker;			
+		MagicCombatCreature blocker;
 		while (blockerIndex >= 0) {
 			switch (blockerSteps[blockerIndex]++) {
 				case 0:
@@ -148,7 +151,7 @@ public class MagicDeclareBlockersResultBuilder {
 		}
 		
 		attackers=new MagicCombatCreature[creatureBuilder.getAttackers().size()];
-		creatureBuilder.getAttackers().toArray(attackers);					
+		creatureBuilder.getAttackers().toArray(attackers);
 		final boolean defending=game.getScorePlayer()==defendingPlayer;
 		
 		// Determine which algorithm to use.
@@ -164,7 +167,7 @@ public class MagicDeclareBlockersResultBuilder {
 			combatScore=new MagicGameCombatScore(game,attackingPlayer,defendingPlayer);
 		}
 		
-		// Find best combinations of attackers and blockers.		
+		// Find best combinations of attackers and blockers.
 		result=new MagicDeclareBlockersResult(0,0);
 		position=0;
 		buildAttacker(0);
