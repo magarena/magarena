@@ -12,6 +12,7 @@ import javax.swing.ImageIcon;
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicCardActivation;
 import magic.model.event.MagicCardEvent;
@@ -34,10 +35,9 @@ import magic.ui.theme.ThemeFactory;
 public class MagicCardDefinition {
 
 	public static final MagicCardDefinition EMPTY=new MagicCardDefinition("Empty") {
-
+        //definition for unknown cards
 		@Override
 		protected void initialize() {
-	
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -52,7 +52,8 @@ public class MagicCardDefinition {
 	};
 	
 
-	public static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES=Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
+	public static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES = 
+        Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
 
 	private final String name;
 	private final String fullName;
@@ -201,6 +202,39 @@ public class MagicCardDefinition {
 
     public int getTypeFlags() {
         return typeFlags;
+    }
+    
+    public void add(final Object obj) {
+        if (obj instanceof MagicSpellCardEvent) {
+            final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
+            setCardEvent(cevent);
+            cevent.setCardDefinition(this);
+            System.err.println("Adding spell card event to " + getFullName());
+        } else if (obj instanceof MagicManaActivation) {
+            final MagicManaActivation mact = (MagicManaActivation)obj;
+            addManaActivation(mact);
+            System.err.println("Adding mana activation to " + getFullName());
+        } else if (obj instanceof MagicTrigger) {
+            final MagicTrigger mtrig = (MagicTrigger)obj;
+            addTrigger(mtrig);
+            mtrig.setCardDefinition(this);
+            System.err.println("Adding trigger to " + getFullName());
+        } else if (obj instanceof MagicPermanentActivation) {
+            final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
+            addActivation(mact);
+            mact.setCardDefinition(this);
+            System.err.println("Adding permanent activation to " + getFullName());
+        } else if (obj instanceof MagicChangeCardDefinition) {
+            final MagicChangeCardDefinition chg = (MagicChangeCardDefinition)obj;
+            chg.change(this);
+            System.err.println("Modifying card definition " + getFullName());
+        } else if (obj instanceof MagicLocalVariable) {
+            final MagicLocalVariable lvar = (MagicLocalVariable)obj;
+            addLocalVariable(lvar);
+        } else {
+            System.err.println("Unknown object");
+            System.exit(1);
+        }
     }
 	
 	public void addType(final MagicType type) {
@@ -353,11 +387,9 @@ public class MagicCardDefinition {
 	}
 	
 	public boolean isPlayable(final MagicPlayerProfile profile) {
-		
 		if (isLand()) {
 			int source=0;
 			for (final MagicColor color : profile.getColors()) {
-				
 				source+=getManaSource(color);
 			}
 			return source>4;
@@ -367,7 +399,6 @@ public class MagicCardDefinition {
 	}
 		
 	public void setEquipCost(final MagicManaCost equipCost) {
-
 		addActivation(new MagicEquipActivation(this,equipCost));
 	}
 		
