@@ -82,13 +82,13 @@ public class MCTSAI implements MagicAI {
         //ArtificialLevel = number of seconds to run MCTSAI
         //debugging: max time is 1 billion, max sim is 500
         //normal   : max time is 1000 * str, max sim is 1 billion
-        int MAXTIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
-        assert (MAXTIME = 1000000000) != 1;
+        int MAX_TIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
+        assert (MAX_TIME = 1000000000) != 1;
 
-        int MAXSIM = 1000000000;
-        assert (MAXSIM = 10000) != 1;
+        int MAX_SIM = 1000000000;
+        assert (MAX_SIM = 10000) != 1;
         
-        final long STARTTIME = System.currentTimeMillis();
+        final long START_TIME = System.currentTimeMillis();
        
         //root represents the start state
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, RCHOICES);
@@ -96,8 +96,8 @@ public class MCTSAI implements MagicAI {
         //end simulations once root is AI win or time is up
         int sims = 0;
         for (;
-             System.currentTimeMillis() - STARTTIME < MAXTIME &&
-             sims < MAXSIM && 
+             System.currentTimeMillis() - START_TIME < MAX_TIME &&
+             sims < MAX_SIM && 
              !root.isAIWin(); 
              sims++) {
             
@@ -156,7 +156,7 @@ public class MCTSAI implements MagicAI {
         final Object[] selected = RCHOICES.get(bestC); 
 
         if (LOGGING) {
-            final long duration = System.currentTimeMillis() - STARTTIME;
+            final long duration = System.currentTimeMillis() - START_TIME;
             log("MCTS:\ttime: " + duration + 
                      "\tsims: " + (root.getNumSim() - sims) + "+" + sims);
             log(pinfo);
