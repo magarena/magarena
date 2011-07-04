@@ -59,31 +59,6 @@ public class MCTSAI implements MagicAI {
         }
     }
 
-    private double selectUCT(final MCTSGameTree parent, final MCTSGameTree child) {
-        final double C = 1.41421;
-        return child.getV(parent) + C * Math.sqrt(Math.log(parent.getNumSim()) / child.getNumSim());
-    }
-    
-    private double selectRatio(final MCTSGameTree parent, final MCTSGameTree child) {
-        final double K = 1.0;
-        return (child.getScore(parent) + K)/(child.getNumSim() + 2*K);
-    }
-
-    private double selectNormal(final MCTSGameTree parent, final MCTSGameTree child) {
-        return Math.max(1.0, child.getV(parent) + 2 * Math.sqrt(child.getVar()));
-    }
-    
-    //decrease score of lose node, boost score of win nodes
-    private double modifySolved(final MCTSGameTree parent, final MCTSGameTree child, final double sc) {
-        if ((!parent.isAI() && child.isAIWin()) || (parent.isAI() && child.isAILose())) {
-            return sc - 2.0;
-        } else if ((parent.isAI() && child.isAIWin()) || (!parent.isAI() && child.isAILose())) {
-            return sc + 2.0;
-        } else {
-            return sc; 
-        } 
-    }
-
     public synchronized Object[] findNextEventChoiceResults(
             final MagicGame startGame, 
             final MagicPlayer scorePlayer) {
@@ -217,33 +192,6 @@ public class MCTSAI implements MagicAI {
         return startGame.map(selected);
     }
 
-    private static String CR2String(Object[] choiceResults) {
-        final StringBuffer buffer=new StringBuffer();
-        if (choiceResults!=null) {
-            buffer.append(" (");
-            boolean first=true;
-            for (final Object choiceResult : choiceResults) {
-                if (first) {
-                    first=false;
-                } else {
-                    buffer.append(',');
-                }
-                buffer.append(choiceResult);
-            }
-            buffer.append(')');
-        }
-        return buffer.toString();
-    }
-
-    public boolean printPath(final List<MCTSGameTree> path) {
-        StringBuffer sb = new StringBuffer();
-        for (MCTSGameTree p : path) {
-            sb.append(" -> ").append(p.desc);
-        }
-        log(sb.toString());
-        return true;
-    }
-
     private LinkedList<MCTSGameTree> growTree(final MCTSGameTree root, final MagicGame game) {
         final LinkedList<MCTSGameTree> path = new LinkedList<MCTSGameTree>();
         boolean found = false;
@@ -295,10 +243,10 @@ public class MCTSAI implements MagicAI {
                     printPath(path) + MCTSGameTree.printNode(curr, choices); 
 
                 MCTSGameTree next = curr.first();
-                double bestS = selectUCT(curr, next);
+                double bestS = next.getUCT(curr);
                 for (MCTSGameTree child : curr) {
-                    final double raw = selectUCT(curr, child);
-                    final double S = modifySolved(curr, child, raw);
+                    final double raw = child.getUCT(curr);
+                    final double S = child.modify(curr, raw);
                     if (S > bestS) {
                         bestS = S;
                         next = child;
@@ -410,6 +358,34 @@ public class MCTSAI implements MagicAI {
         //game is finished or number of actions > MAX_ACTIONS
         return null;
     }
+    
+    private static String CR2String(Object[] choiceResults) {
+        final StringBuffer buffer=new StringBuffer();
+        if (choiceResults!=null) {
+            buffer.append(" (");
+            boolean first=true;
+            for (final Object choiceResult : choiceResults) {
+                if (first) {
+                    first=false;
+                } else {
+                    buffer.append(',');
+                }
+                buffer.append(choiceResult);
+            }
+            buffer.append(')');
+        }
+        return buffer.toString();
+    }
+
+    private boolean printPath(final List<MCTSGameTree> path) {
+        StringBuffer sb = new StringBuffer();
+        for (MCTSGameTree p : path) {
+            sb.append(" -> ").append(p.desc);
+        }
+        log(sb.toString());
+        return true;
+    }
+
 }
 
 //each tree node stores the choice from the parent that leads to this node
@@ -586,6 +562,31 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
             }
         }
         */
+    }
+    
+    public double getUCT(final MCTSGameTree parent) {
+        final double C = 1.41421;
+        return getV(parent) + C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
+    }
+    
+    public double getRatio(final MCTSGameTree parent) {
+        final double K = 1.0;
+        return (getScore(parent) + K)/(getNumSim() + 2*K);
+    }
+
+    public double getNormal(final MCTSGameTree parent) {
+        return Math.max(1.0, getV(parent) + 2 * Math.sqrt(getVar()));
+    }
+    
+    //decrease score of lose node, boost score of win nodes
+    public double modify(final MCTSGameTree parent, final double sc) {
+        if ((!parent.isAI() && isAIWin()) || (parent.isAI() && isAILose())) {
+            return sc - 2.0;
+        } else if ((parent.isAI() && isAIWin()) || (!parent.isAI() && isAILose())) {
+            return sc + 2.0;
+        } else {
+            return sc; 
+        } 
     }
 
     public double getVar() {
