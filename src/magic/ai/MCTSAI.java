@@ -704,10 +704,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         children.add(child);
     }
     
-    public void removeLast() {
-        children.removeLast();
-    }
-    
     public MCTSGameTree first() {
         return children.get(0);
     }
