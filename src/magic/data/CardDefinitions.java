@@ -18,8 +18,7 @@ import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicStaticType;
 import magic.model.MagicType;
-import magic.model.event.*;
-import magic.model.trigger.*;
+import magic.model.event.MagicTiming;
 
 /**
  * Load card definitions from cards.txt and cards2.txt
@@ -83,7 +82,6 @@ public class CardDefinitions {
 		} else if ("ability".equals(property)) {
 			final String names[]=value.split(",");
 			for (final String name : names) {
-
 				card.setAbility(MagicAbility.getAbility(name));
 			}
 		} else if ("static".equals(property)) {
@@ -96,9 +94,7 @@ public class CardDefinitions {
 	}
 	
 	private void filterCards() {
-		
 		for (final MagicCardDefinition card : cards) {
-			
 			if (!card.isLand()) {
 				spellCards.add(card);
 			} else if (!card.isBasic()) {
@@ -140,29 +136,9 @@ public class CardDefinitions {
             Class c = Class.forName("magic.card." + cname);
             Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
-                final Object obj = Modifier.isPublic(field.getModifiers()) ? field.get(null) : "";
-                if (obj instanceof MagicSpellCardEvent) {
-                    final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
-                    cardDefinition.setCardEvent(cevent);
-                    cevent.setCardDefinition(cardDefinition);
-                    System.err.println("Adding spell card event to " + fname);
-                } else if (obj instanceof MagicManaActivation) {
-                    final MagicManaActivation mact = (MagicManaActivation)obj;
-            		cardDefinition.addManaActivation(mact);
-                    System.err.println("Adding mana activation to " + fname);
-                } else if (obj instanceof MagicTrigger) {
-                    final MagicTrigger mtrig = (MagicTrigger)obj;
-            		cardDefinition.addTrigger(mtrig);
-                    mtrig.setCardDefinition(cardDefinition);
-                    System.err.println("Adding trigger to " + fname);
-                } else if (obj instanceof MagicPermanentActivation) {
-                    final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
-            		cardDefinition.addActivation(mact);
-                    mact.setCardDefinition(cardDefinition);
-                    System.err.println("Adding permanent activation to " + fname);
-                } else if (obj instanceof MagicChangeCardDefinition) {
-                    final MagicChangeCardDefinition chg = (MagicChangeCardDefinition)obj;
-                    chg.change(cardDefinition);
+                final Object obj = Modifier.isPublic(field.getModifiers()) ? field.get(null) : null;
+                if (obj != null) {
+                    cardDefinition.add(obj);
                 }
             }
         } catch (ClassNotFoundException err) {
