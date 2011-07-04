@@ -57,7 +57,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 					blocker.setBlockedCreature(null);
 				}
 				attacker.permanent.removeBlockingCreatures();
-				result.add(creatures.toArray(new MagicCombatCreature[creatures.size()]));
+				result.add(creatures.toArray(new MagicCombatCreature[0]));
 			}
 		}
 	}

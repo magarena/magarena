@@ -9,12 +9,10 @@ import java.util.TreeSet;
 public class MagicMultipleScoreRanking implements MagicScoreRanking {
 
 	private static final Comparator<MagicScoreResult> BEST_COMPARATOR=new Comparator<MagicScoreResult>() {
-
 		@Override
 		public int compare(final MagicScoreResult result1,final MagicScoreResult result2) {
-
 			final int sdif=result2.getScore()-result1.getScore();
-			if (sdif!=0) {
+			if (sdif != 0) {
 				return sdif;
 			}
 			return result1.getPosition()-result2.getPosition();
@@ -22,12 +20,10 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
 	};
 
 	private static final Comparator<MagicScoreResult> WORST_COMPARATOR=new Comparator<MagicScoreResult>() {
-
 		@Override
 		public int compare(final MagicScoreResult result1,final MagicScoreResult result2) {
-
 			final int sdif=result1.getScore()-result2.getScore();
-			if (sdif!=0) {
+			if (sdif != 0) {
 				return sdif;
 			}
 			return result1.getPosition()-result2.getPosition();
@@ -40,19 +36,18 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
 	private int worstScore;
 	
 	public MagicMultipleScoreRanking(final int maxSize,final boolean best) {
-
 		this.best=best;
-		results=new TreeSet<MagicScoreResult>(best?BEST_COMPARATOR:WORST_COMPARATOR);
+		results=new TreeSet<MagicScoreResult>(best ? BEST_COMPARATOR : WORST_COMPARATOR);
 		left=maxSize;
 	}
 	
 	public boolean addScore(final int score) {
-
-		return left==0?(best?score>worstScore:score<worstScore):true;
+		return left == 0 ? (best ? score > worstScore 
+                                 : score < worstScore)
+                         :true;
 	}
 	
 	public void addScoreResult(final MagicScoreResult result) {
-		
 		results.add(result);
 		if (left==0) {
 			results.remove(results.last());
@@ -64,7 +59,6 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
 
 	@Override
 	public Collection<Object> getResults() {
-		
 		return new ArrayList<Object>(results);
 	}	
 }
