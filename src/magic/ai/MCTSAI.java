@@ -233,7 +233,7 @@ public class MCTSAI implements MagicAI {
                 final int idx = curr.size();
                 Object[] choice = choices.get(idx);
                 game.executeNextEvent(choice);
-                final MCTSGameTree child = new MCTSGameTree(idx, game.getScore()); 
+                final MCTSGameTree child = new MCTSGameTree(curr, idx, game.getScore()); 
                 assert (child.desc = MCTSGameTree.obj2String(choice[0])).equals(child.desc);
                 curr.addChild(child);
                 path.add(child);
@@ -246,10 +246,10 @@ public class MCTSAI implements MagicAI {
                     printPath(path) + MCTSGameTree.printNode(curr, choices); 
 
                 MCTSGameTree next = curr.first();
-                double bestS = next.getUCT(curr);
+                double bestS = next.getUCT();
                 for (MCTSGameTree child : curr) {
-                    final double raw = child.getUCT(curr);
-                    final double S = child.modify(curr, raw);
+                    final double raw = child.getUCT();
+                    final double S = child.modify(raw);
                     if (S > bestS) {
                         bestS = S;
                         next = child;
@@ -393,7 +393,8 @@ public class MCTSAI implements MagicAI {
 
 //each tree node stores the choice from the parent that leads to this node
 class MCTSGameTree implements Iterable<MCTSGameTree> {
-    
+   
+    private final MCTSGameTree parent;
     private final LinkedList<MCTSGameTree> children = new LinkedList<MCTSGameTree>();
     private final int choice;
     private boolean isAI;
@@ -410,6 +411,12 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     
     //min sim for using robust max
     private int maxChildSim = 100;     
+    
+    public MCTSGameTree(final MCTSGameTree parent, final int choice, final int evalScore) { 
+        this.evalScore = evalScore;
+        this.choice = choice;
+        this.parent = parent;
+    }
     
     private static boolean log(final String message) {
         System.err.println(message);
@@ -458,7 +465,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         } else {
             assert log("CACHE MISS");
             assert log("MISS : " + game.getIdString());
-            final MCTSGameTree root = new MCTSGameTree(-1, -1);
+            final MCTSGameTree root = new MCTSGameTree(null, -1, -1);
             assert (root.desc = "root").equals(root.desc);
             return root;
         }
@@ -501,10 +508,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return true;
     }
 
-    public MCTSGameTree(final int choice, final int evalScore) { 
-        this.evalScore = evalScore;
-        this.choice = choice;
-    }
 
     public boolean isCached() {
         return isCached;
@@ -571,22 +574,22 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         */
     }
     
-    public double getUCT(final MCTSGameTree parent) {
+    public double getUCT() {
         final double C = 1.41421;
         return getV(parent) + C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
     }
     
-    public double getRatio(final MCTSGameTree parent) {
+    public double getRatio() {
         final double K = 1.0;
         return (getScore(parent) + K)/(getNumSim() + 2*K);
     }
 
-    public double getNormal(final MCTSGameTree parent) {
+    public double getNormal() {
         return Math.max(1.0, getV(parent) + 2 * Math.sqrt(getVar()));
     }
     
     //decrease score of lose node, boost score of win nodes
-    public double modify(final MCTSGameTree parent, final double sc) {
+    public double modify(final double sc) {
         if ((!parent.isAI() && isAIWin()) || (parent.isAI() && isAILose())) {
             return sc - 2.0;
         } else if ((parent.isAI() && isAIWin()) || (!parent.isAI() && isAILose())) {
