@@ -63,6 +63,7 @@ public class MCTSAI implements MagicAI {
             final MagicGame startGame, 
             final MagicPlayer scorePlayer) {
 
+        // Determine possible choices
         MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
         final MagicEvent event = choiceGame.getNextEvent();
         RCHOICES = event.getArtificialChoiceResults(choiceGame);
@@ -71,22 +72,21 @@ public class MCTSAI implements MagicAI {
         final int size = RCHOICES.size();
         final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         
-        // No choice results
+        // No choice
         assert size > 0 : "ERROR! No choice found at start of MCTS";
     
-        // Single choice result
+        // Single choice
         if (size == 1) {
             return startGame.map(RCHOICES.get(0));
         }
         
-        //ArtificialLevel = number of seconds to run MCTSAI
-        //debugging: max time is 1 billion, max sim is 500
-        //normal   : max time is 1000 * str, max sim is 1 billion
+        //normal: max time is 1000 * level
         int MAX_TIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
-        assert (MAX_TIME = 1000000000) != 1;
-
-        int MAX_SIM = 1000000000;
-        assert (MAX_SIM = 10000) != 1;
+        int MAX_SIM = Integer.MAX_VALUE;
+        
+        //assert enabled: max sim is 1000
+        assert (MAX_TIME = Integer.MAX_VALUE) != 1;
+        assert (MAX_SIM = 1000) != 1;
         
         final long START_TIME = System.currentTimeMillis();
        
@@ -94,8 +94,8 @@ public class MCTSAI implements MagicAI {
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, RCHOICES);
 
         //end simulations once root is AI win or time is up
-        int sims = 0;
-        for (;
+        int sims;
+        for (sims = 0;
              System.currentTimeMillis() - START_TIME < MAX_TIME &&
              sims < MAX_SIM && 
              !root.isAIWin(); 
@@ -119,22 +119,25 @@ public class MCTSAI implements MagicAI {
             final double score = randomPlay(path.getLast(), rootGame);
             
             // update score and game theoretic value along the chosen path
-            for (MCTSGameTree child = null, parent = null; 
-                 !path.isEmpty(); child = parent) {
-                
-                parent = path.removeLast(); 
+            MCTSGameTree child = null; 
+            MCTSGameTree parent = null;
+            while (!path.isEmpty()) {
+                child = parent;
+                parent = path.removeLast();
+
                 parent.updateScore(child, score);
 
                 if (child != null && child.isSolved()) {
+                    final int steps = child.getSteps() + 1;
                     if (parent.isAI() && child.isAIWin()) {
-                        parent.setAIWin(child.getSteps() + 1);
+                        parent.setAIWin(steps);
+                    } else if (parent.isOpp() && child.isAILose()) {
+                        parent.setAILose(steps);
                     } else if (parent.isAI() && child.isAILose()) {
-                        parent.incLose();
-                    } else if (!parent.isAI() && child.isAIWin()) {
-                        parent.incLose();
-                    } else if (!parent.isAI() && child.isAILose()) {
-                        parent.setAILose(child.getSteps() + 1);
-                    }
+                        parent.incLose(steps);
+                    } else if (parent.isOpp() && child.isAIWin()) {
+                        parent.incLose(steps);
+                    } 
                 }
             }
         }
@@ -534,6 +537,10 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public boolean isAI() {
         return isAI;
     }
+
+    public boolean isOpp() {
+        return !isAI;
+    }
     
     public void setIsAI(final boolean ai) {
         this.isAI = ai;
@@ -606,17 +613,14 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return evalScore == Integer.MIN_VALUE;
     }
 
-    public void incLose() {
+    public void incLose(final int lsteps) {
         numLose++;
+        steps = Math.max(steps, lsteps);
         if (numLose == maxChildren) {
-            int max = 0;
-            for (MCTSGameTree child : children) {
-                max = Math.max(max, child.getSteps());
-            }
             if (isAI) {
-                setAILose(max + 1);
+                setAILose(steps);
             } else {
-                setAIWin(max + 1);
+                setAIWin(steps);
             }
         }
     }
