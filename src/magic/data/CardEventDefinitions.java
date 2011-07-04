@@ -3072,10 +3072,8 @@ public class CardEventDefinitions {
 	};
 	
 	private static final MagicLocalVariable KAVU_TITAN_VARIABLE=new MagicDummyLocalVariable() {
-				
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
 			return flags|MagicAbility.Trample.getMask();
 		}
 	};
