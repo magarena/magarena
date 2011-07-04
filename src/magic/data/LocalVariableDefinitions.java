@@ -14,19 +14,19 @@ import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
 
 public class LocalVariableDefinitions {
-	
-	private static final MagicLocalVariable BANT_SUREBLADE=new MagicBladeLocalVariable(MagicAbility.FirstStrike.getMask());
+    
+    private static final MagicLocalVariable BANT_SUREBLADE=new MagicBladeLocalVariable(MagicAbility.FirstStrike.getMask());
+	private static final MagicLocalVariable ESPER_STORMBLADE=new MagicBladeLocalVariable(MagicAbility.Flying.getMask());
+    private static final MagicLocalVariable NAYA_HUSHBLADE=new MagicBladeLocalVariable(MagicAbility.Shroud.getMask());
+	private static final MagicLocalVariable GRIXIS_GRIMBLADE=new MagicBladeLocalVariable(MagicAbility.Deathtouch.getMask());
+	private static final MagicLocalVariable JUND_HACKBLADE=new MagicBladeLocalVariable(MagicAbility.Haste.getMask()); 
 	
 	private static final MagicLocalVariable CAIRN_WANDERER=new MagicDummyLocalVariable() {
-		
 		@Override
 		public long getAbilityFlags(MagicGame game,MagicPermanent permanent,long flags) {
-
 			long newFlags=0;
 			for (final MagicPlayer player : game.getPlayers()) {
-				
 				for (final MagicCard card : player.getGraveyard()) {
-
 					final MagicCardDefinition cardDefinition=card.getCardDefinition();
 					if (cardDefinition.isCreature()) {
 						newFlags|=cardDefinition.getAbilityFlags();
@@ -38,10 +38,8 @@ public class LocalVariableDefinitions {
 	};
 	
 	private static final MagicLocalVariable ECHO_MAGE=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=4) {
 				pt.power=2;
@@ -53,28 +51,20 @@ public class LocalVariableDefinitions {
 		}		
 	};
 	
-	private static final MagicLocalVariable ESPER_STORMBLADE=new MagicBladeLocalVariable(MagicAbility.Flying.getMask());
-	
-    private static final MagicLocalVariable NAYA_HUSHBLADE=new MagicBladeLocalVariable(MagicAbility.Shroud.getMask());
 	
 	private static final MagicLocalVariable GOBLIN_GAVELEER=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			if (permanent.isEquipped()) {
 				pt.power+=permanent.getEquipmentPermanents().size()<<1;
 			}
 		}		
 	};
 	
-	private static final MagicLocalVariable GRIXIS_GRIMBLADE=new MagicBladeLocalVariable(MagicAbility.Deathtouch.getMask());
 				
 	private static final MagicLocalVariable GUUL_DRAZ_SPECTER=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			if (game.getOpponent(permanent.getController()).getHand().isEmpty()) {
 				pt.power+=3;
 				pt.toughness+=3;
@@ -83,27 +73,21 @@ public class LocalVariableDefinitions {
 	};
 
 	private static final MagicLocalVariable GUUL_DRAZ_VAMPIRE=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			if (game.getOpponent(permanent.getController()).getLife()<=10) {
 				pt.power+=2;
 				pt.toughness++;
 			}
 		}	
-		
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-		
 			return game.getOpponent(permanent.getController()).getLife()<=10?flags|MagicAbility.Intimidate.getMask():flags;
 		}
 	};
 	
-	private static final MagicLocalVariable JUND_HACKBLADE=new MagicBladeLocalVariable(MagicAbility.Haste.getMask()); 
 	
 	private static final MagicLocalVariable KITESAIL_APPRENTICE=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 
@@ -112,7 +96,6 @@ public class LocalVariableDefinitions {
 				pt.toughness++;
 			}
 		}
-				
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 		
@@ -121,10 +104,8 @@ public class LocalVariableDefinitions {
 	};
 	
 	private static final MagicLocalVariable LORD_OF_EXTINCTION=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			final int amount=game.getPlayer(0).getGraveyard().size()+game.getPlayer(1).getGraveyard().size();
 			pt.power=amount;
 			pt.toughness=amount;
@@ -132,10 +113,8 @@ public class LocalVariableDefinitions {
 	};
 	
 	private static final MagicLocalVariable LORD_OF_SHATTERSKULL_PASS=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			if (permanent.getCounters(MagicCounterType.Charge)>0) {
 				pt.power=6;
 				pt.toughness=6;
@@ -144,10 +123,8 @@ public class LocalVariableDefinitions {
 	};
 	
 	private static final MagicLocalVariable NIRKANA_CUTTHROAT=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=3) {
 				pt.power=5;
@@ -160,7 +137,6 @@ public class LocalVariableDefinitions {
 		
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=3) {
 				return flags|MagicAbility.FirstStrike.getMask()|MagicAbility.Deathtouch.getMask();
@@ -172,10 +148,8 @@ public class LocalVariableDefinitions {
 	};
 	
 	private static final MagicLocalVariable RUTHLESS_CULLBLADE=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			if (game.getOpponent(permanent.getController()).getLife()<=10) {
 				pt.power+=2;
 				pt.toughness++;
@@ -184,10 +158,8 @@ public class LocalVariableDefinitions {
 	};
 
 	private static final MagicLocalVariable STUDENT_OF_WARFARE=new MagicDummyLocalVariable() {
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=7) {
 				pt.power=4;
@@ -200,7 +172,6 @@ public class LocalVariableDefinitions {
 		
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=7) {
 				return flags|MagicAbility.DoubleStrike.getMask();
