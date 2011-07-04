@@ -190,7 +190,7 @@ public class MCTSAI implements MagicAI {
                     out.append("  ");
                 }
                 out.append('[');
-                out.append((int)(node.getV(root) * 100));
+                out.append((int)(node.getV() * 100));
                 out.append('/');
                 out.append(node.getNumSim());
                 out.append('/');
@@ -582,27 +582,27 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         //if child has sufficient simulations, backup using robust max instead of average
         if (child != null && child.getNumSim() > maxChildSim) {
             maxChildSim = child.getNumSim();
-            if (isAI && child.getV() > getV()) {
-                sum = child.getV() * numSim;
+            if (isAI && child.getAvg() > getAvg()) {
+                sum = child.getAvg() * numSim;
             }
-            if (!isAI && child.getV() < getV()) {
-                sum = child.getV() * numSim;
+            if (!isAI && child.getAvg() < getAvg()) {
+                sum = child.getAvg() * numSim;
             }
         }
     }
     
     public double getUCT() {
         final double C = 1.41421;
-        return getV(parent) + C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
+        return getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
     }
     
     public double getRatio() {
         final double K = 1.0;
-        return (getScore(parent) + K)/(getNumSim() + 2*K);
+        return (getSum() + K)/(getNumSim() + 2*K);
     }
 
     public double getNormal() {
-        return Math.max(1.0, getV(parent) + 2 * Math.sqrt(getVar()));
+        return Math.max(1.0, getV() + 2 * Math.sqrt(getVar()));
     }
     
     //decrease score of lose node, boost score of win nodes
@@ -667,14 +667,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return evalScore;
     }
     
-    public double getScore() {
-        return sum;
-    }
-
-    public double getScore(final MCTSGameTree par) {
-        return par.isAI() ? sum : 1.0 - sum;
-    }
-
     public double getDecision() {
         //boost decision score of win nodes by BOOST 
         final int BOOST = 1000000;
@@ -691,16 +683,20 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return numSim;
     }
     
-    public double getV() {
-        return getScore() / numSim;
+    public double getSum() {
+        return parent.isAI() ? sum : 1.0 - sum;
+    }
+    
+    public double getAvg() {
+        return sum / numSim;
     }
 
-    public double getV(final MCTSGameTree par) {
-        return getScore(par) / numSim;
+    public double getV() {
+        return getSum() / numSim;
     }
    
-    public double getSecureScore(final MCTSGameTree par) {
-        return getV(par) + 1.0/Math.sqrt(numSim);
+    public double getSecureScore() {
+        return getV() + 1.0/Math.sqrt(numSim);
     }
 
     public void addChild(MCTSGameTree child) {
