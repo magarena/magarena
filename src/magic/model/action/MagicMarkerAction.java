@@ -21,7 +21,8 @@ public class MagicMarkerAction extends MagicAction {
 	private boolean oldStateCheckRequired;
 	private int oldPayedCostX;
 	private MagicTarget oldPayedCostTarget;
-	private long oldIdentifiers[];
+	//private long oldIdentifiers[];
+    private int oldTime;
 	private int oldLife1;
 	private int oldLife2;
 	private int oldPoison1;
@@ -43,7 +44,8 @@ public class MagicMarkerAction extends MagicAction {
 		oldStateCheckRequired=game.getStateCheckRequired();
 		oldPayedCostX=game.getPayedCost().getX();
 		oldPayedCostTarget=game.getPayedCost().getTarget();
-		oldIdentifiers=game.getIdentifiers();
+		//oldIdentifiers=game.getIdentifiers();
+        oldTime=game.getTime();
 		final MagicPlayer player1=game.getPlayer(0);
 		oldLife1=player1.getLife();
 		oldPoison1=player1.getPoison();
@@ -70,7 +72,8 @@ public class MagicMarkerAction extends MagicAction {
 		game.setStateCheckRequired(oldStateCheckRequired);
 		game.getPayedCost().setX(oldPayedCostX);
 		game.getPayedCost().setTarget(oldPayedCostTarget);
-		game.setIdentifiers(oldIdentifiers);
+		//game.setIdentifiers(oldIdentifiers);
+        game.setTime(oldTime);
 		final MagicPlayer player1=game.getPlayer(0);
 		player1.setLife(oldLife1);
 		player1.setPoison(oldPoison1);
