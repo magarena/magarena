@@ -22,47 +22,37 @@ public class TestGameBuilder {
 	private static final AtomicInteger currentId=new AtomicInteger(1);
 	
 	public static void addToLibrary(final MagicPlayer player,final String name,final int count) {
-
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
 		for (int c=count;c>0;c--) {
-			
 			player.getLibrary().addToTop(new MagicCard(cardDefinition,player,currentId.getAndIncrement()));
 		}
 	}
 	
 	public static void addToGraveyard(final MagicPlayer player,final String name,final int count) {
-		
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
 		for (int c=count;c>0;c--) {
-			
 			player.getGraveyard().addToTop(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
 		}
 	}
 
 	public static void addToExile(final MagicPlayer player,final String name,final int count) {
-		
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
 		for (int c=count;c>0;c--) {
-			
 			player.getExile().addToTop(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
 		}
 	}
 	
 	public static void addToHand(final MagicPlayer player,final String name,final int count) {
-		
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
 		if (cardDefinition!=null) {
 			for (int c=count;c>0;c--) {
-				
 				player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
 			}
 		}
 	}
 
 	public static void createAllTokens(final MagicGame game,final MagicPlayer player) {
-		
 		for (final MagicCardDefinition cardDefinition : TokenCardDefinitions.TOKEN_CARDS) {
-			
 			game.doAction(new MagicPlayTokenAction(player,cardDefinition));
 		}
 	}
