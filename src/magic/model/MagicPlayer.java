@@ -262,7 +262,7 @@ public class MagicPlayer implements MagicTarget {
 
 	public void createHandAndLibrary(final int handSize) {
 		for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
-            final int id = MagicGame.getInstance().incTime();
+            final long id = MagicGame.getInstance().incTime();
 			library.add(new MagicCard(cardDefinition,this,id));
 		}
 
