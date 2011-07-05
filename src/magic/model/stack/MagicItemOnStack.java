@@ -148,6 +148,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
     public long getItemId() {
         final Object[] CR = choiceResults;
         final long[] keys = {
+            id,
 	        source != null ?  source.getId() : -1L,
             controller != null ? controller.getId() : -1L,
             activation != null ? activation.hashCode() : -1L,
