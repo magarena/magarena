@@ -14,10 +14,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	private MagicPlayer owner;
 	private boolean token=false;
 	private boolean known=true;
-	private int id;
+	private long id;
 	private int imageIndex=0;
 	
-	public MagicCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner,final int id) {
+	public MagicCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner,final long id) {
 		this.cardDefinition=cardDefinition;
 		this.owner=owner;
 		this.id=id;
@@ -169,6 +169,6 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 
 	@Override
 	public int compareTo(final MagicCard card) {
-		return id-card.id;
+		return Long.signum(id - card.id);
 	}
 }

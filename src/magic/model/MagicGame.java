@@ -86,7 +86,7 @@ public class MagicGame {
 	private final MagicLogBook logBook;
 	private final MagicLogMessageBuilder logMessageBuilder;
     private long[] keys;
-    private int time = 1000000;
+    private long time = 1000000;
 
     public static MagicGame getInstance() {
         return INSTANCE;
@@ -198,15 +198,15 @@ public class MagicGame {
 		return score;
 	}
 
-    public int getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(final int t) {
+    public void setTime(final long t) {
         time = t;
     }
 
-    public int incTime() {
+    public long incTime() {
         time++;
         return time;
     }
