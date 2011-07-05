@@ -171,12 +171,26 @@ public class MagicTournament {
 	}
 		
 	public MagicGame nextGame(final boolean sound) {
+		//create players
+        final MagicPlayer player   = new MagicPlayer(configuration,playerDefinitions[0],0);
+		final MagicPlayer opponent = new MagicPlayer(configuration,playerDefinitions[opponentIndex],1);
 
-		final MagicPlayer player=new MagicPlayer(configuration,playerDefinitions[0],0);
-		final MagicPlayer opponent=new MagicPlayer(configuration,playerDefinitions[opponentIndex],1);
-		final MagicPlayer start=startPlayer==0?player:opponent;
-		return new MagicGame(this,MagicDefaultGameplay.getInstance(),new MagicPlayer[]{player,opponent},start,sound);
-	}
+        //determine who starts first
+		final MagicPlayer start    = startPlayer == 0 ? player : opponent;
+
+        //create game
+        final MagicGame game = new MagicGame(
+                this,
+                MagicDefaultGameplay.getInstance(),
+                new MagicPlayer[]{player,opponent},
+                start,
+                sound);
+
+        //create hand and library
+        player.createHandAndLibrary(configuration.getHandSize());
+        opponent.createHandAndLibrary(configuration.getHandSize());
+		return game;
+    }
 	
 	public int getNrOfPlayers() {
 		return playerDefinitions.length;
