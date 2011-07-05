@@ -12,14 +12,12 @@ public class MagicPutItemOnStackAction extends MagicAction {
 	private final MagicItemOnStack itemOnStack;
 	
 	public MagicPutItemOnStackAction(final MagicItemOnStack itemOnStack) {
-		
 		this.itemOnStack=itemOnStack;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
-		final long id=game.createIdentifier(MagicIdentifierType.ItemOnStack);
+		final long id=game.incTime(); //createIdentifier(MagicIdentifierType.ItemOnStack);
 		itemOnStack.setId(id);
 		game.getStack().addToTop(itemOnStack);
 		if (itemOnStack.hasChoices()) {
@@ -34,13 +32,11 @@ public class MagicPutItemOnStackAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		game.getStack().removeFromTop();
 	}
 	
 	@Override
 	public String toString() {
-		
 		return getClass().getSimpleName()+" ("+itemOnStack.getClass().getSimpleName()+','+itemOnStack.getName()+')';
 	}
 }
