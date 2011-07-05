@@ -22,28 +22,23 @@ public abstract class MagicChoice {
 	private final String description;
 	
 	public MagicChoice(final String description) {
-		
 		this.description=description;
 	}
 	
 	public final String getDescription() {
-		
 		return description;
 	}
 	
 	public MagicTargetChoice getTargetChoice() {
-		
 		return null;
 	}
 	
 	public int getManaChoiceResultIndex() {
-		
 		return -1;
 	}
 
 	/** Checks if there are valid options for the choice. */
 	public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
-
 		return true;
 	}
 	
@@ -99,15 +94,17 @@ public abstract class MagicChoice {
     }
 	
 	/** Gets the choice results of the player. */
-	public abstract Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source);
+	public abstract Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source);
 
 	public static boolean isYesChoice(final Object choiceResult) {
-		
 		return YES_CHOICE==choiceResult;
 	}
 
 	public static boolean isNoChoice(final Object choiceResult) {
-		
 		return NO_CHOICE==choiceResult;
 	}
 }
