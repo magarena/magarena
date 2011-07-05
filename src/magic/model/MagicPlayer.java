@@ -59,7 +59,7 @@ public class MagicPlayer implements MagicTarget {
 		activationMap=new MagicActivationMap();
 		builderCost=new MagicBuilderManaCost();
 		activationPriority=new MagicActivationPriority();
-		createHandAndLibrary(configuration.getHandSize());
+		//createHandAndLibrary(configuration.getHandSize());
 	}
 	
 	private MagicPlayer() {}
@@ -260,10 +260,10 @@ public class MagicPlayer implements MagicTarget {
 		activationMap.addActivations(hand);
 	}
 
-	private void createHandAndLibrary(final int handSize) {
-		int id=0;
+	public void createHandAndLibrary(final int handSize) {
 		for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
-			library.add(new MagicCard(cardDefinition,this,id++));
+            final int id = MagicGame.getInstance().incTime();
+			library.add(new MagicCard(cardDefinition,this,id));
 		}
 
 		if (library.useSmartShuffle()) {
