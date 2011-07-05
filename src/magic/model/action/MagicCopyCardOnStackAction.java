@@ -12,16 +12,14 @@ public class MagicCopyCardOnStackAction extends MagicAction {
 	private final MagicCardOnStack cardOnStack;
 	
 	public MagicCopyCardOnStackAction(final MagicPlayer player,final MagicCardOnStack cardOnStack) {
-	
 		this.player=player;
 		this.cardOnStack=cardOnStack;
 	}
 
 	@Override
 	public void doAction(final MagicGame game) {
-
 		final MagicCardOnStack copyCardOnStack=cardOnStack.copyCardOnStack(player);
-		final long id=game.createIdentifier(MagicIdentifierType.ItemOnStack);
+		final long id=game.incTime(); //createIdentifier(MagicIdentifierType.ItemOnStack);
 		copyCardOnStack.setId(id);
 		game.getStack().addToTop(copyCardOnStack);
 		if (copyCardOnStack.getEvent().getTargetChoice()!=null) {
@@ -32,13 +30,11 @@ public class MagicCopyCardOnStackAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		
 		game.getStack().removeFromTop();
 	}
 	
 	@Override
 	public String toString() {
-		
 		return getClass().getSimpleName()+" ("+cardOnStack.getName()+')';
 	}
 }
