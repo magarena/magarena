@@ -88,6 +88,7 @@ public class MagicGame {
     private long[] keys;
     private long time = 1000000;
 
+
     public static MagicGame getInstance() {
         return INSTANCE;
     }

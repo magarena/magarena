@@ -18,10 +18,10 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	private int imageIndex=0;
 	
 	public MagicCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner,final long id) {
-		this.cardDefinition=cardDefinition;
-		this.owner=owner;
-		this.id=id;
-		imageIndex=MagicRandom.nextInt(100);
+		this.cardDefinition = cardDefinition;
+		this.owner = owner;
+		this.id = id;
+		imageIndex = Math.abs(hashCode());
 	}
 		
 	private MagicCard() {}
