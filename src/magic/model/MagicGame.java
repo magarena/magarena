@@ -46,6 +46,7 @@ import magic.model.trigger.MagicTriggerType;
 
 public class MagicGame {
 
+    public static MagicGame INSTANCE = null;
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
 	public static final int LOSING_POISON=10;
 	
@@ -60,7 +61,7 @@ public class MagicGame {
 	private final MagicStack stack;
 	private final MagicPlayer scorePlayer;
 	private final boolean sound;
-	private long identifiers[];
+	//private long identifiers[];
 	private int score=0;
 	private int turn=1;
 	private int startTurn=0;
@@ -85,7 +86,12 @@ public class MagicGame {
 	private final MagicLogBook logBook;
 	private final MagicLogMessageBuilder logMessageBuilder;
     private long[] keys;
-	
+    private int time = 1000000;
+
+    public static MagicGame getInstance() {
+        return INSTANCE;
+    }
+
 	public MagicGame(
             final MagicTournament tournament,
             final MagicGameplay gameplay,
@@ -98,7 +104,7 @@ public class MagicGame {
 		this.gameplay=gameplay;
 		this.players=players;
 		this.sound=sound;
-		identifiers=new long[MagicIdentifierType.NR_OF_IDENTIFIERS];
+		//identifiers=new long[MagicIdentifierType.NR_OF_IDENTIFIERS];
 		triggers=new MagicPermanentTriggerMap();
 		turnTriggers=new MagicPermanentTriggerList();
 		exiledUntilEndOfTurn=new MagicCardList();
@@ -113,6 +119,8 @@ public class MagicGame {
 		logMessageBuilder=new MagicLogMessageBuilder(this);
 		payedCost=new MagicPayedCost();
 		changePhase(gameplay.getStartPhase(this));
+
+        INSTANCE = this;
 	}
 	
 	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
@@ -127,7 +135,8 @@ public class MagicGame {
 		this.step=game.step;
 
         //copying primitives, array of primitive
-		this.identifiers=Arrays.copyOf(game.identifiers,game.identifiers.length);
+		//this.identifiers=Arrays.copyOf(game.identifiers,game.identifiers.length);
+        this.time = game.time;
         this.turn=game.turn;
 		this.startTurn=game.startTurn;
 		this.landPlayed=game.landPlayed;
@@ -189,6 +198,19 @@ public class MagicGame {
 		return score;
 	}
 
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(final int t) {
+        time = t;
+    }
+
+    public int incTime() {
+        time++;
+        return time;
+    }
+
     //follow factors in MagicMarkerAction
     public long getGameId() {
 		keys = new long[] { 
@@ -203,9 +225,10 @@ public class MagicGame {
             getPayedCost().getX(),
             stack.getItemsId(),
             events.getEventsId(),
-            identifiers[0],
-            identifiers[1],
-            identifiers[2],
+            time,
+            //identifiers[0],
+            //identifiers[1],
+            //identifiers[2],
             players[0].getPlayerId(),
             players[1].getPlayerId(),
         };
@@ -411,6 +434,7 @@ public class MagicGame {
 		}		
 	}
 
+    /*
 	public long createIdentifier(final MagicIdentifierType type) {
 		return identifiers[type.ordinal()]++;
 	}
@@ -426,6 +450,7 @@ public class MagicGame {
 	public long[] getIdentifiers() {
 		return Arrays.copyOf(identifiers,identifiers.length);
 	}
+    */
 
     public int getNumActions() {
         return actions.size();
@@ -722,7 +747,8 @@ public class MagicGame {
 	}
 						
 	public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
-		return new MagicPermanent(createIdentifier(MagicIdentifierType.Permanent),card,controller);
+		//return new MagicPermanent(createIdentifier(MagicIdentifierType.Permanent),card,controller);
+		return new MagicPermanent(incTime(),card,controller);
 	}
 	
 	public MagicCardList getExiledUntilEndOfTurn() {
@@ -989,7 +1015,8 @@ public class MagicGame {
 	}
 	
 	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
-		final long id=createIdentifier(MagicIdentifierType.PermanentTrigger);
+		//final long id=createIdentifier(MagicIdentifierType.PermanentTrigger);
+		final long id=incTime();
 		final MagicPermanentTrigger permanentTrigger=new MagicPermanentTrigger(id,permanent,trigger);
 		triggers.get(trigger.getType()).add(permanentTrigger);
 		return permanentTrigger;
