@@ -23,7 +23,9 @@ public class MagicRemoveCardAction extends MagicAction {
 		switch (locationType) {
 			case OwnersHand:
 				index=owner.removeCardFromHand(card);
-				setScore(owner,-ArtificialScoringSystem.getCardScore(card));
+                if (index >= 0) {
+    				setScore(owner,-ArtificialScoringSystem.getCardScore(card));
+                }
 				break;
 			case OwnersLibrary:
 				index=owner.getLibrary().removeCard(card);
@@ -43,7 +45,9 @@ public class MagicRemoveCardAction extends MagicAction {
 		final MagicPlayer owner=card.getOwner();
 		switch (locationType) {
 			case OwnersHand:
-				owner.addCardToHand(card,index);
+                if (index >= 0) {
+    				owner.addCardToHand(card,index);
+                }
 				break;
 			case OwnersLibrary:
 				owner.getLibrary().add(index,card);

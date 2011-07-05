@@ -19,14 +19,18 @@ public class MagicDiscardCardAction extends MagicAction {
 
 	@Override
 	public void doAction(final MagicGame game) {
-		setScore(player,-ArtificialScoringSystem.getCardScore(card));
-		index=player.removeCardFromHand(card);
-		game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.Graveyard));
-		game.setStateCheckRequired();
+		index = player.removeCardFromHand(card);
+        if (index >= 0) {
+		    setScore(player,-ArtificialScoringSystem.getCardScore(card));
+            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.Graveyard));
+            game.setStateCheckRequired();
+        }
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		player.addCardToHand(card,index);
+        if (index >= 0) {
+    		player.addCardToHand(card,index);
+        }
 	}
 }

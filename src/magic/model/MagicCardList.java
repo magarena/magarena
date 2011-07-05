@@ -67,7 +67,11 @@ public class MagicCardList extends ArrayList<MagicCard> {
 	
 	public int removeCard(final MagicCard card) {
 		final int index=indexOf(card);
-		remove(index);
+		if (index >= 0) {
+            remove(index);
+        } else {
+            System.err.println("WARNING. Card " + card.getName() + " not found in hand.");
+        }
 		return index;
 	}
 	

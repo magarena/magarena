@@ -46,9 +46,7 @@ public class MagicDrawAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		
 		for (int index=drawnCards.size()-1;index>=0;index--) {
-
 			final MagicCard card=drawnCards.get(index);
 			player.removeCardFromHand(card);
 			player.getLibrary().addToTop(card);
