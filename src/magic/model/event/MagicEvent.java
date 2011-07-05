@@ -195,8 +195,10 @@ public class MagicEvent implements MagicCopyable {
 
     public long getEventId() {
         long[] keys = {
-            (player != null ? player.getIndex() : -1L),
             (source != null ? source.getId() : -1L),
+            (player != null ? player.getIndex() : -1L),
+	        (choice != null ? choice.hashCode() : -1L),
+	        (targetPicker != null ? targetPicker.hashCode() : -1L),
             (action != null ? action.hashCode() : -1L),
             (data.length > 0 && data[0] != null) ?
                 ((data[0] instanceof MagicMappable) ? ((MagicMappable)data[0]).getId() : data[0].hashCode()) :
