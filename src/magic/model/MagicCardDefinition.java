@@ -126,12 +126,12 @@ public class MagicCardDefinition {
 	}
 		
 	public String getImageName() {
-		
 		return fullName;
 	}
-	
+
+    //two images for basic lands and 
+    //one image for the other cards
 	public int getImageCount() {
-		
 		return isBasic()?2:1;
 	}
 
