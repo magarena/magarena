@@ -266,13 +266,22 @@ public class MagicPlayer implements MagicTarget {
 			library.add(new MagicCard(cardDefinition,this,id));
 		}
 
+        final long[] keys = {
+            MagicGame.num_games,
+            (System.getProperty("rndSeed") != null) ? 
+                Long.parseLong(System.getProperty("rndSeed")) : 
+                System.currentTimeMillis()
+        };
+
+        final long seed = magic.MurmurHash3.hash(keys);
+
 		if (library.useSmartShuffle()) {
-			library.smartShuffle();
+			library.smartShuffle(seed);
 		} else {
-			library.shuffle(MagicRandom.nextInt(library.size()+1));
+			library.shuffle(seed);
 		}
 
-		for (int count=handSize;count>0&&!library.isEmpty();count--) {
+		for (int count = handSize; count > 0 && !library.isEmpty(); count--) {
 			addCardToHand(library.removeCardAtTop());
 		}
 	}
