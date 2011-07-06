@@ -2338,7 +2338,6 @@ public class TriggerDefinitions {
 
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
 			final MagicPlayer player=permanent.getController();
 			if (player==data) {
 				return new MagicEvent(permanent,player,MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,MagicGraveyardTargetPicker.getInstance(),
