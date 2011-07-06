@@ -46,6 +46,7 @@ import magic.model.trigger.MagicTriggerType;
 
 public class MagicGame {
 
+    public static int num_games = 0;
     public static MagicGame INSTANCE = null;
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
 	public static final int LOSING_POISON=10;
@@ -121,6 +122,7 @@ public class MagicGame {
 		payedCost=new MagicPayedCost();
 		changePhase(gameplay.getStartPhase(this));
 
+        num_games++;
         INSTANCE = this;
 	}
 	
