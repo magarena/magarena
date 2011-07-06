@@ -11,6 +11,7 @@ public enum MagicTriggerType {
 	WhenOtherPutIntoGraveyardFromPlay, // permanent
 	WhenAttacks,            // permanent
 	WhenBlocks,             // permanent
+    WhenTargeted,           // permanent
 	IfDamageWouldBeDealt,   // damage
 	;
 	
