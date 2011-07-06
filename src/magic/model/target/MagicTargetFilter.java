@@ -136,13 +136,11 @@ public interface MagicTargetFilter {
 	};
 	
 	public static final MagicTargetFilter TARGET_PERMANENT=new MagicTargetFilter() {
-
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return true;
 		}
 
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
@@ -343,12 +341,10 @@ public interface MagicTargetFilter {
 	public static final MagicTargetFilter TARGET_PERMANENT_YOU_CONTROL=new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			return target.getController()==player;
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -651,14 +647,21 @@ public interface MagicTargetFilter {
 	};
 	
 	public static final MagicTargetFilter TARGET_CREATURE_CARD_FROM_GRAVEYARD=new MagicTargetFilter() {
-
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			return ((MagicCard)target).getCardDefinition().isCreature();
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
+			return targetType==MagicTargetType.Graveyard;
+		}						
+	};
+	
+    public static final MagicTargetFilter TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().getConvertedCost() <= 3;
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType==MagicTargetType.Graveyard;
 		}						
 	};

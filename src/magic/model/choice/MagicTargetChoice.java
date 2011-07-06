@@ -129,6 +129,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_YOU_CONTROL,false,MagicTargetHint.None,"a Goblin to sacrifice");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_GRAVEYARD=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target creature card from your graveyard");
+	public static final MagicTargetChoice TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,false,MagicTargetHint.None,"target permanent card with converted mana cost 3 or less from your graveyard");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,false,MagicTargetHint.None,"target creature card from your opponent's graveyard");
 	public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD=

@@ -7647,3 +7647,17 @@ value=3
 rarity=R
 type=Land
 timing=land
+
+>Sun Titan
+image=http://magiccards.info/scans/en/m11/35.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Giant
+color=w
+converted=6
+cost={4}{W}{W}
+power=6
+toughness=6
+ability=vigilance
+timing=fmain
