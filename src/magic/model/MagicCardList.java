@@ -122,7 +122,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
     public void shuffle(final long seed) {
 		final MagicCardList oldCards=new MagicCardList(this);
 		clear();
-        final Random rng = new Random(seed);
+        final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
 		for (int size=oldCards.size();size>0;size--) {
 			final int index=rng.nextInt(size);
 			final MagicCard card=oldCards.get(index);
@@ -131,14 +131,17 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		}
 	}
 	
-	public void smartShuffle() {
-		
+    public void smartShuffle() {
+        smartShuffle(size());
+    }
+	
+	public void smartShuffle(final long seed) {
+        final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
 		final int size=size();
 		final List<MagicCard> lands=new ArrayList<MagicCard>();
 		final List<MagicCard> spells=new ArrayList<MagicCard>();
 		int lowLeft=0;
 		for (final MagicCard card : this) {
-		
 			final MagicCardDefinition cardDefinition=card.getCardDefinition();
 			if (cardDefinition.isLand()) {
 				lands.add(card);
@@ -158,16 +161,16 @@ public class MagicCardList extends ArrayList<MagicCard> {
 			int highCount=0;
 			while (landCount+spellCount<5) {
 
-				final int type=MagicRandom.nextInt(5);
+				final int type = rng.nextInt(5);
 				if (type<2) {
 					if (landCount<2) {
-						final int index=MagicRandom.nextInt(lands.size());
+						final int index = rng.nextInt(lands.size());
 						add(lands.get(index));
 						lands.remove(index);
 						landCount++;
 					}
 				} else if (spellCount<3) {
-					final int index=MagicRandom.nextInt(spells.size());
+					final int index = rng.nextInt(spells.size());
 					final MagicCard card=spells.get(index);
 					final boolean high=card.getCardDefinition().getConvertedCost()>4;
 					if (!high||lowLeft==0||highCount==0||blocks==1) {
