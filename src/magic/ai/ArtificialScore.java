@@ -9,13 +9,11 @@ public class ArtificialScore {
 	public int depth;
 	
 	public ArtificialScore(final int score,final int depth) {
-		
 		this.score=score;
 		this.depth=depth;
 	}
 
 	public ArtificialScore getScore(final int depthIncr) {
-		
 		if (this==INVALID_SCORE) {
 			return INVALID_SCORE;
 		}
@@ -23,7 +21,6 @@ public class ArtificialScore {
 	}
 	
 	public boolean isBetter(final ArtificialScore other,final boolean best) {
-		
 		if (other==INVALID_SCORE) {
 			return false;
 		} else if (this==INVALID_SCORE) {
@@ -39,11 +36,9 @@ public class ArtificialScore {
 	
 	@Override
 	public String toString() {
-		
 		if (this==INVALID_SCORE) {
 			return "none"; 
 		}
-		
 		final StringBuffer buffer=new StringBuffer();
 		buffer.append(score).append(" at ").append(depth);
 		return buffer.toString();
@@ -51,13 +46,11 @@ public class ArtificialScore {
 
 	@Override
 	public int hashCode() {
-		
 		return 31*score+depth;
 	}
 
 	@Override
 	public boolean equals(final Object obj) {
-		
 		if (this==obj) {
 			return true;
 		}
