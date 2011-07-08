@@ -1,6 +1,7 @@
 package magic;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 
 import magic.data.CardDefinitions;
@@ -13,14 +14,16 @@ import magic.data.ManaActivationDefinitions;
 import magic.data.PermanentActivationDefinitions;
 import magic.data.TriggerDefinitions;
 import magic.model.variable.MagicStaticLocalVariable;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicManaCost;
 import magic.ui.MagicFrame;
 
 public class MagicMain {
 	
 	private static final String GAME_PATH="Magarena";
 	private static final String MODS_PATH="mods";
-
-	private static final String gamePath;
+	
+    private static final String gamePath;
 	
 	static {
 		final File dataDirFile=new File(System.getProperty("user.dir"),GAME_PATH);
@@ -32,11 +35,11 @@ public class MagicMain {
 		System.err.println("Data folder : "+gamePath);
 	}
 	
-	public static void main(String args[]) {		
+	public static void main(String args[]) throws IOException {		
 		initialize();
         new MagicFrame();
-	}		
-	
+	}	
+
 	public static String getGamePath() {
 		return gamePath;
 	}

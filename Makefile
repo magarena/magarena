@@ -1,9 +1,10 @@
 JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true 
-JAVA=java -Xms256M -Xmx256M -Ddebug=true 
+LIBS=.
+JAVA=java -Xms256M -Xmx256M -Ddebug=true -cp $(LIBS):release/Magarena.jar 
 SHELL=/bin/bash
 BUILD=build
-JOPTS=-Xlint:all -d $(BUILD) -cp $(BUILD):.
-SRC=$(shell find -iname *.java) 
+JOPTS=-Xlint:all -d $(BUILD) -cp $(LIBS):$(BUILD):.
+SRC=$(shell find src -iname *.java) 
 MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
 
@@ -92,7 +93,7 @@ jar: $(MAG)
 	$(JAVA) -jar $^
 
 %.g: $(MAG)
-	$(JAVA) -DrndSeed=$* -jar $^ |& tee $*.log
+	$(JAVA) -DrndSeed=$* magic.MagicMain |& tee $*.log
 
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
