@@ -80,12 +80,12 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 		return null;
 	}	
 	
-	public boolean hasActivationOnTop(final MagicSource source,final MagicActivation activation) {
+	public boolean hasActivationOnTop(final MagicSource source,final long actId) {
 		if (isEmpty()) {
 			return false;
 		}		
 		final MagicItemOnStack itemOnStack=getFirst();
-		return itemOnStack.getSource()==source&&itemOnStack.getActivation()==activation;		
+		return itemOnStack.getSource()==source && itemOnStack.getActivation().getId() == actId;		
 	}
 	
 	public boolean hasItemOnTopOfPlayer(final MagicPlayer player) {
