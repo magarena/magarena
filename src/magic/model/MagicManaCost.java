@@ -174,6 +174,11 @@ public class MagicManaCost {
 		return costText;
 	}
 	
+    @Override
+    public String toString() {
+		return costText;
+	}
+	
 	public boolean hasX() {
 		return hasX;
 	}
