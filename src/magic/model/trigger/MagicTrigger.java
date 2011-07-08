@@ -14,16 +14,16 @@ public abstract class MagicTrigger implements MagicEventAction {
 	
 	private final MagicTriggerType type;
 	private final int priority;
-	private MagicCardDefinition card;
+	private int cardIndex;
 
-	private MagicTrigger(final MagicTriggerType type,final MagicCardDefinition card,final int priority) {
+	private MagicTrigger(final MagicTriggerType type,final int cardIndex,final int priority) {
 		this.type=type;
-		this.card=card;
+		this.cardIndex=cardIndex;
 		this.priority=priority;
 	}
 	
 	public MagicTrigger(final MagicTriggerType type,final String name,final int priority) {
-		this(type,CardDefinitions.getInstance().getCard(name),priority);
+		this(type,CardDefinitions.getInstance().getCard(name).getIndex(),priority);
 	}
 	
 	public MagicTrigger(final MagicTriggerType type,final String name) {
@@ -31,15 +31,15 @@ public abstract class MagicTrigger implements MagicEventAction {
 	}
 	
 	public MagicTrigger(final MagicTriggerType type) {
-		this(type,(MagicCardDefinition)null,DEFAULT_PRIORITY);
+		this(type,-1,DEFAULT_PRIORITY);
 	}
 
-    public void setCardDefinition(final MagicCardDefinition card) {
-        this.card = card;
+    public void setCardIndex(final int cardIndex) {
+        this.cardIndex = cardIndex;
     }
 	
 	public final MagicCardDefinition getCardDefinition() {
-		return card;
+		return CardDefinitions.getInstance().getCard(cardIndex);
 	}
 	
 	public final MagicTriggerType getType() {
