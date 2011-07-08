@@ -93,15 +93,12 @@ public class MagicManaCost {
 	private boolean hasX;
 	private String costText;
 	private List<ImageIcon> icons;
-	private final MagicCondition condition;
 	private MagicBuilderManaCost builderCost;
 	
 	private MagicManaCost(final String costText) {
-
 		this.costText=costText;
 		types=new MagicCostManaType[MagicCostManaType.NR_OF_TYPES];
 		amounts=new int[MagicCostManaType.NR_OF_TYPES];
-		condition=new MagicManaCostCondition(this);
 		hasX=false;
 		typeCount=0;
 		converted=0;
@@ -169,27 +166,22 @@ public class MagicManaCost {
 	}
 			
 	public void setText(final String costText) {
-		
 		this.costText=costText;
 	}
 	
 	public String getText() {
-
 		return costText;
 	}
 	
 	public boolean hasX() {
-		
 		return hasX;
 	}
 				
 	public MagicCondition getCondition() {
-		
-		return condition;
+        return new MagicManaCostCondition(this);
 	}
 	
 	public List<MagicCostManaType> getCostManaTypes(final int x) {
-		
 		final List<MagicCostManaType> costManaTypes=new ArrayList<MagicCostManaType>();
 		int colorless=x;
 
