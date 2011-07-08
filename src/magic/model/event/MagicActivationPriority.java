@@ -3,7 +3,7 @@ package magic.model.event;
 public class MagicActivationPriority {
 
 	private int priority;
-	private int activationId;
+	private long activationId;
 	
 	public MagicActivationPriority() {
 		clear();
@@ -23,7 +23,7 @@ public class MagicActivationPriority {
         return priority;
     }
 
-    public int getActivationId() {
+    public long getActivationId() {
         return activationId;
     }
 
@@ -35,7 +35,7 @@ public class MagicActivationPriority {
         priority = pri;
     }
 
-    public void setActivationId(final int id) {
+    public void setActivationId(final long id) {
         activationId = id;
     }
 
