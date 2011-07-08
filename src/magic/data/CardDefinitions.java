@@ -57,7 +57,6 @@ public class CardDefinitions {
 		} else if ("type".equals(property)) {
 			final String names[]=value.split(",");
 			for (final String name : names) {
-				
 				card.addType(MagicType.getType(name));
 			}
 		} else if ("subtype".equals(property)) {
@@ -190,29 +189,35 @@ public class CardDefinitions {
 		filterCards();
 		printStatistics();
 		
-		// Tokens.
+		// add tokens.
 		addDefinitions(TokenCardDefinitions.TOKEN_CARDS);
 		addDefinition(MagicCardDefinition.EMPTY);
-		
-		System.err.println(getNumberOfCards()+" card definitions");
+
+		System.err.println(getNumberOfCards()+ " card definitions");
 	}
 	
 	public int getNumberOfCards() {
-		
 		return cards.size();
 	}
 	
+    public MagicCardDefinition getCard(final int cindex) {
+        if (cindex < 0 || cindex >= cards.size()) {
+			System.err.println("ERROR! No card definition found at " + cindex);
+            System.exit(1);
+        }
+        return cards.get(cindex);
+    }
+	
 	public MagicCardDefinition getCard(final String name) {
-		
 		final MagicCardDefinition cardDefinition=cardsMap.get(name);
-		if (cardDefinition==null) {
-			System.err.println("No card definition found for "+name);
+		if (cardDefinition == null) {
+			System.err.println("ERROR! No card definition found for " + name);
+            System.exit(1);
 		}
 		return cardDefinition;
 	}
 		
 	public MagicCardDefinition getBasicLand(final MagicColor color) {
-
 		if (MagicColor.Black.equals(color)) {
 			return getCard("Swamp");
 		} else if (MagicColor.Blue.equals(color)) {
@@ -228,7 +233,6 @@ public class CardDefinitions {
 	}
 
 	public List<MagicCardDefinition> getCards() {
-		
 		return cards;
 	}
 	
