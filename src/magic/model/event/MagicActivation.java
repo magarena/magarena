@@ -12,18 +12,18 @@ import magic.model.condition.MagicSingleActivationCondition;
 
 public abstract class MagicActivation implements MagicEventAction, Comparable<MagicActivation> {
 
-	private MagicCardDefinition cardDefinition;
+	private int cardIndex;
 	private final MagicCondition conditions[];
 	private final MagicTargetChoice targetChoice;
     private final String text;
 	protected final MagicActivationHints hints;
 	protected final int priority;
-	protected int id;
+	protected long id;
     private final int index;
 
 	/** Conditions can be null. */
 	public MagicActivation(
-            final MagicCardDefinition cardDefinition,
+            final int cardIndex,
             final int index,
             final MagicCondition conditions[],
             final MagicActivationHints hints,
@@ -32,21 +32,20 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 
         this.text = txt;
         this.index = index;
-        if (cardDefinition != null) {
-            this.cardDefinition=cardDefinition;
-            this.id=(cardDefinition.getIndex()<<16)+index;
-        }
+        this.cardIndex = cardIndex;
+        //this.id=(cardIndex << 16) +index;
+        this.id=Math.abs(magic.MurmurHash3.hash(new long[]{cardIndex, index}));
 		this.conditions=conditions;
 		this.targetChoice=getTargetChoice();
 		this.hints=hints;
 		this.priority=hints.getTiming().getPriority();
 		
-		// Sets the activation for the condition.
+		// set the activation for the single activation condition.
 		if (conditions!=null) {
 			for (final MagicCondition condition : conditions) {
 				if (condition instanceof MagicSingleActivationCondition) {
 					final MagicSingleActivationCondition singleCondition=(MagicSingleActivationCondition)condition;
-					singleCondition.setActivation(this);
+					singleCondition.setActivation(id);
 				}
 			}
 		}
@@ -65,12 +64,12 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     */
 		
 	public final MagicCardDefinition getCardDefinition() {
-		return cardDefinition;
+		return CardDefinitions.getInstance().getCard(cardIndex);
 	}
     
-    public void setCardDefinition(final MagicCardDefinition cdef) {
-        this.cardDefinition = cdef;
-        this.id = (cdef.getIndex() << 16) + index;
+    public void setCardIndex(final int cardIndex) {
+        this.cardIndex = cardIndex;
+        this.id = (cardIndex << 16) + index;
     }
 		
 	public final MagicCondition[] getConditions() {
@@ -81,7 +80,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 		return hints;
 	}
 	
-	public final int getId() {
+	public final long getId() {
 		return id;
 	}
 
@@ -139,7 +138,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	
 	@Override
 	public int compareTo(final MagicActivation other) {
-		return id-other.id;
+		return Long.signum(id-other.id);
 	}
 	
 	public abstract boolean usesStack();
