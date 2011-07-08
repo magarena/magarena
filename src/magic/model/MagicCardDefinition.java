@@ -79,8 +79,8 @@ public class MagicCardDefinition {
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
-	private MagicActivation cardActivation;
-	private MagicLocalVariable attachmentLocalVariable=new MagicAttachmentLocalVariable(this);
+    private MagicActivation cardActivation = null;
+    private MagicLocalVariable attachmentLocalVariable = null;
 	private final MagicLocalVariableList localVariables=new MagicLocalVariableList();
 	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicTrigger> comeIntoPlayTriggers=new ArrayList<MagicTrigger>();
@@ -90,38 +90,30 @@ public class MagicCardDefinition {
 	private boolean excludeManaOrCombat=false;
 	
 	public MagicCardDefinition(final String name,final String fullName) {
-		
 		this.name=name;
 		this.fullName=fullName;
 		initialize();
 	}
 	
 	public MagicCardDefinition(final String name) {
-		
 		this(name,name);
 	}
 	
-	protected void initialize() {
-		
-	}
+	protected void initialize() {}
 	
 	public String getName() {
-		
 		return name;
 	}
 	
 	public String getFullName() {
-		
 		return fullName;
 	}
 	
 	public void setIndex(final int index) {
-		
 		this.index=index;
 	}
 		
 	public int getIndex() {
-		
 		return index;
 	}
 		
@@ -144,27 +136,22 @@ public class MagicCardDefinition {
     }
 		
 	public void setValue(final int value) {
-		
 		this.value = value;
 	}
 
 	public int getValue() {
-
 		return value;
 	}
 	
 	public void setRemoval(final int removal) {
-		
 		this.removal=removal;
 	}
 	
 	public int getRemoval() {
-		
 		return removal;
 	}
 	
 	public int getScore() {
-		
 		if (score<0) {
 			score=ArtificialScoringSystem.getCardDefinitionScore(this);
 		}
@@ -180,7 +167,6 @@ public class MagicCardDefinition {
 	}
 	
 	public Color getRarityColor() {
-		
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		switch (getRarity()) {
 			case 2: return theme.getColor(Theme.COLOR_UNCOMMON_FOREGROUND);
@@ -191,12 +177,10 @@ public class MagicCardDefinition {
 	}
 				
 	public void setToken() {
-		
 		token=true;
 	}
 	
 	public boolean isToken() {
-		
 		return token;
 	}
 
@@ -208,7 +192,7 @@ public class MagicCardDefinition {
         if (obj instanceof MagicSpellCardEvent) {
             final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
             setCardEvent(cevent);
-            cevent.setCardDefinition(this);
+            cevent.setCardIndex(index);
             System.err.println("Adding spell card event to " + getFullName());
         } else if (obj instanceof MagicManaActivation) {
             final MagicManaActivation mact = (MagicManaActivation)obj;
@@ -217,12 +201,12 @@ public class MagicCardDefinition {
         } else if (obj instanceof MagicTrigger) {
             final MagicTrigger mtrig = (MagicTrigger)obj;
             addTrigger(mtrig);
-            mtrig.setCardDefinition(this);
+            mtrig.setCardIndex(index);
             System.err.println("Adding trigger to " + getFullName());
         } else if (obj instanceof MagicPermanentActivation) {
             final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
             addActivation(mact);
-            mact.setCardDefinition(this);
+            mact.setCardIndex(index);
             System.err.println("Adding permanent activation to " + getFullName());
         } else if (obj instanceof MagicChangeCardDefinition) {
             final MagicChangeCardDefinition chg = (MagicChangeCardDefinition)obj;
@@ -342,22 +326,18 @@ public class MagicCardDefinition {
 	}
 	
 	public MagicColoredType getColoredType() {
-		
 		return coloredType;
 	}
 		
 	public void setConvertedCost(final int convertedCost) {
-
 		this.convertedCost = convertedCost;
 	}
 	
 	public int getConvertedCost() {
-
 		return convertedCost;
 	}
 	
 	public int getCostBucket() {
-		
 		switch (convertedCost) {
 			case 0:
 			case 1:
@@ -372,17 +352,14 @@ public class MagicCardDefinition {
 	}
 	
 	public boolean hasX() {
-		
 		return cost.hasX();
 	}
 
 	public void setCost(final MagicManaCost cost) {
-		
 		this.cost=cost;
 	}
 
 	public MagicManaCost getCost() {
-	
 		return cost;
 	}
 	
@@ -399,7 +376,7 @@ public class MagicCardDefinition {
 	}
 		
 	public void setEquipCost(final MagicManaCost equipCost) {
-		addActivation(new MagicEquipActivation(this,equipCost));
+		addActivation(new MagicEquipActivation(index,equipCost));
 	}
 		
 	public void setManaSourceText(final String sourceText) {
@@ -493,6 +470,9 @@ public class MagicCardDefinition {
 	}
 				
 	public MagicLocalVariable getAttachmentLocalVariable() {
+        if (attachmentLocalVariable == null) {
+            attachmentLocalVariable = new MagicAttachmentLocalVariable(this);
+        }
 		return attachmentLocalVariable;
 	}
 	
@@ -521,9 +501,8 @@ public class MagicCardDefinition {
 	}
 	
 	public MagicActivation getCardActivation() {
-		
 		if (cardActivation==null) {
-			cardActivation=new MagicCardActivation(this);
+			cardActivation=new MagicCardActivation(index);
 		}
 		return cardActivation;
 	}
