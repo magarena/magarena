@@ -264,8 +264,8 @@ public class MCTSAI implements MagicAI {
                 assert curr.size() == choices.size() : "ERROR! Different number of choices in node and game" + 
                     printPath(path) + MCTSGameTree.printNode(curr, choices); 
 
-                MCTSGameTree next = curr.first();
-                double bestS = next.getUCT();
+                MCTSGameTree next = null;
+                double bestS = Double.NEGATIVE_INFINITY ;
                 for (MCTSGameTree child : curr) {
                     final double raw = child.getUCT();
                     final double S = child.modify(raw);
