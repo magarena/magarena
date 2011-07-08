@@ -5,21 +5,19 @@ import magic.model.MagicCardDefinition;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction {
 
-	private MagicCardDefinition card;
+	private int cardIndex;
     
-    public MagicSpellCardEvent() {
-	}
+    public MagicSpellCardEvent() {}
 
     public MagicSpellCardEvent(final String name) {
-	    card=CardDefinitions.getInstance().getCard(name);
+	    cardIndex = CardDefinitions.getInstance().getCard(name).getIndex();
 	}
 
-    public void setCardDefinition(final MagicCardDefinition card) {
-        this.card = card;
+    public void setCardIndex(final int cardIndex) {
+        this.cardIndex = cardIndex;
     }
 	
 	public final MagicCardDefinition getCardDefinition() {
-		
-		return card;
+		return CardDefinitions.getInstance().getCard(cardIndex);
 	}
 }
