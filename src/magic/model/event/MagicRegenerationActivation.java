@@ -11,16 +11,16 @@ import magic.model.condition.MagicSingleActivationCondition;
 
 public class MagicRegenerationActivation extends MagicPermanentActivation {
 
-	private static final MagicActivationHints ACTIVATION_HINTS=new MagicActivationHints(MagicTiming.Pump);
-	
+	private static final MagicActivationHints ACTIVATION_HINTS = new MagicActivationHints(MagicTiming.Pump);
 	private final MagicManaCost cost;
 	
 	public MagicRegenerationActivation(final String name,final MagicManaCost cost) {
 		super(
             name,
             new MagicCondition[]{
-                MagicCondition.CAN_REGENERATE_CONDITION,cost.getCondition(),
-                new MagicSingleActivationCondition()
+                MagicCondition.CAN_REGENERATE_CONDITION,
+                cost.getCondition(),
+                new MagicSingleActivationCondition(),
             },
             ACTIVATION_HINTS, 
             "Regen");
