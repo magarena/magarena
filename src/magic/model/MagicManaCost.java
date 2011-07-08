@@ -17,6 +17,7 @@ import magic.model.condition.MagicManaCostCondition;
 public class MagicManaCost {
 
 	private static final Map<String,MagicManaCost> COSTS_MAP=new HashMap<String,MagicManaCost>();
+	private static final Map<String,MagicCondition> CONDS_MAP=new HashMap<String,MagicCondition>();
 
 	private static final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d/]+\\})(?:\\{.+)?");
 
@@ -178,7 +179,12 @@ public class MagicManaCost {
 	}
 				
 	public MagicCondition getCondition() {
-        return new MagicManaCostCondition(this);
+		MagicCondition cond = CONDS_MAP.get(costText);
+        if (cond == null) {
+            cond = new MagicManaCostCondition(this);
+            CONDS_MAP.put(costText, cond);
+        }
+        return cond;
 	}
 	
 	public List<MagicCostManaType> getCostManaTypes(final int x) {
