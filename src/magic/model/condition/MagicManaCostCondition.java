@@ -13,13 +13,11 @@ public class MagicManaCostCondition implements MagicCondition {
 	private final MagicManaCost cost;
 	
 	public MagicManaCostCondition(final MagicManaCost cost) {
-		
 		this.cost=cost;
 	}
 
 	@Override
 	public boolean accept(final MagicGame game,final MagicSource source) {
-
 		final MagicPlayer player=source.getController();
 		final MagicBuilderManaCost builderCost;
 		if (player.getBuilderCost().isEmpty()) {
