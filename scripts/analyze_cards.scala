@@ -43,7 +43,10 @@ for (card <- src \ "card") {
 
 def isScriptable(name:String, rule:String):Boolean = {
     //normalize the rule text
-    val norm = rule.trim.replace(name, "@")
+
+    //replace name with @
+    //remove cost
+    val norm = rule.trim.replace(name, "@").replaceAll("^[^\\\"]*: ", "")
 
     //check if this is in the engine
     if (effects.exists(x => x.equalsIgnoreCase(norm))) {
