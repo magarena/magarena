@@ -52,60 +52,31 @@ battle cry
 infect
 living weapon
 
-Deathtouch, lifelink
-Defender, flying
-Defender, flying, first strike
-Defender, haste
-Defender; reach
-Defender, trample
-Flying, deathtouch
-Flying, first strike
-Flying, first strike, haste
-Flying, first strike, lifelink, protection from Demons and from Dragons
-Flying, first strike, vigilance
-Flying, first strike, vigilance, lifelink, protection from red and from green
-Flying, first strike, vigilance, trample, haste, protection from black and from red
-Flying, haste
-Flying, double strike
-Flying; fear
-Flying, trample
-Flying, vigilance
-Flying, protection from red
-Flying, protection from black
-Flying, protection from green
-Flying, protection from blue
-Flying, protection from white
-First strike, haste
-First strike, protection from red
-First strike, vigilance
-
-Trample, haste
-Trample, infect
-Trample, protection from blue and from red
-Trample; shroud
-
 ### */* ###
 @'s power and toughness are each equal to the number of cards in your hand.
 @'s power and toughness are each equal to the number of cards in all graveyards.
 
 ### mana activations ###
-{T}: Add {G} to your mana pool.
-{T}: Add {B} to your mana pool.
-{T}: Add {R} to your mana pool.
-{T}: Add {U} to your mana pool.
-{T}: Add {W} to your mana pool.
-{T}: Add {1} to your mana pool.
-{T}: Add one mana of any color to your mana pool.
-{T}: Add {B} or {R} to your mana pool.
-{T}: Add {G} or {W} to your mana pool.
-{T}: Add {R} or {G} to your mana pool.
-{T}: Add {U} or {B} to your mana pool.
-{T}: Add {W} or {U} to your mana pool.
-{T}, Sacrifice @: Add one mana of any color to your mana pool.
+Add {1} to your mana pool.
+Add {G} to your mana pool.
+Add {B} to your mana pool.
+Add {R} to your mana pool.
+Add {U} to your mana pool.
+Add {W} to your mana pool.
+Add {1} to your mana pool.
+Add {B} or {R} to your mana pool.
+Add {G} or {W} to your mana pool.
+Add {R} or {G} to your mana pool.
+Add {U} or {B} to your mana pool.
+Add {W} or {U} to your mana pool.
+Add one mana of any color to your mana pool.
 
 ### counters ###
-{T}: Put a charge counter on @.
-{T}: Put a storage counter on @.
+Put a charge counter on @.
+Put a storage counter on @.
+Put a -1/-1 counter on target creature.
+Put a +1/+1 counter on target creature.
+Put a +1/+1 counter on @.
 
 ### enters the battlefield triggers ###
 @ enters the battlefield tapped.
@@ -134,6 +105,7 @@ When @ enters the battlefield, return a land you control to its owner's hand.
 When @ enters the battlefield, destroy target enchantment.
 
 As @ enters the battlefield, you may pay 2 life. If you don't, @ enters the battlefield tapped.
+As @ enters the battlefield, choose an opponent.
 
 ### combat triggers ###
 Whenever @ attacks, it gets +2/+0 until end of turn.
@@ -150,6 +122,7 @@ Enchant creature you control
 Enchant land
 Enchant artifact
 Enchant artifact or creature
+Enchant enchantment
 Enchant permanent
 
 Enchanted creature gets +1/+1.
@@ -159,6 +132,10 @@ Enchanted creature gets +2/-1.
 Enchanted creature gets +2/-2.
 Enchanted creature gets +2/+2 and has flying.
 Enchanted creature gets -3/-0.
+Enchanted creature gets +0/+2.
+Enchanted creature gets +1/+2.
+Enchanted creature has first strike.
+Enchanted creature has shroud.
 Enchanted creature has flying.
 Enchanted creature has fear.
 Enchanted creature has infect.
@@ -169,8 +146,10 @@ Enchanted creature can't attack or block, and its activated abilities can't be a
 Enchanted creature doesn't untap during its controller's untap step.
 
 ### affect the player ###
+You gain 1 life.
 Draw a card.
 Target player discards a card.
+Target player loses 1 life.
 Skip your draw step.
 You have no maximum hand size.
 Creatures you control get +1/+1 until end of turn.
@@ -188,7 +167,9 @@ Target creature gets +2/+2 until end of turn.
 Target creature gets +3/+3 until end of turn.
 Target creature gets +4/+4 until end of turn.
 Return target permanent to its owner's hand.
+Return @ to its owner's hand.
 Return target creature card from your graveyard to your hand.
+Return target creature to its owner's hand.
 Destroy target enchantment.
 Destroy all enchantments.
 Destroy target artifact.
@@ -196,10 +177,15 @@ Destroy target land.
 Destroy target artifact or land.
 Destroy target artifact or enchantment.
 Exile target attacking creature.
+Exile target card from a graveyard.
 You control enchanted creature.
 @ deals 1 damage to target creature or player.
 @ deals 2 damage to target creature or player.
 @ deals 3 damage to target creature or player.
+@ deals 2 damage to target attacking or blocking creature.
+@ deals 1 damage to target player.
+@ deals 1 damage to target attacking or blocking creature.
+@ deals 1 damage to each creature without flying.
 @ doesn't untap during your untap step.
 @ can block only creatures with flying.
 @ can't attack unless defending player controls an Island.
@@ -208,25 +194,75 @@ You control enchanted creature.
 At the beginning of the end step, sacrifice @.
 Landfall — Whenever a land enters the battlefield under your control, @ gets +2/+2 until end of turn.
 Metalcraft — @ gets +2/+2 as long as you control three or more artifacts.
+@ is unblockable as long as defending player controls an artifact.
+Untap @.
 
 ### unimplemented abilities ###
 Shadow
 Protection from artifacts
+As an additional cost to cast @, sacrifice a creature.
+At the beginning of your upkeep, put a spore counter on @.
+At the beginning of your upkeep, you may put a verse counter on @.
+When @ becomes the target of a spell or ability, sacrifice it.
+
 
 ### misc ###
-{T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
-{T}: Prevent the next 2 damage that would be dealt to target creature or player this turn.
-{W}, {T}: Tap target creature.
-{R}: @ gets +1/+0 until end of turn.
-{T}: @ deals 1 damage to target creature or player.
-{B}: @ gets +1/+1 until end of turn.
-{1}{B}: @ gets +1/+1 until end of turn.
-{1}{R}: @ gets +1/+0 until end of turn.
-{B}: Regenerate @.
-{1}{B}: Regenerate @.
-{G}: Regenerate @.
-{1}{G}: Regenerate @.
-{W}: @ gets +0/+1 until end of turn.
-{2}, Remove a +1/+1 counter from @: Put a +1/+1 counter on target creature.
-{R}: @ gets +1/-1 until end of turn.
-{U}: @ gains flying until end of turn.
+Regenerate @.
+Regenerate target creature.
+Regenerate enchanted creature.
+Prevent the next 1 damage that would be dealt to target creature or player this turn.
+Prevent the next 2 damage that would be dealt to target creature or player this turn.
+Tap target creature.
+@ gets +1/+0 until end of turn.
+@ gets +0/+1 until end of turn.
+@ gets +1/+1 until end of turn.
+@ gets +2/+2 until end of turn.
+Target creature gets +1/+1 until end of turn.
+Target creature gets -1/-1 until end of turn.
+@ gets +1/-1 until end of turn.
+@ gains flying until end of turn.
+@ gains first strike until end of turn.
+Target creature gains first strike until end of turn.
+Target creature is unblockable this turn.
+Target creature gets -2/-2 until end of turn.
+Target creature gets +2/+0 until end of turn.
+Target creature gets -2/-0 until end of turn.
+@ deals 1 damage to target creature or player.
+@ deals 1 damage to each creature and each player.
+@ deals X damage to target creature or player.
+@ gains shroud until end of turn.
+Return target creature card from your graveyard to the battlefield.
+Target creature gains haste until end of turn.
+You gain 3 life.
+Destroy target nonblack creature.
+Draw a card, then discard a card.
+Put a 1/1 green Saproling creature token onto the battlefield.
+@ gains haste until end of turn.
+Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on @.
+Prevent the next 1 damage that would be dealt to target creature this turn.
+Prevent the next 3 damage that would be dealt to target creature or player this turn.
+Switch @'s power and toughness until end of turn.
+Take an extra turn after this one.
+Target creature gets +1/+0 until end of turn.
+Target player discards two cards.
+Target player loses 1 life and you gain 1 life.
+Target player puts the top card of his or her library into his or her graveyard.
+Target player puts the top two cards of his or her library into his or her graveyard.
+Untap target land.
+When @ enters the battlefield, you gain 2 life.
+You gain 2 life.
+You gain 4 life.
+You gain 5 life.
+@ deals 2 damage to target creature.
+@ deals 4 damage to target creature.
+@ deals 4 damage to target creature or player.
+Destroy target nonblack creature. It can't be regenerated.
+If damage would be dealt to @, prevent that damage. Remove a +1/+1 counter from @.
+Return target artifact card from your graveyard to your hand.
+Target creature with power 2 or less is unblockable this turn.
+When @ is put into a graveyard from the battlefield, return @ to its owner's hand.
+Destroy target nonbasic land.
+Enchanted creature gets +1/+0 until end of turn.
+@ gains trample until end of turn.
+Switch target creature's power and toughness until end of turn.
+Target creature can't block this turn.
