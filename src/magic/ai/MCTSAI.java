@@ -307,10 +307,13 @@ public class MCTSAI implements MagicAI {
         final int actions = game.getNumActions() - startActions;
 
         if (game.getLosingPlayer() == null) {
+            //System.err.println("DRAW");
             return 0.5;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
+            //System.err.println("LOSE");
             return actions/(2.0 * MAX_ACTIONS);
         } else {
+            //System.err.println("WIN");
             return 1.0 - actions/(2.0 * MAX_ACTIONS);
         }
     }
@@ -318,7 +321,7 @@ public class MCTSAI implements MagicAI {
     private List<Object[]> getNextChoices(
             final MagicGame game, 
             final boolean sim) {
-        
+        final int MIN_SCORE = 5000;
         final int startActions = game.getNumActions();
 
         //use fast choices during simulation
@@ -327,8 +330,11 @@ public class MCTSAI implements MagicAI {
         // simulate game until it is finished or simulated MAX_ACTIONS actions
         while (!game.isFinished() && 
                (game.getNumActions() - startActions) < MAX_ACTIONS) {
-            //do not accumulate score down the tree
-            game.setScore(0);
+
+            //do not accumulate score down the tree when not in simulation
+            if (!sim) {
+                game.setScore(0);
+            }
 
             if (!game.hasNextEvent()) {
                 game.getPhase().executePhase(game);
@@ -350,6 +356,16 @@ public class MCTSAI implements MagicAI {
                 final Object[] choice = event.getSimulationChoiceResult(game);
                 assert choice != null : "ERROR! No choice found during MCTS sim";
                 game.executeNextEvent(choice);
+                
+                //System.err.print(game.getScore() + "\t");
+
+                //terminate early if score > MIN_SCORE or score < -MIN_SCORE
+                if (game.getScore() < -MIN_SCORE) {
+                    game.setLosingPlayer(game.getScorePlayer());
+                }
+                if (game.getScore() > MIN_SCORE) {
+                    game.setLosingPlayer(game.getOpponent(game.getScorePlayer()));
+                }
             } else {
                 //get list of possible AI choices
                 List<Object[]> choices = null;
@@ -582,12 +598,8 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         //if child has sufficient simulations, backup using robust max instead of average
         if (child != null && child.getNumSim() > maxChildSim) {
             maxChildSim = child.getNumSim();
-            if (isAI && child.getAvg() > getAvg()) {
-                sum = child.getAvg() * numSim;
-            }
-            if (!isAI && child.getAvg() < getAvg()) {
-                sum = child.getAvg() * numSim;
-            }
+            sum = child.sum;
+            numSim = child.numSim;
         }
     }
     
