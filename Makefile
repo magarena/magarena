@@ -33,10 +33,10 @@ cards/standard_all.txt:
 cards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 
-cards/existing_full.txt: newcards/existing.txt data/mtg-data.txt
+cards/existing_full.txt: newcards/existing.txt cards/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
-cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt data/mtg-data.txt
+cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt cards/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
 %.out: $(MAG)
@@ -152,5 +152,5 @@ daily: $(EXE)
 	mv $^ Magarena_`hg id -n`.exe
 	scripts/googlecode_upload.py -s "build `hg id -n`" -p magarena -u melvinzhang@gmail.com Magarena_*.exe
 
-cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt data/cards.xml
+cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
 	scala $^ > $@ 2> cards/others.txt
