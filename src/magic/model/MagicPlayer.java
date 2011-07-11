@@ -266,7 +266,9 @@ public class MagicPlayer implements MagicTarget {
 			library.add(new MagicCard(cardDefinition,this,id));
 		}
 
+        //library order depends on player index, game no, random seed
         final long[] keys = {
+            index,
             MagicGame.num_games,
             (System.getProperty("rndSeed") != null) ? 
                 Long.parseLong(System.getProperty("rndSeed")) : 
