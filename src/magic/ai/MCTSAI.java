@@ -51,7 +51,11 @@ Monte-Carlo Tree Search in Lines of Action
 */
 public class MCTSAI implements MagicAI {
     
-    private static final int MAX_ACTIONS = 10000;
+    static final int MAX_ACTIONS = 10000;
+    static int MIN_SCORE = 5000;
+    static int MIN_SIM = 100;
+    static double UCB1_C = 1.41421;
+    static double RATIO_K = 1.0;
 
     private final boolean LOGGING;
     private final boolean CHEAT;
@@ -70,6 +74,26 @@ public class MCTSAI implements MagicAI {
     public MCTSAI(final boolean log, final boolean cheat) {
         LOGGING = log || (System.getProperty("debug") != null);
         CHEAT = cheat;
+
+        if (System.getProperty("min_sim") != null) {
+            MIN_SIM = Integer.parseInt(System.getProperty("min_sim"));
+            log("MIN_SIM = " + MIN_SIM);
+        }
+
+        if (System.getProperty("min_score") != null) {
+            MIN_SCORE = Integer.parseInt(System.getProperty("min_score"));
+            log("MIN_SCORE = " + MIN_SCORE);
+        }
+        
+        if (System.getProperty("ucb1_c") != null) {
+            UCB1_C = Double.parseDouble(System.getProperty("ucb1_c"));
+            log("UCB1_C = " + UCB1_C);
+        }
+        
+        if (System.getProperty("ratio_k") != null) {
+            RATIO_K = Double.parseDouble(System.getProperty("ratio_k"));
+            log("RATIO_K = " + RATIO_K);
+        }
     }
 
     private void log(final String message) {
@@ -321,7 +345,8 @@ public class MCTSAI implements MagicAI {
     private List<Object[]> getNextChoices(
             final MagicGame game, 
             final boolean sim) {
-        final int MIN_SCORE = 5000;
+        
+
         final int startActions = game.getNumActions();
 
         //use fast choices during simulation
@@ -423,7 +448,6 @@ public class MCTSAI implements MagicAI {
         log(sb.toString());
         return true;
     }
-
 }
 
 //each tree node stores the choice from the parent that leads to this node
@@ -445,7 +469,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     public String[] choicesStr;
     
     //min sim for using robust max
-    private int maxChildSim = 100;     
+    private int maxChildSim = MCTSAI.MIN_SIM;     
     
     public MCTSGameTree(final MCTSGameTree parent, final int choice, final int evalScore) { 
         this.evalScore = evalScore;
@@ -604,13 +628,11 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
     
     public double getUCT() {
-        final double C = 1.41421;
-        return getV() + C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
+        return getV() + MCTSAI.UCB1_C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
     }
     
     public double getRatio() {
-        final double K = 1.0;
-        return (getSum() + K)/(getNumSim() + 2*K);
+        return (getSum() + MCTSAI.RATIO_K)/(getNumSim() + 2*MCTSAI.RATIO_K);
     }
 
     public double getNormal() {
