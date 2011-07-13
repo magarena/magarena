@@ -122,7 +122,10 @@ public class MMAB implements MagicAI {
 
 		// Logging.
 		final long time_taken = System.currentTimeMillis() - start_time;
-		log("MMAB time=" + time_taken + 
+		log("MMAB" + 
+                " index=" + scorePlayer.getIndex() +
+                " life=" + scorePlayer.getLife() +
+                " time=" + time_taken + 
                 " workers=" + workerSize + 
                 " main=" + mainPhases);
 		for (final ArtificialChoiceResults achoice : achoices) {

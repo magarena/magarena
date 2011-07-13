@@ -216,7 +216,8 @@ public class MCTSAI implements MagicAI {
         final StringBuffer out = new StringBuffer();
         final long duration = System.currentTimeMillis() - START_TIME;
 
-        out.append("MCTS index=" + scorePlayer.getIndex() + 
+        out.append("MCTS" +
+                       " index=" + scorePlayer.getIndex() + 
                        " life=" + scorePlayer.getLife() +
                        " time=" + duration + 
                        " sims=" + sims);
