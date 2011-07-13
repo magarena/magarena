@@ -338,10 +338,10 @@ public class GameController {
 
 	private synchronized void executeNextEventWithChoices(final MagicEvent event) {
 		final Object[] choiceResults;
-		if (testMode||event.getPlayer().getPlayerDefinition().isArtificial()) {
-			choiceResults=getArtificialNextEventChoiceResults(event);
+		if (testMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
+			choiceResults = getArtificialNextEventChoiceResults(event);
 		} else {
-			choiceResults=getPlayerNextEventChoiceResults(event);
+			choiceResults = getPlayerNextEventChoiceResults(event);
 			if (gameConceded) {
 				return;
 			}
