@@ -113,7 +113,6 @@ public class MCTSAI implements MagicAI {
         choiceGame = null;
 
         final int size = RCHOICES.size();
-        final String pinfo = "MCTS " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
         
         // No choice
         assert size > 0 : "ERROR! No choice found at start of MCTS";
@@ -199,43 +198,56 @@ public class MCTSAI implements MagicAI {
                 bestC = C;
             }
         }
-        final Object[] selected = RCHOICES.get(bestC); 
 
-        if (LOGGING) {
-            final long duration = System.currentTimeMillis() - START_TIME;
-            log("MCTS:\ttime: " + duration + 
-                     "\tsims: " + (root.getNumSim() - sims) + "+" + sims);
-            log(pinfo);
-            for (MCTSGameTree node : root) {
-                final StringBuffer out = new StringBuffer();
-                if (node.getChoice() == bestC) {
-                    out.append("* ");
-                } else {
-                    out.append("  ");
-                }
-                out.append('[');
-                out.append((int)(node.getV() * 100));
-                out.append('/');
-                out.append(node.getNumSim());
-                out.append('/');
-                if (node.isAIWin()) {
-                    out.append("win");
-                    out.append(':');
-                    out.append(node.getSteps());
-                } else if (node.isAILose()) {
-                    out.append("lose");
-                    out.append(':');
-                    out.append(node.getSteps());
-                } else {
-                    out.append("?");
-                }
-                out.append(']');
-                out.append(CR2String(RCHOICES.get(node.getChoice())));
-                log(out.toString());
+        log(outputChoice(scorePlayer, root, START_TIME, bestC, sims));
+
+        return startGame.map(RCHOICES.get(bestC));
+    }
+        
+    private String outputChoice(
+            final MagicPlayer scorePlayer,
+            final MCTSGameTree root, 
+            final long START_TIME, 
+            final int bestC, 
+            final int sims) {
+            
+        final StringBuffer out = new StringBuffer();
+        final long duration = System.currentTimeMillis() - START_TIME;
+
+        out.append("MCTS\tindex=" + scorePlayer.getIndex() + 
+                       "\tlife=" + scorePlayer.getLife());
+        out.append('\n');
+        out.append("MCTS\ttime=" + duration + 
+                       "\tsims=" + (root.getNumSim() - sims) + "+" + sims);
+        out.append('\n');
+
+        for (MCTSGameTree node : root) {
+            if (node.getChoice() == bestC) {
+                out.append("* ");
+            } else {
+                out.append("  ");
             }
+            out.append('[');
+            out.append((int)(node.getV() * 100));
+            out.append('/');
+            out.append(node.getNumSim());
+            out.append('/');
+            if (node.isAIWin()) {
+                out.append("win");
+                out.append(':');
+                out.append(node.getSteps());
+            } else if (node.isAILose()) {
+                out.append("lose");
+                out.append(':');
+                out.append(node.getSteps());
+            } else {
+                out.append("?");
+            }
+            out.append(']');
+            out.append(CR2String(RCHOICES.get(node.getChoice())));
+            out.append('\n');
         }
-
-        return startGame.map(selected);
+        return out.toString();
     }
 
     private LinkedList<MCTSGameTree> growTree(final MCTSGameTree root, final MagicGame game) {
@@ -328,16 +340,13 @@ public class MCTSAI implements MagicAI {
 
         final int startActions = game.getNumActions();
         getNextChoices(game, true);
-        final int actions = game.getNumActions() - startActions;
+        final int actions = Math.min(MAX_ACTIONS, game.getNumActions() - startActions);
 
         if (game.getLosingPlayer() == null) {
-            //System.err.println("DRAW");
             return 0.5;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            //System.err.println("LOSE");
             return actions/(2.0 * MAX_ACTIONS);
         } else {
-            //System.err.println("WIN");
             return 1.0 - actions/(2.0 * MAX_ACTIONS);
         }
     }
@@ -381,8 +390,6 @@ public class MCTSAI implements MagicAI {
                 final Object[] choice = event.getSimulationChoiceResult(game);
                 assert choice != null : "ERROR! No choice found during MCTS sim";
                 game.executeNextEvent(choice);
-                
-                //System.err.print(game.getScore() + "\t");
 
                 //terminate early if score > MIN_SCORE or score < -MIN_SCORE
                 if (game.getScore() < -MIN_SCORE) {
