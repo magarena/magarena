@@ -287,7 +287,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	public void showTournament() {
-
 		gamePanel=null;
 		if (tournament!=null) {
 			final TournamentPanel newTournamentPanel=new TournamentPanel(this,tournament);
@@ -395,27 +394,23 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	public void resetGame() {
-		
 		if (gamePanel!=null) {
 			gamePanel.getController().resetGame();
 		}
 	}
 	
 	public void concedeGame() {
-		
 		if (gamePanel!=null) {
 			gamePanel.getController().concede();
 		}
 	}
 		
 	public void nextGame() {
-
 		tournament.updateDifficulty();
 		openGame(tournament.nextGame(true));
 	}
 	
 	private void openGame(final MagicGame game) {
-
 		final ZoneBackgroundLabel backgroundLabel=new ZoneBackgroundLabel();
 		backgroundLabel.setGame(true);
 		gamePanel=new GamePanel(this,game,backgroundLabel);

@@ -3,6 +3,7 @@ package magic;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import javax.swing.SwingUtilities;
 
 import magic.data.CardDefinitions;
 import magic.data.CardEventDefinitions;
@@ -37,7 +38,11 @@ public class MagicMain {
 	
 	public static void main(String args[]) throws IOException {		
 		initialize();
-        new MagicFrame();
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new MagicFrame();
+            }
+        });
 	}	
 
 	public static String getGamePath() {
