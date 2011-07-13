@@ -10,35 +10,29 @@ public final class DelayedViewersThread extends Thread {
 	private final Map<DelayedViewer,Long> delayedViewers;
 	
 	private DelayedViewersThread() {
-
 		delayedViewers=new HashMap<DelayedViewer,Long>();
 		start();
 	}
 	
 	public synchronized void showViewer(final DelayedViewer delayedViewer,final int delay) {
-		
 		delayedViewers.put(delayedViewer,System.currentTimeMillis()+delay);
 		notify();
 	}
 	
 	public synchronized void hideViewer(final DelayedViewer delayedViewer) {
-
 		delayedViewers.remove(delayedViewer);
 		delayedViewer.hideDelayed();
 	}
 	
 	@Override
 	public synchronized void run() {
-
 		while (true) {
-			
 			try {
 				if (delayedViewers.isEmpty()) {
 					wait();
 				}
 				final long time=System.currentTimeMillis();
 				for (final DelayedViewer delayedViewer : delayedViewers.keySet()) {
-					
 					final long delayedTime=delayedViewers.get(delayedViewer);
 					if (delayedTime<=time) {
 						delayedViewer.showDelayed();
@@ -53,7 +47,6 @@ public final class DelayedViewersThread extends Thread {
 	}
 
 	public static DelayedViewersThread getInstance() {
-		
 		return VIEWER_THREAD;
 	}
 }

@@ -113,13 +113,11 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 
 				@Override
 				public void mouseEntered(final MouseEvent e) {
-					
 					DelayedViewersThread.getInstance().showViewer(ImageViewer.this,DELAY);
 				}
 
 				@Override
 				public void mouseExited(final MouseEvent e) {
-
 					DelayedViewersThread.getInstance().hideViewer(ImageViewer.this);
 				}				
 
