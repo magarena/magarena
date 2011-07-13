@@ -16,8 +16,11 @@ public class MMAB implements MagicAI {
 	private static final int MAX_DEPTH=120;
 	private static final int MAX_GAMES=12000;
 
-	private final int THREADS=getNrOfThreads();
-	private final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
+    // maximum of 4 artificial worker threads.
+	private final int THREADS = Math.min(4,Runtime.getRuntime().availableProcessors());
+	
+    // list of workers
+    private final LinkedList<ArtificialWorker> workers = new LinkedList<ArtificialWorker>();
     
     private final boolean LOGGING;
     private final boolean CHEAT;
@@ -39,13 +42,6 @@ public class MMAB implements MagicAI {
 		if (LOGGING) {
 			System.err.println(message);
 		}
-	}
-	
-	private final int getNrOfThreads() {
-		// maximum of 4 artificial worker threads.
-		final int threads=Math.min(4,Runtime.getRuntime().availableProcessors()); 
-		log(threads+" AI worker threads.");
-		return threads;
 	}
 	
 	private ArtificialPruneScore createPruneScore() {
@@ -126,7 +122,9 @@ public class MMAB implements MagicAI {
 
 		// Logging.
 		final long time_taken = System.currentTimeMillis() - start_time;
-		log("Time : " + time_taken + "  Workers : " + workerSize + "  Main : " + mainPhases);
+		log("MMAB time=" + time_taken + 
+                " workers=" + workerSize + 
+                " main=" + mainPhases);
 		for (final ArtificialChoiceResults achoice : achoices) {
 			log((achoice == bestAchoice ? "* " : "  ") + achoice);
 		}
