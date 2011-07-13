@@ -135,6 +135,8 @@ public class MCTSAI implements MagicAI {
         //root represents the start state
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, RCHOICES);
 
+        log("MCTS cached=" + root.getNumSim());
+
         //end simulations once root is AI win or time is up
         int sims;
         for (sims = 0;
@@ -214,11 +216,10 @@ public class MCTSAI implements MagicAI {
         final StringBuffer out = new StringBuffer();
         final long duration = System.currentTimeMillis() - START_TIME;
 
-        out.append("MCTS\tindex=" + scorePlayer.getIndex() + 
-                       "\tlife=" + scorePlayer.getLife());
-        out.append('\n');
-        out.append("MCTS\ttime=" + duration + 
-                       "\tsims=" + (root.getNumSim() - sims) + "+" + sims);
+        out.append("MCTS index=" + scorePlayer.getIndex() + 
+                       " life=" + scorePlayer.getLife() +
+                       " time=" + duration + 
+                       " sims=" + sims);
         out.append('\n');
 
         for (MCTSGameTree node : root) {
@@ -247,7 +248,7 @@ public class MCTSAI implements MagicAI {
             out.append(CR2String(RCHOICES.get(node.getChoice())));
             out.append('\n');
         }
-        return out.toString();
+        return out.toString().trim();
     }
 
     private LinkedList<MCTSGameTree> growTree(final MCTSGameTree root, final MagicGame game) {
