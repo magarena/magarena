@@ -250,9 +250,7 @@ public class GameController {
         try {
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
-                    
                     for (final ChoiceViewer choiceViewer : choiceViewers) {
-                        
                         choiceViewer.showValidChoices(validChoices);
                     }
                 }

@@ -15,18 +15,15 @@ public enum MagicAIImpl {
     private final MagicAI ai;
 
     private MagicAIImpl(final String name, final MagicAI ai) {
-    	
     	this.name=name;
         this.ai=ai;
     }
     
     public String getName() {
-    	
     	return name;
     }
 
     public MagicAI getAI() {
-    	
         return ai;        
     }
     
