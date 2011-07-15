@@ -44,8 +44,9 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int murkfiendLiege;
 	private static int platinumAngel; // You can't lose the game.
 	private static int razorjawOni;
-	private static int spiritOfTheHearth; // You can't be target of spells or abilities your opponent controls.
-	private static int tolsimirWolfblood;
+    // You can't be target of spells or abilities your opponent controls.
+	private static int spiritOfTheHearth; 
+    private static int tolsimirWolfblood;
 	private static int trueConviction;
 	private static int urabraskTheHidden;
 	private static int veteranArmorer;
