@@ -21,7 +21,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 		this.cardDefinition = cardDefinition;
 		this.owner = owner;
 		this.id = id;
-		imageIndex = Math.abs(hashCode());
+		imageIndex = Math.abs(hashCode() % 1000);
 	}
 		
 	private MagicCard() {}
