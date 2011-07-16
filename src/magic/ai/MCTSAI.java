@@ -57,6 +57,28 @@ public class MCTSAI implements MagicAI {
     static double UCB1_C = 1.41421;
     static double RATIO_K = 1.0;
 
+    static {
+        if (System.getProperty("min_sim") != null) {
+            MIN_SIM = Integer.parseInt(System.getProperty("min_sim"));
+            System.err.println("MIN_SIM = " + MIN_SIM);
+        }
+
+        if (System.getProperty("min_score") != null) {
+            MIN_SCORE = Integer.parseInt(System.getProperty("min_score"));
+            System.err.println("MIN_SCORE = " + MIN_SCORE);
+        }
+        
+        if (System.getProperty("ucb1_c") != null) {
+            UCB1_C = Double.parseDouble(System.getProperty("ucb1_c"));
+            System.err.println("UCB1_C = " + UCB1_C);
+        }
+        
+        if (System.getProperty("ratio_k") != null) {
+            RATIO_K = Double.parseDouble(System.getProperty("ratio_k"));
+            System.err.println("RATIO_K = " + RATIO_K);
+        }
+    }
+
     private final boolean LOGGING;
     private final boolean CHEAT;
 
@@ -74,26 +96,6 @@ public class MCTSAI implements MagicAI {
     public MCTSAI(final boolean log, final boolean cheat) {
         LOGGING = log || (System.getProperty("debug") != null);
         CHEAT = cheat;
-
-        if (System.getProperty("min_sim") != null) {
-            MIN_SIM = Integer.parseInt(System.getProperty("min_sim"));
-            log("MIN_SIM = " + MIN_SIM);
-        }
-
-        if (System.getProperty("min_score") != null) {
-            MIN_SCORE = Integer.parseInt(System.getProperty("min_score"));
-            log("MIN_SCORE = " + MIN_SCORE);
-        }
-        
-        if (System.getProperty("ucb1_c") != null) {
-            UCB1_C = Double.parseDouble(System.getProperty("ucb1_c"));
-            log("UCB1_C = " + UCB1_C);
-        }
-        
-        if (System.getProperty("ratio_k") != null) {
-            RATIO_K = Double.parseDouble(System.getProperty("ratio_k"));
-            log("RATIO_K = " + RATIO_K);
-        }
     }
 
     private void log(final String message) {
