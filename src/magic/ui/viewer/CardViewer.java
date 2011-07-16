@@ -87,13 +87,11 @@ public class CardViewer extends JPanel implements DelayedViewer {
 
 	@Override
 	public void showDelayed() {
-	
 		setVisible(true);
 	}
 	
 	@Override
 	public void hideDelayed() {
-
 		setVisible(false);
 	}
 }

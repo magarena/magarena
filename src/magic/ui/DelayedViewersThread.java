@@ -31,14 +31,16 @@ public final class DelayedViewersThread extends Thread {
 				if (delayedViewers.isEmpty()) {
 					wait();
 				}
-				final long time=System.currentTimeMillis();
+				final long time = System.currentTimeMillis();
 				for (final DelayedViewer delayedViewer : delayedViewers.keySet()) {
-					final long delayedTime=delayedViewers.get(delayedViewer);
-					if (delayedTime<=time) {
+					final long delayedTime = delayedViewers.get(delayedViewer);
+					if (delayedTime <= time) {
 						delayedViewer.showDelayed();
 						delayedViewers.remove(delayedViewer);
 					}
 				}
+
+                //wait for 100ms
 				wait(100);
 			} catch (final InterruptedException ex) {
 				System.err.println("Interrupted : "+ex.getMessage());

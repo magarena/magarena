@@ -51,7 +51,6 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	private int sy2;
 	
 	static {
-
 		final File imagePathFile=new File(MagicMain.getGamePath()+File.separator+"images");
 		imageIndices=new ArrayList<Integer>();
 		if (imagePathFile.exists()) {
@@ -64,9 +63,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	}
 	
 	private static void scanFiles(final List<File> imageFiles,final File imagePathFile) {
-		
 		for (final File file : imagePathFile.listFiles()) {
-			
 			if (file.isDirectory()) {
 				scanFiles(imageFiles,file);
 			} else {
@@ -76,7 +73,6 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	}
 	
 	private static synchronized File nextFile() {
-		
 		if (imageFiles.isEmpty()) {
 			return null;
 		}
@@ -91,7 +87,6 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	}
 	
 	public ImageViewer() {
-
 		setOpaque(false);
 		BufferedImage readImage=ThemeFactory.getInstance().getCurrentTheme().getLogoTexture();
 		try {
@@ -110,7 +105,6 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 			zoomY=imageHeight/ZOOM_FACTOR;
 			
 			final MouseAdapter mouseListener=new MouseAdapter() {
-
 				@Override
 				public void mouseEntered(final MouseEvent e) {
 					DelayedViewersThread.getInstance().showViewer(ImageViewer.this,DELAY);
@@ -123,7 +117,6 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 
 				@Override
 				public void mouseMoved(final MouseEvent e) {
-
 					final int y=e.getY();
 					if (y<=viewerHeight&&showScaled) {
 						final int x=e.getX();
@@ -158,14 +151,12 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	
 	@Override
 	public void showDelayed() {
-		
 		showScaled=true;
 		repaint();
 	}
 	
 	@Override
 	public void hideDelayed() {
-		
 		showScaled=false;
 		scaled=false;
 		repaint();
@@ -173,7 +164,6 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 
 	@Override
 	public void paint(final Graphics g) {
-
 		super.paint(g);
 		if (image!=null) {
 			if (scaled) {

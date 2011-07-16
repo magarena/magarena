@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
+import javax.swing.SwingWorker;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
@@ -62,7 +63,7 @@ public final class GamePanel extends JPanel {
 	private final LogBookViewer logBookViewer;
 	private final JToggleButton logBookButton;
 	private final JToggleButton textViewButton;
-	private final GameControllerThread thread;
+	//private final GameControllerThread thread;
 	private final StackCombatViewer stackCombatViewer;
 	private final HandGraveyardExileViewer handGraveyardViewer;
 	private final BattlefieldViewer playerPermanentViewer;
@@ -222,8 +223,22 @@ public final class GamePanel extends JPanel {
 		imageStackViewer.add(stackTitleBar,BorderLayout.SOUTH);
 		
 		updateView();
-		thread=new GameControllerThread(controller);
-		thread.start();
+
+        //start runGame in background using SwingWorker
+        final SwingWorker thread = new SwingWorker<Void, Void>(){
+            @Override
+            protected Void doInBackground() {
+                System.err.println("Starting game...");
+                controller.runGame();
+                System.err.println("Stopping game...");
+                return null;
+            }
+        };
+
+        thread.execute();
+
+		//thread=new GameControllerThread(controller);
+		//thread.start();
 	}
 	
 	public boolean canClickAction() {
