@@ -46,8 +46,8 @@ import magic.model.trigger.MagicTriggerType;
 
 public class MagicGame {
 
-    public static int num_games = 0;
-    public static MagicGame INSTANCE = null;
+    private static int num_games = 0;
+    private static MagicGame INSTANCE = null;
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
 	public static final int LOSING_POISON=10;
 	
@@ -92,6 +92,10 @@ public class MagicGame {
 
     public static MagicGame getInstance() {
         return INSTANCE;
+    }
+    
+    public static int getCount() {
+        return num_games;
     }
 
 	public MagicGame(
