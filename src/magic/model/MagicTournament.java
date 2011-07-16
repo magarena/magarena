@@ -179,7 +179,7 @@ public class MagicTournament {
 		final MagicPlayer start    = startPlayer == 0 ? player : opponent;
 
         //create game
-        final MagicGame game = new MagicGame(
+        final MagicGame game = MagicGame.create(
                 this,
                 MagicDefaultGameplay.getInstance(),
                 new MagicPlayer[]{player,opponent},
