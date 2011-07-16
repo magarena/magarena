@@ -46,7 +46,7 @@ import magic.model.trigger.MagicTriggerType;
 
 public class MagicGame {
 
-    private static int num_games = 0;
+    private static int COUNT = 0;
     private static MagicGame INSTANCE = null;
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
 	public static final int LOSING_POISON=10;
@@ -95,10 +95,21 @@ public class MagicGame {
     }
     
     public static int getCount() {
-        return num_games;
+        return COUNT;
     }
 
-	public MagicGame(
+    public static MagicGame create(
+            final MagicTournament tournament,
+            final MagicGameplay gameplay,
+            final MagicPlayer players[],
+            final MagicPlayer startPlayer,
+            final boolean sound) {
+        COUNT++;
+        INSTANCE = new MagicGame(tournament, gameplay, players, startPlayer, sound);
+        return INSTANCE;
+    }
+
+	private MagicGame(
             final MagicTournament tournament,
             final MagicGameplay gameplay,
             final MagicPlayer players[],
@@ -125,9 +136,6 @@ public class MagicGame {
 		logMessageBuilder=new MagicLogMessageBuilder(this);
 		payedCost=new MagicPayedCost();
 		changePhase(gameplay.getStartPhase(this));
-
-        num_games++;
-        INSTANCE = this;
 	}
 	
 	public MagicGame(final MagicGame game,final MagicPlayer scorePlayer) {
