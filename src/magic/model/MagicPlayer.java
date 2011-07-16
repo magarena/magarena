@@ -269,7 +269,7 @@ public class MagicPlayer implements MagicTarget {
         //library order depends on player index, game no, random seed
         final long[] keys = {
             2 * index - 1,
-            MagicGame.num_games,
+            MagicGame.getCount(),
             (System.getProperty("rndSeed") != null) ? 
                 Long.parseLong(System.getProperty("rndSeed")) : 
                 System.currentTimeMillis()
