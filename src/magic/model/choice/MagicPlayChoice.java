@@ -49,7 +49,6 @@ public class MagicPlayChoice extends MagicChoice {
         }
 		
 		final List<Object> options=new ArrayList<Object>();
-		final MagicActivationMap activationMap=player.getActivationMap();
 
 		// Pass is first choice when scores are equal.
 		options.add(MagicPlayChoiceResult.PASS);
