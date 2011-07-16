@@ -68,8 +68,16 @@ public class MagicMain {
 	public static void initialize() {
 		try {
 			boolean madeGamePath = new File(getGamePath()).mkdir();
+            if (!madeGamePath) {
+                System.err.println("Unable to create directory " + getGamePath());
+            }
+
 			boolean madeModsPath = new File(getModsPath()).mkdir();
-			DeckUtils.createDeckFolder();
+            if (!madeModsPath) {
+                System.err.println("Unable to create directory " + getModsPath());
+            }
+			
+            DeckUtils.createDeckFolder();
 			initializeEngine();
 		} catch (final Exception ex) {
             System.err.println("ERROR! Unable to initialize the engine");
