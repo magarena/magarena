@@ -106,7 +106,11 @@ public class MagicColorChoice extends MagicChoice {
 	}
 	
 	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	public Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		switch (type) {
 			case MOST: return getArtificialMostOptions(game,player);
@@ -117,9 +121,13 @@ public class MagicColorChoice extends MagicChoice {
 	}	
 	
 	@Override
-	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+	public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
 		
-		final ColorChoicePanel choicePanel=new ColorChoicePanel(controller,source);
+        final ColorChoicePanel choicePanel=new ColorChoicePanel(controller,source);
 		controller.disableActionButton(false);
 		controller.showComponent(choicePanel);
 		if (controller.waitForInputOrUndo()) {
