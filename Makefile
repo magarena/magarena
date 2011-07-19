@@ -154,3 +154,11 @@ daily: $(EXE)
 
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
 	scala $^ > $@ 2> cards/others.txt
+
+cards/magicdraftsim-rating: cards/card-ratings
+	for i in `cat $^`; do \
+	curl http://www.magicdraftsim.com/card-ratings/$$i | \
+	html2text | \
+	grep "^[0-9]" | \
+	sed "s/^[0-9]*/$$i/"; \
+	done > $@
