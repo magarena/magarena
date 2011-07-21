@@ -11,6 +11,7 @@ public final class DelayedViewersThread extends Thread {
 	
 	private DelayedViewersThread() {
 		delayedViewers=new HashMap<DelayedViewer,Long>();
+        setDaemon(true);
 		start();
 	}
 	
