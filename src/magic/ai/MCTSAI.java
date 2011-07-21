@@ -51,10 +51,10 @@ Monte-Carlo Tree Search in Lines of Action
 */
 public class MCTSAI implements MagicAI {
     
-    static final int MAX_ACTIONS = 10000;
-    static int MIN_SCORE = 5000;
-    static int MIN_SIM = 100;
-    static double UCB1_C = 1.41421;
+    static int MIN_SCORE = Integer.MAX_VALUE;
+    static int MIN_SIM = Integer.MAX_VALUE;
+    static int MAX_ACTIONS = 10000;
+    static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
 
     static {
