@@ -156,7 +156,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void showContent(final JComponent content) {
-
 		contentPanel.removeAll();
 		contentPanel.add(content,BorderLayout.CENTER);
 		contentPanel.revalidate();
@@ -164,7 +163,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void addContent(final JComponent content) {
-
 		contents.add(content);
 		showContent(content);
 	}
@@ -191,7 +189,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void closeContent() {
-		
 		contents.removeLast();
 		showContent(contents.getLast());
 	}
@@ -440,7 +437,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	public void closeCardExplorer() {
-	
 		closeContent();
 		enableMenuItem(CARD_EXPLORER_ITEM,true);	
 		if (gamePanel!=null) {
@@ -449,16 +445,25 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void openKeywords() {
-
 		enableMenuItem(KEYWORDS_ITEM,false);
 		final KeywordsPanel keywordsPanel=new KeywordsPanel(this);
 		addContent(keywordsPanel);
 	}
 	
 	public void closeKeywords() {
-
 		closeContent();
 		enableMenuItem(KEYWORDS_ITEM,true);
+	}
+    
+    private void openReadme() {
+		enableMenuItem(README_ITEM,false);
+		final ReadmePanel rmPanel = new ReadmePanel(this);
+		addContent(rmPanel);
+	}
+	
+    public void closeReadme() {
+		closeContent();
+		enableMenuItem(README_ITEM,true);
 	}
 			
 	@Override
@@ -496,7 +501,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		} else if (source==keywordsItem) {
 			openKeywords();
 		}else if (source==readMeItem) {
-			new ReadMeDialog(this);
+			openReadme();
 		}
 	}
 }
