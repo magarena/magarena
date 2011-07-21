@@ -106,14 +106,13 @@ public class CardDefinitions {
 		if (card!=null) {	
             //legendaries are at least Rare
 			if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
-				card.setRarity('R');
-				System.err.println("Rarity for Legendary : "+card.getName());
-                System.exit(1);
+			    System.err.println("ERROR! Wrong rarity for " + card.getName());
+				throw new RuntimeException(card.getName() + " is legendary but rarity is only " + card.getRarity());
 			}
             //every card should have a timing hint
 			if (card.getTiming()==MagicTiming.None) {
-				System.err.println("No timing : "+card.getName());
-                System.exit(1);
+			    System.err.println("ERROR! No timing hint for " + card.getName());
+				throw new RuntimeException(card.getName() + " does not have a timing hint");
 			}
 		}
 	}
@@ -201,10 +200,6 @@ public class CardDefinitions {
 	}
 	
     public MagicCardDefinition getCard(final int cindex) {
-        if (cindex < 0 || cindex >= cards.size()) {
-			System.err.println("ERROR! No card definition found at " + cindex);
-            System.exit(1);
-        }
         return cards.get(cindex);
     }
 	
@@ -212,7 +207,7 @@ public class CardDefinitions {
 		final MagicCardDefinition cardDefinition=cardsMap.get(name);
 		if (cardDefinition == null) {
 			System.err.println("ERROR! No card definition found for " + name);
-            System.exit(1);
+		    throw new RuntimeException("No card definition found for " + name);
 		}
 		return cardDefinition;
 	}
