@@ -68,9 +68,7 @@ public abstract class MagicChoice {
                         System.err.println(opt);
                     }
                     System.err.println(event);
-                    System.err.println(err.getMessage());
-                    err.printStackTrace();
-                    System.exit(1);
+                    throw err;
                 }
 			}
 			return choiceResultsList;
