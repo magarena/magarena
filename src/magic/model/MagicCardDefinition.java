@@ -216,8 +216,8 @@ public class MagicCardDefinition {
             final MagicLocalVariable lvar = (MagicLocalVariable)obj;
             addLocalVariable(lvar);
         } else {
-            System.err.println("Unknown object");
-            System.exit(1);
+            System.err.println("ERROR! Unable to add object to MagicCardDefinition");
+            throw new RuntimeException("Unknown field in companion object");
         }
     }
 	
