@@ -92,7 +92,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 		setContentPane(contentPanel);
 		
 		contents=new LinkedList<JComponent>();
-	
+
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(final WindowEvent event) {
@@ -107,7 +109,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 					config.setMaximized(false);
 				}
 				config.save();
-				System.exit(0);
+
+                if (gamePanel != null) {
+    		        gamePanel.getController().haltGame();
+                }
 			}
 		});
 		
