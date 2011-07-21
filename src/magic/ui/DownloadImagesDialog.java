@@ -140,35 +140,34 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	/*
 	 * Checks if the thread is still uninterrupted. If it is, sleep  (not sure if return would be better). If not continue and update the labels, then repaint.
 	 */
-	@Override
-	public void run() {	
-		if(downloader==null){
-			try{
-			Thread.sleep(10);
-			}catch(InterruptedException ex){
-				System.out.println("RunningThread InterruptedException");
-				System.out.println("running time in millis: "
-						+ (System.currentTimeMillis() - startDownload));
-				Thread.currentThread().interrupt();
+    @Override
+    public void run() {
+        if(downloader==null){
+            try{
+            Thread.sleep(10);
+            }catch(InterruptedException ex){
+                System.out.println("RunningThread InterruptedException");
+                System.out.println("running time in millis: "
+                        + (System.currentTimeMillis() - startDownload));
+                Thread.currentThread().interrupt();
 
-			}
-		}else{
-		progressBar.setMinimum(0);
-		progressBar.setMaximum(files.size());
-		
-		int count=0;
-		for (final DownloadImageFile file : files) {
-			downloadProgressLabel.setText((count+1)+"/"+(files.size()+1));
-			downloadLabel.setText(file.getFilename());
-			file.download(proxy);
-			progressBar.setValue(++count);
-		}
-		
-		dispose();
-        IconImages.reloadSymbols();
-		}
-		//System.exit(0);
-	}
+            }
+        }else{
+            progressBar.setMinimum(0);
+            progressBar.setMaximum(files.size());
+            
+            int count=0;
+            for (final DownloadImageFile file : files) {
+                downloadProgressLabel.setText((count+1)+"/"+(files.size()+1));
+                downloadLabel.setText(file.getFilename());
+                file.download(proxy);
+                progressBar.setValue(++count);
+            }
+            
+            dispose();
+            IconImages.reloadSymbols();
+        }
+    }
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
