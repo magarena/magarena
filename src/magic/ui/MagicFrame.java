@@ -94,10 +94,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 		contents=new LinkedList<JComponent>();
 	
 		this.addWindowListener(new WindowAdapter() {
-
 			@Override
 			public void windowClosing(final WindowEvent event) {
-
 				final boolean maximized=(MagicFrame.this.getExtendedState()&JFrame.MAXIMIZED_BOTH)==JFrame.MAXIMIZED_BOTH;
 				if (maximized) {
 					config.setMaximized(true);
@@ -487,7 +485,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		} else if (source==preferencesItem) {
 			new PreferencesDialog(this);
 		} else if (source==quitItem) {
-			System.exit(0);
+            processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
 		} else if (source==cardExplorerItem) {
 			openCardExplorer();
 		} else if (source==keywordsItem) {
