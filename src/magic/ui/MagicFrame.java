@@ -252,11 +252,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 		preferencesItem.addActionListener(this);
 		tournamentMenu.add(preferencesItem);
         
-        /*
         updateItem=new JMenuItem("Update");
         updateItem.addActionListener(this);
-        tournamentMenu.add(updateItem);
-        */
+        //tournamentMenu.add(updateItem);
 		
 		quitItem=new JMenuItem("Quit");
 		quitItem.addActionListener(this);
@@ -504,7 +502,13 @@ public class MagicFrame extends JFrame implements ActionListener {
 		} else if (source==quitItem) {
             processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
 		} else if (source==updateItem) {
-            updateApp();
+            this.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosed(final WindowEvent event) {
+                    updateApp();
+                }
+            });
+            processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
 		} else if (source==cardExplorerItem) {
 			openCardExplorer();
 		} else if (source==keywordsItem) {
