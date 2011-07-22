@@ -62,6 +62,7 @@ public class MagicFrame extends JFrame implements ActionListener {
     private JMenuItem downloadImagesItem;	
     private JMenuItem preferencesItem;
 	private JMenuItem quitItem;
+	private JMenuItem updateItem;
 	private JMenuItem cardExplorerItem;
 	private JMenuItem keywordsItem;
 	private JMenuItem readMeItem;
@@ -250,6 +251,12 @@ public class MagicFrame extends JFrame implements ActionListener {
         preferencesItem=new JMenuItem("Preferences");
 		preferencesItem.addActionListener(this);
 		tournamentMenu.add(preferencesItem);
+        
+        /*
+        updateItem=new JMenuItem("Update");
+        updateItem.addActionListener(this);
+        tournamentMenu.add(updateItem);
+        */
 		
 		quitItem=new JMenuItem("Quit");
 		quitItem.addActionListener(this);
@@ -496,6 +503,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			new PreferencesDialog(this);
 		} else if (source==quitItem) {
             processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+		} else if (source==updateItem) {
+            updateApp();
 		} else if (source==cardExplorerItem) {
 			openCardExplorer();
 		} else if (source==keywordsItem) {
@@ -504,4 +513,36 @@ public class MagicFrame extends JFrame implements ActionListener {
 			openReadme();
 		}
 	}
+    
+    public boolean updateApp() {
+        //check for new version
+        
+        
+        //if there is a new version, download the jar file
+        
+        
+        //restart the app
+        String javaBin = System.getProperty("java.home") + "/bin/java";
+        File jarFile;
+        try{
+            jarFile = new File(this.getClass().getProtectionDomain().getCodeSource().getLocation().toURI());
+        } catch(Exception e) {
+            return false;
+        }
+
+        /* is it a jar file? */
+        if ( !jarFile.getName().endsWith(".jar") )
+        return false;   //no, it's a .class probably
+
+        String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
+        try{
+            Process p = Runtime.getRuntime().exec(toExec);
+        } catch(Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        System.exit(0);
+        return true;
+    }
 }
