@@ -1,5 +1,6 @@
 package magic.ui;
 
+import java.lang.reflect.InvocationTargetException;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -239,7 +240,22 @@ public class GameController {
 	}
 	
 	public void focusViewers(final int handGraveyard,final int stackCombat) {
-		gamePanel.focusViewers(handGraveyard,stackCombat);
+        if (SwingUtilities.isEventDispatchThread()) {
+		    gamePanel.focusViewers(handGraveyard,stackCombat);
+        } else {
+            //update on EDT
+            try {
+                SwingUtilities.invokeAndWait(new Runnable() {
+                    public void run() {
+		                gamePanel.focusViewers(handGraveyard,stackCombat);
+                    }
+                });
+            } catch (InterruptedException err) {
+                throw new RuntimeException(err.getMessage());
+            } catch (InvocationTargetException err) {
+                throw new RuntimeException(err.getMessage());
+            }
+        }
 	}
 	
 	public void registerChoiceViewer(final ChoiceViewer choiceViewer) {
@@ -281,13 +297,25 @@ public class GameController {
 	}
 
     public void update() {
-        hideInfo();
-        gamePanel.updateInfo();
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                gamePanel.update();
+        //hideInfo();
+        if (SwingUtilities.isEventDispatchThread()) {
+            gamePanel.updateInfo();
+            gamePanel.update();
+        } else {
+            //update on EDT
+            try {
+                SwingUtilities.invokeAndWait(new Runnable() {
+                    public void run() {
+                        gamePanel.updateInfo();
+                        gamePanel.update();
+                    }
+                });
+            } catch (InterruptedException err) {
+                throw new RuntimeException(err.getMessage());
+            } catch (InvocationTargetException err) {
+                throw new RuntimeException(err.getMessage());
             }
-        });
+        }
     }
 	
 	public String getMessageWithSource(final MagicSource source,final String message) {
@@ -387,12 +415,10 @@ public class GameController {
 	}
 	
 	public synchronized void runGame() {
-
 		final long startTime=System.currentTimeMillis();
 		
 		running.set(true);
 		while (running.get()) {
-			
 			if (game.isFinished()) {
 				if (testMode) {
 					game.advanceTournament();
@@ -401,24 +427,35 @@ public class GameController {
 							
 				game.logMessages();
 				clearValidChoices();
-				showMessage(null,"{L} "+game.getLosingPlayer()+" "+(gameConceded?"conceded":"lost")+" the game.|Press {f} to continue.");
-				if (game.getLosingPlayer().getIndex()==0) {
+				showMessage(null,
+                    "{L} " + 
+                    game.getLosingPlayer() + " " + 
+                    (gameConceded ? "conceded" : "lost" ) + 
+                    " the game.");
+
+                if (game.getLosingPlayer().getIndex() == 0) {
 					SoundEffects.getInstance().playClip(SoundEffects.LOSE_SOUND);
 				} else {
 					SoundEffects.getInstance().playClip(SoundEffects.WIN_SOUND);
 				}
+
 				enableForwardButton();
+
 				if (waitForInputOrUndo()) {
 					performUndo();
 					update();
 					continue;
 				} else {
 					game.advanceTournament();
-					gamePanel.close();
+                    SwingUtilities.invokeLater(new Runnable() {
+                        public void run() {
+                            gamePanel.close();
+                        }
+                    });
 					return;
 				}
 			}
-			
+            
 			if (game.hasNextEvent()) {
 				final MagicEvent event=game.getNextEvent();
 				if (event instanceof MagicPriorityEvent) {
@@ -432,6 +469,7 @@ public class GameController {
 			} else {
 				game.getPhase().executePhase(game);
 			}
+
 
             if (testMode) {
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
