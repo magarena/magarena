@@ -240,22 +240,11 @@ public class GameController {
 	}
 	
 	public void focusViewers(final int handGraveyard,final int stackCombat) {
-        if (SwingUtilities.isEventDispatchThread()) {
-		    gamePanel.focusViewers(handGraveyard,stackCombat);
-        } else {
-            //update on EDT
-            try {
-                SwingUtilities.invokeAndWait(new Runnable() {
-                    public void run() {
-		                gamePanel.focusViewers(handGraveyard,stackCombat);
-                    }
-                });
-            } catch (InterruptedException err) {
-                throw new RuntimeException(err.getMessage());
-            } catch (InvocationTargetException err) {
-                throw new RuntimeException(err.getMessage());
+        invokeAndWait(new Runnable() {
+            public void run() {
+                gamePanel.focusViewers(handGraveyard,stackCombat);
             }
-        }
+        });
 	}
 	
 	public void registerChoiceViewer(final ChoiceViewer choiceViewer) {
@@ -264,7 +253,7 @@ public class GameController {
 	
 	private void showValidChoices() {
         try {
-            SwingUtilities.invokeLater(new Runnable() {
+            invokeAndWait(new Runnable() {
                 public void run() {
                     for (final ChoiceViewer choiceViewer : choiceViewers) {
                         choiceViewer.showValidChoices(validChoices);
@@ -298,18 +287,20 @@ public class GameController {
 
     public void update() {
         //hideInfo();
+        invokeAndWait(new Runnable() {
+            public void run() {
+                gamePanel.updateInfo();
+                gamePanel.update();
+            }
+        });
+    }
+
+    public void invokeAndWait(final Runnable task) {
         if (SwingUtilities.isEventDispatchThread()) {
-            gamePanel.updateInfo();
-            gamePanel.update();
+            task.run();
         } else {
-            //update on EDT
             try {
-                SwingUtilities.invokeAndWait(new Runnable() {
-                    public void run() {
-                        gamePanel.updateInfo();
-                        gamePanel.update();
-                    }
-                });
+                SwingUtilities.invokeAndWait(task);
             } catch (InterruptedException err) {
                 throw new RuntimeException(err.getMessage());
             } catch (InvocationTargetException err) {
@@ -327,7 +318,7 @@ public class GameController {
 	}
 		
 	public void showMessage(final MagicSource source,final String message) {
-		SwingUtilities.invokeLater(new Runnable() {
+        invokeAndWait(new Runnable() {
 			public void run() {
 				gameViewer.showMessage(getMessageWithSource(source,message));
 			}
@@ -335,7 +326,7 @@ public class GameController {
 	}
 	
 	public void showComponent(final JComponent content) {
-		SwingUtilities.invokeLater(new Runnable() {
+		invokeAndWait(new Runnable() {
 			public void run() {
 				gameViewer.showComponent(content);
 			}
@@ -447,7 +438,7 @@ public class GameController {
 					continue;
 				} else {
 					game.advanceTournament();
-                    SwingUtilities.invokeLater(new Runnable() {
+                    invokeAndWait(new Runnable() {
                         public void run() {
                             gamePanel.close();
                         }
