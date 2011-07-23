@@ -44,7 +44,6 @@ public class ImagePermanentViewer extends JPanel {
 	private int logicalRow=1;
 	
 	public ImagePermanentViewer(final ImagePermanentsViewer viewer,final PermanentViewerInfo permanentInfo) {
-		
 		this.viewer=viewer;
 		this.permanentInfo=permanentInfo;
 		linkedInfos=new ArrayList<PermanentViewerInfo>();
