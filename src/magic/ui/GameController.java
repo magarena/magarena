@@ -286,9 +286,9 @@ public class GameController {
 	}
 
     public void update() {
-        //hideInfo();
         invokeAndWait(new Runnable() {
             public void run() {
+                //hideInfo();
                 gamePanel.updateInfo();
                 gamePanel.update();
             }
