@@ -131,15 +131,17 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
 		@Override
 		public void mouseClicked() {
-
 			controller.processClick(stackInfo.itemOnStack);
 		}
 
 		@Override
 		public void mouseEntered() {
-
 			if (image) {
-				final Rectangle rect=new Rectangle(StackViewer.this.getLocationOnScreen().x,getLocationOnScreen().y,StackViewer.this.getWidth(),getHeight());
+				final Rectangle rect=new Rectangle(
+                        StackViewer.this.getLocationOnScreen().x,
+                        getLocationOnScreen().y,
+                        StackViewer.this.getWidth(),
+                        getHeight());
 				controller.viewInfoRight(stackInfo.cardDefinition,0,rect);				
 			} else {
 				controller.viewCard(stackInfo.cardDefinition,0);
@@ -148,7 +150,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 		
 		@Override
 		public void mouseExited() {
-
 			if (image) {
 				controller.hideInfo();
 			}
@@ -156,13 +157,11 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
 		@Override
 		public void showValidChoices(final Set<Object> validChoices) {
-
 			setValid(validChoices.contains(stackInfo.itemOnStack));
 		}
 
 		@Override
 		public Color getValidColor() {
-
 			return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 		}
 	}
