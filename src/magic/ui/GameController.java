@@ -128,6 +128,7 @@ public class GameController {
 			undoClicked=false;
 			actionClicked=false;
 			choiceClicked=choice;
+            hideInfo();
 			notifyAll();
 		}
 	}
