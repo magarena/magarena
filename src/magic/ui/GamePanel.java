@@ -9,6 +9,7 @@ import java.awt.event.InputEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import java.awt.event.MouseMotionAdapter;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
@@ -81,6 +82,15 @@ public final class GamePanel extends JPanel {
 		this.game=game;
 		this.backgroundLabel=backgroundLabel;
 		controller=new GameController(this,game);
+
+        //hide info when mouse moves onto background
+        backgroundLabel.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseMoved(final MouseEvent event) {
+				controller.hideInfo();
+			}
+		});
+
 		viewerInfo=new ViewerInfo();
 		viewerInfo.update(game);
 
