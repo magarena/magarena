@@ -112,6 +112,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 				controller.showMessage(blocker,ATTACKER_MESSAGE);
 				controller.disableActionButton(false);
 				if (controller.waitForInputOrUndo()) {
+				    buildResult(builder,result); // For cleanup.
 					return UNDO_CHOICE_RESULTS;
 				}
 				controller.setSourceCardDefinition(null);
