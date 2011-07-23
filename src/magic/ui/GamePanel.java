@@ -63,7 +63,6 @@ public final class GamePanel extends JPanel {
 	private final LogBookViewer logBookViewer;
 	private final JToggleButton logBookButton;
 	private final JToggleButton textViewButton;
-	//private final GameControllerThread thread;
 	private final StackCombatViewer stackCombatViewer;
 	private final HandGraveyardExileViewer handGraveyardViewer;
 	private final BattlefieldViewer playerPermanentViewer;
@@ -120,19 +119,16 @@ public final class GamePanel extends JPanel {
 		logBookButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(final ActionEvent event) {
-			
 				logBookViewer.setVisible(logBookButton.isSelected());
 			}
 		});
 		logBookButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(final MouseEvent event) {
-
 				showLogBook(true);
 			}
 			@Override
 			public void mouseExited(final MouseEvent event) {
-
 				if (!logBookButton.isSelected()) {
 					showLogBook(false);
 				}
@@ -147,7 +143,6 @@ public final class GamePanel extends JPanel {
 		textViewButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(final ActionEvent event) {
-				
 				final boolean selected=textViewButton.isSelected();
 				GeneralConfig.getInstance().setTextView(selected);
 				updateView();
