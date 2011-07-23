@@ -91,10 +91,8 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 		disableButton(false);
 		
 		addMouseListener(new MouseAdapter() {
-
 			@Override
 			public void mouseEntered(final MouseEvent event) {
-
 				final MagicCardDefinition cardDefinition=controller.getSourceCardDefinition();
 				if (cardDefinition!=null) {
 					if (GeneralConfig.getInstance().getTextView()) {
@@ -105,10 +103,8 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 					}
 				}
 			}
-
 			@Override
 			public void mouseExited(final MouseEvent event) {
-
 				controller.hideInfo();
 			}
 		});

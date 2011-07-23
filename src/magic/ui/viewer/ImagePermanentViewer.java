@@ -56,29 +56,22 @@ public class ImagePermanentViewer extends JPanel {
 		setOpaque(false);
 		
 		addMouseListener(new MouseAdapter() {
-
 			@Override
 			public void mousePressed(final MouseEvent event) {
-				
 				final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
 				if (index>=0) {					
 					viewer.getController().processClick(linkedInfos.get(index).permanent);
 				}
-
 			}
-
 			@Override
 			public void mouseExited(final MouseEvent event) {
-
 				viewer.getController().hideInfo();
 			}
 		});
 		
 		addMouseMotionListener(new MouseMotionAdapter() {
-
 			@Override
 			public void mouseMoved(final MouseEvent event) {
-
 				final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
 				if (index>=0) {
 					final PermanentViewerInfo info=linkedInfos.get(index);
@@ -95,9 +88,7 @@ public class ImagePermanentViewer extends JPanel {
 	}
 	
 	private int getPermanentInfoIndexAt(final int x,final int y) {
-		
 		for (int index=linkedScreenRectangles.size()-1;index>=0;index--) {
-
 			final Rectangle rect=linkedScreenRectangles.get(index);
 			if (x>=rect.x&&y>=rect.y&&x<rect.x+rect.width&&y<rect.y+rect.height) {
 				return index;
