@@ -75,7 +75,8 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 		image = loadCardImage(filename).getScaledInstance(
                     CARD_WIDTH,
                     CARD_HEIGHT,
-                    Image.SCALE_SMOOTH);
+                    Image.SCALE_SMOOTH
+                );
         
         imagesMap.put(filename, image);
         
