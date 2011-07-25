@@ -42,7 +42,7 @@ public class GeneralConfig {
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
 	private static final boolean DEFAULT_PASS=true;
-	private static final boolean DEFAULT_TARGET=false;
+	private static final boolean DEFAULT_TARGET=true;
 	private static final int DEFAULT_DIFFICULTY=6;
 	private static final int DEFAULT_EXTRA_LIFE=0;
 	private static final int DEFAULT_POPUP_DELAY=300;
