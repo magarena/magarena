@@ -63,7 +63,7 @@ Release 1.16 (July 25, 2011)
 - increased delay when auto passing priority with item on stack to 2s
 - selectable cards are now highlighted with a colored border instead of an
   overlap
-- removed deck strength viewer (could take a long time to run)
+- removed GUI deck strength viewer as it could take a long time to run
 - added four more custom decks 
     decks/DL_Burn.dec
     decks/Grundomu_Death_and_Rebirth.dec 
