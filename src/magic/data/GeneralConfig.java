@@ -280,9 +280,9 @@ public class GeneralConfig {
             }
 			load(properties);
 		} catch (final IOException ex) {
-            System.err.println("ERROR! unable to load " + getConfigFile());
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
+            System.err.println("WARNING! unable to load " + getConfigFile());
+            //System.err.println(ex.getMessage());
+            //ex.printStackTrace();
         } 
 	}
 	
