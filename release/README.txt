@@ -55,6 +55,7 @@ Release 1.16 (July 25, 2011)
 - fixed: AI getting stuck when there are many creatures on the battlefield,
          needs more testing
 - fixed: GUI may become unresponse, especially when playing against monte carlo AI
+- fixed: several crash bugs in monte carlo AI (crash free in more than 100,000 self play games)
 
 - added version of minimax that cheats
 - popup card info no longer disappears when the phase changes

@@ -171,7 +171,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
             //show that card is a valid choice
             //instead of adding a choiceColor transparent layer,
-            //draw a one pixel border of the choiceColor
+            //draw a border of the choiceColor
 			if (validChoices.contains(card)) {
                 //g2d.setPaint(choiceColor);
                 //g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
