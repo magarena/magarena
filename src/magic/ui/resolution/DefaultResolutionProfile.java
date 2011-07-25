@@ -14,7 +14,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 	public static final int TOURNAMENT_VIEWER_WIDTH=270;
 	public static final int TOURNAMENT_VIEWER_HEIGHT=130;
 	public static final int DECK_STATISTICS_VIEWER_HEIGHT=200;
-	public static final int DECK_STRENGTH_VIEWER_HEIGHT=200;
+	public static final int DECK_STRENGTH_VIEWER_HEIGHT=160;
 	public static final int PLAY_BUTTON_HEIGHT=50;
 	public static final int CARD_VIEWER_WIDTH=CardImagesProvider.CARD_WIDTH;
 	public static final int CARD_VIEWER_HEIGHT=CardImagesProvider.CARD_HEIGHT+20;
