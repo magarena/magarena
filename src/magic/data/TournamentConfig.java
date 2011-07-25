@@ -178,7 +178,7 @@ public class TournamentConfig {
 			load(properties);
             System.err.println("Loaded tournament config");
 		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load tournament config");
+            System.err.println("WARNING. Unable to load tournament config");
         }
 	}
 	
