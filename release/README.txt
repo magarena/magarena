@@ -43,7 +43,7 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.16 (July XX, 2011)
+Release 1.16 (July 25, 2011)
 ============
 - 918 cards in total
 - added ubeefx cube (617 cards)
@@ -56,12 +56,17 @@ Release 1.16 (July XX, 2011)
          needs more testing
 - fixed: GUI may become unresponse, especially when playing against monte carlo AI
 
+- added version of minimax that cheats
 - popup card info no longer disappears when the phase changes
 - do not auto pass priority when AI blocks your attackers
 - increased delay when auto passing priority with item on stack to 2s
-- added four more custom decks (QQQ)
 - selectable cards are now highlighted with a colored border instead of an
   overlap
+- added four more custom decks 
+    decks/DL_Burn.dec
+    decks/Grundomu_Death_and_Rebirth.dec 
+    decks/Grundomu_Knights_Everywhere.dec 
+    decks/Kuno_RUw_Aggro_Control.dec
 
 Release 1.15 (June 20, 2011)
 ============
