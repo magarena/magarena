@@ -1,3 +1,3 @@
 #!/bin/sh
-java -Xmx256m -jar Magarena.exe
+java -Xms256M -Xmx256M -jar Magarena.exe
 
