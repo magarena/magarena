@@ -33,7 +33,7 @@ Thanks to
   epiko for creating the Magarena logo and the amazing color themes
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
-  LSK, Kuno and David for contributing custom decks
+  LSK, Kuno, David, and Grundomu for contributing custom decks
   pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
