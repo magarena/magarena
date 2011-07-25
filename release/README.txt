@@ -45,15 +45,23 @@ Thank you for your support and have fun!
 
 Release 1.16 (July XX, 2011)
 ============
-- 9XX cards in total
+- 918 cards in total
 - added ubeefx cube (617 cards)
 
 - added Mutavault
-- 
+- added Sun Titan
 
+- fixed: previous blocking choices are not cleared if player redo the blocking phase
+- fixed: AI getting stuck when there are many creatures on the battlefield,
+         needs more testing
+- fixed: GUI may become unresponse, especially when playing against monte carlo AI
+
+- popup card info no longer disappears when the phase changes
 - do not auto pass priority when AI blocks your attackers
 - increased delay when auto passing priority with item on stack to 2s
--    
+- added four more custom decks (QQQ)
+- selectable cards are now highlighted with a colored border instead of an
+  overlap
 
 Release 1.15 (June 20, 2011)
 ============
