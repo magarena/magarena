@@ -1,6 +1,6 @@
 package magic.data;
 
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 import magic.model.MagicCardDefinition;
 
 /** 
@@ -12,7 +12,7 @@ public interface CardImagesProvider {
 	public static final int CARD_WIDTH=312;
 	public static final int CARD_HEIGHT=445;
 
-	public BufferedImage getImage(
+	public Image getImage(
             final MagicCardDefinition cardDefinition,
             final int index,
             final boolean high);
