@@ -60,7 +60,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		add(deckViewers);
 		
 		strengthViewer=new DeckStrengthViewer(tournament);
-		add(strengthViewer);
+		//add(strengthViewer);
 		
 		playersViewer=new PlayersViewer(tournament);
 		playersViewer.addChangeListener(deckViewers);
@@ -99,17 +99,14 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	}
 
 	public MagicFrame getFrame() {
-		
 		return frame;
 	}
 	
 	public MagicTournament getTournament() {
-		
 		return tournament;
 	}
 	
 	private void resizeComponents() {
-		
 		final Dimension size=getSize();
 		final ResolutionProfileResult result=ResolutionProfiles.calculate(size);
 
@@ -127,22 +124,18 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	}
 	
 	public MagicPlayerDefinition getSelectedPlayer() {
-		
 		return deckViewers.getSpellViewer().getPlayer();
 	}
 	
 	public void updateDecksAfterEdit() {
-		
 		deckViewers.updateAfterEdit();
 	}
 
 	public void haltStrengthViewer() {
-		
 		strengthViewer.halt();
 	}
 	
 	public void actionPerformed(final ActionEvent event) {
-		
 		final Object source=event.getSource();
 		if (source==playButton) {
 			frame.nextGame();
