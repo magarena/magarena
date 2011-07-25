@@ -20,10 +20,12 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	
 	private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
 	private static final int MAX_IMAGES=100;
-	private final Map<String,Image> imagesMap;
+	private final Map<String,Image> scaledImages;
+	private final Map<String,Image> origImages;
 	
 	public HighQualityCardImagesProvider() {
-		imagesMap = new magic.ai.StateCache<String,Image>(100);
+		scaledImages = new magic.ai.StateCache<String,Image>(100);
+		origImages = new magic.ai.StateCache<String,Image>(100);
 	}
 	
 	private static final String getFilename(
@@ -59,28 +61,28 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	public Image getImage(
             final MagicCardDefinition cardDefinition,
             final int index,
-            final boolean high) {
+            boolean orig) {
 
 		if (cardDefinition == null) {
 			return IconImages.MISSING_CARD;
 		}
 
 		final String filename=getFilename(cardDefinition,index);
-		Image image = imagesMap.get(filename);
 
-		if (image != null) {
-			return image;
+        //put image into the cache
+		if (!origImages.containsKey(filename)) {
+            final Image origImage = loadCardImage(filename);
+            origImages.put(filename, origImage);
+
+            final Image scaledImage = origImage.getScaledInstance(
+                        CARD_WIDTH,
+                        CARD_HEIGHT,
+                        Image.SCALE_SMOOTH
+                    );
+            scaledImages.put(filename, scaledImage);
 		}
 
-		image = loadCardImage(filename).getScaledInstance(
-                    CARD_WIDTH,
-                    CARD_HEIGHT,
-                    Image.SCALE_SMOOTH
-                );
-        
-        imagesMap.put(filename, image);
-        
-		return image;
+		return orig ? origImages.get(filename) : scaledImages.get(filename);
 	}
 	
 	public static CardImagesProvider getInstance() {
