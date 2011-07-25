@@ -51,18 +51,17 @@ Release 1.16 (July 25, 2011)
 - added Mutavault
 - added Sun Titan
 
-- fixed: previous blocking choices are not cleared if player redo the blocking phase
-- fixed: AI getting stuck when there are many creatures on the battlefield,
-         needs more testing
-- fixed: GUI may become unresponse, especially when playing against monte carlo AI
+- fixed: unresponsive GUI, especially when playing against monte carlo AI
 - fixed: several crash bugs in monte carlo AI (crash free in more than 100,000 self play games)
+- fixed issue 31: previous blocking choices are not cleared if player redo the blocking phase
+- fixed issue 28: AI getting stuck when there are many creatures on the battlefield,
+  needs more testing
 
-- added version of minimax that cheats
+- added variant of minimax that cheats 
 - popup card info no longer disappears when the phase changes
 - do not auto pass priority when AI blocks your attackers
 - increased delay when auto passing priority with item on stack to 2s
-- selectable cards are now highlighted with a colored border instead of an
-  overlap
+- selectable cards are now highlighted with a colored border instead of an overlay
 - removed GUI deck strength viewer as it could take a long time to run
 - added four more custom decks 
     decks/DL_Burn.dec
