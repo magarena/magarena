@@ -30,15 +30,15 @@ Selecting the AI to play against:
 
 Thanks to
   ubeefx for creating such a great game
-  epiko for creating the very nice Magarena logo and the amazing color themes
+  epiko for creating the Magarena logo and the amazing color themes
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
-  Melvin Zhang for implementing the Monte Carlo Tree Search AI
-  LSK and Kuno for contributing custom decks
-  pedro1973 for creating new themes  (http://www.slightlymagic.net/forum/viewforum.php?f=89)
+  LSK, Kuno and David for contributing custom decks
+  pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
-  Rachel for help in resolving a number of issues from the project page
+  Rachel for making it possible to cancel image download and fixing incorrect images
+  Melvin Zhang for implementing the Monte Carlo Tree Search AI and maintenance of the program
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
