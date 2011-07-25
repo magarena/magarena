@@ -109,9 +109,9 @@ public class MagicPlayChoice extends MagicChoice {
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
             if (!game.getStack().isEmpty()) {
                 try {
-                     Thread.sleep(1000);
+                    Thread.sleep(1500);
                 } catch (final Exception err) {
-
+                    System.err.println("ERROR! Exception caught in MagicPlayChoice");
                 }
             }
 			return PASS_CHOICE_RESULTS;
@@ -139,12 +139,12 @@ public class MagicPlayChoice extends MagicChoice {
             */
 
             if (skip) {
-                //if there is an item on the stack, pause for 1s
+                //if there is an item on the stack, pause for 1.5s
                 if (!game.getStack().isEmpty()) {
                     try {
                          Thread.sleep(1500);
                     } catch (final Exception err) {
-
+                        System.err.println("ERROR! Exception caught in MagicPlayChoice");
                     }
                 }
     			return PASS_CHOICE_RESULTS;

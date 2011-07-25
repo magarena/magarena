@@ -241,7 +241,7 @@ public class GameController {
 	}
 	
 	public void focusViewers(final int handGraveyard,final int stackCombat) {
-        invokeAndWait(new Runnable() {
+        SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 gamePanel.focusViewers(handGraveyard,stackCombat);
             }
@@ -254,7 +254,7 @@ public class GameController {
 	
 	private void showValidChoices() {
         try {
-            invokeAndWait(new Runnable() {
+            SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
                     for (final ChoiceViewer choiceViewer : choiceViewers) {
                         choiceViewer.showValidChoices(validChoices);
@@ -262,7 +262,8 @@ public class GameController {
                 }
             });
         } catch (final Throwable th) {
-            //there will be an error if X windows is not present on Linux
+            //there will be an error if X windows is not present
+            System.err.println("ERROR! showValidChoices threw an exception/error");
         }
 	}
 
@@ -287,9 +288,8 @@ public class GameController {
 	}
 
     public void update() {
-        invokeAndWait(new Runnable() {
+        SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                //hideInfo();
                 gamePanel.updateInfo();
                 gamePanel.update();
             }
@@ -319,7 +319,7 @@ public class GameController {
 	}
 		
 	public void showMessage(final MagicSource source,final String message) {
-        invokeAndWait(new Runnable() {
+        SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				gameViewer.showMessage(getMessageWithSource(source,message));
 			}
@@ -327,7 +327,7 @@ public class GameController {
 	}
 	
 	public void showComponent(final JComponent content) {
-		invokeAndWait(new Runnable() {
+		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				gameViewer.showComponent(content);
 			}
@@ -439,7 +439,7 @@ public class GameController {
 					continue;
 				} else {
 					game.advanceTournament();
-                    invokeAndWait(new Runnable() {
+                    SwingUtilities.invokeLater(new Runnable() {
                         public void run() {
                             gamePanel.close();
                         }
@@ -470,6 +470,11 @@ public class GameController {
                 }
             } else {
                 update();
+                try {
+                    Thread.sleep(10);
+                } catch (final Exception ex) {
+                    System.err.println("ERROR! Exception while controller thread sleeping.");
+                }
             }
 		}
 		running.set(false);
