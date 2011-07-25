@@ -2,6 +2,7 @@ package magic.ui.widget;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.awt.image.RescaleOp;
 
@@ -11,11 +12,10 @@ public class TransparentImagePanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
-	private BufferedImage image=null;
+	private Image image=null;
 	private RescaleOp rescaleOp=null;
 
 	public void setOpacity(final float opacity) {
-		
 		if (opacity>=1.0f) {
 			setOpaque(true);
 			rescaleOp=null;
@@ -27,21 +27,19 @@ public class TransparentImagePanel extends JPanel {
 		}
 	}
 	
-	public void setImage(final BufferedImage image) {
-
+	public void setImage(final Image image) {
 		this.image=image;
 	}
 	
 	@Override
 	public void paint(final Graphics g) {
-	
 		super.paint(g);
 		if (image!=null) {
 			if (rescaleOp==null) {
 				g.drawImage(image,0,0,this);
 			} else {
 				final Graphics2D g2d=(Graphics2D)g;
-				g2d.drawImage(image,rescaleOp,0,0);
+				g2d.drawImage((BufferedImage)image,rescaleOp,0,0);
 			}
 		}
 	}		
