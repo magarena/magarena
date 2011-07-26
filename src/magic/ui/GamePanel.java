@@ -306,11 +306,8 @@ public final class GamePanel extends JPanel {
 		}
 	}
 
-	public void updateInfo() {
-		viewerInfo.update(game);
-	}
-	
 	public void update() {
+		viewerInfo.update(game);
 		playerViewer.update();
 		opponentViewer.update();
 		gameTournamentViewer.update();

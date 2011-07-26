@@ -291,7 +291,6 @@ public class GameController {
         //SwingUtilities.invokeLater(new Runnable() {
         invokeAndWait(new Runnable() {
             public void run() {
-                gamePanel.updateInfo();
                 gamePanel.update();
             }
         });
@@ -300,14 +299,15 @@ public class GameController {
     public void invokeAndWait(final Runnable task) {
         if (SwingUtilities.isEventDispatchThread()) {
             task.run();
-        } else {
-            try {
-                SwingUtilities.invokeAndWait(task);
-            } catch (InterruptedException err) {
-                throw new RuntimeException(err.getMessage());
-            } catch (InvocationTargetException err) {
-                throw new RuntimeException(err.getMessage());
-            }
+            return;
+        }
+        
+        try {
+            SwingUtilities.invokeAndWait(task);
+        } catch (InterruptedException err) {
+            throw new RuntimeException(err.getMessage());
+        } catch (InvocationTargetException err) {
+            throw new RuntimeException(err.getMessage());
         }
     }
 	
