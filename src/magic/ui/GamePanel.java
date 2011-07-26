@@ -235,7 +235,7 @@ public final class GamePanel extends JPanel {
             protected Void doInBackground() {
                 //reduce priority
                 final Thread cur=Thread.currentThread();
-                cur.setPriority(Thread.NORM_PRIORITY - 1);
+                cur.setPriority(Thread.MIN_PRIORITY + 1);
                 System.err.println("Starting game...");
                 controller.runGame();
                 System.err.println("Stopping game...");

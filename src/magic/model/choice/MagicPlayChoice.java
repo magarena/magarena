@@ -109,7 +109,7 @@ public class MagicPlayChoice extends MagicChoice {
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
             if (!game.getStack().isEmpty()) {
                 try {
-                    wait(1500);
+                    Thread.sleep(1500);
                 } catch (final Exception err) {
                     System.err.println("ERROR! Exception caught in MagicPlayChoice");
                 }
@@ -142,7 +142,7 @@ public class MagicPlayChoice extends MagicChoice {
                 //if there is an item on the stack, pause for 1.5s
                 if (!game.getStack().isEmpty()) {
                     try {
-                         wait(1500);
+                         Thread.sleep(1500);
                     } catch (final Exception err) {
                         System.err.println("ERROR! Exception caught in MagicPlayChoice");
                     }
@@ -157,7 +157,7 @@ public class MagicPlayChoice extends MagicChoice {
              game.getPassPriority()) {
             if (!game.getStack().isEmpty()) {
                 try {
-                     wait(1500);
+                     Thread.sleep(1500);
                 } catch (final Exception err) {
 
                 }

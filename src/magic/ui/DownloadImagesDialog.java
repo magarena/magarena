@@ -145,7 +145,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
     public void run() {
         if(downloader==null){
             try {
-                wait(10);
+                Thread.sleep(10);
             } catch(InterruptedException ex){
                 System.out.println("RunningThread InterruptedException");
                 System.out.println("running time in millis: "
