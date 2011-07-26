@@ -230,7 +230,7 @@ public final class GamePanel extends JPanel {
 		updateView();
 
         //start runGame in background using SwingWorker
-        final SwingWorker thread = new SwingWorker<Void, Void>(){
+        (new SwingWorker<Void, Void>(){
             @Override
             protected Void doInBackground() {
                 System.err.println("Starting game...");
@@ -238,12 +238,7 @@ public final class GamePanel extends JPanel {
                 System.err.println("Stopping game...");
                 return null;
             }
-        };
-
-        thread.execute();
-
-		//thread=new GameControllerThread(controller);
-		//thread.start();
+        }).execute();
 	}
 	
 	public boolean canClickAction() {
