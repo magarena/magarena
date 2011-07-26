@@ -288,7 +288,8 @@ public class GameController {
 	}
 
     public void update() {
-        SwingUtilities.invokeLater(new Runnable() {
+        //SwingUtilities.invokeLater(new Runnable() {
+        invokeAndWait(new Runnable() {
             public void run() {
                 gamePanel.updateInfo();
                 gamePanel.update();
@@ -470,11 +471,6 @@ public class GameController {
                 }
             } else {
                 update();
-                try {
-                    Thread.sleep(10);
-                } catch (final Exception ex) {
-                    System.err.println("ERROR! Exception while controller thread sleeping.");
-                }
             }
 		}
 		running.set(false);
