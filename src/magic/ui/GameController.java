@@ -471,11 +471,6 @@ public class GameController {
                 }
             } else {
                 update();
-                try {
-                    wait(10);
-                } catch (final Exception ex) {
-                    System.err.println("ERROR! Exception thrown while controller is waiting.");
-                }
             }
 		}
 		running.set(false);
