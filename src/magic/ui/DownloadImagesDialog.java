@@ -40,9 +40,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private final JButton cancelButton;
 	private Thread downloader=null;
 	private Proxy proxy=null;
-	long startDownload ;
-	public DownloadImagesDialog(final MagicFrame frame) {
+	long startDownload;
 
+	public DownloadImagesDialog(final MagicFrame frame) {
 		super(frame,true);
 		this.setLayout(new BorderLayout());
 		this.setTitle("Download images");
@@ -128,7 +128,6 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	}
 	
 	private void updateProxy() {
-		
 		final boolean use=proxyComboBox.getSelectedItem()!=Type.DIRECT;
 		addressTextField.setEnabled(use);
 		portTextField.setEnabled(use);
@@ -138,14 +137,16 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	}
 
 	/*
-	 * Checks if the thread is still uninterrupted. If it is, sleep  (not sure if return would be better). If not continue and update the labels, then repaint.
+     * Checks if the thread is still uninterrupted. If it is, wait (not sure
+     * if return would be better). If not continue and update the labels, then
+     * repaint.
 	 */
     @Override
     public void run() {
         if(downloader==null){
-            try{
-            Thread.sleep(10);
-            }catch(InterruptedException ex){
+            try {
+                wait(10);
+            } catch(InterruptedException ex){
                 System.out.println("RunningThread InterruptedException");
                 System.out.println("running time in millis: "
                         + (System.currentTimeMillis() - startDownload));
@@ -199,8 +200,8 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		} else if (source==cancelButton) {
 			if(downloader!=null){
 				try{
-				Thread tmpThread = downloader;
-				downloader = null;
+                    Thread tmpThread = downloader;
+                    downloader = null;
 					if(tmpThread!=null){
 						tmpThread.interrupt();
 					}
