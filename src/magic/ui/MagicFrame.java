@@ -94,7 +94,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		contents=new LinkedList<JComponent>();
 
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		this.addWindowListener(new WindowAdapter() {
 			@Override
@@ -111,9 +111,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 				}
 				config.save();
 
+                /*
                 if (gamePanel != null) {
     		        gamePanel.getController().haltGame();
                 }
+                */
 			}
 		});
 		
@@ -303,25 +305,25 @@ public class MagicFrame extends JFrame implements ActionListener {
 			enableMenuItem(SAVE_DECK_ITEM,tournament.isEditable());
 			enableMenuItem(SWAP_DECKS_ITEM,tournament.isEditable());
 			enableMenuItem(PLAY_GAME_ITEM,!tournament.isFinished());
+            if (System.getProperty("selfMode") != null && !tournament.isFinished()) {
+                nextGame();
+            }
 		} else {
 			setContent(new ZoneBackgroundLabel());
 		}
 	}
 	
 	public void showNewTournamentDialog() {
-		
 		new TournamentDialog(this);
 	}
 	
 	public void newTournament(final TournamentConfig configuration) {
-
 		tournament=new MagicTournament(configuration);
 		tournament.initialize();
 		showTournament();
 	}
 	
 	public void loadTournament() {
-
 		final File tournamentFile=MagicTournament.getTournamentFile();
 		if (tournamentFile.exists()) {
 			tournament=new MagicTournament();
