@@ -36,6 +36,7 @@ public class GameController {
 	private final GamePanel gamePanel;
 	private final MagicGame game;
 	private final boolean testMode;
+	private final boolean selfMode;
 	private final AtomicBoolean running;
 	private final Collection<ChoiceViewer> choiceViewers;
 	private Set<Object> validChoices;
@@ -53,7 +54,8 @@ public class GameController {
 	public GameController(final GamePanel gamePanel,final MagicGame game) {
 		this.gamePanel=gamePanel;
 		this.game=game;
-		testMode=(gamePanel==null);
+		testMode = (gamePanel==null);
+        selfMode = System.getProperty("selfMode") != null;
 		running=new AtomicBoolean(false);
 		choiceViewers=new ArrayList<ChoiceViewer>();
 		clearValidChoices();
@@ -291,6 +293,7 @@ public class GameController {
 	}
 
     public void update() {
+        gamePanel.updateInfo();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 gamePanel.update();
@@ -346,7 +349,7 @@ public class GameController {
 
 	private synchronized void executeNextEventWithChoices(final MagicEvent event) {
 		final Object[] choiceResults;
-		if (testMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
+		if (selfMode || testMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
 			choiceResults = getArtificialNextEventChoiceResults(event);
 		} else {
 			choiceResults = getPlayerNextEventChoiceResults(event);
@@ -420,7 +423,7 @@ public class GameController {
 
 				enableForwardButton();
 
-				if (waitForInputOrUndo()) {
+				if (!selfMode && waitForInputOrUndo()) {
 					performUndo();
 					update();
 					continue;
