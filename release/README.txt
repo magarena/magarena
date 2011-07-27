@@ -52,7 +52,7 @@ This is a bug fix release.
 - fixed color of normal selection to green and combat selection to red
 - fixed a GUI crash bug
 - fixed a bug where the game logic thread would get stuck on non-Linux systems
-- implmented a better way to increase responsiveness of the GUI but decreasing
+- implmented a better way to increase responsiveness of the GUI by decreasing
   the priority of the game logic thread
 
 Release 1.16 (July 25, 2011)
