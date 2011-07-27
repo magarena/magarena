@@ -276,7 +276,6 @@ public class MagicTournament {
 		
 		playerDefinitions=new MagicPlayerDefinition[2];
 		for (int index=0;index<playerDefinitions.length;index++) {
-
 			playerDefinitions[index]=new MagicPlayerDefinition();
 			playerDefinitions[index].load(properties,getPlayerPrefix(index));
 		}
