@@ -65,11 +65,19 @@ public class GameController {
 	}
 		
 	public void enableForwardButton() {
-		gameViewer.enableButton(IconImages.FORWARD);
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+        		gameViewer.enableButton(IconImages.FORWARD);
+            }
+        });
 	}
 	
 	public void disableActionButton(final boolean thinking) {
-		gameViewer.disableButton(thinking);
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                gameViewer.disableButton(thinking);
+            }
+        });
 	}
 	
 	/** Returns true when undo was clicked. */
@@ -253,18 +261,13 @@ public class GameController {
 	}
 	
 	private void showValidChoices() {
-        try {
-            SwingUtilities.invokeLater(new Runnable() {
-                public void run() {
-                    for (final ChoiceViewer choiceViewer : choiceViewers) {
-                        choiceViewer.showValidChoices(validChoices);
-                    }
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                for (final ChoiceViewer choiceViewer : choiceViewers) {
+                    choiceViewer.showValidChoices(validChoices);
                 }
-            });
-        } catch (final Throwable th) {
-            //there will be an error if X windows is not present
-            System.err.println("ERROR! showValidChoices threw an exception/error");
-        }
+            }
+        });
 	}
 
 	public boolean isCombatChoice() {
@@ -289,26 +292,10 @@ public class GameController {
 
     public void update() {
         SwingUtilities.invokeLater(new Runnable() {
-        //invokeAndWait(new Runnable() {
             public void run() {
                 gamePanel.update();
             }
         });
-    }
-
-    public void invokeAndWait(final Runnable task) {
-        if (SwingUtilities.isEventDispatchThread()) {
-            task.run();
-            return;
-        }
-        
-        try {
-            SwingUtilities.invokeAndWait(task);
-        } catch (InterruptedException err) {
-            throw new RuntimeException(err.getMessage());
-        } catch (InvocationTargetException err) {
-            throw new RuntimeException(err.getMessage());
-        }
     }
 	
 	public String getMessageWithSource(final MagicSource source,final String message) {
@@ -395,7 +382,6 @@ public class GameController {
 		if (resetGame) {
 			resetGame=false;
 			while (game.hasUndoPoints()) {
-				
 				game.gotoLastUndoPoint();
 			}
 		} else {
