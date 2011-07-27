@@ -216,9 +216,7 @@ public class PermanentViewerInfo {
 	}
 	
 	private static boolean isTargeted(final MagicGame game,final MagicPermanent permanent) {
-		
 		for (final MagicItemOnStack itemOnStack : game.getStack()) {
-			
 			if (itemOnStack.containsInChoiceResults(permanent)) {
 				return true;
 			}
