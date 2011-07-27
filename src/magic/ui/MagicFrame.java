@@ -305,8 +305,12 @@ public class MagicFrame extends JFrame implements ActionListener {
 			enableMenuItem(SAVE_DECK_ITEM,tournament.isEditable());
 			enableMenuItem(SWAP_DECKS_ITEM,tournament.isEditable());
 			enableMenuItem(PLAY_GAME_ITEM,!tournament.isFinished());
-            if (System.getProperty("selfMode") != null && !tournament.isFinished()) {
-                nextGame();
+            if (System.getProperty("selfMode") != null) {
+                if (!tournament.isFinished()) {
+                    nextGame();
+                } else {
+                    newTournament(TournamentConfig.getInstance());
+                }
             }
 		} else {
 			setContent(new ZoneBackgroundLabel());
