@@ -73,7 +73,6 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		
 		final Dimension labelSize=new Dimension(25,20);
 		for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
-			
 			final JLabel label=new JLabel(CardStatistics.MANA_CURVE_ICONS.get(index));
 			label.setPreferredSize(labelSize);
 			label.setHorizontalAlignment(JLabel.CENTER);
@@ -91,14 +90,10 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 	}
 	
 	public void setPlayer(final MagicPlayerDefinition player) {
-		
 		titleBar.setText("Deck Statistics : "+player.getName());
-		
 		final CardStatistics statistics=new CardStatistics(player.getDeck());
-
 		topPanel.removeAll();
 		for (int index=0;index<CardStatistics.NR_OF_TYPES;index++) {
-			
 			final int total=statistics.totalTypes[index];
 			if (total>0) {
 				final JLabel label=new JLabel(""+total);
@@ -112,7 +107,9 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		
 		lines.clear();
 		final JLabel allLabel=new JLabel(
-				"Monocolor : "+statistics.monoColor+"  Multicolor : "+statistics.multiColor+"  Colorless : "+statistics.colorless);
+				"Mono : " + statistics.monoColor + 
+                "  Multi : " + statistics.multiColor + 
+                "  Colorless : "+statistics.colorless);
 		allLabel.setForeground(textColor);
 		lines.add(allLabel);
 							 
@@ -148,7 +145,6 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 	
 	@Override
 	public void stateChanged(ChangeEvent event) {
-
 		setPlayer((MagicPlayerDefinition)event.getSource());
 	}
 }
