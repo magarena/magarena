@@ -50,32 +50,35 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 		final int maxHeight=size.height-spacing*2;
 		int x=spacing;
 		result.setBoundary(ResolutionProfileType.TournamentPlayersViewer,
-                new Rectangle(x,spacing,PLAYERS_VIEWER_WIDTH,maxHeight-PLAY_BUTTON_HEIGHT-spacing));
-		result.setBoundary(ResolutionProfileType.TournamentNewButton,
-                new Rectangle(x,size.height-spacing-PLAY_BUTTON_HEIGHT,PLAYERS_VIEWER_WIDTH,PLAY_BUTTON_HEIGHT));
-		x+=PLAYERS_VIEWER_WIDTH+spacing;
+                new Rectangle(x,spacing,PLAYERS_VIEWER_WIDTH,maxHeight - PLAY_BUTTON_HEIGHT - spacing));
+		int y = size.height;
+        y -= spacing + PLAY_BUTTON_HEIGHT;
+        result.setBoundary(ResolutionProfileType.TournamentNewButton,
+                new Rectangle(x,y,PLAYERS_VIEWER_WIDTH,PLAY_BUTTON_HEIGHT));
 
+        x+=PLAYERS_VIEWER_WIDTH+spacing;
 		final int deckWidth=Math.min(
                 DECK_VIEWER_WIDTH,
                 size.width-spacing*5-PLAYERS_VIEWER_WIDTH-CARD_VIEWER_WIDTH-TOURNAMENT_VIEWER_WIDTH);
-
 		result.setBoundary(ResolutionProfileType.TournamentDeckViewers,
-                new Rectangle(x,spacing,deckWidth,maxHeight));
+                new Rectangle(x,spacing,deckWidth,maxHeight - PLAY_BUTTON_HEIGHT - spacing));
+		y = size.height;
+        y -= spacing + PLAY_BUTTON_HEIGHT;
+		result.setBoundary(ResolutionProfileType.TournamentPlayButton,
+                new Rectangle(x,y,deckWidth,PLAY_BUTTON_HEIGHT));
+
 		x+=deckWidth+spacing;
 		result.setBoundary(ResolutionProfileType.TournamentCardViewer,
                 new Rectangle(x,spacing,CARD_VIEWER_WIDTH,CARD_VIEWER_HEIGHT));
 
 		x=size.width-spacing-TOURNAMENT_VIEWER_WIDTH;
-		int y=spacing;
+		y=spacing;
 		result.setBoundary(ResolutionProfileType.TournamentDeckStatisticsViewer,
                 new Rectangle(x,y,TOURNAMENT_VIEWER_WIDTH,DECK_STATISTICS_VIEWER_HEIGHT));
 		y+=DECK_STATISTICS_VIEWER_HEIGHT+spacing;
 		result.setBoundary(ResolutionProfileType.TournamentDeckStrengthViewer,
                 new Rectangle(x,y,TOURNAMENT_VIEWER_WIDTH,DECK_STRENGTH_VIEWER_HEIGHT));
-		y=size.height-spacing-PLAY_BUTTON_HEIGHT;
-		result.setBoundary(ResolutionProfileType.TournamentPlayButton,
-                new Rectangle(x,y,TOURNAMENT_VIEWER_WIDTH,PLAY_BUTTON_HEIGHT));
-		y-=TOURNAMENT_VIEWER_HEIGHT+spacing;
+		y+=DECK_STRENGTH_VIEWER_HEIGHT+spacing;
 		result.setBoundary(ResolutionProfileType.TournamentDifficultyViewer,
                 new Rectangle(x,y,TOURNAMENT_VIEWER_WIDTH,TOURNAMENT_VIEWER_HEIGHT));
 					
