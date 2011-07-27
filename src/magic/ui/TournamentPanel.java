@@ -55,7 +55,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		statsViewer=new DeckStatisticsViewer();
 		add(statsViewer);
 		
-		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(tournament.getConfiguration().getCube());
+		final MagicCubeDefinition cubeDefinition=
+            CubeDefinitions.getInstance().getCubeDefinition(tournament.getConfiguration().getCube());
 		deckViewers=new DeckViewers(frame,statsViewer,cardViewer,tournament.isEditable(),cubeDefinition);
 		add(deckViewers);
 		
@@ -71,7 +72,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		tournamentDifficultyViewer=new TournamentDifficultyViewer(tournament);
 		add(tournamentDifficultyViewer);
 
-		playButton=new JButton("PLAY");
+		playButton=new JButton("PLAY GAME");
 		playButton.setFont(FontsAndBorders.FONT4);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
@@ -89,10 +90,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		add(backgroundLabel);
 				
 		this.addComponentListener(new ComponentAdapter() {
-
 			@Override
 			public void componentResized(ComponentEvent e) {
-
 				resizeComponents();
 			}
 		});				
@@ -119,8 +118,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		statsViewer.setBounds(result.getBoundary(ResolutionProfileType.TournamentDeckStatisticsViewer));
 		strengthViewer.setBounds(result.getBoundary(ResolutionProfileType.TournamentDeckStrengthViewer));
 		tournamentDifficultyViewer.setBounds(result.getBoundary(ResolutionProfileType.TournamentDifficultyViewer));
-		playButton.setBounds(result.getBoundary(ResolutionProfileType.TournamentPlayButton));
 		newButton.setBounds(result.getBoundary(ResolutionProfileType.TournamentNewButton));
+		playButton.setBounds(result.getBoundary(ResolutionProfileType.TournamentPlayButton));
 	}
 	
 	public MagicPlayerDefinition getSelectedPlayer() {
