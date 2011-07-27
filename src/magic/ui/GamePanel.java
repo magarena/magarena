@@ -56,7 +56,6 @@ public final class GamePanel extends JPanel {
 	private final MagicGame game;
 	private final ZoneBackgroundLabel backgroundLabel;
 	private final GameController controller;
-	private final Thread controllerThread;
 	private final ViewerInfo viewerInfo;
 	private final PlayerViewer playerViewer;
 	private final PlayerViewer opponentViewer;
@@ -231,7 +230,7 @@ public final class GamePanel extends JPanel {
 		updateView();
 
         //start runGame in background using SwingWorker
-        controllerThread = new Thread(){
+        (new Thread(){
             @Override
             public void run() {
                 //reduce priority
@@ -241,9 +240,7 @@ public final class GamePanel extends JPanel {
                 controller.runGame();
                 System.err.println("Stopping game...");
             }
-        };
-        
-        controllerThread.start();
+        }).start();
 	}
 	
 	public boolean canClickAction() {
