@@ -60,7 +60,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		add(deckViewers);
 		
 		strengthViewer=new DeckStrengthViewer(tournament);
-		//add(strengthViewer);
+		add(strengthViewer);
 		
 		playersViewer=new PlayersViewer(tournament);
 		playersViewer.addChangeListener(deckViewers);
@@ -71,7 +71,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		tournamentDifficultyViewer=new TournamentDifficultyViewer(tournament);
 		add(tournamentDifficultyViewer);
 
-		playButton=new JButton("PLAY GAME");
+		playButton=new JButton("PLAY");
 		playButton.setFont(FontsAndBorders.FONT4);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
