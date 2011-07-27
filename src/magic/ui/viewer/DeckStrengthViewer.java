@@ -39,7 +39,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
 	private static final String PURPOSE=
 		"<html><body>"+
-		"Determine the win% of your deck vs opponent's over #games and AI level."+
+		"Determine the win% of your deck vs opponent's for given number of games and AI level."+
 		"</body></html>";
 	
 	private static final Border INPUT_BORDER=BorderFactory.createEmptyBorder(0,10,0,10);
