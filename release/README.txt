@@ -43,6 +43,18 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.16b (July 27, 2011)
+=============
+This is a bug fix release.
+
+- deck strength viewer is back due to popular demand, moved PLAY button next
+  to NEW button to make space for it on netbook resolution
+- fixed color of normal selection to green and combat selection to red
+- fixed a GUI crash bug
+- fixed a bug where the game logic thread would get stuck on non-Linux systems
+- implmented a better way to increase responsiveness of the GUI but decreasing
+  the priority of the game logic thread
+
 Release 1.16 (July 25, 2011)
 ============
 - 918 cards in total

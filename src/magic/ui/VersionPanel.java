@@ -28,7 +28,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	
-	private static final String VERSION = "1.16";
+	private static final String VERSION = "1.16b";
 	private static final String VERSION_TEXT = "Magarena " + VERSION;
 
 	private static final Border LOGO_BORDER=BorderFactory.createMatteBorder(2,2,2,2,new Color(0x8C,0x78,0x53));
