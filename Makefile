@@ -95,6 +95,9 @@ jar: $(MAG)
 %.g: $(MAG)
 	$(JAVA) -DrndSeed=$* magic.MagicMain |& tee $*.log
 
+%.t: $(MAG)
+	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain |& tee $*.log
+
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
 
