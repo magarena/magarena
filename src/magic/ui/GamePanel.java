@@ -56,6 +56,7 @@ public final class GamePanel extends JPanel {
 	private final MagicGame game;
 	private final ZoneBackgroundLabel backgroundLabel;
 	private final GameController controller;
+	private final Thread controllerThread;
 	private final ViewerInfo viewerInfo;
 	private final PlayerViewer playerViewer;
 	private final PlayerViewer opponentViewer;
@@ -230,18 +231,19 @@ public final class GamePanel extends JPanel {
 		updateView();
 
         //start runGame in background using SwingWorker
-        (new SwingWorker<Void, Void>(){
+        controllerThread = new Thread(){
             @Override
-            protected Void doInBackground() {
+            public void run() {
                 //reduce priority
                 final Thread cur=Thread.currentThread();
-                cur.setPriority(Thread.MIN_PRIORITY + 1);
+                cur.setPriority(Thread.MIN_PRIORITY);
                 System.err.println("Starting game...");
                 controller.runGame();
                 System.err.println("Stopping game...");
-                return null;
             }
-        }).execute();
+        };
+        
+        controllerThread.start();
 	}
 	
 	public boolean canClickAction() {
@@ -264,12 +266,7 @@ public final class GamePanel extends JPanel {
 	void showLogBook(final boolean visible) {
 		if (visible) {
 			logBookViewer.update();
-			SwingUtilities.invokeLater(new Runnable() {
-				@Override
-				public void run() {
-					logBookViewer.setVisible(true);
-				}
-			});
+            logBookViewer.setVisible(true);
 		} else {
 			logBookViewer.setVisible(false);	
 		}		
