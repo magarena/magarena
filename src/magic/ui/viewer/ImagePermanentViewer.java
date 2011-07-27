@@ -185,9 +185,11 @@ public class ImagePermanentViewer extends JPanel {
 
 		final Color choiceColor;
 		if (viewer.getController().isCombatChoice()) {
-			choiceColor=ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);			
+			choiceColor=Color.RED; 
+            //ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);			
 		} else {
-			choiceColor=ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+			choiceColor=Color.GREEN;
+            //ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 		}
 		
 		g.setFont(FontsAndBorders.FONT1);

@@ -134,7 +134,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			return;
 		}
 		
-		final Color choiceColor=ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+		final Color choiceColor=Color.GREEN;
+        //ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 		
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
