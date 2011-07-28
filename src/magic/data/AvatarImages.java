@@ -54,7 +54,7 @@ public class AvatarImages {
 		return new PlayerAvatar(image);
 	}
 	
-	private synchronized void loadAvatars() {
+	private void loadAvatars() {
 		final String avatar=GeneralConfig.getInstance().getAvatar();
 		if (!avatar.equals(current)) {
 			current=avatar;
@@ -63,7 +63,6 @@ public class AvatarImages {
 				Arrays.sort(files);
 				avatars=new PlayerAvatar[files.length];
 				for (int index=0;index<files.length;index++) {
-					
 					avatars[index]=loadAvatar(files[index]);
 				}		
 			} else {
@@ -74,7 +73,7 @@ public class AvatarImages {
 		}
 	}
 	
-	public synchronized ImageIcon getAvatarIcon(int index,final int size) {
+	public ImageIcon getAvatarIcon(int index,final int size) {
 		loadAvatars();
 		if (index<0) {
 			index=0;
