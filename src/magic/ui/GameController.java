@@ -38,12 +38,12 @@ public class GameController {
 	private final boolean testMode;
 	private final boolean selfMode;
 	private final AtomicBoolean running;
+	private final AtomicBoolean gameConceded;
 	private final Collection<ChoiceViewer> choiceViewers;
 	private Set<Object> validChoices;
 	private CardViewer cardViewer;
 	private CardViewer imageCardViewer;
 	private GameViewer gameViewer;
-	private AtomicBoolean gameConceded = new AtomicBoolean(false);
 	private boolean undoClicked=false;
 	private boolean actionClicked=false;
 	private boolean combatChoice=false;
@@ -56,8 +56,9 @@ public class GameController {
 		this.game=game;
 		testMode = (gamePanel==null);
         selfMode = System.getProperty("selfMode") != null;
-		running=new AtomicBoolean(false);
-		choiceViewers=new ArrayList<ChoiceViewer>();
+		running =new AtomicBoolean(false);
+        gameConceded = new AtomicBoolean(false);
+		choiceViewers = new ArrayList<ChoiceViewer>();
 		clearValidChoices();
 	}
 	
@@ -108,7 +109,7 @@ public class GameController {
 		try {
 			wait();
 			if (undoClicked) {
-				undoClicked=false;
+				undoClicked = false;
 				return true;
 			}
 			return false;
@@ -131,9 +132,9 @@ public class GameController {
 	}
 	
 	public synchronized void actionClicked() {
-		undoClicked=false;
-		actionClicked=true;
-		choiceClicked=null;
+		undoClicked = false;
+		actionClicked = true;
+		choiceClicked = null;
 		notifyAll();
 	}
 	
@@ -145,9 +146,9 @@ public class GameController {
 	
 	public synchronized void undoClicked() {
 		if (game.hasUndoPoints()) {
-			undoClicked=true;
-			actionClicked=false;
-			choiceClicked=null;
+			undoClicked = true;
+			actionClicked = false;
+			choiceClicked = null;
 			setSourceCardDefinition(null);
 			clearValidChoices();
 			notifyAll();
@@ -156,9 +157,9 @@ public class GameController {
 
 	public synchronized void processClick(final Object choice) {
 		if (validChoices.contains(choice)) {
-			undoClicked=false;
-			actionClicked=false;
-			choiceClicked=choice;
+			undoClicked = false;
+			actionClicked = false;
+			choiceClicked = choice;
             hideInfo();
 			notifyAll();
 		}
