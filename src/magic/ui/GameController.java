@@ -81,6 +81,27 @@ public class GameController {
             }
         });
 	}
+    
+    public static void pause(int t) {
+        try {
+            Thread.sleep(t);
+        } catch (final Exception ex) {
+            throw new RuntimeException(ex.getMessage());
+        }
+    }
+
+
+    private static void invokeAndWait(final Runnable task) {
+        if (SwingUtilities.isEventDispatchThread()) {
+            task.run();
+            return;
+        }
+        try {
+            SwingUtilities.invokeAndWait(task);
+        } catch (final Exception ex) {
+            throw new RuntimeException(ex.getMessage());
+        }
+    }
 	
 	/** Returns true when undo was clicked. */
 	public synchronized boolean waitForInputOrUndo() {
@@ -92,7 +113,7 @@ public class GameController {
 			}
 			return false;
 		} catch (final InterruptedException ex) {
-			return false;
+            throw new RuntimeException(ex.getMessage());
 		}
 	}
 	
@@ -151,7 +172,7 @@ public class GameController {
 		return choiceClicked;
 	}
 
-    public synchronized void setMaxTestGameDuration(final long duration) {
+    public void setMaxTestGameDuration(final long duration) {
         MAX_TEST_MODE_DURATION = duration;
     }
 
@@ -329,7 +350,12 @@ public class GameController {
 		if (!testMode) {
 			disableActionButton(true);
 			showMessage(event.getSource(),event.getChoiceDescription());
-		}
+            GameController.invokeAndWait(new Runnable() {
+                public void run() {
+                    //do nothing, ensure that event dispatch queue is cleared
+                }
+            });
+        }
 
 		//dynamically get the AI based on the player's index
 		final MagicPlayer player = event.getPlayer();
@@ -347,7 +373,7 @@ public class GameController {
 		return choiceResults;
 	}
 
-	private synchronized void executeNextEventWithChoices(final MagicEvent event) {
+	private void executeNextEventWithChoices(final MagicEvent event) {
 		final Object[] choiceResults;
 		if (selfMode || testMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
 			choiceResults = getArtificialNextEventChoiceResults(event);
@@ -364,7 +390,7 @@ public class GameController {
 		game.executeNextEvent(choiceResults);
 	}
 	
-	public synchronized void resetGame() {
+	public void resetGame() {
 		if (game.hasUndoPoints()) {
 			resetGame=true;
 			undoClicked();
@@ -396,7 +422,7 @@ public class GameController {
 		running.set(false);
 	}
 	
-	public synchronized void runGame() {
+	public void runGame() {
 		final long startTime=System.currentTimeMillis();
 		
 		running.set(true);
