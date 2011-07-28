@@ -104,7 +104,7 @@ public class MCTSAI implements MagicAI {
         }
     }
 
-    public synchronized Object[] findNextEventChoiceResults(
+    public Object[] findNextEventChoiceResults(
             final MagicGame startGame, 
             final MagicPlayer scorePlayer) {
 
