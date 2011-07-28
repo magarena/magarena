@@ -27,7 +27,7 @@ public class RandomAI implements MagicAI {
         }
     }
     
-    public synchronized Object[] findNextEventChoiceResults(
+    public Object[] findNextEventChoiceResults(
             final MagicGame game, 
             final MagicPlayer scorePlayer) {
 
