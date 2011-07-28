@@ -72,7 +72,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 		}
 	}
 	
-	private static File nextFile() {
+	private synchronized static File rndFile() {
 		if (imageFiles.isEmpty()) {
 			return null;
 		}
@@ -88,7 +88,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	public ImageViewer() {
 		setOpaque(false);
 		BufferedImage readImage=ThemeFactory.getInstance().getCurrentTheme().getLogoTexture();
-        final File imageFile=nextFile();
+        final File imageFile=rndFile();
 		try {
 			if (imageFile!=null) {
 				readImage=ImageIO.read(imageFile);
