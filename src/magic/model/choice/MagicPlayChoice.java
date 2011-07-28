@@ -108,11 +108,7 @@ public class MagicPlayChoice extends MagicChoice {
         //anything but resolve triggers
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
             if (!game.getStack().isEmpty()) {
-                try {
-                    Thread.sleep(1500);
-                } catch (final Exception err) {
-                    System.err.println("ERROR! Exception caught in MagicPlayChoice");
-                }
+                GameController.pause(1500);
             }
 			return PASS_CHOICE_RESULTS;
         }
@@ -141,11 +137,7 @@ public class MagicPlayChoice extends MagicChoice {
             if (skip) {
                 //if there is an item on the stack, pause for 1.5s
                 if (!game.getStack().isEmpty()) {
-                    try {
-                         Thread.sleep(1500);
-                    } catch (final Exception err) {
-                        System.err.println("ERROR! Exception caught in MagicPlayChoice");
-                    }
+                    GameController.pause(1500);
                 }
     			return PASS_CHOICE_RESULTS;
             }
@@ -156,11 +148,7 @@ public class MagicPlayChoice extends MagicChoice {
              game.getTurnPlayer() == player &&                
              game.getPassPriority()) {
             if (!game.getStack().isEmpty()) {
-                try {
-                     Thread.sleep(1500);
-                } catch (final Exception err) {
-
-                }
+                GameController.pause(1500);
             }
             return PASS_CHOICE_RESULTS;
         }
