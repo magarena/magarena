@@ -18,12 +18,16 @@ import magic.ui.widget.FontsAndBorders;
 
 public class ImageDrawingUtils {
 
-	public static void drawCostInfo(final Graphics g,final ImageObserver observer,final MagicManaCost cost,final int x1,final int x2,final int y) {
-		
+	public static void drawCostInfo(
+            final Graphics g,
+            final ImageObserver observer,
+            final MagicManaCost cost,
+            final int x1,
+            final int x2,
+            final int y) {
 		final List<ImageIcon> icons=cost.getIcons();
 		int x=x2-icons.size()*16;
 		for (final ImageIcon icon : icons) {
-
 			if (x>=x1) {
 				g.drawImage(icon.getImage(),x,y,observer);
 			}
@@ -31,11 +35,14 @@ public class ImageDrawingUtils {
 		}
 	}
 
-	public static int drawManaInfo(final Graphics g,final ImageObserver observer,final MagicCardDefinition cardDefinition,int ax,int ay) {
-
+	public static int drawManaInfo(
+            final Graphics g,
+            final ImageObserver observer,
+            final MagicCardDefinition cardDefinition,
+            int ax,
+            int ay) {
 		final List<ImageIcon> icons=new ArrayList<ImageIcon>();
 		for (final MagicColor color : MagicColor.values()) {
-
 			if (cardDefinition.getManaSource(color)>0) {
 				icons.add(color.getManaType().getIcon(true));
 			}
@@ -49,7 +56,6 @@ public class ImageDrawingUtils {
         }
 		if (!icons.isEmpty()) {
 			for (final ImageIcon icon : icons) {
-				
 				g.drawImage(icon.getImage(),ax,ay,observer);
 				ax+=16;
 			}
@@ -57,13 +63,18 @@ public class ImageDrawingUtils {
 		return ax;
 	}
 
-	public static int drawAbilityInfo(final Graphics g,final ImageObserver observer,final long abilityFlags,int ax,int ay) {
-
+	public static int drawAbilityInfo(
+            final Graphics g,
+            final ImageObserver observer,
+            final long abilityFlags,
+            int ax,
+            int ay) {
 		if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
 			g.drawImage(IconImages.FLYING.getImage(),ax,ay,observer);
 			ax+=16;
 		}
-		if (MagicAbility.FirstStrike.hasAbility(abilityFlags)||MagicAbility.DoubleStrike.hasAbility(abilityFlags)) {				
+		if (MagicAbility.FirstStrike.hasAbility(abilityFlags)||
+            MagicAbility.DoubleStrike.hasAbility(abilityFlags)) {				
 			g.drawImage(IconImages.STRIKE.getImage(),ax,ay,observer);
 			ax+=16;
 		}
@@ -80,9 +91,15 @@ public class ImageDrawingUtils {
 		return ax;
 	}
 	
-	public static void drawCreatureInfo(final Graphics g,final FontMetrics metrics,
-			final String pt,final int ptWidth,final String damage,final int x,final int y,final boolean flip) {
-
+	public static void drawCreatureInfo(
+            final Graphics g,
+            final FontMetrics metrics,
+			final String pt,
+            final int ptWidth,
+            final String damage,
+            final int x,
+            final int y,
+            final boolean flip) {
 		g.setColor(FontsAndBorders.GRAY2);
 		g.fillRect(x,y,ptWidth+4,damage!=null?32:18);
 		g.setColor(Color.DARK_GRAY);
