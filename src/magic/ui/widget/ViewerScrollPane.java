@@ -27,7 +27,6 @@ public class ViewerScrollPane extends JScrollPane {
 	}
 	
 	public synchronized JPanel getContent() {
-		
 		if (contentPanel==null) {
 			contentPanel=new JPanel();
 			contentPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
@@ -38,7 +37,6 @@ public class ViewerScrollPane extends JScrollPane {
 	}
 	
 	public synchronized void switchContent() {
-
 		if (contentPanel!=null) {
 			final Rectangle rect=getViewport().getViewRect();
 			final JPanel mainPanel=new JPanel(new BorderLayout());
