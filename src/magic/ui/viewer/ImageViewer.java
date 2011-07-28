@@ -72,13 +72,12 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 		}
 	}
 	
-	private static synchronized File nextFile() {
+	private static File nextFile() {
 		if (imageFiles.isEmpty()) {
 			return null;
 		}
 		if (imageIndices.size()==0) {
 			for (int index=0;index<imageFiles.size();index++) {
-				
 				imageIndices.add(index);
 			}
 		}
@@ -89,12 +88,14 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	public ImageViewer() {
 		setOpaque(false);
 		BufferedImage readImage=ThemeFactory.getInstance().getCurrentTheme().getLogoTexture();
+        final File imageFile=nextFile();
 		try {
-			final File imageFile=nextFile();
 			if (imageFile!=null) {
 				readImage=ImageIO.read(imageFile);
 			}			
-		} catch (final Exception ex) {}
+		} catch (final Exception ex) {
+            System.err.println("WARNING. Unable to read from " + imageFile.getName());
+        }
 		
 		image=readImage;
 		if (image!=null) {
