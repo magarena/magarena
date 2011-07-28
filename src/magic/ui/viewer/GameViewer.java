@@ -126,35 +126,29 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 	}
 	
 	public void showMessage(final String message) {
-
 		final TextLabel messageLabel=new TextLabel(message,TEXT_WIDTH,true);
 		showComponent(messageLabel);
 	}
 			
 	public MagicGame getGame() {
-		
 		return game;
 	}
 	
 	public boolean isActionEnabled() {
-		
 		return actionEnabled;
 	}
 	
 	public boolean isUndoEnabled() {
-		
 		return undoButton.isEnabled();
 	}
 	
 	private void enableUndoButton(final boolean thinking) {
-
 		final int undoPoints=game.getNrOfUndoPoints();
 		final boolean allowUndo=undoPoints>0&&!thinking;
 		undoButton.setEnabled(allowUndo);
 	}
 	
 	public void enableButton(final ImageIcon icon) {
-
 		actionEnabled=true;
 		enableUndoButton(false);
 		actionButton.setIcon(icon);
@@ -163,7 +157,6 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 	}
 	
 	public void disableButton(final boolean thinking) {
-
 		actionEnabled=false;
 		enableUndoButton(thinking);
 		actionCardLayout.show(actionPanel,thinking?"1":"0");		
@@ -172,7 +165,6 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-		
 		final Object source=event.getSource();
 		if (source==actionButton) {
 			controller.actionClicked();
