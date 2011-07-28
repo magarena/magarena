@@ -43,7 +43,7 @@ public class GameController {
 	private CardViewer cardViewer;
 	private CardViewer imageCardViewer;
 	private GameViewer gameViewer;
-	private boolean gameConceded=false;
+	private AtomicBoolean gameConceded = new AtomicBoolean(false);
 	private boolean undoClicked=false;
 	private boolean actionClicked=false;
 	private boolean combatChoice=false;
@@ -379,7 +379,7 @@ public class GameController {
 			choiceResults = getArtificialNextEventChoiceResults(event);
 		} else {
 			choiceResults = getPlayerNextEventChoiceResults(event);
-			if (gameConceded) {
+			if (gameConceded.get()) {
 				return;
 			}
 			if (choiceResults==MagicChoice.UNDO_CHOICE_RESULTS) {
@@ -398,10 +398,10 @@ public class GameController {
 	}
 	
 	public synchronized void concede() {
-		if (!gameConceded&&!game.isFinished()) {
+		if (!gameConceded.get() && !game.isFinished()) {
 			game.setLosingPlayer(game.getPlayer(0));
 			game.clearUndoPoints();
-			gameConceded=true;
+			gameConceded.set(true);
 			undoClicked=true;
 			notifyAll();
 		}
@@ -438,7 +438,7 @@ public class GameController {
 				showMessage(null,
                     "{L} " + 
                     game.getLosingPlayer() + " " + 
-                    (gameConceded ? "conceded" : "lost" ) + 
+                    (gameConceded.get() ? "conceded" : "lost" ) + 
                     " the game.");
 
                 if (game.getLosingPlayer().getIndex() == 0) {
