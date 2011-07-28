@@ -3064,7 +3064,7 @@ public class CardEventDefinitions {
 				final MagicPermanent permanent=action.getPermanent();
 				final MagicPlayer player=permanent.getController();
 				final MagicEvent triggerEvent=new MagicEvent(permanent,player,
-						MagicTargetChoice.TARGET_NONBASIC_LAND,new MagicDestroyTargetPicker(false),
+						MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,new MagicDestroyTargetPicker(false),
 						MagicEvent.NO_DATA,GOBLIN_RUINBLASTER_ACTION,"Destroy target nonbasic land$.");
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
 			}
