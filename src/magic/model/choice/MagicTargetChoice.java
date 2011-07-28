@@ -18,40 +18,58 @@ import magic.ui.GameController;
 public class MagicTargetChoice extends MagicChoice {
 
 	public static final MagicTargetChoice TARGET_SPELL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.None,"target spell");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.None,
+                "target spell");
 	public static final MagicTargetChoice NEG_TARGET_SPELL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.Negative,"target spell");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.Negative,
+                "target spell");
 	public static final MagicTargetChoice NEG_TARGET_RED_GREEN_SPELL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_RED_GREEN_SPELL,true,MagicTargetHint.Negative,"target red or green spell");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_RED_GREEN_SPELL,true,MagicTargetHint.Negative,
+                "target red or green spell");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_SPELL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_SPELL,true,MagicTargetHint.Negative,"target creature spell");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_SPELL,true,MagicTargetHint.Negative,
+                "target creature spell");
 	public static final MagicTargetChoice NEG_TARGET_NONCREATURE_SPELL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE_SPELL,true,MagicTargetHint.Negative,"target noncreature spell");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE_SPELL,true,MagicTargetHint.Negative,
+                "target noncreature spell");
 	public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_SPELL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,true,MagicTargetHint.None,"target instant or sorcery spell");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,true,MagicTargetHint.None,
+                "target instant or sorcery spell");
 	public static final MagicTargetChoice NEG_TARGET_INSTANT_OR_SORCERY_SPELL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,true,MagicTargetHint.Negative,"target instant or sorcery spell");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,true,MagicTargetHint.Negative,
+                "target instant or sorcery spell");
 	public static final MagicTargetChoice TARGET_PLAYER=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_PLAYER,true,MagicTargetHint.None,"target player");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_PLAYER,true,MagicTargetHint.None,
+                "target player");
 	public static final MagicTargetChoice TARGET_OPPONENT=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_OPPONENT,true,MagicTargetHint.None,"target opponent");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_OPPONENT,true,MagicTargetHint.None,
+                "target opponent");
 	public static final MagicTargetChoice POS_TARGET_PLAYER=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_PLAYER,true,MagicTargetHint.Positive,"target player");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_PLAYER,true,MagicTargetHint.Positive,
+                "target player");
 	public static final MagicTargetChoice NEG_TARGET_PLAYER=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_PLAYER,true,MagicTargetHint.Negative,"target player");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_PLAYER,true,MagicTargetHint.Negative,
+                "target player");
 	public static final MagicTargetChoice NEG_TARGET_SPELL_OR_PERMANENT=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL_OR_PERMANENT,true,MagicTargetHint.Negative,"target spell or permanent");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL_OR_PERMANENT,true,MagicTargetHint.Negative,
+                "target spell or permanent");
 	public static final MagicTargetChoice TARGET_PERMANENT=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.None,"target permanent");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.None,
+                "target permanent");
 	public static final MagicTargetChoice TARGET_PERMANENT_YOU_CONTROL=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,true,MagicTargetHint.None,"target permanent you control");	
+		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,true,MagicTargetHint.None,
+                "target permanent you control");	
 	public static final MagicTargetChoice NEG_TARGET_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.Negative,"target permanent");
 	public static final MagicTargetChoice NEG_TARGET_BLACK_RED_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_BLACK_RED_PERMANENT,true,MagicTargetHint.Negative,"target black or red permanent");
-	public static final MagicTargetChoice TARGET_NONBASIC_LAND=
+    
+    public static final MagicTargetChoice TARGET_NONBASIC_LAND=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.None,"target non basic land");
-	public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
+	public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.Negative,"target non basic land");
+
+    public static final MagicTargetChoice TARGET_NONLAND_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.None,"target nonland permanent");
 	public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
