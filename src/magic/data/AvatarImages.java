@@ -54,7 +54,7 @@ public class AvatarImages {
 		return new PlayerAvatar(image);
 	}
 	
-	private void loadAvatars() {
+	private synchronized void loadAvatars() {
 		final String avatar=GeneralConfig.getInstance().getAvatar();
 		if (!avatar.equals(current)) {
 			current=avatar;
