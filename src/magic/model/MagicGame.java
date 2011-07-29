@@ -150,14 +150,13 @@ public class MagicGame {
 		this.step=game.step;
 
         //copying primitives, array of primitive
-		//this.identifiers=Arrays.copyOf(game.identifiers,game.identifiers.length);
         this.time = game.time;
-        this.turn=game.turn;
-		this.startTurn=game.startTurn;
-		this.landPlayed=game.landPlayed;
-		this.priorityPassed=game.priorityPassed;
-        this.priorityPassedCount=game.priorityPassedCount;
-		this.stateCheckRequired=game.stateCheckRequired;
+        this.turn = game.turn;
+		this.startTurn = game.startTurn;
+		this.landPlayed = game.landPlayed;
+		this.priorityPassed = game.priorityPassed;
+        this.priorityPassedCount = game.priorityPassedCount;
+		this.stateCheckRequired = game.stateCheckRequired;
 		
         //copied and stored in copyMap
         final MagicCopyMap copyMap=new MagicCopyMap();		
@@ -481,6 +480,9 @@ public class MagicGame {
 
         //performing actions update the score
 		score += action.getScore(scorePlayer);
+
+        //increment the time
+        incTime();
 	}
 		
 	public void undoActions() {
@@ -762,7 +764,6 @@ public class MagicGame {
 	}
 						
 	public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
-		//return new MagicPermanent(createIdentifier(MagicIdentifierType.Permanent),card,controller);
 		return new MagicPermanent(incTime(),card,controller);
 	}
 	
@@ -1030,7 +1031,6 @@ public class MagicGame {
 	}
 	
 	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
-		//final long id=createIdentifier(MagicIdentifierType.PermanentTrigger);
 		final long id=incTime();
 		final MagicPermanentTrigger permanentTrigger=new MagicPermanentTrigger(id,permanent,trigger);
 		triggers.get(trigger.getType()).add(permanentTrigger);
