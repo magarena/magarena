@@ -1,6 +1,5 @@
 package magic.data;
 
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,12 +19,12 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	
 	private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
 	private static final int MAX_IMAGES=100;
-	private final Map<String,Image> scaledImages;
-	private final Map<String,Image> origImages;
+	private final Map<String,BufferedImage> scaledImages;
+	private final Map<String,BufferedImage> origImages;
 	
 	public HighQualityCardImagesProvider() {
-		scaledImages = new magic.ai.StateCache<String,Image>(100);
-		origImages = new magic.ai.StateCache<String,Image>(100);
+		scaledImages = new magic.ai.StateCache<String,BufferedImage>(100);
+		origImages = new magic.ai.StateCache<String,BufferedImage>(100);
 	}
 	
 	private static final String getFilename(
@@ -58,7 +57,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	}
 	
 	@Override
-	public Image getImage(
+	public BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
             final int index,
             boolean orig) {
@@ -71,14 +70,13 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 
         //put image into the cache
 		if (!origImages.containsKey(filename)) {
-            final Image origImage = loadCardImage(filename);
+            final BufferedImage origImage = loadCardImage(filename);
             origImages.put(filename, origImage);
 
-            final Image scaledImage = origImage.getScaledInstance(
-                        CARD_WIDTH,
-                        CARD_HEIGHT,
-                        Image.SCALE_SMOOTH
-                    );
+            final BufferedImage scaledImage = 
+                (origImage.getHeight() == CARD_HEIGHT && origImage.getWidth() == CARD_WIDTH) ?
+                    origImage :
+                    magic.GraphicsUtilities.createCompatibleImage(origImage, CARD_WIDTH, CARD_HEIGHT);
             scaledImages.put(filename, scaledImage);
 		}
 
