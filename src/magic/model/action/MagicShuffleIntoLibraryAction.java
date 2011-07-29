@@ -10,22 +10,19 @@ public class MagicShuffleIntoLibraryAction extends MagicAction {
 	private MagicCardList oldLibrary;
 	
 	public MagicShuffleIntoLibraryAction(final MagicCard card) {
-		
 		this.card=card;		
 	}
 
 	@Override
 	public void doAction(final MagicGame game) {
-
 		final MagicCardList library=card.getOwner().getLibrary();
 		oldLibrary=new MagicCardList(library);
 		library.addToTop(card);
-		library.shuffle();
+		library.shuffle(game.incTime());
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		card.getOwner().getLibrary().setCards(oldLibrary);
 	}
 }

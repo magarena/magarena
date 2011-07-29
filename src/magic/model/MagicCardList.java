@@ -115,10 +115,6 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return lands == 16 && total == 40;
 	}
 	
-	public void shuffle() {
-        shuffle(MagicGame.getInstance().incTime());
-	}
-	
     public void shuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
 		final MagicCardList oldCards = new MagicCardList(this);
@@ -130,10 +126,6 @@ public class MagicCardList extends ArrayList<MagicCard> {
 			add(card);
 		}
 	}
-	
-    public void smartShuffle() {
-        smartShuffle(size());
-    }
 	
 	public void smartShuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
