@@ -14,7 +14,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -199,7 +198,7 @@ public class ImagePermanentViewer extends JPanel {
 		for (int index=0;index<linkedScreenRectangles.size();index++) {
 
 			final PermanentViewerInfo linkedInfo=linkedInfos.get(index);
-			final Image image=
+			final BufferedImage image=
                 HighQualityCardImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
 			final Rectangle linkedRect=linkedScreenRectangles.get(index);
 			final int x1=linkedRect.x;
