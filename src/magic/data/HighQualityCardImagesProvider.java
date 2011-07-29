@@ -44,12 +44,13 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         final File imageFile = new File(filename);
         if (imageFile.isFile()) {
             try {
-                final BufferedImage fullImage=ImageIO.read(imageFile);
-                return fullImage;
-            } catch (Exception ex) {
+                return ImageIO.read(imageFile);
+            } catch (final Exception ex) {
+                System.err.println("ERROR! Unable to read from " + filename);
                 return IconImages.MISSING_CARD;
             }
         } else {
+            System.err.println("ERROR! " + filename + " is not a file");
 			return IconImages.MISSING_CARD;
 		}
 	}
