@@ -116,7 +116,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 	}
 	
 	public void shuffle() {
-        shuffle(MagicGame.getInstance().getTime());
+        shuffle(MagicGame.getInstance().incTime());
 	}
 	
     public void shuffle(final long seed) {

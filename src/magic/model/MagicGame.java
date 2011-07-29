@@ -239,7 +239,6 @@ public class MagicGame {
             getPayedCost().getX(),
             stack.getItemsId(),
             events.getEventsId(),
-            time,
             //identifiers[0],
             //identifiers[1],
             //identifiers[2],
@@ -480,9 +479,6 @@ public class MagicGame {
 
         //performing actions update the score
 		score += action.getScore(scorePlayer);
-
-        //increment the time
-        incTime();
 	}
 		
 	public void undoActions() {
