@@ -12,7 +12,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.image.BufferedImage;
-import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -146,7 +145,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			final MagicCard card=cardList.get(index);
 			final MagicCardDefinition cardDefinition=card.getCardDefinition();
 			final Point point=cardPoints.get(index);
-			final Image image=
+			final BufferedImage image=
                 HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex(),false);
 			final int x1=point.x;
 			final int y1=point.y;
