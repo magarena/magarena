@@ -50,7 +50,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
                 return IconImages.MISSING_CARD;
             }
         } else {
-            System.err.println("ERROR! " + filename + " is not a file");
+            //System.err.println("ERROR! " + filename + " is not a file");
 			return IconImages.MISSING_CARD;
 		}
 	}
