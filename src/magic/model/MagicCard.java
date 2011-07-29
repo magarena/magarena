@@ -72,7 +72,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 		if (known) {
 			return cardDefinition;
 		} else {
-			return MagicCardDefinition.EMPTY;
+			return MagicCardDefinition.UNKNOWN;
 		}
 	}
 		

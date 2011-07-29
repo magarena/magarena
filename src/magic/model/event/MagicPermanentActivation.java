@@ -86,7 +86,7 @@ public abstract class MagicPermanentActivation extends MagicActivation {
 	@Override
 	public final MagicTargetChoice getTargetChoice() {
 		// Not the cleanest way to do this by far...
-		final MagicCard card=new MagicCard(MagicCardDefinition.EMPTY,null,0);
+		final MagicCard card=new MagicCard(MagicCardDefinition.UNKNOWN,null,0);
 		final MagicPermanent permanent=new MagicPermanent(0,card,null);
 		return getPermanentEvent(permanent,MagicPayedCost.NO_COST).getTargetChoice();
 	}

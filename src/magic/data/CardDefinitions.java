@@ -190,7 +190,7 @@ public class CardDefinitions {
 		
 		// add tokens.
 		addDefinitions(TokenCardDefinitions.TOKEN_CARDS);
-		addDefinition(MagicCardDefinition.EMPTY);
+		addDefinition(MagicCardDefinition.UNKNOWN);
 
 		System.err.println(getNumberOfCards()+ " card definitions");
 	}

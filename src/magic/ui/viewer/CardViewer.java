@@ -48,7 +48,7 @@ public class CardViewer extends JPanel implements DelayedViewer {
 		cardPanel=new TransparentImagePanel();
 		add(cardPanel,BorderLayout.CENTER);
 		
-		setCard(MagicCardDefinition.EMPTY,0);
+		setCard(MagicCardDefinition.UNKNOWN,0);
 	}
 		
 	public void setCard(final MagicCardDefinition cardDefinition,final int index) {

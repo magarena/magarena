@@ -34,7 +34,7 @@ import magic.ui.theme.ThemeFactory;
 
 public class MagicCardDefinition {
 
-	public static final MagicCardDefinition EMPTY=new MagicCardDefinition("Empty") {
+	public static final MagicCardDefinition UNKNOWN = new MagicCardDefinition("Unknown") {
         //definition for unknown cards
 		@Override
 		protected void initialize() {
