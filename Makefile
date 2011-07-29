@@ -165,3 +165,6 @@ cards/magicdraftsim-rating: cards/card-ratings
 	grep "^[0-9]" | \
 	sed "s/^[0-9]*/$$i/"; \
 	done > $@
+
+src/magic/GraphicsUtilities.java:
+	wget http://java.net/projects/swingx/sources/svn/content/trunk/swingx-painters/src/main/java/org/jdesktop/swingx/graphics/GraphicsUtilities.java?raw=true -O $@
