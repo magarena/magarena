@@ -200,7 +200,7 @@ public class IconImages {
 		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
 		if (iconFile.exists()) {
             try {
-                final BufferedImage img = magic.GraphicsUtilities.loadCompatibleImage(iconFile.toURI().toURL());
+                final BufferedImage img = ImageIO.read(iconFile);
                 imgico.setImage(img);
             } catch (final Throwable th) {
                 System.err.println("WARNING. Unable to load icon " + name);
