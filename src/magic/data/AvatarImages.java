@@ -45,9 +45,7 @@ public class AvatarImages {
 	private PlayerAvatar loadAvatar(final File file) {
 		BufferedImage image;
 		try {
-			final InputStream stream=new FileInputStream(file);
-			image=ImageIO.read(stream);	
-			stream.close();
+			image=ImageIO.read(file);
 		} catch (final Exception ex) {
 			image=IconImages.MISSING;
 		}		
