@@ -3,7 +3,6 @@ package magic.ui.viewer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -37,7 +36,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	private static final List<Integer> imageIndices;
 	
 	private final BufferedImage image;
-	private Image scaledImage=null;
+	private BufferedImage scaledImage=null;
 	private boolean showScaled=false;
 	private boolean scaled=false;
 	private int imageWidth;
@@ -173,7 +172,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 				g.drawImage(image,0,0,VIEWER_WIDTH,viewerHeight,sx1,sy1,sx2,sy2,this);
 			} else {
 				if (scaledImage==null) {
-					scaledImage=image.getScaledInstance(VIEWER_WIDTH,viewerHeight,Image.SCALE_SMOOTH);
+					scaledImage=magic.GraphicsUtilities.createCompatibleImage(image,VIEWER_WIDTH,viewerHeight);
 				}
 				g.drawImage(scaledImage,0,0,this);
 			}
