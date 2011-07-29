@@ -49,7 +49,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 				imagesPathFile=new File(gamePathFile,line.substring(1).trim());
 				final boolean isCreated = imagesPathFile.mkdir();
                 if (!isCreated) {
-                    System.err.println("ERROR! Unable to create " + imagesPathFile);
+                    System.err.println("WARNING. Unable to create " + imagesPathFile);
                 }
 			} else {
 				final String parts[]=line.trim().split(";");

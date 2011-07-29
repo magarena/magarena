@@ -53,7 +53,7 @@ public class DeckUtils {
 		if (!deckFolderFile.exists()) {
 			final boolean isCreated = deckFolderFile.mkdir();
             if (!isCreated) {
-                System.err.println("ERROR! Unable to create " + getDeckFolder());
+                System.err.println("WARNING. Unable to create " + getDeckFolder());
             }
 		}
 	}
