@@ -2,7 +2,6 @@ package magic.ui.viewer;
 
 import java.awt.BorderLayout;
 import java.awt.image.BufferedImage;
-import java.awt.Image;
 
 import javax.swing.JPanel;
 
@@ -57,13 +56,13 @@ public class CardViewer extends JPanel implements DelayedViewer {
 		if (cardDefinition!=currentCardDefinition||index!=currentIndex) {
 			currentCardDefinition=cardDefinition;
 			currentIndex=index;
-			final Image cardImage;
+			final BufferedImage cardImage;
 			float opacity=1.0f;
 			if (image&&GeneralConfig.getInstance().isHighQuality()) {
 				if (!opaque) {
 					opacity=((float)ThemeFactory.getInstance().getCurrentTheme().getValue(Theme.VALUE_POPUP_OPACITY))/100.0f;
 				}
-				final Image sourceImage = 
+				final BufferedImage sourceImage = 
                     HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,true);
                 final int imageWidth=sourceImage.getWidth(this);
                 final int imageHeight=sourceImage.getHeight(this);
