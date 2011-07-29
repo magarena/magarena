@@ -1,10 +1,10 @@
 package magic.data;
 
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.FileInputStream;
 import java.util.Arrays;
 
 import javax.imageio.ImageIO;
@@ -16,22 +16,6 @@ public class IconImages {
 
     //use mana symbols by goblin hero if it exists
     static final BufferedImage MANA = loadImage("icons/Mana.png");
-    /*
-	static {
-		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+"Mana.png");
-		if (iconFile.exists()) {
-            BufferedImage img = null;
-            try {
-                img = ImageIO.read(iconFile);
-            } catch (Exception err) {
-               
-            }
-            MANA = img;
-		} else {
-            MANA = null;
-        }
-	}
-    */
 
 	public static final BufferedImage MISSING=loadImage("icons/missing.png");
 	public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
@@ -198,12 +182,11 @@ public class IconImages {
             final int bigH = 25;
             final int row = pos / 10;
             final int col = pos % 10;
+            final BufferedImage subimage = MANA.getSubimage(col * imgW, row * imgH, imgW, imgH);
             if (big) {
-                return new ImageIcon(MANA.getSubimage(col * imgW, row * imgH, imgW, imgH).getScaledInstance(
-                            bigW,bigH,Image.SCALE_SMOOTH));
+                return new ImageIcon(magic.GraphicsUtilities.createCompatibleImage(subimage,bigW,bigH));
             } else {
-                return new ImageIcon(MANA.getSubimage(col * imgW, row * imgH, imgW, imgH).getScaledInstance(
-                            icoW,icoH,Image.SCALE_SMOOTH));
+                return new ImageIcon(magic.GraphicsUtilities.createCompatibleImage(subimage,icoW,icoH));
             }
         }
 		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
@@ -217,13 +200,13 @@ public class IconImages {
 		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
 		if (iconFile.exists()) {
             try {
-                final BufferedImage img = ImageIO.read(iconFile);
+                final BufferedImage img = magic.GraphicsUtilities.loadCompatibleImage(iconFile.toURI().toURL());
                 imgico.setImage(img);
             } catch (final Throwable th) {
                 System.err.println("WARNING. Unable to load icon " + name);
                 //System.err.println(th.getMessage());
                 //th.printStackTrace();
-            }
+            } 
 		}
 	}
 
