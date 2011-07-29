@@ -184,9 +184,9 @@ public class IconImages {
             final int col = pos % 10;
             final BufferedImage subimage = MANA.getSubimage(col * imgW, row * imgH, imgW, imgH);
             if (big) {
-                return new ImageIcon(magic.GraphicsUtilities.createCompatibleImage(subimage,bigW,bigH));
+                return new ImageIcon(magic.GraphicsUtilities.scale(subimage,bigW,bigH));
             } else {
-                return new ImageIcon(magic.GraphicsUtilities.createCompatibleImage(subimage,icoW,icoH));
+                return new ImageIcon(magic.GraphicsUtilities.scale(subimage,icoW,icoH));
             }
         }
 		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);

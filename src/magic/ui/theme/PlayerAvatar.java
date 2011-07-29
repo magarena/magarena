@@ -16,11 +16,11 @@ public class PlayerAvatar {
 	
 	public PlayerAvatar(final BufferedImage image) {
         try {
-            final BufferedImage largeImage=magic.GraphicsUtilities.createCompatibleImage(image,LARGE_SIZE,LARGE_SIZE);
+            final BufferedImage largeImage=magic.GraphicsUtilities.scale(image,LARGE_SIZE,LARGE_SIZE);
             largeIcon=new ImageIcon(largeImage);
-            final BufferedImage mediumImage=magic.GraphicsUtilities.createCompatibleImage(image,MEDIUM_SIZE,MEDIUM_SIZE);
+            final BufferedImage mediumImage=magic.GraphicsUtilities.scale(image,MEDIUM_SIZE,MEDIUM_SIZE);
             mediumIcon=new ImageIcon(mediumImage);
-            final BufferedImage smallImage=magic.GraphicsUtilities.createCompatibleImage(image,SMALL_SIZE,SMALL_SIZE);
+            final BufferedImage smallImage=magic.GraphicsUtilities.scale(image,SMALL_SIZE,SMALL_SIZE);
             smallIcon=new ImageIcon(smallImage);
         } catch (final Throwable th) {
             System.err.println("WARNING. Unable to load player avatar");

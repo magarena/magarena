@@ -44,9 +44,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         final File imageFile = new File(filename);
         if (imageFile.isFile()) {
             try {
-                final InputStream inputStream=new FileInputStream(imageFile);
-                final BufferedImage fullImage=ImageIO.read(inputStream);
-                inputStream.close();
+                final BufferedImage fullImage=ImageIO.read(imageFile);
                 return fullImage;
             } catch (Exception ex) {
                 return IconImages.MISSING_CARD;
@@ -76,7 +74,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final BufferedImage scaledImage = 
                 (origImage.getHeight() == CARD_HEIGHT && origImage.getWidth() == CARD_WIDTH) ?
                     origImage :
-                    magic.GraphicsUtilities.createCompatibleImage(origImage, CARD_WIDTH, CARD_HEIGHT);
+                    magic.GraphicsUtilities.scale(origImage, CARD_WIDTH, CARD_HEIGHT);
             scaledImages.put(filename, scaledImage);
 		}
 

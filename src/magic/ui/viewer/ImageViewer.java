@@ -172,7 +172,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 				g.drawImage(image,0,0,VIEWER_WIDTH,viewerHeight,sx1,sy1,sx2,sy2,this);
 			} else {
 				if (scaledImage==null) {
-					scaledImage=magic.GraphicsUtilities.createCompatibleImage(image,VIEWER_WIDTH,viewerHeight);
+					scaledImage=magic.GraphicsUtilities.scale(image,VIEWER_WIDTH,viewerHeight);
 				}
 				g.drawImage(scaledImage,0,0,this);
 			}
