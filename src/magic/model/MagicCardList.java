@@ -110,20 +110,20 @@ public class MagicCardList extends ArrayList<MagicCard> {
 	}
 	
 	public boolean useSmartShuffle() {
-		final int lands=getNrOfLands();
-		final int total=size();
-		return lands==16&&total==40;
+		final int lands = getNrOfLands();
+		final int total = size();
+		return lands == 16 && total == 40;
 	}
 	
 	public void shuffle() {
-        shuffle(size());
+        shuffle(MagicGame.getInstance().getTime());
 	}
 	
     public void shuffle(final long seed) {
-		final MagicCardList oldCards=new MagicCardList(this);
-		clear();
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
-		for (int size=oldCards.size();size>0;size--) {
+		final MagicCardList oldCards = new MagicCardList(this);
+		clear();
+		for (int size = oldCards.size(); size > 0; size--) {
 			final int index=rng.nextInt(size);
 			final MagicCard card=oldCards.get(index);
 			oldCards.remove(index);			
@@ -155,12 +155,10 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		
 	    clear();
 		for (int blocks=size/5;blocks>0;blocks--) {
-
 			int landCount=0;
 			int spellCount=0;
 			int highCount=0;
 			while (landCount+spellCount<5) {
-
 				final int type = rng.nextInt(5);
 				if (type<2) {
 					if (landCount<2) {
