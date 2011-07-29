@@ -239,6 +239,7 @@ public class MagicGame {
             getPayedCost().getX(),
             stack.getItemsId(),
             events.getEventsId(),
+            time,
             //identifiers[0],
             //identifiers[1],
             //identifiers[2],
