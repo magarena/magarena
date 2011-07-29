@@ -1,6 +1,5 @@
 package magic.ui.theme;
 
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 
 import javax.swing.ImageIcon;
@@ -17,11 +16,11 @@ public class PlayerAvatar {
 	
 	public PlayerAvatar(final BufferedImage image) {
         try {
-            final Image largeImage=image.getScaledInstance(LARGE_SIZE,LARGE_SIZE,Image.SCALE_SMOOTH);
+            final BufferedImage largeImage=magic.GraphicsUtilities.createCompatibleImage(image,LARGE_SIZE,LARGE_SIZE);
             largeIcon=new ImageIcon(largeImage);
-            final Image mediumImage=image.getScaledInstance(MEDIUM_SIZE,MEDIUM_SIZE,Image.SCALE_SMOOTH);
+            final BufferedImage mediumImage=magic.GraphicsUtilities.createCompatibleImage(image,MEDIUM_SIZE,MEDIUM_SIZE);
             mediumIcon=new ImageIcon(mediumImage);
-            final Image smallImage=image.getScaledInstance(SMALL_SIZE,SMALL_SIZE,Image.SCALE_SMOOTH);
+            final BufferedImage smallImage=magic.GraphicsUtilities.createCompatibleImage(image,SMALL_SIZE,SMALL_SIZE);
             smallIcon=new ImageIcon(smallImage);
         } catch (final Throwable th) {
             System.err.println("WARNING. Unable to load player avatar");
@@ -29,7 +28,6 @@ public class PlayerAvatar {
 	}
 	
 	public ImageIcon getIcon(final int size) {
-
 		switch (size) {
 			case 2: return mediumIcon;
 			case 3: return largeIcon;
