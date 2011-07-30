@@ -98,7 +98,7 @@ public class GraphicsUtilities {
     
     public static BufferedImage scale(BufferedImage img,int targetWidth,int targetHeight)
     {
-        return scale(img, targetHeight, targetHeight, RenderingHints.VALUE_INTERPOLATION_BILINEAR, true);
+        return scale(img, targetWidth, targetHeight, RenderingHints.VALUE_INTERPOLATION_BILINEAR, true);
     }
 
     /**
@@ -133,7 +133,6 @@ public class GraphicsUtilities {
             BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB;
         BufferedImage ret = img;
         int w, h;
-        //if (higherQuality) {
         if (higherQuality && (img.getWidth() > targetWidth && img.getHeight() > targetHeight)) {
             // Use multi-step technique: start with original size, then
             // scale down in multiple passes with drawImage()
