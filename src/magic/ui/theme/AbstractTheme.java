@@ -92,52 +92,44 @@ public abstract class AbstractTheme implements Theme {
 
 	@Override
 	public ImageIcon getIcon(final String name) {
-
 		final Object value=themeMap.get(name);
 		return value==null?IconImages.MISSING2:(ImageIcon)value;
 	}
 
 	@Override
 	public Color getColor(final String name) {
-
 		final Object value=themeMap.get(name);
 		return value==null?Color.BLACK:(Color)value;
 	}
 
 	@Override
 	public Color getTextColor() {
-
 		return getColor(COLOR_TEXT_FOREGROUND);
 	}
 
 	@Override
 	public Color getNameColor() {
-
 		return getColor(COLOR_NAME_FOREGROUND);
 	}
 
 	@Override
 	public Color getChoiceColor() {
-
 		return getColor(COLOR_CHOICE);
 	}
 
 	@Override
 	public int getValue(final String name) {
-		
 		final Object value=themeMap.get(name);
 		return value==null?0:(Integer)value;
 	}
 	
 	@Override
 	public int getNumberOfAvatars() {
-
 		return AvatarImages.getInstance().getNumberOfAvatars();
 	}
 
 	@Override
 	public ImageIcon getAvatarIcon(int index,final int size) {
-
 		return AvatarImages.getInstance().getAvatarIcon(index,size);		
 	}
 }

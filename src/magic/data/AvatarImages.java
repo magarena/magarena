@@ -23,14 +23,11 @@ public class AvatarImages {
 	private PlayerAvatar avatars[];
 	
 	private AvatarImages() {
-		
 		avatarPath=new File(MagicMain.getGamePath(),"avatars");
-		
 		final File[] files=avatarPath.listFiles();
 		names=new Vector<String>();
 		if (files != null) {
             for (final File file : files) {
-            
                 if (file.isDirectory()) {
                     names.add(file.getName());
                 }
@@ -71,17 +68,17 @@ public class AvatarImages {
 		}
 	}
 	
-	public ImageIcon getAvatarIcon(int index,final int size) {
+	public synchronized ImageIcon getAvatarIcon(int index,final int size) {
 		loadAvatars();
-		if (index<0) {
-			index=0;
-		} else if (index>=avatars.length) {
-			index%=avatars.length;
+		if (index < 0) {
+			index = 0;
+		} else if (index >= avatars.length) {
+			index %= avatars.length;
 		}
 		return avatars[index].getIcon(size);
 	}
 	
-	public int getNumberOfAvatars() {
+	public synchronized int getNumberOfAvatars() {
 		loadAvatars();
 		return avatars.length;
 	}
