@@ -12,7 +12,6 @@ public class MagicReanimateAction extends MagicAction {
 	private final int action;
 	
 	public MagicReanimateAction(final MagicPlayer controller,final MagicCard card,final int action) {
-		
 		this.controller=controller;
 		this.card=card;
 		this.action=action;
@@ -20,7 +19,6 @@ public class MagicReanimateAction extends MagicAction {
 	
 	@Override
 	public void doAction(MagicGame game) {
-
 		if (card.getOwner().getGraveyard().contains(card)) {
 			game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
 			game.doAction(new MagicPlayCardAction(card,controller,action));
