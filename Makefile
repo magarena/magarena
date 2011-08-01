@@ -96,7 +96,8 @@ jar: $(MAG)
 	$(JAVA) -DrndSeed=$* magic.MagicMain |& tee $*.log
 
 %.t: $(MAG)
-	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain |& tee $*.log
+	echo `hg id -n` > $*.log
+	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain |& tee -a $*.log
 
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
@@ -153,7 +154,12 @@ cards/AWinnarIsYou_cube.txt:
 
 daily: $(EXE)
 	mv $^ Magarena_`hg id -n`.exe
-	scripts/googlecode_upload.py -s "build `hg id -n`" -p magarena -u melvinzhang@gmail.com Magarena_*.exe
+	scripts/googlecode_upload.py \
+			-s "build `hg id -n`" \
+			-p magarena \
+			-u melvinzhang@gmail.com \
+			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
+			Magarena_`hg id -n`.exe
 
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
 	scala $^ > $@ 2> cards/others.txt
