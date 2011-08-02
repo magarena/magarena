@@ -18,14 +18,14 @@ import magic.model.MagicCardDefinition;
 public class HighQualityCardImagesProvider implements CardImagesProvider {
 	
 	private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
-	private static final int MAX_IMAGES=100;
-	private final Map<String,BufferedImage> scaledImages;
-	private final Map<String,BufferedImage> origImages;
+
+    private static final int MAX_IMAGES=100;
+	private final Map<String,BufferedImage> scaledImages = 
+        new magic.ai.StateCache<String,BufferedImage>(MAX_IMAGES);
+	private final Map<String,BufferedImage> origImages = 
+        new magic.ai.StateCache<String,BufferedImage>(MAX_IMAGES);
 	
-	public HighQualityCardImagesProvider() {
-		scaledImages = new magic.ai.StateCache<String,BufferedImage>(100);
-		origImages = new magic.ai.StateCache<String,BufferedImage>(100);
-	}
+	private HighQualityCardImagesProvider() {}
 	
 	private static final String getFilename(
             final MagicCardDefinition cardDefinition,
