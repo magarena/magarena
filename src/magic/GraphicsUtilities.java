@@ -93,12 +93,21 @@ import javax.swing.JComponent;
  */
 @SuppressWarnings("nls")
 public class GraphicsUtilities {
-    private GraphicsUtilities() {
-    }
     
-    public static BufferedImage scale(BufferedImage img,int targetWidth,int targetHeight)
-    {
-        return scale(img, targetWidth, targetHeight, RenderingHints.VALUE_INTERPOLATION_BILINEAR, true);
+    public static BufferedImage scale(
+            final BufferedImage img,
+            final int targetWidth,
+            final int targetHeight) {
+        if (img.getWidth() == targetWidth && img.getHeight() == targetHeight) {
+            return img;
+        } else {
+            return scale(
+                    img, 
+                    targetWidth, 
+                    targetHeight, 
+                    RenderingHints.VALUE_INTERPOLATION_BILINEAR, 
+                    true);
+        }
     }
 
     /**
@@ -127,8 +136,7 @@ public class GraphicsUtilities {
                                int targetWidth,
                                int targetHeight,
                                Object hint,
-                               boolean higherQuality)
-    {
+                               boolean higherQuality) {
         int type = (img.getTransparency() == Transparency.OPAQUE) ?
             BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB;
         BufferedImage ret = img;
