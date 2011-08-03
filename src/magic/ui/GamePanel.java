@@ -246,7 +246,9 @@ public final class GamePanel extends JPanel {
                 } catch (final Throwable ex) {
                     //unrecoverable error has occurred! 
                     System.err.println(MagicGameReport.buildReport(game));
-                    throw new RuntimeException(ex.getMessage()); 
+                    System.err.println(ex.getMessage());
+                    ex.printStackTrace();
+                    System.exit(1);
                 }
                 System.err.println("Stopping game...");
             }
