@@ -1,10 +1,9 @@
 package magic.data;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.FileInputStream;
+import java.awt.image.BufferedImage;
 import java.util.Arrays;
 
 import javax.imageio.ImageIO;
@@ -145,30 +144,18 @@ public class IconImages {
 	public static final ImageIcon COST_X=loadSymbolIcon("x.gif", 21, false);
 		
 	private static BufferedImage loadImage(final String name) {
-		try {
-			final InputStream inputStream=IconImages.class.getResourceAsStream(name);
-			final BufferedImage image=ImageIO.read(inputStream);
-			inputStream.close();
-			return image;
-		} catch (final Throwable th) {
-            System.err.println("WARNING. Unable to load icon " + name);
-            //System.err.println(th.getMessage());
-            //th.printStackTrace();
-			return null;
-		}
+        try {
+            return ImageIO.read(IconImages.class.getResource(name));
+        } catch (final IOException ex) {
+            System.err.println("WARNING. Unable to load image " + name);
+            return null;
+        }
 	}
 	
 	private static ImageIcon loadIcon(final String name) {
-
 		final BufferedImage image=loadImage("icons/"+name);
 		ImageIcon icon = null;
-        try {
-            icon = new ImageIcon(image);
-        } catch (final Throwable th) {
-            System.err.println("WARNING. Unable to load icon " + name);
-            //System.err.println(th.getMessage());
-            //th.printStackTrace();
-        }
+        icon = new ImageIcon(image);
         return image != null ? icon : MISSING2;
 	}
 
@@ -197,16 +184,15 @@ public class IconImages {
 	}
 	
     private static void reloadSymbolIcon(final ImageIcon imgico, final String name) {
-		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
+		final File iconFile = new File(
+                MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
 		if (iconFile.exists()) {
             try {
                 final BufferedImage img = ImageIO.read(iconFile);
                 imgico.setImage(img);
-            } catch (final Throwable th) {
-                System.err.println("WARNING. Unable to load icon " + name);
-                //System.err.println(th.getMessage());
-                //th.printStackTrace();
-            } 
+            } catch (final IOException ex) {
+                System.err.println("WARNING. Unable to load image " + iconFile.getName());
+            }
 		}
 	}
 
@@ -247,24 +233,26 @@ public class IconImages {
     }
 	
 	private static ImageIcon loadAnimatedIcon(final String name) {
-		try {
-			final byte data[]=new byte[1<<16];
-			int size=0;
-			final InputStream inputStream=IconImages.class.getResourceAsStream("icons/"+name);
-            try {
-                while (true) {
-                    final int len=inputStream.read(data,size,data.length-size);
-                    if (len<0) {
-                        break;
-                    }
-                    size+=len;
+        final byte data[] = new byte[1<<16];
+        int size = 0;
+        final InputStream inputStream = IconImages.class.getResourceAsStream("icons/"+name);
+        try {
+            while (true) {
+                final int len = inputStream.read(data,size,data.length-size);
+                if (len < 0) {
+                    break;
                 }
-            } finally {
-                inputStream.close();
+                size += len;
             }
-			return new ImageIcon(Arrays.copyOf(data,size));
-		} catch (final Throwable th) {
-			return MISSING2;
-		} 
+        } catch (final IOException ex) {
+            System.err.println("WARNING. Unable to load animated icon " + name);
+        } finally {
+            try {
+                inputStream.close();
+            } catch (final IOException ex) {
+                System.err.println("WARNING. Unable to close input stream");
+            }
+        }
+        return new ImageIcon(Arrays.copyOf(data,size));
 	}
 }
