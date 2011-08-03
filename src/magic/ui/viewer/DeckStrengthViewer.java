@@ -162,13 +162,13 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 			generalConfig.setStrengthDifficulty((Integer)difficultyComboBox.getSelectedItem());
 			try {
 				final int games=Integer.parseInt(gamesTextField.getText());
-				if (games>0&&games<1000) {
+				if (games >0 && games < 1000) {
 					generalConfig.setStrengthGames(games);
 				} else {
 					gamesTextField.setText(String.valueOf(generalConfig.getStrengthGames()));
 				}
-			} catch (final Exception ex) {
-				gamesTextField.setText(String.valueOf(generalConfig.getStrengthGames()));				
+			} catch (final NumberFormatException ex) {
+				gamesTextField.setText(String.valueOf(generalConfig.getStrengthGames()));
 			}
 			startButton.setIcon(IconImages.STOP);
 			startButton.repaint();
