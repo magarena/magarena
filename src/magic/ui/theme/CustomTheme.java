@@ -101,14 +101,21 @@ public class CustomTheme extends AbstractTheme {
 	}
 	
 	private BufferedImage loadImage(final String filename) {
+        InputStream inputStream = null;
+        BufferedImage image = IconImages.MISSING;
 		try {
-			final InputStream inputStream=getInputStream(filename);
-			final BufferedImage image=ImageIO.read(inputStream);
-			inputStream.close();
-			return image;
-		} catch (final Exception ex) {
-			return IconImages.MISSING;
-		}
+            inputStream = getInputStream(filename);
+	        image = ImageIO.read(inputStream);
+		} catch (final IOException ex) {
+            image = IconImages.MISSING;
+		} finally {
+            try {
+    			if (inputStream != null) inputStream.close();
+            } catch (final IOException ex) {
+                //do nothing
+            }
+        }
+	    return image;
 	}
 	
 	@Override
