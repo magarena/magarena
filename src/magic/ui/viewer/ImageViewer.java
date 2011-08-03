@@ -8,6 +8,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -92,7 +93,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 			if (imageFile!=null) {
 				readImage=ImageIO.read(imageFile);
 			}			
-		} catch (final Exception ex) {
+		} catch (final IOException ex) {
             System.err.println("WARNING. Unable to read from " + imageFile.getName());
         }
 		
