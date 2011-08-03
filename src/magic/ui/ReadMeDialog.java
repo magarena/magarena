@@ -48,14 +48,15 @@ public class ReadMeDialog extends JDialog {
 		readMePanel.add(readMeScrollPane,BorderLayout.CENTER);
 		
 		this.add(readMePanel);
-		this.setVisible(true);	
+		this.setVisible(true);
 	}
 	
 	public void displayReadMe(){
 		file = new ReadMeFile(README_FILENAME);
 		try{
 			readMeTextArea.setText(file.getDataFromFile());
-		}catch(Exception ex){
+		} catch (final java.io.IOException ex) {
+            System.err.println("WARNING! Unable to read from " + README_FILENAME);
 			System.err.print(ex.getMessage());
 		}
 	}
