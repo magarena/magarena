@@ -60,16 +60,7 @@ public abstract class MagicChoice {
 		} else if (size>1) {
 			final List<Object[]> choiceResultsList=new ArrayList<Object[]>(size);
 			for (final Object option : options) {
-                try {
-				    choiceResultsList.add(new Object[]{option});
-                } catch (OutOfMemoryError err) {
-		            final Collection<Object> opts=getArtificialOptions(game,event,player,source);
-                    for (final Object opt : opts) {
-                        System.err.println(opt);
-                    }
-                    System.err.println(event);
-                    throw err;
-                }
+                choiceResultsList.add(new Object[]{option});
 			}
 			return choiceResultsList;
 		} else {
