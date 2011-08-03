@@ -31,24 +31,21 @@ public class DeckStrCal {
                 try {
                     games = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
-                    System.err.println("Error: number of games not an integer");
-                    ex.printStackTrace();
+                    System.err.println("ERROR! number of games not an integer");
                     System.exit(1);
                 }
             } else if (curr.equals("--str1")) {
                 try {
                     str1 = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
-                    System.err.println("Error: AI strength not an integer");
-                    ex.printStackTrace();
+                    System.err.println("ERROR! AI strength not an integer");
                     System.exit(1);
                 }
             } else if (curr.equals("--str2")) {
                 try {
                     str2 = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
-                    System.err.println("Error: AI strength not an integer");
-                    ex.printStackTrace();
+                    System.err.println("ERROR! AI strength not an integer");
                     System.exit(1);
                 }
             } else if (curr.equals("--deck1")) {
