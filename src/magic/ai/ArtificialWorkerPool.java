@@ -149,20 +149,25 @@ public class ArtificialWorkerPool {
 		return sourceGame.map(bestChoiceResults.choiceResults);
 	}
 	
-	private synchronized void startWorker(final ArtificialChoiceResults aiChoiceResults,final int mainPhases,final int maxDepth,final int maxGames) {
-		
+	private synchronized void startWorker(
+            final ArtificialChoiceResults aiChoiceResults,
+            final int mainPhases,
+            final int maxDepth,
+            final int maxGames) {
 		while (workers.isEmpty()) {
-			
 			try {
 				wait();
-			} catch (final Exception ex) {}
+			} catch (final InterruptedException ex) {
+                throw new RuntimeException(ex.getMessage());
+            }
 		}
 		final ArtificialWorker worker=workers.removeLast();
 		new ArtificialWorkerThread(worker,aiChoiceResults,pruneScore,mainPhases,maxDepth,maxGames).start();
 	}
 	
-	private synchronized void releaseWorker(final ArtificialWorker worker,final ArtificialChoiceResults aiChoiceResults) {
-
+	private synchronized void releaseWorker(
+            final ArtificialWorker worker,
+            final ArtificialChoiceResults aiChoiceResults) {
 		pruneScore=pruneScore.getPruneScore(aiChoiceResults.aiScore.score,true);
 		processingLeft--;
 		workers.add(worker);
@@ -170,14 +175,12 @@ public class ArtificialWorkerPool {
 	}
 	
 	private synchronized void waitUntilProcessed() {
-		
 		while (processingLeft>0) {
-			
 			try {
 				wait();
-			} catch (final Exception ex) {
-				ex.printStackTrace();
-			}			
+			} catch (final InterruptedException ex) {
+                throw new RuntimeException(ex.getMessage());
+            }
 		}
 	}
 	
