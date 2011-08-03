@@ -86,7 +86,7 @@ public class GameController {
     public static void pause(int t) {
         try {
             Thread.sleep(t);
-        } catch (final Exception ex) {
+		} catch (final InterruptedException ex) {
             throw new RuntimeException(ex.getMessage());
         }
     }
@@ -99,9 +99,11 @@ public class GameController {
         }
         try {
             SwingUtilities.invokeAndWait(task);
-        } catch (final Exception ex) {
+		} catch (final InterruptedException ex) {
             throw new RuntimeException(ex.getMessage());
-        }
+		} catch (final InvocationTargetException ex) {
+            throw new RuntimeException(ex.getMessage());
+		}
     }
 	
 	/** Returns true when undo was clicked. */
@@ -115,7 +117,7 @@ public class GameController {
 			return false;
 		} catch (final InterruptedException ex) {
             throw new RuntimeException(ex.getMessage());
-		}
+        }
 	}
 	
     public void passKeyPressed() {
