@@ -10,11 +10,8 @@ import magic.model.phase.MagicPhase;
 public class ArtificialWorker {
 	
 	private static final class MaximumExceededException extends RuntimeException {
-		
 		private static final long serialVersionUID = 1L;
-
 		public MaximumExceededException() {
-			
 			super("Maximum is exceeded.");
 		}
 	};
@@ -112,9 +109,12 @@ public class ArtificialWorker {
 		return aiScore;
 	}
 
-	public void evaluateGame(final ArtificialChoiceResults aiChoiceResults,final ArtificialPruneScore pruneScore,
-			final int mainPhases,final int maxDepth,final int maxGames) {
-
+	public void evaluateGame(
+            final ArtificialChoiceResults aiChoiceResults,
+            final ArtificialPruneScore pruneScore,
+			final int mainPhases,
+            final int maxDepth,
+            final int maxGames) {
 		gameCount=0;
 		this.maxDepth=maxDepth;
 		this.maxGames=maxGames;
