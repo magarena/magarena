@@ -18,7 +18,7 @@ public class MagicShuffleIntoLibraryAction extends MagicAction {
 		final MagicCardList library=card.getOwner().getLibrary();
 		oldLibrary=new MagicCardList(library);
 		library.addToTop(card);
-		library.shuffle(game.incTime());
+		library.shuffle(library.getCardsId());
 	}
 
 	@Override
