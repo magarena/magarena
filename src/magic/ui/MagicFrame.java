@@ -536,7 +536,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         File jarFile;
         try{
             jarFile = new File(this.getClass().getProtectionDomain().getCodeSource().getLocation().toURI());
-        } catch(Exception e) {
+        } catch (final Exception ex) {
             return false;
         }
 
@@ -547,8 +547,8 @@ public class MagicFrame extends JFrame implements ActionListener {
         String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
         try{
             Process p = Runtime.getRuntime().exec(toExec);
-        } catch(Exception e) {
-            e.printStackTrace();
+        } catch (final Exception ex) {
+            ex.printStackTrace();
             return false;
         }
 
