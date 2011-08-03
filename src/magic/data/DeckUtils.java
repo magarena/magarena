@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -61,13 +62,12 @@ public class DeckUtils {
 	public static void saveDeck(final String filename,final MagicPlayerDefinition player) {
 
 		final List<SortedMap<String,Integer>> cardMaps=new ArrayList<SortedMap<String,Integer>>();
-		for (int count=3;count>0;count--) {
-			
+
+        for (int count=3;count>0;count--) {
 			cardMaps.add(new TreeMap<String, Integer>());
 		}
 		
 		for (final MagicCardDefinition cardDefinition : player.getDeck()) {
-						
 			final String name=cardDefinition.getName();
 			int index;
 			if (cardDefinition.isLand()) {
@@ -85,7 +85,6 @@ public class DeckUtils {
 		try {						
 			final BufferedWriter writer=new BufferedWriter(new FileWriter(filename));
 			for (int index=0;index<=2;index++) {
-			
 				final SortedMap<String,Integer> cardMap=cardMaps.get(index);
 				if (!cardMap.isEmpty()) {
 					writer.write("# "+cardMap.size()+" "+CARD_TYPES[index]);
@@ -106,75 +105,69 @@ public class DeckUtils {
 	}
 	
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
-		
-		try {
-			final MagicDeck deck=new MagicDeck();
-			deck.setName(new File(filename).getName());
-			final int colorCount[]=new int[MagicColor.NR_COLORS];
-			final BufferedReader reader=new BufferedReader(new FileReader(filename));
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+        } catch (final FileNotFoundException ex) {
+            reader = null;
+        }
+        final int colorCount[] = new int[MagicColor.NR_COLORS];
+        final MagicDeck deck = new MagicDeck();
+        deck.setName(new File(filename).getName());
 
-			while (true) {
-				
-				String line=reader.readLine();
-				if (line==null) {
-					break;
-				}
-				line=line.trim();
-				if (!line.isEmpty()&&!line.startsWith("#")) {
-					int index=line.indexOf(' ');
-					if (index>0) {
-						try {
-							final int amount=Integer.parseInt(line.substring(0,index));
-							final String name=line.substring(index+1).trim();
-							final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
-							if (cardDefinition!=null) {
-								for (int count=amount;count>0;count--) {
-									
-									final int colorFlags=cardDefinition.getColorFlags();
-									for (final MagicColor color : MagicColor.values()) {
-										
-										if (color.hasColor(colorFlags)) {
-											colorCount[color.ordinal()]++;
-										}
-									}
-									deck.add(cardDefinition);
-								}
-							}
-						} catch (final Exception ex) {
-                            System.err.println("ERROR! Unable to load line " + line);
-                            System.err.println(ex.getMessage());
-                            ex.printStackTrace();
+        while (true) {
+            String line = null;
+            try {
+                line = reader.readLine();
+            } catch (final IOException ex) {
+                line = null;
+            }
+            if (line == null) {
+                break;
+            }
+            line = line.trim();
+            if (!line.isEmpty()&&!line.startsWith("#")) {
+                int index = line.indexOf(' ');
+                int amount = Integer.parseInt(line.substring(0,index));
+                final String name=line.substring(index+1).trim();
+                final MagicCardDefinition cardDefinition = 
+                    CardDefinitions.getInstance().getCard(name);
+                for (int count=amount;count>0;count--) {
+                    final int colorFlags=cardDefinition.getColorFlags();
+                    for (final MagicColor color : MagicColor.values()) {
+                        if (color.hasColor(colorFlags)) {
+                            colorCount[color.ordinal()]++;
                         }
-					}
-				}
-			}
-			reader.close();
-			
-			// Find up to 3 of the most common colors in the deck.
-			final StringBuffer colorText=new StringBuffer();
-			while (colorText.length()<3) {
-
-				int maximum=0;
-				int index=0;
-				for (int i=0;i<colorCount.length;i++) {
-					
-					if (colorCount[i]>maximum) {
-						maximum=colorCount[i];
-						index=i;
-					}
-				}
-				if (maximum==0) {
-					break;
-				}
-				colorText.append(MagicColor.values()[index].getSymbol());
-				colorCount[index]=0;
-			}
-			player.setProfile(new MagicPlayerProfile(colorText.toString()));
-			player.setDeck(deck);			
-		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load deck " + filename);
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
+                    }
+                    deck.add(cardDefinition);
+                }
+            }
+        }
+        
+        // Find up to 3 of the most common colors in the deck.
+        final StringBuffer colorText=new StringBuffer();
+        while (colorText.length()<3) {
+            int maximum=0;
+            int index=0;
+            for (int i=0;i<colorCount.length;i++) {
+                if (colorCount[i]>maximum) {
+                    maximum=colorCount[i];
+                    index=i;
+                }
+            }
+            if (maximum==0) {
+                break;
+            }
+            colorText.append(MagicColor.values()[index].getSymbol());
+            colorCount[index]=0;
+        }
+        player.setProfile(new MagicPlayerProfile(colorText.toString()));
+        player.setDeck(deck);			
+        
+        try {
+            if (reader != null) reader.close();
+        } catch (final IOException ex) {
+            //do nothing
         }
 	}
 	
