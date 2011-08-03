@@ -93,11 +93,15 @@ public class TestGameBuilder {
         try {
             TestGameBuilder gb = (TestGameBuilder)Class.forName("magic.test." + id).newInstance();
             game = gb.getGame();
-        } catch (final Exception ex) {
+        } catch (final ClassNotFoundException ex) {
             System.err.println("ERROR! Unable to build game " + id);
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-            System.exit(1); 
+            throw new RuntimeException(ex.getMessage());
+        } catch (final InstantiationException ex) {
+            System.err.println("ERROR! Unable to build game " + id);
+            throw new RuntimeException(ex.getMessage());
+        } catch (final IllegalAccessException ex) {
+            System.err.println("ERROR! Unable to build game " + id);
+            throw new RuntimeException(ex.getMessage());
         }
         return game;
 	}
