@@ -29,7 +29,6 @@ public class CustomTheme extends AbstractTheme {
 	private int nrOfAvatars=0;
 	
 	public CustomTheme(final File file,final String name) {
-		
 		super(name);
 		this.file=file;
 		playerAvatars=new PlayerAvatar[MAX_AVATARS];
@@ -37,7 +36,6 @@ public class CustomTheme extends AbstractTheme {
 	
 	@Override
 	public int getNumberOfAvatars() {
-		
 		if (nrOfAvatars==0) {
 			return super.getNumberOfAvatars();
 		}
@@ -46,7 +44,6 @@ public class CustomTheme extends AbstractTheme {
 
 	@Override
 	public ImageIcon getAvatarIcon(final int index,final int size) {
-
 		if (nrOfAvatars==0) {
 			return super.getAvatarIcon(index, size);
 		}
@@ -54,7 +51,6 @@ public class CustomTheme extends AbstractTheme {
 	}
 
 	private void parseEntry(final String key,final String value) {
-
 		if (value.isEmpty()) {
 			return;
 		}
@@ -96,7 +92,6 @@ public class CustomTheme extends AbstractTheme {
 	}
 	
 	private InputStream getInputStream(final String filename) throws IOException {
-
 		if (zipFile!=null) {
 			final ZipEntry zipEntry=zipFile.getEntry(filename);
 			return zipFile.getInputStream(zipEntry);
@@ -106,7 +101,6 @@ public class CustomTheme extends AbstractTheme {
 	}
 	
 	private BufferedImage loadImage(final String filename) {
-		
 		try {
 			final InputStream inputStream=getInputStream(filename);
 			final BufferedImage image=ImageIO.read(inputStream);
