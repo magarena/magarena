@@ -2,7 +2,7 @@ package magic.data;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -42,15 +42,14 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	
 	private static BufferedImage loadCardImage(final String filename) {
         final File imageFile = new File(filename);
-        if (imageFile.isFile()) {
+        if (imageFile.exists() && imageFile.isFile()) {
             try {
                 return ImageIO.read(imageFile);
-            } catch (final Exception ex) {
+            } catch (final IOException ex) {
                 System.err.println("ERROR! Unable to read from " + filename);
                 return IconImages.MISSING_CARD;
             }
         } else {
-            //System.err.println("ERROR! " + filename + " is not a file");
 			return IconImages.MISSING_CARD;
 		}
 	}
