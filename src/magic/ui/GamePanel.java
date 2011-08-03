@@ -21,6 +21,7 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicGame;
+import magic.model.MagicGameReport;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
@@ -76,7 +77,10 @@ public final class GamePanel extends JPanel {
 	private final ImageCombatViewer imageCombatViewer;
 	private final ImageViewer imageViewer;
 	
-	public GamePanel(final MagicFrame frame,final MagicGame game,final ZoneBackgroundLabel backgroundLabel) {
+	public GamePanel(
+            final MagicFrame frame,
+            final MagicGame game,
+            final ZoneBackgroundLabel backgroundLabel) {
 
 		this.frame=frame;
 		this.game=game;
@@ -237,7 +241,13 @@ public final class GamePanel extends JPanel {
                 final Thread cur=Thread.currentThread();
                 cur.setPriority(Thread.MIN_PRIORITY);
                 System.err.println("Starting game...");
-                controller.runGame();
+                try {
+                    controller.runGame();
+                } catch (final Throwable ex) {
+                    //unrecoverable error has occurred! 
+                    System.err.println(MagicGameReport.buildReport(game));
+                    throw new RuntimeException(ex.getMessage()); 
+                }
                 System.err.println("Stopping game...");
             }
         }).start();
