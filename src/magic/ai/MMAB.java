@@ -144,7 +144,7 @@ public class MMAB implements MagicAI {
 			try {
 				wait();
 			} catch (final InterruptedException ex) {
-                throw new RuntimeException(ex.getMessage());
+                throw new RuntimeException(ex);
             }
 		}
 		final ArtificialWorker worker=workers.removeLast();
@@ -163,7 +163,7 @@ public class MMAB implements MagicAI {
 			try {
 				wait();
 			} catch (final InterruptedException ex) {
-                throw new RuntimeException(ex.getMessage());
+                throw new RuntimeException(ex);
             }			
 		}
 	}

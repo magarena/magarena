@@ -24,14 +24,12 @@ public class ArtificialWorker {
 	private int maxGames;
 	
 	public ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
-
 		this.id=id;
 		this.game=game;
 		this.scoreBoard=scoreBoard;
 	}
 	
 	private ArtificialScore runGame(final Object nextChoiceResults[],final ArtificialPruneScore pruneScore,int depth) {
-
 		if (depth>maxDepth) {
 			throw new MaximumExceededException();
 		}

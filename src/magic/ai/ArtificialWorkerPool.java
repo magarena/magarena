@@ -158,7 +158,7 @@ public class ArtificialWorkerPool {
 			try {
 				wait();
 			} catch (final InterruptedException ex) {
-                throw new RuntimeException(ex.getMessage());
+                throw new RuntimeException(ex);
             }
 		}
 		final ArtificialWorker worker=workers.removeLast();
@@ -179,7 +179,7 @@ public class ArtificialWorkerPool {
 			try {
 				wait();
 			} catch (final InterruptedException ex) {
-                throw new RuntimeException(ex.getMessage());
+                throw new RuntimeException(ex);
             }
 		}
 	}

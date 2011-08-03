@@ -95,13 +95,13 @@ public class TestGameBuilder {
             game = gb.getGame();
         } catch (final ClassNotFoundException ex) {
             System.err.println("ERROR! Unable to build game " + id);
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException(ex);
         } catch (final InstantiationException ex) {
             System.err.println("ERROR! Unable to build game " + id);
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException(ex);
         } catch (final IllegalAccessException ex) {
             System.err.println("ERROR! Unable to build game " + id);
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException(ex);
         }
         return game;
 	}

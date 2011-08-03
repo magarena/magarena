@@ -44,7 +44,7 @@ public final class DelayedViewersThread extends Thread {
                 //wait for 100ms
 				wait(100);
 			} catch (final InterruptedException ex) {
-                throw new RuntimeException(ex.getMessage());
+                throw new RuntimeException(ex);
 			}
 		}
 	}

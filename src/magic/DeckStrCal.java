@@ -94,11 +94,7 @@ public class DeckStrCal {
 
     private static MagicTournament setupTournament() {
         // Load cards and cubes.
-        try {
-            MagicMain.initializeEngine();
-        } catch (final IOException ex) {
-            throw new RuntimeException(ex.getMessage());
-        }
+        MagicMain.initializeEngine();
 
         // Set number of games.
         final TournamentConfig config=new TournamentConfig();

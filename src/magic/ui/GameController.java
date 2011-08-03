@@ -87,7 +87,7 @@ public class GameController {
         try {
             Thread.sleep(t);
 		} catch (final InterruptedException ex) {
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException(ex);
         }
     }
 
@@ -100,9 +100,9 @@ public class GameController {
         try {
             SwingUtilities.invokeAndWait(task);
 		} catch (final InterruptedException ex) {
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException(ex);
 		} catch (final InvocationTargetException ex) {
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException(ex);
 		}
     }
 	
@@ -116,7 +116,7 @@ public class GameController {
 			}
 			return false;
 		} catch (final InterruptedException ex) {
-            throw new RuntimeException(ex.getMessage());
+            throw new RuntimeException(ex);
         }
 	}
 	

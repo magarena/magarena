@@ -53,35 +53,35 @@ public class MagicMain {
 		return getGamePath()+File.separatorChar+MODS_PATH;
 	}
 
-	public static void initializeEngine() throws IOException {
-		CardDefinitions.getInstance().loadCardDefinitions();
-		CubeDefinitions.getInstance().loadCubeDefinitions();
-		KeywordDefinitions.getInstance().loadKeywordDefinitions();
-		TriggerDefinitions.addTriggers();
-		LocalVariableDefinitions.addLocalVariables();
-		ManaActivationDefinitions.addManaActivations();
-		PermanentActivationDefinitions.addPermanentActivations();
-		CardEventDefinitions.setCardEvents();
-		MagicStaticLocalVariable.initializeCardDefinitions();
+	public static void initializeEngine() {
+        try {
+            CardDefinitions.getInstance().loadCardDefinitions();
+            CubeDefinitions.getInstance().loadCubeDefinitions();
+            KeywordDefinitions.getInstance().loadKeywordDefinitions();
+            TriggerDefinitions.addTriggers();
+            LocalVariableDefinitions.addLocalVariables();
+            ManaActivationDefinitions.addManaActivations();
+            PermanentActivationDefinitions.addPermanentActivations();
+            CardEventDefinitions.setCardEvents();
+            MagicStaticLocalVariable.initializeCardDefinitions();
+		} catch (final IOException ex) {
+            System.err.println("ERROR! Unable to initialize the engine due to IO problems");
+            throw new RuntimeException(ex);
+		}
 	}
 	
 	public static void initialize() {
-		try {
-			boolean madeGamePath = new File(getGamePath()).mkdir();
-            if (!madeGamePath) {
-                System.err.println("Unable to create directory " + getGamePath());
-            }
+        boolean madeGamePath = new File(getGamePath()).mkdir();
+        if (!madeGamePath) {
+            System.err.println("Unable to create directory " + getGamePath());
+        }
 
-			boolean madeModsPath = new File(getModsPath()).mkdir();
-            if (!madeModsPath) {
-                System.err.println("Unable to create directory " + getModsPath());
-            }
-			
-            DeckUtils.createDeckFolder();
-			initializeEngine();
-		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to initialize the engine");
-            throw new RuntimeException(ex.getMessage());
-		}
+        boolean madeModsPath = new File(getModsPath()).mkdir();
+        if (!madeModsPath) {
+            System.err.println("Unable to create directory " + getModsPath());
+        }
+        
+        DeckUtils.createDeckFolder();
+        initializeEngine();
 	}
 }
