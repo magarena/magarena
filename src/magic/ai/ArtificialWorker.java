@@ -124,11 +124,14 @@ public class ArtificialWorker {
 			aiChoiceResults.aiScore=runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
 		} catch (final MaximumExceededException ex) {
 			aiChoiceResults.aiScore=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE;
-		} catch (final Exception ex) {
+		} 
+       
+        /*
+        catch (final Exception ex) {
 			aiChoiceResults.aiScore=ArtificialScore.INVALID_SCORE;
-			System.err.println(MagicGameReport.buildReport(game));
-			ex.printStackTrace();
 		}
+        */
+
 		aiChoiceResults.gameCount=gameCount;
 		game.undoAllActions();
 	}	
