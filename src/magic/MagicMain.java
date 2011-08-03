@@ -81,8 +81,7 @@ public class MagicMain {
 			initializeEngine();
 		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to initialize the engine");
-            System.err.println(ex.getMessage());
-			ex.printStackTrace();
+            throw new RuntimeException(ex.getMessage());
 		}
 	}
 }
