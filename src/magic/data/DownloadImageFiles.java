@@ -22,13 +22,12 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 	public DownloadImageFiles(final String filename) {
 		try {
 			loadDownloadImageFiles(filename);
-		} catch (final Exception ex) {
+		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to download images");
         }
 	}	
 	
 	private void loadDownloadImageFiles(final String filename) throws IOException {
-		
 		final InputStream stream;
 		if (filename.startsWith("file://")) {
 			stream=new FileInputStream(filename.substring(7));
@@ -40,7 +39,6 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 		File imagesPathFile=null;
 
 		while (true) {
-			
 			final String line=reader.readLine();
 			if (line==null) {
 				break;
