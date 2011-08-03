@@ -196,10 +196,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 					final int port=Integer.parseInt(portTextField.getText());
 					proxy=new Proxy(proxyType,new InetSocketAddress(address,port));
 				}
-			} catch (final Exception ex) {
+			} catch (final NumberFormatException ex) {
 				return;
 			}
-			
 			setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 			proxyComboBox.setEnabled(false);
 			addressTextField.setEnabled(false);
