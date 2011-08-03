@@ -1,6 +1,7 @@
 package magic;
 
 import java.io.File;
+import java.io.IOException;
 
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
@@ -29,7 +30,7 @@ public class DeckStrCal {
             if (curr.equals("--games")) {
                 try {
                     games = Integer.parseInt(next);
-                } catch (final Exception ex) {
+                } catch (final NumberFormatException ex) {
                     System.err.println("Error: number of games not an integer");
                     ex.printStackTrace();
                     System.exit(1);
@@ -37,7 +38,7 @@ public class DeckStrCal {
             } else if (curr.equals("--str1")) {
                 try {
                     str1 = Integer.parseInt(next);
-                } catch (final Exception ex) {
+                } catch (final NumberFormatException ex) {
                     System.err.println("Error: AI strength not an integer");
                     ex.printStackTrace();
                     System.exit(1);
@@ -45,7 +46,7 @@ public class DeckStrCal {
             } else if (curr.equals("--str2")) {
                 try {
                     str2 = Integer.parseInt(next);
-                } catch (final Exception ex) {
+                } catch (final NumberFormatException ex) {
                     System.err.println("Error: AI strength not an integer");
                     ex.printStackTrace();
                     System.exit(1);
@@ -97,11 +98,9 @@ public class DeckStrCal {
     private static MagicTournament setupTournament() {
         // Load cards and cubes.
         try {
-        	MagicMain.initializeEngine();
-        } catch (final Exception ex) {
-            System.err.println("Error: unable to initialize game engine");
-            ex.printStackTrace();
-            System.exit(1);
+            MagicMain.initializeEngine();
+        } catch (final IOException ex) {
+            throw new RuntimeException(ex.getMessage());
         }
 
         // Set number of games.
