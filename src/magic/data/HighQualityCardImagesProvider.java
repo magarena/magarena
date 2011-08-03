@@ -68,13 +68,14 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 		final String filename=getFilename(cardDefinition,index);
 
         //put image into the cache
-		if (!origImages.containsKey(filename) ||
-            !scaledImages.containsKey(filename)) {
+		if (!(origImages.containsKey(filename) && scaledImages.containsKey(filename))) {
             final BufferedImage origImage = loadCardImage(filename);
             origImages.put(filename, origImage);
 
-            final BufferedImage scaledImage = 
-                    magic.GraphicsUtilities.scale(origImage, CARD_WIDTH, CARD_HEIGHT);
+            final BufferedImage scaledImage = magic.GraphicsUtilities.scale(
+                    origImage, 
+                    CARD_WIDTH, 
+                    CARD_HEIGHT);
             scaledImages.put(filename, scaledImage);
 		}
 
