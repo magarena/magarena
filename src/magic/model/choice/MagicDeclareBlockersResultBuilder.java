@@ -46,6 +46,8 @@ public class MagicDeclareBlockersResultBuilder {
 	}
 	
     private void buildBlockersFast() {
+        System.err.println("Running randmized blocking algorithm");
+        
         //generate basic blocks 
         //buildBasicBlocks(0);
         
@@ -279,9 +281,12 @@ public class MagicDeclareBlockersResultBuilder {
 		// find best combinations of attackers and blockers.
 		result=new MagicDeclareBlockersResult(0,0);
 		position=0;
+        
+        if (max_blocks > 1e5) {
+            System.err.println("WARNING. Number of blocking options is " + max_blocks);
+        }
 
         if (max_blocks > 1e6) {
-            System.err.println("WARNING. Number of blocking options is " + max_blocks);
             buildBlockersFast();
         } else {
 		    buildAttacker(0);
