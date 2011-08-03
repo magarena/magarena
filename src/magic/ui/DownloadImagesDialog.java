@@ -19,6 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 
 import magic.data.DownloadImageFile;
 import magic.data.DownloadImageFiles;
@@ -40,7 +41,6 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private final JButton cancelButton;
 	private Thread downloader=null;
 	private Proxy proxy=null;
-	long startDownload;
 
 	public DownloadImagesDialog(final MagicFrame frame) {
 		super(frame,true);
@@ -136,43 +136,55 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		}		
 	}
 
-	/*
-     * Checks if the thread is still uninterrupted. If it is, wait (not sure
-     * if return would be better). If not continue and update the labels, then
-     * repaint.
-	 */
     @Override
     public void run() {
-        if(downloader==null){
-            try {
-                Thread.sleep(10);
-            } catch(InterruptedException ex){
-                System.out.println("RunningThread InterruptedException");
-                System.out.println("running time in millis: "
-                        + (System.currentTimeMillis() - startDownload));
-                Thread.currentThread().interrupt();
+        //NOT run by EDT
 
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                progressBar.setMinimum(0);
+                progressBar.setMaximum(files.size());
             }
-        }else{
-            progressBar.setMinimum(0);
-            progressBar.setMaximum(files.size());
-            
-            int count=0;
-            for (final DownloadImageFile file : files) {
-                downloadProgressLabel.setText((count+1)+"/"+(files.size()+1));
-                downloadLabel.setText(file.getFilename());
-                file.download(proxy);
-                progressBar.setValue(++count);
+        });
+        
+        int count=0;
+        for (final DownloadImageFile file : files) {
+            final int curr = count + 1;
+            SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    downloadProgressLabel.setText(curr+"/"+files.size());
+                    downloadLabel.setText(file.getFilename());
+                }
+            });
+
+            file.download(proxy);
+            count++;
+
+            if (downloader == null) {
+                break;
             }
-            
-            dispose();
-            IconImages.reloadSymbols();
+           
+            final int fcount = count;
+            SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    progressBar.setValue(fcount);
+                }
+            });
+        }
+                
+        IconImages.reloadSymbols();
+      
+        if (downloader != null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    dispose();
+                }
+            });
         }
     }
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-
 		final Object source=event.getSource();
 		if (source==okButton) {
 			try {				
@@ -193,23 +205,10 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 			addressTextField.setEnabled(false);
 			portTextField.setEnabled(false);
 			okButton.setEnabled(false);
-			//cancelButton.setEnabled(false);
-			startDownload = System.currentTimeMillis();
 			downloader = new Thread(this);
 			downloader.start();	
 		} else if (source==cancelButton) {
-			if(downloader!=null){
-				try{
-                    Thread tmpThread = downloader;
-                    downloader = null;
-					if(tmpThread!=null){
-						tmpThread.interrupt();
-					}
-				}
-				catch(Exception ex) {
-					System.out.println(ex);
-				}
-			}
+            downloader = null;
 			dispose();
 		} else if (source==proxyComboBox) {
 			updateProxy();
