@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
+import java.io.IOException;
 import java.util.LinkedList;
 
 import javax.swing.JComponent;
@@ -534,9 +535,15 @@ public class MagicFrame extends JFrame implements ActionListener {
         //restart the app
         String javaBin = System.getProperty("java.home") + "/bin/java";
         File jarFile;
-        try{
-            jarFile = new File(this.getClass().getProtectionDomain().getCodeSource().getLocation().toURI());
-        } catch (final Exception ex) {
+        try {
+            jarFile = new File(this.getClass().
+                    getProtectionDomain().
+                    getCodeSource().
+                    getLocation().
+                    toURI());
+        
+        } catch (final java.net.URISyntaxException ex) {
+            ex.printStackTrace();
             return false;
         }
 
@@ -545,9 +552,9 @@ public class MagicFrame extends JFrame implements ActionListener {
         return false;   //no, it's a .class probably
 
         String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
-        try{
+        try {
             Process p = Runtime.getRuntime().exec(toExec);
-        } catch (final Exception ex) {
+        } catch (final IOException ex) {
             ex.printStackTrace();
             return false;
         }
