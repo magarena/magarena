@@ -13,7 +13,6 @@ import magic.model.MagicCardDefinition;
 public class MagicTools {
 
 	static void listAllCards() throws IOException {
-				
 		final SortedSet<String> names = new TreeSet<String>();
 		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
 			
@@ -28,7 +27,6 @@ public class MagicTools {
 	}
 	
 	static void checkCards() throws IOException {
-		
 		final CardDefinitions cardDefinitions = CardDefinitions.getInstance();		
 		final String filenames[] = new File(MagicMain.getGamePath(),"cards").list();
 		final Set<MagicCardDefinition> remaining = new HashSet<MagicCardDefinition>(CardDefinitions.getInstance().getCards());
@@ -50,8 +48,7 @@ public class MagicTools {
 		}
 	}
 		
-	public static void main(final String args[]) throws Exception {
-
+	public static void main(final String args[]) throws IOException {
 		MagicMain.initializeEngine();
 		checkCards();
 	}
