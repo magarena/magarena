@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
@@ -87,11 +88,19 @@ public class CardViewer extends JPanel implements DelayedViewer {
 
 	@Override
 	public void showDelayed() {
-		setVisible(true);
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+        		setVisible(true);
+            }
+        });
 	}
 	
 	@Override
 	public void hideDelayed() {
-		setVisible(false);
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+        		setVisible(false);
+            }
+        });
 	}
 }
