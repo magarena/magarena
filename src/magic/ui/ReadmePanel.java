@@ -19,7 +19,7 @@ import javax.swing.border.Border;
 import javax.swing.SwingUtilities;
 
 import magic.data.IconImages;
-import magic.data.ReadMeFile;
+import magic.data.TextFile;
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
 import magic.ui.theme.Theme;
@@ -62,12 +62,12 @@ public class ReadmePanel extends JPanel implements ActionListener {
 		JTextArea readMeTextArea = new JTextArea();
 		readMeTextArea.setEditable(false);
 		
-        ReadMeFile file = new ReadMeFile(README_FILENAME);
-		try {
-			readMeTextArea.setText(file.getDataFromFile());
-		} catch (final java.io.IOException ex) {
+        final String content = TextFile.getContents(new java.io.File(README_FILENAME));
+        if (content != null) {
+			readMeTextArea.setText(content);
+        } else {
             System.err.println("WARNING! Unable to read from " + README_FILENAME);
-			readMeTextArea.setText(ex.getMessage());
+			readMeTextArea.setText(README_FILENAME + " not found.");
 		}
 
 		keywordsPane=new JScrollPane(readMeTextArea);
