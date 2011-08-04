@@ -67,7 +67,7 @@ public class ReadmePanel extends JPanel implements ActionListener {
 			readMeTextArea.setText(file.getDataFromFile());
 		} catch (final java.io.IOException ex) {
             System.err.println("WARNING! Unable to read from " + README_FILENAME);
-			System.err.print(ex.getMessage());
+			readMeTextArea.setText(ex.getMessage());
 		}
 
 		keywordsPane=new JScrollPane(readMeTextArea);
