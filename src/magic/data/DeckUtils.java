@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.Map;
+import java.util.Scanner;
 
 import javax.swing.filechooser.FileFilter;
 
@@ -105,27 +106,20 @@ public class DeckUtils {
 	}
 	
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
-        BufferedReader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader(filename));
-        } catch (final FileNotFoundException ex) {
-            reader = null;
+        final String content = TextFile.getContents(new File(filename));
+        if (content == null) {
+            System.err.println("ERROR! Unable to load " + filename);
+            return;
         }
+
+        final Scanner sc = new Scanner(content);
         final int colorCount[] = new int[MagicColor.NR_COLORS];
         final MagicDeck deck = new MagicDeck();
+        
         deck.setName(new File(filename).getName());
 
-        while (true) {
-            String line = null;
-            try {
-                line = reader.readLine();
-            } catch (final IOException ex) {
-                line = null;
-            }
-            if (line == null) {
-                break;
-            }
-            line = line.trim();
+        while (sc.hasNextLine()) {
+            final String line = sc.nextLine().trim();
             if (!line.isEmpty()&&!line.startsWith("#")) {
                 int index = line.indexOf(' ');
                 int amount = Integer.parseInt(line.substring(0,index));
@@ -163,12 +157,6 @@ public class DeckUtils {
         }
         player.setProfile(new MagicPlayerProfile(colorText.toString()));
         player.setDeck(deck);			
-        
-        try {
-            if (reader != null) reader.close();
-        } catch (final IOException ex) {
-            //do nothing
-        }
 	}
 	
 	private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
