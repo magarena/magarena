@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.EnumSet;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -4137,11 +4138,12 @@ public class TriggerDefinitions {
                 final Object obj = field.get(null);
                 if (obj instanceof MagicTrigger) {
                     final MagicTrigger trigger = (MagicTrigger)obj;
-                    final MagicCardDefinition card=trigger.getCardDefinition();
+                    final MagicCardDefinition card = trigger.getCardDefinition();
                     card.addTrigger(trigger);
                     cnt++;
                 }
-            } catch (IllegalAccessException err) {
+            } catch (final IllegalAccessException ex) {
+                throw new RuntimeException(ex);
             }
         }
 		System.err.println("Added " + cnt + " triggers");

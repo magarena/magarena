@@ -139,10 +139,10 @@ public class CardDefinitions {
                     cardDefinition.add(obj);
                 }
             }
-        } catch (ClassNotFoundException err) {
-            //System.err.println("No companion class for " + fname);
-        } catch (IllegalAccessException err) {
-
+        } catch (final ClassNotFoundException ex) {
+            //no companion class found
+        } catch (final IllegalAccessException ex) {
+            throw new RuntimeException(ex);
         }
 	}
 	

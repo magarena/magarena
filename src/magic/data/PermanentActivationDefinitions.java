@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.EnumSet;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -3297,7 +3298,8 @@ public class PermanentActivationDefinitions {
                     card.addActivation(pact);
                     cnt++;
                 }
-            } catch (IllegalAccessException err) {
+            } catch (final IllegalAccessException ex) {
+                throw new RuntimeException(ex);
             }
         }
 

@@ -12,7 +12,7 @@ public class ReadMeFile {
         this.fileName=fileName;
     }
 
-    public String getDataFromFile() throws IOException{
+    public String getDataFromFile() throws IOException {
         StringBuilder text = new StringBuilder();
         String NL = System.getProperty("line.separator");
         Scanner scanner = new Scanner(new FileInputStream(fileName));

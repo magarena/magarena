@@ -118,17 +118,12 @@ public class ArtificialWorker {
 		this.maxGames=maxGames;
 		game.setMainPhases(mainPhases);
 		aiChoiceResults.worker=id;
-		try {
+
+        try {
 			aiChoiceResults.aiScore=runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
 		} catch (final MaximumExceededException ex) {
 			aiChoiceResults.aiScore=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE;
 		} 
-       
-        /*
-        catch (final Exception ex) {
-			aiChoiceResults.aiScore=ArtificialScore.INVALID_SCORE;
-		}
-        */
 
 		aiChoiceResults.gameCount=gameCount;
 		game.undoAllActions();

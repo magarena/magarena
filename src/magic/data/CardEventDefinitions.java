@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -3299,11 +3300,12 @@ public class CardEventDefinitions {
                 final Object obj = field.get(null);
                 if (obj instanceof MagicSpellCardEvent) {
                     final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
-                    final MagicCardDefinition card=cevent.getCardDefinition();
+                    final MagicCardDefinition card = cevent.getCardDefinition();
                     card.setCardEvent(cevent);
                     cnt++;
                 }
-            } catch (IllegalAccessException err) {
+            } catch (final IllegalAccessException ex) {
+                throw new RuntimeException(ex);
             }
         }
 		System.err.println("Added " + cnt + " card events");

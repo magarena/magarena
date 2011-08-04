@@ -55,14 +55,14 @@ public class DeckStrCal {
             } else if (curr.equals("--ai1")) {
                 try {
                     ai1 = MagicAIImpl.valueOf(next);
-                } catch (IllegalArgumentException e) {
+                } catch (final IllegalArgumentException ex) {
                     System.err.println("Error: " + next + " is not valid AI");
                     validArgs = false;
                 }
             } else if (curr.equals("--ai2")) {
                 try {
                     ai2 = MagicAIImpl.valueOf(next);
-                } catch (IllegalArgumentException e) {
+                } catch (final IllegalArgumentException ex) {
                     System.err.println("Error: " + next + " is not valid AI");
                     validArgs = false;
                 }
