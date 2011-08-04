@@ -112,7 +112,7 @@ public class CustomTheme extends AbstractTheme {
             try {
     			if (inputStream != null) inputStream.close();
             } catch (final IOException ex) {
-                //do nothing
+                System.err.println("ERROR! Unable to close " + filename);
             }
         }
 	    return image;
