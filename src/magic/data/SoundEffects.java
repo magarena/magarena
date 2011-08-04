@@ -23,25 +23,18 @@ public class SoundEffects {
 	
 	public void playClip(final String name) {
 		if (GeneralConfig.getInstance().isSound()) {
-            AudioInputStream inputStream = null;
 			try {
                 final Clip clip = AudioSystem.getClip();
-                inputStream = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH,name));
-		        clip.open(inputStream);
+                clip.open(AudioSystem.getAudioInputStream(new File(SOUNDS_PATH,name)));
 		        clip.start();
+                clip.close();
 		    } catch (final LineUnavailableException ex) {
                 System.err.println("WARNING. Unable to load clip " + name);
 		    } catch (final UnsupportedAudioFileException ex) {
                 System.err.println("WARNING. Unable to load clip " + name);
 		    } catch (final IOException ex) {
                 System.err.println("WARNING. Unable to load clip " + name);
-            } finally {
-                try {
-                    if (inputStream != null) inputStream.close();
-                } catch (final IOException ex) {
-                    //do nothing
-                }
-            }
+            } 
 		}
 	}
 
