@@ -12,26 +12,23 @@ import magic.model.MagicCardDefinition;
 
 public class MagicTools {
 
-	static void listAllCards() throws IOException {
+	static void listAllCards() {
 		final SortedSet<String> names = new TreeSet<String>();
 		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
-			
 			if (!cardDefinition.isToken()) {
 				names.add(cardDefinition.getName());
 			}
 		}
 		for (final String name : names) {
-			
 			System.out.println(name);
 		}
 	}
 	
-	static void checkCards() throws IOException {
+	static void checkCards() {
 		final CardDefinitions cardDefinitions = CardDefinitions.getInstance();		
 		final String filenames[] = new File(MagicMain.getGamePath(),"cards").list();
 		final Set<MagicCardDefinition> remaining = new HashSet<MagicCardDefinition>(CardDefinitions.getInstance().getCards());
 		for (final String filename : filenames) {
-			
 			final String name = filename.substring(0,filename.length()-4);
 			final MagicCardDefinition cardDefinition = cardDefinitions.getCard(name);
 			if (cardDefinition == null) {
@@ -41,14 +38,13 @@ public class MagicTools {
 			}
 		}
 		for (final MagicCardDefinition card : remaining) {
-			
 			if (!card.isToken()) {
 				System.out.println("<"+card.getName());
 			}
 		}
 	}
 		
-	public static void main(final String args[]) throws IOException {
+	public static void main(final String args[]) {
 		MagicMain.initializeEngine();
 		checkCards();
 	}
