@@ -59,7 +59,7 @@ public class DeckGenerator {
 		int countCost[]=new int[3];
 		
 		// Add spells to deck.
-		while (deck.size()<spells) {
+		while (deck.size() < spells && spellCards.size() > 0) {
 			final int index=MagicRandom.nextInt(spellCards.size());
 			final MagicCardDefinition cardDefinition=spellCards.get(index);
             spellCards.remove(index);
@@ -93,7 +93,7 @@ public class DeckGenerator {
 		}	
 		
 		// Add non basic lands to deck.
-		while (deck.size()<spells+lands && landCards.size() > 0) {
+		while (deck.size() < spells+lands && landCards.size() > 0) {
 			final int index=MagicRandom.nextInt(landCards.size());
 			final MagicCardDefinition cardDefinition=landCards.get(index);
             landCards.remove(index);
