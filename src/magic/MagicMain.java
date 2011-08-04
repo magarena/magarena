@@ -36,7 +36,7 @@ public class MagicMain {
 		System.err.println("Data folder : "+gamePath);
 	}
 	
-	public static void main(String args[]) throws IOException {		
+	public static void main(String args[]) {		
 		initialize();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
