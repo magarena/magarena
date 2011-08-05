@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
@@ -156,11 +157,18 @@ public class CardDefinitions {
 
 		// Cards.
 		final InputStream stream=this.getClass().getResourceAsStream(filename);
-		final BufferedReader reader=new BufferedReader(new InputStreamReader(stream));
+        String content = null;
+        try {
+            content = FileIO.toStr(stream);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to load card definitions from " + filename);
+            return;
+        }
+
+        final Scanner sc = new Scanner(content);
 		MagicCardDefinition cardDefinition=null;
-		String line;
-		while ((line=reader.readLine())!=null) {
-			line=line.trim();
+		while (sc.hasNextLine()) {
+			final String line=sc.nextLine().trim();
 			int pos=line.indexOf('>');
 			if (pos==0) {
 				checkCard(cardDefinition);
@@ -178,7 +186,6 @@ public class CardDefinitions {
 		}
 
 		checkCard(cardDefinition);
-		reader.close();
 	}
 	
 	public void loadCardDefinitions() throws IOException {
