@@ -4,6 +4,7 @@ import java.io.*;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.net.URL;
+import java.util.Properties;
 
 public class FileIO {
 
@@ -75,37 +76,18 @@ public class FileIO {
         }
     }
 
-    /**
-    * Change the contents of text file in its entirety, overwriting any
-    * existing text.
-    *
-    * This style of implementation throws all exceptions to the caller.
-    *
-    * @param aFile is an existing file which can be written to.
-    * @throws IllegalArgumentException if param does not comply.
-    * @throws FileNotFoundException if the file does not exist.
-    * @throws IOException if problem encountered during write.
-    */
-    static public void toFile(File aFile, String aContents)
-             throws FileNotFoundException, IOException {
+    static public void toFile(File aFile, String aContents) {
         if (aFile == null) {
             throw new IllegalArgumentException("File should not be null.");
         }
-        if (!aFile.exists()) {
-            throw new FileNotFoundException ("File does not exist: " + aFile);
-        }
-        if (!aFile.isFile()) {
-            throw new IllegalArgumentException("Should not be a directory: " + aFile);
-        }
-        if (!aFile.canWrite()) {
-            throw new IllegalArgumentException("File cannot be written: " + aFile);
-        }
 
-        //use buffering
-        Writer output = new BufferedWriter(new FileWriter(aFile));
+        Writer output = null;
         try {
-            //FileWriter always assumes default encoding is OK!
+            output = new BufferedWriter(new FileWriter(aFile));
             output.write(aContents);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to write to " + aFile);
+            System.err.println(ex.getMessage());
         } finally {
             close(output);
         }
@@ -156,5 +138,40 @@ public class FileIO {
             }
         }
         return img;
+    }
+    
+    static public void toFile(File aFile, Properties properties, String name) throws IOException {
+        if (aFile == null) {
+            throw new IllegalArgumentException("File should not be null.");
+        }
+        
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(aFile);
+            properties.store(fos, name);
+        } finally {
+            close(fos);
+        }
+    }
+
+    static public Properties toProp(File aFile) {
+        if (aFile == null) {
+            throw new IllegalArgumentException("File should not be null.");
+        }
+        
+        final Properties properties=new Properties();
+
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(aFile);
+            properties.load(fis);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to load from " + aFile);
+            System.err.println(ex.getMessage());
+        } finally {
+            close(fis);
+        }
+
+        return properties;
     }
 } 
