@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 import magic.MagicMain;
@@ -87,17 +86,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	
 	public ImageViewer() {
 		setOpaque(false);
-		BufferedImage readImage=ThemeFactory.getInstance().getCurrentTheme().getLogoTexture();
-        final File imageFile=rndFile();
-		try {
-			if (imageFile!=null) {
-				readImage=ImageIO.read(imageFile);
-			}			
-		} catch (final IOException ex) {
-            System.err.println("WARNING. Unable to read from " + imageFile.getName());
-        }
-		
-		image=readImage;
+		image = magic.data.FileIO.toImg(rndFile(), ThemeFactory.getInstance().getCurrentTheme().getLogoTexture());
 		if (image!=null) {
 			imageWidth=image.getWidth();
 			imageHeight=image.getHeight();
