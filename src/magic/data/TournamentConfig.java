@@ -173,7 +173,7 @@ public class TournamentConfig {
             try {
                 properties.load(fis);
             } finally {
-                fis.close();
+                magic.data.FileIO.close(fis);
             }
 			load(properties);
             System.err.println("Loaded tournament config");
@@ -202,7 +202,7 @@ public class TournamentConfig {
             try {
     			properties.store(fos,"Tournament configuration");
             } finally {
-                fos.close();
+                magic.data.FileIO.close(fos);
             }
             System.err.println("Saved tournament config");
 		} catch (final IOException ex) {
