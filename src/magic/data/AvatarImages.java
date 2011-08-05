@@ -1,12 +1,9 @@
 package magic.data;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Vector;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 import magic.MagicMain;
@@ -39,13 +36,7 @@ public class AvatarImages {
 	}
 	
 	private PlayerAvatar loadAvatar(final File file) {
-		BufferedImage image;
-		try {
-			image=ImageIO.read(file);
-		} catch (final IOException ex) {
-			image=IconImages.MISSING;
-		}		
-		return new PlayerAvatar(image);
+        return new PlayerAvatar(FileIO.toImg(file, IconImages.MISSING));
 	}
 	
 	private synchronized void loadAvatars() {
