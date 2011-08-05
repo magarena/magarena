@@ -11,7 +11,6 @@ import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 import magic.data.IconImages;
@@ -91,31 +90,23 @@ public class CustomTheme extends AbstractTheme {
 		}
 	}
 	
-	private InputStream getInputStream(final String filename) throws IOException {
-		if (zipFile!=null) {
-			final ZipEntry zipEntry=zipFile.getEntry(filename);
-			return zipFile.getInputStream(zipEntry);
-		} else {
-			return new FileInputStream(new File(file,filename));
-		}
+	private InputStream getInputStream(final String filename) {
+        try {
+            if (zipFile!=null) {
+                final ZipEntry zipEntry=zipFile.getEntry(filename);
+                return zipFile.getInputStream(zipEntry);
+            } else {
+                return new FileInputStream(new File(file,filename));
+            }
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to obtain input stream from " + filename);
+            return null;
+        }
 	}
 	
 	private BufferedImage loadImage(final String filename) {
-        InputStream inputStream = null;
-        BufferedImage image = IconImages.MISSING;
-		try {
-            inputStream = getInputStream(filename);
-	        image = ImageIO.read(inputStream);
-		} catch (final IOException ex) {
-            image = IconImages.MISSING;
-		} finally {
-            try {
-    			if (inputStream != null) inputStream.close();
-            } catch (final IOException ex) {
-                System.err.println("ERROR! Unable to close " + filename);
-            }
-        }
-	    return image;
+        final InputStream ins = getInputStream(filename);
+        return magic.data.FileIO.toImg(ins, IconImages.MISSING);
 	}
 	
 	@Override
@@ -124,34 +115,27 @@ public class CustomTheme extends AbstractTheme {
 			return;
 		}
 		
-		try {			
-			if (file.isFile()) {
-				zipFile=new ZipFile(file);
-			}
+        if (file.isFile()) {
+            try {
+                zipFile=new ZipFile(file);
+            } catch (final java.util.zip.ZipException ex) {
+                System.err.println("ERROR! Unable to create ZipFile from " + file.getName());
+            } catch (final IOException ex) {
+                System.err.println("ERROR! Unable to create ZipFile from " + file.getName());
+            }
+        }
 			
-			final InputStream inputStream=getInputStream(THEME_PROPERTIES_FILE);
-			final Properties properties=new Properties();
-			properties.load(inputStream);
-			inputStream.close();
-			
-			for (final Map.Entry<Object,Object> entry : properties.entrySet()) {
-				
-				parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
-			}						
-		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load theme");
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-		} finally {
-			if (zipFile!=null) {
-				try {
-					zipFile.close();
-				} catch (final IOException ex) {
-                    System.err.println("ERROR! Unable to close zip file");
-                }
-				zipFile=null;
-			}
-			loaded=true;
-		}		
+        final InputStream inputStream=getInputStream(THEME_PROPERTIES_FILE);
+        final Properties properties=new Properties();
+        try {
+            properties.load(inputStream);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to load them properties");
+        } finally {
+            magic.data.FileIO.close(inputStream);
+        }
+        for (final Map.Entry<Object,Object> entry : properties.entrySet()) {
+            parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
+        }						
 	}	
 }
