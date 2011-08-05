@@ -1,6 +1,5 @@
 package magic.data;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -153,7 +152,7 @@ public class CardDefinitions {
 		}
 	}
 	
-	private void loadCardDefinitions(final String filename) throws IOException {
+	private void loadCardDefinitions(final String filename) {
 
 		// Cards.
 		final InputStream stream=this.getClass().getResourceAsStream(filename);
@@ -188,8 +187,7 @@ public class CardDefinitions {
 		checkCard(cardDefinition);
 	}
 	
-	public void loadCardDefinitions() throws IOException {
-
+	public void loadCardDefinitions() {
 		loadCardDefinitions(CARDS_FILENAME);
 		loadCardDefinitions(EXTRA_CARDS_FILENAME);
 		filterCards();
