@@ -1,7 +1,6 @@
 package magic;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import javax.swing.SwingUtilities;
 
@@ -54,20 +53,15 @@ public class MagicMain {
 	}
 
 	public static void initializeEngine() {
-        try {
-            CardDefinitions.getInstance().loadCardDefinitions();
-            CubeDefinitions.getInstance().loadCubeDefinitions();
-            KeywordDefinitions.getInstance().loadKeywordDefinitions();
-            TriggerDefinitions.addTriggers();
-            LocalVariableDefinitions.addLocalVariables();
-            ManaActivationDefinitions.addManaActivations();
-            PermanentActivationDefinitions.addPermanentActivations();
-            CardEventDefinitions.setCardEvents();
-            MagicStaticLocalVariable.initializeCardDefinitions();
-		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to initialize the engine due to IO problems");
-            throw new RuntimeException(ex);
-		}
+        CardDefinitions.getInstance().loadCardDefinitions();
+        CubeDefinitions.getInstance().loadCubeDefinitions();
+        KeywordDefinitions.getInstance().loadKeywordDefinitions();
+        TriggerDefinitions.addTriggers();
+        LocalVariableDefinitions.addLocalVariables();
+        ManaActivationDefinitions.addManaActivations();
+        PermanentActivationDefinitions.addPermanentActivations();
+        CardEventDefinitions.setCardEvents();
+        MagicStaticLocalVariable.initializeCardDefinitions();
 	}
 	
 	public static void initialize() {
