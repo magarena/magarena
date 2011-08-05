@@ -7,7 +7,6 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
-import javax.imageio.ImageIO;
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 
@@ -41,17 +40,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	}
 	
 	private static BufferedImage loadCardImage(final String filename) {
-        final File imageFile = new File(filename);
-        if (imageFile.exists() && imageFile.isFile()) {
-            try {
-                return ImageIO.read(imageFile);
-            } catch (final IOException ex) {
-                System.err.println("ERROR! Unable to read from " + filename);
-                return IconImages.MISSING_CARD;
-            }
-        } else {
-			return IconImages.MISSING_CARD;
-		}
+        return FileIO.toImg(new File(filename), IconImages.MISSING_CARD);
 	}
 	
 	@Override
