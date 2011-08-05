@@ -24,9 +24,11 @@ public class DownloadImageFile {
 	}
 	
 	public void download(final Proxy proxy) {
+        OutputStream outputStream = null;
+        InputStream inputStream = null;
 		try {
-			final OutputStream outputStream=new BufferedOutputStream(new FileOutputStream(file));
-			final InputStream inputStream=url.openConnection(proxy).getInputStream();
+            outputStream = new BufferedOutputStream(new FileOutputStream(file));
+            inputStream = url.openConnection(proxy).getInputStream();
 			final byte buffer[]=new byte[65536];
 			while (true) {
 				final int len=inputStream.read(buffer);
@@ -35,8 +37,6 @@ public class DownloadImageFile {
 				}
 				outputStream.write(buffer,0,len);
 			}
-			inputStream.close();
-			outputStream.close();
 		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to download file");
             System.err.println(ex.getMessage());
@@ -45,6 +45,9 @@ public class DownloadImageFile {
             if (!isDeleted) {
                 System.err.println("ERROR! Unable to delete " + file);
             }
-		}
+		} finally {
+            magic.data.FileIO.close(inputStream);
+            magic.data.FileIO.close(outputStream);
+        }
 	}
 }
