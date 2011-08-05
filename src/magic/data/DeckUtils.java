@@ -83,8 +83,9 @@ public class DeckUtils {
 			cardMap.put(name,count==null?Integer.valueOf(1):Integer.valueOf(count+1));
 		}
 		
+	    BufferedWriter writer = null;
 		try {						
-			final BufferedWriter writer=new BufferedWriter(new FileWriter(filename));
+            writer = new BufferedWriter(new FileWriter(filename));
 			for (int index=0;index<=2;index++) {
 				final SortedMap<String,Integer> cardMap=cardMaps.get(index);
 				if (!cardMap.isEmpty()) {
@@ -97,18 +98,19 @@ public class DeckUtils {
 					writer.newLine();
 				}
 			}			
-			writer.close();
 		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to save deck");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
+        } finally {
+            magic.data.FileIO.close(writer);
         }
 	}
 	
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
         String content = "";
         try {
-            content = TextFile.read(new File(filename));
+            content = FileIO.toStr(new File(filename));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + filename);
             System.err.println(ex.getMessage());
