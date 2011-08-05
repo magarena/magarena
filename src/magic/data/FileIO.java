@@ -28,24 +28,32 @@ public class FileIO {
         return contents.toString();
     }
 
-    static public String toStr(File aFile) throws IOException {
+    static public String toStr(final File aFile) throws IOException {
         return toStr(new BufferedReader(new FileReader(aFile)));
     }
     
-    static public String toStr(InputStream ins) throws IOException {
+    static public String toStr(final InputStream ins) throws IOException {
         return toStr(new BufferedReader(new InputStreamReader(ins)));
     }
 
-    static public Properties toProp(File aFile) {
-        final Properties properties=new Properties();
-        FileInputStream fis = null;
+    static public Properties toProp(final File aFile) {
+        Properties properties = null;
         try {
-            fis = new FileInputStream(aFile);
-            properties.load(fis);
+            properties = toProp(new FileInputStream(aFile));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load from " + aFile + ", " + ex.getMessage());
+        } 
+        return properties;
+    }
+    
+    static public Properties toProp(final InputStream ins) {
+        final Properties properties=new Properties();
+        try {
+            properties.load(ins);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to load from input stream, " + ex.getMessage());
         } finally {
-            close(fis);
+            close(ins);
         }
         return properties;
     }
@@ -97,7 +105,7 @@ public class FileIO {
         return img;
     }
     
-    static public void toFile(File aFile, String aContents) throws IOException {
+    static public void toFile(final File aFile, final String aContents) throws IOException {
         Writer output = null;
         try {
             output = new BufferedWriter(new FileWriter(aFile));
@@ -107,7 +115,10 @@ public class FileIO {
         }
     }
     
-    static public void toFile(File aFile, Properties properties, String name) throws IOException {
+    static public void toFile(
+            final File aFile, 
+            final Properties properties, 
+            final String name) throws IOException {
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(aFile);
