@@ -1,13 +1,14 @@
 package magic.data;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
@@ -20,29 +21,36 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 	private static final long serialVersionUID = 1L;
 
 	public DownloadImageFiles(final String filename) {
-		try {
-			loadDownloadImageFiles(filename);
-		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to download images");
-        }
+        loadDownloadImageFiles(filename);
 	}	
 	
-	private void loadDownloadImageFiles(final String filename) throws IOException {
+	private void loadDownloadImageFiles(final String filename) {
 		final InputStream stream;
 		if (filename.startsWith("file://")) {
-			stream=new FileInputStream(filename.substring(7));
+            try {
+    			stream=new FileInputStream(filename.substring(7));
+            } catch (final FileNotFoundException ex) {
+                System.err.println("ERROR! Unale to find " + filename);
+                return;
+            }
 		} else {
 			stream=this.getClass().getResourceAsStream(filename);
 		}
-		final BufferedReader reader=new BufferedReader(new InputStreamReader(stream));
-		final File gamePathFile=new File(MagicMain.getGamePath());
-		File imagesPathFile=null;
 
-		while (true) {
-			final String line=reader.readLine();
-			if (line==null) {
-				break;
-			}
+        String content = null;
+        try {
+            content = FileIO.toStr(stream);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to read " + filename);
+            return;
+        }
+
+        final Scanner sc = new Scanner(content);
+		final File gamePathFile=new File(MagicMain.getGamePath());
+        File imagesPathFile = null;
+
+		while (sc.hasNextLine()) {
+			final String line = sc.nextLine();
 			if (line.startsWith(">")) {
 				imagesPathFile=new File(gamePathFile,line.substring(1).trim());
 				final boolean isCreated = imagesPathFile.mkdir();
@@ -54,13 +62,15 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 				if (parts.length==2&&!parts[1].isEmpty()) {
 					final File imageFile=new File(imagesPathFile,parts[0]);
 					if (!imageFile.exists()) {
-						add(new DownloadImageFile(imageFile,new URL(parts[1])));
+                        try {
+    						add(new DownloadImageFile(imageFile,new URL(parts[1])));
+                        } catch (final java.net.MalformedURLException ex) {
+                            System.err.println("ERROR! URL malformed " + parts[1]);
+                        }
 					}
 				}
 			}
 		}
-		
-		reader.close();
 		
 		final File cardsPathFile=new File(gamePathFile,"cards");
 		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
@@ -68,7 +78,11 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 			if (imageURL!=null) {
 				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName()+".jpg");
 				if (!imageFile.exists()) {
-					add(new DownloadImageFile(imageFile,new URL(imageURL)));
+                    try {
+    					add(new DownloadImageFile(imageFile,new URL(imageURL)));
+                    } catch (final java.net.MalformedURLException ex) {
+                        System.err.println("ERROR! URL malformed " + imageURL);
+                    }
 				}
 			}
 		}
