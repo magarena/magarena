@@ -20,9 +20,9 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 
     private static final int MAX_IMAGES=100;
 	private final Map<String,BufferedImage> scaledImages = 
-        new magic.ai.StateCache<String,BufferedImage>(MAX_IMAGES);
+        new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
 	private final Map<String,BufferedImage> origImages = 
-        new magic.ai.StateCache<String,BufferedImage>(MAX_IMAGES);
+        new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
 	
 	private HighQualityCardImagesProvider() {}
 	

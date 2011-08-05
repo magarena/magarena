@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicPhase;
 import magic.model.event.MagicEvent;
 import magic.model.choice.*;
+import magic.data.LRUCache;
 
 /*
 AI using Monte Carlo Tree Search
@@ -86,7 +87,7 @@ public class MCTSAI implements MagicAI {
     private List<Object[]> RCHOICES;
 
     //cache nodes to reuse them in later decision
-    private final StateCache<Long, MCTSGameTree> CACHE = new StateCache<Long, MCTSGameTree>(1000);
+    private final LRUCache<Long, MCTSGameTree> CACHE = new LRUCache<Long, MCTSGameTree>(1000);
 
     public MCTSAI() {
         //default: no logging, cheats
@@ -508,7 +509,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
     
     static void addNode(
-            final StateCache<Long, MCTSGameTree> cache, 
+            final LRUCache<Long, MCTSGameTree> cache, 
             final MagicGame game, 
             final MCTSGameTree node) {
         if (node.isCached()) {
@@ -521,7 +522,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
 
     static MCTSGameTree getNode(
-            final StateCache<Long, MCTSGameTree> cache, 
+            final LRUCache<Long, MCTSGameTree> cache, 
             final MagicGame game, 
             final List<Object[]> choices) {
         final long gid = game.getGameId();

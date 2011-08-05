@@ -1,11 +1,13 @@
 package magic.ai;
 
+import magic.data.LRUCache;
+
 public class ArtificialScoreBoard {
 
-	private final StateCache<Long,ArtificialScore> gameScoresMap;
+	private final LRUCache<Long,ArtificialScore> gameScoresMap;
 	
 	public ArtificialScoreBoard() {
-		gameScoresMap=new StateCache<Long,ArtificialScore>(100000);
+		gameScoresMap=new LRUCache<Long,ArtificialScore>(100000);
 	}
 
 	public synchronized void setGameScore(final long gameId,final ArtificialScore aiScore) {
