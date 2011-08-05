@@ -119,21 +119,15 @@ public class CustomTheme extends AbstractTheme {
             try {
                 zipFile=new ZipFile(file);
             } catch (final java.util.zip.ZipException ex) {
-                System.err.println("ERROR! Unable to create ZipFile from " + file.getName());
+                System.err.println("ERROR! Unable to create ZipFile from " + file);
             } catch (final IOException ex) {
-                System.err.println("ERROR! Unable to create ZipFile from " + file.getName());
+                System.err.println("ERROR! Unable to create ZipFile from " + file);
             }
         }
 			
         final InputStream inputStream=getInputStream(THEME_PROPERTIES_FILE);
-        final Properties properties=new Properties();
-        try {
-            properties.load(inputStream);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load them properties");
-        } finally {
-            magic.data.FileIO.close(inputStream);
-        }
+        final Properties properties=magic.data.FileIO.toProp(inputStream);
+        
         for (final Map.Entry<Object,Object> entry : properties.entrySet()) {
             parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
         }						
