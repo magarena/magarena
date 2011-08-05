@@ -7,101 +7,58 @@ import java.net.URL;
 import java.util.Properties;
 
 public class FileIO {
-
-    static public String toStr(File aFile) throws IOException {
-        //...checks on aFile are elided
+    
+    static private String toStr(final BufferedReader input) throws IOException {
         StringBuilder contents = new StringBuilder();
-
-        //use buffering, reading one line at a time
-        //FileReader always assumes default encoding is OK!
-        BufferedReader input = new BufferedReader(new FileReader(aFile));
         try {
             String line = null; //not declared within while loop
             /*
-            * readLine is a bit quirky :
-            * it returns the content of a line MINUS the newline.
-            * it returns null only for the END of the stream.
-            * it returns an empty String if two newlines appear in a row.
-            */
-            while (( line = input.readLine()) != null){
+             * readLine is a bit quirky :
+             * it returns the content of a line MINUS the newline.
+             * it returns null only for the END of the stream.
+             * it returns an empty String if two newlines appear in a row.
+             */
+            while (input != null && (line = input.readLine()) != null) {
                 contents.append(line);
                 contents.append(System.getProperty("line.separator"));
             }
         } finally {
             close(input);
         }
-        
         return contents.toString();
+    }
+
+    static public String toStr(File aFile) throws IOException {
+        return toStr(new BufferedReader(new FileReader(aFile)));
     }
     
     static public String toStr(InputStream ins) throws IOException {
-        //...checks on aFile are elided
-        StringBuilder contents = new StringBuilder();
-
-        //use buffering, reading one line at a time
-        //FileReader always assumes default encoding is OK!
-        BufferedReader input = new BufferedReader(new InputStreamReader(ins));
-        try {
-            String line = null; //not declared within while loop
-            /*
-            * readLine is a bit quirky :
-            * it returns the content of a line MINUS the newline.
-            * it returns null only for the END of the stream.
-            * it returns an empty String if two newlines appear in a row.
-            */
-            while (( line = input.readLine()) != null){
-                contents.append(line);
-                contents.append(System.getProperty("line.separator"));
-            }
-        } finally {
-            close(input);
-        }
-        
-        return contents.toString();
+        return toStr(new BufferedReader(new InputStreamReader(ins)));
     }
 
-    static public void close(final Closeable resource) {
-        if (resource == null) {
-            return;
-        }
-        boolean closed = false;
-        while (!closed) {
-            try {
-                resource.close();
-                closed = true;
-            } catch (final Exception ex) {
-                System.err.println(ex.getMessage());
-                ex.printStackTrace();
-            }
-        }
-    }
-
-    static public void toFile(File aFile, String aContents) {
-        if (aFile == null) {
-            throw new IllegalArgumentException("File should not be null.");
-        }
-
-        Writer output = null;
+    static public Properties toProp(File aFile) {
+        final Properties properties=new Properties();
+        FileInputStream fis = null;
         try {
-            output = new BufferedWriter(new FileWriter(aFile));
-            output.write(aContents);
+            fis = new FileInputStream(aFile);
+            properties.load(fis);
         } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to write to " + aFile);
-            System.err.println(ex.getMessage());
+            System.err.println("ERROR! Unable to load from " + aFile + ", " + ex.getMessage());
         } finally {
-            close(output);
+            close(fis);
         }
+        return properties;
     }
-    
+
     static public BufferedImage toImg(final File aFile, final BufferedImage def) {
         BufferedImage img = def;
-        if (aFile == null || !(aFile.exists() && aFile.isFile())) {
+        if (aFile == null || !aFile.isFile()) {
             img = def;
         } else {
             try {
                 img = ImageIO.read(aFile);
             } catch (final IOException ex) {
-                System.err.println("ERROR! Unable to read from " + aFile.getName());
+                System.err.println("ERROR! Unable to read from " + aFile);
                 img = def;
             }
         }
@@ -140,11 +97,17 @@ public class FileIO {
         return img;
     }
     
-    static public void toFile(File aFile, Properties properties, String name) throws IOException {
-        if (aFile == null) {
-            throw new IllegalArgumentException("File should not be null.");
+    static public void toFile(File aFile, String aContents) throws IOException {
+        Writer output = null;
+        try {
+            output = new BufferedWriter(new FileWriter(aFile));
+            output.write(aContents);
+        } finally {
+            close(output);
         }
-        
+    }
+    
+    static public void toFile(File aFile, Properties properties, String name) throws IOException {
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(aFile);
@@ -154,24 +117,19 @@ public class FileIO {
         }
     }
 
-    static public Properties toProp(File aFile) {
-        if (aFile == null) {
-            throw new IllegalArgumentException("File should not be null.");
+    static public void close(final Closeable resource) {
+        if (resource == null) {
+            return;
         }
-        
-        final Properties properties=new Properties();
-
-        FileInputStream fis = null;
-        try {
-            fis = new FileInputStream(aFile);
-            properties.load(fis);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load from " + aFile);
-            System.err.println(ex.getMessage());
-        } finally {
-            close(fis);
+        boolean closed = false;
+        while (!closed) {
+            try {
+                resource.close();
+                closed = true;
+            } catch (final Exception ex) {
+                System.err.println(ex.getMessage());
+                ex.printStackTrace();
+            }
         }
-
-        return properties;
     }
 } 
