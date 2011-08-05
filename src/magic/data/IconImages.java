@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.awt.image.BufferedImage;
 import java.util.Arrays;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 import magic.MagicMain;
@@ -144,12 +143,7 @@ public class IconImages {
 	public static final ImageIcon COST_X=loadSymbolIcon("x.gif", 21, false);
 		
 	private static BufferedImage loadImage(final String name) {
-        try {
-            return ImageIO.read(IconImages.class.getResource(name));
-        } catch (final IOException ex) {
-            System.err.println("WARNING. Unable to load image " + name);
-            return null;
-        }
+        return FileIO.toImg(IconImages.class.getResource(name), null);
 	}
 	
 	private static ImageIcon loadIcon(final String name) {
@@ -185,15 +179,15 @@ public class IconImages {
 	
     private static void reloadSymbolIcon(final ImageIcon imgico, final String name) {
 		final File iconFile = new File(
-                MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
-		if (iconFile.exists()) {
-            try {
-                final BufferedImage img = ImageIO.read(iconFile);
-                imgico.setImage(img);
-            } catch (final IOException ex) {
-                System.err.println("WARNING. Unable to load image " + iconFile.getName());
-            }
-		}
+                MagicMain.getGamePath() +
+                File.separator +
+                "symbols" +
+                File.separator +
+                name);
+        final BufferedImage img = FileIO.toImg(iconFile, null);
+        if (img != null) {
+            imgico.setImage(img);
+        }
 	}
 
     public static void reloadSymbols() {
@@ -247,11 +241,7 @@ public class IconImages {
         } catch (final IOException ex) {
             System.err.println("WARNING. Unable to load animated icon " + name);
         } finally {
-            try {
-                inputStream.close();
-            } catch (final IOException ex) {
-                System.err.println("WARNING. Unable to close input stream");
-            }
+            FileIO.close(inputStream);
         }
         return new ImageIcon(Arrays.copyOf(data,size));
 	}
