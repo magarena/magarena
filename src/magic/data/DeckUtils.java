@@ -106,9 +106,13 @@ public class DeckUtils {
 	}
 	
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
-        final String content = TextFile.getContents(new File(filename));
-        if (content == null) {
+        String content = "";
+        try {
+            content = TextFile.read(new File(filename));
+        } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + filename);
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
             return;
         }
 

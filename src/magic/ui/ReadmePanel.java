@@ -62,13 +62,14 @@ public class ReadmePanel extends JPanel implements ActionListener {
 		JTextArea readMeTextArea = new JTextArea();
 		readMeTextArea.setEditable(false);
 		
-        final String content = TextFile.getContents(new java.io.File(README_FILENAME));
-        if (content != null) {
-			readMeTextArea.setText(content);
-        } else {
+        String content = "";
+        try {
+            content = TextFile.read(new java.io.File(README_FILENAME));
+        } catch (final java.io.IOException ex) {
             System.err.println("WARNING! Unable to read from " + README_FILENAME);
 			readMeTextArea.setText(README_FILENAME + " not found.");
 		}
+        readMeTextArea.setText(content);
 
 		keywordsPane=new JScrollPane(readMeTextArea);
 		keywordsPane.setBorder(null);

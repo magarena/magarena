@@ -57,9 +57,13 @@ public class CubeDefinitions {
 	}
 	
 	private void loadCubeDefinition(final String name,final File file) {
-        final String content = TextFile.getContents(file);
-        if (content == null) {
+        String content = "";
+        try {
+            content = TextFile.read(file);
+        } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + name);
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
             return;
         }
         final Scanner sc = new Scanner(content);
