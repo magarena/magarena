@@ -167,19 +167,7 @@ public class TournamentConfig {
 	}
 	
 	public void load() {
-		try {
-			final Properties properties=new Properties();
-			final FileInputStream fis = new FileInputStream(getConfigFile());
-            try {
-                properties.load(fis);
-            } finally {
-                magic.data.FileIO.close(fis);
-            }
-			load(properties);
-            System.err.println("Loaded tournament config");
-		} catch (final IOException ex) {
-            System.err.println("WARNING. Unable to load tournament config");
-        }
+        load(FileIO.toProp(getConfigFile()));
 	}
 	
 	public void save(final Properties properties) {
@@ -195,19 +183,14 @@ public class TournamentConfig {
 	}
 	
 	public void save() {
-		try {
-			final Properties properties=new Properties();
-			save(properties);
-            final FileOutputStream fos = new FileOutputStream(getConfigFile());
-            try {
-    			properties.store(fos,"Tournament configuration");
-            } finally {
-                magic.data.FileIO.close(fos);
-            }
+        final Properties properties=new Properties();
+        save(properties);
+        try {
+            FileIO.toFile(getConfigFile(), properties, "Tournament configuration"); 
             System.err.println("Saved tournament config");
-		} catch (final IOException ex) {
+        } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save tournament config");
-        }		
+        }
 	}
 	
 	private static File getConfigFile() {

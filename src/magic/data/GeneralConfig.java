@@ -270,22 +270,10 @@ public class GeneralConfig {
 	}
 	
 	public void load() {
-		try {
-			final Properties properties=new Properties();
-            final FileInputStream fis = new FileInputStream(getConfigFile());
-            try {
-                properties.load(fis);
-            } finally {
-                magic.data.FileIO.close(fis);
-            }
-			load(properties);
-		} catch (final IOException ex) {
-            System.err.println("WARNING! unable to load " + getConfigFile());
-        } 
+        load(FileIO.toProp(getConfigFile()));
 	}
 	
 	public void save(final Properties properties) {
-		
 		properties.setProperty(LEFT,String.valueOf(left));
 		properties.setProperty(TOP,String.valueOf(top));
 		properties.setProperty(WIDTH,String.valueOf(width));
@@ -307,30 +295,21 @@ public class GeneralConfig {
 	}
 	
 	public void save() {
-		try {
-			final Properties properties=new Properties();
-			save(properties);
-            final FileOutputStream fos = new FileOutputStream(getConfigFile()); 
-            try {
-    			properties.store(fos,"General configuration");
-            } finally {
-                magic.data.FileIO.close(fos);
-            }
+        final Properties properties=new Properties();
+        save(properties);
+        try {
+            FileIO.toFile(getConfigFile(), properties, "General configuration");
             System.err.println("Saved general config");
-		} catch (final IOException ex) {
-            System.err.println("ERROR! unable to save general config");
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-        }		
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to save general config");
+        }
 	}
 
 	private static File getConfigFile() {
-		
 		return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
 	}
 
 	public static GeneralConfig getInstance() {
-		
 		return INSTANCE;
 	}
 }

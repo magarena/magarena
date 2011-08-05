@@ -243,25 +243,18 @@ public class MagicTournament {
 		properties.setProperty(START,""+startPlayer);
 		
 		for (int index=0;index<playerDefinitions.length;index++) {
-			
 			playerDefinitions[index].save(properties,getPlayerPrefix(index));
 		}
 	}
 	
 	public void save(final File file) {
-		try {
-			final Properties properties=new Properties();
-			save(properties);
-            final FileOutputStream fos = new FileOutputStream(file);
-            try {
-    			properties.store(fos,"Tournament");
-            } finally {
-                magic.data.FileIO.close(fos);
-            }
-		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to save tournament");
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
+        final Properties properties=new Properties();
+        save(properties);
+        try {
+            magic.data.FileIO.toFile(file, properties, "Tournament");
+            System.err.println("Saved tournament");
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable save tournament to " + file);
         }
 	}
 	
@@ -282,20 +275,7 @@ public class MagicTournament {
 	}
 	
 	public void load(final File file) {
-		try {
-			final Properties properties=new Properties();
-            final FileInputStream fis = new FileInputStream(file);
-            try {
-    			properties.load(fis);
-            } finally {
-                magic.data.FileIO.close(fis);
-            }
-			load(properties);
-		} catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load tournament");
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-        }
+        load(magic.data.FileIO.toProp(file));
 	}
 	
 	public void restart() {
