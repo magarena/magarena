@@ -276,7 +276,7 @@ public class GeneralConfig {
             try {
                 properties.load(fis);
             } finally {
-                fis.close();
+                magic.data.FileIO.close(fis);
             }
 			load(properties);
 		} catch (final IOException ex) {
@@ -314,7 +314,7 @@ public class GeneralConfig {
             try {
     			properties.store(fos,"General configuration");
             } finally {
-                fos.close();
+                magic.data.FileIO.close(fos);
             }
             System.err.println("Saved general config");
 		} catch (final IOException ex) {
