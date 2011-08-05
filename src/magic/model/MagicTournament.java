@@ -256,7 +256,7 @@ public class MagicTournament {
             try {
     			properties.store(fos,"Tournament");
             } finally {
-                fos.close();
+                magic.data.FileIO.close(fos);
             }
 		} catch (final IOException ex) {
             System.err.println("ERROR! Unable to save tournament");
@@ -288,7 +288,7 @@ public class MagicTournament {
             try {
     			properties.load(fis);
             } finally {
-                fis.close();
+                magic.data.FileIO.close(fis);
             }
 			load(properties);
 		} catch (final IOException ex) {
