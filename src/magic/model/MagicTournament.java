@@ -250,7 +250,7 @@ public class MagicTournament {
 	public void save(final File file) {
         final Properties properties=new Properties();
         save(properties);
-        try {
+        try { //save to file 
             magic.data.FileIO.toFile(file, properties, "Tournament");
             System.err.println("Saved tournament");
         } catch (final IOException ex) {

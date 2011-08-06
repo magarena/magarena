@@ -84,7 +84,7 @@ public class GameController {
 	}
     
     public static void pause(int t) {
-        try {
+        try { //sleep
             Thread.sleep(t);
 		} catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
@@ -97,7 +97,7 @@ public class GameController {
             task.run();
             return;
         }
-        try {
+        try { //invoke and wait
             SwingUtilities.invokeAndWait(task);
 		} catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
@@ -108,7 +108,7 @@ public class GameController {
 	
 	/** Returns true when undo was clicked. */
 	public synchronized boolean waitForInputOrUndo() {
-		try {
+		try { //wait
 			wait();
 			if (undoClicked) {
 				undoClicked = false;

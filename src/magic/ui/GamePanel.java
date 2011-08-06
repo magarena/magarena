@@ -241,7 +241,7 @@ public final class GamePanel extends JPanel {
                 final Thread cur=Thread.currentThread();
                 cur.setPriority(Thread.MIN_PRIORITY);
                 System.err.println("Starting game...");
-                try {
+                try { //handle any unrecoverable exception in the controller
                     controller.runGame();
                 } catch (final Throwable ex) {
                     //unrecoverable error has occurred! 

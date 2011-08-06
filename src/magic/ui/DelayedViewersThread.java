@@ -28,7 +28,7 @@ public final class DelayedViewersThread extends Thread {
 	@Override
 	public synchronized void run() {
 		while (true) {
-			try {
+			try { //wait
 				if (delayedViewers.isEmpty()) {
 					wait();
 				}

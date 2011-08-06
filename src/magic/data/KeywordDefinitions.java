@@ -21,7 +21,7 @@ public class KeywordDefinitions {
 	public void loadKeywordDefinitions() {
 		keywordDefinitions.clear();
         String content = null;
-        try {
+        try { //load keywords.txt
             content = FileIO.toStr(this.getClass().getResourceAsStream(KEYWORDS_FILENAME));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + KEYWORDS_FILENAME);

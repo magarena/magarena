@@ -26,7 +26,7 @@ public class DownloadImageFile {
 	public void download(final Proxy proxy) {
         OutputStream outputStream = null;
         InputStream inputStream = null;
-		try {
+		try { //download image
             outputStream = new BufferedOutputStream(new FileOutputStream(file));
             inputStream = url.openConnection(proxy).getInputStream();
 			final byte buffer[]=new byte[65536];

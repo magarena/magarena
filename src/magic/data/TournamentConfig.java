@@ -185,7 +185,7 @@ public class TournamentConfig {
 	public void save() {
         final Properties properties=new Properties();
         save(properties);
-        try {
+        try { //save config
             FileIO.toFile(getConfigFile(), properties, "Tournament configuration"); 
             System.err.println("Saved tournament config");
         } catch (final IOException ex) {

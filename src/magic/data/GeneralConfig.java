@@ -297,7 +297,7 @@ public class GeneralConfig {
 	public void save() {
         final Properties properties=new Properties();
         save(properties);
-        try {
+        try { //save config
             FileIO.toFile(getConfigFile(), properties, "General configuration");
             System.err.println("Saved general config");
         } catch (final IOException ex) {

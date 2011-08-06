@@ -119,7 +119,7 @@ public class ArtificialWorker {
 		game.setMainPhases(mainPhases);
 		aiChoiceResults.worker=id;
 
-        try {
+        try { //check depth exceeded
 			aiChoiceResults.aiScore=runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
 		} catch (final MaximumExceededException ex) {
 			aiChoiceResults.aiScore=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE;

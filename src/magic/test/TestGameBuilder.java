@@ -90,7 +90,7 @@ public class TestGameBuilder {
 	
 	public static MagicGame buildGame(final String id) {
         MagicGame game = null;
-        try {
+        try { //load class by name
             TestGameBuilder gb = (TestGameBuilder)Class.forName("magic.test." + id).newInstance();
             game = gb.getGame();
         } catch (final ClassNotFoundException ex) {

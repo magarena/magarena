@@ -58,9 +58,11 @@ public class VegasAI implements MagicAI {
 			}
 		}
 		executor.shutdown();
-		try {
+		try { //await termination
 			executor.awaitTermination(30,TimeUnit.SECONDS);
-		} catch (final InterruptedException ex) {}
+		} catch (final InterruptedException ex) {
+            throw new RuntimeException(ex);
+        }
 		
 		// Return best choice
 		int bestIndex=0;

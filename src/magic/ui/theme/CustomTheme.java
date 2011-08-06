@@ -91,7 +91,7 @@ public class CustomTheme extends AbstractTheme {
 	}
 	
 	private InputStream getInputStream(final String filename) {
-        try {
+        try { //get input stream
             if (zipFile!=null) {
                 final ZipEntry zipEntry=zipFile.getEntry(filename);
                 return zipFile.getInputStream(zipEntry);
@@ -116,7 +116,7 @@ public class CustomTheme extends AbstractTheme {
 		}
 		
         if (file.isFile()) {
-            try {
+            try { //create zip file
                 zipFile=new ZipFile(file);
             } catch (final java.util.zip.ZipException ex) {
                 System.err.println("ERROR! Unable to create ZipFile from " + file);

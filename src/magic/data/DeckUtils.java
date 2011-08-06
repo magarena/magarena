@@ -27,16 +27,12 @@ public class DeckUtils {
 	public static final String DECK_EXTENSION=".dec";
 	
 	public static final FileFilter DECK_FILEFILTER=new FileFilter() {
-
 		@Override
 		public boolean accept(final File file) {
-			
 			return file.isDirectory()||file.getName().endsWith(DECK_EXTENSION);
 		}
-
 		@Override
 		public String getDescription() {
-
 			return "Magarena deck";
 		}
 	};
@@ -44,7 +40,6 @@ public class DeckUtils {
 	private static final String CARD_TYPES[]={"creatures","spells","lands"};
 	
 	public static String getDeckFolder() {
-		
 		return MagicMain.getGamePath()+File.separator+"decks";
 	}
 	
@@ -82,7 +77,7 @@ public class DeckUtils {
 		}
 		
 	    BufferedWriter writer = null;
-		try {						
+		try { //save deck						
             writer = new BufferedWriter(new FileWriter(filename));
 			for (int index=0;index<=2;index++) {
 				final SortedMap<String,Integer> cardMap=cardMaps.get(index);
@@ -107,7 +102,7 @@ public class DeckUtils {
 	
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
         String content = "";
-        try {
+        try { //load deck
             content = FileIO.toStr(new File(filename));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + filename);

@@ -63,7 +63,7 @@ public class ReadmePanel extends JPanel implements ActionListener {
 		readMeTextArea.setEditable(false);
 		
         String content = "";
-        try {
+        try { //load content from README.txt file
             content = FileIO.toStr(new java.io.File(README_FILENAME));
         } catch (final java.io.IOException ex) {
             System.err.println("WARNING! Unable to read from " + README_FILENAME);

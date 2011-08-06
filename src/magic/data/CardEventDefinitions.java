@@ -3296,7 +3296,7 @@ public class CardEventDefinitions {
         Field[] fields = c.getDeclaredFields();
         int cnt = 0;
         for (final Field field : fields) {
-            try {
+            try { //using reflection
                 final Object obj = field.get(null);
                 if (obj instanceof MagicSpellCardEvent) {
                     final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;

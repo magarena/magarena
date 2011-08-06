@@ -25,7 +25,7 @@ public class SoundEffects {
 		if (GeneralConfig.getInstance().isSound()) {
             Clip clip = null;
             AudioInputStream ins = null;
-			try {
+			try { //load sound clip
                 clip = AudioSystem.getClip();
                 ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH,name));
                 clip.open();

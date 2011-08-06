@@ -535,14 +535,14 @@ public class MagicFrame extends JFrame implements ActionListener {
         //restart the app
         String javaBin = System.getProperty("java.home") + "/bin/java";
         File jarFile;
-        try {
+        try { //get File object of jar
             jarFile = new File(this.getClass().
                     getProtectionDomain().
                     getCodeSource().
                     getLocation().
                     toURI());
-        
         } catch (final java.net.URISyntaxException ex) {
+            System.err.println(ex.getMessage());
             ex.printStackTrace();
             return false;
         }
@@ -552,9 +552,10 @@ public class MagicFrame extends JFrame implements ActionListener {
         return false;   //no, it's a .class probably
 
         String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
-        try {
+        try { //restart the application 
             Process p = Runtime.getRuntime().exec(toExec);
         } catch (final IOException ex) {
+            System.err.println(ex.getMessage());
             ex.printStackTrace();
             return false;
         }

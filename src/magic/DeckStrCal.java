@@ -28,39 +28,39 @@ public class DeckStrCal {
             String curr = args[i];
             String next = args[i+1];
             if (curr.equals("--games")) {
-                try {
+                try { //parse CLI option
                     games = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! number of games not an integer");
-                    System.exit(1);
+                    validArgs = false;
                 }
             } else if (curr.equals("--str1")) {
-                try {
+                try { //parse CLI option
                     str1 = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! AI strength not an integer");
-                    System.exit(1);
+                    validArgs = false;
                 }
             } else if (curr.equals("--str2")) {
-                try {
+                try { //parse CLI option
                     str2 = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! AI strength not an integer");
-                    System.exit(1);
+                    validArgs = false;
                 }
             } else if (curr.equals("--deck1")) {
                 deck1 = next;
             } else if (curr.equals("--deck2")) {
                 deck2 = next;
             } else if (curr.equals("--ai1")) {
-                try {
+                try { //parse CLI option
                     ai1 = MagicAIImpl.valueOf(next);
                 } catch (final IllegalArgumentException ex) {
                     System.err.println("Error: " + next + " is not valid AI");
                     validArgs = false;
                 }
             } else if (curr.equals("--ai2")) {
-                try {
+                try { //parse CLI option
                     ai2 = MagicAIImpl.valueOf(next);
                 } catch (final IllegalArgumentException ex) {
                     System.err.println("Error: " + next + " is not valid AI");

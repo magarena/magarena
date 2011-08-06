@@ -129,7 +129,7 @@ public class CardDefinitions {
         //link to companion object containing static variables
         final String fname = cardDefinition.getFullName();
         final String cname = fname.replace(' ', '_').replace('\'','_');
-        try {
+        try { //reflection
             Class c = Class.forName("magic.card." + cname);
             Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
@@ -156,7 +156,7 @@ public class CardDefinitions {
 		// Cards.
 		final InputStream stream=this.getClass().getResourceAsStream(filename);
         String content = null;
-        try {
+        try { //load card definitions
             content = FileIO.toStr(stream);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load card definitions from " + filename);

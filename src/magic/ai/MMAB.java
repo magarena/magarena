@@ -141,7 +141,7 @@ public class MMAB implements MagicAI {
             final int maxDepth,
             final int maxGames) {
 		while (workers.isEmpty()) {
-			try {
+			try { //wait
 				wait();
 			} catch (final InterruptedException ex) {
                 throw new RuntimeException(ex);
@@ -160,7 +160,7 @@ public class MMAB implements MagicAI {
 	
 	private synchronized void waitUntilProcessed() {
 		while (processingLeft > 0) {
-			try {
+			try { //wait
 				wait();
 			} catch (final InterruptedException ex) {
                 throw new RuntimeException(ex);

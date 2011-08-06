@@ -3290,7 +3290,7 @@ public class PermanentActivationDefinitions {
         Field[] fields = c.getDeclaredFields();
         int cnt = 0;
         for (final Field field : fields) {
-            try {
+            try { //reflection
                 final Object obj = field.get(null);
                 if (obj instanceof MagicPermanentActivation) {
                     final MagicPermanentActivation pact = (MagicPermanentActivation)obj;

@@ -187,18 +187,18 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	public void actionPerformed(final ActionEvent event) {
 		final Object source=event.getSource();
 		if (source==okButton) {
-			try {				
-				final Proxy.Type proxyType=(Proxy.Type)proxyComboBox.getSelectedItem();
-				if (proxyType==Type.DIRECT) {
-					proxy=Proxy.NO_PROXY;
-				} else {
-					final String address=addressTextField.getText();
-					final int port=Integer.parseInt(portTextField.getText());
-					proxy=new Proxy(proxyType,new InetSocketAddress(address,port));
-				}
-			} catch (final NumberFormatException ex) {
-				return;
-			}
+            final Proxy.Type proxyType=(Proxy.Type)proxyComboBox.getSelectedItem();
+            if (proxyType==Type.DIRECT) {
+                proxy=Proxy.NO_PROXY;
+            } else {
+                final String address=addressTextField.getText();
+                try { //parse proxy port number	
+                    final int port=Integer.parseInt(portTextField.getText());
+                    proxy=new Proxy(proxyType,new InetSocketAddress(address,port));
+                } catch (final NumberFormatException ex) {
+                    return;
+                }
+            }
 			setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 			proxyComboBox.setEnabled(false);
 			addressTextField.setEnabled(false);

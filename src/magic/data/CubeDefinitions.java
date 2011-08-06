@@ -56,7 +56,7 @@ public class CubeDefinitions {
 	
 	private void loadCubeDefinition(final String name,final File file) {
         String content = "";
-        try {
+        try { //load cube
             content = FileIO.toStr(file);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + name);

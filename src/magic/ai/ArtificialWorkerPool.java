@@ -42,7 +42,6 @@ public class ArtificialWorkerPool {
 	}
 	
 	private static final int getNrOfThreads() {
-		
 		// Use maximum 4 artificial worker threads.
 		final int threads=Math.min(4,Runtime.getRuntime().availableProcessors()); 
 		log(threads+" AI worker threads.");
@@ -50,7 +49,6 @@ public class ArtificialWorkerPool {
 	}
 	
 	private ArtificialPruneScore createPruneScore() {
-		
 		return new ArtificialMultiPruneScore();
 	}
 	
@@ -155,7 +153,7 @@ public class ArtificialWorkerPool {
             final int maxDepth,
             final int maxGames) {
 		while (workers.isEmpty()) {
-			try {
+			try { //wait
 				wait();
 			} catch (final InterruptedException ex) {
                 throw new RuntimeException(ex);
@@ -176,7 +174,7 @@ public class ArtificialWorkerPool {
 	
 	private synchronized void waitUntilProcessed() {
 		while (processingLeft>0) {
-			try {
+			try { //wait
 				wait();
 			} catch (final InterruptedException ex) {
                 throw new RuntimeException(ex);

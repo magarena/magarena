@@ -230,7 +230,7 @@ public class IconImages {
         final byte data[] = new byte[1<<16];
         int size = 0;
         final InputStream inputStream = IconImages.class.getResourceAsStream("icons/"+name);
-        try {
+        try { //load animated icon
             while (true) {
                 final int len = inputStream.read(data,size,data.length-size);
                 if (len < 0) {

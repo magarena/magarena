@@ -26,7 +26,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 	private void loadDownloadImageFiles(final String filename) {
 		final InputStream stream;
 		if (filename.startsWith("file://")) {
-            try {
+            try { //create file input stream
     			stream=new FileInputStream(filename.substring(7));
             } catch (final FileNotFoundException ex) {
                 System.err.println("ERROR! Unale to find " + filename);
@@ -37,7 +37,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 		}
 
         String content = null;
-        try {
+        try { //load list of images
             content = FileIO.toStr(stream);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to read " + filename);
@@ -61,7 +61,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 				if (parts.length==2&&!parts[1].isEmpty()) {
 					final File imageFile=new File(imagesPathFile,parts[0]);
 					if (!imageFile.exists()) {
-                        try {
+                        try { //create URL
     						add(new DownloadImageFile(imageFile,new URL(parts[1])));
                         } catch (final java.net.MalformedURLException ex) {
                             System.err.println("ERROR! URL malformed " + parts[1]);
@@ -77,7 +77,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 			if (imageURL!=null) {
 				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName()+".jpg");
 				if (!imageFile.exists()) {
-                    try {
+                    try { //create URL
     					add(new DownloadImageFile(imageFile,new URL(imageURL)));
                     } catch (final java.net.MalformedURLException ex) {
                         System.err.println("ERROR! URL malformed " + imageURL);
