@@ -37,7 +37,7 @@ public class FileIO {
     }
 
     static public Properties toProp(final File aFile) {
-        Properties properties = null;
+        Properties properties = new Properties();
         try {
             properties = toProp(new FileInputStream(aFile));
         } catch (final IOException ex) {
@@ -47,7 +47,7 @@ public class FileIO {
     }
     
     static public Properties toProp(final InputStream ins) {
-        final Properties properties=new Properties();
+        final Properties properties = new Properties();
         try {
             properties.load(ins);
         } catch (final IOException ex) {
