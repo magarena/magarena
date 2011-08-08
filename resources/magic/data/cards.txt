@@ -3144,6 +3144,20 @@ toughness=3
 ability=flying,deathtouch,lifelink
 timing=main
 
+>Sangromancer
+image=http://magiccards.info/scans/en/mbs/53.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Vampire,Shaman
+color=b
+converted=4
+cost={2}{B}{B}
+power=3
+toughness=3
+ability=flying
+timing=fmain
+
 >Rith, the Awakener
 image=http://magiccards.info/scans/en/pvc/48.jpg
 value=5

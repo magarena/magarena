@@ -2089,6 +2089,44 @@ public class TriggerDefinitions {
 		}
     };
     
+    private static final MagicTrigger SANGROMANCER1=new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,"Sangromancer") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player = permanent.getController();
+			final MagicPermanent otherPermanent = (MagicPermanent)data;
+			final MagicPlayer otherController = otherPermanent.getController();
+			if (otherController != player && otherPermanent.isCreature()) {			
+				return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 3 life.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+		}
+    };
+    
+    private static final MagicTrigger SANGROMANCER2=new MagicTrigger(MagicTriggerType.WhenDiscarded,"Sangromancer") {
+
+    	@Override
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+    		final MagicPlayer otherController = ((MagicCard)data).getOwner();
+    		final MagicPlayer player = permanent.getController();
+    		if (otherController != player) {		
+    			return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 3 life.");
+    		}
+    		return null;
+    	}
+
+    	@Override
+    	public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+    		game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+    	}
+    };
+    
     private static final MagicTrigger SEPTIC_RATS=new MagicTrigger(MagicTriggerType.WhenAttacks,"Septic Rats") {
 
 		@Override

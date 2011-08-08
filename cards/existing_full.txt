@@ -4494,6 +4494,15 @@ Creature - Elf Scout
 Persist (When this creature is put into a graveyard from the battlefield, if it had no -1/-1 counters on it, return it to the battlefield under its owner's control with a -1/-1 counter on it.)
 SHM C
 
+Sangromancer
+{2}{B}{B}
+Creature - Vampire Shaman
+3/3
+Flying
+Whenever a creature an opponent controls dies, you may gain 3 life.
+Whenever an opponent discards a card, you may gain 3 life.
+MBS R
+
 Savage Lands
 Land
 Savage Lands enters the battlefield tapped.
