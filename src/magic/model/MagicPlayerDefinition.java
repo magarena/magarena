@@ -130,11 +130,13 @@ public class MagicPlayerDefinition {
 		face=Integer.parseInt(properties.getProperty(prefix+FACE));
 
 		deck.clear();
-		for (int index=1;index<=DECK_SIZE;index++) {
-
-			final String name=properties.getProperty(getDeckPrefix(prefix,index));
-			deck.add(CardDefinitions.getInstance().getCard(name));
-		}
+        for (int index=1;index<=properties.size();index++) {
+            final String deckPrefix = getDeckPrefix(prefix,index);
+            if (properties.containsKey(deckPrefix)) {
+                final String name = properties.getProperty(deckPrefix);
+                deck.add(CardDefinitions.getInstance().getCard(name));
+            }
+        }
 	}
 	
 	public void save(final Properties properties,final String prefix) {
@@ -145,7 +147,6 @@ public class MagicPlayerDefinition {
 		
 		int index=1;
 		for (final MagicCardDefinition cardDefinition : deck) {
-
 			properties.setProperty(getDeckPrefix(prefix,index++),cardDefinition.getFullName());
 		}
 	}
