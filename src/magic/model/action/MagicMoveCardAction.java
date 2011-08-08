@@ -12,6 +12,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicPersistTrigger;
 import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicMoveCardAction extends MagicAction {
 
@@ -83,7 +84,12 @@ public class MagicMoveCardAction extends MagicAction {
 			// Persist.
 			if (permanent!=null&&permanent.hasAbility(game,MagicAbility.Persist)) {
 				game.executeTrigger(MagicPersistTrigger.getInstance(),permanent,permanent,new MagicGraveyardTriggerData(card,fromLocation));
-			} 			
+			} 	
+			
+			// Discard.
+			if (fromLocation == MagicLocationType.OwnersHand) {
+				game.executeTrigger(MagicTriggerType.WhenDiscarded,card);
+			}
 		}
 		
 		game.setStateCheckRequired();

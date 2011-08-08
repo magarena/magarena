@@ -437,6 +437,7 @@ Lightning Greaves
 Lightning Helix
 Lightning Reaver
 Lightning Talons
+Liliana's Caress
 Liliana's Specter
 Lingering Tormentor
 Llanowar Elves

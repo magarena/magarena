@@ -1328,6 +1328,24 @@ public class TriggerDefinitions {
 		}		
     };
     
+    private static final MagicTrigger LILIANAS_CARESS=new MagicTrigger(MagicTriggerType.WhenDiscarded,"Liliana's Caress") {
+
+    	@Override
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+    		final MagicPlayer otherController = ((MagicCard)data).getOwner();
+    		final MagicPlayer player = permanent.getController();
+    		if (otherController != player) {		
+    			return new MagicEvent(permanent,player,new Object[]{otherController},this,"Your opponent loses 2 life.");
+    		}
+    		return null;
+    	}
+
+    	@Override
+    	public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+    		game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-2));
+    	}
+    };
+    	    
     private static final MagicTrigger LILIANAS_SPECTER=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Liliana's Specter") {
 
 		@Override

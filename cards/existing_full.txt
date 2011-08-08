@@ -3064,6 +3064,12 @@ Enchant creature
 Enchanted creature gets +3/+0 and has first strike.
 ALA C
 
+Liliana's Caress
+{1}{B}
+Enchantment
+Whenever an opponent discards a card, that player loses 2 life.
+M11 U
+
 Liliana's Specter
 {1}{B}{B}
 Creature - Specter
