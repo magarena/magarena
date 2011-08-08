@@ -2539,6 +2539,12 @@ Creature - Goblin Knight
 Flying, first strike
 EVE C
 
+Honor of the Pure
+{1}{W}
+Enchantment
+White creatures you control get +1/+1.
+M10 R, M11 R, M12 R
+
 Horned Turtle
 {2}{U}
 Creature - Turtle

@@ -36,6 +36,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int gloryOfWarfare;
 	private static int goblinChieftain;
 	private static int godheadOfAwe;
+	private static int honorOfThePure;
 	private static int kinsbaileCavalier;
 	private static int knightExemplar;
 	private static int kulrathKnight;
@@ -143,6 +144,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 			both += getOtherCount(balefireLiege,permanent,controller);
 			both += getOtherCount(deathbringerLiege,permanent,controller);
 			both += getOtherCount(tolsimirWolfblood,permanent,controller);
+			both += controller.getCount(honorOfThePure);
 		}
 		
 		pt.power += both;
@@ -240,6 +242,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		gloryOfWarfare=definitions.getCard("Glory of Warfare").getIndex();
 		goblinChieftain=definitions.getCard("Goblin Chieftain").getIndex();
 		godheadOfAwe=definitions.getCard("Godhead of Awe").getIndex();
+		honorOfThePure=definitions.getCard("Honor of the Pure").getIndex();
 		kinsbaileCavalier=definitions.getCard("Kinsbaile Cavalier").getIndex();
 		knightExemplar=definitions.getCard("Knight Exemplar").getIndex();
 		kulrathKnight=definitions.getCard("Kulrath Knight").getIndex();

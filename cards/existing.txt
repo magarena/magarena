@@ -360,6 +360,7 @@ Hillcomber Giant
 Hill Giant
 Hissing Miasma
 Hobgoblin Dragoon
+Honor of the Pure
 Horned Turtle
 Hoverguard Observer
 Hovermyr
