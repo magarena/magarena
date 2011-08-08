@@ -1971,6 +1971,12 @@ Creature - Boar Beast
 Trample
 JUD C
 
+Gideon's Lawkeeper
+{W}
+Creature - Human Soldier
+{W}, {T}: Tap target creature.
+M12 C
+
 Glacial Fortress
 Land
 Glacial Fortress enters the battlefield tapped unless you control a Plains or an Island.

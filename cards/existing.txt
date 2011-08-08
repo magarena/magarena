@@ -280,6 +280,7 @@ Giant Scorpion
 Giant Solifuge
 Giant Spider
 Giant Warthog
+Gideon's Lawkeeper
 Glacial Fortress
 Glacial Wall
 Glass Golem

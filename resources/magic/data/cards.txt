@@ -4949,6 +4949,19 @@ toughness=4
 ability=flying
 timing=main
 
+>Gideon's Lawkeeper
+image=http://magiccards.info/scans/en/m12/18.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
 >Kazuul, Tyrant of the Cliffs
 image=http://magiccards.info/scans/en/wwk/84.jpg
 value=5
