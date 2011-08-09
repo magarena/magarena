@@ -7,6 +7,7 @@ public enum MagicTriggerType {
 	WhenSpellIsPlayed,      // card on stack
 	WhenComesIntoPlay,      // null
 	WhenDiscarded,			// card
+	WhenDrawn,				// card
 	WhenOtherComesIntoPlay, // permanent
 	WhenPutIntoGraveyard,   // graveyard trigger data
 	WhenOtherPutIntoGraveyardFromPlay, // permanent

@@ -8,6 +8,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicDrawAction extends MagicAction {
 
@@ -39,6 +40,7 @@ public class MagicDrawAction extends MagicAction {
 			player.addCardToHand(card);
 			drawnCards.add(card);
 			score+=ArtificialScoringSystem.getCardScore(card);
+			game.executeTrigger(MagicTriggerType.WhenDrawn,card);
 		}
 		setScore(player,score);
 		game.setStateCheckRequired();			
