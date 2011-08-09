@@ -3841,6 +3841,16 @@ converted=3
 cost={B}{B}{B}
 timing=enchantment
 
+>Spiteful Visions
+image=http://magiccards.info/scans/en/shm/198.jpg
+value=3
+rarity=R
+type=Enchantment
+color=br
+converted=4
+cost={2}{B/R}{B/R}
+timing=enchantment
+
 >Debtors' Knell
 image=http://magiccards.info/scans/en/gp/141.jpg
 value=5
