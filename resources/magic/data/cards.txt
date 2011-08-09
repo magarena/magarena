@@ -1382,6 +1382,19 @@ toughness=4
 ability=flying
 timing=main
 
+>Kederekt Parasite
+image=http://magiccards.info/scans/en/cfx/48.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Horror
+color=b
+converted=1
+cost={B}
+power=1
+toughness=1
+timing=main
+
 >Merfolk Seastalkers
 image=http://magiccards.info/scans/en/zen/55.jpg
 value=3
