@@ -98,47 +98,8 @@ import magic.model.variable.MagicDummyLocalVariable;
 
 public class TriggerDefinitions {
 	
-	private static final MagicChoice DEATHBRINGER_CHOICE1=new MagicMayChoice(
-			"You may destroy target creature if it's tapped.",MagicTargetChoice.NEG_TARGET_CREATURE);
-	private static final MagicChoice DEATHBRINGER_CHOICE2=new MagicMayChoice("You may tap target creature.",MagicTargetChoice.NEG_TARGET_CREATURE);	
-	private static final MagicChoice DROMAR_CHOICE=new MagicMayChoice(
-			"You may pay {2}{U}.",new MagicPayManaCostChoice(MagicManaCost.TWO_BLUE),MagicColorChoice.UNSUMMON_INSTANCE);
-	private static final MagicChoice FLAMEBLAST_CHOICE=new MagicMayChoice(
-			"You may pay {X}{R}.",new MagicPayManaCostChoice(MagicManaCost.X_RED),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER);
-	private static final MagicChoice FRENZIED_CHOICE=new MagicMayChoice(
-			"You may pay {R}.",new MagicPayManaCostChoice(MagicManaCost.RED),MagicTargetChoice.NEG_TARGET_CREATURE);
-	private static final MagicChoice MIMEOMANCER_CHOICE=new MagicMayChoice(
-			"You may put a feather counter on target creature.",MagicTargetChoice.TARGET_CREATURE);
-	private static final MagicChoice MNEMONIC_WALL_CHOICE=new MagicMayChoice(
-			"You may return target instant or sorcery card from your graveyard to your hand.",MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
-	private static final MagicChoice MORDANT_CHOICE=new MagicMayChoice(
-			"You may have Mordant Dragon deal that much damage to target creature.",MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
-	private static final MagicChoice OROS_CHOICE=new MagicMayChoice("You may pay {2}{W}.",new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE));
-	private static final MagicChoice RITH_CHOICE=new MagicMayChoice(
-			"You may pay {2}{G}.",new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN),MagicColorChoice.MOST_INSTANCE);
-	private static final MagicChoice TENEB_CHOICE=new MagicMayChoice(
-			"You may pay {2}{B}.",new MagicPayManaCostChoice(MagicManaCost.TWO_BLACK),MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-	private static final MagicChoice TREVA_CHOICE=new MagicMayChoice(
-			"You may pay {2}{W}.",new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),MagicColorChoice.MOST_INSTANCE);
-	private static final MagicChoice TRYGON_CHOICE=new MagicMayChoice(
-			"You may destroy target artifact or enchantment.",MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS);
-	private static final MagicChoice VOROSH_CHOICE=new MagicMayChoice("You may pay {2}{G}.",new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN));
-	private static final MagicChoice WORT_CHOICE=new MagicMayChoice(
-			"You may return target Goblin card from your graveyard to your hand.",MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_GRAVEYARD);
-	private static final MagicChoice WREXIAL_CHOICE=new MagicMayChoice(
-			"You may cast target instant or sorcery card from your opponent's graveyard.",
-			MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
 	
-    private static final MagicChoice MEMORY_CHOICE=new MagicSimpleMayChoice(
-            "You may draw two cards.",MagicSimpleMayChoice.DRAW_CARDS,2);
 
-	private static final MagicChoice SWORD_CHOICE=new MagicMayChoice(
-			"You may return target creature card from your graveyard to your hand.",
-            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
-
-	private static final MagicChoice HOBGOBLINS_CHOICE=new MagicMayChoice("You may pay {X}.",new MagicPayManaCostChoice(MagicManaCost.X));
-	private static final MagicChoice SNAKE_CHOICE=new MagicSimpleMayChoice("You may draw a card.",MagicSimpleMayChoice.DRAW_CARDS,1);
-	private static final MagicChoice RUPTURE_SPIRE_CHOICE=new MagicMayChoice("You may pay {1}.",new MagicPayManaCostChoice(MagicManaCost.ONE));
 
 	private static final MagicTrigger ACIDIC_SLIME=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Acidic Slime") {
 
@@ -266,7 +227,10 @@ public class TriggerDefinitions {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 
 			if (permanent.getController()==data) {
-				return new MagicEvent(permanent,permanent.getController(),MIMEOMANCER_CHOICE,new MagicBecomeTargetPicker(3,1,true),
+				return new MagicEvent(permanent,permanent.getController(),
+	new MagicMayChoice(
+			"You may put a feather counter on target creature.",MagicTargetChoice.TARGET_CREATURE),
+    new MagicBecomeTargetPicker(3,1,true),
 					MagicEvent.NO_DATA,this,"You may$ put a feather counter on target creature$.");
 			}
 			return null;
@@ -521,7 +485,10 @@ public class TriggerDefinitions {
 			final MagicPlayer player=permanent.getController();
 			final MagicCard card=((MagicCardOnStack)data).getCard();
 			if (card.getOwner()==player&&MagicColor.Black.hasColor(card.getColorFlags())) {
-				return new MagicEvent(permanent,player,DEATHBRINGER_CHOICE1,new MagicDestroyTargetPicker(false),
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may destroy target creature if it's tapped.",MagicTargetChoice.NEG_TARGET_CREATURE),
+    new MagicDestroyTargetPicker(false),
 					MagicEvent.NO_DATA,this,"You may$ destroy target creature$ if it's tapped.");
 			}			
 			return null;
@@ -547,7 +514,9 @@ public class TriggerDefinitions {
 			final MagicPlayer player=permanent.getController();
 			final MagicCard card=((MagicCardOnStack)data).getCard();
 			if (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags())) {
-				return new MagicEvent(permanent,player,DEATHBRINGER_CHOICE2,new MagicTapTargetPicker(true,false),
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice("You may tap target creature.",MagicTargetChoice.NEG_TARGET_CREATURE),
+                        new MagicTapTargetPicker(true,false),
 					MagicEvent.NO_DATA,this,"You may$ tap target creature$.");
 			}
 			return null;
@@ -565,19 +534,6 @@ public class TriggerDefinitions {
 		}
     };
     
-    private static final MagicEventAction DOOMGAPE_EVENT_ACTION=new MagicEventAction() {
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				final int toughness=creature.getToughness(game);
-				game.doAction(new MagicSacrificeAction(creature));
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
-			}
-		}
-	};
     
     private static final MagicTrigger DOOMGAPE=new MagicTrigger(MagicTriggerType.AtUpkeep,"Doomgape") {
 
@@ -597,7 +553,20 @@ public class TriggerDefinitions {
 			final MagicPlayer player=(MagicPlayer)data[1];
 			if (player.controlsPermanentWithType(MagicType.Creature)) {
 				game.addEvent(new MagicEvent((MagicPermanent)data[0],player, MagicTargetChoice.SACRIFICE_CREATURE,MagicSacrificeTargetPicker.getInstance(),
-					new Object[]{player},DOOMGAPE_EVENT_ACTION,"Choose a creature to sacrifice$."));
+					new Object[]{player},
+    new MagicEventAction() {
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
+			if (creature!=null) {
+				final int toughness=creature.getToughness(game);
+				game.doAction(new MagicSacrificeAction(creature));
+				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
+			}
+		}
+	},"Choose a creature to sacrifice$."));
 			}
 		}
     };
@@ -674,7 +643,9 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {				
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,DROMAR_CHOICE,new Object[]{player},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may pay {2}{U}.",new MagicPayManaCostChoice(MagicManaCost.TWO_BLUE),MagicColorChoice.UNSUMMON_INSTANCE),new Object[]{player},this,
 						"You may$ pay {2}{U}$. If you do, choose a color$. Return all creatures of that color to their owner's hand.");
 			}
 			return null;
@@ -765,7 +736,9 @@ public class TriggerDefinitions {
 
 			if (permanent==data) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,FLAMEBLAST_CHOICE,new MagicDamageTargetPicker(player.getMaximumX(game,MagicManaCost.X_RED)),
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may pay {X}{R}.",new MagicPayManaCostChoice(MagicManaCost.X_RED),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER), new MagicDamageTargetPicker(player.getMaximumX(game,MagicManaCost.X_RED)),
 					new Object[]{permanent},this,"You may pay$ {X}{R}$. If you do, Flameblast Dragon deals X damage to target creature or player$.");
 			}
 			return null;
@@ -850,7 +823,9 @@ public class TriggerDefinitions {
 
 			if (permanent==data) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,FRENZIED_CHOICE,new MagicNoCombatTargetPicker(false,true,false),
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may pay {R}.",new MagicPayManaCostChoice(MagicManaCost.RED),MagicTargetChoice.NEG_TARGET_CREATURE),new MagicNoCombatTargetPicker(false,true,false),
 					MagicEvent.NO_DATA,this,"You may$ pay {R}$. If you do, target creature$ can't block this turn.");
 			}
 			return null;
@@ -1550,7 +1525,11 @@ public class TriggerDefinitions {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 
-			return new MagicEvent(permanent,permanent.getController(),MNEMONIC_WALL_CHOICE,MagicGraveyardTargetPicker.getInstance(),
+			return new MagicEvent(permanent,permanent.getController(),
+                    
+	new MagicMayChoice(
+			"You may return target instant or sorcery card from your graveyard to your hand.",MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD),
+    MagicGraveyardTargetPicker.getInstance(),
 				MagicEvent.NO_DATA,this,"You may$ return target instant or sorcery card$ from your graveyard to your hand.");
 		}
 		
@@ -1575,7 +1554,10 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final int amount=damage.getAmount();
-				return new MagicEvent(permanent,permanent.getController(),MORDANT_CHOICE,new MagicDamageTargetPicker(amount),
+				return new MagicEvent(permanent,permanent.getController(),
+	new MagicMayChoice(
+			"You may have Mordant Dragon deal that much damage to target creature.",MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
+    new MagicDamageTargetPicker(amount),
 					new Object[]{permanent,amount},this,"You may$ have Mordant Dragon deal "+amount+" damage to target creature$ your opponent controls.");
 			}
 			return null;
@@ -1817,7 +1799,9 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();		
-				return new MagicEvent(permanent,player,OROS_CHOICE,new Object[]{player,permanent},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice("You may pay {2}{W}.",new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE)),
+    new Object[]{player,permanent},this,
 					"You may$ pay {2}{W}$. If you do, Oros deals 3 damage to each nonwhite creature.");
 			}
 			return null;
@@ -2064,7 +2048,10 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,RITH_CHOICE,new Object[]{player},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may pay {2}{G}.",new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN),MagicColorChoice.MOST_INSTANCE),
+    new Object[]{player},this,
 					"You may$ pay {2}{G}$. If you do, choose a color$. "+
 					"Put a 1/1 green Saproling creature token onto the battlefield for each permanent of that color.");
 			}
@@ -2591,7 +2578,10 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,TENEB_CHOICE,new Object[]{player},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may pay {2}{B}.",new MagicPayManaCostChoice(MagicManaCost.TWO_BLACK),MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS),
+    new Object[]{player},this,
 					"You may$ pay {2}{B}$. If you do, put target creature card$ in a graveyard into play under your control.");
 			}
 			return null;
@@ -2641,7 +2631,10 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,TREVA_CHOICE,new Object[]{player},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may pay {2}{W}.",new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),MagicColorChoice.MOST_INSTANCE),
+    new Object[]{player},this,
 					"You may$ pay {2}{W}$. If you do, choose a color$. You gain 1 life for each permanent of that color.");
 			}
 			return null;
@@ -2676,7 +2669,10 @@ public class TriggerDefinitions {
 			
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				return new MagicEvent(permanent,permanent.getController(),TRYGON_CHOICE,new MagicDestroyTargetPicker(false),
+				return new MagicEvent(permanent,permanent.getController(),
+	new MagicMayChoice(
+			"You may destroy target artifact or enchantment.",MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS),
+    new MagicDestroyTargetPicker(false),
 					MagicEvent.NO_DATA,this,"You may$ destroy target artifact or enchantment$ your opponent controls.");
 			}
 			return null;
@@ -2824,7 +2820,9 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,VOROSH_CHOICE,new Object[]{permanent},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice("You may pay {2}{G}.",new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)),
+    new Object[]{permanent},this,
 					"You may$ pay {2}{G}$. If you do, put six +1/+1 counters on Vorosh.");
 			}
 			return null;
@@ -2891,7 +2889,10 @@ public class TriggerDefinitions {
 
 			final MagicPlayer player=permanent.getController();
 			if (player==data) {
-				return new MagicEvent(permanent,player,WORT_CHOICE,MagicGraveyardTargetPicker.getInstance(),MagicEvent.NO_DATA,this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may return target Goblin card from your graveyard to your hand.",MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_GRAVEYARD),
+    MagicGraveyardTargetPicker.getInstance(),MagicEvent.NO_DATA,this,
 					"You may$ return target Goblin card$ from your graveyard to your hand.");
 			}
 			return null;
@@ -2918,7 +2919,11 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,WREXIAL_CHOICE,MagicGraveyardTargetPicker.getInstance(),new Object[]{player},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may cast target instant or sorcery card from your opponent's graveyard.",
+			MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD),
+    MagicGraveyardTargetPicker.getInstance(),new Object[]{player},this,
 					"You may$ cast target instant or sorcery card$ from your opponent's graveyard without paying its mana cost. "+
 					"If that card would be put into a graveyard this turn, exile it instead.");
 			}
@@ -2997,7 +3002,10 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (permanent.getEquippedCreature()==damage.getSource()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,MEMORY_CHOICE,new Object[]{permanent,player},this,
+				return new MagicEvent(permanent,player,
+    new MagicSimpleMayChoice(
+            "You may draw two cards.",MagicSimpleMayChoice.DRAW_CARDS,2),
+    new Object[]{permanent,player},this,
 					"You may$ draw two cards. If you do, discard a card.");
 			}
 			return null;
@@ -3234,7 +3242,11 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,SWORD_CHOICE,MagicGraveyardTargetPicker.getInstance(),new Object[]{player},this,
+				return new MagicEvent(permanent,player,
+	new MagicMayChoice(
+			"You may return target creature card from your graveyard to your hand.",
+            MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
+    MagicGraveyardTargetPicker.getInstance(),new Object[]{player},this,
 					"You gain 3 life and you may$ return target creature card$ from your graveyard to your hand.");
 			}
 			return null;
@@ -3365,7 +3377,9 @@ public class TriggerDefinitions {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 
-			return new MagicEvent(permanent,permanent.getController(),RUPTURE_SPIRE_CHOICE,new Object[]{permanent},this,
+			return new MagicEvent(permanent,permanent.getController(),
+	new MagicMayChoice("You may pay {1}.",new MagicPayManaCostChoice(MagicManaCost.ONE)),
+    new Object[]{permanent},this,
 				"You may$ pay {1}. If you don't, sacrifice Rupture Spire.");
 		}
 		
@@ -3520,7 +3534,26 @@ public class TriggerDefinitions {
 		}
     };
     
-	private static final MagicLocalVariable HALCYON_GLAZE_VARIABLE=new MagicDummyLocalVariable() {
+	
+    private static final MagicTrigger HALCYON_GLAZE=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Halcyon Glaze") {
+
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+
+			final MagicPlayer player=permanent.getController();
+			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data;
+			if (cardOnStack.getController()==player&&cardOnStack.getCardDefinition().isCreature()) {
+				return new MagicEvent(permanent,player,new Object[]{permanent},this,
+					"Halcyon Glaze becomes a 4/4 Illusion creature with flying until end of turn. It's still an enchantment.");
+			}
+			return null;
+		}
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+
+			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],
+	new MagicDummyLocalVariable() {
 		
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -3544,26 +3577,7 @@ public class TriggerDefinitions {
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
 			return flags|MagicType.Creature.getMask();
 		}
-	};
-	
-    private static final MagicTrigger HALCYON_GLAZE=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Halcyon Glaze") {
-
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
-			final MagicPlayer player=permanent.getController();
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data;
-			if (cardOnStack.getController()==player&&cardOnStack.getCardDefinition().isCreature()) {
-				return new MagicEvent(permanent,player,new Object[]{permanent},this,
-					"Halcyon Glaze becomes a 4/4 Illusion creature with flying until end of turn. It's still an enchantment.");
-			}
-			return null;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],HALCYON_GLAZE_VARIABLE));
+	}));
 		}
     };
     
@@ -3707,7 +3721,9 @@ public class TriggerDefinitions {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,HOBGOBLINS_CHOICE,new Object[]{player},this,
+			return new MagicEvent(permanent,player,
+	new MagicMayChoice("You may pay {X}.",new MagicPayManaCostChoice(MagicManaCost.X)),
+    new Object[]{player},this,
 				"You may pay$ {X}$. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield.");
 		}
 		
@@ -4113,7 +4129,9 @@ public class TriggerDefinitions {
 			final MagicDamage damage=(MagicDamage)data;
 			final MagicTarget target=damage.getTarget();
 			if (damage.getSource()==permanent.getEnchantedCreature()&&target.isPlayer()&&target!=player) {
-				return new MagicEvent(permanent,player,SNAKE_CHOICE,new Object[]{player},this,"You may$ draw a card.");
+				return new MagicEvent(permanent,player,
+	new MagicSimpleMayChoice("You may draw a card.",MagicSimpleMayChoice.DRAW_CARDS,1),
+    new Object[]{player},this,"You may$ draw a card.");
 			}
 			return null;
 		}
@@ -4184,6 +4202,8 @@ public class TriggerDefinitions {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
 		}
     };
+    
+    //private static final "DELETEME"
 	
 	public static void addTriggers() {
         Class c = TriggerDefinitions.class;
