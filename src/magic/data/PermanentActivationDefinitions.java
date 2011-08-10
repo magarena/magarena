@@ -3208,7 +3208,6 @@ public class PermanentActivationDefinitions {
     //private static "DELETEME"
 	
 	public static void addPermanentActivations() {
-        /*
         Class c = PermanentActivationDefinitions.class;
         Field[] fields = c.getDeclaredFields();
         int cnt = 0;
@@ -3227,6 +3226,5 @@ public class PermanentActivationDefinitions {
             }
         }
 		System.err.println("Added " + cnt + " activations");
-        */
 	}
 }
