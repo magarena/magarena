@@ -83,6 +83,8 @@ public class CustomTheme extends AbstractTheme {
 			typeValue=loadImage(value);
 		} else if ("icon".equals(type)) {
 			typeValue=new ImageIcon(loadImage(value));
+		} else if ("option".equals(type)) {
+			typeValue = Boolean.parseBoolean(value);
 		}
 		if (typeValue!=null) {
 			addToTheme(key,typeValue);

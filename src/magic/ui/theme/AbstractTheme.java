@@ -44,6 +44,7 @@ public abstract class AbstractTheme implements Theme {
 		addToTheme(COLOR_COMMON_FOREGROUND,Color.BLACK);
 		addToTheme(COLOR_UNCOMMON_FOREGROUND,new Color(0x8C,0x78,0x53));
 		addToTheme(COLOR_RARE_FOREGROUND,new Color(0xCD,0x7F,0x32));
+		addToTheme(OPTION_USE_OVERLAY,false);
 		addToTheme(COLOR_CHOICE,new Color(0,250,0,70));
 		addToTheme(COLOR_COMBAT_CHOICE,new Color(250,130,0,125));
 		addToTheme(COLOR_SELECTED_PLAYER,Color.RED);
@@ -89,6 +90,12 @@ public abstract class AbstractTheme implements Theme {
 		return (BufferedImage)themeMap.get(Theme.TEXTURE_LOGO);
 	}
 
+	@Override
+	public Boolean getOptionUseOverlay() {
+		final Object value = themeMap.get(OPTION_USE_OVERLAY);
+		return (Boolean)value;
+	}
+	
 	@Override
 	public ImageIcon getIcon(final String name) {
 		final Object value=themeMap.get(name);

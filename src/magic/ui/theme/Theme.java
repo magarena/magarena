@@ -37,6 +37,7 @@ public interface Theme {
 	public static final String COLOR_COMMON_FOREGROUND="color_common_foreground";
 	public static final String COLOR_UNCOMMON_FOREGROUND="color_uncommon_foreground";
 	public static final String COLOR_RARE_FOREGROUND="color_rare_foreground";
+	public static final String OPTION_USE_OVERLAY="option_use_overlay";
 	public static final String COLOR_CHOICE="color_choice";
 	public static final String COLOR_COMBAT_CHOICE="color_combat_choice";
 	public static final String COLOR_SELECTED_PLAYER="color_selected_player";
@@ -67,6 +68,8 @@ public interface Theme {
 	public Color getTextColor();
 	
 	public Color getNameColor();
+	
+	public Boolean getOptionUseOverlay();
 	
 	public Color getChoiceColor();
 	
