@@ -49,39 +49,4 @@ public class ManaActivationDefinitions {
 		}
         return manaTypes;
 	}
-	
-	public static void addManaActivations() {
-		// Vivid lands.
-		//addVividActivations("Vivid Crag",MagicManaType.Red);
-		//addVividActivations("Vivid Creek",MagicManaType.Blue);
-		//addVividActivations("Vivid Grove",MagicManaType.Green);
-		//addVividActivations("Vivid Marsh",MagicManaType.Black);
-		//addVividActivations("Vivid Meadow",MagicManaType.White);
-		
-		//addManaActivation("Mind Stone",new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0));
-
-        // Land generating colorless mana
-        //addManaActivation("Tectonic Edge",new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0));
-		
-		// Man lands.
-		//addCreatureActivations("Celestial Colonnade",Arrays.asList(MagicManaType.Blue,MagicManaType.White));
-		//addCreatureActivations("Creeping Tar Pit",Arrays.asList(MagicManaType.Blue,MagicManaType.Black));
-		//addCreatureActivations("Raging Ravine",Arrays.asList(MagicManaType.Red,MagicManaType.Green));
-		//addCreatureActivations("Stirring Wildwood",Arrays.asList(MagicManaType.Green,MagicManaType.White));		
-		//addCreatureActivations("Inkmoth Nexus",Arrays.asList(MagicManaType.Colorless));		
-		
-        // Artifacts.
-		//addManaActivation("Lotus Petal",new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
-
-		// Creatures.
-		//addCreatureActivations("Alloy Myr",MagicManaType.ALL_TYPES);
-		//addCreatureActivations("Birds of Paradise",MagicManaType.ALL_TYPES);
-		//addCreatureActivations("Llanowar Elves",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
-		//addCreatureActivations("Noble Hierarch",Arrays.asList(MagicManaType.Colorless,MagicManaType.Blue,MagicManaType.Green,MagicManaType.White));
-		//addCreatureActivations("Steward of Valeron",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
-		//addCreatureActivations("Vine Trellis",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
-		//addCreatureActivations("Plague Myr",Arrays.asList(MagicManaType.Colorless));
-		
-        //System.err.println("Added 8 mana activations");
-	}
 }
