@@ -29,15 +29,6 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 		}
 	}
 
-    public MagicItemOnStack get(final MagicEvent event) {
-        for (final MagicItemOnStack item : this) {
-            if (item.getEvent() == event) {
-                return item;
-            }
-        }
-        return null;
-    }
-
 	private void addCount(final MagicItemOnStack itemOnStack) {
 		final int index=itemOnStack.getController().getIndex();
 		counts[index]++;
