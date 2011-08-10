@@ -56,11 +56,11 @@ public class MagicMain {
         CardDefinitions.getInstance().loadCardDefinitions();
         CubeDefinitions.getInstance().loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        TriggerDefinitions.addTriggers();
-        LocalVariableDefinitions.addLocalVariables();
-        ManaActivationDefinitions.addManaActivations();
-        PermanentActivationDefinitions.addPermanentActivations();
-        CardEventDefinitions.setCardEvents();
+        //TriggerDefinitions.addTriggers();
+        //LocalVariableDefinitions.addLocalVariables();
+        //ManaActivationDefinitions.addManaActivations();
+        //PermanentActivationDefinitions.addPermanentActivations();
+        //CardEventDefinitions.setCardEvents();
         MagicStaticLocalVariable.initializeCardDefinitions();
 	}
 	
