@@ -1,15 +1,10 @@
 package magic.data;
 
+import magic.model.*;
+import magic.model.event.MagicSacrificeManaActivation;
+
 import java.util.Arrays;
 import java.util.List;
-
-import magic.model.MagicAbility;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicManaCost;
-import magic.model.MagicManaType;
-import magic.model.MagicType;
-import magic.model.event.MagicSacrificeManaActivation;
 
 public class TokenCardDefinitions {
 

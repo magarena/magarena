@@ -1,20 +1,10 @@
 package magic.model.choice;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.MagicRandom;
+import magic.model.*;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
+
+import java.util.*;
 
 public class MagicDeclareBlockersChoice extends MagicChoice {
 

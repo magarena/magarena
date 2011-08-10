@@ -1,21 +1,15 @@
 package magic.model.event;
 
-import java.util.List;
-
 import magic.ai.ArtificialScoringSystem;
-import magic.model.MagicCopyMap;
-import magic.model.MagicCopyable;
-import magic.model.MagicGame;
-import magic.model.MagicMessage;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.MagicMappable;
+import magic.model.*;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetPicker;
+
+import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 

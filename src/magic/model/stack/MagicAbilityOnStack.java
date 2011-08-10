@@ -1,12 +1,12 @@
 package magic.model.stack;
 
-import javax.swing.ImageIcon;
-
 import magic.data.IconImages;
 import magic.model.MagicCopyable;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicPermanentActivation;
+
+import javax.swing.*;
 
 public class MagicAbilityOnStack extends MagicItemOnStack {
 		

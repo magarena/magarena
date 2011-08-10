@@ -1,13 +1,11 @@
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
 import magic.model.*;
+import magic.model.action.MagicDealDamageAction;
+import magic.model.event.MagicEvent;
+import magic.model.target.MagicTarget;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
 public class Kederekt_Parasite {
 	

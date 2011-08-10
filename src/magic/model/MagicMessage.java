@@ -1,9 +1,9 @@
 package magic.model;
 
+import magic.model.phase.MagicPhaseType;
+
 import java.util.Collection;
 import java.util.Iterator;
-
-import magic.model.phase.MagicPhaseType;
 
 public class MagicMessage {
 

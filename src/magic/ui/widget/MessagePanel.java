@@ -1,16 +1,12 @@
 package magic.ui.widget;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import magic.data.IconImages;
 import magic.model.MagicMessage;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class MessagePanel extends JPanel {
 

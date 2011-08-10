@@ -1,18 +1,16 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.CardLayout;
-
-import javax.swing.JPanel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import magic.data.IconImages;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerDefinition;
 import magic.ui.MagicFrame;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
+
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
 
 public class DeckViewers extends JPanel implements ChangeListener {
 

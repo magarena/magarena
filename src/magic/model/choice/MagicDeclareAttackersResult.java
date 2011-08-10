@@ -1,12 +1,12 @@
 package magic.model.choice;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 
 public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> implements MagicMappable {
 

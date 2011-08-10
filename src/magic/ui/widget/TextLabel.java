@@ -1,24 +1,14 @@
 package magic.ui.widget;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import java.awt.Toolkit;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import javax.swing.ImageIcon;
-import javax.swing.JComponent;
-import javax.swing.JPanel;
-
 import magic.data.TextImages;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class TextLabel extends JPanel {
 

@@ -1,7 +1,6 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicIdentifierType;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicStackChangeTargetsEvent;
 import magic.model.stack.MagicCardOnStack;

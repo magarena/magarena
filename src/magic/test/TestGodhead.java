@@ -1,8 +1,7 @@
 package magic.test;
 
 import magic.model.*;
-import magic.model.phase.*;
-import magic.ai.*;
+import magic.model.phase.MagicMainPhase;
 
 class TestGodhead extends TestGameBuilder {    
     public MagicGame getGame() {

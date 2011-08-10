@@ -1,12 +1,11 @@
 package magic.model;
 
+import magic.data.IconImages;
+
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import javax.swing.ImageIcon;
-
-import magic.data.IconImages;
 
 public enum MagicColor {
 

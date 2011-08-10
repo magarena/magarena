@@ -1,14 +1,9 @@
 package magic.ui.widget;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import magic.model.MagicManaCost;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class CostPanel extends JPanel {
 

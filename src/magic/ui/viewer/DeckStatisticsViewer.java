@@ -1,18 +1,5 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import magic.data.CardStatistics;
 import magic.model.MagicColor;
 import magic.model.MagicPlayerDefinition;
@@ -21,6 +8,13 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
+
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 

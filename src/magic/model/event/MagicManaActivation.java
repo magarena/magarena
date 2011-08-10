@@ -1,11 +1,11 @@
 package magic.model.event;
 
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
+
+import java.util.List;
 
 public abstract class MagicManaActivation {
 	

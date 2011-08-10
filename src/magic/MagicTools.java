@@ -1,13 +1,13 @@
 package magic;
 
+import magic.data.CardDefinitions;
+import magic.model.MagicCardDefinition;
+
 import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import magic.data.CardDefinitions;
-import magic.model.MagicCardDefinition;
 
 public class MagicTools {
 

@@ -1,9 +1,9 @@
 package magic.model.action;
 
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.trigger.MagicPermanentTrigger;
+
+import java.util.List;
 
 public class MagicCleanupTurnTriggersAction extends MagicAction {
 

@@ -1,9 +1,13 @@
 package magic.ui.viewer;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
+import magic.MagicMain;
+import magic.model.MagicRandom;
+import magic.ui.DelayedViewer;
+import magic.ui.DelayedViewersThread;
+import magic.ui.theme.ThemeFactory;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
@@ -11,14 +15,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import javax.swing.JPanel;
-
-import magic.MagicMain;
-import magic.model.MagicRandom;
-import magic.ui.DelayedViewer;
-import magic.ui.DelayedViewersThread;
-import magic.ui.theme.ThemeFactory;
 
 /**
  *  Landscape image viewer.

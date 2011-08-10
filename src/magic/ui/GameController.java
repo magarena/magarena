@@ -1,33 +1,25 @@
 package magic.ui;
 
-import java.lang.reflect.InvocationTargetException;
-import java.awt.Dimension;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import javax.swing.JComponent;
-import javax.swing.SwingUtilities;
-
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.SoundEffects;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
+import magic.model.*;
 import magic.model.choice.MagicChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPriorityEvent;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.ChoiceViewer;
 import magic.ui.viewer.GameViewer;
+
+import javax.swing.*;
+import java.awt.*;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class GameController {
 

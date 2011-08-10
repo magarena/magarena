@@ -1,8 +1,8 @@
 package magic.model;
 
-import java.util.Collection;
-
 import magic.model.event.MagicActivation;
+
+import java.util.Collection;
 
 public interface MagicSource extends MagicCopyable, MagicMappable {
 	public boolean             isSpell();

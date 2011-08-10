@@ -1,12 +1,12 @@
 package magic.ai;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.event.MagicEvent;
+
+import java.util.ArrayList;
+import java.util.List;
 
 //AI that plays randomly
 public class RandomAI implements MagicAI {

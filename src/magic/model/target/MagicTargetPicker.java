@@ -1,10 +1,10 @@
 package magic.model.target;
 
-import java.util.Collection;
-import java.util.Collections;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+
+import java.util.Collection;
+import java.util.Collections;
 
 public abstract class MagicTargetPicker {
 

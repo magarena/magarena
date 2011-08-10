@@ -1,7 +1,8 @@
 package magic.data;
 
-import java.awt.image.BufferedImage;
 import magic.model.MagicCardDefinition;
+
+import java.awt.image.BufferedImage;
 
 /** 
  * Interface for getting image of a card

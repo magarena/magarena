@@ -1,13 +1,11 @@
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
 import magic.model.*;
+import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.condition.MagicCondition;
+import magic.model.event.*;
+import magic.model.trigger.MagicLivingWeaponTrigger;
+import magic.model.trigger.MagicTrigger;
 
 public class Batterskull {
 	public static final MagicPermanentActivation RET = new MagicPermanentActivation(

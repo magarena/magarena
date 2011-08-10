@@ -1,16 +1,12 @@
 package magic.ui.widget;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.border.Border;
-
 import magic.model.MagicPlayerDefinition;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
 
 public class PlayerAvatarPanel extends TexturedPanel {
 	

@@ -1,11 +1,12 @@
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
 import magic.model.*;
+import magic.model.action.*;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSpellCardEvent;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicExileTargetPicker;
 
 public class Mark_of_Mutiny {
 	public static final MagicSpellCardEvent SOR=new MagicSpellCardEvent() {

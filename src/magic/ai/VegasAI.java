@@ -1,5 +1,10 @@
 package magic.ai;
 
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicRandom;
+import magic.model.event.MagicEvent;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -7,11 +12,6 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-
-import magic.model.MagicGame;
-import magic.model.MagicRandom;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicEvent;
 
 public class VegasAI implements MagicAI {
 

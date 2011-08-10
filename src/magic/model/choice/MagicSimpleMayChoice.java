@@ -1,15 +1,15 @@
 package magic.model.choice;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.choice.MayChoicePanel;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class MagicSimpleMayChoice extends MagicChoice {
 

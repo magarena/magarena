@@ -1,11 +1,10 @@
 package magic.ai;
 
-import java.util.List;
-
 import magic.model.MagicGame;
-import magic.model.MagicGameReport;
 import magic.model.event.MagicEvent;
 import magic.model.phase.MagicPhase;
+
+import java.util.List;
 
 public class ArtificialWorker {
 	

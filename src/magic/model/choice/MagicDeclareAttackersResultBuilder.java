@@ -1,15 +1,11 @@
 package magic.model.choice;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.SortedSet;
-
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+
+import java.util.*;
 
 public class MagicDeclareAttackersResultBuilder {
 

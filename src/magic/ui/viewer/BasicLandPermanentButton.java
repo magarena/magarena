@@ -1,18 +1,14 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.util.Set;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import magic.data.IconImages;
 import magic.ui.GameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Set;
 
 public class BasicLandPermanentButton extends PanelButton implements ChoiceViewer {
 

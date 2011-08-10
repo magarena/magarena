@@ -1,10 +1,10 @@
 package magic.model;
 
-import java.util.Collection;
-import java.util.Collections;
-
 import magic.model.event.MagicActivation;
 import magic.model.target.MagicTarget;
+
+import java.util.Collection;
+import java.util.Collections;
 
 public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> {
 

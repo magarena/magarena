@@ -1,23 +1,17 @@
 package magic.model;
 
+import magic.MagicMain;
+import magic.ai.MagicAI;
+import magic.data.*;
+import magic.model.phase.MagicDefaultGameplay;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-
-import magic.MagicMain;
-import magic.ai.MagicAI;
-import magic.data.CubeDefinitions;
-import magic.data.DeckGenerator;
-import magic.data.DeckUtils;
-import magic.data.GeneralConfig;
-import magic.data.TournamentConfig;
-import magic.model.phase.MagicDefaultGameplay;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 
 public class MagicTournament {
 			

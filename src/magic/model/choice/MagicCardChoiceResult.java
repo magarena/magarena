@@ -1,11 +1,11 @@
 package magic.model.choice;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable {
 		

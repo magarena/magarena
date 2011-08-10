@@ -1,16 +1,9 @@
 package magic.model.variable;
 
-import java.util.EnumSet;
-
 import magic.data.CardDefinitions;
-import magic.model.MagicAbility;
-import magic.model.MagicColor;
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicPowerToughness;
-import magic.model.MagicSubType;
+import magic.model.*;
+
+import java.util.EnumSet;
 
 // Implements all static abilities of cards.
 public class MagicStaticLocalVariable extends MagicDummyLocalVariable {

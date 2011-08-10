@@ -1,30 +1,15 @@
 package magic.model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.LinkedList;
-import java.util.EnumSet;
-
-import javax.swing.ImageIcon;
-
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
-import magic.model.action.MagicAction;
-import magic.model.action.MagicAttachEquipmentAction;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.action.MagicGainControlAction;
+import magic.model.action.*;
 import magic.model.event.MagicActivation;
 import magic.model.target.MagicTarget;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
-import magic.model.MagicColor;
+
+import javax.swing.*;
+import java.util.*;
 
 public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
 

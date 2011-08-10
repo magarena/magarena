@@ -1,6 +1,6 @@
 package magic.ui.theme;
 
-import java.awt.Color;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class DefaultTheme extends AbstractTheme {

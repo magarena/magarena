@@ -1,15 +1,15 @@
 package magic.card;
-import java.util.*;
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
+
 import magic.model.*;
-import magic.data.*;
-import magic.model.variable.*;
+import magic.model.action.MagicBecomesCreatureAction;
+import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.condition.MagicCondition;
+import magic.model.event.*;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.variable.MagicDummyLocalVariable;
+
+import java.util.EnumSet;
 
 public class Chimeric_Mass {
 

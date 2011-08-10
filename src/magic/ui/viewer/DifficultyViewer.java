@@ -1,8 +1,5 @@
 package magic.ui.viewer;
 
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -12,6 +9,9 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
+
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 public class DifficultyViewer extends TexturedPanel implements ChangeListener {
 

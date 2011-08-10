@@ -1,11 +1,11 @@
 package magic.model.trigger;
 
+import magic.model.MagicCopyMap;
+
 import java.util.HashMap;
+import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import java.util.Map;
-
-import magic.model.MagicCopyMap;
 
 public class MagicPermanentTriggerMap extends HashMap<MagicTriggerType,SortedSet<MagicPermanentTrigger>> {
 

@@ -1,10 +1,11 @@
 package magic.model.variable;
 
-import java.util.EnumSet;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+
+import java.util.EnumSet;
 
 public class MagicDummyLocalVariable implements MagicLocalVariable {
 	

@@ -1,29 +1,21 @@
 package magic.ui;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.border.Border;
-
 import magic.data.IconImages;
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.ZoneBackgroundLabel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.ZoneBackgroundLabel;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public class KeywordsPanel extends JPanel implements ActionListener {
 

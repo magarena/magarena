@@ -1,14 +1,5 @@
 package magic.ui.choice;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
 import magic.data.IconImages;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
@@ -16,6 +7,11 @@ import magic.ui.GameController;
 import magic.ui.viewer.GameViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 

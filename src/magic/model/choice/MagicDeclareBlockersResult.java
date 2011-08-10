@@ -1,11 +1,11 @@
 package magic.model.choice;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.score.MagicScoreResult;
+
+import java.util.Arrays;
+import java.util.LinkedList;
 
 /** First creature in array is the attacker, the other creatures are blockers. */
 public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]> implements MagicMappable,MagicScoreResult {

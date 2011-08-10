@@ -1,14 +1,9 @@
 package magic.data;
 
+import magic.model.*;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColoredType;
-import magic.model.MagicCubeDefinition;
-import magic.model.MagicDeck;
-import magic.model.MagicPlayerProfile;
-import magic.model.MagicRandom;
 
 public class DeckGenerator {
 	

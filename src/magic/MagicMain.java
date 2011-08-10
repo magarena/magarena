@@ -1,14 +1,14 @@
 package magic;
 
-import java.io.File;
-import javax.swing.SwingUtilities;
-
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
 import magic.model.variable.MagicStaticLocalVariable;
 import magic.ui.MagicFrame;
+
+import javax.swing.*;
+import java.io.File;
 
 public class MagicMain {
 	

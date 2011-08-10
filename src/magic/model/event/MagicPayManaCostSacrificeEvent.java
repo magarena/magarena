@@ -1,10 +1,6 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
-import magic.model.MagicManaCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
+import magic.model.*;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicPayManaCostChoice;
 

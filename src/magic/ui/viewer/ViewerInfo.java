@@ -1,11 +1,11 @@
 package magic.ui.viewer;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.stack.MagicItemOnStack;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ViewerInfo {
 

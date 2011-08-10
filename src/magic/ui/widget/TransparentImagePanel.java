@@ -1,11 +1,9 @@
 package magic.ui.widget;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.RescaleOp;
-
-import javax.swing.JPanel;
 
 public class TransparentImagePanel extends JPanel {
 

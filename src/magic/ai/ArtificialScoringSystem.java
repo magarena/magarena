@@ -1,13 +1,6 @@
 package magic.ai;
 
-import magic.model.MagicAbility;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
+import magic.model.*;
 import magic.model.choice.MagicCombatCreature;
 
 public class ArtificialScoringSystem {

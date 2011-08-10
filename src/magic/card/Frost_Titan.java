@@ -1,13 +1,14 @@
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
 import magic.model.*;
+import magic.model.action.MagicChangeStateAction;
+import magic.model.action.MagicTapAction;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.event.MagicCounterUnlessEvent;
+import magic.model.event.MagicEvent;
+import magic.model.stack.MagicItemOnStack;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
 public class Frost_Titan {
     //counter opponent spell or ability unless its controller pay {2}

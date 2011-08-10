@@ -1,11 +1,10 @@
 package magic.ui.resolution;
 
-import java.awt.Dimension;
-import java.awt.Rectangle;
-
 import magic.data.CardImagesProvider;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import java.awt.*;
 
 public class DefaultResolutionProfile implements ResolutionProfile {
 

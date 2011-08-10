@@ -1,6 +1,15 @@
 package magic.ui;
 
-import java.awt.BorderLayout;
+import magic.data.DeckUtils;
+import magic.data.GeneralConfig;
+import magic.data.IconImages;
+import magic.data.TournamentConfig;
+import magic.model.*;
+import magic.test.TestGameBuilder;
+import magic.ui.widget.ZoneBackgroundLabel;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -8,26 +17,6 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
-
-import javax.swing.JComponent;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
-
-import magic.data.DeckUtils;
-import magic.data.GeneralConfig;
-import magic.data.IconImages;
-import magic.data.TournamentConfig;
-import magic.model.MagicDeck;
-import magic.model.MagicGame;
-import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
-import magic.model.MagicTournament;
-import magic.test.TestGameBuilder;
-import magic.ui.widget.ZoneBackgroundLabel;
 
 public class MagicFrame extends JFrame implements ActionListener {
 	

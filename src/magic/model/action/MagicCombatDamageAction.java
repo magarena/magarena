@@ -1,15 +1,9 @@
 package magic.model.action;
 
+import magic.model.*;
+
 import java.util.ArrayList;
 import java.util.Collection;
-
-import magic.model.MagicAbility;
-import magic.model.MagicDamage;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
 
 /**
  * Simplification of the rules:

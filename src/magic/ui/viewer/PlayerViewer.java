@@ -1,14 +1,5 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.GridLayout;
-import java.util.Set;
-
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import magic.model.MagicPlayer;
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
@@ -17,6 +8,10 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.PlayerAvatarPanel;
 import magic.ui.widget.TexturedPanel;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Set;
 
 public class PlayerViewer extends JPanel implements ChoiceViewer {
 

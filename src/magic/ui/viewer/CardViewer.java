@@ -1,15 +1,8 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.image.BufferedImage;
-
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
-import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.DelayedViewer;
 import magic.ui.theme.Theme;
@@ -17,6 +10,10 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.TransparentImagePanel;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 /**
  * Class responsible for showing the card pic popup

@@ -1,16 +1,14 @@
 package magic.data;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.Properties;
-
 import magic.MagicMain;
-import magic.model.MagicColor;
-import magic.model.MagicPlayerProfile;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
+import magic.model.MagicColor;
+import magic.model.MagicPlayerProfile;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Properties;
 
 public class TournamentConfig {
 

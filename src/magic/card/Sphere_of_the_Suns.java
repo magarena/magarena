@@ -1,12 +1,16 @@
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.*;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicManaType;
+import magic.model.MagicPermanent;
+import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicTapAction;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicVividManaActivation;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
 public class Sphere_of_the_Suns {
     public static final MagicTrigger SPHERE_SUN=new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {

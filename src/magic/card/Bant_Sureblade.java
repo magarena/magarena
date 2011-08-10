@@ -1,16 +1,11 @@
 package magic.card;
 
-import java.util.Arrays;
-
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
-import magic.model.variable.*;
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.variable.MagicBladeLocalVariable;
+import magic.model.variable.MagicLocalVariable;
+import magic.model.variable.MagicStaticLocalVariable;
 
 public class Bant_Sureblade {
     private static final MagicLocalVariable BANT_SUREBLADE=new MagicBladeLocalVariable(MagicAbility.FirstStrike.getMask());

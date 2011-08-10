@@ -1,17 +1,13 @@
 package magic.ui.widget;
 
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
-
-import javax.swing.JLabel;
-
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class ZoneBackgroundLabel extends JLabel {
 

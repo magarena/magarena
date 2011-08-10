@@ -1,11 +1,11 @@
 package magic.model.action;
 
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.variable.MagicLocalVariable;
+
+import java.util.List;
 
 public class MagicCleanupCreatureAction extends MagicAction {
 

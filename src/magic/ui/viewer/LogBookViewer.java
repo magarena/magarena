@@ -1,19 +1,14 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.border.Border;
-
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MessagePanel;
 import magic.ui.widget.TitleBar;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
 
 public class LogBookViewer extends JPanel {
 	

@@ -1,14 +1,14 @@
 package magic.model.action;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.trigger.MagicTriggerType;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class MagicRemoveFromPlayAction extends MagicAction {
 

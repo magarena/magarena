@@ -1,7 +1,5 @@
 package magic;
 
-import java.io.File;
-
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
@@ -9,6 +7,8 @@ import magic.data.TournamentConfig;
 import magic.model.MagicGame;
 import magic.model.MagicTournament;
 import magic.ui.GameController;
+
+import java.io.File;
 
 public class DeckStrCal {
         

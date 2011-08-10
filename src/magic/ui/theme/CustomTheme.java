@@ -1,6 +1,9 @@
 package magic.ui.theme;
 
-import java.awt.Color;
+import magic.data.IconImages;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,10 +13,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-
-import javax.swing.ImageIcon;
-
-import magic.data.IconImages;
 
 public class CustomTheme extends AbstractTheme {
 

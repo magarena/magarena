@@ -1,8 +1,7 @@
 package magic.ui.theme;
 
+import javax.swing.*;
 import java.awt.image.BufferedImage;
-
-import javax.swing.ImageIcon;
 
 public class PlayerAvatar {
 

@@ -1,25 +1,14 @@
 package magic.data;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
-import java.io.FileWriter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import java.util.Map;
-import java.util.Scanner;
+import magic.MagicMain;
+import magic.model.*;
 
 import javax.swing.filechooser.FileFilter;
-
-import magic.MagicMain;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicDeck;
-import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
-import magic.model.MagicRandom;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*;
 
 public class DeckUtils {
 

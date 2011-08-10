@@ -1,11 +1,10 @@
 package magic.model;
 
+import magic.data.TextImages;
+
+import javax.swing.*;
 import java.util.Arrays;
 import java.util.List;
-
-import javax.swing.ImageIcon;
-
-import magic.data.TextImages;
 
 public enum MagicCostManaType {
 

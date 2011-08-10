@@ -4,8 +4,6 @@ import magic.data.SoundEffects;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicCombatDamageAction;
-import magic.model.action.MagicStackResolveAction;
-import magic.model.event.MagicPriorityEvent;
 
 public class MagicCombatDamagePhase extends MagicPhase {
 

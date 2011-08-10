@@ -1,29 +1,16 @@
 package magic.ui;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
+import magic.data.DownloadImageFile;
+import magic.data.DownloadImageFiles;
+import magic.data.IconImages;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.net.Proxy.Type;
-
-import javax.swing.BorderFactory;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JProgressBar;
-import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
-
-import magic.data.DownloadImageFile;
-import magic.data.DownloadImageFiles;
-import magic.data.IconImages;
 
 public class DownloadImagesDialog extends JDialog implements Runnable,ActionListener {
 	private static final long serialVersionUID = 1L;

@@ -1,25 +1,5 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import javax.swing.BorderFactory;
-import javax.swing.ComboBoxModel;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JProgressBar;
-import javax.swing.JTextField;
-import javax.swing.border.Border;
-
-import magic.ai.ArtificialWorkerPool;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.GeneralConfig;
@@ -32,6 +12,13 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class DeckStrengthViewer extends JPanel implements ActionListener {
 

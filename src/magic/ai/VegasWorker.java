@@ -1,11 +1,11 @@
 package magic.ai;
 
-import java.util.List;
-import java.util.Random;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
+
+import java.util.List;
+import java.util.Random;
 
 public class VegasWorker implements Runnable {
 

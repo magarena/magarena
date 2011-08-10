@@ -1,11 +1,14 @@
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPlayer;
+import magic.model.action.MagicChangeLandPlayedAction;
+import magic.model.action.MagicDrawAction;
+import magic.model.action.MagicMoveCardAction;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSpellCardEvent;
+import magic.model.stack.MagicCardOnStack;
 
 public class Explore {
 	public static final MagicSpellCardEvent EL=new MagicSpellCardEvent() {

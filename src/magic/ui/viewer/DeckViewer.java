@@ -1,34 +1,20 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-
 import magic.data.IconImages;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicCubeDefinition;
-import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
+import magic.model.*;
 import magic.ui.EditDeckCard;
 import magic.ui.MagicFrame;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.*;
+import java.util.List;
 
 public class DeckViewer extends JPanel {
 

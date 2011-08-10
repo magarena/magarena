@@ -1,21 +1,5 @@
 package magic.ui;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-import java.util.List;
-
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.border.Border;
-
 import magic.data.CardDefinitions;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
@@ -23,6 +7,15 @@ import magic.model.MagicRandom;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.util.List;
 
 public class VersionPanel extends JPanel implements ActionListener {
 

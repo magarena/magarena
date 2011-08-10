@@ -1,20 +1,9 @@
 package magic.model.choice;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
-
-import magic.model.MagicCostManaType;
-import magic.model.MagicGame;
-import magic.model.MagicManaType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
+import magic.model.*;
 import magic.model.event.MagicSourceManaActivation;
+
+import java.util.*;
 
 public class MagicPayManaCostResultBuilder {
 

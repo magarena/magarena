@@ -1,8 +1,8 @@
 package magic.model;
 
-import java.util.Arrays;
-
 import magic.data.CardDefinitions;
+
+import java.util.Arrays;
 
 public class MagicCardCounter {
 

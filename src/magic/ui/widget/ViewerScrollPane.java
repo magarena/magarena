@@ -1,14 +1,10 @@
 package magic.ui.widget;
 
-import java.awt.BorderLayout;
-import java.awt.Rectangle;
-
-import javax.swing.BoxLayout;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class ViewerScrollPane extends JScrollPane {
 

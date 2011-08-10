@@ -1,20 +1,16 @@
 package magic.model.choice;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-
-import magic.model.MagicColor;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
+import magic.model.*;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.ui.GameController;
 import magic.ui.choice.ColorChoicePanel;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 /** Contains optimal decision logic for each choice type. */
 public class MagicColorChoice extends MagicChoice {

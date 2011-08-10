@@ -1,12 +1,12 @@
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.condition.*;
-import magic.model.*;
+import magic.model.MagicManaType;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
+import magic.model.condition.MagicCondition;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicTapEvent;
 
 public class Mox_Opal {
     private static final MagicCondition CONDITIONS[]=new MagicCondition[]{

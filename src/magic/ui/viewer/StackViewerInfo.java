@@ -1,10 +1,10 @@
 package magic.ui.viewer;
 
-import javax.swing.ImageIcon;
-
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.stack.MagicItemOnStack;
+
+import javax.swing.*;
 
 public class StackViewerInfo {
 

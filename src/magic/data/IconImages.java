@@ -1,14 +1,13 @@
 package magic.data;
 
+import magic.MagicMain;
+
+import javax.swing.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.awt.image.BufferedImage;
 import java.util.Arrays;
-
-import javax.swing.ImageIcon;
-
-import magic.MagicMain;
 
 public class IconImages {
 

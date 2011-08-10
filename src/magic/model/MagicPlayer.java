@@ -1,17 +1,16 @@
 package magic.model;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import magic.data.GeneralConfig;
 import magic.data.TournamentConfig;
 import magic.model.choice.MagicBuilderManaCost;
-import magic.model.event.MagicActivationPriority;
 import magic.model.event.MagicActivationMap;
+import magic.model.event.MagicActivationPriority;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.target.MagicTarget;
 import magic.model.variable.MagicStaticLocalVariable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MagicPlayer implements MagicTarget {
 	

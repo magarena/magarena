@@ -1,10 +1,6 @@
 package magic.model.score;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import java.util.*;
 
 public class MagicMultipleScoreRanking implements MagicScoreRanking {
 

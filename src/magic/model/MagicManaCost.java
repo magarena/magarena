@@ -1,18 +1,17 @@
 package magic.model;
 
+import magic.data.IconImages;
+import magic.model.choice.MagicBuilderManaCost;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicManaCostCondition;
+
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.swing.ImageIcon;
-
-import magic.data.IconImages;
-import magic.model.choice.MagicBuilderManaCost;
-import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicManaCostCondition;
 
 public class MagicManaCost {
 

@@ -2,7 +2,6 @@ package magic.model.action;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
-import magic.model.MagicIdentifierType;
 import magic.model.event.MagicStackGetChoicesEvent;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTriggerType;

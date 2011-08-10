@@ -1,14 +1,5 @@
 package magic.ui;
 
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
 import magic.data.CubeDefinitions;
 import magic.data.TournamentConfig;
 import magic.model.MagicCubeDefinition;
@@ -17,14 +8,16 @@ import magic.model.MagicTournament;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
-import magic.ui.viewer.CardViewer;
-import magic.ui.viewer.DeckStatisticsViewer;
-import magic.ui.viewer.DeckStrengthViewer;
-import magic.ui.viewer.DeckViewers;
-import magic.ui.viewer.PlayersViewer;
-import magic.ui.viewer.TournamentDifficultyViewer;
-import magic.ui.widget.ZoneBackgroundLabel;
+import magic.ui.viewer.*;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.ZoneBackgroundLabel;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public class TournamentPanel extends JPanel implements ActionListener {
 	

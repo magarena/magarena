@@ -1,21 +1,17 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Rectangle;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Set;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import magic.ui.GameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.ViewerScrollPane;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Set;
 
 public class StackViewer extends JPanel implements ChoiceViewer {
 

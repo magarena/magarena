@@ -1,6 +1,6 @@
 package magic.model;
 
-import magic.*;
+import magic.MersenneTwisterFast;
 
 public class MagicRandom {
 

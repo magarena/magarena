@@ -1,23 +1,15 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
-
-import javax.swing.JPanel;
-import javax.swing.border.Border;
-
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.ViewerScrollPane;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.util.*;
 
 public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 

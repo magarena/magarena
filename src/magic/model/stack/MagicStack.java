@@ -1,13 +1,11 @@
 package magic.model.stack;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-
 import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.event.MagicActivation;
-import magic.model.event.MagicEvent;
+
+import java.util.Arrays;
+import java.util.LinkedList;
 
 public class MagicStack extends LinkedList<MagicItemOnStack> {
 

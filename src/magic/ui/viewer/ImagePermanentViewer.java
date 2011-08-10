@@ -1,14 +1,12 @@
 package magic.ui.viewer;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.BasicStroke;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
+import magic.data.CardImagesProvider;
+import magic.data.HighQualityCardImagesProvider;
+import magic.data.IconImages;
+import magic.ui.widget.FontsAndBorders;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
@@ -17,15 +15,6 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import javax.swing.JPanel;
-
-import magic.data.CardImagesProvider;
-import magic.data.HighQualityCardImagesProvider;
-import magic.data.IconImages;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
 
 public class ImagePermanentViewer extends JPanel {
 

@@ -1,15 +1,13 @@
 package magic.card;
-import java.util.*;
+
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
+import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
-import magic.model.*;
-import magic.data.*;
-import magic.model.variable.*;
+import magic.model.target.MagicPumpTargetPicker;
 
 public class Fires_of_Yavimaya {
 

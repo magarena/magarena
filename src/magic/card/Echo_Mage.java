@@ -1,15 +1,14 @@
 package magic.card;
-import java.util.*;
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
+
 import magic.model.*;
-import magic.data.*;
-import magic.model.variable.*;
+import magic.model.action.MagicCopyCardOnStackAction;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
+import magic.model.event.*;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.variable.MagicLocalVariable;
+import magic.model.variable.MagicStaticLocalVariable;
 
 public class Echo_Mage {
 	

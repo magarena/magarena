@@ -1,11 +1,11 @@
 package magic.model.stack;
 
-import javax.swing.ImageIcon;
-
 import magic.data.IconImages;
 import magic.model.MagicCopyable;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+
+import javax.swing.*;
 
 public class MagicTriggerOnStack extends MagicItemOnStack {
 

@@ -1,21 +1,12 @@
 package magic.test;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import magic.data.CardDefinitions;
 import magic.data.TokenCardDefinitions;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
-import magic.model.MagicTournament;
+import magic.model.*;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPutIntoPlayAction;
-import magic.model.phase.MagicMainPhase;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class TestGameBuilder {
 	

@@ -1,11 +1,11 @@
 package magic.model;
 
-import java.util.List;
-import java.util.Collections;
-import java.util.Arrays;
-import javax.swing.ImageIcon;
-
 import magic.data.IconImages;
+
+import javax.swing.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public enum MagicManaType {
 

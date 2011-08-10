@@ -1,14 +1,14 @@
 package magic.model.choice;
 
-import java.util.Arrays;
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicMappable;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.event.MagicSourceManaActivationResult;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class MagicBuilderPayManaCostResult implements 
     MagicPayManaCostResult, MagicMappable, Comparable<MagicBuilderPayManaCostResult> {

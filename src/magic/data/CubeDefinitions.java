@@ -1,16 +1,14 @@
 package magic.data;
 
+import magic.MagicMain;
+import magic.model.MagicCubeDefinition;
+
 import java.io.File;
 import java.io.FileFilter;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import magic.MagicMain;
-import magic.model.MagicCubeDefinition;
 
 public class CubeDefinitions {
 	

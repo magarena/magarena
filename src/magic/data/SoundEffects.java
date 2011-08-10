@@ -1,12 +1,11 @@
 package magic.data;
 
-import java.io.File;
-import java.io.IOException;
-
-import javax.sound.sampled.*;
-
 import magic.MagicMain;
 import magic.model.MagicGame;
+
+import javax.sound.sampled.*;
+import java.io.File;
+import java.io.IOException;
 
 public class SoundEffects {
 

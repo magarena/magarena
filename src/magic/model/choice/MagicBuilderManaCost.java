@@ -1,9 +1,9 @@
 package magic.model.choice;
 
+import magic.model.MagicCostManaType;
+
 import java.util.Arrays;
 import java.util.List;
-
-import magic.model.MagicCostManaType;
 
 public class MagicBuilderManaCost {
 

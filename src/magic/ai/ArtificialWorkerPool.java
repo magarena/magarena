@@ -1,13 +1,13 @@
 package magic.ai;
 
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.event.MagicEvent;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicEvent;
 
 public class ArtificialWorkerPool {
 	

@@ -1,13 +1,11 @@
 package magic.data;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.util.Map;
 
 /**
  * For a given MagicCardDefinition object returns the corresponding image from

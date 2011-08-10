@@ -1,17 +1,5 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Set;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -21,6 +9,12 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Set;
 
 public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 	

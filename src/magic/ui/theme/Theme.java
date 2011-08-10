@@ -1,9 +1,8 @@
 package magic.ui.theme;
 
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
-
-import javax.swing.ImageIcon;
 
 public interface Theme {
 

@@ -1,12 +1,12 @@
 package magic.ai;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class MMAB implements MagicAI {
 	

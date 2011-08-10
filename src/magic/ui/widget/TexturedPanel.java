@@ -1,13 +1,11 @@
 package magic.ui.widget;
 
-import java.awt.Graphics;
-import java.awt.Point;
-import java.awt.image.BufferedImage;
-
-import javax.swing.JPanel;
-
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class TexturedPanel extends JPanel {
 

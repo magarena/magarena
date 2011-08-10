@@ -1,16 +1,15 @@
 package magic.data;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicVividManaActivation;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ManaActivationDefinitions {
 	

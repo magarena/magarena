@@ -1,13 +1,7 @@
 package magic.model.event;
 
 import magic.data.CardDefinitions;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicGame;
-import magic.model.MagicLocationType;
-import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
-import magic.model.MagicSource;
+import magic.model.*;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;

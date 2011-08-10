@@ -1,15 +1,14 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-
-import javax.swing.JPanel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
+
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
 
 public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListener {
 

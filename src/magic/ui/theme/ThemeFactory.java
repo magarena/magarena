@@ -1,14 +1,14 @@
 package magic.ui.theme;
 
-import java.awt.Color;
+import magic.MagicMain;
+import magic.data.GeneralConfig;
+import magic.data.IconImages;
+
+import java.awt.*;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.List;
-
-import magic.MagicMain;
-import magic.data.GeneralConfig;
-import magic.data.IconImages;
 
 public class ThemeFactory {
 

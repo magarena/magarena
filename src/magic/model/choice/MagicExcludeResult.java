@@ -1,14 +1,14 @@
 package magic.model.choice;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.action.MagicChangeStateAction;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class MagicExcludeResult implements MagicMappable {
 

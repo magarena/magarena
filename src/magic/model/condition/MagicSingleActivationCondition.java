@@ -2,7 +2,6 @@ package magic.model.condition;
 
 import magic.model.MagicGame;
 import magic.model.MagicSource;
-import magic.model.event.MagicActivation;
 
 public class MagicSingleActivationCondition implements MagicCondition {
 

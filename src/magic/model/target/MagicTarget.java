@@ -1,10 +1,6 @@
 package magic.model.target;
 
-import magic.model.MagicCopyable;
-import magic.model.MagicGame;
-import magic.model.MagicMappable;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
+import magic.model.*;
 
 public interface MagicTarget extends MagicCopyable, MagicMappable {
 	public boolean     isPlayer();

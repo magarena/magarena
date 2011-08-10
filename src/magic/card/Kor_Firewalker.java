@@ -1,13 +1,12 @@
 
 package magic.card;
 
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
 import magic.model.*;
+import magic.model.action.MagicChangeLifeAction;
+import magic.model.event.MagicEvent;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
 public class Kor_Firewalker {
     public static final MagicTrigger T=new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {

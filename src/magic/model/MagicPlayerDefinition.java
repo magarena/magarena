@@ -1,9 +1,9 @@
 package magic.model;
 
-import java.util.Properties;
-
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerator;
+
+import java.util.Properties;
 
 public class MagicPlayerDefinition {
 

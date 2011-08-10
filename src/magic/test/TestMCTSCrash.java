@@ -1,8 +1,9 @@
 package magic.test;
 
+import magic.ai.MCTSAI;
+import magic.ai.MagicAI;
 import magic.model.*;
-import magic.model.phase.*;
-import magic.ai.*;
+import magic.model.phase.MagicMainPhase;
 
 class TestMCTSCrash extends TestGameBuilder {    
     public MagicGame getGame() {

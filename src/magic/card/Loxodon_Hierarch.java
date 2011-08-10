@@ -1,15 +1,16 @@
 package magic.card;
-import java.util.*;
-import magic.model.event.*;
-import magic.model.stack.*;
-import magic.model.choice.*;
-import magic.model.target.*;
-import magic.model.action.*;
-import magic.model.trigger.*;
-import magic.model.condition.*;
+
 import magic.model.*;
-import magic.data.*;
-import magic.model.variable.*;
+import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicRegenerateAction;
+import magic.model.condition.MagicCondition;
+import magic.model.event.*;
+import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
+
+import java.util.Collection;
 
 public class Loxodon_Hierarch {
 

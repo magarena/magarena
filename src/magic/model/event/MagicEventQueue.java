@@ -1,8 +1,8 @@
 package magic.model.event;
 
-import java.util.LinkedList;
-
 import magic.model.MagicCopyMap;
+
+import java.util.LinkedList;
 
 public class MagicEventQueue extends LinkedList<MagicEvent> {
 	

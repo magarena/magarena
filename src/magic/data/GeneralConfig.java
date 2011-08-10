@@ -1,10 +1,10 @@
 package magic.data;
 
+import magic.MagicMain;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
-
-import magic.MagicMain;
 
 public class GeneralConfig {
 

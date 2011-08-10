@@ -1,25 +1,10 @@
 package magic.ui.viewer;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.SortedSet;
-import java.util.TreeSet;
-import java.util.EnumSet;
-
-import javax.swing.ImageIcon;
-
-import magic.model.MagicAbility;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.MagicPowerToughness;
-import magic.model.MagicSubType;
-import magic.model.MagicType;
+import magic.model.*;
 import magic.model.stack.MagicItemOnStack;
+
+import javax.swing.*;
+import java.util.*;
 
 public class PermanentViewerInfo {
 

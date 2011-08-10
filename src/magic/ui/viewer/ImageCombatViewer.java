@@ -1,18 +1,15 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 

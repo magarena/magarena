@@ -1,15 +1,11 @@
 package magic.model.event;
 
+import magic.model.*;
+
 import java.util.HashMap;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicCopyMap;
-import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 
 public class MagicActivationMap extends HashMap<MagicActivation,SortedSet<MagicSource>> {
 

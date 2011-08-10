@@ -1,23 +1,11 @@
 package magic.model.choice;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Set;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
-
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
-import magic.model.score.MagicCombatScore;
-import magic.model.score.MagicFastCombatScore;
-import magic.model.score.MagicGameCombatScore;
-import magic.model.score.MagicMultipleScoreRanking;
-import magic.model.score.MagicScoreRanking;
-import magic.model.score.MagicSingleScoreRanking;
+import magic.model.MagicPlayer;
+import magic.model.score.*;
+
+import java.util.*;
 
 public class MagicDeclareBlockersResultBuilder {
 

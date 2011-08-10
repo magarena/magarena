@@ -1,20 +1,17 @@
 package magic.ui.viewer;
 
-import java.awt.Color;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.image.ImageObserver;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.ImageIcon;
-
 import magic.data.IconImages;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.ui.widget.FontsAndBorders;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.ImageObserver;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ImageDrawingUtils {
 

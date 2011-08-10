@@ -1,12 +1,15 @@
 package magic.ai;
 
-import java.util.*;
-
+import magic.data.LRUCache;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.event.MagicEvent;
 import magic.model.choice.MagicBuilderPayManaCostResult;
-import magic.data.LRUCache;
+import magic.model.event.MagicEvent;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 /*
 AI using Monte Carlo Tree Search

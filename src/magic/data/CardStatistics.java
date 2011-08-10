@@ -1,16 +1,15 @@
 package magic.data;
 
-import java.io.PrintStream;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Arrays;
-import java.util.List;
-
-import javax.swing.ImageIcon;
-
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;
+
+import javax.swing.*;
+import java.io.PrintStream;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class CardStatistics {
 

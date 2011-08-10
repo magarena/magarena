@@ -1,12 +1,12 @@
 package magic.model.event;
 
-import java.util.List;
-
 import magic.model.MagicCounterType;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
+
+import java.util.List;
 
 public class MagicVividManaActivation extends MagicManaActivation {
 

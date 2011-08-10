@@ -35,7 +35,7 @@
 package magic;
 
 import java.awt.*;
-import java.awt.image.*;
+import java.awt.image.BufferedImage;
 
 /**
  * <p><code>GraphicsUtilities</code> contains a set of tools to perform

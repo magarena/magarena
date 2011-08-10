@@ -1,8 +1,7 @@
 package magic.model.variable;
 
-import magic.model.MagicColoredType;
-import magic.model.MagicGame;
 import magic.model.MagicColor;
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 

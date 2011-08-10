@@ -1,13 +1,12 @@
 package magic.ui.viewer;
 
-import java.awt.BorderLayout;
-import java.util.Collection;
-
-import javax.swing.JPanel;
-import javax.swing.border.Border;
-
 import magic.ui.GameController;
 import magic.ui.widget.TitleBar;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.util.Collection;
 
 public class BattlefieldViewer extends PermanentsViewer {
 		

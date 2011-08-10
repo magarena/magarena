@@ -1,9 +1,5 @@
 package magic.model.choice;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
-
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
@@ -14,6 +10,10 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetType;
 import magic.ui.GameController;
+
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MagicTargetChoice extends MagicChoice {
 
