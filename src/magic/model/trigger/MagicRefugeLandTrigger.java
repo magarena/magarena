@@ -16,8 +16,9 @@ public class MagicRefugeLandTrigger extends MagicTrigger {
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 	
-		final MagicPlayer player=permanent.getController();
-		return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"You gain 1 life.");
+		final MagicPlayer player = permanent.getController();
+		final String playerName = player.getName();
+		return new MagicEvent(permanent,player,new Object[]{permanent,player},this,playerName + " gains 1 life.");
 	}
 	
 	@Override

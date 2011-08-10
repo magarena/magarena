@@ -27,7 +27,10 @@ public class MagicSpecterTrigger extends MagicTrigger {
 		final MagicTarget target=damage.getTarget();
 		if (damage.getSource()==permanent&&target.isPlayer()&&(!combat||damage.isCombat())) {
 			final MagicPlayer player=(MagicPlayer)target;
-			final String prefix=player==permanent.getController()?"You discard a card":"Your opponent discards a card";
+			final String playerName = player.getName();
+			final String opponentName = permanent.getController().getName();
+			String prefix = player == permanent.getController() ? opponentName : playerName;
+			prefix += " discards a card";
 			return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent,player},this,random?prefix+" at random.":prefix+'.');
 		}
 		return null;

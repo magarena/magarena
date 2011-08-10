@@ -549,7 +549,8 @@ public class MagicGame {
         for (final MagicPermanent attacker : result) {
             names.add(attacker.getName());
         }
-        final StringBuilder builder=new StringBuilder("You attack with ");
+        final String playerName = player.getName();
+        final StringBuilder builder = new StringBuilder(playerName + " attacks with ");
         MagicMessage.addNames(builder,names);
         builder.append('.');
         logBook.add(new MagicMessage(this,player,builder.toString()));
@@ -568,7 +569,8 @@ public class MagicGame {
         if (names.isEmpty()) {
             return;
         }
-        final StringBuilder builder=new StringBuilder("You block with ");
+        final String playerName = player.getName();
+        final StringBuilder builder=new StringBuilder(playerName + " blocks with ");
         MagicMessage.addNames(builder,names);
         builder.append('.');
         logBook.add(new MagicMessage(this,player,builder.toString()));

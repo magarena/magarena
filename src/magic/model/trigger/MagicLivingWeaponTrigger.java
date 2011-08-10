@@ -28,12 +28,13 @@ public class MagicLivingWeaponTrigger extends MagicTrigger {
             final Object data) {
 
 		final MagicPlayer player=permanent.getController();
+		final String playerName = player.getName();
 		return new MagicEvent(
             permanent,
             player,
             new Object[]{permanent,player},
             this,
-			"You put a 0/0 black Germ creature token onto the battlefield, then attach this to it.");
+			playerName + " puts a 0/0 black Germ creature token onto the battlefield, then attaches this to it.");
 	}
 	
 	@Override
