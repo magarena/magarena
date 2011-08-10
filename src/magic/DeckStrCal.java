@@ -1,7 +1,6 @@
 package magic;
 
 import java.io.File;
-import java.io.IOException;
 
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;

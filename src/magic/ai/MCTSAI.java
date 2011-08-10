@@ -4,9 +4,8 @@ import java.util.*;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.phase.MagicPhase;
 import magic.model.event.MagicEvent;
-import magic.model.choice.*;
+import magic.model.choice.MagicBuilderPayManaCostResult;
 import magic.data.LRUCache;
 
 /*

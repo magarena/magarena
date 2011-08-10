@@ -1,21 +1,13 @@
 package magic;
 
 import java.io.File;
-import java.io.IOException;
 import javax.swing.SwingUtilities;
 
 import magic.data.CardDefinitions;
-import magic.data.CardEventDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
-import magic.data.LocalVariableDefinitions;
-import magic.data.ManaActivationDefinitions;
-import magic.data.PermanentActivationDefinitions;
-import magic.data.TriggerDefinitions;
 import magic.model.variable.MagicStaticLocalVariable;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicManaCost;
 import magic.ui.MagicFrame;
 
 public class MagicMain {
@@ -56,11 +48,6 @@ public class MagicMain {
         CardDefinitions.getInstance().loadCardDefinitions();
         CubeDefinitions.getInstance().loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        //TriggerDefinitions.addTriggers();
-        //LocalVariableDefinitions.addLocalVariables();
-        //ManaActivationDefinitions.addManaActivations();
-        //PermanentActivationDefinitions.addPermanentActivations();
-        //CardEventDefinitions.setCardEvents();
         MagicStaticLocalVariable.initializeCardDefinitions();
 	}
 	
