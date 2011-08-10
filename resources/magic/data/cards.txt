@@ -7742,3 +7742,16 @@ power=6
 toughness=6
 ability=vigilance
 timing=fmain
+
+>Frost Titan
+image=http://magiccards.info/scans/en/m11/55.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Giant
+color=u
+converted=6
+cost={4}{U}{U}
+power=6
+toughness=6
+timing=fmain
