@@ -7,6 +7,7 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicEvent;
 
 public class MagicStack extends LinkedList<MagicItemOnStack> {
 
@@ -27,6 +28,15 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 			add(copyMap.copy(itemOnStack));
 		}
 	}
+
+    public MagicItemOnStack get(final MagicEvent event) {
+        for (final MagicItemOnStack item : this) {
+            if (item.getEvent() == event) {
+                return item;
+            }
+        }
+        return null;
+    }
 
 	private void addCount(final MagicItemOnStack itemOnStack) {
 		final int index=itemOnStack.getController().getIndex();
