@@ -4197,10 +4197,9 @@ public class TriggerDefinitions {
 		}
     };
     
-    //private static final "DELETEME"
+    //private static "DELETEME"
 	
 	public static void addTriggers() {
-        /*
         Class c = TriggerDefinitions.class;
         Field[] fields = c.getDeclaredFields();
         int cnt = 0;
@@ -4219,6 +4218,5 @@ public class TriggerDefinitions {
             }
         }
 		System.err.println("Added " + cnt + " triggers");
-        */
 	}
 }
