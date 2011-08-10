@@ -79,5 +79,15 @@ public class Raging_Ravine {
 
 
     public static final MagicTrigger V9980 =new MagicTappedIntoPlayTrigger("Raging Ravine");
+    
+    public static final MagicManaActivation V1 = new MagicTapManaActivation(
+            Arrays.asList(MagicManaType.Red,MagicManaType.Green), 1);
+    
+    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
+        @Override
+        public void change(MagicCardDefinition cdef) {
+		    cdef.setExcludeManaOrCombat();
+        }
+    };
 
 }

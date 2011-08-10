@@ -39,27 +39,39 @@ public class ManaActivationDefinitions {
 		cardDefinition.addManaActivation(new MagicVividManaActivation(manaTypes));
 	}
 	
+    public final static List<MagicManaType> getVividManaTypes(final MagicManaType manaType) {
+		final List<MagicManaType> manaTypes=new ArrayList<MagicManaType>(MagicColor.NR_COLORS-1);
+		for (final MagicColor color : MagicColor.values()) {
+			final MagicManaType colorManaType=color.getManaType();
+			if (colorManaType != manaType) {
+				manaTypes.add(colorManaType);
+			}
+		}
+        return manaTypes;
+	}
+	
 	public static void addManaActivations() {
 		// Vivid lands.
-		addVividActivations("Vivid Crag",MagicManaType.Red);
-		addVividActivations("Vivid Creek",MagicManaType.Blue);
-		addVividActivations("Vivid Grove",MagicManaType.Green);
-		addVividActivations("Vivid Marsh",MagicManaType.Black);
-		addVividActivations("Vivid Meadow",MagicManaType.White);
+		//addVividActivations("Vivid Crag",MagicManaType.Red);
+		//addVividActivations("Vivid Creek",MagicManaType.Blue);
+		//addVividActivations("Vivid Grove",MagicManaType.Green);
+		//addVividActivations("Vivid Marsh",MagicManaType.Black);
+		//addVividActivations("Vivid Meadow",MagicManaType.White);
 		
-		// Artifacts.
-		addManaActivation("Lotus Petal",new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
-		addManaActivation("Mind Stone",new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0));
+		//addManaActivation("Mind Stone",new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0));
 
         // Land generating colorless mana
-        addManaActivation("Tectonic Edge",new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0));
+        //addManaActivation("Tectonic Edge",new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0));
 		
 		// Man lands.
-		addCreatureActivations("Celestial Colonnade",Arrays.asList(MagicManaType.Blue,MagicManaType.White));
-		addCreatureActivations("Creeping Tar Pit",Arrays.asList(MagicManaType.Blue,MagicManaType.Black));
-		addCreatureActivations("Raging Ravine",Arrays.asList(MagicManaType.Red,MagicManaType.Green));
-		addCreatureActivations("Stirring Wildwood",Arrays.asList(MagicManaType.Green,MagicManaType.White));		
-		addCreatureActivations("Inkmoth Nexus",Arrays.asList(MagicManaType.Colorless));		
+		//addCreatureActivations("Celestial Colonnade",Arrays.asList(MagicManaType.Blue,MagicManaType.White));
+		//addCreatureActivations("Creeping Tar Pit",Arrays.asList(MagicManaType.Blue,MagicManaType.Black));
+		//addCreatureActivations("Raging Ravine",Arrays.asList(MagicManaType.Red,MagicManaType.Green));
+		//addCreatureActivations("Stirring Wildwood",Arrays.asList(MagicManaType.Green,MagicManaType.White));		
+		//addCreatureActivations("Inkmoth Nexus",Arrays.asList(MagicManaType.Colorless));		
+		
+        // Artifacts.
+		addManaActivation("Lotus Petal",new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
 
 		// Creatures.
 		addCreatureActivations("Alloy Myr",MagicManaType.ALL_TYPES);

@@ -43,4 +43,5 @@ public class Mind_Stone {
 		}
 	};
 	
+	public static final MagicManaActivation V1 = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
 }

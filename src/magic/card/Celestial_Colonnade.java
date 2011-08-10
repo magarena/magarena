@@ -73,4 +73,13 @@ public class Celestial_Colonnade {
 
     public static final MagicTrigger V9899 =new MagicTappedIntoPlayTrigger("Celestial Colonnade");
 
+	public static final MagicManaActivation V1 = new MagicTapManaActivation(
+            Arrays.asList(MagicManaType.Blue,MagicManaType.White), 1);
+    
+    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
+        @Override
+        public void change(MagicCardDefinition cdef) {
+		    cdef.setExcludeManaOrCombat();
+        }
+    };
 }

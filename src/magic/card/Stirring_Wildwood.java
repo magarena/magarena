@@ -68,5 +68,15 @@ public class Stirring_Wildwood {
 	};
 	
     public static final MagicTrigger V9903 =new MagicTappedIntoPlayTrigger("Stirring Wildwood");
+    
+    public static final MagicManaActivation V1 = new MagicTapManaActivation(
+            Arrays.asList(MagicManaType.Green,MagicManaType.White), 1);
+    
+    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
+        @Override
+        public void change(MagicCardDefinition cdef) {
+		    cdef.setExcludeManaOrCombat();
+        }
+    };
 
 }
