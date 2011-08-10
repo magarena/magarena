@@ -2,6 +2,8 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicStackGetChoicesEvent extends MagicEvent {
 
@@ -14,6 +16,14 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
 			itemOnStack.setChoiceResults(choiceResults);
 			// Pay mana cost when there is one.
 			event.payManaCost(game,itemOnStack.getController(),choiceResults);
+
+            //trigger targetting
+            if (event.getChoice() instanceof MagicTargetChoice) {
+                final MagicTargetChoice tchoice = (MagicTargetChoice)event.getChoice();
+                if (tchoice.isTargeted()) {
+                    game.executeTrigger(MagicTriggerType.WhenTargeted,itemOnStack);
+                }
+            }
 		}
 	};
 
