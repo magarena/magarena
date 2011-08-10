@@ -546,7 +546,6 @@ public class CardEventDefinitions {
 
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_SPELL,
 				new Object[]{cardOnStack},this,"Counter target spell$ unless its controller pays {1}.");
 		}
@@ -920,7 +919,6 @@ public class CardEventDefinitions {
 
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_SPELL,
 				new Object[]{cardOnStack},this,"Counter target spell$ unless its controller pays {3}.");
 		}
