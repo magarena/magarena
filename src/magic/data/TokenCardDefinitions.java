@@ -331,7 +331,6 @@ public class TokenCardDefinitions {
 	};
 
 	public static final MagicCardDefinition WOLF_TOKEN_CARD=new MagicCardDefinition("Wolf") {
-		
 		public void initialize() {
 
 			setToken();
@@ -378,9 +377,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final MagicCardDefinition ELDRAZI_SPAWN_TOKEN_CARD=new MagicCardDefinition("Eldrazi Spawn") {
-		
 		public void initialize() {
-
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
