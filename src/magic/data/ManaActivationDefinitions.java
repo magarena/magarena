@@ -82,6 +82,6 @@ public class ManaActivationDefinitions {
 		addCreatureActivations("Vine Trellis",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
 		addCreatureActivations("Plague Myr",Arrays.asList(MagicManaType.Colorless));
 		
-        System.err.println("Added 21 mana activations");
+        System.err.println("Added 8 mana activations");
 	}
 }
