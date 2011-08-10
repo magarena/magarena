@@ -199,6 +199,7 @@ public class CardDefinitions {
 		addDefinition(MagicCardDefinition.UNKNOWN);
 
 		System.err.println(getNumberOfCards()+ " card definitions");
+        MagicCardDefinition.printStatistics();
 	}
 	
 	public int getNumberOfCards() {
@@ -238,12 +239,10 @@ public class CardDefinitions {
 	}
 	
 	public List<MagicCardDefinition> getLandCards() {
-
 		return landCards;
 	}
 	
 	public List<MagicCardDefinition> getSpellCards() {
-		
 		return spellCards;
 	}
 	
@@ -253,7 +252,6 @@ public class CardDefinitions {
 	}
 	
 	public static CardDefinitions getInstance() {
-		
 		return INSTANCE;
 	}
 }
