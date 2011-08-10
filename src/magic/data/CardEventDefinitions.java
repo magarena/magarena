@@ -360,16 +360,6 @@ public class CardEventDefinitions {
 		}
 	};
 
-	private static final MagicLocalVariable DIMINISH_VARIABLE=new MagicDummyLocalVariable() {
-
-		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-
-			pt.power=1;
-			pt.toughness=1;
-		}
-	};
-	
 	private static final MagicSpellCardEvent DIMINISH=new MagicSpellCardEvent("Diminish") {
 
 		@Override
@@ -386,7 +376,16 @@ public class CardEventDefinitions {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
-				game.doAction(new MagicBecomesCreatureAction(creature,DIMINISH_VARIABLE));
+				game.doAction(new MagicBecomesCreatureAction(creature,
+        new MagicDummyLocalVariable() {
+
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+
+			pt.power=1;
+			pt.toughness=1;
+		}
+	}));
 			}
 		}
 	};
@@ -2993,20 +2992,6 @@ public class CardEventDefinitions {
 
 	// ***** KICKER CREATURES ******
 			
-	private static final MagicEventAction GOBLIN_BUSHWHACKER_ACTION=new MagicEventAction() {
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			
-			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				
-				final MagicPermanent creature=(MagicPermanent)target;
-				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
-			}			
-		}
-	};
 	
 	private static final MagicSpellCardEvent GOBLIN_BUSHWHACKER=new MagicSpellCardEvent("Goblin Bushwhacker") {
 
@@ -3029,24 +3014,27 @@ public class CardEventDefinitions {
 			if (kickerCount>0) {
 				final MagicPermanent permanent=action.getPermanent();
 				final MagicPlayer player=permanent.getController();
-				final MagicEvent triggerEvent=new MagicEvent(permanent,player,new Object[]{player},GOBLIN_BUSHWHACKER_ACTION,
+				final MagicEvent triggerEvent=new MagicEvent(permanent,player,new Object[]{player},
+        new MagicEventAction() {
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+			
+			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			for (final MagicTarget target : targets) {
+				
+				final MagicPermanent creature=(MagicPermanent)target;
+				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
+				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
+			}			
+		}
+	}, 
 					"Creatures you control get +1/+0 and gain haste until end of turn.");
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
 			}
 		}
 	};
 	
-	private static final MagicEventAction GOBLIN_RUINBLASTER_ACTION=new MagicEventAction() {
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-			final MagicPermanent land=event.getTarget(game,choiceResults,0);
-			if (land!=null) {
-				game.doAction(new MagicDestroyAction(land));
-			}
-		}
-	};
 	
 	private static final MagicSpellCardEvent GOBLIN_RUINBLASTER=new MagicSpellCardEvent("Goblin Ruinblaster") {
 
@@ -3072,18 +3060,24 @@ public class CardEventDefinitions {
 				final MagicPlayer player=permanent.getController();
 				final MagicEvent triggerEvent=new MagicEvent(permanent,player,
 						MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,new MagicDestroyTargetPicker(false),
-						MagicEvent.NO_DATA,GOBLIN_RUINBLASTER_ACTION,"Destroy target nonbasic land$.");
+						MagicEvent.NO_DATA,
+	new MagicEventAction() {
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+
+			final MagicPermanent land=event.getTarget(game,choiceResults,0);
+			if (land!=null) {
+				game.doAction(new MagicDestroyAction(land));
+			}
+		}
+	},
+    "Destroy target nonbasic land$.");
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
 			}
 		}
 	};
 	
-	private static final MagicLocalVariable KAVU_TITAN_VARIABLE=new MagicDummyLocalVariable() {
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return flags|MagicAbility.Trample.getMask();
-		}
-	};
 	
 	private static final MagicSpellCardEvent KAVU_TITAN=new MagicSpellCardEvent("Kavu Titan") {
 
@@ -3106,19 +3100,18 @@ public class CardEventDefinitions {
 			final MagicPermanent permanent=action.getPermanent();
 			if (kicked) {
 				permanent.changeCounters(MagicCounterType.PlusOne,3);
-				permanent.addLocalVariable(KAVU_TITAN_VARIABLE);
+				permanent.addLocalVariable(
+	new MagicDummyLocalVariable() {
+		@Override
+		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+			return flags|MagicAbility.Trample.getMask();
+		}
+	}
+                );
 			}
 		}
 	};
 	
-	private static final MagicEventAction LIGHTKEEPER_OF_EMERIA_ACTION=new MagicEventAction() {
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
-		}
-	};
 	
 	private static final MagicSpellCardEvent LIGHTKEEPER_OF_EMERIA=new MagicSpellCardEvent("Lightkeeper of Emeria") {
 
@@ -3143,7 +3136,16 @@ public class CardEventDefinitions {
 				final MagicPlayer player=permanent.getController();
 				final int life=kickerCount*2;
 				final MagicEvent triggerEvent=new MagicEvent(permanent,player,new Object[]{player,life},
-						LIGHTKEEPER_OF_EMERIA_ACTION,"You gain "+life+" life.");
+	new MagicEventAction() {
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+			
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+		}
+	},
+                        
+                        "You gain "+life+" life.");
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
 			}
 		}
@@ -3170,20 +3172,6 @@ public class CardEventDefinitions {
 		}
 	};
 	
-	private static final MagicEventAction WOLFBRIAR_ELEMENTAL_ACTION=new MagicEventAction() {
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-			final MagicPlayer player=(MagicPlayer)data[0];
-			int count=(Integer)data[1];
-			for (;count>0;count--) {
-				
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.WOLF_TOKEN_CARD));
-			}
-		}
-	};
-	
 	private static final MagicSpellCardEvent WOLFBRIAR_ELEMENTAL=new MagicSpellCardEvent("Wolfbriar Elemental") {
 
 		@Override
@@ -3206,8 +3194,28 @@ public class CardEventDefinitions {
 			if (kickerCount>0) {
 				final MagicPermanent permanent=action.getPermanent();
 				final MagicPlayer player=permanent.getController();
-				final MagicEvent triggerEvent=new MagicEvent(permanent,player,new Object[]{player,kickerCount},
-						WOLFBRIAR_ELEMENTAL_ACTION,"Put "+kickerCount+" 2/2 green Wolf creature tokens onto the battlefield.");
+				final MagicEvent triggerEvent=new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{player,kickerCount},
+	            		new MagicEventAction() {
+		            		@Override
+		                    public void executeEvent(
+                                final MagicGame game,
+                                final MagicEvent event,
+                                final Object[] data,
+                                final Object[] choiceResults) {
+			                        final MagicPlayer player=(MagicPlayer)data[0];
+			                        int count=(Integer)data[1];
+			                        for (;count>0;count--) {
+				        				game.doAction(new MagicPlayTokenAction(
+                                                player,
+                                                TokenCardDefinitions.
+                                                WOLF_TOKEN_CARD));
+			                        }
+		                        }
+	                    },
+                        "Put "+kickerCount+" 2/2 green Wolf creature tokens onto the battlefield.");
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
 			}
 		}
@@ -3297,6 +3305,8 @@ public class CardEventDefinitions {
 	private static final MagicSpellCardEvent WEAKNESS=new MagicPlayAuraEvent("Weakness",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(2,1));
 	
+    //private static final MagicSpellCardEvent "DELETEME"
+    
 	public static void setCardEvents() {
         Class c = CardEventDefinitions.class;
         Field[] fields = c.getDeclaredFields();
