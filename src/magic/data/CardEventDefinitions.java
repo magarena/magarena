@@ -3305,10 +3305,9 @@ public class CardEventDefinitions {
 	private static final MagicSpellCardEvent WEAKNESS=new MagicPlayAuraEvent("Weakness",
 			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(2,1));
 	
-    //private static final MagicSpellCardEvent "DELETEME"
+    //private static "DELETEME"
     
 	public static void setCardEvents() {
-        /*
         Class c = CardEventDefinitions.class;
         Field[] fields = c.getDeclaredFields();
         int cnt = 0;
@@ -3327,6 +3326,5 @@ public class CardEventDefinitions {
             }
         }
 		System.err.println("Added " + cnt + " card events");
-        */
 	}
 }
