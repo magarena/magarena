@@ -71,17 +71,17 @@ public class ManaActivationDefinitions {
 		//addCreatureActivations("Inkmoth Nexus",Arrays.asList(MagicManaType.Colorless));		
 		
         // Artifacts.
-		addManaActivation("Lotus Petal",new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
+		//addManaActivation("Lotus Petal",new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
 
 		// Creatures.
-		addCreatureActivations("Alloy Myr",MagicManaType.ALL_TYPES);
-		addCreatureActivations("Birds of Paradise",MagicManaType.ALL_TYPES);
-		addCreatureActivations("Llanowar Elves",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
-		addCreatureActivations("Noble Hierarch",Arrays.asList(MagicManaType.Colorless,MagicManaType.Blue,MagicManaType.Green,MagicManaType.White));
-		addCreatureActivations("Steward of Valeron",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
-		addCreatureActivations("Vine Trellis",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
-		addCreatureActivations("Plague Myr",Arrays.asList(MagicManaType.Colorless));
+		//addCreatureActivations("Alloy Myr",MagicManaType.ALL_TYPES);
+		//addCreatureActivations("Birds of Paradise",MagicManaType.ALL_TYPES);
+		//addCreatureActivations("Llanowar Elves",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
+		//addCreatureActivations("Noble Hierarch",Arrays.asList(MagicManaType.Colorless,MagicManaType.Blue,MagicManaType.Green,MagicManaType.White));
+		//addCreatureActivations("Steward of Valeron",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
+		//addCreatureActivations("Vine Trellis",Arrays.asList(MagicManaType.Colorless,MagicManaType.Green));
+		//addCreatureActivations("Plague Myr",Arrays.asList(MagicManaType.Colorless));
 		
-        System.err.println("Added 8 mana activations");
+        //System.err.println("Added 8 mana activations");
 	}
 }
