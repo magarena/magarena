@@ -128,9 +128,7 @@ public class CardDefinitions {
         
         //link to companion object containing static variables
         final String fname = cardDefinition.getFullName();
-
-        //TODO replace all non alpha characters with _
-        final String cname = fname.replace(' ', '_').replace('\'','_').replace(',','_').replace('-','_').replace('!','_');
+        final String cname = fname.replaceAll("[^A-Za-z]", "_");
         try { //reflection
             Class c = Class.forName("magic.card." + cname);
             Field[] fields = c.getDeclaredFields();
