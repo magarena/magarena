@@ -26,7 +26,7 @@ public class MagicBuilderManaCost {
 	}
 	
 	public MagicBuilderManaCost(final MagicBuilderManaCost cost) {
-		amounts=Arrays.copyOf(cost.amounts,cost.amounts.length);;
+		amounts=Arrays.copyOf(cost.amounts,cost.amounts.length);
 		compressedTypes=Arrays.copyOf(cost.compressedTypes,cost.compressedTypes.length);
 		compressedAmounts=Arrays.copyOf(cost.compressedAmounts,cost.compressedAmounts.length);
 		typeCount=cost.typeCount;

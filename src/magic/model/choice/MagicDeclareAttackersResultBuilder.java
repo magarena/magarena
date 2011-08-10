@@ -59,7 +59,7 @@ public class MagicDeclareAttackersResultBuilder {
 		int position=0;
 		
 		// Get the best remaining optional attackers.
-		for (;size>maxAttackers;) {
+		while (size>maxAttackers) {
 			// Add option to attack with all creatures for an alpha strike.
 			final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult(current,count,position++,0);
 			result.addCreatures(attackersSet);
