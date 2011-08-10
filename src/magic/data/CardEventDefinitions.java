@@ -3308,6 +3308,7 @@ public class CardEventDefinitions {
     //private static final MagicSpellCardEvent "DELETEME"
     
 	public static void setCardEvents() {
+        /*
         Class c = CardEventDefinitions.class;
         Field[] fields = c.getDeclaredFields();
         int cnt = 0;
@@ -3319,11 +3320,13 @@ public class CardEventDefinitions {
                     final MagicCardDefinition card = cevent.getCardDefinition();
                     card.setCardEvent(cevent);
                     cnt++;
+                    System.err.println("Adding spell card event to " + card.getFullName());
                 }
             } catch (final IllegalAccessException ex) {
                 throw new RuntimeException(ex);
             }
         }
 		System.err.println("Added " + cnt + " card events");
+        */
 	}
 }

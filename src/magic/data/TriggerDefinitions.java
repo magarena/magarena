@@ -2308,9 +2308,7 @@ public class TriggerDefinitions {
 		}
     };
     
-    private static final MagicTrigger SUTURE_PRIEST=new MagicTrigger(
-            MagicTriggerType.WhenOtherComesIntoPlay,
-            "Suture Priest") {
+    private static final MagicTrigger SUTURE_PRIEST=new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay,"Suture Priest") {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicPermanent otherPermanent=(MagicPermanent)data;
@@ -3172,9 +3170,7 @@ public class TriggerDefinitions {
 		}
     };
     
-    private static final MagicTrigger SWORD_OF_FEAST_AND_FAMINE = new MagicTrigger(
-            MagicTriggerType.WhenDamageIsDealt,
-            "Sword of Feast and Famine") {
+    private static final MagicTrigger SWORD_OF_FEAST_AND_FAMINE = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of Feast and Famine") {
 
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
@@ -3233,9 +3229,7 @@ public class TriggerDefinitions {
 		}
     };
 
-    private static final MagicTrigger SWORD_OF_LIGHT_AND_SHADOW=new MagicTrigger(
-            MagicTriggerType.WhenDamageIsDealt,
-            "Sword of Light and Shadow") {
+    private static final MagicTrigger SWORD_OF_LIGHT_AND_SHADOW=new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of Light and Shadow") {
 
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
@@ -4206,6 +4200,7 @@ public class TriggerDefinitions {
     //private static final "DELETEME"
 	
 	public static void addTriggers() {
+        /*
         Class c = TriggerDefinitions.class;
         Field[] fields = c.getDeclaredFields();
         int cnt = 0;
@@ -4217,11 +4212,13 @@ public class TriggerDefinitions {
                     final MagicCardDefinition card = trigger.getCardDefinition();
                     card.addTrigger(trigger);
                     cnt++;
+                    System.err.println("Adding trigger to " + card.getFullName());
                 }
             } catch (final IllegalAccessException ex) {
                 throw new RuntimeException(ex);
             }
         }
 		System.err.println("Added " + cnt + " triggers");
+        */
 	}
 }
