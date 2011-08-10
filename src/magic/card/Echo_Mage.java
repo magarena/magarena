@@ -12,10 +12,24 @@ import magic.data.*;
 import magic.model.variable.*;
 
 public class Echo_Mage {
-
-	public static final MagicPermanentActivation V615 =        new MagicLevelUpActivation("Echo Mage",MagicManaCost.ONE_BLUE,4);
 	
-	public static final MagicPermanentActivation V617 =new MagicPermanentActivation("Echo Mage",
+    private static final MagicLocalVariable ECHO_MAGE=new MagicDummyLocalVariable() {
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+			final int charges=permanent.getCounters(MagicCounterType.Charge);
+			if (charges>=4) {
+				pt.power=2;
+				pt.toughness=5;
+			} else if (charges>=2) {
+				pt.power=2;
+				pt.toughness=4;
+			}
+		}		
+	};
+
+	public static final MagicPermanentActivation V615 = new MagicLevelUpActivation("Echo Mage",MagicManaCost.ONE_BLUE,4);
+	
+	public static final MagicPermanentActivation V617 = new MagicPermanentActivation("Echo Mage",
 			new MagicCondition[]{
                 MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,
                 MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
@@ -57,4 +71,12 @@ public class Echo_Mage {
 		}
 	};
 	
+    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
+        @Override
+        public void change(MagicCardDefinition cdef) {
+            cdef.addLocalVariable(ECHO_MAGE);	
+            cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
+            cdef.setVariablePT();
+        }
+    };
 }

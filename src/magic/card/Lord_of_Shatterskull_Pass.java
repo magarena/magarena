@@ -12,10 +12,29 @@ import magic.data.*;
 import magic.model.variable.*;
 
 public class Lord_of_Shatterskull_Pass {
+	
+    private static final MagicLocalVariable LORD_OF_SHATTERSKULL_PASS = new MagicDummyLocalVariable() {
+		@Override
+		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+			if (permanent.getCounters(MagicCounterType.Charge)>0) {
+				pt.power=6;
+				pt.toughness=6;
+			} 
+		}		
+	};
 
-	public static final MagicPermanentActivation V1260 =new MagicLevelUpActivation("Lord of Shatterskull Pass",MagicManaCost.ONE_RED,6);
+	public static final MagicPermanentActivation V1260 = new MagicLevelUpActivation("Lord of Shatterskull Pass",MagicManaCost.ONE_RED,6);
 		
-    public static final MagicTrigger V7917 =new MagicTrigger(MagicTriggerType.WhenAttacks,"Lord of Shatterskull Pass") {
+    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
+        @Override
+        public void change(MagicCardDefinition cdef) {
+            cdef.addLocalVariable(LORD_OF_SHATTERSKULL_PASS);	
+            cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
+            cdef.setVariablePT();
+        }
+    };
+		
+    public static final MagicTrigger V7917 = new MagicTrigger(MagicTriggerType.WhenAttacks,"Lord of Shatterskull Pass") {
 
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
@@ -41,5 +60,4 @@ public class Lord_of_Shatterskull_Pass {
 			}
 		}
     };
-    
 }

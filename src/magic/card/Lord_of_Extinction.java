@@ -11,26 +11,23 @@ import magic.model.*;
 import magic.data.*;
 import magic.model.variable.*;
 
-public class Guul_Draz_Specter {
-	
-    private static final MagicLocalVariable GUUL_DRAZ_SPECTER=new MagicDummyLocalVariable() {
+public class Lord_of_Extinction {
+
+	private static final MagicLocalVariable LORD_OF_EXTINCTION=new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			if (game.getOpponent(permanent.getController()).getHand().isEmpty()) {
-				pt.power+=3;
-				pt.toughness+=3;
-			}
-		}		
+			final int amount=game.getPlayer(0).getGraveyard().size()+game.getPlayer(1).getGraveyard().size();
+			pt.power=amount;
+			pt.toughness=amount;
+		}
 	};
-
-    public static final MagicTrigger V7579 =new MagicSpecterTrigger("Guul Draz Specter",true,false);
-    
+	
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
         public void change(MagicCardDefinition cdef) {
-		    cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
-		    cdef.addLocalVariable(GUUL_DRAZ_SPECTER);
+            cdef.addLocalVariable(LORD_OF_EXTINCTION);	
+            cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
+            cdef.setVariablePT();
         }
     };
-    
 }
