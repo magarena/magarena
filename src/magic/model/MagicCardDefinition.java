@@ -50,7 +50,13 @@ public class MagicCardDefinition {
 			setAbility(MagicAbility.Shroud);
 		}
 	};
-	
+
+    private static int numTriggers = 0;
+    private static int numPermanentActivations = 0;
+    private static int numManaActivations = 0;
+    private static int numSpellEvent = 0;
+    private static int numModifications = 0;
+    private static int numLocalVariables = 0;
 
 	public static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES = 
         Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
@@ -101,6 +107,15 @@ public class MagicCardDefinition {
 	
 	protected void initialize() {}
 	
+    public static void printStatistics() {
+		System.err.println(numTriggers + " triggers");
+		System.err.println(numPermanentActivations + " permanent activations");
+		System.err.println(numManaActivations + " mana activations");
+		System.err.println(numSpellEvent + " spell event");
+		System.err.println(numModifications + " card modifications");
+		System.err.println(numLocalVariables + " local variables");
+    }
+
 	public String getName() {
 		return name;
 	}
@@ -194,27 +209,34 @@ public class MagicCardDefinition {
             setCardEvent(cevent);
             cevent.setCardIndex(index);
             System.err.println("Adding spell card event to " + getFullName());
+            numSpellEvent++;
         } else if (obj instanceof MagicManaActivation) {
             final MagicManaActivation mact = (MagicManaActivation)obj;
             addManaActivation(mact);
             System.err.println("Adding mana activation to " + getFullName());
+            numManaActivations++;
         } else if (obj instanceof MagicTrigger) {
             final MagicTrigger mtrig = (MagicTrigger)obj;
             addTrigger(mtrig);
             mtrig.setCardIndex(index);
             System.err.println("Adding trigger to " + getFullName());
+            numTriggers++;
         } else if (obj instanceof MagicPermanentActivation) {
             final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
             addActivation(mact);
             mact.setCardIndex(index);
             System.err.println("Adding permanent activation to " + getFullName());
+            numPermanentActivations++;
         } else if (obj instanceof MagicChangeCardDefinition) {
             final MagicChangeCardDefinition chg = (MagicChangeCardDefinition)obj;
             chg.change(this);
             System.err.println("Modifying card definition " + getFullName());
+            numModifications++;
         } else if (obj instanceof MagicLocalVariable) {
             final MagicLocalVariable lvar = (MagicLocalVariable)obj;
             addLocalVariable(lvar);
+            System.err.println("Adding local variable to " + getFullName());
+            numLocalVariables++;
         } else {
             System.err.println("ERROR! Unable to add object to MagicCardDefinition");
             throw new RuntimeException("Unknown field in companion object");
