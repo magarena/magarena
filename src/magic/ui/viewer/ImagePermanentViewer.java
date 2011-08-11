@@ -3,6 +3,8 @@ package magic.ui.viewer;
 import magic.data.CardImagesProvider;
 import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.*;
@@ -173,11 +175,9 @@ public class ImagePermanentViewer extends JPanel {
 
 		final Color choiceColor;
 		if (viewer.getController().isCombatChoice()) {
-			choiceColor=Color.RED; 
-            //ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);			
+			choiceColor = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);			
 		} else {
-			choiceColor=Color.GREEN;
-            //ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+			choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 		}
 		
 		g.setFont(FontsAndBorders.FONT1);
@@ -242,13 +242,16 @@ public class ImagePermanentViewer extends JPanel {
 			}
 					
 			if (viewer.isValidChoice(linkedInfo)) {
-                //draw a transparent overlay of choiceColor
-				// g2d.setPaint(choiceColor);
-				// g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
-                //draw a one pixel border of choiceColor
-				g2d.setPaint(new Color(choiceColor.getRGB()));
-                g2d.setStroke(new BasicStroke(2));
-				g2d.drawRect(x1+1,y1+1,x2-x1-1,y2-y1-1);
+				if (ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay()) {
+					//draw a transparent overlay of choiceColor
+					g2d.setPaint(choiceColor);
+					g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
+				} else  {
+					//draw a one pixel border of choiceColor
+					g2d.setPaint(new Color(choiceColor.getRGB()));
+					g2d.setStroke(new BasicStroke(2));
+					g2d.drawRect(x1+1,y1+1,x2-x1-1,y2-y1-1);
+				}
 			}
 		}
 	}

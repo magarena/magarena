@@ -13,12 +13,13 @@ public class Spiteful_Visions {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicPlayer player = (MagicPlayer)data;
+			final String playerName = player.getName();
 				return new MagicEvent(
 						permanent,
 						player,
 						new Object[]{player},
 						this,
-						"You draw a card.");
+						playerName + " draws a card.");
 		}
 		
 		@Override
@@ -33,12 +34,13 @@ public class Spiteful_Visions {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
     		final MagicPlayer player = ((MagicCard)data).getOwner();
+    		final String playerName = player.getName();
     			return new MagicEvent(
     					permanent,
     					permanent.getController(),
     					new Object[]{permanent,player},
     					this,
-    					"Spiteful Visions deals 1 damage to you.");
+    					"Spiteful Visions deals 1 damage to " + playerName + ".");
     	}
     	
     	@Override

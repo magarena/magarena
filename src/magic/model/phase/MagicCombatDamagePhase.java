@@ -23,6 +23,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
 		final MagicPlayer defendingPlayer=game.getOpponent(attackingPlayer);
 		final int lifeBefore=defendingPlayer.getLife();
 		final int poisonBefore=defendingPlayer.getPoison();
+		final String playerName = defendingPlayer.getName();
         
   		//deal first strike damage
         if (game.getStep() == MagicStep.Begin) {
@@ -36,15 +37,15 @@ public class MagicCombatDamagePhase extends MagicPhase {
 		final int poisonAfter=defendingPlayer.getPoison();
 		final StringBuffer message=new StringBuffer();
 		if (lifeAfter>lifeBefore) {
-			message.append(" You gain "+(lifeAfter-lifeBefore)+" life.");
+			message.append(" gains " + (lifeAfter-lifeBefore) + " life.");
 		} else if (lifeAfter<lifeBefore) {
-			message.append(" You lose "+(lifeBefore-lifeAfter)+" life.");
+			message.append(" loses " + (lifeBefore-lifeAfter) + " life.");
 		}
 		if (poisonAfter>poisonBefore) {
-			message.append(" You get "+(poisonAfter-poisonBefore)+" poison counters.");
+			message.append(" gets " + (poisonAfter-poisonBefore) + " poison counters.");
 		}
 		if (message.length()>0) {
-			game.logMessage(defendingPlayer,"{c}"+message.toString());			
+			game.logMessage(defendingPlayer,"{c}" + playerName + message.toString());			
 		}
 
         if (game.getStep() == MagicStep.Begin) {

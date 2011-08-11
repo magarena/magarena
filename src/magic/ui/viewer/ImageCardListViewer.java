@@ -6,6 +6,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.*;
@@ -124,8 +125,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			return;
 		}
 		
-		final Color choiceColor=Color.GREEN;
-        //ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+		final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 		
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
@@ -165,11 +165,17 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             //instead of adding a choiceColor transparent layer,
             //draw a border of the choiceColor
 			if (validChoices.contains(card)) {
-                //g2d.setPaint(choiceColor);
-                //g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
-				g2d.setPaint(new Color(choiceColor.getRGB()));
-                g2d.setStroke(new BasicStroke(2));
-				g2d.drawRect(x1,y1,CARD_WIDTH-1,CARD_HEIGHT);
+				
+				if (ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay()) {
+					//draw a transparent overlay of choiceColor
+					g2d.setPaint(choiceColor);
+					g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
+				} else  {
+					//draw a one pixel border of choiceColor
+					g2d.setPaint(new Color(choiceColor.getRGB()));
+	                g2d.setStroke(new BasicStroke(2));
+					g2d.drawRect(x1,y1,CARD_WIDTH-1,CARD_HEIGHT);
+				}
 			}
 		}
 	}
