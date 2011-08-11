@@ -24,6 +24,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 	private final JCheckBox alwaysPassCheckBox;
 	private final JCheckBox smartTargetCheckBox;
 	private final SliderPanel popupDelaySlider;
+	private final SliderPanel messageDelaySlider;
 	private final JButton okButton;
 	private final JButton cancelButton;
 	
@@ -31,7 +32,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 		super(frame,true);
 		this.setTitle("Preferences");
-		this.setSize(400,400);
+		this.setSize(400,430);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -119,8 +120,13 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 				
         Y += 30;
 		popupDelaySlider=new SliderPanel("Popup",IconImages.DELAY,0,500,50,config.getPopupDelay());
-		popupDelaySlider.setBounds(60,Y,270,50);
+		popupDelaySlider.setBounds(50,Y,280,50);
 		mainPanel.add(popupDelaySlider);
+		
+		Y += 50;
+		messageDelaySlider = new SliderPanel("Message",IconImages.DELAY,1000,3000,200,config.getMessageDelay());
+		messageDelaySlider.setBounds(50,Y,280,50);
+		mainPanel.add(messageDelaySlider);
 		
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(mainPanel,BorderLayout.CENTER);
@@ -143,6 +149,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 			config.setAlwaysPass(alwaysPassCheckBox.isSelected());
 			config.setSmartTarget(smartTargetCheckBox.isSelected());
 			config.setPopupDelay(popupDelaySlider.getValue());
+			config.setMessageDelay(messageDelaySlider.getValue());
 			config.save();
 			ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
 			frame.repaint();

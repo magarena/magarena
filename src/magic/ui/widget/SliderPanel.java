@@ -17,7 +17,7 @@ public class SliderPanel extends JPanel implements ChangeListener {
 		
 		setLayout(new BorderLayout(5,0));
 		titleLabel=new JLabel(title);
-		titleLabel.setPreferredSize(new Dimension(80,0));
+		titleLabel.setPreferredSize(new Dimension(90,0));
 		titleLabel.setIcon(icon);
 		add(titleLabel,BorderLayout.WEST);
 		

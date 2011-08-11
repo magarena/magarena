@@ -1,5 +1,6 @@
 package magic.model.choice;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
@@ -99,11 +100,11 @@ public class MagicPlayChoice extends MagicChoice {
 			return PASS_CHOICE_RESULTS;
         }
 
-        //skip is phase is combat damage, not supposed to be able to do
+        //skip if phase is combat damage, not supposed to be able to do
         //anything but resolve triggers
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
             if (!game.getStack().isEmpty()) {
-                GameController.pause(1500);
+                GameController.pause(GeneralConfig.getInstance().getMessageDelay());
             }
 			return PASS_CHOICE_RESULTS;
         }
@@ -130,9 +131,9 @@ public class MagicPlayChoice extends MagicChoice {
             */
 
             if (skip) {
-                //if there is an item on the stack, pause for 1.5s
+                //pause if there is an item on the stack
                 if (!game.getStack().isEmpty()) {
-                    GameController.pause(1500);
+                    GameController.pause(GeneralConfig.getInstance().getMessageDelay());
                 }
     			return PASS_CHOICE_RESULTS;
             }

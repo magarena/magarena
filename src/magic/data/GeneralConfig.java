@@ -25,6 +25,7 @@ public class GeneralConfig {
 	private static final String DIFFICULTY="difficulty";
 	private static final String EXTRA_LIFE="extra";
 	private static final String POPUP_DELAY="popup";
+	private static final String MESSAGE_DELAY = "message";
 	private static final String STRENGTH_DIFFICULTY="strengthDifficulty";
 	private static final String STRENGTH_GAMES="strengthGames";
 	private static final String HIGH_QUALITY="hq";
@@ -44,6 +45,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_DIFFICULTY=6;
 	private static final int DEFAULT_EXTRA_LIFE=0;
 	private static final int DEFAULT_POPUP_DELAY=300;
+	private static final int DEFAULT_MESSAGE_DELAY = 1500;
 	private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
 	private static final int DEFAULT_STRENGTH_GAMES=100;
 	private static final boolean DEFAULT_HIGH_QUALITY=false;
@@ -63,6 +65,7 @@ public class GeneralConfig {
 	private int difficulty=DEFAULT_DIFFICULTY;
 	private int extraLife=DEFAULT_EXTRA_LIFE;
 	private int popupDelay=DEFAULT_POPUP_DELAY;
+	private int messageDelay = DEFAULT_MESSAGE_DELAY;
 	private int strengthDifficulty=DEFAULT_STRENGTH_DIFFICULTY;
 	private int strengthGames=DEFAULT_STRENGTH_GAMES;
 	private boolean highQuality=DEFAULT_HIGH_QUALITY;
@@ -205,6 +208,14 @@ public class GeneralConfig {
 		this.popupDelay=popupDelay;
 	}
 	
+	public int getMessageDelay() {
+		return messageDelay;
+	}
+	
+	public void setMessageDelay(final int messageDelay) {
+		this.messageDelay = messageDelay;
+	}
+	
 	public int getStrengthDifficulty() {
 		
 		return strengthDifficulty;
@@ -261,6 +272,7 @@ public class GeneralConfig {
 		difficulty=Integer.parseInt(properties.getProperty(DIFFICULTY,""+DEFAULT_DIFFICULTY));
 		extraLife=Integer.parseInt(properties.getProperty(EXTRA_LIFE,""+DEFAULT_EXTRA_LIFE));
 		popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+DEFAULT_POPUP_DELAY));
+		messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + DEFAULT_MESSAGE_DELAY));
 		strengthDifficulty=Integer.parseInt(properties.getProperty(STRENGTH_DIFFICULTY,""+DEFAULT_STRENGTH_DIFFICULTY));
 		strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
 		highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
@@ -286,6 +298,7 @@ public class GeneralConfig {
 		properties.setProperty(DIFFICULTY,String.valueOf(difficulty));
 		properties.setProperty(EXTRA_LIFE,String.valueOf(extraLife));
 		properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
+		properties.setProperty(MESSAGE_DELAY,String.valueOf(messageDelay));
 		properties.setProperty(STRENGTH_DIFFICULTY,String.valueOf(strengthDifficulty));
 		properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
 		properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
