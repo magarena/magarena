@@ -12,8 +12,10 @@ import magic.model.trigger.MagicTriggerType;
 
 public class Serrated_Arrows {
 
-	public static final MagicPermanentActivation V2768 =new MagicPermanentActivation(            "Serrated Arrows",
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicCondition.CHARGE_COUNTER_CONDITION},
+	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
+			new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
 
@@ -26,7 +28,9 @@ public class Serrated_Arrows {
 		}
 
 		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+		public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
 			return new MagicEvent(
                     source,
                     source.getController(),
@@ -45,51 +49,74 @@ public class Serrated_Arrows {
                 final Object[] choiceResults) {
 			final MagicPermanent creature=(MagicPermanent)event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
-				game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,1,true));
+				game.doAction(new MagicChangeCountersAction(
+                            creature,
+                            MagicCounterType.MinusOne,
+                            1,
+                            true));
 			}
 		}
 	};
 
-    public static final MagicTrigger V10347 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Serrated Arrows") {
-
+    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
+		public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final Object data) {
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{permanent},this,
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
 					"Serrated Arrows enters the battlefield with three arrowhead counters on it.");
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,3,false));
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+			game.doAction(new MagicChangeCountersAction(
+                        (MagicPermanent)data[0],
+                        MagicCounterType.Charge,
+                        3,
+                        false));
 		}
 
 		@Override
 		public boolean usesStack() {
-
 			return false;
 		}
     };
 
-    public static final MagicTrigger V10370 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Serrated Arrows") {
-
+    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
+		public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final Object data) {
 			final MagicPlayer player=permanent.getController();
-			if (player==data&&permanent.getCounters(MagicCounterType.Charge)==0) {
-				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Sacrifice Serrated Arrows.");
+			if (player == data && permanent.getCounters(MagicCounterType.Charge) == 0) {
+				return new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent},
+                        this,
+                        "Sacrifice Serrated Arrows.");
 			}
 			return null;
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-		
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
 		}
     };
-
 }
