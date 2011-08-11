@@ -14,11 +14,12 @@ import magic.model.trigger.MagicTriggerType;
 
 public class Shrine_of_Burning_Rage {
 
-	public static final MagicPermanentActivation V2806 =new MagicPermanentActivation(            "Shrine of Burning Rage",
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.THREE.getCondition()},
+	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
+            new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicManaCost.THREE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
@@ -29,7 +30,9 @@ public class Shrine_of_Burning_Rage {
 		}
 
 		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+		public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
 			return new MagicEvent(
                     source,
                     source.getController(),
@@ -46,7 +49,6 @@ public class Shrine_of_Burning_Rage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicPermanent source=(MagicPermanent)data[0];
@@ -59,43 +61,68 @@ public class Shrine_of_Burning_Rage {
 		}
 	};
 	
-    public static final MagicTrigger V10389 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Shrine of Burning Rage") {
-
+    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
+		public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final Object data) {
 			final MagicPlayer player=permanent.getController();
 			if (player==data) {
-				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Put a charge counter on Shrine of Burning Rage.");
+				return new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent},
+                        this,
+                        "Put a charge counter on Shrine of Burning Rage.");
 			}
 			return null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+			game.doAction(new MagicChangeCountersAction(
+                        (MagicPermanent)data[0],
+                        MagicCounterType.Charge,
+                        1,
+                        true));
 		}		
     };
     
-    public static final MagicTrigger V10408 =new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed,"Shrine of Burning Rage") {
-
+    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
+		public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final Object data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicCard card=((MagicCardOnStack)data).getCard();
 			if (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) {
-				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Put a charge counter on Shrine of Burning Rage.");
+				return new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent},
+                        this,
+                        "Put a charge counter on Shrine of Burning Rage.");
 			}
 			return null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+			game.doAction(new MagicChangeCountersAction(
+                        (MagicPermanent)data[0],
+                        MagicCounterType.Charge,
+                        1,
+                        true));
 		}		
     };
-    
 }
