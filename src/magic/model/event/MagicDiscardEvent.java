@@ -29,15 +29,15 @@ public class MagicDiscardEvent extends MagicEvent {
             random ? new MagicRandomCardChoice(amount) : new MagicCardChoice(amount),
             new Object[]{player},
             EVENT_ACTION,
-            getDescription(amount,random)
+            player.getName() + getDescription(amount,random)
         );
 	}
 	
 	private static final String getDescription(final int amount,final boolean random) {
 		if (amount != 1) {
-			return "You discard " + amount + " cards$.";
+			return " discards " + amount + " cards$.";
 		} else {
-			return "You discard a card$.";
+			return " discards a card$.";
 		}
 	}
 }
