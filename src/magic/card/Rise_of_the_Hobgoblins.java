@@ -18,18 +18,23 @@ import java.util.Collection;
 
 public class Rise_of_the_Hobgoblins {
 
-	public static final MagicPermanentActivation V2460 =new MagicPermanentActivation(			"Rise of the Hobgoblins",
+	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.RED_OR_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Block,true),
             "First strike") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED_OR_WHITE)};
+			return new MagicEvent[]{new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.RED_OR_WHITE)};
 		}
 
 		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+		public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
 			final MagicPlayer player=source.getController();
 			return new MagicEvent(
                     source,
@@ -45,9 +50,10 @@ public class Rise_of_the_Hobgoblins {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-
 			final MagicPlayer player=(MagicPlayer)data[0];
-			final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			final Collection<MagicTarget> targets=game.filterTargets(
+                    player,
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
 			for (final MagicTarget target : targets) {
 				final MagicPermanent creature=(MagicPermanent)target;
 				final int colorFlags=creature.getColorFlags();
@@ -58,31 +64,39 @@ public class Rise_of_the_Hobgoblins {
 		}
 	};
 
-    public static final MagicTrigger V10273 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Rise of the Hobgoblins") {
-
+    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
+		public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final Object data) {
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,
-	new MagicMayChoice("You may pay {X}.",new MagicPayManaCostChoice(MagicManaCost.X)),
-    new Object[]{player},this,
-				"You may pay$ {X}$. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        "You may pay {X}.",
+                        new MagicPayManaCostChoice(MagicManaCost.X)),
+                    new Object[]{player},
+                    this,
+                    "You may pay$ {X}$. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield.");
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				final MagicPlayer player=(MagicPlayer)data[0];
 				final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
-				
 				for (int count=payedManaCost.getX();count>0;count--) {
-					
-					game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.GOBLIN_SOLDIER_TOKEN_CARD));
+					game.doAction(new MagicPlayTokenAction(
+                                player,
+                                TokenCardDefinitions.GOBLIN_SOLDIER_TOKEN_CARD));
 				}
 			}
 		}
     };
-     
 }
