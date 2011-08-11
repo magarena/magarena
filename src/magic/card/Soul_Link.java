@@ -15,13 +15,14 @@ import magic.model.trigger.MagicTriggerType;
 
 public class Soul_Link {
 
-	public static final MagicSpellCardEvent V6526 =new MagicPlayAuraEvent("Soul Link",
-			MagicTargetChoice.TARGET_CREATURE,new MagicNoCombatTargetPicker(true,true,true));	
-    public static final MagicTrigger V10703 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Soul Link") {
+	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
+			MagicTargetChoice.TARGET_CREATURE,
+            new MagicNoCombatTargetPicker(true,true,true));	
 
+    //deals damage
+    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent.getEnchantedCreature()) {
 				final MagicPlayer player=permanent.getController();
@@ -30,19 +31,20 @@ public class Soul_Link {
 			}
 			return null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
 		}
     };
     
-    public static final MagicTrigger V10724 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Soul Link") {
-
+    //dealt damage
+    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getTarget()==permanent.getEnchantedCreature()) {
 				final MagicPlayer player=permanent.getController();
@@ -51,12 +53,13 @@ public class Soul_Link {
 			}
 			return null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
 		}
     };
-    
 }
