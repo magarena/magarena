@@ -14,8 +14,17 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 	private final MagicTargetChoice targetChoice;
 	private final MagicTargetPicker targetPicker;
 	
-	public MagicPlayAuraEvent(final String name,final MagicTargetChoice targetChoice,final MagicTargetPicker targetPicker) {
-		
+    public MagicPlayAuraEvent(
+            final MagicTargetChoice targetChoice,
+            final MagicTargetPicker targetPicker) {
+		this.targetChoice=targetChoice;
+		this.targetPicker=targetPicker;
+	}
+	
+	public MagicPlayAuraEvent(
+            final String name,
+            final MagicTargetChoice targetChoice,
+            final MagicTargetPicker targetPicker) {
 		super(name);
 		this.targetChoice=targetChoice;
 		this.targetPicker=targetPicker;
