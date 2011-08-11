@@ -10,21 +10,24 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Broodmate_Dragon {
-
-    public static final MagicTrigger V6879 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Broodmate Dragon") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{player},this,"You put a 4/4 red Dragon creature token with flying onto the battlefield.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "You put a 4/4 red Dragon creature token with flying onto the battlefield.");
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.DRAGON4_TOKEN_CARD));
 		}
     };
-
 }
