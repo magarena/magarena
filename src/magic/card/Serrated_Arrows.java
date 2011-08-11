@@ -1,60 +1,28 @@
 package magic.card;
 
 import magic.model.*;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicSacrificeAction;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
-import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Serrated_Arrows {
 
-	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
+	public static final MagicPermanentActivation A1 = new MagicWeakenCreatureActivation(
 			new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
 			return new MagicEvent[]{
 				new MagicTapEvent(permanent),
 				new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};
-		}
-
-		@Override
-		public MagicEvent getPermanentEvent(
-                final MagicPermanent source,
-                final MagicPayedCost payedCost) {
-			return new MagicEvent(
-                    source,
-                    source.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(1,1),
-                    MagicEvent.NO_DATA,
-                    this,
-                    "Put a -1/-1 counter on target creature$.");
-		}
-
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-			final MagicPermanent creature=(MagicPermanent)event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeCountersAction(
-                            creature,
-                            MagicCounterType.MinusOne,
-                            1,
-                            true));
-			}
 		}
 	};
 
@@ -109,7 +77,6 @@ public class Serrated_Arrows {
 			}
 			return null;
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
