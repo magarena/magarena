@@ -9,9 +9,12 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 
 public class MagicFromGraveyardToLibraryTrigger extends MagicTrigger {
+	
+    public MagicFromGraveyardToLibraryTrigger() {
+		super(MagicTriggerType.WhenPutIntoGraveyard);
+	}
 
 	public MagicFromGraveyardToLibraryTrigger(final String name) {
-		
 		super(MagicTriggerType.WhenPutIntoGraveyard,name);
 	}
 
