@@ -32,7 +32,6 @@ public class CardDefinitions {
 	}
 	
 	private void setProperty(final MagicCardDefinition card,final String property,final String value) {
-	
         if ("image".equals(property)) {
             card.setImageURL(value);
         } else if ("cube".equals(property)) {

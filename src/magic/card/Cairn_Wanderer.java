@@ -6,7 +6,7 @@ import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
 
 public class Cairn_Wanderer {
-	public static final long CAIRN_WANDERER_FLAGS=
+	private static final long CAIRN_WANDERER_FLAGS=
 		MagicAbility.Flying.getMask()|
 		MagicAbility.Fear.getMask()|
 		MagicAbility.FirstStrike.getMask()|
