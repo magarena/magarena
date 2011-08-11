@@ -6,9 +6,12 @@ import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 
 public class MagicTappedIntoPlayTrigger extends MagicTrigger {
+	
+    public MagicTappedIntoPlayTrigger() {
+		super(MagicTriggerType.WhenComesIntoPlay);
+	}
 
 	public MagicTappedIntoPlayTrigger(final String name) {
-		
 		super(MagicTriggerType.WhenComesIntoPlay,name);
 	}
 
