@@ -15,14 +15,20 @@ public class MagicDrawEvent extends MagicEvent {
 	};
 		
 	public MagicDrawEvent(final MagicSource source,final MagicPlayer player,final int amount) {
-		super(source,player,new Object[]{player,amount},EVENT_ACTION,getDescription(amount));
+		super(
+			source,
+			player,
+			new Object[]{player,amount},
+			EVENT_ACTION,
+			player.getName() + getDescription(amount)
+		);
 	}
 	
 	private static final String getDescription(final int amount) {
 		if (amount!=1) {
-			return "You draw "+amount+" cards.";
+			return " draws "+amount+" cards.";
 		} else {
-			return "You draw a card.";
+			return " draws a card.";
 		}
 	}
 }
