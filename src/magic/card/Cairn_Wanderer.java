@@ -6,6 +6,21 @@ import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
 
 public class Cairn_Wanderer {
+	public static final long CAIRN_WANDERER_FLAGS=
+		MagicAbility.Flying.getMask()|
+		MagicAbility.Fear.getMask()|
+		MagicAbility.FirstStrike.getMask()|
+		MagicAbility.DoubleStrike.getMask()|
+		MagicAbility.Deathtouch.getMask()|
+		MagicAbility.Haste.getMask()|
+		MagicAbility.LifeLink.getMask()|
+		MagicAbility.Reach.getMask()|		
+		MagicAbility.Trample.getMask()|
+		MagicAbility.Shroud.getMask()|
+		MagicAbility.Vigilance.getMask()|
+		MagicAbility.LANDWALK_FLAGS|
+		MagicAbility.PROTECTION_FLAGS;
+
 	private static final MagicLocalVariable CAIRN_WANDERER=new MagicDummyLocalVariable() {
 		@Override
 		public long getAbilityFlags(MagicGame game,MagicPermanent permanent,long flags) {
@@ -18,7 +33,7 @@ public class Cairn_Wanderer {
 					}
 				}
 			}
-			return flags|(newFlags&MagicAbility.CAIRN_WANDERER_FLAGS);
+			return flags|(newFlags & CAIRN_WANDERER_FLAGS);
 		}
 	};
     

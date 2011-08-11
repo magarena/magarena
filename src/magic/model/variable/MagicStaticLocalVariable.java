@@ -151,13 +151,21 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 			final MagicPlayer controller=permanent.getController();
 
 			if (controller.getCount(akromasMemorial)>0) {
-				flags|=MagicAbility.AKROMAS_MEMORIAL_FLAGS;
+				flags|=MagicAbility.Flying.getMask() |
+		               MagicAbility.FirstStrike.getMask()|
+		               MagicAbility.Vigilance.getMask()|
+		               MagicAbility.Trample.getMask()|
+		               MagicAbility.Haste.getMask()|
+		               MagicAbility.ProtectionFromBlack.getMask()|
+		               MagicAbility.ProtectionFromRed.getMask();
 			}
 			if (controller.getCount(eldraziMonument)>0) {
-				flags|=MagicAbility.ELDRAZI_MONUMENT_FLAGS;
+				flags|=MagicAbility.Flying.getMask() | 
+                       MagicAbility.Indestructible.getMask();
 			}
 			if (controller.getCount(trueConviction)>0) {
-				flags|=MagicAbility.TRUE_CONVICTION_FLAGS;
+				flags|=MagicAbility.DoubleStrike.getMask() | 
+                       MagicAbility.LifeLink.getMask();
 			}
 			if (controller.getCount(asceticism)>0) {
 				flags|=MagicAbility.CannotBeTheTarget.getMask();

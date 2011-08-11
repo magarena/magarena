@@ -71,46 +71,9 @@ public enum MagicAbility {
 		Mountainwalk.getMask()|
 		PlainsWalk.getMask()|
 		Swampwalk.getMask();
-			
-	public static final long CAIRN_WANDERER_FLAGS=
-		Flying.getMask()|
-		Fear.getMask()|
-		FirstStrike.getMask()|
-		DoubleStrike.getMask()|
-		Deathtouch.getMask()|
-		Haste.getMask()|
-		LifeLink.getMask()|
-		Reach.getMask()|		
-		Trample.getMask()|
-		Shroud.getMask()|
-		Vigilance.getMask()|
-		LANDWALK_FLAGS|
-		PROTECTION_FLAGS;
 	
-	public static final long TITANIC_ULTIMATUM_FLAGS=
-		FirstStrike.getMask()|
-		LifeLink.getMask()|
-		Trample.getMask();
-	
-	public static final long AKROMAS_MEMORIAL_FLAGS=
-		Flying.getMask()|
-		FirstStrike.getMask()|
-		Vigilance.getMask()|
-		Trample.getMask()|
-		Haste.getMask()|
-		ProtectionFromBlack.getMask()|
-		ProtectionFromRed.getMask();
-	
-	public static final long ELDRAZI_MONUMENT_FLAGS=
-		Flying.getMask()|Indestructible.getMask();
-	
-	public static final long TRUE_CONVICTION_FLAGS=
-		DoubleStrike.getMask()|LifeLink.getMask();
-
-	public static final long VICTORYS_HERALD_FLAGS=
-		Flying.getMask()|LifeLink.getMask();
-	
-	public static final long EXCLUDE_MASK=Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
+    public static final long EXCLUDE_MASK = 
+        Long.MAX_VALUE-Flash.getMask()-CannotBeCountered.getMask()-TotemArmor.getMask();
 	
 	private final String name;
 	private final int score;
