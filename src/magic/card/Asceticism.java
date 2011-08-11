@@ -9,19 +9,19 @@ import magic.model.target.MagicRegenerateTargetPicker;
 
 public class Asceticism {
 
-	public static final MagicPermanentActivation V2251 =new MagicPermanentActivation(			"Asceticism",
+    public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.ONE_GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Regen") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_GREEN)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_GREEN)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
@@ -29,19 +29,18 @@ public class Asceticism {
                     MagicEvent.NO_DATA,
                     this,
                     "Regenerate target creature$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicRegenerateAction(creature));
-			}
-		}
-	};
-	
+            final MagicPermanent creature = event.getTarget(game,choiceResults,0);
+            if (creature != null) {
+                game.doAction(new MagicRegenerateAction(creature));
+            }
+        }
+    };
 }
