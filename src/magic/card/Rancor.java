@@ -16,14 +16,12 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Rancor {
-
-	public static final MagicSpellCardEvent V6520 =new MagicPlayAuraEvent("Rancor",
+	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicTrampleTargetPicker.getInstance());
-    public static final MagicTrigger V10656 =new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Rancor") {
 
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Rancor") {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
 			if (MagicLocationType.Play==triggerData.fromLocation) {
 				final MagicCard card=triggerData.card;
@@ -33,12 +31,14 @@ public class Rancor {
 		}
     	
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicCard card=(MagicCard)data[0];
 			game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
 			game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
 		}
 	};
-	
 }

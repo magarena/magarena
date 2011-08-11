@@ -8,14 +8,17 @@ import magic.model.event.*;
 
 public class Ravenous_Baloth {
 
-	public static final MagicPermanentActivation V1623 =new MagicPermanentActivation(			"Ravenous Baloth",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CONTROL_BEAST_CONDITION},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Life+4") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicSacrificePermanentEvent(source,source.getController(),MagicTargetChoice.SACRIFICE_BEAST)};
+			return new MagicEvent[]{new MagicSacrificePermanentEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.SACRIFICE_BEAST)};
 		}
 
 		@Override
@@ -25,9 +28,12 @@ public class Ravenous_Baloth {
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
 		}
 	};
-	
 }
