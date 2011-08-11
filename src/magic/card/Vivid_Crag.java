@@ -6,20 +6,31 @@ import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicVividLandTrigger;
+import magic.model.MagicColor;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Vivid_Crag {
+    public final static List<MagicManaType> getVividManaTypes(final MagicManaType manaType) {
+		final List<MagicManaType> manaTypes=new ArrayList<MagicManaType>(MagicColor.NR_COLORS-1);
+		for (final MagicColor color : MagicColor.values()) {
+			final MagicManaType colorManaType=color.getManaType();
+			if (colorManaType != manaType) {
+				manaTypes.add(colorManaType);
+			}
+		}
+        return manaTypes;
+	}
 
-    private static final List<MagicManaType> mTypes = magic.data.ManaActivationDefinitions.getVividManaTypes(MagicManaType.Red); 
-
-    public static final MagicTrigger V9950 =new MagicVividLandTrigger("Vivid Crag");
+    public static final MagicTrigger T = new MagicVividLandTrigger();
 	
     //tap for colorless or red
-    public static final MagicManaActivation V1 = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless,MagicManaType.Red),0);
+    public static final MagicManaActivation V1 = new MagicTapManaActivation(
+            Arrays.asList(MagicManaType.Colorless,MagicManaType.Red),0);
 	
     //tap for rest of the colors
-    public static final MagicManaActivation V2 = new MagicVividManaActivation(mTypes);
-  
+    public static final MagicManaActivation V2 = new MagicVividManaActivation(
+        getVividManaTypes(MagicManaType.Red)); 
 }

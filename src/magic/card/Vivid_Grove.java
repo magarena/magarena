@@ -11,15 +11,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Vivid_Grove {
-    
-    private static final List<MagicManaType> mTypes = magic.data.ManaActivationDefinitions.getVividManaTypes(MagicManaType.Green); 
-
-    public static final MagicTrigger V9954 =new MagicVividLandTrigger("Vivid Grove");
+    public static final MagicTrigger T = new MagicVividLandTrigger();
     
     //tap for colorless or green
-    public static final MagicManaActivation V1 = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless,MagicManaType.Green),0);
+    public static final MagicManaActivation V1 = new MagicTapManaActivation(
+            Arrays.asList(MagicManaType.Colorless,MagicManaType.Green),0);
 	
     //tap for rest of the colors
-    public static final MagicManaActivation V2 = new MagicVividManaActivation(mTypes);
+    public static final MagicManaActivation V2 = new MagicVividManaActivation(
+        Vivid_Crag.getVividManaTypes(MagicManaType.Green)); 
   
 }
