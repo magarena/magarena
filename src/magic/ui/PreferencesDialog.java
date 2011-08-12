@@ -124,7 +124,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		mainPanel.add(popupDelaySlider);
 		
 		Y += 50;
-		messageDelaySlider = new SliderPanel("Message",IconImages.DELAY,1000,3000,200,config.getMessageDelay());
+		messageDelaySlider = new SliderPanel("Message",IconImages.DELAY,0,3000,500,config.getMessageDelay());
 		messageDelaySlider.setBounds(50,Y,280,50);
 		mainPanel.add(messageDelaySlider);
 		
