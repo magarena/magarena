@@ -12,20 +12,24 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Sign_in_Blood {
-
-	public static final MagicSpellCardEvent V5936 =new MagicSpellCardEvent("Sign in Blood") {
-
+	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.TARGET_PLAYER,
-				new Object[]{cardOnStack},this,"Target player$ draws two cards and loses 2 life.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.TARGET_PLAYER,
+                    new Object[]{cardOnStack},
+                    this,
+                    "Target player$ draws two cards and loses 2 life.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPlayer player=event.getTarget(game,choiceResults,0);
 			if (player!=null) {
@@ -34,5 +38,4 @@ public class Sign_in_Blood {
 			}
 		}
 	};
-
 }

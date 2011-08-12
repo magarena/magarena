@@ -11,8 +11,12 @@ public class MagicVeteranTrigger extends MagicTrigger {
 
 	private boolean combat;
 	
+    public MagicVeteranTrigger(final boolean combat) {
+		super(MagicTriggerType.WhenDamageIsDealt);
+		this.combat=combat;
+	}
+	
 	public MagicVeteranTrigger(final String name,final boolean combat) {
-		
 		super(MagicTriggerType.WhenDamageIsDealt,name);
 		this.combat=combat;
 	}

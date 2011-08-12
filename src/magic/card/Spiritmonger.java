@@ -10,21 +10,23 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicVeteranTrigger;
 
 public class Spiritmonger {
+	public static final MagicPermanentActivation R = new MagicRegenerationActivation(
+            MagicManaCost.BLACK);
 
-	public static final MagicPermanentActivation V1856 =        new MagicRegenerationActivation("Spiritmonger",MagicManaCost.BLACK);
-
-	public static final MagicPermanentActivation V1858 = new MagicPermanentActivation(			"Spiritmonger",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
 			new MagicActivationHints(MagicTiming.Pump,false,1),
             "Color") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
+			return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,source.getController(),
+                MagicManaCost.GREEN)};
 		}
-
 		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+		public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
 			return new MagicEvent(
                     source,
                     source.getController(),
@@ -33,7 +35,6 @@ public class Spiritmonger {
                     this,
                     "Spiritmonger becomes the color$ of your choice until end of turn.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -46,6 +47,5 @@ public class Spiritmonger {
 		}
 	};
 	
-    public static final MagicTrigger V9026 =new MagicVeteranTrigger("Spiritmonger",false);
-
+    public static final MagicTrigger T = new MagicVeteranTrigger(false);
 }

@@ -12,8 +12,13 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicTrigger {
 	private final MagicSubType subType1;
 	private final MagicSubType subType2;
 	
+    public MagicTappedIntoPlayUnlessTrigger(final MagicSubType subType1,final MagicSubType subType2) {
+		super(MagicTriggerType.WhenComesIntoPlay);
+		this.subType1=subType1;
+		this.subType2=subType2;
+	}
+	
 	public MagicTappedIntoPlayUnlessTrigger(final String name,final MagicSubType subType1,final MagicSubType subType2) {
-		
 		super(MagicTriggerType.WhenComesIntoPlay,name);
 		this.subType1=subType1;
 		this.subType2=subType2;

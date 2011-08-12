@@ -6,9 +6,20 @@ import magic.model.condition.MagicCondition;
 
 public class MagicLevelUpActivation extends MagicPermanentActivation {
 
-	private static final MagicActivationHints ACTIVATION_HINTS=new MagicActivationHints(MagicTiming.Main);
+	private static final MagicActivationHints ACTIVATION_HINTS = 
+        new MagicActivationHints(MagicTiming.Main);
 		
 	private final MagicManaCost cost;
+	
+    public MagicLevelUpActivation(final MagicManaCost cost,final int maximum) {
+		super(
+            new MagicCondition[]{
+                MagicCondition.SORCERY_CONDITION,
+                new MaximumCondition(maximum),cost.getCondition()},
+            ACTIVATION_HINTS,
+            "Level");
+		this.cost=cost;
+	}
 	
 	public MagicLevelUpActivation(final String name,final MagicManaCost cost,final int maximum) {
 		super(

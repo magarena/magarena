@@ -11,7 +11,10 @@ public class Student_of_Warfare {
 	
     private static final MagicLocalVariable STUDENT_OF_WARFARE=new MagicDummyLocalVariable() {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void getPowerToughness(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=7) {
 				pt.power=4;
@@ -21,9 +24,11 @@ public class Student_of_Warfare {
 				pt.toughness=3;
 			}
 		}		
-		
 		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+		public long getAbilityFlags(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final long flags) {
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=7) {
 				return flags|MagicAbility.DoubleStrike.getMask();
@@ -34,7 +39,8 @@ public class Student_of_Warfare {
 		}
 	};
 
-	public static final MagicPermanentActivation V1891 = new MagicLevelUpActivation("Student of Warfare",MagicManaCost.WHITE,7);
+	public static final MagicPermanentActivation A = new MagicLevelUpActivation(
+            MagicManaCost.WHITE,7);
 		
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
