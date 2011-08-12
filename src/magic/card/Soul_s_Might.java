@@ -10,26 +10,34 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPowerTargetPicker;
 
 public class Soul_s_Might {
-
-	public static final MagicSpellCardEvent V6053 =new MagicSpellCardEvent("Soul's Might") {
-
+	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.POS_TARGET_CREATURE,MagicPowerTargetPicker.getInstance(),
-				new Object[]{cardOnStack},this,"Put X +1/+1 counters on target creature$, where X is that creature's power.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicPowerTargetPicker.getInstance(),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Put X +1/+1 counters on target creature$, where X is that creature's power.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
-				game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,creature.getPower(game),true));
+				game.doAction(new MagicChangeCountersAction(
+                            creature,
+                            MagicCounterType.PlusOne,
+                            creature.getPower(game),
+                            true));
 			}
 		}
 	};
-
 }

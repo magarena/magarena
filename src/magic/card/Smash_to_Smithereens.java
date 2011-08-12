@@ -14,20 +14,24 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Smash_to_Smithereens {
-
-	public static final MagicSpellCardEvent V4553 =new MagicSpellCardEvent("Smash to Smithereens") {
-
+	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_ARTIFACT,
-				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,
-				"Destroy target artifact$. Smash to Smithereens deals 3 damage to that artifact's controller.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.NEG_TARGET_ARTIFACT,
+                    new MagicDestroyTargetPicker(false),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Destroy target artifact$. Smash to Smithereens deals 3 damage to that artifact's controller.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
@@ -38,5 +42,4 @@ public class Smash_to_Smithereens {
 			}
 		}
 	};
-	
 }

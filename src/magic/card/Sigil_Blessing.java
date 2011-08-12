@@ -17,25 +17,31 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Sigil_Blessing {
-
-	public static final MagicSpellCardEvent V4525 =new MagicSpellCardEvent("Sigil Blessing") {
-
+	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,MagicPumpTargetPicker.getInstance(),
-				new Object[]{cardOnStack,player},this,"Until end of turn, target creature$ you control gets +3/+3 and other creatures you control get +1/+1.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                    MagicPumpTargetPicker.getInstance(),
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "Until end of turn, target creature$ you control gets +3/+3 and other creatures you control get +1/+1.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			final Collection<MagicTarget> targets=game.filterTargets(
+                    (MagicPlayer)data[1],
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
 			for (final MagicTarget target : targets) {
-				
 				final MagicPermanent permanent=(MagicPermanent)target;
 				if (permanent==creature) {
 					game.doAction(new MagicChangeTurnPTAction(permanent,3,3));
@@ -45,5 +51,4 @@ public class Sigil_Blessing {
 			}
 		}
 	};
-	
 }
