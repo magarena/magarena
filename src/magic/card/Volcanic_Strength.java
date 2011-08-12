@@ -6,7 +6,6 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Volcanic_Strength {
-
-	public static final MagicSpellCardEvent V6534 =new MagicPlayAuraEvent("Volcanic Strength",
+	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
 }
