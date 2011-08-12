@@ -45,7 +45,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_DIFFICULTY=6;
 	private static final int DEFAULT_EXTRA_LIFE=0;
 	private static final int DEFAULT_POPUP_DELAY=300;
-	private static final int DEFAULT_MESSAGE_DELAY = 1500;
+	private static final int DEFAULT_MESSAGE_DELAY = 2000;
 	private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
 	private static final int DEFAULT_STRENGTH_GAMES=100;
 	private static final boolean DEFAULT_HIGH_QUALITY=false;
