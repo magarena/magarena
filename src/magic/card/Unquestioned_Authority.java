@@ -14,22 +14,26 @@ import magic.model.trigger.MagicTriggerType;
 
 public class Unquestioned_Authority {
 
-	public static final MagicSpellCardEvent V6532 =new MagicPlayAuraEvent("Unquestioned Authority",
-			MagicTargetChoice.POS_TARGET_CREATURE,MagicUnblockableTargetPicker.getInstance());
-    public static final MagicTrigger V10745 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Unquestioned Authority") {
+	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
+            MagicTargetChoice.POS_TARGET_CREATURE,
+            MagicUnblockableTargetPicker.getInstance());
 
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
+		public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final Object data) {
 			final MagicPlayer player=permanent.getController();
 			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw a card.");
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
 		}
     };
-    
 }

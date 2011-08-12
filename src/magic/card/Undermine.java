@@ -12,20 +12,24 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Undermine {
-
-	public static final MagicSpellCardEvent V4825 =new MagicSpellCardEvent("Undermine") {
-
+	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_SPELL,
-				new Object[]{cardOnStack},this,"Counter target spell$. Its controller loses 3 life.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.NEG_TARGET_SPELL,
+                    new Object[]{cardOnStack},
+                    this,
+                    "Counter target spell$. Its controller loses 3 life.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicCardOnStack counteredCard=event.getTarget(game,choiceResults,0);
 			if (counteredCard!=null) {
@@ -34,5 +38,4 @@ public class Undermine {
 			}
 		}
 	};
-	
 }
