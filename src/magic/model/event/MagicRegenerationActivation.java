@@ -10,6 +10,18 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
 	private static final MagicActivationHints ACTIVATION_HINTS = new MagicActivationHints(MagicTiming.Pump);
 	private final MagicManaCost cost;
 	
+    public MagicRegenerationActivation(final MagicManaCost cost) {
+		super(
+            new MagicCondition[]{
+                MagicCondition.CAN_REGENERATE_CONDITION,
+                cost.getCondition(),
+                new MagicSingleActivationCondition(),
+            },
+            ACTIVATION_HINTS, 
+            "Regen");
+		this.cost=cost;
+	}
+	
 	public MagicRegenerationActivation(final String name,final MagicManaCost cost) {
 		super(
             name,

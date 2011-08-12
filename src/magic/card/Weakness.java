@@ -6,8 +6,6 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicWeakenTargetPicker;
 
 public class Weakness {
-
-	public static final MagicSpellCardEvent V6536 =new MagicPlayAuraEvent("Weakness",
-			MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(2,1));
-	
+	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
+            MagicTargetChoice.NEG_TARGET_CREATURE,new MagicWeakenTargetPicker(2,1));
 }

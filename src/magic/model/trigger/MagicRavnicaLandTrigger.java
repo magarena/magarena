@@ -11,27 +11,40 @@ import magic.model.event.MagicEvent;
 
 public class MagicRavnicaLandTrigger extends MagicTrigger {
 	
-	private static final MagicChoice RAVNICA_CHOICE=new MagicMayChoice("You may pay 2 life.");
+	private static final MagicChoice RAVNICA_CHOICE = new MagicMayChoice("You may pay 2 life.");
+	
+    public MagicRavnicaLandTrigger() {
+		super(MagicTriggerType.WhenComesIntoPlay);
+	}
 	
 	public MagicRavnicaLandTrigger(final String name) {
-	
 		super(MagicTriggerType.WhenComesIntoPlay,name);
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
+	public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final Object data) {
 		final MagicPlayer player=permanent.getController();
 		if (player.getLife()>1) {
-			return new MagicEvent(permanent,player,RAVNICA_CHOICE,new Object[]{player,permanent},this,
-				"You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    RAVNICA_CHOICE,
+                    new Object[]{player,permanent},
+                    this,
+                    "You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped.");
 		}
 		return null;
 	}
 
 	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-		
+	public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choices) {
 		if (MagicMayChoice.isYesChoice(choices[0])) {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-2));
 		} else {
@@ -41,7 +54,6 @@ public class MagicRavnicaLandTrigger extends MagicTrigger {
 	
 	@Override
 	public boolean usesStack() {
-
 		return false;
 	}
 }
