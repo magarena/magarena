@@ -11,8 +11,13 @@ public class MagicThiefTrigger extends MagicTrigger {
 	private final boolean combat;
 	private final int amount;
 	
+    public MagicThiefTrigger(final boolean combat,final int amount) {
+		super(MagicTriggerType.WhenDamageIsDealt);
+		this.combat=combat;
+		this.amount=amount;
+	}
+	
 	public MagicThiefTrigger(final String name,final boolean combat,final int amount) {
-		
 		super(MagicTriggerType.WhenDamageIsDealt,name);
 		this.combat=combat;
 		this.amount=amount;

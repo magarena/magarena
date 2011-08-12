@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class Tectonic_Edge {
 
-    public static final MagicPermanentActivation V3169 =new MagicPermanentActivation("Tectonic Edge",
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicManaCost.TWO.getCondition(),  //add ONE for the card itself
                 MagicCondition.CAN_TAP_CONDITION,
@@ -19,7 +19,6 @@ public class Tectonic_Edge {
             },
 			new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
@@ -27,9 +26,10 @@ public class Tectonic_Edge {
 			    new MagicSacrificeEvent((MagicPermanent)source),
 				new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
 		}
-
 		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+		public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
 			return new MagicEvent(
                     source,
                     source.getController(),
@@ -39,10 +39,12 @@ public class Tectonic_Edge {
                     this,
                     "Destroy target nonbasic land$.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,
-                final Object[] data,final Object[] choiceResults) {
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
 				game.doAction(new MagicDestroyAction(permanent));
@@ -50,5 +52,6 @@ public class Tectonic_Edge {
 		}
 	};
         
-    public static final MagicManaActivation V1 = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
+    public static final MagicManaActivation M = new MagicTapManaActivation(
+            Arrays.asList(MagicManaType.Colorless),0);
 }

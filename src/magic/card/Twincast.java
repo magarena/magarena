@@ -11,20 +11,24 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Twincast {
-
-	public static final MagicSpellCardEvent V4804 =new MagicSpellCardEvent("Twincast") {
-
+	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
-				new Object[]{cardOnStack,player},this,"Copy target instant or sorcery spell$. You may choose new targets for the copy.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "Copy target instant or sorcery spell$. You may choose new targets for the copy.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
 			if (targetSpell!=null) {
@@ -32,5 +36,4 @@ public class Twincast {
 			}
 		}
 	};
-	
 }
