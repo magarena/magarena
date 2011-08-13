@@ -12,21 +12,27 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Into_the_Roil {
-
-	public static final MagicSpellCardEvent V4009 =new MagicSpellCardEvent("Into the Roil") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,
-				new MagicKickerChoice(MagicTargetChoice.TARGET_NONLAND_PERMANENT,MagicManaCost.ONE_BLUE,false),MagicBounceTargetPicker.getInstance(),
-				new Object[]{cardOnStack,player},this,"Return target nonland permanent$ to its owner's hand. If Into the Roil was kicked$, draw a card.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    new MagicKickerChoice(
+                        MagicTargetChoice.TARGET_NONLAND_PERMANENT,
+                        MagicManaCost.ONE_BLUE,false),
+                    MagicBounceTargetPicker.getInstance(),
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "Return target nonland permanent$ to its owner's hand. If Into the Roil was kicked$, draw a card.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
@@ -37,5 +43,4 @@ public class Into_the_Roil {
 			}
 		}
 	};
-	
 }
