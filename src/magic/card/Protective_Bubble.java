@@ -6,7 +6,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicUnblockableTargetPicker;
 
 public class Protective_Bubble {
-
-	public static final MagicSpellCardEvent V6518 =new MagicPlayAuraEvent("Protective Bubble",
-			MagicTargetChoice.POS_TARGET_CREATURE,MagicUnblockableTargetPicker.getInstance());
+	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
+			MagicTargetChoice.POS_TARGET_CREATURE,
+            MagicUnblockableTargetPicker.getInstance());
 }

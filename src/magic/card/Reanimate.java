@@ -15,21 +15,26 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Reanimate {
-
-	public static final MagicSpellCardEvent V5812 =new MagicSpellCardEvent("Reanimate") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-				MagicGraveyardTargetPicker.getInstance(),new Object[]{cardOnStack,player},this,
-				"Put target creature card$ from a graveyard onto the battlefield under your control. You lose life equal to its converted mana cost.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
+                    MagicGraveyardTargetPicker.getInstance(),
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "Put target creature card$ from a graveyard onto the battlefield under your control. You lose life equal to its converted mana cost.");
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicCard targetCard=event.getTarget(game,choiceResults,0);
 			if (targetCard!=null) {
@@ -39,5 +44,4 @@ public class Reanimate {
 			}
 		}
 	};
-	
 }

@@ -13,20 +13,24 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Offering_to_Asha {
-
-	public static final MagicSpellCardEvent V4259 =new MagicSpellCardEvent("Offering to Asha") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_SPELL,
-				new Object[]{cardOnStack,player},this,"Counter target spell$ unless its controller pays {4}. You gain 4 life.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.NEG_TARGET_SPELL,
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "Counter target spell$ unless its controller pays {4}. You gain 4 life.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
@@ -36,5 +40,4 @@ public class Offering_to_Asha {
 			}
 		}
 	};
-
 }

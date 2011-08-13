@@ -11,20 +11,25 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Recoil {
-
-	public static final MagicSpellCardEvent V4418 =new MagicSpellCardEvent("Recoil") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.TARGET_PERMANENT,
-				MagicBounceTargetPicker.getInstance(),new Object[]{cardOnStack},this,
-				"Return target permanent$ to its owner's hand. Then that player discards a card.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.TARGET_PERMANENT,
+                    MagicBounceTargetPicker.getInstance(),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Return target permanent$ to its owner's hand. Then that player discards a card.");
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
@@ -35,5 +40,4 @@ public class Recoil {
 			}
 		}
 	};
-	
 }

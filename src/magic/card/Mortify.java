@@ -13,20 +13,25 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Mortify {
-
-	public static final MagicSpellCardEvent V4218 =new MagicSpellCardEvent("Mortify") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_CREATURE_OR_ENCHANTMENT,
-				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,"Destroy target creature or enchantment$.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_ENCHANTMENT,
+                    new MagicDestroyTargetPicker(false),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Destroy target creature or enchantment$.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
@@ -34,5 +39,4 @@ public class Mortify {
 			}
 		}
 	};
-	
 }

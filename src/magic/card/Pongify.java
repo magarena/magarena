@@ -13,20 +13,23 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Pongify {
-
-	public static final MagicSpellCardEvent V4282 =new MagicSpellCardEvent("Pongify") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.TARGET_CREATURE,
-				new MagicDestroyTargetPicker(true),new Object[]{cardOnStack},this,
-				"Destroy target creature$. It can't be regenerated. That creature's controller puts a 3/3 green Ape creature onto the battlefield.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.TARGET_CREATURE,
+                    new MagicDestroyTargetPicker(true),
+                    new Object[]{cardOnStack},this,
+                    "Destroy target creature$. It can't be regenerated. That creature's controller puts a 3/3 green Ape creature onto the battlefield.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
@@ -37,5 +40,4 @@ public class Pongify {
 			}
 		}
 	};
-	
 }

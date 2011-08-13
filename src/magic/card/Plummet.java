@@ -13,19 +13,24 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Plummet {
-
-	public static final MagicSpellCardEvent V4306 =new MagicSpellCardEvent("Plummet") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
-				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,"Destroy target creature$ with flying.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
+                    new MagicDestroyTargetPicker(false),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Destroy target creature$ with flying.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
@@ -33,5 +38,4 @@ public class Plummet {
 			}
 		}
 	};
-
 }
