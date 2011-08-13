@@ -14,22 +14,25 @@ import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Goblin_Ruinblaster {
-
-	public static final MagicSpellCardEvent V6270 =new MagicSpellCardEvent("Goblin Ruinblaster") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,new MagicKickerChoice(null,MagicManaCost.RED,false),
-				new Object[]{cardOnStack,player},this,
-				"$Play Goblin Ruinblaster. When Goblin Ruinblaster enters the battlefield, if it is was kicked$, "+
-				"destroy target nonbasic land.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    new MagicKickerChoice(null,MagicManaCost.RED,false),
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "$Play Goblin Ruinblaster. When Goblin Ruinblaster enters the battlefield, " +
+                    "if it is was kicked$, destroy target nonbasic land.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final int kickerCount=(Integer)choiceResults[1];
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
@@ -38,24 +41,25 @@ public class Goblin_Ruinblaster {
 				final MagicPermanent permanent=action.getPermanent();
 				final MagicPlayer player=permanent.getController();
 				final MagicEvent triggerEvent=new MagicEvent(permanent,player,
-						MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,new MagicDestroyTargetPicker(false),
-						MagicEvent.NO_DATA,
-	new MagicEventAction() {
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
-			final MagicPermanent land=event.getTarget(game,choiceResults,0);
-			if (land!=null) {
-				game.doAction(new MagicDestroyAction(land));
-			}
-		}
-	},
-    "Destroy target nonbasic land$.");
+					MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,new MagicDestroyTargetPicker(false),
+					MagicEvent.NO_DATA,
+                	new MagicEventAction() {
+                        @Override
+                        public void executeEvent(
+                            final MagicGame game,
+                            final MagicEvent event,
+                            final Object[] data,
+                            final Object[] choiceResults) {
+                            final MagicPermanent land=event.getTarget(game,choiceResults,0);
+                            if (land!=null) {
+                                game.doAction(new MagicDestroyAction(land));
+                            }
+		                }
+	                },
+                    "Destroy target nonbasic land$."
+                );
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
 			}
 		}
 	};
-	
-	
 }
