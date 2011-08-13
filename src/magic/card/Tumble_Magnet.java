@@ -11,12 +11,10 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Tumble_Magnet {
-
-    public static final MagicPermanentActivation V2730 =new MagicPermanentActivation(            "Tumble Magnet",
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "Tap") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
@@ -24,7 +22,6 @@ public class Tumble_Magnet {
 				new MagicTapEvent(permanent),
 				new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -36,7 +33,6 @@ public class Tumble_Magnet {
                     this,
                     "Tap target artifact or creature$.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -50,19 +46,24 @@ public class Tumble_Magnet {
 		}
 	};
 
-    public static final MagicTrigger V10325 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Tumble Magnet") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{permanent},this,
-					"Tumble Magnet enters the battlefield with three charge counters on it.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
+                    "Tumble Magnet enters the battlefield with three charge counters on it.");
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,3,false));
 		}
 
@@ -71,5 +72,4 @@ public class Tumble_Magnet {
 			return false;
 		}
     };
-    
 }

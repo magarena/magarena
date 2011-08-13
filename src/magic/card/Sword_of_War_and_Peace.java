@@ -9,26 +9,30 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Sword_of_War_and_Peace {
-
-    public static final MagicTrigger V9824 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of War and Peace") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
 				final MagicTarget targetPlayer=damage.getTarget();
-				return new MagicEvent(permanent,player,new Object[]{permanent,player,targetPlayer},this,
-					"Sword of War and Peace deals damage to "+targetPlayer.getName()+" equal to the number of cards in his or her hand and "+
-					"you gain 1 life for each card in your hand.");
+				return new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent,player,targetPlayer},
+                        this,
+                        "Sword of War and Peace deals damage to " + targetPlayer.getName() + 
+                        " equal to the number of cards in his or her hand and "+
+                        "you gain 1 life for each card in your hand.");
 			}
 			return null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicPlayer targetPlayer=(MagicPlayer)data[2];
 			final int amount1=targetPlayer.getHand().size();
 			if (amount1>0) {
@@ -42,5 +46,4 @@ public class Sword_of_War_and_Peace {
 			}
 		}
     };
-    
 }

@@ -12,14 +12,12 @@ public class MagicDealDamageAction extends MagicAction {
 	private Integer oldPrevent;
 	
 	public MagicDealDamageAction(final MagicDamage damage) {
-	
 		this.damage=damage;
 		oldDamage=null;
 		oldPrevent=null;
 	}
 
 	private int preventDamage(final MagicGame game,int amount) {
-
 		// Damage is not preventable.
 		if (damage.isUnpreventable()) {
 			return amount;
@@ -48,7 +46,6 @@ public class MagicDealDamageAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		game.executeTrigger(MagicTriggerType.IfDamageWouldBeDealt,damage);
 		damage.setDealtAmount(0);
 		int dealtAmount=damage.getAmount();

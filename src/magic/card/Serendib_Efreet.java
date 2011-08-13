@@ -8,25 +8,30 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Serendib_Efreet {
-
-    public static final MagicTrigger V8699 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Serendib Efreet") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicPlayer player=permanent.getController();
+            MagicEvent e = null;
 			if (player==data) {
-				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"Serendib Efreet deals 1 damage to you.");
+				e = new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent,player},
+                        this,
+                        "Serendib Efreet deals 1 damage to you.");
 			}
-			return null;
+			return e;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
 			game.doAction(new MagicDealDamageAction(damage));
 		}
     };
-    
 }

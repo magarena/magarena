@@ -13,8 +13,7 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Unquestioned_Authority {
-
-	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
+	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
             MagicTargetChoice.POS_TARGET_CREATURE,
             MagicUnblockableTargetPicker.getInstance());
 
@@ -25,7 +24,12 @@ public class Unquestioned_Authority {
                 final MagicPermanent permanent,
                 final Object data) {
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw a card.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "You draw a card.");
 		}
 		@Override
 		public void executeEvent(
