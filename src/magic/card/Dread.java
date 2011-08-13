@@ -11,30 +11,31 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Dread {
-
-    public static final MagicTrigger V7174 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Dread") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
 			final MagicPlayer player=permanent.getController();
 			final MagicDamage damage=(MagicDamage)data;
-			if (damage.getTarget()==player&&damage.getSource().isPermanent()) {
-				final MagicPermanent source=(MagicPermanent)damage.getSource();
-				if (source.isCreature()) {
-					return new MagicEvent(permanent,player,new Object[]{source},this,"Destroy "+source.getName()+".");
-				}
-			}
-			return null;
+            final MagicPermanent source=(MagicPermanent)damage.getSource();
+			return (damage.getTarget()==player&&damage.getSource().isPermanent()&&source.isCreature()) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{source},
+                        this,
+                        "Destroy "+source.getName()+"."):
+                null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
 		}
     };
     
-    public static final MagicTrigger V7197 =new MagicFromGraveyardToLibraryTrigger("Dread");
-
+    public static final MagicTrigger T2 = new MagicFromGraveyardToLibraryTrigger();
 }

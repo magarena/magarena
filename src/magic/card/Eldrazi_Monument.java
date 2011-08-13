@@ -12,22 +12,26 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Eldrazi_Monument {
-
-    public static final MagicTrigger V10300 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Eldrazi Monument") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
 			final MagicPlayer player=permanent.getController();
-			if (player==data) {
-				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,"Sacrifice a creature. If you can't, sacrifice Eldrazi Monument.");
-			}
-			return null;
+			return (player==data) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent,player},
+                        this,
+                        "Sacrifice a creature. If you can't, sacrifice Eldrazi Monument."):
+                null;
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicPlayer player=(MagicPlayer)data[1];
 			if (player.controlsPermanentWithType(MagicType.Creature)) {
@@ -37,5 +41,4 @@ public class Eldrazi_Monument {
 			}			
 		}
     };
-    
 }
