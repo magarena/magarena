@@ -15,20 +15,25 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Douse_in_Gloom {
-
-	public static final MagicSpellCardEvent V3708 =new MagicSpellCardEvent("Douse in Gloom") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_CREATURE,new MagicDamageTargetPicker(2),
-				new Object[]{cardOnStack,player},this,"Douse in Gloom deals 2 damage to target creature$ and you gain 2 life.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicDamageTargetPicker(2),
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "Douse in Gloom deals 2 damage to target creature$ and you gain 2 life.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));			
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
@@ -39,5 +44,4 @@ public class Douse_in_Gloom {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],2));
 		}
 	};
-	
 }

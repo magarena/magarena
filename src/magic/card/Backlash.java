@@ -14,20 +14,23 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTapTargetPicker;
 
 public class Backlash {
-
-	public static final MagicSpellCardEvent V3365 =new MagicSpellCardEvent("Backlash") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),
-				MagicTargetChoice.NEG_TARGET_UNTAPPED_CREATURE,new MagicTapTargetPicker(true,false),new Object[]{cardOnStack},this,
-				"Tap target untapped creature$. That creature deals damage equal to its power to its controller.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.NEG_TARGET_UNTAPPED_CREATURE,
+                    new MagicTapTargetPicker(true,false),new Object[]{cardOnStack},
+                    this,
+                    "Tap target untapped creature$. That creature deals damage equal to its power to its controller.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
@@ -37,5 +40,4 @@ public class Backlash {
 			}
 		}
 	};
-	
 }

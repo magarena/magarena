@@ -9,10 +9,6 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
     
     public MagicSpellCardEvent() {}
 
-    public MagicSpellCardEvent(final String name) {
-	    cardIndex = CardDefinitions.getInstance().getCard(name).getIndex();
-	}
-
     public void setCardIndex(final int cardIndex) {
         this.cardIndex = cardIndex;
     }

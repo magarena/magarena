@@ -21,25 +21,24 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 		this.targetPicker=targetPicker;
 	}
 	
-	public MagicPlayAuraEvent(
-            final String name,
-            final MagicTargetChoice targetChoice,
-            final MagicTargetPicker targetPicker) {
-		super(name);
-		this.targetChoice=targetChoice;
-		this.targetPicker=targetPicker;
-	}
-	
 	@Override
 	public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-
-		return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),targetChoice,targetPicker,new Object[]{cardOnStack},this,
-			"Enchant "+targetChoice.getTargetDescription()+"$ with "+cardOnStack.getName()+".");
+		return new MagicEvent(
+                cardOnStack.getCard(),
+                cardOnStack.getController(),
+                targetChoice,
+                targetPicker,
+                new Object[]{cardOnStack},
+                this,
+                "Enchant "+targetChoice.getTargetDescription()+"$ with "+cardOnStack.getName()+".");
 	}
 
 	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+	public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choiceResults) {
 		final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 		final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 		if (creature!=null) {

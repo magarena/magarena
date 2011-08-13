@@ -13,20 +13,24 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Blightning {
-
-	public static final MagicSpellCardEvent V5245 =new MagicSpellCardEvent("Blightning") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_PLAYER,
-				new Object[]{cardOnStack},this,"Blightning deals 3 damage to target player$. That player discards two cards.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    new Object[]{cardOnStack},
+                    this,
+                    "Blightning deals 3 damage to target player$. That player discards two cards.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final MagicPlayer player=event.getTarget(game,choiceResults,0);
@@ -37,5 +41,4 @@ public class Blightning {
 			}
 		}
 	};
-
 }

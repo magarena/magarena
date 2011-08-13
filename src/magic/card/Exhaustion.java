@@ -12,19 +12,23 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Exhaustion {
-
-	public static final MagicSpellCardEvent V5518 =new MagicSpellCardEvent("Exhaustion") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.TARGET_OPPONENT,
-				new Object[]{cardOnStack},this,"Creatures and lands target opponent$ controls don't untap during that opponent's next untap step.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.TARGET_OPPONENT,
+                    new Object[]{cardOnStack},
+                    this,
+                    "Creatures and lands target opponent$ controls don't untap during that opponent's next untap step.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPlayer player=event.getTarget(game,choiceResults,0);
 			if (player!=null) {
@@ -32,5 +36,4 @@ public class Exhaustion {
 			}
 		}
 	};
-	
 }

@@ -6,7 +6,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Dust_Corona {
-
-	public static final MagicSpellCardEvent V6488 =new MagicPlayAuraEvent("Dust Corona",
-			MagicTargetChoice.POS_TARGET_CREATURE,MagicPumpTargetPicker.getInstance());
+	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
+			MagicTargetChoice.POS_TARGET_CREATURE,
+            MagicPumpTargetPicker.getInstance());
 }
