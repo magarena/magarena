@@ -10,17 +10,14 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Visara_the_Dreadful {
 
-	public static final MagicPermanentActivation V2176 =new MagicPermanentActivation(            "Visara the Dreadful",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
-            "Destroy"
-            ) {
-
+            "Destroy") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -32,14 +29,12 @@ public class Visara_the_Dreadful {
                     this,
                     "Destroy target creature$. It can't be regenerated.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-
 			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
 			if (creature!=null) {
 				game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
@@ -47,5 +42,4 @@ public class Visara_the_Dreadful {
 			}
 		}
 	};
-	
 }

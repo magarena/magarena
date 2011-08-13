@@ -11,24 +11,26 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Dragonmaster_Outcast {
-
-    public static final MagicTrigger V7135 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Dragonmaster Outcast") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
 			final MagicPlayer player=permanent.getController();
-			if (player==data&&player.getNrOfPermanentsWithType(MagicType.Land)>=6) {
-				return new MagicEvent(permanent,player,new Object[]{player},this,"You put a 5/5 red Dragon creature token with flying onto the battlefield.");
-			}
-			return null;
+			return (player==data&&player.getNrOfPermanentsWithType(MagicType.Land)>=6) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{player},
+                        this,
+                        player.getName() + " put a 5/5 red Dragon creature token with flying onto the battlefield."):
+                null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.DRAGON5_TOKEN_CARD));
 		}
     };
-    
 }

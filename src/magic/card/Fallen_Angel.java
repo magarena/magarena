@@ -10,27 +10,33 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 
 public class Fallen_Angel {
-
-	public static final MagicPermanentActivation V804 =new MagicPermanentActivation(			"Fallen Angel",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.TWO_CREATURES_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
-            "Pump"
-            ) {
-
+            "Pump") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicSacrificePermanentEvent(source,source.getController(),MagicTargetChoice.SACRIFICE_CREATURE)};
+			return new MagicEvent[]{new MagicSacrificePermanentEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.SACRIFICE_CREATURE)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(source,source.getController(),new Object[]{source},this,"Fallen Angel gets +2/+1 until end of turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    new Object[]{source},
+                    this,
+                    source.getName() + " gets +2/+1 until end of turn.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,1));
 		}
 	};
-	
 }
