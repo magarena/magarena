@@ -12,19 +12,24 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Naturalize {
-
-	public static final MagicSpellCardEvent V4239 =new MagicSpellCardEvent("Naturalize") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-				new MagicDestroyTargetPicker(false),new Object[]{cardOnStack},this,"Destroy target artifact or enchantment$.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                    new MagicDestroyTargetPicker(false),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Destroy target artifact or enchantment$.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
@@ -32,5 +37,4 @@ public class Naturalize {
 			}
 		}
 	};
-	
 }

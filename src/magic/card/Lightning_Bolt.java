@@ -13,9 +13,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Lightning_Bolt {
-
-	public static final MagicSpellCardEvent V4075 =new MagicSpellCardEvent("Lightning Bolt") {
-
+	public static final MagicSpellCardEvent V4075 =new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -27,7 +25,6 @@ public class Lightning_Bolt {
                     this,
                     "Lightning Bolt deals 3 damage to target creature or player$.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -43,5 +40,4 @@ public class Lightning_Bolt {
 			}
 		}
 	};
-
 }

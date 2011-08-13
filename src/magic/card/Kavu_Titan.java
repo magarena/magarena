@@ -9,21 +9,25 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.variable.MagicDummyLocalVariable;
 
 public class Kavu_Titan {
-
-	public static final MagicSpellCardEvent V6313 =new MagicSpellCardEvent("Kavu Titan") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,new MagicKickerChoice(null,MagicManaCost.TWO_GREEN,false),
-				new Object[]{cardOnStack,player},this,
-				"$Play Kavu Titan. If Kavu Titan was kicked$, it enters the battlefield with three +1/+1 counters on it and has trample.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    new MagicKickerChoice(null,MagicManaCost.TWO_GREEN,false),
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "$Play Kavu Titan. If Kavu Titan was kicked$, " + 
+                    "it enters the battlefield with three +1/+1 counters on it and has trample.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final boolean kicked=((Integer)choiceResults[1])>0;
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
@@ -32,16 +36,17 @@ public class Kavu_Titan {
 			if (kicked) {
 				permanent.changeCounters(MagicCounterType.PlusOne,3);
 				permanent.addLocalVariable(
-	new MagicDummyLocalVariable() {
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return flags|MagicAbility.Trample.getMask();
-		}
-	}
+                    new MagicDummyLocalVariable() {
+                        @Override
+                        public long getAbilityFlags(
+                            final MagicGame game,
+                            final MagicPermanent permanent,
+                            final long flags) {
+                            return flags|MagicAbility.Trample.getMask();
+                        }
+                    }
                 );
 			}
 		}
 	};
-	
-	
 }
