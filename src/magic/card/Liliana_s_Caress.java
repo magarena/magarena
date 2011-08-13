@@ -10,23 +10,27 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Liliana_s_Caress {
-
-    public static final MagicTrigger V7867 =new MagicTrigger(MagicTriggerType.WhenDiscarded,"Liliana's Caress") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDiscarded) {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
     		final MagicPlayer otherController = ((MagicCard)data).getOwner();
     		final MagicPlayer player = permanent.getController();
-    		if (otherController != player) {		
-    			return new MagicEvent(permanent,player,new Object[]{otherController},this,"Your opponent loses 2 life.");
-    		}
-    		return null;
+    		return (otherController != player) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{otherController},
+                        this,
+                        otherController.getName() + " loses 2 life."):
+                null;
     	}
-
     	@Override
-    	public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+    	public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
     		game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-2));
     	}
     };
-    	    
 }

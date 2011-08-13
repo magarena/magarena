@@ -10,45 +10,53 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Archon_of_Redemption {
-
-    public static final MagicTrigger V6745 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Archon of Redemption") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{player,permanent},this,"You gain life equal to Archon of Redemption's power.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player,permanent},
+                    this,
+                    player.getName() + " gain life equal to " + permanent.getName() + "'s power.");
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[1];
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower(game)));
 		}		
     };
 
-    public static final MagicTrigger V6762 =new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay,"Archon of Redemption") {
-
+    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
 			final MagicPermanent otherPermanent=(MagicPermanent)data;
 			final MagicPlayer player=permanent.getController();
-			if (otherPermanent!=permanent&&otherPermanent.getController()==player&&otherPermanent.isCreature()&&
-				otherPermanent.hasAbility(game,MagicAbility.Flying)) {
-				return new MagicEvent(permanent,player,new Object[]{player,otherPermanent},this,
-					"You gain life equal to the power of "+otherPermanent.getName()+'.');
-			}
-			return null;
+			return (otherPermanent!=permanent && 
+                    otherPermanent.getController()==player && 
+                    otherPermanent.isCreature() &&
+                    otherPermanent.hasAbility(game,MagicAbility.Flying)) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{player,otherPermanent},
+                        this,
+                        player.getName() + " gain life equal to the power of "+otherPermanent.getName()+'.'):
+                null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[1];
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower(game)));
 		}		
     };
-    
 }

@@ -7,24 +7,24 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 
 public class Arcanis_the_Omnipotent {
-
-	public static final MagicPermanentActivation V139 = new MagicPermanentActivation("Arcanis the Omnipotent",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Token),
-            "Draw"
-            ) {
-
+            "Draw") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,new Object[]{player},this,"You draw three cards.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "You draw three cards.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -35,17 +35,14 @@ public class Arcanis_the_Omnipotent {
 		}
 	};
 	
-	public static final MagicPermanentActivation V166 =new MagicPermanentActivation(            "Arcanis the Omnipotent",
+	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.TWO_BLUE_BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
-            "Return"
-            ) {
-
+            "Return") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_BLUE_BLUE)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -53,9 +50,8 @@ public class Arcanis_the_Omnipotent {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Return Arcanis the Omnipotent to its owner's hand.");
+                    "Return " + source.getName() + " to its owner's hand.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -65,5 +61,4 @@ public class Arcanis_the_Omnipotent {
 			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
 		}
 	};
-	
 }
