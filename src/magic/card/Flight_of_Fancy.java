@@ -13,23 +13,28 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Flight_of_Fancy {
+	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
+			MagicTargetChoice.POS_TARGET_CREATURE,
+            MagicFlyingTargetPicker.getInstance());
 
-	public static final MagicSpellCardEvent V6498 =new MagicPlayAuraEvent("Flight of Fancy",
-			MagicTargetChoice.POS_TARGET_CREATURE,MagicFlyingTargetPicker.getInstance());
-    public static final MagicTrigger V10530 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Flight of Fancy") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw two cards.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "You draw two cards.");
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[0],2));
 		}		
     };
-    
 }

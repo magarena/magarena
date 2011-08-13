@@ -11,21 +11,27 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Beacon_of_Destruction {
-
-	public static final MagicSpellCardEvent V3388 =new MagicSpellCardEvent("Beacon of Destruction") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
 			final MagicCard card=cardOnStack.getCard();
-			return new MagicEvent(card,player,MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(5),new Object[]{card},this,
-				"Beacon of Destruction deals 5 damage to target creature or player$. Shuffle Beacon of Destruction into its owner's library.");
+			return new MagicEvent(
+                    card,
+                    player,
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(5),
+                    new Object[]{card},
+                    this,
+                    "Beacon of Destruction deals 5 damage to target creature or player$. " + 
+                    "Shuffle Beacon of Destruction into its owner's library.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCard card=(MagicCard)data[0];
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
@@ -35,5 +41,4 @@ public class Beacon_of_Destruction {
 			game.doAction(new MagicShuffleIntoLibraryAction(card));
 		}
 	};
-	
 }

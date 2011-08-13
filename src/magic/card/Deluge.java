@@ -14,26 +14,29 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Deluge {
-
-	public static final MagicSpellCardEvent V3573 =new MagicSpellCardEvent("Deluge") {
-
+	public static final MagicSpellCardEvent V3573 =new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),new Object[]{cardOnStack},this,"Tap all creatures without flying.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Tap all creatures without flying.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final Collection<MagicTarget> targets=game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+			final Collection<MagicTarget> targets=
+                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
 			for (final MagicTarget target : targets) {
-				
 				game.doAction(new MagicTapAction((MagicPermanent)target,true));
 			}
 		}
 	};
-
 }

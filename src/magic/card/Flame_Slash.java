@@ -13,19 +13,24 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Flame_Slash {
-
-	public static final MagicSpellCardEvent V5538 =new MagicSpellCardEvent("Flame Slash") {
-
+	public static final MagicSpellCardEvent V5538 =new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
-			return new MagicEvent(cardOnStack.getCard(),cardOnStack.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,
-				new MagicDamageTargetPicker(4),new Object[]{cardOnStack},this,"Flame Slash deals 4 damage to target creature$.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    cardOnStack.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicDamageTargetPicker(4),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Flame Slash deals 4 damage to target creature$.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
@@ -35,5 +40,4 @@ public class Flame_Slash {
 			}
 		}
 	};
-	
 }

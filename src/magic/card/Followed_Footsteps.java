@@ -13,26 +13,32 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Followed_Footsteps {
+	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
+			MagicTargetChoice.TARGET_CREATURE,
+            MagicCopyTargetPicker.getInstance());
 
-	public static final MagicSpellCardEvent V6500 =new MagicPlayAuraEvent("Followed Footsteps",
-			MagicTargetChoice.TARGET_CREATURE,MagicCopyTargetPicker.getInstance());
-    public static final MagicTrigger V10546 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Followed Footsteps") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-						
 			final MagicPlayer player=permanent.getController();
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (player==data&&enchantedCreature!=null) {
-				return new MagicEvent(permanent,player,new Object[]{permanent,player},this,
-					"You put a token that's a copy of enchanted creature onto the battlefield.");
+			if (player==data && enchantedCreature!=null) {
+				return new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent,player},
+                        this,
+                        "You put a token that's a copy of enchanted creature onto the battlefield.");
 			}
 			return null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
 			if (enchantedCreature!=null) {
@@ -40,5 +46,4 @@ public class Followed_Footsteps {
 			}
 		}		
     };
-    
 }

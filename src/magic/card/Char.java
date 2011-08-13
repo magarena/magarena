@@ -11,20 +11,25 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Char {
-
-	public static final MagicSpellCardEvent V3439 =new MagicSpellCardEvent("Char") {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			
 			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(cardOnStack.getCard(),player,MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(4),
-				new Object[]{cardOnStack,player},this,"Char deals 4 damage to target creature or player$ and 2 damage to you.");
+			return new MagicEvent(
+                    cardOnStack.getCard(),
+                    player,
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(4),
+                    new Object[]{cardOnStack,player},
+                    this,
+                    "Char deals 4 damage to target creature or player$ and 2 damage to you.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final MagicSource source=cardOnStack.getCard();
@@ -37,5 +42,4 @@ public class Char {
 			}
 		}
 	};
-	
 }
