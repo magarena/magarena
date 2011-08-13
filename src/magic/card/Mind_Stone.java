@@ -8,8 +8,7 @@ import magic.model.event.*;
 import java.util.Arrays;
 
 public class Mind_Stone {
-
-	public static final MagicPermanentActivation V2663 =new MagicPermanentActivation(            "Mind Stone",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO.getCondition()},
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
@@ -26,9 +25,13 @@ public class Mind_Stone {
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,new Object[]{player},this,"Draw a card.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "Draw a card.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -39,5 +42,5 @@ public class Mind_Stone {
 		}
 	};
 	
-	public static final MagicManaActivation V1 = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
+	public static final MagicManaActivation M = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
 }

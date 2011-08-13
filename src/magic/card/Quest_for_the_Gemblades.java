@@ -11,19 +11,16 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Quest_for_the_Gemblades {
-
-	public static final MagicPermanentActivation V2390 =new MagicPermanentActivation(			"Quest for the Gemblades",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
 				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1),
 				new MagicSacrificeEvent((MagicPermanent)source)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -35,7 +32,6 @@ public class Quest_for_the_Gemblades {
                     this,
                     "Put four +1/+1 counters on target creature$.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -49,27 +45,34 @@ public class Quest_for_the_Gemblades {
 		}
 	};
 	
-    public static final MagicTrigger V10210 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Quest for the Gemblades") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
 			final MagicPlayer player=permanent.getController();
 			final MagicSource source=damage.getSource();
 			final MagicTarget target=damage.getTarget();
-			if (damage.isCombat()&&source.getController()==player&&source.isPermanent()&&target.isPermanent()&&
-				((MagicPermanent)source).isCreature()&&((MagicPermanent)target).isCreature()) {				
-				return new MagicEvent(permanent,player,new Object[]{permanent},this,"Put a quest counter on Quest for the Gemblades.");			
-			}
-			return null;
+			return (damage.isCombat() && 
+                    source.getController()==player && 
+                    source.isPermanent() && 
+                    target.isPermanent() &&
+                    ((MagicPermanent)source).isCreature() && 
+                    ((MagicPermanent)target).isCreature()) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{permanent},
+                        this,
+                        "Put a quest counter on Quest for the Gemblades."):
+                null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
 		}
     };
-    
 }

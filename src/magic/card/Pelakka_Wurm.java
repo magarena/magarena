@@ -17,7 +17,12 @@ public class Pelakka_Wurm {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{player},this,"You gain 7 life.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "You gain 7 life.");
 		}
 		@Override
 		public void executeEvent(

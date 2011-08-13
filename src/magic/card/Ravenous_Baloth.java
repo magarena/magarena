@@ -7,12 +7,10 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 
 public class Ravenous_Baloth {
-
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CONTROL_BEAST_CONDITION},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Life+4") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicSacrificePermanentEvent(
@@ -20,13 +18,16 @@ public class Ravenous_Baloth {
                     source.getController(),
                     MagicTargetChoice.SACRIFICE_BEAST)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,new Object[]{player},this,"You gain 4 life.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "You gain 4 life.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,

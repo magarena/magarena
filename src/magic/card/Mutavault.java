@@ -11,34 +11,6 @@ import magic.model.variable.MagicLocalVariable;
 import java.util.Arrays;
 
 public class Mutavault {
-    public static final MagicManaActivation TAP = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
-
-	public static final MagicPermanentActivation RAGING_RAVINE=new MagicPermanentActivation(
-			new MagicCondition[]{new MagicArtificialCondition(
-			MagicManaCost.ONE.getCondition(),
-            MagicManaCost.TWO.getCondition())},
-			new MagicActivationHints(MagicTiming.Animate),
-            "Animate") {
-
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
-		}
-
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(source,source.getController(),new Object[]{source},this,
-                    "Mutavault becomes a 2/2 creature with all creature types until end of turn. It's still a land.");
-		}
-
-		@Override
-        public void executeEvent(final MagicGame game,final MagicEvent
-                event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
-			game.doAction(new MagicBecomesCreatureAction(permanent,VAR));
-		}
-	};
-    
     private static final MagicLocalVariable VAR = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -53,6 +25,40 @@ public class Mutavault {
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
             return flags|MagicAbility.Changeling.getMask();
         }
+	};
+
+    public static final MagicManaActivation M = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
+
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+			new MagicCondition[]{new MagicArtificialCondition(
+			MagicManaCost.ONE.getCondition(),
+            MagicManaCost.TWO.getCondition())},
+			new MagicActivationHints(MagicTiming.Animate),
+            "Animate") {
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
+		}
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    new Object[]{source},
+                    this,
+                    source.getName() + " becomes a 2/2 creature with all creature types until end of turn. " + 
+                    "It's still a land.");
+		}
+
+		@Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+			final MagicPermanent permanent=(MagicPermanent)data[0];
+			game.doAction(new MagicBecomesCreatureAction(permanent,VAR));
+		}
 	};
 
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {

@@ -7,29 +7,30 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Rumbling_Slum {
-
-    public static final MagicTrigger V8897 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Rumbling Slum") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
 			final MagicPlayer player=(MagicPlayer)data;
-			if (permanent.getController()==player) {
-				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,"Rumbling Slum deals 1 damage to each player.");
-			}
-			return null;
+			return (permanent.getController()==player) ?
+                new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        new Object[]{permanent},
+                        this,
+                        permanent.getName() + " deals 1 damage to each player."):
+                null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicSource source=(MagicSource)data[0];
 			for (final MagicPlayer player : game.getPlayers()) {
-			
 				final MagicDamage damage=new MagicDamage(source,player,1,false);
 				game.doAction(new MagicDealDamageAction(damage));
 			}
 		}
     };
-    
 }

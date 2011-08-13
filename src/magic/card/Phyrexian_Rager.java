@@ -10,23 +10,26 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Phyrexian_Rager {
-
-    public static final MagicTrigger V8463 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Phyrexian Rager") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
 			final MagicPlayer player=permanent.getController();
-			return new MagicEvent(permanent,player,new Object[]{player},this,"You draw a card and you lose 1 life.");
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player.getName() +  " draw a card and lose 1 life.");
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
 			game.doAction(new MagicDrawAction(player,1));
 			game.doAction(new MagicChangeLifeAction(player,-1));
 		}
     };
-    
 }

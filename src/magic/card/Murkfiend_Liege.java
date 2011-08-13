@@ -14,25 +14,28 @@ import magic.model.trigger.MagicTriggerType;
 import java.util.Collection;
 
 public class Murkfiend_Liege {
-
-    public static final MagicTrigger V8221 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Murkfiend Liege") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
 			final MagicPlayer player=permanent.getController();
-			if (player!=data) {
-				return new MagicEvent(permanent,player,new Object[]{player},this,"Untap all green and/or blue creatures you control.");
-			}
-			return null;
+			return (player!=data) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{player},
+                        this,
+                        "Untap all green and/or blue creatures you control."):
+                null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-			final Collection<MagicTarget> targets=game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+			final Collection<MagicTarget> targets=
+                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
 			for (final MagicTarget target : targets) {
-				
 				final MagicPermanent creature=(MagicPermanent)target;
 				final int colorFlags=creature.getColorFlags();
 				if (creature.isTapped()&&(MagicColor.Blue.hasColor(colorFlags)||MagicColor.Green.hasColor(colorFlags))) {
@@ -40,12 +43,9 @@ public class Murkfiend_Liege {
 				}
 			}
 		}
-
 		@Override
 		public boolean usesStack() {
-
 			return false;
 		}
     };
-    
 }

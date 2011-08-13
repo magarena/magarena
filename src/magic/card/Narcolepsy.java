@@ -20,11 +20,14 @@ public class Narcolepsy {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (enchantedCreature!=null&&!enchantedCreature.isTapped()) {
-				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
-					"If "+enchantedCreature.getName()+" is untapped, tap it.");
-			}
-			return null;
+            return (enchantedCreature!=null&&!enchantedCreature.isTapped()) ?
+                new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        new Object[]{permanent},
+                        this,
+                        "If "+enchantedCreature.getName()+" is untapped, tap it.") :
+                null;
 		}
 		@Override
 		public void executeEvent(

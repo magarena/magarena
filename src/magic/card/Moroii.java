@@ -9,24 +9,27 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Moroii {
-
-    public static final MagicTrigger V8140 =new MagicTrigger(MagicTriggerType.AtUpkeep,"Moroii") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicPlayer player=permanent.getController();
-			if (player==data) {
-				return new MagicEvent(permanent,player,new Object[]{player},this,"You lose 1 life.");
-			}
-			return null;
+			return (player==data) ?
+				new MagicEvent(
+                        permanent,
+                        player,
+                        new Object[]{player},
+                        this,
+                        "You lose 1 life.") :
+                null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-1));
 		}
     };
-
 }

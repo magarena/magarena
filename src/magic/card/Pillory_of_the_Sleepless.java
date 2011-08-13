@@ -20,14 +20,16 @@ public class Pillory_of_the_Sleepless {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent enchanted=permanent.getEnchantedCreature();
-			if (enchanted!=null) {
-				final MagicPlayer player=enchanted.getController();
-				if (player==data) {
-					return new MagicEvent(enchanted,player,new Object[]{player},this,"You lose 1 life.");
-				}
-			}
-			return null;
+			final MagicPermanent enchanted = permanent.getEnchantedCreature();
+		    final MagicPlayer player = (enchanted != null) ? enchanted.getController() : null;
+			return (player != null && player == data) ?
+				new MagicEvent(
+                        enchanted,
+                        player,
+                        new Object[]{player},
+                        this,
+                        "You lose 1 life.") :
+                null;
 		}
 		@Override
 		public void executeEvent(
