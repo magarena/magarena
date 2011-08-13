@@ -9,27 +9,29 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Wall_of_Frost {
-
-    public static final MagicTrigger V9399 =new MagicTrigger(MagicTriggerType.WhenBlocks,"Wall of Frost") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBlocks) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			if (permanent==data) {
 				final MagicPermanent blocked=permanent.getBlockedCreature();
 				if (blocked!=null) {
-					return new MagicEvent(permanent,permanent.getController(),new Object[]{blocked},this,
-						blocked.getName()+" doesn't untap during its controller's next untap step.");
+					return new MagicEvent(
+                            permanent,
+                            permanent.getController(),
+                            new Object[]{blocked},
+                            this,
+                            blocked.getName()+" doesn't untap during its controller's next untap step.");
 				}
 			}
 			return null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-		
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntap,true));
 		}
     };
-
 }

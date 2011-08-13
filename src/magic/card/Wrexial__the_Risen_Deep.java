@@ -12,29 +12,32 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Wrexial__the_Risen_Deep {
-
-    public static final MagicTrigger V9473 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Wrexial, the Risen Deep") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
 			final MagicDamage damage=(MagicDamage)data;
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,
-	new MagicMayChoice(
-			"You may cast target instant or sorcery card from your opponent's graveyard.",
-			MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD),
-    MagicGraveyardTargetPicker.getInstance(),new Object[]{player},this,
-					"You may$ cast target instant or sorcery card$ from your opponent's graveyard without paying its mana cost. "+
-					"If that card would be put into a graveyard this turn, exile it instead.");
+				return new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        "You may cast target instant or sorcery card from your opponent's graveyard.",
+                        MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD),
+                    MagicGraveyardTargetPicker.getInstance(),
+                    new Object[]{player},
+                    this,
+                "You may$ cast target instant or sorcery card$ from your opponent's graveyard without paying its mana cost. "+
+                "If that card would be put into a graveyard this turn, exile it instead.");
 			}
 			return null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				final MagicCard card=event.getTarget(game,choiceResults,1);
 				if (card!=null) {
@@ -46,5 +49,4 @@ public class Wrexial__the_Risen_Deep {
 			}
 		}
     };
-
 }
