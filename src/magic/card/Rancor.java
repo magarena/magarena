@@ -16,20 +16,24 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Rancor {
-	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,MagicTrampleTargetPicker.getInstance());
+	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
+			MagicTargetChoice.POS_TARGET_CREATURE,
+            MagicTrampleTargetPicker.getInstance());
 
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard,"Rancor") {
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-			if (MagicLocationType.Play==triggerData.fromLocation) {
-				final MagicCard card=triggerData.card;
-				return new MagicEvent(card,card.getController(),new Object[]{card},this,"Return Rancor to its owner's hand.");
-			}
-			return null;
+            final MagicCard card=triggerData.card;
+			return (MagicLocationType.Play==triggerData.fromLocation) ?
+                new MagicEvent(
+                        card,
+                        card.getController(),
+                        new Object[]{card},
+                        this,
+                        "Return Rancor to its owner's hand.") :
+                null;
 		}
-    	
 		@Override
 		public void executeEvent(
                 final MagicGame game,

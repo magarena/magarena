@@ -15,17 +15,15 @@ public class Specter_s_Shroud {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicDamage damage=(MagicDamage)data;
 			final MagicPermanent equippedCreature=permanent.getEquippedCreature();
-            MagicEvent event = null;
-			if (damage.getSource()==equippedCreature&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				final MagicPlayer opponent=(MagicPlayer)damage.getTarget();
-				event = new MagicEvent(
+            final MagicPlayer opponent=(MagicPlayer)damage.getTarget();
+			return (damage.getSource()==equippedCreature&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+				new MagicEvent(
                         permanent,
                         permanent.getController(),
                         new Object[]{permanent,opponent},
                         this,
-                        "Your opponent discards a card.");
-			}
-			return event;
+                        "Your opponent discards a card.") :
+                null;
 		}
 		@Override
 		public void executeEvent(

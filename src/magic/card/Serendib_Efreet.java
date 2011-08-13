@@ -12,18 +12,15 @@ public class Serendib_Efreet {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicPlayer player=permanent.getController();
-            MagicEvent e = null;
-			if (player==data) {
-				e = new MagicEvent(
+			return (player==data) ?
+                new MagicEvent(
                         permanent,
                         player,
                         new Object[]{permanent,player},
                         this,
-                        "Serendib Efreet deals 1 damage to you.");
-			}
-			return e;
+                        "Serendib Efreet deals 1 damage to you.") :
+                null;
 		}
-		
 		@Override
 		public void executeEvent(
                 final MagicGame game,

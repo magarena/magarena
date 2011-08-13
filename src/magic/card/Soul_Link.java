@@ -24,18 +24,16 @@ public class Soul_Link {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicDamage damage=(MagicDamage)data;
-            MagicEvent e = null;
-			if (damage.getSource()==permanent.getEnchantedCreature()) {
-				final MagicPlayer player=permanent.getController();
-				final int amount=damage.getDealtAmount();
-				e = new MagicEvent(
+            final MagicPlayer player=permanent.getController();
+            final int amount=damage.getDealtAmount();
+			return (damage.getSource()==permanent.getEnchantedCreature()) ?
+                new MagicEvent(
                         permanent,
                         player,
                         new Object[]{player,amount},
                         this,
-                        "You gain "+amount+" life.");
-			}
-			return e;
+                        "You gain "+amount+" life.") :
+                null;
 		}
 		@Override
 		public void executeEvent(
@@ -52,17 +50,15 @@ public class Soul_Link {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicDamage damage=(MagicDamage)data;
-            MagicEvent e = null;
-			if (damage.getTarget()==permanent.getEnchantedCreature()) {
-				final MagicPlayer player=permanent.getController();
-				final int amount=damage.getDealtAmount();
-				e = new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player,amount},this,
-                        "You gain "+amount+" life.");
-			}
-			return e;
+            final MagicPlayer player=permanent.getController();
+            final int amount=damage.getDealtAmount();
+			return (damage.getTarget()==permanent.getEnchantedCreature()) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player,amount},this,
+                    "You gain "+amount+" life.") :
+                null;
 		}
 		@Override
 		public void executeEvent(

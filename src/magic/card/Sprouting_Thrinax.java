@@ -16,17 +16,15 @@ public class Sprouting_Thrinax {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-            MagicEvent event = null;
-			if (MagicLocationType.Play==triggerData.fromLocation) {
-				final MagicPlayer player=permanent.getController();
-				event = new MagicEvent(
+            final MagicPlayer player=permanent.getController();
+			return (MagicLocationType.Play==triggerData.fromLocation) ?
+				new MagicEvent(
                         permanent,
                         player,
                         new Object[]{player},
                         this,
-                        "You put three 1/1 green Saproling creature tokens onto the battlefield.");
-			}
-			return event;
+                        "You put three 1/1 green Saproling creature tokens onto the battlefield.") :
+                null;
 		}
 		@Override
 		public void executeEvent(

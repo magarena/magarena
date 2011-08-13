@@ -12,21 +12,16 @@ public class Septic_Rats {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			MagicEvent e = null;
-            if (permanent==data) {
-				final MagicPlayer player=permanent.getController();
-				if (game.getOpponent(player).getPoison()>0) {
-					e = new MagicEvent(
+            final MagicPlayer player=permanent.getController();
+            return (permanent==data && game.getOpponent(player).getPoison()>0) ?
+					new MagicEvent(
                             permanent,
                             player,
                             new Object[]{permanent},
                             this,
-                            "Septic Rats gets +1/+1 until end of turn.");
-				}
-			}
-			return e;
+                            "Septic Rats gets +1/+1 until end of turn.") :
+                    null;
 		}
-		
 		@Override
 		public void executeEvent(
                 final MagicGame game,

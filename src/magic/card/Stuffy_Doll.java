@@ -42,18 +42,16 @@ public class Stuffy_Doll {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicDamage damage=(MagicDamage)data;
-            MagicEvent e = null;
-			if (damage.getTarget()==permanent) {
-				final MagicPlayer player=permanent.getController();
-				final int amount=damage.getDealtAmount();
-				e = new MagicEvent(
+            final MagicPlayer player=permanent.getController();
+            final int amount=damage.getDealtAmount();
+            return (damage.getTarget()==permanent) ?
+				new MagicEvent(
                         permanent,
                         player,
                         new Object[]{permanent,game.getOpponent(player),amount},
                         this,
-                        "Stuffy Doll deals "+amount+" damage to your opponent.");
-			}
-            return e;
+                        "Stuffy Doll deals "+amount+" damage to your opponent.") :
+                null;
 		}
 		@Override
 		public void executeEvent(

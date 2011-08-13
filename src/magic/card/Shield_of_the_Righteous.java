@@ -12,22 +12,17 @@ public class Shield_of_the_Righteous {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBlocks) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent equippedCreature=permanent.getEquippedCreature();
-            MagicEvent e = null;
-			if (equippedCreature == data && 
-                equippedCreature != null &&
-                equippedCreature.getBlockedCreature() != null) {
-				final MagicPermanent blocked = equippedCreature.getBlockedCreature();
-		        e = new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{blocked},
-                            this,
-							blocked.getName() + " doesn't untap during its controller's next untap step.");
-			}
-			return null;
+			final MagicPermanent equippedCreature = permanent.getEquippedCreature();
+			final MagicPermanent blocked = (equippedCreature != null) ? equippedCreature.getBlockedCreature() : null;
+			return (equippedCreature == data && blocked != null) ?
+		        new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{blocked},
+                    this,
+                    blocked.getName() + " doesn't untap during its controller's next untap step.") :
+                null;
 		}
-		
 		@Override
 		public void executeEvent(
                 final MagicGame game,

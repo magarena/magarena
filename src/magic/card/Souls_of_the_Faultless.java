@@ -14,19 +14,18 @@ public class Souls_of_the_Faultless {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicDamage damage=(MagicDamage)data;
-            MagicEvent e = null;
-			if (damage.getTarget()==permanent&&damage.isCombat()) {
-				final MagicPlayer player=permanent.getController();
-				final MagicPlayer opponent=damage.getSource().getController();
-				final int amount=damage.getDealtAmount();
-				e = new MagicEvent(
+            final MagicPlayer player=permanent.getController();
+            final MagicPlayer opponent=damage.getSource().getController();
+            final int amount=damage.getDealtAmount();
+			return (damage.getTarget()==permanent && 
+                    damage.isCombat()) ?
+                new MagicEvent(
                         permanent,
                         player,
                         new Object[]{player,opponent,amount},
                         this,
-                        "You gain "+amount+" life and attacking player loses "+amount+" life.");
-			}
-			return e;
+                        "You gain "+amount+" life and attacking player loses "+amount+" life.") :
+                null;
 		}
 		
 		@Override

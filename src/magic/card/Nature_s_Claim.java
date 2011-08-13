@@ -14,8 +14,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Nature_s_Claim {
-	public static final MagicSpellCardEvent e = new MagicSpellCardEvent() {
-
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -27,9 +26,12 @@ public class Nature_s_Claim {
                     this,
                     "Destroy target artifact or enchantment$. Its controller gains 4 life.");
 		}
-
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPermanent permanent = event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
