@@ -9,8 +9,8 @@ public class MagicGainActivation extends MagicPermanentActivation {
 	private final MagicManaCost cost;
 	private final MagicAbility ability;
 	
-	public MagicGainActivation(final String name,final MagicManaCost cost,final MagicAbility ability,final MagicActivationHints hints) {
-		super(name,new MagicCondition[]{cost.getCondition()},hints);
+	public MagicGainActivation(final MagicManaCost cost,final MagicAbility ability,final MagicActivationHints hints) {
+		super(new MagicCondition[]{cost.getCondition()},hints,"Gain");
 		this.cost=cost;
 		this.ability=ability;
 	}
@@ -27,7 +27,7 @@ public class MagicGainActivation extends MagicPermanentActivation {
                 source.getController(),
                 new Object[]{source},
                 this,
-                source.getName()+" gains "+ability+" until end of turn.");
+                source + " gains "+ability+" until end of turn.");
 	}
 
 	@Override

@@ -11,8 +11,8 @@ public class MagicPumpActivation extends MagicPermanentActivation {
 	private final int power;
 	private final int toughness;
 	
-	public MagicPumpActivation(final String name,final MagicManaCost cost,final int power,final int toughness) {
-		super(name,new MagicCondition[]{cost.getCondition()},ACTIVATION_HINTS,"Pump");
+	public MagicPumpActivation(final MagicManaCost cost,final int power,final int toughness) {
+		super(new MagicCondition[]{cost.getCondition()},ACTIVATION_HINTS,"Pump");
 		this.cost=cost;
 		this.power=power;
 		this.toughness=toughness;
@@ -25,8 +25,12 @@ public class MagicPumpActivation extends MagicPermanentActivation {
 	
 	@Override
 	public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-		return new MagicEvent(source,source.getController(),new Object[]{source},this,
-			source.getName()+" gets +"+power+"/+"+toughness+" until end of turn.");
+		return new MagicEvent(
+                source,
+                source.getController(),
+                new Object[]{source},
+                this,
+                source+" gets +"+power+"/+"+toughness+" until end of turn.");
 	}
 
 	@Override
