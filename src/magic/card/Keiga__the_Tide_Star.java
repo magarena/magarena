@@ -17,14 +17,13 @@ public class Keiga__the_Tide_Star {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-            final MagicPlayer player=permanent.getController();
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
-                        player,
+                        permanent.getController(),
                         MagicTargetChoice.TARGET_CREATURE,
                         MagicExileTargetPicker.getInstance(),
-                        new Object[]{player},
+                        new Object[]{permanent.getController()},
                         this,
                         "Gain control of target creature$."):
                 null;

@@ -15,12 +15,11 @@ public class Kokusho__the_Evening_Star {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-            final MagicPlayer player=permanent.getController();
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{player},
+                        permanent.getController(),
+                        new Object[]{permanent.getController()},
                         this,
                         "Your opponent loses 5 life. You gain 5 life."):
                 null;

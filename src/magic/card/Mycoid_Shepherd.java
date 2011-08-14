@@ -15,14 +15,13 @@ public class Mycoid_Shepherd {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-            final MagicPlayer player=permanent.getController();
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{player},
+                        permanent.getController(),
+                        new Object[]{permanent.getController()},
                         this,
-                        player + " gain 5 life."):
+                        permanent.getController() + " gain 5 life."):
                  null;
 		}
 		@Override

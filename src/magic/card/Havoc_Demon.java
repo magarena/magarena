@@ -19,12 +19,11 @@ public class Havoc_Demon {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-            final MagicPlayer player=permanent.getController();
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
-                        player,
-                        new Object[]{player},
+                        permanent.getController(),
+                        new Object[]{permanent.getController()},
                         this,
                         "All creatures get -5/-5 until end of turn."):
                 null;

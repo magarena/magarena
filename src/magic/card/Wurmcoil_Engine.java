@@ -16,17 +16,15 @@ public class Wurmcoil_Engine {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-			if (MagicLocationType.Play==triggerData.fromLocation) {
-				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        "You put a 3/3 colorless Wurm artifact creature token with deathtouch and "+
-                        		"a 3/3 colorless Wurm artifact creature token with lifelink onto the battlefield.");
-			}
-			return null;
+			return (MagicLocationType.Play==triggerData.fromLocation) ?
+				new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent.getController()},
+                    this,
+                    "You put a 3/3 colorless Wurm artifact creature token with deathtouch and "+
+                            "a 3/3 colorless Wurm artifact creature token with lifelink onto the battlefield."):
+                null;
 		}
 		@Override
 		public void executeEvent(

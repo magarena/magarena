@@ -16,17 +16,15 @@ public class Tuktuk_the_Explorer {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-			if (MagicLocationType.Play==triggerData.fromLocation) {
-				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        "You put a legendary 5/5 colorless Goblin Golem artifact creature token " + 
-                        "named Tuktuk the Returned onto the battlefield.");
-			}
-			return null;
+			return (MagicLocationType.Play==triggerData.fromLocation) ?
+				new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent.getController()},
+                    this,
+                    "You put a legendary 5/5 colorless Goblin Golem artifact creature token " + 
+                    "named Tuktuk the Returned onto the battlefield."):
+                null;
 		}
 		
 		@Override
