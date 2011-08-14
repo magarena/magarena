@@ -384,7 +384,7 @@ public class MagicCardDefinition {
 	}
 		
 	public void setEquipCost(final MagicManaCost equipCost) {
-		addActivation(new MagicEquipActivation(index,equipCost));
+		add(new MagicEquipActivation(equipCost));
 	}
 		
 	public void setManaSourceText(final String sourceText) {

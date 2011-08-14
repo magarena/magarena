@@ -11,9 +11,8 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 	private static final MagicActivationHints EQUIP_ACTIVATION_HINTS=new MagicActivationHints(MagicTiming.Equipment,false,0);
 	private final MagicManaCost equipCost;
 	
-	public MagicEquipActivation(final int cardIndex,final MagicManaCost equipCost) {
+	public MagicEquipActivation(final MagicManaCost equipCost) {
 		super(
-            cardIndex,
             new MagicCondition[]{MagicCondition.SORCERY_CONDITION,equipCost.getCondition()},
             EQUIP_ACTIVATION_HINTS,
             "Equip"
