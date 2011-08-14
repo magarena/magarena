@@ -20,16 +20,15 @@ public class Sword_of_Feast_and_Famine {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicDamage damage=(MagicDamage)data;
             final MagicPlayer player=permanent.getController();
-            final MagicPlayer damagedPlayer=(MagicPlayer)damage.getTarget();
 			return (damage.getSource()==permanent.getEquippedCreature() && 
                     damage.getTarget().isPlayer() && 
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent,player,damagedPlayer},
+                    new Object[]{permanent,player,damage.getTarget()},
                     this,
-                    damagedPlayer + " discards a card and you untap all lands you control."):
+                    damage.getTarget() + " discards a card and you untap all lands you control."):
                 null;
 		}
 		
