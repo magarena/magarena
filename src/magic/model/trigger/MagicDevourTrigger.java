@@ -14,41 +14,41 @@ import magic.model.target.MagicTargetHint;
 
 public class MagicDevourTrigger extends MagicTrigger {
 
-	private final String name;
 	private final int amount;
 	
-	public MagicDevourTrigger(final String name,final int amount) {
-		
-		super(MagicTriggerType.WhenComesIntoPlay,name);
-		this.name=name;
+	public MagicDevourTrigger(final int amount) {
+		super(MagicTriggerType.WhenComesIntoPlay);
 		this.amount=amount;
 	}
 	
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-		
+        final String name = getCardDefinition().getFullName();
 		final MagicPlayer player=permanent.getController();
-		if (player.getNrOfPermanentsWithType(MagicType.Creature)>1) {
-			final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
-			final MagicTargetChoice targetChoice=new MagicTargetChoice(
-					targetFilter,false,MagicTargetHint.None,"a creature other than "+name+" to sacrifice");
-			final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+name+".",targetChoice);
-			return new MagicEvent(permanent,player,devourChoice,MagicSacrificeTargetPicker.getInstance(),new Object[]{permanent},this,
-				"You may$ sacrifice a creature$ to "+name+".");
-		}		
-		return null;
+        final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
+        final MagicTargetChoice targetChoice=new MagicTargetChoice(
+                targetFilter,false,MagicTargetHint.None,"a creature other than "+name+" to sacrifice");
+        final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+name+".",targetChoice);
+		return (player.getNrOfPermanentsWithType(MagicType.Creature)>1) ?
+            new MagicEvent(
+                    permanent,
+                    player,
+                    devourChoice,
+                    MagicSacrificeTargetPicker.getInstance(),
+                    new Object[]{permanent},
+                    this,
+                    "You may$ sacrifice a creature$ to "+name+"."):
+            null;
 	}
 
 	@Override
 	public boolean usesStack() {
-
 		return false;
 	}
 
 	@Override
 	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 			final MagicPermanent creature=event.getTarget(game,choiceResults,1);
 			if (creature!=null) {

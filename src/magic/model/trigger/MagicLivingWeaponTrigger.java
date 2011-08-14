@@ -12,10 +12,6 @@ import magic.model.event.MagicEvent;
  * Trigger that occurs when a card with the living weapon mechanic comes into play
  */
 public class MagicLivingWeaponTrigger extends MagicTrigger {
-
-	public MagicLivingWeaponTrigger(final String name) {
-		super(MagicTriggerType.WhenComesIntoPlay,name);
-	}
 	
     public MagicLivingWeaponTrigger() {
 		super(MagicTriggerType.WhenComesIntoPlay);
@@ -26,15 +22,13 @@ public class MagicLivingWeaponTrigger extends MagicTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final Object data) {
-
 		final MagicPlayer player=permanent.getController();
-		final String playerName = player.getName();
 		return new MagicEvent(
             permanent,
             player,
             new Object[]{permanent,player},
             this,
-			playerName + " puts a 0/0 black Germ creature token onto the battlefield, then attaches this to it.");
+			player + " puts a 0/0 black Germ creature token onto the battlefield, then attaches this to it.");
 	}
 	
 	@Override

@@ -17,20 +17,12 @@ public class MagicThiefTrigger extends MagicTrigger {
 		this.amount=amount;
 	}
 	
-	public MagicThiefTrigger(final String name,final boolean combat,final int amount) {
-		super(MagicTriggerType.WhenDamageIsDealt,name);
-		this.combat=combat;
-		this.amount=amount;
-	}
-	
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 		final MagicDamage damage=(MagicDamage)data;
-		if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&(!combat||damage.isCombat())) {
-			return new MagicDrawEvent(permanent,permanent.getController(),amount);			
-		}
-		return null;
+		return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&(!combat||damage.isCombat())) ?
+            new MagicDrawEvent(permanent,permanent.getController(),amount):
+            null;
 	}
 
 	@Override

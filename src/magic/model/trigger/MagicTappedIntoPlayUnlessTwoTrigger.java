@@ -13,22 +13,17 @@ public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicTrigger {
 		super(MagicTriggerType.WhenComesIntoPlay);
 	}
 
-	public MagicTappedIntoPlayUnlessTwoTrigger(final String name) {
-		super(MagicTriggerType.WhenComesIntoPlay,name);
-	}
-
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 		final MagicPlayer player=permanent.getController();
-		if (player.getNrOfPermanentsWithType(MagicType.Land) > 3) {
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent},
-                    this,
-                    permanent.getName()+" enters the battlefield tapped.");
-		}
-		return null;
+		return (player.getNrOfPermanentsWithType(MagicType.Land) > 3) ?
+			new MagicEvent(
+                permanent,
+                player,
+                new Object[]{permanent},
+                this,
+                permanent+" enters the battlefield tapped."):
+            null;
 	}
 	
 	@Override

@@ -13,10 +13,6 @@ public class MagicVividLandTrigger extends MagicTrigger {
 		super(MagicTriggerType.WhenComesIntoPlay);
 	}
 
-	public MagicVividLandTrigger(final String name) {
-		super(MagicTriggerType.WhenComesIntoPlay,name);
-	}
-
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 		return new MagicEvent(
@@ -24,7 +20,7 @@ public class MagicVividLandTrigger extends MagicTrigger {
                 permanent.getController(),
                 new Object[]{permanent},
                 this,
-                permanent.getName()+" enters the battlefield tapped with two charge counters on it.");
+                permanent+" enters the battlefield tapped with two charge counters on it.");
 	}
 	
 	@Override

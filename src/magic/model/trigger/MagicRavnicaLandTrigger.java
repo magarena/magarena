@@ -17,10 +17,6 @@ public class MagicRavnicaLandTrigger extends MagicTrigger {
 		super(MagicTriggerType.WhenComesIntoPlay);
 	}
 	
-	public MagicRavnicaLandTrigger(final String name) {
-		super(MagicTriggerType.WhenComesIntoPlay,name);
-	}
-
 	@Override
 	public MagicEvent executeTrigger(
             final MagicGame game,

@@ -15,29 +15,26 @@ public class MagicVeteranTrigger extends MagicTrigger {
 		super(MagicTriggerType.WhenDamageIsDealt);
 		this.combat=combat;
 	}
-	
-	public MagicVeteranTrigger(final String name,final boolean combat) {
-		super(MagicTriggerType.WhenDamageIsDealt,name);
-		this.combat=combat;
-	}
 
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-		
 		final MagicDamage damage=(MagicDamage)data;
-		if (damage.getSource()==permanent&&damage.getTarget().isPermanent()&&(!combat||damage.isCombat())) {
-			final MagicPermanent target=(MagicPermanent)damage.getTarget();
-			if (target.isCreature()) {
-				return new MagicEvent(permanent,permanent.getController(),new Object[]{permanent},this,
-					"Put a +1/+1 counter on "+permanent.getName()+".");
-			}
-		}
-		return null;
+        final MagicPermanent target=(MagicPermanent)damage.getTarget();
+		return (damage.getSource()==permanent && 
+                damage.getTarget().isPermanent() && 
+                (!combat||damage.isCombat()) &&
+                target.isCreature()) ?
+            new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent},
+                    this,
+                    "Put a +1/+1 counter on "+permanent+"."):
+            null;
 	}
 	
 	@Override
 	public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choices) {
-		
 		game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
 	}
 }
