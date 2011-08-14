@@ -34,7 +34,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
                 new MagicEquipTargetPicker(getCardDefinition()),
                 new Object[]{source},
                 this,
-                "Attach " + source.getName() + " to target creature$ you control.");
+                "Attach " + source + " to target creature$ you control.");
 	}
 
 	@Override
