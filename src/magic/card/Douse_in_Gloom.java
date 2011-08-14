@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
+import magic.model.MagicCard;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
@@ -19,14 +20,15 @@ public class Douse_in_Gloom {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(2),
                     new Object[]{cardOnStack,player},
                     this,
-                    "Douse in Gloom deals 2 damage to target creature$ and you gain 2 life.");
+                    card + " deals 2 damage to target creature$ and you gain 2 life.");
 		}
 		@Override
 		public void executeEvent(

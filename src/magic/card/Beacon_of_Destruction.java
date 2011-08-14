@@ -23,8 +23,8 @@ public class Beacon_of_Destruction {
                     new MagicDamageTargetPicker(5),
                     new Object[]{card},
                     this,
-                    "Beacon of Destruction deals 5 damage to target creature or player$. " + 
-                    "Shuffle Beacon of Destruction into its owner's library.");
+                    card + " deals 5 damage to target creature or player$. " + 
+                    "Shuffle " + card + " into its owner's library.");
 		}
 		@Override
 		public void executeEvent(

@@ -28,7 +28,9 @@ public class Galvanic_Arc {
                     permanent.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
-                    new Object[]{permanent},this,"Galvanic Arc deals 3 damage to target creature or player$.");
+                    new Object[]{permanent},
+                    this,
+                    permanent + " deals 3 damage to target creature or player$.");
 		}
 		@Override
 		public void executeEvent(

@@ -13,12 +13,14 @@ public class Pulse_of_the_Tangle {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "You put a 3/3 green Beast creature token onto the battlefield. Then if your opponent controls more creatures than you, return Pulse of the Tangle to its owner's hand.");
+                    "You put a 3/3 green Beast creature token onto the battlefield. " + 
+                    "Then if your opponent controls more creatures than you, return " + card + " to its owner's hand.");
 		}
 		@Override
 		public void executeEvent(

@@ -25,7 +25,7 @@ public class Rupture_Spire {
                         new MagicPayManaCostChoice(MagicManaCost.ONE)),
                     new Object[]{permanent},
                     this,
-                    "You may$ pay {1}. If you don't, sacrifice Rupture Spire.");
+                    "You may$ pay {1}. If you don't, sacrifice " + permanent + ".");
 		}
 		@Override
 		public void executeEvent(

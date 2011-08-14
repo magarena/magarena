@@ -17,12 +17,13 @@ public class Earthquake {
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final int amount=payedCost.getX();
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new Object[]{cardOnStack,amount},
                     this,
-                    "Earthquake deals "+amount+" damage to each creature without flying and each player.");
+                    card + " deals "+amount+" damage to each creature without flying and each player.");
 		}
 		@Override
 		public void executeEvent(

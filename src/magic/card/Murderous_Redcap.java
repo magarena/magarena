@@ -23,7 +23,7 @@ public class Murderous_Redcap {
                     new MagicDamageTargetPicker(power),
                     new Object[]{permanent},
                     this,
-                    "Murderous Redcap deals damage equal to its power to target creature or player$.");
+                    permanent + " deals damage equal to its power to target creature or player$.");
 		}
 		
 		@Override

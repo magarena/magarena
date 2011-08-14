@@ -78,7 +78,7 @@ public class Skeletal_Vampire {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Regenerate Skeletal Vampire.");
+                    "Regenerate " + source + ".");
 		}
 
 		@Override

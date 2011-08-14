@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
+import magic.model.MagicCard;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
@@ -18,14 +19,15 @@ public class Puncture_Blast {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
                     new Object[]{cardOnStack},
                     this,
-                    "Puncture Blast deals 3 damage to target creature or player$.");
+                    card + " deals 3 damage to target creature or player$.");
 		}
 		@Override
 		public void executeEvent(

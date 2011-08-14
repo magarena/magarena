@@ -24,7 +24,7 @@ public class Smash_to_Smithereens {
                     new MagicDestroyTargetPicker(false),
                     new Object[]{cardOnStack},
                     this,
-                    "Destroy target artifact$. Smash to Smithereens deals 3 damage to that artifact's controller.");
+                    "Destroy target artifact$. " + cardOnStack.getCard() + " deals 3 damage to that artifact's controller.");
 		}
 		@Override
 		public void executeEvent(

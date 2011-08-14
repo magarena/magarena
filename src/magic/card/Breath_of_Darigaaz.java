@@ -16,16 +16,18 @@ public class Breath_of_Darigaaz {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+			final MagicPlayer player = cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(null,MagicManaCost.TWO,false),
                     new Object[]{cardOnStack},
                     this,
-                    "Breath of Darigaaz deals 1 damage to each creature without flying and each player. If Breath of Darigaaz was kicked$, it deals 4 damage to each creature without flying and each player instead.");
+                    card + " deals 1 damage to each creature without flying and each player. " + 
+                    "If " + card + " was kicked$, " + 
+                    "it deals 4 damage to each creature without flying and each player instead.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,

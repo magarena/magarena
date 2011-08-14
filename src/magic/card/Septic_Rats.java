@@ -19,7 +19,7 @@ public class Septic_Rats {
                             player,
                             new Object[]{permanent},
                             this,
-                            "Septic Rats gets +1/+1 until end of turn.") :
+                            permanent + " gets +1/+1 until end of turn.") :
                     null;
 		}
 		@Override

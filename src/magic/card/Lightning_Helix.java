@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
+import magic.model.MagicCard;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
@@ -19,6 +20,7 @@ public class Lightning_Helix {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
@@ -26,7 +28,7 @@ public class Lightning_Helix {
                     new MagicDamageTargetPicker(3),
                     new Object[]{cardOnStack,player},
                     this,
-                    "Lightning Helix deals 3 damage to target creature or player$ and you gain 3 life.");
+                    card + " deals 3 damage to target creature or player$ and you gain 3 life.");
 		}
 		@Override
 		public void executeEvent(

@@ -21,7 +21,7 @@ public class Novablast_Wurm {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        "Destroy all creatures other than Novablast Wurm.") :
+                        "Destroy all creatures other than " + permanent + ".") :
                 null;
 		}
 		

@@ -23,7 +23,7 @@ public class Brion_Stoutarm {
 			final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
 					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,(MagicPermanent)source);
 			final MagicTargetChoice targetChoice=new MagicTargetChoice(
-					targetFilter,false,MagicTargetHint.None,"a creature other than Brion Stoutarm to sacrifice");
+					targetFilter,false,MagicTargetHint.None,"a creature other than " + source.getName() + " to sacrifice");
 			return new MagicEvent[]{
 				new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.RED),
 				new MagicSacrificePermanentEvent(source,source.getController(),targetChoice)};
@@ -38,7 +38,7 @@ public class Brion_Stoutarm {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new Object[]{source,sacrificed},
                     this,
-                    "Brion Stoutarm deals damage equal to the power of "+sacrificed.getName()+" to target player$.");
+                    source + " deals damage equal to the power of "+sacrificed.getName()+" to target player$.");
 		}
 
 		@Override

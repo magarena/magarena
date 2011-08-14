@@ -16,12 +16,13 @@ public class Pyroclasm {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new Object[]{cardOnStack},
                     this,
-                    "Pyroclasm deals 2 damage to each creature.");
+                    card + " deals 2 damage to each creature.");
 		}
 		@Override
 		public void executeEvent(

@@ -29,7 +29,7 @@ public class Goblin_Artillery {
                     new MagicDamageTargetPicker(2),
                     new Object[]{source,player},
                     this,
-                    "Goblin Artillery deals 2 damage to target creature or player$ and 3 damage to you.");
+                    source + " deals 2 damage to target creature or player$ and 3 damage to you.");
 		}
 
 		@Override

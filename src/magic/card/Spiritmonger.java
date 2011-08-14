@@ -33,7 +33,7 @@ public class Spiritmonger {
                     MagicColorChoice.BLUE_RED_WHITE_INSTANCE,
                     new Object[]{source},
                     this,
-                    "Spiritmonger becomes the color$ of your choice until end of turn.");
+                    source + " becomes the color$ of your choice until end of turn.");
 		}
 		@Override
 		public void executeEvent(

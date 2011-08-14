@@ -26,7 +26,7 @@ public class Stun_Sniper {
                     new MagicTapTargetPicker(true,false),
                     new Object[]{source},
                     this,
-                    "Stun Sniper deals 1 damage to target creature$. Tap that creature.");
+                    source + " deals 1 damage to target creature$. Tap that creature.");
 		}
 		@Override
 		public void executeEvent(

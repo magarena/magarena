@@ -22,7 +22,7 @@ public class Taurean_Mauler {
                         player,
                         new Object[]{permanent},
                         this,
-                        "Put a +1/+1 counter on Taurean Mauler.");
+                        "Put a +1/+1 counter on " + permanent + ".");
 			}
 			return null;
 		}

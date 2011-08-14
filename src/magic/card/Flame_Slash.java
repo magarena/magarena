@@ -23,7 +23,7 @@ public class Flame_Slash {
                     new MagicDamageTargetPicker(4),
                     new Object[]{cardOnStack},
                     this,
-                    "Flame Slash deals 4 damage to target creature$.");
+                    cardOnStack.getCard() + " deals 4 damage to target creature$.");
 		}
 		@Override
 		public void executeEvent(

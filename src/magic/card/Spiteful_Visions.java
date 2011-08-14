@@ -38,7 +38,7 @@ public class Spiteful_Visions {
     					permanent.getController(),
     					new Object[]{permanent,player},
     					this,
-    					"Spiteful Visions deals 1 damage to " + player + ".");
+    					permanent + " deals 1 damage to " + player + ".");
     	}
     	
     	@Override

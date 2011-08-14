@@ -22,7 +22,7 @@ public class Eldrazi_Monument {
                         player,
                         new Object[]{permanent,player},
                         this,
-                        "Sacrifice a creature. If you can't, sacrifice Eldrazi Monument."):
+                        "Sacrifice a creature. If you can't, sacrifice " + permanent + "."):
                 null;
 		}
 

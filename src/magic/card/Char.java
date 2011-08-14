@@ -15,14 +15,15 @@ public class Char {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(4),
                     new Object[]{cardOnStack,player},
                     this,
-                    "Char deals 4 damage to target creature or player$ and 2 damage to you.");
+                    card + " deals 4 damage to target creature or player$ and 2 damage to you.");
 		}
 		@Override
 		public void executeEvent(

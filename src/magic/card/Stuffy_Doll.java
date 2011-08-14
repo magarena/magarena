@@ -24,7 +24,7 @@ public class Stuffy_Doll {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Stuffy Doll deals 1 damage to itself.");
+                    source + " deals 1 damage to itself.");
 		}
 		@Override
 		public void executeEvent(
@@ -50,7 +50,7 @@ public class Stuffy_Doll {
                         player,
                         new Object[]{permanent,game.getOpponent(player),amount},
                         this,
-                        "Stuffy Doll deals "+amount+" damage to your opponent.") :
+                        permanent + " deals "+amount+" damage to your opponent.") :
                 null;
 		}
 		@Override

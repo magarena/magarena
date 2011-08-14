@@ -30,7 +30,7 @@ public class Hateflayer {
                     new MagicDamageTargetPicker(5),
                     new Object[]{source},
                     this,
-                    "Hateflayer deals damage equal to its power to target creature or player$.");
+                    source + " deals damage equal to its power to target creature or player$.");
 		}
 
 		@Override

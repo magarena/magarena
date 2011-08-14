@@ -66,7 +66,8 @@ public class Stirring_Wildwood {
                     source,
                     source.getController(),
                     new Object[]{source},this,
-                    "Until end of turn, Stirring Wildwood becomes a 3/4 green and white Elemental creature with reach. It's still a land.");
+                    "Until end of turn, " + source + 
+                    " becomes a 3/4 green and white Elemental creature with reach. It's still a land.");
 		}
 		@Override
 		public void executeEvent(

@@ -38,13 +38,15 @@ public class Goblin_Bushwhacker {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     new MagicKickerChoice(null,MagicManaCost.RED,false),
                     new Object[]{cardOnStack},
                     this,
-                    "$Play Goblin Bushwhacker. When Goblin Bushwhacker enters the battlefield, if it was kicked$, creatures you control get +1/+0 and gain haste until end of turn.");
+                    "$Play " + card + ". When " + card + " enters the battlefield, if it was kicked$, " + 
+                    "creatures you control get +1/+0 and gain haste until end of turn.");
 		}
 		@Override
 		public void executeEvent(

@@ -63,7 +63,7 @@ public class Quest_for_the_Gemblades {
                         player,
                         new Object[]{permanent},
                         this,
-                        "Put a quest counter on Quest for the Gemblades."):
+                        "Put a quest counter on " + permanent + "."):
                 null;
 		}
 		@Override

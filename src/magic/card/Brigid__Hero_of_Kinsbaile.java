@@ -29,7 +29,7 @@ public class Brigid__Hero_of_Kinsbaile {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
 				    new Object[]{source},
                     this,
-                    "Brigid, Hero of Kinsbaile deals 2 damage to each attacking or blocking creature target player$ controls.");
+                    source + " deals 2 damage to each attacking or blocking creature target player$ controls.");
 		}
 
 		@Override

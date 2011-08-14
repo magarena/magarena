@@ -30,7 +30,7 @@ public class Raging_Ravine {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        "Put a +1/+1 counter on Raging Ravine.");
+                        "Put a +1/+1 counter on " + permanent + ".");
 			}
 			return null;
 		}
@@ -99,7 +99,8 @@ public class Raging_Ravine {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Until end of turn, Raging Ravine becomes a 3/3 red and green Elemental creature with \"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land.");
+                    "Until end of turn, " + source + " becomes a 3/3 red and green Elemental creature with " + 
+                    "\"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land.");
 		}
 
 		@Override

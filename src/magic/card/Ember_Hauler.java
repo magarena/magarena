@@ -28,7 +28,7 @@ public class Ember_Hauler {
                     new MagicDamageTargetPicker(2),
                     new Object[]{source},
                     this,
-                    "Ember Hauler deals 2 damage to target creature or player$.");
+                    source + " deals 2 damage to target creature or player$.");
 		}
 
 		@Override

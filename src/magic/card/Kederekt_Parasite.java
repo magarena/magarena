@@ -28,7 +28,7 @@ public class Kederekt_Parasite {
     					permanent.getController(),
     					new Object[]{permanent,player},
     					this,
-    					"Kederekt Parasite deals 1 damage to your opponent.");
+    					permanent + " deals 1 damage to your opponent.");
     		}
     		return null;
     	}

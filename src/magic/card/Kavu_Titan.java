@@ -13,13 +13,14 @@ public class Kavu_Titan {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(null,MagicManaCost.TWO_GREEN,false),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play Kavu Titan. If Kavu Titan was kicked$, " + 
+                    "$Play " + card + ". If " + card + " was kicked$, " + 
                     "it enters the battlefield with three +1/+1 counters on it and has trample.");
 		}
 		@Override

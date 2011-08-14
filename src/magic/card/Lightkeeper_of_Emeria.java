@@ -16,13 +16,15 @@ public class Lightkeeper_of_Emeria {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(null,MagicManaCost.WHITE,true),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play Lightkeeper of Emeria. When Lightkeeper of Emeria enters the battlefield, you gain 2 life for each time it was kicked$.");
+                    "$Play " + card + ". When " + card + " enters the battlefield, " + 
+                    "you gain 2 life for each time it was kicked$.");
 		}
 		@Override
 		public void executeEvent(

@@ -40,7 +40,7 @@ public class Shrine_of_Burning_Rage {
                     new MagicDamageTargetPicker(source.getCounters(MagicCounterType.Charge)),
                     new Object[]{source},
                     this,
-                    "Shrine of Burning Rage deals damage equal to the number of charge counters on it to target creature or player$.");
+                    source + " deals damage equal to the number of charge counters on it to target creature or player$.");
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public class Shrine_of_Burning_Rage {
                         player,
                         new Object[]{permanent},
                         this,
-                        "Put a charge counter on Shrine of Burning Rage.");
+                        "Put a charge counter on " + permanent + ".");
 			}
 			return null;
 		}
@@ -107,7 +107,7 @@ public class Shrine_of_Burning_Rage {
                         player,
                         new Object[]{permanent},
                         this,
-                        "Put a charge counter on Shrine of Burning Rage.");
+                        "Put a charge counter on " + permanent + ".");
 			}
 			return null;
 		}

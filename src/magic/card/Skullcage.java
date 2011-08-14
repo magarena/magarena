@@ -17,7 +17,7 @@ public class Skullcage {
                         player,
                         new Object[]{permanent,data},
                         this,
-                        "Skullcage deals 2 damage to your opponent " + 
+                        permanent + " deals 2 damage to your opponent " + 
                         "unless your opponent has exactly three or exactly four cards in hand.");
 			}
 			return null;

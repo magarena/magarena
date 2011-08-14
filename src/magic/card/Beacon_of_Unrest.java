@@ -27,7 +27,7 @@ public class Beacon_of_Unrest {
                     new Object[]{card,player},
                     this,
                     "Return target artifact or creature card$ from a graveyard onto the battlefield under your control. "+
-                    "Shuffle Beacon of Unrest into its owner's library.");
+                    "Shuffle " + card + " into its owner's library.");
 		}
 		@Override
 		public void executeEvent(

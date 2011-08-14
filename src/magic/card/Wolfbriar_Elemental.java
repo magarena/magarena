@@ -36,13 +36,15 @@ public class Wolfbriar_Elemental {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(null,MagicManaCost.GREEN,true),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play Wolfbriar Elemental. When Wolfbriar Elemental enters the battlefield, put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked$.");
+                    "$Play " + card + ". When " + card + " enters the battlefield, " + 
+                    "put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked$.");
 		}
 		@Override
 		public void executeEvent(

@@ -21,7 +21,7 @@ public class Sword_of_War_and_Peace {
                         player,
                         new Object[]{permanent,player,targetPlayer},
                         this,
-                        "Sword of War and Peace deals damage to " + targetPlayer.getName() + 
+                        permanent + " deals damage to " + targetPlayer.getName() + 
                         " equal to the number of cards in his or her hand and "+
                         "you gain 1 life for each card in your hand.");
 			}

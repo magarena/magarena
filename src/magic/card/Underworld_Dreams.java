@@ -18,7 +18,7 @@ public class Underworld_Dreams {
     					permanent.getController(),
     					new Object[]{permanent,player},
     					this,
-    					"Underworld Dreams deals 1 damage to your opponent.");
+    					permanent + " deals 1 damage to your opponent.");
     		}
     		return null;
     	}

@@ -31,7 +31,7 @@ public class Rancor {
                         card.getController(),
                         new Object[]{card},
                         this,
-                        "Return Rancor to its owner's hand.") :
+                        "Return " + permanent + " to its owner's hand.") :
                 null;
 		}
 		@Override

@@ -24,7 +24,8 @@ public class Vines_of_Vastwood {
 				    MagicPumpTargetPicker.getInstance(),
                     new Object[]{cardOnStack},
                     this,
-                    "Target creature$ can't be the target of spells or abilities your opponent controls this turn. If Vines of Vastwood was kicked$, that creature gets +4/+4 until end of turn.");
+                    "Target creature$ can't be the target of spells or abilities your opponent controls this turn. " + 
+                    "If " + cardOnStack.getCard() + " was kicked$, that creature gets +4/+4 until end of turn.");
 		}
 		@Override
 		public void executeEvent(

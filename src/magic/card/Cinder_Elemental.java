@@ -35,7 +35,7 @@ public class Cinder_Elemental {
                     new MagicDamageTargetPicker(amount),
                     new Object[]{source,amount},
                     this,
-                    "Cinder Elemental deals "+amount+" damage to target creature or player$.");
+                    source + " deals "+amount+" damage to target creature or player$.");
 		}
 
 		@Override

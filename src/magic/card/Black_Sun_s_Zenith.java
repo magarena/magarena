@@ -23,7 +23,8 @@ public class Black_Sun_s_Zenith {
                     player,
                     new Object[]{card,player,amount},
                     this,
-                    "Put "+amount+" -1/-1 counters on each creature. Shuffle Black Sun's Zenith into its owner's library.");
+                    "Put "+amount+" -1/-1 counters on each creature. " + 
+                    "Shuffle " + card + " into its owner's library.");
 		}
 		@Override
 		public void executeEvent(

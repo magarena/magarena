@@ -24,7 +24,7 @@ public class Blaze {
                     new MagicDamageTargetPicker(amount),
                     new Object[]{cardOnStack,amount},
                     this,
-                    "Blaze deals "+amount+" damage to target creature or player$.");
+                    cardOnStack.getCard() + " deals "+amount+" damage to target creature or player$.");
 		}
 		@Override
 		public void executeEvent(

@@ -18,7 +18,7 @@ public class Serendib_Efreet {
                         player,
                         new Object[]{permanent,player},
                         this,
-                        "Serendib Efreet deals 1 damage to you.") :
+                        permanent + " deals 1 damage to you.") :
                 null;
 		}
 		@Override

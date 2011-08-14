@@ -18,13 +18,14 @@ public class Goblin_Ruinblaster {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(null,MagicManaCost.RED,false),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play Goblin Ruinblaster. When Goblin Ruinblaster enters the battlefield, " +
+                    "$Play " + card + ". When " + card + " enters the battlefield, " +
                     "if it is was kicked$, destroy target nonbasic land.");
 		}
 		@Override

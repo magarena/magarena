@@ -55,7 +55,7 @@ public class Tumble_Magnet {
                     player,
                     new Object[]{permanent},
                     this,
-                    "Tumble Magnet enters the battlefield with three charge counters on it.");
+                    permanent + " enters the battlefield with three charge counters on it.");
 		}
 		
 		@Override

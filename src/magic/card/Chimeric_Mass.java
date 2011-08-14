@@ -61,7 +61,9 @@ public class Chimeric_Mass {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Until end of turn, Chimeric Mass becomes a Construct artifact creature with \"This creature's power and toughness are each equal to the number of charge counters on it.\"");
+                    "Until end of turn, " + source + 
+                    " becomes a Construct artifact creature with " + 
+                    "\"This creature's power and toughness are each equal to the number of charge counters on it.\"");
 		}
 
 		@Override
@@ -80,12 +82,13 @@ public class Chimeric_Mass {
                 final MagicCardOnStack cardOnStack,
                 final MagicPayedCost payedCost) {
 			final int charges=payedCost.getX();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     cardOnStack.getController(),
                     new Object[]{cardOnStack,charges},
                     this,
-                    "Chimeric Mass enters the battlefield with "+charges+" charge counters on it.");
+                    card + " enters the battlefield with "+charges+" charge counters on it.");
 		}
 
 		@Override

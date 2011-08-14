@@ -16,8 +16,9 @@ public class Into_the_Roil {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(
                         MagicTargetChoice.TARGET_NONLAND_PERMANENT,
@@ -25,7 +26,7 @@ public class Into_the_Roil {
                     MagicBounceTargetPicker.getInstance(),
                     new Object[]{cardOnStack,player},
                     this,
-                    "Return target nonland permanent$ to its owner's hand. If Into the Roil was kicked$, draw a card.");
+                    "Return target nonland permanent$ to its owner's hand. If " + card + " was kicked$, draw a card.");
 		}
 		@Override
 		public void executeEvent(

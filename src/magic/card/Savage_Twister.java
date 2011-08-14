@@ -17,12 +17,13 @@ public class Savage_Twister {
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final int amount=payedCost.getX();
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new Object[]{cardOnStack,amount},
                     this,
-                    "Savage Twister deals "+amount+" damage to each creature.");
+                    card + " deals "+amount+" damage to each creature.");
 		}
 		@Override
 		public void executeEvent(

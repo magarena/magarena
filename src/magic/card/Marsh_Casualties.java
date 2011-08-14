@@ -18,6 +18,7 @@ public class Marsh_Casualties {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
@@ -25,7 +26,7 @@ public class Marsh_Casualties {
                     new Object[]{cardOnStack},
                     this,
                     "Creatures target player$ controls get -1/-1 until end of turn. " +
-                    "If Marsh Casualties was kicked$, those creatures get -2/-2 until end of turn instead.");
+                    "If " + card + " was kicked$, those creatures get -2/-2 until end of turn instead.");
 		}
 		@Override
 		public void executeEvent(

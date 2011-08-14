@@ -27,7 +27,7 @@ public class Mordant_Dragon {
 						permanent,
 						permanent.getController(),
 						new MagicMayChoice(
-							"You may have Mordant Dragon deal that much damage to target creature.",
+							"You may have " + permanent + " deal that much damage to target creature.",
 							MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
 						new MagicDamageTargetPicker(amount),
 						new Object[]{permanent,amount},

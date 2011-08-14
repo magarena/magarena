@@ -38,7 +38,7 @@ public class Serrated_Arrows {
                     player,
                     new Object[]{permanent},
                     this,
-					"Serrated Arrows enters the battlefield with three arrowhead counters on it.");
+					permanent + " enters the battlefield with three arrowhead counters on it.");
 		}
 		
 		@Override
@@ -73,7 +73,7 @@ public class Serrated_Arrows {
                         player,
                         new Object[]{permanent},
                         this,
-                        "Sacrifice Serrated Arrows.");
+                        "Sacrifice " + permanent + ".");
 			}
 			return null;
 		}

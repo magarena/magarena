@@ -16,12 +16,13 @@ public class Chain_Reaction {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new Object[]{cardOnStack},
                     this,
-                    "Chain Reaction deals X damage to each creature, where X is the number of creatures on the battlefield.");
+                    card + " deals X damage to each creature, where X is the number of creatures on the battlefield.");
 		}
 		@Override
 		public void executeEvent(

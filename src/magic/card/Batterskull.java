@@ -26,7 +26,7 @@ public class Batterskull {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Return Batterskull to its owner's hand.");
+                    "Return " + source + " to its owner's hand.");
 		}
 
 		@Override

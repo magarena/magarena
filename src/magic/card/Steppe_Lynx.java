@@ -21,7 +21,7 @@ public class Steppe_Lynx {
                         player,
                         new Object[]{permanent},
                         this,
-                        "Steppe Lynx gets +2/+2 until end of turn.");
+                        permanent + " gets +2/+2 until end of turn.");
 			} else {
     			return null;
             }

@@ -16,13 +16,15 @@ public class Sphinx_of_Lost_Truths {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(null,MagicManaCost.ONE_BLUE,false),
 				    new Object[]{cardOnStack,player},
                     this,
-                    "$Play Sphinx of Lost Truths. When Sphinx of Lost Truths enters the battlefield, draw three cards. Then if it wasn't kicked$, discard three cards.");
+                    "$Play " + card + ". When " + card + 
+                    " enters the battlefield, draw three cards. Then if it wasn't kicked$, discard three cards.");
 		}
 		@Override
 		public void executeEvent(

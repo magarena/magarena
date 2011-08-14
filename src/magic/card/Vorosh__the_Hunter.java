@@ -27,7 +27,7 @@ public class Vorosh__the_Hunter {
                             new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)),
                         new Object[]{permanent},
                         this,
-                        "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on Vorosh.");
+                        "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on " + permanent + ".");
 			}
 			return null;
 		}

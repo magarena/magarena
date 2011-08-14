@@ -17,12 +17,13 @@ public class Hurricane {
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final int amount=payedCost.getX();
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     new Object[]{cardOnStack,amount},
                     this,
-                    "Hurricane deals "+amount+" damage to each creature with flying and each player.");
+                    card + " deals "+amount+" damage to each creature with flying and each player.");
 		}
 		@Override
 		public void executeEvent(

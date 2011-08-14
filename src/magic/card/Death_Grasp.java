@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
+import magic.model.MagicCard;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
@@ -20,6 +21,7 @@ public class Death_Grasp {
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final int amount=payedCost.getX();
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
@@ -27,7 +29,7 @@ public class Death_Grasp {
                     new MagicDamageTargetPicker(amount),
                     new Object[]{cardOnStack,player,amount},
                     this,
-                    "Death Grasp deals "+amount+" damage to target creature or player$. You gain "+amount+" life.");
+                    card + " deals "+amount+" damage to target creature or player$. You gain "+amount+" life.");
 		}
 		@Override
 		public void executeEvent(

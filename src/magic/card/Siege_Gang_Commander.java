@@ -34,7 +34,7 @@ public class Siege_Gang_Commander {
                     new MagicDamageTargetPicker(2),
                     new Object[]{source},
                     this,
-                    "Siege-Gang Commander deals 2 damage to target creature or player$.");
+                    source + " deals 2 damage to target creature or player$.");
 		}
 		@Override
 		public void executeEvent(

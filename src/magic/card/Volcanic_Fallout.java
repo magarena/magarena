@@ -20,7 +20,7 @@ public class Volcanic_Fallout {
                     cardOnStack.getController(),
                     new Object[]{cardOnStack},
                     this,
-                    "Volcanic Fallout deals 2 damage to each creature and each player.");
+                    cardOnStack.getCard() + " deals 2 damage to each creature and each player.");
 		}
 		@Override
 		public void executeEvent(

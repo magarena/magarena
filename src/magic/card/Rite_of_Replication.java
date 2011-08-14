@@ -15,14 +15,16 @@ public class Rite_of_Replication {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
-                    cardOnStack.getCard(),
+                    card,
                     player,
                     new MagicKickerChoice(MagicTargetChoice.TARGET_CREATURE,MagicManaCost.FIVE,false),
 				    MagicCopyTargetPicker.getInstance(),
                     new Object[]{cardOnStack,player},
                     this,
-                    "Put a token onto the battlefield that's a copy of target creature$. If Rite of Replication was kicked$, put five of those tokens onto the battlefield instead.");
+                    "Put a token onto the battlefield that's a copy of target creature$. If " + card + 
+                    " was kicked$, put five of those tokens onto the battlefield instead.");
 		}
 		@Override
 		public void executeEvent(
