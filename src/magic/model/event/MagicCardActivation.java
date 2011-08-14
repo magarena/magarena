@@ -12,14 +12,14 @@ import magic.model.stack.MagicCardOnStack;
 public class MagicCardActivation extends MagicActivation {
 	
 	public MagicCardActivation(final int cardIndex) {
-		super(cardIndex,
-              0,
+		super(0,
               new MagicCondition[]{
                   MagicCondition.CARD_CONDITION,
                   CardDefinitions.getInstance().getCard(cardIndex).getCost().getCondition()},
               CardDefinitions.getInstance().getCard(cardIndex).getActivationHints(),
               "Play"
              );
+        setCardIndex(cardIndex);
 	}
 	
 	@Override

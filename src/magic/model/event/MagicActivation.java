@@ -23,7 +23,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 
 	/** Conditions can be null. */
 	public MagicActivation(
-            final int cardIndex,
             final int index,
             final MagicCondition conditions[],
             final MagicActivationHints hints,
@@ -32,9 +31,8 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 
         this.text = txt;
         this.index = index;
-        this.cardIndex = cardIndex;
-        //this.id=(cardIndex << 16) +index;
-        this.id=Math.abs(magic.MurmurHash3.hash(new long[]{cardIndex, index}));
+        this.cardIndex = -1;
+        this.id = -1;
 		this.conditions=conditions;
 		this.targetChoice=getTargetChoice();
 		this.hints=hints;
@@ -50,18 +48,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 			}
 		}
 	}
-
-    /*
-	public MagicActivation(
-            final String name,
-            final int index,
-            final MagicCondition conditions[],
-            final MagicActivationHints hints,
-            final String txt            
-            ) {
-		this(CardDefinitions.getInstance().getCard(name),index,conditions,hints,txt);		
-	}
-    */
 		
 	public final MagicCardDefinition getCardDefinition() {
 		return CardDefinitions.getInstance().getCard(cardIndex);

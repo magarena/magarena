@@ -26,40 +26,13 @@ public abstract class MagicPermanentActivation extends MagicActivation {
 	};
 
 	private static int currentIndex = 1;
-	
-    public MagicPermanentActivation(
-            final String name,
-            final MagicCondition conditions[],
-            final MagicActivationHints hints,
-            final String txt
-            ) {
-		super(CardDefinitions.getInstance().getCard(name).getIndex(),currentIndex++,conditions,hints,txt);
-	}
-   
-    public MagicPermanentActivation(
-            final int cardIndex,
-            final MagicCondition conditions[],
-            final MagicActivationHints hints,
-            final String txt
-            ) {
-		super(cardIndex,currentIndex++,conditions,hints,txt);
-	}
 
     //without name but has txt (name defaults to null) 
     public MagicPermanentActivation(
             final MagicCondition conditions[],
             final MagicActivationHints hints,
             final String txt) {
-		super(-1,currentIndex++,conditions,hints,txt);
-	}
-	
-    //has name without txt (txt defaults to "")
-	public MagicPermanentActivation(
-            final String name,
-            final MagicCondition conditions[],
-            final MagicActivationHints hints
-            ) {
-		super(CardDefinitions.getInstance().getCard(name).getIndex(),currentIndex++,conditions,hints,"");
+		super(currentIndex++,conditions,hints,txt);
 	}
 
 	@Override

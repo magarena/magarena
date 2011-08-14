@@ -22,14 +22,6 @@ public abstract class MagicTrigger implements MagicEventAction {
 		this.priority=priority;
 	}
 	
-	public MagicTrigger(final MagicTriggerType type,final String name,final int priority) {
-		this(type,CardDefinitions.getInstance().getCard(name).getIndex(),priority);
-	}
-	
-	public MagicTrigger(final MagicTriggerType type,final String name) {
-		this(type,name,DEFAULT_PRIORITY);
-	}
-	
 	public MagicTrigger(final MagicTriggerType type) {
 		this(type,-1,DEFAULT_PRIORITY);
 	}
