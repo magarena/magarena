@@ -21,13 +21,15 @@ public class MagicSpecterTrigger extends MagicTrigger {
 
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-		final MagicDamage damage=(MagicDamage)data;
-		final MagicTarget target=damage.getTarget();
-        final MagicPlayer player=(MagicPlayer)target;
+		final MagicDamage damage = (MagicDamage)data;
+		final MagicTarget target = damage.getTarget();
+        final MagicTarget player = target;
         final String playerName = player.getName();
         final String opponentName = permanent.getController().getName();
-        String prefix = (player == permanent.getController() ? opponentName : playerName) + " discards a card";
-		return (damage.getSource()==permanent&&target.isPlayer()&&(!combat||damage.isCombat())) ?
+        final String prefix = (player == permanent.getController() ? opponentName : playerName) + " discards a card";
+		return (damage.getSource()==permanent && 
+                target.isPlayer() && 
+                (!combat||damage.isCombat())) ?
             new MagicEvent(
                 permanent,
                 permanent.getController(),
