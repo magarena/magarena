@@ -21,7 +21,7 @@ public class Retaliator_Griffin {
                         player,
                         new Object[]{permanent,amount},
                         this,
-                        "Put "+amount+" +1/+1 counters on " + permanent.getName() + "."):
+                        "Put "+amount+" +1/+1 counters on " + permanent + "."):
                 null;
 		}
 		@Override

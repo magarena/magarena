@@ -22,7 +22,7 @@ public class Mage_Slayer {
                         player,
                         new Object[]{equippedCreature,game.getOpponent(player)},
                         this,
-						equippedCreature.getName()+ " deals damage equal to its power to defending player."):
+						equippedCreature+ " deals damage equal to its power to defending player."):
                 null;
 		}
 		@Override

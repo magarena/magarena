@@ -30,7 +30,7 @@ public class Gelectrode {
                     new MagicDamageTargetPicker(1),
                     new Object[]{source},
                     this,
-                    source.getName() + " deals 1 damage to target creature or player$.");
+                    source + " deals 1 damage to target creature or player$.");
 		}
 		@Override
 		public void executeEvent(
@@ -57,7 +57,7 @@ public class Gelectrode {
                     player,
                     new Object[]{permanent},
                     this,
-                    "Untap " + permanent.getName() + "."):
+                    "Untap " + permanent + "."):
                 null;
 		}
 		@Override

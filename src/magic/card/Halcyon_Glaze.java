@@ -44,7 +44,7 @@ public class Halcyon_Glaze {
                         player,
                         new Object[]{permanent},
                         this,
-                        permanent.getName() + " becomes a 4/4 Illusion creature with flying until end of turn. " + 
+                        permanent + " becomes a 4/4 Illusion creature with flying until end of turn. " + 
                         "It's still an enchantment."):
                 null;
 		}

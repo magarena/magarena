@@ -47,7 +47,7 @@ public class Lord_of_Shatterskull_Pass {
                         player,
                         new Object[]{permanent,game.getOpponent(player)},
                         this,
-                        permanent.getName() + " deals 6 damage to each creature defending player controls."):
+                        permanent + " deals 6 damage to each creature defending player controls."):
                 null;
 		}
 		@Override

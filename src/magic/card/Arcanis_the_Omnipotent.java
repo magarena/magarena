@@ -50,7 +50,7 @@ public class Arcanis_the_Omnipotent {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Return " + source.getName() + " to its owner's hand.");
+                    "Return " + source + " to its owner's hand.");
 		}
 		@Override
 		public void executeEvent(

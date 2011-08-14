@@ -21,8 +21,8 @@ public class Juniper_Order_Ranger {
                         player,
                         new Object[]{otherPermanent,permanent},
                         this,
-                        "Put a +1/+1 counter on "+otherPermanent.getName()+" and a +1/+1 counter on " + 
-                        permanent.getName() + "."):
+                        "Put a +1/+1 counter on "+otherPermanent+" and a +1/+1 counter on " + 
+                        permanent + "."):
                 null;
 		}
 		

@@ -59,7 +59,7 @@ public class Carnifex_Demon {
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
-					permanent.getName() + " enters the battlefield with two -1/-1 counters on it.");
+					permanent + " enters the battlefield with two -1/-1 counters on it.");
 		}
 		@Override
 		public void executeEvent(

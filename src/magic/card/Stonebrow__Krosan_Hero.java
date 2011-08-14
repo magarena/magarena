@@ -22,7 +22,7 @@ public class Stonebrow__Krosan_Hero {
                         player,
                         new Object[]{creature},
                         this,
-                        creature.getName() + " gets +2/+2 until end of turn.");
+                        creature + " gets +2/+2 until end of turn.");
 			} else {
     			return null;
             }

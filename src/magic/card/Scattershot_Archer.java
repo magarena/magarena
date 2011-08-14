@@ -26,7 +26,7 @@ public class Scattershot_Archer {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    source.getName() + " deals 1 damage to each creature with flying.");
+                    source + " deals 1 damage to each creature with flying.");
 		}
 
 		@Override

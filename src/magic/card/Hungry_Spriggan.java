@@ -17,7 +17,7 @@ public class Hungry_Spriggan {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        permanent.getName() + " gets +3/+3 until end of turn."):
+                        permanent + " gets +3/+3 until end of turn."):
                 null;
 		}
 		@Override

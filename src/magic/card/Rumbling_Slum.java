@@ -17,7 +17,7 @@ public class Rumbling_Slum {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        permanent.getName() + " deals 1 damage to each player."):
+                        permanent + " deals 1 damage to each player."):
                 null;
 		}
 		@Override

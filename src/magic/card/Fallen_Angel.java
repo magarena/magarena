@@ -28,7 +28,7 @@ public class Fallen_Angel {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    source.getName() + " gets +2/+1 until end of turn.");
+                    source + " gets +2/+1 until end of turn.");
 		}
 		@Override
 		public void executeEvent(

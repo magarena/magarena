@@ -21,7 +21,7 @@ public class Ezuri_s_Archers {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        permanent.getName() + " gets +3/+0 until end of turn."):
+                        permanent + " gets +3/+0 until end of turn."):
                 null;
 		}
 		@Override

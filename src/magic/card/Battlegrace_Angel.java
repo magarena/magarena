@@ -21,7 +21,7 @@ public class Battlegrace_Angel {
                         player,
                         new Object[]{creature},
                         this,
-                        creature.getName()+" gains lifelink until end of turn."):
+                        creature+" gains lifelink until end of turn."):
                 null;
 		}
 		@Override

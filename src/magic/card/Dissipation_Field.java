@@ -19,7 +19,7 @@ public class Dissipation_Field {
                         player,
                         new Object[]{source},
                         this,
-                        "Return "+source.getName()+" to its owner's hand."):
+                        "Return "+source+" to its owner's hand."):
                 null;
 		}
 		@Override

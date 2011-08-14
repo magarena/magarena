@@ -23,7 +23,7 @@ public class Dread {
                         player,
                         new Object[]{source},
                         this,
-                        "Destroy "+source.getName()+"."):
+                        "Destroy "+source+"."):
                 null;
 		}
 		

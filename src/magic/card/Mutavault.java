@@ -46,7 +46,7 @@ public class Mutavault {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    source.getName() + " becomes a 2/2 creature with all creature types until end of turn. " + 
+                    source + " becomes a 2/2 creature with all creature types until end of turn. " + 
                     "It's still a land.");
 		}
 

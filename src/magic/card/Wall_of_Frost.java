@@ -20,7 +20,7 @@ public class Wall_of_Frost {
                             permanent.getController(),
                             new Object[]{blocked},
                             this,
-                            blocked.getName()+" doesn't untap during its controller's next untap step.");
+                            blocked+" doesn't untap during its controller's next untap step.");
 				}
 			}
 			return null;

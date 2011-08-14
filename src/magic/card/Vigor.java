@@ -34,7 +34,7 @@ public class Vigor {
                             player,
                             new Object[]{creature,amount},
                             this,
-                            "Put "+amount+" +1/+1 counters on "+creature.getName()+".");
+                            "Put "+amount+" +1/+1 counters on "+creature+".");
 				}
 			}
 			return null;

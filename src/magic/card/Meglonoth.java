@@ -20,8 +20,8 @@ public class Meglonoth {
                         permanent.getController(),
                         new Object[]{permanent,blocked.getController()},
                         this,
-                        permanent.getName() + " deals damage to the blocked creature's controller equal to " +
-                        permanent.getName() + "'s power."):
+                        permanent + " deals damage to the blocked creature's controller equal to " +
+                        permanent + "'s power."):
                 null;
 		}
 		@Override

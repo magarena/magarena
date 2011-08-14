@@ -21,7 +21,7 @@ public class Sphere_of_the_Suns {
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
-                    permanent.getName()+" enters the battlefield tapped with three charge counters on it.");
+                    permanent+" enters the battlefield tapped with three charge counters on it.");
 		}
 		@Override
 		public void executeEvent(

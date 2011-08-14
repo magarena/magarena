@@ -20,7 +20,7 @@ public class Hissing_Miasma {
                         controller,
                         new Object[]{controller},
                         this,
-                        controller.getName() + " lose 1 life."):
+                        controller + " lose 1 life."):
                 null;
 		}
 		

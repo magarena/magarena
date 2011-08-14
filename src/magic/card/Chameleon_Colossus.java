@@ -21,7 +21,7 @@ public class Chameleon_Colossus {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    source.getName() + " gets +X/+X until end of turn, where X is its power.");
+                    source + " gets +X/+X until end of turn, where X is its power.");
 		}
 		@Override
 		public void executeEvent(

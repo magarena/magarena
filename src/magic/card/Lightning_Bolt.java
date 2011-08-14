@@ -23,7 +23,7 @@ public class Lightning_Bolt {
                     new MagicDamageTargetPicker(3),
                     new Object[]{cardOnStack},
                     this,
-                    cardOnStack.getCard().getName() + " deals 3 damage to target creature or player$.");
+                    cardOnStack.getCard() + " deals 3 damage to target creature or player$.");
 		}
 		@Override
 		public void executeEvent(

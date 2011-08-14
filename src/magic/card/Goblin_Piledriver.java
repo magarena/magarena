@@ -22,7 +22,7 @@ public class Goblin_Piledriver {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        permanent.getName() + " gets +2/+0 until end of turn for each other attacking Goblin."):
+                        permanent + " gets +2/+0 until end of turn for each other attacking Goblin."):
                 null;
 		}
 		@Override

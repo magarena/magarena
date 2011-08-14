@@ -21,7 +21,7 @@ public class Draining_Whelk {
                     MagicTargetChoice.TARGET_SPELL,
                     new Object[]{permanent},
                     this,
-                    "Counter target spell$. Put X +1/+1 counters on " + permanent.getName() + 
+                    "Counter target spell$. Put X +1/+1 counters on " + permanent + 
                     ", where X is that spell's converted mana cost.");
 		}
 		@Override

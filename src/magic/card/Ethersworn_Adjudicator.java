@@ -63,7 +63,7 @@ public class Ethersworn_Adjudicator {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Untap " + source.getName() + ".");
+                    "Untap " + source + ".");
 		}
 		@Override
 		public void executeEvent(

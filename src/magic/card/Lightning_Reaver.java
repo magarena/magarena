@@ -19,7 +19,7 @@ public class Lightning_Reaver {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        "Put a charge counter on " + permanent.getName() + "."):
+                        "Put a charge counter on " + permanent + "."):
                 null;
 		}
 		@Override
@@ -43,7 +43,7 @@ public class Lightning_Reaver {
                         player,
                         new Object[]{permanent,game.getOpponent(player)},
                         this,
-                        permanent.getName() + " deals damage equal to the number of " + 
+                        permanent + " deals damage equal to the number of " + 
                         "charge counters on it to your opponent."):
                 null;
 		}

@@ -26,7 +26,7 @@ public class Narcolepsy {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        "If "+enchantedCreature.getName()+" is untapped, tap it.") :
+                        "If "+enchantedCreature+" is untapped, tap it.") :
                 null;
 		}
 		@Override

@@ -21,7 +21,7 @@ public class Rafiq_of_the_Many {
                         player,
                         new Object[]{creature},
                         this,
-                        creature.getName() + " gains double strike until end of turn."):
+                        creature + " gains double strike until end of turn."):
                 null;
 		}
 		@Override

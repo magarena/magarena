@@ -20,7 +20,7 @@ public class Fervent_Charge {
                         player,
                         new Object[]{creature},
                         this,
-                        creature.getName()+" gets +2/+2 until end of turn."):
+                        creature+" gets +2/+2 until end of turn."):
                 null;
 		}
 		@Override

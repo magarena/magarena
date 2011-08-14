@@ -18,7 +18,7 @@ public class Raking_Canopy {
                         permanent.getController(),
                         new Object[]{permanent,creature},
                         this,
-                        permanent + " deals 4 damage to "+creature.getName()+".") :
+                        permanent + " deals 4 damage to "+creature+".") :
                 null;
 		}
 		

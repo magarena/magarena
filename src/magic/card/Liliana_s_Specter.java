@@ -19,7 +19,7 @@ public class Liliana_s_Specter {
                     player,
                     new Object[]{permanent,opponent},
                     this,
-                    opponent.getName() + " opponent discards a card.");
+                    opponent + " opponent discards a card.");
 		}
 		@Override
 		public void executeEvent(

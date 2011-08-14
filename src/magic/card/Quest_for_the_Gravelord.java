@@ -50,7 +50,7 @@ public class Quest_for_the_Gravelord {
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
-                        "Put a quest counter on " + permanent.getName() + "."):
+                        "Put a quest counter on " + permanent + "."):
                 null;
 		}
 		@Override

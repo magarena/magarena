@@ -21,7 +21,7 @@ public class Liliana_s_Caress {
                         player,
                         new Object[]{otherController},
                         this,
-                        otherController.getName() + " loses 2 life."):
+                        otherController + " loses 2 life."):
                 null;
     	}
     	@Override

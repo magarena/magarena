@@ -20,7 +20,7 @@ public class Ronin_Warclub {
                         player,
                         new Object[]{permanent,otherPermanent},
                         this,
-                         "Attach " + permanent.getName() + " to " + otherPermanent.getName() + ".") :
+                         "Attach " + permanent + " to " + otherPermanent + ".") :
                 null;
 		}
 		

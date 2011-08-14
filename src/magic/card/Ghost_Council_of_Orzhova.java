@@ -28,7 +28,7 @@ public class Ghost_Council_of_Orzhova {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Exile " + source.getName() + ". Return it to the battlefield under its owner's control at end of turn.");
+                    "Exile " + source + ". Return it to the battlefield under its owner's control at end of turn.");
 		}
 		@Override
 		public void executeEvent(
