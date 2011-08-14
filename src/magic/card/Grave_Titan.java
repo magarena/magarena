@@ -19,7 +19,7 @@ public class Grave_Titan {
                     player,
                     new Object[]{player},
                     this,
-                    player.getName() + " put two 2/2 black Zombie creature tokens onto the battlefield.");
+                    player + " put two 2/2 black Zombie creature tokens onto the battlefield.");
 		}
 		@Override
 		public void executeEvent(
@@ -43,7 +43,7 @@ public class Grave_Titan {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " put two 2/2 black Zombie creature tokens onto the battlefield."):
+                        player + " put two 2/2 black Zombie creature tokens onto the battlefield."):
                 null;
 		}
 		@Override

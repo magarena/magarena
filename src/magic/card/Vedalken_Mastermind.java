@@ -8,18 +8,14 @@ import magic.model.event.*;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Vedalken_Mastermind {
-
-	public static final MagicPermanentActivation V2140 =new MagicPermanentActivation(            "Vedalken Mastermind",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
-            "Return"
-            ) {
-
+            "Return") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -31,7 +27,6 @@ public class Vedalken_Mastermind {
                     this,
                     "Return target permanent you control$ to its owner's hand.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -44,5 +39,4 @@ public class Vedalken_Mastermind {
 			}
 		}
 	};
-	
 }

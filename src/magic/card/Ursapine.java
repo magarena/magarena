@@ -8,17 +8,14 @@ import magic.model.event.*;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Ursapine {
-
-	public static final MagicPermanentActivation V2065 =new MagicPermanentActivation(			"Ursapine",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Pump") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -30,7 +27,6 @@ public class Ursapine {
                     this,
                     "Target creature$ gets +1/+1 until end of turn.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -43,5 +39,4 @@ public class Ursapine {
 			}
 		}
 	};
-
 }

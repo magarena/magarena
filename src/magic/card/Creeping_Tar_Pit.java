@@ -13,37 +13,7 @@ import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Creeping_Tar_Pit {
-
-	public static final MagicPermanentActivation V2944 =new MagicPermanentActivation(			"Creeping Tar Pit",
-            new MagicCondition[]{new MagicArtificialCondition(
-			    MagicManaCost.ONE_BLUE_BLACK.getCondition(),
-                MagicManaCost.BLUE_BLUE_BLACK_BLACK.getCondition())},
-			new MagicActivationHints(MagicTiming.Animate),
-            "Animate") {
-
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE_BLACK)};
-		}
-
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
-                    source,
-                    source.getController(),
-                    new Object[]{source},
-                    this,
-                    "Until end of turn, Creeping Tar Pit becomes a 3/2 blue and black Elemental creature and is unblockable. It's still a land.");
-		}
-
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],
-	new MagicDummyLocalVariable() {
+    private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.power=3;
@@ -67,15 +37,42 @@ public class Creeping_Tar_Pit {
 		public int getColorFlags(final MagicPermanent permanent,final int flags) {
 			return MagicColor.Blue.getMask()|MagicColor.Black.getMask();
 		}		
-	}));
+	};
+
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{new MagicArtificialCondition(
+			    MagicManaCost.ONE_BLUE_BLACK.getCondition(),
+                MagicManaCost.BLUE_BLUE_BLACK_BLACK.getCondition())},
+			new MagicActivationHints(MagicTiming.Animate),
+            "Animate") {
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE_BLACK)};
+		}
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    new Object[]{source},
+                    this,
+                    "Until end of turn, " + source + 
+                    " becomes a 3/2 blue and black Elemental creature and is unblockable. " + 
+                    "It's still a land.");
+		}
+		@Override
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],LV));
 		}
 	};
 	
-
+    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
 	
-    public static final MagicTrigger V9907 =new MagicTappedIntoPlayTrigger("Creeping Tar Pit");
-	
-    public static final MagicManaActivation V1 = new MagicTapManaActivation(
+    public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Blue,MagicManaType.Black), 1);
     
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
@@ -84,5 +81,4 @@ public class Creeping_Tar_Pit {
 		    cdef.setExcludeManaOrCombat();
         }
     };
-
 }

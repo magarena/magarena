@@ -14,34 +14,37 @@ import magic.model.trigger.MagicTriggerType;
 import java.util.Collection;
 
 public class Treva__the_Renewer {
-
-    public static final MagicTrigger V9185 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Treva, the Renewer") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
-			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,
-	new MagicMayChoice(
-			"You may pay {2}{W}.",new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),MagicColorChoice.MOST_INSTANCE),
-    new Object[]{player},this,
-					"You may$ pay {2}{W}$. If you do, choose a color$. You gain 1 life for each permanent of that color.");
-			}
-			return null;
+            final MagicPlayer player=permanent.getController();
+			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        new MagicMayChoice(
+                            "You may pay {2}{W}.",
+                            new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),
+                            MagicColorChoice.MOST_INSTANCE),
+                        new Object[]{player},
+                        this,
+                        "You may$ pay {2}{W}$. If you do, choose a color$. " + 
+                        "You gain 1 life for each permanent of that color."):
+                null;
 		}
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				int life=0;
 				final MagicPlayer player=(MagicPlayer)data[0];
 				final MagicColor color=(MagicColor)choiceResults[2];
 				final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
 				for (final MagicTarget target : targets) {
-					
 					final MagicPermanent permanent=(MagicPermanent)target;
 					if (color.hasColor(permanent.getColorFlags())) {
 						life++;
@@ -53,5 +56,4 @@ public class Treva__the_Renewer {
 			}
 		}		
     };
-    
 }

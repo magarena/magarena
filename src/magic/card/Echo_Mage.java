@@ -12,7 +12,7 @@ import magic.model.variable.MagicStaticLocalVariable;
 
 public class Echo_Mage {
 	
-    private static final MagicLocalVariable ECHO_MAGE=new MagicDummyLocalVariable() {
+    private static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
@@ -26,15 +26,14 @@ public class Echo_Mage {
 		}		
 	};
 
-	public static final MagicPermanentActivation V615 = new MagicLevelUpActivation("Echo Mage",MagicManaCost.ONE_BLUE,4);
+	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.ONE_BLUE,4);
 	
-	public static final MagicPermanentActivation V617 = new MagicPermanentActivation("Echo Mage",
+	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,
                 MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
 			new MagicActivationHints(MagicTiming.Spell),
-            "Copy"
-            ) {
+            "Copy") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -58,7 +57,11 @@ public class Echo_Mage {
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+		public void executeEvent(
+				final MagicGame game,
+				final MagicEvent event,
+				final Object[] data,
+				final Object[] choiceResults) {
 			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
 			if (targetSpell!=null) {
 				final MagicPlayer player=(MagicPlayer)data[0];
@@ -73,7 +76,7 @@ public class Echo_Mage {
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
         public void change(MagicCardDefinition cdef) {
-            cdef.addLocalVariable(ECHO_MAGE);	
+            cdef.addLocalVariable(LV);	
             cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
             cdef.setVariablePT();
         }

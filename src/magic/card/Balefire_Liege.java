@@ -22,7 +22,7 @@ public class Balefire_Liege {
                         MagicTargetChoice.NEG_TARGET_PLAYER,
                         new Object[]{permanent},
                         this,
-                        permanent.getName() + " deals 3 damage to target player$."):
+                        permanent + " deals 3 damage to target player$."):
                 null;
 		}
 		@Override
@@ -50,7 +50,7 @@ public class Balefire_Liege {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " gain 3 life."):
+                        player + " gain 3 life."):
                 null;
 		}
 		@Override

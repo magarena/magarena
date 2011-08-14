@@ -7,17 +7,14 @@ import magic.model.event.*;
 import magic.model.target.MagicCountersTargetPicker;
 
 public class Vampire_Hexmage {
-
-	public static final MagicPermanentActivation V2100 =new MagicPermanentActivation(			"Vampire Hexmage",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Removal),
             "Remove") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -29,7 +26,6 @@ public class Vampire_Hexmage {
                     this,
                     "Remove all counters from target permanent$.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -47,5 +43,4 @@ public class Vampire_Hexmage {
 			}
 		}
 	};
-	
 }

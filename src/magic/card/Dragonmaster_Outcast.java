@@ -21,7 +21,7 @@ public class Dragonmaster_Outcast {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " put a 5/5 red Dragon creature token with flying onto the battlefield."):
+                        player + " put a 5/5 red Dragon creature token with flying onto the battlefield."):
                 null;
 		}
 		@Override

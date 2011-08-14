@@ -6,9 +6,6 @@ import magic.model.event.MagicPumpActivation;
 import magic.model.event.MagicRegenerationActivation;
 
 public class Hellkite_Overlord {
-
-	public static final MagicPermanentActivation V1139 =new MagicPumpActivation("Hellkite Overlord",MagicManaCost.RED,1,0);
-
-	public static final MagicPermanentActivation V1141 =new MagicRegenerationActivation("Hellkite Overlord",MagicManaCost.BLACK_GREEN);
-	
+	public static final MagicPermanentActivation A1 = new MagicPumpActivation(MagicManaCost.RED,1,0);
+	public static final MagicPermanentActivation A2 = new MagicRegenerationActivation(MagicManaCost.BLACK_GREEN);
 }

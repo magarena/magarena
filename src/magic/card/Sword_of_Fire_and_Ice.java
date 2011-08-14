@@ -11,24 +11,29 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Sword_of_Fire_and_Ice {
-
-    public static final MagicTrigger V9767 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of Fire and Ice") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
-			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(permanent,player,MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(2),
-					new Object[]{permanent,player},this,"Sword of Fire and Ice deals 2 damage to target creature or player$ and you draw a card.");
-			}
-			return null;
+            final MagicPlayer player=permanent.getController();
+			return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+                new MagicEvent(
+                        permanent,
+                        player,
+                        MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                        new MagicDamageTargetPicker(2),
+                        new Object[]{permanent,player},
+                        this,
+                        permanent + " deals 2 damage to target creature or player$ and you draw a card."):
+                null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-		
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
@@ -37,5 +42,4 @@ public class Sword_of_Fire_and_Ice {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
 		}
     };
-
 }

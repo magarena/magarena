@@ -18,7 +18,7 @@ public class Lavaborn_Muse {
                         permanent.getController(),
                         new Object[]{permanent,player},
                         this,
-                        permanent.getName() + " deals 3 damage to " + player.getName() + "."):
+                        permanent + " deals 3 damage to " + player + "."):
                 null;
 		}
 		

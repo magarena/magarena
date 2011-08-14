@@ -5,7 +5,5 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRegenerationActivation;
 
 public class Cudgel_Troll {
-
-	public static final MagicPermanentActivation V460 =new MagicRegenerationActivation("Cudgel Troll",MagicManaCost.GREEN);
-	
+	public static final MagicPermanentActivation A = new MagicRegenerationActivation(MagicManaCost.GREEN);
 }

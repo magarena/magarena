@@ -15,23 +15,22 @@ import magic.model.trigger.MagicTriggerType;
 import java.util.Collection;
 
 public class Sword_of_Feast_and_Famine {
-
-    public static final MagicTrigger V9734 = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Sword of Feast and Famine") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicDamage damage=(MagicDamage)data;
-			if (damage.getSource()==permanent.getEquippedCreature() && damage.getTarget().isPlayer() && damage.isCombat()) {
-				final MagicPlayer player=permanent.getController();
-				final MagicPlayer damagedPlayer=(MagicPlayer)damage.getTarget();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent,player,damagedPlayer},
-                        this,
-                        damagedPlayer + " discards a card and you untap all lands you control.");
-			}
-			return null;
+            final MagicPlayer player=permanent.getController();
+            final MagicPlayer damagedPlayer=(MagicPlayer)damage.getTarget();
+			return (damage.getSource()==permanent.getEquippedCreature() && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent,player,damagedPlayer},
+                    this,
+                    damagedPlayer + " discards a card and you untap all lands you control."):
+                null;
 		}
 		
 		@Override
@@ -48,5 +47,4 @@ public class Sword_of_Feast_and_Famine {
 			}
 		}
     };
-    
 }

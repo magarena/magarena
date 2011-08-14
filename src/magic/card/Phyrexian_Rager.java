@@ -19,7 +19,7 @@ public class Phyrexian_Rager {
                     player,
                     new Object[]{player},
                     this,
-                    player.getName() +  " draw a card and lose 1 life.");
+                    player +  " draw a card and lose 1 life.");
 		}
 		@Override
 		public void executeEvent(

@@ -5,7 +5,5 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRegenerationActivation;
 
 public class River_Boa {
-
-	public static final MagicPermanentActivation V1645 =        new MagicRegenerationActivation("River Boa",MagicManaCost.GREEN);
-	
+	public static final MagicPermanentActivation A = new MagicRegenerationActivation(MagicManaCost.GREEN);
 }

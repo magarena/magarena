@@ -9,17 +9,14 @@ import magic.model.event.*;
 import magic.model.target.MagicTapTargetPicker;
 
 public class Stun_Sniper {
-
-	public static final MagicPermanentActivation V1926 =new MagicPermanentActivation(            "Stun Sniper",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -31,7 +28,6 @@ public class Stun_Sniper {
                     this,
                     "Stun Sniper deals 1 damage to target creature$. Tap that creature.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -48,5 +44,4 @@ public class Stun_Sniper {
 			}
 		}
 	};
-	
 }

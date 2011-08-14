@@ -19,7 +19,7 @@ public class Archon_of_Redemption {
                     player,
                     new Object[]{player,permanent},
                     this,
-                    player.getName() + " gain life equal to " + permanent.getName() + "'s power.");
+                    player + " gain life equal to " + permanent + "'s power.");
 		}
 		@Override
 		public void executeEvent(
@@ -46,7 +46,7 @@ public class Archon_of_Redemption {
                         player,
                         new Object[]{player,otherPermanent},
                         this,
-                        player.getName() + " gain life equal to the power of "+otherPermanent.getName()+'.'):
+                        player + " gain life equal to the power of "+otherPermanent+'.'):
                 null;
 		}
 		@Override

@@ -13,37 +13,7 @@ import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Celestial_Colonnade {
-
-	public static final MagicPermanentActivation V2886 =new MagicPermanentActivation(			"Celestial Colonnade",
-            new MagicCondition[]{new MagicArtificialCondition(
-                MagicManaCost.THREE_WHITE_BLUE.getCondition(),
-                MagicManaCost.TWO_WHITE_WHITE_BLUE_BLUE.getCondition())},
-			new MagicActivationHints(MagicTiming.Animate),
-            "Animate") {
-
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_WHITE_BLUE)};
-		}
-
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
-                    source,
-                    source.getController(),
-                    new Object[]{source},
-                    this,
-                    "Until end of turn, Celestial Colonnade becomes a 4/4 white and blue Elemental creature with flying and vigilance. It's still a land.");
-		}
-
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],
-	new MagicDummyLocalVariable() {
+	private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.power=4;
@@ -67,14 +37,41 @@ public class Celestial_Colonnade {
 		public int getColorFlags(final MagicPermanent permanent,final int flags) {
 			return MagicColor.White.getMask()|MagicColor.Blue.getMask();
 		}		
-	}));
+	};
+
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{new MagicArtificialCondition(
+                MagicManaCost.THREE_WHITE_BLUE.getCondition(),
+                MagicManaCost.TWO_WHITE_WHITE_BLUE_BLUE.getCondition())},
+			new MagicActivationHints(MagicTiming.Animate),
+            "Animate") {
+		@Override
+		public MagicEvent[] getCostEvent(final MagicSource source) {
+			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_WHITE_BLUE)};
+		}
+		@Override
+		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    new Object[]{source},
+                    this,
+                    "Until end of turn, " + source + 
+                    " becomes a 4/4 white and blue Elemental creature with flying and vigilance. It's still a land.");
+		}
+		@Override
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],LV));
 		}
 	};
 
+    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
 
-    public static final MagicTrigger V9899 =new MagicTappedIntoPlayTrigger("Celestial Colonnade");
-
-	public static final MagicManaActivation V1 = new MagicTapManaActivation(
+	public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Blue,MagicManaType.White), 1);
     
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {

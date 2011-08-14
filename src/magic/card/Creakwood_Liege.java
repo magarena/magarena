@@ -20,7 +20,7 @@ public class Creakwood_Liege {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " put a 1/1 black and green Worm creature token onto the battlefield."):
+                        player + " put a 1/1 black and green Worm creature token onto the battlefield."):
                 null;
 		}
 		@Override

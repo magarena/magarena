@@ -19,7 +19,7 @@ public class Phyrexian_Vatmother {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " get a poison counter."):
+                        player + " get a poison counter."):
                 null;
 		}
 		@Override

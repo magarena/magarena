@@ -60,7 +60,7 @@ public class Loxodon_Hierarch {
                     player,
                     new Object[]{player},
                     this,
-                    player.getName() + " gain 4 life.");
+                    player + " gain 4 life.");
 		}
 		@Override
 		public void executeEvent(

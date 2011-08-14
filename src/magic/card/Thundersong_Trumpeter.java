@@ -8,17 +8,14 @@ import magic.model.event.*;
 import magic.model.target.MagicNoCombatTargetPicker;
 
 public class Thundersong_Trumpeter {
-
-	public static final MagicPermanentActivation V1967 =new MagicPermanentActivation(			"Thundersong Trumpeter",
+	public static final MagicPermanentActivation A =new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Tapping),
             "Disable") {
-
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
 		}
-
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			return new MagicEvent(
@@ -30,7 +27,6 @@ public class Thundersong_Trumpeter {
                     this,
                     "Target creature$ can't attack or block this turn.");
 		}
-
 		@Override
 		public void executeEvent(
                 final MagicGame game,
@@ -43,5 +39,4 @@ public class Thundersong_Trumpeter {
 			}
 		}
 	};
-	
 }

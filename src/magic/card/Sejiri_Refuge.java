@@ -5,8 +5,6 @@ import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicTrigger;
 
 public class Sejiri_Refuge {
-
-    public static final MagicTrigger V9921 =new MagicTappedIntoPlayTrigger("Sejiri Refuge");
-	public static final MagicTrigger V9922 =new MagicRefugeLandTrigger("Sejiri Refuge");
-
+    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
+	public static final MagicTrigger T2 = new MagicRefugeLandTrigger();
 }

@@ -21,7 +21,7 @@ public class Hero_of_Bladehold {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " put two 1/1 white Soldier creature tokens " + 
+                        player + " put two 1/1 white Soldier creature tokens " + 
                         "onto the battlefield tapped and attacking."):
                 null;
 		}

@@ -5,8 +5,6 @@ import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicTrigger;
 
 public class Kazandu_Refuge {
-
-    public static final MagicTrigger V9918 =new MagicTappedIntoPlayTrigger("Kazandu Refuge");
-	public static final MagicTrigger V9919 =new MagicRefugeLandTrigger("Kazandu Refuge");
-
+    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
+	public static final MagicTrigger T2 = new MagicRefugeLandTrigger();
 }

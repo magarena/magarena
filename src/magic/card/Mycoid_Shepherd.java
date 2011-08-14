@@ -22,7 +22,7 @@ public class Mycoid_Shepherd {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " gain 5 life."):
+                        player + " gain 5 life."):
                  null;
 		}
 		@Override
@@ -49,7 +49,7 @@ public class Mycoid_Shepherd {
                         player,
                         new Object[]{player},
                         this,
-                        player.getName() + " gain 5 life."):
+                        player + " gain 5 life."):
                 null;
 		}
 		@Override

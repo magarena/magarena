@@ -6,7 +6,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicNoCombatTargetPicker;
 
 public class Pacifism {
-	public static final MagicSpellCardEvent V6514 =new MagicPlayAuraEvent(
+	public static final MagicSpellCardEvent S =new MagicPlayAuraEvent(
 			MagicTargetChoice.NEG_TARGET_CREATURE,
             new MagicNoCombatTargetPicker(true,true,true));
 }

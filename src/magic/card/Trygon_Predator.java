@@ -12,26 +12,30 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Trygon_Predator {
-
-    public static final MagicTrigger V9224 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Trygon Predator") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			
 			final MagicDamage damage=(MagicDamage)data;
-			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				return new MagicEvent(permanent,permanent.getController(),
-	new MagicMayChoice(
-			"You may destroy target artifact or enchantment.",MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS),
-    new MagicDestroyTargetPicker(false),
-					MagicEvent.NO_DATA,this,"You may$ destroy target artifact or enchantment$ your opponent controls.");
-			}
-			return null;
+			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+                new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        new MagicMayChoice(
+                            "You may destroy target artifact or enchantment.",
+                            MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS),
+                        new MagicDestroyTargetPicker(false),
+                        MagicEvent.NO_DATA,
+                        this,
+                        "You may$ destroy target artifact or enchantment$ your opponent controls."):
+                null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				final MagicPermanent permanent=event.getTarget(game,choiceResults,1);
 				if (permanent!=null) {
@@ -40,5 +44,4 @@ public class Trygon_Predator {
 			}
 		}
     };
-
 }

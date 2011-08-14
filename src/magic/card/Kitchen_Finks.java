@@ -18,7 +18,7 @@ public class Kitchen_Finks {
                     player,
                     new Object[]{player},
                     this,
-                    player.getName() + " gain 2 life.");
+                    player + " gain 2 life.");
 		}
 		@Override
 		public void executeEvent(

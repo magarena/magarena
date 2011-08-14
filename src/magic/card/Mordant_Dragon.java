@@ -15,29 +15,33 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Mordant_Dragon {
-
-	public static final MagicPermanentActivation V1409 = new MagicPumpActivation("Mordant Dragon",MagicManaCost.ONE_RED,1,0);
+	public static final MagicPermanentActivation A = new MagicPumpActivation(MagicManaCost.ONE_RED,1,0);
 	
-    public static final MagicTrigger V8110 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Mordant Dragon") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
-			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				final int amount=damage.getAmount();
-				return new MagicEvent(permanent,permanent.getController(),
-	new MagicMayChoice(
-			"You may have Mordant Dragon deal that much damage to target creature.",MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
-    new MagicDamageTargetPicker(amount),
-					new Object[]{permanent,amount},this,"You may$ have Mordant Dragon deal "+amount+" damage to target creature$ your opponent controls.");
-			}
-			return null;
+			final int amount=damage.getAmount();
+			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+				new MagicEvent(
+						permanent,
+						permanent.getController(),
+						new MagicMayChoice(
+							"You may have Mordant Dragon deal that much damage to target creature.",
+							MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
+						new MagicDamageTargetPicker(amount),
+						new Object[]{permanent,amount},
+						this,
+						"You may$ have " + permanent + " deal "+amount+" damage to target creature$ your opponent controls."):
+				null;
 		}
 		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
+		public void executeEvent(
+				final MagicGame game,
+				final MagicEvent event,
+				final Object data[],
+				final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				final MagicPermanent creature=event.getTarget(game,choiceResults,1);
 				if (creature!=null) {
@@ -47,5 +51,4 @@ public class Mordant_Dragon {
 			}
 		}
     };
-    
 }
