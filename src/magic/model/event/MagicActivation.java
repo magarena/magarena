@@ -11,15 +11,16 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
 
 public abstract class MagicActivation implements MagicEventAction, Comparable<MagicActivation> {
-
-	private int cardIndex;
-	private final MagicCondition conditions[];
-	private final MagicTargetChoice targetChoice;
+	
+    private final MagicCondition conditions[];
     private final String text;
-	protected final MagicActivationHints hints;
-	protected final int priority;
-	protected long id;
+	private final MagicActivationHints hints;
+	private final int priority;
     private final int index;
+	
+    private int cardIndex;
+	private long id;
+	private MagicTargetChoice targetChoice;
 
 	/** Conditions can be null. */
 	public MagicActivation(
@@ -28,17 +29,24 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             final MagicActivationHints hints,
             final String txt
             ) {
+        
+        this.cardIndex = -1;
+        this.id = -1;             //depends on card
+		this.targetChoice = null; //depends on card
 
         this.text = txt;
         this.index = index;
-        this.cardIndex = -1;
-        this.id = -1;
 		this.conditions=conditions;
-		this.targetChoice=getTargetChoice();
 		this.hints=hints;
 		this.priority=hints.getTiming().getPriority();
+	}
+    
+    public void setCardIndex(final int cardIndex) {
+        this.cardIndex = cardIndex;
+        this.id = (cardIndex << 16) + index;
+        this.targetChoice = getTargetChoice();
 		
-		// set the activation for the single activation condition.
+        // set the activation for the single activation condition, depends on id
 		if (conditions!=null) {
 			for (final MagicCondition condition : conditions) {
 				if (condition instanceof MagicSingleActivationCondition) {
@@ -47,16 +55,11 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 				}
 			}
 		}
-	}
-		
-	public final MagicCardDefinition getCardDefinition() {
+    }
+	
+    public final MagicCardDefinition getCardDefinition() {
 		return CardDefinitions.getInstance().getCard(cardIndex);
 	}
-    
-    public void setCardIndex(final int cardIndex) {
-        this.cardIndex = cardIndex;
-        this.id = (cardIndex << 16) + index;
-    }
 		
 	public final MagicCondition[] getConditions() {
 		return conditions;
