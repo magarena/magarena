@@ -8,7 +8,6 @@ public class MagicEquipTargetPicker extends MagicTargetPicker {
 	private final boolean defensive;
 	
 	public MagicEquipTargetPicker(final MagicCardDefinition cardDefinition) {
-
 		this.abilityFlags=cardDefinition.getAbilityFlags();
 		this.defensive=cardDefinition.getToughness()>cardDefinition.getPower();
 	}
