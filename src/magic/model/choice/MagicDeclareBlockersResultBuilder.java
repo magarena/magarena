@@ -34,7 +34,7 @@ public class MagicDeclareBlockersResultBuilder {
 	}
 	
     private void buildBlockersFast() {
-        System.err.println("Running randmized blocking algorithm");
+        System.err.println("Running randomized blocking algorithm");
         
         //generate basic blocks 
         //buildBasicBlocks(0);
