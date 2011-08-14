@@ -13,14 +13,15 @@ public class Specter_s_Shroud {
     public static final MagicTrigger T =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
-			final MagicPermanent equippedCreature=permanent.getEquippedCreature();
-            final MagicPlayer opponent=(MagicPlayer)damage.getTarget();
-			return (damage.getSource()==equippedCreature&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+			final MagicDamage damage = (MagicDamage)data;
+            final MagicPermanent equippedCreature=permanent.getEquippedCreature();
+			return (damage.getSource() == equippedCreature && 
+                    damage.getTarget().isPlayer() && 
+                    damage.isCombat()) ?
 				new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent,opponent},
+                        new Object[]{permanent,damage.getTarget()},
                         this,
                         "Your opponent discards a card.") :
                 null;
