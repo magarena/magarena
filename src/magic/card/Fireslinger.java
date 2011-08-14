@@ -9,12 +9,10 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Fireslinger {
-
-	public static final MagicPermanentActivation V857 =new MagicPermanentActivation(			"Fireslinger",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
-            "Damage"
-            ) {
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -31,7 +29,7 @@ public class Fireslinger {
                     new MagicDamageTargetPicker(1),
                     new Object[]{source,player},
                     this,
-                    "Fireslinger deals 1 damage to target creature or player$ and 1 damage to you.");
+                    source + " deals 1 damage to target creature or player$ and 1 damage to you.");
 		}
 
 		@Override
@@ -46,5 +44,4 @@ public class Fireslinger {
 			game.doAction(new MagicDealDamageAction(damage2));
 		}
 	};
-
 }

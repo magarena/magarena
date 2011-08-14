@@ -9,12 +9,9 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Guardian_Seraph {
-
-    public static final MagicTrigger V7500 =new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Guardian Seraph",5) {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,5) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicPlayer player=permanent.getController();
 			final MagicDamage damage=(MagicDamage)data;
 			final int amount=damage.getAmount();
@@ -30,5 +27,4 @@ public class Guardian_Seraph {
 		
 		}
     };
-
 }

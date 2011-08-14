@@ -7,8 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 
 public class Godsire {
-
-	public static final MagicPermanentActivation V1077 =new MagicPermanentActivation(			"Godsire",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
@@ -34,5 +33,4 @@ public class Godsire {
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.BEAST8_TOKEN_CARD));
 		}
 	};
-	
 }

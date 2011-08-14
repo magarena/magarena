@@ -14,7 +14,7 @@ import magic.model.trigger.MagicTriggerType;
 import java.util.Collection;
 
 public class Midnight_Banshee {
-    public static final MagicTrigger V8059 =new MagicTrigger(MagicTriggerType.AtUpkeep) {
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicPlayer player=permanent.getController();

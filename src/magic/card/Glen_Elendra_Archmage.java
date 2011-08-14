@@ -9,7 +9,7 @@ import magic.model.stack.MagicCardOnStack;
 
 public class Glen_Elendra_Archmage {
 
-	public static final MagicPermanentActivation V1015 =new MagicPermanentActivation(			"Glen Elendra Archmage",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Counter),
             "Counter") {
@@ -21,8 +21,13 @@ public class Glen_Elendra_Archmage {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_NONCREATURE_SPELL,
-				MagicEvent.NO_DATA,this,"Counter target noncreature spell$.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_NONCREATURE_SPELL,
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Counter target noncreature spell$.");
 		}
 
 		@Override
@@ -33,5 +38,4 @@ public class Glen_Elendra_Archmage {
 			}
 		}
 	};
-	
 }

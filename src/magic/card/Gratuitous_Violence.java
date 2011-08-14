@@ -9,12 +9,9 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Gratuitous_Violence {
-
-    public static final MagicTrigger V10069 =new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,"Gratuitous Violence",3) {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,3) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
 			final MagicSource source=damage.getSource();
 			if (source.getController()==permanent.getController()&&source.isPermanent()) {
@@ -26,12 +23,9 @@ public class Gratuitous_Violence {
 			}			
 			return null;
 		}
-		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 		
 		}
     };
-    
-	
 }

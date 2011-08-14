@@ -8,8 +8,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Seal_of_Fire {
-
-	public static final MagicPermanentActivation V2536 =new MagicPermanentActivation(			"Seal of Fire",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
@@ -28,7 +27,7 @@ public class Seal_of_Fire {
                     new MagicDamageTargetPicker(2),
                     new Object[]{source},
                     this,
-                    "Seal of Fire deals 2 damage to target creature or player$.");
+                    source + " deals 2 damage to target creature or player$.");
 		}
 
 		@Override
@@ -37,7 +36,6 @@ public class Seal_of_Fire {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
@@ -45,6 +43,4 @@ public class Seal_of_Fire {
 			}
 		}
 	};
-	
-	
 }

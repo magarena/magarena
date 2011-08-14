@@ -11,8 +11,7 @@ import magic.model.event.*;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Kabuto_Moth {
-
-	public static final MagicPermanentActivation V1199 =new MagicPermanentActivation(			"Kabuto Moth",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
@@ -42,5 +41,4 @@ public class Kabuto_Moth {
 			}
 		}
 	};
-	
 }

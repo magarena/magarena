@@ -9,17 +9,13 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Mask_of_Riddles {
-
-    public static final MagicTrigger V9584 =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt,"Mask of Riddles") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final MagicDamage damage=(MagicDamage)data;
-			if (permanent.getEquippedCreature()==damage.getSource()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				return new MagicDrawEvent(permanent,permanent.getController(),1);
-			}
-			return null;
+			return (permanent.getEquippedCreature()==damage.getSource()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+                new MagicDrawEvent(permanent,permanent.getController(),1):
+                null;
 		}
 		
 		@Override
@@ -27,5 +23,4 @@ public class Mask_of_Riddles {
 		
 		}
     };
-        
 }

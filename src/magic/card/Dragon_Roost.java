@@ -7,8 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 
 public class Dragon_Roost {
-
-	public static final MagicPermanentActivation V2322 =new MagicPermanentActivation(			"Dragon Roost",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.FIVE_RED_RED.getCondition()},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
@@ -35,9 +34,7 @@ public class Dragon_Roost {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-
 			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.DRAGON5_TOKEN_CARD));
 		}
 	};
-	
 }

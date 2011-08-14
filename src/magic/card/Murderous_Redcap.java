@@ -12,20 +12,22 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Murderous_Redcap {
-
-    public static final MagicTrigger V8159 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay,"Murderous Redcap") {
-
+    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
 			final int power=permanent.getPower(game);
-			return new MagicEvent(permanent,permanent.getController(),MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,new MagicDamageTargetPicker(power),
-				new Object[]{permanent},this,"Murderous Redcap deals damage equal to its power to target creature or player$.");
+			return new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicDamageTargetPicker(power),
+                    new Object[]{permanent},
+                    this,
+                    "Murderous Redcap deals damage equal to its power to target creature or player$.");
 		}
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
@@ -34,5 +36,4 @@ public class Murderous_Redcap {
 			}
 		}
     };
-    
 }

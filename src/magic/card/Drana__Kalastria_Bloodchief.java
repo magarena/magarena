@@ -8,12 +8,10 @@ import magic.model.event.*;
 import magic.model.target.MagicWeakenTargetPicker;
 
 public class Drana__Kalastria_Bloodchief {
-
-	public static final MagicPermanentActivation V583 =new MagicPermanentActivation(            "Drana, Kalastria Bloodchief",
+	public static final MagicPermanentActivation A =new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.X_BLACK_BLACK.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
-            "Pump"
-            ) {
+            "Pump") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -23,9 +21,15 @@ public class Drana__Kalastria_Bloodchief {
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			final int amount=payedCost.getX();
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.TARGET_CREATURE,
-				new MagicWeakenTargetPicker(0,1),new Object[]{source,amount},this,
-				"Target creature$ gets -0/-"+amount+" until end of turn and Drana, Kalastria Bloodchief gets +"+amount+"/+0 until end of turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.TARGET_CREATURE,
+                    new MagicWeakenTargetPicker(0,1),
+                    new Object[]{source,amount},
+                    this,
+                    "Target creature$ gets -0/-"+amount+" until end of turn and " + 
+                    source + " gets +"+amount+"/+0 until end of turn.");
 		}
 
 		@Override
@@ -38,5 +42,4 @@ public class Drana__Kalastria_Bloodchief {
 			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],amount,0));
 		}
 	};
-
 }

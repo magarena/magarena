@@ -8,8 +8,7 @@ import magic.model.event.*;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Seal_of_Doom {
-
-	public static final MagicPermanentActivation V2500 = new MagicPermanentActivation(            "Seal of Doom",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
@@ -44,5 +43,4 @@ public class Seal_of_Doom {
 			}
 		}
 	};
-	
 }

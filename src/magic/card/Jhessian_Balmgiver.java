@@ -12,7 +12,7 @@ import magic.model.target.MagicUnblockableTargetPicker;
 
 public class Jhessian_Balmgiver {
 
-	public static final MagicPermanentActivation V1143 =new MagicPermanentActivation(			"Jhessian Balmgiver",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Prevent") {
@@ -43,7 +43,7 @@ public class Jhessian_Balmgiver {
 		}
 	};
 
-	public static final MagicPermanentActivation V1174 =new MagicPermanentActivation(			"Jhessian Balmgiver",
+	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Attack),
             "Unblockable") {
@@ -55,8 +55,14 @@ public class Jhessian_Balmgiver {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.POS_TARGET_CREATURE,MagicUnblockableTargetPicker.getInstance(),
-				MagicEvent.NO_DATA,this,"Target creature$ is unblockable this turn.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicUnblockableTargetPicker.getInstance(),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Target creature$ is unblockable this turn.");
 		}
 
 		@Override
@@ -67,5 +73,4 @@ public class Jhessian_Balmgiver {
 			}
 		}	
 	};
-
 }

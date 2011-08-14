@@ -8,8 +8,7 @@ import magic.model.event.*;
 import magic.model.target.MagicExileTargetPicker;
 
 public class Brittle_Effigy {
-
-	public static final MagicPermanentActivation V2574 =new MagicPermanentActivation(            "Brittle Effigy",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
@@ -45,6 +44,4 @@ public class Brittle_Effigy {
 			}
 		}
 	};
-
-	
 }

@@ -8,8 +8,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Mogg_Fanatic {
-
-	public static final MagicPermanentActivation V1376 =new MagicPermanentActivation(            "Mogg Fanatic",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Removal),
             "Damage"
@@ -29,7 +28,7 @@ public class Mogg_Fanatic {
                     new MagicDamageTargetPicker(1),
 				    new Object[]{source},
                     this,
-                    "Mogg Fanatic deals 1 damage to target creature or player$.");
+                    source + " deals 1 damage to target creature or player$.");
 		}
 
 		@Override
@@ -41,5 +40,4 @@ public class Mogg_Fanatic {
 			}
 		}
 	};
-
 }

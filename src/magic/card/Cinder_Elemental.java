@@ -10,14 +10,13 @@ import magic.model.target.MagicTarget;
 
 public class Cinder_Elemental {
 
-	public static final MagicPermanentActivation V390 =new MagicPermanentActivation(            "Cinder Elemental",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicManaCost.X_RED.getCondition()
             },
             new MagicActivationHints(MagicTiming.Removal),
-            "Damage"
-            ) {
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -41,7 +40,6 @@ public class Cinder_Elemental {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-
 			final MagicTarget target=event.getTarget(game,choiceResults,0);
 			if (target!=null) {
 				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,(Integer)data[1],false);
@@ -49,5 +47,4 @@ public class Cinder_Elemental {
 			}
 		}
 	};
-	
 }

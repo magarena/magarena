@@ -8,8 +8,7 @@ import magic.model.event.*;
 import magic.model.target.MagicCopyTargetPicker;
 
 public class Kiki_Jiki__Mirror_Breaker {
-
-	public static final MagicPermanentActivation V1230 =new MagicPermanentActivation(			"Kiki-Jiki, Mirror Breaker",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Token),
             "Copy") {
@@ -22,10 +21,15 @@ public class Kiki_Jiki__Mirror_Breaker {
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 			final MagicPlayer player=source.getController();
-			return new MagicEvent(source,player,MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
-				MagicCopyTargetPicker.getInstance(),new Object[]{player},this,
-				"Put a token that's a copy of target nonlegendary creature$ you control onto the battlefield. "+
-				"That token has haste. Sacrifice it at end of turn.");
+			return new MagicEvent(
+                    source,
+                    player,
+                    MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
+                    MagicCopyTargetPicker.getInstance(),
+                    new Object[]{player},
+                    this,
+                    "Put a token that's a copy of target nonlegendary creature$ you control onto the battlefield. "+
+                    "That token has haste. Sacrifice it at end of turn.");
 		}
 
 		@Override
@@ -38,5 +42,4 @@ public class Kiki_Jiki__Mirror_Breaker {
 			}
 		}
 	};
-	
 }

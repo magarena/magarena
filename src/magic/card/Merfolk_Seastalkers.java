@@ -8,8 +8,7 @@ import magic.model.event.*;
 import magic.model.target.MagicTapTargetPicker;
 
 public class Merfolk_Seastalkers {
-
-	public static final MagicPermanentActivation V1292 =new MagicPermanentActivation(            "Merfolk Seastalkers",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
@@ -39,5 +38,4 @@ public class Merfolk_Seastalkers {
 			}
 		}
 	};
-		
 }

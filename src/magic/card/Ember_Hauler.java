@@ -9,8 +9,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Ember_Hauler {
-
-	public static final MagicPermanentActivation V659 =new MagicPermanentActivation(            "Ember Hauler",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
@@ -41,5 +40,4 @@ public class Ember_Hauler {
 			}
 		}
 	};
-	
 }

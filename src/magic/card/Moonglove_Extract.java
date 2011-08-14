@@ -8,8 +8,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Moonglove_Extract {
-
-	public static final MagicPermanentActivation V2693 =new MagicPermanentActivation(			"Moonglove Extract",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
@@ -28,7 +27,7 @@ public class Moonglove_Extract {
                     new MagicDamageTargetPicker(2),
                     new Object[]{source},
                     this,
-                    "Moonglove Extract deals 2 damage to target creature or player$.");
+                    source + " deals 2 damage to target creature or player$.");
 		}
 
 		@Override
@@ -45,5 +44,4 @@ public class Moonglove_Extract {
 			}
 		}
 	};
-	
 }

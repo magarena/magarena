@@ -7,8 +7,7 @@ import magic.model.event.*;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Angelic_Shield {
-
-	public static final MagicPermanentActivation V2216 =new MagicPermanentActivation(			"Angelic Shield",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
@@ -42,5 +41,4 @@ public class Angelic_Shield {
 			}
 		}
 	};
-	
 }

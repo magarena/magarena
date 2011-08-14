@@ -8,12 +8,10 @@ import magic.model.event.*;
 import magic.model.target.MagicTapTargetPicker;
 
 public class Air_Servant {
-
-	public static final MagicPermanentActivation V103 =new MagicPermanentActivation("Air Servant",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Tapping),
-            "Tap"            
-            ) {
+            "Tap") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -44,5 +42,4 @@ public class Air_Servant {
 			}
 		}
 	};
-	
 }

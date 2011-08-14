@@ -7,8 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 
 public class Sphinx_of_Magosi {
-
-	public static final MagicPermanentActivation V1799 =new MagicPermanentActivation(			"Sphinx of Magosi",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.TWO_BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
@@ -26,7 +25,7 @@ public class Sphinx_of_Magosi {
                     player,
                     new Object[]{player,source},
                     this,
-                    "Draw a card, then put a +1/+1 counter on Magosi Sphinx.");
+                    "Draw a card, then put a +1/+1 counter on " + source + ".");
         }
 		
         @Override
@@ -39,5 +38,4 @@ public class Sphinx_of_Magosi {
             game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));
         }
 	};
-	
 }

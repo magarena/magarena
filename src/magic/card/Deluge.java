@@ -14,7 +14,7 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Deluge {
-	public static final MagicSpellCardEvent V3573 =new MagicSpellCardEvent() {
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			return new MagicEvent(

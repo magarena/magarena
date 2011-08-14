@@ -8,12 +8,10 @@ import magic.model.event.*;
 import magic.model.target.MagicIndestructibleTargetPicker;
 
 public class Deathless_Angel {
-
-	public static final MagicPermanentActivation V551 = new MagicPermanentActivation(			"Deathless Angel",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.WHITE_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
-            "Indestr"
-            ) {
+            "Indestr") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -40,5 +38,4 @@ public class Deathless_Angel {
 			}
 		}
 	};
-	
 }

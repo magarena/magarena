@@ -13,7 +13,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Flame_Slash {
-	public static final MagicSpellCardEvent V5538 =new MagicSpellCardEvent() {
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			return new MagicEvent(

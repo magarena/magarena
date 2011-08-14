@@ -13,8 +13,7 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Breath_of_Darigaaz {
-
-	public static final MagicSpellCardEvent V5269 =new MagicSpellCardEvent() {
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();

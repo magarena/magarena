@@ -9,7 +9,7 @@ import magic.model.target.MagicPumpTargetPicker;
 
 public class Captive_Flame {
 
-	public static final MagicPermanentActivation V2286 =new MagicPermanentActivation(			"Captive Flame",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.RED.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Pump") {
@@ -44,5 +44,4 @@ public class Captive_Flame {
 			}
 		}
 	};
-	
 }

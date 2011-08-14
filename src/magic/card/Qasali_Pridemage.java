@@ -8,8 +8,7 @@ import magic.model.event.*;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Qasali_Pridemage {
-
-	public static final MagicPermanentActivation V1507 =new MagicPermanentActivation(			"Qasali Pridemage",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Destory") {
@@ -39,5 +38,4 @@ public class Qasali_Pridemage {
 			}
 		}
 	};
-	
 }

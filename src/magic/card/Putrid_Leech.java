@@ -9,8 +9,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 
 public class Putrid_Leech {
-
-	public static final MagicPermanentActivation V1480 =new MagicPermanentActivation(            "Putrid Leech",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation( 
 			new MagicCondition[]{MagicCondition.ABILITY_ONCE_CONDITION,MagicCondition.TWO_LIFE_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
@@ -27,7 +26,7 @@ public class Putrid_Leech {
                     source.getController(),
                     new Object[]{source},
                     this,
-                    "Putrid Leech gets +2/+2 until end of turn.");
+                    source + " gets +2/+2 until end of turn.");
 		}
 
 		@Override
@@ -36,5 +35,4 @@ public class Putrid_Leech {
 			game.doAction(new MagicChangeTurnPTAction(permanent,2,2));
 		}
 	};
-	
 }

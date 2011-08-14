@@ -9,8 +9,7 @@ import magic.model.event.*;
 import magic.model.target.MagicWeakenTargetPicker;
 
 public class Esper_Battlemage {
-
-	public static final MagicPermanentActivation V691 =new MagicPermanentActivation(            "Esper Battlemage",
+	public static final MagicPermanentActivation A =new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicManaCost.WHITE.getCondition()},
@@ -43,7 +42,7 @@ public class Esper_Battlemage {
 		}
 	};
 
-	public static final MagicPermanentActivation V724 =new MagicPermanentActivation(            "Esper Battlemage",
+	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLACK.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
@@ -73,5 +72,4 @@ public class Esper_Battlemage {
 			}
 		}
 	};
-	
 }

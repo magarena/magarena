@@ -9,12 +9,10 @@ import magic.model.target.MagicMustAttackTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Rage_Nimbus {
-
-	public static final MagicPermanentActivation V1538 =new MagicPermanentActivation(            "Rage Nimbus",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation( 
 			new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},
             new MagicActivationHints(MagicTiming.MustAttack),
-            "Attacks"
-            ) {
+            "Attacks") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -23,8 +21,14 @@ public class Rage_Nimbus {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_CREATURE,MagicMustAttackTargetPicker.getInstance(),
-				MagicEvent.NO_DATA,this,"Target creature$ attacks this turn if able.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    MagicMustAttackTargetPicker.getInstance(),
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Target creature$ attacks this turn if able.");
 		}
 
 		@Override
@@ -35,5 +39,4 @@ public class Rage_Nimbus {
 			}
 		}
 	};
-
 }

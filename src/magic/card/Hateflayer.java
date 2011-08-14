@@ -9,8 +9,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Hateflayer {
-
-	public static final MagicPermanentActivation V1104 =new MagicPermanentActivation(            "Hateflayer",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicManaCost.TWO_RED.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
@@ -44,5 +43,4 @@ public class Hateflayer {
 			}
 		}
 	};
-
 }

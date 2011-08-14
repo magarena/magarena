@@ -6,8 +6,7 @@ import magic.model.event.*;
 import magic.model.stack.MagicCardOnStack;
 
 public class Spiketail_Hatchling {
-
-	public static final MagicPermanentActivation V1831 =new MagicPermanentActivation(			"Spiketail Hatchling",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Counter),
             "Counter") {
@@ -19,8 +18,13 @@ public class Spiketail_Hatchling {
 
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(source,source.getController(),MagicTargetChoice.NEG_TARGET_SPELL,
-				new Object[]{source},this,"Counter target spell$ unless its controller pays {1}.");
+			return new MagicEvent(
+                    source,
+                    source.getController(),
+                    MagicTargetChoice.NEG_TARGET_SPELL,
+                    new Object[]{source},
+                    this,
+                    "Counter target spell$ unless its controller pays {1}.");
 		}
 
 		@Override
@@ -31,5 +35,4 @@ public class Spiketail_Hatchling {
 			}
 		}
 	};
-
 }

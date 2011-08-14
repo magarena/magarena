@@ -14,12 +14,10 @@ import java.util.Collection;
 import java.util.EnumSet;
 
 public class Mirror_Entity {
-
-	public static final MagicPermanentActivation V1326 = new MagicPermanentActivation( 
+	public static final MagicPermanentActivation A  = new MagicPermanentActivation( 
 			new MagicCondition[]{MagicManaCost.X.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true,1),
-            "X/X"
-            ) {
+            "X/X") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X)};

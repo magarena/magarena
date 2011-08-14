@@ -9,8 +9,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Goblin_Artillery {
-
-	public static final MagicPermanentActivation V1040 =new MagicPermanentActivation(			"Goblin Artillery",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
@@ -46,5 +45,4 @@ public class Goblin_Artillery {
 			}
 		}
 	};
-
 }

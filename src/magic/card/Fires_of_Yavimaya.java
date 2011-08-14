@@ -10,8 +10,7 @@ import magic.model.event.*;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Fires_of_Yavimaya {
-
-	public static final MagicPermanentActivation V2354 =new MagicPermanentActivation(			"Fires of Yavimaya",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             null,
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
@@ -46,5 +45,4 @@ public class Fires_of_Yavimaya {
 			}
 		}
 	};
-
 }

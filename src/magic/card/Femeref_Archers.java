@@ -8,12 +8,10 @@ import magic.model.event.*;
 import magic.model.target.MagicDamageTargetPicker;
 
 public class Femeref_Archers {
-
-	public static final MagicPermanentActivation V826 =new MagicPermanentActivation(			"Femeref Archers",
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Attack),
-            "Damage"
-            ) {
+            "Damage") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
@@ -27,7 +25,9 @@ public class Femeref_Archers {
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING,
                     new MagicDamageTargetPicker(4),
-                    new Object[]{source},this,"Femeref Archers deals 4 damage to target attacking creature$ with flying.");
+                    new Object[]{source},
+                    this,
+                    source + " deals 4 damage to target attacking creature$ with flying.");
 		}
 
 		@Override
@@ -39,5 +39,4 @@ public class Femeref_Archers {
 			}
 		}
 	};
-	
 }

@@ -13,7 +13,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Fists_of_the_Anvil {
-	public static final MagicSpellCardEvent V3795 =new MagicSpellCardEvent() {
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player=cardOnStack.getController();
