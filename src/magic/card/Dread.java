@@ -14,16 +14,16 @@ public class Dread {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPlayer player=permanent.getController();
 			final MagicDamage damage=(MagicDamage)data;
-            final MagicPermanent source=(MagicPermanent)damage.getSource();
-			return (damage.getTarget()==player&&damage.getSource().isPermanent()&&source.isCreature()) ?
+			final MagicPlayer player=permanent.getController();
+			return (damage.getTarget()==player && 
+                    damage.getSource().isCreature()) ?
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{source},
+                        new Object[]{damage.getSource()},
                         this,
-                        "Destroy "+source+"."):
+                        "Destroy "+damage.getSource()+"."):
                 null;
 		}
 		
