@@ -11,20 +11,17 @@ public class MagicCounterItemOnStackAction extends MagicAction {
 	private final MagicLocationType toLocation;
 	
 	public MagicCounterItemOnStackAction(final MagicItemOnStack itemOnStack,final MagicLocationType toLocation) {
-		
 		this.itemOnStack=itemOnStack;
 		this.toLocation=toLocation;
 	}
 	
 	public MagicCounterItemOnStackAction(final MagicItemOnStack itemOnStack) {
-
 		this(itemOnStack,MagicLocationType.Graveyard);
 	}
 
 	@Override
 	public void doAction(final MagicGame game) {
-
-		if (itemOnStack.canBeCountered()) {
+		if (game.getStack().contains(itemOnStack) && itemOnStack.canBeCountered()) {
 			game.doAction(new MagicRemoveItemFromStackAction(itemOnStack));
 			if (itemOnStack.isSpell()) {
 				final MagicCardOnStack cardOnStack=(MagicCardOnStack)itemOnStack;

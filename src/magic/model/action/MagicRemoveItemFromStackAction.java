@@ -10,21 +10,22 @@ public class MagicRemoveItemFromStackAction extends MagicAction {
 	private int position;
 	
 	public MagicRemoveItemFromStackAction(final MagicItemOnStack itemOnStack) {
-
 		this.itemOnStack=itemOnStack;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		final MagicStack stack=game.getStack();
 		position=stack.indexOf(itemOnStack);
-		game.getStack().removeFrom(position);
+        if (position != -1) {
+    		game.getStack().removeFrom(position);
+        }
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
-		game.getStack().addTo(position,itemOnStack);
+        if (position != -1) {
+    		game.getStack().addTo(position,itemOnStack);
+        }
 	}
 }
