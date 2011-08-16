@@ -34,6 +34,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String CARD_EXPLORER_ITEM="Explorer";
 	private static final String KEYWORDS_ITEM="Keywords";
 	private static final String README_ITEM="ReadMe";
+	private static final String ABOUT_ITEM="About";
     //java -DtestGame=X to start with a specific game 
 	private static final String testGame=System.getProperty("testGame");
 	
@@ -56,6 +57,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem cardExplorerItem;
 	private JMenuItem keywordsItem;
 	private JMenuItem readMeItem;
+	private JMenuItem aboutItem;
 	private MagicTournament tournament=null;
 	private TournamentPanel tournamentPanel=null;
 	private GamePanel gamePanel=null;
@@ -138,6 +140,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			keywordsItem.setEnabled(enabled);
 		}else if (README_ITEM.equals(item)) {
 			readMeItem.setEnabled(enabled);
+		}else if (ABOUT_ITEM.equals(item)) {
+			aboutItem.setEnabled(enabled);
 		}
 	}
 	
@@ -179,6 +183,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		enableMenuItem(CARD_EXPLORER_ITEM,true);
 		enableMenuItem(KEYWORDS_ITEM,true);
 		enableMenuItem(README_ITEM,true);
+		enableMenuItem(ABOUT_ITEM,true);
 	}
 	
 	private void closeContent() {
@@ -265,6 +270,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 		keywordsItem=new JMenuItem("Keywords");
 		keywordsItem.addActionListener(this);
 		helpMenu.add(keywordsItem);
+		
+		aboutItem=new JMenuItem("About Magarena");
+		aboutItem.addActionListener(this);
+		helpMenu.add(aboutItem);
 		
 		final JMenuBar menuBar=new JMenuBar();
 		menuBar.add(tournamentMenu);
@@ -511,6 +520,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			openKeywords();
 		}else if (source==readMeItem) {
 			openReadme();
+		}else if (source==aboutItem) {
+			new AboutDialog(this);
 		}
 	}
     
