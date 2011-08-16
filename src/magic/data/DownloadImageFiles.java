@@ -25,7 +25,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
             try { //create file input stream
     			stream=new FileInputStream(filename.substring(7));
             } catch (final FileNotFoundException ex) {
-                System.err.println("ERROR! Unale to find " + filename);
+                System.err.println("ERROR! Unable to find " + filename);
                 return;
             }
 		} else {
