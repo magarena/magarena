@@ -3604,6 +3604,17 @@ converted=2
 cost={B}{B}
 timing=draw
 
+>Act of Treason
+image=http://magiccards.info/scans/en/m12/121.jpg
+value=4
+removal=5
+rarity=C
+type=Sorcery
+color=r
+converted=3
+cost={2}{R}
+timing=removal
+
 >Basilisk Collar
 image=http://magiccards.info/scans/en/wwk/122.jpg
 value=4
