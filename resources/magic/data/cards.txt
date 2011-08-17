@@ -3421,6 +3421,20 @@ power=2
 toughness=2
 timing=fmain
 
+>AEther Adept
+image=http://magiccards.info/scans/en/m12/41.jpg
+value=3
+removal=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=3
+cost={1}{U}{U}
+power=2
+toughness=2
+timing=fmain
+
 >Cairn Wanderer
 image=http://magiccards.info/scans/en/lw/105.jpg
 value=4
