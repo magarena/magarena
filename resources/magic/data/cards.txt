@@ -40,6 +40,19 @@ toughness=6
 ability=flying,first strike,vigilance,trample,haste,protection from black,protection from red
 timing=fmain
 
+>Arbalest Elite
+image=http://magiccards.info/scans/en/m12/5.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Archer
+color=w
+converted=4
+cost={2}{W}{W}
+power=2
+toughness=3
+timing=main
+
 >Assault Zeppelid
 image=http://magiccards.info/scans/en/di/103.jpg
 value=3
