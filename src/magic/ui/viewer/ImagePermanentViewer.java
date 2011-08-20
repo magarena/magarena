@@ -88,9 +88,7 @@ public class ImagePermanentViewer extends JPanel {
 	}
 
 	private void buildLinkedPermanents(final List<PermanentViewerInfo> linkedInfos,final PermanentViewerInfo info) {
-		
 		for (final PermanentViewerInfo blocker : info.blockers) {
-
 			buildLinkedPermanents(linkedInfos,blocker);
 		}
 		linkedInfos.addAll(info.linked);
@@ -98,12 +96,10 @@ public class ImagePermanentViewer extends JPanel {
 	}
 	
 	private Dimension calculateLogicalSize(final List<Rectangle> linkedLogicalRectangles) {
-
 		int width=0;
 		int height=0;
 		int x=-LOGICAL_X_MARGIN;
 		for (final PermanentViewerInfo linkedInfo : linkedInfos) {
-
 			x+=LOGICAL_X_MARGIN;
 			final int y=linkedInfo.lowered?LOGICAL_Y_MARGIN:0;
 			final Rectangle rect;
@@ -123,12 +119,10 @@ public class ImagePermanentViewer extends JPanel {
 	
 	@Override
 	public void setSize(final int width,final int height) {
-		
 		super.setSize(width,height);
 		
 		linkedScreenRectangles=new ArrayList<Rectangle>();
 		for (final Rectangle logicalRect : linkedLogicalRectangles) {
-			
 			final Rectangle screenRect=new Rectangle();
 			screenRect.x=(logicalRect.x*width)/logicalSize.width;
 			screenRect.y=(logicalRect.y*height)/logicalSize.height;
@@ -139,38 +133,31 @@ public class ImagePermanentViewer extends JPanel {
 	}
 	
 	public int getPosition() {
-		
 		return permanentInfo.position;
 	}
 	
 	public Dimension getLogicalSize() {
-		
 		return logicalSize;
 	}
 	
 	public void setLogicalPosition(final Point logicalPosition) {
-		
 		this.logicalPosition=logicalPosition;
 	}
 	
 	public Point getLogicalPosition() {
-		
 		return logicalPosition;
 	}
 	
 	public void setLogicalRow(final int logicalRow) {
-		
 		this.logicalRow=logicalRow;
 	}
 	
 	public int getLogicalRow() {
-		
 		return logicalRow;
 	}
 			
 	@Override
 	public void paint(final Graphics g) {
-
 		super.paint(g);
 
 		final Color choiceColor;
@@ -185,7 +172,6 @@ public class ImagePermanentViewer extends JPanel {
 		final Graphics2D g2d=(Graphics2D)g;
 		g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 		for (int index=0;index<linkedScreenRectangles.size();index++) {
-
 			final PermanentViewerInfo linkedInfo=linkedInfos.get(index);
 			final BufferedImage image=
                 HighQualityCardImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
