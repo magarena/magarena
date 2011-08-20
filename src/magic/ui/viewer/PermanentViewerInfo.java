@@ -50,7 +50,6 @@ public class PermanentViewerInfo {
 	public final SortedSet<PermanentViewerInfo> linked;
 	
 	public PermanentViewerInfo(final MagicGame game,final MagicPermanent permanent) {
-		
 		this.permanent=permanent;
 		cardDefinition=permanent.getCardDefinition();
 		name=permanent.getName();
@@ -82,7 +81,6 @@ public class PermanentViewerInfo {
 	}
 	
 	private static String getPowerToughness(final MagicGame game,final MagicPermanent permanent) {
-
 		if (permanent.isCreature()) {
 			final MagicPowerToughness pt=permanent.getPowerToughness(game);
 			return pt.power+"/"+pt.toughness;
@@ -91,7 +89,6 @@ public class PermanentViewerInfo {
 	}
 		
 	private static String getText(final MagicGame game,final MagicPermanent permanent,final long abilityFlags) {
-		
 		final StringBuffer textBuffer=new StringBuffer("");			
 		
 		// States
@@ -188,7 +185,6 @@ public class PermanentViewerInfo {
 	}	
 	
 	private static int getPosition(final MagicPermanent permanent) {
-
 		if (permanent.isCreature()) {
 			return 2;
 		} else if (permanent.isLand()) {
@@ -210,10 +206,8 @@ public class PermanentViewerInfo {
 	}
 	
 	private static MagicColor getManaColor(final MagicPermanent permanent) {
-		
 		final EnumSet<MagicSubType> flags=permanent.getSubTypeFlags();
 		for (final MagicColor color : MagicColor.values()) {
-			
 			if (color.getLandSubType().hasSubType(flags)) {
 				return color;
 			}
@@ -222,24 +216,19 @@ public class PermanentViewerInfo {
 	}
 	
 	private static List<PermanentViewerInfo> getBlockers(final MagicGame game,final MagicPermanent permanent) {
-		
 		final List<PermanentViewerInfo> blockers=new ArrayList<PermanentViewerInfo>();
 		for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-			
 			blockers.add(new PermanentViewerInfo(game,blocker));
 		}
 		return blockers;
 	}
 	
 	private static SortedSet<PermanentViewerInfo> getLinked(final MagicGame game,final MagicPermanent permanent) {
-		
 		final SortedSet<PermanentViewerInfo> linked=new TreeSet<PermanentViewerInfo>(NAME_COMPARATOR);
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
-		
 			linked.add(new PermanentViewerInfo(game,equipment));
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
-
 			linked.add(new PermanentViewerInfo(game,aura));
 		}
 		return linked;

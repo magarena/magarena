@@ -25,7 +25,6 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 	private final ViewerScrollPane viewerPane;
 	
 	public PermanentsViewer(final ViewerInfo viewerInfo,final GameController controller) {
-		
 		this.viewerInfo=viewerInfo;
 		this.controller=controller;
 		setOpaque(false);
@@ -41,7 +40,6 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 	}
 
 	public final void update() {
-
 		final int maxWidth=getWidth()-25;
 		
 		if (titleBar!=null) {
@@ -58,7 +56,6 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 		PermanentViewerInfo previousPermanentInfo=null;
 		final SortedSet<PermanentViewerInfo> basicLands=new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
 		for (final PermanentViewerInfo permanentInfo : getPermanents()) {
-
 			if (permanentInfo.basic) {
 				basicLands.add(permanentInfo);
 				previousPermanentInfo=permanentInfo;
@@ -80,7 +77,6 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 		if (!basicLands.isEmpty()) {
 			basicLandsPanel.setLayout(new GridLayout(1,8));
 			for (final PermanentViewerInfo landPermanentInfo : basicLands) {
-			
 				final BasicLandPermanentButton button=new BasicLandPermanentButton(landPermanentInfo,controller);
 				basicLandsPanel.add(button);
 				targetViewers.add(button);
@@ -92,15 +88,12 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 	}
 	
 	public boolean isEmpty() {
-		
 		return targetViewers.isEmpty();
 	}
 	
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
-
 		for (final ChoiceViewer targetViewer : targetViewers) {
-			
 			targetViewer.showValidChoices(validChoices);
 		}
 	}

@@ -20,7 +20,6 @@ public class ImagePermanentsViewer extends JPanel {
 	private Set<Object> validChoices;
 	
 	public ImagePermanentsViewer(final GameController controller) {
-
 		this.controller=controller;
 		
 		setLayout(null);
@@ -31,15 +30,12 @@ public class ImagePermanentsViewer extends JPanel {
 	}
 
 	private void divideOverOneRow(final List<ImagePermanentViewer> viewers) {
-		
 		for (final ImagePermanentViewer viewer : viewers) {
-			
 			viewer.setLogicalRow(1);
 		}
 	}
 	
 	private void divideOverTwoRows(final List<ImagePermanentViewer> viewers) {
-
 		final int size=viewers.size();
 		int firstWidth=0;
 		int secondWidth=0;
@@ -47,7 +43,6 @@ public class ImagePermanentsViewer extends JPanel {
 		int secondIndex=size-1;
 		
 		while (firstIndex<=secondIndex) {
-			
 			final ImagePermanentViewer firstViewer=viewers.get(firstIndex);
 			final ImagePermanentViewer secondViewer=viewers.get(secondIndex);
 			final int width1=firstViewer.getWidth()+HORIZONTAL_SPACING;
@@ -65,7 +60,6 @@ public class ImagePermanentsViewer extends JPanel {
 	}
 
 	private int calculatePositions(final List<ImagePermanentViewer> viewers) {
-		
 		int currentRow=1;
 		int x=0;
 		int y=0;
@@ -119,7 +113,6 @@ public class ImagePermanentsViewer extends JPanel {
 	}
 
 	private void calculateOptimalPositions(final List<ImagePermanentViewer> viewers) {
-
 		final int size=viewers.size();
 		if (size==0) {
 			return;
@@ -138,16 +131,13 @@ public class ImagePermanentsViewer extends JPanel {
 	}
 	
 	public void viewPermanents(final Collection<PermanentViewerInfo> permanentInfos) {
-
 		final List<ImagePermanentViewer> newViewers=new ArrayList<ImagePermanentViewer>();
 		for (final PermanentViewerInfo permanentInfo : permanentInfos) {
-			
 			newViewers.add(new ImagePermanentViewer(this,permanentInfo));
 		}
 		calculateOptimalPositions(newViewers);
 		removeAll();
 		for (final ImagePermanentViewer viewer : newViewers) {
-			
 			add(viewer);
 		}		
 		viewers=newViewers;		
@@ -156,21 +146,17 @@ public class ImagePermanentsViewer extends JPanel {
 	}
 	
 	public GameController getController() {
-		
 		return controller;
 	}
 	
 	public void showValidChoices(final Set<Object> validChoices) {
-		
 		this.validChoices=validChoices;
 		for (final ImagePermanentViewer viewer : viewers) {
-			
 			viewer.repaint();
 		}
 	}
 	
 	public boolean isValidChoice(final PermanentViewerInfo permanentInfo) {
-		
 		return validChoices.contains(permanentInfo.permanent);
 	}
 }
