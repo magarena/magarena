@@ -102,7 +102,6 @@ public class ImagePermanentsViewer extends JPanel {
 		}
 		
 		for (final ImagePermanentViewer viewer : viewers) {
-			
 			final Point point=viewer.getLogicalPosition();
 			viewer.setLocation((point.x*scaleMult)/scaleDiv,(point.y*scaleMult)/scaleDiv);
 			final Dimension size=viewer.getLogicalSize();

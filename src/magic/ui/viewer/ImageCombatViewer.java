@@ -19,7 +19,6 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 	private final ImagePermanentsViewer permanentsViewer;
 	
 	public ImageCombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
-
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		
 		this.viewerInfo=viewerInfo;
@@ -54,7 +53,8 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 				creatures.add(permanentInfo);
 			}
 		}
-		
+	
+        //add in blockers whose attacker is destroyed
 		for (final PermanentViewerInfo permanentInfo : defendingPlayerInfo.permanents) {
 			if (permanentInfo.blocking&&permanentInfo.blockingInvalid) {
 				creatures.add(permanentInfo);
@@ -66,7 +66,6 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 	
 	@Override
 	public void showValidChoices(final Set<Object> validChoices) {
-
 		permanentsViewer.showValidChoices(validChoices);
 	}
 }
