@@ -1,3 +1,5 @@
 #!/bin/sh
-cd ${0%Magarena.sh}; java -Xms256M -Xmx256M -jar Magarena.exe
+self="${0#./}"
+base="${self%/*}"
+cd $base; java -Xms256M -Xmx256M -jar Magarena.exe
 
