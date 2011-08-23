@@ -67,6 +67,19 @@ toughness=3
 ability=flying,trample
 timing=main
 
+>Auramancer
+image=http://magiccards.info/scans/en/m12/9.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=w
+converted=3
+cost={2}{W}
+power=2
+toughness=2
+timing=main
+
 >Aven Mimeomancer
 image=http://magiccards.info/scans/en/arb/2.jpg
 value=4
