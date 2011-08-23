@@ -12,6 +12,32 @@ toughness=1
 ability=exalted
 timing=fmain
 
+>Amphin Cutthroat
+image=http://magiccards.info/scans/en/m12/43.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Salamander,Rogue
+color=u
+converted=4
+cost={3}{U}
+power=2
+toughness=4
+timing=main
+
+>Armored Warhorse
+image=http://magiccards.info/scans/en/m12/7.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Horse
+color=w
+converted=2
+cost={W}{W}
+power=2
+toughness=3
+timing=main
+
 >Ashenmoor Gouger
 image=http://magiccards.info/scans/en/shm/180.jpg
 value=3
