@@ -40,6 +40,19 @@ toughness=6
 ability=flying,first strike,vigilance,trample,haste,protection from black,protection from red
 timing=fmain
 
+>Alluring Siren
+image=http://magiccards.info/scans/en/m12/42.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Siren
+color=u
+converted=2
+cost={1}{U}
+power=1
+toughness=1
+timing=smain
+
 >Arbalest Elite
 image=http://magiccards.info/scans/en/m12/5.jpg
 value=2
