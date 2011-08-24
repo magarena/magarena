@@ -22,7 +22,7 @@ public class Perimeter_Captain {
                         player,
                         new Object[]{player},
                         this,
-                        "You gain 2 life.") :
+                        player + " gains 2 life.") :
                 null;
 		}
 		

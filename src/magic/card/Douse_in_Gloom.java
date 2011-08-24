@@ -28,7 +28,8 @@ public class Douse_in_Gloom {
                     new MagicDamageTargetPicker(2),
                     new Object[]{cardOnStack,player},
                     this,
-                    card + " deals 2 damage to target creature$ and you gain 2 life.");
+                    card + " deals 2 damage to target creature$ and " +
+                    		player + " gains 2 life.");
 		}
 		@Override
 		public void executeEvent(

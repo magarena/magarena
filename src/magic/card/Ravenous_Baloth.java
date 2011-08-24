@@ -26,7 +26,7 @@ public class Ravenous_Baloth {
                     player,
                     new Object[]{player},
                     this,
-                    "You gain 4 life.");
+                    player + " gains 4 life.");
 		}
 		@Override
 		public void executeEvent(

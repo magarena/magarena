@@ -19,7 +19,7 @@ public class Moroii {
                         player,
                         new Object[]{player},
                         this,
-                        "You lose 1 life.") :
+                        player + " loses 1 life.") :
                 null;
 		}
 		

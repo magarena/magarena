@@ -21,7 +21,7 @@ public class Kor_Firewalker {
                         player,
                         new Object[]{player},
                         this,
-                        "You gain 1 life.");
+                        player + " gains 1 life.");
 			}
 			return null;
 		}

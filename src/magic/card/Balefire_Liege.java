@@ -50,7 +50,7 @@ public class Balefire_Liege {
                         player,
                         new Object[]{player},
                         this,
-                        player + " gain 3 life."):
+                        player + " gains 3 life."):
                 null;
 		}
 		@Override

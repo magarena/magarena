@@ -26,7 +26,8 @@ public class Reanimate {
                     MagicGraveyardTargetPicker.getInstance(),
                     new Object[]{cardOnStack,player},
                     this,
-                    "Put target creature card$ from a graveyard onto the battlefield under your control. You lose life equal to its converted mana cost.");
+                    "Put target creature card$ from a graveyard onto the battlefield under your control. " +
+                    		player + " loses life equal to its converted mana cost.");
 		}
 
 		@Override

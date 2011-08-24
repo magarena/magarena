@@ -30,7 +30,7 @@ public class Armadillo_Cloak {
                         player,
                         new Object[]{player,amount},
                         this,
-                        "You gain "+amount+" life.");
+                        player + "gains " + amount + " life.");
 			}
 			return null;
 		}

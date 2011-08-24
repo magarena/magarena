@@ -21,7 +21,7 @@ public class Mycoid_Shepherd {
                         permanent.getController(),
                         new Object[]{permanent.getController()},
                         this,
-                        permanent.getController() + " gain 5 life."):
+                        permanent.getController() + " gains 5 life."):
                  null;
 		}
 		@Override
@@ -48,7 +48,7 @@ public class Mycoid_Shepherd {
                         player,
                         new Object[]{player},
                         this,
-                        player + " gain 5 life."):
+                        player + " gains 5 life."):
                 null;
 		}
 		@Override

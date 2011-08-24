@@ -22,7 +22,7 @@ public class Absorb {
                     MagicTargetChoice.NEG_TARGET_SPELL,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Counter target spell$. You gain 3 life.");
+                    "Counter target spell$. " + player + " gains 3 life.");
 		}
 		@Override
 		public void executeEvent(

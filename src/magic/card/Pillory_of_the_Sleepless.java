@@ -28,7 +28,7 @@ public class Pillory_of_the_Sleepless {
                         player,
                         new Object[]{player},
                         this,
-                        "You lose 1 life.") :
+                        enchanted.getController() + " loses 1 life.") :
                 null;
 		}
 		@Override

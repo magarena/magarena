@@ -24,7 +24,8 @@ public class Doomgape {
                         player,
                         new Object[]{permanent,player},
                         this,
-                        "Sacrifice a creature. You gain life equal to that creature's toughness."):
+                        "Sacrifice a creature. " + player + 
+                        		" gains life equal to that creature's toughness."):
                 null;
 		}
 		@Override

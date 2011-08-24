@@ -30,7 +30,7 @@ public class Treva__the_Renewer {
                         new Object[]{player},
                         this,
                         "You may$ pay {2}{W}$. If you do, choose a color$. " + 
-                        "You gain 1 life for each permanent of that color."):
+                        player + " gains 1 life for each permanent of that color."):
                 null;
 		}
 		@Override

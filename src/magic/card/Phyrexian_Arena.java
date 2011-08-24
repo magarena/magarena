@@ -20,7 +20,7 @@ public class Phyrexian_Arena {
                         player,
                         new Object[]{player},
                         this,
-                        player + " draw a card and lose 1 life."):
+                        player + " draws a card and loses 1 life."):
                 null;
 		}
 		@Override

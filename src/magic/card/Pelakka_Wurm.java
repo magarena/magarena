@@ -22,7 +22,7 @@ public class Pelakka_Wurm {
                     player,
                     new Object[]{player},
                     this,
-                    "You gain 7 life.");
+                    player + " gains 7 life.");
 		}
 		@Override
 		public void executeEvent(

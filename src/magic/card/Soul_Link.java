@@ -32,7 +32,7 @@ public class Soul_Link {
                         player,
                         new Object[]{player,amount},
                         this,
-                        "You gain "+amount+" life.") :
+                        player + " gains " + amount + " life.") :
                 null;
 		}
 		@Override
@@ -57,7 +57,7 @@ public class Soul_Link {
                     permanent,
                     player,
                     new Object[]{player,amount},this,
-                    "You gain "+amount+" life.") :
+                    player + " gains " + amount + " life.") :
                 null;
 		}
 		@Override

@@ -22,8 +22,8 @@ public class Sword_of_War_and_Peace {
                         new Object[]{permanent,player,targetPlayer},
                         this,
                         permanent + " deals damage to " + targetPlayer + 
-                        " equal to the number of cards in his or her hand and "+
-                        "you gain 1 life for each card in your hand.");
+                        " equal to the number of cards in his or her hand and " +
+                        player + " gains 1 life for each card in your hand.");
 			}
 			return null;
 		}

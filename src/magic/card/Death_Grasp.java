@@ -29,7 +29,8 @@ public class Death_Grasp {
                     new MagicDamageTargetPicker(amount),
                     new Object[]{cardOnStack,player,amount},
                     this,
-                    card + " deals "+amount+" damage to target creature or player$. You gain "+amount+" life.");
+                    card + " deals " + amount + " damage to target creature or player$. " +
+                    		player + " gains "+amount+" life.");
 		}
 		@Override
 		public void executeEvent(

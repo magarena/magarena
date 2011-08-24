@@ -21,7 +21,7 @@ public class Bottle_Gnomes {
                     player,
                     new Object[]{player},
                     this,
-                    player + " gain 3 life.");
+                    player + " gains 3 life.");
 		}
 		@Override
 		public void executeEvent(

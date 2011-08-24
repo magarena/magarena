@@ -50,7 +50,7 @@ public class Ghost_Council_of_Orzhova {
                     MagicTargetChoice.TARGET_OPPONENT,
                     new Object[]{player},
                     this,
-                    "Target opponent$ loses 1 life and you gain 1 life.");
+                    "Target opponent$ loses 1 life and " + player + " gains 1 life.");
 		}
 		@Override
 		public void executeEvent(

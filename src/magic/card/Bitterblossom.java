@@ -21,7 +21,7 @@ public class Bitterblossom {
                         player,
                         new Object[]{player},
                         this,
-                        "You lose 1 life and put a 1/1 black Faerie Rogue creature token with flying onto the battlefield.");
+                        player + " loses 1 life and puts a 1/1 black Faerie Rogue creature token with flying onto the battlefield.");
 			}
 			return null;
 		}

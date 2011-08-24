@@ -19,7 +19,7 @@ public class Sylvok_Lifestaff {
                         player,
                         new Object[]{player},
                         this,
-                        "You gain 3 life.");
+                        player + " gains 3 life.");
 			}			
 			return null;
 		}

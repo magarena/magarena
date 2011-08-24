@@ -27,7 +27,8 @@ public class Sword_of_Light_and_Shadow {
                         MagicGraveyardTargetPicker.getInstance(),
                         new Object[]{player},
                         this,
-                        "You gain 3 life and you may$ return target creature card$ from your graveyard to your hand.");
+                        player + " gains 3 life and you may$ return target creature card$ " +
+                        		"from your graveyard to your hand.");
 			}
 			return null;
 		}

@@ -21,7 +21,8 @@ public class Soul_Feast {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Target player$ loses 4 life and you gain 4 life.");
+                    "Target player$ loses 4 life and " +
+                    		player + " gains 4 life.");
 		}
 		@Override
 		public void executeEvent(

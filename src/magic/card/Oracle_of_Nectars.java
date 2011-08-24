@@ -23,7 +23,7 @@ public class Oracle_of_Nectars {
                     player,
                     new Object[]{player,amount},
                     this,
-                    "You gain "+amount+" life.");
+                    player + " gains " + amount + " life.");
 		}
 		@Override
 		public void executeEvent(

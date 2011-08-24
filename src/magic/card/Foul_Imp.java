@@ -18,7 +18,7 @@ public class Foul_Imp {
                     player,
                     new Object[]{player},
                     this,
-                    player + " lose 2 life.");
+                    player + " loses 2 life.");
 		}
 		@Override
 		public void executeEvent(

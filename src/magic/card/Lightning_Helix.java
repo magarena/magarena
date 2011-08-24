@@ -28,7 +28,8 @@ public class Lightning_Helix {
                     new MagicDamageTargetPicker(3),
                     new Object[]{cardOnStack,player},
                     this,
-                    card + " deals 3 damage to target creature or player$ and you gain 3 life.");
+                    card + " deals 3 damage to target creature or player$ and " +
+                    		player + " gains 3 life.");
 		}
 		@Override
 		public void executeEvent(

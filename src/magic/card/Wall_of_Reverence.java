@@ -23,7 +23,7 @@ public class Wall_of_Reverence {
                         MagicPowerTargetPicker.getInstance(),
                         new Object[]{player},
                         this,
-                        "You gain life equal to the power of target creature$ you control.");
+                        player + " gains life equal to the power of target creature$ he or she controls.");
 			}
 			return null;
 		}

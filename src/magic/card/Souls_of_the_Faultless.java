@@ -24,7 +24,8 @@ public class Souls_of_the_Faultless {
                         player,
                         new Object[]{player,opponent,amount},
                         this,
-                        "You gain "+amount+" life and attacking player loses "+amount+" life.") :
+                        player + " gains " + amount + " life and attacking player loses " +
+                        		amount + " life.") :
                 null;
 		}
 		

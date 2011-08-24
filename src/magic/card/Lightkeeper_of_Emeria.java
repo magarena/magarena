@@ -24,7 +24,7 @@ public class Lightkeeper_of_Emeria {
                     new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " + 
-                    "you gain 2 life for each time it was kicked$.");
+                    player + " gains 2 life for each time it was kicked$.");
 		}
 		@Override
 		public void executeEvent(
@@ -54,7 +54,7 @@ public class Lightkeeper_of_Emeria {
                             game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
                         }
                     },
-                    "You gain "+life+" life."
+                    player + " gains " + life + " life."
                 );
                 game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
 			}
