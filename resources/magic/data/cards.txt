@@ -230,6 +230,19 @@ toughness=2
 ability=first strike,protection from white
 timing=main
 
+>Blood Seeker
+image=http://magiccards.info/scans/en/m12/81.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire,Shaman
+color=b
+converted=2
+cost={1}{B}
+power=1
+toughness=1
+timing=fmain
+
 >Cunning Sparkmage
 image=http://magiccards.info/scans/en/wwk/79.jpg
 value=3
