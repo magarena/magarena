@@ -59,7 +59,7 @@ public class Siege_Gang_Commander {
                     player,
                     new Object[]{player},
                     this,
-                    "You put three 1/1 red Goblin creature tokens onto the battlefield.");
+                    player + " puts three 1/1 red Goblin creature tokens onto the battlefield.");
 		}
 		@Override
 		public void executeEvent(

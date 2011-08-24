@@ -28,7 +28,7 @@ public class Followed_Footsteps {
                         player,
                         new Object[]{permanent,player},
                         this,
-                        "You put a token that's a copy of enchanted creature onto the battlefield.");
+                        player + " puts a token that's a copy of enchanted creature onto the battlefield.");
 			}
 			return null;
 		}

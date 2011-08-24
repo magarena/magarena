@@ -19,7 +19,7 @@ public class Pulse_of_the_Tangle {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "You put a 3/3 green Beast creature token onto the battlefield. " + 
+                    player + " puts a 3/3 green Beast creature token onto the battlefield. " + 
                     "Then if your opponent controls more creatures than you, return " + card + " to its owner's hand.");
 		}
 		@Override

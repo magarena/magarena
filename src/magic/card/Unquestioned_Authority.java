@@ -23,13 +23,13 @@ public class Unquestioned_Authority {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final Object data) {
-			final MagicPlayer player=permanent.getController();
+			final MagicPlayer player = permanent.getController();
 			return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
-                    "You draw a card.");
+                    permanent.getController() + " draws a card.");
 		}
 		@Override
 		public void executeEvent(

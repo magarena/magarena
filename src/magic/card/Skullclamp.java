@@ -19,7 +19,7 @@ public class Skullclamp {
                         player,
                         new Object[]{player},
                         this,
-                        "You draw two cards.") :
+                        player + " draws two cards.") :
                 null;
 		}
 		@Override

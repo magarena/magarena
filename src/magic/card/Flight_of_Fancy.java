@@ -26,7 +26,7 @@ public class Flight_of_Fancy {
                     player,
                     new Object[]{player},
                     this,
-                    "You draw two cards.");
+                    player + " draws two cards.");
 		}
 		@Override
 		public void executeEvent(

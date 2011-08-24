@@ -23,7 +23,7 @@ public class Arcanis_the_Omnipotent {
                     player,
                     new Object[]{player},
                     this,
-                    "You draw three cards.");
+                    player + " draws three cards.");
 		}
 		@Override
 		public void executeEvent(

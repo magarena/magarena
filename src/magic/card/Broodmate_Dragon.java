@@ -19,7 +19,7 @@ public class Broodmate_Dragon {
                     player,
                     new Object[]{player},
                     this,
-                    "You put a 4/4 red Dragon creature token with flying onto the battlefield.");
+                    player + " puts a 4/4 red Dragon creature token with flying onto the battlefield.");
 		}
 		@Override
 		public void executeEvent(

@@ -48,7 +48,8 @@ public class Sphinx_of_Lost_Truths {
                     player,
                     new Object[]{player,permanent,kicked},
                     this,
-                    kicked?"You draw three cards.":"You draw three cards. Then you discard three cards.");
+                    kicked ? player + " draws three cards." :
+                    	player + " draws three cards. Then discards three cards.");
 		}
 		@Override
 		public void executeEvent(

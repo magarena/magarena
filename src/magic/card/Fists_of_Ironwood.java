@@ -27,7 +27,7 @@ public class Fists_of_Ironwood {
                     player,
                     new Object[]{player},
                     this,
-                    "You put two 1/1 green Saproling creature tokens onto the battlefield.");
+                    player + " puts two 1/1 green Saproling creature tokens onto the battlefield.");
 		}
 		@Override
 		public void executeEvent(

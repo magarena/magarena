@@ -103,7 +103,7 @@ public class Skeletal_Vampire {
                     player,
                     new Object[]{player},
                     this,
-                    "You put two 1/1 black Bat creature tokens with flying onto the battlefield.");
+                    player + " puts two 1/1 black Bat creature tokens with flying onto the battlefield.");
 		}
 		
 		@Override
