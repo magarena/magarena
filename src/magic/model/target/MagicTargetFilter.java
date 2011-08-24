@@ -442,6 +442,21 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
+	
+	public static final MagicTargetFilter TARGET_NON_ZOMBIE_YOU_CONTROL = new MagicTargetFilter() {
+		
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			
+			return target.getController() == player &&
+					((MagicPermanent)target).isCreature() &&
+					!((MagicPermanent)target).hasSubType(MagicSubType.Zombie);
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
 
 	public static final MagicTargetFilter TARGET_CREATURE_YOUR_OPPONENT_CONTROLS=new MagicTargetFilter() {
 		

@@ -3959,6 +3959,16 @@ cost={1}{W}{W}
 static=player
 timing=enchantment
 
+>Call to the Grave
+image=http://magiccards.info/scans/en/m12/85.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=5
+cost={4}{B}
+timing=enchantment
+
 >Glory of Warfare
 image=http://magiccards.info/scans/en/arb/98.jpg
 value=4
