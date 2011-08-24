@@ -27,7 +27,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	
 	private static final int CARD_WIDTH=DefaultResolutionProfile.CARD_VIEWER_WIDTH;
 	private static final int CARD_HEIGHT=DefaultResolutionProfile.CARD_VIEWER_HEIGHT;
-	private static final int FILTER_HEIGHT=290;
+	private static final int FILTER_HEIGHT = 350;
 	private static final int LINE_SPACING=4;
 	private static final int LINE_WIDTH=200;
 	private static final int LINE_WIDTH2=LINE_WIDTH+LINE_SPACING+2;

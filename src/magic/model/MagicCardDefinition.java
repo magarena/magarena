@@ -582,4 +582,34 @@ public class MagicCardDefinition {
 			return IconImages.SPELL;
 		}
 	}
+	
+	public boolean subTypeHasText(String s) {
+		MagicSubType[] subTypeValues = MagicSubType.values();
+		for (final MagicSubType subtype : subTypeValues) {
+			if(subtype.hasSubType(subTypeFlags) && subtype.toString().toLowerCase().contains(s)) {
+				return true;
+			}
+		}
+		return false;
+	}
+		
+	public boolean abilityHasText(String s) {
+		MagicAbility[] abilityValues = MagicAbility.values();
+		for (final MagicAbility ability : abilityValues) {
+			if(hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public boolean hasText(String s) {
+		s = s.toLowerCase();
+		return (
+			fullName.toLowerCase().contains(s) ||
+			name.toLowerCase().contains(s) ||
+			subTypeHasText(s) ||
+			abilityHasText(s)
+		);
+	}
 }

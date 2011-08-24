@@ -9,6 +9,9 @@ import magic.ui.widget.TitleBar;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,7 +20,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ExplorerFilterPanel extends TexturedPanel implements ActionListener {
+public class ExplorerFilterPanel extends TexturedPanel implements ActionListener, DocumentListener {
 	
 	private static final long serialVersionUID = 1L;
 
@@ -51,6 +54,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private final JCheckBox exactlyCheckBox;
 	private final JCheckBox excludeCheckBox;
 	private final JCheckBox multiCheckBox;
+	private final JTextField textFilterField;
 	private final JRadioButton nameRadioButton;
 	private final JRadioButton convertedRadioButton;
 	private final int mode;
@@ -71,7 +75,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		final TitleBar titleBar=new TitleBar("Filter");
 		add(titleBar,BorderLayout.NORTH);
 
-		final JPanel mainPanel=new JPanel(new BorderLayout(0,2));
+		final JPanel mainPanel=new JPanel();
+		mainPanel.setLayout(new BoxLayout( mainPanel, BoxLayout.Y_AXIS));
 		mainPanel.setOpaque(false);
 		mainPanel.setBorder(FontsAndBorders.BLACK_BORDER);
 		add(mainPanel,BorderLayout.CENTER);
@@ -82,7 +87,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		final JPanel typeFilterPanel=new JPanel(new BorderLayout(8,0));
 		typeFilterPanel.setOpaque(false);
 		typeFilterPanel.setBorder(typeBorder);
-		mainPanel.add(typeFilterPanel,BorderLayout.NORTH);
+		mainPanel.add(typeFilterPanel);
 
 		final JPanel leftTypeFilterPanel=new JPanel(new GridLayout(3,1));
 		leftTypeFilterPanel.setOpaque(false);
@@ -112,7 +117,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		final JPanel colorFilterPanel=new JPanel(new BorderLayout());
 		colorFilterPanel.setOpaque(false);
 		colorFilterPanel.setBorder(colorBorder);
-		mainPanel.add(colorFilterPanel,BorderLayout.CENTER);
+		mainPanel.add(colorFilterPanel);
 
 		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
 		final JPanel colorsPanel=new JPanel(new GridLayout(1,MagicColor.NR_COLORS));
@@ -156,13 +161,25 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		otherColorPanel.add(multiCheckBox);
 		colorFilterPanel.add(otherColorPanel,BorderLayout.CENTER);
 
+		// Text
+		final TitledBorder textFilterBorder=BorderFactory.createTitledBorder("Text");
+		textFilterBorder.setTitleColor(textColor);
+		final JPanel textFilterPanel=new JPanel(new BorderLayout(8,0));
+		textFilterPanel.setOpaque(false);
+		textFilterPanel.setBorder(textFilterBorder);
+		textFilterField = new JTextField();
+		textFilterField.addActionListener(this);
+		textFilterField.getDocument().addDocumentListener(this);
+		textFilterPanel.add(textFilterField);
+		mainPanel.add(textFilterPanel);
+				
 		// Sort
 		final TitledBorder sortBorder=BorderFactory.createTitledBorder("Sort");
 		sortBorder.setTitleColor(textColor);
 		final JPanel sortFilterPanel=new JPanel(new BorderLayout(8,0));
 		sortFilterPanel.setOpaque(false);
 		sortFilterPanel.setBorder(sortBorder);
-		mainPanel.add(sortFilterPanel,BorderLayout.SOUTH);
+		mainPanel.add(sortFilterPanel);
 
 		final ButtonGroup sortGroup=new ButtonGroup();
 		nameRadioButton=new JRadioButton("Name",true);
@@ -231,6 +248,16 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			return false;
 		}
 		
+		// text
+		String filterString = textFilterField.getText();
+		String[] filters = filterString.split(" ");
+		for(int i=0; i<filters.length; i++) {
+			if(!cardDefinition.hasText(filters[i])) {
+				return false;
+			}
+		}
+		
+		// colors		
 		boolean useColors=false;
 		boolean validColors=false;
 		for (int colorIndex=0;colorIndex<colorCheckBoxes.length;colorIndex++) {
@@ -273,5 +300,19 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	public void actionPerformed(final ActionEvent event) {
 		
 		explorerPanel.updateCards();
+	}
+
+	@Override
+	public void insertUpdate(DocumentEvent arg0) {
+		explorerPanel.updateCards();
+	}
+
+	@Override
+	public void removeUpdate(DocumentEvent arg0) {
+		explorerPanel.updateCards();
+	}
+	
+	@Override
+	public void changedUpdate(DocumentEvent arg0) {
 	}
 }
