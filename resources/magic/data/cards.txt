@@ -243,6 +243,32 @@ power=1
 toughness=1
 timing=fmain
 
+>Bonebreaker Giant
+image=http://magiccards.info/scans/en/m12/123.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Giant
+color=r
+converted=5
+cost={4}{R}
+power=4
+toughness=4
+timing=main
+
+>Brindle Boar
+image=http://magiccards.info/scans/en/m12/167.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Boar
+color=g
+converted=3
+cost={2}{G}
+power=2
+toughness=2
+timing=main
+
 >Cunning Sparkmage
 image=http://magiccards.info/scans/en/wwk/79.jpg
 value=3
