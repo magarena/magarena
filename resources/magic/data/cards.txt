@@ -119,6 +119,20 @@ power=2
 toughness=2
 timing=main
 
+>Aven Fleetwing
+image=http://magiccards.info/scans/en/m12/44.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+color=u
+converted=4
+cost={3}{U}
+power=2
+toughness=2
+ability=flying,hexproof
+timing=fmain
+
 >Aven Mimeomancer
 image=http://magiccards.info/scans/en/arb/2.jpg
 value=4
@@ -160,6 +174,20 @@ power=4
 toughness=4
 ability=flying,exalted
 timing=fmain
+
+>Belltower Sphinx
+image=http://magiccards.info/scans/en/m12/46.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Sphinx
+color=u
+converted=5
+cost={4}{U}
+power=2
+toughness=5
+ability=flying
+timing=main
 
 >Birds of Paradise
 image=http://magiccards.info/scans/en/m11/165.jpg
