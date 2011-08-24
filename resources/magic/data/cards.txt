@@ -189,6 +189,19 @@ toughness=5
 ability=flying
 timing=main
 
+>Benalish Veteran
+image=http://magiccards.info/scans/en/m12/10.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+power=2
+toughness=2
+timing=main
+
 >Birds of Paradise
 image=http://magiccards.info/scans/en/m11/165.jpg
 value=4
