@@ -29,7 +29,11 @@ public class Archon_of_Justice {
 		}
 
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
 			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
 			if (permanent!=null) {
 				game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));

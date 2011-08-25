@@ -14,16 +14,15 @@ public class Butcher_of_Malakir {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-			if (MagicLocationType.Play==triggerData.fromLocation) {
-				final MagicPlayer controller=permanent.getController();
-				return new MagicEvent(
-                        permanent,
-                        controller,
-                        new Object[]{permanent,game.getOpponent(controller)},
-                        this,
-                        "Your opponent sacrifices a creature.");
-			}
-			return null;
+		    final MagicPlayer controller = (permanent != null) ? permanent.getController() : null;
+            return (MagicLocationType.Play==triggerData.fromLocation) ?
+				new MagicEvent(
+                    permanent,
+                    controller,
+                    new Object[]{permanent,game.getOpponent(controller)},
+                    this,
+                    "Your opponent sacrifices a creature."):
+                null;
 		}
 		
 		@Override
@@ -45,17 +44,18 @@ public class Butcher_of_Malakir {
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent otherPermanent=(MagicPermanent)data;
-			final MagicPlayer controller=permanent.getController();
-			if (otherPermanent!=permanent&&otherPermanent.getController()==controller&&otherPermanent.isCreature()) {
-				return new MagicEvent(
-                        permanent,
-                        controller,
-                        new Object[]{permanent,game.getOpponent(controller)},
-                        this,
-                        "Your opponent sacrifices a creature.");
-			}
-			return null;
+			final MagicPermanent otherPermanent = (MagicPermanent)data;
+			final MagicPlayer controller = permanent.getController();
+			return (otherPermanent != permanent && 
+                    otherPermanent.getController() == controller && 
+                    otherPermanent.isCreature()) ?
+				new MagicEvent(
+                    permanent,
+                    controller,
+                    new Object[]{permanent,game.getOpponent(controller)},
+                    this,
+                    "Your opponent sacrifices a creature."):
+                null;
 		}
 		
 		@Override
