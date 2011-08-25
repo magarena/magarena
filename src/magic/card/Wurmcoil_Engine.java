@@ -16,7 +16,7 @@ public class Wurmcoil_Engine {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
 			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
-			final MagicPlayer player = permanent.getController();
+			final MagicPlayer player = (permanent != null) ? permanent.getController() : null;
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
 				new MagicEvent(
                     permanent,
