@@ -21,6 +21,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int cemeteryReaper;
 	private static int creakwoodLiege;
 	private static int cumberStone;
+	private static int deathBaron;
 	private static int deathbringerLiege;
 	private static int eldraziMonument;
 	private static int eleshNorn;
@@ -101,6 +102,15 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		count = controller.getCount(captainOfTheWatch);
 		if (count > 0 && permanent.hasSubType(MagicSubType.Soldier)) {
 			both += getOtherCount(captainOfTheWatch,permanent,count);
+		}
+		count = controller.getCount(deathBaron);
+		if (count > 0 ) {
+			if (permanent.hasSubType(MagicSubType.Skeleton)) {
+				both += controller.getCount(deathBaron);
+			}
+			if (count > 0 && permanent.hasSubType(MagicSubType.Zombie)) {
+				both += getOtherCount(deathBaron,permanent,count);
+			}
 		}
 		count = controller.getCount(cemeteryReaper);
 		if (count > 0 && permanent.hasSubType(MagicSubType.Zombie)) {
@@ -240,6 +250,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		cemeteryReaper=definitions.getCard("Cemetery Reaper").getIndex();
 		creakwoodLiege=definitions.getCard("Creakwood Liege").getIndex();
 		cumberStone=definitions.getCard("Cumber Stone").getIndex();
+		deathBaron=definitions.getCard("Death Baron").getIndex();
 		deathbringerLiege=definitions.getCard("Deathbringer Liege").getIndex();
 		eldraziMonument=definitions.getCard("Eldrazi Monument").getIndex();
 		eleshNorn=definitions.getCard("Elesh Norn, Grand Cenobite").getIndex();

@@ -491,6 +491,19 @@ power=3
 toughness=3
 timing=fmain
 
+>Death Baron
+image=http://magiccards.info/scans/en/pch/25.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Zombie,Wizard
+color=b
+converted=3
+cost={1}{B}{B}
+power=2
+toughness=2
+timing=fmain
+
 >Deathbringer Liege
 image=http://magiccards.info/scans/en/eve/85.jpg
 value=4
