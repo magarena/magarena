@@ -18,6 +18,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int bloodmarkMentor;
 	private static int boartuskLiege;
 	private static int captainOfTheWatch;
+	private static int cemeteryReaper;
 	private static int creakwoodLiege;
 	private static int cumberStone;
 	private static int deathbringerLiege;
@@ -100,6 +101,10 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		count = controller.getCount(captainOfTheWatch);
 		if (count > 0 && permanent.hasSubType(MagicSubType.Soldier)) {
 			both += getOtherCount(captainOfTheWatch,permanent,count);
+		}
+		count = controller.getCount(cemeteryReaper);
+		if (count > 0 && permanent.hasSubType(MagicSubType.Zombie)) {
+			both += getOtherCount(cemeteryReaper,permanent,count);
 		}
 		count = controller.getCount(goblinChieftain);
 		if (count > 0 && permanent.hasSubType(MagicSubType.Goblin)) {
@@ -232,6 +237,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		bloodmarkMentor=definitions.getCard("Bloodmark Mentor").getIndex();
 		boartuskLiege=definitions.getCard("Boartusk Liege").getIndex();
 		captainOfTheWatch=definitions.getCard("Captain of the Watch").getIndex();
+		cemeteryReaper=definitions.getCard("Cemetery Reaper").getIndex();
 		creakwoodLiege=definitions.getCard("Creakwood Liege").getIndex();
 		cumberStone=definitions.getCard("Cumber Stone").getIndex();
 		deathbringerLiege=definitions.getCard("Deathbringer Liege").getIndex();

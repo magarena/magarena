@@ -368,6 +368,19 @@ toughness=4
 ability=flying
 timing=main
 
+>Cemetery Reaper
+image=http://magiccards.info/scans/en/m10/87.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Zombie
+color=b
+converted=3
+cost={1}{B}{B}
+power=2
+toughness=2
+timing=fmain
+
 >Cerodon Yearling
 image=http://magiccards.info/scans/en/pch/86.jpg
 value=3
