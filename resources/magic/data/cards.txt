@@ -4980,6 +4980,17 @@ converted=5
 cost={3}{R}{R}
 timing=removal
 
+>Chandra's Outrage
+image=http://magiccards.info/scans/en/m12/125.jpg
+value=3
+removal=4
+rarity=C
+type=Instant
+color=r
+converted=4
+cost={2}{R}{R}
+timing=removal
+
 >Chain Reaction
 image=http://magiccards.info/scans/en/wwk/74.jpg
 value=4
