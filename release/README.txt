@@ -38,17 +38,18 @@ Thanks to
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
   Rachel for making it possible to cancel image download and fixing incorrect images
-  Melvin Zhang for implementing the Monte Carlo Tree Search AI and maintenance
-  beholder for card implementation and improving the usability
+  Melvin Zhang for implementing the Monte Carlo Tree Search AI and general code cleanup/bug fixes
+  IanGrainger for contributing a patch to allow text search in the Card Explorer
+  beholder for implmenting new cards and general usability improvements
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
 
-Release 1.17 (August XX, 2011)
+Release 1.17 (August QQQ, 2011)
 ============
 brought to you by beholder and melvin
 
-- added Modern cube (850 cards)
+- added Modern cube (QQQ cards)
 - added the following cards:
   Honor of the Pure
   Liliana's Caress
@@ -72,7 +73,10 @@ brought to you by beholder and melvin
   Amphin Cutthroat
   Armored Warhorse
   Alluring Siren
-  (940 cards in total)
+  Cancel
+  Cemetery Reaper
+  Chandra's Outrage
+  (QQQ cards in total)
 
 - changed some game messages to use the player's name instead of "you"
 - added option for themes to choose whether to use colored border or overlay to highlight usable cards
