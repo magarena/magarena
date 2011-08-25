@@ -154,7 +154,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private void showContent(final JComponent content) {
 		contentPanel.removeAll();
-		contentPanel.add(content,BorderLayout.CENTER);
+		//the following statement causes a
+        //Exception in thread "AWT-EventQueue-0" sun.awt.X11.XException: Cannot write XdndAware property
+        //on Java(TM) SE Runtime Environment (build 1.6.0_26-b03)
+        contentPanel.add(content,BorderLayout.CENTER);
 		contentPanel.revalidate();
 		contentPanel.repaint();
 	}
