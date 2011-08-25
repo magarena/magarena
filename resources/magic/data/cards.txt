@@ -269,6 +269,20 @@ power=2
 toughness=2
 timing=main
 
+>Chasm Drake
+image=http://magiccards.info/scans/en/m12/48.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Drake
+color=u
+converted=5
+cost={4}{U}
+power=3
+toughness=3
+ability=flying
+timing=main
+
 >Cunning Sparkmage
 image=http://magiccards.info/scans/en/wwk/79.jpg
 value=3
