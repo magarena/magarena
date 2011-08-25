@@ -38,10 +38,62 @@ Thanks to
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
   Rachel for making it possible to cancel image download and fixing incorrect images
-  Melvin Zhang for implementing the Monte Carlo Tree Search AI and maintenance of the program
+  Melvin Zhang for implementing the Monte Carlo Tree Search AI and maintenance
+  beholder for card implementation and improving the usability
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
+
+Release 1.17 (August XX, 2011)
+============
+brought to you by beholder and melvin
+
+- added Modern cube (850 cards)
+- added the following cards:
+  Honor of the Pure
+  Liliana's Caress
+  Gideon's Lawkeeper
+  Sangromancer
+  Underworld Dreams
+  Kederekt Parasite
+  Spiteful Visions
+  Frost Titan
+  Arbalest Elite
+  Act of Treason
+  AEther Adept (Æther Adept)
+  Auramancer
+  Call to the Grave
+  Bonebreaker Giant
+  Brindle Boar
+  Blood Seeker
+  Benalish Veteran
+  Aven Fleetwing
+  Belltower Sphinx
+  Amphin Cutthroat
+  Armored Warhorse
+  Alluring Siren
+  (940 cards in total)
+
+- changed some game messages to use the player's name instead of "you"
+- added option for themes to choose whether to use colored border or overlay to highlight usable cards
+  (all themes use colored overlay to highlight cards, except the standard felt theme)
+- delay for items on the stack to resolve (used when ...) is now configurable
+  from the Preferences menu
+- added an About menu
+- Mac and Linux launch scripts (Magarena.command and Magarena.sh) now works
+  when invoked from any location, previously they assume that Magarena.exe is
+  on the path.
+- added text search to Card explorer
+
+- fixed image for Raging Kavu, was using the Latin one and not the English one
+  (users encountering this bug should manually delete the old image from
+   Magarena/cards/Raging Kavu.jpg and use the program to redownload the image)
+- fixed wording of Lightning Helix's effect, it refers to Lightning
+  Bolt instead of Lightning Helix
+- fixed problem with shuffle into library effect in the situation where the
+  new card to be shuffled in ends up at the top of the library again
+- fixed problem where card image may be missing due to issue with image cacheing
+- fixed problem where duels with more than 40 cards are not loaded correctly
 
 Release 1.16b (July 27, 2011)
 =============
