@@ -1836,6 +1836,16 @@ converted=1
 cost={W}
 timing=removal
 
+>Cancel
+image=http://magiccards.info/scans/en/m12/47.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=3
+cost={1}{U}{U}
+timing=counter
+
 >Counterspell
 image=http://magiccards.info/scans/en/jvc/24.jpg
 value=3
