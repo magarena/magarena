@@ -10,16 +10,29 @@ EXE:=release/Magarena.exe
 
 all: $(MAG) $(EXE) tags
 
-cubes: release/mods/legacy_cube.txt release/mods/extended_cube.txt release/mods/standard_cube.txt
+cubes: \
+	release/mods/legacy_cube.txt \
+	release/mods/extended_cube.txt \
+	release/mods/standard_cube.txt \
+	release/mods/modern_cube.txt
 
 release/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-release/mods/extended_cube.txt: cards/existing.txt cards/extended_all.txt
+release/mods/%_cube.txt: cards/existing.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-release/mods/standard_cube.txt: cards/existing.txt cards/standard_all.txt
-	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
+cards/modern_all.txt:
+	curl "http://magiccards.info/query?q=cmc%3D0+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' > $@
+	curl "http://magiccards.info/query?q=cmc%3D1+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc%3D2+f%3Amodern&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc%3D2+f%3Amodern&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc%3D3+f%3Amodern&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc%3D3+f%3Amodern&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc%3D4+f%3Amodern&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc%3D4+f%3Amodern&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc%3D5+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=cmc>%3D6+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 
 cards/extended_all.txt:
 	curl "http://magiccards.info/query?q=cmc%3D0+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' > $@
