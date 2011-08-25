@@ -1,16 +1,24 @@
 Accorder Paladin
 Accorder's Shield
 Acidic Slime
+Act of Treason
 Affa Guard Hound
 Air Servant
 Akoum Refuge
 Alloy Myr
+Alluring Siren
 Alpha Tyrranax
+Amphin Cutthroat
+Arbalest Elite
+Archon of Justice
 Archon of Redemption
 Armored Cancrix
+Armored Warhorse
 Asceticism
 Assassinate
 Assault Griffin
+Auramancer
+Aven Fleetwing
 Awakening Zone
 Azure Drake
 Back to Nature
@@ -21,6 +29,8 @@ Basilisk Collar
 Batterskull
 Battle Hurda
 Bellowing Tanglewurm
+Belltower Sphinx
+Benalish Veteran
 Berserkers of Blood Ridge
 Bestial Menace
 Birds of Paradise
@@ -31,12 +41,16 @@ Black Sun's Zenith
 Bladed Pinions
 Bladetusk Boar
 Blightwidow
+Blood Seeker
 Boar Umbra
 Bog Raiders
 Bog Tatters
+Bonebreaker Giant
+Brindle Boar
 Brittle Effigy
 Burst Lightning
 Butcher of Malakir
+Call to the Grave
 Canyon Minotaur
 Caravan Hurda
 Carnifex Demon
@@ -51,6 +65,7 @@ Cloud Crusader
 Cloud Elemental
 Contagious Nim
 Copperline Gorge
+Coral Merfolk
 Corpsehatch
 Creeping Tar Pit
 Cudgel Troll
@@ -66,6 +81,7 @@ Deathless Angel
 Diminish
 Disfigure
 Dissipation Field
+Divination
 Doom Blade
 Dragonmaster Outcast
 Dragonskull Summit
@@ -82,17 +98,20 @@ Ember Hauler
 Explore
 Ezuri's Archers
 Fire Servant
+Flameblast Dragon
 Flameborn Hellion
 Flame Slash
 Flashfreeze
 Flayer Husk
 Flensermite
 Forest
+Frost Titan
 Fume Spitter
 Garruk's Companion
 Giant Growth
 Giant Scorpion
 Giant Spider
+Gideon's Lawkeeper
 Glacial Fortress
 Glissa's Courier
 Glistener Elf
@@ -114,13 +133,16 @@ Grasp of Darkness
 Grave Titan
 Graypelt Refuge
 Greater Basilisk
+Griffin Sentinel
 Guard Gomazoa
 Guul Draz Specter
 Guul Draz Vampire
 Hero of Bladehold
 Hideous End
+Honor of the Pure
 Hovermyr
 Hyena Umbra
+Incinerate
 Inkmoth Nexus
 Into the Roil
 Island
@@ -138,8 +160,11 @@ Kraken Hatchling
 Kuldotha Ringleader
 Leatherback Baloth
 Leonin Skyhunter
+Levitation
 Lightkeeper of Emeria
 Lightning Bolt
+Lightning Elemental
+Liliana's Caress
 Liliana's Specter
 Llanowar Elves
 Lone Missionary
@@ -177,6 +202,7 @@ Novablast Wurm
 Ogre's Cleaver
 Ogre Sentry
 Ornithopter
+Overrun
 Overwhelming Stampede
 Pacifism
 Pelakka Wurm
@@ -214,6 +240,7 @@ Runeclaw Bear
 Ruthless Cullblade
 Sacred Wolf
 Safe Passage
+Sangromancer
 Scoria Elemental
 Scourge Servant
 Seachrome Coast
@@ -247,6 +274,7 @@ Spider Umbra
 Spined Wurm
 Spire Monitor
 Sporecap Spider
+Stampeding Rhino
 Steppe Lynx
 Stirring Wildwood
 Stomper Cub
@@ -258,6 +286,7 @@ Strider Harness
 Student of Warfare
 Sunblast Angel
 Sunpetal Grove
+Sun Titan
 Suture Priest
 Swamp
 Sword of Body and Mind
@@ -291,6 +320,7 @@ Vulshok Berserker
 Vulshok Refugee
 Wall of Frost
 Wall of Vines
+Warpath Ghoul
 Welkin Tern
 Whispersilk Cloak
 White Knight
@@ -301,3 +331,4 @@ Wrexial, the Risen Deep
 Wurmcoil Engine
 Yavimaya Wurm
 Zendikar Farguide
+Zombie Goliath

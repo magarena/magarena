@@ -2,6 +2,8 @@ Absorb
 Accorder Paladin
 Accorder's Shield
 Acidic Slime
+Act of Treason
+AEther Adept
 Affa Guard Hound
 Air Elemental
 Air Servant
@@ -10,8 +12,10 @@ Akrasan Squire
 Akroma, Angel of Wrath
 Akroma's Memorial
 Alloy Myr
+Alluring Siren
 Alpha Myr
 Alpha Tyrranax
+Amphin Cutthroat
 Anaba Bodyguard
 Anaconda
 Ancient Spider
@@ -21,6 +25,7 @@ Angel of Despair
 Angel of Retribution
 Anurid Murkdiver
 Arachnoid
+Arbalest Elite
 Arcane Sanctum
 Arcanis the Omnipotent
 Archon of Justice
@@ -28,6 +33,7 @@ Archon of Redemption
 Ardent Militia
 Armadillo Cloak
 Armored Cancrix
+Armored Warhorse
 Asceticism
 Ashcoat Bear
 Ashen Monstrosity
@@ -35,7 +41,9 @@ Ashenmoor Gouger
 Assassinate
 Assault Griffin
 Assault Zeppelid
+Auramancer
 Aven Envoy
+Aven Fleetwing
 Aven Mimeomancer
 Aven Smokeweaver
 Aven Squire
@@ -59,8 +67,10 @@ Beacon of Destruction
 Beacon of Unrest
 Behemoth Sledge
 Bellowing Tanglewurm
+Belltower Sphinx
 Beloved Chaplain
 Benalish Knight
+Benalish Veteran
 Benthic Behemoth
 Berserkers of Blood Ridge
 Bestial Menace
@@ -82,6 +92,7 @@ Blood Crypt
 Blood Knight
 Bloodmark Mentor
 Bloodrock Cyclops
+Blood Seeker
 Blurred Mongoose
 Boartusk Liege
 Boar Umbra
@@ -90,6 +101,7 @@ Bog Imp
 Bog Raiders
 Bog Tatters
 Bog Wraith
+Bonebreaker Giant
 Bonesplitter
 Border Patrol
 Boros Guildmage
@@ -99,6 +111,7 @@ Bottle Gnomes
 Breath of Darigaaz
 Breeding Pool
 Brigid, Hero of Kinsbaile
+Brindle Boar
 Brion Stoutarm
 Brittle Effigy
 Broodmate Dragon
@@ -107,6 +120,7 @@ Bull Hippo
 Burst Lightning
 Butcher of Malakir
 Cairn Wanderer
+Call to the Grave
 Canopy Spider
 Canyon Minotaur
 Canyon Wildcat
@@ -262,6 +276,7 @@ Forest
 Foul Imp
 Frenzied Goblin
 Frost Ogre
+Frost Titan
 Fugitive Wizard
 Fume Spitter
 Furnace Whelp
@@ -280,6 +295,7 @@ Giant Scorpion
 Giant Solifuge
 Giant Spider
 Giant Warthog
+Gideon's Lawkeeper
 Glacial Fortress
 Glacial Wall
 Glass Golem
@@ -360,6 +376,7 @@ Hillcomber Giant
 Hill Giant
 Hissing Miasma
 Hobgoblin Dragoon
+Honor of the Pure
 Horned Turtle
 Hoverguard Observer
 Hovermyr
@@ -400,6 +417,7 @@ Kami of Old Stone
 Kavu Titan
 Kazandu Refuge
 Kazuul, Tyrant of the Cliffs
+Kederekt Parasite
 Keening Banshee
 Keiga, the Tide Star
 Kelinore Bat
@@ -436,6 +454,7 @@ Lightning Greaves
 Lightning Helix
 Lightning Reaver
 Lightning Talons
+Liliana's Caress
 Liliana's Specter
 Lingering Tormentor
 Llanowar Elves
@@ -502,6 +521,7 @@ Mourning Thrull
 Mox Opal
 Murderous Redcap
 Murkfiend Liege
+Mutavault
 Mycoid Shepherd
 Mystic Snake
 Nacatl Outlander
@@ -641,6 +661,7 @@ Sacred Foundry
 Sacred Wolf
 Safehold Elite
 Safe Passage
+Sangromancer
 Savage Lands
 Savage Twister
 Scaled Wurm
@@ -731,6 +752,7 @@ Spineless Thug
 Spire Monitor
 Spiritmonger
 Spirit of the Hearth
+Spiteful Visions
 Spitemare
 Sporecap Spider
 Sprouting Thrinax
@@ -761,6 +783,7 @@ Stupor
 Sunblast Angel
 Sunpetal Grove
 Suntail Hawk
+Sun Titan
 Surveilling Sprite
 Suture Priest
 Swamp
@@ -822,6 +845,7 @@ Turn to Mist
 Twinblade Slasher
 Twincast
 Undermine
+Underworld Dreams
 Unmake
 Unquestioned Authority
 Unsummon
