@@ -40,7 +40,7 @@ Thanks to
   Melvin Zhang for implementing the Monte Carlo Tree Search AI and general code cleanup/bug fixes
   IanGrainger for contributing a patch to allow text search in the Card Explorer
   Rachel for making it possible to cancel image download and fixing incorrect images
-  beholder for implmenting new cards and general usability improvements
+  beholder for implementing new cards and general usability improvements
   johncpatterson for helping to test the Mac startup script
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
@@ -113,7 +113,7 @@ This is a bug fix release.
 - fixed color of normal selection to green and combat selection to red
 - fixed a GUI crash bug
 - fixed a bug where the game logic thread would get stuck on non-Linux systems
-- implmented a better way to increase responsiveness of the GUI by decreasing
+- implemented a better way to increase responsiveness of the GUI by decreasing
   the priority of the game logic thread
 
 Release 1.16 (July 25, 2011)
@@ -170,7 +170,7 @@ Release 1.15 (June 20, 2011)
 - use symbols drawn by Goblin Hero
 - fixed Vines of Vastwood so that if you target an opponent's creature, the
   opponent cannot target the creature (previously Vines of Vastwood prevents
-  the opponent of the controller of the creature from targetting it)
+  the opponent of the controller of the creature from targeting it)
 - fixed implementation of first strike, so that triggers may occur after
   dealing first strike damage and before regular damage is dealt (fixes issue
   11: "Double Strike creature that leaves play after first strike still deals
@@ -239,10 +239,10 @@ Release 1.11 (April 11, 2011)
 - renamed the two standard cubes to default and all
 - improved displaying of messages with scroll bar and toggle button + F1 shortcut to show or hide messages
 - improved mana cost images (if already installed, delete symbols folder in Magarena data folder and load images)
-- improved card definition files, they now also contain the image url and cube information
-- improved scoring for unnecessary equiping
-- three new AI implementations are available next to the default MiniMax AI : Monte Carlo, Vegas and Random
-- the preferred AI can be selected in preferences, the deck strength calculator always uses MiniMax AI
+- improved card definition files, they now also contain the image URL and cube information
+- improved scoring for unnecessary equipping
+- three new AI implementations are available next to the default minimax AI : Monte Carlo, Vegas and Random
+- the preferred AI can be selected in preferences, the deck strength calculator always uses minimax AI
 - added New and Load Duel buttons on startup screen
 - added option to select a random deck from decks folder in New Duel dialog (folder icon)
 
