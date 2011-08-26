@@ -72,7 +72,7 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 			final String imageURL=cardDefinition.getImageURL();
 			if (imageURL!=null) {
 				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName()+".jpg");
-				if (!imageFile.exists()) {
+				if (!imageFile.exists() || cardDefinition.isIgnored(imageFile.length())) {
                     try { //create URL
     					add(new DownloadImageFile(imageFile,new URL(imageURL)));
                     } catch (final java.net.MalformedURLException ex) {

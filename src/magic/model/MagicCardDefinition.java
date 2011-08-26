@@ -50,6 +50,7 @@ public class MagicCardDefinition {
 	private final String name;
 	private final String fullName;
 	private String imageURL;
+    private Collection<Long> ignore = null;
 	private int index=-1;
 	private int value=0;
 	private int removal=0;
@@ -102,7 +103,19 @@ public class MagicCardDefinition {
 		System.err.println(numLocalVariables + " local variables");
     }
 
-	public String getName() {
+    public void addIgnore(final long size) {
+        //lazy initialization of the ignore list
+        if (ignore == null) {
+            ignore = new ArrayList<Long>(2);
+        }
+        ignore.add(size);
+    }
+
+    public boolean isIgnored(final long size) {
+        return ignore != null && ignore.contains(size);
+    }
+	
+    public String getName() {
 		return name;
 	}
 	

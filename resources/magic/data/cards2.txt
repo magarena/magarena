@@ -2691,6 +2691,7 @@ timing=main
 
 >Raging Kavu
 image=http://magiccards.info/scans/en/in/262.jpg
+ignore=59949
 value=3
 ability=flash,haste
 rarity=R

@@ -75,6 +75,11 @@ public class CardDefinitions {
 			card.setStaticType(MagicStaticType.getStaticTypeFor(value));
 		} else if ("timing".equals(property)) {
 			card.setTiming(MagicTiming.getTimingFor(value));
+		} else if ("ignore".equals(property)) {
+			final String sizes[]=value.split(",");
+			for (final String size : sizes) {
+				card.addIgnore(Long.parseLong(size));
+			}
 		} else {
 			System.err.println(property);
 		}
