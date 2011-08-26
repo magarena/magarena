@@ -19,7 +19,7 @@ Magarena supports the following keyboard shortcuts :
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
 
-  Default is MiniMax. AI difficulty level for the best balance of speed and
+  Default is minimax. AI difficulty level for the best balance of speed and
   strength is the default 6.
 
   The Monte Carlo AI spends at most N seconds to consider each move, where N is
@@ -91,6 +91,8 @@ brought to you by beholder and melvin
   when invoked from any location, previously they assume that Magarena.exe is
   on the path.
 - added text search to Card explorer
+- enabled AI to make use of abilities that can be activated multiple times
+  more effectively
 
 - fixed image for Raging Kavu, was using the Latin version
   (select Arena -> Download images to download the correct card image for
@@ -99,7 +101,7 @@ brought to you by beholder and melvin
   Bolt instead of Lightning Helix
 - fixed problem with shuffle into library effect in the situation where the
   new card to be shuffled in ends up at the top of the library again
-- fixed problem where card image may be missing due to issue with image cacheing
+- fixed problem where card image may be missing due to issue with image caching
 - fixed problem where duels with more than 40 cards are not loaded correctly
 
 Release 1.16b (July 27, 2011)
