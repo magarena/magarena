@@ -518,6 +518,20 @@ toughness=4
 static=player
 timing=fmain
 
+>Devouring Swarm
+image=http://magiccards.info/scans/en/m12/91.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=b
+converted=3
+cost={1}{B}{B}
+power=2
+toughness=1
+ability=flying
+timing=main
+
 >Doomgape
 image=http://magiccards.info/scans/en/eve/120.jpg
 value=5
