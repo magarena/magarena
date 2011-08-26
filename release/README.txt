@@ -37,46 +37,49 @@ Thanks to
   pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
-  Rachel for making it possible to cancel image download and fixing incorrect images
   Melvin Zhang for implementing the Monte Carlo Tree Search AI and general code cleanup/bug fixes
   IanGrainger for contributing a patch to allow text search in the Card Explorer
+  Rachel for making it possible to cancel image download and fixing incorrect images
   beholder for implmenting new cards and general usability improvements
+  johncpatterson for helping to test the Mac startup script
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
 
-Release 1.17 (August QQQ, 2011)
+Release 1.17 (August 26, 2011)
 ============
 brought to you by beholder and melvin
 
-- added Modern cube (QQQ cards)
+- added Modern cube (855 cards)
 - added the following cards:
-  Honor of the Pure
-  Liliana's Caress
-  Gideon's Lawkeeper
-  Sangromancer
-  Underworld Dreams
-  Kederekt Parasite
-  Spiteful Visions
-  Frost Titan
-  Arbalest Elite
   Act of Treason
   AEther Adept (Æther Adept)
+  Alluring Siren
+  Amphin Cutthroat
+  Arbalest Elite
+  Armored Warhorse
   Auramancer
-  Call to the Grave
-  Bonebreaker Giant
-  Brindle Boar
-  Blood Seeker
-  Benalish Veteran
   Aven Fleetwing
   Belltower Sphinx
-  Amphin Cutthroat
-  Armored Warhorse
-  Alluring Siren
+  Benalish Veteran
+  Blood Seeker
+  Bonebreaker Giant
+  Brindle Boar
+  Call to the Grave
   Cancel
   Cemetery Reaper
   Chandra's Outrage
-  (QQQ cards in total)
+  Chasm Drake
+  Death Baron
+  Frost Titan
+  Gideon's Lawkeeper
+  Honor of the Pure
+  Kederekt Parasite
+  Liliana's Caress
+  Sangromancer
+  Spiteful Visions
+  Underworld Dreams
+  (945 cards in total)
 
 - changed some game messages to use the player's name instead of "you"
 - added option for themes to choose whether to use colored border or overlay to highlight usable cards
@@ -89,9 +92,9 @@ brought to you by beholder and melvin
   on the path.
 - added text search to Card explorer
 
-- fixed image for Raging Kavu, was using the Latin one and not the English one
-  (users encountering this bug should manually delete the old image from
-   Magarena/cards/Raging Kavu.jpg and use the program to redownload the image)
+- fixed image for Raging Kavu, was using the Latin version
+  (select Arena -> Download images to download the correct card image for
+   Raging Kavu and other missing card images)
 - fixed wording of Lightning Helix's effect, it refers to Lightning
   Bolt instead of Lightning Helix
 - fixed problem with shuffle into library effect in the situation where the

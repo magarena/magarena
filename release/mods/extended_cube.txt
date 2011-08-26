@@ -74,18 +74,22 @@ Burst Lightning
 Butcher of Malakir
 Cairn Wanderer
 Call to the Grave
+Cancel
 Canyon Minotaur
 Captain of the Watch
 Caravan Hurda
 Carnifex Demon
 Celestial Colonnade
 Celestial Purge
+Cemetery Reaper
 Centaur Courser
 Cerodon Yearling
 Chain Reaction
 Chameleon Colossus
+Chandra's Outrage
 Chandra's Spitfire
 Changeling Sentinel
+Chasm Drake
 Child of Night
 Chimeric Mass
 Cliff Threader
@@ -117,6 +121,7 @@ Darksteel Sentinel
 Dauntless Escort
 Day of Judgment
 Deadly Recluse
+Death Baron
 Deathbringer Liege
 Deathless Angel
 Deft Duelist
