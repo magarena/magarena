@@ -21,7 +21,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	
-	public static final String VERSION = "1.17";
+	private static final String VERSION = "1.17";
 	private static final String VERSION_TEXT = "Magarena " + VERSION;
 
 	private static final Border LOGO_BORDER=BorderFactory.createMatteBorder(2,2,2,2,new Color(0x8C,0x78,0x53));
@@ -93,6 +93,10 @@ public class VersionPanel extends JPanel implements ActionListener {
 				loadButton.setBounds(150,size.height-60,130,50);
 			}
 		});
+	}
+
+	public static final String getVersion() {
+		return VERSION;
 	}
 
 	@Override
