@@ -10,6 +10,9 @@ EXE:=release/Magarena.exe
 
 all: $(MAG) $(EXE) tags
 
+check_literals:
+	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
+
 cubes: \
 	release/mods/legacy_cube.txt \
 	release/mods/extended_cube.txt \
