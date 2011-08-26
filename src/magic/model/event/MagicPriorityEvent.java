@@ -19,10 +19,13 @@ public class MagicPriorityEvent extends MagicEvent {
                 final Object[] choiceResults) {
 			
 			final MagicPlayChoiceResult playChoiceResult=(MagicPlayChoiceResult)choiceResults[0];
-            if (playChoiceResult==MagicPlayChoiceResult.PASS) {
+            if (playChoiceResult==MagicPlayChoiceResult.PASS ||
+                playChoiceResult==MagicPlayChoiceResult.SKIP) {
 				game.incrementPriorityPassedCount();
-				// When passing, the last played activation can no longer be played.
-                game.getPriorityPlayer().getActivationPriority().incActivationId();
+				// when passing, the last played activation can no longer be played.
+                if (playChoiceResult==MagicPlayChoiceResult.PASS) {
+                    game.getPriorityPlayer().getActivationPriority().incActivationId();
+                }
 				if (game.getPriorityPassed()) {
 					game.setPriorityPassed(false);
 					game.resolve();
