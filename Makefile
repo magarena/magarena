@@ -93,6 +93,7 @@ M1.%:
 			release/mods/*.txt \
 			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
+	grep 1.$* -r src/*
 
 $(MAG): $(SRC) 
 	ant
