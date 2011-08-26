@@ -27,7 +27,7 @@ public class Arbalest_Elite {
                     new Object[]{source},
                     this,
                     source + " deals 3 damage to target attacking or blocking creature$. " +
-                    		"Arbalest Elite doesn't untap during your next untap step.");
+                    source + " doesn't untap during your next untap step.");
 		}
 		@Override
 		public void executeEvent(
