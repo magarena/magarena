@@ -404,6 +404,21 @@ public interface MagicTargetFilter {
 		}		
 	};
 
+	public static final MagicTargetFilter TARGET_GREEN_OR_WHITE_CREATURE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			if (permanent.isCreature()) {
+				final int colorFlags = permanent.getColorFlags();
+				return MagicColor.Green.hasColor(colorFlags) || MagicColor.White.hasColor(colorFlags);
+			}
+			return false;
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+		
 	public static final MagicTargetFilter TARGET_BAT_YOU_CONTROL=new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
