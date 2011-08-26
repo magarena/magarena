@@ -73,7 +73,7 @@ cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt c
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 
 M1.%:
-	grep 1.$* -r src/*
+	grep "VERSION.*1.$*" -r src/*
 	-rm -rf Magarena-1.$*
 	-rm Magarena-1.$*.zip
 	mkdir -p Magarena-1.$*/Magarena/mods
