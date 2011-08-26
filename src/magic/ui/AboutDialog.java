@@ -41,8 +41,8 @@ public class AboutDialog extends JDialog implements ActionListener {
 	private static final String GNU_TEXT = "This program is free software: you "
 			+ "can redistribute it and/or modify it under the terms of the GNU "
 			+ "General Public License as published by the Free Software Foundation.";
-	private final String forumDisplayLink = "www.slightlymagic.net";
-	private final String repoDisplayLink = "code.google.com/p/magarena";
+	private static final String forumDisplayLink = "www.slightlymagic.net";
+	private static final String repoDisplayLink = "code.google.com/p/magarena";
 
 	private final JButton okButton;
 	
@@ -74,7 +74,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 		descriptionLabel.setFont(FONT_BOLD12);
 		aboutPanel.add(descriptionLabel);
 
-		final JLabel versionLabel = new JLabel("Version: " + VersionPanel.VERSION);
+		final JLabel versionLabel = new JLabel("Version: " + VersionPanel.getVersion());
 		versionLabel.setBounds(250, 105, 320, 25);
 		versionLabel.setFont(FONT_PLAIN12);
 		aboutPanel.add(versionLabel);
