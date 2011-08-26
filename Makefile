@@ -16,6 +16,19 @@ cubes: \
 	release/mods/standard_cube.txt \
 	release/mods/modern_cube.txt
 
+themes: \
+	release/mods/felt_theme.zip \
+	release/mods/blackswamp_theme.zip \
+	release/mods/bluemarble_theme.zip \
+	release/mods/darkbattle_theme.zip \
+	release/mods/gothic_theme.zip \
+	release/mods/greenforest_theme.zip \
+	release/mods/moon_theme.zip \
+	release/mods/mystic_theme.zip \
+	release/mods/nature_theme.zip \
+	release/mods/redfire_theme.zip \
+	release/mods/whiteangel_theme.zip
+
 release/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
