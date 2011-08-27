@@ -105,6 +105,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_CONVERTED_3_OR_LESS=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CONVERTED_3_OR_LESS,true,MagicTargetHint.Negative,
 		"target creature with converted mana cost 3 or less");
+	public static final MagicTargetChoice TARGET_CREATURE_POWER_2_OR_LESS =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_POWER_2_OR_LESS,true,MagicTargetHint.Positive,
+			"target creature with power 2 or less");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_WITH_FLYING=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_WITH_FLYING,true,MagicTargetHint.Negative,"target creature with flying");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_WITHOUT_FLYING=

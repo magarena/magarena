@@ -651,6 +651,19 @@ power=1
 toughness=1
 timing=main
 
+>Goblin Tunneler
+image=http://magiccards.info/scans/en/m12/142.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+color=r
+converted=2
+cost={1}{R}
+power=1
+toughness=1
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
