@@ -33,6 +33,11 @@ public class MagicDealDamageAction extends MagicAction {
 				return 0;
 			}
 		}
+		// Prevent all combat damage.
+		if (target.getController().hasState(MagicPlayerState.PreventAllCombatDamage) &&
+				damage.isCombat()) {
+			return 0;
+		}
 		// Prevent damage.
 		final int prevent=target.getPreventDamage();
 		if (prevent>0) {

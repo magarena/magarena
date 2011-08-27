@@ -2000,6 +2000,16 @@ converted=2
 cost={1}{R}
 timing=pump
 
+>Fog
+image=http://magiccards.info/scans/en/m12/173.jpg
+value=2
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+
 >Puncture Blast
 image=http://magiccards.info/scans/en/eve/60.jpg
 value=3
