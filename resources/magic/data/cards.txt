@@ -7250,6 +7250,19 @@ power=4
 toughness=-1
 timing=equipment
 
+>Greatsword
+image=http://magiccards.info/scans/en/m12/209.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={3}
+power=3
+toughness=0
+timing=equipment
+
 >Lightning Greaves
 image=http://magiccards.info/scans/en/pvc/19.jpg
 value=4
