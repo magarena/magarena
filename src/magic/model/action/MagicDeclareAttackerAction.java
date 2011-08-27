@@ -23,6 +23,7 @@ public class MagicDeclareAttackerAction extends MagicAction {
 		tap=!attacker.hasAbility(game,MagicAbility.Vigilance)&&!attacker.isTapped();
 		if (tap) {
 			attacker.setState(MagicPermanentState.Tapped);
+			game.executeTrigger(MagicTriggerType.WhenBecomesTapped,attacker);
 		}		
 		game.executeTrigger(MagicTriggerType.WhenAttacks,attacker);
 	}
