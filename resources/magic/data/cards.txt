@@ -1921,6 +1921,16 @@ converted=2
 cost={1}{B}
 timing=removal
 
+>Disentomb
+image=http://magiccards.info/scans/en/m12/93.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=draw
+
 >Double Cleave
 image=http://magiccards.info/scans/en/pch/100.jpg
 value=2
