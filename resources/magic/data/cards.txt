@@ -611,6 +611,20 @@ power=2
 toughness=2
 timing=fmain
 
+>Gladecover Scout
+image=http://magiccards.info/scans/en/m12/178.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Scout
+color=g
+converted=1
+cost={G}
+power=1
+toughness=1
+ability=hexproof
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
