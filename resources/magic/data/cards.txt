@@ -598,6 +598,19 @@ power=2
 toughness=2
 timing=main
 
+>Gideon's Avenger
+image=http://magiccards.info/scans/en/m12/17.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={1}{W}{W}
+power=2
+toughness=2
+timing=fmain
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
