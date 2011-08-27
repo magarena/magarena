@@ -1896,6 +1896,16 @@ toughness=7
 ability=flying
 timing=fmain
 
+>Angel's Mercy
+image=http://magiccards.info/scans/en/m12/4.jpg
+value=3
+rarity=C
+type=Instant
+color=w
+converted=4
+cost={2}{W}{W}
+timing=draw
+
 >Char
 image=http://magiccards.info/scans/en/rav/117.jpg
 value=4
