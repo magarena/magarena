@@ -625,6 +625,19 @@ toughness=1
 ability=hexproof
 timing=main
 
+>Goblin Arsonist
+image=http://magiccards.info/scans/en/m12/136.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+color=r
+converted=1
+cost={R}
+power=1
+toughness=1
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
