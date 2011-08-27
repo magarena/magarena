@@ -4690,6 +4690,19 @@ power=3
 toughness=1
 timing=aura
 
+>Divine Favor
+image=http://magiccards.info/scans/en/m12/14.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+power=1
+toughness=3
+timing=aura
+
 >Elephant Guide
 image=http://magiccards.info/scans/en/gvl/18.jpg
 value=4
