@@ -532,6 +532,20 @@ toughness=1
 ability=flying
 timing=main
 
+>Drifting Shade
+image=http://magiccards.info/scans/en/m12/96.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Shade
+color=b
+converted=4
+cost={3}{B}
+power=1
+toughness=1
+ability=flying
+timing=main
+
 >Doomgape
 image=http://magiccards.info/scans/en/eve/120.jpg
 value=5
