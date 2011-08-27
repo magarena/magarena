@@ -585,6 +585,19 @@ converted=3
 cost={2}{G}
 timing=smain
 
+>Fiery Hellhound
+image=http://magiccards.info/scans/en/m12/130.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elemental,Hound
+color=r
+converted=3
+cost={1}{R}{R}
+power=2
+toughness=2
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
