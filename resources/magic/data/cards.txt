@@ -703,6 +703,20 @@ power=2
 toughness=2
 timing=main
 
+>Manic Vandal
+image=http://magiccards.info/scans/en/m12/151.jpg
+value=3
+removal=1
+rarity=C
+type=Creature
+subtype=Human,Warrior
+color=r
+converted=3
+cost={2}{R}
+power=2
+toughness=2
+timing=fmain
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
@@ -8206,6 +8220,15 @@ rarity=M
 type=Legendary,Artifact
 converted=0
 cost={0}
+timing=artifact
+
+>Manalith
+image=http://magiccards.info/scans/en/m12/212.jpg
+value=3
+rarity=C
+type=Artifact
+converted=3
+cost={3}
 timing=artifact
 
 >Negate
