@@ -5280,6 +5280,16 @@ converted=3
 cost={2}{B}
 timing=draw
 
+>Reclaim
+image=http://magiccards.info/scans/en/m12/191.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=draw
+
 >Wurmcoil Engine
 image=http://magiccards.info/scans/en/som/223.jpg
 value=5
