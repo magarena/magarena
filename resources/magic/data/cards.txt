@@ -730,6 +730,20 @@ power=0
 toughness=2
 timing=fmain
 
+>Peregrine Griffin
+image=http://magiccards.info/scans/en/m12/29.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Griffin
+color=w
+converted=5
+cost={4}{W}
+power=2
+toughness=4
+ability=flying,first strike
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
