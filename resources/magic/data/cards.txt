@@ -744,6 +744,20 @@ toughness=4
 ability=flying,first strike
 timing=main
 
+>Pride Guardian
+image=http://magiccards.info/scans/en/m12/31.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat,Monk
+color=w
+converted=1
+cost={W}
+power=0
+toughness=3
+ability=defender
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
