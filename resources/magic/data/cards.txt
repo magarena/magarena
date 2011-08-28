@@ -690,6 +690,19 @@ power=1
 toughness=1
 timing=main
 
+>Lord of the Unreal
+image=http://magiccards.info/scans/en/m12/62.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=2
+cost={U}{U}
+power=2
+toughness=2
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
@@ -2227,6 +2240,16 @@ color=u
 converted=2
 cost={1}{U}
 timing=counter
+
+>Lava Axe
+image=http://magiccards.info/scans/en/m12/148.jpg
+value=3
+rarity=C
+type=Sorcery
+color=r
+converted=5
+cost={4}{R}
+timing=removal
 
 >Lightning Bolt
 image=http://magiccards.info/scans/en/m11/149.jpg

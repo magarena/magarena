@@ -36,6 +36,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int knightExemplar;
 	private static int kulrathKnight;
 	private static int levitation;
+	private static int lordOfTheUnreal;
 	private static int madrushCyclops;
 	private static int murkfiendLiege;
 	private static int platinumAngel; // You can't lose the game.
@@ -124,6 +125,10 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		if (count > 0 && permanent.hasSubType(MagicSubType.Knight)) {
 			both += getOtherCount(knightExemplar,permanent,count);
 		}
+		count = controller.getCount(lordOfTheUnreal);
+		if (count > 0 && permanent.hasSubType(MagicSubType.Illusion)) {
+			both += controller.getCount(lordOfTheUnreal);
+		}
 		count = controller.getCount(eleshNorn);
 		both += getOtherCount(eleshNorn,permanent,count) * 2;
 		both -= opponent.getCount(eleshNorn) * 2;
@@ -182,8 +187,9 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 				flags|=MagicAbility.DoubleStrike.getMask() | 
                        MagicAbility.LifeLink.getMask();
 			}
-			if (controller.getCount(asceticism)>0) {
-				flags|=MagicAbility.CannotBeTheTarget.getMask();
+			if (controller.getCount(asceticism) > 0 ||
+				(controller.getCount(lordOfTheUnreal) > 0 && permanent.hasSubType(MagicSubType.Illusion))) {
+				flags |= MagicAbility.CannotBeTheTarget.getMask();
 			}
 			if (controller.getCount(bellowingTanglewurm)>0&&MagicColor.Green.hasColor(permanent.getColorFlags())) {
 				flags|=MagicAbility.Intimidate.getMask();
@@ -265,6 +271,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		knightExemplar=definitions.getCard("Knight Exemplar").getIndex();
 		kulrathKnight=definitions.getCard("Kulrath Knight").getIndex();
 		levitation=definitions.getCard("Levitation").getIndex();
+		lordOfTheUnreal=definitions.getCard("Lord of the Unreal").getIndex();
 		madrushCyclops=definitions.getCard("Madrush Cyclops").getIndex();
 		murkfiendLiege=definitions.getCard("Murkfiend Liege").getIndex();
 		platinumAngel=definitions.getCard("Platinum Angel").getIndex();
