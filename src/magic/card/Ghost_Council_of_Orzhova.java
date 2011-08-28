@@ -4,14 +4,13 @@ import magic.model.*;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicExileUntilEndOfTurnAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class Ghost_Council_of_Orzhova {
 	public static final MagicPermanentActivation A =new MagicPermanentActivation(
-			new MagicCondition[]{MagicManaCost.ONE.getCondition(),MagicCondition.TWO_CREATURES_CONDITION},
+			null,
             new MagicActivationHints(MagicTiming.Removal,false,1),
             "Exile") {
 		@Override
