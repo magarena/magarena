@@ -717,6 +717,19 @@ power=2
 toughness=2
 timing=fmain
 
+>Mesa Enchantress
+image=http://magiccards.info/scans/en/m12/25.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Druid
+color=w
+converted=3
+cost={1}{W}{W}
+power=0
+toughness=2
+timing=fmain
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
@@ -2317,6 +2330,16 @@ color=w
 converted=2
 cost={1}{W}
 timing=tapping
+
+>Mind Rot
+image=http://magiccards.info/scans/en/m12/101.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=3
+cost={2}{B}
+timing=removal
 
 >Mortify
 image=http://magiccards.info/scans/en/gp/122.jpg
