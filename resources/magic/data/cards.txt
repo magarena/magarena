@@ -3122,6 +3122,16 @@ converted=3
 cost={1}{B}{B}
 timing=removal
 
+>Hideous Visage
+image=http://magiccards.info/scans/en/m12/100.jpg
+value=3
+rarity=C
+type=Sorcery
+color=b
+converted=3
+cost={2}{B}
+timing=pump
+
 >Spiritmonger
 image=http://magiccards.info/scans/en/ap/121.jpg
 value=5
@@ -4792,6 +4802,19 @@ equip={5}
 power=2
 toughness=1
 timing=enchantment
+
+>Kite Shield
+image=http://magiccards.info/scans/en/m12/210.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=1
+cost={0}
+equip={3}
+power=0
+toughness=3
+timing=equipment
 
 >Sword of Light and Shadow
 image=http://magiccards.info/scans/en/ds/149.jpg
