@@ -29,9 +29,7 @@ public enum MagicRarity {
 				return type;
 			}
 		}
-        System.err.println("ERROR: Unknown rarity " + c);
-        System.exit(1);
-        return null;
+        throw new RuntimeException("Unknown rarity " + c);
 	}
 }
 
