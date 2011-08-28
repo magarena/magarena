@@ -1,17 +1,19 @@
 package magic.model;
 
+import java.io.*;
+
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
+import magic.MagicMain;
+import magic.data.FileIO;
 
 public class MagicGameReport {
 
 	private static void buildCard(final MagicGame game,final String place,final MagicCard card,final StringBuilder report) {
-		
 		report.append("   - ").append(place).append(" : ").append(card.getName()).append("\n");
 	}
 	
 	private static void buildPermanent(final MagicGame game,final MagicPermanent permanent,final StringBuilder report) {
-		
 		report.append("   - Permanent : ").append(permanent.getName());
 		if (permanent.isCreature()) {
 			final MagicPowerToughness pt=permanent.getPowerToughness(game);
@@ -29,7 +31,6 @@ public class MagicGameReport {
 	}
 	
 	private static void buildPlayer(final MagicGame game,final MagicPlayer player,final StringBuilder report) {
-		
 		report.append(player.getIndex()).append("] ");
 		report.append("Player : ").append(player.getName());
 		report.append("  Life : ").append(player.getLife());
@@ -37,17 +38,14 @@ public class MagicGameReport {
 		report.append("\n");
 
 		for (final MagicCard card: player.getHand()) {
-			
 			buildCard(game,"Hand",card,report);
 		}
 
 		for (final MagicCard card: player.getGraveyard()) {
-			
 			buildCard(game,"Graveyard",card,report);
 		}
 		
 		for (final MagicPermanent permanent : player.getPermanents()) {
-			
 			buildPermanent(game,permanent,report);
 		}
 	}
@@ -92,4 +90,41 @@ public class MagicGameReport {
 		buildScore(game,report);		
 		return report.toString();
 	}
+
+    public static void buildReport(final MagicGame game, final Throwable ex) {
+        final StringBuilder sb = new StringBuilder();
+        try {
+            //buildReport might throw an exception
+            sb.append(buildReport(game));
+            sb.append('\n');
+        } catch (final Throwable ex2) {
+            sb.append("Exception from MagicGameReport.buildReport:\n");
+            sb.append(ex2.getMessage());
+            sb.append('\n');
+            final StringWriter result = new StringWriter();
+            final PrintWriter printWriter = new PrintWriter(result);
+            ex2.printStackTrace(printWriter);
+            sb.append(result.toString());
+            sb.append('\n');
+        }
+        sb.append("Exception from controller.runGame:\n");
+        sb.append(ex.getMessage());
+        sb.append('\n');
+        final StringWriter result = new StringWriter();
+        final PrintWriter printWriter = new PrintWriter(result);
+        ex.printStackTrace(printWriter);
+        sb.append(result.toString());
+        sb.append('\n');
+
+        //print a copy to stderr
+        System.err.println(sb.toString());
+
+        //save a copy to a crash log file
+        File clog = new File(MagicMain.getGamePath(), "crash.log");
+        try {
+            FileIO.toFile(clog, sb.toString()); 
+        } catch (final IOException ex3) {
+            System.err.println("Unable to save crash log");
+        }
+    }
 }
