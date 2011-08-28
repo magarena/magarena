@@ -727,7 +727,8 @@ public interface MagicTargetFilter {
 	
     public static final MagicTargetFilter TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			return ((MagicCard)target).getCardDefinition().getConvertedCost() <= 3;
+			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+			return cardDefinition.getConvertedCost() <= 3 && !cardDefinition.isSpell();
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
