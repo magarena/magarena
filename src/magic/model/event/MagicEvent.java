@@ -34,8 +34,12 @@ public class MagicEvent implements MagicCopyable {
             final Object data[],
             final MagicEventAction action,
             final String description) {
+       
+        if (data == null) {
+            throw new RuntimeException("data is null");
+        }
 
-		this.source=source;
+        this.source=source;
 		this.player=player;
 		this.choice=choice;
 		this.targetPicker=targetPicker;
@@ -51,7 +55,6 @@ public class MagicEvent implements MagicCopyable {
 			final Object data[],
             final MagicEventAction action,
             final String description) {
-		
 		this(source,player,choice,MagicDefaultTargetPicker.getInstance(),data,action,description);
 	}
 	
