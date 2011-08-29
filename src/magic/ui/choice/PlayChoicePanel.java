@@ -8,6 +8,7 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,7 +19,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 	private static final long serialVersionUID = 1L;
 
 	private static final String MESSAGE="Choose which ability to play.";
-	private static final Dimension BUTTON_DIMENSION=new Dimension(80,35);
+	private static final Dimension BUTTON_DIMENSION=new Dimension(70,35);
 	
 	private final GameController controller;
 	private final List<MagicPlayChoiceResult> results;
@@ -38,7 +39,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 		final TextLabel textLabel=new TextLabel(controller.getMessageWithSource(source,MESSAGE),GameViewer.TEXT_WIDTH,true);
 		add(textLabel,BorderLayout.CENTER);
 		
-		final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,0));
+		final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,0));
 		buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
 		buttonPanel.setOpaque(false);
 		add(buttonPanel,BorderLayout.SOUTH);
@@ -46,6 +47,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 		for (int index=0;index<results.size();index++) {
 			final JButton button=new JButton(results.get(index).getText());
 			button.setPreferredSize(BUTTON_DIMENSION);
+			button.setBorder(BorderFactory.createLineBorder(FontsAndBorders.GRAY4));
 			button.setActionCommand(""+index);
 			button.addActionListener(this);
 			button.setFocusable(false);
