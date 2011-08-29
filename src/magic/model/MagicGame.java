@@ -841,8 +841,8 @@ public class MagicGame {
 		// Players
 		if (targetFilter.acceptType(MagicTargetType.Player)) {
 			for (final MagicPlayer targetPlayer : players) {
-				
-				if (targetFilter.accept(this,player,targetPlayer)&&targetHint.accept(player,targetPlayer)) {
+				if (targetFilter.accept(this,player,targetPlayer) &&
+                    targetHint.accept(player,targetPlayer)) {
 					targets.add(targetPlayer);
 				}				
 			}
@@ -851,10 +851,9 @@ public class MagicGame {
 		// Permanents
 		if (targetFilter.acceptType(MagicTargetType.Permanent)) {
 			for (final MagicPlayer controller : players) {
-			
 				for (final MagicPermanent targetPermanent : controller.getPermanents()) {
-				
-					if (targetFilter.accept(this,player,targetPermanent)&&targetHint.accept(player,targetPermanent)) {
+					if (targetFilter.accept(this,player,targetPermanent) && 
+                        targetHint.accept(player,targetPermanent)) {
 						targets.add(targetPermanent);
 					}
 				}
@@ -864,8 +863,8 @@ public class MagicGame {
 		// Items on stack
 		if (targetFilter.acceptType(MagicTargetType.Stack)) {
 			for (final MagicItemOnStack targetItemOnStack : stack) {
-				
-				if (targetFilter.accept(this,player,targetItemOnStack)&&targetHint.accept(player,targetItemOnStack)) {
+				if (targetFilter.accept(this,player,targetItemOnStack) && 
+                    targetHint.accept(player,targetItemOnStack)) {
 					targets.add(targetItemOnStack);
 				}
 			}
@@ -874,7 +873,6 @@ public class MagicGame {
 		// Cards in graveyard
 		if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
 			for (final MagicCard targetCard : player.getGraveyard()) {
-				
 				if (targetFilter.accept(this,player,targetCard)) {
 					targets.add(targetCard);
 				}				
@@ -884,7 +882,6 @@ public class MagicGame {
 		// Cards in opponent's graveyard
 		if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
 			for (final MagicCard targetCard : getOpponent(player).getGraveyard()) {
-				
 				if (targetFilter.accept(this,player,targetCard)) {
 					targets.add(targetCard);
 				}				
@@ -904,11 +901,15 @@ public class MagicGame {
             final MagicTargetChoice targetChoice,
             final boolean hints) {
 	
-		final Collection<MagicTarget> targets =
-            filterTargets(player,targetChoice.getTargetFilter(),targetChoice.getTargetHint(hints));
+		final Collection<MagicTarget> targets = filterTargets(
+                player,
+                targetChoice.getTargetFilter(),
+                targetChoice.getTargetHint(hints));
+
 		if (!targetChoice.isTargeted()) {
 			return !targets.isEmpty();
 		}
+
 		for (final MagicTarget target : targets) {
 			if (target.isValidTarget(this,source)) {
 				return true;
