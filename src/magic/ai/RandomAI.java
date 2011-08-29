@@ -17,8 +17,8 @@ public class RandomAI implements MagicAI {
         this(false);
     }
 
-    public RandomAI(boolean printLog) {
-        LOGGING = printLog;
+    public RandomAI(boolean log) {
+        LOGGING = log || (System.getProperty("debug") != null);
     }
     
     private void log(final String message) {
@@ -56,7 +56,7 @@ public class RandomAI implements MagicAI {
                 log((achoice==selected?"* ":"  ")+achoice);
             }
         } else {
-            log(info + " " + selected); 
+            //log(info + " " + selected); 
         }
         return game.map(selected.choiceResults);
     }
