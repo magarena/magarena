@@ -799,6 +799,19 @@ power=3
 toughness=3
 timing=fmain
 
+>Skinshifter
+image=http://magiccards.info/scans/en/m12/195.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=2
+cost={1}{G}
+power=1
+toughness=1
+timing=main
+
 >Safehold Elite
 image=http://magiccards.info/scans/en/shm/239.jpg
 value=2
