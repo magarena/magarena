@@ -59,6 +59,7 @@ public class MagicGameReport {
             report.append(itemOnStack.getName());
             report.append("  Player : ");
             report.append(itemOnStack.getController().getName());
+            report.append('\n');
 		}
 	}
 
@@ -102,8 +103,7 @@ public class MagicGameReport {
             sb.append(buildReport(game));
             sb.append('\n');
         } catch (final Throwable ex2) {
-            sb.append("Exception from MagicGameReport.buildReport:\n");
-            sb.append(ex2.getMessage());
+            sb.append("Exception from MagicGameReport.buildReport: " + ex2.getMessage());
             sb.append('\n');
             final StringWriter result = new StringWriter();
             final PrintWriter printWriter = new PrintWriter(result);
@@ -111,8 +111,7 @@ public class MagicGameReport {
             sb.append(result.toString());
             sb.append('\n');
         }
-        sb.append("Exception from controller.runGame:\n");
-        sb.append(ex.getMessage());
+        sb.append("Exception from controller.runGame: " + ex.getMessage());
         sb.append('\n');
         final StringWriter result = new StringWriter();
         final PrintWriter printWriter = new PrintWriter(result);
