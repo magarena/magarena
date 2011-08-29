@@ -31,7 +31,7 @@ public class RandomAI implements MagicAI {
         //get a list of choices
         MagicGame choiceGame = new MagicGame(game, scorePlayer);
         final MagicEvent event=choiceGame.getNextEvent();
-		final List<Object[]> choices=event.getArtificialChoiceResults(choiceGame);
+        final List<Object[]> choices=event.getArtificialChoiceResults(choiceGame);
         choiceGame = null;
         
         final int size = choices.size();
