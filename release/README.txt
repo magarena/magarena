@@ -90,7 +90,7 @@ This is a bug fix release.
   along with the game.cfg and tournament.cfg files. 
 
 - fixed an issue where the game would crash when trying to play sound effects
-- fixed bug with Sun Titan's ability to return, previously could not return
+- fixed bug with Sun Titan's ability to return, previously could return
   spell cards 
 
 Release 1.17 (August 26, 2011)
