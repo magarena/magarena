@@ -2,6 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicKickerChoice;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTriggerType;
 
@@ -20,11 +21,19 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
 			event.payManaCost(game,itemOnStack.getController(),choiceResults);
 
             // trigger WhenTargeted
+            boolean isTargeted = false;
+
             if (event.getChoice() instanceof MagicTargetChoice) {
                 final MagicTargetChoice tchoice = (MagicTargetChoice)event.getChoice();
-                if (tchoice.isTargeted()) {
-                    game.executeTrigger(MagicTriggerType.WhenTargeted,itemOnStack);
-                }
+                isTargeted = tchoice.isTargeted();
+            }
+            if (event.getChoice() instanceof MagicKickerChoice) {
+                final MagicTargetChoice tchoice = ((MagicKickerChoice)event.getChoice()).getTargetChoice();
+                isTargeted = tchoice != null && tchoice.isTargeted();
+            }
+
+            if (isTargeted) {        
+                game.executeTrigger(MagicTriggerType.WhenTargeted,itemOnStack);
             }
 		}
 	};
