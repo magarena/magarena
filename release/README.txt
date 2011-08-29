@@ -73,10 +73,14 @@ This is a bug fix release.
   Greatsword
   Griffin Rider
   Guardians' Pledge
-  Hideous Visage and Kite Shield
-  Lava Axe and Lord of the Unreal
-  Manalith and Manic Vandal
-  Mesa Enchantress and Mind Rot
+  Hideous Visage
+  Kite Shield
+  Lava Axe
+  Lord of the Unreal
+  Manalith
+  Manic Vandal
+  Mesa Enchantress
+  Mind Rot
   Peregrine Griffin
   Pride Guardian
   Reclaim
