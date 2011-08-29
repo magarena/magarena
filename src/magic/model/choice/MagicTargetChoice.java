@@ -16,7 +16,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MagicTargetChoice extends MagicChoice {
-
+	
+    public static final MagicTargetChoice NONE =
+		new MagicTargetChoice(MagicTargetFilter.NONE,false,MagicTargetHint.None,"nothing");
 	public static final MagicTargetChoice TARGET_SPELL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.None,
                 "target spell");
