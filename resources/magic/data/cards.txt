@@ -772,6 +772,19 @@ toughness=3
 ability=defender
 timing=main
 
+>Royal Assassin
+image=http://magiccards.info/scans/en/m12/105.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Assassin
+color=b
+converted=3
+cost={1}{B}{B}
+power=1
+toughness=1
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
