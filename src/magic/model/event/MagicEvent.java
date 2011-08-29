@@ -162,7 +162,11 @@ public class MagicEvent implements MagicCopyable {
 		return null;
 	}
 
-	public final void payManaCost(final MagicGame game,final MagicPlayer player,final Object choiceResults[],final int index) {
+	public final void payManaCost(
+            final MagicGame game,
+            final MagicPlayer player,
+            final Object choiceResults[],
+            final int index) {
 		final MagicPayManaCostResult result=(MagicPayManaCostResult)choiceResults[index];
 		// Result can be null when paying cost is optional.
 		if (result!=null) {
