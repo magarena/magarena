@@ -1,6 +1,8 @@
 package magic.model;
 
 import java.io.*;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
@@ -93,6 +95,8 @@ public class MagicGameReport {
 
     public static void buildReport(final MagicGame game, final Throwable ex) {
         final StringBuilder sb = new StringBuilder();
+        sb.append("CRASH REPORT CREATED ON " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
+        sb.append('\n');
         try {
             //buildReport might throw an exception
             sb.append(buildReport(game));
@@ -122,7 +126,7 @@ public class MagicGameReport {
         //save a copy to a crash log file
         File clog = new File(MagicMain.getGamePath(), "crash.log");
         try {
-            FileIO.toFile(clog, sb.toString()); 
+            FileIO.toFile(clog, sb.toString(), true); 
         } catch (final IOException ex3) {
             System.err.println("Unable to save crash log");
         }
