@@ -211,6 +211,21 @@ public class TokenCardDefinitions {
 		}
 	};	
 	
+	public static final MagicCardDefinition BIRD_TOKEN_CARD=new MagicCardDefinition("Bird") {
+		public void initialize() {
+			setToken();
+			setValue(3);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Bird"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.White);
+			setColoredType();
+			setPower(3);
+			setToughness(3);
+			setAbility(MagicAbility.Flying);
+		}
+	};	
+	
 	public static final MagicCardDefinition APE_TOKEN_CARD=new MagicCardDefinition("Ape","Ape") {
 		public void initialize() {
 			setToken();
@@ -431,6 +446,7 @@ public class TokenCardDefinitions {
 		BAT_TOKEN_CARD,
 		FAERIE_ROGUE_TOKEN_CARD,
 		GRIFFIN_TOKEN_CARD,
+		BIRD_TOKEN_CARD,
 		APE_TOKEN_CARD,
 		BEAST3_TOKEN_CARD,
 		BEAST4_TOKEN_CARD,

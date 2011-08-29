@@ -758,6 +758,20 @@ toughness=3
 ability=defender
 timing=main
 
+>Roc Egg
+image=http://magiccards.info/scans/en/m12/32.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Bird
+color=w
+converted=3
+cost={2}{W}
+power=0
+toughness=3
+ability=defender
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4

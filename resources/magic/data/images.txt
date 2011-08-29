@@ -72,6 +72,7 @@ Voja.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=20055&d=1143
 Beast3.jpg;http://magiccards.info/extras/token/magic-2011/beast.jpg
 Beast4.jpg;http://magiccards.info/extras/token/zendikar/beast.jpg
 Beast8.jpg;http://magiccards.info/extras/token/shards-of-alara/beast.jpg
+Bird.jpg;http://magiccards.info/extras/token/magic-2011/bird.jpg
 Dragon4.jpg;http://magiccards.info/extras/token/shards-of-alara/dragon.jpg
 Dragon5.jpg;http://magiccards.info/extras/token/worldwake/dragon.jpg
 Eldrazi Spawn.jpg;http://magiccards.info/extras/token/rise-of-the-eldrazi/eldrazi-spawn-1.jpg
