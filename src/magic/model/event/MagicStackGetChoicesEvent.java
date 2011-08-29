@@ -6,9 +6,7 @@ import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicStackGetChoicesEvent extends MagicEvent {
-
 	private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-		
 		@Override
 		public void executeEvent(
                 final MagicGame game,
