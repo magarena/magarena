@@ -105,10 +105,10 @@ public class FileIO {
         return img;
     }
     
-    static public void toFile(final File aFile, final String aContents) throws IOException {
+    static public void toFile(final File aFile, final String aContents, final boolean append) throws IOException {
         Writer output = null;
         try {
-            output = new BufferedWriter(new FileWriter(aFile));
+            output = new BufferedWriter(new FileWriter(aFile, append));
             output.write(aContents);
         } finally {
             close(output);
