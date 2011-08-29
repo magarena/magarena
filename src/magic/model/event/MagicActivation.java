@@ -34,6 +34,17 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         this.id = -1;             //depends on card
 		this.targetChoice = null; //depends on card
 
+        //check arguments
+        if (conditions == null) {
+            throw new RuntimeException("conditions is null");
+        }
+        if (hints == null) {
+            throw new RuntimeException("hints is null");
+        }
+        if (txt == null) {
+            throw new RuntimeException("hints is null");
+        }
+
         this.text = txt;
         this.index = index;
 		this.conditions=conditions;
@@ -47,14 +58,12 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         this.targetChoice = getTargetChoice();
 		
         // set the activation for the single activation condition, depends on id
-		if (conditions!=null) {
-			for (final MagicCondition condition : conditions) {
-				if (condition instanceof MagicSingleActivationCondition) {
-					final MagicSingleActivationCondition singleCondition=(MagicSingleActivationCondition)condition;
-					singleCondition.setActivation(id);
-				}
-			}
-		}
+        for (final MagicCondition condition : conditions) {
+            if (condition instanceof MagicSingleActivationCondition) {
+                final MagicSingleActivationCondition singleCondition = (MagicSingleActivationCondition)condition;
+                singleCondition.setActivation(id);
+            }
+        }
     }
 	
     public final MagicCardDefinition getCardDefinition() {
@@ -110,13 +119,11 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
            ) {
 			return false;
 		}
-		if (conditions != null) {
-			for (final MagicCondition condition : conditions) {
-				if (!condition.accept(game,source)) {
-					return false;
-				}
-			}
-		}
+        for (final MagicCondition condition : conditions) {
+            if (!condition.accept(game,source)) {
+                return false;
+            }
+        }
 		if (targetChoice == null) {
 			return true;
 		}
