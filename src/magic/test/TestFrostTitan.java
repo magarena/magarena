@@ -25,6 +25,7 @@ class TestFrostTitan extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
 	    addToHand(P,"Lightning Bolt",3); 
+	    addToHand(P,"Vines of Vastwood",1); 
 	    addToHand(P,"Frost Titan",3);
        
 
@@ -37,7 +38,7 @@ class TestFrostTitan extends TestGameBuilder {
         createPermanent(game,P,"Phyrexian Crusader",true,1);
         createPermanent(game,P,"Frost Titan",true,1);
         createPermanent(game,P,"Frost Titan",false,1);
-	    addToHand(P,"Lightning Bolt",3);
+	    //addToHand(P,"Lightning Bolt",3);
 		
 		return game;
     }
