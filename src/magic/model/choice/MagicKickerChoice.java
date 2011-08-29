@@ -21,7 +21,6 @@ public class MagicKickerChoice extends MagicChoice {
 	private final boolean multi;
 	
 	public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost,final boolean multi) {
-		
 		super("Choose to many times to pay the kicker cost.");
 		this.otherChoice=otherChoice;
 		this.cost=cost;
@@ -30,28 +29,26 @@ public class MagicKickerChoice extends MagicChoice {
 
 	@Override
 	public MagicTargetChoice getTargetChoice() {
-		
 		return otherChoice!=null&&(otherChoice instanceof MagicTargetChoice)?(MagicTargetChoice)otherChoice:null;
 	}
 	
 	@Override
 	public int getManaChoiceResultIndex() {
-
 		return 2;
 	}
 
 	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
-
+	public Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 		throw new UnsupportedOperationException();
 	}
 
 	private int getMaximumCount(final MagicGame game,final MagicPlayer player) {
-		
 		final MagicBuilderManaCost builderCost=new MagicBuilderManaCost(player.getBuilderCost());
-		
 		for (int index=1;;index++) {
-
 			cost.addTo(builderCost);
 			if (!new MagicPayManaCostResultBuilder(game,player,builderCost).hasResults()) {
 				return index-1;
@@ -63,7 +60,6 @@ public class MagicKickerChoice extends MagicChoice {
 	}
 	
 	private MagicManaCost getCost(final int count) {
-		
 		if (count==1) {
 			return cost;
 		} else if (count==0) {
@@ -72,7 +68,6 @@ public class MagicKickerChoice extends MagicChoice {
 			final StringBuilder costText=new StringBuilder();
 			final String text=cost.getText();
 			for (int c=count;c>0;c--) {
-				
 				costText.append(text);
 			}			
 			return MagicManaCost.createCost(costText.toString());
@@ -80,7 +75,11 @@ public class MagicKickerChoice extends MagicChoice {
 	}
 
 	@Override
-	public List<Object[]> getArtificialChoiceResults(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	public List<Object[]> getArtificialChoiceResults(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		final Collection<Object> otherOptions;
 		if (otherChoice==null) {
@@ -92,7 +91,6 @@ public class MagicKickerChoice extends MagicChoice {
 		final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
 		final int maximumCount=getMaximumCount(game,player);
 		for (int count=0;count<=maximumCount;count++) {
-
 			final Object choiceResults[]=new Object[3];
 			choiceResults[1]=count;
 			
@@ -105,10 +103,8 @@ public class MagicKickerChoice extends MagicChoice {
 			}
 
 			for (final Object manaOption : manaOptions) {
-
 				choiceResults[2]=manaOption;
 				for (final Object otherOption : otherOptions) {
-				
 					choiceResults[0]=otherOption;
 					choiceResultsList.add(Arrays.copyOf(choiceResults,3));
 				}				
@@ -119,7 +115,11 @@ public class MagicKickerChoice extends MagicChoice {
 	}
 	
 	@Override
-	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+	public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		final int maximumCount=getMaximumCount(game,player);
 		final int count;
