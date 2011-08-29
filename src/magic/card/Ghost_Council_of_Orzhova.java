@@ -7,10 +7,14 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.condition.MagicCondition;
 
 public class Ghost_Council_of_Orzhova {
 	public static final MagicPermanentActivation A =new MagicPermanentActivation(
-			null,
+			new MagicCondition[]{
+                MagicManaCost.ONE.getCondition(),
+                MagicCondition.ONE_CREATURE_CONDITION
+            },
             new MagicActivationHints(MagicTiming.Removal,false,1),
             "Exile") {
 		@Override
