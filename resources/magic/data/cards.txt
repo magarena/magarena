@@ -6712,6 +6712,16 @@ converted=2
 cost={U}{U}
 timing=spell
 
+>Reverberate
+image=http://magiccards.info/scans/en/m12/152.jpg
+value=3
+rarity=R
+type=Instant
+color=r
+converted=2
+cost={R}{R}
+timing=spell
+
 >Echo Mage
 image=http://magiccards.info/scans/en/roe/64.jpg
 value=3
