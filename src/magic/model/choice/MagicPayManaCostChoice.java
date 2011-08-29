@@ -55,7 +55,11 @@ public class MagicPayManaCostChoice extends MagicChoice {
 	}
 
 	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	public Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 		if (game.getFastChoices()) {
 			return buildDelayedPayManaCostResults(game,player);
 		} else {
