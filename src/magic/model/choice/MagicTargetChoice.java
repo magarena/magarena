@@ -230,6 +230,7 @@ public class MagicTargetChoice extends MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
+
 		final Collection<Object> targets=game.getLegalTargets(player,source,this,targetHint);
 		if (game.getFastChoices()) {
 			return event.getTargetPicker().pickTargets(game,player,targets);
@@ -238,8 +239,11 @@ public class MagicTargetChoice extends MagicChoice {
 	}
 
 	@Override
-	public final Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,
-            final MagicPlayer player,final MagicSource source) {
+	public final Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		controller.disableActionButton(false);		
 		controller.showMessage(source,getDescription());
