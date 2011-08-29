@@ -20,7 +20,8 @@ public class Vines_of_Vastwood {
                     cardOnStack.getController(),
                     new MagicKickerChoice(
                         MagicTargetChoice.TARGET_CREATURE,
-                        MagicManaCost.GREEN,false),
+                        MagicManaCost.GREEN,
+                        false),
 				    MagicPumpTargetPicker.getInstance(),
                     new Object[]{cardOnStack},
                     this,
