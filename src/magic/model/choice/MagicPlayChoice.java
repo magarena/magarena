@@ -123,13 +123,6 @@ public class MagicPlayChoice extends MagicChoice {
                 skip = false;
             }
 
-            /*
-            //if top item belongs to AI, stop so that player can see what AI is doing
-		    if (game.getStack().hasItemOnTopOfPlayer(game.getOpponent(player))) {
-                skip = false;
-            }
-            */
-
             if (skip) {
                 //pause if there is an item on the stack
                 if (!game.getStack().isEmpty()) {
