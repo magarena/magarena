@@ -5,21 +5,25 @@ import magic.model.stack.MagicCardOnStack;
 
 public interface MagicTargetFilter {
 	
-	public static final MagicTargetFilter TARGET_SPELL=new MagicTargetFilter() {
-
+    public static final MagicTargetFilter NONE=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
+			return false;
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return false;
+		}
+	};
+	
+	public static final MagicTargetFilter TARGET_SPELL=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return target.isSpell();
 		}
-		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Stack;
 		}
 	};
 	
     public static final MagicTargetFilter TARGET_RED_GREEN_SPELL=new MagicTargetFilter() {
-
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			if (target.isSpell()) { 
 				final MagicCardOnStack cardOnStack = (MagicCardOnStack)target;
@@ -28,16 +32,13 @@ public interface MagicTargetFilter {
 			}
 			return false;
 		}
-
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType==MagicTargetType.Stack;
 		}
 	};
 
 	public static final MagicTargetFilter TARGET_CREATURE_SPELL=new MagicTargetFilter() {
-
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			if (target.isSpell()) {
 				final MagicCardOnStack cardOnStack=(MagicCardOnStack)target;
 				final MagicCardDefinition card=cardOnStack.getCardDefinition();
@@ -45,9 +46,7 @@ public interface MagicTargetFilter {
 			}
 			return false;
 		}
-
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Stack;
 		}
 	};
@@ -102,27 +101,19 @@ public interface MagicTargetFilter {
 	};
 
 	public static final MagicTargetFilter TARGET_OPPONENT=new MagicTargetFilter() {
-		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			return target!=player;
 		}
-		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Player;
 		}
 	};
 	
 	public static final MagicTargetFilter TARGET_SPELL_OR_PERMANENT=new MagicTargetFilter() {
-
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			return target.isSpell()||target.isPermanent();
 		}
-		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Stack||targetType==MagicTargetType.Permanent;
 		}
 	};
@@ -131,7 +122,6 @@ public interface MagicTargetFilter {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return true;
 		}
-
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType==MagicTargetType.Permanent;
 		}
@@ -143,7 +133,6 @@ public interface MagicTargetFilter {
 			final int colors = targetPermanent.getColorFlags();
             return MagicColor.Black.hasColor(colors)||MagicColor.Red.hasColor(colors);
 		}
-
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType==MagicTargetType.Permanent;
 		}
