@@ -9,6 +9,7 @@ Alloy Myr
 Alluring Siren
 Alpha Tyrranax
 Amphin Cutthroat
+Angel's Mercy
 Arbalest Elite
 Archon of Justice
 Archon of Redemption
@@ -76,22 +77,30 @@ Cudgel Troll
 Cunning Sparkmage
 Cystbearer
 Daggerback Basilisk
+Dark Favor
 Darkslick Drake
 Darkslick Shores
 Darksteel Myr
 Darksteel Sentinel
 Day of Judgment
 Deathless Angel
+Deathmark
+Demystify
+Devouring Swarm
 Diminish
+Disentomb
 Disfigure
 Dissipation Field
 Divination
+Divine Favor
 Doom Blade
 Dragonmaster Outcast
 Dragonskull Summit
 Drake Umbra
 Drana, Kalastria Bloodchief
+Drifting Shade
 Drowned Catacomb
+Dungrove Elder
 Duskdale Wurm
 Echo Mage
 Eel Umbra
@@ -101,6 +110,7 @@ Elite Vanguard
 Ember Hauler
 Explore
 Ezuri's Archers
+Fiery Hellhound
 Fire Servant
 Flameblast Dragon
 Flameborn Hellion
@@ -108,6 +118,8 @@ Flame Slash
 Flashfreeze
 Flayer Husk
 Flensermite
+Flight
+Fog
 Forest
 Frost Titan
 Fume Spitter
@@ -115,34 +127,44 @@ Garruk's Companion
 Giant Growth
 Giant Scorpion
 Giant Spider
+Gideon's Avenger
 Gideon's Lawkeeper
 Glacial Fortress
+Gladecover Scout
 Glissa's Courier
 Glistener Elf
 Gloomhunter
 Glory Seeker
+Goblin Arsonist
 Goblin Bushwhacker
 Goblin Chieftain
+Goblin Fireslinger
 Goblin Gaveleer
 Goblin Piker
 Goblin Roughrider
 Goblin Ruinblaster
 Goblin Shortcutter
+Goblin Tunneler
 Goblin Wardriver
 Goblin War Paint
 Go for the Throat
 Goliath Sphinx
 Grappler Spider
 Grasp of Darkness
+Gravedigger
 Grave Titan
 Graypelt Refuge
 Greater Basilisk
+Greatsword
+Griffin Rider
 Griffin Sentinel
 Guard Gomazoa
+Guardians' Pledge
 Guul Draz Specter
 Guul Draz Vampire
 Hero of Bladehold
 Hideous End
+Hideous Visage
 Honor of the Pure
 Hovermyr
 Hyena Umbra
@@ -157,11 +179,13 @@ Kazandu Refuge
 Kazuul, Tyrant of the Cliffs
 Kitesail
 Kitesail Apprentice
+Kite Shield
 Knight Exemplar
 Kor Firewalker
 Koth's Courier
 Kraken Hatchling
 Kuldotha Ringleader
+Lava Axe
 Leatherback Baloth
 Leonin Skyhunter
 Levitation
@@ -173,12 +197,15 @@ Liliana's Specter
 Llanowar Elves
 Lone Missionary
 Lord of Shatterskull Pass
+Lord of the Unreal
 Lost Leonin
 Loxodon Partisan
 Loxodon Wayfarer
 Lumengrid Gargoyle
 Makindi Griffin
 Mana Leak
+Manalith
+Manic Vandal
 Maritime Guard
 Mark of Mutiny
 Marsh Casualties
@@ -186,7 +213,9 @@ Marsh Threader
 Massacre Wurm
 Memnite
 Merfolk Seastalkers
+Mesa Enchantress
 Mighty Leap
+Mind Rot
 Mirran Crusader
 Mnemonic Wall
 Mordant Dragon
@@ -210,6 +239,7 @@ Overrun
 Overwhelming Stampede
 Pacifism
 Pelakka Wurm
+Peregrine Griffin
 Perilous Myr
 Perimeter Captain
 Phyrexian Crusader
@@ -226,6 +256,7 @@ Plains
 Plated Seastrider
 Platinum Angel
 Plummet
+Pride Guardian
 Priests of Norn
 Psychic Barrier
 Pyroclasm
@@ -237,6 +268,7 @@ Rally the Forces
 Rampaging Baloths
 Razor Swine
 Razorverge Thicket
+Reclaim
 Rite of Replication
 River Boa
 Rootbound Crag

@@ -46,6 +46,48 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.17b (August 27, 2011)
+=============
+This is a bug fix release.
+
+- added the following cards:
+  Dark Favor
+  Deathmark
+  Demystify
+  Devouring Swarm
+  Disentomb
+  Raise Dead
+  Divine Favor
+  Drifting Shade
+  Dungrove Elder
+  Fiery Hellhound
+  Flight
+  Fog
+  Angel's Mercy
+  Gideon's Avenger
+  Gladecover Scout
+  Goblin Arsonist
+  Goblin Fireslinger
+  Goblin Tunneler
+  Gravedigger
+  Greatsword
+  Griffin Rider
+  Guardians' Pledge
+  Hideous Visage and Kite Shield
+  Lava Axe and Lord of the Unreal
+  Manalith and Manic Vandal
+  Mesa Enchantress and Mind Rot
+  Peregrine Griffin
+  Pride Guardian
+  Reclaim
+
+- added a crash log to the game, it is stored in the Magarena data folder
+  along with the game.cfg and tournament.cfg files. 
+
+- fixed an issue where the game would crash when trying to play sound effects
+- fixed bug with Sun Titan's ability to return, previously could not return
+  spell cards 
+
 Release 1.17 (August 26, 2011)
 ============
 brought to you by beholder and melvin

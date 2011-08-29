@@ -18,6 +18,7 @@ Anaba Bodyguard
 Anaconda
 Angelic Wall
 Angel of Despair
+Angel's Mercy
 Arachnoid
 Arbalest Elite
 Arcane Sanctum
@@ -156,6 +157,7 @@ Cystbearer
 Daggerback Basilisk
 Daggerclaw Imp
 Dancing Scimitar
+Dark Favor
 Darkslick Drake
 Darkslick Shores
 Darksteel Gargoyle
@@ -167,14 +169,19 @@ Deadly Recluse
 Death Baron
 Deathbringer Liege
 Deathless Angel
+Deathmark
 Debtors' Knell
 Deft Duelist
 Deluge
+Demystify
+Devouring Swarm
 Diminish
+Disentomb
 Disfigure
 Dismal Failure
 Dissipation Field
 Divination
+Divine Favor
 Diving Griffin
 Doom Blade
 Doomgape
@@ -189,10 +196,12 @@ Drake Umbra
 Drana, Kalastria Bloodchief
 Dread
 Dreg Reaver
+Drifting Shade
 Dross Crocodile
 Dross Prowler
 Drowned Catacomb
 Drudge Reavers
+Dungrove Elder
 Duskdale Wurm
 Dusk Imp
 Dust Corona
@@ -223,6 +232,7 @@ Ezuri's Archers
 Fallen Angel
 Fangren Hunter
 Femeref Archers
+Fiery Hellhound
 Fighting Drake
 Fire Servant
 Fireshrieker
@@ -235,7 +245,9 @@ Flame Slash
 Flashfreeze
 Flayer Husk
 Flensermite
+Flight
 Flight of Fancy
+Fog
 Followed Footsteps
 Fomori Nomad
 Foot Soldiers
@@ -260,8 +272,10 @@ Giant Octopus
 Giant Scorpion
 Giant Solifuge
 Giant Spider
+Gideon's Avenger
 Gideon's Lawkeeper
 Glacial Fortress
+Gladecover Scout
 Glass Golem
 Glen Elendra Archmage
 Glen Elendra Liege
@@ -275,12 +289,14 @@ Glory of Warfare
 Glory Seeker
 Gluttonous Zombie
 Gnarled Mass
+Goblin Arsonist
 Goblin Artillery
 Goblin Brigand
 Goblin Bushwhacker
 Goblin Chariot
 Goblin Chieftain
 Goblin Deathraiders
+Goblin Fireslinger
 Goblin Gaveleer
 Goblin Glider
 Goblin Mountaineer
@@ -293,6 +309,7 @@ Goblin Shortcutter
 Goblin Sky Raider
 Goblin Spelunkers
 Goblin Striker
+Goblin Tunneler
 Goblin Wardriver
 Goblin War Paint
 Godhead of Awe
@@ -304,13 +321,16 @@ Goliath Spider
 Gorgon Flail
 Grappler Spider
 Grasp of Darkness
+Gravedigger
 Gravelgill Axeshark
 Grave Titan
 Graypelt Refuge
 Grayscaled Gharial
 Greater Basilisk
 Great Sable Stag
+Greatsword
 Griffin Guide
+Griffin Rider
 Griffin Sentinel
 Grixis Grimblade
 Grizzled Leotau
@@ -319,6 +339,7 @@ Guard Gomazoa
 Guardian of the Guildpact
 Guardian Seraph
 Guardians of Akrasa
+Guardians' Pledge
 Guul Draz Specter
 Guul Draz Vampire
 Halcyon Glaze
@@ -331,6 +352,7 @@ Hearthfire Hobgoblin
 Hellkite Overlord
 Hero of Bladehold
 Hideous End
+Hideous Visage
 Hillcomber Giant
 Hill Giant
 Hissing Miasma
@@ -386,6 +408,7 @@ Kiss of the Amesha
 Kitchen Finks
 Kitesail
 Kitesail Apprentice
+Kite Shield
 Knight Exemplar
 Knight of Meadowgrain
 Kodama of the North Tree
@@ -397,6 +420,7 @@ Kuldotha Ringleader
 Kulrath Knight
 Lantern Kami
 Last Gasp
+Lava Axe
 Lavaborn Muse
 Leatherback Baloth
 Leonin Scimitar
@@ -418,6 +442,7 @@ Loamdragger Giant
 Lone Missionary
 Lord of Extinction
 Lord of Shatterskull Pass
+Lord of the Unreal
 Lost Leonin
 Loxodon Hierarch
 Loxodon Partisan
@@ -431,6 +456,8 @@ Mage Slayer
 Mahamoti Djinn
 Makindi Griffin
 Mana Leak
+Manalith
+Manic Vandal
 Marisi's Twinclaws
 Maritime Guard
 Mark of Mutiny
@@ -444,10 +471,12 @@ Mass of Ghouls
 Meglonoth
 Memnite
 Merfolk Seastalkers
+Mesa Enchantress
 Messenger Falcons
 Midnight Banshee
 Might of Oaks
 Mighty Leap
+Mind Rot
 Mind Spring
 Mind Stone
 Mire Boa
@@ -518,6 +547,7 @@ Pacifism
 Paladin en-Vec
 Pegasus Charger
 Pelakka Wurm
+Peregrine Griffin
 Perilous Myr
 Perimeter Captain
 Phantom Warrior
@@ -545,6 +575,7 @@ Plummet
 Pongify
 Predator Dragon
 Prickly Boggart
+Pride Guardian
 Priests of Norn
 Promise of Bunrei
 Protective Bubble
@@ -563,6 +594,7 @@ Rafiq of the Many
 Rage Nimbus
 Raging Goblin
 Raging Ravine
+Raise Dead
 Rakdos Guildmage
 Raking Canopy
 Rally the Forces
@@ -572,6 +604,7 @@ Razorjaw Oni
 Razor Swine
 Razortooth Rats
 Razorverge Thicket
+Reclaim
 Recover
 Remand
 Rendclaw Trow
