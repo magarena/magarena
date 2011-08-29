@@ -22,7 +22,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	private long id;
 	private MagicTargetChoice targetChoice;
 
-	/** Conditions can be null. */
 	public MagicActivation(
             final int index,
             final MagicCondition conditions[],
@@ -30,20 +29,10 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             final String txt
             ) {
         
+        //depends on the card
         this.cardIndex = -1;
-        this.id = -1;             //depends on card
-		this.targetChoice = null; //depends on card
-
-        //check arguments
-        if (conditions == null) {
-            throw new RuntimeException("conditions is null");
-        }
-        if (hints == null) {
-            throw new RuntimeException("hints is null");
-        }
-        if (txt == null) {
-            throw new RuntimeException("hints is null");
-        }
+        this.id = -1;
+		this.targetChoice = MagicTargetChoice.NONE;
 
         this.text = txt;
         this.index = index;
@@ -98,8 +87,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	}
 	
 	public void changeActivationPriority(final MagicGame game,final MagicSource source) {
-		assert game != null;
-        assert source != null;
         final MagicActivationPriority actpri = source.getController().getActivationPriority();
 		actpri.setPriority(priority);
 		actpri.setActivationId(id);
