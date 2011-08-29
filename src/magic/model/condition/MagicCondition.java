@@ -3,7 +3,9 @@ package magic.model.condition;
 import magic.model.*;
 
 public interface MagicCondition {
-	
+
+    public static final MagicCondition[] NONE = new MagicCondition[0];
+
 	public static final MagicCondition CARD_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicCard card=(MagicCard)source;
