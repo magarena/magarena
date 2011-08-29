@@ -27,7 +27,6 @@ public abstract class MagicPermanentActivation extends MagicActivation {
 
 	private static int currentIndex = 1;
 
-    //without name but has txt (name defaults to null) 
     public MagicPermanentActivation(
             final MagicCondition conditions[],
             final MagicActivationHints hints,
