@@ -2344,6 +2344,17 @@ converted=1
 cost={R}
 timing=removal
 
+>Shock
+image=http://magiccards.info/scans/en/m12/154.jpg
+value=2
+removal=2
+rarity=C
+type=Instant
+color=r
+converted=1
+cost={R}
+timing=removal
+
 >Sigil Blessing
 image=http://magiccards.info/scans/en/ala/195.jpg
 value=3
