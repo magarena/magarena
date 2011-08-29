@@ -6,10 +6,11 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.condition.MagicCondition;
 
 public class Mogg_Fanatic {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Removal),
             "Damage"
             ) {

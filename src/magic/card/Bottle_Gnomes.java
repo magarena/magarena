@@ -3,10 +3,11 @@ package magic.card;
 import magic.model.*;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.*;
+import magic.model.condition.MagicCondition;
 
 public class Bottle_Gnomes {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Removal),
             "Life+3") {
 		@Override

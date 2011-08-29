@@ -5,10 +5,11 @@ import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.target.MagicBounceTargetPicker;
+import magic.model.condition.MagicCondition;
 
 public class Angelic_Shield {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
 

@@ -4,10 +4,11 @@ import magic.model.*;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.condition.MagicCondition;
 
 public class Spiketail_Hatchling {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Counter),
             "Counter") {
 

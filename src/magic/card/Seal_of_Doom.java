@@ -6,10 +6,11 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.condition.MagicCondition;
 
 public class Seal_of_Doom {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
 

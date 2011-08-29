@@ -8,10 +8,11 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.target.MagicPumpTargetPicker;
+import magic.model.condition.MagicCondition;
 
 public class Fires_of_Yavimaya {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
 

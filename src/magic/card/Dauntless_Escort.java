@@ -5,12 +5,13 @@ import magic.model.action.MagicSetAbilityAction;
 import magic.model.event.*;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.condition.MagicCondition;
 
 import java.util.Collection;
 
 public class Dauntless_Escort {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Pump),
             "Indestr") {
 		@Override

@@ -5,10 +5,11 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.target.MagicCountersTargetPicker;
+import magic.model.condition.MagicCondition;
 
 public class Vampire_Hexmage {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            null,
+            MagicCondition.NONE,
             new MagicActivationHints(MagicTiming.Removal),
             "Remove") {
 		@Override

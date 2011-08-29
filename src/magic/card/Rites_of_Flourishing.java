@@ -15,7 +15,7 @@ public class Rites_of_Flourishing {
 			return new MagicEvent(
                     permanent,
                     player,
-                    null,
+                    MagicEvent.NO_DATA,
                     this,
                     player + " may play an additional land this turn.");
 		}
@@ -36,7 +36,7 @@ public class Rites_of_Flourishing {
     			return new MagicEvent(
     					permanent,
     					permanent.getController(),
-    					null,
+    					MagicEvent.NO_DATA,
     					this,
     					player + " may play an additional land this turn.");
     	}
