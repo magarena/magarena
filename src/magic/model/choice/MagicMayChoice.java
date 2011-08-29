@@ -12,18 +12,18 @@ import java.util.*;
 
 public class MagicMayChoice extends MagicChoice {
 	
-	public static final List<Object[]> NO_OTHER_CHOICE_RESULTS=Arrays.asList(new Object[]{YES_CHOICE},new Object[]{NO_CHOICE});
+	public static final List<Object[]> NO_OTHER_CHOICE_RESULTS=Arrays.asList(
+            new Object[]{YES_CHOICE},
+            new Object[]{NO_CHOICE});
 	
 	private final MagicChoice choices[];
 	private MagicTargetChoice targetChoice=null;
 	private int manaChoiceResultIndex=-1;
 	
 	public MagicMayChoice(final String description,final MagicChoice... choices) {
-		
 		super(description);
 		this.choices=choices;
 		for (int index=0;index<choices.length;index++) {
-			
 			final MagicChoice choice=choices[index];
 			if (choice instanceof MagicTargetChoice) {
 				targetChoice=(MagicTargetChoice)choice;
@@ -34,30 +34,34 @@ public class MagicMayChoice extends MagicChoice {
 	}
 			
 	public MagicChoice[] getChoices() {
-		
 		return choices;
 	}
 
 	@Override
 	public MagicTargetChoice getTargetChoice() {
-		
 		return targetChoice;
 	}
 
 	@Override
 	public int getManaChoiceResultIndex() {
-		
 		return manaChoiceResultIndex;
 	}
 	
 	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
-
+	public Collection<Object> getArtificialOptions(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 		throw new UnsupportedOperationException();
 	}
 
 	@Override
-	public List<Object[]> getArtificialChoiceResults(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	public List<Object[]> getArtificialChoiceResults(
+            final MagicGame game,
+            final MagicEvent event,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		final int nrOfChoices=choices.length;
 		if (nrOfChoices==0) {
@@ -104,14 +108,17 @@ public class MagicMayChoice extends MagicChoice {
 	}
 
 	@Override
-	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
+	public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
 
 		final Object choiceResults[]=new Object[choices.length+1];
 		choiceResults[0]=NO_CHOICE;
 
 		final boolean hints=GeneralConfig.getInstance().getSmartTarget();
 		for (final MagicChoice choice : choices) {
-			
 			if (!choice.hasOptions(game,player,source,hints)) {
 				return choiceResults;
 			}
