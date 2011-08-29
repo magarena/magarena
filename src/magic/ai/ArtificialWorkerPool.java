@@ -53,7 +53,6 @@ public class ArtificialWorkerPool {
 	}
 	
 	public synchronized Object[] findNextEventChoiceResults() {
-
 		// Logging
 		long time=System.currentTimeMillis();
 
@@ -67,9 +66,9 @@ public class ArtificialWorkerPool {
 		// Find all possible choice results.
 		final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(choiceGame);
 		choiceGame=null;
-		// No choice results.
+        // No choice results.
 		if (choiceResultsList.size()==0) {
-			return null;
+            throw new RuntimeException("No choice results");
 		}
 		
 		final int size=choiceResultsList.size();
