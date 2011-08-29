@@ -18,14 +18,12 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 	private boolean valid;
 	
 	public MagicRemoveFromPlayAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
-		
 		this.permanent=permanent;
 		this.toLocation=toLocation;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		final MagicPlayer controller=permanent.getController();
 		
 		// Check if this is still a valid action.
@@ -46,7 +44,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 			permanent.getEquippedCreature().removeEquipment(permanent);
 		}
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
-			
 			equipment.setEquippedCreature(null);
 		}
 
@@ -55,7 +52,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 			permanent.getEnchantedCreature().removeAura(permanent);
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
-		
 			aura.setEnchantedCreature(null);
 		}
 
