@@ -27,10 +27,7 @@ public class RandomAI implements MagicAI {
         }
     }
     
-    public Object[] findNextEventChoiceResults(
-            final MagicGame game, 
-            final MagicPlayer scorePlayer) {
-
+    public Object[] findNextEventChoiceResults(final MagicGame game, final MagicPlayer scorePlayer) {
         //get a list of choices
         MagicGame choiceGame = new MagicGame(game, scorePlayer);
         final MagicEvent event=choiceGame.getNextEvent();
@@ -41,27 +38,26 @@ public class RandomAI implements MagicAI {
         final String info = "RandomAI " + scorePlayer.getIndex() + " (" + scorePlayer.getLife() + ")";
       
         if (size == 0) {
-            log(info + " NO CHOICE");
-            return null;
-        } else { //size >= 1
-            //build a list of artificial choice results
-            final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
-            for (final Object choice[] : choices) {
-                achoices.add(new ArtificialChoiceResults(choice));
-            }
-		
-            // Select a random artificial choice result
-            final int idx = MagicRandom.nextInt(size);
-		    final ArtificialChoiceResults selected=achoices.get(idx);
-            if (size >= 2) {
-                log(info); 
-                for (final ArtificialChoiceResults achoice : achoices) {
-                    log((achoice==selected?"* ":"  ")+achoice);
-                }
-            } else {
-                log(info + " " + selected); 
-            }
-            return game.map(selected.choiceResults);
+            throw new RuntimeException("No choice results");
         }
+
+        //build a list of artificial choice results
+        final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
+        for (final Object choice[] : choices) {
+            achoices.add(new ArtificialChoiceResults(choice));
+        }
+    
+        // Select a random artificial choice result
+        final int idx = MagicRandom.nextInt(size);
+        final ArtificialChoiceResults selected=achoices.get(idx);
+        if (size >= 2) {
+            log(info); 
+            for (final ArtificialChoiceResults achoice : achoices) {
+                log((achoice==selected?"* ":"  ")+achoice);
+            }
+        } else {
+            log(info + " " + selected); 
+        }
+        return game.map(selected.choiceResults);
     }
 }

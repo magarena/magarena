@@ -29,7 +29,7 @@ public class VegasAI implements MagicAI {
 		// No choices
 		final int size=choiceResultsList.size();
 		if (size==0) {
-			return null;
+			throw new RuntimeException("No choice results");
 		}		
 		
 		// Single choice		
