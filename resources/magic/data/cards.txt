@@ -826,6 +826,20 @@ toughness=2
 ability=persist
 timing=main
 
+>Skywinder Drake
+image=http://magiccards.info/scans/en/m12/75.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Drake
+color=u
+converted=3
+cost={2}{U}
+power=3
+toughness=1
+ability=flying,can't block creatures without flying
+timing=main
+
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5
@@ -2281,6 +2295,16 @@ type=Instant
 color=r
 converted=2
 cost={1}{R}
+timing=pump
+
+>Slaughter Cry
+image=http://magiccards.info/scans/en/m12/155.jpg
+value=3
+rarity=C
+type=Instant
+color=r
+converted=3
+cost={2}{R}
 timing=pump
 
 >Grasp of Darkness
