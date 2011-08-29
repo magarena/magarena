@@ -80,6 +80,7 @@ This is a bug fix release.
   Peregrine Griffin
   Pride Guardian
   Reclaim
+  (978 cards in total)
 
 - added a crash log to the game, it is stored in the Magarena data folder
   along with the game.cfg and tournament.cfg files. 
