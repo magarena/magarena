@@ -27,7 +27,7 @@ public class SoundEffects {
 			try { //load sound clip
                 clip = AudioSystem.getClip();
                 ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH,name));
-                clip.open();
+                clip.open(ins);
 		        clip.start();
 		    } catch (final LineUnavailableException ex) {
                 System.err.println("WARNING. Unable to load clip " + name);
