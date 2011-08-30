@@ -11,6 +11,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
+import magic.model.action.MagicPermanentAction;
 
 public class MagicDevourTrigger extends MagicTrigger {
 
@@ -50,16 +51,17 @@ public class MagicDevourTrigger extends MagicTrigger {
 	@Override
 	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,1);
-			if (creature!=null) {
-				final MagicPermanent permanent=(MagicPermanent)data[0];
-				game.doAction(new MagicSacrificeAction(creature));
-				game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
-				final MagicEvent newEvent=executeTrigger(game,permanent,data);
-				if (newEvent!=null) {
-					game.doAction(new MagicAddEventAction(newEvent));
-				}
-			}
+            event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicPermanent permanent=(MagicPermanent)data[0];
+                    game.doAction(new MagicSacrificeAction(creature));
+                    game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
+                    final MagicEvent newEvent=executeTrigger(game,permanent,data);
+                    if (newEvent!=null) {
+                        game.doAction(new MagicAddEventAction(newEvent));
+                    }
+                }
+			});
 		}
 	}
 }
