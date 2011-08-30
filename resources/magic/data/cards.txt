@@ -2585,6 +2585,16 @@ converted=5
 cost={3}{B}{B}
 timing=main
 
+>Taste of Blood
+image=http://magiccards.info/scans/en/m12/113.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=removal
+
 >Time Ebb
 image=http://magiccards.info/scans/en/9e/107.jpg
 value=3
@@ -7551,6 +7561,18 @@ converted=2
 cost={2}
 equip={0}
 ability=shroud,haste
+timing=equipment
+
+>Swiftfoot Boots
+image=http://magiccards.info/scans/en/m12/219.jpg
+value=4
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+ability=hexproof,haste
 timing=equipment
 
 >Garruk's Companion
