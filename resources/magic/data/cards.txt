@@ -6723,6 +6723,16 @@ converted=3
 cost={1}{G}{G}
 timing=main
 
+>Timely Reinforcements
+image=http://magiccards.info/scans/en/m12/40.jpg
+value=3
+rarity=U
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
+timing=fmain
+
 >Vampire Hexmage
 image=http://magiccards.info/scans/en/zen/114.jpg
 value=3
