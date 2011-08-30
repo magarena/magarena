@@ -9,6 +9,7 @@ public class FontsAndBorders {
 	public static final Color GRAY1=new Color(200,200,200);
 	public static final Color GRAY2=new Color(210,210,210);
 	public static final Color GRAY3=new Color(220,220,220);
+	public static final Color GRAY4=new Color(100,100,100);
 		
 	public static final Font FONT0=new Font("dialog",Font.PLAIN,10);
 

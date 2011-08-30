@@ -799,6 +799,19 @@ power=3
 toughness=3
 timing=fmain
 
+>Skinshifter
+image=http://magiccards.info/scans/en/m12/195.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=2
+cost={1}{G}
+power=1
+toughness=1
+timing=main
+
 >Safehold Elite
 image=http://magiccards.info/scans/en/shm/239.jpg
 value=2
@@ -812,6 +825,76 @@ power=2
 toughness=2
 ability=persist
 timing=main
+
+>Skywinder Drake
+image=http://magiccards.info/scans/en/m12/75.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Drake
+color=u
+converted=3
+cost={2}{U}
+power=3
+toughness=1
+ability=flying,can't block creatures without flying
+timing=main
+
+>Stingerfling Spider
+image=http://magiccards.info/scans/en/m12/197.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spider
+color=g
+converted=5
+cost={4}{G}
+power=2
+toughness=5
+ability=reach
+timing=main
+
+>Tormented Soul
+image=http://magiccards.info/scans/en/m12/114.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=b
+converted=1
+cost={B}
+power=1
+toughness=1
+ability=can't block,unblockable
+timing=main
+
+>Volcanic Dragon
+image=http://magiccards.info/scans/en/m12/158.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+power=4
+toughness=4
+ability=flying,haste
+timing=fmain
+
+>Wall of Torches
+image=http://magiccards.info/scans/en/m12/159.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Wall
+color=r
+converted=2
+cost={1}{R}
+power=4
+toughness=1
+ability=defender
+timing=smain
 
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
@@ -2114,6 +2197,16 @@ converted=2
 cost={R}{G}
 timing=pump
 
+>Titanic Growth
+image=http://magiccards.info/scans/en/m12/198.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=pump
+
 >Swords to Plowshares
 image=http://magiccards.info/scans/en/cstd/7.jpg
 value=3
@@ -2187,6 +2280,17 @@ converted=3
 cost={2}{B}
 timing=removal
 
+>Sorin's Thirst
+image=http://magiccards.info/scans/en/m12/110.jpg
+value=2
+removal=2
+rarity=C
+type=Instant
+color=b
+converted=2
+cost={B}{B}
+timing=removal
+
 >Fists of the Anvil
 image=http://magiccards.info/scans/en/10e/201.jpg
 value=2
@@ -2249,6 +2353,17 @@ converted=1
 cost={G}
 timing=pump
 
+>Turn to Frog
+image=http://magiccards.info/scans/en/m12/78.jpg
+value=3
+removal=3
+rarity=U
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
+
 >Incinerate
 image=http://magiccards.info/scans/en/jvc/51.jpg
 value=3
@@ -2268,6 +2383,16 @@ type=Instant
 color=r
 converted=2
 cost={1}{R}
+timing=pump
+
+>Slaughter Cry
+image=http://magiccards.info/scans/en/m12/155.jpg
+value=3
+rarity=C
+type=Instant
+color=r
+converted=3
+cost={2}{R}
 timing=pump
 
 >Grasp of Darkness
@@ -2523,6 +2648,16 @@ converted=5
 cost={3}{B}{B}
 timing=main
 
+>Taste of Blood
+image=http://magiccards.info/scans/en/m12/113.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=removal
+
 >Time Ebb
 image=http://magiccards.info/scans/en/9e/107.jpg
 value=3
@@ -2618,6 +2753,16 @@ type=Sorcery
 color=u
 converted=3
 cost={2}{U}
+timing=draw
+
+>Visions of Beyond
+image=http://magiccards.info/scans/en/m12/80.jpg
+value=2
+rarity=R
+type=Instant
+color=u
+converted=1
+cost={U}
 timing=draw
 
 >Soul's Majesty
@@ -4349,6 +4494,26 @@ converted=5
 cost={4}{B}
 timing=enchantment
 
+>Warstorm Surge
+image=http://magiccards.info/scans/en/m12/160.jpg
+value=5
+rarity=R
+type=Enchantment
+color=r
+converted=6
+cost={5}{R}
+timing=enchantment
+
+>Zombie Infestation
+image=http://magiccards.info/scans/en/m12/120.jpg
+value=2
+rarity=U
+type=Enchantment
+color=b
+converted=2
+cost={1}{B}
+timing=enchantment
+
 >Glory of Warfare
 image=http://magiccards.info/scans/en/arb/98.jpg
 value=4
@@ -5244,6 +5409,20 @@ color=u
 converted=4
 cost={3}{U}
 ability=unblockable,shroud
+timing=aura
+
+>Spirit Mantle
+image=http://magiccards.info/scans/en/m12/35.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+power=1
+toughness=1
+ability=protection from creatures
 timing=aura
 
 >Torpor Dust
@@ -6473,6 +6652,17 @@ converted=2
 cost={1}{B}
 timing=removal
 
+>Wring Flesh
+image=http://magiccards.info/scans/en/m12/118.jpg
+value=2
+removal=2
+rarity=C
+type=Instant
+color=b
+converted=1
+cost={B}
+timing=removal
+
 >Smash to Smithereens
 image=http://magiccards.info/scans/en/shm/107.jpg
 value=2
@@ -6636,6 +6826,16 @@ color=g
 converted=3
 cost={1}{G}{G}
 timing=main
+
+>Timely Reinforcements
+image=http://magiccards.info/scans/en/m12/40.jpg
+value=3
+rarity=U
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
+timing=fmain
 
 >Vampire Hexmage
 image=http://magiccards.info/scans/en/zen/114.jpg
@@ -7477,6 +7677,18 @@ equip={0}
 ability=shroud,haste
 timing=equipment
 
+>Swiftfoot Boots
+image=http://magiccards.info/scans/en/m12/219.jpg
+value=4
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+ability=hexproof,haste
+timing=equipment
+
 >Garruk's Companion
 image=http://magiccards.info/scans/en/m11/176.jpg
 value=3
@@ -8025,6 +8237,18 @@ converted=4
 cost={4}
 power=3
 toughness=4
+timing=main
+
+>Thran Golem
+image=http://magiccards.info/scans/en/m12/220.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+converted=5
+cost={5}
+power=3
+toughness=3
 timing=main
 
 >Deft Duelist

@@ -1,5 +1,5 @@
 JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true 
-LIBS=.
+LIBS=.:lib/annotations.jar:lib/jsr305.jar
 JAVA=java -Xms256M -Xmx256M -Ddebug=true -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar 
 SHELL=/bin/bash
 BUILD=build
@@ -99,7 +99,7 @@ M1.%:
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 
 $(MAG): $(SRC) 
-	ant
+	ant -f build-safe.xml
 
 class: $(BUILD)/javac.last
 
