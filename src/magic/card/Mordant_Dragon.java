@@ -13,6 +13,7 @@ import magic.model.event.MagicPumpActivation;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Mordant_Dragon {
 	public static final MagicPermanentActivation A = new MagicPumpActivation(MagicManaCost.ONE_RED,1,0);
@@ -43,11 +44,12 @@ public class Mordant_Dragon {
 				final Object data[],
 				final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent creature=event.getTarget(game,choiceResults,1);
-				if (creature!=null) {
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
 					final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,(Integer)data[1],false);
 					game.doAction(new MagicDealDamageAction(damage));
 				}
+                });
 			}
 		}
     };

@@ -4,6 +4,7 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicDamageTargetPicker;
@@ -26,11 +27,12 @@ public class Flametongue_Kavu {
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,4,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+				public void doAction(final MagicPermanent creature) {
+                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,4,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
     };
 }

@@ -17,7 +17,7 @@ public class Kavu_Titan {
 			return new MagicEvent(
                     card,
                     player,
-                    new MagicKickerChoice(null,MagicManaCost.TWO_GREEN,false),
+                    new MagicKickerChoice(MagicManaCost.TWO_GREEN,false),
                     new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " + 
@@ -31,7 +31,7 @@ public class Kavu_Titan {
                 final Object[] choiceResults) {
 			final boolean kicked=((Integer)choiceResults[1])>0;
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
+			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
 			game.doAction(action);
 			final MagicPermanent permanent=action.getPermanent();
 			if (kicked) {

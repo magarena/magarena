@@ -7,6 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.action.MagicPlayerAction;
 
 import java.util.Collection;
 
@@ -34,16 +35,17 @@ public class Brigid__Hero_of_Kinsbaile {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				final MagicSource source=(MagicSource)data[0];
-				final Collection<MagicTarget> targets=
-                    game.filterTargets(player,MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
-				for (final MagicTarget target : targets) {
-					final MagicDamage damage=new MagicDamage(source,target,2,false);
-					game.doAction(new MagicDealDamageAction(damage));
-				}
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    final MagicSource source=(MagicSource)data[0];
+                    final Collection<MagicTarget> targets=
+                        game.filterTargets(player,MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
+                    for (final MagicTarget target : targets) {
+                        final MagicDamage damage=new MagicDamage(source,target,2,false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                }
+			});
 		}
 	};
 }

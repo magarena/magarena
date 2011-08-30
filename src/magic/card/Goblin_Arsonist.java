@@ -13,6 +13,7 @@ import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Goblin_Arsonist {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
@@ -37,12 +38,13 @@ public class Goblin_Arsonist {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicTarget target = event.getTarget(game,choiceResults,1);
-				if (target != null) {
-					final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,1,false);
-					game.doAction(new MagicDealDamageAction(damage));
-				}
-			}
+                event.processTarget(game,choiceResults,1,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,1,false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
+            }
 		}
     };
 }

@@ -11,6 +11,8 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Deathbringer_Liege {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
@@ -35,11 +37,14 @@ public class Deathbringer_Liege {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent creature=event.getTarget(game,choiceResults,1);
-				if (creature!=null&&creature.isTapped()) {					
-					game.doAction(new MagicDestroyAction(creature));
-				}
-			}
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        if (creature.isTapped()) {					
+                            game.doAction(new MagicDestroyAction(creature));
+                        }
+                    }
+                });
+            }
 		}
     };
     
@@ -63,10 +68,13 @@ public class Deathbringer_Liege {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent creature=event.getTarget(game,choiceResults,1);
-				if (creature!=null&&!creature.isTapped()) {
-					game.doAction(new MagicTapAction(creature,true));
-				}
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        if (creature.isTapped()) {
+                            game.doAction(new MagicTapAction(creature,true));
+                        }
+                    }
+                });
 			}
 		}
     };

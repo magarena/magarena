@@ -10,6 +10,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicPlayerAction;
 
 public class Kiss_of_the_Amesha {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -31,11 +32,12 @@ public class Kiss_of_the_Amesha {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				game.doAction(new MagicChangeLifeAction(player,7));
-				game.doAction(new MagicDrawAction(player,2));
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.doAction(new MagicChangeLifeAction(player,7));
+                    game.doAction(new MagicDrawAction(player,2));
+                }
+			});
 		}
 	};
 }

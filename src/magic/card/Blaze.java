@@ -11,6 +11,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicTargetAction;
 
 public class Blaze {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -34,11 +35,12 @@ public class Blaze {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,(Integer)data[1],false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,(Integer)data[1],false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
 	};
 }

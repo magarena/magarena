@@ -10,6 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicPlayerAction;
 
 public class Cruel_Edict {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -32,13 +33,16 @@ public class Cruel_Edict {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPlayer opponent=(MagicPlayer)event.getTarget(game,choiceResults,0);
-			if (opponent!=null&&opponent.controlsPermanentWithType(MagicType.Creature)) {
-				game.addEvent(new MagicSacrificePermanentEvent(
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer opponent) {
+        			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+        				game.addEvent(new MagicSacrificePermanentEvent(
                             cardOnStack.getCard(),
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE));
-			}
+                    }
+                }
+			});
 		}
 	};
 }

@@ -6,6 +6,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicPumpTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Captive_Flame {
 
@@ -37,11 +39,11 @@ public class Captive_Flame {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,1,0));
+                }
+			});
 		}
 	};
 }

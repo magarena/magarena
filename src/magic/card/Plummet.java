@@ -11,6 +11,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Plummet {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -32,10 +33,11 @@ public class Plummet {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicDestroyAction(creature));
+                }
+			});
 		}
 	};
 }

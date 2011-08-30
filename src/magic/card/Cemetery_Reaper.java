@@ -9,6 +9,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicCardAction;
 
 public class Cemetery_Reaper {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -37,13 +39,14 @@ public class Cemetery_Reaper {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCard card=event.getTarget(game,choiceResults,0);
-			if (card!=null) {
-				final MagicPlayer player=(MagicPlayer)data[0];
-				game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-				game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
-			}
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    final MagicPlayer player=(MagicPlayer)data[0];
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                    game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+                }
+			});
 		}
 	};
 }

@@ -6,6 +6,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicDamageTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Femeref_Archers {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -32,11 +34,12 @@ public class Femeref_Archers {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				final MagicDamage damage=new MagicDamage((MagicSource)data[0],creature,4,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],creature,4,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
 	};
 }

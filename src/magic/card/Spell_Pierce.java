@@ -9,6 +9,7 @@ import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Spell_Pierce {
     public static final MagicSpellCardEvent SPELL_PIERCE=new MagicSpellCardEvent() {
@@ -26,10 +27,11 @@ public class Spell_Pierce {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
-			if (targetSpell!=null) {
-				game.addEvent(new MagicCounterUnlessEvent(cardOnStack.getCard(),targetSpell,MagicManaCost.TWO));
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    game.addEvent(new MagicCounterUnlessEvent(cardOnStack.getCard(),targetSpell,MagicManaCost.TWO));
+                }
+			});
 		}
 	};
 }

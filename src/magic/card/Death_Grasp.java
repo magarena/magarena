@@ -14,6 +14,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicTargetAction;
 
 public class Death_Grasp {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -41,11 +42,12 @@ public class Death_Grasp {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final int amount=(Integer)data[2];
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],amount));
 		}
 	};

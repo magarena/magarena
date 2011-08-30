@@ -8,6 +8,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPlayerAction;
 
 public class Pierce_Strider {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
@@ -24,10 +25,11 @@ public class Pierce_Strider {
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				game.doAction(new MagicChangeLifeAction(player,-3));
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.doAction(new MagicChangeLifeAction(player,-3));
+                }
+			});
 		}		
     };
 }

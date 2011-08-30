@@ -11,6 +11,7 @@ import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Offering_to_Asha {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -35,10 +36,11 @@ public class Offering_to_Asha {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
-			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
-			if (targetSpell!=null) {
-				game.addEvent(new MagicCounterUnlessEvent(cardOnStack.getCard(),targetSpell,MagicManaCost.FOUR));
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    game.addEvent(new MagicCounterUnlessEvent(cardOnStack.getCard(),targetSpell,MagicManaCost.FOUR));
+                }
+			});
 		}
 	};
 }

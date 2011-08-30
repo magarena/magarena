@@ -13,6 +13,7 @@ import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Venser__Shaper_Savant {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
@@ -33,19 +34,20 @@ public class Venser__Shaper_Savant {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				if (target.isPermanent()) {
-					game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)target,MagicLocationType.OwnersHand));
-				} else {
-					final MagicCardOnStack cardOnStack=(MagicCardOnStack)target;
-					game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
-					game.doAction(new MagicMoveCardAction(
-                                cardOnStack.getCard(),
-                                MagicLocationType.Stack,
-                                MagicLocationType.OwnersHand));
-				}
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    if (target.isPermanent()) {
+                        game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)target,MagicLocationType.OwnersHand));
+                    } else {
+                        final MagicCardOnStack cardOnStack=(MagicCardOnStack)target;
+                        game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
+                        game.doAction(new MagicMoveCardAction(
+                                    cardOnStack.getCard(),
+                                    MagicLocationType.Stack,
+                                    MagicLocationType.OwnersHand));
+                    }
+                }
+			});
 		}
     };
 }

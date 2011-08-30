@@ -11,6 +11,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Remand {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -32,10 +33,11 @@ public class Remand {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
-			if (targetSpell!=null) {
-				game.doAction(new MagicCounterItemOnStackAction(targetSpell,MagicLocationType.OwnersHand));
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    game.doAction(new MagicCounterItemOnStackAction(targetSpell,MagicLocationType.OwnersHand));
+                }
+			});
 			game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
 		}
 	};

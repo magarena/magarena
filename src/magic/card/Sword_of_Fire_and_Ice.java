@@ -9,6 +9,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Sword_of_Fire_and_Ice {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
@@ -34,11 +35,12 @@ public class Sword_of_Fire_and_Ice {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 			game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
 		}
     };

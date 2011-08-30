@@ -9,6 +9,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicPlayerAction;
 
 public class Soul_Feast {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
@@ -31,10 +32,11 @@ public class Soul_Feast {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				game.doAction(new MagicChangeLifeAction(player,-4));
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.doAction(new MagicChangeLifeAction(player,-4));
+                }
+			});
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
 		}
 	};

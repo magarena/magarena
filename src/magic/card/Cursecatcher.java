@@ -5,6 +5,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.condition.MagicCondition;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Cursecatcher {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -30,10 +32,11 @@ public class Cursecatcher {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
-			if (targetSpell!=null) {
-				game.addEvent(new MagicCounterUnlessEvent((MagicSource)data[0],targetSpell,MagicManaCost.ONE)); 
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    game.addEvent(new MagicCounterUnlessEvent((MagicSource)data[0],targetSpell,MagicManaCost.ONE)); 
+			    }
+            });
 		}
 	};
 }

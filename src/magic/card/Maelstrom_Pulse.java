@@ -12,6 +12,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.action.MagicPermanentAction;
 
 import java.util.Collection;
 
@@ -36,16 +37,17 @@ public class Maelstrom_Pulse {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPermanent targetPermanent=event.getTarget(game,choiceResults,0);
-			if (targetPermanent!=null) {
-				final MagicTargetFilter targetFilter = 
-                    new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
-				final Collection<MagicTarget> targets = 
-                    game.filterTargets(cardOnStack.getController(),targetFilter);
-				for (final MagicTarget target : targets) {
-					game.doAction(new MagicDestroyAction((MagicPermanent)target));
-				}
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent targetPermanent) {
+                    final MagicTargetFilter targetFilter = 
+                        new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
+                    final Collection<MagicTarget> targets = 
+                        game.filterTargets(cardOnStack.getController(),targetFilter);
+                    for (final MagicTarget target : targets) {
+                        game.doAction(new MagicDestroyAction((MagicPermanent)target));
+                    }
+                }
+			});
 		}
 	};
 }

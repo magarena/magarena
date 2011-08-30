@@ -8,6 +8,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicExileTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Celestial_Purge {
     public static final MagicSpellCardEvent EXILE=new MagicSpellCardEvent() {
@@ -32,10 +34,11 @@ public class Celestial_Purge {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent perm=event.getTarget(game,choiceResults,0);
-			if (perm!=null) {
-				game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent perm) {
+                    game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                }
+			});
 		}
 	};
 }

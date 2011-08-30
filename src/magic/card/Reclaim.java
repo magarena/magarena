@@ -8,6 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.action.MagicCardAction;
 
 public class Reclaim {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -30,11 +31,15 @@ public class Reclaim {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicCard targetCard=event.getTarget(game,choiceResults,0);
-			if (targetCard != null) {
-				game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-				game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.TopOfOwnersLibrary));
-			}
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard targetCard) {
+                    game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(
+                            targetCard,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.TopOfOwnersLibrary));
+                }
+			});
 		}
 	};
 }

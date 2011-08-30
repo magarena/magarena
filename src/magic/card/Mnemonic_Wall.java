@@ -12,6 +12,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicCardAction;
 
 public class Mnemonic_Wall {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
@@ -32,11 +33,12 @@ public class Mnemonic_Wall {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicCard card=event.getTarget(game,choiceResults,1);		
-				if (card!=null) {
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
 					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
 					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
 				}
+                });
 			}
 		}
     };

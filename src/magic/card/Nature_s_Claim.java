@@ -12,6 +12,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Nature_s_Claim {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -33,11 +34,12 @@ public class Nature_s_Claim {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent permanent = event.getTarget(game,choiceResults,0);
-			if (permanent!=null) {
-				game.doAction(new MagicDestroyAction(permanent));
-			    game.doAction(new MagicChangeLifeAction(permanent.getController(),4));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent permanent) {
+                    game.doAction(new MagicDestroyAction(permanent));
+                    game.doAction(new MagicChangeLifeAction(permanent.getController(),4));
+                }
+			});
 		}
 	};
 }

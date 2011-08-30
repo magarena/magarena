@@ -14,6 +14,7 @@ import magic.model.target.MagicFirstStrikeTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Galvanic_Arc {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
@@ -38,11 +39,12 @@ public class Galvanic_Arc {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,3,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,3,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
     };
 }

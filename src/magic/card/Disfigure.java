@@ -10,6 +10,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Disfigure {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -31,10 +33,11 @@ public class Disfigure {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeTurnPTAction(creature,-2,-2));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+				    game.doAction(new MagicChangeTurnPTAction(creature,-2,-2));
+                }
+			});
 		}
 	};
 }

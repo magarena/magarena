@@ -9,6 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Recoil {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -32,12 +33,13 @@ public class Recoil {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
-			if (permanent!=null) {
-				final MagicPlayer owner=permanent.getCard().getOwner();
-				game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-				game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),owner,1,false));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent permanent) {
+                    final MagicPlayer owner=permanent.getCard().getOwner();
+                    game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                    game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),owner,1,false));
+                }
+			});
 		}
 	};
 }

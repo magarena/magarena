@@ -98,8 +98,7 @@ public class Chimeric_Mass {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action = 
-                new MagicPlayCardFromStackAction(cardOnStack,null);
+			final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
 			game.doAction(action);
 			final MagicPermanent permanent=action.getPermanent();
 			game.doAction(new MagicChangeCountersAction(

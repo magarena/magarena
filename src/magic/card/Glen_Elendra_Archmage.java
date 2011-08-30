@@ -6,6 +6,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Glen_Elendra_Archmage {
 
@@ -32,10 +33,11 @@ public class Glen_Elendra_Archmage {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
-			if (targetSpell!=null) {
-				game.doAction(new MagicCounterItemOnStackAction(targetSpell));
-			}
+			event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                }
+			});
 		}
 	};
 }

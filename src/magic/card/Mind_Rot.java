@@ -9,6 +9,7 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicPlayerAction;
 
 public class Mind_Rot {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -30,10 +31,11 @@ public class Mind_Rot {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPlayer player = event.getTarget(game,choiceResults,0);
-			if (player != null) {
-				game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,2,false));
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,2,false));
+                }
+			});
 		}
 	};
 }

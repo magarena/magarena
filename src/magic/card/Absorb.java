@@ -10,6 +10,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Absorb {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -31,10 +33,11 @@ public class Absorb {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
-			if (targetSpell!=null) {
-				game.doAction(new MagicCounterItemOnStackAction(targetSpell));
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                }
+			});
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],3));
 		}
 	};

@@ -11,6 +11,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Gelectrode {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -38,11 +39,12 @@ public class Gelectrode {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
 	};
 	

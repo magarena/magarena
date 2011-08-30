@@ -11,6 +11,7 @@ import magic.model.target.MagicExileTargetPicker;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Keiga__the_Tide_Star {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
@@ -31,10 +32,11 @@ public class Keiga__the_Tide_Star {
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicGainControlAction((MagicPlayer)data[0],creature));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicGainControlAction((MagicPlayer)data[0],creature));
+                }
+			});
 		}
     };
 }

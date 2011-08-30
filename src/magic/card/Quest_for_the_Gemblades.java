@@ -9,6 +9,7 @@ import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Quest_for_the_Gemblades {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -38,10 +39,11 @@ public class Quest_for_the_Gemblades {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,4,true));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,4,true));
+                }
+			});
 		}
 	};
 	

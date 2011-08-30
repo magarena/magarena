@@ -6,6 +6,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Qasali_Pridemage {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -32,10 +33,11 @@ public class Qasali_Pridemage {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
-			if (permanent!=null) {
-				game.doAction(new MagicDestroyAction(permanent));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent permanent) {
+                    game.doAction(new MagicDestroyAction(permanent));
+                }
+			});
 		}
 	};
 }

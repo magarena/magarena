@@ -20,7 +20,7 @@ public class Lightkeeper_of_Emeria {
 			return new MagicEvent(
                     card,
                     player,
-                    new MagicKickerChoice(null,MagicManaCost.WHITE,true),
+                    new MagicKickerChoice(MagicManaCost.WHITE,true),
                     new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " + 
@@ -34,7 +34,7 @@ public class Lightkeeper_of_Emeria {
                 final Object[] choiceResults) {
 			final int kickerCount=(Integer)choiceResults[1];
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
+			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
 			game.doAction(action);
 			if (kickerCount>0) {
 				final MagicPermanent permanent=action.getPermanent();

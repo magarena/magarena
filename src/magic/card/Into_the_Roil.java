@@ -10,6 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Into_the_Roil {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -35,13 +36,14 @@ public class Into_the_Roil {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
-			if (permanent!=null) {
-				game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-				if (((Integer)choiceResults[1])>0) {
-					game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
-				}
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent permanent) {
+                    game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                    if (((Integer)choiceResults[1])>0) {
+                        game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+                    }
+                }
+			});
 		}
 	};
 }

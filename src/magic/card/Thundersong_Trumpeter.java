@@ -6,6 +6,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicNoCombatTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Thundersong_Trumpeter {
 	public static final MagicPermanentActivation A =new MagicPermanentActivation(
@@ -33,10 +34,11 @@ public class Thundersong_Trumpeter {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotAttackOrBlock));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotAttackOrBlock));
+                }
+			});
 		}
 	};
 }

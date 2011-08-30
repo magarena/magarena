@@ -9,6 +9,7 @@ import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicCardAction;
 
 public class Sheoldred__Whispering_One {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
@@ -32,10 +33,11 @@ public class Sheoldred__Whispering_One {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicCard card=event.getTarget(game,choiceResults,0);
-            if (card != null) {
-                game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
-            }
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                }
+            });
 		}
     };
     

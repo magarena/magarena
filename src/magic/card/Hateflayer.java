@@ -7,6 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicTargetAction;
 
 public class Hateflayer {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -35,12 +36,13 @@ public class Hateflayer {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicPermanent permanent=(MagicPermanent)data[0];
-				final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower(game),false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicPermanent permanent=(MagicPermanent)data[0];
+                    final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower(game),false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
 	};
 }

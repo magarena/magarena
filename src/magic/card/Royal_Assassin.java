@@ -6,6 +6,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Royal_Assassin {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -33,10 +34,13 @@ public class Royal_Assassin {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent creature = event.getTarget(game,choiceResults,0);
-			if (creature != null && creature.isTapped()) {					
-				game.doAction(new MagicDestroyAction(creature));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    if (creature.isTapped()) {					
+                        game.doAction(new MagicDestroyAction(creature));
+                    }
+                }
+            });
 		}
 	};
 }

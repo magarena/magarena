@@ -9,6 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicBounceTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Shivan_Wurm {
 	public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
@@ -27,10 +28,11 @@ public class Shivan_Wurm {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+                }
+			});
 		}
     };
 }

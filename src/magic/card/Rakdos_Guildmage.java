@@ -8,6 +8,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Rakdos_Guildmage {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -40,10 +41,11 @@ public class Rakdos_Guildmage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeTurnPTAction(creature,-2,-2));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,-2,-2));
+                }
+			});
 		}
 	};
 

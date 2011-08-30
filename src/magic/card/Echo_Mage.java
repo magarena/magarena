@@ -9,6 +9,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Echo_Mage {
 	
@@ -62,14 +63,15 @@ public class Echo_Mage {
 				final MagicEvent event,
 				final Object[] data,
 				final Object[] choiceResults) {
-			final MagicCardOnStack targetSpell=event.getTarget(game,choiceResults,0);
-			if (targetSpell!=null) {
-				final MagicPlayer player=(MagicPlayer)data[0];
-				final int amount=(Integer)data[1];
-				for (int count=amount;count>0;count--) {
-					game.doAction(new MagicCopyCardOnStackAction(player,targetSpell));
-				}
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack targetSpell) {
+                    final MagicPlayer player=(MagicPlayer)data[0];
+                    final int amount=(Integer)data[1];
+                    for (int count=amount;count>0;count--) {
+                        game.doAction(new MagicCopyCardOnStackAction(player,targetSpell));
+                    }
+                }
+			});
 		}
 	};
 	

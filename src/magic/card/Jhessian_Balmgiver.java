@@ -9,6 +9,8 @@ import magic.model.event.*;
 import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicUnblockableTargetPicker;
+import magic.model.action.MagicTargetAction;
+import magic.model.action.MagicPermanentAction;
 
 public class Jhessian_Balmgiver {
 
@@ -36,10 +38,11 @@ public class Jhessian_Balmgiver {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				game.doAction(new MagicPreventDamageAction(target,1));
-			}
+			event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    game.doAction(new MagicPreventDamageAction(target,1));
+                }
+			});
 		}
 	};
 
@@ -67,10 +70,11 @@ public class Jhessian_Balmgiver {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Unblockable));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Unblockable));
+                }
+			});
 		}	
 	};
 }

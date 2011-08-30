@@ -10,6 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicExileTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Turn_to_Mist {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
@@ -31,10 +32,11 @@ public class Turn_to_Mist {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicExileUntilEndOfTurnAction(creature));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicExileUntilEndOfTurnAction(creature));
+                }
+			});
 		}
 	};
 }

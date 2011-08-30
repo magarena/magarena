@@ -12,6 +12,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Goblin_Ruinblaster {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -22,7 +23,7 @@ public class Goblin_Ruinblaster {
 			return new MagicEvent(
                     card,
                     player,
-                    new MagicKickerChoice(null,MagicManaCost.RED,false),
+                    new MagicKickerChoice(MagicManaCost.RED,false),
                     new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " +
@@ -36,7 +37,7 @@ public class Goblin_Ruinblaster {
                 final Object[] choiceResults) {
 			final int kickerCount=(Integer)choiceResults[1];
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
+			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
 			game.doAction(action);
 			if (kickerCount>0) {
 				final MagicPermanent permanent=action.getPermanent();
@@ -51,10 +52,11 @@ public class Goblin_Ruinblaster {
                             final MagicEvent event,
                             final Object[] data,
                             final Object[] choiceResults) {
-                            final MagicPermanent land=event.getTarget(game,choiceResults,0);
-                            if (land!=null) {
-                                game.doAction(new MagicDestroyAction(land));
-                            }
+                            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                                public void doAction(final MagicPermanent land) {
+                                    game.doAction(new MagicDestroyAction(land));
+                                }
+                            });
 		                }
 	                },
                     "Destroy target nonbasic land$."

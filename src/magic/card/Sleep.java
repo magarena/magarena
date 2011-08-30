@@ -10,6 +10,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.action.MagicPlayerAction;
 
 import java.util.Collection;
 
@@ -33,19 +34,20 @@ public class Sleep {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				final Collection<MagicTarget> targets=
-                    game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-				for (final MagicTarget target : targets) {
-					final MagicPermanent creature=(MagicPermanent)target;
-					game.doAction(new MagicTapAction(creature,true));
-					game.doAction(new MagicChangeStateAction(
-                                creature,
-                                MagicPermanentState.DoesNotUntap,
-                                true));
-				}
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    final Collection<MagicTarget> targets=
+                        game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    for (final MagicTarget target : targets) {
+                        final MagicPermanent creature=(MagicPermanent)target;
+                        game.doAction(new MagicTapAction(creature,true));
+                        game.doAction(new MagicChangeStateAction(
+                                    creature,
+                                    MagicPermanentState.DoesNotUntap,
+                                    true));
+                    }
+                }
+			});
 		}
 	};
 }

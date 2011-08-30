@@ -10,6 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicCardAction;
 
 public class Sword_of_Light_and_Shadow {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
@@ -40,12 +41,13 @@ public class Sword_of_Light_and_Shadow {
                 final Object[] choiceResults) {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicCard card=event.getTarget(game,choiceResults,1);
-				if (card!=null) {
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard)); 
-					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-				}
-			}
-		}
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard)); 
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    }
+                });
+		    }
+        }
     };
 }

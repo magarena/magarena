@@ -10,6 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Trygon_Predator {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
@@ -37,11 +38,12 @@ public class Trygon_Predator {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent permanent=event.getTarget(game,choiceResults,1);
-				if (permanent!=null) {
-					game.doAction(new MagicDestroyAction(permanent));
-				}
-			}
-		}
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent permanent) {
+                        game.doAction(new MagicDestroyAction(permanent));
+                    }
+                });
+		    } 
+        }
     };
 }

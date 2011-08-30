@@ -10,6 +10,8 @@ import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Draining_Whelk {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
@@ -30,15 +32,16 @@ public class Draining_Whelk {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicCardOnStack card=event.getTarget(game,choiceResults,0);
-			if (card!=null) {
-				game.doAction(new MagicCounterItemOnStackAction(card));
-				game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)data[0],
-                            MagicCounterType.PlusOne,
-                            card.getConvertedCost(),
-                            true));
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack card) {
+                    game.doAction(new MagicCounterItemOnStackAction(card));
+                    game.doAction(new MagicChangeCountersAction(
+                                (MagicPermanent)data[0],
+                                MagicCounterType.PlusOne,
+                                card.getConvertedCost(),
+                                true));
+                }
+			});
 		}
     };
 }

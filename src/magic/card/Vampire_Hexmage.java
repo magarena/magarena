@@ -6,6 +6,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.target.MagicCountersTargetPicker;
 import magic.model.condition.MagicCondition;
+import magic.model.action.MagicPermanentAction;
 
 public class Vampire_Hexmage {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -33,15 +34,16 @@ public class Vampire_Hexmage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
-			if (permanent!=null) {
-				for (final MagicCounterType counterType : MagicCounterType.values()) {
-					final int amount=permanent.getCounters(counterType);
-					if (amount>0) {
-						game.doAction(new MagicChangeCountersAction(permanent,counterType,-amount,true));
-					}
-				}
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent permanent) {
+                    for (final MagicCounterType counterType : MagicCounterType.values()) {
+                        final int amount=permanent.getCounters(counterType);
+                        if (amount>0) {
+                            game.doAction(new MagicChangeCountersAction(permanent,counterType,-amount,true));
+                        }
+                    }
+                }
+			});
 		}
 	};
 }

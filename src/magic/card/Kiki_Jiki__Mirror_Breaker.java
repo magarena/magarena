@@ -6,6 +6,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicCopyTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Kiki_Jiki__Mirror_Breaker {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -34,12 +35,13 @@ public class Kiki_Jiki__Mirror_Breaker {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				final MagicPlayer player=(MagicPlayer)data[0];
-				final MagicCard card=MagicCard.createTokenCard(creature.getCardDefinition(),player);
-				game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.HASTE_SACRIFICE_AT_END_OF_TURN));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicPlayer player=(MagicPlayer)data[0];
+                    final MagicCard card=MagicCard.createTokenCard(creature.getCardDefinition(),player);
+                    game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.HASTE_SACRIFICE_AT_END_OF_TURN));
+                }
+			});
 		}
 	};
 }

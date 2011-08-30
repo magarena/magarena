@@ -7,6 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.action.MagicPermanentAction;
 
 import java.util.EnumSet;
 
@@ -46,10 +47,11 @@ public class Omnibian {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicBecomesCreatureAction(creature,LV));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicBecomesCreatureAction(creature,LV));
+                }
+			});
 		}
 	};
 }

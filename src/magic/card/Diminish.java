@@ -9,6 +9,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.action.MagicPermanentAction;
 
 public class Diminish {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -31,21 +32,22 @@ public class Diminish {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicBecomesCreatureAction(creature,
-                    new MagicDummyLocalVariable() {
-                        @Override
-                        public void getPowerToughness(
-                            final MagicGame game,
-                            final MagicPermanent permanent,
-                            final MagicPowerToughness pt) {
-                            pt.power=1;
-                            pt.toughness=1;
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicBecomesCreatureAction(creature,
+                        new MagicDummyLocalVariable() {
+                            @Override
+                            public void getPowerToughness(
+                                final MagicGame game,
+                                final MagicPermanent permanent,
+                                final MagicPowerToughness pt) {
+                                pt.power=1;
+                                pt.toughness=1;
+                            }
                         }
-                    }
-                ));
-			}
+                    ));
+                }
+			});
 		}
 	};
 }

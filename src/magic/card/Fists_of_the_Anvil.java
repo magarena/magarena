@@ -6,11 +6,13 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
+import magic.model.target.MagicTarget;
 
 public class Fists_of_the_Anvil {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -31,10 +33,11 @@ public class Fists_of_the_Anvil {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeTurnPTAction(creature,4,0));
-			}
+			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,4,0));
+                }
+            });
 		}
 	};
 }

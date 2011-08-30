@@ -11,6 +11,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Shrine_of_Burning_Rage {
 
@@ -49,15 +50,16 @@ public class Shrine_of_Burning_Rage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicPermanent source=(MagicPermanent)data[0];
-				final int amount=source.getCounters(MagicCounterType.Charge);
-				if (amount>0) {
-					final MagicDamage damage=new MagicDamage(source,target,amount,false);
-					game.doAction(new MagicDealDamageAction(damage));
-				}
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicPermanent source=(MagicPermanent)data[0];
+                    final int amount=source.getCounters(MagicCounterType.Charge);
+                    if (amount>0) {
+                        final MagicDamage damage=new MagicDamage(source,target,amount,false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                }
+			});
 		}
 	};
 	

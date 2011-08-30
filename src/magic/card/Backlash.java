@@ -12,6 +12,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTapTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Backlash {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -32,12 +34,15 @@ public class Backlash {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicTapAction(creature,true));
-				final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower(game),false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    if (!creature.isTapped()) {
+                        game.doAction(new MagicTapAction(creature,true));
+                        final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower(game),false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                }
+			});
 		}
 	};
 }

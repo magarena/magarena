@@ -20,7 +20,7 @@ public class Sphinx_of_Lost_Truths {
 			return new MagicEvent(
                     card,
                     player,
-                    new MagicKickerChoice(null,MagicManaCost.ONE_BLUE,false),
+                    new MagicKickerChoice(MagicManaCost.ONE_BLUE,false),
 				    new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". When " + card + 
@@ -32,7 +32,7 @@ public class Sphinx_of_Lost_Truths {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction((MagicCardOnStack)data[0],null);
+			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction((MagicCardOnStack)data[0]);
 			action.setKicked(((Integer)choiceResults[1])>0);
 			game.doAction(action);
 		}

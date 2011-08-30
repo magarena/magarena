@@ -7,6 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicMustAttackTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Alluring_Siren {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation( 
@@ -33,10 +34,11 @@ public class Alluring_Siren {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicTarget target = event.getTarget(game,choiceResults,0);
-			if (target != null) {
-				game.doAction(new MagicSetAbilityAction((MagicPermanent)target,MagicAbility.AttacksEachTurnIfAble));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
+                }
+			});
 		}
 	};
 }

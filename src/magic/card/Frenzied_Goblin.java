@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.*;
 import magic.model.action.MagicSetAbilityAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -33,10 +34,11 @@ public class Frenzied_Goblin {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent creature=event.getTarget(game,choiceResults,2);
-				if (creature!=null) {
-					game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBlock));
-				}
+				event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+					    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBlock));
+				    }
+                });
 			}
 		}
     };

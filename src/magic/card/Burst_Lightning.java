@@ -10,6 +10,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicTargetAction;
 
 public class Burst_Lightning {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -35,12 +36,13 @@ public class Burst_Lightning {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final int amount=((Integer)choiceResults[1])>0?4:2;
-				final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final int amount=((Integer)choiceResults[1])>0?4:2;
+                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
 	};
 }

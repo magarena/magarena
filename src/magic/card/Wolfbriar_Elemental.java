@@ -40,7 +40,7 @@ public class Wolfbriar_Elemental {
 			return new MagicEvent(
                     card,
                     player,
-                    new MagicKickerChoice(null,MagicManaCost.GREEN,true),
+                    new MagicKickerChoice(MagicManaCost.GREEN,true),
                     new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " + 
@@ -54,7 +54,7 @@ public class Wolfbriar_Elemental {
                 final Object[] choiceResults) {
 			final int kickerCount=(Integer)choiceResults[1];
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
+			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
 			game.doAction(action);
 			if (kickerCount>0) {
 				final MagicPermanent permanent=action.getPermanent();

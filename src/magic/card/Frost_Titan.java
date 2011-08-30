@@ -3,6 +3,7 @@ package magic.card;
 import magic.model.*;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicTapAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
@@ -61,11 +62,12 @@ public class Frost_Titan {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent perm = event.getTarget(game,choiceResults,0);
-            if (perm != null) {
-                game.doAction(new MagicTapAction(perm,true));
-                game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntap,true));
-            }
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent perm) {
+                    game.doAction(new MagicTapAction(perm,true));
+                    game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntap,true));
+                }
+            });
         }
     };
     
@@ -90,11 +92,12 @@ public class Frost_Titan {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent perm = event.getTarget(game,choiceResults,0);
-            if (perm != null) {
-                game.doAction(new MagicTapAction(perm,true));
-                game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntap,true));
-            }
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent perm) {
+                    game.doAction(new MagicTapAction(perm,true));
+                    game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntap,true));
+                }
+            });
         }
     };
 }

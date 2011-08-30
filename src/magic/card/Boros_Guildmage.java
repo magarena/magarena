@@ -7,6 +7,8 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicFirstStrikeTargetPicker;
 import magic.model.target.MagicHasteTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Boros_Guildmage {
 	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
@@ -37,10 +39,11 @@ public class Boros_Guildmage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
+                }
+			});
 		}
 	};
 
@@ -71,10 +74,11 @@ public class Boros_Guildmage {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.FirstStrike));
+                }
+			});
 		}	
 	};
 }

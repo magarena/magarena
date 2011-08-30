@@ -9,6 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicCopyTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Rite_of_Replication {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -33,15 +34,16 @@ public class Rite_of_Replication {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				final MagicPlayer player=(MagicPlayer)data[1];
-				final MagicCardDefinition cardDefinition=creature.getCardDefinition();
-				int count=(Integer)choiceResults[1]>0?5:1;
-				for (;count>0;count--) {
-					game.doAction(new MagicPlayTokenAction(player,cardDefinition));
-				}
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicPlayer player=(MagicPlayer)data[1];
+                    final MagicCardDefinition cardDefinition=creature.getCardDefinition();
+                    int count=(Integer)choiceResults[1]>0?5:1;
+                    for (;count>0;count--) {
+                        game.doAction(new MagicPlayTokenAction(player,cardDefinition));
+                    }
+                }
+			});
 		}
 	};
 }

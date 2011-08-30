@@ -7,6 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicTargetAction;
 
 public class Fireslinger {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -35,11 +36,12 @@ public class Fireslinger {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 			final MagicSource source=(MagicSource)data[0];
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage1=new MagicDamage(source,target,1,false);
-				game.doAction(new MagicDealDamageAction(damage1));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage1=new MagicDamage(source,target,1,false);
+                    game.doAction(new MagicDealDamageAction(damage1));
+                }
+			});
 			final MagicDamage damage2=new MagicDamage(source,(MagicTarget)data[1],1,false);
 			game.doAction(new MagicDealDamageAction(damage2));
 		}

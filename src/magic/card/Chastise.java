@@ -12,6 +12,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Chastise {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -36,12 +38,13 @@ public class Chastise {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				final int power=creature.getPower(game);
-				game.doAction(new MagicDestroyAction(creature));
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],power));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final int power=creature.getPower(game);
+                    game.doAction(new MagicDestroyAction(creature));
+                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],power));
+                }
+			});
 		}
 	};
 }

@@ -12,6 +12,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicCardAction;
 
 public class Beacon_of_Unrest {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -35,10 +37,11 @@ public class Beacon_of_Unrest {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCard targetCard=event.getTarget(game,choiceResults,0);
-			if (targetCard!=null) {
-				game.doAction(new MagicReanimateAction((MagicPlayer)data[1],targetCard,MagicPlayCardAction.NONE));
-			}
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard targetCard) {
+                    game.doAction(new MagicReanimateAction((MagicPlayer)data[1],targetCard,MagicPlayCardAction.NONE));
+                }
+			});
 			game.doAction(new MagicShuffleIntoLibraryAction((MagicCard)data[0]));
 		}
 	};

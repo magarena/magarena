@@ -8,6 +8,8 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
 import magic.model.event.*;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Ethersworn_Adjudicator {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -38,10 +40,11 @@ public class Ethersworn_Adjudicator {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
-			if (permanent!=null) {
-				game.doAction(new MagicDestroyAction(permanent));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent permanent) {
+                    game.doAction(new MagicDestroyAction(permanent));
+                }
+			});
 		}
 	};
 

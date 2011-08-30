@@ -10,6 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Vines_of_Vastwood {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
@@ -36,18 +37,19 @@ public class Vines_of_Vastwood {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-                final MagicPlayer player = event.getPlayer();
-                if (player.getIndex() == 0) {
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget1));
-                } else {
-                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget0));
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicPlayer player = event.getPlayer();
+                    if (player.getIndex() == 0) {
+                        game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget1));
+                    } else {
+                        game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBeTheTarget0));
+                    }
+                    if (((Integer)choiceResults[1])>0) {
+                        game.doAction(new MagicChangeTurnPTAction(creature,4,4));
+                    }
                 }
-				if (((Integer)choiceResults[1])>0) {
-					game.doAction(new MagicChangeTurnPTAction(creature,4,4));
-				}
-			}
+            });
 		}
 	};
 }

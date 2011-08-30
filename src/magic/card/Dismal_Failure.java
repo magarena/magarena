@@ -10,6 +10,7 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Dismal_Failure {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -32,11 +33,12 @@ public class Dismal_Failure {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicCardOnStack counteredCard=event.getTarget(game,choiceResults,0);
-			if (counteredCard!=null) {
-				game.doAction(new MagicCounterItemOnStackAction(counteredCard));
-				game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),counteredCard.getController(),1,false));
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack counteredCard) {
+                    game.doAction(new MagicCounterItemOnStackAction(counteredCard));
+                    game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),counteredCard.getController(),1,false));
+                }
+			});
 		}
 	};
 }

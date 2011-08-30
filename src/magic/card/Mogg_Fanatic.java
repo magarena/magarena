@@ -7,6 +7,7 @@ import magic.model.event.*;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.condition.MagicCondition;
+import magic.model.action.MagicTargetAction;
 
 public class Mogg_Fanatic {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -34,11 +35,12 @@ public class Mogg_Fanatic {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
 	};
 }

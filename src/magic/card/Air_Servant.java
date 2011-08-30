@@ -6,6 +6,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicTapTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Air_Servant {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -36,10 +38,13 @@ public class Air_Servant {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null&&!creature.isTapped()) {
-				game.doAction(new MagicTapAction(creature,true));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    if (!creature.isTapped()) {
+                        game.doAction(new MagicTapAction(creature,true));
+                    }
+                }
+			});
 		}
 	};
 }

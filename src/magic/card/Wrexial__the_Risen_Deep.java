@@ -10,6 +10,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicCardAction;
 
 public class Wrexial__the_Risen_Deep {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
@@ -39,14 +40,15 @@ public class Wrexial__the_Risen_Deep {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicCard card=event.getTarget(game,choiceResults,1);
-				if (card!=null) {
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-					final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,(MagicPlayer)data[0],MagicPayedCost.NO_COST);
-					cardOnStack.setMoveLocation(MagicLocationType.Exile);
-					game.doAction(new MagicPutItemOnStackAction(cardOnStack));
-				}
-			}
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                        final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,(MagicPlayer)data[0],MagicPayedCost.NO_COST);
+                        cardOnStack.setMoveLocation(MagicLocationType.Exile);
+                        game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+                    }
+                });
+            }
 		}
     };
 }

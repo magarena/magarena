@@ -7,6 +7,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicExileTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Mark_of_Mutiny {
 	public static final MagicSpellCardEvent SOR=new MagicSpellCardEvent() {
@@ -28,14 +29,15 @@ public class Mark_of_Mutiny {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicGainControlAction((MagicPlayer)data[1],creature));
-				game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.ReturnToOwnerAtEndOfTurn,true));
-				game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1,true));
-                game.doAction(new MagicUntapAction(creature));
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicGainControlAction((MagicPlayer)data[1],creature));
+                    game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.ReturnToOwnerAtEndOfTurn,true));
+                    game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1,true));
+                    game.doAction(new MagicUntapAction(creature));
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
+                }
+			});
 		}
 	};
 

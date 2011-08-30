@@ -9,6 +9,7 @@ import magic.model.event.*;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Tumble_Magnet {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -39,10 +40,11 @@ public class Tumble_Magnet {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=(MagicPermanent)event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicTapAction(creature,true));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicTapAction(creature,true));
+                }
+			});
 		}
 	};
 

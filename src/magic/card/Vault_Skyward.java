@@ -12,6 +12,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicFlyingTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Vault_Skyward {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
@@ -34,11 +35,12 @@ public class Vault_Skyward {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));
-				game.doAction(new MagicUntapAction(creature));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));
+                    game.doAction(new MagicUntapAction(creature));
+                }
+			});
 		}
 	};
 }

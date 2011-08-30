@@ -7,6 +7,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicTapTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Stun_Sniper {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -34,14 +35,15 @@ public class Stun_Sniper {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {			
-				final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,1,false);
-				game.doAction(new MagicDealDamageAction(damage));
-				if (!creature.isTapped()) {
-					game.doAction(new MagicTapAction(creature,true));
-				}
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,1,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                    if (!creature.isTapped()) {
+                        game.doAction(new MagicTapAction(creature,true));
+                    }
+                }
+			});
 		}
 	};
 }

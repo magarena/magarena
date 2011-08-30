@@ -12,6 +12,7 @@ import magic.model.event.MagicEventAction;
 import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Doomgape {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
@@ -49,12 +50,13 @@ public class Doomgape {
                             final MagicEvent event,
                             final Object[] data,
                             final Object[] choiceResults) {
-                			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-                            if (creature!=null) {
-                                final int toughness=creature.getToughness(game);
-                                game.doAction(new MagicSacrificeAction(creature));
-                                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
-                            }
+                            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                                public void doAction(final MagicPermanent creature) {
+                                    final int toughness=creature.getToughness(game);
+                                    game.doAction(new MagicSacrificeAction(creature));
+                                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
+                                }
+                            });
 		                }
 	                },
                     "Choose a creature to sacrifice$."));

@@ -8,6 +8,7 @@ import magic.model.event.*;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
+import magic.model.action.MagicPlayerAction;
 
 public class Brion_Stoutarm {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -43,12 +44,13 @@ public class Brion_Stoutarm {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				final MagicPermanent sacrificed=(MagicPermanent)data[1];
-				final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],player,sacrificed.getPower(game),false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    final MagicPermanent sacrificed=(MagicPermanent)data[1];
+                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],player,sacrificed.getPower(game),false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
 	};
 }

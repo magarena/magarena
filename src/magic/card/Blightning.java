@@ -11,6 +11,8 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPlayerAction;
 
 public class Blightning {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -33,12 +35,13 @@ public class Blightning {
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),player,3,false);
-				game.doAction(new MagicDealDamageAction(damage));
-				game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,2,false));
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),player,3,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                    game.addEvent(new MagicDiscardEvent(cardOnStack.getCard(),player,2,false));
+                }
+			});
 		}
 	};
 }

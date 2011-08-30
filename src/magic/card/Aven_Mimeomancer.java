@@ -8,8 +8,10 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicBecomeTargetPicker;
+import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Aven_Mimeomancer {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
@@ -32,11 +34,12 @@ public class Aven_Mimeomancer {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent creature=event.getTarget(game,choiceResults,1);
-				if (creature!=null) {
-					game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Feather,1,true));
-				}
-			}
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Feather,1,true));
+                    }
+                });
+            }
 		}
     };
 }

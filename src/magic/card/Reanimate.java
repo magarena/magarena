@@ -13,6 +13,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.action.MagicCardAction;
 
 public class Reanimate {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -37,12 +38,13 @@ public class Reanimate {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicCard targetCard=event.getTarget(game,choiceResults,0);
-			if (targetCard!=null) {
-				final MagicPlayer player=(MagicPlayer)data[1];
-				game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
-				game.doAction(new MagicChangeLifeAction(player,-targetCard.getCardDefinition().getConvertedCost()));
-			}
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard targetCard) {
+                    final MagicPlayer player=(MagicPlayer)data[1];
+                    game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicChangeLifeAction(player,-targetCard.getCardDefinition().getConvertedCost()));
+                }
+			});
 		}
 	};
 }

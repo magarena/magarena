@@ -7,6 +7,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Esper_Battlemage {
 	public static final MagicPermanentActivation A =new MagicPermanentActivation(
@@ -66,10 +68,11 @@ public class Esper_Battlemage {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
+                }
+			});
 		}
 	};
 }

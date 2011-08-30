@@ -11,6 +11,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicCardAction;
 
 public class Puppeteer_Clique {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
@@ -29,13 +30,14 @@ public class Puppeteer_Clique {
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			final MagicCard card=(MagicCard)event.getTarget(game,choiceResults,0);
-			if (card!=null) {
-				game.doAction(new MagicReanimateAction(
-                            (MagicPlayer)data[0],
-                            card,
-                            MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_YOUR_TURN));
-			}
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicReanimateAction(
+                                (MagicPlayer)data[0],
+                                card,
+                                MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_YOUR_TURN));
+                }
+			});
 		}
     };
 }

@@ -6,6 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.MagicCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -32,11 +33,12 @@ public class Gravedigger {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicCard card=event.getTarget(game,choiceResults,1);		
-				if (card!=null) {
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-				}
+				event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                }
+				});
 			}
 		}
     };

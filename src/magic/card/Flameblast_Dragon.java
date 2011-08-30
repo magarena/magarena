@@ -11,6 +11,7 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Flameblast_Dragon {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
@@ -36,13 +37,14 @@ public class Flameblast_Dragon {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicTarget target=event.getTarget(game,choiceResults,2);
-				if (target!=null) {
-					final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
-					final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],target,payedManaCost.getX(),false);
-					game.doAction(new MagicDealDamageAction(damage));
-				}
-			}
+                event.processTarget(game,choiceResults,2,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
+                        final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],target,payedManaCost.getX(),false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
+            }
 		}
     };
 }

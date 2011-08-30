@@ -8,6 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicPermanentAction;
 
 public class Manic_Vandal {
 	public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
@@ -25,10 +26,11 @@ public class Manic_Vandal {
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			final MagicPermanent permanent=event.getTarget(game,choiceResults,0);
-			if (permanent != null) {
-				game.doAction(new MagicDestroyAction(permanent));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent permanent) {
+                    game.doAction(new MagicDestroyAction(permanent));
+                }
+			});
 		}
     };
 }

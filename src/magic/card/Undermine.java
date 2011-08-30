@@ -10,6 +10,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicCardOnStackAction;
 
 public class Undermine {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
@@ -31,11 +32,12 @@ public class Undermine {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicCardOnStack counteredCard=event.getTarget(game,choiceResults,0);
-			if (counteredCard!=null) {
-				game.doAction(new MagicCounterItemOnStackAction(counteredCard));
-				game.doAction(new MagicChangeLifeAction(counteredCard.getController(),-3));
-			}
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+                public void doAction(final MagicCardOnStack counteredCard) {
+                    game.doAction(new MagicCounterItemOnStackAction(counteredCard));
+                    game.doAction(new MagicChangeLifeAction(counteredCard.getController(),-3));
+                }
+			});
 		}
 	};
 }

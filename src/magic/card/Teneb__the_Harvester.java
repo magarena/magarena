@@ -9,6 +9,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicCardAction;
 
 public class Teneb__the_Harvester {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
@@ -38,11 +39,12 @@ public class Teneb__the_Harvester {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicCard card=event.getTarget(game,choiceResults,2);
-				if (card!=null) {
-					game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
-				}				
-			}
-		}
+                event.processTargetCard(game,choiceResults,2,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                    }				
+                });
+		    }
+        }
     };
 }

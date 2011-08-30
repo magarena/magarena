@@ -21,7 +21,7 @@ public class Breath_of_Darigaaz {
 			return new MagicEvent(
                     card,
                     player,
-                    new MagicKickerChoice(null,MagicManaCost.TWO,false),
+                    new MagicKickerChoice(MagicManaCost.TWO,false),
                     new Object[]{cardOnStack},
                     this,
                     card + " deals 1 damage to each creature without flying and each player. " + 

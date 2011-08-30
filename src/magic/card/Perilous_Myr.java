@@ -12,6 +12,7 @@ import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.action.MagicTargetAction;
 
 public class Perilous_Myr {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
@@ -33,11 +34,12 @@ public class Perilous_Myr {
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],target,2,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],target,2,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 		}
     };
 }

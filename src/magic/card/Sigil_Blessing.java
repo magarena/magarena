@@ -13,6 +13,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.action.MagicPermanentAction;
 
 import java.util.Collection;
 
@@ -37,18 +38,21 @@ public class Sigil_Blessing {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			final Collection<MagicTarget> targets=game.filterTargets(
-                    (MagicPlayer)data[1],
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				final MagicPermanent permanent=(MagicPermanent)target;
-				if (permanent==creature) {
-					game.doAction(new MagicChangeTurnPTAction(permanent,3,3));
-				} else {
-					game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
-				}
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final Collection<MagicTarget> targets=game.filterTargets(
+                            (MagicPlayer)data[1],
+                            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    for (final MagicTarget target : targets) {
+                        final MagicPermanent permanent=(MagicPermanent)target;
+                        if (permanent==creature) {
+                            game.doAction(new MagicChangeTurnPTAction(permanent,3,3));
+                        } else {
+                            game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
+                        }
+                    }
+                }
+            });
 		}
 	};
 }

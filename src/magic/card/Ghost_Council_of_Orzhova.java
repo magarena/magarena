@@ -3,6 +3,7 @@ package magic.card;
 import magic.model.*;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicExileUntilEndOfTurnAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.*;
 import magic.model.trigger.MagicTrigger;
@@ -61,11 +62,12 @@ public class Ghost_Council_of_Orzhova {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player=event.getTarget(game,choiceResults,0);
-			if (player!=null) {
-				game.doAction(new MagicChangeLifeAction(player,-1));
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
-			}
+			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer player) {
+                    game.doAction(new MagicChangeLifeAction(player,-1));
+                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                }
+			});
 		}		
     };
 }

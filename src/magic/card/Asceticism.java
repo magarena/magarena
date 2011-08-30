@@ -6,6 +6,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicRegenerateTargetPicker;
+import magic.model.target.MagicTarget;
+import magic.model.action.MagicPermanentAction;
 
 public class Asceticism {
 
@@ -37,10 +39,11 @@ public class Asceticism {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent creature = event.getTarget(game,choiceResults,0);
-            if (creature != null) {
-                game.doAction(new MagicRegenerateAction(creature));
-            }
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicRegenerateAction(creature));
+                }
+            });
         }
     };
 }

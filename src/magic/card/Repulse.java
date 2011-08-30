@@ -9,6 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Repulse {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -31,10 +32,11 @@ public class Repulse {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+                }
+			});
 			game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
 		}
 	};

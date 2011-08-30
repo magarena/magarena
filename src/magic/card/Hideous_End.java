@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -34,12 +35,13 @@ public class Hideous_End {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				final MagicPlayer controller=creature.getController();
-				game.doAction(new MagicDestroyAction(creature));
-				game.doAction(new MagicChangeLifeAction(controller,-2));
-			}
+			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    final MagicPlayer controller=creature.getController();
+                    game.doAction(new MagicDestroyAction(creature));
+                    game.doAction(new MagicChangeLifeAction(controller,-2));
+                }
+			});
 		}
 	};
 }

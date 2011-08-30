@@ -7,6 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicTargetAction;
 
 public class Goblin_Artillery {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -36,13 +37,14 @@ public class Goblin_Artillery {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 
 			final MagicSource source=(MagicSource)data[0];
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage1=new MagicDamage(source,target,2,false);
-				game.doAction(new MagicDealDamageAction(damage1));
-				final MagicDamage damage2=new MagicDamage(source,(MagicTarget)data[1],3,false);
-				game.doAction(new MagicDealDamageAction(damage2));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage1=new MagicDamage(source,target,2,false);
+                    game.doAction(new MagicDealDamageAction(damage1));
+                    final MagicDamage damage2=new MagicDamage(source,(MagicTarget)data[1],3,false);
+                    game.doAction(new MagicDealDamageAction(damage2));
+                }
+			});
 		}
 	};
 }

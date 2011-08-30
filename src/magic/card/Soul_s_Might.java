@@ -8,6 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPowerTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class Soul_s_Might {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
@@ -30,14 +31,15 @@ public class Soul_s_Might {
                 final Object[] data,
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-			if (creature!=null) {
-				game.doAction(new MagicChangeCountersAction(
-                            creature,
-                            MagicCounterType.PlusOne,
-                            creature.getPower(game),
-                            true));
-			}
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicChangeCountersAction(
+                                creature,
+                                MagicCounterType.PlusOne,
+                                creature.getPower(game),
+                                true));
+                }
+			});
 		}
 	};
 }

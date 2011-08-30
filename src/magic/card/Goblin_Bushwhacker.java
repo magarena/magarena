@@ -42,7 +42,7 @@ public class Goblin_Bushwhacker {
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
-                    new MagicKickerChoice(null,MagicManaCost.RED,false),
+                    new MagicKickerChoice(MagicManaCost.RED,false),
                     new Object[]{cardOnStack},
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, if it was kicked$, " + 
@@ -56,7 +56,7 @@ public class Goblin_Bushwhacker {
                 final Object[] choiceResults) {
 			final int kickerCount=(Integer)choiceResults[1];
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack,null);
+			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
 			game.doAction(action);
 			if (kickerCount>0) {
 				final MagicPermanent permanent=action.getPermanent();

@@ -9,6 +9,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.action.MagicTargetAction;
 
 public class Beacon_of_Destruction {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -33,11 +34,12 @@ public class Beacon_of_Destruction {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicCard card=(MagicCard)data[0];
-			final MagicTarget target=event.getTarget(game,choiceResults,0);
-			if (target!=null) {
-				final MagicDamage damage=new MagicDamage(card,target,5,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage=new MagicDamage(card,target,5,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+			});
 			game.doAction(new MagicShuffleIntoLibraryAction(card));
 		}
 	};
