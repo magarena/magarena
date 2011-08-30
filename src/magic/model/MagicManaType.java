@@ -15,6 +15,7 @@ public enum MagicManaType {
 	Green("green","{G}"),
 	Red("red","{R}"),
 	White("white","{W}"),
+	NONE("none","{N}"),
 	;
 	
 	public static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(Arrays.asList(
@@ -22,7 +23,7 @@ public enum MagicManaType {
 	public static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(Arrays.asList(
         Colorless,Black,Blue,Green,Red,White)); // Colorless must be in front.
 	
-	public static final int NR_OF_TYPES=values().length;
+	public static final int NR_OF_TYPES = ALL_TYPES.size();
 	
 	private final String name;
 	private final String text;

@@ -11,7 +11,7 @@ public class MagicSourceManaActivation {
 	public final MagicPermanent permanent;
 	public final MagicManaActivation activations[];
 	public boolean available;
-	public MagicManaType manaType=null;
+	public MagicManaType manaType;
 	
 	public MagicSourceManaActivation(final MagicGame game,final MagicPermanent permanent) {
 		this.permanent=permanent;
@@ -36,7 +36,7 @@ public class MagicSourceManaActivation {
 				}
 			}
 		}		
-		return null;
+		return MagicManaType.NONE;
 	}
 	
 	public void produce(final MagicGame game,final MagicCostManaType costManaType) {
