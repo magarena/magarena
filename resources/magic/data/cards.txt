@@ -2727,6 +2727,16 @@ converted=3
 cost={2}{U}
 timing=draw
 
+>Visions of Beyond
+image=http://magiccards.info/scans/en/m12/80.jpg
+value=2
+rarity=R
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=draw
+
 >Soul's Majesty
 image=http://magiccards.info/scans/en/cfx/92.jpg
 value=3
