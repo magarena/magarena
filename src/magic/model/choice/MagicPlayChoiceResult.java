@@ -7,8 +7,8 @@ import magic.model.event.MagicActivation;
 
 public class MagicPlayChoiceResult implements MagicMappable {
 
-	public static final MagicPlayChoiceResult PASS=new MagicPlayChoiceResult(null,null);
-	public static final MagicPlayChoiceResult SKIP=new MagicPlayChoiceResult(null,null);
+	public static final MagicPlayChoiceResult PASS=new MagicPlayChoiceResult();
+	public static final MagicPlayChoiceResult SKIP=new MagicPlayChoiceResult();
 
     public MagicSource source;
 	public MagicActivation activation;
@@ -17,6 +17,8 @@ public class MagicPlayChoiceResult implements MagicMappable {
 		this.source=source;
 		this.activation=activation;
 	}
+
+    private MagicPlayChoiceResult() {}
 	
 	@Override
 	public Object map(final MagicGame game) {
@@ -36,7 +38,6 @@ public class MagicPlayChoiceResult implements MagicMappable {
         else if (this==SKIP) {
 			return "skip";
 		} else {
-            assert source != null;
 			return source.getName();
 		}
 	}
