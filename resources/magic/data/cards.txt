@@ -1,3 +1,17 @@
+>AEther Figment
+image=http://magiccards.info/scans/en/zen/40.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Illusion
+color=u
+converted=2
+cost={1}{U}
+power=1
+toughness=1
+ability=unblockable
+timing=main
+
 >Akrasan Squire
 image=http://magiccards.info/scans/en/ala/1.jpg
 value=2
@@ -598,6 +612,20 @@ power=2
 toughness=2
 timing=main
 
+>Fleeting Image
+image=http://magiccards.info/scans/en/9e/78.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Illusion
+color=u
+converted=3
+cost={2}{U}
+power=2
+toughness=1
+ability=flying
+timing=main
+
 >Gideon's Avenger
 image=http://magiccards.info/scans/en/m12/17.jpg
 value=3
@@ -623,6 +651,20 @@ cost={G}
 power=1
 toughness=1
 ability=hexproof
+timing=main
+
+>Glaze Fiend
+image=http://magiccards.info/scans/en/ala/77.jpg
+value=2
+rarity=C
+type=Artifact,Creature
+subtype=Illusion
+color=b
+converted=2
+cost={1}{B}
+power=0
+toughness=1
+ability=flying
 timing=main
 
 >Goblin Arsonist
