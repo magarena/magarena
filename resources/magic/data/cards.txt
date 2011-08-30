@@ -4504,6 +4504,16 @@ converted=6
 cost={5}{R}
 timing=enchantment
 
+>Zombie Infestation
+image=http://magiccards.info/scans/en/m12/120.jpg
+value=2
+rarity=U
+type=Enchantment
+color=b
+converted=2
+cost={1}{B}
+timing=enchantment
+
 >Glory of Warfare
 image=http://magiccards.info/scans/en/arb/98.jpg
 value=4

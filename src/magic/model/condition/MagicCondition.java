@@ -44,6 +44,12 @@ public interface MagicCondition {
 		}
 	};
 	
+	public static final MagicCondition HAS_TWO_CARDS_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return source.getController().getHandSize() > 1;
+		}
+	};
+	
 	public static final MagicCondition CAN_TAP_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
