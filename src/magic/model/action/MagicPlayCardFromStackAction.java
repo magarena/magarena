@@ -10,6 +10,10 @@ public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
 	private final MagicCardOnStack cardOnStack;
 	private boolean kicked=false;
 	
+    public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack) {
+		this.cardOnStack=cardOnStack;
+	}
+	
 	public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack,final MagicPermanent enchantedPermanent) {
 		this.cardOnStack=cardOnStack;
 		setEnchantedPermanent(enchantedPermanent);
