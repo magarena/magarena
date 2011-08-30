@@ -2155,6 +2155,16 @@ converted=2
 cost={R}{G}
 timing=pump
 
+>Titanic Growth
+image=http://magiccards.info/scans/en/m12/198.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=pump
+
 >Swords to Plowshares
 image=http://magiccards.info/scans/en/cstd/7.jpg
 value=3
