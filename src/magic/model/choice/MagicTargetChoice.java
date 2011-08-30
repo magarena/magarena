@@ -18,7 +18,7 @@ import java.util.Set;
 public class MagicTargetChoice extends MagicChoice {
 	
     public static final MagicTargetChoice NONE =
-		new MagicTargetChoice(MagicTargetFilter.NONE,false,MagicTargetHint.None,"nothing");
+		new MagicTargetChoice(MagicTargetFilter.ALL,false,MagicTargetHint.None,"nothing");
 	public static final MagicTargetChoice TARGET_SPELL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.None,
                 "target spell");
@@ -190,10 +190,10 @@ public class MagicTargetChoice extends MagicChoice {
             final MagicTargetHint hint,
             final String targetDesciption) {
 		super("Choose "+targetDesciption+'.');
-		this.targetDescription=targetDesciption;
 		this.targetFilter=targetFilter;
 		this.targeted=targeted;
 		this.targetHint=hint;
+		this.targetDescription=targetDesciption;
 	}
 	
 	public final String getTargetDescription() {
