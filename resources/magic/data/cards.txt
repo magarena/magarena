@@ -854,6 +854,20 @@ toughness=5
 ability=reach
 timing=main
 
+>Tormented Soul
+image=http://magiccards.info/scans/en/m12/114.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=b
+converted=1
+cost={B}
+power=1
+toughness=1
+ability=can't block,unblockable
+timing=main
+
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5
@@ -2310,6 +2324,17 @@ color=g
 converted=1
 cost={G}
 timing=pump
+
+>Turn to Frog
+image=http://magiccards.info/scans/en/m12/78.jpg
+value=3
+removal=3
+rarity=U
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
 
 >Incinerate
 image=http://magiccards.info/scans/en/jvc/51.jpg
