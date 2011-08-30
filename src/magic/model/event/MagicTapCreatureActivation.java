@@ -5,6 +5,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.action.MagicTapAction;
 import magic.model.target.MagicTapTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public abstract class MagicTapCreatureActivation extends MagicPermanentActivation {
 		
@@ -33,9 +34,10 @@ public abstract class MagicTapCreatureActivation extends MagicPermanentActivatio
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-        if (creature!=null&&!creature.isTapped()) {
-            game.doAction(new MagicTapAction(creature,true));
-        }
+        event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            public void doAction(final MagicPermanent creature) {
+                game.doAction(new MagicTapAction(creature,true));
+            }
+        });
     }
 }
