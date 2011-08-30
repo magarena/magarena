@@ -24,7 +24,7 @@ public class MagicPlayCardEvent implements MagicCardEvent,MagicEventAction {
 	@Override
 	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
 		final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-		game.doAction(new MagicPlayCardFromStackAction(cardOnStack,null));
+		game.doAction(new MagicPlayCardFromStackAction(cardOnStack));
 	}
 	
 	public static MagicCardEvent getInstance() {
