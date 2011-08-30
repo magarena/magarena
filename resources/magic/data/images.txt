@@ -64,11 +64,11 @@ x.gif;http://forums.mtgsalvation.com/images/smilies/manax.gif
 tapped.gif;http://forums.mtgsalvation.com/images/smilies/tap.gif
 >tokens
 Ape.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=42431&stc=1&d=1173951187
-Bat.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=19964&d=1143669815
-Goblin1.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=20001&d=1143672913
+Bat.jpg;http://img.photobucket.com/albums/v237/Xand0r/bat-token_guildpact_300.jpg
+Goblin1.jpg;http://img.photobucket.com/albums/v237/Xand0r/goblin-token_ravnica_300.jpg
 Goblin2.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1157620938
-Griffin.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=32242&stc=1&d=1159379525
-Voja.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=20055&d=1143749996
+Griffin.jpg;http://i37.photobucket.com/albums/e81/FirePenguinMaster/MWSHQ/Griffin2full.jpg
+Voja.jpg;http://img.photobucket.com/albums/v237/Xand0r/voja-token_ravnica_300-2.jpg
 Beast3.jpg;http://magiccards.info/extras/token/magic-2011/beast.jpg
 Beast4.jpg;http://magiccards.info/extras/token/zendikar/beast.jpg
 Beast8.jpg;http://magiccards.info/extras/token/shards-of-alara/beast.jpg
