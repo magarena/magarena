@@ -15,7 +15,7 @@ public class MagicCombatCreature {
 	public final int power;
 	public final int lethalDamage;
 	public final boolean normalDamage;
-	public MagicCombatCreature candidateBlockers[]=null;
+	public MagicCombatCreature candidateBlockers[] = new MagicCombatCreature[0];
 	public int attackerScore=0;
 	private final long flags;
 	
@@ -69,7 +69,7 @@ public class MagicCombatCreature {
 		final StringBuilder builder=new StringBuilder();
 		builder.append(permanent.getName());
         builder.append('(').append(power).append(',').append(lethalDamage).append(',').append(attackerScore).append(')');
-		if (candidateBlockers!=null) {
+		if (candidateBlockers.length > 0) {
 			builder.append(" = ").append(Arrays.toString(candidateBlockers));
 		}
 		return builder.toString();
