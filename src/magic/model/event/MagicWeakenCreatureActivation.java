@@ -5,6 +5,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public abstract class MagicWeakenCreatureActivation extends MagicPermanentActivation {
 		
@@ -35,13 +36,14 @@ public abstract class MagicWeakenCreatureActivation extends MagicPermanentActiva
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        final MagicPermanent creature=(MagicPermanent)event.getTarget(game,choiceResults,0);
-        if (creature!=null) {
-            game.doAction(new MagicChangeCountersAction(
-                        creature,
-                        MagicCounterType.MinusOne,
-                        1,
-                        true));
-        }
+        event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            public void doAction(final MagicPermanent creature) {
+                game.doAction(new MagicChangeCountersAction(
+                            creature,
+                            MagicCounterType.MinusOne,
+                            1,
+                            true));
+            }
+        });
     }
 }
