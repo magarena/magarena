@@ -18,6 +18,23 @@ public abstract class MagicChoice {
 	public static final String NO_CHOICE="no";
 	
 	public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
+
+    public static final MagicChoice NONE = new MagicChoice("none") {
+	    public Collection<Object> getArtificialOptions(
+                final MagicGame game,
+                final MagicEvent event,
+                final MagicPlayer player,
+                final MagicSource source) {
+            return Collections.emptyList();
+        }
+        public Object[] getPlayerChoiceResults(
+            final GameController controller,
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicSource source) {
+            return new Object[0];
+        }
+    };
 	
 	private final String description;
 	
