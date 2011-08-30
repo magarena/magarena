@@ -8,6 +8,7 @@ import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetPicker;
+import magic.model.action.MagicPermanentAction;
 
 public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 	
@@ -40,10 +41,12 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
             final Object[] data,
             final Object[] choiceResults) {
 		final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-		final MagicPermanent creature=event.getTarget(game,choiceResults,0);
-		if (creature!=null) {
-			game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));
-		} else {
+        final boolean success = event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            public void doAction(final MagicPermanent creature) {
+                game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));
+            }
+        });
+		if (!success) {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 		}
 	}
