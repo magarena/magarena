@@ -882,6 +882,20 @@ toughness=4
 ability=flying,haste
 timing=fmain
 
+>Wall of Torches
+image=http://magiccards.info/scans/en/m12/159.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Wall
+color=r
+converted=2
+cost={1}{R}
+power=4
+toughness=1
+ability=defender
+timing=smain
+
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5
@@ -4478,6 +4492,16 @@ type=Enchantment
 color=b
 converted=5
 cost={4}{B}
+timing=enchantment
+
+>Warstorm Surge
+image=http://magiccards.info/scans/en/m12/160.jpg
+value=5
+rarity=R
+type=Enchantment
+color=r
+converted=6
+cost={5}{R}
 timing=enchantment
 
 >Glory of Warfare
