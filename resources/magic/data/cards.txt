@@ -868,6 +868,20 @@ toughness=1
 ability=can't block,unblockable
 timing=main
 
+>Volcanic Dragon
+image=http://magiccards.info/scans/en/m12/158.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+power=4
+toughness=4
+ability=flying,haste
+timing=fmain
+
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5
