@@ -8125,6 +8125,18 @@ power=3
 toughness=4
 timing=main
 
+>Thran Golem
+image=http://magiccards.info/scans/en/m12/220.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+converted=5
+cost={5}
+power=3
+toughness=3
+timing=main
+
 >Deft Duelist
 image=http://magiccards.info/scans/en/ala/165.jpg
 value=2
