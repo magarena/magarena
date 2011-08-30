@@ -30,7 +30,7 @@ public abstract class MagicChoice {
 	}
 	
 	public MagicTargetChoice getTargetChoice() {
-		return null;
+		return MagicTargetChoice.NONE;
 	}
 	
 	public int getManaChoiceResultIndex() {
@@ -55,17 +55,17 @@ public abstract class MagicChoice {
 		
 		final Collection<Object> options=getArtificialOptions(game,event,player,source);
 		final int size=options.size();
-		if (size==1) {
+        if (size == 0) {
+            throw new RuntimeException("no artificial choice result");
+        } else if (size == 1) {
 			return Collections.singletonList(new Object[]{options.iterator().next()});
-		} else if (size>1) {
-			final List<Object[]> choiceResultsList=new ArrayList<Object[]>(size);
-			for (final Object option : options) {
-                choiceResultsList.add(new Object[]{option});
-			}
-			return choiceResultsList;
 		} else {
-			return Collections.emptyList();
-		}
+            final List<Object[]> choiceResultsList=new ArrayList<Object[]>(size);
+            for (final Object option : options) {
+                choiceResultsList.add(new Object[]{option});
+            }
+            return choiceResultsList;
+        }
 	}
 
 	/** Gets one choice results for simulation. */
@@ -74,12 +74,13 @@ public abstract class MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
+
         final List<Object[]> choices = getArtificialChoiceResults(game, event, player, source);
-        if (choices.size() == 0) {
-            return null;
-        } else {
-            return choices.get(MagicRandom.nextInt(choices.size()));
-        }
+		final int size = choices.size();
+        if (size == 0) {
+            throw new RuntimeException("no simulation choice result");
+        } 
+        return choices.get(MagicRandom.nextInt(choices.size()));
     }
 	
 	/** Gets the choice results of the player. */
