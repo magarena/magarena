@@ -17,14 +17,12 @@ public class MagicAttachEquipmentAction extends MagicAction {
 	private boolean validCreature;
 	
 	public MagicAttachEquipmentAction(final MagicPermanent equipment,final MagicPermanent creature) {
-		
 		this.equipment=equipment;
 		this.creature=creature;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		validEquipment=equipment.getController().controlsPermanent(equipment);
 		if (!validEquipment) {
 			return;
