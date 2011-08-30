@@ -17,7 +17,7 @@ public class MagicMayChoice extends MagicChoice {
             new Object[]{NO_CHOICE});
 	
 	private final MagicChoice choices[];
-	private MagicTargetChoice targetChoice=null;
+	private MagicTargetChoice targetChoice = MagicTargetChoice.NONE;
 	private int manaChoiceResultIndex=-1;
 	
 	public MagicMayChoice(final String description,final MagicChoice... choices) {
