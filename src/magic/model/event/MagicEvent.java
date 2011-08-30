@@ -7,16 +7,23 @@ import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
+import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicCardOnStackAction;
+import magic.model.action.MagicCardAction;
+import magic.model.action.MagicPlayerAction;
+import magic.model.action.MagicTargetAction;
+import magic.model.stack.MagicCardOnStack;
 
 import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 
-	public static final MagicEvent NO_EVENTS[]=new MagicEvent[0];
-	public static final MagicChoice NO_CHOICES=null;
-	public static final Object NO_CHOICE_RESULTS[]=new Object[0];
-	public static final Object NO_DATA[]=new Object[0];
+	public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
+	public static final MagicChoice NO_CHOICES = MagicChoice.NONE;
+	public static final Object NO_CHOICE_RESULTS[] = new Object[0];
+	public static final Object NO_DATA[] = new Object[0];
 
 	private MagicSource source;
 	private MagicPlayer player;
@@ -34,11 +41,6 @@ public class MagicEvent implements MagicCopyable {
             final Object data[],
             final MagicEventAction action,
             final String description) {
-       
-        if (data == null) {
-            throw new RuntimeException("data is null");
-        }
-
         this.source=source;
 		this.player=player;
 		this.choice=choice;
@@ -97,7 +99,7 @@ public class MagicEvent implements MagicCopyable {
 	}
 		
 	public final boolean hasChoice() {
-		return choice!=null;
+		return choice != MagicChoice.NONE;
 	}
 	
 	public final MagicChoice getChoice() {
@@ -129,11 +131,11 @@ public class MagicEvent implements MagicCopyable {
 	}
 
 	public final MagicTargetChoice getTargetChoice() {
-		return choice!=null?choice.getTargetChoice():null;
+		return choice.getTargetChoice();
 	}
 	
 	public final int getManaChoiceResultIndex() {
-		return choice!=null?choice.getManaChoiceResultIndex():-1;
+		return choice.getManaChoiceResultIndex();
 	}
 
 	public final Object[] getData() {
@@ -155,15 +157,90 @@ public class MagicEvent implements MagicCopyable {
 		return hasChoice()?choice.getDescription():"";
 	}
 	
-	@SuppressWarnings("unchecked")
-	public final <E extends MagicTarget> E getTarget(final MagicGame game,final Object choiceResults[],final int index) {
+	private final MagicTarget getTarget(final MagicGame game,final Object choiceResults[],final int index) {
 		final MagicTargetChoice targetChoice=getTargetChoice();
 		final MagicTarget target=(MagicTarget)choiceResults[index];
 		if (game.isLegalTarget(player,source,targetChoice,target)) {
-			return (E)target;
-		}
-		return null;
+			return target;
+		} else {
+    		return MagicTargetNone.getInstance();
+        }
 	}
+    
+    public final boolean processTarget(
+            final MagicGame game,
+            final Object choiceResults[],
+            final int index,
+            final MagicTargetAction effect
+            ) {
+        final MagicTarget target = getTarget(game, choiceResults, index);
+        if (target != MagicTargetNone.getInstance()) {
+            effect.doAction(target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+	
+    public final boolean processTargetPermanent(
+            final MagicGame game,
+            final Object choiceResults[],
+            final int index,
+            final MagicPermanentAction effect
+            ) {
+        final MagicTarget target = getTarget(game, choiceResults, index);
+        if (target.isPermanent()) {
+            effect.doAction((MagicPermanent)target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public final boolean processTargetCardOnStack(
+            final MagicGame game,
+            final Object choiceResults[],
+            final int index,
+            final MagicCardOnStackAction effect
+            ) {
+        final MagicTarget target = getTarget(game, choiceResults, index);
+        if (target.isSpell()) {
+            effect.doAction((MagicCardOnStack)target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public final boolean processTargetCard(
+            final MagicGame game,
+            final Object choiceResults[],
+            final int index,
+            final MagicCardAction effect
+            ) {
+        final MagicTarget target = getTarget(game, choiceResults, index);
+        if (target.isSpell()) {
+            effect.doAction((MagicCard)target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public final boolean processTargetPlayer(
+            final MagicGame game,
+            final Object choiceResults[],
+            final int index,
+            final MagicPlayerAction effect
+            ) {
+        final MagicTarget target = getTarget(game, choiceResults, index);
+        if (target.isPlayer()) {
+            effect.doAction((MagicPlayer)target);
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 	public final void payManaCost(
             final MagicGame game,
