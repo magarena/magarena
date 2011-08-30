@@ -67,7 +67,7 @@ public class MagicTargetNone implements MagicTarget {
 
 	@Override
 	public MagicPlayer getController() {
-		return null;
+        throw new RuntimeException("getting controller of MagicTargetNone");
 	}
 	
 	public static final MagicTarget getInstance() {
