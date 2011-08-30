@@ -23,7 +23,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
 		final MagicDeclareBlockersResultBuilder builder=
             new MagicDeclareBlockersResultBuilder(game,player,game.getFastChoices());
-		return builder.buildResults();
+		return builder.getResults();
 	}
 	
 	/** Builds result and does cleanup for blockers. */
