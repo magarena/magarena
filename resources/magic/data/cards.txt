@@ -6642,6 +6642,17 @@ converted=2
 cost={1}{B}
 timing=removal
 
+>Wring Flesh
+image=http://magiccards.info/scans/en/m12/118.jpg
+value=2
+removal=2
+rarity=C
+type=Instant
+color=b
+converted=1
+cost={B}
+timing=removal
+
 >Smash to Smithereens
 image=http://magiccards.info/scans/en/shm/107.jpg
 value=2
