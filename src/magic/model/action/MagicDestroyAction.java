@@ -7,13 +7,11 @@ public class MagicDestroyAction extends MagicAction {
 	private final MagicPermanent permanent;
 	
 	public MagicDestroyAction(final MagicPermanent permanent) {
-
 		this.permanent=permanent;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		if (!permanent.hasAbility(game,MagicAbility.Indestructible)) {		
 			if (permanent.isRegenerated()) {
 				game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
