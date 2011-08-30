@@ -14,11 +14,18 @@ import java.util.*;
 // Kicker choice results : 0 = other choice, 1 = number of times kicked, 2 = kicker mana cost result
 public class MagicKickerChoice extends MagicChoice {
 
-	private static final List<Object> NO_OPTIONS_LIST=Collections.<Object>singletonList(null);
+	private static final List<Object> NO_OPTIONS_LIST = Collections.<Object>singletonList(null);
 	
 	private final MagicChoice otherChoice;
 	private final MagicManaCost cost;
 	private final boolean multi;
+	
+    public MagicKickerChoice(final MagicManaCost cost,final boolean multi) {
+		super("Choose to many times to pay the kicker cost.");
+		this.otherChoice=MagicChoice.NONE;
+		this.cost=cost;
+		this.multi=multi;
+	}
 	
 	public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost,final boolean multi) {
 		super("Choose to many times to pay the kicker cost.");
@@ -29,7 +36,7 @@ public class MagicKickerChoice extends MagicChoice {
 
 	@Override
 	public MagicTargetChoice getTargetChoice() {
-		return otherChoice!=null&&(otherChoice instanceof MagicTargetChoice)?(MagicTargetChoice)otherChoice:null;
+		return (otherChoice instanceof MagicTargetChoice) ? (MagicTargetChoice)otherChoice : MagicTargetChoice.NONE;
 	}
 	
 	@Override
@@ -82,7 +89,7 @@ public class MagicKickerChoice extends MagicChoice {
             final MagicSource source) {
 
 		final Collection<Object> otherOptions;
-		if (otherChoice==null) {
+		if (otherChoice == MagicChoice.NONE) {
 			otherOptions=NO_OPTIONS_LIST;
 		} else {
 			otherOptions=otherChoice.getArtificialOptions(game,event,player,source);			
@@ -156,7 +163,7 @@ public class MagicKickerChoice extends MagicChoice {
 		}
 
 		// Pick other choice.
-		if (otherChoice==null) {
+		if (otherChoice==MagicChoice.NONE) {
 			choiceResults[0]=null;
 		} else {
 			final Object otherChoiceResults[]=otherChoice.getPlayerChoiceResults(controller,game,player,source);
