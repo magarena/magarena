@@ -5,12 +5,12 @@ import magic.model.stack.MagicCardOnStack;
 
 public interface MagicTargetFilter {
 	
-    public static final MagicTargetFilter NONE=new MagicTargetFilter() {
+    public static final MagicTargetFilter ALL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			return false;
+			return true;
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
-			return false;
+			return true;
 		}
 	};
 	
