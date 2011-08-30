@@ -840,6 +840,20 @@ toughness=1
 ability=flying,can't block creatures without flying
 timing=main
 
+>Stingerfling Spider
+image=http://magiccards.info/scans/en/m12/197.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spider
+color=g
+converted=5
+cost={4}{G}
+power=2
+toughness=5
+ability=reach
+timing=main
+
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5
