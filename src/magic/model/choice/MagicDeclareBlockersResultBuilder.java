@@ -31,6 +31,19 @@ public class MagicDeclareBlockersResultBuilder {
 		this.defendingPlayer=defendingPlayer;
 		this.attackingPlayer=game.getOpponent(defendingPlayer);
 		this.fast=fast;
+		
+        // Caching for better speed and immediate mode for triggers.
+		game.setImmediate(true);
+		attackingPlayer.setCached(game,true);
+		defendingPlayer.setCached(game,true);
+		build();
+		game.setImmediate(false);
+		attackingPlayer.setCached(game,false);
+		defendingPlayer.setCached(game,false);
+	}
+
+	public Collection<Object> getResults() {
+		return results == null ? EMPTY_RESULT : results.getResults();
 	}
 	
     private void buildBlockersFast() {
@@ -279,18 +292,5 @@ public class MagicDeclareBlockersResultBuilder {
         } else {
 		    buildAttacker(0);
         }
-	}
-
-	public Collection<Object> buildResults() {
-		// Caching for better speed and immediate mode for triggers.
-		game.setImmediate(true);
-		attackingPlayer.setCached(game,true);
-		defendingPlayer.setCached(game,true);
-		results = null;
-		build();
-		game.setImmediate(false);
-		attackingPlayer.setCached(game,false);
-		defendingPlayer.setCached(game,false);
-		return results == null ? EMPTY_RESULT : results.getResults();
 	}
 }
