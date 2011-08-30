@@ -23,22 +23,21 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	private MagicTargetChoice targetChoice;
 
 	public MagicActivation(
-            final int index,
-            final MagicCondition conditions[],
-            final MagicActivationHints hints,
-            final String txt
-            ) {
+        final int index,
+        final MagicCondition conditions[],
+        final MagicActivationHints hints,
+        final String txt) {
         
-        //depends on the card
-        this.cardIndex = -1;
-        this.id = -1;
-		this.targetChoice = MagicTargetChoice.NONE;
-
         this.text = txt;
         this.index = index;
 		this.conditions=conditions;
 		this.hints=hints;
 		this.priority=hints.getTiming().getPriority();
+        
+        //depends on the card
+        this.cardIndex = -1;
+        this.id = -1;
+		this.targetChoice = MagicTargetChoice.NONE;
 	}
     
     public void setCardIndex(final int cardIndex) {
@@ -106,15 +105,14 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
            ) {
 			return false;
 		}
+
         for (final MagicCondition condition : conditions) {
             if (!condition.accept(game,source)) {
                 return false;
             }
         }
-		if (targetChoice == null) {
-			return true;
-		}
-		// Check for legal targets.
+		
+        // Check for legal targets.
 		final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
 		return game.hasLegalTargets(player,source,targetChoice,useTargetHints);
 	}
