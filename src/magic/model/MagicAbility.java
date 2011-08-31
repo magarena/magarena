@@ -122,6 +122,6 @@ public enum MagicAbility {
 				return ability;
 			}
 		}
-		return null;
+        throw new RuntimeException("Unable to convert " + name + " to an ability");
 	}
 }
