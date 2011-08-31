@@ -242,13 +242,15 @@ public class MagicCardDefinition {
         } else if (obj instanceof MagicChangeCardDefinition) {
             final MagicChangeCardDefinition chg = (MagicChangeCardDefinition)obj;
             chg.change(this);
-            System.err.println("Modifying card definition " + getFullName());
+            System.err.println("Adding modification to " + getFullName());
             numModifications++;
+        /*
         } else if (obj instanceof MagicLocalVariable) {
             final MagicLocalVariable lvar = (MagicLocalVariable)obj;
             addLocalVariable(lvar);
             System.err.println("Adding local variable to " + getFullName());
             numLocalVariables++;
+        */
         } else {
             System.err.println("ERROR! Unable to add object to MagicCardDefinition");
             throw new RuntimeException("Unknown field in companion object");
