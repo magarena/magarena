@@ -4644,6 +4644,16 @@ cost={2}{R}{W}
 static=player
 timing=enchantment
 
+>Circle of Flame
+image=http://magiccards.info/scans/en/m12/127.jpg
+value=3
+rarity=U
+type=Enchantment
+color=r
+converted=2
+cost={1}{R}
+timing=enchantment
+
 >Hissing Miasma
 image=http://magiccards.info/scans/en/gp/51.jpg
 value=3
