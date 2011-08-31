@@ -12,6 +12,19 @@ toughness=1
 ability=unblockable
 timing=main
 
+>Ajani's Pridemate
+image=http://magiccards.info/scans/en/m11/3.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Cat,Soldier
+color=w
+converted=2
+cost={1}{W}
+power=2
+toughness=2
+timing=fmain
+
 >Akrasan Squire
 image=http://magiccards.info/scans/en/ala/1.jpg
 value=2
@@ -4652,6 +4665,16 @@ type=Enchantment
 color=r
 converted=2
 cost={1}{R}
+timing=enchantment
+
+>Ajani's Mantra
+image=http://magiccards.info/scans/en/m11/2.jpg
+value=3
+rarity=C
+type=Enchantment
+color=w
+converted=2
+cost={1}{W}
 timing=enchantment
 
 >Hissing Miasma
