@@ -51,7 +51,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 		leftButton.setFocusable(false);
 		buttonPanel.add(leftButton);
 		
-		numberButton=new JButton(""+count);
+		numberButton=new JButton(Integer.toString(count));
 		numberButton.setPreferredSize(BUTTON_DIMENSION);
 		numberButton.addActionListener(this);
 		numberButton.setFocusable(false);
@@ -76,13 +76,13 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 		if (source==leftButton) {
 			if (count>0) {
 				count--;
-				numberButton.setText(""+count);
+				numberButton.setText(Integer.toString(count));
 				numberButton.repaint();
 			}
 		} else if (source==rightButton) {
 			if (count<maximumCount) {
 				count++;
-				numberButton.setText(""+count);
+				numberButton.setText(Integer.toString(count));
 				numberButton.repaint();
 			}
 		} else {
