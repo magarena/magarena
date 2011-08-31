@@ -61,7 +61,7 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 	@Override
 	public void stateChanged(ChangeEvent e) {
 		final int selectedTab=tabSelector.getSelectedTab();
-		cardLayout.show(cardPanel,""+selectedTab);
+		cardLayout.show(cardPanel,Integer.toString(selectedTab));
 		update();
 	}
 }
