@@ -425,7 +425,7 @@ public class MagicGame {
 		}
 	}
 
-	/** Tells gameplay that is can skip certain parts during AI processing. */
+	/** Tells gameplay that it can skip certain parts during AI processing. */
 	public boolean canSkip() {
         return stack.isEmpty() && artificial;
 	}
