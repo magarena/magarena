@@ -28,7 +28,6 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 	private final Color textColor;
 	
 	public DeckStatisticsViewer() {
-		
 		textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 		
 		setLayout(new BorderLayout());
@@ -90,7 +89,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		for (int index=0;index<CardStatistics.NR_OF_TYPES;index++) {
 			final int total=statistics.totalTypes[index];
 			if (total>0) {
-				final JLabel label=new JLabel(""+total);
+				final JLabel label=new JLabel(Integer.toString(total));
 				label.setForeground(textColor);
 				label.setIcon(CardStatistics.TYPE_ICONS.get(index));
 				label.setIconTextGap(4);
@@ -109,7 +108,6 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 							 
 		final MagicPlayerProfile profile=player.getProfile();
 		for (final MagicColor color : profile.getColors()) {
-			
 			final int index=color.ordinal();
 			final JLabel label=new JLabel(color.getManaType().getIcon(true));
 			label.setForeground(textColor);
@@ -122,14 +120,12 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		}
 		
 		for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
-			
-			curveLabels[index].setText(""+statistics.manaCurve[index]);
+			curveLabels[index].setText(Integer.toString(statistics.manaCurve[index]));
 		}
 		
 		linesPanel.removeAll();
 		linesPanel.setLayout(new GridLayout(lines.size(),0));
 		for (final JLabel line : lines) {
-			
 			line.setPreferredSize(new Dimension(0,25));
 			linesPanel.add(line);
 		}		
