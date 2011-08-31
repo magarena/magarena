@@ -5306,6 +5306,18 @@ power=1
 toughness=3
 timing=aura
 
+>Lifelink
+image=http://magiccards.info/scans/en/m12/24.jpg
+value=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+ability=lifelink
+timing=aura
+
 >Elephant Guide
 image=http://magiccards.info/scans/en/gvl/18.jpg
 value=4
