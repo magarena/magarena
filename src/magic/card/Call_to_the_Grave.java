@@ -1,8 +1,9 @@
 package magic.card;
 
-import java.util.Collection;
-
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicType;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -11,6 +12,8 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+
+import java.util.Collection;
 
 public class Call_to_the_Grave {
 	public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.AtUpkeep) {

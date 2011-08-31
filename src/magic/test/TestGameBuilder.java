@@ -2,7 +2,12 @@ package magic.test;
 
 import magic.data.CardDefinitions;
 import magic.data.TokenCardDefinitions;
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPutIntoPlayAction;
 

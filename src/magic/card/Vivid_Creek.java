@@ -8,7 +8,6 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicVividLandTrigger;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class Vivid_Creek {
     public static final MagicTrigger T = new MagicVividLandTrigger(); 

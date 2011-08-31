@@ -5,10 +5,12 @@ import magic.model.MagicTournament;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PlayerAvatarPanel;
 
-import javax.swing.*;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

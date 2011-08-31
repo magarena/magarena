@@ -1,6 +1,10 @@
 package magic.ui.viewer;
 
-import magic.model.*;
+import magic.model.MagicCardList;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicType;
 
 import java.util.ArrayList;
 import java.util.List;

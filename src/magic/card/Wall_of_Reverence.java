@@ -4,12 +4,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicPowerTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicPermanentAction;
 
 public class Wall_of_Reverence {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {

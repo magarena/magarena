@@ -1,6 +1,15 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicCounterType;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicLevelUpActivation;

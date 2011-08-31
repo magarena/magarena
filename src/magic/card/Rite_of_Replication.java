@@ -1,7 +1,14 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -9,7 +16,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicCopyTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Rite_of_Replication {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

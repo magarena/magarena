@@ -10,13 +10,35 @@ import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.viewer.*;
+import magic.ui.viewer.BattlefieldViewer;
+import magic.ui.viewer.CardViewer;
+import magic.ui.viewer.GameTournamentViewer;
+import magic.ui.viewer.HandGraveyardExileViewer;
+import magic.ui.viewer.ImageBattlefieldViewer;
+import magic.ui.viewer.ImageCombatViewer;
+import magic.ui.viewer.ImageHandGraveyardExileViewer;
+import magic.ui.viewer.ImageViewer;
+import magic.ui.viewer.LogBookViewer;
+import magic.ui.viewer.PlayerViewer;
+import magic.ui.viewer.StackCombatViewer;
+import magic.ui.viewer.StackViewer;
+import magic.ui.viewer.ViewerInfo;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.ZoneBackgroundLabel;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+import javax.swing.JToggleButton;
+import javax.swing.KeyStroke;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 
 public final class GamePanel extends JPanel {
 

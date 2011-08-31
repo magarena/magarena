@@ -1,6 +1,8 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLandPlayedAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;

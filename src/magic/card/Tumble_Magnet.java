@@ -1,15 +1,25 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.event.*;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicRemoveCounterEvent;
+import magic.model.event.MagicTapEvent;
+import magic.model.event.MagicTiming;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicPermanentAction;
 
 public class Tumble_Magnet {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(

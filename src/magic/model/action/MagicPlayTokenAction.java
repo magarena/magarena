@@ -1,6 +1,10 @@
 package magic.model.action;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 
 public class MagicPlayTokenAction extends MagicPutIntoPlayAction {
 

@@ -1,13 +1,17 @@
 package magic.card;
 
-import java.util.Collection;
-
-import magic.model.*;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
+
+import java.util.Collection;
 
 public class Dungrove_Elder {
 

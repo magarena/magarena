@@ -4,7 +4,7 @@ import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 
-import java.awt.*;
+import java.awt.Color;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;

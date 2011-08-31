@@ -5,13 +5,13 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Veteran_s_Reflexes {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

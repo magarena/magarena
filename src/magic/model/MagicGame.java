@@ -1,7 +1,15 @@
 package magic.model;
 
 import magic.data.GeneralConfig;
-import magic.model.action.*;
+import magic.model.action.MagicAction;
+import magic.model.action.MagicActionList;
+import magic.model.action.MagicAddEventAction;
+import magic.model.action.MagicExecuteFirstEventAction;
+import magic.model.action.MagicLogMarkerAction;
+import magic.model.action.MagicLoseGameAction;
+import magic.model.action.MagicMarkerAction;
+import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.choice.MagicDeclareBlockersResult;
@@ -15,10 +23,24 @@ import magic.model.phase.MagicStep;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicStack;
 import magic.model.stack.MagicTriggerOnStack;
-import magic.model.target.*;
-import magic.model.trigger.*;
+import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetHint;
+import magic.model.target.MagicTargetNone;
+import magic.model.target.MagicTargetType;
+import magic.model.trigger.MagicPermanentTrigger;
+import magic.model.trigger.MagicPermanentTriggerList;
+import magic.model.trigger.MagicPermanentTriggerMap;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class MagicGame {
 

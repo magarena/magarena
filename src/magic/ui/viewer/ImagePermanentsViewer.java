@@ -2,10 +2,14 @@ package magic.ui.viewer;
 
 import magic.ui.GameController;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.*;
+import javax.swing.JPanel;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 public class ImagePermanentsViewer extends JPanel {
 

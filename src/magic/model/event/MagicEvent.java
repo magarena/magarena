@@ -1,20 +1,28 @@
 package magic.model.event;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCopyMap;
+import magic.model.MagicCopyable;
+import magic.model.MagicGame;
+import magic.model.MagicMappable;
+import magic.model.MagicMessage;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.action.MagicCardAction;
+import magic.model.action.MagicCardOnStackAction;
+import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicPlayerAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicCardOnStackAction;
-import magic.model.action.MagicCardAction;
-import magic.model.action.MagicPlayerAction;
-import magic.model.action.MagicTargetAction;
-import magic.model.stack.MagicCardOnStack;
 
 import java.util.List;
 

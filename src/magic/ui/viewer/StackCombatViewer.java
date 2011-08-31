@@ -6,10 +6,11 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
-import javax.swing.*;
+import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
 
 public class StackCombatViewer extends JPanel implements ChangeListener {
 

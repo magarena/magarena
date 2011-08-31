@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -13,7 +14,6 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.action.MagicPermanentAction;
 
 import java.util.Collection;
 

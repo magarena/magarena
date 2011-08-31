@@ -5,12 +5,12 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicExileUntilEndOfTurnAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicExileTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Turn_to_Mist {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

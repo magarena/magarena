@@ -6,13 +6,13 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPreventDamageAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.action.MagicTargetAction;
 
 public class Withstand {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

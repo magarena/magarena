@@ -1,11 +1,17 @@
 package magic.model.stack;
 
-import magic.model.*;
+import magic.model.MagicCopyMap;
+import magic.model.MagicCopyable;
+import magic.model.MagicGame;
+import magic.model.MagicMappable;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 
 public abstract class MagicItemOnStack implements MagicTarget {
 	

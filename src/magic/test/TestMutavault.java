@@ -1,7 +1,11 @@
 
 package magic.test;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicPlayerDefinition;
+import magic.model.MagicPlayerProfile;
+import magic.model.MagicTournament;
 import magic.model.phase.MagicMainPhase;
 
 class TestMutavault extends TestGameBuilder {    

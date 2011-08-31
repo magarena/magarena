@@ -1,11 +1,21 @@
 package magic.model.choice;
 
-import magic.model.*;
+import magic.model.MagicCostManaType;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicRandom;
+import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.choice.ManaCostXChoicePanel;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
 
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {

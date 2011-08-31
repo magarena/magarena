@@ -5,6 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPlayAuraEvent;
@@ -14,7 +15,6 @@ import magic.model.target.MagicFirstStrikeTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicTargetAction;
 
 public class Galvanic_Arc {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(

@@ -1,6 +1,7 @@
 package magic.ui.resolution;
 
-import java.awt.*;
+import java.awt.Font;
+import java.awt.Rectangle;
 import java.util.HashMap;
 import java.util.Map;
 

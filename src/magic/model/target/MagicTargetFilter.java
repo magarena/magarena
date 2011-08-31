@@ -1,6 +1,14 @@
 package magic.model.target;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
 import magic.model.stack.MagicCardOnStack;
 
 public interface MagicTargetFilter {

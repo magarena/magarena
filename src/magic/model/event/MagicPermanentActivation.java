@@ -1,7 +1,11 @@
 package magic.model.event;
 
-import magic.data.CardDefinitions;
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;

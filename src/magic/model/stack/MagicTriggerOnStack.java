@@ -5,7 +5,7 @@ import magic.model.MagicCopyable;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 
 public class MagicTriggerOnStack extends MagicItemOnStack {
 

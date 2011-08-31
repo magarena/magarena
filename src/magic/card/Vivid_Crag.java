@@ -1,12 +1,12 @@
 package magic.card;
 
+import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicVividLandTrigger;
-import magic.model.MagicColor;
 
 import java.util.ArrayList;
 import java.util.Arrays;

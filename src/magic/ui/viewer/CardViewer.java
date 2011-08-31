@@ -11,8 +11,9 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.TransparentImagePanel;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+import java.awt.BorderLayout;
 import java.awt.image.BufferedImage;
 
 /**

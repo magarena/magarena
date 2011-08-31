@@ -6,12 +6,12 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPowerTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Soul_s_Majesty {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

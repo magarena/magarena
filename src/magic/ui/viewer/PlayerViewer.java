@@ -9,8 +9,12 @@ import magic.ui.widget.PanelButton;
 import magic.ui.widget.PlayerAvatarPanel;
 import magic.ui.widget.TexturedPanel;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
 import java.util.Set;
 
 public class PlayerViewer extends JPanel implements ChoiceViewer {

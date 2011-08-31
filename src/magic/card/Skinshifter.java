@@ -1,6 +1,13 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicSource;
+import magic.model.MagicSubType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;

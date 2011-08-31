@@ -1,6 +1,10 @@
 package magic.model.trigger;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.event.MagicEvent;

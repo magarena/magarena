@@ -2,7 +2,7 @@ package magic.data;
 
 import magic.MagicMain;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;

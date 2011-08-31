@@ -1,11 +1,14 @@
 package magic.card;
 
-import magic.model.*;
-import magic.model.action.MagicTapAction;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.MagicManaCost;
+import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
-import magic.model.event.*;
-import magic.model.target.MagicTapTargetPicker;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicPayManaCostTapEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTapCreatureActivation;
+import magic.model.event.MagicTiming;
 
 public class Gideon_s_Lawkeeper {
 	public static final MagicPermanentActivation A1 = new MagicTapCreatureActivation(

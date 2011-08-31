@@ -1,11 +1,14 @@
 package magic.model.event;
 
-import magic.model.*;
-import magic.model.condition.MagicCondition;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.action.MagicPermanentAction;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
+import magic.model.target.MagicWeakenTargetPicker;
 
 public abstract class MagicWeakenCreatureActivation extends MagicPermanentActivation {
 		

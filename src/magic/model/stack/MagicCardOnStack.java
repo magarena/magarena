@@ -1,8 +1,15 @@
 package magic.model.stack;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicCopyMap;
+import magic.model.MagicCopyable;
+import magic.model.MagicLocationType;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPlayer;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 import java.util.Arrays;
 
 public class MagicCardOnStack extends MagicItemOnStack {

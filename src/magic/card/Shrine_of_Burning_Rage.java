@@ -1,17 +1,32 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicColor;
+import magic.model.MagicCounterType;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.event.*;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicSacrificeEvent;
+import magic.model.event.MagicTapEvent;
+import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicTargetAction;
 
 public class Shrine_of_Burning_Rage {
 

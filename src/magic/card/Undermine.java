@@ -3,6 +3,7 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
+import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicMoveCardAction;
@@ -10,7 +11,6 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicCardOnStackAction;
 
 public class Undermine {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

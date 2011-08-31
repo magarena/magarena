@@ -6,11 +6,11 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicPlayerAction;
 
 public class Sign_in_Blood {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

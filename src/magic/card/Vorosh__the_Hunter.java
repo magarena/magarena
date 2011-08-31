@@ -1,6 +1,11 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCounterType;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;

@@ -1,13 +1,22 @@
 package magic.data;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicManaCost;
+import magic.model.MagicStaticType;
+import magic.model.MagicType;
 import magic.model.event.MagicTiming;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  * Load card definitions from cards.txt and cards2.txt

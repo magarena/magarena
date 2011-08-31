@@ -1,7 +1,12 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicPayManaCostResult;
@@ -11,7 +16,6 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicTargetAction;
 
 public class Flameblast_Dragon {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {

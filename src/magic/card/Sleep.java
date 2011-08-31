@@ -1,8 +1,13 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -10,7 +15,6 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.action.MagicPlayerAction;
 
 import java.util.Collection;
 

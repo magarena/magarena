@@ -2,7 +2,11 @@ package magic.model;
 
 import magic.MagicMain;
 import magic.ai.MagicAI;
-import magic.data.*;
+import magic.data.CubeDefinitions;
+import magic.data.DeckGenerator;
+import magic.data.DeckUtils;
+import magic.data.GeneralConfig;
+import magic.data.TournamentConfig;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

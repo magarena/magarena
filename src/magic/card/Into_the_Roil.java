@@ -1,8 +1,15 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -10,7 +17,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Into_the_Roil {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

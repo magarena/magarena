@@ -1,6 +1,10 @@
 package magic.model.choice;
 
-import magic.model.*;
+import magic.model.MagicColor;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;

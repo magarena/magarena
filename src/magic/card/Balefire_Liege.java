@@ -1,15 +1,19 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicColor;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.target.MagicTarget;
-import magic.model.action.MagicPlayerAction;
 
 public class Balefire_Liege {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {

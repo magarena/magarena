@@ -1,13 +1,22 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.event.*;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicExileEvent;
+import magic.model.event.MagicPayManaCostTapEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTiming;
 import magic.model.target.MagicExileTargetPicker;
-import magic.model.target.MagicTarget;
-import magic.model.action.MagicPermanentAction;
 
 public class Brittle_Effigy {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(

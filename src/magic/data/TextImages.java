@@ -1,6 +1,6 @@
 package magic.data;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 import java.util.HashMap;
 import java.util.Map;
 

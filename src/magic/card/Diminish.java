@@ -1,15 +1,19 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.action.MagicPermanentAction;
 
 public class Diminish {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

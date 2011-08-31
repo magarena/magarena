@@ -1,6 +1,12 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.choice.MagicMayChoice;
@@ -9,7 +15,6 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicCardAction;
 
 public class Teneb__the_Harvester {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {

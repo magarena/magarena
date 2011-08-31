@@ -6,12 +6,11 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.action.MagicChangePlayerStateAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTarget;
-import magic.model.action.MagicPlayerAction;
 
 public class Exhaustion {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

@@ -6,9 +6,11 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TextLabel;
 
-import javax.swing.*;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.border.Border;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
 import java.util.Set;
 
 public class PermanentButton extends PanelButton implements ChoiceViewer {

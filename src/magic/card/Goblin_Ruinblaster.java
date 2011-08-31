@@ -1,7 +1,13 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicDestroyAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicKickerChoice;
@@ -12,7 +18,6 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Goblin_Ruinblaster {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

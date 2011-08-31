@@ -4,10 +4,10 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicSacrificeTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
 

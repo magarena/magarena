@@ -5,7 +5,7 @@ import magic.model.choice.MagicBuilderManaCost;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicManaCostCondition;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -1,10 +1,18 @@
 package magic.model.choice;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCardList;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class MagicCardChoice extends MagicChoice {
 

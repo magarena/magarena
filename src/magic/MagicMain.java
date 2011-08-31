@@ -7,7 +7,7 @@ import magic.data.KeywordDefinitions;
 import magic.model.variable.MagicStaticLocalVariable;
 import magic.ui.MagicFrame;
 
-import javax.swing.*;
+import javax.swing.SwingUtilities;
 import java.io.File;
 
 public class MagicMain {

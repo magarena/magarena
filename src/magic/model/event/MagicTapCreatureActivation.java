@@ -1,11 +1,13 @@
 package magic.model.event;
 
-import magic.model.*;
-import magic.model.condition.MagicCondition;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.action.MagicTapAction;
-import magic.model.target.MagicTapTargetPicker;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicTapAction;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.condition.MagicCondition;
+import magic.model.target.MagicTapTargetPicker;
 
 public abstract class MagicTapCreatureActivation extends MagicPermanentActivation {
 		

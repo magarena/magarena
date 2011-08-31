@@ -9,7 +9,11 @@ import magic.ui.GameController;
 import magic.ui.choice.MayChoicePanel;
 import magic.ui.choice.MultiKickerChoicePanel;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 // Kicker choice results : 0 = other choice, 1 = number of times kicked, 2 = kicker mana cost result
 public class MagicKickerChoice extends MagicChoice {

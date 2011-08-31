@@ -3,8 +3,11 @@ package magic.ui.widget;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
 
 public class TitleBar extends JPanel {
 

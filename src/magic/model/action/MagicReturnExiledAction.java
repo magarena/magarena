@@ -1,6 +1,10 @@
 package magic.model.action;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCardList;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPlayer;
 
 public class MagicReturnExiledAction extends MagicAction {
 

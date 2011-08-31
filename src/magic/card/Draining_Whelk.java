@@ -3,6 +3,7 @@ package magic.card;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
@@ -10,8 +11,6 @@ import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.target.MagicTarget;
-import magic.model.action.MagicCardOnStackAction;
 
 public class Draining_Whelk {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {

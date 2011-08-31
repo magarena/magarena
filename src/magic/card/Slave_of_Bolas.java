@@ -1,13 +1,22 @@
 package magic.card;
 
-import magic.model.*;
-import magic.model.action.*;
+import magic.model.MagicAbility;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
+import magic.model.action.MagicChangeStateAction;
+import magic.model.action.MagicGainControlAction;
+import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicSetAbilityAction;
+import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicExileTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Slave_of_Bolas {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {

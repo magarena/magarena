@@ -4,7 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.stack.MagicItemOnStack;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 
 public class StackViewerInfo {
 

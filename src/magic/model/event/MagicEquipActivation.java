@@ -1,11 +1,15 @@
 package magic.model.event;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.MagicAttachEquipmentAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicEquipTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 

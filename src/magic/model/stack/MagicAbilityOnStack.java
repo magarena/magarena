@@ -6,7 +6,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicPermanentActivation;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 
 public class MagicAbilityOnStack extends MagicItemOnStack {
 		

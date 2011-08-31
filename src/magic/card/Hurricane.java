@@ -1,6 +1,11 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicEvent;

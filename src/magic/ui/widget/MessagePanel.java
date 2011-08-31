@@ -5,8 +5,11 @@ import magic.model.MagicMessage;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
 
 public class MessagePanel extends JPanel {
 

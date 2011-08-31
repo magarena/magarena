@@ -1,7 +1,14 @@
 package magic.model.variable;
 
 import magic.data.CardDefinitions;
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicColor;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicSubType;
 
 import java.util.EnumSet;
 

@@ -4,14 +4,13 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicBecomeTargetPicker;
-import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicPermanentAction;
 
 public class Aven_Mimeomancer {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {

@@ -1,6 +1,10 @@
 package magic.model.action;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
 
 public class MagicDestroyAction extends MagicAction {
 	

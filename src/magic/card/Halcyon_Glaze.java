@@ -1,6 +1,12 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;

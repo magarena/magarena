@@ -1,6 +1,13 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.variable.MagicDummyLocalVariable;

@@ -1,6 +1,10 @@
 package magic.model.target;
 
-import magic.model.*;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
 
 public class MagicEquipTargetPicker extends MagicTargetPicker {
 	

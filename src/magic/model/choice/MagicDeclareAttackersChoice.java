@@ -1,6 +1,12 @@
 package magic.model.choice;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
+import magic.model.MagicRandom;
+import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 

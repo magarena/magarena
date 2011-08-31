@@ -1,9 +1,13 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicSource;
 import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicTapAction;
 import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;

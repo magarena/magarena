@@ -1,15 +1,29 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicSource;
+import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCopyCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.event.*;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicLevelUpActivation;
+import magic.model.event.MagicPayManaCostTapEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
-import magic.model.action.MagicCardOnStackAction;
 
 public class Echo_Mage {
 	

@@ -1,6 +1,12 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicPutItemOnStackAction;

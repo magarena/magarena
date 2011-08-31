@@ -1,13 +1,16 @@
 package magic.model;
 
-import java.io.*;
-import java.util.Date;
-import java.text.SimpleDateFormat;
-
-import magic.model.action.MagicAction;
-import magic.model.stack.MagicItemOnStack;
 import magic.MagicMain;
 import magic.data.FileIO;
+import magic.model.action.MagicAction;
+import magic.model.stack.MagicItemOnStack;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MagicGameReport {
 

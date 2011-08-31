@@ -1,7 +1,13 @@
 package magic.model.action;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicPersistTrigger;

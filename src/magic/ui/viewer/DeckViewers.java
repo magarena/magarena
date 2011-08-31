@@ -7,10 +7,11 @@ import magic.ui.MagicFrame;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
-import javax.swing.*;
+import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
 
 public class DeckViewers extends JPanel implements ChangeListener {
 

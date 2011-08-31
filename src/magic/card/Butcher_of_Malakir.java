@@ -1,6 +1,10 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicType;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;

@@ -4,8 +4,8 @@ import magic.data.AvatarImages;
 import magic.data.IconImages;
 import magic.ui.widget.FontsAndBorders;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;

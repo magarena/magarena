@@ -1,6 +1,10 @@
 package magic.model.event;
 
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicCardList;
+import magic.model.MagicCopyMap;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 
 import java.util.HashMap;
 import java.util.Set;

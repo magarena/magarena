@@ -1,20 +1,19 @@
 package magic.card;
 
+import magic.model.MagicCard;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
-import magic.model.MagicCard;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
-import magic.model.action.MagicPlayerAction;
 
 public class Taste_of_Blood {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {

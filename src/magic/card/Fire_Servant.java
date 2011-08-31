@@ -1,6 +1,10 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicColor;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;

@@ -1,14 +1,24 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicExileUntilEndOfTurnAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.event.*;
+import magic.model.condition.MagicCondition;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicSacrificePermanentEvent;
+import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.condition.MagicCondition;
 
 public class Ghost_Council_of_Orzhova {
 	public static final MagicPermanentActivation A =new MagicPermanentActivation(

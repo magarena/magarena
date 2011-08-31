@@ -5,6 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -12,7 +13,6 @@ import magic.model.event.MagicEventAction;
 import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.action.MagicPermanentAction;
 
 public class Doomgape {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {

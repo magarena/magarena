@@ -1,8 +1,8 @@
 package magic.card;
 
+import magic.model.MagicCard;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
-import magic.model.MagicCard;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;

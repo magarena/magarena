@@ -1,7 +1,12 @@
 package magic.card;
 
 import magic.data.TokenCardDefinitions;
-import magic.model.*;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPlayer;
+import magic.model.MagicType;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;

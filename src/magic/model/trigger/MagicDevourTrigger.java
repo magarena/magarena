@@ -1,8 +1,13 @@
 package magic.model.trigger;
 
-import magic.model.*;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicType;
 import magic.model.action.MagicAddEventAction;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -11,7 +16,6 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
-import magic.model.action.MagicPermanentAction;
 
 public class MagicDevourTrigger extends MagicTrigger {
 

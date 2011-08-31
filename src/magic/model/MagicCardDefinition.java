@@ -2,7 +2,17 @@ package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.data.IconImages;
-import magic.model.event.*;
+import magic.model.event.MagicActivation;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicCardActivation;
+import magic.model.event.MagicCardEvent;
+import magic.model.event.MagicEquipActivation;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayCardEvent;
+import magic.model.event.MagicSpellCardEvent;
+import magic.model.event.MagicTapManaActivation;
+import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicTrigger;
@@ -13,9 +23,12 @@ import magic.model.variable.MagicStaticLocalVariable;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.*;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.EnumSet;
 import java.util.List;
 
 public class MagicCardDefinition {

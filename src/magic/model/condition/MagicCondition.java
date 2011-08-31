@@ -1,6 +1,14 @@
 package magic.model.condition;
 
-import magic.model.*;
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
 
 public interface MagicCondition {
 

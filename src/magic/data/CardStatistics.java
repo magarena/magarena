@@ -4,7 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Collection;

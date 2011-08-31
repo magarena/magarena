@@ -2,7 +2,7 @@ package magic.model;
 
 import magic.data.TextImages;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 import java.util.Arrays;
 import java.util.List;
 

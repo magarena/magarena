@@ -2,9 +2,9 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicStackChangeTargetsEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.choice.MagicTargetChoice;
 
 public class MagicCopyCardOnStackAction extends MagicAction {
 

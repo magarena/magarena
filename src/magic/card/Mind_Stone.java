@@ -1,9 +1,23 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicManaType;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
-import magic.model.event.*;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicSacrificeEvent;
+import magic.model.event.MagicTapEvent;
+import magic.model.event.MagicTapManaActivation;
+import magic.model.event.MagicTiming;
 
 import java.util.Arrays;
 

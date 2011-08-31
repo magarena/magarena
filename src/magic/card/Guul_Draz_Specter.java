@@ -1,6 +1,10 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
 import magic.model.trigger.MagicSpecterTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.variable.MagicDummyLocalVariable;

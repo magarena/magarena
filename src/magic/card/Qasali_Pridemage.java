@@ -1,12 +1,20 @@
 package magic.card;
 
-import magic.model.*;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.MagicDestroyAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.event.*;
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicPayManaCostSacrificeEvent;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Qasali_Pridemage {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(

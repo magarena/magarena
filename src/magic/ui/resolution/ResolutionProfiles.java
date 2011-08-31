@@ -1,6 +1,6 @@
 package magic.ui.resolution;
 
-import java.awt.*;
+import java.awt.Dimension;
 
 public class ResolutionProfiles {
 

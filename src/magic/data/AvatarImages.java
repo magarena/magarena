@@ -3,7 +3,7 @@ package magic.data;
 import magic.MagicMain;
 import magic.ui.theme.PlayerAvatar;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Vector;

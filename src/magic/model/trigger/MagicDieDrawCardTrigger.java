@@ -1,11 +1,10 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
-import magic.model.event.MagicEvent;
+import magic.model.MagicPermanent;
 import magic.model.event.MagicDrawEvent;
+import magic.model.event.MagicEvent;
 
 //When C is put into a graveyard from the battlefield, you draw a card.
 public class MagicDieDrawCardTrigger {

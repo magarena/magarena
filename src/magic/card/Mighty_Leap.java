@@ -6,13 +6,13 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicFlyingTargetPicker;
-import magic.model.action.MagicPermanentAction;
 
 public class Mighty_Leap {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
