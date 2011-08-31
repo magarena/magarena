@@ -10,7 +10,6 @@ public class MagicSingleScoreRanking implements MagicScoreRanking {
 	private int bestScore;
 	
 	public MagicSingleScoreRanking(final boolean best) {
-		
 		this.best=best;
 		result=null;
 		bestScore=best?Integer.MIN_VALUE:Integer.MAX_VALUE;
@@ -18,20 +17,17 @@ public class MagicSingleScoreRanking implements MagicScoreRanking {
 
 	@Override
 	public boolean addScore(int score) {
-
 		return best?score>bestScore:score<bestScore;
 	}
 
 	@Override
 	public void addScoreResult(MagicScoreResult result) {
-
 		this.result=result;
 		bestScore=result.getScore();
 	}
 
 	@Override
 	public Collection<Object> getResults() {
-
 		return Collections.<Object>singletonList(result);
 	}
 }
