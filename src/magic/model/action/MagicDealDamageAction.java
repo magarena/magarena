@@ -18,11 +18,12 @@ public class MagicDealDamageAction extends MagicAction {
 	private MagicTarget target;
 	private int oldDamage;
 	private int oldPrevent;
+    private final int UNINIT = Integer.MIN_VALUE;
 	
 	public MagicDealDamageAction(final MagicDamage damage) {
 		this.damage=damage;
-		oldDamage=0;
-		oldPrevent=0;
+        oldDamage=UNINIT;
+		oldPrevent=UNINIT;
 	}
 
 	private int preventDamage(final MagicGame game,int amount) {
@@ -106,11 +107,11 @@ public class MagicDealDamageAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		if (oldDamage!=0) {
+		if (oldDamage!=UNINIT) {
 			final MagicPermanent targetPermanent=(MagicPermanent)target;
 			targetPermanent.setDamage(oldDamage);
 		}
-		if (oldPrevent!=0) {
+		if (oldPrevent!=UNINIT) {
 			target.setPreventDamage(oldPrevent);
 		}
 	}
