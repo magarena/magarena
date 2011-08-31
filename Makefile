@@ -32,6 +32,17 @@ themes: \
 	release/mods/redfire_theme.zip \
 	release/mods/whiteangel_theme.zip
 
+warnings.txt: $(MAG)
+	~/App/findbugs-1.3.9/bin/findbugs \
+			-textui \
+			-progress \
+			-sortByClass \
+			-emacs \
+			-effort:max \
+			-output $@ \
+			-sourcepath src \
+			build
+
 release/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
@@ -131,7 +142,7 @@ jar: $(MAG)
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain |& tee -a $*.log
+	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain >> $*.log 2>&1
 
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
