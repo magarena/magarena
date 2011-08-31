@@ -140,19 +140,12 @@ jar: $(MAG)
 %.g: $(MAG)
 	$(JAVA) -DrndSeed=$* magic.MagicMain |& tee $*.log
 
-%.t: $(MAG)
-	echo `hg id -n` > $*.log
-	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain >> $*.log 2>&1
+test: $(MAG)
+	echo `hg id -n` > `date +%s`.log
+	$(JAVA) -DrndSeed=`date +%s` -DselfMode magic.MagicMain >> `date +%s`.log 2>&1
 
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
-
-test: $(MAG)
-	$(JAVA) -DrndSeed=123 magic.DeckStrCal \
-	--deck1 release/decks/LSK_G.dec \
-	--ai1 VEGAS \
-	--deck2 release/decks/LSK_G.dec \
-	--ai2 RND --games 10 --strength 3
 
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@ 
