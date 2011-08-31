@@ -1407,6 +1407,71 @@ toughness=4
 ability=double strike
 timing=main
 
+>Alabaster Mage
+image=http://magiccards.info/scans/en/m12/2.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Wizard
+color=w
+converted=2
+cost={1}{W}
+power=2
+toughness=1
+timing=fmain
+
+>Azure Mage
+image=http://magiccards.info/scans/en/m12/45.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=2
+cost={1}{U}
+power=2
+toughness=1
+timing=fmain
+
+>Crimson Mage
+image=http://magiccards.info/scans/en/m12/129.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=r
+converted=2
+cost={R}
+power=2
+toughness=1
+timing=fmain
+
+>Jade Mage
+image=http://magiccards.info/scans/en/m12/181.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=2
+cost={2}{G}
+power=2
+toughness=1
+timing=fmain
+
+>Onyx Mage
+image=http://magiccards.info/scans/en/m12/103.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Wizard
+color=b
+converted=2
+cost={1}{B}
+power=2
+toughness=1
+timing=fmain
+
 >Meglonoth
 image=http://magiccards.info/scans/en/cfx/118.jpg
 value=5
