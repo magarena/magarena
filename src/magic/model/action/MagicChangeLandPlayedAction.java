@@ -12,11 +12,17 @@ public class MagicChangeLandPlayedAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-        game.decLandPlayed();
+        for (int i = change; i != 0; i -= Integer.signum(i)) {
+            if (i < 0) {
+                game.decLandPlayed();
+            } else {
+                game.incLandPlayed();
+            }
+        }
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
+        //undo done by MagicMarkerAction
 	}
 }
