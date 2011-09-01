@@ -72,13 +72,13 @@ public abstract class MagicTrigger implements MagicEventAction {
         throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
+        throw new RuntimeException("Did not override executeTrigger (MagicGraveyardTriggerData) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicCardOnStack) method");
+        throw new RuntimeException("Did not override executeTrigger (MagicItemOnStack) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicCardOnStack) method");
+        throw new RuntimeException("Did not override executeTrigger (MagicCard) method");
     }
 
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
