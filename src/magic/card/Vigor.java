@@ -19,9 +19,8 @@ public class Vigor {
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object data) {
+                final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();
-			final MagicDamage damage=(MagicDamage)data;
 			final MagicTarget target=damage.getTarget();
 			final int amount=damage.getAmount();
 			if (!damage.isUnpreventable() && 

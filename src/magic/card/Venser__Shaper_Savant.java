@@ -18,7 +18,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Venser__Shaper_Savant {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			return new MagicEvent(
                     permanent,
                     permanent.getController(),

@@ -20,8 +20,7 @@ public class Vorosh__the_Hunter {
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+                final MagicDamage damage) {
 			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
 				final MagicPlayer player=permanent.getController();
 				return new MagicEvent(

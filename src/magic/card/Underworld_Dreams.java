@@ -15,8 +15,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Underworld_Dreams {
     public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenDrawn) {
     	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-    		final MagicPlayer player = ((MagicCard)data).getOwner();
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
+    		final MagicPlayer player = data.getOwner();
     		if (permanent.getController() != player) {
     			return new MagicEvent(
     					permanent,

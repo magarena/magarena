@@ -21,8 +21,7 @@ public class Unquestioned_Authority {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,
-                final MagicPermanent permanent,
-                final Object data) {
+                final MagicPermanent permanent) {
 			final MagicPlayer player = permanent.getController();
 			return new MagicEvent(
                     permanent,

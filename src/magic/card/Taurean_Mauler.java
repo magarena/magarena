@@ -13,9 +13,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Taurean_Mauler {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
 			final MagicPlayer player=permanent.getController();
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data;
 			if (cardOnStack.getController()!=player) {
 				return new MagicEvent(
                         permanent,
