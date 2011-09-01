@@ -9,6 +9,7 @@ import magic.model.MagicPermanent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
+import magic.model.trigger.MagicGraveyardTriggerData;
 
 /** Lower priority values trigger before higher priority values. */
 public abstract class MagicTrigger implements MagicEventAction {
@@ -53,6 +54,9 @@ public abstract class MagicTrigger implements MagicEventAction {
 		return type.usesStack();
 	}
 	
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+        throw new RuntimeException("Did not override executeTrigger () method");
+    }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage data) {
         throw new RuntimeException("Did not override executeTrigger (MagicDamage) method");
     }
@@ -65,8 +69,8 @@ public abstract class MagicTrigger implements MagicEventAction {
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
         throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
     }
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-        throw new RuntimeException("Did not override executeTrigger () method");
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData data) {
+        throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
     }
 
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
@@ -80,6 +84,8 @@ public abstract class MagicTrigger implements MagicEventAction {
             return executeTrigger(game, permanent, (MagicCardOnStack)data);
         } else if (data instanceof MagicPermanent) {
             return executeTrigger(game, permanent, (MagicPermanent)data);
+        } else if (data instanceof MagicGraveyardTriggerData) {
+            return executeTrigger(game, permanent, (MagicGraveyardTriggerData)data);
         }
         throw new RuntimeException("Did not override executeTrigger (Object) method");
     }
