@@ -12,14 +12,12 @@ public class MagicChangeLifeAction extends MagicAction {
 	private final int life;
 	
 	public MagicChangeLifeAction(final MagicPlayer player,final int life) {
-	
 		this.player=player;
 		this.life=life;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		final int oldLife=player.getLife();
 		final int newLife=oldLife+life;
 		player.setLife(newLife);
