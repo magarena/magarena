@@ -13,7 +13,7 @@ public class MagicRefugeLandTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 		final MagicPlayer player = permanent.getController();
 		return new MagicEvent(
                 permanent,

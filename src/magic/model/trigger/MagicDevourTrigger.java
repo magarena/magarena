@@ -27,7 +27,7 @@ public class MagicDevourTrigger extends MagicTrigger {
 	}
 	
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
         final String name = getCardDefinition().getFullName();
 		final MagicPlayer player=permanent.getController();
         final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(

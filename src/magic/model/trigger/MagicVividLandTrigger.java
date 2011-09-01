@@ -14,7 +14,7 @@ public class MagicVividLandTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 		return new MagicEvent(
                 permanent,
                 permanent.getController(),

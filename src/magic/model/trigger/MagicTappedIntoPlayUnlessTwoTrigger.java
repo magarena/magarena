@@ -14,7 +14,7 @@ public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 		final MagicPlayer player=permanent.getController();
 		return (player.getNrOfPermanentsWithType(MagicType.Land) > 3) ?
 			new MagicEvent(

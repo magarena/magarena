@@ -17,8 +17,7 @@ public class MagicVeteranTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-		final MagicDamage damage=(MagicDamage)data;
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         if (!damage.getTarget().isPermanent()) {
             return null;
         }

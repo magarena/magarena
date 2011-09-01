@@ -15,8 +15,7 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-		final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 		final MagicCard card=triggerData.card;
 		return (!card.isToken()) ?
 			new MagicEvent(

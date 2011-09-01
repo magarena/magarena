@@ -19,9 +19,7 @@ public class MagicPersistTrigger extends MagicTrigger {
 	}
 	
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
-		final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 		if (triggerData.fromLocation==MagicLocationType.Play&&permanent.getCounters(MagicCounterType.MinusOne)==0) {
 			final MagicCard card=triggerData.card;
 			return new MagicEvent(permanent,permanent.getController(),new Object[]{card},this,

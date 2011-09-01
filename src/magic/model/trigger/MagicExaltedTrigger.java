@@ -16,9 +16,7 @@ public class MagicExaltedTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-
-		final MagicPermanent creature=(MagicPermanent)data;
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 		final MagicPlayer player=permanent.getController();
 		if (creature.getController()==player&&player.getNrOfAttackers()==1) {
 			return new MagicEvent(permanent,player,new Object[]{creature},this,creature.getName()+" gets +1/+1 until end of turn.");

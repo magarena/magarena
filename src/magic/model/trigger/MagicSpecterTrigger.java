@@ -20,8 +20,7 @@ public class MagicSpecterTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-		final MagicDamage damage = (MagicDamage)data;
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 		final MagicTarget target = damage.getTarget();
         final MagicTarget player = target;
         final String playerName = player.getName();

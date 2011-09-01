@@ -20,8 +20,7 @@ public class MagicRavnicaLandTrigger extends MagicTrigger {
 	@Override
 	public MagicEvent executeTrigger(
             final MagicGame game,
-            final MagicPermanent permanent,
-            final Object data) {
+            final MagicPermanent permanent) {
 		final MagicPlayer player=permanent.getController();
 		if (player.getLife()>1) {
 			return new MagicEvent(

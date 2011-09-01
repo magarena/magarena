@@ -19,7 +19,7 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicTrigger {
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 		final MagicPlayer player=permanent.getController();
 		return (!player.controlsPermanentWithSubType(subType1)&&!player.controlsPermanentWithSubType(subType2)) ?
             new MagicEvent(
