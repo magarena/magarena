@@ -11,6 +11,7 @@ import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
@@ -41,9 +42,7 @@ public class Frost_Titan {
                 final Object[] choiceResults) {
             final MagicSource source = (MagicSource)data[0];
             final MagicItemOnStack target = (MagicItemOnStack)data[1];
-            if (target != null) {
-                game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.TWO));
-            }
+            game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.TWO));
         }
     };
    
@@ -59,7 +58,6 @@ public class Frost_Titan {
                     this,
                     "Tap target permanent$. It doesn't untap during its controller's next untap step.");
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
@@ -78,18 +76,16 @@ public class Frost_Titan {
     public static final MagicTrigger T3 = new MagicTrigger(MagicTriggerType.WhenAttacks) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-            if (permanent == data) {
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        MagicTargetChoice.NEG_TARGET_PERMANENT,
-                        MagicEvent.NO_DATA,
-                        this,
-                        "Tap target permanent$. It doesn't untap during its controller's next untap step.");
-            }
-            return null;
+            return (permanent == data) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    MagicTargetChoice.NEG_TARGET_PERMANENT,
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Tap target permanent$. It doesn't untap during its controller's next untap step."):
+                null;
         }
-        
         @Override
         public void executeEvent(
                 final MagicGame game,
