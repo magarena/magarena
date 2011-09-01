@@ -799,6 +799,19 @@ power=1
 toughness=1
 timing=main
 
+>Goldenglow Moth
+image=http://magiccards.info/scans/en/m11/15.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=w
+converted=1
+cost={W}
+power=0
+toughness=1
+timing=main
+
 >Gravedigger
 image=http://magiccards.info/scans/en/m12/99.jpg
 value=3
