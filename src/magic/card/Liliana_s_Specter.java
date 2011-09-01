@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Liliana_s_Specter {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
         @Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
             final MagicPlayer opponent = game.getOpponent(player);
 			return new MagicEvent(

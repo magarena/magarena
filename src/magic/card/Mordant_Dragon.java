@@ -20,8 +20,7 @@ public class Mordant_Dragon {
 	
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final int amount=damage.getAmount();
 			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
 				new MagicEvent(

@@ -14,8 +14,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Lavaborn_Muse {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPlayer player=(MagicPlayer)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 			return (permanent.getController()!=player&&player.getHandSize()<3) ?
                 new MagicEvent(
                         permanent,

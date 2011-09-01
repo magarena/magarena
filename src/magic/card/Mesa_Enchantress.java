@@ -14,9 +14,9 @@ import magic.model.trigger.MagicTriggerType;
 public class Mesa_Enchantress {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
-			final MagicCard card=((MagicCardOnStack)data).getCard();
+			final MagicCard card=data.getCard();
 			return (card.getOwner() == player && card.getCardDefinition().isEnchantment()) ?
                 new MagicEvent(
                         permanent,

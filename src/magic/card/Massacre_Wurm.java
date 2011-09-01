@@ -16,7 +16,7 @@ import java.util.Collection;
 public class Massacre_Wurm {
 	public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			final MagicPlayer player=permanent.getController();
 			return new MagicEvent(
                     permanent,
@@ -41,9 +41,8 @@ public class Massacre_Wurm {
 
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player=permanent.getController();
-			final MagicPermanent otherPermanent=(MagicPermanent)data;
 			final MagicPlayer otherController=otherPermanent.getController();
 			return (otherController!=player&&otherPermanent.isCreature()) ?
 				new MagicEvent(

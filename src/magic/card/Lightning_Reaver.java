@@ -15,8 +15,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Lightning_Reaver {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
@@ -38,7 +37,7 @@ public class Lightning_Reaver {
 
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
             final int counters=permanent.getCounters(MagicCounterType.Charge);
 			return (player==data && counters>0) ?
