@@ -12,13 +12,11 @@ public class MagicDeclareAttackerAction extends MagicAction {
 	private boolean tap;
 	
 	public MagicDeclareAttackerAction(final MagicPermanent attacker) {
-		
 		this.attacker=attacker;
 	}
 
 	@Override
 	public void doAction(final MagicGame game) {
-
 		attacker.setState(MagicPermanentState.Attacking);
 		tap=!attacker.hasAbility(game,MagicAbility.Vigilance)&&!attacker.isTapped();
 		if (tap) {
@@ -30,7 +28,6 @@ public class MagicDeclareAttackerAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		attacker.clearState(MagicPermanentState.Attacking);
 		if (tap) {
 			attacker.clearState(MagicPermanentState.Tapped);
