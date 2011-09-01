@@ -41,8 +41,8 @@ public class Raging_Ravine {
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object data) {
-			if (permanent == data && permanent.isCreature()) {
+                final MagicPermanent creature) {
+			if (permanent == creature && permanent.isCreature()) {
 				return new MagicEvent(
                         permanent,
                         permanent.getController(),

@@ -24,7 +24,7 @@ public class Victory_s_Herald {
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object data) {
+                final MagicPermanent data) {
 			if (permanent==data) {
 				final MagicPlayer player = permanent.getController();
 				return new MagicEvent(

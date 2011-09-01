@@ -15,8 +15,8 @@ import java.util.Collection;
 public class Goblin_Piledriver {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			return (permanent==data) ?
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+			return (permanent==creature) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

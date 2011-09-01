@@ -15,8 +15,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Circle_of_Flame {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent creature = (MagicPermanent)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer controller = creature.getController();
 			return (controller != permanent.getController() &&
 					!creature.hasAbility(game,MagicAbility.Flying)) ?

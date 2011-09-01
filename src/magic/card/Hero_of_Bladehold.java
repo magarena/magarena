@@ -13,9 +13,9 @@ import magic.model.trigger.MagicTriggerType;
 public class Hero_of_Bladehold {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();
-			return (permanent==data) ?
+			return (permanent==creature) ?
                 new MagicEvent(
                         permanent,
                         player,

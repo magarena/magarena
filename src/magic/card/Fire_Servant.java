@@ -12,8 +12,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Fire_Servant {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,3) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicSource source=damage.getSource();
 			if (source.getController()==permanent.getController()&&source.isSpell()&&
 				MagicColor.Red.hasColor(source.getColorFlags())&&source.getCardDefinition().isSpell()) {

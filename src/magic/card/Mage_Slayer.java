@@ -13,10 +13,10 @@ import magic.model.trigger.MagicTriggerType;
 public class Mage_Slayer {
     public static final MagicTrigger T =new MagicTrigger(MagicTriggerType.WhenAttacks,1) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPermanent equippedCreature=permanent.getEquippedCreature();
             final MagicPlayer player=permanent.getController();
-			return (equippedCreature!=null&&equippedCreature==data) ?
+			return (equippedCreature!=null&&equippedCreature==creature) ?
                 new MagicEvent(
                         permanent,
                         player,
