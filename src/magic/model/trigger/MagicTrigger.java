@@ -3,7 +3,10 @@ package magic.model.trigger;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicDamage;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 
@@ -50,5 +53,29 @@ public abstract class MagicTrigger implements MagicEventAction {
 		return type.usesStack();
 	}
 	
-	public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data);
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage data) {
+        throw new RuntimeException("Did not override executeTrigger (MagicDamage) method");
+    }
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+        throw new RuntimeException("Did not override executeTrigger (MagicPlayer) method");
+    }
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+        throw new RuntimeException("Did not override executeTrigger (MagicCardOnStack) method");
+    }
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
+    }
+
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+        if (data instanceof MagicDamage) {
+            return executeTrigger(game, permanent, (MagicDamage)data);
+        } else if (data instanceof MagicPlayer) {
+            return executeTrigger(game, permanent, (MagicPlayer)data);
+        } else if (data instanceof MagicCardOnStack) {
+            return executeTrigger(game, permanent, (MagicCardOnStack)data);
+        } else if (data instanceof MagicPermanent) {
+            return executeTrigger(game, permanent, (MagicPermanent)data);
+        }
+        throw new RuntimeException("Did not override executeTrigger (Object) method");
+    }
 }
