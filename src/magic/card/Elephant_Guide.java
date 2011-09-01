@@ -20,7 +20,7 @@ public class Elephant_Guide {
 
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent.getEnchantedCreature()==data) {
 				final MagicPlayer player=permanent.getController();
 				return new MagicEvent(

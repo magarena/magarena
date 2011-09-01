@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Ezuri_s_Archers {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBlocks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
 			return (permanent==data && 
                     blocked!=null &&

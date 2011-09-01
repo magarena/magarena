@@ -13,8 +13,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Dread {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();
 			return (damage.getTarget()==player && 
                     damage.getSource().isCreature()) ?

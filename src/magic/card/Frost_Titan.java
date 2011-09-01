@@ -20,8 +20,7 @@ public class Frost_Titan {
     //counter opponent spell or ability unless its controller pay {2}
     public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenTargeted) {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-            final MagicItemOnStack target = (MagicItemOnStack)data;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
             if (target.containsInChoiceResults(permanent) &&
                 target.getController() != permanent.getController()) {
                 return new MagicEvent(

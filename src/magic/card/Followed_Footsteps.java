@@ -19,7 +19,7 @@ public class Followed_Footsteps {
 
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
 			if (player==data && enchantedCreature!=null) {

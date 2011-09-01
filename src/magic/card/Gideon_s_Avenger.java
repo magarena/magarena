@@ -12,10 +12,10 @@ import magic.model.trigger.MagicTriggerType;
 public class Gideon_s_Avenger {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBecomesTapped) {
     	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-    		final MagicPlayer otherController = ((MagicPermanent)data).getController();
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+    		final MagicPlayer otherController = data.getController();
     		final MagicPlayer player = permanent.getController();
-    		return (otherController != player && ((MagicPermanent)data).isCreature()) ?
+    		return (otherController != player && data.isCreature()) ?
                 new MagicEvent(
                         permanent,
                         player,

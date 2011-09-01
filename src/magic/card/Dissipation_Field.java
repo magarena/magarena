@@ -14,9 +14,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Dissipation_Field {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();
-			final MagicDamage damage=(MagicDamage)data;
 			final MagicSource source=damage.getSource();
 			return (damage.getTarget()==player&&source.isPermanent()) ?
                 new MagicEvent(
