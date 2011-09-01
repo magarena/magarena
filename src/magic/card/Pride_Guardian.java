@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Pride_Guardian {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBlocks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent == data) {
 				if (permanent.getBlockedCreature() != null) {
 					final MagicPlayer player = permanent.getController();

@@ -13,9 +13,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Promise_of_Bunrei {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player=permanent.getController();
-			final MagicPermanent otherPermanent=(MagicPermanent)data;
             return (otherPermanent.isCreature()&&otherPermanent.getController()==player) ?
 				new MagicEvent(
                         permanent,

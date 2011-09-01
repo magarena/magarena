@@ -12,7 +12,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Pelakka_Wurm {
     public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			final MagicPlayer player=permanent.getController();
 			return new MagicEvent(
                     permanent,

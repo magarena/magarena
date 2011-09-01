@@ -13,8 +13,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Mycoid_Shepherd {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
@@ -36,9 +35,8 @@ public class Mycoid_Shepherd {
 
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player=permanent.getController();
-			final MagicPermanent otherPermanent=(MagicPermanent)data;
 			return (otherPermanent!=permanent &&
                     otherPermanent.getController()==player &&
                     otherPermanent.isCreature() && 

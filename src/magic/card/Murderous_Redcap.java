@@ -15,7 +15,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Murderous_Redcap {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			final int power=permanent.getPower(game);
 			return new MagicEvent(
                     permanent,

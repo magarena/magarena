@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -18,7 +19,7 @@ public class Narcolepsy {
 
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
             return (enchantedCreature!=null&&!enchantedCreature.isTapped()) ?
                 new MagicEvent(

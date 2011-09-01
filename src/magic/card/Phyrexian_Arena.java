@@ -12,7 +12,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Phyrexian_Arena {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			return (player==data) ?
                 new MagicEvent(
