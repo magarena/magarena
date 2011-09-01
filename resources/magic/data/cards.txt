@@ -285,6 +285,19 @@ toughness=2
 ability=first strike,protection from white
 timing=main
 
+>Blinding Mage
+image=http://magiccards.info/scans/en/m11/8.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=w
+converted=2
+cost={1}{W}
+power=1
+toughness=2
+timing=main
+
 >Blood Seeker
 image=http://magiccards.info/scans/en/m12/81.jpg
 value=2
