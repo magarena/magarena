@@ -63,7 +63,7 @@ public class Carnifex_Demon {
 
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			return new MagicEvent(
                     permanent,
                     permanent.getController(),

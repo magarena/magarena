@@ -49,7 +49,7 @@ public class Frost_Titan {
     //tap target permanent. It doesn't untap during its controller's next untap step.
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
             return new MagicEvent(
                     permanent,
                     permanent.getController(),
