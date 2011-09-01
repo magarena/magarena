@@ -65,9 +65,14 @@ public abstract class MagicTrigger implements MagicEventAction {
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
         throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
     }
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+        throw new RuntimeException("Did not override executeTrigger () method");
+    }
 
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-        if (data instanceof MagicDamage) {
+        if (data == null) {
+            return executeTrigger(game, permanent);
+        } else if (data instanceof MagicDamage) {
             return executeTrigger(game, permanent, (MagicDamage)data);
         } else if (data instanceof MagicPlayer) {
             return executeTrigger(game, permanent, (MagicPlayer)data);
