@@ -57,48 +57,57 @@ public abstract class MagicTrigger implements MagicEventAction {
 	}
 	
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-        throw new RuntimeException("Did not override executeTrigger () method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger () method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicDamage) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (MagicDamage) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicPlayer) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (MagicPlayer) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicCardOnStack) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (MagicCardOnStack) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (MagicPermanent) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicGraveyardTriggerData) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (MagicGraveyardTriggerData) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicItemOnStack) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (MagicItemOnStack) method");
     }
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-        throw new RuntimeException("Did not override executeTrigger (MagicCard) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (MagicCard) method");
     }
 
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-        if (data == null) {
-            return executeTrigger(game, permanent);
-        } else if (data instanceof MagicDamage) {
-            return executeTrigger(game, permanent, (MagicDamage)data);
-        } else if (data instanceof MagicPlayer) {
-            return executeTrigger(game, permanent, (MagicPlayer)data);
-        } else if (data instanceof MagicCardOnStack) {
-            return executeTrigger(game, permanent, (MagicCardOnStack)data);
-        } else if (data instanceof MagicPermanent) {
-            return executeTrigger(game, permanent, (MagicPermanent)data);
-        } else if (data instanceof MagicGraveyardTriggerData) {
-            return executeTrigger(game, permanent, (MagicGraveyardTriggerData)data);
-        } else if (data instanceof MagicItemOnStack) {
-            return executeTrigger(game, permanent, (MagicItemOnStack)data);
-        } else if (data instanceof MagicCard) {
-            return executeTrigger(game, permanent, (MagicCard)data);
+        switch (type) {
+	        case WhenComesIntoPlay:
+                return executeTrigger(game, permanent);
+	        case WhenPutIntoGraveyard:
+                return executeTrigger(game, permanent, (MagicGraveyardTriggerData)data);
+            case WhenTargeted:
+                return executeTrigger(game, permanent, (MagicItemOnStack)data);
+	        case WhenSpellIsPlayed:
+                return executeTrigger(game, permanent, (MagicCardOnStack)data);
+	        case WhenDiscarded:
+            case WhenDrawn:
+                return executeTrigger(game, permanent, (MagicCard)data);
+            case WhenDamageIsDealt:
+	        case IfDamageWouldBeDealt:
+                return executeTrigger(game, permanent, (MagicDamage)data);
+	        case AtUpkeep:
+	        case AtEndOfTurn:
+	        case WhenLifeIsGained:
+                return executeTrigger(game, permanent, (MagicPlayer)data);
+            case WhenBecomesTapped:
+            case WhenOtherComesIntoPlay:
+            case WhenOtherPutIntoGraveyardFromPlay:
+            case WhenAttacks:
+            case WhenBlocks:
+                return executeTrigger(game, permanent, (MagicPermanent)data);
         }
-        throw new RuntimeException("Did not override executeTrigger (Object) method");
+        throw new RuntimeException(getClass() + " did not override executeTrigger (Object) method");
     }
 }

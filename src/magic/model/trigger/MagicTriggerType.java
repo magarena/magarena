@@ -16,7 +16,7 @@ public enum MagicTriggerType {
 	WhenAttacks,            // permanent
 	WhenBlocks,             // permanent
     WhenTargeted,           // permanent
-	IfDamageWouldBeDealt,   // damage
+	IfDamageWouldBeDealt,   // item on stack
 	;
 	
 	public boolean usesStack() {
