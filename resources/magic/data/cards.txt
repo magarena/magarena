@@ -760,6 +760,19 @@ power=1
 toughness=1
 timing=main
 
+>Goblin Balloon Brigade
+image=http://magiccards.info/scans/en/m11/140.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=1
+cost={R}
+power=1
+toughness=1
+timing=main
+
 >Goblin Fireslinger
 image=http://magiccards.info/scans/en/m12/139.jpg
 value=2
