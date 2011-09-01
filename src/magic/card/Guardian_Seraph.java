@@ -11,9 +11,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Guardian_Seraph {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,5) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();
-			final MagicDamage damage=(MagicDamage)data;
 			final int amount=damage.getAmount();
 			if (!damage.isUnpreventable()&&amount>0&&damage.getSource().getController()!=player&&damage.getTarget()==player) {
 				// Prevention effect.

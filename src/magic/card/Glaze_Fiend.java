@@ -11,8 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Glaze_Fiend {
 	public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent otherPermanent = (MagicPermanent)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
             		otherPermanent.isArtifact() &&

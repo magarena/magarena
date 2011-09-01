@@ -26,8 +26,8 @@ public class Kederekt_Parasite {
 
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDrawn) {
     	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-    		final MagicPlayer player = ((MagicCard)data).getOwner();
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
+    		final MagicPlayer player = data.getOwner();
     		if (permanent.getController() != player && isValid(permanent)) {		
     			return new MagicEvent(
     					permanent,

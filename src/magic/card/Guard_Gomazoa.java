@@ -10,8 +10,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Guard_Gomazoa {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,1) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			if (damage.getTarget()==permanent&&damage.isCombat()) {
 				// Replacement effect. Generates no event or action.
 				damage.setAmount(0);	

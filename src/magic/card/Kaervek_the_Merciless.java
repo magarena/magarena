@@ -18,8 +18,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Kaervek_the_Merciless {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
 			final MagicPlayer player=permanent.getController();
             final int damage=cardOnStack.getCardDefinition().getConvertedCost();
 			return (cardOnStack.getController()!=player) ?

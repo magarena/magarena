@@ -45,7 +45,7 @@ public class Call_to_the_Grave {
     
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {
     	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
     		final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE);
     		if (targets.size() == 0) {

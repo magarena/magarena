@@ -16,8 +16,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Keiga__the_Tide_Star {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
