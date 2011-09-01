@@ -16,8 +16,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Spiteful_Visions {
 	public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPlayer player = (MagicPlayer)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 				return new MagicEvent(
 						permanent,
 						player,
@@ -36,8 +35,8 @@ public class Spiteful_Visions {
     
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenDrawn) {
     	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-    		final MagicPlayer player = ((MagicCard)data).getOwner();
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
+    		final MagicPlayer player = data.getOwner();
     			return new MagicEvent(
     					permanent,
     					permanent.getController(),

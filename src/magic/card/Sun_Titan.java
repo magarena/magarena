@@ -16,7 +16,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Sun_Titan {
     public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			final MagicPlayer player=permanent.getController();
             return new MagicEvent(
                     permanent,
@@ -45,7 +45,7 @@ public class Sun_Titan {
     
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent==data) {
 			    final MagicPlayer player=permanent.getController();
                 return new MagicEvent(

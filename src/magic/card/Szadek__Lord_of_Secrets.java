@@ -14,8 +14,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Szadek__Lord_of_Secrets {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,6) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final int amount=damage.getAmount();
 			if (amount>0 && 
                 damage.isCombat() && 

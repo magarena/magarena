@@ -11,9 +11,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Steppe_Lynx {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
 			final MagicPlayer player=permanent.getController();
-			final MagicPermanent played=(MagicPermanent)data;
 			if (player == played.getController() && 
                 played.isLand()) {
 				return new MagicEvent(

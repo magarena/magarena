@@ -12,9 +12,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Stonebrow__Krosan_Hero {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer player=permanent.getController();
-			final MagicPermanent creature=(MagicPermanent)data;
 			if (creature.getController() == player && 
                 creature.hasAbility(game,MagicAbility.Trample)) {
 				return new MagicEvent(

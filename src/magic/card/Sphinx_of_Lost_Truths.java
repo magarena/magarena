@@ -46,7 +46,7 @@ public class Sphinx_of_Lost_Truths {
 	
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			final MagicPlayer player=permanent.getController();
 			final boolean kicked=permanent.hasState(MagicPermanentState.Kicked);
 			return new MagicEvent(

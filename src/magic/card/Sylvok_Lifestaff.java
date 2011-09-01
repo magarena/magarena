@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Sylvok_Lifestaff {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent.getEquippedCreature()==data) {
 				final MagicPlayer player=permanent.getController();
 				return new MagicEvent(
