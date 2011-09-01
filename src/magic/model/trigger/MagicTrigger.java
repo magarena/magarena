@@ -21,13 +21,13 @@ public abstract class MagicTrigger implements MagicEventAction {
 		this.cardIndex=cardIndex;
 		this.priority=priority;
 	}
+    
+    public MagicTrigger(final MagicTriggerType type, final int priority) {
+		this(type,-1,priority);
+	}
 	
 	public MagicTrigger(final MagicTriggerType type) {
 		this(type,-1,DEFAULT_PRIORITY);
-	}
-	
-    public MagicTrigger(final MagicTriggerType type, final int priority) {
-		this(type,-1,priority);
 	}
 
     public void setCardIndex(final int cardIndex) {
