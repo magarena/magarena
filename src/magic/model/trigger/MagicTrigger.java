@@ -7,6 +7,7 @@ import magic.model.MagicDamage;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.trigger.MagicGraveyardTriggerData;
@@ -72,6 +73,9 @@ public abstract class MagicTrigger implements MagicEventAction {
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData data) {
         throw new RuntimeException("Did not override executeTrigger (MagicPermanent) method");
     }
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack data) {
+        throw new RuntimeException("Did not override executeTrigger (MagicCardOnStack) method");
+    }
 
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
         if (data == null) {
@@ -86,6 +90,8 @@ public abstract class MagicTrigger implements MagicEventAction {
             return executeTrigger(game, permanent, (MagicPermanent)data);
         } else if (data instanceof MagicGraveyardTriggerData) {
             return executeTrigger(game, permanent, (MagicGraveyardTriggerData)data);
+        } else if (data instanceof MagicItemOnStack) {
+            return executeTrigger(game, permanent, (MagicItemOnStack)data);
         }
         throw new RuntimeException("Did not override executeTrigger (Object) method");
     }
