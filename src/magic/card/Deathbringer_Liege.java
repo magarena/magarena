@@ -20,9 +20,9 @@ import magic.model.trigger.MagicTriggerType;
 public class Deathbringer_Liege {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
-			final MagicCard card=((MagicCardOnStack)data).getCard();
+			final MagicCard card=data.getCard();
 			return (card.getOwner()==player&&MagicColor.Black.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
                         permanent,

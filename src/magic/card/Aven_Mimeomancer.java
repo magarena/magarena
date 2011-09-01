@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
@@ -15,7 +16,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Aven_Mimeomancer {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			return (permanent.getController()==data) ?
                 new MagicEvent(
                         permanent,

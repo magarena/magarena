@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Arc_Runner {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player = permanent.getController();
 			if (player == data) {
 				return new MagicEvent(

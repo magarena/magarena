@@ -16,8 +16,7 @@ public class Butcher_of_Malakir {
 
     public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 		    final MagicPlayer controller = (permanent != null) ? permanent.getController() : null;
             return (MagicLocationType.Play==triggerData.fromLocation) ?
 				new MagicEvent(

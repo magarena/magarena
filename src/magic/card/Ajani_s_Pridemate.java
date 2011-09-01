@@ -12,9 +12,9 @@ import magic.model.trigger.MagicTriggerType;
 public class Ajani_s_Pridemate {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenLifeIsGained) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player = permanent.getController();
-			if (player == (MagicPlayer)data) {
+			if (player == data) {
 				return new MagicEvent(
 						permanent,
 						permanent.getController(),

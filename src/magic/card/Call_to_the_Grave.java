@@ -18,8 +18,7 @@ import java.util.Collection;
 public class Call_to_the_Grave {
 	public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPlayer player = (MagicPlayer)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 				return new MagicEvent(
 						permanent,
 						player,
