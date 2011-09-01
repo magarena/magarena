@@ -666,6 +666,19 @@ converted=3
 cost={2}{G}
 timing=smain
 
+>Earth Servant
+image=http://magiccards.info/scans/en/m11/134.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=6
+cost={5}{R}
+power=4
+toughness=4
+timing=smain
+
 >Fiery Hellhound
 image=http://magiccards.info/scans/en/m12/130.jpg
 value=3
