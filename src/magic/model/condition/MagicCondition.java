@@ -79,6 +79,13 @@ public interface MagicCondition {
 		}
 	};
 	
+	public static final MagicCondition IS_ATTACKING_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPermanent permanent = (MagicPermanent)source;
+			return permanent.isAttacking();
+		}
+	};
+	
 	public static final MagicCondition ABILITY_ONCE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;

@@ -52,6 +52,20 @@ power=2
 toughness=4
 timing=main
 
+>Ancient Hellkite
+image=http://magiccards.info/scans/en/m11/122.jpg 
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=7
+cost={4}{R}{R}{R}
+power=6
+toughness=6
+ability=flying
+timing=main
+
 >Armored Warhorse
 image=http://magiccards.info/scans/en/m12/7.jpg 
 value=2
