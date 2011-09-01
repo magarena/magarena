@@ -13,8 +13,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Quietus_Spike {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicTarget target=damage.getTarget();
 			return (permanent.getEquippedCreature()==damage.getSource() && 
                     target.isPlayer() && 

@@ -12,7 +12,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Rites_of_Flourishing {
 	public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
 			final MagicPlayer player = permanent.getController();
 			return new MagicEvent(
                     permanent,
@@ -33,8 +33,7 @@ public class Rites_of_Flourishing {
     
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
     	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-    		final MagicPlayer player = (MagicPlayer)data;
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
     			return new MagicEvent(
     					permanent,
     					permanent.getController(),
@@ -55,8 +54,7 @@ public class Rites_of_Flourishing {
     
 	public static final MagicTrigger T3 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPlayer player = (MagicPlayer)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 				return new MagicEvent(
 						permanent,
 						player,

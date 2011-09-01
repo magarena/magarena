@@ -22,8 +22,7 @@ public class Rancor {
 
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             final MagicCard card=triggerData.card;
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(

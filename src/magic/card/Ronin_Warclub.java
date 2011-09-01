@@ -11,8 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Ronin_Warclub {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherComesIntoPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent otherPermanent=(MagicPermanent)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player=permanent.getController();
             return (otherPermanent.isCreature()&&otherPermanent.getController()==player) ?
 				new MagicEvent(

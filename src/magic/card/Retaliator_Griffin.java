@@ -13,8 +13,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Retaliator_Griffin {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final int amount=damage.getDealtAmount();
 			final MagicPlayer player=permanent.getController();
             return (amount > 0 && 

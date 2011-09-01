@@ -14,8 +14,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Roc_Egg {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicGraveyardTriggerData triggerData=(MagicGraveyardTriggerData)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 			final MagicPlayer player = (permanent != null) ? permanent.getController() : null;
 			return (MagicLocationType.Play == triggerData.fromLocation) ?
 				new MagicEvent(

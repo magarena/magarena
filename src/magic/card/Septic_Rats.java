@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Septic_Rats {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPlayer player=permanent.getController();
             return (permanent==data && game.getOpponent(player).getPoison()>0) ?
 					new MagicEvent(

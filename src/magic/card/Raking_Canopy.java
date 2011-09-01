@@ -14,8 +14,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Raking_Canopy {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent creature=(MagicPermanent)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			return (creature.getController()!=permanent.getController()&&creature.hasAbility(game,MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,

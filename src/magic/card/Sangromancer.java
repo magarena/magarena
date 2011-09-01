@@ -12,9 +12,8 @@ import magic.model.trigger.MagicTriggerType;
 public class Sangromancer {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
-			final MagicPermanent otherPermanent = (MagicPermanent)data;
 			final MagicPlayer otherController = otherPermanent.getController();
 			if (otherController != player && otherPermanent.isCreature()) {			
 				return new MagicEvent(
@@ -38,8 +37,8 @@ public class Sangromancer {
     
     public static final MagicTrigger T2 =new MagicTrigger(MagicTriggerType.WhenDiscarded) {
     	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-    		final MagicPlayer otherController = ((MagicCard)data).getOwner();
+    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
+    		final MagicPlayer otherController = data.getOwner();
     		final MagicPlayer player = permanent.getController();
     		if (otherController != player) {		
     			return new MagicEvent(

@@ -52,8 +52,7 @@ public class Quest_for_the_Gravelord {
 	
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPermanent otherPermanent=(MagicPermanent)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (otherPermanent.isCreature()) ?
                 new MagicEvent(
                         permanent,

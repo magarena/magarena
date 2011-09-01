@@ -13,8 +13,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Rumbling_Slum {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicPlayer player=(MagicPlayer)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 			return (permanent.getController()==player) ?
                 new MagicEvent(
                         permanent,
