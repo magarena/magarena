@@ -5017,6 +5017,17 @@ converted=2
 cost={1}{G}
 timing=removal
 
+>Demolish
+image=http://magiccards.info/scans/en/m11/132.jpg
+value=2
+removal=1
+rarity=C
+type=Sorcery
+color=r
+converted=4
+cost={3}{R}
+timing=removal
+
 >Into the Roil
 image=http://magiccards.info/scans/en/zen/48.jpg
 value=3

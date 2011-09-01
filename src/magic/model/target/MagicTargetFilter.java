@@ -213,6 +213,17 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
+	
+	public static final MagicTargetFilter TARGET_ARTIFACT_OR_LAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {	
+			final MagicPermanent targetPermanent=(MagicPermanent)target;
+			return targetPermanent.isArtifact() || targetPermanent.isLand();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
 
 	public static final MagicTargetFilter TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=new MagicTargetFilter() {
 
