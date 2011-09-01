@@ -22,8 +22,7 @@ public class Soul_Link {
     //deals damage
     public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
             final int amount=damage.getDealtAmount();
 			return (damage.getSource()==permanent.getEnchantedCreature()) ?
@@ -48,8 +47,7 @@ public class Soul_Link {
     //dealt damage
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
             final int amount=damage.getDealtAmount();
 			return (damage.getTarget()==permanent.getEnchantedCreature()) ?

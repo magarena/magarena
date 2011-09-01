@@ -83,7 +83,7 @@ public class Shrine_of_Burning_Rage {
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object data) {
+                final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			if (player==data) {
 				return new MagicEvent(
@@ -115,9 +115,9 @@ public class Shrine_of_Burning_Rage {
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object data) {
+                final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
-			final MagicCard card=((MagicCardOnStack)data).getCard();
+			final MagicCard card=data.getCard();
 			if (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) {
 				return new MagicEvent(
                         permanent,

@@ -12,8 +12,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Souls_of_the_Faultless {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage=(MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
             final MagicPlayer opponent=damage.getSource().getController();
             final int amount=damage.getDealtAmount();

@@ -13,7 +13,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Skullcage {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			if (player!=data) {
 				return new MagicEvent(

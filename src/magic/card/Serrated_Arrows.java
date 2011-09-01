@@ -39,8 +39,7 @@ public class Serrated_Arrows {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,
-                final MagicPermanent permanent,
-                final Object data) {
+                final MagicPermanent permanent) {
 			final MagicPlayer player=permanent.getController();
 			return new MagicEvent(
                     permanent,
@@ -74,7 +73,7 @@ public class Serrated_Arrows {
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
-                final Object data) {
+                final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			if (player == data && permanent.getCounters(MagicCounterType.Charge) == 0) {
 				return new MagicEvent(

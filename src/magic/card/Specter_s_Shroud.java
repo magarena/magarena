@@ -12,8 +12,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Specter_s_Shroud {
     public static final MagicTrigger T =new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
-			final MagicDamage damage = (MagicDamage)data;
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPermanent equippedCreature=permanent.getEquippedCreature();
 			return (damage.getSource() == equippedCreature && 
                     damage.getTarget().isPlayer() && 

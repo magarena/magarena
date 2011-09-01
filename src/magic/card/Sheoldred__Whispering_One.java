@@ -18,7 +18,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Sheoldred__Whispering_One {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			return (player != data) ?
                 null :
@@ -47,7 +47,7 @@ public class Sheoldred__Whispering_One {
     
     public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			return (player == data) ? 
                 null :

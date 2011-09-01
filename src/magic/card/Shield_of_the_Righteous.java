@@ -11,7 +11,7 @@ import magic.model.trigger.MagicTriggerType;
 public class Shield_of_the_Righteous {
     public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBlocks) {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			final MagicPermanent equippedCreature = permanent.getEquippedCreature();
 			final MagicPermanent blocked = (equippedCreature != null) ? equippedCreature.getBlockedCreature() : null;
 			return (equippedCreature == data && blocked != null) ?
