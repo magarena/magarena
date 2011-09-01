@@ -1499,6 +1499,51 @@ power=2
 toughness=1
 timing=fmain
 
+>Angel's Feather
+image=http://magiccards.info/scans/en/m10/206.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=fmain
+
+>Demon's Horn
+image=http://magiccards.info/scans/en/m10/209.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=fmain
+
+>Dragon's Claw
+image=http://magiccards.info/scans/en/m10/210.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=fmain
+
+>Kraken's Eye
+image=http://magiccards.info/scans/en/m10/213.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=fmain
+
+>Wurm's Tooth
+image=http://magiccards.info/scans/en/m10/222.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=fmain
+
 >Meglonoth
 image=http://magiccards.info/scans/en/cfx/118.jpg
 value=5
