@@ -86,7 +86,7 @@ cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt c
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 
-M1.%:
+M1.%: cubes
 	grep "VERSION.*1.$*" -r src/*
 	-rm -rf Magarena-1.$*
 	-rm Magarena-1.$*.zip
@@ -141,8 +141,11 @@ jar: $(MAG)
 	$(JAVA) -DrndSeed=$* magic.MagicMain |& tee $*.log
 
 test: $(MAG)
-	echo `hg id -n` > `date +%s`.log
-	$(JAVA) -DrndSeed=`date +%s` -DselfMode magic.MagicMain >> `date +%s`.log 2>&1
+	make `date +%s`.t
+
+%.t: $(MAG)
+	echo `hg id -n` > $*.log
+	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain >> $*.log 2>&1
 
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
