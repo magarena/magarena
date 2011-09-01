@@ -50,7 +50,13 @@ public class Call_to_the_Grave {
     		final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE);
     		if (targets.size() == 0) {
-    			game.doAction(new MagicSacrificeAction(permanent));
+    			return new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        new Object[]{permanent},
+                        this,
+                        "Sacrifice " + permanent + ".");
+    			
     		}
     		return null;
     	}
@@ -61,6 +67,7 @@ public class Call_to_the_Grave {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
+    		game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
 		}	
     };
 }
