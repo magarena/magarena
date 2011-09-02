@@ -6,14 +6,11 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class MagicExaltedTrigger extends MagicTrigger {
+public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
 
 	private static final MagicTrigger INSTANCE=new MagicExaltedTrigger();
-	
-	private MagicExaltedTrigger() {
-	
-		super(MagicTriggerType.WhenAttacks);
-	}
+
+    private MagicExaltedTrigger() {}
 
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
