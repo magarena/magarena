@@ -8,13 +8,12 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 
-public class MagicSpecterTrigger extends MagicTrigger {
+public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
 
 	private final boolean combat;
 	private final boolean random;
 	
 	public MagicSpecterTrigger(final boolean combat,final boolean random) {
-		super(MagicTriggerType.WhenDamageIsDealt);
 		this.combat=combat;
 		this.random=random;
 	}
