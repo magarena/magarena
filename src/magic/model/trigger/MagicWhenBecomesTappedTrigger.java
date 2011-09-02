@@ -6,10 +6,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenBecomesTappedTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenBecomesTappedTrigger(final int priority) {
-        super(MagicTriggerType.WhenBecomesTapped, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenBecomesTappedTrigger() {
-		super(MagicTriggerType.WhenBecomesTapped);
-	}
+	public MagicWhenBecomesTappedTrigger() {}
+
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenBecomesTapped;
+    }
 }

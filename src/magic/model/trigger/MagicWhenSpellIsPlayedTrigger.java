@@ -8,10 +8,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenSpellIsPlayedTrigger extends MagicTrigger<MagicCardOnStack> {
     public MagicWhenSpellIsPlayedTrigger(final int priority) {
-        super(MagicTriggerType.WhenSpellIsPlayed, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenSpellIsPlayedTrigger() {
-		super(MagicTriggerType.WhenSpellIsPlayed);
-	}
+	public MagicWhenSpellIsPlayedTrigger() {}
+    
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenSpellIsPlayed;
+    }
 }

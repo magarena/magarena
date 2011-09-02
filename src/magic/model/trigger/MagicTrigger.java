@@ -18,17 +18,15 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
 
 	private static final int DEFAULT_PRIORITY=10;
 	
-	private final MagicTriggerType type;
 	private final int priority;
 	private int cardIndex;
 
-    protected MagicTrigger(final MagicTriggerType type, final int priority) {
-		this.type = type; 
+    protected MagicTrigger(final int priority) {
         this.priority = priority;
 	}
 	
-	protected MagicTrigger(final MagicTriggerType type) {
-		this(type,DEFAULT_PRIORITY);
+	protected MagicTrigger() {
+		this(DEFAULT_PRIORITY);
 	}
 
     public void setCardIndex(final int cardIndex) {
@@ -38,18 +36,16 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
 	public final MagicCardDefinition getCardDefinition() {
 		return CardDefinitions.getInstance().getCard(cardIndex);
 	}
-	
-	public final MagicTriggerType getType() {
-		return type;
-	}
 		
 	public final int getPriority() {
 		return priority;
 	}
 	
 	public boolean usesStack() {
-		return type.usesStack();
+		return getType().usesStack();
 	}
+	
+    public abstract MagicTriggerType getType();
 	
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
 }

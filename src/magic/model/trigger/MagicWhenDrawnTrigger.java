@@ -8,10 +8,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenDrawnTrigger extends MagicTrigger<MagicCard> {
     public MagicWhenDrawnTrigger(final int priority) {
-        super(MagicTriggerType.WhenDrawn, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenDrawnTrigger() {
-		super(MagicTriggerType.WhenDrawn);
-	}
+	public MagicWhenDrawnTrigger() {}
+    
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenDrawn;
+    }
 }

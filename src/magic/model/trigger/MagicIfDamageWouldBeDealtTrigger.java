@@ -7,10 +7,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicIfDamageWouldBeDealtTrigger extends MagicTrigger<MagicDamage> {
     public MagicIfDamageWouldBeDealtTrigger(final int priority) {
-        super(MagicTriggerType.IfDamageWouldBeDealt, priority); 
+        super(priority); 
 	}
 	
-	public MagicIfDamageWouldBeDealtTrigger() {
-		super(MagicTriggerType.IfDamageWouldBeDealt);
-	}
+	public MagicIfDamageWouldBeDealtTrigger() {}
+
+    public MagicTriggerType getType() {
+        return MagicTriggerType.IfDamageWouldBeDealt;
+    }
 }

@@ -7,10 +7,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtUpkeepTrigger(final int priority) {
-        super(MagicTriggerType.AtUpkeep, priority); 
+        super(priority); 
 	}
 	
-	public MagicAtUpkeepTrigger() {
-		super(MagicTriggerType.AtUpkeep);
-	}
+	public MagicAtUpkeepTrigger() {}
+    
+    public MagicTriggerType getType() {
+        return MagicTriggerType.AtUpkeep;
+    }
 }

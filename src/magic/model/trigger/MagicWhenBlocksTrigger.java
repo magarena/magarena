@@ -6,10 +6,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenBlocksTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenBlocksTrigger(final int priority) {
-        super(MagicTriggerType.WhenBlocks, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenBlocksTrigger() {
-		super(MagicTriggerType.WhenBlocks);
-	}
+	public MagicWhenBlocksTrigger() {}
+    
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenBlocks;
+    }
 }

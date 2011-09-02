@@ -7,10 +7,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MagicGraveyardTriggerData> {
     public MagicWhenPutIntoGraveyardTrigger(final int priority) {
-        super(MagicTriggerType.WhenPutIntoGraveyard, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenPutIntoGraveyardTrigger() {
-		super(MagicTriggerType.WhenPutIntoGraveyard);
-	}
+	public MagicWhenPutIntoGraveyardTrigger() {}
+    
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenPutIntoGraveyard;
+    }
 }

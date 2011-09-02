@@ -7,10 +7,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPlayer> {
     public MagicWhenComesIntoPlayTrigger(final int priority) {
-        super(MagicTriggerType.WhenComesIntoPlay, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenComesIntoPlayTrigger() {
-		super(MagicTriggerType.WhenComesIntoPlay);
-	}
+	public MagicWhenComesIntoPlayTrigger() {}
+    
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenComesIntoPlay;
+    }
 }

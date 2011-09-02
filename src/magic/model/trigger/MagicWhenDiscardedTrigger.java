@@ -8,10 +8,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenDiscardedTrigger extends MagicTrigger<MagicCard> {
     public MagicWhenDiscardedTrigger(final int priority) {
-        super(MagicTriggerType.WhenDiscarded, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenDiscardedTrigger() {
-		super(MagicTriggerType.WhenDiscarded);
-	}
+	public MagicWhenDiscardedTrigger() {}
+    
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenDiscarded;
+    }
 }

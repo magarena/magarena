@@ -6,10 +6,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenAttacksTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenAttacksTrigger(final int priority) {
-        super(MagicTriggerType.WhenAttacks, priority); 
+        super(priority); 
 	}
 	
-	public MagicWhenAttacksTrigger() {
-		super(MagicTriggerType.WhenAttacks);
-	}
+	public MagicWhenAttacksTrigger() {}
+
+    public MagicTriggerType getType() {
+        return MagicTriggerType.WhenAttacks;
+    }
 }

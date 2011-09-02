@@ -7,10 +7,12 @@ import magic.model.event.MagicEvent;
 
 public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtEndOfTurnTrigger(final int priority) {
-        super(MagicTriggerType.AtEndOfTurn, priority); 
+        super(priority); 
 	}
 	
-	public MagicAtEndOfTurnTrigger() {
-		super(MagicTriggerType.AtEndOfTurn);
-	}
+	public MagicAtEndOfTurnTrigger() {}
+
+    public MagicTriggerType getType() {
+        return MagicTriggerType.AtEndOfTurn;
+    }
 }
