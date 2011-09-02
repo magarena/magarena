@@ -1088,7 +1088,7 @@ public class MagicGame {
             final MagicPermanent permanent,
             final MagicSource source,
             final Object data) {
-
+        @SuppressWarnings("unchecked")
 		final MagicEvent event=trigger.executeTrigger(this,permanent,data);
 		if (event!=null) {
 			if (immediate) {
