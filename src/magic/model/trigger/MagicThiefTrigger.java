@@ -6,13 +6,12 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicDrawEvent;
 import magic.model.event.MagicEvent;
 
-public class MagicThiefTrigger extends MagicTrigger {
+public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
 
 	private final boolean combat;
 	private final int amount;
 	
     public MagicThiefTrigger(final boolean combat,final int amount) {
-		super(MagicTriggerType.WhenDamageIsDealt);
 		this.combat=combat;
 		this.amount=amount;
 	}
