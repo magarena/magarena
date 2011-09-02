@@ -17,19 +17,17 @@ import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 
-public class MagicDevourTrigger extends MagicTrigger {
+public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
 
 	private final int amount;
 	
 	public MagicDevourTrigger(final int amount) {
-		super(MagicTriggerType.WhenComesIntoPlay);
 		this.amount=amount;
 	}
 	
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
         final String name = getCardDefinition().getFullName();
-		final MagicPlayer player=permanent.getController();
         final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
                 MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
         final MagicTargetChoice targetChoice=new MagicTargetChoice(
@@ -60,7 +58,7 @@ public class MagicDevourTrigger extends MagicTrigger {
                     final MagicPermanent permanent=(MagicPermanent)data[0];
                     game.doAction(new MagicSacrificeAction(creature));
                     game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
-                    final MagicEvent newEvent=executeTrigger(game,permanent,data);
+                    final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
                     if (newEvent!=null) {
                         game.doAction(new MagicAddEventAction(newEvent));
                     }
