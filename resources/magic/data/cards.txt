@@ -5900,6 +5900,16 @@ converted=1
 cost={G}
 timing=draw
 
+>Nature's Spiral
+image=http://magiccards.info/scans/en/dpa/77.jpg
+value=3
+rarity=U
+type=Sorcery
+color=g
+converted=2
+cost={1}{G}
+timing=draw
+
 >Wurmcoil Engine
 image=http://magiccards.info/scans/en/som/223.jpg
 value=5

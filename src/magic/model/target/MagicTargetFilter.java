@@ -770,6 +770,16 @@ public interface MagicTargetFilter {
 		}						
 	};
 	
+	public static final MagicTargetFilter TARGET_PERMANENT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return !((MagicCard)target).getCardDefinition().isSpell();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Graveyard;
+		}						
+	};
+	
     public static final MagicTargetFilter TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
