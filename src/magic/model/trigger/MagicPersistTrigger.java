@@ -9,14 +9,11 @@ import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.event.MagicEvent;
 
-public class MagicPersistTrigger extends MagicTrigger {
+public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
 
 	private static final MagicTrigger INSTANCE=new MagicPersistTrigger();
-	
-	private MagicPersistTrigger() {
-		
-		super(MagicTriggerType.WhenPutIntoGraveyard);
-	}
+
+    private MagicPersistTrigger() {}
 	
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
