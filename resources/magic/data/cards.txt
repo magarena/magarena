@@ -839,7 +839,7 @@ toughness=1
 timing=main
 
 >Infantry Veteran
-image=http://magiccards.info/scans/en/m12/20.jpg
+image=http://magiccards.info/scans/en/ddf/4.jpg
 value=2
 rarity=C
 type=Creature
