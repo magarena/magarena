@@ -19,8 +19,8 @@ import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
+
 
 public class Quest_for_the_Gemblades {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -58,7 +58,7 @@ public class Quest_for_the_Gemblades {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
+    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();

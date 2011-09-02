@@ -7,11 +7,10 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Promise_of_Bunrei {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
+    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player=permanent.getController();

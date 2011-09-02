@@ -2,6 +2,7 @@ package magic.card;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
@@ -16,8 +17,8 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
 
 import java.util.Collection;
 
@@ -61,9 +62,9 @@ public class Carnifex_Demon {
 		}
 	};
 
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     permanent.getController(),

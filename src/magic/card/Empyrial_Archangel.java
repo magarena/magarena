@@ -4,11 +4,10 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 
 public class Empyrial_Archangel {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,2) {
+    public static final MagicIfDamageWouldBeDealtTrigger T = new MagicIfDamageWouldBeDealtTrigger(2) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			if (damage.getTarget()==permanent.getController()) {

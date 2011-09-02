@@ -19,8 +19,8 @@ import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
+
 
 public class Gelectrode {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -57,7 +57,7 @@ public class Gelectrode {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
+    public static final MagicWhenSpellIsPlayedTrigger T = new MagicWhenSpellIsPlayedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
 			final MagicPlayer player=permanent.getController();

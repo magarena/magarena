@@ -5,11 +5,11 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtUpkeepTrigger;
+
 
 public class Moroii {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
+    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();

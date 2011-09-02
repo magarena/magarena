@@ -3,20 +3,20 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTappedIntoPlayTrigger;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Rupture_Spire {
-    public static final MagicTrigger T =new MagicTappedIntoPlayTrigger();
+    public static final MagicTappedIntoPlayTrigger T =new MagicTappedIntoPlayTrigger();
     
-    public static final MagicTrigger T2 =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     permanent.getController(),

@@ -25,8 +25,8 @@ import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
 
 public class Shrine_of_Burning_Rage {
 
@@ -78,7 +78,7 @@ public class Shrine_of_Burning_Rage {
 		}
 	};
 	
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
+    public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -110,7 +110,7 @@ public class Shrine_of_Burning_Rage {
 		}		
     };
     
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
+    public static final MagicWhenSpellIsPlayedTrigger T2 = new MagicWhenSpellIsPlayedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,

@@ -10,11 +10,10 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Keiga__the_Tide_Star {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
+    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 			return (MagicLocationType.Play==triggerData.fromLocation) ?

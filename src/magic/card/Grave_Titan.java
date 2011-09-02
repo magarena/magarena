@@ -6,14 +6,13 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenAttacksTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Grave_Titan {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     player,
@@ -33,7 +32,7 @@ public class Grave_Titan {
 		}		
     };
 
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();

@@ -25,18 +25,17 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicTappedIntoPlayTrigger;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
+import magic.model.trigger.MagicWhenAttacksTrigger;
+import magic.model.trigger.MagicTappedIntoPlayTrigger;
 
 import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Raging_Ravine {
                         
-    private static final MagicTrigger CT = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    private static final MagicWhenAttacksTrigger CT = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -133,7 +132,7 @@ public class Raging_Ravine {
         }
     };
 
-    public static final MagicTrigger T1 = new MagicTappedIntoPlayTrigger();
+    public static final MagicTappedIntoPlayTrigger T1 = new MagicTappedIntoPlayTrigger();
     
     public static final MagicManaActivation A2 = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Red,MagicManaType.Green), 1);

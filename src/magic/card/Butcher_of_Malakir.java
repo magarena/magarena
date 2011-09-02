@@ -9,12 +9,12 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
+import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Butcher_of_Malakir {
 
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
+    public static final MagicWhenPutIntoGraveyardTrigger T1 = new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 		    final MagicPlayer controller = (permanent != null) ? permanent.getController() : null;
@@ -44,7 +44,7 @@ public class Butcher_of_Malakir {
 		}
     };
     
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
+    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T2 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer controller = permanent.getController();

@@ -10,11 +10,11 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.MagicWhenDrawnTrigger;
 
 public class Spiteful_Visions {
-	public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
+	public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 				return new MagicEvent(
@@ -33,7 +33,7 @@ public class Spiteful_Visions {
 		}
     };
     
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenDrawn) {
+    public static final MagicWhenDrawnTrigger T2 = new MagicWhenDrawnTrigger() {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer player = data.getOwner();

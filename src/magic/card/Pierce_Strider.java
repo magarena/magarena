@@ -7,13 +7,13 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
 
 public class Pierce_Strider {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     permanent.getController(),

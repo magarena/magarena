@@ -6,11 +6,10 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Meglonoth {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBlocks) {
+    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPermanent blocked=permanent.getBlockedCreature();

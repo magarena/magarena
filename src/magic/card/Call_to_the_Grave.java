@@ -10,13 +10,13 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 import java.util.Collection;
 
 public class Call_to_the_Grave {
-	public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
+	public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 				return new MagicEvent(
@@ -43,7 +43,7 @@ public class Call_to_the_Grave {
 		}
     };
     
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {
+    public static final MagicAtEndOfTurnTrigger T2 = new MagicAtEndOfTurnTrigger() {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
     		final Collection<MagicTarget> targets =

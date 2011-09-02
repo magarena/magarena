@@ -22,8 +22,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 import java.util.Collection;
 
@@ -75,12 +74,9 @@ public class Rise_of_the_Hobgoblins {
 		}
 	};
 
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     player,

@@ -12,15 +12,14 @@ import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Rancor {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
             MagicTrampleTargetPicker.getInstance());
 
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
+    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
             final MagicCard card=triggerData.card;

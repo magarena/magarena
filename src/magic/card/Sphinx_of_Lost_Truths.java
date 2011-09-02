@@ -14,8 +14,8 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
 
 public class Sphinx_of_Lost_Truths {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
@@ -44,10 +44,10 @@ public class Sphinx_of_Lost_Truths {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+			
 			final boolean kicked=permanent.hasState(MagicPermanentState.Kicked);
 			return new MagicEvent(
                     permanent,

@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicPermanentAction;
@@ -13,12 +14,13 @@ import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicItemOnStack;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenTargetedTrigger;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Frost_Titan {
     //counter opponent spell or ability unless its controller pay {2}
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenTargeted) {
+    public static final MagicWhenTargetedTrigger T1 = new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
             if (target.containsInChoiceResults(permanent) &&
@@ -46,9 +48,9 @@ public class Frost_Titan {
     };
    
     //tap target permanent. It doesn't untap during its controller's next untap step.
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
                     permanent.getController(),
@@ -72,7 +74,7 @@ public class Frost_Titan {
         }
     };
     
-    public static final MagicTrigger T3 = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    public static final MagicWhenAttacksTrigger T3 = new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (permanent == creature) ?

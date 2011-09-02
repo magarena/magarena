@@ -4,18 +4,19 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicVividManaActivation;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
 
 public class Sphere_of_the_Suns {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		    return new MagicEvent(
                     permanent,
                     permanent.getController(),

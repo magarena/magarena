@@ -12,13 +12,13 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPumpActivation;
 import magic.model.target.MagicDamageTargetPicker;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
+
 
 public class Mordant_Dragon {
 	public static final MagicPermanentActivation A = new MagicPumpActivation(MagicManaCost.ONE_RED,1,0);
 	
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
+    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final int amount=damage.getAmount();

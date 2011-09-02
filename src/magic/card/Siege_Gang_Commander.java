@@ -21,8 +21,7 @@ import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Siege_Gang_Commander {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -63,10 +62,9 @@ public class Siege_Gang_Commander {
 		}
 	};
 	
-    public static final MagicTrigger T =new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T =new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     player,

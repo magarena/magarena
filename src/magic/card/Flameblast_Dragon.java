@@ -14,11 +14,11 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenAttacksTrigger;
+
 
 public class Flameblast_Dragon {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();

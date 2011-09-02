@@ -8,12 +8,12 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenAttacksTrigger;
+
 
 // The part of this card that interacts with planeswalkers is ignored
 public class Circle_of_Flame {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer controller = creature.getController();

@@ -10,8 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicNoCombatTargetPicker;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Soul_Link {
 
@@ -20,7 +19,7 @@ public class Soul_Link {
             new MagicNoCombatTargetPicker(true,true,true));	
 
     //deals damage
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
+    public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
@@ -45,7 +44,7 @@ public class Soul_Link {
     };
     
     //dealt damage
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
+    public static final MagicWhenDamageIsDealtTrigger T2 = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();

@@ -9,11 +9,11 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 public class Lightning_Reaver {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
+    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
@@ -35,7 +35,7 @@ public class Lightning_Reaver {
 		}
     };
 
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {
+    public static final MagicAtEndOfTurnTrigger T2 = new MagicAtEndOfTurnTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();

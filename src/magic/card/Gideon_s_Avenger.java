@@ -6,11 +6,10 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 
 public class Gideon_s_Avenger {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBecomesTapped) {
+    public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
     		final MagicPlayer otherController = data.getController();

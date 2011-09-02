@@ -10,14 +10,13 @@ import magic.model.action.MagicReanimateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Sun_Titan {
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
                     player,
@@ -43,11 +42,11 @@ public class Sun_Titan {
 		}
     };
     
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent==data) {
-			    final MagicPlayer player=permanent.getController();
+			    final MagicPlayer player = permanent.getController(); 
                 return new MagicEvent(
                     permanent,
                     player,

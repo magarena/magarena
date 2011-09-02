@@ -5,11 +5,10 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Pride_Guardian {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenBlocks) {
+    public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent == data) {

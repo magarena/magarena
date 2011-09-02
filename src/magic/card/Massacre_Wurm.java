@@ -8,16 +8,15 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 import java.util.Collection;
 
 public class Massacre_Wurm {
-	public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     player,
@@ -39,10 +38,10 @@ public class Massacre_Wurm {
 		}
     };
 
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
+    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T2 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player=permanent.getController();
+		    final MagicPlayer player = permanent.getController();	
 			final MagicPlayer otherController=otherPermanent.getController();
 			return (otherController!=player&&otherPermanent.isCreature()) ?
 				new MagicEvent(

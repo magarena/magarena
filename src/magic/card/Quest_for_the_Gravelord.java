@@ -16,8 +16,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Quest_for_the_Gravelord {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -50,7 +49,7 @@ public class Quest_for_the_Gravelord {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
+    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (otherPermanent.isCreature()) ?

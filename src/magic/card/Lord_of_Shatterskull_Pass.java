@@ -16,8 +16,8 @@ import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenAttacksTrigger;
+
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicStaticLocalVariable;
@@ -46,7 +46,7 @@ public class Lord_of_Shatterskull_Pass {
         }
     };
 		
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();

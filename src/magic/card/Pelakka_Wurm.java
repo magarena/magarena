@@ -6,14 +6,13 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicDieDrawCardTrigger;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Pelakka_Wurm {
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+			
 			return new MagicEvent(
                     permanent,
                     player,
@@ -30,5 +29,5 @@ public class Pelakka_Wurm {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],7));
 		}
     };
-    public static final MagicTrigger T2 = MagicDieDrawCardTrigger.INSTANCE;
+    public static final MagicDieDrawCardTrigger T2 = new MagicDieDrawCardTrigger();
 }

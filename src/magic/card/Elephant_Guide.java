@@ -10,15 +10,14 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Elephant_Guide {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
             MagicPumpTargetPicker.getInstance());
 
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
+    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent.getEnchantedCreature()==data) {

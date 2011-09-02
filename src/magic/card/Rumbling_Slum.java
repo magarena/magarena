@@ -7,11 +7,11 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtUpkeepTrigger;
+
 
 public class Rumbling_Slum {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
+    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 			return (permanent.getController()==player) ?

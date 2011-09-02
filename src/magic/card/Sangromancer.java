@@ -6,11 +6,11 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
+import magic.model.trigger.MagicWhenDiscardedTrigger;
 
 public class Sangromancer {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay) {
+    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
@@ -35,7 +35,7 @@ public class Sangromancer {
 		}
     };
     
-    public static final MagicTrigger T2 =new MagicTrigger(MagicTriggerType.WhenDiscarded) {
+    public static final MagicWhenDiscardedTrigger T2 =new MagicWhenDiscardedTrigger() {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer otherController = data.getOwner();

@@ -6,11 +6,10 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 
 public class Fire_Servant {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,3) {
+    public static final MagicIfDamageWouldBeDealtTrigger T = new MagicIfDamageWouldBeDealtTrigger(3) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicSource source=damage.getSource();

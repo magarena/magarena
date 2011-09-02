@@ -11,11 +11,10 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Perilous_Myr {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
+    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
 
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {

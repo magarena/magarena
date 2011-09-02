@@ -8,13 +8,13 @@ import magic.model.action.MagicUntapAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtUpkeepTrigger;
+
 
 import java.util.Collection;
 
 public class Murkfiend_Liege {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtUpkeep) {
+    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();

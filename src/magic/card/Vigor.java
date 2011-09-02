@@ -9,12 +9,11 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 
 public class Vigor {
 
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,4) {
+    public static final MagicIfDamageWouldBeDealtTrigger T1 = new MagicIfDamageWouldBeDealtTrigger(4) {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -57,5 +56,5 @@ public class Vigor {
 		}
     };
     
-    public static final MagicTrigger T2 = new MagicFromGraveyardToLibraryTrigger();
+    public static final MagicFromGraveyardToLibraryTrigger T2 = new MagicFromGraveyardToLibraryTrigger();
 }

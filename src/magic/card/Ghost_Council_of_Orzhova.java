@@ -17,8 +17,8 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
 
 public class Ghost_Council_of_Orzhova {
 	public static final MagicPermanentActivation A =new MagicPermanentActivation(
@@ -54,10 +54,10 @@ public class Ghost_Council_of_Orzhova {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+			
 			return new MagicEvent(
                     permanent,
                     player,

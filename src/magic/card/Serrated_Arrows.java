@@ -15,8 +15,8 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicWeakenCreatureActivation;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Serrated_Arrows {
 
@@ -35,12 +35,9 @@ public class Serrated_Arrows {
 		}
 	};
 
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     player,
@@ -68,13 +65,13 @@ public class Serrated_Arrows {
 		}
     };
 
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.AtUpkeep) {
+    public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer data) {
-			final MagicPlayer player=permanent.getController();
+		    final MagicPlayer player = permanent.getController();	
 			if (player == data && permanent.getCounters(MagicCounterType.Charge) == 0) {
 				return new MagicEvent(
                         permanent,

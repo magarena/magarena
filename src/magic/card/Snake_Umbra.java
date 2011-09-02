@@ -13,15 +13,15 @@ import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
+
 
 public class Snake_Umbra {
 	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
             MagicTargetChoice.POS_TARGET_CREATURE,
             MagicPumpTargetPicker.getInstance());	
 
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenDamageIsDealt) {
+    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();

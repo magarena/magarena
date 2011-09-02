@@ -3,6 +3,7 @@ package magic.card;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicTargetAction;
@@ -13,17 +14,17 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicFirstStrikeTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
 
 public class Galvanic_Arc {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.TARGET_CREATURE,
             MagicFirstStrikeTargetPicker.getInstance());
 
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     permanent.getController(),

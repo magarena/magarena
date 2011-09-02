@@ -4,11 +4,10 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 
 public class Guard_Gomazoa {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,1) {
+    public static final MagicIfDamageWouldBeDealtTrigger T = new MagicIfDamageWouldBeDealtTrigger(1) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			if (damage.getTarget()==permanent&&damage.isCombat()) {

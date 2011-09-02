@@ -8,8 +8,7 @@ import magic.model.action.MagicSetAbilityAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenAttacksTrigger;
 
 import java.util.Collection;
 
@@ -19,7 +18,7 @@ public class Victory_s_Herald {
 		MagicAbility.Flying.getMask() |
         MagicAbility.LifeLink.getMask();
 
-    public static final MagicTrigger T1 = new MagicTrigger(MagicTriggerType.WhenAttacks) {
+    public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,

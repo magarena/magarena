@@ -14,11 +14,11 @@ import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
+
 
 public class Deathbringer_Liege {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
+    public static final MagicWhenSpellIsPlayedTrigger T = new MagicWhenSpellIsPlayedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
@@ -51,7 +51,7 @@ public class Deathbringer_Liege {
 		}
     };
     
-    public static final MagicTrigger T2 = new MagicTrigger(MagicTriggerType.WhenSpellIsPlayed) {
+    public static final MagicWhenSpellIsPlayedTrigger T2 = new MagicWhenSpellIsPlayedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();

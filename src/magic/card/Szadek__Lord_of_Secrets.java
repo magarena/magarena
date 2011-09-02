@@ -8,11 +8,10 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicMillLibraryAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 
 public class Szadek__Lord_of_Secrets {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.IfDamageWouldBeDealt,6) {
+    public static final MagicIfDamageWouldBeDealtTrigger T = new MagicIfDamageWouldBeDealtTrigger(6) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final int amount=damage.getAmount();

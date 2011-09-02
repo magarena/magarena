@@ -18,8 +18,8 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
 
 public class Tumble_Magnet {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -58,10 +58,10 @@ public class Tumble_Magnet {
 		}
 	};
 
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.WhenComesIntoPlay) {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-			final MagicPlayer player=permanent.getController();
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+			
 			return new MagicEvent(
                     permanent,
                     player,

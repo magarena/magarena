@@ -7,11 +7,11 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenAttacksTrigger;
+
 
 public class Mage_Slayer {
-    public static final MagicTrigger T =new MagicTrigger(MagicTriggerType.WhenAttacks,1) {
+    public static final MagicWhenAttacksTrigger T =new MagicWhenAttacksTrigger(1) {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPermanent equippedCreature=permanent.getEquippedCreature();
