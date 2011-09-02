@@ -7,20 +7,18 @@ import magic.model.MagicSubType;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 
-public class MagicTappedIntoPlayUnlessTrigger extends MagicTrigger {
+public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrigger {
 
 	private final MagicSubType subType1;
 	private final MagicSubType subType2;
 	
     public MagicTappedIntoPlayUnlessTrigger(final MagicSubType subType1,final MagicSubType subType2) {
-		super(MagicTriggerType.WhenComesIntoPlay);
 		this.subType1=subType1;
 		this.subType2=subType2;
 	}
 
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-		final MagicPlayer player=permanent.getController();
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		return (!player.controlsPermanentWithSubType(subType1)&&!player.controlsPermanentWithSubType(subType2)) ?
             new MagicEvent(
                     permanent,
