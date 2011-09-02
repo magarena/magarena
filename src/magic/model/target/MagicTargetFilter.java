@@ -517,6 +517,17 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	public static final MagicTargetFilter TARGET_MERFOLK_CREATURE = new MagicTargetFilter() {
+		
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {		
+			return ((MagicPermanent)target).hasSubType(MagicSubType.Merfolk);
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
+	
 	public static final MagicTargetFilter TARGET_NON_ZOMBIE_YOU_CONTROL = new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
@@ -756,6 +767,16 @@ public interface MagicTargetFilter {
 		
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType==MagicTargetType.Graveyard;
+		}						
+	};
+	
+	public static final MagicTargetFilter TARGET_PERMANENT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return !((MagicCard)target).getCardDefinition().isSpell();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Graveyard;
 		}						
 	};
 	

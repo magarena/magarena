@@ -838,6 +838,19 @@ power=1
 toughness=1
 timing=main
 
+>Infantry Veteran
+image=http://magiccards.info/scans/en/m12/20.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
 >Lord of the Unreal
 image=http://magiccards.info/scans/en/m12/62.jpg
 value=3
@@ -861,6 +874,19 @@ subtype=Human,Warrior
 color=r
 converted=3
 cost={2}{R}
+power=2
+toughness=2
+timing=fmain
+
+>Merfolk Sovereign
+image=http://magiccards.info/scans/en/m11/65.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Merfolk
+color=u
+converted=3
+cost={1}{U}{U}
 power=2
 toughness=2
 timing=fmain
@@ -906,6 +932,19 @@ toughness=3
 ability=defender
 timing=main
 
+>Prodigal Pyromancer
+image=http://magiccards.info/scans/en/dpa/51.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Wizard
+color=r
+converted=3
+cost={2}{R}
+power=1
+toughness=1
+timing=fmain
+
 >Roc Egg
 image=http://magiccards.info/scans/en/m12/32.jpg
 value=3
@@ -920,6 +959,19 @@ toughness=3
 ability=defender
 timing=main
 
+>Rotting Legion
+image=http://magiccards.info/scans/en/m11/115.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=5
+cost={4}{B}
+power=4
+toughness=5
+timing=main
+
 >Royal Assassin
 image=http://magiccards.info/scans/en/m12/105.jpg
 value=3
@@ -931,6 +983,19 @@ converted=3
 cost={1}{B}{B}
 power=1
 toughness=1
+timing=main
+
+>Scroll Thief
+image=http://magiccards.info/scans/en/m11/72.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+color=u
+converted=3
+cost={2}{U}
+power=1
+toughness=3
 timing=main
 
 >Skinrender
@@ -2601,6 +2666,16 @@ converted=2
 cost={1}{W}
 timing=pump
 
+>Inspired Charge
+image=http://magiccards.info/scans/en/m11/19.jpg
+value=3
+rarity=C
+type=Instant
+color=w
+converted=4
+cost={2}{W}{W}
+timing=pump
+
 >Giant Growth
 image=http://magiccards.info/scans/en/m11/178.jpg
 value=2
@@ -2748,6 +2823,17 @@ type=Instant
 color=r
 converted=1
 cost={R}
+timing=removal
+
+>Hornet Sting
+image=http://magiccards.info/scans/en/m11/181.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
 timing=removal
 
 >Sigil Blessing
@@ -3023,6 +3109,16 @@ type=Sorcery
 color=u
 converted=3
 cost={2}{U}
+timing=draw
+
+>Jace's Ingenuity
+image=http://magiccards.info/scans/en/m11/60.jpg
+value=3
+rarity=U
+type=Instant
+color=u
+converted=5
+cost={3}{U}{U}
 timing=draw
 
 >Visions of Beyond
@@ -5608,6 +5704,19 @@ toughness=0
 ability=can't be blocked by creatures with flying
 timing=aura
 
+>Holy Strength
+image=http://magiccards.info/scans/en/m11/16.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+power=1
+toughness=2
+timing=aura
+
 >Goblin War Paint
 image=http://magiccards.info/scans/en/zen/129.jpg
 value=3
@@ -5828,6 +5937,16 @@ type=Instant
 color=g
 converted=1
 cost={G}
+timing=draw
+
+>Nature's Spiral
+image=http://magiccards.info/scans/en/dpa/77.jpg
+value=3
+rarity=U
+type=Sorcery
+color=g
+converted=2
+cost={1}{G}
 timing=draw
 
 >Wurmcoil Engine
