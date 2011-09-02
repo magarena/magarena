@@ -985,6 +985,19 @@ power=1
 toughness=1
 timing=main
 
+>Scroll Thief
+image=http://magiccards.info/scans/en/m11/72.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+color=u
+converted=3
+cost={2}{U}
+power=1
+toughness=3
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
