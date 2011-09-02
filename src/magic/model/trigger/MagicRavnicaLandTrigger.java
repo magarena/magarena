@@ -9,19 +9,12 @@ import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
-public class MagicRavnicaLandTrigger extends MagicTrigger {
+public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	
 	private static final MagicChoice RAVNICA_CHOICE = new MagicMayChoice("You may pay 2 life.");
 	
-    public MagicRavnicaLandTrigger() {
-		super(MagicTriggerType.WhenComesIntoPlay);
-	}
-	
 	@Override
-	public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent) {
-		final MagicPlayer player=permanent.getController();
+	public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
 		if (player.getLife()>1) {
 			return new MagicEvent(
                     permanent,
