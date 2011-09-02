@@ -3059,6 +3059,16 @@ converted=3
 cost={2}{U}
 timing=draw
 
+>Jace's Ingenuity
+image=http://magiccards.info/scans/en/m11/60.jpg
+value=3
+rarity=U
+type=Instant
+color=u
+converted=5
+cost={3}{U}{U}
+timing=draw
+
 >Visions of Beyond
 image=http://magiccards.info/scans/en/m12/80.jpg
 value=2
