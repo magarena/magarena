@@ -878,6 +878,19 @@ power=2
 toughness=2
 timing=fmain
 
+>Merfolk Sovereign
+image=http://magiccards.info/scans/en/m11/65.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Merfolk
+color=u
+converted=3
+cost={1}{U}{U}
+power=2
+toughness=2
+timing=fmain
+
 >Mesa Enchantress
 image=http://magiccards.info/scans/en/m12/25.jpg
 value=3

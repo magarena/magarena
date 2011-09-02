@@ -152,6 +152,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_ENCHANTMENT,true,MagicTargetHint.Negative,"target creature or enchantment");
 	public static final MagicTargetChoice POS_TARGET_CREATURE_OR_PLAYER=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.Positive,"target creature or player");
+	public static final MagicTargetChoice POS_TARGET_MERFOLK_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_MERFOLK_CREATURE,true,MagicTargetHint.Positive,"target Merfolk creature");
 	public static final MagicTargetChoice SACRIFICE_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=

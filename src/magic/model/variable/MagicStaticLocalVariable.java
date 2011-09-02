@@ -45,6 +45,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int levitation;
 	private static int lordOfTheUnreal;
 	private static int madrushCyclops;
+	private static int merfolkSovereign;
 	private static int murkfiendLiege;
 	private static int platinumAngel; // You can't lose the game.
 	private static int razorjawOni;
@@ -135,6 +136,10 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		count = controller.getCount(lordOfTheUnreal);
 		if (count > 0 && permanent.hasSubType(MagicSubType.Illusion)) {
 			both += controller.getCount(lordOfTheUnreal);
+		}
+		count = controller.getCount(merfolkSovereign);
+		if (count > 0 && permanent.hasSubType(MagicSubType.Merfolk)) {
+			both += getOtherCount(merfolkSovereign,permanent,count);
 		}
 		count = controller.getCount(eleshNorn);
 		both += getOtherCount(eleshNorn,permanent,count) * 2;
@@ -280,6 +285,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		levitation=definitions.getCard("Levitation").getIndex();
 		lordOfTheUnreal=definitions.getCard("Lord of the Unreal").getIndex();
 		madrushCyclops=definitions.getCard("Madrush Cyclops").getIndex();
+		merfolkSovereign=definitions.getCard("Merfolk Sovereign").getIndex();
 		murkfiendLiege=definitions.getCard("Murkfiend Liege").getIndex();
 		platinumAngel=definitions.getCard("Platinum Angel").getIndex();
 		razorjawOni=definitions.getCard("Razorjaw Oni").getIndex();
