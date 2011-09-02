@@ -11,17 +11,9 @@ import magic.model.event.MagicEvent;
 /**
  * Trigger that occurs when a card with the living weapon mechanic comes into play
  */
-public class MagicLivingWeaponTrigger extends MagicTrigger {
-	
-    public MagicLivingWeaponTrigger() {
-		super(MagicTriggerType.WhenComesIntoPlay);
-	}
-	
+public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
 	@Override
-	public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent) {
-		final MagicPlayer player=permanent.getController();
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 		return new MagicEvent(
             permanent,
             player,
