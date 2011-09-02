@@ -838,6 +838,19 @@ power=1
 toughness=1
 timing=main
 
+>Infantry Veteran
+image=http://magiccards.info/scans/en/m12/20.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
 >Lord of the Unreal
 image=http://magiccards.info/scans/en/m12/62.jpg
 value=3
@@ -2599,6 +2612,16 @@ type=Instant
 color=w
 converted=2
 cost={1}{W}
+timing=pump
+
+>Inspired Charge
+image=http://magiccards.info/scans/en/m11/19.jpg
+value=3
+rarity=C
+type=Instant
+color=w
+converted=4
+cost={2}{W}{W}
 timing=pump
 
 >Giant Growth
