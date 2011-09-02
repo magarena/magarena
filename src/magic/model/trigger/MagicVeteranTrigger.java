@@ -7,12 +7,11 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 
-public class MagicVeteranTrigger extends MagicTrigger {
+public class MagicVeteranTrigger extends MagicWhenDamageIsDealtTrigger {
 
 	private boolean combat;
 	
     public MagicVeteranTrigger(final boolean combat) {
-		super(MagicTriggerType.WhenDamageIsDealt);
 		this.combat=combat;
 	}
 
