@@ -10,17 +10,15 @@ import magic.model.target.MagicTargetFilter;
 
 import java.util.Collection;
 
-public class MagicBattleCryTrigger extends MagicTrigger {
+public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
 
-	private static final MagicTrigger INSTANCE=new MagicBattleCryTrigger();
+	private static final MagicTrigger INSTANCE = new MagicBattleCryTrigger();
+
+    private MagicBattleCryTrigger() {}
 	
-	private MagicBattleCryTrigger() {
-		super(MagicTriggerType.WhenAttacks);
-	}
-
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-        final MagicPlayer player=permanent.getController();
+        final MagicPlayer player = permanent.getController();
 		return (permanent==data) ?
             new MagicEvent(
                     permanent,
