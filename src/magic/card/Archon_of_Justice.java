@@ -9,11 +9,10 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Archon_of_Justice {
-	public static final MagicTrigger T =new MagicTrigger(MagicTriggerType.WhenPutIntoGraveyard) {
+	public static final MagicWhenPutIntoGraveyardTrigger T =new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,

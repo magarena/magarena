@@ -5,11 +5,10 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 public class Arc_Runner {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {
+    public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player = permanent.getController();
