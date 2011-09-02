@@ -2,19 +2,15 @@ package magic.model.trigger;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 
-public class MagicVividLandTrigger extends MagicTrigger {
-	
-    public MagicVividLandTrigger() {
-		super(MagicTriggerType.WhenComesIntoPlay);
-	}
-
+public class MagicVividLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		return new MagicEvent(
                 permanent,
                 permanent.getController(),
