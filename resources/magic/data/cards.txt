@@ -998,6 +998,20 @@ power=1
 toughness=3
 timing=main
 
+>Serra Ascendant
+image=http://magiccards.info/scans/en/m11/28.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Monk
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+ability=lifelink
+timing=main
+
 >Skinrender
 image=http://magiccards.info/scans/en/som/78.jpg
 value=4
