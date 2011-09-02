@@ -39,7 +39,7 @@ public class ArtificialScore {
 		if (this==INVALID_SCORE) {
 			return "none"; 
 		}
-		final StringBuffer buffer=new StringBuffer();
+		final StringBuilder buffer=new StringBuilder();
 		buffer.append(score).append(" at ").append(depth);
 		return buffer.toString();
 	}

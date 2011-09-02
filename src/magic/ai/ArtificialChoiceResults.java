@@ -12,7 +12,7 @@ public class ArtificialChoiceResults {
 	}
 	
 	public String toString() {
-		final StringBuffer buffer=new StringBuffer();
+		final StringBuilder buffer=new StringBuilder();
 		buffer.append("[").append(worker).append('/').append(gameCount).append('/').append(aiScore).append("]");
 		if (choiceResults!=null) {
 			buffer.append(" (");
