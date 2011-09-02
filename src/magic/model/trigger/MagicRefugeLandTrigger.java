@@ -6,15 +6,9 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
 
-public class MagicRefugeLandTrigger extends MagicTrigger {
-	
-    public MagicRefugeLandTrigger() {
-		super(MagicTriggerType.WhenComesIntoPlay);
-	}
-
+public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent) {
-		final MagicPlayer player = permanent.getController();
+	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		return new MagicEvent(
                 permanent,
                 player,
