@@ -8,11 +8,10 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicPowerTargetPicker;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 public class Wall_of_Reverence {
-    public static final MagicTrigger T = new MagicTrigger(MagicTriggerType.AtEndOfTurn) {
+    public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
