@@ -932,6 +932,19 @@ toughness=3
 ability=defender
 timing=main
 
+>Prodigal Pyromancer
+image=http://magiccards.info/scans/en/dpa/51.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Wizard
+color=r
+converted=3
+cost={2}{R}
+power=1
+toughness=1
+timing=fmain
+
 >Roc Egg
 image=http://magiccards.info/scans/en/m12/32.jpg
 value=3
@@ -944,6 +957,19 @@ cost={2}{W}
 power=0
 toughness=3
 ability=defender
+timing=main
+
+>Rotting Legion
+image=http://magiccards.info/scans/en/m11/115.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=5
+cost={4}{B}
+power=4
+toughness=5
 timing=main
 
 >Royal Assassin
