@@ -760,6 +760,19 @@ power=1
 toughness=1
 timing=main
 
+>Goblin Balloon Brigade
+image=http://magiccards.info/scans/en/m11/140.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=1
+cost={R}
+power=1
+toughness=1
+timing=main
+
 >Goblin Fireslinger
 image=http://magiccards.info/scans/en/m12/139.jpg
 value=2
@@ -783,6 +796,19 @@ color=r
 converted=2
 cost={1}{R}
 power=1
+toughness=1
+timing=main
+
+>Goldenglow Moth
+image=http://magiccards.info/scans/en/m11/15.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=w
+converted=1
+cost={W}
+power=0
 toughness=1
 timing=main
 
