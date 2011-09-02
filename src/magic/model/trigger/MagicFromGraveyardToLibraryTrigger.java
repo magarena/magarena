@@ -8,12 +8,7 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 
-public class MagicFromGraveyardToLibraryTrigger extends MagicTrigger {
-	
-    public MagicFromGraveyardToLibraryTrigger() {
-		super(MagicTriggerType.WhenPutIntoGraveyard);
-	}
-
+public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyardTrigger {
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 		final MagicCard card=triggerData.card;
