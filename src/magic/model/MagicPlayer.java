@@ -119,7 +119,7 @@ public class MagicPlayer implements MagicTarget {
     }
     
     public String getIdString() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append(keys[0]);
         for (int i = 1; i < keys.length; i++) {
             sb.append(' ');
