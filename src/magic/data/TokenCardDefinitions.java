@@ -158,7 +158,7 @@ public class TokenCardDefinitions {
 		}
 	};	
 	
-	public static final MagicCardDefinition SPIRIT_TOKEN_CARD=new MagicCardDefinition("Spirit") {
+	public static final MagicCardDefinition SPIRIT1_TOKEN_CARD = new MagicCardDefinition("Spirit","Spirit1") {
 		public void initialize() {
 			setToken();
 			setValue(1);
@@ -169,7 +169,22 @@ public class TokenCardDefinitions {
 			setPower(1);
 			setToughness(1);
 		}
-	};	
+	};
+	
+	public static final MagicCardDefinition SPIRIT2_TOKEN_CARD = new MagicCardDefinition("Spirit","Spirit2") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Spirit"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.White);
+			setColoredType();
+			setPower(1);
+			setToughness(1);
+			setAbility(MagicAbility.Flying);
+		}
+	};
 
 	public static final MagicCardDefinition BAT_TOKEN_CARD=new MagicCardDefinition("Bat") {
 		public void initialize() {
@@ -447,7 +462,8 @@ public class TokenCardDefinitions {
 		GOBLIN2_TOKEN_CARD,
 		GOBLIN_SOLDIER_TOKEN_CARD,
 		OGRE_TOKEN_CARD,
-		SPIRIT_TOKEN_CARD,
+		SPIRIT1_TOKEN_CARD,
+		SPIRIT2_TOKEN_CARD,
 		BAT_TOKEN_CARD,
 		FAERIE_ROGUE_TOKEN_CARD,
 		GRIFFIN_TOKEN_CARD,

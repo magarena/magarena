@@ -7174,6 +7174,17 @@ toughness=2
 ability=deathtouch
 timing=fmain
 
+>Afterlife
+image=http://magiccards.info/scans/en/cmd/2.jpg
+value=3
+removal=3
+rarity=U
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=removal
+
 >Archon of Justice
 image=http://magiccards.info/scans/en/eve/1.jpg
 value=4
