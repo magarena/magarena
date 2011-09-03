@@ -21,8 +21,11 @@ public class MagicMoveCardAction extends MagicAction {
 	private final MagicLocationType fromLocation;
 	private final MagicLocationType toLocation;
 		
-	private MagicMoveCardAction(final MagicCard card,final MagicPermanent permanent,final MagicLocationType fromLocation,final MagicLocationType toLocation) {
-		
+	private MagicMoveCardAction(
+            final MagicCard card,
+            final MagicPermanent permanent,
+            final MagicLocationType fromLocation,
+            final MagicLocationType toLocation) {
 		this.card=card;
 		this.permanent=permanent;
 		this.fromLocation=fromLocation;
@@ -30,17 +33,14 @@ public class MagicMoveCardAction extends MagicAction {
 	}
 	
 	public MagicMoveCardAction(final MagicCard card,final MagicLocationType fromLocation,final MagicLocationType toLocation) {
-		
 		this(card,null,fromLocation,toLocation);
 	}
 	
 	public MagicMoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
-		
 		this(permanent.getCard(),permanent,MagicLocationType.Play,toLocation);
 	}
 	
 	public MagicMoveCardAction(final MagicCardOnStack cardOnStack) {
-		
 		this(cardOnStack.getCard(),null,MagicLocationType.Stack,cardOnStack.getMoveLocation());
 	}
 
