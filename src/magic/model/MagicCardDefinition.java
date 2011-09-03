@@ -63,12 +63,12 @@ public class MagicCardDefinition {
 	private final String name;
 	private final String fullName;
 	private String imageURL;
-    private Collection<Long> ignore = null;
+    private Collection<Long> ignore;
 	private int index=-1;
 	private int value=0;
 	private int removal=0;
 	private int score=-1; // not initialized
-	private MagicRarity rarity = null;
+	private MagicRarity rarity;
 	private boolean token=false;
 	private int typeFlags=0;
 	private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
@@ -85,8 +85,8 @@ public class MagicCardDefinition {
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
-    private MagicActivation cardActivation = null;
-    private MagicLocalVariable attachmentLocalVariable = null;
+    private MagicActivation cardActivation;
+    private MagicLocalVariable attachmentLocalVariable;
 	private final MagicLocalVariableList localVariables=new MagicLocalVariableList();
 	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicTrigger> comeIntoPlayTriggers=new ArrayList<MagicTrigger>();
