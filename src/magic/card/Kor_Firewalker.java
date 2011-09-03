@@ -32,9 +32,7 @@ public class Kor_Firewalker {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			if (player!=null) {
-			    game.doAction(new MagicChangeLifeAction(player,1));
-			}
+            game.doAction(new MagicChangeLifeAction(player,1));
 		}		
     };
 }
