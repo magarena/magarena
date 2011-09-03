@@ -4635,6 +4635,20 @@ toughness=1
 ability=first strike
 timing=main
 
+>Windrider Eel
+image=http://magiccards.info/scans/en/zen/78.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Fish
+color=b
+converted=4
+cost={3}{B}
+power=2
+toughness=2
+ability=flying
+timing=main
+
 >White Knight
 image=http://magiccards.info/scans/en/m11/39.jpg
 value=3
