@@ -35,6 +35,6 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
             itemOnStack.getEvent().getTargetPicker(),
             new Object[]{itemOnStack},
             EVENT_ACTION,
-            null);
+            "");
 	}
 }
