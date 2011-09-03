@@ -706,6 +706,19 @@ toughness=1
 ability=flying
 timing=main
 
+>Gatekeeper of Malakir
+image=http://magiccards.info/scans/en/zen/89.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Vampire,Warrior
+color=b
+converted=2
+cost={B}{B}
+power=2
+toughness=2
+timing=fmain
+
 >Gideon's Avenger
 image=http://magiccards.info/scans/en/m12/17.jpg
 value=3
@@ -5730,6 +5743,20 @@ cost={W}
 power=1
 toughness=2
 timing=aura
+
+>Unholy Strength
+image=http://magiccards.info/scans/en/m11/119.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=1
+cost={B}
+power=2
+toughness=1
+timing=aura
+
 
 >Goblin War Paint
 image=http://magiccards.info/scans/en/zen/129.jpg
