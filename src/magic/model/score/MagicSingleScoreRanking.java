@@ -11,7 +11,6 @@ public class MagicSingleScoreRanking implements MagicScoreRanking {
 	
 	public MagicSingleScoreRanking(final boolean best) {
 		this.best=best;
-		result=null;
 		bestScore=best?Integer.MIN_VALUE:Integer.MAX_VALUE;
 	}
 
