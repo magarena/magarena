@@ -1,7 +1,6 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDeclareBlockersAction;
 import magic.model.choice.MagicDeclareBlockersChoice;
@@ -23,6 +22,6 @@ public class MagicDeclareBlockersEvent extends MagicEvent {
 	
 	public MagicDeclareBlockersEvent(final MagicPlayer player) {
 		
-		super(MagicSource.NONE,player,MagicDeclareBlockersChoice.getInstance(),new Object[]{player},EVENT_ACTION,"");
+		super(MagicGame.NO_SOURCE,player,MagicDeclareBlockersChoice.getInstance(),new Object[]{player},EVENT_ACTION,"");
 	}
 }

@@ -115,7 +115,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 				    buildResult(builder,result); // For cleanup.
 					return UNDO_CHOICE_RESULTS;
 				}
-				controller.setSourceCardDefinition(MagicSource.NONE);
+				controller.setSourceCardDefinition(MagicGame.NO_SOURCE);
 				controller.clearValidChoices();					
 				final MagicPermanent attacker=(MagicPermanent)controller.getChoiceClicked();
 				attacker.addBlockingCreature(blocker);
