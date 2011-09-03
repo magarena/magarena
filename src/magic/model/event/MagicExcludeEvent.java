@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicExcludeChoice;
 import magic.model.choice.MagicExcludeResult;
@@ -20,6 +21,6 @@ public class MagicExcludeEvent extends MagicEvent {
 	};
 	
 	public MagicExcludeEvent(final MagicPlayer player) {
-		super(null,player,MagicExcludeChoice.getInstance(),MagicEvent.NO_DATA,EVENT_ACTION,"");
+		super(MagicSource.NONE,player,MagicExcludeChoice.getInstance(),MagicEvent.NO_DATA,EVENT_ACTION,"");
 	}
 }
