@@ -1136,6 +1136,20 @@ toughness=1
 ability=defender
 timing=smain
 
+>Wall of Omens
+image=http://magiccards.info/scans/en/cmd/37.jpg 
+value=2
+rarity=U
+type=Creature
+subtype=Wall
+color=w
+converted=2
+cost={1}{W}
+power=0
+toughness=4
+ability=defender
+timing=smain
+
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5
