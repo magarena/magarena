@@ -7385,6 +7385,16 @@ converted=1
 cost={U}
 timing=removal
 
+>Pulse of the Fields
+image=http://magiccards.info/scans/en/ds/11.jpg
+value=4
+rarity=R
+type=Sorcery
+color=w
+converted=3
+cost={1}{W}{W}
+timing=main
+
 >Pulse of the Forge
 image=http://magiccards.info/scans/en/ds/66.jpg
 value=4
