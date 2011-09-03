@@ -4593,6 +4593,20 @@ power=0
 toughness=1
 timing=main
 
+>Plated Geopede
+image=http://magiccards.info/scans/en/zen/141.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=r
+converted=2
+cost={1}{R}
+power=1
+toughness=1
+ability=first strike
+timing=main
+
 >White Knight
 image=http://magiccards.info/scans/en/m11/39.jpg
 value=3
