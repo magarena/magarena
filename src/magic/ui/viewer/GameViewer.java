@@ -93,7 +93,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 			@Override
 			public void mouseEntered(final MouseEvent event) {
 				final MagicCardDefinition cardDefinition=controller.getSourceCardDefinition();
-				if (cardDefinition!=null) {
+				if (cardDefinition!=MagicCardDefinition.UNKNOWN) {
 					if (GeneralConfig.getInstance().getTextView()) {
 						controller.viewCard(cardDefinition,0);
 					} else {
