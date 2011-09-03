@@ -55,6 +55,6 @@ public enum MagicManaType {
 			case Red: return small?IconImages.COST_RED:IconImages.RED;
 			case White: return small?IconImages.COST_WHITE:IconImages.WHITE;
 		}
-		return null;
+        throw new RuntimeException("No icon available for MagicManaType " + this);
 	}
 }
