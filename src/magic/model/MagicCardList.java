@@ -73,14 +73,14 @@ public class MagicCardList extends ArrayList<MagicCard> {
         }
 		return index;
 	}
-	
+
 	public MagicCard getCard(final long id) {
 		for (final MagicCard card : this) {
 			if (card.getId()==id) {
 				return card;
 			}
 		}
-		return null;
+		return MagicCard.NONE;
 	}
 	
 	public MagicCard getRandomCard() {

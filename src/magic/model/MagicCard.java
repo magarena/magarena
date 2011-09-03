@@ -9,6 +9,7 @@ import java.util.Collections;
 public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> {
 
 	public static final int TOKEN_ID=-1;
+    public static final MagicCard NONE = new MagicCard();
 	
 	private MagicCardDefinition cardDefinition;
 	private MagicPlayer owner;
@@ -46,17 +47,18 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 		final MagicPlayer mappedOwner=(MagicPlayer)owner.map(game);
 
         MagicCard card = mappedOwner.getHand().getCard(id);
-        if (card == null) {
+        if (card == MagicCard.NONE) {
             card = mappedOwner.getGraveyard().getCard(id);
         }
-        if (card == null) {
+        if (card == MagicCard.NONE) {
             card = mappedOwner.getExile().getCard(id);
         }
-        if (card == null) {
+        if (card == MagicCard.NONE) {
             card = mappedOwner.getLibrary().getCard(id);
         }
-
-        assert card != null: "ERROR! Mapping card failed, card " + id + " not found";
+        if (card == MagicCard.NONE) {
+            throw new RuntimeException("Mapping card failed, card " + getName() + " " + id + " not found");
+        }
 		return card;
     }
 	
