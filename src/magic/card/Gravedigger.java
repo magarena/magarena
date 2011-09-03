@@ -21,7 +21,7 @@ public class Gravedigger {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
 	                new MagicMayChoice(
                         "You may return target creature card from your graveyard to your hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),

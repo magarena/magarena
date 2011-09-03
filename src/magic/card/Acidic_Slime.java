@@ -16,7 +16,7 @@ public class Acidic_Slime {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,

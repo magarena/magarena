@@ -18,7 +18,7 @@ public class Lavaborn_Muse {
 			return (permanent.getController()!=player&&player.getHandSize()<3) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
+                        player,
                         new Object[]{permanent,player},
                         this,
                         permanent + " deals 3 damage to " + player + "."):

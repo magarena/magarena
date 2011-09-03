@@ -18,7 +18,7 @@ public class Man_o__War {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicBounceTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,

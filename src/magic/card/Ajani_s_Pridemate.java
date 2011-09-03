@@ -16,7 +16,7 @@ public class Ajani_s_Pridemate {
 			if (player == data) {
 				return new MagicEvent(
 						permanent,
-						permanent.getController(),
+						player,
 						new Object[]{permanent},
 						this,
 						"Put a +1/+1 counter on " + permanent + ".");

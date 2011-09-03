@@ -67,7 +67,7 @@ public class Carnifex_Demon {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     new Object[]{permanent},
                     this,
 					permanent + " enters the battlefield with two -1/-1 counters on it.");

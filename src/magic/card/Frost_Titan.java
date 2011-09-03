@@ -53,7 +53,7 @@ public class Frost_Titan {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.NEG_TARGET_PERMANENT,
                     MagicEvent.NO_DATA,
                     this,
