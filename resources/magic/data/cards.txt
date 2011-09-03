@@ -864,6 +864,20 @@ power=1
 toughness=1
 timing=main
 
+>Jenara, Asura of War
+image=http://magiccards.info/scans/en/arb/128.jpg
+value=4
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+color=gwu
+converted=3
+cost={G}{W}{U}
+power=3
+toughness=3
+ability=flying
+timing=fmain
+
 >Lord of the Unreal
 image=http://magiccards.info/scans/en/m12/62.jpg
 value=3
