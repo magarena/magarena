@@ -32,11 +32,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private MagicCardDefinition cardDefinition;
 	private MagicPlayer controller;
 	private MagicLocalVariableList localVariables;
-	private MagicPermanent equippedCreature=null;
+	private MagicPermanent equippedCreature;
 	private MagicPermanentSet equipmentPermanents;
-	private MagicPermanent enchantedCreature=null;
+	private MagicPermanent enchantedCreature;
 	private MagicPermanentSet auraPermanents;
-	private MagicPermanent blockedCreature=null;
+	private MagicPermanent blockedCreature;
 	private MagicPermanentList blockingCreatures;
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
 	private int stateFlags=MagicPermanentState.Summoned.getMask();
@@ -52,7 +52,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     // Allows cached retrieval of power, toughness and abilities.
 	private boolean cached=false;
-	private MagicPowerToughness cachedTurnPowerToughness=null;
+	private MagicPowerToughness cachedTurnPowerToughness;
 	private long cachedTurnAbilityFlags=0;
 	private EnumSet<MagicSubType> cachedSubTypeFlags;
 	private int cachedTypeFlags=0;
@@ -138,13 +138,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             preventDamage,
         };
 		return magic.MurmurHash3.hash(input);
-        /*		
-		if (equippedCreature!=null) {
-			pid+=equippedCreature.cardDefinition.getIndex();
-		} else if (enchantedCreature!=null) {
-			pid+=enchantedCreature.cardDefinition.getIndex();
-		}
-        */
  	}
 	
 	/** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */
@@ -446,12 +439,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public int getStaticScore(final MagicGame game) {
-		
 		return cardDefinition.getStaticType().getScore(game,this);
 	}
 	
 	public void setCached(final MagicGame game,final boolean cached) {
-		
 		if (cached) {
 			cachedTurnPowerToughness=getPowerToughness(game,true);
 			cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
