@@ -1150,6 +1150,20 @@ toughness=4
 ability=defender
 timing=smain
 
+>Carven Caryatid
+image=http://magiccards.info/scans/en/rav/155.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=3
+cost={1}{G}{G}
+power=2
+toughness=5
+ability=defender
+timing=smain
+
 >Empyrial Archangel
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5
