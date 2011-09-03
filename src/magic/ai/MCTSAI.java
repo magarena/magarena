@@ -334,8 +334,6 @@ public class MCTSAI implements MagicAI {
     private double randomPlay(final MCTSGameTree node, final MagicGame game) {
         //terminal node, no need for random play
         if (game.isFinished()) {
-            assert game.getLosingPlayer() != null : "ERROR! Game finished but no losing player";
-            
             if (game.getLosingPlayer() == game.getScorePlayer()) {
                 node.setAILose(0);
                 return 0.0;
@@ -349,7 +347,7 @@ public class MCTSAI implements MagicAI {
         getNextChoices(game, true);
         final int actions = Math.min(MAX_ACTIONS, game.getNumActions() - startActions);
 
-        if (game.getLosingPlayer() == null) {
+        if (!game.isFinished()) {
             return 0.5;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
             return actions/(2.0 * MAX_ACTIONS);
