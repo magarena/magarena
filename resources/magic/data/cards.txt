@@ -7385,6 +7385,17 @@ converted=1
 cost={U}
 timing=removal
 
+>Pulse of the Forge
+image=http://magiccards.info/scans/en/ds/66.jpg
+value=4
+removal=4
+rarity=R
+type=Instant
+color=r
+converted=3
+cost={1}{R}{R}
+timing=removal
+
 >Pulse of the Tangle
 image=http://magiccards.info/scans/en/ds/80.jpg
 value=4
