@@ -74,7 +74,7 @@ public class MagicEvent implements MagicCopyable {
             final Object data[],
             final MagicEventAction action,
             final String description) {
-		this(source,player,NO_CHOICES,null,data,action,description);
+		this(source,player,NO_CHOICES,MagicDefaultTargetPicker.getInstance(),data,action,description);
 	}
 	
 	private MagicEvent() {
@@ -151,15 +151,12 @@ public class MagicEvent implements MagicCopyable {
 	}
 	
 	public final String getDescription(final Object choiceResults[]) {
-		if (description!=null) {
-			return MagicMessage.replaceChoices(description,choiceResults);
-		}
-		return description;
+        return MagicMessage.replaceChoices(description,choiceResults);
 	}
 
 	public final String getChoiceDescription() {
 		final String description=getDescription(MagicEvent.NO_CHOICE_RESULTS);
-		if (description!=null) {
+		if (description.length() > 0) {
 			return description;
 		}
 		return hasChoice()?choice.getDescription():"";
@@ -276,7 +273,7 @@ public class MagicEvent implements MagicCopyable {
 	}
 
     public String toString() {
-        return "EVENT: " + player.getIndex() + " " + description + " " + (choice != null ? choice.getDescription() : "null");
+        return "EVENT: " + player.getIndex() + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }
 
     public long getEventId() {

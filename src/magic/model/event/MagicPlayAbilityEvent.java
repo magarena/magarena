@@ -17,7 +17,6 @@ public class MagicPlayAbilityEvent extends MagicEvent {
 	};
 	
 	public MagicPlayAbilityEvent(final MagicSource source) {
-		
-		super(source,source.getController(),new Object[]{source},EVENT_ACTION,null);
+		super(source,source.getController(),new Object[]{source},EVENT_ACTION,"");
 	}
 }
