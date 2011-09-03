@@ -4,9 +4,12 @@ import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+
+import java.util.LinkedList;
 
 public abstract class MagicPutIntoPlayAction extends MagicAction {
 
@@ -49,7 +52,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 			permanent.setEnchantedCreature(null);
 		}
 		permanent.getController().removePermanent(permanent);
-		game.removeTriggers(permanent,null);
+		game.removeTriggers(permanent,new LinkedList<MagicPermanentTrigger>());
 	}
 	
 	protected void setEnchantedPermanent(final MagicPermanent enchantedPermanent) {
