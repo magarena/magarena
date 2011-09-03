@@ -57,7 +57,7 @@ public enum MagicColor {
 			case Red: return MagicAbility.ProtectionFromRed;
 			case White: return MagicAbility.ProtectionFromWhite;
 		}
-		return null;
+        throw new RuntimeException("No protection ability for MagicColor " + this);
 	}
 	
 	public MagicAbility getLandwalkAbility() {
@@ -68,7 +68,7 @@ public enum MagicColor {
 			case Red: return MagicAbility.Mountainwalk;
 			case White: return MagicAbility.PlainsWalk;
 		}	
-		return null;
+        throw new RuntimeException("No landwalk ability for MagicColor " + this);
 	}
 	
 	public MagicSubType getLandSubType() {
@@ -79,7 +79,7 @@ public enum MagicColor {
 			case Red: return MagicSubType.Mountain;
 			case White: return MagicSubType.Plains;		
 		}
-		return null;
+        throw new RuntimeException("No land subtype for MagicColor " + this);
 	}
 	
 	public MagicManaType getManaType() {
@@ -101,7 +101,7 @@ public enum MagicColor {
 			case Red: return IconImages.RED;
 			case White: return IconImages.WHITE;
 		}
-		return null;
+        throw new RuntimeException("No icon for MagicColor " + this);
 	}
 
 	public static int getFlags(final String colors) {
@@ -120,13 +120,13 @@ public enum MagicColor {
 			if (color.symbol==usymbol) {
 				return color;
 			}
-		}		
-		return null;
+		}
+        throw new RuntimeException("No corresponding MagicColor for " + symbol);
 	}	
 	
 	public static String getRandomColors(final int count) {
 		final List<Character> colors=new ArrayList<Character>(Arrays.<Character>asList('b','u','g','r','w'));
-		final StringBuffer colorText=new StringBuffer();
+		final StringBuilder colorText=new StringBuilder();
 		for (int c=count;c>0;c--) {
 			final int index=MagicRandom.nextInt(colors.size());
 			colorText.append((char)colors.remove(index));			
