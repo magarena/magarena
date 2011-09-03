@@ -76,7 +76,7 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 				return itemOnStack;
 			}
 		}
-		return null;
+        throw new RuntimeException("No corresponding MagicItemOnStack with id " + id);
 	}	
 	
 	public boolean hasActivationOnTop(final MagicSource source,final long actId) {
