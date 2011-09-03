@@ -8,13 +8,11 @@ public class MagicLogMarkerAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		
 		oldSize=game.getLogBook().size();
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		game.clearMessages();
 		game.getLogBook().removeTo(oldSize);
 	}
