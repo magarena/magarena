@@ -11,7 +11,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	public static final int TOKEN_ID=-1;
     public static final MagicCard NONE = new MagicCard();
 	
-	private MagicCardDefinition cardDefinition;
+	private MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
 	private MagicPlayer owner;
 	private boolean token=false;
 	private boolean known=true;
