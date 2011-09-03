@@ -14,7 +14,13 @@ import java.util.List;
 
 public class MagicPlayer implements MagicTarget {
 
-    public static final MagicPlayer NONE = new MagicPlayer();
+    public static final MagicPlayer NONE = new MagicPlayer() {
+        @Override
+        public String toString() {
+            return "";
+        }
+    };
+
 	private static final long ID_FACTOR=31;
 	
 	private MagicPlayerDefinition playerDefinition;
