@@ -19,7 +19,7 @@ public class Sphere_of_the_Suns {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		    return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     new Object[]{permanent},
                     this,
                     permanent+" enters the battlefield tapped with three charge counters on it.");
