@@ -80,8 +80,18 @@ public class GameController {
             }
         });
 	}
+	
+    public void disableActionUndoButtons() {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                gameViewer.disableButton(false);
+		        gameViewer.enableUndoButton(true);
+            }
+        });
+	}
     
-    public static void pause(int t) {
+    public void pause(int t) {
+        disableActionUndoButtons();
         try { //sleep
             Thread.sleep(t);
 		} catch (final InterruptedException ex) {

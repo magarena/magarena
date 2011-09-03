@@ -141,7 +141,7 @@ public class GameViewer extends TexturedPanel implements ActionListener {
 		return undoButton.isEnabled();
 	}
 	
-	private void enableUndoButton(final boolean thinking) {
+	public void enableUndoButton(final boolean thinking) {
 		final int undoPoints=game.getNrOfUndoPoints();
 		final boolean allowUndo=undoPoints>0&&!thinking;
 		undoButton.setEnabled(allowUndo);
