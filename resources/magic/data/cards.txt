@@ -5106,6 +5106,15 @@ converted=7
 cost={4}{W/B}{W/B}{W/B}
 timing=enchantment
 
+>Howling Mine
+image=http://magiccards.info/scans/en/cmd/251.jpg
+value=2
+rarity=R
+type=Artifact
+converted=2
+cost={2}
+timing=main
+
 >Seal of Fire
 image=http://magiccards.info/scans/en/di/71.jpg
 value=2
