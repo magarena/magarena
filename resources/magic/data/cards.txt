@@ -706,6 +706,20 @@ toughness=1
 ability=flying
 timing=main
 
+>Galepowder Mage
+image=http://magiccards.info/scans/en/lw/15.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Kithkin,Wizard
+color=w
+converted=4
+cost={3}{W}
+power=3
+toughness=3
+ability=flying
+timing=main
+
 >Gatekeeper of Malakir
 image=http://magiccards.info/scans/en/zen/89.jpg
 value=3
