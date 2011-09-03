@@ -218,7 +218,7 @@ public class MCTSAI implements MagicAI {
             final int bestC, 
             final int sims) {
             
-        final StringBuffer out = new StringBuffer();
+        final StringBuilder out = new StringBuilder();
         final long duration = System.currentTimeMillis() - START_TIME;
 
         out.append("MCTS" +
@@ -437,7 +437,7 @@ public class MCTSAI implements MagicAI {
     }
     
     private static String CR2String(Object[] choiceResults) {
-        final StringBuffer buffer=new StringBuffer();
+        final StringBuilder buffer=new StringBuilder();
         if (choiceResults!=null) {
             buffer.append(" (");
             boolean first=true;
@@ -455,7 +455,7 @@ public class MCTSAI implements MagicAI {
     }
 
     private boolean printPath(final List<MCTSGameTree> path) {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for (MCTSGameTree p : path) {
             sb.append(" -> ").append(p.desc);
         }

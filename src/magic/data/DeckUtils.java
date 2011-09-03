@@ -136,7 +136,7 @@ public class DeckUtils {
         }
         
         // Find up to 3 of the most common colors in the deck.
-        final StringBuffer colorText=new StringBuffer();
+        final StringBuilder colorText=new StringBuilder();
         while (colorText.length()<3) {
             int maximum=0;
             int index=0;

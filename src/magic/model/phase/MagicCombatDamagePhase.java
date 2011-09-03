@@ -35,14 +35,14 @@ public class MagicCombatDamagePhase extends MagicPhase {
 
 		final int lifeAfter=defendingPlayer.getLife();
 		final int poisonAfter=defendingPlayer.getPoison();
-		final StringBuffer message=new StringBuffer();
+		final StringBuilder message=new StringBuilder();
 		if (lifeAfter>lifeBefore) {
-			message.append(" gains " + (lifeAfter-lifeBefore) + " life.");
+			message.append(" gains ").append(lifeAfter-lifeBefore).append(" life.");
 		} else if (lifeAfter<lifeBefore) {
-			message.append(" loses " + (lifeBefore-lifeAfter) + " life.");
+			message.append(" loses ").append(lifeBefore-lifeAfter).append(" life.");
 		}
 		if (poisonAfter>poisonBefore) {
-			message.append(" gets " + (poisonAfter-poisonBefore) + " poison counters.");
+			message.append(" gets ").append(poisonAfter-poisonBefore).append(" poison counters.");
 		}
 		if (message.length()>0) {
 			game.logMessage(defendingPlayer,"{c}" + playerName + message.toString());			

@@ -103,7 +103,7 @@ public class PermanentViewerInfo {
 	}
 		
 	private static String getText(final MagicGame game,final MagicPermanent permanent,final long abilityFlags) {
-		final StringBuffer textBuffer=new StringBuffer("");			
+		final StringBuilder textBuffer=new StringBuilder();			
 		
 		// States
 		if (isTargeted(game,permanent)) {
@@ -169,7 +169,7 @@ public class PermanentViewerInfo {
 					if (first) {
 						first=false;
 						if (textBuffer.length()>0) {
-							textBuffer.append("|");
+							textBuffer.append('|');
 						}						
 					} else {
 						textBuffer.append(", ");						
@@ -186,7 +186,7 @@ public class PermanentViewerInfo {
 				if (first) {
 					first=false;
 					if (textBuffer.length()>0) {
-						textBuffer.append("|");
+						textBuffer.append('|');
 					}
 				} else {
 					textBuffer.append(", ");

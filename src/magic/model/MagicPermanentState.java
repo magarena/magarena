@@ -14,10 +14,10 @@ public enum MagicPermanentState {
 	SacrificeAtEndOfTurn("sacrifice at end of turn","{S}"),
 	RemoveAtEndOfTurn("remove from game at end of turn","{E}"),
 	RemoveAtEndOfYourTurn("remove from game at end of your turn","{E}"),
-	ExcludeManaSource("exclude as mana source",null),
-	ExcludeFromCombat("exclude from combat",null),
-	Kicked("kicked",null),
-	Destroyed("destroyed",null),
+	ExcludeManaSource("exclude as mana source",""),
+	ExcludeFromCombat("exclude from combat",""),
+	Kicked("kicked",""),
+	Destroyed("destroyed",""),
 	ReturnToOwnerAtEndOfTurn("return to owner at end of turn","{R}"),
 	;
 
