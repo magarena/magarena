@@ -150,7 +150,7 @@ public class GameController {
 			undoClicked = true;
 			actionClicked = false;
 			choiceClicked = null;
-			setSourceCardDefinition(null);
+			setSourceCardDefinition(MagicSource.NONE);
 			clearValidChoices();
 			notifyAll();
 		}
@@ -262,11 +262,7 @@ public class GameController {
 	}
 
 	public void setSourceCardDefinition(final MagicSource source) {
-		if (source!=null) {
-			sourceCardDefinition=source.getCardDefinition();
-		} else {
-			sourceCardDefinition=null;
-		}
+        sourceCardDefinition=source.getCardDefinition();
 	}
 	
 	public MagicCardDefinition getSourceCardDefinition() {
@@ -325,7 +321,7 @@ public class GameController {
     }
 	
 	public String getMessageWithSource(final MagicSource source,final String message) {
-		if (source==null) {
+		if (source == MagicSource.NONE) {
 			return message;
 		} else {
 			return "("+source+")|"+message;
@@ -371,7 +367,7 @@ public class GameController {
 		setSourceCardDefinition(source);
 		final Object choiceResults[]=event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
 		clearValidChoices();
-		setSourceCardDefinition(null);
+		setSourceCardDefinition(MagicSource.NONE);
 		return choiceResults;
 	}
 
@@ -437,7 +433,7 @@ public class GameController {
 							
 				game.logMessages();
 				clearValidChoices();
-				showMessage(null,
+				showMessage(MagicSource.NONE,
                     "{L} " + 
                     game.getLosingPlayer() + " " + 
                     (gameConceded.get() ? "conceded" : "lost" ) + 
