@@ -47,7 +47,7 @@ public class MagicExcludeResult implements MagicMappable {
 	
 	@Override
 	public String toString() {
-		final StringBuffer buffer=new StringBuffer();
+		final StringBuilder buffer=new StringBuilder();
 		for (int index=0,flag=1;index<excludePermanents.size();index++,flag<<=1) {
 			if (buffer.length()>0) {
 				buffer.append(", ");

@@ -28,7 +28,7 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
 
 	@Override
 	public String toString() {
-		final StringBuffer buffer=new StringBuffer();
+		final StringBuilder buffer=new StringBuilder();
 		for (final MagicCard card : this)  {
 			if (buffer.length()>0) {
 				buffer.append(", ");
