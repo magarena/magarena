@@ -45,7 +45,7 @@ import java.util.TreeSet;
 public class MagicGame {
 
     private static int COUNT = 0;
-    private static MagicGame INSTANCE = null;
+    private static MagicGame INSTANCE;
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
 	public static final int LOSING_POISON=10;
 	
@@ -73,17 +73,18 @@ public class MagicGame {
 	private boolean artificial;
 	private boolean fastChoices=false;
 	private boolean immediate=false;
+    private boolean disableLog = false; 
 	private MagicPlayer visiblePlayer;
 	private MagicPlayer turnPlayer;
-	private MagicPlayer losingPlayer=null;
+	private MagicPlayer losingPlayer = MagicPlayer.NONE;
 	private MagicGameplay gameplay;
 	private MagicPhase phase;
 	private MagicStep step;
 	private MagicPayedCost payedCost;
 	private MagicActionList actions;
 	private MagicActionList undoPoints;
-	private final MagicLogBook logBook;
-	private final MagicLogMessageBuilder logMessageBuilder;
+	private MagicLogBook logBook;
+	private MagicLogMessageBuilder logMessageBuilder;
     private long[] keys;
     private long time = 1000000;
 
@@ -119,8 +120,8 @@ public class MagicGame {
 		this.gameplay=gameplay;
 		this.players=players;
 		this.sound=sound;
-		//identifiers=new long[MagicIdentifierType.NR_OF_IDENTIFIERS];
-		triggers=new MagicPermanentTriggerMap();
+		
+        triggers=new MagicPermanentTriggerMap();
 		turnTriggers=new MagicPermanentTriggerList();
 		exiledUntilEndOfTurn=new MagicCardList();
 		events=new MagicEventQueue();
@@ -185,9 +186,12 @@ public class MagicGame {
         
         //historical items are cleared
         this.actions=new MagicActionList();
-		this.undoPoints=null;
+        this.disableLog = true;
+		/*
+        this.undoPoints=null;
 		this.logBook=null;
 		this.logMessageBuilder=null;
+        */
 	}
 	
     public void setSkipTurn(final boolean skip) {
@@ -431,8 +435,7 @@ public class MagicGame {
 	}
 	
 	public boolean isFinished() {
-        return losingPlayer !=null || 
-               mainPhaseCount <= 0;
+        return losingPlayer != MagicPlayer.NONE || mainPhaseCount <= 0;
 	}
 
 	public MagicLogBook getLogBook() {
@@ -532,39 +535,39 @@ public class MagicGame {
 	}
 	
 	public void logMessages() {
-        if (logMessageBuilder == null) {
+        if (disableLog) {
             return;
         }
         logMessageBuilder.logMessages();
 	}
 
 	public void logAppendEvent(final MagicEvent event,final Object choiceResults[]) {
-	    if (logMessageBuilder == null) {
+	    if (disableLog) {
             return;
         }
 		final String message=event.getDescription(choiceResults);
-        if (message == null) {
+        if (message.length() == 0) {
             return;
         }
         logMessageBuilder.appendMessage(event.getPlayer(),message);
 	}
 	
 	public void logAppendMessage(final MagicPlayer player,final String message) {
-        if (logMessageBuilder == null) {
+        if (disableLog) {
             return;
         }
         logMessageBuilder.appendMessage(player,message);
 	}
 	
 	public void logMessage(final MagicPlayer player,final String message) {
-        if (logBook == null) {
+        if (disableLog) {
             return;
         }
         logBook.add(new MagicMessage(this,player,message));
 	}
 	
 	public void logAttackers(final MagicPlayer player,final MagicDeclareAttackersResult result) {
-        if (logBook == null || result.isEmpty()) {
+        if (disableLog || result.isEmpty()) {
             return;
         }
         final SortedSet<String> names=new TreeSet<String>();
@@ -579,7 +582,7 @@ public class MagicGame {
 	}
 	
 	public void logBlockers(final MagicPlayer player,final MagicDeclareBlockersResult result) {
-        if (logBook == null) {
+        if (disableLog) {
             return;
         }
         final SortedSet<String> names=new TreeSet<String>();
@@ -599,7 +602,9 @@ public class MagicGame {
 	}
 
 	public void executeEvent(final MagicEvent event,final Object choiceResults[]) {
-        assert choiceResults != null : "ERROR! choiceResults is null in executeEvent";
+        if (choiceResults == null) {
+            throw new RuntimeException("choiceResults is null");
+        }
         
         logAppendEvent(event,choiceResults);
     
@@ -842,7 +847,7 @@ public class MagicGame {
 		final Object mappedData[]=new Object[length];
 		for (int index=0;index<length;index++) {
 			final Object obj=data[index];
-			if (obj!=null&&obj instanceof MagicMappable) {
+			if (obj != null && obj instanceof MagicMappable) {
 				mappedData[index]=((MagicMappable)obj).map(this);
 			} else {
 				mappedData[index]=obj;
@@ -966,7 +971,6 @@ public class MagicGame {
 	}
 	
 	public boolean filterTarget(final MagicPlayer player,final MagicTargetFilter targetFilter,final MagicTarget target) {
-	
 		if (target==null || 
             target==MagicTargetNone.getInstance() || 
             !targetFilter.accept(this,player,target)) {
