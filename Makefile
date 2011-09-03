@@ -32,6 +32,9 @@ themes: \
 	release/mods/redfire_theme.zip \
 	release/mods/whiteangel_theme.zip
 
+warnings_H.txt: warnings.txt
+	grep "(H)" $^ | grep -v executeTrigger > $@
+
 warnings.txt: $(MAG)
 	~/App/findbugs-1.3.9/bin/findbugs \
 			-textui \
