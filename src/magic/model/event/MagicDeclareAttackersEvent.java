@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDeclareAttackersAction;
 import magic.model.choice.MagicDeclareAttackersChoice;
@@ -21,6 +22,6 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
 	};
 	
 	public MagicDeclareAttackersEvent(final MagicPlayer player) {
-		super(null,player,MagicDeclareAttackersChoice.getInstance(),new Object[]{player},EVENT_ACTION,"");
+		super(MagicSource.NONE,player,MagicDeclareAttackersChoice.getInstance(),new Object[]{player},EVENT_ACTION,"");
 	}
 }
