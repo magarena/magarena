@@ -1075,9 +1075,7 @@ public class MagicGame {
 				final MagicPermanentTrigger permanentTrigger=iterator.next();
 				if (permanentTrigger.getPermanent()==permanent) {
 					iterator.remove();
-					if (removedTriggers!=null) {
-						removedTriggers.add(permanentTrigger);
-					}
+                    removedTriggers.add(permanentTrigger);
 				}
 			}
 		}
