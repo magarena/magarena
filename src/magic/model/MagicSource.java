@@ -5,6 +5,8 @@ import magic.model.event.MagicActivation;
 import java.util.Collection;
 
 public interface MagicSource extends MagicCopyable, MagicMappable {
+    public static final MagicSource NONE = MagicCard.NONE;
+
 	public boolean             isSpell();
 	public boolean             isPermanent();
 	public boolean             isCreature();
