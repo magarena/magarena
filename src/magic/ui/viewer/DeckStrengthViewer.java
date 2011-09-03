@@ -55,7 +55,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	private final JComboBox difficultyComboBox;
 	private final JButton startButton;
 	private final Color textColor;
-	private CalculateThread calculateThread=null;
+	private CalculateThread calculateThread;
 	
 	public DeckStrengthViewer(final MagicTournament tournament) {
 		
@@ -141,7 +141,6 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	}
 	
 	public void halt() {
-		
 		if (calculateThread!=null) {
 			calculateThread.halt();
 			calculateThread=null;
@@ -150,7 +149,6 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-
 		if (calculateThread!=null) {
 			startButton.setEnabled(false);
 			startButton.repaint();
@@ -211,7 +209,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 			
 				gameLabel.setText("Game "+(testTournament.getGamesPlayed()+1));
 				final MagicGame game=testTournament.nextGame(false);
-				controller=new GameController(null,game);
+				controller=new GameController(game);
 				controller.runGame();
 				progressBar.setValue(testTournament.getGamesPlayed());
 				if (testTournament.getGamesPlayed()>0) {
