@@ -28,7 +28,6 @@ public class MagicRemoveFromCombatAction extends MagicAction {
 			blockingCreatures=new MagicPermanentList(permanent.getBlockingCreatures());
 			permanent.removeBlockingCreatures();
 			for (final MagicPermanent blockingCreature : blockingCreatures) {
-
 				blockingCreature.setBlockedCreature(null);
 			}
 		} else {
