@@ -13,7 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MagicPlayer implements MagicTarget {
-	
+
+    public static final MagicPlayer NONE = new MagicPlayer();
 	private static final long ID_FACTOR=31;
 	
 	private MagicPlayerDefinition playerDefinition;

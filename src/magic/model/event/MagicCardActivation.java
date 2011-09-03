@@ -3,6 +3,7 @@ package magic.model.event;
 import magic.data.CardDefinitions;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
@@ -65,7 +66,7 @@ public class MagicCardActivation extends MagicActivation {
 	@Override
 	public final MagicTargetChoice getTargetChoice() {
 		// Not the cleanest way to do this by far...
-		final MagicCard card=new MagicCard(getCardDefinition(),null,0);
+		final MagicCard card=new MagicCard(getCardDefinition(),MagicPlayer.NONE,0);
 		final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,MagicPayedCost.NO_COST);
 		return cardOnStack.getEvent().getTargetChoice();
 	}	
