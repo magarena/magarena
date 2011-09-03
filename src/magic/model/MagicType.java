@@ -34,7 +34,7 @@ public enum MagicType {
 				return type;
 			}
 		}
-		return null;
+        throw new RuntimeException("No corresponding MagicType for " + name);
 	}
 	
     public boolean hasType(final int flags) {
