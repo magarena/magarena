@@ -16,8 +16,13 @@ public class MagicStackChangeTargetsEvent extends MagicEvent {
 	};
 
 	public MagicStackChangeTargetsEvent(final MagicItemOnStack itemOnStack) {
-		
-		super(itemOnStack.getSource(),itemOnStack.getController(),itemOnStack.getEvent().getTargetChoice(),
-				itemOnStack.getEvent().getTargetPicker(),new Object[]{itemOnStack},EVENT_ACTION,null);
+		super(
+            itemOnStack.getSource(),
+            itemOnStack.getController(),
+            itemOnStack.getEvent().getTargetChoice(),
+            itemOnStack.getEvent().getTargetPicker(),
+            new Object[]{itemOnStack},
+            EVENT_ACTION,
+            "");
 	}
 }
