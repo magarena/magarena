@@ -17,7 +17,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	
 	private MagicSource source;
 	private MagicPlayer controller;
-	private MagicActivation activation=null;
+	private MagicActivation activation;
 	private MagicEvent event;
 	private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
 	private long id;
