@@ -1,5 +1,7 @@
 package magic.model;
 
+import magic.model.event.MagicEvent;
+
 import java.lang.reflect.Array;
 import java.util.Collection;
 import java.util.HashMap;
@@ -10,8 +12,12 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
 
 	@SuppressWarnings("unchecked")
 	public <E extends MagicCopyable> E copy(final E source) {
-		if (source==null) {
-			return null;
+		if (source == null || 
+            source==MagicPlayer.NONE || 
+            source == MagicCard.NONE || 
+            source == MagicPermanent.NONE ||
+            source == MagicEvent.NONE) {
+			return source;
 		}		
 		E target=(E)get(source);
 		if (target==null) {			
@@ -23,9 +29,13 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
 	}
 		
 	public Object copyObject(final Object source) {
-		if (source==null) {
-			return null;
-		} else if (source instanceof MagicCopyable) {
+		if (source == null || 
+            source==MagicPlayer.NONE || 
+            source == MagicCard.NONE || 
+            source == MagicPermanent.NONE ||
+            source == MagicEvent.NONE) {
+			return source;
+        } else if (source instanceof MagicCopyable) {
 			return copy((MagicCopyable)source);
 		} else {
 			return source;
@@ -39,7 +49,6 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
 		}
 		final E targets[]=(E[])Array.newInstance(clazz,sources.length);
 		for (int index=0;index<targets.length;index++) {
-			
 			targets[index]=(E)copyObject(sources[index]);
 		}
 		return targets;
