@@ -1092,7 +1092,7 @@ public class MagicGame {
             final Object data) {
         @SuppressWarnings("unchecked")
 		final MagicEvent event=trigger.executeTrigger(this,permanent,data);
-		if (event!=null) {
+		if (event != MagicEvent.NONE) {
 			if (immediate) {
 				if (!event.hasChoice()) {
 					event.executeEvent(this,MagicEvent.NO_CHOICE_RESULTS);
