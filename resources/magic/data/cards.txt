@@ -8078,6 +8078,16 @@ toughness=0
 ability=first strike
 timing=equipment
 
+>Righteous Cause
+image=http://magiccards.info/scans/en/cmd/29.jpg
+value=4
+rarity=U
+type=Enchantment
+color=w
+converted=5
+cost={3}{W}{W}
+timing=enchantment
+
 >Strandwalker
 image=http://magiccards.info/scans/en/mbs/137.jpg
 value=3
