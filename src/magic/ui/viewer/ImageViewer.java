@@ -34,7 +34,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	private static final List<Integer> imageIndices;
 	
 	private final BufferedImage image;
-	private BufferedImage scaledImage=null;
+	private BufferedImage scaledImage;
 	private boolean showScaled=false;
 	private boolean scaled=false;
 	private int imageWidth;
