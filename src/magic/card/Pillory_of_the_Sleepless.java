@@ -21,8 +21,8 @@ public class Pillory_of_the_Sleepless {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPermanent enchanted = permanent.getEnchantedCreature();
-		    final MagicPlayer player = (enchanted != null) ? enchanted.getController() : null;
-			return (player != null && player == data) ?
+		    final MagicPlayer player = enchanted.getController();
+			return (player == data) ?
 				new MagicEvent(
                         enchanted,
                         player,
