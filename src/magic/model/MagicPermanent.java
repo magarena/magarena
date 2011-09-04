@@ -443,17 +443,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public void setCached(final MagicGame game,final boolean cached) {
+        this.cached=cached;
 		if (cached) {
 			cachedTurnPowerToughness=getPowerToughness(game,true);
 			cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
 			cachedSubTypeFlags=getSubTypeFlags();
 			cachedTypeFlags=getTypeFlags();
 			cachedColorFlags=getColorFlags();
-			this.cached=true;
-		} else {
-			cachedTurnPowerToughness=null;
-			this.cached=false;
-		}
+		} 
 	}
 	
 	public int getDamage() {
