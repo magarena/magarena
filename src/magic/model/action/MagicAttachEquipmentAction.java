@@ -6,13 +6,13 @@ import magic.model.MagicPermanent;
 
 /**
  * Unattaches equipment from currently equipped creature.
- * Attaches equipment to new creature when not null.
+ * Attaches equipment to new creature when not MagicPermanent.NONE.
  */
 public class MagicAttachEquipmentAction extends MagicAction {
 
 	private final MagicPermanent equipment;
 	private final MagicPermanent creature;
-	private MagicPermanent oldEquippedCreature;
+	private MagicPermanent oldEquippedCreature = MagicPermanent.NONE;
 	private boolean validEquipment;
 	private boolean validCreature;
 	
@@ -29,7 +29,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		}
 		int score=ArtificialScoringSystem.getTurnScore(game);
 		oldEquippedCreature=equipment.getEquippedCreature();
-		if (oldEquippedCreature!=null) {
+		if (oldEquippedCreature != MagicPermanent.NONE) {
 			score-=oldEquippedCreature.getScore(game);
 			oldEquippedCreature.removeEquipment(equipment);
 			score+=oldEquippedCreature.getScore(game);
@@ -44,14 +44,16 @@ public class MagicAttachEquipmentAction extends MagicAction {
 				score=-score;
 			}
 		}
-		validCreature=creature!=null&&creature.getController().controlsPermanent(creature);
+		validCreature = 
+            creature!=MagicPermanent.NONE && 
+            creature.getController().controlsPermanent(creature);
 		if (validCreature) {
 			score-=creature.getScore(game);
 			equipment.setEquippedCreature(creature);
 			creature.addEquipment(equipment);
 			score+=creature.getScore(game);
 		} else {
-			equipment.setEquippedCreature(null);
+			equipment.setEquippedCreature(MagicPermanent.NONE);
 		}
 		setScore(equipment.getController(),score);		
 		game.setStateCheckRequired();
@@ -65,7 +67,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 				creature.removeEquipment(equipment);
 			}
 			equipment.setEquippedCreature(oldEquippedCreature);
-			if (oldEquippedCreature!=null) {
+			if (oldEquippedCreature!=MagicPermanent.NONE) {
 				oldEquippedCreature.addEquipment(equipment);
 			}
 		}
