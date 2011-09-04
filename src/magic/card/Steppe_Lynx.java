@@ -12,17 +12,14 @@ public class Steppe_Lynx {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
 			final MagicPlayer player=permanent.getController();
-			if (player == played.getController() && 
-                played.isLand()) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        permanent + " gets +2/+2 until end of turn.");
-			} else {
-    			return null;
-            }
+			return (player == played.getController() && played.isLand()) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
+                    permanent + " gets +2/+2 until end of turn."):
+                null;
 		}
 		
 		@Override

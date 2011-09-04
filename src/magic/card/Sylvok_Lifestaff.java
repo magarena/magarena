@@ -11,16 +11,15 @@ public class Sylvok_Lifestaff {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-			if (permanent.getEquippedCreature()==data) {
-				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        player + " gains 3 life.");
-			}			
-			return null;
+            final MagicPlayer player=permanent.getController();
+			return (permanent.getEquippedCreature()==data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player + " gains 3 life."):
+                null;
 		}
 		@Override
 		public void executeEvent(

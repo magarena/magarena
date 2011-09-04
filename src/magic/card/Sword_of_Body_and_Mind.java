@@ -16,18 +16,17 @@ public class Sword_of_Body_and_Mind {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				final MagicPlayer player=permanent.getController();
-				final MagicTarget targetPlayer=damage.getTarget();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player,targetPlayer},
-                        this,
-                        player + " puts a 2/2 green Wolf creature token onto the battlefield and " + targetPlayer +
-                        	" puts the top ten cards of his or her library into his or her graveyard.");
-			}
-			return null;
+            final MagicPlayer player=permanent.getController();
+            final MagicTarget targetPlayer=damage.getTarget();
+			return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player,targetPlayer},
+                    this,
+                    player + " puts a 2/2 green Wolf creature token onto the battlefield and " + targetPlayer +
+                        " puts the top ten cards of his or her library into his or her graveyard."):
+                null;
 		}
 		@Override
 		public void executeEvent(

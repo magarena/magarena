@@ -41,15 +41,14 @@ public class Raging_Ravine {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent creature) {
-			if (permanent == creature && permanent.isCreature()) {
-				return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent},
-                        this,
-                        "Put a +1/+1 counter on " + permanent + ".");
-			}
-			return null;
+			return (permanent == creature && permanent.isCreature()) ?
+				new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent},
+                    this,
+                    "Put a +1/+1 counter on " + permanent + "."):
+                null;
 		}
 		
 		@Override

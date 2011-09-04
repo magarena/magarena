@@ -12,15 +12,14 @@ public class Arc_Runner {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player = permanent.getController();
-			if (player == data) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        "Sacrifice " + permanent + ".");
-			}
-			return null;
+			return (player == data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
+                    "Sacrifice " + permanent + "."):
+                null;
 		}
 		@Override
 		public void executeEvent(

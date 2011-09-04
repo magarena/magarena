@@ -14,15 +14,15 @@ public class Bitterblossom {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
-			if (player==data) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        player + " loses 1 life and puts a 1/1 black Faerie Rogue creature token with flying onto the battlefield.");
-			}
-			return null;
+			return (player==data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player + " loses 1 life and puts a 1/1 black Faerie Rogue creature token with flying " + 
+                    "onto the battlefield."):
+                null;
 		}
 		@Override
 		public void executeEvent(

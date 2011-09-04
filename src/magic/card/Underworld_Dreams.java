@@ -16,15 +16,14 @@ public class Underworld_Dreams {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer player = data.getOwner();
-    		if (permanent.getController() != player) {
-    			return new MagicEvent(
-    					permanent,
-    					permanent.getController(),
-    					new Object[]{permanent,player},
-    					this,
-    					permanent + " deals 1 damage to your opponent.");
-    		}
-    		return null;
+    		return (permanent.getController() != player) ?
+    			new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent,player},
+                    this,
+                    permanent + " deals 1 damage to your opponent."):
+                null;
     	}
     	
     	@Override

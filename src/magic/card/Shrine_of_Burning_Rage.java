@@ -85,15 +85,14 @@ public class Shrine_of_Burning_Rage {
                 final MagicPermanent permanent,
                 final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
-			if (player==data) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        "Put a charge counter on " + permanent + ".");
-			}
-			return null;
+			return (player==data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
+                    "Put a charge counter on " + permanent + "."):
+                null;
 		}
 		
 		@Override
@@ -118,15 +117,14 @@ public class Shrine_of_Burning_Rage {
                 final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicCard card=data.getCard();
-			if (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        "Put a charge counter on " + permanent + ".");
-			}
-			return null;
+			return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
+                    "Put a charge counter on " + permanent + "."):
+                null;
 		}
 		
 		@Override

@@ -13,19 +13,16 @@ public class Stonebrow__Krosan_Hero {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer player=permanent.getController();
-			if (creature.getController() == player && 
-                creature.hasAbility(game,MagicAbility.Trample)) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{creature},
-                        this,
-                        creature + " gets +2/+2 until end of turn.");
-			} else {
-    			return null;
-            }
+			return (creature.getController() == player && 
+                creature.hasAbility(game,MagicAbility.Trample)) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{creature},
+                    this,
+                    creature + " gets +2/+2 until end of turn."):
+                null;
 		}
-		
 		@Override
 		public void executeEvent(
                 final MagicGame game,

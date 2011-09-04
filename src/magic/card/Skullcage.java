@@ -15,16 +15,15 @@ public class Skullcage {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
-			if (player!=data) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent,data},
-                        this,
-                        permanent + " deals 2 damage to your opponent " + 
-                        "unless your opponent has exactly three or exactly four cards in hand.");
-			}
-			return null;
+			return (player!=data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent,data},
+                    this,
+                    permanent + " deals 2 damage to your opponent " + 
+                    "unless your opponent has exactly three or exactly four cards in hand."):
+                null;
 		}
 		@Override
 		public void executeEvent(

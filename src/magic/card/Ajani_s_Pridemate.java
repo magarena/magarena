@@ -13,15 +13,14 @@ public class Ajani_s_Pridemate {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player = permanent.getController();
-			if (player == data) {
-				return new MagicEvent(
-						permanent,
-						permanent.getController(),
-						new Object[]{permanent},
-						this,
-						"Put a +1/+1 counter on " + permanent + ".");
-			}
-			return null;
+			return (player == data) ?
+				new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent},
+                    this,
+                    "Put a +1/+1 counter on " + permanent + "."):
+                null;
 		}
 		@Override
 		public void executeEvent(

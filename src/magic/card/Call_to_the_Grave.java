@@ -19,12 +19,12 @@ public class Call_to_the_Grave {
 	public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-				return new MagicEvent(
-						permanent,
-						player,
-						new Object[]{permanent,player},
-						this,
-						player + " sacrifices a non-Zombie creature.");
+		    return new MagicEvent(
+                permanent,
+                player,
+                new Object[]{permanent,player},
+                this,
+                player + " sacrifices a non-Zombie creature.");
 		}
 		
 		@Override
@@ -48,16 +48,14 @@ public class Call_to_the_Grave {
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
     		final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE);
-    		if (targets.size() == 0) {
-    			return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent},
-                        this,
-                        "Sacrifice " + permanent + ".");
-    			
-    		}
-    		return null;
+    		return (targets.size() == 0) ?
+    			new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent},
+                    this,
+                    "Sacrifice " + permanent + "."):
+                null;
     	}
     	
     	@Override

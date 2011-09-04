@@ -20,8 +20,8 @@ public class Wort__Boggart_Auntie {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
-			if (player==data) {
-				return new MagicEvent(
+			return (player==data) ?
+				new MagicEvent(
                         permanent,
                         player,
                         new MagicMayChoice(
@@ -30,9 +30,8 @@ public class Wort__Boggart_Auntie {
                         MagicGraveyardTargetPicker.getInstance(),
                         MagicEvent.NO_DATA,
                         this,
-                        "You may$ return target Goblin card$ from your graveyard to your hand.");
-			}
-			return null;
+                        "You may$ return target Goblin card$ from your graveyard to your hand."):
+                null;
 		}
 		@Override
 		public void executeEvent(

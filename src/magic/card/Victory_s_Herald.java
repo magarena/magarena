@@ -24,16 +24,15 @@ public class Victory_s_Herald {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent data) {
-			if (permanent==data) {
-				final MagicPlayer player = permanent.getController();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        "Attacking creatures gain flying and lifelink until end of turn.");
-			}
-			return null;
+            final MagicPlayer player = permanent.getController();
+			return (permanent==data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "Attacking creatures gain flying and lifelink until end of turn."):
+                null;
 		}
 		
 		@Override

@@ -72,15 +72,14 @@ public class Serrated_Arrows {
                 final MagicPermanent permanent,
                 final MagicPlayer data) {
 		    final MagicPlayer player = permanent.getController();	
-			if (player == data && permanent.getCounters(MagicCounterType.Charge) == 0) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        "Sacrifice " + permanent + ".");
-			}
-			return null;
+			return (player == data && permanent.getCounters(MagicCounterType.Charge) == 0) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
+                    "Sacrifice " + permanent + "."):
+                null;
 		}
 		@Override
 		public void executeEvent(

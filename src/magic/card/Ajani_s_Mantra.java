@@ -12,15 +12,14 @@ public class Ajani_s_Mantra {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
-			if (player==data) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        player + " gains 1 life.");
-			}
-			return null;
+			return (player==data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player + " gains 1 life."):
+                null;
 		}
 		@Override
 		public void executeEvent(

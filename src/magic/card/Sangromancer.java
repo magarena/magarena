@@ -15,15 +15,14 @@ public class Sangromancer {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
 			final MagicPlayer otherController = otherPermanent.getController();
-			if (otherController != player && otherPermanent.isCreature()) {			
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        player + " gains 3 life.");
-			}
-			return null;
+			return (otherController != player && otherPermanent.isCreature()) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player + " gains 3 life."):
+                null;
 		}
 		@Override
 		public void executeEvent(
@@ -40,15 +39,14 @@ public class Sangromancer {
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer otherController = data.getOwner();
     		final MagicPlayer player = permanent.getController();
-    		if (otherController != player) {		
-    			return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        player + " gains 3 life.");
-    		}
-    		return null;
+    		return (otherController != player) ?
+    			new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player + " gains 3 life."):
+                null;
     	}
 
     	@Override

@@ -27,15 +27,14 @@ public class Kederekt_Parasite {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer player = data.getOwner();
-    		if (permanent.getController() != player && isValid(permanent)) {		
-    			return new MagicEvent(
-    					permanent,
-    					permanent.getController(),
-    					new Object[]{permanent,player},
-    					this,
-    					permanent + " deals 1 damage to your opponent.");
-    		}
-    		return null;
+    		return (permanent.getController() != player && isValid(permanent)) ?
+    			new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent,player},
+                    this,
+                    permanent + " deals 1 damage to your opponent."):
+                null;
     	}
     	
     	@Override

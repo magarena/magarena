@@ -15,17 +15,16 @@ public class Wall_of_Reverence {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
-			if (player==data) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                        MagicPowerTargetPicker.getInstance(),
-                        new Object[]{player},
-                        this,
-                        player + " gains life equal to the power of target creature$ he or she controls.");
-			}
-			return null;
+			return (player==data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                    MagicPowerTargetPicker.getInstance(),
+                    new Object[]{player},
+                    this,
+                    player + " gains life equal to the power of target creature$ he or she controls."):
+                null;
 		}
 		@Override
 		public void executeEvent(

@@ -26,9 +26,8 @@ public class Snake_Umbra {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();
 			final MagicTarget target=damage.getTarget();
-			if (damage.getSource() == permanent.getEnchantedCreature() &&
-                target.isPlayer()&&target!=player) {
-				return new MagicEvent(
+			return (damage.getSource() == permanent.getEnchantedCreature() && target.isPlayer()&&target!=player) ?
+				new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -36,9 +35,8 @@ public class Snake_Umbra {
                         MagicSimpleMayChoice.DRAW_CARDS,1),
                     new Object[]{player},
                     this,
-                    "You may$ draw a card.");
-			}
-			return null;
+                    "You may$ draw a card."):
+                null;
 		}
 		@Override
 		public void executeEvent(

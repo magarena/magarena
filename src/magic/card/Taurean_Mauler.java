@@ -15,15 +15,14 @@ public class Taurean_Mauler {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
 			final MagicPlayer player=permanent.getController();
-			if (cardOnStack.getController()!=player) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent},
-                        this,
-                        "Put a +1/+1 counter on " + permanent + ".");
-			}
-			return null;
+			return (cardOnStack.getController()!=player) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent},
+                    this,
+                    "Put a +1/+1 counter on " + permanent + "."):
+                null;
 		}
 		@Override
 		public void executeEvent(

@@ -59,15 +59,14 @@ public class Angelic_Destiny {
 	public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-			if (permanent.getEnchantedCreature() == data) {
-				return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent.getCard()},
-                        this,
-                        "Return " + permanent + " to its owner's hand.");
-			}			
-			return null;
+			return (permanent.getEnchantedCreature() == data) ?
+				new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent.getCard()},
+                    this,
+                    "Return " + permanent + " to its owner's hand."):
+                null;
 		}
 		@Override
 		public void executeEvent(

@@ -45,9 +45,9 @@ public class Sun_Titan {
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-			if (permanent==data) {
-			    final MagicPlayer player = permanent.getController(); 
-                return new MagicEvent(
+            final MagicPlayer player = permanent.getController(); 
+			return (permanent==data) ?
+                new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
@@ -55,9 +55,8 @@ public class Sun_Titan {
                     new Object[]{player},
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 
-                    "from your graveyard to the battlefield.");
-            }
-            return null;
+                    "from your graveyard to the battlefield."):
+                null;
 		}
 		
 		@Override

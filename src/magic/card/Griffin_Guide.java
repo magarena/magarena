@@ -20,16 +20,15 @@ public class Griffin_Guide {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-			if (permanent.getEnchantedCreature()==data) {
-				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        "Put a 2/2 white Griffin creature token with flying onto the battlefield.");
-			}			
-			return null;
+            final MagicPlayer player=permanent.getController();
+			return (permanent.getEnchantedCreature()==data) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    "Put a 2/2 white Griffin creature token with flying onto the battlefield."):
+                null;
 		}
 		@Override
 		public void executeEvent(

@@ -21,19 +21,18 @@ public class Vorosh__the_Hunter {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-			if (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				final MagicPlayer player=permanent.getController();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new MagicMayChoice(
-                            "You may pay {2}{G}.",
-                            new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)),
-                        new Object[]{permanent},
-                        this,
-                        "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on " + permanent + ".");
-			}
-			return null;
+            final MagicPlayer player=permanent.getController();
+			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+                new MagicEvent(
+                    permanent,
+                    player,
+                    new MagicMayChoice(
+                        "You may pay {2}{G}.",
+                        new MagicPayManaCostChoice(MagicManaCost.TWO_GREEN)),
+                    new Object[]{permanent},
+                    this,
+                    "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on " + permanent + "."):
+                null;
 		}
 		@Override
 		public void executeEvent(

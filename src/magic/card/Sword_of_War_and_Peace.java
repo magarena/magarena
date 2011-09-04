@@ -16,19 +16,18 @@ public class Sword_of_War_and_Peace {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			if (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) {
-				final MagicPlayer player=permanent.getController();
-				final MagicTarget targetPlayer=damage.getTarget();
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent,player,targetPlayer},
-                        this,
-                        permanent + " deals damage to " + targetPlayer + 
-                        " equal to the number of cards in his or her hand and " +
-                        player + " gains 1 life for each card in your hand.");
-			}
-			return null;
+            final MagicPlayer player=permanent.getController();
+            final MagicTarget targetPlayer=damage.getTarget();
+			return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent,player,targetPlayer},
+                    this,
+                    permanent + " deals damage to " + targetPlayer + 
+                    " equal to the number of cards in his or her hand and " +
+                    player + " gains 1 life for each card in your hand."):
+                null;
 		}
 		@Override
 		public void executeEvent(

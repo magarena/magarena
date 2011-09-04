@@ -23,16 +23,15 @@ public class Frost_Titan {
     public static final MagicWhenTargetedTrigger T1 = new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-            if (target.containsInChoiceResults(permanent) &&
-                target.getController() != permanent.getController()) {
-                return new MagicEvent(
-                        permanent,
-                        permanent.getController(),
-                        new Object[]{permanent,target},
-                        this,
-                        "Counter spell or ability$ unless its controller pays {2}.");
-            }
-            return null;
+            return (target.containsInChoiceResults(permanent) &&
+                    target.getController() != permanent.getController()) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{permanent,target},
+                    this,
+                    "Counter spell or ability$ unless its controller pays {2}."):
+                null;
         }
         
         @Override
