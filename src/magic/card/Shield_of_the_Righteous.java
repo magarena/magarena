@@ -12,8 +12,8 @@ public class Shield_of_the_Righteous {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-			final MagicPermanent blocked = (equippedCreature != null) ? equippedCreature.getBlockedCreature() : null;
-			return (equippedCreature == data && blocked != null) ?
+			final MagicPermanent blocked = equippedCreature.getBlockedCreature();
+			return (equippedCreature == data && blocked != MagicPermanent.NONE) ?
 		        new MagicEvent(
                     permanent,
                     permanent.getController(),
