@@ -61,7 +61,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 		logoLabel.setSize(logoIcon.getIconWidth(),logoIcon.getIconHeight());
 		versionLabel.setSize(logoIcon.getIconWidth(),20);
 				
-		cardViewer=new CardViewer(null,true,true);
+		cardViewer=new CardViewer("",true,true);
 		final List<MagicCardDefinition> spellCards=CardDefinitions.getInstance().getSpellCards();
 		final int index=MagicRandom.nextInt(spellCards.size());
 		cardViewer.setCard(spellCards.get(index),0);
