@@ -78,7 +78,6 @@ public class MagicPlayerDefinition {
 		
 		// Add optimal basic lands to deck.
 		while (deck.size()<DECK_SIZE) {
-
 			MagicColor bestColor=null;
 			int lowestRatio=Integer.MAX_VALUE;
 			for (final MagicColor color : MagicColor.values()) {
