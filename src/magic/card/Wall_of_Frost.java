@@ -11,18 +11,15 @@ public class Wall_of_Frost {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-			if (permanent==data) {
-				final MagicPermanent blocked=permanent.getBlockedCreature();
-				if (blocked!=null) {
-					return new MagicEvent(
-                            permanent,
-                            permanent.getController(),
-                            new Object[]{blocked},
-                            this,
-                            blocked+" doesn't untap during its controller's next untap step.");
-				}
-			}
-			return null;
+            final MagicPermanent blocked=permanent.getBlockedCreature();
+			return (permanent==data && blocked!=MagicPermanent.NONE) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getController(),
+                    new Object[]{blocked},
+                    this,
+                    blocked+" doesn't untap during its controller's next untap step."):
+                null;
 		}
 		@Override
 		public void executeEvent(
