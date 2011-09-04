@@ -23,10 +23,8 @@ import java.util.TreeSet;
 public class PermanentViewerInfo {
 
 	public static final Comparator<PermanentViewerInfo> NAME_COMPARATOR=new Comparator<PermanentViewerInfo>() {
-
 		@Override
 		public int compare(final PermanentViewerInfo permanentInfo1,final PermanentViewerInfo permanentInfo2) {
-
 			final int dif=permanentInfo1.name.compareTo(permanentInfo2.name);
 			if (dif!=0) {
 				return dif;
@@ -79,16 +77,18 @@ public class PermanentViewerInfo {
 		basic=permanent.hasType(MagicType.Basic);
 		mana=permanent.producesMana();
 		creature=permanent.isCreature();
-		artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature()==null);
-		enchantment=permanent.isEnchanted()||(permanent.isEnchantment()&&permanent.getEnchantedCreature()==null);
-		root=permanent.getEnchantedCreature()==null&&permanent.getEquippedCreature()==null;
+		artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature()==MagicPermanent.NONE);
+		enchantment=permanent.isEnchanted()||
+            (permanent.isEnchantment()&&permanent.getEnchantedCreature()==MagicPermanent.NONE);
+		root=permanent.getEnchantedCreature()==MagicPermanent.NONE && permanent.getEquippedCreature()==MagicPermanent.NONE;
 		tapped=permanent.isTapped();
 		canNotTap=!tapped&&!permanent.canTap(game);
 		attacking=permanent.isAttacking();
 		blocking=permanent.isBlocking();
-		blockingInvalid=permanent.getBlockedCreature()==null;
-		lowered=attacking||(permanent.getEquippedCreature()!=null&&permanent.getEquippedCreature().isAttacking())||
-			  	(permanent.getEnchantedCreature()!=null&&permanent.getEnchantedCreature().isAttacking());
+		blockingInvalid=permanent.getBlockedCreature()==MagicPermanent.NONE;
+		lowered=attacking||
+            (permanent.getEquippedCreature()!=MagicPermanent.NONE&&permanent.getEquippedCreature().isAttacking())||
+		  	(permanent.getEnchantedCreature()!=MagicPermanent.NONE&&permanent.getEnchantedCreature().isAttacking());
 		manaColor=getManaColor(permanent);
 		blockers=getBlockers(game,permanent);
 		linked=getLinked(game,permanent);
