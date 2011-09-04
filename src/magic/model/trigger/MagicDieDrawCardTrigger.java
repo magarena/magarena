@@ -13,7 +13,7 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
         if (MagicLocationType.Play==triggerData.fromLocation) {
             return new MagicDrawEvent(permanent,permanent.getController(),1);
         }
-        return null;
+        return MagicEvent.NONE;
     }
     @Override
     public void executeEvent(

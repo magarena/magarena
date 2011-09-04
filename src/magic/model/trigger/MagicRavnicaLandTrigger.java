@@ -24,7 +24,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
                     this,
                     "You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped.");
 		}
-		return null;
+		return MagicEvent.NONE;
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
 		if (creature.getController()==player&&player.getNrOfAttackers()==1) {
 			return new MagicEvent(permanent,player,new Object[]{creature},this,creature.getName()+" gets +1/+1 until end of turn.");
 		}
-		return null;
+		return MagicEvent.NONE;
 	}
 
 	@Override

@@ -22,7 +22,7 @@ public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
 			return new MagicEvent(permanent,permanent.getController(),new Object[]{card},this,
 				"Return "+card.getName()+" to play under its owner's control with a -1/-1 counter on it.");
 		}
-		return null;
+		return MagicEvent.NONE;
 	}
 
 	@Override

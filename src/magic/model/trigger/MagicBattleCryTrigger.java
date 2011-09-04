@@ -26,7 +26,7 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
                     new Object[]{permanent,player},
                     this,
                     "Each other attacking creature gets +1/+0 until end of turn."):
-            null;
+            MagicEvent.NONE;
 	}
 
 	@Override

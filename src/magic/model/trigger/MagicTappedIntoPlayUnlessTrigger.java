@@ -26,7 +26,7 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
                     new Object[]{permanent},
                     this,
                     permanent+" enters the battlefield tapped."):
-            null;
+            MagicEvent.NONE;
 	}
 	
 	@Override

@@ -5,7 +5,7 @@ public enum MagicTriggerType {
 	AtEndOfTurn,            // player
 	WhenDamageIsDealt,      // damage
 	WhenSpellIsPlayed,      // card on stack
-	WhenComesIntoPlay,      // null
+	WhenComesIntoPlay,      // controller
 	WhenBecomesTapped,      // permanent
 	WhenDiscarded,			// card
 	WhenDrawn,				// card

@@ -18,7 +18,7 @@ public class MagicVeteranTrigger extends MagicWhenDamageIsDealtTrigger {
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         if (!damage.getTarget().isPermanent()) {
-            return null;
+            return MagicEvent.NONE;
         }
         final MagicPermanent target=(MagicPermanent)damage.getTarget();
 		return (damage.getSource() == permanent && 
@@ -30,7 +30,7 @@ public class MagicVeteranTrigger extends MagicWhenDamageIsDealtTrigger {
                     new Object[]{permanent},
                     this,
                     "Put a +1/+1 counter on "+permanent+"."):
-            null;
+            MagicEvent.NONE;
 	}
 	
 	@Override

@@ -34,7 +34,7 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
                 new Object[]{permanent,player},
                 this,
                 (random?prefix+" at random.":prefix)+'.'):
-            null;
+            MagicEvent.NONE;
 	}
 
 	@Override

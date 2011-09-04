@@ -20,7 +20,7 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 		return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&(!combat||damage.isCombat())) ?
             new MagicDrawEvent(permanent,permanent.getController(),amount):
-            null;
+            MagicEvent.NONE;
 	}
 
 	@Override

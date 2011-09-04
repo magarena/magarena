@@ -19,7 +19,7 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
                 new Object[]{card},
                 this,
                 "Shuffle "+card.getName()+" into its owners library."):
-            null;
+            MagicEvent.NONE;
 	}
 
 	@Override

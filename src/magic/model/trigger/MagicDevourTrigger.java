@@ -42,7 +42,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                     new Object[]{permanent},
                     this,
                     "You may$ sacrifice a creature$ to "+name+"."):
-            null;
+            MagicEvent.NONE;
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                     game.doAction(new MagicSacrificeAction(creature));
                     game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
                     final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
-                    if (newEvent!=null) {
+                    if (newEvent!=MagicEvent.NONE) {
                         game.doAction(new MagicAddEventAction(newEvent));
                     }
                 }
