@@ -12,7 +12,7 @@ public class MagicLoseGameAction extends MagicAction {
 	
 	private final MagicPlayer player;
 	private final String reason;
-	private MagicPlayer oldLosingPlayer;
+	private MagicPlayer oldLosingPlayer = MagicPlayer.NONE;
 	
 	public MagicLoseGameAction(final MagicPlayer player,final String reason) {
 		this.player=player;

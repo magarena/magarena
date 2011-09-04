@@ -75,15 +75,18 @@ public class MagicMoveCardAction extends MagicAction {
 
 		// Execute triggers.
 		if (toLocation==MagicLocationType.Graveyard) {
-			final MagicSource triggerSource=permanent!=MagicPermanent.NONE?permanent:card;
+			final MagicSource triggerSource=permanent.isValid()?permanent:card;
 			for (final MagicTrigger trigger : card.getCardDefinition().getPutIntoGraveyardTriggers()) {
-				
 				game.executeTrigger(trigger,permanent,triggerSource,new MagicGraveyardTriggerData(card,fromLocation));
 			}
 			
 			// Persist.
-			if (permanent!=MagicPermanent.NONE&&permanent.hasAbility(game,MagicAbility.Persist)) {
-				game.executeTrigger(MagicPersistTrigger.getInstance(),permanent,permanent,new MagicGraveyardTriggerData(card,fromLocation));
+			if (permanent.isValid() && permanent.hasAbility(game,MagicAbility.Persist)) {
+				game.executeTrigger(
+                        MagicPersistTrigger.getInstance(),
+                        permanent,
+                        permanent,
+                        new MagicGraveyardTriggerData(card,fromLocation));
 			} 	
 			
 			// Discard.

@@ -40,7 +40,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		}
 		
 		// Equipment
-		if (permanent.getEquippedCreature()!=MagicPermanent.NONE) {
+		if (permanent.getEquippedCreature().isValid()) {
 			permanent.getEquippedCreature().removeEquipment(permanent);
 		}
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
@@ -48,7 +48,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		}
 
 		// Aura
-		if (permanent.getEnchantedCreature()!=MagicPermanent.NONE) {
+		if (permanent.getEnchantedCreature().isValid()) {
 			permanent.getEnchantedCreature().removeAura(permanent);
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
@@ -78,7 +78,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		permanent.getController().addPermanent(permanent);
 		
 		// Equipment
-		if (permanent.getEquippedCreature()!=MagicPermanent.NONE) {
+		if (permanent.getEquippedCreature().isValid()) {
 			permanent.getEquippedCreature().addEquipment(permanent);
 		}
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
@@ -87,7 +87,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		}
 		
 		// Aura
-		if (permanent.getEnchantedCreature()!=MagicPermanent.NONE) {
+		if (permanent.getEnchantedCreature().isValid()) {
 			permanent.getEnchantedCreature().addAura(permanent);
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {

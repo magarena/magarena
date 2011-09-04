@@ -29,7 +29,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		}
 		int score=ArtificialScoringSystem.getTurnScore(game);
 		oldEquippedCreature=equipment.getEquippedCreature();
-		if (oldEquippedCreature != MagicPermanent.NONE) {
+		if (oldEquippedCreature.isValid()) {
 			score-=oldEquippedCreature.getScore(game);
 			oldEquippedCreature.removeEquipment(equipment);
 			score+=oldEquippedCreature.getScore(game);
@@ -44,9 +44,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 				score=-score;
 			}
 		}
-		validCreature = 
-            creature!=MagicPermanent.NONE && 
-            creature.getController().controlsPermanent(creature);
+		validCreature = creature.isValid() && creature.getController().controlsPermanent(creature);
 		if (validCreature) {
 			score-=creature.getScore(game);
 			equipment.setEquippedCreature(creature);
@@ -67,7 +65,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 				creature.removeEquipment(equipment);
 			}
 			equipment.setEquippedCreature(oldEquippedCreature);
-			if (oldEquippedCreature!=MagicPermanent.NONE) {
+			if (oldEquippedCreature.isValid()) {
 				oldEquippedCreature.addEquipment(equipment);
 			}
 		}
