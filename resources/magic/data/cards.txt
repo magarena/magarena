@@ -1034,6 +1034,20 @@ power=1
 toughness=1
 timing=fmain
 
+>Rapacious One
+image=http://magiccards.info/scans/en/cmd/133.jpg 
+value=5
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+color=r
+converted=6
+cost={5}{R}
+power=5
+toughness=4
+ability=trample
+timing=main
+
 >Roc Egg
 image=http://magiccards.info/scans/en/m12/32.jpg
 value=3
