@@ -16,7 +16,7 @@ public class Mage_Slayer {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPermanent equippedCreature=permanent.getEquippedCreature();
             final MagicPlayer player=permanent.getController();
-			return (equippedCreature!=null&&equippedCreature==creature) ?
+			return (equippedCreature != MagicPermanent.NONE && equippedCreature==creature) ?
                 new MagicEvent(
                         permanent,
                         player,
