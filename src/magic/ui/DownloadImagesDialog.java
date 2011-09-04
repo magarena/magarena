@@ -38,8 +38,8 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private final JLabel downloadProgressLabel;
 	private final JButton okButton;
 	private final JButton cancelButton;
-	private Thread downloader=null;
-	private Proxy proxy=null;
+	private Thread downloader;
+	private Proxy proxy;
 
 	public DownloadImagesDialog(final MagicFrame frame) {
 		super(frame,true);
