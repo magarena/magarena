@@ -469,7 +469,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public void setCached(final MagicGame game,final boolean cached) {
-        this.cached=cached;
 		if (cached) {
 			cachedTurnPowerToughness=getPowerToughness(game,true);
 			cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
@@ -477,6 +476,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			cachedTypeFlags=getTypeFlags();
 			cachedColorFlags=getColorFlags();
 		} 
+        this.cached=cached;
 	}
 	
 	public int getDamage() {
@@ -683,7 +683,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 		// Landwalk
 		for (final MagicColor color : MagicColor.values()) {
-			
 			if (color.getLandwalkAbility().hasAbility(flags)&&player.controlsPermanentWithSubType(color.getLandSubType())) {
 				return false;
 			}
@@ -693,7 +692,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public boolean canBlock(final MagicGame game) {
-
 		if (!isCreature()||isTapped()||hasState(MagicPermanentState.ExcludeFromCombat)) {
 			return false;
 		}
