@@ -13,7 +13,7 @@ public class Meglonoth {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-			return (permanent==data && blocked!=null) ?
+			return (permanent==data && blocked!=MagicPermanent.NONE) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
