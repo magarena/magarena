@@ -7,8 +7,10 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicDestroyAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicPutItemOnStackAction;
@@ -55,14 +57,11 @@ public class Orim_s_Thunder {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
                     if (kickerCount > 0) {
-                    	final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-            			game.doAction(action);
-            			final MagicPermanent permanent = action.getPermanent();
-        				final MagicPlayer player = permanent.getController();
+        				final MagicSource source = cardOnStack.getSource();
         				final int amount = target.getCardDefinition().getConvertedCost();
         				final MagicEvent triggerEvent = new MagicEvent(
-        					permanent,
-        					player,
+        					source,
+        					cardOnStack.getController(),
         					MagicTargetChoice.NEG_TARGET_CREATURE,
         					new MagicDamageTargetPicker(amount),
         					MagicEvent.NO_DATA,
@@ -81,12 +80,13 @@ public class Orim_s_Thunder {
                         			});
         		                }
         	                },
-        					permanent + " deals " + amount + " damage to target creature$."
+        	                source + " deals " + amount + " damage to target creature$."
                         );
-        				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+        				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(source,triggerEvent)));
         			}
                 }
 			});
+			game.doAction(new MagicMoveCardAction(cardOnStack));
 		}
 	};
 }
