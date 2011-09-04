@@ -14,7 +14,7 @@ public class Tuktuk_the_Explorer {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-			final MagicPlayer player = (permanent != null) ? permanent.getController() : null;
+			final MagicPlayer player = permanent.getController();
 			return (MagicLocationType.Play==triggerData.fromLocation) ?
 				new MagicEvent(
                     permanent,
