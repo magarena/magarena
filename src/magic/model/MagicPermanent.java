@@ -26,17 +26,27 @@ import java.util.List;
 public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
 
 	public static final int NO_COLOR_FLAGS=-1;
+    public static final MagicPermanent NONE = new MagicPermanent() {
+        @Override 
+        public long getId() {
+            return -1L;
+        }
+        @Override
+        public boolean isCreature() {
+            return false;
+        }
+    };
 		
 	private long id;
 	private MagicCard card;
 	private MagicCardDefinition cardDefinition;
 	private MagicPlayer controller;
 	private MagicLocalVariableList localVariables;
-	private MagicPermanent equippedCreature;
+	private MagicPermanent equippedCreature = MagicPermanent.NONE;
 	private MagicPermanentSet equipmentPermanents;
-	private MagicPermanent enchantedCreature;
+	private MagicPermanent enchantedCreature = MagicPermanent.NONE;
 	private MagicPermanentSet auraPermanents;
-	private MagicPermanent blockedCreature;
+	private MagicPermanent blockedCreature = MagicPermanent.NONE;
 	private MagicPermanentList blockingCreatures;
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
 	private int stateFlags=MagicPermanentState.Summoned.getMask();
@@ -121,9 +131,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             damage,
             preventDamage,
             localVariables.size(),
-            (equippedCreature != null ? equippedCreature.getId() : -1L),
-            (enchantedCreature != null ? enchantedCreature.getId() : -1L),
-            (blockedCreature != null ? blockedCreature.getId() : -1L),
+            equippedCreature.getId(),
+            enchantedCreature.getId(),
+            blockedCreature.getId(),
             counters[0],
             counters[1],
             counters[2],
@@ -566,13 +576,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicDestroyAction(this));
 			}
 		} else if (cardDefinition.isAura()) {
-			if (enchantedCreature==null||!enchantedCreature.isCreature()||enchantedCreature.hasProtectionFrom(game,this)) {
+			if (!enchantedCreature.isCreature() || enchantedCreature.hasProtectionFrom(game,this)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
-		} else if (cardDefinition.isEquipment()) {
-			if (equippedCreature!=null&&(!equippedCreature.isCreature()||equippedCreature.hasProtectionFrom(game,this))) {
-				actions.add(new MagicAttachEquipmentAction(this,null));
+		} else if (cardDefinition.isEquipment() && equippedCreature != MagicPermanent.NONE) {
+			if (!equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(game,this)) {
+				actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
 			}
 		}
 	}
@@ -722,91 +732,74 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public MagicLocalVariable getAttachmentLocalVariable() {
-		
 		return cardDefinition.getAttachmentLocalVariable();
 	}
 		
 	public MagicPermanent getEquippedCreature() {
-		
 		return equippedCreature;
 	}
 
 	public void setEquippedCreature(final MagicPermanent creature) {
-		
 		equippedCreature=creature;
 	}
 	
 	public MagicPermanentSet getEquipmentPermanents() {
-		
 		return equipmentPermanents;
 	}
 	
 	public void addEquipment(final MagicPermanent equipment) {
-		
 		equipmentPermanents.add(equipment);
 		localVariables.add(equipment.getAttachmentLocalVariable());
 	}
 	
 	public void removeEquipment(final MagicPermanent equipment) {
-		
 		equipmentPermanents.remove(equipment);
 		localVariables.remove(equipment.getAttachmentLocalVariable());
 	}
 	
 	public boolean isEquipped() {
-		
 		return equipmentPermanents.size()>0;
 	}
 	
 	public MagicPermanent getEnchantedCreature() {
-		
 		return enchantedCreature;
 	}
 
 	public void setEnchantedCreature(final MagicPermanent creature) {
-		
 		enchantedCreature=creature;
 	}
 	
 	public MagicPermanentSet getAuraPermanents() {
-		
 		return auraPermanents;
 	}
 	
 	public void addAura(final MagicPermanent aura) {
-		
 		auraPermanents.add(aura);
 		localVariables.add(aura.getAttachmentLocalVariable());
 	}
 	
 	public void removeAura(final MagicPermanent aura) {
-		
 		auraPermanents.remove(aura);
 		localVariables.remove(aura.getAttachmentLocalVariable());
 	}
 			
 	public boolean isEnchanted() {
-		
 		return auraPermanents.size()>0;
 	}
 	
 	public int getAbilityPlayedThisTurn() {
-		
 		return abilityPlayedThisTurn;
 	}
 	
 	public void setAbilityPlayedThisTurn(final int amount) {
-		
 		abilityPlayedThisTurn=amount;
 	}
 	
 	public void incrementAbilityPlayedThisTurn() {
-		
 		abilityPlayedThisTurn++;
 	}
 
 	public void decrementAbilityPlayedThisTurn() {
-		
 		abilityPlayedThisTurn--;
 	}
 	
@@ -836,30 +829,25 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public boolean isArtifact() {
-		
 		return cardDefinition.isArtifact();
 	}
 	
 	public boolean isEnchantment() {
-		
 		return cardDefinition.isEnchantment();
 	}
 	
 	@Override
 	public boolean isSpell() {
-		
 		return false;
 	}
 
 	@Override
 	public boolean isPlayer() {
-
 		return false;
 	}
 	
 	@Override
 	public boolean isPermanent() {
-
 		return true;
 	}	
 	
@@ -892,7 +880,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
 	@Override
 	public int compareTo(final MagicPermanent permanent) {
-
 		// Important for sorting of permanent mana activations.
 		final int dif=cardDefinition.getIndex()-permanent.cardDefinition.getIndex();
 		if (dif!=0) {
