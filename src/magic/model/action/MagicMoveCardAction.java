@@ -33,7 +33,7 @@ public class MagicMoveCardAction extends MagicAction {
 	}
 	
 	public MagicMoveCardAction(final MagicCard card,final MagicLocationType fromLocation,final MagicLocationType toLocation) {
-		this(card,null,fromLocation,toLocation);
+		this(card,MagicPermanent.NONE,fromLocation,toLocation);
 	}
 	
 	public MagicMoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
@@ -41,7 +41,7 @@ public class MagicMoveCardAction extends MagicAction {
 	}
 	
 	public MagicMoveCardAction(final MagicCardOnStack cardOnStack) {
-		this(cardOnStack.getCard(),null,MagicLocationType.Stack,cardOnStack.getMoveLocation());
+		this(cardOnStack.getCard(),MagicPermanent.NONE,MagicLocationType.Stack,cardOnStack.getMoveLocation());
 	}
 
 	@Override
@@ -75,14 +75,14 @@ public class MagicMoveCardAction extends MagicAction {
 
 		// Execute triggers.
 		if (toLocation==MagicLocationType.Graveyard) {
-			final MagicSource triggerSource=permanent!=null?permanent:card;
+			final MagicSource triggerSource=permanent!=MagicPermanent.NONE?permanent:card;
 			for (final MagicTrigger trigger : card.getCardDefinition().getPutIntoGraveyardTriggers()) {
 				
 				game.executeTrigger(trigger,permanent,triggerSource,new MagicGraveyardTriggerData(card,fromLocation));
 			}
 			
 			// Persist.
-			if (permanent!=null&&permanent.hasAbility(game,MagicAbility.Persist)) {
+			if (permanent!=MagicPermanent.NONE&&permanent.hasAbility(game,MagicAbility.Persist)) {
 				game.executeTrigger(MagicPersistTrigger.getInstance(),permanent,permanent,new MagicGraveyardTriggerData(card,fromLocation));
 			} 	
 			
