@@ -46,7 +46,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final int index,
             boolean orig) {
 
-		if (cardDefinition == null) {
+		if (cardDefinition == MagicCardDefinition.UNKNOWN) {
 			return IconImages.MISSING_CARD;
 		}
 
