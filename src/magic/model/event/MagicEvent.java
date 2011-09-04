@@ -28,8 +28,9 @@ import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 
-    public static final MagicSource NO_SOURCE = MagicCard.NONE;
+	public static final MagicEvent NONE = new MagicEvent();
 	public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
+    public static final MagicSource NO_SOURCE = MagicCard.NONE;
 	public static final MagicChoice NO_CHOICES = MagicChoice.NONE;
 	public static final Object NO_CHOICE_RESULTS[] = new Object[0];
 	public static final Object NO_DATA[] = new Object[0];
