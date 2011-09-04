@@ -39,6 +39,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         public MagicPlayer getController() {
             return MagicPlayer.NONE;
         }
+        @Override
+        public boolean isValid() {
+            return false;
+        }
     };
 		
 	private long id;
@@ -127,6 +131,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public long getId() {
 		return id;
 	}
+
+    public boolean isValid() {
+        return true;
+    }
+    
+    public boolean isInvalid() {
+        return !isValid();
+    }
 	
 	public long getPermanentId() {
         long[] input = {
@@ -584,7 +596,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
-		} else if (cardDefinition.isEquipment() && equippedCreature != MagicPermanent.NONE) {
+		} else if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
 			if (!equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(game,this)) {
 				actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
 			}
