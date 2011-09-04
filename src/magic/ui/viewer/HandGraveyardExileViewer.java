@@ -82,7 +82,7 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
 	public void stateChanged(ChangeEvent e) {
 
 		final int selectedTab=tabSelector.getSelectedTab();
-		cardLayout.show(cardPanel,""+selectedTab);
+		cardLayout.show(cardPanel,Integer.toString(selectedTab));
 		titleBar.setText(viewers[selectedTab].getTitle());
 	}
 }

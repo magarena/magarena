@@ -43,7 +43,7 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
 		for (final MagicColor color : MagicColor.values()) {
 			
 			final JButton button=new JButton(color.getIcon());
-			button.setActionCommand(""+color.getSymbol());
+			button.setActionCommand(Character.toString(color.getSymbol()));
 			button.setPreferredSize(BUTTON_DIMENSION);
 			button.addActionListener(this);
 			button.setFocusable(false);

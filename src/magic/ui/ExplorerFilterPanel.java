@@ -144,7 +144,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			colorCheckBoxes[index].addActionListener(this);
 			colorCheckBoxes[index].setOpaque(false);
 			colorCheckBoxes[index].setFocusPainted(false);
-			colorCheckBoxes[index].setActionCommand(""+color.getSymbol());
+			colorCheckBoxes[index].setActionCommand(Character.toString(color.getSymbol()));
 			colorPanel.add(colorCheckBoxes[index],BorderLayout.WEST);
 			colorPanel.add(new JLabel(color.getManaType().getIcon(true)),BorderLayout.CENTER);
 			colorsPanel.add(colorPanel);

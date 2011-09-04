@@ -30,7 +30,6 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
 	private int x;
 	
 	public ManaCostXChoicePanel(final GameController controller,final MagicSource source,final int maximumX) {
-		
 		this.controller=controller;
 		this.maximumX=maximumX;
 		x=maximumX;
@@ -52,7 +51,7 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
 		leftButton.setFocusable(false);
 		buttonPanel.add(leftButton);
 		
-		numberButton=new JButton(""+x);
+		numberButton=new JButton(Integer.toString(x));
 		numberButton.setPreferredSize(BUTTON_DIMENSION);
 		numberButton.addActionListener(this);
 		numberButton.setFocusable(false);
@@ -66,24 +65,22 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
 	}
 	
 	public int getValueForX() {
-		
 		return x;
 	}
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-
 		final Object source=event.getSource();
 		if (source==leftButton) {
 			if (x>1) {
 				x--;
-				numberButton.setText(""+x);
+				numberButton.setText(Integer.toString(x));
 				numberButton.repaint();
 			}
 		} else if (source==rightButton) {
 			if (x<maximumX) {
 				x++;
-				numberButton.setText(""+x);
+				numberButton.setText(Integer.toString(x));
 				numberButton.repaint();
 			}
 		} else {

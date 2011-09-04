@@ -68,7 +68,7 @@ public class TabSelector extends JPanel implements ActionListener {
 		}
 		button.setFocusable(false);
 		button.setPreferredSize(buttonDimension);
-		button.setActionCommand(""+buttons.size());
+		button.setActionCommand(Integer.toString(buttons.size()));
 		button.addActionListener(this);
 		buttons.add(button);
 		buttonPanel.add(button);

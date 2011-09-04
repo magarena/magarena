@@ -153,11 +153,11 @@ public class TournamentConfig {
 	}
 
 	public void load(final Properties properties) {
-		avatar=Integer.parseInt(properties.getProperty(AVATAR,""+avatar));
+		avatar=Integer.parseInt(properties.getProperty(AVATAR,Integer.toString(avatar)));
 		name=properties.getProperty(NAME,name);
-		startLife=Integer.parseInt(properties.getProperty(START_LIFE,""+startLife));
-		handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,""+handSize));
-		games=Integer.parseInt(properties.getProperty(GAMES,""+games));
+		startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
+		handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
+		games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
 		playerColors=properties.getProperty(PLAYER,playerColors);
 		opponentColors=properties.getProperty(OPPONENT,opponentColors);
 		cube=properties.getProperty(CUBE,cube);
@@ -169,11 +169,11 @@ public class TournamentConfig {
 	}
 	
 	public void save(final Properties properties) {
-		properties.setProperty(AVATAR,""+avatar);
+		properties.setProperty(AVATAR,Integer.toString(avatar));
 		properties.setProperty(NAME,name);
-		properties.setProperty(START_LIFE,""+startLife);
-		properties.setProperty(HAND_SIZE,""+handSize);
-		properties.setProperty(GAMES, ""+games);
+		properties.setProperty(START_LIFE,Integer.toString(startLife));
+		properties.setProperty(HAND_SIZE,Integer.toString(handSize));
+		properties.setProperty(GAMES, Integer.toString(games));
 		properties.setProperty(PLAYER,playerColors);
 		properties.setProperty(OPPONENT,opponentColors);
 		properties.setProperty(CUBE,cube);

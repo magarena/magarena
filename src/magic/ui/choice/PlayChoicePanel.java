@@ -51,7 +51,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 			final JButton button=new JButton(results.get(index).getText());
 			button.setPreferredSize(BUTTON_DIMENSION);
 			button.setBorder(BorderFactory.createLineBorder(FontsAndBorders.GRAY4));
-			button.setActionCommand(""+index);
+			button.setActionCommand(Integer.toString(index));
 			button.addActionListener(this);
 			button.setFocusable(false);
 			buttonPanel.add(button);

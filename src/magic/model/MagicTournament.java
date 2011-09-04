@@ -234,11 +234,11 @@ public class MagicTournament {
 	public void save(final Properties properties) {
 		configuration.save(properties);
 		
-		properties.setProperty(OPPONENT,""+opponentIndex);
-		properties.setProperty(GAME,""+gameNr);
-		properties.setProperty(PLAYED,""+gamesPlayed);
-		properties.setProperty(WON,""+gamesWon);
-		properties.setProperty(START,""+startPlayer);
+		properties.setProperty(OPPONENT,Integer.toString(opponentIndex));
+		properties.setProperty(GAME,Integer.toString(gameNr));
+		properties.setProperty(PLAYED,Integer.toString(gamesPlayed));
+		properties.setProperty(WON,Integer.toString(gamesWon));
+		properties.setProperty(START,Integer.toString(startPlayer));
 		
 		for (int index=0;index<playerDefinitions.length;index++) {
 			playerDefinitions[index].save(properties,getPlayerPrefix(index));

@@ -89,7 +89,7 @@ public class DeckViewers extends JPanel implements ChangeListener {
 			landViewer.changePlayer(player);
 		} else {
 			final int selectedTab=tabSelector.getSelectedTab();			
-			cardLayout.show(cardPanel,""+selectedTab);			
+			cardLayout.show(cardPanel,Integer.toString(selectedTab));			
 		}
 		updateTitle();
 	}

@@ -112,17 +112,16 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 	}
 	
 	public void update() {
-		
 		final PlayerViewerInfo playerInfo=viewerInfo.getPlayerInfo(opponent);
 		avatarPanel.setPlayerDefinition(playerInfo.player.getPlayerDefinition());
 		
-		labels[0].setText(""+playerInfo.life);
+		labels[0].setText(Integer.toString(playerInfo.life));
 		labels[1].setIcon(playerInfo.poison>0?poisonIcon:preventIcon);
-		labels[1].setText(playerInfo.poison>0?""+playerInfo.poison:""+playerInfo.preventDamage);
-		labels[2].setText(""+playerInfo.lands);
-		labels[3].setText(""+playerInfo.hand.size());
-		labels[4].setText(""+playerInfo.library.size());
-		labels[5].setText(""+playerInfo.graveyard.size());
+		labels[1].setText(playerInfo.poison>0?Integer.toString(playerInfo.poison):Integer.toString(playerInfo.preventDamage));
+		labels[2].setText(Integer.toString(playerInfo.lands));
+		labels[3].setText(Integer.toString(playerInfo.hand.size()));
+		labels[4].setText(Integer.toString(playerInfo.library.size()));
+		labels[5].setText(Integer.toString(playerInfo.graveyard.size()));
 		
 		avatarPanel.setSelected(playerInfo.turn);
 	}

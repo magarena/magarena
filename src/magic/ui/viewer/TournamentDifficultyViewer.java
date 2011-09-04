@@ -57,9 +57,8 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 	
 	@Override
 	public void stateChanged(final ChangeEvent event) {
-
 		final int selectedTab=tabSelector.getSelectedTab();
-		cardLayout.show(cardPanel,""+selectedTab);
+		cardLayout.show(cardPanel,Integer.toString(selectedTab));
 		update();
 	}
 }

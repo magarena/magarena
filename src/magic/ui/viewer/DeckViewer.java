@@ -248,7 +248,7 @@ public class DeckViewer extends JPanel {
 			final JPanel rightPanel=new JPanel();
 			rightPanel.setOpaque(false);
 			rightPanel.setLayout(new BorderLayout(1,0));
-			final JLabel countLabel=new JLabel(count>1?""+count:"");
+			final JLabel countLabel=new JLabel(count>1?Integer.toString(count):"");
 			countLabel.setPreferredSize(new Dimension(16,0));
 			countLabel.setHorizontalAlignment(JLabel.CENTER);
 			rightPanel.add(countLabel,BorderLayout.WEST);
