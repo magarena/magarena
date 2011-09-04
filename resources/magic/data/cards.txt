@@ -980,6 +980,19 @@ converted=4
 cost={2}{B}{B}
 timing=smain
 
+>Nantuko Husk
+image=http://magiccards.info/scans/en/cmd/90.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Zombie,Insect
+color=b
+converted=3
+cost={2}{B}
+power=2
+toughness=2
+timing=main
+
 >Peregrine Griffin
 image=http://magiccards.info/scans/en/m12/29.jpg
 value=3
@@ -5327,6 +5340,17 @@ type=Instant
 color=u
 converted=2
 cost={1}{U}
+timing=removal
+
+>Orim's Thunder
+image=http://magiccards.info/scans/en/cmd/24.jpg
+value=3
+removal=2
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
 timing=removal
 
 >Unmake

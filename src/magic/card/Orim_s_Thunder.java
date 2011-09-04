@@ -1,0 +1,92 @@
+package magic.card;
+
+import magic.model.MagicCard;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicManaCost;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicDestroyAction;
+import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.MagicTargetAction;
+import magic.model.choice.MagicKickerChoice;
+import magic.model.choice.MagicTargetChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
+import magic.model.event.MagicSpellCardEvent;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.stack.MagicTriggerOnStack;
+import magic.model.target.MagicDamageTargetPicker;
+import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.target.MagicTarget;
+
+public class Orim_s_Thunder {
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+		@Override
+		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+			final MagicPlayer player = cardOnStack.getController();
+            final MagicCard card = cardOnStack.getCard();
+			return new MagicEvent(
+                    card,
+                    player,
+                    new MagicKickerChoice(
+                            MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                            MagicManaCost.RED,false),
+                    new MagicDestroyTargetPicker(false),
+                    new Object[]{cardOnStack},
+                    this,
+                    "Destroy target artifact or enchantment$." + 
+                    "If " + card + " was kicked$, " + 
+                    "it deals damage equal to that permanent's converted mana cost to target creature.");
+		}
+		@Override
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+			final int kickerCount = (Integer)choiceResults[1];
+			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];		
+			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent target) {
+                    game.doAction(new MagicDestroyAction(target));
+                    if (kickerCount > 0) {
+                    	final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
+            			game.doAction(action);
+            			final MagicPermanent permanent = action.getPermanent();
+        				final MagicPlayer player = permanent.getController();
+        				final int amount = target.getCardDefinition().getConvertedCost();
+        				final MagicEvent triggerEvent = new MagicEvent(
+        					permanent,
+        					player,
+        					MagicTargetChoice.NEG_TARGET_CREATURE,
+        					new MagicDamageTargetPicker(amount),
+        					MagicEvent.NO_DATA,
+                        	new MagicEventAction() {
+                                @Override
+                                public void executeEvent(
+                                    final MagicGame game,
+                                    final MagicEvent event,
+                                    final Object[] data,
+                                    final Object[] choiceResults) {
+                                	event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                                        public void doAction(final MagicTarget target) {
+                                            final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),target,amount,false);
+                                            game.doAction(new MagicDealDamageAction(damage));
+                                        }
+                        			});
+        		                }
+        	                },
+        					permanent + " deals " + amount + " damage to target creature$."
+                        );
+        				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+        			}
+                }
+			});
+		}
+	};
+}
