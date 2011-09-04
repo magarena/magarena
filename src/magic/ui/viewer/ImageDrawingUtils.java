@@ -99,12 +99,13 @@ public class ImageDrawingUtils {
             final int x,
             final int y,
             final boolean flip) {
+        final boolean isDamage = damage.length() > 0;
 		g.setColor(FontsAndBorders.GRAY2);
-		g.fillRect(x,y,ptWidth+4,damage!=null?32:18);
+		g.fillRect(x,y,ptWidth+4,isDamage?32:18);
 		g.setColor(Color.DARK_GRAY);
-		g.drawRect(x,y,ptWidth+4,damage!=null?32:18);
-		g.drawString(pt,x+3,damage!=null&&flip?y+28:y+14);
-		if (damage!=null) {
+		g.drawRect(x,y,ptWidth+4,isDamage?32:18);
+		g.drawString(pt,x+3,isDamage&&flip?y+28:y+14);
+		if (isDamage) {
 			final int damageWidth=metrics.stringWidth(damage);
 			int dx=x+3+(ptWidth-damageWidth)/2;
 			g.setColor(Color.RED);

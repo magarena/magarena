@@ -32,7 +32,7 @@ public class Rapacious_One {
                         		"Put a 0/1 colorless Eldrazi Spawn " +
                             	"creature token onto the battlefield. It has " +
                             	"\"Sacrifice this creature: Add {1} to your mana pool.\"") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
