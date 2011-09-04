@@ -48,7 +48,6 @@ public class MagicGame {
     private static MagicGame INSTANCE;
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
 	public static final int LOSING_POISON=10;
-    public static final MagicSource NO_SOURCE = MagicCard.NONE;
 	
 	private static final long ID_FACTOR=31;
 	

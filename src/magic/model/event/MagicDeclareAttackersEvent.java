@@ -21,6 +21,6 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
 	};
 	
 	public MagicDeclareAttackersEvent(final MagicPlayer player) {
-		super(MagicGame.NO_SOURCE,player,MagicDeclareAttackersChoice.getInstance(),new Object[]{player},EVENT_ACTION,"");
+		super(MagicEvent.NO_SOURCE,player,MagicDeclareAttackersChoice.getInstance(),new Object[]{player},EVENT_ACTION,"");
 	}
 }
