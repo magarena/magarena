@@ -8479,6 +8479,16 @@ converted=2
 cost={1}{R}
 timing=main
 
+>Rise from the Grave
+image=http://magiccards.info/scans/en/cmd/96.jpg
+value=4
+rarity=U
+type=Sorcery
+color=b
+converted=5
+cost={4}{B}
+timing=main
+
 >Knight Exemplar
 image=http://magiccards.info/scans/en/m11/20.jpg
 value=4
