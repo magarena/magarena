@@ -13,8 +13,8 @@ import java.util.LinkedList;
 
 public abstract class MagicPutIntoPlayAction extends MagicAction {
 
-	private MagicPermanent permanent;
-	private MagicPermanent enchantedPermanent;
+	private MagicPermanent permanent = MagicPermanent.NONE;
+	private MagicPermanent enchantedPermanent = MagicPermanent.NONE;
 
 	@Override
 	public void doAction(final MagicGame game) {
@@ -24,7 +24,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		final MagicPlayer controller=permanent.getController();
 		controller.addPermanent(permanent);
 				
-		if (enchantedPermanent!=null) {
+		if (enchantedPermanent!=MagicPermanent.NONE) {
 			enchantedPermanent.addAura(permanent);
 			permanent.setEnchantedCreature(enchantedPermanent);			
 		}
@@ -47,9 +47,9 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		if (enchantedPermanent!=null) {			
+		if (enchantedPermanent!=MagicPermanent.NONE) {			
 			enchantedPermanent.removeAura(permanent);
-			permanent.setEnchantedCreature(null);
+			permanent.setEnchantedCreature(MagicPermanent.NONE);
 		}
 		permanent.getController().removePermanent(permanent);
 		game.removeTriggers(permanent,new LinkedList<MagicPermanentTrigger>());
