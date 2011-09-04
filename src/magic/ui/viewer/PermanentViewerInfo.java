@@ -77,18 +77,18 @@ public class PermanentViewerInfo {
 		basic=permanent.hasType(MagicType.Basic);
 		mana=permanent.producesMana();
 		creature=permanent.isCreature();
-		artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature()==MagicPermanent.NONE);
+		artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature().isInvalid());
 		enchantment=permanent.isEnchanted()||
-            (permanent.isEnchantment()&&permanent.getEnchantedCreature()==MagicPermanent.NONE);
-		root=permanent.getEnchantedCreature()==MagicPermanent.NONE && permanent.getEquippedCreature()==MagicPermanent.NONE;
+            (permanent.isEnchantment()&&permanent.getEnchantedCreature().isInvalid());
+		root=permanent.getEnchantedCreature().isInvalid() && permanent.getEquippedCreature().isInvalid();
 		tapped=permanent.isTapped();
 		canNotTap=!tapped&&!permanent.canTap(game);
 		attacking=permanent.isAttacking();
 		blocking=permanent.isBlocking();
-		blockingInvalid=permanent.getBlockedCreature()==MagicPermanent.NONE;
+		blockingInvalid=permanent.getBlockedCreature().isInvalid();
 		lowered=attacking||
-            (permanent.getEquippedCreature()!=MagicPermanent.NONE&&permanent.getEquippedCreature().isAttacking())||
-		  	(permanent.getEnchantedCreature()!=MagicPermanent.NONE&&permanent.getEnchantedCreature().isAttacking());
+            (permanent.getEquippedCreature().isValid() && permanent.getEquippedCreature().isAttacking())||
+		  	(permanent.getEnchantedCreature().isValid() && permanent.getEnchantedCreature().isAttacking());
 		manaColor=getManaColor(permanent);
 		blockers=getBlockers(game,permanent);
 		linked=getLinked(game,permanent);
