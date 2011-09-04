@@ -20,7 +20,7 @@ public class Ajani_s_Pridemate {
                     new Object[]{permanent},
                     this,
                     "Put a +1/+1 counter on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

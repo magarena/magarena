@@ -23,7 +23,7 @@ public class Skullcage {
                     this,
                     permanent + " deals 2 damage to your opponent " + 
                     "unless your opponent has exactly three or exactly four cards in hand."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

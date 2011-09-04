@@ -20,7 +20,7 @@ public class Kokusho__the_Evening_Star {
                         new Object[]{permanent.getController()},
                         this,
                         "Your opponent loses 5 life. You gain 5 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

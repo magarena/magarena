@@ -22,7 +22,7 @@ public class Sprouting_Thrinax {
                         new Object[]{player},
                         this,
                         player + " puts three 1/1 green Saproling creature tokens onto the battlefield.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

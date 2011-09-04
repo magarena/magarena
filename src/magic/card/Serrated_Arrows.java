@@ -79,7 +79,7 @@ public class Serrated_Arrows {
                     new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

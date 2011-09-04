@@ -28,7 +28,7 @@ public class Mask_of_Memory {
                         new Object[]{permanent,player},
                         this,
                         "You may$ draw two cards. If you do, discard a card."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

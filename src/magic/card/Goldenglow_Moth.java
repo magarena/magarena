@@ -19,7 +19,7 @@ public class Goldenglow_Moth {
                         new Object[]{player},
                         this,
                         player + " gains 4 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

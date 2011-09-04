@@ -92,7 +92,7 @@ public class Shrine_of_Burning_Rage {
                     new Object[]{permanent},
                     this,
                     "Put a charge counter on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override
@@ -124,7 +124,7 @@ public class Shrine_of_Burning_Rage {
                     new Object[]{permanent},
                     this,
                     "Put a charge counter on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

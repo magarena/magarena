@@ -25,7 +25,7 @@ public class Angel_s_Feather {
                         new Object[]{player},
                         this,
                         "You may$ gain 1 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

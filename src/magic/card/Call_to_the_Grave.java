@@ -55,7 +55,7 @@ public class Call_to_the_Grave {
                     new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
-                null;
+                MagicEvent.NONE;
     	}
     	
     	@Override

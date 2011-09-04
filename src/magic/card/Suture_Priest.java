@@ -21,7 +21,7 @@ public class Suture_Priest {
                     new Object[]{controller,same?1:-1},
                     this,
                     controller + (same ? " gains 1 life." : " loses 1 life.")):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

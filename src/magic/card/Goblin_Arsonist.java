@@ -29,7 +29,7 @@ public class Goblin_Arsonist {
                         new Object[]{permanent},
                         this,
                         "You may$ deal 1 damage to target creature or player$") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

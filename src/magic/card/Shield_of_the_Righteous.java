@@ -20,7 +20,7 @@ public class Shield_of_the_Righteous {
                     new Object[]{blocked},
                     this,
                     blocked + " doesn't untap during its controller's next untap step.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

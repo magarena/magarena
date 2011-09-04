@@ -19,7 +19,7 @@ public class Arc_Runner {
                     new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

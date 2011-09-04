@@ -23,7 +23,7 @@ public class Serendib_Efreet {
                         new Object[]{permanent,player},
                         this,
                         permanent + " deals 1 damage to you.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

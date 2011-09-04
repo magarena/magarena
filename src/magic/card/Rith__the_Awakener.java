@@ -36,7 +36,7 @@ public class Rith__the_Awakener {
                         this,
                         "You may$ pay {2}{G}$. If you do, choose a color$. "+
                         "Put a 1/1 green Saproling creature token onto the battlefield for each permanent of that color."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

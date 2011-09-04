@@ -21,7 +21,7 @@ public class Creakwood_Liege {
                         new Object[]{player},
                         this,
                         player + " put a 1/1 black and green Worm creature token onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

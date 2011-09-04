@@ -48,7 +48,7 @@ public class Raging_Ravine {
                     new Object[]{permanent},
                     this,
                     "Put a +1/+1 counter on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

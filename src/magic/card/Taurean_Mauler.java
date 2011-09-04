@@ -22,7 +22,7 @@ public class Taurean_Mauler {
                     new Object[]{permanent},
                     this,
                     "Put a +1/+1 counter on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

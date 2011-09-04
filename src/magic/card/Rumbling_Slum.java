@@ -21,7 +21,7 @@ public class Rumbling_Slum {
                         new Object[]{permanent},
                         this,
                         permanent + " deals 1 damage to each player."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

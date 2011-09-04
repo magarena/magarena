@@ -21,7 +21,7 @@ public class Sheoldred__Whispering_One {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			return (player != data) ?
-                null :
+                MagicEvent.NONE :
 				new MagicEvent(
                     permanent,
                     player,
@@ -50,7 +50,7 @@ public class Sheoldred__Whispering_One {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			return (player == data) ? 
-                null :
+                MagicEvent.NONE :
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

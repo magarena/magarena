@@ -21,7 +21,7 @@ public class Stonebrow__Krosan_Hero {
                     new Object[]{creature},
                     this,
                     creature + " gets +2/+2 until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

@@ -20,7 +20,7 @@ public class Nemesis_of_Reason {
                         new Object[]{game.getOpponent(player)},
                         this,
                         "Defending player puts the top ten cards of his or her library into his or her graveyard."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

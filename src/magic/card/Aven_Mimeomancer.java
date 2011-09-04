@@ -27,7 +27,7 @@ public class Aven_Mimeomancer {
                         MagicEvent.NO_DATA,
                         this,
                         "You may$ put a feather counter on target creature$."):
-                null;
+                MagicEvent.NONE;
 		}
 
 		@Override

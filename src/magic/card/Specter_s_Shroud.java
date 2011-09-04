@@ -22,7 +22,7 @@ public class Specter_s_Shroud {
                         new Object[]{permanent,damage.getTarget()},
                         this,
                         "Your opponent discards a card.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

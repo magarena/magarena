@@ -25,7 +25,7 @@ public class Mesa_Enchantress {
                         new Object[]{player},
                         this,
                         "You may$ draw a card."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

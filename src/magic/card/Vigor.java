@@ -39,7 +39,7 @@ public class Vigor {
                             "Put "+amount+" +1/+1 counters on "+creature+".");
 				}
 			}
-			return null;
+			return MagicEvent.NONE;
 		}
 		
 		@Override

@@ -25,7 +25,7 @@ public class Keiga__the_Tide_Star {
                         new Object[]{permanent.getController()},
                         this,
                         "Gain control of target creature$."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

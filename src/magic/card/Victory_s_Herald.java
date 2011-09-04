@@ -32,7 +32,7 @@ public class Victory_s_Herald {
                     new Object[]{player},
                     this,
                     "Attacking creatures gain flying and lifelink until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

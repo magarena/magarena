@@ -21,7 +21,7 @@ public class Liliana_s_Caress {
                         new Object[]{otherController},
                         this,
                         otherController + " loses 2 life."):
-                null;
+                MagicEvent.NONE;
     	}
     	@Override
     	public void executeEvent(

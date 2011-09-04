@@ -26,7 +26,7 @@ public class Demon_s_Horn {
                         new Object[]{player},
                         this,
                         "You may$ gain 1 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

@@ -21,7 +21,7 @@ public class Raking_Canopy {
                         new Object[]{permanent,creature},
                         this,
                         permanent + " deals 4 damage to "+creature+".") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

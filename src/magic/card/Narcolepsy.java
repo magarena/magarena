@@ -28,7 +28,7 @@ public class Narcolepsy {
                         new Object[]{permanent},
                         this,
                         "If "+enchantedCreature+" is untapped, tap it.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

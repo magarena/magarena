@@ -31,7 +31,7 @@ public class Wort__Boggart_Auntie {
                         MagicEvent.NO_DATA,
                         this,
                         "You may$ return target Goblin card$ from your graveyard to your hand."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

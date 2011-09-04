@@ -14,7 +14,7 @@ public class Guard_Gomazoa {
 				// Replacement effect. Generates no event or action.
 				damage.setAmount(0);	
 			}
-			return null;
+			return MagicEvent.NONE;
 		}
 		
 		@Override

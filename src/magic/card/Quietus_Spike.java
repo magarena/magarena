@@ -24,7 +24,7 @@ public class Quietus_Spike {
                         new Object[]{target},
                         this,
                         "You lose half your life, rounded up."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

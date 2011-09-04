@@ -22,7 +22,7 @@ public class Scroll_Thief {
                         new Object[]{player},
                         this,
                         player + " draws a card."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

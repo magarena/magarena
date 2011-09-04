@@ -29,7 +29,7 @@ public class Armadillo_Cloak {
                     new Object[]{player,amount},
                     this,
                     player + "gains " + amount + " life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

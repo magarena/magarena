@@ -27,7 +27,7 @@ public class Archon_of_Justice {
                         MagicEvent.NO_DATA,
                         this,
                         "Exile target permanent$."):
-                null;
+                MagicEvent.NONE;
 		}
 
 		@Override

@@ -29,7 +29,7 @@ public class Followed_Footsteps {
                     new Object[]{permanent,player},
                     this,
                     player + " puts a token that's a copy of enchanted creature onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

@@ -23,7 +23,7 @@ public class Dread {
                         new Object[]{damage.getSource()},
                         this,
                         "Destroy "+damage.getSource()+"."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

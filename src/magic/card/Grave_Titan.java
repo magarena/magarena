@@ -43,7 +43,7 @@ public class Grave_Titan {
                         new Object[]{player},
                         this,
                         player + " put two 2/2 black Zombie creature tokens onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

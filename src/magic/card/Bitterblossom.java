@@ -22,7 +22,7 @@ public class Bitterblossom {
                     this,
                     player + " loses 1 life and puts a 1/1 black Faerie Rogue creature token with flying " + 
                     "onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

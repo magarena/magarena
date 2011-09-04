@@ -36,7 +36,7 @@ public class Dromar__the_Banisher {
                         this,
                         "You may$ pay {2}{U}$. If you do, choose a color$. " + 
                         "Return all creatures of that color to their owner's hand."):
-                 null;
+                 MagicEvent.NONE;
 		}
 		
 		@Override

@@ -27,7 +27,7 @@ public class Warstorm_Surge {
                         this,
                         "Whenever a creature enters the battlefield under your control, " +
                         "it deals damage equal to its power to target creature or player$.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

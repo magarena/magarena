@@ -24,7 +24,7 @@ public class Wall_of_Reverence {
                     new Object[]{player},
                     this,
                     player + " gains life equal to the power of target creature$ he or she controls."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

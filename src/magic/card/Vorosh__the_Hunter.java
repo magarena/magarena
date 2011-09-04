@@ -32,7 +32,7 @@ public class Vorosh__the_Hunter {
                     new Object[]{permanent},
                     this,
                     "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

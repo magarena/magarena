@@ -29,7 +29,7 @@ public class Balefire_Liege {
                         new Object[]{permanent},
                         this,
                         permanent + " deals 3 damage to target player$."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
@@ -58,7 +58,7 @@ public class Balefire_Liege {
                         new Object[]{player},
                         this,
                         player + " gains 3 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

@@ -27,7 +27,7 @@ public class Perilous_Myr {
                         new Object[]{permanent},
                         this,
                         permanent + " deals 2 damage to target creature or player$."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

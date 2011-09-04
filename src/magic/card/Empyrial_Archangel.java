@@ -14,7 +14,7 @@ public class Empyrial_Archangel {
 				// Replacement effect. Generates no event or action.
 				damage.setTarget(permanent);				
 			}
-			return null;
+			return MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {

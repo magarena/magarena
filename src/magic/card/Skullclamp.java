@@ -19,7 +19,7 @@ public class Skullclamp {
                         new Object[]{player},
                         this,
                         player + " draws two cards.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

@@ -18,7 +18,7 @@ public class Hungry_Spriggan {
                         new Object[]{permanent},
                         this,
                         permanent + " gets +3/+3 until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

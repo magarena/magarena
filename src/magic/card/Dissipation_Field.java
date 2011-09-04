@@ -24,7 +24,7 @@ public class Dissipation_Field {
                         new Object[]{source},
                         this,
                         "Return "+source+" to its owner's hand."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

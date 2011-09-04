@@ -33,7 +33,7 @@ public class Mordant_Dragon {
 						new Object[]{permanent,amount},
 						this,
 						"You may$ have " + permanent + " deal "+amount+" damage to target creature$ your opponent controls."):
-				null;
+				MagicEvent.NONE;
 		}
 		
 		@Override

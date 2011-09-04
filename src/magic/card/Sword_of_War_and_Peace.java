@@ -27,7 +27,7 @@ public class Sword_of_War_and_Peace {
                     permanent + " deals damage to " + targetPlayer + 
                     " equal to the number of cards in his or her hand and " +
                     player + " gains 1 life for each card in your hand."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

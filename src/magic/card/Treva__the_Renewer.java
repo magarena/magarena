@@ -35,7 +35,7 @@ public class Treva__the_Renewer {
                         this,
                         "You may$ pay {2}{W}$. If you do, choose a color$. " + 
                         player + " gains 1 life for each permanent of that color."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

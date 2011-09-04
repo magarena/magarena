@@ -25,7 +25,7 @@ public class Souls_of_the_Faultless {
                         this,
                         player + " gains " + amount + " life and attacking player loses " +
                         		amount + " life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

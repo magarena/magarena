@@ -20,7 +20,7 @@ public class Blood_Seeker {
                     new Object[]{controller},
                     this,
                     controller + " loses 1 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

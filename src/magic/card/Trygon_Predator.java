@@ -27,7 +27,7 @@ public class Trygon_Predator {
                         MagicEvent.NO_DATA,
                         this,
                         "You may$ destroy target artifact or enchantment$ your opponent controls."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

@@ -56,7 +56,7 @@ public class Sun_Titan {
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 
                     "from your graveyard to the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

@@ -19,7 +19,7 @@ public class Ajani_s_Mantra {
                     new Object[]{player},
                     this,
                     player + " gains 1 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

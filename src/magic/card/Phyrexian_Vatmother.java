@@ -20,7 +20,7 @@ public class Phyrexian_Vatmother {
                         new Object[]{player},
                         this,
                         player + " get a poison counter."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

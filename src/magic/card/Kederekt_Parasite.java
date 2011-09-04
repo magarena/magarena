@@ -34,7 +34,7 @@ public class Kederekt_Parasite {
                     new Object[]{permanent,player},
                     this,
                     permanent + " deals 1 damage to your opponent."):
-                null;
+                MagicEvent.NONE;
     	}
     	
     	@Override

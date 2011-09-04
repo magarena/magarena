@@ -21,7 +21,7 @@ public class Juniper_Order_Ranger {
                         this,
                         "Put a +1/+1 counter on "+otherPermanent+" and a +1/+1 counter on " + 
                         permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

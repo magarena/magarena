@@ -17,7 +17,7 @@ public class Benalish_Veteran {
                         new Object[]{permanent},
                         this,
                         permanent + " gets +1/+1 until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

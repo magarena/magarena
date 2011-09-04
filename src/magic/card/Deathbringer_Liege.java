@@ -34,7 +34,7 @@ public class Deathbringer_Liege {
                         MagicEvent.NO_DATA,
                         this,
                         "You may$ destroy target creature$ if it's tapped."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override
@@ -65,7 +65,7 @@ public class Deathbringer_Liege {
                         MagicEvent.NO_DATA,
                         this,
                         "You may$ tap target creature$."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {

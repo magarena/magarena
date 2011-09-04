@@ -17,7 +17,7 @@ public class Guardian_Seraph {
 				// Prevention effect.
 				damage.setAmount(amount-1);
 			}			
-			return null;
+			return MagicEvent.NONE;
 		}
 		
 		@Override

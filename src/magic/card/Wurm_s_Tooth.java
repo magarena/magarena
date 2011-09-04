@@ -26,7 +26,7 @@ public class Wurm_s_Tooth {
                         new Object[]{player},
                         this,
                         "You may$ gain 1 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

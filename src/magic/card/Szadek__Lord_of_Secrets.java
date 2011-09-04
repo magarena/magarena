@@ -24,7 +24,7 @@ public class Szadek__Lord_of_Secrets {
 				game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
 				game.doAction(new MagicMillLibraryAction((MagicPlayer)damage.getTarget(),amount));
 			}			
-			return null;
+			return MagicEvent.NONE;
 		}
 		
 		@Override

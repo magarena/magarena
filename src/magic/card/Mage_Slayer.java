@@ -23,7 +23,7 @@ public class Mage_Slayer {
                         new Object[]{equippedCreature,game.getOpponent(player)},
                         this,
 						equippedCreature+ " deals damage equal to its power to defending player."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

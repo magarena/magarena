@@ -21,7 +21,7 @@ public class Mycoid_Shepherd {
                         new Object[]{permanent.getController()},
                         this,
                         permanent.getController() + " gains 5 life."):
-                 null;
+                 MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
@@ -47,7 +47,7 @@ public class Mycoid_Shepherd {
                         new Object[]{player},
                         this,
                         player + " gains 5 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

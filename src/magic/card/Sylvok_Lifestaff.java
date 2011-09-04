@@ -19,7 +19,7 @@ public class Sylvok_Lifestaff {
                     new Object[]{player},
                     this,
                     player + " gains 3 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

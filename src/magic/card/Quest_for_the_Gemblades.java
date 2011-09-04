@@ -76,7 +76,7 @@ public class Quest_for_the_Gemblades {
                         new Object[]{permanent},
                         this,
                         "Put a quest counter on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

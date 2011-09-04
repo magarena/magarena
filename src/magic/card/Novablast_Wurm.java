@@ -22,7 +22,7 @@ public class Novablast_Wurm {
                         new Object[]{permanent},
                         this,
                         "Destroy all creatures other than " + permanent + ".") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

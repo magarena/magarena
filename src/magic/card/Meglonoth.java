@@ -21,7 +21,7 @@ public class Meglonoth {
                         this,
                         permanent + " deals damage to the blocked creature's controller equal to " +
                         permanent + "'s power."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

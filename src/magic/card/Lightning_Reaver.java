@@ -23,7 +23,7 @@ public class Lightning_Reaver {
                         new Object[]{permanent},
                         this,
                         "Put a charge counter on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
@@ -48,7 +48,7 @@ public class Lightning_Reaver {
                         this,
                         permanent + " deals damage equal to the number of " + 
                         "charge counters on it to your opponent."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

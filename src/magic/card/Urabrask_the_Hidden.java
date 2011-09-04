@@ -12,7 +12,7 @@ public class Urabrask_the_Hidden {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (otherPermanent.isCreature()&&otherPermanent.getController()!=permanent.getController()) ?
                 new MagicTapEvent(otherPermanent):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

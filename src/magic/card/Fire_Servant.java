@@ -18,7 +18,7 @@ public class Fire_Servant {
 				// Generates no event or action.
 				damage.setAmount(damage.getAmount()<<1);
 			}			
-			return null;
+			return MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {

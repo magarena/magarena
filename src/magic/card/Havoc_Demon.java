@@ -24,7 +24,7 @@ public class Havoc_Demon {
                         new Object[]{permanent.getController()},
                         this,
                         "All creatures get -5/-5 until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

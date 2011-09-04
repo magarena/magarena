@@ -28,7 +28,7 @@ public class Sword_of_Feast_and_Famine {
                     new Object[]{permanent,player,damage.getTarget()},
                     this,
                     damage.getTarget() + " discards a card and you untap all lands you control."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

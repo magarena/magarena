@@ -21,7 +21,7 @@ public class Phyrexian_Arena {
                         new Object[]{player},
                         this,
                         player + " draws a card and loses 1 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

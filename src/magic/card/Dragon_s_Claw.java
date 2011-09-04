@@ -26,7 +26,7 @@ public class Dragon_s_Claw {
                         new Object[]{player},
                         this,
                         "You may$ gain 1 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

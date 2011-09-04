@@ -25,7 +25,7 @@ public class Circle_of_Flame {
                         new Object[]{permanent,creature},
                         this,
                         permanent + " deals 1 damage to attacking creature without flying."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

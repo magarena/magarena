@@ -22,7 +22,7 @@ public class Roc_Egg {
                     new Object[]{player},
                     this,
                     player + " puts a 3/3 white Bird creature token with flying onto the battlefield.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

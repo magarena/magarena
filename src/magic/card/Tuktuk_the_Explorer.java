@@ -23,7 +23,7 @@ public class Tuktuk_the_Explorer {
                     this,
                     player + " puts a legendary 5/5 colorless Goblin Golem artifact creature token " + 
 							"named Tuktuk the Returned onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

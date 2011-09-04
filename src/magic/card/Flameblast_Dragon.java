@@ -35,7 +35,7 @@ public class Flameblast_Dragon {
                         this,
                         "You may pay$ {X}{R}$. If you do, " + permanent + 
                         " deals X damage to target creature or player$."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

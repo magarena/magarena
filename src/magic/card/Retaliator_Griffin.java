@@ -25,7 +25,7 @@ public class Retaliator_Griffin {
                         new Object[]{permanent,amount},
                         this,
                         "Put "+amount+" +1/+1 counters on " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

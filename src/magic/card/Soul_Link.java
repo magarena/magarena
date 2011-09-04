@@ -31,7 +31,7 @@ public class Soul_Link {
                         new Object[]{player,amount},
                         this,
                         player + " gains " + amount + " life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
@@ -55,7 +55,7 @@ public class Soul_Link {
                     player,
                     new Object[]{player,amount},this,
                     player + " gains " + amount + " life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

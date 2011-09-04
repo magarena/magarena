@@ -20,7 +20,7 @@ public class Moroii {
                         new Object[]{player},
                         this,
                         player + " loses 1 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

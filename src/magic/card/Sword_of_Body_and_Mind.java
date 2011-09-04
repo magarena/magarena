@@ -26,7 +26,7 @@ public class Sword_of_Body_and_Mind {
                     this,
                     player + " puts a 2/2 green Wolf creature token onto the battlefield and " + targetPlayer +
                         " puts the top ten cards of his or her library into his or her graveyard."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

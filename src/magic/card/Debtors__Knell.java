@@ -27,7 +27,7 @@ public class Debtors__Knell {
                         new Object[]{player},
                         this,
                         "Put target creature card$ in a graveyard onto the battlefield under your control."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

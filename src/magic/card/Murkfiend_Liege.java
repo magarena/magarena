@@ -25,7 +25,7 @@ public class Murkfiend_Liege {
                         new Object[]{player},
                         this,
                         "Untap all green and/or blue creatures you control."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

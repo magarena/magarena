@@ -34,7 +34,7 @@ public class Sword_of_Light_and_Shadow {
                     this,
                     player + " gains 3 life and you may$ return target creature card$ " +
                             "from your graveyard to your hand."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

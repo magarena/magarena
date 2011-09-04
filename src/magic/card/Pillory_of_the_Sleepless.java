@@ -29,7 +29,7 @@ public class Pillory_of_the_Sleepless {
                         new Object[]{player},
                         this,
                         enchanted.getController() + " loses 1 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

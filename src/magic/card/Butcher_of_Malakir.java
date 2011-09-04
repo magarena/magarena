@@ -25,7 +25,7 @@ public class Butcher_of_Malakir {
                     new Object[]{permanent,game.getOpponent(controller)},
                     this,
                     "Your opponent sacrifices a creature."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override
@@ -57,7 +57,7 @@ public class Butcher_of_Malakir {
                     new Object[]{permanent,game.getOpponent(controller)},
                     this,
                     "Your opponent sacrifices a creature."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

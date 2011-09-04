@@ -57,7 +57,7 @@ public class Lord_of_Shatterskull_Pass {
                         new Object[]{permanent,game.getOpponent(player)},
                         this,
                         permanent + " deals 6 damage to each creature defending player controls."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

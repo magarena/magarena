@@ -27,7 +27,7 @@ public class Doomgape {
                         this,
                         "Sacrifice a creature. " + player + 
                         		" gains life equal to that creature's toughness."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

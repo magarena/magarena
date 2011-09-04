@@ -23,7 +23,7 @@ public class Eldrazi_Monument {
                         new Object[]{permanent,player},
                         this,
                         "Sacrifice a creature. If you can't, sacrifice " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 
 		@Override

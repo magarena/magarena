@@ -59,7 +59,7 @@ public class Stuffy_Doll {
                         new Object[]{permanent,game.getOpponent(player),amount},
                         this,
                         permanent + " deals "+amount+" damage to your opponent.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

@@ -28,7 +28,7 @@ public class Griffin_Guide {
                     new Object[]{player},
                     this,
                     "Put a 2/2 white Griffin creature token with flying onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

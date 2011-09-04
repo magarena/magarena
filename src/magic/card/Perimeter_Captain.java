@@ -21,7 +21,7 @@ public class Perimeter_Captain {
                         new Object[]{player},
                         this,
                         player + " gains 2 life.") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

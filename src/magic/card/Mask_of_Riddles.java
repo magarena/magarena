@@ -14,7 +14,7 @@ public class Mask_of_Riddles {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			return (permanent.getEquippedCreature()==damage.getSource()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicDrawEvent(permanent,permanent.getController(),1):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

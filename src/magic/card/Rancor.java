@@ -30,7 +30,7 @@ public class Rancor {
                         new Object[]{card},
                         this,
                         "Return " + permanent + " to its owner's hand.") :
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

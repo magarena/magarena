@@ -66,7 +66,7 @@ public class Angelic_Destiny {
                     new Object[]{permanent.getCard()},
                     this,
                     "Return " + permanent + " to its owner's hand."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

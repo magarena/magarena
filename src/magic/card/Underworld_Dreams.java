@@ -23,7 +23,7 @@ public class Underworld_Dreams {
                     new Object[]{permanent,player},
                     this,
                     permanent + " deals 1 damage to your opponent."):
-                null;
+                MagicEvent.NONE;
     	}
     	
     	@Override

@@ -51,7 +51,7 @@ public class Halcyon_Glaze {
                         this,
                         permanent + " becomes a 4/4 Illusion creature with flying until end of turn. " + 
                         "It's still an enchantment."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

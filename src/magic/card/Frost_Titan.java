@@ -31,7 +31,7 @@ public class Frost_Titan {
                     new Object[]{permanent,target},
                     this,
                     "Counter spell or ability$ unless its controller pays {2}."):
-                null;
+                MagicEvent.NONE;
         }
         
         @Override
@@ -84,7 +84,7 @@ public class Frost_Titan {
                     MagicEvent.NO_DATA,
                     this,
                     "Tap target permanent$. It doesn't untap during its controller's next untap step."):
-                null;
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(

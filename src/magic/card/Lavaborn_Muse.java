@@ -22,7 +22,7 @@ public class Lavaborn_Muse {
                         new Object[]{permanent,player},
                         this,
                         permanent + " deals 3 damage to " + player + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

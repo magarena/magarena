@@ -15,7 +15,7 @@ public class Belltower_Sphinx {
             if (damage.getTarget() == permanent) {
             	game.doAction(new MagicMillLibraryAction(damage.getSource().getController(),amount));
             }
-            return null;
+            return MagicEvent.NONE;
 		}
 		
 		@Override

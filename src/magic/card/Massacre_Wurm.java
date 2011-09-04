@@ -50,7 +50,7 @@ public class Massacre_Wurm {
                         new Object[]{otherController},
                         this,
                         "Your opponent loses 2 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

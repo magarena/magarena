@@ -19,7 +19,7 @@ public class Septic_Rats {
                             new Object[]{permanent},
                             this,
                             permanent + " gets +1/+1 until end of turn.") :
-                    null;
+                    MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

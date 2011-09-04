@@ -19,7 +19,7 @@ public class Steppe_Lynx {
                     new Object[]{permanent},
                     this,
                     permanent + " gets +2/+2 until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

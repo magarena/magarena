@@ -30,7 +30,7 @@ public class Kaervek_the_Merciless {
                         new Object[]{permanent,damage},
                         this,
                         permanent + " deals "+damage+" damage to target creature or player$."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

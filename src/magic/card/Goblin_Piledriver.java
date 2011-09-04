@@ -23,7 +23,7 @@ public class Goblin_Piledriver {
                         new Object[]{permanent},
                         this,
                         permanent + " gets +2/+0 until end of turn for each other attacking Goblin."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

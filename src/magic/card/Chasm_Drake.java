@@ -26,7 +26,7 @@ public class Chasm_Drake {
                         new Object[]{permanent},
                         this,
                         "Target creature$ you control gains flying until end of turn."):
-                null;           
+                MagicEvent.NONE;           
 		}
 		
 		@Override

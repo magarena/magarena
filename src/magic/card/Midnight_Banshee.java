@@ -25,7 +25,7 @@ public class Midnight_Banshee {
                         new Object[]{player},
                         this,
                         "Put a -1/-1 counter on each nonblack creature."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

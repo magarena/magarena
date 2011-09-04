@@ -32,7 +32,7 @@ public class Frenzied_Goblin {
                         MagicEvent.NO_DATA,
                         this,
                         "You may$ pay {R}$. If you do, target creature$ can't block this turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

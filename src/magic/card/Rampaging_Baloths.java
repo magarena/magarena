@@ -20,7 +20,7 @@ public class Rampaging_Baloths {
                         new Object[]{player},
                         this,
                         "Put a 4/4 green Beast creature token onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

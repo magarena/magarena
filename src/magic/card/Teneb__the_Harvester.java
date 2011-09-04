@@ -33,7 +33,7 @@ public class Teneb__the_Harvester {
                         this,
                         "You may$ pay {2}{B}$. If you do, put target creature card$ " + 
                         "in a graveyard into play under your control."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

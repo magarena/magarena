@@ -25,7 +25,7 @@ public class Kor_Firewalker {
                     new Object[]{player},
                     this,
                     player + " gains 1 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

@@ -45,7 +45,7 @@ public class Archon_of_Redemption {
                         new Object[]{player,otherPermanent},
                         this,
                         player + " gains life equal to the power of "+otherPermanent+'.'):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

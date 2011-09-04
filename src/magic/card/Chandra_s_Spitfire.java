@@ -23,7 +23,7 @@ public class Chandra_s_Spitfire {
                         new Object[]{permanent},
                         this,
                         permanent + " gets +3/+0 until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

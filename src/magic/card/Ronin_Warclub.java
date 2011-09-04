@@ -19,7 +19,7 @@ public class Ronin_Warclub {
                         new Object[]{permanent,otherPermanent},
                         this,
                          "Attach " + permanent + " to " + otherPermanent + ".") :
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

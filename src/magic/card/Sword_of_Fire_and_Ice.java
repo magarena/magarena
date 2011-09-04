@@ -29,7 +29,7 @@ public class Sword_of_Fire_and_Ice {
                         new Object[]{permanent,player},
                         this,
                         permanent + " deals 2 damage to target creature or player$ and you draw a card."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

@@ -32,7 +32,7 @@ public class Oros__the_Avenger {
                         this,
                         "You may$ pay {2}{W}$. If you do, " + permanent + 
                         " deals 3 damage to each nonwhite creature."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

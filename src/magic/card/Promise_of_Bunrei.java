@@ -22,7 +22,7 @@ public class Promise_of_Bunrei {
                         this,
                         "Sacrifice " + permanent + ". If you do, " + 
                         "put four 1/1 colorless Spirit creature tokens onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

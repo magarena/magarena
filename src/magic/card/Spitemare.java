@@ -27,7 +27,7 @@ public class Spitemare {
                         new Object[]{permanent,amount},
                         this,
                         permanent + " deals "+amount+" damage to target creature or player$."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

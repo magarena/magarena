@@ -21,7 +21,7 @@ public class Kazuul__Tyrant_of_the_Cliffs {
                         new Object[]{permanent,player},
                         this,
                         "Put a 3/3 red Ogre creature token onto the battlefield unless your opponent pays {3}."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

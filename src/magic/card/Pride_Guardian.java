@@ -19,7 +19,7 @@ public class Pride_Guardian {
                     new Object[]{player},
                     this,
                     player + " gains 3 life."):
-                null;
+                MagicEvent.NONE;
 		}
 		
 		@Override

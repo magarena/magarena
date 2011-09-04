@@ -28,7 +28,7 @@ public class Elephant_Guide {
                     new Object[]{player},
                     this,
                     "Put a 3/3 green Elephant creature token onto the battlefield."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

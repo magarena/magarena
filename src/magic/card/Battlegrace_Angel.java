@@ -21,7 +21,7 @@ public class Battlegrace_Angel {
                         new Object[]{creature},
                         this,
                         creature+" gains lifelink until end of turn."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

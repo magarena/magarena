@@ -68,7 +68,7 @@ public class Gelectrode {
                     new Object[]{permanent},
                     this,
                     "Untap " + permanent + "."):
-                null;
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
