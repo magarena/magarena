@@ -307,7 +307,6 @@ public class MagicManaCost {
 	}
 	
 	public static MagicManaCost createCost(final String costText) {
-		
 		MagicManaCost cost=COSTS_MAP.get(costText);
 		if (cost==null) {
 			cost=new MagicManaCost(costText);
