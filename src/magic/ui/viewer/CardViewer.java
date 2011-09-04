@@ -24,20 +24,19 @@ public class CardViewer extends JPanel implements DelayedViewer {
 	private static final long serialVersionUID = 1L;
 
 	private final TransparentImagePanel cardPanel;
-	private MagicCardDefinition currentCardDefinition=null;
+	private MagicCardDefinition currentCardDefinition;
 	private int currentIndex=0;
 	private boolean image;
 	private boolean opaque;
 	
 	public CardViewer(final String title,final boolean image,final boolean opaque) {
-
 		this.image=image;
 		this.opaque=opaque;
 		
 		this.setLayout(new BorderLayout());
 		this.setOpaque(false);
 
-		if (title==null) {
+		if (title.length() == 0) {
 			setBorder(FontsAndBorders.WHITE_BORDER);
 		} else {
 			final TitleBar titleBar=new TitleBar(title);
@@ -51,7 +50,6 @@ public class CardViewer extends JPanel implements DelayedViewer {
 	}
 		
 	public void setCard(final MagicCardDefinition cardDefinition,final int index) {
-
 		if (cardDefinition!=currentCardDefinition||index!=currentIndex) {
 			currentCardDefinition=cardDefinition;
 			currentIndex=index;
