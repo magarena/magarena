@@ -17,7 +17,7 @@ public class Affa_Guard_Hound {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicPumpTargetPicker.getInstance(),
 				    MagicEvent.NO_DATA,

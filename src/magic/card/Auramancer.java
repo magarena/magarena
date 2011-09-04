@@ -20,7 +20,7 @@ public class Auramancer {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
 	                new MagicMayChoice(
                         "You may return target enchantment card from your graveyard to your hand.",
                         MagicTargetChoice.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD),

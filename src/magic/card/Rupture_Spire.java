@@ -19,7 +19,7 @@ public class Rupture_Spire {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     new MagicMayChoice(
                         "You may pay {1}.",
                         new MagicPayManaCostChoice(MagicManaCost.ONE)),

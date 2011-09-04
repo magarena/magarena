@@ -16,7 +16,7 @@ public class Keening_Banshee {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicWeakenTargetPicker(-2,-2),
                     MagicEvent.NO_DATA,

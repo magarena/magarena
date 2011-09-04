@@ -27,7 +27,7 @@ public class Galvanic_Arc {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(3),
                     new Object[]{permanent},

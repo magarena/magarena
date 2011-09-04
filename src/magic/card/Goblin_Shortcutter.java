@@ -18,7 +18,7 @@ public class Goblin_Shortcutter {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicNoCombatTargetPicker(false,true,false),
                     MagicEvent.NO_DATA,

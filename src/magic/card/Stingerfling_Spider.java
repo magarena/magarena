@@ -18,7 +18,7 @@ public class Stingerfling_Spider {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     new MagicMayChoice(
                             "You may destroy target creature with flying.",
                             MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),

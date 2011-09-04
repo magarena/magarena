@@ -679,6 +679,19 @@ power=4
 toughness=4
 timing=smain
 
+>Eternal Witness
+image=http://magiccards.info/scans/en/cmd/152.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=3
+cost={1}{G}{G}
+power=2
+toughness=1
+timing=main
+
 >Fiery Hellhound
 image=http://magiccards.info/scans/en/m12/130.jpg
 value=3
@@ -703,6 +716,20 @@ converted=3
 cost={2}{U}
 power=2
 toughness=1
+ability=flying
+timing=main
+
+>Galepowder Mage
+image=http://magiccards.info/scans/en/lw/15.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Kithkin,Wizard
+color=w
+converted=4
+cost={3}{W}
+power=3
+toughness=3
 ability=flying
 timing=main
 
@@ -864,6 +891,31 @@ power=1
 toughness=1
 timing=main
 
+>Jenara, Asura of War
+image=http://magiccards.info/scans/en/arb/128.jpg
+value=4
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+color=gwu
+converted=3
+cost={G}{W}{U}
+power=3
+toughness=3
+ability=flying
+timing=fmain
+
+>Lhurgoyf
+image=http://magiccards.info/scans/en/cmd/165.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Lhurgoyf
+color=g
+converted=4
+cost={2}{G}{G}
+timing=smain
+
 >Lord of the Unreal
 image=http://magiccards.info/scans/en/m12/62.jpg
 value=3
@@ -916,6 +968,30 @@ cost={1}{W}{W}
 power=0
 toughness=2
 timing=fmain
+
+>Mortivore
+image=http://magiccards.info/scans/en/cmd/89.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Lhurgoyf
+color=b
+converted=4
+cost={2}{B}{B}
+timing=smain
+
+>Nantuko Husk
+image=http://magiccards.info/scans/en/cmd/90.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Zombie,Insect
+color=b
+converted=3
+cost={2}{B}
+power=2
+toughness=2
+timing=main
 
 >Peregrine Griffin
 image=http://magiccards.info/scans/en/m12/29.jpg
@@ -1133,6 +1209,34 @@ converted=2
 cost={1}{R}
 power=4
 toughness=1
+ability=defender
+timing=smain
+
+>Wall of Omens
+image=http://magiccards.info/scans/en/cmd/37.jpg 
+value=2
+rarity=U
+type=Creature
+subtype=Wall
+color=w
+converted=2
+cost={1}{W}
+power=0
+toughness=4
+ability=defender
+timing=smain
+
+>Carven Caryatid
+image=http://magiccards.info/scans/en/rav/155.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=3
+cost={1}{G}{G}
+power=2
+toughness=5
 ability=defender
 timing=smain
 
@@ -4579,6 +4683,34 @@ power=0
 toughness=1
 timing=main
 
+>Plated Geopede
+image=http://magiccards.info/scans/en/zen/141.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=r
+converted=2
+cost={1}{R}
+power=1
+toughness=1
+ability=first strike
+timing=main
+
+>Windrider Eel
+image=http://magiccards.info/scans/en/zen/78.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Fish
+color=b
+converted=4
+cost={3}{B}
+power=2
+toughness=2
+ability=flying
+timing=main
+
 >White Knight
 image=http://magiccards.info/scans/en/m11/39.jpg
 value=3
@@ -5009,6 +5141,15 @@ converted=7
 cost={4}{W/B}{W/B}{W/B}
 timing=enchantment
 
+>Howling Mine
+image=http://magiccards.info/scans/en/cmd/251.jpg
+value=2
+rarity=R
+type=Artifact
+converted=2
+cost={2}
+timing=main
+
 >Seal of Fire
 image=http://magiccards.info/scans/en/di/71.jpg
 value=2
@@ -5199,6 +5340,17 @@ type=Instant
 color=u
 converted=2
 cost={1}{U}
+timing=removal
+
+>Orim's Thunder
+image=http://magiccards.info/scans/en/cmd/24.jpg
+value=3
+removal=2
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
 timing=removal
 
 >Unmake
@@ -7301,6 +7453,27 @@ converted=1
 cost={U}
 timing=removal
 
+>Pulse of the Fields
+image=http://magiccards.info/scans/en/ds/11.jpg
+value=4
+rarity=R
+type=Sorcery
+color=w
+converted=3
+cost={1}{W}{W}
+timing=main
+
+>Pulse of the Forge
+image=http://magiccards.info/scans/en/ds/66.jpg
+value=4
+removal=4
+rarity=R
+type=Instant
+color=r
+converted=3
+cost={1}{R}{R}
+timing=removal
+
 >Pulse of the Tangle
 image=http://magiccards.info/scans/en/ds/80.jpg
 value=4
@@ -7408,6 +7581,16 @@ type=Enchantment
 color=g
 converted=3
 cost={2}{G}
+timing=enchantment
+
+>Aura Shards
+image=http://magiccards.info/scans/en/cmd/182.jpg
+value=4
+rarity=U
+type=Enchantment
+color=gw
+converted=3
+cost={1}{G}{W}
 timing=enchantment
 
 >Force Spike

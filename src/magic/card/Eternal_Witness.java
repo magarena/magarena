@@ -15,7 +15,7 @@ import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 
-public class Gravedigger {
+public class Eternal_Witness {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
@@ -23,23 +23,23 @@ public class Gravedigger {
                     permanent,
                     player,
 	                new MagicMayChoice(
-                        "You may return target creature card from your graveyard to your hand.",
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
+                        "You may return target card from your graveyard to your hand.",
+                        MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD),
                     MagicGraveyardTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ return target creature card$ from your graveyard to your hand.");
+                    "You may$ return target card$ from your graveyard to your hand.");
 		}
 		
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                }
-				});
+					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+				}
+                });
 			}
 		}
     };

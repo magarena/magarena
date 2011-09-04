@@ -19,7 +19,7 @@ public class Shivan_Wurm {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.RED_OR_GREEN_CREATURE_YOU_CONTROL,
                     MagicBounceTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,

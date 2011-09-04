@@ -16,7 +16,7 @@ public class Angel_of_Despair {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.TARGET_PERMANENT,
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,

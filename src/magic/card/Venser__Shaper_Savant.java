@@ -22,7 +22,7 @@ public class Venser__Shaper_Savant {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
                     MagicTargetChoice.NEG_TARGET_SPELL_OR_PERMANENT,
                     MagicBounceTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,

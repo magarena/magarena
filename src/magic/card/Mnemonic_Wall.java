@@ -21,7 +21,7 @@ public class Mnemonic_Wall {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
-                    permanent.getController(),
+                    player,
 	                new MagicMayChoice(
                         "You may return target instant or sorcery card from your graveyard to your hand.",
                         MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD),
