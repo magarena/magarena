@@ -40,11 +40,9 @@ public class TestGameBuilder {
 	
 	public static void addToHand(final MagicPlayer player,final String name,final int count) {
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
-		if (cardDefinition!=null) {
-			for (int c=count;c>0;c--) {
-				player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
-			}
-		}
+        for (int c=count;c>0;c--) {
+            player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
+        }
 	}
 
 	public static void createAllTokens(final MagicGame game,final MagicPlayer player) {
@@ -56,7 +54,7 @@ public class TestGameBuilder {
 	public static MagicPermanent createPermanent(final MagicGame game,final MagicPlayer player,final String name,final boolean tapped,final int count) {
 
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
-		MagicPermanent lastPermanent=null;
+		MagicPermanent lastPermanent= MagicPermanent.NONE;
 		for (int c=count;c>0;c--) {
 			
 			final MagicCard card=new MagicCard(cardDefinition,player,currentId.getAndIncrement());
