@@ -882,7 +882,17 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Graveyard;
 		}						
 	};
+	
+	public static final MagicTargetFilter TARGET_CREATURE_CARD_FROM_HAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().isCreature();
+		}
 		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Hand;
+		}						
+	};
+	
 	// Permanent reference can not be used because game is copied.
 	public static final class MagicOtherPermanentTargetFilter implements MagicTargetFilter {
 
