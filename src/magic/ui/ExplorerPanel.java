@@ -67,7 +67,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		cardViewer=new CardViewer("Card",false,true);
 		cardViewer.setSize(CARD_WIDTH,CARD_HEIGHT);		
-		cardViewer.setCard(null,0);
+		cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
 		add(cardViewer);
 		
 		MagicPlayerProfile profile=null;
@@ -144,7 +144,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private void update() {
 
 		if (cardDefinitions.isEmpty()) {
-			cardViewer.setCard(null,0);
+			cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
  		} else {
  			cardViewer.setCard(cardDefinitions.get(0),0);
  		}
@@ -228,23 +228,17 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			}
 						
 			this.addMouseListener(new MouseAdapter() {
-
 				@Override
 				public void mouseEntered(final MouseEvent event) {
-
 					cardViewer.setCard(CardLabel.this.cardDefinition,0);
 					setForeground(Color.RED);
 				}
-
 				@Override
 				public void mouseExited(final MouseEvent event) {
-
 					setForeground(cardDefinition.getRarityColor());
 				}
-
 				@Override
 				public void mousePressed(final MouseEvent event) {
-
 					if (editDeckCard!=null) {
 						editDeckCard.getPlayer().getDeck().remove(editDeckCard.getCard());
 						editDeckCard.getPlayer().getDeck().add(cardDefinition);
