@@ -12,7 +12,12 @@ import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MagicGameReport {
+public class MagicGameReport implements Thread.UncaughtExceptionHandler {
+    
+    public void uncaughtException(Thread th, Throwable ex) {
+        MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
+        System.exit(1);
+    }
 
 	private static void buildCard(final MagicGame game,final String place,final MagicCard card,final StringBuilder report) {
 		report.append("   - ").append(place).append(" : ").append(card.getName()).append("\n");
@@ -97,14 +102,18 @@ public class MagicGameReport {
 		return report.toString();
 	}
 
-    public static void buildReport(final MagicGame game, final Throwable ex) {
+    public static void buildReport(final MagicGame game, final Thread th, final Throwable ex) {
         final StringBuilder sb = new StringBuilder();
-        sb.append("CRASH REPORT CREATED ON " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
+        sb.append("CRASH REPORT FOR MAGARENA THREAD " + th);
+        sb.append('\n');
+        sb.append("CREATED ON " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
         sb.append('\n');
         try {
             //buildReport might throw an exception
-            sb.append(buildReport(game));
-            sb.append('\n');
+            if (game != null) {
+                sb.append(buildReport(game));
+                sb.append('\n');
+            }
         } catch (final Throwable ex2) {
             sb.append("Exception from MagicGameReport.buildReport: " + ex2.getMessage());
             sb.append('\n');
