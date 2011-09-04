@@ -31,7 +31,7 @@ public class MagicDeclareBlockerAction extends MagicAction {
 	@Override
 	public void undoAction(final MagicGame game) {
 		attacker.removeBlockingCreature(blocker);
-		blocker.setBlockedCreature(null);
+		blocker.setBlockedCreature(MagicPermanent.NONE);
 		blocker.clearState(MagicPermanentState.Blocking);
 		if (unblocked) {
 			attacker.clearState(MagicPermanentState.Blocked);
