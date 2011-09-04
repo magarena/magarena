@@ -25,7 +25,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 	private static final Dimension SEPARATOR_DIMENSION=new Dimension(0,10);
 
 	protected final ViewerInfo viewerInfo;
-	protected TitleBar titleBar=null;	
+	protected TitleBar titleBar;	
 	protected final GameController controller;
 
 	private final Collection<ChoiceViewer> targetViewers;
