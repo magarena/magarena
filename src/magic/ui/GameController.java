@@ -330,6 +330,9 @@ public class GameController {
     }
 	
 	public String getMessageWithSource(final MagicSource source,final String message) {
+        if (source == null) {
+            throw new RuntimeException("source is null");
+        }
 		if (source == MagicEvent.NO_SOURCE) {
 			return message;
 		} else {
