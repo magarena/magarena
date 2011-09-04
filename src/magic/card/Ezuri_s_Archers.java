@@ -13,7 +13,7 @@ public class Ezuri_s_Archers {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
 			return (permanent==data && 
-                    blocked!=null &&
+                    blocked!=MagicPermanent.NONE &&
                     blocked.hasAbility(game,MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,
