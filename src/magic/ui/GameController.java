@@ -367,8 +367,7 @@ public class GameController {
 		//dynamically get the AI based on the player's index
 		final MagicPlayer player = event.getPlayer();
 		final MagicAI ai = game.getTournament().getAIs()[player.getIndex()];
-		final Object choiceResults[]=ai.findNextEventChoiceResults(game, player);
-		return choiceResults;
+		return ai.findNextEventChoiceResults(game, player);
 	}
 
 	private Object[] getPlayerNextEventChoiceResults(final MagicEvent event) {
