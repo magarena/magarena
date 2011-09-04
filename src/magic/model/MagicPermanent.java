@@ -35,6 +35,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         public boolean isCreature() {
             return false;
         }
+        @Override
+        public MagicPlayer getController() {
+            return MagicPlayer.NONE;
+        }
     };
 		
 	private long id;
