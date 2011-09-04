@@ -214,7 +214,6 @@ public class CardDefinitions {
 	public MagicCardDefinition getCard(final String name) {
 		final MagicCardDefinition cardDefinition=cardsMap.get(name);
 		if (cardDefinition == null) {
-			System.err.println("ERROR! No card definition found for " + name);
 		    throw new RuntimeException("No card definition found for " + name);
 		}
 		return cardDefinition;
