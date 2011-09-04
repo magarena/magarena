@@ -5,6 +5,7 @@ public enum MagicTargetType {
 	Permanent,
 	Stack,
 	Graveyard,
-	OpponentsGraveyard
+	OpponentsGraveyard,
+	Hand
 	;
 }

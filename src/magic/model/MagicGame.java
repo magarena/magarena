@@ -910,6 +910,15 @@ public class MagicGame {
 			}
 		}
 		
+		// Cards in hand
+		if (targetFilter.acceptType(MagicTargetType.Hand)) {
+			for (final MagicCard targetCard : player.getHand()) {
+				if (targetFilter.accept(this,player,targetCard)) {
+					targets.add(targetCard);
+				}				
+			}
+		}
+				
 		return targets;
 	}
 		
@@ -998,6 +1007,12 @@ public class MagicGame {
 				return true;
 			}
 			
+			// Card in hand
+			if (targetFilter.acceptType(MagicTargetType.Hand) && 
+				player.getHand().contains(target)) {
+				return true;
+			}
+						
 			return false;
 		}
 				
