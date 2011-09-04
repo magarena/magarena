@@ -68,9 +68,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem keywordsItem;
 	private JMenuItem readMeItem;
 	private JMenuItem aboutItem;
-	private MagicTournament tournament=null;
-	private TournamentPanel tournamentPanel=null;
-	private GamePanel gamePanel=null;
+	private MagicTournament tournament;
+	private TournamentPanel tournamentPanel;
+	private GamePanel gamePanel;
 	private LinkedList<JComponent> contents;
 	
 	public MagicFrame() {
@@ -349,14 +349,12 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void saveTournament() {
-
 		if (tournament!=null) {
 			tournament.save(MagicTournament.getTournamentFile());
 		}
 	}
 	
 	private void restartTournament() {
-
 		if (tournament!=null) {
 			tournament.restart();
 			showTournament();
@@ -364,7 +362,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void loadDeck() {
-		
 		if (tournamentPanel!=null) {
 			final MagicPlayerDefinition player=tournamentPanel.getSelectedPlayer();
 			final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
@@ -381,7 +378,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void saveDeck() {
-		
 		if (tournamentPanel!=null) {
 			final MagicPlayerDefinition player=tournamentPanel.getSelectedPlayer();
 			final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
@@ -400,7 +396,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void swapDecks() {
-		
 		if (tournament!=null) {
 			tournament.restart();
 			final MagicPlayerDefinition players[]=tournament.getPlayers();
