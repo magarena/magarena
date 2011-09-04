@@ -11,18 +11,15 @@ public class Pride_Guardian {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-			if (permanent == data) {
-				if (permanent.getBlockedCreature() != null) {
-					final MagicPlayer player = permanent.getController();
-					return new MagicEvent(
-                            permanent,
-                            player,
-                            new Object[]{player},
-                            this,
-                            player + " gains 3 life.");
-				}
-			}
-			return null;
+            final MagicPlayer player = permanent.getController();
+			return (permanent == data && permanent.getBlockedCreature() != MagicPermanent.NONE) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player + " gains 3 life."):
+                null;
 		}
 		
 		@Override
