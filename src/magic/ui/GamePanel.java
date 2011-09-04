@@ -108,7 +108,7 @@ public final class GamePanel extends JPanel {
 		add(cardViewer);
 		controller.setCardViewer(cardViewer);
 		
-		imageCardViewer=new CardViewer(null,true,false);
+		imageCardViewer=new CardViewer("",true,false);
 		imageCardViewer.setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
 		imageCardViewer.setVisible(false);
 		controller.setImageCardViewer(imageCardViewer);
@@ -238,12 +238,7 @@ public final class GamePanel extends JPanel {
                 final Thread cur=Thread.currentThread();
                 cur.setPriority(Thread.MIN_PRIORITY);
                 System.err.println("Starting game...");
-                try { //handle any unrecoverable exception in the controller
-                    controller.runGame();
-                } catch (final Throwable ex) {
-                    MagicGameReport.buildReport(game, ex);
-                    System.exit(1);
-                }
+                controller.runGame();
                 System.err.println("Stopping game...");
             }
         }).start();
