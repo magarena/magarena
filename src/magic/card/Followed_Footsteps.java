@@ -22,15 +22,14 @@ public class Followed_Footsteps {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (player==data && enchantedCreature!=null) {
-				return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent,player},
-                        this,
-                        player + " puts a token that's a copy of enchanted creature onto the battlefield.");
-			}
-			return null;
+			return (player==data && enchantedCreature!=MagicPermanent.NONE) ?
+				new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{permanent,player},
+                    this,
+                    player + " puts a token that's a copy of enchanted creature onto the battlefield."):
+                null;
 		}
 		
 		@Override
@@ -41,7 +40,7 @@ public class Followed_Footsteps {
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (enchantedCreature!=null) {
+			if (enchantedCreature!=MagicPermanent.NONE) {
 				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],enchantedCreature.getCardDefinition()));
 			}
 		}		
