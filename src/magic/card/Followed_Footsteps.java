@@ -22,7 +22,7 @@ public class Followed_Footsteps {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			return (player==data && enchantedCreature!=MagicPermanent.NONE) ?
+			return (player==data && enchantedCreature.isValid()) ?
 				new MagicEvent(
                     permanent,
                     player,
@@ -40,7 +40,7 @@ public class Followed_Footsteps {
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (enchantedCreature!=MagicPermanent.NONE) {
+			if (enchantedCreature.isValid()) {
 				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],enchantedCreature.getCardDefinition()));
 			}
 		}		

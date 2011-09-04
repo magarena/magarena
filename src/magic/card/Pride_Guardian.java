@@ -12,7 +12,7 @@ public class Pride_Guardian {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == data && permanent.getBlockedCreature() != MagicPermanent.NONE) ?
+			return (permanent == data && permanent.getBlockedCreature().isValid()) ?
 				new MagicEvent(
                     permanent,
                     player,

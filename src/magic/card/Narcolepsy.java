@@ -21,7 +21,7 @@ public class Narcolepsy {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-            return (enchantedCreature!=MagicPermanent.NONE&&!enchantedCreature.isTapped()) ?
+            return (enchantedCreature.isValid() && !enchantedCreature.isTapped()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -38,7 +38,7 @@ public class Narcolepsy {
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicPermanent enchantedCreature=permanent.getEnchantedCreature();
-			if (enchantedCreature!=MagicPermanent.NONE&&!enchantedCreature.isTapped()) {
+			if (enchantedCreature.isValid() && !enchantedCreature.isTapped()) {
 				game.doAction(new MagicTapAction(enchantedCreature,true));
 			}
 		}		

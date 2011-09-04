@@ -13,7 +13,7 @@ public class Shield_of_the_Righteous {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			final MagicPermanent equippedCreature = permanent.getEquippedCreature();
 			final MagicPermanent blocked = equippedCreature.getBlockedCreature();
-			return (equippedCreature == data && blocked != MagicPermanent.NONE) ?
+			return (equippedCreature == data && blocked.isValid()) ?
 		        new MagicEvent(
                     permanent,
                     permanent.getController(),
