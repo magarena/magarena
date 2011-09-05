@@ -1114,6 +1114,19 @@ power=1
 toughness=1
 timing=main
 
+>Ruhan of the Fomori
+image=http://magiccards.info/scans/en/cmd/221.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Giant,Warrior
+converted=4
+cost={1}{R}{W}{U}
+power=7
+toughness=7
+ability=attacks each turn if able
+timing=main
+
 >Scroll Thief
 image=http://magiccards.info/scans/en/m11/72.jpg
 value=3
@@ -1139,6 +1152,20 @@ cost={W}
 power=1
 toughness=1
 ability=lifelink
+timing=main
+
+>Shattered Angel
+image=http://magiccards.info/scans/en/cmd/31.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=5
+cost={3}{W}{W}
+power=3
+toughness=3
+ability=flying
 timing=main
 
 >Skinrender
