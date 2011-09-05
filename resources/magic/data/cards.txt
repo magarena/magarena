@@ -1048,6 +1048,19 @@ toughness=4
 ability=trample
 timing=main
 
+>Riddlekeeper
+image=http://magiccards.info/scans/en/cmd/59.jpg 
+value=2
+rarity=R
+type=Creature
+subtype=Homunculus
+color=u
+converted=3
+cost={2}{U}
+power=1
+toughness=4
+timing=main
+
 >Roc Egg
 image=http://magiccards.info/scans/en/m12/32.jpg
 value=3
