@@ -4867,6 +4867,16 @@ converted=2
 cost={B}{B}
 timing=draw
 
+>Vision Skeins
+image=http://magiccards.info/scans/en/cmd/67.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=draw
+
 >Act of Treason
 image=http://magiccards.info/scans/en/m12/121.jpg
 value=4
