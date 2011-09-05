@@ -679,6 +679,19 @@ power=4
 toughness=4
 timing=smain
 
+>Edric, Spymaster of Trest
+image=http://magiccards.info/scans/en/cmd/196.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elf,Rogue
+color=gu
+converted=3
+cost={1}{G}{U}
+power=2
+toughness=2
+timing=fmain
+
 >Eternal Witness
 image=http://magiccards.info/scans/en/cmd/152.jpg
 value=3
