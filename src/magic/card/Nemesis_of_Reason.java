@@ -12,14 +12,15 @@ public class Nemesis_of_Reason {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPlayer player=permanent.getController();
-			return (permanent==creature) ?
+            final MagicPlayer player = permanent.getController();
+			return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
                         new Object[]{game.getOpponent(player)},
                         this,
-                        "Defending player puts the top ten cards of his or her library into his or her graveyard."):
+                        game.getOpponent(player) + " puts the top ten cards " +
+                        		"of his or her library into his or her graveyard."):
                 MagicEvent.NONE;
 		}
 		
