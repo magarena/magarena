@@ -6199,6 +6199,16 @@ converted=1
 cost={G}
 timing=draw
 
+>Stitch Together
+image=http://magiccards.info/scans/en/cmd/102.jpg
+value=3
+rarity=U
+type=Sorcery
+color=b
+converted=2
+cost={B}{B}
+timing=draw
+
 >Nature's Spiral
 image=http://magiccards.info/scans/en/dpa/77.jpg
 value=3
