@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Collections;
 
 /*
 AI using Monte Carlo Tree Search
@@ -264,7 +265,7 @@ public class MCTSAI implements MagicAI {
         path.add(curr);
 
         for (List<Object[]> choices = getNextChoices(game, false);
-             choices != null;
+             !choices.isEmpty();
              choices = getNextChoices(game, false)) {
 
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
@@ -431,7 +432,7 @@ public class MCTSAI implements MagicAI {
         }
         
         //game is finished or number of actions > MAX_ACTIONS
-        return null;
+        return Collections.emptyList();
     }
     
     private static String CR2String(Object[] choiceResults) {
