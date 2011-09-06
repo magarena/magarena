@@ -16,7 +16,6 @@ public class StackViewerInfo {
 	public boolean visible;
 	
 	public StackViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
-
 		this.itemOnStack=itemOnStack;
 		cardDefinition=itemOnStack.getSource().getCardDefinition();
 		name=itemOnStack.getName();
