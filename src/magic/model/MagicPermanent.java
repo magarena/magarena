@@ -123,8 +123,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	@Override
-	public Object map(final MagicGame game) {
-		final MagicPlayer mappedController=(MagicPlayer)controller.map(game);
+	public MagicPermanent map(final MagicGame game) {
+		final MagicPlayer mappedController=controller.map(game);
 		return mappedController.getPermanents().getPermanent(id);
 	}
 	
