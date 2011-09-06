@@ -1,6 +1,7 @@
 package magic.model.stack;
 
 import magic.model.MagicAbility;
+import magic.model.MagicGame;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
@@ -53,6 +54,11 @@ public class MagicCardOnStack extends MagicItemOnStack {
 		final MagicCardOnStack sourceCardOnStack=((MagicCardOnStack)source);
 		moveLocation=sourceCardOnStack.moveLocation;
 		x=sourceCardOnStack.x;
+	}
+	
+    @Override
+	public MagicCardOnStack map(final MagicGame game) {
+		return (MagicCardOnStack)super.map(game);
 	}
 	
 	public MagicCard getCard() {
