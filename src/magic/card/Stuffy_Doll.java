@@ -10,6 +10,7 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
@@ -31,19 +32,19 @@ public class Stuffy_Doll {
 			return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source},
-                    this,
+                    MagicEvent.NO_DATA,
+                    new MagicEventAction() {
+                        @Override
+                        public void executeEvent(
+                            final MagicGame game,
+                            final MagicEvent event,
+                            final Object[] data,
+                            final Object[] choiceResults) {
+                        final MagicPermanent permanent=source.map(game);
+                        final MagicDamage damage=new MagicDamage(permanent,permanent,1,false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }},
                     source + " deals 1 damage to itself.");
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
-			final MagicDamage damage=new MagicDamage(permanent,permanent,1,false);
-			game.doAction(new MagicDealDamageAction(damage));
 		}
 	};
 	
@@ -54,21 +55,23 @@ public class Stuffy_Doll {
             final int amount=damage.getDealtAmount();
             return (damage.getTarget()==permanent) ?
 				new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent,game.getOpponent(player),amount},
-                        this,
-                        permanent + " deals "+amount+" damage to your opponent.") :
+                    permanent,
+                    player,
+                    MagicEvent.NO_DATA,
+                    new MagicEventAction() {
+                    @Override
+                    public void executeEvent(
+                            final MagicGame game,
+                            final MagicEvent event,
+                            final Object data[],
+                            final Object[] choiceResults) {
+                        final MagicPermanent source = permanent.map(game);
+                        final MagicPlayer target = game.getOpponent(player.map(game));
+                        final MagicDamage damage=new MagicDamage(source, target, amount,false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }},
+                    permanent + " deals "+amount+" damage to your opponent.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],(Integer)data[2],false);
-			game.doAction(new MagicDealDamageAction(damage));
 		}
     };
 }
