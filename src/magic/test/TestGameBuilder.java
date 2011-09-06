@@ -13,7 +13,7 @@ import magic.model.action.MagicPutIntoPlayAction;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class TestGameBuilder {
+public abstract class TestGameBuilder {
 	
 	private static final AtomicInteger currentId=new AtomicInteger(1);
 	
@@ -78,9 +78,7 @@ public class TestGameBuilder {
 		return lastPermanent;
 	}
 
-    public MagicGame getGame() {
-        return null;
-    }
+    public abstract MagicGame getGame();
 	
 	public static MagicGame buildGame(final String id) {
         MagicGame game = null;
