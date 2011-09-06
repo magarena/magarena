@@ -9,8 +9,9 @@ public class MagicStackResolveAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		itemOnStack=game.getStack().removeFromTop();
+		itemOnStack=game.getStack().getFirst();
 		itemOnStack.resolve(game);
+		game.getStack().removeFromTop();
 	}
 
 	@Override
