@@ -23,7 +23,7 @@ public class Twinblade_Slasher {
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_GREEN),
-                new MagicPlayAbilityEvent(source)};
+                new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
