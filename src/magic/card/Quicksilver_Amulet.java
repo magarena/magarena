@@ -9,6 +9,17 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.*;
 import magic.model.target.MagicGraveyardTargetPicker;
 
+// Backed out this card because it doesn't function properly.
+// It creates two effects on the stack where it should be one.
+//
+//>Quicksilver Amulet
+//image=http://magiccards.info/scans/en/m12/214.jpg
+//value=4
+//rarity=R
+//type=Artifact
+//converted=4
+//cost={4}
+//timing=artifact
 public class Quicksilver_Amulet {
 
 	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(

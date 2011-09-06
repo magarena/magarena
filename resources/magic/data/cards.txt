@@ -7757,15 +7757,6 @@ converted=1
 cost={1}
 timing=artifact
 
->Quicksilver Amulet
-image=http://magiccards.info/scans/en/m12/214.jpg
-value=4
-rarity=R
-type=Artifact
-converted=4
-cost={4}
-timing=artifact
-
 >Sylvok Lifestaff
 image=http://magiccards.info/scans/en/som/209.jpg
 value=2
