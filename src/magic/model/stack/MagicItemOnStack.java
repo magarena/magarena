@@ -34,7 +34,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	}
 	
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicItemOnStack map(final MagicGame game) {
 		return game.getStack().getItemOnStack(id);
 	}
 
