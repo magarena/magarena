@@ -218,9 +218,11 @@ public class MagicGame {
         return time;
     }
 
+    /*
     public void setTime(final long t) {
         time = t;
     }
+    */
 
     public long incTime() {
         time++;

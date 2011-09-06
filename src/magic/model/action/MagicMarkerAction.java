@@ -43,7 +43,7 @@ public class MagicMarkerAction extends MagicAction {
 		oldStateCheckRequired=game.getStateCheckRequired();
 		oldPayedCostX=game.getPayedCost().getX();
 		oldPayedCostTarget=game.getPayedCost().getTarget();
-        oldTime=game.getTime();
+        //oldTime=game.getTime();
 		final MagicPlayer player1=game.getPlayer(0);
 		oldLife1=player1.getLife();
 		oldPoison1=player1.getPoison();
@@ -70,7 +70,7 @@ public class MagicMarkerAction extends MagicAction {
 		game.setStateCheckRequired(oldStateCheckRequired);
 		game.getPayedCost().setX(oldPayedCostX);
 		game.getPayedCost().setTarget(oldPayedCostTarget);
-        game.setTime(oldTime);
+        //game.setTime(oldTime);
 		final MagicPlayer player1=game.getPlayer(0);
 		player1.setLife(oldLife1);
 		player1.setPoison(oldPoison1);
