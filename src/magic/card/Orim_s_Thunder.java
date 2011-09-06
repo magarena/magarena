@@ -26,6 +26,19 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTarget;
 
+//Backed out this card because it doesn't function properly.
+//It creates two effects on the stack where it should be one.
+//
+//>Orim's Thunder
+//image=http://magiccards.info/scans/en/cmd/24.jpg
+//value=3
+//removal=2
+//rarity=C
+//type=Instant
+//color=w
+//converted=3
+//cost={2}{W}
+//timing=removal
 public class Orim_s_Thunder {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
