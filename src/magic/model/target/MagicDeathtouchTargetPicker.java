@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicDeathtouchTargetPicker extends MagicTargetPicker {
+public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private static final MagicTargetPicker INSTANCE = new MagicDeathtouchTargetPicker();
 	
@@ -18,9 +18,7 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker {
 	}
 
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final long flags = permanent.getAllAbilityFlags(game);
 		int score = 0;
 

@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
-public class MagicWeakenTargetPicker extends MagicTargetPicker {
+public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private static final int ATTACKING_BLOCKED=4<<8;
 	private static final int ATTACKING=3<<8;
@@ -20,9 +20,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker {
 	}
 
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final MagicPowerToughness pt=permanent.getPowerToughness(game);
 
 		final int lethalToughness=pt.getPositiveToughness()-permanent.getDamage();

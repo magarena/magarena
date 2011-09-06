@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicDestroyTargetPicker extends MagicTargetPicker {
+public class MagicDestroyTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private final boolean noRegeneration;
 	
@@ -14,8 +14,7 @@ public class MagicDestroyTargetPicker extends MagicTargetPicker {
 	}
 
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		if (permanent.hasAbility(game,MagicAbility.Indestructible)) {
 			return 0;
 		}

@@ -10,12 +10,10 @@ public class MagicTargetNone implements MagicTarget {
 
 	private static final MagicTarget INSTANCE=new MagicTargetNone();
 	
-	private MagicTargetNone() {
-		
-	}
+	private MagicTargetNone() {}
 	
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicTargetNone map(final MagicGame game) {
 		return this;
 	}
 	

@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicLifelinkTargetPicker extends MagicTargetPicker {
+public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private static final MagicTargetPicker INSTANCE = new MagicLifelinkTargetPicker();
 	
@@ -19,9 +19,7 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker {
 	}
 
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent = (MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final long flags = permanent.getAllAbilityFlags(game);
 		int score = 0;
 

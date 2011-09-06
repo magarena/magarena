@@ -7,7 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
 /** Creature permanent or player. Can be your own creatures. */
-public class MagicDamageTargetPicker extends MagicTargetPicker {
+public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
 
 	private final int amount;
 	private final boolean noRegeration;
@@ -24,10 +24,9 @@ public class MagicDamageTargetPicker extends MagicTargetPicker {
 	}
 
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 		// Player
-		if (target instanceof MagicPlayer) {
+		if (target.isPlayer()) {
 			final MagicPlayer targetPlayer=(MagicPlayer)target;
 			final int actualAmount=amount-targetPlayer.getPreventDamage();
 			if (actualAmount<=0) {
@@ -41,22 +40,24 @@ public class MagicDamageTargetPicker extends MagicTargetPicker {
 				score=ArtificialScoringSystem.WIN_GAME_SCORE;
 			}
 			return targetPlayer==player?-score:score;
-		}		
-
-		// Permanent
-		final MagicPermanent permanent=(MagicPermanent)target;
-		if (permanent.hasAbility(game,MagicAbility.Indestructible)) {
-			return 0;
-		}		
-		if (permanent.isRegenerated()&&!noRegeration) {
-			return 0;
-		}		
-		final int actualAmount=amount-permanent.getPreventDamage();
-		if (actualAmount<=0) {
-			return 0;
-		}
-		final int leftToughness=permanent.getToughness(game)-permanent.getDamage()-actualAmount;
-		final int score=leftToughness<=0?permanent.getScore(game):20-leftToughness;
-		return permanent.getController()==player?-score:score;
+		} else if (target.isPermanent()) {		
+            // Permanent
+            final MagicPermanent permanent=(MagicPermanent)target;
+            if (permanent.hasAbility(game,MagicAbility.Indestructible)) {
+                return 0;
+            }		
+            if (permanent.isRegenerated()&&!noRegeration) {
+                return 0;
+            }		
+            final int actualAmount=amount-permanent.getPreventDamage();
+            if (actualAmount<=0) {
+                return 0;
+            }
+            final int leftToughness=permanent.getToughness(game)-permanent.getDamage()-actualAmount;
+            final int score=leftToughness<=0?permanent.getScore(game):20-leftToughness;
+            return permanent.getController()==player?-score:score;
+        } else {
+            throw new RuntimeException("target is neither MagicPlayer nor MagicPermanent");
+        }
 	}
 }

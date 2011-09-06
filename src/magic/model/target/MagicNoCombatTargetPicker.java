@@ -6,24 +6,20 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
-public class MagicNoCombatTargetPicker extends MagicTargetPicker {
+public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private final boolean noAttacking;
 	private final boolean noBlocking;
 	private final boolean forever;
 	
 	public MagicNoCombatTargetPicker(final boolean noAttacking,final boolean noBlocking,final boolean forever) {
-		
 		this.noAttacking=noAttacking;
 		this.noBlocking=noBlocking;
 		this.forever=forever;
 	}
 
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent=(MagicPermanent)target;
-
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		// For each turn.
 		if (forever) {
 			final long flags=permanent.getAllAbilityFlags(game);

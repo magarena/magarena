@@ -6,20 +6,18 @@ import magic.model.MagicPlayer;
 import java.util.Collection;
 import java.util.Collections;
 
-public abstract class MagicTargetPicker {
+public abstract class MagicTargetPicker<T> {
 
-	protected abstract int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target);
+	protected abstract int getTargetScore(final MagicGame game,final MagicPlayer player,final T target);
 	
-	public Collection<Object> pickTargets(final MagicGame game,final MagicPlayer player,final Collection<Object> options) {
-
+	public Collection<T> pickTargets(final MagicGame game,final MagicPlayer player,final Collection<T> options) {
 		if (options.size()<2) {
 			return options;
 		}
-
-		Object bestTarget=null;
+		
+        T bestTarget=options.iterator().next();
 		int bestScore=Integer.MIN_VALUE;
-		for (final Object target : options) {
-			
+		for (final T target : options) {
 			final int score=getTargetScore(game,player,target);
 			if (score>bestScore) {
 				bestTarget=target;

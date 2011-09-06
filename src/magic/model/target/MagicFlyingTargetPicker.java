@@ -5,18 +5,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicFlyingTargetPicker extends MagicTargetPicker {
+public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private static final MagicTargetPicker INSTANCE=new MagicFlyingTargetPicker();
 	
-	private MagicFlyingTargetPicker() {
-		
-	}
+	private MagicFlyingTargetPicker() {}
 
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final long flags=permanent.getAllAbilityFlags(game);
 		if (MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
 			return 0;
@@ -35,7 +31,6 @@ public class MagicFlyingTargetPicker extends MagicTargetPicker {
 	}
 	
 	public static MagicTargetPicker getInstance() {
-		
 		return INSTANCE;
 	}
 }

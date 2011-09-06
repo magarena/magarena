@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
-public class MagicEquipTargetPicker extends MagicTargetPicker {
+public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	
 	private final long abilityFlags;
 	private final boolean defensive;
@@ -17,9 +17,7 @@ public class MagicEquipTargetPicker extends MagicTargetPicker {
 	}
 	
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		// Penalty when allready equipped.
 		int penalty=permanent.isEquipped()?3:0;
 		// Penalty when there is an overlap between abilities.

@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
-public class MagicPumpTargetPicker extends MagicTargetPicker {
+public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private static final MagicTargetPicker INSTANCE=new MagicPumpTargetPicker();
 	
@@ -24,9 +24,7 @@ public class MagicPumpTargetPicker extends MagicTargetPicker {
 	}
 	
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final MagicPowerToughness pt=permanent.getPowerToughness(game);
 		final long flags=permanent.getAllAbilityFlags(game);
 		int score=0;

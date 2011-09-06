@@ -5,18 +5,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicUnblockableTargetPicker extends MagicTargetPicker {
+public class MagicUnblockableTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private static final MagicTargetPicker INSTANCE=new MagicUnblockableTargetPicker();
 	
-	private MagicUnblockableTargetPicker() {
-		
-	}
+	private MagicUnblockableTargetPicker() {}
 	
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final MagicPlayer controller=permanent.getController();
 		if (game.getTurnPlayer()!=controller||
 			permanent.hasAbility(game,MagicAbility.Unblockable)||
@@ -30,7 +26,6 @@ public class MagicUnblockableTargetPicker extends MagicTargetPicker {
 	}
 	
 	public static MagicTargetPicker getInstance() {
-		
 		return INSTANCE;
 	}	
 }

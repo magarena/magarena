@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicTapTargetPicker extends MagicTargetPicker {
+public class MagicTapTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	private final boolean tap;
 	private final boolean untap;
@@ -15,8 +15,7 @@ public class MagicTapTargetPicker extends MagicTargetPicker {
 	}	
 	
 	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final Object target) {
-		final MagicPermanent permanent=(MagicPermanent)target;
+	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final boolean tapped=permanent.isTapped();
 		if ((tapped&&!untap)||(!tapped&&!tap)) {
 			return 0;
