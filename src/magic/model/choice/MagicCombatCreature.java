@@ -39,7 +39,7 @@ public class MagicCombatCreature {
 	}
 	
 	public MagicCombatCreature(final MagicGame game,final MagicCombatCreature creature) {
-		permanent=(MagicPermanent)creature.permanent.map(game);
+		permanent=creature.permanent.map(game);
 		score=creature.score;
 		power=creature.power;
 		lethalDamage=creature.lethalDamage;
