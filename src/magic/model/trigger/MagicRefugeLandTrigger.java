@@ -5,20 +5,24 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 
 public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		return new MagicEvent(
-                permanent,
-                player,
-                new Object[]{permanent,player},
-                this,
-                player + " gains 1 life.");
+            permanent,
+            player,
+            MagicEvent.NO_DATA,
+            new MagicEventAction() {
+            @Override
+            public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choices) {
+                game.doAction(new MagicChangeLifeAction(player.map(game),1));
+            }},
+            player + " gains 1 life.");
 	}
-	
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-		game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],1));
-	}	
 }
