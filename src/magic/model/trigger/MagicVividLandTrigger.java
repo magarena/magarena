@@ -7,25 +7,27 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 
 public class MagicVividLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		return new MagicEvent(
-                permanent,
-                permanent.getController(),
-                new Object[]{permanent},
-                this,
-                permanent+" enters the battlefield tapped with two charge counters on it.");
+            permanent,
+            permanent.getController(),
+            MagicEvent.NO_DATA,
+            new MagicEventAction() {
+            @Override
+            public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choices) {
+                game.doAction(new MagicTapAction(permanent.map(game),false));
+                game.doAction(new MagicChangeCountersAction(permanent.map(game),MagicCounterType.Charge,2,false));
+            }},
+            permanent+" enters the battlefield tapped with two charge counters on it.");
 	}
-	
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-		final MagicPermanent permanent=(MagicPermanent)data[0];
-		game.doAction(new MagicTapAction(permanent,false));
-		game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,2,false));
-	}
-
 	@Override
 	public boolean usesStack() {
 		return false;
