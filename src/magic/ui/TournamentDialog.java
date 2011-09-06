@@ -271,8 +271,11 @@ public class TournamentDialog extends JDialog implements ActionListener {
 
 		@Override
 		public Component getListCellRendererComponent(
-				final JList list,final Object value,final int index,final boolean isSelected,final boolean cellHasFocus) {
-
+				final JList list,
+                final Object value,
+                final int index,
+                final boolean isSelected,
+                final boolean cellHasFocus) {
 			final String colors=(String)value;
 			final JPanel panel=new JPanel(new GridLayout(1,3));
 			for (int i=0;i<colors.length();i++) {
