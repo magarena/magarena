@@ -100,7 +100,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicPlayer map(final MagicGame game) {
 		return game.getPlayer(index);
 	}
 	
