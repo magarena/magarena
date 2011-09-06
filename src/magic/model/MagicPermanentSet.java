@@ -24,8 +24,7 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
 				return permanent;
 			}
 		}
-        assert false : "ERROR! Mapping permanent failed, permanent " + id + " not found";
-		return null;
+        return MagicPermanent.NONE;
 	}	
 	
 	public long getPermanentsId() {
