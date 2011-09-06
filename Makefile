@@ -32,6 +32,9 @@ themes: \
 	release/mods/redfire_theme.zip \
 	release/mods/whiteangel_theme.zip
 
+casts: $(MAG) 
+	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | dos2unix > $@
+
 warnings_H.txt: warnings.txt
 	grep "(H)" $^ > $@
 
