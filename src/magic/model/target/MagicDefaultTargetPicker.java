@@ -17,7 +17,10 @@ public class MagicDefaultTargetPicker extends MagicTargetPicker<MagicTarget> {
 	}
 
 	@Override
-	public Collection<MagicTarget> pickTargets(final MagicGame game,final MagicPlayer player,final Collection<MagicTarget> options) {
+	public Collection<MagicTarget> pickTargets(
+            final MagicGame game,
+            final MagicPlayer player,
+            final Collection<MagicTarget> options) {
 		return options;
 	}
 	
