@@ -69,7 +69,6 @@ public abstract class MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-		
 		final Collection<Object> options=getArtificialOptions(game,event,player,source);
 		final int size=options.size();
         if (size == 0) {
