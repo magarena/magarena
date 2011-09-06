@@ -214,17 +214,17 @@ public class MagicGame {
 		return score;
 	}
 
+    /*
     public long getTime() {
         return time;
     }
 
-    /*
     public void setTime(final long t) {
         time = t;
     }
     */
 
-    public long incTime() {
+    public long getUniqueId() {
         time++;
         return time;
     }
@@ -243,7 +243,7 @@ public class MagicGame {
             getPayedCost().getX(),
             stack.getItemsId(),
             events.getEventsId(),
-            time,
+            //time,
             //identifiers[0],
             //identifiers[1],
             //identifiers[2],
@@ -768,7 +768,7 @@ public class MagicGame {
 	}
 						
 	public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
-		return new MagicPermanent(incTime(),card,controller);
+		return new MagicPermanent(getUniqueId(),card,controller);
 	}
 	
 	public MagicCardList getExiledUntilEndOfTurn() {
@@ -1050,8 +1050,7 @@ public class MagicGame {
 	}
 	
 	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
-		final long id=incTime();
-		final MagicPermanentTrigger permanentTrigger=new MagicPermanentTrigger(id,permanent,trigger);
+		final MagicPermanentTrigger permanentTrigger=new MagicPermanentTrigger(getUniqueId(),permanent,trigger);
 		triggers.get(trigger.getType()).add(permanentTrigger);
 		return permanentTrigger;
 	}

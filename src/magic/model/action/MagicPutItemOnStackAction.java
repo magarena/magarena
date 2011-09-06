@@ -16,8 +16,7 @@ public class MagicPutItemOnStackAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		final long id=game.incTime();
-		itemOnStack.setId(id);
+		itemOnStack.setId(game.getUniqueId());
 		game.getStack().addToTop(itemOnStack);
 		if (itemOnStack.hasChoices()) {
 			game.addEvent(new MagicStackGetChoicesEvent(itemOnStack));
