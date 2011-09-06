@@ -85,9 +85,7 @@ public class MagicEvent implements MagicCopyable {
 		this(source,player,NO_CHOICES,MagicDefaultTargetPicker.getInstance(),data,action,description);
 	}
 	
-	private MagicEvent() {
-		
-	}
+	private MagicEvent() {}
 
 	@Override
 	public MagicCopyable create() {
