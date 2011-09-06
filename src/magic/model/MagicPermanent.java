@@ -43,6 +43,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         public boolean isValid() {
             return false;
         }
+        @Override
+        public String toString() {
+            return "MagicPermanent.NONE";
+        }
     };
 		
 	private long id;
