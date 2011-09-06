@@ -9,6 +9,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicShuffleIntoLibraryAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
@@ -26,26 +27,25 @@ public class Black_Sun_s_Zenith {
 			return new MagicEvent(
                     card,
                     player,
-                    new Object[]{card,player,amount},
-                    this,
+                    MagicEvent.NO_DATA,
+                    new MagicEventAction() {
+                    @Override
+                    public void executeEvent(
+                            final MagicGame game,
+                            final MagicEvent event,
+                            final Object[] data,
+                            final Object[] choiceResults) {
+                        final Collection<MagicTarget> targets = 
+                            game.filterTargets(player.map(game),MagicTargetFilter.TARGET_CREATURE);
+                        for (final MagicTarget target : targets) {
+                            game.doAction(new MagicChangeCountersAction(
+                                        (MagicPermanent)target,
+                                        MagicCounterType.MinusOne,amount,true));
+                        }
+                        game.doAction(new MagicShuffleIntoLibraryAction(card.map(game)));
+                    }},
                     "Put "+amount+" -1/-1 counters on each creature. " + 
                     "Shuffle " + card + " into its owner's library.");
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-			final int amount=(Integer)data[2];
-			final Collection<MagicTarget> targets = 
-                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicChangeCountersAction(
-                            (MagicPermanent)target,
-                            MagicCounterType.MinusOne,amount,true));
-			}
-			game.doAction(new MagicShuffleIntoLibraryAction((MagicCard)data[0]));
 		}
 	};
 }
