@@ -27,7 +27,7 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
 	}
 
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicDeclareAttackersResult map(final MagicGame game) {
 		final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult();
 		for (final MagicPermanent permanent : this) {
 			result.add(permanent.map(game));

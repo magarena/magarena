@@ -18,10 +18,10 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
 	public MagicCardChoiceResult() {}
 	
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicCardChoiceResult map(final MagicGame game) {
 		final MagicCardChoiceResult result=new MagicCardChoiceResult();
 		for (final MagicCard card : this) {
-			result.add((MagicCard)card.map(game));
+			result.add(card.map(game));
 		}
 		return result;
 	}

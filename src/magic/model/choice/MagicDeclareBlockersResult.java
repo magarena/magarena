@@ -28,7 +28,7 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 	}
 
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicDeclareBlockersResult map(final MagicGame game) {
 		final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(position,score);
 		for (final MagicCombatCreature creatures[] : this) {
 			final int size=creatures.length;

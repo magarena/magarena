@@ -42,11 +42,11 @@ public class MagicBuilderPayManaCostResult implements
 	private MagicBuilderPayManaCostResult() {}
 	
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicBuilderPayManaCostResult map(final MagicGame game) {
 		final MagicBuilderPayManaCostResult result=new MagicBuilderPayManaCostResult();
 		result.results=new MagicSourceManaActivationResult[results.length];
 		for (int index=0;index<results.length;index++) {
-			result.results[index]=(MagicSourceManaActivationResult)results[index].map(game);
+			result.results[index]=results[index].map(game);
 		}
 		result.amountLeft=Arrays.copyOf(amountLeft,amountLeft.length);
 		result.weight=weight;

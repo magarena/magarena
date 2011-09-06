@@ -21,7 +21,7 @@ public class MagicPlayChoiceResult implements MagicMappable {
     private MagicPlayChoiceResult() {}
 	
 	@Override
-	public Object map(final MagicGame game) {
+	public MagicPlayChoiceResult map(final MagicGame game) {
 		if (this==PASS) {
 			return PASS;
         } else if (this==SKIP) {
