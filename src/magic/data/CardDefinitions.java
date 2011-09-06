@@ -231,7 +231,7 @@ public class CardDefinitions {
 		} else if (MagicColor.White.equals(color)) {
 			return getCard("Plains");
 		}
-		return null;
+        throw new RuntimeException("No matching basic land for MagicColor " + color);
 	}
 
 	public List<MagicCardDefinition> getCards() {
