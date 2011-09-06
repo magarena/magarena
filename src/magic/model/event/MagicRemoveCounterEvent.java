@@ -6,22 +6,26 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 
 public class MagicRemoveCounterEvent extends MagicEvent {
-
-	private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-			final int amount=(Integer)data[2];
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],(MagicCounterType)data[1],-amount,true));
-		}		
-	};
 		
 	public MagicRemoveCounterEvent(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {
 		super(
             permanent,
             permanent.getController(),
-            new Object[]{permanent,counterType,amount},
-            EVENT_ACTION,
+            MagicEvent.NO_DATA,
+            new MagicEventAction() {
+                @Override
+                public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object[] data,
+                    final Object[] choices) {
+                    game.doAction(new MagicChangeCountersAction(
+                            permanent.map(game),
+                            counterType,
+                            -amount,
+                            true));
+                }		
+            },
             getDescription(permanent,counterType,amount));
 	}	
 	
