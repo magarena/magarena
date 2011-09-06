@@ -30,15 +30,18 @@ public class MagicPumpActivation extends MagicPermanentActivation {
 	@Override
 	public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
 		return new MagicEvent(
-                source,
-                source.getController(),
-                new Object[]{source},
-                this,
-                source+" gets +"+power+"/+"+toughness+" until end of turn.");
-	}
-
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-		game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],power,toughness));
+            source,
+            source.getController(),
+            MagicEvent.NO_DATA,
+            new MagicEventAction() {
+            @Override
+            public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choices) {
+                game.doAction(new MagicChangeTurnPTAction(source.map(game),power,toughness));
+            }},
+            source+" gets +"+power+"/+"+toughness+" until end of turn.");
 	}
 }
