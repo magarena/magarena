@@ -44,6 +44,15 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
 	public boolean usesStack() {
 		return getType().usesStack();
 	}
+
+    @Override
+    public void executeEvent(
+            final MagicGame game, 
+            final MagicEvent event, 
+            final Object data[], 
+            final Object[] choiceResults) {
+        throw new RuntimeException(getClass() + "did not override executeEvent");
+    }
 	
     public abstract MagicTriggerType getType();
 	
