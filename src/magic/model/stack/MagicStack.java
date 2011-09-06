@@ -3,6 +3,7 @@ package magic.model.stack;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicCard;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -13,6 +14,7 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 	
 	private final int spells[];
 	private final int counts[];
+    private MagicItemOnStack oldTop; 
 	
 	public MagicStack() {
 		spells=new int[2];
@@ -49,9 +51,9 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 	}
 	
 	public MagicItemOnStack removeFromTop() {
-		final MagicItemOnStack itemOnStack=removeFirst();
-		removeCount(itemOnStack);
-		return itemOnStack;
+		oldTop = removeFirst();
+		removeCount(oldTop);
+		return oldTop;
 	}
 	
 	public void addTo(final int index,final MagicItemOnStack itemOnStack) {
@@ -69,8 +71,20 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 		Arrays.fill(counts,0);
 		Arrays.fill(spells,0);
 	}
+	
+    public MagicCard getCard(final long id) {
+        if (oldTop != null && 
+            oldTop instanceof MagicCardOnStack &&
+            ((MagicCardOnStack)oldTop).getCard().getId() == id) {
+            return ((MagicCardOnStack)oldTop).getCard();
+        }
+        return MagicCard.NONE;
+    }
 		
 	public MagicItemOnStack getItemOnStack(final long id) {
+        if (oldTop != null && oldTop.getId() == id) {
+            return oldTop;
+        }
 		for (final MagicItemOnStack itemOnStack : this) {
 			if (itemOnStack.getId()==id) {
 				return itemOnStack;
