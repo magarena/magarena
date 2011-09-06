@@ -16,7 +16,7 @@ public class MagicSourceManaActivationResult implements MagicMappable {
 
 	@Override
 	public Object map(final MagicGame game) {
-		return new MagicSourceManaActivationResult((MagicPermanent)permanent.map(game),activation);
+		return new MagicSourceManaActivationResult(permanent.map(game),activation);
 	}
 
 	public void doActivation(final MagicGame game) {
