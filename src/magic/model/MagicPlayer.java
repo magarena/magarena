@@ -19,6 +19,10 @@ public class MagicPlayer implements MagicTarget {
         public String toString() {
             return "";
         }
+        @Override
+        public boolean controlsPermanent(final MagicPermanent permanent) {
+            return false;
+        }
     };
 
 	private static final long ID_FACTOR=31;
