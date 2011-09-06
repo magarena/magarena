@@ -64,4 +64,13 @@ public abstract class MagicPermanentActivation extends MagicActivation {
 	}
 	
 	public abstract MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost);
+    
+    @Override
+    public void executeEvent(
+            final MagicGame game, 
+            final MagicEvent event, 
+            final Object data[], 
+            final Object[] choiceResults) {
+        throw new RuntimeException(getClass() + "did not override executeEvent");
+    }
 }
