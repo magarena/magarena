@@ -67,6 +67,10 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 	
 	@Override
 	public String toString() {
-		return getClass().getSimpleName()+" ("+permanent+','+enchantedPermanent+')';
+        if (enchantedPermanent.isValid()) {
+    		return getClass().getSimpleName()+" ("+permanent+','+enchantedPermanent+')';
+        } else { 
+    		return getClass().getSimpleName()+" ("+permanent+')';
+        }
 	}
 }
