@@ -3874,6 +3874,36 @@ converted=4
 cost={2}{B}{B}
 timing=removal
 
+>Scepter of Dominance
+image=http://magiccards.info/scans/en/cfx/17.jpg
+value=4
+rarity=R
+type=Artifact
+color=w
+converted=3
+cost={1}{W}{W}
+timing=artifact
+
+>Exclude
+image=http://magiccards.info/scans/en/in/56.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=3
+cost={2}{U}
+timing=counter
+
+>Memory Lapse
+image=http://magiccards.info/scans/en/7e/88.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
+
 >Dromar, the Banisher
 image=http://magiccards.info/scans/en/in/244.jpg
 value=5
