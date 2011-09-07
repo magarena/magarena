@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.target.MagicTarget;
 
 public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
@@ -21,26 +22,27 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 		final MagicTarget target = damage.getTarget();
-        final MagicTarget player = target;
-        final String playerName = player.getName();
+        final String targetName = target.getName();
         final String opponentName = permanent.getController().getName();
-        final String prefix = (player == permanent.getController() ? opponentName : playerName) + " discards a card";
+        final String prefix = (target == permanent.getController() ? opponentName : targetName) + " discards a card";
 		return (damage.getSource()==permanent && 
                 target.isPlayer() && 
                 (!combat||damage.isCombat())) ?
             new MagicEvent(
-                permanent,
-                permanent.getController(),
-                new Object[]{permanent,player},
-                this,
-                (random?prefix+" at random.":prefix)+'.'):
+                permanent, 
+                permanent.getController(), 
+                MagicEvent.NO_DATA, 
+                (random?prefix+" at random.":prefix)+'.', 
+                new MagicEventAction() {
+                @Override
+                public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object data[],
+                    final Object[] choices) {
+                    final MagicPlayer player = (MagicPlayer)(target.map(game));
+                    game.addEvent(new MagicDiscardEvent(permanent.map(game),player,1,random));
+                }}):
             MagicEvent.NONE;
-	}
-
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choices) {
-		final MagicPermanent permanent=(MagicPermanent)data[0];
-		final MagicPlayer player=(MagicPlayer)data[1];
-		game.addEvent(new MagicDiscardEvent(permanent,player,1,random));
 	}
 }
