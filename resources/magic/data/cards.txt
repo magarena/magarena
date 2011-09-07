@@ -918,6 +918,19 @@ toughness=3
 ability=flying
 timing=fmain
 
+>Kor Sanctifiers
+image=http://magiccards.info/scans/en/zen/22.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kor,Cleric
+color=w
+converted=3
+cost={2}{W}
+power=2
+toughness=3
+timing=main
+
 >Lhurgoyf
 image=http://magiccards.info/scans/en/cmd/165.jpg
 value=3
@@ -1005,6 +1018,20 @@ cost={2}{B}
 power=2
 toughness=2
 timing=main
+
+>Nekrataal
+image=http://magiccards.info/scans/en/10e/163.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Assassin
+color=b
+converted=4
+cost={2}{B}{B}
+power=2
+toughness=1
+ability=first strike
+timing=fmain
 
 >Peregrine Griffin
 image=http://magiccards.info/scans/en/m12/29.jpg
