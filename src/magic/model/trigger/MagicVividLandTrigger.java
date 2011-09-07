@@ -13,9 +13,10 @@ public class MagicVividLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		return new MagicEvent(
-            permanent,
-            permanent.getController(),
-            MagicEvent.NO_DATA,
+            permanent, 
+            permanent.getController(), 
+            MagicEvent.NO_DATA, 
+            permanent+" enters the battlefield tapped with two charge counters on it.", 
             new MagicEventAction() {
             @Override
             public void executeEvent(
@@ -25,8 +26,7 @@ public class MagicVividLandTrigger extends MagicWhenComesIntoPlayTrigger {
                 final Object[] choices) {
                 game.doAction(new MagicTapAction(permanent.map(game),false));
                 game.doAction(new MagicChangeCountersAction(permanent.map(game),MagicCounterType.Charge,2,false));
-            }},
-            permanent+" enters the battlefield tapped with two charge counters on it.");
+            }});
 	}
 	@Override
 	public boolean usesStack() {
