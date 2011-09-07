@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 
 public class MagicVeteranTrigger extends MagicWhenDamageIsDealtTrigger {
 
@@ -25,16 +26,19 @@ public class MagicVeteranTrigger extends MagicWhenDamageIsDealtTrigger {
                 (!combat||damage.isCombat()) &&
                 target.isCreature()) ?
             new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new Object[]{permanent},
-                    this,
-                    "Put a +1/+1 counter on "+permanent+"."):
+                permanent, 
+                permanent.getController(), 
+                new Object[]{permanent}, 
+                "Put a +1/+1 counter on "+permanent+".", 
+                new MagicEventAction() {
+                @Override
+                public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object data[],
+                    final Object[] choices) {
+                    game.doAction(new MagicChangeCountersAction(permanent.map(game),MagicCounterType.PlusOne,1,true));
+                }}):
             MagicEvent.NONE;
-	}
-	
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choices) {
-		game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
 	}
 }
