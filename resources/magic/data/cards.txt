@@ -7847,6 +7847,17 @@ power=1
 toughness=0
 timing=equipment
 
+>Adventuring Gear
+image=http://magiccards.info/scans/en/zen/195.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={1}
+timing=equipment
+
 >Snake Umbra
 image=http://magiccards.info/scans/en/roe/207.jpg
 value=3
