@@ -440,14 +440,12 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 		
 	private void openCardExplorer() {
-		
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
 		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,null);
 		addContent(explorerPanel);
 	}
 	
 	public void editCardWithExplorer(final EditDeckCard editDeckCard) {
-		
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
 		final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
 		final ExplorerPanel explorerPanel=new ExplorerPanel(this,mode,editDeckCard);

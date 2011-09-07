@@ -59,7 +59,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private List<MagicCardDefinition> cardDefinitions;
 	
 	public ExplorerPanel(final MagicFrame frame,final int mode,final EditDeckCard editDeckCard) {
-
 		this.frame=frame;
 		this.editDeckCard=editDeckCard;
 		

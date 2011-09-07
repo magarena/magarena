@@ -12,8 +12,11 @@ public class EditDeckCard {
 	private final MagicCubeDefinition cube;
 	private final MagicCardDefinition card;
 	
-	public EditDeckCard(final DeckViewer deckViewer,final MagicPlayerDefinition player,final MagicCubeDefinition cube,final MagicCardDefinition card) {
-		
+	public EditDeckCard(
+            final DeckViewer deckViewer,
+            final MagicPlayerDefinition player,
+            final MagicCubeDefinition cube,
+            final MagicCardDefinition card) {
 		this.deckViewer=deckViewer;
 		this.player=player;
 		this.cube=cube;
@@ -21,22 +24,18 @@ public class EditDeckCard {
 	}
 	
 	public DeckViewer getDeckViewer() {
-		
 		return deckViewer;
 	}
 	
 	public MagicPlayerDefinition getPlayer() {
-		
 		return player;
 	}
 	
 	public MagicCubeDefinition getCube() {
-		
 		return cube;
 	}
 	
 	public MagicCardDefinition getCard() {
-		
 		return card;
 	}
 }
