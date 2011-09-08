@@ -918,6 +918,19 @@ toughness=3
 ability=flying
 timing=fmain
 
+>Kor Sanctifiers
+image=http://magiccards.info/scans/en/zen/22.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kor,Cleric
+color=w
+converted=3
+cost={2}{W}
+power=2
+toughness=3
+timing=main
+
 >Lhurgoyf
 image=http://magiccards.info/scans/en/cmd/165.jpg
 value=3
@@ -1005,6 +1018,20 @@ cost={2}{B}
 power=2
 toughness=2
 timing=main
+
+>Nekrataal
+image=http://magiccards.info/scans/en/10e/163.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Assassin
+color=b
+converted=4
+cost={2}{B}{B}
+power=2
+toughness=1
+ability=first strike
+timing=fmain
 
 >Peregrine Griffin
 image=http://magiccards.info/scans/en/m12/29.jpg
@@ -3824,6 +3851,58 @@ color=wb
 converted=2
 cost={X}{W}{B}
 timing=removal
+
+>Wrath of God
+image=http://magiccards.info/scans/en/10e/61.jpg
+value=4
+removal=2
+rarity=R
+type=Sorcery
+color=w
+converted=4
+cost={2}{W}{W}
+timing=removal
+
+>Damnation
+image=http://magiccards.info/scans/en/pc/85.jpg
+value=4
+removal=2
+rarity=R
+type=Sorcery
+color=b
+converted=4
+cost={2}{B}{B}
+timing=removal
+
+>Scepter of Dominance
+image=http://magiccards.info/scans/en/cfx/17.jpg
+value=4
+rarity=R
+type=Artifact
+color=w
+converted=3
+cost={1}{W}{W}
+timing=artifact
+
+>Exclude
+image=http://magiccards.info/scans/en/in/56.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=3
+cost={2}{U}
+timing=counter
+
+>Memory Lapse
+image=http://magiccards.info/scans/en/7e/88.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
 
 >Dromar, the Banisher
 image=http://magiccards.info/scans/en/in/244.jpg
@@ -7766,6 +7845,17 @@ cost={1}
 equip={1}
 power=1
 toughness=0
+timing=equipment
+
+>Adventuring Gear
+image=http://magiccards.info/scans/en/zen/195.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={1}
 timing=equipment
 
 >Snake Umbra
