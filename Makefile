@@ -80,6 +80,9 @@ cards/standard_all.txt:
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' > $@
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 
+cards/new.txt: cards/existing.txt
+	diff $^ cards/existing_117.txt | grep "<" | sed 's/< /  /' > $@
+
 cards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 
@@ -94,6 +97,7 @@ cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt c
 
 M1.%: cubes
 	grep "VERSION.*1.$*" -r src/*
+	grep "Release.*1.$*" release/README.txt
 	-rm -rf Magarena-1.$*
 	-rm Magarena-1.$*.zip
 	mkdir -p Magarena-1.$*/Magarena/mods
