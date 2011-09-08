@@ -8,15 +8,17 @@ import magic.model.action.MagicPlayAbilityAction;
 public class MagicPlayAbilityEvent extends MagicEvent {
 
 	private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			
-			game.doAction(new MagicPlayAbilityAction((MagicPermanent)data[0]));
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+			game.doAction(new MagicPlayAbilityAction((MagicPermanent)event.getSource()));
 		}
 	};
 	
-	public MagicPlayAbilityEvent(final MagicSource source) {
-		super(source,source.getController(),new Object[]{source},EVENT_ACTION,"");
+	public MagicPlayAbilityEvent(final MagicPermanent source) {
+		super(source,source.getController(),MagicEvent.NO_DATA,EVENT_ACTION,"");
 	}
 }
