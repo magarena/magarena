@@ -40,6 +40,23 @@ import magic.model.target.MagicTarget;
 //cost={2}{W}
 //timing=removal
 public class Orim_s_Thunder {
+                        	
+    private static final MagicEventAction KICKED = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choiceResults) {
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                public void doAction(final MagicTarget target) {
+                    final MagicDamage damage = new MagicDamage((MagicCard)data[0],target,(Integer)data[1],false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            });
+        }
+    };
+
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -77,22 +94,8 @@ public class Orim_s_Thunder {
         					cardOnStack.getController(),
         					MagicTargetChoice.NEG_TARGET_CREATURE,
         					new MagicDamageTargetPicker(amount),
-        					MagicEvent.NO_DATA,
-                        	new MagicEventAction() {
-                                @Override
-                                public void executeEvent(
-                                    final MagicGame game,
-                                    final MagicEvent event,
-                                    final Object[] data,
-                                    final Object[] choiceResults) {
-                                	event.processTarget(game,choiceResults,0,new MagicTargetAction() {
-                                        public void doAction(final MagicTarget target) {
-                                            final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),target,amount,false);
-                                            game.doAction(new MagicDealDamageAction(damage));
-                                        }
-                        			});
-        		                }
-        	                },
+        					new Object[]{cardOnStack,amount},
+                            KICKED,
         	                source + " deals " + amount + " damage to target creature$."
                         );
         				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(source,triggerEvent)));
