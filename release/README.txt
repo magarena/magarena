@@ -46,6 +46,20 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1865 (September QQQ, 2011)
+============
+- added the following cards:
+
+- improved the resolution of some token images
+- added support for "whenever player gain life" trigger
+- improved crash handling to handle unhandled exception from any part of the
+  program
+
+- fixed a bug where the "When Targeted" trigger does not activate for
+  spells with kicker
+- fixed a bug where Noble Hierarch could not be tapped for mana because of a
+  typo in the name of the class that implements the mana abilities
+
 Release 1.17b (August 27, 2011)
 =============
 This is a bug fix release.
