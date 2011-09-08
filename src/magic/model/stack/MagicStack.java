@@ -105,7 +105,8 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 		if (isEmpty()) {
 			return false;
 		}
-		return getFirst().getController()==player;
+        final MagicItemOnStack top = getFirst();
+		return top.getController()==player;
 	}
 	
 	public boolean isResponse(final MagicPlayer player) {

@@ -12,7 +12,6 @@ import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicWhenTargetedTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;

@@ -1,7 +1,6 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicExcludeChoice;
 import magic.model.choice.MagicExcludeResult;

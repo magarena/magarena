@@ -2,7 +2,6 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.action.MagicPlayAbilityAction;
 
 public class MagicPlayAbilityEvent extends MagicEvent {

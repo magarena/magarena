@@ -5,7 +5,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicEventAction;
 
 public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	@Override

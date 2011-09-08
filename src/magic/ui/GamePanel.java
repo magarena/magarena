@@ -4,7 +4,6 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicGame;
-import magic.model.MagicGameReport;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
