@@ -29,13 +29,7 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
 	}
 		
 	public Object copyObject(final Object source) {
-		if (source == null || 
-            source == MagicPlayer.NONE || 
-            source == MagicCard.NONE || 
-            source == MagicPermanent.NONE ||
-            source == MagicEvent.NONE) {
-			return source;
-        } else if (source instanceof MagicCopyable) {
+        if (source != null && source instanceof MagicCopyable) {
 			return copy((MagicCopyable)source);
 		} else {
 			return source;
