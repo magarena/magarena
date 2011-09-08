@@ -44,7 +44,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	public BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
             final int index,
-            boolean orig) {
+            final boolean orig) {
 
 		if (cardDefinition == MagicCardDefinition.UNKNOWN) {
 			return IconImages.MISSING_CARD;

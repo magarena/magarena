@@ -33,13 +33,13 @@ public class ImagePermanentsViewer extends JPanel {
 		validChoices=Collections.emptySet();
 	}
 
-	private void divideOverOneRow(final List<ImagePermanentViewer> viewers) {
+	private static void divideOverOneRow(final List<ImagePermanentViewer> viewers) {
 		for (final ImagePermanentViewer viewer : viewers) {
 			viewer.setLogicalRow(1);
 		}
 	}
 	
-	private void divideOverTwoRows(final List<ImagePermanentViewer> viewers) {
+	private static void divideOverTwoRows(final List<ImagePermanentViewer> viewers) {
 		final int size=viewers.size();
 		int firstWidth=0;
 		int secondWidth=0;

@@ -139,7 +139,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 	}
 	
 	@Override
-	public void stateChanged(ChangeEvent event) {
+	public void stateChanged(final ChangeEvent event) {
 		setPlayer((MagicPlayerDefinition)event.getSource());
 	}
 }

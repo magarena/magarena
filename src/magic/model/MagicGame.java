@@ -80,8 +80,8 @@ public class MagicGame {
 	private MagicGameplay gameplay;
 	private MagicPhase phase;
 	private MagicStep step;
-	private MagicPayedCost payedCost;
-	private MagicActionList actions;
+    private final MagicPayedCost payedCost;	
+    private final MagicActionList actions;	
 	private MagicActionList undoPoints;
 	private MagicLogBook logBook;
 	private MagicLogMessageBuilder logMessageBuilder;
@@ -269,7 +269,7 @@ public class MagicGame {
     }
     
     public String getIdString() {
-        StringBuilder sb = new StringBuilder(toString());
+        final StringBuilder sb = new StringBuilder(toString());
         sb.append('\n');
         sb.append(keys[0]);
         for (int i = 1; i < keys.length; i++) {
@@ -293,11 +293,11 @@ public class MagicGame {
 		return id;
 	}
 	
-	public boolean canSkipSingleChoice() {
+	public static boolean canSkipSingleChoice() {
 		return GeneralConfig.getInstance().getSkipSingle();
 	}
 	
-	public boolean canSkipSingleManaChoice() {
+	public static boolean canSkipSingleManaChoice() {
 		return GeneralConfig.getInstance().getSkipSingle();
 	}
 
@@ -821,7 +821,7 @@ public class MagicGame {
 			}
 
             //perform all the actions at once
-            for (MagicAction action : actions) {
+            for (final MagicAction action : actions) {
                 doAction(action);
             }
 
@@ -1055,7 +1055,7 @@ public class MagicGame {
 		return permanentTrigger;
 	}
 		
-	public void addTrigger(MagicPermanentTrigger permanentTrigger) {
+	public void addTrigger(final MagicPermanentTrigger permanentTrigger) {
 		triggers.get(permanentTrigger.getTrigger().getType()).add(permanentTrigger);
 	}
 

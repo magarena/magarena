@@ -269,7 +269,7 @@ public final class GamePanel extends JPanel {
 		}		
 	}
 	
-	private boolean isTextView() {
+	private static boolean isTextView() {
 		return GeneralConfig.getInstance().getTextView();
 	}
 	

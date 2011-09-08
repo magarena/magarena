@@ -15,12 +15,12 @@ public class MagicSingleScoreRanking implements MagicScoreRanking {
 	}
 
 	@Override
-	public boolean addScore(int score) {
+	public boolean addScore(final int score) {
 		return best?score>bestScore:score<bestScore;
 	}
 
 	@Override
-	public void addScoreResult(MagicScoreResult result) {
+	public void addScoreResult(final MagicScoreResult result) {
 		this.result=result;
 		bestScore=result.getScore();
 	}

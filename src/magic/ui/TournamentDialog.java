@@ -145,7 +145,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		setVisible(true);
 	}
 
-	public void actionPerformed(ActionEvent event) {
+	public void actionPerformed(final ActionEvent event) {
 
 		final Object source=event.getSource();
 		if (source==okButton) {			
@@ -208,7 +208,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			return avatar;
 		}
 		
-		public void actionPerformed(ActionEvent event) {
+		public void actionPerformed(final ActionEvent event) {
 		
 			final Object source=event.getSource();
 			if (source==leftButton) {

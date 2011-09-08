@@ -45,7 +45,7 @@ public class BattlefieldViewer extends PermanentsViewer {
 	}
 
 	@Override
-	public Border getBorder(PermanentViewerInfo permanent) {
+	public Border getBorder(final PermanentViewerInfo permanent) {
 		return null;
 	}
 }

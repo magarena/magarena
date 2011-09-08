@@ -29,7 +29,7 @@ public class MagicPermanentSet extends TreeSet<MagicPermanent> {
 	
 	public long getPermanentsId() {
         int idx = 0;
-		long[] input = new long[size() + 1];
+		final long[] input = new long[size() + 1];
 		for (final MagicPermanent permanent : this) {
             input[idx] = permanent.getPermanentId();
             idx++;

@@ -90,7 +90,7 @@ public class GameController {
         });
 	}
     
-    public void pause(int t) {
+    public void pause(final int t) {
         disableActionUndoButtons();
         try { //sleep
             Thread.sleep(t);
@@ -215,9 +215,9 @@ public class GameController {
 		final int imageWidth=imageCardViewer.getWidth();
 		final int imageHeight=imageCardViewer.getHeight();
 		int x=rect.x+(rect.width-imageWidth)/2;
-		int y1=rect.y-imageHeight-6;
-		int y2=rect.y+rect.height+6;
-		int dy2=size.height-y2-imageHeight;		
+		final int y1=rect.y-imageHeight-6;
+		final int y2=rect.y+rect.height+6;
+		final int dy2=size.height-y2-imageHeight;		
 		if (x+imageWidth>=size.width) {	
 			x=rect.x+rect.width-imageWidth;
 		}
@@ -329,7 +329,7 @@ public class GameController {
         });
     }
 	
-	public String getMessageWithSource(final MagicSource source,final String message) {
+	public static String getMessageWithSource(final MagicSource source,final String message) {
         if (source == null) {
             throw new RuntimeException("source is null");
         }

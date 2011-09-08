@@ -18,8 +18,8 @@ public class MagicEventQueue extends LinkedList<MagicEvent> {
 
     public long getEventsId() {
         int idx = 0;
-        long[] input = new long[size() + 1];
-        for (MagicEvent event : this) {
+        final long[] input = new long[size() + 1];
+        for (final MagicEvent event : this) {
             input[idx] = event.getEventId();
             idx++;
         }

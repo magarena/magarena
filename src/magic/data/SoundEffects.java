@@ -24,7 +24,7 @@ public class SoundEffects {
 	
 	private SoundEffects() {}
 	
-	public void playClip(final String name) {
+	public static void playClip(final String name) {
 		if (GeneralConfig.getInstance().isSound()) {
             Clip clip = null;
             AudioInputStream ins = null;
@@ -45,7 +45,7 @@ public class SoundEffects {
 		}
 	}
 
-	public void playClip(final MagicGame game,final String name) {
+	public static void playClip(final MagicGame game,final String name) {
 		if (game.isSound()) {
 			playClip(name);
 		}

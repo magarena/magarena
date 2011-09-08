@@ -41,7 +41,7 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
     @Override
     public long getId() {
         int idx = 0;
-		long[] keys = new long[size() + 1];
+		final long[] keys = new long[size() + 1];
 		for (final MagicCard card : this) {
 			keys[idx] = card.getCardDefinition().getIndex();
             idx++;

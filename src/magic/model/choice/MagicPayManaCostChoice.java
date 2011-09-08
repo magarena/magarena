@@ -86,7 +86,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
         //in simulation use delayed pay mana cost
-		List<Object> choices = (List<Object>)buildDelayedPayManaCostResults(game,player);
+		final List<Object> choices = (List<Object>)buildDelayedPayManaCostResults(game,player);
         return new Object[]{choices.get(MagicRandom.nextInt(choices.size()))};
     }
 	

@@ -2,7 +2,7 @@ package magic.model.score;
 
 public interface MagicScoreResult {
 
-	public int getPosition();
+	int getPosition();
 	
-	public int getScore();
+	int getScore();
 }

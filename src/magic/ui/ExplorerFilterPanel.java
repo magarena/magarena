@@ -262,8 +262,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		}
 		
 		// text
-		String filterString = textFilterField.getText();
-		String[] filters = filterString.split(" ");
+		final String filterString = textFilterField.getText();
+		final String[] filters = filterString.split(" ");
 		for(int i=0; i<filters.length; i++) {
 			if(!cardDefinition.hasText(filters[i])) {
 				return false;
@@ -276,7 +276,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		for (int colorIndex=0;colorIndex<colorCheckBoxes.length;colorIndex++) {
 
 			final MagicColor color=MagicColor.getColor(colorCheckBoxes[colorIndex].getActionCommand().charAt(0));
-			boolean hasColor=color.hasColor(cardDefinition.getColorFlags());
+			final boolean hasColor=color.hasColor(cardDefinition.getColorFlags());
 			if (colorCheckBoxes[colorIndex].isSelected()) {
 				useColors=true;
 				if (hasColor) {
@@ -316,16 +316,16 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	}
 
 	@Override
-	public void insertUpdate(DocumentEvent arg0) {
+	public void insertUpdate(final DocumentEvent arg0) {
 		explorerPanel.updateCards();
 	}
 
 	@Override
-	public void removeUpdate(DocumentEvent arg0) {
+	public void removeUpdate(final DocumentEvent arg0) {
 		explorerPanel.updateCards();
 	}
 	
 	@Override
-	public void changedUpdate(DocumentEvent arg0) {
+	public void changedUpdate(final DocumentEvent arg0) {
 	}
 }

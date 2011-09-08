@@ -189,8 +189,8 @@ public class DeckViewer extends JPanel {
 		@Override
 		public int compareTo(final DeckEntry entry) {
 
-			boolean basic1=card.isBasic();
-			boolean basic2=entry.card.isBasic();
+			final boolean basic1=card.isBasic();
+			final boolean basic2=entry.card.isBasic();
 			if (basic1!=basic2) {
 				return basic1?-1:1;
 			}
@@ -213,7 +213,7 @@ public class DeckViewer extends JPanel {
 			this.addMouseListener(new MouseAdapter() {
 
 				@Override
-				public void mouseEntered(MouseEvent event) {
+				public void mouseEntered(final MouseEvent event) {
 
 					setCardImage(DeckEntry.this);
 				}

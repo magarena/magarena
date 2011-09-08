@@ -67,7 +67,7 @@ public class MagicDeclareBlockersResultBuilder {
         //sample 100000 random blocks 
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(attackers.length + blockers.size());
         for (int i = 0; i < 100000; i++) {
-            Map<Integer, List<MagicCombatCreature>> block = 
+            final Map<Integer, List<MagicCombatCreature>> block = 
                 new HashMap<Integer, List<MagicCombatCreature>>();
             for (int j = 0; j < attackers.length; j++) {
                 block.put(j, new ArrayList<MagicCombatCreature>(5));
@@ -75,7 +75,7 @@ public class MagicDeclareBlockersResultBuilder {
             }
             for (final MagicCombatCreature blocker : blockers) {
                 //determine attackers it can block
-                List<Integer> choices = new ArrayList<Integer>();
+                final List<Integer> choices = new ArrayList<Integer>();
                 for (int j = 0; j < attackers.length; j++) {
                     if (Arrays.asList(attackers[j].candidateBlockers).contains(blocker)) {
                         choices.add(j);
@@ -116,7 +116,7 @@ public class MagicDeclareBlockersResultBuilder {
 		final MagicCombatCreature attacker=attackers[index];
 		final MagicCombatCreature candidateBlockers[]=new MagicCombatCreature[attacker.candidateBlockers.length];
 		int blockersSize=0;
-		for (MagicCombatCreature blocker : attacker.candidateBlockers) {
+		for (final MagicCombatCreature blocker : attacker.candidateBlockers) {
 			if (blockers.contains(blocker)) {
 				candidateBlockers[blockersSize++]=blocker;
 			}
@@ -145,7 +145,7 @@ public class MagicDeclareBlockersResultBuilder {
         // Not sufficient: might want to chump block with multiple blockers to
         // survive the attack or damage the attackers enough to finish it off
         // with direct damage
-		int lethalDamage = attacker.lethalDamage;
+		final int lethalDamage = attacker.lethalDamage;
 		for (int blockerIndex = 0; blockerIndex < blockersSize; blockerIndex++) {
 			final MagicCombatCreature blocker=candidateBlockers[blockerIndex];
 			if (blocker.power < lethalDamage) {
@@ -173,7 +173,7 @@ public class MagicDeclareBlockersResultBuilder {
 		final MagicCombatCreature attacker=attackers[index];
 		final MagicCombatCreature candidateBlockers[]=new MagicCombatCreature[attacker.candidateBlockers.length];
 		int blockersSize=0;
-		for (MagicCombatCreature blocker : attacker.candidateBlockers) {
+		for (final MagicCombatCreature blocker : attacker.candidateBlockers) {
 			if (blockers.contains(blocker)) {
 				candidateBlockers[blockersSize++]=blocker;
 			}

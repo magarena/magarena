@@ -22,7 +22,7 @@ public class TexturedPanel extends JPanel {
 		start=false;
 	}
 
-	private int getStart(final int value,final int size) {
+	private static int getStart(final int value,final int size) {
 		
 		int start=(value*97)%size;
 		if (start>0) {

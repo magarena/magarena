@@ -50,7 +50,7 @@ public class MurmurHash3 {
       long c2;
    }
 
-   static long getblock(byte[] key, int i) {
+   static long getblock(final byte[] key, final int i) {
       return
            (((long) key[i + 0] & 0x00000000000000FFL) << 0)
          | (((long) key[i + 1] & 0x00000000000000FFL) << 8)
@@ -62,7 +62,7 @@ public class MurmurHash3 {
          | (((long) key[i + 7] & 0x00000000000000FFL) << 56);
    }
 
-   static void bmix(State state) {
+   static void bmix(final State state) {
       state.k1 *= state.c1;
       state.k1 = (state.k1 << 23) | (state.k1 >>> 64 - 23);
       state.k1 *= state.c2;
@@ -103,7 +103,7 @@ public class MurmurHash3 {
     */
    @SuppressWarnings("fallthrough")
    public static long[] MurmurHash3_x64_128(final byte[] key, final int seed) {
-      State state = new State();
+      final State state = new State();
 
       state.h1 = 0x9368e53c2f6af274L ^ seed;
       state.h2 = 0x586dcd208f7cd3fdL ^ seed;
@@ -121,7 +121,7 @@ public class MurmurHash3 {
       state.k1 = 0;
       state.k2 = 0;
 
-      int tail = (key.length >>> 4) << 4;
+      final int tail = (key.length >>> 4) << 4;
 
       switch (key.length & 15) {
          case 15: state.k2 ^= (long) key[tail + 14] << 48;
@@ -187,7 +187,7 @@ public class MurmurHash3 {
     * @return 128 bit hashed key, in an array containing two longs
     */
    public static long[] MurmurHash3_x64_128(final long[] key, final int seed) {
-      State state = new State();
+      final State state = new State();
 
       state.h1 = 0x9368e53c2f6af274L ^ seed;
       state.h2 = 0x586dcd208f7cd3fdL ^ seed;
@@ -202,7 +202,7 @@ public class MurmurHash3 {
          bmix(state);
       }
 
-      long tail = key[key.length - 1];
+      final long tail = key[key.length - 1];
 
       if (key.length % 2 != 0) {
          state.k1 ^= tail;
@@ -245,7 +245,7 @@ public class MurmurHash3 {
       return (int) (MurmurHash3_x64_128(key, seed)[0] >>> 32);
    }
 
-   public static long hash(long[] payload) {
+   public static long hash(final long[] payload) {
       return MurmurHash3_x64_64(payload, 9001);
    }
 }

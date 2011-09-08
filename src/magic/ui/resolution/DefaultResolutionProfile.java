@@ -87,7 +87,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 		y=spacing;
 		int playerHeight=PLAYER_VIEWER_HEIGHT;
 		int cardHeight=size.height-GAME_VIEWER_HEIGHT-spacing*4-BUTTON_Y_SPACING;
-		boolean small=cardHeight-playerHeight*2<CARD_VIEWER_HEIGHT;
+		final boolean small=cardHeight-playerHeight*2<CARD_VIEWER_HEIGHT;
 		if (small) {
 			playerHeight=PLAYER_VIEWER_HEIGHT_SMALL;
 		}
@@ -138,8 +138,8 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 		int width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*5-offset)/3;
 		if (width2<MIN_HAND_VIEWER_WIDTH) {
 			width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*4-offset)/2;			
-			int height2=(size.height-spacing*3)/2;
-			int x2=x+width2+spacing;
+			final int height2=(size.height-spacing*3)/2;
+			final int x2=x+width2+spacing;
 			y=spacing;
 			result.setBoundary(ResolutionProfileType.GameOpponentPermanentViewer,
                     new Rectangle(x2,y,width2,height2));

@@ -23,7 +23,7 @@ public class MagicUntapPhase extends MagicPhase {
 		return INSTANCE;
 	}
 	
-	private void untap(final MagicGame game) {
+	private static void untap(final MagicGame game) {
 
 		final MagicPlayer player=game.getTurnPlayer();
 		final boolean exhausted=player.hasState(MagicPlayerState.Exhausted);

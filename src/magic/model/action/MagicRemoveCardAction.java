@@ -18,7 +18,7 @@ public class MagicRemoveCardAction extends MagicAction {
 	}
 	
 	@Override
-	public void doAction(MagicGame game) {
+	public void doAction(final MagicGame game) {
 		final MagicPlayer owner=card.getOwner();
 		switch (locationType) {
 			case OwnersHand:
@@ -41,7 +41,7 @@ public class MagicRemoveCardAction extends MagicAction {
 	}
 
 	@Override
-	public void undoAction(MagicGame game) {
+	public void undoAction(final MagicGame game) {
 		final MagicPlayer owner=card.getOwner();
 		switch (locationType) {
 			case OwnersHand:

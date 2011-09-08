@@ -109,7 +109,7 @@ public class MagicPayManaCostResultBuilder {
 		}
 		
 		// Generate all possible combinations with at least the minimum number of sources.
-		int optionIndices[]=new int[typeActivationSize];
+		final int optionIndices[]=new int[typeActivationSize];
 		int activationIndex=0;
 		int count=0;
 		optionIndices[0]=-1;

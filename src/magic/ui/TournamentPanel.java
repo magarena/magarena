@@ -90,7 +90,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 				
 		this.addComponentListener(new ComponentAdapter() {
 			@Override
-			public void componentResized(ComponentEvent e) {
+			public void componentResized(final ComponentEvent e) {
 				resizeComponents();
 			}
 		});				

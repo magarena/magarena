@@ -1,6 +1,6 @@
 package magic.model;
 
 public interface MagicMappable {
-	public Object map(final MagicGame game);
-    public long getId();
+	Object map(final MagicGame game);
+    long getId();
 }

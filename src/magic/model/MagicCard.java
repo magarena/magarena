@@ -127,7 +127,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	}
 
 	@Override
-	public void setPreventDamage(int amount) {
+	public void setPreventDamage(final int amount) {
 		
 	}
 	

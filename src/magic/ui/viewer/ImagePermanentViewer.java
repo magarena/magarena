@@ -203,7 +203,7 @@ public class ImagePermanentViewer extends JPanel {
 			}
 
 			int ax=x1+1;
-			int ay=y2-17;
+			final int ay=y2-17;
 			// Charge counters
 			if (linkedInfo.chargeCounters>0) {
 				g.drawImage(IconImages.CHARGE.getImage(),ax,ay,this);

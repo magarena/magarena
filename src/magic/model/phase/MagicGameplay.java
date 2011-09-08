@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 
 public interface MagicGameplay {
 
-	public MagicPhase getStartPhase(final MagicGame game);
+	MagicPhase getStartPhase(final MagicGame game);
 	
-	public MagicPhase getNextPhase(final MagicGame game);	
+	MagicPhase getNextPhase(final MagicGame game);	
 }

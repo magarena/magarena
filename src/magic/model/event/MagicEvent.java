@@ -257,7 +257,7 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-	public final void payManaCost(
+	public static final void payManaCost(
             final MagicGame game,
             final MagicPlayer player,
             final Object choiceResults[],
@@ -287,7 +287,7 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public long getEventId() {
-        long[] keys = {
+        final long[] keys = {
             (source != null ? source.getId() : -1L),
             (player != null ? player.getIndex() : -1L),
 	        (choice != null ? choice.hashCode() : -1L),

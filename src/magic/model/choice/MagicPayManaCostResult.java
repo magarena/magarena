@@ -5,9 +5,9 @@ import magic.model.MagicPlayer;
 
 public interface MagicPayManaCostResult {
 		
-	public int getX();
+	int getX();
 	
-	public int getConverted();
+	int getConverted();
 	
-	public void doAction(final MagicGame game,final MagicPlayer player);
+	void doAction(final MagicGame game,final MagicPlayer player);
 }

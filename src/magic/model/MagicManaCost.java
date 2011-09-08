@@ -95,7 +95,7 @@ public class MagicManaCost {
 	private boolean hasX;
 	private String costText;
 	private List<ImageIcon> icons;
-	private MagicBuilderManaCost builderCost;
+    private final MagicBuilderManaCost builderCost;	
 	
 	private MagicManaCost(final String costText) {
 		this.costText=costText;

@@ -43,7 +43,7 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
     @Override
     public long getId() {
         int idx = 0;
-		long[] input = new long[size() + 1];
+		final long[] input = new long[size() + 1];
 		for (final MagicPermanent permanent : this) {
             input[idx] = permanent.getId();
             idx++;

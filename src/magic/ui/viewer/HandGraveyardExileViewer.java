@@ -79,7 +79,7 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
 	}
 
 	@Override
-	public void stateChanged(ChangeEvent e) {
+	public void stateChanged(final ChangeEvent e) {
 
 		final int selectedTab=tabSelector.getSelectedTab();
 		cardLayout.show(cardPanel,Integer.toString(selectedTab));

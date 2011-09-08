@@ -7,7 +7,7 @@ public class MagicRandom {
 	private static final MersenneTwisterFast RNG;
 	
     static {
-        String seedStr = System.getProperty("rndSeed");
+        final String seedStr = System.getProperty("rndSeed");
         if (seedStr != null) {
             RNG = new MersenneTwisterFast(Long.parseLong(seedStr));
             System.err.println("Using random seed " + seedStr);

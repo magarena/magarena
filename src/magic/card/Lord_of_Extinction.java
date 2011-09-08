@@ -22,7 +22,7 @@ public class Lord_of_Extinction {
 	
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
-        public void change(MagicCardDefinition cdef) {
+        public void change(final MagicCardDefinition cdef) {
             cdef.addLocalVariable(LORD_OF_EXTINCTION);	
             cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
             cdef.setVariablePT();

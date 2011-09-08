@@ -43,7 +43,7 @@ public class MagicColorChoice extends MagicChoice {
 		this.type=type;
 	}
 	
-	private Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
+	private static Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
 
 		final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
 		final int counts[]=new int[MagicColor.NR_COLORS];
@@ -72,7 +72,7 @@ public class MagicColorChoice extends MagicChoice {
 		return Collections.<Object>singletonList(bestColor);
 	}
 	
-	private Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
+	private static Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
 
 		final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
 		final int scores[]=new int[MagicColor.NR_COLORS];

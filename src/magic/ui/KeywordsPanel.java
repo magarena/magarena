@@ -73,14 +73,14 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 		this.addComponentListener(new ComponentAdapter() {
 
 			@Override
-			public void componentResized(ComponentEvent e) {
+			public void componentResized(final ComponentEvent e) {
 
 				resizeComponents();
 			}
 		});
 	}
 
-	private JPanel createKeywordsPanel() {
+	private static JPanel createKeywordsPanel() {
 
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		final Color nameColor=theme.getColor(Theme.COLOR_NAME_FOREGROUND);

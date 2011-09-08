@@ -71,7 +71,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private MagicTournament tournament;
 	private TournamentPanel tournamentPanel;
 	private GamePanel gamePanel;
-	private LinkedList<JComponent> contents;
+    private final LinkedList<JComponent> contents;	
 	
 	public MagicFrame() {
 
@@ -483,7 +483,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 			
 	@Override
-	public void actionPerformed(ActionEvent event) {
+	public void actionPerformed(final ActionEvent event) {
 
 		final Object source=event.getSource();
 		if (source==newTournamentItem) {
@@ -539,7 +539,7 @@ public class MagicFrame extends JFrame implements ActionListener {
         
         
         //restart the app
-        String javaBin = System.getProperty("java.home") + "/bin/java";
+        final String javaBin = System.getProperty("java.home") + "/bin/java";
         File jarFile;
         try { //get File object of jar
             jarFile = new File(this.getClass().
@@ -557,9 +557,9 @@ public class MagicFrame extends JFrame implements ActionListener {
         if ( !jarFile.getName().endsWith(".jar") )
         return false;   //no, it's a .class probably
 
-        String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
+        final String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
         try { //restart the application 
-            Process p = Runtime.getRuntime().exec(toExec);
+            final Process p = Runtime.getRuntime().exec(toExec);
         } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             ex.printStackTrace();

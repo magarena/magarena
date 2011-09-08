@@ -60,7 +60,7 @@ public class SliderPanel extends JPanel implements ChangeListener {
 	}
 	
 	@Override
-	public void stateChanged(ChangeEvent e) {
+	public void stateChanged(final ChangeEvent e) {
 		valueLabel.setText(Integer.toString(slider.getValue()));
 	}
 }

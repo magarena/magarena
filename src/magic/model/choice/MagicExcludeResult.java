@@ -61,7 +61,7 @@ public class MagicExcludeResult implements MagicMappable {
     @Override
     public long getId() {
         int idx = 0;
-		long[] input = new long[excludePermanents.size() + 1];
+		final long[] input = new long[excludePermanents.size() + 1];
 		for (final MagicPermanent permanent : excludePermanents) {
             input[idx] = permanent.getId();
             idx++;

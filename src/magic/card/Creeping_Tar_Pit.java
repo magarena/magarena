@@ -95,7 +95,7 @@ public class Creeping_Tar_Pit {
     
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
-        public void change(MagicCardDefinition cdef) {
+        public void change(final MagicCardDefinition cdef) {
 		    cdef.setExcludeManaOrCombat();
         }
     };

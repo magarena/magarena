@@ -15,13 +15,13 @@ public class MagicChangeExtraTurnsAction extends MagicAction {
 	}
 
 	@Override
-	public void doAction(MagicGame game) {
+	public void doAction(final MagicGame game) {
 		
 		player.changeExtraTurns(amount);
 	}
 
 	@Override
-	public void undoAction(MagicGame game) {
+	public void undoAction(final MagicGame game) {
 		
 		player.changeExtraTurns(-amount);
 	}

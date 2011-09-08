@@ -51,7 +51,7 @@ public class Student_of_Warfare {
 		
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
-        public void change(MagicCardDefinition cdef) {
+        public void change(final MagicCardDefinition cdef) {
 		    cdef.addLocalVariable(STUDENT_OF_WARFARE);	
 		    cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
 		    cdef.setVariablePT();

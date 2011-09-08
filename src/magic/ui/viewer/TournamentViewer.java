@@ -86,7 +86,7 @@ public class TournamentViewer extends TexturedPanel {
 		return mainPanel;
 	}
 	
-	public void setTitle(final TitleBar titleBar) {
+	public static void setTitle(final TitleBar titleBar) {
 	
 		titleBar.setText(TITLE);
 		titleBar.setIcon(null);
@@ -97,7 +97,7 @@ public class TournamentViewer extends TexturedPanel {
 		return tournament;
 	}
 	
-	private final int getPercentage(final int value,final int total) {
+	private static final int getPercentage(final int value,final int total) {
 		
 		return total>0?(value*100)/total:0;
 	}

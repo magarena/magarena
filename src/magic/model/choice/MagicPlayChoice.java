@@ -60,7 +60,7 @@ public class MagicPlayChoice extends MagicChoice {
 		return options;
 	}
 	
-	private void addValidChoices(
+	private static void addValidChoices(
             final MagicGame game,
             final MagicPlayer player,
             final boolean isAI,

@@ -14,7 +14,7 @@ import java.util.Date;
 
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
     
-    public void uncaughtException(Thread th, Throwable ex) {
+    public void uncaughtException(final Thread th, final Throwable ex) {
         MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
         System.exit(1);
     }
@@ -135,7 +135,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         System.err.println(sb.toString());
 
         //save a copy to a crash log file
-        File clog = new File(MagicMain.getGamePath(), "crash.log");
+        final File clog = new File(MagicMain.getGamePath(), "crash.log");
         try {
             FileIO.toFile(clog, sb.toString(), true); 
         } catch (final IOException ex3) {

@@ -39,7 +39,7 @@ public class ImageDrawingUtils {
             final ImageObserver observer,
             final MagicCardDefinition cardDefinition,
             int ax,
-            int ay) {
+            final int ay) {
 		final List<ImageIcon> icons=new ArrayList<ImageIcon>();
 		for (final MagicColor color : MagicColor.values()) {
 			if (cardDefinition.getManaSource(color)>0) {
@@ -67,7 +67,7 @@ public class ImageDrawingUtils {
             final ImageObserver observer,
             final long abilityFlags,
             int ax,
-            int ay) {
+            final int ay) {
 		if (MagicAbility.Flying.hasAbility(abilityFlags)) {				
 			g.drawImage(IconImages.FLYING.getImage(),ax,ay,observer);
 			ax+=16;
@@ -107,7 +107,7 @@ public class ImageDrawingUtils {
 		g.drawString(pt,x+3,isDamage&&flip?y+28:y+14);
 		if (isDamage) {
 			final int damageWidth=metrics.stringWidth(damage);
-			int dx=x+3+(ptWidth-damageWidth)/2;
+			final int dx=x+3+(ptWidth-damageWidth)/2;
 			g.setColor(Color.RED);
 			g.drawString(damage,dx,flip?y+14:y+28);
 		}

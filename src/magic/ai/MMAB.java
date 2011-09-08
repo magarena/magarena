@@ -43,7 +43,7 @@ public class MMAB implements MagicAI {
 		}
 	}
 	
-	private ArtificialPruneScore createPruneScore() {
+	private static ArtificialPruneScore createPruneScore() {
 		return new ArtificialMultiPruneScore();
 	}
     

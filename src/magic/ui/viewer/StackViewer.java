@@ -24,7 +24,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 	private final GameController controller;
 	private final ViewerScrollPane viewerPane;
 	private final boolean image;
-	private Collection<StackButton> buttons;
+    private final Collection<StackButton> buttons;	
 	private Rectangle setRectangle = new Rectangle();
 	
 	public StackViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean image) {
@@ -53,7 +53,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 		super.setBounds(r);
 	}
 
-	public String getTitle() {
+	public static String getTitle() {
 		
 		return "Stack";
 	}

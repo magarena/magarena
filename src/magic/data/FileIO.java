@@ -20,7 +20,7 @@ import java.util.Properties;
 public class FileIO {
     
     static private String toStr(final BufferedReader input) throws IOException {
-        StringBuilder contents = new StringBuilder();
+        final StringBuilder contents = new StringBuilder();
         try {
             String line = null; //not declared within while loop
             /*

@@ -91,7 +91,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
 		update();
 	}
 	
-	public void setSmall(boolean small) {
+	public void setSmall(final boolean small) {
 
 		labelsPanel.removeAll();
 		avatarPanel.setSmall(small);

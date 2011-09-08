@@ -117,7 +117,7 @@ public class MagicPlayerDefinition {
 		this.deck=deck;
 	}
 	
-	private String getDeckPrefix(final String prefix,final int index) {
+	private static String getDeckPrefix(final String prefix,final int index) {
 		return prefix+"deck"+index;
 	}
 	

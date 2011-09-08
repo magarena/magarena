@@ -29,7 +29,7 @@ public class Cairn_Wanderer {
 
 	private static final MagicLocalVariable CAIRN_WANDERER=new MagicDummyLocalVariable() {
 		@Override
-		public long getAbilityFlags(MagicGame game,MagicPermanent permanent,long flags) {
+		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			long newFlags=0;
 			for (final MagicPlayer player : game.getPlayers()) {
 				for (final MagicCard card : player.getGraveyard()) {
@@ -45,7 +45,7 @@ public class Cairn_Wanderer {
     
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
-        public void change(MagicCardDefinition cdef) {
+        public void change(final MagicCardDefinition cdef) {
 		    cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
 		    cdef.addLocalVariable(CAIRN_WANDERER);
         }

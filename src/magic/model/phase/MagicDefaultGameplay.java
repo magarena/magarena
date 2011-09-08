@@ -9,7 +9,7 @@ public class MagicDefaultGameplay implements MagicGameplay {
 	private MagicDefaultGameplay() {}
 	
 	@Override
-	public MagicPhase getStartPhase(MagicGame game) {
+	public MagicPhase getStartPhase(final MagicGame game) {
 		return MagicUntapPhase.getInstance();
 	}
 	

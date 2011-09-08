@@ -56,7 +56,7 @@ public class DeckGenerator {
 		final int maxCost[]=new int[]{maxOther,maxOther+1,maxHigh};
 		int countCreatures=0;
 		int countColorless=0;
-		int countCost[]=new int[3];
+		final int countCost[]=new int[3];
 		
 		// Add spells to deck.
 		while (deck.size() < spells && spellCards.size() > 0) {

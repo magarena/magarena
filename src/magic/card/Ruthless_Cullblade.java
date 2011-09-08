@@ -24,7 +24,7 @@ public class Ruthless_Cullblade {
 
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
-        public void change(MagicCardDefinition cdef) {
+        public void change(final MagicCardDefinition cdef) {
             cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
             cdef.addLocalVariable(RUTHLESS_CULLBLADE);	
         }

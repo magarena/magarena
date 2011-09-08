@@ -90,18 +90,18 @@ public class AboutDialog extends JDialog implements ActionListener {
 
 		forumLabel.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseClicked(final MouseEvent e) {
 				openURL(FORUM_URL);
 			}
 
 			@Override
-			public void mouseEntered(MouseEvent e) {
+			public void mouseEntered(final MouseEvent e) {
 				setCursor(new Cursor(Cursor.HAND_CURSOR));
 				forumLabel.setText("<html><u>" + forumDisplayLink + "</u></html>");
 			}
 
 			@Override
-			public void mouseExited(MouseEvent e) {
+			public void mouseExited(final MouseEvent e) {
 				setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
 				forumLabel.setText(forumDisplayLink);
 			}
@@ -120,18 +120,18 @@ public class AboutDialog extends JDialog implements ActionListener {
 
 		repoLabel.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseClicked(final MouseEvent e) {
 				openURL(REPO_URL);
 			}
 
 			@Override
-			public void mouseEntered(MouseEvent e) {
+			public void mouseEntered(final MouseEvent e) {
 				setCursor(new Cursor(Cursor.HAND_CURSOR));
 				repoLabel.setText("<html><u>" + repoDisplayLink + "</u></html>");
 			}
 
 			@Override
-			public void mouseExited(MouseEvent e) {
+			public void mouseExited(final MouseEvent e) {
 				setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
 				repoLabel.setText(repoDisplayLink);
 			}
@@ -162,7 +162,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 		setVisible(true);
 	}
 
-	private static void openURL(String url) {
+	private static void openURL(final String url) {
 		try {
 			Desktop desktop = null;
 			if (Desktop.isDesktopSupported()) {
@@ -170,7 +170,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 			}
 
 			if (desktop != null) {
-				URI uri = new URI(url);
+				final URI uri = new URI(url);
 				desktop.browse(uri);
 			}
 		} catch (IOException ioe) {

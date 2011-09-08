@@ -44,7 +44,7 @@ public class DifficultyViewer extends TexturedPanel implements ChangeListener {
 		add(extraLifeSlider);
 	}
 	
-	public void setTitle(final TitleBar titleBar) {
+	public static void setTitle(final TitleBar titleBar) {
 		titleBar.setText(TITLE);
 		titleBar.setIcon(null);
 	}

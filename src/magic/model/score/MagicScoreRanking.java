@@ -4,9 +4,9 @@ import java.util.Collection;
 
 public interface MagicScoreRanking {
 
-	public boolean addScore(final int score);
+	boolean addScore(final int score);
 	
-	public void addScoreResult(final MagicScoreResult result);
+	void addScoreResult(final MagicScoreResult result);
 	
-	public Collection<Object> getResults();
+	Collection<Object> getResults();
 }

@@ -22,7 +22,7 @@ public class PlayerAvatarPanel extends TexturedPanel {
 	private final TitleBar titleBar;
 	private MagicPlayerDefinition playerDefinition;
 	private boolean small;
-	private Border selectedBorder;
+    private final Border selectedBorder;	
 	
 	public PlayerAvatarPanel(final int index) {
 

@@ -48,7 +48,7 @@ public class ArtificialWorkerPool {
 		return threads;
 	}
 	
-	private ArtificialPruneScore createPruneScore() {
+	private static ArtificialPruneScore createPruneScore() {
 		return new ArtificialMultiPruneScore();
 	}
 	

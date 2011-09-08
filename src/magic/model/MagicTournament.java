@@ -141,7 +141,7 @@ public class MagicTournament {
 		}
 	}
 	
-	private List<Integer> getAvatarIndices(final int avatars) {
+	private static List<Integer> getAvatarIndices(final int avatars) {
 		final List<Integer> indices=new ArrayList<Integer>();
 		for (int index=0;index<avatars;index++) {
 			
@@ -227,7 +227,7 @@ public class MagicTournament {
 		return new File(MagicMain.getGamePath(),"tournament.txt");		
 	}
 	
-	private String getPlayerPrefix(final int index) {
+	private static String getPlayerPrefix(final int index) {
 		return "p"+(index+1)+".";
 	}
 	

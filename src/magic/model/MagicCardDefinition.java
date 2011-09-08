@@ -611,8 +611,8 @@ public class MagicCardDefinition {
 		}
 	}
 	
-	public boolean subTypeHasText(String s) {
-		MagicSubType[] subTypeValues = MagicSubType.values();
+	public boolean subTypeHasText(final String s) {
+		final MagicSubType[] subTypeValues = MagicSubType.values();
 		for (final MagicSubType subtype : subTypeValues) {
 			if(subtype.hasSubType(subTypeFlags) && subtype.toString().toLowerCase().contains(s)) {
 				return true;
@@ -621,8 +621,8 @@ public class MagicCardDefinition {
 		return false;
 	}
 		
-	public boolean abilityHasText(String s) {
-		MagicAbility[] abilityValues = MagicAbility.values();
+	public boolean abilityHasText(final String s) {
+		final MagicAbility[] abilityValues = MagicAbility.values();
 		for (final MagicAbility ability : abilityValues) {
 			if(hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {
 				return true;

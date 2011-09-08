@@ -105,7 +105,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		int width=getWidth();
 		if (cardWidth<width||size==1) {
 			int x=0;
-			int step=CARD_WIDTH+SPACING;	
+			final int step=CARD_WIDTH+SPACING;	
 			for (int index=0;index<size;index++) {
 				
 				cardPoints.add(new Point(x,1));

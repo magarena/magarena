@@ -22,7 +22,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 	
 	public long getCardsId() {
         int idx = 0;
-		long[] keys = new long[size() + 1];
+		final long[] keys = new long[size() + 1];
 		for (final MagicCard card : this) {
 			keys[idx] = card.getCardDefinition().getIndex();
             idx++;
@@ -32,7 +32,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 	
     public long getSortedCardsId() {
         int idx = 0;
-		long[] keys = new long[size() + 1];
+		final long[] keys = new long[size() + 1];
 		for (final MagicCard card : this) {
 			keys[idx] = card.getCardDefinition().getIndex();
             idx++;

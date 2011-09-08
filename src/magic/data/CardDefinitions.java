@@ -40,7 +40,7 @@ public class CardDefinitions {
 		cardsMap=new HashMap<String, MagicCardDefinition>();
 	}
 	
-	private void setProperty(final MagicCardDefinition card,final String property,final String value) {
+	private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
         if ("image".equals(property)) {
             card.setImageURL(value);
         } else if ("cube".equals(property)) {
@@ -104,7 +104,7 @@ public class CardDefinitions {
 		}
 	}
 
-	private void checkCard(final MagicCardDefinition card) {
+	private static void checkCard(final MagicCardDefinition card) {
 		if (card!=null) {	
             //legendaries are at least Rare
 			if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
@@ -133,8 +133,8 @@ public class CardDefinitions {
         final String fname = cardDefinition.getFullName();
         final String cname = fname.replaceAll("[^A-Za-z]", "_");
         try { //reflection
-            Class c = Class.forName("magic.card." + cname);
-            Field[] fields = c.getDeclaredFields();
+            final Class c = Class.forName("magic.card." + cname);
+            final Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
                 final Object obj = Modifier.isPublic(field.getModifiers()) ? field.get(null) : null;
                 if (obj != null) {

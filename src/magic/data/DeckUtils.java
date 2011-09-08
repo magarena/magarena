@@ -70,7 +70,7 @@ public class DeckUtils {
 				index=1;
 			}
 			final SortedMap<String,Integer> cardMap=cardMaps.get(index);
-			Integer count=cardMap.get(name);
+			final Integer count=cardMap.get(name);
 			cardMap.put(name,count==null?Integer.valueOf(1):Integer.valueOf(count+1));
 		}
 		
@@ -118,8 +118,8 @@ public class DeckUtils {
         while (sc.hasNextLine()) {
             final String line = sc.nextLine().trim();
             if (!line.isEmpty()&&!line.startsWith("#")) {
-                int index = line.indexOf(' ');
-                int amount = Integer.parseInt(line.substring(0,index));
+                final int index = line.indexOf(' ');
+                final int amount = Integer.parseInt(line.substring(0,index));
                 final String name=line.substring(index+1).trim();
                 final MagicCardDefinition cardDefinition = 
                     CardDefinitions.getInstance().getCard(name);

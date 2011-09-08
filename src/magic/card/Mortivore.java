@@ -29,7 +29,7 @@ public class Mortivore {
 	
     public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
         @Override
-        public void change(MagicCardDefinition cdef) {
+        public void change(final MagicCardDefinition cdef) {
             cdef.addLocalVariable(LV);	
             cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
             cdef.setVariablePT();

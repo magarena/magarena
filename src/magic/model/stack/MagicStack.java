@@ -123,8 +123,8 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
 
     public long getItemsId() {
         int idx = 0;
-        long[] input = new long[size() + 1];
-        for (MagicItemOnStack item : this) {
+        final long[] input = new long[size() + 1];
+        for (final MagicItemOnStack item : this) {
             input[idx] = item.getItemId();
             idx++;
         }

@@ -130,7 +130,7 @@ public class MagicPlayer implements MagicTarget {
     }
     
     public String getIdString() {
-        StringBuilder sb = new StringBuilder();
+        final StringBuilder sb = new StringBuilder();
         sb.append(keys[0]);
         for (int i = 1; i < keys.length; i++) {
             sb.append(' ');
@@ -476,7 +476,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 
 	@Override
-	public void setPreventDamage(int amount) {
+	public void setPreventDamage(final int amount) {
 		preventDamage=amount;
 	}
 

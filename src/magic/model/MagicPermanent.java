@@ -145,7 +145,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 	
 	public long getPermanentId() {
-        long[] input = {
+        final long[] input = {
             cardDefinition.getIndex(),
             stateFlags,
             damage,
@@ -574,9 +574,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public void checkState(final MagicGame game, final List<MagicAction> actions) {
 		// +1/+1 and -1/-1 counters cancel each other out.
-		int plusCounters=getCounters(MagicCounterType.PlusOne);
+		final int plusCounters=getCounters(MagicCounterType.PlusOne);
 		if (plusCounters>0) {
-			int minusCounters=getCounters(MagicCounterType.MinusOne);
+			final int minusCounters=getCounters(MagicCounterType.MinusOne);
 			if (minusCounters>0) {
 				final int amount=-Math.min(plusCounters,minusCounters);
 				actions.add(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));

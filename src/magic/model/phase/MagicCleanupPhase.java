@@ -19,14 +19,14 @@ public class MagicCleanupPhase extends MagicPhase {
 		return INSTANCE;
 	}
 	
-	private void cleanup(final MagicGame game) {
+	private static void cleanup(final MagicGame game) {
 		game.doAction(new MagicCleanupTurnTriggersAction());
 		for (final MagicPlayer player : game.getPlayers()) {
 			game.doAction(new MagicCleanupPlayerAction(player));
 		}
 	}
 	
-	private void nextTurn(final MagicGame game) {
+	private static void nextTurn(final MagicGame game) {
 		MagicPlayer turnPlayer=game.getTurnPlayer();
 		if (turnPlayer.getExtraTurns()>0) {
 			game.doAction(new MagicChangeExtraTurnsAction(turnPlayer,-1));

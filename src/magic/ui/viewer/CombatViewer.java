@@ -58,7 +58,7 @@ public class CombatViewer extends PermanentsViewer {
 	}
 
 	@Override
-	public Border getBorder(PermanentViewerInfo permanentInfo) {
+	public Border getBorder(final PermanentViewerInfo permanentInfo) {
 		return FontsAndBorders.getPlayerBorder(permanentInfo.visible);
 	}
 }

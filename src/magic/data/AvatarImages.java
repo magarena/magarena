@@ -34,7 +34,7 @@ public class AvatarImages {
 		return names;
 	}
 	
-	private PlayerAvatar loadAvatar(final File file) {
+	private static PlayerAvatar loadAvatar(final File file) {
         return new PlayerAvatar(FileIO.toImg(file, IconImages.MISSING));
 	}
 	

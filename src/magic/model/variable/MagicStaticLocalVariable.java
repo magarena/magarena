@@ -65,11 +65,11 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
         return controller.getCount(spiritOfTheHearth) == 0;
     }
 	
-	private int getOtherCount(final int cardDefinitionIndex,final MagicPermanent permanent,final int count) {
+	private static int getOtherCount(final int cardDefinitionIndex,final MagicPermanent permanent,final int count) {
 		return permanent.getCardDefinition().getIndex() != cardDefinitionIndex ? count : count - 1;
 	}
 	
-	private int getOtherCount(final int cardDefinitionIndex,final MagicPermanent permanent,final MagicPlayer controller) {
+	private static int getOtherCount(final int cardDefinitionIndex,final MagicPermanent permanent,final MagicPlayer controller) {
 		final int count = controller.getCount(cardDefinitionIndex);
 		return count == 0 ? 0 : getOtherCount(cardDefinitionIndex,permanent,count);
 	}
