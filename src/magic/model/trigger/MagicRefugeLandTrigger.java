@@ -14,15 +14,15 @@ public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
             permanent,
             player,
             MagicEvent.NO_DATA,
-            new MagicEventAction() {
-            @Override
-            public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choices) {
-                game.doAction(new MagicChangeLifeAction(player.map(game),1));
-            }},
+            this,
             player + " gains 1 life.");
 	}
+    @Override
+    public void executeEvent(
+        final MagicGame game,
+        final MagicEvent event,
+        final Object[] data,
+        final Object[] choices) {
+        game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+    }
 }
