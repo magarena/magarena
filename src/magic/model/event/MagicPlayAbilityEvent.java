@@ -6,20 +6,17 @@ import magic.model.MagicSource;
 import magic.model.action.MagicPlayAbilityAction;
 
 public class MagicPlayAbilityEvent extends MagicEvent {
-	public MagicPlayAbilityEvent(final MagicPermanent source) {
-		super(
-            source,
-            source.getController(),
-            MagicEvent.NO_DATA,
-            new MagicEventAction() {
-            @Override
-            public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-                game.doAction(new MagicPlayAbilityAction(source.map(game)));
-            }},
-            "");
+
+	private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+		
+		@Override
+		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+			
+			game.doAction(new MagicPlayAbilityAction((MagicPermanent)data[0]));
+		}
+	};
+	
+	public MagicPlayAbilityEvent(final MagicSource source) {
+		super(source,source.getController(),new Object[]{source},EVENT_ACTION,"");
 	}
 }
