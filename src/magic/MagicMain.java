@@ -27,7 +27,7 @@ public class MagicMain {
 		System.err.println("Data folder : "+gamePath);
 	}
 	
-	public static void main(String args[]) {	
+	public static void main(final String args[]) {	
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
 		initialize();
         SwingUtilities.invokeLater(new Runnable() {
@@ -53,12 +53,12 @@ public class MagicMain {
 	}
 	
 	public static void initialize() {
-        boolean madeGamePath = new File(getGamePath()).mkdir();
+        final boolean madeGamePath = new File(getGamePath()).mkdir();
         if (!madeGamePath) {
             System.err.println("Unable to create directory " + getGamePath());
         }
 
-        boolean madeModsPath = new File(getModsPath()).mkdir();
+        final boolean madeModsPath = new File(getModsPath()).mkdir();
         if (!madeModsPath) {
             System.err.println("Unable to create directory " + getModsPath());
         }
