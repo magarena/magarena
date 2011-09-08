@@ -7,7 +7,6 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicPumpTargetPicker;
@@ -27,18 +26,18 @@ public class Armadillo_Cloak {
 				new MagicEvent(
                     permanent,
                     player,
-                    MagicEvent.NO_DATA,
-                    new MagicEventAction() {
-                    @Override
-                    public void executeEvent(
-                            final MagicGame game,
-                            final MagicEvent event,
-                            final Object data[],
-                            final Object[] choiceResults) {
-                        game.doAction(new MagicChangeLifeAction(player.map(game),amount));
-                    }},
+                    new Object[]{player,amount},
+                    this,
                     player + "gains " + amount + " life."):
                 MagicEvent.NONE;
+		}
+		@Override
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
 		}
     };
 }

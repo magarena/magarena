@@ -17,6 +17,18 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicTriggerOnStack;
 
 public class Lightkeeper_of_Emeria {
+                    
+    private static final MagicEventAction KICKED = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choiceResults) {
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+        }
+    };
+
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -49,16 +61,7 @@ public class Lightkeeper_of_Emeria {
                     permanent,
                     player,
                     new Object[]{player,life},
-                    new MagicEventAction() {
-                        @Override
-                        public void executeEvent(
-                            final MagicGame game,
-                            final MagicEvent event,
-                            final Object[] data,
-                            final Object[] choiceResults) {
-                            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
-                        }
-                    },
+                    KICKED,
                     player + " gains " + life + " life."
                 );
                 game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));

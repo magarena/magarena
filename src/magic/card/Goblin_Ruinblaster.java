@@ -20,6 +20,22 @@ import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Goblin_Ruinblaster {
+    
+    private static final MagicEventAction KICKED = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choiceResults) {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent land) {
+                    game.doAction(new MagicDestroyAction(land));
+                }
+            });
+        }
+    };
+
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -50,20 +66,7 @@ public class Goblin_Ruinblaster {
 				final MagicEvent triggerEvent=new MagicEvent(permanent,player,
 					MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,new MagicDestroyTargetPicker(false),
 					MagicEvent.NO_DATA,
-                	new MagicEventAction() {
-                        @Override
-                        public void executeEvent(
-                            final MagicGame game,
-                            final MagicEvent event,
-                            final Object[] data,
-                            final Object[] choiceResults) {
-                            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
-                                public void doAction(final MagicPermanent land) {
-                                    game.doAction(new MagicDestroyAction(land));
-                                }
-                            });
-		                }
-	                },
+                    KICKED,
                     "Destroy target nonbasic land$."
                 );
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
