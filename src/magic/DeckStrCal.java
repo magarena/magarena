@@ -24,41 +24,41 @@ public class DeckStrCal {
     private static boolean parseArguments(final String[] args) {
         boolean validArgs = true;
         for (int i = 0; i < args.length; i += 2) {
-            String curr = args[i];
-            String next = args[i+1];
-            if (curr.equals("--games")) {
+            final String curr = args[i];
+            final String next = args[i+1];
+            if ("--games".equals(curr)) {
                 try { //parse CLI option
                     games = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! number of games not an integer");
                     validArgs = false;
                 }
-            } else if (curr.equals("--str1")) {
+            } else if ("--str1".equals(curr)) {
                 try { //parse CLI option
                     str1 = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! AI strength not an integer");
                     validArgs = false;
                 }
-            } else if (curr.equals("--str2")) {
+            } else if ("--str2".equals(curr)) {
                 try { //parse CLI option
                     str2 = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! AI strength not an integer");
                     validArgs = false;
                 }
-            } else if (curr.equals("--deck1")) {
+            } else if ("--deck1".equals(curr)) {
                 deck1 = next;
-            } else if (curr.equals("--deck2")) {
+            } else if ("--deck2".equals(curr)) {
                 deck2 = next;
-            } else if (curr.equals("--ai1")) {
+            } else if ("--ai1".equals(curr)) {
                 try { //parse CLI option
                     ai1 = MagicAIImpl.valueOf(next);
                 } catch (final IllegalArgumentException ex) {
                     System.err.println("Error: " + next + " is not valid AI");
                     validArgs = false;
                 }
-            } else if (curr.equals("--ai2")) {
+            } else if ("--ai2".equals(curr)) {
                 try { //parse CLI option
                     ai2 = MagicAIImpl.valueOf(next);
                 } catch (final IllegalArgumentException ex) {
@@ -126,7 +126,7 @@ public class DeckStrCal {
             System.exit(1);
         }
 
-        MagicTournament testTournament = setupTournament();
+        final MagicTournament testTournament = setupTournament();
         
         System.out.println(
                  "#deck1" +
