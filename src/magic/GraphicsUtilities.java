@@ -89,12 +89,12 @@ public class GraphicsUtilities {
      *    the {@code BILINEAR} hint is specified)
      * @return a scaled version of the original {@code BufferedImage}
      */
-    public static BufferedImage scale(BufferedImage img,
-                               int targetWidth,
-                               int targetHeight,
-                               Object hint,
-                               boolean higherQuality) {
-        int type = (img.getTransparency() == Transparency.OPAQUE) ?
+    public static BufferedImage scale(final BufferedImage img,
+                               final int targetWidth,
+                               final int targetHeight,
+                               final Object hint,
+                               final boolean higherQuality) {
+        final int type = (img.getTransparency() == Transparency.OPAQUE) ?
             BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB;
         BufferedImage ret = img;
         int w, h;
@@ -126,8 +126,8 @@ public class GraphicsUtilities {
                 }
             }
 
-            BufferedImage tmp = new BufferedImage(w, h, type);
-            Graphics2D g2 = tmp.createGraphics();
+            final BufferedImage tmp = new BufferedImage(w, h, type);
+            final Graphics2D g2 = tmp.createGraphics();
             g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, hint);
             g2.drawImage(ret, 0, 0, w, h, null);
             g2.dispose();
