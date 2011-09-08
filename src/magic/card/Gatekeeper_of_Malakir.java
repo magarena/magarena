@@ -20,7 +20,27 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicTriggerOnStack;
 
 public class Gatekeeper_of_Malakir {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+    private static final MagicEventAction KICKED = new MagicEventAction() {
+        @Override
+        public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object[] data,
+            final Object[] choiceResults) {
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+                public void doAction(final MagicPlayer opponent) {
+                    if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+                        game.addEvent(new MagicSacrificePermanentEvent(
+                            event.getPermanent(),
+                            game.getOpponent(event.getPlayer()),
+                            MagicTargetChoice.SACRIFICE_CREATURE));
+                    }
+                }
+            });
+        }
+    };
+
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player = cardOnStack.getController();
@@ -52,25 +72,7 @@ public class Gatekeeper_of_Malakir {
 					player,
 					MagicTargetChoice.NEG_TARGET_PLAYER,
 					MagicEvent.NO_DATA,
-                	new MagicEventAction() {
-                        @Override
-                        public void executeEvent(
-                            final MagicGame game,
-                            final MagicEvent event,
-                            final Object[] data,
-                            final Object[] choiceResults) {
-                        	event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
-                                public void doAction(final MagicPlayer opponent) {
-                        			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
-                        				game.addEvent(new MagicSacrificePermanentEvent(
-                                            cardOnStack.getCard(),
-                                            opponent,
-                                            MagicTargetChoice.SACRIFICE_CREATURE));
-                                    }
-                                }
-                			});
-		                }
-	                },
+                    KICKED,
                     "Target player$ sacrifices a creature."
                 );
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
