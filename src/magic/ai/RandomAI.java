@@ -17,7 +17,7 @@ public class RandomAI implements MagicAI {
         this(false);
     }
 
-    public RandomAI(boolean log) {
+    public RandomAI(final boolean log) {
         LOGGING = log || (System.getProperty("debug") != null);
     }
     
