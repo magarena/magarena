@@ -17,7 +17,7 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
     }
 	
 	/** Removes all messages from end to given index, inclusive. */
-	public void removeTo(final int toIndex) {
+	public synchronized void removeTo(final int toIndex) {
 		for (int index=size()-1;index>=toIndex;index--) {
 			remove(index);
 		}

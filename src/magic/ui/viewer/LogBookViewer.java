@@ -64,23 +64,24 @@ public class LogBookViewer extends JPanel {
 	}
 	
 	public void update() {
-
 		final int maxWidth=getWidth()-175;
-		
 		messagePanel.removeAll();
-		int index=logBook.size()-1;
-		boolean first=true;
-		for (int lines=MAX_LINES;lines>0&&index>=0;lines--,index--) {
-			
-			final MagicMessage message=logBook.get(index);
-			final MessagePanel panel=new MessagePanel(message,maxWidth);
-			if (first) {
-				first=false;
-			} else {
-				panel.setBorder(SEPARATOR_BORDER);
-			}
-			messagePanel.add(panel);
-		}
+
+        synchronized (logBook) {
+            int index=logBook.size()-1;
+            boolean first=true;
+            for (int lines=MAX_LINES;lines>0&&index>=0;lines--,index--) {
+                final MagicMessage message=logBook.get(index);
+                final MessagePanel panel=new MessagePanel(message,maxWidth);
+                if (first) {
+                    first=false;
+                } else {
+                    panel.setBorder(SEPARATOR_BORDER);
+                }
+                messagePanel.add(panel);
+            }
+        }
+
 		revalidate();
 		scrollPane.getVerticalScrollBar().setValue(0);
 	}	
