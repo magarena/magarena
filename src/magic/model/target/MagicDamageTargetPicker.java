@@ -13,13 +13,11 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
 	private final boolean noRegeration;
 	
 	public MagicDamageTargetPicker(final int amount,final boolean noRegeneration) {
-		
 		this.amount=amount;
 		this.noRegeration=noRegeneration;
 	}
 	
 	public MagicDamageTargetPicker(final int amount) {
-		
 		this(amount,false);
 	}
 
