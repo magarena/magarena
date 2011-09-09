@@ -705,6 +705,19 @@ power=2
 toughness=1
 timing=main
 
+>Fallowsage
+image=http://magiccards.info/scans/en/lw/63.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+color=u
+converted=4
+cost={3}{U}
+power=2
+toughness=2
+timing=fmain
+
 >Fiery Hellhound
 image=http://magiccards.info/scans/en/m12/130.jpg
 value=3
@@ -916,6 +929,19 @@ cost={G}{W}{U}
 power=3
 toughness=3
 ability=flying
+timing=fmain
+
+>Judge of Currents
+image=http://magiccards.info/scans/en/lw/22.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+color=w
+converted=2
+cost={1}{W}
+power=1
+toughness=1
 timing=fmain
 
 >Kor Sanctifiers
