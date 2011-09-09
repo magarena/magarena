@@ -20,7 +20,7 @@ public class Creakwood_Liege {
                         player,
                         new Object[]{player},
                         this,
-                        player + " put a 1/1 black and green Worm creature token onto the battlefield."):
+                        player + " puts a 1/1 black and green Worm creature token onto the battlefield."):
                 MagicEvent.NONE;
 		}
 		@Override

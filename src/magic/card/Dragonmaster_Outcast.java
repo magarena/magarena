@@ -21,7 +21,7 @@ public class Dragonmaster_Outcast {
                         player,
                         new Object[]{player},
                         this,
-                        player + " put a 5/5 red Dragon creature token with flying onto the battlefield."):
+                        player + " puts a 5/5 red Dragon creature token with flying onto the battlefield."):
                 MagicEvent.NONE;
 		}
 		@Override

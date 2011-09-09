@@ -19,7 +19,7 @@ public class Awakening_Zone {
                         player,
                         new Object[]{player},
                         this,
-                        player + " put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. "+
+                        player + " puts a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. "+
                         "It has \"Sacrifice this creature: Add {1} to your mana pool.\""):
                 MagicEvent.NONE;
 		}

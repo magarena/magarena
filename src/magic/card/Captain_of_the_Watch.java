@@ -18,7 +18,7 @@ public class Captain_of_the_Watch {
                     player,
                     new Object[]{player},
                     this,
-                    player + " put three 1/1 white Soldier creature tokens onto the battlefield.");
+                    player + " puts three 1/1 white Soldier creature tokens onto the battlefield.");
 		}
 		@Override
 		public void executeEvent(
