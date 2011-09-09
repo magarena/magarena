@@ -202,12 +202,22 @@ public class MagicTargetChoice extends MagicChoice {
             final MagicTargetFilter targetFilter,
             final boolean targeted,
             final MagicTargetHint hint,
-            final String targetDesciption) {
-		super("Choose "+targetDesciption+'.');
+            final String targetDescription) {
+		super("Choose "+targetDescription+'.');
 		this.targetFilter=targetFilter;
 		this.targeted=targeted;
 		this.targetHint=hint;
-		this.targetDescription=targetDesciption;
+		this.targetDescription=targetDescription;
+	}
+	
+    public MagicTargetChoice(
+            final MagicTargetChoice copy,
+            final boolean targeted) {
+		super("Choose "+copy.targetDescription+'.');
+		this.targetFilter=copy.targetFilter;
+		this.targeted=targeted;
+		this.targetHint=copy.targetHint;
+		this.targetDescription=copy.targetDescription;
 	}
 	
 	public final String getTargetDescription() {
