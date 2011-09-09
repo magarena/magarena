@@ -6021,6 +6021,18 @@ converted=4
 cost={2}{B}{B}
 timing=removal
 
+>Uncontrolled Infestation
+image=http://magiccards.info/scans/en/sc/108.jpg
+value=2
+removal=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+
 >Elephant Guide
 image=http://magiccards.info/scans/en/gvl/18.jpg
 value=4
