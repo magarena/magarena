@@ -262,32 +262,26 @@ public class MagicCardDefinition {
 	}
 	
 	public boolean hasType(final MagicType type) {
-		
 		return (typeFlags&type.getMask())!=0;
 	}
 	
 	public boolean isBasic() {
-		
 		return hasType(MagicType.Basic);
 	}
 	
 	public boolean isLand() {
-		
 		return hasType(MagicType.Land);
 	}
 	
 	public boolean isCreature() {
-		
 		return hasType(MagicType.Creature);
 	}
 	
 	public boolean isArtifact() {
-
 		return hasType(MagicType.Artifact);
 	}
 		
 	public boolean isEquipment() {
-		
 		return isArtifact()&&hasSubType(MagicSubType.Equipment);
 	}
 	
@@ -300,12 +294,10 @@ public class MagicCardDefinition {
 	}
 	
 	public boolean isSpell() {
-		
 		return hasType(MagicType.Instant)||hasType(MagicType.Sorcery);
 	}
 
 	public boolean usesStack() {
-		
 		return !isLand();
 	}
 	
