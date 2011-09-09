@@ -11,7 +11,9 @@ import magic.model.action.MagicGainControlAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicActivation;
+import magic.model.event.MagicPlayAuraEvent;
 import magic.model.target.MagicTarget;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
 
@@ -596,7 +598,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicDestroyAction(this));
 			}
 		} else if (cardDefinition.isAura()) {
-			if (!enchantedCreature.isCreature() || enchantedCreature.hasProtectionFrom(game,this)) {
+            final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cardDefinition.getCardEvent();
+            //not targeting since Aura is already attached
+            final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
+			if (!enchantedCreature.isValid() || !game.isLegalTarget(getController(),this,tchoice,enchantedCreature)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
