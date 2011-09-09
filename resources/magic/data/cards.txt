@@ -1303,6 +1303,19 @@ power=1
 toughness=2
 timing=main
 
+>Surgespanner
+image=http://magiccards.info/scans/en/lw/92.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+color=u
+converted=4
+cost={2}{U}{U}
+power=2
+toughness=2
+timing=main
+
 >Tormented Soul
 image=http://magiccards.info/scans/en/m12/114.jpg
 value=2
