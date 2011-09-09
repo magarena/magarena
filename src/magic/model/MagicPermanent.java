@@ -601,7 +601,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cardDefinition.getCardEvent();
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
-			if (!enchantedCreature.isValid() || !game.isLegalTarget(getController(),this,tchoice,enchantedCreature)) {
+			if (!enchantedCreature.isValid() || 
+                !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
+                enchantedCreature.hasProtectionFrom(game,this)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
