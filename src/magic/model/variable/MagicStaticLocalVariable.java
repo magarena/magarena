@@ -20,6 +20,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int akromasMemorial;
 	private static int angelicShield;
 	private static int asceticism;
+	private static int ashenmoorLiege;
 	private static int balefireLiege;
 	private static int bellowingTanglewurm;
 	private static int bloodmarkMentor;
@@ -147,6 +148,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	
 		final int colorFlags=permanent.getColorFlags();
 		if (MagicColor.Black.hasColor(colorFlags)) {
+			both += getOtherCount(ashenmoorLiege,permanent,controller);
 			both += getOtherCount(creakwoodLiege,permanent,controller);
 			both += getOtherCount(deathbringerLiege,permanent,controller);
 			both += getOtherCount(glenElendraLiege,permanent,controller);
@@ -162,6 +164,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 			both += getOtherCount(tolsimirWolfblood,permanent,controller);			
 		}
 		if (MagicColor.Red.hasColor(colorFlags)) {
+			both += getOtherCount(ashenmoorLiege,permanent,controller);
 			both += getOtherCount(boartuskLiege,permanent,controller);
 			both += getOtherCount(balefireLiege,permanent,controller);
 		}
@@ -260,6 +263,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		akromasMemorial=definitions.getCard("Akroma's Memorial").getIndex();
 		angelicShield=definitions.getCard("Angelic Shield").getIndex();
 		asceticism=definitions.getCard("Asceticism").getIndex();
+		ashenmoorLiege=definitions.getCard("Ashenmoor Liege").getIndex();
 		balefireLiege=definitions.getCard("Balefire Liege").getIndex();
 		bellowingTanglewurm=definitions.getCard("Bellowing Tanglewurm").getIndex();
 		bloodmarkMentor=definitions.getCard("Bloodmark Mentor").getIndex();
