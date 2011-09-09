@@ -80,6 +80,7 @@ Elephant.jpg;http://magiccards.info/extras/token/worldwake/elephant.jpg
 Faerie Rogue.jpg;http://magiccards.info/extras/token/morningtide/faerie-rogue.jpg
 Germ.jpg;http://magiccards.info/extras/token/mirrodin-besieged/germ.jpg
 Goblin Soldier.jpg;http://magiccards.info/extras/token/eventide/goblin-soldier.jpg
+Merfolk Wizard.jpg;http://magiccards.info/extras/token/lorwyn/merfolk-wizard.jpg
 Ogre.jpg;http://magiccards.info/extras/token/worldwake/ogre.jpg
 Saproling.jpg;http://magiccards.info/extras/token/tenth-edition/saproling.jpg
 Snake.jpg;http://magiccards.info/extras/token/zendikar/snake.jpg

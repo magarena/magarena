@@ -1290,6 +1290,19 @@ toughness=5
 ability=reach
 timing=main
 
+>Stonybrook Schoolmaster
+image=http://magiccards.info/scans/en/mt/25.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+color=w
+converted=3
+cost={2}{W}
+power=1
+toughness=2
+timing=main
+
 >Tormented Soul
 image=http://magiccards.info/scans/en/m12/114.jpg
 value=2

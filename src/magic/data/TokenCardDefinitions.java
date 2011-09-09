@@ -244,7 +244,21 @@ public class TokenCardDefinitions {
 			setToughness(3);
 			setAbility(MagicAbility.Flying);
 		}
-	};	
+	};
+	
+	public static final MagicCardDefinition MERFOLK_WIZARD_TOKEN_CARD = new MagicCardDefinition("Merfolk Wizard") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Merfolk","Wizard"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Blue);
+			setColoredType();
+			setPower(1);
+			setToughness(1);
+		}
+	};
 	
 	public static final MagicCardDefinition APE_TOKEN_CARD=new MagicCardDefinition("Ape","Ape") {
 		public void initialize() {
@@ -468,6 +482,7 @@ public class TokenCardDefinitions {
 		FAERIE_ROGUE_TOKEN_CARD,
 		GRIFFIN_TOKEN_CARD,
 		BIRD_TOKEN_CARD,
+		MERFOLK_WIZARD_TOKEN_CARD,
 		APE_TOKEN_CARD,
 		BEAST3_TOKEN_CARD,
 		BEAST4_TOKEN_CARD,
