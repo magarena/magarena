@@ -596,7 +596,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicDestroyAction(this));
 			}
 		} else if (cardDefinition.isAura()) {
-			if (!enchantedCreature.isCreature() || enchantedCreature.hasProtectionFrom(game,this)) {
+			if (!enchantedCreature.isValid() || enchantedCreature.hasProtectionFrom(game,this)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
