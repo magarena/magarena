@@ -5972,7 +5972,6 @@ cost={W}
 ability=lifelink
 timing=aura
 
-
 >Quest for Renewal
 image=http://magiccards.info/scans/en/wwk/110.jpg
 value=3
@@ -5982,6 +5981,7 @@ color=g
 converted=2
 cost={1}{G}
 timing=enchantment
+
 >Elephant Guide
 image=http://magiccards.info/scans/en/gvl/18.jpg
 value=4
