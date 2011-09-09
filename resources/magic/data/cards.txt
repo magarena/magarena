@@ -5972,17 +5972,6 @@ cost={W}
 ability=lifelink
 timing=aura
 
->Brink of Disaster
-image=http://magiccards.info/scans/en/m12/84.jpg
-value=3
-removal=4
-rarity=C
-type=Enchantment
-subtype=Aura
-color=b
-converted=4
-cost={2}{B}{B}
-timing=removal
 
 >Quest for Renewal
 image=http://magiccards.info/scans/en/wwk/110.jpg
@@ -5993,7 +5982,6 @@ color=g
 converted=2
 cost={1}{G}
 timing=enchantment
-
 >Elephant Guide
 image=http://magiccards.info/scans/en/gvl/18.jpg
 value=4
