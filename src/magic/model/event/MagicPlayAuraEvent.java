@@ -21,6 +21,10 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 		this.targetChoice=targetChoice;
 		this.targetPicker=targetPicker;
 	}
+
+    public MagicTargetChoice getTargetChoice() {
+        return targetChoice;
+    }
 	
 	@Override
 	public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
