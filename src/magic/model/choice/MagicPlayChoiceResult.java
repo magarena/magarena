@@ -33,9 +33,9 @@ public class MagicPlayChoiceResult implements MagicMappable {
 	
 	@Override
 	public String toString() {
-		if (this==PASS)
+		if (this==PASS) {
 			return "pass";
-        else if (this==SKIP) {
+        } else if (this==SKIP) {
 			return "skip";
 		} else {
 			return source.getName();
