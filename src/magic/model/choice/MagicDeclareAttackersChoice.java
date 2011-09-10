@@ -82,7 +82,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
 			}		
 		} 
 
-		if (validChoices.isEmpty()&&game.canSkipSingleChoice()) {
+		if (validChoices.isEmpty() && MagicGame.canSkipSingleChoice()) {
 			return new Object[]{result};
 		}
 		

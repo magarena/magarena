@@ -87,8 +87,8 @@ public class MagicTournament {
 		return startPlayer;
 	}
 
-    public void setAIs(final MagicAI[] ais) {
-    	this.ais = ais;
+    public void setAIs(final MagicAI[] aAIs) {
+    	this.ais = aAIs;
     }
 
     public MagicAI[] getAIs() {
@@ -202,8 +202,8 @@ public class MagicTournament {
 		return playerDefinitions;
 	}
 	
-	public void setPlayers(final MagicPlayerDefinition playerDefinitions[]) {
-		this.playerDefinitions=playerDefinitions;
+	public void setPlayers(final MagicPlayerDefinition aPlayerDefinitions[]) {
+		this.playerDefinitions=aPlayerDefinitions;
 	}
 	
 	private void buildDecks() {

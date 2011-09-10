@@ -38,10 +38,10 @@ public class MagicCardChoice extends MagicChoice {
             final MagicCardList hand,
 			final MagicCard cards[],
             final int count,
-            final int amount,
+            final int aAmount,
             final int index) {
 
-		if (count == amount) {
+		if (count == aAmount) {
 			options.add(new MagicCardChoiceResult(cards));
 			return;
 		}		
@@ -51,8 +51,8 @@ public class MagicCardChoice extends MagicChoice {
 		}
 
 		cards[count]=hand.get(index);
-		createOptions(options,hand,cards,count+1,amount,index+1);		
-		createOptions(options,hand,cards,count,amount,index+1);
+		createOptions(options,hand,cards,count+1,aAmount,index+1);		
+		createOptions(options,hand,cards,count,aAmount,index+1);
 	}
 	
 	@Override

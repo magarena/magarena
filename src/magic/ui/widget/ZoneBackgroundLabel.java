@@ -35,21 +35,21 @@ public class ZoneBackgroundLabel extends JLabel {
 		handY=rect.height;
 	}
 	
-	private void paintZoneTile(final Graphics g,final BufferedImage image,final Rectangle rect) {
-		final int imageWidth=image.getWidth();
-		final int imageHeight=image.getHeight();
+	private void paintZoneTile(final Graphics g,final BufferedImage aImage,final Rectangle rect) {
+		final int imageWidth=aImage.getWidth();
+		final int imageHeight=aImage.getHeight();
 		final int x2=rect.x+rect.width;
 		final int y2=rect.y+rect.height;
 		for (int y=rect.y;y<y2;y+=imageHeight) {
 			for (int x=rect.x;x<x2;x+=imageWidth) {
-				g.drawImage(image,x,y,this);
+				g.drawImage(aImage,x,y,this);
 			}
 		}
 	}
 	
-	private void paintZoneStretch(final Graphics g,final BufferedImage image,final Rectangle rect) {
-		final int iw=image.getWidth();
-		final int ih=image.getHeight();
+	private void paintZoneStretch(final Graphics g,final BufferedImage aImage,final Rectangle rect) {
+		final int iw=aImage.getWidth();
+		final int ih=aImage.getHeight();
 		final int iw2=ih*rect.width/rect.height;
 		final Rectangle imageRect;
 		if (iw2<=iw) {
@@ -58,15 +58,15 @@ public class ZoneBackgroundLabel extends JLabel {
 			final int ih2=iw*rect.height/rect.width;			
 			imageRect=new Rectangle(0,(ih-ih2)/2,iw,ih2);
 		}	
-		g.drawImage(image,rect.x,rect.y,rect.x+rect.width,rect.y+rect.height,
+		g.drawImage(aImage,rect.x,rect.y,rect.x+rect.width,rect.y+rect.height,
 				imageRect.x,imageRect.y,imageRect.x+imageRect.width,imageRect.y+imageRect.height,this);
 	}
 	
-	private void paintZone(final Graphics g,final BufferedImage image,final Rectangle rect,final boolean stretch) {
+	private void paintZone(final Graphics g,final BufferedImage aImage,final Rectangle rect,final boolean stretch) {
 		if (stretch) {
-			paintZoneStretch(g,image,rect);
+			paintZoneStretch(g,aImage,rect);
 		} else {
-			paintZoneTile(g,image,rect);
+			paintZoneTile(g,aImage,rect);
 		}
 	}
 	

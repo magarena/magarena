@@ -17,7 +17,7 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object choiceResults[]) {
 
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.payManaCost(game,(MagicPlayer)data[0],choiceResults,1);
+				MagicEvent.payManaCost(game,(MagicPlayer)data[0],choiceResults,1);
 			} else {
 				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.OGRE_TOKEN_CARD));
 			}

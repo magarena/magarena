@@ -54,7 +54,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 	}
 
 	public static String getTitle() {
-		
 		return "Stack";
 	}
 	

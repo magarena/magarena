@@ -85,8 +85,8 @@ public class DeckViewer extends JPanel {
 		this.nameFont=nameFont;
 	}
 		
-	public void changePlayer(final MagicPlayerDefinition player) {
-		this.player=player;
+	public void changePlayer(final MagicPlayerDefinition aPlayer) {
+		this.player=aPlayer;
 		update();
 	}
 	

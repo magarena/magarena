@@ -30,9 +30,9 @@ public class MagicSourceManaActivation {
 	
 	public MagicManaType canProduce(final MagicCostManaType costManaType) {
 		if (available) {
-			for (final MagicManaType manaType : costManaType.getTypes()) {
-				if (activations[manaType.ordinal()]!=null) {
-					return manaType;
+			for (final MagicManaType tManaType : costManaType.getTypes()) {
+				if (activations[tManaType.ordinal()]!=null) {
+					return tManaType;
 				}
 			}
 		}		
@@ -41,8 +41,8 @@ public class MagicSourceManaActivation {
 	
 	public void produce(final MagicGame game,final MagicCostManaType costManaType) {
 		MagicManaActivation bestManaActivation=null;				
-		for (final MagicManaType manaType : costManaType.getTypes()) {
-			final MagicManaActivation manaActivation=activations[manaType.ordinal()];
+		for (final MagicManaType tManaType : costManaType.getTypes()) {
+			final MagicManaActivation manaActivation=activations[tManaType.ordinal()];
 			if (manaActivation!=null&&(bestManaActivation==null||bestManaActivation.getWeight()>manaActivation.getWeight())) {
 				bestManaActivation=manaActivation;
 			}

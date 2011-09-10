@@ -83,7 +83,7 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
 		cardLayout.show(cardPanel,Integer.toString(selectedTab));
 		switch (selectedTab) {
 			case 0:
-				titleBar.setText(stackViewer.getTitle());
+				titleBar.setText(StackViewer.getTitle());
 				break;
 			case 1:
 				titleBar.setText(combatViewer.getTitle());

@@ -474,15 +474,15 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return cardDefinition.getStaticType().getScore(game,this);
 	}
 	
-	public void setCached(final MagicGame game,final boolean cached) {
-		if (cached) {
+	public void setCached(final MagicGame game,final boolean aCached) {
+		if (aCached) {
 			cachedTurnPowerToughness=getPowerToughness(game,true);
 			cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
 			cachedSubTypeFlags=getSubTypeFlags();
 			cachedTypeFlags=getTypeFlags();
 			cachedColorFlags=getColorFlags();
 		} 
-        this.cached=cached;
+        this.cached=aCached;
 	}
 	
 	public int getDamage() {

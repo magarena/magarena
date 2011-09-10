@@ -54,7 +54,7 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 				gameViewer.setTitle(titleBar);
 				break;
 			case 1:
-				tournamentViewer.setTitle(titleBar);
+				TournamentViewer.setTitle(titleBar);
 				break;
 		}		
 	}

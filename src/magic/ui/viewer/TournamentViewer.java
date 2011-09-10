@@ -28,11 +28,8 @@ public class TournamentViewer extends TexturedPanel {
 	private final MagicTournament tournament;
 	
 	public TournamentViewer(final MagicTournament tournament) {
-		
 		this.tournament=tournament;
-		
 		setLayout(new BorderLayout());
-
 		add(createProgressPanel(),BorderLayout.CENTER);
 	}
 		
@@ -87,7 +84,6 @@ public class TournamentViewer extends TexturedPanel {
 	}
 	
 	public static void setTitle(final TitleBar titleBar) {
-	
 		titleBar.setText(TITLE);
 		titleBar.setIcon(null);
 	}

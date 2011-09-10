@@ -112,7 +112,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 		final MagicBuilderManaCost builderCost=new MagicBuilderManaCost();
 		builderCost.addTypes(costManaTypes);
 		final MagicPayManaCostResultBuilder builder=new MagicPayManaCostResultBuilder(game,player,builderCost);
-		final boolean canSkip=game.canSkipSingleManaChoice();
+		final boolean canSkip = MagicGame.canSkipSingleManaChoice();
 		
 		for (final MagicCostManaType costManaType : costManaTypes) {
 

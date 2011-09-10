@@ -167,8 +167,8 @@ public class MagicManaCost {
 		}
 	}
 			
-	public void setText(final String costText) {
-		this.costText=costText;
+	public void setText(final String aCostText) {
+		this.costText=aCostText;
 	}
 	
 	public String getText() {
@@ -286,24 +286,24 @@ public class MagicManaCost {
 		return builderCost;
 	}
 	
-	public void addTo(final MagicBuilderManaCost builderCost) {
+	public void addTo(final MagicBuilderManaCost aBuilderCost) {
 		
 		for (int index=0;index<typeCount;index++) {
-			builderCost.addType(types[index],amounts[index]);
+			aBuilderCost.addType(types[index],amounts[index]);
 		}
 		if (hasX) {
-			builderCost.setHasX();
+			aBuilderCost.setHasX();
 		}	
-		builderCost.compress();
+		aBuilderCost.compress();
 	}
 	
-	public void addTo(final MagicBuilderManaCost builderCost,final int x) {
+	public void addTo(final MagicBuilderManaCost aBuilderCost,final int x) {
 		
 		for (int index=0;index<typeCount;index++) {
-			builderCost.addType(types[index],amounts[index]);
+			aBuilderCost.addType(types[index],amounts[index]);
 		}
-		builderCost.addType(MagicCostManaType.Colorless,x);
-		builderCost.compress();
+		aBuilderCost.addType(MagicCostManaType.Colorless,x);
+		aBuilderCost.compress();
 	}
 	
 	public static MagicManaCost createCost(final String costText) {

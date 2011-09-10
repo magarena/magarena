@@ -433,8 +433,8 @@ public class MagicCardDefinition {
 
 		final int length=basicText.length();
 		final List<MagicManaType> manaTypes=new ArrayList<MagicManaType>(length+1);
-		for (int index=0;index<length;index++) {
-			manaTypes.add(MagicColor.getColor(basicText.charAt(index)).getManaType());
+		for (int i=0;i<length;i++) {
+			manaTypes.add(MagicColor.getColor(basicText.charAt(i)).getManaType());
 		}
 		manaTypes.add(MagicManaType.Colorless);
 		addManaActivation(new MagicTapManaActivation(manaTypes,0));

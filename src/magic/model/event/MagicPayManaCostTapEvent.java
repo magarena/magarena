@@ -15,7 +15,7 @@ public class MagicPayManaCostTapEvent extends MagicEvent {
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
 			
-			event.payManaCost(game,(MagicPlayer)data[0],choiceResults,0);
+			MagicEvent.payManaCost(game,(MagicPlayer)data[0],choiceResults,0);
 			game.doAction(new MagicTapAction((MagicPermanent)data[1],true));
 		}		
 	};

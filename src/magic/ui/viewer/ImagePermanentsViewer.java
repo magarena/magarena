@@ -63,15 +63,15 @@ public class ImagePermanentsViewer extends JPanel {
 		}		
 	}
 
-	private int calculatePositions(final List<ImagePermanentViewer> viewers) {
+	private int calculatePositions(final List<ImagePermanentViewer> aViewers) {
 		int currentRow=1;
 		int x=0;
 		int y=0;
 		int maxWidth=0;
 		int rowHeight=0;
-		int prevPosition=viewers.get(0).getPosition();
+		int prevPosition=aViewers.get(0).getPosition();
 
-		for (final ImagePermanentViewer viewer : viewers) {
+		for (final ImagePermanentViewer viewer : aViewers) {
 		
 			if (currentRow!=viewer.getLogicalRow()) {
 				currentRow++;
@@ -105,7 +105,7 @@ public class ImagePermanentsViewer extends JPanel {
 			scaleMult=scaleDiv/2;
 		}
 		
-		for (final ImagePermanentViewer viewer : viewers) {
+		for (final ImagePermanentViewer viewer : aViewers) {
 			final Point point=viewer.getLogicalPosition();
 			viewer.setLocation((point.x*scaleMult)/scaleDiv,(point.y*scaleMult)/scaleDiv);
 			final Dimension size=viewer.getLogicalSize();
@@ -115,20 +115,20 @@ public class ImagePermanentsViewer extends JPanel {
 		return (1000*scaleMult)/scaleDiv;
 	}
 
-	private void calculateOptimalPositions(final List<ImagePermanentViewer> viewers) {
-		final int size=viewers.size();
+	private void calculateOptimalPositions(final List<ImagePermanentViewer> aViewers) {
+		final int size=aViewers.size();
 		if (size==0) {
 			return;
 		} else if (size<7) {
-			divideOverOneRow(viewers);
-			calculatePositions(viewers);
+			divideOverOneRow(aViewers);
+			calculatePositions(aViewers);
 		} else {			
-			divideOverOneRow(viewers);
-			final int scale=calculatePositions(viewers);
-			divideOverTwoRows(viewers);
-			if (calculatePositions(viewers)<=scale) {
-				divideOverOneRow(viewers);
-				calculatePositions(viewers);
+			divideOverOneRow(aViewers);
+			final int scale=calculatePositions(aViewers);
+			divideOverTwoRows(aViewers);
+			if (calculatePositions(aViewers)<=scale) {
+				divideOverOneRow(aViewers);
+				calculatePositions(aViewers);
 			}
 		} 
 	}
@@ -152,8 +152,8 @@ public class ImagePermanentsViewer extends JPanel {
 		return controller;
 	}
 	
-	public void showValidChoices(final Set<Object> validChoices) {
-		this.validChoices=validChoices;
+	public void showValidChoices(final Set<Object> aValidChoices) {
+		this.validChoices=aValidChoices;
 		for (final ImagePermanentViewer viewer : viewers) {
 			viewer.repaint();
 		}

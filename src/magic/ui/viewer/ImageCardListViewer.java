@@ -98,9 +98,9 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		return -1;
 	}
 		
-	public void setCardList(final MagicCardList cardList,final boolean showInfo) {
-		final List<Point> cardPoints=new ArrayList<Point>();
-		final int size=cardList.size();
+	public void setCardList(final MagicCardList aCardList,final boolean aShowInfo) {
+		final List<Point> tCardPoints=new ArrayList<Point>();
+		final int size=aCardList.size();
 		final int cardWidth=CARD_WIDTH*size+(size-1)*SPACING;			
 		int width=getWidth();
 		if (cardWidth<width||size==1) {
@@ -108,19 +108,19 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			final int step=CARD_WIDTH+SPACING;	
 			for (int index=0;index<size;index++) {
 				
-				cardPoints.add(new Point(x,1));
+				tCardPoints.add(new Point(x,1));
 				x+=step;
 			}
 		} else {
 			width-=CARD_WIDTH;
 			for (int index=0;index<size;index++) {
 
-				cardPoints.add(new Point((width*index)/(size-1),1));
+				tCardPoints.add(new Point((width*index)/(size-1),1));
 			}
 		}
-		this.cardList=cardList;
-		this.cardPoints=cardPoints;
-		this.showInfo=showInfo;
+		this.cardList=aCardList;
+		this.cardPoints=tCardPoints;
+		this.showInfo=aShowInfo;
 	}
 
 	@Override
@@ -188,8 +188,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 	}
 
 	@Override
-	public void showValidChoices(final Set<Object> validChoices) {
-		this.validChoices=validChoices;
+	public void showValidChoices(final Set<Object> aValidChoices) {
+		this.validChoices=aValidChoices;
 		repaint();
 	}
 }

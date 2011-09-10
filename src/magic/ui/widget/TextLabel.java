@@ -57,10 +57,10 @@ public class TextLabel extends JPanel {
 		layoutComponents();
 	}
 	
-	public void setColors(final Color textColor,final Color choiceColor) {
+	public void setColors(final Color aTextColor,final Color aChoiceColor) {
 		
-		this.textColor=textColor;
-		this.choiceColor=choiceColor;
+		this.textColor=aTextColor;
+		this.choiceColor=aChoiceColor;
 	}
 			
 	private void addComponent(final TComponent component) {

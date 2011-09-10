@@ -8,8 +8,8 @@ public class MagicSingleActivationCondition implements MagicCondition {
 	private long actId;
 
 	/** This must be set by the activation. */
-	public void setActivation(final long actId) {
-		this.actId = actId;
+	public void setActivation(final long aActId) {
+		this.actId = aActId;
 	}
 
 	@Override

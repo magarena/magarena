@@ -61,9 +61,9 @@ public abstract class AbstractTheme implements Theme {
 		addToTheme(VALUE_POPUP_OPACITY,80);
 	}
 	
-	protected void addToTheme(final String name,final Object value) {
+	protected void addToTheme(final String aName,final Object value) {
 		
-		themeMap.put(name,value);
+		themeMap.put(aName,value);
 	}
 	
 	@Override
@@ -78,9 +78,9 @@ public abstract class AbstractTheme implements Theme {
 	}
 
 	@Override
-	public BufferedImage getTexture(final String name) {
+	public BufferedImage getTexture(final String aName) {
 
-		final Object value=themeMap.get(name);
+		final Object value=themeMap.get(aName);
 		return value==null?IconImages.MISSING:(BufferedImage)value;
 	}
 
@@ -97,14 +97,14 @@ public abstract class AbstractTheme implements Theme {
 	}
 	
 	@Override
-	public ImageIcon getIcon(final String name) {
-		final Object value=themeMap.get(name);
+	public ImageIcon getIcon(final String aName) {
+		final Object value=themeMap.get(aName);
 		return value==null?IconImages.MISSING2:(ImageIcon)value;
 	}
 
 	@Override
-	public Color getColor(final String name) {
-		final Object value=themeMap.get(name);
+	public Color getColor(final String aName) {
+		final Object value=themeMap.get(aName);
 		return value==null?Color.BLACK:(Color)value;
 	}
 
@@ -124,8 +124,8 @@ public abstract class AbstractTheme implements Theme {
 	}
 
 	@Override
-	public int getValue(final String name) {
-		final Object value=themeMap.get(name);
+	public int getValue(final String aName) {
+		final Object value=themeMap.get(aName);
 		return value==null?0:(Integer)value;
 	}
 	

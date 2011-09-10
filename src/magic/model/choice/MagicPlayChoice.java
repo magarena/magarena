@@ -118,7 +118,7 @@ public class MagicPlayChoice extends MagicChoice {
 		final Set<Object> validChoices = new HashSet<Object>();
         addValidChoices(game, player, false, validChoices);
 	
-        if (validChoices.isEmpty() && game.canSkipSingleChoice()) {
+        if (validChoices.isEmpty() && MagicGame.canSkipSingleChoice()) {
             boolean skip = true;
 
             //if AI blocks, don't skip priority so that user can observe how the AI is blocking

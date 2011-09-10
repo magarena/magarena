@@ -253,8 +253,8 @@ public class MagicPlayer implements MagicTarget {
 		activationMap.addActivations(card);
 	}
 	
-	public void addCardToHand(final MagicCard card,final int index) {
-		hand.add(index,card);
+	public void addCardToHand(final MagicCard card,final int aIndex) {
+		hand.add(aIndex,card);
 		activationMap.addActivations(card);
 	}
 		
@@ -281,7 +281,7 @@ public class MagicPlayer implements MagicTarget {
 		}
 
         //library order depends on player index, game no, random seed
-        final long[] keys = {
+        final long[] tKeys = {
             2 * index - 1,
             MagicGame.getCount(),
             (System.getProperty("rndSeed") != null) ? 
@@ -289,7 +289,7 @@ public class MagicPlayer implements MagicTarget {
                 System.currentTimeMillis()
         };
 
-        final long seed = magic.MurmurHash3.hash(keys);
+        final long seed = magic.MurmurHash3.hash(tKeys);
 
 		if (library.useSmartShuffle()) {
 			library.smartShuffle(seed);
@@ -420,16 +420,16 @@ public class MagicPlayer implements MagicTarget {
 		return getManaActivationsCount(game)-builderCost.getMinimumAmount()-cost.getConvertedCost();
 	}
 
-	public void setNrOfAttackers(final int attackers) {
-		this.attackers=attackers;
+	public void setNrOfAttackers(final int aAttackers) {
+		this.attackers=aAttackers;
 	}
 	
 	public int getNrOfAttackers() {
 		return attackers;
 	}
 	
-    public void setNrOfBlockers(final int blockers) {
-		this.blockers=blockers;
+    public void setNrOfBlockers(final int aBlockers) {
+		this.blockers=aBlockers;
 	}
 	
 	public int getNrOfBlockers() {

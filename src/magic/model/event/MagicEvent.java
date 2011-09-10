@@ -165,9 +165,9 @@ public class MagicEvent implements MagicCopyable {
 	}
 
 	public final String getChoiceDescription() {
-		final String description=getDescription(MagicEvent.NO_CHOICE_RESULTS);
-		if (description.length() > 0) {
-			return description;
+		final String tDescription=getDescription(MagicEvent.NO_CHOICE_RESULTS);
+		if (tDescription.length() > 0) {
+			return tDescription;
 		}
 		return hasChoice()?choice.getDescription():"";
 	}
@@ -271,10 +271,10 @@ public class MagicEvent implements MagicCopyable {
 		}
 	}
 	
-	public final void payManaCost(final MagicGame game,final MagicPlayer player,final Object choiceResults[]) {
+	public final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object choiceResults[]) {
 		final int manaIndex=getManaChoiceResultIndex();
 		if (manaIndex>=0) {
-			payManaCost(game,player,choiceResults,manaIndex);
+			payManaCost(game,aPlayer,choiceResults,manaIndex);
 		}
 	}
 	

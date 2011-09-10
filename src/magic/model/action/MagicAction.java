@@ -8,9 +8,9 @@ public abstract class MagicAction {
 	private MagicPlayer scorePlayer;
 	private int score=0;
 	
-	protected final void setScore(final MagicPlayer scorePlayer, final int score) {
-		this.scorePlayer=scorePlayer;
-		this.score=score;
+	protected final void setScore(final MagicPlayer aScorePlayer, final int aScore) {
+		this.scorePlayer=aScorePlayer;
+		this.score=aScore;
 	}
 	
 	public final int getScore(final MagicPlayer player) {

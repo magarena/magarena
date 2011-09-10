@@ -59,12 +59,12 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 		}
 	}
 	
-	private static void scanFiles(final List<File> imageFiles,final File imagePathFile) {
+	private static void scanFiles(final List<File> aImageFiles,final File imagePathFile) {
 		for (final File file : imagePathFile.listFiles()) {
 			if (file.isDirectory()) {
-				scanFiles(imageFiles,file);
+				scanFiles(aImageFiles,file);
 			} else {
-				imageFiles.add(file);
+				aImageFiles.add(file);
 			}
 		}
 	}

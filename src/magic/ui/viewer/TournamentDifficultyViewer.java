@@ -47,10 +47,10 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 
 		switch (tabSelector.getSelectedTab()) {
 			case 0: 
-				tournamentViewer.setTitle(titleBar);
+				TournamentViewer.setTitle(titleBar);
 				break;
 			case 1:
-				difficultyViewer.setTitle(titleBar);
+				DifficultyViewer.setTitle(titleBar);
 				break;
 		}		
 	}

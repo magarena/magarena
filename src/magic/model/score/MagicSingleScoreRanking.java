@@ -20,9 +20,9 @@ public class MagicSingleScoreRanking implements MagicScoreRanking {
 	}
 
 	@Override
-	public void addScoreResult(final MagicScoreResult result) {
-		this.result=result;
-		bestScore=result.getScore();
+	public void addScoreResult(final MagicScoreResult aResult) {
+		this.result=aResult;
+		bestScore=aResult.getScore();
 	}
 
 	@Override

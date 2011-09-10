@@ -132,8 +132,8 @@ public class MagicPlayerDefinition {
         for (int index=1;index<=properties.size();index++) {
             final String deckPrefix = getDeckPrefix(prefix,index);
             if (properties.containsKey(deckPrefix)) {
-                final String name = properties.getProperty(deckPrefix);
-                deck.add(CardDefinitions.getInstance().getCard(name));
+                final String tName = properties.getProperty(deckPrefix);
+                deck.add(CardDefinitions.getInstance().getCard(tName));
             }
         }
 	}

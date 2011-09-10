@@ -38,13 +38,13 @@ public class MagicCombatDamageAction extends MagicAction {
 	
 	private void combatDamage(
             final MagicGame game,
-            final MagicPlayer attackingPlayer,
-            final MagicPlayer defendingPlayer) {
+            final MagicPlayer aAttackingPlayer,
+            final MagicPlayer aDefendingPlayer) {
 
 		final Collection<MagicDamage> combatDamage=new ArrayList<MagicDamage>();
 
 		// Determine all combat damage that must be dealt.
-		for (final MagicPermanent attacker : attackingPlayer.getPermanents()) {
+		for (final MagicPermanent attacker : aAttackingPlayer.getPermanents()) {
 			
 			if (attacker.isAttacking()) {
 				// Let blockers deal damage first.
@@ -83,7 +83,7 @@ public class MagicCombatDamageAction extends MagicAction {
 							// Check what to do with the remaining damage from attacker.
 							if (power>0) {
 								if (MagicAbility.Trample.hasAbility(flags)) {
-									combatDamage.add(new MagicDamage(attacker,defendingPlayer,power,true));
+									combatDamage.add(new MagicDamage(attacker,aDefendingPlayer,power,true));
 								} else if (attackerDamage.length>0) {
 									attackerDamage[0]+=power;
 								}
@@ -99,7 +99,7 @@ public class MagicCombatDamageAction extends MagicAction {
 							}
 						} else {
 							// Deal all damage to defending player.
-							combatDamage.add(new MagicDamage(attacker,defendingPlayer,power,true));
+							combatDamage.add(new MagicDamage(attacker,aDefendingPlayer,power,true));
 						}
 					}
 				}

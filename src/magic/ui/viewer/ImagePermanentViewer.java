@@ -95,15 +95,15 @@ public class ImagePermanentViewer extends JPanel {
 		return -1;
 	}
 
-	private void buildLinkedPermanents(final List<PermanentViewerInfo> linkedInfos,final PermanentViewerInfo info) {
+	private void buildLinkedPermanents(final List<PermanentViewerInfo> aLinkedInfos,final PermanentViewerInfo info) {
 		for (final PermanentViewerInfo blocker : info.blockers) {
-			buildLinkedPermanents(linkedInfos,blocker);
+			buildLinkedPermanents(aLinkedInfos,blocker);
 		}
-		linkedInfos.addAll(info.linked);
-		linkedInfos.add(info);			
+		aLinkedInfos.addAll(info.linked);
+		aLinkedInfos.add(info);			
 	}
 	
-	private Dimension calculateLogicalSize(final List<Rectangle> linkedLogicalRectangles) {
+	private Dimension calculateLogicalSize(final List<Rectangle> aLinkedLogicalRectangles) {
 		int width=0;
 		int height=0;
 		int x=-LOGICAL_X_MARGIN;
@@ -120,7 +120,7 @@ public class ImagePermanentViewer extends JPanel {
 				height=Math.max(height,y+CardImagesProvider.CARD_HEIGHT);							
 				rect=new Rectangle(x,y,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
 			}
-			linkedLogicalRectangles.add(rect);
+			aLinkedLogicalRectangles.add(rect);
 		}
 		return new Dimension(width,height);
 	}

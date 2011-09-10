@@ -379,8 +379,8 @@ public class MagicGame {
 		this.phase=phase;
 	}
 	
-	public void changePhase(final MagicPhase phase) {
-		this.phase=phase;
+	public void changePhase(final MagicPhase aPhase) {
+		this.phase=aPhase;
 		step=MagicStep.Begin;
 		priorityPassedCount=0;
 		players[0].getActivationPriority().clear();
@@ -792,7 +792,7 @@ public class MagicGame {
 			stateCheckRequired = false;
            
             //accumulate the state-based actions
-            final List<MagicAction> actions = new ArrayList<MagicAction>(100);
+            final List<MagicAction> stateBasedActions = new ArrayList<MagicAction>(100);
 		
             // Check if a player has lost
             final MagicPlayer lowestLifePlayer =
@@ -801,7 +801,7 @@ public class MagicGame {
                 players[0];
 
             if (lowestLifePlayer.getLosingLife() <= 0) {
-                actions.add(new MagicLoseGameAction(lowestLifePlayer,MagicLoseGameAction.LIFE_REASON));			
+                stateBasedActions.add(new MagicLoseGameAction(lowestLifePlayer,MagicLoseGameAction.LIFE_REASON));			
             }
 
             final MagicPlayer highestPoisonPlayer =
@@ -810,18 +810,18 @@ public class MagicGame {
                 players[0];
 
             if (highestPoisonPlayer.getLosingPoison() >= LOSING_POISON) {
-                actions.add(new MagicLoseGameAction(highestPoisonPlayer,MagicLoseGameAction.POISON_REASON));
+                stateBasedActions.add(new MagicLoseGameAction(highestPoisonPlayer,MagicLoseGameAction.POISON_REASON));
             }
 		    
             // Check permanents' state
             for (final MagicPlayer player : players) {
 				for (final MagicPermanent permanent : player.getPermanents()) {
-					permanent.checkState(this, actions);
+					permanent.checkState(this, stateBasedActions);
 				}
 			}
 
             //perform all the actions at once
-            for (final MagicAction action : actions) {
+            for (final MagicAction action : stateBasedActions) {
                 doAction(action);
             }
 
