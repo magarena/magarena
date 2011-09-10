@@ -11,7 +11,7 @@ public class MagicDeclareAttackerAction extends MagicAction {
 	private final MagicPermanent attacker;
 	private boolean tap;
 	
-	public MagicDeclareAttackerAction(final MagicPermanent attacker) {
+	MagicDeclareAttackerAction(final MagicPermanent attacker) {
 		this.attacker=attacker;
 	}
 

@@ -55,7 +55,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		game.removeTriggers(permanent,new LinkedList<MagicPermanentTrigger>());
 	}
 	
-	protected void setEnchantedPermanent(final MagicPermanent enchantedPermanent) {
+	void setEnchantedPermanent(final MagicPermanent enchantedPermanent) {
 		this.enchantedPermanent=enchantedPermanent;
 	}
 	

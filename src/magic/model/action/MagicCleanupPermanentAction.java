@@ -10,7 +10,7 @@ public class MagicCleanupPermanentAction extends MagicAction {
 	private int oldAbilityPlayedThisTurn;
 	private int oldStateFlags;
 	
-	public MagicCleanupPermanentAction(final MagicPermanent permanent) {
+	MagicCleanupPermanentAction(final MagicPermanent permanent) {
 		this.permanent=permanent;
 	}
 	

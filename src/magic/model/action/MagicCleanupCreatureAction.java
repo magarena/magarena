@@ -20,7 +20,7 @@ public class MagicCleanupCreatureAction extends MagicAction {
 	private int oldStateFlags;
 	private List<MagicLocalVariable> oldTurnLocalVariables;
 
-	public MagicCleanupCreatureAction(final MagicPermanent permanent) {
+	MagicCleanupCreatureAction(final MagicPermanent permanent) {
 		
 		this.permanent=permanent;
 	}

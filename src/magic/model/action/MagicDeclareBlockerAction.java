@@ -11,7 +11,7 @@ public class MagicDeclareBlockerAction extends MagicAction {
 	private final MagicPermanent blocker;
 	private boolean unblocked;
 	
-	public MagicDeclareBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
+	MagicDeclareBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
 		this.attacker=attacker;
 		this.blocker=blocker;
 	}
