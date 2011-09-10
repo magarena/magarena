@@ -18,7 +18,13 @@ import java.util.Set;
 public class MagicTargetChoice extends MagicChoice {
 	
     public static final MagicTargetChoice TARGET_NONE =
-		new MagicTargetChoice(MagicTargetFilter.ALL,false,MagicTargetHint.None,"nothing");
+		new MagicTargetChoice(MagicTargetFilter.ALL,false,MagicTargetHint.None,"nothing") {
+            @Override
+            public boolean isValid() {
+                return false;
+            }
+        };
+
 	public static final MagicTargetChoice TARGET_SPELL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_SPELL,true,MagicTargetHint.None,
                 "target spell");

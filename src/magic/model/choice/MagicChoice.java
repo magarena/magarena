@@ -20,6 +20,7 @@ public abstract class MagicChoice {
 	public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
 
     public static final MagicChoice NONE = new MagicChoice("none") {
+        @Override
 	    public Collection<Object> getArtificialOptions(
                 final MagicGame game,
                 final MagicEvent event,
@@ -27,12 +28,17 @@ public abstract class MagicChoice {
                 final MagicSource source) {
             return Collections.emptyList();
         }
+        @Override
         public Object[] getPlayerChoiceResults(
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) {
             return new Object[0];
+        }
+        @Override
+        public boolean isValid() {
+            return false;
         }
     };
 	
@@ -53,6 +59,10 @@ public abstract class MagicChoice {
 	public int getManaChoiceResultIndex() {
 		return -1;
 	}
+
+    public boolean isValid() {
+        return true;
+    }
 
 	/** Checks if there are valid options for the choice. */
 	public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {

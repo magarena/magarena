@@ -93,10 +93,10 @@ public class MagicKickerChoice extends MagicChoice {
             final MagicSource source) {
 
 		final Collection<Object> otherOptions;
-		if (otherChoice == MagicChoice.NONE) {
-			otherOptions=NO_OPTIONS_LIST;
-		} else {
+		if (otherChoice.isValid()) {
 			otherOptions=otherChoice.getArtificialOptions(game,event,player,source);			
+		} else {
+			otherOptions=NO_OPTIONS_LIST;
 		}
 		
 		final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
@@ -167,14 +167,14 @@ public class MagicKickerChoice extends MagicChoice {
 		}
 
 		// Pick other choice.
-		if (otherChoice==MagicChoice.NONE) {
-			choiceResults[0]=null;
-		} else {
+		if (otherChoice.isValid()) {
 			final Object otherChoiceResults[]=otherChoice.getPlayerChoiceResults(controller,game,player,source);
 			if (otherChoiceResults==UNDO_CHOICE_RESULTS) {
 				return UNDO_CHOICE_RESULTS;
 			}
 			choiceResults[0]=otherChoiceResults[0];
+		} else {
+			choiceResults[0]=null;
 		}
 		return choiceResults;
 	}

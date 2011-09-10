@@ -117,7 +117,7 @@ public class MagicEvent implements MagicCopyable {
 	}
 		
 	public final boolean hasChoice() {
-		return choice != MagicChoice.NONE;
+		return choice.isValid();
 	}
 	
 	public final MagicChoice getChoice() {
