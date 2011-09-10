@@ -30,7 +30,7 @@ public class MagicCardOnStack extends MagicItemOnStack {
 		this(card,card.getController(),payedCost);
 	}
     
-    private MagicCardOnStack(final MagicCopyMap copyMap, MagicCardOnStack cardOnStack) {
+    private MagicCardOnStack(final MagicCopyMap copyMap, final MagicCardOnStack cardOnStack) {
         super(copyMap, cardOnStack);
         moveLocation = cardOnStack.moveLocation;
         x = cardOnStack.x;

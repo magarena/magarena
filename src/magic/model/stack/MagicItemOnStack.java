@@ -26,7 +26,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 
     }
 
-    public MagicItemOnStack(MagicCopyMap copyMap, MagicItemOnStack sourceItem) {
+    public MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
 		source = copyMap.copy(sourceItem.source);
 		controller = copyMap.copy(sourceItem.controller);
 		activation = sourceItem.activation;
