@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MagicPlayer implements MagicTarget {
 
-    public static final MagicPlayer NONE = new MagicPlayer() {
+    public static final MagicPlayer NONE = new MagicPlayer(-1, new MagicPlayerDefinition(), -1) {
         @Override
         public String toString() {
             return "";
@@ -27,70 +27,63 @@ public class MagicPlayer implements MagicTarget {
         public boolean isValid() {
             return false;
         }
+        @Override
+        public MagicPlayer copy(final MagicCopyMap copyMap) {
+            return this;
+        }
     };
 
 	private static final long ID_FACTOR=31;
 	
-	private MagicPlayerDefinition playerDefinition;
-	private MagicCardList hand;
-	private MagicCardList library;
-	private MagicCardList exile;
-	private MagicCardList graveyard;
-	private MagicPermanentSet permanents;
-	private MagicPermanentSet manaPermanents;
-	private int index;
-	private int life;
+    private final MagicPlayerDefinition playerDefinition;
+	private final int index;
+	
+    private int life;
 	private int poison;
-	private int stateFlags=0;
-	private int preventDamage=0;
-	private int extraTurns=0;
-	private int attackers=0;
-	private int blockers=0;
-	private MagicCardCounter cardCounter;
-	private MagicActivationMap activationMap;
-	private MagicBuilderManaCost builderCost;
+	private int stateFlags;
+	private int preventDamage;
+	private int extraTurns;
+	private int attackers;
+	private int blockers;
+    private final MagicCardList hand;
+	private final MagicCardList library;
+	private final MagicCardList graveyard;
+	private final MagicCardList exile;
+	private final MagicPermanentSet permanents;
+	private final MagicPermanentSet manaPermanents;
+	private final MagicCardCounter cardCounter;
+	private final MagicActivationMap activationMap;
+    private MagicBuilderManaCost builderCost;
 	private MagicActivationPriority activationPriority;
+
     private long[] keys;
 
-	public MagicPlayer(final TournamentConfig configuration,final MagicPlayerDefinition playerDefinition,final int index) {
-		this.playerDefinition=playerDefinition;
-		this.index=index;
-		hand=new MagicCardList();
+	public MagicPlayer(final int aLife,final MagicPlayerDefinition aPlayerDefinition,final int aIndex) {
+		playerDefinition = aPlayerDefinition;
+		index = aIndex;
+		life = aLife;
+		poison = 0;
+		
+        hand=new MagicCardList();
 		library=new MagicCardList();
 		graveyard=new MagicCardList();
 		exile=new MagicCardList();
 		permanents=new MagicPermanentSet();
 		manaPermanents=new MagicPermanentSet();
-		life=configuration.getStartLife();
-
-        //give the AI player extra life
-		if (index != 0) {
-			life += GeneralConfig.getInstance().getExtraLife();
-		}
-
-		poison=0;
 		cardCounter=new MagicCardCounter();
 		activationMap=new MagicActivationMap();
 		builderCost=new MagicBuilderManaCost();
 		activationPriority=new MagicActivationPriority();
-		//createHandAndLibrary(configuration.getHandSize());
 	}
 	
-	private MagicPlayer() {}
-	
-	@Override
-	public MagicCopyable create() {
-		return new MagicPlayer();
-	}
-	
-	@Override
-	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
-		final MagicPlayer sourcePlayer=(MagicPlayer)source;
-		playerDefinition=sourcePlayer.playerDefinition;
-		stateFlags=sourcePlayer.stateFlags;
-		index=sourcePlayer.index;
-		life=sourcePlayer.life;
+    private MagicPlayer(final MagicCopyMap copyMap, final MagicPlayer sourcePlayer) {
+        copyMap.put(sourcePlayer, this);
+		
+        playerDefinition = sourcePlayer.playerDefinition;
+		index = sourcePlayer.index;
+		life = sourcePlayer.life;
 		poison=sourcePlayer.poison;
+		stateFlags=sourcePlayer.stateFlags;
 		preventDamage=sourcePlayer.preventDamage;
 		extraTurns=sourcePlayer.extraTurns;
 		attackers=sourcePlayer.attackers;
@@ -105,6 +98,11 @@ public class MagicPlayer implements MagicTarget {
 		activationMap=new MagicActivationMap(copyMap,sourcePlayer.activationMap);
 		builderCost=new MagicBuilderManaCost(sourcePlayer.builderCost);
         activationPriority=new MagicActivationPriority(sourcePlayer.activationPriority);
+    }
+	
+	@Override
+	public MagicPlayer copy(final MagicCopyMap copyMap) {
+        return new MagicPlayer(copyMap, this);
 	}
 	
 	@Override
@@ -281,15 +279,13 @@ public class MagicPlayer implements MagicTarget {
 		}
 
         //library order depends on player index, game no, random seed
-        final long[] tKeys = {
+        final long seed = magic.MurmurHash3.hash(new long[] {
             2 * index - 1,
             MagicGame.getCount(),
             (System.getProperty("rndSeed") != null) ? 
                 Long.parseLong(System.getProperty("rndSeed")) : 
                 System.currentTimeMillis()
-        };
-
-        final long seed = magic.MurmurHash3.hash(tKeys);
+        });
 
 		if (library.useSmartShuffle()) {
 			library.smartShuffle(seed);
