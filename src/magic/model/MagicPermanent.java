@@ -28,19 +28,7 @@ import java.util.List;
 public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent> {
 
 	public static final int NO_COLOR_FLAGS=-1;
-    public static final MagicPermanent NONE = new MagicPermanent() {
-        @Override 
-        public long getId() {
-            return -1L;
-        }
-        @Override
-        public boolean isCreature() {
-            return false;
-        }
-        @Override
-        public MagicPlayer getController() {
-            return MagicPlayer.NONE;
-        }
+    public static final MagicPermanent NONE = new MagicPermanent(-1L, MagicCard.NONE, MagicPlayer.NONE) {
         @Override
         public boolean isValid() {
             return false;
@@ -49,11 +37,15 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         public String toString() {
             return "MagicPermanent.NONE";
         }
+        @Override
+        public MagicPermanent copy(final MagicCopyMap copyMap) {
+            return this;
+        }
     };
 		
-	private long id;
-	private MagicCard card;
-	private MagicCardDefinition cardDefinition;
+	private final long id;
+	private final MagicCard card;
+	private final MagicCardDefinition cardDefinition;
 	private MagicPlayer controller;
 	private MagicLocalVariableList localVariables;
 	private MagicPermanent equippedCreature = MagicPermanent.NONE;
@@ -93,22 +85,16 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		blockingCreatures=new MagicPermanentList();
 		fixedScore=ArtificialScoringSystem.getFixedPermanentScore(this);
 	}
-	
-	private MagicPermanent() {}
-	
-	@Override
-	public MagicCopyable create() {
-		return new MagicPermanent();
-	}
 
-	@Override
-	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
-		final MagicPermanent sourcePermanent=(MagicPermanent)source;
-		id=sourcePermanent.id;
-		cardDefinition=sourcePermanent.cardDefinition; // Must be before the rest for compareTo!
-		card=copyMap.copy(sourcePermanent.card);
-		controller=copyMap.copy(sourcePermanent.controller);
-		stateFlags=sourcePermanent.stateFlags;
+    private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
+        copyMap.put(sourcePermanent, this);
+
+        id = sourcePermanent.id;
+        card = copyMap.copy(sourcePermanent.card);
+        cardDefinition = sourcePermanent.cardDefinition;
+        controller = copyMap.copy(sourcePermanent.controller);
+		
+        stateFlags=sourcePermanent.stateFlags;
 		turnColorFlags=sourcePermanent.turnColorFlags;
 		turnAbilityFlags=sourcePermanent.turnAbilityFlags;
 		turnPowerIncr=sourcePermanent.turnPowerIncr;
@@ -126,6 +112,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		damage=sourcePermanent.damage;
 		preventDamage=sourcePermanent.preventDamage;
 		fixedScore=sourcePermanent.fixedScore;
+    }
+	
+	@Override
+	public MagicPermanent copy(final MagicCopyMap copyMap) {
+        return new MagicPermanent(copyMap, this);
 	}
 	
 	@Override
