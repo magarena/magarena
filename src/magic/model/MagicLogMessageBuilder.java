@@ -5,12 +5,12 @@ public class MagicLogMessageBuilder {
 	private final MagicGame game;
 	private final StringBuilder messageBuilders[];
 	
-	public MagicLogMessageBuilder(final MagicGame game) {
+	MagicLogMessageBuilder(final MagicGame game) {
 		this.game=game;
 		messageBuilders=new StringBuilder[]{new StringBuilder(),new StringBuilder()};
 	}
 	
-	public void appendMessage(final MagicPlayer player,final String message) {
+	void appendMessage(final MagicPlayer player,final String message) {
 		final StringBuilder messageBuilder=messageBuilders[player.getIndex()];
 		if (messageBuilder.length()>0) {
 			messageBuilder.append(' ');
@@ -18,7 +18,7 @@ public class MagicLogMessageBuilder {
 		messageBuilder.append(message);
 	}
 	
-	public void logMessages() {
+	void logMessages() {
 		for (final MagicPlayer player : game.getPlayers()) {
 			final StringBuilder messageBuilder=messageBuilders[player.getIndex()];
 			if (messageBuilder.length()>0) {
@@ -28,7 +28,7 @@ public class MagicLogMessageBuilder {
 		}
 	}
 	
-	public void clearMessages() {
+	void clearMessages() {
 		messageBuilders[0].setLength(0);
 		messageBuilders[1].setLength(0);
 	}

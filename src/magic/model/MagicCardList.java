@@ -14,7 +14,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		super(cardList);
 	}
 	
-	public MagicCardList(final MagicCopyMap copyMap, final MagicCardList cardList) {
+	MagicCardList(final MagicCopyMap copyMap, final MagicCardList cardList) {
 		for (final MagicCard card : cardList) {
 			add(copyMap.copy(card));
 		}
@@ -30,7 +30,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return magic.MurmurHash3.hash(keys);
 	}
 	
-    public long getSortedCardsId() {
+    long getSortedCardsId() {
         int idx = 0;
 		final long[] keys = new long[size() + 1];
 		for (final MagicCard card : this) {
@@ -53,7 +53,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return get(0);
 	}
 	
-	public MagicCard getCardAtTop() {
+	private MagicCard getCardAtTop() {
 		return this.get(size()-1);
 	}
 	
@@ -74,7 +74,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return index;
 	}
 
-	public MagicCard getCard(final long id) {
+	MagicCard getCard(final long id) {
 		for (final MagicCard card : this) {
 			if (card.getId()==id) {
 				return card;
@@ -83,7 +83,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return MagicCard.NONE;
 	}
 	
-	public MagicCard getRandomCard() {
+	private MagicCard getRandomCard() {
 		return get(MagicRandom.nextInt(size()));
 	}
 	
@@ -92,13 +92,13 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		addAll(cardList);
 	}
 	
-	public void setKnown(final boolean known) {
+	void setKnown(final boolean known) {
 		for (final MagicCard card : this) {
 			card.setKnown(known);
 		}
 	}
 	
-	public int getNrOfLands() {
+	private int getNrOfLands() {
 		int lands=0;
 		for (final MagicCard card : this) {
 			if (card.getCardDefinition().isLand()) {
@@ -108,7 +108,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return lands;
 	}
 	
-	public boolean useSmartShuffle() {
+	boolean useSmartShuffle() {
 		final int lands = getNrOfLands();
 		final int total = size();
 		return lands == 16 && total == 40;
@@ -126,7 +126,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		}
 	}
 	
-	public void smartShuffle(final long seed) {
+	void smartShuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
 		final int size=size();
 		final List<MagicCard> lands=new ArrayList<MagicCard>();

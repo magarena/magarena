@@ -47,7 +47,7 @@ public class MagicGame {
     private static int COUNT = 0;
     private static MagicGame INSTANCE;
 	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
-	public static final int LOSING_POISON=10;
+	static final int LOSING_POISON=10;
 	
 	private static final long ID_FACTOR=31;
 	
@@ -89,15 +89,15 @@ public class MagicGame {
     private long time = 1000000;
 
 
-    public static MagicGame getInstance() {
+    static MagicGame getInstance() {
         return INSTANCE;
     }
     
-    public static int getCount() {
+    static int getCount() {
         return COUNT;
     }
 
-    public static MagicGame create(
+    static MagicGame create(
             final MagicTournament tournament,
             final MagicGameplay gameplay,
             final MagicPlayer players[],
@@ -198,7 +198,7 @@ public class MagicGame {
         skipTurn = skip;
     }
 
-    public boolean getSkipTurn() {
+    private boolean getSkipTurn() {
         return skipTurn;
     }
 
@@ -314,7 +314,7 @@ public class MagicGame {
 		return false;
 	}
 	
-	public int getArtificialLevel() {
+	private int getArtificialLevel() {
 		return tournament.getDifficulty();
 	}
 	
@@ -500,7 +500,7 @@ public class MagicGame {
 		}
 	}
 	
-	public Collection<MagicAction> getActions() {
+	Collection<MagicAction> getActions() {
 		return actions;
 	}
 	
@@ -543,7 +543,7 @@ public class MagicGame {
         logMessageBuilder.logMessages();
 	}
 
-	public void logAppendEvent(final MagicEvent event,final Object choiceResults[]) {
+	private void logAppendEvent(final MagicEvent event,final Object choiceResults[]) {
 	    if (disableLog) {
             return;
         }
@@ -659,7 +659,7 @@ public class MagicGame {
 		return players[1-player.getIndex()];		
 	}
 	
-	public void setVisiblePlayer(final MagicPlayer visiblePlayer) {
+	private void setVisiblePlayer(final MagicPlayer visiblePlayer) {
 		this.visiblePlayer = visiblePlayer;
 	}
 	
@@ -860,7 +860,7 @@ public class MagicGame {
 	
 	// ***** TARGETS *****
 
-	public List<MagicTarget> filterTargets(
+	private List<MagicTarget> filterTargets(
             final MagicPlayer player,
             final MagicTargetFilter targetFilter,
             final MagicTargetHint targetHint) {
@@ -981,7 +981,7 @@ public class MagicGame {
 		return options;
 	}
 	
-	public boolean filterTarget(final MagicPlayer player,final MagicTargetFilter targetFilter,final MagicTarget target) {
+	private boolean filterTarget(final MagicPlayer player,final MagicTargetFilter targetFilter,final MagicTarget target) {
 		if (target==null || 
             target==MagicTargetNone.getInstance() || 
             !targetFilter.accept(this,player,target)) {

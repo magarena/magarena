@@ -6,7 +6,7 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
 
 	private static final long serialVersionUID = 1L;
 
-	public MagicLogBook() {}
+	MagicLogBook() {}
 
     @Override
     public boolean add(final MagicMessage msg) {

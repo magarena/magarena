@@ -47,13 +47,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private final MagicCard card;
 	private final MagicCardDefinition cardDefinition;
 	private MagicPlayer controller;
-	private MagicLocalVariableList localVariables;
+    private final MagicLocalVariableList localVariables;	
 	private MagicPermanent equippedCreature = MagicPermanent.NONE;
-	private MagicPermanentSet equipmentPermanents;
+    private final MagicPermanentSet equipmentPermanents;	
 	private MagicPermanent enchantedCreature = MagicPermanent.NONE;
-	private MagicPermanentSet auraPermanents;
+    private final MagicPermanentSet auraPermanents;	
 	private MagicPermanent blockedCreature = MagicPermanent.NONE;
-	private MagicPermanentList blockingCreatures;
+    private final MagicPermanentList blockingCreatures;	
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
 	private int stateFlags=MagicPermanentState.Summoned.getMask();
 	private long turnAbilityFlags=0;
@@ -64,7 +64,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private int turnLocalVariables=0;
 	private int damage=0;
 	private int preventDamage=0;
-	private int fixedScore;
+    private final int fixedScore;	
 
     // Allows cached retrieval of power, toughness and abilities.
 	private boolean cached=false;
@@ -137,7 +137,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !isValid();
     }
 	
-	public long getPermanentId() {
+	long getPermanentId() {
         final long[] input = {
             cardDefinition.getIndex(),
             stateFlags,
@@ -465,7 +465,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return cardDefinition.getStaticType().getScore(game,this);
 	}
 	
-	public void setCached(final MagicGame game,final boolean aCached) {
+	void setCached(final MagicGame game,final boolean aCached) {
 		if (aCached) {
 			cachedTurnPowerToughness=getPowerToughness(game,true);
 			cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
@@ -565,7 +565,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		blockingCreatures.clear();
 	}
 	
-	public void checkState(final MagicGame game, final List<MagicAction> actions) {
+	void checkState(final MagicGame game, final List<MagicAction> actions) {
 		// +1/+1 and -1/-1 counters cancel each other out.
 		final int plusCounters=getCounters(MagicCounterType.PlusOne);
 		if (plusCounters>0) {
@@ -747,7 +747,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return !hasProtectionFrom(attackerFlags,this);
 	}
 	
-	public MagicLocalVariable getAttachmentLocalVariable() {
+	private MagicLocalVariable getAttachmentLocalVariable() {
 		return cardDefinition.getAttachmentLocalVariable();
 	}
 		
@@ -819,7 +819,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		abilityPlayedThisTurn--;
 	}
 	
-    public int getTypeFlags() {
+    private int getTypeFlags() {
 		// Check if cached.
 		if (cached) {
 			return cachedTypeFlags;

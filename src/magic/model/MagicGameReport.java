@@ -84,7 +84,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 		report.append("Score = ").append(totalScore).append("\n");
 	}
 	
-	public static String buildReport(final MagicGame game) {
+	private static String buildReport(final MagicGame game) {
 		final StringBuilder report=new StringBuilder();
 		report.append("Turn : ").append(game.getTurn());
 		report.append("  Phase : ").append(game.getPhase().getType());
@@ -102,7 +102,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 		return report.toString();
 	}
 
-    public static void buildReport(final MagicGame game, final Thread th, final Throwable ex) {
+    private static void buildReport(final MagicGame game, final Thread th, final Throwable ex) {
         final StringBuilder sb = new StringBuilder();
         sb.append("CRASH REPORT FOR MAGARENA THREAD " + th);
         sb.append('\n');

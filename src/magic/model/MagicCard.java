@@ -89,7 +89,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 		return owner;
 	}
 			
-	public void setToken() {
+	private void setToken() {
 		token = true;
 	}
 	
@@ -103,7 +103,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 		return card;
 	}
 
-	public void setKnown(final boolean known) {
+	void setKnown(final boolean known) {
 		this.known=known;
 	}
 	

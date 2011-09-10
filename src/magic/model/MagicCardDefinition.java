@@ -57,7 +57,7 @@ public class MagicCardDefinition {
     private static int numModifications = 0;
     private static int numLocalVariables = 0;
 
-	public static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES = 
+	private static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES = 
         Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
 
 	private final String name;
@@ -95,7 +95,7 @@ public class MagicCardDefinition {
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
 	private boolean excludeManaOrCombat=false;
 	
-	public MagicCardDefinition(final String name,final String fullName) {
+	protected MagicCardDefinition(final String name,final String fullName) {
 		this.name=name;
 		this.fullName=fullName;
 		initialize();
@@ -203,7 +203,7 @@ public class MagicCardDefinition {
 		}
 	}
 				
-	public void setToken() {
+	protected void setToken() {
 		token=true;
 	}
 	
@@ -211,7 +211,7 @@ public class MagicCardDefinition {
 		return token;
 	}
 
-    public int getTypeFlags() {
+    int getTypeFlags() {
         return typeFlags;
     }
     
@@ -309,7 +309,7 @@ public class MagicCardDefinition {
 		}
 	}
 	
-	public EnumSet<MagicSubType> getSubTypeFlags() {
+	EnumSet<MagicSubType> getSubTypeFlags() {
 		return subTypeFlags;
 	}
 	
@@ -325,7 +325,7 @@ public class MagicCardDefinition {
 		colorFlags=MagicColor.getFlags(colors);		
 	}
 	
-	public void setColor(final MagicColor color) {
+	protected void setColor(final MagicColor color) {
 		
 		colorFlags|=color.getMask();
 	}
@@ -419,7 +419,7 @@ public class MagicCardDefinition {
 		}
 	}
 
-	public String getManaSourceText() {
+	private String getManaSourceText() {
 		
 		return manaSourceText;
 	}
@@ -460,7 +460,7 @@ public class MagicCardDefinition {
 		turnLocalVariableIndex=1;
 	}
 	
-	public int getTurnLocalVariableIndex() {
+	int getTurnLocalVariableIndex() {
 		return turnLocalVariableIndex;
 	}
 	
@@ -485,7 +485,7 @@ public class MagicCardDefinition {
 		this.staticType=staticType;
 	}
 	
-	public MagicStaticType getStaticType() {
+	MagicStaticType getStaticType() {
 		return staticType;
 	}
 	
@@ -497,7 +497,7 @@ public class MagicCardDefinition {
 		return timing;
 	}
 				
-	public MagicLocalVariable getAttachmentLocalVariable() {
+	MagicLocalVariable getAttachmentLocalVariable() {
         if (attachmentLocalVariable == null) {
             attachmentLocalVariable = new MagicAttachmentLocalVariable(this);
         }
@@ -508,7 +508,7 @@ public class MagicCardDefinition {
 		localVariables.add(localVariable);
 	}
 	
-	public List<MagicLocalVariable> getLocalVariables() {
+	List<MagicLocalVariable> getLocalVariables() {
 		if (localVariables.isEmpty()) {
 			return DEFAULT_LOCAL_VARIABLES;
 		} else {
@@ -516,7 +516,7 @@ public class MagicCardDefinition {
 		}
 	}
 	
-	public void setCardEvent(final MagicCardEvent cardEvent) {
+	private void setCardEvent(final MagicCardEvent cardEvent) {
 		this.cardEvent=cardEvent;
 	}
 	
@@ -535,7 +535,7 @@ public class MagicCardDefinition {
 		return cardActivation;
 	}
 		
-	public void addTrigger(final MagicTrigger trigger) {
+	private void addTrigger(final MagicTrigger trigger) {
 		switch (trigger.getType()) {
 			case WhenComesIntoPlay:
 				comeIntoPlayTriggers.add(trigger);
@@ -561,7 +561,7 @@ public class MagicCardDefinition {
 		return putIntograveyardTriggers;
 	}
 	
-	public void addActivation(final MagicPermanentActivation activation) {
+	private void addActivation(final MagicPermanentActivation activation) {
 		activations.add(activation);
 	}
 	
@@ -569,7 +569,7 @@ public class MagicCardDefinition {
 		return activations;
 	}
 	
-	public void addManaActivation(final MagicManaActivation activation) {
+	protected void addManaActivation(final MagicManaActivation activation) {
 		manaActivations.add(activation);
 	}
 	
@@ -603,7 +603,7 @@ public class MagicCardDefinition {
 		}
 	}
 	
-	public boolean subTypeHasText(final String s) {
+	private boolean subTypeHasText(final String s) {
 		final MagicSubType[] subTypeValues = MagicSubType.values();
 		for (final MagicSubType subtype : subTypeValues) {
 			if(subtype.hasSubType(subTypeFlags) && subtype.toString().toLowerCase().contains(s)) {
@@ -613,7 +613,7 @@ public class MagicCardDefinition {
 		return false;
 	}
 		
-	public boolean abilityHasText(final String s) {
+	private boolean abilityHasText(final String s) {
 		final MagicAbility[] abilityValues = MagicAbility.values();
 		for (final MagicAbility ability : abilityValues) {
 			if(hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {

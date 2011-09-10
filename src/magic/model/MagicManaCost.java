@@ -167,7 +167,7 @@ public class MagicManaCost {
 		}
 	}
 			
-	public void setText(final String aCostText) {
+	private void setText(final String aCostText) {
 		this.costText=aCostText;
 	}
 	
@@ -249,7 +249,7 @@ public class MagicManaCost {
 		return icons;
 	}
 	
-	public int getCostScore(final MagicPlayerProfile profile) {
+	int getCostScore(final MagicPlayerProfile profile) {
 
 		final int singleCounts[]=new int[MagicManaType.NR_OF_TYPES];
 		int doubleCount=0;
