@@ -12,7 +12,7 @@ public class Ashenmoor_Liege {
     public static final MagicWhenTargetedTrigger T = new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-        	MagicPlayer targetPlayer = target.getController();
+        	final MagicPlayer targetPlayer = target.getController();
             return (target.containsInChoiceResults(permanent) &&
             		targetPlayer != permanent.getController()) ?
                 new MagicEvent(
