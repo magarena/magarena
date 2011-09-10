@@ -21,7 +21,11 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	private MagicEvent event;
 	private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
 	private long id;
-    
+   
+    protected MagicItemOnStack() {
+
+    }
+
     public MagicItemOnStack(MagicCopyMap copyMap, MagicItemOnStack sourceItem) {
 		source = copyMap.copy(sourceItem.source);
 		controller = copyMap.copy(sourceItem.controller);
