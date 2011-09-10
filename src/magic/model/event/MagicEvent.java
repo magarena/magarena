@@ -28,26 +28,31 @@ import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 
-	public static final MagicEvent NONE = new MagicEvent() {
-        @Override
-        public boolean isValid() {
-            return false;
-        }
-    };
-
 	public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
     public static final MagicSource NO_SOURCE = MagicCard.NONE;
 	public static final MagicChoice NO_CHOICES = MagicChoice.NONE;
 	public static final Object NO_CHOICE_RESULTS[] = new Object[0];
 	public static final Object NO_DATA[] = new Object[0];
+	
+    public static final MagicEvent NONE = new MagicEvent(NO_SOURCE, MagicPlayer.NONE, NO_DATA, null, "") {
+        @Override
+        public boolean isValid() {
+            return false;
+        }
+        @Override
+        public MagicEvent copy(final MagicCopyMap copyMap) {
+            return this;
+        }
+    };
 
-	private MagicSource source;
-	private MagicPlayer player;
-	private MagicChoice choice;
-	private MagicTargetPicker targetPicker;
-	private Object data[];
-	private MagicEventAction action;
-	private String description;
+	private final MagicSource source;
+	private final MagicPlayer player;
+	private final MagicChoice choice;
+	private final MagicTargetPicker targetPicker;
+	private final MagicEventAction action;
+	private final String description;
+	
+    private Object data[];
 
 	public MagicEvent(
             final MagicSource source,
@@ -85,23 +90,21 @@ public class MagicEvent implements MagicCopyable {
 		this(source,player,NO_CHOICES,MagicDefaultTargetPicker.getInstance(),data,action,description);
 	}
 	
-	private MagicEvent() {}
-
-	@Override
-	public MagicCopyable create() {
-		return new MagicEvent();
-	}
+    private MagicEvent(final MagicCopyMap copyMap, final MagicEvent sourceEvent) {
+        copyMap.put(sourceEvent,this);
+        
+        source = copyMap.copy(sourceEvent.source);
+		player = copyMap.copy(sourceEvent.player);
+		choice = sourceEvent.choice;
+		targetPicker = sourceEvent.targetPicker;
+        data = copyMap.copyObjects(sourceEvent.data,Object.class);
+		action = sourceEvent.action;
+		description = sourceEvent.description;
+    }
 	
 	@Override
-	public void copy(final MagicCopyMap copyMap,final MagicCopyable copySource) {
-		final MagicEvent sourceEvent=(MagicEvent)copySource;
-		source=(MagicSource)copyMap.copyObject(sourceEvent.source);
-		player=copyMap.copy(sourceEvent.player);
-		choice=sourceEvent.choice;
-		targetPicker=sourceEvent.targetPicker;
-		data=copyMap.copyObjects(sourceEvent.data,Object.class);
-		action=sourceEvent.action;
-		description=sourceEvent.description;
+	public MagicEvent copy(final MagicCopyMap copyMap) {
+        return new MagicEvent(copyMap, this);
 	}
 
     public boolean isValid() {
