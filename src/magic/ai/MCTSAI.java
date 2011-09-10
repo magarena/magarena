@@ -495,11 +495,11 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return true;
     }
     
-    static public int obj2StringHash(final Object obj) {
+    public static int obj2StringHash(final Object obj) {
         return obj2String(obj).hashCode();
     }
 
-    static public String obj2String(final Object obj) {
+    public static String obj2String(final Object obj) {
         if (obj == null) {
             return "null";
         } else if (obj instanceof MagicBuilderPayManaCostResult) {
