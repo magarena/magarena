@@ -9,6 +9,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.MagicType;
 
 import java.util.EnumSet;
 
@@ -57,9 +58,14 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int urabraskTheHidden;
 	private static int veteranArmorer;
 	private static int windbriskRaptor;
+	private static int worship;
 
     public static boolean canLose(final MagicPlayer controller) {
         return controller.getCount(platinumAngel) == 0;
+    }
+	
+	public static boolean isLpMin1(final MagicPlayer controller) {
+        return controller.getCount(worship) > 0 && controller.getNrOfPermanentsWithType(MagicType.Creature) > 0;
     }
 
     public static boolean canTarget(final MagicPlayer controller) {
@@ -299,5 +305,6 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		urabraskTheHidden=definitions.getCard("Urabrask the Hidden").getIndex();
 		veteranArmorer=definitions.getCard("Veteran Armorer").getIndex();
 		windbriskRaptor=definitions.getCard("Windbrisk Raptor").getIndex();
+		worship=definitions.getCard("Worship").getIndex();
 	}
 }

@@ -11,6 +11,7 @@ import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.variable.MagicStaticLocalVariable;
 
 public class MagicDealDamageAction extends MagicAction {
 
@@ -92,7 +93,14 @@ public class MagicDealDamageAction extends MagicAction {
 			if (source.hasAbility(game,MagicAbility.Infect)) {
 				game.doAction(new MagicChangePoisonAction((MagicPlayer)target,dealtAmount));
 			} else {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)target,-dealtAmount));
+				int appliedAmount = dealtAmount;
+				MagicPlayer targetPlayer = (MagicPlayer)target;
+				
+				if (targetPlayer.getLife() - appliedAmount < 1 && MagicStaticLocalVariable.isLpMin1(targetPlayer)) {
+					// worship does not change dealt dmg, only resulting hp
+					appliedAmount = appliedAmount - (appliedAmount - targetPlayer.getLife()) - 1;
+				}
+				game.doAction(new MagicChangeLifeAction(targetPlayer,-appliedAmount));
 			}
 		}
 
