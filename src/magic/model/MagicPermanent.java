@@ -87,12 +87,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
-        copyMap.put(sourcePermanent, this);
-
         id = sourcePermanent.id;
         card = copyMap.copy(sourcePermanent.card);
         cardDefinition = sourcePermanent.cardDefinition;
         controller = copyMap.copy(sourcePermanent.controller);
+        
+        copyMap.put(sourcePermanent, this);
 		
         stateFlags=sourcePermanent.stateFlags;
 		turnColorFlags=sourcePermanent.turnColorFlags;
