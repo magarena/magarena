@@ -28,16 +28,24 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 		cardDefinition = aCardDefinition;
 		owner = aOwner;
 		id = aId;
-		imageIndex = (int)Math.abs(aId % 1000);
+		imageIndex = (int)Math.abs(id % 1000);
 	}
+
+    private MagicCard(final MagicCopyMap copyMap, final MagicCard sourceCard) {
+        copyMap.put(sourceCard, this);
+	
+        cardDefinition = sourceCard.cardDefinition;
+        owner = copyMap.copy(sourceCard.owner);
+        id = sourceCard.id;
+		imageIndex = (int)Math.abs(id % 1000);
+		token = sourceCard.token;
+		known = sourceCard.known;
+    }
 		
 	@Override
 	public MagicCard copy(final MagicCopyMap copyMap) {
-		final MagicCard copy = new MagicCard(this.cardDefinition, copyMap.copy(this.owner), this.id);
-		copy.token = this.token;
-		copy.known = this.known;
-        return copy;
-	}
+        return new MagicCard(copyMap, this); 
+    }
 	
 	@Override
 	public MagicCard map(final MagicGame game) {
