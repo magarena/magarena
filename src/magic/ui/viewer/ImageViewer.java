@@ -69,7 +69,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 		}
 	}
 	
-	private synchronized static File rndFile() {
+	private static synchronized File rndFile() {
 		if (imageFiles.isEmpty()) {
 			return null;
 		}
