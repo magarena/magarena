@@ -119,7 +119,7 @@ public class CardDefinitions {
 		}
 	}
 	
-	public void addDefinition(final MagicCardDefinition cardDefinition) {
+	private void addDefinition(final MagicCardDefinition cardDefinition) {
 		cardDefinition.setIndex(cards.size());
 		cards.add(cardDefinition);
 		cardsMap.put(cardDefinition.getFullName(),cardDefinition);
@@ -148,7 +148,7 @@ public class CardDefinitions {
         }
 	}
 	
-	public void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
+	private void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
 		for (final MagicCardDefinition cardDefinition : cardDefinitions) {
 			addDefinition(cardDefinition);
 		}
@@ -238,7 +238,7 @@ public class CardDefinitions {
 		return cards;
 	}
 	
-	public List<MagicCardDefinition> getLandCards() {
+	List<MagicCardDefinition> getLandCards() {
 		return landCards;
 	}
 	
@@ -246,7 +246,7 @@ public class CardDefinitions {
 		return spellCards;
 	}
 	
-	public void printStatistics() {
+	private void printStatistics() {
 		final CardStatistics statistics=new CardStatistics(cards);
 		statistics.printStatictics(System.err);
 	}

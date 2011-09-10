@@ -43,7 +43,7 @@ public class FileIO {
         return toStr(new BufferedReader(new FileReader(aFile)));
     }
     
-    public static String toStr(final InputStream ins) throws IOException {
+    static String toStr(final InputStream ins) throws IOException {
         return toStr(new BufferedReader(new InputStreamReader(ins)));
     }
 
@@ -84,7 +84,7 @@ public class FileIO {
         return img;
     }
     
-    public static BufferedImage toImg(final URL loc, final BufferedImage def) {
+    static BufferedImage toImg(final URL loc, final BufferedImage def) {
         BufferedImage img = def;
         if (loc == null) {
             img = def;
@@ -139,7 +139,7 @@ public class FileIO {
         }
     }
 
-    public static void close(final Closeable resource) {
+    static void close(final Closeable resource) {
         if (resource == null) {
             return;
         }

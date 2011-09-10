@@ -256,7 +256,7 @@ public class GeneralConfig {
 		this.sound=sound;
 	}
 	
-	public void load(final Properties properties) {
+	private void load(final Properties properties) {
 	
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
 		top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -283,7 +283,7 @@ public class GeneralConfig {
         load(FileIO.toProp(getConfigFile()));
 	}
 	
-	public void save(final Properties properties) {
+	private void save(final Properties properties) {
 		properties.setProperty(LEFT,String.valueOf(left));
 		properties.setProperty(TOP,String.valueOf(top));
 		properties.setProperty(WIDTH,String.valueOf(width));

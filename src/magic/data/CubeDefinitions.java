@@ -15,7 +15,7 @@ public class CubeDefinitions {
 	private static final String[] INCLUDED_CUBES={"all"};
 	private static final String CUBE_FILE_EXTENSION="_cube.txt";
     
-    public static final String DEFAULT_NAME=INCLUDED_CUBES[0];
+    static final String DEFAULT_NAME=INCLUDED_CUBES[0];
 	
 	private static final FileFilter CUBE_FILE_FILTER=new FileFilter() {
 		@Override

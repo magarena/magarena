@@ -14,7 +14,7 @@ public class DownloadImageFile {
 	private final File file;
 	private final URL url;
 	
-	public DownloadImageFile(final File file, final URL url) {
+	DownloadImageFile(final File file, final URL url) {
 		this.file=file;
 		this.url=url;
 	}

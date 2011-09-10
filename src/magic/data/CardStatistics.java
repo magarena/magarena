@@ -44,13 +44,13 @@ public class CardStatistics {
 	
 	private final Collection<MagicCardDefinition> cards;
 	
-	public int totalCards=0;
+	private int totalCards=0;
 	public int totalTypes[]=new int[NR_OF_TYPES];
 	
-	public int totalRarity[]=new int[MagicRarity.length];
+	private int totalRarity[]=new int[MagicRarity.length];
 	
-	public double averageCost=0;
-	public double averageValue=0;
+	private double averageCost=0;
+	private double averageValue=0;
 	
 	public int colorCount[]=new int[MagicColor.NR_COLORS];
 	public int colorMono[]=new int[MagicColor.NR_COLORS];
@@ -138,7 +138,7 @@ public class CardStatistics {
 		}
 	}
 	
-	public void printStatictics(final PrintStream stream) {
+	void printStatictics(final PrintStream stream) {
 
 		stream.print("Cards : "+totalCards);
 		for (int index=0;index<NR_OF_TYPES;index++) {

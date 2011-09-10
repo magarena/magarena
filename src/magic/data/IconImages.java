@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class IconImages {
 
     //use mana symbols by goblin hero if it exists
-    static final BufferedImage MANA = loadImage("icons/Mana.png");
+    private static final BufferedImage MANA = loadImage("icons/Mana.png");
 
 	public static final BufferedImage MISSING=loadImage("icons/missing.png");
 	public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
