@@ -5,13 +5,13 @@ public class ArtificialSinglePruneScore implements ArtificialPruneScore {
 	private final int score;
 	private final boolean best;
 
-	public ArtificialSinglePruneScore(final int score,final boolean best) {
+	private ArtificialSinglePruneScore(final int score,final boolean best) {
 		
 		this.score=score;
 		this.best=best;
 	}
 	
-	public ArtificialSinglePruneScore() {
+	private ArtificialSinglePruneScore() {
 
 		this(Integer.MIN_VALUE,true);
 	}

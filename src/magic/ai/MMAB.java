@@ -27,12 +27,12 @@ public class MMAB implements MagicAI {
     private int processingLeft;
 	private ArtificialPruneScore pruneScore;
 
-    public MMAB() {
+    MMAB() {
         //default: no logging, no cheats
         this(false, false);
     }
     
-    public MMAB(final boolean log, final boolean cheat) {
+    MMAB(final boolean log, final boolean cheat) {
         LOGGING = log || (System.getProperty("debug") != null);
         CHEAT = cheat;
     }

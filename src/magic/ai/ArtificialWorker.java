@@ -22,7 +22,7 @@ public class ArtificialWorker {
 	private int maxDepth;
 	private int maxGames;
 	
-	public ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
+	ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
 		this.id=id;
 		this.game=game;
 		this.scoreBoard=scoreBoard;
@@ -106,7 +106,7 @@ public class ArtificialWorker {
 		return aiScore;
 	}
 
-	public void evaluateGame(
+	void evaluateGame(
             final ArtificialChoiceResults aiChoiceResults,
             final ArtificialPruneScore pruneScore,
 			final int mainPhases,

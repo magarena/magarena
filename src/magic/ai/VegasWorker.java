@@ -18,7 +18,7 @@ public class VegasWorker implements Runnable {
 	private final Random random;
 	private final int simulations;
 	
-	public VegasWorker(final MagicGame sourceGame,final MagicPlayer scorePlayer,final VegasScore score,final Random random,final int simulations) {
+	VegasWorker(final MagicGame sourceGame,final MagicPlayer scorePlayer,final VegasScore score,final Random random,final int simulations) {
 
 		this.sourceGame=sourceGame;
 		this.scorePlayer=scorePlayer;

@@ -7,11 +7,11 @@ public class MiniMaxAlphaBetaAI implements MagicAI {
 	
     private final boolean CHEAT;
     
-    public MiniMaxAlphaBetaAI() {
+    private MiniMaxAlphaBetaAI() {
         this(false);
     }
 
-    public MiniMaxAlphaBetaAI(final boolean cheat) {
+    private MiniMaxAlphaBetaAI(final boolean cheat) {
         CHEAT = cheat;
     }
 

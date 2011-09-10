@@ -5,13 +5,13 @@ public class ArtificialMultiPruneScore implements ArtificialPruneScore {
 	private final int maxBest;
 	private final int minWorst;
 	
-	public ArtificialMultiPruneScore(final int maxBest,final int minWorst) {
+	private ArtificialMultiPruneScore(final int maxBest,final int minWorst) {
 
 		this.maxBest=maxBest;
 		this.minWorst=minWorst;
 	}
 	
-	public ArtificialMultiPruneScore() {
+	ArtificialMultiPruneScore() {
 
 		this(Integer.MIN_VALUE,Integer.MAX_VALUE);
 	}

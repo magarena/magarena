@@ -25,13 +25,13 @@ public class ArtificialWorkerPool {
 	private int processingLeft;
 	private ArtificialPruneScore pruneScore;
 
-	public ArtificialWorkerPool(final MagicGame game,final MagicPlayer scorePlayer) {
+	ArtificialWorkerPool(final MagicGame game,final MagicPlayer scorePlayer) {
 		sourceGame=game;
 		this.scorePlayer=scorePlayer;
 		workers=new LinkedList<ArtificialWorker>();
 	}
 
-    public synchronized void setCheat(final boolean cheat) {
+    synchronized void setCheat(final boolean cheat) {
         CHEAT = cheat;
     }
 	
@@ -52,7 +52,7 @@ public class ArtificialWorkerPool {
 		return new ArtificialMultiPruneScore();
 	}
 	
-	public synchronized Object[] findNextEventChoiceResults() {
+	synchronized Object[] findNextEventChoiceResults() {
 		// Logging
 		long time=System.currentTimeMillis();
 

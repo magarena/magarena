@@ -55,9 +55,9 @@ Monte-Carlo Tree Search in Lines of Action
 */
 public class MCTSAI implements MagicAI {
     
-    static int MIN_SCORE = Integer.MAX_VALUE;
+    private static int MIN_SCORE = Integer.MAX_VALUE;
     static int MIN_SIM = Integer.MAX_VALUE;
-    static int MAX_ACTIONS = 10000;
+    private static final int MAX_ACTIONS = 10000;
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
 
@@ -92,7 +92,7 @@ public class MCTSAI implements MagicAI {
     //cache nodes to reuse them in later decision
     private final LRUCache<Long, MCTSGameTree> CACHE = new LRUCache<Long, MCTSGameTree>(1000);
 
-    public MCTSAI() {
+    MCTSAI() {
         //default: no logging, cheats
         this(false, true);
     }
@@ -478,13 +478,13 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     private int steps = 0;
     private double sum = 0;
     private double S = 0;
-    public String desc;
-    public String[] choicesStr;
+    String desc;
+    private String[] choicesStr;
     
     //min sim for using robust max
     private int maxChildSim = MCTSAI.MIN_SIM;     
     
-    public MCTSGameTree(final MCTSGameTree parent, final int choice, final int evalScore) { 
+    MCTSGameTree(final MCTSGameTree parent, final int choice, final int evalScore) { 
         this.evalScore = evalScore;
         this.choice = choice;
         this.parent = parent;
@@ -495,11 +495,11 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return true;
     }
     
-    public static int obj2StringHash(final Object obj) {
+    private static int obj2StringHash(final Object obj) {
         return obj2String(obj).hashCode();
     }
 
-    public static String obj2String(final Object obj) {
+    static String obj2String(final Object obj) {
         if (obj == null) {
             return "null";
         } else if (obj instanceof MagicBuilderPayManaCostResult) {
@@ -581,19 +581,19 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
 
 
-    public boolean isCached() {
+    boolean isCached() {
         return isCached;
     }
 
-    public void setCached() {
+    private void setCached() {
         isCached = true;
     }
 
-    public boolean hasDetails() {
+    boolean hasDetails() {
         return maxChildren != -1;
     }
 
-    public boolean setChoicesStr(final List<Object[]> choices) {
+    boolean setChoicesStr(final List<Object[]> choices) {
         choicesStr = new String[choices.size()];
         for (int i = 0; i < choices.size(); i++) {
             choicesStr[i] = obj2String(choices.get(i)[0]);
@@ -601,31 +601,31 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return true;
     }
 
-    public void setMaxChildren(final int mc) {
+    void setMaxChildren(final int mc) {
         maxChildren = mc;
     }
     
-    public int getMaxChildren() {
+    private int getMaxChildren() {
         return maxChildren;
     }
 
-    public boolean isAI() {
+    boolean isAI() {
         return isAI;
     }
 
-    public boolean isOpp() {
+    boolean isOpp() {
         return !isAI;
     }
     
-    public void setIsAI(final boolean ai) {
+    void setIsAI(final boolean ai) {
         this.isAI = ai;
     }
 
-    public boolean isSolved() {
+    boolean isSolved() {
         return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
     
-    public void updateScore(final MCTSGameTree child, final double delta) {
+    void updateScore(final MCTSGameTree child, final double delta) {
         final double oldMean = (numSim > 0) ? sum/numSim : 0;
         sum += delta;
         numSim += 1;
@@ -640,20 +640,20 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         }
     }
     
-    public double getUCT() {
+    double getUCT() {
         return getV() + MCTSAI.UCB1_C * Math.sqrt(Math.log(parent.getNumSim()) / getNumSim());
     }
     
-    public double getRatio() {
+    private double getRatio() {
         return (getSum() + MCTSAI.RATIO_K)/(getNumSim() + 2*MCTSAI.RATIO_K);
     }
 
-    public double getNormal() {
+    private double getNormal() {
         return Math.max(1.0, getV() + 2 * Math.sqrt(getVar()));
     }
     
     //decrease score of lose node, boost score of win nodes
-    public double modify(final double sc) {
+    double modify(final double sc) {
         if ((!parent.isAI() && isAIWin()) || (parent.isAI() && isAILose())) {
             return sc - 2.0;
         } else if ((parent.isAI() && isAIWin()) || (!parent.isAI() && isAILose())) {
@@ -663,7 +663,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         } 
     }
 
-    public double getVar() {
+    private double getVar() {
         final int MIN_SAMPLES = 10;
         if (numSim < MIN_SAMPLES) {
             return 1.0;
@@ -672,15 +672,15 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         }
     }
 
-    public boolean isAIWin() {
+    boolean isAIWin() {
         return evalScore == Integer.MAX_VALUE;
     }
     
-    public boolean isAILose() {
+    boolean isAILose() {
         return evalScore == Integer.MIN_VALUE;
     }
 
-    public void incLose(final int lsteps) {
+    void incLose(final int lsteps) {
         numLose++;
         steps = Math.max(steps, lsteps);
         if (numLose == maxChildren) {
@@ -692,29 +692,29 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         }
     }
 
-    public int getChoice() {
+    int getChoice() {
         return choice;
     }
     
-    public int getSteps() {
+    int getSteps() {
         return steps;
     }
 
-    public void setAIWin(final int aSteps) {
+    void setAIWin(final int aSteps) {
         this.evalScore = Integer.MAX_VALUE;
         this.steps = aSteps;
     }
 
-    public void setAILose(final int aSteps) {
+    void setAILose(final int aSteps) {
         evalScore = Integer.MIN_VALUE;
         this.steps = aSteps;
     }
 
-    public int getEvalScore() {
+    private int getEvalScore() {
         return evalScore;
     }
     
-    public double getDecision() {
+    double getDecision() {
         //boost decision score of win nodes by BOOST 
         final int BOOST = 1000000;
         if (isAIWin()) {
@@ -726,32 +726,32 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         }
     }
     
-    public int getNumSim() {
+    int getNumSim() {
         return numSim;
     }
     
-    public double getSum() {
+    private double getSum() {
         return parent.isAI() ? sum : 1.0 - sum;
     }
     
-    public double getAvg() {
+    private double getAvg() {
         return sum / numSim;
     }
 
-    public double getV() {
+    double getV() {
         return getSum() / numSim;
     }
    
-    public double getSecureScore() {
+    private double getSecureScore() {
         return getV() + 1.0/Math.sqrt(numSim);
     }
 
-    public void addChild(final MCTSGameTree child) {
+    void addChild(final MCTSGameTree child) {
         assert children.size() < maxChildren : "ERROR! Number of children nodes exceed maxChildren";
         children.add(child);
     }
     
-    public MCTSGameTree first() {
+    MCTSGameTree first() {
         return children.get(0);
     }
     
@@ -759,7 +759,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return children.iterator();
     }
 
-    public int size() {
+    int size() {
         return children.size();
     }
 }

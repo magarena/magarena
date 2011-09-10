@@ -2,25 +2,25 @@ package magic.ai;
 
 public class ArtificialScore {
 
-	public static final ArtificialScore INVALID_SCORE=new ArtificialScore(0,0);
-	public static final ArtificialScore MAXIMUM_DEPTH_EXCEEDED_SCORE=new ArtificialScore(0,0);
+	static final ArtificialScore INVALID_SCORE=new ArtificialScore(0,0);
+	static final ArtificialScore MAXIMUM_DEPTH_EXCEEDED_SCORE=new ArtificialScore(0,0);
 	
-	public int score;
-	public int depth;
+	int score;
+	private int depth;
 	
-	public ArtificialScore(final int score,final int depth) {
+	ArtificialScore(final int score,final int depth) {
 		this.score=score;
 		this.depth=depth;
 	}
 
-	public ArtificialScore getScore(final int depthIncr) {
+	ArtificialScore getScore(final int depthIncr) {
 		if (this==INVALID_SCORE) {
 			return INVALID_SCORE;
 		}
 		return new ArtificialScore(score,depth+depthIncr);
 	}
 	
-	public boolean isBetter(final ArtificialScore other,final boolean best) {
+	boolean isBetter(final ArtificialScore other,final boolean best) {
 		if (other==INVALID_SCORE) {
 			return false;
 		} else if (this==INVALID_SCORE) {
