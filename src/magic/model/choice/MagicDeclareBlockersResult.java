@@ -15,12 +15,12 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
 	private final int position;
 	private final int score;
 
-	public MagicDeclareBlockersResult(final int position,final int score) {
+	MagicDeclareBlockersResult(final int position,final int score) {
 		this.position=position;
 		this.score=score;		
 	}
 	
-	public MagicDeclareBlockersResult(final MagicDeclareBlockersResult result,final int position,final int score) {
+	MagicDeclareBlockersResult(final MagicDeclareBlockersResult result,final int position,final int score) {
 		this(position,score);
 		for (final MagicCombatCreature creatures[] : result) {
 			add(Arrays.copyOf(creatures,creatures.length));

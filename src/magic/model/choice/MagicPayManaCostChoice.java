@@ -28,7 +28,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 		this.cost=cost;
 	}
 	
-	public MagicManaCost getCost() {
+	private MagicManaCost getCost() {
 
 		return cost;
 	}
@@ -40,7 +40,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 	}
 
 	@Override
-	public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+	boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
 
 		final MagicPayManaCostResultBuilder builder=new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost());
 		return builder.hasResults();
@@ -65,7 +65,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 	}
 
 	@Override
-	public Collection<Object> getArtificialOptions(
+	Collection<Object> getArtificialOptions(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,

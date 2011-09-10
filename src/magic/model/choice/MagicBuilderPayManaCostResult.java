@@ -20,7 +20,7 @@ public class MagicBuilderPayManaCostResult implements
 	private int x;
 	private int hashCode;
 	
-	public MagicBuilderPayManaCostResult(final List<MagicSourceManaActivation> sourceActivations) {
+	MagicBuilderPayManaCostResult(final List<MagicSourceManaActivation> sourceActivations) {
 		count=0;
 		x=0;
 		amountLeft=new short[MagicManaType.NR_OF_TYPES];
@@ -57,7 +57,7 @@ public class MagicBuilderPayManaCostResult implements
 	}
 
 	/** Finishes construction when needed. */
-	public void buildResults(final List<MagicSourceManaActivation> sourceActivations,final MagicBuilderManaCost cost) {
+	void buildResults(final List<MagicSourceManaActivation> sourceActivations,final MagicBuilderManaCost cost) {
 		x=cost.getX(count);
 		results=new MagicSourceManaActivationResult[count];
 		int index=0;
@@ -68,7 +68,7 @@ public class MagicBuilderPayManaCostResult implements
 		}
 	}
 		
-	public int getWeight() {
+	int getWeight() {
 		return weight;
 	}
 	

@@ -29,7 +29,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
 	}
 	
 	@Override
-	public Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
+	Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
 
 		throw new UnsupportedOperationException();
 	}

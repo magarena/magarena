@@ -18,7 +18,7 @@ import java.util.List;
 
 public class MagicMayChoice extends MagicChoice {
 	
-	public static final List<Object[]> NO_OTHER_CHOICE_RESULTS=Arrays.asList(
+	private static final List<Object[]> NO_OTHER_CHOICE_RESULTS=Arrays.asList(
             new Object[]{YES_CHOICE},
             new Object[]{NO_CHOICE});
 	
@@ -39,7 +39,7 @@ public class MagicMayChoice extends MagicChoice {
 		}
 	}
 			
-	public MagicChoice[] getChoices() {
+	private MagicChoice[] getChoices() {
 		return choices;
 	}
 
@@ -54,7 +54,7 @@ public class MagicMayChoice extends MagicChoice {
 	}
 	
 	@Override
-	public Collection<Object> getArtificialOptions(
+	Collection<Object> getArtificialOptions(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,

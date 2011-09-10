@@ -20,13 +20,13 @@ public class MagicDeclareAttackersResultBuilder {
 	private final MagicPlayer attackingPlayer;
 	private final MagicPlayer defendingPlayer;
 	
-	public MagicDeclareAttackersResultBuilder(final MagicGame game,final MagicPlayer attackingPlayer) {
+	MagicDeclareAttackersResultBuilder(final MagicGame game,final MagicPlayer attackingPlayer) {
 		this.game=game;
 		this.attackingPlayer=attackingPlayer;
 		this.defendingPlayer=game.getOpponent(attackingPlayer);
 	}
 	
-	public Collection<Object> buildResults() {
+	Collection<Object> buildResults() {
 		final MagicCombatCreatureBuilder creatureBuilder=new MagicCombatCreatureBuilder(game,attackingPlayer,defendingPlayer);
 		creatureBuilder.buildBlockers();
 		

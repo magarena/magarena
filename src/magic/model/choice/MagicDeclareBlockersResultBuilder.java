@@ -38,7 +38,7 @@ public class MagicDeclareBlockersResultBuilder {
 	private Set<MagicCombatCreature> blockers;
 	private int position;
 		
-	public MagicDeclareBlockersResultBuilder(final MagicGame game,final MagicPlayer defendingPlayer,final boolean fast) {
+	MagicDeclareBlockersResultBuilder(final MagicGame game,final MagicPlayer defendingPlayer,final boolean fast) {
 		this.game=game;
 		this.defendingPlayer=defendingPlayer;
 		this.attackingPlayer=game.getOpponent(defendingPlayer);
@@ -54,7 +54,7 @@ public class MagicDeclareBlockersResultBuilder {
 		defendingPlayer.setCached(game,false);
 	}
 
-	public Collection<Object> getResults() {
+	Collection<Object> getResults() {
 		return results == null ? EMPTY_RESULT : results.getResults();
 	}
 	

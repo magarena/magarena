@@ -49,7 +49,7 @@ public class MagicKickerChoice extends MagicChoice {
 	}
 
 	@Override
-	public Collection<Object> getArtificialOptions(
+	Collection<Object> getArtificialOptions(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,

@@ -49,11 +49,11 @@ public class MagicBuilderManaCost {
 		}
 	}
 	
-	public MagicCostManaType[] getTypes() {
+	MagicCostManaType[] getTypes() {
 		return compressedTypes;
 	}
 	
-	public int[] getAmounts() {
+	int[] getAmounts() {
 		return compressedAmounts;
 	}
 	
@@ -66,11 +66,11 @@ public class MagicBuilderManaCost {
 		hasX=true;
 	}
 		
-	public boolean hasX() {
+	boolean hasX() {
 		return hasX;
 	}
 	
-	public int getX(final int amount) {
+	int getX(final int amount) {
 		return hasX?amount-minimumAmount+1:0;
 	}
 
@@ -89,7 +89,7 @@ public class MagicBuilderManaCost {
 		}
 	}
 	
-	public void removeType(final MagicCostManaType type,final int amount) {
+	void removeType(final MagicCostManaType type,final int amount) {
 		final int index=type.ordinal();
 		amounts[index]-=amount;
 		if (amounts[index]<=0) {
@@ -98,7 +98,7 @@ public class MagicBuilderManaCost {
 		minimumAmount-=amount;
 	}
 	
-	public void addTypes(final List<MagicCostManaType> types) {
+	void addTypes(final List<MagicCostManaType> types) {
 		for (final MagicCostManaType type : types) {
 			addType(type,1);
 		}

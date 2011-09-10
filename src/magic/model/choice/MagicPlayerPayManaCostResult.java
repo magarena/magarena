@@ -8,7 +8,7 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
 	private final int x;
 	private final int converted;
 	
-	public MagicPlayerPayManaCostResult(final int x,final int converted) {
+	MagicPlayerPayManaCostResult(final int x,final int converted) {
 
 		this.x=x;
 		this.converted=converted;

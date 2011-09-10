@@ -153,7 +153,7 @@ public class MagicPayManaCostResultBuilder {
 	}
 
 	/** Finds all possible options to pay the cost for AI. */
-	public Collection<Object> getResults() {
+	Collection<Object> getResults() {
 		for (final MagicSourceManaActivation activation : activations) {
 			activation.available=true;
 		}
@@ -163,7 +163,7 @@ public class MagicPayManaCostResultBuilder {
 	}	
 	
 	/** Find all possible mana sources to pay one mana of given type for the player. */
-	public Set<Object> getManaSources(final MagicCostManaType type,final boolean all) {
+	Set<Object> getManaSources(final MagicCostManaType type,final boolean all) {
 		cost.removeType(type,1);
 		cost.compress();
 		types=cost.getTypes();
@@ -194,7 +194,7 @@ public class MagicPayManaCostResultBuilder {
 		return manaSources;
 	}
 	
-	public void useManaSource(final MagicPermanent permanent,final MagicCostManaType type) {
+	void useManaSource(final MagicPermanent permanent,final MagicCostManaType type) {
 		// Use the mana activation.
 		final MagicSourceManaActivation sourceActivation=new MagicSourceManaActivation(game,permanent);
 		sourceActivation.produce(game,type);
@@ -212,7 +212,7 @@ public class MagicPayManaCostResultBuilder {
 	}
 	
 	/** Works only for all the remaining colorless mana. */
-	public boolean useAllManaSources(final MagicCostManaType type) {
+	boolean useAllManaSources(final MagicCostManaType type) {
 		if (activationsSize>cost.getMinimumAmount()||type!=MagicCostManaType.Colorless) {
 			return false;
 		}

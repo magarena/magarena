@@ -162,7 +162,7 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.Positive,"target creature or player");
 	public static final MagicTargetChoice POS_TARGET_MERFOLK_CREATURE =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_MERFOLK_CREATURE,true,MagicTargetHint.Positive,"target Merfolk creature");
-	public static final MagicTargetChoice SACRIFICE_PERMANENT=
+	private static final MagicTargetChoice SACRIFICE_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a creature to sacrifice");
@@ -248,7 +248,7 @@ public class MagicTargetChoice extends MagicChoice {
 	}
 
 	@Override
-	public final boolean hasOptions(
+	final boolean hasOptions(
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source,
@@ -258,7 +258,7 @@ public class MagicTargetChoice extends MagicChoice {
 	
 	@Override
     @SuppressWarnings("unchecked")
-	public final Collection<Object> getArtificialOptions(
+	final Collection<Object> getArtificialOptions(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,

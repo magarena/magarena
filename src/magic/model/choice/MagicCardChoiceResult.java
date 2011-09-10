@@ -11,11 +11,11 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
 		
 	private static final long serialVersionUID = 1L;
 
-	public MagicCardChoiceResult(final MagicCard cards[]) {
+	MagicCardChoiceResult(final MagicCard cards[]) {
 		addAll(Arrays.asList(cards));
 	}
 	
-	public MagicCardChoiceResult() {}
+	MagicCardChoiceResult() {}
 	
 	@Override
 	public MagicCardChoiceResult map(final MagicGame game) {

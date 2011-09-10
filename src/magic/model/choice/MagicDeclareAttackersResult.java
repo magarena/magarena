@@ -12,15 +12,15 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
 
 	private static final long serialVersionUID = 1L;
 	
-	public MagicDeclareAttackersResult() {}
+	MagicDeclareAttackersResult() {}
 
-	public MagicDeclareAttackersResult(final MagicPermanent attackers[],final int length,final int position,final int score) {
+	MagicDeclareAttackersResult(final MagicPermanent attackers[],final int length,final int position,final int score) {
 		for (int index=0;index<length;index++) {
 			add(attackers[index]);
 		}
 	}
 	
-	public void addCreatures(final Collection<MagicCombatCreature> creatures) {
+	void addCreatures(final Collection<MagicCombatCreature> creatures) {
 		for (final MagicCombatCreature creature : creatures) {
 			add(creature.permanent);
 		}

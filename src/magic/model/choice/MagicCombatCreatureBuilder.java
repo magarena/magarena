@@ -33,7 +33,7 @@ public class MagicCombatCreatureBuilder {
 	private SortedSet<MagicCombatCreature> attackers;
 	private Set<MagicCombatCreature> blockers;
 	
-	public MagicCombatCreatureBuilder(
+	MagicCombatCreatureBuilder(
             final MagicGame game,
             final MagicPlayer attackingPlayer,
             final MagicPlayer defendingPlayer) {
@@ -43,7 +43,7 @@ public class MagicCombatCreatureBuilder {
 	}
 
 	/** Must be called before building attackers. */
-	public boolean buildBlockers() {
+	boolean buildBlockers() {
 		blockers=new HashSet<MagicCombatCreature>();
 		for (final MagicPermanent permanent : defendingPlayer.getPermanents()) {
 			if (permanent.canBlock(game)) {
@@ -59,7 +59,7 @@ public class MagicCombatCreatureBuilder {
 		return attacker;
 	}
 
-	public boolean buildAttackers() {
+	boolean buildAttackers() {
 		attackers=new TreeSet<MagicCombatCreature>(ATTACKER_COMPARATOR);
 		for (final MagicPermanent permanent : attackingPlayer.getPermanents()) {
 			if (permanent.canAttack(game)) {
@@ -69,7 +69,7 @@ public class MagicCombatCreatureBuilder {
 		return attackers.size()>0;
 	}
 	
-	public boolean buildBlockableAttackers() {
+	boolean buildBlockableAttackers() {
 		attackers=new TreeSet<MagicCombatCreature>(ATTACKER_COMPARATOR);
 		for (final MagicPermanent permanent : attackingPlayer.getPermanents()) {
 			if (permanent.isAttacking()&&permanent.canBeBlocked(game,defendingPlayer)) {
@@ -82,15 +82,15 @@ public class MagicCombatCreatureBuilder {
 		return attackers.size()>0;
 	}
 		
-	public SortedSet<MagicCombatCreature> getAttackers() {
+	SortedSet<MagicCombatCreature> getAttackers() {
 		return attackers;
 	}
 	
-	public Set<MagicCombatCreature> getBlockers() {
+	Set<MagicCombatCreature> getBlockers() {
 		return blockers;
 	}
 	
-	public Set<MagicPermanent> getCandidateBlockers() {
+	Set<MagicPermanent> getCandidateBlockers() {
 		final Set<MagicPermanent> candidateBlockers=new HashSet<MagicPermanent>();
 		for (final MagicCombatCreature attacker : attackers) {
 			for (final MagicCombatCreature blocker : attacker.candidateBlockers) {
@@ -100,7 +100,7 @@ public class MagicCombatCreatureBuilder {
 		return candidateBlockers;		
 	}
 	
-	public Set<MagicPermanent> getBlockableAttackers(final MagicPermanent blocker) {
+	Set<MagicPermanent> getBlockableAttackers(final MagicPermanent blocker) {
 		final Set<MagicPermanent> blockableAttackers=new HashSet<MagicPermanent>();
 		for (final MagicCombatCreature attacker : attackers) {
 			for (final MagicCombatCreature candidateBlocker : attacker.candidateBlockers) {

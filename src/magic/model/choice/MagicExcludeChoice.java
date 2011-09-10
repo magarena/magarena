@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MagicExcludeChoice extends MagicChoice {
 
-	public static final MagicChoice INSTANCE=new MagicExcludeChoice();
+	private static final MagicChoice INSTANCE=new MagicExcludeChoice();
 	private static final Collection<Object> EMPTY_EXCLUDE_RESULT=Collections.<Object>singleton(new MagicExcludeResult());
 	
 	private MagicExcludeChoice() {
@@ -26,7 +26,7 @@ public class MagicExcludeChoice extends MagicChoice {
 	}
 	
 	@Override
-	public Collection<Object> getArtificialOptions(
+	Collection<Object> getArtificialOptions(
             final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,

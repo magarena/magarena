@@ -15,7 +15,7 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
 	private final MagicManaCost cost;
 	private final int x;
 	
-	public MagicDelayedPayManaCostResult(final MagicManaCost cost,final int x) {
+	MagicDelayedPayManaCostResult(final MagicManaCost cost,final int x) {
 		this.cost=cost;
 		this.x=x;
 	}

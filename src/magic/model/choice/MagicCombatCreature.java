@@ -20,10 +20,10 @@ public class MagicCombatCreature {
 	public final int lethalDamage;
 	public final boolean normalDamage;
 	public MagicCombatCreature candidateBlockers[] = new MagicCombatCreature[0];
-	public int attackerScore=0;
+	int attackerScore=0;
 	private final long flags;
 	
-	public MagicCombatCreature(final MagicGame game,final MagicPermanent permanent) {
+	MagicCombatCreature(final MagicGame game,final MagicPermanent permanent) {
 		this.permanent = permanent;
 		this.score = permanent.getScore(game);
 		final MagicPowerToughness pt = permanent.getPowerToughness(game);
@@ -38,7 +38,7 @@ public class MagicCombatCreature {
             !MagicAbility.Infect.hasAbility(flags);
 	}
 	
-	public MagicCombatCreature(final MagicGame game,final MagicCombatCreature creature) {
+	MagicCombatCreature(final MagicGame game,final MagicCombatCreature creature) {
 		permanent=creature.permanent.map(game);
 		score=creature.score;
 		power=creature.power;
@@ -51,7 +51,7 @@ public class MagicCombatCreature {
 		return ability.hasAbility(flags);
 	}
 	
-	public void setAttacker(final MagicGame game,final Set<MagicCombatCreature> blockers) {
+	void setAttacker(final MagicGame game,final Set<MagicCombatCreature> blockers) {
 		final SortedSet<MagicCombatCreature> candidateBlockersSet = 
             new TreeSet<MagicCombatCreature>(new BlockerComparator(this));
 		for (final MagicCombatCreature blocker : blockers) {

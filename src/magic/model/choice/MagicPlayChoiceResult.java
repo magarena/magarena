@@ -13,7 +13,7 @@ public class MagicPlayChoiceResult implements MagicMappable {
     public MagicSource source;
 	public MagicActivation activation;
 	
-	public MagicPlayChoiceResult(final MagicSource source,final MagicActivation activation) {
+	MagicPlayChoiceResult(final MagicSource source,final MagicActivation activation) {
 		this.source=source;
 		this.activation=activation;
 	}

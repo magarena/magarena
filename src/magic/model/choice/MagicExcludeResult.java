@@ -17,12 +17,12 @@ public class MagicExcludeResult implements MagicMappable {
 	private final List<MagicPermanent> excludePermanents;
 	private final int excludeFlags;
 	
-	public MagicExcludeResult(final List<MagicPermanent> excludePermanents,final int excludeFlags) {
+	MagicExcludeResult(final List<MagicPermanent> excludePermanents,final int excludeFlags) {
 		this.excludePermanents=excludePermanents;
 		this.excludeFlags=excludeFlags;
 	}
 	
-	public MagicExcludeResult() {
+	MagicExcludeResult() {
 		this(NO_EXCLUDE_PERMANENTS,0);
 	}
 	

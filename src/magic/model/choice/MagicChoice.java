@@ -14,8 +14,8 @@ import java.util.List;
 
 public abstract class MagicChoice {
 	
-	public static final String YES_CHOICE="yes";
-	public static final String NO_CHOICE="no";
+	static final String YES_CHOICE="yes";
+	static final String NO_CHOICE="no";
 	
 	public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
 
@@ -44,7 +44,7 @@ public abstract class MagicChoice {
 	
 	private final String description;
 	
-	public MagicChoice(final String description) {
+	MagicChoice(final String description) {
 		this.description=description;
 	}
 	
@@ -65,12 +65,12 @@ public abstract class MagicChoice {
     }
 
 	/** Checks if there are valid options for the choice. */
-	public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+	boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
 		return true;
 	}
 	
 	/** Gets the available options for AI. */
-	public abstract Collection<Object> getArtificialOptions(
+	abstract Collection<Object> getArtificialOptions(
 			final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source);
 	
 	/** Gets the choice results for AI. */
