@@ -15,7 +15,7 @@ public class MagicPlayerProfile {
 		}
 	}
 	
-	public String getColorText() {
+	String getColorText() {
 		
 		return colorText;
 	}
@@ -25,7 +25,7 @@ public class MagicPlayerProfile {
 		return colors;
 	}
 	
-	public int getNrOfColors() {
+	int getNrOfColors() {
 		
 		return colors.length;
 	}
@@ -39,7 +39,7 @@ public class MagicPlayerProfile {
 		}
 	}
 	
-	public boolean allowsManaType(final MagicManaType manaType) {
+	boolean allowsManaType(final MagicManaType manaType) {
 		
 		for (final MagicColor color : colors) {
 			

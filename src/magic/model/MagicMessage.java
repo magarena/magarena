@@ -13,7 +13,7 @@ public class MagicMessage {
 	private final MagicPhaseType phaseType;
 	private final String text;
 	
-	public MagicMessage(final MagicGame game,final MagicPlayer player,final String text) {
+	MagicMessage(final MagicGame game,final MagicPlayer player,final String text) {
 		this.player=player;
 		this.life=player.getLife();
 		this.turn=game.getTurn();
@@ -41,7 +41,7 @@ public class MagicMessage {
 		return text;
 	}
 
-	public static void addNames(final StringBuilder builder,final Collection<String> names) {
+	static void addNames(final StringBuilder builder,final Collection<String> names) {
 		if (!names.isEmpty()) {
 			boolean first=true;
 			boolean next;

@@ -15,12 +15,12 @@ public class MagicPayedCost {
 		clear();
 	}
 	
-	public MagicPayedCost(final MagicCopyMap copyMap,final MagicPayedCost payedCost) {
+	MagicPayedCost(final MagicCopyMap copyMap,final MagicPayedCost payedCost) {
 		target=copyMap.copy(payedCost.target);
 		x=payedCost.x;
 	}
 
-	public void clear() {
+	private void clear() {
 		target=MagicTargetNone.getInstance();
 		x=0;
 	}
@@ -41,7 +41,7 @@ public class MagicPayedCost {
 		return x;
 	}	
 	
-	public void set(final Object choiceResult) {
+	void set(final Object choiceResult) {
 		if (choiceResult!=null) {
 			if (choiceResult instanceof MagicTarget) {
 				setTarget((MagicTarget)choiceResult);

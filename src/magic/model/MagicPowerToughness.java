@@ -5,12 +5,12 @@ public class MagicPowerToughness {
 	public int power;
 	public int toughness;
 	
-	public MagicPowerToughness(final int power,final int toughness) {
+	MagicPowerToughness(final int power,final int toughness) {
 		this.power=power;
 		this.toughness=toughness;
 	}
 	
-	public MagicPowerToughness() {
+	private MagicPowerToughness() {
 		this(0,0);
 	}
 	
@@ -22,7 +22,7 @@ public class MagicPowerToughness {
 		return toughness>0?toughness:0;
 	}
 	
-	public void add(final int amount) {
+	void add(final int amount) {
 		power+=amount;
 		toughness+=amount;
 	}

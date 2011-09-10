@@ -55,7 +55,7 @@ public class MagicTournament {
 		return configuration;
 	}
 	
-	public MagicPlayerDefinition getOpponent() {
+	private MagicPlayerDefinition getOpponent() {
 		return playerDefinitions[opponentIndex];
 	}
 
@@ -75,7 +75,7 @@ public class MagicTournament {
 		return gamesWon;
 	}
 
-	public void determineStartPlayer() {
+	private void determineStartPlayer() {
 		startPlayer=MagicRandom.nextInt(2);
 	}
 	
@@ -83,7 +83,7 @@ public class MagicTournament {
 		this.startPlayer=startPlayer;
 	}
 	
-	public int getStartPlayer() {
+	private int getStartPlayer() {
 		return startPlayer;
 	}
 
@@ -104,11 +104,11 @@ public class MagicTournament {
         difficulty[idx] = diff;
 	}
 	
-    public int getDifficulty() {
+    int getDifficulty() {
 		return getDifficulty(0);
 	}
 	
-	public int getDifficulty(final int idx) {
+	int getDifficulty(final int idx) {
         return difficulty[idx];
 	}
 	
@@ -125,7 +125,7 @@ public class MagicTournament {
 		return getGamesPlayed()==getGamesTotal();
 	}
 	
-	public void advance(final boolean won) {
+	void advance(final boolean won) {
 		gamesPlayed++;
 		if (won) {
 			gamesWon++;
@@ -234,7 +234,7 @@ public class MagicTournament {
 		return "p"+(index+1)+".";
 	}
 	
-	public void save(final Properties properties) {
+	private void save(final Properties properties) {
 		configuration.save(properties);
 		
 		properties.setProperty(OPPONENT,Integer.toString(opponentIndex));
@@ -259,7 +259,7 @@ public class MagicTournament {
         }
 	}
 	
-	public void load(final Properties properties) {
+	private void load(final Properties properties) {
 		configuration.load(properties);
 		
 		opponentIndex=Integer.parseInt(properties.getProperty(OPPONENT,"1"));

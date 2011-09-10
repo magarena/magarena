@@ -58,7 +58,7 @@ public class MagicPlayer implements MagicTarget {
 
     private long[] keys;
 
-	public MagicPlayer(final int aLife,final MagicPlayerDefinition aPlayerDefinition,final int aIndex) {
+	MagicPlayer(final int aLife,final MagicPlayerDefinition aPlayerDefinition,final int aIndex) {
 		playerDefinition = aPlayerDefinition;
 		index = aIndex;
 		life = aLife;
@@ -110,7 +110,7 @@ public class MagicPlayer implements MagicTarget {
 		return game.getPlayer(index);
 	}
 	
-    public long getPlayerId() {
+    long getPlayerId() {
         keys = new long[] {
             life,
             poison,
@@ -131,7 +131,7 @@ public class MagicPlayer implements MagicTarget {
 		return magic.MurmurHash3.hash(keys);
     }
     
-    public String getIdString() {
+    String getIdString() {
         final StringBuilder sb = new StringBuilder();
         sb.append(keys[0]);
         for (int i = 1; i < keys.length; i++) {
@@ -141,7 +141,7 @@ public class MagicPlayer implements MagicTarget {
         return sb.toString();
     }
 	
-	public long getPlayerId(final long id) {
+	long getPlayerId(final long id) {
 		// Exile is not used for id.
 		long playerId=id;
         playerId=playerId*ID_FACTOR+life;
@@ -215,7 +215,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 
 	/** Life to use when determining if a player has lost. */
-	public int getLosingLife() {
+	int getLosingLife() {
 		if (life>0||canLose()) {
 			return life;
 		}
@@ -223,7 +223,7 @@ public class MagicPlayer implements MagicTarget {
 	}
 	
 	/** Poison to use when determining if a player has lost. */
-	public int getLosingPoison() {
+	int getLosingPoison() {
 		if (poison<MagicGame.LOSING_POISON||canLose()) {
 			return poison;
 		}
@@ -261,18 +261,18 @@ public class MagicPlayer implements MagicTarget {
 		return hand.removeCard(card);
 	}
 	
-	public void removeAllCardsFromHand() {
+	private void removeAllCardsFromHand() {
 		activationMap.removeActivations(hand);
 		hand.clear();
 	}
 	
-	public void setHandToUnknown() {
+	void setHandToUnknown() {
 		activationMap.removeActivations(hand);
 		hand.setKnown(false);
 		activationMap.addActivations(hand);
 	}
 
-	public void createHandAndLibrary(final int handSize) {
+	void createHandAndLibrary(final int handSize) {
 		for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
             final long id = MagicGame.getInstance().getUniqueId();
 			library.add(new MagicCard(cardDefinition,this,id));
@@ -379,7 +379,7 @@ public class MagicPlayer implements MagicTarget {
 		return count;
 	}
 
-	public int getNrOfPermanentsWithSubType(final MagicSubType subType) {
+	private int getNrOfPermanentsWithSubType(final MagicSubType subType) {
 		int count=0;
 		for (final MagicPermanent permanent : permanents) {
 			

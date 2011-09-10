@@ -21,7 +21,7 @@ public class MagicPlayerDefinition {
 	private int face;
 	private MagicDeck deck=new MagicDeck();
 
-	public MagicPlayerDefinition() {}
+	MagicPlayerDefinition() {}
 	
 	public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile,final int face) {
 		this.name=name;
@@ -108,7 +108,7 @@ public class MagicPlayerDefinition {
 		return deck;
 	}	
 	
-	public void generateDeck(final DeckGenerator generator) {
+	void generateDeck(final DeckGenerator generator) {
 		this.deck=generator.generateDeck(DECK_SIZE, profile);
 		addBasicLandsToDeck();
 	}
@@ -121,7 +121,7 @@ public class MagicPlayerDefinition {
 		return prefix+"deck"+index;
 	}
 	
-	public void load(final Properties properties,final String prefix) {
+	void load(final Properties properties,final String prefix) {
 		name=properties.getProperty(prefix+NAME,"");
 		artificial=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
 		final String colors=properties.getProperty(prefix+COLORS,"");
@@ -138,7 +138,7 @@ public class MagicPlayerDefinition {
         }
 	}
 	
-	public void save(final Properties properties,final String prefix) {
+	void save(final Properties properties,final String prefix) {
 		properties.setProperty(prefix+NAME,name);
 		properties.setProperty(prefix+ARTIFICIAL,Boolean.toString(artificial));
 		properties.setProperty(prefix+COLORS,getProfile().getColorText());
