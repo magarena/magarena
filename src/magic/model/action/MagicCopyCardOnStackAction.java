@@ -21,7 +21,7 @@ public class MagicCopyCardOnStackAction extends MagicAction {
 		final MagicCardOnStack copyCardOnStack=cardOnStack.copyCardOnStack(player);
 		copyCardOnStack.setId(game.getUniqueId());
 		game.getStack().addToTop(copyCardOnStack);
-		if (copyCardOnStack.getEvent().getTargetChoice() != MagicTargetChoice.NONE) {
+		if (copyCardOnStack.getEvent().getTargetChoice() != MagicTargetChoice.TARGET_NONE) {
 			copyCardOnStack.getChoiceResults()[0]=null;
 			game.addEvent(new MagicStackChangeTargetsEvent(copyCardOnStack));
 		}

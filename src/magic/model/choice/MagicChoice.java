@@ -47,7 +47,7 @@ public abstract class MagicChoice {
 	}
 	
 	public MagicTargetChoice getTargetChoice() {
-		return MagicTargetChoice.NONE;
+		return MagicTargetChoice.TARGET_NONE;
 	}
 	
 	public int getManaChoiceResultIndex() {

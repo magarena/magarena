@@ -37,7 +37,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         //depends on the card
         this.cardIndex = -1;
         this.id = -1;
-		this.targetChoice = MagicTargetChoice.NONE;
+		this.targetChoice = MagicTargetChoice.TARGET_NONE;
 	}
     
     public void setCardIndex(final int cardIndex) {
