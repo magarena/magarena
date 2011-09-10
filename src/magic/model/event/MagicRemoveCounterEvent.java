@@ -22,10 +22,10 @@ public class MagicRemoveCounterEvent extends MagicEvent {
             permanent.getController(),
             new Object[]{permanent,counterType,amount},
             EVENT_ACTION,
-            getDescription(permanent,counterType,amount));
+            genDescription(permanent,counterType,amount));
 	}	
 	
-	private static String getDescription(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {
+	private static String genDescription(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {
 		final StringBuilder description=new StringBuilder("Remove ");
 		if (amount==1) {
 			description.append("a ").append(counterType.getName()).append(" counter");

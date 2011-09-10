@@ -20,11 +20,11 @@ public class MagicDrawEvent extends MagicEvent {
 			player,
 			new Object[]{player,amount},
 			EVENT_ACTION,
-			player.getName() + getDescription(amount)
+			player.getName() + genDescription(amount)
 		);
 	}
 	
-	private static final String getDescription(final int amount) {
+	private static final String genDescription(final int amount) {
 		if (amount!=1) {
 			return " draws "+amount+" cards.";
 		} else {

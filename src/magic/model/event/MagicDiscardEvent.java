@@ -29,11 +29,11 @@ public class MagicDiscardEvent extends MagicEvent {
             random ? new MagicRandomCardChoice(amount) : new MagicCardChoice(amount),
             new Object[]{player},
             EVENT_ACTION,
-            player.getName() + getDescription(amount,random)
+            player.getName() + genDescription(amount,random)
         );
 	}
 	
-	private static final String getDescription(final int amount,final boolean random) {
+	private static final String genDescription(final int amount,final boolean random) {
 		if (amount != 1) {
 			return " discards " + amount + " cards$.";
 		} else {
