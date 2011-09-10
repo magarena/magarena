@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 public class MagicTools {
 
-	static void listAllCards() {
+	private static void listAllCards() {
 		final SortedSet<String> names = new TreeSet<String>();
 		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
 			if (!cardDefinition.isToken()) {
@@ -23,7 +23,7 @@ public class MagicTools {
 		}
 	}
 	
-	static void checkCards() {
+	private static void checkCards() {
 		final CardDefinitions cardDefinitions = CardDefinitions.getInstance();		
 		final String filenames[] = new File(MagicMain.getGamePath(),"cards").list();
 		final Set<MagicCardDefinition> remaining = new HashSet<MagicCardDefinition>(CardDefinitions.getInstance().getCards());

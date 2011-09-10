@@ -89,7 +89,7 @@ public class GraphicsUtilities {
      *    the {@code BILINEAR} hint is specified)
      * @return a scaled version of the original {@code BufferedImage}
      */
-    public static BufferedImage scale(final BufferedImage img,
+    private static BufferedImage scale(final BufferedImage img,
                                final int targetWidth,
                                final int targetHeight,
                                final Object hint,

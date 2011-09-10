@@ -203,7 +203,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         catch (CloneNotSupportedException e) { throw new InternalError(); } // should never happen
         }
     
-    public boolean stateEquals(final Object o)
+    private boolean stateEquals(final Object o)
         {
         if (o==this) return true;
         if (o == null || !(o instanceof MersenneTwisterFast))
@@ -218,7 +218,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
     /** Reads the entire state of the MersenneTwister RNG from the stream */
-    public void readState(final DataInputStream stream) throws IOException
+    private void readState(final DataInputStream stream) throws IOException
         {
         int len = mt.length;
         for(int x=0;x<len;x++) mt[x] = stream.readInt();
@@ -232,7 +232,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
         
     /** Writes the entire state of the MersenneTwister RNG to the stream */
-    public void writeState(final DataOutputStream stream) throws IOException
+    private void writeState(final DataOutputStream stream) throws IOException
         {
         int len = mt.length;
         for(int x=0;x<len;x++) stream.writeInt(mt[x]);
@@ -270,7 +270,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * in the array are used; if the array is shorter than this then
      * integers are repeatedly used in a wrap-around fashion.
      */
-    public MersenneTwisterFast(final int[] array)
+    private MersenneTwisterFast(final int[] array)
         {
         setSeed(array);
         }
@@ -282,7 +282,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * only uses the first 32 bits for its seed).   
      */
 
-    public synchronized void setSeed(final long seed)
+    private synchronized void setSeed(final long seed)
         {
         // Due to a bug in java.util.Random clear up to 1.2, we're
         // doing our own Gaussian variable.
@@ -316,7 +316,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * integers are repeatedly used in a wrap-around fashion.
      */
 
-    public synchronized void setSeed(final int[] array)
+    private synchronized void setSeed(final int[] array)
         {
         if (array.length == 0)
             throw new IllegalArgumentException("Array length must be greater than zero");
@@ -347,7 +347,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    public final int nextInt()
+    private final int nextInt()
         {
         int y;
         
@@ -384,7 +384,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
 
 
-    public final short nextShort()
+    private final short nextShort()
         {
         int y;
         
@@ -421,7 +421,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
 
 
-    public final char nextChar()
+    private final char nextChar()
         {
         int y;
         
@@ -457,7 +457,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    public final boolean nextBoolean()
+    private final boolean nextBoolean()
         {
         int y;
         
@@ -500,7 +500,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         event as nextBoolean(double), but twice as fast. To explicitly
         use this, remember you may need to cast to float first. */
 
-    public final boolean nextBoolean(final float probability)
+    private final boolean nextBoolean(final float probability)
         {
         int y;
         
@@ -544,7 +544,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         of returning true, else returning false.  <tt>probability</tt> must
         be between 0.0 and 1.0, inclusive. */
 
-    public final boolean nextBoolean(final double probability)
+    private final boolean nextBoolean(final double probability)
         {
         int y;
         int z;
@@ -614,7 +614,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    public final byte nextByte()
+    private final byte nextByte()
         {
         int y;
         
@@ -650,7 +650,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    public final void nextBytes(final byte[] bytes)
+    private final void nextBytes(final byte[] bytes)
         {
         int y;
         
@@ -689,7 +689,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    public final long nextLong()
+    private final long nextLong()
         {
         int y;
         int z;
@@ -757,7 +757,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
     /** Returns a long drawn uniformly from 0 to n-1.  Suffice it to say,
         n must be > 0, or an IllegalArgumentException is raised. */
-    public final long nextLong(final long n)
+    private final long nextLong(final long n)
         {
         if (n<=0)
             throw new IllegalArgumentException("n must be positive, got: " + n);
@@ -832,7 +832,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
     /** Returns a random double in the half-open range from [0.0,1.0).  Thus 0.0 is a valid
         result but 1.0 is not. */
-    public final double nextDouble()
+    private final double nextDouble()
         {
         int y;
         int z;
@@ -901,7 +901,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
 
 
-    public final double nextGaussian()
+    private final double nextGaussian()
         {
         if (__haveNextNextGaussian)
             {
@@ -1051,7 +1051,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
     /** Returns a random float in the half-open range from [0.0f,1.0f).  Thus 0.0f is a valid
         result but 1.0f is not. */
-    public final float nextFloat()
+    private final float nextFloat()
         {
         int y;
         

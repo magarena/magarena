@@ -39,7 +39,7 @@ package magic;
  */
 
 public class MurmurHash3 {
-   static class State {
+   private static class State {
       long h1;
       long h2;
 
@@ -50,7 +50,7 @@ public class MurmurHash3 {
       long c2;
    }
 
-   static long getblock(final byte[] key, final int i) {
+   private static long getblock(final byte[] key, final int i) {
       return
            (((long) key[i + 0] & 0x00000000000000FFL) << 0)
          | (((long) key[i + 1] & 0x00000000000000FFL) << 8)
@@ -62,7 +62,7 @@ public class MurmurHash3 {
          | (((long) key[i + 7] & 0x00000000000000FFL) << 56);
    }
 
-   static void bmix(final State state) {
+   private static void bmix(final State state) {
       state.k1 *= state.c1;
       state.k1 = (state.k1 << 23) | (state.k1 >>> 64 - 23);
       state.k1 *= state.c2;
@@ -84,7 +84,7 @@ public class MurmurHash3 {
       state.c2 = state.c2 * 5 + 0x6bce6396;
    }
 
-   static long fmix(long k) {
+   private static long fmix(long k) {
       k ^= k >>> 33;
       k *= 0xff51afd7ed558ccdL;
       k ^= k >>> 33;
@@ -102,7 +102,7 @@ public class MurmurHash3 {
     * @return 128 bit hashed key, in an array containing two longs
     */
    @SuppressWarnings("fallthrough")
-   public static long[] MurmurHash3_x64_128(final byte[] key, final int seed) {
+   private static long[] MurmurHash3_x64_128(final byte[] key, final int seed) {
       final State state = new State();
 
       state.h1 = 0x9368e53c2f6af274L ^ seed;
@@ -164,7 +164,7 @@ public class MurmurHash3 {
     * @param seed random value
     * @return 64 bit hashed key
     */
-   public static long MurmurHash3_x64_64(final byte[] key, final int seed) {
+   private static long MurmurHash3_x64_64(final byte[] key, final int seed) {
       return MurmurHash3_x64_128(key, seed)[0];
    }
 
@@ -175,7 +175,7 @@ public class MurmurHash3 {
     * @param seed random value
     * @return 32 bit hashed key
     */
-   public static int MurmurHash3_x64_32(final byte[] key, final int seed) {
+   private static int MurmurHash3_x64_32(final byte[] key, final int seed) {
       return (int) (MurmurHash3_x64_128(key, seed)[0] >>> 32);
    }
 
@@ -186,7 +186,7 @@ public class MurmurHash3 {
     * @param seed random value
     * @return 128 bit hashed key, in an array containing two longs
     */
-   public static long[] MurmurHash3_x64_128(final long[] key, final int seed) {
+   private static long[] MurmurHash3_x64_128(final long[] key, final int seed) {
       final State state = new State();
 
       state.h1 = 0x9368e53c2f6af274L ^ seed;
@@ -230,7 +230,7 @@ public class MurmurHash3 {
     * @param seed random value
     * @return 64 bit hashed key
     */
-   public static long MurmurHash3_x64_64(final long[] key, final int seed) {
+   private static long MurmurHash3_x64_64(final long[] key, final int seed) {
       return MurmurHash3_x64_128(key, seed)[0];
    }
 
@@ -241,7 +241,7 @@ public class MurmurHash3 {
     * @param seed random value
     * @return 32 bit hashed key
     */
-   public static int MurmurHash3_x64_32(final long[] key, final int seed) {
+   private static int MurmurHash3_x64_32(final long[] key, final int seed) {
       return (int) (MurmurHash3_x64_128(key, seed)[0] >>> 32);
    }
 

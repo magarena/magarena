@@ -45,14 +45,14 @@ public class MagicMain {
 		return getGamePath()+File.separatorChar+MODS_PATH;
 	}
 
-	public static void initializeEngine() {
+	static void initializeEngine() {
         CardDefinitions.getInstance().loadCardDefinitions();
         CubeDefinitions.getInstance().loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
         MagicStaticLocalVariable.initializeCardDefinitions();
 	}
 	
-	public static void initialize() {
+	private static void initialize() {
         final boolean madeGamePath = new File(getGamePath()).mkdir();
         if (!madeGamePath) {
             System.err.println("Unable to create directory " + getGamePath());
