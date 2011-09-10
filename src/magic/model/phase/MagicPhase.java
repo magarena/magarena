@@ -38,7 +38,7 @@ public abstract class MagicPhase {
 				// Stack can be empty at this point, for instance by a counter unless event.
 				if (!game.getStack().isEmpty()) {
 					game.doAction(new MagicStackResolveAction());
-					SoundEffects.getInstance().playClip(game,SoundEffects.RESOLVE_SOUND);
+					SoundEffects.playClip(game,SoundEffects.RESOLVE_SOUND);
 				}
 				if (game.isArtificial()) {
 					// Resolve stack in one go.

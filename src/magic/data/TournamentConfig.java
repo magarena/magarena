@@ -86,8 +86,8 @@ public class TournamentConfig {
 		this.handSize = handSize;
 	}
 	
-	public void setNrOfGames(final int games) {
-		this.games = games; 
+	public void setNrOfGames(final int aGames) {
+		this.games = aGames; 
 	}
 	
 	public int getNrOfGames() {

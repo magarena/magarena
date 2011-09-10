@@ -700,14 +700,14 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return steps;
     }
 
-    public void setAIWin(final int steps) {
+    public void setAIWin(final int aSteps) {
         this.evalScore = Integer.MAX_VALUE;
-        this.steps = steps;
+        this.steps = aSteps;
     }
 
-    public void setAILose(final int steps) {
+    public void setAILose(final int aSteps) {
         evalScore = Integer.MIN_VALUE;
-        this.steps = steps;
+        this.steps = aSteps;
     }
 
     public int getEvalScore() {

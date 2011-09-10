@@ -50,7 +50,6 @@ public class MagicEndOfTurnPhase extends MagicPhase {
 	
 	@Override
 	protected void executeEndOfPhase(final MagicGame game) {
-		
-		SoundEffects.getInstance().playClip(game,SoundEffects.TURN_SOUND);
+		SoundEffects.playClip(game,SoundEffects.TURN_SOUND);
 	}
 }

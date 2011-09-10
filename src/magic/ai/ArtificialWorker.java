@@ -110,11 +110,11 @@ public class ArtificialWorker {
             final ArtificialChoiceResults aiChoiceResults,
             final ArtificialPruneScore pruneScore,
 			final int mainPhases,
-            final int maxDepth,
-            final int maxGames) {
+            final int aMaxDepth,
+            final int aMaxGames) {
 		gameCount=0;
-		this.maxDepth=maxDepth;
-		this.maxGames=maxGames;
+		this.maxDepth=aMaxDepth;
+		this.maxGames=aMaxGames;
 		game.setMainPhases(mainPhases);
 		aiChoiceResults.worker=id;
 

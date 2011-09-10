@@ -50,8 +50,4 @@ public class SoundEffects {
 			playClip(name);
 		}
 	}
-
-	public static SoundEffects getInstance() {
-		return INSTANCE;
-	}
 } 

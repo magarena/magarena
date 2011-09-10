@@ -310,9 +310,9 @@ public class GameController {
 		showValidChoices();
 	}
 	
-	public void setValidChoices(final Set<Object> validChoices,final boolean combatChoice) {
-		this.validChoices=validChoices;
-		this.combatChoice=combatChoice;
+	public void setValidChoices(final Set<Object> aValidChoices,final boolean aCombatChoice) {
+		this.validChoices=aValidChoices;
+		this.combatChoice=aCombatChoice;
 		showValidChoices();
 	}
 	
@@ -451,9 +451,9 @@ public class GameController {
                     " the game.");
 
                 if (game.getLosingPlayer().getIndex() == 0) {
-					SoundEffects.getInstance().playClip(SoundEffects.LOSE_SOUND);
+					SoundEffects.playClip(SoundEffects.LOSE_SOUND);
 				} else {
-					SoundEffects.getInstance().playClip(SoundEffects.WIN_SOUND);
+					SoundEffects.playClip(SoundEffects.WIN_SOUND);
 				}
 
 				enableForwardButton();

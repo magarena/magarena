@@ -39,7 +39,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 		setLayout(new BorderLayout());
 		setOpaque(false);
 		
-		final TextLabel textLabel=new TextLabel(controller.getMessageWithSource(source,MESSAGE),GameViewer.TEXT_WIDTH,true);
+		final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),GameViewer.TEXT_WIDTH,true);
 		add(textLabel,BorderLayout.CENTER);
 		
 		final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,0));
