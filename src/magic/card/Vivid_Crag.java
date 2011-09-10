@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Vivid_Crag {
-    public final static List<MagicManaType> getVividManaTypes(final MagicManaType manaType) {
+    public static final List<MagicManaType> getVividManaTypes(final MagicManaType manaType) {
 		final List<MagicManaType> manaTypes=new ArrayList<MagicManaType>(MagicColor.NR_COLORS-1);
 		for (final MagicColor color : MagicColor.values()) {
 			final MagicManaType colorManaType=color.getManaType();
