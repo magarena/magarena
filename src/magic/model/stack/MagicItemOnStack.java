@@ -22,11 +22,11 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
 	private long id;
    
-    protected MagicItemOnStack() {
+    MagicItemOnStack() {
 
     }
 
-    public MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
+    MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
 		source = copyMap.copy(sourceItem.source);
 		controller = copyMap.copy(sourceItem.controller);
 		activation = sourceItem.activation;
@@ -40,7 +40,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 		return game.getStack().getItemOnStack(id);
 	}
 
-	public void setSource(final MagicSource source) {
+	void setSource(final MagicSource source) {
 		this.source=source;
 	}
 		
@@ -48,7 +48,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 		return source;
 	}
 	
-	public void setController(final MagicPlayer controller) {
+	void setController(final MagicPlayer controller) {
 		this.controller=controller;
 	}
 	
@@ -57,15 +57,15 @@ public abstract class MagicItemOnStack implements MagicTarget {
 		return controller;
 	}
 	
-	public void setActivation(final MagicActivation activation) {
+	void setActivation(final MagicActivation activation) {
 		this.activation=activation;
 	}
 	
-	public MagicActivation getActivation() {
+	MagicActivation getActivation() {
 		return activation;
 	}
 			
-	public void setEvent(final MagicEvent event) {
+	void setEvent(final MagicEvent event) {
 		this.event=event;
 	}
 	
@@ -147,7 +147,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 		return aSource!=this.source;
 	}
 
-    public long getItemId() {
+    long getItemId() {
         final Object[] CR = choiceResults;
         final long[] keys = {
             id,

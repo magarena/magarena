@@ -81,7 +81,7 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
         return MagicCard.NONE;
     }
 		
-	public MagicItemOnStack getItemOnStack(final long id) {
+	MagicItemOnStack getItemOnStack(final long id) {
         if (oldTop != null && oldTop.getId() == id) {
             return oldTop;
         }
