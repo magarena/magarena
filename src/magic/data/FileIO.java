@@ -19,7 +19,7 @@ import java.util.Properties;
 
 public class FileIO {
     
-    static private String toStr(final BufferedReader input) throws IOException {
+    private static String toStr(final BufferedReader input) throws IOException {
         final StringBuilder contents = new StringBuilder();
         try {
             String line = null; //not declared within while loop
@@ -39,15 +39,15 @@ public class FileIO {
         return contents.toString();
     }
 
-    static public String toStr(final File aFile) throws IOException {
+    public static String toStr(final File aFile) throws IOException {
         return toStr(new BufferedReader(new FileReader(aFile)));
     }
     
-    static public String toStr(final InputStream ins) throws IOException {
+    public static String toStr(final InputStream ins) throws IOException {
         return toStr(new BufferedReader(new InputStreamReader(ins)));
     }
 
-    static public Properties toProp(final File aFile) {
+    public static Properties toProp(final File aFile) {
         Properties properties = new Properties();
         try {
             properties = toProp(new FileInputStream(aFile));
@@ -57,7 +57,7 @@ public class FileIO {
         return properties;
     }
     
-    static public Properties toProp(final InputStream ins) {
+    public static Properties toProp(final InputStream ins) {
         final Properties properties = new Properties();
         try {
             properties.load(ins);
@@ -69,7 +69,7 @@ public class FileIO {
         return properties;
     }
 
-    static public BufferedImage toImg(final File aFile, final BufferedImage def) {
+    public static BufferedImage toImg(final File aFile, final BufferedImage def) {
         BufferedImage img = def;
         if (aFile == null || !aFile.isFile()) {
             img = def;
@@ -84,7 +84,7 @@ public class FileIO {
         return img;
     }
     
-    static public BufferedImage toImg(final URL loc, final BufferedImage def) {
+    public static BufferedImage toImg(final URL loc, final BufferedImage def) {
         BufferedImage img = def;
         if (loc == null) {
             img = def;
@@ -99,7 +99,7 @@ public class FileIO {
         return img;
     }
     
-    static public BufferedImage toImg(final InputStream ins, final BufferedImage def) {
+    public static BufferedImage toImg(final InputStream ins, final BufferedImage def) {
         BufferedImage img = def;
         if (ins == null) {
             img = def;
@@ -116,7 +116,7 @@ public class FileIO {
         return img;
     }
     
-    static public void toFile(final File aFile, final String aContents, final boolean append) throws IOException {
+    public static void toFile(final File aFile, final String aContents, final boolean append) throws IOException {
         Writer output = null;
         try {
             output = new BufferedWriter(new FileWriter(aFile, append));
@@ -126,7 +126,7 @@ public class FileIO {
         }
     }
     
-    static public void toFile(
+    public static void toFile(
             final File aFile, 
             final Properties properties, 
             final String name) throws IOException {
@@ -139,7 +139,7 @@ public class FileIO {
         }
     }
 
-    static public void close(final Closeable resource) {
+    public static void close(final Closeable resource) {
         if (resource == null) {
             return;
         }
