@@ -34,6 +34,7 @@ class TestWorship extends TestGameBuilder {
 		createPermanent(game,P,"Air Servant",false,1);
 	    addToHand(P,"Doom Blade",2); 
 	    addToHand(P,"Demystify",2); 
+	    addToHand(P,"Stomping Ground",1); 
        
 
         P = opponent;
