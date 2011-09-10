@@ -169,12 +169,15 @@ public class MagicTournament {
 	}
 		
 	public MagicGame nextGame(final boolean sound) {
-		//create players
-        final MagicPlayer player   = new MagicPlayer(configuration,playerDefinitions[0],0);
-		final MagicPlayer opponent = new MagicPlayer(configuration,playerDefinitions[opponentIndex],1);
+        //create players
+        final MagicPlayer player   = new MagicPlayer(configuration.getStartLife(),playerDefinitions[0],0);
+        final MagicPlayer opponent = new MagicPlayer(configuration.getStartLife(),playerDefinitions[opponentIndex],1);
+        
+        //give the AI player extra life
+        opponent.setLife(opponent.getLife() + GeneralConfig.getInstance().getExtraLife());
 
         //determine who starts first
-		final MagicPlayer start    = startPlayer == 0 ? player : opponent;
+        final MagicPlayer start    = startPlayer == 0 ? player : opponent;
 
         //create game
         final MagicGame game = MagicGame.create(
@@ -187,7 +190,7 @@ public class MagicTournament {
         //create hand and library
         player.createHandAndLibrary(configuration.getHandSize());
         opponent.createHandAndLibrary(configuration.getHandSize());
-		return game;
+        return game;
     }
 	
 	public int getNrOfPlayers() {
