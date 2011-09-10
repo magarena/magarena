@@ -9,6 +9,7 @@ import magic.model.MagicCopyable;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
+import magic.model.event.MagicEvent;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
@@ -22,14 +23,18 @@ public class MagicCardOnStack extends MagicItemOnStack {
 		setSource(card);
 		setController(controller);
 		setEvent(card.getCardDefinition().getCardEvent().getEvent(this,payedCost));
-		x=payedCost.getX();
+        x=payedCost.getX();
 	}
 	
 	public MagicCardOnStack(final MagicCard card,final MagicPayedCost payedCost) {
 		this(card,card.getController(),payedCost);
 	}
-	
-	private MagicCardOnStack() {}
+    
+    private MagicCardOnStack(final MagicCopyMap copyMap, MagicCardOnStack cardOnStack) {
+        super(copyMap, cardOnStack);
+        moveLocation = cardOnStack.moveLocation;
+        x = cardOnStack.x;
+	}
 	
 	public MagicCardOnStack copyCardOnStack(final MagicPlayer player) {
 		final MagicPayedCost cost=new MagicPayedCost();
@@ -44,16 +49,8 @@ public class MagicCardOnStack extends MagicItemOnStack {
 	}
 	
 	@Override
-	public MagicCopyable create() {
-		return new MagicCardOnStack();
-	}
-	
-	@Override
-	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
-		super.copy(copyMap,source);
-		final MagicCardOnStack sourceCardOnStack=((MagicCardOnStack)source);
-		moveLocation=sourceCardOnStack.moveLocation;
-		x=sourceCardOnStack.x;
+	public MagicCardOnStack copy(final MagicCopyMap copyMap) {
+        return new MagicCardOnStack(copyMap, this);
 	}
 	
     @Override
