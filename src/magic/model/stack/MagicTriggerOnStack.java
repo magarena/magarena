@@ -2,6 +2,7 @@ package magic.model.stack;
 
 import magic.data.IconImages;
 import magic.model.MagicCopyable;
+import magic.model.MagicCopyMap;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 
@@ -13,15 +14,15 @@ public class MagicTriggerOnStack extends MagicItemOnStack {
 		setController(source.getController());
 		setEvent(event);
 	}
-
-	private MagicTriggerOnStack() {
-		
+	
+    private MagicTriggerOnStack(final MagicCopyMap copyMap ,final MagicTriggerOnStack source) {
+        super(copyMap, source);
 	}
 	
-	@Override
-	public MagicCopyable create() {
-		return new MagicTriggerOnStack();
-	}
+    @Override
+	public MagicTriggerOnStack copy(final MagicCopyMap copyMap) {
+        return new MagicTriggerOnStack(copyMap, this);
+    }
 
 	@Override
 	public boolean isSpell() {
