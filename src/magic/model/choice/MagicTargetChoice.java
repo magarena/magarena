@@ -96,6 +96,8 @@ public class MagicTargetChoice extends MagicChoice {
 			"target artifact or enchantment your opponent controls");
 	public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,true,MagicTargetHint.None,"target artifact, enchantment or land");
+	public static final MagicTargetChoice TARGET_ENCHANTMENT =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.None,"target enchantment");
 	public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.Negative,"target enchantment");
 	public static final MagicTargetChoice TARGET_CREATURE=

@@ -19,7 +19,7 @@ public class Demystify {
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
-                    MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
+                    MagicTargetChoice.TARGET_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
                     new Object[]{cardOnStack},
                     this,
