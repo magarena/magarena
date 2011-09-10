@@ -22,7 +22,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 	private long id;
 	private MagicTargetChoice targetChoice;
 
-	public MagicActivation(
+	MagicActivation(
         final int index,
         final MagicCondition conditions[],
         final MagicActivationHints hints,
@@ -54,11 +54,11 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         }
     }
 	
-    public final MagicCardDefinition getCardDefinition() {
+    final MagicCardDefinition getCardDefinition() {
 		return CardDefinitions.getInstance().getCard(cardIndex);
 	}
 		
-	public final MagicCondition[] getConditions() {
+	private final MagicCondition[] getConditions() {
 		return conditions;
 	}
 
@@ -85,7 +85,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 		return id >= actpri.getActivationId();		
 	}
 	
-	public void changeActivationPriority(final MagicGame game,final MagicSource source) {
+	void changeActivationPriority(final MagicGame game,final MagicSource source) {
         final MagicActivationPriority actpri = source.getController().getActivationPriority();
 		actpri.setPriority(priority);
 		actpri.setActivationId(id);
@@ -122,11 +122,11 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 		return Long.signum(id-other.id);
 	}
 	
-	public abstract boolean usesStack();
+	abstract boolean usesStack();
 	
-	public abstract MagicEvent[] getCostEvent(final MagicSource source);
+	protected abstract MagicEvent[] getCostEvent(final MagicSource source);
 	
-	public abstract MagicEvent getEvent(final MagicSource source);
+	abstract MagicEvent getEvent(final MagicSource source);
 	
-	public abstract MagicTargetChoice getTargetChoice();	
+	abstract MagicTargetChoice getTargetChoice();	
 }

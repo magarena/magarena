@@ -26,7 +26,7 @@ public class MagicActivationHints {
 		this(timing,false);
 	}
 	
-	public MagicTiming getTiming() {
+	MagicTiming getTiming() {
 		return timing;
 	}
 	
@@ -34,11 +34,11 @@ public class MagicActivationHints {
 		return independent;
 	}
 	
-	public int getMaximum() {
+	private int getMaximum() {
 		return maximum;
 	}
 	
-	public boolean isMaximum(final MagicSource source) {
+	boolean isMaximum(final MagicSource source) {
 		if (maximum==0) {
 			return false;
 		}

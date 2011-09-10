@@ -27,15 +27,15 @@ public class MagicActivationPriority {
         return activationId;
     }
 
-    public void incActivationId() {
+    void incActivationId() {
         activationId++;
     }
 
-    public void setPriority(final int pri) {
+    void setPriority(final int pri) {
         priority = pri;
     }
 
-    public void setActivationId(final long id) {
+    void setActivationId(final long id) {
         activationId = id;
     }
 

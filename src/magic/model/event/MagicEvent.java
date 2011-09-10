@@ -28,9 +28,9 @@ import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 
-	public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
+	static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
     public static final MagicSource NO_SOURCE = MagicCard.NONE;
-	public static final MagicChoice NO_CHOICES = MagicChoice.NONE;
+	private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
 	public static final Object NO_CHOICE_RESULTS[] = new Object[0];
 	public static final Object NO_DATA[] = new Object[0];
 	
@@ -155,11 +155,11 @@ public class MagicEvent implements MagicCopyable {
 		return choice.getTargetChoice();
 	}
 	
-	public final int getManaChoiceResultIndex() {
+	private final int getManaChoiceResultIndex() {
 		return choice.getManaChoiceResultIndex();
 	}
 
-	public final Object[] getData() {
+	private final Object[] getData() {
 		return data;
 	}
 	
@@ -260,7 +260,7 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-	public static final void payManaCost(
+	static final void payManaCost(
             final MagicGame game,
             final MagicPlayer player,
             final Object choiceResults[],
@@ -274,7 +274,7 @@ public class MagicEvent implements MagicCopyable {
 		}
 	}
 	
-	public final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object choiceResults[]) {
+	final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object choiceResults[]) {
 		final int manaIndex=getManaChoiceResultIndex();
 		if (manaIndex>=0) {
 			payManaCost(game,aPlayer,choiceResults,manaIndex);

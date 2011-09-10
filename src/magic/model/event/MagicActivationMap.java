@@ -87,7 +87,7 @@ public class MagicActivationMap extends HashMap<MagicActivation,SortedSet<MagicS
 		}
 	}
 		
-	public void print() {
+	private void print() {
 		System.err.println(getClass().getName());
 		for (final MagicActivation activation : activations) {
 			System.err.print(activation.getClass().getName()+" :");

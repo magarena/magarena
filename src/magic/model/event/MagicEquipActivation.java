@@ -26,7 +26,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 	}
 
 	@Override
-	public MagicEvent[] getCostEvent(final MagicSource source) {
+	protected MagicEvent[] getCostEvent(final MagicSource source) {
 		return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),equipCost)};
 	}
 

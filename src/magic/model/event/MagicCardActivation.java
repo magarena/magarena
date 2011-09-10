@@ -29,12 +29,12 @@ public class MagicCardActivation extends MagicActivation {
 	}
 	
 	@Override
-	public boolean usesStack() {
+	boolean usesStack() {
 		return getCardDefinition().usesStack();
 	}
 
 	@Override
-	public MagicEvent[] getCostEvent(final MagicSource source) {
+	protected MagicEvent[] getCostEvent(final MagicSource source) {
 		final MagicManaCost cost=getCardDefinition().getCost();
 		if (cost!=MagicManaCost.ZERO) {
 			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
@@ -44,7 +44,7 @@ public class MagicCardActivation extends MagicActivation {
 	}
 
 	@Override
-	public MagicEvent getEvent(final MagicSource source) {
+	MagicEvent getEvent(final MagicSource source) {
 		return new MagicEvent(source,source.getController(),new Object[]{source},this,"Play "+source.getName()+".");
 	}
 
@@ -64,7 +64,7 @@ public class MagicCardActivation extends MagicActivation {
 	}
 
 	@Override
-	public final MagicTargetChoice getTargetChoice() {
+	final MagicTargetChoice getTargetChoice() {
 		// Not the cleanest way to do this by far...
 		final MagicCard card=new MagicCard(getCardDefinition(),MagicPlayer.NONE,0);
 		final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,MagicPayedCost.NO_COST);
