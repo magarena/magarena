@@ -11,7 +11,7 @@ public enum MagicRarity {
     
     private char c;
 
-    private MagicRarity(char c) {
+    private MagicRarity(final char c) {
         this.c = c;
     }
 
