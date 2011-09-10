@@ -12,23 +12,18 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
 
 	@SuppressWarnings("unchecked")
 	public <E extends MagicCopyable> E copy(final E source) {
-		if (source == null || 
-            source == MagicPlayer.NONE || 
-            source == MagicCard.NONE || 
-            source == MagicPermanent.NONE ||
-            source == MagicEvent.NONE) {
+		if (source == null) { 
 			return source;
 		}		
 		E target=(E)get(source);
 		if (target==null) {			
-			target=(E)source.create();
+			target=(E)source.copy(this);
 			put(source,target);
-			target.copy(this,source);
 		}
 		return target;
 	}
 		
-	public Object copyObject(final Object source) {
+	private Object copyObject(final Object source) {
         if (source != null && source instanceof MagicCopyable) {
 			return copy((MagicCopyable)source);
 		} else {
