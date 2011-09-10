@@ -282,7 +282,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * only uses the first 32 bits for its seed).   
      */
 
-    synchronized public void setSeed(final long seed)
+    public synchronized void setSeed(final long seed)
         {
         // Due to a bug in java.util.Random clear up to 1.2, we're
         // doing our own Gaussian variable.
@@ -316,7 +316,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * integers are repeatedly used in a wrap-around fashion.
      */
 
-    synchronized public void setSeed(final int[] array)
+    public synchronized void setSeed(final int[] array)
         {
         if (array.length == 0)
             throw new IllegalArgumentException("Array length must be greater than zero");
