@@ -43,6 +43,8 @@ public class CardDefinitions {
 	private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
         if ("image".equals(property)) {
             card.setImageURL(value);
+		} else if ("num_images".equals(property)) {
+			card.setImageCount(Integer.parseInt(value));
         } else if ("cube".equals(property)) {
 			CubeDefinitions.getInstance().getCubeDefinition(value).add(card.getName());
 		} else if ("value".equals(property)) {

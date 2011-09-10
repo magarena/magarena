@@ -63,6 +63,7 @@ public class MagicCardDefinition {
 	private final String name;
 	private final String fullName;
 	private String imageURL;
+	private int imageCount = 1;
     private Collection<Long> ignore;
 	private int index=-1;
 	private int value=0;
@@ -148,10 +149,12 @@ public class MagicCardDefinition {
 		return fullName;
 	}
 
-    //two images for basic lands and 
-    //one image for the other cards
+    public void setImageCount(final int count) {
+		this.imageCount = count;
+	}
+	
 	public int getImageCount() {
-		return isBasic()?2:1;
+		return imageCount;
 	}
 
     public void setImageURL(final String imageURL) {

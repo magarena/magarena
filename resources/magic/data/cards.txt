@@ -4365,6 +4365,7 @@ timing=pump
 
 >Forest
 image=http://magiccards.info/scans/en/zen/246.jpg
+num_images=2
 value=2
 rarity=B
 type=Basic,Land
@@ -4375,6 +4376,7 @@ timing=land
 
 >Island
 image=http://magiccards.info/scans/en/zen/234.jpg
+num_images=2
 value=2
 rarity=B
 type=Basic,Land
@@ -4385,6 +4387,7 @@ timing=land
 
 >Mountain
 image=http://magiccards.info/scans/en/zen/242.jpg
+num_images=2
 value=2
 rarity=B
 type=Basic,Land
@@ -4395,6 +4398,7 @@ timing=land
 
 >Plains
 image=http://magiccards.info/scans/en/zen/230.jpg
+num_images=2
 value=2
 rarity=B
 type=Basic,Land
@@ -4405,6 +4409,7 @@ timing=land
 
 >Swamp
 image=http://magiccards.info/scans/en/zen/238.jpg
+num_images=2
 value=2
 rarity=B
 type=Basic,Land
