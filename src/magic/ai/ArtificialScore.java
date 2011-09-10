@@ -5,8 +5,8 @@ public class ArtificialScore {
 	static final ArtificialScore INVALID_SCORE=new ArtificialScore(0,0);
 	static final ArtificialScore MAXIMUM_DEPTH_EXCEEDED_SCORE=new ArtificialScore(0,0);
 	
-	int score;
-	private int depth;
+	private final int score;
+	private final int depth;
 	
 	ArtificialScore(final int score,final int depth) {
 		this.score=score;
@@ -19,6 +19,10 @@ public class ArtificialScore {
 		}
 		return new ArtificialScore(score,depth+depthIncr);
 	}
+
+    int getScore() {
+        return score;
+    }
 	
 	boolean isBetter(final ArtificialScore other,final boolean best) {
 		if (other==INVALID_SCORE) {

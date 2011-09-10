@@ -64,10 +64,10 @@ public class ArtificialWorker {
 							if (bestScore.isBetter(score,best)) {
 								bestScore=score;
 								// Stop when best score can no longer become the best score at previous levels.
-								if (pruneScore.pruneScore(bestScore.score,best)) {
+								if (pruneScore.pruneScore(bestScore.getScore(),best)) {
 									break;
 								}
-								newPruneScore=newPruneScore.getPruneScore(bestScore.score,best);
+								newPruneScore=newPruneScore.getPruneScore(bestScore.getScore(),best);
 							}
 						}
 						game.undoActions();

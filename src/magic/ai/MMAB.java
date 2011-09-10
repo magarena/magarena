@@ -151,7 +151,7 @@ public class MMAB implements MagicAI {
 	}
 	
 	private synchronized void releaseWorker(final ArtificialWorker worker,final ArtificialChoiceResults aiChoiceResults) {
-		pruneScore = pruneScore.getPruneScore(aiChoiceResults.aiScore.score,true);
+		pruneScore = pruneScore.getPruneScore(aiChoiceResults.aiScore.getScore(),true);
 		processingLeft--;
 		workers.add(worker);
 		notifyAll();
