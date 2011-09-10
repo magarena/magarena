@@ -18,13 +18,8 @@ public class MagicTargetNone implements MagicTarget {
 	}
 	
 	@Override
-	public MagicCopyable create() {
-		return this;
-	}
-	
-	@Override
-	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
-		
+	public MagicTarget copy(final MagicCopyMap copyMap) {
+        return this;
 	}
 	
 	@Override
