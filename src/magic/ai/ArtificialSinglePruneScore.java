@@ -6,25 +6,21 @@ public class ArtificialSinglePruneScore implements ArtificialPruneScore {
 	private final boolean best;
 
 	private ArtificialSinglePruneScore(final int score,final boolean best) {
-		
 		this.score=score;
 		this.best=best;
 	}
 	
 	private ArtificialSinglePruneScore() {
-
 		this(Integer.MIN_VALUE,true);
 	}
 
 	@Override
 	public int getScore() {
-		
 		return 0; // Does not matter much for game id.
 	}
 	
 	@Override
 	public boolean pruneScore(final int otherScore,final boolean otherBest) {
-
 		if (best==otherBest) {
 			return false;
 		}
@@ -33,7 +29,6 @@ public class ArtificialSinglePruneScore implements ArtificialPruneScore {
 
 	@Override
 	public ArtificialPruneScore getPruneScore(final int otherScore,final boolean otherBest) {
-
 		if (best!=otherBest) {
 			return this;
 		}
@@ -46,7 +41,6 @@ public class ArtificialSinglePruneScore implements ArtificialPruneScore {
 	
 	@Override
 	public String toString() {
-
 		return score+(best?" >":" <");
 	}	
 }
