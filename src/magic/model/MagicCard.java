@@ -8,38 +8,35 @@ import java.util.Collections;
 
 public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> {
 
-    public static final MagicCard NONE = new MagicCard();
+    public static final MagicCard NONE = new MagicCard(MagicCardDefinition.UNKNOWN, MagicPlayer.NONE, 0) {
+        @Override
+        public MagicCard copy(final MagicCopyMap copyMap) {
+            return this;
+        }
+    };
+
     private static final int TOKEN_ID=-1;
 	
-	private MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
-	private MagicPlayer owner;
+	private final MagicCardDefinition cardDefinition;
+	private final MagicPlayer owner;
+	private final long id;
+	private final int imageIndex;
 	private boolean token=false;
 	private boolean known=true;
-	private long id;
-	private int imageIndex=0;
 	
-	public MagicCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner,final long id) {
-		this.cardDefinition = cardDefinition;
-		this.owner = owner;
-		this.id = id;
-		imageIndex = Math.abs(hashCode() % 1000);
+	public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
+		cardDefinition = aCardDefinition;
+		owner = aOwner;
+		id = aId;
+		imageIndex = (int)Math.abs(aId % 1000);
 	}
 		
-	private MagicCard() {}
-	
 	@Override
-	public MagicCopyable create() {
-		return new MagicCard();
-	}
-
-	@Override
-	public void copy(final MagicCopyMap copyMap,final MagicCopyable source) {
-		final MagicCard sourceCard=(MagicCard)source;
-		cardDefinition=sourceCard.cardDefinition;
-		owner=copyMap.copy(sourceCard.owner);
-		token=sourceCard.token;
-		known=sourceCard.known;
-		id=sourceCard.id;
+	public MagicCard copy(final MagicCopyMap copyMap) {
+		final MagicCard copy = new MagicCard(this.cardDefinition, copyMap.copy(this.owner), this.id);
+		copy.token = this.token;
+		copy.known = this.known;
+        return copy;
 	}
 	
 	@Override
