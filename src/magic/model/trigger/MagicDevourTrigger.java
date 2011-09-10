@@ -59,7 +59,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                     game.doAction(new MagicSacrificeAction(creature));
                     game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
                     final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
-                    if (newEvent!=MagicEvent.NONE) {
+                    if (newEvent.isValid()) {
                         game.doAction(new MagicAddEventAction(newEvent));
                     }
                 }

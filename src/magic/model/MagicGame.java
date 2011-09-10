@@ -437,7 +437,7 @@ public class MagicGame {
 	}
 	
 	public boolean isFinished() {
-        return losingPlayer != MagicPlayer.NONE || mainPhaseCount <= 0;
+        return losingPlayer.isValid() || mainPhaseCount <= 0;
 	}
 
 	public MagicLogBook getLogBook() {

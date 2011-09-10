@@ -22,7 +22,7 @@ public class MagicLoseGameAction extends MagicAction {
 	@Override
 	public void doAction(final MagicGame game) {
 		oldLosingPlayer=game.getLosingPlayer();
-		if (oldLosingPlayer==MagicPlayer.NONE && player.canLose()) {
+		if (!oldLosingPlayer.isValid() && player.canLose()) {
 			setScore(player,ArtificialScoringSystem.getLoseGameScore(game));
 			game.setLosingPlayer(player);
 			game.logMessage(player,reason);

@@ -32,6 +32,10 @@ public enum MagicManaType {
 		this.name=name;
 		this.text=text;
 	}
+
+    public boolean isValid() {
+        return this != MagicManaType.NONE;
+    }
 	
 	public String getName() {
 		return name;

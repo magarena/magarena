@@ -23,6 +23,10 @@ public class MagicPlayer implements MagicTarget {
         public boolean controlsPermanent(final MagicPermanent permanent) {
             return false;
         }
+        @Override
+        public boolean isValid() {
+            return false;
+        }
     };
 
 	private static final long ID_FACTOR=31;
@@ -484,6 +488,10 @@ public class MagicPlayer implements MagicTarget {
 	public MagicPlayer getController() {
 		return this;
 	}
+
+    public boolean isValid() {
+        return true;
+    }
 	
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {

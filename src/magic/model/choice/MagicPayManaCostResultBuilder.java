@@ -57,7 +57,7 @@ public class MagicPayManaCostResultBuilder {
 		int typeActivationSize=0;
 		for (final MagicSourceManaActivation activation : activations) {
 			final MagicManaType manaType=activation.canProduce(costManaType);
-			if (manaType != MagicManaType.NONE) {
+			if (manaType.isValid()) {
 				typeActivations[typeActivationSize]=activation;
 				producedTypes[typeActivationSize]=manaType;
 				typeActivationSize++;
@@ -173,7 +173,7 @@ public class MagicPayManaCostResultBuilder {
 		final Set<Integer> manaIds=new HashSet<Integer>();
 		for (final MagicSourceManaActivation currentActivation : activations) {
 			currentActivation.available=true;
-			if (currentActivation.canProduce(type) != MagicManaType.NONE) {
+			if (currentActivation.canProduce(type).isValid()) {
 				for (final MagicSourceManaActivation activation : activations) {
 					activation.available=activation!=currentActivation;
 				}
