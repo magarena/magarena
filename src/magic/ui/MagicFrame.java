@@ -554,8 +554,10 @@ public class MagicFrame extends JFrame implements ActionListener {
         }
 
         /* is it a jar file? */
-        if ( !jarFile.getName().endsWith(".jar") )
-        return false;   //no, it's a .class probably
+        if ( !jarFile.getName().endsWith(".jar") ) {
+            //no, it's a .class probably
+            return false;
+        }
 
         final String toExec[] = new String[] {javaBin, "-jar", jarFile.getPath()};
         try { //restart the application 
