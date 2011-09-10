@@ -21,11 +21,11 @@ public class MagicCardChoice extends MagicChoice {
 	private final int amount;
 	
 	public MagicCardChoice(final int amount) {
-		super(getDescription(amount));
+		super(genDescription(amount));
 		this.amount=amount;
 	}
 	
-	private static final String getDescription(final int amount) {
+	private static final String genDescription(final int amount) {
 		if (amount==1) {
 			return "Choose a card from your hand.";
 		} else {
