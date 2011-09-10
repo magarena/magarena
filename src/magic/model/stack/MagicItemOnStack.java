@@ -21,15 +21,13 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	private MagicEvent event;
 	private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
 	private long id;
-	
-	@Override
-	public void copy(final MagicCopyMap copyMap,final MagicCopyable copySource) {
-		final MagicItemOnStack sourceItem=(MagicItemOnStack)copySource;
-		source=(MagicSource)copyMap.copyObject(sourceItem.source);
-		controller=copyMap.copy(sourceItem.controller);
-		activation=sourceItem.activation;
-		event=copyMap.copy(sourceItem.event);
-		choiceResults=copyMap.copyObjects(sourceItem.choiceResults,Object.class);
+    
+    public MagicItemOnStack(MagicCopyMap copyMap, MagicItemOnStack sourceItem) {
+		source = copyMap.copy(sourceItem.source);
+		controller = copyMap.copy(sourceItem.controller);
+		activation = sourceItem.activation;
+		event = copyMap.copy(sourceItem.event);
+		choiceResults = copyMap.copyObjects(sourceItem.choiceResults,Object.class);
 		id=sourceItem.id;
 	}
 	
