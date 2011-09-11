@@ -25,9 +25,11 @@ import magic.ui.theme.ThemeFactory;
 
 import javax.swing.ImageIcon;
 import java.awt.Color;
+import java.lang.StringBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.EnumSet;
 import java.util.List;
 
@@ -196,6 +198,10 @@ public class MagicCardDefinition {
 		return rarity.ordinal();
 	}
 	
+	public String getRarityString() {
+		return rarity.getName();
+	}
+	
 	public Color getRarityColor() {
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		switch (getRarity()) {
@@ -292,12 +298,51 @@ public class MagicCardDefinition {
 		return hasType(MagicType.Enchantment);
 	}
 	
+	public boolean isLegendary() {
+		return hasType(MagicType.Legendary);
+	}
+	
 	public boolean isAura() {
 		return isEnchantment() && hasSubType(MagicSubType.Aura);
 	}
 	
+	public boolean isInstant() {
+		return hasType(MagicType.Instant);
+	}
+	
+	public boolean isSorcery() {
+		return hasType(MagicType.Sorcery);
+	}
+	
 	public boolean isSpell() {
-		return hasType(MagicType.Instant)||hasType(MagicType.Sorcery);
+		return isInstant()||isSorcery();
+	}
+	
+	public String getTypeString() {
+		if (isBasic()) {
+			return "Basic Land";
+		}
+		
+		StringBuffer names = new StringBuffer();
+		if (isLegendary()) {
+			names.append(MagicType.Legendary.toString());
+			names.append(" ");
+		}
+		if (isLand()) {
+			names.append(MagicType.Land.toString());
+		} else if (isCreature()) {
+			names.append(MagicType.Creature.toString());
+		} else if (isArtifact()) {
+			names.append(MagicType.Artifact.toString());
+		} else if (isEnchantment()) {
+			names.append(MagicType.Enchantment.toString());
+		} else if (isInstant()) {
+			names.append(MagicType.Instant.toString());
+		} else if (isSorcery()) {
+			names.append(MagicType.Sorcery.toString());
+		}
+		
+		return names.toString();	
 	}
 
 	public boolean usesStack() {
@@ -314,6 +359,14 @@ public class MagicCardDefinition {
 	
 	EnumSet<MagicSubType> getSubTypeFlags() {
 		return subTypeFlags;
+	}
+	
+	public String getSubTypeString() {
+		String brackets = getSubTypeFlags().toString(); // [...,...]
+		if (brackets.length() <= 2) {
+			return "";
+		}
+		return brackets.substring(1, brackets.length() - 1);
 	}
 	
 	public boolean hasSubType(final MagicSubType subType) {
@@ -635,4 +688,26 @@ public class MagicCardDefinition {
 			abilityHasText(s)
 		);
 	}
+
+	public static final Comparator<MagicCardDefinition> NAME_COMPARATOR=new Comparator<MagicCardDefinition>() {
+
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+
+			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
+		}
+	};
+	
+	public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR=new Comparator<MagicCardDefinition>() {
+
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+
+			final int cdif=cardDefinition1.getConvertedCost()-cardDefinition2.getConvertedCost();
+			if (cdif!=0) {
+				return cdif;
+			}
+			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
+		}
+	};
 }

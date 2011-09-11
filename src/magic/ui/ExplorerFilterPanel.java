@@ -36,28 +36,6 @@ import java.util.List;
 public class ExplorerFilterPanel extends TexturedPanel implements ActionListener, DocumentListener {
 	
 	private static final long serialVersionUID = 1L;
-
-	private static final Comparator<MagicCardDefinition> NAME_COMPARATOR=new Comparator<MagicCardDefinition>() {
-
-		@Override
-		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-
-			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
-		}
-	};
-	
-	private static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR=new Comparator<MagicCardDefinition>() {
-
-		@Override
-		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-
-			final int cdif=cardDefinition1.getConvertedCost()-cardDefinition2.getConvertedCost();
-			if (cdif!=0) {
-				return cdif;
-			}
-			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
-		}
-	};
 		
 	private static final String TYPES[]={"Land","Instant","Sorcery","Creature","Artifact","Enchantment"};
 	
@@ -293,7 +271,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	
 	private Comparator<MagicCardDefinition> getComparator() {
 		
-		return nameRadioButton.isSelected()?NAME_COMPARATOR:CONVERTED_COMPARATOR;
+		return nameRadioButton.isSelected() ? MagicCardDefinition.NAME_COMPARATOR : MagicCardDefinition.CONVERTED_COMPARATOR;
 	}
 	
 	public List<MagicCardDefinition> getCardDefinitions() {
