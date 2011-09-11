@@ -93,6 +93,19 @@ power=2
 toughness=3
 timing=main
 
+>Ashenmoor Cohort
+image=http://magiccards.info/scans/en/shm/56.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Elemental,Warrior
+color=b
+converted=6
+cost={5}{B}
+power=4
+toughness=3
+timing=main
+
 >Ashenmoor Gouger
 image=http://magiccards.info/scans/en/shm/180.jpg
 value=3
@@ -229,6 +242,19 @@ power=2
 toughness=4
 static=player
 timing=fmain
+
+>Ballynock Cohort
+image=http://magiccards.info/scans/en/shm/3.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+color=w
+converted=3
+cost={2}{W}
+power=2
+toughness=2
+timing=main
 
 >Battlegrace Angel
 image=http://magiccards.info/scans/en/ala/6.jpg
