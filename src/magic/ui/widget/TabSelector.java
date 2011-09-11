@@ -25,7 +25,7 @@ public class TabSelector extends JPanel implements ActionListener {
 	private final List<JToggleButton> buttons;
 	private final ChangeListener listener;
 	private int selectedTab;
-	private Dimension buttonDimension;
+	private final Dimension buttonDimension;
 	
 	public TabSelector(final ChangeListener listener,final boolean vertical) {
 		

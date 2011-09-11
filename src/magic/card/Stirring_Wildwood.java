@@ -32,7 +32,7 @@ import java.util.EnumSet;
 
 public class Stirring_Wildwood {
 	
-    private static MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
+    private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(
                 final MagicGame game,

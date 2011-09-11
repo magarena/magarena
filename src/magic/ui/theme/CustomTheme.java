@@ -22,7 +22,7 @@ public class CustomTheme extends AbstractTheme {
 	
 	private final File file;
 	private ZipFile zipFile=null;
-	private boolean loaded=false;
+	private final boolean loaded=false;
     private final PlayerAvatar[] playerAvatars;	
 	private int nrOfAvatars=0;
 	

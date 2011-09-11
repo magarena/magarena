@@ -55,7 +55,7 @@ public class MagicCardDefinition {
     private static int numManaActivations = 0;
     private static int numSpellEvent = 0;
     private static int numModifications = 0;
-    private static int numLocalVariables = 0;
+    private static final int numLocalVariables = 0;
 
 	private static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES = 
         Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());

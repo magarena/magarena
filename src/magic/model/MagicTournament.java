@@ -34,7 +34,7 @@ public class MagicTournament {
 	private int gamesPlayed;
 	private int gamesWon;
 	private int startPlayer;
-	private int[] difficulty = new int[2];
+	private final int[] difficulty = new int[2];
 	
 	public MagicTournament(final TournamentConfig configuration) {
 		this.configuration=configuration;

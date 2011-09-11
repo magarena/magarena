@@ -11,7 +11,7 @@ public class MagicTapAction extends MagicAction {
 
 	private final MagicPermanent permanent;
 	private boolean tap;
-	private boolean hasScore;
+	private final boolean hasScore;
 	
 	public MagicTapAction(final MagicPermanent permanent,final boolean hasScore) {
 		this.permanent=permanent;

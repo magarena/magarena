@@ -52,7 +52,7 @@ public class MagicEvent implements MagicCopyable {
 	private final MagicEventAction action;
 	private final String description;
 	
-    private Object data[];
+    private final Object[] data;
 
 	public MagicEvent(
             final MagicSource source,

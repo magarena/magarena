@@ -12,7 +12,7 @@ import java.util.List;
 public class MagicMillLibraryAction extends MagicAction {
 
 	private final MagicPlayer player;
-	private int amount;
+	private final int amount;
 	private List<MagicCard> milledCards;
 	
 	public MagicMillLibraryAction(final MagicPlayer player,final int amount) {

@@ -8,12 +8,12 @@ import javax.swing.ImageIcon;
 
 public class StackViewerInfo {
 
-	public MagicItemOnStack itemOnStack;
-	public MagicCardDefinition cardDefinition;
-	public String name;
-	public ImageIcon icon;
-	public String description;
-	public boolean visible;
+	public final MagicItemOnStack itemOnStack;
+	public final MagicCardDefinition cardDefinition;
+	public final String name;
+	public final ImageIcon icon;
+	public final String description;
+	public final boolean visible;
 	
 	public StackViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
 		this.itemOnStack=itemOnStack;

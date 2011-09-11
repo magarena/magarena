@@ -77,7 +77,7 @@ public class MagicGame {
 	private MagicPlayer visiblePlayer;
 	private MagicPlayer turnPlayer;
 	private MagicPlayer losingPlayer = MagicPlayer.NONE;
-	private MagicGameplay gameplay;
+	private final MagicGameplay gameplay;
 	private MagicPhase phase;
 	private MagicStep step;
     private final MagicPayedCost payedCost;	

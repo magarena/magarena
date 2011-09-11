@@ -9,7 +9,7 @@ public enum MagicRarity {
 
     public static final int length = values().length;
     
-    private char c;
+    private final char c;
 
     private MagicRarity(final char c) {
         this.c = c;

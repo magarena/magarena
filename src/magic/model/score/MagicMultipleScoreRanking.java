@@ -31,7 +31,7 @@ public class MagicMultipleScoreRanking implements MagicScoreRanking {
 	};
 	
     private final SortedSet<MagicScoreResult> results;	
-	private boolean best;
+	private final boolean best;
 	private int left;
 	private int worstScore;
 	

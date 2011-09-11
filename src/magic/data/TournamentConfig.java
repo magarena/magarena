@@ -12,7 +12,7 @@ import java.util.Properties;
 
 public class TournamentConfig {
 
-	private static TournamentConfig INSTANCE=new TournamentConfig();
+	private static final TournamentConfig INSTANCE=new TournamentConfig();
 
 	private static final String ANY_DECK="@";
 	private static final String ANY_THREE="***";

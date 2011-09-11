@@ -9,7 +9,7 @@ import magic.model.event.MagicEvent;
 
 public class MagicVeteranTrigger extends MagicWhenDamageIsDealtTrigger {
 
-	private boolean combat;
+	private final boolean combat;
 	
     public MagicVeteranTrigger(final boolean combat) {
 		this.combat=combat;

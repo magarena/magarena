@@ -45,17 +45,17 @@ public class CardStatistics {
 	private final Collection<MagicCardDefinition> cards;
 	
 	private int totalCards=0;
-	public int totalTypes[]=new int[NR_OF_TYPES];
+	public final int[] totalTypes=new int[NR_OF_TYPES];
 	
-	private int totalRarity[]=new int[MagicRarity.length];
+	private final int[] totalRarity=new int[MagicRarity.length];
 	
 	private double averageCost=0;
 	private double averageValue=0;
 	
-	public int colorCount[]=new int[MagicColor.NR_COLORS];
-	public int colorMono[]=new int[MagicColor.NR_COLORS];
-	public int colorLands[]=new int[MagicColor.NR_COLORS];
-	public int manaCurve[]=new int[MANA_CURVE_SIZE];
+	public final int[] colorCount=new int[MagicColor.NR_COLORS];
+	public final int[] colorMono=new int[MagicColor.NR_COLORS];
+	public final int[] colorLands=new int[MagicColor.NR_COLORS];
+	public final int[] manaCurve=new int[MANA_CURVE_SIZE];
 	public int monoColor=0;
 	public int multiColor=0;
 	public int colorless=0;

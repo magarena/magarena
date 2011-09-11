@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class GeneralConfig {
 
-	private static GeneralConfig INSTANCE=new GeneralConfig();
+	private static final GeneralConfig INSTANCE=new GeneralConfig();
 	
 	private static final String CONFIG_FILENAME="general.cfg";
 	private static final String LEFT="left";
