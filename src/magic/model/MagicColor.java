@@ -142,7 +142,7 @@ public enum MagicColor {
             flag == White.getMask();
     }
 
-    public static boolean isColorless(final int flag) {
+    private static boolean isColorless(final int flag) {
         return flag == 0;
     }
 

@@ -94,7 +94,7 @@ public enum MagicAbility {
 		return name;
 	}
 
-	public int getScore() {
+	private int getScore() {
 		return score;
 	}
 	

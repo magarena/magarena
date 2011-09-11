@@ -14,7 +14,7 @@ public enum MagicStaticType {
 		this.name=name;
 	}
 	
-	public String getName() {
+	private String getName() {
 		return name;
 	}
 	

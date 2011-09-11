@@ -20,7 +20,7 @@ public enum MagicType {
         this.mask=1<<ordinal();
 	}
 	
-	public String getName() {
+	private String getName() {
 		return name;
 	}
 	
