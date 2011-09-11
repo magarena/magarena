@@ -19,7 +19,7 @@ public enum MagicAIImpl {
         this.ai=ai;
     }
     
-    public String getName() {
+    private String getName() {
     	return name;
     }
 
