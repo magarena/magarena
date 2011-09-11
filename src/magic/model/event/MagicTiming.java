@@ -50,7 +50,7 @@ public enum MagicTiming {
 		this.priority=priority;
 	}
 	
-	public String getCode() {
+	private String getCode() {
 		return code;
 	}
 	

@@ -9,26 +9,26 @@ import java.awt.Rectangle;
 
 public class DefaultResolutionProfile implements ResolutionProfile {
 
-	public static final int PLAYERS_VIEWER_WIDTH=134;
-	public static final int DECK_VIEWER_WIDTH=350;
-	public static final int TOURNAMENT_VIEWER_WIDTH=270;
-	public static final int TOURNAMENT_VIEWER_HEIGHT=130;
-	public static final int DECK_STATISTICS_VIEWER_HEIGHT=200;
-	public static final int DECK_STRENGTH_VIEWER_HEIGHT=160;
-	public static final int PLAY_BUTTON_HEIGHT=50;
+	private static final int PLAYERS_VIEWER_WIDTH=134;
+	private static final int DECK_VIEWER_WIDTH=350;
+	private static final int TOURNAMENT_VIEWER_WIDTH=270;
+	private static final int TOURNAMENT_VIEWER_HEIGHT=130;
+	private static final int DECK_STATISTICS_VIEWER_HEIGHT=200;
+	private static final int DECK_STRENGTH_VIEWER_HEIGHT=160;
+	private static final int PLAY_BUTTON_HEIGHT=50;
 	public static final int CARD_VIEWER_WIDTH=CardImagesProvider.CARD_WIDTH;
 	public static final int CARD_VIEWER_HEIGHT=CardImagesProvider.CARD_HEIGHT+20;
-	public static final int PLAYER_VIEWER_WIDTH=300;
-	public static final int PLAYER_VIEWER_HEIGHT=154;
-	public static final int PLAYER_VIEWER_HEIGHT_SMALL=80;
-	public static final int GAME_VIEWER_HEIGHT=125;
-	public static final int MIN_HAND_VIEWER_WIDTH=250;
-	public static final int IMAGE_HAND_VIEWER_HEIGHT=145;
-	public static final int MAX_LOGBOOK_VIEWER_WIDTH=1000;
-	public static final int IMAGE_VIEWER_WIDTH=PLAYER_VIEWER_WIDTH;	
-	public static final int IMAGE_VIEWER_HEIGHT=PLAYER_VIEWER_WIDTH;
-	public static final int BUTTON_SIZE=30;
-	public static final int BUTTON_Y_SPACING=10;
+	private static final int PLAYER_VIEWER_WIDTH=300;
+	private static final int PLAYER_VIEWER_HEIGHT=154;
+	private static final int PLAYER_VIEWER_HEIGHT_SMALL=80;
+	private static final int GAME_VIEWER_HEIGHT=125;
+	private static final int MIN_HAND_VIEWER_WIDTH=250;
+	private static final int IMAGE_HAND_VIEWER_HEIGHT=145;
+	private static final int MAX_LOGBOOK_VIEWER_WIDTH=1000;
+	private static final int IMAGE_VIEWER_WIDTH=PLAYER_VIEWER_WIDTH;
+	private static final int IMAGE_VIEWER_HEIGHT=PLAYER_VIEWER_WIDTH;
+	private static final int BUTTON_SIZE=30;
+	private static final int BUTTON_Y_SPACING=10;
 	
 	@Override
 	public ResolutionProfileResult calculate(final Dimension size) {

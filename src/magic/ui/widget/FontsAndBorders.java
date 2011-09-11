@@ -63,12 +63,12 @@ public class FontsAndBorders {
 	
 	public static final Border EMPTY_BORDER=BorderFactory.createEmptyBorder(2,2,2,2);
 
-	public static final Border PLAYER_BORDER=BorderFactory.createCompoundBorder(
+	private static final Border PLAYER_BORDER=BorderFactory.createCompoundBorder(
 			BorderFactory.createMatteBorder(0,4,0,0,Color.BLACK),
 			BorderFactory.createEmptyBorder(0,3,0,0)
 	);
 
-	public static final Border OPPONENT_BORDER=BorderFactory.createCompoundBorder(
+	private static final Border OPPONENT_BORDER=BorderFactory.createCompoundBorder(
 		BorderFactory.createMatteBorder(0,4,0,0,Color.RED),
 		BorderFactory.createEmptyBorder(0,3,0,0)
 	);

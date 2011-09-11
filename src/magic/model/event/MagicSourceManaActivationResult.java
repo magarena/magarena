@@ -6,8 +6,8 @@ import magic.model.MagicPermanent;
 
 public class MagicSourceManaActivationResult implements MagicMappable {
 
-	public final MagicPermanent permanent;
-	public final MagicManaActivation activation;
+	private final MagicPermanent permanent;
+	private final MagicManaActivation activation;
 	
 	public MagicSourceManaActivationResult(final MagicPermanent permanent,final MagicManaActivation activation) {
 		this.permanent=permanent;

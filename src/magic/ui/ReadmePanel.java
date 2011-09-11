@@ -18,7 +18,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
-public class ReadmePanel extends JPanel implements ActionListener {
+class ReadmePanel extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private static final String README_FILENAME="README.txt";

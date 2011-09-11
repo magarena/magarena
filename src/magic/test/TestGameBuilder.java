@@ -17,14 +17,14 @@ public abstract class TestGameBuilder {
 	
 	private static final AtomicInteger currentId=new AtomicInteger(1);
 	
-	public static void addToLibrary(final MagicPlayer player,final String name,final int count) {
+	static void addToLibrary(final MagicPlayer player, final String name, final int count) {
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
 		for (int c=count;c>0;c--) {
 			player.getLibrary().addToTop(new MagicCard(cardDefinition,player,currentId.getAndIncrement()));
 		}
 	}
 	
-	public static void addToGraveyard(final MagicPlayer player,final String name,final int count) {
+	static void addToGraveyard(final MagicPlayer player, final String name, final int count) {
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
 		for (int c=count;c>0;c--) {
 			player.getGraveyard().addToTop(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
@@ -38,20 +38,20 @@ public abstract class TestGameBuilder {
 		}
 	}
 	
-	public static void addToHand(final MagicPlayer player,final String name,final int count) {
+	static void addToHand(final MagicPlayer player, final String name, final int count) {
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
         for (int c=count;c>0;c--) {
             player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
         }
 	}
 
-	public static void createAllTokens(final MagicGame game,final MagicPlayer player) {
+	static void createAllTokens(final MagicGame game, final MagicPlayer player) {
 		for (final MagicCardDefinition cardDefinition : TokenCardDefinitions.TOKEN_CARDS) {
 			game.doAction(new MagicPlayTokenAction(player,cardDefinition));
 		}
 	}
 	
-	public static MagicPermanent createPermanent(final MagicGame game,final MagicPlayer player,final String name,final boolean tapped,final int count) {
+	static MagicPermanent createPermanent(final MagicGame game, final MagicPlayer player, final String name, final boolean tapped, final int count) {
 
 		final MagicCardDefinition cardDefinition=CardDefinitions.getInstance().getCard(name);
 		MagicPermanent lastPermanent= MagicPermanent.NONE;
@@ -78,7 +78,7 @@ public abstract class TestGameBuilder {
 		return lastPermanent;
 	}
 
-    public abstract MagicGame getGame();
+    protected abstract MagicGame getGame();
 	
 	public static MagicGame buildGame(final String id) {
         MagicGame game = null;

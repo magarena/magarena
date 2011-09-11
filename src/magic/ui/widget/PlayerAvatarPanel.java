@@ -75,7 +75,7 @@ public class PlayerAvatarPanel extends TexturedPanel {
 		this.setBorder(selected?selectedBorder:NORMAL_BORDER);
 	}	
 	
-	public void update() {
+	private void update() {
 
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		final ImageIcon faceIcon=theme.getAvatarIcon(playerDefinition.getFace(),small?2:3);

@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class AboutDialog extends JDialog implements ActionListener {
+class AboutDialog extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 

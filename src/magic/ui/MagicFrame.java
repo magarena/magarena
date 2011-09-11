@@ -411,13 +411,13 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
-	public void resetGame() {
+	private void resetGame() {
 		if (gamePanel!=null) {
 			gamePanel.getController().resetGame();
 		}
 	}
 	
-	public void concedeGame() {
+	private void concedeGame() {
 		if (gamePanel!=null) {
 			gamePanel.getController().concede();
 		}
@@ -531,7 +531,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
     
-    public boolean updateApp() {
+    private boolean updateApp() {
         //check for new version
         
         

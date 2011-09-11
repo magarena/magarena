@@ -15,7 +15,7 @@ public abstract class AbstractTheme implements Theme {
 	private final String name;
 	private final Map<String,Object> themeMap;
 	
-	public AbstractTheme(final String name) {
+	AbstractTheme(final String name) {
 		
 		this.name=name;
 		themeMap=new HashMap<String,Object>();
@@ -61,7 +61,7 @@ public abstract class AbstractTheme implements Theme {
 		addToTheme(VALUE_POPUP_OPACITY,80);
 	}
 	
-	protected void addToTheme(final String aName,final Object value) {
+	void addToTheme(final String aName, final Object value) {
 		
 		themeMap.put(aName,value);
 	}

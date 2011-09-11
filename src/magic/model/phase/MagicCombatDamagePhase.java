@@ -18,7 +18,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
 	}
 
 	@Override
-	public void executeBeginStep(final MagicGame game) {
+    protected void executeBeginStep(final MagicGame game) {
 		final MagicPlayer attackingPlayer=game.getTurnPlayer();
 		final MagicPlayer defendingPlayer=game.getOpponent(attackingPlayer);
 		final int lifeBefore=defendingPlayer.getLife();

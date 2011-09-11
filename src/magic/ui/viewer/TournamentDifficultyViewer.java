@@ -43,7 +43,7 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 		titleBar.add(tabSelector,BorderLayout.EAST);
 	}
 
-	public void update() {
+	private void update() {
 
 		switch (tabSelector.getSelectedTab()) {
 			case 0: 

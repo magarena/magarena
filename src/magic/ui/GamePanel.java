@@ -251,7 +251,7 @@ public final class GamePanel extends JPanel {
 		return gameTournamentViewer.getGameViewer().isUndoEnabled();
 	}
 		
-	void switchKeyPressed() {
+	private void switchKeyPressed() {
 		if (textViewButton.isEnabled()) {
 			final boolean selected=!textViewButton.isSelected();
 			textViewButton.setSelected(selected);
@@ -260,7 +260,7 @@ public final class GamePanel extends JPanel {
 		}
 	}
 	
-	void showLogBook(final boolean visible) {
+	private void showLogBook(final boolean visible) {
 		if (visible) {
 			logBookViewer.update();
             logBookViewer.setVisible(true);
@@ -321,7 +321,7 @@ public final class GamePanel extends JPanel {
 		}
 	}
 	
-	public void updateView() {
+	private void updateView() {
 		if (isTextView()) {
 			backgroundLabel.setImage(false);
 			remove(imageStackViewer);

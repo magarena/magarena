@@ -33,7 +33,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 	private final JPanel viewPanel;
     private final Collection<CardButton> buttons;	
 	
-	public CardListViewer(final GameController controller,final boolean graveyard) {
+	CardListViewer(final GameController controller, final boolean graveyard) {
 
 		this.controller=controller;
 		this.graveyard=graveyard;

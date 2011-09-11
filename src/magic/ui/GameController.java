@@ -81,7 +81,7 @@ public class GameController {
         });
 	}
 	
-    public void disableActionUndoButtons() {
+    private void disableActionUndoButtons() {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 gameViewer.disableButton(false);
@@ -416,7 +416,7 @@ public class GameController {
 		}
 	}
 	
-	public void performUndo() {
+	private void performUndo() {
 		if (resetGame) {
 			resetGame=false;
 			while (game.hasUndoPoints()) {

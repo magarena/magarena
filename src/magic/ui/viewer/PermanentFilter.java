@@ -79,7 +79,7 @@ public class PermanentFilter implements ActionListener {
 		}
 	}
 	
-	public boolean changeFilter(final int newFilter) {
+	private boolean changeFilter(final int newFilter) {
 		
 		if (filter!=newFilter) {
 			filter=newFilter;
@@ -93,7 +93,7 @@ public class PermanentFilter implements ActionListener {
 		return filter;
 	}
 	
-	public boolean accept(final PermanentViewerInfo permanentInfo) {
+	private boolean accept(final PermanentViewerInfo permanentInfo) {
 
 		if (filter!=5&&(permanentInfo.attacking||permanentInfo.blocking)) {
 			return false;

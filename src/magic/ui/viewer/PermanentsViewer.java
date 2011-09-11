@@ -24,14 +24,14 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 	
 	private static final Dimension SEPARATOR_DIMENSION=new Dimension(0,10);
 
-	protected final ViewerInfo viewerInfo;
-	protected TitleBar titleBar;	
-	protected final GameController controller;
+	final ViewerInfo viewerInfo;
+	TitleBar titleBar;
+	private final GameController controller;
 
 	private final Collection<ChoiceViewer> targetViewers;
 	private final ViewerScrollPane viewerPane;
 	
-	public PermanentsViewer(final ViewerInfo viewerInfo,final GameController controller) {
+	PermanentsViewer(final ViewerInfo viewerInfo, final GameController controller) {
 		this.viewerInfo=viewerInfo;
 		this.controller=controller;
 		setOpaque(false);
@@ -105,11 +105,11 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer {
 		}
 	}
 	
-	public abstract String getTitle();
+	protected abstract String getTitle();
 	
-	public abstract Collection<PermanentViewerInfo> getPermanents();
+	protected abstract Collection<PermanentViewerInfo> getPermanents();
 	
-	public abstract boolean isSeparated(final PermanentViewerInfo permanent1,final PermanentViewerInfo permanent2);
+	protected abstract boolean isSeparated(final PermanentViewerInfo permanent1, final PermanentViewerInfo permanent2);
 	
-	public abstract Border getBorder(final PermanentViewerInfo permanentInfo);
+	protected abstract Border getBorder(final PermanentViewerInfo permanentInfo);
 }

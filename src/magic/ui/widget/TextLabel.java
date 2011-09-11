@@ -167,8 +167,8 @@ public class TextLabel extends JPanel {
 	
 	private static abstract class TComponent {
 
-		protected int lx=0;
-		protected int ly=0;
+		int lx=0;
+		int ly=0;
 		
 		public void setLocation(final int x,final int y) {
 			

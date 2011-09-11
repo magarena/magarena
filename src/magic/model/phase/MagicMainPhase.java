@@ -7,7 +7,7 @@ public class MagicMainPhase extends MagicPhase {
 	private static final MagicPhase FIRST_INSTANCE=new MagicMainPhase(MagicPhaseType.FirstMain);
 	private static final MagicPhase SECOND_INSTANCE=new MagicMainPhase(MagicPhaseType.SecondMain);
 
-	public MagicMainPhase(final MagicPhaseType phaseType) {
+	private MagicMainPhase(final MagicPhaseType phaseType) {
 		super(phaseType);
 	}
 	
