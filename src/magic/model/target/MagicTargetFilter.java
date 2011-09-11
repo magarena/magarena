@@ -478,6 +478,48 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_BLUE_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			if (target.getController() == player) {
+				final MagicPermanent permanent = (MagicPermanent)target;
+				return permanent.isCreature() && MagicColor.Blue.hasColor(permanent.getColorFlags());
+			}
+			return false;
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_GREEN_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			if (target.getController() == player) {
+				final MagicPermanent permanent = (MagicPermanent)target;
+				return permanent.isCreature() && MagicColor.Green.hasColor(permanent.getColorFlags());
+			}
+			return false;
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_RED_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			if (target.getController() == player) {
+				final MagicPermanent permanent = (MagicPermanent)target;
+				return permanent.isCreature() && MagicColor.Red.hasColor(permanent.getColorFlags());
+			}
+			return false;
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_WHITE_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			if (target.getController() == player) {

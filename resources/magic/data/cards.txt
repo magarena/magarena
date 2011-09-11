@@ -254,6 +254,7 @@ converted=3
 cost={2}{W}
 power=2
 toughness=2
+ability=first strike
 timing=main
 
 >Battlegrace Angel
@@ -377,6 +378,20 @@ power=4
 toughness=4
 timing=main
 
+>Briarberry Cohort
+image=http://magiccards.info/scans/en/shm/30.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Faerie,Soldier
+color=u
+converted=2
+cost={1}{U}
+power=1
+toughness=1
+ability=flying
+timing=main
+
 >Brindle Boar
 image=http://magiccards.info/scans/en/m12/167.jpg
 value=3
@@ -402,6 +417,19 @@ cost={4}{U}
 power=3
 toughness=3
 ability=flying
+timing=main
+
+>Crabapple Cohort
+image=http://magiccards.info/scans/en/shm/109.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Treefolk,Warrior
+color=g
+converted=5
+cost={4}{G}
+power=4
+toughness=4
 timing=main
 
 >Cunning Sparkmage
@@ -1071,6 +1099,20 @@ color=b
 converted=4
 cost={2}{B}{B}
 timing=smain
+
+>Mudbrawler Cohort
+image=http://magiccards.info/scans/en/shm/100.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={1}{R}
+power=1
+toughness=1
+ability=haste
+timing=main
 
 >Nantuko Husk
 image=http://magiccards.info/scans/en/cmd/90.jpg
