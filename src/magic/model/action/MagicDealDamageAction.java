@@ -90,17 +90,11 @@ public class MagicDealDamageAction extends MagicAction {
 				game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.Destroyed,true));
 			}
 		} else if (target.isPlayer()) {
+            final MagicPlayer targetPlayer = (MagicPlayer)target;
 			if (source.hasAbility(game,MagicAbility.Infect)) {
-				game.doAction(new MagicChangePoisonAction((MagicPlayer)target,dealtAmount));
+				game.doAction(new MagicChangePoisonAction(targetPlayer,dealtAmount));
 			} else {
-				int appliedAmount = dealtAmount;
-				MagicPlayer targetPlayer = (MagicPlayer)target;
-				
-				if (targetPlayer.getLife() - appliedAmount < 1 && MagicStaticLocalVariable.isLpMin1(targetPlayer)) {
-					// worship does not change dealt dmg, only resulting hp
-					appliedAmount = appliedAmount - (appliedAmount - targetPlayer.getLife()) - 1;
-				}
-				game.doAction(new MagicChangeLifeAction(targetPlayer,-appliedAmount));
+				game.doAction(new MagicChangeLifeAction(targetPlayer,-dealtAmount, true));
 			}
 		}
 
