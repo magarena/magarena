@@ -4103,6 +4103,7 @@ toughness=4
 timing=main
 
 >Worship
+image=http://magiccards.info/scans/en/9e/55.jpg 
 value=5
 rarity=R
 type=Enchantment
