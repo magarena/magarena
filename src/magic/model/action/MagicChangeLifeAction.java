@@ -10,20 +10,33 @@ public class MagicChangeLifeAction extends MagicAction {
 	
 	private final MagicPlayer player;
 	private final int life;
+    private final boolean isDamage;
 	
-	public MagicChangeLifeAction(final MagicPlayer player,final int life) {
-		this.player=player;
-		this.life=life;
+	public MagicChangeLifeAction(final MagicPlayer aPlayer,final int aLife, final boolean aIsDamage) {
+		player = aPlayer;
+		life = aLife;
+        isDamage = aIsDamage;
+
+	}
+	
+    public MagicChangeLifeAction(final MagicPlayer aPlayer,final int aLife) {
+        this(aPlayer,aLife,false);
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		final int oldLife=player.getLife();
-		final int newLife=oldLife+life;
+		final int oldLife = player.getLife();
+		final int newLife = oldLife+life;
+        
 		player.setLife(newLife);
-		setScore(player,ArtificialScoringSystem.getLifeScore(newLife)-ArtificialScoringSystem.getLifeScore(oldLife));
-		if (newLife > oldLife) {
-			game.executeTrigger(MagicTriggerType.WhenLifeIsGained,game.getTurnPlayer());
+        if (isDamage) {
+            game.executeTrigger(MagicTriggerType.WhenLifeIsDamaged,player);
+        }
+        final int actualLife = player.getLife();
+       
+		setScore(player,ArtificialScoringSystem.getLifeScore(actualLife)-ArtificialScoringSystem.getLifeScore(oldLife));
+		if (actualLife > oldLife) {
+			game.executeTrigger(MagicTriggerType.WhenLifeIsGained,player);
 		}
 		game.setStateCheckRequired();
 	}
@@ -35,7 +48,6 @@ public class MagicChangeLifeAction extends MagicAction {
 	
 	@Override
 	public String toString() {
-
 		return getClass().getSimpleName()+" ("+player.getName()+','+life+')';
 	}
 }
