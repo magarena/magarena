@@ -19,6 +19,18 @@ import magic.model.variable.MagicDummyLocalVariable;
 
 import java.util.EnumSet;
 
+// Backed out because 'loses all abilities' can't be implemented at the moment
+//
+//>Turn to Frog
+//image=http://magiccards.info/scans/en/m12/78.jpg
+//value=3
+//removal=3
+//rarity=U
+//type=Instant
+//color=u
+//converted=2
+//cost={1}{U}
+//timing=removal
 public class Turn_to_Frog {
     private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override

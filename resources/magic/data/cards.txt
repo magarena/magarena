@@ -2990,17 +2990,6 @@ converted=1
 cost={G}
 timing=pump
 
->Turn to Frog
-image=http://magiccards.info/scans/en/m12/78.jpg
-value=3
-removal=3
-rarity=U
-type=Instant
-color=u
-converted=2
-cost={1}{U}
-timing=removal
-
 >Incinerate
 image=http://magiccards.info/scans/en/jvc/51.jpg
 value=3
