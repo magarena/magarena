@@ -3175,6 +3175,17 @@ converted=1
 cost={R}
 timing=removal
 
+>Volcanic Hammer
+image=http://magiccards.info/scans/en/9e/226.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+
 >Shock
 image=http://magiccards.info/scans/en/m12/154.jpg
 value=2
@@ -8100,6 +8111,17 @@ type=Instant
 color=br
 converted=4
 cost={2}{B}{R}
+timing=removal
+
+>Molten Rain
+image=http://magiccards.info/scans/en/mi/101.jpg
+value=3
+removal=3
+rarity=C
+type=Sorcery
+color=r
+converted=3
+cost={1}{R}{R}
 timing=removal
 
 >Sunblast Angel

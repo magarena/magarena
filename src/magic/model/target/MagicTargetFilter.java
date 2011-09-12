@@ -160,6 +160,17 @@ public interface MagicTargetFilter {
 		}
 	};
 	
+	MagicTargetFilter TARGET_LAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent targetPermanent = (MagicPermanent)target;
+			return targetPermanent.isLand();
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}
+	};
+	
 	MagicTargetFilter TARGET_NONLAND_PERMANENT=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
