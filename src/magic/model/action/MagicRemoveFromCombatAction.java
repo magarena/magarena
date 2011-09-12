@@ -19,8 +19,8 @@ public class MagicRemoveFromCombatAction extends MagicAction {
 
 	@Override
 	public void doAction(final MagicGame game) {
-
 		attacking=permanent.hasState(MagicPermanentState.Attacking);
+        blocking=permanent.hasState(MagicPermanentState.Blocking);
 		if (attacking) {
 			game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Attacking,false));
 			game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Blocked,false));
@@ -29,28 +29,23 @@ public class MagicRemoveFromCombatAction extends MagicAction {
 			for (final MagicPermanent blockingCreature : blockingCreatures) {
 				blockingCreature.setBlockedCreature(MagicPermanent.NONE);
 			}
-		} else {
-			blocking=permanent.hasState(MagicPermanentState.Blocking);
-			if (blocking) {
-				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Blocking,false));
-				blockedCreature=permanent.getBlockedCreature();
-				if (blockedCreature.isValid()) {
-					permanent.setBlockedCreature(MagicPermanent.NONE);
-					blockingCreatures=new MagicPermanentList(blockedCreature.getBlockingCreatures());
-					blockedCreature.removeBlockingCreature(permanent);
-				}
-			}
+		} else if (blocking) {
+            game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Blocking,false));
+            blockedCreature=permanent.getBlockedCreature();
+            if (blockedCreature.isValid()) {
+                permanent.setBlockedCreature(MagicPermanent.NONE);
+                blockingCreatures=new MagicPermanentList(blockedCreature.getBlockingCreatures());
+                blockedCreature.removeBlockingCreature(permanent);
+            }
 		}
 		game.setStateCheckRequired();
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		if (attacking) {
-			permanent.setBlockingCreatures(blockingCreatures);
 			for (final MagicPermanent blockingCreature : blockingCreatures) {
-
+                permanent.addBlockingCreature(blockingCreature);
 				blockingCreature.setBlockedCreature(permanent);
 			}
 		} else if (blocking) {
