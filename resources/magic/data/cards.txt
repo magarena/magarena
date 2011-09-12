@@ -1425,6 +1425,19 @@ power=2
 toughness=2
 timing=fmain
 
+>Viridian Shaman
+image=http://magiccards.info/scans/en/10e/308.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+color=g
+converted=3
+cost={2}{G}
+power=2
+toughness=2
+timing=main
+
 >Volcanic Dragon
 image=http://magiccards.info/scans/en/m12/158.jpg
 value=4
@@ -1466,6 +1479,19 @@ power=0
 toughness=4
 ability=defender
 timing=smain
+
+>Wickerbough Elder
+image=http://magiccards.info/scans/en/arc/74.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Treefolk,Shaman
+color=g
+converted=4
+cost={3}{G}
+power=4
+toughness=4
+timing=main
 
 >Carven Caryatid
 image=http://magiccards.info/scans/en/rav/155.jpg
