@@ -1025,6 +1025,19 @@ power=1
 toughness=1
 timing=fmain
 
+>Kird Ape
+image=http://magiccards.info/scans/en/9e/199.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Ape
+color=r
+converted=1
+cost={R}
+power=1
+toughness=1
+timing=main
+
 >Kor Sanctifiers
 image=http://magiccards.info/scans/en/zen/22.jpg
 value=2
