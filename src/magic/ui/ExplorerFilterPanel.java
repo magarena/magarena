@@ -63,18 +63,23 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	
 	private final ExplorerPanel explorerPanel;
 	
+	private final ButtonControlledPopup typePopup;
 	private final JCheckBox typeCheckBoxes[];
 	private final JRadioButton typeFilterChoices[];
 	
+	private final ButtonControlledPopup colorPopup;
 	private final JCheckBox colorCheckBoxes[];
 	private final JRadioButton colorFilterChoices[];
 	
+	private final ButtonControlledPopup costPopup;
 	private final JCheckBox costCheckBoxes[];
 	private final JRadioButton costFilterChoices[];
 	
+	private final ButtonControlledPopup subtypePopup;
 	private final JCheckBox subtypeCheckBoxes[];
 	private final JRadioButton subtypeFilterChoices[];
 	
+	private final ButtonControlledPopup rarityPopup;
 	private final JCheckBox rarityCheckBoxes[];
 	private final JRadioButton rarityFilterChoices[];
 	
@@ -94,13 +99,13 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		// Type
-		ButtonControlledPopup typePopup = addFilterPopupPanel("Card Type");
+		typePopup = addFilterPopupPanel("Card Type");
 		typeCheckBoxes = new JCheckBox[MagicType.values().length];
 		typeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
 		populateCheckboxPopup(typePopup, MagicType.values(), typeCheckBoxes, typeFilterChoices, false);
 		
 		// Color
-		ButtonControlledPopup colorPopup = addFilterPopupPanel("Color");
+		colorPopup = addFilterPopupPanel("Color");
 		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
 		final JPanel colorsPanel=new JPanel(new GridLayout(1,MagicColor.NR_COLORS));
 		colorsPanel.setOpaque(false);
@@ -137,19 +142,19 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		}
 		
 		// Mana Cost
-		ButtonControlledPopup costPopup = addFilterPopupPanel("Mana Cost");
+		costPopup = addFilterPopupPanel("Mana Cost");
 		costCheckBoxes = new JCheckBox[COST_VALUES.length];
 		costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
 		populateCheckboxPopup(costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);	
 
 		// Subtype
-		ButtonControlledPopup subtypePopup = addFilterPopupPanel("Subtype");
+		subtypePopup = addFilterPopupPanel("Subtype");
 		subtypeCheckBoxes = new JCheckBox[MagicSubType.values().length];
 		subtypeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
 		populateCheckboxPopup(subtypePopup, MagicSubType.values(), subtypeCheckBoxes, subtypeFilterChoices, false);	
 		
 		// Rarity
-		ButtonControlledPopup rarityPopup = addFilterPopupPanel("Rarity");
+		rarityPopup = addFilterPopupPanel("Rarity");
 		rarityCheckBoxes = new JCheckBox[MagicRarity.values().length];
 		rarityFilterChoices = new JRadioButton[FILTER_CHOICES.length];
 		populateCheckboxPopup(rarityPopup, MagicRarity.values(), rarityCheckBoxes, rarityFilterChoices, true);	
@@ -181,7 +186,36 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
 		pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
+		selectButton.addActionListener(new PopupCloser(pop));
 		return pop;
+	}
+	
+	private class PopupCloser implements ActionListener {
+		private final ButtonControlledPopup p;
+		
+		public PopupCloser(ButtonControlledPopup p) {
+			this.p = p;
+		}
+	
+		@Override
+		public void actionPerformed(final ActionEvent event) {
+			// close all other popups except for our own button's			
+			if (p != typePopup) {
+				typePopup.hidePopup();
+			}
+			if (p != colorPopup) {
+				colorPopup.hidePopup();
+			}
+			if (p != costPopup) {
+				costPopup.hidePopup();
+			}
+			if (p != subtypePopup) {
+				subtypePopup.hidePopup();
+			}
+			if (p != rarityPopup) {
+				rarityPopup.hidePopup();
+			}
+		}
 	}
 	
 	private void populateCheckboxPopup(final ButtonControlledPopup popup, final Object[] checkboxValues, final JCheckBox[] newCheckboxes, final JRadioButton[] newFilterButtons, final boolean hideAND) {

@@ -14,43 +14,52 @@ public class ButtonControlledPopup extends JPopupMenu implements ActionListener,
 	private static final long serialVersionUID = 54232L;
 	
 	private final JButton invokePopupButton;
-	private final String hideButtonText;
-	private final String showButtonText;
+	private final String hidePopupButtonText;
+	private final String showPopupButtonText;
 	
-	public ButtonControlledPopup(JButton toggleButton, String hideButtonText, String showButtonText) {
+	public ButtonControlledPopup(JButton toggleButton, String hidePopupButtonText, String showPopupButtonText) {
 		this.invokePopupButton = toggleButton;
-		this.hideButtonText = hideButtonText;
-		this.showButtonText = showButtonText;
+		this.hidePopupButtonText = hidePopupButtonText;
+		this.showPopupButtonText = showPopupButtonText;
 		
 		invokePopupButton.addActionListener(this);
 		addFocusListener(this);
 	}
 	
+	public void showPopup() {
+		// set location relative to button
+		Point location = invokePopupButton.getLocation();
+		SwingUtilities.convertPointToScreen(location, invokePopupButton.getParent());
+		location.translate(0, invokePopupButton.getHeight()
+				+ (invokePopupButton.getBorder() == null ? 0
+					: invokePopupButton.getBorder().getBorderInsets(invokePopupButton).bottom));
+		setLocation(location);
+
+		// showPopup the popup if not visible
+		invokePopupButton.setText(hidePopupButtonText);
+		setVisible(true);
+		requestFocus();
+	}
+	
+	public void hidePopup() {
+		invokePopupButton.setText(showPopupButtonText);
+		setVisible(false);
+	}
+	
+	@Override
 	public void actionPerformed(final ActionEvent event) {
 		// set popup window visibility
 		if (!isVisible()) {
-			// set location relative to button
-			Point location = invokePopupButton.getLocation();
-			SwingUtilities.convertPointToScreen(location, invokePopupButton.getParent());
-			location.translate(0, invokePopupButton.getHeight()
-					+ (invokePopupButton.getBorder() == null ? 0
-						: invokePopupButton.getBorder().getBorderInsets(invokePopupButton).bottom));
-			setLocation(location);
-
-			// show the popup if not visible
-			invokePopupButton.setText(hideButtonText);
-			setVisible(true);
-			requestFocus();
+			showPopup();
 		} else {
-			// hide it otherwise
-			invokePopupButton.setText(showButtonText);
-			setVisible(false);
+			// hidePopup it otherwise
+			hidePopup();
 		}
 	}
 	
 	@Override
 	public void focusLost(FocusEvent e) {
-		setVisible(false);
+		hidePopup();
 	}
 
 	@Override
