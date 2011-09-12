@@ -106,6 +106,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE,true,MagicTargetHint.Negative,"target creature");
 	public static final MagicTargetChoice POS_TARGET_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE,true,MagicTargetHint.Positive,"target creature");
+	public static final MagicTargetChoice NEG_TARGET_NONCREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE,true,MagicTargetHint.Negative,"target noncreature");
 	public static final MagicTargetChoice NEG_TARGET_NONBLACK_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBLACK_CREATURE,true,MagicTargetHint.Negative,"target nonblack creature");
 	public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE=

@@ -280,6 +280,16 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_NONCREATURE=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return !((MagicPermanent)target).isCreature();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_CREATURE_OR_PLAYER=new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
