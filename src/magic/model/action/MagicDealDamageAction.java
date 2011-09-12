@@ -94,7 +94,7 @@ public class MagicDealDamageAction extends MagicAction {
 			if (source.hasAbility(game,MagicAbility.Infect)) {
 				game.doAction(new MagicChangePoisonAction(targetPlayer,dealtAmount));
 			} else {
-				game.doAction(new MagicChangeLifeAction(targetPlayer,-dealtAmount, true));
+				game.doAction(new MagicChangeLifeAction(targetPlayer,-dealtAmount));
 			}
 		}
 

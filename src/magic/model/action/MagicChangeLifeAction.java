@@ -10,32 +10,20 @@ public class MagicChangeLifeAction extends MagicAction {
 	
 	private final MagicPlayer player;
 	private final int life;
-    private final boolean isDamage;
-	
-	public MagicChangeLifeAction(final MagicPlayer aPlayer,final int aLife, final boolean aIsDamage) {
-		player = aPlayer;
-		life = aLife;
-        isDamage = aIsDamage;
-
-	}
 	
     public MagicChangeLifeAction(final MagicPlayer aPlayer,final int aLife) {
-        this(aPlayer,aLife,false);
+		player = aPlayer;
+		life = aLife;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
 		final int oldLife = player.getLife();
 		final int newLife = oldLife+life;
-        
 		player.setLife(newLife);
-        if (isDamage) {
-            game.executeTrigger(MagicTriggerType.WhenLifeIsDamaged,player);
-        }
-        final int actualLife = player.getLife();
        
-		setScore(player,ArtificialScoringSystem.getLifeScore(actualLife)-ArtificialScoringSystem.getLifeScore(oldLife));
-		if (actualLife > oldLife) {
+		setScore(player,ArtificialScoringSystem.getLifeScore(newLife)-ArtificialScoringSystem.getLifeScore(oldLife));
+		if (newLife > oldLife) {
 			game.executeTrigger(MagicTriggerType.WhenLifeIsGained,player);
 		}
 		game.setStateCheckRequired();

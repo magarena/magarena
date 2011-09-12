@@ -5,16 +5,19 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
+import magic.model.MagicDamage;
+import magic.model.target.MagicTarget;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenLifeIsDamagedTrigger;
+import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Worship {
-    public static final MagicWhenLifeIsDamagedTrigger T = new MagicWhenLifeIsDamagedTrigger() {
+    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player = permanent.getController();
-			if (player == data && player.getNrOfPermanentsWithType(MagicType.Creature) > 0 && player.getLife() < 1) {
+            final MagicTarget target = damage.getTarget();
+			if (player == target && player.getNrOfPermanentsWithType(MagicType.Creature) > 0 && player.getLife() < 1) {
                 player.setLife(1);
             }
             return MagicEvent.NONE;
