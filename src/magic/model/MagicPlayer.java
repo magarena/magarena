@@ -210,26 +210,6 @@ public class MagicPlayer implements MagicTarget {
 		return poison;
 	}
 	
-	public boolean canLose() {
-		return MagicStaticLocalVariable.canLose(this);
-	}
-
-	/** Life to use when determining if a player has lost. */
-	int getLosingLife() {
-		if (life>0||canLose()) {
-			return life;
-		}
-		return 1;
-	}
-	
-	/** Poison to use when determining if a player has lost. */
-	int getLosingPoison() {
-		if (poison<MagicGame.LOSING_POISON||canLose()) {
-			return poison;
-		}
-		return MagicGame.LOSING_POISON-1;
-	}
-	
 	public void changeExtraTurns(final int amount) {
 		extraTurns+=amount;
 	}

@@ -49,7 +49,6 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int madrushCyclops;
 	private static int merfolkSovereign;
 	private static int murkfiendLiege;
-	private static int platinumAngel; // You can't lose the game.
 	private static int razorjawOni;
     // You can't be target of spells or abilities your opponent controls.
 	private static int spiritOfTheHearth; 
@@ -58,10 +57,6 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	private static int urabraskTheHidden;
 	private static int veteranArmorer;
 	private static int windbriskRaptor;
-
-    public static boolean canLose(final MagicPlayer controller) {
-        return controller.getCount(platinumAngel) == 0;
-    }
 	
     public static boolean canTarget(final MagicPlayer controller) {
         return controller.getCount(spiritOfTheHearth) == 0;
@@ -292,7 +287,6 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		madrushCyclops=definitions.getCard("Madrush Cyclops").getIndex();
 		merfolkSovereign=definitions.getCard("Merfolk Sovereign").getIndex();
 		murkfiendLiege=definitions.getCard("Murkfiend Liege").getIndex();
-		platinumAngel=definitions.getCard("Platinum Angel").getIndex();
 		razorjawOni=definitions.getCard("Razorjaw Oni").getIndex();
 		spiritOfTheHearth=definitions.getCard("Spirit of the Hearth").getIndex();
 		tolsimirWolfblood=definitions.getCard("Tolsimir Wolfblood").getIndex();

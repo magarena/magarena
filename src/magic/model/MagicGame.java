@@ -44,12 +44,12 @@ import java.util.TreeSet;
 
 public class MagicGame {
 
+	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
+	private static final int LOSING_POISON=10;
+	private static final long ID_FACTOR=31;
+    
     private static int COUNT = 0;
     private static MagicGame INSTANCE;
-	public static final boolean LOSE_DRAW_EMPTY_LIBRARY=true;
-	static final int LOSING_POISON=10;
-	
-	private static final long ID_FACTOR=31;
 	
 	private final MagicTournament tournament;
 	private final MagicPlayer players[];
@@ -796,20 +796,20 @@ public class MagicGame {
 		
             // Check if a player has lost
             final MagicPlayer lowestLifePlayer =
-                (players[1].getLosingLife() <= players[0].getLosingLife()) ? 
+                (players[1].getLife() <= players[0].getLife()) ? 
                 players[1]:
                 players[0];
 
-            if (lowestLifePlayer.getLosingLife() <= 0) {
+            if (lowestLifePlayer.getLife() <= 0) {
                 stateBasedActions.add(new MagicLoseGameAction(lowestLifePlayer,MagicLoseGameAction.LIFE_REASON));			
             }
 
             final MagicPlayer highestPoisonPlayer =
-                (players[1].getLosingPoison() >= players[0].getLosingPoison()) ? 
+                (players[1].getPoison() >= players[0].getPoison()) ? 
                 players[1]:
                 players[0];
 
-            if (highestPoisonPlayer.getLosingPoison() >= LOSING_POISON) {
+            if (highestPoisonPlayer.getPoison() >= LOSING_POISON) {
                 stateBasedActions.add(new MagicLoseGameAction(highestPoisonPlayer,MagicLoseGameAction.POISON_REASON));
             }
 		    

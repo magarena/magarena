@@ -3,6 +3,7 @@ package magic.model.action;
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicLoseGameAction extends MagicAction {
 
@@ -22,10 +23,14 @@ public class MagicLoseGameAction extends MagicAction {
 	@Override
 	public void doAction(final MagicGame game) {
 		oldLosingPlayer=game.getLosingPlayer();
-		if (!oldLosingPlayer.isValid() && player.canLose()) {
-			setScore(player,ArtificialScoringSystem.getLoseGameScore(game));
-			game.setLosingPlayer(player);
-			game.logMessage(player,reason);
+		if (!oldLosingPlayer.isValid()) {
+            MagicPlayer[] playerRef = new MagicPlayer[]{player};
+            game.executeTrigger(MagicTriggerType.IfPlayerWouldLose, playerRef);
+            if (playerRef[0].isValid()) {
+                setScore(player,ArtificialScoringSystem.getLoseGameScore(game));
+                game.setLosingPlayer(player);
+                game.logMessage(player,reason);
+            }
 		}
 	}
 
