@@ -109,7 +109,7 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONARTIFACT_CREATURE,true,MagicTargetHint.Negative,"target nonartifact creature");
 	public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE =
-			new MagicTargetChoice(MagicTargetFilter.TARGET_NONARTIFACT_NONBLACK_CREATURE,true,MagicTargetHint.Negative,"target nonartifact creature");
+			new MagicTargetChoice(MagicTargetFilter.TARGET_NONARTIFACT_NONBLACK_CREATURE,true,MagicTargetHint.Negative,"target nonartifact, nonblack creature");
 	public static final MagicTargetChoice NEG_TARGET_TAPPED_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_TAPPED_CREATURE,true,MagicTargetHint.Negative,"target tapped creature");
 	public static final MagicTargetChoice NEG_TARGET_UNTAPPED_CREATURE=
