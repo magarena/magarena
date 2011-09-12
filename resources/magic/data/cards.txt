@@ -5306,6 +5306,16 @@ cost={1}{W}{W}
 static=player
 timing=enchantment
 
+>Blowfly Infestation
+image=http://magiccards.info/scans/en/shm/58.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
+timing=enchantment
+
 >Call to the Grave
 image=http://magiccards.info/scans/en/m12/85.jpg
 value=4
