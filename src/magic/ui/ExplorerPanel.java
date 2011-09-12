@@ -1,251 +1,194 @@
 package magic.ui;
 
-import magic.data.IconImages;
+import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.viewer.CardViewer;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.border.Border;
-import java.awt.BorderLayout;
-import java.awt.Color;
+import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.util.List;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.SpringLayout;
+
 
 public class ExplorerPanel extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	
-	public static final int ALL=0;
-	public static final int LAND=1;
-	public static final int SPELL=2;
-
-	private static final Border SCROLL_BORDER=BorderFactory.createEmptyBorder(0,0,5,0);
+	public static final int ALL = 0;
+	public static final int LAND = 1;
+	public static final int SPELL = 2;	
 	
-	private static final int CARD_WIDTH=DefaultResolutionProfile.CARD_VIEWER_WIDTH;
-	private static final int CARD_HEIGHT=DefaultResolutionProfile.CARD_VIEWER_HEIGHT;
-	private static final int FILTER_HEIGHT = 350;
-	private static final int LINE_SPACING=4;
-	private static final int LINE_WIDTH=200;
-	private static final int LINE_WIDTH2=LINE_WIDTH+LINE_SPACING+2;
-	private static final int LINE_HEIGHT=24;
-	private static final Dimension LINE_DIMENSION=new Dimension(LINE_WIDTH,LINE_HEIGHT);
- 	private static final int SPACING=20;
+	private static final String CLOSE_BUTTON_TEXT = "Close";
+	private static final String CANCEL_BUTTON_TEXT = "Cancel";
+	private static final String OK_BUTTON_TEXT = "Use Selected Card";
+	private static final Dimension CARD_DIMENSION = new Dimension(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
+ 	private static final int SPACING=10;
 	
  	private final MagicFrame frame;
 	private final EditDeckCard editDeckCard;
- 	private final ZoneBackgroundLabel backgroundLabel;
+	private final CardTable cardPoolTable;
+ 	private final ZoneBackgroundLabel backgroundImage;
 	private final CardViewer cardViewer;
 	private final ExplorerFilterPanel filterPanel;
-	private final JScrollPane cardsScrollPane;
-	private final JPanel cardsPanel;
 	private final JButton closeButton;
+	private final JButton okButton;
 	private List<MagicCardDefinition> cardDefinitions;
 	
 	public ExplorerPanel(final MagicFrame frame,final int mode,final EditDeckCard editDeckCard) {
 		this.frame=frame;
 		this.editDeckCard=editDeckCard;
 		
-		setLayout(null);
+		final SpringLayout springLayout = new SpringLayout();
+		setLayout(springLayout);
 		
-		cardViewer=new CardViewer("Card",false,true);
-		cardViewer.setSize(CARD_WIDTH,CARD_HEIGHT);		
+		// card image
+		cardViewer = new CardViewer("",false,true);
+		cardViewer.setPreferredSize(CARD_DIMENSION);
+		cardViewer.setMaximumSize(CARD_DIMENSION);
 		cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
 		add(cardViewer);
 		
+		// filters
 		MagicPlayerProfile profile=null;
 		MagicCubeDefinition cube=null;
-		if (editDeckCard!=null) {
+		if (isEditingDeck()) {
 			profile=editDeckCard.getPlayer().getProfile();
 			cube=editDeckCard.getCube();
 		}
+		filterPanel = new ExplorerFilterPanel(this, mode, profile, cube);
 		
-		filterPanel=new ExplorerFilterPanel(this,mode,profile,cube);
-		filterPanel.setSize(DefaultResolutionProfile.CARD_VIEWER_WIDTH,FILTER_HEIGHT);
-		add(filterPanel);
-
-		final JPanel scrollPanel=new JPanel(new BorderLayout());
-		scrollPanel.setOpaque(false);
-		scrollPanel.setBorder(SCROLL_BORDER);
+		final JScrollPane filterScrollPane = new JScrollPane(filterPanel);
+		filterScrollPane.setBorder(null);
+		filterScrollPane.setOpaque(false);
+		filterScrollPane.getViewport().setOpaque(false);
+		add(filterScrollPane);
 		
-		final JPanel topPanel=new JPanel(new BorderLayout());
-		topPanel.setOpaque(false);
-		scrollPanel.add(topPanel,BorderLayout.WEST);
+		// card pool
+		cardDefinitions = filterPanel.getCardDefinitions();
+		cardPoolTable = new CardTable(cardDefinitions, cardViewer);
 		
-		cardsPanel=new JPanel();
-		cardsPanel.setOpaque(false);
-		topPanel.add(cardsPanel,BorderLayout.SOUTH);
-		
-		cardsScrollPane=new JScrollPane();
+		final JScrollPane cardsScrollPane = new JScrollPane(cardPoolTable);
 		cardsScrollPane.setBorder(null);
 		cardsScrollPane.setOpaque(false);
-		cardsScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-		cardsScrollPane.getHorizontalScrollBar().setUnitIncrement(LINE_WIDTH2);
-		cardsScrollPane.getHorizontalScrollBar().setBlockIncrement(LINE_WIDTH2);
 		cardsScrollPane.getViewport().setOpaque(false);
-		cardsScrollPane.getViewport().add(scrollPanel);
 		add(cardsScrollPane);		
 		
-		closeButton=new JButton(IconImages.CLOSE);
+		// close button
+		closeButton = (isEditingDeck())? new JButton(CANCEL_BUTTON_TEXT) : new JButton(CLOSE_BUTTON_TEXT);
 		closeButton.setFocusable(false);
-		closeButton.setSize(28,28);
 		closeButton.addActionListener(this);
+		
 		add(closeButton);
 		
-		backgroundLabel=new ZoneBackgroundLabel();
-		backgroundLabel.setBounds(0,0,0,0);
-		add(backgroundLabel);
+		// create OK button for deck editing
+		if (isEditingDeck()) {
+			okButton = new JButton(OK_BUTTON_TEXT);
+			okButton.setFocusable(false);
+			okButton.addActionListener(this);
+			add(okButton);
+		} else {
+			okButton = null;
+		}
 		
-		updateCards();
+		// background - must be added last or anything else
+		// will be hidden behind it
+		backgroundImage = new ZoneBackgroundLabel();
+		add(backgroundImage);
 		
-		this.addComponentListener(new ComponentAdapter() {
-
-			@Override
-			public void componentResized(final ComponentEvent e) {
-
-				resizeComponents();
-			}
-		});
-	}
-	
-	private void resizeComponents() {
+		// set sizes by defining gaps between components
+		Container contentPane = this;
 		
-		final Dimension size=getSize();
-		backgroundLabel.setSize(size);
-
-		int y=(size.height-CARD_HEIGHT-SPACING-FILTER_HEIGHT)/2;
-		cardViewer.setLocation(SPACING,y);
-		y+=SPACING+CARD_HEIGHT;
-		filterPanel.setLocation(SPACING,y);
-		cardsScrollPane.setBounds(SPACING*2+CARD_WIDTH,0,size.width-CARD_WIDTH-2*SPACING-32,size.height-SPACING);
-		closeButton.setLocation(size.width-closeButton.getWidth(),0);
+		// background's gaps with top left bottom and right are 0
+		// (i.e., it fills the window)
+        springLayout.putConstraint(SpringLayout.WEST, backgroundImage,
+                             0, SpringLayout.WEST, contentPane);
+        springLayout.putConstraint(SpringLayout.NORTH, backgroundImage,
+                             0, SpringLayout.NORTH, contentPane);
+        springLayout.putConstraint(SpringLayout.EAST, backgroundImage,
+                             0, SpringLayout.EAST, contentPane);
+        springLayout.putConstraint(SpringLayout.SOUTH, backgroundImage,
+                             0, SpringLayout.SOUTH, contentPane);		
 		
-		update();
-		repaint();
-	}
-	
-	private void update() {
-
+		// card image's gap (top left)
+        springLayout.putConstraint(SpringLayout.WEST, cardViewer,
+                             SPACING, SpringLayout.WEST, backgroundImage);
+        springLayout.putConstraint(SpringLayout.NORTH, cardViewer,
+                             SPACING, SpringLayout.NORTH, backgroundImage);
+				
+        // gap between card image and filter
+        springLayout.putConstraint(SpringLayout.WEST, filterScrollPane,
+                             SPACING, SpringLayout.EAST, cardViewer);
+							 
+		// filter panel's gaps (top right)
+        springLayout.putConstraint(SpringLayout.NORTH, filterScrollPane,
+                             0, SpringLayout.NORTH, cardViewer);
+        springLayout.putConstraint(SpringLayout.EAST, filterScrollPane,
+                             -SPACING, SpringLayout.EAST, backgroundImage);
+		
+		// filter panel's gap with card pool
+        springLayout.putConstraint(SpringLayout.WEST, cardsScrollPane,
+                             0, SpringLayout.WEST, filterScrollPane);
+        springLayout.putConstraint(SpringLayout.NORTH, cardsScrollPane,
+                             SPACING, SpringLayout.SOUTH, filterScrollPane);
+		
+		// card pool's gap (right bottom)
+        springLayout.putConstraint(SpringLayout.EAST, cardsScrollPane,
+                             -SPACING, SpringLayout.EAST, backgroundImage);
+        springLayout.putConstraint(SpringLayout.SOUTH, cardsScrollPane,
+                             -SPACING, SpringLayout.SOUTH, backgroundImage);
+							 
+		// close button's gap (top right)
+        springLayout.putConstraint(SpringLayout.EAST, closeButton,
+                             0, SpringLayout.EAST, cardViewer);
+        springLayout.putConstraint(SpringLayout.NORTH, closeButton,
+                             SPACING, SpringLayout.SOUTH, cardViewer);
+		
+		if(isEditingDeck()) {
+			springLayout.putConstraint(SpringLayout.EAST, okButton,
+                             -SPACING, SpringLayout.WEST, closeButton);
+			springLayout.putConstraint(SpringLayout.NORTH, okButton,
+                             0, SpringLayout.NORTH, closeButton);
+		}
+		
+		// set initial card image
 		if (cardDefinitions.isEmpty()) {
 			cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
  		} else {
  			cardViewer.setCard(cardDefinitions.get(0),0);
  		}
-		cardsPanel.removeAll();
-
-		final int height=cardsScrollPane.getHeight()-LINE_HEIGHT-16;
-		if (height>0) {
-			int lines=Math.min(height/LINE_HEIGHT,cardDefinitions.size());
-			if (lines>0) {
-				int size=cardDefinitions.size();
-				final int columns=(size+lines-1)/lines;
-				if (columns>1&&columns*LINE_WIDTH2-10<cardsScrollPane.getWidth()) {
-					lines++;
-				}
-				cardsPanel.setLayout(new GridLayout(1,columns,LINE_SPACING,0));
-		
-				boolean startLight=true;
-				boolean light=false;
-				int line=lines;
-				JPanel currentPanel=null;
-				for (final MagicCardDefinition cardDefinition : cardDefinitions) {
-					
-					if (line==lines) {
-						light=startLight;
-						startLight=!startLight;
-						line=0;
-						final JPanel currentMainPanel=new JPanel(new BorderLayout());
-						currentMainPanel.setOpaque(false);						
-						currentPanel=new JPanel(new GridLayout(Math.min(lines,size),1));
-						currentPanel.setBorder(FontsAndBorders.BLACK_BORDER);
-						currentMainPanel.add(currentPanel,BorderLayout.NORTH);
-						cardsPanel.add(currentMainPanel);
-					}
-					currentPanel.add(new CardLabel(cardDefinition,light));
-					line++;
-					size--;
-					light=!light;
-				}
-			}
-		}
-		
-		cardsScrollPane.revalidate();
-		repaint();
 	}
 	
-	public void updateCards() {
-
-		cardDefinitions=filterPanel.getCardDefinitions();
-		update();
-		cardsScrollPane.getViewport().setViewPosition(new Point(0,0));
+	private boolean isEditingDeck() {
+		return editDeckCard != null;
+	}
+	
+	public void updateCardPool() {
+		cardPoolTable.setCards(filterPanel.getCardDefinitions());
 	}
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
 	
 		final Object source=event.getSource();
-		if (source==closeButton) {
-			frame.closeCardExplorer();
-		}
-	}
-	
-	private class CardLabel extends JLabel {
-
-		private static final long serialVersionUID = 1L;
-
-		private final MagicCardDefinition cardDefinition;
 		
-		public CardLabel(final MagicCardDefinition cardDefinition,final boolean light) {
-
-			this.cardDefinition=cardDefinition;
-
-			setText(cardDefinition.getName());
-			setIcon(cardDefinition.getIcon());
-			setIconTextGap(4);
-			setForeground(cardDefinition.getRarityColor());
-			setPreferredSize(LINE_DIMENSION);
-			setOpaque(true);
-			
-			if (!light) {
-				setBackground(Color.LIGHT_GRAY);
+		if (source == closeButton) {
+			frame.closeCardExplorer();
+		} else if (source == okButton && isEditingDeck()) {
+			MagicCardDefinition card = cardPoolTable.getSelectedCard();
+			if (card != null) {
+				editDeckCard.getPlayer().getDeck().remove(editDeckCard.getCard());
+				editDeckCard.getPlayer().getDeck().add(card);
+				editDeckCard.getDeckViewer().updateAfterEdit();						
+				frame.closeCardExplorer();
 			}
-						
-			this.addMouseListener(new MouseAdapter() {
-				@Override
-				public void mouseEntered(final MouseEvent event) {
-					cardViewer.setCard(CardLabel.this.cardDefinition,0);
-					setForeground(Color.RED);
-				}
-				@Override
-				public void mouseExited(final MouseEvent event) {
-					setForeground(cardDefinition.getRarityColor());
-				}
-				@Override
-				public void mousePressed(final MouseEvent event) {
-					if (editDeckCard!=null) {
-						editDeckCard.getPlayer().getDeck().remove(editDeckCard.getCard());
-						editDeckCard.getPlayer().getDeck().add(cardDefinition);
-						editDeckCard.getDeckViewer().updateAfterEdit();						
-						frame.closeCardExplorer();
-					}
-				}
-			});
 		}
 	}
 }

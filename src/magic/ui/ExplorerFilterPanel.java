@@ -6,46 +6,78 @@ import magic.model.MagicColor;
 import magic.model.MagicColoredType;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
+import magic.model.MagicRarity;
+import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.ButtonControlledPopup;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.ButtonGroup;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JRadioButton;
-import javax.swing.JTextField;
-import javax.swing.border.TitledBorder;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
+import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowFocusListener;
+import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+import javax.swing.border.TitledBorder;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 public class ExplorerFilterPanel extends TexturedPanel implements ActionListener, DocumentListener {
 	
 	private static final long serialVersionUID = 1L;
 		
-	private static final String TYPES[]={"Land","Instant","Sorcery","Creature","Artifact","Enchantment"};
+	private static final String FILTER_CHOICES[] = {"Match any selected", "Match all selected", "Exclude selected"};
+	private static final String FILTER_BUTTON_TEXT = "Filter";
+	private static final String HIDE_BUTTON_TEXT = "Hide";
+	private static final Dimension BUTTON_SIZE = new Dimension(65, 20);
+	private static final int SEARCH_FIELD_WIDTH = 12;
+	private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
+	private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
 	
 	private final ExplorerPanel explorerPanel;
+	
 	private final JCheckBox typeCheckBoxes[];
+	private final JRadioButton typeFilterChoices[];
+	
 	private final JCheckBox colorCheckBoxes[];
+	private final JRadioButton colorFilterChoices[];
+	
+	private final JCheckBox subtypeCheckBoxes[];
+	private final JRadioButton subtypeFilterChoices[];
+	
+	private final JCheckBox rarityCheckBoxes[];
+	private final JRadioButton rarityFilterChoices[];
+	
+	private final JTextField textFilterField;
+	
 	private final JCheckBox exactlyCheckBox;
 	private final JCheckBox excludeCheckBox;
 	private final JCheckBox multiCheckBox;
-	private final JTextField textFilterField;
 	private final JRadioButton nameRadioButton;
 	private final JRadioButton convertedRadioButton;
 	private final int mode;
@@ -58,139 +90,194 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		this.mode=mode;
 		this.profile=profile;
 		this.cube=cube;
-
-		final Color textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 		
-		setLayout(new BorderLayout());
-
-		final TitleBar titleBar=new TitleBar("Filter");
-		add(titleBar,BorderLayout.NORTH);
-
-		final JPanel mainPanel=new JPanel();
-		mainPanel.setLayout(new BoxLayout( mainPanel, BoxLayout.Y_AXIS));
-		mainPanel.setOpaque(false);
-		mainPanel.setBorder(FontsAndBorders.BLACK_BORDER);
-		add(mainPanel,BorderLayout.CENTER);
+		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		// Type
-		final TitledBorder typeBorder=BorderFactory.createTitledBorder("Type");
-		typeBorder.setTitleColor(textColor);
-		final JPanel typeFilterPanel=new JPanel(new BorderLayout(8,0));
-		typeFilterPanel.setOpaque(false);
-		typeFilterPanel.setBorder(typeBorder);
-		mainPanel.add(typeFilterPanel);
-
-		final JPanel leftTypeFilterPanel=new JPanel(new GridLayout(3,1));
-		leftTypeFilterPanel.setOpaque(false);
-		typeFilterPanel.add(leftTypeFilterPanel,BorderLayout.WEST);
-		final JPanel rightTypeFilterPanel=new JPanel(new GridLayout(3,1));
-		rightTypeFilterPanel.setOpaque(false);
-		typeFilterPanel.add(rightTypeFilterPanel,BorderLayout.CENTER);
+		ButtonControlledPopup typePopup = addFilterPopupPanel("Card Type");
+		typeCheckBoxes = new JCheckBox[MagicType.values().length];
+		typeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+		populateCheckboxPopup(typePopup, MagicType.values(), typeCheckBoxes, typeFilterChoices, false);
 		
-		typeCheckBoxes=new JCheckBox[TYPES.length];
-		for (int index=0;index<TYPES.length;index++) {
-			
-			typeCheckBoxes[index]=new JCheckBox(TYPES[index]);
-			typeCheckBoxes[index].addActionListener(this);
-			typeCheckBoxes[index].setOpaque(false);
-			typeCheckBoxes[index].setForeground(textColor);
-			typeCheckBoxes[index].setFocusPainted(false);
-			if (index<3) {
-				leftTypeFilterPanel.add(typeCheckBoxes[index]);
-			} else {
-				rightTypeFilterPanel.add(typeCheckBoxes[index]);
-			}
-		}
-
 		// Color
-		final TitledBorder colorBorder=BorderFactory.createTitledBorder("Color");
-		colorBorder.setTitleColor(textColor);
-		final JPanel colorFilterPanel=new JPanel(new BorderLayout());
-		colorFilterPanel.setOpaque(false);
-		colorFilterPanel.setBorder(colorBorder);
-		mainPanel.add(colorFilterPanel);
-
+		ButtonControlledPopup colorPopup = addFilterPopupPanel("Color");
 		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
 		final JPanel colorsPanel=new JPanel(new GridLayout(1,MagicColor.NR_COLORS));
 		colorsPanel.setOpaque(false);
-		int index=0;
-		for (final MagicColor color : MagicColor.values()) {
-
-			final JPanel colorPanel=new JPanel(new BorderLayout());
+		for (int i = 0; i < MagicColor.NR_COLORS; i++) {
+			final MagicColor color = MagicColor.values()[i];
+			final JPanel colorPanel=new JPanel();
 			colorPanel.setOpaque(false);
-			colorCheckBoxes[index]=new JCheckBox("",false);
-			colorCheckBoxes[index].addActionListener(this);
-			colorCheckBoxes[index].setOpaque(false);
-			colorCheckBoxes[index].setFocusPainted(false);
-			colorCheckBoxes[index].setActionCommand(Character.toString(color.getSymbol()));
-			colorPanel.add(colorCheckBoxes[index],BorderLayout.WEST);
-			colorPanel.add(new JLabel(color.getManaType().getIcon(true)),BorderLayout.CENTER);
+			colorCheckBoxes[i]=new JCheckBox("",false);
+			colorCheckBoxes[i].addActionListener(this);
+			colorCheckBoxes[i].setOpaque(false);
+			colorCheckBoxes[i].setFocusPainted(false);
+			colorCheckBoxes[i].setActionCommand(Character.toString(color.getSymbol()));
+			colorPanel.add(colorCheckBoxes[i]);
+			colorPanel.add(new JLabel(color.getManaType().getIcon(true)));
 			colorsPanel.add(colorPanel);
-			index++;
 		}
-		colorFilterPanel.add(colorsPanel,BorderLayout.NORTH);
+		colorsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		colorPopup.add(colorsPanel);
+		colorPopup.addSeparator();
+		ButtonGroup colorFilterBg = new ButtonGroup();
+		colorFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+		for (int i = 0; i < FILTER_CHOICES.length; i++) {
+			colorFilterChoices[i] = new JRadioButton(FILTER_CHOICES[i]);
+			colorFilterChoices[i].addActionListener(this);
+			colorFilterChoices[i].setOpaque(false);
+			colorFilterChoices[i].setForeground(TEXT_COLOR);
+			colorFilterChoices[i].setFocusPainted(false);
+			colorFilterChoices[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+			if(i == 0) {
+				colorFilterChoices[i].setSelected(true);
+			}
+			colorFilterBg.add(colorFilterChoices[i]);
+			colorPopup.add(colorFilterChoices[i]);
+		}
 		
-		final JPanel otherColorPanel=new JPanel(new GridLayout(3,1));
-		otherColorPanel.setOpaque(false);
-		exactlyCheckBox=new JCheckBox("Match colors exactly",false);
-		exactlyCheckBox.addActionListener(this);
-		exactlyCheckBox.setForeground(textColor);
-		exactlyCheckBox.setOpaque(false);
-		exactlyCheckBox.setFocusPainted(false);
-		otherColorPanel.add(exactlyCheckBox);
-		excludeCheckBox=new JCheckBox("Exclude unselected colors",false);
-		excludeCheckBox.addActionListener(this);
-		excludeCheckBox.setForeground(textColor);
-		excludeCheckBox.setOpaque(false);
-		excludeCheckBox.setFocusPainted(false);
-		otherColorPanel.add(excludeCheckBox);
-		multiCheckBox=new JCheckBox("Match multicolored only",false);
-		multiCheckBox.addActionListener(this);
-		multiCheckBox.setForeground(textColor);
-		multiCheckBox.setOpaque(false);
-		multiCheckBox.setFocusPainted(false);
-		otherColorPanel.add(multiCheckBox);
-		colorFilterPanel.add(otherColorPanel,BorderLayout.CENTER);
+		// Mana Cost
+		ButtonControlledPopup costPopup = addFilterPopupPanel("Mana Cost");
 
-		// Text
-		final TitledBorder textFilterBorder=BorderFactory.createTitledBorder("Text");
-		textFilterBorder.setTitleColor(textColor);
-		final JPanel textFilterPanel=new JPanel(new BorderLayout(8,0));
+		// Subtype
+		ButtonControlledPopup subtypePopup = addFilterPopupPanel("Subtype");
+		subtypeCheckBoxes = new JCheckBox[MagicSubType.values().length];
+		subtypeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+		populateCheckboxPopup(subtypePopup, MagicSubType.values(), subtypeCheckBoxes, subtypeFilterChoices, false);	
+		
+		// Rarity
+		ButtonControlledPopup rarityPopup = addFilterPopupPanel("Rarity");
+		rarityCheckBoxes = new JCheckBox[MagicRarity.values().length];
+		rarityFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+		populateCheckboxPopup(rarityPopup, MagicRarity.values(), rarityCheckBoxes, rarityFilterChoices, true);	
+
+		// Search Name
+		final TitledBorder textFilterBorder = BorderFactory.createTitledBorder("Search Name");
+		textFilterBorder.setTitleColor(TEXT_COLOR);
+		final JPanel textFilterPanel = new JPanel();
 		textFilterPanel.setOpaque(false);
 		textFilterPanel.setBorder(textFilterBorder);
-		textFilterField = new JTextField();
+		textFilterField = new JTextField(SEARCH_FIELD_WIDTH);
 		textFilterField.addActionListener(this);
 		textFilterField.getDocument().addDocumentListener(this);
 		textFilterPanel.add(textFilterField);
-		mainPanel.add(textFilterPanel);
+		add(textFilterPanel);
+		
+		
+		
+	
+		
+		
+
+		
+		
+		final JPanel otherColorPanel=new JPanel();
+		otherColorPanel.setOpaque(false);
+		exactlyCheckBox=new JCheckBox("Match colors exactly",false);
+		exactlyCheckBox.addActionListener(this);
+		exactlyCheckBox.setForeground(TEXT_COLOR);
+		exactlyCheckBox.setOpaque(false);
+		exactlyCheckBox.setFocusPainted(false);
+		// otherColorPanel.add(exactlyCheckBox);
+		excludeCheckBox=new JCheckBox("Exclude unselected colors",false);
+		excludeCheckBox.addActionListener(this);
+		excludeCheckBox.setForeground(TEXT_COLOR);
+		excludeCheckBox.setOpaque(false);
+		excludeCheckBox.setFocusPainted(false);
+		// otherColorPanel.add(excludeCheckBox);
+		multiCheckBox=new JCheckBox("Match multicolored only",false);
+		multiCheckBox.addActionListener(this);
+		multiCheckBox.setForeground(TEXT_COLOR);
+		multiCheckBox.setOpaque(false);
+		multiCheckBox.setFocusPainted(false);
+		// otherColorPanel.add(multiCheckBox);
+		// colorFilterPanel.add(otherColorPanel);
 				
 		// Sort
-		final TitledBorder sortBorder=BorderFactory.createTitledBorder("Sort");
-		sortBorder.setTitleColor(textColor);
+		/* final TitledBorder sortBorder=BorderFactory.createTitledBorder("Sort");
+		sortBorder.setTitleColor(TEXT_COLOR);
 		final JPanel sortFilterPanel=new JPanel(new BorderLayout(8,0));
 		sortFilterPanel.setOpaque(false);
 		sortFilterPanel.setBorder(sortBorder);
-		mainPanel.add(sortFilterPanel);
+		mainPanel.add(sortFilterPanel); */
 
 		final ButtonGroup sortGroup=new ButtonGroup();
 		nameRadioButton=new JRadioButton("Name",true);
 		nameRadioButton.addActionListener(this);
-		nameRadioButton.setForeground(textColor);
+		nameRadioButton.setForeground(TEXT_COLOR);
 		nameRadioButton.setOpaque(false);
 		nameRadioButton.setFocusPainted(false);
-		sortGroup.add(nameRadioButton);
-		sortFilterPanel.add(nameRadioButton,BorderLayout.WEST);
+		// sortGroup.add(nameRadioButton);
+		// sortFilterPanel.add(nameRadioButton);
 		convertedRadioButton=new JRadioButton("Converted cost",false);
 		convertedRadioButton.addActionListener(this);
-		convertedRadioButton.setForeground(textColor);
+		convertedRadioButton.setForeground(TEXT_COLOR);
 		convertedRadioButton.setOpaque(false);
 		convertedRadioButton.setFocusable(false);
-		sortGroup.add(convertedRadioButton);
-		sortFilterPanel.add(convertedRadioButton,BorderLayout.CENTER);
+		// sortGroup.add(convertedRadioButton);
+		// sortFilterPanel.add(convertedRadioButton);
+	}
+	
+	private ButtonControlledPopup addFilterPopupPanel(final String title) {
+		final TitledBorder border = BorderFactory.createTitledBorder(title);
+		border.setTitleColor(TEXT_COLOR);
+		final JPanel filterPanel = new JPanel();
+		filterPanel.setOpaque(false);
+		filterPanel.setBorder(border);
+		add(filterPanel);
+		
+		JButton selectButton = new JButton(FILTER_BUTTON_TEXT);
+		selectButton.setPreferredSize(BUTTON_SIZE);
+		filterPanel.add(selectButton);
+		
+		ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
+		pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
+		return pop;
+	}
+	
+	private void populateCheckboxPopup(final ButtonControlledPopup popup, final Object[] checkboxValues, final JCheckBox[] newCheckboxes, final JRadioButton[] newFilterButtons, final boolean hideAND) {
+		JPanel checkboxesPanel = new JPanel(new GridLayout(newCheckboxes.length, 1));
+		checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		for (int i=0;i<checkboxValues.length;i++) {
+			newCheckboxes[i]=new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
+			newCheckboxes[i].addActionListener(this);
+			newCheckboxes[i].setOpaque(false);
+			newCheckboxes[i].setForeground(TEXT_COLOR);
+			newCheckboxes[i].setFocusPainted(false);
+			newCheckboxes[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+			checkboxesPanel.add(newCheckboxes[i]);
+		}
+		
+		JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
+		scrollPane.setAlignmentX(Component.LEFT_ALIGNMENT);
+		scrollPane.setBorder(null);
+		scrollPane.setOpaque(false);
+		scrollPane.getViewport().setOpaque(false);
+		scrollPane.setPreferredSize(POPUP_CHECKBOXES_SIZE);
+		popup.add(scrollPane);
+		
+		popup.addSeparator();
+		
+		ButtonGroup bg = new ButtonGroup();
+		for (int i = 0; i < FILTER_CHOICES.length; i++) {
+			newFilterButtons[i] = new JRadioButton(FILTER_CHOICES[i]);
+			newFilterButtons[i].addActionListener(this);
+			newFilterButtons[i].setOpaque(false);
+			newFilterButtons[i].setForeground(TEXT_COLOR);
+			newFilterButtons[i].setFocusPainted(false);
+			newFilterButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+			if (i == 0) {
+				newFilterButtons[i].setSelected(true);
+			} else if (i == 1) {
+				newFilterButtons[i].setVisible(!hideAND);
+			}
+			bg.add(newFilterButtons[i]);
+			popup.add(newFilterButtons[i]);
+		}
 	}
 	
 	private boolean filter(final MagicCardDefinition cardDefinition) {
-
+		
 		if (cardDefinition.isToken()) {
 			return false;
 		}
@@ -198,7 +285,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			return false;
 		}
 				
-		switch (mode) {
+		/* switch (mode) {
 			case ExplorerPanel.LAND: 
 				if (!cardDefinition.isLand()) {
 					return false;
@@ -209,71 +296,102 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 					return false;
 				}
 				break;
-		}
+		} */
 		
 		if (profile!=null&&!cardDefinition.isBasic()&&!cardDefinition.isPlayable(profile)) {
 			return false;
 		}
 		
-		if (multiCheckBox.isSelected()&&cardDefinition.getColoredType()!=MagicColoredType.MultiColored) {
+		/* if (multiCheckBox.isSelected()&&cardDefinition.getColoredType()!=MagicColoredType.MultiColored) {
 			return false;
-		}
+		} */
 		
-		boolean useTypes=false;
-		boolean validTypes=false;
-		for (int typeIndex=0;typeIndex<typeCheckBoxes.length;typeIndex++) {
-		
-			if (typeCheckBoxes[typeIndex].isSelected()) {
-				useTypes=true;
-				switch (typeIndex) {
-					case 0: validTypes|=cardDefinition.isLand(); break;
-					case 1: validTypes|=cardDefinition.hasType(MagicType.Instant); break;
-					case 2: validTypes|=cardDefinition.hasType(MagicType.Sorcery); break;
-					case 3: validTypes|=cardDefinition.isCreature(); break;
-					case 4: validTypes|=cardDefinition.hasType(MagicType.Artifact); break;
-					case 5: validTypes|=cardDefinition.isEnchantment(); break;
-				}
-			}
-		}
-		if (useTypes&&!validTypes) {
-			return false;
-		}
-		
-		// text
+		// name search
 		final String filterString = textFilterField.getText();
-		final String[] filters = filterString.split(" ");
-		for(int i=0; i<filters.length; i++) {
-			if(!cardDefinition.hasText(filters[i])) {
-				return false;
-			}
-		}
-		
-		// colors		
-		boolean useColors=false;
-		boolean validColors=false;
-		for (int colorIndex=0;colorIndex<colorCheckBoxes.length;colorIndex++) {
-
-			final MagicColor color=MagicColor.getColor(colorCheckBoxes[colorIndex].getActionCommand().charAt(0));
-			final boolean hasColor=color.hasColor(cardDefinition.getColorFlags());
-			if (colorCheckBoxes[colorIndex].isSelected()) {
-				useColors=true;
-				if (hasColor) {
-					validColors=true;
-				} else if (exactlyCheckBox.isSelected()) {
+		if (filterString.length() > 0) {
+			final String[] filters = filterString.split(" ");
+			for(int i=0; i<filters.length; i++) {
+				if(!cardDefinition.hasText(filters[i])) {
 					return false;
 				}
-			} else if (excludeCheckBox.isSelected()&&hasColor) {
-				return false;
 			}
-		}		
-		return !useColors||validColors;
-	}
-	
-	private Comparator<MagicCardDefinition> getComparator() {
+		}
 		
-		return nameRadioButton.isSelected() ? MagicCardDefinition.NAME_COMPARATOR : MagicCardDefinition.CONVERTED_COMPARATOR;
+		// type
+		if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices, 
+			new CardChecker() {
+				public boolean checkCard(MagicCardDefinition card, int i) {
+					return card.hasType(MagicType.values()[i]);
+				}
+			})) {
+			return false;
+		}
+		
+		// color
+		if (!filterCheckboxes(cardDefinition, colorCheckBoxes, colorFilterChoices, 
+			new CardChecker() {
+				public boolean checkCard(MagicCardDefinition card, int i) {
+					return card.hasColor(MagicColor.values()[i]);
+				}
+			})) {
+			return false;
+		}
+		
+		// subtype
+		if (!filterCheckboxes(cardDefinition, subtypeCheckBoxes, subtypeFilterChoices, 
+			new CardChecker() {
+				public boolean checkCard(MagicCardDefinition card, int i) {
+					return card.hasSubType(MagicSubType.values()[i]);
+				}
+			})) {
+			return false;
+		}
+		
+		// rarity
+		if (!filterCheckboxes(cardDefinition, rarityCheckBoxes, rarityFilterChoices, 
+			new CardChecker() {
+				public boolean checkCard(MagicCardDefinition card, int i) {
+					return card.isRarity(MagicRarity.values()[i]);
+				}
+			})) {
+			return false;
+		}
+		
+		return true;
 	}
 	
+	private boolean filterCheckboxes(final MagicCardDefinition cardDefinition, final JCheckBox[] checkboxes, final JRadioButton[] filterButtons, CardChecker func) {
+		boolean somethingSelected = false;
+		boolean resultOR = false;
+		boolean resultAND = true;
+		
+		for (int i=0; i < checkboxes.length; i++) {			
+			if(checkboxes[i].isSelected()) {
+				somethingSelected = true;
+				if(!func.checkCard(cardDefinition, i)) {
+					resultAND = false;
+				} else {
+					resultOR = true;
+				}
+			}
+		}
+		if (filterButtons[2].isSelected()) {
+			// exclude selected
+			return !resultOR;
+		}
+		if (!somethingSelected) {
+			// didn't choose to exclude and nothing selected, so don't filter
+			return true;
+		} else {
+			// otherwise return OR or AND result
+			return (filterButtons[0].isSelected() && resultOR) || (filterButtons[1].isSelected() && resultAND);
+		}
+	}
+	
+	private interface CardChecker {
+		public boolean checkCard(MagicCardDefinition card, int i);
+	}
+		
 	public List<MagicCardDefinition> getCardDefinitions() {
 		
 		final List<MagicCardDefinition> cardDefinitions=new ArrayList<MagicCardDefinition>();
@@ -282,28 +400,27 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			if (filter(cardDefinition)) {
 				cardDefinitions.add(cardDefinition);
 			}
-		}		
-		Collections.sort(cardDefinitions,getComparator());
+		}
 		return cardDefinitions;
 	}
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-		
-		explorerPanel.updateCards();
+		explorerPanel.updateCardPool();
 	}
 
 	@Override
 	public void insertUpdate(final DocumentEvent arg0) {
-		explorerPanel.updateCards();
+		explorerPanel.updateCardPool();
 	}
 
 	@Override
 	public void removeUpdate(final DocumentEvent arg0) {
-		explorerPanel.updateCards();
+		explorerPanel.updateCardPool();
 	}
 	
 	@Override
 	public void changedUpdate(final DocumentEvent arg0) {
 	}
+
 }

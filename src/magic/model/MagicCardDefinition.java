@@ -193,6 +193,10 @@ public class MagicCardDefinition {
 	public void setRarity(final char c) {
 		this.rarity = MagicRarity.getRarity(c);
 	}
+	
+	public boolean isRarity(final MagicRarity r) {
+		return this.rarity == r;
+	}
 
 	public int getRarity() {
 		return rarity.ordinal();
@@ -318,31 +322,33 @@ public class MagicCardDefinition {
 		return isInstant()||isSorcery();
 	}
 	
-	public String getTypeString() {
+	public String getLongTypeString() {
 		if (isBasic()) {
-			return "Basic Land";
+			return "Basic " + getTypeString();
 		}
-		
-		StringBuffer names = new StringBuffer();
 		if (isLegendary()) {
-			names.append(MagicType.Legendary.toString());
-			names.append(" ");
-		}
-		if (isLand()) {
-			names.append(MagicType.Land.toString());
-		} else if (isCreature()) {
-			names.append(MagicType.Creature.toString());
-		} else if (isArtifact()) {
-			names.append(MagicType.Artifact.toString());
-		} else if (isEnchantment()) {
-			names.append(MagicType.Enchantment.toString());
-		} else if (isInstant()) {
-			names.append(MagicType.Instant.toString());
-		} else if (isSorcery()) {
-			names.append(MagicType.Sorcery.toString());
+			return "Legendary " + getTypeString();
 		}
 		
-		return names.toString();	
+		return getTypeString();	
+	}
+	
+	public String getTypeString() {
+		if (isLand()) {
+			return MagicType.Land.toString();
+		} else if (isCreature()) {
+			return MagicType.Creature.toString();
+		} else if (isArtifact()) {
+			return MagicType.Artifact.toString();
+		} else if (isEnchantment()) {
+			return MagicType.Enchantment.toString();
+		} else if (isInstant()) {
+			return MagicType.Instant.toString();
+		} else if (isSorcery()) {
+			return MagicType.Sorcery.toString();
+		}
+		
+		return "";	
 	}
 
 	public boolean usesStack() {
@@ -384,6 +390,10 @@ public class MagicCardDefinition {
 	protected void setColor(final MagicColor color) {
 		
 		colorFlags|=color.getMask();
+	}
+	
+	public boolean hasColor(final MagicColor color) {
+		return (colorFlags&color.getMask())!=0;
 	}
 		
 	public int getColorFlags() {
@@ -689,25 +699,67 @@ public class MagicCardDefinition {
 		);
 	}
 
-	public static final Comparator<MagicCardDefinition> NAME_COMPARATOR=new Comparator<MagicCardDefinition>() {
-
+	public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
 		@Override
 		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-
 			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
 		}
 	};
-	
-	public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR=new Comparator<MagicCardDefinition>() {
 
+	public static final Comparator<MagicCardDefinition> NAME_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
 		@Override
 		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-
+			return NAME_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+		}
+	};
+	
+	public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
 			final int cdif=cardDefinition1.getConvertedCost()-cardDefinition2.getConvertedCost();
 			if (cdif!=0) {
 				return cdif;
 			}
 			return cardDefinition1.getName().compareTo(cardDefinition2.getName());
+		}
+	};
+	
+	public static final Comparator<MagicCardDefinition> CONVERTED_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			return CONVERTED_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+		}
+	};
+
+	public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {		
+			int c = cardDefinition1.getTypeString().compareTo(cardDefinition2.getTypeString());
+			if(c == 0) {
+				return cardDefinition1.getLongTypeString().compareTo(cardDefinition2.getLongTypeString());
+			}
+			return c;
+		}
+	};
+
+	public static final Comparator<MagicCardDefinition> TYPE_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			return TYPE_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+		}
+	};
+
+	public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			return cardDefinition1.getRarityString().compareTo(cardDefinition2.getRarityString());
+		}
+	};
+
+	public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			return RARITY_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
 		}
 	};
 }
