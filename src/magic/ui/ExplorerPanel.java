@@ -15,6 +15,7 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -74,6 +75,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// deck statistics
 		if (isEditingDeck()) {
+			leftPanel.add(Box.createVerticalStrut(SPACING));
 			statsViewer = new DeckStatisticsViewer();
 			leftPanel.add(statsViewer);
 		} else {
@@ -145,10 +147,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			swapButton.addActionListener(this);
 			buttonsPanel.add(swapButton);
 			
-			JPanel gap = new JPanel();
-			gap.setPreferredSize(new Dimension(SPACING, 2));
-			gap.setOpaque(false);
-			buttonsPanel.add(gap);			
+			buttonsPanel.add(Box.createHorizontalStrut(SPACING));			
 		} else {
 			swapButton = null;
 		}
