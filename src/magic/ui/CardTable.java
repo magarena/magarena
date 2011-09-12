@@ -11,6 +11,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
 import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
@@ -20,25 +21,25 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
-public class CardTable extends JTable {
+public class CardTable extends JScrollPane {
 
 	private static final long serialVersionUID = 113243L;
 	
 	private final CardViewer cardViewer;
 	private final CardTableModel tableModel;
+	private final JTable table;
 	
 	public CardTable(List<MagicCardDefinition> defs, CardViewer cardViewer) {
-		super(new CardTableModel(defs));
-		
-		this.tableModel = (CardTableModel) getModel();
+		this.tableModel = new CardTableModel(defs);
+		this.table = new JTable(tableModel);
 		this.cardViewer = cardViewer;
 		
-		setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
-		setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // allow only single row selection
-		setRowHeight(20);
+		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // allow only single row selection
+		table.setRowHeight(20);
 		
 		// set column widths
-		TableColumnModel model = getColumnModel();
+		TableColumnModel model = table.getColumnModel();
 		for (int i = 0; i < model.getColumnCount(); i++) {
 			model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
 		}
@@ -48,29 +49,35 @@ public class CardTable extends JTable {
 		
 		// listener to change card image on selection
 		SelectionListener listener = new SelectionListener();
-		getSelectionModel().addListSelectionListener(listener);
-		getColumnModel().getSelectionModel().addListSelectionListener(listener);
+		table.getSelectionModel().addListSelectionListener(listener);
+		model.getSelectionModel().addListSelectionListener(listener);
 		
 		// listener to sort on column header click
-		JTableHeader header = getTableHeader();
+		JTableHeader header = table.getTableHeader();
 		header.setUpdateTableInRealTime(true);
 		header.addMouseListener(new ColumnListener());
 		header.setReorderingAllowed(true);
+		
+		// add table to scroll pane
+		setViewportView(table);
+		setBorder(null);
+		setOpaque(false);
+		getViewport().setOpaque(false);
 	}
 	
 	public MagicCardDefinition getSelectedCard() {
-		return tableModel.getCardDef(getSelectionModel().getLeadSelectionIndex());
+		return tableModel.getCardDef(table.getSelectionModel().getLeadSelectionIndex());
 	}
 	
 	public void setCards(List<MagicCardDefinition> defs) {
 		tableModel.setCards(defs);
-		tableChanged(new TableModelEvent(tableModel));
-		repaint();
+		table.tableChanged(new TableModelEvent(tableModel));
+		table.repaint();
 	}
 	
 	private class ColumnListener extends MouseAdapter {
 		public void mouseClicked(MouseEvent e) {
-			TableColumnModel colModel = getColumnModel();
+			TableColumnModel colModel = table.getColumnModel();
 			int columnModelIndex = colModel.getColumnIndexAtX(e.getX());
 			int modelIndex = colModel.getColumn(columnModelIndex).getModelIndex();
 
@@ -82,8 +89,8 @@ public class CardTable extends JTable {
 			tableModel.sort(modelIndex);
 			
 			// redraw
-			tableChanged(new TableModelEvent(tableModel));
-			repaint();
+			table.tableChanged(new TableModelEvent(tableModel));
+			table.repaint();
 		}
 	}
 	
@@ -107,13 +114,13 @@ public class CardTable extends JTable {
 	private class SelectionListener implements ListSelectionListener {
 		public void valueChanged(ListSelectionEvent e) {
 			// If cell selection is enabled, both row and column change events are fired
-			if (e.getSource() == getSelectionModel() && getRowSelectionAllowed()) {
+			if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
 				// Row selection changed				
 				MagicCardDefinition card = getSelectedCard();
 				if (card != null) {
 					cardViewer.setCard(card,0);
 				}
-			} /* else if (e.getSource() == getColumnModel().getSelectionModel() && getColumnSelectionAllowed() ){
+			} /* else if (e.getSource() == table.getColumnModel().getSelectionModel() && table.getColumnSelectionAllowed() ){
 				// Column selection changed
 				int first = e.getFirstIndex();
 				int last = e.getLastIndex();

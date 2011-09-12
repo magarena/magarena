@@ -78,28 +78,18 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		// card pool
 		cardPoolDefs = filterPanel.getCardDefinitions();
 		cardPoolTable = new CardTable(cardPoolDefs, cardViewer);
-		
-		final JScrollPane cardPoolScrollPane = new JScrollPane(cardPoolTable);
-		cardPoolScrollPane.setBorder(null);
-		cardPoolScrollPane.setOpaque(false);
-		cardPoolScrollPane.getViewport().setOpaque(false);
 
 		// deck
-		final JScrollPane deckScrollPane;
 		final Container cardsPanel; // reference panel holding both card pool and deck
+		
 		if (isEditingDeck()) {
 			deckDefs = editDeckCard.getPlayer().getDeck();
 			deckTable = new CardTable(deckDefs, cardViewer);
-		
-			deckScrollPane = new JScrollPane(deckTable);
-			deckScrollPane.setBorder(null);
-			deckScrollPane.setOpaque(false);
-			deckScrollPane.getViewport().setOpaque(false);
 			
 			JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 			cardsSplitPane.setOneTouchExpandable(true);
-			cardsSplitPane.setLeftComponent(cardPoolScrollPane);
-			cardsSplitPane.setRightComponent(deckScrollPane);
+			cardsSplitPane.setLeftComponent(cardPoolTable);
+			cardsSplitPane.setRightComponent(deckTable);
 			cardsSplitPane.setResizeWeight(0.7);
 			
 			add(cardsSplitPane);
@@ -108,10 +98,9 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			// no deck
 			deckDefs = null;
 			deckTable = null;
-			deckScrollPane = null;
 			
-			add(cardPoolScrollPane);
-			cardsPanel = cardPoolScrollPane;
+			add(cardPoolTable);
+			cardsPanel = cardPoolTable;
 		}
 		
 		// close button
