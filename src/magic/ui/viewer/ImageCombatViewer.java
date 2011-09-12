@@ -20,11 +20,8 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 	private final ViewerInfo viewerInfo;
 	private final ImagePermanentsViewer permanentsViewer;
 	
-	public ImageCombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
-		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-		
-		this.viewerInfo=viewerInfo;
-
+	public ImageCombatViewer(final ViewerInfo aViewerInfo,final GameController controller) {
+		viewerInfo = aViewerInfo;
 		controller.registerChoiceViewer(this);
 		
 		setLayout(new BorderLayout(6,0));
@@ -34,6 +31,7 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 		leftPanel.setOpaque(false);
 		add(leftPanel,BorderLayout.WEST);
 		
+		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		final JLabel combatLabel=new JLabel(theme.getIcon(Theme.ICON_SMALL_COMBAT));
 		combatLabel.setOpaque(true);
 		combatLabel.setBackground(theme.getColor(Theme.COLOR_ICON_BACKGROUND));
@@ -41,7 +39,7 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 		combatLabel.setBorder(FontsAndBorders.BLACK_BORDER);
 		leftPanel.add(combatLabel,BorderLayout.NORTH);
 		
-		permanentsViewer=new ImagePermanentsViewer(controller);
+        permanentsViewer=new ImagePermanentsViewer(controller);
 		add(permanentsViewer,BorderLayout.CENTER);
 	}
 	
