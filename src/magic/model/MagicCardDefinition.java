@@ -431,6 +431,10 @@ public class MagicCardDefinition {
 		return convertedCost;
 	}
 	
+	public boolean hasConvertedCost(int c) {
+		return convertedCost == c;
+	}
+	
 	public int getCostBucket() {
 		switch (convertedCost) {
 			case 0:

@@ -26,6 +26,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
+import java.lang.Integer;
 import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -50,7 +51,8 @@ import javax.swing.event.DocumentListener;
 public class ExplorerFilterPanel extends TexturedPanel implements ActionListener, DocumentListener {
 	
 	private static final long serialVersionUID = 1L;
-		
+	
+	private static final String COST_VALUES[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"};
 	private static final String FILTER_CHOICES[] = {"Match any selected", "Match all selected", "Exclude selected"};
 	private static final String FILTER_BUTTON_TEXT = "Filter";
 	private static final String HIDE_BUTTON_TEXT = "Hide";
@@ -67,6 +69,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private final JCheckBox colorCheckBoxes[];
 	private final JRadioButton colorFilterChoices[];
 	
+	private final JCheckBox costCheckBoxes[];
+	private final JRadioButton costFilterChoices[];
+	
 	private final JCheckBox subtypeCheckBoxes[];
 	private final JRadioButton subtypeFilterChoices[];
 	
@@ -75,11 +80,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	
 	private final JTextField textFilterField;
 	
-	private final JCheckBox exactlyCheckBox;
-	private final JCheckBox excludeCheckBox;
-	private final JCheckBox multiCheckBox;
-	private final JRadioButton nameRadioButton;
-	private final JRadioButton convertedRadioButton;
 	private final int mode;
 	private final MagicPlayerProfile profile;
 	private final MagicCubeDefinition cube;
@@ -138,6 +138,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		// Mana Cost
 		ButtonControlledPopup costPopup = addFilterPopupPanel("Mana Cost");
+		costCheckBoxes = new JCheckBox[COST_VALUES.length];
+		costFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+		populateCheckboxPopup(costPopup, COST_VALUES, costCheckBoxes, costFilterChoices, true);	
 
 		// Subtype
 		ButtonControlledPopup subtypePopup = addFilterPopupPanel("Subtype");
@@ -162,60 +165,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		textFilterField.getDocument().addDocumentListener(this);
 		textFilterPanel.add(textFilterField);
 		add(textFilterPanel);
-		
-		
-		
-	
-		
-		
-
-		
-		
-		final JPanel otherColorPanel=new JPanel();
-		otherColorPanel.setOpaque(false);
-		exactlyCheckBox=new JCheckBox("Match colors exactly",false);
-		exactlyCheckBox.addActionListener(this);
-		exactlyCheckBox.setForeground(TEXT_COLOR);
-		exactlyCheckBox.setOpaque(false);
-		exactlyCheckBox.setFocusPainted(false);
-		// otherColorPanel.add(exactlyCheckBox);
-		excludeCheckBox=new JCheckBox("Exclude unselected colors",false);
-		excludeCheckBox.addActionListener(this);
-		excludeCheckBox.setForeground(TEXT_COLOR);
-		excludeCheckBox.setOpaque(false);
-		excludeCheckBox.setFocusPainted(false);
-		// otherColorPanel.add(excludeCheckBox);
-		multiCheckBox=new JCheckBox("Match multicolored only",false);
-		multiCheckBox.addActionListener(this);
-		multiCheckBox.setForeground(TEXT_COLOR);
-		multiCheckBox.setOpaque(false);
-		multiCheckBox.setFocusPainted(false);
-		// otherColorPanel.add(multiCheckBox);
-		// colorFilterPanel.add(otherColorPanel);
-				
-		// Sort
-		/* final TitledBorder sortBorder=BorderFactory.createTitledBorder("Sort");
-		sortBorder.setTitleColor(TEXT_COLOR);
-		final JPanel sortFilterPanel=new JPanel(new BorderLayout(8,0));
-		sortFilterPanel.setOpaque(false);
-		sortFilterPanel.setBorder(sortBorder);
-		mainPanel.add(sortFilterPanel); */
-
-		final ButtonGroup sortGroup=new ButtonGroup();
-		nameRadioButton=new JRadioButton("Name",true);
-		nameRadioButton.addActionListener(this);
-		nameRadioButton.setForeground(TEXT_COLOR);
-		nameRadioButton.setOpaque(false);
-		nameRadioButton.setFocusPainted(false);
-		// sortGroup.add(nameRadioButton);
-		// sortFilterPanel.add(nameRadioButton);
-		convertedRadioButton=new JRadioButton("Converted cost",false);
-		convertedRadioButton.addActionListener(this);
-		convertedRadioButton.setForeground(TEXT_COLOR);
-		convertedRadioButton.setOpaque(false);
-		convertedRadioButton.setFocusable(false);
-		// sortGroup.add(convertedRadioButton);
-		// sortFilterPanel.add(convertedRadioButton);
 	}
 	
 	private ButtonControlledPopup addFilterPopupPanel(final String title) {
@@ -302,10 +251,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			return false;
 		}
 		
-		/* if (multiCheckBox.isSelected()&&cardDefinition.getColoredType()!=MagicColoredType.MultiColored) {
-			return false;
-		} */
-		
 		// name search
 		final String filterString = textFilterField.getText();
 		if (filterString.length() > 0) {
@@ -332,6 +277,16 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			new CardChecker() {
 				public boolean checkCard(MagicCardDefinition card, int i) {
 					return card.hasColor(MagicColor.values()[i]);
+				}
+			})) {
+			return false;
+		}
+		
+		// cost
+		if (!filterCheckboxes(cardDefinition, costCheckBoxes, costFilterChoices, 
+			new CardChecker() {
+				public boolean checkCard(MagicCardDefinition card, int i) {
+					return card.hasConvertedCost(Integer.parseInt(COST_VALUES[i]));
 				}
 			})) {
 			return false;
