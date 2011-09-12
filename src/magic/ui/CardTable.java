@@ -4,13 +4,17 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.CostPanel;
+import magic.ui.widget.TitleBar;
 
+import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
+import javax.swing.BoxLayout;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
@@ -21,7 +25,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
-public class CardTable extends JScrollPane {
+public class CardTable extends JPanel {
 
 	private static final long serialVersionUID = 113243L;
 	
@@ -30,6 +34,10 @@ public class CardTable extends JScrollPane {
 	private final JTable table;
 	
 	public CardTable(List<MagicCardDefinition> defs, CardViewer cardViewer) {
+		this(defs, cardViewer, "");
+	}
+	
+	public CardTable(List<MagicCardDefinition> defs, CardViewer cardViewer, String title) {
 		this.tableModel = new CardTableModel(defs);
 		this.table = new JTable(tableModel);
 		this.cardViewer = cardViewer;
@@ -59,10 +67,20 @@ public class CardTable extends JScrollPane {
 		header.setReorderingAllowed(true);
 		
 		// add table to scroll pane
-		setViewportView(table);
-		setBorder(null);
-		setOpaque(false);
-		getViewport().setOpaque(false);
+		JScrollPane scrollpane = new JScrollPane(table);
+		scrollpane.setBorder(null);
+		scrollpane.setOpaque(false);
+		scrollpane.getViewport().setOpaque(false);
+		
+		// add title
+		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		if (title.length() > 0) {
+			TitleBar titleBar = new TitleBar(title);
+			add(titleBar);
+			add(scrollpane);
+		} else {
+			add(scrollpane);
+		}			
 	}
 	
 	public MagicCardDefinition getSelectedCard() {

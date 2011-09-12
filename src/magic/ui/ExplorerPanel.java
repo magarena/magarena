@@ -3,8 +3,11 @@ package magic.ui;
 import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
+import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.ui.viewer.CardViewer;
+import magic.ui.viewer.DeckStatisticsViewer;
+import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import java.awt.Container;
@@ -12,6 +15,7 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -29,6 +33,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	
 	private static final String CLOSE_BUTTON_TEXT = "Close";
 	private static final String SWAP_BUTTON_TEXT = "Swap Selected Cards";
+	private static final String CARD_POOL_TITLE = "Card Pool";
+	private static final String DECK_TITLE = "Deck";
 	private static final Dimension CARD_DIMENSION = new Dimension(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
  	private static final int SPACING=10;
 	
@@ -39,6 +45,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private final CardTable deckTable;
  	private final ZoneBackgroundLabel backgroundImage;
 	private final CardViewer cardViewer;
+	private final DeckStatisticsViewer statsViewer;
 	private final ExplorerFilterPanel filterPanel;
 	private final JButton closeButton;
 	private final JButton swapButton;
@@ -53,18 +60,38 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		final SpringLayout springLayout = new SpringLayout();
 		setLayout(springLayout);
 		
+		// left side (everything but buttons)
+		JPanel leftPanel = new JPanel();
+		leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
+		leftPanel.setOpaque(false);
+		
 		// card image
 		cardViewer = new CardViewer("",false,true);
 		cardViewer.setPreferredSize(CARD_DIMENSION);
 		cardViewer.setMaximumSize(CARD_DIMENSION);
 		cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
-		add(cardViewer);
+		leftPanel.add(cardViewer);
+		
+		// deck statistics
+		if (isEditingDeck()) {
+			statsViewer = new DeckStatisticsViewer();
+			leftPanel.add(statsViewer);
+		} else {
+			statsViewer = null;
+		}
+		
+		// add scrolling to left side
+		JScrollPane leftScrollPane = new JScrollPane(leftPanel);
+		leftScrollPane.setBorder(null);
+		leftScrollPane.setOpaque(false);
+		leftScrollPane.getViewport().setOpaque(false);
+		add(leftScrollPane);
 		
 		// filters
 		MagicPlayerProfile profile=null;
 		MagicCubeDefinition cube=null;
 		if (isEditingDeck()) {
-			profile=editDeckCard.getPlayer().getProfile();
+			profile=getPlayer().getProfile();
 			cube=editDeckCard.getCube();
 		}
 		filterPanel = new ExplorerFilterPanel(this, mode, profile, cube);
@@ -77,14 +104,14 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// card pool
 		cardPoolDefs = filterPanel.getCardDefinitions();
-		cardPoolTable = new CardTable(cardPoolDefs, cardViewer);
+		cardPoolTable = (isEditingDeck()) ? new CardTable(cardPoolDefs, cardViewer, CARD_POOL_TITLE) : new CardTable(cardPoolDefs, cardViewer);
 
 		// deck
 		final Container cardsPanel; // reference panel holding both card pool and deck
 		
 		if (isEditingDeck()) {
-			deckDefs = editDeckCard.getPlayer().getDeck();
-			deckTable = new CardTable(deckDefs, cardViewer);
+			deckDefs = getPlayer().getDeck();
+			deckTable = new CardTable(deckDefs, cardViewer, DECK_TITLE);
 			
 			JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 			cardsSplitPane.setOneTouchExpandable(true);
@@ -94,6 +121,9 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			
 			add(cardsSplitPane);
 			cardsPanel = cardsSplitPane;
+			
+			// update deck stats
+			statsViewer.setPlayer(getPlayer());
 		} else {
 			// no deck
 			deckDefs = null;
@@ -103,22 +133,33 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			cardsPanel = cardPoolTable;
 		}
 		
-		// close button
-		closeButton = new JButton(CLOSE_BUTTON_TEXT);
-		closeButton.setFocusable(false);
-		closeButton.addActionListener(this);
+		// buttons
+		JPanel buttonsPanel = new JPanel();
+		buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
+		buttonsPanel.setOpaque(false);
 		
-		add(closeButton);
-		
-		// create OK button for deck editing
+		// create swap button for deck editing
 		if (isEditingDeck()) {
 			swapButton = new JButton(SWAP_BUTTON_TEXT);
 			swapButton.setFocusable(false);
 			swapButton.addActionListener(this);
-			add(swapButton);
+			buttonsPanel.add(swapButton);
+			
+			JPanel gap = new JPanel();
+			gap.setPreferredSize(new Dimension(SPACING, 2));
+			gap.setOpaque(false);
+			buttonsPanel.add(gap);			
 		} else {
 			swapButton = null;
 		}
+		
+		// close button
+		closeButton = new JButton(CLOSE_BUTTON_TEXT);
+		closeButton.setFocusable(false);
+		closeButton.addActionListener(this);
+		buttonsPanel.add(closeButton);
+		
+		add(buttonsPanel);
 		
 		// background - must be added last or anything else
 		// will be hidden behind it
@@ -140,45 +181,40 @@ public class ExplorerPanel extends JPanel implements ActionListener {
                              0, SpringLayout.SOUTH, contentPane);		
 		
 		// card image's gap (top left)
-        springLayout.putConstraint(SpringLayout.WEST, cardViewer,
+        springLayout.putConstraint(SpringLayout.WEST, leftScrollPane,
                              SPACING, SpringLayout.WEST, backgroundImage);
-        springLayout.putConstraint(SpringLayout.NORTH, cardViewer,
+        springLayout.putConstraint(SpringLayout.NORTH, leftScrollPane,
                              SPACING, SpringLayout.NORTH, backgroundImage);
 				
         // gap between card image and filter
         springLayout.putConstraint(SpringLayout.WEST, filterScrollPane,
-                             SPACING, SpringLayout.EAST, cardViewer);
+                             SPACING, SpringLayout.EAST, leftScrollPane);
 							 
 		// filter panel's gaps (top right)
         springLayout.putConstraint(SpringLayout.NORTH, filterScrollPane,
-                             0, SpringLayout.NORTH, cardViewer);
+                             0, SpringLayout.NORTH, leftScrollPane);
         springLayout.putConstraint(SpringLayout.EAST, filterScrollPane,
                              -SPACING, SpringLayout.EAST, backgroundImage);
 		
-		// filter panel's gap with card pool
+		// filter panel's gap with card tables
         springLayout.putConstraint(SpringLayout.WEST, cardsPanel,
                              0, SpringLayout.WEST, filterScrollPane);
         springLayout.putConstraint(SpringLayout.NORTH, cardsPanel,
                              SPACING, SpringLayout.SOUTH, filterScrollPane);
 		
-		// card pool's gap (right)
+		// card tables' gap (right)
 		springLayout.putConstraint(SpringLayout.EAST, cardsPanel,
 							 -SPACING, SpringLayout.EAST, backgroundImage);
-			springLayout.putConstraint(SpringLayout.SOUTH, cardsPanel,
+		springLayout.putConstraint(SpringLayout.SOUTH, cardsPanel,
 								 -SPACING, SpringLayout.SOUTH, backgroundImage);
 							 
-		// close button's gap (top right)
-        springLayout.putConstraint(SpringLayout.EAST, closeButton,
-                             0, SpringLayout.EAST, cardViewer);
-        springLayout.putConstraint(SpringLayout.NORTH, closeButton,
-                             SPACING, SpringLayout.SOUTH, cardViewer);
-		
-		if(isEditingDeck()) {
-			springLayout.putConstraint(SpringLayout.EAST, swapButton,
-                             -SPACING, SpringLayout.WEST, closeButton);
-			springLayout.putConstraint(SpringLayout.NORTH, swapButton,
-                             0, SpringLayout.NORTH, closeButton);
-		}
+		// buttons' gap (top right bottom)
+        springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
+                             0, SpringLayout.EAST, leftScrollPane);
+        springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
+                             -SPACING, SpringLayout.NORTH, buttonsPanel);
+        springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
+                             -SPACING, SpringLayout.SOUTH, backgroundImage);
 		
 		// set initial card image
 		if (cardPoolDefs.isEmpty()) {
@@ -192,13 +228,17 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		return editDeckCard != null;
 	}
 	
+	private MagicPlayerDefinition getPlayer() {
+		return editDeckCard.getPlayer();
+	}
+	
 	public void updateCardPool() {
 		cardPoolDefs = filterPanel.getCardDefinitions();
 		cardPoolTable.setCards(cardPoolDefs);
 	}
 	
 	public void updateDeck() {
-		deckDefs = editDeckCard.getPlayer().getDeck();
+		deckDefs = getPlayer().getDeck();
 		deckTable.setCards(deckDefs);
 	}
 	
@@ -213,10 +253,13 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
 			MagicCardDefinition deckCard = deckTable.getSelectedCard();
 			if (cardPoolCard != null && deckCard != null) {
-				editDeckCard.getPlayer().getDeck().remove(deckCard);
-				editDeckCard.getPlayer().getDeck().add(cardPoolCard);
+				getPlayer().getDeck().remove(deckCard);
+				getPlayer().getDeck().add(cardPoolCard);
 				editDeckCard.getDeckViewer().updateAfterEdit();
 				updateDeck();
+			
+				// update deck stats
+				statsViewer.setPlayer(getPlayer());
 			}
 		}
 	}
