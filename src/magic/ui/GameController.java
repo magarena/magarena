@@ -50,17 +50,17 @@ public class GameController {
 	private Object choiceClicked;
 	private MagicCardDefinition sourceCardDefinition;
 	
-	public GameController(final GamePanel gamePanel,final MagicGame game) {
-		this.gamePanel=gamePanel;
-		this.game=game;
+	public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
+		gamePanel = aGamePanel;
+		game = aGame;
 		testMode = false;
 		clearValidChoices();
 	}
 	
 	/** Fully artificial test game. */
-    public GameController(final MagicGame game) {
-		this.gamePanel=null;
-		this.game=game;
+    public GameController(final MagicGame aGame) {
+		gamePanel = null;
+        game = aGame;
 		testMode = true;
 		clearValidChoices();
 	}
