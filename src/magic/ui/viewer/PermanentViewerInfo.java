@@ -33,9 +33,21 @@ public class PermanentViewerInfo {
 		}
 	};
 	
+    public static final Comparator<PermanentViewerInfo> BLOCKED_NAME_COMPARATOR=new Comparator<PermanentViewerInfo>() {
+		@Override
+		public int compare(final PermanentViewerInfo permanentInfo1,final PermanentViewerInfo permanentInfo2) {
+			final int dif=permanentInfo1.blockedName.compareTo(permanentInfo2.blockedName);
+			if (dif!=0) {
+				return dif;
+			}
+			return permanentInfo1.permanent.compareTo(permanentInfo2.permanent);
+		}
+	};
+	
 	public final MagicPermanent permanent;
 	public final MagicCardDefinition cardDefinition;
 	public final String name;
+	public final String blockedName;
 	public final ImageIcon icon;
 	public final int index;
 	public final String powerToughness;
@@ -92,6 +104,7 @@ public class PermanentViewerInfo {
 		manaColor=getManaColor(permanent);
 		blockers=getBlockers(game,permanent);
 		linked=getLinked(game,permanent);
+		blockedName = (blocking) ? permanent.getBlockedName() : permanent.getName() + permanent.getId();
 	}
 	
 	private static String getPowerToughness(final MagicGame game,final MagicPermanent permanent) {

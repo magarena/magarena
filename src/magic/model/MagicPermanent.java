@@ -73,7 +73,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private EnumSet<MagicSubType> cachedSubTypeFlags;
 	private int cachedTypeFlags=0;
 	private int cachedColorFlags=0;
-	
+
+    // remember order among blockers (blockedName + id + block order)
+    private String blockedName;
+
 	public MagicPermanent(final long id,final MagicCard card,final MagicPlayer controller) {
 		this.id=id;
 		this.card=card;
@@ -541,11 +544,22 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public void setBlockedCreature(final MagicPermanent creature) {
-		blockedCreature=creature;
+        if (creature.isValid()) {
+            blockedName = creature.getName() + creature.getId() + (100 + creature.numBlockingCreatures());
+        }
+		blockedCreature = creature;
 	}
+
+    public String getBlockedName() {
+        return blockedName;
+    }
 
 	public MagicPermanentList getBlockingCreatures() {
 		return blockingCreatures;
+	}
+	
+    public int numBlockingCreatures() {
+		return blockingCreatures.size();
 	}
 	
 	public void setBlockingCreatures(final MagicPermanentList creatures) {
