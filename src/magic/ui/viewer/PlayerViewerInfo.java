@@ -25,7 +25,6 @@ public class PlayerViewerInfo {
 	public final List<PermanentViewerInfo> permanents;
 	
 	public PlayerViewerInfo(final MagicGame game,final MagicPlayer player) {
-
 		this.player=player;
 		turn=player==game.getTurnPlayer();
 		name=player.getName();
@@ -37,10 +36,8 @@ public class PlayerViewerInfo {
 		graveyard=new MagicCardList(player.getGraveyard());
 		exile=new MagicCardList(player.getExile());
 		library=new MagicCardList(player.getLibrary());
-		
 		permanents=new ArrayList<PermanentViewerInfo>();
 		for (final MagicPermanent permanent : player.getPermanents()) {
-			
 			permanents.add(new PermanentViewerInfo(game,permanent));
 		}
 	}

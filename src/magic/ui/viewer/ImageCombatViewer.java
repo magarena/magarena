@@ -46,10 +46,10 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 	}
 	
 	public void update() {
-		final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
-		final PlayerViewerInfo defendingPlayerInfo=viewerInfo.getDefendingPlayerInfo();
-		final SortedSet<PermanentViewerInfo> creatures=new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
+		final SortedSet<PermanentViewerInfo> creatures = 
+            new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
 
+		final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
 		for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {
 			if (permanentInfo.attacking) {
 				creatures.add(permanentInfo);
@@ -57,8 +57,9 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 		}
 	
         //add in blockers whose attacker is destroyed
+		final PlayerViewerInfo defendingPlayerInfo=viewerInfo.getDefendingPlayerInfo();
 		for (final PermanentViewerInfo permanentInfo : defendingPlayerInfo.permanents) {
-			if (permanentInfo.blocking&&permanentInfo.blockingInvalid) {
+			if (permanentInfo.blocking && permanentInfo.blockingInvalid) {
 				creatures.add(permanentInfo);
 			}
 		}
