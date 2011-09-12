@@ -28,13 +28,22 @@ import java.util.List;
 
 public class MagicEvent implements MagicCopyable {
 
-	static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
     public static final MagicSource NO_SOURCE = MagicCard.NONE;
-	private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
 	public static final Object NO_CHOICE_RESULTS[] = new Object[0];
 	public static final Object NO_DATA[] = new Object[0];
+	public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
+	private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
+	private static final MagicEventAction NO_ACTION = new MagicEventAction() {
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+            //do nothing
+        }
+    };
 	
-    public static final MagicEvent NONE = new MagicEvent(NO_SOURCE, MagicPlayer.NONE, NO_DATA, null, "") {
+    public static final MagicEvent NONE = new MagicEvent(NO_SOURCE, MagicPlayer.NONE, NO_DATA, NO_ACTION, "") {
         @Override
         public boolean isValid() {
             return false;
