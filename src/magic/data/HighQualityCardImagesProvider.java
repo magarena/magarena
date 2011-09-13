@@ -57,9 +57,13 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         }
 
         if (!scaledImages.containsKey(filename)) {
+			final BufferedImage bi = origImages.get(filename);
+			if (bi == null) {
+				return IconImages.MISSING_CARD;
+			}
             scaledImages.put(filename, 
                 magic.GraphicsUtilities.scale(
-                    origImages.get(filename), 
+                    bi, 
                     CARD_WIDTH, 
                     CARD_HEIGHT
                 )
