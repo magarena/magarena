@@ -100,6 +100,13 @@ public interface MagicCondition {
 		}
 	};
 	
+	MagicCondition PLUS_COUNTER_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPermanent permanent = (MagicPermanent)source;
+			return permanent.getCounters(MagicCounterType.PlusOne) > 0;
+		}
+	};
+	
 	MagicCondition CHARGE_COUNTER_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
