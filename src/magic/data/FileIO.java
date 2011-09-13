@@ -71,7 +71,7 @@ public class FileIO {
 
     public static BufferedImage toImg(final File aFile, final BufferedImage def) {
         BufferedImage img = def;
-        if (aFile == null || !aFile.isFile()) {
+        if (aFile == null || !aFile.isFile() || aFile.length() == 0L) {
             img = def;
         } else {
             try {

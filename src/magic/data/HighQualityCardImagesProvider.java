@@ -45,33 +45,27 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final MagicCardDefinition cardDefinition,
             final int index,
             final boolean orig) {
-		try {
-			if (cardDefinition == MagicCardDefinition.UNKNOWN) {
-				return IconImages.MISSING_CARD;
-			}
+        if (cardDefinition == MagicCardDefinition.UNKNOWN) {
+            return IconImages.MISSING_CARD;
+        }
 
-			final String filename=getFilename(cardDefinition,index);
+        final String filename=getFilename(cardDefinition,index);
 
-			if (!origImages.containsKey(filename)) {
-				origImages.put(filename, loadCardImage(filename));
-			}
+        if (!origImages.containsKey(filename)) {
+            origImages.put(filename, loadCardImage(filename));
+        }
 
-			if (!scaledImages.containsKey(filename)) {
-				scaledImages.put(filename, 
-					magic.GraphicsUtilities.scale(
-						origImages.get(filename), 
-						CARD_WIDTH, 
-						CARD_HEIGHT
-					)
-				);
-			}
+        if (!scaledImages.containsKey(filename)) {
+            scaledImages.put(filename, 
+                magic.GraphicsUtilities.scale(
+                    origImages.get(filename), 
+                    CARD_WIDTH, 
+                    CARD_HEIGHT
+                )
+            );
+        }
 
-			return orig ? origImages.get(filename) : scaledImages.get(filename);
-		} catch (Exception e) {
-			System.err.println("Error loading image. Got exception: "
-                        + e.getMessage());
-			return IconImages.MISSING_CARD;
-		}
+        return orig ? origImages.get(filename) : scaledImages.get(filename);
 	}
 	
 	public static CardImagesProvider getInstance() {

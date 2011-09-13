@@ -60,7 +60,9 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 				final String parts[]=line.trim().split(";");
 				if (parts.length==2&&!parts[1].isEmpty()) {
 					final File imageFile=new File(imagesPathFile,parts[0]);
-					if (!imageFile.exists()) {
+
+                    //download if the file does not exist OR it is zero length
+					if (!imageFile.exists() || imageFile.length() == 0L) {
                         try { //create URL
     						add(new DownloadImageFile(imageFile,new URL(parts[1])));
                         } catch (final java.net.MalformedURLException ex) {
@@ -76,7 +78,11 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 			final String imageURL=cardDefinition.getImageURL();
 			if (imageURL!=null) {
 				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName()+".jpg");
-				if (!imageFile.exists() || cardDefinition.isIgnored(imageFile.length())) {
+
+                //download if the file does not exists OR it is zero length OR it is outdated
+				if (!imageFile.exists() || 
+                    imageFile.length() == 0L ||
+                    cardDefinition.isIgnored(imageFile.length())) {
                     try { //create URL
     					add(new DownloadImageFile(imageFile,new URL(imageURL)));
                     } catch (final java.net.MalformedURLException ex) {
