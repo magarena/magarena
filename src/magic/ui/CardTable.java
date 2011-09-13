@@ -73,11 +73,11 @@ public class CardTable extends JPanel {
 		scrollpane.getViewport().setOpaque(false);
 		
 		// add title
-		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		setLayout(new BorderLayout());
 		if (title.length() > 0) {
 			TitleBar titleBar = new TitleBar(title);
-			add(titleBar);
-			add(scrollpane);
+			add(titleBar, BorderLayout.PAGE_START);
+			add(scrollpane, BorderLayout.CENTER);
 		} else {
 			add(scrollpane);
 		}			

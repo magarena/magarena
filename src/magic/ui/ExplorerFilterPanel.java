@@ -44,7 +44,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private static final String FILTER_CHOICES[] = {"Match any selected", "Match all selected", "Exclude selected"};
 	private static final String FILTER_BUTTON_TEXT = "Filter";
 	private static final String HIDE_BUTTON_TEXT = "Hide";
-	private static final Dimension BUTTON_SIZE = new Dimension(65, 20);
+	private static final Dimension BUTTON_SIZE = new Dimension(70, 20);
 	private static final int SEARCH_FIELD_WIDTH = 12;
 	private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 	private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);

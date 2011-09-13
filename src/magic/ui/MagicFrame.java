@@ -4,12 +4,14 @@ import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.TournamentConfig;
+import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicGame;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicTournament;
 import magic.test.TestGameBuilder;
+import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import javax.swing.JComponent;
@@ -441,14 +443,18 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 	private void openCardExplorer() {
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
-		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,null);
+		final ExplorerPanel explorerPanel = new ExplorerPanel(this, ExplorerPanel.ALL, null, null, null);
 		addContent(explorerPanel);
 	}
 	
-	public void editCardWithExplorer(final EditDeckCard editDeckCard) {
+	public void openDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
+		openDeckEditor(player, cube, null);
+	}
+	
+	public void openDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube, final DeckStatisticsViewer viewer) {
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
-		final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
-		final ExplorerPanel explorerPanel=new ExplorerPanel(this,mode,editDeckCard);
+		// final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
+		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,player, cube, viewer);
 		addContent(explorerPanel);
 	}
 	

@@ -36,11 +36,12 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private static final String SWAP_BUTTON_TEXT = "Swap Selected Cards";
 	private static final String CARD_POOL_TITLE = "Card Pool";
 	private static final String DECK_TITLE = "Deck";
-	private static final Dimension CARD_DIMENSION = new Dimension(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
  	private static final int SPACING=10;
+	private static final Dimension STATS_VIEWER_SIZE = new Dimension(270, 170);
 	
  	private final MagicFrame frame;
-	private final EditDeckCard editDeckCard;
+	private final MagicPlayerDefinition player;
+	private final DeckStatisticsViewer remoteStatsViewer;
 	
 	private final CardTable cardPoolTable;
 	private final CardTable deckTable;
@@ -54,12 +55,38 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private List<MagicCardDefinition> cardPoolDefs;
 	private List<MagicCardDefinition> deckDefs;
 	
-	public ExplorerPanel(final MagicFrame frame,final int mode,final EditDeckCard editDeckCard) {
+	public ExplorerPanel(final MagicFrame frame, final int mode, final MagicPlayerDefinition player, final MagicCubeDefinition cube, final DeckStatisticsViewer remoteStatsViewer) {
 		this.frame=frame;
-		this.editDeckCard=editDeckCard;
+		this.player=player;
+		this.remoteStatsViewer = remoteStatsViewer;
 		
 		final SpringLayout springLayout = new SpringLayout();
 		setLayout(springLayout);
+		
+		// buttons
+		JPanel buttonsPanel = new JPanel();
+		buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
+		buttonsPanel.setOpaque(false);
+		
+		// create swap button for deck editing
+		if (isEditingDeck()) {
+			swapButton = new JButton(SWAP_BUTTON_TEXT);
+			swapButton.setFocusable(false);
+			swapButton.addActionListener(this);
+			buttonsPanel.add(swapButton);
+			
+			buttonsPanel.add(Box.createHorizontalStrut(SPACING));			
+		} else {
+			swapButton = null;
+		}
+		
+		// close button
+		closeButton = new JButton(CLOSE_BUTTON_TEXT);
+		closeButton.setFocusable(false);
+		closeButton.addActionListener(this);
+		buttonsPanel.add(closeButton);
+		
+		add(buttonsPanel);
 		
 		// left side (everything but buttons)
 		JPanel leftPanel = new JPanel();
@@ -68,15 +95,16 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// card image
 		cardViewer = new CardViewer("",false,true);
-		cardViewer.setPreferredSize(CARD_DIMENSION);
-		cardViewer.setMaximumSize(CARD_DIMENSION);
-		cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
+		cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
+		cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
 		leftPanel.add(cardViewer);
 		
 		// deck statistics
 		if (isEditingDeck()) {
 			leftPanel.add(Box.createVerticalStrut(SPACING));
 			statsViewer = new DeckStatisticsViewer();
+			statsViewer.setPreferredSize(STATS_VIEWER_SIZE);
+			statsViewer.setMaximumSize(STATS_VIEWER_SIZE);
 			leftPanel.add(statsViewer);
 		} else {
 			statsViewer = null;
@@ -91,10 +119,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// filters
 		MagicPlayerProfile profile=null;
-		MagicCubeDefinition cube=null;
 		if (isEditingDeck()) {
 			profile=getPlayer().getProfile();
-			cube=editDeckCard.getCube();
 		}
 		filterPanel = new ExplorerFilterPanel(this, mode, profile, cube);
 		
@@ -134,31 +160,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			add(cardPoolTable);
 			cardsPanel = cardPoolTable;
 		}
-		
-		// buttons
-		JPanel buttonsPanel = new JPanel();
-		buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
-		buttonsPanel.setOpaque(false);
-		
-		// create swap button for deck editing
-		if (isEditingDeck()) {
-			swapButton = new JButton(SWAP_BUTTON_TEXT);
-			swapButton.setFocusable(false);
-			swapButton.addActionListener(this);
-			buttonsPanel.add(swapButton);
-			
-			buttonsPanel.add(Box.createHorizontalStrut(SPACING));			
-		} else {
-			swapButton = null;
-		}
-		
-		// close button
-		closeButton = new JButton(CLOSE_BUTTON_TEXT);
-		closeButton.setFocusable(false);
-		closeButton.addActionListener(this);
-		buttonsPanel.add(closeButton);
-		
-		add(buttonsPanel);
 		
 		// background - must be added last or anything else
 		// will be hidden behind it
@@ -224,11 +225,11 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	}
 	
 	private boolean isEditingDeck() {
-		return editDeckCard != null;
+		return player != null;
 	}
 	
 	private MagicPlayerDefinition getPlayer() {
-		return editDeckCard.getPlayer();
+		return player;
 	}
 	
 	public void updateCardPool() {
@@ -254,11 +255,15 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			if (cardPoolCard != null && deckCard != null) {
 				getPlayer().getDeck().remove(deckCard);
 				getPlayer().getDeck().add(cardPoolCard);
-				editDeckCard.getDeckViewer().updateAfterEdit();
 				updateDeck();
 			
 				// update deck stats
 				statsViewer.setPlayer(getPlayer());
+				
+				// update remote stats
+				if (remoteStatsViewer != null) {
+					remoteStatsViewer.setPlayer(getPlayer());
+				}
 			}
 		}
 	}
