@@ -46,19 +46,25 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1865 (September QQQ, 2011)
+Release 1997 (September QQQ, 2011)
 ============
 - added the following cards:
 
-- improved the resolution of some token images
-- added support for "whenever player gain life" trigger
+- improved card explorer and "New Game" screen
 - improved crash handling to handle unhandled exception from any part of the
   program
+- improved the resolution of some token images
+- added support for "whenever player gain life" trigger
+- added support for non-creature auras
 
-- fixed a bug where the "When Targeted" trigger does not activate for
-  spells with kicker
+- fixed a bug where the "When Targeted" trigger does not activate for spells
+  with kicker
 - fixed a bug where Noble Hierarch could not be tapped for mana because of a
   typo in the name of the class that implements the mana abilities
+- fixed a bug where the program would crash when opening the log book
+  immediately after resetting the game
+- fixed a bug where the order of blockers would change after damage is dealt
+  if the attacker they were blocking is destroyed
 
 Release 1.17b (August 27, 2011)
 =============
