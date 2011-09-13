@@ -25,6 +25,7 @@ import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.SpringLayout;
 
@@ -34,6 +35,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	
 	private static final int SPACING = 10;
 	private static final Dimension STRENGTH_VIEWER_SIZE = new Dimension(270, 170);
+	private static final Dimension WINS_VIEWER_SIZE = new Dimension(280, 120);
+	private static final Dimension STATS_VIEWER_SIZE = new Dimension(270, 170);
 	private static final String PLAY_BUTTON_TEXT = "Play Game";
 	private static final String NEW_BUTTON_TEXT = "New Game";
 	private static final String EDIT_BUTTON_TEXT = "Edit Deck";
@@ -59,8 +62,31 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		final SpringLayout springLayout = new SpringLayout();
 		setLayout(springLayout);
 		
-		// left side
+		// buttons
+		JPanel buttonsPanel = new JPanel();
+		buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
+		buttonsPanel.setOpaque(false);
 		
+		// new button
+		newButton=new JButton(NEW_BUTTON_TEXT);
+		// newButton.setFont(FontsAndBorders.FONT4);
+		newButton.addActionListener(this);
+		newButton.setFocusable(false);
+		buttonsPanel.add(newButton);
+		
+		buttonsPanel.add(Box.createHorizontalStrut(SPACING));
+		
+		// play button
+		playButton=new JButton(PLAY_BUTTON_TEXT);
+		// playButton.setFont(FontsAndBorders.FONT4);
+		playButton.addActionListener(this);
+		playButton.setFocusable(false);
+		playButton.setEnabled(!tournament.isFinished());
+		buttonsPanel.add(playButton);
+		
+		add(buttonsPanel);
+		
+		// left top
 		JPanel leftPanel = new JPanel();
 		leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
 		leftPanel.setOpaque(false);
@@ -78,30 +104,16 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		// games won info
 		tournamentDifficultyViewer=new TournamentDifficultyViewer(tournament);
 		tournamentDifficultyViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-		leftPanel.add(tournamentDifficultyViewer);
+		tournamentDifficultyViewer.setPreferredSize(WINS_VIEWER_SIZE);
+		tournamentDifficultyViewer.setMaximumSize(WINS_VIEWER_SIZE);
+		leftPanel.add(tournamentDifficultyViewer);	
 		
-		leftPanel.add(Box.createVerticalStrut(SPACING));
-		
-		// play button
-		playButton=new JButton(PLAY_BUTTON_TEXT);
-		// playButton.setFont(FontsAndBorders.FONT4);
-		playButton.addActionListener(this);
-		playButton.setFocusable(false);
-		playButton.setEnabled(!tournament.isFinished());
-		playButton.setAlignmentX(Component.LEFT_ALIGNMENT);
-		leftPanel.add(playButton);
-		
-		leftPanel.add(Box.createVerticalStrut(SPACING));
-				
-		// new game button
-		newButton=new JButton(NEW_BUTTON_TEXT);
-		// newButton.setFont(FontsAndBorders.FONT4);
-		newButton.addActionListener(this);
-		newButton.setFocusable(false);
-		newButton.setAlignmentX(Component.LEFT_ALIGNMENT);
-		leftPanel.add(newButton);		
-		
-		add(leftPanel);
+		// add scrolling to left side
+		JScrollPane leftScrollPane = new JScrollPane(leftPanel);
+		leftScrollPane.setBorder(null);
+		leftScrollPane.setOpaque(false);
+		leftScrollPane.getViewport().setOpaque(false);
+		add(leftScrollPane);
 		
 		// create tabs for each player
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
@@ -124,6 +136,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			statsViewers[i] = new DeckStatisticsViewer();
 			statsViewers[i].setPlayer(player);
 			statsViewers[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+			statsViewers[i].setMaximumSize(STATS_VIEWER_SIZE);
+			statsViewers[i].setPreferredSize(STATS_VIEWER_SIZE);
 			
 			// edit deck button
 			final MagicCubeDefinition cubeDefinition=
@@ -206,14 +220,14 @@ public class TournamentPanel extends JPanel implements ActionListener {
                              0, SpringLayout.SOUTH, contentPane);
 							 
 		// left side's gap (left top)
-        springLayout.putConstraint(SpringLayout.NORTH, leftPanel,
+        springLayout.putConstraint(SpringLayout.NORTH, leftScrollPane,
                              SPACING, SpringLayout.NORTH, backgroundImage);
-        springLayout.putConstraint(SpringLayout.WEST, leftPanel,
+        springLayout.putConstraint(SpringLayout.WEST, leftScrollPane,
                              SPACING, SpringLayout.WEST, backgroundImage);
 							 
 		// left side's gap with tabbed pane
         springLayout.putConstraint(SpringLayout.WEST, tabbedPane,
-                             SPACING, SpringLayout.EAST, leftPanel);
+                             SPACING, SpringLayout.EAST, leftScrollPane);
 							 
 		// tabbed pane's gap (top right bottom)
         springLayout.putConstraint(SpringLayout.NORTH, tabbedPane,
@@ -221,6 +235,14 @@ public class TournamentPanel extends JPanel implements ActionListener {
         springLayout.putConstraint(SpringLayout.EAST, tabbedPane,
                              -SPACING, SpringLayout.EAST, backgroundImage);
         springLayout.putConstraint(SpringLayout.SOUTH, tabbedPane,
+                             -SPACING, SpringLayout.SOUTH, backgroundImage);
+							 
+		// buttons' gap (top right bottom)
+        springLayout.putConstraint(SpringLayout.WEST, buttonsPanel,
+                             0, SpringLayout.WEST, leftScrollPane);
+        springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
+                             -SPACING, SpringLayout.NORTH, buttonsPanel);
+        springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
                              -SPACING, SpringLayout.SOUTH, backgroundImage);			
 	}
 
