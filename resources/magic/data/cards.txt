@@ -1062,6 +1062,19 @@ converted=4
 cost={2}{G}{G}
 timing=smain
 
+>Loam Lion
+image=http://magiccards.info/scans/en/wwk/13.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Cat
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
 >Lord of the Unreal
 image=http://magiccards.info/scans/en/m12/62.jpg
 value=3

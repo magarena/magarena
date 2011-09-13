@@ -13,7 +13,7 @@ import magic.model.variable.MagicStaticLocalVariable;
 
 import java.util.Collection;
 
-public class Kird_Ape {
+public class Loam_Lion {
 
 	private static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
