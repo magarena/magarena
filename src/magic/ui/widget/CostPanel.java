@@ -21,6 +21,10 @@ public class CostPanel extends JPanel {
 		setOpaque(false);
 		setLayout(new BorderLayout());
 		
+		if(cost == null) {
+			return;
+		}
+		
 		final JPanel centerPanel=new JPanel();
 		centerPanel.setOpaque(false);
 		
