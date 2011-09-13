@@ -1,6 +1,7 @@
 package magic.ui.viewer;
 
 import magic.data.CardImagesProvider;
+import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
 import magic.ui.theme.Theme;
@@ -167,13 +168,6 @@ public class ImagePermanentViewer extends JPanel {
 	@Override
 	public void paint(final Graphics g) {
 		super.paint(g);
-
-		final Color choiceColor;
-		if (viewer.getController().isCombatChoice()) {
-			choiceColor = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE);			
-		} else {
-			choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
-		}
 		
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
@@ -237,11 +231,23 @@ public class ImagePermanentViewer extends JPanel {
 			}
 					
 			if (viewer.isValidChoice(linkedInfo)) {
-				if (ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay()) {
-					//draw a transparent overlay of choiceColor
-					g2d.setPaint(choiceColor);
-					g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
-				} else  {
+				final String highlight = GeneralConfig.getInstance().getHighlight();
+				if (highlight == "overlay" ||
+					(highlight == "theme" &&
+					ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay())) {
+					final Color choiceColor = viewer.getController().isCombatChoice() ?
+								ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE) :
+								ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+					
+						//draw a transparent overlay of choiceColor
+						g2d.setPaint(choiceColor);
+						g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
+				}
+				else if (highlight != "none"){
+					final Color choiceColor = viewer.getController().isCombatChoice() ?
+							ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE_BORDER) :
+							ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
+							
 					//draw a one pixel border of choiceColor
 					g2d.setPaint(new Color(choiceColor.getRGB()));
 					g2d.setStroke(new BasicStroke(2));

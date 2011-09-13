@@ -18,6 +18,7 @@ public class GeneralConfig {
 	private static final String MAXIMIZED="maximized";
 	private static final String THEME="theme";
 	private static final String AVATAR="avatar";
+	private static final String HIGHLIGHT = "highlight";
 	private static final String TEXT_VIEW="text";
 	private static final String SKIP_SINGLE="single";
 	private static final String ALWAYS_PASS="pass";
@@ -38,6 +39,7 @@ public class GeneralConfig {
 	private static final boolean DEFAULT_MAXIMIZED=false;
 	private static final String DEFAULT_THEME="felt";
 	private static final String DEFAULT_AVATAR="legend";
+	private static final String DEFAULT_HIGHLIGHT = "theme";
 	private static final boolean DEFAULT_TEXT_VIEW=false;
 	private static final boolean DEFAULT_SINGLE=true;
 	private static final boolean DEFAULT_PASS=true;
@@ -58,6 +60,7 @@ public class GeneralConfig {
 	private boolean maximized=DEFAULT_MAXIMIZED;
 	private String theme=DEFAULT_THEME;
 	private String avatar=DEFAULT_AVATAR;
+	private String highlight = DEFAULT_HIGHLIGHT;
 	private boolean textView=DEFAULT_TEXT_VIEW;
 	private boolean skipSingle=DEFAULT_SINGLE;
 	private boolean alwaysPass=DEFAULT_PASS;
@@ -142,6 +145,14 @@ public class GeneralConfig {
 	
 	public void setAvatar(final String avatar) {
 		this.avatar=avatar;
+	}
+	
+	public String getHighlight() {
+		return highlight;
+	}
+	
+	public void setHighlight(final String highlight) {
+		this.highlight = highlight;
 	}
 	
 	public boolean getTextView() {
@@ -265,6 +276,7 @@ public class GeneralConfig {
 		maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+DEFAULT_MAXIMIZED));
 		theme=properties.getProperty(THEME,DEFAULT_THEME);
 		avatar=properties.getProperty(AVATAR,DEFAULT_AVATAR);
+		highlight = properties.getProperty(HIGHLIGHT,DEFAULT_HIGHLIGHT);
 		textView=Boolean.parseBoolean(properties.getProperty(TEXT_VIEW,""+DEFAULT_TEXT_VIEW));
 		skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
 		alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+DEFAULT_PASS));

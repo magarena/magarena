@@ -28,6 +28,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 	private final MagicFrame frame;
 	private final JComboBox themeComboBox;
 	private final JComboBox avatarComboBox;
+	private final JComboBox highlightComboBox;
 	private final JCheckBox soundCheckBox;
 	private final JCheckBox highQualityCheckBox;
 	private final JCheckBox skipSingleCheckBox;
@@ -42,7 +43,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 		super(frame,true);
 		this.setTitle("Preferences");
-		this.setSize(400,430);
+		this.setSize(400,465);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -98,6 +99,18 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		avatarComboBox.setSelectedItem(config.getAvatar());
 		mainPanel.add(avatarComboBox);
 
+		Y += 35;
+		final JLabel highlightLabel = new JLabel("Highlight");
+		highlightLabel.setBounds(X,Y,W,H);
+		highlightLabel.setIcon(IconImages.PICTURE);
+		mainPanel.add(highlightLabel);
+		final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
+		highlightComboBox = new JComboBox(Highlightchoices);
+		highlightComboBox.setFocusable(false);
+		highlightComboBox.setBounds(X2,Y,W2,H);
+		highlightComboBox.setSelectedItem(config.getHighlight());
+		mainPanel.add(highlightComboBox);
+		
         Y += 35;
 		soundCheckBox=new JCheckBox("Enable sound effects",config.isSound());
 		soundCheckBox.setBounds(X3,Y,W3,H3);
@@ -153,6 +166,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 			final GeneralConfig config=GeneralConfig.getInstance();
 			config.setTheme((String)themeComboBox.getSelectedItem());
 			config.setAvatar((String)avatarComboBox.getSelectedItem());
+			config.setHighlight((String)highlightComboBox.getSelectedItem());
 			config.setSound(soundCheckBox.isSelected());
 			config.setHighQuality(highQualityCheckBox.isSelected());
 			config.setSkipSingle(skipSingleCheckBox.isSelected());

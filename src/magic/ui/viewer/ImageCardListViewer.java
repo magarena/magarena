@@ -1,11 +1,13 @@
 package magic.ui.viewer;
 
 import magic.data.CardImagesProvider;
+import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
+import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
@@ -132,8 +134,6 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 			return;
 		}
 		
-		final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
-		
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
 		final Graphics2D g2d=(Graphics2D)g;
@@ -168,16 +168,19 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 				}
 			}
 
-            //show that card is a valid choice
-            //instead of adding a choiceColor transparent layer,
-            //draw a border of the choiceColor
+			//show that card is a valid choice
 			if (validChoices.contains(card)) {
-				
-				if (ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay()) {
-					//draw a transparent overlay of choiceColor
-					g2d.setPaint(choiceColor);
-					g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
-				} else  {
+				final String highlight = GeneralConfig.getInstance().getHighlight();
+				if (highlight == "overlay" ||
+					(highlight == "theme" &&
+					ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay())) {
+						final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+						//draw a transparent overlay of choiceColor
+						g2d.setPaint(choiceColor);
+						g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
+				}
+				else if (highlight != "none"){
+					final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
 					//draw a one pixel border of choiceColor
 					g2d.setPaint(new Color(choiceColor.getRGB()));
 	                g2d.setStroke(new BasicStroke(2));

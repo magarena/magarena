@@ -40,6 +40,8 @@ public interface Theme {
 	String OPTION_USE_OVERLAY="option_use_overlay";
 	String COLOR_CHOICE="color_choice";
 	String COLOR_COMBAT_CHOICE="color_combat_choice";
+	String COLOR_CHOICE_BORDER="color_choice_border";
+	String COLOR_COMBAT_CHOICE_BORDER="color_combat_choice_border";
 	String COLOR_SELECTED_PLAYER="color_selected_player";
 	String COLOR_GAME_BORDER="color_game_border";
 	String COLOR_VIEWER_BACKGROUND="color_viewer_background";
