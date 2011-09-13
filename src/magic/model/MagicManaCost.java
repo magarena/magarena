@@ -87,6 +87,8 @@ public class MagicManaCost {
 	public static final MagicManaCost BLUE_BLUE_BLACK_BLACK=MagicManaCost.createCost("{U}{U}{B}{B}");
 	public static final MagicManaCost ONE_GREEN_WHITE=MagicManaCost.createCost("{1}{G}{W}");
 	public static final MagicManaCost GREEN_GREEN_WHITE_WHITE=MagicManaCost.createCost("{G}{G}{W}{W}");
+	public static final MagicManaCost WHITE_OR_BLACK=MagicManaCost.createCost("{W/B}");
+	public static final MagicManaCost WHITE_OR_BLACK_WHITE_OR_BLACK=MagicManaCost.createCost("{W/B}{W/B}");
 		
 	private final MagicCostManaType types[];
 	private final int amounts[];

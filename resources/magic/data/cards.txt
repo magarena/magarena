@@ -1397,6 +1397,20 @@ toughness=1
 ability=flying,can't block creatures without flying
 timing=main
 
+>Stillmoon Cavalier
+image=http://magiccards.info/scans/en/eve/95.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Zombie,Knight
+color=wb
+converted=3
+cost={1}{W/B}{W/B}
+power=2
+toughness=1
+ability=protection from white,protection from black
+timing=main
+
 >Stingerfling Spider
 image=http://magiccards.info/scans/en/m12/197.jpg
 value=3
