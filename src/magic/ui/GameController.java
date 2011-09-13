@@ -12,6 +12,8 @@ import magic.model.MagicSource;
 import magic.model.choice.MagicChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPriorityEvent;
+import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetNone;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.ChoiceViewer;
 import magic.ui.viewer.GameViewer;
@@ -47,8 +49,8 @@ public class GameController {
 	private boolean actionClicked=false;
 	private boolean combatChoice=false;
 	private boolean resetGame=false;
-	private Object choiceClicked;
-	private MagicCardDefinition sourceCardDefinition;
+	private MagicTarget choiceClicked = MagicTargetNone.getInstance();
+	private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN ;
 	
 	public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
 		gamePanel = aGamePanel;
@@ -144,7 +146,7 @@ public class GameController {
 	public synchronized void actionClicked() {
 		undoClicked = false;
 		actionClicked = true;
-		choiceClicked = null;
+		choiceClicked = MagicTargetNone.getInstance();
 		notifyAll();
 	}
 	
@@ -158,14 +160,14 @@ public class GameController {
 		if (game.hasUndoPoints()) {
 			undoClicked = true;
 			actionClicked = false;
-			choiceClicked = null;
+			choiceClicked = MagicTargetNone.getInstance();
 			setSourceCardDefinition(MagicEvent.NO_SOURCE);
 			clearValidChoices();
 			notifyAll();
 		}
 	}
 
-	public synchronized void processClick(final Object choice) {
+	public synchronized void processClick(final MagicTarget choice) {
 		if (validChoices.contains(choice)) {
 			undoClicked = false;
 			actionClicked = false;
@@ -179,7 +181,7 @@ public class GameController {
 		return actionClicked;
 	}
 	
-	public Object getChoiceClicked() {
+	public MagicTarget getChoiceClicked() {
 		return choiceClicked;
 	}
 
