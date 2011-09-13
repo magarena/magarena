@@ -252,20 +252,15 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		return tournament;
 	}
 	
-	public void updateStatViewers() {
-		System.out.println("updateStatViewers");
-		for (int i = 0; i < statsViewers.length; i++) {
-			statsViewers[i].setPlayer(tournament.getPlayers()[i]);
-		}
-	}
-	
 	public MagicPlayerDefinition getSelectedPlayer() {
 		return tournament.getPlayers()[tabbedPane.getSelectedIndex()];
 	}
 	
 	public void updateDecksAfterEdit() {
-		updateStatViewers();
-		// table automatically updates since its data is set to the player's deck
+		for (int i = 0; i < statsViewers.length; i++) {
+			cardTables[i].setCards(tournament.getPlayers()[i].getDeck());
+			statsViewers[i].setPlayer(tournament.getPlayers()[i]);
+		}
 	}
 
 	public void haltStrengthViewer() {
