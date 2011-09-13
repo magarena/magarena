@@ -34,9 +34,6 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	private static final long serialVersionUID = 1L;
 	
 	private static final int SPACING = 10;
-	private static final Dimension STRENGTH_VIEWER_SIZE = new Dimension(270, 170);
-	private static final Dimension WINS_VIEWER_SIZE = new Dimension(280, 120);
-	private static final Dimension STATS_VIEWER_SIZE = new Dimension(270, 170);
 	private static final String PLAY_BUTTON_TEXT = "Play Game";
 	private static final String NEW_BUTTON_TEXT = "New Game";
 	private static final String EDIT_BUTTON_TEXT = "Edit Deck";
@@ -104,8 +101,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		// games won info
 		tournamentDifficultyViewer=new TournamentDifficultyViewer(tournament);
 		tournamentDifficultyViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-		tournamentDifficultyViewer.setPreferredSize(WINS_VIEWER_SIZE);
-		tournamentDifficultyViewer.setMaximumSize(WINS_VIEWER_SIZE);
+		tournamentDifficultyViewer.setMaximumSize(TournamentDifficultyViewer.PREFERRED_SIZE);
 		leftPanel.add(tournamentDifficultyViewer);	
 		
 		// add scrolling to left side
@@ -126,7 +122,6 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		// deck strength tester
 		strengthViewer=new DeckStrengthViewer(tournament);
-		strengthViewer.setPreferredSize(STRENGTH_VIEWER_SIZE);
 		strengthViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 		
 		for(int i = 0; i < players.length; i++) {
@@ -136,8 +131,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			statsViewers[i] = new DeckStatisticsViewer();
 			statsViewers[i].setPlayer(player);
 			statsViewers[i].setAlignmentX(Component.LEFT_ALIGNMENT);
-			statsViewers[i].setMaximumSize(STATS_VIEWER_SIZE);
-			statsViewers[i].setPreferredSize(STATS_VIEWER_SIZE);
+			statsViewers[i].setMaximumSize(DeckStatisticsViewer.PREFERRED_SIZE);
 			
 			// edit deck button
 			final MagicCubeDefinition cubeDefinition=

@@ -10,10 +10,13 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.awt.Dimension;
 
 public class TournamentDifficultyViewer extends JPanel implements ChangeListener {
 	
 	private static final long serialVersionUID = 1L;
+	
+	public static final Dimension PREFERRED_SIZE = new Dimension(280, 120);
 
 	private final TournamentViewer tournamentViewer;
 	private final DifficultyViewer difficultyViewer;
@@ -27,6 +30,8 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 		tournamentViewer=new TournamentViewer(tournament);
 		difficultyViewer=new DifficultyViewer();
 
+		setPreferredSize(PREFERRED_SIZE);
+		
 		setLayout(new BorderLayout());
 		titleBar=new TitleBar("");
 		add(titleBar,BorderLayout.NORTH);

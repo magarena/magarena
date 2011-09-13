@@ -34,6 +34,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class DeckStrengthViewer extends JPanel implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
+	
+	public static final Dimension PREFERRED_SIZE = new Dimension(270, 170);
 
 	private static final String PURPOSE=
 		"<html><body>"+
@@ -61,6 +63,8 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		
 		this.tournament=tournament;
 		textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
+		
+		setPreferredSize(PREFERRED_SIZE);
 		
 		setLayout(new BorderLayout());
 		

@@ -37,7 +37,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private static final String CARD_POOL_TITLE = "Card Pool";
 	private static final String DECK_TITLE = "Deck";
  	private static final int SPACING=10;
-	private static final Dimension STATS_VIEWER_SIZE = new Dimension(270, 170);
 	
  	private final MagicFrame frame;
 	private final MagicPlayerDefinition player;
@@ -103,8 +102,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		if (isEditingDeck()) {
 			leftPanel.add(Box.createVerticalStrut(SPACING));
 			statsViewer = new DeckStatisticsViewer();
-			statsViewer.setPreferredSize(STATS_VIEWER_SIZE);
-			statsViewer.setMaximumSize(STATS_VIEWER_SIZE);
+			statsViewer.setMaximumSize(DeckStatisticsViewer.PREFERRED_SIZE);
 			leftPanel.add(statsViewer);
 		} else {
 			statsViewer = null;
