@@ -1,8 +1,10 @@
 package magic.ui;
 
 import magic.model.MagicCardDefinition;
+import magic.model.MagicDeckCardDefinition;
 import magic.model.MagicManaCost;
 
+import java.lang.Integer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -46,29 +48,36 @@ public class CardTableModel implements TableModel {
 		listeners.remove(l);
 	}
 	
-	public static final String[] COLUMN_NAMES = new String[] {"Name", "CC", "Type", "Subtype", "Rarity", "Text"};
-	public static final int[] COLUMN_MIN_WIDTHS = new int[] {180, 100, 140, 140, 90, 2000};
-	private boolean[] isDesc = new boolean[] {false, false, false, false, false, false};
+	public static final String[] COLUMN_NAMES = new String[] {"#", "Name", "CC", "Type", "Subtype", "Rarity", "Text"};
+	public static final int[] COLUMN_MIN_WIDTHS = new int[] {40, 180, 100, 140, 140, 90, 2000};
+	public static final int COST_COLUMN_INDEX = 2;
 	
-	private List<MagicCardDefinition> cardDefinitions;
-	private Comparator<MagicCardDefinition> comp;
+	private final boolean isDeck;
 	
-	public CardTableModel(List<MagicCardDefinition> cardDefs) {
-		this.cardDefinitions = cardDefs;
-		this.comp = MagicCardDefinition.NAME_COMPARATOR_DESC;
+	private boolean[] isDesc = new boolean[] {false, false, false, false, false, false, false};
+	private List<MagicDeckCardDefinition> cardDefinitions;
+	private Comparator<MagicDeckCardDefinition> comp;
+	
+	public CardTableModel(final List<MagicCardDefinition> cardDefs, final boolean isDeck) {
+		this.comp = MagicDeckCardDefinition.NAME_COMPARATOR_DESC;
+		this.isDeck = isDeck;
 		
-		Collections.sort(cardDefinitions, comp);
+		setCards(cardDefs);
 	}
 	
 	public MagicCardDefinition getCardDef(int row) {
 		if (row < 0 || row >= cardDefinitions.size()) {
 			return null;
 		}
-		return cardDefinitions.get(row);
+		return cardDefinitions.get(row).getCard();
 	}
 	
 	public void setCards(List<MagicCardDefinition> defs) {
-		this.cardDefinitions = defs;
+		if (isDeck) {
+			this.cardDefinitions = MagicDeckCardDefinition.condenseCopyCardList(defs);
+		} else {
+			this.cardDefinitions = MagicDeckCardDefinition.simpleCopyCardList(defs);
+		}
 		
 		// re-sort if necessary
 		if(comp != null) {
@@ -77,17 +86,19 @@ public class CardTableModel implements TableModel {
 	}
 	
 	public void sort(int column) {
-		Comparator<MagicCardDefinition> oldComp = comp;
+		Comparator<MagicDeckCardDefinition> oldComp = comp;
 		comp = null;
 		
 		switch(column) {
-			case 0:		comp = (isDesc[column]) ? MagicCardDefinition.NAME_COMPARATOR_ASC : MagicCardDefinition.NAME_COMPARATOR_DESC;
+			case 0:		comp = (isDesc[column]) ? MagicDeckCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicDeckCardDefinition.NUM_COPIES_COMPARATOR_DESC;
 						break;
-			case 1:		comp = (isDesc[column]) ? MagicCardDefinition.CONVERTED_COMPARATOR_ASC : MagicCardDefinition.CONVERTED_COMPARATOR_DESC;
+			case 1:		comp = (isDesc[column]) ? MagicDeckCardDefinition.NAME_COMPARATOR_ASC : MagicDeckCardDefinition.NAME_COMPARATOR_DESC;
 						break;
-			case 2:		comp = (isDesc[column]) ? MagicCardDefinition.TYPE_COMPARATOR_ASC : MagicCardDefinition.TYPE_COMPARATOR_DESC;
+			case 2:		comp = (isDesc[column]) ? MagicDeckCardDefinition.CONVERTED_COMPARATOR_ASC : MagicDeckCardDefinition.CONVERTED_COMPARATOR_DESC;
 						break;
-			case 4:		comp = (isDesc[column]) ? MagicCardDefinition.RARITY_COMPARATOR_ASC : MagicCardDefinition.RARITY_COMPARATOR_DESC;
+			case 3:		comp = (isDesc[column]) ? MagicDeckCardDefinition.TYPE_COMPARATOR_ASC : MagicDeckCardDefinition.TYPE_COMPARATOR_DESC;
+						break;
+			case 5:		comp = (isDesc[column]) ? MagicDeckCardDefinition.RARITY_COMPARATOR_ASC : MagicDeckCardDefinition.RARITY_COMPARATOR_DESC;
 						break;
 		}
 		
@@ -173,14 +184,19 @@ public class CardTableModel implements TableModel {
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex)
 	{
-		MagicCardDefinition card = cardDefinitions.get(rowIndex);
+		MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
 		
 		switch(columnIndex) {
-			case 0:		return card.getFullName();
-			case 1:		return card.getCost();
-			case 2:		return card.getLongTypeString();
-			case 3:		return card.getSubTypeString();
-			case 4:		return card.getRarityString();
+			case 0:		if(isDeck) {
+							return Integer.toString(cardDefinitions.get(rowIndex).getNumCopies());
+						} else {
+							return "";
+						}
+			case 1:		return card.getFullName();
+			case 2:		return card.getCost();
+			case 3:		return card.getLongTypeString();
+			case 4:		return card.getSubTypeString();
+			case 5:		return card.getRarityString();
 		}
 		
 		return "";

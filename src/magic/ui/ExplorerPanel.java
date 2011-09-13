@@ -40,7 +40,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	
  	private final MagicFrame frame;
 	private final MagicPlayerDefinition player;
-	private final DeckStatisticsViewer remoteStatsViewer;
 	
 	private final CardTable cardPoolTable;
 	private final CardTable deckTable;
@@ -54,10 +53,9 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private List<MagicCardDefinition> cardPoolDefs;
 	private List<MagicCardDefinition> deckDefs;
 	
-	public ExplorerPanel(final MagicFrame frame, final int mode, final MagicPlayerDefinition player, final MagicCubeDefinition cube, final DeckStatisticsViewer remoteStatsViewer) {
+	public ExplorerPanel(final MagicFrame frame, final int mode, final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
 		this.frame=frame;
 		this.player=player;
-		this.remoteStatsViewer = remoteStatsViewer;
 		
 		final SpringLayout springLayout = new SpringLayout();
 		setLayout(springLayout);
@@ -130,14 +128,14 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// card pool
 		cardPoolDefs = filterPanel.getCardDefinitions();
-		cardPoolTable = (isEditingDeck()) ? new CardTable(cardPoolDefs, cardViewer, CARD_POOL_TITLE) : new CardTable(cardPoolDefs, cardViewer);
+		cardPoolTable = (isEditingDeck()) ? new CardTable(cardPoolDefs, cardViewer, CARD_POOL_TITLE, true) : new CardTable(cardPoolDefs, cardViewer);
 
 		// deck
 		final Container cardsPanel; // reference panel holding both card pool and deck
 		
 		if (isEditingDeck()) {
 			deckDefs = getPlayer().getDeck();
-			deckTable = new CardTable(deckDefs, cardViewer, DECK_TITLE);
+			deckTable = new CardTable(deckDefs, cardViewer, DECK_TITLE, true);
 			
 			JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 			cardsSplitPane.setOneTouchExpandable(true);
@@ -246,7 +244,11 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		final Object source=event.getSource();
 		
 		if (source == closeButton) {
-			frame.closeCardExplorer();
+			if (isEditingDeck()) {
+				frame.closeDeckEditor();
+			} else {
+				frame.closeCardExplorer();
+			}
 		} else if (source == swapButton && isEditingDeck()) {
 			MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
 			MagicCardDefinition deckCard = deckTable.getSelectedCard();
@@ -257,11 +259,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			
 				// update deck stats
 				statsViewer.setPlayer(getPlayer());
-				
-				// update remote stats
-				if (remoteStatsViewer != null) {
-					remoteStatsViewer.setPlayer(getPlayer());
-				}
 			}
 		}
 	}
