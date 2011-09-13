@@ -9,8 +9,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
