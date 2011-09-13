@@ -1397,6 +1397,32 @@ toughness=1
 ability=flying,can't block creatures without flying
 timing=main
 
+>Soul Warden
+image=http://magiccards.info/scans/en/pch/7.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
+>Soul's Attendant
+image=http://magiccards.info/scans/en/roe/44.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
 >Stillmoon Cavalier
 image=http://magiccards.info/scans/en/eve/95.jpg
 value=3
