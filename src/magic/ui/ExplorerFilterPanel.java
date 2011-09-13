@@ -147,7 +147,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		populateCheckboxPopup(rarityPopup, MagicRarity.values(), rarityCheckBoxes, rarityFilterChoices, true);	
 
 		// Search Name
-		final TitledBorder textFilterBorder = BorderFactory.createTitledBorder("Search Name");
+		final TitledBorder textFilterBorder = BorderFactory.createTitledBorder("Search Text");
 		textFilterBorder.setTitleColor(TEXT_COLOR);
 		final JPanel textFilterPanel = new JPanel();
 		textFilterPanel.setOpaque(false);
