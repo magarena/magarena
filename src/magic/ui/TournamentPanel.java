@@ -158,6 +158,9 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			if (!player.isArtificial()) {
 				rightPanel.add(strengthViewer);
 				rightPanel.add(Box.createVerticalStrut(SPACING));
+				
+				// show card
+				cardViewer.setCard(player.getDeck().get(0),0);
 			}
 			
 			rightPanel.add(editButtons[i]);
@@ -237,7 +240,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
         springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
                              -SPACING, SpringLayout.NORTH, buttonsPanel);
         springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
-                             -SPACING, SpringLayout.SOUTH, backgroundImage);			
+                             -SPACING, SpringLayout.SOUTH, backgroundImage);
+		
 	}
 
 	public MagicFrame getFrame() {
