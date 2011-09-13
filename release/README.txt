@@ -42,12 +42,15 @@ Thanks to
   Rachel for making it possible to cancel image download and fixing incorrect images
   beholder for implementing new cards and general usability improvements
   johncpatterson for helping to test the Mac startup script
+  wait321 for improving the card explorer and "New Game" screen
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
 
 Release 1997 (September QQQ, 2011)
 ============
+brought to you by beholder, melvin, and wait321
+
 - added the following cards:
 
 - improved card explorer and "New Game" screen
@@ -56,6 +59,8 @@ Release 1997 (September QQQ, 2011)
 - improved the resolution of some token images
 - added support for "whenever player gain life" trigger
 - added support for non-creature auras
+- ensure that order of blockers does not change when the attacker they were
+  blocking is destroyed
 
 - fixed a bug where the "When Targeted" trigger does not activate for spells
   with kicker
@@ -63,8 +68,6 @@ Release 1997 (September QQQ, 2011)
   typo in the name of the class that implements the mana abilities
 - fixed a bug where the program would crash when opening the log book
   immediately after resetting the game
-- fixed a bug where the order of blockers would change after damage is dealt
-  if the attacker they were blocking is destroyed
 
 Release 1.17b (August 27, 2011)
 =============
