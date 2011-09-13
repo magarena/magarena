@@ -22,6 +22,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -34,6 +35,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private static final long serialVersionUID = 1L;
 	
+	private static final Dimension MIN_SIZE = new Dimension(1000, 700);
 	private static final String NAME="Magarena";
 	private static final String SAVE_TOURNAMENT_ITEM="Save";
 	private static final String RESTART_TOURNAMENT_ITEM="Restart";
@@ -91,6 +93,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 		if (config.isMaximized()) {
 			this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		}
+		
+		setMinimumSize(MIN_SIZE);
 
 		contentPanel=new JPanel(new BorderLayout());
 		contentPanel.setOpaque(true);
