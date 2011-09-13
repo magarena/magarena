@@ -14,7 +14,7 @@ public class AvatarImages {
 	
 	private final File avatarPath;
 	private final Vector<String> names;
-	private String current = null;
+	private String current = "";
 	private PlayerAvatar avatars[];
 	
 	private AvatarImages() {
