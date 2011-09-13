@@ -101,7 +101,7 @@ public abstract class AbstractTheme implements Theme {
 	@Override
 	public ImageIcon getIcon(final String aName) {
 		final Object value=themeMap.get(aName);
-		return value==null?IconImages.MISSING2:(ImageIcon)value;
+		return value==null?IconImages.MISSING_ICON:(ImageIcon)value;
 	}
 
 	@Override

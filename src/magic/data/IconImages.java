@@ -10,13 +10,13 @@ import java.io.InputStream;
 import java.util.Arrays;
 
 public class IconImages {
-
+	public static final BufferedImage MISSING=loadImage("icons/missing.png");
+	public static final BufferedImage MISSING2=loadImage("icons/missing2.png");
+	public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
+	public static final ImageIcon     MISSING_ICON=loadIcon("missing2.png");
+    
     //use mana symbols by goblin hero if it exists
     private static final BufferedImage MANA = loadImage("icons/Mana.png");
-
-	public static final BufferedImage MISSING=loadImage("icons/missing.png");
-	public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
-	public static final ImageIcon MISSING2=loadIcon("missing2.png");
 	
 	public static final BufferedImage LOGO=loadImage("textures/logo.jpg");
 	public static final BufferedImage WIZARD=loadImage("icons/wizard.png");
@@ -143,18 +143,16 @@ public class IconImages {
 	public static final ImageIcon COST_X=loadSymbolIcon("x.gif", 21, false);
 		
 	private static BufferedImage loadImage(final String name) {
-        return FileIO.toImg(IconImages.class.getResource(name), null);
+        return FileIO.toImg(IconImages.class.getResource(name), MISSING2);
 	}
 	
 	private static ImageIcon loadIcon(final String name) {
 		final BufferedImage image=loadImage("icons/"+name);
-		ImageIcon icon = null;
-        icon = new ImageIcon(image);
-        return image != null ? icon : MISSING2;
+		return new ImageIcon(image);
 	}
 
 	private static ImageIcon loadSymbolIcon(final String name, final int pos, final boolean big) {
-        if (MANA != null) {
+        if (MANA != MISSING2) {
             final int imgW = 75;
             final int imgH = 75;
             final int icoW = 15;
@@ -170,22 +168,22 @@ public class IconImages {
                 return new ImageIcon(magic.GraphicsUtilities.scale(subimage,icoW,icoH));
             }
         }
-		final File iconFile=new File(MagicMain.getGamePath()+File.separator+"symbols"+File.separator+name);
-		if (iconFile.exists()) {
-			return new ImageIcon(iconFile.getAbsolutePath());
-		}
-		return loadIcon("missing2.png");
+		final File iconFile=new File(
+                MagicMain.getGamePath() + File.separator + 
+                "symbols" + File.separator + 
+                name);
+		return (iconFile.exists()) ?
+			new ImageIcon(iconFile.getAbsolutePath()):
+            MISSING_ICON;
 	}
 	
     private static void reloadSymbolIcon(final ImageIcon imgico, final String name) {
 		final File iconFile = new File(
-                MagicMain.getGamePath() +
-                File.separator +
-                "symbols" +
-                File.separator +
+                MagicMain.getGamePath() + File.separator +
+                "symbols" + File.separator +
                 name);
-        final BufferedImage img = FileIO.toImg(iconFile, null);
-        if (img != null) {
+        final BufferedImage img = FileIO.toImg(iconFile, MISSING2);
+        if (img != MISSING2) {
             imgico.setImage(img);
         }
 	}
