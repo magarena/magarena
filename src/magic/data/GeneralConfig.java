@@ -34,8 +34,8 @@ public class GeneralConfig {
 
 	private static final int DEFAULT_LEFT=0;
 	private static final int DEFAULT_TOP=0;
-	private static final int DEFAULT_WIDTH=1024;
-	private static final int DEFAULT_HEIGHT=600;
+	public static final int DEFAULT_WIDTH=1024;
+	public static final int DEFAULT_HEIGHT=600;
 	private static final boolean DEFAULT_MAXIMIZED=false;
 	private static final String DEFAULT_THEME="felt";
 	private static final String DEFAULT_AVATAR="legend";

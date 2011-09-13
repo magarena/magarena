@@ -35,7 +35,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private static final Dimension MIN_SIZE = new Dimension(1000, 700);
+	private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
 	private static final String NAME="Magarena";
 	private static final String SAVE_TOURNAMENT_ITEM="Save";
 	private static final String RESTART_TOURNAMENT_ITEM="Restart";
