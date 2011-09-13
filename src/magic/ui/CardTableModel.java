@@ -49,7 +49,7 @@ public class CardTableModel implements TableModel {
 	}
 	
 	public static final String[] COLUMN_NAMES = new String[] {"#", "Name", "CC", "Type", "Subtype", "Rarity", "Text"};
-	public static final int[] COLUMN_MIN_WIDTHS = new int[] {40, 180, 100, 140, 140, 90, 2000};
+	public static final int[] COLUMN_MIN_WIDTHS = new int[] {40, 180, 140, 140, 140, 90, 2000};
 	public static final int COST_COLUMN_INDEX = 2;
 	
 	private final boolean isDeck;
