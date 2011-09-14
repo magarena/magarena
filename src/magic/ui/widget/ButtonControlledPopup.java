@@ -7,6 +7,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
+import java.util.Timer;
+import java.util.TimerTask;
 import javax.swing.BorderFactory;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
@@ -23,14 +25,16 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 	private final JButton invokePopupButton;
 	private final String hidePopupButtonText;
 	private final String showPopupButtonText;
-	private boolean popupToggledByButton; // ensures clicking hide button won't hide and then immediately show due to both action event and focus event
-	private boolean focusHidePending;
+	private final Timer timer;
+	
+	private boolean popupJustToggled;
 	
 	public ButtonControlledPopup(JFrame frame, JButton toggleButton, String hidePopupButtonText, String showPopupButtonText) {
 		this.invokePopupButton = toggleButton;
 		this.hidePopupButtonText = hidePopupButtonText;
 		this.showPopupButtonText = showPopupButtonText;
 		this.dialog = new JDialog(frame);
+		this.timer = new Timer();
 		
 		final Border border = BorderFactory.createRaisedBevelBorder();
 		setBorder(border);
@@ -68,31 +72,35 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 		dialog.setVisible(false);
 	}
 	
-	@Override
-	public void actionPerformed(final ActionEvent event) {
-		popupToggledByButton = true;
-		
-		// set popup visibility
-		if (!dialog.isVisible() && invokePopupButton.getText().equals(showPopupButtonText)) {
-			showPopup();
-		} else if (!focusHidePending) {
-			// hide
-			hidePopup();
+	class ResponsePreventer extends TimerTask {
+		public void run() {
+			popupJustToggled = false;
 		}
 	}
 	
 	@Override
-	public void focusLost(FocusEvent e) {
-		popupToggledByButton = false;
-		focusHidePending = true;
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				if (!popupToggledByButton && dialog.isVisible()) {
-					focusHidePending = false;
-					invokePopupButton.doClick();
-				}
-			}
-		});
+	public void actionPerformed(final ActionEvent event) {
+		if(popupJustToggled) {
+			// focus event just hid popup -> this event is probably from clicking on the hide button -> don't do anything
+			return;
+		}
+		
+		// set popup visibility
+		if (!dialog.isVisible()) {
+			showPopup();
+		} else {
+			// hide - taken care of by focusLost
+		}
+	}
+	
+	@Override
+	public void focusLost(FocusEvent e) {		
+		popupJustToggled = true;
+		timer.schedule(new ResponsePreventer(), 300); // don't allow clicks on hide button to reshow popup immediately by disabling response for < 1 s
+		
+		if (dialog.isVisible()) {
+			hidePopup();
+		}
 	}
 
 	@Override
