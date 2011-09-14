@@ -27,11 +27,13 @@ import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
@@ -50,6 +52,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 	private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
 	
+	private final JFrame frame;
 	private final ExplorerPanel explorerPanel;
 	private final ButtonControlledPopup typePopup;
 	private final JCheckBox typeCheckBoxes[];
@@ -74,8 +77,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	
 	private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 	
-	public ExplorerFilterPanel(final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile,final MagicCubeDefinition cube) {
-				
+	public ExplorerFilterPanel(JFrame frame, final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile,final MagicCubeDefinition cube) {
+		this.frame = frame;
 		this.explorerPanel=explorerPanel;
 		this.mode=mode;
 		this.profile=profile;
@@ -93,9 +96,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		// Color
 		colorPopup = addFilterPopupPanel("Color");
+		Border border = BorderFactory.createLoweredBevelBorder();
 		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
 		final JPanel colorsPanel=new JPanel(new GridLayout(1,MagicColor.NR_COLORS));
+		colorsPanel.setBorder(border);
 		colorsPanel.setOpaque(false);
+		colorPopup.setPopupSize(280, 120);
 		for (int i = 0; i < MagicColor.NR_COLORS; i++) {
 			final MagicColor color = MagicColor.values()[i];
 			final JPanel colorPanel=new JPanel();
@@ -111,7 +117,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		}
 		colorsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
 		colorPopup.add(colorsPanel);
-		colorPopup.addSeparator();
+		
 		ButtonGroup colorFilterBg = new ButtonGroup();
 		colorFilterChoices = new JRadioButton[FILTER_CHOICES.length];
 		for (int i = 0; i < FILTER_CHOICES.length; i++) {
@@ -183,7 +189,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		selectButton.setPreferredSize(BUTTON_SIZE);
 		filterPanel.add(selectButton);
 		
-		ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
+		ButtonControlledPopup pop = new ButtonControlledPopup(frame, selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
 		pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
 		selectButton.addActionListener(new PopupCloser(pop));
 		return pop;
@@ -220,6 +226,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private void populateCheckboxPopup(final ButtonControlledPopup popup, final Object[] checkboxValues, final JCheckBox[] newCheckboxes, final JRadioButton[] newFilterButtons, final boolean hideAND) {
 		JPanel checkboxesPanel = new JPanel(new GridLayout(newCheckboxes.length, 1));
 		checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+		checkboxesPanel.setOpaque(false);		
 		for (int i=0;i<checkboxValues.length;i++) {
 			newCheckboxes[i]=new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
 			newCheckboxes[i].addActionListener(this);
@@ -230,15 +237,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			checkboxesPanel.add(newCheckboxes[i]);
 		}
 		
+		Border border = BorderFactory.createLoweredBevelBorder();
 		JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
 		scrollPane.setAlignmentX(Component.LEFT_ALIGNMENT);
-		scrollPane.setBorder(null);
+		scrollPane.setBorder(border);
 		scrollPane.setOpaque(false);
 		scrollPane.getViewport().setOpaque(false);
 		scrollPane.setPreferredSize(POPUP_CHECKBOXES_SIZE);
 		popup.add(scrollPane);
-		
-		popup.addSeparator();
 		
 		ButtonGroup bg = new ButtonGroup();
 		for (int i = 0; i < FILTER_CHOICES.length; i++) {

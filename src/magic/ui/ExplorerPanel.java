@@ -118,7 +118,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		if (isEditingDeck()) {
 			profile=getPlayer().getProfile();
 		}
-		filterPanel = new ExplorerFilterPanel(this, mode, profile, cube);
+		filterPanel = new ExplorerFilterPanel(frame, this, mode, profile, cube);
 		
 		final JScrollPane filterScrollPane = new JScrollPane(filterPanel);
 		filterScrollPane.setBorder(null);
