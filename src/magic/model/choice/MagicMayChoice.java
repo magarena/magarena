@@ -143,11 +143,12 @@ public class MagicMayChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
-		final Object choiceResults[]=new Object[choices.length+1];
+		final int nrOfChoices = choices.length;
+		final Object choiceResults[]=new Object[nrOfChoices+1];
 		choiceResults[0]=NO_CHOICE;
 
 		final boolean hints = GeneralConfig.getInstance().getSmartTarget();
-		if (hints && defaultChoice != DEFAULT_NONE) {
+		if (hints && nrOfChoices == 0 && defaultChoice != DEFAULT_NONE) {
 			if (defaultChoice == DEFAULT_YES) {
 				choiceResults[0]=YES_CHOICE;
 			}
@@ -172,7 +173,7 @@ public class MagicMayChoice extends MagicChoice {
 		
 		// Yes is chosen.
 		choiceResults[0]=YES_CHOICE;
-		for (int index=0;index<choices.length;index++) {
+		for (int index=0;index<nrOfChoices;index++) {
 			
 			final Object partialChoiceResults[]=choices[index].getPlayerChoiceResults(controller,game,player,source);
 			if (partialChoiceResults==UNDO_CHOICE_RESULTS) {
