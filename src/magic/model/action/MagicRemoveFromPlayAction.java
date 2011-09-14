@@ -6,6 +6,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.mstatic.MagicPermanentStatic;
+import magic.model.mstatic.MagicStatic;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,6 +17,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 	private final MagicPermanent permanent;
 	private final MagicLocationType toLocation;
 	private Collection<MagicPermanentTrigger> removedTriggers;
+	private Collection<MagicPermanentStatic> removedStatics;
 	private boolean valid;
 	
 	public MagicRemoveFromPlayAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
@@ -60,9 +63,14 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		controller.removePermanent(permanent);
 
 		setScore(controller,permanent.getStaticScore(game)-score);
-		
+	
+        // Trigger
 		removedTriggers=new ArrayList<MagicPermanentTrigger>();
 		game.removeTriggers(permanent,removedTriggers);
+		
+        // Static
+        removedStatics=new ArrayList<MagicPermanentStatic>();
+		game.removeStatics(permanent,removedStatics);
 		
 		game.doAction(new MagicMoveCardAction(permanent,toLocation));
 		game.setStateCheckRequired();
@@ -82,7 +90,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 			permanent.getEquippedCreature().addEquipment(permanent);
 		}
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
-		
 			equipment.setEquippedCreature(permanent);
 		}
 		
@@ -91,19 +98,22 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 			permanent.getEnchantedCreature().addAura(permanent);
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
-		
 			aura.setEnchantedCreature(permanent);
 		}
-		
+
+        // Trigger
 		for (final MagicPermanentTrigger permanentTrigger : removedTriggers) {
-			
 			game.addTrigger(permanentTrigger);
+		}
+
+        // Static
+		for (final MagicPermanentStatic permanentStatic : removedStatics) {
+			game.addStatic(permanentStatic);
 		}
 	}
 
 	@Override
 	public String toString() {
-
 		return getClass().getSimpleName()+" ("+permanent.getName()+','+permanent.getAuraPermanents().size()+')';
 	}
 }
