@@ -18,6 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
+import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
@@ -33,6 +34,9 @@ public class CardTable extends JPanel {
 	private final CardTableModel tableModel;
 	private final JTable table;
 	
+	private  TitleBar titleBar;
+	private MagicCardDefinition lastSelectedCard;
+	
 	public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer) {
 		this(defs, cardViewer, "", false);
 	}
@@ -41,6 +45,7 @@ public class CardTable extends JPanel {
 		this.tableModel = new CardTableModel(defs, isDeck);
 		this.table = new JTable(tableModel);
 		this.cardViewer = cardViewer;
+		this.lastSelectedCard = null;
 		
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // allow only single row selection
@@ -74,12 +79,10 @@ public class CardTable extends JPanel {
 		
 		// add title
 		setLayout(new BorderLayout());
+		add(scrollpane, BorderLayout.CENTER);
+		titleBar = null;
 		if (title.length() > 0) {
-			TitleBar titleBar = new TitleBar(title);
-			add(titleBar, BorderLayout.PAGE_START);
-			add(scrollpane, BorderLayout.CENTER);
-		} else {
-			add(scrollpane);
+			setTitle(title);
 		}			
 	}
 	
@@ -87,10 +90,33 @@ public class CardTable extends JPanel {
 		return tableModel.getCardDef(table.getSelectionModel().getLeadSelectionIndex());
 	}
 	
+	void reselectLastCard() {
+		// select previous card if possible
+		if (lastSelectedCard != null) {
+			int index = tableModel.findCardIndex(lastSelectedCard);
+			if(index != -1) {
+				table.getSelectionModel().setSelectionInterval(index,index);
+			} else {
+				// previous card no longer in list, so clear its record
+				lastSelectedCard = null;
+			}
+		}		
+	}
+	
 	public void setCards(List<MagicCardDefinition> defs) {
 		tableModel.setCards(defs);
 		table.tableChanged(new TableModelEvent(tableModel));
 		table.repaint();
+		reselectLastCard();
+	}
+	
+	public void setTitle(String title) {
+		if (titleBar != null) {
+			titleBar.setText(title);
+		} else {
+			titleBar = new TitleBar(title);
+			add(titleBar, BorderLayout.PAGE_START);
+		}
 	}
 	
 	private class ColumnListener extends MouseAdapter {
@@ -109,6 +135,8 @@ public class CardTable extends JPanel {
 			// redraw
 			table.tableChanged(new TableModelEvent(tableModel));
 			table.repaint();
+			
+			reselectLastCard();
 		}
 	}
 	
@@ -130,23 +158,28 @@ public class CardTable extends JPanel {
 	}
 
 	private class SelectionListener implements ListSelectionListener {
-		public void valueChanged(ListSelectionEvent e) {
-			// If cell selection is enabled, both row and column change events are fired
-			if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
-				// Row selection changed				
-				MagicCardDefinition card = getSelectedCard();
-				if (card != null) {
-					cardViewer.setCard(card,0);
-				}
-			} /* else if (e.getSource() == table.getColumnModel().getSelectionModel() && table.getColumnSelectionAllowed() ){
-				// Column selection changed
-				int first = e.getFirstIndex();
-				int last = e.getLastIndex();
-			} */
+		public void valueChanged(final ListSelectionEvent e) {
+			SwingUtilities.invokeLater(new Runnable() {
+				public void run() {
+					// If cell selection is enabled, both row and column change events are fired
+					if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
+						// Row selection changed				
+						MagicCardDefinition card = getSelectedCard();
+						if (card != null) {
+							lastSelectedCard = card;
+							cardViewer.setCard(card,0);
+						}
+					} /* else if (e.getSource() == table.getColumnModel().getSelectionModel() && table.getColumnSelectionAllowed() ){
+						// Column selection changed
+						int first = e.getFirstIndex();
+						int last = e.getLastIndex();
+					} */
 
-			/* if (e.getValueIsAdjusting()) {
-				// The mouse button has not yet been released
-			} */
+					/* if (e.getValueIsAdjusting()) {
+						// The mouse button has not yet been released
+					} */
+				}
+			});
 		}
 	}
 }

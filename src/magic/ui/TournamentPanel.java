@@ -165,7 +165,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			rightPanel.add(editButtons[i]);
 			
 			// table of cards
-			cardTables[i] = new CardTable(player.getDeck(), cardViewer, "Deck", true);
+			cardTables[i] = new CardTable(player.getDeck(), cardViewer, generateTitle(player.getDeck().getName()), true);
 			
 			// contents of tab
 			JPanel tabPanel = new JPanel();
@@ -243,6 +243,10 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 	}
 
+	String generateTitle(String deckName) {
+		return "Deck (" + deckName + ")";
+	}
+	
 	public MagicFrame getFrame() {
 		return frame;
 	}
@@ -258,6 +262,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	public void updateDecksAfterEdit() {
 		for (int i = 0; i < statsViewers.length; i++) {
 			cardTables[i].setCards(tournament.getPlayers()[i].getDeck());
+			cardTables[i].setTitle(generateTitle(tournament.getPlayers()[i].getDeck().getName()));
 			statsViewers[i].setPlayer(tournament.getPlayers()[i]);
 		}
 	}
