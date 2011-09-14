@@ -16,6 +16,7 @@ import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicTrigger;
+import magic.model.mstatic.MagicStatic;
 import magic.model.variable.MagicAttachmentLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
@@ -53,6 +54,7 @@ public class MagicCardDefinition {
 	};
 
     private static int numTriggers = 0;
+    private static int numStatics = 0;
     private static int numPermanentActivations = 0;
     private static int numManaActivations = 0;
     private static int numSpellEvent = 0;
@@ -92,8 +94,9 @@ public class MagicCardDefinition {
     private MagicLocalVariable attachmentLocalVariable;
 	private final MagicLocalVariableList localVariables=new MagicLocalVariableList();
 	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();
+	private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
 	private final Collection<MagicTrigger> comeIntoPlayTriggers=new ArrayList<MagicTrigger>();
-	private final Collection<MagicTrigger> putIntograveyardTriggers=new ArrayList<MagicTrigger>();
+	private final Collection<MagicTrigger> putIntoGraveyardTriggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
 	private boolean excludeManaOrCombat=false;
@@ -112,6 +115,7 @@ public class MagicCardDefinition {
 	
     public static void printStatistics() {
 		System.err.println(numTriggers + " triggers");
+		System.err.println(numStatics + " statics");
 		System.err.println(numPermanentActivations + " permanent activations");
 		System.err.println(numManaActivations + " mana activations");
 		System.err.println(numSpellEvent + " spell event");
@@ -246,6 +250,12 @@ public class MagicCardDefinition {
             mtrig.setCardIndex(index);
             System.err.println("Adding trigger to " + getFullName());
             numTriggers++;
+        } else if (obj instanceof MagicStatic) {
+            final MagicStatic mstatic = (MagicStatic)obj;
+            addStatic(mstatic);
+            mstatic.setCardIndex(index);
+            System.err.println("Adding trigger to " + getFullName());
+            numStatics++;
         } else if (obj instanceof MagicPermanentActivation) {
             final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
             addActivation(mact);
@@ -611,7 +621,7 @@ public class MagicCardDefinition {
 				comeIntoPlayTriggers.add(trigger);
 				break;
 			case WhenPutIntoGraveyard:
-				putIntograveyardTriggers.add(trigger);
+				putIntoGraveyardTriggers.add(trigger);
 				break;
 			default:
 				triggers.add(trigger);
@@ -619,8 +629,16 @@ public class MagicCardDefinition {
 		}
 	}
 	
+    private void addStatic(final MagicStatic mstatic) {
+        statics.add(mstatic);
+    }
+	
 	public Collection<MagicTrigger> getTriggers() {
 		return triggers;
+	}
+	
+    public Collection<MagicStatic> getStatics() {
+		return statics;
 	}
 	
 	public Collection<MagicTrigger> getComeIntoPlayTriggers() {
@@ -628,7 +646,7 @@ public class MagicCardDefinition {
 	}
 	
 	public Collection<MagicTrigger> getPutIntoGraveyardTriggers() {
-		return putIntograveyardTriggers;
+		return putIntoGraveyardTriggers;
 	}
 	
 	private void addActivation(final MagicPermanentActivation activation) {
