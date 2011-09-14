@@ -37,11 +37,11 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	private final BufferedImage scaledImage;
 	private boolean showScaled=false;
 	private boolean scaled=false;
-	private int imageWidth;
-	private int imageHeight;
-	private int viewerHeight;
-	private int zoomX;
-	private int zoomY;
+	private final int viewerHeight;
+	private final int imageWidth;
+	private final int imageHeight;
+	private final int zoomX;
+	private final int zoomY;
 	private int sx1;
 	private int sy1;
 	private int sx2;
@@ -86,13 +86,14 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 		setOpaque(false);
 		
         image = magic.data.FileIO.toImg(rndFile(), ThemeFactory.getInstance().getCurrentTheme().getLogoTexture());
-        scaledImage=magic.GraphicsUtilities.scale(image,VIEWER_WIDTH,viewerHeight);
         
         imageWidth=image.getWidth();
         imageHeight=image.getHeight();
         viewerHeight=imageHeight*VIEWER_WIDTH/imageWidth;
         zoomX=imageWidth/ZOOM_FACTOR;
         zoomY=imageHeight/ZOOM_FACTOR;
+        
+        scaledImage=magic.GraphicsUtilities.scale(image,VIEWER_WIDTH,viewerHeight);
         
         final MouseAdapter mouseListener=new MouseAdapter() {
             @Override
@@ -161,7 +162,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
         } else {
             g.drawImage(scaledImage,0,0,this);
         }
-        g.setColor(Color.black);
-        g.drawRect(0,0,getWidth()-1,viewerHeight-1);
+        //g.setColor(Color.black);
+        //g.drawRect(0,0,getWidth()-1,viewerHeight-1);
 	}
 }
