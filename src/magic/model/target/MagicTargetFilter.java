@@ -251,31 +251,23 @@ public interface MagicTargetFilter {
 	};
 	
 	MagicTargetFilter TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS=new MagicTargetFilter() {
-		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			if (target.getController()!=player) {
 				final MagicPermanent targetPermanent=(MagicPermanent)target;
 				return targetPermanent.isArtifact()||targetPermanent.isEnchantment();
 			}
 			return false;
 		}
-		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
 		
 	MagicTargetFilter TARGET_CREATURE=new MagicTargetFilter() {
-		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			return ((MagicPermanent)target).isCreature();
 		}
-		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
