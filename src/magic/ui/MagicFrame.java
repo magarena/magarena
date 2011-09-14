@@ -396,7 +396,14 @@ public class MagicFrame extends JFrame implements ActionListener {
 				if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
 					filename+=DeckUtils.DECK_EXTENSION;
 				}
-				DeckUtils.saveDeck(filename,player);
+				if(DeckUtils.saveDeck(filename,player)) {
+					String shortFilename = fileChooser.getSelectedFile().getName();
+					if (shortFilename.indexOf(".dec") == -1) {
+						shortFilename += ".dec";
+					}
+					player.getDeck().setName(shortFilename);
+					tournamentPanel.updateDecksAfterEdit();
+				}
 			}
 		}
 	}

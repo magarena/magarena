@@ -51,9 +51,9 @@ public class DeckUtils {
 		}
 	}
 	
-	public static void saveDeck(final String filename,final MagicPlayerDefinition player) {
-
+	public static boolean saveDeck(final String filename,final MagicPlayerDefinition player) {
 		final List<SortedMap<String,Integer>> cardMaps=new ArrayList<SortedMap<String,Integer>>();
+		boolean isSuccessful = true;
 
         for (int count=3;count>0;count--) {
 			cardMaps.add(new TreeMap<String, Integer>());
@@ -90,12 +90,15 @@ public class DeckUtils {
 				}
 			}			
 		} catch (final IOException ex) {
+			isSuccessful = false;
             System.err.println("ERROR! Unable to save deck");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
         } finally {
             magic.data.FileIO.close(writer);
         }
+		
+		return isSuccessful;
 	}
 	
 	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {

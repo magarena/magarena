@@ -6,7 +6,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
 	private static final long serialVersionUID = 1L;
 	
-	private String name="Unnamed Deck";
+	private String name="Unsaved Deck";
 	
 	public void setName(final String name) {
 		this.name=name;
