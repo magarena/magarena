@@ -239,7 +239,7 @@ public class PermanentViewerInfo {
 				return color;
 			}
 		}
-        throw new RuntimeException("No corresponding MagicColor for " + permanent);
+        return MagicColor.Black;
 	}
 	
 	private static List<PermanentViewerInfo> getBlockers(final MagicGame game,final MagicPermanent permanent) {
