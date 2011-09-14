@@ -67,7 +67,7 @@ Ape.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=42431&stc=1&d
 Bat.jpg;http://img.photobucket.com/albums/v237/Xand0r/bat-token_guildpact_300.jpg
 Goblin1.jpg;http://img.photobucket.com/albums/v237/Xand0r/goblin-token_ravnica_300.jpg
 Goblin2.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1157620938
-Griffin.jpg;http://i37.photobucket.com/albums/e81/FirePenguinMaster/MWSHQ/Griffin2full.jpg
+Griffin.jpg;http://i248.photobucket.com/albums/gg179/AC666AC/MTG/Griffinfull.jpg
 Voja.jpg;http://img.photobucket.com/albums/v237/Xand0r/voja-token_ravnica_300-2.jpg
 Beast3.jpg;http://magiccards.info/extras/token/magic-2011/beast.jpg
 Beast4.jpg;http://magiccards.info/extras/token/zendikar/beast.jpg
