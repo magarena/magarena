@@ -5,6 +5,7 @@ import magic.data.CubeDefinitions;
 import magic.data.TournamentConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
+import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicTournament;
 import magic.ui.theme.Theme;
@@ -165,7 +166,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			rightPanel.add(editButtons[i]);
 			
 			// table of cards
-			cardTables[i] = new CardTable(player.getDeck(), cardViewer, generateTitle(player.getDeck().getName()), true);
+			cardTables[i] = new CardTable(player.getDeck(), cardViewer, generateTitle(player.getDeck()), true);
 			
 			// contents of tab
 			JPanel tabPanel = new JPanel();
@@ -243,8 +244,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 	}
 
-	String generateTitle(String deckName) {
-		return "Deck (" + deckName + ")";
+	String generateTitle(MagicDeck deck) {
+		return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
 	}
 	
 	public MagicFrame getFrame() {
@@ -262,7 +263,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	public void updateDecksAfterEdit() {
 		for (int i = 0; i < statsViewers.length; i++) {
 			cardTables[i].setCards(tournament.getPlayers()[i].getDeck());
-			cardTables[i].setTitle(generateTitle(tournament.getPlayers()[i].getDeck().getName()));
+			cardTables[i].setTitle(generateTitle(tournament.getPlayers()[i].getDeck()));
 			statsViewers[i].setPlayer(tournament.getPlayers()[i]);
 		}
 	}

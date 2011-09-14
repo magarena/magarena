@@ -135,7 +135,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		if (isEditingDeck()) {
 			deckDefs = getPlayer().getDeck();
-			deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs.getName()), true);
+			deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs), true);
 			
 			JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 			cardsSplitPane.setOneTouchExpandable(true);
@@ -228,8 +228,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		return player;
 	}
 	
-	String generateDeckTitle(String deckName) {
-		return "Deck (" + deckName + ")";
+	String generateDeckTitle(MagicDeck deck) {
+		return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
 	}
 	
 	public void updateCardPool() {
