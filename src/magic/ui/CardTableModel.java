@@ -72,6 +72,16 @@ public class CardTableModel implements TableModel {
 		return cardDefinitions.get(row).getCard();
 	}
 	
+	public int findCardIndex(MagicCardDefinition card) {
+		for (int i = 0; i < cardDefinitions.size(); i++) {
+			if(MagicCardDefinition.NAME_COMPARATOR_ASC.compare(cardDefinitions.get(i).getCard(), card) == 0) {
+				return i;
+			}
+		}
+		
+		return -1;
+	}
+	
 	public void setCards(List<MagicCardDefinition> defs) {
 		if (isDeck) {
 			this.cardDefinitions = MagicDeckCardDefinition.condenseCopyCardList(defs);
