@@ -22,40 +22,37 @@ public class MagicSimpleMayChoice extends MagicChoice {
 	public static final int DEFAULT_NO = 1;
 	public static final int DEFAULT_YES = 2;
 
-	private static final List<Object[]> YES_CHOICE_LIST=Collections.singletonList(new Object[]{YES_CHOICE});
-	private static final List<Object[]> NO_CHOICE_LIST=Collections.singletonList(new Object[]{NO_CHOICE});
+	private static final List<Object[]> YES_CHOICE_LIST = Collections.singletonList(new Object[]{YES_CHOICE});
+	private static final List<Object[]> NO_CHOICE_LIST = Collections.singletonList(new Object[]{NO_CHOICE});
 	
 	private final int action;
 	private final int amount;
 	private int defaultChoice;
 	
 	public MagicSimpleMayChoice(final String description,final int action,final int amount,final int defaultChoice) {
-		
 		super(description);
-		this.action=action;
-		this.amount=amount;
+		this.action = action;
+		this.amount = amount;
 		this.defaultChoice = defaultChoice;
 	}
 	
 	@Override
 	Collection<Object> getArtificialOptions(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
-
 		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public List<Object[]> getArtificialChoiceResults(final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source) {
-		
-		boolean yes=true;
+		boolean yes = true;
 		switch (action) {
 			case DRAW_CARDS:
-				yes=player.getLibrary().size()-amount>=1;
+				yes = player.getLibrary().size() - amount >= 1;
 				break;
 			case PAY_LIFE:
 				yes = player.getLife() - amount >= 1;
 				break;
 		}
-		return yes?YES_CHOICE_LIST:NO_CHOICE_LIST;
+		return yes ? YES_CHOICE_LIST : NO_CHOICE_LIST;
 	}
 	
 	@Override
@@ -67,7 +64,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
 					new Object[]{YES_CHOICE};
 		}
 		
-		final MayChoicePanel choicePanel=new MayChoicePanel(controller,source,getDescription());
+		final MayChoicePanel choicePanel = new MayChoicePanel(controller,source,getDescription());
 		controller.disableActionButton(false);
 		controller.showComponent(choicePanel);
 		if (controller.waitForInputOrUndo()) {
