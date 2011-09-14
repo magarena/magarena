@@ -26,7 +26,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
 	
 	private final GameController controller;
 	private final List<MagicPlayChoiceResult> results;
-	private MagicPlayChoiceResult result=null;
+	private MagicPlayChoiceResult result;
 	
 	public PlayChoicePanel(
             final GameController controller,
