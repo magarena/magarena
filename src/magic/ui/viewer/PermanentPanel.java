@@ -42,7 +42,11 @@ public class PermanentPanel extends JPanel implements ChoiceViewer {
 			attachedPanel.setBorder(attachedBorder);
 			for (final PermanentViewerInfo linkedPermanentInfo : linked) {
 
-				final PermanentButton linkedButton=new PermanentButton(linkedPermanentInfo,controller,null,maxWidth-10);
+				final PermanentButton linkedButton=new PermanentButton(
+                        linkedPermanentInfo,
+                        controller,
+                        BorderFactory.createEmptyBorder(),
+                        maxWidth-10);
 				linkedButtons.add(linkedButton);
 				attachedPanel.add(linkedButton);
 			}
