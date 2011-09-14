@@ -447,18 +447,14 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 	private void openCardExplorer() {
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
-		final ExplorerPanel explorerPanel = new ExplorerPanel(this, ExplorerPanel.ALL, null, null, null);
+		final ExplorerPanel explorerPanel = new ExplorerPanel(this, ExplorerPanel.ALL, null, null);
 		addContent(explorerPanel);
 	}
 	
 	public void openDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
-		openDeckEditor(player, cube, null);
-	}
-	
-	public void openDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube, final DeckStatisticsViewer viewer) {
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
 		// final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
-		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,player, cube, viewer);
+		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,player, cube);
 		addContent(explorerPanel);
 	}
 	
@@ -469,6 +465,14 @@ public class MagicFrame extends JFrame implements ActionListener {
 			gamePanel.requestFocus();
 		}
 	}
+	
+	public void closeDeckEditor() {
+		closeCardExplorer();
+		if (tournamentPanel != null) {
+			tournamentPanel.updateDecksAfterEdit();
+		}
+	}
+		
 	
 	private void openKeywords() {
 		enableMenuItem(KEYWORDS_ITEM,false);

@@ -33,12 +33,12 @@ public class CardTable extends JPanel {
 	private final CardTableModel tableModel;
 	private final JTable table;
 	
-	public CardTable(List<MagicCardDefinition> defs, CardViewer cardViewer) {
-		this(defs, cardViewer, "");
+	public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer) {
+		this(defs, cardViewer, "", false);
 	}
 	
-	public CardTable(List<MagicCardDefinition> defs, CardViewer cardViewer, String title) {
-		this.tableModel = new CardTableModel(defs);
+	public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer, final String title, final boolean isDeck) {
+		this.tableModel = new CardTableModel(defs, isDeck);
 		this.table = new JTable(tableModel);
 		this.cardViewer = cardViewer;
 		
@@ -53,7 +53,7 @@ public class CardTable extends JPanel {
 		}
 		
 		// special renderer for mana symbols
-		model.getColumn(1).setCellRenderer(new ManaCostCellRenderer());
+		model.getColumn(CardTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostCellRenderer());
 		
 		// listener to change card image on selection
 		SelectionListener listener = new SelectionListener();

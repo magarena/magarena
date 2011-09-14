@@ -44,38 +44,35 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private static final String FILTER_CHOICES[] = {"Match any selected", "Match all selected", "Exclude selected"};
 	private static final String FILTER_BUTTON_TEXT = "Filter";
 	private static final String HIDE_BUTTON_TEXT = "Hide";
+	private static final String RESET_BUTTON_TEXT = "Reset";
 	private static final Dimension BUTTON_SIZE = new Dimension(70, 20);
 	private static final int SEARCH_FIELD_WIDTH = 12;
 	private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 	private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
 	
 	private final ExplorerPanel explorerPanel;
-	
 	private final ButtonControlledPopup typePopup;
 	private final JCheckBox typeCheckBoxes[];
 	private final JRadioButton typeFilterChoices[];
-	
 	private final ButtonControlledPopup colorPopup;
 	private final JCheckBox colorCheckBoxes[];
 	private final JRadioButton colorFilterChoices[];
-	
 	private final ButtonControlledPopup costPopup;
 	private final JCheckBox costCheckBoxes[];
 	private final JRadioButton costFilterChoices[];
-	
 	private final ButtonControlledPopup subtypePopup;
 	private final JCheckBox subtypeCheckBoxes[];
 	private final JRadioButton subtypeFilterChoices[];
-	
 	private final ButtonControlledPopup rarityPopup;
 	private final JCheckBox rarityCheckBoxes[];
 	private final JRadioButton rarityFilterChoices[];
-	
-	private final JTextField textFilterField;
-	
+	private final JTextField nameTextField;
+	private final JButton resetButton;
 	private final int mode;
 	private final MagicPlayerProfile profile;
 	private final MagicCubeDefinition cube;
+	
+	private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 	
 	public ExplorerFilterPanel(final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile,final MagicCubeDefinition cube) {
 				
@@ -83,6 +80,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		this.mode=mode;
 		this.profile=profile;
 		this.cube=cube;
+		
+		disableUpdate = false;
 		
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
@@ -148,16 +147,28 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		populateCheckboxPopup(rarityPopup, MagicRarity.values(), rarityCheckBoxes, rarityFilterChoices, true);	
 
 		// Search Name
-		final TitledBorder textFilterBorder = BorderFactory.createTitledBorder("Search Name");
+		final TitledBorder textFilterBorder = BorderFactory.createTitledBorder("Search Text");
 		textFilterBorder.setTitleColor(TEXT_COLOR);
 		final JPanel textFilterPanel = new JPanel();
 		textFilterPanel.setOpaque(false);
 		textFilterPanel.setBorder(textFilterBorder);
-		textFilterField = new JTextField(SEARCH_FIELD_WIDTH);
-		textFilterField.addActionListener(this);
-		textFilterField.getDocument().addDocumentListener(this);
-		textFilterPanel.add(textFilterField);
+		nameTextField = new JTextField(SEARCH_FIELD_WIDTH);
+		nameTextField.addActionListener(this);
+		nameTextField.getDocument().addDocumentListener(this);
+		textFilterPanel.add(nameTextField);
 		add(textFilterPanel);
+
+		// Reset Button
+		final TitledBorder resetBorder = BorderFactory.createTitledBorder("Reset All");
+		resetBorder.setTitleColor(TEXT_COLOR);
+		final JPanel resetFilterPanel = new JPanel();
+		resetFilterPanel.setOpaque(false);
+		resetFilterPanel.setBorder(resetBorder);
+		resetButton = new JButton(RESET_BUTTON_TEXT);
+		resetButton.addActionListener(this);
+		resetButton.setPreferredSize(BUTTON_SIZE);
+		resetFilterPanel.add(resetButton);
+		add(resetFilterPanel);
 	}
 	
 	private ButtonControlledPopup addFilterPopupPanel(final String title) {
@@ -274,7 +285,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		}
 		
 		// name search
-		final String filterString = textFilterField.getText();
+		final String filterString = nameTextField.getText();
 		if (filterString.length() > 0) {
 			final String[] filters = filterString.split(" ");
 			for(int i=0; i<filters.length; i++) {
@@ -380,20 +391,66 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		}
 		return cardDefinitions;
 	}
+		
+	public void resetFilters() {
+		disableUpdate = true; // ignore any events caused by resetting filters
+		
+		closePopups();
+		
+		unselectFilterSet(typeCheckBoxes, typeFilterChoices);
+		unselectFilterSet(colorCheckBoxes, colorFilterChoices);
+		unselectFilterSet(costCheckBoxes, costFilterChoices);
+		unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
+		unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
+		
+		nameTextField.setText("");	
+		
+		disableUpdate = false;
+	}
+	
+	private void unselectFilterSet(JCheckBox boxes[], JRadioButton filterButtons[]) {
+		// uncheck all checkboxes
+		for (int i = 0; i < boxes.length; i++){
+			boxes[i].setSelected(false);
+		}
+		
+		// reset to first option
+		filterButtons[0].setSelected(true);
+	}
+	
+	public void closePopups() {
+		typePopup.hidePopup();
+		colorPopup.hidePopup();
+		costPopup.hidePopup();
+		subtypePopup.hidePopup();
+		rarityPopup.hidePopup();
+	}
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-		explorerPanel.updateCardPool();
+		final Object source=event.getSource();
+		
+		if(source == resetButton) {
+			resetFilters();
+		}
+		
+		if(!disableUpdate) {
+			explorerPanel.updateCardPool();
+		}
 	}
 
 	@Override
 	public void insertUpdate(final DocumentEvent arg0) {
-		explorerPanel.updateCardPool();
+		if(!disableUpdate) {
+			explorerPanel.updateCardPool();
+		}
 	}
 
 	@Override
 	public void removeUpdate(final DocumentEvent arg0) {
-		explorerPanel.updateCardPool();
+		if(!disableUpdate) {
+			explorerPanel.updateCardPool();
+		}
 	}
 	
 	@Override

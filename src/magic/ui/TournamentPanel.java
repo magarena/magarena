@@ -138,11 +138,10 @@ public class TournamentPanel extends JPanel implements ActionListener {
 				CubeDefinitions.getInstance().getCubeDefinition(tournament.getConfiguration().getCube());
 				
 			editButtons[i] = new JButton(EDIT_BUTTON_TEXT);
-			final DeckStatisticsViewer temp = statsViewers[i];
 			editButtons[i].addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(final ActionEvent event) {
-					frame.openDeckEditor(player, cubeDefinition, temp);
+					frame.openDeckEditor(player, cubeDefinition);
 				}
 			});
 			editButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -166,7 +165,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			rightPanel.add(editButtons[i]);
 			
 			// table of cards
-			cardTables[i] = new CardTable(player.getDeck(), cardViewer, "Deck");
+			cardTables[i] = new CardTable(player.getDeck(), cardViewer, "Deck", true);
 			
 			// contents of tab
 			JPanel tabPanel = new JPanel();
