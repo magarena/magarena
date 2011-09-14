@@ -5,6 +5,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 
@@ -16,13 +18,18 @@ public class Judge_of_Currents {
     		return (data.getController() == player &&
     				data.isCreature() &&
     				data.hasSubType(MagicSubType.Merfolk)) ?
-                new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        player + " gains 1 life.") :
-                MagicEvent.NONE;
+    						new MagicEvent(
+    		                        permanent,
+    		                        player,
+    		                        new MagicSimpleMayChoice(
+    		                                "You may gain 1 life.",
+    		                                MagicSimpleMayChoice.GAIN_LIFE,
+    		                                1,
+    		                                MagicSimpleMayChoice.DEFAULT_YES),
+    		                        new Object[]{player},
+    		                        this,
+    		                        player + " may$ gain 1 life.") :
+    		                MagicEvent.NONE;
     	}
     	@Override
     	public void executeEvent(
@@ -30,7 +37,9 @@ public class Judge_of_Currents {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+    		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+			}
     	}
     };
 }
