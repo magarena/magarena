@@ -254,7 +254,7 @@ public class MagicCardDefinition {
             final MagicStatic mstatic = (MagicStatic)obj;
             addStatic(mstatic);
             mstatic.setCardIndex(index);
-            System.err.println("Adding trigger to " + getFullName());
+            System.err.println("Adding static to " + getFullName());
             numStatics++;
         } else if (obj instanceof MagicPermanentActivation) {
             final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
