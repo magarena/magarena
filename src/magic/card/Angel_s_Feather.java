@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
@@ -21,10 +22,14 @@ public class Angel_s_Feather {
                 new MagicEvent(
                         permanent,
                         player,
-                        new MagicMayChoice("You may gain 1 life."),
+                        new MagicSimpleMayChoice(
+                                "You may gain 1 life.",
+                                MagicSimpleMayChoice.GAIN_LIFE,
+                                1,
+                                MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{player},
                         this,
-                        "You may$ gain 1 life.") :
+                        player + " may$ gain 1 life.") :
                 MagicEvent.NONE;
 		}
 		
