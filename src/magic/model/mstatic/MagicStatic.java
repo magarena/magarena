@@ -25,10 +25,6 @@ public abstract class MagicStatic extends MagicDummyLocalVariable {
         filter = aFilter;
         layer = aLayer;
 	}
-	
-	protected MagicStatic(final MagicTargetFilter aFilter) {
-		this(MagicLayer.Layer1, aFilter);
-	}
 
     public void setCardIndex(final int cardIndex) {
         this.cardIndex = cardIndex;
