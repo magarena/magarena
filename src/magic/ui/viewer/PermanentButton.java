@@ -20,7 +20,11 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
 	private final PermanentViewerInfo permanentInfo;
 	private final GameController controller;
 
-	public PermanentButton(final PermanentViewerInfo permanentInfo,final GameController controller,final Border border,final int maxWidth) {
+	public PermanentButton(
+            final PermanentViewerInfo permanentInfo,
+            final GameController controller,
+            final Border border,
+            final int maxWidth) {
 		
 		this.permanentInfo=permanentInfo;
 		this.controller=controller;
