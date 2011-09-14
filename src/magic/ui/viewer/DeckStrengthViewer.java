@@ -195,10 +195,9 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	private class CalculateThread extends Thread {
 
 		private final AtomicBoolean running=new AtomicBoolean(true);
-		private GameController controller=null;
+		private GameController controller;
 		
 		public void run() {
-
 			final GeneralConfig generalConfig=GeneralConfig.getInstance();
 			final TournamentConfig config=new TournamentConfig(TournamentConfig.getInstance());
 			config.setNrOfGames(generalConfig.getStrengthGames());
@@ -210,7 +209,6 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 			setStrength(0);
 
 			while (running.get()&&!testTournament.isFinished()) {
-			
 				gameLabel.setText("Game "+(testTournament.getGamesPlayed()+1));
 				final MagicGame game=testTournament.nextGame(false);
 				controller=new GameController(game);
@@ -229,7 +227,6 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		}
 		
 		public void halt() {
-			
 			running.set(false);
 			if (controller!=null) {
 				controller.haltGame();
