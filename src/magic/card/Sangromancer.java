@@ -5,12 +5,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 import magic.model.trigger.MagicWhenDiscardedTrigger;
 
 public class Sangromancer {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T1 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
@@ -19,9 +21,14 @@ public class Sangromancer {
 				new MagicEvent(
                     permanent,
                     player,
+                    new MagicSimpleMayChoice(
+                            "You may gain 3 life.",
+                            MagicSimpleMayChoice.GAIN_LIFE,
+                            3,
+                            MagicSimpleMayChoice.DEFAULT_YES),
                     new Object[]{player},
                     this,
-                    player + " gains 3 life."):
+                    player + " may$ gain 3 life.") :
                 MagicEvent.NONE;
 		}
 		@Override
@@ -30,7 +37,9 @@ public class Sangromancer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+			}
 		}
     };
     
@@ -43,9 +52,14 @@ public class Sangromancer {
     			new MagicEvent(
                     permanent,
                     player,
+                    new MagicSimpleMayChoice(
+                            "You may gain 3 life.",
+                            MagicSimpleMayChoice.GAIN_LIFE,
+                            3,
+                            MagicSimpleMayChoice.DEFAULT_YES),
                     new Object[]{player},
                     this,
-                    player + " gains 3 life."):
+                    player + " may$ gain 3 life.") :
                 MagicEvent.NONE;
     	}
 
@@ -55,7 +69,9 @@ public class Sangromancer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+    		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+			}
     	}
     };
 }

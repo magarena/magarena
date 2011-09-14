@@ -4,6 +4,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenBlocksTrigger;
 
@@ -13,13 +15,18 @@ public class Goldenglow_Moth {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
-				new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{player},
-                        this,
-                        player + " gains 4 life.") :
-                MagicEvent.NONE;
+            		new MagicEvent(
+                            permanent,
+                            player,
+                            new MagicSimpleMayChoice(
+                                    "You may gain 4 life.",
+                                    MagicSimpleMayChoice.GAIN_LIFE,
+                                    3,
+                                    MagicSimpleMayChoice.DEFAULT_YES),
+                            new Object[]{player},
+                            this,
+                            player + " may$ gain 4 life.") :
+                        MagicEvent.NONE;
 		}
 		
 		@Override
@@ -28,7 +35,9 @@ public class Goldenglow_Moth {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
+			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
+			}
 		}
     };
 }
