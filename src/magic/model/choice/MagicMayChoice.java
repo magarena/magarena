@@ -25,11 +25,29 @@ public class MagicMayChoice extends MagicChoice {
 	private final MagicChoice choices[];
 	private MagicTargetChoice targetChoice = MagicTargetChoice.TARGET_NONE;
 	private int manaChoiceResultIndex=-1;
+	public static final int DEFAULT_NONE = 0;
+	public static final int DEFAULT_NO = 1;
+	public static final int DEFAULT_YES = 2;
+	private int defaultChoice = DEFAULT_NONE;
 	
 	public MagicMayChoice(final String description,final MagicChoice... choices) {
 		super(description);
 		this.choices=choices;
 		for (int index=0;index<choices.length;index++) {
+			final MagicChoice choice=choices[index];
+			if (choice instanceof MagicTargetChoice) {
+				targetChoice=(MagicTargetChoice)choice;
+			} else if (choice instanceof MagicPayManaCostChoice) {
+				manaChoiceResultIndex=index+1;
+			}
+		}
+	}
+	
+	public MagicMayChoice(final String description,final int defaultChoice,final MagicChoice... choices) {
+		super(description);
+		this.defaultChoice = defaultChoice;
+		this.choices=choices;
+		for (int index=0;index<choices.length;index++) {		
 			final MagicChoice choice=choices[index];
 			if (choice instanceof MagicTargetChoice) {
 				targetChoice=(MagicTargetChoice)choice;
@@ -69,10 +87,15 @@ public class MagicMayChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
-		final int nrOfChoices=choices.length;
-		if (nrOfChoices==0) {
-			return NO_OTHER_CHOICE_RESULTS;
-		}		
+		final int nrOfChoices = choices.length;
+		if (nrOfChoices == 0) {
+			if (defaultChoice == DEFAULT_NONE) {
+				return NO_OTHER_CHOICE_RESULTS;
+			}
+			return (defaultChoice == DEFAULT_NO) ?
+					Collections.singletonList(new Object[]{NO_CHOICE}) :
+					Collections.singletonList(new Object[]{YES_CHOICE});
+		}	
 		final int nrOfChoiceResults=nrOfChoices+1;
 		final Object noChoiceResults[]=new Object[nrOfChoiceResults];
 		noChoiceResults[0]=NO_CHOICE;
@@ -123,7 +146,14 @@ public class MagicMayChoice extends MagicChoice {
 		final Object choiceResults[]=new Object[choices.length+1];
 		choiceResults[0]=NO_CHOICE;
 
-		final boolean hints=GeneralConfig.getInstance().getSmartTarget();
+		final boolean hints = GeneralConfig.getInstance().getSmartTarget();
+		if (hints && defaultChoice != DEFAULT_NONE) {
+			if (defaultChoice == DEFAULT_YES) {
+				choiceResults[0]=YES_CHOICE;
+			}
+			return choiceResults;
+		}
+
 		for (final MagicChoice choice : choices) {
 			if (!choice.hasOptions(game,player,source,hints)) {
 				return choiceResults;
