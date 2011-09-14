@@ -780,6 +780,17 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_CREATURE_POWER_4_OR_MORE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return permanent.isCreature() && permanent.getCardDefinition().getPower() >= 4;
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_ATTACKING_CREATURE=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {

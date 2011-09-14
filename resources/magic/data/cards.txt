@@ -1369,6 +1369,19 @@ power=1
 toughness=1
 timing=main
 
+>Scute Mob
+image=http://magiccards.info/scans/en/zen/182.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Insect
+color=g
+converted=1
+cost={G}
+power=1
+toughness=1
+timing=main
+
 >Safehold Elite
 image=http://magiccards.info/scans/en/shm/239.jpg
 value=2
@@ -3466,6 +3479,17 @@ type=Instant
 color=bg
 converted=3
 cost={1}{B}{G}
+timing=removal
+
+>Reprisal
+image=http://magiccards.info/scans/en/ddg/27.jpg
+value=3
+removal=3
+rarity=U
+type=Instant
+color=w
+converted=2
+cost={1}{W}
 timing=removal
 
 >Raise Dead
