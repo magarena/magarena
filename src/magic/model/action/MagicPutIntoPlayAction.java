@@ -4,10 +4,12 @@ import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicPermanentTrigger;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicPermanentStatic;
 
 import java.util.LinkedList;
 
@@ -33,10 +35,16 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		for (final MagicTrigger trigger : cardDefinition.getTriggers()) {
 			game.addTrigger(permanent,trigger);
 		}
-		
+		for (final MagicStatic mstatic : cardDefinition.getStatics()) {
+			game.addStatic(permanent,mstatic);
+		}
+	
+        //execute come into play triggers
 		for (final MagicTrigger trigger : cardDefinition.getComeIntoPlayTriggers()) {
 			game.executeTrigger(trigger,permanent,permanent,permanent.getController());
 		}
+
+        //execute other come into player triggers
 		game.executeTrigger(MagicTriggerType.WhenOtherComesIntoPlay,permanent);
 		
 		setScore(controller,permanent.getScore(game)+permanent.getStaticScore(game)+score);
@@ -53,6 +61,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		}
 		permanent.getController().removePermanent(permanent);
 		game.removeTriggers(permanent,new LinkedList<MagicPermanentTrigger>());
+		game.removeStatics(permanent,new LinkedList<MagicPermanentStatic>());
 	}
 	
 	void setEnchantedPermanent(final MagicPermanent enchantedPermanent) {

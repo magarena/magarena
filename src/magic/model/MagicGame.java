@@ -33,6 +33,9 @@ import magic.model.trigger.MagicPermanentTriggerList;
 import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicPermanentStatic;
+import magic.model.mstatic.MagicPermanentStaticList;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -55,6 +58,7 @@ public class MagicGame {
 	private final MagicPlayer players[];
 	private final MagicPermanentTriggerMap triggers;
 	private final MagicPermanentTriggerList turnTriggers;
+	private final MagicPermanentStaticList statics;
 	private final MagicCardList exiledUntilEndOfTurn;
 	private final MagicEventQueue events;
 	private final MagicStack stack;
@@ -123,6 +127,7 @@ public class MagicGame {
 		
         triggers=new MagicPermanentTriggerMap();
 		turnTriggers=new MagicPermanentTriggerList();
+        statics = new MagicPermanentStaticList();
 		exiledUntilEndOfTurn=new MagicCardList();
 		events=new MagicEventQueue();
 		stack=new MagicStack();
@@ -169,6 +174,7 @@ public class MagicGame {
         this.events=new MagicEventQueue(copyMap, game.events);
 		this.stack=new MagicStack(copyMap, game.stack);
 		this.triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
+		this.statics=new MagicPermanentStaticList(copyMap, game.statics);
 		this.payedCost=new MagicPayedCost(copyMap, game.payedCost);
 		this.exiledUntilEndOfTurn=new MagicCardList(copyMap, game.exiledUntilEndOfTurn);
        
@@ -1041,6 +1047,33 @@ public class MagicGame {
 		}
 		return false;
 	}
+	
+    // ***** STATICS *****
+	
+    public MagicPermanentStatic addStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
+		final MagicPermanentStatic permanentStatic=new MagicPermanentStatic(getUniqueId(),permanent,mstatic);
+		statics.add(permanentStatic);
+		return permanentStatic;
+	}
+	
+    public void addStatic(final MagicPermanentStatic permanentStatic) {
+		statics.add(permanentStatic);
+	}
+    
+    public MagicPermanentStaticList getStatics() {
+        return statics;
+	}
+	
+    public void removeStatics(final MagicPermanent permanent,final Collection<MagicPermanentStatic> removedStatics) {
+        for (final Iterator<MagicPermanentStatic> iterator=statics.iterator();iterator.hasNext();) {
+            final MagicPermanentStatic permanentStatic = iterator.next();
+            if (permanentStatic.getPermanent()==permanent) {
+                iterator.remove();
+                removedStatics.add(permanentStatic);
+            }
+        }
+	}
+
 	
 	// ***** TRIGGERS *****
 	

@@ -10,6 +10,9 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicPermanentStatic;
+import magic.model.mstatic.MagicPermanentStaticList;
 
 import java.util.EnumSet;
 
@@ -77,18 +80,22 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		final MagicPlayer controller=permanent.getController();
 		final MagicPlayer opponent=game.getOpponent(controller);
 
+        for (final MagicPermanentStatic mpstatic : game.getStatics()) {
+            final MagicStatic mstatic = mpstatic.getStatic();
+            if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
+                mstatic.getPowerToughness(game, permanent, pt);
+            }
+        }
+
 		// Power and toughness change.
-		if (getOtherCount(godheadOfAwe,permanent,game.getCount(godheadOfAwe))>0) {
-			pt.power=1;
-			pt.toughness=1;
-		} else if (permanent.getCounters(MagicCounterType.Feather)>0) {
+        if (permanent.getCounters(MagicCounterType.Feather)>0) {
 			pt.power=3;
 			pt.toughness=1;
 		}
 
 		// Power or toughness increase.
-		pt.toughness += controller.getCount(angelicShield);
-		pt.toughness += getOtherCount(veteranArmorer,permanent,controller);
+		//pt.toughness += controller.getCount(angelicShield);
+		//pt.toughness += getOtherCount(veteranArmorer,permanent,controller);
 		int count = controller.getCount(gloryOfWarfare);
 		if (count > 0) {
 			if (game.hasTurn(controller)) {
@@ -103,7 +110,7 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 		int both = permanent.getCounters(MagicCounterType.PlusOne)-permanent.getCounters(MagicCounterType.MinusOne);
 
 		both += controller.getCount(eldraziMonument);
-		both += controller.getCount(gloriousAnthem);
+		//both += controller.getCount(gloriousAnthem);
 
 		count = controller.getCount(captainOfTheWatch);
 		if (count > 0 && permanent.hasSubType(MagicSubType.Soldier)) {
@@ -177,9 +184,15 @@ public class MagicStaticLocalVariable extends MagicDummyLocalVariable {
 	
 	@Override
 	public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,long flags) {
-		
 		if (permanent.isCreature()) {
 			final MagicPlayer controller=permanent.getController();
+        
+            for (final MagicPermanentStatic mpstatic : game.getStatics()) {
+                final MagicStatic mstatic = mpstatic.getStatic();
+                if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
+                    flags = mstatic.getAbilityFlags(game, permanent, flags);
+                }
+            }
 
 			if (controller.getCount(akromasMemorial)>0) {
 				flags|=MagicAbility.Flying.getMask() |
