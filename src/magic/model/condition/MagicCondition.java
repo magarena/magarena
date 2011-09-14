@@ -134,6 +134,13 @@ public interface MagicCondition {
 		}
 	};
 	
+	MagicCondition FOUR_CHARGE_COUNTERS_CONDITION=new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPermanent permanent=(MagicPermanent)source;
+			return permanent.getCounters(MagicCounterType.Charge)>=4;
+		}
+	};
+	
 	MagicCondition CAN_REGENERATE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;

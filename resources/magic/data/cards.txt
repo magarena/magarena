@@ -5690,6 +5690,28 @@ converted=3
 cost={1}{B}{B}
 timing=enchantment
 
+>Akoum Boulderfoot
+image=http://magiccards.info/scans/en/roe/134.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+color=r
+converted=6
+cost={4}{R}{R}
+power=4
+toughness=5
+timing=main
+
+>Angelheart Vial
+image=http://magiccards.info/scans/en/roe/215.jpg
+value=4
+rarity=R
+type=Artifact
+converted=5
+cost={5}
+timing=main
+
 >Quest for the Gemblades
 image=http://magiccards.info/scans/en/zen/177.jpg
 value=3
