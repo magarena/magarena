@@ -24,7 +24,8 @@ public class Mask_of_Memory {
                         new MagicSimpleMayChoice(
                             "You may draw two cards.",
                             MagicSimpleMayChoice.DRAW_CARDS,
-                            2),
+                            2,
+                            MagicSimpleMayChoice.DEFAULT_NONE),
                         new Object[]{permanent,player},
                         this,
                         "You may$ draw two cards. If you do, discard a card."):
