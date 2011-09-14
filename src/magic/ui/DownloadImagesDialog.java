@@ -38,8 +38,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private final JLabel downloadProgressLabel;
 	private final JButton okButton;
 	private final JButton cancelButton;
-	private Thread downloader;
+	private final Thread downloader;
 	private Proxy proxy;
+    private boolean cancelDownload = false;
 
 	public DownloadImagesDialog(final MagicFrame frame) {
 		super(frame,true);
@@ -49,6 +50,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		this.downloader = new Thread(this);
 
 		final JPanel downloadPanel=new JPanel();
 		downloadPanel.setLayout(null);
@@ -159,7 +161,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
             file.download(proxy);
             count++;
 
-            if (downloader == null) {
+            if (cancelDownload) {
                 break;
             }
            
@@ -173,7 +175,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
                 
         IconImages.reloadSymbols();
       
-        if (downloader != null) {
+        if (!cancelDownload) {
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
                     dispose();
@@ -203,10 +205,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 			addressTextField.setEnabled(false);
 			portTextField.setEnabled(false);
 			okButton.setEnabled(false);
-			downloader = new Thread(this);
 			downloader.start();	
 		} else if (source==cancelButton) {
-            downloader = null;
+            cancelDownload = true;
 			dispose();
 		} else if (source==proxyComboBox) {
 			updateProxy();
