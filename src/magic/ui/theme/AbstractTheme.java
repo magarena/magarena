@@ -20,7 +20,7 @@ public abstract class AbstractTheme implements Theme {
 		this.name=name;
 		themeMap=new HashMap<String,Object>();
 		
-		addToTheme(TEXTURE_LOGO,new BufferedImage(0,0,BufferedImage.TYPE_INT_RGB));
+		addToTheme(TEXTURE_LOGO,new BufferedImage(1,1,BufferedImage.TYPE_INT_ARGB));
 		
 		addToTheme(ICON_LIFE,IconImages.LIFE);
 		addToTheme(ICON_PREVENT,IconImages.PREVENT2);
