@@ -244,6 +244,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		final Object source=event.getSource();
 		
 		if (source == closeButton) {
+			filterPanel.closePopups();
 			if (isEditingDeck()) {
 				frame.closeDeckEditor();
 			} else {

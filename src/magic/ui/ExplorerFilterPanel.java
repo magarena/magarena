@@ -395,6 +395,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	public void resetFilters() {
 		disableUpdate = true; // ignore any events caused by resetting filters
 		
+		closePopups();
+		
 		unselectFilterSet(typeCheckBoxes, typeFilterChoices);
 		unselectFilterSet(colorCheckBoxes, colorFilterChoices);
 		unselectFilterSet(costCheckBoxes, costFilterChoices);
@@ -414,6 +416,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		// reset to first option
 		filterButtons[0].setSelected(true);
+	}
+	
+	public void closePopups() {
+		typePopup.hidePopup();
+		colorPopup.hidePopup();
+		costPopup.hidePopup();
+		subtypePopup.hidePopup();
+		rarityPopup.hidePopup();
 	}
 	
 	@Override
