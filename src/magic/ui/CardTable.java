@@ -34,6 +34,7 @@ public class CardTable extends JPanel {
 	private final CardTableModel tableModel;
 	private final JTable table;
 	
+	private  TitleBar titleBar;
 	private MagicCardDefinition lastSelectedCard;
 	
 	public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer) {
@@ -78,12 +79,10 @@ public class CardTable extends JPanel {
 		
 		// add title
 		setLayout(new BorderLayout());
+		add(scrollpane, BorderLayout.CENTER);
+		titleBar = null;
 		if (title.length() > 0) {
-			TitleBar titleBar = new TitleBar(title);
-			add(titleBar, BorderLayout.PAGE_START);
-			add(scrollpane, BorderLayout.CENTER);
-		} else {
-			add(scrollpane);
+			setTitle(title);
 		}			
 	}
 	
@@ -109,6 +108,15 @@ public class CardTable extends JPanel {
 		table.tableChanged(new TableModelEvent(tableModel));
 		table.repaint();
 		reselectLastCard();
+	}
+	
+	public void setTitle(String title) {
+		if (titleBar != null) {
+			titleBar.setText(title);
+		} else {
+			titleBar = new TitleBar(title);
+			add(titleBar, BorderLayout.PAGE_START);
+		}
 	}
 	
 	private class ColumnListener extends MouseAdapter {

@@ -3,6 +3,7 @@ package magic.ui;
 import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
+import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.ui.viewer.CardViewer;
@@ -35,7 +36,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private static final String CLOSE_BUTTON_TEXT = "Close";
 	private static final String SWAP_BUTTON_TEXT = "Swap Selected Cards";
 	private static final String CARD_POOL_TITLE = "Card Pool";
-	private static final String DECK_TITLE = "Deck";
  	private static final int SPACING=10;
 	
  	private final MagicFrame frame;
@@ -51,7 +51,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private final JButton swapButton;
 	
 	private List<MagicCardDefinition> cardPoolDefs;
-	private List<MagicCardDefinition> deckDefs;
+	private MagicDeck deckDefs;
 	
 	public ExplorerPanel(final MagicFrame frame, final int mode, final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
 		this.frame=frame;
@@ -135,7 +135,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		if (isEditingDeck()) {
 			deckDefs = getPlayer().getDeck();
-			deckTable = new CardTable(deckDefs, cardViewer, DECK_TITLE, true);
+			deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs.getName()), true);
 			
 			JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 			cardsSplitPane.setOneTouchExpandable(true);
@@ -226,6 +226,10 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	
 	private MagicPlayerDefinition getPlayer() {
 		return player;
+	}
+	
+	String generateDeckTitle(String deckName) {
+		return "Deck (" + deckName + ")";
 	}
 	
 	public void updateCardPool() {
