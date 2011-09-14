@@ -32,7 +32,9 @@ public class Snake_Umbra {
                     player,
                     new MagicSimpleMayChoice(
                         "You may draw a card.",
-                        MagicSimpleMayChoice.DRAW_CARDS,1),
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_NONE),
                     new Object[]{player},
                     this,
                     "You may$ draw a card."):

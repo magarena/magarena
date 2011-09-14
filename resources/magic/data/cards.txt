@@ -4739,6 +4739,18 @@ toughness=2
 static=player
 timing=fmain
 
+>Guard Duty
+image=http://magiccards.info/scans/en/roe/23.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+ability=defender
+timing=aura
+
 >Kalonian Behemoth
 image=http://magiccards.info/scans/en/m10/188.jpg
 value=5
