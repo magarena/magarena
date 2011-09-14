@@ -74,11 +74,13 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem aboutItem;
 	private MagicTournament tournament;
 	private TournamentPanel tournamentPanel;
+	private ExplorerPanel explorerPanel;
 	private GamePanel gamePanel;
     private final LinkedList<JComponent> contents;	
 	
 	public MagicFrame() {
-
+		this.explorerPanel = null;
+	
 		config=GeneralConfig.getInstance();
 		config.load();
 		
@@ -379,6 +381,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 				final String filename=fileChooser.getSelectedFile().getAbsolutePath();
 				DeckUtils.loadDeck(filename,player);
 				tournamentPanel.updateDecksAfterEdit();
+				if(explorerPanel != null) {
+					explorerPanel.updateDeck();
+				}
 			}			
 		}
 	}
@@ -403,6 +408,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 					}
 					player.getDeck().setName(shortFilename);
 					tournamentPanel.updateDecksAfterEdit();
+					if(explorerPanel != null) {
+						explorerPanel.updateDeck();
+					}
 				}
 			}
 		}
@@ -454,14 +462,14 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 	private void openCardExplorer() {
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
-		final ExplorerPanel explorerPanel = new ExplorerPanel(this, ExplorerPanel.ALL, null, null);
+		explorerPanel = new ExplorerPanel(this, ExplorerPanel.ALL, null, null);
 		addContent(explorerPanel);
 	}
 	
 	public void openDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
 		// final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
-		final ExplorerPanel explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,player, cube);
+		explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,player, cube);
 		addContent(explorerPanel);
 	}
 	
