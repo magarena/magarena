@@ -37,7 +37,7 @@ public class Snake_Umbra {
                         MagicSimpleMayChoice.DEFAULT_NONE),
                     new Object[]{player},
                     this,
-                    "You may$ draw a card."):
+                    player + " may$ draw a card.") :
                 MagicEvent.NONE;
 		}
 		@Override
