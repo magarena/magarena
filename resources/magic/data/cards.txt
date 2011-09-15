@@ -3879,7 +3879,7 @@ cost={1}{G}{W}
 equip={3}
 power=2
 toughness=2
-ability=lifelink,trample
+given_ability=lifelink,trample
 timing=equipment
 
 >Bonesplitter
@@ -3904,7 +3904,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-ability=double strike
+given_ability=double strike
 timing=equipment
 
 >Loxodon Warhammer
@@ -3918,7 +3918,7 @@ cost={3}
 equip={3}
 power=3
 toughness=0
-ability=lifelink,trample
+given_ability=lifelink,trample
 timing=equipment
 
 >Mage Slayer
@@ -3943,7 +3943,7 @@ color=ub
 converted=2
 cost={U}{B}
 equip={2}
-ability=fear
+given_ability=fear
 timing=equipment
 
 >Shield of the Righteous
@@ -3958,7 +3958,7 @@ cost={W}{U}
 equip={2}
 power=0
 toughness=2
-ability=vigilance
+given_ability=vigilance
 timing=equipment
 
 >Sword of Fire and Ice
@@ -3972,7 +3972,7 @@ cost={3}
 equip={2}
 power=2
 toughness=2
-ability=protection from red,protection from blue
+given_ability=protection from red,protection from blue
 timing=equipment
 
 >Vulshok Morningstar
@@ -3997,7 +3997,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-ability=unblockable,shroud
+given_ability=unblockable,shroud
 timing=equipment
 
 >Blood Crypt
@@ -4732,7 +4732,8 @@ converted=1
 cost={G}
 power=1
 toughness=1
-ability=reach,totem armor
+given_ability=reach
+ability=totem armor
 timing=aura
 
 >Rage Nimbus
@@ -4772,7 +4773,7 @@ subtype=Aura
 color=w
 converted=1
 cost={W}
-ability=defender
+given_ability=defender
 timing=aura
 
 >Kalonian Behemoth
@@ -4874,7 +4875,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={3}
-ability=deathtouch
+given_ability=deathtouch
 timing=equipment
 
 >Specter's Shroud
@@ -5329,7 +5330,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={2}
-ability=deathtouch,lifelink
+given_ability=deathtouch,lifelink
 timing=equipment
 
 >Essence Scatter
@@ -6113,7 +6114,7 @@ cost={0}
 equip={2}
 power=0
 toughness=2
-ability=reach
+given_ability=reach
 timing=equipment
 
 >Angelic Shield
@@ -6234,7 +6235,7 @@ cost={3}
 equip={2}
 power=2
 toughness=2
-ability=protection from white,protection from black
+given_ability=protection from white,protection from black
 timing=equipment
 
 >Fervent Charge
@@ -6302,7 +6303,7 @@ subtype=Aura
 color=w
 converted=1
 cost={W}
-ability=lifelink
+given_ability=lifelink
 timing=aura
 
 >Quest for Renewal
@@ -6361,7 +6362,7 @@ subtype=Aura
 color=u
 converted=1
 cost={U}
-ability=flying
+given_ability=flying
 timing=aura
 
 >Griffin Guide
@@ -6375,7 +6376,7 @@ converted=3
 cost={2}{W}
 power=2
 toughness=2
-ability=flying
+given_ability=flying
 timing=aura
 
 >Rancor
@@ -6389,7 +6390,7 @@ converted=1
 cost={G}
 power=2
 toughness=0
-ability=trample
+given_ability=trample
 timing=aura
 
 >Pacifism
@@ -6402,7 +6403,7 @@ subtype=Aura
 color=w
 converted=2
 cost={1}{W}
-ability=can't attack or block
+given_ability=can't attack or block
 timing=tapping
 
 >Serra's Embrace
@@ -6416,7 +6417,7 @@ converted=4
 cost={2}{W}{W}
 power=2
 toughness=2
-ability=flying,vigilance
+given_ability=flying,vigilance
 timing=aura
 
 >Clinging Darkness
@@ -6444,7 +6445,7 @@ converted=1
 cost={R}
 power=2
 toughness=0
-ability=can't be blocked by creatures with flying
+given_ability=can't be blocked by creatures with flying
 timing=aura
 
 >Holy Strength
@@ -6485,7 +6486,7 @@ converted=2
 cost={1}{R}
 power=2
 toughness=2
-ability=haste
+given_ability=haste
 timing=aura
 
 >Epic Proportions
@@ -6499,7 +6500,7 @@ converted=6
 cost={4}{G}{G}
 power=5
 toughness=5
-ability=flash,trample
+given_ability=flash,trample
 timing=pump
 
 >Galvanic Arc
@@ -6512,7 +6513,7 @@ subtype=Aura
 color=r
 converted=3
 cost={2}{R}
-ability=first strike
+given_ability=first strike
 timing=removal
 
 >Fists of Ironwood
@@ -6524,7 +6525,7 @@ subtype=Aura
 color=g
 converted=2
 cost={1}{G}
-ability=trample
+given_ability=trample
 timing=aura
 
 >Flight of Fancy
@@ -6536,7 +6537,7 @@ subtype=Aura
 color=u
 converted=4
 cost={3}{U}
-ability=flying
+given_ability=flying
 timing=aura
 
 >Lightning Talons
@@ -6550,7 +6551,7 @@ converted=3
 cost={2}{R}
 power=3
 toughness=0
-ability=first strike
+given_ability=first strike
 timing=aura
 
 >Narcolepsy
@@ -6575,7 +6576,7 @@ subtype=Aura
 color=wb
 converted=3
 cost={1}{W}{B}
-ability=can't attack or block
+given_ability=can't attack or block
 timing=tapping
 
 >Protective Bubble
@@ -6587,7 +6588,7 @@ subtype=Aura
 color=u
 converted=4
 cost={3}{U}
-ability=unblockable,shroud
+given_ability=unblockable,shroud
 timing=aura
 
 >Spirit Mantle
@@ -6601,7 +6602,7 @@ converted=2
 cost={1}{W}
 power=1
 toughness=1
-ability=protection from creatures
+given_ability=protection from creatures
 timing=aura
 
 >Torpor Dust
@@ -6615,7 +6616,7 @@ converted=3
 cost={2}{U/B}
 power=-3
 toughness=0
-ability=flash
+given_ability=flash
 timing=removal
 
 >Weakness
@@ -7075,7 +7076,7 @@ cost={2}
 equip={2}
 power=1
 toughness=0
-ability=flying
+given_ability=flying
 timing=equipment
 
 >Chandra's Spitfire
@@ -7176,7 +7177,7 @@ converted=3
 cost={1}{G}{W}
 power=2
 toughness=2
-ability=trample
+given_ability=trample
 timing=aura
 
 >Fallen Angel
@@ -7338,7 +7339,7 @@ cost={3}
 equip={1}
 power=1
 toughness=1
-ability=haste
+given_ability=haste
 timing=equipment
 
 >Accorder's Shield
@@ -7352,7 +7353,7 @@ cost={0}
 equip={3}
 power=0
 toughness=3
-ability=vigilance
+given_ability=vigilance
 timing=equipment
 
 >Akroma's Memorial
@@ -7552,7 +7553,8 @@ converted=2
 cost={1}{U}
 power=1
 toughness=1
-ability=flash,totem armor
+given_ability=flash
+ability=totem armor
 timing=pump
 
 >Hyena Umbra
@@ -7566,7 +7568,8 @@ converted=1
 cost={W}
 power=1
 toughness=1
-ability=totem armor,first strike
+ability=totem armor
+given_ability=first strike
 timing=aura
 
 >Boar Umbra
@@ -7594,7 +7597,8 @@ converted=5
 cost={4}{U}
 power=3
 toughness=3
-ability=totem armor,flying
+ability=totem armor
+given_ability=flying
 timing=aura
 
 >Volcanic Strength
@@ -7608,7 +7612,7 @@ converted=2
 cost={1}{R}
 power=2
 toughness=2
-ability=mountainwalk
+given_ability=mountainwalk
 timing=aura
 
 >Sword of Vengeance
@@ -7622,7 +7626,7 @@ cost={3}
 equip={3}
 power=2
 toughness=0
-ability=first strike,vigilance,trample,haste
+given_ability=first strike,vigilance,trample,haste
 timing=equipment
 
 >Blackcleave Cliffs
@@ -7718,7 +7722,7 @@ cost={3}
 equip={2}
 power=2
 toughness=2
-ability=protection from green,protection from blue
+given_ability=protection from green,protection from blue
 timing=equipment
 
 >Bladed Pinions
@@ -7730,7 +7734,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={2}
-ability=flying,first strike
+given_ability=flying,first strike
 timing=equipment
 
 >Gorgon Flail
@@ -7744,7 +7748,7 @@ cost={2}
 equip={2}
 power=1
 toughness=1
-ability=deathtouch
+given_ability=deathtouch
 timing=equipment
 
 >Turn to Mist
@@ -8410,7 +8414,7 @@ converted=4
 cost={2}{W}{W}
 power=4
 toughness=4
-ability=flying,first strike
+given_ability=flying,first strike
 timing=aura	
 
 >Lone Missionary
@@ -8668,7 +8672,7 @@ cost={2}
 equip={1}
 power=1
 toughness=0
-ability=first strike
+given_ability=first strike
 timing=equipment
 
 >Righteous Cause
@@ -8692,7 +8696,7 @@ cost={5}
 equip={4}
 power=2
 toughness=4
-ability=reach
+given_ability=reach
 timing=equipment
 
 >Turn the Tide
@@ -8915,7 +8919,7 @@ cost={3}
 equip={2}
 power=2
 toughness=2
-ability=protection from black,protection from green
+given_ability=protection from black,protection from green
 timing=equipment
 
 >Suture Priest
@@ -8981,7 +8985,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={0}
-ability=shroud,haste
+given_ability=shroud,haste
 timing=equipment
 
 >Swiftfoot Boots
@@ -8993,7 +8997,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={1}
-ability=hexproof,haste
+given_ability=hexproof,haste
 timing=equipment
 
 >Garruk's Companion
@@ -9673,7 +9677,7 @@ cost={5}
 equip={5}
 power=4
 toughness=4
-ability=vigilance,lifelink
+given_ability=vigilance,lifelink
 timing=equipment
 
 >Breath of Darigaaz
@@ -9724,7 +9728,7 @@ cost={3}
 equip={2}
 power=2
 toughness=2
-ability=protection from red,protection from white
+given_ability=protection from red,protection from white
 timing=equipment
 
 >Psychic Barrier
@@ -9759,7 +9763,7 @@ subtype=Aura
 color=w
 converted=3
 cost={2}{W}
-ability=protection from creatures
+given_ability=protection from creatures
 timing=aura
 
 >Urabrask the Hidden
@@ -10004,3 +10008,15 @@ cost={4}{U}{U}
 power=6
 toughness=6
 timing=fmain
+
+>Darksteel Axe
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+power=2
+ability=indestructible
+timing=equipment

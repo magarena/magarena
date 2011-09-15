@@ -82,6 +82,11 @@ public class CardDefinitions {
 			for (final String name : names) {
 				card.setAbility(MagicAbility.getAbility(name));
 			}
+		} else if ("given_ability".equals(property)) {
+			final String names[]=value.split(",");
+			for (final String name : names) {
+				card.setGivenAbility(MagicAbility.getAbility(name));
+			}
 		} else if ("static".equals(property)) {
 			card.setStaticType(MagicStaticType.getStaticTypeFor(value));
 		} else if ("timing".equals(property)) {

@@ -87,6 +87,7 @@ public class MagicCardDefinition {
 	private int toughness=0;
 	private int turnLocalVariableIndex=0;
 	private long abilityFlags=0;
+	private long givenAbilityFlags=0;
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
@@ -555,6 +556,23 @@ public class MagicCardDefinition {
 
 	public long getAbilityFlags() {
 		return abilityFlags;
+	}
+	
+	public boolean hasGivenAbility(final MagicAbility ability) {
+		return ability.hasAbility(givenAbilityFlags);
+	}
+	
+	public void setGivenAbility(final MagicAbility ability) {
+		givenAbilityFlags|=ability.getMask();
+		if (ability==MagicAbility.Exalted) {
+			addTrigger(MagicExaltedTrigger.getInstance());
+		} else if (ability==MagicAbility.BattleCry) {
+			addTrigger(MagicBattleCryTrigger.getInstance());
+		}
+	}
+
+	public long getGivenAbilityFlags() {
+		return givenAbilityFlags;
 	}
 	
 	public boolean hasAbility(final MagicAbility ability) {

@@ -20,6 +20,11 @@ public class MagicDummyLocalVariable implements MagicLocalVariable {
 	}
 
 	@Override
+	public long getGivenAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+		return flags;
+	}
+
+	@Override
 	public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
 		return flags;
 	}

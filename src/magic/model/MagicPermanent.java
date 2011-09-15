@@ -420,14 +420,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (cached&&turn) {
 			return cachedTurnAbilityFlags;
 		}		
-		// Only creatures can have abilities.
+		/* // Only creatures can have abilities.
 		if (!isCreature()) {
 			return 0;
-		}
+		} */
 		long flags=cardDefinition.getAbilityFlags();
 		for (final MagicLocalVariable localVariable : localVariables) {
 			
-			flags=localVariable.getAbilityFlags(game,this,flags);
+			flags=localVariable.getGivenAbilityFlags(game,this,flags);
 		}
 		if (turn) {
 			flags|=turnAbilityFlags;
@@ -446,9 +446,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			return ability.hasAbility(cachedTurnAbilityFlags);
 		}
 		// Only creatures can have abilities.
-		if (!isCreature()) {
+		/* if (!isCreature()) {
 			return false;
-		}
+		} */
 		if (ability.hasAbility(turnAbilityFlags)) {
 			return true;
 		}
