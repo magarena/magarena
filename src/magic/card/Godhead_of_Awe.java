@@ -18,8 +18,8 @@ public class Godhead_of_Awe {
             pt.toughness = 1;
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target && filter.accept(game, source.getController(), target);
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
         }
     };
 }

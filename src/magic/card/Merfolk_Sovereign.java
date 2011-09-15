@@ -4,6 +4,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
@@ -15,8 +16,23 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicUnblockableTargetPicker;
+import magic.model.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 
 public class Merfolk_Sovereign {
+    public static final MagicStatic S = new MagicStatic(
+        MagicLayer.ModPT, 
+	    MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
+        @Override
+        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Attack),

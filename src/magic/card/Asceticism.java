@@ -15,8 +15,21 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicRegenerateTargetPicker;
+import magic.model.MagicAbility;
+import magic.model.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 
 public class Asceticism {
+
+    public static final MagicStatic S1 = new MagicStatic(
+        MagicLayer.Ability, 
+        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return flags | MagicAbility.CannotBeTheTarget.getMask();
+        }
+    };
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.ONE_GREEN.getCondition()},

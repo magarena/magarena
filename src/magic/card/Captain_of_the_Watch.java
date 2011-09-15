@@ -4,12 +4,43 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicSubType;
+import magic.model.MagicPowerToughness;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
+import magic.model.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
+import magic.model.MagicAbility;
 
 public class Captain_of_the_Watch {
+    public static final MagicStatic S1 = new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_SOLDIER_YOU_CONTROL) {
+        @Override
+        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
+    
+    public static final MagicStatic S2 = new MagicStatic(
+        MagicLayer.Ability, 
+        MagicTargetFilter.TARGET_SOLDIER_YOU_CONTROL) {
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return flags | MagicAbility.Vigilance.getMask();
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
+
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {

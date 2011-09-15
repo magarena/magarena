@@ -15,9 +15,36 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
-
+import magic.model.MagicPowerToughness;
+import magic.model.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 
 public class Deathbringer_Liege {
+    public static final MagicStatic S1 = new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_BLACK_CREATURE_YOU_CONTROL) {
+        @Override
+        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
+    public static final MagicStatic S2 = new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_WHITE_CREATURE_YOU_CONTROL) {
+        @Override
+        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
     public static final MagicWhenSpellIsPlayedTrigger T = new MagicWhenSpellIsPlayedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {

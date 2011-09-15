@@ -7,17 +7,13 @@ import magic.model.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
-public class Veteran_Armorer {
+public class Cumber_Stone {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.ModPT, 
-        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.toughness += 1;
-        }
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target;
+		    pt.power -= 1;
         }
     };
 }

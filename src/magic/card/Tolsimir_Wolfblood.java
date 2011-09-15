@@ -13,8 +13,36 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 
 public class Tolsimir_Wolfblood {
+    public static final MagicStatic S1 = new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_GREEN_CREATURE_YOU_CONTROL) {
+        @Override
+        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
+    public static final MagicStatic S2 = new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_WHITE_CREATURE_YOU_CONTROL) {
+        @Override
+        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Token),

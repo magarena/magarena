@@ -21,8 +21,24 @@ import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTargetFilter;
 
 public class Cemetery_Reaper {
+    public static final MagicStatic S = new MagicStatic(
+        MagicLayer.ModPT, 
+        MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL) {
+        @Override
+        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO_BLACK.getCondition()},
             new MagicActivationHints(MagicTiming.Token),

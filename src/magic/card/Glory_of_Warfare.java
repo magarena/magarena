@@ -7,17 +7,17 @@ import magic.model.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
-public class Veteran_Armorer {
+public class Glory_of_Warfare {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.toughness += 1;
-        }
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target;
+			if (game.hasTurn(permanent.getController())) {
+				pt.power += 2;
+			} else {
+				pt.toughness += 2;
+			}
         }
     };
 }
