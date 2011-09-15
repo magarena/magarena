@@ -1,6 +1,5 @@
 package magic.card;
 
-import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -48,10 +47,7 @@ public class Deathrender {
 						game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
 						final MagicPlayCardAction action = new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE);
 						game.doAction(action);
-						MagicPermanent creature = action.getPermanent();
-						if (!creature.hasAbility(game, MagicAbility.Shroud)) {
-							game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[1],creature));
-						}
+						game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[1],action.getPermanent()));
 					}
 				});
 			}
