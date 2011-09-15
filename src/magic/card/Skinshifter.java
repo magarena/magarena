@@ -14,6 +14,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 import magic.model.variable.MagicDummyLocalVariable;
 
@@ -28,7 +29,7 @@ public class Skinshifter {
 			pt.toughness = 4;
 		}
 		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+		public long getGivenAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			return flags|MagicAbility.Trample.getMask();
 		}
 		@Override
@@ -38,7 +39,9 @@ public class Skinshifter {
 	};
 
 	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
+            new MagicCondition[]{
+            		MagicCondition.ABILITY_ONCE_CONDITION,
+            		MagicManaCost.GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Rhino") {
 
@@ -47,7 +50,8 @@ public class Skinshifter {
 			return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN)};
+                    MagicManaCost.GREEN),
+                    new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 
 		@Override
@@ -81,7 +85,7 @@ public class Skinshifter {
 			pt.toughness = 2;
 		}
 		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+		public long getGivenAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			return flags|MagicAbility.Flying.getMask();
 		}
 		@Override
@@ -91,7 +95,9 @@ public class Skinshifter {
 	};
 
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
+            new MagicCondition[]{
+            		MagicCondition.ABILITY_ONCE_CONDITION,
+            		MagicManaCost.GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Bird") {
 
@@ -100,7 +106,8 @@ public class Skinshifter {
 			return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN)};
+                    MagicManaCost.GREEN),
+                    new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 
 		@Override
@@ -140,7 +147,9 @@ public class Skinshifter {
 	};
 
 	public static final MagicPermanentActivation A3 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
+            new MagicCondition[]{
+            		MagicCondition.ABILITY_ONCE_CONDITION,
+            		MagicManaCost.GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Animate,false,1),
             "Plant") {
 
@@ -149,7 +158,8 @@ public class Skinshifter {
 			return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.GREEN)};
+                    MagicManaCost.GREEN),
+                    new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 
 		@Override
