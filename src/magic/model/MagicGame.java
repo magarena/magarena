@@ -1050,8 +1050,8 @@ public class MagicGame {
 	
     // ***** STATICS *****
 	
-    public MagicPermanentStatic addStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
-		final MagicPermanentStatic permanentStatic=new MagicPermanentStatic(getUniqueId(),permanent,mstatic);
+    public final MagicPermanentStatic addStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
+        final MagicPermanentStatic permanentStatic = new MagicPermanentStatic(getUniqueId(),permanent,mstatic);
 		statics.add(permanentStatic);
 		return permanentStatic;
 	}
@@ -1070,6 +1070,15 @@ public class MagicGame {
             if (permanentStatic.getPermanent()==permanent) {
                 iterator.remove();
                 removedStatics.add(permanentStatic);
+            }
+        }
+	}
+    
+    public void removeStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
+        for (final Iterator<MagicPermanentStatic> iterator=statics.iterator();iterator.hasNext();) {
+            final MagicPermanentStatic permanentStatic = iterator.next();
+            if (permanentStatic.getPermanent()==permanent && permanentStatic.getStatic() == mstatic) {
+                iterator.remove();
             }
         }
 	}
