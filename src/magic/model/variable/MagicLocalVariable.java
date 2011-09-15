@@ -13,8 +13,6 @@ public interface MagicLocalVariable {
 	void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt);
 	
 	long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags);
-	
-	long getGivenAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags);
 
 	EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags);
 	

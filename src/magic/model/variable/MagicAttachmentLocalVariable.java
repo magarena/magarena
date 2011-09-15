@@ -21,11 +21,6 @@ public class MagicAttachmentLocalVariable extends MagicDummyLocalVariable {
 
 	@Override
 	public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-		return flags|cardDefinition.getAbilityFlags();
-	}
-	
-	@Override
-	public long getGivenAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 		return flags|cardDefinition.getGivenAbilityFlags();
 	}
 }

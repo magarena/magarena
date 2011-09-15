@@ -427,7 +427,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		long flags=cardDefinition.getAbilityFlags();
 		for (final MagicLocalVariable localVariable : localVariables) {
 			
-			flags=localVariable.getGivenAbilityFlags(game,this,flags);
+			flags=localVariable.getAbilityFlags(game,this,flags);
 		}
 		if (turn) {
 			flags|=turnAbilityFlags;

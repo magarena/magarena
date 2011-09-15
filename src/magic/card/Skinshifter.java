@@ -29,7 +29,7 @@ public class Skinshifter {
 			pt.toughness = 4;
 		}
 		@Override
-		public long getGivenAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			return flags|MagicAbility.Trample.getMask();
 		}
 		@Override
@@ -85,7 +85,7 @@ public class Skinshifter {
 			pt.toughness = 2;
 		}
 		@Override
-		public long getGivenAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			return flags|MagicAbility.Flying.getMask();
 		}
 		@Override
