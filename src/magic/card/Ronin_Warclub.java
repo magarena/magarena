@@ -1,5 +1,6 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -28,7 +29,10 @@ public class Ronin_Warclub {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],(MagicPermanent)data[1]));
+			MagicPermanent creature = (MagicPermanent)data[1];
+			if (!creature.hasAbility(game, MagicAbility.Shroud)) {
+				game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],creature));
+			}
 		}
     };
 }
