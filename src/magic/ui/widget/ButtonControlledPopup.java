@@ -5,8 +5,8 @@ import javax.swing.SwingUtilities;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
+import java.awt.event.WindowFocusListener;
+import java.awt.event.WindowEvent;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.BorderFactory;
@@ -14,7 +14,7 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.border.Border;
 
-public class ButtonControlledPopup extends TexturedPanel implements ActionListener, FocusListener {
+public class ButtonControlledPopup extends TexturedPanel implements ActionListener, WindowFocusListener {
 
 	private static final long serialVersionUID = 54232L;
 	
@@ -43,7 +43,6 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 		dialog.setSize(STARTING_WIDTH, STARTING_HEIGHT);
 		
 		invokePopupButton.addActionListener(this);
-		dialog.addFocusListener(this);
 		dialog.add(this);
 	}
 	
@@ -64,6 +63,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 		// showPopup the popup if not visible
 		invokePopupButton.setText(hidePopupButtonText);
 		dialog.setVisible(true);
+		dialog.addWindowFocusListener(this);
 		dialog.requestFocus();
 	}
 	
@@ -94,9 +94,10 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 	}
 	
 	@Override
-	public void focusLost(FocusEvent e) {		
+	public void windowLostFocus(WindowEvent e) {
+		System.out.println("focuslost");
 		popupJustToggled = true;
-		timer.schedule(new ResponsePreventer(), 500); // don't allow clicks on hide button to reshow popup immediately by disabling response for < 1 s
+		timer.schedule(new ResponsePreventer(), 300); // don't allow clicks on hide button to reshow popup immediately by disabling response for < 1 s
 		
 		if (dialog.isVisible()) {
 			hidePopup();
@@ -104,7 +105,6 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 	}
 
 	@Override
-	public void focusGained(FocusEvent e) {
+	public void windowGainedFocus(WindowEvent e) {
 	}
-
 }
