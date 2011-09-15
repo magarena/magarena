@@ -1,9 +1,28 @@
 package magic.model.mstatic;
 
 import magic.model.MagicCopyMap;
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicCounterType;
+import magic.model.MagicLayer;
+import magic.model.target.MagicTargetFilter;
 
 public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
+    public static final MagicPermanentStatic CountersEffect = 
+        new MagicPermanentStatic(0, MagicPermanent.NONE, new MagicStatic(
+            MagicLayer.CountersPT, 
+            MagicTargetFilter.TARGET_CREATURE) {
+            @Override
+            public void getPowerToughness(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+                final int both = permanent.getCounters(MagicCounterType.PlusOne) - 
+                                 permanent.getCounters(MagicCounterType.MinusOne);
+                pt.add(both);
+            }
+        });
 
 	private final long id;
 	private final MagicPermanent permanent;
