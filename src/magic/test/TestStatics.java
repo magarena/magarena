@@ -33,6 +33,7 @@ class TestStatics extends TestGameBuilder {
 	    addToHand(P,"Glorious Anthem",2); 
 	    addToHand(P,"Godhead of Awe",2); 
 	    addToHand(P,"Tolsimir Wolfblood",1); 
+	    addToHand(P,"Aven Mimeomancer",1); 
        
 
         P = opponent;
