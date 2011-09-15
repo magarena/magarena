@@ -10023,6 +10023,7 @@ toughness=6
 timing=fmain
 
 >Darksteel Axe
+image=http://magiccards.info/scans/en/som/149.jpg
 value=3
 rarity=U
 type=Artifact

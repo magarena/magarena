@@ -96,7 +96,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 	@Override
 	public void focusLost(FocusEvent e) {		
 		popupJustToggled = true;
-		timer.schedule(new ResponsePreventer(), 300); // don't allow clicks on hide button to reshow popup immediately by disabling response for < 1 s
+		timer.schedule(new ResponsePreventer(), 500); // don't allow clicks on hide button to reshow popup immediately by disabling response for < 1 s
 		
 		if (dialog.isVisible()) {
 			hidePopup();
