@@ -238,9 +238,11 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	}
 	
 	public void updateDeck() {
-		deckDefs = getPlayer().getDeck();
-		deckTable.setTitle(generateDeckTitle(deckDefs));
-		deckTable.setCards(deckDefs);
+		if(isEditingDeck()) {
+			deckDefs = getPlayer().getDeck();
+			deckTable.setTitle(generateDeckTitle(deckDefs));
+			deckTable.setCards(deckDefs);
+		}
 	}
 	
 	@Override
