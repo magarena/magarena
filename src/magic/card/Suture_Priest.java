@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
@@ -18,9 +19,22 @@ public class Suture_Priest {
                 new MagicEvent(
                     permanent,
                     player,
+                    same ?
+                    		new MagicSimpleMayChoice(
+                    				"You may gain 1 life.",
+                    				MagicSimpleMayChoice.GAIN_LIFE,
+                    				1,
+                    				MagicSimpleMayChoice.DEFAULT_YES) :
+                    		new MagicSimpleMayChoice(
+                    				"You may have your opponent lose 1 life.",
+                    				MagicSimpleMayChoice.OPPONENT_LOSE_LIFE,
+                    				1,
+                    				MagicSimpleMayChoice.DEFAULT_YES),
                     new Object[]{controller,same?1:-1},
                     this,
-                    controller + (same ? " gains 1 life." : " loses 1 life.")):
+                    same ?
+                    		controller + " may$ gain 1 life." :
+                    		player + " may$ have " + controller + " lose 1 life.") :
                 MagicEvent.NONE;
 		}
 		@Override

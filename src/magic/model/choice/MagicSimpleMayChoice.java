@@ -16,7 +16,8 @@ public class MagicSimpleMayChoice extends MagicChoice {
 
 	public static final int DRAW_CARDS = 1;
 	public static final int GAIN_LIFE = 2; // always returns YES_CHOICE_LIST
-	public static final int PAY_LIFE = 3;
+	public static final int LOSE_LIFE = 3;
+	public static final int OPPONENT_LOSE_LIFE = 4; // always returns YES_CHOICE_LIST
 	
 	public static final int DEFAULT_NONE = 0;
 	public static final int DEFAULT_NO = 1;
@@ -48,7 +49,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
 			case DRAW_CARDS:
 				yes = player.getLibrary().size() - amount >= 1;
 				break;
-			case PAY_LIFE:
+			case LOSE_LIFE:
 				yes = player.getLife() - amount >= 1;
 				break;
 		}
