@@ -9,7 +9,10 @@ public class MagicPermanentStaticList extends TreeSet<MagicPermanentStatic> {
 
 	private static final long serialVersionUID = 1L;
 	
-	public MagicPermanentStaticList() {}
+	public MagicPermanentStaticList() {
+        //changes to power and toughness due to +1/+1 and -1/-1 counters
+        add(MagicPermanentStatic.CountersEffect);
+    }
 	
 	public MagicPermanentStaticList(final MagicPermanentStaticList triggerList) {
 		super(triggerList);
