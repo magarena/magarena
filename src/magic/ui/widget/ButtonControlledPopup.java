@@ -43,6 +43,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 		dialog.setSize(STARTING_WIDTH, STARTING_HEIGHT);
 		
 		invokePopupButton.addActionListener(this);
+		dialog.addWindowFocusListener(this);
 		dialog.add(this);
 	}
 	
@@ -63,7 +64,6 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 		// showPopup the popup if not visible
 		invokePopupButton.setText(hidePopupButtonText);
 		dialog.setVisible(true);
-		dialog.addWindowFocusListener(this);
 		dialog.requestFocus();
 	}
 	
