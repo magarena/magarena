@@ -1105,6 +1105,19 @@ toughness=2
 ability=flying
 timing=main
 
+>Kor Duelist
+image=http://magiccards.info/scans/en/zen/19.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Kor,Soldier
+color=w
+converted=1
+cost={W}
+power=1
+toughness=1
+timing=main
+
 >Kor Sanctifiers
 image=http://magiccards.info/scans/en/zen/22.jpg
 value=2
