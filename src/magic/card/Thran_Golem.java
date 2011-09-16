@@ -15,14 +15,14 @@ public class Thran_Golem {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.isEnchanted()) {
-				pt.power += 2;
-				pt.toughness += 2;
+				pt.add(2);
 			}
 		}
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			return permanent.isEnchanted() ? 
-					flags|MagicAbility.Flying.getMask() |
+					flags |
+                        MagicAbility.Flying.getMask() |
 						MagicAbility.FirstStrike.getMask() |
 						MagicAbility.Trample.getMask() :
 					flags;
