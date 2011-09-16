@@ -209,6 +209,8 @@ public class MagicTargetChoice extends MagicChoice {
 			new MagicTargetChoice(MagicTargetFilter.TARGET_GREEN_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a green creature card from your hand");
 	public static final MagicTargetChoice TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a multicolored creature card from your hand");
+	public static final MagicTargetChoice TARGET_BASIC_LAND_CARD_FROM_HAND =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,"a basic land card from your hand");
 		
 	private final String targetDescription;
 	private final MagicTargetFilter targetFilter;

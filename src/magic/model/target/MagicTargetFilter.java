@@ -1089,6 +1089,17 @@ public interface MagicTargetFilter {
 		}						
 	};
 	
+	MagicTargetFilter TARGET_BASIC_LAND_CARD_FROM_HAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+			return cardDefinition.isLand()&&cardDefinition.isBasic();
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Hand;
+		}						
+	};
+	
 	// Permanent reference can not be used because game is copied.
 	public static final class MagicOtherPermanentTargetFilter implements MagicTargetFilter {
 

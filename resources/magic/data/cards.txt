@@ -760,6 +760,19 @@ power=2
 toughness=2
 timing=fmain
 
+>Elvish Pioneer
+image=http://magiccards.info/scans/en/8e/243.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Druid
+color=g
+converted=1
+cost={G}
+power=1
+toughness=1
+timing=main
+
 >Eternal Witness
 image=http://magiccards.info/scans/en/cmd/152.jpg
 value=3
