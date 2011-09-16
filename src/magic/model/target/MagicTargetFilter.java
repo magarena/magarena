@@ -608,6 +608,17 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_DRAGON_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player && 
+                   ((MagicPermanent)target).isCreature() && 
+                   ((MagicPermanent)target).hasSubType(MagicSubType.Dragon);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_GOBLIN_YOU_CONTROL=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return target.getController()==player && 

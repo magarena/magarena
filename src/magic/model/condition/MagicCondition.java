@@ -183,6 +183,12 @@ public interface MagicCondition {
 			return game.getOpponent(source.getController()).getNrOfPermanentsWithType(MagicType.Land)>=4;
 		}
 	};
+	
+	MagicCondition THRESHOLD_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return source.getController().getGraveyard().size() >= 7;
+		}
+	};
 		
 	boolean accept(final MagicGame game,final MagicSource source);
 }

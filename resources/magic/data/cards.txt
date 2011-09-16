@@ -865,6 +865,20 @@ power=2
 toughness=2
 timing=main
 
+>Fledgling Dragon
+image=http://magiccards.info/scans/en/ju/90.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=4
+cost={2}{R}{R}
+power=2
+toughness=2
+ability=flying
+timing=main
+
 >Fleeting Image
 image=http://magiccards.info/scans/en/9e/78.jpg
 value=2
@@ -5775,6 +5789,16 @@ type=Enchantment
 color=w
 converted=4
 cost={3}{W}
+timing=enchantment
+
+>Crucible of Fire
+image=http://magiccards.info/scans/en/ala/96.jpg
+value=4
+rarity=R
+type=Enchantment
+color=r
+converted=4
+cost={3}{R}
 timing=enchantment
 
 >Debtors' Knell
