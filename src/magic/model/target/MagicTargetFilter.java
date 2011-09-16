@@ -1067,6 +1067,28 @@ public interface MagicTargetFilter {
 		}						
 	};
 	
+	MagicTargetFilter TARGET_GREEN_CREATURE_CARD_FROM_HAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+			return cardDefinition.isCreature() && MagicColor.Green.hasColor(cardDefinition.getColorFlags());
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Hand;
+		}						
+	};
+	
+	MagicTargetFilter TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+			return cardDefinition.isCreature() && MagicColor.isMulti(cardDefinition.getColorFlags());
+		}
+		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Hand;
+		}						
+	};
+	
 	// Permanent reference can not be used because game is copied.
 	public static final class MagicOtherPermanentTargetFilter implements MagicTargetFilter {
 

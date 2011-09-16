@@ -8083,6 +8083,16 @@ converted=3
 cost={2}{W}
 timing=fmain
 
+>Dramatic Entrance
+image=http://magiccards.info/scans/en/shm/111.jpg
+value=3
+rarity=R
+type=Instant
+color=g
+converted=5
+cost={3}{G}{G}
+timing=token
+
 >Vampire Hexmage
 image=http://magiccards.info/scans/en/zen/114.jpg
 value=3
@@ -8266,6 +8276,15 @@ rarity=R
 type=Artifact
 converted=4
 cost={4}
+timing=artifact
+
+>Dragon Arch
+image=http://magiccards.info/scans/en/ap/135.jpg
+value=4
+rarity=U
+type=Artifact
+converted=5
+cost={5}
 timing=artifact
 
 >Sylvok Lifestaff
