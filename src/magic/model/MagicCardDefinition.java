@@ -20,7 +20,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.variable.MagicAttachmentLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
-import magic.model.variable.MagicStaticLocalVariable;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
@@ -59,10 +58,7 @@ public class MagicCardDefinition {
     private static int numManaActivations = 0;
     private static int numSpellEvent = 0;
     private static int numModifications = 0;
-    private static final int numLocalVariables = 0;
-
-	private static final List<MagicLocalVariable> DEFAULT_LOCAL_VARIABLES = 
-        Arrays.<MagicLocalVariable>asList(MagicStaticLocalVariable.getInstance());
+    private static int numLocalVariables = 0;
 
 	private final String name;
 	private final String fullName;
@@ -85,7 +81,6 @@ public class MagicCardDefinition {
 	private final int manaSource[]=new int[MagicColor.NR_COLORS];
 	private int power=0;
 	private int toughness=0;
-	private int turnLocalVariableIndex=0;
 	private long abilityFlags=0;
 	private long givenAbilityFlags=0;
 	private MagicStaticType staticType=MagicStaticType.None;
@@ -268,13 +263,11 @@ public class MagicCardDefinition {
             chg.change(this);
             System.err.println("Adding modification to " + getFullName());
             numModifications++;
-        /*
         } else if (obj instanceof MagicLocalVariable) {
             final MagicLocalVariable lvar = (MagicLocalVariable)obj;
             addLocalVariable(lvar);
             System.err.println("Adding local variable to " + getFullName());
             numLocalVariables++;
-        */
         } else {
             System.err.println("ERROR! Unable to add object to MagicCardDefinition");
             throw new RuntimeException("Unknown field in companion object");
@@ -537,14 +530,6 @@ public class MagicCardDefinition {
 		return toughness;
 	}		
 	
-	public void setVariablePT() {
-		turnLocalVariableIndex=1;
-	}
-	
-	int getTurnLocalVariableIndex() {
-		return turnLocalVariableIndex;
-	}
-	
 	public void setAbility(final MagicAbility ability) {
 		abilityFlags|=ability.getMask();
 		if (ability==MagicAbility.Exalted) {
@@ -607,11 +592,7 @@ public class MagicCardDefinition {
 	}
 	
 	List<MagicLocalVariable> getLocalVariables() {
-		if (localVariables.isEmpty()) {
-			return DEFAULT_LOCAL_VARIABLES;
-		} else {
-			return localVariables;
-		}
+        return localVariables;
 	}
 	
 	private void setCardEvent(final MagicCardEvent cardEvent) {
