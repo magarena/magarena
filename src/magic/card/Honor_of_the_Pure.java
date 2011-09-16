@@ -14,7 +14,7 @@ public class Honor_of_the_Pure {
         MagicTargetFilter.TARGET_WHITE_CREATURE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1);
+            pt.add(1,1);
         }
     };
 }

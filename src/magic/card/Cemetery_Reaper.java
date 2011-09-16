@@ -32,7 +32,7 @@ public class Cemetery_Reaper {
         MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1);
+            pt.add(1,1);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

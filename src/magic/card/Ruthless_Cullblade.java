@@ -14,8 +14,7 @@ public class Ruthless_Cullblade {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (game.getOpponent(permanent.getController()).getLife()<=10) {
-				pt.power+=2;
-				pt.toughness++;
+				pt.add(2,1);
 			}
 		}		
 	};

@@ -13,7 +13,7 @@ public class Elesh_Norn__Grand_Cenobite {
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(2);
+            pt.add(2,2);
         }
     };
     public static final MagicStatic S2 = new MagicStatic(
@@ -21,7 +21,7 @@ public class Elesh_Norn__Grand_Cenobite {
         MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(-2);
+            pt.add(-2,-2);
         }
     };
 }

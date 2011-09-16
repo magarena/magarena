@@ -14,7 +14,7 @@ public class Lord_of_the_Unreal {
 	    MagicTargetFilter.TARGET_ILLUSION_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1);
+            pt.add(1,1);
         }
     };
     public static final MagicStatic S2 = new MagicStatic(

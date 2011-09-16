@@ -19,7 +19,7 @@ public class Creakwood_Liege {
         MagicTargetFilter.TARGET_BLACK_CREATURE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1);
+            pt.add(1,1);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
@@ -31,7 +31,7 @@ public class Creakwood_Liege {
         MagicTargetFilter.TARGET_GREEN_CREATURE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1);
+            pt.add(1,1);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

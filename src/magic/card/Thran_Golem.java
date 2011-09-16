@@ -15,7 +15,7 @@ public class Thran_Golem {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.isEnchanted()) {
-				pt.add(2);
+				pt.add(2,2);
 			}
 		}
 		@Override

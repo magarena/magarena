@@ -32,7 +32,7 @@ public class Eldrazi_Monument {
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.add(1);
+            pt.add(1,1);
         }
     };
 

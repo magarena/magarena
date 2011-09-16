@@ -18,9 +18,9 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-                final int both = permanent.getCounters(MagicCounterType.PlusOne) - 
-                                 permanent.getCounters(MagicCounterType.MinusOne);
-                pt.add(both);
+                final int amt = permanent.getCounters(MagicCounterType.PlusOne) - 
+                                permanent.getCounters(MagicCounterType.MinusOne);
+                pt.add(amt,amt);
             }
         });
 

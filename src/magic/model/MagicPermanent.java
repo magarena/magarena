@@ -307,10 +307,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (cached) {
 			switch (counterType) {
 				case PlusOne:
-					cachedTurnPowerToughness.add(amount);
+					cachedTurnPowerToughness.add(amount,amount);
 					break;
 				case MinusOne:
-					cachedTurnPowerToughness.add(-amount);
+					cachedTurnPowerToughness.add(-amount,-amount);
 					break;
 			}
 		}
