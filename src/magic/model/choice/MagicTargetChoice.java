@@ -69,6 +69,9 @@ public class MagicTargetChoice extends MagicChoice {
                 "target permanent you control");	
 	public static final MagicTargetChoice NEG_TARGET_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT,true,MagicTargetHint.Negative,"target permanent");
+	public static final MagicTargetChoice TARGET_BLACK_PERMANENT =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_BLACK_PERMANENT,true,MagicTargetHint.None,
+	                "target permanent");
 	public static final MagicTargetChoice NEG_TARGET_BLACK_RED_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_BLACK_RED_PERMANENT,true,MagicTargetHint.Negative,"target black or red permanent");
     

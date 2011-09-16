@@ -694,6 +694,20 @@ toughness=1
 ability=flying
 timing=main
 
+>Devout Lightcaster
+image=http://magiccards.info/scans/en/zen/10.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Kor,Cleric
+color=w
+converted=3
+cost={W}{W}{W}
+power=2
+toughness=2
+ability=protection from black
+timing=main
+
 >Drifting Shade
 image=http://magiccards.info/scans/en/m12/96.jpg
 value=4
@@ -1075,6 +1089,19 @@ converted=1
 cost={R}
 power=1
 toughness=1
+timing=main
+
+>Kor Aeronaut
+image=http://magiccards.info/scans/en/zen/17.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Kor,Soldier
+color=w
+converted=2
+cost={W}{W}
+power=2
+toughness=2
 timing=main
 
 >Kor Sanctifiers

@@ -135,12 +135,21 @@ public interface MagicTargetFilter {
 		}
 	};
 	
-	MagicTargetFilter TARGET_PERMANENT=new MagicTargetFilter() {
+	MagicTargetFilter TARGET_BLACK_PERMANENT=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return MagicColor.Black.hasColor(((MagicPermanent) target).getColorFlags());
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Permanent;
+		}
+	};
+	
+	MagicTargetFilter TARGET_PERMANENT = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return true;
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
-			return targetType==MagicTargetType.Permanent;
+			return targetType == MagicTargetType.Permanent;
 		}
 	};
 	
