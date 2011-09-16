@@ -19,15 +19,13 @@ public class Wild_Nacatl {
 			final Collection<MagicTarget> targets1 =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL);
 			if (targets1.size() > 0) {
-				pt.power ++;
-				pt.toughness ++;
+				pt.add(1);
 			}
 			
 			final Collection<MagicTarget> targets2 =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_PLAINS_YOU_CONTROL);
 			if (targets2.size() > 0) {
-				pt.power ++;
-				pt.toughness ++;
+				pt.add(1);
 			}	
 		}
 	};
