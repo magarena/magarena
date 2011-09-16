@@ -131,7 +131,14 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		createMenuBar();
 		setInitialContent();
-		setVisible(true);		
+		setVisible(true);	
+
+        //in selfMode start game immediate based on configuration from tournament.cfg
+        if (System.getProperty("selfMode") != null) {
+            final TournamentConfig config=TournamentConfig.getInstance();
+            config.load();
+            newTournament(config);
+        }
 	}
 
 	private void enableMenuItem(final String item,final boolean enabled) {
