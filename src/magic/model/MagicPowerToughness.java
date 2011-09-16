@@ -18,8 +18,8 @@ public class MagicPowerToughness {
 		return toughness>0?toughness:0;
 	}
 	
-	public void add(final int amount) {
-		power+=amount;
-		toughness+=amount;
+    public void add(final int pAmount, final int tAmount) {
+		power += pAmount;
+		toughness += tAmount;
 	}
 }
