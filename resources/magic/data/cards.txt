@@ -432,6 +432,19 @@ toughness=3
 ability=flying
 timing=main
 
+>Corrosive Mentor
+image=http://magiccards.info/scans/en/shm/61.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Elemental,Rogue
+color=b
+converted=3
+cost={2}{B}
+power=1
+toughness=3
+timing=main
+
 >Crabapple Cohort
 image=http://magiccards.info/scans/en/shm/109.jpg
 value=4
