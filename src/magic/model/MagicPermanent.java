@@ -16,6 +16,8 @@ import magic.model.target.MagicTarget;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicPermanentStatic;
 
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
@@ -240,13 +242,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 
 	public void addTurnLocalVariable(final MagicLocalVariable localVariable) {
-		localVariables.add(cardDefinition.getTurnLocalVariableIndex()+turnLocalVariables,localVariable);
+		localVariables.add(localVariable);
 		turnLocalVariables++;
 	}
 
-	public void removeTurnLocalVariable() {
+	public MagicLocalVariable removeTurnLocalVariable() {
 		turnLocalVariables--;
-		localVariables.remove(cardDefinition.getTurnLocalVariableIndex()+turnLocalVariables);
+		return localVariables.remove(localVariables.size() - 1);
 	}
 	
 	public void addTurnLocalVariables(final List<MagicLocalVariable> localVariablesList) {
@@ -256,15 +258,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public List<MagicLocalVariable> removeTurnLocalVariables() {
-		if (turnLocalVariables>0) {
-			final List<MagicLocalVariable> localVariablesList=new ArrayList<MagicLocalVariable>();
-			final int index=cardDefinition.getTurnLocalVariableIndex();
-			for (;turnLocalVariables>0;turnLocalVariables--) {
-				localVariablesList.add(localVariables.remove(index));
-			}
-			return localVariablesList;
+        if (turnLocalVariables == 0) {
+            return Collections.emptyList();
+        }
+        final List<MagicLocalVariable> localVariablesList=new ArrayList<MagicLocalVariable>();
+		while (turnLocalVariables>0) {
+            localVariablesList.add(removeTurnLocalVariable());
 		}
-		return Collections.emptyList();
+		return localVariablesList;
 	}
 		
 	@Override
@@ -334,7 +335,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			return cachedSubTypeFlags;
 		}
 		
-		EnumSet<MagicSubType> flags=cardDefinition.getSubTypeFlags();
+        EnumSet<MagicSubType> flags=cardDefinition.getSubTypeFlags();
+        
+        if (getCardDefinition().hasAbility(MagicAbility.Changeling)) {
+            flags.addAll(MagicSubType.ALL_CREATURES);
+		}		
+		
 		for (final MagicLocalVariable localVariable : localVariables) {
 			flags=localVariable.getSubTypeFlags(this,flags);
 		}
@@ -355,6 +361,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		for (final MagicLocalVariable localVariable : localVariables) {
 			localVariable.getPowerToughness(game,this,pt);
 		}		
+        for (final MagicPermanentStatic mpstatic : game.getStatics()) {
+            final MagicStatic mstatic = mpstatic.getStatic();
+            if (mstatic.accept(game, mpstatic.getPermanent(),this)) {
+                mstatic.getPowerToughness(game, this, pt);
+            }
+        }
 		if (turn) {
 			pt.power+=turnPowerIncr;
 			pt.toughness+=turnToughnessIncr;
@@ -419,21 +431,27 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		// Check if cached.
 		if (cached&&turn) {
 			return cachedTurnAbilityFlags;
-		}		
-		/* // Only creatures can have abilities.
-		if (!isCreature()) {
-			return 0;
-		} */
-		long flags=cardDefinition.getAbilityFlags();
-		for (final MagicLocalVariable localVariable : localVariables) {
-			
-			flags=localVariable.getAbilityFlags(game,this,flags);
-		}
+		}	
+        long flags = getCurrentAbilityFlags(game);
 		if (turn) {
 			flags|=turnAbilityFlags;
 		}
 		return flags&MagicAbility.EXCLUDE_MASK;
 	}
+
+    private long getCurrentAbilityFlags(final MagicGame game) {
+		long flags=cardDefinition.getAbilityFlags();
+		for (final MagicLocalVariable localVariable : localVariables) {
+			flags=localVariable.getAbilityFlags(game,this,flags);
+		}
+        for (final MagicPermanentStatic mpstatic : game.getStatics()) {
+            final MagicStatic mstatic = mpstatic.getStatic();
+            if (mstatic.accept(game, mpstatic.getPermanent(), this)) {
+                flags = mstatic.getAbilityFlags(game, this, flags);
+            }
+        }
+        return flags;
+    }
 	
 	public long getAllAbilityFlags(final MagicGame game) {
 		return getAllAbilityFlags(game,true);
@@ -445,18 +463,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (cached) {
 			return ability.hasAbility(cachedTurnAbilityFlags);
 		}
-		// Only creatures can have abilities.
-		/* if (!isCreature()) {
-			return false;
-		} */
 		if (ability.hasAbility(turnAbilityFlags)) {
 			return true;
 		}
-		long flags=cardDefinition.getAbilityFlags();
-		for (final MagicLocalVariable localVariable : localVariables) {
-			
-			flags=localVariable.getAbilityFlags(game,this,flags);
-		}
+		long flags = getCurrentAbilityFlags(game);
 		return ability.hasAbility(flags);
 	}
 	
@@ -673,7 +683,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public boolean hasProtectionFrom(final MagicGame game,final MagicSource source) {
-	
 		final long abilityFlags=getAllAbilityFlags(game);
 		return hasProtectionFrom(abilityFlags,source);
 	}
@@ -689,7 +698,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public boolean canBeBlocked(final MagicGame game,final MagicPlayer player) {
-
 		final long flags=getAllAbilityFlags(game);
 		
 		// Unblockable
@@ -716,7 +724,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public boolean canBlock(final MagicGame game,final MagicPermanent attacker) {
-		
 		final long attackerFlags=attacker.getAllAbilityFlags(game);
 
 		// Fear & intimidate
@@ -883,7 +890,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
-
 		final long flags=getAllAbilityFlags(game);
 		// Can't be the target of spells or abilities.
 		if (MagicAbility.Shroud.hasAbility(flags)) {
