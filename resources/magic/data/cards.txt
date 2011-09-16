@@ -5744,6 +5744,16 @@ converted=3
 cost={2}{G}
 timing=enchantment
 
+>Beastmaster Ascension
+image=http://magiccards.info/scans/en/zen/159.jpg
+value=3
+rarity=R
+type=Enchantment
+color=g
+converted=3
+cost={2}{G}
+timing=enchantment
+
 >Debtors' Knell
 image=http://magiccards.info/scans/en/gp/141.jpg
 value=5
