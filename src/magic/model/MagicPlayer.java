@@ -2,12 +2,12 @@ package magic.model;
 
 import magic.data.GeneralConfig;
 import magic.data.TournamentConfig;
+import magic.data.CardDefinitions;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.event.MagicActivationMap;
 import magic.model.event.MagicActivationPriority;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.target.MagicTarget;
-import magic.model.variable.MagicStaticLocalVariable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +33,7 @@ public class MagicPlayer implements MagicTarget {
         }
     };
 
+    private static final int spiritOfTheHearth = CardDefinitions.getInstance().getCard("Spirit of the Hearth").getIndex();
 	private static final long ID_FACTOR=31;
 	
     private final MagicPlayerDefinition playerDefinition;
@@ -471,9 +472,6 @@ public class MagicPlayer implements MagicTarget {
 	
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
-		if (source.getController() != this && !MagicStaticLocalVariable.canTarget(this)) {
-			return false;
-		}
-		return true;
+		return source.getController() == this || getCount(spiritOfTheHearth) == 0;
 	}	
 }
