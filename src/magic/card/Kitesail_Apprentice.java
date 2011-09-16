@@ -15,13 +15,14 @@ public class Kitesail_Apprentice {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.isEquipped()) {
-				pt.power++;
-				pt.toughness++;
+				pt.add(1,1);
 			}
 		}
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return permanent.isEquipped()?flags|MagicAbility.Flying.getMask():flags;
+			return permanent.isEquipped() ? 
+                flags|MagicAbility.Flying.getMask():
+                flags;
 		}
 	};
 }

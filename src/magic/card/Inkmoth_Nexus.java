@@ -30,8 +30,7 @@ public class Inkmoth_Nexus {
     private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.power=1;
-			pt.toughness=1;
+			pt.set(1,1);
 		}
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {

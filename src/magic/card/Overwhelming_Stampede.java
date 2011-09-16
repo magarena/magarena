@@ -41,7 +41,7 @@ public class Overwhelming_Stampede {
 			int power=0;
 			for (final MagicTarget target : targets) {
 				final MagicPermanent creature=(MagicPermanent)target;
-				power=Math.max(power,creature.getPowerToughness(game).power);
+				power=Math.max(power,creature.getPowerToughness(game).power());
 			}
 			for (final MagicTarget target : targets) {
 				final MagicPermanent creature=(MagicPermanent)target;

@@ -71,8 +71,7 @@ public class Raging_Ravine {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-			pt.power=3;
-			pt.toughness=3;
+			pt.set(3,3);
 		}
 		@Override
 		public EnumSet<MagicSubType> getSubTypeFlags(

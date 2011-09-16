@@ -15,8 +15,7 @@ public class Guul_Draz_Specter {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (game.getOpponent(permanent.getController()).getHand().isEmpty()) {
-				pt.power+=3;
-				pt.toughness+=3;
+				pt.add(3,3);
 			}
 		}		
 	};

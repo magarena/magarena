@@ -19,8 +19,7 @@ public class Mudbrawler_Cohort {
 			final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_RED_CREATURE_YOU_CONTROL);
 			if (targets.size() > 1) {
-				pt.power ++;
-				pt.toughness ++;
+				pt.add(1,1);
 			}		
 		}
 	};

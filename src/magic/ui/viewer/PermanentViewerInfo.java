@@ -110,7 +110,7 @@ public class PermanentViewerInfo {
 	private static String getPowerToughness(final MagicGame game,final MagicPermanent permanent) {
 		if (permanent.isCreature()) {
 			final MagicPowerToughness pt=permanent.getPowerToughness(game);
-			return pt.power+"/"+pt.toughness;
+			return pt.power()+"/"+pt.toughness();
 		} 
 		return "";
 	}

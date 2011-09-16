@@ -14,8 +14,7 @@ public class Lord_of_Extinction {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final int amount=game.getPlayer(0).getGraveyard().size()+game.getPlayer(1).getGraveyard().size();
-			pt.power=amount;
-			pt.toughness=amount;
+			pt.set(amount,amount);
 		}
 	};
 }

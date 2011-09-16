@@ -27,9 +27,9 @@ public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		final MagicPowerToughness pt=permanent.getPowerToughness(game);
 		// Defensive
 		if (defensive) {
-			return 20-pt.toughness-penalty;
+			return 20-pt.toughness()-penalty;
 		}
 		// Offensive
-		return 1+pt.power*2-pt.toughness-penalty;
+		return 1+pt.power()*2-pt.toughness()-penalty;
 	}
 }

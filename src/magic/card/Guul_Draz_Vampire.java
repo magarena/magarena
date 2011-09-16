@@ -14,13 +14,14 @@ public class Guul_Draz_Vampire {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (game.getOpponent(permanent.getController()).getLife()<=10) {
-				pt.power+=2;
-				pt.toughness++;
+				pt.add(2,1);
 			}
 		}	
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return game.getOpponent(permanent.getController()).getLife()<=10?flags|MagicAbility.Intimidate.getMask():flags;
+			return game.getOpponent(permanent.getController()).getLife()<=10 ? 
+                flags|MagicAbility.Intimidate.getMask():
+                flags;
 		}
 	};
 }

@@ -56,8 +56,7 @@ public class Mirror_Entity {
                         final MagicGame game,
                         final MagicPermanent permanent,
                         final MagicPowerToughness pt) {
-		    	    pt.power=X;
-    			    pt.toughness=X;
+		    	    pt.set(X,X);
 	        	}
 		        @Override
         		public EnumSet<MagicSubType> getSubTypeFlags(

@@ -18,7 +18,7 @@ public class Earth_Servant {
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL);
-			pt.toughness += targets.size();
+			pt.add(0,targets.size());
 		}
 	};
 }

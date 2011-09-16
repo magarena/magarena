@@ -38,8 +38,7 @@ public class Stirring_Wildwood {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-			pt.power=3;
-			pt.toughness=4;
+			pt.set(3,4);
 		}
 		@Override
 		public long getAbilityFlags(

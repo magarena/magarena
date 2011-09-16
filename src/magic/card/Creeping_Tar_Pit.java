@@ -34,8 +34,7 @@ public class Creeping_Tar_Pit {
     private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.power=3;
-			pt.toughness=2;
+			pt.set(3,2);
 		}
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {

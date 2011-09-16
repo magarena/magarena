@@ -25,8 +25,7 @@ public class Skinshifter {
     private static final MagicDummyLocalVariable LV1 = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.power = 4;
-			pt.toughness = 4;
+			pt.set(4,4);
 		}
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
@@ -81,8 +80,7 @@ public class Skinshifter {
     private static final MagicDummyLocalVariable LV2 = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.power = 2;
-			pt.toughness = 2;
+			pt.set(2,2);
 		}
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
@@ -137,8 +135,7 @@ public class Skinshifter {
     private static final MagicDummyLocalVariable LV3 = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.power = 0;
-			pt.toughness = 8;
+			pt.set(0,8);
 		}
 		@Override
 		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {

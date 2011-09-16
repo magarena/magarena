@@ -368,8 +368,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             }
         }
 		if (turn) {
-			pt.power+=turnPowerIncr;
-			pt.toughness+=turnToughnessIncr;
+			pt.add(turnPowerIncr, turnToughnessIncr);
 		}
 		return pt;
 	}
@@ -397,7 +396,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public void changeTurnPower(final int amount) {
 		turnPowerIncr+=amount;
 		if (cached) {
-			cachedTurnPowerToughness.power+=amount;
+			cachedTurnPowerToughness.add(amount,0);
 		}
 	}
 	
@@ -412,7 +411,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public void changeTurnToughness(final int amount) {
 		turnToughnessIncr+=amount;
 		if (cached) {
-			cachedTurnPowerToughness.toughness+=amount;
+			cachedTurnPowerToughness.add(0,amount);
 		}
 	}
 			

@@ -30,11 +30,9 @@ public class Echo_Mage {
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=4) {
-				pt.power=2;
-				pt.toughness=5;
+				pt.set(2,5);
 			} else if (charges>=2) {
-				pt.power=2;
-				pt.toughness=4;
+				pt.set(2,4);
 			}
 		}		
 	};

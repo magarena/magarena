@@ -28,8 +28,7 @@ public class Lord_of_Shatterskull_Pass {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.getCounters(MagicCounterType.Charge)>0) {
-				pt.power=6;
-				pt.toughness=6;
+				pt.set(6,6);
 			} 
 		}		
 	};

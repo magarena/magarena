@@ -19,8 +19,7 @@ public class Loam_Lion {
 			final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_FOREST_YOU_CONTROL);
 			if (targets.size() > 0) {
-				pt.power ++;
-				pt.toughness += 2;
+				pt.add(1,2);
 			}		
 		}
 	};

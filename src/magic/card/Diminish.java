@@ -45,8 +45,7 @@ public class Diminish {
                                 final MagicGame game,
                                 final MagicPermanent permanent,
                                 final MagicPowerToughness pt) {
-                                pt.power=1;
-                                pt.toughness=1;
+                                pt.set(1,1);
                             }
                         }
                     ));

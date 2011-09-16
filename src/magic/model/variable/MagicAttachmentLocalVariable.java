@@ -15,8 +15,7 @@ public class MagicAttachmentLocalVariable extends MagicDummyLocalVariable {
 	
 	@Override
 	public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-		pt.power+=cardDefinition.getPower();
-		pt.toughness+=cardDefinition.getToughness();
+		pt.add(cardDefinition.getPower(), cardDefinition.getToughness());
 	}
 
 	@Override

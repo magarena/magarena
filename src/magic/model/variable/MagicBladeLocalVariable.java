@@ -34,8 +34,7 @@ public class MagicBladeLocalVariable extends MagicDummyLocalVariable {
 	@Override
 	public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 		if (isValid(permanent)) {
-			pt.power++;
-			pt.toughness++;
+            pt.add(1,1);
 		}
 	}
 	

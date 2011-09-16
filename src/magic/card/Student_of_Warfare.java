@@ -24,11 +24,9 @@ public class Student_of_Warfare {
                 final MagicPowerToughness pt) {
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=7) {
-				pt.power=4;
-				pt.toughness=4;
+				pt.set(4,4);
 			} else if (charges>=2) {
-				pt.power=3;
-				pt.toughness=3;
+				pt.set(3,3);
 			}
 		}
     };

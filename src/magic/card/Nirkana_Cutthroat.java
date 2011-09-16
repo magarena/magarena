@@ -19,11 +19,9 @@ public class Nirkana_Cutthroat {
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
 			if (charges>=3) {
-				pt.power=5;
-				pt.toughness=4;
+				pt.set(5,4);
 			} else if (charges>=1) {
-				pt.power=4;
-				pt.toughness=3;
+				pt.set(4,3);
 			}
 		}
 		
@@ -34,8 +32,9 @@ public class Nirkana_Cutthroat {
 				return flags|MagicAbility.FirstStrike.getMask()|MagicAbility.Deathtouch.getMask();
 			} else if (charges>=1) {
 				return flags|MagicAbility.Deathtouch.getMask();
-			}
-			return flags;
+			} else {
+                return flags;
+            }
 		}
 	};
 

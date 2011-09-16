@@ -2,13 +2,21 @@ package magic.model;
 
 public class MagicPowerToughness {
 
-	public int power;
-	public int toughness;
+	private int power;
+	private int toughness;
 	
 	MagicPowerToughness(final int power,final int toughness) {
 		this.power=power;
 		this.toughness=toughness;
 	}
+
+    public int power() {
+        return power;
+    }
+
+    public int toughness() {
+        return toughness;
+    }
 	
 	public int getPositivePower() {
 		return power>0?power:0;
@@ -19,7 +27,12 @@ public class MagicPowerToughness {
 	}
 	
     public void add(final int pAmount, final int tAmount) {
-		power += pAmount;
+		power     += pAmount;
 		toughness += tAmount;
+	}
+    
+    public void set(final int pAmount, final int tAmount) {
+		power     = pAmount;
+		toughness = tAmount;
 	}
 }

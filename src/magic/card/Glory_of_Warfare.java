@@ -14,9 +14,9 @@ public class Glory_of_Warfare {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (game.hasTurn(permanent.getController())) {
-				pt.power += 2;
+				pt.add(2,0);
 			} else {
-				pt.toughness += 2;
+				pt.add(0,2);
 			}
         }
     };

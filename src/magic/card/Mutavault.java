@@ -30,8 +30,7 @@ public class Mutavault {
     private static final MagicLocalVariable VAR = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.power=2;
-			pt.toughness=2;
+			pt.set(2,2);
 		}
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {

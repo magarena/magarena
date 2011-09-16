@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.MagicAbility;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
 
@@ -23,9 +24,14 @@ public class Griffin_Rider {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (isValid(permanent)) {
-				pt.power += 3;
-				pt.toughness += 3;
+				pt.add(3,3);
 			}
-		}
+		}	
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+			return (isValid(permanent)) ?
+                flags | MagicAbility.Flying.getMask() :
+                flags;
+        }
 	};
 }

@@ -14,8 +14,7 @@ public class Serra_Ascendant {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.getController().getLife() >= 30) {
-				pt.power += 5;
-				pt.toughness += 5;
+				pt.add(5,5);
 			}
 		}	
 		@Override

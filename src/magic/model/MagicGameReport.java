@@ -27,8 +27,8 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 		report.append("   - Permanent : ").append(permanent.getName());
 		if (permanent.isCreature()) {
 			final MagicPowerToughness pt=permanent.getPowerToughness(game);
-			report.append("  Power : ").append(pt.power);
-			report.append("  Toughness : ").append(pt.toughness);
+			report.append("  Power : ").append(pt.power());
+			report.append("  Toughness : ").append(pt.toughness());
 			report.append("  Damage : ").append(permanent.getDamage());
 		}
 		if (permanent.hasState(MagicPermanentState.Tapped)) {

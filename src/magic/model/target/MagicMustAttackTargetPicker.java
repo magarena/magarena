@@ -21,7 +21,7 @@ public class MagicMustAttackTargetPicker extends MagicTargetPicker<MagicPermanen
 			return -50;
 		}
 		final MagicPowerToughness pt=permanent.getPowerToughness(game);
-		return 50-pt.power*2-pt.toughness+permanent.getDamage();
+		return 50-pt.power()*2-pt.toughness()+permanent.getDamage();
 	}
 	
 	public static MagicTargetPicker getInstance() {

@@ -22,8 +22,7 @@ public class Mortivore {
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-			pt.power = targets.size();
-			pt.toughness = targets.size();
+			pt.set(targets.size(), targets.size());
 		}
 	};
     

@@ -55,8 +55,7 @@ public class Aven_Mimeomancer {
                                 final MagicGame game,
                                 final MagicPermanent permanent,
                                 final MagicPowerToughness pt) {
-                                pt.power = 3;
-                                pt.toughness = 1;
+                                pt.set(3,1);
                             }
                             @Override
                             public boolean accept(

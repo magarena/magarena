@@ -13,7 +13,7 @@ public class Goblin_Gaveleer {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.isEquipped()) {
-				pt.power += 2 * permanent.getEquipmentPermanents().size();
+				pt.add(2 * permanent.getEquipmentPermanents().size(),0);
 			}
 		}		
 	};

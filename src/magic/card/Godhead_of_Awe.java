@@ -14,8 +14,7 @@ public class Godhead_of_Awe {
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.power = 1;
-            pt.toughness = 1;
+            pt.set(1,1);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

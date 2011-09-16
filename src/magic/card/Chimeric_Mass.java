@@ -34,8 +34,7 @@ public class Chimeric_Mass {
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
 			final int charge=permanent.getCounters(MagicCounterType.Charge);
-			pt.power=charge;
-			pt.toughness=charge;
+			pt.set(charge,charge);
 		}
 		
 		@Override

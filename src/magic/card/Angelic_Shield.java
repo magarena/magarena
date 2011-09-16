@@ -26,7 +26,7 @@ public class Angelic_Shield {
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            pt.toughness += 1;
+            pt.add(0,1);
         }
     };
 	
