@@ -11,7 +11,6 @@ import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.variable.MagicStaticLocalVariable;
 
 public class MagicDealDamageAction extends MagicAction {
 
