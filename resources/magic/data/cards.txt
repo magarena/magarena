@@ -80,6 +80,19 @@ toughness=1
 ability=haste
 timing=fmain
 
+>Armament Master
+image=http://magiccards.info/scans/en/zen/1.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Kor,Soldier
+color=w
+converted=2
+cost={W}{W}
+power=2
+toughness=2
+timing=fmain
+
 >Armored Warhorse
 image=http://magiccards.info/scans/en/m12/7.jpg 
 value=2
