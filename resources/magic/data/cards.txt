@@ -1102,6 +1102,7 @@ converted=2
 cost={W}{W}
 power=2
 toughness=2
+ability=flying
 timing=main
 
 >Kor Sanctifiers
