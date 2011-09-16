@@ -5767,6 +5767,16 @@ converted=3
 cost={2}{G}
 timing=enchantment
 
+>Crescendo of War
+image=http://magiccards.info/scans/en/cmd/12.jpg
+value=3
+rarity=R
+type=Enchantment
+color=w
+converted=4
+cost={3}{W}
+timing=enchantment
+
 >Debtors' Knell
 image=http://magiccards.info/scans/en/gp/141.jpg
 value=5
