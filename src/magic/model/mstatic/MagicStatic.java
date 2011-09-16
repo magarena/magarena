@@ -26,6 +26,11 @@ public abstract class MagicStatic extends MagicDummyLocalVariable {
         filter = aFilter;
         layer = aLayer;
 	}
+    
+    protected MagicStatic(final MagicLayer aLayer) {
+        filter = MagicTargetFilter.SELF;
+        layer = aLayer;
+	}
 
     public void setCardIndex(final int cardIndex) {
         this.cardIndex = cardIndex;
@@ -40,7 +45,11 @@ public abstract class MagicStatic extends MagicDummyLocalVariable {
 	}
 
     public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-        return filter.accept(game, source.getController(), target) && condition(game, source, target);
+        if (filter == MagicTargetFilter.SELF) {
+            return source == target;
+        } else {
+            return filter.accept(game, source.getController(), target) && condition(game, source, target);
+        }
     }
     
     public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
