@@ -9,7 +9,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
-import magic.model.variable.MagicStaticLocalVariable;
 
 public class Cairn_Wanderer {
 	private static final long CAIRN_WANDERER_FLAGS=
@@ -27,7 +26,7 @@ public class Cairn_Wanderer {
 		MagicAbility.LANDWALK_FLAGS|
 		MagicAbility.PROTECTION_FLAGS;
 
-	private static final MagicLocalVariable CAIRN_WANDERER=new MagicDummyLocalVariable() {
+	public static final MagicLocalVariable CAIRN_WANDERER=new MagicDummyLocalVariable() {
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			long newFlags=0;
@@ -42,12 +41,4 @@ public class Cairn_Wanderer {
 			return flags|(newFlags & CAIRN_WANDERER_FLAGS);
 		}
 	};
-    
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-		    cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
-		    cdef.addLocalVariable(CAIRN_WANDERER);
-        }
-    };
 }

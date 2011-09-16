@@ -12,10 +12,9 @@ import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
-import magic.model.variable.MagicStaticLocalVariable;
 
 public class Nirkana_Cutthroat {
-	private static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
+	public static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final int charges=permanent.getCounters(MagicCounterType.Charge);
@@ -41,13 +40,4 @@ public class Nirkana_Cutthroat {
 	};
 
 	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.TWO_BLACK,3);
-	
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-		    cdef.addLocalVariable(LV);	
-		    cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
-		    cdef.setVariablePT();
-        }
-    };
 }

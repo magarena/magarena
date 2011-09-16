@@ -8,11 +8,9 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
-import magic.model.variable.MagicStaticLocalVariable;
 
 public class Ruthless_Cullblade {
-	
-	private static final MagicLocalVariable RUTHLESS_CULLBLADE=new MagicDummyLocalVariable() {
+	public static final MagicLocalVariable RUTHLESS_CULLBLADE=new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (game.getOpponent(permanent.getController()).getLife()<=10) {
@@ -21,12 +19,4 @@ public class Ruthless_Cullblade {
 			}
 		}		
 	};
-
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-            cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
-            cdef.addLocalVariable(RUTHLESS_CULLBLADE);	
-        }
-    };
 }

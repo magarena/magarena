@@ -4,7 +4,6 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
-import magic.model.variable.MagicStaticLocalVariable;
 import magic.ui.MagicFrame;
 
 import javax.swing.SwingUtilities;
@@ -49,7 +48,6 @@ public class MagicMain {
         CardDefinitions.getInstance().loadCardDefinitions();
         CubeDefinitions.getInstance().loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        MagicStaticLocalVariable.initializeCardDefinitions();
 	}
 	
 	private static void initialize() {

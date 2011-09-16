@@ -12,11 +12,9 @@ import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
-import magic.model.variable.MagicStaticLocalVariable;
 
 public class Student_of_Warfare {
-	
-    private static final MagicLocalVariable STUDENT_OF_WARFARE=new MagicDummyLocalVariable() {
+    public static final MagicLocalVariable STUDENT_OF_WARFARE=new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(
                 final MagicGame game,
@@ -46,15 +44,5 @@ public class Student_of_Warfare {
 		}
 	};
 
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(
-            MagicManaCost.WHITE,7);
-		
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-		    cdef.addLocalVariable(STUDENT_OF_WARFARE);	
-		    cdef.addLocalVariable(MagicStaticLocalVariable.getInstance());
-		    cdef.setVariablePT();
-        }
-    };
+	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.WHITE,7);
 }
