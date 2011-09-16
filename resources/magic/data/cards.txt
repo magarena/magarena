@@ -1131,6 +1131,19 @@ power=2
 toughness=3
 timing=main
 
+>Kor Spiritdancer
+image=http://magiccards.info/scans/en/roe/31.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Kor,Wizard
+color=w
+converted=2
+cost={1}{W}
+power=0
+toughness=2
+timing=main
+
 >Lhurgoyf
 image=http://magiccards.info/scans/en/cmd/165.jpg
 value=3
