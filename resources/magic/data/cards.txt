@@ -1236,6 +1236,18 @@ power=2
 toughness=2
 timing=fmain
 
+>Master of Etherium
+image=http://magiccards.info/scans/en/ddf/48.jpg
+value=3
+rarity=R
+type=Artifact,Creature
+subtype=Vedalken,Wizard
+color=u
+converted=3
+cost={2}{U}
+timing=fmain
+
+
 >Merfolk Sovereign
 image=http://magiccards.info/scans/en/m11/65.jpg
 value=3
