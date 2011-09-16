@@ -5,6 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
@@ -12,9 +13,10 @@ import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.variable.MagicLocalVariable;
+import magic.model.mstatic.MagicStatic;
 
 public class Student_of_Warfare {
-    public static final MagicLocalVariable STUDENT_OF_WARFARE=new MagicDummyLocalVariable() {
+    public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
 		@Override
 		public void getPowerToughness(
                 final MagicGame game,
@@ -28,7 +30,10 @@ public class Student_of_Warfare {
 				pt.power=3;
 				pt.toughness=3;
 			}
-		}		
+		}
+    };
+
+    public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
 		@Override
 		public long getAbilityFlags(
                 final MagicGame game,
@@ -42,7 +47,7 @@ public class Student_of_Warfare {
 			}
 			return flags;
 		}
-	};
+    };
 
 	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.WHITE,7);
 }
