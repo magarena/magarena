@@ -10,6 +10,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
 import java.util.List;
 import javax.swing.BoxLayout;
@@ -26,7 +27,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
-public class CardTable extends JPanel {
+public class CardTable extends JPanel implements ListSelectionListener {
 
 	private static final long serialVersionUID = 113243L;
 	
@@ -62,9 +63,8 @@ public class CardTable extends JPanel {
 		model.getColumn(CardTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostCellRenderer());
 		
 		// listener to change card image on selection
-		SelectionListener listener = new SelectionListener();
-		table.getSelectionModel().addListSelectionListener(listener);
-		model.getSelectionModel().addListSelectionListener(listener);
+		table.getSelectionModel().addListSelectionListener(this);
+		model.getSelectionModel().addListSelectionListener(this);
 		
 		// listener to sort on column header click
 		JTableHeader header = table.getTableHeader();
@@ -85,6 +85,10 @@ public class CardTable extends JPanel {
 		if (title.length() > 0) {
 			setTitle(title);
 		}			
+	}
+	
+	public void addMouseListener(MouseListener m) {
+		table.addMouseListener(m);
 	}
 	
 	public MagicCardDefinition getSelectedCard() {
@@ -118,6 +122,31 @@ public class CardTable extends JPanel {
 			titleBar = new TitleBar(title);
 			add(titleBar, BorderLayout.PAGE_START);
 		}
+	}
+	
+	@Override
+	public void valueChanged(final ListSelectionEvent e) {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				// If cell selection is enabled, both row and column change events are fired
+				if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
+					// Row selection changed				
+					MagicCardDefinition card = getSelectedCard();
+					if (card != null) {
+						lastSelectedCard = card;
+						cardViewer.setCard(card,0);
+					}
+				} /* else if (e.getSource() == table.getColumnModel().getSelectionModel() && table.getColumnSelectionAllowed() ){
+					// Column selection changed
+					int first = e.getFirstIndex();
+					int last = e.getLastIndex();
+				} */
+
+				/* if (e.getValueIsAdjusting()) {
+					// The mouse button has not yet been released
+				} */
+			}
+		});
 	}
 	
 	private class ColumnListener extends MouseAdapter {
@@ -166,32 +195,6 @@ public class CardTable extends JPanel {
 				
 			}
 			return myRender;
-		}
-	}
-
-	private class SelectionListener implements ListSelectionListener {
-		public void valueChanged(final ListSelectionEvent e) {
-			SwingUtilities.invokeLater(new Runnable() {
-				public void run() {
-					// If cell selection is enabled, both row and column change events are fired
-					if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
-						// Row selection changed				
-						MagicCardDefinition card = getSelectedCard();
-						if (card != null) {
-							lastSelectedCard = card;
-							cardViewer.setCard(card,0);
-						}
-					} /* else if (e.getSource() == table.getColumnModel().getSelectionModel() && table.getColumnSelectionAllowed() ){
-						// Column selection changed
-						int first = e.getFirstIndex();
-						int last = e.getLastIndex();
-					} */
-
-					/* if (e.getValueIsAdjusting()) {
-						// The mouse button has not yet been released
-					} */
-				}
-			});
 		}
 	}
 }

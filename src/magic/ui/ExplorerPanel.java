@@ -15,6 +15,8 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.List;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -152,14 +154,17 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// card pool
 		cardPoolDefs = filterPanel.getCardDefinitions();
-		cardPoolTable = (isEditingDeck()) ? new CardTable(cardPoolDefs, cardViewer, CARD_POOL_TITLE, true) : new CardTable(cardPoolDefs, cardViewer);
 
 		// deck
 		final Container cardsPanel; // reference panel holding both card pool and deck
 		
 		if (isEditingDeck()) {
+			cardPoolTable = new CardTable(cardPoolDefs, cardViewer, CARD_POOL_TITLE, true);
+			cardPoolTable.addMouseListener(new CardPoolMouseListener());
+			
 			deckDefs = getPlayer().getDeck();
 			deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs), true);
+			deckTable.addMouseListener(new DeckMouseListener());
 			
 			JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 			cardsSplitPane.setOneTouchExpandable(true);
@@ -174,6 +179,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			statsViewer.setPlayer(getPlayer());
 		} else {
 			// no deck
+			cardPoolTable = new CardTable(cardPoolDefs, cardViewer);
 			deckDefs = null;
 			deckTable = null;
 			
@@ -269,6 +275,32 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		}
 	}
 	
+	private void removeSelectedFromDeck() {
+		MagicCardDefinition deckCard = deckTable.getSelectedCard();
+		if (deckCard != null) {
+			getPlayer().getDeck().remove(deckCard);
+			updateDeck();
+		
+			// update deck stats
+			statsViewer.setPlayer(getPlayer());
+		} else {
+			// display error
+		}
+	}
+	
+	private void addSelectedToDeck() {
+		MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
+		if (cardPoolCard != null) {
+			getPlayer().getDeck().add(cardPoolCard);
+			updateDeck();
+		
+			// update deck stats
+			statsViewer.setPlayer(getPlayer());
+		} else {
+			// display error
+		}
+	}
+	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
 	
@@ -294,23 +326,27 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 					statsViewer.setPlayer(getPlayer());
 				}
 			} else if(source == addButton) {
-				MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
-				if (cardPoolCard != null) {
-					getPlayer().getDeck().add(cardPoolCard);
-					updateDeck();
-				
-					// update deck stats
-					statsViewer.setPlayer(getPlayer());
-				}
+				addSelectedToDeck();
 			} else if(source == removeButton) {
-				MagicCardDefinition deckCard = deckTable.getSelectedCard();
-				if (deckCard != null) {
-					getPlayer().getDeck().remove(deckCard);
-					updateDeck();
-				
-					// update deck stats
-					statsViewer.setPlayer(getPlayer());
-				}
+				removeSelectedFromDeck();
+			}
+		}
+	}
+	
+	private class CardPoolMouseListener extends MouseAdapter {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(isEditingDeck() && e.getClickCount() > 1) {
+				addSelectedToDeck();
+			}
+		}
+	}
+	
+	private class DeckMouseListener extends MouseAdapter {
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			if(isEditingDeck() && e.getClickCount() > 1) {
+				removeSelectedFromDeck();
 			}
 		}
 	}
