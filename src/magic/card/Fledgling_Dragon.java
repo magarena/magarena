@@ -1,7 +1,7 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;

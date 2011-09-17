@@ -14,7 +14,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicBecomeTargetPicker;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 

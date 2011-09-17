@@ -8,7 +8,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 

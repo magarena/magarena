@@ -14,7 +14,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.MagicAbility;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;

@@ -16,7 +16,7 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTapTargetPicker;
 import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 

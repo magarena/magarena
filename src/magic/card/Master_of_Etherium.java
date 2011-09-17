@@ -1,7 +1,7 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicStatic;

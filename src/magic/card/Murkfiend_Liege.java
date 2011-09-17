@@ -10,7 +10,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 

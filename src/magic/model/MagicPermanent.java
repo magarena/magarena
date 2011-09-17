@@ -18,6 +18,7 @@ import magic.model.variable.MagicLocalVariable;
 import magic.model.variable.MagicLocalVariableList;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicPermanentStatic;
+import magic.model.mstatic.MagicLayer;
 
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
@@ -357,16 +358,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			return cachedTurnPowerToughness;
 		}
 		
+        //get starting P/T from card def or CDA
 		final MagicPowerToughness pt=new MagicPowerToughness(cardDefinition.getPower(),cardDefinition.getToughness());
-		for (final MagicLocalVariable localVariable : localVariables) {
+
+        //apply local variables
+        for (final MagicLocalVariable localVariable : localVariables) {
 			localVariable.getPowerToughness(game,this,pt);
-		}		
-        for (final MagicPermanentStatic mpstatic : game.getStatics()) {
-            final MagicStatic mstatic = mpstatic.getStatic();
-            if (mstatic.accept(game, mpstatic.getPermanent(),this)) {
-                mstatic.getPowerToughness(game, this, pt);
-            }
-        }
+		}
+
+        //apply global effects
+        MagicLayer.getPowerToughness(game, this, pt);
+
+        //apply turn effects
 		if (turn) {
 			pt.add(turnPowerIncr, turnToughnessIncr);
 		}
@@ -440,16 +443,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     private long getCurrentAbilityFlags(final MagicGame game) {
 		long flags=cardDefinition.getAbilityFlags();
+
+        //apply local variables
 		for (final MagicLocalVariable localVariable : localVariables) {
 			flags=localVariable.getAbilityFlags(game,this,flags);
 		}
-        for (final MagicPermanentStatic mpstatic : game.getStatics()) {
-            final MagicStatic mstatic = mpstatic.getStatic();
-            if (mstatic.accept(game, mpstatic.getPermanent(), this)) {
-                flags = mstatic.getAbilityFlags(game, this, flags);
-            }
-        }
-        return flags;
+
+        //apply global effects
+        return MagicLayer.getAbilityFlags(game, this, flags);
     }
 	
 	public long getAllAbilityFlags(final MagicGame game) {

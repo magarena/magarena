@@ -14,7 +14,7 @@ import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 

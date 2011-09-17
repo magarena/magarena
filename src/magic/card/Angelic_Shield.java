@@ -18,7 +18,7 @@ import magic.model.target.MagicBounceTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.mstatic.MagicStatic;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 
 public class Angelic_Shield {
     public static final MagicStatic S = new MagicStatic(

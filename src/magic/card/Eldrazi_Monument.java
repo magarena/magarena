@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;

@@ -8,7 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicWhenTargetedTrigger;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicLayer;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
