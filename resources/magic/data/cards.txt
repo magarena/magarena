@@ -1634,6 +1634,19 @@ power=1
 toughness=1
 timing=main
 
+>Sparkmage Apprentice
+image=http://magiccards.info/scans/en/m10/158.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=r
+converted=2
+cost={1}{R}
+power=1
+toughness=1
+timing=main
+
 >Stillmoon Cavalier
 image=http://magiccards.info/scans/en/eve/95.jpg
 value=3
@@ -1713,6 +1726,47 @@ cost={6}
 power=1
 toughness=1
 timing=main
+
+>Vampire Aristocrat
+image=http://magiccards.info/scans/en/m10/117.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Vampire,Rogue
+color=b
+converted=3
+cost={2}{B}
+power=2
+toughness=2
+timing=main
+
+>Veteran Armorsmith
+image=http://magiccards.info/scans/en/m10/38.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=2
+cost={W}{W}
+power=2
+toughness=3
+static=player
+timing=fmain
+
+>Veteran Swordsmith
+image=http://magiccards.info/scans/en/m10/39.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+power=3
+toughness=2
+static=player
+timing=fmain
 
 >Veteran of the Depths
 image=http://magiccards.info/scans/en/lw/46.jpg
