@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicCounterType;
-import magic.model.MagicLayer;
 import magic.model.target.MagicTargetFilter;
 
 public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
@@ -48,6 +47,10 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
 	
 	public MagicStatic getStatic() {
 		return mstatic;
+	}
+	
+    public MagicLayer getLayer() {
+		return mstatic.getLayer();
 	}
 	
 	@Override
