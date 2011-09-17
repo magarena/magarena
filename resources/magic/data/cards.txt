@@ -66,6 +66,19 @@ toughness=6
 ability=flying
 timing=main
 
+>Angelfire Crusader
+image=http://magiccards.info/scans/en/ap/1.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Human,Soldier,Knight
+color=w
+converted=4
+cost={3}{W}
+power=2
+toughness=3
+timing=main
+
 >Arc Runner
 image=http://magiccards.info/scans/en/m11/123.jpg
 value=2
@@ -229,6 +242,20 @@ toughness=2
 ability=flying,hexproof
 timing=fmain
 
+>Aven Flock
+image=http://magiccards.info/scans/en/9e/4.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+color=w
+converted=5
+cost={4}{W}
+power=2
+toughness=3
+ability=flying
+timing=main
+
 >Aven Mimeomancer
 image=http://magiccards.info/scans/en/arb/2.jpg
 value=4
@@ -269,6 +296,20 @@ cost={2}{W}
 power=2
 toughness=2
 ability=first strike
+timing=main
+
+>Balshan Collaborator
+image=http://magiccards.info/scans/en/tr/25.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Bird,Soldier
+color=u
+converted=4
+cost={3}{U}
+power=2
+toughness=2
+ability=flying
 timing=main
 
 >Battlegrace Angel
@@ -351,6 +392,20 @@ converted=2
 cost={1}{W}
 power=1
 toughness=2
+timing=main
+
+>Blistering Dieflyn
+image=http://magiccards.info/scans/en/shm/82.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Imp
+color=r
+converted=4
+cost={3}{R}
+power=0
+toughness=1
+ability=flying
 timing=main
 
 >Blood Seeker
