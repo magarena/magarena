@@ -34,7 +34,9 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	public static final int SPELL = 2;	
 	
 	private static final String CLOSE_BUTTON_TEXT = "Close";
-	private static final String SWAP_BUTTON_TEXT = "Swap Selected Cards";
+	private static final String SWAP_BUTTON_TEXT = "Swap";
+	private static final String ADD_BUTTON_TEXT = "Add";
+	private static final String REMOVE_BUTTON_TEXT = "Remove";
 	private static final String CARD_POOL_TITLE = "Card Pool";
  	private static final int SPACING=10;
 	
@@ -49,6 +51,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private final ExplorerFilterPanel filterPanel;
 	private final JButton closeButton;
 	private final JButton swapButton;
+	private final JButton addButton;
+	private final JButton removeButton;
 	
 	private List<MagicCardDefinition> cardPoolDefs;
 	private MagicDeck deckDefs;
@@ -67,14 +71,30 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// create swap button for deck editing
 		if (isEditingDeck()) {
+			addButton = new JButton(ADD_BUTTON_TEXT);
+			addButton.setFocusable(false);
+			addButton.addActionListener(this);
+			buttonsPanel.add(addButton);
+			
+			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
+			
 			swapButton = new JButton(SWAP_BUTTON_TEXT);
 			swapButton.setFocusable(false);
 			swapButton.addActionListener(this);
 			buttonsPanel.add(swapButton);
 			
-			buttonsPanel.add(Box.createHorizontalStrut(SPACING));			
+			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
+			
+			removeButton = new JButton(REMOVE_BUTTON_TEXT);
+			removeButton.setFocusable(false);
+			removeButton.addActionListener(this);
+			buttonsPanel.add(removeButton);
+			
+			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 		} else {
 			swapButton = null;
+			addButton = null;
+			removeButton = null;
 		}
 		
 		// close button
@@ -257,16 +277,36 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			} else {
 				frame.closeCardExplorer();
 			}
-		} else if (source == swapButton && isEditingDeck()) {
-			MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
-			MagicCardDefinition deckCard = deckTable.getSelectedCard();
-			if (cardPoolCard != null && deckCard != null) {
-				getPlayer().getDeck().remove(deckCard);
-				getPlayer().getDeck().add(cardPoolCard);
-				updateDeck();
-			
-				// update deck stats
-				statsViewer.setPlayer(getPlayer());
+		} else if (isEditingDeck()) {
+			if(source == swapButton) {
+				MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
+				MagicCardDefinition deckCard = deckTable.getSelectedCard();
+				if (cardPoolCard != null && deckCard != null) {
+					getPlayer().getDeck().remove(deckCard);
+					getPlayer().getDeck().add(cardPoolCard);
+					updateDeck();
+				
+					// update deck stats
+					statsViewer.setPlayer(getPlayer());
+				}
+			} else if(source == addButton) {
+				MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
+				if (cardPoolCard != null) {
+					getPlayer().getDeck().add(cardPoolCard);
+					updateDeck();
+				
+					// update deck stats
+					statsViewer.setPlayer(getPlayer());
+				}
+			} else if(source == removeButton) {
+				MagicCardDefinition deckCard = deckTable.getSelectedCard();
+				if (deckCard != null) {
+					getPlayer().getDeck().remove(deckCard);
+					updateDeck();
+				
+					// update deck stats
+					statsViewer.setPlayer(getPlayer());
+				}
 			}
 		}
 	}
