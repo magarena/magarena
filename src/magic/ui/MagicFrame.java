@@ -39,6 +39,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String NAME="Magarena";
 	private static final String SAVE_TOURNAMENT_ITEM="Save";
 	private static final String RESTART_TOURNAMENT_ITEM="Restart";
+	private static final String NEW_DECK_ITEM="NewDeck";
 	private static final String LOAD_DECK_ITEM="LoadDeck";
 	private static final String SAVE_DECK_ITEM="SaveDeck";
 	private static final String SWAP_DECKS_ITEM="Swap";
@@ -58,6 +59,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem loadTournamentItem;
 	private JMenuItem saveTournamentItem;
 	private JMenuItem restartTournamentItem;
+	private JMenuItem newDeckItem;
 	private JMenuItem loadDeckItem;
 	private JMenuItem saveDeckItem;
 	private JMenuItem swapDecksItem;
@@ -147,6 +149,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			saveTournamentItem.setEnabled(enabled);
 		} else if (RESTART_TOURNAMENT_ITEM.equals(item)) {
 			restartTournamentItem.setEnabled(enabled);
+		} else if (NEW_DECK_ITEM.equals(item)) {
+			newDeckItem.setEnabled(enabled);
 		} else if (LOAD_DECK_ITEM.equals(item)) {
 			loadDeckItem.setEnabled(enabled);
 		} else if (SAVE_DECK_ITEM.equals(item)) {
@@ -202,6 +206,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		addContent(content);
 		enableMenuItem(SAVE_TOURNAMENT_ITEM,false);
 		enableMenuItem(RESTART_TOURNAMENT_ITEM,false);
+		enableMenuItem(NEW_DECK_ITEM,false);
 		enableMenuItem(LOAD_DECK_ITEM,false);
 		enableMenuItem(SAVE_DECK_ITEM,false);
 		enableMenuItem(SWAP_DECKS_ITEM,false);
@@ -240,6 +245,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 		tournamentMenu.add(restartTournamentItem);
 		
 		tournamentMenu.addSeparator();
+		
+		newDeckItem=new JMenuItem("New deck");
+		newDeckItem.addActionListener(this);
+		tournamentMenu.add(newDeckItem);
 		
 		loadDeckItem=new JMenuItem("Load deck");
 		loadDeckItem.addActionListener(this);
@@ -328,6 +337,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 			tournamentPanel=newTournamentPanel;
 			enableMenuItem(SAVE_TOURNAMENT_ITEM,true);
 			enableMenuItem(RESTART_TOURNAMENT_ITEM,true);
+			enableMenuItem(NEW_DECK_ITEM,tournament.isEditable());
 			enableMenuItem(LOAD_DECK_ITEM,tournament.isEditable());
 			enableMenuItem(SAVE_DECK_ITEM,tournament.isEditable());
 			enableMenuItem(SWAP_DECKS_ITEM,tournament.isEditable());
@@ -373,6 +383,17 @@ public class MagicFrame extends JFrame implements ActionListener {
 		if (tournament!=null) {
 			tournament.restart();
 			showTournament();
+		}
+	}
+	
+	private void newDeck() {
+		if (tournamentPanel!=null) {
+			final MagicPlayerDefinition player=tournamentPanel.getSelectedPlayer();
+			player.setDeck(new MagicDeck());
+			tournamentPanel.updateDecksAfterEdit();
+			if(explorerPanel != null) {
+				explorerPanel.updateDeck();
+			}
 		}
 	}
 	
@@ -530,6 +551,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			saveTournament();
 		} else if (source==restartTournamentItem) {
 			restartTournament();
+		} else if (source==newDeckItem) {
+			newDeck();
 		} else if (source==loadDeckItem) {
 			loadDeck();
 		} else if (source==saveDeckItem) {
