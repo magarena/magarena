@@ -474,6 +474,33 @@ power=2
 toughness=2
 timing=main
 
+>Cavern Thoctar
+image=http://magiccards.info/scans/en/ala/125.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=6
+cost={5}{G}
+power=5
+toughness=5
+timing=main
+
+>Char-Rumbler
+image=http://magiccards.info/scans/en/fut/96.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=4
+cost={2}{R}{R}
+power=-1
+toughness=3
+ability=double strike
+timing=main
+
 >Chasm Drake
 image=http://magiccards.info/scans/en/m12/48.jpg
 value=3
