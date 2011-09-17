@@ -164,8 +164,6 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.Negative,"target creature or player");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_LAND=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_LAND,true,MagicTargetHint.Negative,"target creature or land");
-	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_ARTIFACT=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_ARTIFACT,true,MagicTargetHint.Negative,"target artifact or creature");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_OR_ENCHANTMENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_ENCHANTMENT,true,MagicTargetHint.Negative,"target creature or enchantment");
 	public static final MagicTargetChoice POS_TARGET_CREATURE_OR_PLAYER=

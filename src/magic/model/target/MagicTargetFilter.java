@@ -348,20 +348,6 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
-	
-	MagicTargetFilter TARGET_CREATURE_OR_ARTIFACT=new MagicTargetFilter() {
-		
-		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
-			final MagicPermanent permanent=(MagicPermanent)target;
-			return permanent.isCreature()||permanent.isArtifact();
-		}		
-
-		public boolean acceptType(final MagicTargetType targetType) {
-			
-			return targetType==MagicTargetType.Permanent;
-		}
-	};
 
 	MagicTargetFilter TARGET_CREATURE_OR_ENCHANTMENT=new MagicTargetFilter() {
 		

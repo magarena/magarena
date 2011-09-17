@@ -23,7 +23,7 @@ public class Putrefy {
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_ARTIFACT,
+                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,
                     new MagicDestroyTargetPicker(true),
                     new Object[]{cardOnStack},
                     this,
