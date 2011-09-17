@@ -1305,6 +1305,19 @@ power=2
 toughness=2
 timing=fmain
 
+>Marrow Chomper
+image=http://magiccards.info/scans/en/arb/93.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Zombie,Lizard
+color=bg
+converted=5
+cost={3}{B}{G}
+power=3
+toughness=3
+timing=main
+
 >Master of Etherium
 image=http://magiccards.info/scans/en/ddf/48.jpg
 value=3
@@ -1638,6 +1651,19 @@ cost={2}{U}
 power=3
 toughness=1
 ability=flying,can't block creatures without flying
+timing=main
+
+>Skullmulcher
+image=http://magiccards.info/scans/en/ala/148.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=5
+cost={4}{G}
+power=3
+toughness=3
 timing=main
 
 >Soul Warden
