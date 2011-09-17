@@ -21,6 +21,7 @@ import java.util.List;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
@@ -285,6 +286,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			statsViewer.setPlayer(getPlayer());
 		} else {
 			// display error
+			JOptionPane.showMessageDialog(frame, "Select a valid card in the deck to remove it.", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
@@ -298,12 +300,12 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			statsViewer.setPlayer(getPlayer());
 		} else {
 			// display error
+			JOptionPane.showMessageDialog(frame, "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-	
 		final Object source=event.getSource();
 		
 		if (source == closeButton) {
@@ -317,6 +319,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			if(source == swapButton) {
 				MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
 				MagicCardDefinition deckCard = deckTable.getSelectedCard();
+				
 				if (cardPoolCard != null && deckCard != null) {
 					getPlayer().getDeck().remove(deckCard);
 					getPlayer().getDeck().add(cardPoolCard);
@@ -324,6 +327,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 				
 					// update deck stats
 					statsViewer.setPlayer(getPlayer());
+				} else {
+					JOptionPane.showMessageDialog(frame, "Select valid cards in the card pool and deck to swap them.", "Error", JOptionPane.ERROR_MESSAGE);
 				}
 			} else if(source == addButton) {
 				addSelectedToDeck();
