@@ -338,21 +338,42 @@ public class MagicCardDefinition {
 	}
 	
 	public String getTypeString() {
+		StringBuffer sb = new StringBuffer();
 		if (isLand()) {
-			return MagicType.Land.toString();
-		} else if (isCreature()) {
-			return MagicType.Creature.toString();
-		} else if (isArtifact()) {
-			return MagicType.Artifact.toString();
-		} else if (isEnchantment()) {
-			return MagicType.Enchantment.toString();
-		} else if (isInstant()) {
-			return MagicType.Instant.toString();
-		} else if (isSorcery()) {
-			return MagicType.Sorcery.toString();
+			sb.append(MagicType.Land.toString());
+		} 
+		if (isArtifact()) {
+			if (sb.length() > 0) {
+				sb.append(" ");
+			}
+			sb.append(MagicType.Artifact.toString());
+		} 
+		if (isCreature()) {
+			if (sb.length() > 0) {
+				sb.append(" ");
+			}
+			sb.append(MagicType.Creature.toString());
+		} 
+		if (isEnchantment()) {
+			if (sb.length() > 0) {
+				sb.append(" ");
+			}
+			sb.append(MagicType.Enchantment.toString());
+		} 
+		if (isInstant()) {
+			if (sb.length() > 0) {
+				sb.append(" ");
+			}
+			sb.append(MagicType.Instant.toString());
+		} 
+		if (isSorcery()) {
+			if (sb.length() > 0) {
+				sb.append(" ");
+			}
+			sb.append(MagicType.Sorcery.toString());
 		}
 		
-		return "";	
+		return sb.toString();	
 	}
 
 	public boolean usesStack() {
