@@ -166,9 +166,7 @@ public class ImagePermanentViewer extends JPanel {
 	}
 			
 	@Override
-	public void paint(final Graphics g) {
-		super.paint(g);
-		
+	public void paintComponent(final Graphics g) {		
 		g.setFont(FontsAndBorders.FONT1);
 		final FontMetrics metrics=g.getFontMetrics();
 		final Graphics2D g2d=(Graphics2D)g;

@@ -71,7 +71,7 @@ public class ZoneBackgroundLabel extends JLabel {
 	}
 	
 	@Override
-	public void paint(final Graphics g) {
+	public void paintComponent(final Graphics g) {
 
 		final Dimension size=getSize();
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
@@ -130,7 +130,5 @@ public class ZoneBackgroundLabel extends JLabel {
 			paintZone(g,theme.getTexture(Theme.TEXTURE_BACKGROUND),
                     new Rectangle(0,0,size.width,size.height),stretchTexture);
 		}
-		
-		super.paint(g);
 	}
 }

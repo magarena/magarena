@@ -126,10 +126,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 	}
 
 	@Override
-	public void paint(final Graphics g) {
-		
-		super.paint(g);
-		
+	public void paintComponent(final Graphics g) {		
 		if (cardList.isEmpty()) {
 			return;
 		}

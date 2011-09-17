@@ -153,8 +153,7 @@ public class ImageViewer extends JPanel implements DelayedViewer {
 	}
 
 	@Override
-	public void paint(final Graphics g) {
-		super.paint(g);
+	public void paintComponent(final Graphics g) {
         if (scaled) {
             final Graphics2D g2d=(Graphics2D)g;
             g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);		

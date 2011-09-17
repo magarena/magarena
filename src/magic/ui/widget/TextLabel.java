@@ -147,9 +147,7 @@ public class TextLabel extends JPanel {
 	}
 	
 	@Override
-	public void paint(final Graphics g) {
-
-		super.paint(g);
+	public void paintComponent(final Graphics g) {
 		
 		if (desktopHintsMap!=null) {
 			((Graphics2D)g).addRenderingHints(desktopHintsMap);

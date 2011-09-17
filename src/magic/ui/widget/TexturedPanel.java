@@ -31,7 +31,7 @@ public class TexturedPanel extends JPanel {
 		return start;
 	}
 	
-	public void paint(final Graphics g) {
+	public void paintComponent(final Graphics g) {
 		
 		final BufferedImage image=ThemeFactory.getInstance().getCurrentTheme().getTexture(Theme.TEXTURE_COMPONENT);
 		final int imageWidth=image.getWidth();
@@ -53,7 +53,5 @@ public class TexturedPanel extends JPanel {
 				g.drawImage(image,x,y,this);
 			}
 		}		
-		
-		super.paint(g);
 	}	
 }

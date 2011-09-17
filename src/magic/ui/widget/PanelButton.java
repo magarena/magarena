@@ -65,8 +65,7 @@ public abstract class PanelButton extends TexturedPanel {
 	public abstract Color getValidColor();
 
 	@Override
-	public void paint(final Graphics g) {
-		super.paint(g);
+	public void paintComponent(final Graphics g) {
 		final Dimension size=getSize();
 		if (valid) {
 			final Graphics2D g2d=(Graphics2D)g;
