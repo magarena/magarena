@@ -1061,7 +1061,7 @@ public class MagicGame {
 		statics.add(permanentStatic);
 	}
     
-    public List<MagicPermanentStatic> getStatics(MagicLayer layer) {
+    public Collection<MagicPermanentStatic> getStatics(MagicLayer layer) {
         return statics.get(layer);
 	}
 	
