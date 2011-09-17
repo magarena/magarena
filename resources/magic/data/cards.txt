@@ -1447,6 +1447,19 @@ toughness=7
 ability=attacks each turn if able
 timing=main
 
+>Scion of Oona
+image=http://magiccards.info/scans/en/lw/83.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Faerie,Soldier
+converted=3
+cost={2}{U}
+power=1
+toughness=1
+ability=flash,flying
+timing=flash
+
 >Scroll Thief
 image=http://magiccards.info/scans/en/m11/72.jpg
 value=3
