@@ -86,6 +86,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		disableUpdate = false;
 		
+		setBorder(BorderFactory.createRaisedBevelBorder() );
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		// Type
@@ -269,9 +270,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		if (cardDefinition.isToken()) {
 			return false;
 		}
-		if (cube!=null&&!cube.containsCard(cardDefinition)) {
+		
+		/* if (cube!=null&&!cube.containsCard(cardDefinition)) {
 			return false;
-		}
+		} */
 				
 		/* switch (mode) {
 			case ExplorerPanel.LAND: 
@@ -286,9 +288,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 				break;
 		} */
 		
-		if (profile!=null&&!cardDefinition.isBasic()&&!cardDefinition.isPlayable(profile)) {
+		/* if (profile!=null&&!cardDefinition.isBasic()&&!cardDefinition.isPlayable(profile)) {
 			return false;
-		}
+		} */
 		
 		// name search
 		final String filterString = nameTextField.getText();
