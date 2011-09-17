@@ -2,13 +2,6 @@ package magic.ui;
 
 import magic.data.IconImages;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -23,6 +16,14 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.WindowConstants;
 
 class AboutDialog extends JDialog implements ActionListener {
 
@@ -36,9 +37,7 @@ class AboutDialog extends JDialog implements ActionListener {
 	private static final String FORUM_URL = "http://www.slightlymagic.net/forum/"
 			+ "viewforum.php?f=82&sid=08ef9e6ebbb231a0c7ef65b3f12a5d77";
 	private static final String REPO_URL = "http://code.google.com/p/magarena/";
-	private static final String GNU_TEXT = "This program is free software: you "
-			+ "can redistribute it and/or modify it under the terms of the GNU "
-			+ "General Public License as published by the Free Software Foundation.";
+	private static final String GNU_TEXT = "<html>This program is free software: you<br />can redistribute it and/or modify it under the terms of the GNU<br />General Public License as published by the Free Software Foundation.</html>";
 	private static final String forumDisplayLink = "www.slightlymagic.net";
 	private static final String repoDisplayLink = "code.google.com/p/magarena";
 
@@ -137,13 +136,11 @@ class AboutDialog extends JDialog implements ActionListener {
 			}
 		});
 
-		final JTextArea gnuTextArea = new JTextArea(GNU_TEXT);
-		gnuTextArea.setBounds(210, 220, 367, 50);
-		gnuTextArea.setFont(FONT_SMALL);
-		gnuTextArea.setEditable(false);
-		gnuTextArea.setOpaque(false);
-		gnuTextArea.setLineWrap(true);
-		aboutPanel.add(gnuTextArea);
+		final JLabel gnuLabel = new JLabel(GNU_TEXT);
+		gnuLabel.setBounds(210, 190, 367, 50);
+		gnuLabel.setFont(FONT_SMALL);
+		gnuLabel.setOpaque(false);
+		aboutPanel.add(gnuLabel);
 
 		okButton = new JButton("OK");
 		okButton.setFocusable(false);
