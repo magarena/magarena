@@ -67,7 +67,6 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		// new button
 		newButton=new JButton(NEW_BUTTON_TEXT);
-		// newButton.setFont(FontsAndBorders.FONT4);
 		newButton.addActionListener(this);
 		newButton.setFocusable(false);
 		buttonsPanel.add(newButton);
@@ -76,7 +75,6 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		// play button
 		playButton=new JButton(PLAY_BUTTON_TEXT);
-		// playButton.setFont(FontsAndBorders.FONT4);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
 		playButton.setEnabled(!tournament.isFinished());
@@ -171,8 +169,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			// contents of tab
 			JPanel tabPanel = new JPanel();
 			SpringLayout tabLayout = new SpringLayout();
-			tabPanel.setLayout(tabLayout);
-			// tabPanel.setOpaque(false);
+			tabPanel.setLayout(tabLayout);			
 			tabPanel.add(cardTables[i]);
 			tabPanel.add(rightPanel);
 			
@@ -192,7 +189,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 								 SPACING, SpringLayout.NORTH, tabPanel);
 			
 			// add as a tab
-			tabbedPane.addTab(player.getName(), theme.getAvatarIcon(player.getFace(), 2), tabPanel);
+			tabbedPane.addTab(player.getName() + "   ", theme.getAvatarIcon(player.getFace(), 2), tabPanel);
 		}
 		
 		add(tabbedPane);
