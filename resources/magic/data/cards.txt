@@ -91,6 +91,7 @@ converted=2
 cost={W}{W}
 power=2
 toughness=2
+static=player
 timing=fmain
 
 >Armored Warhorse
@@ -443,7 +444,8 @@ converted=3
 cost={2}{B}
 power=1
 toughness=3
-timing=main
+static=player
+timing=fmain
 
 >Crabapple Cohort
 image=http://magiccards.info/scans/en/shm/109.jpg
@@ -1129,7 +1131,8 @@ converted=1
 cost={G}
 power=1
 toughness=1
-timing=main
+static=player
+timing=fmain
 
 
 >Judge of Currents
@@ -1284,6 +1287,7 @@ subtype=Vedalken,Wizard
 color=u
 converted=3
 cost={2}{U}
+static=player
 timing=fmain
 
 
@@ -1497,6 +1501,7 @@ cost={2}{U}
 power=1
 toughness=1
 ability=flash,flying
+static=player
 timing=flash
 
 >Scroll Thief
@@ -5935,6 +5940,7 @@ type=Enchantment
 color=w
 converted=4
 cost={3}{W}
+static=all
 timing=enchantment
 
 >Crucible of Fire
@@ -5945,6 +5951,7 @@ type=Enchantment
 color=r
 converted=4
 cost={3}{R}
+static=player
 timing=enchantment
 
 >Debtors' Knell
