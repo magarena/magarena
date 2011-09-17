@@ -128,7 +128,11 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// add scrolling to left side
 		JScrollPane leftScrollPane = new JScrollPane(leftPanel);
-		leftScrollPane.setBorder(null);
+		leftScrollPane.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+		leftScrollPane.setBackground(java.awt.Color.green);
+		leftPanel.setOpaque(false);
+		leftPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+		leftPanel.setBackground(java.awt.Color.yellow);
 		leftScrollPane.setOpaque(false);
 		leftScrollPane.getViewport().setOpaque(false);
 		add(leftScrollPane);

@@ -7,13 +7,13 @@ import magic.ui.widget.CostPanel;
 import magic.ui.widget.TitleBar;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
-import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
 import javax.swing.BoxLayout;
-import javax.swing.JLabel;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -50,6 +50,7 @@ public class CardTable extends JPanel {
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // allow only single row selection
 		table.setRowHeight(20);
+		table.setGridColor(new Color(194, 197, 203));
 		
 		// set column widths
 		TableColumnModel model = table.getColumnModel();
@@ -148,11 +149,22 @@ public class CardTable extends JPanel {
 			CostPanel myRender = new CostPanel((MagicManaCost) value);
 			
 			// match border and background formatting with default
-			JLabel defaultRender = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
-			myRender.setBackground(defaultRender.getBackground());
-			myRender.setBorder(defaultRender.getBorder());
-			myRender.setOpaque(true);
+			JComponent defaultRender = (JComponent) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
 			
+			myRender.setOpaque(defaultRender.isOpaque());
+			myRender.setBorder(defaultRender.getBorder());
+
+			if (isSelected) {
+				myRender.setForeground(table.getSelectionForeground());
+				myRender.setBackground(table.getSelectionBackground());
+			} else {
+				myRender.setForeground(getForeground());
+				// We have to create a new color object because Nimbus returns
+				// a color of type DerivedColor, which behaves strange, not sure
+				// why.
+				myRender.setBackground(new Color(getBackground().getRed(), getBackground().getGreen(), getBackground().getBlue()));
+				
+			}
 			return myRender;
 		}
 	}

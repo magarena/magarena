@@ -36,6 +36,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	private static final long serialVersionUID = 1L;
 	
 	public static final Dimension PREFERRED_SIZE = new Dimension(270, 170);
+	public static final Dimension START_BUTTON_SIZE = new Dimension(75,50);
 
 	private static final String PURPOSE=
 		"<html><body>"+
@@ -135,7 +136,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 		
 		startButton=new JButton(IconImages.START);
 		startButton.setFocusable(false);
-		startButton.setPreferredSize(new Dimension(75,0));
+		startButton.setPreferredSize(START_BUTTON_SIZE);
 		startButton.addActionListener(this);
 		centerPanel.add(startButton,BorderLayout.EAST);
 		

@@ -5,9 +5,15 @@ import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
 import magic.ui.MagicFrame;
+import magic.ui.widget.BlankPainter;
 
-import javax.swing.SwingUtilities;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Insets;
 import java.io.File;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
 
 public class MagicMain {
 	
@@ -28,6 +34,30 @@ public class MagicMain {
 	
 	public static void main(final String args[]) {	
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
+		
+		// try to set the look and feel
+	    try {
+			for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+				if ("Nimbus".equals(info.getName())) {
+					UIManager.setLookAndFeel(info.getClassName());
+					break;
+				}
+			}
+			
+			// customize nimbus look
+			UIManager.getLookAndFeelDefaults().put("Table.showGrid", true);
+			UIManager.getLookAndFeelDefaults().put("ScrollPane[Enabled].borderPainter", new BlankPainter()); // removes hardcoded border
+			// UIManager.getLookAndFeelDefaults().put("ScrollPane.contentMargins", new Insets(0, 0, 0, 0));	
+			// UIManager.getLookAndFeelDefaults().put("Viewport.background", Color.yellow);
+			// UIManager.getLookAndFeelDefaults().put("Panel.disabled", Color.black);	
+			// UIManager.getLookAndFeelDefaults().put("ScrollPane.disabled", Color.green);	
+			// UIManager.getLookAndFeelDefaults().put("Viewport.background", Color.yellow);		
+		} 
+		catch (Exception e) {
+			System.err.println("Unable to set look and feel. Probably missing the latest version of Java 6.");
+			e.printStackTrace();
+		}
+		
 		initialize();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -35,6 +65,7 @@ public class MagicMain {
             }
         });
 	}	
+		
 
 	public static String getGamePath() {
 		return gamePath;

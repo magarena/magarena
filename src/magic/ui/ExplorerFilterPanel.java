@@ -47,7 +47,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private static final String FILTER_BUTTON_TEXT = "Filter";
 	private static final String HIDE_BUTTON_TEXT = "Hide";
 	private static final String RESET_BUTTON_TEXT = "Reset";
-	private static final Dimension BUTTON_SIZE = new Dimension(70, 20);
+	private static final Dimension BUTTON_SIZE = new Dimension(70, 25);
 	private static final int SEARCH_FIELD_WIDTH = 12;
 	private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 	private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
@@ -86,7 +86,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		disableUpdate = false;
 		
-		setBorder(BorderFactory.createRaisedBevelBorder() );
+		setBorder(BorderFactory.createRaisedBevelBorder());
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		// Type
@@ -99,10 +99,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		colorPopup = addFilterPopupPanel("Color");
 		Border border = BorderFactory.createLoweredBevelBorder();
 		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
-		final JPanel colorsPanel=new JPanel(new GridLayout(1,MagicColor.NR_COLORS));
+		final JPanel colorsPanel=new JPanel();
+		colorsPanel.setLayout(new BoxLayout(colorsPanel, BoxLayout.X_AXIS));
 		colorsPanel.setBorder(border);
 		colorsPanel.setOpaque(false);
-		colorPopup.setPopupSize(280, 120);
+		colorPopup.setPopupSize(280, 90);
 		for (int i = 0; i < MagicColor.NR_COLORS; i++) {
 			final MagicColor color = MagicColor.values()[i];
 			final JPanel colorPanel=new JPanel();
@@ -111,6 +112,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			colorCheckBoxes[i].addActionListener(this);
 			colorCheckBoxes[i].setOpaque(false);
 			colorCheckBoxes[i].setFocusPainted(false);
+			colorCheckBoxes[i].setAlignmentY(Component.CENTER_ALIGNMENT);
 			colorCheckBoxes[i].setActionCommand(Character.toString(color.getSymbol()));
 			colorPanel.add(colorCheckBoxes[i]);
 			colorPanel.add(new JLabel(color.getManaType().getIcon(true)));

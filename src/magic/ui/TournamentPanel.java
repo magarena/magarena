@@ -172,7 +172,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			JPanel tabPanel = new JPanel();
 			SpringLayout tabLayout = new SpringLayout();
 			tabPanel.setLayout(tabLayout);
-			tabPanel.setOpaque(false);
+			// tabPanel.setOpaque(false);
 			tabPanel.add(cardTables[i]);
 			tabPanel.add(rightPanel);
 			
