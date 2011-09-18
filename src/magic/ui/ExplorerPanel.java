@@ -158,6 +158,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		filterScrollPane.setBorder(null);
 		filterScrollPane.setOpaque(false);
 		filterScrollPane.getViewport().setOpaque(false);
+		filterScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 		add(filterScrollPane);
 		
 		// card pool
@@ -244,7 +245,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 							 
 		// buttons' gap (top right bottom)
         springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
-                             -20, SpringLayout.EAST, leftScrollPane);
+                             0, SpringLayout.EAST, leftScrollPane);
         springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
                              -SPACING, SpringLayout.NORTH, buttonsPanel);
         springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
