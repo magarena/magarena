@@ -25,7 +25,7 @@ public class TitleBar extends JPanel {
 		label.setForeground(theme.getColor(Theme.COLOR_TITLE_FOREGROUND));
 		label.setBackground(theme.getColor(Theme.COLOR_TITLE_BACKGROUND));
 		label.setPreferredSize(new Dimension(0,20));
-		label.setBorder(FontsAndBorders.BLACK_BORDER);
+		label.setBorder(FontsAndBorders.NO_TARGET_BORDER);
 		add(label,BorderLayout.CENTER);		
 	}
 	
