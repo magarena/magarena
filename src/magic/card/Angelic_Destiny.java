@@ -11,6 +11,7 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPlayAuraEvent;
@@ -18,9 +19,22 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 public class Angelic_Destiny {
+	                	
+    private static final MagicStatic Angel = new MagicStatic(MagicLayer.Type) {
+        @Override
+        public EnumSet<MagicSubType> getSubTypeFlags(
+                final MagicPermanent permanent,
+                final EnumSet<MagicSubType> flags) {
+            final EnumSet<MagicSubType> mod = flags.clone();
+            mod.add(MagicSubType.Angel);
+            return mod;
+        }
+    };
+
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
             MagicPumpTargetPicker.getInstance()){
@@ -35,18 +49,7 @@ public class Angelic_Destiny {
 	        final boolean success = event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
 	            public void doAction(final MagicPermanent creature) {
 	                game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));
-	                creature.addLocalVariable(
-	                	new MagicDummyLocalVariable() {
-	                		@Override
-	                		public EnumSet<MagicSubType> getSubTypeFlags(
-	                				final MagicPermanent permanent,
-	                				final EnumSet<MagicSubType> flags) {
-	                			final EnumSet<MagicSubType> mod = flags.clone();
-	                            mod.add(MagicSubType.Angel);
-	                			return mod;
-	                		}
-	                	}
-	                );
+                    game.doAction(new MagicAddStaticAction(creature, Angel));
 	            }
 	        });
 			if (!success) {
