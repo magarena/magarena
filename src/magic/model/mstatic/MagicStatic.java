@@ -12,6 +12,9 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
 
 public abstract class MagicStatic extends MagicDummyLocalVariable {
+
+    public static final boolean UntilEOT = true;
+
     //permanents affected by the static effect
     protected MagicTargetFilter filter;
 
