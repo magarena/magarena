@@ -150,8 +150,11 @@ jar: $(MAG)
 %.g: $(MAG)
 	$(JAVA) -DrndSeed=$* magic.MagicMain |& tee $*.log
 
+inf: $(MAG)
+	-while true; do make `date +%H%M%S`.t; done
+
 test: $(MAG)
-	-while true; do make `date +%s`.t; done
+	-make `date +%H%M%S`.g
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
