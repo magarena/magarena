@@ -303,6 +303,7 @@ public class GeneralConfig {
 		properties.setProperty(MAXIMIZED,String.valueOf(maximized));
 		properties.setProperty(THEME,theme);
 		properties.setProperty(AVATAR,avatar);
+		properties.setProperty(HIGHLIGHT,highlight);
 		properties.setProperty(TEXT_VIEW,String.valueOf(textView));
 		properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));
 		properties.setProperty(ALWAYS_PASS,String.valueOf(alwaysPass));

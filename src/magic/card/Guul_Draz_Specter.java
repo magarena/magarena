@@ -1,17 +1,15 @@
 package magic.card;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicSpecterTrigger;
 import magic.model.trigger.MagicTrigger;
-import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.variable.MagicLocalVariable;
 
 public class Guul_Draz_Specter {
-    public static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
+	public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (game.getOpponent(permanent.getController()).getHand().isEmpty()) {

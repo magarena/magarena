@@ -1,19 +1,16 @@
 package magic.card;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.variable.MagicLocalVariable;
-
 import java.util.Collection;
 
 public class Kird_Ape {
-	public static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
+	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final Collection<MagicTarget> targets =

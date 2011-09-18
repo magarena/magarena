@@ -13,7 +13,7 @@ import magic.model.variable.MagicLocalVariable;
 import java.util.Collection;
 
 public class Dungrove_Elder {
-    //Characteristic definining ability
+    //Characteristic defining ability
 	public static final MagicLocalVariable DUNGROVE_ELDER = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
