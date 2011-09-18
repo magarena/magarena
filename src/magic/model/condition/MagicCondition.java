@@ -116,7 +116,7 @@ public interface MagicCondition {
 
 	MagicCondition METALCRAFT_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().getNrOfPermanentsWithType(MagicType.Artifact)>=3;
+			return source.getController().getNrOfPermanentsWithType(MagicType.Artifact,game)>=3;
 		}
     };
 
@@ -150,37 +150,37 @@ public interface MagicCondition {
 		
 	MagicCondition CONTROL_BAT_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithSubType(MagicSubType.Bat);
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Bat,game);
 		}
 	};
 
 	MagicCondition CONTROL_BEAST_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithSubType(MagicSubType.Beast);
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Beast,game);
 		}
 	};
 	
 	MagicCondition CONTROL_GOBLIN_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithSubType(MagicSubType.Goblin);
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Goblin,game);
 		}
 	};
 	
     MagicCondition ONE_CREATURE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=1;
+			return source.getController().getNrOfPermanentsWithType(MagicType.Creature,game)>=1;
 		}
 	};
 	
 	MagicCondition TWO_CREATURES_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=2;
+			return source.getController().getNrOfPermanentsWithType(MagicType.Creature,game)>=2;
 		}
 	};
 
 	MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return game.getOpponent(source.getController()).getNrOfPermanentsWithType(MagicType.Land)>=4;
+			return game.getOpponent(source.getController()).getNrOfPermanentsWithType(MagicType.Land,game)>=4;
 		}
 	};
 	
