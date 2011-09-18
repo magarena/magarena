@@ -14,13 +14,11 @@ public class MagicCleanupPlayerAction extends MagicAction {
     private int oldBlockers;
 	
 	public MagicCleanupPlayerAction(final MagicPlayer player) {
-		
 		this.player=player;
 	}
 
 	@Override
 	public void doAction(final MagicGame game) {
-
 		oldStateFlags=player.getStateFlags();
 		player.setStateFlags(oldStateFlags&MagicPlayerState.CLEANUP_MASK);
 
