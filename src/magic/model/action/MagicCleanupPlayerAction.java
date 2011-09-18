@@ -32,7 +32,7 @@ public class MagicCleanupPlayerAction extends MagicAction {
         player.setNrOfBlockers(0);
 		
 		for (final MagicPermanent permanent : player.getPermanents()) {
-			if (permanent.isCreature()) {
+			if (permanent.isCreature(game)) {
 				game.doAction(new MagicCleanupCreatureAction(permanent));
 			} else {
 				game.doAction(new MagicCleanupPermanentAction(permanent));
