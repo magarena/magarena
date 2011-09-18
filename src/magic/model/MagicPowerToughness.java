@@ -35,4 +35,9 @@ public class MagicPowerToughness {
 		power     = pAmount;
 		toughness = tAmount;
 	}
+
+    @Override
+    public String toString() {
+        return power + "/" + toughness;
+    }
 }
