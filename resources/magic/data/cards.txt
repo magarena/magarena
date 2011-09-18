@@ -1935,6 +1935,19 @@ power=2
 toughness=2
 timing=fmain
 
+>Viridian Betrayers
+image=http://magiccards.info/scans/en/nph/124.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=3
+cost={1}{G}{G}
+power=3
+toughness=1
+timing=main
+
 >Viridian Shaman
 image=http://magiccards.info/scans/en/10e/308.jpg
 value=3
