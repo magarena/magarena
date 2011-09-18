@@ -541,16 +541,24 @@ public class MagicCardDefinition {
 		this.power = power;
 	}
 
-	public int getPower() {
-		return power;
+    public int getCardPower() {
+        return power;
+    }
+
+	public int getPower(final MagicGame game) {
+		return genPowerToughness(game).power();
 	}
 	
 	public void setToughness(final int toughness) {
 		this.toughness = toughness;
 	}
+
+    public int getCardToughness() {
+        return toughness;
+    }
 	
-	public int getToughness() {
-		return toughness;
+	public int getToughness(final MagicGame game) {
+		return genPowerToughness(game).toughness();
 	}	
 
     public MagicPowerToughness genPowerToughness(final MagicGame game) {
