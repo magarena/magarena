@@ -5,14 +5,13 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.variable.MagicLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 import java.util.Collection;
 
 public class Earth_Servant {
-	//Characteristic defining ability
-	public static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
+	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final Collection<MagicTarget> targets =

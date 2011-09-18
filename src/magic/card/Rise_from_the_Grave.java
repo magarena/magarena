@@ -14,14 +14,32 @@ import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 public class Rise_from_the_Grave {
+    private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
+         @Override
+         public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+             final EnumSet<MagicSubType> mod = flags.clone();
+             mod.add(MagicSubType.Zombie);
+             return mod;
+         }
+    };
+    
+    private static final MagicStatic Black = new MagicStatic(MagicLayer.Color) {
+         @Override
+         public int getColorFlags(final MagicPermanent permanent,final int flags) {
+             return flags|MagicColor.Black.getMask();
+         }
+    };
+
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -48,30 +66,18 @@ public class Rise_from_the_Grave {
 			event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     final MagicPlayer player = (MagicPlayer)data[1];
-                    if (targetCard.getOwner().getGraveyard().contains(targetCard)) {
-            			game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-            			final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,player,MagicPlayCardAction.NONE);
-            			 game.doAction(action);
-            			 final MagicPermanent permanent = action.getPermanent();
-            			 final int color = permanent.getColorFlags(game);
-                         permanent.addLocalVariable(
-                        		 new MagicDummyLocalVariable() {
-                        			 @Override
-                        			 public EnumSet<MagicSubType> getSubTypeFlags(
-                        					 final MagicPermanent permanent,
-                        					 final EnumSet<MagicSubType> flags) {
-                        				 final EnumSet<MagicSubType> mod = flags.clone();
-                        				 mod.add(MagicSubType.Zombie);
-                        				 return mod;
-                        			 }
-                        			 
-                        			 @Override
-                        			 public int getColorFlags(final MagicPermanent permanent,final int flags) {
-                        				 return MagicColor.Black.getMask()|color;
-                        			 }
-                        		 }
-                        );
-            		}
+
+                    if (!targetCard.getOwner().getGraveyard().contains(targetCard)) {
+                        return;
+                    }
+                    
+                    final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,player,MagicPlayCardAction.NONE);
+                    game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                    game.doAction(action);
+
+                    final MagicPermanent permanent = action.getPermanent();
+                    game.doAction(new MagicAddStaticAction(permanent, Zombie));
+                    game.doAction(new MagicAddStaticAction(permanent, Black));
                 }
 			});
 		}

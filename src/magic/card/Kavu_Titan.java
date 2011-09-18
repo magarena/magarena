@@ -9,13 +9,26 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 public class Kavu_Titan {
+                    
+    private static MagicStatic Trample = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public long getAbilityFlags(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final long flags) {
+            return flags|MagicAbility.Trample.getMask();
+        }
+    };
+
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -43,17 +56,7 @@ public class Kavu_Titan {
 			final MagicPermanent permanent=action.getPermanent();
 			if (kicked) {
 				permanent.changeCounters(MagicCounterType.PlusOne,3);
-				permanent.addLocalVariable(
-                    new MagicDummyLocalVariable() {
-                        @Override
-                        public long getAbilityFlags(
-                            final MagicGame game,
-                            final MagicPermanent permanent,
-                            final long flags) {
-                            return flags|MagicAbility.Trample.getMask();
-                        }
-                    }
-                );
+                game.doAction(new MagicAddStaticAction(permanent, Trample));
 			}
 		}
 	};
