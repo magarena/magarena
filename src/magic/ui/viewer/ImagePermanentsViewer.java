@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.data.CardImagesProvider;
 import magic.ui.GameController;
 
 import javax.swing.JPanel;
@@ -18,6 +19,9 @@ public class ImagePermanentsViewer extends JPanel {
 	private static final int POSITION_SPACING = 60;
 	private static final int HORIZONTAL_SPACING = 40;
 	private static final int VERTICAL_SPACING = 30;
+	private static final float CARD_WIDTH = (float) CardImagesProvider.CARD_WIDTH;
+	private static final float CARD_HEIGHT = (float) CardImagesProvider.CARD_HEIGHT;
+	private static final float CARD_ASPECT_RATIO = CARD_WIDTH / CARD_HEIGHT;
 
 	private final GameController controller;
 	private List<ImagePermanentViewer> viewers;
@@ -33,9 +37,9 @@ public class ImagePermanentsViewer extends JPanel {
 		validChoices=Collections.emptySet();
 	}
 
-	private static int divideOverXRows(final int numRows, final List<ImagePermanentViewer> cards, final int maxCardsPerRow) {
+	private static int divideIntoRows(final List<ImagePermanentViewer> cards, final int maxCardsPerRow, final int startingRow) {
 		int numCardsThisRow = 0;
-		int currentRow = 1;
+		int currentRow = startingRow;
 		
 		for(ImagePermanentViewer card : cards) {
 			if(numCardsThisRow + 1 > maxCardsPerRow) {
@@ -50,17 +54,33 @@ public class ImagePermanentsViewer extends JPanel {
 		
 		return currentRow;		
 	}
+	
+	private static int divideAllIntoRows(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures, final int maxCardsPerRow) {
+			System.out.println(" ------- divideAllIntoRows (" +  creatures.size() + ", " + nonCreatures.size() + ", " + maxCardsPerRow + ")");
+		int currentRow = divideIntoRows(creatures, maxCardsPerRow, 1);
+		if(creatures.size() > 0) { // creatures go in separate row from others
+			currentRow++;
+		}
+				
+		return divideIntoRows(nonCreatures, maxCardsPerRow, currentRow);		
+	}
 
-	private int calculatePositions(final List<ImagePermanentViewer> aViewers) {
+	private int calculateAndSetPositions(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures) {
 		int currentRow=1;
 		int x=0;
 		int y=0;
 		int maxWidth=0;
 		int rowHeight=0;
+		
+		List<ImagePermanentViewer> aViewers = new ArrayList<ImagePermanentViewer>();
+		aViewers.addAll(creatures); // creatures appear before non-creatures
+		aViewers.addAll(nonCreatures);
+		
 		int prevPosition=aViewers.get(0).getPosition();
+			// System.out.println(" ------- calculatePositions" );
 
 		for (final ImagePermanentViewer viewer : aViewers) {
-		
+			// System.out.println(viewer.getLogicalRow() + " " );
 			if (currentRow!=viewer.getLogicalRow()) {
 				currentRow++;
 				x=0;
@@ -103,24 +123,19 @@ public class ImagePermanentsViewer extends JPanel {
 		return (1000*scaleMult)/scaleDiv;
 	}
 
-	private void calculateOptimalPositions(final List<ImagePermanentViewer> cards) {		
+	private void calculateOptimalPositions(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures) {		
 		final float screenWidth = (float) getWidth();
 		final float screenHeight = (float) getHeight();
-		final int numCards = cards.size();
+		final int numCards = creatures.size() + nonCreatures.size();
 		
 		if(numCards > 0 && screenWidth > 0 && screenHeight > 0) { // ignore cases where drawing doesn't matter
-			final float cardWidth = (float) cards.get(0).getLogicalSize().getWidth();
-			final float cardHeight = (float) cards.get(0).getLogicalSize().getHeight();
-			
-			final float cardAspectRatio = cardWidth / cardHeight;
-			
 			int r;
 			int bestNumRows = 1;
-			int maxCardsForBestNumRow = 0;
+			int maxCardsForBestNumRow = 1;
 			float largestScaledCardSize = 0;
 		
 			// approximate number of rows needed to contain all the cards
-			for(r = 1; r < Math.sqrt(numCards); r++) {
+			for(r = (creatures.size() == 0 || nonCreatures.size() == 0) ? 1 : 2; r < numCards; r++) {
 				float numCardsPerRow = (float) Math.ceil((float) numCards / r); // avoid lost of precision
 				
 				// max width and height for a card using this number of rows
@@ -128,14 +143,14 @@ public class ImagePermanentsViewer extends JPanel {
 				float scaledCardWidth = screenWidth / numCardsPerRow;
 				
 				// change width or height to maintain aspect ratio
-				if (scaledCardWidth / scaledCardHeight > cardAspectRatio) {
+				if (scaledCardWidth / scaledCardHeight > CARD_ASPECT_RATIO) {
 					// height is limiting factor on size of scaled card
-					scaledCardWidth = (scaledCardHeight / cardHeight) * cardWidth;
+					scaledCardWidth = (scaledCardHeight / CARD_HEIGHT) * CARD_WIDTH;
 				} else {
 					// width is limiting factor on size of scaled card
-					scaledCardHeight = (scaledCardWidth / cardWidth) * cardHeight;;
+					scaledCardHeight = (scaledCardWidth / CARD_WIDTH) * CARD_HEIGHT;;
 				}
-				numCardsPerRow = screenWidth / scaledCardWidth; // scaled -> more cards can fit per row
+				numCardsPerRow = (float) Math.ceil(screenWidth / scaledCardWidth); // scaled -> more cards can fit per row
 				
 				// set best possible
 				final float scaledCardSize = scaledCardWidth * scaledCardHeight;
@@ -146,21 +161,33 @@ public class ImagePermanentsViewer extends JPanel {
 				}
 			}
 			
-			divideOverXRows(bestNumRows, cards, maxCardsForBestNumRow);
-			calculatePositions(cards);
+			divideAllIntoRows(creatures, nonCreatures, maxCardsForBestNumRow);
+			calculateAndSetPositions(creatures, nonCreatures);
 		}
 	}
 	
 	public void viewPermanents(final Collection<PermanentViewerInfo> permanentInfos) {
-		final List<ImagePermanentViewer> newViewers=new ArrayList<ImagePermanentViewer>();
+			System.out.println("------- viewPermanents " +  permanentInfos.size());
+		final List<ImagePermanentViewer> creatures = new ArrayList<ImagePermanentViewer>();
+		final List<ImagePermanentViewer> nonCreatures = new ArrayList<ImagePermanentViewer>();
+		final List<ImagePermanentViewer> newViewers = new ArrayList<ImagePermanentViewer>();
+		
 		for (final PermanentViewerInfo permanentInfo : permanentInfos) {
-			newViewers.add(new ImagePermanentViewer(this,permanentInfo));
+			ImagePermanentViewer perm = new ImagePermanentViewer(this,permanentInfo);
+			if(permanentInfo.creature) {
+				creatures.add(perm);
+			} else {
+				nonCreatures.add(perm);
+			}
+			newViewers.add(perm); // permanentInfos has a specific order
 		}
-		calculateOptimalPositions(newViewers);
+		
+		calculateOptimalPositions(creatures, nonCreatures);
+		
 		removeAll();
 		for (final ImagePermanentViewer viewer : newViewers) {
 			add(viewer);
-		}		
+		}
 		viewers=newViewers;		
 		revalidate();
 		repaint();
