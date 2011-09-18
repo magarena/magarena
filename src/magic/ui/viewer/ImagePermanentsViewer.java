@@ -65,9 +65,6 @@ public class ImagePermanentsViewer extends JPanel {
 	private int divideAllIntoRows(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures, final int maxCardsPerRow) {
 		final List<ImagePermanentViewer> firstCards = (isTop) ? nonCreatures : creatures;
 		final List<ImagePermanentViewer> secondCards = (isTop) ? creatures : nonCreatures;
-		
-		System.out.println("divideAllIntoRows(" + creatures.size() + ", " + nonCreatures.size() + ", " + maxCardsPerRow + ")");		
-		System.out.println(" firstCards == creatures: " + (firstCards == creatures));
 	
 		int currentRow = divideIntoRows(firstCards, maxCardsPerRow, 1);
 		if(firstCards.size() > 0) { // creatures go in separate row from others
