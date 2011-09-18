@@ -42,6 +42,12 @@ public class MagicPermanentStaticMap {
     public void add(final MagicPermanentStatic mpstatic) {
         effects.get(mpstatic.getLayer()).add(mpstatic);
     }
+
+    public void addAll(final Collection<MagicPermanentStatic> mpstatics) {
+        for (final MagicPermanentStatic mpstatic : mpstatics) {
+            add(mpstatic);
+        }
+    }
     
     public void remove(final MagicPermanent permanent,final Collection<MagicPermanentStatic> removedStatics) {
 	    for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
@@ -49,6 +55,19 @@ public class MagicPermanentStaticMap {
             for (final Iterator<MagicPermanentStatic> iterator = statics.iterator();iterator.hasNext();) {
                 final MagicPermanentStatic permanentStatic = iterator.next();
                 if (permanentStatic.getPermanent() == permanent) {
+                    iterator.remove();
+                    removedStatics.add(permanentStatic);
+                }
+            }
+        }
+    }
+    
+    public void removeTurn(final Collection<MagicPermanentStatic> removedStatics) {
+	    for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
+            final Collection<MagicPermanentStatic> statics = layer.getValue();
+            for (final Iterator<MagicPermanentStatic> iterator = statics.iterator();iterator.hasNext();) {
+                final MagicPermanentStatic permanentStatic = iterator.next();
+                if (permanentStatic.getStatic().isUntilEOT()) {
                     iterator.remove();
                     removedStatics.add(permanentStatic);
                 }
