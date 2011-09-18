@@ -7,10 +7,12 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.variable.MagicDummyLocalVariable;
 import java.util.Collection;
 
 public class Master_of_Etherium {
-	public static final MagicStatic S1 = new MagicStatic(MagicLayer.CDAPT) {
+    //Characteristic defining ability
+	public static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(
                 final MagicGame game,

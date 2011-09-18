@@ -85,7 +85,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		this.card=card;
 		this.cardDefinition=card.getCardDefinition();
 		this.controller=controller;
-		localVariables=new MagicLocalVariableList(cardDefinition.getLocalVariables());
+		localVariables=new MagicLocalVariableList();
 		equipmentPermanents=new MagicPermanentSet();
 		auraPermanents=new MagicPermanentSet();
 		blockingCreatures=new MagicPermanentList();
@@ -292,15 +292,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (turnColorFlags!=NO_COLOR_FLAGS) {
 			return turnColorFlags;
 		}
-		if (isCreature()) {
-			int flags=cardDefinition.getColorFlags();
-			for (final MagicLocalVariable localVariable : localVariables) {
-				
-				flags=localVariable.getColorFlags(this,flags);
-			}
-			return flags;
-		}
-		return cardDefinition.getColorFlags();
+        
+        int flags=cardDefinition.getColorFlags();
+        for (final MagicLocalVariable localVariable : localVariables) {
+            flags=localVariable.getColorFlags(this,flags);
+        }
+        return flags;
 	}
 		
 	public void changeCounters(final MagicCounterType counterType,final int amount) {
@@ -358,8 +355,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			return cachedTurnPowerToughness;
 		}
 		
-        //get starting P/T from card def or CDA
-		final MagicPowerToughness pt=new MagicPowerToughness(cardDefinition.getPower(),cardDefinition.getToughness());
+        //get starting P/T from card def (includes CDA)
+		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game);
 
         //apply local variables
         for (final MagicLocalVariable localVariable : localVariables) {
