@@ -571,6 +571,17 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_WHITE_CREATURE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+            final MagicPermanent permanent = (MagicPermanent)target;
+            return permanent.isCreature(game) && MagicColor.White.hasColor(permanent.getColorFlags(game));
+		}
+
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_WHITE_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			if (target.getController() == player) {
