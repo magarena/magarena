@@ -11,8 +11,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.variable.MagicLocalVariable;
 import magic.model.mstatic.MagicStatic;
 
 public class Student_of_Warfare {

@@ -25,7 +25,6 @@ import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicTrigger;
-import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
