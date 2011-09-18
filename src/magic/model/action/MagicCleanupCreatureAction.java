@@ -18,10 +18,8 @@ public class MagicCleanupCreatureAction extends MagicAction {
 	private int oldDamage;
 	private int oldPreventDamage;
 	private int oldStateFlags;
-	private List<MagicLocalVariable> oldTurnLocalVariables;
 
 	MagicCleanupCreatureAction(final MagicPermanent permanent) {
-		
 		this.permanent=permanent;
 	}
 
@@ -44,7 +42,6 @@ public class MagicCleanupCreatureAction extends MagicAction {
 		permanent.setPreventDamage(0);
 		oldStateFlags=permanent.getStateFlags();
 		permanent.setStateFlags(oldStateFlags&MagicPermanentState.CLEANUP_MASK);
-		oldTurnLocalVariables=permanent.removeTurnLocalVariables();
 	}
 
 	@Override
@@ -58,6 +55,5 @@ public class MagicCleanupCreatureAction extends MagicAction {
 		permanent.setDamage(oldDamage);
 		permanent.setPreventDamage(oldPreventDamage);
 		permanent.setStateFlags(oldStateFlags);
-		permanent.addTurnLocalVariables(oldTurnLocalVariables);
 	}
 }
