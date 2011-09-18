@@ -147,6 +147,18 @@ public class GeneralConfig {
 		this.avatar=avatar;
 	}
 	
+	public boolean isHighlightNone() {
+		return "none".equals(highlight);
+	}
+	
+	public boolean isHighlightOverlay() {
+		return "overlay".equals(highlight);
+	}
+	
+	public boolean isHighlightTheme() {
+		return "theme".equals(highlight);
+	}
+	
 	public String getHighlight() {
 		return highlight;
 	}

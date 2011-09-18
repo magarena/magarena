@@ -167,18 +167,15 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
 			//show that card is a valid choice
 			if (validChoices.contains(card)) {
-				final String highlight = GeneralConfig.getInstance().getHighlight();
-				System.err.println("cardlistviewer:"+highlight); //output = cardlistviewer:overlay
-				if (highlight == "overlay" ||
-					(highlight == "theme" &&
+				if (GeneralConfig.getInstance().isHighlightOverlay() ||
+					(GeneralConfig.getInstance().isHighlightTheme() &&
 					ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay())) {
 						final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
 						//draw a transparent overlay of choiceColor
 						g2d.setPaint(choiceColor);
 						g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
 				}
-				else if (highlight != "none"){
-					System.err.println("cardlistviewer (should not get here):"+highlight); //output = cardlistviewer (should not get here):overlay
+				else if (!GeneralConfig.getInstance().isHighlightNone()){
 					final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
 					//draw a one pixel border of choiceColor
 					g2d.setPaint(new Color(choiceColor.getRGB()));

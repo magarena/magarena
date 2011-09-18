@@ -229,9 +229,8 @@ public class ImagePermanentViewer extends JPanel {
 			}
 					
 			if (viewer.isValidChoice(linkedInfo)) {
-				final String highlight = GeneralConfig.getInstance().getHighlight();
-				if (highlight == "overlay" ||
-					(highlight == "theme" &&
+				if (GeneralConfig.getInstance().isHighlightOverlay() ||
+					(GeneralConfig.getInstance().isHighlightTheme() &&
 					ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay())) {
 					final Color choiceColor = viewer.getController().isCombatChoice() ?
 								ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE) :
@@ -241,7 +240,7 @@ public class ImagePermanentViewer extends JPanel {
 						g2d.setPaint(choiceColor);
 						g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
 				}
-				else if (highlight != "none"){
+				else if (!GeneralConfig.getInstance().isHighlightNone()){
 					final Color choiceColor = viewer.getController().isCombatChoice() ?
 							ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE_BORDER) :
 							ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
