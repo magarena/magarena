@@ -19,7 +19,8 @@ public class MagicPlayerDefinition {
 	private boolean artificial;
 	private MagicPlayerProfile profile;
 	private int face;
-	private MagicDeck deck=new MagicDeck();
+	private final MagicDeck deck = new MagicDeck();
+    private final MagicDeck unsupported = new MagicDeck();
 
 	MagicPlayerDefinition() {}
 	
@@ -108,13 +109,17 @@ public class MagicPlayerDefinition {
 		return deck;
 	}	
 	
-	void generateDeck(final DeckGenerator generator) {
-		this.deck=generator.generateDeck(DECK_SIZE, profile);
-		addBasicLandsToDeck();
-	}
+    public void setDeck(final MagicDeck aDeck) {
+        deck.setContent(aDeck);
+	}	
 	
-	public void setDeck(final MagicDeck deck) {
-		this.deck=deck;
+    public MagicDeck getUnsupported() {
+		return unsupported;
+	}	
+	
+	void generateDeck(final DeckGenerator generator) {
+		generator.generateDeck(DECK_SIZE, profile, deck);
+		addBasicLandsToDeck();
 	}
 	
 	private static String getDeckPrefix(final String prefix,final int index) {
@@ -133,7 +138,12 @@ public class MagicPlayerDefinition {
             final String deckPrefix = getDeckPrefix(prefix,index);
             if (properties.containsKey(deckPrefix)) {
                 final String tName = properties.getProperty(deckPrefix);
-                deck.add(CardDefinitions.getInstance().getCard(tName));
+                final MagicCardDefinition cdef = CardDefinitions.getInstance().getCard(tName);
+                if (cdef.isValid()){
+                    deck.add(cdef);
+                } else {
+                    unsupported.add(cdef);
+                }
             }
         }
 	}

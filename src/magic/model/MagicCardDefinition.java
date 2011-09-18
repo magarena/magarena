@@ -119,6 +119,10 @@ public class MagicCardDefinition {
 		System.err.println(numLocalVariables + " local variables");
     }
 
+    public boolean isValid() {
+        return true;
+    }
+
     public void addIgnore(final long size) {
         //lazy initialization of the ignore list
         if (ignore == null) {
