@@ -221,7 +221,12 @@ public class CardDefinitions {
 	public MagicCardDefinition getCard(final String name) {
 		final MagicCardDefinition cardDefinition=cardsMap.get(name);
 		if (cardDefinition == null) {
-		    throw new RuntimeException("No card definition found for " + name);
+            return new MagicCardDefinition(name) {
+                @Override
+                public boolean isValid() {
+                    return false;
+                }
+            };
 		}
 		return cardDefinition;
 	}
