@@ -890,7 +890,7 @@ public interface MagicTargetFilter {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent=(MagicPermanent)target;
-			return permanent.isCreature() && permanent.getCardDefinition().getPower() <= 2;
+			return permanent.isCreature() && permanent.getCardDefinition().getPower(game) <= 2;
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {	
@@ -901,7 +901,7 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_CREATURE_POWER_4_OR_MORE = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent = (MagicPermanent)target;
-			return permanent.isCreature() && permanent.getCardDefinition().getPower() >= 4;
+			return permanent.isCreature() && permanent.getCardDefinition().getPower(game) >= 4;
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {	
