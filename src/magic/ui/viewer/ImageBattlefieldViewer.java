@@ -44,7 +44,7 @@ public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer {
 		iconLabel.setBorder(FontsAndBorders.BLACK_BORDER);
 		leftPanel.add(iconLabel,BorderLayout.NORTH);
 		
-		permanentsViewer=new ImagePermanentsViewer(controller);
+		permanentsViewer=new ImagePermanentsViewer(controller, opponent);
 		add(permanentsViewer,BorderLayout.CENTER);
 		
 		permanentFilter=new PermanentFilter(this,controller);

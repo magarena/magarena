@@ -24,11 +24,18 @@ public class ImagePermanentsViewer extends JPanel {
 	private static final float CARD_ASPECT_RATIO = CARD_WIDTH / CARD_HEIGHT;
 
 	private final GameController controller;
+	private final boolean isTop;
+	
 	private List<ImagePermanentViewer> viewers;
 	private Set<Object> validChoices;
 	
 	public ImagePermanentsViewer(final GameController controller) {
-		this.controller=controller;
+		this(controller, false);
+	}
+	
+	public ImagePermanentsViewer(final GameController controller, final boolean isTop) {
+		this.controller = controller;
+		this.isTop = isTop;
 		
 		setLayout(null);
 		setOpaque(false);
@@ -55,13 +62,19 @@ public class ImagePermanentsViewer extends JPanel {
 		return currentRow;		
 	}
 	
-	private static int divideAllIntoRows(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures, final int maxCardsPerRow) {
-		int currentRow = divideIntoRows(creatures, maxCardsPerRow, 1);
-		if(creatures.size() > 0) { // creatures go in separate row from others
+	private int divideAllIntoRows(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures, final int maxCardsPerRow) {
+		final List<ImagePermanentViewer> firstCards = (isTop) ? nonCreatures : creatures;
+		final List<ImagePermanentViewer> secondCards = (isTop) ? creatures : nonCreatures;
+		
+		System.out.println("divideAllIntoRows(" + creatures.size() + ", " + nonCreatures.size() + ", " + maxCardsPerRow + ")");		
+		System.out.println(" firstCards == creatures: " + (firstCards == creatures));
+	
+		int currentRow = divideIntoRows(firstCards, maxCardsPerRow, 1);
+		if(firstCards.size() > 0) { // creatures go in separate row from others
 			currentRow++;
 		}
 				
-		return divideIntoRows(nonCreatures, maxCardsPerRow, currentRow);		
+		return divideIntoRows(secondCards, maxCardsPerRow, currentRow);		
 	}
 
 	private int calculateAndSetPositions(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures) {
@@ -72,8 +85,13 @@ public class ImagePermanentsViewer extends JPanel {
 		int rowHeight=0;
 		
 		List<ImagePermanentViewer> aViewers = new ArrayList<ImagePermanentViewer>();
-		aViewers.addAll(creatures); // creatures appear before non-creatures
-		aViewers.addAll(nonCreatures);
+		if(isTop) {
+			aViewers.addAll(nonCreatures);
+			aViewers.addAll(creatures);
+		} else {
+			aViewers.addAll(creatures);
+			aViewers.addAll(nonCreatures);
+		}
 		
 		int prevPosition=aViewers.get(0).getPosition();
 
