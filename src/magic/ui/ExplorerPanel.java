@@ -26,6 +26,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
+import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
 
 
@@ -143,6 +144,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		leftPanel.setBackground(java.awt.Color.yellow);
 		leftScrollPane.setOpaque(false);
 		leftScrollPane.getViewport().setOpaque(false);
+		leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		add(leftScrollPane);
 		
 		// filters
