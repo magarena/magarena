@@ -25,8 +25,6 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
-import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.variable.MagicLocalVariable;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.mstatic.MagicStatic;
