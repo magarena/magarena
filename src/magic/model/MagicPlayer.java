@@ -348,22 +348,20 @@ public class MagicPlayer implements MagicTarget {
 		return cardCounter.getCount(cardDefinitionIndex);
 	}
 	
-	public int getNrOfPermanentsWithType(final MagicType type) {
+	public int getNrOfPermanentsWithType(final MagicType type, final MagicGame game) {
 		int count=0;
 		for (final MagicPermanent permanent : permanents) {
-			
-			if (permanent.hasType(type)) {
+			if (permanent.hasType(type,game)) {
 				count++;
 			}
 		}
 		return count;
 	}
 
-	private int getNrOfPermanentsWithSubType(final MagicSubType subType) {
+	private int getNrOfPermanentsWithSubType(final MagicSubType subType, final MagicGame game) {
 		int count=0;
 		for (final MagicPermanent permanent : permanents) {
-			
-			if (permanent.hasSubType(subType)) {
+			if (permanent.hasSubType(subType, game)) {
 				count++;
 			}
 		}
@@ -412,18 +410,18 @@ public class MagicPlayer implements MagicTarget {
 		return blockers;
 	}
 	
-	public boolean controlsPermanentWithType(final MagicType type) {
+	public boolean controlsPermanentWithType(final MagicType type, final MagicGame game) {
 		for (final MagicPermanent permanent : permanents) {
-			if (permanent.hasType(type)) {
+			if (permanent.hasType(type,game)) {
 				return true;
 			}
 		}
 		return false;
 	}
 	
-	public boolean controlsPermanentWithSubType(final MagicSubType subType) {
+	public boolean controlsPermanentWithSubType(final MagicSubType subType, final MagicGame game) {
 		for (final MagicPermanent permanent : permanents) {
-			if (permanent.hasSubType(subType)) {
+			if (permanent.hasSubType(subType,game)) {
 				return true;
 			}
 		}
