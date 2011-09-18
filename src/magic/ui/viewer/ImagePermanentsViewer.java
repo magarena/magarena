@@ -56,7 +56,6 @@ public class ImagePermanentsViewer extends JPanel {
 	}
 	
 	private static int divideAllIntoRows(final List<ImagePermanentViewer> creatures, final List<ImagePermanentViewer> nonCreatures, final int maxCardsPerRow) {
-			System.out.println(" ------- divideAllIntoRows (" +  creatures.size() + ", " + nonCreatures.size() + ", " + maxCardsPerRow + ")");
 		int currentRow = divideIntoRows(creatures, maxCardsPerRow, 1);
 		if(creatures.size() > 0) { // creatures go in separate row from others
 			currentRow++;
@@ -77,10 +76,8 @@ public class ImagePermanentsViewer extends JPanel {
 		aViewers.addAll(nonCreatures);
 		
 		int prevPosition=aViewers.get(0).getPosition();
-			// System.out.println(" ------- calculatePositions" );
 
 		for (final ImagePermanentViewer viewer : aViewers) {
-			// System.out.println(viewer.getLogicalRow() + " " );
 			if (currentRow!=viewer.getLogicalRow()) {
 				currentRow++;
 				x=0;
@@ -167,7 +164,6 @@ public class ImagePermanentsViewer extends JPanel {
 	}
 	
 	public void viewPermanents(final Collection<PermanentViewerInfo> permanentInfos) {
-			System.out.println("------- viewPermanents " +  permanentInfos.size());
 		final List<ImagePermanentViewer> creatures = new ArrayList<ImagePermanentViewer>();
 		final List<ImagePermanentViewer> nonCreatures = new ArrayList<ImagePermanentViewer>();
 		final List<ImagePermanentViewer> newViewers = new ArrayList<ImagePermanentViewer>();
