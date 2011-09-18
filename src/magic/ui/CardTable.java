@@ -4,6 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.CostPanel;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 
 import java.awt.BorderLayout;
@@ -74,7 +75,7 @@ public class CardTable extends JPanel implements ListSelectionListener {
 		
 		// add table to scroll pane
 		JScrollPane scrollpane = new JScrollPane(table);
-		scrollpane.setBorder(null);
+		scrollpane.setBorder(FontsAndBorders.NO_BORDER);
 		scrollpane.setOpaque(false);
 		scrollpane.getViewport().setOpaque(false);
 		

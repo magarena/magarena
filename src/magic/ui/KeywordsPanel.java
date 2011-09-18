@@ -55,7 +55,7 @@ public class KeywordsPanel extends JPanel implements ActionListener {
 		add(closeButton);
 		
 		keywordsPane=new JScrollPane();
-		keywordsPane.setBorder(null);
+		keywordsPane.setBorder(FontsAndBorders.NO_BORDER);
 		keywordsPane.setOpaque(false);
 		keywordsPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		keywordsPane.getVerticalScrollBar().setUnitIncrement(50);

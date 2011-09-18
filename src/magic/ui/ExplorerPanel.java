@@ -155,7 +155,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		filterPanel = new ExplorerFilterPanel(frame, this, mode, profile, cube);
 		
 		final JScrollPane filterScrollPane = new JScrollPane(filterPanel);
-		filterScrollPane.setBorder(null);
+		filterScrollPane.setBorder(FontsAndBorders.NO_BORDER);
 		filterScrollPane.setOpaque(false);
 		filterScrollPane.getViewport().setOpaque(false);
 		filterScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);

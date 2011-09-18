@@ -60,7 +60,7 @@ public class PlayersViewer extends JPanel {
 				
 		final JScrollPane scrollPane=new JScrollPane();
 		scrollPane.setOpaque(false);
-		scrollPane.setBorder(null);
+		scrollPane.setBorder(FontsAndBorders.NO_BORDER);
 		scrollPane.getViewport().setOpaque(false);
 		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		scrollPane.getVerticalScrollBar().setUnitIncrement(20);

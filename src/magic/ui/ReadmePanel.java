@@ -2,6 +2,7 @@ package magic.ui;
 
 import magic.data.FileIO;
 import magic.data.IconImages;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import javax.swing.BorderFactory;
@@ -62,7 +63,7 @@ class ReadmePanel extends JPanel implements ActionListener {
         readMeTextArea.setText(content);
 
 		keywordsPane=new JScrollPane(readMeTextArea);
-		keywordsPane.setBorder(null);
+		keywordsPane.setBorder(FontsAndBorders.NO_BORDER);
 		keywordsPane.setOpaque(false);
 		keywordsPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		keywordsPane.getVerticalScrollBar().setUnitIncrement(50);

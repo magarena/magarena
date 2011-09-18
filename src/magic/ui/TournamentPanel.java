@@ -112,7 +112,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		// add scrolling to left side
 		JScrollPane leftScrollPane = new JScrollPane(leftPanel);
-		leftScrollPane.setBorder(null);
+		leftScrollPane.setBorder(FontsAndBorders.NO_BORDER);
 		leftScrollPane.setOpaque(false);
 		leftScrollPane.getViewport().setOpaque(false);
 		leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);

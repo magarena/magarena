@@ -44,7 +44,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
 		setLayout(new BorderLayout());
 		
 		scrollPane=new JScrollPane();
-		scrollPane.setBorder(null);
+		scrollPane.setBorder(FontsAndBorders.NO_BORDER);
 		scrollPane.setOpaque(false);
 		scrollPane.getViewport().setOpaque(false);
 		scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
