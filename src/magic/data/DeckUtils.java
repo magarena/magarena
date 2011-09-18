@@ -114,7 +114,8 @@ public class DeckUtils {
 
         final Scanner sc = new Scanner(content);
         final int colorCount[] = new int[MagicColor.NR_COLORS];
-        final MagicDeck deck = new MagicDeck();
+        final MagicDeck deck = player.getDeck();
+        final MagicDeck unsupported = player.getUnsupported();
         
         deck.setName(new File(filename).getName());
 
@@ -124,8 +125,7 @@ public class DeckUtils {
                 final int index = line.indexOf(' ');
                 final int amount = Integer.parseInt(line.substring(0,index));
                 final String name=line.substring(index+1).trim();
-                final MagicCardDefinition cardDefinition = 
-                    CardDefinitions.getInstance().getCard(name);
+                final MagicCardDefinition cardDefinition = CardDefinitions.getInstance().getCard(name);
                 for (int count=amount;count>0;count--) {
                     final int colorFlags=cardDefinition.getColorFlags();
                     for (final MagicColor color : MagicColor.values()) {
@@ -133,7 +133,11 @@ public class DeckUtils {
                             colorCount[color.ordinal()]++;
                         }
                     }
-                    deck.add(cardDefinition);
+                    if (cardDefinition.isValid()) {
+                        deck.add(cardDefinition);
+                    } else {
+                        unsupported.add(cardDefinition);
+                    }
                 }
             }
         }
@@ -156,11 +160,9 @@ public class DeckUtils {
             colorCount[index]=0;
         }
         player.setProfile(new MagicPlayerProfile(colorText.toString()));
-        player.setDeck(deck);			
 	}
 	
 	private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
-		
 		final File files[]=folder.listFiles();
 		for (final File file : files) {
 			
@@ -173,27 +175,23 @@ public class DeckUtils {
 	}
 	
 	public static void loadRandomDeck(final MagicPlayerDefinition player) {
-		
 		final File deckFile=new File(getDeckFolder());
 		final List<File> deckFiles=new ArrayList<File>();
 		retrieveDeckFiles(deckFile,deckFiles);		
 		final int size=deckFiles.size();
 		if (size==0) {
 			// Creates a simple default deck.
-			final MagicDeck deck=new MagicDeck();
+			final MagicDeck deck = player.getDeck();
 			deck.setName("Default.dec");
 			final MagicCardDefinition creature=CardDefinitions.getInstance().getCard("Elite Vanguard");
 			final MagicCardDefinition land=CardDefinitions.getInstance().getCard("Plains");
 			for (int count=24;count>0;count--) {
-				
 				deck.add(creature);
 			}
 			for (int count=16;count>0;count--) {
-				
 				deck.add(land);
 			}
 			player.setProfile(new MagicPlayerProfile("w"));
-			player.setDeck(deck);
 		} else {
 			loadDeck(deckFiles.get(MagicRandom.nextInt(size)).toString(),player);
 		}
