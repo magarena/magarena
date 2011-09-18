@@ -524,12 +524,10 @@ public class MagicCardDefinition {
 	}
 	
 	public int getManaSource(final MagicColor color) {
-
 		return manaSource[color.ordinal()];
 	}
 	
 	public void setBasicManaActivations(final String basicText) {
-
 		final int length=basicText.length();
 		final List<MagicManaType> manaTypes=new ArrayList<MagicManaType>(length+1);
 		for (int i=0;i<length;i++) {
@@ -553,7 +551,15 @@ public class MagicCardDefinition {
 	
 	public int getToughness() {
 		return toughness;
-	}		
+	}	
+
+    public MagicPowerToughness genPowerToughness(final MagicGame game) {
+        final MagicPowerToughness pt = new MagicPowerToughness(power, toughness);
+        for (final MagicLocalVariable lv : localVariables) {
+            lv.getPowerToughness(game, MagicPermanent.NONE, pt);
+        }
+        return pt;
+    }
 	
 	public void setAbility(final MagicAbility ability) {
 		abilityFlags|=ability.getMask();
