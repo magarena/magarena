@@ -46,7 +46,7 @@ public class ArtificialScoringSystem {
 		}
 		final int score=cardDefinition.getValue()*100-cardDefinition.getConvertedCost()*20;
 		if (cardDefinition.isCreature()) {
-			return score+(cardDefinition.getPower()+cardDefinition.getToughness())*10;
+			return score+(cardDefinition.getCardPower()+cardDefinition.getCardToughness())*10;
 		} else {
 			return score+cardDefinition.getRemoval()*50+cardDefinition.getRarity()*30;
 		}
