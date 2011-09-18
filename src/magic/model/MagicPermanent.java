@@ -241,33 +241,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public void addLocalVariable(final MagicLocalVariable localVariable) {
 		localVariables.add(localVariable);
 	}
-
-	public void addTurnLocalVariable(final MagicLocalVariable localVariable) {
-		localVariables.add(localVariable);
-		turnLocalVariables++;
-	}
-
-	public MagicLocalVariable removeTurnLocalVariable() {
-		turnLocalVariables--;
-		return localVariables.remove(localVariables.size() - 1);
-	}
-	
-	public void addTurnLocalVariables(final List<MagicLocalVariable> localVariablesList) {
-		for (final MagicLocalVariable localVariable : localVariablesList) {
-			addTurnLocalVariable(localVariable);
-		}
-	}
-	
-	public List<MagicLocalVariable> removeTurnLocalVariables() {
-        if (turnLocalVariables == 0) {
-            return Collections.emptyList();
-        }
-        final List<MagicLocalVariable> localVariablesList=new ArrayList<MagicLocalVariable>();
-		while (turnLocalVariables>0) {
-            localVariablesList.add(removeTurnLocalVariable());
-		}
-		return localVariablesList;
-	}
 		
 	@Override
 	public MagicColoredType getColoredType() {
@@ -283,7 +256,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	@Override
-	public int getColorFlags() {
+	public int getColorFlags(final MagicGame game) {
 		// Check if cached.
 		if (cached) {
 			return cachedColorFlags;
@@ -293,9 +266,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			return turnColorFlags;
 		}
         
-        int flags=cardDefinition.getColorFlags();
+        int flags = cardDefinition.getColorFlags();
         for (final MagicLocalVariable localVariable : localVariables) {
-            flags=localVariable.getColorFlags(this,flags);
+            flags = localVariable.getColorFlags(this,flags);
+        }
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Color)) {
+            flags = mpstatic.getStatic().getColorFlags(this,flags);
         }
         return flags;
 	}
@@ -327,7 +303,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return false;
 	}
 	
-	public EnumSet<MagicSubType> getSubTypeFlags() {
+	public EnumSet<MagicSubType> getSubTypeFlags(final MagicGame game) {
 		// Check if cached.
 		if (cached) {
 			return cachedSubTypeFlags;
@@ -340,13 +316,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		}		
 		
 		for (final MagicLocalVariable localVariable : localVariables) {
-			flags=localVariable.getSubTypeFlags(this,flags);
+			flags = localVariable.getSubTypeFlags(this,flags);
 		}
+
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
+            flags = mpstatic.getStatic().getSubTypeFlags(this,flags);
+        }
+
 		return flags;
 	}
 
-	public boolean hasSubType(final MagicSubType subType) {
-		return subType.hasSubType(getSubTypeFlags());
+	public boolean hasSubType(final MagicSubType subType, final MagicGame game) {
+		return subType.hasSubType(getSubTypeFlags(game));
 	}
 
 	public MagicPowerToughness getPowerToughness(final MagicGame game,final boolean turn) {
@@ -479,9 +460,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (aCached) {
 			cachedTurnPowerToughness=getPowerToughness(game,true);
 			cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
-			cachedSubTypeFlags=getSubTypeFlags();
-			cachedTypeFlags=getTypeFlags();
-			cachedColorFlags=getColorFlags();
+			cachedSubTypeFlags=getSubTypeFlags(game);
+			cachedTypeFlags=getTypeFlags(game);
+			cachedColorFlags=getColorFlags(game);
 		} 
         this.cached=aCached;
 	}
@@ -512,7 +493,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public boolean canTap(final MagicGame game) {
 		return !hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
-             !isCreature() || 
+             !isCreature(game) || 
              hasAbility(game,MagicAbility.Haste)
             );
 	}
@@ -521,7 +502,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public boolean canUntap(final MagicGame game) {
 		return hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
-             !isCreature() || 
+             !isCreature(game) || 
              hasAbility(game,MagicAbility.Haste)
             );		
 	}
@@ -598,7 +579,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			}
 		}
 		
-		if (isCreature()) {
+		if (isCreature(game)) {
 			final int toughness=getToughness(game);
 			if (toughness<=0) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
@@ -620,13 +601,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
 		} else if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
-			if (!equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(game,this)) {
+			if (!equippedCreature.isCreature(game) || equippedCreature.hasProtectionFrom(game,this)) {
 				actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
 			}
 		}
 	}
 	
-	private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source) {
+	private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source, final MagicGame game) {
 		
 		// Check if there is a protection ability.
 		if ((abilityFlags&MagicAbility.PROTECTION_FLAGS)==0) {
@@ -637,12 +618,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (//source.getColoredType() == MagicColoredType.MonoColored &&
             //added to fix bug with Raging Raving creature not able to block
             //creature with protection from monocolored
-            MagicColor.isMono(source.getColorFlags()) &&
+            MagicColor.isMono(source.getColorFlags(game)) &&
             MagicAbility.ProtectionFromMonoColored.hasAbility(abilityFlags)) {
 			return true;
 		}
 		
-		final int colorFlags=source.getColorFlags();
+		final int colorFlags=source.getColorFlags(game);
 		if (colorFlags>0) {
 			// From all colors.
 			if (MagicAbility.ProtectionFromAllColors.hasAbility(abilityFlags)) {
@@ -660,17 +641,19 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				
 		if (source.isPermanent()) {
 			final MagicPermanent sourcePermanent=(MagicPermanent)source;
-			if (sourcePermanent.isCreature()) {
+			if (sourcePermanent.isCreature(game)) {
 				// From creatures.
 				if (MagicAbility.ProtectionFromCreatures.hasAbility(abilityFlags)) {
 					return true;
 				}
 				// From Demons.
-				if (sourcePermanent.hasSubType(MagicSubType.Demon)&&MagicAbility.ProtectionFromDemons.hasAbility(abilityFlags)) {
+				if (sourcePermanent.hasSubType(MagicSubType.Demon,game) &&
+                    MagicAbility.ProtectionFromDemons.hasAbility(abilityFlags)) {
 					return true;
 				}
 				// From Dragons.
-				if (sourcePermanent.hasSubType(MagicSubType.Dragon)&&MagicAbility.ProtectionFromDragons.hasAbility(abilityFlags)) {
+				if (sourcePermanent.hasSubType(MagicSubType.Dragon,game) &&
+                    MagicAbility.ProtectionFromDragons.hasAbility(abilityFlags)) {
 					return true;
 				}
 			}
@@ -681,11 +664,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public boolean hasProtectionFrom(final MagicGame game,final MagicSource source) {
 		final long abilityFlags=getAllAbilityFlags(game);
-		return hasProtectionFrom(abilityFlags,source);
+		return hasProtectionFrom(abilityFlags,source,game);
 	}
 	
 	public boolean canAttack(final MagicGame game) {
-		if (!isCreature() || 
+		if (!isCreature(game) || 
             !canTap(game) || 
             hasState(MagicPermanentState.ExcludeFromCombat)) {
 			return false;
@@ -704,7 +687,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 		// Landwalk
 		for (final MagicColor color : MagicColor.values()) {
-			if (color.getLandwalkAbility().hasAbility(flags)&&player.controlsPermanentWithSubType(color.getLandSubType())) {
+			if (color.getLandwalkAbility().hasAbility(flags) && 
+                player.controlsPermanentWithSubType(color.getLandSubType(),game)) {
 				return false;
 			}
 		}
@@ -713,7 +697,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public boolean canBlock(final MagicGame game) {
-		if (!isCreature()||isTapped()||hasState(MagicPermanentState.ExcludeFromCombat)) {
+		if (!isCreature(game)||isTapped()||hasState(MagicPermanentState.ExcludeFromCombat)) {
 			return false;
 		}
 		final long flags=getAllAbilityFlags(game);		
@@ -725,11 +709,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
 		// Fear & intimidate
 		if (!isArtifact()) {
-			final int colorFlags=getColorFlags();
+			final int colorFlags=getColorFlags(game);
 			if (MagicAbility.Fear.hasAbility(attackerFlags)&&!MagicColor.Black.hasColor(colorFlags)) {
 				return false;
 			}
-			if (MagicAbility.Intimidate.hasAbility(attackerFlags)&&((colorFlags&attacker.getColorFlags())==0)) {
+			if (MagicAbility.Intimidate.hasAbility(attackerFlags)&&((colorFlags&attacker.getColorFlags(game))==0)) {
 				return false;
 			}
 		}
@@ -762,7 +746,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
 
 		// Protection
-		return !hasProtectionFrom(attackerFlags,this);
+		return !hasProtectionFrom(attackerFlags,this,game);
 	}
 	
 	private MagicLocalVariable getAttachmentLocalVariable() {
@@ -837,29 +821,35 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		abilityPlayedThisTurn--;
 	}
 	
-    private int getTypeFlags() {
+    private int getTypeFlags(final MagicGame game) {
 		// Check if cached.
 		if (cached) {
 			return cachedTypeFlags;
 		}
 		
         int flags=cardDefinition.getTypeFlags();
-		for (final MagicLocalVariable localVariable : localVariables) {
-			flags=localVariable.getTypeFlags(this,flags);
+
+        for (final MagicLocalVariable localVariable : localVariables) {
+			flags = localVariable.getTypeFlags(this,flags);
 		}
+        
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
+			flags = mpstatic.getStatic().getTypeFlags(this,flags);
+		}
+
 		return flags;
 	}
 	
-	public boolean hasType(final MagicType type) {
-		return type.hasType(getTypeFlags());				
+	public boolean hasType(final MagicType type, final MagicGame game) {
+		return type.hasType(getTypeFlags(game));				
 	}
 	
 	public boolean isLand() {
 		return cardDefinition.isLand();
 	}
 	
-	public boolean isCreature() {
-		return MagicType.Creature.hasType(getTypeFlags());
+	public boolean isCreature(final MagicGame game) {
+		return MagicType.Creature.hasType(getTypeFlags(game));
 	}
 	
 	public boolean isArtifact() {
@@ -908,7 +898,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
 
 		// Protection.
-		return !hasProtectionFrom(flags,source);
+		return !hasProtectionFrom(flags,source,game);
 	}
 
 	@Override
@@ -950,15 +940,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return false;
 	}
 	
-	public ImageIcon getIcon() {
-
+	public ImageIcon getIcon(final MagicGame game) {
 		if (isAttacking()) {
 			return IconImages.ATTACK;
 		} 
 		if (isBlocking()) {
 			return IconImages.BLOCK;
 		}
-		if (isCreature()) {
+		if (isCreature(game)) {
 			return IconImages.CREATURE;
 		}
 		return cardDefinition.getIcon();
