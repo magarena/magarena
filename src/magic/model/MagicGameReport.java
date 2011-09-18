@@ -25,7 +25,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 	
 	private static void buildPermanent(final MagicGame game,final MagicPermanent permanent,final StringBuilder report) {
 		report.append("   - Permanent : ").append(permanent.getName());
-		if (permanent.isCreature()) {
+		if (permanent.isCreature(game)) {
 			final MagicPowerToughness pt=permanent.getPowerToughness(game);
 			report.append("  Power : ").append(pt.power());
 			report.append("  Toughness : ").append(pt.toughness());
