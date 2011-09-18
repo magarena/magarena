@@ -29,7 +29,7 @@ class TestAbilities extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,20);
-		createPermanent(game,P,"Accorder Paladin",false,3);	
+		createPermanent(game,P,"Accorder Paladin",false,100);	
 		createPermanent(game,P,"Lightning Greaves",false,1);
 		createPermanent(game,P,"Sword of Body and Mind",false,1);	
 		createPermanent(game,P,"Darksteel Axe",false,1);

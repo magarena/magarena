@@ -121,7 +121,7 @@ public class ImagePermanentsViewer extends JPanel {
 		
 			// approximate number of rows needed to contain all the cards
 			for(r = 1; r < Math.sqrt(numCards); r++) {
-				final float numCardsPerRow = (float) Math.ceil((float) numCards / r); // avoid lost of precision
+				float numCardsPerRow = (float) Math.ceil((float) numCards / r); // avoid lost of precision
 				
 				// max width and height for a card using this number of rows
 				float scaledCardHeight = screenHeight / r;
@@ -135,6 +135,7 @@ public class ImagePermanentsViewer extends JPanel {
 					// width is limiting factor on size of scaled card
 					scaledCardHeight = (scaledCardWidth / cardWidth) * cardHeight;;
 				}
+				numCardsPerRow = screenWidth / scaledCardWidth; // scaled -> more cards can fit per row
 				
 				// set best possible
 				final float scaledCardSize = scaledCardWidth * scaledCardHeight;
