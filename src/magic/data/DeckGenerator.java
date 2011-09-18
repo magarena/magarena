@@ -42,11 +42,12 @@ public class DeckGenerator {
         }			
     }
 	
-	public MagicDeck generateDeck(final int size,final MagicPlayerProfile profile) {
+	public void generateDeck(final int size,final MagicPlayerProfile profile, final MagicDeck deck) {
+        deck.clear();
+
         genSpells();
         genLands();
 		
-		final MagicDeck deck=new MagicDeck();		
 		final int spells=(size*3)/5;
 		final int lands=profile.getNrOfNonBasicLands(size-spells);		
 		final int maxCreatures=(spells*2)/3;
@@ -102,7 +103,5 @@ public class DeckGenerator {
 				deck.add(cardDefinition);
 			}
 		}
-		
-		return deck;
 	}
 }
