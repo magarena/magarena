@@ -23,7 +23,7 @@ public class MagicVeteranTrigger extends MagicWhenDamageIsDealtTrigger {
         final MagicPermanent target=(MagicPermanent)damage.getTarget();
 		return (damage.getSource() == permanent && 
                 (!combat||damage.isCombat()) &&
-                target.isCreature()) ?
+                target.isCreature(game)) ?
             new MagicEvent(
                     permanent,
                     permanent.getController(),

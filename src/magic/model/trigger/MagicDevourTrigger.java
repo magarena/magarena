@@ -33,7 +33,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
         final MagicTargetChoice targetChoice=new MagicTargetChoice(
                 targetFilter,false,MagicTargetHint.None,"a creature other than "+name+" to sacrifice");
         final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+name+".",targetChoice);
-		return (player.getNrOfPermanentsWithType(MagicType.Creature)>1) ?
+		return (player.getNrOfPermanentsWithType(MagicType.Creature,game)>1) ?
             new MagicEvent(
                     permanent,
                     player,
