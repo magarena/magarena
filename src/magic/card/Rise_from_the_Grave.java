@@ -53,7 +53,7 @@ public class Rise_from_the_Grave {
             			final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,player,MagicPlayCardAction.NONE);
             			 game.doAction(action);
             			 final MagicPermanent permanent = action.getPermanent();
-            			 final int color = permanent.getColorFlags();
+            			 final int color = permanent.getColorFlags(game);
                          permanent.addLocalVariable(
                         		 new MagicDummyLocalVariable() {
                         			 @Override

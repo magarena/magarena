@@ -37,7 +37,7 @@ public class Archon_of_Redemption {
 			final MagicPlayer player=permanent.getController();
 			return (otherPermanent!=permanent && 
                     otherPermanent.getController()==player && 
-                    otherPermanent.isCreature() &&
+                    otherPermanent.isCreature(game) &&
                     otherPermanent.hasAbility(game,MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,

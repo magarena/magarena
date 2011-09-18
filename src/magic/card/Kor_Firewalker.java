@@ -20,7 +20,7 @@ public class Kor_Firewalker {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player = permanent.getController();
 			final MagicCard card = data.getCard();
-			return (MagicColor.Red.hasColor(card.getColorFlags())) ?
+			return (MagicColor.Red.hasColor(card.getColorFlags(game))) ?
 					new MagicEvent(
 	                        permanent,
 	                        player,

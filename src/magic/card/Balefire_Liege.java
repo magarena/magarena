@@ -48,7 +48,7 @@ public class Balefire_Liege {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicCard card=data.getCard();
-			return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
+			return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags(game))) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -78,7 +78,7 @@ public class Balefire_Liege {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicCard card=data.getCard();
-			return (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags())) ?
+			return (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags(game))) ?
                 new MagicEvent(
                         permanent,
                         player,

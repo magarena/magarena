@@ -21,13 +21,14 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 import java.util.EnumSet;
 
 public class Chimeric_Mass {
         
-    private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
+    private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
 		public void getPowerToughness(
                 final MagicGame game,
@@ -36,7 +37,9 @@ public class Chimeric_Mass {
 			final int charge=permanent.getCounters(MagicCounterType.Charge);
 			pt.set(charge,charge);
 		}
+    };
 		
+    private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
 		public EnumSet<MagicSubType> getSubTypeFlags(
                 final MagicPermanent permanent,
@@ -45,7 +48,6 @@ public class Chimeric_Mass {
             mod.add(MagicSubType.Construct);
 			return mod;
 		}
-		
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
 			return flags|MagicType.Creature.getMask();
@@ -85,7 +87,7 @@ public class Chimeric_Mass {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],LV));
+			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,ST));
 		}
 	};
 

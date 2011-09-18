@@ -35,7 +35,7 @@ public class Butcher_of_Malakir {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer opponent=(MagicPlayer)data[1];
-			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+			if (opponent.controlsPermanentWithType(MagicType.Creature,game)) {
 				game.addEvent(new MagicSacrificePermanentEvent(
                             (MagicPermanent)data[0],
                             opponent,
@@ -50,7 +50,7 @@ public class Butcher_of_Malakir {
 			final MagicPlayer controller = permanent.getController();
 			return (otherPermanent != permanent && 
                     otherPermanent.getController() == controller && 
-                    otherPermanent.isCreature()) ?
+                    otherPermanent.isCreature(game)) ?
 				new MagicEvent(
                     permanent,
                     controller,
@@ -67,7 +67,7 @@ public class Butcher_of_Malakir {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer opponent=(MagicPlayer)data[1];
-			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+			if (opponent.controlsPermanentWithType(MagicType.Creature,game)) {
 				game.addEvent(new MagicSacrificePermanentEvent(
                             (MagicPermanent)data[0],
                             opponent,

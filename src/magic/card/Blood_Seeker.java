@@ -13,7 +13,7 @@ public class Blood_Seeker {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             final MagicPlayer player=permanent.getController();
             final MagicPlayer controller=otherPermanent.getController();
-			return (otherPermanent!=permanent&&otherPermanent.isCreature()&&controller!=player) ?
+			return (otherPermanent!=permanent&&otherPermanent.isCreature(game)&&controller!=player) ?
                 new MagicEvent(
                     permanent,
                     player,

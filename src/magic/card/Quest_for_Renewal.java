@@ -19,7 +19,7 @@ public class Quest_for_Renewal {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
     		final MagicPlayer player = permanent.getController();
-    		return (data.getController() == player && data.isCreature()) ?
+    		return (data.getController() == player && data.isCreature(game)) ?
                 new MagicEvent(
                         permanent,
                         player,

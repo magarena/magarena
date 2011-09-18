@@ -58,7 +58,7 @@ public class Eldrazi_Monument {
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicPlayer player=(MagicPlayer)data[1];
-			if (player.controlsPermanentWithType(MagicType.Creature)) {
+			if (player.controlsPermanentWithType(MagicType.Creature,game)) {
 				game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_CREATURE));
 			} else {
 				game.doAction(new MagicSacrificeAction(permanent));				

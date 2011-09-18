@@ -13,9 +13,18 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 public class Diminish {
+
+    private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+        @Override
+        public void getPowerToughness(final MagicGame game, final MagicPermanent permanent, final MagicPowerToughness pt) {
+            pt.set(1,1);
+        }
+    };
+
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -38,17 +47,7 @@ public class Diminish {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicBecomesCreatureAction(creature,
-                        new MagicDummyLocalVariable() {
-                            @Override
-                            public void getPowerToughness(
-                                final MagicGame game,
-                                final MagicPermanent permanent,
-                                final MagicPowerToughness pt) {
-                                pt.set(1,1);
-                            }
-                        }
-                    ));
+                    game.doAction(new MagicBecomesCreatureAction(creature,PT));
                 }
 			});
 		}

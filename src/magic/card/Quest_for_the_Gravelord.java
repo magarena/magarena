@@ -52,7 +52,7 @@ public class Quest_for_the_Gravelord {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent.isCreature()) ?
+			return (otherPermanent.isCreature(game)) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

@@ -43,7 +43,7 @@ public class Massacre_Wurm {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 		    final MagicPlayer player = permanent.getController();	
 			final MagicPlayer otherController=otherPermanent.getController();
-			return (otherController!=player&&otherPermanent.isCreature()) ?
+			return (otherController!=player&&otherPermanent.isCreature(game)) ?
 				new MagicEvent(
                         permanent,
                         player,

@@ -35,7 +35,7 @@ public class Cruel_Edict {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
-        			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+        			if (opponent.controlsPermanentWithType(MagicType.Creature,game)) {
         				game.addEvent(new MagicSacrificePermanentEvent(
                             cardOnStack.getCard(),
                             opponent,

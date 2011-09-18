@@ -17,7 +17,7 @@ public class Warstorm_Surge {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
-            return (otherPermanent.isCreature() && otherPermanent.getController() == player) ?
+            return (otherPermanent.isCreature(game) && otherPermanent.getController() == player) ?
 				new MagicEvent(
                         permanent,
                         player,

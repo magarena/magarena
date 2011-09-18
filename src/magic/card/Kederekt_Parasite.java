@@ -14,9 +14,9 @@ import magic.model.trigger.MagicWhenDrawnTrigger;
 
 public class Kederekt_Parasite {
 	
-	private static boolean isValid(final MagicPermanent owner) {
+	private static boolean isValid(final MagicPermanent owner, final MagicGame game) {
 		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-			if (permanent != owner && MagicColor.Red.hasColor(permanent.getColorFlags())) {
+			if (permanent != owner && MagicColor.Red.hasColor(permanent.getColorFlags(game))) {
 				return true;
 			}
 		}
@@ -27,7 +27,7 @@ public class Kederekt_Parasite {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer player = data.getOwner();
-    		return (permanent.getController() != player && isValid(permanent)) ?
+    		return (permanent.getController() != player && isValid(permanent,game)) ?
     			new MagicEvent(
                     permanent,
                     permanent.getController(),

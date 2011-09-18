@@ -15,7 +15,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBecomeTargetPicker;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 import java.util.EnumSet;
 
@@ -32,18 +33,28 @@ import java.util.EnumSet;
 //cost={1}{U}
 //timing=removal
 public class Turn_to_Frog {
-    private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
+    private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(1,1);
 		}
+    };
+    private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
 		@Override
 		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
 			return 0;
 		}
+    };
+    private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
 		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
 			return EnumSet.of(MagicSubType.Frog);
+		}
+	};
+    private static final MagicStatic C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
+		@Override
+		public int getColorFlags(final MagicPermanent permanent,final int flags) {
+			return MagicColor.Blue.getMask();
 		}
 	};
 
@@ -69,8 +80,7 @@ public class Turn_to_Frog {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicBecomesCreatureAction(creature,LV));
-                    game.doAction(new MagicSetTurnColorAction(creature,MagicColor.Blue));
+                    game.doAction(new MagicBecomesCreatureAction(creature,PT,AB,ST,C));
                 }
 			});
 		}

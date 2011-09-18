@@ -55,7 +55,7 @@ public class Doomgape {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[1];
-			if (player.controlsPermanentWithType(MagicType.Creature)) {
+			if (player.controlsPermanentWithType(MagicType.Creature,game)) {
 				game.addEvent(new MagicEvent(
                     (MagicPermanent)data[0],
                     player,

@@ -16,17 +16,19 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicBecomeTargetPicker;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 import java.util.EnumSet;
 
 public class Omnibian {
-    private static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
+    private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(3,3);
 		}
-
+    };
+    private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
 		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
 			return EnumSet.of(MagicSubType.Frog);
@@ -57,7 +59,7 @@ public class Omnibian {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicBecomesCreatureAction(creature,LV));
+                    game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
                 }
 			});
 		}

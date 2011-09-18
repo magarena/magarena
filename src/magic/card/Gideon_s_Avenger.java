@@ -14,7 +14,7 @@ public class Gideon_s_Avenger {
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
     		final MagicPlayer otherController = data.getController();
     		final MagicPlayer player = permanent.getController();
-    		return (otherController != player && data.isCreature()) ?
+    		return (otherController != player && data.isCreature(game)) ?
                 new MagicEvent(
                         permanent,
                         player,

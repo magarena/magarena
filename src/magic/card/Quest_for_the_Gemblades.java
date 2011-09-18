@@ -68,8 +68,8 @@ public class Quest_for_the_Gemblades {
                     source.getController()==player && 
                     source.isPermanent() && 
                     target.isPermanent() &&
-                    ((MagicPermanent)source).isCreature() && 
-                    ((MagicPermanent)target).isCreature()) ?
+                    ((MagicPermanent)source).isCreature(game) && 
+                    ((MagicPermanent)target).isCreature(game)) ?
                 new MagicEvent(
                         permanent,
                         player,

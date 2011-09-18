@@ -117,7 +117,7 @@ public class Shrine_of_Burning_Rage {
                 final MagicCardOnStack data) {
 			final MagicPlayer player=permanent.getController();
 			final MagicCard card=data.getCard();
-			return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
+			return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags(game))) ?
 				new MagicEvent(
                     permanent,
                     player,

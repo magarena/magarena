@@ -12,7 +12,7 @@ public class Soul_Warden {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
-			return (otherPermanent != permanent && otherPermanent.isCreature()) ?
+			return (otherPermanent != permanent && otherPermanent.isCreature(game)) ?
                 new MagicEvent(
                         permanent,
                         player,

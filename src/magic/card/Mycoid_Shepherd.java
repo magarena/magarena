@@ -49,7 +49,7 @@ public class Mycoid_Shepherd {
 			final MagicPlayer player=permanent.getController();
 			return (otherPermanent!=permanent &&
                     otherPermanent.getController()==player &&
-                    otherPermanent.isCreature() && 
+                    otherPermanent.isCreature(game) && 
                     otherPermanent.getPower(game)>=5) ?
                     		new MagicEvent(
         		                    permanent,

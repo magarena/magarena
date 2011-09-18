@@ -21,25 +21,29 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
-import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.variable.MagicLocalVariable;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 
 import java.util.Arrays;
 
 public class Mutavault {
-    private static final MagicLocalVariable VAR = new MagicDummyLocalVariable() {
+    private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(2,2);
 		}
-        @Override
-		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Creature.getMask();
-		}
+    };
+    private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
             return flags|MagicAbility.Changeling.getMask();
         }
+    };
+    private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+        @Override
+		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
+		}
 	};
 
     public static final MagicManaActivation M = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
@@ -72,7 +76,7 @@ public class Mutavault {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
-			game.doAction(new MagicBecomesCreatureAction(permanent,VAR));
+			game.doAction(new MagicBecomesCreatureAction(permanent,PT,AB,ST));
 		}
 	};
 
