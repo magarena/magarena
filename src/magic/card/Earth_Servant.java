@@ -1,7 +1,5 @@
 package magic.card;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
@@ -13,6 +11,7 @@ import magic.model.variable.MagicLocalVariable;
 import java.util.Collection;
 
 public class Earth_Servant {
+	//Characteristic defining ability
 	public static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
