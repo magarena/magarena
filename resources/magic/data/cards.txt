@@ -6055,6 +6055,28 @@ cost={1}{W}
 static=player
 timing=enchantment
 
+>Bad Moon
+image=http://magiccards.info/scans/en/gvl/48.jpg
+value=3
+rarity=R
+type=Enchantment
+color=b
+converted=2
+cost={1}{B}
+static=all
+timing=enchantment
+
+>Crusade
+image=http://magiccards.info/scans/en/ddf/27.jpg
+value=3
+rarity=R
+type=Enchantment
+color=w
+converted=2
+cost={W}{W}
+static=all
+timing=enchantment
+
 >Liliana's Caress
 image=http://magiccards.info/scans/en/m11/103.jpg
 value=3
