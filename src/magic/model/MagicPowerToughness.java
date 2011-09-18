@@ -5,9 +5,9 @@ public class MagicPowerToughness {
 	private int power;
 	private int toughness;
 	
-	MagicPowerToughness(final int power,final int toughness) {
-		this.power=power;
-		this.toughness=toughness;
+	MagicPowerToughness(final int aPower,final int aToughness) {
+		power = aPower;
+		toughness = aToughness;
 	}
 
     public int power() {
