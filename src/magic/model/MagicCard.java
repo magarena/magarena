@@ -147,7 +147,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	}
 	
     @Override
-	public boolean isCreature() {
+	public boolean isCreature(final MagicGame game) {
 		return false;
 	}
 
@@ -167,7 +167,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	}
 
 	@Override
-	public int getColorFlags() {
+	public int getColorFlags(final MagicGame game) {
 		return getCardDefinition().getColorFlags();
 	}
 	
