@@ -389,7 +389,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private void newDeck() {
 		if (tournamentPanel!=null) {
 			final MagicPlayerDefinition player=tournamentPanel.getSelectedPlayer();
-			player.setDeck(new MagicDeck());
+			player.getDeck().clear();
 			tournamentPanel.updateDecksAfterEdit();
 			if(explorerPanel != null) {
 				explorerPanel.updateDeck();
@@ -450,8 +450,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			final MagicPlayerDefinition players[]=tournament.getPlayers();
 			final MagicPlayerProfile profile1=players[0].getProfile();
 			final MagicPlayerProfile profile2=players[1].getProfile();
-			final MagicDeck deck1=players[0].getDeck();			
-			final MagicDeck deck2=players[1].getDeck();
+			final MagicDeck deck1 = new MagicDeck(players[0].getDeck());			
+			final MagicDeck deck2 = new MagicDeck(players[1].getDeck());
 			players[0].setProfile(profile2);
 			players[0].setDeck(deck2);
 			players[1].setProfile(profile1);
