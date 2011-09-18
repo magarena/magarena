@@ -33,34 +33,22 @@ public class ImagePermanentsViewer extends JPanel {
 		validChoices=Collections.emptySet();
 	}
 
-	private static void divideOverOneRow(final List<ImagePermanentViewer> viewers) {
-		for (final ImagePermanentViewer viewer : viewers) {
-			viewer.setLogicalRow(1);
-		}
-	}
-	
-	private static void divideOverTwoRows(final List<ImagePermanentViewer> viewers) {
-		final int size=viewers.size();
-		int firstWidth=0;
-		int secondWidth=0;
-		int firstIndex=0;
-		int secondIndex=size-1;
+	private static int divideOverXRows(final int numRows, final List<ImagePermanentViewer> cards, final int maxCardsPerRow) {
+		int numCardsThisRow = 0;
+		int currentRow = 1;
 		
-		while (firstIndex<=secondIndex) {
-			final ImagePermanentViewer firstViewer=viewers.get(firstIndex);
-			final ImagePermanentViewer secondViewer=viewers.get(secondIndex);
-			final int width1=firstViewer.getWidth()+HORIZONTAL_SPACING;
-			final int width2=secondViewer.getWidth()+HORIZONTAL_SPACING;
-			if (firstWidth+width1<=secondWidth+width2) {
-				firstViewer.setLogicalRow(1);
-				firstWidth+=width1;
-				firstIndex++;
-			} else {
-				secondViewer.setLogicalRow(2);
-				secondWidth+=width2;
-				secondIndex--;
+		for(ImagePermanentViewer card : cards) {
+			if(numCardsThisRow + 1 > maxCardsPerRow) {
+				// goto next row
+				currentRow++;
+				numCardsThisRow = 0;
 			}
-		}		
+			
+			numCardsThisRow++;
+			card.setLogicalRow(currentRow);
+		}
+		
+		return currentRow;		
 	}
 
 	private int calculatePositions(final List<ImagePermanentViewer> aViewers) {
@@ -115,22 +103,51 @@ public class ImagePermanentsViewer extends JPanel {
 		return (1000*scaleMult)/scaleDiv;
 	}
 
-	private void calculateOptimalPositions(final List<ImagePermanentViewer> aViewers) {
-		final int size=aViewers.size();
-		if (size==0) {
-			return;
-		} else if (size<7) {
-			divideOverOneRow(aViewers);
-			calculatePositions(aViewers);
-		} else {			
-			divideOverOneRow(aViewers);
-			final int scale=calculatePositions(aViewers);
-			divideOverTwoRows(aViewers);
-			if (calculatePositions(aViewers)<=scale) {
-				divideOverOneRow(aViewers);
-				calculatePositions(aViewers);
+	private void calculateOptimalPositions(final List<ImagePermanentViewer> cards) {		
+		final float screenWidth = (float) getWidth();
+		final float screenHeight = (float) getHeight();
+		final int numCards = cards.size();
+		
+		if(numCards > 0 && screenWidth > 0 && screenHeight > 0) { // ignore cases where drawing doesn't matter
+			final float cardWidth = (float) cards.get(0).getLogicalSize().getWidth();
+			final float cardHeight = (float) cards.get(0).getLogicalSize().getHeight();
+			
+			final float cardAspectRatio = cardWidth / cardHeight;
+			
+			int r;
+			int bestNumRows = 1;
+			int maxCardsForBestNumRow = 0;
+			float largestScaledCardSize = 0;
+		
+			// approximate number of rows needed to contain all the cards
+			for(r = 1; r < Math.sqrt(numCards); r++) {
+				final float numCardsPerRow = (float) Math.ceil((float) numCards / r); // avoid lost of precision
+				
+				// max width and height for a card using this number of rows
+				float scaledCardHeight = screenHeight / r;
+				float scaledCardWidth = screenWidth / numCardsPerRow;
+				
+				// change width or height to maintain aspect ratio
+				if (scaledCardWidth / scaledCardHeight > cardAspectRatio) {
+					// height is limiting factor on size of scaled card
+					scaledCardWidth = (scaledCardHeight / cardHeight) * cardWidth;
+				} else {
+					// width is limiting factor on size of scaled card
+					scaledCardHeight = (scaledCardWidth / cardWidth) * cardHeight;;
+				}
+				
+				// set best possible
+				final float scaledCardSize = scaledCardWidth * scaledCardHeight;
+				if(scaledCardSize  > largestScaledCardSize) {
+					largestScaledCardSize = scaledCardSize;
+					bestNumRows = r;
+					maxCardsForBestNumRow = (int) numCardsPerRow;
+				}
 			}
-		} 
+			
+			divideOverXRows(bestNumRows, cards, maxCardsForBestNumRow);
+			calculatePositions(cards);
+		}
 	}
 	
 	public void viewPermanents(final Collection<PermanentViewerInfo> permanentInfos) {
