@@ -50,7 +50,7 @@ public class MagicColorChoice extends MagicChoice {
 		for (final MagicTarget target : targets) {
 			
 			final MagicPermanent permanent=(MagicPermanent)target;
-			final int colorFlags=permanent.getColorFlags();
+			final int colorFlags=permanent.getColorFlags(game);
 			for (final MagicColor color : MagicColor.values()) {
 				
 				if (color.hasColor(colorFlags)) {
@@ -83,9 +83,8 @@ public class MagicColorChoice extends MagicChoice {
 			if (permanent.getController()==player) {
 				score=-score;
 			}
-			final int colorFlags=permanent.getColorFlags();
+			final int colorFlags=permanent.getColorFlags(game);
 			for (final MagicColor color : MagicColor.values()) {
-				
 				if (color.hasColor(colorFlags)) {
 					scores[color.ordinal()]+=score;
 				}
