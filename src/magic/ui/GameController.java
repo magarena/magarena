@@ -66,6 +66,10 @@ public class GameController {
 		testMode = true;
 		clearValidChoices();
 	}
+
+    public MagicGame getGame() {
+        return game;
+    }
 		
 	public void enableForwardButton() {
         SwingUtilities.invokeLater(new Runnable() {
