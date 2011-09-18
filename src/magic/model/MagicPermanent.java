@@ -64,7 +64,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private int turnToughnessIncr=0;
 	private int turnColorFlags=NO_COLOR_FLAGS;
 	private int abilityPlayedThisTurn=0;
-	private int turnLocalVariables=0;
 	private int damage=0;
 	private int preventDamage=0;
     private final int fixedScore;	
@@ -108,7 +107,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		counters=Arrays.copyOf(sourcePermanent.counters,MagicCounterType.NR_COUNTERS);
 		abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
 		localVariables=new MagicLocalVariableList(sourcePermanent.localVariables);
-		turnLocalVariables=sourcePermanent.turnLocalVariables;
 		equippedCreature=copyMap.copy(sourcePermanent.equippedCreature);
 		equipmentPermanents=new MagicPermanentSet(copyMap,sourcePermanent.equipmentPermanents);
 		enchantedCreature=copyMap.copy(sourcePermanent.enchantedCreature);
@@ -162,7 +160,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             turnToughnessIncr,
             turnColorFlags,
             abilityPlayedThisTurn,
-            turnLocalVariables,
 	        damage,
             preventDamage,
         };
