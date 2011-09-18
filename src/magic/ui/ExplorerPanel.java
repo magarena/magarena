@@ -9,6 +9,7 @@ import magic.model.MagicPlayerProfile;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import java.awt.Container;
@@ -75,6 +76,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		// create swap button for deck editing
 		if (isEditingDeck()) {
 			addButton = new JButton(ADD_BUTTON_TEXT);
+			addButton.setFont(FontsAndBorders.FONT1);
 			addButton.setFocusable(false);
 			addButton.addActionListener(this);
 			buttonsPanel.add(addButton);
@@ -82,6 +84,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 			
 			swapButton = new JButton(SWAP_BUTTON_TEXT);
+			swapButton.setFont(FontsAndBorders.FONT1);
 			swapButton.setFocusable(false);
 			swapButton.addActionListener(this);
 			buttonsPanel.add(swapButton);
@@ -89,6 +92,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 			
 			removeButton = new JButton(REMOVE_BUTTON_TEXT);
+			removeButton.setFont(FontsAndBorders.FONT1);
 			removeButton.setFocusable(false);
 			removeButton.addActionListener(this);
 			buttonsPanel.add(removeButton);
@@ -102,6 +106,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// close button
 		closeButton = new JButton(CLOSE_BUTTON_TEXT);
+		closeButton.setFont(FontsAndBorders.FONT1);
 		closeButton.setFocusable(false);
 		closeButton.addActionListener(this);
 		buttonsPanel.add(closeButton);
@@ -131,10 +136,10 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		
 		// add scrolling to left side
 		JScrollPane leftScrollPane = new JScrollPane(leftPanel);
-		leftScrollPane.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+		leftScrollPane.setBorder(FontsAndBorders.NO_BORDER);
 		leftScrollPane.setBackground(java.awt.Color.green);
 		leftPanel.setOpaque(false);
-		leftPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+		leftPanel.setBorder(FontsAndBorders.NO_BORDER);
 		leftPanel.setBackground(java.awt.Color.yellow);
 		leftScrollPane.setOpaque(false);
 		leftScrollPane.getViewport().setOpaque(false);
@@ -237,7 +242,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 							 
 		// buttons' gap (top right bottom)
         springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
-                             0, SpringLayout.EAST, leftScrollPane);
+                             -20, SpringLayout.EAST, leftScrollPane);
         springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
                              -SPACING, SpringLayout.NORTH, buttonsPanel);
         springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,

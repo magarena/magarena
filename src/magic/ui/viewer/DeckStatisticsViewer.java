@@ -38,6 +38,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 		textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 		
 		setPreferredSize(PREFERRED_SIZE);
+		setBorder(FontsAndBorders.UP_BORDER);
 		
 		setLayout(new BorderLayout());
 				

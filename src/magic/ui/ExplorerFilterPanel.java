@@ -10,6 +10,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.ButtonControlledPopup;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 
 import java.awt.Color;
@@ -86,7 +87,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		disableUpdate = false;
 		
-		setBorder(BorderFactory.createRaisedBevelBorder());
+		setBorder(FontsAndBorders.UP_BORDER);
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		// Type
@@ -97,11 +98,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		// Color
 		colorPopup = addFilterPopupPanel("Color");
-		Border border = BorderFactory.createLoweredBevelBorder();
 		colorCheckBoxes=new JCheckBox[MagicColor.NR_COLORS];
 		final JPanel colorsPanel=new JPanel();
 		colorsPanel.setLayout(new BoxLayout(colorsPanel, BoxLayout.X_AXIS));
-		colorsPanel.setBorder(border);
+		colorsPanel.setBorder(FontsAndBorders.DOWN_BORDER);
 		colorsPanel.setOpaque(false);
 		colorPopup.setPopupSize(280, 90);
 		for (int i = 0; i < MagicColor.NR_COLORS; i++) {
@@ -174,6 +174,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		resetFilterPanel.setOpaque(false);
 		resetFilterPanel.setBorder(resetBorder);
 		resetButton = new JButton(RESET_BUTTON_TEXT);
+		resetButton.setFont(FontsAndBorders.FONT1);
 		resetButton.addActionListener(this);
 		resetButton.setPreferredSize(BUTTON_SIZE);
 		resetFilterPanel.add(resetButton);
@@ -189,6 +190,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		add(filterPanel);
 		
 		JButton selectButton = new JButton(FILTER_BUTTON_TEXT);
+		selectButton.setFont(FontsAndBorders.FONT1);
 		selectButton.setPreferredSize(BUTTON_SIZE);
 		filterPanel.add(selectButton);
 		
@@ -240,10 +242,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			checkboxesPanel.add(newCheckboxes[i]);
 		}
 		
-		Border border = BorderFactory.createLoweredBevelBorder();
 		JScrollPane scrollPane = new JScrollPane(checkboxesPanel);
 		scrollPane.setAlignmentX(Component.LEFT_ALIGNMENT);
-		scrollPane.setBorder(border);
+		scrollPane.setBorder(FontsAndBorders.DOWN_BORDER);
 		scrollPane.setOpaque(false);
 		scrollPane.getViewport().setOpaque(false);
 		scrollPane.setPreferredSize(POPUP_CHECKBOXES_SIZE);

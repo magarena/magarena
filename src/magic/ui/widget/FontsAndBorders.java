@@ -24,6 +24,8 @@ public class FontsAndBorders {
 
 	public static final Font FONT5=new Font("dialog",Font.BOLD,32);
 	
+	public static final Border NO_BORDER = BorderFactory.createEmptyBorder();
+	
 	public static final Border NO_TARGET_BORDER=BorderFactory.createEmptyBorder(3,3,3,3);
 
 	public static final Border WHITE_BORDER=BorderFactory.createLineBorder(Color.WHITE);

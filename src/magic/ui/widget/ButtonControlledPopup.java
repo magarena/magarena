@@ -9,7 +9,6 @@ import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowEvent;
 import java.util.Timer;
 import java.util.TimerTask;
-import javax.swing.BorderFactory;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.border.Border;
@@ -36,8 +35,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 		this.dialog = new JDialog(frame);
 		this.timer = new Timer();
 		
-		final Border border = BorderFactory.createRaisedBevelBorder();
-		setBorder(border);
+		setBorder(FontsAndBorders.UP_BORDER);
 		
 		dialog.setUndecorated(true);
 		dialog.setSize(STARTING_WIDTH, STARTING_HEIGHT);

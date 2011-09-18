@@ -67,6 +67,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		// new button
 		newButton=new JButton(NEW_BUTTON_TEXT);
+		newButton.setFont(FontsAndBorders.FONT3);
 		newButton.addActionListener(this);
 		newButton.setFocusable(false);
 		buttonsPanel.add(newButton);
@@ -75,10 +76,15 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		
 		// play button
 		playButton=new JButton(PLAY_BUTTON_TEXT);
+		playButton.setFont(FontsAndBorders.FONT3);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
 		playButton.setEnabled(!tournament.isFinished());
 		buttonsPanel.add(playButton);
+		
+		// center buttons
+		// JPanel centeredButtonsPanel = new JPanel(new BorderLayout());
+		
 		
 		add(buttonsPanel);
 		
@@ -137,6 +143,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 				CubeDefinitions.getInstance().getCubeDefinition(tournament.getConfiguration().getCube());
 				
 			editButtons[i] = new JButton(EDIT_BUTTON_TEXT);
+			editButtons[i].setFont(FontsAndBorders.FONT2);
 			editButtons[i].addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(final ActionEvent event) {
@@ -231,11 +238,11 @@ public class TournamentPanel extends JPanel implements ActionListener {
         springLayout.putConstraint(SpringLayout.SOUTH, tabbedPane,
                              -SPACING, SpringLayout.SOUTH, backgroundImage);
 							 
-		// buttons' gap (top right bottom)
-        springLayout.putConstraint(SpringLayout.WEST, buttonsPanel,
-                             0, SpringLayout.WEST, leftScrollPane);
+		// buttons' gap (top left right bottom)
         springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
                              -SPACING, SpringLayout.NORTH, buttonsPanel);
+        springLayout.putConstraint(SpringLayout.WEST, buttonsPanel,
+                             20, SpringLayout.WEST, leftScrollPane);
         springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
                              -SPACING, SpringLayout.SOUTH, backgroundImage);
 		

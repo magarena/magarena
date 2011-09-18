@@ -1,7 +1,9 @@
 package magic.ui.viewer;
 
+import magic.data.CardImagesProvider;
 import magic.data.IconImages;
 import magic.model.MagicTournament;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
@@ -16,7 +18,7 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 	
 	private static final long serialVersionUID = 1L;
 	
-	public static final Dimension PREFERRED_SIZE = new Dimension(280, 120);
+	public static final Dimension PREFERRED_SIZE = new Dimension(CardImagesProvider.CARD_WIDTH, 120);
 
 	private final TournamentViewer tournamentViewer;
 	private final DifficultyViewer difficultyViewer;
@@ -31,6 +33,7 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 		difficultyViewer=new DifficultyViewer();
 
 		setPreferredSize(PREFERRED_SIZE);
+		setBorder(FontsAndBorders.UP_BORDER);
 		
 		setLayout(new BorderLayout());
 		titleBar=new TitleBar("");
