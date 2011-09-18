@@ -1056,18 +1056,27 @@ public class MagicGame {
 		statics.add(permanentStatic);
 		return permanentStatic;
 	}
-	
+    
     public void addStatic(final MagicPermanentStatic permanentStatic) {
 		statics.add(permanentStatic);
 	}
+
+    public void addStatics(final Collection<MagicPermanentStatic> aStatics) {
+        statics.addAll(aStatics);
+    }
     
     public Collection<MagicPermanentStatic> getStatics(MagicLayer layer) {
         return statics.get(layer);
 	}
+    
+    public Collection<MagicPermanentStatic> removeTurnStatics() {
+        List<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
+        statics.removeTurn(removedStatics);
+        return removedStatics;
+	}
 	
     public void removeStatics(final MagicPermanent permanent,final Collection<MagicPermanentStatic> removedStatics) {
         statics.remove(permanent, removedStatics);
-
 	}
     
     public void removeStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
