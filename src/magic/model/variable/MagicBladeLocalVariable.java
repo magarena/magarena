@@ -22,9 +22,9 @@ public class MagicBladeLocalVariable extends MagicDummyLocalVariable {
      * retrieve all of controller's permanents, true if there exist one that
      * is not itself and is multicolored, false otherwise
      */
-	private static boolean isValid(final MagicPermanent owner) {
+	private static boolean isValid(final MagicPermanent owner, final MagicGame game) {
 		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-			if (permanent!=owner && MagicColor.isMulti(permanent.getColorFlags())) {
+			if (permanent!=owner && MagicColor.isMulti(permanent.getColorFlags(game))) {
 				return true;
 			}
 		}
@@ -33,13 +33,13 @@ public class MagicBladeLocalVariable extends MagicDummyLocalVariable {
 
 	@Override
 	public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-		if (isValid(permanent)) {
+		if (isValid(permanent,game)) {
             pt.add(1,1);
 		}
 	}
 	
 	@Override
 	public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-		return isValid(permanent)?flags|abilityMask:flags;
+		return isValid(permanent,game)?flags|abilityMask:flags;
 	}
 }
