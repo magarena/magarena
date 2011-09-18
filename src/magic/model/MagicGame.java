@@ -716,8 +716,8 @@ public class MagicGame {
 	}
 	
 	public int getNrOfPermanents(final MagicType type) {
-		return players[0].getNrOfPermanentsWithType(type) + 
-               players[1].getNrOfPermanentsWithType(type);
+		return players[0].getNrOfPermanentsWithType(type,this) + 
+               players[1].getNrOfPermanentsWithType(type,this);
 	}
 			
 	public boolean canPlaySorcery(final MagicPlayer controller) {
