@@ -25,6 +25,11 @@ public class MagicPowerToughness {
 	public int getPositiveToughness() {
 		return toughness>0?toughness:0;
 	}
+    
+    public void add(final MagicPowerToughness pt) {
+        power     += pt.power;
+        toughness += pt.toughness;
+    }
 	
     public void add(final int pAmount, final int tAmount) {
 		power     += pAmount;
