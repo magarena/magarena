@@ -25,8 +25,9 @@ public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
 			penalty+=6;
 		}
 		
-        final MagicPowerToughness pt=permanent.getPowerToughness(game);
-		final boolean defensive = cdef.getToughness(game) > cdef.getPower(game);
+        final MagicPowerToughness pt = permanent.getPowerToughness(game);
+        final MagicPowerToughness equipPT = cdef.genPowerToughness(game,player);
+		final boolean defensive = equipPT.toughness() > equipPT.power();
         
         // Defensive
 		if (defensive) {
