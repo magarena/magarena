@@ -31,7 +31,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		oldEquippedCreature=equipment.getEquippedCreature();
 		if (oldEquippedCreature.isValid()) {
 			score-=oldEquippedCreature.getScore(game);
-			oldEquippedCreature.removeEquipment(equipment);
+			oldEquippedCreature.removeEquipment(equipment,game);
 			score+=oldEquippedCreature.getScore(game);
 			if (oldEquippedCreature.getController()==equipment.getController()) {
 				// Prevent unnecessary equips.
@@ -48,7 +48,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		if (validCreature) {
 			score-=creature.getScore(game);
 			equipment.setEquippedCreature(creature);
-			creature.addEquipment(equipment);
+			creature.addEquipment(equipment,game);
 			score+=creature.getScore(game);
 		} else {
 			equipment.setEquippedCreature(MagicPermanent.NONE);
@@ -62,11 +62,11 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		
 		if (validEquipment) {
 			if (validCreature) {
-				creature.removeEquipment(equipment);
+				creature.removeEquipment(equipment,game);
 			}
 			equipment.setEquippedCreature(oldEquippedCreature);
 			if (oldEquippedCreature.isValid()) {
-				oldEquippedCreature.addEquipment(equipment);
+				oldEquippedCreature.addEquipment(equipment,game);
 			}
 		}
 	}
