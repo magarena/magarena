@@ -8,17 +8,20 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
-import javax.swing.filechooser.FileFilter;
+import java.awt.Frame;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.StringBuffer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.SortedMap;
 import java.util.TreeMap;
+import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileFilter;
 
 public class DeckUtils {
 
@@ -115,9 +118,10 @@ public class DeckUtils {
         final Scanner sc = new Scanner(content);
         final int colorCount[] = new int[MagicColor.NR_COLORS];
         final MagicDeck deck = player.getDeck();
-        final MagicDeck unsupported = player.getUnsupported();
+        final MagicDeck unsupported = new MagicDeck();
         
         deck.setName(new File(filename).getName());
+		deck.clear(); // remove previous cards
 
         while (sc.hasNextLine()) {
             final String line = sc.nextLine().trim();
@@ -137,10 +141,40 @@ public class DeckUtils {
                         deck.add(cardDefinition);
                     } else {
                         unsupported.add(cardDefinition);
+						break; // multiple copies of unsupported card -> ignore other copies
                     }
                 }
             }
         }
+		
+		// show error message for unsupported cards
+		if(unsupported.size() > 0) {
+			StringBuffer sb = new StringBuffer();
+			sb.append("The loaded deck contained unsupported card(s): ");
+			
+			// generate list of unsupported cards
+			for (int i = 0; i < unsupported.size(); i++) {
+				if(i > 0) {
+					sb.append(", ");
+				}
+				sb.append(unsupported.get(i).getName());
+			}
+			
+			// options panel doesn't have automatic text wrapping 
+			// because the method that provides max char limit isn't 
+			// coded, so override that method
+			JOptionPane cleanupPane = new JOptionPane(sb.toString(), JOptionPane.ERROR_MESSAGE) { 
+				private static final long serialVersionUID = 232L;
+	
+				@Override
+				public int getMaxCharactersPerLineCount() { 
+					return 70; 
+				} 
+			};
+			cleanupPane.createDialog(null, "Unsupported Cards").setVisible(true);
+			
+			unsupported.clear();
+		}
         
         // Find up to 3 of the most common colors in the deck.
         final StringBuilder colorText=new StringBuilder();
