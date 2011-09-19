@@ -7,11 +7,10 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
-import magic.model.variable.MagicDummyLocalVariable;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
 
-public abstract class MagicStatic extends MagicDummyLocalVariable {
+public abstract class MagicStatic extends MagicDummyPermanentModifier {
 
     public static final boolean UntilEOT = true;
 
