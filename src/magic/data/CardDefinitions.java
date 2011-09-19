@@ -68,21 +68,43 @@ public class CardDefinitions {
 		} else if ("cost".equals(property)) {
 			card.setCost(MagicManaCost.createCost(value));
 		} else if ("equip".equals(property)) {
+            if (!card.isEquipment()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment may have equip cost");
+            }
 			card.setEquipCost(MagicManaCost.createCost(value));
 		} else if ("mana".equals(property)) {
 			card.setManaSourceText(value);
 		} else if ("basic".equals(property)) {
 			card.setBasicManaActivations(value);
 		} else if ("power".equals(property)) {
+            if (!card.isCreature()) {
+                throw new RuntimeException(card.getFullName() + ": only creatures may have power");
+            }
 			card.setPower(Integer.parseInt(value));
 		} else if ("toughness".equals(property)) {
+            if (!card.isCreature()) {
+                throw new RuntimeException(card.getFullName() + ": only creatures may have toughness");
+            }
 			card.setToughness(Integer.parseInt(value));
+		} else if ("given_power".equals(property)) {
+            if (!card.isEquipment() && !card.isAura()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_power");
+            }
+			card.setGivenPower(Integer.parseInt(value));
+		} else if ("given_toughness".equals(property)) {
+            if (!card.isEquipment() && !card.isAura()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_toughness");
+            }
+			card.setGivenToughness(Integer.parseInt(value));
 		} else if ("ability".equals(property)) {
 			final String names[]=value.split(",");
 			for (final String name : names) {
 				card.setAbility(MagicAbility.getAbility(name));
 			}
 		} else if ("given_ability".equals(property)) {
+            if (!card.isEquipment() && !card.isAura()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_ability");
+            }
 			final String names[]=value.split(",");
 			for (final String name : names) {
 				card.setGivenAbility(MagicAbility.getAbility(name));

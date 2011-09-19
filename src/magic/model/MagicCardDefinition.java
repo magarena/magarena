@@ -72,7 +72,6 @@ public class MagicCardDefinition {
 	private boolean token=false;
 	private int typeFlags=0;
 	private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
-	private EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
 	private int colorFlags=0;
 	private int convertedCost=0;
 	private MagicColoredType coloredType=MagicColoredType.Colorless;
@@ -82,7 +81,6 @@ public class MagicCardDefinition {
 	private int power=0;
 	private int toughness=0;
 	private long abilityFlags=0;
-	private long givenAbilityFlags=0;
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
@@ -96,6 +94,11 @@ public class MagicCardDefinition {
 	private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
 	private boolean excludeManaOrCombat=false;
+	
+	private int givenPower=0;
+	private int givenToughness=0;
+	private long givenAbilityFlags=0;
+    private EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
 	
 	protected MagicCardDefinition(final String name,final String fullName) {
 		this.name=name;
@@ -127,15 +130,14 @@ public class MagicCardDefinition {
         attStatics = new ArrayList<MagicStatic>();
         
         //added modification to p/t    
-        final MagicPowerToughness modPT = genPowerToughness(game, player); 
-        if (modPT.power() > 0 || modPT.toughness() > 0) {
+        if (givenPower > 0 || givenToughness > 0) {
             attStatics.add(new MagicStatic(MagicLayer.ModPT) {
                 @Override
                 public void getPowerToughness(
                     final MagicGame game,
                     final MagicPermanent permanent,
                     final MagicPowerToughness pt) {
-                    pt.add(modPT);
+                    pt.add(givenPower, givenToughness);
                 }
                 @Override
                 public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
@@ -619,7 +621,15 @@ public class MagicCardDefinition {
 		manaTypes.add(MagicManaType.Colorless);
 		addManaActivation(new MagicTapManaActivation(manaTypes,0));
 	}
-
+	
+    public void setGivenPower(final int aPower) {
+		givenPower = aPower;
+	}
+    
+    public void setGivenToughness(final int aToughness) {
+		givenToughness = aToughness;
+	}
+    
 	public void setPower(final int power) {
 		this.power = power;
 	}
