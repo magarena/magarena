@@ -1,29 +1,23 @@
 package magic.card;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicManaCost;
-import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRegenerationActivation;
-import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.variable.MagicDummyLocalVariable;
-import magic.model.variable.MagicLocalVariable;
+import magic.model.mstatic.MagicCDA;
 
 import java.util.Collection;
 
 public class Mortivore {
-    //Characteristic defining ability
-    //IMPT: permanent is MagicPermanent.NONE
-	public static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
+	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			final Collection<MagicTarget> targets =
-                    game.filterTargets(game.getPlayer(0),MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-			pt.set(targets.size(), targets.size());
+		public void getPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+			final int size = 
+                game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
+			pt.set(size, size);
 		}
 	};
     

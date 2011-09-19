@@ -1,28 +1,22 @@
 package magic.card;
 
 import magic.model.MagicGame;
-import magic.model.mstatic.MagicLayer;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.variable.MagicDummyLocalVariable;
+import magic.model.mstatic.MagicCDA;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import java.util.Collection;
 
 public class Master_of_Etherium {
-    //Characteristic defining ability
-	public static final MagicDummyLocalVariable LV = new MagicDummyLocalVariable() {
+	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
-		public void getPowerToughness(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPowerToughness pt) {
-			final Collection<MagicTarget> targets =
-					game.filterTargets(
-					permanent.getController(),
-					MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL);
-			pt.add(targets.size(), targets.size());
+		public void getPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
+			final int size = game.filterTargets(player, MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL).size();
+			pt.set(size, size);
 		}
     };
     
