@@ -11,6 +11,16 @@ power=0
 toughness=3
 timing=main
 
+>Burst of Speed
+image=http://magiccards.info/scans/en/m10/129.jpg
+value=2
+rarity=C
+type=Sorcery
+color=r
+converted=1
+cost={R}
+timing=fmain
+
 >Bountiful Harvest
 image=http://magiccards.info/scans/en/m12/166.jpg
 value=3
@@ -10804,3 +10814,15 @@ equip={4}
 given_power=3
 given_toughness=1
 timing=equipment
+
+>Indestructibility
+image=http://magiccards.info/scans/en/m10/17.jpg
+value=3
+rarity=R
+type=Enchantment
+subtype=Aura
+color=w
+converted=4
+cost={3}{W}
+given_ability=indestructible
+timing=aura
