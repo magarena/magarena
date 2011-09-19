@@ -3,19 +3,21 @@ package magic.model.variable;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
 public class MagicAttachmentLocalVariable extends MagicDummyLocalVariable {
 
 	private final MagicCardDefinition cardDefinition;
-	
-	public MagicAttachmentLocalVariable(final MagicCardDefinition cardDefinition) {
-		this.cardDefinition=cardDefinition;
+
+	public MagicAttachmentLocalVariable(final MagicCardDefinition aCardDefinition) {
+		cardDefinition = aCardDefinition;
 	}
 	
 	@Override
 	public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-		pt.add(cardDefinition.genPowerToughness(game));
+        //to be removed, temp fix to get the program to compile
+		pt.add(cardDefinition.genPowerToughness(game,game.getPlayer(0)));
 	}
 
 	@Override
