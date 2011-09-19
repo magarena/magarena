@@ -380,6 +380,7 @@ power=0
 toughness=1
 ability=flying
 timing=smain
+mana_or_combat
 
 >Black Knight
 image=http://magiccards.info/scans/en/m11/83.jpg
@@ -2456,6 +2457,7 @@ cost={G}
 power=1
 toughness=1
 timing=smain
+mana_or_combat
 
 >Winged Coatl
 image=http://magiccards.info/scans/en/arb/105.jpg
@@ -2800,6 +2802,7 @@ power=0
 toughness=1
 ability=exalted
 timing=main
+mana_or_combat
 
 >Oracle of Nectars
 image=http://magiccards.info/scans/en/shm/233.jpg
@@ -3159,6 +3162,7 @@ power=2
 toughness=2
 ability=vigilance
 timing=smain
+mana_or_combat
 
 >Drana, Kalastria Bloodchief
 image=http://magiccards.info/scans/en/roe/107.jpg
@@ -4866,6 +4870,7 @@ power=0
 toughness=4
 ability=defender
 timing=smain
+mana_or_combat
 
 >Carnifex Demon
 image=http://magiccards.info/scans/en/som/57.jpg
@@ -5420,6 +5425,7 @@ rarity=C
 type=Land
 mana=g3w3
 timing=tapland
+mana_or_combat
 
 >Creeping Tar Pit
 image=http://magiccards.info/scans/en/wwk/134.jpg
@@ -5428,6 +5434,7 @@ rarity=C
 type=Land
 mana=u3b3
 timing=tapland
+mana_or_combat
 
 >Raging Ravine
 image=http://magiccards.info/scans/en/wwk/141.jpg
@@ -5436,6 +5443,7 @@ rarity=C
 type=Land
 mana=r3g3
 timing=tapland
+mana_or_combat
 
 >Rupture Spire
 image=http://magiccards.info/scans/en/cfx/144.jpg
@@ -7429,6 +7437,7 @@ rarity=C
 type=Land
 mana=w3u3
 timing=tapland
+mana_or_combat
 
 >Inspirit
 image=http://magiccards.info/scans/en/9e/22.jpg
@@ -9842,6 +9851,7 @@ power=1
 toughness=1
 ability=infect
 timing=smain
+mana_or_combat
 
 >Shivan Dragon
 image=http://magiccards.info/scans/en/dpa/53.jpg
@@ -10183,6 +10193,7 @@ cost={3}
 power=2
 toughness=2
 timing=main
+mana_or_combat
 
 >Batterskull
 image=http://magiccards.info/scans/en/nph/130.jpg
@@ -10389,6 +10400,7 @@ value=4
 rarity=R
 type=Land
 timing=land
+mana_or_combat
 
 >Spell Pierce
 image=http://magiccards.info/scans/en/zen/67.jpg
@@ -10512,6 +10524,7 @@ value=3
 rarity=R
 type=Land
 timing=land
+mana_or_combat
 
 >Sun Titan
 image=http://magiccards.info/scans/en/m11/35.jpg

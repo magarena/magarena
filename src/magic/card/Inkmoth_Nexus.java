@@ -80,11 +80,4 @@ public class Inkmoth_Nexus {
 	
     public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Colorless), 1);
-    
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-		    cdef.setExcludeManaOrCombat();
-        }
-    };
 }

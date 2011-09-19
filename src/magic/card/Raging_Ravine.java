@@ -140,11 +140,4 @@ public class Raging_Ravine {
     
     public static final MagicManaActivation A2 = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Red,MagicManaType.Green), 1);
-    
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-		    cdef.setExcludeManaOrCombat();
-        }
-    };
 }

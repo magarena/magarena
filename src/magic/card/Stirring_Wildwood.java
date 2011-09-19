@@ -107,11 +107,4 @@ public class Stirring_Wildwood {
     
     public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Green,MagicManaType.White), 1);
-    
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-		    cdef.setExcludeManaOrCombat();
-        }
-    };
 }

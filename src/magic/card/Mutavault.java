@@ -79,11 +79,4 @@ public class Mutavault {
 			game.doAction(new MagicBecomesCreatureAction(permanent,PT,AB,ST));
 		}
 	};
-
-    public static final MagicChangeCardDefinition SET = new MagicChangeCardDefinition() {
-        @Override
-        public void change(final MagicCardDefinition cdef) {
-		    cdef.setExcludeManaOrCombat();
-        }
-    };
 }

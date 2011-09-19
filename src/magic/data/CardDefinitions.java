@@ -120,6 +120,8 @@ public class CardDefinitions {
 			for (final String size : sizes) {
 				card.addIgnore(Long.parseLong(size));
 			}
+		} else if ("mana_or_combat".equals(property)) {
+            card.setExcludeManaOrCombat();
 		} else {
             throw new RuntimeException("Unknown card property " + property + "=" + value);
 		}
@@ -136,18 +138,16 @@ public class CardDefinitions {
 	}
 
 	private static void checkCard(final MagicCardDefinition card) {
-		if (card!=null) {	
-            //legendaries are at least Rare
-			if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
-			    System.err.println("ERROR! Wrong rarity for " + card.getName());
-				throw new RuntimeException(card.getName() + " is legendary but rarity is only " + card.getRarity());
-			}
-            //every card should have a timing hint
-			if (card.getTiming()==MagicTiming.None) {
-			    System.err.println("ERROR! No timing hint for " + card.getName());
-				throw new RuntimeException(card.getName() + " does not have a timing hint");
-			}
-		}
+        //legendaries are at least Rare
+        if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
+            System.err.println("ERROR! Wrong rarity for " + card.getName());
+            throw new RuntimeException(card.getName() + " is legendary but rarity is only " + card.getRarity());
+        }
+        //every card should have a timing hint
+        if (card.getTiming()==MagicTiming.None) {
+            System.err.println("ERROR! No timing hint for " + card.getName());
+            throw new RuntimeException(card.getName() + " does not have a timing hint");
+        }
 	}
 	
 	private void addDefinition(final MagicCardDefinition cardDefinition) {
@@ -198,25 +198,29 @@ public class CardDefinitions {
         }
 
         final Scanner sc = new Scanner(content);
-		MagicCardDefinition cardDefinition=null;
+		MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
 		while (sc.hasNextLine()) {
 			final String line=sc.nextLine().trim();
-			int pos=line.indexOf('>');
-			if (pos==0) {
+            if (line.length() == 0) {
+                //blank line
+            } else if (line.startsWith(">")) {
+                //start of a card
 				checkCard(cardDefinition);
 				final String name=line.substring(1);
 				cardDefinition=new MagicCardDefinition(name);
 				addDefinition(cardDefinition);
 			} else {
-				pos=line.indexOf('=');
-				if (pos>0) {
-					final String property=line.substring(0,pos).toLowerCase();
-					final String value=line.substring(pos+1);
-					setProperty(cardDefinition,property,value);
-				}
+                //property of a card
+				final String[] tokens = line.split("=");
+                if (tokens.length == 1) {
+                    setProperty(cardDefinition, tokens[0], "");
+                } else if (tokens.length == 2) {
+                    setProperty(cardDefinition, tokens[0], tokens[1]);
+                } else {
+                    throw new RuntimeException("Malformed line: " + line);
+                }
 			}
 		}
-
 		checkCard(cardDefinition);
 	}
 	
