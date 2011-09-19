@@ -36,7 +36,8 @@ class TestStatics extends TestGameBuilder {
 	    addToHand(P,"Tolsimir Wolfblood",1); 
 	    addToHand(P,"Aven Mimeomancer",1); 
 	    addToHand(P,"Student of Warfare",1); 
-       
+        addToHand(P, "Mortivore", 1);
+        addToGraveyard(P,"Mortivore", 10);
 
         P = opponent;
 		

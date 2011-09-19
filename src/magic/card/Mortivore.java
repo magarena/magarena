@@ -17,11 +17,12 @@ import java.util.Collection;
 
 public class Mortivore {
     //Characteristic defining ability
+    //IMPT: permanent is MagicPermanent.NONE
 	public static final MagicLocalVariable LV = new MagicDummyLocalVariable() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final Collection<MagicTarget> targets =
-                    game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+                    game.filterTargets(game.getPlayer(0),MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
 			pt.set(targets.size(), targets.size());
 		}
 	};
