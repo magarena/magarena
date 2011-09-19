@@ -14,8 +14,6 @@ import magic.model.event.MagicActivation;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.target.MagicTarget;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.variable.MagicLocalVariable;
-import magic.model.variable.MagicLocalVariableList;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicLayer;
@@ -50,7 +48,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private final MagicCard card;
 	private final MagicCardDefinition cardDefinition;
 	private MagicPlayer controller;
-    private final MagicLocalVariableList localVariables;	
 	private MagicPermanent equippedCreature = MagicPermanent.NONE;
     private final MagicPermanentSet equipmentPermanents;	
 	private MagicPermanent enchantedCreature = MagicPermanent.NONE;
@@ -84,7 +81,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		this.card=card;
 		this.cardDefinition=card.getCardDefinition();
 		this.controller=controller;
-		localVariables=new MagicLocalVariableList();
 		equipmentPermanents=new MagicPermanentSet();
 		auraPermanents=new MagicPermanentSet();
 		blockingCreatures=new MagicPermanentList();
@@ -106,7 +102,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		turnToughnessIncr=sourcePermanent.turnToughnessIncr;
 		counters=Arrays.copyOf(sourcePermanent.counters,MagicCounterType.NR_COUNTERS);
 		abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
-		localVariables=new MagicLocalVariableList(sourcePermanent.localVariables);
 		equippedCreature=copyMap.copy(sourcePermanent.equippedCreature);
 		equipmentPermanents=new MagicPermanentSet(copyMap,sourcePermanent.equipmentPermanents);
 		enchantedCreature=copyMap.copy(sourcePermanent.enchantedCreature);
@@ -147,7 +142,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             stateFlags,
             damage,
             preventDamage,
-            localVariables.size(),
             equippedCreature.getId(),
             enchantedCreature.getId(),
             blockedCreature.getId(),
@@ -235,10 +229,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return hasState(MagicPermanentState.Tapped);
 	}
 	
-	public void addLocalVariable(final MagicLocalVariable localVariable) {
-		localVariables.add(localVariable);
-	}
-		
 	@Override
 	public MagicColoredType getColoredType() {
 		return cardDefinition.getColoredType();
@@ -264,9 +254,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		}
         
         int flags = cardDefinition.getColorFlags();
-        for (final MagicLocalVariable localVariable : localVariables) {
-            flags = localVariable.getColorFlags(this,flags);
-        }
 
         flags = MagicLayer.getColorFlags(game, this, flags);
         
@@ -312,10 +299,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             flags.addAll(MagicSubType.ALL_CREATURES);
 		}		
 		
-		for (final MagicLocalVariable localVariable : localVariables) {
-			flags = localVariable.getSubTypeFlags(this,flags);
-		}
-
         flags = MagicLayer.getSubTypeFlags(game,this,flags);
 
 		return flags;
@@ -333,11 +316,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
         //get starting P/T from card def (includes CDA)
 		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController());
-
-        //apply local variables
-        for (final MagicLocalVariable localVariable : localVariables) {
-			localVariable.getPowerToughness(game,this,pt);
-		}
 
         //apply global effects
         MagicLayer.getPowerToughness(game, this, pt);
@@ -416,11 +394,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     private long getCurrentAbilityFlags(final MagicGame game) {
 		long flags=cardDefinition.getAbilityFlags();
-
-        //apply local variables
-		for (final MagicLocalVariable localVariable : localVariables) {
-			flags=localVariable.getAbilityFlags(game,this,flags);
-		}
 
         //apply global effects
         return MagicLayer.getAbilityFlags(game, this, flags);
@@ -744,9 +717,19 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return !hasProtectionFrom(attackerFlags,this,game);
 	}
 	
-	private MagicLocalVariable getAttachmentLocalVariable() {
-		return cardDefinition.getAttachmentLocalVariable();
-	}
+    private void addAttachmentStatics(final MagicGame game) {
+        final Collection<MagicStatic> statics = cardDefinition.getAttachmentStatics(game, getController());
+        for (final MagicStatic mstatic: statics) {
+            game.addStatic(this, mstatic);
+        }
+    }
+    
+    private void removeAttachmentStatics(final MagicGame game) {
+        final Collection<MagicStatic> statics = cardDefinition.getAttachmentStatics(game, getController());
+        for (final MagicStatic mstatic: statics) {
+            game.removeStatic(this, mstatic);
+        }
+    }
 		
 	public MagicPermanent getEquippedCreature() {
 		return equippedCreature;
@@ -760,14 +743,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return equipmentPermanents;
 	}
 	
-	public void addEquipment(final MagicPermanent equipment) {
+	public void addEquipment(final MagicPermanent equipment, final MagicGame game) {
 		equipmentPermanents.add(equipment);
-		localVariables.add(equipment.getAttachmentLocalVariable());
+        equipment.addAttachmentStatics(game);
 	}
 	
-	public void removeEquipment(final MagicPermanent equipment) {
+	public void removeEquipment(final MagicPermanent equipment, final MagicGame game) {
 		equipmentPermanents.remove(equipment);
-		localVariables.remove(equipment.getAttachmentLocalVariable());
+        equipment.removeAttachmentStatics(game);
 	}
 	
 	public boolean isEquipped() {
@@ -786,14 +769,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return auraPermanents;
 	}
 	
-	public void addAura(final MagicPermanent aura) {
+	public void addAura(final MagicPermanent aura, final MagicGame game) {
 		auraPermanents.add(aura);
-		localVariables.add(aura.getAttachmentLocalVariable());
+        aura.addAttachmentStatics(game);
 	}
 	
-	public void removeAura(final MagicPermanent aura) {
+	public void removeAura(final MagicPermanent aura, final MagicGame game) {
 		auraPermanents.remove(aura);
-		localVariables.remove(aura.getAttachmentLocalVariable());
+        aura.removeAttachmentStatics(game);
 	}
 			
 	public boolean isEnchanted() {
@@ -822,12 +805,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			return cachedTypeFlags;
 		}
 		
-        int flags=cardDefinition.getTypeFlags();
+        int flags = cardDefinition.getTypeFlags();
 
-        for (final MagicLocalVariable localVariable : localVariables) {
-			flags = localVariable.getTypeFlags(this,flags);
-		}
-       
         flags = MagicLayer.getTypeFlags(game,this,flags);
 
 		return flags;
@@ -843,6 +822,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public boolean isCreature(final MagicGame game) {
 		return MagicType.Creature.hasType(getTypeFlags(game));
+	}
+	
+    public boolean isEquipment() {
+		return cardDefinition.isEquipment();
 	}
 	
 	public boolean isArtifact() {
