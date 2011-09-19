@@ -21,11 +21,14 @@ public class Stitch_Together {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player = cardOnStack.getController();
+			// estimated number of cards in the graveyard. this may change
+			// before resolution but we need to make a choice here
+			final boolean threshold = player.getGraveyard().size() >= 7;
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(threshold ?true:false),
                     new Object[]{cardOnStack,player},
                     this,
                     "Return target creature card$ from your graveyard to your hand. " +

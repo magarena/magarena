@@ -23,7 +23,7 @@ public class Debtors__Knell {
                         permanent,
                         player,
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                        MagicGraveyardTargetPicker.getInstance(),
+                        new MagicGraveyardTargetPicker(true),
                         new Object[]{player},
                         this,
                         "Put target creature card$ in a graveyard onto the battlefield under your control."):

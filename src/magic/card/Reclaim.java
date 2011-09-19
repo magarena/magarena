@@ -23,7 +23,7 @@ public class Reclaim {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false),
                     new Object[]{cardOnStack,player},
                     this,
                     "Put target card$ from your graveyard on top of your library.");

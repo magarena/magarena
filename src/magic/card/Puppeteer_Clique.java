@@ -22,7 +22,7 @@ public class Puppeteer_Clique {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{player},this,
                     "Put target creature card$ in an opponent's graveyard onto the battlefield under your control. "+
                     "It has haste. At the end of your turn, exile it.");

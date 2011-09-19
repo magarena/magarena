@@ -32,7 +32,7 @@ public class Elvish_Piper {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{source.getController()},
                     this,
 					"Put a creature card$ from your hand onto the battlefield.");

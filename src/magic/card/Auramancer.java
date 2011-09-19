@@ -24,7 +24,7 @@ public class Auramancer {
 	                new MagicMayChoice(
                         "You may return target enchantment card from your graveyard to your hand.",
                         MagicTargetChoice.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD),
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
                     "You may$ return target enchantment card$ from your graveyard to your hand.");

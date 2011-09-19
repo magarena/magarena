@@ -25,7 +25,7 @@ public class Gravedigger {
 	                new MagicMayChoice(
                         "You may return target creature card from your graveyard to your hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
                     "You may$ return target creature card$ from your graveyard to your hand.");

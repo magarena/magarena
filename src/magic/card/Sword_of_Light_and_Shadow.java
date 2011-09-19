@@ -29,7 +29,7 @@ public class Sword_of_Light_and_Shadow {
                     new MagicMayChoice(
                         "You may return target creature card from your graveyard to your hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false),
                     new Object[]{player},
                     this,
                     player + " gains 3 life and you may$ return target creature card$ " +

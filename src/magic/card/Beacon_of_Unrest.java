@@ -24,7 +24,7 @@ public class Beacon_of_Unrest {
                     card,
                     player,
                     MagicTargetChoice.TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{card,player},
                     this,
                     "Return target artifact or creature card$ from a graveyard onto the battlefield under your control. "+

@@ -25,7 +25,7 @@ public class Eternal_Witness {
 	                new MagicMayChoice(
                         "You may return target card from your graveyard to your hand.",
                         MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD),
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
                     "You may$ return target card$ from your graveyard to your hand.");

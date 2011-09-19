@@ -53,7 +53,7 @@ public class Cemetery_Reaper {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true), // exiling a high cost card is good here
                     new Object[]{source.getController()},
                     this,
                     "Exile target creature card from a graveyard. " +

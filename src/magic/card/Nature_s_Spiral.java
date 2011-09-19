@@ -23,7 +23,7 @@ public class Nature_s_Spiral {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false),
                     new Object[]{cardOnStack,player},
                     this,
                     "Return target permanent card$ from your graveyard to your hand.");

@@ -7,16 +7,17 @@ import magic.model.MagicPlayer;
 
 public class MagicGraveyardTargetPicker extends MagicTargetPicker<MagicCard> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicGraveyardTargetPicker();
+	private final boolean noCastingCost;
 	
-	private MagicGraveyardTargetPicker() {}
+	public MagicGraveyardTargetPicker(final boolean noCastingCost) {
+		this.noCastingCost = noCastingCost;
+	}
+	
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-		return ArtificialScoringSystem.getCardScore(target);
-	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
+		return noCastingCost ?
+			ArtificialScoringSystem.getFreeCardScore(target):
+			ArtificialScoringSystem.getCardScore(target);
 	}
 }

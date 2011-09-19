@@ -24,7 +24,7 @@ public class Reanimate {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false), // no mana cost but payed with life
                     new Object[]{cardOnStack,player},
                     this,
                     "Put target creature card$ from a graveyard onto the battlefield under your control. " +

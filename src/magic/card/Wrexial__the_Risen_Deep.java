@@ -30,7 +30,7 @@ public class Wrexial__the_Risen_Deep {
                     new MagicMayChoice(
                         "You may cast target instant or sorcery card from your opponent's graveyard.",
                         MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD),
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
                     "You may$ cast target instant or sorcery card$ from your opponent's graveyard " + 

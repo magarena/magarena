@@ -23,7 +23,7 @@ public class Zombify {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{cardOnStack,player},
                     this,
                     "Return target creature card$ from your graveyard to the battlefield.");

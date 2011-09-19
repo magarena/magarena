@@ -21,7 +21,7 @@ public class Sun_Titan {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 
@@ -51,7 +51,7 @@ public class Sun_Titan {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 

@@ -48,7 +48,7 @@ public class Rise_from_the_Grave {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{cardOnStack,player},
                     this,
                     "Put target creature$ card from a graveyard onto the " +

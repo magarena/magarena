@@ -268,6 +268,13 @@ public class MagicCardDefinition {
 		}
 		return score;
 	}
+	
+	public int getFreeScore() {
+		if (score<0) {
+			score=ArtificialScoringSystem.getFreeCardDefinitionScore(this);
+		}
+		return score;
+	}
 					
 	public void setRarity(final char c) {
 		this.rarity = MagicRarity.getRarity(c);

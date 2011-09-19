@@ -52,8 +52,30 @@ public class ArtificialScoringSystem {
 		}
 	}
 	
+	// score for a card that gets put into play without paying the mana cost
+	public static int getFreeCardDefinitionScore(final MagicCardDefinition cardDefinition) {
+		if (cardDefinition.isLand()) {
+			int score=cardDefinition.getValue()*50;
+			for (final MagicColor color : MagicColor.values()) {
+				
+				score+=cardDefinition.getManaSource(color)*50;
+			}
+			return score;
+		}
+		final int score=cardDefinition.getValue()*100;
+		if (cardDefinition.isCreature()) {
+			return score+(cardDefinition.getCardPower()+cardDefinition.getCardToughness())*10;
+		} else {
+			return score+cardDefinition.getRemoval()*50+cardDefinition.getRarity()*30;
+		}
+	}
+	
 	public static int getCardScore(final MagicCard card) {
 		return card.isKnown()?card.getCardDefinition().getScore():UNKNOWN_CARD_SCORE;
+	}
+	
+	public static int getFreeCardScore(final MagicCard card) {
+		return card.isKnown()?card.getCardDefinition().getFreeScore():UNKNOWN_CARD_SCORE;
 	}
 
 	public static int getFixedPermanentScore(final MagicPermanent permanent) {

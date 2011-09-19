@@ -24,7 +24,7 @@ public class Recover {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(false),
                     new Object[]{cardOnStack,player},
                     this,
                     "Return target creature card$ from your graveyard to your hand. Draw a card.");

@@ -26,7 +26,7 @@ public class Sheoldred__Whispering_One {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
                     "Return target creature card$ from your graveyard to the battlefield.");

@@ -23,7 +23,7 @@ public class Dramatic_Entrance {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_GREEN_CREATURE_CARD_FROM_HAND,
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{cardOnStack,cardOnStack.getController()},
                     this,
 					"Put a green creature card$ from your hand onto the battlefield.");

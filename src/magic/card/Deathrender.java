@@ -28,7 +28,7 @@ public class Deathrender {
                             "You may put a creature card from your hand onto the " +
                             "battlefield. and attach " + permanent + " to it.",
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_HAND),
-                    MagicGraveyardTargetPicker.getInstance(),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{permanent.getController(),permanent},
                     this,
                     "You may$ put a creature card$ from your hand onto the battlefield " +

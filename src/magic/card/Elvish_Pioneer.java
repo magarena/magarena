@@ -25,7 +25,7 @@ public class Elvish_Pioneer {
                     new MagicMayChoice(
 							player + " may put a basic land card from his or her hand into play tapped.",
 							MagicTargetChoice.TARGET_BASIC_LAND_CARD_FROM_HAND),
-                    MagicGraveyardTargetPicker.getInstance(),
+					new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
 					player + " may$ put a basic land card$ from his or her hand into play tapped.");

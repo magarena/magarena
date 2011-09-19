@@ -27,7 +27,7 @@ public class Wort__Boggart_Auntie {
                         new MagicMayChoice(
                             "You may return target Goblin card from your graveyard to your hand.",
                             MagicTargetChoice.TARGET_GOBLIN_CARD_FROM_GRAVEYARD),
-                        MagicGraveyardTargetPicker.getInstance(),
+                        new MagicGraveyardTargetPicker(false),
                         MagicEvent.NO_DATA,
                         this,
                         "You may$ return target Goblin card$ from your graveyard to your hand."):
