@@ -10740,3 +10740,44 @@ given_power=2
 given_toughness=0
 given_ability=first strike
 timing=equipment
+
+>Peregrine Mask
+image=http://magiccards.info/scans/en/rav/268.jpg
+value=2
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+given_power=0
+given_toughness=0
+given_ability=defender,flying,first strike
+timing=equipment
+
+>Skinwing
+image=http://magiccards.info/scans/en/mbs/133.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=4
+cost={4}
+equip={6}
+given_power=2
+given_toughness=2
+given_ability=flying
+timing=equipment
+
+>Warlord's Axe
+image=http://magiccards.info/scans/en/m11/220.jpg
+value=2
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={4}
+given_power=3
+given_toughness=1
+timing=equipment
