@@ -33,7 +33,8 @@ class TestAbilities extends TestGameBuilder {
 		createPermanent(game,P,"Lightning Greaves",false,1);
 		createPermanent(game,P,"Sword of Body and Mind",false,1);	
 		createPermanent(game,P,"Darksteel Axe",false,1);
-		createPermanent(game,P,"Akroma's Memorial",false,1);						
+		createPermanent(game,P,"Akroma's Memorial",false,1);	
+		createPermanent(game,P,"Creeping Tar Pit",false,1);					
 	    addToHand(P,"Naturalize",5); 
 	    addToHand(P,"Demystify",3); 
 	    addToHand(P,"Doom Blade",5); 
