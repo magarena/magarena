@@ -1,3 +1,30 @@
+>Rhox Pikemaster
+image=http://magiccards.info/scans/en/m10/26.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Rhino,Soldier
+color=w
+converted=4
+cost={2}{W}{W}
+power=3
+toughness=3
+ability=first strike
+timing=main
+
+>Roughshod Mentor
+image=http://magiccards.info/scans/en/shm/128.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+color=g
+converted=6
+cost={5}{G}
+power=5
+toughness=4
+timing=main
+
 >Hand of the Praetors
 image=http://magiccards.info/scans/en/som/66.jpg
 value=3
@@ -6320,6 +6347,56 @@ type=Enchantment
 color=rg
 converted=3
 cost={1}{R}{G}
+timing=enchantment
+
+>Fervor
+image=http://magiccards.info/scans/en/7e/181.jpg
+value=3
+rarity=R
+type=Enchantment
+color=r
+converted=3
+cost={2}{R}
+timing=enchantment
+
+>Knighthood
+image=http://magiccards.info/scans/en/7e/25.jpg
+value=3
+rarity=U
+type=Enchantment
+color=w
+converted=3
+cost={2}{W}
+timing=enchantment
+
+>Rage Reflection
+image=http://magiccards.info/scans/en/shm/104.jpg
+value=4
+rarity=R
+type=Enchantment
+color=r
+converted=6
+cost={4}{R}{R}
+timing=enchantment
+
+>Primal Rage
+image=http://magiccards.info/scans/en/10e/286.jpg
+value=3
+rarity=U
+type=Enchantment
+color=g
+converted=2
+cost={1}{G}
+timing=enchantment
+
+>Serra's Blessing
+image=http://magiccards.info/scans/en/9e/44.jpg
+value=3
+rarity=U
+type=Enchantment
+color=w
+converted=2
+cost={1}{W}
 timing=enchantment
 
 >Trusty Machete
