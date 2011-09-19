@@ -23,40 +23,10 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
 public class Angelic_Destiny {
-	                	
-    private static final MagicStatic Angel = new MagicStatic(MagicLayer.Type) {
-        @Override
-        public EnumSet<MagicSubType> getSubTypeFlags(
-                final MagicPermanent permanent,
-                final EnumSet<MagicSubType> flags) {
-            final EnumSet<MagicSubType> mod = flags.clone();
-            mod.add(MagicSubType.Angel);
-            return mod;
-        }
-    };
-
-	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
+	
+    public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.getInstance()){
-		
-		@Override
-		public void executeEvent(
-	            final MagicGame game,
-	            final MagicEvent event,
-	            final Object[] data,
-	            final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-	        final boolean success = event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
-	            public void doAction(final MagicPermanent creature) {
-	                game.doAction(new MagicPlayCardFromStackAction(cardOnStack,creature));
-                    game.doAction(new MagicAddStaticAction(creature, Angel));
-	            }
-	        });
-			if (!success) {
-				game.doAction(new MagicMoveCardAction(cardOnStack));
-			}
-		}
-	};
+            MagicPumpTargetPicker.getInstance());
 
 	public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override

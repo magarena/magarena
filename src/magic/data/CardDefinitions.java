@@ -87,6 +87,8 @@ public class CardDefinitions {
 			for (final String name : names) {
 				card.setGivenAbility(MagicAbility.getAbility(name));
 			}
+		} else if ("given_subtype".equals(property)) {
+            card.setGivenSubTypes(value.split(","));
 		} else if ("static".equals(property)) {
 			card.setStaticType(MagicStaticType.getStaticTypeFor(value));
 		} else if ("timing".equals(property)) {
@@ -97,7 +99,7 @@ public class CardDefinitions {
 				card.addIgnore(Long.parseLong(size));
 			}
 		} else {
-			System.err.println(property);
+            throw new RuntimeException("Unknown card property " + property + "=" + value);
 		}
 	}
 	

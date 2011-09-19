@@ -72,6 +72,7 @@ public class MagicCardDefinition {
 	private boolean token=false;
 	private int typeFlags=0;
 	private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
+	private EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
 	private int colorFlags=0;
 	private int convertedCost=0;
 	private MagicColoredType coloredType=MagicColoredType.Colorless;
@@ -155,6 +156,27 @@ public class MagicCardDefinition {
                     final MagicPermanent permanent,
                     long flags) {
                     return flags | givenAbilityFlag;
+                }
+                @Override
+                public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                    return (source.isEquipment()) ? 
+                        source.getEquippedCreature() == target :
+                        source.getEnchantedCreature() == target;
+                }
+            });
+        }
+        
+        //grant subtype
+        final EnumSet<MagicSubType> givenSubTypeFlags = getGivenSubTypes();
+        if (!givenSubTypeFlags.isEmpty()) {
+            attStatics.add(new MagicStatic(MagicLayer.Type) {
+                @Override
+                public EnumSet<MagicSubType> getSubTypeFlags(
+                    final MagicPermanent permanent,
+                    final EnumSet<MagicSubType> flags) {
+                    final EnumSet<MagicSubType> mod = flags.clone();
+                    mod.addAll(givenSubTypeFlags);
+                    return mod;
                 }
                 @Override
                 public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
@@ -432,6 +454,18 @@ public class MagicCardDefinition {
 	public boolean usesStack() {
 		return !isLand();
 	}
+    
+    public void setGivenSubTypes(final String[] subTypeNames) {
+		givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
+		for (final String subTypeName : subTypeNames) {
+			final MagicSubType subType=MagicSubType.getSubType(subTypeName); 
+            givenSubTypeFlags.add(subType);
+		}
+	}
+
+    EnumSet<MagicSubType> getGivenSubTypes() {
+        return givenSubTypeFlags;
+    }
 	
 	public void setSubTypes(final String[] subTypeNames) {
 		subTypeFlags = EnumSet.noneOf(MagicSubType.class);
@@ -637,11 +671,6 @@ public class MagicCardDefinition {
 	
 	public void setGivenAbility(final MagicAbility ability) {
 		givenAbilityFlags|=ability.getMask();
-		if (ability==MagicAbility.Exalted) {
-			addTrigger(MagicExaltedTrigger.getInstance());
-		} else if (ability==MagicAbility.BattleCry) {
-			addTrigger(MagicBattleCryTrigger.getInstance());
-		}
 	}
 
 	public long getGivenAbilityFlags() {
