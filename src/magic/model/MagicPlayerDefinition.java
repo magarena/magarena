@@ -20,7 +20,6 @@ public class MagicPlayerDefinition {
 	private MagicPlayerProfile profile;
 	private int face;
 	private final MagicDeck deck = new MagicDeck();
-    private final MagicDeck unsupported = new MagicDeck();
 
 	MagicPlayerDefinition() {}
 	
@@ -113,10 +112,6 @@ public class MagicPlayerDefinition {
         deck.setContent(aDeck);
 	}	
 	
-    public MagicDeck getUnsupported() {
-		return unsupported;
-	}	
-	
 	void generateDeck(final DeckGenerator generator) {
 		generator.generateDeck(DECK_SIZE, profile, deck);
 		addBasicLandsToDeck();
@@ -133,6 +128,7 @@ public class MagicPlayerDefinition {
 		profile=new MagicPlayerProfile(colors);
 		face=Integer.parseInt(properties.getProperty(prefix+FACE));
 
+        final MagicDeck unsupported = new MagicDeck();
 		deck.clear();
         for (int index=1;index<=properties.size();index++) {
             final String deckPrefix = getDeckPrefix(prefix,index);
@@ -146,6 +142,8 @@ public class MagicPlayerDefinition {
                 }
             }
         }
+
+        magic.data.DeckUtils.showUnsupportedCards(unsupported);
 	}
 	
 	void save(final Properties properties,final String prefix) {

@@ -146,36 +146,9 @@ public class DeckUtils {
                 }
             }
         }
-		
-		// show error message for unsupported cards
-		if(unsupported.size() > 0) {
-			StringBuffer sb = new StringBuffer();
-			sb.append("The loaded deck contained unsupported card(s): ");
-			
-			// generate list of unsupported cards
-			for (int i = 0; i < unsupported.size(); i++) {
-				if(i > 0) {
-					sb.append(", ");
-				}
-				sb.append(unsupported.get(i).getName());
-			}
-			
-			// options panel doesn't have automatic text wrapping 
-			// because the method that provides max char limit isn't 
-			// coded, so override that method
-			JOptionPane cleanupPane = new JOptionPane(sb.toString(), JOptionPane.ERROR_MESSAGE) { 
-				private static final long serialVersionUID = 232L;
-	
-				@Override
-				public int getMaxCharactersPerLineCount() { 
-					return 70; 
-				} 
-			};
-			cleanupPane.createDialog(null, "Unsupported Cards").setVisible(true);
-			
-			unsupported.clear();
-		}
-        
+
+        showUnsupportedCards(unsupported);
+
         // Find up to 3 of the most common colors in the deck.
         final StringBuilder colorText=new StringBuilder();
         while (colorText.length()<3) {
@@ -195,6 +168,39 @@ public class DeckUtils {
         }
         player.setProfile(new MagicPlayerProfile(colorText.toString()));
 	}
+		
+    public static void showUnsupportedCards(final MagicDeck unsupported) {
+        if (unsupported.isEmpty()) {
+            return;
+        }
+
+        // show error message for unsupported cards
+        StringBuffer sb = new StringBuffer();
+        sb.append("The loaded deck contained unsupported card(s): ");
+        
+        // generate list of unsupported cards
+        for (int i = 0; i < unsupported.size(); i++) {
+            if(i > 0) {
+                sb.append(", ");
+            }
+            sb.append(unsupported.get(i).getName());
+        }
+        
+        // options panel doesn't have automatic text wrapping 
+        // because the method that provides max char limit isn't 
+        // coded, so override that method
+        JOptionPane cleanupPane = new JOptionPane(sb.toString(), JOptionPane.ERROR_MESSAGE) { 
+            private static final long serialVersionUID = 232L;
+
+            @Override
+            public int getMaxCharactersPerLineCount() { 
+                return 70; 
+            } 
+        };
+        cleanupPane.createDialog(null, "Unsupported Cards").setVisible(true);
+        
+        unsupported.clear();
+    }
 	
 	private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
 		final File files[]=folder.listFiles();
