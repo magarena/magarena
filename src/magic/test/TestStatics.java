@@ -33,13 +33,13 @@ class TestStatics extends TestGameBuilder {
         createPermanent(game,P,"Phyrexian Crusader",false,3);
 	    addToHand(P,"Glorious Anthem",1); 
 	    addToHand(P,"Godhead of Awe",1); 
-	    addToHand(P,"Tolsimir Wolfblood",1); 
 	    addToHand(P,"Aven Mimeomancer",1); 
-	    addToHand(P,"Student of Warfare",1); 
         addToHand(P, "Mortivore", 1);
         addToHand(P, "Flayer Husk", 1);
         addToHand(P, "Rancor", 1);
         addToHand(P, "Angelic Destiny", 1);
+        addToHand(P, "Master of Etherium", 1);
+        addToHand(P, "Mortivore", 1);
         addToGraveyard(P,"Mortivore", 10);
 
         P = opponent;
