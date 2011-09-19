@@ -1,3 +1,26 @@
+>Bramble Creeper
+image=http://magiccards.info/scans/en/m10/171.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elemental
+color=g
+converted=5
+cost={4}{G}
+power=0
+toughness=3
+timing=main
+
+>Bountiful Harvest
+image=http://magiccards.info/scans/en/m12/166.jpg
+value=3
+rarity=C
+type=Sorcery
+color=g
+converted=5
+cost={4}{G}
+timing=draw
+
 >Rhox Pikemaster
 image=http://magiccards.info/scans/en/m10/26.jpg
 value=3
