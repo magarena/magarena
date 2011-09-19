@@ -48,6 +48,7 @@ public class MagicCardDefinition {
 			setAbility(MagicAbility.Defender);
 			setAbility(MagicAbility.CannotBeCountered);
 			setAbility(MagicAbility.Shroud);
+            setTiming(MagicTiming.Main);
 		}
 	};
 
