@@ -6314,6 +6314,56 @@ converted=3
 cost={1}{R}{G}
 timing=enchantment
 
+>Fervor
+image=http://magiccards.info/scans/en/7e/181.jpg
+value=3
+rarity=R
+type=Enchantment
+color=r
+converted=3
+cost={2}{R}
+timing=enchantment
+
+>Knighthood
+image=http://magiccards.info/scans/en/7e/25.jpg
+value=3
+rarity=U
+type=Enchantment
+color=w
+converted=3
+cost={2}{W}
+timing=enchantment
+
+>Rage Reflection
+image=http://magiccards.info/scans/en/shm/104.jpg
+value=4
+rarity=R
+type=Enchantment
+color=r
+converted=6
+cost={4}{R}{R}
+timing=enchantment
+
+>Primal Rage
+image=http://magiccards.info/scans/en/10e/286.jpg
+value=3
+rarity=U
+type=Enchantment
+color=g
+converted=2
+cost={1}{G}
+timing=enchantment
+
+>Serra's Blessing
+image=http://magiccards.info/scans/en/9e/44.jpg
+value=3
+rarity=U
+type=Enchantment
+color=w
+converted=2
+cost={1}{W}
+timing=enchantment
+
 >Trusty Machete
 image=http://magiccards.info/scans/en/zen/209.jpg
 value=2
