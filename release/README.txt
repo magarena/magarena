@@ -67,7 +67,7 @@ brought to you by beholder, melvin, and wait321
 - added support for non-creature auras
 - ensure that order of blockers does not change when the attacker they were
   blocking is destroyed
-- game no longer crashes if when you load a deck that contains an unsupported
+- game no longer crashes when you load a deck that contains an unsupported
   card, instead a message indicating the unsupported cards will be shown
 
 - fixed a bug where the "When Targeted" trigger does not activate for spells
