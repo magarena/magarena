@@ -267,9 +267,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         for (final MagicLocalVariable localVariable : localVariables) {
             flags = localVariable.getColorFlags(this,flags);
         }
-        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Color)) {
-            flags = mpstatic.getStatic().getColorFlags(this,flags);
-        }
+
+        flags = MagicLayer.getColorFlags(game, this, flags);
+        
         return flags;
 	}
 		
@@ -316,9 +316,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			flags = localVariable.getSubTypeFlags(this,flags);
 		}
 
-        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
-            flags = mpstatic.getStatic().getSubTypeFlags(this,flags);
-        }
+        flags = MagicLayer.getSubTypeFlags(game,this,flags);
 
 		return flags;
 	}
@@ -829,10 +827,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         for (final MagicLocalVariable localVariable : localVariables) {
 			flags = localVariable.getTypeFlags(this,flags);
 		}
-        
-        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
-			flags = mpstatic.getStatic().getTypeFlags(this,flags);
-		}
+       
+        flags = MagicLayer.getTypeFlags(game,this,flags);
 
 		return flags;
 	}

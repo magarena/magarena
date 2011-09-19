@@ -29,6 +29,7 @@ class TestStatics extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
+		createPermanent(game,P,"Creeping Tar Pit",false,1);
         createPermanent(game,P,"Phyrexian Crusader",false,3);
 	    addToHand(P,"Glorious Anthem",1); 
 	    addToHand(P,"Godhead of Awe",1); 
