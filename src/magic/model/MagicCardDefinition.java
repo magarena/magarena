@@ -15,6 +15,7 @@ import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicExaltedTrigger;
+import magic.model.trigger.MagicLivingWeaponTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicCDA;
@@ -669,7 +670,9 @@ public class MagicCardDefinition {
 			addTrigger(MagicExaltedTrigger.getInstance());
 		} else if (ability==MagicAbility.BattleCry) {
 			addTrigger(MagicBattleCryTrigger.getInstance());
-		}
+		} else if (ability==MagicAbility.LivingWeapon) {
+            addTrigger(MagicLivingWeaponTrigger.getInstance());
+        }
 	}
 
 	public long getAbilityFlags() {

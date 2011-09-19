@@ -47,6 +47,4 @@ public class Batterskull {
 			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
 		}
 	};
-    
-    public static final MagicTrigger LW = new MagicLivingWeaponTrigger();
 }
