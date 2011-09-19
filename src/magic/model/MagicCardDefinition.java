@@ -18,7 +18,7 @@ import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicCDA;
-import magic.model.variable.MagicAttachmentLocalVariable;
+import magic.model.mstatic.MagicLayer;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
@@ -86,7 +86,7 @@ public class MagicCardDefinition {
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
     private MagicActivation cardActivation;
-    private MagicAttachmentLocalVariable attachmentLocalVariable;
+    private Collection<MagicStatic> attStatics;
 	private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
 	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
@@ -117,6 +117,56 @@ public class MagicCardDefinition {
 		System.err.println(numModifications + " card modifications");
 		System.err.println(numCDAs + " CDAs");
     }
+	
+    public Collection<MagicStatic> getAttachmentStatics(final MagicGame game, final MagicPlayer player) {
+        if (attStatics != null) {
+            return attStatics;
+        }
+
+        attStatics = new ArrayList<MagicStatic>();
+        
+        //added modification to p/t    
+        final MagicPowerToughness modPT = genPowerToughness(game, player); 
+        if (modPT.power() > 0 || modPT.toughness() > 0) {
+            attStatics.add(new MagicStatic(MagicLayer.ModPT) {
+                @Override
+                public void getPowerToughness(
+                    final MagicGame game,
+                    final MagicPermanent permanent,
+                    final MagicPowerToughness pt) {
+                    pt.add(modPT);
+                }
+                @Override
+                public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                    return (source.isEquipment()) ? 
+                        source.getEquippedCreature() == target :
+                        source.getEnchantedCreature() == target;
+                }
+            });
+        }
+
+        //grant abilities
+        final long givenAbilityFlag = getGivenAbilityFlags();
+        if (givenAbilityFlag != 0) {
+            attStatics.add(new MagicStatic(MagicLayer.Ability) {
+                @Override
+                public long getAbilityFlags(
+                    final MagicGame game,
+                    final MagicPermanent permanent,
+                    long flags) {
+                    return flags | givenAbilityFlag;
+                }
+                @Override
+                public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                    return (source.isEquipment()) ? 
+                        source.getEquippedCreature() == target :
+                        source.getEnchantedCreature() == target;
+                }
+            });
+        }
+
+		return attStatics;
+	}
 
     public boolean isValid() {
         return true;
@@ -616,13 +666,6 @@ public class MagicCardDefinition {
 	
 	public MagicTiming getTiming() {
 		return timing;
-	}
-				
-	MagicAttachmentLocalVariable getAttachmentLocalVariable() {
-        if (attachmentLocalVariable == null) {
-            attachmentLocalVariable = new MagicAttachmentLocalVariable(this);
-        }
-		return attachmentLocalVariable;
 	}
 	
 	private void setCardEvent(final MagicCardEvent cardEvent) {
