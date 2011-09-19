@@ -42,18 +42,24 @@ Thanks to
   Rachel for making it possible to cancel image download and fixing incorrect images
   beholder for implementing new cards and general usability improvements
   johncpatterson for helping to test the Mac startup script
-  wait321 for improving the card explorer and "New Game" screen
+  wait321 for creating a deck editor and other UI improvements
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
 
-Release 1997 (September QQQ, 2011)
+Release 2270 (September QQQ, 2011)
 ============
 brought to you by beholder, melvin, and wait321
 
 - added the following cards:
 
-- improved card explorer and "New Game" screen
+
+
+- revamped the implementation of continuous effects to be more modular, the
+  engine now supports layers and timestamps
+- added option in preferences to select type of card highlighting 
+- added deck editor
+- improved the "New Game" screen
 - improved crash handling to handle unhandled exception from any part of the
   program
 - improved the resolution of some token images
@@ -61,6 +67,8 @@ brought to you by beholder, melvin, and wait321
 - added support for non-creature auras
 - ensure that order of blockers does not change when the attacker they were
   blocking is destroyed
+- game no longer crashes if when you load a deck that contains an unsupported
+  card, instead a message indicating the unsupported cards will be shown
 
 - fixed a bug where the "When Targeted" trigger does not activate for spells
   with kicker
