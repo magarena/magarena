@@ -37,6 +37,9 @@ class TestStatics extends TestGameBuilder {
 	    addToHand(P,"Aven Mimeomancer",1); 
 	    addToHand(P,"Student of Warfare",1); 
         addToHand(P, "Mortivore", 1);
+        addToHand(P, "Flayer Husk", 1);
+        addToHand(P, "Rancor", 1);
+        addToHand(P, "Angelic Destiny", 1);
         addToGraveyard(P,"Mortivore", 10);
 
         P = opponent;
@@ -45,7 +48,6 @@ class TestStatics extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Phyrexian Crusader",false,3);
-	    addToHand(P,"Naturalize",2); 
 		
 		return game;
     }
