@@ -1,3 +1,16 @@
+>Kavu Predator
+image=http://magiccards.info/scans/en/pc/132.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Kavu
+color=g
+converted=2
+cost={1}{G}
+power=2
+toughness=2
+timing=main
+
 >Ageless Entity
 image=http://magiccards.info/scans/en/ddh/18.jpg
 value=4
