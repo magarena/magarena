@@ -47,28 +47,22 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 2270 (September QQQ, 2011)
+Release 2270 (September 23, 2011)
 ============
 brought to you by beholder, melvin, and wait321
 
-- added the following cards:
-
-
-
+- added deck editor
 - revamped the implementation of continuous effects to be more modular, the
   engine now supports layers and timestamps
-- added option in preferences to select type of card highlighting 
-- added deck editor
-- improved the "New Game" screen
-- improved crash handling to handle unhandled exception from any part of the
-  program
+- updated the look and feel of the UI and improved the "New Game" screen
 - improved the resolution of some token images
 - added support for "whenever player gain life" trigger
 - added support for non-creature auras
 - ensure that order of blockers does not change when the attacker they were
   blocking is destroyed
-- game no longer crashes when you load a deck that contains an unsupported
-  card, instead a message indicating the unsupported cards will be shown
+- improved crash handling to handle unhandled exception from any part of the
+  program
+- added option in preferences to select type of card highlighting 
 
 - fixed a bug where the "When Targeted" trigger does not activate for spells
   with kicker
@@ -76,6 +70,12 @@ brought to you by beholder, melvin, and wait321
   typo in the name of the class that implements the mana abilities
 - fixed a bug where the program would crash when opening the log book
   immediately after resetting the game
+- fixed a bug where the game would crash when you load a deck that contains
+  an unsupported card, instead a message indicating the unsupported cards is
+  shown
+
+- added the following cards:
+
 
 Release 1.17b (August 27, 2011)
 =============
