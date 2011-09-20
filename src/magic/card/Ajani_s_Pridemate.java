@@ -11,9 +11,9 @@ import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 public class Ajani_s_Pridemate {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object[] data) {
 			final MagicPlayer player = permanent.getController();
-			return (player == data) ?
+			return (player == (MagicPlayer)data[0]) ?
 				new MagicEvent(
                     permanent,
                     player,
