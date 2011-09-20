@@ -1,3 +1,16 @@
+>Ageless Entity
+image=http://magiccards.info/scans/en/ddh/18.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=5
+cost={3}{G}{G}
+power=4
+toughness=4
+timing=fmain
+
 >Ballista Squad
 image=http://magiccards.info/scans/en/10e/8.jpg
 value=3
