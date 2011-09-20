@@ -1,3 +1,17 @@
+>Angel of Mercy
+image=http://magiccards.info/scans/en/10e/2.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=5
+cost={4}{W}
+power=3
+toughness=3
+ability=flying
+timing=main
+
 >Primordial Hydra
 image=http://magiccards.info/scans/en/m12/189.jpg
 value=4
@@ -3733,6 +3747,16 @@ converted=1
 cost={G}
 timing=pump
 
+>Aggressive Urge
+image=http://magiccards.info/scans/en/10e/250.jpg
+value=2
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=pump
+
 >Incinerate
 image=http://magiccards.info/scans/en/jvc/51.jpg
 value=3
@@ -3785,6 +3809,17 @@ type=Instant
 color=b
 converted=2
 cost={B}{B}
+timing=removal
+
+>Afflict
+image=http://magiccards.info/scans/en/10e/125.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=b
+converted=3
+cost={2}{B}
 timing=removal
 
 >Lightning Helix
@@ -8111,6 +8146,16 @@ type=Instant
 color=w
 converted=2
 cost={1}{W}
+timing=pump
+
+>Angelic Blessing
+image=http://magiccards.info/scans/en/10e/3.jpg
+value=3
+rarity=C
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
 timing=pump
 
 >Liliana's Specter
