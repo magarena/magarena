@@ -1,3 +1,16 @@
+>Bogardan Firefiend
+image=http://magiccards.info/scans/en/10e/193.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elemental,Spirit
+color=r
+converted=3
+cost={2}{R}
+power=2
+toughness=1
+timing=main
+
 >Kavu Predator
 image=http://magiccards.info/scans/en/pc/132.jpg
 value=3
@@ -9614,6 +9627,16 @@ type=Instant
 color=ub
 converted=3
 cost={1}{U}{B}
+timing=removal
+
+>Boomerang
+image=http://magiccards.info/scans/en/10e/70.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={U}{U}
 timing=removal
 
 >Ezuri's Archers
