@@ -716,20 +716,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		// Protection
 		return !hasProtectionFrom(attackerFlags,this,game);
 	}
-	
-    private void addAttachmentStatics(final MagicGame game) {
-        final Collection<MagicStatic> statics = cardDefinition.getAttachmentStatics(game, getController());
-        for (final MagicStatic mstatic: statics) {
-            game.addStatic(this, mstatic);
-        }
-    }
-    
-    private void removeAttachmentStatics(final MagicGame game) {
-        final Collection<MagicStatic> statics = cardDefinition.getAttachmentStatics(game, getController());
-        for (final MagicStatic mstatic: statics) {
-            game.removeStatic(this, mstatic);
-        }
-    }
 		
 	public MagicPermanent getEquippedCreature() {
 		return equippedCreature;
@@ -745,12 +731,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public void addEquipment(final MagicPermanent equipment, final MagicGame game) {
 		equipmentPermanents.add(equipment);
-        equipment.addAttachmentStatics(game);
 	}
 	
 	public void removeEquipment(final MagicPermanent equipment, final MagicGame game) {
 		equipmentPermanents.remove(equipment);
-        equipment.removeAttachmentStatics(game);
 	}
 	
 	public boolean isEquipped() {
@@ -771,12 +755,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public void addAura(final MagicPermanent aura, final MagicGame game) {
 		auraPermanents.add(aura);
-        aura.addAttachmentStatics(game);
 	}
 	
 	public void removeAura(final MagicPermanent aura, final MagicGame game) {
 		auraPermanents.remove(aura);
-        aura.removeAttachmentStatics(game);
 	}
 			
 	public boolean isEnchanted() {
