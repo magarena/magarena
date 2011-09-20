@@ -29,5 +29,5 @@ public class Pelakka_Wurm {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],7));
 		}
     };
-    public static final MagicDieDrawCardTrigger T2 = new MagicDieDrawCardTrigger();
+    public static final MagicDieDrawCardTrigger T2 = new MagicDieDrawCardTrigger(true);
 }

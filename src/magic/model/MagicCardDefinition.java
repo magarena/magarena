@@ -125,7 +125,7 @@ public class MagicCardDefinition {
 	
     public void addAttachmentStatics() {
         //added modification to p/t    
-        if (givenPower > 0 || givenToughness > 0) {
+        if (givenPower != 0 || givenToughness != 0) {
             statics.add(new MagicStatic(MagicLayer.ModPT) {
                 @Override
                 public void getPowerToughness(

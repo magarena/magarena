@@ -56,12 +56,15 @@ brought to you by beholder, melvin, and wait321
   engine now supports layers and timestamps
 - updated the look and feel of the UI and improved the "New Game" screen
 - improved the resolution of some token images
-- added support for "whenever player gain life" trigger
+- added support for "whenever player gains life" trigger
 - added support for non-creature auras
-- ensure that order of blockers does not change when the attacker they were
+- added support for auras and equipment to have abilities
+- ensured that order of blockers does not change when the attacker they were
   blocking is destroyed
+- added option for some "may" choices to have a default value
 - improved crash handling to handle unhandled exception from any part of the
   program
+- improved how AI plays cards it doesn't have to pay the mana cost for
 - added option in preferences to select type of card highlighting 
 
 - fixed a bug where the "When Targeted" trigger does not activate for spells

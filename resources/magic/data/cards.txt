@@ -1,3 +1,132 @@
+>Bogardan Firefiend
+image=http://magiccards.info/scans/en/10e/193.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elemental,Spirit
+color=r
+converted=3
+cost={2}{R}
+power=2
+toughness=1
+timing=main
+
+>Kavu Predator
+image=http://magiccards.info/scans/en/pc/132.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Kavu
+color=g
+converted=2
+cost={1}{G}
+power=2
+toughness=2
+timing=main
+
+>Ageless Entity
+image=http://magiccards.info/scans/en/ddh/18.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=5
+cost={3}{G}{G}
+power=4
+toughness=4
+timing=fmain
+
+>Ballista Squad
+image=http://magiccards.info/scans/en/10e/8.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Rebel
+color=w
+converted=4
+cost={3}{W}
+power=2
+toughness=2
+timing=main
+
+>Aven Fisher
+image=http://magiccards.info/scans/en/10e/68.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+color=u
+converted=4
+cost={3}{U}
+power=2
+toughness=2
+ability=flying
+timing=main
+
+>Aven Cloudchaser
+image=http://magiccards.info/scans/en/10e/7.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+color=w
+converted=4
+cost={3}{W}
+power=2
+toughness=2
+ability=flying
+timing=main
+
+>Ascendant Evincar
+image=http://magiccards.info/scans/en/10e/127.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Vampire
+color=b
+converted=6
+cost={4}{B}{B}
+power=3
+toughness=3
+ability=flying
+timing=fmain
+
+>Angel of Mercy
+image=http://magiccards.info/scans/en/10e/2.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=5
+cost={4}{W}
+power=3
+toughness=3
+ability=flying
+timing=main
+
+>Primordial Hydra
+image=http://magiccards.info/scans/en/m12/189.jpg
+value=4
+rarity=M
+type=Creature
+subtype=Hydra
+color=g
+converted=2
+cost={X}{G}{G}
+timing=main
+
+>Sorin's Vengeance
+image=http://magiccards.info/scans/en/m12/111.jpg
+value=4
+rarity=R
+type=Sorcery
+color=b
+converted=7
+cost={4}{B}{B}{B}
+timing=main
+
 >Bramble Creeper
 image=http://magiccards.info/scans/en/m10/171.jpg
 value=3
@@ -3712,6 +3841,16 @@ converted=1
 cost={G}
 timing=pump
 
+>Aggressive Urge
+image=http://magiccards.info/scans/en/10e/250.jpg
+value=2
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=pump
+
 >Incinerate
 image=http://magiccards.info/scans/en/jvc/51.jpg
 value=3
@@ -3764,6 +3903,17 @@ type=Instant
 color=b
 converted=2
 cost={B}{B}
+timing=removal
+
+>Afflict
+image=http://magiccards.info/scans/en/10e/125.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=b
+converted=3
+cost={2}{B}
 timing=removal
 
 >Lightning Helix
@@ -3976,6 +4126,16 @@ type=Instant
 color=w
 converted=3
 cost={2}{W}
+timing=pump
+
+>Bandage
+image=http://magiccards.info/scans/en/10e/9.jpg
+value=1
+rarity=C
+type=Instant
+color=w
+converted=1
+cost={W}
 timing=pump
 
 >Putrefy
@@ -6041,6 +6201,36 @@ converted=3
 cost={2}{B}
 timing=enchantment
 
+>Cradle of Vitality
+image=http://magiccards.info/scans/en/ala/7.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=4
+cost={3}{W}
+timing=enchantment
+
+>Sanguine Bond
+image=http://magiccards.info/scans/en/m10/111.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=5
+cost={3}{B}{B}
+timing=enchantment
+
+>Searing Meditation
+image=http://magiccards.info/scans/en/ddh/27.jpg
+value=3
+rarity=R
+type=Enchantment
+color=rw
+converted=3
+cost={1}{R}{W}
+timing=enchantment
+
 >Call to the Grave
 image=http://magiccards.info/scans/en/m12/85.jpg
 value=4
@@ -8092,6 +8282,16 @@ converted=2
 cost={1}{W}
 timing=pump
 
+>Angelic Blessing
+image=http://magiccards.info/scans/en/10e/3.jpg
+value=3
+rarity=C
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
+timing=pump
+
 >Liliana's Specter
 image=http://magiccards.info/scans/en/m11/104.jpg
 value=3
@@ -8809,6 +9009,16 @@ converted=3
 cost={1}{G}{W}
 timing=enchantment
 
+>Angelic Chorus
+image=http://magiccards.info/scans/en/10e/4.jpg
+value=3
+rarity=R
+type=Enchantment
+color=w
+converted=5
+cost={3}{W}{W}
+timing=enchantment
+
 >Force Spike
 image=http://magiccards.info/scans/en/7e/76.jpg
 value=3
@@ -9417,6 +9627,16 @@ type=Instant
 color=ub
 converted=3
 cost={1}{U}{B}
+timing=removal
+
+>Boomerang
+image=http://magiccards.info/scans/en/10e/70.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={U}{U}
 timing=removal
 
 >Ezuri's Archers

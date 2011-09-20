@@ -9,7 +9,7 @@ public enum MagicTriggerType {
 	WhenBecomesTapped,      // permanent
 	WhenDiscarded,			// card
 	WhenDrawn,				// card
-	WhenLifeIsGained,		// player
+	WhenLifeIsGained,		// player, life gained
 	WhenOtherComesIntoPlay, // permanent
 	WhenPutIntoGraveyard,   // graveyard trigger data
 	WhenOtherPutIntoGraveyardFromPlay, // permanent
