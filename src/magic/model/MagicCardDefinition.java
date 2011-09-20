@@ -87,7 +87,6 @@ public class MagicCardDefinition {
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
     private MagicActivation cardActivation;
-    private Collection<MagicStatic> attStatics;
 	private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
 	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
@@ -124,16 +123,10 @@ public class MagicCardDefinition {
 		System.err.println(numCDAs + " CDAs");
     }
 	
-    public Collection<MagicStatic> getAttachmentStatics(final MagicGame game, final MagicPlayer player) {
-        if (attStatics != null) {
-            return attStatics;
-        }
-
-        attStatics = new ArrayList<MagicStatic>();
-        
+    public void addAttachmentStatics() {
         //added modification to p/t    
         if (givenPower > 0 || givenToughness > 0) {
-            attStatics.add(new MagicStatic(MagicLayer.ModPT) {
+            statics.add(new MagicStatic(MagicLayer.ModPT) {
                 @Override
                 public void getPowerToughness(
                     final MagicGame game,
@@ -153,7 +146,7 @@ public class MagicCardDefinition {
         //grant abilities
         final long givenAbilityFlag = getGivenAbilityFlags();
         if (givenAbilityFlag != 0) {
-            attStatics.add(new MagicStatic(MagicLayer.Ability) {
+            statics.add(new MagicStatic(MagicLayer.Ability) {
                 @Override
                 public long getAbilityFlags(
                     final MagicGame game,
@@ -173,7 +166,7 @@ public class MagicCardDefinition {
         //grant subtype
         final EnumSet<MagicSubType> givenSubTypeFlags = getGivenSubTypes();
         if (!givenSubTypeFlags.isEmpty()) {
-            attStatics.add(new MagicStatic(MagicLayer.Type) {
+            statics.add(new MagicStatic(MagicLayer.Type) {
                 @Override
                 public EnumSet<MagicSubType> getSubTypeFlags(
                     final MagicPermanent permanent,
@@ -190,8 +183,6 @@ public class MagicCardDefinition {
                 }
             });
         }
-
-		return attStatics;
 	}
 
     public boolean isValid() {
