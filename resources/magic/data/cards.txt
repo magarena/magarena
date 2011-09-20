@@ -1,3 +1,24 @@
+>Primordial Hydra
+image=http://magiccards.info/scans/en/m12/189.jpg
+value=4
+rarity=M
+type=Creature
+subtype=Hydra
+color=g
+converted=2
+cost={X}{G}{G}
+timing=main
+
+>Sorin's Vengeance
+image=http://magiccards.info/scans/en/m12/111.jpg
+value=4
+rarity=R
+type=Sorcery
+color=b
+converted=7
+cost={4}{B}{B}{B}
+timing=main
+
 >Bramble Creeper
 image=http://magiccards.info/scans/en/m10/171.jpg
 value=3
