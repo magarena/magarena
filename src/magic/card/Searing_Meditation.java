@@ -1,38 +1,38 @@
 package magic.card;
 
-import magic.model.MagicCounterType;
+import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicPumpTargetPicker;
+import magic.model.target.MagicDamageTargetPicker;
+import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 
-public class Cradle_of_Vitality {
+public class Searing_Meditation {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object[] data) {
 			final MagicPlayer player = permanent.getController();
-			final int amount = (Integer)data[1];
 			return (player == (MagicPlayer)data[0]) ?
 				new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
-                            "You may pay {1}{W}.",
-                            new MagicPayManaCostChoice(MagicManaCost.ONE_WHITE),
-                            MagicTargetChoice.POS_TARGET_CREATURE),
-                            MagicPumpTargetPicker.getInstance(),
-                    new Object[]{amount},
+                            "You may pay {2}.",
+                            new MagicPayManaCostChoice(MagicManaCost.TWO),
+                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
+                            new MagicDamageTargetPicker(2),
+                    new Object[]{permanent},
                     this,
-                    "You may$ pay {1}{W}$. If you do, put a +1/+1 counter " +
-                        "on target creature$ for each 1 life you gained."):
+                    "You may$ pay {2}$. If you do, " + permanent + " deals 2 " +
+                    "damage to target creature or player$."):
                 MagicEvent.NONE;
 		}
 		@Override
@@ -42,15 +42,12 @@ public class Cradle_of_Vitality {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
-	                public void doAction(final MagicPermanent creature) {
-	                	game.doAction(new MagicChangeCountersAction(
-	        					creature,
-	        					MagicCounterType.PlusOne,
-	        					(Integer)data[0],
-	        					true));
-                    }
-                });
+				event.processTarget(game,choiceResults,2,new MagicTargetAction() {
+	                public void doAction(final MagicTarget target) {
+	                    final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,2,false);
+	                    game.doAction(new MagicDealDamageAction(damage));
+	                }
+				});
             }
 		}
     };
