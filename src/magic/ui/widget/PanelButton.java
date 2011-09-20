@@ -1,6 +1,7 @@
 package magic.ui.widget;
 
 import javax.swing.JComponent;
+import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,7 +13,7 @@ import java.awt.event.MouseEvent;
 public abstract class PanelButton extends TexturedPanel {
 
 	private static final long serialVersionUID = 1L;
-
+	
 	private boolean valid=false;
 	
 	public PanelButton() {
@@ -63,11 +64,12 @@ public abstract class PanelButton extends TexturedPanel {
 	public void mouseExited() {}
 	
 	public abstract Color getValidColor();
-
+	
 	@Override
-	public void paintComponent(final Graphics g) {
-		super.paintComponent(g); // apparently we're not really painting anything more than a rectangle...
+	public void paint(final Graphics g) {
+		super.paint(g); 
 		
+		// paint colored overlay. we're overriding paint so we can draw this last (i.e., on top)
 		final Dimension size=getSize();
 		if (valid) {
 			final Graphics2D g2d=(Graphics2D)g;
