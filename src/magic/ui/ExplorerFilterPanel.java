@@ -53,8 +53,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	private static final int SEARCH_FIELD_WIDTH = 12;
 	private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 	private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-	private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 70);
-	private static final Dimension SEARCH_HOLDER_PANEL_SIZE = new Dimension(150, 70);
+	private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 72);
+	private static final Dimension SEARCH_HOLDER_PANEL_SIZE = new Dimension(150, 72);
 	
 	private final JFrame frame;
 	private final ExplorerPanel explorerPanel;
