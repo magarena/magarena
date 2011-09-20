@@ -137,7 +137,7 @@ public class CardDefinitions {
 		}
 	}
 
-	private static void checkCard(final MagicCardDefinition card) {
+	private static void finalizeCard(final MagicCardDefinition card) {
         //legendaries are at least Rare
         if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
             System.err.println("ERROR! Wrong rarity for " + card.getName());
@@ -147,6 +147,10 @@ public class CardDefinitions {
         if (card.getTiming()==MagicTiming.None) {
             System.err.println("ERROR! No timing hint for " + card.getName());
             throw new RuntimeException(card.getName() + " does not have a timing hint");
+        }
+        //add static ability of equipment and aura
+        if (card.isEquipment() || card.isAura()) {
+            card.addAttachmentStatics();
         }
 	}
 	
@@ -205,7 +209,7 @@ public class CardDefinitions {
                 //blank line
             } else if (line.startsWith(">")) {
                 //start of a card
-				checkCard(cardDefinition);
+				finalizeCard(cardDefinition);
 				final String name=line.substring(1);
 				cardDefinition=new MagicCardDefinition(name);
 				addDefinition(cardDefinition);
@@ -221,7 +225,7 @@ public class CardDefinitions {
                 }
 			}
 		}
-		checkCard(cardDefinition);
+		finalizeCard(cardDefinition);
 	}
 	
 	public void loadCardDefinitions() {
