@@ -12,10 +12,10 @@ import magic.model.event.MagicEvent;
 //When C is put into a graveyard from the battlefield, you may or must draw a card.
 public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
 	
-	private final boolean mandatory;
+	private final boolean mustDraw;
 	
 	public MagicDieDrawCardTrigger(final boolean mandatory) {
-		this.mandatory = mandatory;
+		this.mustDraw = mandatory;
 	}
 	
     @Override
@@ -25,7 +25,7 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
     		final MagicGraveyardTriggerData triggerData) {
     	final MagicPlayer player = permanent.getController();
     	if (MagicLocationType.Play == triggerData.fromLocation) {
-    		if (mandatory) {
+    		if (mustDraw) {
     			return new MagicEvent(
                         permanent,
                         player,
@@ -55,7 +55,7 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-    	if (mandatory) {
+    	if (mustDraw) {
     		game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
     	} else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
