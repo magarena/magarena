@@ -3696,6 +3696,17 @@ converted=1
 cost={W}
 timing=removal
 
+>Condemn
+image=http://magiccards.info/scans/en/m11/11.jpg
+value=2
+removal=3
+rarity=U
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=removal
+
 >Cancel
 image=http://magiccards.info/scans/en/m12/47.jpg
 value=3
@@ -4319,6 +4330,16 @@ color=rg
 converted=2
 cost={X}{R}{G}
 timing=removal
+
+>Counsel of the Soratami
+image=http://magiccards.info/scans/en/10e/76.jpg
+value=2
+rarity=C
+type=Sorcery
+color=u
+converted=3
+cost={2}{U}
+timing=draw
 
 >Divination
 image=http://magiccards.info/scans/en/m10/49.jpg
