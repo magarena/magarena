@@ -1,3 +1,15 @@
+>Festering Goblin
+image=http://magiccards.info/scans/en/10e/143.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Zombie,Goblin
+color=b
+converted=1
+cost={B}
+pt=1/1
+timing=main
+
 >Elvish Champion
 image=http://magiccards.info/scans/en/10e/261.jpg
 value=3
@@ -3702,6 +3714,17 @@ type=Instant
 color=rw
 converted=2
 cost={R}{W}
+timing=removal
+
+>Essence Drain
+image=http://magiccards.info/scans/en/10e/141.jpg
+value=4
+removal=3
+rarity=C
+type=Sorcery
+color=b
+converted=5
+cost={4}{B}
 timing=removal
 
 >Might of Oaks
