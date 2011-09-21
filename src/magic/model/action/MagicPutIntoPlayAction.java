@@ -27,20 +27,15 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		controller.addPermanent(permanent);
 				
 		if (enchantedPermanent.isValid()) {
-			enchantedPermanent.addAura(permanent,game);
+			enchantedPermanent.addAura(permanent);
 			permanent.setEnchantedCreature(enchantedPermanent);			
 		}
 
-		final MagicCardDefinition cardDefinition=permanent.getCardDefinition();
-		for (final MagicTrigger trigger : cardDefinition.getTriggers()) {
-			game.addTrigger(permanent,trigger);
-		}
-		for (final MagicStatic mstatic : cardDefinition.getStatics()) {
-			game.addStatic(permanent,mstatic);
-		}
+        game.addTrigger(permanent);
+        game.addStatic(permanent);
 	
         //execute come into play triggers
-		for (final MagicTrigger trigger : cardDefinition.getComeIntoPlayTriggers()) {
+		for (final MagicTrigger trigger : permanent.getCardDefinition().getComeIntoPlayTriggers()) {
 			game.executeTrigger(trigger,permanent,permanent,permanent.getController());
 		}
 
@@ -56,12 +51,12 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 	@Override
 	public void undoAction(final MagicGame game) {
 		if (enchantedPermanent.isValid()) {			
-			enchantedPermanent.removeAura(permanent,game);
+			enchantedPermanent.removeAura(permanent);
 			permanent.setEnchantedCreature(MagicPermanent.NONE);
 		}
 		permanent.getController().removePermanent(permanent);
-		game.removeTriggers(permanent,new LinkedList<MagicPermanentTrigger>());
-		game.removeStatics(permanent,new LinkedList<MagicPermanentStatic>());
+		game.removeTriggers(permanent);
+		game.removeStatics(permanent);
 	}
 	
 	void setEnchantedPermanent(final MagicPermanent aEnchantedPermanent) {
