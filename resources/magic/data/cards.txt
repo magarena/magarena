@@ -4545,8 +4545,7 @@ color=gw
 converted=3
 cost={1}{G}{W}
 equip={3}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=lifelink,trample
 timing=equipment
 
@@ -4559,8 +4558,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={1}
-given_power=2
-given_toughness=0
+given_pt=2/0
 timing=equipment
 
 >Fireshrieker
@@ -4584,8 +4582,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={3}
-given_power=3
-given_toughness=0
+given_pt=3/0
 given_ability=lifelink,trample
 timing=equipment
 
@@ -4624,8 +4621,7 @@ color=wu
 converted=2
 cost={W}{U}
 equip={2}
-given_power=0
-given_toughness=2
+given_pt=0/2
 given_ability=vigilance
 timing=equipment
 
@@ -4638,8 +4634,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=protection from red,protection from blue
 timing=equipment
 
@@ -4652,8 +4647,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={2}
-given_power=2
-given_toughness=2
+given_pt=2/2
 timing=equipment
 
 >Whispersilk Cloak
@@ -5399,8 +5393,7 @@ subtype=Aura
 color=g
 converted=1
 cost={G}
-given_power=1
-given_toughness=1
+given_pt=1/1
 given_ability=reach
 ability=totem armor
 timing=aura
@@ -5556,8 +5549,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={1}
-given_power=1
-given_toughness=0
+given_pt=1/0
 timing=equipment
 
 >Vulshok Battlegear
@@ -5569,8 +5561,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={3}
-given_power=3
-given_toughness=3
+given_pt=3/3
 timing=equipment
 
 >Slagwurm Armor
@@ -5582,8 +5573,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={3}
-given_power=0
-given_toughness=6
+given_pt=0/6
 timing=equipment
 
 >Lightning Angel
@@ -6631,8 +6621,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={2}
-given_power=2
-given_toughness=1
+given_pt=2/1
 timing=equipment
 
 >Maelstrom Pulse
@@ -6905,8 +6894,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={1}
-given_power=1
-given_toughness=1
+given_pt=1/1
 timing=equipment
 
 >Spidersilk Net
@@ -6918,8 +6906,7 @@ subtype=Equipment
 converted=0
 cost={0}
 equip={2}
-given_power=0
-given_toughness=2
+given_pt=0/2
 given_ability=reach
 timing=equipment
 
@@ -7013,8 +7000,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={5}
-given_power=2
-given_toughness=1
+given_pt=2/1
 timing=enchantment
 
 >Kite Shield
@@ -7026,8 +7012,7 @@ subtype=Equipment
 converted=1
 cost={0}
 equip={3}
-given_power=0
-given_toughness=3
+given_pt=0/3
 timing=equipment
 
 >Sword of Light and Shadow
@@ -7039,8 +7024,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=protection from white,protection from black
 timing=equipment
 
@@ -7083,8 +7067,7 @@ subtype=Aura
 color=b
 converted=2
 cost={1}{B}
-given_power=3
-given_toughness=1
+given_pt=3/1
 timing=aura
 
 >Divine Favor
@@ -7096,8 +7079,7 @@ subtype=Aura
 color=w
 converted=2
 cost={1}{W}
-given_power=1
-given_toughness=3
+given_pt=1/3
 timing=aura
 
 >Lifelink
@@ -7155,8 +7137,7 @@ subtype=Aura
 color=g
 converted=3
 cost={2}{G}
-given_power=3
-given_toughness=3
+given_pt=3/3
 timing=aura
 
 >Flight
@@ -7180,8 +7161,7 @@ subtype=Aura
 color=w
 converted=3
 cost={2}{W}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=flying
 timing=aura
 
@@ -7194,8 +7174,7 @@ subtype=Aura
 color=g
 converted=1
 cost={G}
-given_power=2
-given_toughness=0
+given_pt=2/0
 given_ability=trample
 timing=aura
 
@@ -7221,8 +7200,7 @@ subtype=Aura
 color=w
 converted=4
 cost={2}{W}{W}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=flying,vigilance
 timing=aura
 
@@ -7236,8 +7214,7 @@ subtype=Aura
 color=b
 converted=2
 cost={1}{B}
-given_power=-4
-given_toughness=-1
+given_pt=-4/-1
 timing=removal
 
 >Dust Corona
@@ -7249,8 +7226,7 @@ subtype=Aura
 color=r
 converted=1
 cost={R}
-given_power=2
-given_toughness=0
+given_pt=2/0
 given_ability=can't be blocked by creatures with flying
 timing=aura
 
@@ -7263,8 +7239,7 @@ subtype=Aura
 color=w
 converted=1
 cost={W}
-given_power=1
-given_toughness=2
+given_pt=1/2
 timing=aura
 
 >Unholy Strength
@@ -7276,8 +7251,7 @@ subtype=Aura
 color=b
 converted=1
 cost={B}
-given_power=2
-given_toughness=1
+given_pt=2/1
 timing=aura
 
 
@@ -7290,8 +7264,7 @@ subtype=Aura
 color=r
 converted=2
 cost={1}{R}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=haste
 timing=aura
 
@@ -7304,8 +7277,7 @@ subtype=Aura
 color=g
 converted=6
 cost={4}{G}{G}
-given_power=5
-given_toughness=5
+given_pt=5/5
 given_ability=flash,trample
 timing=pump
 
@@ -7355,8 +7327,7 @@ subtype=Aura
 color=r
 converted=3
 cost={2}{R}
-given_power=3
-given_toughness=0
+given_pt=3/0
 given_ability=first strike
 timing=aura
 
@@ -7406,8 +7377,7 @@ subtype=Aura
 color=w
 converted=2
 cost={1}{W}
-given_power=1
-given_toughness=1
+given_pt=1/1
 given_ability=protection from creatures
 timing=aura
 
@@ -7420,8 +7390,7 @@ subtype=Aura
 color=ub
 converted=3
 cost={2}{U/B}
-given_power=-3
-given_toughness=0
+given_pt=-3/0
 given_ability=flash
 timing=removal
 
@@ -7435,8 +7404,7 @@ subtype=Aura
 color=b
 converted=1
 cost={B}
-given_power=-2
-given_toughness=-1
+given_pt=-2/-1
 timing=removal
 
 >Deathmark
@@ -7800,8 +7768,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={5}
-given_power=5
-given_toughness=0
+given_pt=5/0
 timing=equipment
 
 >Goliath Sphinx
@@ -7881,8 +7848,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={2}
-given_power=1
-given_toughness=0
+given_pt=1/0
 given_ability=flying
 timing=equipment
 
@@ -7982,8 +7948,7 @@ subtype=Aura
 color=gw
 converted=3
 cost={1}{G}{W}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=trample
 timing=aura
 
@@ -8144,8 +8109,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={1}
-given_power=1
-given_toughness=1
+given_pt=1/1
 given_ability=haste
 timing=equipment
 
@@ -8158,8 +8122,7 @@ subtype=Equipment
 converted=0
 cost={0}
 equip={3}
-given_power=0
-given_toughness=3
+given_pt=0/3
 given_ability=vigilance
 timing=equipment
 
@@ -8368,8 +8331,7 @@ subtype=Aura
 color=u
 converted=2
 cost={1}{U}
-given_power=1
-given_toughness=1
+given_pt=1/1
 given_ability=flash
 ability=totem armor
 timing=pump
@@ -8383,8 +8345,7 @@ subtype=Aura
 color=w
 converted=1
 cost={W}
-given_power=1
-given_toughness=1
+given_pt=1/1
 ability=totem armor
 given_ability=first strike
 timing=aura
@@ -8398,8 +8359,7 @@ subtype=Aura
 color=g
 converted=3
 cost={2}{G}
-given_power=3
-given_toughness=3
+given_pt=3/3
 ability=totem armor
 timing=aura
 
@@ -8412,8 +8372,7 @@ subtype=Aura
 color=u
 converted=5
 cost={4}{U}
-given_power=3
-given_toughness=3
+given_pt=3/3
 ability=totem armor
 given_ability=flying
 timing=aura
@@ -8427,8 +8386,7 @@ subtype=Aura
 color=r
 converted=2
 cost={1}{R}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=mountainwalk
 timing=aura
 
@@ -8441,8 +8399,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={3}
-given_power=2
-given_toughness=0
+given_pt=2/0
 given_ability=first strike,vigilance,trample,haste
 timing=equipment
 
@@ -8537,8 +8494,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=protection from green,protection from blue
 timing=equipment
 
@@ -8563,8 +8519,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={2}
-given_power=1
-given_toughness=1
+given_pt=1/1
 given_ability=deathtouch
 timing=equipment
 
@@ -9123,8 +9078,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={1}
-given_power=1
-given_toughness=0
+given_pt=1/0
 timing=equipment
 
 >Adventuring Gear
@@ -9147,8 +9101,7 @@ subtype=Aura
 color=g
 converted=3
 cost={2}{G}
-given_power=1
-given_toughness=1
+given_pt=1/1
 ability=totem armor
 timing=aura
 
@@ -9258,8 +9211,7 @@ subtype=Aura
 color=w
 converted=4
 cost={2}{W}{W}
-given_power=4
-given_toughness=4
+given_pt=4/4
 given_ability=flying,first strike
 given_subtype=Angel
 timing=aura	
@@ -9326,8 +9278,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={1}
-given_power=1
-given_toughness=-1
+given_pt=1/-1
 timing=equipment
 
 >Asceticism
@@ -9377,8 +9328,7 @@ converted=1
 cost={1}
 equip={2}
 ability=living weapon
-given_power=1
-given_toughness=1
+given_pt=1/1
 timing=equipment
 
 >Bull Cerodon
@@ -9518,8 +9468,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={1}
-given_power=1
-given_toughness=0
+given_pt=1/0
 given_ability=first strike
 timing=equipment
 
@@ -9543,8 +9492,7 @@ converted=5
 cost={5}
 equip={4}
 ability=living weapon
-given_power=2
-given_toughness=4
+given_pt=2/4
 given_ability=reach
 timing=equipment
 
@@ -9776,8 +9724,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=protection from black,protection from green
 timing=equipment
 
@@ -9818,8 +9765,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-given_power=4
-given_toughness=-1
+given_pt=4/-1
 timing=equipment
 
 >Greatsword
@@ -9831,8 +9777,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={3}
-given_power=3
-given_toughness=0
+given_pt=3/0
 timing=equipment
 
 >Lightning Greaves
@@ -10537,8 +10482,7 @@ converted=5
 cost={5}
 equip={5}
 ability=living weapon
-given_power=4
-given_toughness=4
+given_pt=4/4
 given_ability=vigilance,lifelink
 timing=equipment
 
@@ -10588,8 +10532,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=protection from red,protection from white
 timing=equipment
 
@@ -10613,8 +10556,7 @@ converted=3
 cost={3}
 equip={4}
 ability=living weapon
-given_power=2
-given_toughness=2
+given_pt=2/2
 timing=equipment
 
 >Unquestioned Authority
@@ -10651,8 +10593,7 @@ subtype=Equipment
 converted=4
 cost={4}
 equip={2}
-given_power=2
-given_toughness=2
+given_pt=2/2
 timing=equipment
 
 >Sheoldred, Whispering One
@@ -10896,8 +10837,7 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={2}
-given_power=2
-given_toughness=0
+given_pt=2/0
 ability=indestructible
 timing=equipment
 
@@ -10910,8 +10850,6 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={2}
-given_power=0
-given_toughness=0
 ability=indestructible
 given_ability=indestructible
 timing=equipment
@@ -10925,8 +10863,6 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={1}
-given_power=0
-given_toughness=0
 timing=equipment
 
 >Blight Sickle
@@ -10938,8 +10874,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={2}
-given_power=1
-given_toughness=0
+given_pt=1/0
 given_ability=wither
 timing=equipment
 
@@ -10952,8 +10887,7 @@ subtype=Equipment
 converted=0
 cost={0}
 equip={1}
-given_power=1
-given_toughness=0
+given_pt=1/0
 timing=equipment
 
 >Necropouncer
@@ -10966,8 +10900,7 @@ converted=6
 cost={6}
 equip={2}
 ability=living weapon
-given_power=3
-given_toughness=1
+given_pt=3/1
 given_ability=haste
 timing=equipment
 
@@ -10980,8 +10913,6 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={2}
-given_power=0
-given_toughness=0
 given_ability=flying
 timing=equipment
 
@@ -10994,8 +10925,7 @@ subtype=Equipment
 converted=2
 cost={2}
 equip={3}
-given_power=2
-given_toughness=0
+given_pt=2/0
 given_ability=first strike
 timing=equipment
 
@@ -11008,8 +10938,6 @@ subtype=Equipment
 converted=1
 cost={1}
 equip={2}
-given_power=0
-given_toughness=0
 given_ability=defender,flying,first strike
 timing=equipment
 
@@ -11023,8 +10951,7 @@ converted=4
 cost={4}
 equip={6}
 ability=living weapon
-given_power=2
-given_toughness=2
+given_pt=2/2
 given_ability=flying
 timing=equipment
 
@@ -11037,8 +10964,7 @@ subtype=Equipment
 converted=3
 cost={3}
 equip={4}
-given_power=3
-given_toughness=1
+given_pt=3/1
 timing=equipment
 
 >Indestructibility
