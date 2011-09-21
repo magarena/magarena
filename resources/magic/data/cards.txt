@@ -1,3 +1,27 @@
+>Highway Robber
+image=http://magiccards.info/scans/en/10e/150.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Mercenary
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/2
+timing=main
+
+>Field Marshal
+image=http://magiccards.info/scans/en/10e/15.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/2
+timing=fmain
+
 >Festering Goblin
 image=http://magiccards.info/scans/en/10e/143.jpg
 value=1
