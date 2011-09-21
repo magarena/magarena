@@ -203,16 +203,22 @@ public interface MagicTargetFilter {
 		}
 	};
 	
-	MagicTargetFilter TARGET_ARTIFACT=new MagicTargetFilter() {
-
+    MagicTargetFilter TARGET_NONCREATURE_ARTIFACT=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
+			final MagicPermanent targetPermanent=(MagicPermanent)target;
+			return targetPermanent.isArtifact() || !targetPermanent.isCreature(game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_ARTIFACT=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent targetPermanent=(MagicPermanent)target;
 			return targetPermanent.isArtifact();
 		}
-		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
