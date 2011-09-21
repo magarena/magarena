@@ -35,7 +35,7 @@ class TestStatics extends TestGameBuilder {
 	    addToHand(P,"Godhead of Awe",1); 
 	    addToHand(P,"Aven Mimeomancer",1); 
         addToHand(P, "Mortivore", 1);
-        addToHand(P, "Flayer Husk", 1);
+        addToHand(P, "Batterskull", 1);
         addToHand(P, "Rancor", 1);
         addToHand(P, "Angelic Destiny", 1);
         addToHand(P, "Master of Etherium", 1);
