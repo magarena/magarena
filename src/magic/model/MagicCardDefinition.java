@@ -96,11 +96,6 @@ public class MagicCardDefinition {
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
 	private boolean excludeManaOrCombat=false;
 	
-	private int givenPower=0;
-	private int givenToughness=0;
-	private long givenAbilityFlags=0;
-    private EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
-	
 	protected MagicCardDefinition(final String name,final String fullName) {
 		this.name=name;
 		this.fullName=fullName;
@@ -122,69 +117,7 @@ public class MagicCardDefinition {
 		System.err.println(numModifications + " card modifications");
 		System.err.println(numCDAs + " CDAs");
     }
-	
-    public void addAttachmentStatics() {
-        //added modification to p/t    
-        if (givenPower != 0 || givenToughness != 0) {
-            statics.add(new MagicStatic(MagicLayer.ModPT) {
-                @Override
-                public void getPowerToughness(
-                    final MagicGame game,
-                    final MagicPermanent permanent,
-                    final MagicPowerToughness pt) {
-                    pt.add(givenPower, givenToughness);
-                }
-                @Override
-                public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                    return (source.isEquipment()) ? 
-                        source.getEquippedCreature() == target :
-                        source.getEnchantedCreature() == target;
-                }
-            });
-        }
-
-        //grant abilities
-        final long givenAbilityFlag = getGivenAbilityFlags();
-        if (givenAbilityFlag != 0) {
-            statics.add(new MagicStatic(MagicLayer.Ability) {
-                @Override
-                public long getAbilityFlags(
-                    final MagicGame game,
-                    final MagicPermanent permanent,
-                    long flags) {
-                    return flags | givenAbilityFlag;
-                }
-                @Override
-                public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                    return (source.isEquipment()) ? 
-                        source.getEquippedCreature() == target :
-                        source.getEnchantedCreature() == target;
-                }
-            });
-        }
-        
-        //grant subtype
-        final EnumSet<MagicSubType> givenSubTypeFlags = getGivenSubTypes();
-        if (!givenSubTypeFlags.isEmpty()) {
-            statics.add(new MagicStatic(MagicLayer.Type) {
-                @Override
-                public EnumSet<MagicSubType> getSubTypeFlags(
-                    final MagicPermanent permanent,
-                    final EnumSet<MagicSubType> flags) {
-                    final EnumSet<MagicSubType> mod = flags.clone();
-                    mod.addAll(givenSubTypeFlags);
-                    return mod;
-                }
-                @Override
-                public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                    return (source.isEquipment()) ? 
-                        source.getEquippedCreature() == target :
-                        source.getEnchantedCreature() == target;
-                }
-            });
-        }
-	}
-
+    
     public boolean isValid() {
         return true;
     }
@@ -457,18 +390,6 @@ public class MagicCardDefinition {
 		return !isLand();
 	}
     
-    public void setGivenSubTypes(final String[] subTypeNames) {
-		givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
-		for (final String subTypeName : subTypeNames) {
-			final MagicSubType subType=MagicSubType.getSubType(subTypeName); 
-            givenSubTypeFlags.add(subType);
-		}
-	}
-
-    EnumSet<MagicSubType> getGivenSubTypes() {
-        return givenSubTypeFlags;
-    }
-	
 	public void setSubTypes(final String[] subTypeNames) {
 		subTypeFlags = EnumSet.noneOf(MagicSubType.class);
 		for (final String subTypeName : subTypeNames) {
@@ -622,14 +543,6 @@ public class MagicCardDefinition {
 		addManaActivation(new MagicTapManaActivation(manaTypes,0));
 	}
 	
-    public void setGivenPower(final int aPower) {
-		givenPower = aPower;
-	}
-    
-    public void setGivenToughness(final int aToughness) {
-		givenToughness = aToughness;
-	}
-    
 	public void setPower(final int power) {
 		this.power = power;
 	}
@@ -675,18 +588,6 @@ public class MagicCardDefinition {
 
 	public long getAbilityFlags() {
 		return abilityFlags;
-	}
-	
-	public boolean hasGivenAbility(final MagicAbility ability) {
-		return ability.hasAbility(givenAbilityFlags);
-	}
-	
-	public void setGivenAbility(final MagicAbility ability) {
-		givenAbilityFlags|=ability.getMask();
-	}
-
-	public long getGivenAbilityFlags() {
-		return givenAbilityFlags;
 	}
 	
 	public boolean hasAbility(final MagicAbility ability) {
