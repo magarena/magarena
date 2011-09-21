@@ -6,9 +6,12 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicCounterType;
+import magic.model.MagicSubType;
 import magic.model.MagicPermanent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
+
+import java.util.EnumSet;
 
 public abstract class MagicStatic extends MagicDummyPermanentModifier {
 
@@ -70,4 +73,59 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
     public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
         return true;
     }
+    
+    public static MagicStatic genPTStatic(final int givenPower, final int givenToughness) {
+        return new MagicStatic(MagicLayer.ModPT) {
+            @Override
+            public void getPowerToughness(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+                pt.add(givenPower, givenToughness);
+            }
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return (source.isEquipment()) ? 
+                    source.getEquippedCreature() == target :
+                    source.getEnchantedCreature() == target;
+            }
+        };
+    }
+
+    public static MagicStatic genABStatic(final long givenAbilityFlags) {
+        return new MagicStatic(MagicLayer.Ability) {
+            @Override
+            public long getAbilityFlags(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                long flags) {
+                return flags | givenAbilityFlags;
+            }
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return (source.isEquipment()) ? 
+                    source.getEquippedCreature() == target :
+                    source.getEnchantedCreature() == target;
+            }
+        };
+    }
+        
+    public static MagicStatic genSTStatic(final EnumSet<MagicSubType> givenSubTypeFlags) {
+        return new MagicStatic(MagicLayer.Type) {
+            @Override
+            public EnumSet<MagicSubType> getSubTypeFlags(
+                final MagicPermanent permanent,
+                final EnumSet<MagicSubType> flags) {
+                final EnumSet<MagicSubType> mod = flags.clone();
+                mod.addAll(givenSubTypeFlags);
+                return mod;
+            }
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return (source.isEquipment()) ? 
+                    source.getEquippedCreature() == target :
+                    source.getEnchantedCreature() == target;
+            }
+        };
+	}
 }
