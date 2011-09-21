@@ -1051,10 +1051,14 @@ public class MagicGame {
 	
     // ***** STATICS *****
 	
-    public final MagicPermanentStatic addStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
-        final MagicPermanentStatic permanentStatic = new MagicPermanentStatic(getUniqueId(),permanent,mstatic);
-		statics.add(permanentStatic);
-		return permanentStatic;
+    public void addStatic(final MagicPermanent permanent) {
+        for (final MagicStatic mstatic : permanent.getCardDefinition().getStatics()) {
+            addStatic(permanent, mstatic);
+        }
+	}
+    
+    public void addStatic(final MagicPermanent permanent, final MagicStatic mstatic) {
+        addStatic(new MagicPermanentStatic(getUniqueId(),permanent,mstatic));
 	}
     
     public void addStatic(final MagicPermanentStatic permanentStatic) {
@@ -1062,7 +1066,9 @@ public class MagicGame {
 	}
 
     public void addStatics(final Collection<MagicPermanentStatic> aStatics) {
-        statics.addAll(aStatics);
+        for (final MagicPermanentStatic mpstatic : aStatics) {
+            addStatic(mpstatic);
+        }
     }
     
     public Collection<MagicPermanentStatic> getStatics(MagicLayer layer) {
@@ -1070,13 +1076,11 @@ public class MagicGame {
 	}
     
     public Collection<MagicPermanentStatic> removeTurnStatics() {
-        List<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
-        statics.removeTurn(removedStatics);
-        return removedStatics;
+        return statics.removeTurn();
 	}
 	
-    public void removeStatics(final MagicPermanent permanent,final Collection<MagicPermanentStatic> removedStatics) {
-        statics.remove(permanent, removedStatics);
+    public Collection<MagicPermanentStatic> removeStatics(final MagicPermanent permanent) {
+        return statics.remove(permanent);
 	}
     
     public void removeStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
@@ -1091,31 +1095,36 @@ public class MagicGame {
 		this.immediate=immediate;
 	}
 	
-	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
-		final MagicPermanentTrigger permanentTrigger=new MagicPermanentTrigger(getUniqueId(),permanent,trigger);
-		triggers.get(trigger.getType()).add(permanentTrigger);
-		return permanentTrigger;
+	public void addTrigger(final MagicPermanent permanent) {
+        for (final MagicTrigger trigger : permanent.getCardDefinition().getTriggers()) {
+            addTrigger(permanent, trigger);
+        }
+	}
+
+	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent, final MagicTrigger trigger) {
+        return addTrigger(new MagicPermanentTrigger(getUniqueId(),permanent,trigger));
 	}
 		
-	public void addTrigger(final MagicPermanentTrigger permanentTrigger) {
-		triggers.get(permanentTrigger.getTrigger().getType()).add(permanentTrigger);
+	public MagicPermanentTrigger addTrigger(final MagicPermanentTrigger permanentTrigger) {
+		triggers.add(permanentTrigger);
+        return permanentTrigger;
 	}
 
 	public MagicPermanentTrigger addTurnTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
-		final MagicPermanentTrigger permanentTrigger=addTrigger(permanent,trigger);
+		final MagicPermanentTrigger permanentTrigger = addTrigger(permanent,trigger);
 		turnTriggers.add(permanentTrigger);
 		return permanentTrigger;
 	}
 	
 	public void addTurnTriggers(final List<MagicPermanentTrigger> triggersList) {
 		for (final MagicPermanentTrigger permanentTrigger : triggersList) {
-			triggers.get(permanentTrigger.getTrigger().getType()).add(permanentTrigger);
+            addTrigger(permanentTrigger);
 		}
 		turnTriggers.addAll(triggersList);
 	}
 	
 	public void removeTurnTrigger(final MagicPermanentTrigger permanentTrigger) {
-		triggers.get(permanentTrigger.getTrigger().getType()).remove(permanentTrigger);
+		triggers.remove(permanentTrigger);
 		turnTriggers.remove(permanentTrigger);
 	}
 
@@ -1123,24 +1132,15 @@ public class MagicGame {
 		if (turnTriggers.isEmpty()) {
 			return Collections.<MagicPermanentTrigger>emptyList();
 		}
-		final MagicPermanentTriggerList removedTriggers=new MagicPermanentTriggerList(turnTriggers);
-		for (final MagicPermanentTrigger permanentTrigger : turnTriggers) {
-			triggers.get(permanentTrigger.getTrigger().getType()).remove(permanentTrigger);
+		final MagicPermanentTriggerList removedTriggers = new MagicPermanentTriggerList(turnTriggers);
+		for (final MagicPermanentTrigger permanentTrigger : removedTriggers) {
+            removeTurnTrigger(permanentTrigger);
 		}
-		turnTriggers.clear();
 		return removedTriggers;
 	}
 	
-	public void removeTriggers(final MagicPermanent permanent,final Collection<MagicPermanentTrigger> removedTriggers) {
-		for (final MagicTriggerType type : triggers.keySet()) {
-			for (final Iterator<MagicPermanentTrigger> iterator=triggers.get(type).iterator();iterator.hasNext();) {
-				final MagicPermanentTrigger permanentTrigger=iterator.next();
-				if (permanentTrigger.getPermanent()==permanent) {
-					iterator.remove();
-                    removedTriggers.add(permanentTrigger);
-				}
-			}
-		}
+	public Collection<MagicPermanentTrigger> removeTriggers(final MagicPermanent permanent) {
+        return triggers.remove(permanent);
 	}
 
 	public void executeTrigger(

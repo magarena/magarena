@@ -4,6 +4,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.Map;
 import java.util.EnumMap;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Collection;
 
@@ -42,14 +43,9 @@ public class MagicPermanentStaticMap {
     public void add(final MagicPermanentStatic mpstatic) {
         effects.get(mpstatic.getLayer()).add(mpstatic);
     }
-
-    public void addAll(final Collection<MagicPermanentStatic> mpstatics) {
-        for (final MagicPermanentStatic mpstatic : mpstatics) {
-            add(mpstatic);
-        }
-    }
     
-    public void remove(final MagicPermanent permanent,final Collection<MagicPermanentStatic> removedStatics) {
+    public Collection<MagicPermanentStatic> remove(final MagicPermanent permanent) {
+        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
 	    for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
             final Collection<MagicPermanentStatic> statics = layer.getValue();
             for (final Iterator<MagicPermanentStatic> iterator = statics.iterator();iterator.hasNext();) {
@@ -60,9 +56,11 @@ public class MagicPermanentStaticMap {
                 }
             }
         }
+        return removedStatics;
     }
     
-    public void removeTurn(final Collection<MagicPermanentStatic> removedStatics) {
+    public Collection<MagicPermanentStatic> removeTurn() {
+        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
 	    for (final Map.Entry<MagicLayer, SortedSet<MagicPermanentStatic>> layer : effects.entrySet()) {
             final Collection<MagicPermanentStatic> statics = layer.getValue();
             for (final Iterator<MagicPermanentStatic> iterator = statics.iterator();iterator.hasNext();) {
@@ -73,6 +71,7 @@ public class MagicPermanentStaticMap {
                 }
             }
         }
+        return removedStatics;
     }
         
     public void remove(final MagicPermanent permanent, final MagicStatic mstatic) {
@@ -81,6 +80,7 @@ public class MagicPermanentStaticMap {
             final MagicPermanentStatic permanentStatic = iterator.next();
             if (permanentStatic.getPermanent() == permanent && permanentStatic.getStatic() == mstatic) {
                 iterator.remove();
+                break;
             }
         }
     }
