@@ -740,6 +740,16 @@ public interface MagicTargetFilter {
 			return targetType == MagicTargetType.Permanent;
 		}		
 	};
+	
+	MagicTargetFilter TARGET_ZOMBIE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicPermanent)target).isCreature(game) &&
+					((MagicPermanent)target).hasSubType(MagicSubType.Zombie,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
 
 	MagicTargetFilter TARGET_KOR_YOU_CONTROL=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
@@ -1135,6 +1145,15 @@ public interface MagicTargetFilter {
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType==MagicTargetType.Graveyard;
+		}						
+	};
+	
+	MagicTargetFilter TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().hasSubType(MagicSubType.Zombie);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Graveyard;
 		}						
 	};
 	

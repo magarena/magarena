@@ -211,7 +211,11 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS,false,MagicTargetHint.None,"target artifact or creature card from a graveyard");
 	public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_GRAVEYARD=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target Goblin card from your graveyard");
+		new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+				"target Goblin card from your graveyard");
+	public static final MagicTargetChoice TARGET_ZOMBIE_CARD_FROM_GRAVEYARD =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+					"target Zombie card from your graveyard");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_HAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a creature card from your hand");
 	public static final MagicTargetChoice TARGET_GREEN_CREATURE_CARD_FROM_HAND =
