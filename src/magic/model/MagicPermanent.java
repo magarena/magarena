@@ -14,8 +14,6 @@ import magic.model.event.MagicActivation;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.target.MagicTarget;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicLayer;
 
 import javax.swing.ImageIcon;
@@ -729,11 +727,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return equipmentPermanents;
 	}
 	
-	public void addEquipment(final MagicPermanent equipment, final MagicGame game) {
+	public void addEquipment(final MagicPermanent equipment) {
 		equipmentPermanents.add(equipment);
 	}
 	
-	public void removeEquipment(final MagicPermanent equipment, final MagicGame game) {
+	public void removeEquipment(final MagicPermanent equipment) {
 		equipmentPermanents.remove(equipment);
 	}
 	
@@ -753,11 +751,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return auraPermanents;
 	}
 	
-	public void addAura(final MagicPermanent aura, final MagicGame game) {
+	public void addAura(final MagicPermanent aura) {
 		auraPermanents.add(aura);
 	}
 	
-	public void removeAura(final MagicPermanent aura, final MagicGame game) {
+	public void removeAura(final MagicPermanent aura) {
 		auraPermanents.remove(aura);
 	}
 			
