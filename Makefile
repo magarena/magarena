@@ -86,7 +86,7 @@ cards/new.txt: cards/existing.txt
 cards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 
-cards/existing_full.txt: newcards/existing.txt cards/mtg-data.txt
+cards/existing_full.txt: cards/existing.txt cards/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
 cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt cards/mtg-data.txt
