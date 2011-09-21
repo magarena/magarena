@@ -1,7 +1,5 @@
 package magic.ui.widget;
 
-import javax.swing.JComponent;
-import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -9,20 +7,36 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+import javax.swing.OverlayLayout;
 
 public abstract class PanelButton extends TexturedPanel {
 
 	private static final long serialVersionUID = 1L;
 	
+	private final JPanel layeredPanel;
+	private final JPanel overlayPanel;
+	
 	private boolean valid=false;
 	
 	public PanelButton() {
-		
 		setLayout(new BorderLayout());
 		setBorder(FontsAndBorders.UP_BORDER);
 		
+		// create subpanel with overlay manager so color overlay and buttons overlap
+		layeredPanel = new JPanel();
+		OverlayLayout layout = new OverlayLayout(layeredPanel);
+		layeredPanel.setLayout(layout);
+		
+		// color overlay
+		overlayPanel = new JPanel();
+		overlayPanel.setVisible(false);
+		overlayPanel.setAlignmentX(0.5f); // align center middle
+		overlayPanel.setAlignmentY(0.5f);
+		layeredPanel.add(overlayPanel);
+		
 		addMouseListener(new MouseAdapter() {
-			
 			@Override
 			public void mousePressed(final MouseEvent event) {
 				setBorder(FontsAndBorders.DOWN_BORDER);
@@ -46,15 +60,19 @@ public abstract class PanelButton extends TexturedPanel {
 				PanelButton.this.mouseExited();
 			}
 		});
+		
+		add(layeredPanel, BorderLayout.CENTER);
 	}
 	
 	public void setValid(final boolean valid) {
-		this.valid=valid;
-		repaint();
+		overlayPanel.setBackground(getValidColor());
+		overlayPanel.setVisible(valid);
 	}
 	
 	public void setComponent(final JComponent component) {
-		add(component,BorderLayout.CENTER);
+		layeredPanel.add(component);
+		component.setAlignmentX(0.5f); // align center middle
+		component.setAlignmentY(0.5f);
 	}
 	
 	public void mouseClicked() {}
@@ -64,17 +82,4 @@ public abstract class PanelButton extends TexturedPanel {
 	public void mouseExited() {}
 	
 	public abstract Color getValidColor();
-	
-	@Override
-	public void paint(final Graphics g) {
-		super.paint(g); 
-		
-		// paint colored overlay. we're overriding paint so we can draw this last (i.e., on top)
-		final Dimension size=getSize();
-		if (valid) {
-			final Graphics2D g2d=(Graphics2D)g;
-			g2d.setPaint(getValidColor());
-			g2d.fillRect(0,0,10+size.width,10+size.height);
-		}
-	}
 }

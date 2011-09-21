@@ -41,6 +41,7 @@ class TestAbilities extends TestGameBuilder {
 	    addToHand(P,"Boar Umbra",1); 
 	    addToHand(P,"Brink of Disaster",1); 
 	    addToHand(P,"Pacifism",1); 
+	    addToHand(P,"Lightning Bolt",1); 
        
 
         P = opponent;
