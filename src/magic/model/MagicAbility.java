@@ -125,4 +125,12 @@ public enum MagicAbility {
 		}
         throw new RuntimeException("Unable to convert " + name + " to an ability");
 	}
+	
+    public static long getAbilities(final String[] names) {
+        long flags = 0;
+		for (final String name : names) {
+            flags |= getAbility(name).getMask();
+		}
+        return flags;
+	}
 }
