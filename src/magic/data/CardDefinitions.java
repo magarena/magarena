@@ -6,7 +6,9 @@ import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicStaticType;
 import magic.model.MagicType;
+import magic.model.MagicSubType;
 import magic.model.event.MagicTiming;
+import magic.model.mstatic.MagicStatic;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -86,31 +88,27 @@ public class CardDefinitions {
                 throw new RuntimeException(card.getFullName() + ": only creatures may have toughness");
             }
 			card.setToughness(Integer.parseInt(value));
-		} else if ("given_power".equals(property)) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_power");
-            }
-			card.setGivenPower(Integer.parseInt(value));
-		} else if ("given_toughness".equals(property)) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_toughness");
-            }
-			card.setGivenToughness(Integer.parseInt(value));
 		} else if ("ability".equals(property)) {
 			final String names[]=value.split(",");
 			for (final String name : names) {
 				card.setAbility(MagicAbility.getAbility(name));
 			}
+		} else if ("given_pt".equals(property)) {
+            if (!card.isEquipment() && !card.isAura()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_pt");
+            }
+            final String[] pt = value.split("/");
+			card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
 		} else if ("given_ability".equals(property)) {
             if (!card.isEquipment() && !card.isAura()) {
                 throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_ability");
             }
-			final String names[]=value.split(",");
-			for (final String name : names) {
-				card.setGivenAbility(MagicAbility.getAbility(name));
-			}
+            card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(","))));
 		} else if ("given_subtype".equals(property)) {
-            card.setGivenSubTypes(value.split(","));
+            if (!card.isEquipment() && !card.isAura()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_subtype");
+            }
+            card.add(MagicStatic.genSTStatic(MagicSubType.getSubTypes(value.split(","))));
 		} else if ("static".equals(property)) {
 			card.setStaticType(MagicStaticType.getStaticTypeFor(value));
 		} else if ("timing".equals(property)) {
@@ -126,7 +124,7 @@ public class CardDefinitions {
             throw new RuntimeException("Unknown card property " + property + "=" + value);
 		}
 	}
-	
+    
 	private void filterCards() {
 		for (final MagicCardDefinition card : cards) {
 			if (!card.isLand()) {
@@ -137,7 +135,7 @@ public class CardDefinitions {
 		}
 	}
 
-	private static void finalizeCard(final MagicCardDefinition card) {
+	private static void checkCard(final MagicCardDefinition card) {
         //legendaries are at least Rare
         if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
             System.err.println("ERROR! Wrong rarity for " + card.getName());
@@ -147,10 +145,6 @@ public class CardDefinitions {
         if (card.getTiming()==MagicTiming.None) {
             System.err.println("ERROR! No timing hint for " + card.getName());
             throw new RuntimeException(card.getName() + " does not have a timing hint");
-        }
-        //add static ability of equipment and aura
-        if (card.isEquipment() || card.isAura()) {
-            card.addAttachmentStatics();
         }
 	}
 	
@@ -209,7 +203,7 @@ public class CardDefinitions {
                 //blank line
             } else if (line.startsWith(">")) {
                 //start of a card
-				finalizeCard(cardDefinition);
+				checkCard(cardDefinition);
 				final String name=line.substring(1);
 				cardDefinition=new MagicCardDefinition(name);
 				addDefinition(cardDefinition);
@@ -225,7 +219,7 @@ public class CardDefinitions {
                 }
 			}
 		}
-		finalizeCard(cardDefinition);
+		checkCard(cardDefinition);
 	}
 	
 	public void loadCardDefinitions() {
