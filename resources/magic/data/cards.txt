@@ -1,3 +1,16 @@
+>Elvish Champion
+image=http://magiccards.info/scans/en/10e/261.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elf
+color=g
+converted=3
+cost={1}{G}{G}
+power=2
+toughness=2
+timing=fmain
+
 >Bogardan Firefiend
 image=http://magiccards.info/scans/en/10e/193.jpg
 value=2
@@ -1337,6 +1350,19 @@ subtype=Goblin,Rogue
 color=r
 converted=2
 cost={1}{R}
+power=1
+toughness=1
+timing=main
+
+>Crafty Pathmage
+image=http://magiccards.info/scans/en/10e/77.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=3
+cost={2}{U}
 power=1
 toughness=1
 timing=main
@@ -6687,6 +6713,17 @@ type=Sorcery
 color=r
 converted=4
 cost={3}{R}
+timing=removal
+
+>Creeping Mold
+image=http://magiccards.info/scans/en/10e/258.jpg
+value=3
+removal=2
+rarity=U
+type=Sorcery
+color=g
+converted=4
+cost={2}{G}{G}
 timing=removal
 
 >Into the Roil
