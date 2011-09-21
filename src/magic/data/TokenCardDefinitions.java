@@ -22,8 +22,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Red);
 			setColoredType();
-			setPower(4);
-			setToughness(4);
+			setPowerToughness(4,4);
 			setAbility(MagicAbility.Flying);
 		}
 	};
@@ -37,8 +36,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Red);
 			setColoredType();
-			setPower(5);
-			setToughness(5);
+			setPowerToughness(5,5);
 			setAbility(MagicAbility.Flying);
 		}
 	};
@@ -53,8 +51,7 @@ public class TokenCardDefinitions {
 			setColor(MagicColor.Black);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};
 	
@@ -67,8 +64,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};	
 
@@ -81,8 +77,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};
 	
@@ -95,8 +90,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.White);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};
 
@@ -109,8 +103,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Red);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};
 
@@ -123,8 +116,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Red);
 			setColoredType();
-			setPower(2);
-			setToughness(1);
+			setPowerToughness(2,1);
 			setAbility(MagicAbility.Haste);
 		}
 	};
@@ -139,8 +131,7 @@ public class TokenCardDefinitions {
 			setColor(MagicColor.Red);
 			setColor(MagicColor.White);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};
 
@@ -153,8 +144,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Red);
 			setColoredType();
-			setPower(3);
-			setToughness(3);
+			setPowerToughness(3,3);
 		}
 	};	
 	
@@ -166,8 +156,7 @@ public class TokenCardDefinitions {
 			setSubTypes(new String[]{"Spirit"});
 			setCost(MagicManaCost.ZERO);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};
 	
@@ -180,8 +169,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.White);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 			setAbility(MagicAbility.Flying);
 		}
 	};
@@ -195,8 +183,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Black);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 			setAbility(MagicAbility.Flying);
 		}
 	};	
@@ -210,8 +197,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Black);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 			setAbility(MagicAbility.Flying);
 		}
 	};	
@@ -225,8 +211,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.White);
 			setColoredType();
-			setPower(2);
-			setToughness(2);
+			setPowerToughness(2,2);
 			setAbility(MagicAbility.Flying);
 		}
 	};	
@@ -240,8 +225,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.White);
 			setColoredType();
-			setPower(3);
-			setToughness(3);
+			setPowerToughness(3,3);
 			setAbility(MagicAbility.Flying);
 		}
 	};
@@ -255,8 +239,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Blue);
 			setColoredType();
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 		}
 	};
 	
@@ -269,8 +252,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(3);
-			setToughness(3);
+			setPowerToughness(3,3);
 		}
 	};	
 	
@@ -283,8 +265,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(3);
-			setToughness(3);
+			setPowerToughness(3,3);
 		}
 	};	
 	
@@ -297,8 +278,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(4);
-			setToughness(4);
+			setPowerToughness(4,4);
 		}
 	};	
 	
@@ -313,8 +293,7 @@ public class TokenCardDefinitions {
 			setColor(MagicColor.Green);
 			setColor(MagicColor.White);			
 			setColoredType();
-			setPower(8);
-			setToughness(8);
+			setPowerToughness(8,8);
 		}
 	};	
 
@@ -327,8 +306,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(3);
-			setToughness(3);
+			setPowerToughness(3,3);
 		}
 	};	
 	
@@ -341,8 +319,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Black);
 			setColoredType();
-			setPower(0);
-			setToughness(0);
+			setPowerToughness(0,0);
 		}
 	};
 	
@@ -355,8 +332,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Black);
 			setColoredType();
-			setPower(2);
-			setToughness(2);
+			setPowerToughness(2,2);
 		}
 	};
 	
@@ -369,8 +345,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Black);
 			setColoredType();
-			setPower(5);
-			setToughness(5);
+			setPowerToughness(5,5);
 		}
 	};
 
@@ -384,8 +359,7 @@ public class TokenCardDefinitions {
 			setCost(MagicManaCost.ZERO);
 			setColor(MagicColor.Green);
 			setColoredType();
-			setPower(2);
-			setToughness(2);
+			setPowerToughness(2,2);
 		}
 	};
 	
@@ -400,8 +374,7 @@ public class TokenCardDefinitions {
 			setColor(MagicColor.Green);
 			setColor(MagicColor.White);
 			setColoredType();
-			setPower(2);
-			setToughness(2);
+			setPowerToughness(2,2);
 		}
 	};
 
@@ -415,8 +388,7 @@ public class TokenCardDefinitions {
 			setSubTypes(new String[]{"Goblin","Golem"});
 			setCost(MagicManaCost.ZERO);
 			setColoredType();
-			setPower(5);
-			setToughness(5);
+			setPowerToughness(5,5);
 		}
 	};
 	
@@ -428,8 +400,7 @@ public class TokenCardDefinitions {
 			setSubTypes(new String[]{"Eldrazi","Spawn"});
 			setCost(MagicManaCost.ZERO);
 			setColoredType();
-			setPower(0);
-			setToughness(1);
+			setPowerToughness(0,1);
 			addManaActivation(new MagicSacrificeManaActivation(Arrays.asList(MagicManaType.Colorless)));
 			setExcludeManaOrCombat();
 		}
@@ -444,8 +415,7 @@ public class TokenCardDefinitions {
 			setSubTypes(new String[]{"Wurm"});
 			setCost(MagicManaCost.ZERO);
 			setColoredType();
-			setPower(3);
-			setToughness(3);
+			setPowerToughness(3,3);
 			setAbility(MagicAbility.Deathtouch);
 		}
 	};
@@ -459,8 +429,7 @@ public class TokenCardDefinitions {
 			setSubTypes(new String[]{"Wurm"});
 			setCost(MagicManaCost.ZERO);
 			setColoredType();
-			setPower(3);
-			setToughness(3);
+			setPowerToughness(3,3);
 			setAbility(MagicAbility.LifeLink);
 		}
 	};

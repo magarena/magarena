@@ -78,16 +78,12 @@ public class CardDefinitions {
 			card.setManaSourceText(value);
 		} else if ("basic".equals(property)) {
 			card.setBasicManaActivations(value);
-		} else if ("power".equals(property)) {
+		} else if ("pt".equals(property)) {
             if (!card.isCreature()) {
-                throw new RuntimeException(card.getFullName() + ": only creatures may have power");
+                throw new RuntimeException(card.getFullName() + ": only creatures may have power/toughness");
             }
-			card.setPower(Integer.parseInt(value));
-		} else if ("toughness".equals(property)) {
-            if (!card.isCreature()) {
-                throw new RuntimeException(card.getFullName() + ": only creatures may have toughness");
-            }
-			card.setToughness(Integer.parseInt(value));
+            final String[] pt = value.split("/");
+			card.setPowerToughness(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
 		} else if ("ability".equals(property)) {
 			final String names[]=value.split(",");
 			for (final String name : names) {

@@ -44,8 +44,7 @@ public class MagicCardDefinition {
 			addType(MagicType.Creature);
 			setConvertedCost(8);
 			setCost(MagicManaCost.EIGHT);
-			setPower(1);
-			setToughness(1);
+			setPowerToughness(1,1);
 			setAbility(MagicAbility.Defender);
 			setAbility(MagicAbility.CannotBeCountered);
 			setAbility(MagicAbility.Shroud);
@@ -543,20 +542,18 @@ public class MagicCardDefinition {
 		addManaActivation(new MagicTapManaActivation(manaTypes,0));
 	}
 	
-	public void setPower(final int power) {
-		this.power = power;
+	
+	public void setPowerToughness(final int aPower, final int aToughness) {
+        power = aPower;
+        toughness = aToughness;
 	}
-
+    
     public int getCardPower() {
         return power;
     }
-
-	public int getPower(final MagicGame game, final MagicPlayer player) {
-		return genPowerToughness(game,player).power();
-	}
 	
-	public void setToughness(final int toughness) {
-		this.toughness = toughness;
+    public int getPower(final MagicGame game, final MagicPlayer player) {
+		return genPowerToughness(game,player).power();
 	}
 
     public int getCardToughness() {

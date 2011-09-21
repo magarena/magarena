@@ -7,8 +7,7 @@ subtype=Elf
 color=g
 converted=3
 cost={1}{G}{G}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Bogardan Firefiend
@@ -20,8 +19,7 @@ subtype=Elemental,Spirit
 color=r
 converted=3
 cost={2}{R}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Kavu Predator
@@ -33,8 +31,7 @@ subtype=Kavu
 color=g
 converted=2
 cost={1}{G}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Ageless Entity
@@ -46,8 +43,7 @@ subtype=Elemental
 color=g
 converted=5
 cost={3}{G}{G}
-power=4
-toughness=4
+pt=4/4
 timing=fmain
 
 >Ballista Squad
@@ -59,8 +55,7 @@ subtype=Human,Rebel
 color=w
 converted=4
 cost={3}{W}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Aven Fisher
@@ -72,8 +67,7 @@ subtype=Bird,Soldier
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -86,8 +80,7 @@ subtype=Bird,Soldier
 color=w
 converted=4
 cost={3}{W}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -100,8 +93,7 @@ subtype=Vampire
 color=b
 converted=6
 cost={4}{B}{B}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=fmain
 
@@ -114,8 +106,7 @@ subtype=Angel
 color=w
 converted=5
 cost={4}{W}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=main
 
@@ -149,8 +140,7 @@ subtype=Elemental
 color=g
 converted=5
 cost={4}{G}
-power=0
-toughness=3
+pt=0/3
 timing=main
 
 >Burst of Speed
@@ -182,8 +172,7 @@ subtype=Rhino,Soldier
 color=w
 converted=4
 cost={2}{W}{W}
-power=3
-toughness=3
+pt=3/3
 ability=first strike
 timing=main
 
@@ -196,8 +185,7 @@ subtype=Giant,Warrior
 color=g
 converted=6
 cost={5}{G}
-power=5
-toughness=4
+pt=5/4
 timing=main
 
 >Hand of the Praetors
@@ -209,8 +197,7 @@ subtype=Zombie
 color=b
 converted=4
 cost={3}{B}
-power=3
-toughness=2
+pt=3/2
 ability=infect
 timing=main
 
@@ -223,8 +210,7 @@ subtype=Illusion
 color=u
 converted=2
 cost={1}{U}
-power=1
-toughness=1
+pt=1/1
 ability=unblockable
 timing=main
 
@@ -237,8 +223,7 @@ subtype=Cat,Soldier
 color=w
 converted=2
 cost={1}{W}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Akrasan Squire
@@ -250,8 +235,7 @@ subtype=Human,Soldier
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 ability=exalted
 timing=fmain
 
@@ -264,8 +248,7 @@ subtype=Salamander,Rogue
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=4
+pt=2/4
 timing=main
 
 >Ancient Hellkite
@@ -277,8 +260,7 @@ subtype=Dragon
 color=r
 converted=7
 cost={4}{R}{R}{R}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=main
 
@@ -291,8 +273,7 @@ subtype=Human,Soldier,Knight
 color=w
 converted=4
 cost={3}{W}
-power=2
-toughness=3
+pt=2/3
 timing=main
 
 >Arc Runner
@@ -304,8 +285,7 @@ subtype=Elemental,Ox
 color=r
 converted=3
 cost={2}{R}
-power=5
-toughness=1
+pt=5/1
 ability=haste
 timing=fmain
 
@@ -318,8 +298,7 @@ subtype=Kor,Soldier
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=2
+pt=2/2
 static=player
 timing=fmain
 
@@ -332,8 +311,7 @@ subtype=Horse
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=3
+pt=2/3
 timing=main
 
 >Ashenmoor Cohort
@@ -345,8 +323,7 @@ subtype=Elemental,Warrior
 color=b
 converted=6
 cost={5}{B}
-power=4
-toughness=3
+pt=4/3
 timing=main
 
 >Ashenmoor Gouger
@@ -358,8 +335,7 @@ subtype=Elemental,Warrior
 color=br
 converted=3
 cost={B/R}{B/R}{B/R}
-power=4
-toughness=4
+pt=4/4
 ability=can't block
 timing=fmain
 
@@ -372,8 +348,7 @@ subtype=Elemental,Knight
 color=br
 converted=4
 cost={1}{B/R}{B/R}{B/R}
-power=4
-toughness=1
+pt=4/1
 static=player
 timing=fmain
 
@@ -386,8 +361,7 @@ subtype=Angel
 color=w
 converted=8
 cost={5}{W}{W}{W}
-power=6
-toughness=6
+pt=6/6
 ability=flying,first strike,vigilance,trample,haste,protection from black,protection from red
 timing=fmain
 
@@ -400,8 +374,7 @@ subtype=Siren
 color=u
 converted=2
 cost={1}{U}
-power=1
-toughness=1
+pt=1/1
 timing=smain
 
 >Arbalest Elite
@@ -413,8 +386,7 @@ subtype=Human,Archer
 color=w
 converted=4
 cost={2}{W}{W}
-power=2
-toughness=3
+pt=2/3
 timing=main
 
 >Assault Zeppelid
@@ -426,8 +398,7 @@ subtype=Beast
 color=gu
 converted=4
 cost={2}{G}{U}
-power=3
-toughness=3
+pt=3/3
 ability=flying,trample
 timing=main
 
@@ -440,8 +411,7 @@ subtype=Human,Wizard
 color=w
 converted=3
 cost={2}{W}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Aven Fleetwing
@@ -453,8 +423,7 @@ subtype=Bird,Soldier
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=2
+pt=2/2
 ability=flying,hexproof
 timing=fmain
 
@@ -467,8 +436,7 @@ subtype=Bird,Soldier
 color=w
 converted=5
 cost={4}{W}
-power=2
-toughness=3
+pt=2/3
 ability=flying
 timing=main
 
@@ -481,8 +449,7 @@ subtype=Bird,Wizard
 color=wu
 converted=3
 cost={1}{W}{U}
-power=3
-toughness=1
+pt=3/1
 ability=flying
 timing=smain
 
@@ -495,8 +462,7 @@ subtype=Spirit,Horror
 color=rw
 converted=5
 cost={2}{R/W}{R/W}{R/W}
-power=2
-toughness=4
+pt=2/4
 static=player
 timing=fmain
 
@@ -509,8 +475,7 @@ subtype=Kithkin,Soldier
 color=w
 converted=3
 cost={2}{W}
-power=2
-toughness=2
+pt=2/2
 ability=first strike
 timing=main
 
@@ -523,8 +488,7 @@ subtype=Bird,Soldier
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -537,8 +501,7 @@ subtype=Angel
 color=w
 converted=5
 cost={3}{W}{W}
-power=4
-toughness=4
+pt=4/4
 ability=flying,exalted
 timing=fmain
 
@@ -551,8 +514,7 @@ subtype=Sphinx
 color=u
 converted=5
 cost={4}{U}
-power=2
-toughness=5
+pt=2/5
 ability=flying
 timing=main
 
@@ -565,8 +527,7 @@ subtype=Human,Soldier
 color=w
 converted=3
 cost={2}{W}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Birds of Paradise
@@ -578,8 +539,7 @@ subtype=Bird
 color=g
 converted=1
 cost={G}
-power=0
-toughness=1
+pt=0/1
 ability=flying
 timing=smain
 mana_or_combat
@@ -593,8 +553,7 @@ subtype=Human,Knight
 color=b
 converted=2
 cost={B}{B}
-power=2
-toughness=2
+pt=2/2
 ability=first strike,protection from white
 timing=main
 
@@ -607,8 +566,7 @@ subtype=Human,Wizard
 color=w
 converted=2
 cost={1}{W}
-power=1
-toughness=2
+pt=1/2
 timing=main
 
 >Blistering Dieflyn
@@ -620,8 +578,7 @@ subtype=Imp
 color=r
 converted=4
 cost={3}{R}
-power=0
-toughness=1
+pt=0/1
 ability=flying
 timing=main
 
@@ -634,8 +591,7 @@ subtype=Vampire,Shaman
 color=b
 converted=2
 cost={1}{B}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Bloodthrone Vampire
@@ -647,8 +603,7 @@ subtype=Vampire
 color=b
 converted=2
 cost={1}{B}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Bonebreaker Giant
@@ -660,8 +615,7 @@ subtype=Giant
 color=r
 converted=5
 cost={4}{R}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Briarberry Cohort
@@ -673,8 +627,7 @@ subtype=Faerie,Soldier
 color=u
 converted=2
 cost={1}{U}
-power=1
-toughness=1
+pt=1/1
 ability=flying
 timing=main
 
@@ -687,8 +640,7 @@ subtype=Boar
 color=g
 converted=3
 cost={2}{G}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Cavern Thoctar
@@ -700,8 +652,7 @@ subtype=Beast
 color=g
 converted=6
 cost={5}{G}
-power=5
-toughness=5
+pt=5/5
 timing=main
 
 >Char-Rumbler
@@ -713,8 +664,7 @@ subtype=Elemental
 color=r
 converted=4
 cost={2}{R}{R}
-power=-1
-toughness=3
+pt=-1/3
 ability=double strike
 timing=main
 
@@ -727,8 +677,7 @@ subtype=Drake
 color=u
 converted=5
 cost={4}{U}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=main
 
@@ -741,8 +690,7 @@ subtype=Elemental,Rogue
 color=b
 converted=3
 cost={2}{B}
-power=1
-toughness=3
+pt=1/3
 static=player
 timing=fmain
 
@@ -755,8 +703,7 @@ subtype=Treefolk,Warrior
 color=g
 converted=5
 cost={4}{G}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Cunning Sparkmage
@@ -768,8 +715,7 @@ subtype=Human,Shaman
 color=r
 converted=3
 cost={2}{R}
-power=0
-toughness=1
+pt=0/1
 ability=haste
 timing=fmain
 
@@ -782,8 +728,7 @@ subtype=Goblin,Warrior
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=1
+pt=1/1
 static=player
 timing=fmain
 
@@ -796,8 +741,7 @@ subtype=Cyclops
 color=r
 converted=3
 cost={2}{R}
-power=3
-toughness=3
+pt=3/3
 ability=attacks each turn if able
 timing=main
 
@@ -810,8 +754,7 @@ subtype=Goblin,Knight
 color=rg
 converted=4
 cost={1}{R/G}{R/G}{R/G}
-power=3
-toughness=4
+pt=3/4
 ability=trample
 static=player
 timing=fmain
@@ -825,8 +768,7 @@ subtype=Goblin,Warrior
 color=rg
 converted=3
 cost={R/G}{R/G}{R/G}
-power=3
-toughness=3
+pt=3/3
 ability=haste,wither
 timing=fmain
 
@@ -839,8 +781,7 @@ subtype=Giant,Warrior
 color=rw
 converted=4
 cost={2}{R}{W}
-power=4
-toughness=4
+pt=4/4
 ability=lifelink
 timing=smain
 
@@ -853,8 +794,7 @@ subtype=Dragon
 color=brg
 converted=6
 cost={3}{B}{R}{G}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 timing=main
 
@@ -867,8 +807,7 @@ subtype=Zombie
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Cerodon Yearling
@@ -880,8 +819,7 @@ subtype=Beast
 color=rw
 converted=2
 cost={R}{W}
-power=2
-toughness=2
+pt=2/2
 ability=vigilance,haste
 timing=fmain
 
@@ -894,8 +832,7 @@ subtype=Shapeshifter
 color=g
 converted=4
 cost={2}{G}{G}
-power=4
-toughness=4
+pt=4/4
 ability=changeling,protection from black
 timing=main
 
@@ -908,8 +845,7 @@ subtype=Dragon,Spirit
 color=u
 converted=6
 cost={5}{U}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -922,8 +858,7 @@ subtype=Horror
 color=bg
 converted=4
 cost={1}{B/G}{B/G}{B/G}
-power=2
-toughness=2
+pt=2/2
 static=player
 timing=fmain
 
@@ -936,8 +871,7 @@ subtype=Merfolk,Wizard
 color=u
 converted=1
 cost={U}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Daggerclaw Imp
@@ -949,8 +883,7 @@ subtype=Imp
 color=b
 converted=3
 cost={2}{B}
-power=3
-toughness=1
+pt=3/1
 ability=flying,can't block
 timing=fmain
 
@@ -963,8 +896,7 @@ subtype=Rhino,Soldier
 color=gw
 converted=3
 cost={1}{G}{W}
-power=3
-toughness=3
+pt=3/3
 timing=fmain
 
 >Death Baron
@@ -976,8 +908,7 @@ subtype=Zombie,Wizard
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Deathbringer Liege
@@ -989,8 +920,7 @@ subtype=Horror
 color=wb
 converted=5
 cost={2}{W/B}{W/B}{W/B}
-power=3
-toughness=4
+pt=3/4
 static=player
 timing=fmain
 
@@ -1003,8 +933,7 @@ subtype=Insect
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=1
+pt=2/1
 ability=flying
 timing=main
 
@@ -1017,8 +946,7 @@ subtype=Kor,Cleric
 color=w
 converted=3
 cost={W}{W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=protection from black
 timing=main
 
@@ -1031,8 +959,7 @@ subtype=Shade
 color=b
 converted=4
 cost={3}{B}
-power=1
-toughness=1
+pt=1/1
 ability=flying
 timing=main
 
@@ -1045,8 +972,7 @@ subtype=Elemental
 color=bg
 converted=7
 cost={4}{B/G}{B/G}{B/G}
-power=10
-toughness=10
+pt=10/10
 ability=trample
 timing=main
 
@@ -1059,8 +985,7 @@ subtype=Elemental,Incarnation
 color=b
 converted=6
 cost={3}{B}{B}{B}
-power=6
-toughness=6
+pt=6/6
 ability=fear
 timing=fmain
 
@@ -1073,8 +998,7 @@ subtype=Skeleton
 color=b
 converted=2
 cost={1}{B}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Dungrove Elder
@@ -1097,8 +1021,7 @@ subtype=Elemental
 color=r
 converted=6
 cost={5}{R}
-power=4
-toughness=4
+pt=4/4
 timing=smain
 
 >Edric, Spymaster of Trest
@@ -1110,8 +1033,7 @@ subtype=Elf,Rogue
 color=gu
 converted=3
 cost={1}{G}{U}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Elvish Pioneer
@@ -1123,8 +1045,7 @@ subtype=Elf,Druid
 color=g
 converted=1
 cost={G}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Elvish Piper
@@ -1136,8 +1057,7 @@ subtype=Elf,Shaman
 color=g
 converted=4
 cost={3}{G}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Elvish Visionary
@@ -1149,8 +1069,7 @@ subtype=Elf,Shaman
 color=g
 converted=2
 cost={1}{G}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Eternal Witness
@@ -1162,8 +1081,7 @@ subtype=Human,Shaman
 color=g
 converted=3
 cost={1}{G}{G}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Fallowsage
@@ -1175,8 +1093,7 @@ subtype=Merfolk,Wizard
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Fiery Hellhound
@@ -1188,8 +1105,7 @@ subtype=Elemental,Hound
 color=r
 converted=3
 cost={1}{R}{R}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Fledgling Dragon
@@ -1201,8 +1117,7 @@ subtype=Dragon
 color=r
 converted=4
 cost={2}{R}{R}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -1215,8 +1130,7 @@ subtype=Illusion
 color=u
 converted=3
 cost={2}{U}
-power=2
-toughness=1
+pt=2/1
 ability=flying
 timing=main
 
@@ -1229,8 +1143,7 @@ subtype=Kithkin,Wizard
 color=w
 converted=4
 cost={3}{W}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=main
 
@@ -1243,8 +1156,7 @@ subtype=Vampire,Warrior
 color=b
 converted=2
 cost={B}{B}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Gideon's Avenger
@@ -1256,8 +1168,7 @@ subtype=Human,Soldier
 color=w
 converted=3
 cost={1}{W}{W}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Gladecover Scout
@@ -1269,8 +1180,7 @@ subtype=Elf,Scout
 color=g
 converted=1
 cost={G}
-power=1
-toughness=1
+pt=1/1
 ability=hexproof
 timing=main
 
@@ -1283,8 +1193,7 @@ subtype=Illusion
 color=b
 converted=2
 cost={1}{B}
-power=0
-toughness=1
+pt=0/1
 ability=flying
 timing=main
 
@@ -1297,8 +1206,7 @@ subtype=Ooze
 color=g
 converted=3
 cost={2}{G}
-power=2
-toughness=2
+pt=2/2
 ability=flash
 timing=flash
 
@@ -1311,8 +1219,7 @@ subtype=Goblin,Shaman
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Goblin Balloon Brigade
@@ -1324,8 +1231,7 @@ subtype=Goblin,Warrior
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Goblin Fireslinger
@@ -1337,8 +1243,7 @@ subtype=Goblin,Warrior
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Goblin Tunneler
@@ -1350,8 +1255,7 @@ subtype=Goblin,Rogue
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Crafty Pathmage
@@ -1363,8 +1267,7 @@ subtype=Human,Wizard
 color=u
 converted=3
 cost={2}{U}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Goldenglow Moth
@@ -1376,8 +1279,7 @@ subtype=Insect
 color=w
 converted=1
 cost={W}
-power=0
-toughness=1
+pt=0/1
 timing=main
 
 >Gorger Wurm
@@ -1389,8 +1291,7 @@ subtype=Wurm
 color=rg
 converted=5
 cost={3}{R}{G}
-power=5
-toughness=5
+pt=5/5
 timing=main
 
 >Gravedigger
@@ -1402,8 +1303,7 @@ subtype=Zombie
 color=b
 converted=4
 cost={3}{B}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Griffin Rider
@@ -1415,8 +1315,7 @@ subtype=Human,Knight
 color=w
 converted=2
 cost={1}{W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Indrik Stomphowler
@@ -1428,8 +1327,7 @@ subtype=Beast
 color=g
 converted=5
 cost={4}{G}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Infantry Veteran
@@ -1441,8 +1339,7 @@ subtype=Human,Soldier
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Jenara, Asura of War
@@ -1454,8 +1351,7 @@ subtype=Angel
 color=gwu
 converted=3
 cost={G}{W}{U}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=fmain
 
@@ -1468,8 +1364,7 @@ subtype=Elf,Warrior
 color=g
 converted=1
 cost={G}
-power=1
-toughness=1
+pt=1/1
 static=player
 timing=fmain
 
@@ -1483,8 +1378,7 @@ subtype=Merfolk,Wizard
 color=w
 converted=2
 cost={1}{W}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Kird Ape
@@ -1496,8 +1390,7 @@ subtype=Ape
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Kor Aeronaut
@@ -1509,8 +1402,7 @@ subtype=Kor,Soldier
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -1523,8 +1415,7 @@ subtype=Kor,Soldier
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Kor Sanctifiers
@@ -1536,8 +1427,7 @@ subtype=Kor,Cleric
 color=w
 converted=3
 cost={2}{W}
-power=2
-toughness=3
+pt=2/3
 timing=main
 
 >Kor Spiritdancer
@@ -1549,8 +1439,7 @@ subtype=Kor,Wizard
 color=w
 converted=2
 cost={1}{W}
-power=0
-toughness=2
+pt=0/2
 timing=main
 
 >Lhurgoyf
@@ -1573,8 +1462,7 @@ subtype=Cat
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Looming Shade
@@ -1586,8 +1474,7 @@ subtype=Shade
 color=b
 converted=3
 cost={2}{B}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Lord of the Unreal
@@ -1599,8 +1486,7 @@ subtype=Human,Wizard
 color=u
 converted=2
 cost={U}{U}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Manic Vandal
@@ -1613,8 +1499,7 @@ subtype=Human,Warrior
 color=r
 converted=3
 cost={2}{R}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Marrow Chomper
@@ -1626,8 +1511,7 @@ subtype=Zombie,Lizard
 color=bg
 converted=5
 cost={3}{B}{G}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Master of Etherium
@@ -1652,8 +1536,7 @@ subtype=Merfolk
 color=u
 converted=3
 cost={1}{U}{U}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Mesa Enchantress
@@ -1665,8 +1548,7 @@ subtype=Human,Druid
 color=w
 converted=3
 cost={1}{W}{W}
-power=0
-toughness=2
+pt=0/2
 timing=fmain
 
 >Mortivore
@@ -1689,8 +1571,7 @@ subtype=Goblin,Warrior
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=1
+pt=1/1
 ability=haste
 timing=main
 
@@ -1703,8 +1584,7 @@ subtype=Zombie,Insect
 color=b
 converted=3
 cost={2}{B}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Nekrataal
@@ -1716,8 +1596,7 @@ subtype=Human,Assassin
 color=b
 converted=4
 cost={2}{B}{B}
-power=2
-toughness=1
+pt=2/1
 ability=first strike
 timing=fmain
 
@@ -1730,8 +1609,7 @@ subtype=Griffin
 color=w
 converted=5
 cost={4}{W}
-power=2
-toughness=4
+pt=2/4
 ability=flying,first strike
 timing=main
 
@@ -1744,8 +1622,7 @@ subtype=Cat,Monk
 color=w
 converted=1
 cost={W}
-power=0
-toughness=3
+pt=0/3
 ability=defender
 timing=main
 
@@ -1758,8 +1635,7 @@ subtype=Human,Wizard
 color=r
 converted=3
 cost={2}{R}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Rapacious One
@@ -1771,8 +1647,7 @@ subtype=Eldrazi,Drone
 color=r
 converted=6
 cost={5}{R}
-power=5
-toughness=4
+pt=5/4
 ability=trample
 timing=main
 
@@ -1785,8 +1660,7 @@ subtype=Homunculus
 color=u
 converted=3
 cost={2}{U}
-power=1
-toughness=4
+pt=1/4
 timing=main
 
 >Roc Egg
@@ -1798,8 +1672,7 @@ subtype=Bird
 color=w
 converted=3
 cost={2}{W}
-power=0
-toughness=3
+pt=0/3
 ability=defender
 timing=main
 
@@ -1812,8 +1685,7 @@ subtype=Zombie
 color=b
 converted=5
 cost={4}{B}
-power=4
-toughness=5
+pt=4/5
 timing=main
 
 >Royal Assassin
@@ -1825,8 +1697,7 @@ subtype=Human,Assassin
 color=b
 converted=3
 cost={1}{B}{B}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Ruhan of the Fomori
@@ -1837,8 +1708,7 @@ type=Legendary,Creature
 subtype=Giant,Warrior
 converted=4
 cost={1}{R}{W}{U}
-power=7
-toughness=7
+pt=7/7
 ability=attacks each turn if able
 timing=main
 
@@ -1850,8 +1720,7 @@ type=Creature
 subtype=Faerie,Soldier
 converted=3
 cost={2}{U}
-power=1
-toughness=1
+pt=1/1
 ability=flash,flying
 static=player
 timing=flash
@@ -1865,8 +1734,7 @@ subtype=Merfolk,Rogue
 color=u
 converted=3
 cost={2}{U}
-power=1
-toughness=3
+pt=1/3
 timing=main
 
 >Serra Ascendant
@@ -1878,8 +1746,7 @@ subtype=Human,Monk
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 ability=lifelink
 timing=main
 
@@ -1892,8 +1759,7 @@ subtype=Angel
 color=w
 converted=5
 cost={3}{W}{W}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=main
 
@@ -1907,8 +1773,7 @@ subtype=Zombie
 color=b
 converted=4
 cost={2}{B}{B}
-power=3
-toughness=3
+pt=3/3
 timing=fmain
 
 >Skinshifter
@@ -1920,8 +1785,7 @@ subtype=Human,Shaman
 color=g
 converted=2
 cost={1}{G}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Scute Mob
@@ -1933,8 +1797,7 @@ subtype=Insect
 color=g
 converted=1
 cost={G}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Safehold Elite
@@ -1946,8 +1809,7 @@ subtype=Elf,Scout
 color=gw
 converted=2
 cost={1}{G/W}
-power=2
-toughness=2
+pt=2/2
 ability=persist
 timing=main
 
@@ -1960,8 +1822,7 @@ subtype=Drake
 color=u
 converted=3
 cost={2}{U}
-power=3
-toughness=1
+pt=3/1
 ability=flying,can't block creatures without flying
 timing=main
 
@@ -1974,8 +1835,7 @@ subtype=Elemental
 color=g
 converted=5
 cost={4}{G}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Soul Warden
@@ -1987,8 +1847,7 @@ subtype=Human,Cleric
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Soul's Attendant
@@ -2000,8 +1859,7 @@ subtype=Human,Cleric
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Sparkmage Apprentice
@@ -2013,8 +1871,7 @@ subtype=Human,Wizard
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Stillmoon Cavalier
@@ -2026,8 +1883,7 @@ subtype=Zombie,Knight
 color=wb
 converted=3
 cost={1}{W/B}{W/B}
-power=2
-toughness=1
+pt=2/1
 ability=protection from white,protection from black
 timing=main
 
@@ -2040,8 +1896,7 @@ subtype=Spider
 color=g
 converted=5
 cost={4}{G}
-power=2
-toughness=5
+pt=2/5
 ability=reach
 timing=main
 
@@ -2054,8 +1909,7 @@ subtype=Merfolk,Wizard
 color=w
 converted=3
 cost={2}{W}
-power=1
-toughness=2
+pt=1/2
 timing=main
 
 >Surgespanner
@@ -2067,8 +1921,7 @@ subtype=Merfolk,Wizard
 color=u
 converted=4
 cost={2}{U}{U}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Tormented Soul
@@ -2080,8 +1933,7 @@ subtype=Spirit
 color=b
 converted=1
 cost={B}
-power=1
-toughness=1
+pt=1/1
 ability=can't block,unblockable
 timing=main
 
@@ -2093,8 +1945,7 @@ type=Artifact,Creature
 subtype=Construct
 converted=6
 cost={6}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Vampire Aristocrat
@@ -2106,8 +1957,7 @@ subtype=Vampire,Rogue
 color=b
 converted=3
 cost={2}{B}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Veteran Armorsmith
@@ -2119,8 +1969,7 @@ subtype=Human,Soldier
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=3
+pt=2/3
 static=player
 timing=fmain
 
@@ -2133,8 +1982,7 @@ subtype=Human,Soldier
 color=w
 converted=3
 cost={2}{W}
-power=3
-toughness=2
+pt=3/2
 static=player
 timing=fmain
 
@@ -2147,8 +1995,7 @@ subtype=Merfolk,Soldier
 color=w
 converted=4
 cost={3}{W}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Viridian Betrayers
@@ -2160,8 +2007,7 @@ subtype=Elf,Warrior
 color=g
 converted=3
 cost={1}{G}{G}
-power=3
-toughness=1
+pt=3/1
 timing=main
 
 >Viridian Shaman
@@ -2173,8 +2019,7 @@ subtype=Elf,Shaman
 color=g
 converted=3
 cost={2}{G}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Volcanic Dragon
@@ -2186,8 +2031,7 @@ subtype=Dragon
 color=r
 converted=6
 cost={4}{R}{R}
-power=4
-toughness=4
+pt=4/4
 ability=flying,haste
 timing=fmain
 
@@ -2200,8 +2044,7 @@ subtype=Wall
 color=w
 converted=4
 cost={3}{W}
-power=0
-toughness=5
+pt=0/5
 ability=defender
 timing=smain
 
@@ -2214,8 +2057,7 @@ subtype=Wall
 color=r
 converted=2
 cost={1}{R}
-power=4
-toughness=1
+pt=4/1
 ability=defender
 timing=smain
 
@@ -2228,8 +2070,7 @@ subtype=Wall
 color=w
 converted=2
 cost={1}{W}
-power=0
-toughness=4
+pt=0/4
 ability=defender
 timing=smain
 
@@ -2242,8 +2083,7 @@ subtype=Treefolk,Shaman
 color=g
 converted=4
 cost={3}{G}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Wild Nacatl
@@ -2255,8 +2095,7 @@ subtype=Cat,Warrior
 color=g
 converted=1
 cost={G}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Woodfall Primus
@@ -2268,8 +2107,7 @@ subtype=Treefolk,Shaman
 color=g
 converted=8
 cost={5}{G}{G}{G}
-power=6
-toughness=6
+pt=6/6
 ability=trample,persist
 timing=main
 
@@ -2282,8 +2120,7 @@ subtype=Spirit
 color=g
 converted=3
 cost={1}{G}{G}
-power=2
-toughness=5
+pt=2/5
 ability=defender
 timing=smain
 
@@ -2296,8 +2133,7 @@ subtype=Angel
 color=gwu
 converted=8
 cost={4}{G}{W}{W}{U}
-power=5
-toughness=8
+pt=5/8
 ability=flying,shroud
 timing=fmain
 
@@ -2310,8 +2146,7 @@ subtype=Human,Archer
 color=g
 converted=3
 cost={2}{G}
-power=2
-toughness=2
+pt=2/2
 timing=smain
 
 >Fireslinger
@@ -2323,8 +2158,7 @@ subtype=Human,Wizard
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=1
+pt=1/1
 timing=smain
 
 >Flameblast Dragon
@@ -2336,8 +2170,7 @@ subtype=Dragon
 color=r
 converted=6
 cost={4}{R}{R}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -2351,8 +2184,7 @@ subtype=Kavu
 color=r
 converted=4
 cost={3}{R}
-power=4
-toughness=2
+pt=4/2
 timing=fmain
 
 >Foul Imp
@@ -2364,8 +2196,7 @@ subtype=Imp
 color=b
 converted=2
 cost={B}{B}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=smain
 
@@ -2378,8 +2209,7 @@ subtype=Dragon
 color=r
 converted=4
 cost={2}{R}{R}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -2392,8 +2222,7 @@ subtype=Faerie,Knight
 color=ub
 converted=4
 cost={1}{U/B}{U/B}{U/B}
-power=2
-toughness=3
+pt=2/3
 ability=flying
 static=player
 timing=fmain
@@ -2407,8 +2236,7 @@ subtype=Spider
 color=g
 converted=3
 cost={2}{G}
-power=3
-toughness=3
+pt=3/3
 ability=reach,can't block creatures without flying
 timing=main
 
@@ -2421,8 +2249,7 @@ subtype=Beast
 color=rgw
 converted=8
 cost={4}{R}{G}{G}{W}
-power=8
-toughness=8
+pt=8/8
 ability=vigilance
 timing=main
 
@@ -2435,8 +2262,7 @@ subtype=Frog
 color=gu
 converted=4
 cost={1}{G}{G}{U}
-power=3
-toughness=3
+pt=3/3
 timing=smain
 
 >Hateflayer
@@ -2448,8 +2274,7 @@ subtype=Elemental
 color=r
 converted=7
 cost={5}{R}{R}
-power=5
-toughness=5
+pt=5/5
 ability=wither
 timing=main
 
@@ -2462,8 +2287,7 @@ subtype=Human,Wizard
 color=rw
 converted=2
 cost={R/W}{R/W}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Hellkite Overlord
@@ -2475,8 +2299,7 @@ subtype=Dragon
 color=brg
 converted=8
 cost={4}{B}{R}{R}{G}
-power=8
-toughness=8
+pt=8/8
 ability=flying,trample,haste
 timing=fmain
 
@@ -2489,8 +2312,7 @@ subtype=Goblin,Warrior
 color=g
 converted=3
 cost={2}{G}
-power=1
-toughness=1
+pt=1/1
 ability=trample
 timing=main
 
@@ -2503,8 +2325,7 @@ subtype=Specter
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -2517,8 +2338,7 @@ subtype=Merfolk,Rogue
 color=ub
 converted=2
 cost={U/B}{U/B}
-power=2
-toughness=1
+pt=2/1
 ability=can't block,unblockable
 timing=fmain
 
@@ -2531,8 +2351,7 @@ subtype=Goblin
 color=r
 converted=5
 cost={3}{R}{R}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Jhessian Balmgiver
@@ -2544,8 +2363,7 @@ subtype=Human,Cleric
 color=wu
 converted=3
 cost={1}{W}{U}
-power=1
-toughness=1
+pt=1/1
 timing=smain
 
 >Jhessian Infiltrator
@@ -2557,8 +2375,7 @@ subtype=Human,Rogue
 color=gu
 converted=2
 cost={G}{U}
-power=2
-toughness=2
+pt=2/2
 ability=unblockable
 timing=main
 
@@ -2571,8 +2388,7 @@ subtype=Spirit
 color=w
 converted=3
 cost={2}{W}
-power=1
-toughness=2
+pt=1/2
 ability=flying
 timing=smain
 
@@ -2586,8 +2402,7 @@ subtype=Spirit
 color=b
 converted=4
 cost={2}{B}{B}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=fmain
 
@@ -2600,8 +2415,7 @@ subtype=Kithkin,Knight
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=first strike,lifelink
 timing=main
 
@@ -2614,8 +2428,7 @@ subtype=Wolf
 color=gw
 converted=2
 cost={G}{W}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Kulrath Knight
@@ -2627,8 +2440,7 @@ subtype=Elemental,Knight
 color=br
 converted=5
 cost={3}{B/R}{B/R}
-power=3
-toughness=3
+pt=3/3
 ability=flying,wither
 static=opponent
 timing=fmain
@@ -2642,8 +2454,7 @@ subtype=Spirit
 color=r
 converted=4
 cost={3}{R}
-power=3
-toughness=3
+pt=3/3
 timing=smain
 
 >Lightning Reaver
@@ -2655,8 +2466,7 @@ subtype=Zombie,Beast
 color=br
 converted=5
 cost={3}{B}{R}
-power=3
-toughness=3
+pt=3/3
 ability=fear,haste
 timing=main
 
@@ -2669,8 +2479,7 @@ subtype=Elf,Druid
 color=g
 converted=1
 cost={G}
-power=1
-toughness=1
+pt=1/1
 timing=smain
 mana_or_combat
 
@@ -2684,8 +2493,7 @@ subtype=Snake
 color=gu
 converted=3
 cost={1}{G}{U}
-power=1
-toughness=1
+pt=1/1
 ability=flash,flying,deathtouch
 timing=flash
 
@@ -2698,8 +2506,7 @@ subtype=Elephant,Cleric
 color=gw
 converted=4
 cost={2}{G}{W}
-power=4
-toughness=4
+pt=4/4
 timing=fmain
 
 >Spirit of the Hearth
@@ -2711,8 +2518,7 @@ subtype=Cat,Spirit
 color=w
 converted=6
 cost={4}{W}{W}
-power=4
-toughness=5
+pt=4/5
 ability=flying
 timing=fmain
 
@@ -2725,8 +2531,7 @@ subtype=Cyclops,Warrior
 color=brg
 converted=4
 cost={1}{B}{R}{G}
-power=3
-toughness=4
+pt=3/4
 timing=fmain
 
 >Terra Stomper
@@ -2738,8 +2543,7 @@ subtype=Beast
 color=g
 converted=6
 cost={3}{G}{G}{G}
-power=8
-toughness=8
+pt=8/8
 ability=can't be countered,trample
 timing=main
 
@@ -2752,8 +2556,7 @@ subtype=Cat,Warrior
 color=rwg
 converted=4
 cost={2}{R/W}{G}
-power=2
-toughness=4
+pt=2/4
 ability=double strike
 timing=main
 
@@ -2766,8 +2569,7 @@ subtype=Human,Wizard
 color=w
 converted=2
 cost={1}{W}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Azure Mage
@@ -2779,8 +2581,7 @@ subtype=Human,Wizard
 color=u
 converted=2
 cost={1}{U}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Crimson Mage
@@ -2792,8 +2593,7 @@ subtype=Human,Shaman
 color=r
 converted=2
 cost={R}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Jade Mage
@@ -2805,8 +2605,7 @@ subtype=Human,Shaman
 color=g
 converted=2
 cost={2}{G}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Onyx Mage
@@ -2818,8 +2617,7 @@ subtype=Human,Wizard
 color=b
 converted=2
 cost={1}{B}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Angel's Feather
@@ -2876,8 +2674,7 @@ subtype=Beast
 color=rgw
 converted=6
 cost={3}{R}{G}{W}
-power=6
-toughness=6
+pt=6/6
 ability=vigilance,trample
 timing=main
 
@@ -2890,8 +2687,7 @@ subtype=Bird
 color=guw
 converted=4
 cost={2}{G/U}{W}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=fmain
 
@@ -2904,8 +2700,7 @@ subtype=Spirit
 color=b
 converted=6
 cost={3}{B}{B}{B}
-power=5
-toughness=5
+pt=5/5
 ability=wither
 timing=smain
 
@@ -2918,8 +2713,7 @@ subtype=Snake
 color=g
 converted=2
 cost={1}{G}
-power=2
-toughness=1
+pt=2/1
 ability=swampwalk
 timing=main
 
@@ -2932,8 +2726,7 @@ subtype=Vampire,Cat
 color=b
 converted=4
 cost={2}{B}{B}
-power=3
-toughness=2
+pt=3/2
 ability=flying,first strike,haste
 timing=fmain
 
@@ -2946,8 +2739,7 @@ subtype=Goblin
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Moroii
@@ -2959,8 +2751,7 @@ subtype=Vampire
 color=ub
 converted=4
 cost={2}{U}{B}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 timing=main
 
@@ -2973,8 +2764,7 @@ subtype=Horror
 color=gu
 converted=5
 cost={2}{G/U}{G/U}{G/U}
-power=4
-toughness=4
+pt=4/4
 static=player
 timing=fmain
 
@@ -2986,8 +2776,7 @@ type=Artifact,Creature
 subtype=Wall
 converted=1
 cost={1}
-power=0
-toughness=4
+pt=0/4
 ability=defender
 timing=smain
 
@@ -3000,8 +2789,7 @@ subtype=Elemental,Berserker
 color=rw
 converted=4
 cost={1}{R}{R}{W}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Noble Hierarch
@@ -3013,8 +2801,7 @@ subtype=Human,Druid
 color=g
 converted=1
 cost={G}
-power=0
-toughness=1
+pt=0/1
 ability=exalted
 timing=main
 mana_or_combat
@@ -3028,8 +2815,7 @@ subtype=Elf,Cleric
 color=gw
 converted=3
 cost={2}{G/W}
-power=2
-toughness=2
+pt=2/2
 timing=smain
 
 >Paladin en-Vec
@@ -3041,8 +2827,7 @@ subtype=Human,Knight
 color=w
 converted=3
 cost={1}{W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=first strike,protection from black,protection from red
 timing=main
 
@@ -3055,8 +2840,7 @@ subtype=Faerie,Rogue
 color=uw
 converted=3
 cost={2}{W/U}
-power=1
-toughness=3
+pt=1/3
 ability=flying
 timing=main
 
@@ -3069,8 +2853,7 @@ subtype=Bird
 color=ub
 converted=2
 cost={U}{B}
-power=2
-toughness=1
+pt=2/1
 ability=flying,deathtouch
 timing=smain
 
@@ -3083,8 +2866,7 @@ subtype=Goblin,Rogue
 color=b
 converted=1
 cost={B}
-power=1
-toughness=1
+pt=1/1
 ability=fear
 timing=main
 
@@ -3097,8 +2879,7 @@ subtype=Zombie,Leech
 color=bg
 converted=2
 cost={B}{G}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Rafiq of the Many
@@ -3110,8 +2891,7 @@ subtype=Human,Knight
 color=gwu
 converted=4
 cost={1}{G}{W}{U}
-power=3
-toughness=3
+pt=3/3
 ability=exalted
 timing=fmain
 
@@ -3124,8 +2904,7 @@ subtype=Goblin,Warrior
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Rakdos Guildmage
@@ -3137,8 +2916,7 @@ subtype=Zombie,Shaman
 color=br
 converted=2
 cost={B/R}{B/R}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Rendclaw Trow
@@ -3150,8 +2928,7 @@ subtype=Troll
 color=bg
 converted=3
 cost={2}{B/G}
-power=2
-toughness=2
+pt=2/2
 ability=wither,persist
 timing=smain
 
@@ -3164,8 +2941,7 @@ subtype=Griffin
 color=rgw
 converted=4
 cost={1}{R}{G}{W}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=fmain
 
@@ -3178,8 +2954,7 @@ subtype=Rhino,Soldier
 color=g
 converted=4
 cost={3}{G}
-power=3
-toughness=3
+pt=3/3
 ability=trample,exalted
 timing=fmain
 
@@ -3192,8 +2967,7 @@ subtype=Goblin,Warrior
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=2
+pt=1/2
 ability=first strike,wither
 timing=main
 
@@ -3206,8 +2980,7 @@ subtype=Elf,Archer
 color=g
 converted=1
 cost={G}
-power=1
-toughness=2
+pt=1/2
 timing=smain
 
 >Zephyr Sprite
@@ -3219,8 +2992,7 @@ subtype=Faerie
 color=u
 converted=1
 cost={U}
-power=1
-toughness=1
+pt=1/1
 ability=flying
 timing=main
 
@@ -3233,8 +3005,7 @@ subtype=Kithkin,Archer
 color=w
 converted=4
 cost={2}{W}{W}
-power=2
-toughness=3
+pt=2/3
 ability=first strike
 timing=smain
 
@@ -3247,8 +3018,7 @@ subtype=Elemental,Warrior
 color=b
 converted=2
 cost={1}{B}
-power=2
-toughness=1
+pt=2/1
 ability=wither
 timing=main
 
@@ -3261,8 +3031,7 @@ subtype=Human,Knight
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=first strike,exalted
 timing=fmain
 
@@ -3275,8 +3044,7 @@ subtype=Elf,Rogue
 color=g
 converted=2
 cost={1}{G}
-power=1
-toughness=1
+pt=1/1
 ability=can't be blocked except by creatures with flying,hexproof
 timing=fmain
 
@@ -3289,8 +3057,7 @@ subtype=Leviathan
 color=gu
 converted=7
 cost={5}{G}{U}
-power=6
-toughness=6
+pt=6/6
 ability=flying,trample,shroud
 timing=fmain
 
@@ -3303,8 +3070,7 @@ subtype=Human,Soldier
 color=w
 converted=1
 cost={W}
-power=0
-toughness=4
+pt=0/4
 ability=defender
 timing=smain
 
@@ -3317,8 +3083,7 @@ subtype=Spirit
 color=wb
 converted=3
 cost={W}{B}{B}
-power=0
-toughness=4
+pt=0/4
 ability=defender
 timing=smain
 
@@ -3331,8 +3096,7 @@ subtype=Wurm
 color=g
 converted=7
 cost={4}{G}{G}{G}
-power=7
-toughness=7
+pt=7/7
 ability=trample
 timing=fmain
 
@@ -3345,8 +3109,7 @@ subtype=Drake
 color=u
 converted=2
 cost={1}{U}
-power=1
-toughness=1
+pt=1/1
 ability=flying
 timing=fmain
 
@@ -3359,8 +3122,7 @@ subtype=Hag
 color=bg
 converted=3
 cost={B/G}{B/G}{B/G}
-power=3
-toughness=2
+pt=3/2
 ability=swampwalk,forestwalk
 timing=main
 
@@ -3373,8 +3135,7 @@ subtype=Human,Druid,Knight
 color=gw
 converted=2
 cost={G}{W}
-power=2
-toughness=2
+pt=2/2
 ability=vigilance
 timing=smain
 mana_or_combat
@@ -3388,8 +3149,7 @@ subtype=Vampire,Shaman
 color=b
 converted=5
 cost={3}{B}{B}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 timing=main
 
@@ -3402,8 +3162,7 @@ subtype=Horror
 color=b
 converted=1
 cost={B}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Merfolk Seastalkers
@@ -3415,8 +3174,7 @@ subtype=Merfolk,Scout
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=3
+pt=2/3
 ability=islandwalk
 timing=main
 
@@ -3429,8 +3187,7 @@ subtype=Human,Archer
 color=rw
 converted=2
 cost={R}{W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Affa Guard Hound
@@ -3442,8 +3199,7 @@ subtype=Hound
 color=w
 converted=3
 cost={2}{W}
-power=2
-toughness=2
+pt=2/2
 ability=flash
 timing=pumpflash
 
@@ -3456,8 +3212,7 @@ subtype=Goblin,Warrior
 color=rg
 converted=1
 cost={R/G}
-power=2
-toughness=1
+pt=2/1
 ability=attacks each turn if able
 timing=main
 
@@ -3470,8 +3225,7 @@ subtype=Bird
 color=u
 converted=4
 cost={2}{U}{U}
-power=1
-toughness=3
+pt=1/3
 ability=flying
 timing=main
 
@@ -3484,8 +3238,7 @@ subtype=Elf,Warrior
 color=gw
 converted=6
 cost={4}{G}{W}
-power=3
-toughness=4
+pt=3/4
 static=player
 timing=fmain
 
@@ -3498,8 +3251,7 @@ subtype=Troll,Shaman
 color=g
 converted=3
 cost={1}{G}{G}
-power=3
-toughness=2
+pt=3/2
 ability=hexproof
 timing=fmain
 
@@ -3512,8 +3264,7 @@ subtype=Elf,Warrior
 color=g
 converted=1
 cost={G}
-power=1
-toughness=1
+pt=1/1
 ability=wither
 timing=main
 
@@ -3526,8 +3277,7 @@ subtype=Beast
 color=g
 converted=5
 cost={3}{G}{G}
-power=3
-toughness=3
+pt=3/3
 timing=fmain
 
 >Utvara Scalper
@@ -3539,8 +3289,7 @@ subtype=Goblin,Scout
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=2
+pt=1/2
 ability=flying,attacks each turn if able
 timing=main
 
@@ -3553,8 +3302,7 @@ subtype=Human,Soldier
 color=w
 converted=2
 cost={1}{W}
-power=2
-toughness=2
+pt=2/2
 static=player
 timing=fmain
 
@@ -3567,8 +3315,7 @@ subtype=Elemental,Incarnation
 color=g
 converted=6
 cost={3}{G}{G}{G}
-power=6
-toughness=6
+pt=6/6
 ability=trample
 timing=fmain
 
@@ -3581,8 +3328,7 @@ subtype=Spirit
 color=w
 converted=4
 cost={3}{W}
-power=2
-toughness=3
+pt=2/3
 ability=protection from monocolored
 timing=main
 
@@ -3595,8 +3341,7 @@ subtype=Dragon
 color=gub
 converted=6
 cost={3}{G}{U}{B}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=smain
 
@@ -3609,8 +3354,7 @@ subtype=Wall
 color=wu
 converted=3
 cost={1}{W}{U}
-power=0
-toughness=8
+pt=0/8
 ability=defender,flying,shroud
 timing=smain
 
@@ -3623,8 +3367,7 @@ subtype=Spirit,Wall
 color=w
 converted=4
 cost={3}{W}
-power=1
-toughness=6
+pt=1/6
 ability=defender,flying
 timing=smain
 
@@ -3637,8 +3380,7 @@ subtype=Goblin,Warrior
 color=rg
 converted=5
 cost={4}{R/G}
-power=5
-toughness=2
+pt=5/2
 ability=trample,persist
 timing=main
 
@@ -3651,8 +3393,7 @@ subtype=Elf,Knight
 color=gw
 converted=3
 cost={G/W}{G/W}{G/W}
-power=3
-toughness=4
+pt=3/4
 ability=vigilance
 timing=main
 
@@ -3665,8 +3406,7 @@ subtype=Bird
 color=w
 converted=7
 cost={5}{W}{W}
-power=5
-toughness=7
+pt=5/7
 ability=flying
 timing=fmain
 
@@ -4769,8 +4509,7 @@ subtype=Angel
 color=wb
 converted=7
 cost={3}{W}{W}{B}{B}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=fmain
 
@@ -4783,8 +4522,7 @@ subtype=Cat,Warrior
 color=g
 converted=3
 cost={1}{G}{G}
-power=2
-toughness=3
+pt=2/3
 ability=first strike,forestwalk,vigilance
 timing=main
 
@@ -4798,8 +4536,7 @@ subtype=Goblin,Assassin
 color=br
 converted=4
 cost={2}{B/R}{B/R}
-power=2
-toughness=2
+pt=2/2
 ability=persist
 timing=fmain
 
@@ -4822,8 +4559,7 @@ subtype=Cleric
 color=w
 converted=2
 cost={1}{W}
-power=1
-toughness=1
+pt=1/1
 ability=protection from creatures
 timing=smain
 
@@ -4836,8 +4572,7 @@ subtype=Specter
 color=br
 converted=4
 cost={2}{B}{R}
-power=2
-toughness=2
+pt=2/2
 ability=flying,haste
 timing=fmain
 
@@ -4861,8 +4596,7 @@ subtype=Elemental
 color=wu
 converted=3
 cost={W/U}{W/U}{W/U}
-power=4
-toughness=4
+pt=4/4
 ability=flash,flying,defender
 timing=flash
 
@@ -4948,8 +4682,7 @@ subtype=Dragon
 color=wub
 converted=6
 cost={3}{W}{U}{B}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=smain
 
@@ -4962,8 +4695,7 @@ subtype=Dragon,Spirit
 color=b
 converted=6
 cost={4}{B}{B}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -4986,8 +4718,7 @@ subtype=Angel
 color=wu
 converted=7
 cost={5}{W}{U}
-power=4
-toughness=4
+pt=4/4
 ability=flying,protection from all colors
 timing=smain
 
@@ -5000,8 +4731,7 @@ subtype=Snake
 color=gu
 converted=4
 cost={1}{G}{U}{U}
-power=2
-toughness=2
+pt=2/2
 ability=flash
 timing=counterflash
 
@@ -5014,8 +4744,7 @@ subtype=Insect,Shade
 color=b
 converted=2
 cost={B}{B}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Rorix Bladewing
@@ -5027,8 +4756,7 @@ subtype=Dragon
 color=r
 converted=6
 cost={3}{R}{R}{R}
-power=6
-toughness=5
+pt=6/5
 ability=flying,haste
 timing=fmain
 
@@ -5041,8 +4769,7 @@ subtype=Beast
 color=gw
 converted=6
 cost={4}{G}{W}
-power=5
-toughness=5
+pt=5/5
 ability=trample,protection from blue,protection from red
 timing=main
 
@@ -5055,8 +4782,7 @@ subtype=Human,Wizard
 color=ub
 converted=3
 cost={1}{U}{B}
-power=1
-toughness=3
+pt=1/3
 ability=fear
 timing=main
 
@@ -5090,8 +4816,7 @@ subtype=Beast
 color=bg
 converted=5
 cost={3}{B}{G}
-power=6
-toughness=6
+pt=6/6
 timing=main
 
 >Treva, the Renewer
@@ -5103,8 +4828,7 @@ subtype=Dragon
 color=gwu
 converted=6
 cost={3}{G}{W}{U}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=smain
 
@@ -5127,8 +4851,7 @@ subtype=Plant,Wall
 color=g
 converted=2
 cost={1}{G}
-power=0
-toughness=4
+pt=0/4
 ability=defender
 timing=smain
 mana_or_combat
@@ -5142,8 +4865,7 @@ subtype=Demon
 color=b
 converted=6
 cost={4}{B}{B}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=fmain
 
@@ -5156,8 +4878,7 @@ subtype=Goblin,Berserker
 color=bgr
 converted=2
 cost={B/G}{R}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Sphinx of the Steel Wind
@@ -5169,8 +4890,7 @@ subtype=Sphinx
 color=wub
 converted=8
 cost={5}{W}{U}{B}
-power=6
-toughness=6
+pt=6/6
 ability=flying,first strike,vigilance,lifelink,protection from red,protection from green
 timing=smain
 
@@ -5213,8 +4933,7 @@ subtype=Lizard
 color=bgr
 converted=3
 cost={B}{G}{R}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Puppeteer Clique
@@ -5226,8 +4945,7 @@ subtype=Faerie,Wizard
 color=b
 converted=5
 cost={3}{B}{B}
-power=3
-toughness=2
+pt=3/2
 ability=flying,persist
 timing=fmain
 
@@ -5240,8 +4958,7 @@ subtype=Spirit
 color=b
 converted=4
 cost={3}{B}
-power=2
-toughness=2
+pt=2/2
 ability=fear,persist
 timing=main
 
@@ -5254,8 +4971,7 @@ subtype=Goblin,Berserker
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Kaervek the Merciless
@@ -5267,8 +4983,7 @@ subtype=Human,Shaman
 color=br
 converted=7
 cost={5}{B}{R}
-power=5
-toughness=4
+pt=5/4
 timing=fmain
 
 >Scar
@@ -5291,8 +5006,7 @@ subtype=Angel
 color=w
 converted=6
 cost={4}{W}{W}
-power=5
-toughness=7
+pt=5/7
 ability=flying
 timing=main
 
@@ -5305,8 +5019,7 @@ subtype=Beast
 color=g
 converted=6
 cost={4}{G}{G}
-power=6
-toughness=6
+pt=6/6
 ability=trample
 timing=main
 
@@ -5384,8 +5097,7 @@ subtype=Goblin,Warrior
 color=br
 converted=2
 cost={B}{R}
-power=3
-toughness=1
+pt=3/1
 ability=trample
 timing=main
 
@@ -5398,8 +5110,7 @@ subtype=Shapeshifter
 color=r
 converted=3
 cost={2}{R}
-power=2
-toughness=2
+pt=2/2
 ability=changeling
 timing=fmain
 
@@ -5412,8 +5123,7 @@ subtype=Goblin,Shaman
 color=br
 converted=4
 cost={2}{B}{R}
-power=3
-toughness=3
+pt=3/3
 ability=fear
 timing=main
 
@@ -5426,8 +5136,7 @@ subtype=Faerie,Rogue
 color=u
 converted=2
 cost={1}{U}
-power=1
-toughness=1
+pt=1/1
 ability=flying
 timing=main
 
@@ -5454,8 +5163,7 @@ subtype=Elemental
 color=r
 converted=3
 cost={2}{R}
-power=5
-toughness=3
+pt=5/3
 ability=defender,flying
 timing=smain
 
@@ -5468,8 +5176,7 @@ subtype=Kithkin,Knight
 color=w
 converted=4
 cost={3}{W}
-power=2
-toughness=2
+pt=2/2
 static=player
 timing=fmain
 
@@ -5494,8 +5201,7 @@ subtype=Beast
 color=g
 converted=7
 cost={5}{G}{G}
-power=9
-toughness=9
+pt=9/9
 ability=shroud
 timing=fmain
 
@@ -5518,8 +5224,7 @@ subtype=Vampire,Shaman
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=3
+pt=2/3
 ability=flying,deathtouch,lifelink
 timing=main
 
@@ -5532,8 +5237,7 @@ subtype=Vampire,Shaman
 color=b
 converted=4
 cost={2}{B}{B}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=fmain
 
@@ -5546,8 +5250,7 @@ subtype=Dragon
 color=rgw
 converted=6
 cost={3}{R}{G}{W}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=main
 
@@ -5570,8 +5273,7 @@ subtype=Rhino,Monk
 color=gwu
 converted=3
 cost={G}{W}{U}
-power=3
-toughness=4
+pt=3/4
 ability=lifelink
 timing=smain
 
@@ -5632,8 +5334,7 @@ subtype=Angel
 color=rwu
 converted=4
 cost={1}{R}{W}{U}
-power=3
-toughness=4
+pt=3/4
 ability=flying,vigilance,haste
 timing=fmain
 
@@ -5646,8 +5347,7 @@ subtype=Dragon
 color=wbr
 converted=6
 cost={3}{W}{B}{R}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=main
 
@@ -5660,8 +5360,7 @@ subtype=Wall
 color=u
 converted=3
 cost={1}{U}{U}
-power=0
-toughness=7
+pt=0/7
 ability=defender
 timing=smain
 
@@ -5730,8 +5429,7 @@ subtype=Centaur,Warrior
 color=rg
 converted=5
 cost={3}{R}{G}
-power=4
-toughness=4
+pt=4/4
 ability=trample
 timing=fmain
 
@@ -5755,8 +5453,7 @@ subtype=Illusion
 color=u
 converted=6
 cost={4}{U}{U}
-power=1
-toughness=1
+pt=1/1
 ability=flash,flying
 timing=counterflash
 
@@ -5770,8 +5467,7 @@ subtype=Jellyfish
 color=u
 converted=3
 cost={2}{U}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >AEther Adept
@@ -5784,8 +5480,7 @@ subtype=Human,Wizard
 color=u
 converted=3
 cost={1}{U}{U}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Cairn Wanderer
@@ -5797,8 +5492,7 @@ subtype=Shapeshifter
 color=b
 converted=5
 cost={4}{B}
-power=4
-toughness=4
+pt=4/4
 ability=changeling
 timing=main
 
@@ -5811,8 +5505,7 @@ subtype=Human,Soldier
 color=w
 converted=6
 cost={4}{W}{W}
-power=3
-toughness=3
+pt=3/3
 ability=vigilance
 static=player
 timing=smain
@@ -5826,8 +5519,7 @@ subtype=Skeleton,Wall
 color=b
 converted=3
 cost={2}{B}
-power=1
-toughness=4
+pt=1/4
 ability=defender
 timing=smain
 
@@ -5850,8 +5542,7 @@ subtype=Angel
 color=w
 converted=5
 cost={3}{W}{W}
-power=5
-toughness=5
+pt=5/5
 ability=flying,first strike,lifelink,protection from Demons,protection from Dragons
 timing=main
 
@@ -5864,8 +5555,7 @@ subtype=Spider
 color=g
 converted=2
 cost={1}{G}
-power=1
-toughness=2
+pt=1/2
 ability=reach,deathtouch
 timing=smain
 
@@ -5878,8 +5568,7 @@ subtype=Cat
 color=w
 converted=1
 cost={W}
-power=0
-toughness=1
+pt=0/1
 timing=main
 
 >Plated Geopede
@@ -5891,8 +5580,7 @@ subtype=Insect
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=1
+pt=1/1
 ability=first strike
 timing=main
 
@@ -5905,8 +5593,7 @@ subtype=Fish
 color=b
 converted=4
 cost={3}{B}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -5919,8 +5606,7 @@ subtype=Human,Knight
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=first strike,protection from black
 timing=main
 
@@ -5933,8 +5619,7 @@ subtype=Elk
 color=g
 converted=3
 cost={1}{G}{G}
-power=3
-toughness=3
+pt=3/3
 ability=can't be countered,protection from blue,protection from black
 timing=main
 
@@ -5947,8 +5632,7 @@ subtype=Goblin
 color=r
 converted=3
 cost={1}{R}{R}
-power=2
-toughness=2
+pt=2/2
 ability=haste
 static=player
 timing=fmain
@@ -5962,8 +5646,7 @@ subtype=Angel
 color=w
 converted=4
 cost={2}{W}{W}
-power=3
-toughness=4
+pt=3/4
 ability=flying
 timing=fmain
 
@@ -6061,8 +5744,7 @@ subtype=Sphinx
 color=u
 converted=6
 cost={3}{U}{U}{U}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=main
 
@@ -6075,8 +5757,7 @@ subtype=Goblin,Warrior
 color=r
 converted=3
 cost={1}{R}{R}
-power=1
-toughness=3
+pt=1/3
 timing=main
 
 >Stormfront Pegasus
@@ -6088,8 +5769,7 @@ subtype=Pegasus
 color=w
 converted=2
 cost={1}{W}
-power=2
-toughness=1
+pt=2/1
 ability=flying
 timing=main
 
@@ -6102,8 +5782,7 @@ subtype=Snake
 color=g
 converted=2
 cost={1}{G}
-power=2
-toughness=1
+pt=2/1
 ability=islandwalk
 timing=main
 
@@ -6116,8 +5795,7 @@ subtype=Jellyfish
 color=u
 converted=3
 cost={2}{U}
-power=1
-toughness=3
+pt=1/3
 ability=defender,flying
 timing=smain
 
@@ -6130,8 +5808,7 @@ subtype=Human,Knight
 color=wu
 converted=2
 cost={W}{U}
-power=1
-toughness=3
+pt=1/3
 ability=exalted
 timing=fmain
 
@@ -6144,8 +5821,7 @@ subtype=Vampire,Skeleton
 color=b
 converted=6
 cost={4}{B}{B}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=main
 
@@ -6158,8 +5834,7 @@ subtype=Human,Soldier
 color=rw
 converted=2
 cost={R}{W}
-power=2
-toughness=1
+pt=2/1
 timing=smain
 
 >Razorjaw Oni
@@ -6171,8 +5846,7 @@ subtype=Demon,Spirit
 color=b
 converted=4
 cost={3}{B}
-power=4
-toughness=5
+pt=4/5
 static=all
 timing=fmain
 
@@ -6185,8 +5859,7 @@ subtype=Beast
 color=ug
 converted=3
 cost={1}{G}{U}
-power=2
-toughness=3
+pt=2/3
 ability=flying
 timing=main
 
@@ -6199,8 +5872,7 @@ subtype=Goblin,Scout
 color=r
 converted=2
 cost={1}{R}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Qasali Pridemage
@@ -6212,8 +5884,7 @@ subtype=Cat,Wizard
 color=gw
 converted=2
 cost={G}{W}
-power=2
-toughness=2
+pt=2/2
 ability=exalted
 timing=fmain
 
@@ -6493,8 +6164,7 @@ subtype=Giant,Warrior
 color=r
 converted=6
 cost={4}{R}{R}
-power=4
-toughness=5
+pt=4/5
 timing=main
 
 >Angelheart Vial
@@ -6757,8 +6427,7 @@ subtype=Wall
 color=u
 converted=5
 cost={4}{U}
-power=0
-toughness=4
+pt=0/4
 ability=defender
 timing=main
 
@@ -6771,8 +6440,7 @@ subtype=Vedalken,Knight
 color=u
 converted=5
 cost={4}{U}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 timing=smain
 
@@ -6784,8 +6452,7 @@ type=Artifact,Creature
 subtype=Construct
 converted=5
 cost={5}
-power=0
-toughness=1
+pt=0/1
 ability=indestructible
 timing=smain
 
@@ -6798,8 +6465,7 @@ subtype=Specter
 color=b
 converted=4
 cost={2}{B}{B}
-power=2
-toughness=2
+pt=2/2
 ability=flying
 timing=main
 
@@ -6812,8 +6478,7 @@ subtype=Shapeshifter
 color=w
 converted=3
 cost={2}{W}
-power=1
-toughness=1
+pt=1/1
 ability=changeling
 timing=fmain
 
@@ -6857,8 +6522,7 @@ subtype=Faerie,Wizard
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=2
+pt=2/2
 ability=flying,persist
 timing=fmain
 
@@ -6871,8 +6535,7 @@ subtype=Human,Wizard
 color=u
 converted=4
 cost={2}{U}{U}
-power=2
-toughness=2
+pt=2/2
 ability=flash
 timing=counterflash
 
@@ -6989,8 +6652,7 @@ subtype=Beast
 color=g
 converted=4
 cost={2}{G}{G}
-power=4
-toughness=4
+pt=4/4
 timing=fmain
 
 >Serendib Efreet
@@ -7002,8 +6664,7 @@ subtype=Efreet
 color=u
 converted=3
 cost={2}{U}
-power=3
-toughness=4
+pt=3/4
 ability=flying
 timing=main
 
@@ -7016,8 +6677,7 @@ subtype=Elemental
 color=r
 converted=4
 cost={3}{R}
-power=2
-toughness=2
+pt=2/2
 timing=smain
 
 >Godhead of Awe
@@ -7030,8 +6690,7 @@ subtype=Spirit,Avatar
 color=wu
 converted=5
 cost={W/U}{W/U}{W/U}{W/U}{W/U}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 static=all
 timing=smain
@@ -7045,8 +6704,7 @@ subtype=Elemental
 color=rg
 converted=4
 cost={1}{R}{G}{G}
-power=5
-toughness=5
+pt=5/5
 timing=main
 
 >Ronin Warclub
@@ -7557,8 +7215,7 @@ type=Artifact,Creature
 subtype=Wurm
 converted=6
 cost={6}
-power=6
-toughness=6
+pt=6/6
 ability=deathtouch,lifelink
 timing=main
 
@@ -7625,8 +7282,7 @@ type=Artifact,Creature
 subtype=Angel
 converted=7
 cost={7}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 timing=fmain
 
@@ -7703,8 +7359,7 @@ subtype=Kor,Soldier
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Ruthless Cullblade
@@ -7716,8 +7371,7 @@ subtype=Vampire,Warrior
 color=b
 converted=2
 cost={1}{B}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Dragonmaster Outcast
@@ -7729,8 +7383,7 @@ subtype=Human,Shaman
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=smain
 
 >Novablast Wurm
@@ -7742,8 +7395,7 @@ subtype=Wurm
 color=gw
 converted=7
 cost={3}{G}{G}{W}{W}
-power=7
-toughness=7
+pt=7/7
 timing=smain
 
 >Bestial Menace
@@ -7784,8 +7436,7 @@ subtype=Wurm
 color=rg
 converted=5
 cost={3}{R}{G}
-power=7
-toughness=7
+pt=7/7
 ability=trample
 timing=main
 
@@ -7798,8 +7449,7 @@ subtype=Vedalken,Scout
 color=wu
 converted=2
 cost={W}{U}
-power=2
-toughness=2
+pt=2/2
 ability=protection from red
 timing=smain
 
@@ -7812,8 +7462,7 @@ subtype=Dragon
 color=gbw
 converted=6
 cost={3}{G}{B}{W}
-power=6
-toughness=6
+pt=6/6
 ability=flying
 timing=main
 
@@ -7838,8 +7487,7 @@ subtype=Sphinx
 color=u
 converted=7
 cost={5}{U}{U}
-power=8
-toughness=7
+pt=8/7
 ability=flying
 timing=main
 
@@ -7852,8 +7500,7 @@ subtype=Dragon
 color=r
 converted=6
 cost={3}{R}{R}{R}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -7866,8 +7513,7 @@ subtype=Vampire,Warrior
 color=b
 converted=7
 cost={5}{B}{B}
-power=5
-toughness=4
+pt=5/4
 ability=flying
 timing=main
 
@@ -7880,8 +7526,7 @@ subtype=Human,Soldier
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Kazuul, Tyrant of the Cliffs
@@ -7893,8 +7538,7 @@ subtype=Ogre,Warrior
 color=r
 converted=5
 cost={3}{R}{R}
-power=5
-toughness=4
+pt=5/4
 timing=main
 
 >Kitesail
@@ -7919,8 +7563,7 @@ subtype=Elemental
 color=r
 converted=3
 cost={2}{R}
-power=1
-toughness=3
+pt=1/3
 timing=fmain
 ability=flying
 
@@ -7964,8 +7607,7 @@ subtype=Archon
 color=w
 converted=5
 cost={3}{W}{W}
-power=3
-toughness=4
+pt=3/4
 ability=flying
 timing=smain
 
@@ -7978,8 +7620,7 @@ subtype=Elemental
 color=u
 converted=5
 cost={4}{U}
-power=4
-toughness=3
+pt=4/3
 ability=flying
 timing=main
 
@@ -7992,8 +7633,7 @@ subtype=Kraken
 color=ub
 converted=6
 cost={3}{U}{U}{B}
-power=5
-toughness=8
+pt=5/8
 ability=islandwalk,swampwalk
 timing=smain
 
@@ -8019,8 +7659,7 @@ subtype=Angel
 color=b
 converted=5
 cost={3}{B}{B}
-power=3
-toughness=3
+pt=3/3
 ability=flying
 timing=main
 
@@ -8054,8 +7693,7 @@ subtype=Drake
 color=u
 converted=4
 cost={2}{U}{U}
-power=2
-toughness=4
+pt=2/4
 ability=flying
 timing=main
 
@@ -8068,8 +7706,7 @@ subtype=Kavu
 color=g
 converted=2
 cost={1}{G}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Burst Lightning
@@ -8113,8 +7750,7 @@ subtype=Angel
 color=w
 converted=4
 cost={3}{W}
-power=2
-toughness=4
+pt=2/4
 ability=flying
 timing=main
 
@@ -8127,8 +7763,7 @@ subtype=Elemental
 color=g
 converted=4
 cost={2}{G}{G}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Sphinx of Lost Truths
@@ -8140,8 +7775,7 @@ subtype=Sphinx
 color=u
 converted=5
 cost={3}{U}{U}
-power=3
-toughness=5
+pt=3/5
 ability=flying
 timing=main
 
@@ -8154,8 +7788,7 @@ subtype=Elemental
 color=r
 converted=5
 cost={3}{R}{R}
-power=4
-toughness=3
+pt=4/3
 timing=main
 
 >Strider Harness
@@ -8322,8 +7955,7 @@ subtype=Specter
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=1
+pt=2/1
 ability=flying
 timing=fmain
 
@@ -8336,8 +7968,7 @@ subtype=Troll
 color=gw
 converted=4
 cost={2}{G}{W}
-power=3
-toughness=3
+pt=3/3
 ability=vigilance
 timing=main
 
@@ -8349,8 +7980,7 @@ type=Artifact,Creature
 subtype=Gnome
 converted=3
 cost={3}
-power=1
-toughness=3
+pt=1/3
 timing=main
 
 >Esper Battlemage
@@ -8362,8 +7992,7 @@ subtype=Human,Wizard
 color=u
 converted=3
 cost={2}{U}
-power=2
-toughness=2
+pt=2/2
 timing=smain
 
 >Tuktuk the Explorer
@@ -8375,8 +8004,7 @@ subtype=Goblin
 color=r
 converted=3
 cost={2}{R}
-power=1
-toughness=1
+pt=1/1
 ability=haste
 timing=fmain
 
@@ -8525,8 +8153,7 @@ subtype=Human,Knight
 color=w
 converted=1
 cost={W}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Szadek, Lord of Secrets
@@ -8538,8 +8165,7 @@ subtype=Vampire
 color=ub
 converted=7
 cost={3}{U}{U}{B}{B}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=smain
 
@@ -8601,8 +8227,7 @@ subtype=Spirit
 color=wb
 converted=4
 cost={W}{W}{B}{B}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Mirran Crusader
@@ -8614,8 +8239,7 @@ subtype=Human,Knight
 color=w
 converted=3
 cost={1}{W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=double strike,protection from black,protection from green
 timing=main
 
@@ -8628,8 +8252,7 @@ subtype=Beast
 color=rgw
 converted=3
 cost={R}{G}{W}
-power=5
-toughness=4
+pt=5/4
 timing=main
 
 >Goblin Gaveleer
@@ -8641,8 +8264,7 @@ subtype=Goblin,Warrior
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 ability=trample
 timing=main
 
@@ -8655,8 +8277,7 @@ subtype=Vedalken,Wizard
 color=wbu
 converted=2
 cost={W/B}{U}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Grixis Grimblade
@@ -8668,8 +8289,7 @@ subtype=Zombie,Warrior
 color=urb
 converted=2
 cost={U/R}{B}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Bant Sureblade
@@ -8681,8 +8301,7 @@ subtype=Human,Soldier
 color=guw
 converted=2
 cost={G/U}{W}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Last Gasp
@@ -8740,8 +8359,7 @@ subtype=Ooze
 color=g
 converted=5
 cost={3}{G}{G}
-power=2
-toughness=2
+pt=2/2
 ability=deathtouch
 timing=fmain
 
@@ -8765,8 +8383,7 @@ subtype=Archon
 color=w
 converted=5
 cost={3}{W}{W}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 timing=main
 
@@ -8779,8 +8396,7 @@ subtype=Goblin
 color=r
 converted=2
 cost={R}{R}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Fume Spitter
@@ -8792,8 +8408,7 @@ subtype=Horror
 color=b
 converted=1
 cost={B}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Goblin Ruinblaster
@@ -8805,8 +8420,7 @@ subtype=Goblin,Shaman
 color=r
 converted=3
 cost={2}{R}
-power=2
-toughness=1
+pt=2/1
 ability=haste
 timing=fmain
 
@@ -8819,8 +8433,7 @@ subtype=Fungus
 color=gw
 converted=4
 cost={1}{G}{G}{W}
-power=5
-toughness=4
+pt=5/4
 timing=main
 
 >Nemesis of Reason
@@ -8832,8 +8445,7 @@ subtype=Leviathan,Horror
 color=ub
 converted=5
 cost={3}{U}{B}
-power=3
-toughness=7
+pt=3/7
 timing=smain
 
 >Nulltread Gargantuan
@@ -8845,8 +8457,7 @@ subtype=Beast
 color=gu
 converted=3
 cost={1}{G}{U}
-power=5
-toughness=6
+pt=5/6
 timing=smain
 
 >Pierce Strider
@@ -8857,8 +8468,7 @@ type=Artifact,Creature
 subtype=Construct
 converted=4
 cost={4}
-power=3
-toughness=3
+pt=3/3
 timing=fmain
 
 >Pongify
@@ -8932,8 +8542,7 @@ subtype=Vampire,Shaman
 color=b
 converted=2
 cost={B}{B}
-power=2
-toughness=1
+pt=2/1
 ability=first strike
 timing=fmain
 
@@ -8946,8 +8555,7 @@ subtype=Giant
 color=b
 converted=6
 cost={4}{B}{B}
-power=6
-toughness=6
+pt=6/6
 ability=deathtouch
 timing=fmain
 
@@ -8960,8 +8568,7 @@ subtype=Minotaur,Shaman
 color=r
 converted=4
 cost={3}{R}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Nirkana Cutthroat
@@ -8973,8 +8580,7 @@ subtype=Vampire,Warrior
 color=b
 converted=3
 cost={2}{B}
-power=3
-toughness=2
+pt=3/2
 timing=main
 
 >Kitchen Finks
@@ -8986,8 +8592,7 @@ subtype=Ouphe
 color=gw
 converted=3
 cost={1}{G/W}{G/W}
-power=3
-toughness=2
+pt=3/2
 ability=persist
 timing=main
 
@@ -9051,8 +8656,7 @@ subtype=Goblin,Shaman
 color=r
 converted=5
 cost={2}{R}{R}{R}
-power=2
-toughness=2
+pt=2/2
 ability=haste
 timing=fmain
 
@@ -9085,8 +8689,7 @@ subtype=Human,Wizard
 color=u
 converted=3
 cost={1}{U}{U}
-power=2
-toughness=3
+pt=2/3
 timing=smain
 
 >Ghostway
@@ -9172,8 +8775,7 @@ subtype=Elemental
 color=rw
 converted=4
 cost={2}{R/W}{R/W}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Wrecking Ball
@@ -9208,8 +8810,7 @@ subtype=Angel
 color=w
 converted=6
 cost={4}{W}{W}
-power=4
-toughness=5
+pt=4/5
 ability=flying
 timing=fmain
 
@@ -9222,8 +8823,7 @@ subtype=Dragon
 color=r
 converted=6
 cost={3}{R}{R}{R}
-power=4
-toughness=4
+pt=4/4
 ability=flying,haste
 timing=fmain
 
@@ -9283,8 +8883,7 @@ subtype=Kor,Monk
 color=w
 converted=2
 cost={1}{W}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Followed Footsteps
@@ -9307,8 +8906,7 @@ subtype=Wurm
 color=g
 converted=5
 cost={3}{G}{G}
-power=4
-toughness=4
+pt=4/4
 ability=intimidate
 static=player
 timing=fmain
@@ -9322,8 +8920,7 @@ subtype=Human,Knight
 color=w
 converted=4
 cost={2}{W}{W}
-power=3
-toughness=4
+pt=3/4
 ability=battle cry
 timing=fmain
 
@@ -9358,8 +8955,7 @@ subtype=Human,Knight
 color=w
 converted=2
 cost={1}{W}
-power=3
-toughness=1
+pt=3/1
 ability=battle cry
 timing=main
 
@@ -9372,8 +8968,7 @@ subtype=Vampire,Rogue
 color=b
 converted=1
 cost={B}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Flayer Husk
@@ -9398,8 +8993,7 @@ subtype=Beast
 color=rw
 converted=6
 cost={4}{R}{W}
-power=5
-toughness=5
+pt=5/5
 ability=vigilance,haste
 timing=fmain
 
@@ -9411,8 +9005,7 @@ type=Artifact,Creature
 subtype=Construct
 converted=0
 cost={0}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Drudge Reavers
@@ -9424,8 +9017,7 @@ subtype=Skeleton
 color=b
 converted=4
 cost={3}{B}
-power=2
-toughness=1
+pt=2/1
 ability=flash
 timing=flash
 
@@ -9459,8 +9051,7 @@ subtype=Goblin,Warrior
 color=r
 converted=2
 cost={R}{R}
-power=2
-toughness=2
+pt=2/2
 ability=battle cry
 timing=main
 
@@ -9473,8 +9064,7 @@ subtype=Angel
 color=w
 converted=6
 cost={3}{W}{W}{W}
-power=4
-toughness=4
+pt=4/4
 ability=flying
 timing=main
 
@@ -9499,8 +9089,7 @@ subtype=Wurm
 color=b
 converted=6
 cost={3}{B}{B}{B}
-power=6
-toughness=5
+pt=6/5
 timing=fmain
 
 >Thrun, the Last Troll
@@ -9512,8 +9101,7 @@ subtype=Troll,Shaman
 color=g
 converted=4
 cost={2}{G}{G}
-power=4
-toughness=4
+pt=4/4
 ability=can't be countered,hexproof
 timing=fmain
 
@@ -9594,8 +9182,7 @@ subtype=Human,Wizard
 color=u
 converted=3
 cost={1}{U}{U}
-power=2
-toughness=1
+pt=2/1
 ability=unblockable
 timing=fmain
 
@@ -9608,8 +9195,7 @@ subtype=Vedalken,Wizard
 color=u
 converted=2
 cost={U}{U}
-power=1
-toughness=2
+pt=1/2
 timing=main
 
 >Gelectrode
@@ -9621,8 +9207,7 @@ subtype=Weird
 color=ur
 converted=3
 cost={1}{U}{R}
-power=0
-toughness=1
+pt=0/1
 timing=smain
 
 >Recoil
@@ -9654,8 +9239,7 @@ subtype=Elf,Archer
 color=g
 converted=1
 cost={G}
-power=1
-toughness=2
+pt=1/2
 ability=reach
 timing=smain
 
@@ -9688,8 +9272,7 @@ subtype=Rat
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=2
+pt=2/2
 ability=infect
 timing=main
 
@@ -9702,8 +9285,7 @@ subtype=Zombie,Knight
 color=b
 converted=3
 cost={1}{B}{B}
-power=2
-toughness=2
+pt=2/2
 ability=first strike,protection from red,protection from white,infect
 timing=main
 
@@ -9716,8 +9298,7 @@ subtype=Horror
 color=b
 converted=4
 cost={2}{B}{B}
-power=4
-toughness=5
+pt=4/5
 ability=infect
 timing=main
 
@@ -9730,8 +9311,7 @@ subtype=Insect,Horror
 color=b
 converted=2
 cost={1}{B}
-power=1
-toughness=1
+pt=1/1
 ability=flying,infect
 timing=main
 
@@ -9744,8 +9324,7 @@ subtype=Dragon,Skeleton
 color=b
 converted=5
 cost={3}{B}{B}
-power=4
-toughness=4
+pt=4/4
 ability=flying,infect
 timing=fmain
 
@@ -9757,8 +9336,7 @@ type=Artifact,Creature
 subtype=Juggernaut
 converted=6
 cost={6}
-power=5
-toughness=5
+pt=5/5
 ability=infect,attacks each turn if able
 timing=main
 
@@ -9795,8 +9373,7 @@ subtype=Cleric
 color=w
 converted=2
 cost={1}{W}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Elesh Norn, Grand Cenobite
@@ -9808,8 +9385,7 @@ subtype=Praetor
 color=w
 converted=7
 cost={5}{W}{W}
-power=4
-toughness=7
+pt=4/7
 ability=vigilance
 static=all
 timing=fmain
@@ -9872,8 +9448,7 @@ subtype=Beast
 color=g
 converted=2
 cost={G}{G}
-power=3
-toughness=2
+pt=3/2
 timing=main
 
 >Serra Angel
@@ -9886,8 +9461,7 @@ subtype=Angel
 color=w
 converted=5
 cost={3}{W}{W}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Welkin Tern
@@ -9900,8 +9474,7 @@ subtype=Bird
 color=u
 converted=2
 cost={1}{U}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Vindicate
@@ -9924,8 +9497,7 @@ subtype=Human,Knight
 color=gw
 converted=5
 cost={3}{G}{W}
-power=2
-toughness=4
+pt=2/4
 timing=fmain
 
 >Dragon Fodder
@@ -9957,8 +9529,7 @@ subtype=Human,Knight
 color=w
 converted=3
 cost={1}{W}{W}
-power=2
-toughness=2
+pt=2/2
 ability=first strike
 static=player
 timing=fmain
@@ -9972,8 +9543,7 @@ subtype=Elemental
 color=g
 converted=6
 cost={3}{G}{G}{G}
-power=8
-toughness=5
+pt=8/5
 ability=trample
 timing=main
 
@@ -9986,8 +9556,7 @@ subtype=Gorgon
 color=b
 converted=6
 cost={3}{B}{B}{B}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -10000,8 +9569,7 @@ subtype=Demon
 color=b
 converted=7
 cost={5}{B}{B}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -10014,8 +9582,7 @@ subtype=Dragon
 color=r
 converted=7
 cost={5}{R}{R}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -10027,8 +9594,7 @@ type=Artifact,Creature
 subtype=Myr
 converted=2
 cost={2}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Arcanis the Omnipotent
@@ -10040,8 +9606,7 @@ subtype=Wizard
 color=u
 converted=6
 cost={3}{U}{U}{U}
-power=3
-toughness=4
+pt=3/4
 timing=smain
 
 >Overrun
@@ -10074,8 +9639,7 @@ subtype=Goblin
 color=r
 converted=2
 cost={1}{R}
-power=1
-toughness=2
+pt=1/2
 ability=protection from blue
 timing=main
 
@@ -10088,8 +9652,7 @@ subtype=Human,Soldier
 color=w
 converted=1
 cost={W}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Elvish Warrior
@@ -10101,8 +9664,7 @@ subtype=Elf,Warrior
 color=g
 converted=2
 cost={G}{G}
-power=2
-toughness=3
+pt=2/3
 timing=main
 
 >Scuzzback Scrapper
@@ -10115,8 +9677,7 @@ subtype=Goblin,Warrior
 color=rg
 converted=1
 cost={R/G}
-power=1
-toughness=1
+pt=1/1
 timing=main
 
 >Smoldering Butcher
@@ -10129,8 +9690,7 @@ subtype=Elemental,Warrior
 color=b
 converted=4
 cost={3}{B}
-power=4
-toughness=2
+pt=4/2
 timing=main
 
 >Wasp Lancer
@@ -10143,8 +9703,7 @@ subtype=Faerie,Soldier
 color=bu
 converted=3
 cost={U/B}{U/B}{U/B}
-power=3
-toughness=2
+pt=3/2
 timing=main
 
 >Hearthfire Hobgoblin
@@ -10157,8 +9716,7 @@ subtype=Goblin,Soldier
 color=rw
 converted=3
 cost={R/W}{R/W}{R/W}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Phyrexian Rager
@@ -10170,8 +9728,7 @@ subtype=Horror
 color=b
 converted=3
 cost={2}{B}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Plague Myr
@@ -10182,8 +9739,7 @@ type=Artifact,Creature
 subtype=Myr
 converted=2
 cost={2}
-power=1
-toughness=1
+pt=1/1
 ability=infect
 timing=smain
 mana_or_combat
@@ -10197,8 +9753,7 @@ subtype=Dragon
 color=r
 converted=6
 cost={4}{R}{R}
-power=5
-toughness=5
+pt=5/5
 ability=flying
 timing=main
 
@@ -10212,8 +9767,7 @@ subtype=Human,Warrior
 color=r
 converted=3
 cost={1}{R}{R}
-power=3
-toughness=2
+pt=3/2
 timing=main
 
 >Silver Knight
@@ -10226,8 +9780,7 @@ subtype=Human,Knight
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Air Elemental
@@ -10240,8 +9793,7 @@ subtype=Elemental
 color=u
 converted=5
 cost={3}{U}{U}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Sentinels of Glen Elendra
@@ -10254,8 +9806,7 @@ subtype=Faerie,Soldier
 color=u
 converted=4
 cost={3}{U}
-power=2
-toughness=3
+pt=2/3
 timing=main
 
 >Mahamoti Djinn
@@ -10268,8 +9819,7 @@ subtype=Djinn
 color=u
 converted=6
 cost={4}{U}{U}
-power=5
-toughness=6
+pt=5/6
 timing=main
 
 >Sewn-Eye Drake
@@ -10282,8 +9832,7 @@ subtype=Zombie,Drake
 color=rbu
 converted=4
 cost={2}{B}{U/R}
-power=3
-toughness=1
+pt=3/1
 timing=fmain
 
 >Wildslayer Elves
@@ -10296,8 +9845,7 @@ subtype=Elf,Warrior
 color=g
 converted=4
 cost={3}{G}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Oversoul of Dusk
@@ -10309,8 +9857,7 @@ subtype=Spirit,Avatar
 color=gw
 converted=5
 cost={G/W}{G/W}{G/W}{G/W}{G/W}
-power=5
-toughness=5
+pt=5/5
 ability=protection from blue,protection from black,protection from red
 timing=fmain
 
@@ -10323,8 +9870,7 @@ subtype=Human,Rogue
 color=r
 converted=3
 cost={1}{R}{R}
-power=2
-toughness=3
+pt=2/3
 ability=forestwalk
 timing=main
 
@@ -10338,8 +9884,7 @@ subtype=Zombie,Scout
 color=bu
 converted=2
 cost={U}{B}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Tower Gargoyle
@@ -10352,8 +9897,7 @@ subtype=Gargoyle
 color=buw
 converted=4
 cost={1}{W}{U}{B}
-power=4
-toughness=4
+pt=4/4
 timing=main
 
 >Skyknight Legionnaire
@@ -10366,8 +9910,7 @@ subtype=Human,Knight
 color=rw
 converted=3
 cost={1}{R}{W}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Shepherd of the Lost
@@ -10380,8 +9923,7 @@ subtype=Angel
 color=w
 converted=5
 cost={4}{W}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Inkwell Leviathan
@@ -10394,8 +9936,7 @@ subtype=Leviathan
 color=u
 converted=9
 cost={7}{U}{U}
-power=7
-toughness=11
+pt=7/11
 timing=fmain
 
 >Darksteel Sentinel
@@ -10407,8 +9948,7 @@ type=Artifact,Creature
 subtype=Golem
 converted=6
 cost={6}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Rusted Sentinel
@@ -10419,8 +9959,7 @@ type=Artifact,Creature
 subtype=Golem
 converted=4
 cost={4}
-power=3
-toughness=4
+pt=3/4
 timing=main
 
 >Thran Golem
@@ -10431,8 +9970,7 @@ type=Artifact,Creature
 subtype=Golem
 converted=5
 cost={5}
-power=3
-toughness=3
+pt=3/3
 timing=main
 
 >Deft Duelist
@@ -10445,8 +9983,7 @@ subtype=Human,Rogue
 color=uw
 converted=2
 cost={W}{U}
-power=2
-toughness=1
+pt=2/1
 timing=fmain
 
 >Goblin Outlander
@@ -10459,8 +9996,7 @@ subtype=Goblin,Scout
 color=rb
 converted=2
 cost={B}{R}
-power=2
-toughness=2
+pt=2/2
 timing=main
 
 >Ornithopter
@@ -10472,8 +10008,7 @@ type=Artifact,Creature
 subtype=Thopter
 converted=0
 cost={0}
-power=0
-toughness=2
+pt=0/2
 timing=main
 
 >Raging Goblin
@@ -10486,8 +10021,7 @@ subtype=Goblin,Berserker
 color=r
 converted=1
 cost={R}
-power=1
-toughness=1
+pt=1/1
 timing=fmain
 
 >Giant Scorpion
@@ -10500,8 +10034,7 @@ subtype=Scorpion
 color=b
 converted=3
 cost={2}{B}
-power=1
-toughness=3
+pt=1/3
 timing=main
 
 >Indomitable Ancients
@@ -10513,8 +10046,7 @@ subtype=Treefolk,Warrior
 color=w
 converted=4
 cost={2}{W}{W}
-power=2
-toughness=10
+pt=2/10
 timing=main
 
 >Alloy Myr
@@ -10525,8 +10057,7 @@ type=Artifact,Creature
 subtype=Myr
 converted=3
 cost={3}
-power=2
-toughness=2
+pt=2/2
 timing=main
 mana_or_combat
 
@@ -10564,8 +10095,7 @@ subtype=Troll
 color=g
 converted=4
 cost={2}{G}{G}
-power=4
-toughness=3
+pt=4/3
 timing=main
 
 >Hovermyr
@@ -10577,8 +10107,7 @@ type=Artifact,Creature
 subtype=Myr
 converted=2
 cost={2}
-power=1
-toughness=2
+pt=1/2
 timing=main
 
 >Sword of War and Peace
@@ -10638,8 +10167,7 @@ subtype=Praetor
 color=r
 converted=5
 cost={3}{R}{R}
-power=4
-toughness=4
+pt=4/4
 timing=fmain
 
 >Deathrender
@@ -10663,8 +10191,7 @@ subtype=Praetor
 color=b
 converted=7
 cost={5}{B}{B}
-power=6
-toughness=6
+pt=6/6
 ability=swampwalk
 timing=smain
 
@@ -10686,8 +10213,7 @@ subtype=Elf,Rogue
 color=rwg
 converted=2
 cost={R/W}{G}
-power=2
-toughness=1
+pt=2/1
 timing=main
 
 >Tectonic Edge
@@ -10801,8 +10327,7 @@ type=Artifact,Creature
 subtype=Pest
 converted=1
 cost={1}
-power=0
-toughness=1
+pt=0/1
 ability=battle cry,can't be blocked except by creatures with flying or reach
 timing=smain
 
@@ -10836,8 +10361,7 @@ subtype=Kor,Soldier
 color=w
 converted=2
 cost={W}{W}
-power=2
-toughness=2
+pt=2/2
 timing=fmain
 
 >Nature's Claim
@@ -10868,8 +10392,7 @@ subtype=Giant
 color=w
 converted=6
 cost={4}{W}{W}
-power=6
-toughness=6
+pt=6/6
 ability=vigilance
 timing=fmain
 
@@ -10882,8 +10405,7 @@ subtype=Giant
 color=u
 converted=6
 cost={4}{U}{U}
-power=6
-toughness=6
+pt=6/6
 timing=fmain
 
 >Darksteel Axe
