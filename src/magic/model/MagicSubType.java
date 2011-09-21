@@ -63,4 +63,12 @@ public enum MagicSubType {
 		}
         throw new RuntimeException("Unknown subtype " + name);
 	}
+    
+    public static EnumSet<MagicSubType> getSubTypes(final String[] subTypeNames) {
+		final EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
+		for (final String subTypeName : subTypeNames) {
+            givenSubTypeFlags.add(getSubType(subTypeName));
+		}
+        return givenSubTypeFlags;
+	}
 }
