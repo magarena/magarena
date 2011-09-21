@@ -44,7 +44,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		
 		// Equipment
 		if (permanent.getEquippedCreature().isValid()) {
-			permanent.getEquippedCreature().removeEquipment(permanent,game);
+			permanent.getEquippedCreature().removeEquipment(permanent);
 		}
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
 			equipment.setEquippedCreature(MagicPermanent.NONE);
@@ -52,7 +52,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 
 		// Aura
 		if (permanent.getEnchantedCreature().isValid()) {
-			permanent.getEnchantedCreature().removeAura(permanent,game);
+			permanent.getEnchantedCreature().removeAura(permanent);
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
 			aura.setEnchantedCreature(MagicPermanent.NONE);
@@ -65,12 +65,10 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		setScore(controller,permanent.getStaticScore(game)-score);
 	
         // Trigger
-		removedTriggers=new ArrayList<MagicPermanentTrigger>();
-		game.removeTriggers(permanent,removedTriggers);
+		removedTriggers = game.removeTriggers(permanent);
 		
         // Static
-        removedStatics=new ArrayList<MagicPermanentStatic>();
-		game.removeStatics(permanent,removedStatics);
+        removedStatics = game.removeStatics(permanent);
 		
 		game.doAction(new MagicMoveCardAction(permanent,toLocation));
 		game.setStateCheckRequired();
@@ -87,7 +85,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		
 		// Equipment
 		if (permanent.getEquippedCreature().isValid()) {
-			permanent.getEquippedCreature().addEquipment(permanent,game);
+			permanent.getEquippedCreature().addEquipment(permanent);
 		}
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
 			equipment.setEquippedCreature(permanent);
@@ -95,7 +93,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		
 		// Aura
 		if (permanent.getEnchantedCreature().isValid()) {
-			permanent.getEnchantedCreature().addAura(permanent,game);
+			permanent.getEnchantedCreature().addAura(permanent);
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
 			aura.setEnchantedCreature(permanent);
