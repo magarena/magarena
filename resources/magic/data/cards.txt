@@ -1183,6 +1183,19 @@ subtype=Treefolk
 color=g
 converted=3
 cost={2}{G}
+ability=hexproof
+timing=smain
+
+>Nightmare
+image=http://magiccards.info/scans/en/m10/107.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Nightmare
+color=b
+converted=6
+cost={5}{B}
+ability=flying
 timing=smain
 
 >Earth Servant
