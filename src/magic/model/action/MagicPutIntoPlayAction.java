@@ -31,8 +31,8 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 			permanent.setEnchantedCreature(enchantedPermanent);			
 		}
 
-        game.addTrigger(permanent);
-        game.addStatic(permanent);
+        game.addTriggers(permanent);
+        game.addCardStatics(permanent);
 	
         //execute come into play triggers
 		for (final MagicTrigger trigger : permanent.getCardDefinition().getComeIntoPlayTriggers()) {
@@ -56,7 +56,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		}
 		permanent.getController().removePermanent(permanent);
 		game.removeTriggers(permanent);
-		game.removeStatics(permanent);
+		game.removeCardStatics(permanent);
 	}
 	
 	void setEnchantedPermanent(final MagicPermanent aEnchantedPermanent) {
