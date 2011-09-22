@@ -48,8 +48,24 @@ public class CardTableModel implements TableModel {
 		listeners.remove(l);
 	}
 	
-	public static final String[] COLUMN_NAMES = new String[] {"#", "Name", "CC", "Type", "Subtype", "Rarity", "Text"};
-	public static final int[] COLUMN_MIN_WIDTHS = new int[] {40, 180, 140, 140, 140, 90, 2000};
+	public static final String[] COLUMN_NAMES = new String[] {	"#", // 0
+																"Name", // 1
+																"CC", // 2
+																"P", // 3
+																"T", // 4
+																"Type", // 5
+																"Subtype", // 6
+																"Rarity", // 7
+																"Text"}; // 8
+	public static final int[] COLUMN_MIN_WIDTHS = new int[] {	40, // 0 #
+																180, // 1 name
+																140, // 2 cc
+																30, // 3 P
+																30, // 4 T
+																140, // 5 type
+																140, // 6 subtype 
+																90, // 7 rarity
+																2000}; // 8 text
 	public static final int COST_COLUMN_INDEX = 2;
 	
 	private final boolean isDeck;
@@ -106,9 +122,13 @@ public class CardTableModel implements TableModel {
 						break;
 			case 2:		comp = (isDesc[column]) ? MagicDeckCardDefinition.CONVERTED_COMPARATOR_ASC : MagicDeckCardDefinition.CONVERTED_COMPARATOR_DESC;
 						break;
-			case 3:		comp = (isDesc[column]) ? MagicDeckCardDefinition.TYPE_COMPARATOR_ASC : MagicDeckCardDefinition.TYPE_COMPARATOR_DESC;
+			case 3:		comp = (isDesc[column]) ? MagicDeckCardDefinition.POWER_COMPARATOR_ASC : MagicDeckCardDefinition.POWER_COMPARATOR_DESC;
 						break;
-			case 5:		comp = (isDesc[column]) ? MagicDeckCardDefinition.RARITY_COMPARATOR_ASC : MagicDeckCardDefinition.RARITY_COMPARATOR_DESC;
+			case 4:		comp = (isDesc[column]) ? MagicDeckCardDefinition.TOUGHNESS_COMPARATOR_ASC : MagicDeckCardDefinition.TOUGHNESS_COMPARATOR_DESC;
+						break;
+			case 5:		comp = (isDesc[column]) ? MagicDeckCardDefinition.TYPE_COMPARATOR_ASC : MagicDeckCardDefinition.TYPE_COMPARATOR_DESC;
+						break;
+			case 7:		comp = (isDesc[column]) ? MagicDeckCardDefinition.RARITY_COMPARATOR_ASC : MagicDeckCardDefinition.RARITY_COMPARATOR_DESC;
 						break;
 		}
 		
@@ -204,9 +224,19 @@ public class CardTableModel implements TableModel {
 						}
 			case 1:		return card.getFullName();
 			case 2:		return card.getCost();
-			case 3:		return card.getLongTypeString();
-			case 4:		return card.getSubTypeString();
-			case 5:		return card.getRarityString();
+			case 3:		if(card.isCreature()) {
+							return card.getCardPower();
+						} else {
+							return "";
+						}
+			case 4:		if(card.isCreature()) {
+							return card.getCardToughness();
+						} else {
+							return "";
+						}
+			case 5:		return card.getLongTypeString();
+			case 6:		return card.getSubTypeString();
+			case 7:		return card.getRarityString();
 		}
 		
 		return "";

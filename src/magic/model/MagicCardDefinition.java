@@ -795,4 +795,42 @@ public class MagicCardDefinition {
 			return RARITY_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
 		}
 	};
+
+	public static final Comparator<MagicCardDefinition> POWER_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			if(!cardDefinition1.isCreature()) {
+				return 1;
+			} else if (!cardDefinition2.isCreature()) {
+				return -1;
+			}
+			return cardDefinition1.getCardPower() - cardDefinition2.getCardPower();
+		}
+	};
+
+	public static final Comparator<MagicCardDefinition> POWER_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			return POWER_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+		}
+	};
+
+	public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			if(!cardDefinition1.isCreature()) {
+				return 1;
+			} else if (!cardDefinition2.isCreature()) {
+				return -1;
+			}
+			return cardDefinition1.getCardToughness() - cardDefinition2.getCardToughness();
+		}
+	};
+
+	public static final Comparator<MagicCardDefinition> TOUGHNESS_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
+		@Override
+		public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+			return TOUGHNESS_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+		}
+	};
 }

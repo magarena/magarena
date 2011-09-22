@@ -58,6 +58,7 @@ public class CardTable extends JPanel implements ListSelectionListener {
 		TableColumnModel model = table.getColumnModel();
 		for (int i = 0; i < model.getColumnCount(); i++) {
 			model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
+			model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
 		}
 		
 		// special renderer for mana symbols
