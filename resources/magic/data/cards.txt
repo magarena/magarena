@@ -1,3 +1,15 @@
+>Skyshroud Ranger
+image=http://magiccards.info/scans/en/10e/297.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+
 >Skyhunter Patrol
 image=http://magiccards.info/scans/en/10e/41.jpg
 value=3
