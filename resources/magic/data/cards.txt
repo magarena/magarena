@@ -1,3 +1,26 @@
+>Scion of the Wild
+image=http://magiccards.info/scans/en/10e/295.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Avatar
+color=g
+converted=3
+cost={1}{G}{G}
+timing=smain
+
+>Samite Healer
+image=http://magiccards.info/scans/en/10e/38.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=main
+
 >Rock Badger
 image=http://magiccards.info/scans/en/10e/226.jpg
 value=3
