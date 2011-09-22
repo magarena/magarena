@@ -1051,10 +1051,14 @@ public class MagicGame {
 	
     // ***** STATICS *****
 	
-    public void addStatic(final MagicPermanent permanent) {
+    public void addCardStatics(final MagicPermanent permanent) {
         for (final MagicStatic mstatic : permanent.getCardDefinition().getStatics()) {
             addStatic(permanent, mstatic);
         }
+	}
+    
+    public Collection<MagicPermanentStatic> removeCardStatics(final MagicPermanent permanent) {
+        return statics.remove(permanent, permanent.getCardDefinition().getStatics());
 	}
     
     public void addStatic(final MagicPermanent permanent, final MagicStatic mstatic) {
@@ -1079,7 +1083,7 @@ public class MagicGame {
         return statics.removeTurn();
 	}
 	
-    public Collection<MagicPermanentStatic> removeStatics(final MagicPermanent permanent) {
+    public Collection<MagicPermanentStatic> removeAllStatics(final MagicPermanent permanent) {
         return statics.remove(permanent);
 	}
     
@@ -1095,7 +1099,7 @@ public class MagicGame {
 		this.immediate=immediate;
 	}
 	
-	public void addTrigger(final MagicPermanent permanent) {
+	public void addTriggers(final MagicPermanent permanent) {
         for (final MagicTrigger trigger : permanent.getCardDefinition().getTriggers()) {
             addTrigger(permanent, trigger);
         }
