@@ -3811,3 +3811,13 @@ color=w
 converted=4
 cost={3}{W}
 timing=enchantment
+
+>Karn's Touch
+image=http://magiccards.info/scans/en/mm/86.jpg
+value=3
+rarity=R
+type=Instant
+color=u
+converted=2
+cost={U}{U}
+timing=animate
