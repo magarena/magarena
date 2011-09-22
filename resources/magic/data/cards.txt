@@ -623,6 +623,32 @@ pt=5/1
 ability=haste
 timing=fmain
 
+>Spark Elemental
+image=http://magiccards.info/scans/en/10e/237.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=1
+cost={R}
+pt=3/1
+ability=trample,haste
+timing=fmain
+
+>Ball Lightning
+image=http://magiccards.info/scans/en/m10/125.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elemental
+color=r
+converted=3
+cost={R}{R}{R}
+pt=6/1
+ability=trample,haste
+timing=fmain
+
 >Armament Master
 image=http://magiccards.info/scans/en/zen/1.jpg
 value=3
@@ -8841,6 +8867,17 @@ type=Instant
 color=r
 converted=2
 cost={1}{R}
+timing=removal
+
+>Smash
+image=http://magiccards.info/scans/en/10e/235.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=r
+converted=3
+cost={2}{R}
 timing=removal
 
 >Volcanic Fallout
