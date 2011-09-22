@@ -6,12 +6,14 @@ import magic.model.MagicGame;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineListener;
+import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.File;
 import java.io.IOException;
 
-public class SoundEffects {
+public class SoundEffects implements LineListener {
 
 	public static final String WIN_SOUND="win.au";
 	public static final String LOSE_SOUND="lose.au";
@@ -32,6 +34,7 @@ public class SoundEffects {
                 clip = AudioSystem.getClip();
                 ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH,name));
                 clip.open(ins);
+                clip.addLineListener(INSTANCE);
 		        clip.start();
 		    } catch (final LineUnavailableException ex) {
                 System.err.println("WARNING. Unable to load clip " + name);
@@ -50,4 +53,11 @@ public class SoundEffects {
 			playClip(name);
 		}
 	}
+
+    @Override
+    public void update(final LineEvent event) {
+        if (LineEvent.Type.STOP.equals(event.getType())) {
+            event.getLine().close();
+        }
+    }
 } 
