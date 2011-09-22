@@ -1,3 +1,14 @@
+>Mantis Engine
+image=http://magiccards.info/scans/en/10e/333.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+converted=5
+cost={5}
+pt=3/3
+timing=main
+
 >Loyal Sentry
 image=http://magiccards.info/scans/en/10e/27.jpg
 value=2
@@ -32,7 +43,8 @@ color=b
 converted=3
 cost={1}{B}{B}
 pt=2/2
-timing=main
+static=all
+timing=fmain
 
 >Kavu Climber
 image=http://magiccards.info/scans/en/10e/273.jpg
@@ -117,6 +129,7 @@ color=w
 converted=3
 cost={1}{W}{W}
 pt=2/2
+static=all
 timing=fmain
 
 >Festering Goblin
@@ -141,6 +154,7 @@ color=g
 converted=3
 cost={1}{G}{G}
 pt=2/2
+static=all
 timing=fmain
 
 >Bogardan Firefiend
@@ -228,6 +242,7 @@ converted=6
 cost={4}{B}{B}
 pt=3/3
 ability=flying
+static=all
 timing=fmain
 
 >Angel of Mercy
@@ -332,6 +347,7 @@ converted=4
 cost={3}{B}
 pt=3/2
 ability=infect
+static=player
 timing=main
 
 >AEther Figment
@@ -6204,6 +6220,16 @@ color=w
 converted=2
 cost={W}{W}
 static=all
+timing=enchantment
+
+>Megrim
+image=http://magiccards.info/scans/en/m10/104.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
 timing=enchantment
 
 >Liliana's Caress
