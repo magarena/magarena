@@ -84,4 +84,20 @@ public class MagicPermanentStaticMap {
             }
         }
     }
+    
+    public Collection<MagicPermanentStatic> remove(final MagicPermanent permanent, final Collection<MagicStatic> statics) {
+        final Collection<MagicPermanentStatic> removedStatics = new ArrayList<MagicPermanentStatic>();
+        for (final MagicStatic mstatic : statics) {
+            final Collection<MagicPermanentStatic> mpstatics = effects.get(mstatic.getLayer());
+            for (final Iterator<MagicPermanentStatic> iterator = mpstatics.iterator();iterator.hasNext();) {
+                final MagicPermanentStatic permanentStatic = iterator.next();
+                if (permanentStatic.getPermanent() == permanent && permanentStatic.getStatic() == mstatic) {
+                    iterator.remove();
+                    removedStatics.add(permanentStatic);
+                    break;
+                }
+            }
+        }
+        return removedStatics;
+    }
 }
