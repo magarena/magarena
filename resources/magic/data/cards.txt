@@ -1,3 +1,16 @@
+>Reya Dawnbringer
+image=http://magiccards.info/scans/en/10e/35.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Angel
+color=w
+converted=9
+cost={6}{W}{W}{W}
+pt=4/6
+ability=flying
+timing=main
+
 >Relentless Rats
 image=http://magiccards.info/scans/en/m11/113.jpg
 value=2
@@ -3642,6 +3655,16 @@ converted=4
 cost={2}{W}{W}
 timing=draw
 
+>Reviving Dose
+image=http://magiccards.info/scans/en/10e/34.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=draw
+
 >Char
 image=http://magiccards.info/scans/en/rav/117.jpg
 value=4
@@ -6000,6 +6023,16 @@ timing=equipment
 
 >Essence Scatter
 image=http://magiccards.info/scans/en/m10/51.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
+
+>Remove Soul
+image=http://magiccards.info/scans/en/10e/100.jpg
 value=3
 rarity=C
 type=Instant
