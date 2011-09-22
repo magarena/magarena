@@ -148,6 +148,9 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_CREATURE,true,MagicTargetHint.Negative,"target attacking creature");
 	public static final MagicTargetChoice POS_TARGET_ATTACKING_CREATURE=
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_CREATURE,true,MagicTargetHint.Positive,"target attacking creature");
+	public static final MagicTargetChoice POS_TARGET_BLOCKING_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_BLOCKING_CREATURE,true,MagicTargetHint.Positive,
+			"target attacking creature");
 	public static final MagicTargetChoice NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE,true,MagicTargetHint.Negative,"target attacking creature");
 	public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING=
@@ -225,7 +228,11 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_MULTICOLOR_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a multicolored creature card from your hand");
 	public static final MagicTargetChoice TARGET_BASIC_LAND_CARD_FROM_HAND =
-			new MagicTargetChoice(MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,"a basic land card from your hand");
+			new MagicTargetChoice(MagicTargetFilter.TARGET_BASIC_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
+			"a basic land card from your hand");
+	public static final MagicTargetChoice TARGET_LAND_CARD_FROM_HAND =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
+			"a land card from your hand");
 		
 	private final String targetDescription;
 	private final MagicTargetFilter targetFilter;

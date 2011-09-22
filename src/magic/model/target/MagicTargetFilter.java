@@ -449,6 +449,15 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_SWAMP_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player && ((MagicPermanent)target).hasSubType(MagicSubType.Swamp,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return target.getController()==player&&((MagicPermanent)target).isCreature(game);
@@ -965,6 +974,16 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_BLOCKING_CREATURE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return permanent.isCreature(game)&&permanent.isBlocking();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
     MagicTargetFilter TARGET_ATTACKING_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent=(MagicPermanent)target;
@@ -1193,6 +1212,16 @@ public interface MagicTargetFilter {
 			return cardDefinition.isLand()&&cardDefinition.isBasic();
 		}
 		
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Hand;
+		}						
+	};
+	
+	MagicTargetFilter TARGET_LAND_CARD_FROM_HAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+			return cardDefinition.isLand();
+		}	
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Hand;
 		}						

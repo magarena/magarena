@@ -1,3 +1,188 @@
+>Skyshroud Ranger
+image=http://magiccards.info/scans/en/10e/297.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+
+>Skyhunter Patrol
+image=http://magiccards.info/scans/en/10e/41.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=4
+cost={2}{W}{W}
+pt=2/3
+ability=flying,first strike
+timing=main
+
+>Skyhunter Prowler
+image=http://magiccards.info/scans/en/10e/42.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=1/3
+ability=flying,vigilance
+timing=main
+
+>Skyhunter Skirmisher
+image=http://magiccards.info/scans/en/10e/43.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=3
+cost={1}{W}{W}
+pt=1/1
+ability=flying,double strike
+timing=main
+
+>Shivan Hellkite
+image=http://magiccards.info/scans/en/10e/231.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=7
+cost={5}{R}{R}
+pt=5/5
+ability=flying
+timing=main
+
+>Seedborn Muse
+image=http://magiccards.info/scans/en/10e/296.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Spirit
+color=g
+converted=5
+cost={3}{G}{G}
+pt=2/4
+timing=main
+
+>Scion of the Wild
+image=http://magiccards.info/scans/en/10e/295.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Avatar
+color=g
+converted=3
+cost={1}{G}{G}
+timing=smain
+
+>Samite Healer
+image=http://magiccards.info/scans/en/10e/38.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=main
+
+>Rock Badger
+image=http://magiccards.info/scans/en/10e/226.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Badger,Beast
+color=r
+converted=5
+cost={4}{R}
+pt=3/3
+ability=mountainwalk
+timing=main
+
+>Reya Dawnbringer
+image=http://magiccards.info/scans/en/10e/35.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Angel
+color=w
+converted=9
+cost={6}{W}{W}{W}
+pt=4/6
+ability=flying
+timing=main
+
+>Relentless Rats
+image=http://magiccards.info/scans/en/m11/113.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/2
+timing=main
+
+>Ravenous Rats
+image=http://magiccards.info/scans/en/10e/171.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Rat
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=main
+
+>Quirion Dryad
+image=http://magiccards.info/scans/en/10e/287.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Dryad
+color=g
+converted=2
+cost={1}{G}
+pt=1/1
+timing=fmain
+
+>Molimo, Maro-Sorcerer
+image=http://magiccards.info/scans/en/10e/280.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Elemental
+color=g
+converted=7
+cost={4}{G}{G}{G}
+ability=trample
+timing=smain
+
+>Merfolk Looter
+image=http://magiccards.info/scans/en/m10/61.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+timing=main
+
 >Mantis Engine
 image=http://magiccards.info/scans/en/10e/333.jpg
 value=3
@@ -436,6 +621,32 @@ converted=3
 cost={2}{R}
 pt=5/1
 ability=haste
+timing=fmain
+
+>Spark Elemental
+image=http://magiccards.info/scans/en/10e/237.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=1
+cost={R}
+pt=3/1
+ability=trample,haste
+timing=fmain
+
+>Ball Lightning
+image=http://magiccards.info/scans/en/m10/125.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elemental
+color=r
+converted=3
+cost={R}{R}{R}
+pt=6/1
+ability=trample,haste
 timing=fmain
 
 >Armament Master
@@ -1159,6 +1370,19 @@ subtype=Treefolk
 color=g
 converted=3
 cost={2}{G}
+ability=hexproof
+timing=smain
+
+>Nightmare
+image=http://magiccards.info/scans/en/m10/107.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Nightmare
+color=b
+converted=6
+cost={5}{B}
+ability=flying
 timing=smain
 
 >Earth Servant
@@ -3417,6 +3641,18 @@ pt=1/1
 ability=wither
 timing=main
 
+>Rootwalla
+image=http://magiccards.info/scans/en/10e/293.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Lizard
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main
+
 >Ursapine
 image=http://magiccards.info/scans/en/rav/188.jpg
 value=4
@@ -3567,6 +3803,16 @@ type=Instant
 color=w
 converted=4
 cost={2}{W}{W}
+timing=draw
+
+>Reviving Dose
+image=http://magiccards.info/scans/en/10e/34.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
 timing=draw
 
 >Char
@@ -3775,6 +4021,16 @@ type=Instant
 color=g
 converted=1
 cost={G}
+timing=pump
+
+>Righteousness
+image=http://magiccards.info/scans/en/m11/178.jpg
+value=2
+rarity=R
+type=Instant
+color=w
+converted=1
+cost={W}
 timing=pump
 
 >Aggressive Urge
@@ -4813,6 +5069,28 @@ converted=4
 cost={2}{B}{B}
 timing=removal
 
+>Plague Wind
+image=http://magiccards.info/scans/en/10e/169.jpg
+value=5
+removal=2
+rarity=R
+type=Sorcery
+color=b
+converted=9
+cost={7}{B}{B}
+timing=removal
+
+>Shatterstorm
+image=http://magiccards.info/scans/en/10e/229.jpg
+value=3
+removal=2
+rarity=U
+type=Sorcery
+color=r
+converted=4
+cost={2}{R}{R}
+timing=removal
+
 >Scepter of Dominance
 image=http://magiccards.info/scans/en/cfx/17.jpg
 value=4
@@ -4886,6 +5164,16 @@ type=Instant
 color=gw
 converted=2
 cost={G}{W}
+timing=draw
+
+>Natural Spring
+image=http://magiccards.info/scans/en/10e/281.jpg
+value=3
+rarity=C
+type=Sorcery
+color=g
+converted=5
+cost={3}{G}{G}
 timing=draw
 
 >Iridescent Angel
@@ -5914,6 +6202,16 @@ converted=2
 cost={1}{U}
 timing=counter
 
+>Remove Soul
+image=http://magiccards.info/scans/en/10e/100.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
+
 >Sphinx of Magosi
 image=http://magiccards.info/scans/en/roe/89.jpg
 value=5
@@ -5933,6 +6231,18 @@ value=3
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
+color=r
+converted=3
+cost={1}{R}{R}
+pt=1/3
+timing=main
+
+>Orcish Artillery
+image=http://magiccards.info/scans/en/10e/220.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Orc,Warrior
 color=r
 converted=3
 cost={1}{R}{R}
@@ -6219,6 +6529,17 @@ type=Enchantment
 color=w
 converted=2
 cost={W}{W}
+static=all
+timing=enchantment
+
+>Mobilization
+image=http://magiccards.info/scans/en/10e/29.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=3
+cost={2}{W}
 static=all
 timing=enchantment
 
@@ -7057,6 +7378,18 @@ cost={U}
 given_ability=flying
 timing=aura
 
+>Robe of Mirrors
+image=http://magiccards.info/scans/en/10e/101.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=1
+cost={U}
+given_ability=shroud
+timing=aura
+
 >Griffin Guide
 image=http://magiccards.info/scans/en/ts/21.jpg
 value=4
@@ -7364,6 +7697,16 @@ type=Sorcery
 color=b
 converted=3
 cost={2}{B}
+timing=draw
+
+>Recollect
+image=http://magiccards.info/scans/en/10e/289.jpg
+value=3
+rarity=U
+type=Sorcery
+color=g
+converted=3
+cost={2}{G}
 timing=draw
 
 >Reclaim
@@ -8526,6 +8869,17 @@ converted=2
 cost={1}{R}
 timing=removal
 
+>Smash
+image=http://magiccards.info/scans/en/10e/235.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=r
+converted=3
+cost={2}{R}
+timing=removal
+
 >Volcanic Fallout
 image=http://magiccards.info/scans/en/arc/51.jpg
 value=3
@@ -8987,6 +9341,17 @@ type=Sorcery
 color=r
 converted=3
 cost={1}{R}{R}
+timing=removal
+
+>Rain of Tears
+image=http://magiccards.info/scans/en/10e/170.jpg
+value=2
+removal=3
+rarity=U
+type=Sorcery
+color=b
+converted=3
+cost={1}{B}{B}
 timing=removal
 
 >Sunblast Angel

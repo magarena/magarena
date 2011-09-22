@@ -18,7 +18,7 @@ public class Liliana_s_Specter {
                     player,
                     new Object[]{permanent,opponent},
                     this,
-                    opponent + " opponent discards a card.");
+                    opponent + " discards a card.");
 		}
 		@Override
 		public void executeEvent(
