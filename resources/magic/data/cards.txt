@@ -1,3 +1,15 @@
+>Quirion Dryad
+image=http://magiccards.info/scans/en/10e/287.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Dryad
+color=g
+converted=2
+cost={1}{G}
+pt=1/1
+timing=fmain
+
 >Molimo, Maro-Sorcerer
 image=http://magiccards.info/scans/en/10e/280.jpg
 value=5
@@ -9068,6 +9080,17 @@ type=Sorcery
 color=r
 converted=3
 cost={1}{R}{R}
+timing=removal
+
+>Rain of Tears
+image=http://magiccards.info/scans/en/10e/170.jpg
+value=2
+removal=3
+rarity=U
+type=Sorcery
+color=b
+converted=3
+cost={1}{B}{B}
 timing=removal
 
 >Sunblast Angel
