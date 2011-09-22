@@ -37,7 +37,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	
 	private static final int SPACING = 10;
 	private static final String PLAY_BUTTON_TEXT = "Play Game";
-	private static final String NEW_BUTTON_TEXT = "New Game";
+	private static final String NEW_BUTTON_TEXT = "New Duel";
 	private static final String EDIT_BUTTON_TEXT = "Edit Deck";
 	
 	private final MagicFrame frame;

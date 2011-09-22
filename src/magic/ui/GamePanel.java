@@ -108,6 +108,7 @@ public final class GamePanel extends JPanel {
 		
 		cardViewer=new CardViewer("Card",false,true);
 		add(cardViewer);
+		cardViewer.setVisible(false);
 		controller.setCardViewer(cardViewer);
 		
 		imageCardViewer=new CardViewer("",true,false);

@@ -225,7 +225,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 		
 	private void createMenuBar() {
-
+		// arena menu
 		final JMenu tournamentMenu=new JMenu("Arena");
 		
 		newTournamentItem=new JMenuItem("New duel");
@@ -245,38 +245,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 		tournamentMenu.add(restartTournamentItem);
 		
 		tournamentMenu.addSeparator();
-		
-		newDeckItem=new JMenuItem("New deck");
-		newDeckItem.addActionListener(this);
-		tournamentMenu.add(newDeckItem);
-		
-		loadDeckItem=new JMenuItem("Load deck");
-		loadDeckItem.addActionListener(this);
-		tournamentMenu.add(loadDeckItem);
-		
-		saveDeckItem=new JMenuItem("Save deck");
-		saveDeckItem.addActionListener(this);
-		tournamentMenu.add(saveDeckItem);
-		
-		swapDecksItem=new JMenuItem("Swap decks");
-		swapDecksItem.addActionListener(this);
-		tournamentMenu.add(swapDecksItem);
-
-		tournamentMenu.addSeparator();
-
-		playGameItem=new JMenuItem("Play game");
-		playGameItem.addActionListener(this);
-		tournamentMenu.add(playGameItem);
-		
-		resetGameItem=new JMenuItem("Reset game");
-		resetGameItem.addActionListener(this);
-		tournamentMenu.add(resetGameItem);
-		
-		concedeGameItem=new JMenuItem("Concede game");
-		concedeGameItem.addActionListener(this);
-		tournamentMenu.add(concedeGameItem);
-		
-		tournamentMenu.addSeparator();
 				
         downloadImagesItem = new JMenuItem("Download images");
         downloadImagesItem.addActionListener(this);
@@ -294,6 +262,40 @@ public class MagicFrame extends JFrame implements ActionListener {
 		quitItem.addActionListener(this);
 		tournamentMenu.add(quitItem);
 		
+		// duel menu		
+		final JMenu duelMenu = new JMenu("Duel");
+		
+		newDeckItem=new JMenuItem("New deck");
+		newDeckItem.addActionListener(this);
+		duelMenu.add(newDeckItem);
+		
+		loadDeckItem=new JMenuItem("Load deck");
+		loadDeckItem.addActionListener(this);
+		duelMenu.add(loadDeckItem);
+		
+		saveDeckItem=new JMenuItem("Save deck");
+		saveDeckItem.addActionListener(this);
+		duelMenu.add(saveDeckItem);
+		
+		swapDecksItem=new JMenuItem("Swap decks");
+		swapDecksItem.addActionListener(this);
+		duelMenu.add(swapDecksItem);
+
+		duelMenu.addSeparator();
+
+		playGameItem=new JMenuItem("Play game");
+		playGameItem.addActionListener(this);
+		duelMenu.add(playGameItem);
+		
+		resetGameItem=new JMenuItem("Reset game");
+		resetGameItem.addActionListener(this);
+		duelMenu.add(resetGameItem);
+		
+		concedeGameItem=new JMenuItem("Concede game");
+		concedeGameItem.addActionListener(this);
+		duelMenu.add(concedeGameItem);
+		
+		// help menu
 		final JMenu helpMenu=new JMenu("Help");
 		
 		readMeItem=new JMenuItem("Read Me");
@@ -314,6 +316,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		final JMenuBar menuBar=new JMenuBar();
 		menuBar.add(tournamentMenu);
+		menuBar.add(duelMenu);
 		menuBar.add(helpMenu);
 
         /*
