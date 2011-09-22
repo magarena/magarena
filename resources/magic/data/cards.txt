@@ -1,3 +1,14 @@
+>Mantis Engine
+image=http://magiccards.info/scans/en/10e/333.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+converted=5
+cost={5}
+pt=3/3
+timing=main
+
 >Loyal Sentry
 image=http://magiccards.info/scans/en/10e/27.jpg
 value=2
@@ -6209,6 +6220,16 @@ color=w
 converted=2
 cost={W}{W}
 static=all
+timing=enchantment
+
+>Megrim
+image=http://magiccards.info/scans/en/m10/104.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
 timing=enchantment
 
 >Liliana's Caress
