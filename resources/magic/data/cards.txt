@@ -1,3 +1,55 @@
+>Skyhunter Patrol
+image=http://magiccards.info/scans/en/10e/41.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=4
+cost={2}{W}{W}
+pt=2/3
+ability=flying,first strike
+timing=main
+
+>Skyhunter Prowler
+image=http://magiccards.info/scans/en/10e/42.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=1/3
+ability=flying,vigilance
+timing=main
+
+>Skyhunter Skirmisher
+image=http://magiccards.info/scans/en/10e/43.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=3
+cost={1}{W}{W}
+pt=1/1
+ability=flying,double strike
+timing=main
+
+>Shivan Hellkite
+image=http://magiccards.info/scans/en/10e/231.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=7
+cost={5}{R}{R}
+pt=5/5
+ability=flying
+timing=main
+
 >Seedborn Muse
 image=http://magiccards.info/scans/en/10e/296.jpg
 value=4
