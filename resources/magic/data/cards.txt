@@ -1,3 +1,16 @@
+>Rock Badger
+image=http://magiccards.info/scans/en/10e/226.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Badger,Beast
+color=r
+converted=5
+cost={4}{R}
+pt=3/3
+ability=mountainwalk
+timing=main
+
 >Reya Dawnbringer
 image=http://magiccards.info/scans/en/10e/35.jpg
 value=5
@@ -3501,6 +3514,18 @@ converted=1
 cost={G}
 pt=1/1
 ability=wither
+timing=main
+
+>Rootwalla
+image=http://magiccards.info/scans/en/10e/293.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Lizard
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
 timing=main
 
 >Ursapine
