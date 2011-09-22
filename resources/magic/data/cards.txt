@@ -3873,6 +3873,16 @@ converted=1
 cost={G}
 timing=pump
 
+>Righteousness
+image=http://magiccards.info/scans/en/m11/178.jpg
+value=2
+rarity=R
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=pump
+
 >Aggressive Urge
 image=http://magiccards.info/scans/en/10e/250.jpg
 value=2
@@ -7205,6 +7215,18 @@ color=u
 converted=1
 cost={U}
 given_ability=flying
+timing=aura
+
+>Robe of Mirrors
+image=http://magiccards.info/scans/en/10e/101.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=1
+cost={U}
+given_ability=shroud
 timing=aura
 
 >Griffin Guide
