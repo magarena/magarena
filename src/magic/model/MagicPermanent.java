@@ -556,7 +556,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			} else if (toughness-damage<=0) {
 				actions.add(new MagicDestroyAction(this));
 			}
-		} else if (cardDefinition.isAura()) {
+		} 
+        
+        if (cardDefinition.isAura()) {
             final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cardDefinition.getCardEvent();
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
@@ -566,8 +568,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
 			}
-		} else if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
-			if (!equippedCreature.isCreature(game) || equippedCreature.hasProtectionFrom(game,this)) {
+		} 
+        
+        if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
+			if (isCreature(game) || !equippedCreature.isCreature(game) || equippedCreature.hasProtectionFrom(game,this)) {
 				actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
 			}
 		}
