@@ -1,3 +1,15 @@
+>Merfolk Looter
+image=http://magiccards.info/scans/en/m10/61.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+timing=main
+
 >Mantis Engine
 image=http://magiccards.info/scans/en/10e/333.jpg
 value=3
@@ -6219,6 +6231,17 @@ type=Enchantment
 color=w
 converted=2
 cost={W}{W}
+static=all
+timing=enchantment
+
+>Mobilization
+image=http://magiccards.info/scans/en/10e/29.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=3
+cost={2}{W}
 static=all
 timing=enchantment
 
