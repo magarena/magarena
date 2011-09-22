@@ -4850,6 +4850,17 @@ converted=4
 cost={2}{B}{B}
 timing=removal
 
+>Plague Wind
+image=http://magiccards.info/scans/en/10e/169.jpg
+value=5
+removal=2
+rarity=R
+type=Sorcery
+color=b
+converted=9
+cost={7}{B}{B}
+timing=removal
+
 >Scepter of Dominance
 image=http://magiccards.info/scans/en/cfx/17.jpg
 value=4
@@ -5980,6 +5991,18 @@ value=3
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
+color=r
+converted=3
+cost={1}{R}{R}
+pt=1/3
+timing=main
+
+>Orcish Artillery
+image=http://magiccards.info/scans/en/10e/220.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Orc,Warrior
 color=r
 converted=3
 cost={1}{R}{R}
