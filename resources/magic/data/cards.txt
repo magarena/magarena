@@ -4194,6 +4194,16 @@ converted=1
 cost={R}
 timing=removal
 
+>Sudden Impact
+image=http://magiccards.info/scans/en/10e/241.jpg
+value=2
+rarity=U
+type=Instant
+color=r
+converted=4
+cost={3}{R}
+timing=main
+
 >Volcanic Hammer
 image=http://magiccards.info/scans/en/9e/226.jpg
 value=3
@@ -7689,6 +7699,16 @@ color=u
 converted=3
 cost={2}{U}
 timing=tapping
+
+>Stun
+image=http://magiccards.info/scans/en/10e/240.jpg
+value=1
+rarity=C
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=block
 
 >Demystify
 image=http://magiccards.info/scans/en/m12/13.jpg
