@@ -11,10 +11,11 @@ Starting Magarena:
   On Mac, run Magarena.command
 
 Magarena supports the following keyboard shortcuts :
-  Space or Right key : action button
-  Escape or Left key : undo button
-  Enter key : switch between graphical and text mode
-  F1 or M key : show or hide game messages
+  Space   or Right key : action button
+  Escape  or Left key  : undo button
+  Control or Up key    : same as clicking the left mouse button
+  F1      or M key     : show or hide game messages
+  Enter key            : switch between graphical and text mode
 
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
@@ -47,7 +48,7 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 2270 (September 23, 2011)
+Release 1.18 (September 23, 2011)
 ============
 brought to you by beholder, melvin, and wait321
 
@@ -65,7 +66,8 @@ brought to you by beholder, melvin, and wait321
 - improved crash handling to handle unhandled exception from any part of the
   program
 - improved how AI plays cards it doesn't have to pay the mana cost for
-- added option in preferences to select type of card highlighting 
+- added option in preferences to select type of card highlighting
+- added shortcut (Control or Up key) to simulate clicking mouse
 
 - fixed a bug where the "When Targeted" trigger does not activate for spells
   with kicker

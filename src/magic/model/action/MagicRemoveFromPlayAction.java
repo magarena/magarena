@@ -68,7 +68,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		removedTriggers = game.removeTriggers(permanent);
 		
         // Static
-        removedStatics = game.removeStatics(permanent);
+        removedStatics = game.removeAllStatics(permanent);
 		
 		game.doAction(new MagicMoveCardAction(permanent,toLocation));
 		game.setStateCheckRequired();

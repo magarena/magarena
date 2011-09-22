@@ -90,6 +90,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
 	public static final MagicTargetChoice NEG_TARGET_ARTIFACT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.Negative,"target artifact");
+	public static final MagicTargetChoice TARGET_NONCREATURE_ARTIFACT=
+		new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE_ARTIFACT,true,MagicTargetHint.None,"target noncreature artifact");
 	public static final MagicTargetChoice POS_TARGET_NONCREATURE_ARTIFACT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE_ARTIFACT,true,MagicTargetHint.Positive,"target noncreature artifact");
 	public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT=
