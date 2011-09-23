@@ -1,3 +1,15 @@
+>Verdant Force
+image=http://magiccards.info/scans/en/10e/307.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=8
+cost={5}{G}{G}{G}
+pt=7/7
+timing=main
+
 >Starlight Invoker
 image=http://magiccards.info/scans/en/10e/47.jpg
 value=2
@@ -9202,6 +9214,18 @@ converted=3
 cost={1}{G/W}{G/W}
 pt=3/2
 ability=persist
+timing=main
+
+>Venerable Monk
+image=http://magiccards.info/scans/en/10e/55.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Monk,Cleric
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
 timing=main
 
 >Lord of Extinction
