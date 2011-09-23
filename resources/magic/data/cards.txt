@@ -9639,6 +9639,17 @@ cost={1}{G}
 color=g
 timing=removal
 
+>Tempest of Light
+image=http://magiccards.info/scans/en/m10/36.jpg
+value=1
+removal=2
+rarity=U
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=removal
+
 >Goblin Wardriver
 image=http://magiccards.info/scans/en/mbs/64.jpg
 value=3
@@ -10931,6 +10942,17 @@ timing=smain
 >Mark of Mutiny
 image=http://magiccards.info/scans/en/zen/137.jpg
 value=4
+removal=5
+rarity=U
+type=Sorcery
+color=r
+converted=3
+cost={2}{R}
+timing=removal
+
+>Threaten
+image=http://magiccards.info/scans/en/10e/242.jpg
+value=3
 removal=5
 rarity=U
 type=Sorcery
