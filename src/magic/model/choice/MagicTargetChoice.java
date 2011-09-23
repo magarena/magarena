@@ -210,7 +210,11 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD,false,MagicTargetHint.None,"target instant or sorcery card from your opponent's graveyard");
 	public static final MagicTargetChoice TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD =
-			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target enchantment card from your graveyard");
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+					"target enchantment card from your graveyard");
+	public static final MagicTargetChoice TARGET_ARTIFACT_CARD_FROM_GRAVEYARD =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+					"target artifact card from your graveyard");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,false,MagicTargetHint.None,"target creature card from a graveyard");
 	public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=
