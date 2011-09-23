@@ -66,7 +66,6 @@ brought to you by beholder, melvin, and wait321
   program
 - improved how AI plays cards it doesn't have to pay the mana cost for
 - added option in preferences to select type of card highlighting
-- added shortcut (Control or Up key) to simulate clicking mouse
 
 - fixed a bug where the "When Targeted" trigger does not activate for spells
   with kicker
