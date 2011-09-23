@@ -121,8 +121,10 @@ public class DeckStrCal {
         if (!parseArguments(args)) {
             System.err.println("Usage: java -jar <path to Magarena.jar/exe> magic.DeckStrCal --deck1 <.dec file> --deck2 <.dec file> [options]");
             System.err.println("Options:");
-            System.err.println("--games <1-*> [number of games to play, default 10]");
-            System.err.println("--strength <1-8> [strength of default AI, default 6]");
+            System.err.println("--ai1      [MMAB|MMABC|MCTS|RND] (AI for player 1, default MMAB)");
+            System.err.println("--ai2      [MMAB|MMABC|MCTS|RND] (AI for player 2, default MMAB)");
+            System.err.println("--strength <1-8>                 (level of AI, default 6)");
+            System.err.println("--games    <1-*>                 (number of games to play, default 10)");
             System.exit(1);
         }
 
