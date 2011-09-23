@@ -39,7 +39,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	public static final int SPELL = 2;	
 	
 	private static final String CLOSE_BUTTON_TEXT = "Close";
-	private static final String SWAP_BUTTON_TEXT = "Swap";
 	private static final String ADD_BUTTON_TEXT = "Add";
 	private static final String REMOVE_BUTTON_TEXT = "Remove";
 	private static final String CARD_POOL_TITLE = "Card Pool";
@@ -55,7 +54,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private final DeckStatisticsViewer statsViewer;
 	private final ExplorerFilterPanel filterPanel;
 	private final JButton closeButton;
-	private final JButton swapButton;
 	private final JButton addButton;
 	private final JButton removeButton;
 	
@@ -74,21 +72,13 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
 		buttonsPanel.setOpaque(false);
 		
-		// create swap button for deck editing
+		// create buttons for deck editing
 		if (isEditingDeck()) {
 			addButton = new JButton(ADD_BUTTON_TEXT);
 			addButton.setFont(FontsAndBorders.FONT1);
 			addButton.setFocusable(false);
 			addButton.addActionListener(this);
 			buttonsPanel.add(addButton);
-			
-			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
-			
-			swapButton = new JButton(SWAP_BUTTON_TEXT);
-			swapButton.setFont(FontsAndBorders.FONT1);
-			swapButton.setFocusable(false);
-			swapButton.addActionListener(this);
-			buttonsPanel.add(swapButton);
 			
 			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 			
@@ -100,7 +90,6 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 			
 			buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 		} else {
-			swapButton = null;
 			addButton = null;
 			removeButton = null;
 		}
@@ -285,12 +274,14 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	}
 	
 	private void removeSelectedFromDeck() {
-		MagicCardDefinition deckCard = deckTable.getSelectedCard();
-		if (deckCard != null) {
-			getPlayer().getDeck().remove(deckCard);
-			updateDeck();
+		List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
 		
-			// update deck stats
+		if (deckCards.size() > 0) {
+			for(MagicCardDefinition card : deckCards) { 
+				getPlayer().getDeck().remove(card);
+			}
+			
+			updateDeck();
 			statsViewer.setPlayer(getPlayer());
 		} else {
 			// display error
@@ -299,12 +290,14 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	}
 	
 	private void addSelectedToDeck() {
-		MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
-		if (cardPoolCard != null) {
-			getPlayer().getDeck().add(cardPoolCard);
-			updateDeck();
+		List<MagicCardDefinition> cardPoolCards = cardPoolTable.getSelectedCards();
 		
-			// update deck stats
+		if (cardPoolCards.size() > 0) {
+			for(MagicCardDefinition card : cardPoolCards) { 
+				getPlayer().getDeck().add(card);
+			}
+			
+			updateDeck();
 			statsViewer.setPlayer(getPlayer());
 		} else {
 			// display error
@@ -324,21 +317,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 				frame.closeCardExplorer();
 			}
 		} else if (isEditingDeck()) {
-			if(source == swapButton) {
-				MagicCardDefinition cardPoolCard = cardPoolTable.getSelectedCard();
-				MagicCardDefinition deckCard = deckTable.getSelectedCard();
-				
-				if (cardPoolCard != null && deckCard != null) {
-					getPlayer().getDeck().remove(deckCard);
-					getPlayer().getDeck().add(cardPoolCard);
-					updateDeck();
-				
-					// update deck stats
-					statsViewer.setPlayer(getPlayer());
-				} else {
-					JOptionPane.showMessageDialog(frame, "Select valid cards in the card pool and deck to swap them.", "Error", JOptionPane.ERROR_MESSAGE);
-				}
-			} else if(source == addButton) {
+			if(source == addButton) {
 				addSelectedToDeck();
 			} else if(source == removeButton) {
 				removeSelectedFromDeck();
