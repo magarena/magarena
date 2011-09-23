@@ -3920,6 +3920,18 @@ pt=5/3
 ability=flying
 timing=fmain
 
+>Armored Skaab
+image=http://magiccards.info/scans/en/isd/43.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Zombie,Warrior
+color=u
+converted=3
+cost={2}{U}
+pt=1/4
+timing=main
+
 >Avacynian Priest
 image=http://magiccards.info/scans/en/isd/4.jpg
 value=1
@@ -3970,3 +3982,16 @@ cost={4}{U}
 pt=3/3
 ability=flying
 timing=fmain
+
+>Bloodcrazed Neonate
+image=http://magiccards.info/scans/en/isd/131.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire
+color=r
+converted=2
+cost={1}{R}
+pt=2/1
+ability=attacks each turn if able
+timing=main
