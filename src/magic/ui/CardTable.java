@@ -153,7 +153,6 @@ public class CardTable extends JPanel implements ListSelectionListener {
 					// Row selection changed				
 					MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
 					if (card != null) {
-						lastSelectedCards.add(card);
 						cardViewer.setCard(card,0);
 					}
 				} /* else if (e.getSource() == table.getColumnModel().getSelectionModel() && table.getColumnSelectionAllowed() ){
