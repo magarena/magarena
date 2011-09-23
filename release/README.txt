@@ -13,7 +13,6 @@ Starting Magarena:
 Magarena supports the following keyboard shortcuts :
   Space   or Right key : action button
   Escape  or Left key  : undo button
-  Control or Up key    : same as clicking the left mouse button
   F1      or M key     : show or hide game messages
   Enter key            : switch between graphical and text mode
 
