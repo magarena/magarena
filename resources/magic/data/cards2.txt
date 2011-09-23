@@ -3995,3 +3995,27 @@ cost={1}{R}
 pt=2/1
 ability=attacks each turn if able
 timing=main
+
+>Bloodgift Demon
+image=http://magiccards.info/scans/en/isd/89.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Demon
+color=b
+converted=5
+cost={3}{B}{B}
+pt=5/4
+ability=flying
+timing=main
+
+>Boneyard Wurm
+image=http://magiccards.info/scans/en/isd/171.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Wurm
+color=g
+converted=2
+cost={1}{G}
+timing=main
