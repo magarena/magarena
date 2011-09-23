@@ -3822,6 +3822,51 @@ converted=2
 cost={U}{U}
 timing=animate
 
+>Clifftop Retreat
+image=http://magiccards.info/scans/en/isd/238.jpg
+value=4
+rarity=C
+type=Land
+mana=r3w3
+basic=rw
+timing=land
+
+>Hinterland Harbor
+image=http://magiccards.info/scans/en/isd/241.jpg
+value=4
+rarity=C
+type=Land
+mana=g3u3
+basic=gu
+timing=land
+
+>Isolated Chapel
+image=http://magiccards.info/scans/en/isd/242.jpg
+value=4
+rarity=C
+type=Land
+mana=w3b3
+basic=wb
+timing=land
+
+>Sulfur Falls
+image=http://magiccards.info/scans/en/isd/248.jpg
+value=4
+rarity=C
+type=Land
+mana=u3r3
+basic=ur
+timing=land
+
+>Woodland Cemetery
+image=http://magiccards.info/scans/en/isd/249.jpg
+value=4
+rarity=C
+type=Land
+mana=b3g3
+basic=bg
+timing=land
+
 >Abbey Griffin
 image=http://magiccards.info/scans/en/isd/1.jpg
 value=3
