@@ -315,6 +315,16 @@ public class MagicFrame extends JFrame implements ActionListener {
 		imageModeItem.addActionListener(this);
 		modeGroup.add(imageModeItem);
 		viewMenu.add(imageModeItem);
+
+		viewMenu.addSeparator();
+
+		keywordsItem=new JMenuItem("Keywords");
+		keywordsItem.addActionListener(this);
+		viewMenu.add(keywordsItem);
+		
+		cardExplorerItem=new JMenuItem("Card explorer");
+		cardExplorerItem.addActionListener(this);
+		viewMenu.add(cardExplorerItem);
 		
 		// help menu
 		final JMenu helpMenu=new JMenu("Help");
@@ -322,14 +332,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 		readMeItem=new JMenuItem("Read Me");
 		readMeItem.addActionListener(this);
 		helpMenu.add(readMeItem);
-		
-		cardExplorerItem=new JMenuItem("Card explorer");
-		cardExplorerItem.addActionListener(this);
-		helpMenu.add(cardExplorerItem);
-
-		keywordsItem=new JMenuItem("Keywords");
-		keywordsItem.addActionListener(this);
-		helpMenu.add(keywordsItem);
 		
 		aboutItem=new JMenuItem("About Magarena");
 		aboutItem.addActionListener(this);
