@@ -31,8 +31,6 @@ import javax.swing.JToggleButton;
 import javax.swing.KeyStroke;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.Robot;
-import java.awt.AWTException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
@@ -50,8 +48,7 @@ public final class GamePanel extends JPanel {
 	// private static final String SWITCH_KEY="switch";
 	private static final String LOG_KEY="log";
 	private static final String PASS_KEY="pass";
-	private static final String LEFT_CLICK="lclick";
-
+	
 	private final MagicFrame frame;
 	private final MagicGame game;
 	private final ZoneBackgroundLabel backgroundLabel;
@@ -204,21 +201,6 @@ public final class GamePanel extends JPanel {
 				controller.passKeyPressed();
 			}
 		});
-       
-
-        getActionMap().put(LEFT_CLICK, new AbstractAction() {
-			private static final long serialVersionUID = 1L;
-			@Override
-			public void actionPerformed(final ActionEvent e) {
-                try {
-                    final Robot robot = new Robot();
-                    robot.mousePress(InputEvent.BUTTON1_MASK);
-                    robot.mouseRelease(InputEvent.BUTTON1_MASK);
-                } catch (final AWTException ex) {
-                    System.err.println("EXCEPTION: unable to simulate mouse click"); 
-                }
-			}
-		});
 	
         //defining shortcut keys
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, 0),ACTION_KEY);
@@ -230,8 +212,6 @@ public final class GamePanel extends JPanel {
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_M, 0),LOG_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.SHIFT_MASK),PASS_KEY);
 		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, InputEvent.SHIFT_MASK),PASS_KEY);
-		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_CONTROL, InputEvent.CTRL_MASK),LEFT_CLICK);
-		getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0),LEFT_CLICK);
 				
 		stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
 		handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);		
