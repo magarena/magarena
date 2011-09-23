@@ -707,6 +707,15 @@ public interface MagicTargetFilter {
 		}		
 	};
     
+	MagicTargetFilter TARGET_NONHUMAN_CREATURE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {		
+			return !((MagicPermanent)target).hasSubType(MagicSubType.Human,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_SOLDIER = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return ((MagicPermanent)target).isCreature(game) &&
@@ -797,6 +806,17 @@ public interface MagicTargetFilter {
 			return target.getController() == player && 
                    ((MagicPermanent)target).isCreature(game) && 
                    ((MagicPermanent)target).hasSubType(MagicSubType.Faerie,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_SPIRIT_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player && 
+                   ((MagicPermanent)target).isCreature(game) && 
+                   ((MagicPermanent)target).hasSubType(MagicSubType.Spirit,game);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Permanent;
@@ -1179,6 +1199,15 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return ((MagicCard)target).getCardDefinition().hasSubType(MagicSubType.Zombie);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Graveyard;
+		}						
+	};
+	
+	MagicTargetFilter TARGET_SPIRIT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().hasSubType(MagicSubType.Spirit);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Graveyard;

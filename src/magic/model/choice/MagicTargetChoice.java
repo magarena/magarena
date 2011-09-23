@@ -183,6 +183,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_OR_PLAYER,true,MagicTargetHint.Positive,"target creature or player");
 	public static final MagicTargetChoice POS_TARGET_MERFOLK_CREATURE =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_MERFOLK_CREATURE,true,MagicTargetHint.Positive,"target Merfolk creature");
+	public static final MagicTargetChoice NEG_TARGET_NONHUMAN_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_NONHUMAN_CREATURE,true,MagicTargetHint.Negative,"target non-Human creature");
 	private static final MagicTargetChoice SACRIFICE_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=
@@ -225,6 +227,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_ZOMBIE_CARD_FROM_GRAVEYARD =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
 					"target Zombie card from your graveyard");
+	public static final MagicTargetChoice TARGET_SPIRIT_CARD_FROM_GRAVEYARD =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
+					"target Spirit card from your graveyard");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_HAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a creature card from your hand");
 	public static final MagicTargetChoice TARGET_GREEN_CREATURE_CARD_FROM_HAND =
