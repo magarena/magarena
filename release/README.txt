@@ -79,8 +79,287 @@ brought to you by beholder, melvin, and wait321
 - fixed a bug where resources were not released properly after a sound effect
   is played
 
-- added the following cards:
-
+- added a total of 280 cards!
+  Adventuring Gear
+  AEther Figment
+  Afflict
+  Afterlife
+  Ageless Entity
+  Aggressive Urge
+  Ajani's Mantra
+  Ajani's Pridemate
+  Akoum Boulderfoot
+  Alabaster Mage
+  Ancient Hellkite
+  Angelfire Crusader
+  Angelheart Vial
+  Angelic Blessing
+  Angelic Chorus
+  Angelic Destiny
+  Angel of Mercy
+  Angel's Feather
+  Arc Runner
+  Armament Master
+  Ascendant Evincar
+  Ashenmoor Cohort
+  Ashenmoor Liege
+  Aura Shards
+  Aven Cloudchaser
+  Aven Fisher
+  Aven Flock
+  Azure Mage
+  Bad Moon
+  Ballista Squad
+  Ball Lightning
+  Ballynock Cohort
+  Balshan Collaborator
+  Bandage
+  Beastmaster Ascension
+  Blade of the Bloodchief
+  Blight Sickle
+  Blinding Mage
+  Blistering Dieflyn
+  Bloodthrone Vampire
+  Blowfly Infestation
+  Bogardan Firefiend
+  Bone Saw
+  Boomerang
+  Bountiful Harvest
+  Bramble Creeper
+  Briarberry Cohort
+  Brink of Disaster
+  Burn the Impure
+  Burst of Speed
+  Carven Caryatid
+  Cavern Thoctar
+  Char-Rumbler
+  Circle of Flame
+  Combust
+  Condemn
+  Corrosive Mentor
+  Counsel of the Soratami
+  Crabapple Cohort
+  Cradle of Vitality
+  Crafty Pathmage
+  Creeping Mold
+  Crescendo of War
+  Crimson Mage
+  Crucible of Fire
+  Crusade
+  Damnation
+  Darksteel Axe
+  Darksteel Plate
+  Deathrender
+  Demolish
+  Demon's Horn
+  Devout Lightcaster
+  Dragon Arch
+  Dragon's Claw
+  Dramatic Entrance
+  Drudge Skeletons
+  Earth Servant
+  Edric, Spymaster of Trest
+  Elvish Champion
+  Elvish Pioneer
+  Elvish Piper
+  Elvish Visionary
+  Essence Drain
+  Eternal Witness
+  Exclude
+  Fallowsage
+  Fervor
+  Festering Goblin
+  Field Marshal
+  Fledgling Dragon
+  Fleeting Image
+  Galepowder Mage
+  Gatekeeper of Malakir
+  Glaze Fiend
+  Gluttonous Slime
+  Goblin Balloon Brigade
+  Goldenglow Moth
+  Gorger Wurm
+  Guard Duty
+  Hand of the Praetors
+  Highway Robber
+  Holy Day
+  Holy Strength
+  Honor Guard
+  Hornet Sting
+  Horseshoe Crab
+  Howling Mine
+  Icatian Priest
+  Icy Manipulator
+  Indestructibility
+  Indrik Stomphowler
+  Infantry Veteran
+  Inspired Charge
+  Jace's Ingenuity
+  Jade Mage
+  Jenara, Asura of War
+  Joraga Warcaller
+  Judge of Currents
+  Kamahl, Pit Fighter
+  Karn's Touch
+  Kavu Climber
+  Kavu Predator
+  Kird Ape
+  Knighthood
+  Kor Aeronaut
+  Kor Duelist
+  Kor Sanctifiers
+  Kor Spiritdancer
+  Kraken's Eye
+  Lhurgoyf
+  Lifelink
+  Loam Lion
+  Looming Shade
+  Lord of the Undead
+  Loxodon Mystic
+  Loyal Sentry
+  Mantis Engine
+  Marrow Chomper
+  Master of Etherium
+  Megrim
+  Memory Lapse
+  Merfolk Looter
+  Merfolk Sovereign
+  Mobilization
+  Molimo, Maro-Sorcerer
+  Molten Rain
+  Mortivore
+  Mudbrawler Cohort
+  Nantuko Husk
+  Natural Spring
+  Nature's Spiral
+  Necropouncer
+  Nekrataal
+  Neurok Hoversail
+  Nightmare
+  Night's Whisper
+  No-Dachi
+  Onyx Mage
+  Orcish Artillery
+  Peregrine Mask
+  Plague Wind
+  Plated Geopede
+  Primal Rage
+  Primordial Hydra
+  Prodigal Pyromancer
+  Pulse of the Fields
+  Pulse of the Forge
+  Quest for Renewal
+  Quicksilver Amulet
+  Quirion Dryad
+  Rage Reflection
+  Rain of Tears
+  Rapacious One
+  Ravenous Rats
+  Recollect
+  Relentless Rats
+  Remove Soul
+  Reprisal
+  Reverberate
+  Reviving Dose
+  Reya Dawnbringer
+  Rhox Pikemaster
+  Riddlekeeper
+  Righteous Cause
+  Righteousness
+  Rise from the Grave
+  Rites of Flourishing
+  Robe of Mirrors
+  Roc Egg
+  Rock Badger
+  Rootwalla
+  Rotting Legion
+  Roughshod Mentor
+  Royal Assassin
+  Ruhan of the Fomori
+  Rusted Sentinel
+  Samite Healer
+  Sanguine Bond
+  Scepter of Dominance
+  Scion of Oona
+  Scion of the Wild
+  Scroll Thief
+  Scute Mob
+  Searing Meditation
+  Seedborn Muse
+  Serra Ascendant
+  Serra's Blessing
+  Shattered Angel
+  Shatterstorm
+  Shivan Hellkite
+  Shock
+  Skinshifter
+  Skinwing
+  Skullmulcher
+  Skyhunter Patrol
+  Skyhunter Prowler
+  Skyhunter Skirmisher
+  Skyshroud Ranger
+  Skywinder Drake
+  Slaughter Cry
+  Smash
+  Sorin's Thirst
+  Sorin's Vengeance
+  Soul's Attendant
+  Soul Warden
+  Spark Elemental
+  Sparkmage Apprentice
+  Spirit Link
+  Spirit Mantle
+  Starlight Invoker
+  Stillmoon Cavalier
+  Stingerfling Spider
+  Stitch Together
+  Stonybrook Schoolmaster
+  Stun
+  Sudden Impact
+  Surgespanner
+  Swiftfoot Boots
+  Taste of Blood
+  Tempest of Light
+  Terror
+  Thran Golem
+  Threaten
+  Tidings
+  Timely Reinforcements
+  Titanic Growth
+  Tormented Soul
+  Treasure Hunter
+  Triskelion
+  Umezawa's Jitte
+  Uncontrolled Infestation
+  Unholy Strength
+  Vampire Aristocrat
+  Venerable Monk
+  Verdant Force
+  Veteran Armorsmith
+  Veteran of the Depths
+  Veteran Swordsmith
+  Viridian Betrayers
+  Viridian Shaman
+  Vision Skeins
+  Visions of Beyond
+  Volcanic Dragon
+  Volcanic Hammer
+  Wall of Faith
+  Wall of Omens
+  Wall of Torches
+  Warlord's Axe
+  Warstorm Surge
+  Wickerbough Elder
+  Wild Nacatl
+  Windrider Eel
+  Woodfall Primus
+  Worship
+  Wrath of God
+  Wring Flesh
+  Wurm's Tooth
+  Yavimaya Enchantress
+  Zombie Infestation
 
 Release 1.17b (August 27, 2011)
 =============
