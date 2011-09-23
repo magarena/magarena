@@ -156,6 +156,9 @@ inf: $(MAG)
 test: $(MAG)
 	-make `date +%H%M%S`.g
 
+%.speed: $(MAg)
+	$(JAVA) magic.DeckStrCal --deck1 release/decks/LSK_B.dec --deck2 release/decks/LSK_G.dec --ai1 $* --ai2 $* --games 100
+
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain >> $*.log 2>&1
