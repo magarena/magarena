@@ -10,6 +10,18 @@ cost={5}{G}{G}{G}
 pt=7/7
 timing=main
 
+>Yavimaya Enchantress
+image=http://magiccards.info/scans/en/10e/310.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Druid
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=fmain
+
 >Starlight Invoker
 image=http://magiccards.info/scans/en/10e/47.jpg
 value=2
