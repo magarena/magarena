@@ -76,6 +76,8 @@ brought to you by beholder, melvin, and wait321
 - fixed a bug where the game would crash when you load a deck that contains
   an unsupported card, instead a message indicating the unsupported cards is
   shown
+- fixed a bug where resources were not released properly after a sound effect
+  is played
 
 - added the following cards:
 
