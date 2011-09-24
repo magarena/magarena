@@ -4019,3 +4019,27 @@ color=g
 converted=2
 cost={1}{G}
 timing=main
+
+>Brain Weevil
+image=http://magiccards.info/scans/en/isd/91.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=b
+converted=4
+cost={3}{B}
+pt=1/1
+ability=intimidate
+timing=main
+
+>Bramblecrush
+image=http://magiccards.info/scans/en/isd/172.jpg
+value=3
+removal=3
+rarity=U
+type=Sorcery
+color=g
+converted=4
+cost={2}{G}{G}
+timing=removal
