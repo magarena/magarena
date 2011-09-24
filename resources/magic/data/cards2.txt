@@ -4105,6 +4105,17 @@ cost={1}{R}{R}
 pt=3/2
 timing=fmain
 
+>Curiosity
+image=http://magiccards.info/scans/en/isd/49.jpg
+value=2
+rarity=U
+type=Enchantment
+subtype=Aura
+color=u
+converted=1
+cost={U}
+timing=aura
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
