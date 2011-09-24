@@ -70,7 +70,7 @@ public class CardTableModel implements TableModel {
 	
 	private final boolean isDeck;
 	
-	private boolean[] isDesc = new boolean[] {false, false, false, false, false, false, false};
+	private boolean[] isDesc = new boolean[] {false, false, false, false, false, false, false, false, false, false, false, false, false};
 	private List<MagicDeckCardDefinition> cardDefinitions;
 	private Comparator<MagicDeckCardDefinition> comp;
 	
