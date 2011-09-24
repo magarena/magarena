@@ -4044,6 +4044,43 @@ converted=4
 cost={2}{G}{G}
 timing=removal
 
+>Champion of the Parish
+image=http://magiccards.info/scans/en/isd/6.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=fmain
+
+>Chapel Geist
+image=http://magiccards.info/scans/en/isd/7.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/3
+ability=flying
+timing=main
+
+>Charmbreaker Devils
+image=http://magiccards.info/scans/en/isd/134.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Devil
+color=r
+converted=6
+cost={5}{R}
+pt=4/4
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
