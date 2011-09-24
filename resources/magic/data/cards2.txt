@@ -4081,6 +4081,30 @@ cost={5}{R}
 pt=4/4
 timing=main
 
+>Cobbled Wings
+image=http://magiccards.info/scans/en/isd/219.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+given_ability=flying
+timing=equipment
+
+>Crossway Vampire
+image=http://magiccards.info/scans/en/isd/135.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Vampire
+color=r
+converted=3
+cost={1}{R}{R}
+pt=3/2
+timing=fmain
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
