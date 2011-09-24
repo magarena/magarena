@@ -71,6 +71,7 @@ public class MagicGame {
 	private int startTurn=0;
 	private int mainPhaseCount=100000000;
 	private int landPlayed=0;
+	private boolean creatureDiedThisTurn = false;
 	private boolean priorityPassed=false;
 	private int priorityPassedCount=0;
     private boolean skipTurn=false;
@@ -749,7 +750,15 @@ public class MagicGame {
     public void setLandPlayed(final int lp) {
 		this.landPlayed = lp;
 	}
-			
+	
+    public boolean getCreatureDiedThisTurn() {
+    	return creatureDiedThisTurn;
+    }
+    
+    public void setCreatureDiedThisTurn(boolean died) {
+    	this.creatureDiedThisTurn = died;
+    }
+    
 	public MagicStack getStack() {
 		return stack;
 	}

@@ -40,6 +40,9 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		// Execute trigger here so that full permanent state is preserved.
 		if (toLocation==MagicLocationType.Graveyard) {
 			game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyardFromPlay,permanent);
+			if (permanent.isCreature(game)) {
+				game.setCreatureDiedThisTurn(true);
+			}
 		}
 		
 		// Equipment
