@@ -22,7 +22,7 @@ public class MagicMarkerAction extends MagicAction {
 	private boolean oldStateCheckRequired;
 	private int oldPayedCostX;
 	private MagicTarget oldPayedCostTarget;
-    private long oldTime;
+    //private long oldTime;
 	private int oldLife1;
 	private int oldLife2;
 	private int oldPoison1;
