@@ -31,6 +31,7 @@ Selecting the AI to play against:
 Thanks to
   ubeefx for creating such a great game
   epiko for creating the Magarena logo and the amazing color themes
+  IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
   LSK, Kuno, David, and Grundomu for contributing custom decks
