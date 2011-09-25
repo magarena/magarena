@@ -4141,6 +4141,30 @@ cost={B}
 given_pt=-2/-2
 timing=removal
 
+>Diregraf Ghoul
+image=http://magiccards.info/scans/en/isd/97.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Zombie
+color=b
+converted=1
+cost={B}
+pt=2/2
+timing=main
+
+>Disciple of Griselbrand
+image=http://magiccards.info/scans/en/isd/98.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Human,Cleric
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
