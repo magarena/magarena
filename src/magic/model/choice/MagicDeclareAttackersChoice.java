@@ -31,8 +31,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-		final MagicDeclareAttackersResultBuilder builder=new MagicDeclareAttackersResultBuilder(game,player);
-		return builder.buildResults();
+		return MagicDeclareAttackersResultBuilder.buildResults(game,player);
 	}
 	
     @Override
