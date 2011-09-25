@@ -4116,6 +4116,31 @@ converted=1
 cost={U}
 timing=aura
 
+>Darkthicket Wolf
+image=http://magiccards.info/scans/en/isd/175.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Wolf
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+
+>Dead Weight
+image=http://magiccards.info/scans/en/isd/96.jpg
+value=3
+removal=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=1
+cost={B}
+given_pt=-2/-2
+timing=removal
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
