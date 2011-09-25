@@ -19,6 +19,7 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
             new MagicCondition[]{
                 MagicCondition.CAN_REGENERATE_CONDITION,
                 cost.getCondition(),
+                new MagicSingleActivationCondition(),
             },
             ACTIVATION_HINTS, 
             "Regen");

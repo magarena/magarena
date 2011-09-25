@@ -49,13 +49,18 @@ public class MagicPlayChoice extends MagicChoice {
             return PASS_OPTIONS;
         }
 		
-		final List<Object> options=new ArrayList<Object>();
+		final ArrayList<Object> options=new ArrayList<Object>();
 
 		// Pass is first choice when scores are equal.
 		options.add(MagicPlayChoiceResult.PASS);
 
         // add rest of the options
         addValidChoices(game, player, true, options);
+
+        // if single choice, skip instead of pass
+        if (options.size() == 1) {
+            options.set(0, MagicPlayChoiceResult.SKIP);
+        }
 		
 		return options;
 	}
