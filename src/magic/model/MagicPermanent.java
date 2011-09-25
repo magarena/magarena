@@ -43,8 +43,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     };
 		
 	private final long id;
-	private final MagicCard card;
 	private final MagicCardDefinition cardDefinition;
+	private final MagicCard card;
 	private MagicPlayer controller;
 	private MagicPermanent equippedCreature = MagicPermanent.NONE;
     private final MagicPermanentSet equipmentPermanents;	
@@ -87,12 +87,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
         id = sourcePermanent.id;
-        card = copyMap.copy(sourcePermanent.card);
         cardDefinition = sourcePermanent.cardDefinition;
-        controller = copyMap.copy(sourcePermanent.controller);
         
         copyMap.put(sourcePermanent, this);
 		
+        card = copyMap.copy(sourcePermanent.card);
+        controller = copyMap.copy(sourcePermanent.controller);
         stateFlags=sourcePermanent.stateFlags;
 		turnColorFlags=sourcePermanent.turnColorFlags;
 		turnAbilityFlags=sourcePermanent.turnAbilityFlags;
