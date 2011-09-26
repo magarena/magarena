@@ -40,6 +40,9 @@ public enum MagicAbility {
 	ProtectionFromCreatures("protection from creatures",100),
 	ProtectionFromDemons("protection from Demons",10),
 	ProtectionFromDragons("protection from Dragons",10),
+	ProtectionFromVampires("protection from Vampires",10),
+	ProtectionFromWerewolves("protection from Werewolves",10),
+	ProtectionFromZombies("protection from Zombies",10),
 	Reach("reach",20),
 	Shroud("shroud",60),
 	Swampwalk("swampwalk",10),
@@ -64,7 +67,10 @@ public enum MagicAbility {
 		ProtectionFromAllColors.getMask()|
 		ProtectionFromCreatures.getMask()|
 		ProtectionFromDemons.getMask()|
-		ProtectionFromDragons.getMask();
+		ProtectionFromDragons.getMask()|
+		ProtectionFromVampires.getMask()|
+		ProtectionFromWerewolves.getMask()|
+		ProtectionFromZombies.getMask();
 	
 	public static final long LANDWALK_FLAGS=
 		Forestwalk.getMask()|

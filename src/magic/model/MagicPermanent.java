@@ -626,6 +626,21 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                     MagicAbility.ProtectionFromDragons.hasAbility(abilityFlags)) {
 					return true;
 				}
+				// From Vampires.
+				if (sourcePermanent.hasSubType(MagicSubType.Vampire,game) &&
+                    MagicAbility.ProtectionFromVampires.hasAbility(abilityFlags)) {
+					return true;
+				}
+				// From Werewolves.
+				if (sourcePermanent.hasSubType(MagicSubType.Werewolf,game) &&
+                    MagicAbility.ProtectionFromWerewolves.hasAbility(abilityFlags)) {
+					return true;
+				}
+				// From Zombies.
+				if (sourcePermanent.hasSubType(MagicSubType.Zombie,game) &&
+                    MagicAbility.ProtectionFromZombies.hasAbility(abilityFlags)) {
+					return true;
+				}
 			}
 		}
 

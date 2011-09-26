@@ -4201,6 +4201,19 @@ cost={2}{G}
 pt=2/3
 timing=fmain
 
+>Elite Inquisitor
+image=http://magiccards.info/scans/en/isd/13.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=first strike,vigilance,protection from Vampires,protection from Werewolves,protection from Zombies
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
