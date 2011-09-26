@@ -4237,6 +4237,32 @@ pt=2/2
 ability=flying,haste
 timing=fmain
 
+>Falkenrath Noble
+image=http://magiccards.info/scans/en/isd/100.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Vampire
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+ability=flying
+timing=fmain
+
+>Feral Ridgewolf
+image=http://magiccards.info/scans/en/isd/142.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Wolf
+color=r
+converted=3
+cost={2}{R}
+pt=1/2
+ability=trample
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
