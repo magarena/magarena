@@ -4214,6 +4214,29 @@ pt=2/2
 ability=first strike,vigilance,protection from Vampires,protection from Werewolves,protection from Zombies
 timing=main
 
+>Endless Ranks of the Dead
+image=http://magiccards.info/scans/en/isd/99.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=4
+cost={2}{B}{B}
+timing=enchantment
+
+>Falkenrath Marauders
+image=http://magiccards.info/scans/en/isd/141.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Vampire,Warrior
+color=r
+converted=5
+cost={3}{R}{R}
+pt=2/2
+ability=flying,haste
+timing=fmain
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
