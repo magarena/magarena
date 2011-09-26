@@ -24,7 +24,9 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.lang.reflect.InvocationTargetException;
+import java.util.concurrent.Callable;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Set;
@@ -107,10 +109,6 @@ public class GameController {
 
 
     private static void invokeAndWait(final Runnable task) {
-        if (SwingUtilities.isEventDispatchThread()) {
-            task.run();
-            return;
-        }
         try { //invoke and wait
             SwingUtilities.invokeAndWait(task);
 		} catch (final InterruptedException ex) {
@@ -354,12 +352,20 @@ public class GameController {
 		});
 	}
 	
-	public void showComponent(final JComponent content) {
-		SwingUtilities.invokeLater(new Runnable() {
+    public <E extends JComponent> E showComponent(final Callable<E> func) {
+        final LinkedList<E> results = new LinkedList<E>();
+		invokeAndWait(new Runnable() {
 			public void run() {
-				gameViewer.showComponent(content);
+                try {
+                    final E content = func.call();
+                    results.add(content);
+                    gameViewer.showComponent(content);
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
 			}
 		});
+        return results.getFirst();
 	}
 
 	private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {

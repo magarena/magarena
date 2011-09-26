@@ -8,6 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.choice.MayChoicePanel;
 
+import java.util.concurrent.Callable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -131,9 +132,12 @@ public class MagicMayChoice extends MagicChoice {
 			}
 		}
 		
-		final MayChoicePanel choicePanel=new MayChoicePanel(controller,source,getDescription());
 		controller.disableActionButton(false);
-		controller.showComponent(choicePanel);
+		final MayChoicePanel choicePanel = controller.showComponent(new Callable<MayChoicePanel>() {
+            public MayChoicePanel call() {
+		        return new MayChoicePanel(controller,source,getDescription());
+            }
+        });
 		if (controller.waitForInputOrUndo()) {
 			return UNDO_CHOICE_RESULTS;
 		}

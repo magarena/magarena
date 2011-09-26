@@ -9,6 +9,7 @@ import magic.ui.GameController;
 import magic.ui.choice.MayChoicePanel;
 import magic.ui.choice.MultiKickerChoicePanel;
 
+import java.util.concurrent.Callable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -136,16 +137,22 @@ public class MagicKickerChoice extends MagicChoice {
 		final int count;
 		if (maximumCount>1) {
 			// Multiple kickers.
-			final MultiKickerChoicePanel kickerPanel=new MultiKickerChoicePanel(controller,source,cost,maximumCount);
-			controller.showComponent(kickerPanel);
+			final MultiKickerChoicePanel kickerPanel = controller.showComponent(new Callable<MultiKickerChoicePanel>() {
+                public MultiKickerChoicePanel call() {
+			        return new MultiKickerChoicePanel(controller,source,cost,maximumCount);
+                }
+            });
 			if (controller.waitForInputOrUndo()) {
 				return UNDO_CHOICE_RESULTS;
 			}
 			count=kickerPanel.getKickerCount();
 		} else if (maximumCount==1) {
 			// Single kicker.
-			final MayChoicePanel kickerPanel=new MayChoicePanel(controller,source,"You may pay the kicker "+cost.getText()+'.');
-			controller.showComponent(kickerPanel);
+			final MayChoicePanel kickerPanel = controller.showComponent(new Callable<MayChoicePanel>() {
+                public MayChoicePanel call() {
+			        return new MayChoicePanel(controller,source,"You may pay the kicker "+cost.getText()+'.');
+                }
+            });
 			if (controller.waitForInputOrUndo()) {
 				return UNDO_CHOICE_RESULTS;
 			}

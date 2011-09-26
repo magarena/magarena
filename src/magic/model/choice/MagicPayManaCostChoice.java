@@ -11,6 +11,7 @@ import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.choice.ManaCostXChoicePanel;
 
+import java.util.concurrent.Callable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -98,8 +99,11 @@ public class MagicPayManaCostChoice extends MagicChoice {
 		final int x;
 		if (cost.hasX()) {
 			final int maximumX=player.getMaximumX(game,cost);
-			final ManaCostXChoicePanel choicePanel=new ManaCostXChoicePanel(controller,source,maximumX);
-			controller.showComponent(choicePanel);
+			final ManaCostXChoicePanel choicePanel = controller.showComponent(new Callable<ManaCostXChoicePanel>() {
+                public ManaCostXChoicePanel call() {
+			        return new ManaCostXChoicePanel(controller,source,maximumX);
+                }
+            });
 			if (controller.waitForInputOrUndo()) {
 				return UNDO_CHOICE_RESULTS;
 			}
