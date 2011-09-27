@@ -13,6 +13,20 @@ import java.util.List;
 
 public class TokenCardDefinitions {
 
+	public static final MagicCardDefinition ANGEL4_TOKEN_CARD=new MagicCardDefinition("Angel","Angel4") {
+		public void initialize() {
+			setToken();
+			setValue(4);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Angel"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.White);
+			setColoredType();
+			setPowerToughness(4,4);
+			setAbility(MagicAbility.Flying);
+		}
+	};
+	
 	public static final MagicCardDefinition DRAGON4_TOKEN_CARD=new MagicCardDefinition("Dragon","Dragon4") {
 		public void initialize() {
 			setToken();
@@ -435,6 +449,7 @@ public class TokenCardDefinitions {
 	};
 	
 	public static final List<MagicCardDefinition> TOKEN_CARDS=Arrays.asList(
+		ANGEL4_TOKEN_CARD,
 		DRAGON4_TOKEN_CARD,
 		DRAGON5_TOKEN_CARD,
 		WORM_TOKEN_CARD,

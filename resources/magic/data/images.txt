@@ -63,6 +63,7 @@ nine.gif;http://forums.mtgsalvation.com/images/smilies/mana9.gif
 x.gif;http://forums.mtgsalvation.com/images/smilies/manax.gif
 tapped.gif;http://forums.mtgsalvation.com/images/smilies/tap.gif
 >tokens
+Angel4.jpg;http://magiccards.info/extras/token/conflux/angel.jpg
 Ape.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=42431&stc=1&d=1173951187
 Bat.jpg;http://img.photobucket.com/albums/v237/Xand0r/bat-token_guildpact_300.jpg
 Goblin1.jpg;http://img.photobucket.com/albums/v237/Xand0r/goblin-token_ravnica_300.jpg

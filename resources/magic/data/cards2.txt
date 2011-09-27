@@ -3981,6 +3981,7 @@ converted=5
 cost={4}{U}
 pt=3/3
 ability=flying
+static=player
 timing=fmain
 
 >Bloodcrazed Neonate
@@ -4297,6 +4298,33 @@ color=u
 converted=3
 cost={2}{U}
 timing=counter
+
+>Gallows Warden
+image=http://magiccards.info/scans/en/isd/16.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Spirit
+color=w
+converted=5
+cost={4}{W}
+pt=3/3
+ability=flying
+static=player
+timing=fmain
+
+>Geist of Saint Traft
+image=http://magiccards.info/scans/en/isd/213.jpg
+value=3
+rarity=M
+type=Creature
+subtype=Spirit,Cleric
+color=wu
+converted=3
+cost={1}{W}{U}
+pt=2/2
+ability=hexproof
+timing=main
 
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg

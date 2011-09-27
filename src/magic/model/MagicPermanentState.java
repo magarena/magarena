@@ -19,6 +19,7 @@ public enum MagicPermanentState {
 	Kicked("kicked",""),
 	Destroyed("destroyed",""),
 	ReturnToOwnerAtEndOfTurn("return to owner at end of turn","{R}"),
+	ExileAtEndOfCombat("exile at end of combat","")
 	;
 
 	public static final int CLEANUP_MASK=
