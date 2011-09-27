@@ -9,6 +9,7 @@ import magic.model.action.MagicCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicActivation;
 import magic.model.event.MagicCounterUnlessEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
@@ -18,7 +19,7 @@ import magic.model.stack.MagicCardOnStack;
 
 public class Spiketail_Hatchling {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            MagicCondition.NONE,
+            MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Counter),
             "Counter") {
 

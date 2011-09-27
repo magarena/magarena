@@ -11,6 +11,8 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicSingleActivationCondition;
 
 public abstract class MagicActivation implements MagicEventAction, Comparable<MagicActivation> {
+
+    public static final MagicCondition[] NO_COND = new MagicCondition[0];
 	
     private final MagicCondition conditions[];
     private final String text;

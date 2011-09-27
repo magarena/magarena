@@ -10,6 +10,7 @@ import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
@@ -31,7 +32,7 @@ public class Angelic_Shield {
     };
 	
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            MagicCondition.NONE,
+            MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
 

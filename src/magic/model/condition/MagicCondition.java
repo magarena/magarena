@@ -11,8 +11,12 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 
 public interface MagicCondition {
-
-    MagicCondition[] NONE = new MagicCondition[0];
+    
+    MagicCondition NONE = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+            return true;
+        }
+    };
 
 	MagicCondition CARD_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
@@ -92,6 +96,14 @@ public interface MagicCondition {
 			return permanent.getAbilityPlayedThisTurn()==0;
 		}
 	};
+	
+    MagicCondition AI_EQUIP_CONDITION=new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPermanent permanent=(MagicPermanent)source;
+			return !game.isArtificial() || permanent.getAbilityPlayedThisTurn() < 6;
+		}
+	};
+	
 	
 	MagicCondition MINUS_COUNTER_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
