@@ -4349,6 +4349,18 @@ cost={3}{W}{W}
 ability=vigilance
 timing=main
 
+>Ghoulraiser
+image=http://magiccards.info/scans/en/isd/102.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/2
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
