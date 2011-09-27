@@ -4361,6 +4361,28 @@ cost={1}{B}{B}
 pt=2/2
 timing=main
 
+>Grave Bramble
+image=http://magiccards.info/scans/en/isd/184.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Plant
+color=g
+converted=3
+cost={1}{G}{G}
+pt=3/4
+ability=defender,protection from Zombies
+timing=main
+
+>Graveyard Shovel
+image=http://magiccards.info/scans/en/isd/225.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=artifact
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
