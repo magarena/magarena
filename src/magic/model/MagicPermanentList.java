@@ -6,7 +6,7 @@ public class MagicPermanentList extends ArrayList<MagicPermanent> {
 
 	private static final long serialVersionUID = 1L;
 
-	MagicPermanentList() {}
+	public MagicPermanentList() {}
 	
 	public MagicPermanentList(final MagicPermanentList list) {
 		addAll(list);
