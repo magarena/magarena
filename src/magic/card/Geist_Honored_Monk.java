@@ -1,0 +1,45 @@
+package magic.card;
+
+import magic.data.TokenCardDefinitions;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
+import magic.model.MagicType;
+import magic.model.action.MagicPlayTokenAction;
+import magic.model.event.MagicEvent;
+import magic.model.mstatic.MagicCDA;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+
+public class Geist_Honored_Monk {
+	public static final MagicCDA CDA = new MagicCDA() {
+		@Override
+		public void getPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
+			final int amount = player.getNrOfPermanentsWithType(MagicType.Creature,game);
+			pt.set(amount, amount);
+		}
+    };
+    
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+		@Override
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+			return new MagicEvent(
+                    permanent,
+                    player,
+                    new Object[]{player},
+                    this,
+                    player + " puts two 1/1 white Spirit creature tokens with flying onto the battlefield.");
+		}
+		
+		@Override
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+			final MagicPlayer player = (MagicPlayer)data[0];
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.SPIRIT2_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.SPIRIT2_TOKEN_CARD));
+		}		
+    };
+}
