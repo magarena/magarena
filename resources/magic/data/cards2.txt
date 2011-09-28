@@ -4313,6 +4313,18 @@ ability=flying
 static=player
 timing=fmain
 
+>Galvanic Juggernaut
+image=http://magiccards.info/scans/en/isd/222.jpg
+value=4
+rarity=U
+type=Artifact,Creature
+subtype=Juggernaut
+converted=4
+cost={4}
+pt=5/5
+ability=attacks each turn if able,doesn't untap during untap step
+timing=main
+
 >Geist of Saint Traft
 image=http://magiccards.info/scans/en/isd/213.jpg
 value=3
