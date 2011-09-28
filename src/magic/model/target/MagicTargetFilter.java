@@ -466,6 +466,18 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
+	
+	MagicTargetFilter TARGET_TOKEN_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return target.getController() == player &&
+					permanent.isCreature(game) &&
+					permanent.getCardDefinition().isToken();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
 
 	MagicTargetFilter TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
 		
