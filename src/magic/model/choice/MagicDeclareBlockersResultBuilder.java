@@ -26,6 +26,9 @@ public class MagicDeclareBlockersResultBuilder {
 	private static final int MAX_RESULTS=12;
 	private static final int MAX_ATTACKERS=3;
 	private static final int MAX_TURN=1;
+    private static final double MIN_WARN    = 1e5;
+    private static final double MIN_SWITCH  = 1e4;
+    private static final double NUM_SAMPLES = 1e4;
 
 	private final MagicGame game;
 	private final MagicPlayer attackingPlayer;
@@ -64,9 +67,9 @@ public class MagicDeclareBlockersResultBuilder {
         //generate basic blocks 
         //buildBasicBlocks(0);
         
-        //sample 100000 random blocks 
+        //sample NUM_SAMPLES random blocks
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(attackers.length + blockers.size());
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < NUM_SAMPLES; i++) {
             final Map<Integer, List<MagicCombatCreature>> block = 
                 new HashMap<Integer, List<MagicCombatCreature>>();
             for (int j = 0; j < attackers.length; j++) {
@@ -295,11 +298,11 @@ public class MagicDeclareBlockersResultBuilder {
 		result=new MagicDeclareBlockersResult(0,0);
 		position=0;
         
-        if (max_blocks > 1e5) {
+        if (max_blocks > MIN_WARN) {
             System.err.println("WARNING. Number of blocking options is " + max_blocks);
         }
 
-        if (max_blocks > 1e6) {
+        if (max_blocks > MIN_SWITCH) {
             buildBlockersFast();
         } else {
 		    buildAttacker(0);
