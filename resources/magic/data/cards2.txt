@@ -4461,6 +4461,31 @@ converted=2
 cost={1}{W}
 timing=enchantment
 
+>Invisible Stalker
+image=http://magiccards.info/scans/en/isd/60.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Rogue
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=hexproof,unblockable
+timing=main
+
+>Kessig Cagebreakers
+image=http://magiccards.info/scans/en/isd/189.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Human,Rogue
+color=g
+converted=5
+cost={4}{G}
+pt=3/4
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
