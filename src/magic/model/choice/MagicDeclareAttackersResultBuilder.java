@@ -41,7 +41,8 @@ public class MagicDeclareAttackersResultBuilder {
 			}
 		}
 
-		final int maxAttackers=MAX_ATTACKERS[game.getRelativeTurn()];
+		final int maxAttackers = game.getRelativeTurn() < MAX_ATTACKERS.length ? 
+            MAX_ATTACKERS[game.getRelativeTurn()] : 0;
 		int size=attackersSet.size();
 
         // Single result with the required attackers only.
