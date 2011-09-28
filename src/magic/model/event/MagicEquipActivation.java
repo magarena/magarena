@@ -6,6 +6,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicAttachEquipmentAction;
+import magic.model.action.MagicPlayAbilityAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -18,7 +19,11 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 	
 	public MagicEquipActivation(final MagicManaCost equipCost) {
 		super(
-            new MagicCondition[]{MagicCondition.SORCERY_CONDITION,equipCost.getCondition()},
+            new MagicCondition[]{
+                MagicCondition.SORCERY_CONDITION,
+                MagicCondition.AI_EQUIP_CONDITION,
+                equipCost.getCondition()
+            },
             EQUIP_ACTIVATION_HINTS,
             "Equip"
             );
@@ -47,6 +52,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
         event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
                 game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],creature));
+                game.doAction(new MagicPlayAbilityAction((MagicPermanent)data[0]));
             }
         });
 	}
