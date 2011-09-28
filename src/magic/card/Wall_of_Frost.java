@@ -27,7 +27,7 @@ public class Wall_of_Frost {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntap,true));
+			game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntapDuringNext,true));
 		}
     };
 }

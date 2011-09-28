@@ -16,6 +16,7 @@ public enum MagicAbility {
 	Changeling("changeling",10),
 	Deathtouch("deathtouch",60),
 	Defender("defender",-100),
+	DoesNotUntap("doesn't untap during untap step",-30),
 	DoubleStrike("double strike",100),
 	Exalted("exalted",10),
 	Fear("fear",50),

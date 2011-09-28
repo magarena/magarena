@@ -50,7 +50,7 @@ public class Arbalest_Elite {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
-                    game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntap,true));
+                    game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntapDuringNext,true));
                 }
 			});
 		}

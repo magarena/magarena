@@ -66,7 +66,7 @@ public class Frost_Titan {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicTapAction(perm,true));
-                    game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntap,true));
+                    game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntapDuringNext,true));
                 }
             });
         }
@@ -94,7 +94,7 @@ public class Frost_Titan {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicTapAction(perm,true));
-                    game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntap,true));
+                    game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.DoesNotUntapDuringNext,true));
                 }
             });
         }

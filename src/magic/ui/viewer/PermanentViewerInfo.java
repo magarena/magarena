@@ -127,8 +127,8 @@ public class PermanentViewerInfo {
 		} else if (!permanent.canTap(game)) {
 			textBuffer.append("{S}");
 		}
-		if (permanent.hasState(MagicPermanentState.DoesNotUntap)) {
-			textBuffer.append(MagicPermanentState.DoesNotUntap.getText());
+		if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
+			textBuffer.append(MagicPermanentState.DoesNotUntapDuringNext.getText());
 		}
 		if (permanent.isRegenerated()) {
 			textBuffer.append(MagicPermanentState.Regenerated.getText());

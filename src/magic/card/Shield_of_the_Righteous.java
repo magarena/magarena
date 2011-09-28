@@ -28,7 +28,7 @@ public class Shield_of_the_Righteous {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntap,true));
+			game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntapDuringNext,true));
 		}
     };
 }

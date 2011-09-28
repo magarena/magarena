@@ -1,5 +1,6 @@
 package magic.model.phase;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
@@ -31,9 +32,13 @@ public class MagicUntapPhase extends MagicPhase {
 			if (permanent.hasState(MagicPermanentState.Summoned)) {
 				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Summoned,false));
 			}
-			if (permanent.hasState(MagicPermanentState.DoesNotUntap)) {
-				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DoesNotUntap,false));
-			} else if (permanent.isTapped()&&(!exhausted||!(permanent.isLand()||permanent.isCreature(game)))) {
+			if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
+				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DoesNotUntapDuringNext,false));
+			} else if (permanent.isTapped() &&
+					!permanent.hasAbility(game,MagicAbility.DoesNotUntap) &&
+					(!exhausted ||
+					!(permanent.isLand() ||
+					permanent.isCreature(game)))) {
 				game.doAction(new MagicUntapAction(permanent));
 			}
 		}		

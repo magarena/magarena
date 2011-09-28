@@ -4,7 +4,7 @@ public enum MagicPermanentState {
 	
 	Tapped("tapped","{T}"),
 	Summoned("summoned","{n}"),
-	DoesNotUntap("doesn't untap during its controller's next untap step","{s}"),
+	DoesNotUntapDuringNext("doesn't untap during its controller's next untap step","{s}"),
 	Regenerated("regenerated","{r}"),
 	CannotBeRegenerated("can't be regenerated","{~r}"),
 	Attacking("attacking","{c}"),
@@ -25,7 +25,7 @@ public enum MagicPermanentState {
 	public static final int CLEANUP_MASK=
 		Tapped.getMask()|
 		Summoned.getMask()|
-		DoesNotUntap.getMask()|
+		DoesNotUntapDuringNext.getMask()|
 		SacrificeAtEndOfTurn.getMask()|
 		RemoveAtEndOfTurn.getMask()|
 		RemoveAtEndOfYourTurn.getMask()|

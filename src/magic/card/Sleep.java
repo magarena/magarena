@@ -47,7 +47,7 @@ public class Sleep {
                         game.doAction(new MagicTapAction(creature,true));
                         game.doAction(new MagicChangeStateAction(
                                     creature,
-                                    MagicPermanentState.DoesNotUntap,
+                                    MagicPermanentState.DoesNotUntapDuringNext,
                                     true));
                     }
                 }
