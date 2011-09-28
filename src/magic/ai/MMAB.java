@@ -2,6 +2,7 @@ package magic.ai;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
@@ -10,10 +11,10 @@ import java.util.List;
 
 public class MMAB implements MagicAI {
 	
-	private static final int INITIAL_MAX_DEPTH=110;
-	private static final int INITIAL_MAX_GAMES=10000;
-	private static final int MAX_DEPTH=120;
-	private static final int MAX_GAMES=12000;
+	private static final int INITIAL_MAX_DEPTH=120;
+	private static final int INITIAL_MAX_GAMES=12000;
+	private static final int         MAX_DEPTH=120;
+	private static final int         MAX_GAMES=12000;
 
     // maximum of 4 artificial worker threads.
 	private final int THREADS = Math.min(4,Runtime.getRuntime().availableProcessors());
@@ -71,7 +72,7 @@ public class MMAB implements MagicAI {
 			achoices.add(new ArtificialChoiceResults(choice));
 		}
 		
-		// Create workers.
+		// create workers
         workers.clear();
 		final ArtificialScoreBoard scoreBoard=new ArtificialScoreBoard();
 		final int workerSize = Math.min(size, THREADS);
@@ -84,26 +85,36 @@ public class MMAB implements MagicAI {
 			workers.add(new ArtificialWorker(index,workerGame,scoreBoard));
 		}
 		
-		// find optimal number of main phases and best score and first result single-threaded.
-		int mainPhases = sourceGame.getArtificialLevel(scorePlayer.getIndex());
-		final ArtificialChoiceResults firstChoice = achoices.get(0);
-		while (true) {
+		// find feasible number of main phases and best score and first result single-threaded.
+        final long START_TIME = System.currentTimeMillis();
+        final int MAX_MAIN_PHASES = sourceGame.getArtificialLevel(scorePlayer.getIndex());
+        final int MAX_TIME = 1000 * MAX_MAIN_PHASES;
+        final int MAX_TIME_PER_CHOICE = MAX_TIME / achoices.size();
+        int mainPhases = 1;
+
+		final ArtificialChoiceResults firstChoice = achoices.get(0).choiceResults[0] == MagicPlayChoiceResult.PASS ? 
+            achoices.get(1) :
+            achoices.get(0);
+        
+        while (System.currentTimeMillis() - START_TIME < MAX_TIME_PER_CHOICE / 5) {
 			pruneScore = createPruneScore();
 			processingLeft = 1;
 			startWorker(firstChoice,mainPhases,INITIAL_MAX_DEPTH,INITIAL_MAX_GAMES);
 			waitUntilProcessed();
-			if (mainPhases < 2 || firstChoice.aiScore != ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE) {
+            if (mainPhases >= MAX_MAIN_PHASES || firstChoice.aiScore.getScore() > 99900000) {
 				break;
 			}
 			scoreBoard.clear();
-			mainPhases--;
+			mainPhases += 1;
 		} 
 		
 		// find best score for the other choice results multi-threaded.
 		if (size > 1) {
 			processingLeft = size-1;
-			for (int index = 1; index < size; index++) {
-				startWorker(achoices.get(index),mainPhases,MAX_DEPTH,MAX_GAMES);
+			for (final ArtificialChoiceResults acr : achoices) {
+                if (acr.aiScore == ArtificialScore.INVALID_SCORE) {
+    				startWorker(acr,mainPhases,MAX_DEPTH,MAX_GAMES);
+                }
 			}
 			waitUntilProcessed();
             workers.clear();
