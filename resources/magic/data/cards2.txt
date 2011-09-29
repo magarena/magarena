@@ -4585,6 +4585,29 @@ given_pt=1/2
 given_ability=hexproof
 timing=equipment
 
+>Mausoleum Guard
+image=http://magiccards.info/scans/en/isd/20.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,SCout
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+timing=main
+
+>Maw of the Mire
+image=http://magiccards.info/scans/en/isd/108.jpg
+value=3
+removal=3
+rarity=C
+type=Sorcery
+color=b
+converted=5
+cost={4}{B}
+timing=removal
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
