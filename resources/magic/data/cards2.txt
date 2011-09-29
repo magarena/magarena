@@ -4590,7 +4590,7 @@ image=http://magiccards.info/scans/en/isd/20.jpg
 value=2
 rarity=U
 type=Creature
-subtype=Human,SCout
+subtype=Human,Scout
 color=w
 converted=4
 cost={3}{W}
@@ -4607,6 +4607,28 @@ color=b
 converted=5
 cost={4}{B}
 timing=removal
+
+>Mentor of the Meek
+image=http://magiccards.info/scans/en/isd/21.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+timing=main
+
+>Midnight Haunting
+image=http://magiccards.info/scans/en/isd/22.jpg
+value=3
+rarity=U
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=main
 
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
