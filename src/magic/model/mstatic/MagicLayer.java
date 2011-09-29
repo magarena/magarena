@@ -70,7 +70,7 @@ public enum MagicLayer {
     }
     
     public static int getColorFlags(final MagicGame game, final MagicPermanent permanent, int flags) {
-        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Color)) {
             final MagicStatic mstatic = mpstatic.getStatic();
             if (mstatic.accept(game, mpstatic.getPermanent(),permanent)) {
 			    flags = mstatic.getColorFlags(permanent,flags);
