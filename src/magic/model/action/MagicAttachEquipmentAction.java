@@ -38,6 +38,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		if (oldEquippedCreature.isValid()) {
 			score-=oldEquippedCreature.getScore(game);
 			oldEquippedCreature.removeEquipment(equipment);
+            game.doAction(new MagicPlayAbilityAction(equipment));
 			score+=oldEquippedCreature.getScore(game);
 			if (oldEquippedCreature.getController()==equipment.getController()) {
 				// Prevent unnecessary equips.
