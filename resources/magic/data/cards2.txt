@@ -4714,3 +4714,28 @@ cost={3}{U}{U}
 pt=4/4
 ability=flying
 timing=main
+
+>Night Revelers
+image=http://magiccards.info/scans/en/isd/153.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Vampire
+color=r
+converted=5
+cost={4}{R}
+pt=4/4
+timing=main
+
+>One-Eyed Scarecrow
+image=http://magiccards.info/scans/en/isd/230.jpg
+value=3
+removal=1
+rarity=C
+type=Artifact,Creature
+converted=3
+cost={3}
+pt=2/3
+ability=defender
+static=opponent
+timing=artifact
