@@ -4630,6 +4630,30 @@ converted=3
 cost={2}{W}
 timing=main
 
+>Mikaeus, the Lunarch
+image=http://magiccards.info/scans/en/isd/23.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Human,Cleric
+color=w
+converted=1
+cost={X}{W}
+timing=main
+
+>Mindshrieker
+image=http://magiccards.info/scans/en/isd/67.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Spirit,Bird
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=flying
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
