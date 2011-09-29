@@ -4812,3 +4812,26 @@ cost={3}{B}{B}{B}
 pt=6/6
 ability=flying
 timing=main
+
+>Rebuke
+image=http://magiccards.info/scans/en/isd/29.jpg
+value=3
+removal=4
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=attack
+
+>Riot Devils
+image=http://magiccards.info/scans/en/isd/160.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Devil
+color=r
+converted=3
+cost={2}{R}
+pt=2/3
+timing=main
