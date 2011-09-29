@@ -4739,3 +4739,27 @@ pt=2/3
 ability=defender
 static=opponent
 timing=artifact
+
+>Orchard Spirit
+image=http://magiccards.info/scans/en/isd/198.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+ability=can't be blocked except by creatures with flying
+timing=main
+
+>Paraselene
+image=http://magiccards.info/scans/en/isd/26.jpg
+value=2
+removal=2
+rarity=U
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
+timing=removal
