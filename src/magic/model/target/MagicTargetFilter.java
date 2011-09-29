@@ -494,6 +494,17 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_NON_DEMON = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+				final MagicPermanent permanent = (MagicPermanent)target;
+				return !permanent.hasSubType(MagicSubType.Demon,game) &&
+						permanent.isCreature(game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
