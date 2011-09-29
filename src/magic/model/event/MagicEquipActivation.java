@@ -52,7 +52,6 @@ public class MagicEquipActivation extends MagicPermanentActivation {
         event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
                 game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],creature));
-                game.doAction(new MagicPlayAbilityAction((MagicPermanent)data[0]));
             }
         });
 	}

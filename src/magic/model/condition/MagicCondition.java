@@ -100,7 +100,7 @@ public interface MagicCondition {
     MagicCondition AI_EQUIP_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
-			return !game.isArtificial() || permanent.getAbilityPlayedThisTurn() < 6;
+			return !game.isArtificial() || permanent.getAbilityPlayedThisTurn() < 2;
 		}
 	};
 	
