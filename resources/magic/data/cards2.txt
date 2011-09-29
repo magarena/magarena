@@ -4510,6 +4510,32 @@ cost={3}{G}{G}{G}
 pt=6/6
 timing=main
 
+>Lantern Spirit
+image=http://magiccards.info/scans/en/isd/62.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Spirit
+color=u
+converted=3
+cost={2}{U}
+pt=2/1
+ability=flying
+timing=main
+
+>Lumberknot
+image=http://magiccards.info/scans/en/isd/191.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Treefolk
+color=g
+converted=4
+cost={2}{G}{G}
+pt=1/1
+ability=hexproof
+timing=main
+
 >Morkrut Banshee
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
