@@ -4045,6 +4045,18 @@ converted=4
 cost={2}{G}{G}
 timing=removal
 
+>Butcher's Cleaver
+image=http://magiccards.info/scans/en/isd/217.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={3}
+given_pt=3/0
+timing=equipment
+
 >Champion of the Parish
 image=http://magiccards.info/scans/en/isd/6.jpg
 value=2
@@ -4895,3 +4907,15 @@ converted=1
 cost={U}
 given_pt=-3/-0
 timing=removal
+
+>Sharpened Pitchfork
+image=http://magiccards.info/scans/en/isd/232.jpg
+value=2
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+given_ability=first strike
+timing=equipment
