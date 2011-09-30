@@ -4094,6 +4094,19 @@ cost={5}{R}
 pt=4/4
 timing=main
 
+>Claustrophobia
+image=http://magiccards.info/scans/en/isd/48.jpg
+value=3
+removal=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=3
+cost={1}{U}{U}
+given_ability=doesn't untap during untap step
+timing=tapping
+
 >Cobbled Wings
 image=http://magiccards.info/scans/en/isd/219.jpg
 value=2
@@ -4990,3 +5003,16 @@ converted=5
 cost={4}{G}
 pt=2/4
 timing=main
+
+>Spectral Flight
+image=http://magiccards.info/scans/en/isd/79.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=2
+cost={1}{U}
+given_pt=2/2
+given_ability=flying
+timing=aura
