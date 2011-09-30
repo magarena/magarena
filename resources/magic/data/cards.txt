@@ -7708,7 +7708,7 @@ color=ub
 converted=3
 cost={2}{U/B}
 given_pt=-3/0
-given_ability=flash
+ability=flash
 timing=removal
 
 >Weakness
