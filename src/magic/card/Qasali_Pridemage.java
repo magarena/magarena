@@ -20,7 +20,7 @@ public class Qasali_Pridemage {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
-            "Destory") {
+            "Destroy") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
