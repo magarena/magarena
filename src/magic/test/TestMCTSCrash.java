@@ -1,7 +1,7 @@
 package magic.test;
 
-import magic.ai.MCTSAI;
 import magic.ai.MagicAI;
+import magic.ai.MagicAIImpl;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
@@ -19,7 +19,7 @@ class TestMCTSCrash extends TestGameBuilder {
 		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
 		tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
 		tournament.setStartPlayer(0);
-        tournament.setAIs(new MagicAI[]{null, new MCTSAI(true, true)});
+        tournament.setAIs(new MagicAI[]{null, MagicAIImpl.MCTS.getAI()});
 		
 		final MagicGame game=tournament.nextGame(true);
 		game.setPhase(MagicMainPhase.getFirstInstance());
