@@ -5002,6 +5002,7 @@ color=g
 converted=5
 cost={4}{G}
 pt=2/4
+ability=reach
 timing=main
 
 >Spectral Flight
@@ -5016,3 +5017,26 @@ cost={1}{U}
 given_pt=2/2
 given_ability=flying
 timing=aura
+
+>Spectral Rider
+image=http://magiccards.info/scans/en/isd/35.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit,Knight
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=intimidate
+timing=main
+
+>Spidery Grasp
+image=http://magiccards.info/scans/en/isd/204.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=3
+cost={2}{G}
+timing=tapping
