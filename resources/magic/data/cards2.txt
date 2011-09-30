@@ -4943,3 +4943,27 @@ cost={1}
 equip={2}
 given_pt=2/0
 timing=equipment
+
+>Skirsdag Cultist
+image=http://magiccards.info/scans/en/isd/163.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=r
+converted=4
+cost={2}{R}{R}
+pt=2/2
+timing=main
+
+>Slayer of the Wicked
+image=http://magiccards.info/scans/en/isd/32.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=4
+cost={3}{W}
+pt=3/2
+timing=fmain

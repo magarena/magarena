@@ -709,11 +709,21 @@ public interface MagicTargetFilter {
 	};
 	
 	MagicTargetFilter TARGET_MERFOLK_CREATURE = new MagicTargetFilter() {
-		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {		
 			return ((MagicPermanent)target).hasSubType(MagicSubType.Merfolk,game);
 		}
-		
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return permanent.hasSubType(MagicSubType.Vampire,game) ||
+					permanent.hasSubType(MagicSubType.Werewolf,game) ||
+					permanent.hasSubType(MagicSubType.Zombie,game);
+		}
 		public boolean acceptType(final MagicTargetType targetType) {	
 			return targetType==MagicTargetType.Permanent;
 		}		
