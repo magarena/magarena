@@ -71,4 +71,9 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 	public static CardImagesProvider getInstance() {
 		return INSTANCE;
 	}
+	
+	public void clearCache() {		
+		origImages.clear();
+		scaledImages.clear();
+	}
 }

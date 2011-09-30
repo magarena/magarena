@@ -23,4 +23,5 @@ public interface CardImagesProvider {
             final int index,
             final boolean high);
 
+	void clearCache();
 }
