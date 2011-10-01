@@ -5242,3 +5242,27 @@ cost={2}{W}
 pt=2/1
 ability=flying,first strike
 timing=main
+
+>Walking Corpse
+image=http://magiccards.info/scans/en/isd/126.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=2
+cost={1}{B}
+pt=2/2
+timing=main
+
+>Woodland Sleuth
+image=http://magiccards.info/scans/en/isd/210.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Scout
+color=g
+converted=4
+cost={3}{G}
+pt=2/3
+timing=main
