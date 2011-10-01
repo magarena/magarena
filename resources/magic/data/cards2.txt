@@ -5112,3 +5112,38 @@ cost={3}{G}
 pt=0/13
 ability=defender
 timing=main
+
+>Tribute to Hunger
+image=http://magiccards.info/scans/en/isd/119.jpg
+value=3
+removal=2
+rarity=U
+type=Instant
+color=b
+converted=3
+cost={2}{B}
+timing=removal
+
+>Typhoid Rats
+image=http://magiccards.info/scans/en/isd/120.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Rat
+color=b
+converted=1
+cost={B}
+pt=1/1
+ability=deathtouch
+timing=main
+
+>Unbreathing Horde
+image=http://magiccards.info/scans/en/isd/121.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Zombie
+color=b
+converted=3
+cost={2}{B}
+timing=main
