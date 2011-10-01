@@ -751,6 +751,19 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
+	
+	MagicTargetFilter TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return !permanent.hasSubType(MagicSubType.Vampire,game) &&
+					!permanent.hasSubType(MagicSubType.Werewolf,game) &&
+					!permanent.hasSubType(MagicSubType.Zombie,game) &&
+					permanent.isCreature(game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
     
     MagicTargetFilter TARGET_MERFOLK_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {

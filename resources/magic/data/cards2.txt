@@ -5193,3 +5193,27 @@ color=r
 converted=2
 cost={1}{R}
 timing=pump
+
+>Victim of Night
+image=http://magiccards.info/scans/en/m11/95.jpg
+value=3
+removal=4
+rarity=C
+type=Instant
+color=b
+converted=2
+cost={B}{B}
+timing=removal
+
+>Village Bell-Ringer
+image=http://magiccards.info/scans/en/isd/41.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Scout
+color=w
+converted=3
+cost={2}{W}
+pt=1/4
+ability=flash
+timing=main
