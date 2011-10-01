@@ -2,6 +2,7 @@ package magic.ui;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Iterator;
 
 public final class DelayedViewersThread extends Thread {
 
@@ -33,11 +34,11 @@ public final class DelayedViewersThread extends Thread {
 					wait();
 				}
 				final long time = System.currentTimeMillis();
-				for (final DelayedViewer delayedViewer : delayedViewers.keySet()) {
-					final long delayedTime = delayedViewers.get(delayedViewer);
-					if (delayedTime <= time) {
-						delayedViewer.showDelayed();
-						delayedViewers.remove(delayedViewer);
+				for (Iterator<Map.Entry<DelayedViewer,Long>> iter = delayedViewers.entrySet().iterator(); iter.hasNext();) {
+                    final Map.Entry<DelayedViewer, Long> entry = iter.next();
+					if (entry.getValue() <= time) {
+						entry.getKey().showDelayed();
+                        iter.remove();
 					}
 				}
 

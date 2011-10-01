@@ -172,6 +172,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
                 }
             });
         }
+			
+		// clear images that are set to "missing image" in cache
+		magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
                 
         IconImages.reloadSymbols();
       
