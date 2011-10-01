@@ -11235,3 +11235,28 @@ converted=4
 cost={3}{W}
 given_ability=indestructible
 timing=aura
+
+>Battered Golem
+image=http://magiccards.info/scans/en/5dn/106.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+converted=3
+cost={3}
+pt=3/2
+ability=doesn't untap during untap step
+timing=main
+
+>Deep-Slumber Titan
+image=http://magiccards.info/scans/en/shm/89.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+color=r
+converted=4
+cost={2}{R}{R}
+pt=7/7
+ability=doesn't untap during untap step
+timing=main
