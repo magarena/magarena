@@ -394,6 +394,18 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
+	
+	MagicTargetFilter TARGET_SPIRIT_OR_ENCHANTMENT = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {	
+			final MagicPermanent targetPermanent = (MagicPermanent)target;
+			return targetPermanent.hasSubType(MagicSubType.Spirit,game) ||
+					targetPermanent.isEnchantment();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}
+	};
+
 
 	MagicTargetFilter TARGET_PERMANENT_YOU_CONTROL=new MagicTargetFilter() {
 		

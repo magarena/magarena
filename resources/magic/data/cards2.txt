@@ -5147,3 +5147,26 @@ color=b
 converted=3
 cost={2}{B}
 timing=main
+
+>Unruly Mob
+image=http://magiccards.info/scans/en/isd/39.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=main
+
+>Urgent Exorcism
+image=http://magiccards.info/scans/en/isd/40.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=w
+converted=2
+cost={1}{W}
+timing=removal

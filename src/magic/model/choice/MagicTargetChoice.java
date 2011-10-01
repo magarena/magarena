@@ -113,6 +113,8 @@ public class MagicTargetChoice extends MagicChoice {
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.None,"target enchantment");
 	public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.Negative,"target enchantment");
+	public static final MagicTargetChoice NEG_TARGET_SPIRIT_OR_ENCHANTMENT =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_SPIRIT_OR_ENCHANTMENT,true,MagicTargetHint.Negative,"target Spirit or enchantment");
 	public static final MagicTargetChoice TARGET_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE,true,MagicTargetHint.None,"target creature");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE=
