@@ -11286,3 +11286,13 @@ cost={G}
 pt=2/2
 ability=doesn't untap during untap step
 timing=main
+
+>Exhume
+image=http://magiccards.info/scans/en/br/24.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=2
+cost={1}{B}
+timing=main
