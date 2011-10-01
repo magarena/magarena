@@ -5266,3 +5266,14 @@ converted=4
 cost={3}{G}
 pt=2/3
 timing=main
+
+>Wreath of Geists
+image=http://magiccards.info/scans/en/isd/211.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=g
+converted=1
+cost={G}
+timing=enchantment
