@@ -11260,3 +11260,29 @@ cost={2}{R}{R}
 pt=7/7
 ability=doesn't untap during untap step
 timing=main
+
+>Goblin Sharpshooter
+image=http://magiccards.info/scans/en/on/207.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Goblin
+color=r
+converted=3
+cost={2}{R}
+pt=1/1
+ability=doesn't untap during untap step
+timing=main
+
+>Nettle Sentinel
+image=http://magiccards.info/scans/en/eve/71.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=1
+cost={G}
+pt=2/2
+ability=doesn't untap during untap step
+timing=main

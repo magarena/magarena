@@ -19,6 +19,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
 	public static final int GAIN_LIFE = 2; // always returns YES_CHOICE_LIST
 	public static final int LOSE_LIFE = 3;
 	public static final int OPPONENT_LOSE_LIFE = 4; // always returns YES_CHOICE_LIST
+	public static final int UNTAP = 5; // always returns YES_CHOICE_LIST
 	
 	public static final int DEFAULT_NONE = 0;
 	public static final int DEFAULT_NO = 1;
