@@ -5217,3 +5217,28 @@ cost={2}{W}
 pt=1/4
 ability=flash
 timing=main
+
+>Village Cannibals
+image=http://magiccards.info/scans/en/isd/125.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+timing=main
+
+>Voiceless Spirit
+image=http://magiccards.info/scans/en/isd/42.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=w
+converted=3
+cost={2}{W}
+pt=2/1
+ability=flying,first strike
+timing=main
