@@ -5099,3 +5099,16 @@ color=r
 converted=3
 cost={1}{R}{R}
 timing=removal
+
+>Tree of Redemption
+image=http://magiccards.info/scans/en/isd/207.jpg
+value=4
+rarity=M
+type=Creature
+subtype=Plant
+color=g
+converted=4
+cost={3}{G}
+pt=0/13
+ability=defender
+timing=main
