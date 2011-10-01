@@ -29,6 +29,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 
 	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
 	
+	private final MagicFrame frame;
 	private final DownloadImageFiles files;
 	private final JComboBox proxyComboBox;
 	private final JTextField addressTextField;
@@ -44,6 +45,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 
 	public DownloadImagesDialog(final MagicFrame frame) {
 		super(frame,true);
+		this.frame = frame;
 		this.setLayout(new BorderLayout());
 		this.setTitle("Download images");
 		this.setSize(300,405);
@@ -175,6 +177,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 			
 		// clear images that are set to "missing image" in cache
 		magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
+		frame.updateGameView();
                 
         IconImages.reloadSymbols();
       

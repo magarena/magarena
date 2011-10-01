@@ -514,6 +514,12 @@ public class MagicFrame extends JFrame implements ActionListener {
 		enableMenuItem(RESET_GAME_ITEM,true);
 		enableMenuItem(CONCEDE_GAME_ITEM,true);
 	}
+	
+	public void updateGameView() {
+		if(gamePanel != null) {
+			gamePanel.updateView();
+		}
+	}
 		
 	private void openCardExplorer() {
 		enableMenuItem(CARD_EXPLORER_ITEM,false);
