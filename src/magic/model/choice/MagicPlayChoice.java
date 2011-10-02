@@ -58,11 +58,6 @@ public class MagicPlayChoice extends MagicChoice {
         // add rest of the options
         addValidChoices(game, player, true, options);
 
-        // if single choice, skip instead of pass
-        if (options.size() == 1) {
-            options.set(0, MagicPlayChoiceResult.SKIP);
-        }
-		
 		return options;
 	}
 	
