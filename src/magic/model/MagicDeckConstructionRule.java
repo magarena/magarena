@@ -23,7 +23,7 @@ public enum MagicDeckConstructionRule {
 		ArrayList<MagicDeckConstructionRule> brokenRules = new ArrayList<MagicDeckConstructionRule>();
 		
 		if(deck.size() < 60) {
-			// brokenRules.add(Min60Cards);
+			brokenRules.add(Min60Cards);
 		}
 		
 		List<MagicDeckCardDefinition> countedDeck = MagicDeckCardDefinition.condenseCopyCardList(deck);
