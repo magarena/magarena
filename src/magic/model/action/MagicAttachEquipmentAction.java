@@ -36,16 +36,16 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		int score=ArtificialScoringSystem.getTurnScore(game);
 		oldEquippedCreature=equipment.getEquippedCreature();
 		if (oldEquippedCreature.isValid()) {
+            game.doAction(new MagicPlayAbilityAction(equipment));
 			score-=oldEquippedCreature.getScore(game);
 			oldEquippedCreature.removeEquipment(equipment);
-            game.doAction(new MagicPlayAbilityAction(equipment));
 			score+=oldEquippedCreature.getScore(game);
 			if (oldEquippedCreature.getController()==equipment.getController()) {
 				// Prevent unnecessary equips.
 				if (oldEquippedCreature==creature) {
-					score+=ArtificialScoringSystem.UNNECESSARY_EQUIP_SCORE;
+				    score+=ArtificialScoringSystem.UNNECESSARY_EQUIP_SCORE;
 				} else {
-					score+=ArtificialScoringSystem.UNEQUIP_SCORE;
+				    score+=ArtificialScoringSystem.UNEQUIP_SCORE;
 				}
 			} else {
 				score=-score;
