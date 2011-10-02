@@ -6,6 +6,7 @@ import magic.data.IconImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
+import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicGame;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
@@ -30,6 +31,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButtonMenuItem;
 
@@ -487,6 +489,17 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
+	public boolean isLegalDeckAndShowErrors(MagicDeck deck, String playerName) {
+		String brokenRulesText = MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
+		
+		if(brokenRulesText.length() > 0) {
+			JOptionPane.showMessageDialog(this, playerName + "'s deck is illegal.\n\n" + brokenRulesText, "Illegal Deck", JOptionPane.ERROR_MESSAGE);
+			return false;
+		}
+		
+		return true;
+	}
+	
 	private void resetGame() {
 		if (gamePanel!=null) {
 			gamePanel.getController().resetGame();
@@ -501,7 +514,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 	public void nextGame() {
 		tournament.updateDifficulty();
-		openGame(tournament.nextGame(true));
+		
+		final MagicPlayerDefinition players[]=tournament.getPlayers();
+		if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) && isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
+			openGame(tournament.nextGame(true));
+		}
 	}
 	
 	private void openGame(final MagicGame game) {
@@ -543,9 +560,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	public void closeDeckEditor() {
-		closeCardExplorer();
-		if (tournamentPanel != null) {
-			tournamentPanel.updateDecksAfterEdit();
+		if(isLegalDeckAndShowErrors(explorerPanel.getPlayer().getDeck(), explorerPanel.getPlayer().getName())) {
+			closeCardExplorer();
+			if (tournamentPanel != null) {
+				tournamentPanel.updateDecksAfterEdit();
+			}
 		}
 	}
 		

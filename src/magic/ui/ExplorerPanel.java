@@ -252,7 +252,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		return player != null;
 	}
 	
-	private MagicPlayerDefinition getPlayer() {
+	public MagicPlayerDefinition getPlayer() {
 		return player;
 	}
 	
