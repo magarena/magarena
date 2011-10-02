@@ -30,7 +30,7 @@ public class ArtificialScore {
 		} else if (this==INVALID_SCORE) {
 			return true;
 		} else if (score==other.score) {
-			return depth>other.depth;
+			return depth<other.depth;
 		} else if (best) {
 			return score<other.score;
 		} else {
