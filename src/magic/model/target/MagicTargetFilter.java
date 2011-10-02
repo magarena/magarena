@@ -233,6 +233,17 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_ARTIFACT_CREATURE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent targetPermanent = (MagicPermanent)target;
+			return targetPermanent.isArtifact() &&
+					targetPermanent.isCreature(game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_ARTIFACT_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent targetPermanent = (MagicPermanent)target;
@@ -406,6 +417,15 @@ public interface MagicTargetFilter {
 		}
 	};
 
+	MagicTargetFilter TARGET_EQUIPMENT = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent targetPermanent = (MagicPermanent)target;
+			return targetPermanent.isEquipment();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}
+	};
 
 	MagicTargetFilter TARGET_PERMANENT_YOU_CONTROL=new MagicTargetFilter() {
 		
