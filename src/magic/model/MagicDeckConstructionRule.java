@@ -5,9 +5,11 @@ import java.util.List;
 
 public enum MagicDeckConstructionRule {
 	
-	Min60Cards("Decks must have a least 60 cards."),
+	MinDeckSize("Decks must have a least 40 cards."),
 	FourCopyLimit("With the exception of basic lands, a deck must have no more than 4 copies of a card.")
 	;
+	
+	public static final int MIN_DECK_SIZE = 40;	
 	
 	private final String text;
 	
@@ -22,8 +24,8 @@ public enum MagicDeckConstructionRule {
 	public static List<MagicDeckConstructionRule> checkDeck(MagicDeck deck) {
 		ArrayList<MagicDeckConstructionRule> brokenRules = new ArrayList<MagicDeckConstructionRule>();
 		
-		if(deck.size() < 60) {
-			brokenRules.add(Min60Cards);
+		if(deck.size() < MIN_DECK_SIZE) {
+			brokenRules.add(MinDeckSize);
 		}
 		
 		List<MagicDeckCardDefinition> countedDeck = MagicDeckCardDefinition.condenseCopyCardList(deck);
