@@ -11296,3 +11296,15 @@ color=b
 converted=2
 cost={1}{B}
 timing=main
+
+>Immolation
+image=http://magiccards.info/scans/en/4e/222.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=1
+cost={R}
+given_pt=2/-2
+timing=aura
