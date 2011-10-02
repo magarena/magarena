@@ -48,9 +48,16 @@ public class MagicPriorityEvent extends MagicEvent {
 				if (activation.usesStack()) {
 					game.setPriorityPassed(false);
 				}
-				final MagicSource source=playChoiceResult.source;
-				activation.changeActivationPriority(game,source);
-				for (final MagicEvent costEvent : activation.getCostEvent(source)) {
+
+				final MagicSource source = playChoiceResult.source;
+				final MagicPlayer player = source.getController();
+				
+                // set activation/priority of controller
+                activation.changeActivationPriority(game,player);
+                // reset activation/priority of opponent
+                game.getOpponent(player).getActivationPriority().clear();
+
+                for (final MagicEvent costEvent : activation.getCostEvent(source)) {
 					game.addEvent(costEvent);
 				}
 				final MagicEvent activationEvent=activation.getEvent(source);
