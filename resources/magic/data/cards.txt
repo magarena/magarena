@@ -11370,3 +11370,25 @@ cost={6}
 equip={6}
 given_pt=6/6
 timing=equipment
+
+>Assault Strobe
+image=http://magiccards.info/scans/en/som/82.jpg
+value=2
+rarity=C
+type=Sorcery
+color=r
+converted=1
+cost={R}
+timing=block
+
+>Auriok Edgewright
+image=http://magiccards.info/scans/en/som/3.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+timing=main
