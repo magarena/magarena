@@ -184,7 +184,7 @@ decks/td_%.dec: scripts/dailyhtml2dec.awk
 	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/td/$* | awk -f $^ > $@
 
 ref/rules.txt:
-	curl http://www.wizards.com/magic/comprules/MagicCompRules_20110617.txt | fmt -s > $@
+	curl http://www.wizards.com/magic/comprules/MagicCompRules_20110930.txt | fmt -s > $@
 	flip -u $@
 
 resources/magic/data/icons/missing_card.png:

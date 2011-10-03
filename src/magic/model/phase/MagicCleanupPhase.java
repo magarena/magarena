@@ -26,6 +26,7 @@ public class MagicCleanupPhase extends MagicPhase {
 		for (final MagicPlayer player : game.getPlayers()) {
 			game.doAction(new MagicCleanupPlayerAction(player));
 		}
+        game.checkState();
 	}
 	
 	private static void nextTurn(final MagicGame game) {

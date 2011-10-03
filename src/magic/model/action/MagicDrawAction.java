@@ -17,19 +17,16 @@ public class MagicDrawAction extends MagicAction {
 	private List<MagicCard> drawnCards;
 	
 	public MagicDrawAction(final MagicPlayer player,final int amount) {
-		
 		this.player=player;
 		this.amount=amount;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		
 		drawnCards=new ArrayList<MagicCard>();
 		final MagicCardList library=player.getLibrary();
 		int score=0;
 		for (int count=amount;count>0;count--) {
-
 			if (library.isEmpty()) {
 				if (MagicGame.LOSE_DRAW_EMPTY_LIBRARY) {
 					game.doAction(new MagicLoseGameAction(player,MagicLoseGameAction.DRAW_REASON));

@@ -5,7 +5,7 @@ public class MagicPowerToughness {
 	private int power;
 	private int toughness;
 	
-	MagicPowerToughness(final int aPower,final int aToughness) {
+	public MagicPowerToughness(final int aPower,final int aToughness) {
 		power = aPower;
 		toughness = aToughness;
 	}
