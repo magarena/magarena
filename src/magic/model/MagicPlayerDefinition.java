@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class MagicPlayerDefinition {
 
-	private static final int DECK_SIZE=60;
+	private static final int DECK_SIZE=40;
 	private static final int MIN_SOURCE=16;
 	
 	private static final String NAME="name";

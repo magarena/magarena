@@ -109,12 +109,17 @@ public class MagicTargetChoice extends MagicChoice {
 			"target artifact or enchantment your opponent controls");
 	public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,true,MagicTargetHint.None,"target artifact, enchantment or land");
+	public static final MagicTargetChoice POS_TARGET_ARTIFACT_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_CREATURE,true,MagicTargetHint.Positive,
+					"target artifact creature");
 	public static final MagicTargetChoice TARGET_ENCHANTMENT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.None,"target enchantment");
 	public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.Negative,"target enchantment");
 	public static final MagicTargetChoice NEG_TARGET_SPIRIT_OR_ENCHANTMENT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_SPIRIT_OR_ENCHANTMENT,true,MagicTargetHint.Negative,"target Spirit or enchantment");
+	public static final MagicTargetChoice NEG_TARGET_EQUIPMENT =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_EQUIPMENT,true,MagicTargetHint.Negative,"target Equipment");
 	public static final MagicTargetChoice TARGET_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE,true,MagicTargetHint.None,"target creature");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE=
