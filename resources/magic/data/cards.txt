@@ -11700,3 +11700,25 @@ converted=5
 cost={5}
 ability=indestructible,attacks each turn if able
 timing=main
+
+>Disperse
+image=http://magiccards.info/scans/en/som/31.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
+
+>Dross Hopper
+image=http://magiccards.info/scans/en/som/60.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect,Horror
+color=b
+converted=2
+cost={1}{B}
+pt=2/1
+timing=main
