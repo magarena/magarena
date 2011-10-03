@@ -180,6 +180,12 @@ public interface MagicCondition {
 		}
 	};
 	
+	MagicCondition CONTROL_ARTIFACT_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return source.getController().controlsPermanentWithType(MagicType.Artifact,game);
+		}
+	};
+	
     MagicCondition ONE_CREATURE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			return source.getController().getNrOfPermanentsWithType(MagicType.Creature,game)>=1;

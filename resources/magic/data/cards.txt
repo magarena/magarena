@@ -11536,3 +11536,27 @@ converted=3
 cost={3}
 pt=2/2
 timing=main
+
+>Vedalken Certarch
+image=http://magiccards.info/scans/en/som/52.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Vedalken,Wizard
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+
+>Barrage Ogre
+image=http://magiccards.info/scans/en/som/83.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+color=r
+converted=5
+cost={3}{R}{R}
+pt=3/3
+timing=main
