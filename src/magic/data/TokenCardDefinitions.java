@@ -55,6 +55,20 @@ public class TokenCardDefinitions {
 		}
 	};
 	
+	public static final MagicCardDefinition INSECT1_TOKEN_CARD = new MagicCardDefinition("Insect","Insect1") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Insect"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Green);
+			setColoredType();
+			setPowerToughness(1,1);
+			setAbility(MagicAbility.Infect);
+		}
+	};
+	
 	public static final MagicCardDefinition WORM_TOKEN_CARD=new MagicCardDefinition("Worm") {
 		public void initialize() {
 			setToken();
@@ -452,6 +466,7 @@ public class TokenCardDefinitions {
 		ANGEL4_TOKEN_CARD,
 		DRAGON4_TOKEN_CARD,
 		DRAGON5_TOKEN_CARD,
+		INSECT1_TOKEN_CARD,
 		WORM_TOKEN_CARD,
 		SAPROLING_TOKEN_CARD,
 		SNAKE_TOKEN_CARD,
