@@ -95,7 +95,7 @@ public class MagicGame {
     private long time = 1000000;
 
 
-    static MagicGame getInstance() {
+    public static MagicGame getInstance() {
         return INSTANCE;
     }
     
@@ -624,7 +624,6 @@ public class MagicGame {
         }
         
         event.executeEvent(this,choiceResults);
-        checkState();
 	}
 
 	public MagicEventQueue getEvents() {
