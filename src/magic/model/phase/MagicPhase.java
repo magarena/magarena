@@ -29,9 +29,11 @@ public abstract class MagicPhase {
 				executeBeginStep(game);
 				break;
 			case ActivePlayer:
+		        game.checkState();
 				game.addEvent(new MagicPriorityEvent(game.getTurnPlayer()));
 				break;
 			case OtherPlayer:
+		        game.checkState();
 				game.addEvent(new MagicPriorityEvent(game.getOpponent(game.getTurnPlayer())));
 				break;
 			case Resolve:
@@ -59,6 +61,5 @@ public abstract class MagicPhase {
 				game.changePhase(game.getGameplay().getNextPhase(game));
 				break;
 		}
-		game.checkState();
 	}
 }
