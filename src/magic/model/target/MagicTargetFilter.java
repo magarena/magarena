@@ -1202,6 +1202,17 @@ public interface MagicTargetFilter {
 		}						
 	};
 	
+	MagicTargetFilter TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+			return cardDefinition.isCreature() &&
+					cardDefinition.hasAbility(MagicAbility.Infect);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Graveyard;
+		}						
+	};
+	
 	MagicTargetFilter TARGET_PERMANENT_CARD_FROM_GRAVEYARD = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return !((MagicCard)target).getCardDefinition().isSpell();

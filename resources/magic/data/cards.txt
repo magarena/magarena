@@ -11656,3 +11656,27 @@ converted=1
 cost={G}
 pt=1/1
 timing=main
+
+>Corpse Cur
+image=http://magiccards.info/scans/en/som/147.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Hound
+converted=4
+cost={4}
+pt=2/2
+ability=infect
+timing=main
+
+>Corrupted Harvester
+image=http://magiccards.info/scans/en/som/59.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Horror
+color=b
+converted=6
+cost={4}{B}{B}
+pt=6/3
+timing=main
