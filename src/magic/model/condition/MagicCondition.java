@@ -209,6 +209,13 @@ public interface MagicCondition {
 			return source.getController().getGraveyard().size() >= 7;
 		}
 	};
+	
+	MagicCondition POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPermanent permanent = (MagicPermanent)source;
+			return permanent.getPower(game) >= 4;
+		}
+	};
 		
 	boolean accept(final MagicGame game,final MagicSource source);
 }
