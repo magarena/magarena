@@ -16,12 +16,13 @@ import java.util.List;
 public class MagicSimpleMayChoice extends MagicChoice {
 
 	public static final int DRAW_CARDS = 1;
-	public static final int GAIN_LIFE = 2; // always returns YES_CHOICE_LIST
+	public static final int GAIN_LIFE = 2; 			// always returns YES_CHOICE_LIST
 	public static final int LOSE_LIFE = 3;
 	public static final int OPPONENT_LOSE_LIFE = 4; // always returns YES_CHOICE_LIST
-	public static final int UNTAP = 5; // always returns YES_CHOICE_LIST
-	public static final int BECOME_CREATURE = 6; // always returns YES_CHOICE_LIST
-	public static final int ADD_CHARGE_COUNTER = 7; // always returns YES_CHOICE_LIST
+	public static final int UNTAP = 5; 				// always returns YES_CHOICE_LIST
+	public static final int BECOME_CREATURE = 6; 	// always returns YES_CHOICE_LIST
+	public static final int ADD_CHARGE_COUNTER = 7;	// always returns YES_CHOICE_LIST
+	public static final int PLAY_TOKEN = 8; 		// always returns YES_CHOICE_LIST
 	
 	public static final int DEFAULT_NONE = 0;
 	public static final int DEFAULT_NO = 1;
