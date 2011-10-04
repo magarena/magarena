@@ -11768,3 +11768,25 @@ color=b
 converted=3
 cost={2}{B}
 timing=enchantment
+
+>Regrowth
+image=http://magiccards.info/scans/en/me4/163.jpg
+value=4
+rarity=R
+type=Sorcery
+color=g
+converted=2
+cost={1}{G}
+timing=draw
+
+>Blinking Spirit
+image=http://magiccards.info/scans/en/9e/8.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Spirit
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+timing=main
