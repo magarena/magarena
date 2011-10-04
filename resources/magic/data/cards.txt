@@ -11910,3 +11910,27 @@ cost={4}{R}{R}
 pt=5/5
 ability=flying
 timing=main
+
+>Ichor Rats
+image=http://magiccards.info/scans/en/som/67.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/1
+ability=infect
+timing=main
+
+>Instill Infection
+image=http://magiccards.info/scans/en/som/68.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=b
+converted=4
+cost={3}{B}
+timing=removal
