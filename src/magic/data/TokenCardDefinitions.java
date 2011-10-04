@@ -63,7 +63,6 @@ public class TokenCardDefinitions {
 			addType(MagicType.Creature);
 			setSubTypes(new String[]{"Golem"});
 			setCost(MagicManaCost.ZERO);
-			//setColor(MagicColor.Green);
 			setColoredType();
 			setPowerToughness(3,3);
 		}

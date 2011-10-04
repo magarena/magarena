@@ -11878,3 +11878,12 @@ type=Artifact
 converted=3
 cost={3}
 timing=artifact
+
+>Golem's Heart
+image=http://magiccards.info/scans/en/som/161.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=artifact

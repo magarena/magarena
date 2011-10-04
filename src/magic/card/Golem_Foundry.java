@@ -17,7 +17,6 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
-import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
