@@ -46,6 +46,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice NEG_TARGET_INSTANT_OR_SORCERY_SPELL=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_INSTANT_OR_SORCERY_SPELL,true,MagicTargetHint.Negative,
                 "target instant or sorcery spell");
+	public static final MagicTargetChoice NEG_TARGET_ARTIFACT_SPELL =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_SPELL,true,MagicTargetHint.Negative,
+	                "target artifact spell");
 	public static final MagicTargetChoice TARGET_PLAYER=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PLAYER,true,MagicTargetHint.None,
                 "target player");
@@ -90,6 +93,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
 	public static final MagicTargetChoice TARGET_ARTIFACT_YOU_CONTROL=
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL,true,MagicTargetHint.None,"target artifact you control");
+	public static final MagicTargetChoice TARGET_ARTIFACT =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.None,"target artifact");
 	public static final MagicTargetChoice NEG_TARGET_ARTIFACT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.Negative,"target artifact");
 	public static final MagicTargetChoice TARGET_NONCREATURE_ARTIFACT=

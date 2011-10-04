@@ -11887,3 +11887,26 @@ type=Artifact
 converted=2
 cost={2}
 timing=artifact
+
+>Halt Order
+image=http://magiccards.info/scans/en/som/34.jpg
+value=3
+rarity=U
+type=Instant
+color=u
+converted=3
+cost={2}{U}
+timing=counter
+
+>Hoard-Smelter Dragon
+image=http://magiccards.info/scans/en/som/93.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+pt=5/5
+ability=flying
+timing=main

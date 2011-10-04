@@ -104,6 +104,20 @@ public interface MagicTargetFilter {
 		}
 	};
 	
+	MagicTargetFilter TARGET_ARTIFACT_SPELL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			if (target.isSpell()) {
+				final MagicCardOnStack cardOnStack = (MagicCardOnStack)target;
+				final MagicCardDefinition card = cardOnStack.getCardDefinition();
+				return card.isArtifact();
+			}
+			return false;
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Stack;
+		}
+	};
+	
 	MagicTargetFilter TARGET_PLAYER=new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
