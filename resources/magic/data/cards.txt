@@ -11994,3 +11994,16 @@ color=r
 converted=4
 cost={2}{R}{R}
 timing=removal
+
+>Molder Beast
+image=http://magiccards.info/scans/en/som/125.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={4}{G}
+pt=5/3
+ability=trample
+timing=main
