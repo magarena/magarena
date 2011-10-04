@@ -27,6 +27,19 @@ public class TokenCardDefinitions {
 		}
 	};
 	
+	public static final MagicCardDefinition CAT2_TOKEN_CARD = new MagicCardDefinition("Cat","Cat2") {
+		public void initialize() {
+			setToken();
+			setValue(2);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Cat"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.White);
+			setColoredType();
+			setPowerToughness(2,2);
+		}
+	};
+	
 	public static final MagicCardDefinition DRAGON4_TOKEN_CARD=new MagicCardDefinition("Dragon","Dragon4") {
 		public void initialize() {
 			setToken();
@@ -58,7 +71,7 @@ public class TokenCardDefinitions {
 	public static final MagicCardDefinition GOLEM3_ARTIFACT_TOKEN_CARD = new MagicCardDefinition("Golem","Golem3") {
 		public void initialize() {
 			setToken();
-			setValue(1);
+			setValue(3);
 			addType(MagicType.Artifact);
 			addType(MagicType.Creature);
 			setSubTypes(new String[]{"Golem"});
@@ -477,6 +490,7 @@ public class TokenCardDefinitions {
 	
 	public static final List<MagicCardDefinition> TOKEN_CARDS=Arrays.asList(
 		ANGEL4_TOKEN_CARD,
+		CAT2_TOKEN_CARD,
 		DRAGON4_TOKEN_CARD,
 		DRAGON5_TOKEN_CARD,
 		GOLEM3_ARTIFACT_TOKEN_CARD,
