@@ -55,6 +55,20 @@ public class TokenCardDefinitions {
 		}
 	};
 	
+	public static final MagicCardDefinition GOLEM3_ARTIFACT_TOKEN_CARD = new MagicCardDefinition("Golem","Golem3") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Artifact);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Golem"});
+			setCost(MagicManaCost.ZERO);
+			//setColor(MagicColor.Green);
+			setColoredType();
+			setPowerToughness(3,3);
+		}
+	};
+	
 	public static final MagicCardDefinition INSECT1_TOKEN_CARD = new MagicCardDefinition("Insect","Insect1") {
 		public void initialize() {
 			setToken();
@@ -466,6 +480,7 @@ public class TokenCardDefinitions {
 		ANGEL4_TOKEN_CARD,
 		DRAGON4_TOKEN_CARD,
 		DRAGON5_TOKEN_CARD,
+		GOLEM3_ARTIFACT_TOKEN_CARD,
 		INSECT1_TOKEN_CARD,
 		WORM_TOKEN_CARD,
 		SAPROLING_TOKEN_CARD,

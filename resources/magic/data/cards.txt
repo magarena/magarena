@@ -11869,3 +11869,12 @@ type=Artifact
 converted=1
 cost={1}
 timing=artifact
+
+>Golem Foundry
+image=http://magiccards.info/scans/en/som/160.jpg
+value=2
+rarity=C
+type=Artifact
+converted=3
+cost={3}
+timing=artifact
