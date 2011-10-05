@@ -12187,3 +12187,25 @@ converted=4
 cost={4}
 ability=haste
 timing=main
+
+>Arcbound Crusher
+image=http://magiccards.info/scans/en/pch/105.jpg
+value=2
+rarity=U
+type=Artifact,Creature
+subtype=Juggernaut
+converted=4
+cost={4}
+ability=trample
+timing=fmain
+
+>Arcbound Fiend
+image=http://magiccards.info/scans/en/ds/96.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Horror
+converted=6
+cost={6}
+ability=fear
+timing=main

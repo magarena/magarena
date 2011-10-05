@@ -26,7 +26,7 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
                 player,
                 new Object[]{permanent},
                 this,
-                amount > 0 ?
+                amount > 1 ?
                 	permanent + " enters the battlefield with " + amount + " " + description + " counters on it." :
                 	permanent + " enters the battlefield with a " + description + " counter on it.");
 	}
