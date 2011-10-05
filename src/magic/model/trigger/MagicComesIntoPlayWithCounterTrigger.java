@@ -10,10 +10,12 @@ import magic.model.event.MagicEvent;
 public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlayTrigger {
 
 	private final MagicCounterType counterType;
+	private final String description;
 	private final int amount;
 	
-    public MagicComesIntoPlayWithCounterTrigger(MagicCounterType counterType,final int amount) {
+    public MagicComesIntoPlayWithCounterTrigger(final MagicCounterType counterType,final String description,final int amount) {
     	this.counterType = counterType;
+    	this.description = description;
 		this.amount = amount;
 	}
 
@@ -25,8 +27,8 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
                 new Object[]{permanent},
                 this,
                 amount > 0 ?
-                	permanent + " enters the battlefield with " + amount + " +1/+1 counters on it." :
-                	permanent + " enters the battlefield with a +1/+1 counter on it.");
+                	permanent + " enters the battlefield with " + amount + " " + description + " counters on it." :
+                	permanent + " enters the battlefield with a " + description + " counter on it.");
 	}
 	@Override
 	public void executeEvent(

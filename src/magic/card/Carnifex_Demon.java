@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
@@ -17,9 +16,7 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-
+import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import java.util.Collection;
 
 public class Carnifex_Demon {
@@ -62,27 +59,6 @@ public class Carnifex_Demon {
 		}
 	};
 
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent},
-                    this,
-					permanent + " enters the battlefield with two -1/-1 counters on it.");
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.MinusOne,2,false));
-		}
-		@Override
-		public boolean usesStack() {
-			return false;
-		}
-    };
+	public static final MagicComesIntoPlayWithCounterTrigger T = 
+			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",2);
 }
