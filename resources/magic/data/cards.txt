@@ -11418,7 +11418,7 @@ pt=3/3
 timing=fmain
 
 >Bleak Coven Vampires
-image=http://magiccards.info/scans/en/som/55.jpg4.jpg
+image=http://magiccards.info/scans/en/som/55.jpg
 value=3
 rarity=C
 type=Creature
