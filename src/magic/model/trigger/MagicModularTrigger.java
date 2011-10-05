@@ -14,10 +14,6 @@ import magic.model.target.MagicPumpTargetPicker;
 
 
 public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
-
-	public MagicModularTrigger() {
-	}
-	
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 		if (MagicLocationType.Play == triggerData.fromLocation) {
