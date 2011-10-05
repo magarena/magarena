@@ -55,7 +55,8 @@ public enum MagicAbility {
 	Intimidate("intimidate",45),
 	BattleCry("battle cry",0),
 	Infect("infect",35),
-    LivingWeapon("living weapon", 10);
+    LivingWeapon("living weapon", 10),
+    Modular("modular",0);
 	;
 
 	public static final long PROTECTION_FLAGS=

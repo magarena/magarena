@@ -12175,6 +12175,7 @@ type=Artifact,Creature
 subtype=Golem
 converted=5
 cost={5}
+ability=modular
 timing=main
 
 >Arcbound Hybrid
@@ -12185,7 +12186,7 @@ type=Artifact,Creature
 subtype=Beast
 converted=4
 cost={4}
-ability=haste
+ability=haste,modular
 timing=main
 
 >Arcbound Crusher
@@ -12196,7 +12197,7 @@ type=Artifact,Creature
 subtype=Juggernaut
 converted=4
 cost={4}
-ability=trample
+ability=trample,modular
 timing=fmain
 
 >Arcbound Fiend
@@ -12207,7 +12208,7 @@ type=Artifact,Creature
 subtype=Horror
 converted=6
 cost={6}
-ability=fear
+ability=fear,modular
 timing=main
 
 >Arcbound Lancer
@@ -12218,7 +12219,7 @@ type=Artifact,Creature
 subtype=Beast
 converted=7
 cost={7}
-ability=first strike
+ability=first strike,modular
 timing=main
 
 >Arcbound Ravager
@@ -12229,4 +12230,16 @@ type=Artifact,Creature
 subtype=Beast
 converted=2
 cost={2}
+ability=modular
+timing=main
+
+>Arcbound Overseer
+image=http://magiccards.info/scans/en/ds/99.jpg
+value=5
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+converted=8
+cost={8}
+ability=modular
 timing=main
