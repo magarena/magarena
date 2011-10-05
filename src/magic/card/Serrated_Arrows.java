@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -15,7 +14,7 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicWeakenCreatureActivation;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Serrated_Arrows {
@@ -35,35 +34,8 @@ public class Serrated_Arrows {
 		}
 	};
 
-    public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent},
-                    this,
-					permanent + " enters the battlefield with three arrowhead counters on it.");
-		}
-		
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
-                        MagicCounterType.Charge,
-                        3,
-                        false));
-		}
-
-		@Override
-		public boolean usesStack() {
-			return false;
-		}
-    };
+	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
+			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"arrowhead",3);
 
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
 		@Override

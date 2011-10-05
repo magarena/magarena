@@ -13,11 +13,6 @@ public class Festerhide_Boar {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 			if (game.getCreatureDiedThisTurn()) {
-				game.doAction(new MagicChangeCountersAction(
-						permanent,
-						MagicCounterType.PlusOne,
-						2,
-						true));
 				return new MagicEvent(
 						permanent,
 						player,
@@ -33,6 +28,15 @@ public class Festerhide_Boar {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
+			game.doAction(new MagicChangeCountersAction(
+					(MagicPermanent)data[0],
+					MagicCounterType.PlusOne,
+					2,
+					true));
+		}
+		@Override
+		public boolean usesStack() {
+			return false;
 		}
     };
 }

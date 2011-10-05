@@ -4,9 +4,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
@@ -18,7 +16,7 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 
 
 public class Tumble_Magnet {
@@ -58,30 +56,6 @@ public class Tumble_Magnet {
 		}
 	};
 
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent},
-                    this,
-                    permanent + " enters the battlefield with three charge counters on it.");
-		}
-		
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,3,false));
-		}
-
-		@Override
-		public boolean usesStack() {
-			return false;
-		}
-    };
+	public static final MagicComesIntoPlayWithCounterTrigger T = 
+			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",3);
 }

@@ -19,6 +19,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Wickerbough_Elder {
@@ -56,27 +57,6 @@ public class Wickerbough_Elder {
 		}
 	};
 
-    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    new Object[]{permanent},
-                    this,
-					permanent + " enters the battlefield with a -1/-1 counter on it.");
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.MinusOne,1,false));
-		}
-		@Override
-		public boolean usesStack() {
-			return false;
-		}
-    };
+	public static final MagicComesIntoPlayWithCounterTrigger T = 
+			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",1);
 }

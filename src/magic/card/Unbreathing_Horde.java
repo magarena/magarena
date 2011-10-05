@@ -19,15 +19,10 @@ public class Unbreathing_Horde {
 					MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL,permanent);
 			int amount = game.filterTargets(player,targetFilter).size();
 			amount += game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD).size();
-			game.doAction(new MagicChangeCountersAction(
-					permanent,
-					MagicCounterType.PlusOne,
-					amount,
-					true));
 			return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{permanent},
+                    new Object[]{permanent,amount},
                     this,
 					permanent + " enters the battlefield with " + 
                     amount + " +1/+1 counters on it.");
@@ -38,6 +33,15 @@ public class Unbreathing_Horde {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
+			game.doAction(new MagicChangeCountersAction(
+					(MagicPermanent)data[0],
+					MagicCounterType.PlusOne,
+					(Integer)data[1],
+					true));
+		}
+		@Override
+		public boolean usesStack() {
+			return false;
 		}
     };
     
