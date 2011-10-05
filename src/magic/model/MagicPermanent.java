@@ -534,17 +534,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	void checkState(final MagicGame game, final List<MagicAction> actions) {
-		// +1/+1 and -1/-1 counters cancel each other out.
-		final int plusCounters=getCounters(MagicCounterType.PlusOne);
-		if (plusCounters>0) {
-			final int minusCounters=getCounters(MagicCounterType.MinusOne);
-			if (minusCounters>0) {
-				final int amount=-Math.min(plusCounters,minusCounters);
-				actions.add(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));
-				actions.add(new MagicChangeCountersAction(this,MagicCounterType.MinusOne,amount,false));
-			}
-		}
-		
 		if (isCreature(game)) {
 			final int toughness=getToughness(game);
 			if (toughness<=0) {
@@ -557,7 +546,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicDestroyAction(this));
 			}
 		} 
-        
+				
         if (cardDefinition.isAura()) {
             final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cardDefinition.getCardEvent();
             //not targeting since Aura is already attached
@@ -575,6 +564,17 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
 			}
 		}
+        
+        // +1/+1 and -1/-1 counters cancel each other out.
+        final int plusCounters=getCounters(MagicCounterType.PlusOne);
+        if (plusCounters>0) {
+        	final int minusCounters=getCounters(MagicCounterType.MinusOne);
+        	if (minusCounters>0) {
+        		final int amount=-Math.min(plusCounters,minusCounters);
+        		actions.add(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));
+        		actions.add(new MagicChangeCountersAction(this,MagicCounterType.MinusOne,amount,false));
+        	}
+        }
 	}
 	
 	private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source, final MagicGame game) {
