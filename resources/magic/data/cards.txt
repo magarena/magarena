@@ -12140,3 +12140,29 @@ cost={4}{W}
 pt=1/1
 static=player
 timing=fmain
+
+>Vital Splicer
+image=http://magiccards.info/scans/en/nph/126.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Human,Artificer
+color=g
+converted=4
+cost={3}{G}
+pt=1/1
+static=player
+timing=fmain
+
+>Wing Splicer
+image=http://magiccards.info/scans/en/nph/50.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Human,Artificer
+color=u
+converted=4
+cost={3}{U}
+pt=1/1
+static=player
+timing=fmain

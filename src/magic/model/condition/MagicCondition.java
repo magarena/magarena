@@ -186,6 +186,12 @@ public interface MagicCondition {
 		}
 	};
 	
+	MagicCondition CONTROL_GOLEM_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Golem,game);
+		}
+	};
+	
     MagicCondition ONE_CREATURE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			return source.getController().getNrOfPermanentsWithType(MagicType.Creature,game)>=1;

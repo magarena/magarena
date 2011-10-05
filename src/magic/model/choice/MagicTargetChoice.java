@@ -209,6 +209,9 @@ public class MagicTargetChoice extends MagicChoice {
 					"target non-Vampire, non-Werewolf, non-Zombie creature");
 	public static final MagicTargetChoice NEG_TARGET_NONHUMAN_CREATURE =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_NONHUMAN_CREATURE,true,MagicTargetHint.Negative,"target non-Human creature");
+	public static final MagicTargetChoice POS_TARGET_GOLEM_YOU_CONTROL =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_GOLEM_YOU_CONTROL,true,MagicTargetHint.Positive,
+					"target Golem you control");
 	private static final MagicTargetChoice SACRIFICE_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=
