@@ -297,6 +297,19 @@ public class TokenCardDefinitions {
 		}
 	};
 	
+	public static final MagicCardDefinition MYR1_TOKEN_CARD = new MagicCardDefinition("Myr","Myr1") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Artifact);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Myr"});
+			setCost(MagicManaCost.ZERO);
+			setColoredType();
+			setPowerToughness(1,1);
+		}
+	};
+	
 	public static final MagicCardDefinition APE_TOKEN_CARD=new MagicCardDefinition("Ape","Ape") {
 		public void initialize() {
 			setToken();
@@ -510,6 +523,7 @@ public class TokenCardDefinitions {
 		GRIFFIN_TOKEN_CARD,
 		BIRD_TOKEN_CARD,
 		MERFOLK_WIZARD_TOKEN_CARD,
+		MYR1_TOKEN_CARD,
 		APE_TOKEN_CARD,
 		BEAST3_TOKEN_CARD,
 		BEAST4_TOKEN_CARD,
