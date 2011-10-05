@@ -12209,3 +12209,24 @@ converted=6
 cost={6}
 ability=fear
 timing=main
+
+>Arcbound Lancer
+image=http://magiccards.info/scans/en/ds/98.jpg
+value=4
+rarity=U
+type=Artifact,Creature
+subtype=Beast
+converted=7
+cost={7}
+ability=first strike
+timing=main
+
+>Arcbound Ravager
+image=http://magiccards.info/scans/en/ds/100.jpg
+value=3
+rarity=R
+type=Artifact,Creature
+subtype=Beast
+converted=2
+cost={2}
+timing=main
