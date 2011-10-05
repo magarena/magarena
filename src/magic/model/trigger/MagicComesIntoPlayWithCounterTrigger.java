@@ -7,12 +7,12 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 
-public class MagicComesIntoPlayWithCounter extends MagicWhenComesIntoPlayTrigger {
+public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlayTrigger {
 
 	private final MagicCounterType counterType;
 	private final int amount;
 	
-    public MagicComesIntoPlayWithCounter(MagicCounterType counterType,final int amount) {
+    public MagicComesIntoPlayWithCounterTrigger(MagicCounterType counterType,final int amount) {
     	this.counterType = counterType;
 		this.amount = amount;
 	}
