@@ -12389,3 +12389,25 @@ cost={3}{B}
 pt=3/1
 ability=can't block
 timing=main
+
+>Hedron Crab
+image=http://magiccards.info/scans/en/zen/47.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Crab
+converted=1
+cost={U}
+pt=0/2
+timing=main
+
+>Hedron Rover
+image=http://magiccards.info/scans/en/wwk/125.jpg
+value=2
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+converted=4
+cost={4}
+pt=2/2
+timing=main
