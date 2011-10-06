@@ -908,7 +908,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			return true;
 		} else if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
 			game.logAppendMessage(controller,"Return "+this.getName()+" to its owner (end of turn).");
-	        clearState(MagicPermanentState.ReturnToOwnerAtEndOfTurn);
+			game.doAction(new MagicChangeStateAction(this,MagicPermanentState.ReturnToOwnerAtEndOfTurn,false));
             game.doAction(new MagicGainControlAction(card.getOwner(),this));
 			return true;
         }
