@@ -12287,3 +12287,14 @@ converted=1
 cost={1}
 ability=modular
 timing=main
+
+>Avenger of Zendikar
+image=http://magiccards.info/scans/en/wwk/96.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Elemental
+converted=7
+cost={5}{G}{G}
+pt=5/5
+timing=fmain

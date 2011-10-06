@@ -87,6 +87,7 @@ Goblin Soldier.jpg;http://magiccards.info/extras/token/eventide/goblin-soldier.j
 Merfolk Wizard.jpg;http://magiccards.info/extras/token/lorwyn/merfolk-wizard.jpg
 Myr1.jpg;http://magiccards.info/extras/token/scars-of-mirrodin/myr.jpg
 Ogre.jpg;http://magiccards.info/extras/token/worldwake/ogre.jpg
+Plant.jpg;http://magiccards.info/extras/token/worldwake/plant.jpg
 Saproling.jpg;http://magiccards.info/extras/token/tenth-edition/saproling.jpg
 Snake.jpg;http://magiccards.info/extras/token/zendikar/snake.jpg
 Soldier.jpg;http://magiccards.info/extras/token/magic-2010/soldier.jpg
