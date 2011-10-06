@@ -12411,3 +12411,24 @@ converted=4
 cost={4}
 pt=2/2
 timing=main
+
+>Hedron Scrabbler
+image=http://magiccards.info/scans/en/zen/204.jpg
+value=1
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+converted=2
+cost={2}
+pt=1/1
+timing=main
+
+>Ior Ruin Expedition
+image=http://magiccards.info/scans/en/zen/49.jpg
+value=3
+rarity=C
+type=Enchantment
+color=u
+converted=2
+cost={1}{U}
+timing=enchantment
