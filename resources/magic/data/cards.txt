@@ -12432,3 +12432,23 @@ color=u
 converted=2
 cost={1}{U}
 timing=enchantment
+
+>Scrib Nibblers
+image=http://magiccards.info/scans/en/wwk/66.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Rat
+converted=3
+cost={2}{B}
+pt=1/1
+timing=main
+
+>Seer's Sundial
+image=http://magiccards.info/scans/en/wwk/130.jpg
+value=3
+rarity=R
+type=Artifact
+converted=4
+cost={4}
+timing=artifact
