@@ -12298,3 +12298,26 @@ converted=7
 cost={5}{G}{G}
 pt=5/5
 timing=fmain
+
+>Calcite Snapper
+image=http://magiccards.info/scans/en/wwk/25.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Turtle
+converted=3
+cost={1}{U}{U}
+pt=1/4
+ability=shroud
+timing=main
+
+>Caustic Crawler
+image=http://magiccards.info/scans/en/wwk/54.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Insect
+converted=5
+cost={3}{B}{B}
+pt=4/3
+timing=main

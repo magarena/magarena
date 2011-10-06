@@ -4,13 +4,11 @@ import java.util.Collection;
 
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicCounterType;
-import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
