@@ -5,6 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
@@ -12,14 +14,20 @@ public class Rampaging_Baloths {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-			final MagicPlayer player=permanent.getController();
-			return (player==played.getController()&&played.isLand()) ?
+			final MagicPlayer player = permanent.getController();
+			return (player == played.getController() &&
+					played.isLand()) ?
                 new MagicEvent(
                         permanent,
                         player,
+                        new MagicSimpleMayChoice(
+                                player + " may put a 4/4 green Beast creature token onto the battlefield.",
+                                MagicSimpleMayChoice.PLAY_TOKEN,
+                                1,
+                                MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{player},
                         this,
-                        "Put a 4/4 green Beast creature token onto the battlefield."):
+                        player + " may$ put a 4/4 green Beast creature token onto the battlefield."):
                 MagicEvent.NONE;
 		}
 		@Override
@@ -28,7 +36,9 @@ public class Rampaging_Baloths {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.BEAST4_TOKEN_CARD));
+			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.BEAST4_TOKEN_CARD));
+			}
 		}		
     };
 }
