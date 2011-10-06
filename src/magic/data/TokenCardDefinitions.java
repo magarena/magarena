@@ -109,6 +109,20 @@ public class TokenCardDefinitions {
 		}
 	};
 	
+	public static final MagicCardDefinition BIRD1_TOKEN_CARD = new MagicCardDefinition("Bird","Bird1") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Bird"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.White);
+			setColoredType();
+			setPowerToughness(1,1);
+			setAbility(MagicAbility.Flying);
+		}
+	};
+	
 	public static final MagicCardDefinition CAT2_TOKEN_CARD = new MagicCardDefinition("Cat","Cat2") {
 		public void initialize() {
 			setToken();
@@ -522,6 +536,7 @@ public class TokenCardDefinitions {
 			BEAST4_TOKEN_CARD,
 			BEAST8_TOKEN_CARD,
 			BIRD_TOKEN_CARD,
+			BIRD1_TOKEN_CARD,
 			CAT2_TOKEN_CARD,
 			DRAGON4_TOKEN_CARD,
 			DRAGON5_TOKEN_CARD,

@@ -12321,3 +12321,26 @@ converted=5
 cost={3}{B}{B}
 pt=4/3
 timing=main
+
+>Cosi's Ravager
+image=http://magiccards.info/scans/en/wwk/77.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elemental
+converted=4
+cost={3}{R}
+pt=2/2
+timing=main
+
+>Emeria Angel
+image=http://magiccards.info/scans/en/zen/11.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Angel
+converted=4
+cost={2}{W}{W}
+pt=3/3
+ability=flying
+timing=main
