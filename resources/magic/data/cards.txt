@@ -12452,3 +12452,24 @@ type=Artifact
 converted=4
 cost={4}
 timing=artifact
+
+>Snapping Creeper
+image=http://magiccards.info/scans/en/wwk/112.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Plant
+converted=3
+cost={2}{G}
+pt=2/3
+timing=main
+
+>Sunspring Expedition
+image=http://magiccards.info/scans/en/zen/37.jpg
+value=3
+rarity=C
+type=Enchantment
+color=w
+converted=1
+cost={W}
+timing=enchantment
