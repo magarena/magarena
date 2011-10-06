@@ -12473,3 +12473,25 @@ color=w
 converted=1
 cost={W}
 timing=enchantment
+
+>Surrakar Marauder
+image=http://magiccards.info/scans/en/zen/113.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Surrakar
+converted=2
+cost={1}{B}
+pt=2/1
+timing=main
+
+>Territorial Baloth
+image=http://magiccards.info/scans/en/zen/188.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Beast
+converted=5
+cost={4}{G}
+pt=4/4
+timing=main
