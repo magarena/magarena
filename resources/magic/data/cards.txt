@@ -12243,3 +12243,25 @@ converted=8
 cost={8}
 ability=modular
 timing=main
+
+>Arcbound Reclaimer
+image=http://magiccards.info/scans/en/ds/101.jpg
+value=3
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+converted=4
+cost={4}
+ability=modular
+timing=main
+
+>Arcbound Slith
+image=http://magiccards.info/scans/en/pch/106.jpg
+value=2
+rarity=U
+type=Artifact,Creature
+subtype=Slith
+converted=2
+cost={2}
+ability=modular
+timing=main
