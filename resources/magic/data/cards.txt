@@ -12187,7 +12187,7 @@ subtype=Beast
 converted=4
 cost={4}
 ability=haste,modular
-timing=main
+timing=fmain
 
 >Arcbound Crusher
 image=http://magiccards.info/scans/en/pch/105.jpg
@@ -12263,5 +12263,27 @@ type=Artifact,Creature
 subtype=Slith
 converted=2
 cost={2}
+ability=modular
+timing=main
+
+>Arcbound Stinger
+image=http://magiccards.info/scans/en/ds/103.jpg
+value=2
+rarity=C
+type=Artifact,Creature
+subtype=Insect
+converted=2
+cost={2}
+ability=modular,flying
+timing=main
+
+>Arcbound Worker
+image=http://magiccards.info/scans/en/ddf/40.jpg
+value=1
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+converted=1
+cost={1}
 ability=modular
 timing=main
