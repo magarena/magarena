@@ -1701,6 +1701,7 @@ color=w
 converted=1
 cost={W}
 pt=0/1
+ability=flying
 timing=main
 
 >Gorger Wurm
