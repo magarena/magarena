@@ -693,7 +693,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		final long attackerFlags=attacker.getAllAbilityFlags(game);
 
 		// Fear & intimidate
-		if (!isArtifact()) {
+		if (!isArtifact(game)) {
 			final int colorFlags=getColorFlags(game);
 			if (MagicAbility.Fear.hasAbility(attackerFlags)&&!MagicColor.Black.hasColor(colorFlags)) {
 				return false;
@@ -827,8 +827,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return cardDefinition.isEquipment();
 	}
 	
-	public boolean isArtifact() {
-		return cardDefinition.isArtifact();
+	public boolean isArtifact(final MagicGame game) {
+        return MagicType.Artifact.hasType(getTypeFlags(game));
 	}
 	
 	public boolean isEnchantment() {

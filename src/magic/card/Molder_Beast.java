@@ -10,7 +10,7 @@ public class Molder_Beast {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent.isArtifact()) ?
+			return (otherPermanent.isArtifact(game)) ?
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

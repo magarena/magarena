@@ -11,7 +11,7 @@ public class Battered_Golem {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (permanent != otherPermanent &&
-					otherPermanent.isArtifact() &&
+					otherPermanent.isArtifact(game) &&
 					permanent.isTapped()) ?
 				new MagicEvent(
 					permanent,
