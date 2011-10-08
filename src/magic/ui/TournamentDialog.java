@@ -299,7 +299,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 				}
 				
 				JLabel label = new JLabel(selectedVal, JLabel.CENTER);
-				label.setFont(FontsAndBorders.FONT2);
+				label.setFont(FontsAndBorders.FONT1);
 				panel.add(label);
 				
 				return panel;
