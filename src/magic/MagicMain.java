@@ -2,6 +2,7 @@ package magic;
 
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
+import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
 import magic.ui.MagicFrame;
@@ -74,6 +75,7 @@ public class MagicMain {
         CardDefinitions.getInstance().loadCardDefinitions();
         CubeDefinitions.getInstance().loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
+		DeckGenerators.getInstance().loadDeckGenerators();
 	}
 	
 	private static void initialize() {
