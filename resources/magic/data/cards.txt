@@ -12535,3 +12535,28 @@ cost={1}{W}
 pt=1/1
 ability=flying
 timing=main
+
+>Battle-Mad Ronin
+image=http://magiccards.info/scans/en/chk/156.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+ability=attacks each turn if able
+timing=main
+
+>Cursed Ronin
+image=http://magiccards.info/scans/en/chk/107.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=b
+converted=4
+cost={3}{B}
+pt=1/1
+timing=main
