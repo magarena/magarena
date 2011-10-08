@@ -78,6 +78,8 @@ public class DefaultDeckGenerator {
 	}
 	
 	public void generateDeck(final int size,final MagicPlayerProfile profile, final MagicDeck deck) {
+		setColors(profile);
+		
         deck.clear();
 
         genSpells();
@@ -98,7 +100,7 @@ public class DefaultDeckGenerator {
 		int countNonlandNoncreature = 0;
 		final int countCost[] = new int[3];
 		
-		addRequiredCards(deck);
+		addRequiredSpells(deck);
 		
 		// count required cards added
 		for(MagicCardDefinition card : deck) {
@@ -114,8 +116,6 @@ public class DefaultDeckGenerator {
 			
 			countCost[card.getCostBucket()]++;
 		}
-		
-		setColors(profile);
 		
 		// Add spells to deck.
 		while (deck.size() < spells && spellCards.size() > 0) {
@@ -149,7 +149,7 @@ public class DefaultDeckGenerator {
 				countCost[bucket]++;
 				if(creature) {
 					countCreatures++;
-				} else {
+				} else if(!cardDefinition.isLand()) {
 					countNonlandNoncreature++;
 				}
 				if (colorless) {
@@ -163,6 +163,8 @@ public class DefaultDeckGenerator {
 		}
 		
 		// Add non basic lands to deck.
+		addRequiredLands(deck);
+		
 		while (deck.size() < spells+lands && landCards.size() > 0) {
 			final int index=MagicRandom.nextInt(landCards.size());
 			final MagicCardDefinition cardDefinition=landCards.get(index);
@@ -174,7 +176,20 @@ public class DefaultDeckGenerator {
 		}
 	}
 	
-	public void addRequiredCards(MagicDeck deck) {	}
+	protected void addRequiredCards(MagicDeck deck, String[] cards) {		
+		for(String name : cards) {
+			final MagicCardDefinition cardDef = CardDefinitions.getInstance().getCard(name);
+			if (cardDef.isValid()) {
+				deck.add(cardDef);
+            } else {
+				System.out.println("Cannot find " + name);
+			}
+		}
+	}
+	
+	public void addRequiredSpells(MagicDeck deck) { }
+	
+	public void addRequiredLands(MagicDeck deck) { }
 	
 	public void setColors(MagicPlayerProfile profile) {	}
 	
