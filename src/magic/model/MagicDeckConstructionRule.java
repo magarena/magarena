@@ -28,8 +28,8 @@ public enum MagicDeckConstructionRule {
 			brokenRules.add(MinDeckSize);
 		}
 		
-		List<MagicDeckCardDefinition> countedDeck = MagicDeckCardDefinition.condenseCopyCardList(deck);
-		for(MagicDeckCardDefinition countedCard : countedDeck) {
+		MagicCondensedDeck countedDeck = new MagicCondensedDeck(deck);
+		for(MagicCondensedCardDefinition countedCard : countedDeck) {
 			if(countedCard.getNumCopies() > 4 && !countedCard.getCard().isBasic() && !countedCard.getCard().getName().equals("Relentless Rats")) {
 				brokenRules.add(FourCopyLimit);
 				break;

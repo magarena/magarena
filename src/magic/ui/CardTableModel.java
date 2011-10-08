@@ -1,7 +1,9 @@
 package magic.ui;
 
 import magic.model.MagicCardDefinition;
-import magic.model.MagicDeckCardDefinition;
+import magic.model.MagicCondensedCardDefinition;
+import magic.model.MagicCondensedDeck;
+import magic.model.MagicDeck;
 import magic.model.MagicManaCost;
 
 import java.lang.Integer;
@@ -71,11 +73,11 @@ public class CardTableModel implements TableModel {
 	private final boolean isDeck;
 	
 	private boolean[] isDesc = new boolean[] {false, false, false, false, false, false, false, false, false, false, false, false, false};
-	private List<MagicDeckCardDefinition> cardDefinitions;
-	private Comparator<MagicDeckCardDefinition> comp;
+	private MagicCondensedDeck cardDefinitions;
+	private Comparator<MagicCondensedCardDefinition> comp;
 	
 	public CardTableModel(final List<MagicCardDefinition> cardDefs, final boolean isDeck) {
-		this.comp = MagicDeckCardDefinition.NAME_COMPARATOR_DESC;
+		this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
 		this.isDeck = isDeck;
 		
 		setCards(cardDefs);
@@ -99,11 +101,7 @@ public class CardTableModel implements TableModel {
 	}
 	
 	public void setCards(List<MagicCardDefinition> defs) {
-		if (isDeck) {
-			this.cardDefinitions = MagicDeckCardDefinition.condenseCopyCardList(defs);
-		} else {
-			this.cardDefinitions = MagicDeckCardDefinition.simpleCopyCardList(defs);
-		}
+		this.cardDefinitions = new MagicCondensedDeck(defs);
 		
 		// re-sort if necessary
 		if(comp != null) {
@@ -112,23 +110,23 @@ public class CardTableModel implements TableModel {
 	}
 	
 	public void sort(int column) {
-		Comparator<MagicDeckCardDefinition> oldComp = comp;
+		Comparator<MagicCondensedCardDefinition> oldComp = comp;
 		comp = null;
 		
 		switch(column) {
-			case 0:		comp = (isDesc[column]) ? MagicDeckCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicDeckCardDefinition.NUM_COPIES_COMPARATOR_DESC;
+			case 0:		comp = (isDesc[column]) ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC;
 						break;
-			case 1:		comp = (isDesc[column]) ? MagicDeckCardDefinition.NAME_COMPARATOR_ASC : MagicDeckCardDefinition.NAME_COMPARATOR_DESC;
+			case 1:		comp = (isDesc[column]) ? MagicCondensedCardDefinition.NAME_COMPARATOR_ASC : MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
 						break;
-			case 2:		comp = (isDesc[column]) ? MagicDeckCardDefinition.CONVERTED_COMPARATOR_ASC : MagicDeckCardDefinition.CONVERTED_COMPARATOR_DESC;
+			case 2:		comp = (isDesc[column]) ? MagicCondensedCardDefinition.CONVERTED_COMPARATOR_ASC : MagicCondensedCardDefinition.CONVERTED_COMPARATOR_DESC;
 						break;
-			case 3:		comp = (isDesc[column]) ? MagicDeckCardDefinition.POWER_COMPARATOR_ASC : MagicDeckCardDefinition.POWER_COMPARATOR_DESC;
+			case 3:		comp = (isDesc[column]) ? MagicCondensedCardDefinition.POWER_COMPARATOR_ASC : MagicCondensedCardDefinition.POWER_COMPARATOR_DESC;
 						break;
-			case 4:		comp = (isDesc[column]) ? MagicDeckCardDefinition.TOUGHNESS_COMPARATOR_ASC : MagicDeckCardDefinition.TOUGHNESS_COMPARATOR_DESC;
+			case 4:		comp = (isDesc[column]) ? MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_ASC : MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_DESC;
 						break;
-			case 5:		comp = (isDesc[column]) ? MagicDeckCardDefinition.TYPE_COMPARATOR_ASC : MagicDeckCardDefinition.TYPE_COMPARATOR_DESC;
+			case 5:		comp = (isDesc[column]) ? MagicCondensedCardDefinition.TYPE_COMPARATOR_ASC : MagicCondensedCardDefinition.TYPE_COMPARATOR_DESC;
 						break;
-			case 7:		comp = (isDesc[column]) ? MagicDeckCardDefinition.RARITY_COMPARATOR_ASC : MagicDeckCardDefinition.RARITY_COMPARATOR_DESC;
+			case 7:		comp = (isDesc[column]) ? MagicCondensedCardDefinition.RARITY_COMPARATOR_ASC : MagicCondensedCardDefinition.RARITY_COMPARATOR_DESC;
 						break;
 		}
 		
