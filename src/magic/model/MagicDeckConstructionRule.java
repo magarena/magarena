@@ -10,6 +10,7 @@ public enum MagicDeckConstructionRule {
 	;
 	
 	public static final int MIN_DECK_SIZE = 40;	
+	public static final int MAX_COPIES = 4;
 	
 	private final String text;
 	

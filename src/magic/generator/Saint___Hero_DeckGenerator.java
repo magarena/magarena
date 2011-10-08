@@ -4,8 +4,8 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColoredType;
+import magic.model.MagicCondensedDeck;
 import magic.model.MagicCubeDefinition;
-import magic.model.MagicDeck;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
@@ -30,12 +30,12 @@ public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
 		return 2;
 	}
 	
-	public void addRequiredSpells(MagicDeck deck) {
-		String[] cards = {"Geist of Saint Traft", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Batterskull", "Day of Judgment", "Day of Judgment", "Mana Leak", "Mana Leak", "Mana Leak", "Timely Reinforcements", "Timely Reinforcements"};
+	public void addRequiredSpells(MagicCondensedDeck deck) {
+		String[] cards = {"Geist of Saint Traft", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Batterskull", "Day of Judgment", "Day of Judgment", "Mana Leak", "Mana Leak", "Mana Leak", "Timely Reinforcements", "Timely Reinforcements"};
 		addRequiredCards(deck, cards);
 	}
 	
-	public void addRequiredLands(MagicDeck deck) {
+	public void addRequiredLands(MagicCondensedDeck deck) {
 		String[] cards = {"Glacial Fortress", "Glacial Fortress", "Glacial Fortress", "Seachrome Coast", "Seachrome Coast", "Seachrome Coast"};
 		addRequiredCards(deck, cards);
 	}

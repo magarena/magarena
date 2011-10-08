@@ -4,8 +4,8 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColoredType;
+import magic.model.MagicCondensedDeck;
 import magic.model.MagicCubeDefinition;
-import magic.model.MagicDeck;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
@@ -34,8 +34,8 @@ public class White_Knights_DeckGenerator extends DefaultDeckGenerator {
 		return (!card.isCreature()) || card.hasSubType(magic.model.MagicSubType.Knight);
 	}
 	
-	public void addRequiredSpells(MagicDeck deck) {
-		String[] cards = {"Knight Exemplar", "Knight Exemplar", "Knight Exemplar", "Day of Judgment", "Student of Warfare", "Student of Warfare", "Sun Titan", "Kinsbaile Cavalier", "Honor of the Pure", "Honor of the Pure", "Honor of the Pure", "Hero of Bladehold"};
+	public void addRequiredSpells(MagicCondensedDeck deck) {
+		String[] cards = {"Knight Exemplar", "Knight Exemplar", "Knight Exemplar", "Knight Exemplar", "Day of Judgment", "Student of Warfare", "Student of Warfare", "Sun Titan", "Kinsbaile Cavalier", "Honor of the Pure", "Honor of the Pure", "Honor of the Pure", "Hero of Bladehold", "Hero of Bladehold"};
 		addRequiredCards(deck, cards);
 	}
 	

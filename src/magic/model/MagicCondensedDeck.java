@@ -2,6 +2,7 @@ package magic.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> {
@@ -9,6 +10,8 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
 	private static final long serialVersionUID = 143L;
 	
 	private String name = "Unsaved Deck";
+	
+	private final HashMap<String, MagicCondensedCardDefinition> map = new HashMap<String, MagicCondensedCardDefinition>();
 
     public MagicCondensedDeck() {}
 
@@ -26,25 +29,43 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
 	public MagicCondensedDeck(final List<MagicCardDefinition> list) {
 		super();
 		
-		Collections.sort(list, MagicCardDefinition.NAME_COMPARATOR_DESC);
-	
-		MagicCondensedCardDefinition lastDeckCard = null;
-		
-		for(int i = 0; i < list.size(); i++) {
-			// increment copies count if more than one of the same card
-			if(lastDeckCard != null && MagicCardDefinition.NAME_COMPARATOR_DESC.compare(lastDeckCard.getCard(), list.get(i)) == 0) {
-				lastDeckCard.incrementNumCopies();
-			} else {
-				lastDeckCard = new MagicCondensedCardDefinition(list.get(i));
-				add(lastDeckCard);
-			}
+		for(MagicCardDefinition card : list) {
+			addCard(card, true);
 		}
+	}
+	
+	private String getKey(final MagicCardDefinition card) {
+		return card.getName();
+	}
+	
+	public boolean addCard(final MagicCardDefinition card, final boolean ignoreCopiesLimit) {
+		if(!map.containsKey(getKey(card))) {
+			// add to end
+			add(new MagicCondensedCardDefinition(card));
+			map.put(getKey(card), get(size() - 1));
+			
+			return true;
+		} else {
+			MagicCondensedCardDefinition existingCard = map.get(getKey(card));
+			
+			if(ignoreCopiesLimit || existingCard.getNumCopies() < MagicDeckConstructionRule.MAX_COPIES) {
+				existingCard.incrementNumCopies();
+				
+				return true;
+			} // otherwise card can't be added because of copies limit
+		}
+		
+		return false;
 	}
 
     public void setContent(final MagicCondensedDeck deck) {
         clear();
         addAll(deck);
+		
         name = deck.getName();
+		
+		map.clear();
+		map.putAll(deck.getMap());
     }
 	
 	public void setName(final String name) {
@@ -53,6 +74,14 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
 	
 	public String getName() {
 		return name;
+	}
+	
+	public int getNumCards() {
+		return toMagicDeck().size();
+	}
+	
+	public HashMap<String, MagicCondensedCardDefinition> getMap() {
+		return map;
 	}
 	
 	public MagicDeck toMagicDeck() {

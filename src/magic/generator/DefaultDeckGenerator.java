@@ -3,6 +3,7 @@ package magic.generator;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColoredType;
+import magic.model.MagicCondensedDeck;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerProfile;
@@ -77,10 +78,10 @@ public class DefaultDeckGenerator {
 		return true;
 	}
 	
-	public void generateDeck(final int size,final MagicPlayerProfile profile, final MagicDeck deck) {
+	public void generateDeck(final int size, final MagicPlayerProfile profile, final MagicDeck deck) {
 		setColors(profile);
 		
-        deck.clear();
+        MagicCondensedDeck condensedDeck = new MagicCondensedDeck();
 
         genSpells();
         genLands();
@@ -100,10 +101,10 @@ public class DefaultDeckGenerator {
 		int countNonlandNoncreature = 0;
 		final int countCost[] = new int[3];
 		
-		addRequiredSpells(deck);
+		addRequiredSpells(condensedDeck);
 		
 		// count required cards added
-		for(MagicCardDefinition card : deck) {
+		for(MagicCardDefinition card : condensedDeck.toMagicDeck()) {
 			if(card.isCreature()) {
 				countCreatures++;
 			} else if(!card.isLand()) {
@@ -118,7 +119,7 @@ public class DefaultDeckGenerator {
 		}
 		
 		// Add spells to deck.
-		while (deck.size() < spells && spellCards.size() > 0) {
+		while (condensedDeck.getNumCards() < spells && spellCards.size() > 0) {
 			final int index=MagicRandom.nextInt(spellCards.size());
 			final MagicCardDefinition cardDefinition=spellCards.get(index);
             spellCards.remove(index);
@@ -144,16 +145,16 @@ public class DefaultDeckGenerator {
 					continue;
 				}
 				
-				deck.add(cardDefinition);
-				
-				countCost[bucket]++;
-				if(creature) {
-					countCreatures++;
-				} else if(!cardDefinition.isLand()) {
-					countNonlandNoncreature++;
-				}
-				if (colorless) {
-					countColorless++;
+				if(condensedDeck.addCard(cardDefinition, false)) {
+					countCost[bucket]++;
+					if(creature) {
+						countCreatures++;
+					} else if(!cardDefinition.isLand()) {
+						countNonlandNoncreature++;
+					}
+					if (colorless) {
+						countColorless++;
+					}
 				}
 			} 
             
@@ -163,33 +164,35 @@ public class DefaultDeckGenerator {
 		}
 		
 		// Add non basic lands to deck.
-		addRequiredLands(deck);
+		addRequiredLands(condensedDeck);
 		
-		while (deck.size() < spells+lands && landCards.size() > 0) {
+		while (condensedDeck.getNumCards() < spells+lands && landCards.size() > 0) {
 			final int index=MagicRandom.nextInt(landCards.size());
 			final MagicCardDefinition cardDefinition=landCards.get(index);
             landCards.remove(index);
             
             if (cardDefinition.isPlayable(profile)) {
-				deck.add(cardDefinition);
+				condensedDeck.addCard(cardDefinition, false);
 			}
 		}
+		
+		deck.setContent(condensedDeck.toMagicDeck());
 	}
 	
-	protected void addRequiredCards(MagicDeck deck, String[] cards) {		
+	protected void addRequiredCards(MagicCondensedDeck deck, String[] cards) {		
 		for(String name : cards) {
 			final MagicCardDefinition cardDef = CardDefinitions.getInstance().getCard(name);
 			if (cardDef.isValid()) {
-				deck.add(cardDef);
+				deck.addCard(cardDef, false);
             } else {
 				System.out.println("Cannot find " + name);
 			}
 		}
 	}
 	
-	public void addRequiredSpells(MagicDeck deck) { }
+	public void addRequiredSpells(MagicCondensedDeck deck) { }
 	
-	public void addRequiredLands(MagicDeck deck) { }
+	public void addRequiredLands(MagicCondensedDeck deck) { }
 	
 	public void setColors(MagicPlayerProfile profile) {	}
 	

@@ -4,8 +4,8 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColoredType;
+import magic.model.MagicCondensedDeck;
 import magic.model.MagicCubeDefinition;
-import magic.model.MagicDeck;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
@@ -34,7 +34,7 @@ public class Goblin_DeckGenerator extends DefaultDeckGenerator {
 		return (!card.isCreature()) || card.hasSubType(magic.model.MagicSubType.Goblin);
 	}
 	
-	public void addRequiredSpells(MagicDeck deck) {
+	public void addRequiredSpells(MagicCondensedDeck deck) {
 		String[] cards = {"Wort, Boggart Auntie", "Siege-Gang Commander", "Siege-Gang Commander", "Frenzied Goblin", "Frenzied Goblin", "Goblin Piledriver"};
 		addRequiredCards(deck, cards);
 	}
