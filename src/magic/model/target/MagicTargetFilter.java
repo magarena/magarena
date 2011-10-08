@@ -796,6 +796,18 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_LEGENDARY_SAMURAI_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player && 
+                   ((MagicPermanent)target).isCreature(game) && 
+                   ((MagicPermanent)target).hasSubType(MagicSubType.Samurai,game) &&
+                   ((MagicPermanent)target).hasType(MagicType.Legendary,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_VAMPIRE_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent = (MagicPermanent)target;
