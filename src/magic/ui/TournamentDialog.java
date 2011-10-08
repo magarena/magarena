@@ -229,15 +229,17 @@ public class TournamentDialog extends JDialog implements ActionListener {
 		}
 	}
 		
-	private static class ColorsChooser extends JComboBox implements ListCellRenderer {
+	private static class ColorsChooser extends JComboBox implements ListCellRenderer, ActionListener {
 
 		private static final long serialVersionUID = 1L;
+		
+		private String lastSelected;
 		
 		public ColorsChooser(final String colors) {
 			
 			this.setRenderer(this);
 			
-			final DefaultComboBoxModel model=new DefaultComboBoxModel();
+			final DefaultComboBoxModel model = new DefaultComboBoxModel();
 			model.addElement("bug");
 			model.addElement("bur");
 			model.addElement("buw");
@@ -277,7 +279,9 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			
 			setModel(model);
 			setSelectedItem(colors);
+			lastSelected = colors;
 			this.setFocusable(false);
+			addActionListener(this);
 		}
 
 		@Override
@@ -321,6 +325,17 @@ public class TournamentDialog extends JDialog implements ActionListener {
 					panel.setBackground(Color.LIGHT_GRAY);
 				}
 				return panel;
+			}
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			String tempItem = (String) getSelectedItem();
+			
+			if (SEPARATOR.equals(tempItem)) {
+				// don't select separator
+				setSelectedItem(lastSelected);
+			} else {
+				lastSelected = tempItem;
 			}
 		}
 	}
