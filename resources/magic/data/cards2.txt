@@ -1673,6 +1673,18 @@ cost={1}{G}
 pt=2/2
 timing=fmain
 
+>Imperious Perfect
+image=http://magiccards.info/scans/en/dpa/71.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=fmain
+
 >Incurable Ogre
 image=http://magiccards.info/scans/en/ala/105.jpg 
 value=2

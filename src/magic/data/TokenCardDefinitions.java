@@ -190,6 +190,19 @@ public class TokenCardDefinitions {
 			setPowerToughness(3,3);
 		}
 	};
+
+	public static final MagicCardDefinition ELF_WARRIOR_TOKEN_CARD = new MagicCardDefinition("Elf Warrior", "Elf1") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Elf","Warrior"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Green);
+			setColoredType();
+			setPowerToughness(1,1);
+		}
+	};
 	
 	public static final MagicCardDefinition FAERIE_ROGUE_TOKEN_CARD = new MagicCardDefinition("Faerie Rogue") {
 		public void initialize() {
@@ -542,6 +555,7 @@ public class TokenCardDefinitions {
 			DRAGON5_TOKEN_CARD,
 			ELDRAZI_SPAWN_TOKEN_CARD,
 			ELEPHANT_TOKEN_CARD,
+			ELF_WARRIOR_TOKEN_CARD,
 			FAERIE_ROGUE_TOKEN_CARD,
 			GERM_TOKEN_CARD,
 			GOBLIN1_TOKEN_CARD,

@@ -1,4 +1,4 @@
-package magic.card;
+		package magic.card;
 
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
@@ -20,7 +20,7 @@ public class Bitterblossom {
                     player,
                     new Object[]{player},
                     this,
-                    player + " loses 1 life and puts a 1/1 black Faerie Rogue creature token with flying " + 
+                    player + " loses 1 life and puts a 1/1 black Faerie Rogue creature token with flying " +
                     "onto the battlefield."):
                 MagicEvent.NONE;
 		}
@@ -33,6 +33,6 @@ public class Bitterblossom {
 			final MagicPlayer player=(MagicPlayer)data[0];
 			game.doAction(new MagicChangeLifeAction(player,-1));
 			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.FAERIE_ROGUE_TOKEN_CARD));
-		}		
+		}
     };
 }
