@@ -12758,3 +12758,27 @@ converted=3
 cost={2}{B}
 pt=3/1
 timing=main
+
+>Ronin Cavekeeper
+image=http://magiccards.info/scans/en/sok/111.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=r
+converted=6
+cost={5}{R}
+pt=4/3
+timing=main
+
+>Ronin Cliffrider
+image=http://magiccards.info/scans/en/bok/116.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=r
+converted=5
+cost={3}{R}{R}
+pt=2/2
+timing=main
