@@ -12684,3 +12684,28 @@ converted=5
 cost={4}{W}
 pt=2/3
 timing=main
+
+>Konda, Lord of Eiganjo
+image=http://magiccards.info/scans/en/chk/30.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Human,Samurai
+color=w
+converted=7
+cost={5}{W}{W}
+pt=3/3
+ability=vigilance,indestructible
+timing=main
+
+>Konda's Hatamoto
+image=http://magiccards.info/scans/en/chk/31.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=2
+cost={1}{W}
+pt=1/2
+timing=main
