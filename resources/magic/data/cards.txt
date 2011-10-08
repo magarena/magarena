@@ -12659,3 +12659,28 @@ cost={2}{G}
 pt=2/1
 ability=can't be countered
 timing=main
+
+>Kitsune Blademaster
+image=http://magiccards.info/scans/en/chk/25.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Fox,Samurai
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=first strike
+timing=main
+
+>Kitsune Dawnblade
+image=http://magiccards.info/scans/en/sok/16.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Fox,Samurai
+color=w
+converted=5
+cost={4}{W}
+pt=2/3
+timing=main

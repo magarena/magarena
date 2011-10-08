@@ -87,20 +87,19 @@ public class Deathbringer_Liege {
                 new MagicEvent(
                         permanent,
                         player,
-                        new MagicMayChoice("You may tap target creature.",MagicTargetChoice.NEG_TARGET_CREATURE),
+                        new MagicMayChoice(player + " may tap target creature.",MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicTapTargetPicker(true,false),
                         MagicEvent.NO_DATA,
                         this,
-                        "You may$ tap target creature$."):
+                        player + " may$ tap target creature$."):
                 MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        if (creature.isTapped()) {
+                        if (!creature.isTapped()) {
                             game.doAction(new MagicTapAction(creature,true));
                         }
                     }
