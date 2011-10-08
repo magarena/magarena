@@ -12584,3 +12584,29 @@ converted=4
 cost={2}{R}{R}
 pt=3/2
 timing=main
+
+>Hand of Cruelty
+image=http://magiccards.info/scans/en/sok/71.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=b
+converted=2
+cost={B}{B}
+pt=2/2
+ability=protection from white
+timing=main
+
+>Hand of Honor
+image=http://magiccards.info/scans/en/sok/12.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=protection from black
+timing=main
