@@ -12807,3 +12807,28 @@ converted=6
 cost={4}{W}{W}
 pt=4/4
 timing=main
+
+>Silverstorm Samurai
+image=http://magiccards.info/scans/en/bok/22.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Fox,Samurai
+color=w
+converted=6
+cost={4}{W}{W}
+pt=3/3
+ability=flash
+timing=flash
+
+>Sokenzan Spellblade
+image=http://magiccards.info/scans/en/sok/115.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Ogre,Samurai,Shaman
+color=r
+converted=5
+cost={4}{R}
+pt=2/3
+timing=flash
