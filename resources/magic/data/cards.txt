@@ -12709,3 +12709,28 @@ converted=2
 cost={1}{W}
 pt=1/2
 timing=main
+
+>Kuro's Taken
+image=http://magiccards.info/scans/en/sok/79.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Rat,Samurai
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=main
+
+>Mothrider Samurai
+image=http://magiccards.info/scans/en/chk/34.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+ability=flying
+timing=main
