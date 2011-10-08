@@ -107,7 +107,7 @@ public class DeckGenerator {
 				countNonlandNoncreature++;
 			}
 			
-			if(card.getColoredType()==MagicColoredType.Colorless) {
+			if(card.getColoredType() == MagicColoredType.Colorless) {
 				countColorless++;
 			}
 			
@@ -123,8 +123,13 @@ public class DeckGenerator {
             spellCards.remove(index);
 			
             if (cardDefinition.isPlayable(profile)) {
-				final boolean creature=cardDefinition.isCreature();
-				if (!creature && !cardDefinition.isLand() && countNonlandNoncreature >= maxNonlandNoncreature) {
+				final boolean creature = cardDefinition.isCreature();
+				
+				if(creature && countCreatures >= maxCreatures) {
+					continue;
+				}
+				
+				if (!creature && countNonlandNoncreature >= maxNonlandNoncreature) {
 					continue;
 				}
 				
@@ -134,14 +139,16 @@ public class DeckGenerator {
 				}
 				
 				final int bucket=cardDefinition.getCostBucket();
-				if (countCost[bucket]>=maxCost[bucket]) {
+				if (!ignoreMaxCost() && countCost[bucket]>=maxCost[bucket]) {
 					continue;
 				}
 				
 				deck.add(cardDefinition);
 				
 				countCost[bucket]++;
-				if (!creature) {
+				if(creature) {
+					countCreatures++;
+				} else {
 					countNonlandNoncreature++;
 				}
 				if (colorless) {
@@ -152,7 +159,7 @@ public class DeckGenerator {
             if (spellCards.size() == 0) {
                 genSpells();
             }
-		}	
+		}
 		
 		// Add non basic lands to deck.
 		while (deck.size() < spells+lands && landCards.size() > 0) {
@@ -166,7 +173,11 @@ public class DeckGenerator {
 		}
 	}
 	
+	public void addRequiredCards(MagicDeck deck) {	}
+	
 	public void setColors(MagicPlayerProfile profile) {	}
 	
-	public void addRequiredCards(MagicDeck deck) {	}
+	public boolean ignoreMaxCost() {
+		return false;
+	}
 }

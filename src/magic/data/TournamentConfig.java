@@ -103,6 +103,8 @@ public class TournamentConfig {
 			return new MagicPlayerProfile(MagicColor.getRandomColors(2));
 		} else if (ANY_ONE.equals(colorText)) {
 			return new MagicPlayerProfile(MagicColor.getRandomColors(1));
+		} else if (colorText.equals("Knight")) {
+			return new MagicPlayerProfile("", "KnightDeckGenerator");
 		}
 		return new MagicPlayerProfile(colorText);
 	}

@@ -264,6 +264,8 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			model.addElement("w");
 			model.addElement("*");
 			model.addElement("@");
+			model.addElement("---");
+			model.addElement("Knight");
 			setModel(model);
 			setSelectedItem(colors);
 			this.setFocusable(false);
@@ -277,23 +279,40 @@ public class TournamentDialog extends JDialog implements ActionListener {
                 final boolean isSelected,
                 final boolean cellHasFocus) {
 			final String colors=(String)value;
-			final JPanel panel=new JPanel(new GridLayout(1,3));
-			for (int i=0;i<colors.length();i++) {
-				
-				final char ch=colors.charAt(i);
-				final ImageIcon icon;
-				switch (ch) {
-					case '*': icon=IconImages.ANY; break;
-					case '@': icon=IconImages.FOLDER; break;
-					default: icon=MagicColor.getColor(ch).getIcon(); break;
+			
+			if(colors == "---") {
+			    return new javax.swing.JSeparator(javax.swing.JSeparator.HORIZONTAL);
+			} else if(colors == "Knight") {
+				final JPanel panel=new JPanel(new GridLayout(1,1));
+				panel.setBorder(FontsAndBorders.EMPTY_BORDER);
+				if (isSelected) {
+					panel.setBackground(Color.LIGHT_GRAY);
 				}
-				panel.add(new JLabel(icon));
+				
+				JLabel label = new JLabel(colors, JLabel.CENTER);
+				label.setFont(FontsAndBorders.FONT2);
+				panel.add(label);
+				
+				return panel;
+			} else {
+				final JPanel panel=new JPanel(new GridLayout(1,3));
+				for (int i=0;i<colors.length();i++) {
+					
+					final char ch=colors.charAt(i);
+					final ImageIcon icon;
+					switch (ch) {
+						case '*': icon=IconImages.ANY; break;
+						case '@': icon=IconImages.FOLDER; break;
+						default: icon=MagicColor.getColor(ch).getIcon(); break;
+					}
+					panel.add(new JLabel(icon));
+				}
+				panel.setBorder(FontsAndBorders.EMPTY_BORDER);
+				if (isSelected) {
+					panel.setBackground(Color.LIGHT_GRAY);
+				}
+				return panel;
 			}
-			panel.setBorder(FontsAndBorders.EMPTY_BORDER);
-			if (isSelected) {
-				panel.setBackground(Color.LIGHT_GRAY);
-			}
-			return panel;
 		}
 	}
 }
