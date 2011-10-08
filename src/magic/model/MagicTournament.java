@@ -211,11 +211,14 @@ public class MagicTournament {
 	
 	private void buildDecks() {
 		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(configuration.getCube());
-        final DeckGenerator generator=new DeckGenerator(cubeDefinition);
-        // final DeckGenerator generator=new magic.data.generator.KnightDeckGenerator();
+        final DeckGenerator generator = new DeckGenerator(cubeDefinition);
 		for (final MagicPlayerDefinition player : playerDefinitions) {
-			if (player.getProfile().getNrOfColors()==0) {
-				DeckUtils.loadRandomDeck(player);
+			if (player.getProfile().getNrOfColors() == 0) {
+				if(player.getProfile().getDeckGeneratorName() != null) {
+					player.generateDeck(new magic.data.generator.KnightDeckGenerator());
+				} else {
+					DeckUtils.loadRandomDeck(player);
+				}
 			} else {
 				player.generateDeck(generator);
 			}

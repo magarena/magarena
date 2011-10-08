@@ -20,7 +20,11 @@ public class KnightDeckGenerator extends DeckGenerator {
 	public KnightDeckGenerator() {
 		super(null);
 		
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(colorText));
+		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+	}
+	
+	public String getColorText() {
+		return colorText;
 	}
 	
 	public int getMinRarity() {
@@ -28,7 +32,7 @@ public class KnightDeckGenerator extends DeckGenerator {
 	}
 	
 	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
-		return !card.isCreature() || card.hasSubType(magic.model.MagicSubType.Knight);
+		return (!card.isCreature()) || card.hasSubType(magic.model.MagicSubType.Knight);
 	}
 	
 	public void addRequiredCards(MagicDeck deck) {
@@ -45,6 +49,10 @@ public class KnightDeckGenerator extends DeckGenerator {
 	}
 	
 	public void setColors(MagicPlayerProfile profile) {
-		profile.setColors(colorText);
+		profile.setColors(getColorText());
+	}
+	
+	public boolean ignoreMaxCost() {
+		return true;
 	}
 }

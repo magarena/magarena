@@ -2,11 +2,17 @@ package magic.model;
 
 public class MagicPlayerProfile {
 	
+	private String deckGeneratorName;	
 	private String colorText;
 	private MagicColor[] colors;
 	
 	public MagicPlayerProfile(final String colorText) {
+		this(colorText, null);
+	}
+	
+	public MagicPlayerProfile(final String colorText, final String deckGeneratorName) {
 		setColors(colorText);
+		setDeckGeneratorName(deckGeneratorName);
 	}
 	
 	public void setColors(final String colorText) {
@@ -17,6 +23,14 @@ public class MagicPlayerProfile {
 			
 			colors[i]=MagicColor.getColor(colorText.charAt(i));
 		}
+	}
+	
+	public void setDeckGeneratorName(final String name) {
+		this.deckGeneratorName = name;
+	}
+	
+	public String getDeckGeneratorName() {
+		return deckGeneratorName;
 	}
 	
 	String getColorText() {
