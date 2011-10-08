@@ -12782,3 +12782,28 @@ converted=5
 cost={3}{R}{R}
 pt=2/2
 timing=main
+
+>Ronin Houndmaster
+image=http://magiccards.info/scans/en/chk/184.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+ability=haste
+timing=fmain
+
+>Samurai Enforcers
+image=http://magiccards.info/scans/en/chk/42.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=6
+cost={4}{W}{W}
+pt=4/4
+timing=main
