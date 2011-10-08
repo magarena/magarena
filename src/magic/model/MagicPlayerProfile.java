@@ -2,10 +2,14 @@ package magic.model;
 
 public class MagicPlayerProfile {
 	
-	private final String colorText;
-	private final MagicColor[] colors;
+	private String colorText;
+	private MagicColor[] colors;
 	
 	public MagicPlayerProfile(final String colorText) {
+		setColors(colorText);
+	}
+	
+	public void setColors(final String colorText) {
 
 		this.colorText=colorText;
 		colors=new MagicColor[colorText.length()];
