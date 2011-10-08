@@ -2,12 +2,15 @@ package magic.card;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeLifeAction;
+import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayerAction;
+import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
@@ -79,9 +82,13 @@ public class Scrib_Nibblers {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
-                	final MagicCard card = player.getLibrary().removeCardAtTop();
-                	if (card.getCardDefinition().isLand()) {
-                		game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                	final MagicCard card = player.getLibrary().getCardAtTop();
+                	if (card != MagicCard.NONE) {
+                		game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                		game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                		if (card.getCardDefinition().isLand()) {
+                			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+                		}
                 	}
                 }
             });

@@ -53,8 +53,11 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		return get(0);
 	}
 	
-	private MagicCard getCardAtTop() {
-		return this.get(size()-1);
+	public MagicCard getCardAtTop() {
+		final int size = this.size();
+		return size > 0 ? 
+				this.get(size()-1) :
+				MagicCard.NONE;
 	}
 	
 	public MagicCard removeCardAtTop() {
