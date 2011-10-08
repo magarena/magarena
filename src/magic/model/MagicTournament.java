@@ -213,12 +213,8 @@ public class MagicTournament {
 		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(configuration.getCube());
         final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
 		for (final MagicPlayerDefinition player : playerDefinitions) {
-			if (player.getProfile().getNrOfColors() == 0) {
-				if(player.getProfile().getDeckGeneratorName() != null) {
-					player.generateDeck(new magic.generator.KnightDeckGenerator());
-				} else {
-					DeckUtils.loadRandomDeck(player);
-				}
+			if(player.getDeckGenerator() == null && player.getProfile().getNrOfColors() == 0) {
+				DeckUtils.loadRandomDeck(player);
 			} else {
 				player.generateDeck(generator);
 			}

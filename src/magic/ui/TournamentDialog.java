@@ -2,6 +2,7 @@ package magic.ui;
 
 import magic.ai.MagicAIImpl;
 import magic.data.CubeDefinitions;
+import magic.data.DeckGenerators;
 import magic.data.IconImages;
 import magic.data.TournamentConfig;
 import magic.model.MagicColor;
@@ -34,6 +35,8 @@ import java.awt.event.ActionListener;
 public class TournamentDialog extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
+	
+	private static final String SEPARATOR = "----";
 	
 	private final MagicFrame frame;
 	private final AvatarPanel avatarPanel;
@@ -264,8 +267,14 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			model.addElement("w");
 			model.addElement("*");
 			model.addElement("@");
-			model.addElement("---");
-			model.addElement("Knight");
+			
+			if(DeckGenerators.getInstance().getNrGenerators() > 0) {
+				model.addElement(SEPARATOR);
+				for(String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
+					model.addElement(generatorName);
+				}
+			}
+			
 			setModel(model);
 			setSelectedItem(colors);
 			this.setFocusable(false);
@@ -278,27 +287,27 @@ public class TournamentDialog extends JDialog implements ActionListener {
                 final int index,
                 final boolean isSelected,
                 final boolean cellHasFocus) {
-			final String colors=(String)value;
+			final String selectedVal = (String) value;
 			
-			if(colors == "---") {
+			if(selectedVal == SEPARATOR) {
 			    return new javax.swing.JSeparator(javax.swing.JSeparator.HORIZONTAL);
-			} else if(colors == "Knight") {
+			} else if(DeckGenerators.getInstance().getGeneratorNames().contains(selectedVal)) {
 				final JPanel panel=new JPanel(new GridLayout(1,1));
 				panel.setBorder(FontsAndBorders.EMPTY_BORDER);
 				if (isSelected) {
 					panel.setBackground(Color.LIGHT_GRAY);
 				}
 				
-				JLabel label = new JLabel(colors, JLabel.CENTER);
+				JLabel label = new JLabel(selectedVal, JLabel.CENTER);
 				label.setFont(FontsAndBorders.FONT2);
 				panel.add(label);
 				
 				return panel;
 			} else {
 				final JPanel panel=new JPanel(new GridLayout(1,3));
-				for (int i=0;i<colors.length();i++) {
+				for (int i=0;i<selectedVal.length();i++) {
 					
-					final char ch=colors.charAt(i);
+					final char ch = selectedVal.charAt(i);
 					final ImageIcon icon;
 					switch (ch) {
 						case '*': icon=IconImages.ANY; break;
