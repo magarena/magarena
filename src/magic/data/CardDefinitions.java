@@ -272,7 +272,7 @@ public class CardDefinitions {
 		return cards;
 	}
 	
-	List<MagicCardDefinition> getLandCards() {
+	public List<MagicCardDefinition> getLandCards() {
 		return landCards;
 	}
 	

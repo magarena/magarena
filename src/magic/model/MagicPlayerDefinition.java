@@ -1,7 +1,7 @@
 package magic.model;
 
 import magic.data.CardDefinitions;
-import magic.data.DeckGenerator;
+import magic.generator.DefaultDeckGenerator;
 
 import java.util.Properties;
 
@@ -112,7 +112,7 @@ public class MagicPlayerDefinition {
         deck.setContent(aDeck);
 	}	
 	
-	void generateDeck(final DeckGenerator generator) {
+	void generateDeck(final DefaultDeckGenerator generator) {
 		generator.generateDeck(DECK_SIZE, profile, deck);
 		addBasicLandsToDeck();
 	}

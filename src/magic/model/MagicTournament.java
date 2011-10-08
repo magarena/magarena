@@ -3,10 +3,10 @@ package magic.model;
 import magic.MagicMain;
 import magic.ai.MagicAI;
 import magic.data.CubeDefinitions;
-import magic.data.DeckGenerator;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.TournamentConfig;
+import magic.generator.DefaultDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -211,11 +211,11 @@ public class MagicTournament {
 	
 	private void buildDecks() {
 		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getInstance().getCubeDefinition(configuration.getCube());
-        final DeckGenerator generator = new DeckGenerator(cubeDefinition);
+        final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
 		for (final MagicPlayerDefinition player : playerDefinitions) {
 			if (player.getProfile().getNrOfColors() == 0) {
 				if(player.getProfile().getDeckGeneratorName() != null) {
-					player.generateDeck(new magic.data.generator.KnightDeckGenerator());
+					player.generateDeck(new magic.generator.KnightDeckGenerator());
 				} else {
 					DeckUtils.loadRandomDeck(player);
 				}

@@ -1,8 +1,7 @@
-package magic.data.generator;
+package magic.generator;
 
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
-import magic.data.DeckGenerator;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColoredType;
 import magic.model.MagicCubeDefinition;
@@ -13,7 +12,7 @@ import magic.model.MagicRandom;
 import java.util.ArrayList;
 import java.util.List;
 
-public class KnightDeckGenerator extends DeckGenerator {
+public class KnightDeckGenerator extends DefaultDeckGenerator {
 
 	private final String colorText = "w";
 	

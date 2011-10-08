@@ -1,5 +1,6 @@
-package magic.data;
+package magic.generator;
 
+import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColoredType;
 import magic.model.MagicCubeDefinition;
@@ -11,14 +12,14 @@ import magic.model.MagicRarity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeckGenerator {
+public class DefaultDeckGenerator {
 	
 	private final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
 	private final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
     
 	private MagicCubeDefinition cubeDefinition;
 	
-	public DeckGenerator(final MagicCubeDefinition cubeDefinition) {
+	public DefaultDeckGenerator(final MagicCubeDefinition cubeDefinition) {
         this.cubeDefinition = cubeDefinition;
 	}
 	
