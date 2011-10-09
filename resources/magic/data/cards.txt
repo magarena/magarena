@@ -13071,3 +13071,27 @@ converted=6
 cost={4}{R}{R}
 pt=4/4
 timing=main
+
+>Beastmaster's Magemark
+image=http://magiccards.info/scans/en/gp/80.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=g
+converted=3
+cost={2}{G}
+static=player
+timing=fmain
+
+>Berserk Murlodont
+image=http://magiccards.info/scans/en/le/117.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={4}{G}
+pt=3/3
+timing=main
