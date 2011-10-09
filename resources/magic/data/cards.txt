@@ -13095,3 +13095,15 @@ converted=5
 cost={4}{G}
 pt=3/3
 timing=main
+
+>Deathgazer
+image=http://magiccards.info/scans/en/9e/124.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Lizard
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+timing=main
