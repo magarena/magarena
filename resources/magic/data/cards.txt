@@ -13107,3 +13107,27 @@ converted=4
 cost={3}{B}
 pt=2/2
 timing=main
+
+>Deepwood Wolverine
+image=http://magiccards.info/scans/en/mm/242.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Wolverine
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+
+>Dread Specter
+image=http://magiccards.info/scans/en/mr/17.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Specter
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+timing=main
