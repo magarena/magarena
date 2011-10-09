@@ -12953,3 +12953,15 @@ converted=4
 cost={2}{G}{G}
 pt=2/4
 timing=main
+
+>Alley Grifters
+image=http://magiccards.info/scans/en/mm/115.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Mercenary
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/2
+timing=main

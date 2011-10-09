@@ -1683,6 +1683,7 @@ color=g
 converted=3
 cost={2}{G}
 pt=2/2
+static=player
 timing=fmain
 
 >Incurable Ogre
