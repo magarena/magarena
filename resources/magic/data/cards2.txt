@@ -5280,6 +5280,18 @@ cost={1}{B}
 pt=2/2
 timing=main
 
+>Wooden Stake
+image=http://magiccards.info/scans/en/isd/237.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+given_pt=1/0
+timing=equipment
+
 >Woodland Sleuth
 image=http://magiccards.info/scans/en/isd/210.jpg
 value=3
