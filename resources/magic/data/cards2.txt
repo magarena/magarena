@@ -3945,6 +3945,18 @@ cost={2}{U}
 pt=1/4
 timing=main
 
+>Ashmouth Hound
+image=http://magiccards.info/scans/en/isd/128.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elemental,Hound
+color=r
+converted=2
+cost={1}{R}
+pt=2/1
+timing=main
+
 >Avacynian Priest
 image=http://magiccards.info/scans/en/isd/4.jpg
 value=1
