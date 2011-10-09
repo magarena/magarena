@@ -13155,3 +13155,26 @@ converted=3
 cost={2}{R}
 pt=2/3
 timing=main
+
+>Duskworker
+image=http://magiccards.info/scans/en/mi/166.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+converted=4
+cost={4}
+pt=2/2
+timing=main
+
+>Dwarven Berserker
+image=http://magiccards.info/scans/en/wl/97.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Dwarf,Berserker
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+timing=main
