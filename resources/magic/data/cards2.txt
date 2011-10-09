@@ -5078,6 +5078,18 @@ cost={2}{G}
 ability=trample
 timing=main
 
+>Stitcher's Apprentice
+image=http://magiccards.info/scans/en/isd/81.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Homunculus
+color=u
+converted=2
+cost={1}{U}
+pt=1/2
+timing=main
+
 >Stromkirk Patrol
 image=http://magiccards.info/scans/en/isd/118.jpg
 value=4

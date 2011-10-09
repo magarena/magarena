@@ -297,7 +297,20 @@ public class TokenCardDefinitions {
 			setPowerToughness(2,2);
 			setAbility(MagicAbility.Flying);
 		}
-	};	
+	};
+	
+	public static final MagicCardDefinition HOMUNCULUS2_TOKEN_CARD = new MagicCardDefinition("Homunculus","Homunculus2") {
+		public void initialize() {
+			setToken();
+			setValue(2);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Homunculus"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Blue);
+			setColoredType();
+			setPowerToughness(2,2);
+		}
+	};
 	
 	public static final MagicCardDefinition INSECT1_TOKEN_CARD = new MagicCardDefinition("Insect","Insect1") {
 		public void initialize() {
@@ -563,6 +576,7 @@ public class TokenCardDefinitions {
 			GOBLIN_SOLDIER_TOKEN_CARD,
 			GOLEM3_ARTIFACT_TOKEN_CARD,
 			GRIFFIN_TOKEN_CARD,
+			HOMUNCULUS2_TOKEN_CARD,
 			INSECT1_TOKEN_CARD,
 			MERFOLK_WIZARD_TOKEN_CARD,
 			MYR1_TOKEN_CARD,
