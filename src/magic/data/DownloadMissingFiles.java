@@ -13,18 +13,20 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /** 
- * Download the necessary images from the WWW
+ * Download the necessary images and files from the WWW
  */
-public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
+public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 
 	private static final long serialVersionUID = 1L;
 
-	public DownloadImageFiles(final String filename) {
+	public DownloadMissingFiles(final String filename) {
         loadDownloadImageFiles(filename);
 	}	
 	
 	private void loadDownloadImageFiles(final String filename) {
 		final InputStream stream;
+		
+		// download additional images
 		if (filename.startsWith("file://")) {
             try { //create file input stream
     			stream=new FileInputStream(filename.substring(7));
@@ -73,23 +75,50 @@ public class DownloadImageFiles extends ArrayList<DownloadImageFile> {
 			}
 		}
 		
-		final File cardsPathFile=new File(gamePathFile,"cards");
+		// download card images and texts
+		final File cardsPathFile=new File(gamePathFile, CardDefinitions.CARD_IMAGE_FOLDER);
+		final File textPathFile = new File(gamePathFile, CardDefinitions.CARD_TEXT_FOLDER);
+		
+        if (!textPathFile.mkdir()) {
+            System.err.println("WARNING. Unable to create " + textPathFile);
+        }
+		
 		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
-			final String imageURL=cardDefinition.getImageURL();
-			if (imageURL!=null) {
-				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName()+".jpg");
+			// card image
+			final String imageURL = cardDefinition.getImageURL();
+			if (imageURL != null) {
+				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT);
 
                 //download if the file does not exists OR it is zero length OR it is outdated
 				if (!imageFile.exists() || 
-                    imageFile.length() == 0L ||
-                    cardDefinition.isIgnored(imageFile.length())) {
+						imageFile.length() == 0L ||
+						cardDefinition.isIgnored(imageFile.length())) {
                     try { //create URL
-    					add(new DownloadImageFile(imageFile,new URL(imageURL)));
+    					add(new DownloadCardTextFile(imageFile,new URL(imageURL)));
                     } catch (final java.net.MalformedURLException ex) {
                         System.err.println("ERROR! URL malformed " + imageURL);
                     }
 				}
 			}
+			
+			// card text
+			final String textUrl = cardDefinition.getCardInfoURL();
+			if (textUrl != null && textUrl.length() > 0) {
+				final File textFile = new File(textPathFile, cardDefinition.getCardTextName() + CardDefinitions.CARD_TEXT_EXT);
+				
+				// download if the file does not exists OR it is zero length OR it is outdated
+				if (!textFile.exists() || 
+						textFile.length() == 0L ||
+						cardDefinition.isIgnored(textFile.length())) {
+                    try { // create URL
+    					add(new DownloadCardTextFile(textFile, new URL(textUrl)));
+                    } catch (final java.net.MalformedURLException ex) {
+                        System.err.println("ERROR! URL malformed " + textUrl);
+                    }
+				}
+			}
 		}
+		
+		CardDefinitions.getInstance().loadCardTexts();
 	}
 }

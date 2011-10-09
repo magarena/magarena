@@ -1,8 +1,9 @@
 package magic.ui;
 
 import magic.data.DownloadImageFile;
-import magic.data.DownloadImageFiles;
+import magic.data.DownloadMissingFiles;
 import magic.data.IconImages;
+import magic.data.WebDownloader;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
@@ -30,7 +31,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
 	
 	private final MagicFrame frame;
-	private final DownloadImageFiles files;
+	private final DownloadMissingFiles files;
 	private final JComboBox proxyComboBox;
 	private final JTextField addressTextField;
 	private final JTextField portTextField;
@@ -47,7 +48,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		super(frame,true);
 		this.frame = frame;
 		this.setLayout(new BorderLayout());
-		this.setTitle("Download images");
+		this.setTitle("Download card images and text");
 		this.setSize(300,405);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
@@ -116,12 +117,12 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		buttonPanel.add(cancelButton);
 		add(buttonPanel,BorderLayout.SOUTH);
 
-		files=new DownloadImageFiles(DOWNLOAD_IMAGES_FILENAME);
+		files=new DownloadMissingFiles(DOWNLOAD_IMAGES_FILENAME);
 		if (files.isEmpty()) {
 			okButton.setEnabled(false);
 			progressBar.setMaximum(1);
 			progressBar.setValue(1);
-			downloadLabel.setText("All images are present.");
+			downloadLabel.setText("All images and text are present.");
 		} else {
 			downloadLabel.setText("Press OK to begin or Cancel.");
 		}
@@ -151,7 +152,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
         });
         
         int count=0;
-        for (final DownloadImageFile file : files) {
+        for (final WebDownloader file : files) {
             final int curr = count + 1;
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {

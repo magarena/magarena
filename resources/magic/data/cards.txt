@@ -750,6 +750,7 @@ timing=fmain
 
 >Akroma, Angel of Wrath
 image=http://magiccards.info/scans/en/tsts/1.jpg
+url=http://magiccards.info/dvd/en/1.html
 value=5
 rarity=R
 type=Legendary,Creature
@@ -8441,6 +8442,7 @@ timing=equipment
 
 >Akroma's Memorial
 image=http://magiccards.info/scans/en/fut/159.jpg
+url=http://magiccards.info/fut/en/159.html
 value=5
 rarity=R
 type=Legendary,Artifact

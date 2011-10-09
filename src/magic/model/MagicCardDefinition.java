@@ -63,6 +63,7 @@ public class MagicCardDefinition {
 	private final String name;
 	private final String fullName;
 	private String imageURL;
+	private String cardInfoUrl = "";
 	private int imageCount = 1;
     private Collection<Long> ignore;
 	private int index=-1;
@@ -82,6 +83,7 @@ public class MagicCardDefinition {
 	private int power=0;
 	private int toughness=0;
 	private long abilityFlags=0;
+	private String text = "";
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
@@ -167,6 +169,18 @@ public class MagicCardDefinition {
 
     public String getImageURL() {
         return imageURL;
+    }
+    
+    public void setCardInfoURL(final String url) {
+    	this.cardInfoUrl = url;
+    }
+    
+    public String getCardInfoURL() {
+    	return this.cardInfoUrl;
+    }
+    
+    public String getCardTextName() {
+    	return getImageName();
     }
 		
 	public void setValue(final int value) {
@@ -589,6 +603,14 @@ public class MagicCardDefinition {
 	
 	public boolean hasAbility(final MagicAbility ability) {
 		return ability.hasAbility(abilityFlags);
+	}
+	
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	public String getText() {
+		return this.text;
 	}
 	
 	public void setStaticType(final MagicStaticType staticType) {

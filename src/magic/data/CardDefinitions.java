@@ -1,5 +1,6 @@
 package magic.data;
 
+import magic.MagicMain;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -10,15 +11,20 @@ import magic.model.MagicSubType;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.net.Proxy;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Load card definitions from cards.txt and cards2.txt
@@ -29,6 +35,12 @@ public class CardDefinitions {
 	
 	private static final String CARDS_FILENAME="cards.txt";
 	private static final String EXTRA_CARDS_FILENAME="cards2.txt";
+	
+	public static final String CARD_TEXT_FOLDER = "texts";
+	public static final String CARD_IMAGE_FOLDER = "cards";
+	public static final String TOKEN_IMAGE_FOLDER = "tokens";
+	public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
+	public static final String CARD_TEXT_EXT = ".txt";
 	
 	private final List<MagicCardDefinition> cards;
 	private final List<MagicCardDefinition> landCards;
@@ -45,6 +57,8 @@ public class CardDefinitions {
 	private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
         if ("image".equals(property)) {
             card.setImageURL(value);
+		} else if ("url".equals(property)) {
+			card.setCardInfoURL(value);
 		} else if ("num_images".equals(property)) {
 			card.setImageCount(Integer.parseInt(value));
         } else if ("cube".equals(property)) {
@@ -230,6 +244,9 @@ public class CardDefinitions {
 
 		System.err.println(getNumberOfCards()+ " card definitions");
         MagicCardDefinition.printStatistics();
+        
+        // set card text
+        loadCardTexts();
 	}
 	
 	public int getNumberOfCards() {
@@ -251,6 +268,30 @@ public class CardDefinitions {
             };
 		}
 		return cardDefinition;
+	}
+	
+	public void loadCardTexts() {
+		for(MagicCardDefinition card : getCards()) {
+			if(card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
+				// try to load text from file
+				final StringBuilder buffer = new StringBuilder();
+				buffer.append(MagicMain.getGamePath());
+				buffer.append(File.separator);
+				buffer.append(CARD_TEXT_FOLDER);
+				buffer.append(File.separator);				
+				buffer.append(card.getCardTextName());
+				buffer.append(CARD_TEXT_EXT);
+				
+				try {
+					String text = FileIO.toStr(new File(buffer.toString()));
+					if(text != null) {
+						card.setText(text);						
+					}
+				} catch (IOException e) {
+					// text not downloaded or missing
+				}
+			}
+		}
 	}
 		
 	public MagicCardDefinition getBasicLand(final MagicColor color) {
