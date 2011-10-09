@@ -13013,3 +13013,25 @@ converted=3
 cost={2}{U}
 pt=2/2
 timing=main
+
+>Chub Toad
+image=http://magiccards.info/scans/en/5e/145.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Frog
+color=g
+converted=3
+cost={2}{G}
+pt=1/1
+timing=main
+
+>Close Quarters
+image=http://magiccards.info/scans/en/mm/184.jpg
+value=3
+rarity=U
+type=Enchantment
+color=r
+converted=4
+cost={2}{R}{R}
+timing=enchantment
