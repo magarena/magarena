@@ -23,7 +23,8 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
-                    permanent + " gets +" + amountPower + "/+" +  amountToughness + " until end of turn."):
+                    permanent + " gets " + getString(amountPower) + 
+                    "/" + getString(amountToughness) + " until end of turn.") :
             MagicEvent.NONE;
 	}
 	@Override
@@ -36,6 +37,12 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
 				(MagicPermanent)data[0],
 				amountPower,
 				amountToughness));
+	}
+	
+	private String getString(final int pt) {
+		return pt >= 0 ?
+				"+" + pt :
+				Integer.toString(pt);
 	}
 }
 
