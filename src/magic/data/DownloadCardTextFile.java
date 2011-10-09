@@ -27,33 +27,36 @@ public class DownloadCardTextFile extends WebDownloader {
 		
         // find text in html
 		int iStart =  html.indexOf(startPattern);
-		String foundText = "";
+		String foundText = null;
 		if(iStart > -1) {
 			iStart += startPattern.length();
 			int iEnd = html.indexOf(endPattern, iStart);
-			foundText = html.substring(iStart, iEnd);
+			foundText = html.substring(iStart, iEnd) + " ";
 			
 			foundText = foundText.replaceAll("\\<br\\>", " "); // replace newlines
 			foundText = foundText.replaceAll("\\<[^\\>]*\\>", ""); // remove other html tags
 		}
 		
 		// write text out to file
-		if(foundText.length() > 0) {
+		// even if there's no text we want to create the file to ensure that we don't redownload it
+		if(foundText != null) {
 			FileWriter outputStream = null;
 			try {
-	            outputStream = new FileWriter(file);
+				outputStream = new FileWriter(file);
 				outputStream.write(foundText);
 			} catch (final IOException ex) {
-	            System.err.println("ERROR! Unable to write to card text file");
-	            System.err.println(ex.getMessage());
-	            ex.printStackTrace();
+				System.err.println("ERROR! Unable to write to card text file");
+				System.err.println(ex.getMessage());
+				ex.printStackTrace();
 				final boolean isDeleted = file.delete();
-	            if (!isDeleted) {
-	                System.err.println("ERROR! Unable to delete " + file);
-	            }
+				if (!isDeleted) {
+					System.err.println("ERROR! Unable to delete " + file);
+				}
 			} finally {
-	            magic.data.FileIO.close(outputStream);
-	        }
-		}
+				magic.data.FileIO.close(outputStream);
+			}
+		} else {
+			System.err.println("ERROR! Unable to download card text for " + file);
+		}		
 	}
 }

@@ -1,4 +1,5 @@
 >Alpha Myr
+url=http://magiccards.info/mi/en/142.html
 image=http://magiccards.info/scans/en/mi/142.jpg 
 value=1
 rarity=C
@@ -10,6 +11,7 @@ pt=2/1
 timing=main
 
 >Alpha Tyrranax
+url=http://magiccards.info/som/en/109.html
 image=http://magiccards.info/scans/en/som/109.jpg 
 value=4
 rarity=C
@@ -22,6 +24,7 @@ pt=6/5
 timing=main
 
 >Anaba Bodyguard
+url=http://magiccards.info/10e/en/187.html
 image=http://magiccards.info/scans/en/10e/187.jpg 
 value=1
 ability=first strike
@@ -35,6 +38,7 @@ pt=2/3
 timing=main
 
 >Anaconda
+url=http://magiccards.info/9e/en/229.html
 image=http://magiccards.info/scans/en/9e/229.jpg 
 value=3
 ability=swampwalk
@@ -48,6 +52,7 @@ pt=3/3
 timing=main
 
 >Ancient Spider
+url=http://magiccards.info/ps/en/96.html
 image=http://magiccards.info/scans/en/ps/96.jpg 
 value=3
 ability=first strike,reach
@@ -61,6 +66,7 @@ pt=2/5
 timing=main
 
 >Angel of Retribution
+url=http://magiccards.info/tr/en/1.html
 image=http://magiccards.info/scans/en/tr/1.jpg 
 value=4
 ability=flying,first strike
@@ -74,6 +80,7 @@ pt=5/5
 timing=main
 
 >Angelic Wall
+url=http://magiccards.info/10e/en/5.html
 image=http://magiccards.info/scans/en/10e/5.jpg 
 value=2
 ability=defender,flying
@@ -87,6 +94,7 @@ pt=0/4
 timing=smain
 
 >Anurid Murkdiver
+url=http://magiccards.info/on/en/124.html
 image=http://magiccards.info/scans/en/on/124.jpg 
 value=4
 ability=swampwalk
@@ -100,6 +108,7 @@ pt=4/3
 timing=main
 
 >Arachnoid
+url=http://magiccards.info/5dn/en/102.html
 image=http://magiccards.info/scans/en/5dn/102.jpg 
 value=4
 ability=reach
@@ -112,6 +121,7 @@ pt=2/6
 timing=main
 
 >Ardent Militia
+url=http://magiccards.info/8e/en/3.html
 image=http://magiccards.info/scans/en/8e/3.jpg 
 value=3
 ability=vigilance
@@ -125,6 +135,7 @@ pt=2/5
 timing=main
 
 >Armored Cancrix
+url=http://magiccards.info/m11/en/44.html
 image=http://magiccards.info/scans/en/m11/44.jpg 
 value=3
 rarity=C
@@ -137,6 +148,7 @@ pt=2/5
 timing=main
 
 >Ashcoat Bear
+url=http://magiccards.info/ts/en/190.html
 image=http://magiccards.info/scans/en/ts/190.jpg 
 value=2
 ability=flash
@@ -150,6 +162,7 @@ pt=2/2
 timing=flash
 
 >Ashen Monstrosity
+url=http://magiccards.info/bok/en/93.html
 image=http://magiccards.info/scans/en/bok/93.jpg 
 value=4
 ability=haste,attacks each turn if able
@@ -163,6 +176,7 @@ pt=7/4
 timing=fmain
 
 >Assault Griffin
+url=http://magiccards.info/m12/en/8.html
 image=http://magiccards.info/scans/en/m11/6.jpg 
 value=3
 ability=flying
@@ -176,6 +190,7 @@ pt=3/2
 timing=main
 
 >Aven Envoy
+url=http://magiccards.info/le/en/30.html
 image=http://magiccards.info/scans/en/le/30.jpg 
 value=1
 ability=flying
@@ -189,6 +204,7 @@ pt=0/2
 timing=main
 
 >Aven Smokeweaver
+url=http://magiccards.info/od/en/64.html
 image=http://magiccards.info/scans/en/od/64.jpg 
 value=3
 ability=flying,protection from red
@@ -202,6 +218,7 @@ pt=2/3
 timing=main
 
 >Aven Squire
+url=http://magiccards.info/cfx/en/3.html
 image=http://magiccards.info/scans/en/cfx/3.jpg 
 value=2
 ability=flying,exalted
@@ -215,6 +232,7 @@ pt=1/1
 timing=main
 
 >Avian Changeling
+url=http://magiccards.info/lw/en/4.html
 image=http://magiccards.info/scans/en/lw/4.jpg 
 value=2
 ability=changeling,flying
@@ -228,6 +246,7 @@ pt=2/2
 timing=main
 
 >Axegrinder Giant
+url=http://magiccards.info/lw/en/151.html
 image=http://magiccards.info/scans/en/lw/151.jpg 
 value=4
 rarity=C
@@ -240,6 +259,7 @@ pt=6/4
 timing=main
 
 >Azure Drake
+url=http://magiccards.info/m11/en/46.html
 image=http://magiccards.info/scans/en/m11/46.jpg 
 value=3
 ability=flying
@@ -253,6 +273,7 @@ pt=2/4
 timing=main
 
 >Balduvian Barbarians
+url=http://magiccards.info/9e/en/174.html
 image=http://magiccards.info/scans/en/9e/174.jpg 
 value=3
 rarity=C
@@ -265,6 +286,7 @@ pt=3/2
 timing=main
 
 >Barony Vampire
+url=http://magiccards.info/m11/en/82.html
 image=http://magiccards.info/scans/en/m11/82.jpg 
 value=3
 rarity=C
@@ -277,6 +299,7 @@ pt=3/2
 timing=main
 
 >Battle Hurda
+url=http://magiccards.info/wwk/en/4.html
 image=http://magiccards.info/scans/en/wwk/4.jpg 
 value=3
 ability=first strike
@@ -290,6 +313,7 @@ pt=3/3
 timing=main
 
 >Benalish Knight
+url=http://magiccards.info/10e/en/11.html
 image=http://magiccards.info/scans/en/10e/11.jpg 
 value=3
 ability=flash,first strike
@@ -303,6 +327,7 @@ pt=2/2
 timing=flash
 
 >Benthic Behemoth
+url=http://magiccards.info/7e/en/63.html
 image=http://magiccards.info/scans/en/7e/63.jpg 
 value=4
 ability=islandwalk
@@ -316,6 +341,7 @@ pt=7/6
 timing=main
 
 >Berserkers of Blood Ridge
+url=http://magiccards.info/m11/en/124.html
 image=http://magiccards.info/scans/en/m11/124.jpg 
 value=4
 ability=attacks each turn if able
@@ -329,6 +355,7 @@ pt=4/4
 timing=main
 
 >Blade of the Sixth Pride
+url=http://magiccards.info/fut/en/19.html
 image=http://magiccards.info/scans/en/fut/19.jpg 
 value=3
 rarity=C
@@ -341,6 +368,7 @@ pt=3/1
 timing=main
 
 >Bladetusk Boar
+url=http://magiccards.info/zen/en/118.html
 image=http://magiccards.info/scans/en/zen/118.jpg 
 value=3
 ability=intimidate
@@ -354,6 +382,7 @@ pt=3/2
 timing=main
 
 >Blind Phantasm
+url=http://magiccards.info/fut/en/49.html
 image=http://magiccards.info/scans/en/fut/49.jpg 
 value=2
 rarity=C
@@ -366,6 +395,7 @@ pt=2/3
 timing=main
 
 >Blood Knight
+url=http://magiccards.info/pc/en/115.html
 image=http://magiccards.info/scans/en/pc/115.jpg 
 value=3
 ability=first strike,protection from white
@@ -379,6 +409,7 @@ pt=2/2
 timing=main
 
 >Blurred Mongoose
+url=http://magiccards.info/in/en/183.html
 image=http://magiccards.info/scans/en/in/183.jpg 
 value=3
 ability=can't be countered,shroud
@@ -392,6 +423,7 @@ pt=2/1
 timing=fmain
 
 >Bog Imp
+url=http://magiccards.info/9e/en/116.html
 image=http://magiccards.info/scans/en/9e/116.jpg 
 value=2
 ability=flying
@@ -405,6 +437,7 @@ pt=1/1
 timing=main
 
 >Bog Raiders
+url=http://magiccards.info/m11/en/86.html
 image=http://magiccards.info/scans/en/m11/86.jpg 
 value=2
 ability=swampwalk
@@ -418,6 +451,7 @@ pt=2/2
 timing=main
 
 >Bog Tatters
+url=http://magiccards.info/zen/en/84.html
 image=http://magiccards.info/scans/en/zen/84.jpg 
 value=3
 ability=swampwalk
@@ -431,6 +465,7 @@ pt=4/2
 timing=main
 
 >Bog Wraith
+url=http://magiccards.info/m10/en/86.html
 image=http://magiccards.info/scans/en/m10/86.jpg 
 value=3
 ability=swampwalk
@@ -444,6 +479,7 @@ pt=3/3
 timing=main
 
 >Border Patrol
+url=http://magiccards.info/ju/en/6.html
 image=http://magiccards.info/scans/en/ju/6.jpg 
 value=2
 ability=vigilance
@@ -457,6 +493,7 @@ pt=1/6
 timing=main
 
 >Boros Recruit
+url=http://magiccards.info/rav/en/243.html
 image=http://magiccards.info/scans/en/rav/243.jpg 
 value=1
 ability=first strike
@@ -470,6 +507,7 @@ pt=1/1
 timing=main
 
 >Boros Swiftblade
+url=http://magiccards.info/pch/en/82.html
 image=http://magiccards.info/scans/en/pch/82.jpg 
 value=2
 ability=double strike
@@ -483,6 +521,7 @@ pt=1/2
 timing=main
 
 >Bull Hippo
+url=http://magiccards.info/7e/en/233.html
 image=http://magiccards.info/scans/en/7e/233.jpg 
 value=3
 ability=islandwalk
@@ -496,6 +535,7 @@ pt=3/3
 timing=main
 
 >Canopy Spider
+url=http://magiccards.info/10e/en/254.html
 image=http://magiccards.info/scans/en/10e/254.jpg 
 value=2
 ability=reach
@@ -509,6 +549,7 @@ pt=1/3
 timing=main
 
 >Canyon Minotaur
+url=http://magiccards.info/m11/en/126.html
 image=http://magiccards.info/scans/en/m11/126.jpg 
 value=3
 rarity=C
@@ -521,6 +562,7 @@ pt=3/3
 timing=main
 
 >Canyon Wildcat
+url=http://magiccards.info/ddh/en/6.html
 image=http://magiccards.info/scans/en/8e/181.jpg 
 value=2
 ability=mountainwalk
@@ -534,6 +576,7 @@ pt=2/1
 timing=main
 
 >Caravan Hurda
+url=http://magiccards.info/zen/en/5.html
 image=http://magiccards.info/scans/en/zen/5.jpg 
 value=2
 ability=lifelink
@@ -547,6 +590,7 @@ pt=1/5
 timing=main
 
 >Centaur Courser
+url=http://magiccards.info/m10/en/172.html
 image=http://magiccards.info/scans/en/m10/172.jpg 
 value=3
 rarity=C
@@ -559,6 +603,7 @@ pt=3/3
 timing=main
 
 >Changeling Sentinel
+url=http://magiccards.info/mt/en/6.html
 image=http://magiccards.info/scans/en/mt/6.jpg 
 value=3
 ability=changeling,vigilance
@@ -572,6 +617,7 @@ pt=3/2
 timing=main
 
 >Child of Night
+url=http://magiccards.info/m12/en/87.html
 image=http://magiccards.info/scans/en/m11/88.jpg 
 value=2
 ability=lifelink
@@ -585,6 +631,7 @@ pt=2/1
 timing=main
 
 >Cliff Threader
+url=http://magiccards.info/zen/en/7.html
 image=http://magiccards.info/scans/en/zen/7.jpg 
 value=2
 ability=mountainwalk
@@ -598,6 +645,7 @@ pt=2/1
 timing=main
 
 >Cloud Crusader
+url=http://magiccards.info/m11/en/10.html
 image=http://magiccards.info/scans/en/m11/10.jpg 
 value=4
 ability=flying,first strike
@@ -611,6 +659,7 @@ pt=2/3
 timing=main
 
 >Cloud Elemental
+url=http://magiccards.info/m11/en/50.html
 image=http://magiccards.info/scans/en/m11/50.jpg 
 value=3
 ability=flying,can't block creatures without flying
@@ -624,6 +673,7 @@ pt=2/3
 timing=fmain
 
 >Cloud Sprite
+url=http://magiccards.info/dpa/en/4.html
 image=http://magiccards.info/scans/en/dpa/4.jpg 
 value=1
 ability=flying,can't block creatures without flying
@@ -637,6 +687,7 @@ pt=1/1
 timing=fmain
 
 >Cloudcrown Oak
+url=http://magiccards.info/lw/en/201.html
 image=http://magiccards.info/scans/en/lw/201.jpg 
 value=3
 ability=reach
@@ -650,6 +701,7 @@ pt=3/4
 timing=main
 
 >Coast Watcher
+url=http://magiccards.info/sc/en/30.html
 image=http://magiccards.info/scans/en/sc/30.jpg 
 value=2
 ability=flying,protection from green
@@ -663,6 +715,7 @@ pt=1/1
 timing=main
 
 >Commander Eesha
+url=http://magiccards.info/ju/en/9.html
 image=http://magiccards.info/scans/en/ju/9.jpg 
 value=5
 ability=flying,protection from creatures
@@ -676,6 +729,7 @@ pt=2/4
 timing=main
 
 >Coral Eel
+url=http://magiccards.info/9eb/en/3.html
 image=http://magiccards.info/scans/en/9eb/3.jpg 
 value=1
 rarity=C
@@ -688,6 +742,7 @@ pt=2/1
 timing=main
 
 >Coral Merfolk
+url=http://magiccards.info/m12/en/49.html
 image=http://magiccards.info/scans/en/m10/47.jpg 
 value=1
 rarity=C
@@ -700,6 +755,7 @@ pt=2/1
 timing=main
 
 >Courier Hawk
+url=http://magiccards.info/rav/en/12.html
 image=http://magiccards.info/scans/en/rav/12.jpg 
 value=2
 ability=flying,vigilance
@@ -713,6 +769,7 @@ pt=1/2
 timing=main
 
 >Court Archers
+url=http://magiccards.info/ala/en/126.html
 image=http://magiccards.info/scans/en/ala/126.jpg 
 value=2
 ability=reach,exalted
@@ -726,6 +783,7 @@ pt=1/3
 timing=main
 
 >Covert Operative
+url=http://magiccards.info/le/en/33.html
 image=http://magiccards.info/scans/en/le/33.jpg 
 value=3
 ability=unblockable
@@ -739,6 +797,7 @@ pt=3/2
 timing=main
 
 >Craw Wurm
+url=http://magiccards.info/m10/en/173.html
 image=http://magiccards.info/scans/en/m10/173.jpg 
 value=4
 rarity=C
@@ -751,6 +810,7 @@ pt=6/4
 timing=main
 
 >Crazed Goblin
+url=http://magiccards.info/ds/en/56.html
 image=http://magiccards.info/scans/en/ds/56.jpg 
 value=1
 ability=attacks each turn if able
@@ -764,6 +824,7 @@ pt=1/1
 timing=main
 
 >Cylian Elf
+url=http://magiccards.info/ala/en/127.html
 image=http://magiccards.info/scans/en/ala/127.jpg 
 value=1
 rarity=C
@@ -776,6 +837,7 @@ pt=2/2
 timing=main
 
 >Daggerback Basilisk
+url=http://magiccards.info/roe/en/182.html
 image=http://magiccards.info/scans/en/roe/182.jpg 
 value=2
 ability=deathtouch
@@ -789,6 +851,7 @@ pt=2/2
 timing=main
 
 >Dancing Scimitar
+url=http://magiccards.info/9e/en/292.html
 image=http://magiccards.info/scans/en/9e/292.jpg 
 value=3
 ability=flying
@@ -801,6 +864,7 @@ pt=1/5
 timing=main
 
 >Darksteel Gargoyle
+url=http://magiccards.info/ds/en/111.html
 image=http://magiccards.info/scans/en/ds/111.jpg 
 value=4
 ability=flying,indestructible
@@ -813,6 +877,7 @@ pt=3/3
 timing=main
 
 >Darksteel Myr
+url=http://magiccards.info/som/en/151.html
 image=http://magiccards.info/scans/en/som/151.jpg 
 value=3
 ability=indestructible
@@ -825,6 +890,7 @@ pt=0/1
 timing=main
 
 >Defiant Elf
+url=http://magiccards.info/le/en/123.html
 image=http://magiccards.info/scans/en/le/123.jpg 
 value=1
 ability=trample
@@ -838,6 +904,7 @@ pt=1/1
 timing=main
 
 >Diving Griffin
+url=http://magiccards.info/8e/en/17.html
 image=http://magiccards.info/scans/en/8e/17.jpg 
 value=3
 ability=flying,vigilance
@@ -851,6 +918,7 @@ pt=2/2
 timing=main
 
 >Dragonstalker
+url=http://magiccards.info/sc/en/11.html
 image=http://magiccards.info/scans/en/sc/11.jpg 
 value=3
 ability=flying,protection from dragons
@@ -864,6 +932,7 @@ pt=3/3
 timing=main
 
 >Dreg Reaver
+url=http://magiccards.info/ala/en/73.html
 image=http://magiccards.info/scans/en/ala/73.jpg 
 value=3
 rarity=C
@@ -876,6 +945,7 @@ pt=4/3
 timing=main
 
 >Dross Crocodile
+url=http://magiccards.info/10e/en/138.html
 image=http://magiccards.info/scans/en/10e/138.jpg 
 value=3
 rarity=C
@@ -888,6 +958,7 @@ pt=5/1
 timing=main
 
 >Dross Prowler
+url=http://magiccards.info/mi/en/64.html
 image=http://magiccards.info/scans/en/mi/64.jpg 
 value=3
 ability=fear
@@ -901,6 +972,7 @@ pt=2/1
 timing=main
 
 >Dusk Imp
+url=http://magiccards.info/dpa/en/23.html
 image=http://magiccards.info/scans/en/dpa/23.jpg 
 value=2
 ability=flying
@@ -914,6 +986,7 @@ pt=2/1
 timing=main
 
 >Duskdale Wurm
+url=http://magiccards.info/dpa/en/58.html
 image=http://magiccards.info/scans/en/dpa/58.jpg 
 value=4
 ability=trample
@@ -927,6 +1000,7 @@ pt=7/7
 timing=main
 
 >Dwarven Grunt
+url=http://magiccards.info/od/en/185.html
 image=http://magiccards.info/scans/en/od/185.jpg 
 value=1
 ability=mountainwalk
@@ -940,6 +1014,7 @@ pt=1/1
 timing=main
 
 >Eager Cadet
+url=http://magiccards.info/9eb/en/1.html
 image=http://magiccards.info/scans/en/9eb/1.jpg 
 value=1
 rarity=C
@@ -952,6 +1027,7 @@ pt=1/1
 timing=main
 
 >Earth Elemental
+url=http://magiccards.info/dpa/en/42.html
 image=http://magiccards.info/scans/en/dpa/42.jpg 
 value=4
 rarity=U
@@ -964,6 +1040,7 @@ pt=4/5
 timing=main
 
 >Elvish Archers
+url=http://magiccards.info/7e/en/239.html
 image=http://magiccards.info/scans/en/7e/239.jpg 
 value=3
 ability=first strike
@@ -977,6 +1054,7 @@ pt=2/1
 timing=main
 
 >Emerald Oryx
+url=http://magiccards.info/m10/en/179.html
 image=http://magiccards.info/scans/en/m10/179.jpg 
 value=3
 ability=forestwalk
@@ -990,6 +1068,7 @@ pt=2/3
 timing=main
 
 >Enormous Baloth
+url=http://magiccards.info/m10/en/180.html
 image=http://magiccards.info/scans/en/m10/180.jpg 
 value=4
 rarity=U
@@ -1002,6 +1081,7 @@ pt=7/7
 timing=main
 
 >Esper Cormorants
+url=http://magiccards.info/cfx/en/105.html
 image=http://magiccards.info/scans/en/cfx/105.jpg 
 value=3
 ability=flying
@@ -1015,6 +1095,7 @@ pt=3/3
 timing=main
 
 >Fangren Hunter
+url=http://magiccards.info/mi/en/119.html
 image=http://magiccards.info/scans/en/mi/119.jpg 
 value=4
 ability=trample
@@ -1028,6 +1109,7 @@ pt=4/4
 timing=main
 
 >Fighting Drake
+url=http://magiccards.info/8e/en/77.html
 image=http://magiccards.info/scans/en/8e/77.jpg 
 value=3
 ability=flying
@@ -1041,6 +1123,7 @@ pt=2/4
 timing=main
 
 >Fire Elemental
+url=http://magiccards.info/7e/en/183.html
 image=http://magiccards.info/scans/en/7e/183.jpg 
 value=4
 rarity=U
@@ -1053,6 +1136,7 @@ pt=5/4
 timing=main
 
 >Flameborn Hellion
+url=http://magiccards.info/som/en/89.html
 image=http://magiccards.info/scans/en/som/89.jpg 
 value=4
 ability=haste,attacks each turn if able
@@ -1066,6 +1150,7 @@ pt=5/4
 timing=fmain
 
 >Fomori Nomad
+url=http://magiccards.info/fut/en/114.html
 image=http://magiccards.info/scans/en/fut/114.jpg 
 value=4
 rarity=C
@@ -1078,6 +1163,7 @@ pt=4/4
 timing=main
 
 >Foot Soldiers
+url=http://magiccards.info/9e/en/14.html
 image=http://magiccards.info/scans/en/9e/14.jpg 
 value=3
 rarity=C
@@ -1090,6 +1176,7 @@ pt=2/4
 timing=main
 
 >Force of Savagery
+url=http://magiccards.info/fut/en/126.html
 image=http://magiccards.info/scans/en/fut/126.jpg 
 value=3
 ability=trample
@@ -1103,6 +1190,7 @@ pt=8/0
 timing=main
 
 >Frost Ogre
+url=http://magiccards.info/bok/en/102.html
 image=http://magiccards.info/scans/en/bok/102.jpg 
 value=3
 rarity=C
@@ -1115,6 +1203,7 @@ pt=5/3
 timing=main
 
 >Fugitive Wizard
+url=http://magiccards.info/10e/en/86.html
 image=http://magiccards.info/scans/en/10e/86.jpg 
 value=1
 rarity=C
@@ -1127,6 +1216,7 @@ pt=1/1
 timing=main
 
 >Gaea's Skyfolk
+url=http://magiccards.info/ap/en/101.html
 image=http://magiccards.info/scans/en/ap/101.jpg 
 value=2
 ability=flying
@@ -1140,6 +1230,7 @@ pt=2/2
 timing=main
 
 >Galina's Knight
+url=http://magiccards.info/in/en/248.html
 image=http://magiccards.info/scans/en/in/248.jpg 
 value=2
 ability=protection from red
@@ -1153,6 +1244,7 @@ pt=2/2
 timing=main
 
 >Game-Trail Changeling
+url=http://magiccards.info/mt/en/123.html
 image=http://magiccards.info/scans/en/mt/123.jpg 
 value=4
 ability=changeling,trample
@@ -1166,6 +1258,7 @@ pt=4/4
 timing=main
 
 >Giant Cockroach
+url=http://magiccards.info/9e/en/133.html
 image=http://magiccards.info/scans/en/9e/133.jpg 
 value=3
 rarity=C
@@ -1178,6 +1271,7 @@ pt=4/2
 timing=main
 
 >Giant Octopus
+url=http://magiccards.info/9eb/en/4.html
 image=http://magiccards.info/scans/en/9eb/4.jpg 
 value=3
 rarity=C
@@ -1190,6 +1284,7 @@ pt=3/3
 timing=main
 
 >Giant Solifuge
+url=http://magiccards.info/gp/en/143.html
 image=http://magiccards.info/scans/en/gp/143.jpg 
 value=3
 ability=trample,haste,shroud
@@ -1203,6 +1298,7 @@ pt=4/1
 timing=fmain
 
 >Giant Spider
+url=http://magiccards.info/m12/en/177.html
 image=http://magiccards.info/scans/en/dpa/67.jpg 
 value=3
 ability=reach
@@ -1216,6 +1312,7 @@ pt=2/4
 timing=main
 
 >Giant Warthog
+url=http://magiccards.info/ju/en/118.html
 image=http://magiccards.info/scans/en/ju/118.jpg 
 value=4
 ability=trample
@@ -1229,6 +1326,7 @@ pt=5/5
 timing=main
 
 >Glacial Wall
+url=http://magiccards.info/7e/en/78.html
 image=http://magiccards.info/scans/en/7e/78.jpg 
 value=2
 ability=defender
@@ -1242,6 +1340,7 @@ pt=0/7
 timing=smain
 
 >Glass Golem
+url=http://magiccards.info/rav/en/261.html
 image=http://magiccards.info/scans/en/rav/261.jpg 
 value=3
 rarity=U
@@ -1253,6 +1352,7 @@ pt=6/2
 timing=main
 
 >Gloomhunter
+url=http://magiccards.info/roe/en/111.html
 image=http://magiccards.info/scans/en/roe/111.jpg 
 value=2
 ability=flying
@@ -1266,6 +1366,7 @@ pt=2/1
 timing=main
 
 >Glory Seeker
+url=http://magiccards.info/ddf/en/7.html
 image=http://magiccards.info/scans/en/ddf/7.jpg 
 value=1
 rarity=C
@@ -1278,6 +1379,7 @@ pt=2/2
 timing=main
 
 >Gluttonous Zombie
+url=http://magiccards.info/9e/en/134.html
 image=http://magiccards.info/scans/en/9e/134.jpg 
 value=4
 ability=fear
@@ -1291,6 +1393,7 @@ pt=3/3
 timing=main
 
 >Gnarled Mass
+url=http://magiccards.info/bok/en/127.html
 image=http://magiccards.info/scans/en/bok/127.jpg 
 value=3
 rarity=C
@@ -1303,6 +1406,7 @@ pt=3/3
 timing=main
 
 >Goblin Brigand
+url=http://magiccards.info/9e/en/190.html
 image=http://magiccards.info/scans/en/9e/190.jpg 
 value=1
 ability=attacks each turn if able
@@ -1316,6 +1420,7 @@ pt=2/2
 timing=main
 
 >Goblin Chariot
+url=http://magiccards.info/9e/en/191.html
 image=http://magiccards.info/scans/en/9e/191.jpg 
 value=2
 ability=haste
@@ -1329,6 +1434,7 @@ pt=2/2
 timing=fmain
 
 >Goblin Glider
+url=http://magiccards.info/8e/en/189.html
 image=http://magiccards.info/scans/en/8e/189.jpg 
 value=2
 ability=flying,can't block
@@ -1342,6 +1448,7 @@ pt=1/1
 timing=fmain
 
 >Goblin Mountaineer
+url=http://magiccards.info/ala/en/102.html
 image=http://magiccards.info/scans/en/ala/102.jpg 
 value=1
 ability=mountainwalk
@@ -1355,6 +1462,7 @@ pt=1/1
 timing=main
 
 >Goblin Piker
+url=http://magiccards.info/m12/en/141.html
 image=http://magiccards.info/scans/en/dpa/45.jpg 
 value=1
 rarity=C
@@ -1367,6 +1475,7 @@ pt=2/1
 timing=main
 
 >Goblin Raider
+url=http://magiccards.info/9eb/en/8.html
 image=http://magiccards.info/scans/en/9eb/8.jpg 
 value=1
 ability=can't block
@@ -1380,6 +1489,7 @@ pt=2/2
 timing=fmain
 
 >Goblin Roughrider
+url=http://magiccards.info/wwk/en/82.html
 image=http://magiccards.info/scans/en/wwk/82.jpg 
 value=3
 rarity=C
@@ -1392,6 +1502,7 @@ pt=3/2
 timing=main
 
 >Goblin Sky Raider
+url=http://magiccards.info/dpa/en/46.html
 image=http://magiccards.info/scans/en/dpa/46.jpg 
 value=2
 ability=flying
@@ -1405,6 +1516,7 @@ pt=1/2
 timing=main
 
 >Goblin Spelunkers
+url=http://magiccards.info/rav/en/128.html
 image=http://magiccards.info/scans/en/rav/128.jpg 
 value=2
 ability=mountainwalk
@@ -1418,6 +1530,7 @@ pt=2/2
 timing=main
 
 >Goblin Striker
+url=http://magiccards.info/mi/en/94.html
 image=http://magiccards.info/scans/en/mi/94.jpg 
 value=1
 ability=first strike,haste
@@ -1431,6 +1544,7 @@ pt=1/1
 timing=fmain
 
 >Goliath Spider
+url=http://magiccards.info/rav/en/168.html
 image=http://magiccards.info/scans/en/rav/168.jpg 
 value=4
 ability=reach
@@ -1444,6 +1558,7 @@ pt=7/6
 timing=main
 
 >Grappler Spider
+url=http://magiccards.info/wwk/en/102.html
 image=http://magiccards.info/scans/en/wwk/102.jpg 
 value=1
 ability=reach
@@ -1457,6 +1572,7 @@ pt=2/1
 timing=main
 
 >Gravelgill Axeshark
+url=http://magiccards.info/shm/en/164.html
 image=http://magiccards.info/scans/en/shm/164.jpg 
 value=3
 ability=persist
@@ -1470,6 +1586,7 @@ pt=3/3
 timing=main
 
 >Grayscaled Gharial
+url=http://magiccards.info/rav/en/52.html
 image=http://magiccards.info/scans/en/rav/52.jpg 
 value=1
 ability=islandwalk
@@ -1483,6 +1600,7 @@ pt=1/1
 timing=main
 
 >Greater Basilisk
+url=http://magiccards.info/m12/en/179.html
 image=http://magiccards.info/scans/en/m11/180.jpg 
 value=4
 ability=deathtouch
@@ -1496,6 +1614,7 @@ pt=3/5
 timing=main
 
 >Griffin Sentinel
+url=http://magiccards.info/m12/en/21.html
 image=http://magiccards.info/scans/en/m10/12.jpg 
 value=2
 ability=flying,vigilance
@@ -1509,6 +1628,7 @@ pt=1/3
 timing=main
 
 >Grizzled Leotau
+url=http://magiccards.info/arb/en/69.html
 image=http://magiccards.info/scans/en/arb/69.jpg 
 value=2
 rarity=C
@@ -1521,6 +1641,7 @@ pt=1/5
 timing=main
 
 >Grizzly Bears
+url=http://magiccards.info/10e/en/268.html
 image=http://magiccards.info/scans/en/10e/268.jpg 
 value=1
 rarity=C
@@ -1533,6 +1654,7 @@ pt=2/2
 timing=main
 
 >Guardians of Akrasa
+url=http://magiccards.info/ala/en/12.html
 image=http://magiccards.info/scans/en/ala/12.jpg 
 value=2
 ability=defender,exalted
@@ -1546,6 +1668,7 @@ pt=0/4
 timing=smain
 
 >Halberdier
+url=http://magiccards.info/od/en/196.html
 image=http://magiccards.info/scans/en/od/196.jpg 
 value=3
 ability=first strike
@@ -1559,6 +1682,7 @@ pt=3/1
 timing=main
 
 >Harvest Gwyllion
+url=http://magiccards.info/eve/en/90.html
 image=http://magiccards.info/scans/en/eve/90.jpg 
 value=2
 ability=wither
@@ -1572,6 +1696,7 @@ pt=2/4
 timing=main
 
 >Havenwood Wurm
+url=http://magiccards.info/ts/en/199.html
 image=http://magiccards.info/scans/en/ts/199.jpg 
 value=4
 ability=flash,trample
@@ -1585,6 +1710,7 @@ pt=5/6
 timing=flash
 
 >Hill Giant
+url=http://magiccards.info/dpa/en/47.html
 image=http://magiccards.info/scans/en/dpa/47.jpg 
 value=3
 rarity=C
@@ -1597,6 +1723,7 @@ pt=3/3
 timing=main
 
 >Hillcomber Giant
+url=http://magiccards.info/lw/en/20.html
 image=http://magiccards.info/scans/en/lw/20.jpg 
 value=3
 ability=mountainwalk
@@ -1610,6 +1737,7 @@ pt=3/3
 timing=main
 
 >Hobgoblin Dragoon
+url=http://magiccards.info/eve/en/142.html
 image=http://magiccards.info/scans/en/eve/142.jpg 
 value=3
 ability=flying,first strike
@@ -1623,6 +1751,7 @@ pt=1/2
 timing=main
 
 >Horned Turtle
+url=http://magiccards.info/m10/en/55.html
 image=http://magiccards.info/scans/en/m10/55.jpg 
 value=2
 rarity=C
@@ -1635,6 +1764,7 @@ pt=1/4
 timing=main
 
 >Hoverguard Observer
+url=http://magiccards.info/ds/en/22.html
 image=http://magiccards.info/scans/en/ds/22.jpg 
 value=3
 ability=flying,can't block creatures without flying
@@ -1648,6 +1778,7 @@ pt=3/3
 timing=fmain
 
 >Hulking Cyclops
+url=http://magiccards.info/8e/en/195.html
 image=http://magiccards.info/scans/en/8e/195.jpg 
 value=4
 ability=can't block
@@ -1661,6 +1792,7 @@ pt=5/5
 timing=fmain
 
 >Humble Budoka
+url=http://magiccards.info/chk/en/214.html
 image=http://magiccards.info/scans/en/chk/214.jpg 
 value=1
 ability=shroud
@@ -1674,6 +1806,7 @@ pt=2/2
 timing=fmain
 
 >Imperious Perfect
+url=http://magiccards.info/dpa/en/71.html
 image=http://magiccards.info/scans/en/dpa/71.jpg
 value=4
 rarity=U
@@ -1687,6 +1820,7 @@ static=player
 timing=fmain
 
 >Incurable Ogre
+url=http://magiccards.info/ala/en/105.html
 image=http://magiccards.info/scans/en/ala/105.jpg 
 value=2
 rarity=C
@@ -1699,6 +1833,7 @@ pt=5/1
 timing=main
 
 >Iron-Barb Hellion
+url=http://magiccards.info/5dn/en/69.html
 image=http://magiccards.info/scans/en/5dn/69.jpg 
 value=4
 ability=haste,can't block
@@ -1712,6 +1847,7 @@ pt=5/4
 timing=fmain
 
 >Isamaru, Hound of Konda
+url=http://magiccards.info/chk/en/19.html
 image=http://magiccards.info/scans/en/chk/19.jpg 
 value=3
 rarity=R
@@ -1724,6 +1860,7 @@ pt=2/2
 timing=main
 
 >Jagwasp Swarm
+url=http://magiccards.info/wwk/en/58.html
 image=http://magiccards.info/scans/en/wwk/58.jpg 
 value=3
 ability=flying
@@ -1737,6 +1874,7 @@ pt=3/2
 timing=main
 
 >Jhessian Lookout
+url=http://magiccards.info/ala/en/46.html
 image=http://magiccards.info/scans/en/ala/46.jpg 
 value=1
 rarity=C
@@ -1749,6 +1887,7 @@ pt=2/1
 timing=main
 
 >Jukai Messenger
+url=http://magiccards.info/chk/en/218.html
 image=http://magiccards.info/scans/en/chk/218.jpg 
 value=1
 ability=forestwalk
@@ -1762,6 +1901,7 @@ pt=1/1
 timing=main
 
 >Juvenile Gloomwidow
+url=http://magiccards.info/shm/en/121.html
 image=http://magiccards.info/scans/en/shm/121.jpg 
 value=2
 ability=reach,wither
@@ -1775,6 +1915,7 @@ pt=1/3
 timing=main
 
 >Jwari Scuttler
+url=http://magiccards.info/roe/en/73.html
 image=http://magiccards.info/scans/en/roe/73.jpg 
 value=2
 rarity=C
@@ -1787,6 +1928,7 @@ pt=2/3
 timing=main
 
 >Kami of Old Stone
+url=http://magiccards.info/9e/en/24.html
 image=http://magiccards.info/scans/en/9e/24.jpg 
 value=3
 rarity=U
@@ -1799,6 +1941,7 @@ pt=1/7
 timing=main
 
 >Kelinore Bat
+url=http://magiccards.info/m10/en/101.html
 image=http://magiccards.info/scans/en/m10/101.jpg 
 value=2
 ability=flying
@@ -1812,6 +1955,7 @@ pt=2/1
 timing=main
 
 >King Cheetah
+url=http://magiccards.info/9e/en/250.html
 image=http://magiccards.info/scans/en/9e/250.jpg 
 value=3
 ability=flash
@@ -1825,6 +1969,7 @@ pt=3/2
 timing=flash
 
 >Lost Leonin
+url=http://magiccards.info/nph/en/13.html
 image=http://magiccards.info/scans/en/nph/13.jpg 
 value=1
 ability=infect
@@ -1838,6 +1983,7 @@ pt=2/1
 timing=main
 
 >Kodama of the North Tree
+url=http://magiccards.info/chk/en/222.html
 image=http://magiccards.info/scans/en/chk/222.jpg 
 value=5
 ability=trample,shroud
@@ -1851,6 +1997,7 @@ pt=6/4
 timing=fmain
 
 >Kraken Hatchling
+url=http://magiccards.info/zen/en/50.html
 image=http://magiccards.info/scans/en/zen/50.jpg 
 value=2
 rarity=C
@@ -1863,6 +2010,7 @@ pt=0/4
 timing=main
 
 >Razor Swine
+url=http://magiccards.info/nph/en/92.html
 image=http://magiccards.info/scans/en/nph/92.jpg 
 value=3
 ability=first strike,infect
@@ -1876,6 +2024,7 @@ pt=2/1
 timing=main
 
 >Lantern Kami
+url=http://magiccards.info/chk/en/32.html
 image=http://magiccards.info/scans/en/chk/32.jpg 
 value=2
 ability=flying
@@ -1889,6 +2038,7 @@ pt=1/1
 timing=main
 
 >Leaf Dancer
+url=http://magiccards.info/od/en/249.html
 image=http://magiccards.info/scans/en/od/249.jpg 
 value=2
 ability=forestwalk
@@ -1902,6 +2052,7 @@ pt=2/2
 timing=main
 
 >Leatherback Baloth
+url=http://magiccards.info/wwk/en/107.html
 image=http://magiccards.info/scans/en/wwk/107.jpg 
 value=4
 rarity=U
@@ -1914,6 +2065,7 @@ pt=4/5
 timing=main
 
 >Leonin Skyhunter
+url=http://magiccards.info/ddg/en/7.html
 image=http://magiccards.info/scans/en/mbs/11.jpg 
 value=3
 ability=flying
@@ -1927,6 +2079,7 @@ pt=2/2
 timing=main
 
 >Lightning Elemental
+url=http://magiccards.info/m12/en/149.html
 image=http://magiccards.info/scans/en/dpa/50.jpg 
 value=2
 ability=haste
@@ -1940,6 +2093,7 @@ pt=4/1
 timing=fmain
 
 >Llanowar Knight
+url=http://magiccards.info/in/en/254.html
 image=http://magiccards.info/scans/en/in/254.jpg 
 value=2
 ability=protection from black
@@ -1953,6 +2107,7 @@ pt=2/2
 timing=main
 
 >Loamdragger Giant
+url=http://magiccards.info/shm/en/210.html
 image=http://magiccards.info/scans/en/shm/210.jpg 
 value=4
 rarity=U
@@ -1965,6 +2120,7 @@ pt=7/6
 timing=main
 
 >Longbow Archer
+url=http://magiccards.info/7e/en/26.html
 image=http://magiccards.info/scans/en/7e/26.jpg 
 value=2
 ability=first strike,reach
@@ -1978,6 +2134,7 @@ pt=2/2
 timing=main
 
 >Loxodon Wayfarer
+url=http://magiccards.info/som/en/15.html
 image=http://magiccards.info/scans/en/som/15.jpg 
 value=2
 rarity=C
@@ -1990,6 +2147,7 @@ pt=1/5
 timing=main
 
 >Lumengrid Warden
+url=http://magiccards.info/10e/en/89.html
 image=http://magiccards.info/scans/en/10e/89.jpg 
 value=1
 rarity=C
@@ -2002,6 +2160,7 @@ pt=1/3
 timing=main
 
 >Makindi Griffin
+url=http://magiccards.info/roe/en/36.html
 image=http://magiccards.info/scans/en/roe/36.jpg 
 value=3
 ability=flying
@@ -2015,6 +2174,7 @@ pt=2/4
 timing=main
 
 >Maritime Guard
+url=http://magiccards.info/m11/en/63.html
 image=http://magiccards.info/scans/en/m11/63.jpg 
 value=1
 rarity=C
@@ -2027,6 +2187,7 @@ pt=1/3
 timing=main
 
 >Marsh Threader
+url=http://magiccards.info/wwk/en/14.html
 image=http://magiccards.info/scans/en/wwk/14.jpg 
 value=1
 ability=swampwalk
@@ -2040,6 +2201,7 @@ pt=2/1
 timing=main
 
 >Mass of Ghouls
+url=http://magiccards.info/10e/en/156.html
 image=http://magiccards.info/scans/en/10e/156.jpg 
 value=4
 rarity=C
@@ -2052,6 +2214,7 @@ pt=5/3
 timing=main
 
 >Merfolk of the Pearl Trident
+url=http://magiccards.info/7e/en/90.html
 image=http://magiccards.info/scans/en/7e/90.jpg 
 value=1
 rarity=C
@@ -2064,6 +2227,7 @@ pt=1/1
 timing=main
 
 >Mist Leopard
+url=http://magiccards.info/m10/en/193.html
 image=http://magiccards.info/scans/en/m10/193.jpg 
 value=3
 ability=shroud
@@ -2077,6 +2241,7 @@ pt=3/2
 timing=fmain
 
 >Mistral Charger
+url=http://magiccards.info/di/en/13.html
 image=http://magiccards.info/scans/en/di/13.jpg 
 value=2
 ability=flying
@@ -2090,6 +2255,7 @@ pt=2/1
 timing=main
 
 >Moonglove Winnower
+url=http://magiccards.info/dpa/en/29.html
 image=http://magiccards.info/scans/en/dpa/29.jpg 
 value=3
 ability=deathtouch
@@ -2103,6 +2269,7 @@ pt=2/3
 timing=main
 
 >Moriok Reaver
+url=http://magiccards.info/som/en/70.html
 image=http://magiccards.info/scans/en/som/70.jpg 
 value=3
 rarity=C
@@ -2115,6 +2282,7 @@ pt=3/2
 timing=main
 
 >Moss Kami
+url=http://magiccards.info/chk/en/228.html
 image=http://magiccards.info/scans/en/chk/228.jpg 
 value=4
 ability=trample
@@ -2128,6 +2296,7 @@ pt=5/5
 timing=main
 
 >Moss Monster
+url=http://magiccards.info/8e/en/267.html
 image=http://magiccards.info/scans/en/8e/267.jpg 
 value=4
 rarity=C
@@ -2140,6 +2309,7 @@ pt=3/6
 timing=main
 
 >Mourning Thrull
+url=http://magiccards.info/gp/en/146.html
 image=http://magiccards.info/scans/en/gp/146.jpg 
 value=2
 ability=flying,lifelink
@@ -2153,6 +2323,7 @@ pt=1/1
 timing=main
 
 >Nacatl Outlander
+url=http://magiccards.info/cfx/en/119.html
 image=http://magiccards.info/scans/en/cfx/119.jpg 
 value=2
 ability=protection from blue
@@ -2166,6 +2337,7 @@ pt=2/2
 timing=main
 
 >Needlepeak Spider
+url=http://magiccards.info/pc/en/105.html
 image=http://magiccards.info/scans/en/pc/105.jpg 
 value=3
 ability=reach
@@ -2179,6 +2351,7 @@ pt=4/2
 timing=main
 
 >Needleshot Gourna
+url=http://magiccards.info/le/en/133.html
 image=http://magiccards.info/scans/en/le/133.jpg 
 value=4
 ability=reach
@@ -2192,6 +2365,7 @@ pt=3/6
 timing=main
 
 >Nema Siltlurker
+url=http://magiccards.info/roe/en/200.html
 image=http://magiccards.info/scans/en/roe/200.jpg 
 value=4
 rarity=C
@@ -2204,6 +2378,7 @@ pt=3/5
 timing=main
 
 >Nessian Courser
+url=http://magiccards.info/fut/en/148.html
 image=http://magiccards.info/scans/en/fut/148.jpg 
 value=3
 rarity=C
@@ -2216,6 +2391,7 @@ pt=3/3
 timing=main
 
 >Nether Horror
+url=http://magiccards.info/m11/en/108.html
 image=http://magiccards.info/scans/en/m11/108.jpg 
 value=3
 rarity=C
@@ -2228,6 +2404,7 @@ pt=4/2
 timing=main
 
 >Nezumi Cutthroat
+url=http://magiccards.info/chk/en/128.html
 image=http://magiccards.info/scans/en/chk/128.jpg 
 value=2
 ability=fear,can't block
@@ -2241,6 +2418,7 @@ pt=2/1
 timing=fmain
 
 >Nightguard Patrol
+url=http://magiccards.info/rav/en/26.html
 image=http://magiccards.info/scans/en/rav/26.jpg 
 value=2
 ability=first strike,vigilance
@@ -2254,6 +2432,7 @@ pt=2/1
 timing=main
 
 >Nightshade Stinger
+url=http://magiccards.info/lw/en/132.html
 image=http://magiccards.info/scans/en/lw/132.jpg 
 value=1
 ability=flying,can't block
@@ -2267,6 +2446,7 @@ pt=1/1
 timing=fmain
 
 >Nip Gwyllion
+url=http://magiccards.info/eve/en/92.html
 image=http://magiccards.info/scans/en/eve/92.jpg 
 value=1
 ability=lifelink
@@ -2280,6 +2460,7 @@ pt=1/1
 timing=main
 
 >Glistener Elf
+url=http://magiccards.info/nph/en/111.html
 image=http://magiccards.info/scans/en/nph/111.jpg 
 value=1
 ability=infect
@@ -2293,6 +2474,7 @@ pt=1/1
 timing=main
 
 >Oakgnarl Warrior
+url=http://magiccards.info/lw/en/232.html
 image=http://magiccards.info/scans/en/lw/232.jpg 
 value=4
 ability=vigilance,trample
@@ -2306,6 +2488,7 @@ pt=5/7
 timing=main
 
 >Ogre Sentry
+url=http://magiccards.info/roe/en/159.html
 image=http://magiccards.info/scans/en/roe/159.jpg 
 value=2
 ability=defender
@@ -2319,6 +2502,7 @@ pt=3/3
 timing=smain
 
 >Ogre Taskmaster
+url=http://magiccards.info/9e/en/205.html
 image=http://magiccards.info/scans/en/9e/205.jpg 
 value=3
 ability=can't block
@@ -2332,6 +2516,7 @@ pt=4/3
 timing=fmain
 
 >Old Ghastbark
+url=http://magiccards.info/shm/en/232.html
 image=http://magiccards.info/scans/en/shm/232.jpg 
 value=4
 rarity=C
@@ -2344,6 +2529,7 @@ pt=3/6
 timing=main
 
 >Omega Myr
+url=http://magiccards.info/mi/en/223.html
 image=http://magiccards.info/scans/en/mi/223.jpg 
 value=1
 rarity=C
@@ -2355,6 +2541,7 @@ pt=1/2
 timing=main
 
 >Oona's Gatewarden
+url=http://magiccards.info/shm/en/173.html
 image=http://magiccards.info/scans/en/shm/173.jpg 
 value=1
 ability=defender,flying,wither
@@ -2368,6 +2555,7 @@ pt=2/1
 timing=smain
 
 >Order of the Sacred Bell
+url=http://magiccards.info/9e/en/261.html
 image=http://magiccards.info/scans/en/9e/261.jpg 
 value=3
 rarity=C
@@ -2380,6 +2568,7 @@ pt=4/3
 timing=main
 
 >Outrider of Jhess
+url=http://magiccards.info/ala/en/52.html
 image=http://magiccards.info/scans/en/ala/52.jpg 
 value=3
 ability=exalted
@@ -2393,6 +2582,7 @@ pt=2/2
 timing=main
 
 >Pegasus Charger
+url=http://magiccards.info/9e/en/34.html
 image=http://magiccards.info/scans/en/9e/34.jpg 
 value=2
 ability=flying,first strike
@@ -2406,6 +2596,7 @@ pt=2/1
 timing=main
 
 >Phantom Warrior
+url=http://magiccards.info/dpa/en/14.html
 image=http://magiccards.info/scans/en/dpa/14.jpg 
 value=3
 ability=unblockable
@@ -2419,6 +2610,7 @@ pt=2/2
 timing=main
 
 >Phyrexian Hulk
+url=http://magiccards.info/nph/en/150.html
 image=http://magiccards.info/scans/en/nph/150.jpg 
 value=4
 rarity=U
@@ -2430,6 +2622,7 @@ pt=5/4
 timing=main
 
 >Pillarfield Ox
+url=http://magiccards.info/zen/en/31.html
 image=http://magiccards.info/scans/en/zen/31.jpg 
 value=3
 rarity=C
@@ -2442,6 +2635,7 @@ pt=2/4
 timing=main
 
 >Pincher Beetles
+url=http://magiccards.info/10e/en/285.html
 image=http://magiccards.info/scans/en/10e/285.jpg 
 value=2
 ability=shroud
@@ -2455,6 +2649,7 @@ pt=3/1
 timing=fmain
 
 >Plague Beetle
+url=http://magiccards.info/10e/en/168.html
 image=http://magiccards.info/scans/en/10e/168.jpg 
 value=1
 ability=swampwalk
@@ -2468,6 +2663,7 @@ pt=1/1
 timing=main
 
 >Plasma Elemental
+url=http://magiccards.info/5dn/en/34.html
 image=http://magiccards.info/scans/en/5dn/34.jpg 
 value=4
 ability=unblockable
@@ -2481,6 +2677,7 @@ pt=4/1
 timing=main
 
 >Plated Seastrider
+url=http://magiccards.info/som/en/38.html
 image=http://magiccards.info/scans/en/som/38.jpg 
 value=2
 rarity=C
@@ -2493,6 +2690,7 @@ pt=1/4
 timing=main
 
 >Plover Knights
+url=http://magiccards.info/ddg/en/20.html
 image=http://magiccards.info/scans/en/lw/35.jpg 
 value=4
 ability=flying,first strike
@@ -2506,6 +2704,7 @@ pt=3/3
 timing=main
 
 >Raging Kavu
+url=http://magiccards.info/ptc/en/12.html
 image=http://magiccards.info/scans/en/in/262.jpg
 ignore=59949
 value=3
@@ -2520,6 +2719,7 @@ pt=3/1
 timing=fmain
 
 >Razorfoot Griffin
+url=http://magiccards.info/m10/en/25.html
 image=http://magiccards.info/scans/en/m10/25.jpg 
 value=3
 ability=flying,first strike
@@ -2533,6 +2733,7 @@ pt=2/2
 timing=main
 
 >Razortooth Rats
+url=http://magiccards.info/9e/en/158.html
 image=http://magiccards.info/scans/en/9e/158.jpg 
 value=2
 ability=fear
@@ -2546,6 +2747,7 @@ pt=2/1
 timing=main
 
 >Redwood Treefolk
+url=http://magiccards.info/7e/en/264.html
 image=http://magiccards.info/scans/en/7e/264.jpg 
 value=4
 rarity=C
@@ -2558,6 +2760,7 @@ pt=3/6
 timing=main
 
 >Rhox Brute
+url=http://magiccards.info/arb/en/59.html
 image=http://magiccards.info/scans/en/arb/59.jpg 
 value=4
 rarity=C
@@ -2570,6 +2773,7 @@ pt=4/4
 timing=main
 
 >Ridgetop Raptor
+url=http://magiccards.info/le/en/108.html
 image=http://magiccards.info/scans/en/le/108.jpg 
 value=3
 ability=double strike
@@ -2583,6 +2787,7 @@ pt=2/1
 timing=main
 
 >Rip-Clan Crasher
+url=http://magiccards.info/ala/en/189.html
 image=http://magiccards.info/scans/en/ala/189.jpg 
 value=2
 ability=haste
@@ -2596,6 +2801,7 @@ pt=2/2
 timing=fmain
 
 >River Bear
+url=http://magiccards.info/9e/en/266.html
 image=http://magiccards.info/scans/en/9e/266.jpg 
 value=3
 ability=islandwalk
@@ -2609,6 +2815,7 @@ pt=3/3
 timing=main
 
 >River Kaijin
+url=http://magiccards.info/chk/en/83.html
 image=http://magiccards.info/scans/en/chk/83.jpg 
 value=2
 rarity=C
@@ -2621,6 +2828,7 @@ pt=1/4
 timing=main
 
 >Rootbreaker Wurm
+url=http://magiccards.info/9e/en/267.html
 image=http://magiccards.info/scans/en/9e/267.jpg 
 value=4
 ability=trample
@@ -2634,6 +2842,7 @@ pt=6/6
 timing=main
 
 >Rootwater Commando
+url=http://magiccards.info/10e/en/102.html
 image=http://magiccards.info/scans/en/10e/102.jpg 
 value=2
 ability=islandwalk
@@ -2647,6 +2856,7 @@ pt=2/2
 timing=main
 
 >Runeclaw Bear
+url=http://magiccards.info/m12/en/193.html
 image=http://magiccards.info/scans/en/dpa/82.jpg 
 value=1
 rarity=C
@@ -2659,6 +2869,7 @@ pt=2/2
 timing=main
 
 >Rushwood Dryad
+url=http://magiccards.info/10e/en/294.html
 image=http://magiccards.info/scans/en/10e/294.jpg 
 value=1
 ability=forestwalk
@@ -2672,6 +2883,7 @@ pt=2/1
 timing=main
 
 >Sabretooth Tiger
+url=http://magiccards.info/8e/en/217.html
 image=http://magiccards.info/scans/en/8e/217.jpg 
 value=1
 ability=first strike
@@ -2685,6 +2897,7 @@ pt=2/1
 timing=main
 
 >Scaled Wurm
+url=http://magiccards.info/9e/en/269.html
 image=http://magiccards.info/scans/en/9e/269.jpg 
 value=4
 rarity=C
@@ -2697,6 +2910,7 @@ pt=7/6
 timing=main
 
 >Scathe Zombies
+url=http://magiccards.info/10e/en/175.html
 image=http://magiccards.info/scans/en/10e/175.jpg 
 value=1
 rarity=C
@@ -2709,6 +2923,7 @@ pt=2/2
 timing=main
 
 >Scavenging Scarab
+url=http://magiccards.info/ds/en/51.html
 image=http://magiccards.info/scans/en/ds/51.jpg 
 value=2
 ability=can't block
@@ -2722,6 +2937,7 @@ pt=3/3
 timing=fmain
 
 >Scoria Elemental
+url=http://magiccards.info/som/en/102.html
 image=http://magiccards.info/scans/en/som/102.jpg 
 value=3
 rarity=C
@@ -2734,6 +2950,7 @@ pt=6/1
 timing=main
 
 >Sea Eagle
+url=http://magiccards.info/8eb/en/4.html
 image=http://magiccards.info/scans/en/8eb/4.jpg 
 value=1
 ability=flying
@@ -2747,6 +2964,7 @@ pt=1/1
 timing=main
 
 >Severed Legion
+url=http://magiccards.info/dpa/en/33.html
 image=http://magiccards.info/scans/en/dpa/33.jpg 
 value=2
 ability=fear
@@ -2760,6 +2978,7 @@ pt=2/2
 timing=main
 
 >Spire Monitor
+url=http://magiccards.info/nph/en/46.html
 image=http://magiccards.info/scans/en/nph/46.jpg 
 value=3
 ability=flash,flying
@@ -2773,6 +2992,7 @@ pt=3/3
 timing=flash
 
 >Shatterskull Giant
+url=http://magiccards.info/zen/en/148.html
 image=http://magiccards.info/scans/en/zen/148.jpg 
 value=3
 rarity=C
@@ -2785,6 +3005,7 @@ pt=4/3
 timing=main
 
 >Shivan Zombie
+url=http://magiccards.info/in/en/271.html
 image=http://magiccards.info/scans/en/in/271.jpg 
 value=1
 ability=protection from white
@@ -2798,6 +3019,7 @@ pt=2/2
 timing=main
 
 >Siege Mastodon
+url=http://magiccards.info/m12/en/34.html
 image=http://magiccards.info/scans/en/m11/29.jpg 
 value=3
 rarity=C
@@ -2810,6 +3032,7 @@ pt=3/5
 timing=main
 
 >Sigiled Behemoth
+url=http://magiccards.info/arb/en/79.html
 image=http://magiccards.info/scans/en/arb/79.jpg 
 value=4
 ability=exalted
@@ -2823,6 +3046,7 @@ pt=5/4
 timing=main
 
 >Silverback Ape
+url=http://magiccards.info/8eb/en/7.html
 image=http://magiccards.info/scans/en/8eb/7.jpg 
 value=4
 rarity=U
@@ -2835,6 +3059,7 @@ pt=5/5
 timing=main
 
 >Silvercoat Lion
+url=http://magiccards.info/m11/en/31.html
 image=http://magiccards.info/scans/en/m11/31.jpg 
 value=1
 rarity=C
@@ -2847,6 +3072,7 @@ pt=2/2
 timing=main
 
 >Sky Ruin Drake
+url=http://magiccards.info/zen/en/66.html
 image=http://magiccards.info/scans/en/zen/66.jpg 
 value=3
 ability=flying
@@ -2860,6 +3086,7 @@ pt=2/5
 timing=main
 
 >Skyshroud Falcon
+url=http://magiccards.info/7e/en/45.html
 image=http://magiccards.info/scans/en/7e/45.jpg 
 value=2
 ability=flying,vigilance
@@ -2873,6 +3100,7 @@ pt=1/1
 timing=main
 
 >Slinking Serpent
+url=http://magiccards.info/in/en/274.html
 image=http://magiccards.info/scans/en/in/274.jpg 
 value=3
 ability=forestwalk
@@ -2886,6 +3114,7 @@ pt=2/3
 timing=main
 
 >Snapping Drake
+url=http://magiccards.info/dpa/en/15.html
 image=http://magiccards.info/scans/en/dpa/15.jpg 
 value=3
 ability=flying
@@ -2899,6 +3128,7 @@ pt=3/2
 timing=main
 
 >Sokenzan Bruiser
+url=http://magiccards.info/chk/en/188.html
 image=http://magiccards.info/scans/en/chk/188.jpg 
 value=3
 ability=mountainwalk
@@ -2912,6 +3142,7 @@ pt=3/3
 timing=main
 
 >Soulbound Guardians
+url=http://magiccards.info/roe/en/45.html
 image=http://magiccards.info/scans/en/roe/45.jpg 
 value=3
 ability=defender,flying
@@ -2925,6 +3156,7 @@ pt=4/5
 timing=smain
 
 >Spined Wurm
+url=http://magiccards.info/dpa/en/83.html
 image=http://magiccards.info/scans/en/dpa/83.jpg 
 value=4
 rarity=C
@@ -2937,6 +3169,7 @@ pt=5/4
 timing=main
 
 >Spineless Thug
+url=http://magiccards.info/10e/en/180.html
 image=http://magiccards.info/scans/en/10e/180.jpg 
 value=1
 ability=can't block
@@ -2950,6 +3183,7 @@ pt=2/2
 timing=fmain
 
 >Sporecap Spider
+url=http://magiccards.info/roe/en/209.html
 image=http://magiccards.info/scans/en/roe/209.jpg 
 value=2
 ability=reach
@@ -2963,6 +3197,7 @@ pt=1/5
 timing=main
 
 >Stampeding Rhino
+url=http://magiccards.info/m12/en/196.html
 image=http://magiccards.info/scans/en/m10/204.jpg 
 value=4
 ability=trample
@@ -2976,6 +3211,7 @@ pt=4/4
 timing=main
 
 >Standing Troops
+url=http://magiccards.info/8e/en/48.html
 image=http://magiccards.info/scans/en/8e/48.jpg 
 value=2
 ability=vigilance
@@ -2989,6 +3225,7 @@ pt=1/4
 timing=main
 
 >Steadfast Guard
+url=http://magiccards.info/10e/en/48.html
 image=http://magiccards.info/scans/en/10e/48.jpg 
 value=2
 ability=vigilance
@@ -3002,6 +3239,7 @@ pt=2/2
 timing=main
 
 >Stomper Cub
+url=http://magiccards.info/roe/en/210.html
 image=http://magiccards.info/scans/en/roe/210.jpg 
 value=4
 ability=trample
@@ -3015,6 +3253,7 @@ pt=5/3
 timing=main
 
 >Stone Golem
+url=http://magiccards.info/m11/en/215.html
 image=http://magiccards.info/scans/en/m11/215.jpg 
 value=4
 rarity=U
@@ -3026,6 +3265,7 @@ pt=4/4
 timing=main
 
 >Stonework Puma
+url=http://magiccards.info/zen/en/207.html
 image=http://magiccards.info/scans/en/zen/207.jpg 
 value=1
 rarity=C
@@ -3037,6 +3277,7 @@ pt=2/2
 timing=main
 
 >Storm Crow
+url=http://magiccards.info/9e/en/100.html
 image=http://magiccards.info/scans/en/9e/100.jpg 
 value=1
 ability=flying
@@ -3050,6 +3291,7 @@ pt=1/2
 timing=main
 
 >Stratozeppelid
+url=http://magiccards.info/gp/en/36.html
 image=http://magiccards.info/scans/en/gp/36.jpg 
 value=4
 ability=flying,can't block creatures without flying
@@ -3063,6 +3305,7 @@ pt=4/4
 timing=fmain
 
 >Streetbreaker Wurm
+url=http://magiccards.info/gp/en/133.html
 image=http://magiccards.info/scans/en/gp/133.jpg 
 value=4
 rarity=C
@@ -3075,6 +3318,7 @@ pt=6/4
 timing=main
 
 >Suntail Hawk
+url=http://magiccards.info/10e/en/50.html
 image=http://magiccards.info/scans/en/10e/50.jpg 
 value=2
 ability=flying
@@ -3088,6 +3332,7 @@ pt=1/1
 timing=main
 
 >Talon Trooper
+url=http://magiccards.info/arb/en/14.html
 image=http://magiccards.info/scans/en/arb/14.jpg 
 value=3
 ability=flying
@@ -3101,6 +3346,7 @@ pt=2/3
 timing=main
 
 >Tangle Spider
+url=http://magiccards.info/10e/en/303.html
 image=http://magiccards.info/scans/en/10e/303.jpg 
 value=3
 ability=flash,reach
@@ -3114,6 +3360,7 @@ pt=3/4
 timing=flash
 
 >Thornweald Archer
+url=http://magiccards.info/fut/en/154.html
 image=http://magiccards.info/scans/en/fut/154.jpg 
 value=2
 ability=reach,deathtouch
@@ -3127,6 +3374,7 @@ pt=2/1
 timing=main
 
 >Thundering Giant
+url=http://magiccards.info/10e/en/243.html
 image=http://magiccards.info/scans/en/10e/243.jpg 
 value=3
 ability=haste
@@ -3140,6 +3388,7 @@ pt=4/3
 timing=fmain
 
 >Tidal Kraken
+url=http://magiccards.info/9e/en/105.html
 image=http://magiccards.info/scans/en/9e/105.jpg 
 value=5
 ability=unblockable
@@ -3153,6 +3402,7 @@ pt=6/6
 timing=main
 
 >Trained Armodon
+url=http://magiccards.info/dpa/en/85.html
 image=http://magiccards.info/scans/en/dpa/85.jpg 
 value=3
 rarity=C
@@ -3165,6 +3415,7 @@ pt=3/3
 timing=main
 
 >Trained Orgg
+url=http://magiccards.info/7e/en/224.html
 image=http://magiccards.info/scans/en/7e/224.jpg 
 value=4
 rarity=R
@@ -3177,6 +3428,7 @@ pt=6/6
 timing=main
 
 >Trapjaw Kelpie
+url=http://magiccards.info/eve/en/164.html
 image=http://magiccards.info/scans/en/eve/164.jpg 
 value=4
 ability=flash,persist
@@ -3190,6 +3442,7 @@ pt=3/3
 timing=flash
 
 >Tree Monkey
+url=http://magiccards.info/9e/en/275.html
 image=http://magiccards.info/scans/en/9e/275.jpg 
 value=1
 ability=reach
@@ -3203,6 +3456,7 @@ pt=1/1
 timing=main
 
 >Treetop Scout
+url=http://magiccards.info/sc/en/130.html
 image=http://magiccards.info/scans/en/sc/130.jpg 
 value=1
 ability=can't be blocked except by creatures with flying
@@ -3216,6 +3470,7 @@ pt=1/1
 timing=main
 
 >Treetop Sentinel
+url=http://magiccards.info/od/en/111.html
 image=http://magiccards.info/scans/en/od/111.jpg 
 value=3
 ability=flying,protection from green
@@ -3229,6 +3484,7 @@ pt=2/3
 timing=main
 
 >Tundra Wolves
+url=http://magiccards.info/10e/en/54.html
 image=http://magiccards.info/scans/en/10e/54.jpg 
 value=1
 ability=first strike
@@ -3242,6 +3498,7 @@ pt=1/1
 timing=main
 
 >Urborg Drake
+url=http://magiccards.info/in/en/283.html
 image=http://magiccards.info/scans/en/in/283.jpg 
 value=2
 ability=flying,attacks each turn if able
@@ -3255,6 +3512,7 @@ pt=2/3
 timing=main
 
 >Valeron Outlander
+url=http://magiccards.info/cfx/en/130.html
 image=http://magiccards.info/scans/en/cfx/130.jpg 
 value=2
 ability=protection from black
@@ -3268,6 +3526,7 @@ pt=2/2
 timing=main
 
 >Valiant Guard
+url=http://magiccards.info/cfx/en/19.html
 image=http://magiccards.info/scans/en/cfx/19.jpg 
 value=1
 rarity=C
@@ -3280,6 +3539,7 @@ pt=0/3
 timing=main
 
 >Vastwood Gorger
+url=http://magiccards.info/m12/en/200.html
 image=http://magiccards.info/scans/en/zen/192.jpg 
 value=4
 rarity=C
@@ -3292,6 +3552,7 @@ pt=5/6
 timing=main
 
 >Veteran Cavalier
+url=http://magiccards.info/9e/en/52.html
 image=http://magiccards.info/scans/en/9e/52.jpg 
 value=2
 ability=vigilance
@@ -3305,6 +3566,7 @@ pt=2/2
 timing=main
 
 >Viashino Spearhunter
+url=http://magiccards.info/m10/en/161.html
 image=http://magiccards.info/scans/en/m10/161.jpg 
 value=1
 ability=first strike
@@ -3318,6 +3580,7 @@ pt=2/1
 timing=main
 
 >Vizzerdrix
+url=http://magiccards.info/9eb/en/7.html
 image=http://magiccards.info/scans/en/9eb/7.jpg 
 value=4
 rarity=R
@@ -3330,6 +3593,7 @@ pt=6/6
 timing=main
 
 >Vodalian Zombie
+url=http://magiccards.info/in/en/286.html
 image=http://magiccards.info/scans/en/in/286.jpg 
 value=2
 ability=protection from green
@@ -3343,6 +3607,7 @@ pt=2/2
 timing=main
 
 >Vulshok Berserker
+url=http://magiccards.info/m11/en/159.html
 image=http://magiccards.info/scans/en/m11/159.jpg 
 value=3
 ability=haste
@@ -3356,6 +3621,7 @@ pt=3/2
 timing=fmain
 
 >Wall of Air
+url=http://magiccards.info/10e/en/124.html
 image=http://magiccards.info/scans/en/10e/124.jpg 
 value=3
 ability=defender,flying
@@ -3369,6 +3635,7 @@ pt=1/5
 timing=smain
 
 >Wall of Spears
+url=http://magiccards.info/dpa/en/96.html
 image=http://magiccards.info/scans/en/dpa/96.jpg 
 value=2
 ability=defender,first strike
@@ -3381,6 +3648,7 @@ pt=2/3
 timing=smain
 
 >Wall of Stone
+url=http://magiccards.info/8e/en/232.html
 image=http://magiccards.info/scans/en/8e/232.jpg 
 value=2
 ability=defender
@@ -3394,6 +3662,7 @@ pt=0/8
 timing=smain
 
 >Wall of Swords
+url=http://magiccards.info/10e/en/57.html
 image=http://magiccards.info/scans/en/10e/57.jpg 
 value=3
 ability=defender,flying
@@ -3407,6 +3676,7 @@ pt=3/5
 timing=smain
 
 >Wall of Vines
+url=http://magiccards.info/m11/en/199.html
 image=http://magiccards.info/scans/en/m11/199.jpg 
 value=1
 ability=defender,reach
@@ -3420,6 +3690,7 @@ pt=0/3
 timing=smain
 
 >Wall of Wood
+url=http://magiccards.info/dpa/en/89.html
 image=http://magiccards.info/scans/en/dpa/89.jpg 
 value=1
 ability=defender
@@ -3433,6 +3704,7 @@ pt=0/3
 timing=smain
 
 >Wandering Ones
+url=http://magiccards.info/chk/en/100.html
 image=http://magiccards.info/scans/en/chk/100.jpg 
 value=1
 rarity=C
@@ -3445,6 +3717,7 @@ pt=1/1
 timing=main
 
 >Warpath Ghoul
+url=http://magiccards.info/m12/en/117.html
 image=http://magiccards.info/scans/en/m10/120.jpg 
 value=3
 rarity=C
@@ -3457,6 +3730,7 @@ pt=3/2
 timing=main
 
 >Waveskimmer Aven
+url=http://magiccards.info/ala/en/207.html
 image=http://magiccards.info/scans/en/ala/207.jpg 
 value=3
 ability=flying,exalted
@@ -3470,6 +3744,7 @@ pt=2/4
 timing=main
 
 >Wild Griffin
+url=http://magiccards.info/m11/en/40.html
 image=http://magiccards.info/scans/en/m11/40.jpg 
 value=2
 ability=flying
@@ -3483,6 +3758,7 @@ pt=2/2
 timing=main
 
 >Wind Drake
+url=http://magiccards.info/m10/en/81.html
 image=http://magiccards.info/scans/en/m10/81.jpg 
 value=2
 ability=flying
@@ -3496,6 +3772,7 @@ pt=2/2
 timing=main
 
 >Woodland Changeling
+url=http://magiccards.info/lw/en/242.html
 image=http://magiccards.info/scans/en/lw/242.jpg 
 value=1
 ability=changeling
@@ -3509,6 +3786,7 @@ pt=2/2
 timing=main
 
 >Woodland Druid
+url=http://magiccards.info/od/en/284.html
 image=http://magiccards.info/scans/en/od/284.jpg 
 value=1
 rarity=C
@@ -3521,6 +3799,7 @@ pt=1/2
 timing=main
 
 >Yavimaya Barbarian
+url=http://magiccards.info/in/en/290.html
 image=http://magiccards.info/scans/en/in/290.jpg 
 value=2
 ability=protection from blue
@@ -3534,6 +3813,7 @@ pt=2/2
 timing=main
 
 >Yavimaya Wurm
+url=http://magiccards.info/m11/en/200.html
 image=http://magiccards.info/scans/en/m11/200.jpg 
 value=4
 ability=trample
@@ -3547,6 +3827,7 @@ pt=6/4
 timing=main
 
 >Yotian Soldier
+url=http://magiccards.info/mi/en/277.html
 image=http://magiccards.info/scans/en/mi/277.jpg 
 value=2
 ability=vigilance
@@ -3559,6 +3840,7 @@ pt=1/4
 timing=main
 
 >Youthful Knight
+url=http://magiccards.info/10e/en/62.html
 image=http://magiccards.info/scans/en/10e/62.jpg 
 value=2
 ability=first strike
@@ -3572,6 +3854,7 @@ pt=2/1
 timing=main
 
 >Zealous Guardian
+url=http://magiccards.info/shm/en/157.html
 image=http://magiccards.info/scans/en/shm/157.jpg 
 value=1
 ability=flash
@@ -3585,6 +3868,7 @@ pt=1/1
 timing=flash
 
 >Zendikar Farguide
+url=http://magiccards.info/zen/en/194.html
 image=http://magiccards.info/scans/en/zen/194.jpg 
 value=3
 ability=forestwalk
@@ -3598,6 +3882,7 @@ pt=3/3
 timing=main
 
 >Zodiac Monkey
+url=http://magiccards.info/9e/en/285.html
 image=http://magiccards.info/scans/en/9e/285.jpg 
 value=1
 ability=forestwalk
@@ -3611,6 +3896,7 @@ pt=2/1
 timing=main
 
 >Zombie Goliath
+url=http://magiccards.info/m12/en/119.html
 image=http://magiccards.info/scans/en/m10/123.jpg 
 value=3
 rarity=C
@@ -3623,6 +3909,7 @@ pt=4/3
 timing=main
 
 >Sacred Wolf
+url=http://magiccards.info/m12/en/194.html
 image=http://magiccards.info/scans/en/m11/196.jpg 
 value=2
 rarity=C
@@ -3636,6 +3923,7 @@ ability=hexproof
 timing=fmain
 
 >Loxodon Partisan
+url=http://magiccards.info/mbs/en/12.html
 image=http://magiccards.info/scans/en/mbs/12.jpg 
 value=3
 rarity=C
@@ -3649,6 +3937,7 @@ ability=battle cry
 timing=main
 
 >Glissa's Courier
+url=http://magiccards.info/mbs/en/80.html
 image=http://magiccards.info/scans/en/mbs/80.jpg 
 value=3
 rarity=C
@@ -3662,6 +3951,7 @@ ability=mountainwalk
 timing=main
 
 >Priests of Norn
+url=http://magiccards.info/mbs/en/16.html
 image=http://magiccards.info/scans/en/mbs/16.jpg 
 value=2
 ability=vigilance,infect
@@ -3675,6 +3965,7 @@ pt=1/4
 timing=main
 
 >Flensermite
+url=http://magiccards.info/mbs/en/41.html
 image=http://magiccards.info/scans/en/mbs/41.jpg 
 value=2
 ability=infect,lifelink
@@ -3688,6 +3979,7 @@ pt=1/1
 timing=main
 
 >Blightwidow
+url=http://magiccards.info/mbs/en/77.html
 image=http://magiccards.info/scans/en/mbs/77.jpg 
 value=3
 ability=reach,infect
@@ -3701,6 +3993,7 @@ pt=2/4
 timing=main
 
 >Contagious Nim
+url=http://magiccards.info/som/en/58.html
 image=http://magiccards.info/scans/en/som/58.jpg 
 value=2
 ability=infect
@@ -3714,6 +4007,7 @@ pt=2/2
 timing=main
 
 >Cystbearer
+url=http://magiccards.info/som/en/117.html
 image=http://magiccards.info/scans/en/som/117.jpg 
 value=3
 ability=infect
@@ -3727,6 +4021,7 @@ pt=2/3
 timing=main
 
 >Phyrexian Digester
+url=http://magiccards.info/mbs/en/120.html
 image=http://magiccards.info/scans/en/mbs/120.jpg 
 value=2
 ability=infect
@@ -3739,6 +4034,7 @@ pt=2/1
 timing=main
 
 >Blackcleave Goblin
+url=http://magiccards.info/som/en/54.html
 image=http://magiccards.info/scans/en/som/54.jpg 
 value=3
 ability=haste,infect
@@ -3752,6 +4048,7 @@ pt=2/1
 timing=fmain
 
 >Kuldotha Ringleader
+url=http://magiccards.info/mbs/en/70.html
 image=http://magiccards.info/scans/en/mbs/70.jpg 
 value=4
 ability=battle cry,attacks each turn if able
@@ -3765,6 +4062,7 @@ pt=4/4
 timing=fmain
 
 >Lumengrid Gargoyle
+url=http://magiccards.info/mbs/en/112.html
 image=http://magiccards.info/scans/en/mbs/112.jpg 
 value=4
 ability=flying
@@ -3777,6 +4075,7 @@ pt=4/4
 timing=main
 
 >Tine Shrike
+url=http://magiccards.info/mbs/en/17.html
 image=http://magiccards.info/scans/en/mbs/17.jpg 
 value=3
 ability=flying,infect
@@ -3790,6 +4089,7 @@ pt=2/1
 timing=main
 
 >Scourge Servant
+url=http://magiccards.info/mbs/en/54.html
 image=http://magiccards.info/scans/en/mbs/54.jpg 
 value=3
 ability=infect
@@ -3803,6 +4103,7 @@ pt=3/3
 timing=main
 
 >Tangle Mantis
+url=http://magiccards.info/mbs/en/91.html
 image=http://magiccards.info/scans/en/mbs/91.jpg 
 value=3
 ability=trample
@@ -3816,6 +4117,7 @@ pt=3/4
 timing=main
 
 >Worship
+url=http://magiccards.info/9e/en/55.html
 image=http://magiccards.info/scans/en/9e/55.jpg 
 value=5
 rarity=R
@@ -3826,6 +4128,7 @@ cost={3}{W}
 timing=enchantment
 
 >Karn's Touch
+url=http://magiccards.info/mm/en/86.html
 image=http://magiccards.info/scans/en/mm/86.jpg
 value=3
 rarity=R
@@ -3836,6 +4139,7 @@ cost={U}{U}
 timing=animate
 
 >Clifftop Retreat
+url=http://magiccards.info/isd/en/238.html
 image=http://magiccards.info/scans/en/isd/238.jpg
 value=4
 rarity=C
@@ -3845,6 +4149,7 @@ basic=rw
 timing=land
 
 >Hinterland Harbor
+url=http://magiccards.info/isd/en/241.html
 image=http://magiccards.info/scans/en/isd/241.jpg
 value=4
 rarity=C
@@ -3854,6 +4159,7 @@ basic=gu
 timing=land
 
 >Isolated Chapel
+url=http://magiccards.info/isd/en/242.html
 image=http://magiccards.info/scans/en/isd/242.jpg
 value=4
 rarity=C
@@ -3863,6 +4169,7 @@ basic=wb
 timing=land
 
 >Sulfur Falls
+url=http://magiccards.info/isd/en/248.html
 image=http://magiccards.info/scans/en/isd/248.jpg
 value=4
 rarity=C
@@ -3872,6 +4179,7 @@ basic=ur
 timing=land
 
 >Woodland Cemetery
+url=http://magiccards.info/isd/en/249.html
 image=http://magiccards.info/scans/en/isd/249.jpg
 value=4
 rarity=C
@@ -3881,6 +4189,7 @@ basic=bg
 timing=land
 
 >Abbey Griffin
+url=http://magiccards.info/isd/en/1.html
 image=http://magiccards.info/scans/en/isd/1.jpg
 value=3
 rarity=C
@@ -3894,6 +4203,7 @@ ability=flying,vigilance
 timing=main
 
 >Ambush Viper
+url=http://magiccards.info/isd/en/169.html
 image=http://magiccards.info/scans/en/isd/169.jpg
 value=3
 removal=2
@@ -3908,6 +4218,7 @@ ability=flash,deathtouch
 timing=flash
 
 >Angel of Flight Alabaster
+url=http://magiccards.info/isd/en/2.html
 image=http://magiccards.info/scans/en/isd/2.jpg
 value=4
 rarity=R
@@ -3921,6 +4232,7 @@ ability=flying
 timing=main
 
 >Angelic Overseer
+url=http://magiccards.info/isd/en/3.html
 image=http://magiccards.info/scans/en/isd/3.jpg
 value=5
 rarity=M
@@ -3934,6 +4246,7 @@ ability=flying
 timing=fmain
 
 >Armored Skaab
+url=http://magiccards.info/isd/en/43.html
 image=http://magiccards.info/scans/en/isd/43.jpg
 value=2
 rarity=C
@@ -3946,6 +4259,7 @@ pt=1/4
 timing=main
 
 >Ashmouth Hound
+url=http://magiccards.info/isd/en/128.html
 image=http://magiccards.info/scans/en/isd/128.jpg
 value=2
 rarity=C
@@ -3958,6 +4272,7 @@ pt=2/1
 timing=main
 
 >Avacynian Priest
+url=http://magiccards.info/isd/en/4.html
 image=http://magiccards.info/scans/en/isd/4.jpg
 value=1
 rarity=C
@@ -3970,6 +4285,7 @@ pt=1/2
 timing=main
 
 >Avacyn's Pilgrim
+url=http://magiccards.info/isd/en/170.html
 image=http://magiccards.info/scans/en/isd/170.jpg
 value=3
 rarity=C
@@ -3983,6 +4299,7 @@ timing=main
 mana_or_combat
 
 >Balefire Dragon
+url=http://magiccards.info/isd/en/129.html
 image=http://magiccards.info/scans/en/isd/129.jpg
 value=5
 rarity=M
@@ -3996,6 +4313,7 @@ ability=flying
 timing=main
 
 >Battleground Geist
+url=http://magiccards.info/isd/en/45.html
 image=http://magiccards.info/scans/en/isd/45.jpg
 value=4
 rarity=U
@@ -4010,6 +4328,7 @@ static=player
 timing=fmain
 
 >Bloodcrazed Neonate
+url=http://magiccards.info/isd/en/131.html
 image=http://magiccards.info/scans/en/isd/131.jpg
 value=2
 rarity=C
@@ -4023,6 +4342,7 @@ ability=attacks each turn if able
 timing=main
 
 >Bloodgift Demon
+url=http://magiccards.info/isd/en/89.html
 image=http://magiccards.info/scans/en/isd/89.jpg
 value=4
 rarity=R
@@ -4036,6 +4356,7 @@ ability=flying
 timing=main
 
 >Boneyard Wurm
+url=http://magiccards.info/isd/en/171.html
 image=http://magiccards.info/scans/en/isd/171.jpg
 value=2
 rarity=U
@@ -4047,6 +4368,7 @@ cost={1}{G}
 timing=main
 
 >Brain Weevil
+url=http://magiccards.info/isd/en/91.html
 image=http://magiccards.info/scans/en/isd/91.jpg
 value=2
 rarity=C
@@ -4060,6 +4382,7 @@ ability=intimidate
 timing=main
 
 >Bramblecrush
+url=http://magiccards.info/isd/en/172.html
 image=http://magiccards.info/scans/en/isd/172.jpg
 value=3
 removal=3
@@ -4071,6 +4394,7 @@ cost={2}{G}{G}
 timing=removal
 
 >Butcher's Cleaver
+url=http://magiccards.info/isd/en/217.html
 image=http://magiccards.info/scans/en/isd/217.jpg
 value=3
 rarity=U
@@ -4083,6 +4407,7 @@ given_pt=3/0
 timing=equipment
 
 >Champion of the Parish
+url=http://magiccards.info/isd/en/6.html
 image=http://magiccards.info/scans/en/isd/6.jpg
 value=2
 rarity=R
@@ -4095,6 +4420,7 @@ pt=1/1
 timing=fmain
 
 >Chapel Geist
+url=http://magiccards.info/isd/en/7.html
 image=http://magiccards.info/scans/en/isd/7.jpg
 value=2
 rarity=C
@@ -4108,6 +4434,7 @@ ability=flying
 timing=main
 
 >Charmbreaker Devils
+url=http://magiccards.info/isd/en/134.html
 image=http://magiccards.info/scans/en/isd/134.jpg
 value=4
 rarity=R
@@ -4120,6 +4447,7 @@ pt=4/4
 timing=main
 
 >Claustrophobia
+url=http://magiccards.info/isd/en/48.html
 image=http://magiccards.info/scans/en/isd/48.jpg
 value=3
 removal=2
@@ -4133,6 +4461,7 @@ given_ability=doesn't untap during untap step
 timing=tapping
 
 >Cobbled Wings
+url=http://magiccards.info/isd/en/219.html
 image=http://magiccards.info/scans/en/isd/219.jpg
 value=2
 rarity=C
@@ -4145,6 +4474,7 @@ given_ability=flying
 timing=equipment
 
 >Crossway Vampire
+url=http://magiccards.info/isd/en/135.html
 image=http://magiccards.info/scans/en/isd/135.jpg
 value=3
 rarity=C
@@ -4157,6 +4487,7 @@ pt=3/2
 timing=fmain
 
 >Curiosity
+url=http://magiccards.info/isd/en/49.html
 image=http://magiccards.info/scans/en/isd/49.jpg
 value=2
 rarity=U
@@ -4168,6 +4499,7 @@ cost={U}
 timing=aura
 
 >Darkthicket Wolf
+url=http://magiccards.info/isd/en/175.html
 image=http://magiccards.info/scans/en/isd/175.jpg
 value=2
 rarity=C
@@ -4180,6 +4512,7 @@ pt=2/2
 timing=main
 
 >Dead Weight
+url=http://magiccards.info/isd/en/96.html
 image=http://magiccards.info/scans/en/isd/96.jpg
 value=3
 removal=2
@@ -4193,6 +4526,7 @@ given_pt=-2/-2
 timing=removal
 
 >Diregraf Ghoul
+url=http://magiccards.info/isd/en/97.html
 image=http://magiccards.info/scans/en/isd/97.jpg
 value=2
 rarity=U
@@ -4205,6 +4539,7 @@ pt=2/2
 timing=main
 
 >Disciple of Griselbrand
+url=http://magiccards.info/isd/en/98.html
 image=http://magiccards.info/scans/en/isd/98.jpg
 value=1
 rarity=U
@@ -4217,6 +4552,7 @@ pt=1/1
 timing=main
 
 >Doomed Traveler
+url=http://magiccards.info/isd/en/11.html
 image=http://magiccards.info/scans/en/isd/11.jpg
 value=1
 rarity=C
@@ -4229,6 +4565,7 @@ pt=1/1
 timing=main
 
 >Elder Cathar
+url=http://magiccards.info/isd/en/12.html
 image=http://magiccards.info/scans/en/isd/12.jpg
 value=2
 rarity=C
@@ -4241,6 +4578,7 @@ pt=2/2
 timing=main
 
 >Elder of Laurels
+url=http://magiccards.info/isd/en/177.html
 image=http://magiccards.info/scans/en/isd/177.jpg
 value=3
 rarity=R
@@ -4253,6 +4591,7 @@ pt=2/3
 timing=fmain
 
 >Elite Inquisitor
+url=http://magiccards.info/isd/en/13.html
 image=http://magiccards.info/scans/en/isd/13.jpg
 value=3
 rarity=R
@@ -4266,6 +4605,7 @@ ability=first strike,vigilance,protection from Vampires,protection from Werewolv
 timing=main
 
 >Endless Ranks of the Dead
+url=http://magiccards.info/isd/en/99.html
 image=http://magiccards.info/scans/en/isd/99.jpg
 value=4
 rarity=R
@@ -4276,6 +4616,7 @@ cost={2}{B}{B}
 timing=enchantment
 
 >Falkenrath Marauders
+url=http://magiccards.info/isd/en/141.html
 image=http://magiccards.info/scans/en/isd/141.jpg
 value=3
 rarity=R
@@ -4289,6 +4630,7 @@ ability=flying,haste
 timing=fmain
 
 >Falkenrath Noble
+url=http://magiccards.info/isd/en/100.html
 image=http://magiccards.info/scans/en/isd/100.jpg
 value=2
 rarity=U
@@ -4302,6 +4644,7 @@ ability=flying
 timing=fmain
 
 >Feral Ridgewolf
+url=http://magiccards.info/isd/en/142.html
 image=http://magiccards.info/scans/en/isd/142.jpg
 value=2
 rarity=C
@@ -4315,6 +4658,7 @@ ability=trample
 timing=main
 
 >Festerhide Boar
+url=http://magiccards.info/isd/en/179.html
 image=http://magiccards.info/scans/en/isd/179.jpg
 value=3
 rarity=C
@@ -4328,6 +4672,7 @@ ability=trample
 timing=smain
 
 >Fortress Crab
+url=http://magiccards.info/isd/en/56.html
 image=http://magiccards.info/scans/en/isd/56.jpg
 value=2
 rarity=C
@@ -4340,6 +4685,7 @@ pt=1/6
 timing=main
 
 >Frightful Delusion
+url=http://magiccards.info/isd/en/57.html
 image=http://magiccards.info/scans/en/isd/57.jpg
 value=3
 rarity=C
@@ -4350,6 +4696,7 @@ cost={2}{U}
 timing=counter
 
 >Gallows Warden
+url=http://magiccards.info/isd/en/16.html
 image=http://magiccards.info/scans/en/isd/16.jpg
 value=4
 rarity=U
@@ -4364,6 +4711,7 @@ static=player
 timing=fmain
 
 >Galvanic Juggernaut
+url=http://magiccards.info/isd/en/222.html
 image=http://magiccards.info/scans/en/isd/222.jpg
 value=4
 rarity=U
@@ -4376,6 +4724,7 @@ ability=attacks each turn if able,doesn't untap during untap step
 timing=main
 
 >Geist of Saint Traft
+url=http://magiccards.info/isd/en/213.html
 image=http://magiccards.info/scans/en/isd/213.jpg
 value=3
 rarity=M
@@ -4389,6 +4738,7 @@ ability=hexproof
 timing=main
 
 >Geistcatcher's Rig
+url=http://magiccards.info/isd/en/223.html
 image=http://magiccards.info/scans/en/isd/223.jpg
 value=4
 rarity=U
@@ -4400,6 +4750,7 @@ pt=4/5
 timing=main
 
 >Geist-Honored Monk
+url=http://magiccards.info/isd/en/17.html
 image=http://magiccards.info/scans/en/isd/17.jpg
 value=4
 rarity=R
@@ -4412,6 +4763,7 @@ ability=vigilance
 timing=main
 
 >Ghoulraiser
+url=http://magiccards.info/isd/en/102.html
 image=http://magiccards.info/scans/en/isd/102.jpg
 value=3
 rarity=C
@@ -4424,6 +4776,7 @@ pt=2/2
 timing=main
 
 >Grave Bramble
+url=http://magiccards.info/isd/en/184.html
 image=http://magiccards.info/scans/en/isd/184.jpg
 value=2
 rarity=C
@@ -4437,6 +4790,7 @@ ability=defender,protection from Zombies
 timing=main
 
 >Graveyard Shovel
+url=http://magiccards.info/isd/en/225.html
 image=http://magiccards.info/scans/en/isd/225.jpg
 value=2
 rarity=U
@@ -4446,6 +4800,7 @@ cost={2}
 timing=artifact
 
 >Grimgrin, Corpse-Born
+url=http://magiccards.info/isd/en/214.html
 image=http://magiccards.info/scans/en/isd/214.jpg
 value=5
 rarity=M
@@ -4459,6 +4814,7 @@ ability=doesn't untap during untap step
 timing=main
 
 >Grimoire of the Dead
+url=http://magiccards.info/isd/en/226.html
 image=http://magiccards.info/scans/en/isd/226.jpg
 value=4
 rarity=M
@@ -4468,6 +4824,7 @@ cost={4}
 timing=artifact
 
 >Hamlet Captain
+url=http://magiccards.info/isd/en/187.html
 image=http://magiccards.info/scans/en/isd/187.jpg
 value=2
 rarity=U
@@ -4480,6 +4837,7 @@ pt=2/2
 timing=main
 
 >Hollowhenge Scavenger
+url=http://magiccards.info/isd/en/188.html
 image=http://magiccards.info/scans/en/isd/188.jpg
 value=4
 rarity=U
@@ -4492,6 +4850,7 @@ pt=4/5
 timing=main
 
 >Hysterical Blindness
+url=http://magiccards.info/isd/en/59.html
 image=http://magiccards.info/scans/en/isd/59.jpg
 value=3
 rarity=C
@@ -4502,6 +4861,7 @@ cost={2}{U}
 timing=removal
 
 >Intangible Virtue
+url=http://magiccards.info/isd/en/19.html
 image=http://magiccards.info/scans/en/isd/19.jpg
 value=3
 rarity=U
@@ -4512,6 +4872,7 @@ cost={1}{W}
 timing=enchantment
 
 >Invisible Stalker
+url=http://magiccards.info/isd/en/60.html
 image=http://magiccards.info/scans/en/isd/60.jpg
 value=2
 rarity=U
@@ -4525,6 +4886,7 @@ ability=hexproof,unblockable
 timing=main
 
 >Kessig Cagebreakers
+url=http://magiccards.info/isd/en/189.html
 image=http://magiccards.info/scans/en/isd/189.jpg
 value=4
 rarity=R
@@ -4537,6 +4899,7 @@ pt=3/4
 timing=main
 
 >Kessig Wolf
+url=http://magiccards.info/isd/en/151.html
 image=http://magiccards.info/scans/en/isd/151.jpg
 value=2
 rarity=C
@@ -4549,6 +4912,7 @@ pt=3/1
 timing=main
 
 >Kindercatch
+url=http://magiccards.info/isd/en/190.html
 image=http://magiccards.info/scans/en/isd/190.jpg
 value=5
 rarity=C
@@ -4561,6 +4925,7 @@ pt=6/6
 timing=main
 
 >Lantern Spirit
+url=http://magiccards.info/isd/en/62.html
 image=http://magiccards.info/scans/en/isd/62.jpg
 value=2
 rarity=U
@@ -4574,6 +4939,7 @@ ability=flying
 timing=main
 
 >Lumberknot
+url=http://magiccards.info/isd/en/191.html
 image=http://magiccards.info/scans/en/isd/191.jpg
 value=2
 rarity=U
@@ -4587,6 +4953,7 @@ ability=hexproof
 timing=main
 
 >Make a Wish
+url=http://magiccards.info/isd/en/192.html
 image=http://magiccards.info/scans/en/isd/192.jpg
 value=3
 rarity=U
@@ -4597,6 +4964,7 @@ cost={3}{G}
 timing=draw
 
 >Manor Skeleton
+url=http://magiccards.info/isd/en/106.html
 image=http://magiccards.info/scans/en/isd/106.jpg
 value=1
 rarity=C
@@ -4610,6 +4978,7 @@ ability=haste
 timing=fmain
 
 >Markov Patrician
+url=http://magiccards.info/isd/en/107.html
 image=http://magiccards.info/scans/en/isd/107.jpg
 value=2
 rarity=C
@@ -4623,6 +4992,7 @@ ability=lifelink
 timing=main
 
 >Mask of Avacyn
+url=http://magiccards.info/isd/en/229.html
 image=http://magiccards.info/scans/en/isd/229.jpg
 value=3
 rarity=U
@@ -4636,6 +5006,7 @@ given_ability=hexproof
 timing=equipment
 
 >Mausoleum Guard
+url=http://magiccards.info/isd/en/20.html
 image=http://magiccards.info/scans/en/isd/20.jpg
 value=2
 rarity=U
@@ -4648,6 +5019,7 @@ pt=2/2
 timing=main
 
 >Maw of the Mire
+url=http://magiccards.info/isd/en/108.html
 image=http://magiccards.info/scans/en/isd/108.jpg
 value=3
 removal=3
@@ -4659,6 +5031,7 @@ cost={4}{B}
 timing=removal
 
 >Mentor of the Meek
+url=http://magiccards.info/isd/en/21.html
 image=http://magiccards.info/scans/en/isd/21.jpg
 value=2
 rarity=R
@@ -4671,6 +5044,7 @@ pt=2/2
 timing=main
 
 >Midnight Haunting
+url=http://magiccards.info/isd/en/22.html
 image=http://magiccards.info/scans/en/isd/22.jpg
 value=3
 rarity=U
@@ -4681,6 +5055,7 @@ cost={2}{W}
 timing=main
 
 >Mikaeus, the Lunarch
+url=http://magiccards.info/isd/en/23.html
 image=http://magiccards.info/scans/en/isd/23.jpg
 value=5
 rarity=M
@@ -4692,6 +5067,7 @@ cost={X}{W}
 timing=main
 
 >Mindshrieker
+url=http://magiccards.info/isd/en/67.html
 image=http://magiccards.info/scans/en/isd/67.jpg
 value=2
 rarity=R
@@ -4705,6 +5081,7 @@ ability=flying
 timing=main
 
 >Moldgraf Monstrosity
+url=http://magiccards.info/isd/en/194.html
 image=http://magiccards.info/scans/en/isd/194.jpg
 value=5
 rarity=R
@@ -4718,6 +5095,7 @@ ability=trample
 timing=main
 
 >Moment of Heroism
+url=http://magiccards.info/isd/en/24.html
 image=http://magiccards.info/scans/en/isd/24.jpg
 value=3
 rarity=C
@@ -4728,6 +5106,7 @@ cost={1}{W}
 timing=pump
 
 >Moon Heron
+url=http://magiccards.info/isd/en/69.html
 image=http://magiccards.info/scans/en/isd/69.jpg
 value=3
 rarity=C
@@ -4741,6 +5120,7 @@ ability=flying
 timing=main
 
 >Morkrut Banshee
+url=http://magiccards.info/isd/en/110.html
 image=http://magiccards.info/scans/en/isd/110.jpg
 value=4
 rarity=U
@@ -4753,6 +5133,7 @@ pt=4/4
 timing=main
 
 >Murder of Crows
+url=http://magiccards.info/isd/en/70.html
 image=http://magiccards.info/scans/en/isd/70.jpg
 value=4
 rarity=U
@@ -4766,6 +5147,7 @@ ability=flying
 timing=main
 
 >Night Revelers
+url=http://magiccards.info/isd/en/153.html
 image=http://magiccards.info/scans/en/isd/153.jpg
 value=4
 rarity=C
@@ -4778,6 +5160,7 @@ pt=4/4
 timing=main
 
 >One-Eyed Scarecrow
+url=http://magiccards.info/isd/en/230.html
 image=http://magiccards.info/scans/en/isd/230.jpg
 value=3
 removal=1
@@ -4791,6 +5174,7 @@ static=opponent
 timing=artifact
 
 >Orchard Spirit
+url=http://magiccards.info/isd/en/198.html
 image=http://magiccards.info/scans/en/isd/198.jpg
 value=2
 rarity=C
@@ -4804,6 +5188,7 @@ ability=can't be blocked except by creatures with flying
 timing=main
 
 >Paraselene
+url=http://magiccards.info/isd/en/26.html
 image=http://magiccards.info/scans/en/isd/26.jpg
 value=2
 removal=2
@@ -4815,6 +5200,7 @@ cost={2}{W}
 timing=removal
 
 >Pitchburn Devils
+url=http://magiccards.info/isd/en/156.html
 image=http://magiccards.info/scans/en/isd/156.jpg
 value=3
 rarity=C
@@ -4827,6 +5213,7 @@ pt=3/3
 timing=main
 
 >Rage Thrower
+url=http://magiccards.info/isd/en/157.html
 image=http://magiccards.info/scans/en/isd/157.jpg
 value=4
 rarity=U
@@ -4839,6 +5226,7 @@ pt=4/2
 timing=main
 
 >Rakish Heir
+url=http://magiccards.info/isd/en/158.html
 image=http://magiccards.info/scans/en/isd/158.jpg
 value=3
 rarity=U
@@ -4851,6 +5239,7 @@ pt=2/2
 timing=fmain
 
 >Reaper from the Abyss
+url=http://magiccards.info/isd/en/112.html
 image=http://magiccards.info/scans/en/isd/112.jpg
 value=5
 rarity=M
@@ -4864,6 +5253,7 @@ ability=flying
 timing=main
 
 >Rebuke
+url=http://magiccards.info/isd/en/29.html
 image=http://magiccards.info/scans/en/isd/29.jpg
 value=3
 removal=4
@@ -4875,6 +5265,7 @@ cost={2}{W}
 timing=attack
 
 >Riot Devils
+url=http://magiccards.info/isd/en/160.html
 image=http://magiccards.info/scans/en/isd/160.jpg
 value=2
 rarity=C
@@ -4887,6 +5278,7 @@ pt=2/3
 timing=main
 
 >Rotting Fensnake
+url=http://magiccards.info/isd/en/113.html
 image=http://magiccards.info/scans/en/isd/113.jpg
 value=3
 rarity=C
@@ -4899,6 +5291,7 @@ pt=5/1
 timing=main
 
 >Scourge of Geier Reach
+url=http://magiccards.info/isd/en/162.html
 image=http://magiccards.info/scans/en/isd/162.jpg
 value=3
 rarity=U
@@ -4911,6 +5304,7 @@ pt=3/3
 timing=main
 
 >Selfless Cathar
+url=http://magiccards.info/isd/en/30.html
 image=http://magiccards.info/scans/en/isd/30.jpg
 value=2
 rarity=C
@@ -4923,6 +5317,7 @@ pt=1/1
 timing=main
 
 >Selhoff Occultist
+url=http://magiccards.info/isd/en/73.html
 image=http://magiccards.info/scans/en/isd/73.jpg
 value=2
 rarity=C
@@ -4935,6 +5330,7 @@ pt=2/3
 timing=main
 
 >Sensory Deprivation
+url=http://magiccards.info/isd/en/74.html
 image=http://magiccards.info/scans/en/isd/74.jpg
 value=2
 rarity=C
@@ -4947,6 +5343,7 @@ given_pt=-3/-0
 timing=removal
 
 >Sharpened Pitchfork
+url=http://magiccards.info/isd/en/232.html
 image=http://magiccards.info/scans/en/isd/232.jpg
 value=2
 rarity=U
@@ -4959,6 +5356,7 @@ given_ability=first strike
 timing=equipment
 
 >Silverchase Fox
+url=http://magiccards.info/isd/en/31.html
 image=http://magiccards.info/scans/en/isd/31.jpg
 value=2
 rarity=C
@@ -4971,6 +5369,7 @@ pt=2/2
 timing=main
 
 >Silver-Inlaid Dagger
+url=http://magiccards.info/isd/en/233.html
 image=http://magiccards.info/scans/en/isd/233.jpg
 value=2
 rarity=U
@@ -4983,6 +5382,7 @@ given_pt=2/0
 timing=equipment
 
 >Skirsdag Cultist
+url=http://magiccards.info/isd/en/163.html
 image=http://magiccards.info/scans/en/isd/163.jpg
 value=3
 rarity=U
@@ -4995,6 +5395,7 @@ pt=2/2
 timing=main
 
 >Slayer of the Wicked
+url=http://magiccards.info/isd/en/32.html
 image=http://magiccards.info/scans/en/isd/32.jpg
 value=3
 rarity=U
@@ -5007,6 +5408,7 @@ pt=3/2
 timing=fmain
 
 >Smite the Monstrous
+url=http://magiccards.info/isd/en/33.html
 image=http://magiccards.info/scans/en/isd/33.jpg
 value=3
 removal=3
@@ -5018,6 +5420,7 @@ cost={3}{W}
 timing=removal
 
 >Somberwald Spider
+url=http://magiccards.info/isd/en/202.html
 image=http://magiccards.info/scans/en/isd/202.jpg
 value=3
 rarity=C
@@ -5031,6 +5434,7 @@ ability=reach
 timing=main
 
 >Spectral Flight
+url=http://magiccards.info/isd/en/79.html
 image=http://magiccards.info/scans/en/isd/79.jpg
 value=3
 rarity=C
@@ -5044,6 +5448,7 @@ given_ability=flying
 timing=aura
 
 >Spectral Rider
+url=http://magiccards.info/isd/en/35.html
 image=http://magiccards.info/scans/en/isd/35.jpg
 value=3
 rarity=U
@@ -5057,6 +5462,7 @@ ability=intimidate
 timing=main
 
 >Spidery Grasp
+url=http://magiccards.info/isd/en/204.html
 image=http://magiccards.info/scans/en/isd/204.jpg
 value=3
 rarity=C
@@ -5067,6 +5473,7 @@ cost={2}{G}
 timing=tapping
 
 >Splinterfright
+url=http://magiccards.info/isd/en/205.html
 image=http://magiccards.info/scans/en/isd/205.jpg
 value=3
 rarity=R
@@ -5079,6 +5486,7 @@ ability=trample
 timing=main
 
 >Stitcher's Apprentice
+url=http://magiccards.info/isd/en/81.html
 image=http://magiccards.info/scans/en/isd/81.jpg
 value=2
 rarity=C
@@ -5091,6 +5499,7 @@ pt=1/2
 timing=main
 
 >Stromkirk Noble
+url=http://magiccards.info/isd/en/164.html
 image=http://magiccards.info/scans/en/isd/164.jpg
 value=2
 rarity=R
@@ -5104,6 +5513,7 @@ ability=can't be blocked by humans
 timing=main
 
 >Stromkirk Patrol
+url=http://magiccards.info/isd/en/118.html
 image=http://magiccards.info/scans/en/isd/118.jpg
 value=4
 rarity=C
@@ -5116,6 +5526,7 @@ pt=4/3
 timing=main
 
 >Sturmgeist
+url=http://magiccards.info/isd/en/82.html
 image=http://magiccards.info/scans/en/isd/82.jpg
 value=3
 rarity=R
@@ -5128,6 +5539,7 @@ ability=flying
 timing=main
 
 >Thraben Purebloods
+url=http://magiccards.info/isd/en/37.html
 image=http://magiccards.info/scans/en/isd/37.jpg
 value=3
 rarity=C
@@ -5140,6 +5552,7 @@ pt=3/5
 timing=main
 
 >Traitorous Blood
+url=http://magiccards.info/isd/en/166.html
 image=http://magiccards.info/scans/en/isd/166.jpg
 value=4
 removal=5
@@ -5151,6 +5564,7 @@ cost={1}{R}{R}
 timing=removal
 
 >Tree of Redemption
+url=http://magiccards.info/isd/en/207.html
 image=http://magiccards.info/scans/en/isd/207.jpg
 value=4
 rarity=M
@@ -5164,6 +5578,7 @@ ability=defender
 timing=main
 
 >Tribute to Hunger
+url=http://magiccards.info/isd/en/119.html
 image=http://magiccards.info/scans/en/isd/119.jpg
 value=3
 removal=2
@@ -5175,6 +5590,7 @@ cost={2}{B}
 timing=removal
 
 >Typhoid Rats
+url=http://magiccards.info/isd/en/120.html
 image=http://magiccards.info/scans/en/isd/120.jpg
 value=1
 rarity=C
@@ -5188,6 +5604,7 @@ ability=deathtouch
 timing=main
 
 >Unbreathing Horde
+url=http://magiccards.info/isd/en/121.html
 image=http://magiccards.info/scans/en/isd/121.jpg
 value=3
 rarity=R
@@ -5199,6 +5616,7 @@ cost={2}{B}
 timing=main
 
 >Unruly Mob
+url=http://magiccards.info/isd/en/39.html
 image=http://magiccards.info/scans/en/isd/39.jpg
 value=2
 rarity=C
@@ -5211,6 +5629,7 @@ pt=1/1
 timing=main
 
 >Urgent Exorcism
+url=http://magiccards.info/isd/en/40.html
 image=http://magiccards.info/scans/en/isd/40.jpg
 value=2
 removal=1
@@ -5222,6 +5641,7 @@ cost={1}{W}
 timing=removal
 
 >Vampire Interloper
+url=http://magiccards.info/isd/en/123.html
 image=http://magiccards.info/scans/en/isd/123.jpg
 value=2
 rarity=C
@@ -5235,6 +5655,7 @@ ability=flying,can't block
 timing=main
 
 >Vampiric Fury
+url=http://magiccards.info/isd/en/167.html
 image=http://magiccards.info/scans/en/isd/167.jpg
 value=2
 rarity=C
@@ -5245,6 +5666,7 @@ cost={1}{R}
 timing=pump
 
 >Victim of Night
+url=http://magiccards.info/isd/en/124.html
 image=http://magiccards.info/scans/en/m11/95.jpg
 value=3
 removal=4
@@ -5256,6 +5678,7 @@ cost={B}{B}
 timing=removal
 
 >Village Bell-Ringer
+url=http://magiccards.info/isd/en/41.html
 image=http://magiccards.info/scans/en/isd/41.jpg
 value=2
 rarity=C
@@ -5269,6 +5692,7 @@ ability=flash
 timing=main
 
 >Village Cannibals
+url=http://magiccards.info/isd/en/125.html
 image=http://magiccards.info/scans/en/isd/125.jpg
 value=2
 rarity=U
@@ -5281,6 +5705,7 @@ pt=2/2
 timing=main
 
 >Voiceless Spirit
+url=http://magiccards.info/isd/en/42.html
 image=http://magiccards.info/scans/en/isd/42.jpg
 value=2
 rarity=C
@@ -5294,6 +5719,7 @@ ability=flying,first strike
 timing=main
 
 >Walking Corpse
+url=http://magiccards.info/isd/en/126.html
 image=http://magiccards.info/scans/en/isd/126.jpg
 value=2
 rarity=C
@@ -5306,6 +5732,7 @@ pt=2/2
 timing=main
 
 >Wooden Stake
+url=http://magiccards.info/isd/en/237.html
 image=http://magiccards.info/scans/en/isd/237.jpg
 value=2
 rarity=C
@@ -5318,6 +5745,7 @@ given_pt=1/0
 timing=equipment
 
 >Woodland Sleuth
+url=http://magiccards.info/isd/en/210.html
 image=http://magiccards.info/scans/en/isd/210.jpg
 value=3
 rarity=C
@@ -5330,6 +5758,7 @@ pt=2/3
 timing=main
 
 >Wreath of Geists
+url=http://magiccards.info/isd/en/211.html
 image=http://magiccards.info/scans/en/isd/211.jpg
 value=3
 rarity=U

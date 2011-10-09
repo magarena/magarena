@@ -94,7 +94,7 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 						imageFile.length() == 0L ||
 						cardDefinition.isIgnored(imageFile.length())) {
                     try { //create URL
-    					add(new DownloadCardTextFile(imageFile,new URL(imageURL)));
+    					add(new DownloadImageFile(imageFile,new URL(imageURL)));
                     } catch (final java.net.MalformedURLException ex) {
                         System.err.println("ERROR! URL malformed " + imageURL);
                     }
