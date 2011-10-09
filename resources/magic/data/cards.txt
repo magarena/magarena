@@ -13035,3 +13035,27 @@ color=r
 converted=4
 cost={2}{R}{R}
 timing=enchantment
+
+>Corrupt Official
+image=http://magiccards.info/scans/en/mm/128.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Minion
+color=b
+converted=5
+cost={4}{B}
+pt=3/1
+timing=main
+
+>Deepwood Tantiv
+image=http://magiccards.info/scans/en/mm/241.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={4}{G}
+pt=2/4
+timing=main
