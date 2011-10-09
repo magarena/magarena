@@ -14,7 +14,7 @@ import magic.model.action.MagicDrawAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
@@ -32,7 +32,7 @@ public class Angelheart_Vial {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(
+			return new MagicEvent[]{new MagicPayManaCostTapEvent(
                     source,
                     source.getController(),
                     MagicManaCost.TWO),
