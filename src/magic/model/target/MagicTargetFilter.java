@@ -4,6 +4,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -1172,6 +1173,17 @@ public interface MagicTargetFilter {
 			return permanent.isCreature(game) && permanent.getPower(game) >= 4;
 		}
 		
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_CREATURE_PLUSONE_COUNTER = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return permanent.isCreature(game) &&
+					permanent.getCounters(MagicCounterType.PlusOne) > 0;
+		}
 		public boolean acceptType(final MagicTargetType targetType) {	
 			return targetType == MagicTargetType.Permanent;
 		}		

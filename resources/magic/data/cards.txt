@@ -12965,3 +12965,15 @@ converted=3
 cost={1}{B}{B}
 pt=2/2
 timing=main
+
+>Amphibious Kavu
+image=http://magiccards.info/scans/en/ps/78.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Kavu
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main

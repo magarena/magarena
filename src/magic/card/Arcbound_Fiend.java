@@ -30,7 +30,7 @@ public class Arcbound_Fiend {
                         new MagicMayChoice(
                             player + " may move a +1/+1 counter from " +
                             "target creature onto " + permanent + ".",
-                            MagicTargetChoice.NEG_TARGET_CREATURE),
+                            MagicTargetChoice.NEG_TARGET_CREATURE_PLUSONE_COUNTER),
                         new Object[]{permanent},
                         this,
                         player + " may$ move a +1/+1 counter from " +
