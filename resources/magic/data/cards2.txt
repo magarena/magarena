@@ -5090,6 +5090,19 @@ cost={1}{U}
 pt=1/2
 timing=main
 
+>Stromkirk Noble
+image=http://magiccards.info/scans/en/isd/164.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Vampire
+color=r
+converted=1
+cost={R}
+pt=1/1
+ability=can't be blocked by humans
+timing=main
+
 >Stromkirk Patrol
 image=http://magiccards.info/scans/en/isd/118.jpg
 value=4

@@ -9,6 +9,7 @@ public enum MagicAbility {
 	CannotBeBlockedByFlying("can't be blocked by creatures with flying",20),
 	CannotBeBlockedExceptWithFlying("can't be blocked except by creatures with flying",30),
 	CannotBeBlockedExceptWithFlyingOrReach("can't be blocked except by creatures with flying or reach",25),
+	CannotBeBlockedByHumans("can't be blocked by humans",10),
 	CannotBeCountered("can't be countered",0),
 	CannotBeTheTarget("hexproof",80),
 	CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),

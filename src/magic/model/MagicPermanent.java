@@ -729,6 +729,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 return false;
             }
         }
+        // Subtype
+        if (MagicAbility.CannotBeBlockedByHumans.hasAbility(attackerFlags)) {
+        	if (this.hasSubType(MagicSubType.Human,game)) {
+        		return false;
+        	}
+        }
 
 		// Protection
 		return !hasProtectionFrom(attackerFlags,this,game);
