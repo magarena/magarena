@@ -12989,3 +12989,27 @@ converted=3
 cost={1}{G}{G}
 pt=3/2
 timing=main
+
+>Cave Tiger
+image=http://magiccards.info/scans/en/us/241.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main
+
+>Chambered Nautilus
+image=http://magiccards.info/scans/en/mm/64.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Nautilus,Beast
+color=u
+converted=3
+cost={2}{U}
+pt=2/2
+timing=main
