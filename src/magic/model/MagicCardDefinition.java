@@ -750,7 +750,8 @@ public class MagicCardDefinition {
 			fullName.toLowerCase().contains(s) ||
 			name.toLowerCase().contains(s) ||
 			subTypeHasText(s) ||
-			abilityHasText(s)
+			abilityHasText(s) ||
+			getText().toLowerCase().contains(s)
 		);
 	}
 

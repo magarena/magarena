@@ -301,7 +301,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 			return false;
 		} */
 		
-		// name search
+		// search text in name, abilities, type, text, etc.
 		final String filterString = nameTextField.getText();
 		if (filterString.length() > 0) {
 			final String[] filters = filterString.split(" ");
