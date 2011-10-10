@@ -14446,3 +14446,31 @@ cost={2}{W}
 pt=2/2
 ability=flanking
 timing=main
+
+>Jolrael's Centaur
+url=http://magiccards.info/mr/en/120.html
+image=http://magiccards.info/scans/en/mr/120.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Centaur,Archer
+color=g
+converted=3
+cost={1}{G}{G}
+pt=2/2
+ability=flanking,shroud
+timing=main
+
+>Mtenda Herder
+url=http://magiccards.info/mr/en/233.html
+image=http://magiccards.info/scans/en/mr/233.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Scout
+color=w
+converted=1
+cost={W}
+pt=1/1
+ability=flanking
+timing=main
