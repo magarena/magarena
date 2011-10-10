@@ -219,6 +219,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice POS_TARGET_GOLEM_YOU_CONTROL =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_GOLEM_YOU_CONTROL,true,MagicTargetHint.Positive,
 					"target Golem you control");
+	public static final MagicTargetChoice POS_TARGET_KNIGHT_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_KNIGHT_CREATURE,true,MagicTargetHint.Positive,
+					"target Knight creature ");
 	private static final MagicTargetChoice SACRIFICE_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=
