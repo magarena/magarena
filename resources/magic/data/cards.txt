@@ -14474,3 +14474,31 @@ cost={W}
 pt=1/1
 ability=flanking
 timing=main
+
+>Shadow Rider
+url=http://magiccards.info/wl/en/21.html
+image=http://magiccards.info/scans/en/wl/21.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie,Knight
+color=b
+converted=4
+cost={2}{B}{B}
+pt=3/3
+ability=flanking
+timing=main
+
+>Sidar Jabari
+url=http://magiccards.info/mr/en/243.html
+image=http://magiccards.info/scans/en/mr/243.jpg
+value=3
+rarity=R
+type=Legendary,Creature
+subtype=Human,Knight
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+ability=flanking
+timing=main
