@@ -14376,3 +14376,17 @@ converted=6
 cost={5}{G}
 pt=5/4
 timing=main
+
+>Benalish Cavalry
+url=http://magiccards.info/ts/en/4.html
+image=http://magiccards.info/scans/en/ts/4.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+ability=flanking
+timing=main
