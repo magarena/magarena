@@ -14558,3 +14558,31 @@ cost={2}{W}
 pt=2/2
 ability=flanking
 timing=main
+
+>Gustcloak Cavalier
+url=http://magiccards.info/ts/en/22.html
+image=http://magiccards.info/scans/en/ts/22.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=w
+converted=5
+cost={3}{W}{W}
+pt=2/2
+ability=flanking
+timing=main
+
+>Gustcloak Harrier
+url=http://magiccards.info/on/en/34.html
+image=http://magiccards.info/scans/en/on/34.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/2
+ability=flying
+timing=main
