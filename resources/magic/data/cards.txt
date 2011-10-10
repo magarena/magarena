@@ -14418,3 +14418,31 @@ cost={2}{B}
 pt=2/2
 ability=flanking
 timing=main
+
+>Fallen Askari
+url=http://magiccards.info/vi/en/9.html
+image=http://magiccards.info/scans/en/vi/9.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=b
+converted=2
+cost={1}{B}
+pt=2/2
+ability=flanking,can't block
+timing=main
+
+>Femeref Knight
+url=http://magiccards.info/mr/en/222.html
+image=http://magiccards.info/scans/en/mr/222.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=flanking
+timing=main
