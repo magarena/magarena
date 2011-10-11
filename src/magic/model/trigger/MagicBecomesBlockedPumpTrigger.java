@@ -9,23 +9,31 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
 
 	private final int amountPower;
 	private final int amountToughness;
+	private final boolean forEachBlocker;
 	
-    public MagicBecomesBlockedPumpTrigger(final int amountPower,final int amountToughness) {
+    public MagicBecomesBlockedPumpTrigger(final int amountPower,final int amountToughness,final boolean forEachBlocker) {
     	this.amountPower = amountPower;
     	this.amountToughness = amountToughness;
+    	this.forEachBlocker = forEachBlocker;
 	}
 
     @Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-		return (permanent == data ) ?
-            new MagicEvent(
+		if (permanent == data ) {
+			int size = forEachBlocker ?
+					permanent.getBlockingCreatures().size() :
+					1;
+			final int totalAmountPower = amountPower * size;
+			final int totalAmountToughness = amountToughness * size;
+            return new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
-                    permanent + " gets " + getString(amountPower) + 
-                    "/" + getString(amountToughness) + " until end of turn.") :
-            MagicEvent.NONE;
+                    permanent + " gets " + getString(totalAmountPower) + 
+                    "/" + getString(totalAmountToughness) + " until end of turn.");
+		}
+		return MagicEvent.NONE;
 	}
 	@Override
 	public void executeEvent(

@@ -50,7 +50,7 @@ public class Karn__Silver_Golem {
         }
     };
     
-	public static final MagicBecomesBlockedPumpTrigger T1 = new MagicBecomesBlockedPumpTrigger(-4,4);
+	public static final MagicBecomesBlockedPumpTrigger T1 = new MagicBecomesBlockedPumpTrigger(-4,4,false);
 	
 	public static final MagicWhenBlocksPumpTrigger T2 = new MagicWhenBlocksPumpTrigger(-4,4);
 	
