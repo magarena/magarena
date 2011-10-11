@@ -228,6 +228,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a creature to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_ARTIFACT=
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL,false,MagicTargetHint.None,"an artifact to sacrifice");
+	public static final MagicTargetChoice SACRIFICE_LAND =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_LAND_YOU_CONTROL,false,MagicTargetHint.None,"a land to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_BAT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_BAT_YOU_CONTROL,false,MagicTargetHint.None,"a Bat to sacrifice");	
 	public static final MagicTargetChoice SACRIFICE_BEAST=
