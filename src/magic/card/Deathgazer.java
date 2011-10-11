@@ -30,7 +30,7 @@ public class Deathgazer {
                             this,
                             plist.size() > 1 ?
                 					"Destroy blocking nonblack creatures at end of combat." :
-                					"Destroy blocking nonblack creature at end of combat.");
+                					"Destroy " + plist.get(0) + " at end of combat.");
             	}
             }
             return MagicEvent.NONE;

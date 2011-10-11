@@ -21,7 +21,7 @@ public class Elven_Warhounds {
             			this,
             			plist.size() > 1 ?
             			"Put blocking creatures on top of their owner's library." :
-            			"Put blocking creature on top of its owner's library.");
+            			"Put " + plist.get(0) + " on top of its owner's library.");
             }
             return MagicEvent.NONE;
 		}

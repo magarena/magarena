@@ -22,8 +22,8 @@ public class Engulfing_Slagwurm {
             			new Object[]{plist,permanent.getController()},
             			this,
             			plist.size() > 1 ?
-            				"Destroy blocking creatures. You gain life equal to those creature's toughness." :
-            				"Destroy blocking creature. You gain life equal to its toughness.");
+            				"Destroy blocking creatures. You gain life equal to those creatures toughness." :
+            				"Destroy " + plist.get(0) + ". You gain life equal to its toughness.");
             }
             return MagicEvent.NONE;
 		}
