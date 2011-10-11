@@ -14664,3 +14664,29 @@ converted=5
 cost={5}
 pt=4/4
 timing=fmain
+
+>Norwood Warrior
+url=http://magiccards.info/po2/en/80.html
+image=http://magiccards.info/scans/en/po2/80.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main
+
+>Ogre Leadfoot
+url=http://magiccards.info/mi/en/102.html
+image=http://magiccards.info/scans/en/mi/102.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Ogre
+color=r
+converted=5
+cost={4}{R}
+pt=3/3
+timing=main
