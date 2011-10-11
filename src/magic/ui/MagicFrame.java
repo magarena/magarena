@@ -324,7 +324,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		keywordsItem.addActionListener(this);
 		viewMenu.add(keywordsItem);
 		
-		cardExplorerItem=new JMenuItem("Card explorer");
+		cardExplorerItem=new JMenuItem("Card Explorer");
 		cardExplorerItem.addActionListener(this);
 		viewMenu.add(cardExplorerItem);
 		
