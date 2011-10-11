@@ -43,7 +43,7 @@ public class DeckGenerators {
             
 			addDeckGenerator(name, generator);
 			
-			System.out.println("added deck generator " + name);
+			System.err.println("added deck generator " + name);
         } catch (final ClassNotFoundException ex) {
             // no class found
         } catch (final ClassCastException ex) {
