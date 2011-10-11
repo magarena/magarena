@@ -14874,3 +14874,29 @@ cost={2}{R}{R}
 pt=4/4
 ability=wither
 timing=main
+
+>Slith Strider
+url=http://magiccards.info/mi/en/50.html
+image=http://magiccards.info/scans/en/mi/50.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Slith
+color=u
+converted=3
+cost={1}{U}{U}
+pt=1/1
+timing=main
+
+>Snorting Gahr
+url=http://magiccards.info/mm/en/272.html
+image=http://magiccards.info/scans/en/mm/272.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Rhino,Beast
+color=g
+converted=4
+cost={2}{G}{G}
+pt=3/3
+timing=main
