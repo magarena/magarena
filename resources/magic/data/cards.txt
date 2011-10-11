@@ -14844,6 +14844,33 @@ type=Creature
 subtype=Kor,Soldier
 color=w
 converted=5
-cost={2}{W}{W}
+cost={3}{W}{W}
 pt=3/5
+timing=main
+
+>Slashing Tiger
+url=http://magiccards.info/me3/en/133.html
+image=http://magiccards.info/scans/en/me3/133.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Cat
+color=g
+converted=4
+cost={2}{G}{G}
+pt=3/3
+timing=main
+
+>Slinking Giant
+url=http://magiccards.info/shm/en/106.html
+image=http://magiccards.info/scans/en/shm/106.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Giant,Rogue
+color=r
+converted=4
+cost={2}{R}{R}
+pt=4/4
+ability=wither
 timing=main
