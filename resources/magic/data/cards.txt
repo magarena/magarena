@@ -14783,6 +14783,32 @@ cost={2}{G}{G}
 pt=3/3
 timing=main
 
+>Rock Basilisk
+url=http://magiccards.info/mr/en/339.html
+image=http://magiccards.info/scans/en/mr/339.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Basilisk
+color=rg
+converted=6
+cost={4}{R}{G}
+pt=4/5
+timing=main
+
+>Sacred Prey
+url=http://magiccards.info/mm/en/268.html
+image=http://magiccards.info/scans/en/mm/268.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Horse
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+
 >Saprazzan Heir
 url=http://magiccards.info/mm/en/99.html
 image=http://magiccards.info/scans/en/mm/99.jpg
