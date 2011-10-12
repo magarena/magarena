@@ -52,6 +52,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final MagicPermanentSet auraPermanents;	
 	private MagicPermanent blockedCreature = MagicPermanent.NONE;
     private final MagicPermanentList blockingCreatures;	
+    private MagicCard exiledCard = MagicCard.NONE;
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
 	private int stateFlags=MagicPermanentState.Summoned.getMask();
 	private long turnAbilityFlags=0;
@@ -532,6 +533,15 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public void removeBlockingCreatures() {
 		blockingCreatures.clear();
 	}
+	
+	public MagicCard getExiledCard() {
+		return exiledCard;
+	}
+	
+	public void setExiledCard(final MagicCard card) {
+		exiledCard = card;
+	}
+	
 	
 	void checkState(final MagicGame game, final List<MagicAction> actions) {
 		if (isCreature(game)) {
