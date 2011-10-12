@@ -67,12 +67,14 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 
 		setScore(controller,permanent.getStaticScore(game)-score);
 	
+        game.executeTrigger(MagicTriggerType.WhenLeavesPlay,permanent);
+        
         // Trigger
 		removedTriggers = game.removeTriggers(permanent);
 		
         // Static
         removedStatics = game.removeAllStatics(permanent);
-		
+        
 		game.doAction(new MagicMoveCardAction(permanent,toLocation));
 		game.setStateCheckRequired();
 	}
