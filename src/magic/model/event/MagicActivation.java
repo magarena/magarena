@@ -4,6 +4,8 @@ import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
@@ -112,6 +114,10 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             if (!condition.accept(game,source)) {
                 return false;
             }
+        }
+        
+        if (source instanceof MagicPermanent) {
+        	return !((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities);
         }
 		
         // Check for legal targets.
