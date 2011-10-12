@@ -14,6 +14,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTapEvent;
@@ -29,14 +30,13 @@ public class Skirsdag_Cultist {
 				MagicCondition.ONE_CREATURE_CONDITION,
                 MagicManaCost.RED.getCondition()
             },
-            new MagicActivationHints(MagicTiming.Removal,false,1),
+            new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			final MagicPlayer player = source.getController();
 			return new MagicEvent[]{
-				new MagicTapEvent((MagicPermanent)source),
-				new MagicPayManaCostEvent(source,player,MagicManaCost.RED),
+				new MagicPayManaCostTapEvent(source,player,MagicManaCost.RED),
 				new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
 		}
 		@Override

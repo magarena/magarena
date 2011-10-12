@@ -14,6 +14,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -30,7 +31,9 @@ public class Mirror_Entity {
             "X/X") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X)};
+			return new MagicEvent[]{
+					new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X),
+					new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -12,6 +12,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 
 
@@ -27,7 +28,8 @@ public class Argent_Sphinx {
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			final MagicPlayer player=source.getController();
 			return new MagicEvent[]{					
-				new MagicPayManaCostEvent(source,player,MagicManaCost.BLUE)};
+				new MagicPayManaCostEvent(source,player,MagicManaCost.BLUE),
+				new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

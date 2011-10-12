@@ -22,7 +22,9 @@ public class MagicGainActivation extends MagicPermanentActivation {
 	
 	@Override
 	public MagicEvent[] getCostEvent(final MagicSource source) {
-		return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+		return new MagicEvent[]{
+				new MagicPayManaCostEvent(source,source.getController(),cost),
+				new MagicPlayAbilityEvent((MagicPermanent)source)};
 	}
 
 	@Override

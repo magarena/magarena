@@ -28,7 +28,7 @@ public class Barrage_Ogre {
 				MagicCondition.CAN_TAP_CONDITION,
 				MagicCondition.CONTROL_ARTIFACT_CONDITION
             },
-            new MagicActivationHints(MagicTiming.Removal,false,1),
+            new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {

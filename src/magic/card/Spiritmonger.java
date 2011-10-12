@@ -14,6 +14,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicTrigger;
@@ -31,7 +32,8 @@ public class Spiritmonger {
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),
-                MagicManaCost.GREEN)};
+                		MagicManaCost.GREEN),
+                new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 		@Override
 		public MagicEvent getPermanentEvent(

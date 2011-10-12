@@ -15,6 +15,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
@@ -33,6 +34,7 @@ public class Ghost_Council_of_Orzhova {
 			final MagicPlayer player=source.getController();
 			return new MagicEvent[]{					
 				new MagicPayManaCostEvent(source,player,MagicManaCost.ONE),
+				new MagicPlayAbilityEvent((MagicPermanent)source),
 				new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
 		}
 		@Override

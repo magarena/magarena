@@ -18,6 +18,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
@@ -64,7 +65,8 @@ public class Chimeric_Mass {
 			return new MagicEvent[]{new MagicPayManaCostEvent(
                     source,
                     source.getController(),
-                    MagicManaCost.ONE)};
+                    MagicManaCost.ONE),
+                    new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 
 		@Override
