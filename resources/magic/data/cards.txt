@@ -15266,3 +15266,30 @@ cost={1}{R}{R}
 pt=0/5
 ability=defender,reach
 timing=smain
+
+>Lowland Basilisk
+url=http://magiccards.info/sh/en/59.html
+image=http://magiccards.info/scans/en/sh/59.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Basilisk
+color=g
+converted=3
+cost={2}{G}
+pt=1/3
+timing=main
+
+>Sosuke, Son of Seshiro
+url=http://magiccards.info/chk/en/244.html
+image=http://magiccards.info/scans/en/chk/244.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Snake,Warrior
+color=g
+converted=4
+cost={2}{G}{G}
+pt=3/4
+static=player
+timing=main
