@@ -25,7 +25,7 @@ public enum MagicPermanentState {
 	DestroyAtEndOfCombat("destroy at end of combat","")
 	;
 
-	public static final int CLEANUP_MASK=
+	public static final int CLEANUP_MASK =
 		Tapped.getMask()|
 		Summoned.getMask()|
 		DoesNotUntapDuringNext.getMask()|
@@ -35,7 +35,8 @@ public enum MagicPermanentState {
 		ReturnToOwnerAtEndOfTurn.getMask()|
 		ExcludeManaSource.getMask()|
 		ExcludeFromCombat.getMask()|
-		Kicked.getMask();
+		Kicked.getMask()|
+		DestroyAtEndOfCombat.getMask();
 	
 	private final String description;
 	private final String text;
