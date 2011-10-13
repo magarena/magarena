@@ -231,6 +231,19 @@ public class TokenCardDefinitions {
 		}
 	};	
 	
+	public static final MagicCardDefinition GOBLIN_ROGUE_TOKEN_CARD = new MagicCardDefinition("Goblin Rogue", "Goblin Rogue1") {
+		public void initialize() {
+			setToken();
+			setValue(1);
+			addType(MagicType.Creature);
+			setSubTypes(new String[]{"Goblin","Rogue"});
+			setCost(MagicManaCost.ZERO);
+			setColor(MagicColor.Black);
+			setColoredType();
+			setPowerToughness(1,1);
+		}
+	};
+	
 	public static final MagicCardDefinition GOBLIN_SOLDIER_TOKEN_CARD = new MagicCardDefinition("Goblin Soldier") {
 		public void initialize() {
 			setToken();
@@ -573,6 +586,7 @@ public class TokenCardDefinitions {
 			GERM_TOKEN_CARD,
 			GOBLIN1_TOKEN_CARD,
 			GOBLIN2_TOKEN_CARD,
+			GOBLIN_ROGUE_TOKEN_CARD,
 			GOBLIN_SOLDIER_TOKEN_CARD,
 			GOLEM3_ARTIFACT_TOKEN_CARD,
 			GRIFFIN_TOKEN_CARD,

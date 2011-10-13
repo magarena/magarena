@@ -79,6 +79,7 @@ Elephant.jpg;http://magiccards.info/extras/token/worldwake/elephant.jpg
 Elf1.jpg;http://magiccards.info/extras/token/shadowmoor/elf-warrior-1.jpg
 Faerie Rogue.jpg;http://magiccards.info/extras/token/morningtide/faerie-rogue.jpg
 Germ.jpg;http://magiccards.info/extras/token/mirrodin-besieged/germ.jpg
+Goblin Rogue1.jpg;http://magiccards.info/extras/token/lorwyn/goblin-rogue.jpg
 Goblin Soldier.jpg;http://magiccards.info/extras/token/eventide/goblin-soldier.jpg
 Goblin1.jpg;http://img.photobucket.com/albums/v237/Xand0r/goblin-token_ravnica_300.jpg
 Goblin2.jpg;http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1157620938
