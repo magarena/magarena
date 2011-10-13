@@ -49,6 +49,7 @@ public class MagicEndOfCombatPhase extends MagicPhase {
                 game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
 			}
             for (final MagicPermanent permanent : toBeDestroyed) {
+            	game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DestroyAtEndOfCombat,false));
             	game.doAction(new MagicDestroyAction(permanent));
 			}
             for (final MagicPermanent permanent : toBeReturned) {
