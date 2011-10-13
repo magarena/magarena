@@ -15252,3 +15252,17 @@ cost={1}{U}
 pt=0/4
 ability=defender
 timing=smain
+
+>AEther Membrane
+url=http://magiccards.info/pc/en/93.html
+image=http://magiccards.info/scans/en/pc/93.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Wall
+color=r
+converted=3
+cost={1}{R}{R}
+pt=0/5
+ability=defender,reach
+timing=smain
