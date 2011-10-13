@@ -15224,3 +15224,31 @@ converted=6
 cost={4}{U}{U}
 pt=4/4
 timing=main
+
+>Kaijin of the Vanishing Touch
+url=http://magiccards.info/bok/en/39.html
+image=http://magiccards.info/scans/en/bok/39.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Spirit
+color=u
+converted=2
+cost={1}{U}
+pt=0/3
+ability=defender
+timing=smain
+
+>Wall of Tears
+url=http://magiccards.info/sh/en/50.html
+image=http://magiccards.info/scans/en/sh/50.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Wall
+color=u
+converted=2
+cost={1}{U}
+pt=0/4
+ability=defender
+timing=smain

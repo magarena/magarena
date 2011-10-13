@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicRemoveFromCombatAction;
 import magic.model.action.MagicRemoveFromPlayAction;
@@ -32,11 +33,14 @@ public class MagicEndOfCombatPhase extends MagicPhase {
 		for (final MagicPlayer player : game.getPlayers()) {
             final MagicPermanentList toBeExiled = new MagicPermanentList();
             final MagicPermanentList toBeDestroyed = new MagicPermanentList();
+            final MagicPermanentList toBeReturned = new MagicPermanentList();
             for (final MagicPermanent permanent : player.getPermanents()) {
                 if (permanent.hasState(MagicPermanentState.ExileAtEndOfCombat)) {
                     toBeExiled.add(permanent);
                 } else if (permanent.hasState(MagicPermanentState.DestroyAtEndOfCombat)) {
                 	toBeDestroyed.add(permanent);
+                } else if (permanent.hasState(MagicPermanentState.ReturnToHandOfOwnerAtEndOfCombat)) {
+                	toBeReturned.add(permanent);
                 } else if (permanent.isAttacking()||permanent.isBlocking()) {
                     game.doAction(new MagicRemoveFromCombatAction(permanent));
                 }
@@ -46,6 +50,12 @@ public class MagicEndOfCombatPhase extends MagicPhase {
 			}
             for (final MagicPermanent permanent : toBeDestroyed) {
             	game.doAction(new MagicDestroyAction(permanent));
+			}
+            for (final MagicPermanent permanent : toBeReturned) {
+            	game.logAppendMessage(
+            			permanent.getController(),
+            			"Return " + permanent + " to its owner's hand (end of combat).");
+    			game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
 			}
 		}
 	}
