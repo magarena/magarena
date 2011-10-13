@@ -820,6 +820,19 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_TREEFOLK_OR_WARRIOR_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return target.getController() == player && 
+					permanent.isCreature(game) && 
+					(permanent.hasSubType(MagicSubType.Treefolk,game) ||
+					permanent.hasSubType(MagicSubType.Warrior,game));
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_LEGENDARY_SAMURAI_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return target.getController() == player && 
