@@ -33,6 +33,7 @@ public class DownloadCardTextFile extends WebDownloader {
 			int iEnd = html.indexOf(endPattern, iStart);
 			foundText = html.substring(iStart, iEnd) + " ";
 			
+			foundText = foundText.replace((char) 195, 'A').replace((char) 8224, 'E');; // replace Æ character with AE
 			foundText = foundText.replaceAll("\\<br\\>", " "); // replace newlines
 			foundText = foundText.replaceAll("\\<[^\\>]*\\>", ""); // remove other html tags
 		}

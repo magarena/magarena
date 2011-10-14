@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.data.CardDefinitions;
 import magic.data.DownloadImageFile;
 import magic.data.DownloadMissingFiles;
 import magic.data.IconImages;
@@ -179,6 +180,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		// clear images that are set to "missing image" in cache
 		magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
 		frame.updateGameView();
+		
+		// reload text
+		CardDefinitions.getInstance().loadCardTexts();
                 
         IconImages.reloadSymbols();
       

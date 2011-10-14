@@ -118,7 +118,5 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 				}
 			}
 		}
-		
-		CardDefinitions.getInstance().loadCardTexts();
 	}
 }
