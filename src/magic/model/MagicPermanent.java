@@ -539,7 +539,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public void setExiledCard(final MagicCard card) {
-		exiledCard = card;
+        //only non tokens can be set
+        if (!card.isToken()) {
+    		exiledCard = card;
+        }
 	}
 	
 	
