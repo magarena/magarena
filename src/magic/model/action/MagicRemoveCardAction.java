@@ -42,12 +42,15 @@ public class MagicRemoveCardAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
+        //do nothing if index is invalid
+        if (index < 0) {
+            return;
+        }
+
 		final MagicPlayer owner=card.getOwner();
 		switch (locationType) {
 			case OwnersHand:
-                if (index >= 0) {
-    				owner.addCardToHand(card,index);
-                }
+    			owner.addCardToHand(card,index);
 				break;
 			case OwnersLibrary:
 				owner.getLibrary().add(index,card);

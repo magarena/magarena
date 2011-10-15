@@ -72,7 +72,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
 		if (index >= 0) {
             remove(index);
         } else {
-            System.err.println("WARNING. Card " + card.getName() + " not found in hand.");
+            System.err.println("WARNING. Card " + card.getName() + " not found.");
         }
 		return index;
 	}
