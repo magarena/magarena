@@ -46,7 +46,7 @@ public abstract class TestGameBuilder {
 	}
 
 	static void createAllTokens(final MagicGame game, final MagicPlayer player) {
-		for (final MagicCardDefinition cardDefinition : TokenCardDefinitions.TOKEN_CARDS) {
+		for (final MagicCardDefinition cardDefinition : TokenCardDefinitions.getInstance().getTokenDefinitions()) {
 			game.doAction(new MagicPlayTokenAction(player,cardDefinition));
 		}
 	}

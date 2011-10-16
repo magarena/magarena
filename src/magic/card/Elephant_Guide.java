@@ -36,7 +36,7 @@ public class Elephant_Guide {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.ELEPHANT_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Elephant")));
 		}
     };
 }

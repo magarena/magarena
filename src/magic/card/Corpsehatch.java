@@ -44,8 +44,8 @@ public class Corpsehatch {
                 }
 			});
 			final MagicPlayer player=(MagicPlayer)data[1];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ELDRAZI_SPAWN_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ELDRAZI_SPAWN_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Eldrazi Spawn")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Eldrazi Spawn")));
 		}
 	};
 }

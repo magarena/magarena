@@ -49,7 +49,7 @@ public class Stitcher_s_Apprentice {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicPlayer player = (MagicPlayer)data[1];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.HOMUNCULUS2_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Homunculus2")));
 			game.addEvent(new MagicEvent(
                     (MagicPermanent)data[0],
                     player,

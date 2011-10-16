@@ -41,7 +41,7 @@ public class Rapacious_One {
                 final Object data[],
                 final Object[] choiceResults) {
 			for (int count=(Integer)data[1];count>0;count--) {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.ELDRAZI_SPAWN_TOKEN_CARD));
+				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Eldrazi Spawn")));
 			}
 			
 		}		

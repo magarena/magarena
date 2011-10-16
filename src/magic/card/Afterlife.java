@@ -42,7 +42,7 @@ public class Afterlife {
                     final MagicPlayer controller=creature.getController();
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
                     game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicPlayTokenAction(controller,TokenCardDefinitions.SPIRIT2_TOKEN_CARD));
+                    game.doAction(new MagicPlayTokenAction(controller,TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
                 }
 			});
 		}

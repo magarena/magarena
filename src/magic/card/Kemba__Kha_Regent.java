@@ -32,7 +32,7 @@ public class Kemba__Kha_Regent {
 			final MagicPermanent permanent = (MagicPermanent)data[0];
 			int amount = permanent.getEquipmentPermanents().size();
 			for (;amount>0;amount--) {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.CAT2_TOKEN_CARD));
+				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.getInstance().getTokenDefinition("Cat2")));
 			}
 		}		
     };

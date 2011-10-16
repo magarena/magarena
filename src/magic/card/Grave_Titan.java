@@ -27,8 +27,8 @@ public class Grave_Titan {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
 		}		
     };
 
@@ -52,8 +52,8 @@ public class Grave_Titan {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
 		}		
     };
 }

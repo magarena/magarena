@@ -30,8 +30,8 @@ public class Dragon_Fodder {
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPlayer player=(MagicPlayer)data[1];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.GOBLIN1_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.GOBLIN1_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Goblin1")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Goblin1")));
 		}
 	};
 }

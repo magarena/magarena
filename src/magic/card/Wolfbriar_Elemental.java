@@ -32,7 +32,7 @@ public class Wolfbriar_Elemental {
                 game.doAction(new MagicPlayTokenAction(
                         player,
                         TokenCardDefinitions.
-                        WOLF_TOKEN_CARD));
+                        getInstance().getTokenDefinition("Wolf")));
             }
         }
     };

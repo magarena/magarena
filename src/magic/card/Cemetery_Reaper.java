@@ -70,7 +70,7 @@ public class Cemetery_Reaper {
                     final MagicPlayer player=(MagicPlayer)data[0];
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-                    game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+                    game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
                 }
 			});
 		}

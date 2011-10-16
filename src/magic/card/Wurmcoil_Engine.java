@@ -32,8 +32,8 @@ public class Wurmcoil_Engine {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.WURM1_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.WURM2_TOKEN_CARD));			
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Wurm1")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Wurm2")));			
 		}
     };
 }

@@ -31,8 +31,8 @@ public class Midnight_Haunting {
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPlayer player = (MagicPlayer)data[1];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.SPIRIT2_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.SPIRIT2_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
 		}
 	};
 }

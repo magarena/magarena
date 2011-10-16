@@ -58,7 +58,7 @@ public class Mobilization {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-        	game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.SOLDIER_TOKEN_CARD));
+        	game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Soldier")));
         }
 	};
 }

@@ -32,7 +32,7 @@ public class Sprouting_Thrinax {
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
 			for (int count=3;count>0;count--) {
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.SAPROLING_TOKEN_CARD));
+				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Saproling")));
 			}
 		}
     };

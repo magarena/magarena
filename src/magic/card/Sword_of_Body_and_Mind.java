@@ -34,7 +34,7 @@ public class Sword_of_Body_and_Mind {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.WOLF_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Wolf")));
 			game.doAction(new MagicMillLibraryAction((MagicPlayer)data[1],10));
 		}
     };

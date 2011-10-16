@@ -5,9 +5,11 @@ import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
+import magic.model.MagicManaType;
 import magic.model.MagicStaticType;
 import magic.model.MagicType;
 import magic.model.MagicSubType;
+import magic.model.event.MagicSacrificeManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 
@@ -19,6 +21,7 @@ import java.lang.reflect.Modifier;
 import java.net.Proxy;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -63,6 +66,8 @@ public class CardDefinitions {
 			card.setImageCount(Integer.parseInt(value));
         } else if ("cube".equals(property)) {
 			CubeDefinitions.getInstance().getCubeDefinition(value).add(card.getName());
+		} else if ("token".equals(property)) {
+			TokenCardDefinitions.getInstance().addTokenDefinition(card, value);
 		} else if ("value".equals(property)) {
 			card.setValue(Integer.parseInt(value));
 		} else if ("removal".equals(property)) {
@@ -130,6 +135,8 @@ public class CardDefinitions {
 			}
 		} else if ("mana_or_combat".equals(property)) {
             card.setExcludeManaOrCombat();
+		} else if ("sacrifice_colorless".equals(property)) {
+			card.addManaActivation(new MagicSacrificeManaActivation(Arrays.asList(MagicManaType.Colorless)));
 		} else {
             throw new RuntimeException("Unknown card property " + property + "=" + value);
 		}
@@ -146,19 +153,27 @@ public class CardDefinitions {
 	}
 
 	private static void checkCard(final MagicCardDefinition card) {
+		if(card == null) {
+			return;
+		}
+		
         //legendaries are at least Rare
-        if (card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
+        if (!card.isToken() && card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
             System.err.println("ERROR! Wrong rarity for " + card.getName());
             throw new RuntimeException(card.getName() + " is legendary but rarity is only " + card.getRarity());
         }
         //every card should have a timing hint
-        if (card.getTiming()==MagicTiming.None) {
+        if (!card.isToken() && card.getTiming()==MagicTiming.None) {
             System.err.println("ERROR! No timing hint for " + card.getName());
             throw new RuntimeException(card.getName() + " does not have a timing hint");
         }
 	}
 	
 	private void addDefinition(final MagicCardDefinition cardDefinition) {
+		if(cardDefinition == null) {
+			return;
+		}
+	
 		cardDefinition.setIndex(cards.size());
 		cards.add(cardDefinition);
 		cardsMap.put(cardDefinition.getFullName(),cardDefinition);
@@ -194,7 +209,10 @@ public class CardDefinitions {
 	}
 	
 	private void loadCardDefinitions(final String filename) {
-
+		loadCardDefinitions(filename, false);
+	}
+	
+	private void loadCardDefinitions(final String filename, final boolean addCardDefLast) {
 		// Cards.
 		final InputStream stream=this.getClass().getResourceAsStream(filename);
         String content = null;
@@ -206,17 +224,26 @@ public class CardDefinitions {
         }
 
         final Scanner sc = new Scanner(content);
-		MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
+		MagicCardDefinition cardDefinition = null;
 		while (sc.hasNextLine()) {
 			final String line=sc.nextLine().trim();
             if (line.length() == 0) {
                 //blank line
             } else if (line.startsWith(">")) {
                 //start of a card
+				
+				// check and add previous card
 				checkCard(cardDefinition);
+				if(addCardDefLast) {
+					// add previous card after setting all properties (for tokens)
+					addDefinition(cardDefinition);
+				}
+				
 				final String name=line.substring(1);
 				cardDefinition=new MagicCardDefinition(name);
-				addDefinition(cardDefinition);
+				if(!addCardDefLast) {
+					addDefinition(cardDefinition);
+				}
 			} else {
                 //property of a card
 				final String[] tokens = line.split("=");
@@ -229,7 +256,12 @@ public class CardDefinitions {
                 }
 			}
 		}
+		// check and add last card
 		checkCard(cardDefinition);
+		if(addCardDefLast) {
+			// add previous card after setting all properties (for tokens)
+			addDefinition(cardDefinition);
+		}
 	}
 	
 	public void loadCardDefinitions() {
@@ -239,7 +271,8 @@ public class CardDefinitions {
 		printStatistics();
 		
 		// add tokens.
-		addDefinitions(TokenCardDefinitions.TOKEN_CARDS);
+		loadCardDefinitions(TokenCardDefinitions.TOKEN_FILENAME, true); // add definiton after setting properties
+		
 		addDefinition(MagicCardDefinition.UNKNOWN);
 
 		System.err.println(getNumberOfCards()+ " card definitions");

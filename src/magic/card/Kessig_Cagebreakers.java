@@ -36,7 +36,7 @@ public class Kessig_Cagebreakers {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
 			for (int count=amount;count>0;count--) {
-				final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.WOLF_TOKEN_CARD,player);
+				final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.getInstance().getTokenDefinition("Wolf"),player);
 				game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
 			}
 		}		

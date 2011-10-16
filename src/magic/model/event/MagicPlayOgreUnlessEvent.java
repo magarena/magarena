@@ -19,7 +19,7 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				MagicEvent.payManaCost(game,(MagicPlayer)data[0],choiceResults,1);
 			} else {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.OGRE_TOKEN_CARD));
+				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[1],TokenCardDefinitions.getInstance().getTokenDefinition("Ogre")));
 			}
 		}
 	};

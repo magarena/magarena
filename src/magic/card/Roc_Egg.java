@@ -31,7 +31,7 @@ public class Roc_Egg {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.BIRD_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Bird")));
 		}
     };
 }

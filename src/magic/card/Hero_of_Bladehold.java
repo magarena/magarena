@@ -33,7 +33,7 @@ public class Hero_of_Bladehold {
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
 			for (int count=2;count>0;count--) {
-				final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.SOLDIER_TOKEN_CARD,player);
+				final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.getInstance().getTokenDefinition("Soldier"),player);
 				game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
 			}
 		}		

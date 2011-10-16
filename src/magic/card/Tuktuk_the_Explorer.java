@@ -32,7 +32,7 @@ public class Tuktuk_the_Explorer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.TUKTUK_THE_RETURNED_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Tuktuk the Returned")));
 		}
     };
 }

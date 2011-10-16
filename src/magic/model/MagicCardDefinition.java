@@ -61,7 +61,7 @@ public class MagicCardDefinition {
     private static int numCDAs = 0;
 
 	private final String name;
-	private final String fullName;
+	private String fullName;
 	private String imageURL;
 	private String cardInfoUrl = "";
 	private int imageCount = 1;
@@ -141,6 +141,10 @@ public class MagicCardDefinition {
 	
 	public String getFullName() {
 		return fullName;
+	}
+	
+	public void setFullName(String name) {
+		this.fullName = name;
 	}
 	
 	public void setIndex(final int index) {
@@ -239,7 +243,7 @@ public class MagicCardDefinition {
 		}
 	}
 				
-	protected void setToken() {
+	public void setToken() {
 		token=true;
 	}
 	
@@ -690,7 +694,7 @@ public class MagicCardDefinition {
 		return activations;
 	}
 	
-	protected void addManaActivation(final MagicManaActivation activation) {
+	public void addManaActivation(final MagicManaActivation activation) {
 		manaActivations.add(activation);
 	}
 	

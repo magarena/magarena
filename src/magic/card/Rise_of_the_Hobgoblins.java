@@ -100,7 +100,7 @@ public class Rise_of_the_Hobgoblins {
 				for (int count=payedManaCost.getX();count>0;count--) {
 					game.doAction(new MagicPlayTokenAction(
                                 player,
-                                TokenCardDefinitions.GOBLIN_SOLDIER_TOKEN_CARD));
+                                TokenCardDefinitions.getInstance().getTokenDefinition("Goblin Soldier")));
 				}
 			}
 		}

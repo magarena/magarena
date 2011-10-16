@@ -35,8 +35,8 @@ public class Fists_of_Ironwood {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.SAPROLING_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.SAPROLING_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Saproling")));
+			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Saproling")));
 		}
     };
 }

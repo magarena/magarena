@@ -57,8 +57,8 @@ public class Skeletal_Vampire {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.BAT_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.BAT_TOKEN_CARD));			}
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Bat")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Bat")));			}
 	};
 
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
@@ -118,8 +118,8 @@ public class Skeletal_Vampire {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.BAT_TOKEN_CARD));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.BAT_TOKEN_CARD));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Bat")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Bat")));
 		}		
     };
 }

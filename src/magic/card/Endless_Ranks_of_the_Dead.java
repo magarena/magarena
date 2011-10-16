@@ -37,7 +37,7 @@ public class Endless_Ranks_of_the_Dead {
                     game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL);
 			final int amount = targets.size() / 2;
 			for (int count=amount;count>0;count--) {
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.ZOMBIE_TOKEN_CARD));;
+				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));;
 			}
 		}		
     };

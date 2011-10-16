@@ -52,7 +52,7 @@ public class Rith__the_Awakener {
 				for (final MagicTarget target : targets) {
 					final MagicPermanent permanent=(MagicPermanent)target;
 					if (color.hasColor(permanent.getColorFlags(game))) {
-						game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.SAPROLING_TOKEN_CARD));
+						game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Saproling")));
 					}
 				}
 			}

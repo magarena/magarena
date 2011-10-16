@@ -45,7 +45,7 @@ public class Zombie_Infestation {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			game.doAction(new MagicPlayTokenAction(
                     player,
-                    TokenCardDefinitions.ZOMBIE_TOKEN_CARD));
+                    TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
 		}
 	};
 }

@@ -43,7 +43,7 @@ public class Timely_Reinforcements {
 			if (player.getNrOfPermanentsWithType(MagicType.Creature,game) < 
 					game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature,game)) {
 				for (int count = 3; count > 0; count--) {
-					game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.SOLDIER_TOKEN_CARD));
+					game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Soldier")));
 				}
 			}
 		}

@@ -39,7 +39,7 @@ public class Avenger_of_Zendikar {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			int amount = player.getNrOfPermanentsWithType(MagicType.Land,game);
 			for (;amount>0;amount--) {
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.PLANT_TOKEN_CARD));
+				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Plant")));
 			}
 		}		
     };

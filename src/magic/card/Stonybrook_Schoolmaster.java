@@ -28,7 +28,7 @@ public class Stonybrook_Schoolmaster {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.MERFOLK_WIZARD_TOKEN_CARD));
+    		game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Merfolk Wizard")));
     	}
     };
 }
