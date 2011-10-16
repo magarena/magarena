@@ -252,7 +252,13 @@ public class CardDefinitions {
                 } else if (tokens.length == 2) {
                     setProperty(cardDefinition, tokens[0], tokens[1]);
                 } else {
-                    throw new RuntimeException("Malformed line: " + line);
+					if(tokens.length > 0 && ("image".equals(tokens[0]) || "url".equals(tokens[0]))) {
+						// urls may have = signs in it
+						int i = line.indexOf("=");
+						setProperty(cardDefinition, tokens[0], line.substring(i+1));
+					} else {
+						throw new RuntimeException("Malformed line: " + line);
+					}
                 }
 			}
 		}

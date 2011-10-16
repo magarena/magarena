@@ -77,8 +77,12 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 		
 		// download card images and texts
 		final File cardsPathFile=new File(gamePathFile, CardDefinitions.CARD_IMAGE_FOLDER);
+		final File tokensPathFile = new File(gamePathFile, CardDefinitions.TOKEN_IMAGE_FOLDER);
 		final File textPathFile = new File(gamePathFile, CardDefinitions.CARD_TEXT_FOLDER);
 		
+		if (!tokensPathFile.mkdir()) {
+            System.err.println("WARNING. Unable to create " + tokensPathFile);
+        }
         if (!textPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + textPathFile);
         }
@@ -87,7 +91,9 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 			// card image
 			final String imageURL = cardDefinition.getImageURL();
 			if (imageURL != null) {
-				final File imageFile=new File(cardsPathFile,cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT);
+				final File imageFile = cardDefinition.isToken()? 
+					new File(tokensPathFile, cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT) :
+					new File(cardsPathFile, cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT);
 
                 //download if the file does not exists OR it is zero length OR it is outdated
 				if (!imageFile.exists() || 
