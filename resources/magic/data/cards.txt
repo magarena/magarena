@@ -11168,6 +11168,7 @@ image=http://magiccards.info/scans/en/mt/58.jpg
 value=4
 rarity=R
 type=Enchantment
+subtype=Faerie
 color=b
 converted=2
 cost={1}{B}
