@@ -35,7 +35,7 @@ public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Scion of Oona", "Scion of Oona", "Scion of Oona", "Scion of Oona", "Bitterblossom", "Bitterblossom", "Bitterblossom", "Terror", "Damnation"};
+		String[] cards = {"Scion of Oona", "Scion of Oona", "Scion of Oona", "Scion of Oona", "Bitterblossom", "Bitterblossom", "Bitterblossom", "Terror", "Damnation", "Mistbind Clique", "Mistbind Clique", "Mistbind Clique"};
 		addRequiredCards(deck, cards);
 	}
 	
