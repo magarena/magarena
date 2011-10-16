@@ -37,14 +37,14 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	
 	private static final int SPACING = 10;
 	private static final String PLAY_BUTTON_TEXT = "Play Game";
-	private static final String NEW_BUTTON_TEXT = "New Duel";
+	private static final String RESET_BUTTON_TEXT = "Reset Duel";
 	private static final String EDIT_BUTTON_TEXT = "Edit Deck";
 	
 	private final MagicFrame frame;
 	private final MagicTournament tournament;
 	private final JTabbedPane tabbedPane;
 	private final JButton playButton;
-	private final JButton newButton;
+	private final JButton resetButton;
 	private final ZoneBackgroundLabel backgroundImage;
 	private final DeckStrengthViewer strengthViewer;
 	private final CardViewer cardViewer;
@@ -66,12 +66,12 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
 		buttonsPanel.setOpaque(false);
 		
-		// new button
-		newButton=new JButton(NEW_BUTTON_TEXT);
-		newButton.setFont(FontsAndBorders.FONT2);
-		newButton.addActionListener(this);
-		newButton.setFocusable(false);
-		buttonsPanel.add(newButton);
+		// reset button
+		resetButton=new JButton(RESET_BUTTON_TEXT);
+		resetButton.setFont(FontsAndBorders.FONT2);
+		resetButton.addActionListener(this);
+		resetButton.setFocusable(false);
+		buttonsPanel.add(resetButton);
 		
 		buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 		
@@ -282,9 +282,8 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		final Object source=event.getSource();
 		if (source==playButton) {
 			frame.nextGame();
-		} else if (source==newButton) {
-			final TournamentConfig config=TournamentConfig.getInstance();
-			frame.newTournament(config);
+		} else if (source==resetButton) {
+			frame.resetTournament();
 		}
 	}
 }
