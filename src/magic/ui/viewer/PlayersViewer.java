@@ -1,7 +1,7 @@
 package magic.ui.viewer;
 
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicTournament;
+import magic.model.MagicDuel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PlayerAvatarPanel;
 
@@ -21,13 +21,13 @@ public class PlayersViewer extends JPanel {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private final MagicTournament tournament;
+	private final MagicDuel duel;
 	private final List<ChangeListener> changeListeners;
 	private PlayerAvatarPanel playerPanels[];
 	
-	public PlayersViewer(final MagicTournament tournament) {
+	public PlayersViewer(final MagicDuel duel) {
 		
-		this.tournament=tournament;
+		this.duel=duel;
 		changeListeners=new ArrayList<ChangeListener>();
 		createViewer();
 	}
@@ -45,7 +45,7 @@ public class PlayersViewer extends JPanel {
 		}
 		playerPanels[index].setSelected(true);
 		
-		final MagicPlayerDefinition player=tournament.getPlayer(index);
+		final MagicPlayerDefinition player=duel.getPlayer(index);
 		final ChangeEvent event=new ChangeEvent(player);
 		for (final ChangeListener listener : changeListeners) {
 			
@@ -67,7 +67,7 @@ public class PlayersViewer extends JPanel {
 		scrollPane.getVerticalScrollBar().setBlockIncrement(100);
 		add(scrollPane,BorderLayout.CENTER);
 		
-		final MagicPlayerDefinition players[]=tournament.getPlayers();
+		final MagicPlayerDefinition players[]=duel.getPlayers();
 		final JPanel scrollPanel=new JPanel();
 		scrollPanel.setOpaque(false);
 		scrollPanel.setLayout(new BorderLayout());
@@ -94,11 +94,11 @@ public class PlayersViewer extends JPanel {
 			}
 		};
 		
-		playerPanels=new PlayerAvatarPanel[tournament.getNrOfPlayers()];
+		playerPanels=new PlayerAvatarPanel[duel.getNrOfPlayers()];
 		for (int index=0;index<playerPanels.length;index++) {
 			
 			playerPanels[index]=new PlayerAvatarPanel(index);
-			playerPanels[index].setPlayerDefinition(tournament.getPlayer(index));
+			playerPanels[index].setPlayerDefinition(duel.getPlayer(index));
 			playerPanels[index].addMouseListener(playerListener);
 			playersPanel.add(playerPanels[index]);
 		}

@@ -10,16 +10,16 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 
-public class TournamentConfig {
+public class DuelConfig {
 
-	private static final TournamentConfig INSTANCE=new TournamentConfig();
+	private static final DuelConfig INSTANCE=new DuelConfig();
 
 	private static final String ANY_DECK="@";
 	private static final String ANY_THREE="***";
 	private static final String ANY_TWO="**";
 	private static final String ANY_ONE="*";
 	
-	private static final String CONFIG_FILENAME="tournament.cfg";
+	private static final String CONFIG_FILENAME="duel.cfg";
 	private static final String AVATAR="avatar";
 	private static final String NAME="name";
 	private static final String START_LIFE="life";
@@ -40,18 +40,18 @@ public class TournamentConfig {
 	private String cube=CubeDefinitions.DEFAULT_NAME;
 	private String ai="minimax";
 	
-	public TournamentConfig() {
+	public DuelConfig() {
 		
 	}
 	
-	public TournamentConfig(final TournamentConfig tournamentConfig) {
-		avatar=tournamentConfig.avatar;
-		startLife=tournamentConfig.startLife;
-		handSize=tournamentConfig.handSize;
-		games=tournamentConfig.games;
-		playerColors=tournamentConfig.playerColors;
-		opponentColors=tournamentConfig.opponentColors;
-        ai=tournamentConfig.ai;
+	public DuelConfig(final DuelConfig duelConfig) {
+		avatar=duelConfig.avatar;
+		startLife=duelConfig.startLife;
+		handSize=duelConfig.handSize;
+		games=duelConfig.games;
+		playerColors=duelConfig.playerColors;
+		opponentColors=duelConfig.opponentColors;
+        ai=duelConfig.ai;
 	}
 	
 	public int getAvatar() {
@@ -187,10 +187,10 @@ public class TournamentConfig {
         final Properties properties=new Properties();
         save(properties);
         try { //save config
-            FileIO.toFile(getConfigFile(), properties, "Tournament configuration"); 
-            System.err.println("Saved tournament config");
+            FileIO.toFile(getConfigFile(), properties, "Duel configuration"); 
+            System.err.println("Saved duel config");
         } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to save tournament config");
+            System.err.println("ERROR! Unable to save duel config");
         }
 	}
 	
@@ -198,7 +198,7 @@ public class TournamentConfig {
 		return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
 	}
 	
-	public static TournamentConfig getInstance() {
+	public static DuelConfig getInstance() {
 		return INSTANCE;
 	}
 }

@@ -2,18 +2,18 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.data.CubeDefinitions;
-import magic.data.TournamentConfig;
+import magic.data.DuelConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicTournament;
+import magic.model.MagicDuel;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
-import magic.ui.viewer.TournamentDifficultyViewer;
+import magic.ui.viewer.DuelDifficultyViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 
@@ -31,7 +31,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
 
-public class TournamentPanel extends JPanel implements ActionListener {
+public class DuelPanel extends JPanel implements ActionListener {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -41,22 +41,22 @@ public class TournamentPanel extends JPanel implements ActionListener {
 	private static final String EDIT_BUTTON_TEXT = "Edit Deck";
 	
 	private final MagicFrame frame;
-	private final MagicTournament tournament;
+	private final MagicDuel duel;
 	private final JTabbedPane tabbedPane;
 	private final JButton playButton;
 	private final JButton resetButton;
 	private final ZoneBackgroundLabel backgroundImage;
 	private final DeckStrengthViewer strengthViewer;
 	private final CardViewer cardViewer;
-	private final TournamentDifficultyViewer tournamentDifficultyViewer;
+	private final DuelDifficultyViewer duelDifficultyViewer;
 	private final CardTable cardTables[];
 	private final JButton editButtons[];
 	private final DeckStatisticsViewer statsViewers[];
 
-	public TournamentPanel(final MagicFrame frame,final MagicTournament tournament) {
+	public DuelPanel(final MagicFrame frame,final MagicDuel duel) {
 
 		this.frame=frame;
-		this.tournament=tournament;
+		this.duel=duel;
 		
 		final SpringLayout springLayout = new SpringLayout();
 		setLayout(springLayout);
@@ -80,7 +80,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		playButton.setFont(FontsAndBorders.FONT2);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
-		playButton.setEnabled(!tournament.isFinished());
+		playButton.setEnabled(!duel.isFinished());
 		buttonsPanel.add(playButton);
 		
 		// center buttons
@@ -105,10 +105,10 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		leftPanel.add(Box.createVerticalStrut(SPACING));
 		
 		// games won info
-		tournamentDifficultyViewer=new TournamentDifficultyViewer(tournament);
-		tournamentDifficultyViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-		tournamentDifficultyViewer.setMaximumSize(TournamentDifficultyViewer.PREFERRED_SIZE);
-		leftPanel.add(tournamentDifficultyViewer);	
+		duelDifficultyViewer=new DuelDifficultyViewer(duel);
+		duelDifficultyViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
+		duelDifficultyViewer.setMaximumSize(DuelDifficultyViewer.PREFERRED_SIZE);
+		leftPanel.add(duelDifficultyViewer);	
 		
 		// add scrolling to left side
 		JScrollPane leftScrollPane = new JScrollPane(leftPanel);
@@ -122,13 +122,13 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		
-		MagicPlayerDefinition players[] = tournament.getPlayers();
+		MagicPlayerDefinition players[] = duel.getPlayers();
 		cardTables = new CardTable[players.length];
 		statsViewers = new DeckStatisticsViewer[players.length];
 		editButtons = new JButton[players.length];
 		
 		// deck strength tester
-		strengthViewer=new DeckStrengthViewer(tournament);
+		strengthViewer=new DeckStrengthViewer(duel);
 		strengthViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 		
 		for(int i = 0; i < players.length; i++) {
@@ -142,7 +142,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 			
 			// edit deck button
 			final MagicCubeDefinition cubeDefinition=
-				CubeDefinitions.getInstance().getCubeDefinition(tournament.getConfiguration().getCube());
+				CubeDefinitions.getInstance().getCubeDefinition(duel.getConfiguration().getCube());
 				
 			editButtons[i] = new JButton(EDIT_BUTTON_TEXT);
 			editButtons[i].setFont(FontsAndBorders.FONT2);
@@ -258,19 +258,19 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		return frame;
 	}
 	
-	public MagicTournament getTournament() {
-		return tournament;
+	public MagicDuel getDuel() {
+		return duel;
 	}
 	
 	public MagicPlayerDefinition getSelectedPlayer() {
-		return tournament.getPlayers()[tabbedPane.getSelectedIndex()];
+		return duel.getPlayers()[tabbedPane.getSelectedIndex()];
 	}
 	
 	public void updateDecksAfterEdit() {
 		for (int i = 0; i < statsViewers.length; i++) {
-			cardTables[i].setCards(tournament.getPlayers()[i].getDeck());
-			cardTables[i].setTitle(generateTitle(tournament.getPlayers()[i].getDeck()));
-			statsViewers[i].setPlayer(tournament.getPlayers()[i]);
+			cardTables[i].setCards(duel.getPlayers()[i].getDeck());
+			cardTables[i].setTitle(generateTitle(duel.getPlayers()[i].getDeck()));
+			statsViewers[i].setPlayer(duel.getPlayers()[i]);
 		}
 	}
 
@@ -283,7 +283,7 @@ public class TournamentPanel extends JPanel implements ActionListener {
 		if (source==playButton) {
 			frame.nextGame();
 		} else if (source==resetButton) {
-			frame.resetTournament();
+			frame.resetDuel();
 		}
 	}
 }

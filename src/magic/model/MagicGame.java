@@ -55,7 +55,7 @@ public class MagicGame {
     private static int COUNT = 0;
     private static MagicGame INSTANCE;
 	
-	private final MagicTournament tournament;
+	private final MagicDuel duel;
 	private final MagicPlayer players[];
 	private final MagicPermanentTriggerMap triggers;
 	private final MagicPermanentTriggerList turnTriggers;
@@ -104,25 +104,25 @@ public class MagicGame {
     }
 
     static MagicGame create(
-            final MagicTournament tournament,
+            final MagicDuel duel,
             final MagicGameplay gameplay,
             final MagicPlayer players[],
             final MagicPlayer startPlayer,
             final boolean sound) {
         COUNT++;
-        INSTANCE = new MagicGame(tournament, gameplay, players, startPlayer, sound);
+        INSTANCE = new MagicGame(duel, gameplay, players, startPlayer, sound);
         return INSTANCE;
     }
 
 	private MagicGame(
-            final MagicTournament tournament,
+            final MagicDuel duel,
             final MagicGameplay gameplay,
             final MagicPlayer players[],
             final MagicPlayer startPlayer,
             final boolean sound) {
 
 		artificial=false;
-		this.tournament=tournament;
+		this.duel=duel;
 		this.gameplay=gameplay;
 		this.players=players;
 		this.sound=sound;
@@ -150,7 +150,7 @@ public class MagicGame {
 		sound=false;
        
         //copy the reference, these are singletons
-		this.tournament=game.tournament;
+		this.duel=game.duel;
 		this.gameplay=game.gameplay;
 		this.phase=game.phase;
 		this.step=game.step;
@@ -323,11 +323,11 @@ public class MagicGame {
 	}
 	
 	private int getArtificialLevel() {
-		return tournament.getDifficulty();
+		return duel.getDifficulty();
 	}
 	
     public int getArtificialLevel(final int idx) {
-		return tournament.getDifficulty(idx);
+		return duel.getDifficulty(idx);
 	}
 
 	public boolean isArtificial() {
@@ -646,12 +646,12 @@ public class MagicGame {
 		doAction(new MagicExecuteFirstEventAction(choiceResults));
 	}
 	
-	public MagicTournament getTournament() {
-		return tournament;
+	public MagicDuel getDuel() {
+		return duel;
 	}
 	
-	public void advanceTournament() {
-		tournament.advance(losingPlayer!=players[0]);
+	public void advanceDuel() {
+		duel.advance(losingPlayer!=players[0]);
 	}
 	
 	public MagicPlayer[] getPlayers() {

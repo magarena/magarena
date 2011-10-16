@@ -381,7 +381,7 @@ public class GameController {
 
 		//dynamically get the AI based on the player's index
 		final MagicPlayer player = event.getPlayer();
-		final MagicAI ai = game.getTournament().getAIs()[player.getIndex()];
+		final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
 		return ai.findNextEventChoiceResults(game, player);
 	}
 
@@ -450,7 +450,7 @@ public class GameController {
 		while (running.get()) {
 			if (game.isFinished()) {
 				if (testMode) {
-					game.advanceTournament();
+					game.advanceDuel();
 					return;
 				}
 							
@@ -475,7 +475,7 @@ public class GameController {
 					update();
 					continue;
 				} else {
-					game.advanceTournament();
+					game.advanceDuel();
                     SwingUtilities.invokeLater(new Runnable() {
                         public void run() {
                             gamePanel.close();

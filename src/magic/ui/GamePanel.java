@@ -11,7 +11,7 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.viewer.BattlefieldViewer;
 import magic.ui.viewer.CardViewer;
-import magic.ui.viewer.GameTournamentViewer;
+import magic.ui.viewer.GameDuelViewer;
 import magic.ui.viewer.HandGraveyardExileViewer;
 import magic.ui.viewer.ImageBattlefieldViewer;
 import magic.ui.viewer.ImageCombatViewer;
@@ -57,7 +57,7 @@ public final class GamePanel extends JPanel {
 	private final PlayerViewer playerViewer;
 	private final PlayerViewer opponentViewer;
 	private final CardViewer cardViewer;
-	private final GameTournamentViewer gameTournamentViewer;
+	private final GameDuelViewer gameDuelViewer;
 	private final LogBookViewer logBookViewer;
 	private final JToggleButton logBookButton;
 	private final JToggleButton textViewButton;
@@ -119,9 +119,9 @@ public final class GamePanel extends JPanel {
 		opponentViewer=new PlayerViewer(viewerInfo,controller,true);
 		add(opponentViewer);
 		
-		gameTournamentViewer=new GameTournamentViewer(game,controller);
-		controller.setGameViewer(gameTournamentViewer.getGameViewer());
-		add(gameTournamentViewer);
+		gameDuelViewer=new GameDuelViewer(game,controller);
+		controller.setGameViewer(gameDuelViewer.getGameViewer());
+		add(gameDuelViewer);
 						
 		logBookButton=new JToggleButton(theme.getIcon(Theme.ICON_MESSAGE),false);
 		logBookButton.setFocusable(false);
@@ -245,11 +245,11 @@ public final class GamePanel extends JPanel {
 	}
 	
 	public boolean canClickAction() {
-		return gameTournamentViewer.getGameViewer().isActionEnabled();
+		return gameDuelViewer.getGameViewer().isActionEnabled();
 	}
 	
 	public boolean canClickUndo() {
-		return gameTournamentViewer.getGameViewer().isUndoEnabled();
+		return gameDuelViewer.getGameViewer().isUndoEnabled();
 	}
 		
 	/* private void switchKeyPressed() {
@@ -305,7 +305,7 @@ public final class GamePanel extends JPanel {
 	public void update() {
 		playerViewer.update();
 		opponentViewer.update();
-		gameTournamentViewer.update();
+		gameDuelViewer.update();
 		
 		if (isTextView()) {
 			handGraveyardViewer.update();	
@@ -357,7 +357,7 @@ public final class GamePanel extends JPanel {
 	}
 	
 	public void close() {
-		frame.showTournament();
+		frame.showDuel();
 	}
 	
 	public void resizeComponents() {
@@ -370,7 +370,7 @@ public final class GamePanel extends JPanel {
 		playerViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
 		opponentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameOpponentViewer));
 		opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
-		gameTournamentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameTournamentViewer));
+		gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
 		logBookButton.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookButton));
 		textViewButton.setBounds(result.getBoundary(ResolutionProfileType.TextViewButton));
 		logBookViewer.setBounds(result.getBoundary(ResolutionProfileType.GameLogBookViewer));

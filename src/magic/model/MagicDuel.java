@@ -5,7 +5,7 @@ import magic.ai.MagicAI;
 import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
-import magic.data.TournamentConfig;
+import magic.data.DuelConfig;
 import magic.generator.DefaultDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.ui.theme.Theme;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class MagicTournament {
+public class MagicDuel {
 			
 	private static final String OPPONENT="opponent";
 	private static final String GAME="game";
@@ -26,7 +26,7 @@ public class MagicTournament {
 	private static final String START="start";
 	private static final String COMPUTER="Computer";
 	
-	private final TournamentConfig configuration;
+	private final DuelConfig configuration;
 	private MagicPlayerDefinition playerDefinitions[];
 	private MagicAI ais[];
 	private int opponentIndex;
@@ -36,22 +36,22 @@ public class MagicTournament {
 	private int startPlayer;
 	private final int[] difficulty = new int[2];
 	
-	public MagicTournament(final TournamentConfig configuration) {
+	public MagicDuel(final DuelConfig configuration) {
 		this.configuration=configuration;
 		ais=configuration.getPlayerAIs();
 		restart();
 	}
 	
-	public MagicTournament() {
-		this(new TournamentConfig());
+	public MagicDuel() {
+		this(new DuelConfig());
 	}
 	
-	public MagicTournament(final TournamentConfig configuration,final MagicTournament tournament) {
+	public MagicDuel(final DuelConfig configuration,final MagicDuel duel) {
 		this(configuration);
-		playerDefinitions=tournament.playerDefinitions;
+		playerDefinitions=duel.playerDefinitions;
 	}
 	
-	public TournamentConfig getConfiguration() {
+	public DuelConfig getConfiguration() {
 		return configuration;
 	}
 	
@@ -226,8 +226,8 @@ public class MagicTournament {
 		buildDecks();
 	}
 	
-	public static final File getTournamentFile() {
-		return new File(MagicMain.getGamePath(),"tournament.txt");		
+	public static final File getDuelFile() {
+		return new File(MagicMain.getGamePath(),"duel.txt");		
 	}
 	
 	private static String getPlayerPrefix(final int index) {
@@ -252,10 +252,10 @@ public class MagicTournament {
         final Properties properties=new Properties();
         save(properties);
         try { //save to file 
-            magic.data.FileIO.toFile(file, properties, "Tournament");
-            System.err.println("Saved tournament");
+            magic.data.FileIO.toFile(file, properties, "Duel");
+            System.err.println("Saved duel");
         } catch (final IOException ex) {
-            System.err.println("ERROR! Unable save tournament to " + file);
+            System.err.println("ERROR! Unable save duel to " + file);
         }
 	}
 	

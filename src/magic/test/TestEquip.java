@@ -6,26 +6,26 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicTournament;
+import magic.model.MagicDuel;
 import magic.model.phase.MagicMainPhase;
 
 // demonstrates MiniMax AI also moves equipment between creatures until all mana is spend.
 // interesting is how "Strider Harness" shows the bug, but "Barbed Battlegear" does not.
 class TestEquip extends TestGameBuilder {    
     public MagicGame getGame() {
-		final MagicTournament tournament=new MagicTournament();
-		tournament.setDifficulty(6);
+		final MagicDuel duel=new MagicDuel();
+		duel.setDifficulty(6);
 		
 		final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
 		final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
 		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
-		tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-		tournament.setStartPlayer(1);
+		duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
+		duel.setStartPlayer(1);
 		
 		// MCTS AI doesn't use the equipment
-		//tournament.setAIs(new MagicAI[]{null, new MCTSAI(true, false)});
+		//duel.setAIs(new MagicAI[]{null, new MCTSAI(true, false)});
 		
-		final MagicGame game=tournament.nextGame(true);
+		final MagicGame game=duel.nextGame(true);
 		game.setPhase(MagicMainPhase.getFirstInstance());
 		final MagicPlayer player=game.getPlayer(0);
 		final MagicPlayer opponent=game.getPlayer(1);

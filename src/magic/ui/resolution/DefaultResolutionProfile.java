@@ -11,8 +11,8 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 
 	private static final int PLAYERS_VIEWER_WIDTH=134;
 	private static final int DECK_VIEWER_WIDTH=350;
-	private static final int TOURNAMENT_VIEWER_WIDTH=270;
-	private static final int TOURNAMENT_VIEWER_HEIGHT=130;
+	private static final int DUEL_VIEWER_WIDTH=270;
+	private static final int DUEL_VIEWER_HEIGHT=130;
 	private static final int DECK_STATISTICS_VIEWER_HEIGHT=200;
 	private static final int DECK_STRENGTH_VIEWER_HEIGHT=160;
 	private static final int PLAY_BUTTON_HEIGHT=50;
@@ -46,41 +46,41 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 			}
 		}
 		
-		// Tournament
+		// Duel
 		final int maxHeight=size.height-spacing*2;
 		int x=spacing;
-		result.setBoundary(ResolutionProfileType.TournamentPlayersViewer,
+		result.setBoundary(ResolutionProfileType.DuelPlayersViewer,
                 new Rectangle(x,spacing,PLAYERS_VIEWER_WIDTH,maxHeight - PLAY_BUTTON_HEIGHT - spacing));
 		int y = size.height;
         y -= spacing + PLAY_BUTTON_HEIGHT;
-        result.setBoundary(ResolutionProfileType.TournamentNewButton,
+        result.setBoundary(ResolutionProfileType.DuelNewButton,
                 new Rectangle(x,y,PLAYERS_VIEWER_WIDTH,PLAY_BUTTON_HEIGHT));
 
         x+=PLAYERS_VIEWER_WIDTH+spacing;
 		final int deckWidth=Math.min(
                 DECK_VIEWER_WIDTH,
-                size.width-spacing*5-PLAYERS_VIEWER_WIDTH-CARD_VIEWER_WIDTH-TOURNAMENT_VIEWER_WIDTH);
-		result.setBoundary(ResolutionProfileType.TournamentDeckViewers,
+                size.width-spacing*5-PLAYERS_VIEWER_WIDTH-CARD_VIEWER_WIDTH-DUEL_VIEWER_WIDTH);
+		result.setBoundary(ResolutionProfileType.DuelDeckViewers,
                 new Rectangle(x,spacing,deckWidth,maxHeight - PLAY_BUTTON_HEIGHT - spacing));
 		y = size.height;
         y -= spacing + PLAY_BUTTON_HEIGHT;
-		result.setBoundary(ResolutionProfileType.TournamentPlayButton,
+		result.setBoundary(ResolutionProfileType.DuelPlayButton,
                 new Rectangle(x,y,deckWidth,PLAY_BUTTON_HEIGHT));
 
 		x+=deckWidth+spacing;
-		result.setBoundary(ResolutionProfileType.TournamentCardViewer,
+		result.setBoundary(ResolutionProfileType.DuelCardViewer,
                 new Rectangle(x,spacing,CARD_VIEWER_WIDTH,CARD_VIEWER_HEIGHT));
 
-		x=size.width-spacing-TOURNAMENT_VIEWER_WIDTH;
+		x=size.width-spacing-DUEL_VIEWER_WIDTH;
 		y=spacing;
-		result.setBoundary(ResolutionProfileType.TournamentDeckStatisticsViewer,
-                new Rectangle(x,y,TOURNAMENT_VIEWER_WIDTH,DECK_STATISTICS_VIEWER_HEIGHT));
+		result.setBoundary(ResolutionProfileType.DuelDeckStatisticsViewer,
+                new Rectangle(x,y,DUEL_VIEWER_WIDTH,DECK_STATISTICS_VIEWER_HEIGHT));
 		y+=DECK_STATISTICS_VIEWER_HEIGHT+spacing;
-		result.setBoundary(ResolutionProfileType.TournamentDeckStrengthViewer,
-                new Rectangle(x,y,TOURNAMENT_VIEWER_WIDTH,DECK_STRENGTH_VIEWER_HEIGHT));
+		result.setBoundary(ResolutionProfileType.DuelDeckStrengthViewer,
+                new Rectangle(x,y,DUEL_VIEWER_WIDTH,DECK_STRENGTH_VIEWER_HEIGHT));
 		y+=DECK_STRENGTH_VIEWER_HEIGHT+spacing;
-		result.setBoundary(ResolutionProfileType.TournamentDifficultyViewer,
-                new Rectangle(x,y,TOURNAMENT_VIEWER_WIDTH,TOURNAMENT_VIEWER_HEIGHT));
+		result.setBoundary(ResolutionProfileType.DuelDifficultyViewer,
+                new Rectangle(x,y,DUEL_VIEWER_WIDTH,DUEL_VIEWER_HEIGHT));
 					
 		// Game
 		x=spacing;
@@ -128,9 +128,9 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 		result.setBoundary(ResolutionProfileType.GamePlayerViewer,
                 new Rectangle(x,y,PLAYER_VIEWER_WIDTH,playerHeight));
 
-        //tournament viewer
+        // duel viewer
         y-=GAME_VIEWER_HEIGHT+spacing;
-		result.setBoundary(ResolutionProfileType.GameTournamentViewer,
+		result.setBoundary(ResolutionProfileType.GameDuelViewer,
                 new Rectangle(x,y,PLAYER_VIEWER_WIDTH,GAME_VIEWER_HEIGHT));
 
 		x+=PLAYER_VIEWER_WIDTH+spacing+offset;

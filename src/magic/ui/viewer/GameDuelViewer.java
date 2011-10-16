@@ -12,20 +12,20 @@ import javax.swing.event.ChangeListener;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 
-public class GameTournamentViewer extends JPanel implements ChangeListener {
+public class GameDuelViewer extends JPanel implements ChangeListener {
 	
 	private static final long serialVersionUID = 1L;
 	
 	private final GameViewer gameViewer;
-	private final TournamentViewer tournamentViewer;
+	private final DuelViewer duelViewer;
 	private final JPanel cardPanel;
 	private final CardLayout cardLayout;
 	private final TitleBar titleBar;
 	private final TabSelector tabSelector;
 	
-	public GameTournamentViewer(final MagicGame game,final GameController controller) {
+	public GameDuelViewer(final MagicGame game,final GameController controller) {
 		gameViewer=new GameViewer(game,controller);
-		tournamentViewer=new TournamentViewer(game.getTournament());
+		duelViewer=new DuelViewer(game.getDuel());
 
 		setSize(320,125);
 		setLayout(new BorderLayout());
@@ -35,7 +35,7 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 		cardLayout=new CardLayout();
 		cardPanel=new JPanel(cardLayout);
 		cardPanel.add(gameViewer,"0");
-		cardPanel.add(tournamentViewer,"1");
+		cardPanel.add(duelViewer,"1");
 		add(cardPanel,BorderLayout.CENTER);
 
 		tabSelector=new TabSelector(this,false);
@@ -54,7 +54,7 @@ public class GameTournamentViewer extends JPanel implements ChangeListener {
 				gameViewer.setTitle(titleBar);
 				break;
 			case 1:
-				TournamentViewer.setTitle(titleBar);
+				DuelViewer.setTitle(titleBar);
 				break;
 		}		
 	}

@@ -110,9 +110,9 @@ public class VersionPanel extends JPanel implements ActionListener {
 		
 		final Object source=event.getSource();
 		if (source==newButton) {
-			frame.showNewTournamentDialog();
+			frame.showNewDuelDialog();
 		} else if (source==loadButton) {
-			frame.loadTournament();
+			frame.loadDuel();
 		}
 	}
 }

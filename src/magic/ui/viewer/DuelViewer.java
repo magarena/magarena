@@ -1,7 +1,7 @@
 package magic.ui.viewer;
 
 import magic.data.IconImages;
-import magic.model.MagicTournament;
+import magic.model.MagicDuel;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -14,7 +14,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 
-public class TournamentViewer extends TexturedPanel {
+public class DuelViewer extends TexturedPanel {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -25,10 +25,10 @@ public class TournamentViewer extends TexturedPanel {
 	private static final Color BRONZE_COLOR=new Color(0xA6,0x7D,0x3D);
 	private static final Color CLOVER_COLOR=new Color(0x23,0x8E,0x23);
 	
-	private final MagicTournament tournament;
+	private final MagicDuel duel;
 	
-	public TournamentViewer(final MagicTournament tournament) {
-		this.tournament=tournament;
+	public DuelViewer(final MagicDuel duel) {
+		this.duel=duel;
 		setLayout(new BorderLayout());
 		add(createProgressPanel(),BorderLayout.CENTER);
 	}
@@ -37,15 +37,15 @@ public class TournamentViewer extends TexturedPanel {
 
 		final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 		
-		final int gamesPlayed=tournament.getGamesPlayed();
-		final int gamesWon=tournament.getGamesWon();		
+		final int gamesPlayed=duel.getGamesPlayed();
+		final int gamesWon=duel.getGamesWon();		
 		final int percentage=getPercentage(gamesWon,gamesPlayed);
 		
 		final JPanel mainPanel=new JPanel(new BorderLayout(0,5));
 		mainPanel.setOpaque(false);
 		mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
 		
-		if (tournament.isFinished()) {
+		if (duel.isFinished()) {
 			final JLabel finishedLabel=new JLabel("Finished!");
 			finishedLabel.setIconTextGap(6);
 			finishedLabel.setHorizontalAlignment(JLabel.CENTER);
@@ -66,7 +66,7 @@ public class TournamentViewer extends TexturedPanel {
 			}
 			mainPanel.add(finishedLabel,BorderLayout.CENTER);			
 		} else {		
-			final JLabel gameLabel=new JLabel("Game "+tournament.getGameNr()+" of "+tournament.getConfiguration().getNrOfGames());
+			final JLabel gameLabel=new JLabel("Game "+duel.getGameNr()+" of "+duel.getConfiguration().getNrOfGames());
 			gameLabel.setHorizontalAlignment(JLabel.CENTER);
 			gameLabel.setFont(FontsAndBorders.FONT3);
 			gameLabel.setForeground(theme.getTextColor());
@@ -88,9 +88,9 @@ public class TournamentViewer extends TexturedPanel {
 		titleBar.setIcon(null);
 	}
 	
-	public MagicTournament getTournament() {
+	public MagicDuel getDuel() {
 		
-		return tournament;
+		return duel;
 	}
 	
 	private static final int getPercentage(final int value,final int total) {

@@ -2,7 +2,7 @@ package magic.ui.viewer;
 
 import magic.data.CardImagesProvider;
 import magic.data.IconImages;
-import magic.model.MagicTournament;
+import magic.model.MagicDuel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
@@ -14,22 +14,22 @@ import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Dimension;
 
-public class TournamentDifficultyViewer extends JPanel implements ChangeListener {
+public class DuelDifficultyViewer extends JPanel implements ChangeListener {
 	
 	private static final long serialVersionUID = 1L;
 	
 	public static final Dimension PREFERRED_SIZE = new Dimension(CardImagesProvider.CARD_WIDTH, 120);
 
-	private final TournamentViewer tournamentViewer;
+	private final DuelViewer duelViewer;
 	private final DifficultyViewer difficultyViewer;
 	private final JPanel cardPanel;
 	private final CardLayout cardLayout;
 	private final TitleBar titleBar;
 	private final TabSelector tabSelector;
 	
-	public TournamentDifficultyViewer(final MagicTournament tournament) {
+	public DuelDifficultyViewer(final MagicDuel duel) {
 
-		tournamentViewer=new TournamentViewer(tournament);
+		duelViewer=new DuelViewer(duel);
 		difficultyViewer=new DifficultyViewer();
 
 		setPreferredSize(PREFERRED_SIZE);
@@ -41,7 +41,7 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 		
 		cardLayout=new CardLayout();
 		cardPanel=new JPanel(cardLayout);
-		cardPanel.add(tournamentViewer,"0");
+		cardPanel.add(duelViewer,"0");
 		cardPanel.add(difficultyViewer,"1");
 		add(cardPanel,BorderLayout.CENTER);
 
@@ -55,7 +55,7 @@ public class TournamentDifficultyViewer extends JPanel implements ChangeListener
 
 		switch (tabSelector.getSelectedTab()) {
 			case 0: 
-				TournamentViewer.setTitle(titleBar);
+				DuelViewer.setTitle(titleBar);
 				break;
 			case 1:
 				DifficultyViewer.setTitle(titleBar);

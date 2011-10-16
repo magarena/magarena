@@ -1,7 +1,7 @@
 package magic.model;
 
 import magic.data.GeneralConfig;
-import magic.data.TournamentConfig;
+import magic.data.DuelConfig;
 import magic.data.CardDefinitions;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.event.MagicActivationMap;

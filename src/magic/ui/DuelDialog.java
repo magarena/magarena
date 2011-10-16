@@ -4,7 +4,7 @@ import magic.ai.MagicAIImpl;
 import magic.data.CubeDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.IconImages;
-import magic.data.TournamentConfig;
+import magic.data.DuelConfig;
 import magic.model.MagicColor;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -32,7 +32,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TournamentDialog extends JDialog implements ActionListener {
+public class DuelDialog extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -52,7 +52,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 	private final JButton cancelButton;
 	private final Theme theme;
 	
-	public TournamentDialog(final MagicFrame frame) {
+	public DuelDialog(final MagicFrame frame) {
 		
 		super(frame,true);
 		this.frame=frame;
@@ -64,7 +64,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 
 		theme=ThemeFactory.getInstance().getCurrentTheme();
 		
-		final TournamentConfig config=TournamentConfig.getInstance();
+		final DuelConfig config=DuelConfig.getInstance();
 		config.load();		
 		
 		final JPanel buttonPanel=new JPanel();
@@ -152,7 +152,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 
 		final Object source=event.getSource();
 		if (source==okButton) {			
-			final TournamentConfig config=TournamentConfig.getInstance();
+			final DuelConfig config=DuelConfig.getInstance();
 			final String playerColors=(String)playerColorsChooser.getSelectedItem();
 			final String opponentColors=(String)opponentColorsChooser.getSelectedItem();
 			config.setAvatar(avatarPanel.getAvatar());
@@ -165,7 +165,7 @@ public class TournamentDialog extends JDialog implements ActionListener {
 			config.setCube((String)cubeComboBox.getSelectedItem());
 			config.setAI((String)aiComboBox.getSelectedItem());
 			config.save();
-			frame.newTournament(config);
+			frame.newDuel(config);
 			dispose();
 		} else if (source==cancelButton) {
 			dispose();
