@@ -32,14 +32,8 @@ public class Mutavault {
 			pt.set(2,2);
 		}
     };
-    private static final MagicStatic TYPE = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-        @Override
-		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Creature.getMask();
-		}
-	};
-    private static final MagicStatic STYPE = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-        @Override
+    private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+    	@Override
 		public EnumSet<MagicSubType> getSubTypeFlags(
                 final MagicPermanent permanent,
                 final EnumSet<MagicSubType> flags) {
@@ -47,7 +41,11 @@ public class Mutavault {
             mod.addAll(MagicSubType.ALL_CREATURES);
 			return mod;
         }
-    };
+        @Override
+		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+			return flags|MagicType.Creature.getMask();
+		}
+	};
 
     public static final MagicManaActivation M = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
 
@@ -79,7 +77,7 @@ public class Mutavault {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
-			game.doAction(new MagicBecomesCreatureAction(permanent,PT,TYPE,STYPE));
+			game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST));
 		}
 	};
 }
