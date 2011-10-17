@@ -12,10 +12,10 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
+import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Revered_Unicorn {
-    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+    public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			if (permanent.getController() == data) {
@@ -46,7 +46,7 @@ public class Revered_Unicorn {
 		}
     };
     
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T2 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+    public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent == data) {
