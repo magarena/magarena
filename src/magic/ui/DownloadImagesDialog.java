@@ -178,9 +178,9 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
         }
 			
 		// clear images that are set to "missing image" in cache
-		magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
+                magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
                 frame.updateGameView();
             }
         });
