@@ -61,6 +61,7 @@ public class IconImages {
 	public static final ImageIcon MINUS=loadIcon("minus.png");
 	public static final ImageIcon CHARGE=loadIcon("charge.png");
 	public static final ImageIcon FEATHER=loadIcon("feather.gif");
+	public static final ImageIcon GOLDCOUNTER=loadIcon("goldcounter.png");
 	public static final ImageIcon LAND=loadIcon("land.gif");
 	public static final ImageIcon LAND2=loadIcon("land2.gif");
 	public static final ImageIcon LIFE=loadIcon("life.gif");

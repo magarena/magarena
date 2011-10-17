@@ -16,7 +16,8 @@ public class MagicCountersTargetPicker extends MagicTargetPicker<MagicPermanent>
 		final int score=permanent.getCounters(MagicCounterType.PlusOne)*3+
 			permanent.getCounters(MagicCounterType.Charge)*3-
 			permanent.getCounters(MagicCounterType.MinusOne)*4-	
-			permanent.getCounters(MagicCounterType.Feather);
+			permanent.getCounters(MagicCounterType.Feather)-
+			permanent.getCounters(MagicCounterType.Gold);
 		return permanent.getController()==player?-score:score;
 	}
 	

@@ -6,6 +6,7 @@ public enum MagicCounterType {
 	MinusOne("-1/-1","{-}"),
 	Charge("charge","{C}"),
 	Feather("feather","{F}"),
+	Gold("gold","{g}"),
 	;
 
 	public static final int NR_COUNTERS=MagicCounterType.values().length;
