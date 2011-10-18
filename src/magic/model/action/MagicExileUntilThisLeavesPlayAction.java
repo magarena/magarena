@@ -1,6 +1,5 @@
 package magic.model.action;
 
-import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
@@ -18,11 +17,11 @@ public class MagicExileUntilThisLeavesPlayAction extends MagicAction {
 	@Override
 	public void doAction(final MagicGame game) {
 		game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
-		source.setExiledCard(permanent.getCard());
+		source.addExiledCard(permanent.getCard());
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		source.setExiledCard(MagicCard.NONE);
+		source.removeExiledCard(permanent.getCard());
 	}
 }

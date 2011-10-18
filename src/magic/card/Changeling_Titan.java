@@ -68,8 +68,8 @@ public class Changeling_Titan {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
 			if (permanent == data &&
-				permanent.getExiledCard() != MagicCard.NONE) {
-				final MagicCard exiledCard = permanent.getExiledCard();
+				!permanent.getExiledCards().isEmpty()) {
+				final MagicCard exiledCard = permanent.getExiledCards().get(0);
 				return new MagicEvent(
 						permanent,
 						permanent.getController(),

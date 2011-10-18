@@ -52,7 +52,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final MagicPermanentSet auraPermanents;	
 	private MagicPermanent blockedCreature = MagicPermanent.NONE;
     private final MagicPermanentList blockingCreatures;	
-    private MagicCard exiledCard = MagicCard.NONE;
+    private MagicCardList exiledCards;
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
 	private int stateFlags=MagicPermanentState.Summoned.getMask();
 	private long turnAbilityFlags=0;
@@ -83,6 +83,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		equipmentPermanents=new MagicPermanentSet();
 		auraPermanents=new MagicPermanentSet();
 		blockingCreatures=new MagicPermanentList();
+		exiledCards = new MagicCardList();
 		fixedScore=ArtificialScoringSystem.getFixedPermanentScore(this);
 	}
 
@@ -107,6 +108,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		auraPermanents=new MagicPermanentSet(copyMap,sourcePermanent.auraPermanents);
 		blockedCreature=copyMap.copy(sourcePermanent.blockedCreature);
 		blockingCreatures=new MagicPermanentList(copyMap,sourcePermanent.blockingCreatures);
+		exiledCards = new MagicCardList(copyMap,sourcePermanent.exiledCards);
 		damage=sourcePermanent.damage;
 		preventDamage=sourcePermanent.preventDamage;
 		fixedScore=sourcePermanent.fixedScore;
@@ -534,14 +536,21 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		blockingCreatures.clear();
 	}
 	
-	public MagicCard getExiledCard() {
-		return exiledCard;
+	public MagicCardList getExiledCards() {
+		return exiledCards;
 	}
 	
-	public void setExiledCard(final MagicCard card) {
+	public void addExiledCard(final MagicCard card) {
         //only non tokens can be set
         if (!card.isToken()) {
-    		exiledCard = card;
+    		exiledCards.add(card);
+        }
+	}
+	
+	public void removeExiledCard(final MagicCard card) {
+        //only non tokens can be set
+        if (!card.isToken()) {
+    		exiledCards.remove(card);
         }
 	}
 	
