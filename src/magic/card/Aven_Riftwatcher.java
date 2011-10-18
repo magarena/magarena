@@ -13,7 +13,7 @@ import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Aven_Riftwatcher {
 	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",2);
+			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",3);
 	
 	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
