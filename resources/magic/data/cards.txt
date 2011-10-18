@@ -15559,3 +15559,16 @@ cost={3}{U}
 pt=3/3
 ability=flying
 timing=main
+
+>Deadwood Treefolk
+url=http://magiccards.info/cmd/en/150.html
+image=http://magiccards.info/scans/en/cmd/150.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Treefolk
+color=g
+converted=6
+cost={5}{G}
+pt=3/6
+timing=main
