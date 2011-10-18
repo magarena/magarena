@@ -281,6 +281,8 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_SPIRIT_CARD_FROM_GRAVEYARD =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,
 					"target Spirit card from your graveyard");
+	public static final MagicTargetChoice TARGET_CARD_FROM_HAND =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_HAND,false,MagicTargetHint.None,"a card from your hand");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_HAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,false,MagicTargetHint.None,"a creature card from your hand");
 	public static final MagicTargetChoice TARGET_GREEN_CREATURE_CARD_FROM_HAND =

@@ -15425,3 +15425,14 @@ converted=4
 cost={2}{U}{U}
 pt=2/2
 timing=main
+
+>Parallax Nexus
+url=http://magiccards.info/ne/en/63.html
+image=http://magiccards.info/scans/en/ne/63.jpg
+value=3
+rarity=R
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
+timing=enchantment
