@@ -15545,3 +15545,17 @@ cost={2}{W}{W}
 pt=5/5
 ability=shroud
 timing=main
+
+>Chronozoa
+url=http://magiccards.info/pc/en/37.html
+image=http://magiccards.info/scans/en/pc/37.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Illusion
+color=u
+converted=4
+cost={3}{U}
+pt=3/3
+ability=flying
+timing=main
