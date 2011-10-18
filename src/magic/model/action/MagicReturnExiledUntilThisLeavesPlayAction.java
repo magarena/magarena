@@ -24,7 +24,11 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 			for (final MagicCard card : cardList) {
 				if (card.getOwner().getExile().contains(card)) {
 					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
-			        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
+					if (location == MagicLocationType.Play) {
+						game.doAction(new MagicPlayCardAction(card,card.getOwner(),MagicPlayCardAction.NONE));
+					} else {
+						game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
+					} 
 				}
 			}
 			cardList.clear();
