@@ -15436,3 +15436,14 @@ color=b
 converted=3
 cost={2}{B}
 timing=enchantment
+
+>Parallax Tide
+url=http://magiccards.info/ne/en/37.html
+image=http://magiccards.info/scans/en/ne/37.jpg
+value=3
+rarity=R
+type=Enchantment
+color=u
+converted=4
+cost={2}{U}{U}
+timing=enchantment
