@@ -337,6 +337,10 @@ public class MagicCardDefinition {
 		return hasType(MagicType.Legendary);
 	}
 	
+	public boolean isTribal() {
+		return hasType(MagicType.Tribal);
+	}
+	
 	public boolean isAura() {
 		return isEnchantment() && hasSubType(MagicSubType.Aura);
 	}
@@ -361,6 +365,9 @@ public class MagicCardDefinition {
 			return "Legendary " + getTypeString();
 		}
 		
+		if (isTribal()) {
+			return "Tribal " + getTypeString();
+		}
 		return getTypeString();	
 	}
 	

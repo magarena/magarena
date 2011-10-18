@@ -4,6 +4,7 @@ public enum MagicType {
 
 	Basic("Basic"),
 	Legendary("Legendary"),
+	Tribal("Tribal"),
 	Land("Land"),
 	Creature("Creature"),
 	Sorcery("Sorcery"),
