@@ -15492,3 +15492,29 @@ subtype=Golem
 converted=4
 cost={4}
 timing=main
+
+>Skyshroud Behemoth
+url=http://magiccards.info/ne/en/116.html
+image=http://magiccards.info/scans/en/ne/116.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Beast
+color=g
+converted=7
+cost={5}{G}{G}
+pt=10/10
+timing=main
+
+>Skyshroud Ridgeback
+url=http://magiccards.info/ne/en/120.html
+image=http://magiccards.info/scans/en/ne/120.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=1
+cost={G}
+pt=2/3
+timing=main
