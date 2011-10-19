@@ -475,6 +475,15 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_ISLAND_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player && ((MagicPermanent)target).hasSubType(MagicSubType.Island,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_MOUNTAIN_YOU_CONTROL = new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
