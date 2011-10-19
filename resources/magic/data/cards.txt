@@ -15611,3 +15611,28 @@ converted=3
 cost={1}{G}{G}
 pt=6/6
 timing=main
+
+>Reality Acid
+url=http://magiccards.info/pc/en/45.html
+image=http://magiccards.info/scans/en/pc/45.jpg
+value=3
+removal=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=3
+cost={2}{U}
+timing=main
+
+>Soultether Golem
+url=http://magiccards.info/fut/en/164.html
+image=http://magiccards.info/scans/en/fut/164.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+converted=2
+cost={2}
+pt=3/3
+timing=main
