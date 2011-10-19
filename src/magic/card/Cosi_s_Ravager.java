@@ -28,7 +28,7 @@ public class Cosi_s_Ravager {
                     new MagicDamageTargetPicker(1),
                     new Object[]{permanent},
                     this,
-                    player + " may have " + permanent + " deal 1 damage to target player"):
+                    player + " may$ have " + permanent + " deal 1 damage to target player$"):
                 MagicEvent.NONE;
 		}
 		
