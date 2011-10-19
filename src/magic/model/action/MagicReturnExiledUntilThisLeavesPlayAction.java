@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.event.MagicReturnAuraEvent;
 import magic.model.stack.MagicCardOnStack;
 
@@ -13,11 +14,24 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 
 	private final MagicPermanent source;
 	private final MagicLocationType location;
+	final MagicPlayer controller;
 	private MagicCardList exiledList;
 	
-	public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent source,final MagicLocationType location) {
+	public MagicReturnExiledUntilThisLeavesPlayAction(
+			final MagicPermanent source,
+			final MagicLocationType location,
+			final MagicPlayer controller) {
 		this.source = source;
 		this.location = location;
+		this.controller = controller;
+	}
+	
+	public MagicReturnExiledUntilThisLeavesPlayAction(
+			final MagicPermanent source,
+			final MagicLocationType location) {
+		this.source = source;
+		this.location = location;
+		this.controller = MagicPlayer.NONE;
 	}
 	
 	@Override
@@ -32,7 +46,11 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 							final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NO_COST);
 							game.addEvent(new MagicReturnAuraEvent(cardOnStack));	
 						} else {
-							game.doAction(new MagicPlayCardAction(card,card.getOwner(),MagicPlayCardAction.NONE));
+							final Boolean newOwner = controller != MagicPlayer.NONE;
+							game.doAction(new MagicPlayCardAction(
+									card,
+									newOwner ? controller : card.getOwner(),
+									MagicPlayCardAction.NONE));
 						}
 					} else {
 						game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));

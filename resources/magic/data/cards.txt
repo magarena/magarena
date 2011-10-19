@@ -15675,3 +15675,14 @@ cost={3}{W}{W}{W}
 pt=6/6
 ability=flying
 timing=main
+
+>Day of the Dragons
+url=http://magiccards.info/sc/en/31.html
+image=http://magiccards.info/scans/en/sc/31.jpg
+value=4
+rarity=R
+type=Enchantment
+color=u
+converted=7
+cost={4}{U}{U}{U}
+timing=enchantment
