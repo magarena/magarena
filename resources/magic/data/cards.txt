@@ -15585,3 +15585,29 @@ converted=2
 cost={1}{R}
 pt=3/3
 timing=main
+
+>Lavacore Elemental
+url=http://magiccards.info/pc/en/103.html
+image=http://magiccards.info/scans/en/pc/103.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=3
+cost={2}{R}
+pt=5/3
+timing=main
+
+>Ravaging Riftwurm
+url=http://magiccards.info/fut/en/135.html
+image=http://magiccards.info/scans/en/fut/135.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Wurm
+color=g
+converted=3
+cost={1}{G}{G}
+pt=6/6
+timing=main
