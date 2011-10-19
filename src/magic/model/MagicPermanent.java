@@ -541,17 +541,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 	
 	public void addExiledCard(final MagicCard card) {
-        //only non tokens can be set
+        // only non tokens can be added
         if (!card.isToken()) {
     		exiledCards.add(card);
         }
 	}
 	
 	public void removeExiledCard(final MagicCard card) {
-        //only non tokens can be set
-        if (!card.isToken()) {
-    		exiledCards.remove(card);
-        }
+    	exiledCards.remove(card);
 	}
 	
 	
