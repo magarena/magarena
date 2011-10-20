@@ -711,7 +711,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public boolean canBlock(final MagicGame game,final MagicPermanent attacker) {
 		final long attackerFlags=attacker.getAllAbilityFlags(game);
 
-		// Fear & intimidate
+		// Fear and Intimidate
 		if (!isArtifact(game)) {
 			final int colorFlags=getColorFlags(game);
 			if (MagicAbility.Fear.hasAbility(attackerFlags)&&!MagicColor.Black.hasColor(colorFlags)) {
@@ -722,8 +722,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 			}
 		}
 		
+		// Shadow
+		final long blockerFlags = getAllAbilityFlags(game);
+		if (MagicAbility.Shadow.hasAbility(attackerFlags) &&
+			!MagicAbility.Shadow.hasAbility(blockerFlags)) {
+			return false;
+		}
+		
 		// Flying and Reach
-		final long blockerFlags=getAllAbilityFlags(game);
 		final boolean blockerFlying=MagicAbility.Flying.hasAbility(blockerFlags);
 		if (blockerFlying) {
 			if (MagicAbility.CannotBeBlockedByFlying.hasAbility(attackerFlags)) {
@@ -748,6 +754,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 return false;
             }
         }
+        
         // Subtype
         if (MagicAbility.CannotBeBlockedByHumans.hasAbility(attackerFlags)) {
         	if (this.hasSubType(MagicSubType.Human,game)) {

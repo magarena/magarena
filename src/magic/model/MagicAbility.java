@@ -46,6 +46,7 @@ public enum MagicAbility {
 	ProtectionFromWerewolves("protection from Werewolves",10),
 	ProtectionFromZombies("protection from Zombies",10),
 	Reach("reach",20),
+	Shadow("shadow",60),
 	Shroud("shroud",60),
 	Swampwalk("swampwalk",10),
 	Trample("trample",30),
