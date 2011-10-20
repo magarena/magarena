@@ -16,6 +16,7 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 	public static final int HASTE_REMOVE_AT_END_OF_YOUR_TURN=3;
 	public static final int HASTE_SACRIFICE_AT_END_OF_TURN=4;
 	public static final int TAPPED_ATTACKING=5;
+	public static final int TAPPED=6;
 	
 	private final MagicCard card;
 	private final MagicPlayer controller;
@@ -50,6 +51,9 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 			case TAPPED_ATTACKING:
 				permanent.setState(MagicPermanentState.Tapped);
 				permanent.setState(MagicPermanentState.Attacking);
+				break;
+			case TAPPED:
+				permanent.setState(MagicPermanentState.Tapped);
 				break;
 		}
 		return permanent;

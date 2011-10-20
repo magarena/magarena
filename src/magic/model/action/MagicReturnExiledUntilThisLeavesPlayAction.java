@@ -14,16 +14,28 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 
 	private final MagicPermanent source;
 	private final MagicLocationType location;
-	final MagicPlayer controller;
+	private MagicPlayer controller = MagicPlayer.NONE;
+	private int action = MagicPlayCardAction.NONE;
 	private MagicCardList exiledList;
 	
 	public MagicReturnExiledUntilThisLeavesPlayAction(
 			final MagicPermanent source,
 			final MagicLocationType location,
-			final MagicPlayer controller) {
+			final MagicPlayer controller,
+			final int action) {
 		this.source = source;
 		this.location = location;
 		this.controller = controller;
+		this.action = action;
+	}
+	
+	public MagicReturnExiledUntilThisLeavesPlayAction(
+			final MagicPermanent source,
+			final MagicLocationType location,
+			final int action) {
+		this.source = source;
+		this.location = location;
+		this.action = action;
 	}
 	
 	public MagicReturnExiledUntilThisLeavesPlayAction(
@@ -31,7 +43,6 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 			final MagicLocationType location) {
 		this.source = source;
 		this.location = location;
-		this.controller = MagicPlayer.NONE;
 	}
 	
 	@Override
@@ -50,7 +61,7 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 							game.doAction(new MagicPlayCardAction(
 									card,
 									newOwner ? controller : card.getOwner(),
-									MagicPlayCardAction.NONE));
+									action));
 						}
 					} else {
 						game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
