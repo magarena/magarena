@@ -84,6 +84,8 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.None,"target non basic land");
 	public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBASIC_LAND,true,MagicTargetHint.Negative,"target non basic land");
+	public static final MagicTargetChoice TARGET_LAND =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.None,"target land");
 	public static final MagicTargetChoice NEG_TARGET_LAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_LAND,true,MagicTargetHint.Negative,"target land");
 
