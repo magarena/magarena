@@ -32,6 +32,15 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
 	public MagicReturnExiledUntilThisLeavesPlayAction(
 			final MagicPermanent source,
 			final MagicLocationType location,
+			final MagicPlayer controller) {
+		this.source = source;
+		this.location = location;
+		this.controller = controller;
+	}
+	
+	public MagicReturnExiledUntilThisLeavesPlayAction(
+			final MagicPermanent source,
+			final MagicLocationType location,
 			final int action) {
 		this.source = source;
 		this.location = location;
