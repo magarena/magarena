@@ -15795,3 +15795,29 @@ converted=6
 cost={3}{R}{G}{W}
 pt=4/2
 timing=main
+
+>Sludge Strider
+url=http://magiccards.info/cfx/en/126.html
+image=http://magiccards.info/scans/en/cfx/126.jpg
+value=4
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+color=wub
+converted=4
+cost={1}{W}{U}{B}
+pt=3/3
+timing=fmain
+
+>Twilight Drover
+url=http://magiccards.info/rav/en/33.html
+image=http://magiccards.info/scans/en/rav/33.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Spirit
+color=w
+converted=3
+cost={2}{W}
+pt=1/1
+timing=fmain
