@@ -41,6 +41,10 @@ public class MagicPowerToughness {
 		toughness = tAmount;
 	}
     
+    public void setPower(final int tAmount) {
+		power = tAmount;
+	}
+    
     public void setToughness(final int tAmount) {
 		toughness = tAmount;
 	}
