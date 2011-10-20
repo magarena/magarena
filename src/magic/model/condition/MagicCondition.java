@@ -9,6 +9,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.phase.MagicPhaseType;
 
 public interface MagicCondition {
     
@@ -35,6 +36,13 @@ public interface MagicCondition {
 	MagicCondition SORCERY_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			return game.canPlaySorcery(source.getController());
+		}
+	};
+	
+	MagicCondition YOUR_UPKEEP_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return game.isPhase(MagicPhaseType.Upkeep) &&
+					game.getTurnPlayer() == source.getController();
 		}
 	};
 
