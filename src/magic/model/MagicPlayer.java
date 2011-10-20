@@ -428,6 +428,15 @@ public class MagicPlayer implements MagicTarget {
 		return false;		
 	}
 	
+	public boolean controlsPermanentWithAbility(final MagicAbility ability, final MagicGame game) {
+		for (final MagicPermanent permanent : permanents) {
+			if (permanent.hasAbility(game,ability)) {
+				return true;
+			}
+		}
+		return false;		
+	}
+	
 	@Override
 	public String getName() {
 		return playerDefinition.getName();

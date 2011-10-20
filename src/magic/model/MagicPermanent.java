@@ -696,6 +696,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				return false;
 			}
 		}
+		// Shadow
+		if (MagicAbility.Shadow.hasAbility(flags) &&
+			!player.controlsPermanentWithAbility(MagicAbility.Shadow,game)) {
+			return false;
+		}
 		
 		return true;
 	}
