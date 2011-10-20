@@ -15876,3 +15876,31 @@ cost={1}{B}
 pt=1/1
 ability=shadow
 timing=main
+
+>Dauthi Ghoul
+url=http://magiccards.info/tp/en/15.html
+image=http://magiccards.info/scans/en/tp/15.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Dauthi,Zombie
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+ability=shadow
+timing=fmain
+
+>Dauthi Mercenary
+url=http://magiccards.info/tp/en/18.html
+image=http://magiccards.info/scans/en/tp/18.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Dauthi,Knight,Mercenary
+color=b
+converted=3
+cost={2}{B}
+pt=2/1
+ability=shadow
+timing=main
