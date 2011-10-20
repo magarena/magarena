@@ -71,6 +71,17 @@ public enum MagicColor {
         throw new RuntimeException("No landwalk ability for MagicColor " + this);
 	}
 	
+	public MagicAbility getCannotBeBlockedByAbility() {
+		switch (this) {
+			case Black: return MagicAbility.CannotBeBlockedByBlack;
+			case Blue: return MagicAbility.CannotBeBlockedByBlue;
+			case Green: return MagicAbility.CannotBeBlockedByGreen;
+			case Red: return MagicAbility.CannotBeBlockedByRed;
+			case White: return MagicAbility.CannotBeBlockedByWhite;
+		}	
+        throw new RuntimeException("No CannotBeBlockedBy ability for MagicColor " + this);
+	}
+	
 	public MagicSubType getLandSubType() {
 		switch (this) {
 			case Black: return MagicSubType.Swamp;

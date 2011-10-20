@@ -696,6 +696,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				return false;
 			}
 		}
+				
 		// Shadow
 		if (MagicAbility.Shadow.hasAbility(flags) &&
 			!player.controlsPermanentWithAbility(MagicAbility.Shadow,game)) {
@@ -767,6 +768,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         	}
         }
 
+        // Can't be blocked by a color
+        for (final MagicColor color : MagicColor.values()) {
+        	if (color.hasColor(this.getColorFlags(game)) &&
+        		color.getCannotBeBlockedByAbility().hasAbility(attackerFlags)) {
+				return false;
+			}
+        }
+     		
 		// Protection
 		return !hasProtectionFrom(attackerFlags,this,game);
 	}
