@@ -162,7 +162,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_WITH_FLYING=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_WITH_FLYING,true,MagicTargetHint.Negative,"target creature with flying");
 	public static final MagicTargetChoice NEG_TARGET_CREATURE_WITHOUT_FLYING=
-		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING,true,MagicTargetHint.Negative,"target creature without flying");	
+		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING,true,MagicTargetHint.Negative,"target creature without flying");
+	public static final MagicTargetChoice NEG_TARGET_CREATURE_WITH_SHADOW =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW,true,MagicTargetHint.Negative,"target creature with shadow");
 	public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_CREATURE,true,MagicTargetHint.Negative,"target attacking creature");
 	public static final MagicTargetChoice POS_TARGET_ATTACKING_CREATURE=

@@ -1219,6 +1219,16 @@ public interface MagicTargetFilter {
 		}		
 	};
 
+	MagicTargetFilter TARGET_CREATURE_WITH_SHADOW = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return permanent.isCreature(game)&&permanent.hasAbility(game,MagicAbility.Shadow);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_CREATURE_CONVERTED_3_OR_LESS=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
