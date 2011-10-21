@@ -421,6 +421,26 @@ public interface MagicTargetFilter {
 		}
 	};
 	
+	MagicTargetFilter TARGET_ENCHANTMENT_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player &&
+					((MagicPermanent)target).isEnchantment();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() != player &&
+					((MagicPermanent)target).isEnchantment();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_SPIRIT_OR_ENCHANTMENT = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {	
 			final MagicPermanent targetPermanent = (MagicPermanent)target;
@@ -1224,6 +1244,17 @@ public interface MagicTargetFilter {
 			final MagicPermanent permanent = (MagicPermanent)target;
 			return permanent.isCreature(game) &&
 					permanent.hasAbility(game,MagicAbility.Shadow);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_CREATURE_WITHOUT_SHADOW = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return permanent.isCreature(game) &&
+					!permanent.hasAbility(game,MagicAbility.Shadow);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Permanent;

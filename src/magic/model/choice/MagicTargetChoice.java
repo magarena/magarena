@@ -123,6 +123,11 @@ public class MagicTargetChoice extends MagicChoice {
 					"target artifact creature");
 	public static final MagicTargetChoice TARGET_ENCHANTMENT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.None,"target enchantment");
+	public static final MagicTargetChoice TARGET_ENCHANTMENT_YOU_CONTROL =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT_YOU_CONTROL,true,MagicTargetHint.None,"target enchantment you control");
+	public static final MagicTargetChoice TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,
+					"target enchantment your opponent controls");
 	public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ENCHANTMENT,true,MagicTargetHint.Negative,"target enchantment");
 	public static final MagicTargetChoice NEG_TARGET_SPIRIT_OR_ENCHANTMENT =
