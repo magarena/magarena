@@ -48,6 +48,39 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 7777 (October QQQ, 2011)
+============
+brought to you by beholder, melvin, and wait321
+ 
+- improved AI performance when there are a lot of blocking options
+- downloaded images are updated automaticaly. No need to restart Magarena
+- improved AI handling of equipment
+- improved AI's usage of abilities that can be activated multiple times
+- added support for morbid ability
+- added support for modular ability
+- added basic deck construction rule checking
+- added support to generate tribal/theme decks
+- added support for "when becomes blocked" trigger
+- added full card text searching. Text is downloaded with the images
+- added support for "when leaves play" trigger
+- added support for shadow ability
+- added support for can't be blocked by a color ability
+
+
+- fixed: static effects that change or add colors don't work
+- fixed: game crashes because of creating components in non event dispatching thread
+- fixed: a creature enchanted with Pacifism can still attack
+- fixed: Torpor Dust gives flash ability instead of having flash ability
+? fixed: concurrent modification of delayedViewers (crash)
+- fixed: state-based actions are checked after every event instead of whenever a player would get priority and during cleanup step
+- fixed: undoing "gain control until end of turn" effect causes permanent to be controlled indefinately
+- fixed: permanent that becomes an artifact is not recognised as such by the game
+- fixed: Goldenglow Moth doesn't have flying ability
+- fixed: Angelheart Vial doesn't tap when activating its ability
+- fixed: Hypnotic Specter's ability triggers for controller
+
+- added the following cards:
+
 Release 1.18 (September 23, 2011)
 ============
 brought to you by beholder, melvin, and wait321
