@@ -18,5 +18,5 @@ public class Guul_Draz_Specter {
 		}		
 	};
 
-    public static final MagicTrigger T = new MagicSpecterTrigger(true,false);
+    public static final MagicTrigger T = new MagicSpecterTrigger(true,false,false);
 }

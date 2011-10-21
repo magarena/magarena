@@ -11,36 +11,38 @@ import magic.model.target.MagicTarget;
 public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
 
 	private final boolean combat;
+	private final boolean opponent;
 	private final boolean random;
 	
-	public MagicSpecterTrigger(final boolean combat,final boolean random) {
-		this.combat=combat;
-		this.random=random;
+	public MagicSpecterTrigger(final boolean combat,final boolean opponent,final boolean random) {
+		this.combat = combat;
+		this.opponent = opponent;
+		this.random = random;
 	}
 
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-		final MagicTarget target = damage.getTarget();
-        final MagicTarget player = target;
-        final String playerName = player.getName();
-        final String opponentName = permanent.getController().getName();
-        final String prefix = (player == permanent.getController() ? opponentName : playerName) + " discards a card";
-		return (damage.getSource()==permanent && 
-                target.isPlayer() && 
-                (!combat||damage.isCombat())) ?
+        final MagicTarget target = damage.getTarget();
+        final String prefix = target + " discards a card";
+		return (damage.getSource() == permanent && 
+				target.isPlayer() && 
+                (!opponent || target != permanent.getController()) &&
+                (!combat || damage.isCombat())) ?
             new MagicEvent(
                 permanent,
                 permanent.getController(),
-                new Object[]{permanent,player},
+                new Object[]{permanent,target},
                 this,
-                (random?prefix+" at random.":prefix)+'.'):
+                random ? prefix + " at random." : prefix + "."):
             MagicEvent.NONE;
 	}
 
 	@Override
 	public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choices) {
-		final MagicPermanent permanent=(MagicPermanent)data[0];
-		final MagicPlayer player=(MagicPlayer)data[1];
-		game.addEvent(new MagicDiscardEvent(permanent,player,1,random));
+		game.addEvent(new MagicDiscardEvent(
+				(MagicPermanent)data[0],
+				(MagicPlayer)data[1],
+				1,
+				random));
 	}
 }
