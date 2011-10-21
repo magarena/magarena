@@ -16223,3 +16223,30 @@ cost={1}{U}
 pt=1/2
 ability=shadow
 timing=main
+
+>Trespasser il-Vec
+url=http://magiccards.info/ts/en/138.html
+image=http://magiccards.info/scans/en/ts/138.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Rogue
+color=b
+converted=3
+cost={2}{B}
+pt=3/1
+timing=main
+
+>AEtherflame Wall
+url=http://magiccards.info/ts/en/142.html
+image=http://magiccards.info/scans/en/ts/142.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Wall
+color=r
+converted=2
+cost={1}{R}
+pt=0/4
+ability=defender,can block creatures with shadow
+timing=smain
