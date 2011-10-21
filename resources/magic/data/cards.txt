@@ -16328,3 +16328,87 @@ color=u
 converted=1
 cost={U}
 timing=animate
+
+>Wanderbrine Rootcutters
+url=http://magiccards.info/shm/en/178.html
+image=http://magiccards.info/scans/en/shm/178.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+color=ub
+converted=4
+cost={2}{U/B}{U/B}
+pt=3/3
+ability=can't be blocked by green creatures
+timing=main
+
+>Barrenton Cragtreads
+url=http://magiccards.info/shm/en/138.html
+image=http://magiccards.info/scans/en/shm/138.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Kithkin,Scout
+color=wu
+converted=4
+cost={2}{W/U}{W/U}
+pt=3/3
+ability=can't be blocked by red creatures
+timing=main
+
+>Mudbrawler Raiders
+url=http://magiccards.info/shm/en/213.html
+image=http://magiccards.info/scans/en/shm/213.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=rg
+converted=4
+cost={2}{R/G}{R/G}
+pt=3/3
+ability=can't be blocked by blue creatures
+timing=main
+
+>Raven's Run Dragoon
+url=http://magiccards.info/shm/en/235.html
+image=http://magiccards.info/scans/en/shm/235.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elf,Knight
+color=gw
+converted=4
+cost={2}{G/W}{G/W}
+pt=3/3
+ability=can't be blocked by black creatures
+timing=main
+
+>Sacred Knight
+url=http://magiccards.info/po/en/186.html
+image=http://magiccards.info/scans/en/po/186.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=4
+cost={3}{W}
+pt=3/2
+ability=can't be blocked by black creatures,can't be blocked by red creatures
+timing=main
+
+>Sootwalkers
+url=http://magiccards.info/shm/en/196.html
+image=http://magiccards.info/scans/en/shm/196.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elemental,Rogue
+color=br
+converted=4
+cost={2}{B/R}{B/R}
+pt=3/3
+ability=can't be blocked by white creatures
+timing=main
