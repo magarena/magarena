@@ -16317,3 +16317,14 @@ converted=3
 cost={2}{B}
 pt=1/1
 timing=main
+
+>Shadow Rift
+url=http://magiccards.info/tp/en/86.html
+image=http://magiccards.info/scans/en/tp/86.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=animate
