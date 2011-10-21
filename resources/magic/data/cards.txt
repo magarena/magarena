@@ -16289,3 +16289,31 @@ color=b
 converted=3
 cost={2}{B}
 timing=enchantment
+
+>AEther Web
+url=http://magiccards.info/ts/en/189.html
+image=http://magiccards.info/scans/en/ts/189.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=g
+converted=2
+cost={1}{G}
+given_pt=1/1
+ability=flash
+given_ability=reach,can block creatures with shadow
+timing=flash
+
+>Dauthi Trapper
+url=http://magiccards.info/sh/en/6.html
+image=http://magiccards.info/scans/en/sh/6.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Dauthi,Minion
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+timing=main
