@@ -16195,3 +16195,31 @@ cost={2}{U}
 pt=2/1
 ability=shadow
 timing=main
+
+>Thalakos Seer
+url=http://magiccards.info/tp/en/94.html
+image=http://magiccards.info/scans/en/tp/94.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Thalakos,Wizard
+color=u
+converted=2
+cost={U}{U}
+pt=1/1
+ability=shadow
+timing=main
+
+>Thalakos Sentry
+url=http://magiccards.info/tp/en/95.html
+image=http://magiccards.info/scans/en/tp/95.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Thalakos,Soldier
+color=u
+converted=2
+cost={1}{U}
+pt=1/2
+ability=shadow
+timing=main
