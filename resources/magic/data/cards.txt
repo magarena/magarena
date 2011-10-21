@@ -16084,3 +16084,31 @@ cost={W}{W}
 pt=2/1
 ability=shadow,protection from black
 timing=main
+
+>Soltari Priest
+url=http://magiccards.info/tp/en/258.html
+image=http://magiccards.info/scans/en/tp/258.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Soltari,Cleric
+color=w
+converted=2
+cost={W}{W}
+pt=2/1
+ability=shadow,protection from red
+timing=main
+
+>Soltari Trooper
+url=http://magiccards.info/tp/en/259.html
+image=http://magiccards.info/scans/en/tp/259.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Soltari,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+ability=shadow
+timing=main
