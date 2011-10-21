@@ -14,7 +14,9 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
 
 	private static final MagicTrigger INSTANCE = new MagicBattleCryTrigger();
 
-    private MagicBattleCryTrigger() {}
+    private MagicBattleCryTrigger() {
+        super(8);
+    }
 	
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
