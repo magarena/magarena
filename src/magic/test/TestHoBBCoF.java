@@ -28,7 +28,7 @@ class TestHoBBCoF extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
-	    addToHand(P,"Hero of Bladehold",1); 
+		createPermanent(game,P,"Hero of Bladehold",false,1);
        
 
         P = opponent;
