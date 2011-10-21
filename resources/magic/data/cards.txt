@@ -15980,7 +15980,6 @@ timing=main
 url=http://magiccards.info/ts/en/66.html
 image=http://magiccards.info/scans/en/ts/66.jpg
 value=2
-removal=2
 rarity=C
 type=Creature
 subtype=Kor,Rogue
@@ -16002,3 +16001,31 @@ color=r
 converted=1
 cost={R}
 timing=removal
+
+>Soltari Champion
+url=http://magiccards.info/sh/en/118.html
+image=http://magiccards.info/scans/en/sh/118.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Soltari,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=shadow
+timing=main
+
+>Soltari Crusader
+url=http://magiccards.info/tp/en/253.html
+image=http://magiccards.info/scans/en/tp/253.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Soltari,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=2/1
+ability=shadow
+timing=main
