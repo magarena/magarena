@@ -16140,3 +16140,31 @@ cost={3}{B}{B}{B}
 pt=5/5
 ability=shadow,flying
 timing=fmain
+
+>Stronghold Rats
+url=http://magiccards.info/fut/en/79.html
+image=http://magiccards.info/scans/en/fut/79.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={2}{B}
+pt=2/1
+ability=shadow
+timing=main
+
+>Temporal Isolation
+url=http://magiccards.info/ts/en/43.html
+image=http://magiccards.info/scans/en/ts/43.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+ability=flash
+given_ability=shadow
+timing=flash
