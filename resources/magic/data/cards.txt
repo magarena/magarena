@@ -16278,3 +16278,14 @@ cost={1}{R}
 pt=0/5
 ability=defender,can block creatures with shadow
 timing=smain
+
+>Dauthi Embrace
+url=http://magiccards.info/tp/en/14.html
+image=http://magiccards.info/scans/en/tp/14.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
+timing=enchantment
