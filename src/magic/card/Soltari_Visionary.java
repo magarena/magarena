@@ -16,12 +16,12 @@ public class Soltari_Visionary {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			final MagicPlayer player = permanent.getController();
-			final MagicPlayer target = (MagicPlayer)damage.getTarget();
-			return (damage.getSource() == permanent &&
-					damage.getTarget().isPlayer() &&
-					target.controlsPermanentWithType(MagicType.Enchantment,game)) ?
-                new MagicEvent(
+			if (damage.getSource() == permanent &&
+				damage.getTarget().isPlayer()) {
+				final MagicPlayer target = (MagicPlayer)damage.getTarget();
+				if (target.controlsPermanentWithType(MagicType.Enchantment,game)) {
+					final MagicPlayer player = permanent.getController();
+					return new MagicEvent(
                         permanent,
                         player,
                         damage.getTarget() == player ?
@@ -30,8 +30,10 @@ public class Soltari_Visionary {
                         new MagicDestroyTargetPicker(false),
                         MagicEvent.NO_DATA,
                         this,
-                        "Destroy target enchantment$."):
-                MagicEvent.NONE;
+                        "Destroy target enchantment$.");
+				}
+			}
+			return MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
