@@ -16029,3 +16029,30 @@ cost={2}{W}
 pt=2/1
 ability=shadow
 timing=main
+
+>Soltari Emissary
+url=http://magiccards.info/tp/en/254.html
+image=http://magiccards.info/scans/en/tp/254.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Soltari,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+timing=main
+
+>Soltari Foot Soldier
+url=http://magiccards.info/br/en/74.html
+image=http://magiccards.info/scans/en/br/74.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Soltari,Soldier
+color=w
+converted=1
+cost={W}
+pt=1/1
+ability=shadow
+timing=main
