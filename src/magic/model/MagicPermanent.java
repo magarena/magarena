@@ -730,8 +730,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 		// Shadow
 		final long blockerFlags = getAllAbilityFlags(game);
-		if (MagicAbility.Shadow.hasAbility(attackerFlags) &&
-			!MagicAbility.Shadow.hasAbility(blockerFlags)) {
+		if ((MagicAbility.Shadow.hasAbility(attackerFlags) &&
+			!MagicAbility.Shadow.hasAbility(blockerFlags)) ||
+			(!MagicAbility.Shadow.hasAbility(attackerFlags) &&
+			MagicAbility.Shadow.hasAbility(blockerFlags))) {
 			return false;
 		}
 		
