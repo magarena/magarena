@@ -8,14 +8,14 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicCondensedDeck;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicSubType;
 
 public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 
-	private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 20;
+	private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 30;
 	
+	private static final Random randGen = new Random();
 	// all possible tribes - calculated once
 	private static final ArrayList<MagicSubType> possibleTribes = new ArrayList<MagicSubType>();
 	private static final ArrayList<ArrayList<String>> possibleColors = new ArrayList<ArrayList<String>>();
@@ -32,7 +32,6 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 		}
 		
 		if(hasChoice()) {
-			Random randGen = new Random();
 			int i = randGen.nextInt(possibleTribes.size());
 			tribe = possibleTribes.get(i);
 			colorText = possibleColors.get(i).get(randGen.nextInt(possibleColors.get(i).size()));
@@ -96,6 +95,10 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 		return colorText;
 	}
 	
+	public int getMinRarity() {
+		return 1;
+	}
+	
 	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
 		if(hasChoice()) {
 			return (!card.isCreature()) || card.hasSubType(tribe);
@@ -109,6 +112,6 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public boolean ignoreMaxCost() {
-		return true;
+		return false;
 	}
 }
