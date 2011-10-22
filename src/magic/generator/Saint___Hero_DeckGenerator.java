@@ -31,7 +31,7 @@ public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Geist of Saint Traft", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Batterskull", "Day of Judgment", "Day of Judgment", "Mana Leak", "Mana Leak", "Mana Leak", "Timely Reinforcements", "Timely Reinforcements"};
+		String[] cards = {"Geist of Saint Traft", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Batterskull", "Day of Judgment", "Day of Judgment", "Mana Leak", "Mana Leak", "Mana Leak", "Timely Reinforcements", "Timely Reinforcements", "Oblivion Ring", "Oblivion Ring", "Sword of Feast and Famine"};
 		addRequiredCards(deck, cards);
 	}
 	
