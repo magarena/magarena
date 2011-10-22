@@ -8,3 +8,4 @@ Zombie Madness
 Vampire Rage
 Ability Mono
 White Metal
+Token Madness
