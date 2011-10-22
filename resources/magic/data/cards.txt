@@ -16588,3 +16588,30 @@ color=g
 converted=1
 cost={G}
 timing=main
+
+>Phobian Phantasm
+url=http://magiccards.info/cs/en/66.html
+image=http://magiccards.info/scans/en/cs/66.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Illusion
+color=b
+converted=3
+cost={1}{B}{B}
+pt=3/3
+ability=flying,fear
+timing=main
+
+>Uktabi Efreet
+url=http://magiccards.info/wl/en/85.html
+image=http://magiccards.info/scans/en/wl/85.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Efreet
+color=g
+converted=4
+cost={2}{G}{G}
+pt=5/4
+timing=main
