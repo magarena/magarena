@@ -16485,7 +16485,7 @@ timing=main
 >Arctic Wolves
 url=http://magiccards.info/wl/en/60.html
 image=http://magiccards.info/scans/en/wl/60.jpg
-value=5
+value=4
 rarity=U
 type=Creature
 subtype=Wolf
@@ -16493,4 +16493,32 @@ color=g
 converted=5
 cost={3}{G}{G}
 pt=4/5
+timing=main
+
+>Earthen Goo
+url=http://magiccards.info/cs/en/80.html
+image=http://magiccards.info/scans/en/cs/80.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Ooze
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+ability=trample
+timing=main
+
+>Firestorm Hellkite
+url=http://magiccards.info/vi/en/130.html
+image=http://magiccards.info/scans/en/vi/130.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=ur
+converted=6
+cost={4}{U}{R}
+pt=6/6
+ability=flying,trample
 timing=main
