@@ -16439,3 +16439,31 @@ converted=3
 cost={2}{B}
 pt=1/1
 timing=main
+
+>Odylic Wraith
+url=http://magiccards.info/wl/en/19.html
+image=http://magiccards.info/scans/en/wl/19.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Wraith
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+ability=swampwalk
+timing=main
+
+>Order of Yawgmoth
+url=http://magiccards.info/pvc/en/11.html
+image=http://magiccards.info/scans/en/pvc/11.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Zombie,Knight
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/2
+ability=fear
+timing=main
