@@ -20,18 +20,18 @@ public class DeckGenerators {
 	
 	private static final String FILENAME = "deckgenerators.txt";
 	
-	private final Map<String, DefaultDeckGenerator> generatorsMap;
+	private final Map<String, Class> generatorsMap;
 	
 	private DeckGenerators() {
-		generatorsMap = new TreeMap<String, DefaultDeckGenerator>();
+		generatorsMap = new TreeMap<String, Class>();
 	}
 	
 	public Set<String> getGeneratorNames() {
 		return generatorsMap.keySet();
 	}
 	
-	public void addDeckGenerator(final String name, final DefaultDeckGenerator generator) {
-		generatorsMap.put(name, generator);
+	private void addDeckGenerator(final String name, final Class c) {
+		generatorsMap.put(name, c);
 	}
 	
 	private void addDeckGenerator(final String name) {
@@ -39,29 +39,41 @@ public class DeckGenerators {
         final String cname = name.replaceAll("[^A-Za-z]", "_");
         try { // reflection
 			final Class c = Class.forName("magic.generator." + cname + "_DeckGenerator");
-            final DefaultDeckGenerator generator = (DefaultDeckGenerator) c.newInstance();
             
-			addDeckGenerator(name, generator);
+			addDeckGenerator(name, c);
 			
 			System.err.println("added deck generator " + name);
         } catch (final ClassNotFoundException ex) {
             // no class found
         } catch (final ClassCastException ex) {
             throw new RuntimeException(ex);
-        } catch (final InstantiationException ex) {
-            throw new RuntimeException(ex);
-        }  catch (final IllegalAccessException ex) {
-            throw new RuntimeException(ex);
         }
 	
 	}
 	
 	public DefaultDeckGenerator getDeckGenerator(final String name) {
-		return generatorsMap.get(name);
+		return getDeckGenerator(generatorsMap.get(name));
+	}
+	
+	private DefaultDeckGenerator getDeckGenerator(final Class c) {
+		DefaultDeckGenerator gen = null;
+		
+		if(c != null) {
+			try {
+				gen = (DefaultDeckGenerator) c.newInstance();
+			} catch (final ClassCastException ex) {
+		        throw new RuntimeException(ex);
+		    } catch (final InstantiationException ex) {
+		        throw new RuntimeException(ex);
+		    } catch (final IllegalAccessException ex) {
+		        throw new RuntimeException(ex);
+		    }
+		}
+		
+		return gen;
 	}
 	
 	private void loadDeckGenerators(final String filename) {
-
 		final InputStream stream = this.getClass().getResourceAsStream(filename);
         String content = null;
         try { // load file
