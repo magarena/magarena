@@ -16566,7 +16566,7 @@ timing=main
 
 >Kjeldoran Javelineer
 url=http://magiccards.info/cs/en/11.html
-image=hhttp://magiccards.info/scans/en/cs/11.jpg
+image=http://magiccards.info/scans/en/cs/11.jpg
 value=2
 rarity=C
 type=Creature
@@ -16575,4 +16575,16 @@ color=w
 converted=1
 cost={W}
 pt=1/2
+timing=main
+
+>Mwonvuli Ooze
+url=http://magiccards.info/wl/en/77.html
+image=http://magiccards.info/scans/en/wl/77.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Ooze
+color=g
+converted=1
+cost={G}
 timing=main
