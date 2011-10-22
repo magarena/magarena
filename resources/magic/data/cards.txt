@@ -16522,3 +16522,31 @@ cost={4}{U}{R}
 pt=6/6
 ability=flying,trample
 timing=main
+
+>Illusionary Forces
+url=http://magiccards.info/ia/en/75.html
+image=http://magiccards.info/scans/en/ia/75.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Illusion
+color=u
+converted=4
+cost={3}{U}
+pt=4/4
+ability=flying
+timing=main
+
+>Illusionary Wall
+url=http://magiccards.info/ia/en/78.html
+image=http://magiccards.info/scans/en/ia/78.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Illusion,Wall
+color=u
+converted=5
+cost={4}{U}
+pt=7/4
+ability=defender,flying,first strike
+timing=main
