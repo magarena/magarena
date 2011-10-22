@@ -1,16 +1,8 @@
 package magic.generator;
 
-import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColoredType;
 import magic.model.MagicCondensedDeck;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicRandom;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
 

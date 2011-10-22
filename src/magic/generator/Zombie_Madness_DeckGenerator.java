@@ -4,6 +4,7 @@ import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicPlayerProfile;
+import magic.model.MagicSubType;
 
 public class Zombie_Madness_DeckGenerator extends DefaultDeckGenerator {
 
@@ -24,7 +25,7 @@ public class Zombie_Madness_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
-		return (!card.isCreature()) || card.hasSubType(magic.model.MagicSubType.Zombie);
+		return !card.isCreature() || card.hasSubType(MagicSubType.Zombie);
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {

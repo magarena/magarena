@@ -101,7 +101,7 @@ public class Ability_Mono_DeckGenerator extends DefaultDeckGenerator {
 	
 	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
 		if(hasChoice()) {
-			return (!card.isCreature()) || card.hasAbility(ability);
+			return !card.isCreature() || card.hasAbility(ability);
 		} else {
 			return true;
 		}

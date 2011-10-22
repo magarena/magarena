@@ -4,13 +4,12 @@ import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicSubType;
 
-public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
+public class White_Metal_DeckGenerator extends DefaultDeckGenerator {
 
-	private final String colorText = "br";
+	private final String colorText = "w";
 	
-	public Vampire_Rage_DeckGenerator() {
+	public White_Metal_DeckGenerator() {
 		super(null);
 		
 		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
@@ -25,20 +24,24 @@ public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
-		return !card.isCreature() || card.hasSubType(MagicSubType.Vampire);
+		return !card.isCreature() || card.isArtifact();
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Falkenrath Marauders", "Falkenrath Noble", "Markov Patrician", "Markov Patrician", "Rakish Heir", "Rakish Heir", "Rakish Heir", "Stromkirk Noble", "Stromkirk Noble", "Stromkirk Noble", "Doom Blade", "Go for the Throat", "Go for the Throat", "Mask of Avacyn"};
+		String[] cards = {"Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Oblivion Ring", "Memnite", "Memnite", "Mikaeus, the Lunarch", "Mirran Crusader", "Signal Pest", "Signal Pest", "Signal Pest", "Glint Hawk Idol", "Glint Hawk Idol", "Glint Hawk Idol", "Glint Hawk Idol", "Mox Opal", "Mox Opal", "Leonin Relic-Warder"};
 		addRequiredCards(deck, cards);
 	}
 	
 	public void addRequiredLands(MagicCondensedDeck deck) {
-		String[] cards = {"Blackcleave Cliffs", "Blackcleave Cliffs", "Blackcleave Cliffs", "Blackcleave Cliffs", "Blood Crypt", "Blood Crypt", "Blood Crypt", "Dragonskull Summit", "Dragonskull Summit", "Dragonskull Summit", "Dragonskull Summit"};
+		String[] cards = {"Inkmoth Nexus", "Inkmoth Nexus", "Inkmoth Nexus", "Inkmoth Nexus"};
 		addRequiredCards(deck, cards);
 	}
 	
 	public void setColors(MagicPlayerProfile profile) {
 		profile.setColors(getColorText());
+	}
+	
+	public boolean ignoreMaxColorless() {
+		return true;
 	}
 }
