@@ -16629,3 +16629,53 @@ cost={2}{G}{G}
 pt=5/1
 ability=trample,haste
 timing=fmain
+
+>Ancient Den
+url=http://magiccards.info/pch/en/130.html
+image=http://magiccards.info/scans/en/pch/130.jpg
+value=2
+rarity=C
+type=Artifact,Land
+mana=w4
+basic=w
+timing=land
+
+>Great Furnace
+url=http://magiccards.info/pch/en/133.html
+image=http://magiccards.info/scans/en/pch/133.jpg
+value=2
+rarity=C
+type=Artifact,Land
+mana=r4
+basic=r
+timing=land
+
+>Seat of the Synod
+url=http://magiccards.info/pch/en/136.html
+image=http://magiccards.info/scans/en/pch/136.jpg
+value=2
+rarity=C
+type=Artifact,Land
+mana=u4
+basic=u
+timing=land
+
+>Tree of Tales
+url=http://magiccards.info/pch/en/140.html
+image=http://magiccards.info/scans/en/pch/140.jpg
+value=2
+rarity=C
+type=Artifact,Land
+mana=g4
+basic=g
+timing=land
+
+>Vault of Whispers
+url=http://magiccards.info/pch/en/141.html
+image=http://magiccards.info/scans/en/pch/141.jpg
+value=2
+rarity=C
+type=Artifact,Land
+mana=b4
+basic=b
+timing=land
