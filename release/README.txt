@@ -48,7 +48,7 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 7777 (October QQQ, 2011)
+Release 1.19 (October 28, 2011)
 ============
 brought to you by beholder, melvin, and wait321
  
@@ -71,9 +71,12 @@ brought to you by beholder, melvin, and wait321
 - fixed: game crashes because of creating components in non event dispatching thread
 - fixed: a creature enchanted with Pacifism can still attack
 - fixed: Torpor Dust gives flash ability instead of having flash ability
-? fixed: concurrent modification of delayedViewers (crash)
-- fixed: state-based actions are checked after every event instead of whenever a player would get priority and during cleanup step
-- fixed: undoing "gain control until end of turn" effect causes permanent to be controlled indefinately
+- fixed: game crashes when trying to update the card images after images are downloaded
+- fixed: state-based actions are checked after every event instead of whenever
+  a player would get priority and during cleanup step
+- fixed: creatures that are enchanted so that they cannot attack were able to attack
+- fixed: undoing "gain control until end of turn" effect causes permanent to
+  be controlled indefinately
 - fixed: permanent that becomes an artifact is not recognised as such by the game
 - fixed: Goldenglow Moth doesn't have flying ability
 - fixed: Angelheart Vial doesn't tap when activating its ability
