@@ -16412,3 +16412,30 @@ cost={2}{B/R}{B/R}
 pt=3/3
 ability=can't be blocked by white creatures
 timing=main
+
+>Abyssal Specter
+url=http://magiccards.info/dpa/en/18.html
+image=http://magiccards.info/scans/en/dpa/18.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Specter
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/3
+ability=flying
+timing=main
+
+>Chilling Apparition
+url=http://magiccards.info/pr/en/59.html
+image=http://magiccards.info/scans/en/pr/59.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Spirit
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+timing=main
