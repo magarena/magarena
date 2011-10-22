@@ -16615,3 +16615,17 @@ converted=4
 cost={2}{G}{G}
 pt=5/4
 timing=main
+
+>Yavimaya Ants
+url=http://magiccards.info/ai/en/93.html
+image=http://magiccards.info/scans/en/ai/93.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Insect
+color=g
+converted=4
+cost={2}{G}{G}
+pt=5/1
+ability=trample,haste
+timing=fmain
