@@ -9,15 +9,15 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
-public class Revered_Unicorn {
-	public static final MagicCumulativeUpkeepTrigger T1 = new MagicCumulativeUpkeepTrigger("{1}");
+public class Arctic_Nishoba {
+	public static final MagicCumulativeUpkeepTrigger T1 = new MagicCumulativeUpkeepTrigger("{G/W}");
     
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			if (permanent == data) {
 				final MagicPlayer player = permanent.getController();
-				final int amount = permanent.getCounters(MagicCounterType.Charge);
+				final int amount = permanent.getCounters(MagicCounterType.Charge) * 2;
 				if (amount > 0) {
 				return new MagicEvent(
                     permanent,
