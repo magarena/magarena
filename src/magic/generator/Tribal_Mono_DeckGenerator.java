@@ -101,7 +101,7 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 	
 	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
 		if(hasChoice()) {
-			return (!card.isCreature()) || card.hasSubType(tribe);
+			return !card.isCreature() || card.hasSubType(tribe);
 		} else {
 			return true;
 		}

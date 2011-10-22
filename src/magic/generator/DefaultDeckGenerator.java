@@ -8,7 +8,6 @@ import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
-import magic.model.MagicRarity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -135,13 +134,13 @@ public class DefaultDeckGenerator {
 					continue;
 				}
 				
-				final boolean colorless=cardDefinition.getColoredType()==MagicColoredType.Colorless;
-				if (colorless&&countColorless>=maxColorless) {
+				final boolean colorless = cardDefinition.getColoredType() == MagicColoredType.Colorless;
+				if (!ignoreMaxColorless() && colorless && countColorless >= maxColorless) {
 					continue;
 				}
 				
-				final int bucket=cardDefinition.getCostBucket();
-				if (!ignoreMaxCost() && countCost[bucket]>=maxCost[bucket]) {
+				final int bucket = cardDefinition.getCostBucket();
+				if (!ignoreMaxCost() && countCost[bucket] >= maxCost[bucket]) {
 					continue;
 				}
 				
@@ -195,6 +194,10 @@ public class DefaultDeckGenerator {
 	public void addRequiredLands(MagicCondensedDeck deck) { }
 	
 	public void setColors(MagicPlayerProfile profile) {	}
+	
+	public boolean ignoreMaxColorless() {
+		return false;
+	}
 	
 	public boolean ignoreMaxCost() {
 		return false;

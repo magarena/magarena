@@ -1,16 +1,8 @@
 package magic.generator;
 
-import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColoredType;
 import magic.model.MagicCondensedDeck;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicRandom;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
 
@@ -31,7 +23,7 @@ public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Geist of Saint Traft", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Batterskull", "Day of Judgment", "Day of Judgment", "Mana Leak", "Mana Leak", "Mana Leak", "Timely Reinforcements", "Timely Reinforcements"};
+		String[] cards = {"Geist of Saint Traft", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Batterskull", "Day of Judgment", "Day of Judgment", "Mana Leak", "Mana Leak", "Mana Leak", "Timely Reinforcements", "Timely Reinforcements", "Oblivion Ring", "Oblivion Ring", "Sword of Feast and Famine"};
 		addRequiredCards(deck, cards);
 	}
 	

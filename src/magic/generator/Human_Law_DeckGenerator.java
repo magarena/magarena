@@ -1,16 +1,10 @@
 package magic.generator;
 
-import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicColoredType;
 import magic.model.MagicCondensedDeck;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.model.MagicRandom;
-
-import java.util.ArrayList;
-import java.util.List;
+import magic.model.MagicSubType;
 
 public class Human_Law_DeckGenerator extends DefaultDeckGenerator {
 
@@ -31,7 +25,7 @@ public class Human_Law_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
-		return (!card.isCreature()) || card.hasSubType(magic.model.MagicSubType.Human);
+		return !card.isCreature() || card.hasSubType(MagicSubType.Human);
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
