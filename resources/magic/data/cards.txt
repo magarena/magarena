@@ -16705,3 +16705,19 @@ rarity=C
 type=Land
 subtype=Desert
 timing=land
+
+>Gavony Township
+url=http://magiccards.info/isd/en/239.html
+image=http://magiccards.info/scans/en/isd/239.jpg
+value=4
+rarity=R
+type=Land
+timing=land
+
+>Kessig Wolf Run
+url=http://magiccards.info/isd/en/243.html
+image=http://magiccards.info/scans/en/isd/243.jpg
+value=4
+rarity=R
+type=Land
+timing=land
