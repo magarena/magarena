@@ -11,6 +11,7 @@ public enum MagicSubType {
 	Swamp,
 	Equipment,
 	Aura,
+	Desert,
 
     //creatures
     Advisor, Ally, Angel, Anteater, Antelope, Ape, Archer, Archon, Artificer,

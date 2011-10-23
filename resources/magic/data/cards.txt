@@ -16688,3 +16688,20 @@ rarity=C
 type=Artifact,Land
 ability=indestructible
 timing=land
+
+>Academy Ruins
+url=http://magiccards.info/ts/en/269.html
+image=http://magiccards.info/scans/en/ts/269.jpg
+value=3
+rarity=R
+type=Legendary,Land
+timing=land
+
+>Desert
+url=http://magiccards.info/tsts/en/118.html
+image=http://magiccards.info/scans/en/tsts/118.jpg
+value=3
+rarity=C
+type=Land
+subtype=Desert
+timing=land

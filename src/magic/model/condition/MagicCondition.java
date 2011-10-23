@@ -45,6 +45,12 @@ public interface MagicCondition {
 					game.getTurnPlayer() == source.getController();
 		}
 	};
+	
+	MagicCondition END_OF_COMBAT_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return game.isPhase(MagicPhaseType.EndOfCombat);
+		}
+	};
 
 	MagicCondition ONE_LIFE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
