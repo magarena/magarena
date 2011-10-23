@@ -907,6 +907,19 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return permanent.hasSubType(MagicSubType.Insect,game) ||
+					permanent.hasSubType(MagicSubType.Rat,game) ||
+					permanent.hasSubType(MagicSubType.Spider,game) ||
+					permanent.hasSubType(MagicSubType.Squirrel,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_VAMPIRE_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent = (MagicPermanent)target;

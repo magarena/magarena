@@ -236,6 +236,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice POS_TARGET_GOBLIN_CREATURE =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CREATURE,true,MagicTargetHint.Positive,
 					"target Goblin creature ");
+	public static final MagicTargetChoice POS_TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL,true,MagicTargetHint.Positive,
+					"target Insect, Rat, Spider, or Squirrel");
 	private static final MagicTargetChoice SACRIFICE_PERMANENT=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=

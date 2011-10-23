@@ -16770,3 +16770,19 @@ value=3
 rarity=U
 type=Land
 timing=land
+
+>Sunhome, Fortress of the Legion
+url=http://magiccards.info/pch/en/138.html
+image=http://magiccards.info/scans/en/pch/138.jpg
+value=3
+rarity=U
+type=Land
+timing=land
+
+>Swarmyard
+url=http://magiccards.info/ts/en/278.html
+image=http://magiccards.info/scans/en/ts/278.jpg
+value=3
+rarity=R
+type=Land
+timing=land
