@@ -16802,3 +16802,22 @@ value=4
 rarity=R
 type=Legendary,Land
 timing=land
+
+>Dread Statuary
+url=http://magiccards.info/wwk/en/135.html
+image=http://magiccards.info/scans/en/wwk/135.jpg
+value=4
+rarity=U
+type=Land
+timing=land
+mana_or_combat
+
+>Faerie Conclave
+url=http://magiccards.info/10e/en/351.html
+image=http://magiccards.info/scans/en/10e/351.jpg
+value=4
+rarity=U
+type=Land
+mana=u3
+timing=land
+mana_or_combat
