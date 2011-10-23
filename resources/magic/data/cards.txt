@@ -16737,3 +16737,19 @@ value=4
 rarity=R
 type=Land
 timing=land
+
+>Goblin Burrows
+url=http://magiccards.info/evg/en/58.html
+image=http://magiccards.info/scans/en/evg/58.jpg
+value=3
+rarity=U
+type=Land
+timing=land
+
+>Gods' Eye, Gate to the Reikai
+url=http://magiccards.info/bok/en/164.html
+image=http://magiccards.info/scans/en/bok/164.jpg
+value=3
+rarity=R
+type=Legendary,Land
+timing=land
