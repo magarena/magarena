@@ -16786,3 +16786,19 @@ value=3
 rarity=R
 type=Land
 timing=land
+
+>Wirewood Lodge
+url=http://magiccards.info/evg/en/26.html
+image=http://magiccards.info/scans/en/evg/26.jpg
+value=3
+rarity=U
+type=Land
+timing=land
+
+>Yavimaya Hollow
+url=http://magiccards.info/ud/en/143.html
+image=http://magiccards.info/scans/en/ud/143.jpg
+value=4
+rarity=R
+type=Legendary,Land
+timing=land
