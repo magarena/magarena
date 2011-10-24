@@ -46,8 +46,8 @@ public class MagicMain {
 			}
 			
 			// customize nimbus look
-			UIManager.getLookAndFeelDefaults().put("Table.showGrid", true);
-			UIManager.getLookAndFeelDefaults().put("ScrollPane[Enabled].borderPainter", new BlankPainter()); // removes hardcoded border
+			//UIManager.getLookAndFeelDefaults().put("Table.showGrid", true);
+			//UIManager.getLookAndFeelDefaults().put("ScrollPane[Enabled].borderPainter", new BlankPainter()); // removes hardcoded border
 		} 
 		catch (Exception e) {
 			System.err.println("Unable to set look and feel. Probably missing the latest version of Java 6.");
