@@ -17022,3 +17022,30 @@ cost={2}{G}
 pt=2/3
 ability=reach
 timing=main
+
+>Pouncing Kavu
+url=http://magiccards.info/in/en/158.html
+image=http://magiccards.info/scans/en/in/158.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kavu
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+ability=first strike
+timing=main
+
+>Pouncing Wurm
+url=http://magiccards.info/pc/en/136.html
+image=http://magiccards.info/scans/en/pc/136.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Wurm
+color=g
+converted=4
+cost={3}{G}
+pt=3/3
+timing=main
