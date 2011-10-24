@@ -60,6 +60,7 @@ public class MagicManaCost {
 	public static final MagicManaCost THREE_GREEN=MagicManaCost.createCost("{3}{G}");
 	public static final MagicManaCost TWO_GREEN_GREEN=MagicManaCost.createCost("{2}{G}{G}");
 	public static final MagicManaCost TWO_GREEN_GREEN_GREEN=MagicManaCost.createCost("{2}{G}{G}{G}");
+	public static final MagicManaCost GREEN_GREEN=MagicManaCost.createCost("{G}{G}");
 	public static final MagicManaCost X_RED=MagicManaCost.createCost("{X}{R}");
 	public static final MagicManaCost ONE_RED=MagicManaCost.createCost("{1}{R}");
 	public static final MagicManaCost TWO_RED=MagicManaCost.createCost("{2}{R}");
