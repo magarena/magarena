@@ -46,8 +46,8 @@ public class Kor_Aeronaut {
                     new MagicKickerChoice(MagicManaCost.ONE_WHITE,false),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play " + card + ". When " + card + " enters the battlefield, " +
-                    "if it is was kicked$, target creature gains flying until end of turn.");
+                    "$Play " + card + ". If " + card + " was kicked$, " +
+                    "target creature gains flying until end of turn.");
 		}
 		@Override
 		public void executeEvent(

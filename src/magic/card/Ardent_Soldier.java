@@ -26,8 +26,8 @@ public class Ardent_Soldier {
                     new MagicKickerChoice(MagicManaCost.TWO,false),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play " + card + ". When " + card + " enters the battlefield, " +
-                    "if it is was kicked$, it enters the battlefield with a +1/+1 counter on it.");
+                    "$Play " + card + ". If " + card + " was kicked$, " +
+                    "it enters the battlefield with a +1/+1 counter on it.");
 		}
 		@Override
 		public void executeEvent(

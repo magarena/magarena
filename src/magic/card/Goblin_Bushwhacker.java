@@ -51,7 +51,7 @@ public class Goblin_Bushwhacker {
                     new MagicKickerChoice(MagicManaCost.RED,false),
                     new Object[]{cardOnStack},
                     this,
-                    "$Play " + card + ". When " + card + " enters the battlefield, if it was kicked$, " + 
+                    "$Play " + card + ". If " + card + " was kicked$, " + 
                     "creatures you control get +1/+0 and gain haste until end of turn.");
 		}
 		@Override

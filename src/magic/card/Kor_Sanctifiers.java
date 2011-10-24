@@ -47,8 +47,8 @@ public class Kor_Sanctifiers {
                     new MagicKickerChoice(MagicManaCost.WHITE,false),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play " + card + ". When " + card + " enters the battlefield, " +
-                    "if it is was kicked$, destroy target artifact or enchantment.");
+                    "$Play " + card + ". If " + card + " was kicked$, " +
+                    "destroy target artifact or enchantment.");
 		}
 		@Override
 		public void executeEvent(

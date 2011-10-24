@@ -51,8 +51,8 @@ public class Gatekeeper_of_Malakir {
                     new MagicKickerChoice(MagicManaCost.BLACK,false),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play " + card + ". When " + card + " enters the battlefield, " +
-                    "if it is was kicked$, target player sacrifices a creature.");
+                    "$Play " + card + ". If " + card + " was kicked$, " +
+                    "target player sacrifices a creature.");
 		}
 		@Override
 		public void executeEvent(

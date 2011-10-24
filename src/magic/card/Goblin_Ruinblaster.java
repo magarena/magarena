@@ -47,8 +47,8 @@ public class Goblin_Ruinblaster {
                     new MagicKickerChoice(MagicManaCost.RED,false),
                     new Object[]{cardOnStack,player},
                     this,
-                    "$Play " + card + ". When " + card + " enters the battlefield, " +
-                    "if it is was kicked$, destroy target nonbasic land.");
+                    "$Play " + card + ". If " + card + " was kicked$, " +
+                    "destroy target nonbasic land.");
 		}
 		@Override
 		public void executeEvent(
