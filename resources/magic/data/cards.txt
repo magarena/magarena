@@ -16967,3 +16967,30 @@ converted=1
 cost={B}
 pt=1/1
 timing=main
+
+>Faerie Squadron
+url=http://magiccards.info/in/en/58.html
+image=http://magiccards.info/scans/en/in/58.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Faerie
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+
+>Kavu Aggressor
+url=http://magiccards.info/in/en/148.html
+image=http://magiccards.info/scans/en/in/148.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kavu
+color=r
+converted=3
+cost={2}{R}
+pt=3/2
+ability=can't block
+timing=main
