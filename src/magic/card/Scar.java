@@ -24,7 +24,7 @@ public class Scar {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(-1,-1),
+                    new MagicWeakenTargetPicker(1,1),
                     new Object[]{cardOnStack},
                     this,
                     "Put a -1/-1 counter on target creature$.");

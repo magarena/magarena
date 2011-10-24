@@ -8,5 +8,5 @@ import magic.model.target.MagicWeakenTargetPicker;
 public class Clinging_Darkness {
 	public static final MagicSpellCardEvent S =new MagicPlayAuraEvent(
 			MagicTargetChoice.NEG_TARGET_CREATURE,
-            new MagicWeakenTargetPicker(-4,-1));
+            new MagicWeakenTargetPicker(4,1));
 }

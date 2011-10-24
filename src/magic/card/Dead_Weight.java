@@ -8,5 +8,5 @@ import magic.model.target.MagicWeakenTargetPicker;
 public class Dead_Weight {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.NEG_TARGET_CREATURE,
-            new MagicWeakenTargetPicker(-2,-2));
+            new MagicWeakenTargetPicker(2,2));
 }

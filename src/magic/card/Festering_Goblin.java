@@ -20,7 +20,7 @@ public class Festering_Goblin {
                         permanent,
                         permanent.getController(),
                         MagicTargetChoice.TARGET_CREATURE,
-                        new MagicWeakenTargetPicker(-1,-1),
+                        new MagicWeakenTargetPicker(1,1),
                         new Object[]{permanent},
                         this,
                 		"Target creature$ gets -1/-1 until end of turn.") :

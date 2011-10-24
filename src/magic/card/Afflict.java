@@ -23,7 +23,7 @@ public class Afflict {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(-1,-1),
+                    new MagicWeakenTargetPicker(1,1),
                     new Object[]{cardOnStack,player},
                     this,
                     "Target creature$ gets -1/-1 until end of turn.");

@@ -20,7 +20,7 @@ public class Grasp_of_Darkness {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(-4,-4),
+                    new MagicWeakenTargetPicker(4,4),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets -4/-4 until end of turn.");

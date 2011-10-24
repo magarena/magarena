@@ -19,7 +19,7 @@ public class Morkrut_Banshee {
 						permanent,
 						player,
 						MagicTargetChoice.NEG_TARGET_CREATURE,
-						new MagicWeakenTargetPicker(-4,-4),
+						new MagicWeakenTargetPicker(4,4),
 						MagicEvent.NO_DATA,
 						this,
 						"Target creature$ gets -4/-4 until  end of turn.") :

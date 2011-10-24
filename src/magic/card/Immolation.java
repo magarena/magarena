@@ -9,5 +9,5 @@ import magic.model.target.MagicWeakenTargetPicker;
 public class Immolation {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.TARGET_CREATURE,
-			new MagicWeakenTargetPicker(2,-2));
+			new MagicWeakenTargetPicker(2,2));
 }

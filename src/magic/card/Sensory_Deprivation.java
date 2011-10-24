@@ -8,5 +8,5 @@ import magic.model.target.MagicWeakenTargetPicker;
 public class Sensory_Deprivation {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.NEG_TARGET_CREATURE,
-            new MagicWeakenTargetPicker(-3,0));
+            new MagicWeakenTargetPicker(3,0));
 }

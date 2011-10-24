@@ -20,7 +20,7 @@ public class Skinrender {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(-3,-3),
+                    new MagicWeakenTargetPicker(3,3),
                     MagicEvent.NO_DATA,
                     this,
                     "Put three -1/-1 counters on target creature$.");
