@@ -17117,3 +17117,27 @@ converted=5
 cost={2}{B}{R}{G}
 pt=3/3
 timing=main
+
+>Deathgreeter
+url=http://magiccards.info/ala/en/71.html
+image=http://magiccards.info/scans/en/ala/71.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Shaman
+color=b
+converted=1
+cost={B}
+pt=1/1
+timing=fmain
+
+>Grave Pact
+url=http://magiccards.info/cmd/en/85.html
+image=http://magiccards.info/scans/en/cmd/85.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=4
+cost={1}{B}{B}{B}
+timing=enchantment
