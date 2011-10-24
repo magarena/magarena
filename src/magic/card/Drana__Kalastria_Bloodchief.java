@@ -34,7 +34,7 @@ public class Drana__Kalastria_Bloodchief {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
-                    new MagicWeakenTargetPicker(0,1),
+                    new MagicWeakenTargetPicker(0,amount),
                     new Object[]{source,amount},
                     this,
                     "Target creature$ gets -0/-"+amount+" until end of turn and " + 
