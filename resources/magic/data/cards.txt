@@ -16886,3 +16886,30 @@ converted=5
 cost={4}{R}
 pt=4/3
 timing=main
+
+>Enclave Elite
+url=http://magiccards.info/wwk/en/27.html
+image=http://magiccards.info/scans/en/wwk/27.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Merfolk,Soldier
+color=u
+converted=3
+cost={2}{U}
+pt=2/2
+ability=islandwalk
+timing=main
+
+>Gnarlid Pack
+url=http://magiccards.info/wwk/en/101.html
+image=http://magiccards.info/scans/en/wwk/101.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
