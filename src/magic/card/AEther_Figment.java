@@ -7,6 +7,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
@@ -40,7 +41,11 @@ public class AEther_Figment {
 			game.doAction(action);
 			final MagicPermanent permanent = action.getPermanent();
 			if (kicked) {
-				permanent.changeCounters(MagicCounterType.PlusOne,2);
+				game.doAction(new MagicChangeCountersAction(
+						permanent,
+	            		MagicCounterType.PlusOne,
+	            		2,
+	            		true));
 			}
 		}
 	};

@@ -8,6 +8,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicKickerChoice;
@@ -55,7 +56,11 @@ public class Kavu_Titan {
 			game.doAction(action);
 			final MagicPermanent permanent=action.getPermanent();
 			if (kicked) {
-				permanent.changeCounters(MagicCounterType.PlusOne,3);
+				game.doAction(new MagicChangeCountersAction(
+						permanent,
+	            		MagicCounterType.PlusOne,
+	            		3,
+	            		true));
                 game.doAction(new MagicAddStaticAction(permanent, Trample));
 			}
 		}
