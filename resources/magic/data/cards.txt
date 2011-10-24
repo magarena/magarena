@@ -17062,3 +17062,31 @@ converted=1
 cost={B}
 pt=0/1
 timing=main
+
+>Algae Gharial
+url=http://magiccards.info/ala/en/123.html
+image=http://magiccards.info/scans/en/ala/123.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Crocodile
+color=g
+converted=4
+cost={3}{G}
+pt=1/1
+ability=shroud
+timing=main
+
+>Rockslide Elemental
+url=http://magiccards.info/pch/en/63.html
+image=http://magiccards.info/scans/en/pch/63.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=3
+cost={2}{R}
+pt=1/1
+ability=first strike
+timing=main
