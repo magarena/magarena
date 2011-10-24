@@ -6,6 +6,7 @@ import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
+import magic.model.MagicRandom;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
@@ -244,7 +245,8 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		if (cardPoolDefs.isEmpty()) {
 			cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
  		} else {
- 			cardViewer.setCard(cardPoolDefs.get(0),0);
+ 			final int index = MagicRandom.nextInt(cardPoolDefs.size());
+ 			cardViewer.setCard(cardPoolDefs.get(index),0);
  		}
 	}
 	
