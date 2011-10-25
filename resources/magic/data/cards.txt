@@ -17205,3 +17205,29 @@ converted=3
 cost={2}{R}
 pt=2/2
 timing=main
+
+>Caravan Escort
+url=http://magiccards.info/roe/en/15.html
+image=http://magiccards.info/scans/en/roe/15.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+
+>Coralhelm Commander
+url=http://magiccards.info/roe/en/57.html
+image=http://magiccards.info/scans/en/roe/57.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Merfolk,Soldier
+color=u
+converted=2
+cost={U}{U}
+pt=2/2
+timing=main
