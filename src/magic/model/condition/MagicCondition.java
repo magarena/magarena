@@ -119,8 +119,13 @@ public interface MagicCondition {
                    permanent.getAbilityPlayedThisTurn() < 2;
 		}
 	};
-	
-	
+    
+    MagicCondition NOT_CREATURE_CONDITION=new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+            return !source.isCreature(game);
+		}
+	};
+    
 	MagicCondition MINUS_COUNTER_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
