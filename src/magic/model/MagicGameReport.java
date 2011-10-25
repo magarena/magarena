@@ -4,6 +4,7 @@ import magic.MagicMain;
 import magic.data.FileIO;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
+import magic.ui.VersionPanel;
 
 import java.io.File;
 import java.io.IOException;
@@ -108,6 +109,12 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         sb.append('\n');
         sb.append("CREATED ON " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
         sb.append('\n');
+        sb.append("MAGARENA VERSION " + VersionPanel.getVersion());
+        sb.append(", JRE " + System.getProperty("java.version"));
+        sb.append(", OS " + System.getProperty("os.name"));
+        sb.append("_" + System.getProperty("os.version"));
+        sb.append(" " + System.getProperty("os.arch"));
+        sb.append("\n\n");
         try {
             //buildReport might throw an exception
             if (game != null) {
