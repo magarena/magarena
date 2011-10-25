@@ -17141,3 +17141,41 @@ color=b
 converted=4
 cost={1}{B}{B}{B}
 timing=enchantment
+
+>Bonehoard
+url=http://magiccards.info/mbs/en/100.html
+image=http://magiccards.info/scans/en/mbs/100.jpg
+value=3
+rarity=R
+type=Artifact
+subtype=Equipment
+converted=4
+cost={4}
+equip={2}
+ability=living weapon
+timing=equipment
+
+>Proper Burial
+url=http://magiccards.info/di/en/16.html
+image=http://magiccards.info/scans/en/di/16.jpg
+value=3
+rarity=R
+type=Enchantment
+color=w
+converted=4
+cost={3}{W}
+timing=enchantment
+
+>Glissa, the Traitor
+url=http://magiccards.info/mbs/en/96.html
+image=http://magiccards.info/scans/en/mbs/96.jpg
+value=4
+rarity=M
+type=Legendary,Creature
+subtype=Zombie,Elf
+color=bg
+converted=3
+cost={B}{G}{G}
+pt=3/3
+ability=first strike,deathtouch
+timing=fmain

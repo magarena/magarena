@@ -3,27 +3,25 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
-import magic.model.action.MagicPlayerAction;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
-public class Grave_Pact {
+public class Proper_Burial {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
+			final int toughness = otherPermanent.getToughness(game);
 			return (otherPermanent.isCreature(game) &&
-					otherPermanent.getController() == player) ?
+					otherPermanent.getController() == player &&
+					toughness > 0) ?
 				new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{permanent},
+                    new Object[]{player,toughness},
                     this,
-                    "Opponent$ sacrifices a creature.") :
+                    player + " gains " + toughness + " life.") :
                 MagicEvent.NONE;
 		}
 		@Override
@@ -32,16 +30,9 @@ public class Grave_Pact {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer opponent) {
-        			if (opponent.controlsPermanentWithType(MagicType.Creature,game)) {
-        				game.addEvent(new MagicSacrificePermanentEvent(
-                            (MagicPermanent)data[0],
-                            opponent,
-                            MagicTargetChoice.SACRIFICE_CREATURE));
-                    }
-                }
-			});
+			game.doAction(new MagicChangeLifeAction(
+					(MagicPlayer)data[0],
+					(Integer)data[1]));
 		}
     };
 }
