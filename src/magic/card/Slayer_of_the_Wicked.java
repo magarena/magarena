@@ -20,12 +20,12 @@ public class Slayer_of_the_Wicked {
                     permanent,
                     player,
                     new MagicMayChoice(
-                            "You may destroy target Vampire, Werewolf, or Zombie.",
-                            MagicTargetChoice.NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE),
+                        player + " may destroy target Vampire, Werewolf, or Zombie.",
+                        MagicTargetChoice.NEG_TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE),
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ destroy target Vampire, Werewolf, or Zombie$.");
+                    player + " may$ destroy target Vampire, Werewolf, or Zombie$.");
 		}
                 	
 		@Override

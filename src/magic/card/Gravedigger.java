@@ -23,12 +23,14 @@ public class Gravedigger {
                     permanent,
                     player,
 	                new MagicMayChoice(
-                        "You may return target creature card from your graveyard to your hand.",
+                        player + " may return target creature card from " +
+                        "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ return target creature card$ from your graveyard to your hand.");
+                    player + " may$ return target creature card$ from" +
+                    " his or her graveyard to his or her hand.");
 		}
 		
 		@Override

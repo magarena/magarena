@@ -22,7 +22,7 @@ public class Mycoid_Shepherd {
 		                    permanent,
 		                    player,
 		                    new MagicSimpleMayChoice(
-		                            "You may gain 5 life.",
+		                            player + " may gain 5 life.",
 		                            MagicSimpleMayChoice.GAIN_LIFE,
 		                            5,
 		                            MagicSimpleMayChoice.DEFAULT_YES),
@@ -55,7 +55,7 @@ public class Mycoid_Shepherd {
         		                    permanent,
         		                    player,
         		                    new MagicSimpleMayChoice(
-        		                            "You may gain 5 life.",
+        		                            player + " may gain 5 life.",
         		                            MagicSimpleMayChoice.GAIN_LIFE,
         		                            5,
         		                            MagicSimpleMayChoice.DEFAULT_YES),

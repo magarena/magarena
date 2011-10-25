@@ -20,12 +20,12 @@ public class Acid_Web_Spider {
                     permanent,
                     player,
                     new MagicMayChoice(
-                            "You may destroy target Equipment.",
+                            player + " may destroy target Equipment.",
                             MagicTargetChoice.NEG_TARGET_EQUIPMENT),
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ destroy target Equipment$.");
+                    player + " may$ destroy target Equipment$.");
 		}
                 	
 		@Override

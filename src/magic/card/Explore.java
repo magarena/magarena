@@ -20,7 +20,7 @@ public class Explore {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "You may play an additional land this turn.");
+                    player + " may play an additional land this turn.");
 		}
 
 		@Override

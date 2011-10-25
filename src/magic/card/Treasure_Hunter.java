@@ -23,12 +23,14 @@ public class Treasure_Hunter {
                     permanent,
                     player,
 	                new MagicMayChoice(
-                        "You may return target artifact card from your graveyard to your hand.",
+                        player + " may return target artifact card from " +
+                        "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ return target artifact card$ from your graveyard to your hand.");
+                    player + " may$ return target artifact card$ from " +
+                    "his or her graveyard to his or her hand.");
 		}
 		
 		@Override

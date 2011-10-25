@@ -64,14 +64,14 @@ public class Glint_Hawk_Idol {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                        		"You may have " + permanent + " become a 2/2 Bird " +
-                                "artifact creature with flying until end of turn.",
-                                MagicSimpleMayChoice.BECOME_CREATURE,
-                                0,
-                                MagicSimpleMayChoice.DEFAULT_YES),
+                        	player + " may have " + permanent + " become a 2/2 Bird " +
+                            "artifact creature with flying until end of turn.",
+                        	MagicSimpleMayChoice.BECOME_CREATURE,
+                        	0,
+                        	MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{permanent},
                         this,
-                        "You may$ have " + permanent + " become a 2/2 Bird " +
+                        player + " may$ have " + permanent + " become a 2/2 Bird " +
                         "artifact creature with flying until end of turn."):
                 MagicEvent.NONE;
 		}

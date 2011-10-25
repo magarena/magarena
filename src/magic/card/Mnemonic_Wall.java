@@ -23,12 +23,14 @@ public class Mnemonic_Wall {
                     permanent,
                     player,
 	                new MagicMayChoice(
-                        "You may return target instant or sorcery card from your graveyard to your hand.",
+                        player + " may return target instant or sorcery card " +
+                        "from his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ return target instant or sorcery card$ from your graveyard to your hand.");
+                    player + " may$ return target instant or sorcery card$ " +
+                    "from his or her graveyard to his or her hand.");
 		}
 		
 		@Override

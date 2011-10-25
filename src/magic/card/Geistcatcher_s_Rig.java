@@ -20,8 +20,8 @@ public class Geistcatcher_s_Rig {
                     permanent,
                     player,
                     new MagicMayChoice(
-                    		"You may deal 4 damage to target creature or player.",
-                            MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
+                    	player + " may deal 4 damage to target creature or player.",
+                        MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
                     new MagicDamageTargetPicker(4),
                     new Object[]{permanent},
                     this,

@@ -23,7 +23,7 @@ public class Edric__Spymaster_of_Trest {
                                     permanent,
                                     player,
                                     new MagicSimpleMayChoice(
-                                        "You may draw a card.",
+                                        player + " may draw a card.",
                                         MagicSimpleMayChoice.DRAW_CARDS,
                                         1,
                                         MagicSimpleMayChoice.DEFAULT_NONE),

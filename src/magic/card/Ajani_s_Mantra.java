@@ -19,7 +19,7 @@ public class Ajani_s_Mantra {
 	                        permanent,
 	                        player,
 	                        new MagicSimpleMayChoice(
-	                                "You may gain 1 life.",
+	                                player + " may gain 1 life.",
 	                                MagicSimpleMayChoice.GAIN_LIFE,
 	                                1,
 	                                MagicSimpleMayChoice.DEFAULT_YES),

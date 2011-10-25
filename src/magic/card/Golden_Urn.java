@@ -29,13 +29,13 @@ public class Golden_Urn {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                                "You may put a charge counter on " + permanent + ".",
-                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_YES),
+                        	player + " may put a charge counter on " + permanent + ".",
+                        	MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        	1,
+                        	MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{permanent},
                         this,
-                        "You may$ put a charge counter on " + permanent + "."):
+                        player + " may$ put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
 		}
 		@Override

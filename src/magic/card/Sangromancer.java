@@ -22,7 +22,7 @@ public class Sangromancer {
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
-                            "You may gain 3 life.",
+                            player + " may gain 3 life.",
                             MagicSimpleMayChoice.GAIN_LIFE,
                             3,
                             MagicSimpleMayChoice.DEFAULT_YES),
@@ -53,7 +53,7 @@ public class Sangromancer {
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
-                            "You may gain 3 life.",
+                            player + " may gain 3 life.",
                             MagicSimpleMayChoice.GAIN_LIFE,
                             3,
                             MagicSimpleMayChoice.DEFAULT_YES),

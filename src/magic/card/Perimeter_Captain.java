@@ -21,7 +21,7 @@ public class Perimeter_Captain {
                                     permanent,
                                     player,
                                     new MagicSimpleMayChoice(
-                                            "You may gain 2 life.",
+                                            player + " may gain 2 life.",
                                             MagicSimpleMayChoice.GAIN_LIFE,
                                             2,
                                             MagicSimpleMayChoice.DEFAULT_YES),

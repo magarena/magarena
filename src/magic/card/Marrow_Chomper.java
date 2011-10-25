@@ -37,7 +37,7 @@ public class Marrow_Chomper {
 					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
 			final MagicTargetChoice targetChoice=new MagicTargetChoice(
 					targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");
-			final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+permanent+".",targetChoice);
+			final MagicChoice devourChoice=new MagicMayChoice(player + " may sacrifice a creature to "+permanent+".",targetChoice);
 			if (player.getNrOfPermanentsWithType(MagicType.Creature,game)>1) {
 					return new MagicEvent(
 							permanent,
@@ -46,7 +46,7 @@ public class Marrow_Chomper {
 							MagicSacrificeTargetPicker.getInstance(),
 							new Object[]{permanent},
 							this,
-							"You may$ sacrifice a creature$ to "+permanent+".");
+							player + " may$ sacrifice a creature$ to "+permanent+".");
 			}
 			gainLife(game,permanent);
 			return MagicEvent.NONE;

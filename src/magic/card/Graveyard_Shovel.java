@@ -42,7 +42,7 @@ public class Graveyard_Shovel {
                     new Object[]{player,source},
                     this,
                     "Target player$ exiles a card from his or her graveyard. " +
-                    "If it's a creature card, you gain 2 life.");
+                    "If it's a creature card, " + player + " gains 2 life.");
 		}
 		@Override
 		public void executeEvent(

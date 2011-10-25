@@ -24,8 +24,8 @@ public class Paraselene {
                     cardOnStack.getController(),
                     new Object[]{cardOnStack},
                     this,
-                    "Destroy all enchantments. You gain 1 life " +
-                    "for each enchantment destroyed this way.");
+                    "Destroy all enchantments. " + cardOnStack.getController() +
+                    " gains 1 life for each enchantment destroyed this way.");
 		}
 		@Override
 		public void executeEvent(

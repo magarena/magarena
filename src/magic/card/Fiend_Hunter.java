@@ -27,7 +27,7 @@ public class Fiend_Hunter {
 	                MagicTargetFilter.TARGET_CREATURE,permanent);
 			final MagicTargetChoice targetChoice = new MagicTargetChoice(
 	                targetFilter,false,MagicTargetHint.Negative,"another creature to exile");
-	        final MagicChoice championChoice = new MagicMayChoice("You may exile another creature.",targetChoice);
+	        final MagicChoice championChoice = new MagicMayChoice(player + " may exile another creature.",targetChoice);
 			return new MagicEvent(
                     permanent,
                     player,
@@ -35,7 +35,7 @@ public class Fiend_Hunter {
                     MagicExileTargetPicker.getInstance(),
                     new Object[]{permanent},
                     this,
-                    "You may$ exile another creature$.");
+                    player + " may$ exile another creature$.");
 		}
 		@Override
 		public void executeEvent(

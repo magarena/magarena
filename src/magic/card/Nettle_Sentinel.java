@@ -13,7 +13,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
 
 public class Nettle_Sentinel {
-    public static final MagicWhenSpellIsPlayedTrigger T2 = new MagicWhenSpellIsPlayedTrigger() {
+    public static final MagicWhenSpellIsPlayedTrigger T = new MagicWhenSpellIsPlayedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player = permanent.getController();
@@ -25,13 +25,13 @@ public class Nettle_Sentinel {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                        		"You may untap " + permanent + ".",
+                        		player + " may untap " + permanent + ".",
                                 MagicSimpleMayChoice.UNTAP,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
                                 new Object[]{permanent},
                         this,
-                        player + "  may$ untap " + permanent + ".") :
+                        player + " may$ untap " + permanent + ".") :
                 MagicEvent.NONE;
 		}
 		@Override

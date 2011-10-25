@@ -22,10 +22,10 @@ public class Judge_of_Currents {
     		                        permanent,
     		                        player,
     		                        new MagicSimpleMayChoice(
-    		                                "You may gain 1 life.",
-    		                                MagicSimpleMayChoice.GAIN_LIFE,
-    		                                1,
-    		                                MagicSimpleMayChoice.DEFAULT_YES),
+		                                player + " may gain 1 life.",
+		                                MagicSimpleMayChoice.GAIN_LIFE,
+		                                1,
+		                                MagicSimpleMayChoice.DEFAULT_YES),
     		                        new Object[]{player},
     		                        this,
     		                        player + " may$ gain 1 life.") :

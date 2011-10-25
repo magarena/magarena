@@ -55,12 +55,12 @@ public class Deathbringer_Liege {
                         permanent,
                         player,
                         new MagicMayChoice(
-                            "You may destroy target creature if it's tapped.",
+                            player + " may destroy target creature if it's tapped.",
                             MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicDestroyTargetPicker(false),
                         MagicEvent.NO_DATA,
                         this,
-                        "You may$ destroy target creature$ if it's tapped."):
+                        player + " may$ destroy target creature$ if it's tapped."):
                 MagicEvent.NONE;
 		}
 		
@@ -87,7 +87,9 @@ public class Deathbringer_Liege {
                 new MagicEvent(
                         permanent,
                         player,
-                        new MagicMayChoice(player + " may tap target creature.",MagicTargetChoice.NEG_TARGET_CREATURE),
+                        new MagicMayChoice(
+                        	player + " may tap target creature.",
+                        	MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicTapTargetPicker(true,false),
                         MagicEvent.NO_DATA,
                         this,

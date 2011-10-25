@@ -19,14 +19,14 @@ public class Goldenglow_Moth {
                             permanent,
                             player,
                             new MagicSimpleMayChoice(
-                                    "You may gain 4 life.",
-                                    MagicSimpleMayChoice.GAIN_LIFE,
-                                    3,
-                                    MagicSimpleMayChoice.DEFAULT_YES),
+                        		player + " may gain 4 life.",
+                        		MagicSimpleMayChoice.GAIN_LIFE,
+                        		3,
+                        		MagicSimpleMayChoice.DEFAULT_YES),
                             new Object[]{player},
                             this,
                             player + " may$ gain 4 life.") :
-                        MagicEvent.NONE;
+                    MagicEvent.NONE;
 		}
 		
 		@Override

@@ -49,13 +49,15 @@ public class Creakwood_Liege {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                                "You may put a 1/1 black and green Worm creature token onto the battlefield.",
+                                player + " may put a 1/1 black and green " +
+                                "Worm creature token onto the battlefield.",
                                 MagicSimpleMayChoice.PLAY_TOKEN,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{player},
                         this,
-                        player + " may$ put a 1/1 black and green Worm creature token onto the battlefield."):
+                        player + " may$ put a 1/1 black and green " +
+                        "Worm creature token onto the battlefield."):
                 MagicEvent.NONE;
 		}
 		@Override

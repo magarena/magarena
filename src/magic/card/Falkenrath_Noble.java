@@ -15,14 +15,14 @@ public class Falkenrath_Noble {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
 			return (otherPermanent.isCreature(game)) ?
-                    		new MagicEvent(
-        		                    permanent,
-        		                    player,
-        		                    MagicTargetChoice.NEG_TARGET_PLAYER,
-        		                    new Object[]{player},
-        		                    this,
-        		                    "Target player$ loses 1 life and you gain 1 life.") :
-        		                MagicEvent.NONE;
+				new MagicEvent(
+					permanent,
+					player,
+					MagicTargetChoice.NEG_TARGET_PLAYER,
+					new Object[]{player},
+					this,
+					"Target player$ loses 1 life and " + player + " gains 1 life.") :
+				MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(

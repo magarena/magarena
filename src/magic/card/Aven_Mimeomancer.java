@@ -23,17 +23,18 @@ public class Aven_Mimeomancer {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			return (permanent.getController()==data) ?
+			final MagicPlayer player = permanent.getController();
+			return (player == data) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
+                        player,
                         new MagicMayChoice(
-                            "You may put a feather counter on target creature.",
+                            player + " may put a feather counter on target creature.",
                             MagicTargetChoice.TARGET_CREATURE),
                         new MagicBecomeTargetPicker(3,1,true),
                         MagicEvent.NO_DATA,
                         this,
-                        "You may$ put a feather counter on target creature$."):
+                        player + " may$ put a feather counter on target creature$."):
                 MagicEvent.NONE;
 		}
 

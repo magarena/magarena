@@ -23,12 +23,14 @@ public class Corpse_Cur {
                     permanent,
                     player,
 	                new MagicMayChoice(
-                        "You may return target creature card with infect from your graveyard to your hand.",
+                        player + " may return target creature card with " +
+                        "infect from his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-                    "You may$ return target creature card$ with infect from your graveyard to your hand.");
+                    player + " may$ return target creature card$ with " +
+                    "infect from his or her graveyard to his or her hand.");
 		}
 		
 		@Override

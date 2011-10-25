@@ -27,13 +27,14 @@ public class Sword_of_Light_and_Shadow {
                     permanent,
                     player,
                     new MagicMayChoice(
-                        "You may return target creature card from your graveyard to your hand.",
+                        player + " may return target creature card from " +
+                        "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(false),
                     new Object[]{player},
                     this,
-                    player + " gains 3 life and you may$ return target creature card$ " +
-                            "from your graveyard to your hand."):
+                    player + " gains 3 life and may$ return target creature card$ " +
+					"from his or her graveyard to his or her hand."):
                 MagicEvent.NONE;
 		}
 		@Override

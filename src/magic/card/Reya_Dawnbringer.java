@@ -25,13 +25,14 @@ public class Reya_Dawnbringer {
                     permanent,
                     player,
                     new MagicMayChoice(
-                            "You may return target creature card from your graveyard to the battlefield.",
+                            player + " may return target creature card " +
+                            "from his or her graveyard to the battlefield.",
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
                     player + " may$ return target creature card$ from " +
-                    		"his or her graveyard to the battlefield.");
+                    "his or her graveyard to the battlefield.");
 		}
 		@Override
 		public void executeEvent(
