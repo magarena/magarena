@@ -20,18 +20,24 @@ import magic.model.target.MagicCopyTargetPicker;
 public class Rite_of_Replication {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+		public MagicEvent getEvent(
+				final MagicCardOnStack cardOnStack,
+				final MagicPayedCost payedCost) {
+			final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
 			return new MagicEvent(
                     card,
                     player,
-                    new MagicKickerChoice(MagicTargetChoice.TARGET_CREATURE,MagicManaCost.FIVE,false),
+                    new MagicKickerChoice(
+                    		MagicTargetChoice.TARGET_CREATURE,
+                    		MagicManaCost.FIVE,
+                    		false),
 				    MagicCopyTargetPicker.getInstance(),
                     new Object[]{cardOnStack,player},
                     this,
-                    "Put a token onto the battlefield that's a copy of target creature$. If " + card + 
-                    " was kicked$, put five of those tokens onto the battlefield instead.");
+                    "Put a token onto the battlefield that's a copy of " +
+                    "target creature$. If " + card + " was kicked$, put " +
+                    "five of those tokens onto the battlefield instead.");
 		}
 		@Override
 		public void executeEvent(
@@ -42,9 +48,9 @@ public class Rite_of_Replication {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicPlayer player=(MagicPlayer)data[1];
-                    final MagicCardDefinition cardDefinition=creature.getCardDefinition();
-                    int count=(Integer)choiceResults[1]>0?5:1;
+                    final MagicPlayer player = (MagicPlayer)data[1];
+                    final MagicCardDefinition cardDefinition = creature.getCardDefinition();
+                    int count = (Integer)choiceResults[1] > 0 ? 5:1;
                     for (;count>0;count--) {
                         game.doAction(new MagicPlayTokenAction(player,cardDefinition));
                     }

@@ -21,7 +21,10 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 public class Avenger_of_Zendikar {
     public static final MagicWhenComesIntoPlayTrigger T1 =new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+		public MagicEvent executeTrigger(
+				final MagicGame game,
+				final MagicPermanent permanent,
+				final MagicPlayer player) {
 			return new MagicEvent(
                     permanent,
                     player,
@@ -39,14 +42,19 @@ public class Avenger_of_Zendikar {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			int amount = player.getNrOfPermanentsWithType(MagicType.Land,game);
 			for (;amount>0;amount--) {
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Plant")));
+				game.doAction(new MagicPlayTokenAction(
+						player,
+						TokenCardDefinitions.getInstance().getTokenDefinition("Plant")));
 			}
 		}		
     };
     
     public static final MagicWhenOtherComesIntoPlayTrigger T2 = new MagicWhenOtherComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+		public MagicEvent executeTrigger(
+				final MagicGame game,
+				final MagicPermanent permanent,
+				final MagicPermanent played) {
 			final MagicPlayer player = permanent.getController();
 			return (player == played.getController() &&
 					played.isLand()) ?
@@ -54,13 +62,15 @@ public class Avenger_of_Zendikar {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                        		player + " may put a +1/+1 counter on each Plant creature he or she controls.",
+                        		player + " may put a +1/+1 counter on each " +
+                        		"Plant creature he or she controls.",
                                 MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{player},
                         this,
-                        player + " may$ put a +1/+1 counter on each Plant creature he or she controls."):
+                        player + " may$ put a +1/+1 counter on each " +
+                        "Plant creature he or she controls."):
                 MagicEvent.NONE;
 		}
 		@Override
@@ -71,8 +81,9 @@ public class Avenger_of_Zendikar {
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				final MagicPlayer player = (MagicPlayer)data[0];
-				final Collection<MagicTarget> targets =
-		                game.filterTargets(player,MagicTargetFilter.TARGET_PLANT_YOU_CONTROL);
+				final Collection<MagicTarget> targets = game.filterTargets(
+						player,
+						MagicTargetFilter.TARGET_PLANT_YOU_CONTROL);
 					for (final MagicTarget target : targets) {
 						game.doAction(new MagicChangeCountersAction(
 								(MagicPermanent)target,

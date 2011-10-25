@@ -31,29 +31,45 @@ public class Cemetery_Reaper {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL) {
         @Override
-        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void getPowerToughness(
+        		final MagicGame game,
+        		final MagicPermanent permanent,
+        		final MagicPowerToughness pt) {
             pt.add(1,1);
         }
         @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+        public boolean condition(
+        		final MagicGame game,
+        		final MagicPermanent source,
+        		final MagicPermanent target) {
             return source != target;
         }
     };
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO_BLACK.getCondition()},
+			new MagicCondition[]{
+					MagicCondition.CAN_TAP_CONDITION,
+					MagicManaCost.TWO_BLACK.getCondition()
+			},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.TWO_BLACK)};
+			return new MagicEvent[]{
+				new MagicPayManaCostTapEvent(
+						source,
+						source.getController(),
+						MagicManaCost.TWO_BLACK)};
 		}
 		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+		public MagicEvent getPermanentEvent(
+				final MagicPermanent source,
+				final MagicPayedCost payedCost) {
 			return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
-                    new MagicGraveyardTargetPicker(true), // exiling a high cost card is good here
+                    // exiling a high cost card is good here
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{source.getController()},
                     this,
                     "Exile target creature card from a graveyard. " +
@@ -68,9 +84,16 @@ public class Cemetery_Reaper {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     final MagicPlayer player=(MagicPlayer)data[0];
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-                    game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
+                    game.doAction(new MagicRemoveCardAction(
+                    		card,
+                    		MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(
+                    		card,
+                    		MagicLocationType.Graveyard,
+                    		MagicLocationType.Exile));
+                    game.doAction(new MagicPlayTokenAction(
+                    		player,
+                    		TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
                 }
 			});
 		}

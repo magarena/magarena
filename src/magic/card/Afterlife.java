@@ -20,15 +20,18 @@ import magic.model.target.MagicDestroyTargetPicker;
 public class Afterlife {
 	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+		public MagicEvent getEvent(
+				final MagicCardOnStack cardOnStack,
+				final MagicPayedCost payedCost) {
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicDestroyTargetPicker(true),
                     new Object[]{cardOnStack},this,
-                    "Destroy target creature$. It can't be regenerated. Its controller " +
-                    "puts a 1/1 white Spirit creature token with flying onto the battlefield.");
+                    "Destroy target creature$. It can't be regenerated. " +
+                    "Its controller puts a 1/1 white Spirit creature " +
+                    "token with flying onto the battlefield.");
 		}
 		@Override
 		public void executeEvent(
@@ -40,9 +43,14 @@ public class Afterlife {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer controller=creature.getController();
-                    game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
+                    game.doAction(new MagicChangeStateAction(
+                    		creature,
+                    		MagicPermanentState.CannotBeRegenerated,
+                    		true));
                     game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicPlayTokenAction(controller,TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
+                    game.doAction(new MagicPlayTokenAction(
+                    		controller,
+                    		TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
                 }
 			});
 		}
