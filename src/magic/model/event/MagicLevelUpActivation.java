@@ -7,6 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
 
 public class MagicLevelUpActivation extends MagicPermanentActivation {
@@ -20,7 +21,11 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
 		super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
-                new MaximumCondition(maximum),cost.getCondition()},
+                new MagicArtificialCondition(
+            		MagicCondition.NONE,
+            		new MaximumCondition(maximum)),
+            		cost.getCondition()
+            },
             ACTIVATION_HINTS,
             "Level");
 		this.cost=cost;
