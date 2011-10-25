@@ -17179,3 +17179,29 @@ cost={B}{G}{G}
 pt=3/3
 ability=first strike,deathtouch
 timing=fmain
+
+>Beastbreaker of Bala Ged
+url=http://magiccards.info/roe/en/178.html
+image=http://magiccards.info/scans/en/roe/178.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Warrior
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+
+>Brimstone Mage
+url=http://magiccards.info/roe/en/137.html
+image=http://magiccards.info/scans/en/roe/137.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+timing=main
