@@ -1668,6 +1668,26 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	public static final class MagicPowerTargetFilter implements MagicTargetFilter {
+
+		private final MagicTargetFilter targetFilter;
+        private final int power;		
+
+		public MagicPowerTargetFilter(final MagicTargetFilter targetFilter,final int power) {	
+			this.targetFilter = targetFilter;
+			this.power = power;
+		}
+		@Override
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return targetFilter.accept(game,player,target) &&
+					((MagicPermanent)target).getPower(game) <= power;
+		}
+		@Override
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetFilter.acceptType(targetType);
+		}		
+	};
+	
 	public static final class CardTargetFilter implements MagicTargetFilter {
 		
 		private final MagicCardDefinition cardDefinition;

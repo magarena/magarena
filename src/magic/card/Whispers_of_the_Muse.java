@@ -26,7 +26,7 @@ public class Whispers_of_the_Muse {
                     new Object[]{cardOnStack,player},
                     this,
                     player + " $draws a card. If the buyback cost was payed$, " +
-                    "return " + card + " to its owners hand as it resolves.");
+                    "return " + card + " to its owner's hand as it resolves.");
 		}
 		@Override
 		public void executeEvent(
