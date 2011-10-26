@@ -59,6 +59,7 @@ Bloodshot Trainee
 Blunt the Assault
 Bonds of Quicksilver
 Bonebreaker Giant
+Bonehoard
 Boneyard Wurm
 Bountiful Harvest
 Brain Weevil
@@ -164,6 +165,7 @@ Fume Spitter
 Gallows Warden
 Galvanic Juggernaut
 Garruk's Companion
+Gavony Township
 Geistcatcher's Rig
 Geist-Honored Monk
 Geist of Saint Traft
@@ -177,6 +179,7 @@ Gladecover Scout
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
+Glissa, the Traitor
 Glistener Elf
 Goblin Arsonist
 Goblin Chieftain
@@ -231,6 +234,7 @@ Kemba, Kha Regent
 Kemba's Skyguard
 Kessig Cagebreakers
 Kessig Wolf
+Kessig Wolf Run
 Kindercatch
 Kite Shield
 Koth's Courier
@@ -295,6 +299,7 @@ Necrogen Scudder
 Necropede
 Necropouncer
 Negate
+Nephalia Drownyard
 Neurok Invisimancer
 Night Revelers
 Oblivion Ring
@@ -386,6 +391,7 @@ Spire Monitor
 Spirit Mantle
 Splinterfright
 Stampeding Rhino
+Stensia Bloodhall
 Stingerfling Spider
 Stitcher's Apprentice
 Stormfront Pegasus

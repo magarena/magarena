@@ -1,6 +1,7 @@
 Abbey Griffin
 Abuna Acolyte
 Abyssal Specter
+Academy Ruins
 Accorder Paladin
 Accorder's Shield
 Acidic Slime
@@ -22,6 +23,7 @@ Akrasan Squire
 Akroma, Angel of Wrath
 Akroma's Memorial
 Alabaster Mage
+Algae Gharial
 Alloy Myr
 Alluring Siren
 Alpha Myr
@@ -126,6 +128,7 @@ Battle Hurda
 Battle-Mad Ronin
 Beacon of Destruction
 Beacon of Unrest
+Beastbreaker of Bala Ged
 Beastmaster Ascension
 Beastmaster's Magemark
 Behemoth Sledge
@@ -161,6 +164,7 @@ Blistering Dieflyn
 Bloodcrazed Neonate
 Blood Crypt
 Bloodgift Demon
+Bloodhusk Ritualist
 Blood Knight
 Bloodmark Mentor
 Bloodrock Cyclops
@@ -180,6 +184,7 @@ Bog Tatters
 Bog Wraith
 Bonds of Quicksilver
 Bonebreaker Giant
+Bonehoard
 Bone Saw
 Bonesplitter
 Boneyard Wurm
@@ -195,6 +200,7 @@ Bramblecrush
 Breeding Pool
 Briarberry Cohort
 Brigid, Hero of Kinsbaile
+Brimstone Mage
 Brindle Boar
 Brink of Disaster
 Brion Stoutarm
@@ -217,6 +223,7 @@ Canyon Wildcat
 Captain of the Watch
 Captive Flame
 Carapace Forger
+Caravan Escort
 Caravan Hurda
 Carnifex Demon
 Carrion Call
@@ -265,6 +272,7 @@ Copperhorn Scout
 Copperline Gorge
 Copper Myr
 Coral Eel
+Coralhelm Commander
 Coral Merfolk
 Corpse Cur
 Corpsehatch
@@ -322,7 +330,9 @@ Dead Weight
 Deadwood Treefolk
 Death Baron
 Deathbringer Liege
+Deathforge Shaman
 Deathgazer
+Deathgreeter
 Deathless Angel
 Deathmark
 Deathrender
@@ -333,6 +343,7 @@ Deluge
 Demolish
 Demon's Horn
 Demystify
+Desert
 Devoted Retainer
 Devouring Swarm
 Devout Lightcaster
@@ -362,6 +373,7 @@ Drake Umbra
 Dramatic Entrance
 Drana, Kalastria Bloodchief
 Dread
+Dread Statuary
 Dreg Reaver
 Drelnoch
 Drifter il-Dal
@@ -401,6 +413,7 @@ Embersmith
 Emerald Oryx
 Emeria Angel
 Empyrial Archangel
+Enclave Elite
 Endless Ranks of the Dead
 Engulfing Slagwurm
 Enormous Baloth
@@ -423,6 +436,7 @@ Ezuri's Archers
 Ezuri's Brigade
 Faceless Butcher
 Faceless Devourer
+Faerie Conclave
 Falkenrath Marauders
 Falkenrath Noble
 Fallen Angel
@@ -456,6 +470,7 @@ Fog
 Followed Footsteps
 Fomori Nomad
 Foot Soldiers
+Forbidding Watchtower
 Force of Savagery
 Forest
 Fortress Crab
@@ -475,12 +490,14 @@ Galvanic Juggernaut
 Game-Trail Changeling
 Garruk's Companion
 Gatekeeper of Malakir
+Gavony Township
 Geistcatcher's Rig
 Geist-Honored Monk
 Geist of Saint Traft
 Gelectrode
 Geyser Glider
 Ghalma's Warden
+Ghitu Encampment
 Ghost Council of Orzhova
 Ghostway
 Ghoulraiser
@@ -501,6 +518,7 @@ Glen Elendra Liege
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
+Glissa, the Traitor
 Glistener Elf
 Gloomhunter
 Gloomwidow
@@ -511,6 +529,7 @@ Glory Seeker
 Gluttonous Slime
 Gluttonous Zombie
 Gnarled Mass
+Gnarlid Pack
 Goblin Arsonist
 Goblin Artillery
 Goblin Balloon Brigade
@@ -537,6 +556,7 @@ Goblin Wardriver
 Goblin War Paint
 Godhead of Awe
 Godless Shrine
+Gods' Eye, Gate to the Reikai
 Godsire
 Go for the Throat
 Goldenglow Moth
@@ -553,6 +573,7 @@ Grasp of Darkness
 Grave Bramble
 Gravedigger
 Gravelgill Axeshark
+Grave Pact
 Grave Titan
 Graveyard Shovel
 Graypelt Refuge
@@ -576,8 +597,10 @@ Guardian Seraph
 Guardians of Akrasa
 Guardians' Pledge
 Gustcloak Cavalier
+Guul Draz Assassin
 Guul Draz Specter
 Guul Draz Vampire
+Hada Spy Patrol
 Hagra Crocodile
 Halcyon Glaze
 Hallowed Fountain
@@ -693,6 +716,8 @@ Kemba, Kha Regent
 Kemba's Skyguard
 Kessig Cagebreakers
 Kessig Wolf
+Kessig Wolf Run
+Khalni Garden
 Kiki-Jiki, Mirror Breaker
 Kindercatch
 Kindled Fury
@@ -721,6 +746,7 @@ Kor Spiritdancer
 Koth's Courier
 Kraken Hatchling
 Kraken's Eye
+Kresh the Bloodbraided
 Kuldotha Ringleader
 Kulrath Knight
 Kuro's Taken
@@ -882,6 +908,7 @@ Negate
 Nekrataal
 Nema Siltlurker
 Nemesis of Reason
+Nephalia Drownyard
 Nessian Courser
 Nether Horror
 Nettle Sentinel
@@ -962,6 +989,7 @@ Plover Knights
 Plumeveil
 Plummet
 Pongify
+Pouncing Wurm
 Predator Dragon
 Prickly Boggart
 Pride Guardian
@@ -970,6 +998,7 @@ Primal Rage
 Primordial Hydra
 Prodigal Pyromancer
 Promise of Bunrei
+Proper Burial
 Protective Bubble
 Psychic Barrier
 Pulse of the Fields
@@ -981,6 +1010,7 @@ Putrefy
 Putrid Leech
 Pyroclasm
 Qasali Pridemage
+Quag Vampires
 Quest for Renewal
 Quest for the Gemblades
 Quest for the Gravelord
@@ -1041,6 +1071,7 @@ River Kaijin
 Robe of Mirrors
 Roc Egg
 Rock Badger
+Rockslide Elemental
 Ronin Cavekeeper
 Ronin Cliffrider
 Ronin Houndmaster
@@ -1075,6 +1106,7 @@ Scaled Wurm
 Scar
 Scathe Zombies
 Scattershot Archer
+Scavenger Drake
 Scavenging Scarab
 Scepter of Dominance
 Scion of Oona
@@ -1141,12 +1173,14 @@ Silver-Inlaid Dagger
 Silver Myr
 Silverstorm Samurai
 Simic Sky Swallower
+Skarrg, the Rage Pits
 Skeletal Vampire
 Skinrender
 Skinshifter
 Skinwing
 Skirsdag Cultist
 Skithiryx, the Blight Dragon
+Skitter of Lizards
 Skullcage
 Skullmulcher
 Skyhunter Patrol
@@ -1223,6 +1257,7 @@ Starlight Invoker
 Steadfast Guard
 Steam Vents
 Steel Wall
+Stensia Bloodhall
 Steppe Lynx
 Steward of Valeron
 Stillmoon Cavalier
@@ -1254,6 +1289,7 @@ Sturmgeist
 Sudden Impact
 Sulfur Falls
 Sunblast Angel
+Sunhome, Fortress of the Legion
 Sunpetal Grove
 Sunspring Expedition
 Suntail Hawk
@@ -1265,6 +1301,7 @@ Surrakar Marauder
 Surveilling Sprite
 Suture Priest
 Swamp
+Swarmyard
 Swiftfoot Boots
 Sword of Body and Mind
 Sword of Feast and Famine
@@ -1324,6 +1361,7 @@ Trapjaw Kelpie
 Treasure Hunter
 Tree Monkey
 Tree of Redemption
+Treetop Village
 Trespasser il-Vec
 Tribute to Hunger
 Trip Noose

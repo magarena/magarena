@@ -16,6 +16,7 @@ Akoum Boulderfoot
 Akoum Refuge
 Akrasan Squire
 Alabaster Mage
+Algae Gharial
 Alloy Myr
 Alluring Siren
 Alpha Tyrranax
@@ -71,6 +72,7 @@ Batterskull
 Battlegrace Angel
 Battleground Geist
 Battle Hurda
+Beastbreaker of Bala Ged
 Beastmaster Ascension
 Behemoth Sledge
 Bellowing Tanglewurm
@@ -96,6 +98,7 @@ Blinding Mage
 Blistergrub
 Bloodcrazed Neonate
 Bloodgift Demon
+Bloodhusk Ritualist
 Blood Seeker
 Bloodshot Trainee
 Bloodthrone Vampire
@@ -106,12 +109,14 @@ Bog Tatters
 Bog Wraith
 Bonds of Quicksilver
 Bonebreaker Giant
+Bonehoard
 Bone Saw
 Boneyard Wurm
 Bountiful Harvest
 Brain Weevil
 Bramble Creeper
 Bramblecrush
+Brimstone Mage
 Brindle Boar
 Brink of Disaster
 Brittle Effigy
@@ -128,6 +133,7 @@ Cancel
 Canyon Minotaur
 Captain of the Watch
 Carapace Forger
+Caravan Escort
 Caravan Hurda
 Carnifex Demon
 Carrion Call
@@ -162,6 +168,7 @@ Contagious Nim
 Copperhorn Scout
 Copperline Gorge
 Copper Myr
+Coralhelm Commander
 Coral Merfolk
 Corpse Cur
 Corpsehatch
@@ -198,6 +205,8 @@ Day of Judgment
 Deadly Recluse
 Dead Weight
 Death Baron
+Deathforge Shaman
+Deathgreeter
 Deathless Angel
 Deathmark
 Deft Duelist
@@ -223,6 +232,7 @@ Dragon's Claw
 Dragonskull Summit
 Drake Umbra
 Drana, Kalastria Bloodchief
+Dread Statuary
 Dreg Reaver
 Drifting Shade
 Dross Hopper
@@ -247,6 +257,7 @@ Embersmith
 Emerald Oryx
 Emeria Angel
 Empyrial Archangel
+Enclave Elite
 Endless Ranks of the Dead
 Engulfing Slagwurm
 Enormous Baloth
@@ -288,6 +299,7 @@ Gallows Warden
 Galvanic Juggernaut
 Garruk's Companion
 Gatekeeper of Malakir
+Gavony Township
 Geistcatcher's Rig
 Geist-Honored Monk
 Geist of Saint Traft
@@ -305,12 +317,14 @@ Glaze Fiend
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
+Glissa, the Traitor
 Glistener Elf
 Gloomhunter
 Glorious Charge
 Glory of Warfare
 Glory Seeker
 Gluttonous Slime
+Gnarlid Pack
 Goblin Arsonist
 Goblin Artillery
 Goblin Balloon Brigade
@@ -360,8 +374,10 @@ Guard Gomazoa
 Guardian Seraph
 Guardians of Akrasa
 Guardians' Pledge
+Guul Draz Assassin
 Guul Draz Specter
 Guul Draz Vampire
+Hada Spy Patrol
 Hagra Crocodile
 Halt Order
 Hamlet Captain
@@ -428,6 +444,8 @@ Kemba, Kha Regent
 Kemba's Skyguard
 Kessig Cagebreakers
 Kessig Wolf
+Kessig Wolf Run
+Khalni Garden
 Kindercatch
 Kindled Fury
 Kiss of the Amesha
@@ -443,6 +461,7 @@ Kor Spiritdancer
 Koth's Courier
 Kraken Hatchling
 Kraken's Eye
+Kresh the Bloodbraided
 Kuldotha Ringleader
 Lantern Spirit
 Lava Axe
@@ -547,6 +566,7 @@ Necropouncer
 Negate
 Nema Siltlurker
 Nemesis of Reason
+Nephalia Drownyard
 Nether Horror
 Neurok Invisimancer
 Nightmare
@@ -599,6 +619,7 @@ Psychic Barrier
 Putrid Leech
 Pyroclasm
 Qasali Pridemage
+Quag Vampires
 Quest for Renewal
 Quest for the Gemblades
 Quest for the Gravelord
@@ -635,6 +656,7 @@ Rite of Replication
 Rites of Flourishing
 River Boa
 Roc Egg
+Rockslide Elemental
 Rootbound Crag
 Rotting Fensnake
 Rotting Legion
@@ -649,6 +671,7 @@ Sangromancer
 Sanguine Bond
 Savage Lands
 Scattershot Archer
+Scavenger Drake
 Scepter of Dominance
 Scoria Elemental
 Scourge of Geier Reach
@@ -695,6 +718,7 @@ Skinshifter
 Skinwing
 Skirsdag Cultist
 Skithiryx, the Blight Dragon
+Skitter of Lizards
 Skullmulcher
 Sky Ruin Drake
 Skywinder Drake
@@ -737,6 +761,7 @@ Splinterfright
 Sporecap Spider
 Sprouting Thrinax
 Stampeding Rhino
+Stensia Bloodhall
 Steppe Lynx
 Steward of Valeron
 Stingerfling Spider
