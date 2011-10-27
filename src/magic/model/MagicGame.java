@@ -160,6 +160,7 @@ public class MagicGame {
         this.turn = game.turn;
 		this.startTurn = game.startTurn;
 		this.landPlayed = game.landPlayed;
+		this.creatureDiedThisTurn = game.creatureDiedThisTurn;
 		this.priorityPassed = game.priorityPassed;
         this.priorityPassedCount = game.priorityPassedCount;
 		this.stateCheckRequired = game.stateCheckRequired;
