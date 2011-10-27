@@ -219,6 +219,14 @@ daily: $(EXE)
 			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
 			Magarena_`hg id -n`.exe
 
+%.up: %
+	scripts/googlecode_upload.py \
+			-s "$^" \
+			-p magarena \
+			-u melvinzhang@gmail.com \
+			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
+			$^
+
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
 	scala $^ > $@ 2> cards/others.txt
 
