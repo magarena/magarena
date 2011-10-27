@@ -261,6 +261,7 @@ Cancel
 Canopy Spider
 Canyon Minotaur
 Canyon Wildcat
+Capsize
 Captain of the Watch
 Captive Flame
 Carapace Forger
@@ -890,6 +891,7 @@ Lavacore Elemental
 Leaden Myr
 Leaf Dancer
 Leatherback Baloth
+Legacy's Allure
 Leonin Relic-Warder
 Leonin Scimitar
 Leonin Skyhunter
@@ -1089,6 +1091,7 @@ Omnibian
 One-Eyed Scarecrow
 Onyx Mage
 Oona's Gatewarden
+Ophidian
 Oracle of Nectars
 Orchard Spirit
 Orcish Artillery
@@ -1722,6 +1725,7 @@ Waveskimmer Aven
 Weakness
 Welkin Tern
 Whispersilk Cloak
+Whispers of the Muse
 White Knight
 Wickerbough Elder
 Wild Griffin
