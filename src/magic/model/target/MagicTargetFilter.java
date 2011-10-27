@@ -1643,6 +1643,16 @@ public interface MagicTargetFilter {
 		}						
 	};
 	
+	MagicTargetFilter TARGET_GOBLIN_CARD_FROM_HAND = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicCardDefinition cardDefinition = ((MagicCard)target).getCardDefinition();
+			return cardDefinition.hasSubType(MagicSubType.Goblin);
+		}	
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Hand;
+		}						
+	};
+	
 	// Permanent reference can not be used because game is copied.
 	public static final class MagicOtherPermanentTargetFilter implements MagicTargetFilter {
 
@@ -1681,6 +1691,26 @@ public interface MagicTargetFilter {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return targetFilter.accept(game,player,target) &&
 					((MagicPermanent)target).getPower(game) <= power;
+		}
+		@Override
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetFilter.acceptType(targetType);
+		}		
+	};
+	
+	public static final class MagicCMCTargetFilter implements MagicTargetFilter {
+
+		private final MagicTargetFilter targetFilter;
+        private final int cmc;		
+
+		public MagicCMCTargetFilter(final MagicTargetFilter targetFilter,final int cmc) {	
+			this.targetFilter = targetFilter;
+			this.cmc = cmc;
+		}
+		@Override
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return targetFilter.accept(game,player,target) &&
+					((MagicCard)target).getCardDefinition().hasConvertedCost(cmc);
 		}
 		@Override
 		public boolean acceptType(final MagicTargetType targetType) {

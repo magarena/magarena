@@ -17303,3 +17303,26 @@ converted=3
 cost={2}{U}
 pt=1/3
 timing=main
+
+>AEther Vial
+url=http://magiccards.info/ds/en/91.html
+image=http://magiccards.info/scans/en/ds/91.jpg
+value=2
+rarity=U
+type=Artifact
+converted=1
+cost={1}
+timing=main
+
+>Goblin Lackey
+url=http://magiccards.info/fve/en/5.html
+image=http://magiccards.info/scans/en/fve/5.jpg
+value=2
+rarity=M
+type=Creature
+subtype=Goblin
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main

@@ -315,6 +315,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_LAND_CARD_FROM_HAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_LAND_CARD_FROM_HAND,false,MagicTargetHint.None,
 			"a land card from your hand");
+	public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_HAND =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_HAND,false,MagicTargetHint.None,
+			"a Goblin permanent card from your hand");
 		
 	private final String targetDescription;
 	private final MagicTargetFilter targetFilter;
