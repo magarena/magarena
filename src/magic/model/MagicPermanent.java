@@ -674,7 +674,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public boolean canAttack(final MagicGame game) {
 		if (!isCreature(game) || 
             !canTap(game) || 
-            hasState(MagicPermanentState.ExcludeFromCombat)) {
+            hasState(MagicPermanentState.ExcludeFromCombat) ||
+            hasState(MagicPermanentState.CannotAttack)) {
 			return false;
 		}
 		final long flags=getAllAbilityFlags(game);

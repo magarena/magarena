@@ -17423,3 +17423,25 @@ color=w
 converted=1
 cost={W}
 timing=pump
+
+>Brush with Death
+url=http://magiccards.info/sh/en/2.html
+image=http://magiccards.info/scans/en/sh/2.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=3
+cost={2}{B}
+timing=removal
+
+>Change of Heart
+url=http://magiccards.info/sh/en/103.html
+image=http://magiccards.info/scans/en/sh/103.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=mustattack
