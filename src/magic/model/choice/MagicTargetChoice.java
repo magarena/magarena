@@ -266,7 +266,7 @@ public class MagicTargetChoice extends MagicChoice {
 			new MagicTargetChoice(MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL,false,MagicTargetHint.None,
 					"a Merfolk to sacrifice");
 	public static final MagicTargetChoice TARGET_CARD_FROM_GRAVEYARD =
-			new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target creature card from your graveyard");
+			new MagicTargetChoice(MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target card from your graveyard");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_GRAVEYARD=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,false,MagicTargetHint.None,"target creature card from your graveyard");
 	public static final MagicTargetChoice TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD=

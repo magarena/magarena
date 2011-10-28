@@ -17445,3 +17445,14 @@ color=w
 converted=1
 cost={W}
 timing=mustattack
+
+>Corpse Dance
+url=http://magiccards.info/tp/en/10.html
+image=http://magiccards.info/scans/en/tp/10.jpg
+value=3
+rarity=R
+type=Instant
+color=b
+converted=3
+cost={2}{B}
+timing=animate
