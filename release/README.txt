@@ -44,6 +44,7 @@ Thanks to
   beholder for implementing new cards and general usability improvements
   johncpatterson for helping to test the Mac startup script
   wait321 for creating a deck editor and other UI improvements
+  missalexis for creating an application bundle to improve Mac installation
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
