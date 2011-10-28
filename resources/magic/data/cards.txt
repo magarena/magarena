@@ -17556,3 +17556,29 @@ converted=2
 cost={R}{R}
 pt=2/2
 timing=main
+
+>Kazandu Tuskcaller
+url=http://magiccards.info/roe/en/191.html
+image=http://magiccards.info/scans/en/roe/191.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=2
+cost={1}{G}
+pt=1/1
+timing=main
+
+>Knight of Cliffhaven
+url=http://magiccards.info/roe/en/29.html
+image=http://magiccards.info/scans/en/roe/29.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kor,Knight
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+timing=main
