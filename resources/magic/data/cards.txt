@@ -17326,3 +17326,27 @@ converted=1
 cost={R}
 pt=1/1
 timing=main
+
+>Artifact Mutation
+url=http://magiccards.info/in/en/231.html
+image=http://magiccards.info/scans/en/in/231.jpg
+value=3
+removal=1
+rarity=R
+type=Instant
+color=rg
+converted=2
+cost={R}{G}
+timing=removal
+
+>Disenchant
+url=http://magiccards.info/tsts/en/6.html
+image=http://magiccards.info/scans/en/tsts/6.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=w
+converted=2
+cost={1}{W}
+timing=removal
