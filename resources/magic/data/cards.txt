@@ -17582,3 +17582,29 @@ converted=2
 cost={1}{W}
 pt=2/2
 timing=main
+
+>Lighthouse Chronologist
+url=http://magiccards.info/roe/en/75.html
+image=http://magiccards.info/scans/en/roe/75.jpg
+value=2
+rarity=M
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=2
+cost={1}{U}
+pt=1/3
+timing=main
+
+>Null Champion
+url=http://magiccards.info/roe/en/121.html
+image=http://magiccards.info/scans/en/roe/121.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Zombie,Warrior
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=main
