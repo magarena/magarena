@@ -10,7 +10,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
-public class Manic_Vandal {
+public class Oxidda_Scrapmelter {
 	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
