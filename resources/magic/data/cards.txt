@@ -17504,3 +17504,29 @@ converted=2
 cost={1}{U}
 pt=0/3
 timing=main
+
+>Hedron-Field Purists
+url=http://magiccards.info/roe/en/25.html
+image=http://magiccards.info/scans/en/roe/25.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=3
+cost={2}{W}
+pt=0/3
+timing=main
+
+>Ikiral Outrider
+url=http://magiccards.info/roe/en/27.html
+image=http://magiccards.info/scans/en/roe/27.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={1}{W}
+pt=1/2
+timing=main
