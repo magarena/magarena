@@ -17530,3 +17530,29 @@ converted=1
 cost={1}{W}
 pt=1/2
 timing=main
+
+>Kabira Vindicator
+url=http://magiccards.info/roe/en/28.html
+image=http://magiccards.info/scans/en/roe/28.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=w
+converted=4
+cost={3}{W}
+pt=2/4
+timing=main
+
+>Kargan Dragonlord
+url=http://magiccards.info/roe/en/152.html
+image=http://magiccards.info/scans/en/roe/152.jpg
+value=3
+rarity=M
+type=Creature
+subtype=Human,Warrior
+color=r
+converted=2
+cost={R}{R}
+pt=2/2
+timing=main

@@ -174,6 +174,13 @@ public interface MagicCondition {
 		}
 	};
 	
+	MagicCondition EIGHT_CHARGE_COUNTERS_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPermanent permanent = (MagicPermanent)source;
+			return permanent.getCounters(MagicCounterType.Charge) >= 8;
+		}
+	};
+	
 	MagicCondition CAN_REGENERATE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
