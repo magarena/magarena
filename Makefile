@@ -33,7 +33,7 @@ themes: \
 	release/mods/whiteangel_theme.zip
 
 casts: $(MAG) 
-	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | dos2unix > $@
+	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | flip -u > $@
 
 warnings_H.txt: warnings.txt
 	grep "(H)" $^ > $@
@@ -85,7 +85,7 @@ cards/new.txt: cards/existing.txt
 
 cards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
-	dos2unix $@
+	flip -u $@
 
 cards/existing_full.txt: cards/existing.txt cards/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
@@ -100,6 +100,7 @@ M1.%: clean all cubes
 	grep "VERSION.*1.$*" -r src/*
 	grep "Release.*1.$*" release/README.txt
 	-rm -rf Magarena-1.$*
+	-rm -rf Magarena-1.$*.app
 	-rm Magarena-1.$*.zip
 	mkdir -p Magarena-1.$*/Magarena/mods
 	cp \
@@ -119,6 +120,10 @@ M1.%: clean all cubes
 			release/mods/*.txt \
 			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
+	cp -r Magarena.app Magarena-1.$*.app
+	cd Magarena-1.$*.app/Contents/Resources; ln -s ../../../Magarena-1.$* Java
+	chmod a+x Magarena-1.$*.app/Contents/MacOS/JavaApplicationStub
+	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app 
 
 $(MAG): $(SRC) 
 	ant -f build-safe.xml
