@@ -15,6 +15,10 @@ public class Elesh_Norn__Grand_Cenobite {
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(2,2);
         }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
     };
     public static final MagicStatic S2 = new MagicStatic(
         MagicLayer.ModPT, 
