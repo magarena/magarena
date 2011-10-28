@@ -17456,3 +17456,25 @@ color=b
 converted=3
 cost={2}{B}
 timing=animate
+
+>Disturbed Burial
+url=http://magiccards.info/tp/en/23.html
+image=http://magiccards.info/scans/en/tp/23.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=2
+cost={1}{B}
+timing=draw
+
+>Elvish Fury
+url=http://magiccards.info/tp/en/120.html
+image=http://magiccards.info/scans/en/tp/120.jpg
+value=2
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
