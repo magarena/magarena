@@ -34,7 +34,7 @@ Thanks to
   IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
-  LSK, Kuno, David, and Grundomu for contributing custom decks
+  David, Grundomu, jeffwadsworth, Kuno and LSK for contributing custom decks
   pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
@@ -65,7 +65,7 @@ brought to you by beholder, melvin, and wait321
 - added support for "when leaves play" trigger
 - added support for shadow ability
 - added support for can't be blocked by a color ability
-
+- added Affinity and Finkel_Fun decks
 
 - fixed: static effects that change or add colors don't work
 - fixed: game crashes because of creating components in non event dispatching thread
@@ -79,7 +79,11 @@ brought to you by beholder, melvin, and wait321
 - fixed: permanent that becomes an artifact is not recognized as such by the game
 - fixed: Goldenglow Moth doesn't have flying ability
 - fixed: Angelheart Vial doesn't tap when activating its ability
-- fixed: Hypnotic Specter's ability triggers for controller
+- fixed: Hypnotic Specter's ability triggers for its controller
+- fixed: Magarena crashes when using java 7
+- fixed: Eel Umbra doesn't have flash ability
+- fixed: Windrider Eel is black but should be blue
+- fixed: Elesh Norn, Grand Cenobite gives itself a bonus
 
 - added the following cards:
 
