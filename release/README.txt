@@ -86,7 +86,129 @@ brought to you by beholder, melvin, and wait321
 - fixed: Windrider Eel is black but should be blue
 - fixed: Elesh Norn, Grand Cenobite gives itself a bonus
 
-- added the following cards:
+- added the following 541 cards:
+Abbey Griffin, Abuna Acolyte, Abyssal Specter, Academy Ruins, Acid Web Spider,
+Admonition Angel, AErathi Berserker, AEtherflame Wall, AEther Membrane, AEther
+Vial, AEther Web, Algae Gharial, Allay, Alley Grifters, Ambush Viper,
+Amphibious Kavu, Ancient Den, Ancient Hydra, Angelic Overseer, Angel of Flight
+Alabaster, Anoint, Apex Hawks, Apocalypse Hydra, Araba Mothrider, Arcbound
+Bruiser, Arcbound Crusher, Arcbound Fiend, Arcbound Hybrid, Arcbound Lancer,
+Arcbound Overseer, Arcbound Ravager, Arcbound Reclaimer, Arcbound Slith,
+Arcbound Stinger, Arcbound Worker, Arctic Nishoba, Arctic Wolves, Ardent
+Soldier, Argent Sphinx, Argentum Armor, Armored Skaab, Artifact Mutation,
+Ashmouth Hound, Assault Strobe, Augur il-Vec, Aurification, Auriok Edgewright,
+Auriok Sunchaser, Avacynian Priest, Avacyn's Pilgrim, Avenger of Zendikar,
+Aven Riftwatcher, Balduvian War-Makers, Balefire Dragon, Barrage Ogre,
+Barrenton Cragtreads, Battered Golem, Battleground Geist, Battle-Mad Ronin,
+Beastbreaker of Bala Ged, Beastmaster's Magemark, Benalish Cavalry, Benalish
+Lancer, Berserk Murlodont, Blade Splicer, Blade-Tribe Berserkers, Blastoderm,
+Bleak Coven Vampires, Blight Mamba, Blinking Spirit, Blistergrub, Bloodcrazed
+Neonate, Bloodgift Demon, Bloodhusk Ritualist, Bloodshot Trainee, Blunt the
+Assault, Boggart Mob, Bonds of Quicksilver, Bonehoard, Boneyard Wurm, Brain
+Weevil, Bramblecrush, Brimstone Mage, Brushwagg, Brush with Death, Burning
+Shield Askari, Butcher's Cleaver, Cadaverous Knight, Calciderm, Calcite
+Snapper, Capsize, Carapace Forger, Caravan Escort, Carrion Call, Caustic
+Crawler, Cave Tiger, Chambered Nautilus, Champion of the Parish, Changeling
+Berserker, Changeling Hero, Changeling Titan, Change of Heart, Chapel Geist,
+Charmbreaker Devils, Chilling Apparition, Chrome Steed, Chronozoa, Chub Toad,
+Claustrophobia, Clifftop Retreat, Close Quarters, Cloudskate, Cobbled Wings,
+Copperhorn Scout, Copper Myr, Coralhelm Commander, Corpse Cur, Corpse Dance,
+Corrupted Harvester, Corrupt Official, Cosi's Ravager, Craw Giant, Crossway
+Vampire, Culling Dais, Curiosity, Cursed Ronin, Cutthroat il-Dal, Darksteel
+Citadel, Darksteel Juggernaut, Darkthicket Wolf, Dauthi Cutthroat, Dauthi
+Embrace, Dauthi Ghoul, Dauthi Horror, Dauthi Marauder, Dauthi Mercenary,
+Dauthi Slayer, Dauthi Trapper, Dauthi Warlord, Day of the Dragons, Dead
+Weight, Deadwood Treefolk, Deathforge Shaman, Deathgazer, Deathgreeter,
+Deep-Slumber Titan, Deepwood Tantiv, Deepwood Wolverine, Defender en-Vec,
+Desert, Devoted Retainer, Diregraf Ghoul, Disciple of Griselbrand, Disenchant,
+Disperse, Disturbed Burial, Doomed Traveler, Dread Specter, Dread Statuary,
+Drelnoch, Drifter il-Dal, Dromosaur, Dross Hopper, Duskwalker, Duskworker,
+Dwarven Berserker, Earthen Goo, Echoing Ruin, Elder Cathar, Elder of Laurels,
+Elite Inquisitor, Elven Warhounds, Elvish Berserker, Elvish Fury, Embersmith,
+Emeria Angel, Enclave Elite, Endless Ranks of the Dead, Engulfing Slagwurm,
+Escaped Null, Etched Champion, Exhume, Ezuri, Renegade Leader, Ezuri's
+Brigade, Faceless Butcher, Faceless Devourer, Faerie Conclave, Faerie
+Squadron, Falkenrath Marauders, Falkenrath Noble, Fallen Askari, Femeref
+Knight, Feral Ridgewolf, Ferocity, Ferrovore, Festerhide Boar, Fiend Hunter,
+Firestorm Hellkite, Fledgling Griffin, Forbidding Watchtower, Fortress Crab,
+Frightful Delusion, Frost Giant, Fumiko the Lowblood, Gallows Warden, Galvanic
+Juggernaut, Gang of Elk, Gavony Township, Geistcatcher's Rig, Geist-Honored
+Monk, Geist of Saint Traft, Geyser Glider, Ghalma's Warden, Ghitu Encampment,
+Ghoulraiser, Glint Hawk, Glint Hawk Idol, Glissa's Scorn, Glissa, the Traitor,
+Gnarlid Pack, Goblin Burrows, Goblin Lackey, Goblin Sharpshooter, Gods' Eye,
+Gate to the Reikai, Golden Urn, Gold Myr, Golem Foundry, Golem's Heart, Grave
+Bramble, Grave Pact, Graveyard Shovel, Grazing Gladehart, Great Furnace,
+Grimgrin, Corpse-Born, Grimoire of the Dead, Gustcloak Cavalier, Gustcloak
+Harrier, Gustcloak Runner, Gustcloak Savior, Gustcloak Sentinel, Gustcloak
+Skirmisher, Guul Draz Assassin, Hada Spy Patrol, Hagra Crocodile, Halt Order,
+Hamlet Captain, Hand of Cruelty, Hand of Honor, Heartwood Dryad, Hedron Crab,
+Hedron Rover, Hedron Scrabbler, Hinterland Harbor, Hoard-Smelter Dragon,
+Hollowhenge Scavenger, Horrible Hordes, Hunding Gjornersen, Hysterical
+Blindness, Ichorclaw Myr, Ichor Rats, Iizuka the Ruthless, Illusionary Forces,
+Illusionary Wall, Immolation, Imperious Perfect, Indebted Samurai, Indomitable
+Archangel, Inferno Elemental, Infiltration Lens, Inner-Chamber Guard, Instill
+Infection, Intangible Virtue, Invisible Stalker, Ior Ruin Expedition, Iron
+Myr, Isao, Enlightened Bushi, Isolated Chapel, Jolrael's Centaur, Jolting
+Merfolk, Jotun Owl Keeper, Journey to Nowhere, Kaijin of the Vanishing Touch,
+Karn, Silver Golem, Kavu Aggressor, Keldon Marauders, Kemba, Kha Regent,
+Kemba's Skyguard, Kessig Cagebreakers, Kessig Wolf, Kessig Wolf Run, Khalni
+Garden, Kindercatch, Kitsune Blademaster, Kitsune Dawnblade, Kjeldoran
+Javelineer, Konda, Lord of Eiganjo, Konda's Hatamoto, Kresh the Bloodbraided,
+Kuro's Taken, Lantern Spirit, Lavacore Elemental, Leaden Myr, Legacy's Allure,
+Leonin Relic-Warder, Lifesmith, Lightning Crafter, Livewire Lash, Llanowar
+Elite, Looter il-Kor, Lowland Basilisk, Lumberknot, Lumengrid Drake, Make a
+Wish, Manor Skeleton, Marhault Elsdragon, Markov Patrician, Mask of Avacyn,
+Master Splicer, Maul Splicer, Mausoleum Guard, Maw of the Mire, Melt Terrain,
+Mentor of the Meek, Midnight Haunting, Mikaeus, the Lunarch, Mindshrieker,
+Mistbind Clique, Molder Beast, Moldgraf Monstrosity, Moment of Heroism, Moon
+Heron, Morkrut Banshee, Mothrider Samurai, Mtenda Herder, Mudbrawler Raiders,
+Murder of Crows, Mwonvuli Ooze, Myr Galvanizer, Myr Propagator, Myrsmith,
+Nagao, Bound by Honor, Nantuko Monastery, Necrogen Censer, Necrogen Scudder,
+Necropede, Nephalia Drownyard, Nettle Sentinel, Nezumi Ronin, Night Revelers,
+Norwood Warrior, Nova Chaser, Nyxathid, Oblivion Ring, Odylic Wraith, Ogre
+Leadfoot, One-Eyed Scarecrow, Ophidian, Orchard Spirit, Order of Yawgmoth,
+Oxidda Scrapmelter, Oxidize, Parallax Nexus, Parallax Tide, Parallax Wave,
+Paraselene, Petravark, Phobian Phantasm, Phyrexian Bloodstock, Phyrexian
+Prowler, Phyrexian Reaper, Phyrexian Slayer, Pincer Spider, Pitchburn Devils,
+Pouncing Kavu, Pouncing Wurm, Proper Burial, Pygmy Troll, Quag Vampires, Rabid
+Elephant, Rabid Wolverines, Rage Thrower, Raging Gorilla, Rakish Heir,
+Ravaging Riftwurm, Raven's Run Dragoon, Razorclaw Bear, Reality Acid, Realm
+Razer, Reaper from the Abyss, Rebuke, Recurring Nightmare, Regrowth,
+Rejuvenation Chamber, Revered Unicorn, Riot Devils, Rock Basilisk, Rockslide
+Elemental, Ronin Cavekeeper, Ronin Cliffrider, Ronin Houndmaster, Rotting
+Fensnake, Rusting Golem, Sacred Knight, Sacred Prey, Samurai Enforcers,
+Saprazzan Heir, Scavenger Drake, Scourge of Geier Reach, Screeching Silcaw,
+Scrib Nibblers, Seat of the Synod, Seer's Sundial, Selfless Cathar, Selhoff
+Occultist, Sensor Splicer, Sensory Deprivation, Shadow Rider, Shadow Rift,
+Shadowstorm, Sharpened Pitchfork, Sidar Jabari, Silkenfist Fighter, Silkenfist
+Order, Silverchase Fox, Silver-Inlaid Dagger, Silver Myr, Silverstorm Samurai,
+Skarrg, the Rage Pits, Skirsdag Cultist, Skitter of Lizards, Skyshroud
+Behemoth, Skyshroud Ridgeback, Slashing Tiger, Slayer of the Wicked, Slinking
+Giant, Slith Strider, Sludge Strider, Smite the Monstrous, Snapping Creeper,
+Snapsail Glider, Snorting Gahr, Sokenzan Spellblade, Soltari Champion, Soltari
+Crusader, Soltari Emissary, Soltari Foot Soldier, Soltari Lancer, Soltari
+Monk, Soltari Priest, Soltari Trooper, Soltari Visionary, Somberwald Spider,
+Sootwalkers, Sosuke, Son of Seshiro, Soultether Golem, Sparring Golem,
+Spectral Flight, Spectral Rider, Spidery Grasp, Splinterfright, Stensia
+Bloodhall, Stitcher's Apprentice, Stromkirk Noble, Stromkirk Patrol,
+Stronghold Overseer, Stronghold Rats, Sturmgeist, Sulfur Falls, Sunhome,
+Fortress of the Legion, Sunspring Expedition, Supreme Exemplar, Suq'Ata
+Lancer, Surrakar Marauder, Swarmyard, Sylvan Basilisk, Takeno's Cavalry,
+Talruum Champion, Tangle Asp, Teeka's Dragon, Telim'Tor, Tel-Jilad Wolf,
+Temporal Isolation, Territorial Baloth, Thalakos Drifters, Thalakos Scout,
+Thalakos Seer, Thalakos Sentry, Thicket Basilisk, Thraben Purebloods, Thresher
+Beast, Tidewalker, Trained Cheetah, Traitorous Blood, Tree of Redemption, Tree
+of Tales, Treetop Village, Trespasser il-Vec, Tribute to Hunger, Turn to Frog,
+Twilight Drover, Typhoid Rats, Uktabi Efreet, Unbreathing Horde, Unruly Mob,
+Unstoppable Ash, Urborg Skeleton, Urgent Exorcism, Vampire Interloper,
+Vampiric Fury, Vault of Whispers, Vedalken Certarch, Vedalken Ghoul, Venom,
+Venomous Dragonfly, Viashino Weaponsmith, Victim of Night, Village
+Bell-Ringer, Village Cannibals, Vital Splicer, Voiceless Spirit, Walking
+Corpse, Wall of Diffusion, Wall of Tears, Wanderbrine Rootcutters, Wanderwine
+Prophets, Waning Wurm, Whispers of the Muse, Wing Splicer, Wirewood Lodge,
+Witherscale Wurm, Wolverine Pack, Wooden Stake, Woodland Cemetery, Woodland
+Sleuth, Woodripper, Wreath of Geists, Wren's Run Packmaster, Yavimaya Ants,
+Yavimaya Hollow, Zhalfirin Commander, Zhalfirin Knight, 
 
 Release 1.18 (September 23, 2011)
 ============
