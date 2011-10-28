@@ -17608,3 +17608,29 @@ converted=2
 cost={1}{B}
 pt=1/1
 timing=main
+
+>Skywatcher Adept
+url=http://magiccards.info/roe/en/88.html
+image=http://magiccards.info/scans/en/roe/88.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+
+>Transcendent Master
+url=http://magiccards.info/roe/en/51.html
+image=http://magiccards.info/scans/en/roe/51.jpg
+value=3
+rarity=M
+type=Creature
+subtype=Human,Cleric,Avatar
+color=w
+converted=3
+cost={1}{W}{W}
+pt=3/3
+timing=main
