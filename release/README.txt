@@ -57,12 +57,12 @@ brought to you by beholder, melvin, and wait321
 - downloaded images are updated automatically. No need to restart Magarena
 - improved AI handling of equipment
 - improved AI's usage of abilities that can be activated multiple times
+- added basic deck construction rule checking
+- added full card text searching. Text is downloaded with the images
 - added support for morbid ability
 - added support for modular ability
-- added basic deck construction rule checking
 - added support to generate tribal/theme decks
 - added support for "when becomes blocked" trigger
-- added full card text searching. Text is downloaded with the images
 - added support for "when leaves play" trigger
 - added support for shadow ability
 - added support for can't be blocked by a color ability
@@ -73,10 +73,10 @@ brought to you by beholder, melvin, and wait321
 - fixed: Torpor Dust gives flash ability instead of having flash ability
 - fixed: game crashes when trying to update the card images after images are downloaded
 - fixed: state-based actions are checked after every event instead of whenever
-  a player would get priority and during cleanup step
+         a player would get priority and during cleanup step
 - fixed: creatures that are enchanted so that they cannot attack were able to attack
 - fixed: undoing "gain control until end of turn" effect causes permanent to
-  be controlled indefinitely
+         be controlled indefinitely
 - fixed: permanent that becomes an artifact is not recognized as such by the game
 - fixed: Goldenglow Moth doesn't have flying ability
 - fixed: Angelheart Vial doesn't tap when activating its ability
