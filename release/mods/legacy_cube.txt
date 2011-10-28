@@ -15,6 +15,7 @@ AEther Adept
 AEther Figment
 AEtherflame Wall
 AEther Membrane
+AEther Vial
 AEther Web
 Affa Guard Hound
 Afflict
@@ -32,6 +33,7 @@ Akroma, Angel of Wrath
 Akroma's Memorial
 Alabaster Mage
 Algae Gharial
+Allay
 Alley Grifters
 Alloy Myr
 Alluring Siren
@@ -60,6 +62,7 @@ Angel of Mercy
 Angel of Retribution
 Angel's Feather
 Angel's Mercy
+Anoint
 Anurid Murkdiver
 Apex Hawks
 Apocalypse Hydra
@@ -93,6 +96,7 @@ Armament Master
 Armored Cancrix
 Armored Skaab
 Armored Warhorse
+Artifact Mutation
 Ascendant Evincar
 Asceticism
 Ashcoat Bear
@@ -244,6 +248,7 @@ Brion Stoutarm
 Brittle Effigy
 Broodmate Dragon
 Brushwagg
+Brush with Death
 Bull Cerodon
 Bull Hippo
 Burning Shield Askari
@@ -288,6 +293,7 @@ Changeling Berserker
 Changeling Hero
 Changeling Sentinel
 Changeling Titan
+Change of Heart
 Chapel Geist
 Char
 Charging Troll
@@ -327,6 +333,7 @@ Coral Eel
 Coralhelm Commander
 Coral Merfolk
 Corpse Cur
+Corpse Dance
 Corpsehatch
 Corrosive Mentor
 Corrupted Harvester
@@ -421,11 +428,13 @@ Devout Lightcaster
 Diminish
 Diregraf Ghoul
 Disciple of Griselbrand
+Disenchant
 Disentomb
 Disfigure
 Dismal Failure
 Disperse
 Dissipation Field
+Disturbed Burial
 Divination
 Divine Favor
 Diving Griffin
@@ -473,6 +482,7 @@ Earth Elemental
 Earthen Goo
 Earthquake
 Earth Servant
+Echoing Ruin
 Echo Mage
 Edric, Spymaster of Trest
 Eel Umbra
@@ -487,6 +497,7 @@ Elven Warhounds
 Elvish Archers
 Elvish Berserker
 Elvish Champion
+Elvish Fury
 Elvish Pioneer
 Elvish Piper
 Elvish Visionary
@@ -622,6 +633,7 @@ Glen Elendra Liege
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
+Glissa's Scorn
 Glissa, the Traitor
 Glistener Elf
 Gloomhunter
@@ -646,6 +658,7 @@ Goblin Deathraiders
 Goblin Fireslinger
 Goblin Gaveleer
 Goblin Glider
+Goblin Lackey
 Goblin Mountaineer
 Goblin Outlander
 Goblin Piker
@@ -1104,6 +1117,8 @@ Overgrown Tomb
 Overrun
 Oversoul of Dusk
 Overwhelming Stampede
+Oxidda Scrapmelter
+Oxidize
 Pacifism
 Paladin en-Vec
 Parallax Nexus

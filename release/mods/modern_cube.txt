@@ -350,6 +350,7 @@ Devout Lightcaster
 Diminish
 Diregraf Ghoul
 Disciple of Griselbrand
+Disenchant
 Disentomb
 Disfigure
 Dismal Failure
@@ -394,6 +395,7 @@ Earth Elemental
 Earthen Goo
 Earthquake
 Earth Servant
+Echoing Ruin
 Echo Mage
 Eel Umbra
 Elder Cathar
@@ -518,6 +520,7 @@ Glen Elendra Liege
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
+Glissa's Scorn
 Glissa, the Traitor
 Glistener Elf
 Gloomhunter
@@ -953,6 +956,8 @@ Overgrown Tomb
 Overrun
 Oversoul of Dusk
 Overwhelming Stampede
+Oxidda Scrapmelter
+Oxidize
 Pacifism
 Paladin en-Vec
 Paraselene

@@ -317,6 +317,7 @@ Glaze Fiend
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
+Glissa's Scorn
 Glissa, the Traitor
 Glistener Elf
 Gloomhunter
@@ -587,6 +588,7 @@ Ornithopter
 Outrider of Jhess
 Overrun
 Overwhelming Stampede
+Oxidda Scrapmelter
 Pacifism
 Paraselene
 Pelakka Wurm

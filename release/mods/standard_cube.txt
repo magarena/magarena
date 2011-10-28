@@ -179,6 +179,7 @@ Gladecover Scout
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
+Glissa's Scorn
 Glissa, the Traitor
 Glistener Elf
 Goblin Arsonist
@@ -307,6 +308,7 @@ One-Eyed Scarecrow
 Onyx Mage
 Orchard Spirit
 Overrun
+Oxidda Scrapmelter
 Pacifism
 Paraselene
 Peregrine Griffin
