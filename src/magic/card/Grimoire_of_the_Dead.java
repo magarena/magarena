@@ -23,9 +23,11 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
+import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicSacrificeEvent;
+import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
@@ -58,7 +60,7 @@ public class Grimoire_of_the_Dead {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
-				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
+				new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE),
 				new MagicDiscardEvent(source,source.getController(),1,false)
 			};
 		}
@@ -90,6 +92,7 @@ public class Grimoire_of_the_Dead {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
+				new MagicTapEvent((MagicPermanent)source),
 				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3),
 				new MagicSacrificeEvent((MagicPermanent)source)};
 		}
