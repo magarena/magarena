@@ -17716,3 +17716,14 @@ color=b
 converted=1
 cost={B}
 timing=removal
+
+>Reiterate
+url=http://magiccards.info/ts/en/175.html
+image=http://magiccards.info/scans/en/ts/175.jpg
+value=3
+rarity=R
+type=Instant
+color=r
+converted=3
+cost={1}{R}{R}
+timing=spell
