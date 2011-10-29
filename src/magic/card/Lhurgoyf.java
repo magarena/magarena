@@ -6,8 +6,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.target.MagicTargetFilter;
 import magic.model.mstatic.MagicCDA;
 
-import java.util.Collection;
-
 public class Lhurgoyf {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override

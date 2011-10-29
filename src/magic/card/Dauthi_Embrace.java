@@ -15,7 +15,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicPowerTargetPicker;
 import magic.model.target.MagicShadowTargetPicker;
 
 public class Dauthi_Embrace {

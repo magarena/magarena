@@ -12,8 +12,6 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicTargetFilter;
-
 import java.util.Collection;
 
 public class Murkfiend_Liege {

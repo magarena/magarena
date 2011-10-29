@@ -1,13 +1,11 @@
 package magic.card;
 
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.MagicDamage;
 import magic.model.target.MagicTarget;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
@@ -28,7 +26,6 @@ public class Worship {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-		
         }
     };
 }

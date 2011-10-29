@@ -1,26 +1,17 @@
 package magic.card;
 
-import java.util.EnumSet;
-
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicSubType;
 import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.action.MagicAddStaticAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
 
 public class Angelic_Destiny {
 	

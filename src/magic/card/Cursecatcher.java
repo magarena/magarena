@@ -7,7 +7,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicCounterUnlessEvent;

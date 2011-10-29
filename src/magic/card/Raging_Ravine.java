@@ -1,7 +1,5 @@
 package magic.card;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;

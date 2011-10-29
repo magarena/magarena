@@ -4,7 +4,6 @@ import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSubType;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;

@@ -9,8 +9,6 @@ import magic.model.event.MagicRegenerationActivation;
 import magic.model.target.MagicTargetFilter;
 import magic.model.mstatic.MagicCDA;
 
-import java.util.Collection;
-
 public class Mortivore {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override

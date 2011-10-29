@@ -8,8 +8,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
-import magic.model.MagicSubType;
-import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -21,7 +19,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.event.MagicTapEvent;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Imperious_Perfect {
     public static final MagicStatic S1 = new MagicStatic(

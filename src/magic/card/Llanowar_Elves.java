@@ -1,8 +1,6 @@
 
 package magic.card;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicManaType;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicTapManaActivation;
