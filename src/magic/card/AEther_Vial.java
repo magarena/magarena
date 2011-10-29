@@ -54,7 +54,10 @@ public class AEther_Vial {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-    		new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+    		new MagicCondition[]{
+    				MagicCondition.CAN_TAP_CONDITION,
+    				MagicCondition.HAS_CREATURE_WITH_CMC_CONDITION
+    		},
             new MagicActivationHints(MagicTiming.Token),
             "Token"
             ) {

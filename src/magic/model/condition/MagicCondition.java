@@ -1,15 +1,20 @@
 package magic.model.condition;
 
+import java.util.Collection;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.phase.MagicPhaseType;
+import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 
 public interface MagicCondition {
     
@@ -246,6 +251,21 @@ public interface MagicCondition {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent = (MagicPermanent)source;
 			return permanent.getPower(game) >= 4;
+		}
+	};
+	
+	MagicCondition HAS_CREATURE_WITH_CMC_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPlayer player = source.getController();
+			final int charges = ((MagicPermanent) source).getCounters(MagicCounterType.Charge);
+			final Collection<MagicTarget> targets =
+	                game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND);
+			for (final MagicTarget target : targets) {
+				if (((MagicCard)target).getCardDefinition().hasConvertedCost(charges)) {
+					return true;
+				}
+			}
+			return false;
 		}
 	};
 		
