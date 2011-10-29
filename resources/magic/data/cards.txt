@@ -17647,3 +17647,27 @@ converted=4
 cost={3}{B}
 pt=2/2
 timing=main
+
+>Evincar's Justice
+url=http://magiccards.info/cmd/en/80.html
+image=http://magiccards.info/scans/en/cmd/80.jpg
+value=3
+removal=2
+rarity=C
+type=Sorcery
+color=b
+converted=4
+cost={2}{B}{B}
+timing=removal
+
+>Imps' Taunt
+url=http://magiccards.info/tp/en/32.html
+image=http://magiccards.info/scans/en/tp/32.jpg
+value=2
+removal=1
+rarity=U
+type=Instant
+color=b
+converted=1
+cost={1}{B}
+timing=mustattack
