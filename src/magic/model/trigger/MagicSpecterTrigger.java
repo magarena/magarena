@@ -26,6 +26,7 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
         final String prefix = target + " discards a card";
 		return (damage.getSource() == permanent && 
 				target.isPlayer() && 
+				((MagicPlayer)target).getHandSize() > 0 &&
                 (!opponent || target != permanent.getController()) &&
                 (!combat || damage.isCombat())) ?
             new MagicEvent(

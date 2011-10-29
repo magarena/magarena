@@ -15,6 +15,7 @@ public class Abyssal_Nightstalker {
 			return (damage.getSource() == permanent &&
 				damage.isCombat() &&
 				damage.getTarget().isPlayer() &&
+				((MagicPlayer)damage.getTarget()).getHandSize() > 0 &&
 				!permanent.isBlocked()) ?
 					new MagicEvent(
 						permanent,
