@@ -153,11 +153,6 @@ public class CardDefinitions {
 			return;
 		}
 		
-        //legendaries are at least Rare
-        if (!card.isToken() && card.hasType(MagicType.Legendary) && card.getRarity() < 3) {
-            System.err.println("ERROR! Wrong rarity for " + card.getName());
-            throw new RuntimeException(card.getName() + " is legendary but rarity is only " + card.getRarity());
-        }
         //every card should have a timing hint
         if (!card.isToken() && card.getTiming()==MagicTiming.None) {
             System.err.println("ERROR! No timing hint for " + card.getName());
