@@ -17750,3 +17750,28 @@ color=r
 converted=1
 cost={R}
 timing=pump
+
+>Shattering Pulse
+url=http://magiccards.info/ex/en/102.html
+image=http://magiccards.info/scans/en/ex/102.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+
+>Lim-Dul the Necromancer
+url=http://magiccards.info/ts/en/114.html
+image=http://magiccards.info/scans/en/ts/114.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+color=b
+converted=7
+cost={5}{B}{B}
+pt=4/4
+timing=fmain
