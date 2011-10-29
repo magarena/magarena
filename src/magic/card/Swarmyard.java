@@ -26,7 +26,7 @@ public class Swarmyard {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Pump,true),
+            new MagicActivationHints(MagicTiming.Pump,false),
             "Regen") {
 
         @Override

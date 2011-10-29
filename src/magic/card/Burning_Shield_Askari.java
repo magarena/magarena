@@ -14,6 +14,6 @@ public class Burning_Shield_Askari {
     public static final MagicPermanentActivation A = new MagicGainActivation(
             MagicManaCost.RED_RED,
             MagicAbility.FirstStrike,
-            new MagicActivationHints(MagicTiming.Pump,true,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "First strike");
 }

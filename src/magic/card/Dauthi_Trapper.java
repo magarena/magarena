@@ -19,7 +19,7 @@ import magic.model.target.MagicShadowTargetPicker;
 public class Dauthi_Trapper {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
-            new MagicActivationHints(MagicTiming.Animate,true),
+            new MagicActivationHints(MagicTiming.Animate,false),
             "Shadow") {
 
 		@Override

@@ -30,7 +30,7 @@ public class Yavimaya_Hollow {
     				MagicCondition.CAN_TAP_CONDITION,
     				MagicManaCost.GREEN.getCondition()
     		},
-            new MagicActivationHints(MagicTiming.Pump,true),
+            new MagicActivationHints(MagicTiming.Pump,false),
             "Regen") {
 
         @Override

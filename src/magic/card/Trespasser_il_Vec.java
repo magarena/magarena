@@ -16,7 +16,7 @@ import magic.model.event.MagicTiming;
 public class Trespasser_il_Vec {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.HAS_CARD_CONDITION},
-            new MagicActivationHints(MagicTiming.Pump,true,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "Shadow") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {

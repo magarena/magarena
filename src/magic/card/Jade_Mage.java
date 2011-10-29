@@ -35,7 +35,7 @@ public class Jade_Mage {
                     player,
                     new Object[]{player},
                     this,
-                    "Put a 1/1 green Saproling creature token onto the battlefield.");
+                    player + " puts a 1/1 green Saproling creature token onto the battlefield.");
         }
 		
         @Override

@@ -13,14 +13,14 @@ public class Stillmoon_Cavalier {
 	public static final MagicPermanentActivation A = new MagicGainActivation(
             MagicManaCost.WHITE_OR_BLACK,
             MagicAbility.Flying,
-            new MagicActivationHints(MagicTiming.Pump,true,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "Flying");
 	
 	// gains first strike until end of turn
 	public static final MagicPermanentActivation A2 = new MagicGainActivation(
             MagicManaCost.WHITE_OR_BLACK,
             MagicAbility.FirstStrike,
-            new MagicActivationHints(MagicTiming.Pump,true,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "First strike");
 	
 	// gets +1/+0 until end of turn

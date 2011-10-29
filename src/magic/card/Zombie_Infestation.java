@@ -34,7 +34,7 @@ public class Zombie_Infestation {
                     player,
                     new Object[]{player},
                     this,
-                    "Put a 2/2 black Zombie creature token onto the battlefield.");
+                    player + " puts a 2/2 black Zombie creature token onto the battlefield.");
 		}
 		@Override
 		public void executeEvent(

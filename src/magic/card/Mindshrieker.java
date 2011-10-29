@@ -21,7 +21,7 @@ import magic.model.event.MagicTiming;
 public class Mindshrieker {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.TWO.getCondition()},
-            new MagicActivationHints(MagicTiming.Pump,true),
+            new MagicActivationHints(MagicTiming.Pump,false),
             "Mill"
             ) {
 		

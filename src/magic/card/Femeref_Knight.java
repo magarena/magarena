@@ -14,6 +14,6 @@ public class Femeref_Knight {
     public static final MagicPermanentActivation A = new MagicGainActivation(
             MagicManaCost.WHITE,
             MagicAbility.Vigilance,
-            new MagicActivationHints(MagicTiming.Pump,true,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "Vigilance");
 }

@@ -76,7 +76,7 @@ public class Rakdos_Guildmage {
                     player,
                     new Object[]{player},
                     this,
-                    "Put a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at end of turn.");
+                    player + " puts a 2/1 red Goblin creature token with haste onto the battlefield. Exile it at end of turn.");
 		}
 		@Override
 		public void executeEvent(

@@ -34,7 +34,7 @@ public class Azure_Mage {
                     player,
                     new Object[]{player},
                     this,
-                    "Draw a card.");
+                    player + " draws a card.");
         }
 		
         @Override

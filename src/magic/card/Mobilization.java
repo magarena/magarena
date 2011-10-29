@@ -49,7 +49,7 @@ public class Mobilization {
                     player,
                     new Object[]{player},
                     this,
-                    "Put a 1/1 white Soldier creature token onto the battlefield.");
+                    player + " puts a 1/1 white Soldier creature token onto the battlefield.");
         }
 		
         @Override

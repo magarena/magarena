@@ -12,13 +12,13 @@ public class Mantis_Engine {
 	public static final MagicPermanentActivation A1 = new MagicGainActivation(
             MagicManaCost.TWO,
             MagicAbility.Flying,
-            new MagicActivationHints(MagicTiming.Pump,true,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "Flying");
 	
 	// gains first strike until end of turn
 	public static final MagicPermanentActivation A2 = new MagicGainActivation(
             MagicManaCost.TWO,
             MagicAbility.FirstStrike,
-            new MagicActivationHints(MagicTiming.Pump,true,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "First strike");
 }
