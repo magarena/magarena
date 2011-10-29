@@ -17694,3 +17694,25 @@ color=b
 converted=1
 cost={B}
 timing=token
+
+>Mind Games
+url=http://magiccards.info/sh/en/38.html
+image=http://magiccards.info/scans/en/sh/38.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=tapping
+
+>Mind Peel
+url=http://magiccards.info/sh/en/13.html
+image=http://magiccards.info/scans/en/sh/13.jpg
+value=2
+rarity=U
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=removal
