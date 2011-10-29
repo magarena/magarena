@@ -17671,3 +17671,26 @@ color=b
 converted=1
 cost={1}{B}
 timing=mustattack
+
+>Fanning the Flames
+url=http://magiccards.info/sh/en/80.html
+image=http://magiccards.info/scans/en/sh/80.jpg
+value=3
+removal=3
+rarity=U
+type=Sorcery
+color=r
+converted=2
+cost={X}{R}{R}
+timing=removal
+
+>Lab Rats
+url=http://magiccards.info/sh/en/11.html
+image=http://magiccards.info/scans/en/sh/11.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=token

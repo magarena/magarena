@@ -315,6 +315,17 @@ converted=0
 cost={0}
 pt=0/1
 
+>Rat
+token=Rat1
+image=http://magiccards.info/extras/token/shadowmoor/rat.jpg
+value=1
+type=Creature
+subtype=Rat
+color=b
+converted=0
+cost={0}
+pt=1/1
+
 >Saproling
 token=Saproling
 image=http://magiccards.info/extras/token/tenth-edition/saproling.jpg
