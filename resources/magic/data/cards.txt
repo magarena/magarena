@@ -18029,3 +18029,29 @@ converted=4
 cost={2}{G}{G}
 pt=3/3
 timing=main
+
+>Scuttling Death
+url=http://magiccards.info/chk/en/142.html
+image=http://magiccards.info/scans/en/chk/142.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit
+color=b
+converted=5
+cost={4}{B}
+pt=4/2
+timing=main
+
+>Thief of Hope
+url=http://magiccards.info/chk/en/147.html
+image=http://magiccards.info/scans/en/chk/147.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+timing=fmain
