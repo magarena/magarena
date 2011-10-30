@@ -17897,3 +17897,30 @@ cost={4}{W}
 pt=2/3
 ability=flying
 timing=main
+
+>Kami of Empty Graves
+url=http://magiccards.info/sok/en/75.html
+image=http://magiccards.info/scans/en/sok/75.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit
+color=b
+converted=4
+cost={3}{B}
+pt=4/1
+timing=main
+
+>Kami of Lunacy
+url=http://magiccards.info/chk/en/119.html
+image=http://magiccards.info/scans/en/chk/119.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=b
+converted=6
+cost={4}{B}{B}
+pt=4/1
+ability=flying
+timing=main
