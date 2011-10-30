@@ -17977,3 +17977,29 @@ color=g
 converted=5
 cost={4}{G}
 timing=main
+
+>Nightsoil Kami
+url=http://magiccards.info/sok/en/139.html
+image=http://magiccards.info/scans/en/sok/139.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Spirit
+color=g
+converted=6
+cost={4}{G}{G}
+pt=6/4
+timing=main
+
+>Promised Kannushi
+url=http://magiccards.info/sok/en/141.html
+image=http://magiccards.info/scans/en/sok/141.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Druid
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
