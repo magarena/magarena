@@ -17924,3 +17924,31 @@ cost={4}{B}{B}
 pt=4/1
 ability=flying
 timing=main
+
+>Kami of the Honored Dead
+url=http://magiccards.info/bok/en/12.html
+image=http://magiccards.info/scans/en/bok/12.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Spirit
+color=w
+converted=7
+cost={5}{W}{W}
+pt=3/5
+ability=flying
+timing=main
+
+>Kami of the Palace Fields
+url=http://magiccards.info/chk/en/24.html
+image=http://magiccards.info/scans/en/chk/24.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=w
+converted=6
+cost={5}{W}
+pt=3/2
+ability=flying,first strike
+timing=main
