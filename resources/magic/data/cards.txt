@@ -18056,3 +18056,30 @@ converted=3
 cost={2}{B}
 pt=2/2
 timing=fmain
+
+>Thousand-legged Kami
+url=http://magiccards.info/chk/en/246.html
+image=http://magiccards.info/scans/en/chk/246.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=8
+cost={6}{G}{G}
+pt=6/6
+timing=main
+
+>Torii Watchward
+url=http://magiccards.info/sok/en/30.html
+image=http://magiccards.info/scans/en/sok/30.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit
+color=w
+converted=5
+cost={4}{W}
+pt=3/3
+ability=vigilance
+timing=main
