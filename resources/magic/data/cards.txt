@@ -17857,6 +17857,19 @@ pt=0/1
 ability=flying
 timing=main
 
+>Forked-Branch Garami
+url=http://magiccards.info/bok/en/125.html
+image=http://magiccards.info/scans/en/bok/125.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=5
+cost={3}{G}{G}
+pt=4/4
+timing=main
+
 >Gibbering Kami
 url=http://magiccards.info/chk/en/112.html
 image=http://magiccards.info/scans/en/chk/112.jpg
@@ -17868,5 +17881,19 @@ color=b
 converted=4
 cost={3}{B}
 pt=2/2
+ability=flying
+timing=main
+
+>Hundred-Talon Kami
+url=http://magiccards.info/chk/en/16.html
+image=http://magiccards.info/scans/en/chk/16.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit
+color=w
+converted=5
+cost={4}{W}
+pt=2/3
 ability=flying
 timing=main
