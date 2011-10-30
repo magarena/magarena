@@ -11980,6 +11980,7 @@ color=w
 converted=2
 cost={W}{W}
 pt=2/2
+ability=protection from red
 timing=fmain
 
 >Nature's Claim
