@@ -72,6 +72,7 @@ public class AEther_Vial {
 			final MagicTargetFilter targetFilter =
 					new MagicTargetFilter.MagicCMCTargetFilter(
 	                MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
+	                3, // equal
 	                source.getCounters(MagicCounterType.Charge));
 			final MagicTargetChoice targetChoice = 
 					new MagicTargetChoice(

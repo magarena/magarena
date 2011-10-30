@@ -1710,17 +1710,36 @@ public interface MagicTargetFilter {
 	
 	public static final class MagicCMCTargetFilter implements MagicTargetFilter {
 
+		public static final int LESS_THAN = 1;
+		public static final int LESS_THAN_OR_EQUAL = 2;
+		public static final int EQUAL = 3;
+		
 		private final MagicTargetFilter targetFilter;
-        private final int cmc;		
+		private final int operator;
+        private final int cmc;
 
-		public MagicCMCTargetFilter(final MagicTargetFilter targetFilter,final int cmc) {	
+		public MagicCMCTargetFilter(final MagicTargetFilter targetFilter,final int operator,final int cmc) {	
 			this.targetFilter = targetFilter;
+			this.operator = operator;
 			this.cmc = cmc;
 		}
+		
 		@Override
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			return targetFilter.accept(game,player,target) &&
-					((MagicCard)target).getCardDefinition().hasConvertedCost(cmc);
+			final MagicCardDefinition cDef = ((MagicCard)target).getCardDefinition();
+			boolean accept = false;
+			switch (operator) {
+			case LESS_THAN:
+				accept = cDef.getConvertedCost() < cmc;
+				break;
+			case LESS_THAN_OR_EQUAL:
+				accept = cDef.getConvertedCost() <= cmc;
+				break;
+			case EQUAL:
+				accept = cDef.hasConvertedCost(cmc);
+				break;
+			}
+			return targetFilter.accept(game,player,target) && accept;
 		}
 		@Override
 		public boolean acceptType(final MagicTargetType targetType) {
