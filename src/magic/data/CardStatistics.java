@@ -14,9 +14,10 @@ import java.util.List;
 public class CardStatistics {
 
 	private static final List<String> MANA_CURVE_TEXT = Collections.unmodifiableList(Arrays.asList(
-        "X","1","2","3","4","5","6","7","8","9+"));
+        "X","0","1","2","3","4","5","6","7","8","9+"));
 	public static final List<ImageIcon> MANA_CURVE_ICONS = Collections.unmodifiableList(Arrays.asList(
 		IconImages.COST_X,
+		IconImages.COST_ZERO,
 		IconImages.COST_ONE,
 		IconImages.COST_TWO,
 		IconImages.COST_THREE,
@@ -90,7 +91,7 @@ public class CardStatistics {
 					manaCurve[0]++;
 				} else {
 					final int convertedCost=card.getConvertedCost();
-					manaCurve[convertedCost>=MANA_CURVE_SIZE?MANA_CURVE_SIZE-1:convertedCost]++;
+					manaCurve[convertedCost>=MANA_CURVE_SIZE?MANA_CURVE_SIZE-1:convertedCost+1]++;
 				}
 				
 				averageCost+=card.getConvertedCost();
