@@ -18083,3 +18083,17 @@ cost={4}{W}
 pt=3/3
 ability=vigilance
 timing=main
+
+>Venerable Kumo
+url=http://magiccards.info/chk/en/248.html
+image=http://magiccards.info/scans/en/chk/248.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit
+color=g
+converted=5
+cost={4}{G}
+pt=2/3
+ability=reach
+timing=main
