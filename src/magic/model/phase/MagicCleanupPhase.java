@@ -7,6 +7,8 @@ import magic.model.action.MagicCleanupPlayerAction;
 import magic.model.action.MagicCleanupTurnTriggersAction;
 import magic.model.action.MagicCleanupTurnStaticsAction;
 import magic.model.action.MagicPayDelayedCostsAction;
+import magic.model.event.MagicDiscardEvent;
+import magic.model.event.MagicEvent;
 
 public class MagicCleanupPhase extends MagicPhase {
 
@@ -31,6 +33,11 @@ public class MagicCleanupPhase extends MagicPhase {
 	
 	private static void nextTurn(final MagicGame game) {
 		MagicPlayer turnPlayer=game.getTurnPlayer();
+		// discard down to 7 cards
+		if (turnPlayer.getHandSize() > 7) {
+			final int amount = turnPlayer.getHandSize() - 7;
+			game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount,false));
+		}
 		if (turnPlayer.getExtraTurns()>0) {
 			game.doAction(new MagicChangeExtraTurnsAction(turnPlayer,-1));
 			final String playerName = turnPlayer.getName();
