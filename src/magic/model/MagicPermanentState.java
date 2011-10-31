@@ -23,7 +23,8 @@ public enum MagicPermanentState {
 	ReturnToHandOfOwnerAtEndOfCombat("return to owner's hand at end of combat",""),
 	ExileAtEndOfCombat("exile at end of combat",""),
 	DestroyAtEndOfCombat("destroy at end of combat",""),
-	CannotAttack("can't attack","")
+	CannotAttack("can't attack",""),
+	NoCombatDamage("assigns no combat damage","")
 	;
 
 	public static final int CLEANUP_MASK =

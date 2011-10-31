@@ -66,7 +66,7 @@ public class MagicCombatDamageAction extends MagicAction {
 				if (dealsCombatDamage(flags)) {
 					// Checks if attacker has power > 0.
 					int power=attacker.getPower(game);
-					if (power>0) {
+					if (power>0 && !attacker.hasState(MagicPermanentState.NoCombatDamage)) {
 						if (attacker.hasState(MagicPermanentState.Blocked)) {
 							// Determine what damage must be dealt to each blocker.
 							final boolean deathtouch=MagicAbility.Deathtouch.hasAbility(flags);
