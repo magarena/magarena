@@ -37,7 +37,14 @@ public class MagicDeclareBlockersAction extends MagicAction {
 			}
 		}
 
-        player.setNrOfBlockers(count);
+		player.setNrOfBlockers(count);
+		
+		for (final MagicPermanent permanent : game.getOpponent(player).getPermanents()) {	
+			if (permanent.isAttacking() && !permanent.isBlocked()) {
+				game.executeTrigger(MagicTriggerType.WhenAttacksUnblocked,permanent);
+			}
+		}
+        
         
 	}
 	

@@ -18118,3 +18118,17 @@ type=Artifact
 converted=4
 cost={4}
 timing=main
+
+>Guiltfeeder
+url=http://magiccards.info/ju/en/68.html
+image=http://magiccards.info/scans/en/ju/68.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Horror
+color=b
+converted=5
+cost={3}{B}{B}
+pt=0/4
+ability=fear
+timing=main
