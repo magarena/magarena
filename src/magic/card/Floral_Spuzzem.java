@@ -1,20 +1,19 @@
 package magic.card;
 
-import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.target.MagicDamageTargetPicker;
+import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.trigger.MagicWhenAttacksUnblockedTrigger;
 
-public class Dwarven_Vigilantes {
+public class Floral_Spuzzem {
 	public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
@@ -24,14 +23,12 @@ public class Dwarven_Vigilantes {
 						permanent,
 						player,
 						new MagicMayChoice(
-	                            player + " may have " + permanent + " deal " +
-	                            "damage equal to its power to target creature.",
-	                            MagicTargetChoice.NEG_TARGET_CREATURE),
-	                    new MagicDamageTargetPicker(permanent.getPower(game)),
+	                            player + " may destroy target artifact.",
+	                            MagicTargetChoice.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS),
+	                    new MagicDestroyTargetPicker(false),
 						new Object[]{permanent},
 						this,
-						player + " may$ have " + permanent + " deal " +
-	                    "damage equal to its power to target creature$.");
+						player + " may$ destroy target artifact$.");
             }
             return MagicEvent.NONE;
 		}
@@ -44,19 +41,13 @@ public class Dwarven_Vigilantes {
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                    	final MagicPermanent permanent = (MagicPermanent)data[0];
-                    	final MagicDamage damage = new MagicDamage(
-                    			permanent,
-                    			creature,
-                    			permanent.getPower(game),
-                    			false);
-	                    game.doAction(new MagicDealDamageAction(damage));
-	                    game.doAction(new MagicChangeStateAction(
-	    						permanent,
-	    						MagicPermanentState.NoCombatDamage,true));
-				    }
-                });
+	                public void doAction(final MagicPermanent target) {
+	                    game.doAction(new MagicDestroyAction(target));
+	                }
+	            });
+				game.doAction(new MagicChangeStateAction(
+						(MagicPermanent)data[0],
+						MagicPermanentState.NoCombatDamage,true));
 			}
 		}
     };

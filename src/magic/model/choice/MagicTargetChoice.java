@@ -95,6 +95,9 @@ public class MagicTargetChoice extends MagicChoice {
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONLAND_PERMANENT,true,MagicTargetHint.Negative,"target nonland permanent");
 	public static final MagicTargetChoice TARGET_ARTIFACT_YOU_CONTROL=
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL,true,MagicTargetHint.None,"target artifact you control");
+	public static final MagicTargetChoice TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS,true,MagicTargetHint.None,
+					"target artifact your opponent controls");
 	public static final MagicTargetChoice TARGET_ARTIFACT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT,true,MagicTargetHint.None,"target artifact");
 	public static final MagicTargetChoice NEG_TARGET_ARTIFACT=

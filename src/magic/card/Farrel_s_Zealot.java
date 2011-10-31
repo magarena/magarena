@@ -14,7 +14,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.trigger.MagicWhenAttacksUnblockedTrigger;
 
-public class Dwarven_Vigilantes {
+public class Farrel_s_Zealot {
 	public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
@@ -24,14 +24,14 @@ public class Dwarven_Vigilantes {
 						permanent,
 						player,
 						new MagicMayChoice(
-	                            player + " may have " + permanent + " deal " +
-	                            "damage equal to its power to target creature.",
+	                            player + " may have " + permanent +
+	                            " deal 3 damage to target creature.",
 	                            MagicTargetChoice.NEG_TARGET_CREATURE),
-	                    new MagicDamageTargetPicker(permanent.getPower(game)),
+	                    new MagicDamageTargetPicker(3),
 						new Object[]{permanent},
 						this,
-						player + " may$ have " + permanent + " deal " +
-	                    "damage equal to its power to target creature$.");
+						player + " may$ have " + permanent +
+	                    " deal 3 damage to target creature$.");
             }
             return MagicEvent.NONE;
 		}
@@ -49,7 +49,7 @@ public class Dwarven_Vigilantes {
                     	final MagicDamage damage = new MagicDamage(
                     			permanent,
                     			creature,
-                    			permanent.getPower(game),
+                    			3,
                     			false);
 	                    game.doAction(new MagicDealDamageAction(damage));
 	                    game.doAction(new MagicChangeStateAction(
