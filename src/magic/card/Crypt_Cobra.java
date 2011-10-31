@@ -1,27 +1,25 @@
 package magic.card;
 
-import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangePoisonAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
+import magic.model.trigger.MagicWhenAttacksUnblockedTrigger;
 
 public class Crypt_Cobra {
-	public static final MagicIfDamageWouldBeDealtTrigger T = new MagicIfDamageWouldBeDealtTrigger(1) {
+	public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			if (damage.getSource() == permanent &&
-				damage.isCombat() &&
-				damage.getTarget().isPlayer() &&
-				!permanent.isBlocked()) {
-				return new MagicEvent(
-						permanent,
-						permanent.getController(),
-						new Object[]{damage.getTarget()},
-						this,
-	                    damage.getTarget() + " gets a poison counter.");
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            if (creature == permanent) {
+            	final MagicPlayer player = permanent.getController();
+    			final MagicPlayer opponent = game.getOpponent(player);
+    			return new MagicEvent(
+    					permanent,
+    					player,
+    					new Object[]{opponent},
+    					this,
+    					opponent + " gets a poison counter.");
             }
             return MagicEvent.NONE;
 		}
