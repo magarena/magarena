@@ -18253,3 +18253,29 @@ converted=7
 cost={5}{R}{R}
 pt=6/6
 timing=main
+
+>Laccolith Warrior
+url=http://magiccards.info/ne/en/90.html
+image=http://magiccards.info/scans/en/ne/90.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Beast
+color=r
+converted=4
+cost={2}{R}{R}
+pt=3/3
+timing=main
+
+>Laccolith Whelp
+url=http://magiccards.info/ne/en/91.html
+image=http://magiccards.info/scans/en/ne/91.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Beast
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
