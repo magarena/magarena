@@ -18279,3 +18279,27 @@ converted=1
 cost={R}
 pt=1/1
 timing=main
+
+>Battlegrowth
+url=http://magiccards.info/mi/en/113.html
+image=http://magiccards.info/scans/en/mi/113.jpg
+value=1
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+
+>Bloodhall Ooze
+url=http://magiccards.info/cfx/en/59.html
+image=http://magiccards.info/scans/en/cfx/59.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Ooze
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
