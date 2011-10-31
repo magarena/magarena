@@ -18199,3 +18199,31 @@ cost={1}{B}
 pt=0/1
 ability=flying
 timing=main
+
+>Thalakos Deceiver
+url=http://magiccards.info/sh/en/45.html
+image=http://magiccards.info/scans/en/sh/45.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Thalakos,Wizard
+color=u
+converted=4
+cost={3}{U}
+pt=1/1
+ability=shadow
+timing=main
+
+>Zealot il-Vec
+url=http://magiccards.info/ts/en/47.html
+image=http://magiccards.info/scans/en/ts/47.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Rebel
+color=w
+converted=3
+cost={2}{W}
+pt=1/1
+ability=shadow
+timing=main
