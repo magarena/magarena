@@ -18331,3 +18331,30 @@ cost={1}{B}
 pt=1/1
 ability=can't block
 timing=main
+
+>Graypelt Hunter
+url=http://magiccards.info/wwk/en/103.html
+image=http://magiccards.info/scans/en/wwk/103.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Warrior,Ally
+color=g
+converted=4
+cost={3}{G}
+pt=2/2
+ability=trample
+timing=main
+
+>Hada Freeblade
+url=http://magiccards.info/wwk/en/7.html
+image=http://magiccards.info/scans/en/wwk/7.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Soldier,Ally
+color=w
+converted=1
+cost={W}
+pt=0/1
+timing=main
