@@ -35,7 +35,7 @@ public class Backlash {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    if (!creature.isTapped()) {
+                    if (creature.isUntapped()) {
                         game.doAction(new MagicTapAction(creature,true));
                         final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower(game),false);
                         game.doAction(new MagicDealDamageAction(damage));
