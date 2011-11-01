@@ -18542,3 +18542,30 @@ converted=3
 cost={2}{G}
 pt=1/2
 timing=main
+
+>Talus Paladin
+url=http://magiccards.info/wwk/en/21.html
+image=http://magiccards.info/scans/en/wwk/21.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Knight,Ally
+color=w
+converted=4
+cost={3}{W}
+pt=2/3
+timing=main
+
+>Tuktuk Grunts
+url=http://magiccards.info/zen/en/152.html
+image=http://magiccards.info/scans/en/zen/152.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Goblin,Warrior,Ally
+color=r
+converted=5
+cost={4}{R}
+pt=2/2
+ability=haste
+timing=fmain
