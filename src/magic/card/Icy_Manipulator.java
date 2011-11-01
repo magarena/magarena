@@ -49,9 +49,7 @@ public class Icy_Manipulator {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                    if (!permanent.isTapped()) {
-                        game.doAction(new MagicTapAction(permanent,true));
-                    }
+                    game.doAction(new MagicTapAction(permanent,true));
                 }
 			});
 		}

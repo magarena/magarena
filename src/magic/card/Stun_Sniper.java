@@ -48,9 +48,7 @@ public class Stun_Sniper {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],creature,1,false);
                     game.doAction(new MagicDealDamageAction(damage));
-                    if (!creature.isTapped()) {
-                        game.doAction(new MagicTapAction(creature,true));
-                    }
+                    game.doAction(new MagicTapAction(creature,true));
                 }
 			});
 		}

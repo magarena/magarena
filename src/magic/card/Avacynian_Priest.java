@@ -49,9 +49,7 @@ public class Avacynian_Priest {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    if (!creature.isTapped()) {
-                        game.doAction(new MagicTapAction(creature,true));
-                    }
+                    game.doAction(new MagicTapAction(creature,true));
                 }
 			});
 		}

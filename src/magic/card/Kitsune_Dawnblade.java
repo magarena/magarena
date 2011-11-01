@@ -41,9 +41,7 @@ public class Kitsune_Dawnblade {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        if (!creature.isTapped()) {
-                            game.doAction(new MagicTapAction(creature,true));
-                        }
+                        game.doAction(new MagicTapAction(creature,true));
                     }
                 });
 			}
