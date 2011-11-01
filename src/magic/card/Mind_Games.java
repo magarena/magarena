@@ -42,9 +42,7 @@ public class Mind_Games {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
 			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                    if (!permanent.isTapped()) {
-                        game.doAction(new MagicTapAction(permanent,true));
-                    }
+                    game.doAction(new MagicTapAction(permanent,true));
                 }
 			});
 			if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
