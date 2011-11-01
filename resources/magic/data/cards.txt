@@ -18464,3 +18464,29 @@ converted=6
 cost={4}{R}{R}
 pt=3/2
 timing=main
+
+>Nimana Sell-Sword
+url=http://magiccards.info/zen/en/106.html
+image=http://magiccards.info/scans/en/zen/106.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Warrior,Ally
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+timing=main
+
+>Ondu Cleric
+url=http://magiccards.info/zen/en/30.html
+image=http://magiccards.info/scans/en/zen/30.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kor,Cleric,Ally
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=main
