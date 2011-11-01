@@ -18569,3 +18569,29 @@ cost={4}{R}
 pt=2/2
 ability=haste
 timing=fmain
+
+>Tuktuk Scrapper
+url=http://magiccards.info/wwk/en/94.html
+image=http://magiccards.info/scans/en/wwk/94.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Goblin,Artificer,Ally
+color=r
+converted=4
+cost={3}{R}
+pt=2/2
+timing=main
+
+>Turntimber Ranger
+url=http://magiccards.info/zen/en/191.html
+image=http://magiccards.info/scans/en/zen/191.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elf,Scout,Ally
+color=g
+converted=5
+cost={3}{G}{G}
+pt=2/2
+timing=main
