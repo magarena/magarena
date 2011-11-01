@@ -9,7 +9,7 @@ import magic.model.MagicPermanentState;
 public class MagicUntapAction extends MagicAction {
 
 	private final MagicPermanent permanent;
-	private boolean untap;
+	private boolean isTapped;
 	
 	public MagicUntapAction(final MagicPermanent permanent) {
 		this.permanent=permanent;
@@ -17,8 +17,8 @@ public class MagicUntapAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		untap=permanent.hasState(MagicPermanentState.Tapped);
-		if (untap) {
+		isTapped=permanent.hasState(MagicPermanentState.Tapped);
+		if (isTapped) {
 			permanent.clearState(MagicPermanentState.Tapped);
 			setScore(permanent.getController(),-ArtificialScoringSystem.getTappedScore(permanent,game));
 			game.setStateCheckRequired();
@@ -27,7 +27,7 @@ public class MagicUntapAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		if (untap) {
+		if (isTapped) {
 			permanent.setState(MagicPermanentState.Tapped);
 		}
 	}
