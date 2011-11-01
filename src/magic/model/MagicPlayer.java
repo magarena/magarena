@@ -358,7 +358,7 @@ public class MagicPlayer implements MagicTarget {
 		return count;
 	}
 
-	private int getNrOfPermanentsWithSubType(final MagicSubType subType, final MagicGame game) {
+	public int getNrOfPermanentsWithSubType(final MagicSubType subType, final MagicGame game) {
 		int count=0;
 		for (final MagicPermanent permanent : permanents) {
 			if (permanent.hasSubType(subType, game)) {

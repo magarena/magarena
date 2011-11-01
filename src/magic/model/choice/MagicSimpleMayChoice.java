@@ -24,6 +24,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
 	public static final int ADD_CHARGE_COUNTER = 7;	// always returns YES_CHOICE_LIST
 	public static final int ADD_PLUSONE_COUNTER = 8;// always returns YES_CHOICE_LIST
 	public static final int PLAY_TOKEN = 9; 		// always returns YES_CHOICE_LIST
+	public static final int PUMP = 10; 				// always returns YES_CHOICE_LIST
 	
 	public static final int DEFAULT_NONE = 0;
 	public static final int DEFAULT_NO = 1;
