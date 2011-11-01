@@ -230,6 +230,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return hasState(MagicPermanentState.Tapped);
 	}
 	
+    public boolean isUntapped() {
+		return !hasState(MagicPermanentState.Tapped);
+	}
+	
 	@Override
 	public MagicColoredType getColoredType() {
 		return cardDefinition.getColoredType();

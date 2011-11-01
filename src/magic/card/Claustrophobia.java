@@ -39,7 +39,7 @@ public class Claustrophobia {
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
 			final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
-			if (enchantedCreature.isValid() && !enchantedCreature.isTapped()) {
+			if (enchantedCreature.isValid()) {
 				game.doAction(new MagicTapAction(enchantedCreature,true));
 			}
 		}		
