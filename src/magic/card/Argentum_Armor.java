@@ -20,7 +20,7 @@ public class Argentum_Armor {
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        MagicTargetChoice.NEG_TARGET_PERMANENT,
+                        MagicTargetChoice.TARGET_PERMANENT,
     				    new MagicDestroyTargetPicker(false),
                         MagicEvent.NO_DATA,
                         this,
