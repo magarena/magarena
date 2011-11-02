@@ -18672,3 +18672,17 @@ converted=2
 cost={1}{W}
 pt=2/2
 timing=main
+
+>Raksha Golden Cub
+url=http://magiccards.info/5dn/en/12.html
+image=http://magiccards.info/scans/en/5dn/12.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Cat,Soldier
+color=w
+converted=7
+cost={5}{W}{W}
+pt=3/4
+ability=vigilance
+timing=fmain
