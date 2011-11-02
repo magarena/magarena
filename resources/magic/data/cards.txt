@@ -18620,3 +18620,29 @@ color=w
 converted=4
 cost={3}{W}
 timing=token
+
+>Auriok Glaivemaster
+url=http://magiccards.info/ds/en/1.html
+image=http://magiccards.info/scans/en/ds/1.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+
+>Leonin Den-Guard
+url=http://magiccards.info/mi/en/9.html
+image=http://magiccards.info/scans/en/mi/9.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=1/3
+timing=main
