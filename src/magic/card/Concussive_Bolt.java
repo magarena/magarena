@@ -9,6 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicType;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayerAction;
@@ -45,16 +46,19 @@ public class Concussive_Bolt {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));			
 			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),player,4,false);
+                public void doAction(final MagicPlayer targetPlayer) {
+                    final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),targetPlayer,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
-                    final Collection<MagicTarget> targets =
-                            game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                        for (final MagicTarget target : targets) {
-                        	game.doAction(new MagicSetAbilityAction(
-                        			(MagicPermanent)target,
-                        			MagicAbility.CannotBlock));
-                        }
+                    final MagicPlayer player = (MagicPlayer)data[1];
+                    if (player.getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3) {
+                    	final Collection<MagicTarget> targets =
+                    			game.filterTargets(targetPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    	for (final MagicTarget target : targets) {
+                    		game.doAction(new MagicSetAbilityAction(
+                    				(MagicPermanent)target,
+                    				MagicAbility.CannotBlock));
+                    	}
+                    }
                 }
 			});
 		}
