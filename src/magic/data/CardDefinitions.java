@@ -33,7 +33,6 @@ public class CardDefinitions {
 	private static final CardDefinitions INSTANCE=new CardDefinitions();
 	
 	private static final String CARDS_FILENAME="cards.txt";
-	private static final String EXTRA_CARDS_FILENAME="cards2.txt";
 	
 	public static final String CARD_TEXT_FOLDER = "texts";
 	public static final String CARD_IMAGE_FOLDER = "cards";
@@ -263,7 +262,6 @@ public class CardDefinitions {
 	
 	public void loadCardDefinitions() {
 		loadCardDefinitions(CARDS_FILENAME);
-		loadCardDefinitions(EXTRA_CARDS_FILENAME);
 		filterCards();
 		printStatistics();
 		
