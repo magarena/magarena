@@ -1,20 +1,35 @@
 *battle cry
 Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.
+*bushido
+When this creature blocks or becomes blocked, it gets +1/+1 until end of turn.
+*buyback
+Pay an extra cost to have spells with buyback return to your hand so you can play them again.
+*champion
+When this creature enters the battlefield exile another creature you control. When this creature leaves the battlefield,
+that card returns to the battlefield.
 *changeling
 This card is every creature type at all times.
+*cumulative upkeep
+Pay an increasing upkeep cost for this permanent. Sacrifice it when you don't pay the upkeep cost.
 *deathtouch
 Creatures dealt damage by this creature are destroyed. 
 You can divide this creature's combat damage among any of the creatures blocking or blocked by it.
 *defender
 This creature can't attack.
+*devour
+You can sacrifice other creatures when a creature with devour comes into play for various benefits.
 *double strike
 This creature deals both first-strike and regular combat damage.
 *exalted
 Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.
+*fading
+This creature comes into play with fade counters, losing one each turn until it has none and is sacrificed.
 *fear
 This creature can't be blocked except by artifact creatures and/or black creatures.
 *first strike
 This creature deals combat damage before creatures without first strike.
+*flanking
+Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.
 *flash
 You may cast this spell any time you could cast an instant.
 *flying
@@ -35,6 +50,12 @@ This creature can't be blocked except by artifact creatures and/or creatures tha
 This creature is unblockable as long as defending player controls an Island.
 *lifelink
 Damage dealt by this creature also causes you to gain that much life.
+*living weapon
+When this equipment enters the battlefield it'll be attached to a 0/0 black germ token.
+*metalcraft
+This card gains abilities or bonuses if you control three or more artifacts.
+*modular
+When this artifact creature goes to your graveyard, you can put its +1/+1 counters on another artifact creature.
 *mountainwalk
 This creature is unblockable as long as defending player controls a Mountain.
 *persist
@@ -49,15 +70,23 @@ This creature can block creatures with flying.
 *regenerate
 The next time this creature would be destroyed this turn, it isn't.
 Instead tap it, remove all damage from it, and remove it from combat.
+*shadow
+This creature can only block or be blocked by other creatures with shadow.
 *shroud
 This can't be the target of spells or abilities.
+*soulshift
+When this creature dies, you may return a Spirit card from your graveyard to your hand.
 *swampwalk
 This creature is unblockable as long as defending player controls a Swamp.
+*threshold
+This card gains abilities or bonuses if you have 7 or more cards in your graveyard.
 *totem armor
 If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.
 *trample
 If this creature would deal enough damage to its blockers to destroy them, 
 you may have it deal the rest of its damage to defending player.
+*vanishing
+This creature comes into play with time counters, losing one each turn until it has none and is sacrificed.
 *vigilance
 Attacking doesn't cause this creature to tap.
 *wither
