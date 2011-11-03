@@ -18686,3 +18686,28 @@ cost={5}{W}{W}
 pt=3/4
 ability=vigilance
 timing=fmain
+
+>Ardent Recruit
+url=http://magiccards.info/mbs/en/2.html
+image=http://magiccards.info/scans/en/mbs/2.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+
+>Razorfield Rhino
+url=http://magiccards.info/mbs/en/127.html
+image=http://magiccards.info/scans/en/mbs/127.jpg
+value=4
+rarity=C
+type=Artifact,Creature
+subtype=Rhino
+converted=6
+cost={6}
+pt=4/4
+timing=main
