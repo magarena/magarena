@@ -24,7 +24,8 @@ public enum MagicPermanentState {
 	ExileAtEndOfCombat("exile at end of combat",""),
 	DestroyAtEndOfCombat("destroy at end of combat",""),
 	CannotAttack("can't attack",""),
-	NoCombatDamage("assigns no combat damage","")
+	NoCombatDamage("assigns no combat damage",""),
+	MustPayEchoCost("","")
 	;
 
 	public static final int CLEANUP_MASK =
@@ -38,7 +39,8 @@ public enum MagicPermanentState {
 		ExcludeManaSource.getMask()|
 		ExcludeFromCombat.getMask()|
 		Kicked.getMask()|
-		DestroyAtEndOfCombat.getMask();
+		DestroyAtEndOfCombat.getMask()|
+		MustPayEchoCost.getMask();
 	
 	private final String description;
 	private final String text;

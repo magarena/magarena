@@ -54,7 +54,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final MagicPermanentList blockingCreatures;	
     private MagicCardList exiledCards;
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
-	private int stateFlags=MagicPermanentState.Summoned.getMask();
+	private int stateFlags = 
+			MagicPermanentState.Summoned.getMask() |
+			MagicPermanentState.MustPayEchoCost.getMask();
 	private long turnAbilityFlags=0;
 	private int turnPowerIncr=0;
 	private int turnToughnessIncr=0;
