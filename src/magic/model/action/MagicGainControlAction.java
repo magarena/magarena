@@ -2,6 +2,7 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 
 public class MagicGainControlAction extends MagicAction {
@@ -25,6 +26,7 @@ public class MagicGainControlAction extends MagicAction {
 			oldController.removePermanent(permanent);
 			permanent.setController(player);
 			player.addPermanent(permanent);
+			permanent.setState(MagicPermanentState.Summoned);
 			score+=permanent.getScore(game);
 			setScore(player,score);
 			game.setStateCheckRequired();
@@ -38,6 +40,7 @@ public class MagicGainControlAction extends MagicAction {
 			player.removePermanent(permanent);
 			permanent.setController(oldController);
 			oldController.addPermanent(permanent);
+			permanent.clearState(MagicPermanentState.Summoned);
 		}
 	}
 }
