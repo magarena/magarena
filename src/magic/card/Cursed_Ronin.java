@@ -2,7 +2,7 @@ package magic.card;
 
 import magic.model.MagicManaCost;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicRegenerationActivation;
+import magic.model.event.MagicPumpActivation;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 
@@ -13,5 +13,5 @@ public class Cursed_Ronin {
 	
 	public static final MagicWhenBlocksPumpTrigger T2 = new MagicWhenBlocksPumpTrigger(amount,amount);
 	
-	public static final MagicPermanentActivation A = new MagicRegenerationActivation(MagicManaCost.BLACK);
+	public static final MagicPermanentActivation A = new MagicPumpActivation(MagicManaCost.BLACK,1,1);
 }
