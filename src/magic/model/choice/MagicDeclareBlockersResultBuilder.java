@@ -27,7 +27,7 @@ public class MagicDeclareBlockersResultBuilder {
 	private static final int MAX_ATTACKERS=3;
 	private static final int MAX_TURN=1;
     private static final double MIN_WARN    = 1e5;
-    private static final double MIN_SWITCH  = 1e4;
+    private static final double MIN_SWITCH  = 1e5;
     private static final double NUM_SAMPLES = 1e4;
 
 	private final MagicGame game;
