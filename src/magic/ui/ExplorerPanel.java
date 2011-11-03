@@ -158,7 +158,7 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 		final Container cardsPanel; // reference panel holding both card pool and deck
 		
 		if (isEditingDeck()) {
-			cardPoolTable = new CardTable(cardPoolDefs, cardViewer, CARD_POOL_TITLE, true);
+			cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), true);
 			cardPoolTable.addMouseListener(new CardPoolMouseListener());
 			
 			deckDefs = getPlayer().getDeck();
@@ -250,6 +250,10 @@ public class ExplorerPanel extends JPanel implements ActionListener {
  		}
 	}
 	
+ 	private String generatePoolTitle() {
+ 		return CARD_POOL_TITLE + " - " + cardPoolDefs.size() + " cards";
+ 	}
+
 	private boolean isEditingDeck() {
 		return player != null;
 	}
@@ -265,6 +269,9 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	public void updateCardPool() {
 		cardPoolDefs = filterPanel.getCardDefinitions();
 		cardPoolTable.setCards(cardPoolDefs);
+		if(isEditingDeck()) {
+ 			cardPoolTable.setTitle(generatePoolTitle());
+ 		}
 	}
 	
 	public void updateDeck() {
