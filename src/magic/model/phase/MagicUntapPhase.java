@@ -31,6 +31,7 @@ public class MagicUntapPhase extends MagicPhase {
 			
 			if (permanent.hasState(MagicPermanentState.Summoned)) {
 				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Summoned,false));
+				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.MustPayEchoCost,true));
 			}
 			if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
 				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DoesNotUntapDuringNext,false));
