@@ -24533,4 +24533,5 @@ color=r
 converted=4
 cost={3}{R}
 pt=2/2
+ability=haste
 timing=main
