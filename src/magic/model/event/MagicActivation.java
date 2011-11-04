@@ -115,8 +115,9 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             }
         }
         
-        if (source instanceof MagicPermanent) {
-        	return !((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities);
+        if (source instanceof MagicPermanent &&
+            ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities)) {
+            return false;
         }
 		
         // Check for legal targets.
