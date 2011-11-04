@@ -52,6 +52,10 @@ public class MagicEvent implements MagicCopyable {
         public MagicEvent copy(final MagicCopyMap copyMap) {
             return this;
         }
+        @Override
+        public final MagicTargetChoice getTargetChoice() {
+            throw new RuntimeException("getTargetChoice called on MagicEvent.NONE");
+        }
     };
 
 	private final MagicSource source;
@@ -160,7 +164,7 @@ public class MagicEvent implements MagicCopyable {
         return res;
 	}
 
-	public final MagicTargetChoice getTargetChoice() {
+	public MagicTargetChoice getTargetChoice() {
 		return choice.getTargetChoice();
 	}
 	
