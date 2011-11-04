@@ -83,7 +83,7 @@ cards/standard_all.txt:
 cards/new.txt: cards/existing.txt
 	diff $^ cards/existing_old.txt | grep "<" | sed 's/< /  /' > $@
 
-cards/existing.txt: resources/magic/data/cards.txt resources/magic/data/cards2.txt
+cards/existing.txt: resources/magic/data/cards.txt
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 	flip -u $@
 
