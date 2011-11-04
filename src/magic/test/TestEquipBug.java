@@ -29,15 +29,13 @@ class TestEquipBug extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Forest", 10);
-	    addToHand(P,"Strider Harness",1); 
+	    addToLibrary(P,"Strider Harness",1); 
         createPermanent(game,P,"Forest",false,8);
-	    
 
         P = opponent;
 		
         P.setLife(20);
         addToLibrary(P, "Forest", 10);
-        createPermanent(game,P,"Forest",false,8);
 		
 		return game;
     }
