@@ -14,18 +14,16 @@ import magic.model.target.MagicEquipTargetPicker;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 
-	private static final MagicActivationHints EQUIP_ACTIVATION_HINTS=new MagicActivationHints(MagicTiming.Equipment,false,0);
 	private final MagicManaCost equipCost;
 	
 	public MagicEquipActivation(final MagicManaCost equipCost) {
 		super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
-                MagicCondition.AI_EQUIP_CONDITION,
                 MagicCondition.NOT_CREATURE_CONDITION,
                 equipCost.getCondition()
             },
-            EQUIP_ACTIVATION_HINTS,
+	        new MagicActivationHints(MagicTiming.Equipment,false,2),
             "Equip"
             );
 		this.equipCost=equipCost;
