@@ -61,7 +61,10 @@ public class Culling_Dais {
 	};
 	
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-            new MagicCondition[]{MagicManaCost.ONE.getCondition()},
+            new MagicCondition[]{
+                MagicCondition.CHARGE_COUNTER_CONDITION,
+                MagicManaCost.ONE.getCondition()
+            },
             new MagicActivationHints(MagicTiming.Pump),
             "Draw") {
 		@Override
@@ -78,16 +81,14 @@ public class Culling_Dais {
                 final MagicPayedCost payedCost) {
 			final MagicPlayer player = source.getController();
 			final int amount = source.getCounters(MagicCounterType.Charge);
-			return amount > 0 ?
-				new MagicEvent(
-                    source,
-                    player,
-                    new Object[]{player,amount},
-                    this,
-                    amount > 1 ?
-                    	player + " draws " + amount + " cards." :
-                    	player + " draws a card.") :
-                MagicEvent.NONE;
+			return new MagicEvent(
+                source,
+                player,
+                new Object[]{player,amount},
+                this,
+                amount > 1 ?
+                    player + " draws " + amount + " cards." :
+                    player + " draws a card."); 
 		}
 
 		@Override

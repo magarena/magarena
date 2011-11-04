@@ -51,7 +51,10 @@ public class Golden_Urn {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+            new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicCondition.CHARGE_COUNTER_CONDITION
+            },
             new MagicActivationHints(MagicTiming.Pump),
             "Gain life") {
 		@Override
@@ -68,14 +71,12 @@ public class Golden_Urn {
                 final MagicPayedCost payedCost) {
 			final MagicPlayer player = source.getController();
 			final int amount = source.getCounters(MagicCounterType.Charge);
-			return amount > 0 ?
-				new MagicEvent(
-                    source,
-                    player,
-                    new Object[]{player,amount},
-                    this,
-                    player + " gains " + amount + " life.") :
-                MagicEvent.NONE;
+			return new MagicEvent(
+                source,
+                player,
+                new Object[]{player,amount},
+                this,
+                player + " gains " + amount + " life.");
 		}
 
 		@Override
