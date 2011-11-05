@@ -53,7 +53,6 @@ public class Golden_Urn {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
-                MagicCondition.CHARGE_COUNTER_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Gain life") {
