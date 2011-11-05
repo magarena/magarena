@@ -17,14 +17,12 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	
 	private MagicSource source;
 	private MagicPlayer controller;
-	private MagicActivation activation;
 	private MagicEvent event;
+	private MagicActivation activation; //may be null
 	private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
 	private long id;
    
-    MagicItemOnStack() {
-
-    }
+    MagicItemOnStack() {}
 
     MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
 		source = copyMap.copy(sourceItem.source);
@@ -62,7 +60,7 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	}
 	
 	MagicActivation getActivation() {
-		return activation;
+        return activation;
 	}
 			
 	void setEvent(final MagicEvent event) {
