@@ -38,23 +38,24 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 		this.hints=hints;
 		this.priority=hints.getTiming().getPriority();
         
+        // set the activation for the single activation condition
+        for (final MagicCondition condition : conditions) {
+            if (condition instanceof MagicSingleActivationCondition) {
+                final MagicSingleActivationCondition singleCondition = (MagicSingleActivationCondition)condition;
+                singleCondition.setActivation(this);
+            }
+        }
+        
         //depends on the card
         this.cardIndex = -1;
         this.id = -1;
+        this.targetChoice = null;
 	}
     
     public void setCardIndex(final int cardIndex) {
         this.cardIndex = cardIndex;
         this.id = (cardIndex << 16) + index;
         this.targetChoice = getTargetChoice();
-		
-        // set the activation for the single activation condition, depends on id
-        for (final MagicCondition condition : conditions) {
-            if (condition instanceof MagicSingleActivationCondition) {
-                final MagicSingleActivationCondition singleCondition = (MagicSingleActivationCondition)condition;
-                singleCondition.setActivation(id);
-            }
-        }
     }
 	
     final MagicCardDefinition getCardDefinition() {
