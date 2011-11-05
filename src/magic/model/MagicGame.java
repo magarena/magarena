@@ -223,16 +223,6 @@ public class MagicGame {
 		return score;
 	}
 
-    /*
-    public long getTime() {
-        return time;
-    }
-
-    public void setTime(final long t) {
-        time = t;
-    }
-    */
-
     public long getUniqueId() {
         time++;
         return time;
