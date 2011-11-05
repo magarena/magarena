@@ -24619,3 +24619,30 @@ cost={1}{G}{G}
 pt=4/4
 ability=trample
 timing=main
+
+>Crater Hellion
+url=http://magiccards.info/us/en/179.html
+image=http://magiccards.info/scans/en/us/179.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Hellion,Beast
+color=r
+converted=6
+cost={4}{R}{R}
+pt=6/6
+timing=main
+
+>Deepcavern Imp
+url=http://magiccards.info/fut/en/83.html
+image=http://magiccards.info/scans/en/fut/83.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Imp,Rebel
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+ability=flying,haste
+timing=fmain
