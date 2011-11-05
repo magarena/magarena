@@ -24590,3 +24590,31 @@ cost={2}{B}
 pt=1/1
 ability=flying
 timing=main
+
+>Citanul Centaurs
+url=http://magiccards.info/us/en/243.html
+image=http://magiccards.info/scans/en/us/243.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Centaur
+color=g
+converted=4
+cost={3}{G}
+pt=6/3
+ability=shroud
+timing=main
+
+>Cradle Guard
+url=http://magiccards.info/us/en/245.html
+image=http://magiccards.info/scans/en/us/245.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Treefolk
+color=g
+converted=3
+cost={1}{G}{G}
+pt=4/4
+ability=trample
+timing=main
