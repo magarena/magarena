@@ -4,6 +4,7 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicCard;
+import magic.model.event.MagicActivation;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -93,12 +94,12 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
         throw new RuntimeException("No corresponding MagicItemOnStack with id " + id);
 	}	
 	
-	public boolean hasActivationOnTop(final MagicSource source,final long actId) {
+	public boolean hasActivationOnTop(final MagicSource source,final MagicActivation act) {
 		if (isEmpty()) {
 			return false;
 		}		
 		final MagicItemOnStack itemOnStack=getFirst();
-		return itemOnStack.getSource()==source && itemOnStack.getActivation().getId() == actId;		
+		return itemOnStack.getSource() == source && itemOnStack.getActivation() == act;		
 	}
 	
 	public boolean hasItemOnTopOfPlayer(final MagicPlayer player) {
