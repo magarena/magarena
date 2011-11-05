@@ -24561,3 +24561,32 @@ converted=2
 cost={1}{G}
 pt=3/3
 timing=main
+
+>Basalt Gargoyle
+url=http://magiccards.info/ts/en/145.html
+image=http://magiccards.info/scans/en/ts/145.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Gargoyle
+color=r
+converted=3
+cost={2}{R}
+pt=3/2
+ability=flying
+timing=main
+
+>Bone Shredder
+url=http://magiccards.info/pvc/en/5.html
+image=http://magiccards.info/scans/en/pvc/5.jpg
+value=2
+removal=1
+rarity=U
+type=Creature
+subtype=Minion
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+ability=flying
+timing=main
