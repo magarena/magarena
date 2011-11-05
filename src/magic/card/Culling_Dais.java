@@ -62,7 +62,6 @@ public class Culling_Dais {
 	
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-                MagicCondition.CHARGE_COUNTER_CONDITION,
                 MagicManaCost.ONE.getCondition()
             },
             new MagicActivationHints(MagicTiming.Pump),
@@ -86,9 +85,7 @@ public class Culling_Dais {
                 player,
                 new Object[]{player,amount},
                 this,
-                amount > 1 ?
-                    player + " draws " + amount + " cards." :
-                    player + " draws a card."); 
+                player + " draws " + amount + " card(s).");
 		}
 
 		@Override
