@@ -24671,3 +24671,30 @@ converted=4
 cost={4}
 pt=4/3
 timing=main
+
+>Firemaw Kavu
+url=http://magiccards.info/ts/en/153.html
+image=http://magiccards.info/scans/en/ts/153.jpg
+value=4
+removal=1
+rarity=U
+type=Creature
+subtype=Kavu
+color=r
+converted=6
+cost={5}{R}
+pt=4/2
+timing=main
+
+>Flamecore Elemental
+url=http://magiccards.info/ts/en/154.html
+image=http://magiccards.info/scans/en/ts/154.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Elemental
+color=r
+converted=4
+cost={2}{R}{R}
+pt=5/4
+timing=main
