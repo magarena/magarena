@@ -21,10 +21,10 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     private final String text;
     private final MagicCondition conditions[];
 	private final MagicActivationHints hints;
-	private final MagicTargetChoice targetChoice;
 	
     private int cardIndex;
 	private long id;
+	private MagicTargetChoice targetChoice;
 
 	MagicActivation(
         final int index,
@@ -37,7 +37,6 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
 		this.conditions=conditions;
 		this.hints=hints;
 		this.priority=hints.getTiming().getPriority();
-        this.targetChoice = getTargetChoice();
         
         //depends on the card
         this.cardIndex = -1;
@@ -47,6 +46,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     public void setCardIndex(final int cardIndex) {
         this.cardIndex = cardIndex;
         this.id = (cardIndex << 16) + index;
+        this.targetChoice = getTargetChoice();
 		
         // set the activation for the single activation condition, depends on id
         for (final MagicCondition condition : conditions) {
