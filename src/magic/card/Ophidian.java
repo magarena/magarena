@@ -27,7 +27,7 @@ public class Ophidian {
 								MagicSimpleMayChoice.DEFAULT_NONE),
 								new Object[]{player,permanent},
 								this,
-								player + " may draw a card.");
+								player + " may$ draw a card.");
             }
             return MagicEvent.NONE;
 		}

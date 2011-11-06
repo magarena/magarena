@@ -32,7 +32,7 @@ public class Bone_Dancer {
 	                            "battlefield under his or her control."),
 						new Object[]{player,opponent,permanent},
 						this,
-						player + " may put the top creature card of " +
+						player + " may$ put the top creature card of " +
 						opponent + "'s graveyard onto the " +
 	                    "battlefield under his or her control.");
             }
