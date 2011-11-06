@@ -24835,3 +24835,31 @@ cost={2}{R}{R}
 pt=3/2
 ability=haste
 timing=fmain
+
+>Keldon Vandals
+url=http://magiccards.info/ud/en/91.html
+image=http://magiccards.info/scans/en/ud/91.jpg
+value=3
+removal=1
+rarity=C
+type=Creature
+subtype=Human,Rogue
+color=r
+converted=3
+cost={2}{R}
+pt=4/1
+timing=main
+
+>Lightning Dragon
+url=http://magiccards.info/us/en/202.html
+image=http://magiccards.info/scans/en/us/202.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=4
+cost={2}{R}{R}
+pt=4/4
+ability=flying
+timing=main
