@@ -20,9 +20,9 @@ public class Armadillo_Cloak {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            final int amount=damage.getDealtAmount();
-			return (permanent.getEnchantedCreature()==damage.getSource()) ?
+            final MagicPlayer player = permanent.getController();
+            final int amount = damage.getDealtAmount();
+			return (permanent.getEnchantedCreature() == damage.getSource()) ?
 				new MagicEvent(
                     permanent,
                     player,
@@ -37,7 +37,9 @@ public class Armadillo_Cloak {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+			game.doAction(new MagicChangeLifeAction(
+					(MagicPlayer)data[0],
+					(Integer)data[1]));
 		}
     };
 }

@@ -29,7 +29,11 @@ public class Bloodcrazed_Neonate {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+			game.doAction(new MagicChangeCountersAction(
+					(MagicPermanent)data[0],
+					MagicCounterType.PlusOne,
+					1,
+					true));
 		}
     };
 }

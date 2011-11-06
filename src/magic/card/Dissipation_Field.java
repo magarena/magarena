@@ -32,7 +32,9 @@ public class Dissipation_Field {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicRemoveFromPlayAction((MagicPermanent)data[0],MagicLocationType.OwnersHand));
+			game.doAction(new MagicRemoveFromPlayAction(
+					(MagicPermanent)data[0],
+					MagicLocationType.OwnersHand));
 		}
     };
 }

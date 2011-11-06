@@ -47,8 +47,13 @@ public class Goblin_Lackey {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
 	                public void doAction(final MagicCard card) {
-	                	game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-	    				game.doAction(new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE));
+	                	game.doAction(new MagicRemoveCardAction(
+	                			card,
+	                			MagicLocationType.OwnersHand));
+	    				game.doAction(new MagicPlayCardAction(
+	    						card,
+	    						(MagicPlayer)data[0],
+	    						MagicPlayCardAction.NONE));
 	                }
 	            });
 			}

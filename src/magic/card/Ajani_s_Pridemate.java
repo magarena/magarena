@@ -26,7 +26,7 @@ public class Ajani_s_Pridemate {
                             MagicSimpleMayChoice.DEFAULT_YES),
                     new Object[]{permanent},
                     this,
-                    player + " may put a +1/+1 counter on " + permanent + "."):
+                    player + " may$ put a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
 		}
 		@Override
@@ -36,7 +36,11 @@ public class Ajani_s_Pridemate {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.PlusOne,1,true));
+				game.doAction(new MagicChangeCountersAction(
+						(MagicPermanent)data[0],
+						MagicCounterType.PlusOne,
+						1,
+						true));
 			}
 		}
     };

@@ -28,7 +28,8 @@ public class Balefire_Dragon {
                         player,
                         new Object[]{permanent,game.getOpponent(player),amount},
                         this,
-                        permanent + " deals " + amount + " damage to each creature defending player controls."):
+                        permanent + " deals " + amount + 
+                        " damage to each creature defending player controls."):
                 MagicEvent.NONE;
 		}
 		@Override
