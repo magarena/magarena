@@ -24863,3 +24863,29 @@ cost={2}{R}{R}
 pt=4/4
 ability=flying
 timing=main
+
+>Mogg War Marshal
+url=http://magiccards.info/ts/en/170.html
+image=http://magiccards.info/scans/en/ts/170.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+timing=main
+
+>Multani's Acolyte
+url=http://magiccards.info/ul/en/108.html
+image=http://magiccards.info/scans/en/ul/108.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf
+color=g
+converted=2
+cost={G}{G}
+pt=2/1
+timing=main
