@@ -24780,3 +24780,30 @@ cost={3}{R}
 pt=3/2
 ability=haste
 timing=main
+
+>Herald of Serra
+url=http://magiccards.info/us/en/17.html
+image=http://magiccards.info/scans/en/us/17.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Angel
+color=w
+converted=4
+cost={2}{W}{W}
+pt=3/4
+ability=flying,vigilance
+timing=main
+
+>Hunting Moa
+url=http://magiccards.info/arc/en/60.html
+image=http://magiccards.info/scans/en/arc/60.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Bird,Beast
+color=g
+converted=3
+cost={2}{G}
+pt=3/2
+timing=main
