@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicPermanentStatic;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 

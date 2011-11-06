@@ -4,8 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicStatic;
 
-import java.util.LinkedList;
-
 public class MagicAddStaticAction extends MagicAction {
 
 	private final MagicPermanent permanent;

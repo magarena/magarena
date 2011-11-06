@@ -1,7 +1,6 @@
 package magic.model.stack;
 
 import magic.model.MagicCopyMap;
-import magic.model.MagicCopyable;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;

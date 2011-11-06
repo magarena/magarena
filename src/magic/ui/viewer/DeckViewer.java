@@ -6,7 +6,6 @@ import magic.model.MagicColor;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
-import magic.ui.EditDeckCard;
 import magic.ui.MagicFrame;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;

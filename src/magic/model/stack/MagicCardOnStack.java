@@ -5,12 +5,9 @@ import magic.model.MagicGame;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
-import magic.model.MagicCopyable;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
-import magic.model.event.MagicEvent;
-
 import javax.swing.ImageIcon;
 import java.util.Arrays;
 

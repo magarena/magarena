@@ -7,9 +7,6 @@ import magic.model.MagicPlayer;
 import magic.model.trigger.MagicPermanentTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.mstatic.MagicPermanentStatic;
-import magic.model.mstatic.MagicStatic;
-
-import java.util.ArrayList;
 import java.util.Collection;
 
 public class MagicRemoveFromPlayAction extends MagicAction {

@@ -4,8 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 
-import java.util.List;
-
 public class MagicCleanupCreatureAction extends MagicAction {
 
 	private final MagicPermanent permanent;

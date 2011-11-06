@@ -7,7 +7,6 @@ import magic.ui.DelayedViewersThread;
 import magic.ui.theme.ThemeFactory;
 
 import javax.swing.JPanel;
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;

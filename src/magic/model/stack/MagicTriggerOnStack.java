@@ -1,7 +1,6 @@
 package magic.model.stack;
 
 import magic.data.IconImages;
-import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
