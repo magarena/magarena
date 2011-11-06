@@ -24807,3 +24807,31 @@ converted=3
 cost={2}{G}
 pt=3/2
 timing=main
+
+>Karmic Guide
+url=http://magiccards.info/ul/en/11.html
+image=http://magiccards.info/scans/en/ul/11.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Angel,Spirit
+color=w
+converted=5
+cost={3}{W}{W}
+pt=2/2
+ability=flying,protection from black
+timing=main
+
+>Keldon Champion
+url=http://magiccards.info/pch/en/58.html
+image=http://magiccards.info/scans/en/pch/58.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Barbarian
+color=r
+converted=4
+cost={2}{R}{R}
+pt=3/2
+ability=haste
+timing=fmain
