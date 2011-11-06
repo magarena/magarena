@@ -9,6 +9,8 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayTokenAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
@@ -52,13 +54,19 @@ public class Quest_for_the_Gravelord {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+			final MagicPlayer player = permanent.getController();
 			return (otherPermanent.isCreature(game)) ?
                 new MagicEvent(
                         permanent,
-                        permanent.getController(),
+                        player,
+                        new MagicSimpleMayChoice(
+                            	player + " may put a quest counter on " + permanent + ".",
+                            	MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                            	1,
+                            	MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{permanent},
                         this,
-                        "Put a quest counter on " + permanent + "."):
+                        player + " may$ put a quest counter on " + permanent + "."):
                 MagicEvent.NONE;
 		}
 		@Override
@@ -67,7 +75,13 @@ public class Quest_for_the_Gravelord {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicChangeCountersAction(
+						(MagicPermanent)data[0],
+						MagicCounterType.Charge,
+						1,
+						true));
+			}
 		}
     };
 }
