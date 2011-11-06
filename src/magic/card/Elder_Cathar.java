@@ -23,7 +23,7 @@ public class Elder_Cathar {
 				new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                     MagicPumpTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,
                     this,
