@@ -20,12 +20,14 @@ public class Geistcatcher_s_Rig {
                     permanent,
                     player,
                     new MagicMayChoice(
-                    	player + " may deal 4 damage to target creature or player.",
+                    	player + " may have " + permanent + " deal 4 damage " +
+                    	"to target creature with flying.",
                         MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING),
                     new MagicDamageTargetPicker(4),
                     new Object[]{permanent},
                     this,
-                    player + " may$ deal 4 damage to target creature with flying$");
+                    player + " may$ have " + permanent + " deal 4 damage " +
+                    "to target creature with flying$.");
 		}
 		@Override
 		public void executeEvent(
