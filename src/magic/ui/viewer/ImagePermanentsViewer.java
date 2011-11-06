@@ -142,7 +142,6 @@ public class ImagePermanentsViewer extends JPanel {
 		
 		if(numCards > 0 && screenWidth > 0 && screenHeight > 0) { // ignore cases where drawing doesn't matter
 			int r;
-			int bestNumRows = 1;
 			int maxCardsForBestNumRow = 1;
 			float largestScaledCardSize = 0;
 		
@@ -168,7 +167,6 @@ public class ImagePermanentsViewer extends JPanel {
 				final float scaledCardSize = scaledCardWidth * scaledCardHeight;
 				if(scaledCardSize  > largestScaledCardSize) {
 					largestScaledCardSize = scaledCardSize;
-					bestNumRows = r;
 					maxCardsForBestNumRow = (int) numCardsPerRow;
 				}
 			}
