@@ -17,7 +17,7 @@ public class Viridian_Shaman {
 			return new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT,
+                    MagicTargetChoice.TARGET_ARTIFACT,
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,

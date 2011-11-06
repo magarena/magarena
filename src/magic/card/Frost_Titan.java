@@ -52,7 +52,7 @@ public class Frost_Titan {
             return new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.NEG_TARGET_PERMANENT,
+                    MagicTargetChoice.TARGET_PERMANENT,
                     MagicEvent.NO_DATA,
                     this,
                     "Tap target permanent$. It doesn't untap during its controller's next untap step.");

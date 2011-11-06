@@ -19,18 +19,22 @@ public class Nekrataal {
 			return new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE,
+                    MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(true),
                     MagicEvent.NO_DATA,
                     this,
-                    "Destroy target nonartifact, nonblack creature$. That creature can't be regenerated.");
+                    "Destroy target nonartifact, nonblack creature$. " +
+                    "That creature can't be regenerated.");
 		}
 
 		@Override
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                	game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.CannotBeRegenerated,true));
+                	game.doAction(new MagicChangeStateAction(
+                			creature,
+                			MagicPermanentState.CannotBeRegenerated,
+                			true));
                     game.doAction(new MagicDestroyAction(creature));
                 }
 			});

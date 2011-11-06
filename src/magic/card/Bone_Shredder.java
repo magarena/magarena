@@ -20,7 +20,7 @@ public class Bone_Shredder {
 			return new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.NEG_TARGET_NONARTIFACT_NONBLACK_CREATURE,
+                    MagicTargetChoice.TARGET_NONARTIFACT_NONBLACK_CREATURE,
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,

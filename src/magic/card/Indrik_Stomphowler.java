@@ -17,7 +17,7 @@ public class Indrik_Stomphowler {
 			return new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                    MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT,
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,

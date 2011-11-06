@@ -17,7 +17,7 @@ public class Woodfall_Primus {
 			return new MagicEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.NEG_TARGET_NONCREATURE,
+                    MagicTargetChoice.TARGET_NONCREATURE,
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
