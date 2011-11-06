@@ -7,6 +7,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
@@ -32,14 +34,19 @@ public class Beastmaster_Ascension {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			final MagicPlayer controller = creature.getController();
-			return (controller == permanent.getController()) ?
+			final MagicPlayer player = permanent.getController();
+			return (creature.getController() == player) ?
                 new MagicEvent(
                         permanent,
-                        controller,
+                        player,
+                        new MagicSimpleMayChoice(
+                            	player + " may put a quest counter on " + permanent + ".",
+                            	MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                            	1,
+                            	MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{permanent},
                         this,
-                        "Put a quest counter on " + permanent + ".") :
+                        player + " may$ put a quest counter on " + permanent + ".") :
                 MagicEvent.NONE;
 		}
 		
@@ -49,7 +56,13 @@ public class Beastmaster_Ascension {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+				game.doAction(new MagicChangeCountersAction(
+						(MagicPermanent)data[0],
+						MagicCounterType.Charge,
+						1,
+						true));
+			}
 		}
     };
 }
