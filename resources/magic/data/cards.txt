@@ -24725,3 +24725,30 @@ converted=6
 cost={4}{R}{R}
 pt=3/3
 timing=main
+
+>Goblin Patrol
+url=http://magiccards.info/us/en/193.html
+image=http://magiccards.info/scans/en/us/193.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Goblin
+color=r
+converted=1
+cost={R}
+pt=2/1
+timing=main
+
+>Goblin War Buggy
+url=http://magiccards.info/us/en/196.html
+image=http://magiccards.info/scans/en/us/196.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin
+color=r
+converted=2
+cost={1}{R}
+pt=2/2
+ability=haste
+timing=main
