@@ -46,7 +46,9 @@ public class Suture_Priest {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+				game.doAction(new MagicChangeLifeAction(
+						(MagicPlayer)data[0],
+						(Integer)data[1]));
 			}
 		}		
     };

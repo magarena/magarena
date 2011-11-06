@@ -21,13 +21,15 @@ public class Rampaging_Baloths {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                                player + " may put a 4/4 green Beast creature token onto the battlefield.",
+                                player + " may put a 4/4 green Beast " +
+                                "creature token onto the battlefield.",
                                 MagicSimpleMayChoice.PLAY_TOKEN,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{player},
                         this,
-                        player + " may$ put a 4/4 green Beast creature token onto the battlefield."):
+                        player + " may$ put a 4/4 green Beast " +
+                        "creature token onto the battlefield."):
                 MagicEvent.NONE;
 		}
 		@Override
@@ -37,7 +39,9 @@ public class Rampaging_Baloths {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Beast4")));
+				game.doAction(new MagicPlayTokenAction(
+						(MagicPlayer)data[0],
+						TokenCardDefinitions.getInstance().getTokenDefinition("Beast4")));
 			}
 		}		
     };

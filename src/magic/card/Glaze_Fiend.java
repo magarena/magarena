@@ -21,7 +21,6 @@ public class Glaze_Fiend {
                         player,
                         new Object[]{permanent},
                         this,
-                        "Whenever another artifact enters the battlefield under your control, " +
                         permanent + " gets +2/+2 until end of turn") :
                 MagicEvent.NONE;
 		}

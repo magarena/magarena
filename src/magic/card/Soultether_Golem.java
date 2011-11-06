@@ -38,7 +38,11 @@ public class Soultether_Golem {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));			
+			game.doAction(new MagicChangeCountersAction(
+					(MagicPermanent)data[0],
+					MagicCounterType.Charge,
+					1,
+					true));			
 		}		
     };
 }

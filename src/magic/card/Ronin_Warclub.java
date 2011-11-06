@@ -29,7 +29,9 @@ public class Ronin_Warclub {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],(MagicPermanent)data[1]));
+			game.doAction(new MagicAttachEquipmentAction(
+					(MagicPermanent)data[0],
+					(MagicPermanent)data[1]));
 		}
     };
 }

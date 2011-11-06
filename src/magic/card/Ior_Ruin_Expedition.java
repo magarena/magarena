@@ -35,7 +35,7 @@ public class Ior_Ruin_Expedition {
                             MagicSimpleMayChoice.DEFAULT_YES),
                     new Object[]{permanent},
                     this,
-                    player + " may put a quest counter on " + permanent + ".") :
+                    player + " may$ put a quest counter on " + permanent + ".") :
                 MagicEvent.NONE;
 		}
 		
@@ -46,7 +46,11 @@ public class Ior_Ruin_Expedition {
                 final Object data[],
                 final Object[] choiceResults) {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+				game.doAction(new MagicChangeCountersAction(
+						(MagicPermanent)data[0],
+						MagicCounterType.Charge,
+						1,
+						true));
 			}
 		}		
     };

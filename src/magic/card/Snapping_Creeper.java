@@ -29,7 +29,9 @@ public class Snapping_Creeper {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.Vigilance));
+			game.doAction(new MagicSetAbilityAction(
+					(MagicPermanent)data[0],
+					MagicAbility.Vigilance));
 		}		
     };
 }

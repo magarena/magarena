@@ -29,7 +29,9 @@ public class Surrakar_Marauder {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.Intimidate));
+			game.doAction(new MagicSetAbilityAction(
+					(MagicPermanent)data[0],
+					MagicAbility.Intimidate));
 		}		
     };
 }
