@@ -24889,3 +24889,29 @@ converted=2
 cost={G}{G}
 pt=2/1
 timing=main
+
+>Pouncing Jaguar
+url=http://magiccards.info/us/en/269.html
+image=http://magiccards.info/scans/en/us/269.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat
+color=g
+converted=1
+cost={G}
+pt=2/2
+timing=main
+
+>Radiant's Dragoons
+url=http://magiccards.info/ul/en/21.html
+image=http://magiccards.info/scans/en/ul/21.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=4
+cost={3}{W}
+pt=2/5
+timing=main
