@@ -24915,3 +24915,31 @@ converted=4
 cost={3}{W}
 pt=2/5
 timing=main
+
+>Shivan Raptor
+url=http://magiccards.info/us/en/215.html
+image=http://magiccards.info/scans/en/us/215.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Lizard
+color=r
+converted=3
+cost={2}{R}
+pt=3/1
+ability=first strike,haste
+timing=fmain
+
+>Simian Grunts
+url=http://magiccards.info/ul/en/113.html
+image=http://magiccards.info/scans/en/ul/113.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Ape
+color=g
+converted=3
+cost={2}{G}
+pt=3/4
+ability=flash
+timing=flash
