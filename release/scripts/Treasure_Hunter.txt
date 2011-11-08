@@ -1,0 +1,13 @@
+>Treasure Hunter
+url=http://magiccards.info/10e/en/52.html
+image=http://magiccards.info/scans/en/10e/52.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+timing=main
+

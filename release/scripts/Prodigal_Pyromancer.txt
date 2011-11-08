@@ -1,0 +1,13 @@
+>Prodigal Pyromancer
+url=http://magiccards.info/dpa/en/51.html
+image=http://magiccards.info/scans/en/dpa/51.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Wizard
+color=r
+converted=3
+cost={2}{R}
+pt=1/1
+timing=fmain
+

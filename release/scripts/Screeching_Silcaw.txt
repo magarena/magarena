@@ -1,0 +1,14 @@
+>Screeching Silcaw
+url=http://magiccards.info/som/en/42.html
+image=http://magiccards.info/scans/en/som/42.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Bird
+color=u
+converted=2
+cost={1}{U}
+pt=1/2
+ability=flying
+timing=main
+

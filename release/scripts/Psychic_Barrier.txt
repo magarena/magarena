@@ -1,0 +1,11 @@
+>Psychic Barrier
+url=http://magiccards.info/nph/en/43.html
+image=http://magiccards.info/scans/en/nph/43.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={U}{U}
+timing=counter
+

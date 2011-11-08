@@ -1,0 +1,13 @@
+>Bleak Coven Vampires
+url=http://magiccards.info/som/en/55.html
+image=http://magiccards.info/scans/en/som/55.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Vampire,Warrior
+color=b
+converted=5
+cost={3}{B}{B}
+pt=4/3
+timing=main
+

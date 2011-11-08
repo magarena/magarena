@@ -1,0 +1,13 @@
+>Butcher's Cleaver
+url=http://magiccards.info/isd/en/217.html
+image=http://magiccards.info/scans/en/isd/217.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={3}
+given_pt=3/0
+timing=equipment
+

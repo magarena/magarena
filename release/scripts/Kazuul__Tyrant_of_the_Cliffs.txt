@@ -1,0 +1,13 @@
+>Kazuul, Tyrant of the Cliffs
+url=http://magiccards.info/wwk/en/84.html
+image=http://magiccards.info/scans/en/wwk/84.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Ogre,Warrior
+color=r
+converted=5
+cost={3}{R}{R}
+pt=5/4
+timing=main
+

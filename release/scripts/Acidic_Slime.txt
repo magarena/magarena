@@ -1,0 +1,15 @@
+>Acidic Slime
+url=http://magiccards.info/m12/en/161.html
+image=http://magiccards.info/scans/en/m11/161.jpg
+value=4
+removal=2
+rarity=U
+type=Creature
+subtype=Ooze
+color=g
+converted=5
+cost={3}{G}{G}
+pt=2/2
+ability=deathtouch
+timing=fmain
+

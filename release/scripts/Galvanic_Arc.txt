@@ -1,0 +1,14 @@
+>Galvanic Arc
+url=http://magiccards.info/rav/en/126.html
+image=http://magiccards.info/scans/en/rav/126.jpg
+value=3
+removal=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=3
+cost={2}{R}
+given_ability=first strike
+timing=removal
+

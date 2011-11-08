@@ -1,0 +1,14 @@
+>Spirit Mantle
+url=http://magiccards.info/m12/en/35.html
+image=http://magiccards.info/scans/en/m12/35.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+given_pt=1/1
+given_ability=protection from creatures
+timing=aura
+

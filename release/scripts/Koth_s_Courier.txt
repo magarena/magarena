@@ -1,0 +1,14 @@
+>Koth's Courier
+url=http://magiccards.info/mbs/en/68.html
+image=http://magiccards.info/scans/en/mbs/68.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Rogue
+color=r
+converted=3
+cost={1}{R}{R}
+pt=2/3
+ability=forestwalk
+timing=main
+

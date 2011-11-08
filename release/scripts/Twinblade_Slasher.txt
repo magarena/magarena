@@ -1,0 +1,14 @@
+>Twinblade Slasher
+url=http://magiccards.info/eve/en/79.html
+image=http://magiccards.info/scans/en/eve/79.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=1
+cost={G}
+pt=1/1
+ability=wither
+timing=main
+

@@ -1,0 +1,13 @@
+>Armored Warhorse
+url=http://magiccards.info/m12/en/7.html
+image=http://magiccards.info/scans/en/m12/7.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Horse
+color=w
+converted=2
+cost={W}{W}
+pt=2/3
+timing=main
+

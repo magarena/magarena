@@ -1,0 +1,13 @@
+>Knight of Cliffhaven
+url=http://magiccards.info/roe/en/29.html
+image=http://magiccards.info/scans/en/roe/29.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kor,Knight
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+timing=main
+

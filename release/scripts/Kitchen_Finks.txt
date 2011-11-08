@@ -1,0 +1,14 @@
+>Kitchen Finks
+url=http://magiccards.info/shm/en/229.html
+image=http://magiccards.info/scans/en/shm/229.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Ouphe
+color=gw
+converted=3
+cost={1}{G/W}{G/W}
+pt=3/2
+ability=persist
+timing=main
+

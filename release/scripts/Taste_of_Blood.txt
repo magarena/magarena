@@ -1,0 +1,11 @@
+>Taste of Blood
+url=http://magiccards.info/m12/en/113.html
+image=http://magiccards.info/scans/en/m12/113.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=removal
+

@@ -1,0 +1,14 @@
+>Ichor Rats
+url=http://magiccards.info/som/en/67.html
+image=http://magiccards.info/scans/en/som/67.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/1
+ability=infect
+timing=main
+

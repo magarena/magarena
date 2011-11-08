@@ -1,0 +1,13 @@
+>Kraken Hatchling
+url=http://magiccards.info/zen/en/50.html
+image=http://magiccards.info/scans/en/zen/50.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Kraken
+color=u
+converted=1
+cost={U}
+pt=0/4
+timing=main
+

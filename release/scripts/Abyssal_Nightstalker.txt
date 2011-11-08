@@ -1,0 +1,13 @@
+>Abyssal Nightstalker
+url=http://magiccards.info/po2/en/1.html
+image=http://magiccards.info/scans/en/po2/1.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Nightstalker
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+timing=main
+

@@ -1,0 +1,12 @@
+>Arcbound Hybrid
+url=http://magiccards.info/ds/en/97.html
+image=http://magiccards.info/scans/en/ds/97.jpg
+value=2
+rarity=C
+type=Artifact,Creature
+subtype=Beast
+converted=4
+cost={4}
+ability=haste,modular
+timing=fmain
+

@@ -1,0 +1,15 @@
+>Changeling Titan
+url=http://magiccards.info/lw/en/200.html
+image=http://magiccards.info/scans/en/lw/200.jpg
+value=5
+removal=2
+rarity=U
+type=Creature
+subtype=Shapeshifter
+color=g
+converted=5
+cost={4}{G}
+pt=7/7
+ability=changeling
+timing=main
+

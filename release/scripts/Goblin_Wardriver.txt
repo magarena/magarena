@@ -1,0 +1,14 @@
+>Goblin Wardriver
+url=http://magiccards.info/mbs/en/64.html
+image=http://magiccards.info/scans/en/mbs/64.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={R}{R}
+pt=2/2
+ability=battle cry
+timing=main
+

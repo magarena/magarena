@@ -1,0 +1,12 @@
+>Wrecking Ball
+url=http://magiccards.info/cmd/en/238.html
+image=http://magiccards.info/scans/en/di/139.jpg
+value=3
+removal=4
+rarity=C
+type=Instant
+color=br
+converted=4
+cost={2}{B}{R}
+timing=removal
+

@@ -1,0 +1,11 @@
+>Fervent Charge
+url=http://magiccards.info/ap/en/98.html
+image=http://magiccards.info/scans/en/ap/98.jpg
+value=4
+rarity=R
+type=Enchantment
+color=wbr
+converted=4
+cost={1}{W}{B}{R}
+timing=enchantment
+

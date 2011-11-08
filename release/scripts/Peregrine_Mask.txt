@@ -1,0 +1,13 @@
+>Peregrine Mask
+url=http://magiccards.info/rav/en/268.html
+image=http://magiccards.info/scans/en/rav/268.jpg
+value=2
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+given_ability=defender,flying,first strike
+timing=equipment
+

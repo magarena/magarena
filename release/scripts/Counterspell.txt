@@ -1,0 +1,11 @@
+>Counterspell
+url=http://magiccards.info/jvc/en/24.html
+image=http://magiccards.info/scans/en/jvc/24.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={U}{U}
+timing=counter
+

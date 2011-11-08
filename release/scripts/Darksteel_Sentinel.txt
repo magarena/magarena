@@ -1,0 +1,13 @@
+>Darksteel Sentinel
+url=http://magiccards.info/som/en/152.html
+image=http://magiccards.info/scans/en/som/152.jpg
+value=4
+ability=flash,vigilance,indestructible
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+converted=6
+cost={6}
+pt=3/3
+timing=main
+

@@ -1,0 +1,14 @@
+>Furnace Whelp
+url=http://magiccards.info/cmd/en/124.html
+image=http://magiccards.info/scans/en/arc/39.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Dragon
+color=r
+converted=4
+cost={2}{R}{R}
+pt=2/2
+ability=flying
+timing=main
+

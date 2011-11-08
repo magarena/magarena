@@ -1,0 +1,14 @@
+>Rage Nimbus
+url=http://magiccards.info/roe/en/160.html
+image=http://magiccards.info/scans/en/roe/160.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elemental
+color=r
+converted=3
+cost={2}{R}
+pt=5/3
+ability=defender,flying
+timing=smain
+

@@ -1,0 +1,12 @@
+>Unbreathing Horde
+url=http://magiccards.info/isd/en/121.html
+image=http://magiccards.info/scans/en/isd/121.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Zombie
+color=b
+converted=3
+cost={2}{B}
+timing=main
+

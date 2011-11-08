@@ -1,0 +1,12 @@
+>Geistcatcher's Rig
+url=http://magiccards.info/isd/en/223.html
+image=http://magiccards.info/scans/en/isd/223.jpg
+value=4
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+converted=6
+cost={6}
+pt=4/5
+timing=main
+

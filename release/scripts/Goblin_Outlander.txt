@@ -1,0 +1,14 @@
+>Goblin Outlander
+url=http://magiccards.info/cfx/en/109.html
+image=http://magiccards.info/scans/en/cfx/109.jpg
+value=2
+ability=protection from white
+rarity=C
+type=Creature
+subtype=Goblin,Scout
+color=rb
+converted=2
+cost={B}{R}
+pt=2/2
+timing=main
+

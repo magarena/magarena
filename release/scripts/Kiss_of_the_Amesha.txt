@@ -1,0 +1,11 @@
+>Kiss of the Amesha
+url=http://magiccards.info/ala/en/177.html
+image=http://magiccards.info/scans/en/ala/177.jpg
+value=3
+rarity=U
+type=Sorcery
+color=wu
+converted=6
+cost={4}{W}{U}
+timing=draw
+

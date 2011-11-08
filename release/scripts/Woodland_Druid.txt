@@ -1,0 +1,13 @@
+>Woodland Druid
+url=http://magiccards.info/od/en/284.html
+image=http://magiccards.info/scans/en/od/284.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Human,Druid
+color=g
+converted=1
+cost={G}
+pt=1/2
+timing=main
+

@@ -1,0 +1,14 @@
+>Kor Aeronaut
+url=http://magiccards.info/ddf/en/10.html
+image=http://magiccards.info/scans/en/zen/17.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Kor,Soldier
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=flying
+timing=main
+

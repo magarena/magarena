@@ -1,0 +1,11 @@
+>Sigil Blessing
+url=http://magiccards.info/ddg/en/30.html
+image=http://magiccards.info/scans/en/ala/195.jpg
+value=3
+rarity=C
+type=Instant
+color=gw
+converted=2
+cost={G}{W}
+timing=pump
+

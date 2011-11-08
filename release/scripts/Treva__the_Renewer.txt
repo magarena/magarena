@@ -1,0 +1,14 @@
+>Treva, the Renewer
+url=http://magiccards.info/pvc/en/49.html
+image=http://magiccards.info/scans/en/pvc/49.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+color=gwu
+converted=6
+cost={3}{G}{W}{U}
+pt=6/6
+ability=flying
+timing=smain
+

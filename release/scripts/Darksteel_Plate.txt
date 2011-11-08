@@ -1,0 +1,14 @@
+>Darksteel Plate
+url=http://magiccards.info/mbs/en/104.html
+image=http://magiccards.info/scans/en/mbs/104.jpg
+value=4
+rarity=R
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+ability=indestructible
+given_ability=indestructible
+timing=equipment
+

@@ -1,0 +1,13 @@
+>Giant Cockroach
+url=http://magiccards.info/9e/en/133.html
+image=http://magiccards.info/scans/en/9e/133.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Insect
+color=b
+converted=4
+cost={3}{B}
+pt=4/2
+timing=main
+

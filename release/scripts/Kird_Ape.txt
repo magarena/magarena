@@ -1,0 +1,13 @@
+>Kird Ape
+url=http://magiccards.info/ddh/en/2.html
+image=http://magiccards.info/scans/en/9e/199.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Ape
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+

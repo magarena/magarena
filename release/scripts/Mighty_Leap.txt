@@ -1,0 +1,11 @@
+>Mighty Leap
+url=http://magiccards.info/m12/en/26.html
+image=http://magiccards.info/scans/en/m11/22.jpg
+value=3
+rarity=C
+type=Instant
+color=w
+converted=2
+cost={1}{W}
+timing=pump
+

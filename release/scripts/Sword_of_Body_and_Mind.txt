@@ -1,0 +1,14 @@
+>Sword of Body and Mind
+url=http://magiccards.info/som/en/208.html
+image=http://magiccards.info/scans/en/som/208.jpg
+value=5
+rarity=M
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+given_pt=2/2
+given_ability=protection from green,protection from blue
+timing=equipment
+

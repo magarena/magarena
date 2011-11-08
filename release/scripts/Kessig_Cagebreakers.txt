@@ -1,0 +1,13 @@
+>Kessig Cagebreakers
+url=http://magiccards.info/isd/en/189.html
+image=http://magiccards.info/scans/en/isd/189.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Human,Rogue
+color=g
+converted=5
+cost={4}{G}
+pt=3/4
+timing=main
+

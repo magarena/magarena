@@ -1,0 +1,11 @@
+>Soul's Might
+url=http://magiccards.info/ala/en/149.html
+image=http://magiccards.info/scans/en/ala/149.jpg
+value=2
+rarity=C
+type=Sorcery
+color=g
+converted=5
+cost={4}{G}
+timing=pump
+

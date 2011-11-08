@@ -1,0 +1,15 @@
+>Joraga Warcaller
+url=http://magiccards.info/wwk/en/106.html
+image=http://magiccards.info/scans/en/wwk/106.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=1
+cost={G}
+pt=1/1
+static=player
+timing=fmain
+
+

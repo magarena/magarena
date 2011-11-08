@@ -1,0 +1,13 @@
+>Lifelink
+url=http://magiccards.info/m12/en/24.html
+image=http://magiccards.info/scans/en/m12/24.jpg
+value=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+given_ability=lifelink
+timing=aura
+

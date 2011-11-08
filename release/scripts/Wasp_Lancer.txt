@@ -1,0 +1,14 @@
+>Wasp Lancer
+url=http://magiccards.info/shm/en/179.html
+image=http://magiccards.info/scans/en/shm/179.jpg
+value=3
+ability=flying
+rarity=U
+type=Creature
+subtype=Faerie,Soldier
+color=bu
+converted=3
+cost={U/B}{U/B}{U/B}
+pt=3/2
+timing=main
+

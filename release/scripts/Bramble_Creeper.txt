@@ -1,0 +1,13 @@
+>Bramble Creeper
+url=http://magiccards.info/m10/en/171.html
+image=http://magiccards.info/scans/en/m10/171.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elemental
+color=g
+converted=5
+cost={4}{G}
+pt=0/3
+timing=main
+

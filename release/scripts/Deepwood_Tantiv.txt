@@ -1,0 +1,13 @@
+>Deepwood Tantiv
+url=http://magiccards.info/mm/en/241.html
+image=http://magiccards.info/scans/en/mm/241.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={4}{G}
+pt=2/4
+timing=main
+

@@ -1,0 +1,13 @@
+>Vedalken Ghoul
+url=http://magiccards.info/arb/en/32.html
+image=http://magiccards.info/scans/en/arb/32.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vedalken,Zombie
+color=ub
+converted=2
+cost={U}{B}
+pt=1/1
+timing=main
+

@@ -1,0 +1,13 @@
+>Nulltread Gargantuan
+url=http://magiccards.info/arb/en/102.html
+image=http://magiccards.info/scans/en/arb/102.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Beast
+color=gu
+converted=3
+cost={1}{G}{U}
+pt=5/6
+timing=smain
+

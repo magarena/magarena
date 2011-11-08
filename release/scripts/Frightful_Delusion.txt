@@ -1,0 +1,11 @@
+>Frightful Delusion
+url=http://magiccards.info/isd/en/57.html
+image=http://magiccards.info/scans/en/isd/57.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=3
+cost={2}{U}
+timing=counter
+

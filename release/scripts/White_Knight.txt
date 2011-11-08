@@ -1,0 +1,14 @@
+>White Knight
+url=http://magiccards.info/ddg/en/9.html
+image=http://magiccards.info/scans/en/m11/39.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=first strike,protection from black
+timing=main
+

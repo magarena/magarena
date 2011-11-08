@@ -1,0 +1,13 @@
+>Surgespanner
+url=http://magiccards.info/lw/en/92.html
+image=http://magiccards.info/scans/en/lw/92.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+color=u
+converted=4
+cost={2}{U}{U}
+pt=2/2
+timing=main
+

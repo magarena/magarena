@@ -1,0 +1,9 @@
+>Vivid Grove
+url=http://magiccards.info/cmd/en/295.html
+image=http://magiccards.info/scans/en/lw/277.jpg
+value=3
+rarity=U
+type=Land
+mana=b1g3r1u1w1
+timing=tapland
+

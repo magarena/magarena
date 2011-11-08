@@ -1,0 +1,13 @@
+>Chambered Nautilus
+url=http://magiccards.info/mm/en/64.html
+image=http://magiccards.info/scans/en/mm/64.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Nautilus,Beast
+color=u
+converted=3
+cost={2}{U}
+pt=2/2
+timing=main
+

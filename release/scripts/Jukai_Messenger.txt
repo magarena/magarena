@@ -1,0 +1,14 @@
+>Jukai Messenger
+url=http://magiccards.info/chk/en/218.html
+image=http://magiccards.info/scans/en/chk/218.jpg 
+value=1
+ability=forestwalk
+rarity=C
+type=Creature
+subtype=Human,Monk
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

@@ -1,0 +1,12 @@
+>Black Sun's Zenith
+url=http://magiccards.info/mbs/en/39.html
+image=http://magiccards.info/scans/en/mbs/39.jpg
+value=4
+removal=3
+rarity=R
+type=Sorcery
+color=b
+converted=2
+cost={X}{B}{B}
+timing=removal
+

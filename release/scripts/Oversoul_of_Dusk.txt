@@ -1,0 +1,14 @@
+>Oversoul of Dusk
+url=http://magiccards.info/shm/en/234.html
+image=http://magiccards.info/scans/en/shm/234.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Spirit,Avatar
+color=gw
+converted=5
+cost={G/W}{G/W}{G/W}{G/W}{G/W}
+pt=5/5
+ability=protection from blue,protection from black,protection from red
+timing=fmain
+

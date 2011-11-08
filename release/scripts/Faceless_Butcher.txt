@@ -1,0 +1,14 @@
+>Faceless Butcher
+url=http://magiccards.info/tr/en/60.html
+image=http://magiccards.info/scans/en/tr/60.jpg
+value=3
+removal=2
+rarity=C
+type=Creature
+subtype=Nightmare,Horror
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/3
+timing=main
+

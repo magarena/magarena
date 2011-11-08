@@ -1,0 +1,12 @@
+>Scar
+url=http://magiccards.info/shm/en/194.html
+image=http://magiccards.info/scans/en/shm/194.jpg
+value=1
+removal=1
+rarity=C
+type=Instant
+color=br
+converted=1
+cost={B/R}
+timing=removal
+

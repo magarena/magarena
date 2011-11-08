@@ -1,0 +1,11 @@
+>Fires of Yavimaya
+url=http://magiccards.info/arc/en/86.html
+image=http://magiccards.info/scans/en/pch/87.jpg
+value=4
+rarity=U
+type=Enchantment
+color=rg
+converted=3
+cost={1}{R}{G}
+timing=enchantment
+

@@ -1,0 +1,14 @@
+>Boggart Ram-Gang
+url=http://magiccards.info/pd2/en/13.html
+image=http://magiccards.info/scans/en/shm/203.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+color=rg
+converted=3
+cost={R/G}{R/G}{R/G}
+pt=3/3
+ability=haste,wither
+timing=fmain
+

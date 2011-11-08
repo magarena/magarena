@@ -1,0 +1,14 @@
+>Tidal Kraken
+url=http://magiccards.info/9e/en/105.html
+image=http://magiccards.info/scans/en/9e/105.jpg 
+value=5
+ability=unblockable
+rarity=R
+type=Creature
+subtype=Kraken
+color=u
+converted=8
+cost={5}{U}{U}{U}
+pt=6/6
+timing=main
+

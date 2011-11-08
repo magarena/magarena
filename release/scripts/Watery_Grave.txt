@@ -1,0 +1,11 @@
+>Watery Grave
+url=http://magiccards.info/rav/en/286.html
+image=http://magiccards.info/scans/en/rav/286.jpg
+value=4
+rarity=R
+type=Land
+subtype=Island,Swamp
+mana=u3b3
+basic=ub
+timing=land
+

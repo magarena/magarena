@@ -1,0 +1,14 @@
+>Mask of Avacyn
+url=http://magiccards.info/isd/en/229.html
+image=http://magiccards.info/scans/en/isd/229.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={3}
+given_pt=1/2
+given_ability=hexproof
+timing=equipment
+

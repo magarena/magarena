@@ -1,0 +1,13 @@
+>Fire Elemental
+url=http://magiccards.info/7e/en/183.html
+image=http://magiccards.info/scans/en/7e/183.jpg 
+value=4
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=5
+cost={3}{R}{R}
+pt=5/4
+timing=main
+

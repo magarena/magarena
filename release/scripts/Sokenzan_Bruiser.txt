@@ -1,0 +1,14 @@
+>Sokenzan Bruiser
+url=http://magiccards.info/chk/en/188.html
+image=http://magiccards.info/scans/en/chk/188.jpg 
+value=3
+ability=mountainwalk
+rarity=C
+type=Creature
+subtype=Ogre,Warrior
+color=r
+converted=5
+cost={4}{R}
+pt=3/3
+timing=main
+

@@ -1,0 +1,11 @@
+>Liliana's Caress
+url=http://magiccards.info/m11/en/103.html
+image=http://magiccards.info/scans/en/m11/103.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=2
+cost={1}{B}
+timing=enchantment
+

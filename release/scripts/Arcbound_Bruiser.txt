@@ -1,0 +1,12 @@
+>Arcbound Bruiser
+url=http://magiccards.info/ds/en/94.html
+image=http://magiccards.info/scans/en/ds/94.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+converted=5
+cost={5}
+ability=modular
+timing=main
+

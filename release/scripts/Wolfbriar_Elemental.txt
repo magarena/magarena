@@ -1,0 +1,13 @@
+>Wolfbriar Elemental
+url=http://magiccards.info/wwk/en/118.html
+image=http://magiccards.info/scans/en/wwk/118.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=4
+cost={2}{G}{G}
+pt=4/4
+timing=main
+

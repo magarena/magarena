@@ -1,0 +1,14 @@
+>Venomous Dragonfly
+url=http://magiccards.info/mm/en/282.html
+image=http://magiccards.info/scans/en/mm/282.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=g
+converted=4
+cost={3}{G}
+pt=1/1
+ability=flying
+timing=main
+

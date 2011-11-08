@@ -1,0 +1,14 @@
+>Wall of Torches
+url=http://magiccards.info/m12/en/159.html
+image=http://magiccards.info/scans/en/m12/159.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Wall
+color=r
+converted=2
+cost={1}{R}
+pt=4/1
+ability=defender
+timing=smain
+

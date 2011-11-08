@@ -1,0 +1,13 @@
+>Sprouting Thrinax
+url=http://magiccards.info/ala/en/197.html
+image=http://magiccards.info/scans/en/ala/197.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Lizard
+color=bgr
+converted=3
+cost={B}{G}{R}
+pt=3/3
+timing=main
+

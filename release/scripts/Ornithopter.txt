@@ -1,0 +1,13 @@
+>Ornithopter
+url=http://magiccards.info/m11/en/211.html
+image=http://magiccards.info/scans/en/m11/211.jpg
+value=2
+ability=flying
+rarity=C
+type=Artifact,Creature
+subtype=Thopter
+converted=0
+cost={0}
+pt=0/2
+timing=main
+

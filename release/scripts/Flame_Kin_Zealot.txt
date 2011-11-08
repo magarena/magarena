@@ -1,0 +1,13 @@
+>Flame-Kin Zealot
+url=http://magiccards.info/rav/en/206.html
+image=http://magiccards.info/scans/en/rav/206.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Elemental,Berserker
+color=rw
+converted=4
+cost={1}{R}{R}{W}
+pt=2/2
+timing=fmain
+

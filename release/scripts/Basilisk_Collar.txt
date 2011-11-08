@@ -1,0 +1,13 @@
+>Basilisk Collar
+url=http://magiccards.info/wwk/en/122.html
+image=http://magiccards.info/scans/en/wwk/122.jpg
+value=4
+rarity=R
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+given_ability=deathtouch,lifelink
+timing=equipment
+

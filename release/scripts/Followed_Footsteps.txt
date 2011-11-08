@@ -1,0 +1,12 @@
+>Followed Footsteps
+url=http://magiccards.info/rav/en/51.html
+image=http://magiccards.info/scans/en/rav/51.jpg
+value=4
+rarity=R
+type=Enchantment
+subtype=Aura
+color=u
+converted=5
+cost={3}{U}{U}
+timing=aura
+

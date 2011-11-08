@@ -1,0 +1,11 @@
+>Tidings
+url=http://magiccards.info/10e/en/116.html
+image=http://magiccards.info/scans/en/10e/116.jpg
+value=4
+rarity=U
+type=Sorcery
+color=u
+converted=5
+cost={3}{U}{U}
+timing=draw
+

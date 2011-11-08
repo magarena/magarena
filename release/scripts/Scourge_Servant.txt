@@ -1,0 +1,14 @@
+>Scourge Servant
+url=http://magiccards.info/mbs/en/54.html
+image=http://magiccards.info/scans/en/mbs/54.jpg 
+value=3
+ability=infect
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=5
+cost={4}{B}
+pt=3/3
+timing=main
+

@@ -1,0 +1,13 @@
+>Dark Favor
+url=http://magiccards.info/m12/en/89.html
+image=http://magiccards.info/scans/en/m12/89.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=2
+cost={1}{B}
+given_pt=3/1
+timing=aura
+

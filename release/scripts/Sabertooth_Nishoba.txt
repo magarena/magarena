@@ -1,0 +1,14 @@
+>Sabertooth Nishoba
+url=http://magiccards.info/in/en/268.html
+image=http://magiccards.info/scans/en/in/268.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Beast
+color=gw
+converted=6
+cost={4}{G}{W}
+pt=5/5
+ability=trample,protection from blue,protection from red
+timing=main
+

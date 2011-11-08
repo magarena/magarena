@@ -1,0 +1,13 @@
+>Neurok Hoversail
+url=http://magiccards.info/mi/en/218.html
+image=http://magiccards.info/scans/en/mi/218.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+given_ability=flying
+timing=equipment
+

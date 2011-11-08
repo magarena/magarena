@@ -1,0 +1,14 @@
+>Rhox Charger
+url=http://magiccards.info/ala/en/145.html
+image=http://magiccards.info/scans/en/ala/145.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Rhino,Soldier
+color=g
+converted=4
+cost={3}{G}
+pt=3/3
+ability=trample,exalted
+timing=fmain
+

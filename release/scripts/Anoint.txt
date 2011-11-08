@@ -1,0 +1,11 @@
+>Anoint
+url=http://magiccards.info/tp/en/215.html
+image=http://magiccards.info/scans/en/tp/215.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=pump
+

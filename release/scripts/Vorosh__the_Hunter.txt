@@ -1,0 +1,14 @@
+>Vorosh, the Hunter
+url=http://magiccards.info/cmd/en/235.html
+image=http://magiccards.info/scans/en/pc/164.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+color=gub
+converted=6
+cost={3}{G}{U}{B}
+pt=6/6
+ability=flying
+timing=smain
+

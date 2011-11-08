@@ -1,0 +1,14 @@
+>Benalish Knight
+url=http://magiccards.info/10e/en/11.html
+image=http://magiccards.info/scans/en/10e/11.jpg 
+value=3
+ability=flash,first strike
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+timing=flash
+

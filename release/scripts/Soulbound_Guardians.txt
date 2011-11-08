@@ -1,0 +1,14 @@
+>Soulbound Guardians
+url=http://magiccards.info/roe/en/45.html
+image=http://magiccards.info/scans/en/roe/45.jpg 
+value=3
+ability=defender,flying
+rarity=U
+type=Creature
+subtype=Kor,Spirit
+color=w
+converted=5
+cost={4}{W}
+pt=4/5
+timing=smain
+

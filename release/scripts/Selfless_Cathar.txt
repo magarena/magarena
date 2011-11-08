@@ -1,0 +1,13 @@
+>Selfless Cathar
+url=http://magiccards.info/isd/en/30.html
+image=http://magiccards.info/scans/en/isd/30.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

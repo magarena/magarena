@@ -1,0 +1,14 @@
+>Venser, Shaper Savant
+url=http://magiccards.info/fut/en/46.html
+image=http://magiccards.info/scans/en/fut/46.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+color=u
+converted=4
+cost={2}{U}{U}
+pt=2/2
+ability=flash
+timing=counterflash
+

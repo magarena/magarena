@@ -1,0 +1,14 @@
+>Storm Crow
+url=http://magiccards.info/9e/en/100.html
+image=http://magiccards.info/scans/en/9e/100.jpg 
+value=1
+ability=flying
+rarity=C
+type=Creature
+subtype=Bird
+color=u
+converted=2
+cost={1}{U}
+pt=1/2
+timing=main
+

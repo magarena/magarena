@@ -1,0 +1,13 @@
+>Rootwalla
+url=http://magiccards.info/10e/en/293.html
+image=http://magiccards.info/scans/en/10e/293.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Lizard
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main
+

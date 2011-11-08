@@ -1,0 +1,14 @@
+>Citanul Centaurs
+url=http://magiccards.info/us/en/243.html
+image=http://magiccards.info/scans/en/us/243.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Centaur
+color=g
+converted=4
+cost={3}{G}
+pt=6/3
+ability=shroud
+timing=main
+

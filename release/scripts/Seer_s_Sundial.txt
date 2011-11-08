@@ -1,0 +1,10 @@
+>Seer's Sundial
+url=http://magiccards.info/wwk/en/130.html
+image=http://magiccards.info/scans/en/wwk/130.jpg
+value=3
+rarity=R
+type=Artifact
+converted=4
+cost={4}
+timing=artifact
+

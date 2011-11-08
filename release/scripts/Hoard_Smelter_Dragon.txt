@@ -1,0 +1,14 @@
+>Hoard-Smelter Dragon
+url=http://magiccards.info/som/en/93.html
+image=http://magiccards.info/scans/en/som/93.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+pt=5/5
+ability=flying
+timing=main
+

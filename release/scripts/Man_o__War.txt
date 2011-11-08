@@ -1,0 +1,14 @@
+>Man-o'-War
+url=http://magiccards.info/jvc/en/8.html
+image=http://magiccards.info/scans/en/jvc/8.jpg
+value=3
+removal=2
+rarity=C
+type=Creature
+subtype=Jellyfish
+color=u
+converted=3
+cost={2}{U}
+pt=2/2
+timing=fmain
+

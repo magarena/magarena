@@ -1,0 +1,14 @@
+>Wall of Swords
+url=http://magiccards.info/10e/en/57.html
+image=http://magiccards.info/scans/en/10e/57.jpg 
+value=3
+ability=defender,flying
+rarity=U
+type=Creature
+subtype=Wall
+color=w
+converted=4
+cost={3}{W}
+pt=3/5
+timing=smain
+

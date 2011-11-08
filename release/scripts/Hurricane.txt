@@ -1,0 +1,12 @@
+>Hurricane
+url=http://magiccards.info/10e/en/270.html
+image=http://magiccards.info/scans/en/10e/270.jpg
+value=3
+removal=2
+rarity=U
+type=Sorcery
+color=g
+converted=1
+cost={X}{G}
+timing=removal
+

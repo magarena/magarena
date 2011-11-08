@@ -1,0 +1,13 @@
+>Icatian Priest
+url=http://magiccards.info/dvd/en/2.html
+image=http://magiccards.info/scans/en/dvd/2.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

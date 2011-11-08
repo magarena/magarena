@@ -1,0 +1,13 @@
+>Arbalest Elite
+url=http://magiccards.info/m12/en/5.html
+image=http://magiccards.info/scans/en/m12/5.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Archer
+color=w
+converted=4
+cost={2}{W}{W}
+pt=2/3
+timing=main
+

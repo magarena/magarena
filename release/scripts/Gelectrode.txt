@@ -1,0 +1,13 @@
+>Gelectrode
+url=http://magiccards.info/gp/en/113.html
+image=http://magiccards.info/scans/en/gp/113.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Weird
+color=ur
+converted=3
+cost={1}{U}{R}
+pt=0/1
+timing=smain
+

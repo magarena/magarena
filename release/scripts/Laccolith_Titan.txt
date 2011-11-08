@@ -1,0 +1,13 @@
+>Laccolith Titan
+url=http://magiccards.info/ne/en/89.html
+image=http://magiccards.info/scans/en/ne/89.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Beast
+color=r
+converted=7
+cost={5}{R}{R}
+pt=6/6
+timing=main
+

@@ -1,0 +1,12 @@
+>Blade of the Bloodchief
+url=http://magiccards.info/zen/en/196.html
+image=http://magiccards.info/scans/en/zen/196.jpg
+value=3
+rarity=R
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={1}
+timing=equipment
+

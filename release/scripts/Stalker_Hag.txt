@@ -1,0 +1,14 @@
+>Stalker Hag
+url=http://magiccards.info/eve/en/129.html
+image=http://magiccards.info/scans/en/eve/129.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Hag
+color=bg
+converted=3
+cost={B/G}{B/G}{B/G}
+pt=3/2
+ability=swampwalk,forestwalk
+timing=main
+

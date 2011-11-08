@@ -1,0 +1,14 @@
+>Sosuke, Son of Seshiro
+url=http://magiccards.info/chk/en/244.html
+image=http://magiccards.info/scans/en/chk/244.jpg
+value=4
+rarity=U
+type=Legendary,Creature
+subtype=Snake,Warrior
+color=g
+converted=4
+cost={2}{G}{G}
+pt=3/4
+static=player
+timing=main
+

@@ -1,0 +1,14 @@
+>Akroma, Angel of Wrath
+url=http://magiccards.info/dvd/en/1.html
+image=http://magiccards.info/scans/en/tsts/1.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+color=w
+converted=8
+cost={5}{W}{W}{W}
+pt=6/6
+ability=flying,first strike,vigilance,trample,haste,protection from black,protection from red
+timing=fmain
+

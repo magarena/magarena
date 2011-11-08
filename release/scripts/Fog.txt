@@ -1,0 +1,11 @@
+>Fog
+url=http://magiccards.info/m12/en/173.html
+image=http://magiccards.info/scans/en/m12/173.jpg
+value=2
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+

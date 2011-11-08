@@ -1,0 +1,12 @@
+>Vindicate
+url=http://magiccards.info/ap/en/126.html
+image=http://magiccards.info/scans/en/jr/33.jpg
+value=4
+removal=5
+rarity=R
+type=Sorcery
+color=wb
+converted=3
+cost={1}{W}{B}
+timing=removal
+

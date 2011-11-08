@@ -1,0 +1,13 @@
+>Siege Mastodon
+url=http://magiccards.info/m12/en/34.html
+image=http://magiccards.info/scans/en/m11/29.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Elephant
+color=w
+converted=5
+cost={4}{W}
+pt=3/5
+timing=main
+

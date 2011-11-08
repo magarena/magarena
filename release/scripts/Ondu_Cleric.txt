@@ -1,0 +1,13 @@
+>Ondu Cleric
+url=http://magiccards.info/zen/en/30.html
+image=http://magiccards.info/scans/en/zen/30.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kor,Cleric,Ally
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=main
+

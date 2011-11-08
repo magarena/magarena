@@ -1,0 +1,10 @@
+>Ancient Den
+url=http://magiccards.info/pch/en/130.html
+image=http://magiccards.info/scans/en/pch/130.jpg
+value=2
+rarity=C
+type=Artifact,Land
+mana=w4
+basic=w
+timing=land
+

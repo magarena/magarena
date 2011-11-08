@@ -1,0 +1,13 @@
+>Moss Monster
+url=http://magiccards.info/8e/en/267.html
+image=http://magiccards.info/scans/en/8e/267.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Elemental
+color=g
+converted=5
+cost={3}{G}{G}
+pt=3/6
+timing=main
+

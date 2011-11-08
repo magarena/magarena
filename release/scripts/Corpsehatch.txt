@@ -1,0 +1,12 @@
+>Corpsehatch
+url=http://magiccards.info/roe/en/103.html
+image=http://magiccards.info/scans/en/roe/103.jpg
+value=4
+removal=3
+rarity=U
+type=Sorcery
+color=b
+converted=5
+cost={3}{B}{B}
+timing=removal
+

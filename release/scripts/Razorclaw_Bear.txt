@@ -1,0 +1,13 @@
+>Razorclaw Bear
+url=http://magiccards.info/po2/en/82.html
+image=http://magiccards.info/scans/en/po2/82.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Bear
+color=g
+converted=4
+cost={2}{G}{G}
+pt=3/3
+timing=main
+

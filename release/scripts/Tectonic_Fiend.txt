@@ -1,0 +1,14 @@
+>Tectonic Fiend
+url=http://magiccards.info/ts/en/181.html
+image=http://magiccards.info/scans/en/ts/181.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=6
+cost={4}{R}{R}
+pt=7/7
+ability=attacks each turn if able
+timing=main
+

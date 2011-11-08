@@ -1,0 +1,11 @@
+>Quest for the Gemblades
+url=http://magiccards.info/zen/en/177.html
+image=http://magiccards.info/scans/en/zen/177.jpg
+value=3
+rarity=U
+type=Enchantment
+color=g
+converted=2
+cost={1}{G}
+timing=enchantment
+

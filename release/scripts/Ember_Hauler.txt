@@ -1,0 +1,13 @@
+>Ember Hauler
+url=http://magiccards.info/m11/en/135.html
+image=http://magiccards.info/scans/en/m11/135.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Goblin
+color=r
+converted=2
+cost={R}{R}
+pt=2/2
+timing=fmain
+

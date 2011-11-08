@@ -1,0 +1,13 @@
+>Edric, Spymaster of Trest
+url=http://magiccards.info/cmd/en/196.html
+image=http://magiccards.info/scans/en/cmd/196.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elf,Rogue
+color=gu
+converted=3
+cost={1}{G}{U}
+pt=2/2
+timing=fmain
+

@@ -1,0 +1,11 @@
+>Vision Skeins
+url=http://magiccards.info/cmd/en/67.html
+image=http://magiccards.info/scans/en/cmd/67.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=draw
+

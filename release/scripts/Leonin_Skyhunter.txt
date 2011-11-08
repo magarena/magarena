@@ -1,0 +1,14 @@
+>Leonin Skyhunter
+url=http://magiccards.info/ddg/en/7.html
+image=http://magiccards.info/scans/en/mbs/11.jpg 
+value=3
+ability=flying
+rarity=U
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+timing=main
+

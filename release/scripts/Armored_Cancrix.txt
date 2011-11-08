@@ -1,0 +1,13 @@
+>Armored Cancrix
+url=http://magiccards.info/m11/en/44.html
+image=http://magiccards.info/scans/en/m11/44.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Crab
+color=u
+converted=5
+cost={4}{U}
+pt=2/5
+timing=main
+

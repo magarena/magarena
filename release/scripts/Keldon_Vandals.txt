@@ -1,0 +1,14 @@
+>Keldon Vandals
+url=http://magiccards.info/ud/en/91.html
+image=http://magiccards.info/scans/en/ud/91.jpg
+value=3
+removal=1
+rarity=C
+type=Creature
+subtype=Human,Rogue
+color=r
+converted=3
+cost={2}{R}
+pt=4/1
+timing=main
+

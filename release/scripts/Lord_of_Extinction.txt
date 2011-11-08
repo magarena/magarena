@@ -1,0 +1,12 @@
+>Lord of Extinction
+url=http://magiccards.info/arb/en/91.html
+image=http://magiccards.info/scans/en/arb/91.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Elemental
+color=bg
+converted=5
+cost={3}{B}{G}
+timing=smain
+

@@ -1,0 +1,14 @@
+>Goblin Piledriver
+url=http://magiccards.info/on/en/205.html
+image=http://magiccards.info/scans/en/on/205.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Goblin
+color=r
+converted=2
+cost={1}{R}
+pt=1/2
+ability=protection from blue
+timing=main
+

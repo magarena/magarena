@@ -1,0 +1,12 @@
+>Smother
+url=http://magiccards.info/wwk/en/68.html
+image=http://magiccards.info/scans/en/wwk/68.jpg
+value=3
+removal=2
+rarity=U
+type=Instant
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+

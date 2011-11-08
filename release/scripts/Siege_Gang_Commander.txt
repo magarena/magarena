@@ -1,0 +1,13 @@
+>Siege-Gang Commander
+url=http://magiccards.info/m10/en/157.html
+image=http://magiccards.info/scans/en/m10/157.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Goblin
+color=r
+converted=5
+cost={3}{R}{R}
+pt=2/2
+timing=fmain
+

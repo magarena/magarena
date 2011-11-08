@@ -1,0 +1,11 @@
+>Megrim
+url=http://magiccards.info/dpa/en/26.html
+image=http://magiccards.info/scans/en/m10/104.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
+timing=enchantment
+

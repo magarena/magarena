@@ -1,0 +1,12 @@
+>Paraselene
+url=http://magiccards.info/isd/en/26.html
+image=http://magiccards.info/scans/en/isd/26.jpg
+value=2
+removal=2
+rarity=U
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
+timing=removal
+

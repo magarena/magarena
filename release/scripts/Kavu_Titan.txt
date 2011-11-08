@@ -1,0 +1,13 @@
+>Kavu Titan
+url=http://magiccards.info/in/en/194.html
+image=http://magiccards.info/scans/en/in/194.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Kavu
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+

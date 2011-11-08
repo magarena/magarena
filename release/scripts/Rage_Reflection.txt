@@ -1,0 +1,11 @@
+>Rage Reflection
+url=http://magiccards.info/dpa/en/52.html
+image=http://magiccards.info/scans/en/shm/104.jpg
+value=4
+rarity=R
+type=Enchantment
+color=r
+converted=6
+cost={4}{R}{R}
+timing=enchantment
+

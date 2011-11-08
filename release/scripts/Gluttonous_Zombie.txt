@@ -1,0 +1,14 @@
+>Gluttonous Zombie
+url=http://magiccards.info/9e/en/134.html
+image=http://magiccards.info/scans/en/9e/134.jpg 
+value=4
+ability=fear
+rarity=U
+type=Creature
+subtype=Zombie
+color=b
+converted=5
+cost={4}{B}
+pt=3/3
+timing=main
+

@@ -1,0 +1,13 @@
+>Slagwurm Armor
+url=http://magiccards.info/mi/en/243.html
+image=http://magiccards.info/scans/en/mi/243.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={3}
+given_pt=0/6
+timing=equipment
+

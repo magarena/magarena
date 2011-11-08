@@ -1,0 +1,11 @@
+>Endless Ranks of the Dead
+url=http://magiccards.info/isd/en/99.html
+image=http://magiccards.info/scans/en/isd/99.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=4
+cost={2}{B}{B}
+timing=enchantment
+

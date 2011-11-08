@@ -1,0 +1,13 @@
+>Halimar Excavator
+url=http://magiccards.info/wwk/en/29.html
+image=http://magiccards.info/scans/en/wwk/29.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard,Ally
+color=u
+converted=2
+cost={1}{U}
+pt=1/3
+timing=main
+

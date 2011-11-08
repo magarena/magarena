@@ -1,0 +1,14 @@
+>Claustrophobia
+url=http://magiccards.info/isd/en/48.html
+image=http://magiccards.info/scans/en/isd/48.jpg
+value=3
+removal=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=3
+cost={1}{U}{U}
+given_ability=doesn't untap during untap step
+timing=tapping
+

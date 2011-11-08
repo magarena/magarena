@@ -1,0 +1,14 @@
+>Aven Fisher
+url=http://magiccards.info/10e/en/68.html
+image=http://magiccards.info/scans/en/10e/68.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+color=u
+converted=4
+cost={3}{U}
+pt=2/2
+ability=flying
+timing=main
+

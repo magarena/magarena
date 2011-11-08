@@ -1,0 +1,14 @@
+>Herald of Serra
+url=http://magiccards.info/us/en/17.html
+image=http://magiccards.info/scans/en/us/17.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Angel
+color=w
+converted=4
+cost={2}{W}{W}
+pt=3/4
+ability=flying,vigilance
+timing=main
+

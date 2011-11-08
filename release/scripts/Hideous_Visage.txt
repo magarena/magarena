@@ -1,0 +1,11 @@
+>Hideous Visage
+url=http://magiccards.info/m12/en/100.html
+image=http://magiccards.info/scans/en/m12/100.jpg
+value=3
+rarity=C
+type=Sorcery
+color=b
+converted=3
+cost={2}{B}
+timing=pump
+

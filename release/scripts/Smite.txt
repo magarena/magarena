@@ -1,0 +1,12 @@
+>Smite
+url=http://magiccards.info/roe/en/43.html
+image=http://magiccards.info/scans/en/roe/43.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=block
+

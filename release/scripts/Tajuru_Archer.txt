@@ -1,0 +1,13 @@
+>Tajuru Archer
+url=http://magiccards.info/zen/en/185.html
+image=http://magiccards.info/scans/en/zen/185.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Elf,Archer,Ally
+color=g
+converted=3
+cost={2}{G}
+pt=1/2
+timing=main
+

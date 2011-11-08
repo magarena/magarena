@@ -1,0 +1,13 @@
+>Grixis Grimblade
+url=http://magiccards.info/arb/en/134.html
+image=http://magiccards.info/scans/en/arb/134.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie,Warrior
+color=urb
+converted=2
+cost={U/R}{B}
+pt=2/1
+timing=main
+

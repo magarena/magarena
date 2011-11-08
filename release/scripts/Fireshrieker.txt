@@ -1,0 +1,13 @@
+>Fireshrieker
+url=http://magiccards.info/mi/en/171.html
+image=http://magiccards.info/scans/en/mi/171.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+given_ability=double strike
+timing=equipment
+

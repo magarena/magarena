@@ -1,0 +1,12 @@
+>Naturalize
+url=http://magiccards.info/isd/en/197.html
+image=http://magiccards.info/scans/en/m11/186.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=removal
+

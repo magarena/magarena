@@ -1,0 +1,14 @@
+>Shadowmage Infiltrator
+url=http://magiccards.info/tsts/en/99.html
+image=http://magiccards.info/scans/en/tsts/99.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Human,Wizard
+color=ub
+converted=3
+cost={1}{U}{B}
+pt=1/3
+ability=fear
+timing=main
+

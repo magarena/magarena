@@ -1,0 +1,13 @@
+>Indomitable Ancients
+url=http://magiccards.info/mt/en/13.html
+image=http://magiccards.info/scans/en/mt/13.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Treefolk,Warrior
+color=w
+converted=4
+cost={2}{W}{W}
+pt=2/10
+timing=main
+

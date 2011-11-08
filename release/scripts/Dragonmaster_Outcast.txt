@@ -1,0 +1,13 @@
+>Dragonmaster Outcast
+url=http://magiccards.info/wwk/en/81.html
+image=http://magiccards.info/scans/en/wwk/81.jpg
+value=2
+rarity=M
+type=Creature
+subtype=Human,Shaman
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=smain
+

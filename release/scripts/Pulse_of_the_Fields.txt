@@ -1,0 +1,11 @@
+>Pulse of the Fields
+url=http://magiccards.info/ds/en/11.html
+image=http://magiccards.info/scans/en/ds/11.jpg
+value=4
+rarity=R
+type=Sorcery
+color=w
+converted=3
+cost={1}{W}{W}
+timing=main
+

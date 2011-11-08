@@ -1,0 +1,14 @@
+>Sword of War and Peace
+url=http://magiccards.info/nph/en/161.html
+image=http://magiccards.info/scans/en/nph/161.jpg
+value=5
+rarity=M
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+given_pt=2/2
+given_ability=protection from red,protection from white
+timing=equipment
+

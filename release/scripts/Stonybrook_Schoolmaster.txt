@@ -1,0 +1,13 @@
+>Stonybrook Schoolmaster
+url=http://magiccards.info/mt/en/25.html
+image=http://magiccards.info/scans/en/mt/25.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+color=w
+converted=3
+cost={2}{W}
+pt=1/2
+timing=main
+

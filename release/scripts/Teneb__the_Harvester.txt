@@ -1,0 +1,14 @@
+>Teneb, the Harvester
+url=http://magiccards.info/cmd/en/230.html
+image=http://magiccards.info/scans/en/pc/163.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+color=gbw
+converted=6
+cost={3}{G}{B}{W}
+pt=6/6
+ability=flying
+timing=main
+

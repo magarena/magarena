@@ -1,0 +1,13 @@
+>Ruhan of the Fomori
+url=http://magiccards.info/cmd/en/221.html
+image=http://magiccards.info/scans/en/cmd/221.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Giant,Warrior
+converted=4
+cost={1}{R}{W}{U}
+pt=7/7
+ability=attacks each turn if able
+timing=main
+

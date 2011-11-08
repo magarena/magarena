@@ -1,0 +1,14 @@
+>Beloved Chaplain
+url=http://magiccards.info/od/en/11.html
+image=http://magiccards.info/scans/en/od/11.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Cleric
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+ability=protection from creatures
+timing=smain
+

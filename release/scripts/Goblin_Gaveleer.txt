@@ -1,0 +1,14 @@
+>Goblin Gaveleer
+url=http://magiccards.info/som/en/92.html
+image=http://magiccards.info/scans/en/som/92.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=1
+cost={R}
+pt=1/1
+ability=trample
+timing=main
+

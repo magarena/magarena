@@ -1,0 +1,14 @@
+>Mindshrieker
+url=http://magiccards.info/isd/en/67.html
+image=http://magiccards.info/scans/en/isd/67.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Spirit,Bird
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=flying
+timing=main
+

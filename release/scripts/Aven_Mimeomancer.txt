@@ -1,0 +1,14 @@
+>Aven Mimeomancer
+url=http://magiccards.info/arb/en/2.html
+image=http://magiccards.info/scans/en/arb/2.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Bird,Wizard
+color=wu
+converted=3
+cost={1}{W}{U}
+pt=3/1
+ability=flying
+timing=smain
+

@@ -1,0 +1,13 @@
+>Sacred Prey
+url=http://magiccards.info/mm/en/268.html
+image=http://magiccards.info/scans/en/mm/268.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Horse
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

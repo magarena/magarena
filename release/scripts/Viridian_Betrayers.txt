@@ -1,0 +1,13 @@
+>Viridian Betrayers
+url=http://magiccards.info/nph/en/124.html
+image=http://magiccards.info/scans/en/nph/124.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=3
+cost={1}{G}{G}
+pt=3/1
+timing=main
+

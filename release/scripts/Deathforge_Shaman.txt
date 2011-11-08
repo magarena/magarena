@@ -1,0 +1,13 @@
+>Deathforge Shaman
+url=http://magiccards.info/wwk/en/80.html
+image=http://magiccards.info/scans/en/wwk/80.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Ogre,Shaman
+color=r
+converted=5
+cost={4}{R}
+pt=4/3
+timing=main
+

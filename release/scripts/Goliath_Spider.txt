@@ -1,0 +1,14 @@
+>Goliath Spider
+url=http://magiccards.info/rav/en/168.html
+image=http://magiccards.info/scans/en/rav/168.jpg 
+value=4
+ability=reach
+rarity=U
+type=Creature
+subtype=Spider
+color=g
+converted=8
+cost={6}{G}{G}
+pt=7/6
+timing=main
+

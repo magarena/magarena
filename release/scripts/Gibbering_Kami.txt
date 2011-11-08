@@ -1,0 +1,14 @@
+>Gibbering Kami
+url=http://magiccards.info/chk/en/112.html
+image=http://magiccards.info/scans/en/chk/112.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+ability=flying
+timing=main
+

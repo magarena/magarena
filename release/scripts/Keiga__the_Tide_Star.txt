@@ -1,0 +1,14 @@
+>Keiga, the Tide Star
+url=http://magiccards.info/chk/en/72.html
+image=http://magiccards.info/scans/en/chk/72.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon,Spirit
+color=u
+converted=6
+cost={5}{U}
+pt=5/5
+ability=flying
+timing=main
+

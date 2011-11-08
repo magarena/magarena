@@ -1,0 +1,14 @@
+>No-Dachi
+url=http://magiccards.info/chk/en/264.html
+image=http://magiccards.info/scans/en/chk/264.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={3}
+given_pt=2/0
+given_ability=first strike
+timing=equipment
+

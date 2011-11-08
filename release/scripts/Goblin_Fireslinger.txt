@@ -1,0 +1,13 @@
+>Goblin Fireslinger
+url=http://magiccards.info/m12/en/139.html
+image=http://magiccards.info/scans/en/m12/139.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+

@@ -1,0 +1,14 @@
+>Glacial Wall
+url=http://magiccards.info/7e/en/78.html
+image=http://magiccards.info/scans/en/7e/78.jpg 
+value=2
+ability=defender
+rarity=U
+type=Creature
+subtype=Wall
+color=u
+converted=3
+cost={2}{U}
+pt=0/7
+timing=smain
+

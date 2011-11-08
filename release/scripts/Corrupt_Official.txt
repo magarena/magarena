@@ -1,0 +1,13 @@
+>Corrupt Official
+url=http://magiccards.info/mm/en/128.html
+image=http://magiccards.info/scans/en/mm/128.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Minion
+color=b
+converted=5
+cost={4}{B}
+pt=3/1
+timing=main
+

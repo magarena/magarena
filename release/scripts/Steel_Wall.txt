@@ -1,0 +1,13 @@
+>Steel Wall
+url=http://magiccards.info/ddf/en/41.html
+image=http://magiccards.info/scans/en/mi/248.jpg
+value=1
+rarity=C
+type=Artifact,Creature
+subtype=Wall
+converted=1
+cost={1}
+pt=0/4
+ability=defender
+timing=smain
+

@@ -1,0 +1,13 @@
+>Specter's Shroud
+url=http://magiccards.info/ds/en/142.html
+image=http://magiccards.info/scans/en/ds/142.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+given_pt=1/0
+timing=equipment
+

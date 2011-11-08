@@ -1,0 +1,14 @@
+>Strider Harness
+url=http://magiccards.info/som/en/207.html
+image=http://magiccards.info/scans/en/som/207.jpg
+value=3
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={1}
+given_pt=1/1
+given_ability=haste
+timing=equipment
+

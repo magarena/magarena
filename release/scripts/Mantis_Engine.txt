@@ -1,0 +1,12 @@
+>Mantis Engine
+url=http://magiccards.info/10e/en/333.html
+image=http://magiccards.info/scans/en/10e/333.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+converted=5
+cost={5}
+pt=3/3
+timing=main
+

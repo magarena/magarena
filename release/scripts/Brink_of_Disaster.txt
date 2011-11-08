@@ -1,0 +1,13 @@
+>Brink of Disaster
+url=http://magiccards.info/m12/en/84.html
+image=http://magiccards.info/scans/en/m12/84.jpg
+value=3
+removal=4
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=4
+cost={2}{B}{B}
+timing=removal
+

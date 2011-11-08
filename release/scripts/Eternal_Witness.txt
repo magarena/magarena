@@ -1,0 +1,13 @@
+>Eternal Witness
+url=http://magiccards.info/cmd/en/152.html
+image=http://magiccards.info/scans/en/cmd/152.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=3
+cost={1}{G}{G}
+pt=2/1
+timing=main
+

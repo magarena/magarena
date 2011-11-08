@@ -1,0 +1,15 @@
+>Bone Shredder
+url=http://magiccards.info/pvc/en/5.html
+image=http://magiccards.info/scans/en/pvc/5.jpg
+value=2
+removal=1
+rarity=U
+type=Creature
+subtype=Minion
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+ability=flying
+timing=main
+

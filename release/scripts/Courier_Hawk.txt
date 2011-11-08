@@ -1,0 +1,14 @@
+>Courier Hawk
+url=http://magiccards.info/rav/en/12.html
+image=http://magiccards.info/scans/en/rav/12.jpg 
+value=2
+ability=flying,vigilance
+rarity=C
+type=Creature
+subtype=Bird
+color=w
+converted=2
+cost={1}{W}
+pt=1/2
+timing=main
+

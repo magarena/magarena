@@ -1,0 +1,13 @@
+>Wall of Spears
+url=http://magiccards.info/dpa/en/96.html
+image=http://magiccards.info/scans/en/dpa/96.jpg 
+value=2
+ability=defender,first strike
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+converted=3
+cost={3}
+pt=2/3
+timing=smain
+

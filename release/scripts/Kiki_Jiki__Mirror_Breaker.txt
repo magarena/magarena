@@ -1,0 +1,14 @@
+>Kiki-Jiki, Mirror Breaker
+url=http://magiccards.info/fvl/en/4.html
+image=http://magiccards.info/scans/en/chk/175.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Goblin,Shaman
+color=r
+converted=5
+cost={2}{R}{R}{R}
+pt=2/2
+ability=haste
+timing=fmain
+

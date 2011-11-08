@@ -1,0 +1,11 @@
+>Sudden Impact
+url=http://magiccards.info/pd2/en/25.html
+image=http://magiccards.info/scans/en/10e/241.jpg
+value=2
+rarity=U
+type=Instant
+color=r
+converted=4
+cost={3}{R}
+timing=main
+

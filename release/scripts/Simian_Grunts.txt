@@ -1,0 +1,14 @@
+>Simian Grunts
+url=http://magiccards.info/ul/en/113.html
+image=http://magiccards.info/scans/en/ul/113.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Ape
+color=g
+converted=3
+cost={2}{G}
+pt=3/4
+ability=flash
+timing=flash
+

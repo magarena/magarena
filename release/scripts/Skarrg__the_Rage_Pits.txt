@@ -1,0 +1,8 @@
+>Skarrg, the Rage Pits
+url=http://magiccards.info/gp/en/163.html
+image=http://magiccards.info/scans/en/gp/163.jpg
+value=3
+rarity=U
+type=Land
+timing=land
+

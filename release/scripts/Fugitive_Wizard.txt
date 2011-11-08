@@ -1,0 +1,13 @@
+>Fugitive Wizard
+url=http://magiccards.info/10e/en/86.html
+image=http://magiccards.info/scans/en/10e/86.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+

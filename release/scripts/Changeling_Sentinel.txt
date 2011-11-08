@@ -1,0 +1,14 @@
+>Changeling Sentinel
+url=http://magiccards.info/mt/en/6.html
+image=http://magiccards.info/scans/en/mt/6.jpg 
+value=3
+ability=changeling,vigilance
+rarity=C
+type=Creature
+subtype=Shapeshifter
+color=w
+converted=4
+cost={3}{W}
+pt=3/2
+timing=main
+

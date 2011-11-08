@@ -1,0 +1,12 @@
+>Maw of the Mire
+url=http://magiccards.info/isd/en/108.html
+image=http://magiccards.info/scans/en/isd/108.jpg
+value=3
+removal=3
+rarity=C
+type=Sorcery
+color=b
+converted=5
+cost={4}{B}
+timing=removal
+

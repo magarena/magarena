@@ -1,0 +1,14 @@
+>Scuzzback Marauders
+url=http://magiccards.info/shm/en/216.html
+image=http://magiccards.info/scans/en/shm/216.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=rg
+converted=5
+cost={4}{R/G}
+pt=5/2
+ability=trample,persist
+timing=main
+

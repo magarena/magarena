@@ -1,0 +1,14 @@
+>Soltari Champion
+url=http://magiccards.info/sh/en/118.html
+image=http://magiccards.info/scans/en/sh/118.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Soltari,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=shadow
+timing=main
+

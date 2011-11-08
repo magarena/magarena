@@ -1,0 +1,14 @@
+>Spidersilk Net
+url=http://magiccards.info/zen/en/206.html
+image=http://magiccards.info/scans/en/zen/206.jpg
+value=1
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=0
+cost={0}
+equip={2}
+given_pt=0/2
+given_ability=reach
+timing=equipment
+

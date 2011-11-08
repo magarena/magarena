@@ -1,0 +1,11 @@
+>Undermine
+url=http://magiccards.info/ddh/en/62.html
+image=http://magiccards.info/scans/en/in/282.jpg
+value=3
+rarity=R
+type=Instant
+color=ub
+converted=3
+cost={U}{U}{B}
+timing=counter
+

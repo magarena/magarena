@@ -1,0 +1,14 @@
+>Blurred Mongoose
+url=http://magiccards.info/in/en/183.html
+image=http://magiccards.info/scans/en/in/183.jpg 
+value=3
+ability=can't be countered,shroud
+rarity=R
+type=Creature
+subtype=Mongoose
+color=g
+converted=2
+cost={1}{G}
+pt=2/1
+timing=fmain
+

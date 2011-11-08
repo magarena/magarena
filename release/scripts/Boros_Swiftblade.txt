@@ -1,0 +1,14 @@
+>Boros Swiftblade
+url=http://magiccards.info/pch/en/82.html
+image=http://magiccards.info/scans/en/pch/82.jpg 
+value=2
+ability=double strike
+rarity=U
+type=Creature
+subtype=Human,Soldier
+color=rw
+converted=2
+cost={R}{W}
+pt=1/2
+timing=main
+

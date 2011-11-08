@@ -1,0 +1,13 @@
+>Territorial Baloth
+url=http://magiccards.info/zen/en/188.html
+image=http://magiccards.info/scans/en/zen/188.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={4}{G}
+pt=4/4
+timing=main
+

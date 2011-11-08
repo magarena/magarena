@@ -1,0 +1,15 @@
+>Changeling Hero
+url=http://magiccards.info/lw/en/9.html
+image=http://magiccards.info/scans/en/lw/9.jpg
+value=4
+removal=2
+rarity=U
+type=Creature
+subtype=Shapeshifter
+color=w
+converted=5
+cost={4}{W}
+pt=4/4
+ability=changeling,lifelink
+timing=main
+

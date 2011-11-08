@@ -1,0 +1,13 @@
+>Rhox Brute
+url=http://magiccards.info/arb/en/59.html
+image=http://magiccards.info/scans/en/arb/59.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Rhino,Warrior
+color=rg
+converted=4
+cost={2}{R}{G}
+pt=4/4
+timing=main
+

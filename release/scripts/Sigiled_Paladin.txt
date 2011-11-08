@@ -1,0 +1,14 @@
+>Sigiled Paladin
+url=http://magiccards.info/ala/en/27.html
+image=http://magiccards.info/scans/en/ala/27.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=first strike,exalted
+timing=fmain
+

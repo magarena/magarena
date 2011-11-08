@@ -1,0 +1,14 @@
+>Gladecover Scout
+url=http://magiccards.info/m12/en/178.html
+image=http://magiccards.info/scans/en/m12/178.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Scout
+color=g
+converted=1
+cost={G}
+pt=1/1
+ability=hexproof
+timing=main
+

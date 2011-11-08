@@ -1,0 +1,11 @@
+>Remand
+url=http://magiccards.info/rav/en/63.html
+image=http://magiccards.info/scans/en/rav/63.jpg
+value=3
+rarity=U
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
+

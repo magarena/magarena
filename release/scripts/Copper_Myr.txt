@@ -1,0 +1,13 @@
+>Copper Myr
+url=http://magiccards.info/som/en/146.html
+image=http://magiccards.info/scans/en/som/146.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Myr
+converted=2
+cost={2}
+pt=1/1
+timing=smain
+mana_or_combat
+

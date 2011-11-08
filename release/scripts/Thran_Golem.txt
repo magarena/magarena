@@ -1,0 +1,12 @@
+>Thran Golem
+url=http://magiccards.info/m12/en/220.html
+image=http://magiccards.info/scans/en/m12/220.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+converted=5
+cost={5}
+pt=3/3
+timing=main
+

@@ -1,0 +1,14 @@
+>Cloudskate
+url=http://magiccards.info/ne/en/29.html
+image=http://magiccards.info/scans/en/ne/29.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Illusion
+color=u
+converted=2
+cost={1}{U}
+pt=2/2
+ability=flying
+timing=main
+

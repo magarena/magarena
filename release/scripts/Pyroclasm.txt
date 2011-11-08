@@ -1,0 +1,12 @@
+>Pyroclasm
+url=http://magiccards.info/m11/en/154.html
+image=http://magiccards.info/scans/en/m11/154.jpg
+value=4
+removal=2
+rarity=U
+type=Sorcery
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+

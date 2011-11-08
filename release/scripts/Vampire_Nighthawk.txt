@@ -1,0 +1,14 @@
+>Vampire Nighthawk
+url=http://magiccards.info/cmd/en/106.html
+image=http://magiccards.info/scans/en/zen/116.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Vampire,Shaman
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/3
+ability=flying,deathtouch,lifelink
+timing=main
+

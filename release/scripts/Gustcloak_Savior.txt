@@ -1,0 +1,14 @@
+>Gustcloak Savior
+url=http://magiccards.info/on/en/36.html
+image=http://magiccards.info/scans/en/on/36.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Bird,Soldier
+color=w
+converted=5
+cost={4}{W}
+pt=3/4
+ability=flying
+timing=main
+

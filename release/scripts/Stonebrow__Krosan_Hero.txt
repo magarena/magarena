@@ -1,0 +1,14 @@
+>Stonebrow, Krosan Hero
+url=http://magiccards.info/ts/en/247.html
+image=http://magiccards.info/scans/en/ts/247.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Centaur,Warrior
+color=rg
+converted=5
+cost={3}{R}{G}
+pt=4/4
+ability=trample
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Weakness
+url=http://magiccards.info/m10/en/121.html
+image=http://magiccards.info/scans/en/m10/121.jpg
+value=3
+removal=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=1
+cost={B}
+given_pt=-2/-1
+timing=removal
+

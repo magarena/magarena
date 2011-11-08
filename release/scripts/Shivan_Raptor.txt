@@ -1,0 +1,14 @@
+>Shivan Raptor
+url=http://magiccards.info/us/en/215.html
+image=http://magiccards.info/scans/en/us/215.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Lizard
+color=r
+converted=3
+cost={2}{R}
+pt=3/1
+ability=first strike,haste
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Nightshade Stinger
+url=http://magiccards.info/lw/en/132.html
+image=http://magiccards.info/scans/en/lw/132.jpg 
+value=1
+ability=flying,can't block
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+color=b
+converted=1
+cost={B}
+pt=1/1
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Wall of Bone
+url=http://magiccards.info/gvl/en/41.html
+image=http://magiccards.info/scans/en/gvl/41.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Skeleton,Wall
+color=b
+converted=3
+cost={2}{B}
+pt=1/4
+ability=defender
+timing=smain
+

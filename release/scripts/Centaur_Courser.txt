@@ -1,0 +1,13 @@
+>Centaur Courser
+url=http://magiccards.info/m10/en/172.html
+image=http://magiccards.info/scans/en/m10/172.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Centaur,Warrior
+color=g
+converted=3
+cost={2}{G}
+pt=3/3
+timing=main
+

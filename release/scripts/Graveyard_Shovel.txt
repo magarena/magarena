@@ -1,0 +1,10 @@
+>Graveyard Shovel
+url=http://magiccards.info/isd/en/225.html
+image=http://magiccards.info/scans/en/isd/225.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=artifact
+

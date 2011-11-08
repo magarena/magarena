@@ -1,0 +1,13 @@
+>Dauntless Escort
+url=http://magiccards.info/arb/en/67.html
+image=http://magiccards.info/scans/en/arb/67.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Rhino,Soldier
+color=gw
+converted=3
+cost={1}{G}{W}
+pt=3/3
+timing=fmain
+

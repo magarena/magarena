@@ -1,0 +1,14 @@
+>Ashenmoor Gouger
+url=http://magiccards.info/shm/en/180.html
+image=http://magiccards.info/scans/en/shm/180.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Elemental,Warrior
+color=br
+converted=3
+cost={B/R}{B/R}{B/R}
+pt=4/4
+ability=can't block
+timing=fmain
+

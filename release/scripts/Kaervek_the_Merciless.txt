@@ -1,0 +1,13 @@
+>Kaervek the Merciless
+url=http://magiccards.info/arc/en/88.html
+image=http://magiccards.info/scans/en/arc/88.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Human,Shaman
+color=br
+converted=7
+cost={5}{B}{R}
+pt=5/4
+timing=fmain
+

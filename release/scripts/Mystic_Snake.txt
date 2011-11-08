@@ -1,0 +1,14 @@
+>Mystic Snake
+url=http://magiccards.info/tsts/en/97.html
+image=http://magiccards.info/scans/en/tsts/97.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Snake
+color=gu
+converted=4
+cost={1}{G}{U}{U}
+pt=2/2
+ability=flash
+timing=counterflash
+

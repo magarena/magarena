@@ -1,0 +1,13 @@
+>Elvish Pioneer
+url=http://magiccards.info/8e/en/243.html
+image=http://magiccards.info/scans/en/8e/243.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Druid
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

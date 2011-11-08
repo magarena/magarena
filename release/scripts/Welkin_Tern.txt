@@ -1,0 +1,14 @@
+>Welkin Tern
+url=http://magiccards.info/zen/en/76.html
+image=http://magiccards.info/scans/en/zen/76.jpg
+value=2
+ability=flying,can't block creatures without flying
+rarity=C
+type=Creature
+subtype=Bird
+color=u
+converted=2
+cost={1}{U}
+pt=2/1
+timing=main
+

@@ -1,0 +1,13 @@
+>River Kaijin
+url=http://magiccards.info/chk/en/83.html
+image=http://magiccards.info/scans/en/chk/83.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=u
+converted=3
+cost={2}{U}
+pt=1/4
+timing=main
+

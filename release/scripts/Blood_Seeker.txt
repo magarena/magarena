@@ -1,0 +1,13 @@
+>Blood Seeker
+url=http://magiccards.info/m12/en/81.html
+image=http://magiccards.info/scans/en/m12/81.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire,Shaman
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=fmain
+

@@ -1,0 +1,13 @@
+>Realm Razer
+url=http://magiccards.info/ala/en/187.html
+image=http://magiccards.info/scans/en/ala/187.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Beast
+color=rgw
+converted=6
+cost={3}{R}{G}{W}
+pt=4/2
+timing=main
+

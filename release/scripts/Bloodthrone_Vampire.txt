@@ -1,0 +1,13 @@
+>Bloodthrone Vampire
+url=http://magiccards.info/m11/en/85.html
+image=http://magiccards.info/scans/en/m11/85.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=fmain
+

@@ -1,0 +1,11 @@
+>Concussive Bolt
+url=http://magiccards.info/mbs/en/60.html
+image=http://magiccards.info/scans/en/mbs/60.jpg
+value=3
+rarity=C
+type=Sorcery
+color=r
+converted=5
+cost={3}{R}{R}
+timing=main
+

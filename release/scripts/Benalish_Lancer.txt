@@ -1,0 +1,13 @@
+>Benalish Lancer
+url=http://magiccards.info/in/en/7.html
+image=http://magiccards.info/scans/en/in/7.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+timing=main
+

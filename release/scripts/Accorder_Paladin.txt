@@ -1,0 +1,14 @@
+>Accorder Paladin
+url=http://magiccards.info/mbs/en/1.html
+image=http://magiccards.info/scans/en/mbs/1.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={1}{W}
+pt=3/1
+ability=battle cry
+timing=main
+

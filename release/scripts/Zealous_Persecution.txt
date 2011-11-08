@@ -1,0 +1,12 @@
+>Zealous Persecution
+url=http://magiccards.info/arb/en/85.html
+image=http://magiccards.info/scans/en/arb/85.jpg
+value=4
+removal=1
+rarity=U
+type=Instant
+color=wb
+converted=2
+cost={W}{B}
+timing=removal
+

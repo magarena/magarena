@@ -1,0 +1,11 @@
+>Force Spike
+url=http://magiccards.info/7e/en/76.html
+image=http://magiccards.info/scans/en/7e/76.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=counter
+

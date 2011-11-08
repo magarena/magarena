@@ -1,0 +1,13 @@
+>Duskwalker
+url=http://magiccards.info/in/en/104.html
+image=http://magiccards.info/scans/en/in/104.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Human,Minion
+color=b
+converted=1
+cost={B}
+pt=1/1
+timing=main
+

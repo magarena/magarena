@@ -1,0 +1,13 @@
+>Esper Stormblade
+url=http://magiccards.info/arb/en/132.html
+image=http://magiccards.info/scans/en/arb/132.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Vedalken,Wizard
+color=wbu
+converted=2
+cost={W/B}{U}
+pt=2/1
+timing=main
+

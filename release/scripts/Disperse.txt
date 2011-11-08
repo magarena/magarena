@@ -1,0 +1,11 @@
+>Disperse
+url=http://magiccards.info/som/en/31.html
+image=http://magiccards.info/scans/en/som/31.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
+

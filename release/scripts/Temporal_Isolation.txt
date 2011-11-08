@@ -1,0 +1,14 @@
+>Temporal Isolation
+url=http://magiccards.info/ts/en/43.html
+image=http://magiccards.info/scans/en/ts/43.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+ability=flash
+given_ability=shadow
+timing=flash
+

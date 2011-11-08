@@ -1,0 +1,11 @@
+>Boomerang
+url=http://magiccards.info/dpa/en/2.html
+image=http://magiccards.info/scans/en/10e/70.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={U}{U}
+timing=removal
+

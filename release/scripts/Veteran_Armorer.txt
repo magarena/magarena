@@ -1,0 +1,14 @@
+>Veteran Armorer
+url=http://magiccards.info/rav/en/34.html
+image=http://magiccards.info/scans/en/rav/34.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+static=player
+timing=fmain
+

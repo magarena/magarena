@@ -1,0 +1,15 @@
+>Sunblast Angel
+url=http://magiccards.info/som/en/22.html
+image=http://magiccards.info/scans/en/som/22.jpg
+value=5
+removal=2
+rarity=R
+type=Creature
+subtype=Angel
+color=w
+converted=6
+cost={4}{W}{W}
+pt=4/5
+ability=flying
+timing=fmain
+

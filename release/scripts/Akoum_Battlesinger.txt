@@ -1,0 +1,14 @@
+>Akoum Battlesinger
+url=http://magiccards.info/wwk/en/71.html
+image=http://magiccards.info/scans/en/wwk/71.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Berserker,Ally
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+ability=haste
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Quag Vampires
+url=http://magiccards.info/wwk/en/63.html
+image=http://magiccards.info/scans/en/wwk/63.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Vampire,Rogue
+color=b
+converted=1
+cost={B}
+pt=1/1
+ability=swampwalk
+timing=main
+

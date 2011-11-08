@@ -1,0 +1,14 @@
+>Glissa's Courier
+url=http://magiccards.info/mbs/en/80.html
+image=http://magiccards.info/scans/en/mbs/80.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Horror
+color=g
+converted=3
+cost={1}{G}{G}
+pt=2/3
+ability=mountainwalk
+timing=main
+

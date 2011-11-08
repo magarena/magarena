@@ -1,0 +1,13 @@
+>Goblin Marshal
+url=http://magiccards.info/ud/en/85.html
+image=http://magiccards.info/scans/en/ud/85.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=6
+cost={4}{R}{R}
+pt=3/3
+timing=main
+

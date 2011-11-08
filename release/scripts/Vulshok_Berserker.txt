@@ -1,0 +1,14 @@
+>Vulshok Berserker
+url=http://magiccards.info/m11/en/159.html
+image=http://magiccards.info/scans/en/m11/159.jpg 
+value=3
+ability=haste
+rarity=C
+type=Creature
+subtype=Human,Berserker
+color=r
+converted=4
+cost={3}{R}
+pt=3/2
+timing=fmain
+

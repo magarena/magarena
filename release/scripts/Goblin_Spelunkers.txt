@@ -1,0 +1,14 @@
+>Goblin Spelunkers
+url=http://magiccards.info/rav/en/128.html
+image=http://magiccards.info/scans/en/rav/128.jpg 
+value=2
+ability=mountainwalk
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+timing=main
+

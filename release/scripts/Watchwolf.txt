@@ -1,0 +1,13 @@
+>Watchwolf
+url=http://magiccards.info/arc/en/100.html
+image=http://magiccards.info/scans/en/arc/100.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Wolf
+color=gw
+converted=2
+cost={G}{W}
+pt=3/3
+timing=main
+

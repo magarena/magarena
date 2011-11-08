@@ -1,0 +1,13 @@
+>Deepwood Wolverine
+url=http://magiccards.info/mm/en/242.html
+image=http://magiccards.info/scans/en/mm/242.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Wolverine
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

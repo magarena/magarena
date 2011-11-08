@@ -1,0 +1,11 @@
+>Vines of Vastwood
+url=http://magiccards.info/zen/en/193.html
+image=http://magiccards.info/scans/en/zen/193.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+

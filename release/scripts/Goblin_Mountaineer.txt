@@ -1,0 +1,14 @@
+>Goblin Mountaineer
+url=http://magiccards.info/ala/en/102.html
+image=http://magiccards.info/scans/en/ala/102.jpg 
+value=1
+ability=mountainwalk
+rarity=C
+type=Creature
+subtype=Goblin,Scout
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+

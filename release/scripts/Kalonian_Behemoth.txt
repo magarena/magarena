@@ -1,0 +1,14 @@
+>Kalonian Behemoth
+url=http://magiccards.info/m10/en/188.html
+image=http://magiccards.info/scans/en/m10/188.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Beast
+color=g
+converted=7
+cost={5}{G}{G}
+pt=9/9
+ability=shroud
+timing=fmain
+

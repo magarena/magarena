@@ -1,0 +1,14 @@
+>Charging Troll
+url=http://magiccards.info/pvc/en/45.html
+image=http://magiccards.info/scans/en/pvc/45.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Troll
+color=gw
+converted=4
+cost={2}{G}{W}
+pt=3/3
+ability=vigilance
+timing=main
+

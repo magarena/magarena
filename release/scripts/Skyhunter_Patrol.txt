@@ -1,0 +1,14 @@
+>Skyhunter Patrol
+url=http://magiccards.info/ddg/en/19.html
+image=http://magiccards.info/scans/en/10e/41.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=4
+cost={2}{W}{W}
+pt=2/3
+ability=flying,first strike
+timing=main
+

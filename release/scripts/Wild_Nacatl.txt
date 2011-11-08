@@ -1,0 +1,13 @@
+>Wild Nacatl
+url=http://magiccards.info/ddh/en/4.html
+image=http://magiccards.info/scans/en/ala/152.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat,Warrior
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

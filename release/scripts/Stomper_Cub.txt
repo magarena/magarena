@@ -1,0 +1,14 @@
+>Stomper Cub
+url=http://magiccards.info/roe/en/210.html
+image=http://magiccards.info/scans/en/roe/210.jpg 
+value=4
+ability=trample
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={3}{G}{G}
+pt=5/3
+timing=main
+

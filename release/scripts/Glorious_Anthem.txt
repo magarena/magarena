@@ -1,0 +1,12 @@
+>Glorious Anthem
+url=http://magiccards.info/10e/en/17.html
+image=http://magiccards.info/scans/en/10e/17.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=3
+cost={1}{W}{W}
+static=player
+timing=enchantment
+

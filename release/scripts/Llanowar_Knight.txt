@@ -1,0 +1,14 @@
+>Llanowar Knight
+url=http://magiccards.info/in/en/254.html
+image=http://magiccards.info/scans/en/in/254.jpg 
+value=2
+ability=protection from black
+rarity=C
+type=Creature
+subtype=Elf,Knight
+color=gw
+converted=2
+cost={G}{W}
+pt=2/2
+timing=main
+

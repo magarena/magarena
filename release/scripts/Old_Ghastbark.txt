@@ -1,0 +1,13 @@
+>Old Ghastbark
+url=http://magiccards.info/shm/en/232.html
+image=http://magiccards.info/scans/en/shm/232.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Treefolk,Warrior
+color=gw
+converted=5
+cost={3}{G/W}{G/W}
+pt=3/6
+timing=main
+

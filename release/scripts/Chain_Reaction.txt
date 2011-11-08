@@ -1,0 +1,12 @@
+>Chain Reaction
+url=http://magiccards.info/cmd/en/113.html
+image=http://magiccards.info/scans/en/wwk/74.jpg
+value=4
+removal=2
+rarity=R
+type=Sorcery
+color=r
+converted=4
+cost={2}{R}{R}
+timing=removal
+

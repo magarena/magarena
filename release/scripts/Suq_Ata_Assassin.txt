@@ -1,0 +1,14 @@
+>Suq'Ata Assassin
+url=http://magiccards.info/vi/en/19.html
+image=http://magiccards.info/scans/en/vi/19.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Assassin
+color=b
+converted=3
+cost={1}{B}{B}
+pt=1/1
+ability=fear
+timing=main
+

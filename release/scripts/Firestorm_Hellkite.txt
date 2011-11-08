@@ -1,0 +1,14 @@
+>Firestorm Hellkite
+url=http://magiccards.info/vi/en/130.html
+image=http://magiccards.info/scans/en/vi/130.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=ur
+converted=6
+cost={4}{U}{R}
+pt=6/6
+ability=flying,trample
+timing=main
+

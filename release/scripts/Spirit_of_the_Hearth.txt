@@ -1,0 +1,14 @@
+>Spirit of the Hearth
+url=http://magiccards.info/eve/en/14.html
+image=http://magiccards.info/scans/en/eve/14.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Cat,Spirit
+color=w
+converted=6
+cost={4}{W}{W}
+pt=4/5
+ability=flying
+timing=fmain
+

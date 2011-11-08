@@ -1,0 +1,14 @@
+>Grimgrin, Corpse-Born
+url=http://magiccards.info/isd/en/214.html
+image=http://magiccards.info/scans/en/isd/214.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Zombie,Warrior
+color=ub
+converted=5
+cost={3}{U}{B}
+pt=5/5
+ability=doesn't untap during untap step
+timing=main
+

@@ -1,0 +1,13 @@
+>Vulshok Morningstar
+url=http://magiccards.info/9e/en/315.html
+image=http://magiccards.info/scans/en/ds/157.jpg
+value=3
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={2}
+given_pt=2/2
+timing=equipment
+

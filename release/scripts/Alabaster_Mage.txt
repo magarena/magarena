@@ -1,0 +1,13 @@
+>Alabaster Mage
+url=http://magiccards.info/m12/en/2.html
+image=http://magiccards.info/scans/en/m12/2.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Wizard
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+timing=fmain
+

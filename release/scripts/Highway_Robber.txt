@@ -1,0 +1,13 @@
+>Highway Robber
+url=http://magiccards.info/10e/en/150.html
+image=http://magiccards.info/scans/en/10e/150.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Mercenary
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/2
+timing=main
+

@@ -1,0 +1,10 @@
+>Jwar Isle Refuge
+url=http://magiccards.info/cmd/en/279.html
+image=http://magiccards.info/scans/en/zen/215.jpg
+value=3
+rarity=U
+type=Land
+mana=u3b3
+basic=ub
+timing=tapland
+

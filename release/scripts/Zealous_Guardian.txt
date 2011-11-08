@@ -1,0 +1,14 @@
+>Zealous Guardian
+url=http://magiccards.info/shm/en/157.html
+image=http://magiccards.info/scans/en/shm/157.jpg 
+value=1
+ability=flash
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+color=uw
+converted=1
+cost={W/U}
+pt=1/1
+timing=flash
+

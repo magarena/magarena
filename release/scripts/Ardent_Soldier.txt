@@ -1,0 +1,14 @@
+>Ardent Soldier
+url=http://magiccards.info/in/en/3.html
+image=http://magiccards.info/scans/en/in/3.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=1/2
+ability=vigilance
+timing=main
+

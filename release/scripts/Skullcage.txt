@@ -1,0 +1,10 @@
+>Skullcage
+url=http://magiccards.info/arc/en/115.html
+image=http://magiccards.info/scans/en/arc/115.jpg
+value=4
+rarity=U
+type=Artifact
+converted=4
+cost={4}
+timing=smain
+

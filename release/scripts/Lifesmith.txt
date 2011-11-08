@@ -1,0 +1,13 @@
+>Lifesmith
+url=http://magiccards.info/som/en/124.html
+image=http://magiccards.info/scans/en/som/124.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Artificer
+color=g
+converted=2
+cost={1}{G}
+pt=2/1
+timing=main
+

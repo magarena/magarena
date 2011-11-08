@@ -1,0 +1,9 @@
+>Khalni Garden
+url=http://magiccards.info/arc/en/127.html
+image=http://magiccards.info/scans/en/arc/127.jpg
+value=2
+rarity=C
+type=Land
+mana=g4
+timing=land
+

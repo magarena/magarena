@@ -1,0 +1,11 @@
+>Breeding Pool
+url=http://magiccards.info/di/en/172.html
+image=http://magiccards.info/scans/en/di/172.jpg
+value=4
+rarity=R
+type=Land
+subtype=Forest,Island
+mana=g3u3
+basic=gu
+timing=land
+

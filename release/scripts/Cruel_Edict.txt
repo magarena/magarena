@@ -1,0 +1,12 @@
+>Cruel Edict
+url=http://magiccards.info/dvd/en/48.html
+image=http://magiccards.info/scans/en/dvd/48.jpg
+value=2
+removal=2
+rarity=U
+type=Sorcery
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+

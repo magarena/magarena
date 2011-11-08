@@ -1,0 +1,13 @@
+>Cosi's Ravager
+url=http://magiccards.info/wwk/en/77.html
+image=http://magiccards.info/scans/en/wwk/77.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elemental
+color=r
+converted=4
+cost={3}{R}
+pt=2/2
+timing=main
+

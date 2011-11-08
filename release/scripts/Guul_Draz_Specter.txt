@@ -1,0 +1,14 @@
+>Guul Draz Specter
+url=http://magiccards.info/zen/en/92.html
+image=http://magiccards.info/scans/en/zen/92.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Specter
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/2
+ability=flying
+timing=main
+

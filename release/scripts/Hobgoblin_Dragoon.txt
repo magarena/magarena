@@ -1,0 +1,14 @@
+>Hobgoblin Dragoon
+url=http://magiccards.info/eve/en/142.html
+image=http://magiccards.info/scans/en/eve/142.jpg 
+value=3
+ability=flying,first strike
+rarity=C
+type=Creature
+subtype=Goblin,Knight
+color=rw
+converted=3
+cost={2}{R/W}
+pt=1/2
+timing=main
+

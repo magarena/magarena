@@ -1,0 +1,11 @@
+>Captive Flame
+url=http://magiccards.info/ddg/en/68.html
+image=http://magiccards.info/scans/en/sok/96.jpg
+value=3
+rarity=U
+type=Enchantment
+color=r
+converted=3
+cost={2}{R}
+timing=enchantment
+

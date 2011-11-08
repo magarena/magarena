@@ -1,0 +1,14 @@
+>Oakgnarl Warrior
+url=http://magiccards.info/lw/en/232.html
+image=http://magiccards.info/scans/en/lw/232.jpg 
+value=4
+ability=vigilance,trample
+rarity=C
+type=Creature
+subtype=Treefolk,Warrior
+color=g
+converted=7
+cost={5}{G}{G}
+pt=5/7
+timing=main
+

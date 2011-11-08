@@ -1,0 +1,15 @@
+>Bellowing Tanglewurm
+url=http://magiccards.info/som/en/111.html
+image=http://magiccards.info/scans/en/som/111.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Wurm
+color=g
+converted=5
+cost={3}{G}{G}
+pt=4/4
+ability=intimidate
+static=player
+timing=fmain
+

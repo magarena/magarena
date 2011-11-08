@@ -1,0 +1,13 @@
+>Scrib Nibblers
+url=http://magiccards.info/wwk/en/66.html
+image=http://magiccards.info/scans/en/wwk/66.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+timing=main
+

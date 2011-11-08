@@ -1,0 +1,13 @@
+>Rage Thrower
+url=http://magiccards.info/isd/en/157.html
+image=http://magiccards.info/scans/en/isd/157.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=r
+converted=6
+cost={5}{R}
+pt=4/2
+timing=main
+

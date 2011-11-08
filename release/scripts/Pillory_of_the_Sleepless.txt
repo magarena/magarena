@@ -1,0 +1,14 @@
+>Pillory of the Sleepless
+url=http://magiccards.info/gp/en/125.html
+image=http://magiccards.info/scans/en/gp/125.jpg
+value=4
+removal=4
+rarity=C
+type=Enchantment
+subtype=Aura
+color=wb
+converted=3
+cost={1}{W}{B}
+given_ability=can't attack or block
+timing=tapping
+

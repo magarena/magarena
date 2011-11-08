@@ -1,0 +1,14 @@
+>Blade Splicer
+url=http://magiccards.info/nph/en/4.html
+image=http://magiccards.info/scans/en/nph/4.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Human,Artificer
+color=w
+converted=3
+cost={2}{W}
+pt=1/1
+static=player
+timing=fmain
+

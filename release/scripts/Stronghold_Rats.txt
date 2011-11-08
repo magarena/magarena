@@ -1,0 +1,14 @@
+>Stronghold Rats
+url=http://magiccards.info/fut/en/79.html
+image=http://magiccards.info/scans/en/fut/79.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={2}{B}
+pt=2/1
+ability=shadow
+timing=main
+

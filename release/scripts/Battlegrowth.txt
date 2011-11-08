@@ -1,0 +1,11 @@
+>Battlegrowth
+url=http://magiccards.info/mi/en/113.html
+image=http://magiccards.info/scans/en/mi/113.jpg
+value=1
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+

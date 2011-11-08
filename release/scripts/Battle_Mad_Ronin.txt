@@ -1,0 +1,14 @@
+>Battle-Mad Ronin
+url=http://magiccards.info/chk/en/156.html
+image=http://magiccards.info/scans/en/chk/156.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+ability=attacks each turn if able
+timing=main
+

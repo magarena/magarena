@@ -1,0 +1,14 @@
+>Soltari Lancer
+url=http://magiccards.info/tp/en/256.html
+image=http://magiccards.info/scans/en/tp/256.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Soltari,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=shadow
+timing=main
+

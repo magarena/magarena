@@ -1,0 +1,13 @@
+>Femeref Archers
+url=http://magiccards.info/10e/en/264.html
+image=http://magiccards.info/scans/en/10e/264.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Archer
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=smain
+

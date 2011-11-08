@@ -1,0 +1,13 @@
+>Elvish Berserker
+url=http://magiccards.info/10e/en/260.html
+image=http://magiccards.info/scans/en/10e/260.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Berserker
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

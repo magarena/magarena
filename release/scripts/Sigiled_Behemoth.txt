@@ -1,0 +1,14 @@
+>Sigiled Behemoth
+url=http://magiccards.info/arb/en/79.html
+image=http://magiccards.info/scans/en/arb/79.jpg 
+value=4
+ability=exalted
+rarity=C
+type=Creature
+subtype=Beast
+color=gw
+converted=6
+cost={4}{G}{W}
+pt=5/4
+timing=main
+

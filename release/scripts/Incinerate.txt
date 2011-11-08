@@ -1,0 +1,12 @@
+>Incinerate
+url=http://magiccards.info/m12/en/146.html
+image=http://magiccards.info/scans/en/jvc/51.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+

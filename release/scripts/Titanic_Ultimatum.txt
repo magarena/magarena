@@ -1,0 +1,11 @@
+>Titanic Ultimatum
+url=http://magiccards.info/ddh/en/31.html
+image=http://magiccards.info/scans/en/ala/204.jpg
+value=4
+rarity=R
+type=Sorcery
+color=rgw
+converted=7
+cost={R}{R}{G}{G}{G}{W}{W}
+timing=pump
+

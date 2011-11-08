@@ -1,0 +1,14 @@
+>Fangren Hunter
+url=http://magiccards.info/mi/en/119.html
+image=http://magiccards.info/scans/en/mi/119.jpg 
+value=4
+ability=trample
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={3}{G}{G}
+pt=4/4
+timing=main
+

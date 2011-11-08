@@ -1,0 +1,14 @@
+>Stampeding Rhino
+url=http://magiccards.info/m12/en/196.html
+image=http://magiccards.info/scans/en/m10/204.jpg 
+value=4
+ability=trample
+rarity=C
+type=Creature
+subtype=Rhino
+color=g
+converted=5
+cost={4}{G}
+pt=4/4
+timing=main
+

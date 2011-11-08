@@ -1,0 +1,14 @@
+>Blazing Specter
+url=http://magiccards.info/ddh/en/52.html
+image=http://magiccards.info/scans/en/in/236.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Specter
+color=br
+converted=4
+cost={2}{B}{R}
+pt=2/2
+ability=flying,haste
+timing=fmain
+

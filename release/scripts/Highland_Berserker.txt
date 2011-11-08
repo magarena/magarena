@@ -1,0 +1,13 @@
+>Highland Berserker
+url=http://magiccards.info/zen/en/132.html
+image=http://magiccards.info/scans/en/zen/132.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Berserker,Ally
+color=r
+converted=2
+cost={1}{R}
+pt=2/1
+timing=main
+

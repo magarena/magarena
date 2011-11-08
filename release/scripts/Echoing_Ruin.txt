@@ -1,0 +1,12 @@
+>Echoing Ruin
+url=http://magiccards.info/ds/en/59.html
+image=http://magiccards.info/scans/en/ds/59.jpg
+value=3
+removal=3
+rarity=C
+type=Sorcery
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+

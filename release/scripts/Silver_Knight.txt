@@ -1,0 +1,14 @@
+>Silver Knight
+url=http://magiccards.info/ddg/en/8.html
+image=http://magiccards.info/scans/en/sc/23.jpg
+value=3
+ability=first strike,protection from red
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+timing=main
+

@@ -1,0 +1,13 @@
+>Elder of Laurels
+url=http://magiccards.info/isd/en/177.html
+image=http://magiccards.info/scans/en/isd/177.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Advisor
+color=g
+converted=3
+cost={2}{G}
+pt=2/3
+timing=fmain
+

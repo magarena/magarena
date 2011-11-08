@@ -1,0 +1,13 @@
+>Cudgel Troll
+url=http://magiccards.info/m12/en/169.html
+image=http://magiccards.info/scans/en/m11/167.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Troll
+color=g
+converted=4
+cost={2}{G}{G}
+pt=4/3
+timing=main
+

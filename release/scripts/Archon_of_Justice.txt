@@ -1,0 +1,14 @@
+>Archon of Justice
+url=http://magiccards.info/m12/en/6.html
+image=http://magiccards.info/scans/en/eve/1.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Archon
+color=w
+converted=5
+cost={3}{W}{W}
+pt=4/4
+ability=flying
+timing=main
+

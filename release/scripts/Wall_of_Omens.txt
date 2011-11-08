@@ -1,0 +1,14 @@
+>Wall of Omens
+url=http://magiccards.info/cmd/en/37.html
+image=http://magiccards.info/scans/en/cmd/37.jpg 
+value=2
+rarity=U
+type=Creature
+subtype=Wall
+color=w
+converted=2
+cost={1}{W}
+pt=0/4
+ability=defender
+timing=smain
+

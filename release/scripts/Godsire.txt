@@ -1,0 +1,14 @@
+>Godsire
+url=http://magiccards.info/ala/en/170.html
+image=http://magiccards.info/scans/en/ala/170.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Beast
+color=rgw
+converted=8
+cost={4}{R}{G}{G}{W}
+pt=8/8
+ability=vigilance
+timing=main
+

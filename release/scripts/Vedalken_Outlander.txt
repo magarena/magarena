@@ -1,0 +1,14 @@
+>Vedalken Outlander
+url=http://magiccards.info/cfx/en/132.html
+image=http://magiccards.info/scans/en/cfx/132.jpg
+value=2
+rarity=C
+type=Artifact,Creature
+subtype=Vedalken,Scout
+color=wu
+converted=2
+cost={W}{U}
+pt=2/2
+ability=protection from red
+timing=smain
+

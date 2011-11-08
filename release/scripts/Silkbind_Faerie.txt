@@ -1,0 +1,14 @@
+>Silkbind Faerie
+url=http://magiccards.info/shm/en/148.html
+image=http://magiccards.info/scans/en/shm/148.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+color=uw
+converted=3
+cost={2}{W/U}
+pt=1/3
+ability=flying
+timing=main
+

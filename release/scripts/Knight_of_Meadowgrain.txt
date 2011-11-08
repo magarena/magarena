@@ -1,0 +1,14 @@
+>Knight of Meadowgrain
+url=http://magiccards.info/ddg/en/5.html
+image=http://magiccards.info/scans/en/lw/28.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Kithkin,Knight
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=first strike,lifelink
+timing=main
+

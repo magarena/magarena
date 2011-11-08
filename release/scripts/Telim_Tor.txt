@@ -1,0 +1,14 @@
+>Telim'Tor
+url=http://magiccards.info/mr/en/197.html
+image=http://magiccards.info/scans/en/mr/197.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Human,Knight
+color=r
+converted=5
+cost={4}{R}
+pt=2/2
+ability=flanking
+timing=main
+

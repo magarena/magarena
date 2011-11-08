@@ -1,0 +1,9 @@
+>Vivid Crag
+url=http://magiccards.info/cmd/en/293.html
+image=http://magiccards.info/scans/en/lw/275.jpg
+value=3
+rarity=U
+type=Land
+mana=b1g1r3u1w1
+timing=tapland
+

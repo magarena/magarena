@@ -1,0 +1,13 @@
+>Brushwagg
+url=http://magiccards.info/mr/en/106.html
+image=http://magiccards.info/scans/en/mr/106.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Brushwagg
+color=g
+converted=3
+cost={1}{G}{G}
+pt=3/2
+timing=main
+

@@ -1,0 +1,14 @@
+>Pincer Spider
+url=http://magiccards.info/in/en/201.html
+image=http://magiccards.info/scans/en/in/201.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spider
+color=g
+converted=3
+cost={2}{G}
+pt=2/3
+ability=reach
+timing=main
+

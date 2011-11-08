@@ -1,0 +1,14 @@
+>Needleshot Gourna
+url=http://magiccards.info/le/en/133.html
+image=http://magiccards.info/scans/en/le/133.jpg 
+value=4
+ability=reach
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=6
+cost={4}{G}{G}
+pt=3/6
+timing=main
+

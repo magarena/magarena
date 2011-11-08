@@ -1,0 +1,11 @@
+>Asceticism
+url=http://magiccards.info/som/en/110.html
+image=http://magiccards.info/scans/en/som/110.jpg
+value=5
+rarity=R
+type=Enchantment
+color=g
+converted=5
+cost={3}{G}{G}
+timing=enchantment
+

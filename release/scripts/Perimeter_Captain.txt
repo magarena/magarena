@@ -1,0 +1,14 @@
+>Perimeter Captain
+url=http://magiccards.info/wwk/en/16.html
+image=http://magiccards.info/scans/en/wwk/16.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+pt=0/4
+ability=defender
+timing=smain
+

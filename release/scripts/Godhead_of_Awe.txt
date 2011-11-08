@@ -1,0 +1,16 @@
+>Godhead of Awe
+url=http://magiccards.info/shm/en/142.html
+image=http://magiccards.info/scans/en/shm/142.jpg
+value=5
+removal=3
+rarity=R
+type=Creature
+subtype=Spirit,Avatar
+color=wu
+converted=5
+cost={W/U}{W/U}{W/U}{W/U}{W/U}
+pt=4/4
+ability=flying
+static=all
+timing=smain
+

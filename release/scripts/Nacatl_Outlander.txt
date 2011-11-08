@@ -1,0 +1,14 @@
+>Nacatl Outlander
+url=http://magiccards.info/cfx/en/119.html
+image=http://magiccards.info/scans/en/cfx/119.jpg 
+value=2
+ability=protection from blue
+rarity=C
+type=Creature
+subtype=Cat,Scout
+color=rg
+converted=2
+cost={R}{G}
+pt=2/2
+timing=main
+

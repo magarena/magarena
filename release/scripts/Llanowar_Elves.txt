@@ -1,0 +1,14 @@
+>Llanowar Elves
+url=http://magiccards.info/m12/en/182.html
+image=http://magiccards.info/scans/en/m11/184.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elf,Druid
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=smain
+mana_or_combat
+

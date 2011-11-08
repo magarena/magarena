@@ -1,0 +1,14 @@
+>Marisi's Twinclaws
+url=http://magiccards.info/ddh/en/17.html
+image=http://magiccards.info/scans/en/arb/140.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Cat,Warrior
+color=rwg
+converted=4
+cost={2}{R/W}{G}
+pt=2/4
+ability=double strike
+timing=main
+

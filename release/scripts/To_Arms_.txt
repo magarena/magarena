@@ -1,0 +1,11 @@
+>To Arms!
+url=http://magiccards.info/gp/en/20.html
+image=http://magiccards.info/scans/en/gp/20.jpg
+value=2
+rarity=U
+type=Instant
+color=w
+converted=2
+cost={1}{W}
+timing=tapping
+

@@ -1,0 +1,14 @@
+>Rith, the Awakener
+url=http://magiccards.info/pvc/en/48.html
+image=http://magiccards.info/scans/en/pvc/48.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+color=rgw
+converted=6
+cost={3}{R}{G}{W}
+pt=6/6
+ability=flying
+timing=main
+

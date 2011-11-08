@@ -1,0 +1,14 @@
+>Hateflayer
+url=http://magiccards.info/eve/en/55.html
+image=http://magiccards.info/scans/en/eve/55.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Elemental
+color=r
+converted=7
+cost={5}{R}{R}
+pt=5/5
+ability=wither
+timing=main
+

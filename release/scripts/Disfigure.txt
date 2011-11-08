@@ -1,0 +1,12 @@
+>Disfigure
+url=http://magiccards.info/zen/en/87.html
+image=http://magiccards.info/scans/en/zen/87.jpg
+value=2
+removal=2
+rarity=C
+type=Instant
+color=b
+converted=1
+cost={B}
+timing=removal
+

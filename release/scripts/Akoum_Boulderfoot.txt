@@ -1,0 +1,13 @@
+>Akoum Boulderfoot
+url=http://magiccards.info/roe/en/134.html
+image=http://magiccards.info/scans/en/roe/134.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+color=r
+converted=6
+cost={4}{R}{R}
+pt=4/5
+timing=main
+

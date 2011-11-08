@@ -1,0 +1,10 @@
+>Seaside Citadel
+url=http://magiccards.info/ala/en/229.html
+image=http://magiccards.info/scans/en/ala/229.jpg
+value=4
+rarity=U
+type=Land
+mana=g3w3u3
+basic=gwu
+timing=tapland
+

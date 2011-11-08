@@ -1,0 +1,14 @@
+>Fiend Hunter
+url=http://magiccards.info/isd/en/15.html
+image=http://magiccards.info/scans/en/isd/15.jpg
+value=3
+removal=2
+rarity=U
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=3
+cost={1}{W}{W}
+pt=1/3
+timing=main
+

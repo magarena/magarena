@@ -1,0 +1,14 @@
+>Goblin Sharpshooter
+url=http://magiccards.info/on/en/207.html
+image=http://magiccards.info/scans/en/on/207.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Goblin
+color=r
+converted=3
+cost={2}{R}
+pt=1/1
+ability=doesn't untap during untap step
+timing=main
+

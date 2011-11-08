@@ -1,0 +1,11 @@
+>Intangible Virtue
+url=http://magiccards.info/isd/en/19.html
+image=http://magiccards.info/scans/en/isd/19.jpg
+value=3
+rarity=U
+type=Enchantment
+color=w
+converted=2
+cost={1}{W}
+timing=enchantment
+

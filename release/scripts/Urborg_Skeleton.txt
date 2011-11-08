@@ -1,0 +1,13 @@
+>Urborg Skeleton
+url=http://magiccards.info/in/en/134.html
+image=http://magiccards.info/scans/en/in/134.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Skeleton
+color=b
+converted=1
+cost={B}
+pt=0/1
+timing=main
+

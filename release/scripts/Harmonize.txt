@@ -1,0 +1,11 @@
+>Harmonize
+url=http://magiccards.info/cmd/en/158.html
+image=http://magiccards.info/scans/en/evg/22.jpg
+value=4
+rarity=U
+type=Sorcery
+color=g
+converted=4
+cost={2}{G}{G}
+timing=draw
+

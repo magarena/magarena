@@ -1,0 +1,10 @@
+>Chimeric Mass
+url=http://magiccards.info/som/en/141.html
+image=http://magiccards.info/scans/en/som/141.jpg
+value=3
+rarity=R
+type=Artifact
+converted=0
+cost={X}
+timing=artifact
+

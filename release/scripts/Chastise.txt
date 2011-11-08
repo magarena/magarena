@@ -1,0 +1,12 @@
+>Chastise
+url=http://magiccards.info/9e/en/9.html
+image=http://magiccards.info/scans/en/9e/9.jpg
+value=4
+removal=4
+rarity=U
+type=Instant
+color=w
+converted=4
+cost={3}{W}
+timing=attack
+

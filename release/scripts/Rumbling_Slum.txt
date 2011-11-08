@@ -1,0 +1,13 @@
+>Rumbling Slum
+url=http://magiccards.info/pch/en/93.html
+image=http://magiccards.info/scans/en/pch/93.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Elemental
+color=rg
+converted=4
+cost={1}{R}{G}{G}
+pt=5/5
+timing=main
+

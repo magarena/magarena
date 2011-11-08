@@ -1,0 +1,13 @@
+>Balduvian Barbarians
+url=http://magiccards.info/9e/en/174.html
+image=http://magiccards.info/scans/en/9e/174.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Human,Barbarian
+color=r
+converted=3
+cost={1}{R}{R}
+pt=3/2
+timing=main
+

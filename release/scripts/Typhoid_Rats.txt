@@ -1,0 +1,14 @@
+>Typhoid Rats
+url=http://magiccards.info/isd/en/120.html
+image=http://magiccards.info/scans/en/isd/120.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Rat
+color=b
+converted=1
+cost={B}
+pt=1/1
+ability=deathtouch
+timing=main
+

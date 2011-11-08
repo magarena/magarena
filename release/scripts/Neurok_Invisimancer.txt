@@ -1,0 +1,14 @@
+>Neurok Invisimancer
+url=http://magiccards.info/som/en/37.html
+image=http://magiccards.info/scans/en/som/37.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=3
+cost={1}{U}{U}
+pt=2/1
+ability=unblockable
+timing=fmain
+

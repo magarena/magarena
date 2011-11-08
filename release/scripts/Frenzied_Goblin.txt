@@ -1,0 +1,13 @@
+>Frenzied Goblin
+url=http://magiccards.info/rav/en/125.html
+image=http://magiccards.info/scans/en/rav/125.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Goblin,Berserker
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+

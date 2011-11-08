@@ -1,0 +1,13 @@
+>Soltari Emissary
+url=http://magiccards.info/tp/en/254.html
+image=http://magiccards.info/scans/en/tp/254.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Soltari,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+timing=main
+

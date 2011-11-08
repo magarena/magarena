@@ -1,0 +1,14 @@
+>Volcanic Dragon
+url=http://magiccards.info/m12/en/158.html
+image=http://magiccards.info/scans/en/m12/158.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+pt=4/4
+ability=flying,haste
+timing=fmain
+

@@ -1,0 +1,13 @@
+>Diregraf Ghoul
+url=http://magiccards.info/isd/en/97.html
+image=http://magiccards.info/scans/en/isd/97.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Zombie
+color=b
+converted=1
+cost={B}
+pt=2/2
+timing=main
+

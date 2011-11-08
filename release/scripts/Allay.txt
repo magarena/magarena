@@ -1,0 +1,12 @@
+>Allay
+url=http://magiccards.info/ex/en/1.html
+image=http://magiccards.info/scans/en/ex/1.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=w
+converted=2
+cost={1}{W}
+timing=removal
+

@@ -1,0 +1,14 @@
+>Cloud Sprite
+url=http://magiccards.info/dpa/en/4.html
+image=http://magiccards.info/scans/en/dpa/4.jpg 
+value=1
+ability=flying,can't block creatures without flying
+rarity=C
+type=Creature
+subtype=Faerie
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=fmain
+

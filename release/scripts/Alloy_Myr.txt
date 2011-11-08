@@ -1,0 +1,13 @@
+>Alloy Myr
+url=http://magiccards.info/nph/en/129.html
+image=http://magiccards.info/scans/en/nph/129.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Myr
+converted=3
+cost={3}
+pt=2/2
+timing=main
+mana_or_combat
+

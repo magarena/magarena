@@ -1,0 +1,13 @@
+>Uktabi Efreet
+url=http://magiccards.info/wl/en/85.html
+image=http://magiccards.info/scans/en/wl/85.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Efreet
+color=g
+converted=4
+cost={2}{G}{G}
+pt=5/4
+timing=main
+

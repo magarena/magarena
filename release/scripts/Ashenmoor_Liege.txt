@@ -1,0 +1,14 @@
+>Ashenmoor Liege
+url=http://magiccards.info/shm/en/181.html
+image=http://magiccards.info/scans/en/shm/181.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Elemental,Knight
+color=br
+converted=4
+cost={1}{B/R}{B/R}{B/R}
+pt=4/1
+static=player
+timing=fmain
+

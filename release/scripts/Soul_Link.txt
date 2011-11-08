@@ -1,0 +1,13 @@
+>Soul Link
+url=http://magiccards.info/ap/en/120.html
+image=http://magiccards.info/scans/en/ap/120.jpg
+value=3
+removal=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=wb
+converted=3
+cost={1}{W}{B}
+timing=aura
+

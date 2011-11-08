@@ -1,0 +1,14 @@
+>Moldgraf Monstrosity
+url=http://magiccards.info/isd/en/194.html
+image=http://magiccards.info/scans/en/isd/194.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Insect
+color=g
+converted=7
+cost={4}{G}{G}{G}
+pt=8/8
+ability=trample
+timing=main
+

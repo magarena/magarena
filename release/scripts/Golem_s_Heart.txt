@@ -1,0 +1,10 @@
+>Golem's Heart
+url=http://magiccards.info/som/en/161.html
+image=http://magiccards.info/scans/en/som/161.jpg
+value=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=artifact
+

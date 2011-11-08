@@ -1,0 +1,14 @@
+>Wrexial, the Risen Deep
+url=http://magiccards.info/cmd/en/239.html
+image=http://magiccards.info/scans/en/wwk/120.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Kraken
+color=ub
+converted=6
+cost={3}{U}{U}{B}
+pt=5/8
+ability=islandwalk,swampwalk
+timing=smain
+

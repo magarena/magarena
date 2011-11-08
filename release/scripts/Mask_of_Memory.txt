@@ -1,0 +1,12 @@
+>Mask of Memory
+url=http://magiccards.info/pch/en/119.html
+image=http://magiccards.info/scans/en/pch/119.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={1}
+timing=equipment
+

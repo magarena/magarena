@@ -1,0 +1,13 @@
+>Selhoff Occultist
+url=http://magiccards.info/isd/en/73.html
+image=http://magiccards.info/scans/en/isd/73.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Rogue
+color=u
+converted=3
+cost={2}{U}
+pt=2/3
+timing=main
+

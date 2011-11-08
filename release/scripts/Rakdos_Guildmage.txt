@@ -1,0 +1,13 @@
+>Rakdos Guildmage
+url=http://magiccards.info/arc/en/92.html
+image=http://magiccards.info/scans/en/di/145.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Zombie,Shaman
+color=br
+converted=2
+cost={B/R}{B/R}
+pt=2/2
+timing=fmain
+

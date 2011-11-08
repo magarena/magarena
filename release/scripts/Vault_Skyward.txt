@@ -1,0 +1,11 @@
+>Vault Skyward
+url=http://magiccards.info/som/en/51.html
+image=http://magiccards.info/scans/en/som/51.jpg
+value=1
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=tapping
+

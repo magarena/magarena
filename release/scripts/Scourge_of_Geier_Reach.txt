@@ -1,0 +1,13 @@
+>Scourge of Geier Reach
+url=http://magiccards.info/isd/en/162.html
+image=http://magiccards.info/scans/en/isd/162.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=5
+cost={3}{R}{R}
+pt=3/3
+timing=main
+

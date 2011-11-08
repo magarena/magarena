@@ -1,0 +1,14 @@
+>Suntail Hawk
+url=http://magiccards.info/10e/en/50.html
+image=http://magiccards.info/scans/en/10e/50.jpg 
+value=2
+ability=flying
+rarity=C
+type=Creature
+subtype=Bird
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

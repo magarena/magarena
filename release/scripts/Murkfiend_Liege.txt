@@ -1,0 +1,14 @@
+>Murkfiend Liege
+url=http://magiccards.info/eve/en/156.html
+image=http://magiccards.info/scans/en/eve/156.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Horror
+color=gu
+converted=5
+cost={2}{G/U}{G/U}{G/U}
+pt=4/4
+static=player
+timing=fmain
+

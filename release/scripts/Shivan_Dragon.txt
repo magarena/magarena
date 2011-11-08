@@ -1,0 +1,14 @@
+>Shivan Dragon
+url=http://magiccards.info/dpa/en/53.html
+image=http://magiccards.info/scans/en/dpa/53.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+pt=5/5
+ability=flying
+timing=main
+

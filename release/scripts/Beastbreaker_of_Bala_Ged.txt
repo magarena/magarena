@@ -1,0 +1,13 @@
+>Beastbreaker of Bala Ged
+url=http://magiccards.info/roe/en/178.html
+image=http://magiccards.info/scans/en/roe/178.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Warrior
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+

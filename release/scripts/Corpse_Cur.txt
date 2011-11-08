@@ -1,0 +1,13 @@
+>Corpse Cur
+url=http://magiccards.info/som/en/147.html
+image=http://magiccards.info/scans/en/som/147.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Hound
+converted=4
+cost={4}
+pt=2/2
+ability=infect
+timing=main
+

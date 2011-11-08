@@ -1,0 +1,13 @@
+>Earth Servant
+url=http://magiccards.info/m11/en/134.html
+image=http://magiccards.info/scans/en/m11/134.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=6
+cost={5}{R}
+pt=4/4
+timing=smain
+

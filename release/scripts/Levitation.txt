@@ -1,0 +1,12 @@
+>Levitation
+url=http://magiccards.info/m12/en/61.html
+image=http://magiccards.info/scans/en/m10/60.jpg
+value=3
+rarity=U
+type=Enchantment
+color=u
+converted=4
+cost={2}{U}{U}
+static=player
+timing=enchantment
+

@@ -1,0 +1,12 @@
+>Rusted Sentinel
+url=http://magiccards.info/m12/en/215.html
+image=http://magiccards.info/scans/en/m12/215.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+converted=4
+cost={4}
+pt=3/4
+timing=main
+

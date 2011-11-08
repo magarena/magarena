@@ -1,0 +1,14 @@
+>Angelic Overseer
+url=http://magiccards.info/isd/en/3.html
+image=http://magiccards.info/scans/en/isd/3.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Angel
+color=w
+converted=5
+cost={3}{W}{W}
+pt=5/3
+ability=flying
+timing=fmain
+

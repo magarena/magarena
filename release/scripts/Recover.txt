@@ -1,0 +1,11 @@
+>Recover
+url=http://magiccards.info/10e/en/172.html
+image=http://magiccards.info/scans/en/10e/172.jpg
+value=3
+rarity=C
+type=Sorcery
+color=b
+converted=3
+cost={2}{B}
+timing=draw
+

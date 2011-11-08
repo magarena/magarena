@@ -1,0 +1,14 @@
+>Bog Raiders
+url=http://magiccards.info/m11/en/86.html
+image=http://magiccards.info/scans/en/m11/86.jpg 
+value=2
+ability=swampwalk
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+timing=main
+

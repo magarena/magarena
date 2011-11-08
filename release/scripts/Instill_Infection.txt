@@ -1,0 +1,12 @@
+>Instill Infection
+url=http://magiccards.info/som/en/68.html
+image=http://magiccards.info/scans/en/som/68.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=b
+converted=4
+cost={3}{B}
+timing=removal
+

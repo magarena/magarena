@@ -1,0 +1,12 @@
+>Mobilization
+url=http://magiccards.info/10e/en/29.html
+image=http://magiccards.info/scans/en/10e/29.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=3
+cost={2}{W}
+static=all
+timing=enchantment
+

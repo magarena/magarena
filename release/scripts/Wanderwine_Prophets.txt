@@ -1,0 +1,14 @@
+>Wanderwine Prophets
+url=http://magiccards.info/lw/en/95.html
+image=http://magiccards.info/scans/en/lw/95.jpg
+value=5
+removal=2
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+color=u
+converted=6
+cost={4}{U}{U}
+pt=4/4
+timing=main
+

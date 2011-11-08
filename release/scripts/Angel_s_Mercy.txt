@@ -1,0 +1,11 @@
+>Angel's Mercy
+url=http://magiccards.info/m12/en/4.html
+image=http://magiccards.info/scans/en/m12/4.jpg
+value=3
+rarity=C
+type=Instant
+color=w
+converted=4
+cost={2}{W}{W}
+timing=draw
+

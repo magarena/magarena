@@ -1,0 +1,13 @@
+>Sylvok Lifestaff
+url=http://magiccards.info/som/en/209.html
+image=http://magiccards.info/scans/en/som/209.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={1}
+given_pt=1/0
+timing=equipment
+

@@ -1,0 +1,13 @@
+>Spitemare
+url=http://magiccards.info/ddh/en/16.html
+image=http://magiccards.info/scans/en/eve/147.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Elemental
+color=rw
+converted=4
+cost={2}{R/W}{R/W}
+pt=3/3
+timing=main
+

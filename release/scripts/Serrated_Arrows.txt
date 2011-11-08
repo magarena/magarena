@@ -1,0 +1,11 @@
+>Serrated Arrows
+url=http://magiccards.info/gvl/en/20.html
+image=http://magiccards.info/scans/en/gvl/20.jpg
+value=4
+removal=2
+rarity=C
+type=Artifact
+converted=4
+cost={4}
+timing=artifact
+

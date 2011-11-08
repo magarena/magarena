@@ -1,0 +1,11 @@
+>Mind Rot
+url=http://magiccards.info/m12/en/101.html
+image=http://magiccards.info/scans/en/m12/101.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=3
+cost={2}{B}
+timing=removal
+

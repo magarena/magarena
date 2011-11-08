@@ -1,0 +1,14 @@
+>Goblin Raider
+url=http://magiccards.info/9eb/en/8.html
+image=http://magiccards.info/scans/en/9eb/8.jpg 
+value=1
+ability=can't block
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={1}{R}
+pt=2/2
+timing=fmain
+

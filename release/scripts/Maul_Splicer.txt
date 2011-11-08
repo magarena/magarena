@@ -1,0 +1,14 @@
+>Maul Splicer
+url=http://magiccards.info/nph/en/114.html
+image=http://magiccards.info/scans/en/nph/114.jpg
+value=5
+rarity=C
+type=Creature
+subtype=Human,Artificer
+color=g
+converted=7
+cost={6}{G}
+pt=1/1
+static=player
+timing=fmain
+

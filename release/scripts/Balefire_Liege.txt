@@ -1,0 +1,14 @@
+>Balefire Liege
+url=http://magiccards.info/pch/en/97.html
+image=http://magiccards.info/scans/en/pch/97.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Spirit,Horror
+color=rw
+converted=5
+cost={2}{R/W}{R/W}{R/W}
+pt=2/4
+static=player
+timing=fmain
+

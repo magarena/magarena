@@ -1,0 +1,14 @@
+>Llanowar Elite
+url=http://magiccards.info/in/en/196.html
+image=http://magiccards.info/scans/en/in/196.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Elf
+color=g
+converted=1
+cost={G}
+pt=1/1
+ability=trample
+timing=main
+

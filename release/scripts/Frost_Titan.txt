@@ -1,0 +1,13 @@
+>Frost Titan
+url=http://magiccards.info/m12/en/55.html
+image=http://magiccards.info/scans/en/m11/55.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Giant
+color=u
+converted=6
+cost={4}{U}{U}
+pt=6/6
+timing=fmain
+

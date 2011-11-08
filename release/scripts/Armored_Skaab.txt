@@ -1,0 +1,13 @@
+>Armored Skaab
+url=http://magiccards.info/isd/en/43.html
+image=http://magiccards.info/scans/en/isd/43.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Zombie,Warrior
+color=u
+converted=3
+cost={2}{U}
+pt=1/4
+timing=main
+

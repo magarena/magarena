@@ -1,0 +1,13 @@
+>Scute Mob
+url=http://magiccards.info/zen/en/182.html
+image=http://magiccards.info/scans/en/zen/182.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Insect
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

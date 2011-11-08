@@ -1,0 +1,14 @@
+>Elite Inquisitor
+url=http://magiccards.info/isd/en/13.html
+image=http://magiccards.info/scans/en/isd/13.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=first strike,vigilance,protection from Vampires,protection from Werewolves,protection from Zombies
+timing=main
+

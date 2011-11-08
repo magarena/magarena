@@ -1,0 +1,11 @@
+>Serra's Blessing
+url=http://magiccards.info/9e/en/44.html
+image=http://magiccards.info/scans/en/9e/44.jpg
+value=3
+rarity=U
+type=Enchantment
+color=w
+converted=2
+cost={1}{W}
+timing=enchantment
+

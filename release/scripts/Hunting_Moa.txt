@@ -1,0 +1,13 @@
+>Hunting Moa
+url=http://magiccards.info/arc/en/60.html
+image=http://magiccards.info/scans/en/arc/60.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Bird,Beast
+color=g
+converted=3
+cost={2}{G}
+pt=3/2
+timing=main
+

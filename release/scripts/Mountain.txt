@@ -1,0 +1,12 @@
+>Mountain
+url=http://magiccards.info/isd/en/259.html
+image=http://magiccards.info/scans/en/zen/242.jpg
+num_images=2
+value=2
+rarity=L
+type=Basic,Land
+subtype=Mountain
+mana=r4
+basic=r
+timing=land
+

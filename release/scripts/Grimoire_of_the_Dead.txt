@@ -1,0 +1,10 @@
+>Grimoire of the Dead
+url=http://magiccards.info/isd/en/226.html
+image=http://magiccards.info/scans/en/isd/226.jpg
+value=4
+rarity=M
+type=Legendary,Artifact
+converted=4
+cost={4}
+timing=artifact
+

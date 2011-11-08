@@ -1,0 +1,11 @@
+>Call to the Grave
+url=http://magiccards.info/m12/en/85.html
+image=http://magiccards.info/scans/en/m12/85.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=5
+cost={4}{B}
+timing=enchantment
+

@@ -1,0 +1,10 @@
+>Savage Lands
+url=http://magiccards.info/ala/en/228.html
+image=http://magiccards.info/scans/en/ala/228.jpg
+value=4
+rarity=U
+type=Land
+mana=b3r3g3
+basic=brg
+timing=tapland
+

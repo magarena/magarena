@@ -1,0 +1,14 @@
+>Daggerback Basilisk
+url=http://magiccards.info/roe/en/182.html
+image=http://magiccards.info/scans/en/roe/182.jpg 
+value=2
+ability=deathtouch
+rarity=C
+type=Creature
+subtype=Basilisk
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main
+

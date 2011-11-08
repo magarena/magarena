@@ -1,0 +1,14 @@
+>Deadly Recluse
+url=http://magiccards.info/cmd/en/149.html
+image=http://magiccards.info/scans/en/m10/175.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spider
+color=g
+converted=2
+cost={1}{G}
+pt=1/2
+ability=reach,deathtouch
+timing=smain
+

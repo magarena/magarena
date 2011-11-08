@@ -1,0 +1,11 @@
+>Angelic Blessing
+url=http://magiccards.info/10e/en/3.html
+image=http://magiccards.info/scans/en/10e/3.jpg
+value=3
+rarity=C
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
+timing=pump
+

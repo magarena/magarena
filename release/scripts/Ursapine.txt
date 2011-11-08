@@ -1,0 +1,13 @@
+>Ursapine
+url=http://magiccards.info/rav/en/188.html
+image=http://magiccards.info/scans/en/rav/188.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Beast
+color=g
+converted=5
+cost={3}{G}{G}
+pt=3/3
+timing=fmain
+

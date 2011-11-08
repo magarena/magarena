@@ -1,0 +1,15 @@
+>Angel of Despair
+url=http://magiccards.info/cmd/en/180.html
+image=http://magiccards.info/scans/en/gp/101.jpg
+value=5
+removal=4
+rarity=R
+type=Creature
+subtype=Angel
+color=wb
+converted=7
+cost={3}{W}{W}{B}{B}
+pt=5/5
+ability=flying
+timing=fmain
+

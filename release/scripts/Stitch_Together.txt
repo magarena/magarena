@@ -1,0 +1,11 @@
+>Stitch Together
+url=http://magiccards.info/cmd/en/102.html
+image=http://magiccards.info/scans/en/cmd/102.jpg
+value=3
+rarity=U
+type=Sorcery
+color=b
+converted=2
+cost={B}{B}
+timing=draw
+

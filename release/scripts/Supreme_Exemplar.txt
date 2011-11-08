@@ -1,0 +1,15 @@
+>Supreme Exemplar
+url=http://magiccards.info/mt/en/53.html
+image=http://magiccards.info/scans/en/mt/53.jpg
+value=5
+removal=2
+rarity=R
+type=Creature
+subtype=Elemental
+color=u
+converted=7
+cost={6}{U}
+pt=10/10
+ability=flying
+timing=main
+

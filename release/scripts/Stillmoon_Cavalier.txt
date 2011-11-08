@@ -1,0 +1,14 @@
+>Stillmoon Cavalier
+url=http://magiccards.info/eve/en/95.html
+image=http://magiccards.info/scans/en/eve/95.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Zombie,Knight
+color=wb
+converted=3
+cost={1}{W/B}{W/B}
+pt=2/1
+ability=protection from white,protection from black
+timing=main
+

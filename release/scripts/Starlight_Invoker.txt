@@ -1,0 +1,13 @@
+>Starlight Invoker
+url=http://magiccards.info/10e/en/47.html
+image=http://magiccards.info/scans/en/10e/47.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric,Mutant
+color=w
+converted=2
+cost={1}{W}
+pt=1/3
+timing=main
+

@@ -1,0 +1,14 @@
+>Giant Scorpion
+url=http://magiccards.info/zen/en/90.html
+image=http://magiccards.info/scans/en/zen/90.jpg
+value=2
+ability=deathtouch
+rarity=C
+type=Creature
+subtype=Scorpion
+color=b
+converted=3
+cost={2}{B}
+pt=1/3
+timing=main
+

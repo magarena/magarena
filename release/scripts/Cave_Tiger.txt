@@ -1,0 +1,13 @@
+>Cave Tiger
+url=http://magiccards.info/us/en/241.html
+image=http://magiccards.info/scans/en/us/241.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main
+

@@ -1,0 +1,14 @@
+>Spark Elemental
+url=http://magiccards.info/pd2/en/4.html
+image=http://magiccards.info/scans/en/10e/237.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elemental
+color=r
+converted=1
+cost={R}
+pt=3/1
+ability=trample,haste
+timing=fmain
+

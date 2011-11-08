@@ -1,0 +1,13 @@
+>Jotun Owl Keeper
+url=http://magiccards.info/cs/en/9.html
+image=http://magiccards.info/scans/en/cs/9.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Giant
+color=w
+converted=3
+cost={2}{W}
+pt=3/3
+timing=main
+

@@ -1,0 +1,13 @@
+>Merfolk of the Pearl Trident
+url=http://magiccards.info/7e/en/90.html
+image=http://magiccards.info/scans/en/7e/90.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Merfolk
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+

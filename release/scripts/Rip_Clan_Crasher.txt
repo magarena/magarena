@@ -1,0 +1,14 @@
+>Rip-Clan Crasher
+url=http://magiccards.info/ala/en/189.html
+image=http://magiccards.info/scans/en/ala/189.jpg 
+value=2
+ability=haste
+rarity=C
+type=Creature
+subtype=Human,Warrior
+color=rg
+converted=2
+cost={R}{G}
+pt=2/2
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Goliath Sphinx
+url=http://magiccards.info/wwk/en/28.html
+image=http://magiccards.info/scans/en/wwk/28.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Sphinx
+color=u
+converted=7
+cost={5}{U}{U}
+pt=8/7
+ability=flying
+timing=main
+

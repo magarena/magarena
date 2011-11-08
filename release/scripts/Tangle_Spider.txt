@@ -1,0 +1,14 @@
+>Tangle Spider
+url=http://magiccards.info/10e/en/303.html
+image=http://magiccards.info/scans/en/10e/303.jpg 
+value=3
+ability=flash,reach
+rarity=C
+type=Creature
+subtype=Spider
+color=g
+converted=6
+cost={4}{G}{G}
+pt=3/4
+timing=flash
+

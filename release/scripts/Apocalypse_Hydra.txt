@@ -1,0 +1,12 @@
+>Apocalypse Hydra
+url=http://magiccards.info/cfx/en/98.html
+image=http://magiccards.info/scans/en/cfx/98.jpg
+value=3
+rarity=M
+type=Creature
+subtype=Hydra
+color=rg
+converted=2
+cost={X}{R}{G}
+timing=main
+

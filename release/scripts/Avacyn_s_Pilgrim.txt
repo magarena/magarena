@@ -1,0 +1,14 @@
+>Avacyn's Pilgrim
+url=http://magiccards.info/isd/en/170.html
+image=http://magiccards.info/scans/en/isd/170.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Monk
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+mana_or_combat
+

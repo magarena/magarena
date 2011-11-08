@@ -1,0 +1,14 @@
+>Sentinels of Glen Elendra
+url=http://magiccards.info/lw/en/84.html
+image=http://magiccards.info/scans/en/lw/84.jpg
+value=3
+ability=flash,flying
+rarity=C
+type=Creature
+subtype=Faerie,Soldier
+color=u
+converted=4
+cost={3}{U}
+pt=2/3
+timing=main
+

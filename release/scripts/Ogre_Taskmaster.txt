@@ -1,0 +1,14 @@
+>Ogre Taskmaster
+url=http://magiccards.info/9e/en/205.html
+image=http://magiccards.info/scans/en/9e/205.jpg 
+value=3
+ability=can't block
+rarity=U
+type=Creature
+subtype=Ogre
+color=r
+converted=4
+cost={3}{R}
+pt=4/3
+timing=fmain
+

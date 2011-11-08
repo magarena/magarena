@@ -1,0 +1,14 @@
+>Soltari Foot Soldier
+url=http://magiccards.info/br/en/74.html
+image=http://magiccards.info/scans/en/br/74.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Soltari,Soldier
+color=w
+converted=1
+cost={W}
+pt=1/1
+ability=shadow
+timing=main
+

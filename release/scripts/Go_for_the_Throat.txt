@@ -1,0 +1,12 @@
+>Go for the Throat
+url=http://magiccards.info/mbs/en/43.html
+image=http://magiccards.info/scans/en/mbs/43.jpg
+value=3
+removal=4
+rarity=U
+type=Instant
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+

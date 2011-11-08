@@ -1,0 +1,11 @@
+>Hallowed Fountain
+url=http://magiccards.info/di/en/174.html
+image=http://magiccards.info/scans/en/di/174.jpg
+value=4
+rarity=R
+type=Land
+subtype=Plains,Island
+mana=w3u3
+basic=wu
+timing=land
+

@@ -1,0 +1,15 @@
+>Ambush Viper
+url=http://magiccards.info/isd/en/169.html
+image=http://magiccards.info/scans/en/isd/169.jpg
+value=3
+removal=2
+rarity=C
+type=Creature
+subtype=Snake
+color=g
+converted=2
+cost={1}{G}
+pt=2/1
+ability=flash,deathtouch
+timing=flash
+

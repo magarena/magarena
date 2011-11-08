@@ -1,0 +1,14 @@
+>Jhessian Infiltrator
+url=http://magiccards.info/ala/en/174.html
+image=http://magiccards.info/scans/en/ala/174.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Rogue
+color=gu
+converted=2
+cost={G}{U}
+pt=2/2
+ability=unblockable
+timing=main
+

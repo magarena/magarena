@@ -1,0 +1,14 @@
+>Outrider of Jhess
+url=http://magiccards.info/ala/en/52.html
+image=http://magiccards.info/scans/en/ala/52.jpg 
+value=3
+ability=exalted
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=u
+converted=4
+cost={3}{U}
+pt=2/2
+timing=main
+

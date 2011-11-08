@@ -1,0 +1,11 @@
+>Underworld Dreams
+url=http://magiccards.info/dpa/en/35.html
+image=http://magiccards.info/scans/en/dpa/35.jpg
+value=3
+rarity=R
+type=Enchantment
+color=b
+converted=3
+cost={B}{B}{B}
+timing=enchantment
+

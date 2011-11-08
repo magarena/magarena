@@ -1,0 +1,13 @@
+>Dwarven Vigilantes
+url=http://magiccards.info/vi/en/77.html
+image=http://magiccards.info/scans/en/vi/77.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Dwarf
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+timing=main
+

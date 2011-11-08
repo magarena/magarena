@@ -1,0 +1,12 @@
+>Shattering Pulse
+url=http://magiccards.info/ex/en/102.html
+image=http://magiccards.info/scans/en/ex/102.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=removal
+

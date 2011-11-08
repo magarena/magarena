@@ -1,0 +1,14 @@
+>Rapacious One
+url=http://magiccards.info/cmd/en/133.html
+image=http://magiccards.info/scans/en/cmd/133.jpg 
+value=5
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+color=r
+converted=6
+cost={5}{R}
+pt=5/4
+ability=trample
+timing=main
+

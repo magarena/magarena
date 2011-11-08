@@ -1,0 +1,13 @@
+>Judge of Currents
+url=http://magiccards.info/lw/en/22.html
+image=http://magiccards.info/scans/en/lw/22.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=fmain
+

@@ -1,0 +1,12 @@
+>Horrible Hordes
+url=http://magiccards.info/mr/en/269.html
+image=http://magiccards.info/scans/en/mr/269.jpg
+value=2
+rarity=U
+type=Artifact,Creature
+subtype=Spirit
+converted=3
+cost={3}
+pt=2/2
+timing=main
+

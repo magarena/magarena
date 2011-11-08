@@ -1,0 +1,14 @@
+>Ardent Militia
+url=http://magiccards.info/8e/en/3.html
+image=http://magiccards.info/scans/en/8e/3.jpg 
+value=3
+ability=vigilance
+rarity=U
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=5
+cost={4}{W}
+pt=2/5
+timing=main
+

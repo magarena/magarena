@@ -1,0 +1,13 @@
+>Jund Hackblade
+url=http://magiccards.info/arb/en/138.html
+image=http://magiccards.info/scans/en/arb/138.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Goblin,Berserker
+color=bgr
+converted=2
+cost={B/G}{R}
+pt=2/1
+timing=fmain
+

@@ -1,0 +1,11 @@
+>Halcyon Glaze
+url=http://magiccards.info/rav/en/54.html
+image=http://magiccards.info/scans/en/rav/54.jpg
+value=4
+rarity=U
+type=Enchantment
+color=u
+converted=3
+cost={1}{U}{U}
+timing=enchantment
+

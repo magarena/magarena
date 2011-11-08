@@ -1,0 +1,12 @@
+>Lightning Helix
+url=http://magiccards.info/ddh/en/23.html
+image=http://magiccards.info/scans/en/pch/90.jpg
+value=4
+removal=3
+rarity=U
+type=Instant
+color=rw
+converted=2
+cost={R}{W}
+timing=removal
+

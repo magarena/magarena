@@ -1,0 +1,13 @@
+>Ophidian
+url=http://magiccards.info/wl/en/45.html
+image=http://magiccards.info/scans/en/wl/45.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Snake
+color=u
+converted=3
+cost={2}{U}
+pt=1/3
+timing=main
+

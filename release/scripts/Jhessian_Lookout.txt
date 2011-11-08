@@ -1,0 +1,13 @@
+>Jhessian Lookout
+url=http://magiccards.info/ala/en/46.html
+image=http://magiccards.info/scans/en/ala/46.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Human,Scout
+color=u
+converted=2
+cost={1}{U}
+pt=2/1
+timing=main
+

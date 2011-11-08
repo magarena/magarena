@@ -1,0 +1,14 @@
+>Sporecap Spider
+url=http://magiccards.info/roe/en/209.html
+image=http://magiccards.info/scans/en/roe/209.jpg 
+value=2
+ability=reach
+rarity=C
+type=Creature
+subtype=Spider
+color=g
+converted=3
+cost={2}{G}
+pt=1/5
+timing=main
+

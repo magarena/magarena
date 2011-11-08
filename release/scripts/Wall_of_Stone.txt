@@ -1,0 +1,14 @@
+>Wall of Stone
+url=http://magiccards.info/8e/en/232.html
+image=http://magiccards.info/scans/en/8e/232.jpg 
+value=2
+ability=defender
+rarity=U
+type=Creature
+subtype=Wall
+color=r
+converted=3
+cost={1}{R}{R}
+pt=0/8
+timing=smain
+

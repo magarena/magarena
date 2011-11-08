@@ -1,0 +1,13 @@
+>Ronin Cavekeeper
+url=http://magiccards.info/sok/en/111.html
+image=http://magiccards.info/scans/en/sok/111.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=r
+converted=6
+cost={5}{R}
+pt=4/3
+timing=main
+

@@ -1,0 +1,13 @@
+>Kami of Empty Graves
+url=http://magiccards.info/sok/en/75.html
+image=http://magiccards.info/scans/en/sok/75.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit
+color=b
+converted=4
+cost={3}{B}
+pt=4/1
+timing=main
+

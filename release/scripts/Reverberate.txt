@@ -1,0 +1,11 @@
+>Reverberate
+url=http://magiccards.info/m12/en/152.html
+image=http://magiccards.info/scans/en/m12/152.jpg
+value=3
+rarity=R
+type=Instant
+color=r
+converted=2
+cost={R}{R}
+timing=spell
+

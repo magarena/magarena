@@ -1,0 +1,13 @@
+>Grizzly Bears
+url=http://magiccards.info/10e/en/268.html
+image=http://magiccards.info/scans/en/10e/268.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Bear
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+

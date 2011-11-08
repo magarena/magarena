@@ -1,0 +1,14 @@
+>Giant Solifuge
+url=http://magiccards.info/gp/en/143.html
+image=http://magiccards.info/scans/en/gp/143.jpg 
+value=3
+ability=trample,haste,shroud
+rarity=R
+type=Creature
+subtype=Insect
+color=rg
+converted=4
+cost={2}{R/G}{R/G}
+pt=4/1
+timing=fmain
+

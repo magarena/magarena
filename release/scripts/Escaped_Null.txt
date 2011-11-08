@@ -1,0 +1,14 @@
+>Escaped Null
+url=http://magiccards.info/roe/en/109.html
+image=http://magiccards.info/scans/en/roe/109.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Zombie,Berserker
+color=b
+converted=4
+cost={3}{B}
+pt=1/2
+ability=lifelink
+timing=main
+

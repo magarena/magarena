@@ -1,0 +1,11 @@
+>Reviving Dose
+url=http://magiccards.info/10e/en/34.html
+image=http://magiccards.info/scans/en/10e/34.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=draw
+

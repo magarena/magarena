@@ -1,0 +1,14 @@
+>Voiceless Spirit
+url=http://magiccards.info/isd/en/42.html
+image=http://magiccards.info/scans/en/isd/42.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=w
+converted=3
+cost={2}{W}
+pt=2/1
+ability=flying,first strike
+timing=main
+

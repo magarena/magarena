@@ -1,0 +1,12 @@
+>Last Gasp
+url=http://magiccards.info/rav/en/93.html
+image=http://magiccards.info/scans/en/rav/93.jpg
+value=3
+removal=2
+rarity=C
+type=Instant
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+

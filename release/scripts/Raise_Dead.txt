@@ -1,0 +1,11 @@
+>Raise Dead
+url=http://magiccards.info/9e/en/156.html
+image=http://magiccards.info/scans/en/9e/156.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=draw
+

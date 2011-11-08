@@ -1,0 +1,12 @@
+>Imps' Taunt
+url=http://magiccards.info/tp/en/32.html
+image=http://magiccards.info/scans/en/tp/32.jpg
+value=2
+removal=1
+rarity=U
+type=Instant
+color=b
+converted=1
+cost={1}{B}
+timing=mustattack
+

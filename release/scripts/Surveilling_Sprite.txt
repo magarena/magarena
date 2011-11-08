@@ -1,0 +1,14 @@
+>Surveilling Sprite
+url=http://magiccards.info/ddh/en/43.html
+image=http://magiccards.info/scans/en/rav/67.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=flying
+timing=main
+

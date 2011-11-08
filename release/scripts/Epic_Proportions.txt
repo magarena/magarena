@@ -1,0 +1,15 @@
+>Epic Proportions
+url=http://magiccards.info/lw/en/209.html
+image=http://magiccards.info/scans/en/lw/209.jpg
+value=4
+rarity=R
+type=Enchantment
+subtype=Aura
+color=g
+converted=6
+cost={4}{G}{G}
+given_pt=5/5
+given_ability=trample
+ability=flash
+timing=pump
+

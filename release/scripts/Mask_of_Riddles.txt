@@ -1,0 +1,14 @@
+>Mask of Riddles
+url=http://magiccards.info/arb/en/25.html
+image=http://magiccards.info/scans/en/arb/25.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+color=ub
+converted=2
+cost={U}{B}
+equip={2}
+given_ability=fear
+timing=equipment
+

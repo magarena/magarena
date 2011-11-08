@@ -1,0 +1,14 @@
+>Plague Stinger
+url=http://magiccards.info/som/en/75.html
+image=http://magiccards.info/scans/en/som/75.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect,Horror
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+ability=flying,infect
+timing=main
+

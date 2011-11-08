@@ -1,0 +1,12 @@
+>Honor of the Pure
+url=http://magiccards.info/m12/en/23.html
+image=http://magiccards.info/scans/en/m11/17.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=2
+cost={1}{W}
+static=player
+timing=enchantment
+

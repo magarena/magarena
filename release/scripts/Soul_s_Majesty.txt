@@ -1,0 +1,11 @@
+>Soul's Majesty
+url=http://magiccards.info/cfx/en/92.html
+image=http://magiccards.info/scans/en/cfx/92.jpg
+value=3
+rarity=R
+type=Sorcery
+color=g
+converted=5
+cost={4}{G}
+timing=draw
+

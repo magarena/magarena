@@ -1,0 +1,12 @@
+>Putrefy
+url=http://magiccards.info/rav/en/221.html
+image=http://magiccards.info/scans/en/rav/221.jpg
+value=4
+removal=5
+rarity=U
+type=Instant
+color=bg
+converted=3
+cost={1}{B}{G}
+timing=removal
+

@@ -1,0 +1,12 @@
+>Terror
+url=http://magiccards.info/dpa/en/34.html
+image=http://magiccards.info/scans/en/dpa/34.jpg
+value=2
+removal=3
+rarity=C
+type=Instant
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+

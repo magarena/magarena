@@ -1,0 +1,11 @@
+>Night's Whisper
+url=http://magiccards.info/5dn/en/55.html
+image=http://magiccards.info/scans/en/5dn/55.jpg
+value=2
+rarity=U
+type=Sorcery
+color=b
+converted=2
+cost={1}{B}
+timing=draw
+

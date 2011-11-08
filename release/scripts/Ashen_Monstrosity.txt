@@ -1,0 +1,14 @@
+>Ashen Monstrosity
+url=http://magiccards.info/bok/en/93.html
+image=http://magiccards.info/scans/en/bok/93.jpg 
+value=4
+ability=haste,attacks each turn if able
+rarity=U
+type=Creature
+subtype=Spirit
+color=r
+converted=7
+cost={5}{R}{R}
+pt=7/4
+timing=fmain
+

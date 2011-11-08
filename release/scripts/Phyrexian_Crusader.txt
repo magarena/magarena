@@ -1,0 +1,14 @@
+>Phyrexian Crusader
+url=http://magiccards.info/mbs/en/50.html
+image=http://magiccards.info/scans/en/mbs/50.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Zombie,Knight
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/2
+ability=first strike,protection from red,protection from white,infect
+timing=main
+

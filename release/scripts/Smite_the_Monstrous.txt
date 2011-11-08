@@ -1,0 +1,12 @@
+>Smite the Monstrous
+url=http://magiccards.info/isd/en/33.html
+image=http://magiccards.info/scans/en/isd/33.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=w
+converted=4
+cost={3}{W}
+timing=removal
+

@@ -1,0 +1,14 @@
+>Sewn-Eye Drake
+url=http://magiccards.info/arb/en/135.html
+image=http://magiccards.info/scans/en/arb/135.jpg
+value=3
+ability=flying,haste
+rarity=C
+type=Creature
+subtype=Zombie,Drake
+color=rbu
+converted=4
+cost={2}{B}{U/R}
+pt=3/1
+timing=fmain
+

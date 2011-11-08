@@ -1,0 +1,14 @@
+>Stromkirk Noble
+url=http://magiccards.info/isd/en/164.html
+image=http://magiccards.info/scans/en/isd/164.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Vampire
+color=r
+converted=1
+cost={R}
+pt=1/1
+ability=can't be blocked by humans
+timing=main
+

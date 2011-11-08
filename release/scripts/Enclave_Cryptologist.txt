@@ -1,0 +1,13 @@
+>Enclave Cryptologist
+url=http://magiccards.info/roe/en/66.html
+image=http://magiccards.info/scans/en/roe/66.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+color=u
+converted=1
+cost={U}
+pt=0/1
+timing=main
+

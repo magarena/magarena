@@ -1,0 +1,14 @@
+>Mourning Thrull
+url=http://magiccards.info/gp/en/146.html
+image=http://magiccards.info/scans/en/gp/146.jpg 
+value=2
+ability=flying,lifelink
+rarity=C
+type=Creature
+subtype=Thrull
+color=bw
+converted=2
+cost={1}{W/B}
+pt=1/1
+timing=main
+

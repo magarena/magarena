@@ -1,0 +1,11 @@
+>Kindled Fury
+url=http://magiccards.info/m10/en/144.html
+image=http://magiccards.info/scans/en/mt/92.jpg
+value=2
+rarity=C
+type=Instant
+color=r
+converted=1
+cost={R}
+timing=pump
+

@@ -1,0 +1,14 @@
+>Standing Troops
+url=http://magiccards.info/8e/en/48.html
+image=http://magiccards.info/scans/en/8e/48.jpg 
+value=2
+ability=vigilance
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=1/4
+timing=main
+

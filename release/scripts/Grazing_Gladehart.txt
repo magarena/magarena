@@ -1,0 +1,13 @@
+>Grazing Gladehart
+url=http://magiccards.info/ddh/en/11.html
+image=http://magiccards.info/scans/en/ddh/11.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Antelope
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=main
+

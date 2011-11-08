@@ -1,0 +1,11 @@
+>Sift
+url=http://magiccards.info/10e/en/108.html
+image=http://magiccards.info/scans/en/10e/108.jpg
+value=3
+rarity=C
+type=Sorcery
+color=u
+converted=4
+cost={3}{U}
+timing=draw
+

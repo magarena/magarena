@@ -1,0 +1,9 @@
+>Vivid Creek
+url=http://magiccards.info/cmd/en/294.html
+image=http://magiccards.info/scans/en/lw/276.jpg
+value=3
+rarity=U
+type=Land
+mana=b1g1r1u3w1
+timing=tapland
+

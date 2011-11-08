@@ -1,0 +1,13 @@
+>Riot Devils
+url=http://magiccards.info/isd/en/160.html
+image=http://magiccards.info/scans/en/isd/160.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Devil
+color=r
+converted=3
+cost={2}{R}
+pt=2/3
+timing=main
+

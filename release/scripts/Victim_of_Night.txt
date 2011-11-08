@@ -1,0 +1,13 @@
+>Victim of Night
+url=http://magiccards.info/isd/en/124.html
+image=http://magiccards.info/scans/en/isd/124.jpg
+ignore=57071
+value=3
+removal=4
+rarity=C
+type=Instant
+color=b
+converted=2
+cost={B}{B}
+timing=removal
+

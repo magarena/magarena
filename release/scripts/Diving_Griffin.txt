@@ -1,0 +1,14 @@
+>Diving Griffin
+url=http://magiccards.info/8e/en/17.html
+image=http://magiccards.info/scans/en/8e/17.jpg 
+value=3
+ability=flying,vigilance
+rarity=C
+type=Creature
+subtype=Griffin
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/2
+timing=main
+

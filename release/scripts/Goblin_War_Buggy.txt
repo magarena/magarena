@@ -1,0 +1,14 @@
+>Goblin War Buggy
+url=http://magiccards.info/us/en/196.html
+image=http://magiccards.info/scans/en/us/196.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin
+color=r
+converted=2
+cost={1}{R}
+pt=2/2
+ability=haste
+timing=main
+

@@ -1,0 +1,13 @@
+>Silkenfist Fighter
+url=http://magiccards.info/ne/en/19.html
+image=http://magiccards.info/scans/en/ne/19.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kor,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=1/3
+timing=main
+

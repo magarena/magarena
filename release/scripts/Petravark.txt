@@ -1,0 +1,14 @@
+>Petravark
+url=http://magiccards.info/tr/en/109.html
+image=http://magiccards.info/scans/en/tr/109.jpg
+value=2
+removal=2
+rarity=C
+type=Creature
+subtype=Nightmare,Beast
+color=r
+converted=4
+cost={3}{R}
+pt=2/2
+timing=main
+

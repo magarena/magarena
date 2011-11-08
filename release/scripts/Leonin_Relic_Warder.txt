@@ -1,0 +1,13 @@
+>Leonin Relic-Warder
+url=http://magiccards.info/mbs/en/10.html
+image=http://magiccards.info/scans/en/mbs/10.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Cat,Cleric
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+timing=main
+

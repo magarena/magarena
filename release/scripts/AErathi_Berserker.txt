@@ -1,0 +1,13 @@
+>AErathi Berserker
+url=http://magiccards.info/lg/en/131.html
+image=http://magiccards.info/scans/en/lg/131.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Berserker
+color=r
+converted=5
+cost={2}{R}{R}{R}
+pt=2/4
+timing=main
+

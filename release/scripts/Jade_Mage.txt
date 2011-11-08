@@ -1,0 +1,13 @@
+>Jade Mage
+url=http://magiccards.info/ddh/en/7.html
+image=http://magiccards.info/scans/en/m12/181.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=2
+cost={2}{G}
+pt=2/1
+timing=fmain
+

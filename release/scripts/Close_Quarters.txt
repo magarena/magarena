@@ -1,0 +1,11 @@
+>Close Quarters
+url=http://magiccards.info/mm/en/184.html
+image=http://magiccards.info/scans/en/mm/184.jpg
+value=3
+rarity=U
+type=Enchantment
+color=r
+converted=4
+cost={2}{R}{R}
+timing=enchantment
+

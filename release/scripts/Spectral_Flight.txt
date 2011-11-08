@@ -1,0 +1,14 @@
+>Spectral Flight
+url=http://magiccards.info/isd/en/79.html
+image=http://magiccards.info/scans/en/isd/79.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=2
+cost={1}{U}
+given_pt=2/2
+given_ability=flying
+timing=aura
+

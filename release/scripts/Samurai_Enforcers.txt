@@ -1,0 +1,13 @@
+>Samurai Enforcers
+url=http://magiccards.info/chk/en/42.html
+image=http://magiccards.info/scans/en/chk/42.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=6
+cost={4}{W}{W}
+pt=4/4
+timing=main
+

@@ -1,0 +1,11 @@
+>Fevered Convulsions
+url=http://magiccards.info/tp/en/30.html
+image=http://magiccards.info/scans/en/tp/30.jpg
+value=3
+rarity=R
+type=Enchantment
+color=b
+converted=2
+cost={B}{B}
+timing=enchantment
+

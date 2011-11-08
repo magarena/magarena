@@ -1,0 +1,11 @@
+>Rites of Flourishing
+url=http://magiccards.info/m12/en/192.html
+image=http://magiccards.info/scans/en/m12/192.jpg
+value=3
+rarity=R
+type=Enchantment
+color=g
+converted=3
+cost={2}{G}
+timing=enchantment
+

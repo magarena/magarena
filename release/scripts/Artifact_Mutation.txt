@@ -1,0 +1,12 @@
+>Artifact Mutation
+url=http://magiccards.info/in/en/231.html
+image=http://magiccards.info/scans/en/in/231.jpg
+value=3
+removal=1
+rarity=R
+type=Instant
+color=rg
+converted=2
+cost={R}{G}
+timing=removal
+

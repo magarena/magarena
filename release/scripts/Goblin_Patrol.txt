@@ -1,0 +1,13 @@
+>Goblin Patrol
+url=http://magiccards.info/us/en/193.html
+image=http://magiccards.info/scans/en/us/193.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Goblin
+color=r
+converted=1
+cost={R}
+pt=2/1
+timing=main
+

@@ -1,0 +1,13 @@
+>Griffin Rider
+url=http://magiccards.info/m12/en/20.html
+image=http://magiccards.info/scans/en/m12/20.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=main
+

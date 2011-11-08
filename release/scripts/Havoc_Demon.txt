@@ -1,0 +1,14 @@
+>Havoc Demon
+url=http://magiccards.info/le/en/74.html
+image=http://magiccards.info/scans/en/le/74.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Demon
+color=b
+converted=7
+cost={5}{B}{B}
+pt=5/5
+ability=flying
+timing=main
+

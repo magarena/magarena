@@ -1,0 +1,13 @@
+>Molimo, Maro-Sorcerer
+url=http://magiccards.info/dpa/en/74.html
+image=http://magiccards.info/scans/en/10e/280.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Elemental
+color=g
+converted=7
+cost={4}{G}{G}{G}
+ability=trample
+timing=smain
+

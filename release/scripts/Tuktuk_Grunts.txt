@@ -1,0 +1,14 @@
+>Tuktuk Grunts
+url=http://magiccards.info/zen/en/152.html
+image=http://magiccards.info/scans/en/zen/152.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Goblin,Warrior,Ally
+color=r
+converted=5
+cost={4}{R}
+pt=2/2
+ability=haste
+timing=fmain
+

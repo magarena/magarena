@@ -1,0 +1,14 @@
+>Rustrazor Butcher
+url=http://magiccards.info/shm/en/105.html
+image=http://magiccards.info/scans/en/shm/105.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={1}{R}
+pt=1/2
+ability=first strike,wither
+timing=main
+

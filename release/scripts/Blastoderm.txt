@@ -1,0 +1,14 @@
+>Blastoderm
+url=http://magiccards.info/gvl/en/7.html
+image=http://magiccards.info/scans/en/gvl/7.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=4
+cost={2}{G}{G}
+pt=5/5
+ability=shroud
+timing=main
+

@@ -1,0 +1,15 @@
+>Birds of Paradise
+url=http://magiccards.info/m12/en/165.html
+image=http://magiccards.info/scans/en/m11/165.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Bird
+color=g
+converted=1
+cost={G}
+pt=0/1
+ability=flying
+timing=smain
+mana_or_combat
+

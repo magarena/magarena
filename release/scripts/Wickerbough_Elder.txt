@@ -1,0 +1,13 @@
+>Wickerbough Elder
+url=http://magiccards.info/arc/en/74.html
+image=http://magiccards.info/scans/en/arc/74.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Treefolk,Shaman
+color=g
+converted=4
+cost={3}{G}
+pt=4/4
+timing=main
+

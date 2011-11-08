@@ -1,0 +1,14 @@
+>Sea Eagle
+url=http://magiccards.info/8eb/en/4.html
+image=http://magiccards.info/scans/en/8eb/4.jpg 
+value=1
+ability=flying
+rarity=C
+type=Creature
+subtype=Bird
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+timing=main
+

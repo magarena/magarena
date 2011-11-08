@@ -1,0 +1,14 @@
+>Hoverguard Observer
+url=http://magiccards.info/ds/en/22.html
+image=http://magiccards.info/scans/en/ds/22.jpg 
+value=3
+ability=flying,can't block creatures without flying
+rarity=U
+type=Creature
+subtype=Drone
+color=u
+converted=4
+cost={2}{U}{U}
+pt=3/3
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Kinsbaile Cavalier
+url=http://magiccards.info/ddg/en/17.html
+image=http://magiccards.info/scans/en/mt/15.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Kithkin,Knight
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+static=player
+timing=fmain
+

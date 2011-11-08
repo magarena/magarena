@@ -1,0 +1,12 @@
+>Afflict
+url=http://magiccards.info/10e/en/125.html
+image=http://magiccards.info/scans/en/10e/125.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=b
+converted=3
+cost={2}{B}
+timing=removal
+

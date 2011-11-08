@@ -1,0 +1,13 @@
+>Night Revelers
+url=http://magiccards.info/isd/en/153.html
+image=http://magiccards.info/scans/en/isd/153.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Vampire
+color=r
+converted=5
+cost={4}{R}
+pt=4/4
+timing=main
+

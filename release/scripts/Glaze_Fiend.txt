@@ -1,0 +1,14 @@
+>Glaze Fiend
+url=http://magiccards.info/ala/en/77.html
+image=http://magiccards.info/scans/en/ala/77.jpg
+value=2
+rarity=C
+type=Artifact,Creature
+subtype=Illusion
+color=b
+converted=2
+cost={1}{B}
+pt=0/1
+ability=flying
+timing=main
+

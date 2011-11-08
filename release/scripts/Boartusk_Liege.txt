@@ -1,0 +1,15 @@
+>Boartusk Liege
+url=http://magiccards.info/shm/en/202.html
+image=http://magiccards.info/scans/en/shm/202.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Goblin,Knight
+color=rg
+converted=4
+cost={1}{R/G}{R/G}{R/G}
+pt=3/4
+ability=trample
+static=player
+timing=fmain
+

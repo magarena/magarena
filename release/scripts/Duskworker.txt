@@ -1,0 +1,12 @@
+>Duskworker
+url=http://magiccards.info/mi/en/166.html
+image=http://magiccards.info/scans/en/mi/166.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+converted=4
+cost={4}
+pt=2/2
+timing=main
+

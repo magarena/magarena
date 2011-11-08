@@ -1,0 +1,13 @@
+>Arctic Wolves
+url=http://magiccards.info/wl/en/60.html
+image=http://magiccards.info/scans/en/wl/60.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Wolf
+color=g
+converted=5
+cost={3}{G}{G}
+pt=4/5
+timing=main
+

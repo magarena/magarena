@@ -1,0 +1,11 @@
+>Quest for Renewal
+url=http://magiccards.info/wwk/en/110.html
+image=http://magiccards.info/scans/en/wwk/110.jpg
+value=3
+rarity=U
+type=Enchantment
+color=g
+converted=2
+cost={1}{G}
+timing=enchantment
+

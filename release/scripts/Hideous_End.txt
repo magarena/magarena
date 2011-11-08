@@ -1,0 +1,12 @@
+>Hideous End
+url=http://magiccards.info/pvc/en/26.html
+image=http://magiccards.info/scans/en/zen/98.jpg
+value=3
+removal=4
+rarity=C
+type=Instant
+color=b
+converted=3
+cost={1}{B}{B}
+timing=removal
+

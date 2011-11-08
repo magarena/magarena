@@ -1,0 +1,14 @@
+>Snake Umbra
+url=http://magiccards.info/roe/en/207.html
+image=http://magiccards.info/scans/en/roe/207.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=g
+converted=3
+cost={2}{G}
+given_pt=1/1
+ability=totem armor
+timing=aura
+

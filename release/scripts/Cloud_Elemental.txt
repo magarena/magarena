@@ -1,0 +1,14 @@
+>Cloud Elemental
+url=http://magiccards.info/m11/en/50.html
+image=http://magiccards.info/scans/en/m11/50.jpg 
+value=3
+ability=flying,can't block creatures without flying
+rarity=C
+type=Creature
+subtype=Elemental
+color=u
+converted=3
+cost={2}{U}
+pt=2/3
+timing=fmain
+

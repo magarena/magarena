@@ -1,0 +1,11 @@
+>Spell Pierce
+url=http://magiccards.info/zen/en/67.html
+image=http://magiccards.info/scans/en/zen/67.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=counter
+

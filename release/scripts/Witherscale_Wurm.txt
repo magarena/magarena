@@ -1,0 +1,13 @@
+>Witherscale Wurm
+url=http://magiccards.info/shm/en/134.html
+image=http://magiccards.info/scans/en/shm/134.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Wurm
+color=g
+converted=6
+cost={4}{G}{G}
+pt=9/9
+timing=main
+

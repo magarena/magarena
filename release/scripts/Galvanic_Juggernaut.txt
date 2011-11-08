@@ -1,0 +1,13 @@
+>Galvanic Juggernaut
+url=http://magiccards.info/isd/en/222.html
+image=http://magiccards.info/scans/en/isd/222.jpg
+value=4
+rarity=U
+type=Artifact,Creature
+subtype=Juggernaut
+converted=4
+cost={4}
+pt=5/5
+ability=attacks each turn if able,doesn't untap during untap step
+timing=main
+

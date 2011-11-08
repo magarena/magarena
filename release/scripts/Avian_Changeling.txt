@@ -1,0 +1,14 @@
+>Avian Changeling
+url=http://magiccards.info/lw/en/4.html
+image=http://magiccards.info/scans/en/lw/4.jpg 
+value=2
+ability=changeling,flying
+rarity=C
+type=Creature
+subtype=Shapeshifter
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+timing=main
+

@@ -1,0 +1,14 @@
+>River Boa
+url=http://magiccards.info/dpa/en/80.html
+image=http://magiccards.info/scans/en/zen/180.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Snake
+color=g
+converted=2
+cost={1}{G}
+pt=2/1
+ability=islandwalk
+timing=main
+

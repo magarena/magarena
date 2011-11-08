@@ -1,0 +1,14 @@
+>Plasma Elemental
+url=http://magiccards.info/5dn/en/34.html
+image=http://magiccards.info/scans/en/5dn/34.jpg 
+value=4
+ability=unblockable
+rarity=U
+type=Creature
+subtype=Elemental
+color=u
+converted=6
+cost={5}{U}
+pt=4/1
+timing=main
+

@@ -1,0 +1,12 @@
+>Terminate
+url=http://magiccards.info/cmd/en/231.html
+image=http://magiccards.info/scans/en/arc/95.jpg
+value=4
+removal=5
+rarity=C
+type=Instant
+color=br
+converted=2
+cost={B}{R}
+timing=removal
+

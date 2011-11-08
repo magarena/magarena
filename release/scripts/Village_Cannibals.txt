@@ -1,0 +1,13 @@
+>Village Cannibals
+url=http://magiccards.info/isd/en/125.html
+image=http://magiccards.info/scans/en/isd/125.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+timing=main
+

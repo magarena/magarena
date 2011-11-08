@@ -1,0 +1,11 @@
+>Recollect
+url=http://magiccards.info/10e/en/289.html
+image=http://magiccards.info/scans/en/10e/289.jpg
+value=3
+rarity=U
+type=Sorcery
+color=g
+converted=3
+cost={2}{G}
+timing=draw
+

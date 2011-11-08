@@ -1,0 +1,14 @@
+>Accorder's Shield
+url=http://magiccards.info/som/en/136.html
+image=http://magiccards.info/scans/en/som/136.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=0
+cost={0}
+equip={3}
+given_pt=0/3
+given_ability=vigilance
+timing=equipment
+

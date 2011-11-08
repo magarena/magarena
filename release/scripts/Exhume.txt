@@ -1,0 +1,11 @@
+>Exhume
+url=http://magiccards.info/br/en/24.html
+image=http://magiccards.info/scans/en/br/24.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=2
+cost={1}{B}
+timing=main
+

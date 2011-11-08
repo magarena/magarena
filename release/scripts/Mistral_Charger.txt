@@ -1,0 +1,14 @@
+>Mistral Charger
+url=http://magiccards.info/di/en/13.html
+image=http://magiccards.info/scans/en/di/13.jpg 
+value=2
+ability=flying
+rarity=U
+type=Creature
+subtype=Pegasus
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+timing=main
+

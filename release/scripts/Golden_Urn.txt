@@ -1,0 +1,10 @@
+>Golden Urn
+url=http://magiccards.info/som/en/158.html
+image=http://magiccards.info/scans/en/som/158.jpg
+value=2
+rarity=C
+type=Artifact
+converted=1
+cost={1}
+timing=artifact
+

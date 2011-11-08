@@ -1,0 +1,13 @@
+>Guard Duty
+url=http://magiccards.info/roe/en/23.html
+image=http://magiccards.info/scans/en/roe/23.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+given_ability=defender
+timing=aura
+

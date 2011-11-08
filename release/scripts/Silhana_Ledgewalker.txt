@@ -1,0 +1,14 @@
+>Silhana Ledgewalker
+url=http://magiccards.info/gp/en/94.html
+image=http://magiccards.info/scans/en/gp/94.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Rogue
+color=g
+converted=2
+cost={1}{G}
+pt=1/1
+ability=can't be blocked except by creatures with flying,hexproof
+timing=fmain
+

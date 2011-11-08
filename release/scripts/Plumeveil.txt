@@ -1,0 +1,14 @@
+>Plumeveil
+url=http://magiccards.info/cmd/en/218.html
+image=http://magiccards.info/scans/en/shm/145.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Elemental
+color=wu
+converted=3
+cost={W/U}{W/U}{W/U}
+pt=4/4
+ability=flash,flying,defender
+timing=flash
+

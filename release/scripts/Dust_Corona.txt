@@ -1,0 +1,14 @@
+>Dust Corona
+url=http://magiccards.info/pc/en/97.html
+image=http://magiccards.info/scans/en/pc/97.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=1
+cost={R}
+given_pt=2/0
+given_ability=can't be blocked by creatures with flying
+timing=aura
+

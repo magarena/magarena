@@ -1,0 +1,14 @@
+>Ghitu Slinger
+url=http://magiccards.info/ul/en/77.html
+image=http://magiccards.info/scans/en/ul/77.jpg
+value=3
+removal=2
+rarity=C
+type=Creature
+subtype=Human,Nomad
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+timing=main
+

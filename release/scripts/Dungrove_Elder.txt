@@ -1,0 +1,13 @@
+>Dungrove Elder
+url=http://magiccards.info/m12/en/171.html
+image=http://magiccards.info/scans/en/m12/171.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Treefolk
+color=g
+converted=3
+cost={2}{G}
+ability=hexproof
+timing=smain
+

@@ -1,0 +1,13 @@
+>Riddlekeeper
+url=http://magiccards.info/cmd/en/59.html
+image=http://magiccards.info/scans/en/cmd/59.jpg 
+value=2
+rarity=R
+type=Creature
+subtype=Homunculus
+color=u
+converted=3
+cost={2}{U}
+pt=1/4
+timing=main
+

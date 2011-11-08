@@ -1,0 +1,14 @@
+>Deathbringer Liege
+url=http://magiccards.info/eve/en/85.html
+image=http://magiccards.info/scans/en/eve/85.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Horror
+color=wb
+converted=5
+cost={2}{W/B}{W/B}{W/B}
+pt=3/4
+static=player
+timing=fmain
+

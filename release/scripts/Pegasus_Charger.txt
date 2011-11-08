@@ -1,0 +1,14 @@
+>Pegasus Charger
+url=http://magiccards.info/9e/en/34.html
+image=http://magiccards.info/scans/en/9e/34.jpg 
+value=2
+ability=flying,first strike
+rarity=C
+type=Creature
+subtype=Pegasus
+color=w
+converted=3
+cost={2}{W}
+pt=2/1
+timing=main
+

@@ -1,0 +1,12 @@
+>Karn, Silver Golem
+url=http://magiccards.info/fvr/en/6.html
+image=http://magiccards.info/scans/en/fvr/6.jpg
+value=3
+rarity=M
+type=Legendary,Artifact,Creature
+subtype=Golem
+converted=5
+cost={5}
+pt=4/4
+timing=fmain
+

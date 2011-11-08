@@ -1,0 +1,13 @@
+>Thousand-legged Kami
+url=http://magiccards.info/chk/en/246.html
+image=http://magiccards.info/scans/en/chk/246.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=8
+cost={6}{G}{G}
+pt=6/6
+timing=main
+

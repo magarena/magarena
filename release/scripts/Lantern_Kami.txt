@@ -1,0 +1,14 @@
+>Lantern Kami
+url=http://magiccards.info/chk/en/32.html
+image=http://magiccards.info/scans/en/chk/32.jpg 
+value=2
+ability=flying
+rarity=C
+type=Creature
+subtype=Spirit
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

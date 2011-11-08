@@ -1,0 +1,13 @@
+>Skullclamp
+url=http://magiccards.info/cmd/en/260.html
+image=http://magiccards.info/scans/en/fve/12.jpg
+value=4
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={1}
+given_pt=1/-1
+timing=equipment
+

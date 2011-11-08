@@ -1,0 +1,14 @@
+>Galina's Knight
+url=http://magiccards.info/in/en/248.html
+image=http://magiccards.info/scans/en/in/248.jpg 
+value=2
+ability=protection from red
+rarity=C
+type=Creature
+subtype=Merfolk,Knight
+color=uw
+converted=2
+cost={W}{U}
+pt=2/2
+timing=main
+

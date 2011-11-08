@@ -1,0 +1,13 @@
+>Hada Spy Patrol
+url=http://magiccards.info/roe/en/71.html
+image=http://magiccards.info/scans/en/roe/71.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Rogue
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+timing=main
+

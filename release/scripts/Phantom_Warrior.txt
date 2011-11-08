@@ -1,0 +1,14 @@
+>Phantom Warrior
+url=http://magiccards.info/dpa/en/14.html
+image=http://magiccards.info/scans/en/dpa/14.jpg 
+value=3
+ability=unblockable
+rarity=U
+type=Creature
+subtype=Illusion,Warrior
+color=u
+converted=3
+cost={1}{U}{U}
+pt=2/2
+timing=main
+

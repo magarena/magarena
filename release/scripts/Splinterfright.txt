@@ -1,0 +1,13 @@
+>Splinterfright
+url=http://magiccards.info/isd/en/205.html
+image=http://magiccards.info/scans/en/isd/205.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=3
+cost={2}{G}
+ability=trample
+timing=main
+

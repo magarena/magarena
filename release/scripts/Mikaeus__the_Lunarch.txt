@@ -1,0 +1,12 @@
+>Mikaeus, the Lunarch
+url=http://magiccards.info/isd/en/23.html
+image=http://magiccards.info/scans/en/isd/23.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Human,Cleric
+color=w
+converted=1
+cost={X}{W}
+timing=main
+

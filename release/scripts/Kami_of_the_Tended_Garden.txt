@@ -1,0 +1,13 @@
+>Kami of the Tended Garden
+url=http://magiccards.info/sok/en/134.html
+image=http://magiccards.info/scans/en/sok/134.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=4
+cost={3}{G}
+pt=4/4
+timing=main
+

@@ -1,0 +1,13 @@
+>Tuktuk Scrapper
+url=http://magiccards.info/wwk/en/94.html
+image=http://magiccards.info/scans/en/wwk/94.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Goblin,Artificer,Ally
+color=r
+converted=4
+cost={3}{R}
+pt=2/2
+timing=main
+

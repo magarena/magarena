@@ -1,0 +1,13 @@
+>Devoted Retainer
+url=http://magiccards.info/chk/en/7.html
+image=http://magiccards.info/scans/en/chk/7.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

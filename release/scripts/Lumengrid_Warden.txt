@@ -1,0 +1,13 @@
+>Lumengrid Warden
+url=http://magiccards.info/10e/en/89.html
+image=http://magiccards.info/scans/en/10e/89.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=2
+cost={1}{U}
+pt=1/3
+timing=main
+

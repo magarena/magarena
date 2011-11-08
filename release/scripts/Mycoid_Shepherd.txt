@@ -1,0 +1,13 @@
+>Mycoid Shepherd
+url=http://magiccards.info/arb/en/73.html
+image=http://magiccards.info/scans/en/arb/73.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Fungus
+color=gw
+converted=4
+cost={1}{G}{G}{W}
+pt=5/4
+timing=main
+

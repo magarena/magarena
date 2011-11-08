@@ -1,0 +1,13 @@
+>Student of Warfare
+url=http://magiccards.info/roe/en/47.html
+image=http://magiccards.info/scans/en/roe/47.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Knight
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

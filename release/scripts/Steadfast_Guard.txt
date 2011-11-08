@@ -1,0 +1,14 @@
+>Steadfast Guard
+url=http://magiccards.info/10e/en/48.html
+image=http://magiccards.info/scans/en/10e/48.jpg 
+value=2
+ability=vigilance
+rarity=C
+type=Creature
+subtype=Human,Rebel
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+timing=main
+

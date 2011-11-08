@@ -1,0 +1,14 @@
+>Tower Gargoyle
+url=http://magiccards.info/ala/en/205.html
+image=http://magiccards.info/scans/en/ala/205.jpg
+value=4
+ability=flying
+rarity=U
+type=Artifact,Creature
+subtype=Gargoyle
+color=buw
+converted=4
+cost={1}{W}{U}{B}
+pt=4/4
+timing=main
+

@@ -1,0 +1,13 @@
+>Slith Strider
+url=http://magiccards.info/mi/en/50.html
+image=http://magiccards.info/scans/en/mi/50.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Slith
+color=u
+converted=3
+cost={1}{U}{U}
+pt=1/1
+timing=main
+

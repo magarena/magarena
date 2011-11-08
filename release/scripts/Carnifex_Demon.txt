@@ -1,0 +1,14 @@
+>Carnifex Demon
+url=http://magiccards.info/som/en/57.html
+image=http://magiccards.info/scans/en/som/57.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Demon
+color=b
+converted=6
+cost={4}{B}{B}
+pt=6/6
+ability=flying
+timing=fmain
+

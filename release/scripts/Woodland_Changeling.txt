@@ -1,0 +1,14 @@
+>Woodland Changeling
+url=http://magiccards.info/lw/en/242.html
+image=http://magiccards.info/scans/en/lw/242.jpg 
+value=1
+ability=changeling
+rarity=C
+type=Creature
+subtype=Shapeshifter
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+

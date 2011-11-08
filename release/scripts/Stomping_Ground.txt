@@ -1,0 +1,11 @@
+>Stomping Ground
+url=http://magiccards.info/gp/en/165.html
+image=http://magiccards.info/scans/en/gp/165.jpg
+value=4
+rarity=R
+type=Land
+subtype=Mountain,Forest
+mana=r3g3
+basic=rg
+timing=land
+

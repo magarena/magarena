@@ -1,0 +1,13 @@
+>Axegrinder Giant
+url=http://magiccards.info/lw/en/151.html
+image=http://magiccards.info/scans/en/lw/151.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Giant,Warrior
+color=r
+converted=6
+cost={4}{R}{R}
+pt=6/4
+timing=main
+

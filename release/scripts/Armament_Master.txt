@@ -1,0 +1,14 @@
+>Armament Master
+url=http://magiccards.info/zen/en/1.html
+image=http://magiccards.info/scans/en/zen/1.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Kor,Soldier
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+static=player
+timing=fmain
+

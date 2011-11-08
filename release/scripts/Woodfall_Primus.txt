@@ -1,0 +1,14 @@
+>Woodfall Primus
+url=http://magiccards.info/shm/en/135.html
+image=http://magiccards.info/scans/en/shm/135.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Treefolk,Shaman
+color=g
+converted=8
+cost={5}{G}{G}{G}
+pt=6/6
+ability=trample,persist
+timing=main
+

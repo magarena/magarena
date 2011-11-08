@@ -1,0 +1,13 @@
+>Bloodhall Ooze
+url=http://magiccards.info/cfx/en/59.html
+image=http://magiccards.info/scans/en/cfx/59.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Ooze
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+

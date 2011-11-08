@@ -1,0 +1,14 @@
+>Crazed Goblin
+url=http://magiccards.info/ds/en/56.html
+image=http://magiccards.info/scans/en/ds/56.jpg 
+value=1
+ability=attacks each turn if able
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+

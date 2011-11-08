@@ -1,0 +1,13 @@
+>Roughshod Mentor
+url=http://magiccards.info/dpa/en/81.html
+image=http://magiccards.info/scans/en/shm/128.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+color=g
+converted=6
+cost={5}{G}
+pt=5/4
+timing=main
+

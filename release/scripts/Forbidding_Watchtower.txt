@@ -1,0 +1,10 @@
+>Forbidding Watchtower
+url=http://magiccards.info/10e/en/352.html
+image=http://magiccards.info/scans/en/10e/352.jpg
+value=4
+rarity=U
+type=Land
+mana=w3
+timing=land
+mana_or_combat
+

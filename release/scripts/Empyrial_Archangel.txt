@@ -1,0 +1,14 @@
+>Empyrial Archangel
+url=http://magiccards.info/ala/en/166.html
+image=http://magiccards.info/scans/en/ala/166.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Angel
+color=gwu
+converted=8
+cost={4}{G}{W}{W}{U}
+pt=5/8
+ability=flying,shroud
+timing=fmain
+

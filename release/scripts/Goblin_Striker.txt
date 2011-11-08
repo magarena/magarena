@@ -1,0 +1,14 @@
+>Goblin Striker
+url=http://magiccards.info/mi/en/94.html
+image=http://magiccards.info/scans/en/mi/94.jpg 
+value=1
+ability=first strike,haste
+rarity=C
+type=Creature
+subtype=Goblin,Berserker
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+timing=fmain
+

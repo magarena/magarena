@@ -1,0 +1,14 @@
+>Stingscourger
+url=http://magiccards.info/pc/en/107.html
+image=http://magiccards.info/scans/en/pc/107.jpg
+value=3
+removal=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={1}{R}
+pt=2/2
+timing=main
+

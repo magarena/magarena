@@ -1,0 +1,15 @@
+>Noble Hierarch
+url=http://magiccards.info/cfx/en/87.html
+image=http://magiccards.info/scans/en/cfx/87.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Druid
+color=g
+converted=1
+cost={G}
+pt=0/1
+ability=exalted
+timing=main
+mana_or_combat
+

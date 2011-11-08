@@ -1,0 +1,15 @@
+>Steward of Valeron
+url=http://magiccards.info/ddg/en/11.html
+image=http://magiccards.info/scans/en/ala/198.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Druid,Knight
+color=gw
+converted=2
+cost={G}{W}
+pt=2/2
+ability=vigilance
+timing=smain
+mana_or_combat
+

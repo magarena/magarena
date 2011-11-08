@@ -1,0 +1,14 @@
+>Nettle Sentinel
+url=http://magiccards.info/eve/en/71.html
+image=http://magiccards.info/scans/en/eve/71.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=1
+cost={G}
+pt=2/2
+ability=doesn't untap during untap step
+timing=main
+

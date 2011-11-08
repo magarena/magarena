@@ -1,0 +1,14 @@
+>Rancor
+url=http://magiccards.info/arc/en/67.html
+image=http://magiccards.info/scans/en/gvl/15.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=g
+converted=1
+cost={G}
+given_pt=2/0
+given_ability=trample
+timing=aura
+

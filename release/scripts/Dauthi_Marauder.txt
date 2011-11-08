@@ -1,0 +1,14 @@
+>Dauthi Marauder
+url=http://magiccards.info/tp/en/17.html
+image=http://magiccards.info/scans/en/tp/17.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Dauthi,Minion
+color=b
+converted=3
+cost={2}{B}
+pt=3/1
+ability=shadow
+timing=main
+

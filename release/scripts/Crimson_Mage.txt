@@ -1,0 +1,13 @@
+>Crimson Mage
+url=http://magiccards.info/m12/en/129.html
+image=http://magiccards.info/scans/en/m12/129.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=r
+converted=2
+cost={R}
+pt=2/1
+timing=fmain
+

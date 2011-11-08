@@ -1,0 +1,13 @@
+>Joraga Bard
+url=http://magiccards.info/zen/en/166.html
+image=http://magiccards.info/scans/en/zen/166.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Rogue,Ally
+color=g
+converted=4
+cost={3}{G}
+pt=1/4
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Shattered Angel
+url=http://magiccards.info/cmd/en/31.html
+image=http://magiccards.info/scans/en/cmd/31.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=5
+cost={3}{W}{W}
+pt=3/3
+ability=flying
+timing=main
+

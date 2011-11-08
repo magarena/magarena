@@ -1,0 +1,13 @@
+>Bladed Pinions
+url=http://magiccards.info/som/en/140.html
+image=http://magiccards.info/scans/en/som/140.jpg
+value=2
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={2}
+given_ability=flying,first strike
+timing=equipment
+

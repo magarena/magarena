@@ -1,0 +1,14 @@
+>Slinking Giant
+url=http://magiccards.info/shm/en/106.html
+image=http://magiccards.info/scans/en/shm/106.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Giant,Rogue
+color=r
+converted=4
+cost={2}{R}{R}
+pt=4/4
+ability=wither
+timing=main
+

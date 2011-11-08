@@ -1,0 +1,13 @@
+>Rabid Wolverines
+url=http://magiccards.info/ex/en/119.html
+image=http://magiccards.info/scans/en/ex/119.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Wolverine
+color=g
+converted=5
+cost={3}{G}{G}
+pt=4/4
+timing=main
+

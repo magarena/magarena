@@ -1,0 +1,14 @@
+>Soltari Visionary
+url=http://magiccards.info/ex/en/20.html
+image=http://magiccards.info/scans/en/ex/20.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Soltari,Cleric
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/2
+ability=shadow
+timing=main
+

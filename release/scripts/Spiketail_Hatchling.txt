@@ -1,0 +1,14 @@
+>Spiketail Hatchling
+url=http://magiccards.info/10e/en/111.html
+image=http://magiccards.info/scans/en/10e/111.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Drake
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=flying
+timing=fmain
+

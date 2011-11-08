@@ -1,0 +1,11 @@
+>Titanic Growth
+url=http://magiccards.info/m12/en/198.html
+image=http://magiccards.info/scans/en/m12/198.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=pump
+

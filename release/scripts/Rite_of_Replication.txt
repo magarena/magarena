@@ -1,0 +1,11 @@
+>Rite of Replication
+url=http://magiccards.info/zen/en/61.html
+image=http://magiccards.info/scans/en/zen/61.jpg
+value=4
+rarity=R
+type=Sorcery
+color=u
+converted=4
+cost={2}{U}{U}
+timing=main
+

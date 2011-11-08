@@ -1,0 +1,12 @@
+>Into the Roil
+url=http://magiccards.info/zen/en/48.html
+image=http://magiccards.info/scans/en/zen/48.jpg
+value=3
+removal=2
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
+

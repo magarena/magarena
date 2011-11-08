@@ -1,0 +1,15 @@
+>Strandwalker
+url=http://magiccards.info/mbs/en/137.html
+image=http://magiccards.info/scans/en/mbs/137.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=5
+cost={5}
+equip={4}
+ability=living weapon
+given_pt=2/4
+given_ability=reach
+timing=equipment
+

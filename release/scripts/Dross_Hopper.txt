@@ -1,0 +1,13 @@
+>Dross Hopper
+url=http://magiccards.info/som/en/60.html
+image=http://magiccards.info/scans/en/som/60.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect,Horror
+color=b
+converted=2
+cost={1}{B}
+pt=2/1
+timing=main
+

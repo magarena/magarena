@@ -1,0 +1,14 @@
+>Foul Imp
+url=http://magiccards.info/dvd/en/32.html
+image=http://magiccards.info/scans/en/dvd/32.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Imp
+color=b
+converted=2
+cost={B}{B}
+pt=2/2
+ability=flying
+timing=smain
+

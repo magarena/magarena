@@ -1,0 +1,14 @@
+>Gluttonous Slime
+url=http://magiccards.info/cfx/en/83.html
+image=http://magiccards.info/scans/en/cfx/83.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Ooze
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+ability=flash
+timing=flash
+

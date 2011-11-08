@@ -1,0 +1,14 @@
+>Nip Gwyllion
+url=http://magiccards.info/eve/en/92.html
+image=http://magiccards.info/scans/en/eve/92.jpg 
+value=1
+ability=lifelink
+rarity=C
+type=Creature
+subtype=Hag
+color=bw
+converted=1
+cost={W/B}
+pt=1/1
+timing=main
+

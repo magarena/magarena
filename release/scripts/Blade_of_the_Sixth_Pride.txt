@@ -1,0 +1,13 @@
+>Blade of the Sixth Pride
+url=http://magiccards.info/fut/en/19.html
+image=http://magiccards.info/scans/en/fut/19.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Cat,Rebel
+color=w
+converted=2
+cost={1}{W}
+pt=3/1
+timing=main
+

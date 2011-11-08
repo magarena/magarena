@@ -1,0 +1,15 @@
+>Shield of the Righteous
+url=http://magiccards.info/arb/en/11.html
+image=http://magiccards.info/scans/en/arb/11.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+color=wu
+converted=2
+cost={W}{U}
+equip={2}
+given_pt=0/2
+given_ability=vigilance
+timing=equipment
+

@@ -1,0 +1,12 @@
+>Darksteel Juggernaut
+url=http://magiccards.info/som/en/150.html
+image=http://magiccards.info/scans/en/som/150.jpg
+value=4
+rarity=R
+type=Artifact,Creature
+subtype=Juggernaut
+converted=5
+cost={5}
+ability=indestructible,attacks each turn if able
+timing=main
+

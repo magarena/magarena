@@ -1,0 +1,14 @@
+>Oros, the Avenger
+url=http://magiccards.info/cmd/en/216.html
+image=http://magiccards.info/scans/en/pc/161.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+color=wbr
+converted=6
+cost={3}{W}{B}{R}
+pt=6/6
+ability=flying
+timing=main
+

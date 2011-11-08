@@ -1,0 +1,10 @@
+>Lotus Petal
+url=http://magiccards.info/fve/en/7.html
+image=http://magiccards.info/scans/en/fve/7.jpg
+value=3
+rarity=M
+type=Artifact
+converted=0
+cost={0}
+timing=artifact
+

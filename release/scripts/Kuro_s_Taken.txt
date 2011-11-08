@@ -1,0 +1,13 @@
+>Kuro's Taken
+url=http://magiccards.info/sok/en/79.html
+image=http://magiccards.info/scans/en/sok/79.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Rat,Samurai
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=main
+

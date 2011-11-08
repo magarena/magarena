@@ -1,0 +1,13 @@
+>Steppe Lynx
+url=http://magiccards.info/zen/en/36.html
+image=http://magiccards.info/scans/en/zen/36.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat
+color=w
+converted=1
+cost={W}
+pt=0/1
+timing=main
+

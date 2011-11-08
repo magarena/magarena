@@ -1,0 +1,13 @@
+>Hedron-Field Purists
+url=http://magiccards.info/roe/en/25.html
+image=http://magiccards.info/scans/en/roe/25.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=3
+cost={2}{W}
+pt=0/3
+timing=main
+

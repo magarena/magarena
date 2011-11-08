@@ -1,0 +1,14 @@
+>Tormented Soul
+url=http://magiccards.info/m12/en/114.html
+image=http://magiccards.info/scans/en/m12/114.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=b
+converted=1
+cost={B}
+pt=1/1
+ability=can't block,unblockable
+timing=main
+

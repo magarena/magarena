@@ -1,0 +1,11 @@
+>Cradle of Vitality
+url=http://magiccards.info/ala/en/7.html
+image=http://magiccards.info/scans/en/ala/7.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=4
+cost={3}{W}
+timing=enchantment
+

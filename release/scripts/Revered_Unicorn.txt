@@ -1,0 +1,13 @@
+>Revered Unicorn
+url=http://magiccards.info/wl/en/139.html
+image=http://magiccards.info/scans/en/wl/139.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Unicorn
+color=w
+converted=2
+cost={1}{W}
+pt=2/3
+timing=main
+

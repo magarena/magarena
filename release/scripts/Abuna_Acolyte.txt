@@ -1,0 +1,13 @@
+>Abuna Acolyte
+url=http://magiccards.info/som/en/1.html
+image=http://magiccards.info/scans/en/som/1.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Cat,Cleric
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=main
+

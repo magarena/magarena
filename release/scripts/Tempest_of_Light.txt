@@ -1,0 +1,12 @@
+>Tempest of Light
+url=http://magiccards.info/m10/en/36.html
+image=http://magiccards.info/scans/en/m10/36.jpg
+value=1
+removal=2
+rarity=U
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=removal
+

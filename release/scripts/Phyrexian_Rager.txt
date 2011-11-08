@@ -1,0 +1,13 @@
+>Phyrexian Rager
+url=http://magiccards.info/mbs/en/51.html
+image=http://magiccards.info/scans/en/mbs/51.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Horror
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+timing=fmain
+

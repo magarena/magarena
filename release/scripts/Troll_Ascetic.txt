@@ -1,0 +1,14 @@
+>Troll Ascetic
+url=http://magiccards.info/cmd/en/176.html
+image=http://magiccards.info/scans/en/10e/305.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Troll,Shaman
+color=g
+converted=3
+cost={1}{G}{G}
+pt=3/2
+ability=hexproof
+timing=fmain
+

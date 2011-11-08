@@ -1,0 +1,9 @@
+>Dread Statuary
+url=http://magiccards.info/wwk/en/135.html
+image=http://magiccards.info/scans/en/wwk/135.jpg
+value=4
+rarity=U
+type=Land
+timing=land
+mana_or_combat
+

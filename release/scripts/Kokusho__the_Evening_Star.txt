@@ -1,0 +1,14 @@
+>Kokusho, the Evening Star
+url=http://magiccards.info/fvd/en/9.html
+image=http://magiccards.info/scans/en/chk/122.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon,Spirit
+color=b
+converted=6
+cost={4}{B}{B}
+pt=5/5
+ability=flying
+timing=main
+

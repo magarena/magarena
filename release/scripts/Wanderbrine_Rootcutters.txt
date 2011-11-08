@@ -1,0 +1,14 @@
+>Wanderbrine Rootcutters
+url=http://magiccards.info/shm/en/178.html
+image=http://magiccards.info/scans/en/shm/178.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+color=ub
+converted=4
+cost={2}{U/B}{U/B}
+pt=3/3
+ability=can't be blocked by green creatures
+timing=main
+

@@ -1,0 +1,14 @@
+>Mudbrawler Raiders
+url=http://magiccards.info/shm/en/213.html
+image=http://magiccards.info/scans/en/shm/213.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=rg
+converted=4
+cost={2}{R/G}{R/G}
+pt=3/3
+ability=can't be blocked by blue creatures
+timing=main
+

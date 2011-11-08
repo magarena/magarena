@@ -1,0 +1,14 @@
+>Retaliator Griffin
+url=http://magiccards.info/arb/en/123.html
+image=http://magiccards.info/scans/en/arb/123.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Griffin
+color=rgw
+converted=4
+cost={1}{R}{G}{W}
+pt=2/2
+ability=flying
+timing=fmain
+

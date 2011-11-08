@@ -1,0 +1,14 @@
+>Deepcavern Imp
+url=http://magiccards.info/fut/en/83.html
+image=http://magiccards.info/scans/en/fut/83.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Imp,Rebel
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+ability=flying,haste
+timing=fmain
+

@@ -1,0 +1,13 @@
+>Death Baron
+url=http://magiccards.info/pch/en/25.html
+image=http://magiccards.info/scans/en/pch/25.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Zombie,Wizard
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/2
+timing=fmain
+

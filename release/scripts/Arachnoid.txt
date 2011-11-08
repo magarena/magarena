@@ -1,0 +1,13 @@
+>Arachnoid
+url=http://magiccards.info/5dn/en/102.html
+image=http://magiccards.info/scans/en/5dn/102.jpg 
+value=4
+ability=reach
+rarity=U
+type=Artifact,Creature
+subtype=Spider
+converted=6
+cost={6}
+pt=2/6
+timing=main
+

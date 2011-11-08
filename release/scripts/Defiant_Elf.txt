@@ -1,0 +1,14 @@
+>Defiant Elf
+url=http://magiccards.info/le/en/123.html
+image=http://magiccards.info/scans/en/le/123.jpg 
+value=1
+ability=trample
+rarity=C
+type=Creature
+subtype=Elf
+color=g
+converted=1
+cost={G}
+pt=1/1
+timing=main
+

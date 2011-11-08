@@ -1,0 +1,13 @@
+>Guul Draz Vampire
+url=http://magiccards.info/zen/en/93.html
+image=http://magiccards.info/scans/en/zen/93.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire,Rogue
+color=b
+converted=1
+cost={B}
+pt=1/1
+timing=main
+

@@ -1,0 +1,10 @@
+>Woodland Cemetery
+url=http://magiccards.info/isd/en/249.html
+image=http://magiccards.info/scans/en/isd/249.jpg
+value=4
+rarity=R
+type=Land
+mana=b3g3
+basic=bg
+timing=land
+

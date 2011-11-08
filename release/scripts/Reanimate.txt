@@ -1,0 +1,11 @@
+>Reanimate
+url=http://magiccards.info/arc/en/21.html
+image=http://magiccards.info/scans/en/arc/21.jpg
+value=3
+rarity=U
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=main
+

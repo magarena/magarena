@@ -1,0 +1,14 @@
+>Talruum Champion
+url=http://magiccards.info/vi/en/97.html
+image=http://magiccards.info/scans/en/vi/97.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Minotaur
+color=r
+converted=5
+cost={4}{R}
+pt=3/3
+ability=first strike
+timing=main
+

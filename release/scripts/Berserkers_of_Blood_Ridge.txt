@@ -1,0 +1,14 @@
+>Berserkers of Blood Ridge
+url=http://magiccards.info/m11/en/124.html
+image=http://magiccards.info/scans/en/m11/124.jpg 
+value=4
+ability=attacks each turn if able
+rarity=C
+type=Creature
+subtype=Human,Berserker
+color=r
+converted=5
+cost={4}{R}
+pt=4/4
+timing=main
+

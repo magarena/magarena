@@ -1,0 +1,14 @@
+>Mahamoti Djinn
+url=http://magiccards.info/dpa/en/10.html
+image=http://magiccards.info/scans/en/dpa/10.jpg
+value=5
+ability=flying
+rarity=R
+type=Creature
+subtype=Djinn
+color=u
+converted=6
+cost={4}{U}{U}
+pt=5/6
+timing=main
+

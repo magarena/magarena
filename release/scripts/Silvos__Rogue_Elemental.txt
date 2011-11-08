@@ -1,0 +1,14 @@
+>Silvos, Rogue Elemental
+url=http://magiccards.info/on/en/282.html
+image=http://magiccards.info/scans/en/on/282.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Elemental
+color=g
+converted=6
+cost={3}{G}{G}{G}
+pt=8/5
+ability=trample
+timing=main
+

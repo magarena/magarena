@@ -1,0 +1,13 @@
+>Albino Troll
+url=http://magiccards.info/us/en/231.html
+image=http://magiccards.info/scans/en/us/231.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Troll
+color=g
+converted=2
+cost={1}{G}
+pt=3/3
+timing=main
+

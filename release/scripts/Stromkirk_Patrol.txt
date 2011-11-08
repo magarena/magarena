@@ -1,0 +1,13 @@
+>Stromkirk Patrol
+url=http://magiccards.info/isd/en/118.html
+image=http://magiccards.info/scans/en/isd/118.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+color=b
+converted=5
+cost={4}{B}
+pt=4/3
+timing=main
+

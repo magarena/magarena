@@ -1,0 +1,13 @@
+>Suture Priest
+url=http://magiccards.info/nph/en/25.html
+image=http://magiccards.info/scans/en/nph/25.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cleric
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+timing=fmain
+

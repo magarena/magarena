@@ -1,0 +1,13 @@
+>Sunspear Shikari
+url=http://magiccards.info/som/en/23.html
+image=http://magiccards.info/scans/en/som/23.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+timing=main
+

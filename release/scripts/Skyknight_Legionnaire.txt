@@ -1,0 +1,14 @@
+>Skyknight Legionnaire
+url=http://magiccards.info/rav/en/232.html
+image=http://magiccards.info/scans/en/rav/232.jpg
+value=3
+ability=flying,haste
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=rw
+converted=3
+cost={1}{R}{W}
+pt=2/2
+timing=fmain
+

@@ -1,0 +1,14 @@
+>Manic Vandal
+url=http://magiccards.info/m12/en/151.html
+image=http://magiccards.info/scans/en/m12/151.jpg
+value=3
+removal=1
+rarity=C
+type=Creature
+subtype=Human,Warrior
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+timing=fmain
+

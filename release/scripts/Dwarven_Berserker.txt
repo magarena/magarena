@@ -1,0 +1,13 @@
+>Dwarven Berserker
+url=http://magiccards.info/wl/en/97.html
+image=http://magiccards.info/scans/en/wl/97.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Dwarf,Berserker
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+timing=main
+

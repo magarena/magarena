@@ -1,0 +1,14 @@
+>Henchfiend of Ukor
+url=http://magiccards.info/fut/en/117.html
+image=http://magiccards.info/scans/en/fut/117.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Ogre
+color=r
+converted=4
+cost={3}{R}
+pt=3/2
+ability=haste
+timing=main
+

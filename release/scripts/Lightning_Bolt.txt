@@ -1,0 +1,12 @@
+>Lightning Bolt
+url=http://magiccards.info/pd2/en/17.html
+image=http://magiccards.info/scans/en/m11/149.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=r
+converted=1
+cost={R}
+timing=removal
+

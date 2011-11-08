@@ -1,0 +1,13 @@
+>Konda's Hatamoto
+url=http://magiccards.info/chk/en/31.html
+image=http://magiccards.info/scans/en/chk/31.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=2
+cost={1}{W}
+pt=1/2
+timing=main
+

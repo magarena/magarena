@@ -1,0 +1,12 @@
+>Death Grasp
+url=http://magiccards.info/ap/en/95.html
+image=http://magiccards.info/scans/en/ap/95.jpg
+value=4
+removal=4
+rarity=R
+type=Sorcery
+color=wb
+converted=2
+cost={X}{W}{B}
+timing=removal
+

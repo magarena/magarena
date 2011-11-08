@@ -1,0 +1,13 @@
+>Coral Eel
+url=http://magiccards.info/9eb/en/3.html
+image=http://magiccards.info/scans/en/9eb/3.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Fish
+color=u
+converted=2
+cost={1}{U}
+pt=2/1
+timing=main
+

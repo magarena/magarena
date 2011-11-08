@@ -1,0 +1,13 @@
+>Thalakos Drifters
+url=http://magiccards.info/ex/en/47.html
+image=http://magiccards.info/scans/en/ex/47.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Thalakos
+color=u
+converted=4
+cost={2}{U}{U}
+pt=3/3
+timing=main
+

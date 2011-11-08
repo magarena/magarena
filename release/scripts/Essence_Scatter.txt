@@ -1,0 +1,11 @@
+>Essence Scatter
+url=http://magiccards.info/dpa/en/8.html
+image=http://magiccards.info/scans/en/m10/51.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
+

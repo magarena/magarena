@@ -1,0 +1,11 @@
+>Dragon Fodder
+url=http://magiccards.info/ddg/en/65.html
+image=http://magiccards.info/scans/en/arc/34.jpg
+value=3
+rarity=C
+type=Sorcery
+color=r
+converted=2
+cost={1}{R}
+timing=main
+

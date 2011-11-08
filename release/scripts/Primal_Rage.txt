@@ -1,0 +1,11 @@
+>Primal Rage
+url=http://magiccards.info/10e/en/286.html
+image=http://magiccards.info/scans/en/10e/286.jpg
+value=3
+rarity=U
+type=Enchantment
+color=g
+converted=2
+cost={1}{G}
+timing=enchantment
+

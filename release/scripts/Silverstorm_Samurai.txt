@@ -1,0 +1,14 @@
+>Silverstorm Samurai
+url=http://magiccards.info/bok/en/22.html
+image=http://magiccards.info/scans/en/bok/22.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Fox,Samurai
+color=w
+converted=6
+cost={4}{W}{W}
+pt=3/3
+ability=flash
+timing=flash
+

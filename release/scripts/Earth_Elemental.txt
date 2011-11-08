@@ -1,0 +1,13 @@
+>Earth Elemental
+url=http://magiccards.info/dpa/en/42.html
+image=http://magiccards.info/scans/en/dpa/42.jpg 
+value=4
+rarity=U
+type=Creature
+subtype=Elemental
+color=r
+converted=5
+cost={3}{R}{R}
+pt=4/5
+timing=main
+

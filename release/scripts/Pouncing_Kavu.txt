@@ -1,0 +1,14 @@
+>Pouncing Kavu
+url=http://magiccards.info/in/en/158.html
+image=http://magiccards.info/scans/en/in/158.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Kavu
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+ability=first strike
+timing=main
+

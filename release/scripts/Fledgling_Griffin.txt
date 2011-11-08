@@ -1,0 +1,13 @@
+>Fledgling Griffin
+url=http://magiccards.info/wwk/en/5.html
+image=http://magiccards.info/scans/en/wwk/5.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Griffin
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+timing=main
+

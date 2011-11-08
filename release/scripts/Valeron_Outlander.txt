@@ -1,0 +1,14 @@
+>Valeron Outlander
+url=http://magiccards.info/cfx/en/130.html
+image=http://magiccards.info/scans/en/cfx/130.jpg 
+value=2
+ability=protection from black
+rarity=C
+type=Creature
+subtype=Human,Scout
+color=gw
+converted=2
+cost={G}{W}
+pt=2/2
+timing=main
+

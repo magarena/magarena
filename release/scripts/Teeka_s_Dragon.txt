@@ -1,0 +1,13 @@
+>Teeka's Dragon
+url=http://magiccards.info/mr/en/285.html
+image=http://magiccards.info/scans/en/mr/285.jpg
+value=4
+rarity=R
+type=Artifact,Creature
+subtype=Dragon
+converted=9
+cost={9}
+pt=5/5
+ability=flying,trample
+timing=main
+

@@ -1,0 +1,11 @@
+>Time Warp
+url=http://magiccards.info/m10/en/75.html
+image=http://magiccards.info/scans/en/m10/75.jpg
+value=5
+rarity=M
+type=Sorcery
+color=u
+converted=5
+cost={3}{U}{U}
+timing=nextturn
+

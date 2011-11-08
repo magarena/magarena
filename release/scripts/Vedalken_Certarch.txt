@@ -1,0 +1,13 @@
+>Vedalken Certarch
+url=http://magiccards.info/som/en/52.html
+image=http://magiccards.info/scans/en/som/52.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Vedalken,Wizard
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+

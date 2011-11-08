@@ -1,0 +1,14 @@
+>Rorix Bladewing
+url=http://magiccards.info/pch/en/65.html
+image=http://magiccards.info/scans/en/pch/65.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+color=r
+converted=6
+cost={3}{R}{R}{R}
+pt=6/5
+ability=flying,haste
+timing=fmain
+

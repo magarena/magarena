@@ -1,0 +1,14 @@
+>Unholy Strength
+url=http://magiccards.info/dpa/en/36.html
+image=http://magiccards.info/scans/en/m11/119.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=1
+cost={B}
+given_pt=2/1
+timing=aura
+
+

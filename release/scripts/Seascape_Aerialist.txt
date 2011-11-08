@@ -1,0 +1,13 @@
+>Seascape Aerialist
+url=http://magiccards.info/zen/en/64.html
+image=http://magiccards.info/scans/en/zen/64.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard,Ally
+color=u
+converted=5
+cost={4}{U}
+pt=2/3
+timing=main
+

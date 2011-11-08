@@ -1,0 +1,13 @@
+>Nantuko Husk
+url=http://magiccards.info/cmd/en/90.html
+image=http://magiccards.info/scans/en/cmd/90.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Zombie,Insect
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+timing=main
+

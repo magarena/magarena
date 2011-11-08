@@ -1,0 +1,15 @@
+>Elesh Norn, Grand Cenobite
+url=http://magiccards.info/nph/en/9.html
+image=http://magiccards.info/scans/en/nph/9.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Praetor
+color=w
+converted=7
+cost={5}{W}{W}
+pt=4/7
+ability=vigilance
+static=all
+timing=fmain
+

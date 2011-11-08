@@ -1,0 +1,14 @@
+>Kodama of the North Tree
+url=http://magiccards.info/chk/en/222.html
+image=http://magiccards.info/scans/en/chk/222.jpg 
+value=5
+ability=trample,shroud
+rarity=R
+type=Legendary,Creature
+subtype=Spirit
+color=g
+converted=5
+cost={2}{G}{G}{G}
+pt=6/4
+timing=fmain
+

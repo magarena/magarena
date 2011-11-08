@@ -1,0 +1,11 @@
+>Moonglove Extract
+url=http://magiccards.info/ddf/en/67.html
+image=http://magiccards.info/scans/en/evg/24.jpg
+value=3
+removal=2
+rarity=C
+type=Artifact
+converted=3
+cost={3}
+timing=artifact
+

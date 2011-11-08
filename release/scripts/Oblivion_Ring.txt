@@ -1,0 +1,12 @@
+>Oblivion Ring
+url=http://magiccards.info/m12/en/27.html
+image=http://magiccards.info/scans/en/m12/27.jpg
+value=3
+removal=2
+rarity=C
+type=Enchantment
+color=w
+converted=3
+cost={2}{W}
+timing=removal
+

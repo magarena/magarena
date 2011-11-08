@@ -1,0 +1,11 @@
+>Fervor
+url=http://magiccards.info/7e/en/181.html
+image=http://magiccards.info/scans/en/7e/181.jpg
+value=3
+rarity=R
+type=Enchantment
+color=r
+converted=3
+cost={2}{R}
+timing=enchantment
+

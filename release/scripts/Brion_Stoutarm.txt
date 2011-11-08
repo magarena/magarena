@@ -1,0 +1,14 @@
+>Brion Stoutarm
+url=http://magiccards.info/cmd/en/187.html
+image=http://magiccards.info/scans/en/lw/246.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Giant,Warrior
+color=rw
+converted=4
+cost={2}{R}{W}
+pt=4/4
+ability=lifelink
+timing=smain
+

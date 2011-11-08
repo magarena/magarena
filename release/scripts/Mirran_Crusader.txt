@@ -1,0 +1,14 @@
+>Mirran Crusader
+url=http://magiccards.info/mbs/en/14.html
+image=http://magiccards.info/scans/en/mbs/14.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Human,Knight
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/2
+ability=double strike,protection from black,protection from green
+timing=main
+

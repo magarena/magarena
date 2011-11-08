@@ -1,0 +1,13 @@
+>Jolting Merfolk
+url=http://magiccards.info/ne/en/34.html
+image=http://magiccards.info/scans/en/ne/34.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Merfolk
+color=u
+converted=4
+cost={2}{U}{U}
+pt=2/2
+timing=main
+

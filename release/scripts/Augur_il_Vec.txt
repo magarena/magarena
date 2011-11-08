@@ -1,0 +1,14 @@
+>Augur il-Vec
+url=http://magiccards.info/fut/en/2.html
+image=http://magiccards.info/scans/en/fut/2.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=2
+cost={1}{W}
+pt=1/3
+ability=shadow
+timing=main
+

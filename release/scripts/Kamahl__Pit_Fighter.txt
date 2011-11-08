@@ -1,0 +1,14 @@
+>Kamahl, Pit Fighter
+url=http://magiccards.info/dpa/en/49.html
+image=http://magiccards.info/scans/en/10e/214.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Human,Barbarian
+color=r
+converted=6
+cost={4}{R}{R}
+pt=6/1
+ability=haste
+timing=fmain
+

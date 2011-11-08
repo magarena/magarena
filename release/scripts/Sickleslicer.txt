@@ -1,0 +1,14 @@
+>Sickleslicer
+url=http://magiccards.info/nph/en/157.html
+image=http://magiccards.info/scans/en/nph/157.jpg
+value=2
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={4}
+ability=living weapon
+given_pt=2/2
+timing=equipment
+

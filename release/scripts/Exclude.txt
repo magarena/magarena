@@ -1,0 +1,11 @@
+>Exclude
+url=http://magiccards.info/in/en/56.html
+image=http://magiccards.info/scans/en/in/56.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=3
+cost={2}{U}
+timing=counter
+

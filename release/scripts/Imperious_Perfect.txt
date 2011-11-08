@@ -1,0 +1,14 @@
+>Imperious Perfect
+url=http://magiccards.info/dpa/en/71.html
+image=http://magiccards.info/scans/en/dpa/71.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+static=player
+timing=fmain
+

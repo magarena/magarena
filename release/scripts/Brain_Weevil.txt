@@ -1,0 +1,14 @@
+>Brain Weevil
+url=http://magiccards.info/isd/en/91.html
+image=http://magiccards.info/scans/en/isd/91.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Insect
+color=b
+converted=4
+cost={3}{B}
+pt=1/1
+ability=intimidate
+timing=main
+

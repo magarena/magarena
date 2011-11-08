@@ -1,0 +1,11 @@
+>Fists of the Anvil
+url=http://magiccards.info/10e/en/201.html
+image=http://magiccards.info/scans/en/10e/201.jpg
+value=2
+rarity=C
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=pump
+

@@ -1,0 +1,14 @@
+>Keldon Champion
+url=http://magiccards.info/pch/en/58.html
+image=http://magiccards.info/scans/en/pch/58.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Barbarian
+color=r
+converted=4
+cost={2}{R}{R}
+pt=3/2
+ability=haste
+timing=fmain
+

@@ -1,0 +1,12 @@
+>Island
+url=http://magiccards.info/isd/en/253.html
+image=http://magiccards.info/scans/en/zen/234.jpg
+num_images=2
+value=2
+rarity=L
+type=Basic,Land
+subtype=Island
+mana=u4
+basic=u
+timing=land
+

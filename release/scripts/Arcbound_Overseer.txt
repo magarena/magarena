@@ -1,0 +1,12 @@
+>Arcbound Overseer
+url=http://magiccards.info/ds/en/99.html
+image=http://magiccards.info/scans/en/ds/99.jpg
+value=5
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+converted=8
+cost={8}
+ability=modular
+timing=main
+

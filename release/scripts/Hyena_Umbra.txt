@@ -1,0 +1,15 @@
+>Hyena Umbra
+url=http://magiccards.info/roe/en/26.html
+image=http://magiccards.info/scans/en/roe/26.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+given_pt=1/1
+ability=totem armor
+given_ability=first strike
+timing=aura
+

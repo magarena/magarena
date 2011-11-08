@@ -1,0 +1,14 @@
+>Lightning Reaver
+url=http://magiccards.info/arb/en/42.html
+image=http://magiccards.info/scans/en/arb/42.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Zombie,Beast
+color=br
+converted=5
+cost={3}{B}{R}
+pt=3/3
+ability=fear,haste
+timing=main
+

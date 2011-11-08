@@ -1,0 +1,14 @@
+>Force of Savagery
+url=http://magiccards.info/fut/en/126.html
+image=http://magiccards.info/scans/en/fut/126.jpg 
+value=3
+ability=trample
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=3
+cost={2}{G}
+pt=8/0
+timing=main
+

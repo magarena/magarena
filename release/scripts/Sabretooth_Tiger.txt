@@ -1,0 +1,14 @@
+>Sabretooth Tiger
+url=http://magiccards.info/8e/en/217.html
+image=http://magiccards.info/scans/en/8e/217.jpg 
+value=1
+ability=first strike
+rarity=C
+type=Creature
+subtype=Cat
+color=r
+converted=3
+cost={2}{R}
+pt=2/1
+timing=main
+

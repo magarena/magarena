@@ -1,0 +1,11 @@
+>Mind Games
+url=http://magiccards.info/sh/en/38.html
+image=http://magiccards.info/scans/en/sh/38.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=tapping
+

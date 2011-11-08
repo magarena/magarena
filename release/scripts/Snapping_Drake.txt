@@ -1,0 +1,14 @@
+>Snapping Drake
+url=http://magiccards.info/dpa/en/15.html
+image=http://magiccards.info/scans/en/dpa/15.jpg 
+value=3
+ability=flying
+rarity=C
+type=Creature
+subtype=Drake
+color=u
+converted=4
+cost={3}{U}
+pt=3/2
+timing=main
+

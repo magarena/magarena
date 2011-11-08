@@ -1,0 +1,12 @@
+>Damnation
+url=http://magiccards.info/pc/en/85.html
+image=http://magiccards.info/scans/en/pc/85.jpg
+value=4
+removal=2
+rarity=R
+type=Sorcery
+color=b
+converted=4
+cost={2}{B}{B}
+timing=removal
+

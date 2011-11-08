@@ -1,0 +1,11 @@
+>Trip Noose
+url=http://magiccards.info/ddf/en/65.html
+image=http://magiccards.info/scans/en/shm/266.jpg
+value=3
+removal=2
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=artifact
+

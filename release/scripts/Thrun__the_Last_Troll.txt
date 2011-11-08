@@ -1,0 +1,14 @@
+>Thrun, the Last Troll
+url=http://magiccards.info/mbs/en/92.html
+image=http://magiccards.info/scans/en/mbs/92.jpg
+value=4
+rarity=M
+type=Legendary,Creature
+subtype=Troll,Shaman
+color=g
+converted=4
+cost={2}{G}{G}
+pt=4/4
+ability=can't be countered,hexproof
+timing=fmain
+

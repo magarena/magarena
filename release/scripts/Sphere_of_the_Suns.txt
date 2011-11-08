@@ -1,0 +1,10 @@
+>Sphere of the Suns
+url=http://magiccards.info/mbs/en/134.html
+image=http://magiccards.info/scans/en/mbs/134.jpg
+value=3
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=tapland
+

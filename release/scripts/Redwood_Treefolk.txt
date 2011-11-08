@@ -1,0 +1,13 @@
+>Redwood Treefolk
+url=http://magiccards.info/7e/en/264.html
+image=http://magiccards.info/scans/en/7e/264.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Treefolk
+color=g
+converted=5
+cost={4}{G}
+pt=3/6
+timing=main
+

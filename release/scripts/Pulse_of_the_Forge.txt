@@ -1,0 +1,12 @@
+>Pulse of the Forge
+url=http://magiccards.info/ds/en/66.html
+image=http://magiccards.info/scans/en/ds/66.jpg
+value=4
+removal=4
+rarity=R
+type=Instant
+color=r
+converted=3
+cost={1}{R}{R}
+timing=removal
+

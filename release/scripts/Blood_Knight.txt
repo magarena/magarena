@@ -1,0 +1,14 @@
+>Blood Knight
+url=http://magiccards.info/pc/en/115.html
+image=http://magiccards.info/scans/en/pc/115.jpg 
+value=3
+ability=first strike,protection from white
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=r
+converted=2
+cost={R}{R}
+pt=2/2
+timing=main
+

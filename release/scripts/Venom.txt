@@ -1,0 +1,12 @@
+>Venom
+url=http://magiccards.info/5e/en/198.html
+image=http://magiccards.info/scans/en/5e/198.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=g
+converted=3
+cost={1}{G}{G}
+timing=aura
+

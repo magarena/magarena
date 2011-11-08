@@ -1,0 +1,14 @@
+>Grayscaled Gharial
+url=http://magiccards.info/rav/en/52.html
+image=http://magiccards.info/scans/en/rav/52.jpg 
+value=1
+ability=islandwalk
+rarity=C
+type=Creature
+subtype=Crocodile
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+

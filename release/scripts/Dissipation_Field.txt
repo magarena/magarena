@@ -1,0 +1,11 @@
+>Dissipation Field
+url=http://magiccards.info/som/en/32.html
+image=http://magiccards.info/scans/en/som/32.jpg
+value=4
+rarity=R
+type=Enchantment
+color=u
+converted=4
+cost={2}{U}{U}
+timing=enchantment
+

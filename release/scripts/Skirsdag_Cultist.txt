@@ -1,0 +1,13 @@
+>Skirsdag Cultist
+url=http://magiccards.info/isd/en/163.html
+image=http://magiccards.info/scans/en/isd/163.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Shaman
+color=r
+converted=4
+cost={2}{R}{R}
+pt=2/2
+timing=main
+

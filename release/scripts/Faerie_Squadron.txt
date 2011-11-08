@@ -1,0 +1,13 @@
+>Faerie Squadron
+url=http://magiccards.info/in/en/58.html
+image=http://magiccards.info/scans/en/in/58.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Faerie
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+

@@ -1,0 +1,14 @@
+>Zephyr Sprite
+url=http://magiccards.info/m10/en/82.html
+image=http://magiccards.info/scans/en/m10/82.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Faerie
+color=u
+converted=1
+cost={U}
+pt=1/1
+ability=flying
+timing=main
+

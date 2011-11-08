@@ -1,0 +1,12 @@
+>Arcbound Ravager
+url=http://magiccards.info/ds/en/100.html
+image=http://magiccards.info/scans/en/ds/100.jpg
+value=3
+rarity=R
+type=Artifact,Creature
+subtype=Beast
+converted=2
+cost={2}
+ability=modular
+timing=main
+

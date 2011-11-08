@@ -1,0 +1,14 @@
+>Skywinder Drake
+url=http://magiccards.info/m12/en/75.html
+image=http://magiccards.info/scans/en/m12/75.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Drake
+color=u
+converted=3
+cost={2}{U}
+pt=3/1
+ability=flying,can't block creatures without flying
+timing=main
+

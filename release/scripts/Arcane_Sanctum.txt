@@ -1,0 +1,10 @@
+>Arcane Sanctum
+url=http://magiccards.info/ala/en/220.html
+image=http://magiccards.info/scans/en/ala/220.jpg
+value=4
+rarity=U
+type=Land
+mana=w3u3b3
+basic=wub
+timing=tapland
+

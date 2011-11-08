@@ -1,0 +1,13 @@
+>Caravan Escort
+url=http://magiccards.info/roe/en/15.html
+image=http://magiccards.info/scans/en/roe/15.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

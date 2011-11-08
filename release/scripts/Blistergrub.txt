@@ -1,0 +1,14 @@
+>Blistergrub
+url=http://magiccards.info/som/en/56.html
+image=http://magiccards.info/scans/en/som/56.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Horror
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+ability=swampwalk
+timing=main
+

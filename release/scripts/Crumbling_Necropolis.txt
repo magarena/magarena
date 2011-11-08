@@ -1,0 +1,10 @@
+>Crumbling Necropolis
+url=http://magiccards.info/ddh/en/74.html
+image=http://magiccards.info/scans/en/ala/222.jpg
+value=4
+rarity=U
+type=Land
+mana=u3b3r3
+basic=ubr
+timing=tapland
+

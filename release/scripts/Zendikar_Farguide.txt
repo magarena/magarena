@@ -1,0 +1,14 @@
+>Zendikar Farguide
+url=http://magiccards.info/zen/en/194.html
+image=http://magiccards.info/scans/en/zen/194.jpg 
+value=3
+ability=forestwalk
+rarity=C
+type=Creature
+subtype=Elemental
+color=g
+converted=5
+cost={4}{G}
+pt=3/3
+timing=main
+

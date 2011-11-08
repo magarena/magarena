@@ -1,0 +1,11 @@
+>Wrap in Vigor
+url=http://magiccards.info/fut/en/141.html
+image=http://magiccards.info/scans/en/fut/141.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=pump
+

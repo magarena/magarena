@@ -1,0 +1,14 @@
+>Plague Beetle
+url=http://magiccards.info/10e/en/168.html
+image=http://magiccards.info/scans/en/10e/168.jpg 
+value=1
+ability=swampwalk
+rarity=C
+type=Creature
+subtype=Insect
+color=b
+converted=1
+cost={B}
+pt=1/1
+timing=main
+

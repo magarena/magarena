@@ -1,0 +1,14 @@
+>Wall of Denial
+url=http://magiccards.info/cmd/en/237.html
+image=http://magiccards.info/scans/en/arb/16.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Wall
+color=wu
+converted=3
+cost={1}{W}{U}
+pt=0/8
+ability=defender,flying,shroud
+timing=smain
+

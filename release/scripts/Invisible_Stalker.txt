@@ -1,0 +1,14 @@
+>Invisible Stalker
+url=http://magiccards.info/isd/en/60.html
+image=http://magiccards.info/scans/en/isd/60.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Rogue
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=hexproof,unblockable
+timing=main
+

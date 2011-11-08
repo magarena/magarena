@@ -1,0 +1,10 @@
+>Hinterland Harbor
+url=http://magiccards.info/isd/en/241.html
+image=http://magiccards.info/scans/en/isd/241.jpg
+value=4
+rarity=R
+type=Land
+mana=g3u3
+basic=gu
+timing=land
+

@@ -1,0 +1,13 @@
+>Hamlet Captain
+url=http://magiccards.info/isd/en/187.html
+image=http://magiccards.info/scans/en/isd/187.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Warrior
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+

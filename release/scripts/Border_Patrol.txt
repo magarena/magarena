@@ -1,0 +1,14 @@
+>Border Patrol
+url=http://magiccards.info/ju/en/6.html
+image=http://magiccards.info/scans/en/ju/6.jpg 
+value=2
+ability=vigilance
+rarity=C
+type=Creature
+subtype=Human,Nomad
+color=w
+converted=5
+cost={4}{W}
+pt=1/6
+timing=main
+

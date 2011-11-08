@@ -1,0 +1,11 @@
+>Righteousness
+url=http://magiccards.info/m10/en/27.html
+image=http://magiccards.info/scans/en/m11/178.jpg
+value=2
+rarity=R
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=pump
+

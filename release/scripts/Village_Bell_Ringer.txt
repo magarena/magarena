@@ -1,0 +1,14 @@
+>Village Bell-Ringer
+url=http://magiccards.info/isd/en/41.html
+image=http://magiccards.info/scans/en/isd/41.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Scout
+color=w
+converted=3
+cost={2}{W}
+pt=1/4
+ability=flash
+timing=main
+

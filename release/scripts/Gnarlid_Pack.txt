@@ -1,0 +1,13 @@
+>Gnarlid Pack
+url=http://magiccards.info/wwk/en/101.html
+image=http://magiccards.info/scans/en/wwk/101.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=2
+cost={1}{G}
+pt=2/2
+timing=main
+

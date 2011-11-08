@@ -1,0 +1,14 @@
+>Elvish Archers
+url=http://magiccards.info/7e/en/239.html
+image=http://magiccards.info/scans/en/7e/239.jpg 
+value=3
+ability=first strike
+rarity=R
+type=Creature
+subtype=Elf,Archer
+color=g
+converted=2
+cost={1}{G}
+pt=2/1
+timing=main
+

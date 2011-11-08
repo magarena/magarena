@@ -1,0 +1,12 @@
+>Grasp of Darkness
+url=http://magiccards.info/som/en/65.html
+image=http://magiccards.info/scans/en/som/65.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=b
+converted=2
+cost={B}{B}
+timing=removal
+

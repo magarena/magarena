@@ -1,0 +1,14 @@
+>Cystbearer
+url=http://magiccards.info/som/en/117.html
+image=http://magiccards.info/scans/en/som/117.jpg 
+value=3
+ability=infect
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=3
+cost={2}{G}
+pt=2/3
+timing=main
+

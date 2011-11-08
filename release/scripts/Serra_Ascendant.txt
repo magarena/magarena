@@ -1,0 +1,14 @@
+>Serra Ascendant
+url=http://magiccards.info/m11/en/28.html
+image=http://magiccards.info/scans/en/m11/28.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Monk
+color=w
+converted=1
+cost={W}
+pt=1/1
+ability=lifelink
+timing=main
+

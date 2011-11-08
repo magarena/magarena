@@ -1,0 +1,14 @@
+>Mnemonic Wall
+url=http://magiccards.info/roe/en/78.html
+image=http://magiccards.info/scans/en/roe/78.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Wall
+color=u
+converted=5
+cost={4}{U}
+pt=0/4
+ability=defender
+timing=main
+

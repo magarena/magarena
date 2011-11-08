@@ -1,0 +1,14 @@
+>Roc Egg
+url=http://magiccards.info/m12/en/32.html
+image=http://magiccards.info/scans/en/m12/32.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Bird
+color=w
+converted=3
+cost={2}{W}
+pt=0/3
+ability=defender
+timing=main
+

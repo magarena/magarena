@@ -1,0 +1,14 @@
+>Black Knight
+url=http://magiccards.info/m11/en/83.html
+image=http://magiccards.info/scans/en/m11/83.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Knight
+color=b
+converted=2
+cost={B}{B}
+pt=2/2
+ability=first strike,protection from white
+timing=main
+

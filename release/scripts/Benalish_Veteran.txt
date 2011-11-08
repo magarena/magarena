@@ -1,0 +1,13 @@
+>Benalish Veteran
+url=http://magiccards.info/m12/en/10.html
+image=http://magiccards.info/scans/en/m12/10.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+timing=main
+

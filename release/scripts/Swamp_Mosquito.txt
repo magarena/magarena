@@ -1,0 +1,14 @@
+>Swamp Mosquito
+url=http://magiccards.info/ai/en/30.html
+image=http://magiccards.info/scans/en/ai/30.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Insect
+color=b
+converted=2
+cost={1}{B}
+pt=0/1
+ability=flying
+timing=main
+

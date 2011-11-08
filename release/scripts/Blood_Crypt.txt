@@ -1,0 +1,11 @@
+>Blood Crypt
+url=http://magiccards.info/di/en/171.html
+image=http://magiccards.info/scans/en/di/171.jpg
+value=4
+rarity=R
+type=Land
+subtype=Swamp,Mountain
+mana=b3r3
+basic=br
+timing=land
+

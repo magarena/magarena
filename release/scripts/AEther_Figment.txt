@@ -1,0 +1,14 @@
+>AEther Figment
+url=http://magiccards.info/zen/en/40.html
+image=http://magiccards.info/scans/en/zen/40.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Illusion
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=unblockable
+timing=main
+

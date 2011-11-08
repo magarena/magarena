@@ -1,0 +1,13 @@
+>Pouncing Jaguar
+url=http://magiccards.info/us/en/269.html
+image=http://magiccards.info/scans/en/us/269.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat
+color=g
+converted=1
+cost={G}
+pt=2/2
+timing=main
+

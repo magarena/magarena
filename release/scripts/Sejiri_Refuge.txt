@@ -1,0 +1,10 @@
+>Sejiri Refuge
+url=http://magiccards.info/zen/en/224.html
+image=http://magiccards.info/scans/en/zen/224.jpg
+value=3
+rarity=U
+type=Land
+mana=w3u3
+basic=wu
+timing=tapland
+

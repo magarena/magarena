@@ -1,0 +1,14 @@
+>Bloodrock Cyclops
+url=http://magiccards.info/10e/en/192.html
+image=http://magiccards.info/scans/en/10e/192.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cyclops
+color=r
+converted=3
+cost={2}{R}
+pt=3/3
+ability=attacks each turn if able
+timing=main
+

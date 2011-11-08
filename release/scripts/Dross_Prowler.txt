@@ -1,0 +1,14 @@
+>Dross Prowler
+url=http://magiccards.info/mi/en/64.html
+image=http://magiccards.info/scans/en/mi/64.jpg 
+value=3
+ability=fear
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=3
+cost={2}{B}
+pt=2/1
+timing=main
+

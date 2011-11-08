@@ -1,0 +1,11 @@
+>Bountiful Harvest
+url=http://magiccards.info/m12/en/166.html
+image=http://magiccards.info/scans/en/m12/166.jpg
+value=3
+rarity=C
+type=Sorcery
+color=g
+converted=5
+cost={4}{G}
+timing=draw
+

@@ -1,0 +1,11 @@
+>Bandage
+url=http://magiccards.info/10e/en/9.html
+image=http://magiccards.info/scans/en/10e/9.jpg
+value=1
+rarity=C
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=pump
+

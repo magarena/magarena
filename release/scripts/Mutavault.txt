@@ -1,0 +1,9 @@
+>Mutavault
+url=http://magiccards.info/mt/en/148.html
+image=http://magiccards.info/scans/en/mt/148.jpg
+value=3
+rarity=R
+type=Land
+timing=land
+mana_or_combat
+

@@ -1,0 +1,13 @@
+>Valiant Guard
+url=http://magiccards.info/cfx/en/19.html
+image=http://magiccards.info/scans/en/cfx/19.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+pt=0/3
+timing=main
+

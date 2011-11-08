@@ -1,0 +1,13 @@
+>Pitchburn Devils
+url=http://magiccards.info/isd/en/156.html
+image=http://magiccards.info/scans/en/isd/156.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Devil
+color=r
+converted=5
+cost={4}{R}
+pt=3/3
+timing=main
+

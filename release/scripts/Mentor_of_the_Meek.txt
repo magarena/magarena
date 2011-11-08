@@ -1,0 +1,13 @@
+>Mentor of the Meek
+url=http://magiccards.info/isd/en/21.html
+image=http://magiccards.info/scans/en/isd/21.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+timing=main
+

@@ -1,0 +1,13 @@
+>Loam Lion
+url=http://magiccards.info/ddh/en/5.html
+image=http://magiccards.info/scans/en/wwk/13.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Cat
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

@@ -1,0 +1,12 @@
+>Glass Golem
+url=http://magiccards.info/rav/en/261.html
+image=http://magiccards.info/scans/en/rav/261.jpg 
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+converted=5
+cost={5}
+pt=6/2
+timing=main
+

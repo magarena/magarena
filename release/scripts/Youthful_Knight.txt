@@ -1,0 +1,14 @@
+>Youthful Knight
+url=http://magiccards.info/10e/en/62.html
+image=http://magiccards.info/scans/en/10e/62.jpg 
+value=2
+ability=first strike
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+timing=main
+

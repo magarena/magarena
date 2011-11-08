@@ -1,0 +1,13 @@
+>Defender en-Vec
+url=http://magiccards.info/ne/en/5.html
+image=http://magiccards.info/scans/en/ne/5.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=4
+cost={3}{W}
+pt=2/4
+timing=main
+

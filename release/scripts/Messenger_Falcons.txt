@@ -1,0 +1,14 @@
+>Messenger Falcons
+url=http://magiccards.info/arb/en/145.html
+image=http://magiccards.info/scans/en/arb/145.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Bird
+color=guw
+converted=4
+cost={2}{G/U}{W}
+pt=2/2
+ability=flying
+timing=fmain
+

@@ -1,0 +1,12 @@
+>Evincar's Justice
+url=http://magiccards.info/cmd/en/80.html
+image=http://magiccards.info/scans/en/cmd/80.jpg
+value=3
+removal=2
+rarity=C
+type=Sorcery
+color=b
+converted=4
+cost={2}{B}{B}
+timing=removal
+

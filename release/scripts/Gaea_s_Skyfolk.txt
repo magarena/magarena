@@ -1,0 +1,14 @@
+>Gaea's Skyfolk
+url=http://magiccards.info/ap/en/101.html
+image=http://magiccards.info/scans/en/ap/101.jpg 
+value=2
+ability=flying
+rarity=C
+type=Creature
+subtype=Elf,Merfolk
+color=gu
+converted=2
+cost={G}{U}
+pt=2/2
+timing=main
+

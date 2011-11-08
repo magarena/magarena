@@ -1,0 +1,15 @@
+>Faceless Devourer
+url=http://magiccards.info/ts/en/108.html
+image=http://magiccards.info/scans/en/ts/108.jpg
+value=3
+removal=2
+rarity=U
+type=Creature
+subtype=Nightmare,Horror
+color=b
+converted=3
+cost={2}{B}
+pt=2/1
+ability=shadow
+timing=main
+

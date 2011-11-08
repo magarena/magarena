@@ -1,0 +1,14 @@
+>Moonglove Winnower
+url=http://magiccards.info/dpa/en/29.html
+image=http://magiccards.info/scans/en/dpa/29.jpg 
+value=3
+ability=deathtouch
+rarity=C
+type=Creature
+subtype=Elf,Rogue
+color=b
+converted=4
+cost={3}{B}
+pt=2/3
+timing=main
+

@@ -1,0 +1,13 @@
+>Plated Seastrider
+url=http://magiccards.info/som/en/38.html
+image=http://magiccards.info/scans/en/som/38.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Beast
+color=u
+converted=2
+cost={U}{U}
+pt=1/4
+timing=main
+

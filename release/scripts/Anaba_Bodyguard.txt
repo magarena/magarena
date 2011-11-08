@@ -1,0 +1,14 @@
+>Anaba Bodyguard
+url=http://magiccards.info/10e/en/187.html
+image=http://magiccards.info/scans/en/10e/187.jpg 
+value=1
+ability=first strike
+rarity=C
+type=Creature
+subtype=Minotaur
+color=r
+converted=4
+cost={3}{R}
+pt=2/3
+timing=main
+

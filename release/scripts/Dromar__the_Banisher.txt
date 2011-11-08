@@ -1,0 +1,14 @@
+>Dromar, the Banisher
+url=http://magiccards.info/in/en/244.html
+image=http://magiccards.info/scans/en/in/244.jpg
+value=5
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+color=wub
+converted=6
+cost={3}{W}{U}{B}
+pt=6/6
+ability=flying
+timing=smain
+

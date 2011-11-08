@@ -1,0 +1,13 @@
+>Gustcloak Runner
+url=http://magiccards.info/on/en/35.html
+image=http://magiccards.info/scans/en/on/35.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

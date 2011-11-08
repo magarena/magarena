@@ -1,0 +1,14 @@
+>Kitsune Blademaster
+url=http://magiccards.info/chk/en/25.html
+image=http://magiccards.info/scans/en/chk/25.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Fox,Samurai
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=first strike
+timing=main
+

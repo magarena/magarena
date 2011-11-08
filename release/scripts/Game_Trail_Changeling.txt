@@ -1,0 +1,14 @@
+>Game-Trail Changeling
+url=http://magiccards.info/mt/en/123.html
+image=http://magiccards.info/scans/en/mt/123.jpg 
+value=4
+ability=changeling,trample
+rarity=C
+type=Creature
+subtype=Shapeshifter
+color=g
+converted=5
+cost={3}{G}{G}
+pt=4/4
+timing=main
+

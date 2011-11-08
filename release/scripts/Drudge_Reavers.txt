@@ -1,0 +1,14 @@
+>Drudge Reavers
+url=http://magiccards.info/ts/en/105.html
+image=http://magiccards.info/scans/en/ts/105.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Skeleton
+color=b
+converted=4
+cost={3}{B}
+pt=2/1
+ability=flash
+timing=flash
+

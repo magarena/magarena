@@ -1,0 +1,14 @@
+>Rafiq of the Many
+url=http://magiccards.info/fvl/en/10.html
+image=http://magiccards.info/scans/en/ala/185.jpg
+value=4
+rarity=M
+type=Legendary,Creature
+subtype=Human,Knight
+color=gwu
+converted=4
+cost={1}{G}{W}{U}
+pt=3/3
+ability=exalted
+timing=fmain
+

@@ -1,0 +1,11 @@
+>Make a Wish
+url=http://magiccards.info/isd/en/192.html
+image=http://magiccards.info/scans/en/isd/192.jpg
+value=3
+rarity=U
+type=Sorcery
+color=g
+converted=4
+cost={3}{G}
+timing=draw
+

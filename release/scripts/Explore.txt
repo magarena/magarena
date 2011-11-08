@@ -1,0 +1,11 @@
+>Explore
+url=http://magiccards.info/wwk/en/99.html
+image=http://magiccards.info/scans/en/wwk/99.jpg
+value=3
+rarity=C
+type=Sorcery
+color=g
+converted=2
+cost={1}{G}
+timing=main
+

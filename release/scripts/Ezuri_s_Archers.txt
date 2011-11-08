@@ -1,0 +1,14 @@
+>Ezuri's Archers
+url=http://magiccards.info/som/en/120.html
+image=http://magiccards.info/scans/en/som/120.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Archer
+color=g
+converted=1
+cost={G}
+pt=1/2
+ability=reach
+timing=smain
+

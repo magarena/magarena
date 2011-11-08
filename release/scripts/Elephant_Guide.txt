@@ -1,0 +1,13 @@
+>Elephant Guide
+url=http://magiccards.info/gvl/en/18.html
+image=http://magiccards.info/scans/en/gvl/18.jpg
+value=4
+rarity=U
+type=Enchantment
+subtype=Aura
+color=g
+converted=3
+cost={2}{G}
+given_pt=3/3
+timing=aura
+

@@ -1,0 +1,14 @@
+>Pelakka Wurm
+url=http://magiccards.info/roe/en/204.html
+image=http://magiccards.info/scans/en/roe/204.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Wurm
+color=g
+converted=7
+cost={4}{G}{G}{G}
+pt=7/7
+ability=trample
+timing=fmain
+

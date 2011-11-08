@@ -1,0 +1,13 @@
+>Ravenous Baloth
+url=http://magiccards.info/gvl/en/8.html
+image=http://magiccards.info/scans/en/gvl/8.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Beast
+color=g
+converted=4
+cost={2}{G}{G}
+pt=4/4
+timing=fmain
+

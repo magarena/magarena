@@ -1,0 +1,13 @@
+>Puncture Blast
+url=http://magiccards.info/eve/en/60.html
+image=http://magiccards.info/scans/en/eve/60.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=r
+converted=3
+cost={2}{R}
+ability=wither
+timing=removal
+

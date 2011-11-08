@@ -1,0 +1,14 @@
+>Goblin Deathraiders
+url=http://magiccards.info/ala/en/169.html
+image=http://magiccards.info/scans/en/ala/169.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=br
+converted=2
+cost={B}{R}
+pt=3/1
+ability=trample
+timing=main
+

@@ -1,0 +1,14 @@
+>Skyhunter Skirmisher
+url=http://magiccards.info/10e/en/43.html
+image=http://magiccards.info/scans/en/10e/43.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Cat,Knight
+color=w
+converted=3
+cost={1}{W}{W}
+pt=1/1
+ability=flying,double strike
+timing=main
+

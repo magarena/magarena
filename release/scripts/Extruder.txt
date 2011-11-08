@@ -1,0 +1,12 @@
+>Extruder
+url=http://magiccards.info/ud/en/130.html
+image=http://magiccards.info/scans/en/ud/130.jpg
+value=4
+rarity=U
+type=Artifact,Creature
+subtype=Juggernaut
+converted=4
+cost={4}
+pt=4/3
+timing=main
+

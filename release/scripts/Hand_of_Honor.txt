@@ -1,0 +1,14 @@
+>Hand of Honor
+url=http://magiccards.info/sok/en/12.html
+image=http://magiccards.info/scans/en/sok/12.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Samurai
+color=w
+converted=2
+cost={W}{W}
+pt=2/2
+ability=protection from black
+timing=main
+

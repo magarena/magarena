@@ -1,0 +1,12 @@
+>Savage Twister
+url=http://magiccards.info/cmd/en/222.html
+image=http://magiccards.info/scans/en/pch/94.jpg
+value=4
+removal=3
+rarity=U
+type=Sorcery
+color=rg
+converted=2
+cost={X}{R}{G}
+timing=removal
+

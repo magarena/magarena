@@ -1,0 +1,14 @@
+>Vodalian Zombie
+url=http://magiccards.info/in/en/286.html
+image=http://magiccards.info/scans/en/in/286.jpg 
+value=2
+ability=protection from green
+rarity=C
+type=Creature
+subtype=Merfolk,Zombie
+color=bu
+converted=2
+cost={U}{B}
+pt=2/2
+timing=main
+

@@ -1,0 +1,14 @@
+>Iron-Barb Hellion
+url=http://magiccards.info/5dn/en/69.html
+image=http://magiccards.info/scans/en/5dn/69.jpg 
+value=4
+ability=haste,can't block
+rarity=U
+type=Creature
+subtype=Hellion,Beast
+color=r
+converted=6
+cost={5}{R}
+pt=5/4
+timing=fmain
+

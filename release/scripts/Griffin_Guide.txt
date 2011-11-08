@@ -1,0 +1,14 @@
+>Griffin Guide
+url=http://magiccards.info/ddh/en/25.html
+image=http://magiccards.info/scans/en/ts/21.jpg
+value=4
+rarity=U
+type=Enchantment
+subtype=Aura
+color=w
+converted=3
+cost={2}{W}
+given_pt=2/2
+given_ability=flying
+timing=aura
+

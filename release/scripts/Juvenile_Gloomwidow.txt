@@ -1,0 +1,14 @@
+>Juvenile Gloomwidow
+url=http://magiccards.info/shm/en/121.html
+image=http://magiccards.info/scans/en/shm/121.jpg 
+value=2
+ability=reach,wither
+rarity=C
+type=Creature
+subtype=Spider
+color=g
+converted=2
+cost={G}{G}
+pt=1/3
+timing=main
+

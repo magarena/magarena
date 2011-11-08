@@ -1,0 +1,12 @@
+>Smash
+url=http://magiccards.info/10e/en/235.html
+image=http://magiccards.info/scans/en/10e/235.jpg
+value=2
+removal=1
+rarity=C
+type=Instant
+color=r
+converted=3
+cost={2}{R}
+timing=removal
+

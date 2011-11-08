@@ -1,0 +1,14 @@
+>Caravan Hurda
+url=http://magiccards.info/zen/en/5.html
+image=http://magiccards.info/scans/en/zen/5.jpg 
+value=2
+ability=lifelink
+rarity=C
+type=Creature
+subtype=Giant
+color=w
+converted=5
+cost={4}{W}
+pt=1/5
+timing=main
+

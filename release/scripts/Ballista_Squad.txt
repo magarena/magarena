@@ -1,0 +1,13 @@
+>Ballista Squad
+url=http://magiccards.info/10e/en/8.html
+image=http://magiccards.info/scans/en/10e/8.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Rebel
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+timing=main
+

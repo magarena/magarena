@@ -1,0 +1,13 @@
+>Chilling Apparition
+url=http://magiccards.info/pr/en/59.html
+image=http://magiccards.info/scans/en/pr/59.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Spirit
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+timing=main
+

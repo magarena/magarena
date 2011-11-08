@@ -1,0 +1,14 @@
+>Tuktuk the Explorer
+url=http://magiccards.info/roe/en/169.html
+image=http://magiccards.info/scans/en/roe/169.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Goblin
+color=r
+converted=3
+cost={2}{R}
+pt=1/1
+ability=haste
+timing=fmain
+

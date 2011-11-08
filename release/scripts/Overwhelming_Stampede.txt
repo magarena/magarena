@@ -1,0 +1,11 @@
+>Overwhelming Stampede
+url=http://magiccards.info/m11/en/189.html
+image=http://magiccards.info/scans/en/m11/189.jpg
+value=4
+rarity=R
+type=Sorcery
+color=g
+converted=5
+cost={3}{G}{G}
+timing=pump
+

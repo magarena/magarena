@@ -1,0 +1,13 @@
+>Sparkmage Apprentice
+url=http://magiccards.info/m10/en/158.html
+image=http://magiccards.info/scans/en/m10/158.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+timing=main
+

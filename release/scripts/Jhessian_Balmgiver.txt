@@ -1,0 +1,13 @@
+>Jhessian Balmgiver
+url=http://magiccards.info/cfx/en/112.html
+image=http://magiccards.info/scans/en/cfx/112.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Cleric
+color=wu
+converted=3
+cost={1}{W}{U}
+pt=1/1
+timing=smain
+

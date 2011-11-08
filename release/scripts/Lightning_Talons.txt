@@ -1,0 +1,14 @@
+>Lightning Talons
+url=http://magiccards.info/ala/en/107.html
+image=http://magiccards.info/scans/en/ala/107.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=3
+cost={2}{R}
+given_pt=3/0
+given_ability=first strike
+timing=aura
+

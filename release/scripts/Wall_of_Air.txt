@@ -1,0 +1,14 @@
+>Wall of Air
+url=http://magiccards.info/10e/en/124.html
+image=http://magiccards.info/scans/en/10e/124.jpg 
+value=3
+ability=defender,flying
+rarity=U
+type=Creature
+subtype=Wall
+color=u
+converted=3
+cost={1}{U}{U}
+pt=1/5
+timing=smain
+

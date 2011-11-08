@@ -1,0 +1,12 @@
+>Infest
+url=http://magiccards.info/arc/en/19.html
+image=http://magiccards.info/scans/en/arc/19.jpg
+value=3
+removal=2
+rarity=U
+type=Sorcery
+color=b
+converted=3
+cost={1}{B}{B}
+timing=removal
+

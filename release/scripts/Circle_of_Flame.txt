@@ -1,0 +1,11 @@
+>Circle of Flame
+url=http://magiccards.info/m12/en/127.html
+image=http://magiccards.info/scans/en/m12/127.jpg
+value=3
+rarity=U
+type=Enchantment
+color=r
+converted=2
+cost={1}{R}
+timing=enchantment
+

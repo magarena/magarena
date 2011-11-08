@@ -1,0 +1,14 @@
+>Chapel Geist
+url=http://magiccards.info/isd/en/7.html
+image=http://magiccards.info/scans/en/isd/7.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/3
+ability=flying
+timing=main
+

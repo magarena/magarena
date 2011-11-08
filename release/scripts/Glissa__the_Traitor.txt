@@ -1,0 +1,14 @@
+>Glissa, the Traitor
+url=http://magiccards.info/mbs/en/96.html
+image=http://magiccards.info/scans/en/mbs/96.jpg
+value=4
+rarity=M
+type=Legendary,Creature
+subtype=Zombie,Elf
+color=bg
+converted=3
+cost={B}{G}{G}
+pt=3/3
+ability=first strike,deathtouch
+timing=fmain
+

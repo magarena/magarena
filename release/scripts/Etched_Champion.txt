@@ -1,0 +1,12 @@
+>Etched Champion
+url=http://magiccards.info/som/en/154.html
+image=http://magiccards.info/scans/en/som/154.jpg
+value=2
+rarity=R
+type=Artifact,Creature
+subtype=Soldier
+converted=3
+cost={3}
+pt=2/2
+timing=main
+

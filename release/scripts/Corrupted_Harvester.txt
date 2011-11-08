@@ -1,0 +1,13 @@
+>Corrupted Harvester
+url=http://magiccards.info/som/en/59.html
+image=http://magiccards.info/scans/en/som/59.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Horror
+color=b
+converted=6
+cost={4}{B}{B}
+pt=6/3
+timing=main
+

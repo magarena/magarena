@@ -1,0 +1,12 @@
+>Ferocity
+url=http://magiccards.info/mm/en/245.html
+image=http://magiccards.info/scans/en/mm/245.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=g
+converted=2
+cost={1}{G}
+timing=aura
+

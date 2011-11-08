@@ -1,0 +1,12 @@
+>Bramblecrush
+url=http://magiccards.info/isd/en/172.html
+image=http://magiccards.info/scans/en/isd/172.jpg
+value=3
+removal=3
+rarity=U
+type=Sorcery
+color=g
+converted=4
+cost={2}{G}{G}
+timing=removal
+

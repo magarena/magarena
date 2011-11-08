@@ -1,0 +1,10 @@
+>Drowned Catacomb
+url=http://magiccards.info/m12/en/226.html
+image=http://magiccards.info/scans/en/m11/224.jpg
+value=4
+rarity=R
+type=Land
+mana=u3b3
+basic=ub
+timing=land
+

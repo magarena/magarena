@@ -1,0 +1,13 @@
+>Relentless Rats
+url=http://magiccards.info/m11/en/113.html
+image=http://magiccards.info/scans/en/m11/113.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/2
+timing=main
+

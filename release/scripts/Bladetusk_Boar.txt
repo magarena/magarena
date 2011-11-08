@@ -1,0 +1,14 @@
+>Bladetusk Boar
+url=http://magiccards.info/zen/en/118.html
+image=http://magiccards.info/scans/en/zen/118.jpg 
+value=3
+ability=intimidate
+rarity=C
+type=Creature
+subtype=Boar
+color=r
+converted=4
+cost={3}{R}
+pt=3/2
+timing=main
+

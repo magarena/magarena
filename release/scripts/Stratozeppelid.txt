@@ -1,0 +1,14 @@
+>Stratozeppelid
+url=http://magiccards.info/gp/en/36.html
+image=http://magiccards.info/scans/en/gp/36.jpg 
+value=4
+ability=flying,can't block creatures without flying
+rarity=U
+type=Creature
+subtype=Beast
+color=u
+converted=5
+cost={4}{U}
+pt=4/4
+timing=fmain
+

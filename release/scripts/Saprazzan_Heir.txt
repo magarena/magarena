@@ -1,0 +1,13 @@
+>Saprazzan Heir
+url=http://magiccards.info/mm/en/99.html
+image=http://magiccards.info/scans/en/mm/99.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Merfolk
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+timing=main
+

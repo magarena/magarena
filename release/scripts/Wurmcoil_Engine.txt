@@ -1,0 +1,13 @@
+>Wurmcoil Engine
+url=http://magiccards.info/som/en/223.html
+image=http://magiccards.info/scans/en/som/223.jpg
+value=5
+rarity=M
+type=Artifact,Creature
+subtype=Wurm
+converted=6
+cost={6}
+pt=6/6
+ability=deathtouch,lifelink
+timing=main
+

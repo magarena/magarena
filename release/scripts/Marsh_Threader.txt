@@ -1,0 +1,14 @@
+>Marsh Threader
+url=http://magiccards.info/wwk/en/14.html
+image=http://magiccards.info/scans/en/wwk/14.jpg 
+value=1
+ability=swampwalk
+rarity=C
+type=Creature
+subtype=Kor,Scout
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+timing=main
+

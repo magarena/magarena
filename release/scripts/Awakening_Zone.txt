@@ -1,0 +1,11 @@
+>Awakening Zone
+url=http://magiccards.info/cmd/en/142.html
+image=http://magiccards.info/scans/en/roe/176.jpg
+value=4
+rarity=R
+type=Enchantment
+color=g
+converted=3
+cost={2}{G}
+timing=enchantment
+

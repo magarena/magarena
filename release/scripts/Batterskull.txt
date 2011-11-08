@@ -1,0 +1,15 @@
+>Batterskull
+url=http://magiccards.info/nph/en/130.html
+image=http://magiccards.info/scans/en/nph/130.jpg
+value=5
+rarity=M
+type=Artifact
+subtype=Equipment
+converted=5
+cost={5}
+equip={5}
+ability=living weapon
+given_pt=4/4
+given_ability=vigilance,lifelink
+timing=equipment
+

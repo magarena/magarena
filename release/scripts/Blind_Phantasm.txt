@@ -1,0 +1,13 @@
+>Blind Phantasm
+url=http://magiccards.info/fut/en/49.html
+image=http://magiccards.info/scans/en/fut/49.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Illusion
+color=u
+converted=3
+cost={2}{U}
+pt=2/3
+timing=main
+

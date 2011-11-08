@@ -1,0 +1,10 @@
+>Sulfur Falls
+url=http://magiccards.info/isd/en/248.html
+image=http://magiccards.info/scans/en/isd/248.jpg
+value=4
+rarity=R
+type=Land
+mana=u3r3
+basic=ur
+timing=land
+

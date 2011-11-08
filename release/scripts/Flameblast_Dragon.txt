@@ -1,0 +1,14 @@
+>Flameblast Dragon
+url=http://magiccards.info/m12/en/133.html
+image=http://magiccards.info/scans/en/arc/38.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={4}{R}{R}
+pt=5/5
+ability=flying
+timing=main
+

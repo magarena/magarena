@@ -1,0 +1,14 @@
+>One-Eyed Scarecrow
+url=http://magiccards.info/isd/en/230.html
+image=http://magiccards.info/scans/en/isd/230.jpg
+value=3
+removal=1
+rarity=C
+type=Artifact,Creature
+converted=3
+cost={3}
+pt=2/3
+ability=defender
+static=opponent
+timing=artifact
+

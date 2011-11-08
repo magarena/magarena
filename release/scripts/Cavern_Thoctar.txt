@@ -1,0 +1,13 @@
+>Cavern Thoctar
+url=http://magiccards.info/ala/en/125.html
+image=http://magiccards.info/scans/en/ala/125.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=6
+cost={5}{G}
+pt=5/5
+timing=main
+

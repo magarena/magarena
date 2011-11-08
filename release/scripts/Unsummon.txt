@@ -1,0 +1,12 @@
+>Unsummon
+url=http://magiccards.info/m12/en/79.html
+image=http://magiccards.info/scans/en/m11/78.jpg
+value=2
+removal=2
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=removal
+

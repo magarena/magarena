@@ -1,0 +1,11 @@
+>Godless Shrine
+url=http://magiccards.info/gp/en/157.html
+image=http://magiccards.info/scans/en/gp/157.jpg
+value=4
+rarity=R
+type=Land
+subtype=Plains,Swamp
+mana=w3b3
+basic=wb
+timing=land
+

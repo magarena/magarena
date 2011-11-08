@@ -1,0 +1,11 @@
+>Scepter of Dominance
+url=http://magiccards.info/cfx/en/17.html
+image=http://magiccards.info/scans/en/cfx/17.jpg
+value=4
+rarity=R
+type=Artifact
+color=w
+converted=3
+cost={1}{W}{W}
+timing=artifact
+

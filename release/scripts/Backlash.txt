@@ -1,0 +1,11 @@
+>Backlash
+url=http://magiccards.info/in/en/234.html
+image=http://magiccards.info/scans/en/in/234.jpg
+value=3
+rarity=U
+type=Instant
+color=br
+converted=3
+cost={1}{B}{R}
+timing=tapping
+

@@ -1,0 +1,14 @@
+>Admonition Angel
+url=http://magiccards.info/wwk/en/1.html
+image=http://magiccards.info/scans/en/wwk/1.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Angel
+color=w
+converted=6
+cost={3}{W}{W}{W}
+pt=6/6
+ability=flying
+timing=main
+

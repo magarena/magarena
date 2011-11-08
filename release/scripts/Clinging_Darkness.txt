@@ -1,0 +1,14 @@
+>Clinging Darkness
+url=http://magiccards.info/rav/en/80.html
+image=http://magiccards.info/scans/en/rav/80.jpg
+value=3
+removal=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=2
+cost={1}{B}
+given_pt=-4/-1
+timing=removal
+

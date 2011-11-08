@@ -1,0 +1,14 @@
+>Serra Angel
+url=http://magiccards.info/m12/en/33.html
+image=http://magiccards.info/scans/en/dvd/10.jpg
+value=4
+ability=flying,vigilance
+rarity=R
+type=Creature
+subtype=Angel
+color=w
+converted=5
+cost={3}{W}{W}
+pt=4/4
+timing=main
+

@@ -1,0 +1,13 @@
+>Fortress Crab
+url=http://magiccards.info/isd/en/56.html
+image=http://magiccards.info/scans/en/isd/56.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Crab
+color=u
+converted=4
+cost={3}{U}
+pt=1/6
+timing=main
+

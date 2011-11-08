@@ -1,0 +1,14 @@
+>Umara Raptor
+url=http://magiccards.info/zen/en/75.html
+image=http://magiccards.info/scans/en/zen/75.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Bird,Ally
+color=u
+converted=3
+cost={2}{U}
+pt=1/1
+ability=flying
+timing=main
+

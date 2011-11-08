@@ -1,0 +1,14 @@
+>Mirri, Cat Warrior
+url=http://magiccards.info/10e/en/279.html
+image=http://magiccards.info/scans/en/10e/279.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Cat,Warrior
+color=g
+converted=3
+cost={1}{G}{G}
+pt=2/3
+ability=first strike,forestwalk,vigilance
+timing=main
+

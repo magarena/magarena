@@ -1,0 +1,13 @@
+>Necropede
+url=http://magiccards.info/som/en/185.html
+image=http://magiccards.info/scans/en/som/185.jpg
+value=2
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+converted=2
+cost={2}
+pt=1/1
+ability=infect
+timing=main
+

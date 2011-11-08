@@ -1,0 +1,14 @@
+>Sword of Feast and Famine
+url=http://magiccards.info/mbs/en/138.html
+image=http://magiccards.info/scans/en/mbs/138.jpg
+value=5
+rarity=M
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+given_pt=2/2
+given_ability=protection from black,protection from green
+timing=equipment
+

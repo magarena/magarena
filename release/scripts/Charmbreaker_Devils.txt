@@ -1,0 +1,13 @@
+>Charmbreaker Devils
+url=http://magiccards.info/isd/en/134.html
+image=http://magiccards.info/scans/en/isd/134.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Devil
+color=r
+converted=6
+cost={5}{R}
+pt=4/4
+timing=main
+

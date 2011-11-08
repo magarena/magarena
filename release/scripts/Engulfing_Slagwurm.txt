@@ -1,0 +1,13 @@
+>Engulfing Slagwurm
+url=http://magiccards.info/som/en/118.html
+image=http://magiccards.info/scans/en/som/118.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Wurm
+color=g
+converted=7
+cost={5}{G}{G}
+pt=7/7
+timing=main
+

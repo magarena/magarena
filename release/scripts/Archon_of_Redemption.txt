@@ -1,0 +1,14 @@
+>Archon of Redemption
+url=http://magiccards.info/wwk/en/3.html
+image=http://magiccards.info/scans/en/wwk/3.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Archon
+color=w
+converted=5
+cost={3}{W}{W}
+pt=3/4
+ability=flying
+timing=smain
+

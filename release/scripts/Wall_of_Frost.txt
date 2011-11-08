@@ -1,0 +1,14 @@
+>Wall of Frost
+url=http://magiccards.info/m11/en/79.html
+image=http://magiccards.info/scans/en/m11/79.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Wall
+color=u
+converted=3
+cost={1}{U}{U}
+pt=0/7
+ability=defender
+timing=smain
+

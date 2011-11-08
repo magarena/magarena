@@ -1,0 +1,14 @@
+>Zodiac Monkey
+url=http://magiccards.info/9e/en/285.html
+image=http://magiccards.info/scans/en/9e/285.jpg 
+value=1
+ability=forestwalk
+rarity=C
+type=Creature
+subtype=Ape
+color=g
+converted=2
+cost={1}{G}
+pt=2/1
+timing=main
+

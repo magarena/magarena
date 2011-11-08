@@ -1,0 +1,14 @@
+>Sword of Light and Shadow
+url=http://magiccards.info/ds/en/149.html
+image=http://magiccards.info/scans/en/ds/149.jpg
+value=5
+rarity=R
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={2}
+given_pt=2/2
+given_ability=protection from white,protection from black
+timing=equipment
+

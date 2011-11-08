@@ -1,0 +1,14 @@
+>Safehold Elite
+url=http://magiccards.info/shm/en/239.html
+image=http://magiccards.info/scans/en/shm/239.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elf,Scout
+color=gw
+converted=2
+cost={1}{G/W}
+pt=2/2
+ability=persist
+timing=main
+

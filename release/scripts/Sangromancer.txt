@@ -1,0 +1,14 @@
+>Sangromancer
+url=http://magiccards.info/mbs/en/53.html
+image=http://magiccards.info/scans/en/mbs/53.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Vampire,Shaman
+color=b
+converted=4
+cost={2}{B}{B}
+pt=3/3
+ability=flying
+timing=fmain
+

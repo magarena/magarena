@@ -1,0 +1,14 @@
+>Giant Warthog
+url=http://magiccards.info/ju/en/118.html
+image=http://magiccards.info/scans/en/ju/118.jpg 
+value=4
+ability=trample
+rarity=C
+type=Creature
+subtype=Boar,Beast
+color=g
+converted=6
+cost={5}{G}
+pt=5/5
+timing=main
+

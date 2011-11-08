@@ -1,0 +1,14 @@
+>Feral Ridgewolf
+url=http://magiccards.info/isd/en/142.html
+image=http://magiccards.info/scans/en/isd/142.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Wolf
+color=r
+converted=3
+cost={2}{R}
+pt=1/2
+ability=trample
+timing=main
+

@@ -1,0 +1,12 @@
+>Arcbound Fiend
+url=http://magiccards.info/ds/en/96.html
+image=http://magiccards.info/scans/en/ds/96.jpg
+value=3
+rarity=U
+type=Artifact,Creature
+subtype=Horror
+converted=6
+cost={6}
+ability=fear,modular
+timing=main
+

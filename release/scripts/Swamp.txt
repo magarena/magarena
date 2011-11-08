@@ -1,0 +1,12 @@
+>Swamp
+url=http://magiccards.info/isd/en/256.html
+image=http://magiccards.info/scans/en/zen/238.jpg
+num_images=2
+value=2
+rarity=L
+type=Basic,Land
+subtype=Swamp
+mana=b4
+basic=b
+timing=land
+

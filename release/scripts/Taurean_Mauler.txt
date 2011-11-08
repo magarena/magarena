@@ -1,0 +1,14 @@
+>Taurean Mauler
+url=http://magiccards.info/arc/en/49.html
+image=http://magiccards.info/scans/en/arc/49.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Shapeshifter
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+ability=changeling
+timing=fmain
+

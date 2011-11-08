@@ -1,0 +1,14 @@
+>Aven Smokeweaver
+url=http://magiccards.info/od/en/64.html
+image=http://magiccards.info/scans/en/od/64.jpg 
+value=3
+ability=flying,protection from red
+rarity=U
+type=Creature
+subtype=Bird,Soldier
+color=u
+converted=4
+cost={2}{U}{U}
+pt=2/3
+timing=main
+

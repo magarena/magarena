@@ -1,0 +1,14 @@
+>Lingering Tormentor
+url=http://magiccards.info/eve/en/36.html
+image=http://magiccards.info/scans/en/eve/36.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=b
+converted=4
+cost={3}{B}
+pt=2/2
+ability=fear,persist
+timing=main
+

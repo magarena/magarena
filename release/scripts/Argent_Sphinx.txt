@@ -1,0 +1,14 @@
+>Argent Sphinx
+url=http://magiccards.info/som/en/28.html
+image=http://magiccards.info/scans/en/som/28.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Sphinx
+color=u
+converted=4
+cost={2}{U}{U}
+pt=4/3
+ability=flying
+timing=main
+

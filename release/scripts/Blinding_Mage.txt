@@ -1,0 +1,13 @@
+>Blinding Mage
+url=http://magiccards.info/m11/en/8.html
+image=http://magiccards.info/scans/en/m11/8.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=w
+converted=2
+cost={1}{W}
+pt=1/2
+timing=main
+

@@ -1,0 +1,14 @@
+>Razortooth Rats
+url=http://magiccards.info/9e/en/158.html
+image=http://magiccards.info/scans/en/9e/158.jpg 
+value=2
+ability=fear
+rarity=C
+type=Creature
+subtype=Rat
+color=b
+converted=3
+cost={2}{B}
+pt=2/1
+timing=main
+

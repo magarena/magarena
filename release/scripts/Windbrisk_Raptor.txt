@@ -1,0 +1,14 @@
+>Windbrisk Raptor
+url=http://magiccards.info/shm/en/26.html
+image=http://magiccards.info/scans/en/shm/26.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Bird
+color=w
+converted=7
+cost={5}{W}{W}
+pt=5/7
+ability=flying
+timing=fmain
+

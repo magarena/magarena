@@ -1,0 +1,13 @@
+>Skyshroud Ridgeback
+url=http://magiccards.info/ne/en/120.html
+image=http://magiccards.info/scans/en/ne/120.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Beast
+color=g
+converted=1
+cost={G}
+pt=2/3
+timing=main
+

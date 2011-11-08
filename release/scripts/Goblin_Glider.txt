@@ -1,0 +1,14 @@
+>Goblin Glider
+url=http://magiccards.info/8e/en/189.html
+image=http://magiccards.info/scans/en/8e/189.jpg 
+value=2
+ability=flying,can't block
+rarity=U
+type=Creature
+subtype=Goblin
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+timing=fmain
+

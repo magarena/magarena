@@ -1,0 +1,14 @@
+>Hellkite Overlord
+url=http://magiccards.info/ala/en/172.html
+image=http://magiccards.info/scans/en/ala/172.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon
+color=brg
+converted=8
+cost={4}{B}{R}{R}{G}
+pt=8/8
+ability=flying,trample,haste
+timing=fmain
+

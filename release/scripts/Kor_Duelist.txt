@@ -1,0 +1,13 @@
+>Kor Duelist
+url=http://magiccards.info/zen/en/19.html
+image=http://magiccards.info/scans/en/zen/19.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Kor,Soldier
+color=w
+converted=1
+cost={W}
+pt=1/1
+timing=main
+

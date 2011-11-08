@@ -1,0 +1,14 @@
+>Angel of Mercy
+url=http://magiccards.info/dvd/en/9.html
+image=http://magiccards.info/scans/en/10e/2.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=5
+cost={4}{W}
+pt=3/3
+ability=flying
+timing=main
+

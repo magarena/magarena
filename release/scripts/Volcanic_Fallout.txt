@@ -1,0 +1,13 @@
+>Volcanic Fallout
+url=http://magiccards.info/arc/en/51.html
+image=http://magiccards.info/scans/en/arc/51.jpg
+value=3
+removal=2
+rarity=U
+type=Instant
+color=r
+converted=3
+cost={1}{R}{R}
+ability=can't be countered
+timing=removal
+

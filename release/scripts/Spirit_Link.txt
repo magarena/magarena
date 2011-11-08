@@ -1,0 +1,12 @@
+>Spirit Link
+url=http://magiccards.info/10e/en/45.html
+image=http://magiccards.info/scans/en/10e/45.jpg
+value=1
+rarity=U
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+timing=aura
+

@@ -1,0 +1,11 @@
+>Karn's Touch
+url=http://magiccards.info/mm/en/86.html
+image=http://magiccards.info/scans/en/mm/86.jpg
+value=3
+rarity=R
+type=Instant
+color=u
+converted=2
+cost={U}{U}
+timing=animate
+

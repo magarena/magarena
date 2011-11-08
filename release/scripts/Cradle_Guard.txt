@@ -1,0 +1,14 @@
+>Cradle Guard
+url=http://magiccards.info/us/en/245.html
+image=http://magiccards.info/scans/en/us/245.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Treefolk
+color=g
+converted=3
+cost={1}{G}{G}
+pt=4/4
+ability=trample
+timing=main
+

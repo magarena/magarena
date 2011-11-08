@@ -1,0 +1,13 @@
+>Nema Siltlurker
+url=http://magiccards.info/roe/en/200.html
+image=http://magiccards.info/scans/en/roe/200.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Lizard
+color=g
+converted=5
+cost={4}{G}
+pt=3/5
+timing=main
+

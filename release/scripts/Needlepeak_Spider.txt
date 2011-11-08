@@ -1,0 +1,14 @@
+>Needlepeak Spider
+url=http://magiccards.info/pc/en/105.html
+image=http://magiccards.info/scans/en/pc/105.jpg 
+value=3
+ability=reach
+rarity=C
+type=Creature
+subtype=Spider
+color=r
+converted=4
+cost={3}{R}
+pt=4/2
+timing=main
+

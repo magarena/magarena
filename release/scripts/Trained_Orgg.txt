@@ -1,0 +1,13 @@
+>Trained Orgg
+url=http://magiccards.info/7e/en/224.html
+image=http://magiccards.info/scans/en/7e/224.jpg 
+value=4
+rarity=R
+type=Creature
+subtype=Orgg
+color=r
+converted=7
+cost={6}{R}
+pt=6/6
+timing=main
+

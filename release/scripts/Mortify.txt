@@ -1,0 +1,12 @@
+>Mortify
+url=http://magiccards.info/cmd/en/211.html
+image=http://magiccards.info/scans/en/gp/122.jpg
+value=4
+removal=5
+rarity=U
+type=Instant
+color=wb
+converted=3
+cost={1}{W}{B}
+timing=removal
+

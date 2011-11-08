@@ -1,0 +1,13 @@
+>Wandering Ones
+url=http://magiccards.info/chk/en/100.html
+image=http://magiccards.info/scans/en/chk/100.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Spirit
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+

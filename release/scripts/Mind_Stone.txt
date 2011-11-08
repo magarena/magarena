@@ -1,0 +1,10 @@
+>Mind Stone
+url=http://magiccards.info/jvc/en/22.html
+image=http://magiccards.info/scans/en/jvc/22.jpg
+value=3
+rarity=U
+type=Artifact
+converted=2
+cost={2}
+timing=artifact
+

@@ -1,0 +1,11 @@
+>Beacon of Unrest
+url=http://magiccards.info/arc/en/10.html
+image=http://magiccards.info/scans/en/arc/10.jpg
+value=4
+rarity=R
+type=Sorcery
+color=b
+converted=5
+cost={3}{B}{B}
+timing=main
+

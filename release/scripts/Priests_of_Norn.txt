@@ -1,0 +1,14 @@
+>Priests of Norn
+url=http://magiccards.info/mbs/en/16.html
+image=http://magiccards.info/scans/en/mbs/16.jpg 
+value=2
+ability=vigilance,infect
+rarity=C
+type=Creature
+subtype=Cleric
+color=w
+converted=3
+cost={2}{W}
+pt=1/4
+timing=main
+

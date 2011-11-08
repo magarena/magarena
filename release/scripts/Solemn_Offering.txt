@@ -1,0 +1,12 @@
+>Solemn Offering
+url=http://magiccards.info/m11/en/32.html
+image=http://magiccards.info/scans/en/m11/32.jpg
+value=3
+removal=1
+rarity=C
+type=Sorcery
+color=w
+converted=3
+cost={2}{W}
+timing=removal
+

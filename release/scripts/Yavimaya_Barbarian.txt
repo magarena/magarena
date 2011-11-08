@@ -1,0 +1,14 @@
+>Yavimaya Barbarian
+url=http://magiccards.info/in/en/290.html
+image=http://magiccards.info/scans/en/in/290.jpg 
+value=2
+ability=protection from blue
+rarity=C
+type=Creature
+subtype=Elf,Barbarian
+color=rg
+converted=2
+cost={R}{G}
+pt=2/2
+timing=main
+

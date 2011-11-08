@@ -1,0 +1,13 @@
+>Drelnoch
+url=http://magiccards.info/cs/en/32.html
+image=http://magiccards.info/scans/en/cs/32.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Yeti,Mutant
+color=u
+converted=5
+cost={4}{U}
+pt=3/3
+timing=main
+

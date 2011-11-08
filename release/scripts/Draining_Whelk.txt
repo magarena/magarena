@@ -1,0 +1,14 @@
+>Draining Whelk
+url=http://magiccards.info/ts/en/57.html
+image=http://magiccards.info/scans/en/ts/57.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Illusion
+color=u
+converted=6
+cost={4}{U}{U}
+pt=1/1
+ability=flash,flying
+timing=counterflash
+

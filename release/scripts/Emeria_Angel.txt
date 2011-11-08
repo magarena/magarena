@@ -1,0 +1,14 @@
+>Emeria Angel
+url=http://magiccards.info/zen/en/11.html
+image=http://magiccards.info/scans/en/zen/11.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Angel
+color=w
+converted=4
+cost={2}{W}{W}
+pt=3/3
+ability=flying
+timing=main
+

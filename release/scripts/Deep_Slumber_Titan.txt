@@ -1,0 +1,14 @@
+>Deep-Slumber Titan
+url=http://magiccards.info/shm/en/89.html
+image=http://magiccards.info/scans/en/shm/89.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+color=r
+converted=4
+cost={2}{R}{R}
+pt=7/7
+ability=doesn't untap during untap step
+timing=main
+

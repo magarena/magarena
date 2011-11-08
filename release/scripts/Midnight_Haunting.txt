@@ -1,0 +1,11 @@
+>Midnight Haunting
+url=http://magiccards.info/isd/en/22.html
+image=http://magiccards.info/scans/en/isd/22.jpg
+value=3
+rarity=U
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=main
+

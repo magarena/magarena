@@ -1,0 +1,14 @@
+>Tattermunge Maniac
+url=http://magiccards.info/shm/en/219.html
+image=http://magiccards.info/scans/en/shm/219.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+color=rg
+converted=1
+cost={R/G}
+pt=2/1
+ability=attacks each turn if able
+timing=main
+

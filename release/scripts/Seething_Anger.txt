@@ -1,0 +1,11 @@
+>Seething Anger
+url=http://magiccards.info/sh/en/96.html
+image=http://magiccards.info/scans/en/sh/96.jpg
+value=1
+rarity=C
+type=Sorcery
+color=r
+converted=1
+cost={R}
+timing=pump
+

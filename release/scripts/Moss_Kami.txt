@@ -1,0 +1,14 @@
+>Moss Kami
+url=http://magiccards.info/chk/en/228.html
+image=http://magiccards.info/scans/en/chk/228.jpg 
+value=4
+ability=trample
+rarity=C
+type=Creature
+subtype=Spirit
+color=g
+converted=6
+cost={5}{G}
+pt=5/5
+timing=main
+

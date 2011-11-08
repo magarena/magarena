@@ -1,0 +1,12 @@
+>Seal of Doom
+url=http://magiccards.info/di/en/53.html
+image=http://magiccards.info/scans/en/di/53.jpg
+value=3
+removal=3
+rarity=C
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
+timing=enchantment
+

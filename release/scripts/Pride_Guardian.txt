@@ -1,0 +1,14 @@
+>Pride Guardian
+url=http://magiccards.info/m12/en/31.html
+image=http://magiccards.info/scans/en/m12/31.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat,Monk
+color=w
+converted=1
+cost={W}
+pt=0/3
+ability=defender
+timing=main
+

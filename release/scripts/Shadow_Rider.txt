@@ -1,0 +1,14 @@
+>Shadow Rider
+url=http://magiccards.info/wl/en/21.html
+image=http://magiccards.info/scans/en/wl/21.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie,Knight
+color=b
+converted=4
+cost={2}{B}{B}
+pt=3/3
+ability=flanking
+timing=main
+

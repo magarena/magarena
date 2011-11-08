@@ -1,0 +1,14 @@
+>Festerhide Boar
+url=http://magiccards.info/isd/en/179.html
+image=http://magiccards.info/scans/en/isd/179.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Boar
+color=g
+converted=4
+cost={3}{G}
+pt=3/3
+ability=trample
+timing=smain
+

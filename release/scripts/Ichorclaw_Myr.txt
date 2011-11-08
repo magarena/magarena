@@ -1,0 +1,13 @@
+>Ichorclaw Myr
+url=http://magiccards.info/som/en/166.html
+image=http://magiccards.info/scans/en/som/166.jpg
+value=2
+rarity=C
+type=Artifact,Creature
+subtype=Myr
+converted=2
+cost={2}
+pt=1/1
+ability=infect
+timing=main
+

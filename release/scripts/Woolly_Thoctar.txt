@@ -1,0 +1,13 @@
+>Woolly Thoctar
+url=http://magiccards.info/ddh/en/13.html
+image=http://magiccards.info/scans/en/ala/209.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Beast
+color=rgw
+converted=3
+cost={R}{G}{W}
+pt=5/4
+timing=main
+

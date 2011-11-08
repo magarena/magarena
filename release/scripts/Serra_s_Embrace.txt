@@ -1,0 +1,14 @@
+>Serra's Embrace
+url=http://magiccards.info/dvd/en/21.html
+image=http://magiccards.info/scans/en/dvd/21.jpg
+value=4
+rarity=U
+type=Enchantment
+subtype=Aura
+color=w
+converted=4
+cost={2}{W}{W}
+given_pt=2/2
+given_ability=flying,vigilance
+timing=aura
+

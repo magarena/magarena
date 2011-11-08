@@ -1,0 +1,14 @@
+>Armadillo Cloak
+url=http://magiccards.info/arc/en/78.html
+image=http://magiccards.info/scans/en/arc/78.jpg
+value=4
+rarity=C
+type=Enchantment
+subtype=Aura
+color=gw
+converted=3
+cost={1}{G}{W}
+given_pt=2/2
+given_ability=trample
+timing=aura
+

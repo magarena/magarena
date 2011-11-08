@@ -1,0 +1,14 @@
+>Cloudcrown Oak
+url=http://magiccards.info/lw/en/201.html
+image=http://magiccards.info/scans/en/lw/201.jpg 
+value=3
+ability=reach
+rarity=C
+type=Creature
+subtype=Treefolk,Warrior
+color=g
+converted=4
+cost={2}{G}{G}
+pt=3/4
+timing=main
+

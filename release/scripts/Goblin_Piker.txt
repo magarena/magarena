@@ -1,0 +1,13 @@
+>Goblin Piker
+url=http://magiccards.info/m12/en/141.html
+image=http://magiccards.info/scans/en/dpa/45.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=2
+cost={1}{R}
+pt=2/1
+timing=main
+

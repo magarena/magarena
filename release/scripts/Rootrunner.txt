@@ -1,0 +1,13 @@
+>Rootrunner
+url=http://magiccards.info/chk/en/237.html
+image=http://magiccards.info/scans/en/chk/237.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=4
+cost={2}{G}{G}
+pt=3/3
+timing=main
+

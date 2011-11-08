@@ -1,0 +1,14 @@
+>Anurid Murkdiver
+url=http://magiccards.info/on/en/124.html
+image=http://magiccards.info/scans/en/on/124.jpg 
+value=4
+ability=swampwalk
+rarity=C
+type=Creature
+subtype=Zombie,Frog,Beast
+color=b
+converted=6
+cost={4}{B}{B}
+pt=4/3
+timing=main
+

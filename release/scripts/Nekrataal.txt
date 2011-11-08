@@ -1,0 +1,14 @@
+>Nekrataal
+url=http://magiccards.info/10e/en/163.html
+image=http://magiccards.info/scans/en/10e/163.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Assassin
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/1
+ability=first strike
+timing=fmain
+

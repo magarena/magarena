@@ -1,0 +1,14 @@
+>Goblin War Paint
+url=http://magiccards.info/m12/en/143.html
+image=http://magiccards.info/scans/en/zen/129.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=2
+cost={1}{R}
+given_pt=2/2
+given_ability=haste
+timing=aura
+

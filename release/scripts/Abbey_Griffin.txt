@@ -1,0 +1,14 @@
+>Abbey Griffin
+url=http://magiccards.info/isd/en/1.html
+image=http://magiccards.info/scans/en/isd/1.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Griffin
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+ability=flying,vigilance
+timing=main
+

@@ -1,0 +1,12 @@
+>Umezawa's Jitte
+url=http://magiccards.info/gpx/en/4.html
+image=http://magiccards.info/scans/en/bok/163.jpg
+value=3
+rarity=R
+type=Legendary,Artifact
+subtype=Equipment
+converted=2
+cost={2}
+equip={2}
+timing=equipment
+

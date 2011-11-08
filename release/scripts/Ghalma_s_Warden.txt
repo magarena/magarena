@@ -1,0 +1,13 @@
+>Ghalma's Warden
+url=http://magiccards.info/som/en/8.html
+image=http://magiccards.info/scans/en/som/8.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elephant,Soldier
+color=w
+converted=4
+cost={3}{W}
+pt=2/4
+timing=main
+

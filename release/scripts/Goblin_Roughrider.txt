@@ -1,0 +1,13 @@
+>Goblin Roughrider
+url=http://magiccards.info/wwk/en/82.html
+image=http://magiccards.info/scans/en/wwk/82.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Goblin,Knight
+color=r
+converted=3
+cost={2}{R}
+pt=3/2
+timing=main
+

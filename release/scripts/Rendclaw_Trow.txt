@@ -1,0 +1,14 @@
+>Rendclaw Trow
+url=http://magiccards.info/eve/en/127.html
+image=http://magiccards.info/scans/en/eve/127.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Troll
+color=bg
+converted=3
+cost={2}{B/G}
+pt=2/2
+ability=wither,persist
+timing=smain
+

@@ -1,0 +1,11 @@
+>Veteran's Reflexes
+url=http://magiccards.info/wwk/en/23.html
+image=http://magiccards.info/scans/en/wwk/23.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=1
+cost={W}
+timing=tapping
+

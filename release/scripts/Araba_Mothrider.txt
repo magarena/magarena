@@ -1,0 +1,14 @@
+>Araba Mothrider
+url=http://magiccards.info/sok/en/2.html
+image=http://magiccards.info/scans/en/sok/2.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Samurai
+converted=2
+color=w
+cost={1}{W}
+pt=1/1
+ability=flying
+timing=main
+

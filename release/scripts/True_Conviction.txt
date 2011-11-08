@@ -1,0 +1,12 @@
+>True Conviction
+url=http://magiccards.info/som/en/25.html
+image=http://magiccards.info/scans/en/som/25.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=6
+cost={3}{W}{W}{W}
+static=player
+timing=enchantment
+

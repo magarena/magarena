@@ -1,0 +1,14 @@
+>Volcanic Strength
+url=http://magiccards.info/m11/en/158.html
+image=http://magiccards.info/scans/en/m11/158.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=2
+cost={1}{R}
+given_pt=2/2
+given_ability=mountainwalk
+timing=aura
+

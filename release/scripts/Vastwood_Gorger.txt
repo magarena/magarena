@@ -1,0 +1,13 @@
+>Vastwood Gorger
+url=http://magiccards.info/m12/en/200.html
+image=http://magiccards.info/scans/en/zen/192.jpg 
+value=4
+rarity=C
+type=Creature
+subtype=Wurm
+color=g
+converted=6
+cost={5}{G}
+pt=5/6
+timing=main
+

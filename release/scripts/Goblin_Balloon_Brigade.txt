@@ -1,0 +1,13 @@
+>Goblin Balloon Brigade
+url=http://magiccards.info/m11/en/140.html
+image=http://magiccards.info/scans/en/m11/140.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+

@@ -1,0 +1,13 @@
+>Battered Golem
+url=http://magiccards.info/5dn/en/106.html
+image=http://magiccards.info/scans/en/5dn/106.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+converted=3
+cost={3}
+pt=3/2
+ability=doesn't untap during untap step
+timing=main
+

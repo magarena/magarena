@@ -1,0 +1,13 @@
+>Order of the Sacred Bell
+url=http://magiccards.info/9e/en/261.html
+image=http://magiccards.info/scans/en/9e/261.jpg 
+value=3
+rarity=C
+type=Creature
+subtype=Human,Monk
+color=g
+converted=4
+cost={3}{G}
+pt=4/3
+timing=main
+

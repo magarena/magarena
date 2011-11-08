@@ -1,0 +1,13 @@
+>Avenger of Zendikar
+url=http://magiccards.info/wwk/en/96.html
+image=http://magiccards.info/scans/en/wwk/96.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Elemental
+color=g
+converted=7
+cost={5}{G}{G}
+pt=5/5
+timing=fmain
+

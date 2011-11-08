@@ -1,0 +1,9 @@
+>Inkmoth Nexus
+url=http://magiccards.info/mbs/en/145.html
+image=http://magiccards.info/scans/en/mbs/145.jpg
+value=4
+rarity=R
+type=Land
+timing=land
+mana_or_combat
+

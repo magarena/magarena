@@ -1,0 +1,14 @@
+>Dusk Imp
+url=http://magiccards.info/dpa/en/23.html
+image=http://magiccards.info/scans/en/dpa/23.jpg 
+value=2
+ability=flying
+rarity=C
+type=Creature
+subtype=Imp
+color=b
+converted=3
+cost={2}{B}
+pt=2/1
+timing=main
+

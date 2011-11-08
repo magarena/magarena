@@ -1,0 +1,13 @@
+>Ajani's Pridemate
+url=http://magiccards.info/ddh/en/9.html
+image=http://magiccards.info/scans/en/m11/3.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Cat,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+timing=fmain
+

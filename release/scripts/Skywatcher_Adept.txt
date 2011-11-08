@@ -1,0 +1,13 @@
+>Skywatcher Adept
+url=http://magiccards.info/roe/en/88.html
+image=http://magiccards.info/scans/en/roe/88.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+color=u
+converted=1
+cost={U}
+pt=1/1
+timing=main
+

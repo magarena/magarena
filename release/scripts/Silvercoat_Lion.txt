@@ -1,0 +1,13 @@
+>Silvercoat Lion
+url=http://magiccards.info/m11/en/31.html
+image=http://magiccards.info/scans/en/m11/31.jpg 
+value=1
+rarity=C
+type=Creature
+subtype=Cat
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+timing=main
+

@@ -1,0 +1,10 @@
+>Tree of Tales
+url=http://magiccards.info/pch/en/140.html
+image=http://magiccards.info/scans/en/pch/140.jpg
+value=2
+rarity=C
+type=Artifact,Land
+mana=g4
+basic=g
+timing=land
+
