@@ -6,4 +6,7 @@ ref/*
 launch4j/*
 Magarena*/*
 decks/*
-release/*
+release/Magarena/cards/*
+release/Magarena/texts/*
+release/Magarena/tokens/*
+release/Magarena/symbols/*
