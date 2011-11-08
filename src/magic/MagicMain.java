@@ -20,6 +20,7 @@ public class MagicMain {
 	
 	private static final String GAME_PATH="Magarena";
 	private static final String MODS_PATH="mods";
+	private static final String SCRIPTS_PATH="scripts";
 	
     private static final String gamePath;
 	
@@ -54,8 +55,11 @@ public class MagicMain {
 			System.err.println("Unable to set look and feel. Probably missing the latest version of Java 6.");
 			e.printStackTrace();
 		}
-		
+	
+        final long start_time = System.currentTimeMillis();
 		initialize();
+        final double duration = (System.currentTimeMillis() - start_time) / 1000;
+        System.err.println("Initalization of engine took " + duration + "s");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 new MagicFrame();
@@ -70,6 +74,10 @@ public class MagicMain {
 	
 	public static String getModsPath() {
 		return getGamePath()+File.separatorChar+MODS_PATH;
+	}
+	
+    public static String getScriptsPath() {
+		return getGamePath()+File.separatorChar+SCRIPTS_PATH;
 	}
 
 	static void initializeEngine() {
