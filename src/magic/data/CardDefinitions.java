@@ -24,11 +24,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Enumeration;
+import java.net.URL;
 
 /**
- * Load card definitions from cards.txt and cards2.txt
- */
-public class CardDefinitions {
+ * Load card definitions from cards.txt
+ */public class CardDefinitions {
 
 	private static final CardDefinitions INSTANCE=new CardDefinitions();
 	
@@ -163,9 +164,11 @@ public class CardDefinitions {
 		if(cardDefinition == null) {
 			return;
 		}
-	
-		cardDefinition.setIndex(cards.size());
-		cards.add(cardDefinition);
+
+        if (cardDefinition.getIndex() == -1) {
+            cardDefinition.setIndex(cards.size());
+            cards.add(cardDefinition);
+        }
 		cardsMap.put(cardDefinition.getFullName(),cardDefinition);
 
         //add to default vintage cube
@@ -197,6 +200,48 @@ public class CardDefinitions {
 			addDefinition(cardDefinition);
 		}
 	}
+
+    private MagicCardDefinition string2carddef(final String content) {
+        final Scanner sc = new Scanner(content);
+		MagicCardDefinition cardDefinition = null;
+		while (sc.hasNextLine()) {
+			final String line=sc.nextLine().trim();
+            if (line.length() == 0) {
+                //blank line
+            } else if (line.startsWith(">")) {
+                //start of a card
+				final String name=line.substring(1);
+				cardDefinition=new MagicCardDefinition(name);
+		        cardDefinition.setIndex(cards.size());
+                cards.add(cardDefinition);
+			} else {
+                //property of a card
+                int i = line.indexOf("=");
+				if (i < 0) {
+                    setProperty(cardDefinition, line, "");
+                } else {
+                    setProperty(cardDefinition, line.substring(0, i), line.substring(i+1));
+                } 
+			}
+		}
+		if (cardDefinition == null) {				
+            throw new RuntimeException("Malformed card script");
+        } else {
+            return cardDefinition;
+        }
+    }
+	
+    private void loadCardDefinition(final File file) {
+        try { //load card definitions
+            final String content = FileIO.toStr(file);
+            final MagicCardDefinition cdef = string2carddef(content);
+            checkCard(cdef);
+            addDefinition(cdef);
+        } catch (final IOException ex) {
+            System.err.println("ERROR! Unable to load card definitions from " + file);
+            return;
+        }
+    }
 	
 	private void loadCardDefinitions(final String filename) {
 		loadCardDefinitions(filename, false);
@@ -261,12 +306,22 @@ public class CardDefinitions {
 	}
 	
 	public void loadCardDefinitions() {
-		loadCardDefinitions(CARDS_FILENAME);
+		//load the cards from file in jar
+        loadCardDefinitions(CARDS_FILENAME);
+        
+        //load all files in card directory
+        final File cardDir = new File(MagicMain.getScriptsPath());
+        final File[] files = cardDir.listFiles();
+        for (File file : files) {
+            loadCardDefinition(file);
+        }
+
 		filterCards();
 		printStatistics();
 		
 		// add tokens.
-		loadCardDefinitions(TokenCardDefinitions.TOKEN_FILENAME, true); // add definiton after setting properties
+        // add definiton after setting properties
+		loadCardDefinitions(TokenCardDefinitions.TOKEN_FILENAME, true); 
 		
 		addDefinition(MagicCardDefinition.UNKNOWN);
 
