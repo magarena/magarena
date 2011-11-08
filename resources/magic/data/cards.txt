@@ -25049,3 +25049,30 @@ type=Artifact
 converted=6
 cost={6}
 timing=artifact
+
+>Viashino Outrider
+url=http://magiccards.info/us/en/223.html
+image=http://magiccards.info/scans/en/us/223.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Viashino
+color=r
+converted=3
+cost={2}{R}
+pt=4/3
+timing=main
+
+>Vug Lizard
+url=http://magiccards.info/us/en/227.html
+image=http://magiccards.info/scans/en/us/227.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Lizard
+color=r
+converted=3
+cost={1}{R}{R}
+pt=3/4
+ability=mountainwalk
+timing=main
