@@ -25076,3 +25076,16 @@ cost={1}{R}{R}
 pt=3/4
 ability=mountainwalk
 timing=main
+
+>Winding Wurm
+url=http://magiccards.info/us/en/285.html
+image=http://magiccards.info/scans/en/us/285.jpg
+value=5
+rarity=C
+type=Creature
+subtype=Wurm
+color=g
+converted=5
+cost={4}{G}
+pt=6/6
+timing=main
