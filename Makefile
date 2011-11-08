@@ -36,7 +36,7 @@ casts: $(MAG)
 	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | flip -u > $@
 
 warnings_H.txt: warnings.txt
-	grep "(H)" $^ > $@
+	grep "(H)" $^ | grep -v System.out | grep -v System.err > $@
 
 warnings.txt: $(MAG)
 	~/App/findbugs-1.3.9/bin/findbugs \
