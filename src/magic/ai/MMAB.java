@@ -96,12 +96,13 @@ public class MMAB implements MagicAI {
             achoices.get(1) :
             achoices.get(0);
         
-        while (System.currentTimeMillis() - START_TIME < MAX_TIME_PER_CHOICE / 5) {
+        while (System.currentTimeMillis() - START_TIME < MAX_TIME_PER_CHOICE) {
 			pruneScore = createPruneScore();
 			processingLeft = 1;
 			startWorker(firstChoice,mainPhases,INITIAL_MAX_DEPTH,INITIAL_MAX_GAMES);
 			waitUntilProcessed();
-            if (mainPhases >= MAX_MAIN_PHASES || firstChoice.aiScore.getScore() > 99900000) {
+            if (mainPhases >= MAX_MAIN_PHASES || 
+                firstChoice.aiScore.getScore() > ArtificialScoringSystem.WIN_GAME_SCORE / 2) {
 				break;
 			}
 			scoreBoard.clear();
