@@ -306,9 +306,6 @@ import java.net.URL;
 	}
 	
 	public void loadCardDefinitions() {
-		//load the cards from file in jar
-        loadCardDefinitions(CARDS_FILENAME);
-        
         //load all files in card directory
         final File cardDir = new File(MagicMain.getScriptsPath());
         final File[] files = cardDir.listFiles();
