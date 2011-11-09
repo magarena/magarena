@@ -1,5 +1,6 @@
 package magic.card;
 
+import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
@@ -9,6 +10,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
@@ -27,7 +29,8 @@ public class Benalish_Lancer {
                     new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " +
-                    "it enters the battlefield with a +1/+1 counter on it.");
+                    "it enters the battlefield with two +1/+1 counters " +
+                    "on it and with first strike.");
 		}
 		@Override
 		public void executeEvent(
@@ -44,8 +47,11 @@ public class Benalish_Lancer {
 				game.doAction(new MagicChangeCountersAction(
 						permanent,
 	            		MagicCounterType.PlusOne,
-	            		1,
+	            		2,
 	            		true));
+				game.doAction(new MagicSetAbilityAction(
+						permanent,
+						MagicAbility.FirstStrike));
 			}
 		}
 	};
