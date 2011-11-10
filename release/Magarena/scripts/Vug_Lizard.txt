@@ -1,0 +1,14 @@
+>Vug Lizard
+url=http://magiccards.info/us/en/227.html
+image=http://magiccards.info/scans/en/us/227.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Lizard
+color=r
+converted=3
+cost={1}{R}{R}
+pt=3/4
+ability=mountainwalk
+timing=main
+

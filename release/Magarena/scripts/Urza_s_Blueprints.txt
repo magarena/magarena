@@ -7,3 +7,4 @@ type=Artifact
 converted=6
 cost={6}
 timing=artifact
+
