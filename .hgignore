@@ -4,7 +4,6 @@ crash/*
 build/*
 ref/*
 launch4j/*
-Magarena*/*
 decks/*
 release/Magarena/cards/*
 release/Magarena/texts/*
