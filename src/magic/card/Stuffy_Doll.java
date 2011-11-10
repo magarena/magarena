@@ -49,17 +49,26 @@ public class Stuffy_Doll {
 	
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();
-            final int amount=damage.getDealtAmount();
-            return (damage.getTarget()==permanent) ?
-				new MagicEvent(
+		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {  
+            if (damage.getTarget() == permanent) {
+            	final MagicPlayer player = permanent.getController();
+                final int amount = damage.getDealtAmount();
+                MagicTarget target;
+                if (permanent.getChosenTarget() == null) {
+                	target = game.getOpponent(player);
+                	permanent.setChosenTarget(target);
+                } else {
+                	target = permanent.getChosenTarget();
+                }
+				return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,game.getOpponent(player),amount},
+                        new Object[]{permanent,target,amount},
                         this,
-                        permanent + " deals "+amount+" damage to your opponent.") :
-                MagicEvent.NONE;
+                        permanent + " deals " + amount +
+                        " damage to " + target + ".");
+            }
+            return MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
@@ -67,7 +76,11 @@ public class Stuffy_Doll {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],(Integer)data[2],false);
+			final MagicDamage damage = new MagicDamage(
+					(MagicSource)data[0],
+					(MagicTarget)data[1],
+					(Integer)data[2],
+					false);
 			game.doAction(new MagicDealDamageAction(damage));
 		}
     };

@@ -53,6 +53,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private MagicPermanent blockedCreature = MagicPermanent.NONE;
     private final MagicPermanentList blockingCreatures;	
     private MagicCardList exiledCards;
+    private MagicTarget chosenTarget;
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
 	private int stateFlags = 
 			MagicPermanentState.Summoned.getMask() |
@@ -111,6 +112,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		blockedCreature=copyMap.copy(sourcePermanent.blockedCreature);
 		blockingCreatures=new MagicPermanentList(copyMap,sourcePermanent.blockingCreatures);
 		exiledCards = new MagicCardList(copyMap,sourcePermanent.exiledCards);
+		chosenTarget = copyMap.copy(sourcePermanent.chosenTarget);
 		damage=sourcePermanent.damage;
 		preventDamage=sourcePermanent.preventDamage;
 		fixedScore=sourcePermanent.fixedScore;
@@ -557,6 +559,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     	exiledCards.remove(card);
 	}
 	
+	public MagicTarget getChosenTarget() {
+		return chosenTarget;
+	}
+	
+	public void setChosenTarget(final MagicTarget target) {
+		chosenTarget = target;
+	}
 	
 	void checkState(final MagicGame game, final List<MagicAction> actions) {
 		if (isCreature(game)) {
