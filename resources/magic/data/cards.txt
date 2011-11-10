@@ -25089,3 +25089,13 @@ converted=5
 cost={4}{G}
 pt=6/6
 timing=main
+
+>The Rack
+url=http://magiccards.info/tsts/en/113.html
+image=http://magiccards.info/scans/en/tsts/113.jpg
+value=3
+rarity=U
+type=Artifact
+converted=1
+cost={1}
+timing=smain
