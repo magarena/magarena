@@ -14,6 +14,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
+import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 
@@ -47,19 +48,13 @@ public class Stuffy_Doll {
 		}
 	};
 	
-    public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
+    public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {  
             if (damage.getTarget() == permanent) {
             	final MagicPlayer player = permanent.getController();
                 final int amount = damage.getDealtAmount();
-                MagicTarget target;
-                if (permanent.getChosenTarget() == null) {
-                	target = game.getOpponent(player);
-                	permanent.setChosenTarget(target);
-                } else {
-                	target = permanent.getChosenTarget();
-                }
+                final MagicTarget target = permanent.getChosenTarget();
 				return new MagicEvent(
                         permanent,
                         player,
@@ -82,6 +77,25 @@ public class Stuffy_Doll {
 					(Integer)data[2],
 					false);
 			game.doAction(new MagicDealDamageAction(damage));
+		}
+    };
+    
+    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
+		@Override
+		public MagicEvent executeTrigger(
+				final MagicGame game,
+				final MagicPermanent permanent,
+				final MagicPlayer player) {
+			permanent.setChosenTarget(game.getOpponent(player));
+			return MagicEvent.NONE;
+		}
+
+		@Override
+		public void executeEvent(
+				final MagicGame game,
+				final MagicEvent event,
+				final Object data[],
+				final Object[] choiceResults) {
 		}
     };
 }
