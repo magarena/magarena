@@ -1,0 +1,12 @@
+>Smallpox
+url=http://magiccards.info/m12/en/108.html
+image=http://magiccards.info/scans/en/m12/108.jpg
+value=3
+removal=4
+rarity=U
+type=Sorcery
+color=b
+converted=2
+cost={B}{B}
+timing=removal
+

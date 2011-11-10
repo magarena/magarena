@@ -1,0 +1,12 @@
+>Wretched Banquet
+url=http://magiccards.info/cfx/en/56.html
+image=http://magiccards.info/scans/en/cfx/56.jpg
+value=3
+removal=4
+rarity=C
+type=Sorcery
+color=b
+converted=1
+cost={B}
+timing=removal
+
