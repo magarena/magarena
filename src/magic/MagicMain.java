@@ -6,11 +6,6 @@ import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.KeywordDefinitions;
 import magic.ui.MagicFrame;
-import magic.ui.widget.BlankPainter;
-
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Insets;
 import java.io.File;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
