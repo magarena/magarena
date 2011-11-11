@@ -88,14 +88,20 @@ public class MagicMain {
 	}
 	
 	private static void initialize() {
-        final boolean madeGamePath = new File(getGamePath()).mkdir();
-        if (!madeGamePath) {
-            System.err.println("Unable to create directory " + getGamePath());
+        final File gamePathFile = new File(getGamePath());
+        if (!gamePathFile.exists()) {
+        	final boolean isCreated = gamePathFile.mkdir();
+            if (!isCreated) {
+            	System.err.println("Unable to create directory " + getGamePath());
+            }
         }
 
-        final boolean madeModsPath = new File(getModsPath()).mkdir();
-        if (!madeModsPath) {
-            System.err.println("Unable to create directory " + getModsPath());
+        final File modsPathFile = new File(getModsPath());
+        if (!modsPathFile.exists()) {
+        	final boolean isCreated = modsPathFile.mkdir();
+            if (!isCreated) {
+            	System.err.println("Unable to create directory " + getModsPath());
+            }
         }
         
         DeckUtils.createDeckFolder();
