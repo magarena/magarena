@@ -1,0 +1,11 @@
+>Gemstone Mine
+url=http://magiccards.info/tsts/en/119.html
+image=http://magiccards.info/scans/en/tsts/119.jpg
+value=3
+rarity=U
+type=Land
+mana=b3g3r3u3w3
+basic=bgruw
+timing=land
+
+requires_card_code
