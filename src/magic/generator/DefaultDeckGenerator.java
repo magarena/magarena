@@ -184,7 +184,7 @@ public class DefaultDeckGenerator {
 			if (cardDef.isValid()) {
 				deck.addCard(cardDef, false);
             } else {
-				System.out.println("Cannot find " + name);
+				System.err.println("Cannot find " + name);
 			}
 		}
 	}
