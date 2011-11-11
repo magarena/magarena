@@ -1,0 +1,13 @@
+>Canker Abomination
+url=http://magiccards.info/eve/en/115.html
+image=http://magiccards.info/scans/en/eve/115.jpg 
+value=5
+rarity=U
+type=Creature
+subtype=Treefolk,Horror
+color=bg
+converted=4
+cost={2}{B/G}{B/G}
+pt=6/6
+timing=main
+requires_card_code
