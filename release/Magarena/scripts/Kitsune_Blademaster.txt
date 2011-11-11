@@ -12,3 +12,4 @@ pt=2/2
 ability=first strike
 timing=main
 
+requires_card_code

@@ -8,3 +8,4 @@ mana=b3g3r3u3w3
 basic=bgruw
 timing=land
 
+requires_card_code

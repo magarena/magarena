@@ -11,3 +11,4 @@ cost={1}{U}{R}
 pt=0/1
 timing=smain
 
+requires_card_code

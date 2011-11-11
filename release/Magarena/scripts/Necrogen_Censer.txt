@@ -8,3 +8,4 @@ converted=3
 cost={3}
 timing=artifact
 
+requires_card_code

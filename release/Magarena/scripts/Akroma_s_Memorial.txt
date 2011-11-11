@@ -9,3 +9,4 @@ cost={7}
 static=player
 timing=artifact
 
+requires_card_code

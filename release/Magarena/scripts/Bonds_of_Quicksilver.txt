@@ -13,3 +13,4 @@ given_ability=doesn't untap during untap step
 ability=flash
 timing=tapping
 
+requires_card_code

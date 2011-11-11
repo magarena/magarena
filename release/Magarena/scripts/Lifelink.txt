@@ -11,3 +11,4 @@ cost={W}
 given_ability=lifelink
 timing=aura
 
+requires_card_code

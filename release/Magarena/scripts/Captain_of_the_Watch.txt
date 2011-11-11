@@ -13,3 +13,4 @@ ability=vigilance
 static=player
 timing=smain
 
+requires_card_code

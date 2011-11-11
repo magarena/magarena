@@ -10,3 +10,4 @@ cost={3}{R}
 static=player
 timing=enchantment
 
+requires_card_code

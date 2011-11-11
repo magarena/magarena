@@ -12,3 +12,4 @@ pt=5/5
 ability=wither
 timing=smain
 
+requires_card_code

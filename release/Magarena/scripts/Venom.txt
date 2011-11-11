@@ -10,3 +10,4 @@ converted=3
 cost={1}{G}{G}
 timing=aura
 
+requires_card_code

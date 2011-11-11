@@ -11,3 +11,4 @@ cost={B/G}{R}
 pt=2/1
 timing=fmain
 
+requires_card_code

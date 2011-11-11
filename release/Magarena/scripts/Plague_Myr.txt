@@ -12,3 +12,4 @@ ability=infect
 timing=smain
 mana_or_combat
 
+requires_card_code

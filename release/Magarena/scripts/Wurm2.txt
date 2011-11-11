@@ -1,0 +1,10 @@
+>Wurm
+token=Wurm2
+image=http://magiccards.info/extras/token/scars-of-mirrodin/wurm-2.jpg
+value=3
+type=Artifact,Creature
+subtype=Wurm
+converted=0
+cost={0}
+pt=3/3
+ability=lifelink

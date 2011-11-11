@@ -11,3 +11,4 @@ cost={R}{R}
 pt=2/2
 timing=fmain
 
+requires_card_code

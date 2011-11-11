@@ -11,3 +11,4 @@ cost={2}{G}
 ability=trample
 timing=main
 
+requires_card_code

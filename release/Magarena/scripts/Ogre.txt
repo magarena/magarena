@@ -1,0 +1,11 @@
+>Ogre
+token=Ogre
+image=http://magiccards.info/extras/token/worldwake/ogre.jpg
+value=3
+type=Creature
+subtype=Ogre
+color=r
+converted=0
+cost={0}
+pt=3/3
+

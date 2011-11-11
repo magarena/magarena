@@ -10,3 +10,4 @@ cost={6}
 pt=1/1
 timing=main
 
+requires_card_code

@@ -10,3 +10,4 @@ cost={W}{W}
 static=all
 timing=enchantment
 
+requires_card_code

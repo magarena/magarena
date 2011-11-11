@@ -12,3 +12,4 @@ pt=6/6
 ability=flying
 timing=fmain
 
+requires_card_code

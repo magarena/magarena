@@ -12,3 +12,4 @@ pt=8/8
 ability=flying,trample,haste
 timing=fmain
 
+requires_card_code

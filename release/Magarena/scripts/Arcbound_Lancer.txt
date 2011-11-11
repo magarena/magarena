@@ -10,3 +10,4 @@ cost={7}
 ability=first strike,modular
 timing=main
 
+requires_card_code

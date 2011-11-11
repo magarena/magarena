@@ -13,3 +13,4 @@ ability=flying,wither
 static=opponent
 timing=fmain
 
+requires_card_code

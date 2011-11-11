@@ -11,3 +11,4 @@ pt=5/5
 ability=attacks each turn if able,doesn't untap during untap step
 timing=main
 
+requires_card_code

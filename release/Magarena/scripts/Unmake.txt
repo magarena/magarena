@@ -10,3 +10,4 @@ converted=3
 cost={W/B}{W/B}{W/B}
 timing=removal
 
+requires_card_code

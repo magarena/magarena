@@ -8,3 +8,4 @@ converted=2
 cost={2}
 timing=tapland
 
+requires_card_code

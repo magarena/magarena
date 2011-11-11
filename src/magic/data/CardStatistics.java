@@ -75,6 +75,10 @@ public class CardStatistics {
 		}
 		
 		for (final MagicCardDefinition card : cards) {
+            //ignore tokens
+            if (card.isToken()) {
+                continue;
+            }
 												
 			totalRarity[card.getRarity()]++;
 						

@@ -1,0 +1,11 @@
+>Germ
+token=Germ
+image=http://magiccards.info/extras/token/mirrodin-besieged/germ.jpg
+value=1
+type=Creature
+subtype=Germ
+color=b
+converted=0
+cost={0}
+pt=0/0
+

@@ -1,0 +1,10 @@
+>Myr
+token=Myr1
+image=http://magiccards.info/extras/token/scars-of-mirrodin/myr.jpg
+value=1
+type=Artifact,Creature
+subtype=Myr
+converted=0
+cost={0}
+pt=1/1
+

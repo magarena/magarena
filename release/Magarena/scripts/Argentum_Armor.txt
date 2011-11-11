@@ -11,3 +11,4 @@ equip={6}
 given_pt=6/6
 timing=equipment
 
+requires_card_code

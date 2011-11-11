@@ -11,3 +11,4 @@ cost={U}
 given_pt=-3/-0
 timing=removal
 
+requires_card_code

@@ -1,0 +1,12 @@
+>Griffin
+token=Griffin
+image=http://i248.photobucket.com/albums/gg179/AC666AC/MTG/Griffinfull.jpg
+value=3
+type=Creature
+subtype=Griffin
+color=w
+converted=0
+cost={0}
+pt=2/2
+ability=flying
+

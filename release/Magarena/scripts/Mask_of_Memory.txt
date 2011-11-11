@@ -10,3 +10,4 @@ cost={2}
 equip={1}
 timing=equipment
 
+requires_card_code

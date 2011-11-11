@@ -12,3 +12,4 @@ cost={1}{W}{W}
 pt=1/3
 timing=main
 
+requires_card_code

@@ -1,0 +1,11 @@
+>Voja
+token=Voja
+image=http://img.photobucket.com/albums/v237/Xand0r/voja-token_ravnica_300-2.jpg
+value=2
+type=Legendary,Creature
+subtype=Wolf
+color=gw
+converted=0
+cost={0}
+pt=2/2
+

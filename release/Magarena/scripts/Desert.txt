@@ -7,3 +7,4 @@ type=Land
 subtype=Desert
 timing=land
 
+requires_card_code

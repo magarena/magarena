@@ -1,0 +1,11 @@
+>Dragon
+token=Dragon5
+image=http://magiccards.info/extras/token/worldwake/dragon.jpg
+value=5
+type=Creature
+subtype=Dragon
+color=r
+converted=0
+cost={0}
+pt=5/5
+ability=flying

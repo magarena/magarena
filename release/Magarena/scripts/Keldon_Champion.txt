@@ -12,3 +12,4 @@ pt=3/2
 ability=haste
 timing=fmain
 
+requires_card_code

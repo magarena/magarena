@@ -11,3 +11,4 @@ cost={1}{G}{G}{U}
 pt=3/3
 timing=smain
 
+requires_card_code

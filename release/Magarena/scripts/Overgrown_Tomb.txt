@@ -9,3 +9,4 @@ mana=b3g3
 basic=bg
 timing=land
 
+requires_card_code

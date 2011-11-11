@@ -11,3 +11,4 @@ cost={2}{G}
 ability=hexproof
 timing=smain
 
+requires_card_code

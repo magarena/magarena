@@ -8,3 +8,4 @@ mana=w3u3
 timing=tapland
 mana_or_combat
 
+requires_card_code

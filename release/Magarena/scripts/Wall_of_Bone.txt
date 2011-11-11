@@ -12,3 +12,4 @@ pt=1/4
 ability=defender
 timing=smain
 
+requires_card_code

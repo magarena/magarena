@@ -12,3 +12,4 @@ pt=2/2
 static=all
 timing=fmain
 
+requires_card_code

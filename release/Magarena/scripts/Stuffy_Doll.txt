@@ -11,3 +11,4 @@ pt=0/1
 ability=indestructible
 timing=smain
 
+requires_card_code

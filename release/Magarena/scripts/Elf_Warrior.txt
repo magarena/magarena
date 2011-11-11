@@ -1,0 +1,11 @@
+>Elf Warrior
+token=Elf1
+image=http://magiccards.info/extras/token/shadowmoor/elf-warrior-1.jpg
+value=1
+type=Creature
+subtype=Elf,Warrior
+color=g
+converted=0
+cost={0}
+pt=1/1
+

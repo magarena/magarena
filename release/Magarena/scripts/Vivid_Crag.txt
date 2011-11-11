@@ -7,3 +7,4 @@ type=Land
 mana=b1g1r3u1w1
 timing=tapland
 
+requires_card_code

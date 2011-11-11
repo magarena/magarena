@@ -11,3 +11,4 @@ equip={3}
 given_ability=deathtouch
 timing=equipment
 
+requires_card_code

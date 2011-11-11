@@ -11,3 +11,4 @@ cost={1}{R}{G}
 equip={3}
 timing=equipment
 
+requires_card_code

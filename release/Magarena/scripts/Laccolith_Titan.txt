@@ -11,3 +11,4 @@ cost={5}{R}{R}
 pt=6/6
 timing=main
 
+requires_card_code

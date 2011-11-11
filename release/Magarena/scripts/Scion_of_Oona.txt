@@ -12,3 +12,4 @@ ability=flash,flying
 static=player
 timing=flash
 
+requires_card_code

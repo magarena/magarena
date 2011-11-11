@@ -7,3 +7,4 @@ type=Artifact,Land
 ability=indestructible
 timing=land
 
+requires_card_code

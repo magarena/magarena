@@ -13,3 +13,4 @@ ability=flash
 given_ability=reach,can block creatures with shadow
 timing=flash
 
+requires_card_code

@@ -10,3 +10,4 @@ converted=1
 cost={W}
 timing=aura
 
+requires_card_code

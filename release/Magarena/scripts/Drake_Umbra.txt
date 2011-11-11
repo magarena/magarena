@@ -13,3 +13,4 @@ ability=totem armor
 given_ability=flying
 timing=aura
 
+requires_card_code

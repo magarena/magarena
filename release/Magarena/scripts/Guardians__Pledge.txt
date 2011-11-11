@@ -9,3 +9,4 @@ converted=3
 cost={1}{W}{W}
 timing=pump
 
+requires_card_code

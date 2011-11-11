@@ -12,3 +12,4 @@ pt=6/6
 ability=trample,persist
 timing=main
 
+requires_card_code

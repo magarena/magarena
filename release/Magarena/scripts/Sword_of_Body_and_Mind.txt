@@ -12,3 +12,4 @@ given_pt=2/2
 given_ability=protection from green,protection from blue
 timing=equipment
 
+requires_card_code

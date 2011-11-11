@@ -11,3 +11,4 @@ cost={W}
 given_ability=defender
 timing=aura
 
+requires_card_code

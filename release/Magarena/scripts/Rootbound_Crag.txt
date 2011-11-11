@@ -8,3 +8,4 @@ mana=r3g3
 basic=rg
 timing=land
 
+requires_card_code

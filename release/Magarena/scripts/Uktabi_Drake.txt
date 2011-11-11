@@ -12,3 +12,4 @@ pt=2/1
 ability=flying,haste
 timing=fmain
 
+requires_card_code

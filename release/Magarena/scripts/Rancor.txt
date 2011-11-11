@@ -12,3 +12,4 @@ given_pt=2/0
 given_ability=trample
 timing=aura
 
+requires_card_code

@@ -12,3 +12,4 @@ pt=1/1
 ability=flash,flying
 timing=counterflash
 
+requires_card_code

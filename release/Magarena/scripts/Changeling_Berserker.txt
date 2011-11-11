@@ -13,3 +13,4 @@ pt=5/3
 ability=changeling,haste
 timing=main
 
+requires_card_code

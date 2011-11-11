@@ -1,0 +1,12 @@
+>Eldrazi Spawn
+token=Eldrazi Spawn
+image=http://magiccards.info/extras/token/rise-of-the-eldrazi/eldrazi-spawn-1.jpg
+value=1
+type=Creature
+subtype=Eldrazi,Spawn
+converted=0
+cost={0}
+pt=0/1
+mana_or_combat
+sacrifice_colorless
+

@@ -8,3 +8,4 @@ mana=g3u3
 basic=gu
 timing=land
 
+requires_card_code
