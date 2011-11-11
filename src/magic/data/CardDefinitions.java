@@ -24,16 +24,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Enumeration;
-import java.net.URL;
 
 /**
  * Load card definitions from cards.txt
- */public class CardDefinitions {
+ */
+public class CardDefinitions {
 
 	private static final CardDefinitions INSTANCE=new CardDefinitions();
-	
-	private static final String CARDS_FILENAME="cards.txt";
 	
 	public static final String CARD_TEXT_FOLDER = "texts";
 	public static final String CARD_IMAGE_FOLDER = "cards";
