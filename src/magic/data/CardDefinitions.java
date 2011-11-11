@@ -132,17 +132,20 @@ import java.net.URL;
 		} else if ("mana_or_combat".equals(property)) {
             card.setExcludeManaOrCombat();
 		} else if ("sacrifice_colorless".equals(property)) {
-			card.addManaActivation(new MagicSacrificeManaActivation(Arrays.asList(MagicManaType.Colorless)));
-		} else {
+            card.addManaActivation(
+                    new MagicSacrificeManaActivation(Arrays.asList(MagicManaType.Colorless)));
+		} else if ("requires_card_code".equals(property)) {
+	        addCardSpecificCode(card);	
+        } else {
             throw new RuntimeException("Unknown card property " + property + "=" + value);
 		}
 	}
     
 	private void filterCards() {
 		for (final MagicCardDefinition card : cards) {
-			if (!card.isLand()) {
+			if (!card.isLand() && !card.isToken()) {
 				spellCards.add(card);
-			} else if (!card.isBasic()) {
+			} else if (!card.isBasic() && !card.isToken()) {
 				landCards.add(card);
 			}
 		}
@@ -161,21 +164,24 @@ import java.net.URL;
 	}
 	
 	private void addDefinition(final MagicCardDefinition cardDefinition) {
-		if(cardDefinition == null) {
-			return;
+		if (cardDefinition == null) {
+			throw new RuntimeException("CardDefinitions.addDefinition passed null");
 		}
 
         if (cardDefinition.getIndex() == -1) {
             cardDefinition.setIndex(cards.size());
             cards.add(cardDefinition);
         }
+
 		cardsMap.put(cardDefinition.getFullName(),cardDefinition);
 
-        //add to default vintage cube
+        //add to default all (vintage) cube
         if (!cardDefinition.isToken()) {
 			CubeDefinitions.getInstance().getCubeDefinition("all").add(cardDefinition.getName());
         }
+	}
         
+    private static void addCardSpecificCode(final MagicCardDefinition cardDefinition) {
         //link to companion object containing static variables
         final String fname = cardDefinition.getFullName();
         final String cname = fname.replaceAll("[^A-Za-z]", "_");
@@ -183,17 +189,16 @@ import java.net.URL;
             final Class c = Class.forName("magic.card." + cname);
             final Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
-                final Object obj = Modifier.isPublic(field.getModifiers()) ? field.get(null) : null;
-                if (obj != null) {
-                    cardDefinition.add(obj);
+                if (Modifier.isPublic(field.getModifiers())) {
+                    cardDefinition.add(field.get(null));
                 }
             }
         } catch (final ClassNotFoundException ex) {
-            //no companion class found
+            throw new RuntimeException(ex);
         } catch (final IllegalAccessException ex) {
             throw new RuntimeException(ex);
         }
-	}
+    }
 	
 	private void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
 		for (final MagicCardDefinition cardDefinition : cardDefinitions) {
@@ -233,6 +238,7 @@ import java.net.URL;
 	
     private void loadCardDefinition(final File file) {
         try { //load card definitions
+            System.err.println("processing " + file);
             final String content = FileIO.toStr(file);
             final MagicCardDefinition cdef = string2carddef(content);
             checkCard(cdef);
@@ -318,7 +324,7 @@ import java.net.URL;
 		
 		// add tokens.
         // add definiton after setting properties
-		loadCardDefinitions(TokenCardDefinitions.TOKEN_FILENAME, true); 
+		// loadCardDefinitions(TokenCardDefinitions.TOKEN_FILENAME, true); 
 		
 		addDefinition(MagicCardDefinition.UNKNOWN);
 

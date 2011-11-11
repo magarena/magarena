@@ -11,8 +11,6 @@ public class TokenCardDefinitions {
 
 	private static final TokenCardDefinitions INSTANCE = new TokenCardDefinitions();
 	
-	public static final String TOKEN_FILENAME = "tokens.txt";
-	
 	private final List<MagicCardDefinition> tokens;
 	private final Map<String,MagicCardDefinition> tokensMap;
 	
