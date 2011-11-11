@@ -10,3 +10,4 @@ cost={4}
 ability=haste,modular
 timing=fmain
 
+requires_card_code

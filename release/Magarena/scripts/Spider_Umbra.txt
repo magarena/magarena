@@ -13,3 +13,4 @@ given_ability=reach
 ability=totem armor
 timing=aura
 
+requires_card_code

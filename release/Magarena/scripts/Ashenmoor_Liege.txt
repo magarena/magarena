@@ -12,3 +12,4 @@ pt=4/1
 static=player
 timing=fmain
 
+requires_card_code

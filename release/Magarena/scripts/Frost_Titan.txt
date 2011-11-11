@@ -11,3 +11,4 @@ cost={4}{U}{U}
 pt=6/6
 timing=fmain
 
+requires_card_code

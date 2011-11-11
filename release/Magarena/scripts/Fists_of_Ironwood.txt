@@ -11,3 +11,4 @@ cost={1}{G}
 given_ability=trample
 timing=aura
 
+requires_card_code

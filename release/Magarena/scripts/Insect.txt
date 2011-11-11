@@ -1,0 +1,12 @@
+>Insect
+token=Insect1
+image=http://magiccards.info/extras/token/scars-of-mirrodin/insect.jpg
+value=1
+type=Creature
+subtype=Insect
+color=g
+converted=0
+cost={0}
+pt=1/1
+ability=infect
+

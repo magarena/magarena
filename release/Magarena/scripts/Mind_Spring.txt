@@ -9,3 +9,4 @@ converted=2
 cost={X}{U}{U}
 timing=draw
 
+requires_card_code

@@ -10,3 +10,4 @@ cost={6}
 ability=fear,modular
 timing=main
 
+requires_card_code

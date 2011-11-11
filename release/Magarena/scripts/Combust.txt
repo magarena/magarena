@@ -11,3 +11,4 @@ cost={1}{R}
 ability=can't be countered
 timing=removal
 
+requires_card_code

@@ -12,3 +12,4 @@ pt=0/3
 ability=defender
 timing=main
 
+requires_card_code

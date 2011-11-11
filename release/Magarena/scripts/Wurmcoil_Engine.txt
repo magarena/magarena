@@ -11,3 +11,4 @@ pt=6/6
 ability=deathtouch,lifelink
 timing=main
 
+requires_card_code

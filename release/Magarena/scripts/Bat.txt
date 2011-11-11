@@ -1,0 +1,12 @@
+>Bat
+token=Bat
+image=http://img.photobucket.com/albums/v237/Xand0r/bat-token_guildpact_300.jpg
+value=2
+type=Creature
+subtype=Bat
+color=b
+converted=0
+cost={0}
+pt=1/1
+ability=flying
+

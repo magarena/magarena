@@ -12,3 +12,4 @@ pt=5/3
 ability=flying
 timing=fmain
 
+requires_card_code

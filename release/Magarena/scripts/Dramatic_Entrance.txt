@@ -9,3 +9,4 @@ converted=5
 cost={3}{G}{G}
 timing=token
 
+requires_card_code

@@ -12,3 +12,4 @@ pt=1/1
 timing=main
 mana_or_combat
 
+requires_card_code

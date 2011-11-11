@@ -8,3 +8,4 @@ mana=w3u3b3
 basic=wub
 timing=tapland
 
+requires_card_code

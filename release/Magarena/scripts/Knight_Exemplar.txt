@@ -13,3 +13,4 @@ ability=first strike
 static=player
 timing=fmain
 
+requires_card_code

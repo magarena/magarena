@@ -12,3 +12,4 @@ cost={2}{B}{B}
 pt=2/3
 timing=main
 
+requires_card_code

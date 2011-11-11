@@ -9,3 +9,4 @@ mana=u3r3
 basic=ur
 timing=land
 
+requires_card_code

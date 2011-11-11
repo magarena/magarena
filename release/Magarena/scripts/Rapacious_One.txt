@@ -12,3 +12,4 @@ pt=5/4
 ability=trample
 timing=main
 
+requires_card_code

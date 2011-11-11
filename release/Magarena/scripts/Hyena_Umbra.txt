@@ -13,3 +13,4 @@ ability=totem armor
 given_ability=first strike
 timing=aura
 
+requires_card_code

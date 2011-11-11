@@ -9,3 +9,4 @@ mana=w3u3
 basic=wu
 timing=land
 
+requires_card_code

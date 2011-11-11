@@ -12,3 +12,4 @@ pt=0/1
 ability=shadow
 timing=main
 
+requires_card_code

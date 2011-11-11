@@ -1,0 +1,12 @@
+>Faerie Rogue
+token=Faerie Rogue
+image=http://magiccards.info/extras/token/morningtide/faerie-rogue.jpg
+value=2
+type=Creature
+subtype=Faerie,Rogue
+color=b
+converted=0
+cost={0}
+pt=1/1
+ability=flying
+

@@ -9,3 +9,4 @@ converted=5
 cost={2}{G}{G}{G}
 timing=pump
 
+requires_card_code

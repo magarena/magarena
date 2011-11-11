@@ -13,3 +13,4 @@ pt=2/2
 ability=persist
 timing=fmain
 
+requires_card_code

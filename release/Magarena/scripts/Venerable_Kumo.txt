@@ -12,3 +12,4 @@ pt=2/3
 ability=reach
 timing=main
 
+requires_card_code

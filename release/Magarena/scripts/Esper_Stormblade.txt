@@ -11,3 +11,4 @@ cost={W/B}{U}
 pt=2/1
 timing=main
 
+requires_card_code

@@ -13,3 +13,4 @@ given_pt=4/4
 given_ability=vigilance,lifelink
 timing=equipment
 
+requires_card_code

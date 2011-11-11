@@ -8,3 +8,4 @@ mana=g3w3u3
 basic=gwu
 timing=tapland
 
+requires_card_code

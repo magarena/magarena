@@ -11,3 +11,4 @@ cost={3}{U}
 given_ability=flying
 timing=aura
 
+requires_card_code

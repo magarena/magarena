@@ -10,3 +10,4 @@ cost={5}
 ability=indestructible,attacks each turn if able
 timing=main
 
+requires_card_code

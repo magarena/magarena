@@ -6,3 +6,4 @@ rarity=R
 type=Legendary,Land
 timing=land
 
+requires_card_code

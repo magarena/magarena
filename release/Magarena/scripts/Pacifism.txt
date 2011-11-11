@@ -12,3 +12,4 @@ cost={1}{W}
 given_ability=can't attack or block
 timing=tapping
 
+requires_card_code

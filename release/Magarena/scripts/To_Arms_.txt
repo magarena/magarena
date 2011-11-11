@@ -9,3 +9,4 @@ converted=2
 cost={1}{W}
 timing=tapping
 
+requires_card_code

@@ -12,3 +12,4 @@ pt=2/2
 ability=flash
 timing=counterflash
 
+requires_card_code

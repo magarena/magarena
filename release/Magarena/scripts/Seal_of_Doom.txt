@@ -10,3 +10,4 @@ converted=3
 cost={2}{B}
 timing=enchantment
 
+requires_card_code

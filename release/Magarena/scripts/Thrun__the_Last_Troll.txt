@@ -12,3 +12,4 @@ pt=4/4
 ability=can't be countered,hexproof
 timing=fmain
 
+requires_card_code

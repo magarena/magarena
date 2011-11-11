@@ -12,3 +12,4 @@ pt=6/6
 ability=swampwalk
 timing=smain
 
+requires_card_code

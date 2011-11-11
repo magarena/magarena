@@ -9,3 +9,4 @@ converted=5
 cost={2}{R}{R}{R}
 timing=enchantment
 
+requires_card_code

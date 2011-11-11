@@ -12,3 +12,4 @@ given_pt=1/1
 ability=flash,totem armor
 timing=pump
 
+requires_card_code

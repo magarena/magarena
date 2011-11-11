@@ -12,3 +12,4 @@ pt=2/1
 ability=can't be countered
 timing=main
 
+requires_card_code

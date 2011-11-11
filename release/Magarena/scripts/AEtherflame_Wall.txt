@@ -12,3 +12,4 @@ pt=0/4
 ability=defender,can block creatures with shadow
 timing=smain
 
+requires_card_code

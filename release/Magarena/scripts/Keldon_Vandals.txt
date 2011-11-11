@@ -12,3 +12,4 @@ cost={2}{R}
 pt=4/1
 timing=main
 
+requires_card_code

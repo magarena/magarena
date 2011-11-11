@@ -1,0 +1,11 @@
+>Spirit
+token=Spirit2
+image=http://magiccards.info/extras/token/shadowmoor/spirit.jpg
+value=1
+type=Creature
+subtype=Spirit
+color=w
+converted=0
+cost={0}
+pt=1/1
+ability=flying

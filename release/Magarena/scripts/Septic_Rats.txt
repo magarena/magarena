@@ -12,3 +12,4 @@ pt=2/2
 ability=infect
 timing=main
 
+requires_card_code

@@ -13,3 +13,4 @@ given_ability=flying,first strike
 given_subtype=Angel
 timing=aura	
 
+requires_card_code

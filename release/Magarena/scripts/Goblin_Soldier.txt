@@ -1,0 +1,11 @@
+>Goblin Soldier
+token=Goblin Soldier
+image=http://magiccards.info/extras/token/eventide/goblin-soldier.jpg
+value=1
+type=Creature
+subtype=Goblin,Soldier
+color=rw
+converted=0
+cost={0}
+pt=1/1
+

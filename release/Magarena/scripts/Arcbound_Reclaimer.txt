@@ -10,3 +10,4 @@ cost={4}
 ability=modular
 timing=main
 
+requires_card_code

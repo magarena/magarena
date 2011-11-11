@@ -7,3 +7,4 @@ type=Artifact
 converted=1
 cost={1}
 timing=smain
+requires_card_code

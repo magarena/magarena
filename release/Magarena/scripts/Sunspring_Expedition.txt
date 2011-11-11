@@ -9,3 +9,4 @@ converted=1
 cost={W}
 timing=enchantment
 
+requires_card_code

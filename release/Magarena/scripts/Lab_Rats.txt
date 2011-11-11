@@ -9,3 +9,4 @@ converted=1
 cost={B}
 timing=token
 
+requires_card_code

@@ -8,3 +8,4 @@ mana=r3g3w3
 basic=rgw
 timing=tapland
 
+requires_card_code

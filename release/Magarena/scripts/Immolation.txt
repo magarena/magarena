@@ -11,3 +11,4 @@ cost={R}
 given_pt=2/-2
 timing=aura
 
+requires_card_code

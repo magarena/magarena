@@ -12,3 +12,4 @@ pt=2/2
 ability=changeling
 timing=fmain
 
+requires_card_code

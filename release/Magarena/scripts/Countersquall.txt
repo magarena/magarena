@@ -9,3 +9,4 @@ converted=2
 cost={U}{B}
 timing=counter
 
+requires_card_code

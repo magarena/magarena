@@ -10,3 +10,4 @@ converted=2
 cost={R}{G}
 timing=removal
 
+requires_card_code

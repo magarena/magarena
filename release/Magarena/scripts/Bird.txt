@@ -1,0 +1,11 @@
+>Bird
+token=Bird
+image=http://magiccards.info/extras/token/magic-2011/bird.jpg
+value=3
+type=Creature
+subtype=Bird
+color=w
+converted=0
+cost={0}
+pt=3/3
+ability=flying

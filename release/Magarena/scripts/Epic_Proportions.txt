@@ -13,3 +13,4 @@ given_ability=trample
 ability=flash
 timing=pump
 
+requires_card_code

@@ -12,3 +12,4 @@ pt=2/1
 ability=flash
 timing=flash
 
+requires_card_code

@@ -12,3 +12,4 @@ pt=7/7
 ability=attacks each turn if able
 timing=main
 
+requires_card_code

@@ -12,3 +12,4 @@ cost={B}
 given_pt=-2/-2
 timing=removal
 
+requires_card_code

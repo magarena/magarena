@@ -8,3 +8,4 @@ mana=w3
 timing=land
 mana_or_combat
 
+requires_card_code

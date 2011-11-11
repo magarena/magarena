@@ -12,3 +12,4 @@ pt=2/1
 ability=protection from white,protection from black
 timing=main
 
+requires_card_code

@@ -12,3 +12,4 @@ pt=1/6
 ability=defender,flying
 timing=smain
 
+requires_card_code

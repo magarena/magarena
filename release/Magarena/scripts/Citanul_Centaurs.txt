@@ -12,3 +12,4 @@ pt=6/3
 ability=shroud
 timing=main
 
+requires_card_code

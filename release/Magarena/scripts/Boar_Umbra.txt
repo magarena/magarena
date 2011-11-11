@@ -12,3 +12,4 @@ given_pt=3/3
 ability=totem armor
 timing=aura
 
+requires_card_code

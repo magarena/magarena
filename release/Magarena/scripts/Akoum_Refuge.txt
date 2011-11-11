@@ -8,3 +8,4 @@ mana=b3r3
 basic=br
 timing=tapland
 
+requires_card_code

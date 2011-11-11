@@ -1,0 +1,10 @@
+>Zombie
+token=Zombie
+image=http://magiccards.info/extras/token/shards-of-alara/zombie.jpg
+value=2
+type=Creature
+subtype=Zombie
+color=b
+converted=0
+cost={0}
+pt=2/2

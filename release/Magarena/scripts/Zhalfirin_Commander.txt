@@ -12,3 +12,4 @@ pt=2/2
 ability=flanking
 timing=fmain
 
+requires_card_code

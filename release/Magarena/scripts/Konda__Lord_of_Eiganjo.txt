@@ -12,3 +12,4 @@ pt=3/3
 ability=vigilance,indestructible
 timing=main
 
+requires_card_code

@@ -1,0 +1,10 @@
+>Beast
+token=Beast3
+image=http://magiccards.info/extras/token/magic-2011/beast.jpg
+value=3
+type=Creature
+subtype=Beast
+color=g
+converted=0
+cost={0}
+pt=3/3

@@ -12,3 +12,4 @@ given_pt=1/1
 given_ability=protection from creatures
 timing=aura
 
+requires_card_code

@@ -1,0 +1,11 @@
+>Saproling
+token=Saproling
+image=http://magiccards.info/extras/token/tenth-edition/saproling.jpg
+value=1
+type=Creature
+subtype=Saproling
+color=g
+converted=0
+cost={0}
+pt=1/1
+

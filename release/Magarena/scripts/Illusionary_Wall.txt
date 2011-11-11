@@ -12,3 +12,4 @@ pt=7/4
 ability=defender,flying,first strike
 timing=main
 
+requires_card_code

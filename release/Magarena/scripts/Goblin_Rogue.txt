@@ -1,0 +1,11 @@
+>Goblin Rogue
+token=Goblin Rogue1
+image=http://magiccards.info/extras/token/lorwyn/goblin-rogue.jpg
+value=1
+type=Creature
+subtype=Goblin,Rogue
+color=b
+converted=0
+cost={0}
+pt=1/1
+

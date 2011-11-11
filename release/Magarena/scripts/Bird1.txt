@@ -1,0 +1,11 @@
+>Bird
+token=Bird1
+image=http://magiccards.info/extras/token/zendikar/bird.jpg
+value=1
+type=Creature
+subtype=Bird
+color=w
+converted=0
+cost={0}
+pt=1/1
+ability=flying

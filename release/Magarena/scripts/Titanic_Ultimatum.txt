@@ -9,3 +9,4 @@ converted=7
 cost={R}{R}{G}{G}{G}{W}{W}
 timing=pump
 
+requires_card_code

@@ -13,3 +13,4 @@ ability=flying
 static=all
 timing=fmain
 
+requires_card_code

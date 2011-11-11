@@ -11,3 +11,4 @@ cost={3}{W}
 pt=2/3
 timing=fmain
 
+requires_card_code

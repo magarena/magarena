@@ -9,3 +9,4 @@ converted=3
 cost={2}{W}
 timing=main
 
+requires_card_code
