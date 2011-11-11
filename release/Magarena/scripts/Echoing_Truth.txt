@@ -1,0 +1,13 @@
+>Echoing Truth
+url=http://magiccards.info/ds/en/21.html
+image=http://magiccards.info/scans/en/ds/21.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=removal
+
+requires_card_code

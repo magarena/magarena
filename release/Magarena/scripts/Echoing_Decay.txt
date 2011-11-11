@@ -1,0 +1,13 @@
+>Echoing Decay
+url=http://magiccards.info/ds/en/41.html
+image=http://magiccards.info/scans/en/ds/41.jpg
+value=3
+removal=3
+rarity=C
+type=Instant
+color=b
+converted=2
+cost={1}{B}
+timing=removal
+
+requires_card_code
