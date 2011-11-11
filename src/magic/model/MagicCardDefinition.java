@@ -256,7 +256,9 @@ public class MagicCardDefinition {
     }
     
     public void add(final Object obj) {
-        if (obj instanceof MagicSpellCardEvent) {
+        if (obj == null) {
+            throw new RuntimeException("MagicCardDefinition.add passed null");
+        } else if (obj instanceof MagicSpellCardEvent) {
             final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
             setCardEvent(cevent);
             cevent.setCardIndex(index);
