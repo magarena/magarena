@@ -1,0 +1,12 @@
+>Echoing Courage
+url=http://magiccards.info/ds/en/74.html
+image=http://magiccards.info/scans/en/ds/74.jpg
+value=3
+rarity=C
+type=Instant
+color=g
+converted=2
+cost={1}{G}
+timing=pump
+
+requires_card_code
