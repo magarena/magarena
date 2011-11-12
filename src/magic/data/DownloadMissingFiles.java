@@ -54,8 +54,7 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 			final String line = sc.nextLine();
 			if (line.startsWith(">")) {
 				imagesPathFile=new File(gamePathFile,line.substring(1).trim());
-				final boolean isCreated = imagesPathFile.mkdir();
-                if (!isCreated) {
+                if (!imagesPathFile.exists() && !imagesPathFile.mkdir()) {
                     System.err.println("WARNING. Unable to create " + imagesPathFile);
                 }
 			} else {
@@ -80,10 +79,10 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 		final File tokensPathFile = new File(gamePathFile, CardDefinitions.TOKEN_IMAGE_FOLDER);
 		final File textPathFile = new File(gamePathFile, CardDefinitions.CARD_TEXT_FOLDER);
 		
-		if (!tokensPathFile.mkdir()) {
+        if (!tokensPathFile.exists() && !tokensPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + tokensPathFile);
         }
-        if (!textPathFile.mkdir()) {
+        if (!textPathFile.exists() && !textPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + textPathFile);
         }
 		
