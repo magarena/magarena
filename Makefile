@@ -36,7 +36,7 @@ casts: $(MAG)
 	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | flip -u > $@
 
 warnings_H.txt: warnings.txt
-	grep "(H)" $^ | grep -v System.out | grep -v System.err > $@
+	grep "(H)" $^ | grep -v System.out | grep -v System.err | grep -v EXS > $@
 
 warnings.txt: $(MAG)
 	~/App/findbugs-1.3.9/bin/findbugs \
@@ -83,7 +83,7 @@ cards/standard_all.txt:
 cards/new.txt: cards/existing.txt
 	diff $^ cards/existing_old.txt | grep "<" | sed 's/< /  /' > $@
 
-cards/existing.txt: resources/magic/data/cards.txt
+cards/existing.txt: $(wildcard release/Magarena/scripts/*.txt)
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 	flip -u $@
 
