@@ -25,7 +25,6 @@ import magic.ui.theme.ThemeFactory;
 
 import javax.swing.ImageIcon;
 import java.awt.Color;
-import java.lang.StringBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -374,7 +373,7 @@ public class MagicCardDefinition {
 	}
 	
 	public String getTypeString() {
-		StringBuffer sb = new StringBuffer();
+		StringBuilder sb = new StringBuilder();
 		if (isLand()) {
 			sb.append(MagicType.Land.toString());
 		} 
