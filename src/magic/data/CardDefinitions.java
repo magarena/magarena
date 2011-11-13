@@ -149,8 +149,8 @@ public class CardDefinitions {
 	}
 
 	private static void checkCard(final MagicCardDefinition card) {
-		if(card == null) {
-			return;
+		if (card == null) {
+			throw new RuntimeException("CardDefinitions.checkCard passed null");
 		}
 		
         //every card should have a timing hint
@@ -205,7 +205,7 @@ public class CardDefinitions {
 
     private MagicCardDefinition string2carddef(final String content) {
         final Scanner sc = new Scanner(content);
-		MagicCardDefinition cardDefinition = null;
+		MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
 		while (sc.hasNextLine()) {
 			final String line=sc.nextLine().trim();
             if (line.length() == 0) {
@@ -226,7 +226,7 @@ public class CardDefinitions {
                 } 
 			}
 		}
-		if (cardDefinition == null) {				
+		if (cardDefinition == MagicCardDefinition.UNKNOWN) {				
             throw new RuntimeException("Malformed card script");
         } else {
             return cardDefinition;
@@ -245,68 +245,6 @@ public class CardDefinitions {
             return;
         }
     }
-	
-	private void loadCardDefinitions(final String filename) {
-		loadCardDefinitions(filename, false);
-	}
-	
-	private void loadCardDefinitions(final String filename, final boolean addCardDefLast) {
-		// Cards.
-		final InputStream stream=this.getClass().getResourceAsStream(filename);
-        String content = null;
-        try { //load card definitions
-            content = FileIO.toStr(stream);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load card definitions from " + filename);
-            return;
-        }
-
-        final Scanner sc = new Scanner(content);
-		MagicCardDefinition cardDefinition = null;
-		while (sc.hasNextLine()) {
-			final String line=sc.nextLine().trim();
-            if (line.length() == 0) {
-                //blank line
-            } else if (line.startsWith(">")) {
-                //start of a card
-				
-				// check and add previous card
-				checkCard(cardDefinition);
-				if(addCardDefLast) {
-					// add previous card after setting all properties (for tokens)
-					addDefinition(cardDefinition);
-				}
-				
-				final String name=line.substring(1);
-				cardDefinition=new MagicCardDefinition(name);
-				if(!addCardDefLast) {
-					addDefinition(cardDefinition);
-				}
-			} else {
-                //property of a card
-				final String[] tokens = line.split("=");
-                if (tokens.length == 1) {
-                    setProperty(cardDefinition, tokens[0], "");
-                } else if (tokens.length == 2) {
-                    setProperty(cardDefinition, tokens[0], tokens[1]);
-                } else {
-					if(tokens.length > 0 && ("image".equals(tokens[0]) || "url".equals(tokens[0]))) {
-						// urls may have = signs in it
-						int i = line.indexOf("=");
-						setProperty(cardDefinition, tokens[0], line.substring(i+1));
-					} else {
-						throw new RuntimeException("Malformed line: " + line);
-					}
-                }
-			}
-		}
-		// check and add last card
-		checkCard(cardDefinition);
-		if(addCardDefLast) {
-			// add previous card after setting all properties (for tokens)
-			addDefinition(cardDefinition);
-		}
-	}
 	
 	public void loadCardDefinitions() {
         //load all files in card directory
