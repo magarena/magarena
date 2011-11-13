@@ -8,11 +8,40 @@ import magic.model.MagicSubType;
 
 public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
 
-	private final String colorText = "br";
+	private static final String colorText = "br";
+	private static final String[] spells = {
+        "Falkenrath Marauders", 
+        "Falkenrath Noble", 
+        "Markov Patrician", 
+        "Markov Patrician", 
+        "Rakish Heir", 
+        "Rakish Heir", 
+        "Rakish Heir", 
+        "Stromkirk Noble", 
+        "Stromkirk Noble", 
+        "Stromkirk Noble", 
+        "Doom Blade", 
+        "Go for the Throat", 
+        "Go for the Throat", 
+        "Mask of Avacyn"
+    };
+		
+    private static final String[] lands = {
+        "Blackcleave Cliffs", 
+        "Blackcleave Cliffs", 
+        "Blackcleave Cliffs", 
+        "Blackcleave Cliffs", 
+        "Blood Crypt", 
+        "Blood Crypt", 
+        "Blood Crypt", 
+        "Dragonskull Summit", 
+        "Dragonskull Summit", 
+        "Dragonskull Summit", 
+        "Dragonskull Summit"
+    };
 	
 	public Vampire_Rage_DeckGenerator() {
 		super(null);
-		
 		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
 	}
 	
@@ -29,13 +58,11 @@ public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Falkenrath Marauders", "Falkenrath Noble", "Markov Patrician", "Markov Patrician", "Rakish Heir", "Rakish Heir", "Rakish Heir", "Stromkirk Noble", "Stromkirk Noble", "Stromkirk Noble", "Doom Blade", "Go for the Throat", "Go for the Throat", "Mask of Avacyn"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, spells);
 	}
 	
 	public void addRequiredLands(MagicCondensedDeck deck) {
-		String[] cards = {"Blackcleave Cliffs", "Blackcleave Cliffs", "Blackcleave Cliffs", "Blackcleave Cliffs", "Blood Crypt", "Blood Crypt", "Blood Crypt", "Dragonskull Summit", "Dragonskull Summit", "Dragonskull Summit", "Dragonskull Summit"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, lands);
 	}
 	
 	public void setColors(MagicPlayerProfile profile) {

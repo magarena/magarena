@@ -7,11 +7,42 @@ import magic.model.MagicPlayerProfile;
 
 public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
 
-	private final String colorText = "wg";
+	private static final String colorText = "wg";
+    private static final String[] spells = {
+        "Hero of Bladehold",
+        "Hero of Bladehold",
+        "Hero of Bladehold",
+        "Blade Splicer",
+        "Blade Splicer",
+        "Intangible Virtue",
+        "Intangible Virtue",
+        "Intangible Virtue",
+        "Intangible Virtue",
+        "Midnight Haunting",
+        "Midnight Haunting",
+        "Oblivion Ring",
+        "Oblivion Ring",
+        "Timely Reinforcements",
+        "Timely Reinforcements",
+        "Day of Judgment",
+        "Day of Judgment",
+        "Vital Splicer",
+        "Vital Splicer"
+    };
+
+	private static final String[] lands = {
+        "Razorverge Thicket",
+        "Razorverge Thicket",
+        "Razorverge Thicket",
+        "Razorverge Thicket",
+        "Sunpetal Grove",
+        "Sunpetal Grove",
+        "Sunpetal Grove",
+        "Sunpetal Grove"
+    };
 	
 	public Token_Madness_DeckGenerator() {
 		super(null);
-		
 		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
 	}
 	
@@ -28,13 +59,11 @@ public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Blade Splicer", "Blade Splicer", "Intangible Virtue", "Intangible Virtue", "Intangible Virtue", "Intangible Virtue", "Midnight Haunting", "Midnight Haunting", "Oblivion Ring", "Oblivion Ring", "Timely Reinforcements", "Timely Reinforcements", "Day of Judgment", "Day of Judgment", "Vital Splicer", "Vital Splicer"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, spells);
 	}
 	
 	public void addRequiredLands(MagicCondensedDeck deck) {
-		String[] cards = {"Razorverge Thicket", "Razorverge Thicket", "Razorverge Thicket", "Razorverge Thicket", "Sunpetal Grove", "Sunpetal Grove", "Sunpetal Grove", "Sunpetal Grove"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, lands);
 	}
 	
 	public void setColors(MagicPlayerProfile profile) {

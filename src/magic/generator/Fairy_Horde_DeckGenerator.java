@@ -8,11 +8,34 @@ import magic.model.MagicSubType;
 
 public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
 
-	private final String colorText = "bu";
+	private static final String colorText = "bu";
+	private static final String[] spells = {
+        "Scion of Oona",
+        "Scion of Oona",
+        "Scion of Oona",
+        "Scion of Oona",
+        "Bitterblossom",
+        "Bitterblossom",
+        "Bitterblossom",
+        "Terror",
+        "Damnation",
+        "Mistbind Clique",
+        "Mistbind Clique",
+        "Mistbind Clique"
+    };
+		
+    private static final String[] lands = {
+        "Mutavault",
+        "Mutavault",
+        "Mutavault",
+        "Mutavault",
+        "Creeping Tar Pit",
+        "Watery Grave",
+        "Watery Grave"
+    };
 	
 	public Fairy_Horde_DeckGenerator() {
 		super(null);
-		
 		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
 	}
 	
@@ -29,13 +52,11 @@ public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Scion of Oona", "Scion of Oona", "Scion of Oona", "Scion of Oona", "Bitterblossom", "Bitterblossom", "Bitterblossom", "Terror", "Damnation", "Mistbind Clique", "Mistbind Clique", "Mistbind Clique"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, spells);
 	}
 	
 	public void addRequiredLands(MagicCondensedDeck deck) {
-		String[] cards = {"Mutavault", "Mutavault", "Mutavault", "Mutavault", "Creeping Tar Pit", "Watery Grave", "Watery Grave"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, lands);
 	}
 	
 	public void setColors(MagicPlayerProfile profile) {

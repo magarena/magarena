@@ -7,11 +7,38 @@ import magic.model.MagicPlayerProfile;
 
 public class White_Metal_DeckGenerator extends DefaultDeckGenerator {
 
-	private final String colorText = "w";
+	private static final String colorText = "w";
+	private static final String[] spells = {
+        "Hero of Bladehold",
+        "Hero of Bladehold",
+        "Hero of Bladehold",
+        "Hero of Bladehold",
+        "Oblivion Ring",
+        "Memnite",
+        "Memnite",
+        "Mikaeus, the Lunarch",
+        "Mirran Crusader",
+        "Signal Pest",
+        "Signal Pest",
+        "Signal Pest",
+        "Glint Hawk Idol",
+        "Glint Hawk Idol",
+        "Glint Hawk Idol",
+        "Glint Hawk Idol",
+        "Mox Opal",
+        "Mox Opal",
+        "Leonin Relic-Warder"
+    };
 	
+	private static final String[] lands = {
+        "Inkmoth Nexus", 
+        "Inkmoth Nexus", 
+        "Inkmoth Nexus", 
+        "Inkmoth Nexus"
+    };
+
 	public White_Metal_DeckGenerator() {
 		super(null);
-		
 		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
 	}
 	
@@ -28,13 +55,11 @@ public class White_Metal_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Hero of Bladehold", "Oblivion Ring", "Memnite", "Memnite", "Mikaeus, the Lunarch", "Mirran Crusader", "Signal Pest", "Signal Pest", "Signal Pest", "Glint Hawk Idol", "Glint Hawk Idol", "Glint Hawk Idol", "Glint Hawk Idol", "Mox Opal", "Mox Opal", "Leonin Relic-Warder"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, spells);
 	}
 	
 	public void addRequiredLands(MagicCondensedDeck deck) {
-		String[] cards = {"Inkmoth Nexus", "Inkmoth Nexus", "Inkmoth Nexus", "Inkmoth Nexus"};
-		addRequiredCards(deck, cards);
+		addRequiredCards(deck, lands);
 	}
 	
 	public void setColors(MagicPlayerProfile profile) {

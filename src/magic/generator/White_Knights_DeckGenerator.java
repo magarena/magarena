@@ -8,11 +8,26 @@ import magic.model.MagicSubType;
 
 public class White_Knights_DeckGenerator extends DefaultDeckGenerator {
 
-	private final String colorText = "w";
+	private static final String colorText = "w";
+	private static final String[] cards = {
+        "Knight Exemplar", 
+        "Knight Exemplar", 
+        "Knight Exemplar", 
+        "Knight Exemplar", 
+        "Day of Judgment", 
+        "Student of Warfare", 
+        "Student of Warfare", 
+        "Sun Titan", 
+        "Kinsbaile Cavalier", 
+        "Honor of the Pure", 
+        "Honor of the Pure", 
+        "Honor of the Pure", 
+        "Hero of Bladehold", 
+        "Hero of Bladehold"
+    };
 	
 	public White_Knights_DeckGenerator() {
 		super(null);
-		
 		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
 	}
 	
@@ -29,7 +44,6 @@ public class White_Knights_DeckGenerator extends DefaultDeckGenerator {
 	}
 	
 	public void addRequiredSpells(MagicCondensedDeck deck) {
-		String[] cards = {"Knight Exemplar", "Knight Exemplar", "Knight Exemplar", "Knight Exemplar", "Day of Judgment", "Student of Warfare", "Student of Warfare", "Sun Titan", "Kinsbaile Cavalier", "Honor of the Pure", "Honor of the Pure", "Honor of the Pure", "Hero of Bladehold", "Hero of Bladehold"};
 		addRequiredCards(deck, cards);
 	}
 	
