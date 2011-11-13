@@ -13,7 +13,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.StringBuffer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -172,7 +171,7 @@ public class DeckUtils {
         }
 
         // show error message for unsupported cards
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("The loaded deck contained unsupported card(s): ");
         
         // generate list of unsupported cards
