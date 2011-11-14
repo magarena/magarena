@@ -1,0 +1,13 @@
+>Carrion Ants
+url=http://magiccards.info/5e/en/12.html
+image=http://magiccards.info/scans/en/5e/12.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Insect
+color=b
+converted=4
+cost={2}{B}{B}
+pt=0/1
+timing=main
+requires_card_code
