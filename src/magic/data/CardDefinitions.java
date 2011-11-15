@@ -99,7 +99,9 @@ public class CardDefinitions {
 		} else if ("ability".equals(property)) {
 			final String names[]=value.split(",");
 			for (final String name : names) {
-				card.setAbility(MagicAbility.getAbility(name));
+                final MagicAbility ability = MagicAbility.getAbility(name);
+                final String arg = name.substring(ability.toString().length()).trim();
+				card.setAbility(ability, arg);
 			}
 		} else if ("given_pt".equals(property)) {
             if (!card.isEquipment() && !card.isAura()) {

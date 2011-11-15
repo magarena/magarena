@@ -13,12 +13,6 @@ import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicBattleCryTrigger;
-import magic.model.trigger.MagicExaltedTrigger;
-import magic.model.trigger.MagicLivingWeaponTrigger;
-import magic.model.trigger.MagicEchoTrigger;
-import magic.model.trigger.MagicTappedIntoPlayTrigger;
-import magic.model.trigger.MagicModularTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicCDA;
@@ -600,22 +594,14 @@ public class MagicCardDefinition {
         }
         return pt;
     }
-	
+
 	public void setAbility(final MagicAbility ability) {
-		abilityFlags|=ability.getMask();
-		if (ability==MagicAbility.Exalted) {
-			add(MagicExaltedTrigger.getInstance());
-		} else if (ability==MagicAbility.BattleCry) {
-			add(MagicBattleCryTrigger.getInstance());
-		} else if (ability==MagicAbility.LivingWeapon) {
-            add(MagicLivingWeaponTrigger.getInstance());
-        } else if (ability==MagicAbility.Echo) {
-            add(MagicEchoTrigger.create());
-        } else if (ability==MagicAbility.EntersTapped) {
-            add(MagicTappedIntoPlayTrigger.create());
-        } else if (ability==MagicAbility.Modular) {
-            add(MagicModularTrigger.create());
-        }
+        setAbility(ability, "");
+	}
+	
+	public void setAbility(final MagicAbility ability, final String arg) {
+        abilityFlags |= ability.getMask();
+        ability.addAbilityImpl(this, arg);
 	}
 
 	public long getAbilityFlags() {
