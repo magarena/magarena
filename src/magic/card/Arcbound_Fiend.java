@@ -17,8 +17,6 @@ public class Arcbound_Fiend {
 	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
 			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",3);
     
-    public static final MagicModularTrigger T2 = new MagicModularTrigger();
-    
     public static final MagicAtUpkeepTrigger T3 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {

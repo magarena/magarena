@@ -9,5 +9,4 @@ converted=8
 cost={8}
 ability=modular
 timing=main
-
 requires_card_code

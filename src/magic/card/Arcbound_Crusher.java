@@ -13,8 +13,6 @@ public class Arcbound_Crusher {
 	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
 			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",1);
     
-    public static final MagicModularTrigger T2 = new MagicModularTrigger();
-    
     public static final MagicWhenOtherComesIntoPlayTrigger T3 = new MagicWhenOtherComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {

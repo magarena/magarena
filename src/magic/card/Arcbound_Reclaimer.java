@@ -58,6 +58,4 @@ public class Arcbound_Reclaimer {
 
 	public static final MagicComesIntoPlayWithCounterTrigger T = 
 			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",2);
-	
-	public static final MagicModularTrigger T2 = new MagicModularTrigger();
 }

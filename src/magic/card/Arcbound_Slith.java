@@ -14,8 +14,6 @@ public class Arcbound_Slith {
 	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
 			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",1);
     
-    public static final MagicModularTrigger T2 = new MagicModularTrigger();
-    
     public static final MagicWhenDamageIsDealtTrigger T3 = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {

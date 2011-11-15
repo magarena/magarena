@@ -9,5 +9,4 @@ converted=4
 cost={4}
 ability=trample,modular
 timing=fmain
-
 requires_card_code
