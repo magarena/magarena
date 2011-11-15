@@ -2,6 +2,7 @@ package magic.model;
 
 public enum MagicAbility {
 
+    Modular("modular", 20),
     EntersTapped("enters tapped", -10),
     Echo("echo",-20),
 	AttacksEachTurnIfAble("attacks each turn if able",-10),
@@ -66,7 +67,6 @@ public enum MagicAbility {
 	BattleCry("battle cry",0),
 	Infect("infect",35),
     LivingWeapon("living weapon", 10),
-    Modular("modular",0),
     Flanking("flanking",10);
 
 	public static final long PROTECTION_FLAGS=
