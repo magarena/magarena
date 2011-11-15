@@ -7,6 +7,5 @@ type=Artifact,Creature
 subtype=Insect
 converted=2
 cost={2}
-ability=modular,flying
+ability=modular 1,flying
 timing=main
-requires_card_code

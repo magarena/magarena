@@ -13,13 +13,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicModularTrigger;
 
 public class Arcbound_Ravager {
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",1);
-    
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CONTROL_ARTIFACT_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),

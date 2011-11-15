@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Juggernaut
 converted=4
 cost={4}
-ability=trample,modular
+ability=trample,modular 1
 timing=fmain
 requires_card_code

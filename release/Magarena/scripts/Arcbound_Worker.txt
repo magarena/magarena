@@ -7,6 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 converted=1
 cost={1}
-ability=modular
+ability=modular 1
 timing=main
-requires_card_code

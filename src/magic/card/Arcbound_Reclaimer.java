@@ -18,8 +18,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicModularTrigger;
 
 public class Arcbound_Reclaimer {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation( 
@@ -55,7 +53,4 @@ public class Arcbound_Reclaimer {
 			});
 		}
 	};
-
-	public static final MagicComesIntoPlayWithCounterTrigger T = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",2);
 }

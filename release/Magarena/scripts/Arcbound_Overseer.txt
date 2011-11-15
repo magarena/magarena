@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Golem
 converted=8
 cost={8}
-ability=modular
+ability=modular 6
 timing=main
 requires_card_code

@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Horror
 converted=6
 cost={6}
-ability=fear,modular
+ability=fear,modular 3
 timing=main
 requires_card_code

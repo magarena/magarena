@@ -7,6 +7,5 @@ type=Artifact,Creature
 subtype=Beast
 converted=4
 cost={4}
-ability=haste,modular
+ability=haste,modular 2
 timing=fmain
-requires_card_code

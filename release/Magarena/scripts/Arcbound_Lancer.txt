@@ -7,6 +7,5 @@ type=Artifact,Creature
 subtype=Beast
 converted=7
 cost={7}
-ability=first strike,modular
+ability=first strike,modular 4
 timing=main
-requires_card_code
