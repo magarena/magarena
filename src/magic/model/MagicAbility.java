@@ -1,7 +1,8 @@
 package magic.model;
 
 public enum MagicAbility {
-	
+
+    Echo("echo",-20),
 	AttacksEachTurnIfAble("attacks each turn if able",-10),
 	CannotBlock("can't block",-50),
 	CannotAttackOrBlock("can't attack or block",-200),
@@ -66,7 +67,6 @@ public enum MagicAbility {
     LivingWeapon("living weapon", 10),
     Modular("modular",0),
     Flanking("flanking",10);
-	;
 
 	public static final long PROTECTION_FLAGS=
 		ProtectionFromBlack.getMask()|

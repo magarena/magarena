@@ -14,14 +14,19 @@ import magic.model.event.MagicEvent;
 public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
 
 	private String manaCost;
+    private static final MagicEchoTrigger INSTANCE = new MagicEchoTrigger();
 	
     public MagicEchoTrigger(final String manaCost) {
     	this.manaCost = manaCost;
 	}
     
-    public MagicEchoTrigger() {
+    private MagicEchoTrigger() {
     	this.manaCost = "";
 	}
+
+    public static MagicEchoTrigger create() {
+        return INSTANCE;
+    }
     
     @Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer data) {
