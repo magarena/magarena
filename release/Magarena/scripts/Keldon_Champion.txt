@@ -9,7 +9,6 @@ color=r
 converted=4
 cost={2}{R}{R}
 pt=3/2
-ability=haste
+ability=haste,echo
 timing=fmain
-
 requires_card_code

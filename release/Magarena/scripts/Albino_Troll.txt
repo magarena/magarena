@@ -10,5 +10,5 @@ converted=2
 cost={1}{G}
 pt=3/3
 timing=main
-
+ability=echo
 requires_card_code

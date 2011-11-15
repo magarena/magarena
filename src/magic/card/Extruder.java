@@ -18,8 +18,6 @@ import magic.model.target.MagicPumpTargetPicker;
 import magic.model.trigger.MagicEchoTrigger;
 
 public class Extruder {
-	public static final MagicEchoTrigger T = new MagicEchoTrigger();
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicCondition.CONTROL_ARTIFACT_CONDITION

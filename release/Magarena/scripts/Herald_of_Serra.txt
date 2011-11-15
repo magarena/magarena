@@ -9,7 +9,5 @@ color=w
 converted=4
 cost={2}{W}{W}
 pt=3/4
-ability=flying,vigilance
+ability=flying,vigilance,echo
 timing=main
-
-requires_card_code

@@ -9,7 +9,5 @@ color=r
 converted=2
 cost={1}{R}
 pt=2/2
-ability=haste
+ability=haste,echo
 timing=main
-
-requires_card_code

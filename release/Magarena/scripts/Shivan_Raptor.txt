@@ -9,7 +9,5 @@ color=r
 converted=3
 cost={2}{R}
 pt=3/1
-ability=first strike,haste
+ability=first strike,haste,echo
 timing=fmain
-
-requires_card_code

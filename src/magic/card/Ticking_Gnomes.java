@@ -19,8 +19,6 @@ import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicEchoTrigger;
 
 public class Ticking_Gnomes {
-	public static final MagicEchoTrigger T = new MagicEchoTrigger();
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Removal),

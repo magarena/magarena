@@ -15,8 +15,6 @@ import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicEchoTrigger;
 
 public class Urza_s_Blueprints {
-	public static final MagicEchoTrigger T = new MagicEchoTrigger();
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Draw),

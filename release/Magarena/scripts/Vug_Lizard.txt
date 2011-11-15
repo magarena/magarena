@@ -9,7 +9,5 @@ color=r
 converted=3
 cost={1}{R}{R}
 pt=3/4
-ability=mountainwalk
+ability=mountainwalk,echo
 timing=main
-
-requires_card_code

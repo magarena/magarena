@@ -13,8 +13,6 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Goblin_Marshal {
-	public static final MagicEchoTrigger T1 = new MagicEchoTrigger();
-	
 	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {

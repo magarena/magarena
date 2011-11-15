@@ -7,5 +7,5 @@ type=Artifact
 converted=6
 cost={6}
 timing=artifact
-
+ability=echo
 requires_card_code
