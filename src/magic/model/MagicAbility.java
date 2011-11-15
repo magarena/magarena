@@ -1,10 +1,37 @@
 package magic.model;
 
+import java.util.Collections;
+import java.util.List;
+import java.util.Arrays;
+
+import magic.model.MagicCardDefinition;
+import magic.model.trigger.MagicExaltedTrigger;
+import magic.model.trigger.MagicBattleCryTrigger;
+import magic.model.trigger.MagicLivingWeaponTrigger;
+import magic.model.trigger.MagicEchoTrigger;
+import magic.model.trigger.MagicTappedIntoPlayTrigger;
+import magic.model.trigger.MagicModularTrigger;
+import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
+
 public enum MagicAbility {
 
-    Modular("modular", 20),
-    EntersTapped("enters tapped", -10),
-    Echo("echo",-20),
+    Modular("modular", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+			card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+            card.add(MagicModularTrigger.create());
+        }
+    },
+    EntersTapped("enters tapped", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicTappedIntoPlayTrigger.create());
+        }
+    },
+    Echo("echo",-20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicEchoTrigger.create());
+        }
+    },
 	AttacksEachTurnIfAble("attacks each turn if able",-10),
 	CannotBlock("can't block",-50),
 	CannotAttackOrBlock("can't attack or block",-200),
@@ -28,14 +55,18 @@ public enum MagicAbility {
 	Defender("defender",-100),
 	DoesNotUntap("doesn't untap during untap step",-30),
 	DoubleStrike("double strike",100),
-	Exalted("exalted",10),
+	Exalted("exalted",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicExaltedTrigger.getInstance());
+        }
+    },
 	Fear("fear",50),
 	Flash("flash",0),
 	Flying("flying",50),
 	FirstStrike("first strike",50),
 	Forestwalk("forestwalk",10),
 	Indestructible("indestructible",150),
-	Islandwalk("Islandwalk",10),
+	Islandwalk("islandwalk",10),
 	Haste("haste",0),
 	LifeLink("lifelink",40),
 	Mountainwalk("mountainwalk",10),
@@ -64,10 +95,19 @@ public enum MagicAbility {
 	Wither("wither",30),
 	TotemArmor("totem armor",0),
 	Intimidate("intimidate",45),
-	BattleCry("battle cry",0),
+	BattleCry("battle cry",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+			card.add(MagicBattleCryTrigger.getInstance());
+        }
+    },
 	Infect("infect",35),
-    LivingWeapon("living weapon", 10),
-    Flanking("flanking",10);
+    LivingWeapon("living weapon", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicLivingWeaponTrigger.getInstance());
+        }
+    },
+    Flanking("flanking",10),
+    None("",0);
 
 	public static final long PROTECTION_FLAGS=
 		ProtectionFromBlack.getMask()|
@@ -107,6 +147,10 @@ public enum MagicAbility {
 	public String getName() {
 		return name;
 	}
+
+    public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+        return;
+    }
 	
 	@Override
 	public String toString() {
@@ -136,12 +180,17 @@ public enum MagicAbility {
 	}
 	
 	public static MagicAbility getAbility(final String name) {
+        MagicAbility match = None;
 		for (final MagicAbility ability : values()) {
-			if (ability.getName().equalsIgnoreCase(name)) {
-				return ability;
+			if (name.startsWith(ability.getName()) && ability.getName().length() > match.getName().length()) {
+                match = ability;
 			}
 		}
-        throw new RuntimeException("Unable to convert " + name + " to an ability");
+        if (match == None) {
+            throw new RuntimeException("Unable to convert " + name + " to an ability");
+        } else {
+            return match;
+        }
 	}
 	
     public static long getAbilities(final String[] names) {
