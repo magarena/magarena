@@ -7,6 +7,15 @@ import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 
 public class MagicTappedIntoPlayTrigger extends MagicWhenComesIntoPlayTrigger {
+
+    private static final MagicTappedIntoPlayTrigger INSTANCE = new MagicTappedIntoPlayTrigger();
+
+    private MagicTappedIntoPlayTrigger() {}
+
+    public static MagicTappedIntoPlayTrigger create() {
+        return INSTANCE;
+    }
+
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
 		return new MagicEvent(

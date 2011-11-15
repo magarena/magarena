@@ -2,6 +2,7 @@ package magic.model;
 
 public enum MagicAbility {
 
+    EntersTapped("enters tapped", -10),
     Echo("echo",-20),
 	AttacksEachTurnIfAble("attacks each turn if able",-10),
 	CannotBlock("can't block",-50),

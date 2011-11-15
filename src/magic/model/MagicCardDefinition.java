@@ -17,6 +17,7 @@ import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicLivingWeaponTrigger;
 import magic.model.trigger.MagicEchoTrigger;
+import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicCDA;
@@ -609,6 +610,8 @@ public class MagicCardDefinition {
             addTrigger(MagicLivingWeaponTrigger.getInstance());
         } else if (ability==MagicAbility.Echo) {
             addTrigger(MagicEchoTrigger.create());
+        } else if (ability==MagicAbility.EntersTapped) {
+            addTrigger(MagicTappedIntoPlayTrigger.create());
         }
 	}
 

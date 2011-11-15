@@ -32,6 +32,9 @@ themes: \
 	release/mods/redfire_theme.zip \
 	release/mods/whiteangel_theme.zip
 
+code_to_remove: $(MAG)
+	cat src/magic/card/*.java | sed 's/\s\+//g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
+
 casts: $(MAG) 
 	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | flip -u > $@
 
