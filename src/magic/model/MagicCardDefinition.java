@@ -603,15 +603,15 @@ public class MagicCardDefinition {
 	public void setAbility(final MagicAbility ability) {
 		abilityFlags|=ability.getMask();
 		if (ability==MagicAbility.Exalted) {
-			addTrigger(MagicExaltedTrigger.getInstance());
+			add(MagicExaltedTrigger.getInstance());
 		} else if (ability==MagicAbility.BattleCry) {
-			addTrigger(MagicBattleCryTrigger.getInstance());
+			add(MagicBattleCryTrigger.getInstance());
 		} else if (ability==MagicAbility.LivingWeapon) {
-            addTrigger(MagicLivingWeaponTrigger.getInstance());
+            add(MagicLivingWeaponTrigger.getInstance());
         } else if (ability==MagicAbility.Echo) {
-            addTrigger(MagicEchoTrigger.create());
+            add(MagicEchoTrigger.create());
         } else if (ability==MagicAbility.EntersTapped) {
-            addTrigger(MagicTappedIntoPlayTrigger.create());
+            add(MagicTappedIntoPlayTrigger.create());
         }
 	}
 
