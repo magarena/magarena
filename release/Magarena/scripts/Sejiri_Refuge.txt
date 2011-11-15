@@ -7,5 +7,5 @@ type=Land
 mana=w3u3
 basic=wu
 timing=tapland
-
+ability=enters tapped
 requires_card_code

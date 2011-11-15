@@ -92,8 +92,6 @@ public class Creeping_Tar_Pit {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
-	
     public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Blue,MagicManaType.Black), 1);
 }

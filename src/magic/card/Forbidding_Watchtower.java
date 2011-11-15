@@ -85,8 +85,6 @@ public class Forbidding_Watchtower {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
-	
     public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.White),1);
 }

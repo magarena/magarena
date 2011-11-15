@@ -33,6 +33,4 @@ public class Deep_Slumber_Titan {
 			game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
 		}
     };
-    
-    public static final MagicTrigger T2 = new MagicTappedIntoPlayTrigger();
 }

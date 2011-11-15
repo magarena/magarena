@@ -15,8 +15,6 @@ import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Khalni_Garden {
-	public static final MagicTappedIntoPlayTrigger T1 = new MagicTappedIntoPlayTrigger();
-	
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {

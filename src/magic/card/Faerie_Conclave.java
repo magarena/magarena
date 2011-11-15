@@ -92,8 +92,6 @@ public class Faerie_Conclave {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
-	
     public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Blue),1);
 }

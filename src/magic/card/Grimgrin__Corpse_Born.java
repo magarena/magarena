@@ -100,6 +100,4 @@ public class Grimgrin__Corpse_Born {
 					true));
 		}
     };
-	
-    public static final MagicTrigger T2 = new MagicTappedIntoPlayTrigger();
 }

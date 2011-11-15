@@ -9,7 +9,6 @@ color=ub
 converted=5
 cost={3}{U}{B}
 pt=5/5
-ability=doesn't untap during untap step
+ability=doesn't untap during untap step,enters tapped
 timing=main
-
 requires_card_code

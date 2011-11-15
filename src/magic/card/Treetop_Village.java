@@ -92,8 +92,6 @@ public class Treetop_Village {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
-	
     public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Green),1);
 }

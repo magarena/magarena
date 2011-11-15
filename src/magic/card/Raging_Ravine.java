@@ -133,8 +133,6 @@ public class Raging_Ravine {
 			game.doAction(new MagicAddTurnTriggerAction(permanent,CT));
         }
     };
-
-    public static final MagicTappedIntoPlayTrigger T1 = new MagicTappedIntoPlayTrigger();
     
     public static final MagicManaActivation A2 = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Red,MagicManaType.Green), 1);

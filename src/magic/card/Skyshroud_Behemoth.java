@@ -11,6 +11,4 @@ public class Skyshroud_Behemoth {
 			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"fade",2);
 	
     public static final MagicFadeVanishCounterTrigger T2 = new MagicFadeVanishCounterTrigger("fade");
-    
-    public static final MagicTrigger T3 = new MagicTappedIntoPlayTrigger();
 }

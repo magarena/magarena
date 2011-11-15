@@ -101,8 +101,6 @@ public class Stirring_Wildwood {
 		}
 	};
 	
-    public static final MagicTrigger T = new MagicTappedIntoPlayTrigger();
-    
     public static final MagicManaActivation M = new MagicTapManaActivation(
             Arrays.asList(MagicManaType.Green,MagicManaType.White), 1);
 }
