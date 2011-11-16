@@ -9,7 +9,5 @@ color=g
 converted=2
 cost={1}{G}
 pt=2/1
-ability=islandwalk
+ability=islandwalk,regenerate {G}
 timing=main
-
-requires_card_code

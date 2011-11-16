@@ -9,7 +9,5 @@ color=b
 converted=3
 cost={2}{B}
 pt=1/4
-ability=defender
+ability=defender,regenerate {B}
 timing=smain
-
-requires_card_code

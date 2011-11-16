@@ -6,8 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicRegenerationActivation;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class Corrupt_Official {
@@ -38,6 +36,4 @@ public class Corrupt_Official {
 					true));
 		}
     };
-    
-    public static final MagicPermanentActivation A = new MagicRegenerationActivation(MagicManaCost.TWO_BLACK);
 }

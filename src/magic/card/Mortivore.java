@@ -4,8 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicRegenerationActivation;
 import magic.model.target.MagicTargetFilter;
 import magic.model.mstatic.MagicCDA;
 
@@ -18,6 +16,4 @@ public class Mortivore {
 			pt.set(size, size);
 		}
 	};
-    
-    public static final MagicPermanentActivation A = new MagicRegenerationActivation(MagicManaCost.BLACK);
 }

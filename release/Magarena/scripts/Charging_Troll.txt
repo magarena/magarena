@@ -9,7 +9,5 @@ color=gw
 converted=4
 cost={2}{G}{W}
 pt=3/3
-ability=vigilance
+ability=vigilance,regenerate {G}
 timing=main
-
-requires_card_code

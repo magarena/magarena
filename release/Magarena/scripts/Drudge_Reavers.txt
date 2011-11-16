@@ -9,7 +9,5 @@ color=b
 converted=4
 cost={3}{B}
 pt=2/1
-ability=flash
+ability=flash,regenerate {B}
 timing=flash
-
-requires_card_code

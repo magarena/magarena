@@ -10,5 +10,5 @@ converted=5
 cost={3}{B}{G}
 pt=6/6
 timing=main
-
+ability=regenerate {B}
 requires_card_code

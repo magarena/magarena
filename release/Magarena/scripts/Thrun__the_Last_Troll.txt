@@ -9,7 +9,5 @@ color=g
 converted=4
 cost={2}{G}{G}
 pt=4/4
-ability=can't be countered,hexproof
+ability=can't be countered,hexproof,regenerate {1}{G}
 timing=fmain
-
-requires_card_code

@@ -9,5 +9,5 @@ color=b
 converted=4
 cost={2}{B}{B}
 timing=smain
-
+ability=regenerate {B}
 requires_card_code

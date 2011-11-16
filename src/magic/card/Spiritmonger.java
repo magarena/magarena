@@ -15,15 +15,11 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAbilityEvent;
-import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicVeteranTrigger;
 
 public class Spiritmonger {
-	public static final MagicPermanentActivation R = new MagicRegenerationActivation(
-            MagicManaCost.BLACK);
-
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
 			new MagicActivationHints(MagicTiming.Pump,false,1),

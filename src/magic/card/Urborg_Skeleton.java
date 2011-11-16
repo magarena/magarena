@@ -11,8 +11,6 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
@@ -51,6 +49,4 @@ public class Urborg_Skeleton {
 			}
 		}
 	};
-	
-	public static final MagicPermanentActivation A = new MagicRegenerationActivation(MagicManaCost.BLACK);
 }
