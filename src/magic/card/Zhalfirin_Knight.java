@@ -9,8 +9,6 @@ import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicFlankingTrigger;
 
 public class Zhalfirin_Knight {
-    public static final MagicFlankingTrigger T = new MagicFlankingTrigger();
-    
     public static final MagicPermanentActivation A = new MagicGainActivation(
             MagicManaCost.WHITE_WHITE,
             MagicAbility.FirstStrike,

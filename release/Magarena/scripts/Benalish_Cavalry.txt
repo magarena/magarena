@@ -11,5 +11,3 @@ cost={1}{W}
 pt=2/2
 ability=flanking
 timing=main
-
-requires_card_code

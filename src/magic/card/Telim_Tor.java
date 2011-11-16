@@ -13,8 +13,6 @@ import magic.model.trigger.MagicFlankingTrigger;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Telim_Tor {
-    public static final MagicFlankingTrigger T1 = new MagicFlankingTrigger();
-    
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(

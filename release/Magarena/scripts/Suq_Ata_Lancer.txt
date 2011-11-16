@@ -11,5 +11,3 @@ cost={2}{R}
 pt=2/2
 ability=flanking,haste
 timing=fmain
-
-requires_card_code

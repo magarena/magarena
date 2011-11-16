@@ -18,8 +18,6 @@ import magic.model.target.MagicPumpTargetPicker;
 import magic.model.trigger.MagicFlankingTrigger;
 
 public class Zhalfirin_Commander {
-    public static final MagicFlankingTrigger T = new MagicFlankingTrigger();
-    
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.ONE_WHITE_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),

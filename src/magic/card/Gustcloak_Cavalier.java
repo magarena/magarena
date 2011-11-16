@@ -16,8 +16,6 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class Gustcloak_Cavalier {
-	public static final MagicFlankingTrigger T1 = new MagicFlankingTrigger();
-    
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {

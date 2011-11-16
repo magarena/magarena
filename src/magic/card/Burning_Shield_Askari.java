@@ -9,8 +9,6 @@ import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicFlankingTrigger;
 
 public class Burning_Shield_Askari {
-    public static final MagicFlankingTrigger T = new MagicFlankingTrigger();
-    
     public static final MagicPermanentActivation A = new MagicGainActivation(
             MagicManaCost.RED_RED,
             MagicAbility.FirstStrike,
