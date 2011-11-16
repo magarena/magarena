@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Arrays;
 
 import magic.model.MagicCardDefinition;
+import magic.model.MagicManaCost;
+
+import magic.model.event.MagicRegenerationActivation;
+
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicLivingWeaponTrigger;
@@ -110,6 +114,12 @@ public enum MagicAbility {
     Flanking("flanking",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicFlankingTrigger.create());
+        }
+    },
+    Regenerate("regenerate",30) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+            card.add(new MagicRegenerationActivation(manaCost));
         }
     },
     None("",0);

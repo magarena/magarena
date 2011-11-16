@@ -9,7 +9,5 @@ color=g
 converted=3
 cost={1}{G}{G}
 pt=3/2
-ability=hexproof
+ability=hexproof,regenerate {1}{G}
 timing=fmain
-
-requires_card_code
