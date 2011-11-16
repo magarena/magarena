@@ -9,6 +9,5 @@ color=w
 converted=2
 cost={1}{W}
 pt=0/2
+ability=bushido 2 
 timing=main
-
-requires_card_code

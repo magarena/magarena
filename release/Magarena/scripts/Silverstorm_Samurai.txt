@@ -9,7 +9,5 @@ color=w
 converted=6
 cost={4}{W}{W}
 pt=3/3
-ability=flash
+ability=flash,bushido 1
 timing=flash
-
-requires_card_code

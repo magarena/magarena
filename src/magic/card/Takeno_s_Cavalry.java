@@ -16,16 +16,8 @@ import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
-import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 
 public class Takeno_s_Cavalry {
-	private static final int amount = 1;
-	
-	public static final MagicBecomesBlockedPumpTrigger T1 = new MagicBecomesBlockedPumpTrigger(amount,amount,false);
-	
-	public static final MagicWhenBlocksPumpTrigger T2 = new MagicWhenBlocksPumpTrigger(amount,amount);
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),

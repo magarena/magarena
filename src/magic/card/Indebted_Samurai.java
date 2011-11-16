@@ -9,17 +9,9 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
-import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Indebted_Samurai {
-	private static final int amount = 1;
-	
-	public static final MagicBecomesBlockedPumpTrigger T1 = new MagicBecomesBlockedPumpTrigger(amount,amount,false);
-	
-	public static final MagicWhenBlocksPumpTrigger T2 = new MagicWhenBlocksPumpTrigger(amount,amount);
-	
 	public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {

@@ -9,6 +9,6 @@ color=r
 converted=5
 cost={4}{R}
 pt=2/3
+ability=bushido 1
 timing=flash
-
 requires_card_code

@@ -9,7 +9,5 @@ color=r
 converted=3
 cost={2}{R}
 pt=2/2
-ability=haste
+ability=haste,bushido 1
 timing=fmain
-
-requires_card_code

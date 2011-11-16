@@ -9,7 +9,5 @@ color=w
 converted=7
 cost={5}{W}{W}
 pt=3/3
-ability=vigilance,indestructible
+ability=vigilance,indestructible,bushido 5
 timing=main
-
-requires_card_code

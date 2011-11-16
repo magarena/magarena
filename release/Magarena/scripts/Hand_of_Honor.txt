@@ -9,7 +9,5 @@ color=w
 converted=2
 cost={W}{W}
 pt=2/2
-ability=protection from black
+ability=protection from black,bushido 1
 timing=main
-
-requires_card_code
