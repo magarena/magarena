@@ -8,6 +8,15 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
 public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
+
+    private static final MagicFlankingTrigger INSTANCE = new MagicFlankingTrigger();
+
+    private MagicFlankingTrigger() {}
+
+    public static MagicFlankingTrigger create() {
+        return INSTANCE;
+    }
+
     @Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
     	if (data == permanent) {

@@ -8,6 +8,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicLivingWeaponTrigger;
+import magic.model.trigger.MagicFlankingTrigger;
 import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicModularTrigger;
@@ -106,7 +107,11 @@ public enum MagicAbility {
             card.add(MagicLivingWeaponTrigger.getInstance());
         }
     },
-    Flanking("flanking",10),
+    Flanking("flanking",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicFlankingTrigger.create());
+        }
+    },
     None("",0);
 
 	public static final long PROTECTION_FLAGS=
