@@ -32,6 +32,9 @@ themes: \
 	release/mods/redfire_theme.zip \
 	release/mods/whiteangel_theme.zip
 
+cards_diff: $(MAG)
+	for i in `hg stat -q src/magic/card release/Magarena/scripts | sort -t'/' -k4 | cut -d' ' -f2`; do hg dif $i; done | flip -u - > $@
+
 code_to_remove: $(MAG)
 	cat src/magic/card/*.java | sed 's/\s\+//g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
 
