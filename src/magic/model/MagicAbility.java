@@ -17,6 +17,8 @@ import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicModularTrigger;
 import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
+import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
+import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 
 public enum MagicAbility {
 
@@ -120,6 +122,13 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.createCost(arg);
             card.add(new MagicRegenerationActivation(manaCost));
+        }
+    },
+    Bushido("bushido",20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicBecomesBlockedPumpTrigger(n,n,false));
+            card.add(new MagicWhenBlocksPumpTrigger(n,n));
         }
     },
     None("",0);
