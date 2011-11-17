@@ -9,6 +9,6 @@ color=w
 converted=4
 cost={3}{W}
 pt=2/4
+ability=fading 4
 timing=main
-
 requires_card_code

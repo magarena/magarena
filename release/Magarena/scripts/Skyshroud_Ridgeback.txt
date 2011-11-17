@@ -9,6 +9,5 @@ color=g
 converted=1
 cost={G}
 pt=2/3
+ability=fading 2
 timing=main
-
-requires_card_code

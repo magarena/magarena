@@ -9,7 +9,5 @@ color=g
 converted=4
 cost={2}{G}{G}
 pt=5/5
-ability=shroud
+ability=shroud,fading 3
 timing=main
-
-requires_card_code

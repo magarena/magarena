@@ -7,6 +7,6 @@ type=Enchantment
 color=b
 converted=3
 cost={2}{B}
+ability=fading 5
 timing=enchantment
-
 requires_card_code

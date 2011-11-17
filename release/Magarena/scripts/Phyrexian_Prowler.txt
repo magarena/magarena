@@ -9,6 +9,6 @@ color=b
 converted=4
 cost={3}{B}
 pt=3/3
+ability=fading 3
 timing=main
-
 requires_card_code
