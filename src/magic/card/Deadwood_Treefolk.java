@@ -12,17 +12,10 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Deadwood_Treefolk {
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",3);
-	
-    public static final MagicFadeVanishCounterTrigger T2 = new MagicFadeVanishCounterTrigger("time");
-    
     public static final MagicWhenComesIntoPlayTrigger T3 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {

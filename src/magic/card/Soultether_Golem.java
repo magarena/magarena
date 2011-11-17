@@ -6,16 +6,9 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Soultether_Golem {
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",1);
-	
-    public static final MagicFadeVanishCounterTrigger T2 = new MagicFadeVanishCounterTrigger("time");
-    
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {

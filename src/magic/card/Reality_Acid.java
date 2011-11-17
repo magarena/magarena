@@ -9,16 +9,9 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Reality_Acid {
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",3);
-	
-    public static final MagicFadeVanishCounterTrigger T2 = new MagicFadeVanishCounterTrigger("time");
-    
     public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.NEG_TARGET_PERMANENT,
 			new MagicDestroyTargetPicker(false));

@@ -9,7 +9,5 @@ color=w
 converted=4
 cost={2}{W}{W}
 pt=5/5
-ability=shroud
+ability=shroud,vanishing 4
 timing=main
-
-requires_card_code

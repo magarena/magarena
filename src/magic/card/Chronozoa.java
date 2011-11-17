@@ -8,17 +8,10 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Chronozoa {
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",3);
-	
-    public static final MagicFadeVanishCounterTrigger T2 = new MagicFadeVanishCounterTrigger("time");
-    
     public static final MagicWhenPutIntoGraveyardTrigger T3 = new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {

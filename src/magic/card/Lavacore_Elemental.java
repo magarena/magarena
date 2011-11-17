@@ -8,16 +8,9 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Lavacore_Elemental {
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",1);
-	
-    public static final MagicFadeVanishCounterTrigger T2 = new MagicFadeVanishCounterTrigger("time");
-    
     public static final MagicWhenDamageIsDealtTrigger T3 = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
