@@ -9,8 +9,6 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
-import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Kitsune_Dawnblade {

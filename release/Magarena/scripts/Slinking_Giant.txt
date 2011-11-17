@@ -9,7 +9,5 @@ color=r
 converted=4
 cost={2}{R}{R}
 pt=4/4
-ability=wither
+ability=wither,blocks or blocked pump -3/-0
 timing=main
-
-requires_card_code

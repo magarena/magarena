@@ -10,8 +10,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
-import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 
 public class Konda_s_Hatamoto {
 	

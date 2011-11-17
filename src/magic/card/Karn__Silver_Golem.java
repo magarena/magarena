@@ -20,8 +20,6 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetPicker;
-import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
-import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 
 public class Karn__Silver_Golem {
 	private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
@@ -48,10 +46,6 @@ public class Karn__Silver_Golem {
         }
     };
     
-	public static final MagicBecomesBlockedPumpTrigger T1 = new MagicBecomesBlockedPumpTrigger(-4,4,false);
-	
-	public static final MagicWhenBlocksPumpTrigger T2 = new MagicWhenBlocksPumpTrigger(-4,4);
-	
 	public static final MagicPermanentActivation A =new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Animate),

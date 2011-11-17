@@ -9,7 +9,5 @@ color=b
 converted=4
 cost={3}{B}
 pt=1/2
-ability=lifelink
+ability=lifelink,blocks or blocked pump +5/+0
 timing=main
-
-requires_card_code

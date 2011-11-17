@@ -9,5 +9,5 @@ color=g
 converted=3
 cost={1}{G}{G}
 pt=3/2
+ability=blocks or blocked pump -2/+2
 timing=main
-requires_card_code
