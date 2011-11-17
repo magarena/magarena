@@ -39,7 +39,11 @@ public enum MagicAbility {
     },
     Echo("echo",-20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicEchoTrigger.create());
+            if (arg.isEmpty()) {
+                card.add(MagicEchoTrigger.create());
+            } else {
+	            card.add(new MagicEchoTrigger(MagicManaCost.createCost(arg)));
+            }
         }
     },
 	AttacksEachTurnIfAble("attacks each turn if able",-10),
