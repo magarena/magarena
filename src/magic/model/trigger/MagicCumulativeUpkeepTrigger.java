@@ -13,9 +13,9 @@ import magic.model.event.MagicEvent;
 
 public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
 
-	private final String manaCost;
+	private final MagicManaCost manaCost;
 	
-    public MagicCumulativeUpkeepTrigger(final String manaCost) {
+    public MagicCumulativeUpkeepTrigger(final MagicManaCost manaCost) {
     	this.manaCost = manaCost;
 	}
     
@@ -33,7 +33,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
 			final int amount = permanent.getCounters(MagicCounterType.Charge);
 			StringBuilder totalCost = new StringBuilder();
 			for (int i=0;i<amount;i++) {
-				totalCost.append(manaCost);
+				totalCost.append(manaCost.toString());
 			}
             return new MagicEvent(
                     permanent,
