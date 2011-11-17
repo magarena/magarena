@@ -9,7 +9,5 @@ color=g
 converted=1
 cost={G}
 pt=2/1
-ability=flying,haste
+ability=flying,haste,echo {1}{G}{G}
 timing=fmain
-
-requires_card_code

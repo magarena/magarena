@@ -6,8 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicPumpActivation;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class Duskworker {
@@ -34,6 +32,4 @@ public class Duskworker {
 			game.doAction(new MagicRegenerateAction((MagicPermanent)data[0]));
 		}
     };
-    
-    public static final MagicPermanentActivation A = new MagicPumpActivation(MagicManaCost.THREE,1,0);
 }

@@ -9,6 +9,5 @@ color=r
 converted=3
 cost={2}{R}
 pt=3/2
-ability=flying,echo
+ability=flying,echo,pump {R} +0/+1
 timing=main
-requires_card_code

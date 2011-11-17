@@ -9,7 +9,5 @@ color=b
 converted=3
 cost={2}{B}
 pt=2/1
-ability=shadow
+ability=shadow,pump {1}{B} +1/+0
 timing=main
-
-requires_card_code

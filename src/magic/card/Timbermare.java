@@ -13,8 +13,6 @@ import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Timbermare {
-	public static final MagicEchoTrigger T1 = new MagicEchoTrigger("{5}{G}");
-	
 	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(

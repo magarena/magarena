@@ -9,6 +9,5 @@ color=g
 converted=6
 cost={5}{G}
 pt=5/5
+ability=pump {1}{R} +1/+0
 timing=main
-
-requires_card_code

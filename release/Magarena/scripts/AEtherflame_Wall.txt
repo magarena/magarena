@@ -9,7 +9,5 @@ color=r
 converted=2
 cost={1}{R}
 pt=0/4
-ability=defender,can block creatures with shadow
+ability=defender,can block creatures with shadow,pump {R} +1/+0
 timing=smain
-
-requires_card_code

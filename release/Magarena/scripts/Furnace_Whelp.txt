@@ -9,7 +9,5 @@ color=r
 converted=4
 cost={2}{R}{R}
 pt=2/2
-ability=flying
+ability=flying,pump {R} +1/+0
 timing=main
-
-requires_card_code

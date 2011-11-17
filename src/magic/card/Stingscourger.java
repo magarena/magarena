@@ -9,12 +9,9 @@ import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicBounceTargetPicker;
-import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Stingscourger {
-	public static final MagicEchoTrigger T1 = new MagicEchoTrigger("{3}{R}");
-	
 	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(

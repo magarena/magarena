@@ -10,6 +10,6 @@ color=r
 converted=2
 cost={1}{R}
 pt=2/2
+ability=echo {3}{R}
 timing=main
-
 requires_card_code

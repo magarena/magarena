@@ -8,12 +8,9 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Hammerheim_Deadeye {
-	public static final MagicEchoTrigger T1 = new MagicEchoTrigger("{5}{R}");
-	
 	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {

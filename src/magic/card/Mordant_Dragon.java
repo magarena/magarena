@@ -9,15 +9,11 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicPumpActivation;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 
 public class Mordant_Dragon {
-	public static final MagicPermanentActivation A = new MagicPumpActivation(MagicManaCost.ONE_RED,1,0);
-	
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
