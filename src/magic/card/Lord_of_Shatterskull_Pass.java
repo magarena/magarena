@@ -10,8 +10,6 @@ import magic.model.MagicPowerToughness;
 import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
@@ -29,8 +27,6 @@ public class Lord_of_Shatterskull_Pass {
 			} 
 		}		
 	};
-
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.ONE_RED,6);
 		
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override

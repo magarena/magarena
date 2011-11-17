@@ -7,7 +7,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
@@ -57,6 +56,4 @@ public class Coralhelm_Commander {
 			return flags;
 		}
     };
-
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.ONE,4);
 }

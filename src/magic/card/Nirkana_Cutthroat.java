@@ -6,8 +6,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
@@ -40,6 +38,4 @@ public class Nirkana_Cutthroat {
             }
 		}
     };
-    
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.TWO_BLACK,3);
 }

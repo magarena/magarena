@@ -7,8 +7,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicStatic;
 
 public class Halimar_Wavewatch {
@@ -39,6 +37,4 @@ public class Halimar_Wavewatch {
 			return flags;
 		}
     };
-
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.TWO,5);
 }

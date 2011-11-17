@@ -6,8 +6,6 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
@@ -52,6 +50,4 @@ public class Kabira_Vindicator {
     		return source != target;
     	}
     };
-
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.TWO_WHITE,5);
 }

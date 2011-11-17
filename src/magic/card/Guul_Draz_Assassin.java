@@ -14,7 +14,6 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
@@ -35,8 +34,6 @@ public class Guul_Draz_Assassin {
 		}		
 	};
 
-	public static final MagicPermanentActivation A1 = new MagicLevelUpActivation(MagicManaCost.ONE_BLACK,4);
-	
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,

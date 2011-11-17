@@ -3,12 +3,10 @@ package magic.card;
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.mstatic.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Hada_Spy_Patrol {
@@ -44,6 +42,4 @@ public class Hada_Spy_Patrol {
 			return flags;
 		}
     };
-
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.TWO_BLUE,3);
 }

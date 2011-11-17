@@ -8,8 +8,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.action.MagicChangeExtraTurnsAction;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
@@ -50,6 +48,4 @@ public class Lighthouse_Chronologist {
     		game.doAction(new MagicChangeExtraTurnsAction((MagicPlayer)data[0],1));
 		}
 	};
-	
-	public static final MagicPermanentActivation A1 = new MagicLevelUpActivation(MagicManaCost.BLUE,7);
 }

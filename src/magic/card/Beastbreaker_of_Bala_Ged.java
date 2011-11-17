@@ -3,12 +3,10 @@ package magic.card;
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.mstatic.MagicLayer;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
+import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Beastbreaker_of_Bala_Ged {
@@ -39,6 +37,4 @@ public class Beastbreaker_of_Bala_Ged {
 			return flags;
 		}
     };
-
-	public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.TWO_GREEN,4);
 }

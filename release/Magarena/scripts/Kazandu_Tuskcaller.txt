@@ -9,6 +9,6 @@ color=g
 converted=2
 cost={1}{G}
 pt=1/1
+ability=level up {1}{G} 6
 timing=main
-
 requires_card_code

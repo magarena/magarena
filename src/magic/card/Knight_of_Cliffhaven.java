@@ -6,8 +6,6 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
@@ -42,6 +40,4 @@ public class Knight_of_Cliffhaven {
             }
 		}
     };
-
-	public static final MagicPermanentActivation A1 = new MagicLevelUpActivation(MagicManaCost.THREE,4);
 }

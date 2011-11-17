@@ -12,7 +12,6 @@ import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
@@ -51,8 +50,6 @@ public class Kargan_Dragonlord {
 		}
     };
 
-	public static final MagicPermanentActivation A1 = new MagicLevelUpActivation(MagicManaCost.RED,8);
-	
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicCondition.EIGHT_CHARGE_COUNTERS_CONDITION,

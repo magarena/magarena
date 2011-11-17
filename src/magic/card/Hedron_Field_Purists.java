@@ -8,8 +8,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
@@ -58,6 +56,4 @@ public class Hedron_Field_Purists {
 				final Object[] choiceResults) {
 		}
     };
-    
-    public static final MagicPermanentActivation A = new MagicLevelUpActivation(MagicManaCost.TWO_WHITE,5);
 }

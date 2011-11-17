@@ -12,14 +12,11 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 
 public class Kazandu_Tuskcaller {
-	public static final MagicPermanentActivation A1 = new MagicLevelUpActivation(MagicManaCost.ONE_GREEN,6);
-	
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
 			new MagicCondition[]{
                 MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,
