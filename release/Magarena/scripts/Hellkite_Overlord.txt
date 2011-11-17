@@ -9,6 +9,5 @@ color=brg
 converted=8
 cost={4}{B}{R}{R}{G}
 pt=8/8
-ability=flying,trample,haste,regenerate {B}{G}
+ability=flying,trample,haste,regenerate {B}{G},pump {B} +1/+0
 timing=fmain
-requires_card_code

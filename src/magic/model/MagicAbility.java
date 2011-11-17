@@ -8,6 +8,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 
 import magic.model.event.MagicRegenerationActivation;
+import magic.model.event.MagicPumpActivation;
 
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
@@ -144,6 +145,16 @@ public enum MagicAbility {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"fade",n));
 	        card.add(new MagicFadeVanishCounterTrigger("fade"));
+        }
+    },
+    Pump("pump", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] token = arg.split(" ");
+            final MagicManaCost cost = MagicManaCost.createCost(token[0]);
+            final String[] pt = token[1].replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+	        card.add(new MagicPumpActivation(cost,power,toughness));
         }
     },
     None("",0);
