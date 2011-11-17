@@ -15,16 +15,15 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
 	
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
-		if (player.getLife()>1) {
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    RAVNICA_CHOICE,
-                    new Object[]{player,permanent},
-                    this,
-                    "You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped.");
-		}
-		return MagicEvent.NONE;
+		return (player.getLife() >= 2) ?
+			new MagicEvent(
+                permanent,
+                player,
+                RAVNICA_CHOICE,
+                new Object[]{player,permanent},
+                this,
+                "You may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped."):
+            MagicEvent.NONE;
 	}
 
 	@Override
