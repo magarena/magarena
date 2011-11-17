@@ -19,6 +19,7 @@ import magic.model.trigger.MagicModularTrigger;
 import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
+import magic.model.trigger.MagicSoulshiftTrigger;
 
 public enum MagicAbility {
 
@@ -129,6 +130,12 @@ public enum MagicAbility {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicBecomesBlockedPumpTrigger(n,n,false));
             card.add(new MagicWhenBlocksPumpTrigger(n,n));
+        }
+    },
+    Soulshift("soulshift",20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicSoulshiftTrigger(n));
         }
     },
     None("",0);
