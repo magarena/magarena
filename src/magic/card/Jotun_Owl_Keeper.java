@@ -7,12 +7,9 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Jotun_Owl_Keeper {
-	public static final MagicCumulativeUpkeepTrigger T1 = new MagicCumulativeUpkeepTrigger("{W/U}");
-    
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {

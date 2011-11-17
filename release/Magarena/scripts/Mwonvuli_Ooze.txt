@@ -8,6 +8,6 @@ subtype=Ooze
 color=g
 converted=1
 cost={G}
+ability=cumulative upkeep {2}
 timing=main
-
 requires_card_code

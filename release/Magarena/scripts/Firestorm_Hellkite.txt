@@ -9,7 +9,5 @@ color=ur
 converted=6
 cost={4}{U}{R}
 pt=6/6
-ability=flying,trample
+ability=flying,trample,cumulative upkeep {U}{R}
 timing=main
-
-requires_card_code

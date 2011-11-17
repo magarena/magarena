@@ -9,7 +9,6 @@ color=g
 converted=6
 cost={5}{G}
 pt=6/6
-ability=trample
+ability=trample,cumulative upkeep {G/W}
 timing=main
-
 requires_card_code

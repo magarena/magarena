@@ -9,7 +9,5 @@ color=g
 converted=4
 cost={2}{G}{G}
 pt=5/1
-ability=trample,haste
+ability=trample,haste,cumulative upkeep {G}{G}
 timing=fmain
-
-requires_card_code

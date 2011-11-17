@@ -6,12 +6,9 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Arctic_Nishoba {
-	public static final MagicCumulativeUpkeepTrigger T1 = new MagicCumulativeUpkeepTrigger("{G/W}");
-    
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {

@@ -22,6 +22,7 @@ import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicSoulshiftTrigger;
 import magic.model.trigger.MagicFadeVanishCounterTrigger;
+import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 
 public enum MagicAbility {
 
@@ -159,6 +160,12 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
 	        card.add(new MagicPumpActivation(cost,power,toughness));
+        }
+    },
+    CumulativeUpkeep("cumulative upkeep",-30) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+	        card.add(new MagicCumulativeUpkeepTrigger(manaCost));
         }
     },
     None("",0);
