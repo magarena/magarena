@@ -20,6 +20,7 @@ import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicSoulshiftTrigger;
+import magic.model.trigger.MagicFadeVanishCounterTrigger;
 
 public enum MagicAbility {
 
@@ -136,6 +137,13 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicSoulshiftTrigger(n));
+        }
+    },
+    Fading("fading",-20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"fade",n));
+	        card.add(new MagicFadeVanishCounterTrigger("fade"));
         }
     },
     None("",0);
