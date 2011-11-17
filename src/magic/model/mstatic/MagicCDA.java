@@ -2,6 +2,7 @@ package magic.model.mstatic;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 
@@ -29,7 +30,17 @@ public abstract class MagicCDA {
         return flags;
     }
 	
-    public void getPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+    public void getPowerToughness(
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicPermanent permanent,
+            final MagicPowerToughness pt) {
+        getPowerToughness(game, player, pt);
+    }
     
+    public void getPowerToughness(
+            final MagicGame game,
+            final MagicPlayer player,
+            final MagicPowerToughness pt) {
     }
 }

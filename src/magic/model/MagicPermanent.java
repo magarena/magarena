@@ -324,7 +324,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		}
 		
         //get starting P/T from card def (includes CDA)
-		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController());
+		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController(),this);
 
         //apply global effects
         MagicLayer.getPowerToughness(game, this, pt);
