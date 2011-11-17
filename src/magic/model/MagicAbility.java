@@ -9,6 +9,7 @@ import magic.model.MagicManaCost;
 
 import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicPumpActivation;
+import magic.model.event.MagicLevelUpActivation;
 
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
@@ -173,6 +174,14 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.createCost(arg);
 	        card.add(new MagicCumulativeUpkeepTrigger(manaCost));
+        }
+    },
+    LevelUp("level up", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] token = arg.split(" ");
+            final MagicManaCost cost = MagicManaCost.createCost(token[0]);
+            final int maxLevel = Integer.parseInt(token[1]);
+            card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
     },
     None("",0);

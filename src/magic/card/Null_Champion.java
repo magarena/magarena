@@ -11,7 +11,6 @@ import magic.model.action.MagicRegenerateAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
@@ -30,8 +29,6 @@ public class Null_Champion {
 			}
 		}		
 	};
-
-	public static final MagicPermanentActivation A1 = new MagicLevelUpActivation(MagicManaCost.THREE,4);
 	
 	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
 			new MagicCondition[]{
