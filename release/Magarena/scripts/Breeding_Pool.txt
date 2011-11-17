@@ -7,6 +7,5 @@ type=Land
 subtype=Forest,Island
 mana=g3u3
 basic=gu
+ability=shock land
 timing=land
-
-requires_card_code

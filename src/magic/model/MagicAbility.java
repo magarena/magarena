@@ -26,6 +26,7 @@ import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
+import magic.model.trigger.MagicRavnicaLandTrigger;
 
 public enum MagicAbility {
 
@@ -209,6 +210,11 @@ public enum MagicAbility {
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
 	        card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
+        }
+    },
+    ShockLand("shock land", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicRavnicaLandTrigger.create());
         }
     },
     None("",0);

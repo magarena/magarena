@@ -7,6 +7,5 @@ type=Land
 subtype=Forest,Plains
 mana=g3w3
 basic=gw
+ability=shock land
 timing=land
-
-requires_card_code

@@ -7,6 +7,5 @@ type=Land
 subtype=Mountain,Forest
 mana=r3g3
 basic=rg
+ability=shock land
 timing=land
-
-requires_card_code

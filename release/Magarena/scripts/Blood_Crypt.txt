@@ -7,6 +7,5 @@ type=Land
 subtype=Swamp,Mountain
 mana=b3r3
 basic=br
+ability=shock land
 timing=land
-
-requires_card_code

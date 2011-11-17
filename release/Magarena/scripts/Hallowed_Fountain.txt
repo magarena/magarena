@@ -7,6 +7,5 @@ type=Land
 subtype=Plains,Island
 mana=w3u3
 basic=wu
+ability=shock land
 timing=land
-
-requires_card_code

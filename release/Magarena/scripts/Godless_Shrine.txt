@@ -7,6 +7,5 @@ type=Land
 subtype=Plains,Swamp
 mana=w3b3
 basic=wb
+ability=shock land
 timing=land
-
-requires_card_code

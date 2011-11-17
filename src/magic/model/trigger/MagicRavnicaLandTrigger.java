@@ -10,9 +10,16 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
 public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
-	
+
+    private static final MagicRavnicaLandTrigger INSTANCE = new MagicRavnicaLandTrigger();
 	private static final MagicChoice RAVNICA_CHOICE = new MagicMayChoice("You may pay 2 life.");
 	
+    private MagicRavnicaLandTrigger() {}
+
+    public static MagicRavnicaLandTrigger create() {
+        return INSTANCE;
+    }
+
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
 		return (player.getLife() >= 2) ?

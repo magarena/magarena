@@ -7,6 +7,5 @@ type=Land
 subtype=Island,Swamp
 mana=u3b3
 basic=ub
+ability=shock land
 timing=land
-
-requires_card_code
