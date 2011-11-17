@@ -24,6 +24,7 @@ import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicSoulshiftTrigger;
 import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicCumulativeUpkeepTrigger;
+import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 
 public enum MagicAbility {
 
@@ -182,6 +183,22 @@ public enum MagicAbility {
             final MagicManaCost cost = MagicManaCost.createCost(token[0]);
             final int maxLevel = Integer.parseInt(token[1]);
             card.add(new MagicLevelUpActivation(cost, maxLevel));
+        }
+    },
+    BlockedPump("blocked pump", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] pt = arg.replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+	        card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
+        }
+    },
+    BlockedByPump("blocked by pump", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] pt = arg.replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+	        card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,true));
         }
     },
     None("",0);
