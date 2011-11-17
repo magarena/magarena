@@ -152,6 +152,13 @@ public enum MagicAbility {
 	        card.add(new MagicFadeVanishCounterTrigger("fade"));
         }
     },
+    Vanishing("vanishing",-20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+			card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",n));
+            card.add(new MagicFadeVanishCounterTrigger("time"));
+        }
+    },
     Pump("pump", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final String[] token = arg.split(" ");

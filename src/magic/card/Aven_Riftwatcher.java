@@ -6,14 +6,10 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicFadeVanishCounterTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Aven_Riftwatcher {
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",3);
 	
 	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
@@ -57,5 +53,4 @@ public class Aven_Riftwatcher {
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
 		}
     };
-    public static final MagicFadeVanishCounterTrigger T4 = new MagicFadeVanishCounterTrigger("time");
 }
