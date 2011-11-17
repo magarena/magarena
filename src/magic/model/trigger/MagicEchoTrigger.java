@@ -13,15 +13,15 @@ import magic.model.event.MagicEvent;
 
 public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
 
-	private String manaCost;
+	private MagicManaCost manaCost;
     private static final MagicEchoTrigger INSTANCE = new MagicEchoTrigger();
 	
-    public MagicEchoTrigger(final String manaCost) {
+    public MagicEchoTrigger(final MagicManaCost manaCost) {
     	this.manaCost = manaCost;
 	}
     
     private MagicEchoTrigger() {
-    	this.manaCost = "";
+    	this.manaCost = MagicManaCost.ZERO;
 	}
 
     public static MagicEchoTrigger create() {
@@ -33,15 +33,15 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
     	final MagicPlayer player = permanent.getController();
 		if (player == data &&
 			permanent.hasState(MagicPermanentState.MustPayEchoCost)) {
-			if (manaCost.isEmpty()) {
-				manaCost = permanent.getCardDefinition().getCost().getText();
+			if (manaCost == MagicManaCost.ZERO) {
+				manaCost = permanent.getCardDefinition().getCost();
 			}
             return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
                             player + " may pay " + manaCost + ".",
-                            new MagicPayManaCostChoice(MagicManaCost.createCost(manaCost))),
+                            new MagicPayManaCostChoice(manaCost)),
                     new Object[]{permanent},
                     this,
                     player + " may$ pay " + manaCost +
