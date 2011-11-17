@@ -6,12 +6,9 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicSoulshiftTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Kami_of_the_Honored_Dead {
-	public static final MagicSoulshiftTrigger T1 = new MagicSoulshiftTrigger(6);
-	
 	public static final MagicWhenDamageIsDealtTrigger T2 = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {

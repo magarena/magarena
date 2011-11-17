@@ -14,11 +14,8 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.trigger.MagicSoulshiftTrigger;
 
 public class Burr_Grafter {
-	public static final MagicSoulshiftTrigger T = new MagicSoulshiftTrigger(3);
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Pump),

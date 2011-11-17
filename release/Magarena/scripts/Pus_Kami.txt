@@ -9,6 +9,6 @@ color=b
 converted=7
 cost={5}{B}{B}
 pt=3/3
+ability=soulshift 6
 timing=main
-
 requires_card_code

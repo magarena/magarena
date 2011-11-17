@@ -9,7 +9,5 @@ color=b
 converted=6
 cost={5}{B}
 pt=2/2
-ability=fear
+ability=fear,soulshift 5
 timing=main
-
-requires_card_code

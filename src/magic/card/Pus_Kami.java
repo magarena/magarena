@@ -15,11 +15,8 @@ import magic.model.event.MagicPayManaCostSacrificeEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicSoulshiftTrigger;
 
 public class Pus_Kami {
-	public static final MagicSoulshiftTrigger T = new MagicSoulshiftTrigger(6);
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.BLACK.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),

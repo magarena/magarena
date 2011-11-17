@@ -16,11 +16,8 @@ import magic.model.event.MagicPayManaCostSacrificeEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicBounceTargetPicker;
-import magic.model.trigger.MagicSoulshiftTrigger;
 
 public class Rootrunner {
-	public static final MagicSoulshiftTrigger T = new MagicSoulshiftTrigger(3);
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.GREEN_GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),

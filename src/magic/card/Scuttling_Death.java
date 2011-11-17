@@ -14,11 +14,8 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicWeakenTargetPicker;
-import magic.model.trigger.MagicSoulshiftTrigger;
 
 public class Scuttling_Death {
-	public static final MagicSoulshiftTrigger T = new MagicSoulshiftTrigger(4);
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
             MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Removal),

@@ -14,11 +14,8 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicSoulshiftTrigger;
 
 public class Deathknell_Kami {
-	public static final MagicSoulshiftTrigger T = new MagicSoulshiftTrigger(1);
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicManaCost.TWO.getCondition()},
             new MagicActivationHints(MagicTiming.Pump),

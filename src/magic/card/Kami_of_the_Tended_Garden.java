@@ -9,11 +9,8 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.trigger.MagicSoulshiftTrigger;
 
 public class Kami_of_the_Tended_Garden {
-	public static final MagicSoulshiftTrigger T1 = new MagicSoulshiftTrigger(3);
-	
 	public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {

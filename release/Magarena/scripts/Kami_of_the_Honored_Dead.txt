@@ -9,7 +9,6 @@ color=w
 converted=7
 cost={5}{W}{W}
 pt=3/5
-ability=flying
+ability=flying,soulshift 6
 timing=main
-
 requires_card_code

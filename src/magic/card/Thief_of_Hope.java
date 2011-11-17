@@ -7,13 +7,10 @@ import magic.model.MagicSubType;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.trigger.MagicSoulshiftTrigger;
 import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
 
 // this card ignores the part that deals with Arcane spells
 public class Thief_of_Hope {
-	public static final MagicSoulshiftTrigger T1 = new MagicSoulshiftTrigger(2);
-	
 	public static final MagicWhenSpellIsPlayedTrigger T2 = new MagicWhenSpellIsPlayedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {

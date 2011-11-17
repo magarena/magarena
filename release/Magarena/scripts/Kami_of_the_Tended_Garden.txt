@@ -9,6 +9,6 @@ color=g
 converted=4
 cost={3}{G}
 pt=4/4
+ability=soulshift 3
 timing=main
-
 requires_card_code
