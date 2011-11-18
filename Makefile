@@ -117,13 +117,14 @@ M1.%: clean all cubes
 			release/README.txt \
 			Magarena-1.$*
 	cp -r \
-			release/avatars \
-			release/decks \
-			release/sounds \
+			release/Magarena/avatars \
+			release/Magarena/decks \
+			release/Magarena/sounds \
+			release/Magarena/scripts \
 			Magarena-1.$*/Magarena
 	cp \
-			release/mods/felt_theme.zip \
-			release/mods/*.txt \
+			release/Magarena/mods/felt_theme.zip \
+			release/Magarena/mods/*.txt \
 			Magarena-1.$*/Magarena/mods
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 	cp -r Magarena.app Magarena-1.$*.app
