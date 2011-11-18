@@ -49,6 +49,11 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.20 (November 25, 2011)
+============
+brought to you by beholder, melvin, and wait321
+
+
 Release 1.19 (October 28, 2011)
 ============
 brought to you by beholder, melvin, and wait321
