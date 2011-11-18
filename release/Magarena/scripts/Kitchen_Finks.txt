@@ -9,7 +9,5 @@ color=gw
 converted=3
 cost={1}{G/W}{G/W}
 pt=3/2
-ability=persist
+ability=persist,enters gain life 2
 timing=main
-
-requires_card_code

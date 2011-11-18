@@ -9,6 +9,6 @@ color=w
 converted=2
 cost={1}{W}
 given_pt=1/3
+ability=enters gain life 3
 timing=aura
-
 requires_card_code

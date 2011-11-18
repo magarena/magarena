@@ -9,7 +9,5 @@ color=w
 converted=5
 cost={4}{W}
 pt=3/3
-ability=flying
+ability=flying,enters gain life 3
 timing=main
-
-requires_card_code

@@ -9,6 +9,5 @@ color=w
 converted=2
 cost={1}{W}
 pt=2/1
+ability=enters gain life 4
 timing=fmain
-
-requires_card_code

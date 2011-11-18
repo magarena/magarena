@@ -9,7 +9,6 @@ color=g
 converted=7
 cost={4}{G}{G}{G}
 pt=7/7
-ability=trample
+ability=trample,enters gain life 7
 timing=fmain
-
 requires_card_code
