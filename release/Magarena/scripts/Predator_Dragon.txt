@@ -9,7 +9,5 @@ color=r
 converted=6
 cost={3}{R}{R}{R}
 pt=4/4
-ability=flying,haste
+ability=flying,haste,devour 2
 timing=fmain
-
-requires_card_code

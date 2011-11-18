@@ -27,6 +27,7 @@ import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicRavnicaLandTrigger;
+import magic.model.trigger.MagicDevourTrigger;
 
 public enum MagicAbility {
 
@@ -215,6 +216,12 @@ public enum MagicAbility {
     ShockLand("shock land", -10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicRavnicaLandTrigger.create());
+        }
+    },
+    Devour("devour",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicDevourTrigger(n));
         }
     },
     None("",0);

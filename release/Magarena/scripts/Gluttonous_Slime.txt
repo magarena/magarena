@@ -9,7 +9,5 @@ color=g
 converted=3
 cost={2}{G}
 pt=2/2
-ability=flash
+ability=flash,devour 1
 timing=flash
-
-requires_card_code
