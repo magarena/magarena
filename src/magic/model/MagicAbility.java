@@ -28,6 +28,7 @@ import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicRavnicaLandTrigger;
 import magic.model.trigger.MagicDevourTrigger;
+import magic.model.trigger.MagicRefugeLandTrigger;
 
 public enum MagicAbility {
 
@@ -36,6 +37,12 @@ public enum MagicAbility {
             final int n = Integer.parseInt(arg);
 			card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
             card.add(MagicModularTrigger.create());
+        }
+    },
+    EntersGainLife("enters gain life", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicRefugeLandTrigger(n));
         }
     },
     EntersTapped("enters tapped", -10) {

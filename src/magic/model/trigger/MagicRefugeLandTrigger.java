@@ -7,14 +7,23 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.event.MagicEvent;
 
 public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
-	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+	private final int life;
+
+    public MagicRefugeLandTrigger(final int amount) {
+        life = amount;
+    }
+    
+    @Override
+	public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent, 
+            final MagicPlayer player) {
 		return new MagicEvent(
             permanent,
             player,
             MagicEvent.NO_DATA,
             this,
-            player + " gains 1 life.");
+            player + " gains " + life + " life.");
 	}
     @Override
     public void executeEvent(
@@ -22,6 +31,6 @@ public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
         final MagicEvent event,
         final Object[] data,
         final Object[] choices) {
-        game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+        game.doAction(new MagicChangeLifeAction(event.getPlayer(),life));
     }
 }

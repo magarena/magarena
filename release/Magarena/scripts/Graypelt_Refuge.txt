@@ -6,6 +6,5 @@ rarity=U
 type=Land
 mana=g3w3
 basic=gw
+ability=enters tapped,enters gain life 1
 timing=tapland
-ability=enters tapped
-requires_card_code
