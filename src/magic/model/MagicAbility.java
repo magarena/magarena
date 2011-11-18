@@ -45,6 +45,12 @@ public enum MagicAbility {
             card.add(new MagicRefugeLandTrigger(n));
         }
     },
+    EntersLoseLife("enters lose life", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicRefugeLandTrigger(-n));
+        }
+    },
     EntersTapped("enters tapped", -10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicTappedIntoPlayTrigger.create());

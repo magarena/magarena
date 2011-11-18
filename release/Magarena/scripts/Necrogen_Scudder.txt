@@ -9,7 +9,5 @@ color=b
 converted=3
 cost={2}{B}
 pt=3/3
-ability=flying
+ability=flying,enters lose life 3
 timing=main
-
-requires_card_code

@@ -23,7 +23,9 @@ public class MagicRefugeLandTrigger extends MagicWhenComesIntoPlayTrigger {
             player,
             MagicEvent.NO_DATA,
             this,
-            player + " gains " + life + " life.");
+            player + 
+            (life > 0 ? " gains " + life : " loses " + -life) + 
+             " life.");
 	}
     @Override
     public void executeEvent(
