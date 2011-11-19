@@ -12,6 +12,7 @@ Air Elemental
 Air Servant
 Ajani's Mantra
 Ajani's Pridemate
+Akoum Battlesinger
 Akoum Boulderfoot
 Akoum Refuge
 Akrasan Squire
@@ -36,6 +37,7 @@ Arcane Sanctum
 Archon of Justice
 Archon of Redemption
 Arc Runner
+Ardent Recruit
 Argent Sphinx
 Argentum Armor
 Armament Master
@@ -98,6 +100,7 @@ Blinding Mage
 Blistergrub
 Bloodcrazed Neonate
 Bloodgift Demon
+Bloodhall Ooze
 Bloodhusk Ritualist
 Blood Seeker
 Bloodshot Trainee
@@ -107,6 +110,7 @@ Boar Umbra
 Bog Raiders
 Bog Tatters
 Bog Wraith
+Bojuka Brigand
 Bonds of Quicksilver
 Bonebreaker Giant
 Bonehoard
@@ -163,6 +167,7 @@ Cloud Elemental
 Cobbled Wings
 Colossal Might
 Combust
+Concussive Bolt
 Condemn
 Contagious Nim
 Copperhorn Scout
@@ -257,6 +262,7 @@ Embersmith
 Emerald Oryx
 Emeria Angel
 Empyrial Archangel
+Enclave Cryptologist
 Enclave Elite
 Endless Ranks of the Dead
 Engulfing Slagwurm
@@ -359,6 +365,7 @@ Grave Bramble
 Gravedigger
 Grave Titan
 Graveyard Shovel
+Graypelt Hunter
 Graypelt Refuge
 Grazing Gladehart
 Greater Basilisk
@@ -378,18 +385,24 @@ Guardians' Pledge
 Guul Draz Assassin
 Guul Draz Specter
 Guul Draz Vampire
+Hada Freeblade
 Hada Spy Patrol
 Hagra Crocodile
+Hagra Diabolist
+Halimar Excavator
+Halimar Wavewatch
 Halt Order
 Hamlet Captain
 Hand of the Praetors
 Hedron Crab
+Hedron-Field Purists
 Hedron Rover
 Hedron Scrabbler
 Hellkite Overlord
 Hero of Bladehold
 Hideous End
 Hideous Visage
+Highland Berserker
 Hinterland Harbor
 Hoard-Smelter Dragon
 Hollowhenge Scavenger
@@ -404,6 +417,7 @@ Hypnotic Specter
 Hysterical Blindness
 Ichorclaw Myr
 Ichor Rats
+Ikiral Outrider
 Incinerate
 Incurable Ogre
 Indestructibility
@@ -430,15 +444,22 @@ Jenara, Asura of War
 Jhessian Balmgiver
 Jhessian Infiltrator
 Jhessian Lookout
+Join the Ranks
+Joraga Bard
 Joraga Warcaller
 Journey to Nowhere
 Jund Hackblade
 Jungle Shrine
 Jwari Scuttler
 Jwar Isle Refuge
+Kabira Vindicator
 Kalonian Behemoth
+Kargan Dragonlord
+Kazandu Blademaster
 Kazandu Refuge
+Kazandu Tuskcaller
 Kazuul, Tyrant of the Cliffs
+Kazuul Warlord
 Kederekt Parasite
 Kelinore Bat
 Kemba, Kha Regent
@@ -454,6 +475,7 @@ Kitesail
 Kitesail Apprentice
 Kite Shield
 Knight Exemplar
+Knight of Cliffhaven
 Kor Aeronaut
 Kor Duelist
 Kor Firewalker
@@ -473,6 +495,7 @@ Leonin Skyhunter
 Levitation
 Lifelink
 Lifesmith
+Lighthouse Chronologist
 Lightkeeper of Emeria
 Lightning Bolt
 Lightning Elemental
@@ -499,6 +522,7 @@ Maelstrom Pulse
 Mage Slayer
 Make a Wish
 Makindi Griffin
+Makindi Shieldmate
 Mana Leak
 Manalith
 Manic Vandal
@@ -548,6 +572,7 @@ Moriok Reaver
 Morkrut Banshee
 Mountain
 Mox Opal
+Murasa Pyromancer
 Murder of Crows
 Mycoid Shepherd
 Myr Galvanizer
@@ -572,17 +597,21 @@ Nether Horror
 Neurok Invisimancer
 Nightmare
 Night Revelers
+Nimana Sell-Sword
 Nirkana Cutthroat
 Noble Hierarch
 Novablast Wurm
+Null Champion
 Nulltread Gargantuan
 Nyxathid
 Oblivion Ring
 Offering to Asha
 Ogre's Cleaver
 Ogre Sentry
+Ondu Cleric
 One-Eyed Scarecrow
 Onyx Mage
+Oran-Rief Survivalist
 Orchard Spirit
 Ornithopter
 Outrider of Jhess
@@ -636,6 +665,7 @@ Rakish Heir
 Rally the Forces
 Rampaging Baloths
 Rapacious One
+Razorfield Rhino
 Razorfoot Griffin
 Razor Swine
 Razorverge Thicket
@@ -683,6 +713,8 @@ Scrib Nibblers
 Scroll Thief
 Scute Mob
 Seachrome Coast
+Sea Gate Loremaster
+Seascape Aerialist
 Seaside Citadel
 Seer's Sundial
 Sejiri Refuge
@@ -723,12 +755,14 @@ Skithiryx, the Blight Dragon
 Skitter of Lizards
 Skullmulcher
 Sky Ruin Drake
+Skywatcher Adept
 Skywinder Drake
 Slaughter Cry
 Slave of Bolas
 Slayer of the Wicked
 Sleep
 Sludge Strider
+Smallpox
 Smite
 Smite the Monstrous
 Smother
@@ -757,6 +791,7 @@ Spidersilk Net
 Spider Umbra
 Spidery Grasp
 Spined Wurm
+Spiraling Duelist
 Spire Monitor
 Spirit Mantle
 Splinterfright
@@ -783,6 +818,7 @@ Sturmgeist
 Sulfur Falls
 Sunblast Angel
 Sunpetal Grove
+Sunspear Shikari
 Sunspring Expedition
 Sun Titan
 Surrakar Marauder
@@ -794,7 +830,9 @@ Sword of Feast and Famine
 Sword of Vengeance
 Sword of War and Peace
 Sylvok Lifestaff
+Tajuru Archer
 Talon Trooper
+Talus Paladin
 Tangle Mantis
 Taste of Blood
 Tectonic Edge
@@ -815,18 +853,23 @@ Titanic Ultimatum
 Tormented Soul
 Tower Gargoyle
 Traitorous Blood
+Transcendent Master
 Tree of Redemption
 Tribute to Hunger
 Triskelion
 True Conviction
 Trumpet Blast
 Trusty Machete
+Tuktuk Grunts
+Tuktuk Scrapper
 Tuktuk the Explorer
 Tumble Magnet
 Turn the Tide
+Turntimber Ranger
 Turn to Frog
 Twincast
 Typhoid Rats
+Umara Raptor
 Unbreathing Horde
 Underworld Dreams
 Unholy Strength
@@ -895,6 +938,7 @@ Woodland Cemetery
 Woodland Sleuth
 Woolly Thoctar
 Wreath of Geists
+Wretched Banquet
 Wrexial, the Risen Deep
 Wring Flesh
 Wurmcoil Engine

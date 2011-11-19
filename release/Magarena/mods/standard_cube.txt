@@ -18,6 +18,7 @@ Angel's Feather
 Angel's Mercy
 Arbalest Elite
 Archon of Justice
+Ardent Recruit
 Argent Sphinx
 Argentum Armor
 Armored Skaab
@@ -88,6 +89,7 @@ Claustrophobia
 Clifftop Retreat
 Cobbled Wings
 Combust
+Concussive Bolt
 Contagious Nim
 Copperhorn Scout
 Copperline Gorge
@@ -334,6 +336,7 @@ Quicksilver Amulet
 Rage Thrower
 Rakish Heir
 Rally the Forces
+Razorfield Rhino
 Razor Swine
 Razorverge Thicket
 Reaper from the Abyss
@@ -380,6 +383,7 @@ Skithiryx, the Blight Dragon
 Skywinder Drake
 Slaughter Cry
 Slayer of the Wicked
+Smallpox
 Smite the Monstrous
 Snapsail Glider
 Somberwald Spider
@@ -389,6 +393,7 @@ Spectral Flight
 Spectral Rider
 Sphere of the Suns
 Spidery Grasp
+Spiraling Duelist
 Spire Monitor
 Spirit Mantle
 Splinterfright
@@ -405,6 +410,7 @@ Sturmgeist
 Sulfur Falls
 Sunblast Angel
 Sunpetal Grove
+Sunspear Shikari
 Sun Titan
 Suture Priest
 Swamp
