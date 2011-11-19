@@ -14,23 +14,23 @@ check_literals:
 	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
 
 cubes: \
-	release/mods/legacy_cube.txt \
-	release/mods/extended_cube.txt \
-	release/mods/standard_cube.txt \
-	release/mods/modern_cube.txt
+	release/Magarena/mods/legacy_cube.txt \
+	release/Magarena/mods/extended_cube.txt \
+	release/Magarena/mods/standard_cube.txt \
+	release/Magarena/mods/modern_cube.txt
 
 themes: \
-	release/mods/felt_theme.zip \
-	release/mods/blackswamp_theme.zip \
-	release/mods/bluemarble_theme.zip \
-	release/mods/darkbattle_theme.zip \
-	release/mods/gothic_theme.zip \
-	release/mods/greenforest_theme.zip \
-	release/mods/moon_theme.zip \
-	release/mods/mystic_theme.zip \
-	release/mods/nature_theme.zip \
-	release/mods/redfire_theme.zip \
-	release/mods/whiteangel_theme.zip
+	release/Magarena/mods/felt_theme.zip \
+	release/Magarena/mods/blackswamp_theme.zip \
+	release/Magarena/mods/bluemarble_theme.zip \
+	release/Magarena/mods/darkbattle_theme.zip \
+	release/Magarena/mods/gothic_theme.zip \
+	release/Magarena/mods/greenforest_theme.zip \
+	release/Magarena/mods/moon_theme.zip \
+	release/Magarena/mods/mystic_theme.zip \
+	release/Magarena/mods/nature_theme.zip \
+	release/Magarena/mods/redfire_theme.zip \
+	release/Magarena/mods/whiteangel_theme.zip
 
 cards_diff: $(MAG)
 	for i in `hg stat -q src/magic/card release/Magarena/scripts | cut -d' ' -f2 | sort -t'/' -k4`; do hg diff $$i; done | flip -u - > $@
@@ -55,10 +55,10 @@ warnings.txt: $(MAG)
 			-sourcepath src \
 			build
 
-release/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
+release/Magarena/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-release/mods/%_cube.txt: cards/existing.txt cards/%_all.txt
+release/Magarena/mods/%_cube.txt: cards/existing.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 cards/modern_all.txt:
@@ -204,7 +204,7 @@ resources/magic/data/icons/missing_card.png:
 	convert -background gray -bordercolor black -border 5x5 -size 302x435 \
 	-pointsize 30 label:'\nNo card image found\n\nSelect\n\"Download images\"\nfrom Arena menu\n\nOR\n\nSwitch to text mode\nusing the Enter key' $@
 
-release/mods/%_theme.zip: release/mods/%_theme
+release/Magarena/mods/%_theme.zip: release/Magarena/mods/%_theme
 	 zip -j $@ $^/*
 
 cards/evan_cube.txt:
