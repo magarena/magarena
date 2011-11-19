@@ -8,6 +8,15 @@ import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;
 
 public class MagicTappedIntoPlayUnlessTwoTrigger extends MagicWhenComesIntoPlayTrigger {
+
+    private static final MagicTappedIntoPlayUnlessTwoTrigger INSTANCE = new MagicTappedIntoPlayUnlessTwoTrigger();
+
+    private MagicTappedIntoPlayUnlessTwoTrigger() {}
+
+    public static MagicTappedIntoPlayUnlessTwoTrigger create() {
+        return INSTANCE;
+    }
+
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 		return (player.getNrOfPermanentsWithType(MagicType.Land,game) > 3) ?

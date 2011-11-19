@@ -6,6 +6,7 @@ import java.util.Arrays;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
+import magic.model.MagicSubType;
 
 import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicPumpActivation;
@@ -29,6 +30,8 @@ import magic.model.trigger.MagicWhenBlocksPumpTrigger;
 import magic.model.trigger.MagicRavnicaLandTrigger;
 import magic.model.trigger.MagicDevourTrigger;
 import magic.model.trigger.MagicRefugeLandTrigger;
+import magic.model.trigger.MagicTappedIntoPlayUnlessTrigger;
+import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
 
 public enum MagicAbility {
 
@@ -54,6 +57,19 @@ public enum MagicAbility {
     EntersTapped("enters tapped", -10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicTappedIntoPlayTrigger.create());
+        }
+    },
+    EntersTappedUnlessTwo("enters tapped unless two", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
+        }
+    },
+    EntersTappedUnless("enters tapped unless", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] token = arg.split(" ");
+            final MagicSubType t1 = MagicSubType.getSubType(token[0]);
+            final MagicSubType t2 = MagicSubType.getSubType(token[1]);
+            card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
         }
     },
     Echo("echo",-20) {
