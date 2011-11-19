@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=w3u3
 basic=wu
+ability=enters tapped unless plains island
 timing=land
-
-requires_card_code

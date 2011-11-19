@@ -11,7 +11,6 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicTapManaActivation;
-import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Khalni_Garden {

@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=u3r3
 basic=ur
+ability=enters tapped unless island mountain
 timing=land
-
-requires_card_code

@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=u3b3
 basic=ub
+ability=enters tapped unless island swamp
 timing=land
-
-requires_card_code

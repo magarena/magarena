@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=r3g3
 basic=rg
+ability=enters tapped unless mountain forest
 timing=land
-
-requires_card_code

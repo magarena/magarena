@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=w3b3
 basic=wb
+ability=enters tapped unless plains swamp
 timing=land
-
-requires_card_code

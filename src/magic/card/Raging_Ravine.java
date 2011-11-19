@@ -24,7 +24,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicWhenAttacksTrigger;
-import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 

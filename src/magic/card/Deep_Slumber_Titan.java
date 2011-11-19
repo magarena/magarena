@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicUntapAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 

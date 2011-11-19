@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=g3u3
 basic=gu
+ability=enters tapped unless forest island 
 timing=land
-
-requires_card_code

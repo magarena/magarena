@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=b3r3
 basic=br
+ability=enters tapped unless swamp mountain 
 timing=land
-
-requires_card_code

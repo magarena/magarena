@@ -6,6 +6,5 @@ rarity=R
 type=Land
 mana=g3w3
 basic=gw
+ability=enters tapped unless two
 timing=land
-
-requires_card_code

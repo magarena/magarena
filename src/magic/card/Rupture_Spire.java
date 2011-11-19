@@ -8,7 +8,6 @@ import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicTappedIntoPlayTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Rupture_Spire {
