@@ -34,6 +34,7 @@ import magic.model.trigger.MagicRefugeLandTrigger;
 import magic.model.trigger.MagicTappedIntoPlayUnlessTrigger;
 import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
 import magic.model.trigger.MagicRampageTrigger;
+import magic.model.trigger.MagicAttacksPumpTrigger;
 
 public enum MagicAbility {
 
@@ -264,6 +265,14 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicRampageTrigger(n));
+        }
+    },
+    AttacksPump("attacks pump", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] pt = arg.replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+	        card.add(new MagicAttacksPumpTrigger(power,toughness));
         }
     },
     None("",0);
