@@ -46,6 +46,7 @@ import magic.model.trigger.MagicAttacksPumpTrigger;
 import magic.model.trigger.MagicEntersDrawCardTrigger;
 import magic.model.trigger.MagicAllyGrowTrigger;
 import magic.model.trigger.MagicLandfallPumpTrigger;
+import magic.model.trigger.MagicSpecterTrigger;
 
 public enum MagicAbility {
 
@@ -326,6 +327,21 @@ public enum MagicAbility {
                 ability,
                 new MagicActivationHints(timing,false,1),
                 token[1]));
+        }
+    },
+    DamageDiscardCard("damage discard card",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicSpecterTrigger(false,false,false));
+        }
+    },
+    CombatDamageDiscardCard("combat damage discard card",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicSpecterTrigger(true,false,false));
+        }
+    },
+    DamageOpponentDiscardRandomCard("damage opponent discard random card",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicSpecterTrigger(false,true,true));
         }
     },
     None("",0);
