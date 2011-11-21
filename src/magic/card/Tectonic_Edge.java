@@ -17,11 +17,8 @@ import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
-
-import java.util.Arrays;
 
 public class Tectonic_Edge {
 
@@ -66,7 +63,4 @@ public class Tectonic_Edge {
 			});
 		}
 	};
-        
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Colorless),0);
 }

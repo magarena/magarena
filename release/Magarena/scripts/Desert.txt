@@ -5,6 +5,6 @@ value=3
 rarity=C
 type=Land
 subtype=Desert
+ability=tap add mana {1}
 timing=land
-
 requires_card_code

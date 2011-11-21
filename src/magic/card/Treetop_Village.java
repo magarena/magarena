@@ -19,13 +19,11 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
-import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Treetop_Village {
@@ -90,7 +88,4 @@ public class Treetop_Village {
 			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
 		}
 	};
-	
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Green),1);
 }

@@ -6,6 +6,6 @@ rarity=U
 type=Artifact
 converted=2
 cost={2}
+ability=tap add mana {1}
 timing=artifact
-
 requires_card_code

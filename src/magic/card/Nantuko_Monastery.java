@@ -18,12 +18,10 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
-import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Nantuko_Monastery {
@@ -90,7 +88,4 @@ public class Nantuko_Monastery {
 			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
 		}
 	};
-	
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Colorless),0);
 }

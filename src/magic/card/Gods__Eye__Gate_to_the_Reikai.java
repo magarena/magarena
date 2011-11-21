@@ -9,16 +9,10 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
-import java.util.Arrays;
-
 public class Gods__Eye__Gate_to_the_Reikai {
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Colorless),0);
-    
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {

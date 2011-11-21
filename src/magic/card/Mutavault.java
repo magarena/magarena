@@ -17,12 +17,10 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
-import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Mutavault {
@@ -46,8 +44,6 @@ public class Mutavault {
 			return flags|MagicType.Creature.getMask();
 		}
 	};
-
-    public static final MagicManaActivation M = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
 
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{new MagicArtificialCondition(

@@ -1,16 +1,12 @@
 package magic.card;
 
-import java.util.Arrays;
-
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
-import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Khalni_Garden {
@@ -35,7 +31,4 @@ public class Khalni_Garden {
 					TokenCardDefinitions.getInstance().getTokenDefinition("Plant")));
 		}		
     };
-    
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Green),1);
 }

@@ -17,12 +17,9 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
-
-import java.util.Arrays;
 
 public class Inkmoth_Nexus {
     
@@ -75,7 +72,4 @@ public class Inkmoth_Nexus {
 			game.doAction(new MagicBecomesCreatureAction(permanent,PT,AB,ST));
 		}
 	};
-	
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Colorless), 1);
 }

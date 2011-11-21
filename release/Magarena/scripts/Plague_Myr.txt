@@ -8,8 +8,6 @@ subtype=Myr
 converted=2
 cost={2}
 pt=1/1
-ability=infect
+ability=infect,tap add mana {1}
 timing=smain
 mana_or_combat
-
-requires_card_code

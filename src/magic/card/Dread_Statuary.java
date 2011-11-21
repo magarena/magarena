@@ -16,7 +16,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
@@ -74,7 +73,4 @@ public class Dread_Statuary {
 			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,ST));
 		}
 	};
-	
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Colorless),0);
 }

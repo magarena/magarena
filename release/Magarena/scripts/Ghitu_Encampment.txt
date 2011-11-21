@@ -6,6 +6,6 @@ rarity=U
 type=Land
 mana=r3
 timing=land
-ability=enters tapped
+ability=enters tapped,tap add mana {R}
 mana_or_combat
 requires_card_code

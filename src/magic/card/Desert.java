@@ -15,17 +15,11 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
-import java.util.Arrays;
-
 public class Desert {
-    public static final MagicManaActivation M = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Colorless),0);
-    
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
             		MagicCondition.CAN_TAP_CONDITION,

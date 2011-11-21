@@ -9,8 +9,6 @@ color=gw
 converted=2
 cost={G}{W}
 pt=2/2
-ability=vigilance
+ability=vigilance,tap add mana {G}
 timing=smain
 mana_or_combat
-
-requires_card_code

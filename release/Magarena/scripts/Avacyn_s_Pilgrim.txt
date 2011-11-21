@@ -9,7 +9,6 @@ color=g
 converted=1
 cost={G}
 pt=1/1
+ability=tap add mana {W}
 timing=main
 mana_or_combat
-
-requires_card_code

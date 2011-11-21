@@ -16,10 +16,7 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
-
-import java.util.Arrays;
 
 public class Mind_Stone {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -55,6 +52,4 @@ public class Mind_Stone {
 			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
 		}
 	};
-	
-	public static final MagicManaActivation M = new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless),0);
 }

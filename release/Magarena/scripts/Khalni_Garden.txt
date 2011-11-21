@@ -6,5 +6,5 @@ rarity=C
 type=Land
 mana=g4
 timing=land
-ability=enters tapped
+ability=enters tapped,tap add mana {G}
 requires_card_code

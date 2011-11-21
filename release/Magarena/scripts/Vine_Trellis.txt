@@ -9,8 +9,6 @@ color=g
 converted=2
 cost={1}{G}
 pt=0/4
-ability=defender
+ability=defender,tap add mana {G}
 timing=smain
 mana_or_combat
-
-requires_card_code
