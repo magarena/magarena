@@ -9,7 +9,5 @@ color=guw
 converted=4
 cost={2}{G/U}{W}
 pt=2/2
-ability=flying
+ability=flying,enters draw card
 timing=fmain
-
-requires_card_code

@@ -10,5 +10,4 @@ converted=2
 cost={G}{G}
 pt=2/1
 timing=main
-ability=echo
-requires_card_code
+ability=echo,enters draw card

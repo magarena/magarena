@@ -9,7 +9,5 @@ color=w
 converted=2
 cost={1}{W}
 pt=0/4
-ability=defender
+ability=defender,enters draw card
 timing=smain
-
-requires_card_code

@@ -9,6 +9,5 @@ color=g
 converted=5
 cost={3}{G}{G}
 pt=4/5
-ability=cumulative upkeep {2}
+ability=cumulative upkeep {2},enters draw card
 timing=main
-requires_card_code
