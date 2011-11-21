@@ -15,7 +15,7 @@ public class MagicVividManaActivation extends MagicManaActivation {
         MagicCondition.CHARGE_COUNTER_CONDITION};
 			
 	public MagicVividManaActivation(final List<MagicManaType> manaTypes) {
-		super(manaTypes,CONDITIONS,2);
+		super(manaTypes,CONDITIONS,manaTypes.size() -1);
 	}
 		
 	@Override
