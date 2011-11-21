@@ -35,6 +35,7 @@ import magic.model.trigger.MagicTappedIntoPlayUnlessTrigger;
 import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
 import magic.model.trigger.MagicRampageTrigger;
 import magic.model.trigger.MagicAttacksPumpTrigger;
+import magic.model.trigger.MagicEntersDrawCardTrigger;
 
 public enum MagicAbility {
 
@@ -73,6 +74,11 @@ public enum MagicAbility {
             final MagicSubType t1 = MagicSubType.getSubType(token[0]);
             final MagicSubType t2 = MagicSubType.getSubType(token[1]);
             card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
+        }
+    },
+    EntersDrawCard("enters draw card", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicEntersDrawCardTrigger.create());
         }
     },
     Echo("echo",-20) {
