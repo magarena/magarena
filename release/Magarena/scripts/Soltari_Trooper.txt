@@ -9,7 +9,5 @@ color=w
 converted=2
 cost={1}{W}
 pt=1/1
-ability=shadow
+ability=shadow,attacks pump +1/+1
 timing=main
-
-requires_card_code
