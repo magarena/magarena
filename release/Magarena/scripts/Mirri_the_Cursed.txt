@@ -9,7 +9,5 @@ color=b
 converted=4
 cost={2}{B}{B}
 pt=3/2
-ability=flying,first strike,haste
+ability=flying,first strike,haste,combat damage grow
 timing=fmain
-
-requires_card_code

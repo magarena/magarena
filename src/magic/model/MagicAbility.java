@@ -49,6 +49,7 @@ import magic.model.trigger.MagicLandfallPumpTrigger;
 import magic.model.trigger.MagicSpecterTrigger;
 import magic.model.trigger.MagicDieDrawCardTrigger;
 import magic.model.trigger.MagicThiefTrigger;
+import magic.model.trigger.MagicVeteranTrigger;
 
 public enum MagicAbility {
 
@@ -364,6 +365,16 @@ public enum MagicAbility {
     CombatDamageMayDrawCard("combat damage may draw card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicThiefTrigger(true,false,1));
+        }
+    },
+    CombatDamageGrow("combat damage grow",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicVeteranTrigger(true));
+        }
+    },
+    DamageGrow("damage grow",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicVeteranTrigger(false));
         }
     },
     None("",0);

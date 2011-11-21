@@ -16,8 +16,6 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicVeteranTrigger;
 
 public class Spiritmonger {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -54,6 +52,4 @@ public class Spiritmonger {
 			game.doAction(new MagicPlayAbilityAction(permanent));
 		}
 	};
-	
-    public static final MagicTrigger T = new MagicVeteranTrigger(false);
 }
