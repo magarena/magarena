@@ -9,6 +9,9 @@ import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
 import magic.model.MagicSubType;
 
+import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicTiming;
+
 import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicPumpActivation;
 import magic.model.event.MagicPingActivation;
@@ -16,6 +19,7 @@ import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
+import magic.model.event.MagicGainActivation;
 
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
@@ -306,6 +310,22 @@ public enum MagicAbility {
     SacAddManaAny("sac add mana any",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
+        }
+    },
+    GainAbility("gains",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int idx = arg.indexOf(' ');
+            final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
+            final MagicManaCost cost = MagicManaCost.createCost(token[0]);
+            final MagicAbility ability = MagicAbility.getAbility(token[1]);
+            final MagicTiming timing = (ability == Haste || ability == Vigilance) ?
+                MagicTiming.FirstMain :
+                MagicTiming.Pump;
+            card.add(new MagicGainActivation(
+                cost,
+                ability,
+                new MagicActivationHints(timing,false,1),
+                token[1]));
         }
     },
     None("",0);
