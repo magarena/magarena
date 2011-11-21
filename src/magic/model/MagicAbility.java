@@ -37,6 +37,7 @@ import magic.model.trigger.MagicRampageTrigger;
 import magic.model.trigger.MagicAttacksPumpTrigger;
 import magic.model.trigger.MagicEntersDrawCardTrigger;
 import magic.model.trigger.MagicAllyGrowTrigger;
+import magic.model.trigger.MagicLandfallPumpTrigger;
 
 public enum MagicAbility {
 
@@ -285,6 +286,11 @@ public enum MagicAbility {
     AllyGrow("ally grow",20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
 	        card.add(MagicAllyGrowTrigger.create());
+        }
+    },
+    LandfallPump("landfall pump",20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+	        card.add(MagicLandfallPumpTrigger.create());
         }
     },
     None("",0);
