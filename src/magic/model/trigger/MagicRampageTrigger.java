@@ -18,19 +18,16 @@ public class MagicRampageTrigger extends MagicWhenBecomesBlockedTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
         final MagicPlayer player = permanent.getController();
-        if (creature == permanent) {
-            final MagicPermanentList plist = permanent.getBlockingCreatures();
-            final int amount = n * (plist.size() - 1);
-            if (amount > 0) {
-                return new MagicEvent(
-                        permanent,
-                        player,
-                        new Object[]{permanent,amount},
-                        this,
-                        permanent + " gets +" + amount + "/+" +  amount + " until end of turn.");
-            }
-        }
-        return MagicEvent.NONE;
+        final MagicPermanentList plist = permanent.getBlockingCreatures();
+        final int amount = n * (plist.size() - 1);
+        return (creature == permanent && amount > 0) ?
+            new MagicEvent(
+                permanent,
+                player,
+                new Object[]{permanent,amount},
+                this,
+                permanent + " gets +" + amount + "/+" +  amount + " until end of turn."):
+            MagicEvent.NONE;
     }
     
     @Override
