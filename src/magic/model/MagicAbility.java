@@ -36,6 +36,7 @@ import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
 import magic.model.trigger.MagicRampageTrigger;
 import magic.model.trigger.MagicAttacksPumpTrigger;
 import magic.model.trigger.MagicEntersDrawCardTrigger;
+import magic.model.trigger.MagicAllyGrowTrigger;
 
 public enum MagicAbility {
 
@@ -279,6 +280,11 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
 	        card.add(new MagicAttacksPumpTrigger(power,toughness));
+        }
+    },
+    AllyGrow("ally grow",20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+	        card.add(MagicAllyGrowTrigger.create());
         }
     },
     None("",0);
