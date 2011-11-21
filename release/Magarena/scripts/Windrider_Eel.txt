@@ -9,7 +9,5 @@ color=u
 converted=4
 cost={3}{U}
 pt=2/2
-ability=flying
+ability=flying,landfall pump
 timing=main
-
-requires_card_code
