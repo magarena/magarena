@@ -9,6 +9,5 @@ color=g
 converted=7
 cost={4}{G}{G}{G}
 pt=7/7
-ability=trample,enters gain life 7
+ability=trample,enters gain life 7,die draw card
 timing=fmain
-requires_card_code

@@ -9,7 +9,5 @@ color=u
 converted=2
 cost={1}{U}
 pt=1/1
-ability=flying
+ability=flying,die may draw card
 timing=main
-
-requires_card_code
