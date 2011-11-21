@@ -33,6 +33,7 @@ import magic.model.trigger.MagicDevourTrigger;
 import magic.model.trigger.MagicRefugeLandTrigger;
 import magic.model.trigger.MagicTappedIntoPlayUnlessTrigger;
 import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
+import magic.model.trigger.MagicRampageTrigger;
 
 public enum MagicAbility {
 
@@ -257,6 +258,12 @@ public enum MagicAbility {
     Ping("ping",20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicPingActivation.create());
+        }
+    },
+    Rampage("rampage",20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicRampageTrigger(n));
         }
     },
     None("",0);
