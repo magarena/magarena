@@ -16,7 +16,6 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import java.util.Collection;
 
 public class Carnifex_Demon {
@@ -58,7 +57,4 @@ public class Carnifex_Demon {
 			}
 		}
 	};
-
-	public static final MagicComesIntoPlayWithCounterTrigger T = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",2);
 }

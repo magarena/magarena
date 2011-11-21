@@ -17,7 +17,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 
 public class Wickerbough_Elder {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation( 
@@ -26,7 +25,7 @@ public class Wickerbough_Elder {
                 MagicManaCost.GREEN.getCondition()
             },
             new MagicActivationHints(MagicTiming.Removal),
-            "destroy") {
+            "Destroy") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
@@ -53,7 +52,4 @@ public class Wickerbough_Elder {
 			});
 		}
 	};
-
-	public static final MagicComesIntoPlayWithCounterTrigger T = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",1);
 }

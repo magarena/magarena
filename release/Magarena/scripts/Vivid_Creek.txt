@@ -5,6 +5,5 @@ value=3
 rarity=U
 type=Land
 mana=b1g1r1u3w1
-ability=tap add mana {U}
+ability=enters tapped,enters charged 2,tap add mana {U},tap drain add mana any
 timing=tapland
-requires_card_code

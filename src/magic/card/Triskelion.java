@@ -17,7 +17,6 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 
 public class Triskelion {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation( 
@@ -50,7 +49,4 @@ public class Triskelion {
 			});
 		}
 	};
-
-	public static final MagicComesIntoPlayWithCounterTrigger T = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",3);
 }

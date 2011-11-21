@@ -16,8 +16,6 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-
 
 public class Tumble_Magnet {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -55,7 +53,4 @@ public class Tumble_Magnet {
 			});
 		}
 	};
-
-	public static final MagicComesIntoPlayWithCounterTrigger T = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",3);
 }

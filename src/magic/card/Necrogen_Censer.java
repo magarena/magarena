@@ -16,8 +16,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-
 
 public class Necrogen_Censer {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
@@ -56,7 +54,4 @@ public class Necrogen_Censer {
 			});
 		}
 	};
-
-	public static final MagicComesIntoPlayWithCounterTrigger T = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",2);
 }
