@@ -44,6 +44,15 @@ public enum MagicManaType {
 	public String getText() {
 		return text;
 	}
+	
+    public static MagicManaType get(final String name) {
+		for (final MagicManaType type : values()) {
+			if (type.toString().equalsIgnoreCase(name)) {
+				return type;
+			}
+		}
+        throw new RuntimeException("Unknown mana type " + name);
+	}
 
 	@Override
 	public String toString() {

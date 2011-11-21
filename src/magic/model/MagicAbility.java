@@ -6,12 +6,15 @@ import java.util.Arrays;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
+import magic.model.MagicManaType;
 import magic.model.MagicSubType;
 
 import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicPumpActivation;
 import magic.model.event.MagicPingActivation;
 import magic.model.event.MagicLevelUpActivation;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicTapManaActivation;
 
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
@@ -291,6 +294,16 @@ public enum MagicAbility {
     LandfallPump("landfall pump",20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
 	        card.add(MagicLandfallPumpTrigger.create());
+        }
+    },
+    TapAddMana("tap add mana",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaType manatype = MagicManaType.get(arg);
+            if (manatype != MagicManaType.Colorless) {
+                card.add(new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless, manatype), 1));
+            } else {
+                card.add(new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless), 0));
+            }
         }
     },
     None("",0);
