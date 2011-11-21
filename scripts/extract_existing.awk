@@ -8,11 +8,13 @@ FILENAME ~ /existing/ {
 }
 
 {
-    if ($1 in impl) {
-        found[$1] = 1
-        print $1
+    name = $1
+    if (name in impl) {
+        found[name] = 1
+        print name
         while ($0 != "") {
             getline
+			gsub(name,"@")
             print $0
         }
         cnt++
