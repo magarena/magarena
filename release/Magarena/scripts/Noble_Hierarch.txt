@@ -9,8 +9,6 @@ color=g
 converted=1
 cost={G}
 pt=0/1
-ability=exalted
+ability=exalted,tap add mana {G} or {W} or {U}
 timing=main
 mana_or_combat
-
-requires_card_code

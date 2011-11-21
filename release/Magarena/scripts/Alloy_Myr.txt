@@ -8,7 +8,6 @@ subtype=Myr
 converted=3
 cost={3}
 pt=2/2
+ability=tap add mana any
 timing=main
 mana_or_combat
-
-requires_card_code

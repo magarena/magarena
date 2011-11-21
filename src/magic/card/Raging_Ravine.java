@@ -21,13 +21,11 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
-import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Raging_Ravine {
@@ -132,7 +130,4 @@ public class Raging_Ravine {
 			game.doAction(new MagicAddTurnTriggerAction(permanent,CT));
         }
     };
-    
-    public static final MagicManaActivation A2 = new MagicTapManaActivation(
-            Arrays.asList(MagicManaType.Red,MagicManaType.Green), 1);
 }

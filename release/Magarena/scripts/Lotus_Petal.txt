@@ -6,6 +6,5 @@ rarity=M
 type=Artifact
 converted=0
 cost={0}
+ability=sac add mana any
 timing=artifact
-
-requires_card_code
