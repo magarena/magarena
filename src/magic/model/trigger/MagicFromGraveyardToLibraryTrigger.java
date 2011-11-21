@@ -9,6 +9,15 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 
 public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyardTrigger {
+
+    private static final MagicFromGraveyardToLibraryTrigger INSTANCE = new MagicFromGraveyardToLibraryTrigger();
+
+    private MagicFromGraveyardToLibraryTrigger() {}
+
+    public static final MagicFromGraveyardToLibraryTrigger create() {
+        return INSTANCE;
+    }
+
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
 		final MagicCard card=triggerData.card;

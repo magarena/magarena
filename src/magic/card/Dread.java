@@ -6,9 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDestroyAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
-
 
 public class Dread {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
@@ -35,6 +33,4 @@ public class Dread {
 			game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
 		}
     };
-    
-    public static final MagicFromGraveyardToLibraryTrigger T2 = new MagicFromGraveyardToLibraryTrigger();
 }

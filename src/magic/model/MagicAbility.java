@@ -50,6 +50,7 @@ import magic.model.trigger.MagicSpecterTrigger;
 import magic.model.trigger.MagicDieDrawCardTrigger;
 import magic.model.trigger.MagicThiefTrigger;
 import magic.model.trigger.MagicVeteranTrigger;
+import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
 
 public enum MagicAbility {
 
@@ -375,6 +376,11 @@ public enum MagicAbility {
     DamageGrow("damage grow",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicVeteranTrigger(false));
+        }
+    },
+    GraveyardToLibrary("graveyard to library",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicFromGraveyardToLibraryTrigger.create());
         }
     },
     None("",0);
