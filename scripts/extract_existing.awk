@@ -2,12 +2,12 @@ BEGIN {
     FS = "\t"
 }
 
-FILENAME ~ /existing/ {
+!(FILENAME ~ /mtg-data/) {
     impl[$1] = 0
     next
 }
 
-{
+FILENAME ~ /mtg-data/ {
     name = $1
     if (name in impl) {
         found[name] = 1
