@@ -47,6 +47,7 @@ import magic.model.trigger.MagicEntersDrawCardTrigger;
 import magic.model.trigger.MagicAllyGrowTrigger;
 import magic.model.trigger.MagicLandfallPumpTrigger;
 import magic.model.trigger.MagicSpecterTrigger;
+import magic.model.trigger.MagicDieDrawCardTrigger;
 
 public enum MagicAbility {
 
@@ -342,6 +343,16 @@ public enum MagicAbility {
     DamageOpponentDiscardRandomCard("damage opponent discard random card",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicSpecterTrigger(false,true,true));
+        }
+    },
+    DieDrawCard("die draw card",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicDieDrawCardTrigger(true));
+        }
+    },
+    DieMayDrawCard("die may draw card",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicDieDrawCardTrigger(false));
         }
     },
     None("",0);
