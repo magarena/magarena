@@ -67,18 +67,13 @@ public class CardStatistics {
 	}
 	
 	private void createStatistics() {
-		
-		totalCards=cards.size();
-
-		if (cards.size()==0) {
-			return;
-		}
-		
 		for (final MagicCardDefinition card : cards) {
             //ignore tokens
             if (card.isToken()) {
                 continue;
             }
+
+            totalCards++;
 												
 			totalRarity[card.getRarity()]++;
 						
