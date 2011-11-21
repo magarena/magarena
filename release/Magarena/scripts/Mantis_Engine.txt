@@ -8,6 +8,5 @@ subtype=Insect
 converted=5
 cost={5}
 pt=3/3
+ability=gains {2} flying,gains {2} first strike 
 timing=main
-
-requires_card_code

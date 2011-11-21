@@ -9,6 +9,5 @@ color=r
 converted=3
 cost={2}{R}
 pt=2/2
-ability=flanking
+ability=flanking,gains {R}{R} first strike
 timing=main
-requires_card_code

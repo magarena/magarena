@@ -9,6 +9,5 @@ color=wb
 converted=3
 cost={1}{W/B}{W/B}
 pt=2/1
-ability=protection from white,protection from black,pump {W/B}{W/B} +1/+0
+ability=protection from white,protection from black,pump {W/B}{W/B} +1/+0,gains {W/B} flying,gains {W/B} first strike
 timing=main
-requires_card_code
