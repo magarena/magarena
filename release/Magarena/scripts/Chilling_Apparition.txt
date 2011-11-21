@@ -10,5 +10,4 @@ converted=3
 cost={2}{B}
 pt=1/1
 timing=main
-ability=regenerate {B}
-requires_card_code
+ability=regenerate {B},combat damage discard card

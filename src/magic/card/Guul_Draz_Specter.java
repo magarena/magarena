@@ -5,8 +5,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicSpecterTrigger;
-import magic.model.trigger.MagicTrigger;
 
 public class Guul_Draz_Specter {
 	public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
@@ -17,6 +15,4 @@ public class Guul_Draz_Specter {
 			}
 		}		
 	};
-
-    public static final MagicTrigger T = new MagicSpecterTrigger(true,false,false);
 }
