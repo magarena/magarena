@@ -53,6 +53,22 @@ public enum MagicManaType {
 		}
         throw new RuntimeException("Unknown mana type " + name);
 	}
+    
+    public static List<MagicManaType> getList(final String name) {
+        if ("{1}".equals(name)) {
+            return Arrays.asList(Colorless);
+        }
+        if ("any".equals(name)) {
+            return ALL_TYPES;
+        }
+        final String[] tokens = name.split(" or ");
+        final MagicManaType[] types = new MagicManaType[tokens.length + 1];
+        types[0] = Colorless;
+        for (int i = 0; i < tokens.length; i++) {
+            types[i + 1] = get(tokens[i]);
+		}
+        return Arrays.asList(types);
+	}
 
 	@Override
 	public String toString() {

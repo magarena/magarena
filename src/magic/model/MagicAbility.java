@@ -15,6 +15,7 @@ import magic.model.event.MagicPingActivation;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicTapManaActivation;
+import magic.model.event.MagicSacrificeTapManaActivation;
 
 import magic.model.trigger.MagicExaltedTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
@@ -298,12 +299,13 @@ public enum MagicAbility {
     },
     TapAddMana("tap add mana",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final MagicManaType manatype = MagicManaType.get(arg);
-            if (manatype != MagicManaType.Colorless) {
-                card.add(new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless, manatype), 1));
-            } else {
-                card.add(new MagicTapManaActivation(Arrays.asList(MagicManaType.Colorless), 0));
-            }
+            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+            card.add(new MagicTapManaActivation(manatype, manatype.size() - 1));
+        }
+    },
+    SacAddManaAny("sac add mana any",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
         }
     },
     None("",0);
