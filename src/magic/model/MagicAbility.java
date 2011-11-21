@@ -18,6 +18,7 @@ import magic.model.event.MagicPingActivation;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicTapManaActivation;
+import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicGainActivation;
 
@@ -51,6 +52,7 @@ import magic.model.trigger.MagicDieDrawCardTrigger;
 import magic.model.trigger.MagicThiefTrigger;
 import magic.model.trigger.MagicVeteranTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
+import magic.model.trigger.MagicEntersChargedTrigger;
 
 public enum MagicAbility {
 
@@ -76,6 +78,24 @@ public enum MagicAbility {
     EntersTapped("enters tapped", -10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicTappedIntoPlayTrigger.create());
+        }
+    },
+    EntersCharged("enters charged", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",n));
+        }
+    },
+    EntersPlus("enters +1/+1", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+        }
+    },
+    EntersMinus("enters -1/-1", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",n));
         }
     },
     EntersTappedUnlessTwo("enters tapped unless two", -10) {
@@ -310,6 +330,12 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
             card.add(new MagicTapManaActivation(manatype, manatype.size() - 1));
+        }
+    },
+    TapDrainAddMana("tap drain add mana",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+            card.add(new MagicVividManaActivation(manatype));
         }
     },
     SacAddManaAny("sac add mana any",10) {
