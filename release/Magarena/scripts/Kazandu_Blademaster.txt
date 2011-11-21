@@ -9,7 +9,5 @@ color=w
 converted=2
 cost={W}{W}
 pt=1/1
-ability=first strike,vigilance
+ability=first strike,vigilance,ally grow
 timing=main
-
-requires_card_code

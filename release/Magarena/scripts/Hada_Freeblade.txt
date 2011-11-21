@@ -9,5 +9,5 @@ color=w
 converted=1
 cost={W}
 pt=0/1
+ability=ally grow
 timing=main
-requires_card_code
