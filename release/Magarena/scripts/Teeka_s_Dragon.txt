@@ -8,7 +8,5 @@ subtype=Dragon
 converted=9
 cost={9}
 pt=5/5
-ability=flying,trample
+ability=flying,trample,rampage 4
 timing=main
-
-requires_card_code
