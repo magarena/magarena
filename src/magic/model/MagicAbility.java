@@ -52,7 +52,6 @@ import magic.model.trigger.MagicDieDrawCardTrigger;
 import magic.model.trigger.MagicThiefTrigger;
 import magic.model.trigger.MagicVeteranTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
-import magic.model.trigger.MagicEntersChargedTrigger;
 
 public enum MagicAbility {
 
