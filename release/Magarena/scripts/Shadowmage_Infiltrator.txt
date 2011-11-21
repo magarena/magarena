@@ -9,7 +9,5 @@ color=ub
 converted=3
 cost={1}{U}{B}
 pt=1/3
-ability=fear
+ability=fear,combat damage may draw card
 timing=main
-
-requires_card_code
