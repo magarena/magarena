@@ -9,7 +9,6 @@ color=r
 converted=3
 cost={2}{R}
 pt=1/1
-ability=doesn't untap during untap step
+ability=doesn't untap during untap step,ping
 timing=main
-
 requires_card_code

@@ -9,6 +9,5 @@ color=r
 converted=3
 cost={2}{R}
 pt=1/1
+ability=ping
 timing=fmain
-
-requires_card_code
