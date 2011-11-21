@@ -10,6 +10,7 @@ import magic.model.MagicSubType;
 
 import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicPumpActivation;
+import magic.model.event.MagicPingActivation;
 import magic.model.event.MagicLevelUpActivation;
 
 import magic.model.trigger.MagicExaltedTrigger;
@@ -251,6 +252,11 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
             card.add(new MagicDevourTrigger(n));
+        }
+    },
+    Ping("ping",20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicPingActivation.create());
         }
     },
     None("",0);
