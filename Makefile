@@ -93,7 +93,7 @@ cards/existing.txt: $(wildcard release/Magarena/scripts/*.txt)
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 	flip -u $@
 
-cards/existing_full.txt: cards/existing.txt cards/mtg-data.txt
+%_full.txt: %.txt cards/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
 cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt cards/mtg-data.txt
