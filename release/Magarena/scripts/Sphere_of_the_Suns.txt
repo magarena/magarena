@@ -6,5 +6,5 @@ rarity=U
 type=Artifact
 converted=2
 cost={2}
-ability=enters tapped,enters charged 3,tap drain add mana any
+ability=enters tapped,enters with charge 3,tap drain add mana any
 timing=tapland

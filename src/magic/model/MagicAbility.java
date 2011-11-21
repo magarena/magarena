@@ -80,19 +80,19 @@ public enum MagicAbility {
             card.add(MagicTappedIntoPlayTrigger.create());
         }
     },
-    EntersCharged("enters charged", 0) {
+    EntersCharged("enters with charge", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",n));
         }
     },
-    EntersPlus("enters +1/+1", 0) {
+    EntersPlus("enters with +1/+1", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
         }
     },
-    EntersMinus("enters -1/-1", 0) {
+    EntersMinus("enters with -1/-1", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",n));

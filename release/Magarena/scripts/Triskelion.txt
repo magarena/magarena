@@ -8,6 +8,6 @@ subtype=Construct
 converted=6
 cost={6}
 pt=1/1
-ability=enters +1/+1 3
+ability=enters with +1/+1 3
 timing=main
 requires_card_code

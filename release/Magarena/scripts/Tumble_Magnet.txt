@@ -6,6 +6,6 @@ rarity=C
 type=Artifact
 converted=3
 cost={3}
-ability=enters charged 3
+ability=enters with charge 3
 timing=artifact
 requires_card_code
