@@ -10,6 +10,6 @@ color=w
 converted=3
 cost={1}{W}{W}
 pt=1/3
+ability=leaves return exile
 timing=main
-
 requires_card_code

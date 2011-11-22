@@ -42,31 +42,4 @@ public class Petravark {
 			});
 		}
     };
-    
-    public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-			if (permanent == data &&
-				!permanent.getExiledCards().isEmpty()) {
-				final MagicCard exiledCard = permanent.getExiledCards().get(0);
-				return new MagicEvent(
-						permanent,
-						permanent.getController(),
-						new Object[]{exiledCard},
-						this,
-						"Return " + exiledCard + " to the battlefield");
-			}
-            return MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			final MagicCard exiledCard = (MagicCard)data[0];
-			game.doAction(new MagicRemoveCardAction(exiledCard,MagicLocationType.Exile));
-			game.doAction(new MagicPlayCardAction(exiledCard,exiledCard.getOwner(),MagicPlayCardAction.NONE));
-		}
-    };
 }

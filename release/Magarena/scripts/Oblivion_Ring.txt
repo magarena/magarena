@@ -8,6 +8,6 @@ type=Enchantment
 color=w
 converted=3
 cost={2}{W}
+ability=leaves return exile
 timing=removal
-
 requires_card_code

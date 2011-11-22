@@ -47,32 +47,4 @@ public class Oblivion_Ring {
 			});
 		}
     };
-    
-    public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-			if (permanent == data &&
-				!permanent.getExiledCards().isEmpty()) {
-				final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
-				return new MagicEvent(
-						permanent,
-						permanent.getController(),
-						new Object[]{permanent},
-						this,
-						clist.size() > 1 ?
-								"Return exiled cards to the battlefield." :
-								"Return " + clist.get(0) + " to the battlefield.");
-			}
-            return MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));
-		}
-    };
 }
