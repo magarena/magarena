@@ -52,6 +52,7 @@ import magic.model.trigger.MagicDieDrawCardTrigger;
 import magic.model.trigger.MagicThiefTrigger;
 import magic.model.trigger.MagicVeteranTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
+import magic.model.trigger.MagicEntersDamageTargetTrigger;
 
 public enum MagicAbility {
 
@@ -113,6 +114,12 @@ public enum MagicAbility {
     EntersDrawCard("enters draw card", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicEntersDrawCardTrigger.create());
+        }
+    },
+    EntersDamageTarget("enters damage target", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicEntersDamageTargetTrigger(n));
         }
     },
     Echo("echo",-20) {
