@@ -15,9 +15,11 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int n;
+    private final MagicTargetChoice targetChoice;
 
-    public MagicEntersDamageTargetTrigger(final int n) {
+    public MagicEntersDamageTargetTrigger(final MagicTargetChoice targetChoice, final int n) {
         this.n = n;
+        this.targetChoice = targetChoice;
     }
     
     @Override
@@ -25,8 +27,8 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
         return new MagicEvent(
                 permanent,
                 player,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                new MagicDamageTargetPicker(1),
+                targetChoice,
+                new MagicDamageTargetPicker(n),
                 MagicEvent.NO_DATA,
                 this,
                 permanent + " deals " + n + " damage to target creature or player$.");

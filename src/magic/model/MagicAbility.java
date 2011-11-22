@@ -9,6 +9,8 @@ import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
 import magic.model.MagicSubType;
 
+import magic.model.choice.MagicTargetChoice;
+
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicTiming;
 
@@ -118,8 +120,23 @@ public enum MagicAbility {
     },
     EntersDamageTarget("enters damage target", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicEntersDamageTargetTrigger(n));
+            final String[] tokens = arg.split(" ");
+            if (tokens.length == 1) {
+                final int n = Integer.parseInt(tokens[0]);
+                card.add(new MagicEntersDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                            n));
+            } else if ("creature".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicEntersDamageTargetTrigger(
+                            MagicTargetChoice.TARGET_CREATURE,
+                            n));
+            } else if ("player".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicEntersDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_PLAYER,
+                            n));
+            }
         }
     },
     Echo("echo",-20) {
