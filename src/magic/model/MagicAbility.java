@@ -137,6 +137,8 @@ public enum MagicAbility {
                 card.add(new MagicEntersDamageTargetTrigger(
                             MagicTargetChoice.NEG_TARGET_PLAYER,
                             n));
+            } else {
+                throw new RuntimeException("unable to parse " + arg);
             }
         }
     },
@@ -158,6 +160,8 @@ public enum MagicAbility {
                 card.add(new MagicLeavesDamageTargetTrigger(
                             MagicTargetChoice.NEG_TARGET_PLAYER,
                             n));
+            } else {
+                throw new RuntimeException("unable to parse " + arg);
             }
         }
     },
