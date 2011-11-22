@@ -24,38 +24,7 @@ import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicGainActivation;
 
-import magic.model.trigger.MagicExaltedTrigger;
-import magic.model.trigger.MagicBattleCryTrigger;
-import magic.model.trigger.MagicLivingWeaponTrigger;
-import magic.model.trigger.MagicFlankingTrigger;
-import magic.model.trigger.MagicEchoTrigger;
-import magic.model.trigger.MagicTappedIntoPlayTrigger;
-import magic.model.trigger.MagicModularTrigger;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
-import magic.model.trigger.MagicWhenBlocksPumpTrigger;
-import magic.model.trigger.MagicSoulshiftTrigger;
-import magic.model.trigger.MagicFadeVanishCounterTrigger;
-import magic.model.trigger.MagicCumulativeUpkeepTrigger;
-import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
-import magic.model.trigger.MagicWhenBlocksPumpTrigger;
-import magic.model.trigger.MagicRavnicaLandTrigger;
-import magic.model.trigger.MagicDevourTrigger;
-import magic.model.trigger.MagicRefugeLandTrigger;
-import magic.model.trigger.MagicTappedIntoPlayUnlessTrigger;
-import magic.model.trigger.MagicTappedIntoPlayUnlessTwoTrigger;
-import magic.model.trigger.MagicRampageTrigger;
-import magic.model.trigger.MagicAttacksPumpTrigger;
-import magic.model.trigger.MagicEntersDrawCardTrigger;
-import magic.model.trigger.MagicAllyGrowTrigger;
-import magic.model.trigger.MagicLandfallPumpTrigger;
-import magic.model.trigger.MagicSpecterTrigger;
-import magic.model.trigger.MagicDieDrawCardTrigger;
-import magic.model.trigger.MagicThiefTrigger;
-import magic.model.trigger.MagicVeteranTrigger;
-import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
-import magic.model.trigger.MagicEntersDamageTargetTrigger;
-import magic.model.trigger.MagicLeavesDamageTargetTrigger;
+import magic.model.trigger.*;
 
 public enum MagicAbility {
 
@@ -348,7 +317,8 @@ public enum MagicAbility {
     },
     Ping("ping",20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicPingActivation.create());
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicPingActivation(n));
         }
     },
     Rampage("rampage",20) {
@@ -456,6 +426,12 @@ public enum MagicAbility {
     GraveyardToLibrary("graveyard to library",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicFromGraveyardToLibraryTrigger.create());
+        }
+    },
+    Champion("champion",-10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(new MagicEntersExileCreatureOrSacrificeTrigger(arg));
+            card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
     None("",0);
