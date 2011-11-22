@@ -41,10 +41,27 @@ public enum MagicAbility {
             card.add(new MagicRefugeLandTrigger(n));
         }
     },
-    EntersLoseLife("enters lose life", 10) {
+    EntersLoseLife("enters lose life", -10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
             card.add(new MagicRefugeLandTrigger(-n));
+        }
+    },
+    LeavesGainLife("leaves gain life", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicLeavesGainLifeTrigger(n));
+        }
+    },
+    LeavesLoseLife("leaves lose life", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicLeavesGainLifeTrigger(-n));
+        }
+    },
+    LeavesReturnExile("leaves return exile", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
     EntersTapped("enters tapped", -10) {
