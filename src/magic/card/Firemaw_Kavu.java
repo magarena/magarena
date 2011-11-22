@@ -14,29 +14,6 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Firemaw_Kavu {
-	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.TARGET_CREATURE,
-                    new MagicDamageTargetPicker(2),
-                    new Object[]{permanent},
-                    this,
-                    permanent + " deals 2 damage to target creature$.");
-		}	
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
-				public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],creature,2,false);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-			});
-		}
-    };
-    
     public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {

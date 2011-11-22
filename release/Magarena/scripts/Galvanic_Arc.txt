@@ -10,6 +10,6 @@ color=r
 converted=3
 cost={2}{R}
 given_ability=first strike
+ability=enters damage target 3
 timing=removal
-
 requires_card_code

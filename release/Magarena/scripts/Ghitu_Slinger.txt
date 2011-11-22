@@ -10,6 +10,5 @@ color=r
 converted=3
 cost={2}{R}
 pt=2/2
+ability=echo,enters damage target 2
 timing=main
-ability=echo
-requires_card_code

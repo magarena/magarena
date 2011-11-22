@@ -9,6 +9,5 @@ color=r
 converted=4
 cost={2}{R}{R}
 pt=3/2
-ability=haste,echo
+ability=haste,echo,enters damage target player 3
 timing=fmain
-requires_card_code

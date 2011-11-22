@@ -15,33 +15,6 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Keldon_Marauders {
-    public static final MagicWhenComesIntoPlayTrigger T3 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
-                    permanent,
-                    player,
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
-                    new MagicDamageTargetPicker(1),
-                    MagicEvent.NO_DATA,
-                    this,
-                    permanent + " deals 1 damage to target player$.");
-		}
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(),target,1,false);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-			});
-		}
-    };
-    
     public static final MagicWhenLeavesPlayTrigger T4 = new MagicWhenLeavesPlayTrigger() {
     	@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
