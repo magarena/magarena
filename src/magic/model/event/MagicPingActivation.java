@@ -14,17 +14,14 @@ import magic.model.condition.MagicCondition;
 
 public class MagicPingActivation extends MagicPermanentActivation {
     
-    private MagicPingActivation() {
-        super(
+    private final int n;
+    
+    public MagicPingActivation(final int n) {
+         super(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage");
-    }
-    
-    public static final MagicPingActivation INSTANCE = new MagicPingActivation();
-    
-    public static final MagicPingActivation create() {
-        return INSTANCE;
+        this.n = n;
     }
 
     @Override
@@ -37,10 +34,10 @@ public class MagicPingActivation extends MagicPermanentActivation {
                 source,
                 source.getController(),
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                new MagicDamageTargetPicker(1),
+                new MagicDamageTargetPicker(n),
                 new Object[]{source},
                 this,
-                source + " deals 1 damage to target creature or player$.");
+                source + " deals " + n + " damage to target creature or player$.");
     }
     @Override
     public void executeEvent(
@@ -50,7 +47,7 @@ public class MagicPingActivation extends MagicPermanentActivation {
             final Object[] choiceResults) {
         event.processTarget(game,choiceResults,0,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
-                final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,1,false);
+                final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,n,false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         });
