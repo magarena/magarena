@@ -55,6 +55,7 @@ import magic.model.trigger.MagicThiefTrigger;
 import magic.model.trigger.MagicVeteranTrigger;
 import magic.model.trigger.MagicFromGraveyardToLibraryTrigger;
 import magic.model.trigger.MagicEntersDamageTargetTrigger;
+import magic.model.trigger.MagicLeavesDamageTargetTrigger;
 
 public enum MagicAbility {
 
@@ -134,6 +135,27 @@ public enum MagicAbility {
             } else if ("player".equals(tokens[0])) {
                 final int n = Integer.parseInt(tokens[1]);
                 card.add(new MagicEntersDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_PLAYER,
+                            n));
+            }
+        }
+    },
+    LeavesDamageTarget("leaves damage target", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] tokens = arg.split(" ");
+            if (tokens.length == 1) {
+                final int n = Integer.parseInt(tokens[0]);
+                card.add(new MagicLeavesDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                            n));
+            } else if ("creature".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicLeavesDamageTargetTrigger(
+                            MagicTargetChoice.TARGET_CREATURE,
+                            n));
+            } else if ("player".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicLeavesDamageTargetTrigger(
                             MagicTargetChoice.NEG_TARGET_PLAYER,
                             n));
             }
