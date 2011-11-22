@@ -10,6 +10,5 @@ color=r
 converted=6
 cost={5}{R}
 pt=4/2
-ability=echo,enters damage target creature 2
+ability=echo,enters damage target creature 2,leaves damage target creature 4
 timing=main
-requires_card_code
