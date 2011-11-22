@@ -10,6 +10,6 @@ color=u
 converted=6
 cost={4}{U}{U}
 pt=4/4
+ability=champion Merfolk
 timing=main
-
 requires_card_code

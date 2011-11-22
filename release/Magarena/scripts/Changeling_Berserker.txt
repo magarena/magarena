@@ -10,7 +10,5 @@ color=r
 converted=4
 cost={3}{R}
 pt=5/3
-ability=changeling,haste
+ability=changeling,haste,champion creature
 timing=main
-
-requires_card_code

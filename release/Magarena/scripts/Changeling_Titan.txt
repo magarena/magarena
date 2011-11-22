@@ -10,7 +10,5 @@ color=g
 converted=5
 cost={4}{G}
 pt=7/7
-ability=changeling
+ability=changeling,champion creature
 timing=main
-
-requires_card_code

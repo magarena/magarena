@@ -9,5 +9,5 @@ color=r
 converted=3
 cost={2}{R}
 pt=0/1
-ability=haste,ping
+ability=haste,ping 1
 timing=fmain

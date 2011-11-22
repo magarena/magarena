@@ -10,7 +10,5 @@ color=u
 converted=7
 cost={6}{U}
 pt=10/10
-ability=flying
+ability=flying,champion Elemental
 timing=main
-
-requires_card_code

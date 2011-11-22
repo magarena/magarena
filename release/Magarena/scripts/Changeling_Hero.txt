@@ -10,7 +10,5 @@ color=w
 converted=5
 cost={4}{W}
 pt=4/4
-ability=changeling,lifelink
+ability=changeling,lifelink,champion creature
 timing=main
-
-requires_card_code

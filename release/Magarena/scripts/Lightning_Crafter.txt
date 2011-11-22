@@ -10,6 +10,5 @@ color=r
 converted=4
 cost={3}{R}
 pt=3/3
+ability=champion Goblin or Shaman,ping 3
 timing=main
-
-requires_card_code
