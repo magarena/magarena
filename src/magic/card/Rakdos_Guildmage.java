@@ -85,7 +85,7 @@ public class Rakdos_Guildmage {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.getInstance().getTokenDefinition("Goblin2"),player);
+			final MagicCard card=MagicCard.createTokenCard(TokenCardDefinitions.get("Goblin2"),player);
 			game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.REMOVE_AT_END_OF_TURN));
 		}
 	};

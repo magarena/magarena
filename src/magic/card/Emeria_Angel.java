@@ -41,7 +41,7 @@ public class Emeria_Angel {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				game.doAction(new MagicPlayTokenAction(
 						(MagicPlayer)data[0],
-						TokenCardDefinitions.getInstance().getTokenDefinition("Bird1")));
+						TokenCardDefinitions.get("Bird1")));
 			}
 		}		
     };

@@ -86,7 +86,7 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
             System.err.println("WARNING. Unable to create " + textPathFile);
         }
 		
-		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
+		for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
 			// card image
 			final String imageURL = cardDefinition.getImageURL();
 			if (imageURL != null) {

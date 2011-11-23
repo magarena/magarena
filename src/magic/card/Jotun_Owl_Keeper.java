@@ -39,7 +39,7 @@ public class Jotun_Owl_Keeper {
 			for (;amount>0;amount--) {
 				game.doAction(new MagicPlayTokenAction(
 						(MagicPlayer)data[0],
-						TokenCardDefinitions.getInstance().getTokenDefinition("Bird1")));
+						TokenCardDefinitions.get("Bird1")));
 			}
 		}
     };

@@ -43,7 +43,7 @@ public class Deranged_Hermit {
 			for (int i=4;i>0;i--) {
 				game.doAction(new MagicPlayTokenAction(
 						(MagicPlayer)data[0],
-						TokenCardDefinitions.getInstance().getTokenDefinition("Squirrel1")));
+						TokenCardDefinitions.get("Squirrel1")));
 			}
 		}		
     };

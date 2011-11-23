@@ -28,7 +28,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
     }
 	
 	final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getInstance().getCard(cardIndex);
+		return CardDefinitions.getCard(cardIndex);
 	}
 		
 	public final int getPriority() {

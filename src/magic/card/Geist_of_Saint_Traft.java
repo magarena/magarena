@@ -35,7 +35,7 @@ public class Geist_of_Saint_Traft {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player = (MagicPlayer)data[0];
-			final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.getInstance().getTokenDefinition("Angel4"),player);
+			final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
 			final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING);
 			game.doAction(action);
 			game.doAction(new MagicChangeStateAction(action.getPermanent(),MagicPermanentState.ExileAtEndOfCombat,true));

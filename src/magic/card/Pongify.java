@@ -50,7 +50,7 @@ public class Pongify {
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokenAction(
                     		controller,
-                    		TokenCardDefinitions.getInstance().getTokenDefinition("Ape")));
+                    		TokenCardDefinitions.get("Ape")));
                 }
 			});
 		}

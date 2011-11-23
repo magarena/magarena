@@ -478,7 +478,7 @@ public class MagicPlayer implements MagicTarget {
 	
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
-        final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getInstance().getCard("Spirit of the Hearth").getIndex();
+        final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getCard("Spirit of the Hearth").getIndex();
 		return source.getController() == this || getCount(SPIRIT_OF_THE_HEARTH) == 0;
 	}	
 }

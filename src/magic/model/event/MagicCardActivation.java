@@ -21,8 +21,8 @@ public class MagicCardActivation extends MagicActivation {
 		super(0,
               new MagicCondition[]{
                   MagicCondition.CARD_CONDITION,
-                  CardDefinitions.getInstance().getCard(cardIndex).getCost().getCondition()},
-              CardDefinitions.getInstance().getCard(cardIndex).getActivationHints(),
+                  CardDefinitions.getCard(cardIndex).getCost().getCondition()},
+              CardDefinitions.getCard(cardIndex).getActivationHints(),
               "Play"
              );
         setCardIndex(cardIndex);

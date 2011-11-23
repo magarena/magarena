@@ -59,7 +59,7 @@ public class Imperious_Perfect {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer) data[0], TokenCardDefinitions.getInstance().getTokenDefinition("Elf1")));			
+			game.doAction(new MagicPlayTokenAction((MagicPlayer) data[0], TokenCardDefinitions.get("Elf1")));			
 		}
 	};
 }

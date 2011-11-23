@@ -28,7 +28,7 @@ public class Khalni_Garden {
                 final Object[] choiceResults) {
 			game.doAction(new MagicPlayTokenAction(
 					(MagicPlayer)data[0],
-					TokenCardDefinitions.getInstance().getTokenDefinition("Plant")));
+					TokenCardDefinitions.get("Plant")));
 		}		
     };
 }

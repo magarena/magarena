@@ -49,7 +49,7 @@ public class Turntimber_Ranger {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				game.doAction(new MagicPlayTokenAction(
 						(MagicPlayer)data[0],
-						TokenCardDefinitions.getInstance().getTokenDefinition("Wolf")));
+						TokenCardDefinitions.get("Wolf")));
 				game.doAction(new MagicChangeCountersAction(
 						(MagicPermanent)data[1],
 						MagicCounterType.PlusOne,

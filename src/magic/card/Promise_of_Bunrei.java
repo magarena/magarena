@@ -36,7 +36,7 @@ public class Promise_of_Bunrei {
 			if (player.controlsPermanent(permanent)) {
 				game.doAction(new MagicSacrificeAction(permanent));
 				for (int count=4;count>0;count--) {
-					game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Spirit1")));
+					game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit1")));
 				}
 			}
 		}

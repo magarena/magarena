@@ -46,7 +46,7 @@ public class Artifact_Mutation {
                     for (;amount>0;amount--) {
                     	game.doAction(new MagicPlayTokenAction(
                     			(MagicPlayer)data[1],
-                    			TokenCardDefinitions.getInstance().getTokenDefinition("Saproling")));
+                    			TokenCardDefinitions.get("Saproling")));
                     }
                 }
 			});

@@ -41,7 +41,7 @@ public class Rampaging_Baloths {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				game.doAction(new MagicPlayTokenAction(
 						(MagicPlayer)data[0],
-						TokenCardDefinitions.getInstance().getTokenDefinition("Beast4")));
+						TokenCardDefinitions.get("Beast4")));
 			}
 		}		
     };

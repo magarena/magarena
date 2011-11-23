@@ -30,25 +30,16 @@ import java.util.Scanner;
  */
 public class CardDefinitions {
 
-	private static final CardDefinitions INSTANCE=new CardDefinitions();
-	
 	public static final String CARD_TEXT_FOLDER = "texts";
 	public static final String CARD_IMAGE_FOLDER = "cards";
 	public static final String TOKEN_IMAGE_FOLDER = "tokens";
 	public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
 	public static final String CARD_TEXT_EXT = ".txt";
 	
-	private final List<MagicCardDefinition> cards;
-	private final List<MagicCardDefinition> landCards;
-	private final List<MagicCardDefinition> spellCards;
-	private final Map<String,MagicCardDefinition> cardsMap;
-	
-	private CardDefinitions() {
-		cards=new ArrayList<MagicCardDefinition>();
-		landCards=new ArrayList<MagicCardDefinition>();
-		spellCards=new ArrayList<MagicCardDefinition>();
-		cardsMap=new HashMap<String, MagicCardDefinition>();
-	}
+	private static final List<MagicCardDefinition> cards = new ArrayList<MagicCardDefinition>();
+	private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
+	private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
+	private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
 	
 	private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
         if ("image".equals(property)) {
@@ -60,7 +51,7 @@ public class CardDefinitions {
         } else if ("cube".equals(property)) {
 			CubeDefinitions.getInstance().getCubeDefinition(value).add(card.getName());
 		} else if ("token".equals(property)) {
-			TokenCardDefinitions.getInstance().addTokenDefinition(card, value);
+			TokenCardDefinitions.add(card, value);
 		} else if ("value".equals(property)) {
 			card.setValue(Integer.parseInt(value));
 		} else if ("removal".equals(property)) {
@@ -140,7 +131,7 @@ public class CardDefinitions {
 		}
 	}
     
-	private void filterCards() {
+	private static void filterCards() {
 		for (final MagicCardDefinition card : cards) {
 			if (!card.isLand() && !card.isToken()) {
 				spellCards.add(card);
@@ -162,7 +153,7 @@ public class CardDefinitions {
         }
 	}
 	
-	private void addDefinition(final MagicCardDefinition cardDefinition) {
+	private static void addDefinition(final MagicCardDefinition cardDefinition) {
 		if (cardDefinition == null) {
 			throw new RuntimeException("CardDefinitions.addDefinition passed null");
 		}
@@ -199,13 +190,13 @@ public class CardDefinitions {
         }
     }
 	
-	private void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
+	private static void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
 		for (final MagicCardDefinition cardDefinition : cardDefinitions) {
 			addDefinition(cardDefinition);
 		}
 	}
 
-    private MagicCardDefinition string2carddef(final String content) {
+    private static MagicCardDefinition string2carddef(final String content) {
         final Scanner sc = new Scanner(content);
 		MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
 		while (sc.hasNextLine()) {
@@ -235,7 +226,7 @@ public class CardDefinitions {
         }
     }
 	
-    private void loadCardDefinition(final File file) {
+    private static void loadCardDefinition(final File file) {
         try { //load card definitions
             System.err.println("Parsing " + file);
             final String content = FileIO.toStr(file);
@@ -248,7 +239,7 @@ public class CardDefinitions {
         }
     }
 	
-	public void loadCardDefinitions() {
+	public static void loadCardDefinitions() {
         //load all files in card directory
         final File cardDir = new File(MagicMain.getScriptsPath());
         final File[] files = cardDir.listFiles();
@@ -272,15 +263,15 @@ public class CardDefinitions {
         loadCardTexts();
 	}
 	
-	public int getNumberOfCards() {
+	public static int getNumberOfCards() {
 		return cards.size();
 	}
 	
-    public MagicCardDefinition getCard(final int cindex) {
+    public static MagicCardDefinition getCard(final int cindex) {
         return cards.get(cindex);
     }
 	
-	public MagicCardDefinition getCard(final String name) {
+	public static MagicCardDefinition getCard(final String name) {
 		final MagicCardDefinition cardDefinition=cardsMap.get(name);
 		if (cardDefinition == null) {
             return new MagicCardDefinition(name) {
@@ -293,7 +284,7 @@ public class CardDefinitions {
 		return cardDefinition;
 	}
 	
-	public void loadCardTexts() {
+	public static void loadCardTexts() {
 		for(MagicCardDefinition card : getCards()) {
 			if(card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
 				// try to load text from file
@@ -317,7 +308,7 @@ public class CardDefinitions {
 		}
 	}
 		
-	public MagicCardDefinition getBasicLand(final MagicColor color) {
+	public static MagicCardDefinition getBasicLand(final MagicColor color) {
 		if (MagicColor.Black.equals(color)) {
 			return getCard("Swamp");
 		} else if (MagicColor.Blue.equals(color)) {
@@ -332,24 +323,20 @@ public class CardDefinitions {
         throw new RuntimeException("No matching basic land for MagicColor " + color);
 	}
 
-	public List<MagicCardDefinition> getCards() {
+	public static List<MagicCardDefinition> getCards() {
 		return cards;
 	}
 	
-	public List<MagicCardDefinition> getLandCards() {
+	public static List<MagicCardDefinition> getLandCards() {
 		return landCards;
 	}
 	
-	public List<MagicCardDefinition> getSpellCards() {
+	public static List<MagicCardDefinition> getSpellCards() {
 		return spellCards;
 	}
 	
-	private void printStatistics() {
+	private static void printStatistics() {
 		final CardStatistics statistics=new CardStatistics(cards);
 		statistics.printStatictics(System.err);
-	}
-	
-	public static CardDefinitions getInstance() {
-		return INSTANCE;
 	}
 }

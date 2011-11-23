@@ -13,7 +13,7 @@ public class MagicTools {
 
 	private static void listAllCards() {
 		final SortedSet<String> names = new TreeSet<String>();
-		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
+		for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
 			if (!cardDefinition.isToken()) {
 				names.add(cardDefinition.getName());
 			}
@@ -24,12 +24,11 @@ public class MagicTools {
 	}
 	
 	private static void checkCards() {
-		final CardDefinitions cardDefinitions = CardDefinitions.getInstance();		
 		final String filenames[] = new File(MagicMain.getGamePath(),"cards").list();
-		final Set<MagicCardDefinition> remaining = new HashSet<MagicCardDefinition>(CardDefinitions.getInstance().getCards());
+		final Set<MagicCardDefinition> remaining = new HashSet<MagicCardDefinition>(CardDefinitions.getCards());
 		for (final String filename : filenames) {
 			final String name = filename.substring(0,filename.length()-4);
-			final MagicCardDefinition cardDefinition = cardDefinitions.getCard(name);
+			final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
 			if (cardDefinition == null) {
 				System.out.println(">"+name);
 			} else {

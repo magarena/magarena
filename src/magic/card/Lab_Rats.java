@@ -38,7 +38,7 @@ public class Lab_Rats {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
 			game.doAction(new MagicPlayTokenAction(
 					(MagicPlayer)data[1],
-					TokenCardDefinitions.getInstance().getTokenDefinition("Rat1")));
+					TokenCardDefinitions.get("Rat1")));
 			if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
 				game.doAction(new MagicMoveCardAction(
 						cardOnStack.getCard(),

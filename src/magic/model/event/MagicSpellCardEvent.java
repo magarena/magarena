@@ -15,7 +15,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
     }
 	
 	public final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getInstance().getCard(cardIndex);
+		return CardDefinitions.getCard(cardIndex);
     }
 	
     @Override

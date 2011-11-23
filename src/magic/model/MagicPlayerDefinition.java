@@ -99,7 +99,7 @@ public class MagicPlayerDefinition {
 					}
 				}
 			}
-			final MagicCardDefinition landCard=CardDefinitions.getInstance().getBasicLand(bestColor);
+			final MagicCardDefinition landCard=CardDefinitions.getBasicLand(bestColor);
 			colorSource[bestColor.ordinal()]+=landCard.getManaSource(bestColor);
 			deck.add(landCard);
 		}
@@ -152,7 +152,7 @@ public class MagicPlayerDefinition {
             final String deckPrefix = getDeckPrefix(prefix,index);
             if (properties.containsKey(deckPrefix)) {
                 final String tName = properties.getProperty(deckPrefix);
-                final MagicCardDefinition cdef = CardDefinitions.getInstance().getCard(tName);
+                final MagicCardDefinition cdef = CardDefinitions.getCard(tName);
                 if (cdef.isValid()){
                     deck.add(cdef);
                 } else {

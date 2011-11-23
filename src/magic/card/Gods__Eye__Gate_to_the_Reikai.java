@@ -35,7 +35,7 @@ public class Gods__Eye__Gate_to_the_Reikai {
                 final Object[] choiceResults) {
 			game.doAction(new MagicPlayTokenAction(
 					(MagicPlayer)data[0],
-					TokenCardDefinitions.getInstance().getTokenDefinition("Spirit1")));
+					TokenCardDefinitions.get("Spirit1")));
 		}
     };
 }

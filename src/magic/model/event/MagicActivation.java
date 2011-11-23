@@ -59,7 +59,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     }
 	
     final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getInstance().getCard(cardIndex);
+		return CardDefinitions.getCard(cardIndex);
 	}
 		
 	private final MagicCondition[] getConditions() {

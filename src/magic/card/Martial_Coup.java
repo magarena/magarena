@@ -48,7 +48,7 @@ public class Martial_Coup {
 				targets=Collections.<MagicTarget>emptyList();
 			}
 			for (;x>0;x--) {
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Soldier")));
+				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
 			}
 			for (final MagicTarget target : targets) {
 				game.doAction(new MagicDestroyAction((MagicPermanent)target));

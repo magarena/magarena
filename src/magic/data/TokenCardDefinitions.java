@@ -2,42 +2,29 @@ package magic.data;
 
 import magic.model.MagicCardDefinition;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.Collection;
 import java.util.Map;
+import java.util.HashMap;
 
 public class TokenCardDefinitions {
 
-	private static final TokenCardDefinitions INSTANCE = new TokenCardDefinitions();
-	
-	private final List<MagicCardDefinition> tokens;
-	private final Map<String,MagicCardDefinition> tokensMap;
-	
-	private TokenCardDefinitions() {
-		tokens = new ArrayList<MagicCardDefinition>();
-		tokensMap = new HashMap<String, MagicCardDefinition>();
+	private static final Map<String,MagicCardDefinition> tokensMap = new HashMap<String, MagicCardDefinition>();
+
+	public static Collection<MagicCardDefinition> getAll() {
+		return tokensMap.values();
 	}
 	
-	public static TokenCardDefinitions getInstance() {
-		return INSTANCE;
+	public static MagicCardDefinition get(String name) {
+        if (tokensMap.containsKey(name)) {
+    		return tokensMap.get(name);
+        } else {
+            throw new RuntimeException("token " + name + " not found");
+        }
 	}
 	
-	public List<MagicCardDefinition> getTokenDefinitions() {
-		return tokens;
-	}
-	
-	public MagicCardDefinition getTokenDefinition(String name) {
-		return tokensMap.get(name);
-	}
-	
-	public MagicCardDefinition addTokenDefinition(MagicCardDefinition token, String fullName) {		
+	public static void add(MagicCardDefinition token, String fullName) {		
 		token.setToken();
 		token.setFullName(fullName);
-		
-		tokens.add(token);
 		tokensMap.put(fullName, token);
-		
-		return token;
 	}
 }

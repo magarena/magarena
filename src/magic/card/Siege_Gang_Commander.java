@@ -80,7 +80,7 @@ public class Siege_Gang_Commander {
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
 			for (int count=3;count>0;count--) {
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Goblin1")));
+				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Goblin1")));
 			}
 		}		
     };

@@ -47,7 +47,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
     }
 	
 	final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getInstance().getCard(cardIndex);
+		return CardDefinitions.getCard(cardIndex);
 	}
 		
 	public final MagicLayer getLayer() {

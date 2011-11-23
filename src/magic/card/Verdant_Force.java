@@ -26,7 +26,7 @@ public class Verdant_Force {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-    		game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.getInstance().getTokenDefinition("Saproling")));
+    		game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Saproling")));
 		}
 	};
 }

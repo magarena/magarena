@@ -125,7 +125,7 @@ public class DeckUtils {
                 final int index = line.indexOf(' ');
                 final int amount = Integer.parseInt(line.substring(0,index));
                 final String name=line.substring(index+1).trim();
-                final MagicCardDefinition cardDefinition = CardDefinitions.getInstance().getCard(name);
+                final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
                 for (int count=amount;count>0;count--) {
                     final int colorFlags=cardDefinition.getColorFlags();
                     for (final MagicColor color : MagicColor.values()) {
@@ -219,8 +219,8 @@ public class DeckUtils {
 			// Creates a simple default deck.
 			final MagicDeck deck = player.getDeck();
 			deck.setName("Default.dec");
-			final MagicCardDefinition creature=CardDefinitions.getInstance().getCard("Elite Vanguard");
-			final MagicCardDefinition land=CardDefinitions.getInstance().getCard("Plains");
+			final MagicCardDefinition creature=CardDefinitions.getCard("Elite Vanguard");
+			final MagicCardDefinition land=CardDefinitions.getCard("Plains");
 			for (int count=24;count>0;count--) {
 				deck.add(creature);
 			}

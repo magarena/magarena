@@ -57,7 +57,7 @@ public class Ability_Mono_DeckGenerator extends DefaultDeckGenerator {
         	countColors.put(MagicColor.Blue, new Integer(0));
         	
         	// count colors
-        	for(MagicCardDefinition card : CardDefinitions.getInstance().getCards()) {
+        	for(MagicCardDefinition card : CardDefinitions.getCards()) {
         		if(card.hasAbility(ab)) {
         			int colorFlags = card.getColorFlags();
         			

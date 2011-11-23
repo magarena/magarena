@@ -186,7 +186,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
         });
 		
 		// reload text
-		CardDefinitions.getInstance().loadCardTexts();
+		CardDefinitions.loadCardTexts();
                 
         IconImages.reloadSymbols();
       

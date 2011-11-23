@@ -93,7 +93,7 @@ public class Cemetery_Reaper {
                     		MagicLocationType.Exile));
                     game.doAction(new MagicPlayTokenAction(
                     		player,
-                    		TokenCardDefinitions.getInstance().getTokenDefinition("Zombie")));
+                    		TokenCardDefinitions.get("Zombie")));
                 }
 			});
 		}

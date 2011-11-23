@@ -75,10 +75,10 @@ public class Twilight_Drover {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
 			game.doAction(new MagicPlayTokenAction(
 					(MagicPlayer)data[0],
-					TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
+					TokenCardDefinitions.get("Spirit2")));
 			game.doAction(new MagicPlayTokenAction(
 					(MagicPlayer)data[0],
-					TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
+					TokenCardDefinitions.get("Spirit2")));
 		}
 	};
 }

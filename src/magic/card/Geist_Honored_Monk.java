@@ -38,8 +38,8 @@ public class Geist_Honored_Monk {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player = (MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
 		}		
     };
 }

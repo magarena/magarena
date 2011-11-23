@@ -400,7 +400,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	public List<MagicCardDefinition> getCardDefinitions() {
 		
 		final List<MagicCardDefinition> cardDefinitions=new ArrayList<MagicCardDefinition>();
-		for (final MagicCardDefinition cardDefinition : CardDefinitions.getInstance().getCards()) {
+		for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
 			
 			if (filter(cardDefinition)) {
 				cardDefinitions.add(cardDefinition);

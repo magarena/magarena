@@ -73,7 +73,7 @@ public class Wren_s_Run_Packmaster {
                 final Object[] choiceResults) {
         	game.doAction(new MagicPlayTokenAction(
         			(MagicPlayer)data[0],
-        			TokenCardDefinitions.getInstance().getTokenDefinition("Wolf")));
+        			TokenCardDefinitions.get("Wolf")));
         }
 	};
 }

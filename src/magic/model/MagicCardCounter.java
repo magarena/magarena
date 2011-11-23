@@ -9,7 +9,7 @@ public class MagicCardCounter {
 	private final int counts[];
 	
 	MagicCardCounter() {
-		counts=new int[CardDefinitions.getInstance().getNumberOfCards()];
+		counts=new int[CardDefinitions.getNumberOfCards()];
 	}	
 	
 	MagicCardCounter(final MagicCardCounter cardCounter) {

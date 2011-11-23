@@ -33,7 +33,7 @@ public class MagicLivingWeaponTrigger {
         //create the token
 		final MagicPlayTokenAction play_token=new MagicPlayTokenAction(
                 (MagicPlayer)data[1],
-                TokenCardDefinitions.getInstance().getTokenDefinition("Germ"));
+                TokenCardDefinitions.get("Germ"));
 		game.doAction(play_token);
 
         //attach the equipment to the token

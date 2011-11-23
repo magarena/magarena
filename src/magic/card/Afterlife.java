@@ -50,7 +50,7 @@ public class Afterlife {
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokenAction(
                     		controller,
-                    		TokenCardDefinitions.getInstance().getTokenDefinition("Spirit2")));
+                    		TokenCardDefinitions.get("Spirit2")));
                 }
 			});
 		}

@@ -39,7 +39,7 @@ public class Vital_Splicer {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.getInstance().getTokenDefinition("Golem3")));
+			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
 		}		
     };
     

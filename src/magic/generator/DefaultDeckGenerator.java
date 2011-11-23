@@ -34,7 +34,7 @@ public class DefaultDeckGenerator {
 		
 		spellCards.clear();
 		for (int rarity =  getMinRarity(); rarity <= getMaxRarity(); rarity++) {
-			for (final MagicCardDefinition card : CardDefinitions.getInstance().getSpellCards()) {
+			for (final MagicCardDefinition card : CardDefinitions.getSpellCards()) {
 				if (card.getRarity() >= getMinRarity() && card.getRarity() <= rarity && cubeDefinition.containsCard(card)) {
 					if(acceptPossibleSpellCard(card)) {
 						spellCards.add(card);
@@ -62,7 +62,7 @@ public class DefaultDeckGenerator {
 		}
 	
 		landCards.clear();
-        for (final MagicCardDefinition card : CardDefinitions.getInstance().getLandCards()) {
+        for (final MagicCardDefinition card : CardDefinitions.getLandCards()) {
             if (cubeDefinition.containsCard(card)) {
                 for (int count = 4; count > 0; count--) {
 					if(acceptPossibleLandCard(card)) {
@@ -180,7 +180,7 @@ public class DefaultDeckGenerator {
 	
 	protected void addRequiredCards(MagicCondensedDeck deck, String[] cards) {		
 		for(String name : cards) {
-			final MagicCardDefinition cardDef = CardDefinitions.getInstance().getCard(name);
+			final MagicCardDefinition cardDef = CardDefinitions.getCard(name);
 			if (cardDef.isValid()) {
 				deck.addCard(cardDef, false);
             } else {

@@ -49,7 +49,7 @@ public class Day_of_the_Dragons {
 			for (;amount>0;amount--) {
 				game.doAction(new MagicPlayTokenAction(
 						(MagicPlayer)data[0],
-						TokenCardDefinitions.getInstance().getTokenDefinition("Dragon5")));
+						TokenCardDefinitions.get("Dragon5")));
 			}
 		}
     };

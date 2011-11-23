@@ -32,7 +32,7 @@ public class Mogg_War_Marshal {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			game.doAction(new MagicPlayTokenAction(
 					player,
-					TokenCardDefinitions.getInstance().getTokenDefinition("Goblin1")));
+					TokenCardDefinitions.get("Goblin1")));
 		}		
     };
     
@@ -58,7 +58,7 @@ public class Mogg_War_Marshal {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			game.doAction(new MagicPlayTokenAction(
 					player,
-					TokenCardDefinitions.getInstance().getTokenDefinition("Goblin1")));
+					TokenCardDefinitions.get("Goblin1")));
 		}
     };
 }

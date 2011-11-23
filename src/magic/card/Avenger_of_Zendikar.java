@@ -44,7 +44,7 @@ public class Avenger_of_Zendikar {
 			for (;amount>0;amount--) {
 				game.doAction(new MagicPlayTokenAction(
 						player,
-						TokenCardDefinitions.getInstance().getTokenDefinition("Plant")));
+						TokenCardDefinitions.get("Plant")));
 			}
 		}		
     };
