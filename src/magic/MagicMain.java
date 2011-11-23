@@ -77,7 +77,7 @@ public class MagicMain {
 
 	static void initializeEngine() {
         CardDefinitions.loadCardDefinitions();
-        CubeDefinitions.getInstance().loadCubeDefinitions();
+        CubeDefinitions.loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
 		DeckGenerators.getInstance().loadDeckGenerators();
 	}

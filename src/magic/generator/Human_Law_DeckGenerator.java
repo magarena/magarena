@@ -29,7 +29,7 @@ public class Human_Law_DeckGenerator extends DefaultDeckGenerator {
 	
 	public Human_Law_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {

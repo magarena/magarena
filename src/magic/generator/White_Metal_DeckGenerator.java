@@ -39,7 +39,7 @@ public class White_Metal_DeckGenerator extends DefaultDeckGenerator {
 
 	public White_Metal_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {

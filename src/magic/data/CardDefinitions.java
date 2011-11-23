@@ -49,7 +49,7 @@ public class CardDefinitions {
 		} else if ("num_images".equals(property)) {
 			card.setImageCount(Integer.parseInt(value));
         } else if ("cube".equals(property)) {
-			CubeDefinitions.getInstance().getCubeDefinition(value).add(card.getName());
+			CubeDefinitions.getCubeDefinition(value).add(card.getName());
 		} else if ("token".equals(property)) {
 			TokenCardDefinitions.add(card, value);
 		} else if ("value".equals(property)) {
@@ -167,7 +167,7 @@ public class CardDefinitions {
 
         //add to default all (vintage) cube
         if (!cardDefinition.isToken()) {
-			CubeDefinitions.getInstance().getCubeDefinition("all").add(cardDefinition.getName());
+			CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
         }
 	}
         

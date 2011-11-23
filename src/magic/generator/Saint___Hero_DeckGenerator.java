@@ -37,7 +37,7 @@ public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
 	
 	public Saint___Hero_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {

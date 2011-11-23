@@ -26,7 +26,7 @@ public class Elf_Horde_DeckGenerator extends DefaultDeckGenerator {
 	
 	public Elf_Horde_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {

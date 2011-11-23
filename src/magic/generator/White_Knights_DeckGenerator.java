@@ -28,7 +28,7 @@ public class White_Knights_DeckGenerator extends DefaultDeckGenerator {
 	
 	public White_Knights_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {

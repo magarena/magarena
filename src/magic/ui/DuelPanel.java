@@ -142,7 +142,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 			
 			// edit deck button
 			final MagicCubeDefinition cubeDefinition=
-				CubeDefinitions.getInstance().getCubeDefinition(duel.getConfiguration().getCube());
+				CubeDefinitions.getCubeDefinition(duel.getConfiguration().getCube());
 				
 			editButtons[i] = new JButton(EDIT_BUTTON_TEXT);
 			editButtons[i].setFont(FontsAndBorders.FONT2);

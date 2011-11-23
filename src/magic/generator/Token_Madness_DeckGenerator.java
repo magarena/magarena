@@ -43,7 +43,7 @@ public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
 	
 	public Token_Madness_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {

@@ -40,7 +40,7 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
 			colorText = "";
 		}
 		
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	private boolean hasChoice() {

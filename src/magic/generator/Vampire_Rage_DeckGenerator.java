@@ -42,7 +42,7 @@ public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
 	
 	public Vampire_Rage_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {

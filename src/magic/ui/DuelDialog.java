@@ -123,7 +123,7 @@ public class DuelDialog extends JDialog implements ActionListener {
 		cubeLabel.setIcon(IconImages.CUBE);
 		cubeLabel.setBounds(55,330,80,25);
 		mainPanel.add(cubeLabel);
-		final ComboBoxModel cubeModel=new DefaultComboBoxModel(CubeDefinitions.getInstance().getCubeNames());
+		final ComboBoxModel cubeModel=new DefaultComboBoxModel(CubeDefinitions.getCubeNames());
 		cubeComboBox=new JComboBox(cubeModel);
 		cubeComboBox.setFocusable(false);
 		cubeComboBox.setBounds(135,330,300,25);

@@ -23,19 +23,17 @@ public class CubeDefinitions {
 			return file.isFile()&&file.getName().endsWith(CUBE_FILE_EXTENSION);
 		}
 	};
-
-	private static final CubeDefinitions INSTANCE=new CubeDefinitions();
 	
-	private final List<MagicCubeDefinition> cubeDefinitions;
+	private static final List<MagicCubeDefinition> cubeDefinitions;
 	
-	private CubeDefinitions() {
+	static {
 		cubeDefinitions=new ArrayList<MagicCubeDefinition>();
 		for (final String cubeName : INCLUDED_CUBES) {
 			cubeDefinitions.add(new MagicCubeDefinition(cubeName));
 		}
 	}
 			
-	public String[] getCubeNames() {
+	public static String[] getCubeNames() {
 		final String names[]=new String[cubeDefinitions.size()];
 		for (int index=0;index<names.length;index++) {
 			names[index]=cubeDefinitions.get(index).getName();
@@ -43,7 +41,7 @@ public class CubeDefinitions {
 		return names;
 	}
 	
-	public MagicCubeDefinition getCubeDefinition(final String name) {
+	public static MagicCubeDefinition getCubeDefinition(final String name) {
 		for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
 			if (cubeDefinition.getName().equals(name)) {
 				return cubeDefinition;
@@ -52,7 +50,7 @@ public class CubeDefinitions {
 		return cubeDefinitions.get(0);
 	}
 	
-	private void loadCubeDefinition(final String name,final File file) {
+	private static void loadCubeDefinition(final String name,final File file) {
         String content = "";
         try { //load cube
             content = FileIO.toStr(file);
@@ -73,7 +71,7 @@ public class CubeDefinitions {
 		cubeDefinitions.add(cubeDefinition);
 	}
 	
-	public void loadCubeDefinitions() {
+	public static void loadCubeDefinitions() {
 		final File cubeFiles[]=new File(MagicMain.getModsPath()).listFiles(CUBE_FILE_FILTER);
 		if (cubeFiles!=null) {
 			for (final File file : cubeFiles) {
@@ -87,10 +85,5 @@ public class CubeDefinitions {
 		for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
 			System.err.println("Cube "+cubeDefinition.getName()+" : "+cubeDefinition.size()+" cards");
 		}
-	}
-	
-	public static CubeDefinitions getInstance() {
-		
-		return INSTANCE;
 	}
 }

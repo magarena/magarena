@@ -28,7 +28,7 @@ public class Zombie_Madness_DeckGenerator extends DefaultDeckGenerator {
 	
 	public Zombie_Madness_DeckGenerator() {
 		super(null);
-		setCubeDefinition(CubeDefinitions.getInstance().getCubeDefinition(getColorText()));
+		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
 	}
 	
 	public String getColorText() {
