@@ -7,22 +7,21 @@ BEGIN {
     next
 }
 
-FILENAME ~ /mtg-data/ {
+FILENAME ~ /mtg-data/ && $0 == "" {
+    getline
     name = $1
     if (name in impl) {
         found[name] = 1
-        print name
-        while ($0 != "") {
-            getline
-			gsub(name,"@")
-            print $0
-        }
-        cnt++
+        print ""
     }
 }
 
+name in found {
+    print
+}
+
 END {
-    print "found " cnt " card" > "/dev/stderr"
+    print "found " length(found) " cards" > "/dev/stderr"
     for (i in impl) {
         if (!(i in found)) {
             print i " not found" > "/dev/stderr"
