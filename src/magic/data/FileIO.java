@@ -14,10 +14,24 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Writer;
+import java.nio.channels.FileChannel;
+import java.nio.MappedByteBuffer;
+import java.nio.charset.Charset;
 import java.net.URL;
 import java.util.Properties;
 
 public class FileIO {
+
+    private static String toStr(final FileInputStream stream) throws IOException {
+        try {
+            FileChannel fc = stream.getChannel();
+            MappedByteBuffer bb = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size());
+            /* Instead of using default, pass in a decoder. */
+            return Charset.defaultCharset().decode(bb).toString();
+        } finally {
+            close(stream);
+        }
+    }
     
     private static String toStr(final BufferedReader input) throws IOException {
         final StringBuilder contents = new StringBuilder();
@@ -40,7 +54,7 @@ public class FileIO {
     }
 
     public static String toStr(final File aFile) throws IOException {
-        return toStr(new BufferedReader(new FileReader(aFile)));
+        return toStr(new FileInputStream(aFile));
     }
     
     static String toStr(final InputStream ins) throws IOException {
