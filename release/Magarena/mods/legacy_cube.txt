@@ -52,7 +52,6 @@ Ancient Den
 Ancient Hellkite
 Ancient Hydra
 Ancient Spider
-Angel
 Angelfire Crusader
 Angelheart Vial
 Angelic Blessing
@@ -69,7 +68,6 @@ Angel's Feather
 Angel's Mercy
 Anoint
 Anurid Murkdiver
-Ape
 Apex Hawks
 Apocalypse Hydra
 Araba Mothrider
@@ -161,7 +159,6 @@ Barrage Ogre
 Barrenton Cragtreads
 Basalt Gargoyle
 Basilisk Collar
-Bat
 Battered Golem
 Batterskull
 Battlegrace Angel
@@ -171,9 +168,6 @@ Battle Hurda
 Battle-Mad Ronin
 Beacon of Destruction
 Beacon of Unrest
-Beast
-Beast
-Beast
 Beastbreaker of Bala Ged
 Beastmaster Ascension
 Beastmaster's Magemark
@@ -189,8 +183,6 @@ Benthic Behemoth
 Berserkers of Blood Ridge
 Berserk Murlodont
 Bestial Menace
-Bird
-Bird
 Birds of Paradise
 Bitterblossom
 Blackcleave Cliffs
@@ -300,7 +292,6 @@ Carnifex Demon
 Carrion Ants
 Carrion Call
 Carven Caryatid
-Cat
 Caustic Crawler
 Cavern Thoctar
 Cave Tiger
@@ -478,8 +469,6 @@ Doomed Traveler
 Doomgape
 Double Cleave
 Douse in Gloom
-Dragon
-Dragon
 Dragon Arch
 Dragon Fodder
 Dragonmaster Outcast
@@ -531,11 +520,8 @@ Eel Umbra
 Elder Cathar
 Elder of Laurels
 Eldrazi Monument
-Eldrazi Spawn
-Elephant
 Elephant Guide
 Elesh Norn, Grand Cenobite
-Elf Warrior
 Elite Inquisitor
 Elite Vanguard
 Elven Warhounds
@@ -581,7 +567,6 @@ Ezuri's Brigade
 Faceless Butcher
 Faceless Devourer
 Faerie Conclave
-Faerie Rogue
 Faerie Squadron
 Falkenrath Marauders
 Falkenrath Noble
@@ -665,7 +650,6 @@ Geist-Honored Monk
 Geist of Saint Traft
 Gelectrode
 Gemstone Mine
-Germ
 Geyser Glider
 Ghalma's Warden
 Ghitu Encampment
@@ -707,8 +691,6 @@ Gluttonous Zombie
 Gnarled Effigy
 Gnarled Mass
 Gnarlid Pack
-Goblin
-Goblin
 Goblin Arsonist
 Goblin Artillery
 Goblin Balloon Brigade
@@ -729,13 +711,11 @@ Goblin Patrol
 Goblin Piker
 Goblin Piledriver
 Goblin Raider
-Goblin Rogue
 Goblin Roughrider
 Goblin Ruinblaster
 Goblin Sharpshooter
 Goblin Shortcutter
 Goblin Sky Raider
-Goblin Soldier
 Goblin Spelunkers
 Goblin Striker
 Goblin Tunneler
@@ -750,7 +730,6 @@ Go for the Throat
 Goldenglow Moth
 Golden Urn
 Gold Myr
-Golem
 Golem Foundry
 Golem's Heart
 Goliath Sphinx
@@ -774,7 +753,6 @@ Greater Basilisk
 Great Furnace
 Great Sable Stag
 Greatsword
-Griffin
 Griffin Guide
 Griffin Rider
 Griffin Sentinel
@@ -843,7 +821,6 @@ Hobgoblin Dragoon
 Hollowhenge Scavenger
 Holy Day
 Holy Strength
-Homunculus
 Honor Guard
 Honor of the Pure
 Horned Turtle
@@ -889,7 +866,6 @@ Inkfathom Infiltrator
 Inkmoth Nexus
 Inkwell Leviathan
 Inner-Chamber Guard
-Insect
 Inspired Charge
 Inspirit
 Instill Infection
@@ -1106,7 +1082,6 @@ Merfolk Looter
 Merfolk of the Pearl Trident
 Merfolk Seastalkers
 Merfolk Sovereign
-Merfolk Wizard
 Mesa Enchantress
 Messenger Falcons
 Midnight Banshee
@@ -1163,7 +1138,6 @@ Murkfiend Liege
 Mutavault
 Mwonvuli Ooze
 Mycoid Shepherd
-Myr
 Myr Galvanizer
 Myr Propagator
 Myrsmith
@@ -1218,7 +1192,6 @@ Oakgnarl Warrior
 Oblivion Ring
 Odylic Wraith
 Offering to Asha
-Ogre
 Ogre Leadfoot
 Ogre's Cleaver
 Ogre Sentry
@@ -1283,7 +1256,6 @@ Plague Myr
 Plague Stinger
 Plague Wind
 Plains
-Plant
 Plasma Elemental
 Plated Geopede
 Plated Seastrider
@@ -1346,7 +1318,6 @@ Rally the Forces
 Rampaging Baloths
 Rancor
 Rapacious One
-Rat
 Ravaging Riftwurm
 Ravenous Baloth
 Ravenous Rats
@@ -1442,7 +1413,6 @@ Samurai Enforcers
 Sangromancer
 Sanguine Bond
 Saprazzan Heir
-Saproling
 Savage Lands
 Savage Twister
 Scaled Wurm
@@ -1575,7 +1545,6 @@ Smite
 Smite the Monstrous
 Smoldering Butcher
 Smother
-Snake
 Snake Umbra
 Snapping Creeper
 Snapping Drake
@@ -1583,8 +1552,6 @@ Snapsail Glider
 Snorting Gahr
 Sokenzan Bruiser
 Sokenzan Spellblade
-Soldier
-Soldier Ally
 Solemn Offering
 Soltari Champion
 Soltari Crusader
@@ -1628,8 +1595,6 @@ Spined Wurm
 Spineless Thug
 Spiraling Duelist
 Spire Monitor
-Spirit
-Spirit
 Spirit Link
 Spirit Mantle
 Spiritmonger
@@ -1639,7 +1604,6 @@ Spitemare
 Splinterfright
 Sporecap Spider
 Sprouting Thrinax
-Squirrel
 Stalker Hag
 Stampeding Rhino
 Standing Troops
@@ -1799,7 +1763,6 @@ Trygon Predator
 Tuktuk Grunts
 Tuktuk Scrapper
 Tuktuk the Explorer
-Tuktuk the Returned
 Tumble Magnet
 Tundra Wolves
 Turn the Tide
@@ -1883,7 +1846,6 @@ Vivid Meadow
 Vizzerdrix
 Vodalian Zombie
 Voiceless Spirit
-Voja
 Volcanic Dragon
 Volcanic Fallout
 Volcanic Hammer
@@ -1942,7 +1904,6 @@ Wirewood Lodge
 Witherscale Wurm
 Withstand
 Withstand Death
-Wolf
 Wolfbriar Elemental
 Wolverine Pack
 Wooden Stake
@@ -1953,7 +1914,6 @@ Woodland Druid
 Woodland Sleuth
 Woodripper
 Woolly Thoctar
-Worm
 Worship
 Wort, Boggart Auntie
 Wrap in Vigor
@@ -1964,8 +1924,6 @@ Wren's Run Packmaster
 Wretched Banquet
 Wrexial, the Risen Deep
 Wring Flesh
-Wurm
-Wurm
 Wurmcoil Engine
 Wurm's Tooth
 Yavimaya Ants
@@ -1983,8 +1941,6 @@ Zephyr Sprite
 Zhalfirin Commander
 Zhalfirin Knight
 Zodiac Monkey
-Zombie
-Zombie Giant
 Zombie Goliath
 Zombie Infestation
 Zombie Outlander
