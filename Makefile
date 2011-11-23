@@ -89,9 +89,15 @@ cards/standard_all.txt:
 cards/new.txt: cards/existing.txt
 	diff $^ cards/existing_old.txt | grep "<" | sed 's/< /  /' > $@
 
-cards/existing.txt: $(wildcard release/Magarena/scripts/*.txt)
+cards/existing_scripts.txt: $(wildcard release/Magarena/scripts/*.txt)
 	cat $^ | grep "^>" | sed 's/>//' | sort > $@
 	flip -u $@
+
+cards/existing_tokens.txt: $(wildcard release/Magarena/scripts/*.txt)
+	cat `grep token= $^ | cut -d':' -f1` | grep "^>" | sed 's/>//' | sort > $@
+
+cards/existing.txt: cards/existing_scripts.txt cards/existing_tokens.txt
+	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 %_full.txt: %.txt cards/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
