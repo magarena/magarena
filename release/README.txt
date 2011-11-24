@@ -53,6 +53,29 @@ Release 1.20 (November 25, 2011)
 ============
 brought to you by beholder, melvin, and wait321
 
+- added discard down to 7 cards at end of turn
+- added support for Echo keyword
+- corrected all rarities
+- combined duel difficulty sliders with duel progress window
+- tweaked AI handling of blocking options
+- card scripts can be added/changed without needing to compile the source code
+- more abilities can be scripted
+
+- fixed: Grimoire of the Dead doesn't tap when activating its ability
+- fixed: Isao, Enlightened Bushi should regenerate target instead of itself
+- fixed: error in card statistics
+- fixed: Kor Firewalker doesn't have protection from red
+- fixed: Merfolk Seastalkers' activated ability doesn't work
+- fixed: Cursed Ronin has regenate ability instead of pump ability
+- fixed: taking control of a creature ignores summoning sickness rule
+- fixed: Necropede's subtype is Myr instead of Insect
+- fixed: Victim of Night uses picture of Doom Blade
+- fixed: Death Baron does not give deathtouch
+- fixed: Ballista Squad sacrifices itself
+- fixed: Benalish Lancer doesn't get two +1/+1 counters and first strike when kicked
+- fixed: Sparkmage Apprentice can only deal damage to creatures
+
+- added the following cards:
 
 Release 1.19 (October 28, 2011)
 ============
