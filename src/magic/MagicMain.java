@@ -60,6 +60,10 @@ public class MagicMain {
 		return GAME_PATH;
 	}
 	
+    public static String getGameFolder() {
+		return GAME_FOLDER;
+	}
+	
 	public static String getModsPath() {
 		return getGamePath()+File.separatorChar+MODS_PATH;
 	}
