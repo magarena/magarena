@@ -954,6 +954,7 @@ Kite Shield
 Kitsune Blademaster
 Kitsune Dawnblade
 Kjeldoran Javelineer
+Knight Errant
 Knight Exemplar
 Knighthood
 Knight of Cliffhaven
@@ -980,6 +981,7 @@ Laccolith Grunt
 Laccolith Titan
 Laccolith Warrior
 Laccolith Whelp
+Lagac Lizard
 Lantern Kami
 Lantern Spirit
 Last Gasp
@@ -1182,6 +1184,7 @@ Nip Gwyllion
 Nirkana Cutthroat
 Noble Hierarch
 No-Dachi
+Norwood Ranger
 Norwood Warrior
 Novablast Wurm
 Nova Chaser
@@ -1466,6 +1469,7 @@ Shadowmage Infiltrator
 Shadow Rider
 Shadow Rift
 Shadowstorm
+Shanodin Dryads
 Sharpened Pitchfork
 Shattered Angel
 Shattering Pulse

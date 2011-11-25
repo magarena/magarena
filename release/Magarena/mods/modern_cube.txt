@@ -805,6 +805,7 @@ Kresh the Bloodbraided
 Kuldotha Ringleader
 Kulrath Knight
 Kuro's Taken
+Lagac Lizard
 Lantern Kami
 Lantern Spirit
 Last Gasp
@@ -987,6 +988,7 @@ Nip Gwyllion
 Nirkana Cutthroat
 Noble Hierarch
 No-Dachi
+Norwood Ranger
 Novablast Wurm
 Nova Chaser
 Null Champion
