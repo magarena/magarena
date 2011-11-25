@@ -53,6 +53,8 @@ Release 1.20 (November 25, 2011)
 ============
 brought to you by beholder, melvin, and wait321
 
+- added option to automatically copy images from old data folder in the
+  "Download images" dialog
 - added discard down to 7 cards at end of turn
 - added support for Echo keyword
 - corrected all rarities
