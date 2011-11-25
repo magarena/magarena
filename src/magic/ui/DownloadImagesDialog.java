@@ -35,6 +35,7 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 	private final DownloadMissingFiles files;
 	private final JComboBox proxyComboBox;
 	private final JTextField addressTextField;
+	//private final JTextField locationTextField;
 	private final JTextField portTextField;
 	private final JProgressBar progressBar;
 	private final JLabel downloadLabel;
@@ -60,20 +61,58 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		downloadPanel.setLayout(null);
 		add(downloadPanel,BorderLayout.CENTER);
 		
+        int y = 25;
+        int x = 10;
+        final int WIDTH = 220;
+        final int HEIGHT = 25;
+        final int VSPACE = 5;
+	
+        /*
+        final JLabel locationLabel=new JLabel("Location");
+		locationLabel.setBounds(x,y,WIDTH,HEIGHT);
+		
+        y += HEIGHT;
+        
+        locationTextField=new JTextField();
+		locationTextField.setBounds(x,y,WIDTH,HEIGHT);
+		
+        final JPanel locationPanel=new JPanel();
+		locationPanel.setBorder(BorderFactory.createTitledBorder("Location"));
+		locationPanel.setBounds(25,20,240,60);
+		locationPanel.setLayout(null);
+        locationPanel.add(locationLabel);
+        locationPanel.add(locationTextField);
+		downloadPanel.add(locationPanel);
+
+        y = 25;
+        */
+
 		final Proxy.Type[] proxyTypes=Proxy.Type.values();
 		final DefaultComboBoxModel proxyModel=new DefaultComboBoxModel(proxyTypes);
 		proxyComboBox=new JComboBox(proxyModel);
-		proxyComboBox.setBounds(10,25,220,25);
+		proxyComboBox.setBounds(x,y,WIDTH,HEIGHT);
 		proxyComboBox.setFocusable(false);
 		proxyComboBox.addActionListener(this);
+
+        y += HEIGHT + VSPACE; 
+
 		final JLabel addressLabel=new JLabel("Address");
-		addressLabel.setBounds(10,55,220,25);
-		addressTextField=new JTextField();
-		addressTextField.setBounds(10,80,220,25);
-		final JLabel portLabel=new JLabel("Port");
-		portLabel.setBounds(10,110,220,25);
+		addressLabel.setBounds(x,y,WIDTH,HEIGHT);
+		
+        y += HEIGHT;
+        
+        addressTextField=new JTextField();
+		addressTextField.setBounds(x,y,WIDTH,HEIGHT);
+
+        y += HEIGHT + VSPACE;
+        
+        final JLabel portLabel=new JLabel("Port");
+		portLabel.setBounds(x,y,WIDTH,HEIGHT);
+
+        y += HEIGHT;
+
 		portTextField=new JTextField();
-		portTextField.setBounds(10,135,220,25);
+		portTextField.setBounds(x,y,WIDTH,HEIGHT);
 		
 		final JPanel proxyPanel=new JPanel();
 		proxyPanel.setBorder(BorderFactory.createTitledBorder("Proxy"));
@@ -87,11 +126,11 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
 		downloadPanel.add(proxyPanel);
 		
 		progressBar=new JProgressBar();
-		progressBar.setBounds(10,30,220,25);
+		progressBar.setBounds(x,30,WIDTH,HEIGHT);
 		downloadLabel=new JLabel();
-		downloadLabel.setBounds(10,60,220,25);
+		downloadLabel.setBounds(x,60,WIDTH,HEIGHT);
 		downloadProgressLabel = new JLabel();
-		downloadProgressLabel.setBounds(10,80,220,25);
+		downloadProgressLabel.setBounds(x,80,WIDTH,HEIGHT);
 		downloadProgressLabel.setText("");
 		final JPanel progressPanel=new JPanel();
 		progressPanel.setBorder(BorderFactory.createTitledBorder("Progress"));
