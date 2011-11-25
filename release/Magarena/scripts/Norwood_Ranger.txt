@@ -1,0 +1,12 @@
+>Norwood Ranger
+url=http://magiccards.info/9e/en/260.html
+image=http://magiccards.info/scans/en/9e/260.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Elf,Scout
+color=g
+converted=1
+cost={G}
+pt=1/2
+timing=main

@@ -1,0 +1,13 @@
+>Knight Errant
+url=http://magiccards.info/7e/en/24.html
+image=http://magiccards.info/scans/en/7e/24.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+timing=main
+
