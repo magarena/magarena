@@ -17,6 +17,10 @@ public class DownloadImageFile extends WebDownloader {
 	public String getFilename() {
 		return file.getName();
 	}
+
+    public File getFile() {
+        return file;
+    }
 	
 	public void download(final Proxy proxy) {
         WebDownloader.downloadToFile(proxy, url, file);

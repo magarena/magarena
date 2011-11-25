@@ -22,6 +22,10 @@ public class DownloadCardTextFile extends WebDownloader {
 		return file.getName();
 	}
 	
+    public File getFile() {
+		return file;
+	}
+	
 	public void download(final Proxy proxy) {
         String html = WebDownloader.getHTML(proxy, url);
 		
