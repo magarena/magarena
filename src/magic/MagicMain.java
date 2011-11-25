@@ -13,24 +13,17 @@ import javax.swing.UIManager.LookAndFeelInfo;
 
 public class MagicMain {
 	
-	private static final String GAME_PATH="Magarena";
-	private static final String MODS_PATH="mods";
-	private static final String SCRIPTS_PATH="scripts";
-	
-    private static final String gamePath;
-	
-	static {
-		final File dataDirFile=new File(System.getProperty("user.dir"),GAME_PATH);
-		if (dataDirFile.exists()&&dataDirFile.isDirectory()) {
-			gamePath=dataDirFile.toString();
-		} else {		
-			gamePath=System.getProperty("user.home")+File.separatorChar+GAME_PATH;		
-		}
-		System.err.println("Data folder : "+gamePath);
-	}
+	private static final String GAME_FOLDER  = "Magarena";
+	private static final String MODS_PATH    = "mods";
+	private static final String SCRIPTS_PATH = "scripts";
+    private static final String GAME_PATH    = System.getProperty("user.dir")+File.separatorChar+GAME_FOLDER;		
 	
 	public static void main(final String args[]) {	
+        // setup the handler for any uncaught exception
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
+		
+        // show the data folder being used
+        System.err.println("Data folder : "+GAME_PATH);
 		
 		// try to set the look and feel
 	    try {
@@ -64,7 +57,7 @@ public class MagicMain {
 		
 
 	public static String getGamePath() {
-		return gamePath;
+		return GAME_PATH;
 	}
 	
 	public static String getModsPath() {
