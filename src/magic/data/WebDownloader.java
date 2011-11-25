@@ -11,10 +11,12 @@ import java.io.OutputStream;
 import java.net.Proxy;
 import java.net.URL;
 
-public class WebDownloader {	
-	public void download(final Proxy proxy) { }
+public abstract class WebDownloader {	
+	public abstract void download(final Proxy proxy);
 	
-	public String getFilename() { return ""; }
+	public abstract String getFilename();
+	
+    public abstract File getFile();
 	
 	public static void downloadToFile(final Proxy proxy, final URL url, final File file) {
         OutputStream outputStream = null;
