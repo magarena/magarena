@@ -250,10 +250,6 @@ public class CardDefinitions {
 		filterCards();
 		printStatistics();
 		
-		// add tokens.
-        // add definiton after setting properties
-		// loadCardDefinitions(TokenCardDefinitions.TOKEN_FILENAME, true); 
-		
 		addDefinition(MagicCardDefinition.UNKNOWN);
 
 		System.err.println(getNumberOfCards()+ " card definitions");
