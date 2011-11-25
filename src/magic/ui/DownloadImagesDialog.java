@@ -37,7 +37,7 @@ import java.net.Proxy.Type;
 
 import net.miginfocom.swing.MigLayout;
 
-public class DownloadImagesDialog extends JDialog implements Runnable,ActionListener {
+public class DownloadImagesDialog extends JFrame implements Runnable,ActionListener {
 	private static final long serialVersionUID = 1L;
 
 	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
@@ -60,14 +60,15 @@ public class DownloadImagesDialog extends JDialog implements Runnable,ActionList
     private boolean cancelDownload = false;
 
 	public DownloadImagesDialog(final MagicFrame frame) {
-		super(frame,true);
-		this.frame = frame;
-		this.setLayout(new MigLayout("ins 20, fillx, wrap 1","[grow]"));
-		this.setTitle("Download card images and text");
+		super("Download card images and text");
+
+        this.frame = frame;
+		this.downloader = new Thread(this);
+		
+        this.setLayout(new MigLayout("ins 20, fillx, wrap 1","[grow]"));
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		this.downloader = new Thread(this);
 
 		add(new JLabel("Import data from previous version"), "gapbottom rel, w 300");
 		
