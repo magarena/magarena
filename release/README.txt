@@ -76,6 +76,156 @@ brought to you by beholder, melvin, and wait321
 - fixed: Sparkmage Apprentice can only deal damage to creatures
 
 - added the following cards:
+  Abyssal Nightstalker
+  Acridian
+  Akoum Battlesinger
+  Albino Troll
+  Ardent Recruit
+  Auriok Glaivemaster
+  Avalanche Riders
+  Basalt Gargoyle
+  Battlegrowth
+  Black Vise
+  Bloodhall Ooze
+  Body of Jukai
+  Bojuka Brigand
+  Bone Dancer
+  Bone Shredder
+  Burr Grafter
+  Canker Abomination
+  Carrion Ants
+  Citanul Centaurs
+  Concussive Bolt
+  Cradle Guard
+  Crater Hellion
+  Crawling Filth
+  Crypt Cobra
+  Deathknell Kami
+  Deepcavern Imp
+  Deranged Hermit
+  Dwarven Vigilantes
+  Echoing Calm
+  Echoing Courage
+  Echoing Decay
+  Echoing Truth
+  Enclave Cryptologist
+  Evincar's Justice
+  Extruder
+  Fanning the Flames
+  Farrel's Zealot
+  Fevered Convulsions
+  Firemaw Kavu
+  Flamecore Elemental
+  Floral Spuzzem
+  Forked-Branch Garami
+  Gemstone Mine
+  Ghitu Slinger
+  Gibbering Kami
+  Gnarled Effigy
+  Goblin Marshal
+  Goblin Patrol
+  Goblin War Buggy
+  Graypelt Hunter
+  Guiltfeeder
+  Hada Freeblade
+  Hagra Diabolist
+  Halimar Excavator
+  Halimar Wavewatch
+  Hammerheim Deadeye
+  Hedron-Field Purists
+  Henchfiend of Ukor
+  Herald of Serra
+  Highland Berserker
+  Hundred-Talon Kami
+  Hunting Moa
+  Ikiral Outrider
+  Imps' Taunt
+  Join the Ranks
+  Joraga Bard
+  Kabira Vindicator
+  Kami of Empty Graves
+  Kami of Lunacy
+  Kami of the Honored Dead
+  Kami of the Palace Fields
+  Kami of the Tended Garden
+  Kargan Dragonlord
+  Karmic Guide
+  Kazandu Blademaster
+  Kazandu Tuskcaller
+  Kazuul Warlord
+  Keldon Champion
+  Keldon Vandals
+  Knight of Cliffhaven
+  Kodama of the Center Tree
+  Lab Rats
+  Laccolith Grunt
+  Laccolith Titan
+  Laccolith Warrior
+  Laccolith Whelp
+  Leonin Den-Guard
+  Lighthouse Chronologist
+  Lightning Dragon
+  Lim-Dul the Necromancer
+  Makindi Shieldmate
+  Mind Games
+  Mind Peel
+  Mogg War Marshal
+  Multani's Acolyte
+  Murasa Pyromancer
+  Nightsoil Kami
+  Nimana Sell-Sword
+  Null Champion
+  Ondu Cleric
+  Oran-Rief Survivalist
+  Pouncing Jaguar
+  Promised Kannushi
+  Pus Kami
+  Radiant's Dragoons
+  Raksha Golden Cub
+  Razorfield Rhino
+  Reiterate
+  Rootrunner
+  Scuttling Death
+  Sea Gate Loremaster
+  Searing Touch
+  Seascape Aerialist
+  Seething Anger
+  Shattering Pulse
+  Shivan Raptor
+  Simian Grunts
+  Skyhunter Cub
+  Skywatcher Adept
+  Smallpox
+  Spiraling Duelist
+  Stingscourger
+  Subterranean Shambler
+  Sunspear Shikari
+  Suq'Ata Assassin
+  Swamp Mosquito
+  Tajuru Archer
+  Talus Paladin
+  Tectonic Fiend
+  Thalakos Deceiver
+  The Rack
+  Thief of Hope
+  Thousand-legged Kami
+  Thran War Machine
+  Ticking Gnomes
+  Timbermare
+  Torii Watchward
+  Transcendent Master
+  Tuktuk Grunts
+  Tuktuk Scrapper
+  Turntimber Ranger
+  Uktabi Drake
+  Umara Raptor
+  Urza's Blueprints
+  Venerable Kumo
+  Viashino Outrider
+  Vug Lizard
+  Winding Wurm
+  Wretched Banquet
+  Zealot il-Vec
 
 Release 1.19 (October 28, 2011)
 ============
