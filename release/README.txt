@@ -49,6 +49,14 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.20b (November 26, 2011)
+=============
+This is a bug fix release.
+
+- fixed: many creatures getting the wrong abilities
+- fixed: Vivid land loses counter even when tapping for the right mana
+- fixed: description of Searing Touch says it deals 3 damage when it should be only 1 damage
+
 Release 1.20 (November 25, 2011)
 ============
 brought to you by beholder, melvin, and wait321
