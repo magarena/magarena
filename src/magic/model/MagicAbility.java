@@ -91,17 +91,17 @@ public enum MagicAbility {
     
     Exalted("exalted",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicExaltedTrigger.getInstance());
+            card.add(MagicExaltedTrigger.create());
         }
     },
 	BattleCry("battle cry",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-			card.add(MagicBattleCryTrigger.getInstance());
+			card.add(MagicBattleCryTrigger.create());
         }
     },
     LivingWeapon("living weapon", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicLivingWeaponTrigger.getInstance());
+            card.add(MagicLivingWeaponTrigger.create());
         }
     },
     Flanking("flanking",10) {

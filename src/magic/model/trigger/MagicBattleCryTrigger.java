@@ -12,11 +12,15 @@ import java.util.Collection;
 
 public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
 
-	private static final MagicTrigger INSTANCE = new MagicBattleCryTrigger();
+	private static final MagicBattleCryTrigger INSTANCE = new MagicBattleCryTrigger();
 
     private MagicBattleCryTrigger() {
         super(8);
     }
+	
+    public static MagicBattleCryTrigger create() {
+		return INSTANCE;
+	}
 	
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
@@ -42,9 +46,5 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
 				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
 			}
 		}
-	}
-
-	public static MagicTrigger getInstance() {
-		return INSTANCE;
 	}
 }

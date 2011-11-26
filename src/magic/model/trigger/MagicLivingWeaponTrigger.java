@@ -11,8 +11,16 @@ import magic.model.event.MagicEvent;
 /**
  * Trigger that occurs when a card with the living weapon mechanic comes into play
  */
-public class MagicLivingWeaponTrigger {
-    private static final MagicWhenComesIntoPlayTrigger INSTANCE = new MagicWhenComesIntoPlayTrigger() {
+public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
+    
+    private static final MagicWhenComesIntoPlayTrigger INSTANCE = new MagicLivingWeaponTrigger();
+
+    private MagicLivingWeaponTrigger() {}
+
+    public static MagicWhenComesIntoPlayTrigger create() {
+        return INSTANCE;
+    }
+
 	@Override
 	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
 		return new MagicEvent(
@@ -42,9 +50,4 @@ public class MagicLivingWeaponTrigger {
                 play_token.getPermanent());
         game.doAction(attach_equip);
 	}
-    };
-    
-    public static MagicWhenComesIntoPlayTrigger getInstance() {
-        return INSTANCE;
-    }
 }
