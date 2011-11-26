@@ -22,7 +22,10 @@ public class MagicSourceManaActivation {
 			if (activation.canPlay(game,permanent)) {
 				available=true;
 				for (final MagicManaType manaType : activation.getManaTypes()) {
-					activations[manaType.ordinal()]=activation;
+                    if (activations[manaType.ordinal()] == null ||
+                        activations[manaType.ordinal()].getWeight() > activation.getWeight()) {
+    					activations[manaType.ordinal()] = activation;
+                    }
 				}
 			}
 		}
