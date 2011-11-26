@@ -28,138 +28,6 @@ import magic.model.trigger.*;
 
 public enum MagicAbility {
 
-    Modular("modular", 10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-			card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
-            card.add(MagicModularTrigger.create());
-        }
-    },
-    EntersGainLife("enters gain life", 10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicRefugeLandTrigger(n));
-        }
-    },
-    EntersLoseLife("enters lose life", -10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicRefugeLandTrigger(-n));
-        }
-    },
-    LeavesGainLife("leaves gain life", 10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicLeavesGainLifeTrigger(n));
-        }
-    },
-    LeavesLoseLife("leaves lose life", -10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-            card.add(new MagicLeavesGainLifeTrigger(-n));
-        }
-    },
-    LeavesReturnExile("leaves return exile", 0) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicLeavesReturnExileTrigger.create());
-        }
-    },
-    EntersTapped("enters tapped", -10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicTappedIntoPlayTrigger.create());
-        }
-    },
-    EntersCharged("enters with charge", 0) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",n));
-        }
-    },
-    EntersPlus("enters with +1/+1", 0) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
-        }
-    },
-    EntersMinus("enters with -1/-1", 0) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",n));
-        }
-    },
-    EntersTappedUnlessTwo("enters tapped unless two", -10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
-        }
-    },
-    EntersTappedUnless("enters tapped unless", -10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final String[] token = arg.split(" ");
-            final MagicSubType t1 = MagicSubType.getSubType(token[0]);
-            final MagicSubType t2 = MagicSubType.getSubType(token[1]);
-            card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
-        }
-    },
-    EntersDrawCard("enters draw card", 10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicEntersDrawCardTrigger.create());
-        }
-    },
-    EntersDamageTarget("enters damage target", 10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final String[] tokens = arg.split(" ");
-            if (tokens.length == 1) {
-                final int n = Integer.parseInt(tokens[0]);
-                card.add(new MagicEntersDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                            n));
-            } else if ("creature".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicEntersDamageTargetTrigger(
-                            MagicTargetChoice.TARGET_CREATURE,
-                            n));
-            } else if ("player".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicEntersDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_PLAYER,
-                            n));
-            } else {
-                throw new RuntimeException("unable to parse " + arg);
-            }
-        }
-    },
-    LeavesDamageTarget("leaves damage target", 10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final String[] tokens = arg.split(" ");
-            if (tokens.length == 1) {
-                final int n = Integer.parseInt(tokens[0]);
-                card.add(new MagicLeavesDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                            n));
-            } else if ("creature".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicLeavesDamageTargetTrigger(
-                            MagicTargetChoice.TARGET_CREATURE,
-                            n));
-            } else if ("player".equals(tokens[0])) {
-                final int n = Integer.parseInt(tokens[1]);
-                card.add(new MagicLeavesDamageTargetTrigger(
-                            MagicTargetChoice.NEG_TARGET_PLAYER,
-                            n));
-            } else {
-                throw new RuntimeException("unable to parse " + arg);
-            }
-        }
-    },
-    Echo("echo",-20) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            if (arg.isEmpty()) {
-                card.add(MagicEchoTrigger.create());
-            } else {
-	            card.add(new MagicEchoTrigger(MagicManaCost.createCost(arg)));
-            }
-        }
-    },
 	AttacksEachTurnIfAble("attacks each turn if able",-10),
 	CannotBlock("can't block",-50),
 	CannotAttackOrBlock("can't attack or block",-200),
@@ -183,11 +51,6 @@ public enum MagicAbility {
 	Defender("defender",-100),
 	DoesNotUntap("doesn't untap during untap step",-30),
 	DoubleStrike("double strike",100),
-	Exalted("exalted",10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicExaltedTrigger.getInstance());
-        }
-    },
 	Fear("fear",50),
 	Flash("flash",0),
 	Flying("flying",50),
@@ -223,12 +86,19 @@ public enum MagicAbility {
 	Wither("wither",30),
 	TotemArmor("totem armor",0),
 	Intimidate("intimidate",45),
+	Infect("infect",35),
+    // 59 keyword ability
+    
+    Exalted("exalted",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicExaltedTrigger.getInstance());
+        }
+    },
 	BattleCry("battle cry",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
 			card.add(MagicBattleCryTrigger.getInstance());
         }
     },
-	Infect("infect",35),
     LivingWeapon("living weapon", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicLivingWeaponTrigger.getInstance());
@@ -451,6 +321,138 @@ public enum MagicAbility {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
+    Modular("modular", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+			card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+            card.add(MagicModularTrigger.create());
+        }
+    },
+    EntersGainLife("enters gain life", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicRefugeLandTrigger(n));
+        }
+    },
+    EntersLoseLife("enters lose life", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicRefugeLandTrigger(-n));
+        }
+    },
+    LeavesGainLife("leaves gain life", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicLeavesGainLifeTrigger(n));
+        }
+    },
+    LeavesLoseLife("leaves lose life", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicLeavesGainLifeTrigger(-n));
+        }
+    },
+    LeavesReturnExile("leaves return exile", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicLeavesReturnExileTrigger.create());
+        }
+    },
+    EntersTapped("enters tapped", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicTappedIntoPlayTrigger.create());
+        }
+    },
+    EntersCharged("enters with charge", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",n));
+        }
+    },
+    EntersPlus("enters with +1/+1", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+        }
+    },
+    EntersMinus("enters with -1/-1", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",n));
+        }
+    },
+    EntersTappedUnlessTwo("enters tapped unless two", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
+        }
+    },
+    EntersTappedUnless("enters tapped unless", -10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] token = arg.split(" ");
+            final MagicSubType t1 = MagicSubType.getSubType(token[0]);
+            final MagicSubType t2 = MagicSubType.getSubType(token[1]);
+            card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
+        }
+    },
+    EntersDrawCard("enters draw card", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicEntersDrawCardTrigger.create());
+        }
+    },
+    EntersDamageTarget("enters damage target", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] tokens = arg.split(" ");
+            if (tokens.length == 1) {
+                final int n = Integer.parseInt(tokens[0]);
+                card.add(new MagicEntersDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                            n));
+            } else if ("creature".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicEntersDamageTargetTrigger(
+                            MagicTargetChoice.TARGET_CREATURE,
+                            n));
+            } else if ("player".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicEntersDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_PLAYER,
+                            n));
+            } else {
+                throw new RuntimeException("unable to parse " + arg);
+            }
+        }
+    },
+    LeavesDamageTarget("leaves damage target", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final String[] tokens = arg.split(" ");
+            if (tokens.length == 1) {
+                final int n = Integer.parseInt(tokens[0]);
+                card.add(new MagicLeavesDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                            n));
+            } else if ("creature".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicLeavesDamageTargetTrigger(
+                            MagicTargetChoice.TARGET_CREATURE,
+                            n));
+            } else if ("player".equals(tokens[0])) {
+                final int n = Integer.parseInt(tokens[1]);
+                card.add(new MagicLeavesDamageTargetTrigger(
+                            MagicTargetChoice.NEG_TARGET_PLAYER,
+                            n));
+            } else {
+                throw new RuntimeException("unable to parse " + arg);
+            }
+        }
+    },
+    Echo("echo",-20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            if (arg.isEmpty()) {
+                card.add(MagicEchoTrigger.create());
+            } else {
+	            card.add(new MagicEchoTrigger(MagicManaCost.createCost(arg)));
+            }
+        }
+    },
     None("",0);
 
 	public static final long PROTECTION_FLAGS=
@@ -485,7 +487,9 @@ public enum MagicAbility {
 	private MagicAbility(final String name,final int score) {
 		this.name=name;
 		this.score=score;
-		mask=1L<<ordinal();
+		mask = (ordinal() < 63) ?
+            1L<<ordinal() :
+            0;
 	}
 	
 	public String getName() {
