@@ -232,6 +232,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private void closeContent() {
 		contents.removeLast();
 		showContent(contents.getLast());
+		if (gamePanel!=null) {
+			gamePanel.requestFocus();
+		}
 	}
 		
 	private void createMenuBar() {
@@ -567,9 +570,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	public void closeCardExplorer() {
 		closeContent();
 		enableMenuItem(CARD_EXPLORER_ITEM,true);	
-		if (gamePanel!=null) {
-			gamePanel.requestFocus();
-		}
 	}
 	
 	public void closeDeckEditor() {
