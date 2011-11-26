@@ -29,7 +29,7 @@ public class Searing_Touch {
                     new MagicDamageTargetPicker(1),
                     new Object[]{cardOnStack},
                     this,
-                    cardOnStack + " deals 3 damage to target creature " +
+                    cardOnStack + " deals 1 damage to target creature " +
                     "or player$. If the buyback cost was payed$, " +
                     "return " + cardOnStack + " to its owner's hand as it resolves.");
 		}
