@@ -111,6 +111,7 @@ cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt c
 M1.%: clean all cubes
 	grep "VERSION.*1.$*" -r src/*
 	grep "Release.*1.$*" release/README.txt
+	grep 1.$* -r Magarena.app/
 	-rm -rf Magarena-1.$*
 	-rm -rf Magarena-1.$*.app
 	-rm Magarena-1.$*.zip
