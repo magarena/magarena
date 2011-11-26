@@ -114,6 +114,7 @@ M1.%: clean all cubes
 	-rm -rf Magarena-1.$*
 	-rm -rf Magarena-1.$*.app
 	-rm Magarena-1.$*.zip
+	-rm Magarena-1.$*.app.zip
 	mkdir -p Magarena-1.$*/Magarena/mods
 	cp \
 			release/gpl-3.0.html \
