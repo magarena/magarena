@@ -535,10 +535,8 @@ public class MagicCardDefinition {
 	}
 		
 	public void setManaSourceText(final String sourceText) {
-		
 		manaSourceText=sourceText;
 		for (int index=0;index<sourceText.length();index+=2) {
-			
 			final char symbol=sourceText.charAt(index);
 			final int source=sourceText.charAt(index+1)-'0';
 			final MagicColor color=MagicColor.getColor(symbol);
@@ -547,7 +545,6 @@ public class MagicCardDefinition {
 	}
 
 	private String getManaSourceText() {
-		
 		return manaSourceText;
 	}
 	
