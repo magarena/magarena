@@ -80,8 +80,7 @@ public class CardStatistics {
 			if (card.isLand()) {
 				totalTypes[0]++;
 				for (final MagicColor color : MagicColor.values()) {
-					
-					if (card.getManaSource(color)>0) {
+					if (card.getManaSource(color) > 0) {
 						colorLands[color.ordinal()]++;
 					}
 				}				

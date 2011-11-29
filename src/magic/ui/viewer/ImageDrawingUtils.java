@@ -42,7 +42,7 @@ public class ImageDrawingUtils {
             final int ay) {
 		final List<ImageIcon> icons=new ArrayList<ImageIcon>();
 		for (final MagicColor color : MagicColor.values()) {
-			if (cardDefinition.getManaSource(color)>0) {
+			if (cardDefinition.getManaSource(color) > 0) {
 				icons.add(color.getManaType().getIcon(true));
 			}
 		}	

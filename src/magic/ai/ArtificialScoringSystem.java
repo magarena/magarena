@@ -39,7 +39,6 @@ public class ArtificialScoringSystem {
 		if (cardDefinition.isLand()) {
 			int score=cardDefinition.getValue()*50;
 			for (final MagicColor color : MagicColor.values()) {
-				
 				score+=cardDefinition.getManaSource(color)*50;
 			}
 			return score;
@@ -57,7 +56,6 @@ public class ArtificialScoringSystem {
 		if (cardDefinition.isLand()) {
 			int score=cardDefinition.getValue()*50;
 			for (final MagicColor color : MagicColor.values()) {
-				
 				score+=cardDefinition.getManaSource(color)*50;
 			}
 			return score;

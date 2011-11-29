@@ -163,8 +163,8 @@ public class DeckViewer extends JPanel {
 			final MagicPlayerProfile profile=player.getProfile();
 			int cindex=0;
 			for (final MagicColor color : profile.getColors()) {
-
-				if (color.hasColor(card.getColorFlags())||(card.isLand()&&card.getManaSource(color)>0)) {
+				if (color.hasColor(card.getColorFlags()) || 
+                    (card.isLand() && card.getManaSource(color) > 0)) {
 					colorLabels[cindex].setIcon(color.getManaType().getIcon(true));
 				}
 				cindex++;
