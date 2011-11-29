@@ -17,9 +17,6 @@ public class Gemstone_Mine {
         MagicCondition.CAN_TAP_CONDITION,
         MagicCondition.CHARGE_COUNTER_CONDITION};
 	
-    public static final MagicComesIntoPlayWithCounterTrigger T = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"mining",3);
-	
     public static final MagicManaActivation MANA = new MagicManaActivation(
     		MagicManaType.ALL_TYPES,
     		CONDITIONS,
