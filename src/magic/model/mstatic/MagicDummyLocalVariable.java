@@ -1,4 +1,4 @@
-package magic.model.variable;
+package magic.model.mstatic;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
