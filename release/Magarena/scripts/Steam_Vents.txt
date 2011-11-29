@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Island,Mountain
 mana=u3r3
-basic=ur
+ability=tap add mana {U} or {R}
 ability=shock land
 timing=land

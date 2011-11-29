@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Mountain,Forest
 mana=r3g3
-basic=rg
+ability=tap add mana {R} or {G}
 ability=shock land
 timing=land

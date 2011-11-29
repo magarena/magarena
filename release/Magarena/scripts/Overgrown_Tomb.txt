@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Swamp,Forest
 mana=b3g3
-basic=bg
+ability=tap add mana {B} or {G}
 ability=shock land
 timing=land

@@ -5,6 +5,6 @@ value=4
 rarity=R
 type=Land
 mana=w3u3
-basic=wu
+ability=tap add mana {W} or {U}
 ability=enters tapped unless plains island
 timing=land

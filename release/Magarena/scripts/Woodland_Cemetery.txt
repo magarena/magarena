@@ -5,6 +5,6 @@ value=4
 rarity=R
 type=Land
 mana=b3g3
-basic=bg
+ability=tap add mana {B} or {G}
 ability=enters tapped unless swamp forest
 timing=land

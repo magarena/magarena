@@ -7,6 +7,5 @@ rarity=L
 type=Basic,Land
 subtype=Plains
 mana=w4
-basic=w
+ability=tap add mana {W}
 timing=land
-

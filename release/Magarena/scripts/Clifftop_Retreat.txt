@@ -5,6 +5,6 @@ value=4
 rarity=R
 type=Land
 mana=r3w3
-basic=rw
+ability=tap add mana {R} or {W}
 ability=enters tapped unless mountain plains
 timing=land

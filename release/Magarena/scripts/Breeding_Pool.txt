@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Forest,Island
 mana=g3u3
-basic=gu
+ability=tap add mana {G} or {U}
 ability=shock land
 timing=land

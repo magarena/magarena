@@ -7,6 +7,6 @@ rarity=L
 type=Basic,Land
 subtype=Island
 mana=u4
-basic=u
+ability=tap add mana {U}
 timing=land
 

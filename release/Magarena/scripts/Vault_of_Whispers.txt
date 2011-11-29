@@ -5,6 +5,6 @@ value=2
 rarity=C
 type=Artifact,Land
 mana=b4
-basic=b
+ability=tap add mana {B}
 timing=land
 

@@ -5,6 +5,6 @@ value=4
 rarity=R
 type=Land
 mana=u3r3
-basic=ur
+ability=tap add mana {U} or {R}
 ability=enters tapped unless island mountain
 timing=land

@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Plains,Swamp
 mana=w3b3
-basic=wb
+ability=tap add mana {W} or {B}
 ability=shock land
 timing=land

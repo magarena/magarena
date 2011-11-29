@@ -5,7 +5,7 @@ value=3
 rarity=C
 type=Land
 mana=b3g3r3u3w3
-basic=bgruw
 timing=land
+ability=tap add mana any
 ability=enters tapped
 requires_card_code
