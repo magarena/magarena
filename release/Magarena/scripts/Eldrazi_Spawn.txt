@@ -7,6 +7,5 @@ subtype=Eldrazi,Spawn
 converted=0
 cost={0}
 pt=0/1
+ability=sac add mana {1}
 mana_or_combat
-sacrifice_colorless
-
