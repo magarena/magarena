@@ -34,9 +34,6 @@ public class Serrated_Arrows {
 		}
 	};
 
-	public static final MagicComesIntoPlayWithCounterTrigger T1 = 
-			new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"arrowhead",3);
-
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
 		@Override
 		public MagicEvent executeTrigger(

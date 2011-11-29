@@ -7,6 +7,6 @@ rarity=C
 type=Artifact
 converted=4
 cost={4}
+ability=enters with arrowhead 3
 timing=artifact
-
 requires_card_code
