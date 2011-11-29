@@ -244,9 +244,10 @@ public enum MagicAbility {
             card.add(new MagicVividManaActivation(manatype));
         }
     },
-    SacAddManaAny("sac add mana any",10) {
+    SacAddMana("sac add mana",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicSacrificeTapManaActivation(MagicManaType.ALL_TYPES));
+            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+            card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
     GainAbility("gains",10) {
@@ -366,6 +367,18 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int n = Integer.parseInt(arg);
 	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"charge",n));
+        }
+    },
+    EntersMining("enters with mining", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"mining",n));
+        }
+    },
+    EntersArrowhead("enters with arrowhead", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+	        card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"arrowhead",n));
         }
     },
     EntersPlus("enters with +1/+1", 0) {
