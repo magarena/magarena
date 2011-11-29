@@ -79,8 +79,6 @@ public class CardDefinitions {
 			card.setEquipCost(MagicManaCost.createCost(value));
 		} else if ("mana".equals(property)) {
 			card.setManaSourceText(value);
-		} else if ("basic".equals(property)) {
-			card.setBasicManaActivations(value);
 		} else if ("pt".equals(property)) {
             if (!card.isCreature()) {
                 throw new RuntimeException(card.getFullName() + ": only creatures may have power/toughness");
