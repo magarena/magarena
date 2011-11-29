@@ -42,7 +42,7 @@ public class CardDefinitions {
 	private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
 	
 	private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
-        if ("image".equals(property)) {
+               if ("image".equals(property)) {
             card.setImageURL(value);
 		} else if ("url".equals(property)) {
 			card.setCardInfoURL(value);
@@ -119,9 +119,6 @@ public class CardDefinitions {
 			}
 		} else if ("mana_or_combat".equals(property)) {
             card.setExcludeManaOrCombat();
-		} else if ("sacrifice_colorless".equals(property)) {
-            card.addManaActivation(
-                    new MagicSacrificeManaActivation(Arrays.asList(MagicManaType.Colorless)));
 		} else if ("requires_card_code".equals(property)) {
 	        addCardSpecificCode(card);	
         } else {
