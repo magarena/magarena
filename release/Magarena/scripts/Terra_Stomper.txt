@@ -11,4 +11,3 @@ cost={3}{G}{G}{G}
 pt=8/8
 ability=can't be countered,trample
 timing=main
-

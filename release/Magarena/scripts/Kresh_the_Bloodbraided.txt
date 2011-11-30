@@ -10,5 +10,4 @@ converted=5
 cost={2}{B}{R}{G}
 pt=3/3
 timing=main
-
 requires_card_code

@@ -11,4 +11,3 @@ cost={1}{R}{R}
 pt=2/3
 ability=forestwalk
 timing=main
-

@@ -11,5 +11,4 @@ cost={1}{W}
 ability=flash
 given_ability=shadow
 timing=flash
-
 requires_card_code

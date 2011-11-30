@@ -11,5 +11,4 @@ cost={1}{W}
 pt=1/2
 ability=vigilance
 timing=main
-
 requires_card_code

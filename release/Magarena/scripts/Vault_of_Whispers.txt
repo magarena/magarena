@@ -7,4 +7,3 @@ type=Artifact,Land
 mana=b4
 ability=tap add mana {B}
 timing=land
-

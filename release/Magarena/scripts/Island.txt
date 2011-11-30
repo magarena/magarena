@@ -9,4 +9,3 @@ subtype=Island
 mana=u4
 ability=tap add mana {U}
 timing=land
-

@@ -11,4 +11,3 @@ converted=3
 cost={1}{U}{B}
 pt=2/3
 timing=main
-

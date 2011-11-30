@@ -9,4 +9,3 @@ converted=5
 cost={5}
 pt=6/2
 timing=main
-

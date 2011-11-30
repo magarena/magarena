@@ -12,5 +12,4 @@ equip={2}
 given_pt=0/2
 given_ability=vigilance
 timing=equipment
-
 requires_card_code

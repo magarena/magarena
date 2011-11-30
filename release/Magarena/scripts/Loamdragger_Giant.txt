@@ -10,4 +10,3 @@ converted=7
 cost={4}{R/G}{R/G}{R/G}
 pt=7/6
 timing=main
-

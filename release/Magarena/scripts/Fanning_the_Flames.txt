@@ -9,5 +9,4 @@ color=r
 converted=2
 cost={X}{R}{R}
 timing=removal
-
 requires_card_code

@@ -11,4 +11,3 @@ cost={3}{W}
 pt=2/2
 ability=flying,vigilance
 timing=main
-

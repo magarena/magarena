@@ -11,5 +11,4 @@ cost={4}{G}{W}{W}{U}
 pt=5/8
 ability=flying,shroud
 timing=fmain
-
 requires_card_code

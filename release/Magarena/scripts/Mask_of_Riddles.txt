@@ -11,5 +11,4 @@ cost={U}{B}
 equip={2}
 given_ability=fear
 timing=equipment
-
 requires_card_code

@@ -12,4 +12,3 @@ ability=living weapon
 given_pt=3/1
 given_ability=haste
 timing=equipment
-

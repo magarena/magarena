@@ -11,5 +11,4 @@ cost={R}{R}{R}
 pt=6/1
 ability=trample,haste
 timing=fmain
-
 requires_card_code

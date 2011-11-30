@@ -11,4 +11,3 @@ converted=2
 cost={1}{G}
 pt=1/3
 timing=main
-

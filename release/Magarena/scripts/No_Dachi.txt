@@ -11,4 +11,3 @@ equip={3}
 given_pt=2/0
 given_ability=first strike
 timing=equipment
-

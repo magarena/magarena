@@ -11,4 +11,3 @@ cost={G}{U}
 pt=2/2
 ability=unblockable
 timing=main
-

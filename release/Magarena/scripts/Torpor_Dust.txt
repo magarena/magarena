@@ -11,5 +11,4 @@ cost={2}{U/B}
 given_pt=-3/0
 ability=flash
 timing=removal
-
 requires_card_code

@@ -8,5 +8,4 @@ color=wu
 converted=6
 cost={4}{W/U}{W/U}
 timing=tapping
-
 requires_card_code

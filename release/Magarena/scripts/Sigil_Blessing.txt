@@ -8,5 +8,4 @@ color=gw
 converted=2
 cost={G}{W}
 timing=pump
-
 requires_card_code

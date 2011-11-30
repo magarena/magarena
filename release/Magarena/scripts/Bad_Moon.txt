@@ -9,5 +9,4 @@ converted=2
 cost={1}{B}
 static=all
 timing=enchantment
-
 requires_card_code

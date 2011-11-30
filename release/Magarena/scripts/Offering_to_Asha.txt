@@ -8,5 +8,4 @@ color=wu
 converted=4
 cost={2}{W}{U}
 timing=counter
-
 requires_card_code

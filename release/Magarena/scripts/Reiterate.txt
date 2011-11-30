@@ -8,5 +8,4 @@ color=r
 converted=3
 cost={1}{R}{R}
 timing=spell
-
 requires_card_code

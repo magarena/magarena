@@ -11,5 +11,4 @@ cost={4}{B}{B}
 pt=6/6
 ability=deathtouch
 timing=fmain
-
 requires_card_code

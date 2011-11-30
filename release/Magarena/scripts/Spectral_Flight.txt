@@ -11,5 +11,4 @@ cost={1}{U}
 given_pt=2/2
 given_ability=flying
 timing=aura
-
 requires_card_code

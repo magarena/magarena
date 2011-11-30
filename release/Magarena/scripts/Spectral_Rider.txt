@@ -11,4 +11,3 @@ cost={W}{W}
 pt=2/2
 ability=intimidate
 timing=main
-

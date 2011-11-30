@@ -11,4 +11,3 @@ converted=4
 cost={2}{G}{W}
 pt=2/5
 timing=main
-

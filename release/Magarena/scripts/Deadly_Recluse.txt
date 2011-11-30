@@ -11,4 +11,3 @@ cost={1}{G}
 pt=1/2
 ability=reach,deathtouch
 timing=smain
-

@@ -11,4 +11,3 @@ converted=8
 cost={5}{U}{U}{U}
 pt=7/6
 timing=main
-

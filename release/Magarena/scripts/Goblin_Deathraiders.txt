@@ -11,4 +11,3 @@ cost={B}{R}
 pt=3/1
 ability=trample
 timing=main
-

@@ -11,5 +11,4 @@ cost={3}{U}
 pt=2/2
 ability=flying,persist
 timing=fmain
-
 requires_card_code

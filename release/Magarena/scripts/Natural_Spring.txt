@@ -8,5 +8,4 @@ color=g
 converted=5
 cost={3}{G}{G}
 timing=draw
-
 requires_card_code

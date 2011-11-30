@@ -11,5 +11,4 @@ cost={W}{B}{B}
 pt=0/4
 ability=defender
 timing=smain
-
 requires_card_code

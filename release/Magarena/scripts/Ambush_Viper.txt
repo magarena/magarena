@@ -12,4 +12,3 @@ cost={1}{G}
 pt=2/1
 ability=flash,deathtouch
 timing=flash
-

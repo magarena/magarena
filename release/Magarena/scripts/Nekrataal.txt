@@ -11,5 +11,4 @@ cost={2}{B}{B}
 pt=2/1
 ability=first strike
 timing=fmain
-
 requires_card_code

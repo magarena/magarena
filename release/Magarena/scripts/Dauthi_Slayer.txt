@@ -11,4 +11,3 @@ cost={B}{B}
 pt=2/2
 ability=shadow,attacks each turn if able
 timing=main
-

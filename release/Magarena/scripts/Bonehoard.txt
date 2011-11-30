@@ -10,5 +10,4 @@ cost={4}
 equip={2}
 ability=living weapon
 timing=equipment
-
 requires_card_code

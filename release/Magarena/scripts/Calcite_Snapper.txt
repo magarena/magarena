@@ -11,5 +11,4 @@ cost={1}{U}{U}
 pt=1/4
 ability=shroud
 timing=main
-
 requires_card_code

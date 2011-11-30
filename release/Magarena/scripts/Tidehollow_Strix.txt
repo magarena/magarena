@@ -11,4 +11,3 @@ cost={U}{B}
 pt=2/1
 ability=flying,deathtouch
 timing=smain
-

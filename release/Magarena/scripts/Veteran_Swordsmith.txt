@@ -11,5 +11,4 @@ cost={2}{W}
 pt=3/2
 static=player
 timing=fmain
-
 requires_card_code

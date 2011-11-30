@@ -11,4 +11,3 @@ equip={4}
 ability=living weapon
 given_pt=2/2
 timing=equipment
-

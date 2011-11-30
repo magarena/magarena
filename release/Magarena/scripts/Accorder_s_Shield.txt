@@ -11,4 +11,3 @@ equip={3}
 given_pt=0/3
 given_ability=vigilance
 timing=equipment
-

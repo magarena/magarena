@@ -11,4 +11,3 @@ converted=3
 cost={1}{U}{U}
 pt=1/5
 timing=smain
-

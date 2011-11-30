@@ -11,5 +11,4 @@ cost={1}{W}{U}
 pt=2/2
 ability=hexproof
 timing=main
-
 requires_card_code

@@ -11,4 +11,3 @@ converted=1
 cost={R/W}
 pt=1/1
 timing=main
-

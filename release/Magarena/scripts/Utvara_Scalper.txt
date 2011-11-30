@@ -11,4 +11,3 @@ cost={1}{R}
 pt=1/2
 ability=flying,attacks each turn if able
 timing=main
-

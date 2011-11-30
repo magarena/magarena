@@ -11,5 +11,4 @@ cost={1}{R}{R}
 pt=0/5
 ability=defender,reach
 timing=smain
-
 requires_card_code

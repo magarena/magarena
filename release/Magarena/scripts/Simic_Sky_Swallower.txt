@@ -11,4 +11,3 @@ cost={5}{G}{U}
 pt=6/6
 ability=flying,trample,shroud
 timing=fmain
-

@@ -11,4 +11,3 @@ cost={1}{G}
 pt=2/1
 ability=can block creatures with shadow
 timing=main
-

@@ -9,5 +9,4 @@ color=u
 converted=5
 cost={3}{U}{U}
 timing=aura
-
 requires_card_code

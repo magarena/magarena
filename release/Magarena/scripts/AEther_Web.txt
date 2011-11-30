@@ -12,5 +12,4 @@ given_pt=1/1
 ability=flash
 given_ability=reach,can block creatures with shadow
 timing=flash
-
 requires_card_code

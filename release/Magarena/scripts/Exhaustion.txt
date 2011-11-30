@@ -9,5 +9,4 @@ color=u
 converted=3
 cost={2}{U}
 timing=nextturn
-
 requires_card_code

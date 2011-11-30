@@ -12,5 +12,4 @@ pt=4/4
 ability=intimidate
 static=player
 timing=fmain
-
 requires_card_code

@@ -11,5 +11,4 @@ cost={W}{W}{W}
 pt=2/2
 ability=protection from black
 timing=main
-
 requires_card_code

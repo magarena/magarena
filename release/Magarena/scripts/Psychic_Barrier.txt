@@ -8,5 +8,4 @@ color=u
 converted=2
 cost={U}{U}
 timing=counter
-
 requires_card_code

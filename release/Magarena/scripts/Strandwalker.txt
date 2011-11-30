@@ -12,4 +12,3 @@ ability=living weapon
 given_pt=2/4
 given_ability=reach
 timing=equipment
-

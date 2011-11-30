@@ -10,5 +10,4 @@ cost={2}
 equip={2}
 given_pt=2/0
 timing=equipment
-
 requires_card_code

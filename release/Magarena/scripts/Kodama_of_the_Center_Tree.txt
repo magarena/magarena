@@ -9,5 +9,4 @@ color=g
 converted=5
 cost={4}{G}
 timing=main
-
 requires_card_code

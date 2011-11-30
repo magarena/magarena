@@ -10,5 +10,4 @@ converted=3
 cost={2}{G}
 pt=2/2
 timing=fmain
-
 requires_card_code

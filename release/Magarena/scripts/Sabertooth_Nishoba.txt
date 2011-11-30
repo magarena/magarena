@@ -11,4 +11,3 @@ cost={4}{G}{W}
 pt=5/5
 ability=trample,protection from blue,protection from red
 timing=main
-

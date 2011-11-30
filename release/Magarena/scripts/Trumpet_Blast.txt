@@ -8,5 +8,4 @@ color=r
 converted=3
 cost={2}{R}
 timing=pump
-
 requires_card_code

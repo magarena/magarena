@@ -10,4 +10,3 @@ converted=3
 cost={2}{B}
 pt=2/2
 timing=main
-

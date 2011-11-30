@@ -11,4 +11,3 @@ cost={1}{R}
 pt=1/2
 ability=first strike,wither
 timing=main
-

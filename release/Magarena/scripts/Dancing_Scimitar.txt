@@ -10,4 +10,3 @@ converted=4
 cost={4}
 pt=1/5
 timing=main
-

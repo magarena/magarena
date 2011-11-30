@@ -10,5 +10,4 @@ color=wb
 converted=3
 cost={1}{W}{B}
 timing=aura
-
 requires_card_code

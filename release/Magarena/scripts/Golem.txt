@@ -7,4 +7,3 @@ subtype=Golem
 converted=0
 cost={0}
 pt=3/3
-

@@ -11,4 +11,3 @@ cost={R}{W}
 pt=2/2
 ability=vigilance,haste
 timing=fmain
-

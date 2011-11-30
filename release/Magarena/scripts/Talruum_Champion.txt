@@ -11,5 +11,4 @@ cost={4}{R}
 pt=3/3
 ability=first strike
 timing=main
-
 requires_card_code

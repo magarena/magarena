@@ -11,4 +11,3 @@ equip={2}
 given_pt=2/0
 ability=indestructible
 timing=equipment
-

@@ -11,4 +11,3 @@ equip={2}
 given_pt=1/0
 given_ability=wither
 timing=equipment
-

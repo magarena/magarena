@@ -11,4 +11,3 @@ cost={3}{U}
 pt=3/2
 ability=flying
 timing=main
-

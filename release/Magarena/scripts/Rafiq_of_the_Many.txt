@@ -11,5 +11,4 @@ cost={1}{G}{W}{U}
 pt=3/3
 ability=exalted
 timing=fmain
-
 requires_card_code

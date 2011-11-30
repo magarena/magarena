@@ -11,4 +11,3 @@ cost={B/G}{B/G}{B/G}
 pt=3/2
 ability=swampwalk,forestwalk
 timing=main
-

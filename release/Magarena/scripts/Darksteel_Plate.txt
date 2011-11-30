@@ -11,4 +11,3 @@ equip={2}
 ability=indestructible
 given_ability=indestructible
 timing=equipment
-

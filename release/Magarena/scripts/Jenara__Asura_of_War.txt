@@ -11,5 +11,4 @@ cost={G}{W}{U}
 pt=3/3
 ability=flying
 timing=fmain
-
 requires_card_code

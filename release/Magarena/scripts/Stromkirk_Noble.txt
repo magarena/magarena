@@ -11,5 +11,4 @@ cost={R}
 pt=1/1
 ability=can't be blocked by humans
 timing=main
-
 requires_card_code

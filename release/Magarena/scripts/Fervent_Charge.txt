@@ -8,5 +8,4 @@ color=wbr
 converted=4
 cost={1}{W}{B}{R}
 timing=enchantment
-
 requires_card_code

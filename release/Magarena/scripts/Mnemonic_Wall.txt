@@ -11,5 +11,4 @@ cost={4}{U}
 pt=0/4
 ability=defender
 timing=main
-
 requires_card_code

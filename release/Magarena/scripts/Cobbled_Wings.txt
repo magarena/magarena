@@ -10,4 +10,3 @@ cost={2}
 equip={1}
 given_ability=flying
 timing=equipment
-

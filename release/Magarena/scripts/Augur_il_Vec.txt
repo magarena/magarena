@@ -11,5 +11,4 @@ cost={1}{W}
 pt=1/3
 ability=shadow
 timing=main
-
 requires_card_code

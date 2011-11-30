@@ -11,4 +11,3 @@ cost={2}{U/B}{U/B}
 pt=3/3
 ability=can't be blocked by green creatures
 timing=main
-

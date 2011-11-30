@@ -10,5 +10,4 @@ cost={3}
 equip={5}
 given_pt=2/1
 timing=enchantment
-
 requires_card_code

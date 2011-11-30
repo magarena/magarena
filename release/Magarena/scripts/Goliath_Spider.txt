@@ -11,4 +11,3 @@ converted=8
 cost={6}{G}{G}
 pt=7/6
 timing=main
-

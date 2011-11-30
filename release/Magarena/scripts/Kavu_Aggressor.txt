@@ -11,5 +11,4 @@ cost={2}{R}
 pt=3/2
 ability=can't block
 timing=main
-
 requires_card_code

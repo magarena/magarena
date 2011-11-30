@@ -11,4 +11,3 @@ cost={1}{W}{W}
 pt=2/2
 ability=double strike,protection from black,protection from green
 timing=main
-

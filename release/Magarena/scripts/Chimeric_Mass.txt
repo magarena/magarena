@@ -7,5 +7,4 @@ type=Artifact
 converted=0
 cost={X}
 timing=artifact
-
 requires_card_code

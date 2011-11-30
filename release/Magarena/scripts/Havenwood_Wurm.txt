@@ -11,4 +11,3 @@ converted=7
 cost={6}{G}
 pt=5/6
 timing=flash
-

@@ -11,4 +11,3 @@ equip={3}
 given_pt=1/2
 given_ability=hexproof
 timing=equipment
-

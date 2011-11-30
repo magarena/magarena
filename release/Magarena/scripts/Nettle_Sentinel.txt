@@ -11,5 +11,4 @@ cost={G}
 pt=2/2
 ability=doesn't untap during untap step
 timing=main
-
 requires_card_code

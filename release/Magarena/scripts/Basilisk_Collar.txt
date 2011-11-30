@@ -10,4 +10,3 @@ cost={1}
 equip={2}
 given_ability=deathtouch,lifelink
 timing=equipment
-

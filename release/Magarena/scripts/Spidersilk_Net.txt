@@ -11,4 +11,3 @@ equip={2}
 given_pt=0/2
 given_ability=reach
 timing=equipment
-

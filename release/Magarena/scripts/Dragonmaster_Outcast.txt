@@ -10,5 +10,4 @@ converted=1
 cost={R}
 pt=1/1
 timing=smain
-
 requires_card_code

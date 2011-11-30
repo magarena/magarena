@@ -12,5 +12,4 @@ pt=3/2
 ability=infect
 static=player
 timing=main
-
 requires_card_code

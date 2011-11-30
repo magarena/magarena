@@ -11,5 +11,4 @@ cost={4}{W}{W}
 pt=5/7
 ability=flying
 timing=main
-
 requires_card_code

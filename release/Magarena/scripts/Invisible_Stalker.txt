@@ -11,4 +11,3 @@ cost={1}{U}
 pt=1/1
 ability=hexproof,unblockable
 timing=main
-

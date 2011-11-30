@@ -9,5 +9,4 @@ converted=2
 cost={2}
 equip={2}
 timing=equipment
-
 requires_card_code

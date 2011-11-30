@@ -9,4 +9,3 @@ converted=0
 cost={0}
 pt=4/4
 ability=flying
-

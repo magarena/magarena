@@ -9,4 +9,3 @@ subtype=Forest
 mana=g4
 ability=tap add mana {G}
 timing=land
-

@@ -12,5 +12,4 @@ pt=3/3
 ability=flying,wither
 static=opponent
 timing=fmain
-
 requires_card_code

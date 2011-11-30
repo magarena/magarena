@@ -11,4 +11,3 @@ cost={3}{W}
 pt=3/2
 ability=can't be blocked by black creatures,can't be blocked by red creatures
 timing=main
-

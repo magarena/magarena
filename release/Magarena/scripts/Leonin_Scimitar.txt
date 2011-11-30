@@ -10,4 +10,3 @@ cost={1}
 equip={1}
 given_pt=1/1
 timing=equipment
-

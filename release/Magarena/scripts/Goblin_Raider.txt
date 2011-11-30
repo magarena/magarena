@@ -11,4 +11,3 @@ converted=2
 cost={1}{R}
 pt=2/2
 timing=fmain
-

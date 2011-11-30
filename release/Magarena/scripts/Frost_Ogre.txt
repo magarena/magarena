@@ -10,4 +10,3 @@ converted=5
 cost={3}{R}{R}
 pt=5/3
 timing=main
-

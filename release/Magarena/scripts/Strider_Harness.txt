@@ -11,4 +11,3 @@ equip={1}
 given_pt=1/1
 given_ability=haste
 timing=equipment
-

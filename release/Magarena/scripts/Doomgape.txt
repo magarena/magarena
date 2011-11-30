@@ -11,5 +11,4 @@ cost={4}{B/G}{B/G}{B/G}
 pt=10/10
 ability=trample
 timing=main
-
 requires_card_code

@@ -11,4 +11,3 @@ converted=3
 cost={R/W}{R/W}{R/W}
 pt=2/2
 timing=main
-

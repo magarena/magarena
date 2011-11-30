@@ -11,4 +11,3 @@ cost={5}{G}{G}
 pt=9/9
 ability=shroud
 timing=fmain
-

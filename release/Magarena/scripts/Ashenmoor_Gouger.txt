@@ -11,4 +11,3 @@ cost={B/R}{B/R}{B/R}
 pt=4/4
 ability=can't block
 timing=fmain
-

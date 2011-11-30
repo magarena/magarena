@@ -11,5 +11,4 @@ cost={3}{G}
 pt=0/13
 ability=defender
 timing=main
-
 requires_card_code

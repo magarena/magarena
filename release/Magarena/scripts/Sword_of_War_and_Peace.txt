@@ -11,5 +11,4 @@ equip={2}
 given_pt=2/2
 given_ability=protection from red,protection from white
 timing=equipment
-
 requires_card_code

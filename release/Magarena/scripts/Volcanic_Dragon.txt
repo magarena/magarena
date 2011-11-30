@@ -11,4 +11,3 @@ cost={4}{R}{R}
 pt=4/4
 ability=flying,haste
 timing=fmain
-

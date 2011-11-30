@@ -11,4 +11,3 @@ cost={1}{W}
 pt=1/1
 ability=protection from creatures
 timing=smain
-

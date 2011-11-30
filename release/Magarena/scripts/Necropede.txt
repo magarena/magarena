@@ -10,5 +10,4 @@ cost={2}
 pt=1/1
 ability=infect
 timing=main
-
 requires_card_code

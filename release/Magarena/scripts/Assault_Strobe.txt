@@ -8,5 +8,4 @@ color=r
 converted=1
 cost={R}
 timing=block
-
 requires_card_code

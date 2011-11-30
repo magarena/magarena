@@ -11,5 +11,4 @@ converted=3
 cost={1}{W}{B}
 given_ability=can't attack or block
 timing=tapping
-
 requires_card_code

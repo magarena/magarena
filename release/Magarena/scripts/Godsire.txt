@@ -11,5 +11,4 @@ cost={4}{R}{G}{G}{W}
 pt=8/8
 ability=vigilance
 timing=main
-
 requires_card_code

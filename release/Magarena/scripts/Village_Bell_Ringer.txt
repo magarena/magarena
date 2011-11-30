@@ -11,5 +11,4 @@ cost={2}{W}
 pt=1/4
 ability=flash
 timing=main
-
 requires_card_code

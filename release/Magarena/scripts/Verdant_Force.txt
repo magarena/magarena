@@ -10,5 +10,4 @@ converted=8
 cost={5}{G}{G}{G}
 pt=7/7
 timing=main
-
 requires_card_code

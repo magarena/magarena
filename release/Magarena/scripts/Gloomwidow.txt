@@ -11,4 +11,3 @@ cost={2}{G}
 pt=3/3
 ability=reach,can't block creatures without flying
 timing=main
-

@@ -12,4 +12,3 @@ cost={1}{G}{U}
 pt=1/1
 ability=flash,flying,deathtouch
 timing=flash
-

@@ -10,5 +10,4 @@ converted=4
 cost={3}{U}
 given_ability=unblockable,shroud
 timing=aura
-
 requires_card_code

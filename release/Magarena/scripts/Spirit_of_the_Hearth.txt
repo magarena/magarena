@@ -11,4 +11,3 @@ cost={4}{W}{W}
 pt=4/5
 ability=flying
 timing=fmain
-

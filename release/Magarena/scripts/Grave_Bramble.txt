@@ -11,4 +11,3 @@ cost={1}{G}{G}
 pt=3/4
 ability=defender,protection from Zombies
 timing=main
-

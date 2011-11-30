@@ -10,5 +10,4 @@ converted=3
 cost={1}{G}{U}
 pt=5/6
 timing=smain
-
 requires_card_code

@@ -11,5 +11,4 @@ pt=2/3
 ability=defender
 static=opponent
 timing=artifact
-
 requires_card_code

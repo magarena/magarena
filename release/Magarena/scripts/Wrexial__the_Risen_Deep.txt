@@ -11,5 +11,4 @@ cost={3}{U}{U}{B}
 pt=5/8
 ability=islandwalk,swampwalk
 timing=smain
-
 requires_card_code

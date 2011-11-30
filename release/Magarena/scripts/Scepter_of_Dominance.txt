@@ -8,5 +8,4 @@ color=w
 converted=3
 cost={1}{W}{W}
 timing=artifact
-
 requires_card_code

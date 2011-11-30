@@ -11,4 +11,3 @@ cost={2}{R}
 pt=3/3
 ability=attacks each turn if able
 timing=main
-

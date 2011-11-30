@@ -11,4 +11,3 @@ cost={2}{U}
 pt=3/1
 ability=flying,can't block creatures without flying
 timing=main
-

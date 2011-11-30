@@ -11,5 +11,4 @@ cost={3}{R}{G}
 pt=4/4
 ability=trample
 timing=fmain
-
 requires_card_code

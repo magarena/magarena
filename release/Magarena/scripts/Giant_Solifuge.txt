@@ -11,4 +11,3 @@ converted=4
 cost={2}{R/G}{R/G}
 pt=4/1
 timing=fmain
-

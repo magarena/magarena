@@ -11,4 +11,3 @@ cost={5}{W}{W}{W}
 pt=6/6
 ability=flying,first strike,vigilance,trample,haste,protection from black,protection from red
 timing=fmain
-
