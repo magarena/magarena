@@ -18,12 +18,14 @@ public class Woodland_Sleuth {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+			return (game.getCreatureDiedThisTurn()) ?
+				new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player,permanent},
                     this,
-                    "Return a creature card at random from your graveyard to your hand.");
+                    "Return a creature card at random from your graveyard to your hand.") :
+                MagicEvent.NONE;
 		}
 		@Override
 		public void executeEvent(
