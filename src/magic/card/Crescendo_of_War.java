@@ -14,23 +14,27 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Crescendo_of_War {
 	
-	private static int amount = 0;
 	
 	public static final MagicStatic S1 = new MagicStatic(
 	        MagicLayer.ModPT, 
 		    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+
+	    private int amount = 0;
+
+        @Override
+        public void setSource(final MagicPermanent source) {
+            amount = source.getCounters(MagicCounterType.Charge);
+        }
+
 		@Override
 		public void getPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-					pt.add(amount,0);
+            pt.add(amount,0);
 		}
 		@Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			if (source.hasCounters()) {
-        		amount = source.getCounters(MagicCounterType.Charge);
-        	}
             return target.isBlocking();
         }
     };
@@ -38,18 +42,23 @@ public class Crescendo_of_War {
 	public static final MagicStatic S2 = new MagicStatic(
 	        MagicLayer.ModPT, 
 		    MagicTargetFilter.TARGET_CREATURE) {
-		@Override
+	    
+        private int amount = 0;
+
+        @Override
+        public void setSource(final MagicPermanent source) {
+            amount = source.getCounters(MagicCounterType.Charge);
+        }
+		
+        @Override
 		public void getPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-					pt.add(amount,0);
+            pt.add(amount,0);
 		}
 		@Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			if (source.hasCounters()) {
-        		amount = source.getCounters(MagicCounterType.Charge);
-        	}
             return target.isAttacking();
         }
     };
