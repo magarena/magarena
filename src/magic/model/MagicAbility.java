@@ -460,7 +460,7 @@ public enum MagicAbility {
     Echo("echo",-20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             if (arg.isEmpty()) {
-                card.add(MagicEchoTrigger.create());
+            	card.add(new MagicEchoTrigger(card.getCost()));
             } else {
 	            card.add(new MagicEchoTrigger(MagicManaCost.createCost(arg)));
             }
