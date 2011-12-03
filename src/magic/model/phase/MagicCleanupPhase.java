@@ -24,10 +24,10 @@ public class MagicCleanupPhase extends MagicPhase {
 	
 	private static void cleanup(final MagicGame game) {
 		game.doAction(new MagicCleanupTurnTriggersAction());
-		game.doAction(new MagicCleanupTurnStaticsAction());
 		for (final MagicPlayer player : game.getPlayers()) {
 			game.doAction(new MagicCleanupPlayerAction(player));
 		}
+		game.doAction(new MagicCleanupTurnStaticsAction());
         game.checkState();
 	}
 	
