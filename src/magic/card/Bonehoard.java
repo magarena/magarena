@@ -12,21 +12,18 @@ public class Bonehoard {
         MagicLayer.ModPT, 
 	    MagicTargetFilter.TARGET_CREATURE) {
     	
-    	private int amount = 0;
-    	
         @Override
         public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final int amount = game.filterTargets(
+						game.getPlayer(0),
+						MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
             pt.add(amount,amount);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-        	if (target == source.getEquippedCreature()) {
-        		amount = game.filterTargets(
-						game.getPlayer(0),
-						MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
-        		return true;
-        	}
-        	return false;
+            return (source.isEquipment()) ? 
+                source.getEquippedCreature() == target :
+                source.getEnchantedCreature() == target;
         }
     };
 }
