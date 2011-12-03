@@ -261,5 +261,6 @@ cards/magicdraftsim-rating: cards/card-ratings
 cards/current-magic-excel.txt:
 	wget http://www.magictraders.com/pricelists/current-magic-excel.txt -O $@
 
-pull-beholder:
-	hg pull https://code.google.com/r/beholder1-magarena/
+up:
+	hg pull -u
+	cd wiki; hg pull -u; cd ..
