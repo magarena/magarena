@@ -33,7 +33,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
-import java.net.Proxy.Type;
 
 import net.miginfocom.swing.MigLayout;
 
@@ -139,7 +138,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 	}
 	
 	private void updateProxy() {
-		final boolean use=proxyComboBox.getSelectedItem()!=Type.DIRECT;
+		final boolean use=proxyComboBox.getSelectedItem()!=Proxy.Type.DIRECT;
 		addressTextField.setEnabled(use);
 		portTextField.setEnabled(use);
 		if (use) {
@@ -234,8 +233,8 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 	public void actionPerformed(final ActionEvent event) {
 		final Object source=event.getSource();
 		if (source==okButton) {
-            final Proxy.Type proxyType=(Proxy.Type)proxyComboBox.getSelectedItem();
-            if (proxyType==Type.DIRECT) {
+            final Proxy.Type proxyType=(Proxy.Type)proxyComboBox.getSelectedItem();            
+            if (proxyType==Proxy.Type.DIRECT) {
                 proxy=Proxy.NO_PROXY;
             } else {
                 final String address=addressTextField.getText();
