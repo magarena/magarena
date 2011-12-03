@@ -58,6 +58,8 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
         return isUntilEOT;
     }
 
+    public void setSource(final MagicPermanent source) {}
+
     public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
         if (filter == MagicTargetFilter.SELF) {
             return source == target;
