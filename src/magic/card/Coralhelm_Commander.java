@@ -16,16 +16,13 @@ public class Coralhelm_Commander {
 			MagicLayer.ModPT, 
 			MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
 
-		private int amount = 0;
-
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.add(amount, amount);
+			pt.add(1,1);
 		}
 		@Override
 		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			amount = source.getCounters(MagicCounterType.Charge) >= 4 ? 1:0;
-			return source != target;
+			return source.getCounters(MagicCounterType.Charge) >= 4 && source != target;
 		}
 	};
 	    
@@ -50,10 +47,10 @@ public class Coralhelm_Commander {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final long flags) {
-			if (permanent.getCounters(MagicCounterType.Charge) >= 2) {
-				return flags|MagicAbility.Flying.getMask();
-			}
-			return flags;
+			final int charges = permanent.getCounters(MagicCounterType.Charge);
+			return (charges >= 2) ?
+				flags|MagicAbility.Flying.getMask():
+                flags;
 		}
     };
 }
