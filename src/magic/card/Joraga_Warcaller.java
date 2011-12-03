@@ -25,15 +25,17 @@ public class Joraga_Warcaller {
 
 		private int amount = 0;
 
+        @Override
+        public void setSource(final MagicPermanent source) {
+            amount = source.getCounters(MagicCounterType.PlusOne);
+        }
+
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.add(amount, amount);
 		}
 		@Override
 		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			if (source.hasCounters()) {
-				amount = source.getCounters(MagicCounterType.PlusOne);
-			}
 			return source != target;
 		}
 	};
