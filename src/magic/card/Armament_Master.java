@@ -13,6 +13,11 @@ public class Armament_Master {
 	    MagicTargetFilter.TARGET_KOR_YOU_CONTROL) {
     	
     	private int amount = 0;
+
+        @Override
+        public void setSource(final MagicPermanent source) {
+            amount = 2 * source.getEquipmentPermanents().size();
+        }
     	
     	@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -20,9 +25,6 @@ public class Armament_Master {
 		}
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-        	if (source.isEquipped()) {
-        		amount = 2 * source.getEquipmentPermanents().size();
-        	}
             return source != target;
         }
     };
