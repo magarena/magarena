@@ -22,6 +22,17 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
         this.targetChoice = targetChoice;
     }
     
+    private final String genDescription(final MagicTargetChoice targetChoice) {
+    	String description = "creature or player$.";
+    	if (targetChoice == MagicTargetChoice.TARGET_CREATURE) {
+    		description = "creature$.";
+    	}
+    	else if (targetChoice == MagicTargetChoice.NEG_TARGET_PLAYER) {
+    		description = "player$.";
+    	}
+    	return description;
+	}
+    
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
         return new MagicEvent(
@@ -31,7 +42,8 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
                 new MagicDamageTargetPicker(n),
                 MagicEvent.NO_DATA,
                 this,
-                permanent + " deals " + n + " damage to target creature or player$.");
+                permanent + " deals " + n + " damage to target " +
+                		genDescription(targetChoice));
     }
     @Override
     public void executeEvent(
