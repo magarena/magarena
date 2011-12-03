@@ -46,6 +46,7 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
 	}
 	
 	public MagicStatic getStatic() {
+        mstatic.setSource(permanent);
 		return mstatic;
 	}
 	
