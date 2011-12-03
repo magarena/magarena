@@ -31,22 +31,25 @@ public class Kabira_Vindicator {
 
     	private int amount = 0;
 
+        @Override
+        public void setSource(final MagicPermanent source) {
+            final int charges = source.getCounters(MagicCounterType.Charge);
+            if (charges >= 5) {
+                amount = 2;
+            } else if (charges >= 2) {
+                amount = 1;
+            } else {
+                amount = 0;
+            }
+        }
+
     	@Override
     	public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
     		pt.add(amount, amount);
     	}
+
     	@Override
     	public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		if (source.hasCounters()) {
-    			final int charges = source.getCounters(MagicCounterType.Charge);
-    			if (charges >= 5) {
-    				amount = 2;
-    			} else if (charges >= 2) {
-    				amount = 1;
-    			} else {
-    				amount = 0;
-    			}
-    		}
     		return source != target;
     	}
     };
