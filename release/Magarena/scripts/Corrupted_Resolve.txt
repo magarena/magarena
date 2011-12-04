@@ -1,0 +1,11 @@
+>Corrupted Resolve
+url=http://magiccards.info/nph/en/32.html
+image=http://magiccards.info/scans/en/nph/32.jpg
+value=3
+rarity=U
+type=Instant
+color=u
+converted=2
+cost={1}{U}
+timing=counter
+requires_card_code
