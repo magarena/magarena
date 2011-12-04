@@ -19,8 +19,7 @@ public class MagicCubeDefinition extends HashSet<String> {
 	}
 	
 	public String getName() {
-		
-		return name;
+		return name + " (" + size() + " cards)";
 	}
 	
 	@Override
