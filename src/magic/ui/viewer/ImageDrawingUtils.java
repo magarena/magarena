@@ -4,7 +4,9 @@ import magic.data.IconImages;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
+import magic.model.MagicPermanent;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.ImageIcon;
@@ -86,6 +88,34 @@ public class ImageDrawingUtils {
 			MagicAbility.Infect.hasAbility(abilityFlags)) {
 			g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,observer);
 			ax+=16;								
+		}
+		return ax;
+	}
+	
+	public static int drawCountersInfo(
+            final Graphics g,
+            final ImageObserver observer,
+            final MagicPermanent permanent,
+            int ax,
+            final int ay) {
+		for (final MagicCounterType counterType : MagicCounterType.values()) {
+			final int amount = permanent.getCounters(counterType);
+			if (amount > 0) {
+				if (counterType == MagicCounterType.Charge) {
+					g.drawImage(IconImages.CHARGE.getImage(),ax,ay,observer);
+					g.setColor(Color.DARK_GRAY);
+					g.drawString(Integer.toString(amount),ax+5,ay+14);
+					ax+=16;
+				}
+				if (counterType == MagicCounterType.Feather) {
+					g.drawImage(IconImages.FEATHER.getImage(),ax,ay,observer);
+					ax+=16;
+				}
+				if (counterType == MagicCounterType.Gold) {
+					g.drawImage(IconImages.GOLDCOUNTER.getImage(),ax,ay,observer);
+					ax+=16;
+				}
+			}
 		}
 		return ax;
 	}

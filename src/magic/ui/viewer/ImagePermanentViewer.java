@@ -196,13 +196,10 @@ public class ImagePermanentViewer extends JPanel {
 
 			int ax=x1+1;
 			final int ay=y2-17;
-			// Charge counters
-			if (linkedInfo.chargeCounters>0) {
-				g.drawImage(IconImages.CHARGE.getImage(),ax,ay,this);
-				g.setColor(Color.DARK_GRAY);
-				g.drawString(String.valueOf(linkedInfo.chargeCounters),ax+5,ay+14);
-				ax+=16;
-			}			
+			// Counters
+			if (permanentInfo.permanent.hasCounters()) {
+				ax=ImageDrawingUtils.drawCountersInfo(g,this,permanentInfo.permanent,ax,ay);
+			}
 			if (permanentInfo.creature) {
 				// Common combat ability icons.
 				final long abilityFlags=linkedInfo.abilityFlags;
