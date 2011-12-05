@@ -380,7 +380,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 			enableMenuItem(RESET_DUEL_ITEM,true);
 			enableMenuItem(NEW_DECK_ITEM,duel.isEditable());
 			enableMenuItem(LOAD_DECK_ITEM,duel.isEditable());
-			enableMenuItem(SAVE_DECK_ITEM,duel.isEditable());
+			enableMenuItem(SAVE_DECK_ITEM,true);
 			enableMenuItem(SWAP_DECKS_ITEM,duel.isEditable());
 			enableMenuItem(PLAY_GAME_ITEM,!duel.isFinished());
             if (System.getProperty("selfMode") != null) {
