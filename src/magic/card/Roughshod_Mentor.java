@@ -15,10 +15,6 @@ public class Roughshod_Mentor {
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.Trample.getMask();
         }
-        @Override
-    	public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		return source != target;
-    	}
     };
     
 }
