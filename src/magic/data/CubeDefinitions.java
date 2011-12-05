@@ -83,7 +83,7 @@ public class CubeDefinitions {
 		
 		System.err.println(cubeDefinitions.size()+" cube definitions");
 		for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
-			System.err.println("Cube "+cubeDefinition.getName()+" : "+cubeDefinition.size()+" cards");
+			System.err.println("Cube "+cubeDefinition.getName());
 		}
 	}
 }
