@@ -38,17 +38,24 @@ public class Reiterate {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+			final boolean hasTarget = event.processTargetCardOnStack(
+					game,
+					choiceResults,
+					0,
+					new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
 				    game.doAction(new MagicCopyCardOnStackAction((MagicPlayer)data[1],targetSpell));
+				    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+						game.doAction(new MagicMoveCardAction(
+								cardOnStack.getCard(),
+								MagicLocationType.Stack,
+								MagicLocationType.OwnersHand));
+					} else {
+						game.doAction(new MagicMoveCardAction(cardOnStack));
+					}
                 }
 			});
-			if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-				game.doAction(new MagicMoveCardAction(
-						cardOnStack.getCard(),
-						MagicLocationType.Stack,
-						MagicLocationType.OwnersHand));
-			} else {
+			if (!hasTarget) {
 				game.doAction(new MagicMoveCardAction(cardOnStack));
 			}
 		}

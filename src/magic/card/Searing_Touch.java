@@ -41,18 +41,29 @@ public class Searing_Touch {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+			final boolean hasTarget = event.processTarget(
+					game,
+					choiceResults,
+					0,
+					new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),target,1,false);
+                    final MagicDamage damage = new MagicDamage(
+                    		cardOnStack.getCard(),
+                    		target,
+                    		1,
+                    		false);
                     game.doAction(new MagicDealDamageAction(damage));
+                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+        				game.doAction(new MagicMoveCardAction(
+        						cardOnStack.getCard(),
+        						MagicLocationType.Stack,
+        						MagicLocationType.OwnersHand));
+        			} else {
+        				game.doAction(new MagicMoveCardAction(cardOnStack));
+        			}
                 }
 			});
-			if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-				game.doAction(new MagicMoveCardAction(
-						cardOnStack.getCard(),
-						MagicLocationType.Stack,
-						MagicLocationType.OwnersHand));
-			} else {
+			if (!hasTarget) {
 				game.doAction(new MagicMoveCardAction(cardOnStack));
 			}
 		}

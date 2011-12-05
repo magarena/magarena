@@ -40,18 +40,25 @@ public class Disturbed_Burial {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+			final boolean hasTarget = event.processTargetCard(
+					game,
+					choiceResults,
+					0,
+					new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+        				game.doAction(new MagicMoveCardAction(
+        						cardOnStack.getCard(),
+        						MagicLocationType.Stack,
+        						MagicLocationType.OwnersHand));
+        			} else {
+        				game.doAction(new MagicMoveCardAction(cardOnStack));
+        			}
                 }
 			});
-			if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-				game.doAction(new MagicMoveCardAction(
-						cardOnStack.getCard(),
-						MagicLocationType.Stack,
-						MagicLocationType.OwnersHand));
-			} else {
+			if (!hasTarget) {
 				game.doAction(new MagicMoveCardAction(cardOnStack));
 			}
 		}

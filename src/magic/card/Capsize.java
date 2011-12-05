@@ -38,17 +38,24 @@ public class Capsize {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+			final boolean hasTarget = event.processTargetPermanent(
+					game,
+					choiceResults,
+					0,
+					new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+        				game.doAction(new MagicMoveCardAction(
+        						cardOnStack.getCard(),
+        						MagicLocationType.Stack,
+        						MagicLocationType.OwnersHand));
+        			} else {
+        				game.doAction(new MagicMoveCardAction(cardOnStack));
+        			}
                 }
 			});
-            if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-				game.doAction(new MagicMoveCardAction(
-						cardOnStack.getCard(),
-						MagicLocationType.Stack,
-						MagicLocationType.OwnersHand));
-			} else {
+			if (!hasTarget) {
 				game.doAction(new MagicMoveCardAction(cardOnStack));
 			}
 		}
