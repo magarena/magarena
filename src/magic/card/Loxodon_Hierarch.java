@@ -6,7 +6,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
@@ -16,9 +15,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-
-
 import java.util.Collection;
 
 public class Loxodon_Hierarch {

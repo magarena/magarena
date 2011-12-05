@@ -15,7 +15,6 @@ import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.trigger.MagicFlankingTrigger;
 
 public class Zhalfirin_Commander {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(

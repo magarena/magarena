@@ -8,7 +8,6 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Bone_Shredder {

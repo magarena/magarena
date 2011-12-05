@@ -1,22 +1,9 @@
 package magic.card;
 
-import magic.model.MagicDamage;
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicUntapAction;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicTapEvent;
-import magic.model.event.MagicTiming;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Goblin_Sharpshooter {

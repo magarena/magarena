@@ -10,7 +10,6 @@ import magic.model.action.MagicReanimateAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Karmic_Guide {

@@ -1,7 +1,6 @@
 package magic.card;
 
 import magic.model.MagicCard;
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;

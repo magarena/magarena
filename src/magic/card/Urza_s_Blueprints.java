@@ -12,7 +12,6 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicEchoTrigger;
 
 public class Urza_s_Blueprints {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(

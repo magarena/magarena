@@ -15,7 +15,6 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.trigger.MagicEchoTrigger;
 
 public class Extruder {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(

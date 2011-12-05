@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicManaCost;
 import magic.model.MagicPowerToughness;
 import magic.model.target.MagicTargetFilter;
 import magic.model.mstatic.MagicCDA;

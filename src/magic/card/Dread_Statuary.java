@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
-import magic.model.MagicManaType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
@@ -13,14 +12,12 @@ import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
-import java.util.Arrays;
 import java.util.EnumSet;
 
 public class Dread_Statuary {

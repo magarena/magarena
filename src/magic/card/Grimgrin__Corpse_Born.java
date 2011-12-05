@@ -20,7 +20,6 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
-import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Grimgrin__Corpse_Born {

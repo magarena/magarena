@@ -1,20 +1,16 @@
 package magic.card;
 
-import magic.model.MagicCardList;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Oblivion_Ring {
 	public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {

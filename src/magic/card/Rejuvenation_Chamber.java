@@ -1,6 +1,5 @@
 package magic.card;
 
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;

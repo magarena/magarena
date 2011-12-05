@@ -8,7 +8,6 @@ import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTapTargetPicker;
-import magic.model.trigger.MagicFlankingTrigger;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Sidar_Jabari {

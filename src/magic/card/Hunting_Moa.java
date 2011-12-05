@@ -10,7 +10,6 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
-import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;

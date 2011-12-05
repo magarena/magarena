@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;

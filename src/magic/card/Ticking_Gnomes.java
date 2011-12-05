@@ -16,7 +16,6 @@ import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicEchoTrigger;
 
 public class Ticking_Gnomes {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(

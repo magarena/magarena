@@ -14,7 +14,6 @@ import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicWeakenCreatureActivation;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Serrated_Arrows {

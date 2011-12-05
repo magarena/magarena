@@ -10,7 +10,6 @@ import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTapEvent;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 
 public class Gemstone_Mine {
 	private static final MagicCondition CONDITIONS[] = new MagicCondition[]{
