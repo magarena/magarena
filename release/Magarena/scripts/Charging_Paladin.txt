@@ -1,0 +1,13 @@
+>Charging Paladin
+url=http://magiccards.info/dvd/en/4.html
+image=http://magiccards.info/scans/en/dvd/4.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=attacks pump +0/+3
+timing=main

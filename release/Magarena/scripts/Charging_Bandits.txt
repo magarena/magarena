@@ -1,0 +1,13 @@
+>Charging Bandits
+url=http://magiccards.info/po/en/6.html
+image=http://magiccards.info/scans/en/po/6.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Rogue
+color=b
+converted=5
+cost={4}{B}
+pt=3/3
+ability=attacks pump +2/+0
+timing=main
