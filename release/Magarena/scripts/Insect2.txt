@@ -1,0 +1,11 @@
+>Insect
+token=Insect2
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=42433&amp;stc=1&amp;d=1173951402
+value=3
+type=Creature
+subtype=Insect
+color=g
+converted=0
+cost={0}
+pt=6/1
+ability=shroud
