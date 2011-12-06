@@ -39,18 +39,25 @@ public class Brush_with_Death {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+			final boolean hasTarget = event.processTargetPlayer(
+					game,
+					choiceResults,
+					0,
+					new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-2));
                     game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],2));
+                    if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+        				game.doAction(new MagicMoveCardAction(
+        						cardOnStack.getCard(),
+        						MagicLocationType.Stack,
+        						MagicLocationType.OwnersHand));
+        			} else {
+        				game.doAction(new MagicMoveCardAction(cardOnStack));
+        			}
                 }
 			});
-			if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-				game.doAction(new MagicMoveCardAction(
-						cardOnStack.getCard(),
-						MagicLocationType.Stack,
-						MagicLocationType.OwnersHand));
-			} else {
+			if (!hasTarget) {
 				game.doAction(new MagicMoveCardAction(cardOnStack));
 			}
 		}

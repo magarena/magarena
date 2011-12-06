@@ -52,15 +52,18 @@ public class Corpse_Dance {
 						(MagicPlayer)data[1],
 						card,
 						MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_TURN));
-			}
-			if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
-				game.doAction(new MagicMoveCardAction(
-						cardOnStack.getCard(),
-						MagicLocationType.Stack,
-						MagicLocationType.OwnersHand));
+				if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
+					game.doAction(new MagicMoveCardAction(
+							cardOnStack.getCard(),
+							MagicLocationType.Stack,
+							MagicLocationType.OwnersHand));
+				} else {
+					game.doAction(new MagicMoveCardAction(cardOnStack));
+				}
 			} else {
 				game.doAction(new MagicMoveCardAction(cardOnStack));
 			}
+			
 		}
 	};
 }
