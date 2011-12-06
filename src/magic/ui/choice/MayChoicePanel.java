@@ -7,8 +7,11 @@ import magic.ui.viewer.GameViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 
+import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -46,21 +49,38 @@ public class MayChoicePanel extends JPanel implements ActionListener {
 		yesButton.setFocusable(false);
 		buttonPanel.add(yesButton);
 		
+		yesButton.getInputMap(2).put(KeyStroke.getKeyStroke('y'),"yes");
+		yesButton.getActionMap().put("yes",new AbstractAction() {
+			private static final long serialVersionUID = 1L;
+			public void actionPerformed(ActionEvent evt) {
+				yes = true;
+				controller.actionClicked();
+			}
+		});
+
+		
 		final JButton noButton=new JButton("No",IconImages.CANCEL);
 		noButton.setPreferredSize(BUTTON_DIMENSION);
 		noButton.addActionListener(this);
 		noButton.setFocusable(false);
 		buttonPanel.add(noButton);
+		
+		noButton.getInputMap(2).put(KeyStroke.getKeyStroke('n'),"no");
+		noButton.getActionMap().put("no",new AbstractAction() {
+			private static final long serialVersionUID = 1L;
+			public void actionPerformed(ActionEvent evt) {
+				yes = false;
+				controller.actionClicked();
+			}
+		});
 	}
 	
-	public boolean isYesClicked() {
-		
+	public boolean isYesClicked() {	
 		return yes;
 	}
 
 	@Override
-	public void actionPerformed(final ActionEvent event) {
-		
+	public void actionPerformed(final ActionEvent event) {	
 		yes=event.getSource()==yesButton;
 		controller.actionClicked();
 	}
