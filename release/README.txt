@@ -8,13 +8,14 @@ Requirements: Java Runtime 6 (http://java.com) must be installed on your compute
 Starting Magarena:
   On Windows, double click on Magarena.exe
   On Linux, execute ./Magarena.sh. 
-  On Mac, run Magarena.command
+  On Mac, double click the Magarena icon
 
 Magarena supports the following keyboard shortcuts :
   Space   or Right key : action button
   Escape  or Left key  : undo button
   F1      or M key     : show or hide game messages
-  Enter key            : switch between graphical and text mode
+  Y key                : yes button
+  N key                : no button
 
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
