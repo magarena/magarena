@@ -77,72 +77,57 @@ public class GeneralConfig {
 	private boolean sound=DEFAULT_SOUND;
 	private boolean confirmExit = DEFAULT_CONFIRM_EXIT;
 	
-	private GeneralConfig() {
-		
-	}
+	private GeneralConfig() {}
 	
 	public int getLeft() {
-
 		return left;
 	}
 
 	public void setLeft(final int left) {
-
 		this.left=left;
 	}
 
 	public int getTop() {
-
 		return top;
 	}
 
 	public void setTop(final int top) {
-
 		this.top=top;
 	}
 
 	public int getWidth() {
-		
 		return width;
 	}
 
 	public void setWidth(final int width) {
-		
 		this.width=width;
 	}
 
 	public int getHeight() {
-		
 		return height;
 	}
 
 	public void setHeight(final int height) {
-		
 		this.height=height;
 	}
 
 	public boolean isMaximized() {
-		
 		return maximized;
 	}
 
 	public void setMaximized(final boolean maximized) {
-		
 		this.maximized=maximized;
 	}
 	
 	public String getTheme() {
-		
 		return theme;
 	}
 	
 	public void setTheme(final String theme) {
-		
 		this.theme=theme;
 	}
 	
 	public String getAvatar() {
-		
 		return avatar;
 	}
 	
@@ -194,43 +179,35 @@ public class GeneralConfig {
 		this.alwaysPass=alwaysPass;
 	}
 	
-	public boolean getSmartTarget() {
-		
+	public boolean getSmartTarget() {	
 		return smartTarget;
 	}
 	
 	public void setSmartTarget(final boolean smartTarget) {
-		
 		this.smartTarget=smartTarget;
 	}
 
 	public int getDifficulty() {
-		
 		return difficulty;
 	}
 		
 	public void setDifficulty(final int difficulty) {
-		
 		this.difficulty=difficulty;
 	}
 	
 	public int getExtraLife() {
-		
 		return extraLife;
 	}
 	
 	public void setExtraLife(final int extraLife) {
-		
 		this.extraLife=extraLife;
 	}
 	
 	public int getPopupDelay() {
-		
 		return popupDelay;
 	}
 	
 	public void setPopupDelay(final int popupDelay) {
-		
 		this.popupDelay=popupDelay;
 	}
 	
@@ -243,42 +220,34 @@ public class GeneralConfig {
 	}
 	
 	public int getStrengthDifficulty() {
-		
 		return strengthDifficulty;
 	}
 	
 	public void setStrengthDifficulty(final int strengthDifficulty) {
-		
 		this.strengthDifficulty=strengthDifficulty;
 	}
 	
 	public int getStrengthGames() {
-		
 		return strengthGames;
 	}
 	
 	public void setStrengthGames(final int strengthGames) {
-
 		this.strengthGames=strengthGames;
 	}
 	
 	public boolean isHighQuality() {
-		
 		return highQuality;
 	}
 	
 	public void setHighQuality(final boolean highQuality) {
-		
 		this.highQuality=highQuality;
 	}
 	
 	public boolean isSound() {
-		
 		return sound;
 	}
 	
 	public void setSound(final boolean sound) {
-		
 		this.sound=sound;
 	}
 	
@@ -291,7 +260,6 @@ public class GeneralConfig {
 	}
 	
 	private void load(final Properties properties) {
-	
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
 		top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
 		width=Integer.parseInt(properties.getProperty(WIDTH,""+DEFAULT_WIDTH));

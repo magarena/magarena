@@ -93,7 +93,8 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		avatarLabel.setBounds(X,Y,W,H);
 		avatarLabel.setIcon(IconImages.AVATAR);
 		mainPanel.add(avatarLabel);
-		final ComboBoxModel avatarModel=new DefaultComboBoxModel(AvatarImages.getInstance().getNames());
+		final ComboBoxModel avatarModel =
+				new DefaultComboBoxModel(AvatarImages.getInstance().getNames());
 		avatarComboBox=new JComboBox(avatarModel);
 		avatarComboBox.setFocusable(false);
 		avatarComboBox.setBounds(X2,Y,W2,H);
@@ -113,48 +114,63 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		mainPanel.add(highlightComboBox);
 		
 		Y += 35;
-		confirmExitCheckBox=new JCheckBox("Show confirmation dialog on exit",config.isConfirmExit());
+		confirmExitCheckBox = new JCheckBox("Show confirmation dialog on exit",
+				config.isConfirmExit());
 		confirmExitCheckBox.setBounds(X3,Y,W3,H3);
 		confirmExitCheckBox.setFocusable(false);
 		mainPanel.add(confirmExitCheckBox);
 		
         Y += 30;
-		soundCheckBox=new JCheckBox("Enable sound effects",config.isSound());
+		soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
 		soundCheckBox.setBounds(X3,Y,W3,H3);
 		soundCheckBox.setFocusable(false);
 		mainPanel.add(soundCheckBox);
 	
         Y += 30;
-		highQualityCheckBox=new JCheckBox("Show card images in original size",config.isHighQuality());
+		highQualityCheckBox = new JCheckBox("Show card images in original size",
+				config.isHighQuality());
 		highQualityCheckBox.setBounds(X3,Y,W3,H3);
 		highQualityCheckBox.setFocusable(false);
 		mainPanel.add(highQualityCheckBox);
 		
         Y += 30;
-		skipSingleCheckBox=new JCheckBox("Skip single option choices when appropriate",config.getSkipSingle());
+		skipSingleCheckBox = new JCheckBox("Skip single option choices when appropriate",
+				config.getSkipSingle());
 		skipSingleCheckBox.setBounds(X3,Y,W3,H3);
 		skipSingleCheckBox.setFocusable(false);
 		mainPanel.add(skipSingleCheckBox);
 
         Y += 30;
-		alwaysPassCheckBox=new JCheckBox("Always pass during draw and begin of combat step",config.getAlwaysPass());
+		alwaysPassCheckBox = new JCheckBox("Always pass during draw and begin of combat step",
+				config.getAlwaysPass());
 		alwaysPassCheckBox.setBounds(X3,Y,W3,H3);
 		alwaysPassCheckBox.setFocusable(false);
 		mainPanel.add(alwaysPassCheckBox);
 	
         Y += 30;
-		smartTargetCheckBox=new JCheckBox("Remove unusual target choices",config.getSmartTarget());
+		smartTargetCheckBox=new JCheckBox("Remove unusual target choices",
+				config.getSmartTarget());
 		smartTargetCheckBox.setBounds(X3,Y,W3,H3);
 		smartTargetCheckBox.setFocusable(false);
 		mainPanel.add(smartTargetCheckBox);
 				
         Y += 30;
-		popupDelaySlider=new SliderPanel("Popup",IconImages.DELAY,0,500,50,config.getPopupDelay());
+		popupDelaySlider=new SliderPanel("Popup",
+				IconImages.DELAY,
+				0,
+				500,
+				50,
+				config.getPopupDelay());
 		popupDelaySlider.setBounds(50,Y,280,50);
 		mainPanel.add(popupDelaySlider);
 		
 		Y += 50;
-		messageDelaySlider = new SliderPanel("Message",IconImages.DELAY,0,3000,500,config.getMessageDelay());
+		messageDelaySlider = new SliderPanel("Message",
+				IconImages.DELAY,
+				0,
+				3000,
+				500,
+				config.getMessageDelay());
 		messageDelaySlider.setBounds(50,Y,280,50);
 		mainPanel.add(messageDelaySlider);
 		
@@ -167,7 +183,6 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 	@Override
 	public void actionPerformed(final ActionEvent event) {
-
 		final Object source=event.getSource();
 		if (source==okButton) {
 			final GeneralConfig config=GeneralConfig.getInstance();

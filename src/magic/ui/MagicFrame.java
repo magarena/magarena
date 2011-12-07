@@ -123,9 +123,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 			public void windowClosing(final WindowEvent event) {
 				if (config.isConfirmExit()) {
 					// show confirmation dialog
-					final JCheckBox checkbox = new JCheckBox("Do not show this message again.");
+					final JCheckBox checkbox =
+							new JCheckBox("Do not show this message again.");
 					checkbox.setFont(new Font("dialog", Font.PLAIN, 11));
-					final String message = "Are you sure you want to quit Magarena?\n\n\n";
+					final String message =
+							"Are you sure you want to quit Magarena?\n\n\n";
 					final Object[] params = {message, checkbox};
 					final int n = JOptionPane.showConfirmDialog(
 							contentPanel,
@@ -158,7 +160,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 
 	private void enableMenuItem(final String item,final boolean enabled) {
-		
 		if (SAVE_DUEL_ITEM.equals(item)) {
 			saveDuelItem.setEnabled(enabled);
 		} else if (RESTART_DUEL_ITEM.equals(item)) {
@@ -213,7 +214,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	private void setContent(final JComponent content) {
-
 		if (duelPanel!=null) {
 			duelPanel.haltStrengthViewer();
 			duelPanel=null;
@@ -513,10 +513,15 @@ public class MagicFrame extends JFrame implements ActionListener {
 	}
 	
 	public boolean isLegalDeckAndShowErrors(MagicDeck deck, String playerName) {
-		String brokenRulesText = MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
+		String brokenRulesText =
+				MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
 		
 		if(brokenRulesText.length() > 0) {
-			JOptionPane.showMessageDialog(this, playerName + "'s deck is illegal.\n\n" + brokenRulesText, "Illegal Deck", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(
+					this,
+					playerName + "'s deck is illegal.\n\n" + brokenRulesText,
+					"Illegal Deck",
+					JOptionPane.ERROR_MESSAGE);
 			return false;
 		}
 		
@@ -539,7 +544,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 		duel.updateDifficulty();
 		
 		final MagicPlayerDefinition players[]=duel.getPlayers();
-		if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) && isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
+		if(isLegalDeckAndShowErrors(
+				players[0].getDeck(),
+				players[0].getName()) && isLegalDeckAndShowErrors(players[1].getDeck(),
+				players[1].getName())) {
 			openGame(duel.nextGame(true));
 		}
 	}
