@@ -29,6 +29,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 	private final JComboBox themeComboBox;
 	private final JComboBox avatarComboBox;
 	private final JComboBox highlightComboBox;
+	private final JCheckBox confirmExitCheckBox;
 	private final JCheckBox soundCheckBox;
 	private final JCheckBox highQualityCheckBox;
 	private final JCheckBox skipSingleCheckBox;
@@ -43,7 +44,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 		super(frame,true);
 		this.setTitle("Preferences");
-		this.setSize(400,465);
+		this.setSize(400,500);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -111,7 +112,13 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		highlightComboBox.setSelectedItem(config.getHighlight());
 		mainPanel.add(highlightComboBox);
 		
-        Y += 35;
+		Y += 35;
+		confirmExitCheckBox=new JCheckBox("Show confirmation dialog on exit",config.isConfirmExit());
+		confirmExitCheckBox.setBounds(X3,Y,W3,H3);
+		confirmExitCheckBox.setFocusable(false);
+		mainPanel.add(confirmExitCheckBox);
+		
+        Y += 30;
 		soundCheckBox=new JCheckBox("Enable sound effects",config.isSound());
 		soundCheckBox.setBounds(X3,Y,W3,H3);
 		soundCheckBox.setFocusable(false);
@@ -167,6 +174,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 			config.setTheme((String)themeComboBox.getSelectedItem());
 			config.setAvatar((String)avatarComboBox.getSelectedItem());
 			config.setHighlight((String)highlightComboBox.getSelectedItem());
+			config.setConfirmExit(confirmExitCheckBox.isSelected());
 			config.setSound(soundCheckBox.isSelected());
 			config.setHighQuality(highQualityCheckBox.isSelected());
 			config.setSkipSingle(skipSingleCheckBox.isSelected());

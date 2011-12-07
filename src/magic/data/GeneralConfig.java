@@ -31,6 +31,7 @@ public class GeneralConfig {
 	private static final String STRENGTH_GAMES="strengthGames";
 	private static final String HIGH_QUALITY="hq";
 	private static final String SOUND="sound";
+	private static final String CONFIRM_EXIT = "confirmExit";
 
 	private static final int DEFAULT_LEFT=0;
 	private static final int DEFAULT_TOP=0;
@@ -52,6 +53,7 @@ public class GeneralConfig {
 	private static final int DEFAULT_STRENGTH_GAMES=100;
 	private static final boolean DEFAULT_HIGH_QUALITY=false;
 	private static final boolean DEFAULT_SOUND=false;
+	private static final boolean DEFAULT_CONFIRM_EXIT = true;
 
 	private int left=DEFAULT_LEFT;
 	private int top=DEFAULT_TOP;
@@ -73,6 +75,7 @@ public class GeneralConfig {
 	private int strengthGames=DEFAULT_STRENGTH_GAMES;
 	private boolean highQuality=DEFAULT_HIGH_QUALITY;
 	private boolean sound=DEFAULT_SOUND;
+	private boolean confirmExit = DEFAULT_CONFIRM_EXIT;
 	
 	private GeneralConfig() {
 		
@@ -279,6 +282,14 @@ public class GeneralConfig {
 		this.sound=sound;
 	}
 	
+	public boolean isConfirmExit() {
+		return confirmExit;
+	}
+
+	public void setConfirmExit(final boolean confirmExit) {	
+		this.confirmExit = confirmExit;
+	}
+	
 	private void load(final Properties properties) {
 	
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -301,6 +312,7 @@ public class GeneralConfig {
 		strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
 		highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
 		sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
+		confirmExit = Boolean.parseBoolean(properties.getProperty(CONFIRM_EXIT,""+DEFAULT_CONFIRM_EXIT));
 	}
 	
 	public void load() {
@@ -328,6 +340,7 @@ public class GeneralConfig {
 		properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
 		properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
 		properties.setProperty(SOUND,String.valueOf(sound));
+		properties.setProperty(CONFIRM_EXIT,String.valueOf(confirmExit));
 	}
 	
 	public void save() {

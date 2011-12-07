@@ -16,6 +16,7 @@ import magic.ui.widget.ZoneBackgroundLabel;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -24,6 +25,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
 import javax.swing.ButtonGroup;
+import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
@@ -85,7 +87,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private DuelPanel duelPanel;
 	private ExplorerPanel explorerPanel;
 	private GamePanel gamePanel;
-    private final LinkedList<JComponent> contents;	
+    private final LinkedList<JComponent> contents;
+    private boolean dontShowAgain = true;
 	
 	public MagicFrame() {
 		this.explorerPanel = null;
@@ -113,28 +116,32 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		contents=new LinkedList<JComponent>();
 
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(final WindowEvent event) {
-				final boolean maximized=(MagicFrame.this.getExtendedState()&JFrame.MAXIMIZED_BOTH)==JFrame.MAXIMIZED_BOTH;
-				if (maximized) {
-					config.setMaximized(true);
-				} else {					
-					config.setLeft(getX());
-					config.setTop(getY());
-					config.setWidth(getWidth());
-					config.setHeight(getHeight());
-					config.setMaximized(false);
+				if (config.isConfirmExit()) {
+					// show confirmation dialog
+					final JCheckBox checkbox = new JCheckBox("Do not show this message again.");
+					checkbox.setFont(new Font("dialog", Font.PLAIN, 11));
+					final String message = "Are you sure you want to quit Magarena?\n\n\n";
+					final Object[] params = {message, checkbox};
+					final int n = JOptionPane.showConfirmDialog(
+							contentPanel,
+							params,
+							"Confirm Exit",
+							JOptionPane.YES_NO_OPTION);
+					dontShowAgain = checkbox.isSelected();
+					if (n == JOptionPane.YES_OPTION) {
+						exit();
+					} else if (n == JOptionPane.NO_OPTION) {
+						config.setConfirmExit(!dontShowAgain);
+						config.save();
+					}
+				} else {
+					exit();
 				}
-				config.save();
-
-                /*
-                if (gamePanel != null) {
-    		        gamePanel.getController().haltGame();
-                }
-                */
 			}
 		});
 		
@@ -580,7 +587,29 @@ public class MagicFrame extends JFrame implements ActionListener {
 			}
 		}
 	}
-		
+	
+	private void exit() {
+		final boolean maximized = 
+				(MagicFrame.this.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH;
+		if (maximized) {
+			config.setMaximized(true);
+		} else {					
+			config.setLeft(getX());
+			config.setTop(getY());
+			config.setWidth(getWidth());
+			config.setHeight(getHeight());
+			config.setMaximized(false);
+		}
+		config.setConfirmExit(!dontShowAgain);
+		config.save();
+
+        /*
+        if (gamePanel != null) {
+	        gamePanel.getController().haltGame();
+        }
+        */
+		System.exit(0);
+	}
 	
 	private void openKeywords() {
 		enableMenuItem(KEYWORDS_ITEM,false);
