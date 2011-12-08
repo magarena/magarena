@@ -14,6 +14,7 @@ import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.viewer.DuelDifficultyViewer;
+import magic.ui.viewer.HistoryViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 
@@ -47,6 +48,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 	private final JButton resetButton;
 	private final ZoneBackgroundLabel backgroundImage;
 	private final DeckStrengthViewer strengthViewer;
+	private final HistoryViewer historyViewer;
 	private final CardViewer cardViewer;
 	private final DuelDifficultyViewer duelDifficultyViewer;
 	private final CardTable cardTables[];
@@ -131,6 +133,9 @@ public class DuelPanel extends JPanel implements ActionListener {
 		strengthViewer=new DeckStrengthViewer(duel);
 		strengthViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 		
+		historyViewer = new HistoryViewer();
+		historyViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
+		
 		for(int i = 0; i < players.length; i++) {
 			final MagicPlayerDefinition player = players[i];
 			
@@ -164,6 +169,9 @@ public class DuelPanel extends JPanel implements ActionListener {
 				
 			if (!player.isArtificial()) {
 				rightPanel.add(strengthViewer);
+				rightPanel.add(Box.createVerticalStrut(SPACING));
+				
+				rightPanel.add(historyViewer);
 				rightPanel.add(Box.createVerticalStrut(SPACING));
 				
 				// show card

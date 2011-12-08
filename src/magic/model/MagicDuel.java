@@ -6,6 +6,7 @@ import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.DuelConfig;
+import magic.data.History;
 import magic.generator.DefaultDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.ui.theme.Theme;
@@ -27,6 +28,7 @@ public class MagicDuel {
 	private static final String COMPUTER="Computer";
 	
 	private final DuelConfig configuration;
+	private final History history;
 	private MagicPlayerDefinition playerDefinitions[];
 	private MagicAI ais[];
 	private int opponentIndex;
@@ -38,6 +40,7 @@ public class MagicDuel {
 	
 	public MagicDuel(final DuelConfig configuration) {
 		this.configuration=configuration;
+		history = new History(this);
 		ais=configuration.getPlayerAIs();
 		restart();
 	}
@@ -139,6 +142,7 @@ public class MagicDuel {
 			opponentIndex++;
 			determineStartPlayer();
 		}
+		history.update(configuration.getName(),won);
 	}
 	
 	private static List<Integer> getAvatarIndices(final int avatars) {
@@ -224,6 +228,7 @@ public class MagicDuel {
 	public void initialize() {
 		playerDefinitions=createPlayers();
 		buildDecks();
+		history.loadHistory(configuration.getName());
 	}
 	
 	public static final File getDuelFile() {
@@ -273,6 +278,7 @@ public class MagicDuel {
 			playerDefinitions[index]=new MagicPlayerDefinition();
 			playerDefinitions[index].load(properties,getPlayerPrefix(index));
 		}
+		history.loadHistory(configuration.getName());
 	}
 	
 	public void load(final File file) {

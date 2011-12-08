@@ -4,6 +4,7 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
+import magic.data.History;
 import magic.data.KeywordDefinitions;
 import magic.ui.MagicFrame;
 import java.io.File;
@@ -91,6 +92,7 @@ public class MagicMain {
         }
         
         DeckUtils.createDeckFolder();
+        History.createHistoryFolder();
         initializeEngine();
 	}
 }
