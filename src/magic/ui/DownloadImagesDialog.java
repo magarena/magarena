@@ -3,32 +3,24 @@ package magic.ui;
 import magic.MagicMain;
 
 import magic.data.CardDefinitions;
-import magic.data.DownloadImageFile;
 import magic.data.DownloadMissingFiles;
 import magic.data.IconImages;
 import magic.data.WebDownloader;
 import magic.data.FileIO;
 
-import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
-import javax.swing.JSeparator;
 import javax.swing.JFileChooser;
 
 import java.io.File;
 import java.io.IOException;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.InetSocketAddress;

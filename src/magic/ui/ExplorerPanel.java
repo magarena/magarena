@@ -9,12 +9,10 @@ import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
-import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import java.awt.Container;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
