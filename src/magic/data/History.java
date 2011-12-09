@@ -10,6 +10,7 @@ import java.util.Properties;
 
 public class History {
 	
+	public static final String HISTORY_FOLDER = "history";
 	private static final String HISTORY_EXTENSION = ".hist";
 	
 	private static final String GAMES_PLAYED = "gamesPlayed";
@@ -36,7 +37,7 @@ public class History {
 	}
 	
 	public static String getHistoryFolder() {
-		return MagicMain.getGamePath() + File.separator + "history";
+		return MagicMain.getGamePath() + File.separator + HISTORY_FOLDER;
 	}
 	
 	public static void createHistoryFolder() {

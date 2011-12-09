@@ -4,6 +4,7 @@ import magic.MagicMain;
 
 import magic.data.CardDefinitions;
 import magic.data.DownloadMissingFiles;
+import magic.data.History;
 import magic.data.IconImages;
 import magic.data.WebDownloader;
 import magic.data.FileIO;
@@ -154,7 +155,8 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
             new File(oldDataFolder, CardDefinitions.CARD_IMAGE_FOLDER),
             new File(oldDataFolder, CardDefinitions.TOKEN_IMAGE_FOLDER),
             new File(oldDataFolder, CardDefinitions.CARD_TEXT_FOLDER),
-            new File(oldDataFolder, "symbols")
+            new File(oldDataFolder, "symbols"),
+            new File(oldDataFolder, History.HISTORY_FOLDER)
         };
         
         int count=0;
