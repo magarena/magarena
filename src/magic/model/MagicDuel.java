@@ -142,7 +142,7 @@ public class MagicDuel {
 			opponentIndex++;
 			determineStartPlayer();
 		}
-		history.update(configuration.getName(),won,game);
+		history.update(won,game,configuration);
 	}
 	
 	private static List<Integer> getAvatarIndices(final int avatars) {

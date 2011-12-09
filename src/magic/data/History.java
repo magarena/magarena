@@ -1,6 +1,9 @@
 package magic.data;
 
 import magic.MagicMain;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 
@@ -20,6 +23,11 @@ public class History {
 	private static final String TURNS_PLAYED = "turnsPlayed";
 	private static final String LIFE_LEFT_PLAYER = "lifeLeftPlayer";
 	private static final String LIFE_LEFT_AI = "lifeLeftAI";
+	private static final String COLOR_BLACK = "colorBlack";
+	private static final String COLOR_BLUE = "colorBlue";
+	private static final String COLOR_GREEN = "colorGreen";
+	private static final String COLOR_RED = "colorRed";
+	private static final String COLOR_WHITE = "colorWhite";
 	
 	private static int gamesPlayed;
 	private static int gamesWon;
@@ -28,6 +36,11 @@ public class History {
 	private static int duelsWon;
 	private static int lifeLeftPlayer;
 	private static int lifeLeftAI;
+	private static int colorBlack;
+	private static int colorBlue;
+	private static int colorGreen;
+	private static int colorRed;
+	private static int colorWhite;
 	
 	private static String name = "";
 	private final MagicDuel duel;
@@ -47,7 +60,7 @@ public class History {
 		}
 	}
 	
-	public void update(final String name,final boolean won,final MagicGame game) {
+	public void update(final boolean won,final MagicGame game,final DuelConfig configuration) {
 		gamesPlayed++;
 		if (won) {
 			gamesWon++;
@@ -64,6 +77,34 @@ public class History {
 				duelsWon++;
 			}
 		}
+		final int[] colorCount = new int[MagicColor.NR_COLORS];
+		final MagicDeck deck = game.getPlayer(0).getPlayerDefinition().getDeck();
+		for (final MagicCardDefinition card : deck) {
+			if (!card.isLand()) {
+				for (final MagicColor color : MagicColor.values()) {
+					if (color.hasColor(card.getColorFlags())) {
+						colorCount[color.ordinal()]++;
+						switch (color) {
+						case Black:
+							colorBlack++;
+							break;
+						case Blue:
+							colorBlue++;
+							break;
+						case Green:
+							colorGreen++;
+							break;
+						case Red:
+							colorRed++;
+							break;
+						case White:
+							colorWhite++;
+							break;
+						}
+					}
+				}
+			}
+		}
 		saveHistory(name + HISTORY_EXTENSION);
 	}
 	
@@ -75,6 +116,11 @@ public class History {
 		duelsWon = Integer.parseInt(properties.getProperty(DUELS_WON,"0"));
 		lifeLeftPlayer = Integer.parseInt(properties.getProperty(LIFE_LEFT_PLAYER,"0"));
 		lifeLeftAI = Integer.parseInt(properties.getProperty(LIFE_LEFT_AI,"0"));
+		colorBlack = Integer.parseInt(properties.getProperty(COLOR_BLACK,"0"));
+		colorBlue = Integer.parseInt(properties.getProperty(COLOR_BLUE,"0"));
+		colorGreen = Integer.parseInt(properties.getProperty(COLOR_GREEN,"0"));
+		colorRed = Integer.parseInt(properties.getProperty(COLOR_RED,"0"));
+		colorWhite = Integer.parseInt(properties.getProperty(COLOR_WHITE,"0"));
 	}
 	
 	public void loadHistory(final String name) {
@@ -91,6 +137,11 @@ public class History {
 		properties.setProperty(DUELS_WON,String.valueOf(duelsWon));
 		properties.setProperty(LIFE_LEFT_PLAYER,String.valueOf(lifeLeftPlayer));
 		properties.setProperty(LIFE_LEFT_AI,String.valueOf(lifeLeftAI));
+		properties.setProperty(COLOR_BLACK,String.valueOf(colorBlack));
+		properties.setProperty(COLOR_BLUE,String.valueOf(colorBlue));
+		properties.setProperty(COLOR_GREEN,String.valueOf(colorGreen));
+		properties.setProperty(COLOR_RED,String.valueOf(colorRed));
+		properties.setProperty(COLOR_WHITE,String.valueOf(colorWhite));
 	}
 	
 	public void saveHistory(final String filename) {
@@ -136,5 +187,25 @@ public class History {
 	
 	public static int getLifeLeftAI() {
 		return lifeLeftAI;
+	}
+
+	public static int getColorBlack() {
+		return colorBlack;
+	}
+	
+	public static int getColorBlue() {
+		return colorBlue;
+	}
+	
+	public static int getColorGreen() {
+		return colorGreen;
+	}
+	
+	public static int getColorRed() {
+		return colorRed;
+	}
+	
+	public static int getColorWhite() {
+		return colorWhite;
 	}
 }

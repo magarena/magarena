@@ -1,6 +1,7 @@
 package magic.ui.viewer;
 
 import magic.data.History;
+import magic.model.MagicColor;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -42,6 +43,22 @@ public class HistoryViewer extends JPanel{
 		final int duelsWinPercentage = getPercentage(duelsWon, duelsPlayed);
 		final int avgLifeLeftPlayer = (gamesWon > 0) ? History.getLifeLeftPlayer() / gamesWon : 0;
 		final int avgLifeLeftAI = (gamesLost > 0) ? History.getLifeLeftAI() / gamesLost : 0;
+		
+		final int[] colorCount = new int[MagicColor.NR_COLORS];
+		colorCount[0] = History.getColorBlack();
+		colorCount[1] = History.getColorBlue();
+		colorCount[2] = History.getColorGreen();
+		colorCount[3] = History.getColorRed();
+		colorCount[4] = History.getColorWhite();
+		int mostCount = Integer.MIN_VALUE;
+		MagicColor mostColor = null;
+		for (final MagicColor color : MagicColor.values()) {	
+			final int count = colorCount[color.ordinal()];
+			if (count > mostCount) {
+				mostCount = count;
+				mostColor = color;
+			}
+		}
 
 		final JTextArea textArea = new JTextArea(8, 170);
 		textArea.setEditable(false);
@@ -59,7 +76,8 @@ public class HistoryViewer extends JPanel{
 				"\nAverage remaining AI life:\t" + avgLifeLeftAI +
 				"\nDuels played:\t" + duelsPlayed +
 				"\nDuels won / lost:\t" + duelsWon + " / " + 
-				duelsLost + " (" + duelsWinPercentage + "%)"
+				duelsLost + " (" + duelsWinPercentage + "%)" +
+				"\nMost used color:\t" + mostColor.getName()
 				);
 		mainPanel.add(textArea);
 			
