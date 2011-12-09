@@ -35,10 +35,13 @@ public class HistoryViewer extends JPanel{
 		final int gamesWon = History.getGamesWon();
 		final int gamesLost = gamesPlayed - gamesWon;
 		final int gamesWinPercentage = getPercentage(gamesWon, gamesPlayed);
+		final int averageTurns = (gamesPlayed > 0) ? History.getTurnsPlayed() / gamesPlayed : 0;
 		final int duelsPlayed = History.getDuelsPlayed();
 		final int duelsWon = History.getDuelsWon();
 		final int duelsLost = duelsPlayed - duelsWon;
 		final int duelsWinPercentage = getPercentage(duelsWon, duelsPlayed);
+		final int avgLifeLeftPlayer = (gamesWon > 0) ? History.getLifeLeftPlayer() / gamesWon : 0;
+		final int avgLifeLeftAI = (gamesLost > 0) ? History.getLifeLeftAI() / gamesLost : 0;
 
 		final JTextArea textArea = new JTextArea(8, 170);
 		textArea.setEditable(false);
@@ -49,13 +52,14 @@ public class HistoryViewer extends JPanel{
 		textArea.setForeground(ThemeFactory.getInstance().getCurrentTheme().getTextColor());
 		textArea.setTabSize(16);
 		textArea.setText("Games played:\t" + gamesPlayed +
-				"\nGames won:\t" + gamesWon +
-				"\nGames lost:\t" + gamesLost +
-				"\nGames win percentage:\t" + gamesWinPercentage + "%" +
+				"\nGames won / lost\t" + gamesWon + " / " + 
+				gamesLost + " (" + gamesWinPercentage + "%)" +
+				"\nAverage turns per game:\t" + averageTurns +
+				"\nAverage remaining player life:\t" + avgLifeLeftPlayer +
+				"\nAverage remaining AI life:\t" + avgLifeLeftAI +
 				"\nDuels played:\t" + duelsPlayed +
-				"\nDuels won:\t" + duelsWon +
-				"\nDuels lost:\t" + duelsLost +
-				"\nDuels win percentage:\t" + duelsWinPercentage + "%"
+				"\nDuels won / lost:\t" + duelsWon + " / " + 
+				duelsLost + " (" + duelsWinPercentage + "%)"
 				);
 		mainPanel.add(textArea);
 			

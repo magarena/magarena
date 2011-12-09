@@ -128,7 +128,7 @@ public class MagicDuel {
 		return getGamesPlayed()==getGamesTotal();
 	}
 	
-	void advance(final boolean won) {
+	void advance(final boolean won, final MagicGame game) {
 		gamesPlayed++;
 		if (won) {
 			gamesWon++;
@@ -142,7 +142,7 @@ public class MagicDuel {
 			opponentIndex++;
 			determineStartPlayer();
 		}
-		history.update(configuration.getName(),won);
+		history.update(configuration.getName(),won,game);
 	}
 	
 	private static List<Integer> getAvatarIndices(final int avatars) {

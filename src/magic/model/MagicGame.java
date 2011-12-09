@@ -642,7 +642,7 @@ public class MagicGame {
 	}
 	
 	public void advanceDuel() {
-		duel.advance(losingPlayer!=players[0]);
+		duel.advance(losingPlayer!=players[0],this);
 	}
 	
 	public MagicPlayer[] getPlayers() {
