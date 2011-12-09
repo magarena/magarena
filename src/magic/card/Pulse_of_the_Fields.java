@@ -22,7 +22,7 @@ public class Pulse_of_the_Fields {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    player + " gains 4 life. Then if your opponent" +
+                    player + " gains 4 life. Then if your opponent " +
                     "has more life than you, return " + 
                     card + " to its owner's hand.");
 		}
