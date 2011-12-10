@@ -42,6 +42,8 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 			}
 		}
 		
+		game.executeTrigger(MagicTriggerType.WhenLeavesPlay,permanent);
+		
 		// Equipment
 		if (permanent.getEquippedCreature().isValid()) {
 			permanent.getEquippedCreature().removeEquipment(permanent);
@@ -63,8 +65,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		controller.removePermanent(permanent);
 
 		setScore(controller,permanent.getStaticScore(game)-score);
-	
-        game.executeTrigger(MagicTriggerType.WhenLeavesPlay,permanent);
         
         // Trigger
 		removedTriggers = game.removeTriggers(permanent);

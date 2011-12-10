@@ -61,6 +61,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private long turnAbilityFlags=0;
 	private int turnPowerIncr=0;
 	private int turnToughnessIncr=0;
+	private MagicPowerToughness lastKnownPowerToughness = null;
 	private int turnColorFlags=NO_COLOR_FLAGS;
 	private int abilityPlayedThisTurn=0;
 	private int damage=0;
@@ -139,6 +140,16 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public boolean isInvalid() {
         return !isValid();
+    }
+    
+    public boolean isOnBattlefield(final MagicGame game) {
+    	for (final MagicPlayer player : game.getPlayers()) {
+			if (player.controlsPermanent(this)) {
+				return true;
+			}
+		}
+		return false;		
+
     }
 	
 	long getPermanentId() {
@@ -387,6 +398,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public long getTurnAbilityFlags() {
 		return turnAbilityFlags;
+	}
+	
+	public void setLastKnownPowerToughness(final MagicGame game) {
+		lastKnownPowerToughness = getPowerToughness(game,true);
+	}
+	
+	public MagicPowerToughness getLastKnownPowerToughness() {
+		return lastKnownPowerToughness;
 	}
 	
 	public long getAllAbilityFlags(final MagicGame game,final boolean turn) {
