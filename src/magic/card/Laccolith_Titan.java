@@ -30,8 +30,8 @@ public class Laccolith_Titan {
     	                    new MagicDamageTargetPicker(permanent.getPower(game)),
                             new Object[]{permanent},
                             this,
-                            player + " may have " + permanent + " deal " +
-    	                    "damage equal to its power to target creature.");
+                            player + " may$ have " + permanent + " deal " +
+    	                    "damage equal to its power to target creature$.");
             }
             return MagicEvent.NONE;
 		}
