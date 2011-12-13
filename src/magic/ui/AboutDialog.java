@@ -1,11 +1,11 @@
 package magic.ui;
 
 import magic.data.IconImages;
+import magic.data.URLUtils;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -13,9 +13,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -90,7 +87,7 @@ class AboutDialog extends JDialog implements ActionListener {
 		forumLabel.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(final MouseEvent e) {
-				openURL(FORUM_URL);
+				URLUtils.openURL(FORUM_URL);
 			}
 
 			@Override
@@ -120,7 +117,7 @@ class AboutDialog extends JDialog implements ActionListener {
 		repoLabel.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(final MouseEvent e) {
-				openURL(REPO_URL);
+				URLUtils.openURL(REPO_URL);
 			}
 
 			@Override
@@ -157,27 +154,6 @@ class AboutDialog extends JDialog implements ActionListener {
 		getContentPane().add(buttonPanel, BorderLayout.SOUTH);
 
 		setVisible(true);
-	}
-
-	private static void openURL(final String url) {
-		try {
-			Desktop desktop = null;
-			if (Desktop.isDesktopSupported()) {
-				desktop = Desktop.getDesktop();
-			}
-			if (desktop != null) {
-				final URI uri = new URI(url);
-				desktop.browse(uri);
-			}
-		} catch (IOException ioe) {
-			System.err.println("ERROR! Unable to launch browser");
-            System.err.println(ioe.getMessage());
-			ioe.printStackTrace();
-		} catch (URISyntaxException use) {
-			System.err.println("ERROR! Invalid URI");
-            System.err.println(use.getMessage());
-			use.printStackTrace();
-		}
 	}
 		
 	@Override

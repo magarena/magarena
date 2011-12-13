@@ -4,6 +4,7 @@ import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.DuelConfig;
+import magic.data.URLUtils;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
@@ -55,9 +56,12 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String CARD_EXPLORER_ITEM = "Explorer";
 	private static final String KEYWORDS_ITEM = "Keywords";
 	private static final String README_ITEM = "ReadMe";
+	private static final String DOCUMENTATION_ITEM = "Documentation";
 	private static final String ABOUT_ITEM = "About";
     //java -DtestGame=X to start with a specific game 
 	private static final String testGame = System.getProperty("testGame");
+	private static final String DOCUMENTATION_URL =
+			"http://code.google.com/p/magarena/wiki/UserDocumentation";
 	
 	private final GeneralConfig config;
 	private final JPanel contentPanel;
@@ -80,6 +84,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private JMenuItem cardExplorerItem;
 	private JMenuItem keywordsItem;
 	private JMenuItem readMeItem;
+	private JMenuItem documentationItem;
 	private JMenuItem aboutItem;
 	private JRadioButtonMenuItem textModeItem;
 	private JRadioButtonMenuItem imageModeItem;
@@ -186,6 +191,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			keywordsItem.setEnabled(enabled);
 		}else if (README_ITEM.equals(item)) {
 			readMeItem.setEnabled(enabled);
+		}else if (DOCUMENTATION_ITEM.equals(item)) {
+			documentationItem.setEnabled(enabled);
 		}else if (ABOUT_ITEM.equals(item)) {
 			aboutItem.setEnabled(enabled);
 		}
@@ -233,6 +240,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		enableMenuItem(CARD_EXPLORER_ITEM,true);
 		enableMenuItem(KEYWORDS_ITEM,true);
 		enableMenuItem(README_ITEM,true);
+		enableMenuItem(DOCUMENTATION_ITEM,true);
 		enableMenuItem(ABOUT_ITEM,true);
 	}
 	
@@ -352,6 +360,10 @@ public class MagicFrame extends JFrame implements ActionListener {
 		readMeItem=new JMenuItem("Read Me");
 		readMeItem.addActionListener(this);
 		helpMenu.add(readMeItem);
+		
+		documentationItem=new JMenuItem("Online Documentation");
+		documentationItem.addActionListener(this);
+		helpMenu.add(documentationItem);
 		
 		aboutItem=new JMenuItem("About Magarena");
 		aboutItem.addActionListener(this);
@@ -696,6 +708,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 			openKeywords();
 		} else if (source==readMeItem) {
 			openReadme();
+		} else if (source==documentationItem) {
+			URLUtils.openURL(DOCUMENTATION_URL);;
 		} else if (source==aboutItem) {
 			new AboutDialog(this);
 		} else if (source == textModeItem) {
