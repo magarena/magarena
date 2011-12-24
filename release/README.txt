@@ -50,7 +50,7 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.21 (yyyyyyy xx, xxxx)
+Release 1.21 (December 26, 2011)
 ============
 brought to you by beholder, melvin, and wait321
 
@@ -79,6 +79,13 @@ brought to you by beholder, melvin, and wait321
 - fixed: Righteousness has the picture of Giant Growth
 
 - added the following cards:
+  Blighted Agent
+  Charging Bandits
+  Charging Paladin
+  Corrupted Resolve
+  Deadly Grub
+  Untamed Might
+  Vapor Snag
 
 Release 1.20b (November 26, 2011)
 =============
