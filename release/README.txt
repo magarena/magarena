@@ -50,6 +50,36 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.21 (yyyyyyy xx, xxxx)
+============
+brought to you by beholder, melvin, and wait321
+
+- added zachsoulsister deck
+- added feather and gold counters to be shown in image mode
+- added number of cards to cube names in combobox
+- enabled the option to save a deck between matches
+- added shortcut keys for Yes and No buttons
+- added confirmation dialog on exit
+- added basic historical overview
+- added Online Documentation item to Help menu
+
+- fixed: Scion of Oona is colorless
+- fixed: Ruham of the Fomori is colorless
+- fixed: Volcanic Hammer is an instant instead of a sorcery
+- fixed: Pulse of the Fields is a sorcery instead of an instant
+- fixed: Gemstone Mine doesn't remove a counter when tapped for mana
+- fixed: Woodland Sleuth's Morbid ability triggers even if no creatures died this turn
+- fixed: Joraga Warcaller
+- fixed: animated permanents don't lose temporary buffs at end of turn
+- fixed: cards that deal damage when they enter or leave play can show a wrong description
+- fixed: echo costs interact with each other and therefor can be wrong
+- fixed: Roughshod Mentor doesn't give trample to itself
+- fixed: cards that have their payback cost payed return to hand instead of graveyard
+  when there was no legal target
+- fixed: Righteousness has the picture of Giant Growth
+
+- added the following cards:
+
 Release 1.20b (November 26, 2011)
 =============
 This is a bug fix release.
