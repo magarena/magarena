@@ -199,6 +199,7 @@ Blastoderm
 Blaze
 Blazing Specter
 Bleak Coven Vampires
+Blighted Agent
 Blight Mamba
 Blightning
 Blight Sickle
@@ -313,6 +314,8 @@ Changeling Titan
 Change of Heart
 Chapel Geist
 Char
+Charging Bandits
+Charging Paladin
 Charging Troll
 Charmbreaker Devils
 Char-Rumbler
@@ -356,6 +359,7 @@ Corpse Dance
 Corpsehatch
 Corrosive Mentor
 Corrupted Harvester
+Corrupted Resolve
 Corrupt Official
 Cosi's Ravager
 Counsel of the Soratami
@@ -421,6 +425,7 @@ Dauthi Trapper
 Dauthi Warlord
 Day of Judgment
 Day of the Dragons
+Deadly Grub
 Deadly Recluse
 Dead Weight
 Deadwood Treefolk
@@ -1791,6 +1796,7 @@ Unquestioned Authority
 Unruly Mob
 Unstoppable Ash
 Unsummon
+Untamed Might
 Urabrask the Hidden
 Urborg Drake
 Urborg Skeleton
@@ -1805,6 +1811,7 @@ Vampire Hexmage
 Vampire Interloper
 Vampire Nighthawk
 Vampiric Fury
+Vapor Snag
 Vastwood Gorger
 Vault of Whispers
 Vault Skyward

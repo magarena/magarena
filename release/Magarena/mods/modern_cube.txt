@@ -158,6 +158,7 @@ Blade-Tribe Berserkers
 Bladetusk Boar
 Blaze
 Bleak Coven Vampires
+Blighted Agent
 Blight Mamba
 Blightning
 Blight Sickle
@@ -290,6 +291,7 @@ Corpse Cur
 Corpsehatch
 Corrosive Mentor
 Corrupted Harvester
+Corrupted Resolve
 Cosi's Ravager
 Counsel of the Soratami
 Countersquall
@@ -338,6 +340,7 @@ Darkthicket Wolf
 Dauntless Escort
 Dauthi Slayer
 Day of Judgment
+Deadly Grub
 Deadly Recluse
 Dead Weight
 Deadwood Treefolk
@@ -1488,6 +1491,7 @@ Unmake
 Unruly Mob
 Unstoppable Ash
 Unsummon
+Untamed Might
 Urabrask the Hidden
 Urgent Exorcism
 Ursapine
@@ -1499,6 +1503,7 @@ Vampire Hexmage
 Vampire Interloper
 Vampire Nighthawk
 Vampiric Fury
+Vapor Snag
 Vastwood Gorger
 Vault Skyward
 Vedalken Certarch

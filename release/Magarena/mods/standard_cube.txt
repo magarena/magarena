@@ -50,6 +50,7 @@ Bladed Pinions
 Blade Splicer
 Blade-Tribe Berserkers
 Bleak Coven Vampires
+Blighted Agent
 Blight Mamba
 Blightwidow
 Blistergrub
@@ -97,6 +98,7 @@ Copper Myr
 Coral Merfolk
 Corpse Cur
 Corrupted Harvester
+Corrupted Resolve
 Crimson Mage
 Crossway Vampire
 Cudgel Troll
@@ -439,10 +441,12 @@ Typhoid Rats
 Unbreathing Horde
 Unruly Mob
 Unsummon
+Untamed Might
 Urabrask the Hidden
 Urgent Exorcism
 Vampire Interloper
 Vampiric Fury
+Vapor Snag
 Vastwood Gorger
 Vault Skyward
 Vedalken Certarch

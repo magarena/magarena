@@ -93,6 +93,7 @@ Blade Splicer
 Blade-Tribe Berserkers
 Bladetusk Boar
 Bleak Coven Vampires
+Blighted Agent
 Blight Mamba
 Blightning
 Blightwidow
@@ -178,6 +179,7 @@ Coral Merfolk
 Corpse Cur
 Corpsehatch
 Corrupted Harvester
+Corrupted Resolve
 Cosi's Ravager
 Countersquall
 Court Archers
@@ -876,6 +878,7 @@ Underworld Dreams
 Unholy Strength
 Unruly Mob
 Unsummon
+Untamed Might
 Urabrask the Hidden
 Urgent Exorcism
 Valeron Outlander
@@ -885,6 +888,7 @@ Vampire Hexmage
 Vampire Interloper
 Vampire Nighthawk
 Vampiric Fury
+Vapor Snag
 Vastwood Gorger
 Vault Skyward
 Vedalken Certarch
