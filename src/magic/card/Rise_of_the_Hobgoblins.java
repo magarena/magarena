@@ -19,6 +19,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -30,15 +31,17 @@ public class Rise_of_the_Hobgoblins {
 
 	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.RED_OR_WHITE.getCondition()},
-            new MagicActivationHints(MagicTiming.Block,true),
+            new MagicActivationHints(MagicTiming.Block,true,1),
             "First strike") {
 
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(
-                    source,
-                    source.getController(),
-                    MagicManaCost.RED_OR_WHITE)};
+			return new MagicEvent[]{
+					new MagicPayManaCostEvent(
+						source,
+						source.getController(),
+						MagicManaCost.RED_OR_WHITE),
+					new MagicPlayAbilityEvent((MagicPermanent)source)};
 		}
 
 		@Override
