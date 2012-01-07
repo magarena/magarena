@@ -18,7 +18,7 @@ public class Death_Baron {
 			pt.add(1,1);
 		}
 		@Override
-		public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
 			return target.hasSubType(MagicSubType.Skeleton,game) || 
 					(source != target && target.hasSubType(MagicSubType.Zombie,game));
 		}
