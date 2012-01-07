@@ -11,6 +11,7 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 
 public class Thalakos_Drifters {
@@ -21,7 +22,8 @@ public class Thalakos_Drifters {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
-				new MagicDiscardEvent(source,source.getController(),1,false)
+				new MagicDiscardEvent(source,source.getController(),1,false),
+				new MagicPlayAbilityEvent((MagicPermanent)source)
 			};
 		}
 		@Override
