@@ -31,6 +31,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 	private final JComboBox highlightComboBox;
 	private final JCheckBox confirmExitCheckBox;
 	private final JCheckBox soundCheckBox;
+	private final JCheckBox touchscreenCheckBox;
 	private final JCheckBox highQualityCheckBox;
 	private final JCheckBox skipSingleCheckBox;
 	private final JCheckBox alwaysPassCheckBox;
@@ -44,7 +45,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
 		super(frame,true);
 		this.setTitle("Preferences");
-		this.setSize(400,500);
+		this.setSize(400,530);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -125,6 +126,12 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 		soundCheckBox.setBounds(X3,Y,W3,H3);
 		soundCheckBox.setFocusable(false);
 		mainPanel.add(soundCheckBox);
+		
+		Y += 30;
+		touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
+		touchscreenCheckBox.setBounds(X3,Y,W3,H3);
+		touchscreenCheckBox.setFocusable(false);
+		mainPanel.add(touchscreenCheckBox);
 	
         Y += 30;
 		highQualityCheckBox = new JCheckBox("Show card images in original size",
@@ -191,6 +198,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 			config.setHighlight((String)highlightComboBox.getSelectedItem());
 			config.setConfirmExit(confirmExitCheckBox.isSelected());
 			config.setSound(soundCheckBox.isSelected());
+			config.setTouchscreen(touchscreenCheckBox.isSelected());
 			config.setHighQuality(highQualityCheckBox.isSelected());
 			config.setSkipSingle(skipSingleCheckBox.isSelected());
 			config.setAlwaysPass(alwaysPassCheckBox.isSelected());

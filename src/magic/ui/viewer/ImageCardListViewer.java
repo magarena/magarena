@@ -57,13 +57,21 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 		addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(final MouseEvent event) {
-				if (event.getButton() == MouseEvent.BUTTON3) {
+				final boolean touchscreen = GeneralConfig.getInstance().isTouchscreen();
+				if (!touchscreen && event.getButton() == MouseEvent.BUTTON3) {
 					controller.actionKeyPressed();
 					return;
 				}
 				final int index=getCardIndexAt(event.getX(),event.getY());
 				if (index>=0) {
-					controller.processClick(cardList.get(index));
+					if (!touchscreen){
+						controller.processClick(cardList.get(index));
+					}
+					else if (event.getClickCount() == 2) {
+						controller.processClick(cardList.get(index));
+						controller.hideInfo();
+					}	
+					
 				}
 			}
 			@Override

@@ -32,6 +32,7 @@ public class GeneralConfig {
 	private static final String HIGH_QUALITY="hq";
 	private static final String SOUND="sound";
 	private static final String CONFIRM_EXIT = "confirmExit";
+	private static final String TOUCHSCREEN = "touchscreen";
 
 	private static final int DEFAULT_LEFT=0;
 	private static final int DEFAULT_TOP=0;
@@ -54,6 +55,7 @@ public class GeneralConfig {
 	private static final boolean DEFAULT_HIGH_QUALITY=false;
 	private static final boolean DEFAULT_SOUND=false;
 	private static final boolean DEFAULT_CONFIRM_EXIT = true;
+	private static final boolean DEFAULT_TOUCHSCREEN = false;
 
 	private int left=DEFAULT_LEFT;
 	private int top=DEFAULT_TOP;
@@ -76,6 +78,7 @@ public class GeneralConfig {
 	private boolean highQuality=DEFAULT_HIGH_QUALITY;
 	private boolean sound=DEFAULT_SOUND;
 	private boolean confirmExit = DEFAULT_CONFIRM_EXIT;
+	private boolean touchscreen = DEFAULT_TOUCHSCREEN;
 	
 	private GeneralConfig() {}
 	
@@ -259,6 +262,14 @@ public class GeneralConfig {
 		this.confirmExit = confirmExit;
 	}
 	
+	public boolean isTouchscreen() {
+		return touchscreen;
+	}
+
+	public void setTouchscreen(final boolean touchscreen) {	
+		this.touchscreen = touchscreen;
+	}
+	
 	private void load(final Properties properties) {
 		left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
 		top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -281,6 +292,7 @@ public class GeneralConfig {
 		highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
 		sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
 		confirmExit = Boolean.parseBoolean(properties.getProperty(CONFIRM_EXIT,""+DEFAULT_CONFIRM_EXIT));
+		touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
 	}
 	
 	public void load() {
@@ -309,6 +321,7 @@ public class GeneralConfig {
 		properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
 		properties.setProperty(SOUND,String.valueOf(sound));
 		properties.setProperty(CONFIRM_EXIT,String.valueOf(confirmExit));
+		properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
 	}
 	
 	public void save() {
