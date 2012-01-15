@@ -4,6 +4,7 @@ import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.DuelConfig;
+import magic.data.OSXAdapter;
 import magic.data.URLUtils;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
@@ -62,6 +63,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String testGame = System.getProperty("testGame");
 	private static final String DOCUMENTATION_URL =
 			"http://code.google.com/p/magarena/wiki/UserDocumentation";
+    // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
+    public static boolean MAC_OS_X = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
 	
 	private final GeneralConfig config;
 	private final JPanel contentPanel;
@@ -126,36 +129,17 @@ public class MagicFrame extends JFrame implements ActionListener {
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(final WindowEvent event) {
-				if (config.isConfirmExit()) {
-					// show confirmation dialog
-					final JCheckBox checkbox =
-							new JCheckBox("Do not show this message again.");
-					checkbox.setFont(new Font("dialog", Font.PLAIN, 11));
-					final String message =
-							"Are you sure you want to quit Magarena?\n\n\n";
-					final Object[] params = {message, checkbox};
-					final int n = JOptionPane.showConfirmDialog(
-							contentPanel,
-							params,
-							"Confirm Exit",
-							JOptionPane.YES_NO_OPTION);
-					dontShowAgain = checkbox.isSelected();
-					if (n == JOptionPane.YES_OPTION) {
-						exit();
-					} else if (n == JOptionPane.NO_OPTION) {
-						config.setConfirmExit(!dontShowAgain);
-						config.save();
-					}
-				} else {
-					exit();
-				}
+				onClose();
 			}
 		});
 		
 		createMenuBar();
 		setInitialContent();
 		setVisible(true);	
-
+		
+        // Set up our application to respond to the Mac OS X application menu
+        registerForMacOSXEvents();
+        
         //in selfMode start game immediate based on configuration from duel.cfg
         if (System.getProperty("selfMode") != null) {
             final DuelConfig config=DuelConfig.getInstance();
@@ -163,7 +147,7 @@ public class MagicFrame extends JFrame implements ActionListener {
             newDuel(config);
         }
 	}
-
+	
 	private void enableMenuItem(final String item,final boolean enabled) {
 		if (SAVE_DUEL_ITEM.equals(item)) {
 			saveDuelItem.setEnabled(enabled);
@@ -608,6 +592,50 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
+    private void registerForMacOSXEvents() {
+        if (MAC_OS_X) {
+            try {
+                // Generate and register the OSXAdapter, passing it a hash of all the methods we wish to
+                // use as delegates for various com.apple.eawt.ApplicationListener methods
+                OSXAdapter.setQuitHandler(this, getClass().getDeclaredMethod("onClose", (Class[])null));
+                //OSXAdapter.setAboutHandler(this, getClass().getDeclaredMethod("about", (Class[])null));
+                //OSXAdapter.setPreferencesHandler(this, getClass().getDeclaredMethod("preferences", (Class[])null));
+                //OSXAdapter.setFileHandler(this, getClass().getDeclaredMethod("loadImageFile", new Class[] { String.class }));
+            } catch (Exception e) {
+                System.err.println("Error while loading the OSXAdapter:");
+                e.printStackTrace();
+            }
+        }
+    }
+    
+    private boolean onClose() {
+		if (!config.isConfirmExit()) {
+			exit();
+		} else {
+			// show confirmation dialog
+			final JCheckBox checkbox =
+					new JCheckBox("Do not show this message again.");
+			checkbox.setFont(new Font("dialog", Font.PLAIN, 11));
+			final String message =
+					"Are you sure you want to quit Magarena?\n\n\n";
+			final Object[] params = {message, checkbox};
+			final int n = JOptionPane.showConfirmDialog(
+					contentPanel,
+					params,
+					"Confirm Exit",
+					JOptionPane.YES_NO_OPTION);
+			dontShowAgain = checkbox.isSelected();
+			if (n == JOptionPane.YES_OPTION) {
+				exit();
+			} else if (n == JOptionPane.NO_OPTION) {
+				config.setConfirmExit(!dontShowAgain);
+				config.save();
+			}
+		}
+		// set the ApplicationEvent as handled (for OS X)
+		return false;
+	}
+    
 	private void exit() {
 		final boolean maximized = 
 				(MagicFrame.this.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH;
