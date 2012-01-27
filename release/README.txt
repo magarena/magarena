@@ -35,7 +35,7 @@ Thanks to
   IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
-  David, Grundomu, jeffwadsworth, Kuno and LSK for contributing custom decks
+  David, Grundomu, jeffwadsworth, Kuno, LSK and sponeta for contributing custom decks
   pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
@@ -46,9 +46,24 @@ Thanks to
   johncpatterson for helping to test the Mac startup script
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
+  goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
+
+Release 1.22 (January xx, 2012)
+============
+- improved resolution of Mac icon
+- added option to use double-click to cast or activate ability (for touchscreens)
+- added 17 new decks
+
+- fixed: Eldrazi Spawn token can not be sacrificed for mana
+- fixed: Death Baron also gives +1/+1 to opponent's creatures
+- fixed: AI uses Rise of the Hobgoblins' activated ability more than once per turn
+- fixed: Wall of Diffusion can not block creatures with shadow
+- fixed: application exit through CMD-Q is not captured on OS X
+
+- known bug: AEther Vial's and Legacy's Allure's abilities don't work
 
 Release 1.21 (December 26, 2011)
 ============
