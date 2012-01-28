@@ -108,7 +108,7 @@ cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt c
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 
-M1.%: clean $(EXE) cubes
+M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	grep "VERSION.*1.$*" -Ir src/
 	grep "Release.*1.$*" release/README.txt
 	grep 1.$* -Ir Magarena.app/
