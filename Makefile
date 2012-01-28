@@ -141,7 +141,7 @@ M1.%: clean all cubes
 	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app 
 
 $(MAG): $(SRC) 
-	ant -f build-safe.xml
+	ant -f build.xml
 
 class: $(BUILD)/javac.last
 
