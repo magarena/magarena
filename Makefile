@@ -108,7 +108,7 @@ cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt c
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 
-M1.%: clean all cubes
+M1.%: clean $(EXE) cubes
 	grep "VERSION.*1.$*" -Ir src/
 	grep "Release.*1.$*" release/README.txt
 	grep 1.$* -Ir Magarena.app/
