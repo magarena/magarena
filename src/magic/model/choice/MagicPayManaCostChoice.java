@@ -125,9 +125,12 @@ public class MagicPayManaCostChoice extends MagicChoice {
 				break;
 			}
 			
+			final int costMinAmount = builderCost.getMinimumAmount();
 			final Set<Object> validSources=builder.getManaSources(costManaType,!canSkip);
 			final MagicPermanent sourcePermanent;
-			if (canSkip&&validSources.size()==1) {
+			if (canSkip && 
+				(validSources.size() == 1 ||
+				builder.getActivationsSize() == costMinAmount)) {
 				sourcePermanent=(MagicPermanent)validSources.iterator().next();
 			} else {
 				controller.setValidChoices(validSources,false);

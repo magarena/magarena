@@ -224,4 +224,8 @@ public class MagicPayManaCostResultBuilder {
 		}
 		return true;
 	}
+	
+	public int getActivationsSize() {
+		return activationsSize;
+	}
 }
