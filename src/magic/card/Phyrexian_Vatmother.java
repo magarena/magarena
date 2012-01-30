@@ -19,7 +19,7 @@ public class Phyrexian_Vatmother {
                         player,
                         new Object[]{player},
                         this,
-                        player + " get a poison counter."):
+                        player + " gets a poison counter."):
                 MagicEvent.NONE;
 		}
 		@Override
