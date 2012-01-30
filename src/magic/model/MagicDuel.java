@@ -11,6 +11,7 @@ import magic.generator.DefaultDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.viewer.DeckStrengthViewer;
 
 import java.io.File;
 import java.io.IOException;
@@ -142,7 +143,9 @@ public class MagicDuel {
 			opponentIndex++;
 			determineStartPlayer();
 		}
-		history.update(won,game,configuration);
+		if (!DeckStrengthViewer.isRunning()) {
+			history.update(won,game,configuration);
+		}
 	}
 	
 	private static List<Integer> getAvatarIndices(final int avatars) {

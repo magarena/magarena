@@ -58,7 +58,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 	private final JComboBox difficultyComboBox;
 	private final JButton startButton;
 	private final Color textColor;
-	private CalculateThread calculateThread;
+	private static CalculateThread calculateThread;
 	
 	public DeckStrengthViewer(final MagicDuel duel) {
 		
@@ -234,5 +234,9 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 				controller.haltGame();
 			}
 		}
+	}
+	
+	public static boolean isRunning() {
+		return calculateThread != null;
 	}
 }
