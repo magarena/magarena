@@ -25,8 +25,7 @@ public class Curiosity {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player = permanent.getController();
 			return (damage.getSource() == permanent.getEnchantedCreature() &&
-					damage.getTarget().isPlayer() &&
-					damage.isCombat()) ?
+					damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                         permanent,
                         player,
