@@ -1,0 +1,11 @@
+>Ancestral Recall
+url=http://magiccards.info/un/en/48.html
+image=http://magiccards.info/scans/en/un/48.jpg
+value=5
+rarity=R
+type=Instant
+color=u
+converted=1
+cost={U}
+timing=draw
+requires_card_code
