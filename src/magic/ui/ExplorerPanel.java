@@ -25,6 +25,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
+import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
 
@@ -344,8 +345,28 @@ public class ExplorerPanel extends JPanel implements ActionListener {
 	private class DeckMouseListener extends MouseAdapter {
 		@Override
 		public void mouseClicked(MouseEvent e) {
-			if(isEditingDeck() && e.getClickCount() > 1) {
-				removeSelectedFromDeck();
+			if(isEditingDeck()) {
+				if (e.getClickCount() > 1) {
+					if (e.getButton() == MouseEvent.BUTTON1) {
+						removeSelectedFromDeck();
+					} else if (e.getButton() == MouseEvent.BUTTON3) {
+						final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
+						if (deckCards.size() > 0) {
+							for(MagicCardDefinition card : deckCards) { 
+								getPlayer().getDeck().add(card);
+							}
+
+							updateDeck();
+							statsViewer.setPlayer(getPlayer());
+						}
+					}
+				}
+				if (e.getButton() == MouseEvent.BUTTON3) {
+					JTable table = (JTable)(e.getSource());
+					final int row = table.rowAtPoint(e.getPoint());
+					table.clearSelection();
+					table.addRowSelectionInterval(row,row);
+				}
 			}
 		}
 	}
