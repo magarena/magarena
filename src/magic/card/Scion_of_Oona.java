@@ -11,7 +11,7 @@ import magic.model.target.MagicTargetFilter;
 public class Scion_of_Oona {
 	public static final MagicStatic S1 = new MagicStatic(
 			MagicLayer.ModPT, 
-			MagicTargetFilter.TARGET_FAERIE_YOU_CONTROL) {
+			MagicTargetFilter.TARGET_FAERIE_CREATURE_YOU_CONTROL) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.add(1,1);
@@ -24,7 +24,7 @@ public class Scion_of_Oona {
 	
 	public static final MagicStatic S2 = new MagicStatic(
 			MagicLayer.Ability, 
-			MagicTargetFilter.TARGET_FAERIE_YOU_CONTROL) {
+			MagicTargetFilter.TARGET_FAERIE_CREATURE_YOU_CONTROL) {
 		@Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.Shroud.getMask();
