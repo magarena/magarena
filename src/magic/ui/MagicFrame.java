@@ -62,7 +62,7 @@ public class MagicFrame extends JFrame implements ActionListener {
     //java -DtestGame=X to start with a specific game 
 	private static final String testGame = System.getProperty("testGame");
 	private static final String DOCUMENTATION_URL =
-			"http://code.google.com/p/magarena/wiki/UserDocumentation";
+			"http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
     public static boolean MAC_OS_X = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
 	
