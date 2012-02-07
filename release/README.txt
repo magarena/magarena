@@ -53,7 +53,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.22 (January xx, 2012)
+Release 1.22 (January 28, 2012)
 ============
 - improved resolution of Mac icon
 - added option to use double-click to cast or activate ability (for touchscreens)
