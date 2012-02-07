@@ -51,6 +51,8 @@ Thanks to
 
 Thank you for your support and have fun!
 
+
+
 Release 1.22 (January xx, 2012)
 ============
 - improved resolution of Mac icon
