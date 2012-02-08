@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ImageDrawingUtils {
-
 	public static void drawCostInfo(
             final Graphics g,
             final ImageObserver observer,
@@ -113,6 +112,18 @@ public class ImageDrawingUtils {
 				}
 				if (counterType == MagicCounterType.Gold) {
 					g.drawImage(IconImages.GOLDCOUNTER.getImage(),ax,ay,observer);
+					ax+=16;
+				}
+				if (counterType == MagicCounterType.PlusOne) {
+					g.drawImage(IconImages.PLUS.getImage(),ax,ay,observer);
+					g.setColor(Color.DARK_GRAY);
+					g.drawString(Integer.toString(amount),ax+6,ay+14);
+					ax+=16;
+				}
+				if (counterType == MagicCounterType.MinusOne) {
+					g.drawImage(IconImages.MINUS.getImage(),ax,ay,observer);
+					g.setColor(Color.DARK_GRAY);
+					g.drawString(Integer.toString(amount),ax+6,ay+14);
 					ax+=16;
 				}
 			}
