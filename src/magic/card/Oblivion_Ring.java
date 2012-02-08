@@ -19,7 +19,7 @@ public class Oblivion_Ring {
 			final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
 	                MagicTargetFilter.TARGET_NONLAND_PERMANENT,permanent);
 			final MagicTargetChoice targetChoice = new MagicTargetChoice(
-	                targetFilter,false,MagicTargetHint.None,"another target nonland permanent to exile");
+	                targetFilter,true,MagicTargetHint.None,"another target nonland permanent to exile");
 			return new MagicEvent(
                     permanent,
                     player,
