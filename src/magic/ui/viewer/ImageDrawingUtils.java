@@ -98,8 +98,11 @@ public class ImageDrawingUtils {
             int ax,
             final int ay) {
 		for (final MagicCounterType counterType : MagicCounterType.values()) {
-			final int amount = permanent.getCounters(counterType);
+			int amount = permanent.getCounters(counterType);
 			if (amount > 0) {
+				if (amount > 9) {
+					amount = 9;
+				}
 				if (counterType == MagicCounterType.Charge) {
 					g.drawImage(IconImages.CHARGE.getImage(),ax,ay,observer);
 					g.setColor(Color.DARK_GRAY);
