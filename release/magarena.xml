@@ -21,10 +21,4 @@
     <initialHeapSize>256</initialHeapSize>
     <maxHeapSize>256</maxHeapSize>
   </jre>
-  <splash>
-    <file>magarena.bmp</file>
-    <waitForWindow>true</waitForWindow>
-    <timeout>60</timeout>
-    <timeoutErr>true</timeoutErr>
-  </splash>
 </launch4jConfig>
