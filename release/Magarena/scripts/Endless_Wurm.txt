@@ -1,0 +1,14 @@
+>Endless Wurm
+url=http://magiccards.info/us/en/249.html
+image=http://magiccards.info/scans/en/us/249.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Wurm
+color=g
+converted=5
+cost={3}{G}{G}
+pt=9/9
+ability=trample
+timing=main
+requires_card_code
