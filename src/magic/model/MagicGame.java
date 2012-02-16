@@ -801,30 +801,14 @@ public class MagicGame {
             final List<MagicAction> stateBasedActions = new ArrayList<MagicAction>(100);
 		
             // Check if a player has lost
-            final MagicPlayer lowestLifePlayer =
-                (players[1].getLife() <= players[0].getLife()) ? 
-                players[1]:
-                players[0];
-
-            if (lowestLifePlayer.getLife() <= 0) {
-                stateBasedActions.add(new MagicLoseGameAction(lowestLifePlayer,MagicLoseGameAction.LIFE_REASON));			
-            }
-
-            final MagicPlayer highestPoisonPlayer =
-                (players[1].getPoison() >= players[0].getPoison()) ? 
-                players[1]:
-                players[0];
-
-            if (highestPoisonPlayer.getPoison() >= LOSING_POISON) {
-                stateBasedActions.add(new MagicLoseGameAction(highestPoisonPlayer,MagicLoseGameAction.POISON_REASON));
-            }
-		    
-            // Check permanents' state
             for (final MagicPlayer player : players) {
-				for (final MagicPermanent permanent : player.getPermanents()) {
-					permanent.checkState(this, stateBasedActions);
-				}
-			}
+            	if (player.getLife() <= 0) {
+            		stateBasedActions.add(new MagicLoseGameAction(player,MagicLoseGameAction.LIFE_REASON));
+            	}
+            	if (player.getPoison() >= LOSING_POISON) {
+            		stateBasedActions.add(new MagicLoseGameAction(player,MagicLoseGameAction.POISON_REASON));
+            	}
+            }
 
             //perform all the actions at once
             for (final MagicAction action : stateBasedActions) {
