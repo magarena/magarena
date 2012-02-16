@@ -810,6 +810,13 @@ public class MagicGame {
             	}
             }
 
+            // Check permanents' state
+            for (final MagicPlayer player : players) {
+            	for (final MagicPermanent permanent : player.getPermanents()) {
+            		permanent.checkState(this, stateBasedActions);
+            	}
+            }
+            
             //perform all the actions at once
             for (final MagicAction action : stateBasedActions) {
                 doAction(action);
