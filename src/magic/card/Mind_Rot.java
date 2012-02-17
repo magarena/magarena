@@ -21,7 +21,7 @@ public class Mind_Rot {
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new Object[]{cardOnStack},
                     this,
-                    "Target player$ discards two cards");
+                    "Target player$ discards two cards.");
 		}
 		@Override
 		public void executeEvent(
