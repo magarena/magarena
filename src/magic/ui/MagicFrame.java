@@ -14,6 +14,7 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicDuel;
 import magic.test.TestGameBuilder;
+import magic.ui.viewer.DeckDescriptionPreview;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import java.awt.BorderLayout;
@@ -452,6 +453,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 			fileChooser.setDialogTitle("Load deck");
 			fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
 			fileChooser.setAcceptAllFileFilterUsed(false);
+			// Add the description preview pane
+			fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
+
 			final int action=fileChooser.showOpenDialog(this);
 			if (action==JFileChooser.APPROVE_OPTION) {
 				final String filename=fileChooser.getSelectedFile().getAbsolutePath();
