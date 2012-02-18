@@ -11,7 +11,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
-import javax.swing.border.Border;
 
 public class ButtonControlledPopup extends TexturedPanel implements ActionListener, WindowFocusListener {
 

@@ -8,7 +8,6 @@ import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 
-import java.awt.Frame;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
