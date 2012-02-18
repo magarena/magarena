@@ -360,16 +360,6 @@ public class MagicFrame extends JFrame implements ActionListener {
 		menuBar.add(viewMenu);
 		menuBar.add(helpMenu);
 
-        /*
-        final JMenu prefMenu = new JMenu("Preferences");
-        prefMenu.add(new JCheckBoxMenuItem("Enable sound effects"));
-        prefMenu.add(new JCheckBoxMenuItem("Show card image in original size"));
-		prefMenu.add(new JCheckBoxMenuItem("Skip single option choices when appropriate"));
-		prefMenu.add(new JCheckBoxMenuItem("Always pass during draw and begin of combat step"));
-		prefMenu.add(new JCheckBoxMenuItem("Filter legal targets when appropriate"));
-        menuBar.add(prefMenu);
-        */
-
 		this.setJMenuBar(menuBar);
 	}
 	
