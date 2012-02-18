@@ -29,11 +29,11 @@ public class MagicDiscardEvent extends MagicEvent {
             random ? new MagicRandomCardChoice(amount) : new MagicCardChoice(amount),
             new Object[]{player},
             EVENT_ACTION,
-            player.getName() + genDescription(player,amount,random)
+            player.getName() + genDescription(player,amount)
         );
 	}
 	
-	private static final String genDescription(final MagicPlayer player,final int amount,final boolean random) {
+	private static final String genDescription(final MagicPlayer player,final int amount) {
 		final int actualAmount = Math.min(amount,player.getHandSize());
 		String description = "";
 		switch (actualAmount) {
