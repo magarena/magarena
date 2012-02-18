@@ -11,6 +11,7 @@ import magic.model.MagicDuel;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.viewer.CardViewer;
+import magic.ui.viewer.DeckDescriptionViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.viewer.DuelDifficultyViewer;
@@ -49,6 +50,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 	private final ZoneBackgroundLabel backgroundImage;
 	private final DeckStrengthViewer strengthViewer;
 	private final HistoryViewer historyViewer;
+	private final DeckDescriptionViewer deckDescriptionViewers[];
 	private final CardViewer cardViewer;
 	private final DuelDifficultyViewer duelDifficultyViewer;
 	private final CardTable cardTables[];
@@ -126,6 +128,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 		
 		MagicPlayerDefinition players[] = duel.getPlayers();
 		cardTables = new CardTable[players.length];
+		deckDescriptionViewers = new DeckDescriptionViewer[players.length];
 		statsViewers = new DeckStatisticsViewer[players.length];
 		editButtons = new JButton[players.length];
 		
@@ -138,6 +141,10 @@ public class DuelPanel extends JPanel implements ActionListener {
 		
 		for(int i = 0; i < players.length; i++) {
 			final MagicPlayerDefinition player = players[i];
+			
+			deckDescriptionViewers[i] = new DeckDescriptionViewer();
+			deckDescriptionViewers[i].setPlayer(player);
+			deckDescriptionViewers[i].setAlignmentX(Component.LEFT_ALIGNMENT);
 			
 			// deck stats
 			statsViewers[i] = new DeckStatisticsViewer();
@@ -163,6 +170,9 @@ public class DuelPanel extends JPanel implements ActionListener {
 			JPanel rightPanel = new JPanel();
 			rightPanel.setLayout(new BoxLayout(rightPanel, BoxLayout.Y_AXIS));
 			rightPanel.setOpaque(false);
+			
+			rightPanel.add(deckDescriptionViewers[i]);
+			rightPanel.add(Box.createVerticalStrut(SPACING));
 			
 			rightPanel.add(statsViewers[i]);
 			rightPanel.add(Box.createVerticalStrut(SPACING));
@@ -279,6 +289,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 			cardTables[i].setCards(duel.getPlayers()[i].getDeck());
 			cardTables[i].setTitle(generateTitle(duel.getPlayers()[i].getDeck()));
 			statsViewers[i].setPlayer(duel.getPlayers()[i]);
+			deckDescriptionViewers[i].setPlayer(duel.getPlayers()[i]);
 		}
 	}
 
