@@ -7,9 +7,9 @@ import magic.model.trigger.MagicTriggerType;
 
 public class MagicLoseGameAction extends MagicAction {
 
-	public static final String LIFE_REASON="{L} You lose the game.";
-	public static final String POISON_REASON="{L} You are poisoned. You lose the game.";
-	static final String DRAW_REASON="{L} You attempt to draw from an empty library. You lose the game.";
+	public static final String LIFE_REASON = " lost the game.";
+	public static final String POISON_REASON = " lost the game because of poisoning.";
+	static final String DRAW_REASON = " lost the game because of an attempt to draw from an empty library.";
 	
 	private final MagicPlayer player;
 	private final String reason;
@@ -29,7 +29,7 @@ public class MagicLoseGameAction extends MagicAction {
             if (playerRef[0].isValid()) {
                 setScore(player,ArtificialScoringSystem.getLoseGameScore(game));
                 game.setLosingPlayer(player);
-                game.logMessage(player,reason);
+                game.logMessage(player,"{L} " + player + reason);
             }
 		}
 	}
