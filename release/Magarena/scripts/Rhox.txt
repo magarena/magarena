@@ -1,0 +1,14 @@
+>Rhox
+url=http://magiccards.info/10e/en/291.html
+image=http://magiccards.info/scans/en/10e/291.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Beast
+color=g
+converted=6
+cost={4}{G}{G}
+pt=5/5
+timing=main
+ability=regenerate {2}{G}
+requires_card_code
