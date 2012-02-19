@@ -1043,7 +1043,8 @@ public interface MagicTargetFilter {
 	
 	MagicTargetFilter TARGET_NONHUMAN_CREATURE = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {		
-			return !((MagicPermanent)target).hasSubType(MagicSubType.Human,game);
+			return ((MagicPermanent)target).isCreature(game) &&
+					!((MagicPermanent)target).hasSubType(MagicSubType.Human,game);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {	
 			return targetType==MagicTargetType.Permanent;
