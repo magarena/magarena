@@ -88,7 +88,8 @@ public enum MagicAbility {
 	TotemArmor("totem armor",0),
 	Intimidate("intimidate",45),
 	Infect("infect",35),
-    // 59 keyword ability
+	Undying("undying",60),
+    // 60 keyword ability
     
     Exalted("exalted",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {

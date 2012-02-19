@@ -13,6 +13,7 @@ import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicPersistTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicUndyingTrigger;
 
 public class MagicMoveCardAction extends MagicAction {
 
@@ -87,7 +88,16 @@ public class MagicMoveCardAction extends MagicAction {
                         permanent,
                         permanent,
                         new MagicGraveyardTriggerData(card,fromLocation));
-			} 	
+			}
+			
+			// Undying.
+			if (permanent.isValid() && permanent.hasAbility(game,MagicAbility.Undying)) {
+				game.executeTrigger(
+						MagicUndyingTrigger.getInstance(),
+						permanent,
+						permanent,
+						new MagicGraveyardTriggerData(card,fromLocation));
+			}
 			
 			// Discard.
 			if (fromLocation == MagicLocationType.OwnersHand) {
