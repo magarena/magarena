@@ -1,0 +1,11 @@
+>Subversion
+url=http://magiccards.info/ul/en/68.html
+image=http://magiccards.info/scans/en/ul/68.jpg
+value=3
+rarity=R
+type=Enchantment
+color=b
+converted=5
+cost={3}{B}{B}
+timing=enchantment
+requires_card_code
