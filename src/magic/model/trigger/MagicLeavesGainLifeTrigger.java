@@ -1,6 +1,5 @@
 package magic.model.trigger;
 
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;

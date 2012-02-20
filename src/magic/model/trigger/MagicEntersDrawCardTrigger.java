@@ -5,7 +5,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicEchoTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class MagicEntersDrawCardTrigger extends MagicWhenComesIntoPlayTrigger {

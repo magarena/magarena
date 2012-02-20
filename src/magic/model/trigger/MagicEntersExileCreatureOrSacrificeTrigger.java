@@ -1,17 +1,11 @@
 package magic.model.trigger;
 
-import magic.model.MagicCard;
-import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicSubType;
 import magic.model.MagicPlayer;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeExtraTurnsAction;
 import magic.model.action.MagicExileUntilThisLeavesPlayAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayCardAction;
-import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -20,7 +14,6 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetType;
-import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 
