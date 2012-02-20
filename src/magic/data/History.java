@@ -49,7 +49,7 @@ public class History {
 		this.duel = duel;
 	}
 	
-	public static String getHistoryFolder() {
+	private static String getHistoryFolder() {
 		return MagicMain.getGamePath() + File.separator + HISTORY_FOLDER;
 	}
 	
@@ -124,7 +124,7 @@ public class History {
 	}
 	
 	public void loadHistory(final String name) {
-		History.name = name;
+		setName(name);
         load(FileIO.toProp(new File(getHistoryFolder() +
         		File.separator + name + HISTORY_EXTENSION)));
 	}
@@ -144,7 +144,7 @@ public class History {
 		properties.setProperty(COLOR_WHITE,String.valueOf(colorWhite));
 	}
 	
-	public void saveHistory(final String filename) {
+	private void saveHistory(final String filename) {
         final Properties properties = new Properties();
         save(properties);
         try { //save history
@@ -157,6 +157,10 @@ public class History {
         }
 	}
 
+	private static void setName(String aName) {
+		History.name = aName;
+	}
+	
 	public static String getName() {
 		return name;
 	}
