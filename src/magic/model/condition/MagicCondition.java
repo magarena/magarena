@@ -234,6 +234,12 @@ public interface MagicCondition {
 			return source.getController().getNrOfPermanentsWithType(MagicType.Creature,game)>=2;
 		}
 	};
+	
+	MagicCondition TWO_MOUNTAINS_CONDITION=new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Mountain, game)>=2;
+		}
+	};
 
 	MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {

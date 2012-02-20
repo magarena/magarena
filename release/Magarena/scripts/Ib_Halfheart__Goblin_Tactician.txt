@@ -1,0 +1,13 @@
+>Ib Halfheart, Goblin Tactician
+url=http://magiccards.info/ts/en/163.html
+image=http://magiccards.info/scans/en/ts/163.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Goblin,Advisor
+color=r
+converted=4
+cost={3}{R}
+pt=3/2
+timing=fmain
+requires_card_code

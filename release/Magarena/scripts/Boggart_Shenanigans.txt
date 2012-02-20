@@ -1,0 +1,12 @@
+>Boggart Shenanigans
+url=http://magiccards.info/lw/en/155.html
+image=http://magiccards.info/scans/en/lw/155.jpg
+value=3
+rarity=U
+type=Tribal,Enchantment
+subtype=Goblin
+color=r
+converted=3
+cost={2}{R}
+timing=enchantment
+requires_card_code
