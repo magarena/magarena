@@ -1,0 +1,13 @@
+>Knucklebone Witch
+url=http://magiccards.info/lw/en/120.html
+image=http://magiccards.info/scans/en/lw/120.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Goblin,Shaman
+color=b
+converted=1
+cost={B}
+pt=1/1
+timing=fmain
+requires_card_code

@@ -1,0 +1,14 @@
+>Mad Auntie
+url=http://magiccards.info/lw/en/123.html
+image=http://magiccards.info/scans/en/lw/123.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Goblin,Shaman
+color=b
+converted=3
+cost={2}{B}
+pt=2/2
+static=player
+timing=fmain
+requires_card_code

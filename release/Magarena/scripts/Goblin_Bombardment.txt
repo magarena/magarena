@@ -1,0 +1,11 @@
+>Goblin Bombardment
+url=http://magiccards.info/tp/en/179.html
+image=http://magiccards.info/tp/en/179.html
+value=3
+rarity=U
+type=Enchantment
+color=r
+converted=2
+cost={1}{R}
+timing=enchantment
+requires_card_code
