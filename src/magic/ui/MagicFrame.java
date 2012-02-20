@@ -255,11 +255,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 		
 		restartDuelItem=new JMenuItem("Restart duel");
 		restartDuelItem.addActionListener(this);
-		// arenaMenu.add(restartDuelItem);
+		arenaMenu.add(restartDuelItem);
 		
 		resetDuelItem=new JMenuItem("Reset duel");
 		resetDuelItem.addActionListener(this);
-		arenaMenu.add(resetDuelItem);
+		//arenaMenu.add(resetDuelItem);
 		
 		arenaMenu.addSeparator();
 				
@@ -418,7 +418,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
-	private void restartDuel() {
+	public void restartDuel() {
 		if (duel!=null) {
 			duel.restart();
 			showDuel();

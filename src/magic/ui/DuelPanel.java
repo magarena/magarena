@@ -38,15 +38,18 @@ public class DuelPanel extends JPanel implements ActionListener {
 	private static final long serialVersionUID = 1L;
 	
 	private static final int SPACING = 10;
-	private static final String PLAY_BUTTON_TEXT = "Play Game";
-	private static final String RESET_BUTTON_TEXT = "Reset Duel";
+	private static final String PLAY_BUTTON_START_TEXT = "Start Duel";
+	private static final String PLAY_BUTTON_NEXT_TEXT = "Continue Duel";
+	private static final String RESTART_BUTTON_TEXT = "Restart Duel";
+	private static final String NEW_BUTTON_TEXT = "New Duel";
 	private static final String EDIT_BUTTON_TEXT = "Edit Deck";
 	
 	private final MagicFrame frame;
 	private final MagicDuel duel;
 	private final JTabbedPane tabbedPane;
+	private final JButton newDuelButton;
+	private final JButton restartButton;
 	private final JButton playButton;
-	private final JButton resetButton;
 	private final ZoneBackgroundLabel backgroundImage;
 	private final DeckStrengthViewer strengthViewer;
 	private final HistoryViewer historyViewer;
@@ -70,18 +73,32 @@ public class DuelPanel extends JPanel implements ActionListener {
 		buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
 		buttonsPanel.setOpaque(false);
 		
-		// reset button
-		resetButton=new JButton(RESET_BUTTON_TEXT);
-		resetButton.setFont(FontsAndBorders.FONT2);
-		resetButton.addActionListener(this);
-		resetButton.setFocusable(false);
-		buttonsPanel.add(resetButton);
+		// new duel button
+		newDuelButton = new JButton(NEW_BUTTON_TEXT);
+		newDuelButton.setFont(FontsAndBorders.FONT1);
+		newDuelButton.addActionListener(this);
+		newDuelButton.setFocusable(false);
+		buttonsPanel.add(newDuelButton);
+
+		buttonsPanel.add(Box.createHorizontalStrut(SPACING));
+		
+		// restart button
+		restartButton = new JButton(RESTART_BUTTON_TEXT);
+		restartButton.setFont(FontsAndBorders.FONT1);
+		restartButton.addActionListener(this);
+		restartButton.setFocusable(false);
+		restartButton.setEnabled(duel.getGamesPlayed() > 0);
+		buttonsPanel.add(restartButton);
 		
 		buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 		
 		// play button
-		playButton=new JButton(PLAY_BUTTON_TEXT);
-		playButton.setFont(FontsAndBorders.FONT2);
+		playButton = new JButton(PLAY_BUTTON_START_TEXT);
+		playButton.setText((duel.getGamesPlayed() == 0) ?
+				PLAY_BUTTON_START_TEXT
+				:
+				PLAY_BUTTON_NEXT_TEXT);
+		playButton.setFont(FontsAndBorders.FONT1);
 		playButton.addActionListener(this);
 		playButton.setFocusable(false);
 		playButton.setEnabled(!duel.isFinished());
@@ -158,6 +175,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 				
 			editButtons[i] = new JButton(EDIT_BUTTON_TEXT);
 			editButtons[i].setFont(FontsAndBorders.FONT2);
+			editButtons[i].setEnabled(duel.getGamesPlayed() == 0);
 			editButtons[i].addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(final ActionEvent event) {
@@ -298,11 +316,13 @@ public class DuelPanel extends JPanel implements ActionListener {
 	}
 	
 	public void actionPerformed(final ActionEvent event) {
-		final Object source=event.getSource();
-		if (source==playButton) {
+		final Object source = event.getSource();
+		if (source == playButton) {
 			frame.nextGame();
-		} else if (source==resetButton) {
-			frame.resetDuel();
+		} else if (source == restartButton) {
+			frame.restartDuel();
+		} else if (source == newDuelButton) {
+			frame.showNewDuelDialog();
 		}
 	}
 }
