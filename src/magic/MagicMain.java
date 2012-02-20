@@ -47,7 +47,7 @@ public class MagicMain {
 	
         final long start_time = System.currentTimeMillis();
 		initialize();
-        final double duration = (System.currentTimeMillis() - start_time) / 1000;
+        final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
         System.err.println("Initalization of engine took " + duration + "s");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
