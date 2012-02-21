@@ -389,6 +389,11 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 	}
 	
+	public void showDuel(int tab) {
+		showDuel();
+		duelPanel.setSelectedTab(tab);
+	}
+	
 	public void showNewDuelDialog() {
 		new DuelDialog(this);
 	}

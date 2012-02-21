@@ -216,6 +216,16 @@ public class MagicDuel {
 		this.playerDefinitions=aPlayerDefinitions;
 	}
 	
+	public void buildDeck(MagicPlayerDefinition player) {
+		final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(configuration.getCube());
+        final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
+        if(player.getDeckGenerator() == null && player.getProfile().getNrOfColors() == 0) {
+        	DeckUtils.loadRandomDeck(player);
+        } else {
+        	player.generateDeck(generator);
+        }
+	}
+	
 	private void buildDecks() {
 		final MagicCubeDefinition cubeDefinition=CubeDefinitions.getCubeDefinition(configuration.getCube());
         final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);

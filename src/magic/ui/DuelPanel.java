@@ -43,6 +43,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 	private static final String RESTART_BUTTON_TEXT = "Restart Duel";
 	private static final String NEW_BUTTON_TEXT = "New Duel";
 	private static final String EDIT_BUTTON_TEXT = "Edit Deck";
+	private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
 	
 	private final MagicFrame frame;
 	private final MagicDuel duel;
@@ -58,6 +59,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 	private final DuelDifficultyViewer duelDifficultyViewer;
 	private final CardTable cardTables[];
 	private final JButton editButtons[];
+	private final JButton generateButtons[];
 	private final DeckStatisticsViewer statsViewers[];
 
 	public DuelPanel(final MagicFrame frame,final MagicDuel duel) {
@@ -148,6 +150,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 		deckDescriptionViewers = new DeckDescriptionViewer[players.length];
 		statsViewers = new DeckStatisticsViewer[players.length];
 		editButtons = new JButton[players.length];
+		generateButtons = new JButton[players.length];
 		
 		// deck strength tester
 		strengthViewer=new DeckStrengthViewer(duel);
@@ -159,11 +162,12 @@ public class DuelPanel extends JPanel implements ActionListener {
 		for(int i = 0; i < players.length; i++) {
 			final MagicPlayerDefinition player = players[i];
 			
+			// deck description
 			deckDescriptionViewers[i] = new DeckDescriptionViewer();
 			deckDescriptionViewers[i].setPlayer(player);
 			deckDescriptionViewers[i].setAlignmentX(Component.LEFT_ALIGNMENT);
 			
-			// deck stats
+			// deck statistics
 			statsViewers[i] = new DeckStatisticsViewer();
 			statsViewers[i].setPlayer(player);
 			statsViewers[i].setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -182,7 +186,18 @@ public class DuelPanel extends JPanel implements ActionListener {
 					frame.openDeckEditor(player, cubeDefinition);
 				}
 			});
-			editButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+			
+			// generate deck button
+			generateButtons[i] = new JButton(GENERATE_BUTTON_TEXT);
+			generateButtons[i].setFont(FontsAndBorders.FONT2);
+			generateButtons[i].setEnabled(duel.getGamesPlayed() == 0);
+			generateButtons[i].addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(final ActionEvent event) {
+					duel.buildDeck(player);
+					frame.showDuel(tabbedPane.getSelectedIndex());
+				}
+			});
 			
 			// right side
 			JPanel rightPanel = new JPanel();
@@ -206,7 +221,15 @@ public class DuelPanel extends JPanel implements ActionListener {
 				cardViewer.setCard(player.getDeck().get(0),0);
 			}
 			
-			rightPanel.add(editButtons[i]);
+			// buttons right
+			JPanel buttonsRightPanel = new JPanel();
+			buttonsRightPanel.setLayout(new BoxLayout(buttonsRightPanel, BoxLayout.X_AXIS));
+			buttonsRightPanel.setOpaque(false);
+			buttonsRightPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+			buttonsRightPanel.add(editButtons[i]);
+			buttonsRightPanel.add(Box.createHorizontalStrut(SPACING));
+			buttonsRightPanel.add(generateButtons[i]);
+			rightPanel.add(buttonsRightPanel);
 			
 			// table of cards
 			cardTables[i] = new CardTable(player.getDeck(), cardViewer, generateTitle(player.getDeck()), true);
@@ -300,6 +323,10 @@ public class DuelPanel extends JPanel implements ActionListener {
 	
 	public MagicPlayerDefinition getSelectedPlayer() {
 		return duel.getPlayers()[tabbedPane.getSelectedIndex()];
+	}
+	
+	public void setSelectedTab(int tab) {
+		tabbedPane.setSelectedIndex(tab);
 	}
 	
 	public void updateDecksAfterEdit() {
