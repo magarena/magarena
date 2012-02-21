@@ -2,7 +2,6 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.data.CubeDefinitions;
-import magic.data.DuelConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
@@ -21,7 +20,6 @@ import magic.ui.widget.ZoneBackgroundLabel;
 
 import java.awt.Component;
 import java.awt.Container;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Box;
