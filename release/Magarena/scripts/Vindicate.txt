@@ -1,6 +1,6 @@
 >Vindicate
 url=http://magiccards.info/ap/en/126.html
-image=http://magiccards.info/scans/en/jr/33.jpg
+image=http://magiccards.info/scans/en/ap/126.jpg
 value=4
 removal=5
 rarity=R
