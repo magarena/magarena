@@ -1,0 +1,14 @@
+>Markov Blademaster
+url=http://magiccards.info/dka/en/96.html
+image=http://magiccards.info/scans/en/dka/96.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Vampire,Warrior
+color=r
+converted=3
+cost={1}{R}{R}
+pt=1/1
+ability=double strike
+timing=main
+requires_card_code
