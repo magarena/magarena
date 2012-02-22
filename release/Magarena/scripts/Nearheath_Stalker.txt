@@ -1,0 +1,13 @@
+>Nearheath Stalker
+url=http://magiccards.info/dka/en/100.html
+image=http://magiccards.info/scans/en/dka/100.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Vampire,Rogue
+color=r
+converted=5
+cost={4}{R}
+pt=4/1
+ability=undying
+timing=main

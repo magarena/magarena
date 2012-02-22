@@ -1,0 +1,14 @@
+>Moonveil Dragon
+url=http://magiccards.info/dka/en/99.html
+image=http://magiccards.info/scans/en/dka/99.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Dragon
+color=r
+converted=6
+cost={3}{R}{R}{R}
+pt=5/5
+ability=flying
+timing=fmain
+requires_card_code
