@@ -61,7 +61,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private long turnAbilityFlags=0;
 	private int turnPowerIncr=0;
 	private int turnToughnessIncr=0;
-	private MagicPowerToughness lastKnownPowerToughness = null;
+	private MagicPowerToughness lastKnownPowerToughness;
+	private long lastKnownAbilityFlags = 0;
+	private EnumSet<MagicSubType> lastKnownSubTypeFlags;
+	private int lastKnownTypeFlags = 0;
+	private int lastKnownColorFlags = 0;
 	private int turnColorFlags=NO_COLOR_FLAGS;
 	private int abilityPlayedThisTurn=0;
 	private int damage=0;
@@ -329,6 +333,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 
 	public MagicPowerToughness getPowerToughness(final MagicGame game,final boolean turn) {
+		if (!isOnBattlefield(game)) {
+			return lastKnownPowerToughness;
+		}
+		
 		// Check if cached.
 		if (cached&&turn) {
 			return cachedTurnPowerToughness;
@@ -400,8 +408,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		return turnAbilityFlags;
 	}
 	
-	public void setLastKnownPowerToughness(final MagicGame game) {
-		lastKnownPowerToughness = getPowerToughness(game,true);
+	public void setLastKnownInfo(final MagicGame game) {
+		lastKnownPowerToughness = getPowerToughness(game);
+		lastKnownAbilityFlags = getAllAbilityFlags(game);
+		lastKnownSubTypeFlags = getSubTypeFlags(game);
+		lastKnownTypeFlags = getTypeFlags(game);
+		lastKnownColorFlags = getColorFlags(game);
 	}
 	
 	public MagicPowerToughness getLastKnownPowerToughness() {
