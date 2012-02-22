@@ -1,0 +1,13 @@
+>Forge Devil
+url=http://magiccards.info/dka/en/91.html
+image=http://magiccards.info/scans/en/dka/91.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Devil
+color=r
+converted=1
+cost={R}
+pt=1/1
+timing=main
+requires_card_code

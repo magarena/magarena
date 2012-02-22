@@ -1,0 +1,13 @@
+>Heckling Fiends
+url=http://magiccards.info/dka/en/92.html
+image=http://magiccards.info/scans/en/dka/92.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Devil
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+timing=main
+requires_card_code
