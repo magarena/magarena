@@ -1,0 +1,13 @@
+>Strangleroot Geist
+url=http://magiccards.info/dka/en/127.html
+image=http://magiccards.info/scans/en/dka/127.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=g
+converted=2
+cost={G}{G}
+pt=2/1
+ability=haste,undying
+timing=main
