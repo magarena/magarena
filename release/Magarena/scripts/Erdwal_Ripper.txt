@@ -1,0 +1,14 @@
+>Erdwal Ripper
+url=http://magiccards.info/dka/en/86.html
+image=http://magiccards.info/scans/en/dka/86.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire
+color=r
+converted=3
+cost={1}{R}{R}
+pt=2/1
+ability=haste
+timing=fmain
+requires_card_code

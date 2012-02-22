@@ -1,0 +1,14 @@
+>Falkenrath Aristocrat
+url=http://magiccards.info/dka/en/138.html
+image=http://magiccards.info/scans/en/dka/138.jpg
+value=4
+rarity=M
+type=Creature
+subtype=Vampire
+color=br
+converted=4
+cost={2}{B}{R}
+pt=4/1
+ability=flying,haste
+timing=fmain
+requires_card_code
