@@ -1,0 +1,15 @@
+>Stromkirk Captain
+url=http://magiccards.info/dka/en/143.html
+image=http://magiccards.info/scans/en/dka/143.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Vampire,Soldier
+color=br
+converted=3
+cost={1}{B}{R}
+pt=2/2
+ability=first strike
+static=player
+timing=fmain
+requires_card_code
