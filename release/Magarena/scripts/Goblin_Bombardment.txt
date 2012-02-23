@@ -1,6 +1,7 @@
 >Goblin Bombardment
 url=http://magiccards.info/tp/en/179.html
 image=http://magiccards.info/scans/en/tp/179.jpg
+ignore=10998
 value=3
 rarity=U
 type=Enchantment
