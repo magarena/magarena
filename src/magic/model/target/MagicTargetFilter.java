@@ -1215,12 +1215,10 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_CREATURE_YOUR_OPPONENT_CONTROLS=new MagicTargetFilter() {
 		
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			return target.getController()!=player&&((MagicPermanent)target).isCreature(game);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
@@ -1228,13 +1226,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_TAPPED_CREATURE=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&permanent.isTapped();
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
@@ -1242,13 +1238,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_UNTAPPED_CREATURE=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&!permanent.isTapped();
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
@@ -1256,13 +1250,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_NONWHITE_CREATURE=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&!MagicColor.White.hasColor(permanent.getColorFlags(game));
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1270,13 +1262,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_NONBLACK_CREATURE=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&!MagicColor.Black.hasColor(permanent.getColorFlags(game));
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1284,13 +1274,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_NONARTIFACT_CREATURE=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&!permanent.isArtifact(game);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1311,13 +1299,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_CREATURE_WITHOUT_FLYING=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&!permanent.hasAbility(game,MagicAbility.Flying);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1325,13 +1311,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_CREATURE_WITH_FLYING=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&permanent.hasAbility(game,MagicAbility.Flying);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1373,13 +1357,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_CREATURE_CONVERTED_3_OR_LESS=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&permanent.getCardDefinition().getCost().getConvertedCost()<=3;
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1451,13 +1433,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_ATTACKING_CREATURE_WITH_FLYING=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&permanent.isAttacking()&&permanent.hasAbility(game,MagicAbility.Flying);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1488,13 +1468,13 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
-			return permanent.getController()==player&&permanent.isCreature(game)&&(permanent.isAttacking()||permanent.isBlocking());
+			return permanent.getController() == player && 
+                   permanent.isCreature(game) && 
+                   (permanent.isAttacking() || permanent.isBlocking());
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
@@ -1502,13 +1482,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_BLOCKED_CREATURE=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicPermanent permanent=(MagicPermanent)target;
 			return permanent.isCreature(game)&&permanent.isBlocked();
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1577,13 +1555,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicCardDefinition cardDefinition=((MagicCard)target).getCardDefinition();
 			return cardDefinition.hasType(MagicType.Instant)||cardDefinition.hasType(MagicType.Sorcery);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Graveyard;
 		}						
 	};
@@ -1591,13 +1567,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			final MagicCardDefinition cardDefinition=((MagicCard)target).getCardDefinition();
 			return cardDefinition.hasType(MagicType.Instant)||cardDefinition.hasType(MagicType.Sorcery);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.OpponentsGraveyard;
 		}						
 	};
@@ -1745,20 +1719,17 @@ public interface MagicTargetFilter {
         private final long id;		
 
 		public MagicOtherPermanentTargetFilter(final MagicTargetFilter targetFilter,final MagicPermanent invalidPermanent) {
-			
 			this.targetFilter=targetFilter;
 			this.id=invalidPermanent.getId();
 		}
 
 		@Override
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			return targetFilter.accept(game,player,target)&&((MagicPermanent)target).getId()!=id;
 		}
 		
 		@Override
 		public boolean acceptType(final MagicTargetType targetType) {
-
 			return targetFilter.acceptType(targetType);
 		}		
 	};
@@ -1816,6 +1787,7 @@ public interface MagicTargetFilter {
 			}
 			return targetFilter.accept(game,player,target) && accept;
 		}
+
 		@Override
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetFilter.acceptType(targetType);
@@ -1827,18 +1799,15 @@ public interface MagicTargetFilter {
 		private final MagicCardDefinition cardDefinition;
 		
 		public CardTargetFilter(final MagicCardDefinition cardDefinition) {
-			
 			this.cardDefinition=cardDefinition;
 		}
 
 		@Override
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			return (((MagicPermanent)target).getCardDefinition()==cardDefinition);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
@@ -1848,18 +1817,15 @@ public interface MagicTargetFilter {
 		private final String name;
 		
 		public NameTargetFilter(final String name) {
-
 			this.name=name;
 		}
 
 		@Override
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-
 			return name.equals(target.getName());
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}		
 	};
