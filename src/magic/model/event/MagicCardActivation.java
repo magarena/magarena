@@ -64,9 +64,9 @@ public class MagicCardActivation extends MagicActivation {
 	}
 
 	@Override
-	final MagicTargetChoice getTargetChoice() {
+	final MagicTargetChoice getTargetChoice(final MagicSource source) {
 		// Not the cleanest way to do this by far...
-		final MagicCard card=new MagicCard(getCardDefinition(),MagicPlayer.NONE,0);
+		final MagicCard card=(MagicCard)source;
 		final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,MagicPayedCost.NO_COST);
 		return cardOnStack.getEvent().getTargetChoice();
 	}	
