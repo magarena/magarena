@@ -1,0 +1,15 @@
+>Diregraf Captain
+url=http://magiccards.info/dka/en/135.html
+image=http://magiccards.info/scans/en/dka/135.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Zombie,Soldier
+color=ub
+converted=3
+cost={1}{U}{B}
+pt=2/2
+ability=deathtouch
+static=player
+timing=fmain
+requires_card_code
