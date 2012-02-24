@@ -47,11 +47,71 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
+  Tyrael for implementing new cards
+  
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
 
 
+
+Release 1.23 (February 25, 2012)
+============
+- added double-clicking right mouse button in deck pane adds a copy of selected card to deck
+- added drawing of counters for every permanent instead of for creatures only
+- added drawing of +1/+1 and -1/-1 counters in graphics mode
+- changed splash screen to show on all platforms
+- added saving a description to a deck
+- added 8 new decks
+
+- fixed: skip choosing of mana source when mana cost equals total amount of sources
+- fixed: running the deck strength calculator updates history
+- fixed: Curiosity only triggers on combat damage
+- fixed: Mistbind Clique can only champion Faerie creatures instead of every Faerie subtype
+- fixed: Oblivion Ring's ability can target cards that have shroud
+- fixed: Blade of the Bloodchief doesn't check if it's equipped
+- fixed: Dread (and other Incarnations) doesn't get reshuffled into library when milled
+- fixed: when Platinum Angel is in play, reducing opponent to 0 life isn't sufficient to win the game
+- fixed: Avacynian Priest can tap any non-human permanent instead of non-human creatures.
+- fixed: when at exactly 1 life, shocklands come into play untapped
+- fixed: Vindicate has the image of Orim's Chant
+- fixed: AEther vial's and Legacy's Allure abilities missing
+
+- added the following cards:
+Alpha Brawl
+Ancestral Recall
+Black Cat
+Boggart Shenanigans
+Break of Day
+Death's Caress
+Diregraf Captain
+Endless Wurm
+Erdwal Ripper
+Ertai, Wizard Adept
+Falkenrath Aristocrat
+Forge Devil
+Geralf's Messenger
+Goblin Bombardment
+Heckling Fiends
+Hellrider
+Ib Halfheart Goblin Tactician
+Jayemdae Tome
+Kamahl, Fist of Krosa
+Knucklebone Witch
+Mad Auntie
+Markov Blademaster
+Moonveil Dragon
+Nearheath Stalker
+Rhox
+Russet Wolves
+Scorch the Fields
+Strangleroot Geist
+Stromkirk Captain
+Subversion
+Torch Fiend
+Vorapede
+Weatherseed Treefolk
+Wrack with Madness
 
 Release 1.22 (January 28, 2012)
 ============
