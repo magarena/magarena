@@ -20,6 +20,7 @@ Alabaster Mage
 Algae Gharial
 Alloy Myr
 Alluring Siren
+Alpha Brawl
 Alpha Tyrranax
 Ambush Viper
 Amphin Cutthroat
@@ -83,6 +84,7 @@ Benalish Veteran
 Berserkers of Blood Ridge
 Bestial Menace
 Birds of Paradise
+Black Cat
 Blackcleave Cliffs
 Blackcleave Goblin
 Black Knight
@@ -121,6 +123,7 @@ Bountiful Harvest
 Brain Weevil
 Bramble Creeper
 Bramblecrush
+Break of Day
 Brimstone Mage
 Brindle Boar
 Brink of Disaster
@@ -216,6 +219,7 @@ Deathforge Shaman
 Deathgreeter
 Deathless Angel
 Deathmark
+Death's Caress
 Deft Duelist
 Demolish
 Demon's Horn
@@ -223,6 +227,7 @@ Demystify
 Devouring Swarm
 Devout Lightcaster
 Diminish
+Diregraf Captain
 Diregraf Ghoul
 Disciple of Griselbrand
 Disentomb
@@ -269,6 +274,7 @@ Enclave Elite
 Endless Ranks of the Dead
 Engulfing Slagwurm
 Enormous Baloth
+Erdwal Ripper
 Escaped Null
 Esper Battlemage
 Esper Cormorants
@@ -281,6 +287,7 @@ Explore
 Ezuri, Renegade Leader
 Ezuri's Archers
 Ezuri's Brigade
+Falkenrath Aristocrat
 Falkenrath Marauders
 Falkenrath Noble
 Feral Ridgewolf
@@ -299,6 +306,7 @@ Flensermite
 Flight
 Fog
 Forest
+Forge Devil
 Fortress Crab
 Frightful Delusion
 Frost Titan
@@ -311,6 +319,7 @@ Gavony Township
 Geistcatcher's Rig
 Geist-Honored Monk
 Geist of Saint Traft
+Geralf's Messenger
 Geyser Glider
 Ghalma's Warden
 Ghoulraiser
@@ -396,11 +405,13 @@ Halimar Wavewatch
 Halt Order
 Hamlet Captain
 Hand of the Praetors
+Heckling Fiends
 Hedron Crab
 Hedron-Field Purists
 Hedron Rover
 Hedron Scrabbler
 Hellkite Overlord
+Hellrider
 Hero of Bladehold
 Hideous End
 Hideous Visage
@@ -533,6 +544,7 @@ Manor Skeleton
 Marisi's Twinclaws
 Maritime Guard
 Mark of Mutiny
+Markov Blademaster
 Markov Patrician
 Marrow Chomper
 Marsh Casualties
@@ -570,6 +582,7 @@ Molder Beast
 Moldgraf Monstrosity
 Moment of Heroism
 Moon Heron
+Moonveil Dragon
 Mordant Dragon
 Moriok Reaver
 Morkrut Banshee
@@ -588,6 +601,7 @@ Naturalize
 Nature's Claim
 Nature's Spiral
 Naya Hushblade
+Nearheath Stalker
 Necrogen Censer
 Necrogen Scudder
 Necropede
@@ -698,6 +712,7 @@ Rotting Legion
 Royal Assassin
 Runeclaw Bear
 Rupture Spire
+Russet Wolves
 Rusted Sentinel
 Ruthless Cullblade
 Sacred Wolf
@@ -708,6 +723,7 @@ Savage Lands
 Scattershot Archer
 Scavenger Drake
 Scepter of Dominance
+Scorch the Fields
 Scoria Elemental
 Scourge of Geier Reach
 Scourge Servant
@@ -812,7 +828,9 @@ Stone Golem
 Stonework Puma
 Stormfront Pegasus
 Strandwalker
+Strangleroot Geist
 Strider Harness
+Stromkirk Captain
 Stromkirk Noble
 Stromkirk Patrol
 Student of Warfare
@@ -853,6 +871,7 @@ Time Warp
 Tine Shrike
 Titanic Growth
 Titanic Ultimatum
+Torch Fiend
 Tormented Soul
 Tower Gargoyle
 Traitorous Blood
@@ -911,6 +930,7 @@ Voiceless Spirit
 Volcanic Dragon
 Volcanic Fallout
 Volcanic Strength
+Vorapede
 Vulshok Berserker
 Vulshok Refugee
 Walking Corpse
@@ -942,6 +962,7 @@ Wooden Stake
 Woodland Cemetery
 Woodland Sleuth
 Woolly Thoctar
+Wrack with Madness
 Wreath of Geists
 Wretched Banquet
 Wrexial, the Risen Deep
