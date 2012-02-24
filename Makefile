@@ -11,7 +11,7 @@ EXE:=release/Magarena.exe
 all: $(MAG) $(EXE) tags
 
 zips:
-	make M`hg tags | cut -d' ' -f1 | grep -v tip | head -1`
+	make M`grep Release release/README.txt | head -1 | cut -d' ' -f2`
 
 check_literals:
 	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
