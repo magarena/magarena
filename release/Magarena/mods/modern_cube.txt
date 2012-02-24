@@ -187,6 +187,7 @@ Body of Jukai
 Bogardan Firefiend
 Boggart Mob
 Boggart Ram-Gang
+Boggart Shenanigans
 Bog Imp
 Bog Raiders
 Bog Tatters
@@ -689,6 +690,7 @@ Hurricane
 Hyena Umbra
 Hypnotic Specter
 Hysterical Blindness
+Ib Halfheart, Goblin Tactician
 Icatian Priest
 Ichorclaw Myr
 Ichor Rats
@@ -727,6 +729,7 @@ Isolated Chapel
 Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
+Jayemdae Tome
 Jenara, Asura of War
 Jhessian Balmgiver
 Jhessian Infiltrator
@@ -791,6 +794,7 @@ Kjeldoran Javelineer
 Knight Exemplar
 Knight of Cliffhaven
 Knight of Meadowgrain
+Knucklebone Witch
 Kodama of the Center Tree
 Kodama of the North Tree
 Kokusho, the Evening Star
@@ -860,6 +864,7 @@ Lumberknot
 Lumengrid Drake
 Lumengrid Gargoyle
 Lumengrid Warden
+Mad Auntie
 Madrush Cyclops
 Maelstrom Pulse
 Mage Slayer
@@ -1131,6 +1136,7 @@ Retaliator Griffin
 Reverberate
 Reviving Dose
 Reya Dawnbringer
+Rhox
 Rhox Brute
 Rhox Charger
 Rhox Pikemaster
