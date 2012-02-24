@@ -1,0 +1,14 @@
+>Farbog Boneflinger
+url=http://magiccards.info/dka/en/61.html
+image=http://magiccards.info/scans/en/dka/61.jpg
+value=2
+rarity=U
+removal=2
+type=Creature
+subtype=Zombie
+color=b
+converted=5
+cost={4}{B}
+pt=2/2
+timing=fmain
+requires_card_code
