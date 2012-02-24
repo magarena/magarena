@@ -48,7 +48,6 @@ Thanks to
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
   Tyrael for implementing new cards
-  
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
@@ -76,6 +75,7 @@ Release 1.23 (February 25, 2012)
 - fixed: when at exactly 1 life, shocklands come into play untapped
 - fixed: Vindicate has the image of Orim's Chant
 - fixed: AEther Vial and Legacy's Allure's abilities missing
+- fixed: Nephalia Drownyard can tap itself for mana while using its ability
 
 - added the following cards:
   Alpha Brawl
@@ -89,22 +89,30 @@ Release 1.23 (February 25, 2012)
   Erdwal Ripper
   Ertai, Wizard Adept
   Falkenrath Aristocrat
+  Falkenrath Torturer
+  Farbog Boneflinger
   Forge Devil
   Geralf's Messenger
   Goblin Bombardment
+  Harrowing Journey
   Heckling Fiends
   Hellrider
+  Highborn Ghoul
   Ib Halfheart Goblin Tactician
   Jayemdae Tome
   Kamahl, Fist of Krosa
   Knucklebone Witch
   Mad Auntie
   Markov Blademaster
+  Mikaeus, the Unhallowed
   Moonveil Dragon
   Nearheath Stalker
   Rhox
   Russet Wolves
   Scorch the Fields
+  Sightless Ghoul
+  Skirsdag Flayer
+  Spiteful Shadows
   Strangleroot Geist
   Stromkirk Captain
   Subversion
