@@ -11,16 +11,17 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPayManaCostTapEvent;
+import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Goblin_Burrows {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
-				MagicCondition.CAN_TAP_CONDITION,
-				MagicManaCost.ONE_RED.getCondition()
+				MagicManaCost.TWO_RED.getCondition(), //add ONE for the card itself
+				MagicCondition.CAN_TAP_CONDITION	
 			},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
@@ -28,7 +29,8 @@ public class Goblin_Burrows {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_RED)};
+					new MagicTapEvent((MagicPermanent)source),
+					new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)};
 		}
 
 		@Override

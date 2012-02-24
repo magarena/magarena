@@ -11,8 +11,10 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPayManaCostTapEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -22,15 +24,16 @@ import java.util.Collection;
 public class Gavony_Township {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
 			new MagicCondition[]{
-				MagicCondition.CAN_TAP_CONDITION,
-				MagicManaCost.TWO_GREEN_WHITE.getCondition()
+				MagicManaCost.THREE_GREEN_WHITE.getCondition(), //add ONE for the card itself
+				MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.TWO_GREEN_WHITE)};
+					new MagicTapEvent((MagicPermanent)source),
+					new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN_WHITE)};
 		}
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

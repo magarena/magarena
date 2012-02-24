@@ -14,22 +14,25 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPayManaCostTapEvent;
+import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Academy_Ruins {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
 			new MagicCondition[] {
+					MagicManaCost.TWO_BLUE.getCondition(),
 					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.ONE_BLUE.getCondition()},
+			},
             new MagicActivationHints(MagicTiming.Main),
             "Card") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
+					new MagicTapEvent((MagicPermanent)source),
+					new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
 		}
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

@@ -13,16 +13,17 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPayManaCostTapEvent;
+import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 
 public class Stensia_Bloodhall {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicCondition.CAN_TAP_CONDITION,
-            		MagicManaCost.THREE_BLACK_RED.getCondition()
+            		MagicManaCost.FOUR_BLACK_RED.getCondition(), //add ONE for the card itself
+            		MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
@@ -30,7 +31,8 @@ public class Stensia_Bloodhall {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.THREE_BLACK_RED)};
+					new MagicTapEvent((MagicPermanent)source),
+					new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE_BLACK_RED)};
 		}
 
 		@Override
