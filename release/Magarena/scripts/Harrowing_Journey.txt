@@ -1,0 +1,11 @@
+>Harrowing Journey
+url=http://magiccards.info/dka/en/67.html
+image=http://magiccards.info/scans/en/dka/67.jpg
+value=4
+rarity=U
+type=Sorcery
+color=b
+converted=5
+cost={4}{B}
+timing=draw
+requires_card_code
