@@ -1,0 +1,13 @@
+>Skirsdag Flayer
+url=http://magiccards.info/dka/en/74.html
+image=http://magiccards.info/scans/en/dka/74.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Cleric
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+timing=main
+requires_card_code

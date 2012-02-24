@@ -1,0 +1,12 @@
+>Spiteful Shadows
+url=http://magiccards.info/dka/en/75.html
+image=http://magiccards.info/scans/en/dka/75.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=2
+cost={1}{B}
+timing=aura
+requires_card_code
