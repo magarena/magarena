@@ -259,21 +259,6 @@ public interface MagicCondition {
 			return permanent.getPower(game) >= 4;
 		}
 	};
-	
-	MagicCondition HAS_CREATURE_WITH_CMC_CONDITION = new MagicCondition() {
-		public boolean accept(final MagicGame game,final MagicSource source) {
-			final MagicPlayer player = source.getController();
-			final int charges = ((MagicPermanent) source).getCounters(MagicCounterType.Charge);
-			final Collection<MagicTarget> targets =
-	                game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND);
-			for (final MagicTarget target : targets) {
-				if (((MagicCard)target).getCardDefinition().hasConvertedCost(charges)) {
-					return true;
-				}
-			}
-			return false;
-		}
-	};
 		
 	boolean accept(final MagicGame game,final MagicSource source);
 }
