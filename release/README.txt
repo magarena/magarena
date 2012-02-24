@@ -75,43 +75,43 @@ Release 1.23 (February 25, 2012)
 - fixed: Avacynian Priest can tap any non-human permanent instead of non-human creatures.
 - fixed: when at exactly 1 life, shocklands come into play untapped
 - fixed: Vindicate has the image of Orim's Chant
-- fixed: AEther vial's and Legacy's Allure abilities missing
+- fixed: AEther Vial and Legacy's Allure's abilities missing
 
 - added the following cards:
-Alpha Brawl
-Ancestral Recall
-Black Cat
-Boggart Shenanigans
-Break of Day
-Death's Caress
-Diregraf Captain
-Endless Wurm
-Erdwal Ripper
-Ertai, Wizard Adept
-Falkenrath Aristocrat
-Forge Devil
-Geralf's Messenger
-Goblin Bombardment
-Heckling Fiends
-Hellrider
-Ib Halfheart Goblin Tactician
-Jayemdae Tome
-Kamahl, Fist of Krosa
-Knucklebone Witch
-Mad Auntie
-Markov Blademaster
-Moonveil Dragon
-Nearheath Stalker
-Rhox
-Russet Wolves
-Scorch the Fields
-Strangleroot Geist
-Stromkirk Captain
-Subversion
-Torch Fiend
-Vorapede
-Weatherseed Treefolk
-Wrack with Madness
+  Alpha Brawl
+  Ancestral Recall
+  Black Cat
+  Boggart Shenanigans
+  Break of Day
+  Death's Caress
+  Diregraf Captain
+  Endless Wurm
+  Erdwal Ripper
+  Ertai, Wizard Adept
+  Falkenrath Aristocrat
+  Forge Devil
+  Geralf's Messenger
+  Goblin Bombardment
+  Heckling Fiends
+  Hellrider
+  Ib Halfheart Goblin Tactician
+  Jayemdae Tome
+  Kamahl, Fist of Krosa
+  Knucklebone Witch
+  Mad Auntie
+  Markov Blademaster
+  Moonveil Dragon
+  Nearheath Stalker
+  Rhox
+  Russet Wolves
+  Scorch the Fields
+  Strangleroot Geist
+  Stromkirk Captain
+  Subversion
+  Torch Fiend
+  Vorapede
+  Weatherseed Treefolk
+  Wrack with Madness
 
 Release 1.22 (January 28, 2012)
 ============
