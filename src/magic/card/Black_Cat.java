@@ -16,15 +16,16 @@ public class Black_Cat {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
+            if (triggerData.fromLocation != MagicLocationType.Play) {
+                return MagicEvent.NONE;
+            }
 			final MagicPlayer opponent = game.getOpponent(permanent.getController());
-			return (MagicLocationType.Play == triggerData.fromLocation) ?
-                new MagicEvent(
+			return new MagicEvent(
                         permanent,
                         permanent.getController(),
                         new Object[]{permanent,opponent},
                         this,
-                        opponent + " discards a card at random."):
-                MagicEvent.NONE;
+                        opponent + " discards a card at random.");
 		}
 
 		@Override
