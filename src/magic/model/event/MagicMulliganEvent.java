@@ -23,7 +23,7 @@ public class MagicMulliganEvent extends MagicEvent {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				final MagicCardList hand = new MagicCardList(player.getHand());
-				final int size = player.getHand().size();
+				final int size = hand.size();
 				for (final MagicCard card : hand) {
 					game.doAction(new MagicMoveCardAction(
 							card,
