@@ -185,7 +185,7 @@ test: $(MAG)
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(JAVA) -DrndSeed=$* -DselfMode magic.MagicMain >> $*.log 2>&1
+	$(JAVAEA) -DrndSeed=$* -DselfMode -jar $^ >> $*.log 2>&1
 
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
@@ -208,7 +208,7 @@ decks/td_%.dec: scripts/dailyhtml2dec.awk
 	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/td/$* | awk -f $^ > $@
 
 ref/rules.txt:
-	curl http://www.wizards.com/magic/comprules/MagicCompRules_20110930.txt | fmt -s > $@
+	curl http://www.wizards.com`wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
 	flip -u $@
 
 resources/magic/data/icons/missing_card.png:
