@@ -472,9 +472,11 @@ Faerie Conclave
 Falkenrath Aristocrat
 Falkenrath Marauders
 Falkenrath Noble
+Falkenrath Torturer
 Fallen Angel
 Fallowsage
 Fangren Hunter
+Farbog Boneflinger
 Femeref Archers
 Feral Ridgewolf
 Ferrovore
@@ -658,6 +660,7 @@ Hand of Cruelty
 Hand of Honor
 Hand of the Praetors
 Harmonize
+Harrowing Journey
 Harvest Gwyllion
 Hateflayer
 Havenwood Wurm
@@ -673,6 +676,7 @@ Henchfiend of Ukor
 Hero of Bladehold
 Hideous End
 Hideous Visage
+Highborn Ghoul
 Highland Berserker
 Highway Robber
 Hillcomber Giant
@@ -922,6 +926,7 @@ Midnight Haunting
 Might of Oaks
 Mighty Leap
 Mikaeus, the Lunarch
+Mikaeus, the Unhallowed
 Mind Rot
 Mindshrieker
 Mind Spring
@@ -1262,6 +1267,7 @@ Sickleslicer
 Siege-Gang Commander
 Siege Mastodon
 Sift
+Sightless Ghoul
 Sigil Blessing
 Sigiled Behemoth
 Sigiled Paladin
@@ -1282,6 +1288,7 @@ Skinrender
 Skinshifter
 Skinwing
 Skirsdag Cultist
+Skirsdag Flayer
 Skithiryx, the Blight Dragon
 Skitter of Lizards
 Skullcage
@@ -1352,6 +1359,7 @@ Spire Monitor
 Spirit Link
 Spirit Mantle
 Spirit of the Hearth
+Spiteful Shadows
 Spiteful Visions
 Spitemare
 Splinterfright

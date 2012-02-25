@@ -290,6 +290,8 @@ Ezuri's Brigade
 Falkenrath Aristocrat
 Falkenrath Marauders
 Falkenrath Noble
+Falkenrath Torturer
+Farbog Boneflinger
 Feral Ridgewolf
 Ferrovore
 Festerhide Boar
@@ -405,6 +407,7 @@ Halimar Wavewatch
 Halt Order
 Hamlet Captain
 Hand of the Praetors
+Harrowing Journey
 Heckling Fiends
 Hedron Crab
 Hedron-Field Purists
@@ -415,6 +418,7 @@ Hellrider
 Hero of Bladehold
 Hideous End
 Hideous Visage
+Highborn Ghoul
 Highland Berserker
 Hinterland Harbor
 Hoard-Smelter Dragon
@@ -572,6 +576,7 @@ Midnight Haunting
 Might of Oaks
 Mighty Leap
 Mikaeus, the Lunarch
+Mikaeus, the Unhallowed
 Mind Rot
 Mindshrieker
 Mind Spring
@@ -757,6 +762,7 @@ Shrine of Burning Rage
 Sickleslicer
 Siege-Gang Commander
 Siege Mastodon
+Sightless Ghoul
 Sigil Blessing
 Sigiled Behemoth
 Sigiled Paladin
@@ -770,6 +776,7 @@ Skinrender
 Skinshifter
 Skinwing
 Skirsdag Cultist
+Skirsdag Flayer
 Skithiryx, the Blight Dragon
 Skitter of Lizards
 Skullmulcher
@@ -813,6 +820,7 @@ Spined Wurm
 Spiraling Duelist
 Spire Monitor
 Spirit Mantle
+Spiteful Shadows
 Splinterfright
 Sporecap Spider
 Sprouting Thrinax

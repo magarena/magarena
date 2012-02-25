@@ -585,11 +585,13 @@ Faerie Squadron
 Falkenrath Aristocrat
 Falkenrath Marauders
 Falkenrath Noble
+Falkenrath Torturer
 Fallen Angel
 Fallen Askari
 Fallowsage
 Fangren Hunter
 Fanning the Flames
+Farbog Boneflinger
 Farrel's Zealot
 Femeref Archers
 Femeref Knight
@@ -811,6 +813,7 @@ Hand of Cruelty
 Hand of Honor
 Hand of the Praetors
 Harmonize
+Harrowing Journey
 Harvest Gwyllion
 Hateflayer
 Havenwood Wurm
@@ -830,6 +833,7 @@ Heroes' Reunion
 Hero of Bladehold
 Hideous End
 Hideous Visage
+Highborn Ghoul
 Highland Berserker
 Highway Robber
 Hillcomber Giant
@@ -1117,6 +1121,7 @@ Midnight Haunting
 Might of Oaks
 Mighty Leap
 Mikaeus, the Lunarch
+Mikaeus, the Unhallowed
 Mind Games
 Mind Peel
 Mind Rot
@@ -1522,6 +1527,7 @@ Sidar Jabari
 Siege-Gang Commander
 Siege Mastodon
 Sift
+Sightless Ghoul
 Sigil Blessing
 Sigiled Behemoth
 Sigiled Paladin
@@ -1547,6 +1553,7 @@ Skinrender
 Skinshifter
 Skinwing
 Skirsdag Cultist
+Skirsdag Flayer
 Skithiryx, the Blight Dragon
 Skitter of Lizards
 Skullcage
@@ -1634,6 +1641,7 @@ Spirit Link
 Spirit Mantle
 Spiritmonger
 Spirit of the Hearth
+Spiteful Shadows
 Spiteful Visions
 Spitemare
 Splinterfright
