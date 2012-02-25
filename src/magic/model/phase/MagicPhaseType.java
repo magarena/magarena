@@ -2,6 +2,7 @@ package magic.model.phase;
 
 public enum MagicPhaseType {
 
+	Mulligan("Mulligan"),
 	Untap("Untap"),
 	Upkeep("Upkeep"),
 	Draw("Draw"),

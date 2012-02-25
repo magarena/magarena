@@ -45,6 +45,7 @@ public class MagicPlayer implements MagicTarget {
 	private int extraTurns;
 	private int attackers;
 	private int blockers;
+	private boolean SmartShuffleUsed;
     private final MagicCardList hand;
 	private final MagicCardList library;
 	private final MagicCardList graveyard;
@@ -269,8 +270,10 @@ public class MagicPlayer implements MagicTarget {
 
 		if (library.useSmartShuffle()) {
 			library.smartShuffle(seed);
+			setSmartShuffleUsed(true);
 		} else {
 			library.shuffle(seed);
+			setSmartShuffleUsed(false);
 		}
 
 		for (int count = handSize; count > 0 && !library.isEmpty(); count--) {
@@ -278,6 +281,14 @@ public class MagicPlayer implements MagicTarget {
 		}
 	}
 	
+	public boolean getSmartShuffleUsed() {
+		return SmartShuffleUsed;
+	}
+	
+	private void setSmartShuffleUsed(boolean b) {
+		this.SmartShuffleUsed = b;
+	}
+
 	public MagicCardList getLibrary() {
 		return library;
 	}

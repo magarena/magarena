@@ -10,12 +10,14 @@ public class MagicDefaultGameplay implements MagicGameplay {
 	
 	@Override
 	public MagicPhase getStartPhase(final MagicGame game) {
-		return MagicUntapPhase.getInstance();
+		return MagicMulliganPhase.getInstance();
 	}
 	
 	@Override
 	public MagicPhase getNextPhase(final MagicGame game) {
 		switch (game.getPhase().getType()) {
+			case Mulligan:
+				return MagicUntapPhase.getInstance();
 			case Untap:
 				return MagicUpkeepPhase.getInstance();
 			case Upkeep:
