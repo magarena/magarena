@@ -1029,6 +1029,16 @@ public interface MagicTargetFilter {
 			return targetType == MagicTargetType.Permanent;
 		}		
 	};
+	
+	MagicTargetFilter TARGET_HUMAN = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {		
+			return ((MagicPermanent)target).isCreature(game) &&
+					((MagicPermanent)target).hasSubType(MagicSubType.Human,game);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {	
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
     
 	MagicTargetFilter TARGET_HUMAN_YOU_CONTROL = new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {		
