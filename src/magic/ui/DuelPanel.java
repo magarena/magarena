@@ -80,7 +80,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 		newDuelButton.setFocusable(false);
 		buttonsPanel.add(newDuelButton);
 
-		buttonsPanel.add(Box.createHorizontalStrut(SPACING));
+		//buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 		
 		// restart button
 		restartButton = new JButton(RESTART_BUTTON_TEXT);
@@ -90,7 +90,7 @@ public class DuelPanel extends JPanel implements ActionListener {
 		restartButton.setEnabled(duel.getGamesPlayed() > 0);
 		buttonsPanel.add(restartButton);
 		
-		buttonsPanel.add(Box.createHorizontalStrut(SPACING));
+		//buttonsPanel.add(Box.createHorizontalStrut(SPACING));
 		
 		// play button
 		playButton = new JButton(PLAY_BUTTON_START_TEXT);
@@ -301,9 +301,11 @@ public class DuelPanel extends JPanel implements ActionListener {
         springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
                              -SPACING, SpringLayout.NORTH, buttonsPanel);
         springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
-                             -20, SpringLayout.EAST, leftScrollPane);
+                             SPACING, SpringLayout.WEST, tabbedPane);
         springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
                              -SPACING, SpringLayout.SOUTH, backgroundImage);
+        springLayout.putConstraint(SpringLayout.WEST, buttonsPanel,
+                             SPACING, SpringLayout.WEST, backgroundImage);
 		
 	}
 
