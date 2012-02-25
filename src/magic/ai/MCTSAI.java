@@ -2,6 +2,7 @@ package magic.ai;
 
 import magic.data.LRUCache;
 import magic.model.MagicGame;
+import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicBuilderPayManaCostResult;
 import magic.model.event.MagicEvent;
@@ -103,6 +104,7 @@ public class MCTSAI implements MagicAI {
     }
 
     private void log(final String message) {
+    	MagicGameLog.log(message);
         if (LOGGING) {
             System.err.println(message);
         }

@@ -10,6 +10,7 @@ import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicGame;
+import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicDuel;
@@ -649,6 +650,8 @@ public class MagicFrame extends JFrame implements ActionListener {
 		}
 		config.setConfirmExit(!dontShowAgain);
 		config.save();
+		
+		MagicGameLog.close();
 
         /*
         if (gamePanel != null) {

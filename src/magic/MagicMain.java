@@ -6,6 +6,7 @@ import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.History;
 import magic.data.KeywordDefinitions;
+import magic.model.MagicGameLog;
 import magic.ui.MagicFrame;
 import java.io.File;
 import javax.swing.SwingUtilities;
@@ -22,7 +23,10 @@ public class MagicMain {
 	public static void main(final String args[]) {	
         // setup the handler for any uncaught exception
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
-		
+        
+        // setup the game log
+        MagicGameLog.initialize();
+        
         // show the data folder being used
         System.err.println("Data folder : "+GAME_PATH);
 		
