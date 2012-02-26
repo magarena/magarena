@@ -1,0 +1,11 @@
+>Grim Flowering
+url=http://magiccards.info/dka/en/117.html
+image=http://magiccards.info/scans/en/dka/117.jpg
+value=4
+rarity=U
+type=Sorcery
+color=g
+converted=6
+cost={5}{G}
+timing=draw
+requires_card_code
