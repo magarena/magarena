@@ -1,0 +1,11 @@
+>Hunger of the Howlpack
+url=http://magiccards.info/dka/en/119.html
+image=http://magiccards.info/scans/en/dka/119.jpg
+value=2
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+requires_card_code
