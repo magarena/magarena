@@ -240,6 +240,7 @@ daily: $(EXE)
 			-p magarena \
 			-u melvinzhang@gmail.com \
 			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
+			-l Deprecated \
 			Magarena_`hg id -n`.exe
 
 download/Magarena-%.app.zip:
