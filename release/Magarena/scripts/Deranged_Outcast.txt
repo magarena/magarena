@@ -1,0 +1,13 @@
+>Deranged Outcast
+url=http://magiccards.info/dka/en/112.html
+image=http://magiccards.info/scans/en/dka/112.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Rogue
+color=g
+converted=2
+cost={1}{G}
+pt=2/1
+timing=main
+requires_card_code
