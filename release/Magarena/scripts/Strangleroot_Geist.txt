@@ -10,4 +10,4 @@ converted=2
 cost={G}{G}
 pt=2/1
 ability=haste,undying
-timing=main
+timing=fmain
