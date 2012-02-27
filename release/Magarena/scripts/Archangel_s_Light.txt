@@ -1,0 +1,11 @@
+>Archangel's Light
+url=http://magiccards.info/dka/en/1.html
+image=http://magiccards.info/scans/en/dka/1.jpg
+value=4
+rarity=M
+type=Sorcery
+color=w
+converted=8
+cost={7}{W}
+timing=draw
+requires_card_code

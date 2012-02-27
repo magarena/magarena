@@ -1,0 +1,13 @@
+>Young Wolf
+url=http://magiccards.info/dka/en/134.html
+image=http://magiccards.info/scans/en/dka/134.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Wolf
+color=g
+converted=1
+cost={G}
+pt=1/1
+ability=undying
+timing=main
