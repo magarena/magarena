@@ -1,0 +1,13 @@
+>Kessig Recluse
+url=http://magiccards.info/dka/en/121.html
+image=http://magiccards.info/scans/en/dka/121.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spider
+color=g
+converted=4
+cost={2}{G}{G}
+pt=2/3
+ability=reach,deathtouch
+timing=main
