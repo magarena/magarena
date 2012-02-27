@@ -1,0 +1,14 @@
+>Village Survivors
+url=http://magiccards.info/dka/en/130.html
+image=http://magiccards.info/scans/en/dka/130.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Human
+color=g
+converted=5
+cost={4}{G}
+pt=4/5
+ability=vigilance
+timing=fmain
+requires_card_code

@@ -1,0 +1,13 @@
+>Ulvenwald Bear
+url=http://magiccards.info/dka/en/129.html
+image=http://magiccards.info/scans/en/dka/129.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Bear
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+timing=smain
+requires_card_code
