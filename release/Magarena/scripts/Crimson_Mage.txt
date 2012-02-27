@@ -7,7 +7,7 @@ type=Creature
 subtype=Human,Shaman
 color=r
 converted=2
-cost={R}
+cost={1}{R}
 pt=2/1
 timing=fmain
 requires_card_code
