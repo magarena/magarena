@@ -1,0 +1,11 @@
+>Gather the Townsfolk
+url=http://magiccards.info/dka/en/8.html
+image=http://magiccards.info/scans/en/dka/8.jpg
+value=3
+rarity=C
+type=Sorcery
+color=w
+converted=2
+cost={1}{W}
+timing=main
+requires_card_code

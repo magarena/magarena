@@ -1,0 +1,15 @@
+>Elgaud Inquisitor
+url=http://magiccards.info/dka/en/6.html
+image=http://magiccards.info/scans/en/dka/6.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=4
+cost={3}{W}
+pt=2/2
+ability=lifelink
+timing=main
+requires_card_code
+	
