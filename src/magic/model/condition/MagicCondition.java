@@ -259,6 +259,13 @@ public interface MagicCondition {
 			return permanent.getPower(game) >= 4;
 		}
 	};
+	
+	MagicCondition ENCHANTED_IS_UNTAPPED_CONDITION = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			final MagicPermanent permanent = (MagicPermanent)source;
+			return permanent.getEnchantedCreature().isUntapped();
+		}
+	};
 		
 	boolean accept(final MagicGame game,final MagicSource source);
 }

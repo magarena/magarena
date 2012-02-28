@@ -1,0 +1,11 @@
+>Bar the Door
+url=http://magiccards.info/dka/en/2.html
+image=http://magiccards.info/scans/en/dka/2.jpg
+value=3
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=pump
+requires_card_code

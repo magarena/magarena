@@ -1,0 +1,13 @@
+>Burden of Guilt
+url=http://magiccards.info/dka/en/4.html
+image=http://magiccards.info/scans/en/dka/4.jpg
+value=2
+removal=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=1
+cost={W}
+timing=tapping
+requires_card_code
