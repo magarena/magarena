@@ -1,0 +1,15 @@
+>Drogskol Captain
+url=http://magiccards.info/dka/en/136.html
+image=http://magiccards.info/scans/en/dka/136.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit,Soldier
+color=wu
+converted=3
+cost={1}{W}{U}
+pt=2/2
+ability=flying
+static=player
+timing=fmain
+requires_card_code
