@@ -40,8 +40,8 @@ public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
                 new Object[]{amount},
                 this,
                 amount > 1 ?
-            		player + " may put " + amount + " +1/+1 counters on target artifact creature." :
-            		player + " may put a +1/+1 counter on target artifact creature.");
+            		player + " may$ put " + amount + " +1/+1 counters on target artifact creature$." :
+            		player + " may$ put a +1/+1 counter on target artifact creature$.");
 		}
 		return MagicEvent.NONE;
 	}
