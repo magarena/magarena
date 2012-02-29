@@ -1,6 +1,7 @@
 package magic.model.choice;
 
 import magic.model.MagicCostManaType;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
@@ -127,11 +128,11 @@ public class MagicPayManaCostChoice extends MagicChoice {
 			
 			final int costMinAmount = builderCost.getMinimumAmount();
 			final Set<Object> validSources=builder.getManaSources(costManaType,!canSkip);
-			final MagicPermanent sourcePermanent;
+			MagicPermanent sourcePermanent = (MagicPermanent)validSources.iterator().next();
 			if (canSkip && 
 				(validSources.size() == 1 ||
-				builder.getActivationsSize() == costMinAmount)) {
-				sourcePermanent=(MagicPermanent)validSources.iterator().next();
+				(builder.getActivationsSize() == costMinAmount &&
+				sourcePermanent.getCounters(MagicCounterType.Charge) == 0))) {
 			} else {
 				controller.setValidChoices(validSources,false);
 				controller.showMessage(source,"Choose a mana source to pay "+costManaType.getText()+".");
