@@ -420,10 +420,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		lastKnownColorFlags = getColorFlags(game);
 	}
 	
-	public MagicPowerToughness getLastKnownPowerToughness() {
-		return lastKnownPowerToughness;
-	}
-	
 	public long getAllAbilityFlags(final MagicGame game,final boolean turn) {
 		// Check if cached.
 		if (cached&&turn) {
