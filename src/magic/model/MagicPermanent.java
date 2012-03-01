@@ -147,6 +147,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean isOnBattlefield(final MagicGame game) {
+    	if (this == MagicPermanent.NONE) {
+    		// the calling method will treat this as MagicCardDefinition UNKNOWN
+    		return true;
+    	}
     	for (final MagicPlayer player : game.getPlayers()) {
 			if (player.controlsPermanent(this)) {
 				return true;
