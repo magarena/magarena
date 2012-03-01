@@ -18,7 +18,7 @@ public class Reaper_from_the_Abyss {
     				new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        MagicTargetChoice.NEG_TARGET_NON_DEMON,
+                        MagicTargetChoice.TARGET_NON_DEMON,
                         new MagicDestroyTargetPicker(false),
                         MagicEvent.NO_DATA,
                         this,
