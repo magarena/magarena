@@ -23,7 +23,7 @@ public class MagicDestroyAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		final Collection<MagicTarget> toBeDestroyed = new ArrayList<MagicTarget>();
+		final Collection<MagicPermanent> toBeDestroyed = new ArrayList<MagicPermanent>();
 		for (final MagicTarget target : targets) {
 			boolean destroy = true;
 			final MagicPermanent permanent = (MagicPermanent)target;
@@ -61,9 +61,8 @@ public class MagicDestroyAction extends MagicAction {
 			}
 		}
         
-		for (final MagicTarget target : toBeDestroyed) {
+		for (final MagicPermanent permanent : toBeDestroyed) {
 			// Destroyed
-			final MagicPermanent permanent = (MagicPermanent)target;
 	        game.logAppendMessage(permanent.getController(),permanent.getName()+" is destroyed.");
 	        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
 		}  
