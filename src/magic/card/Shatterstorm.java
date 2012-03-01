@@ -38,8 +38,8 @@ public class Shatterstorm {
                 game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_ARTIFACT);			
 			for (final MagicTarget target : targets) {
 				game.doAction(new MagicChangeStateAction((MagicPermanent)target,MagicPermanentState.CannotBeRegenerated,true));
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
 			}
+			game.doAction(new MagicDestroyAction(targets));
 		}
 	};
 }

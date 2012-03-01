@@ -35,11 +35,11 @@ public class Damnation {
 			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final Collection<MagicTarget> targets =
-                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);			
+                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);		
 			for (final MagicTarget target : targets) {
 				game.doAction(new MagicChangeStateAction((MagicPermanent)target,MagicPermanentState.CannotBeRegenerated,true));
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
 			}
+			game.doAction(new MagicDestroyAction(targets));
 		}
 	};
 }

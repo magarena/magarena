@@ -5,7 +5,6 @@ import java.util.List;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicMoveCardAction;
@@ -51,9 +50,7 @@ public class Zombie_Apocalypse {
 			}
 			final List<MagicTarget> humans =
 					game.filterTargets(player,MagicTargetFilter.TARGET_HUMAN);
-			for (final MagicTarget target : humans) {
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
-			}
+			game.doAction(new MagicDestroyAction(humans));
 		}
 	};
 }

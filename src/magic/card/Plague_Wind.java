@@ -38,8 +38,8 @@ public class Plague_Wind {
                 game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);			
 			for (final MagicTarget target : targets) {
 				game.doAction(new MagicChangeStateAction((MagicPermanent)target,MagicPermanentState.CannotBeRegenerated,true));
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
 			}
+			game.doAction(new MagicDestroyAction(targets));
 		}
 	};
 }

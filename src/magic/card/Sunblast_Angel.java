@@ -32,9 +32,7 @@ public class Sunblast_Angel {
                 final Object[] choiceResults) {
 			final Collection<MagicTarget> targets =
                 game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_TAPPED_CREATURE);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
-			}
+			game.doAction(new MagicDestroyAction(targets));
 		}
     };
 }
