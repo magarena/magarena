@@ -30,7 +30,6 @@ public class MagicDestroyAction extends MagicAction {
 			
 			// Indestructible
 			if (permanent.hasAbility(game,MagicAbility.Indestructible)) {
-				System.err.println("destroy - target Indestructible="+target);
 	            destroy = false;
 	        }
 			
