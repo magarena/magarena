@@ -1,0 +1,13 @@
+>Gavony Ironwright
+url=http://magiccards.info/dka/en/9.html
+image=http://magiccards.info/scans/en/dka/9.jpg 
+value=3
+rarity=U
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=1/4
+timing=main
+requires_card_code

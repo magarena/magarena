@@ -189,6 +189,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE,true,MagicTargetHint.Negative,
 					"target attacking or blocking creature");
+	public static final MagicTargetChoice TARGET_ATTACKING_OR_BLOCKING_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_CREATURE,true,MagicTargetHint.None,
+					"target attacking or blocking creature");
 	public static final MagicTargetChoice NEG_TARGET_ATTACKING_OR_BLOCKING_SPIRIT =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_ATTACKING_OR_BLOCKING_SPIRIT,true,MagicTargetHint.Negative,
 					"target attacking or blocking Spirit");
