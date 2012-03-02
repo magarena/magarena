@@ -1,9 +1,6 @@
 package magic.model;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Arrays;
-
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
@@ -18,7 +15,6 @@ import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicPumpActivation;
 import magic.model.event.MagicPingActivation;
 import magic.model.event.MagicLevelUpActivation;
-import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicSacrificeManaActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicVividManaActivation;

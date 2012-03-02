@@ -17,10 +17,8 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.mstatic.MagicLayer;
 
 import javax.swing.ImageIcon;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.EnumSet;
 import java.util.List;
 

@@ -1,7 +1,5 @@
 package magic.model;
 
-import magic.model.event.MagicEvent;
-
 import java.lang.reflect.Array;
 import java.util.Collection;
 import java.util.HashMap;

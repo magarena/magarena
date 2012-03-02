@@ -1,9 +1,6 @@
 package magic.model;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 
 // basically a wrapper for MagicCardDefinition that adds number of copies of card
 public class MagicCondensedCardDefinition {

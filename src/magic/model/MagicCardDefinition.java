@@ -16,14 +16,12 @@ import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicCDA;
-import magic.model.mstatic.MagicLayer;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.EnumSet;
