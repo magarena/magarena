@@ -445,6 +445,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
 	@Override
 	public boolean hasAbility(final MagicGame game,final MagicAbility ability) {
+		if (!isOnBattlefield(game)) {
+			return ability.hasAbility(lastKnownAbilityFlags);
+		}
+		
 		// Check if cached.
 		if (cached) {
 			return ability.hasAbility(cachedTurnAbilityFlags);
