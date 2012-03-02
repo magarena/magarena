@@ -15,8 +15,6 @@ public abstract class PanelButton extends TexturedPanel {
 	private final JPanel layeredPanel;
 	private final JPanel overlayPanel;
 	
-	private boolean valid=false;
-	
 	public PanelButton() {
 		setLayout(new BorderLayout());
 		setBorder(FontsAndBorders.UP_BORDER);
