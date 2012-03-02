@@ -1,0 +1,13 @@
+>Silverclaw Griffin
+url=http://magiccards.info/dka/en/21.html
+image=http://magiccards.info/scans/en/dka/21.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Griffin
+color=w
+converted=5
+cost={3}{W}{W}
+pt=3/2
+ability=flying,first strike
+timing=main
