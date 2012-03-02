@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicEvent;
@@ -34,9 +33,7 @@ public class Back_to_Nature {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final Collection<MagicTarget> targets=
                 game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_ENCHANTMENT);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
-			}
+			game.doAction(new MagicDestroyAction(targets));
 		}
 	};
 }

@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicDestroyAction;
@@ -38,9 +37,7 @@ public class Paraselene {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final Collection<MagicTarget> targets =
                 game.filterTargets(player,MagicTargetFilter.TARGET_ENCHANTMENT);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
-			}
+			game.doAction(new MagicDestroyAction(targets));
 			if (targets.size() > 0) {
 				game.doAction(new MagicChangeLifeAction(player,targets.size()));				
 			}

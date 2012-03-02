@@ -1,0 +1,14 @@
+>Niblis of the Urn
+url=http://magiccards.info/dka/en/16.html
+image=http://magiccards.info/scans/en/dka/16.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Spirit
+color=w
+converted=2
+cost={1}{W}
+pt=1/1
+ability=flying
+timing=main
+requires_card_code

@@ -147,6 +147,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean isOnBattlefield(final MagicGame game) {
+    	if (this == MagicPermanent.NONE) {
+    		// the calling method will treat this as MagicCardDefinition UNKNOWN
+    		return true;
+    	}
     	for (final MagicPlayer player : game.getPlayers()) {
 			if (player.controlsPermanent(this)) {
 				return true;
@@ -333,7 +337,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	}
 
 	public MagicPowerToughness getPowerToughness(final MagicGame game,final boolean turn) {
-		if (!isOnBattlefield(game) && lastKnownPowerToughness != null) {
+		if (!isOnBattlefield(game)) {
 			return lastKnownPowerToughness;
 		}
 		
@@ -414,10 +418,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		lastKnownSubTypeFlags = getSubTypeFlags(game);
 		lastKnownTypeFlags = getTypeFlags(game);
 		lastKnownColorFlags = getColorFlags(game);
-	}
-	
-	public MagicPowerToughness getLastKnownPowerToughness() {
-		return lastKnownPowerToughness;
 	}
 	
 	public long getAllAbilityFlags(final MagicGame game,final boolean turn) {

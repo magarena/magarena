@@ -2,7 +2,6 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicEvent;
@@ -33,10 +32,8 @@ public class Day_of_Judgment {
 			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			final Collection<MagicTarget> targets=
-                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);			
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
-			}
+                game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);
+			game.doAction(new MagicDestroyAction(targets));
 		}
 	};
 }

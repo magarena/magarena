@@ -38,8 +38,8 @@ public class Wrath_of_God {
                 game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);			
 			for (final MagicTarget target : targets) {
 				game.doAction(new MagicChangeStateAction((MagicPermanent)target,MagicPermanentState.CannotBeRegenerated,true));
-				game.doAction(new MagicDestroyAction((MagicPermanent)target));
 			}
+			game.doAction(new MagicDestroyAction(targets));
 		}
 	};
 }

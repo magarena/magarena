@@ -32,13 +32,12 @@ public class Novablast_Wurm {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
+			final MagicTargetFilter targetFilter = 
+					new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+	                MagicTargetFilter.TARGET_CREATURE,permanent);
 			final Collection<MagicTarget> targets=
-                game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE);
-			for (final MagicTarget target : targets) {
-				if (target!=permanent) {
-					game.doAction(new MagicDestroyAction((MagicPermanent)target));
-				}
-			}
+                game.filterTargets(permanent.getController(),targetFilter);
+			game.doAction(new MagicDestroyAction(targets));
 		}
     };
 }
