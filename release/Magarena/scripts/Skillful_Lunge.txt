@@ -1,0 +1,11 @@
+>Skillful Lunge
+url=http://magiccards.info/dka/en/22.html
+image=http://magiccards.info/scans/en/dka/22.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=2
+cost={1}{W}
+timing=pump
+requires_card_code
