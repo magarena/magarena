@@ -43,7 +43,6 @@ public class Death_s_Caress {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                 	if (creature.hasSubType(MagicSubType.Human, game)) {
-                		final int toughness = creature.getToughness(game);
                 		game.doAction(new MagicChangeLifeAction(
                 				cardOnStack.getController(),
                                 creature.getToughness(game)));
