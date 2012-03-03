@@ -1,0 +1,13 @@
+>Thraben Doomsayer
+url=http://magiccards.info/dka/en/25.html
+image=http://magiccards.info/scans/en/dka/25.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/2
+timing=main
+requires_card_code
