@@ -1,0 +1,14 @@
+>Geralf's Mindcrusher
+url=http://magiccards.info/dka/en/37.html
+image=http://magiccards.info/scans/en/dka/37.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Zombie,Horror
+color=u
+converted=6
+cost={4}{U}{U}
+pt=5/5
+ability=undying
+timing=main
+requires_card_code
