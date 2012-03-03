@@ -1,0 +1,13 @@
+>Chant of the Skifsang
+url=http://magiccards.info/dka/en/31.html
+image=http://magiccards.info/scans/en/dka/31.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=3
+cost={2}{U}
+given_pt=-13/-0
+timing=removal
+requires_card_code
