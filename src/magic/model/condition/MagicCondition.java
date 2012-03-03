@@ -266,6 +266,17 @@ public interface MagicCondition {
 			return permanent.getEnchantedCreature().isUntapped();
 		}
 	};
+	
+	MagicCondition GRAVEYARD_CONTAINS_CREATURE = new MagicCondition() {
+		public boolean accept(final MagicGame game,final MagicSource source) {
+			for (MagicCard card : source.getController().getGraveyard()) {
+				if (card.getCardDefinition().isCreature()) {
+					return true;
+				}
+			}
+			return false;
+		}
+	};
 		
 	boolean accept(final MagicGame game,final MagicSource source);
 }

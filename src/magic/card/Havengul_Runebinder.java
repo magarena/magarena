@@ -27,7 +27,8 @@ public class Havengul_Runebinder {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
 					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.TWO_BLUE.getCondition()
+					MagicManaCost.TWO_BLUE.getCondition(),
+					MagicCondition.GRAVEYARD_CONTAINS_CREATURE
 			},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
