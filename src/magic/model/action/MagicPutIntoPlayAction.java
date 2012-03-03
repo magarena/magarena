@@ -1,17 +1,11 @@
 package magic.model.action;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.trigger.MagicPermanentTrigger;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicPermanentStatic;
-
-import java.util.LinkedList;
 
 public abstract class MagicPutIntoPlayAction extends MagicAction {
 
