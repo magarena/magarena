@@ -275,9 +275,9 @@ cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/card
 cards/magicdraftsim-rating: cards/card-ratings
 	for i in `cat $^`; do \
 	curl http://www.magicdraftsim.com/card-ratings/$$i | \
-	html2text | \
-	grep "^[0-9]" | \
-	sed "s/^[0-9]*/$$i/"; \
+	pandoc -f html -t plain | \
+	grep "^[ ]*[0-9]" | \
+	sed "s/^[ ]*[0-9]*/$$i/;s/[ ][ ][ ]*/\t/g"; \
 	done > $@
 
 cards/current-magic-excel.txt:
