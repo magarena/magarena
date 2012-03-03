@@ -1,0 +1,11 @@
+>Sudden Disappearance
+url=http://magiccards.info/dka/en/23.html
+image=http://magiccards.info/scans/en/dka/23.jpg
+value=4
+rarity=R
+type=Sorcery
+color=w
+converted=6
+cost={5}{W}
+timing=removal
+requires_card_code

@@ -1,0 +1,11 @@
+>Seance
+url=http://magiccards.info/dka/en/20.html
+image=http://magiccards.info/scans/en/dka/20.jpg
+value=3
+rarity=R
+type=Enchantment
+color=w
+converted=4
+cost={2}{W}{W}
+timing=enchantment
+requires_card_code
