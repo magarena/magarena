@@ -1,0 +1,14 @@
+>Avacyn's Collar
+url=http://magiccards.info/dka/en/145.html
+image=http://magiccards.info/scans/en/dka/145.jpg
+value=2
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+given_pt=1/0
+given_ability=vigilance
+timing=equipment
+requires_card_code
