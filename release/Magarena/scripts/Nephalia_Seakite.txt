@@ -1,0 +1,13 @@
+>Nephalia Seakite
+url=http://magiccards.info/dka/en/43.html
+image=http://magiccards.info/scans/en/dka/43.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Bird
+color=u
+converted=4
+cost={3}{U}
+pt=2/3
+ability=flash,flying
+timing=flash

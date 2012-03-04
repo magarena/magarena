@@ -1,0 +1,14 @@
+>Niblis of the Breath
+url=http://magiccards.info/dka/en/44.html
+image=http://magiccards.info/scans/en/dka/44.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Spirit
+color=u
+converted=3
+cost={2}{U}
+pt=2/1
+ability=flying
+timing=main
+requires_card_code
