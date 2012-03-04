@@ -1,0 +1,13 @@
+>Ravenous Skirge
+url=http://magiccards.info/us/en/152.html
+image=http://magiccards.info/scans/en/us/152.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Imp
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+ability=flying,attacks pump +2/+0
+timing=main
