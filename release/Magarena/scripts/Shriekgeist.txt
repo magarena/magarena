@@ -1,0 +1,14 @@
+>Shriekgeist
+url=http://magiccards.info/dka/en/49.html
+image=http://magiccards.info/scans/en/dka/49.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=flying
+timing=main
+requires_card_code
