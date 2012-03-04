@@ -24,8 +24,8 @@ public class Grim_Backwoods {
 				MagicCondition.CAN_TAP_CONDITION,
 				MagicCondition.ONE_CREATURE_CONDITION
             },
-            new MagicActivationHints(MagicTiming.Pump),
-            "Pump") {
+            new MagicActivationHints(MagicTiming.Draw),
+            "Draw") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
