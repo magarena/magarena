@@ -1,0 +1,13 @@
+>Hollow Dogs
+url=http://magiccards.info/9e/en/139.html
+image=http://magiccards.info/scans/en/9e/139.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie,Hound
+color=b
+converted=5
+cost={4}{B}
+pt=3/3
+ability=attacks pump +2/+0
+timing=main
