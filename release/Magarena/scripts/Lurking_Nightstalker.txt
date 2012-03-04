@@ -1,0 +1,13 @@
+>Lurking Nightstalker
+url=http://magiccards.info/po2/en/17.html
+image=http://magiccards.info/scans/en/po2/17.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Nightstalker
+color=b
+converted=2
+cost={B}{B}
+pt=1/1
+ability=attacks pump +2/+0
+timing=main
