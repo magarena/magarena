@@ -1,0 +1,13 @@
+>Carrion Wall
+url=http://magiccards.info/8e/en/121.html
+image=http://magiccards.info/scans/en/8e/121.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Wall
+color=b
+converted=3
+cost={1}{B}{B}
+pt=3/2
+ability=defender,regenerate {1}{B}
+timing=main

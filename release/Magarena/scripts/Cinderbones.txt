@@ -1,0 +1,13 @@
+>Cinderbones
+url=http://magiccards.info/shm/en/59.html
+image=http://magiccards.info/scans/en/shm/59.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Elemental,Skeleton
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+ability=wither,regenerate {1}{B}
+timing=main
