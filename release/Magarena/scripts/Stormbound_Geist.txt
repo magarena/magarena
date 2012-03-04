@@ -1,0 +1,13 @@
+>Stormbound Geist
+url=http://magiccards.info/dka/en/51.html
+image=http://magiccards.info/scans/en/dka/51.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Spirit
+color=u
+converted=3
+cost={1}{U}{U}
+pt=2/2
+ability=flying,can't block creatures without flying,undying
+timing=main
