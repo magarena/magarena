@@ -23,7 +23,8 @@ public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
-                    permanent + " gets +" + power + "/+" + toughness + " until end of turn.") :
+                    permanent + " gets " + getString(power) + 
+                    "/" + getString(toughness) + " until end of turn.") :
             MagicEvent.NONE;
     }
     @Override
@@ -34,4 +35,10 @@ public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
             final Object[] choiceResults) {
         game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],power,toughness));
     }
+    
+    private String getString(final int pt) {
+		return pt >= 0 ?
+				"+" + pt :
+				Integer.toString(pt);
+	}
 }
