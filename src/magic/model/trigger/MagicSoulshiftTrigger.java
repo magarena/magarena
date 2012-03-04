@@ -35,7 +35,7 @@ public class MagicSoulshiftTrigger extends MagicWhenPutIntoGraveyardTrigger {
 			final MagicTargetFilter targetFilter =
 					new MagicTargetFilter.MagicCMCTargetFilter(
 	                MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
-	                2, // less than or equal
+	                MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
 	                cmc);
 			final MagicTargetChoice targetChoice = 
 					new MagicTargetChoice(
