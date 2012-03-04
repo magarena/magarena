@@ -117,6 +117,10 @@ public class ImageDrawingUtils {
 					g.drawImage(IconImages.GOLDCOUNTER.getImage(),ax,ay,observer);
 					ax+=16;
 				}
+				if (counterType == MagicCounterType.Bribery) {
+					g.drawImage(IconImages.BRIBECOUNTER.getImage(),ax,ay,observer);
+					ax+=16;
+				}
 				if (counterType == MagicCounterType.PlusOne) {
 					g.drawImage(IconImages.PLUS.getImage(),ax,ay,observer);
 					g.setColor(Color.DARK_GRAY);

@@ -53,6 +53,7 @@ public class TextImages {
 		TEXT_ICONS.put("{C}",IconImages.CHARGE);
 		TEXT_ICONS.put("{F}",IconImages.FEATHER);
 		TEXT_ICONS.put("{g}",IconImages.GOLDCOUNTER);
+		TEXT_ICONS.put("{br}",IconImages.BRIBECOUNTER);
 		TEXT_ICONS.put("{L}",IconImages.LOSE);
 	}
 	
