@@ -21,7 +21,7 @@ public class Fiend_Hunter {
 			final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
 	                MagicTargetFilter.TARGET_CREATURE,permanent);
 			final MagicTargetChoice targetChoice = new MagicTargetChoice(
-	                targetFilter,false,MagicTargetHint.Negative,"another creature to exile");
+	                targetFilter,true,MagicTargetHint.Negative,"another creature to exile");
 	        final MagicChoice championChoice = new MagicMayChoice(player + " may exile another creature.",targetChoice);
 			return new MagicEvent(
                     permanent,
