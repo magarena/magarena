@@ -1,0 +1,13 @@
+>Slith Firewalker
+url=http://magiccards.info/mi/en/107.html
+image=http://magiccards.info/scans/en/mi/107.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Slith
+color=r
+converted=2
+cost={R}{R}
+pt=1/1
+ability=haste,combat damage player grow
+timing=fmain
