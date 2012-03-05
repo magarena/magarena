@@ -1,0 +1,13 @@
+>Drowned
+url=http://magiccards.info/dk/en/23.html
+image=http://magiccards.info/scans/en/dk/23.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Zombie
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=regenerate {B}
+timing=main

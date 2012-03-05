@@ -1,0 +1,13 @@
+>Eron the Relentless
+url=http://magiccards.info/hl/en/93.html
+image=http://magiccards.info/scans/en/hl/93.jpg
+value=4
+rarity=U
+type=Legendary,Creature
+subtype=Human,Rogue
+color=r
+converted=5
+cost={3}{R}{R}
+pt=5/2
+ability=haste,regenerate {R}{R}{R}
+timing=fmain
