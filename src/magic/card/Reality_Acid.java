@@ -15,11 +15,12 @@ public class Reality_Acid {
 			MagicTargetChoice.NEG_TARGET_PERMANENT,
 			new MagicDestroyTargetPicker(false));
     
-    public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
+    public static final MagicWhenLeavesPlayTrigger T = new MagicWhenLeavesPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			final MagicPermanent enchantedPermanent = permanent.getEnchantedCreature();
-			return (permanent == data) ? 
+			return (permanent == data &&
+					enchantedPermanent != MagicPermanent.NONE) ? 
 					new MagicEvent(
                     permanent,
                     permanent.getController(),
