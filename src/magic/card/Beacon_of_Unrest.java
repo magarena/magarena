@@ -41,7 +41,10 @@ public class Beacon_of_Unrest {
                     game.doAction(new MagicReanimateAction((MagicPlayer)data[1],targetCard,MagicPlayCardAction.NONE));
                 }
 			});
-			game.doAction(new MagicShuffleIntoLibraryAction((MagicCard)data[0]));
+            final MagicCard card = (MagicCard)data[0];
+            if (!card.isToken()) {
+            	game.doAction(new MagicShuffleIntoLibraryAction(card));
+            }
 		}
 	};
 }
