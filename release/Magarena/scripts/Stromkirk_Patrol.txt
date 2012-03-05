@@ -9,5 +9,5 @@ color=b
 converted=5
 cost={4}{B}
 pt=4/3
+ability=combat damage player grow
 timing=main
-requires_card_code

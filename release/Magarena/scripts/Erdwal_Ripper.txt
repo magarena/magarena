@@ -9,6 +9,5 @@ color=r
 converted=3
 cost={1}{R}{R}
 pt=2/1
-ability=haste
+ability=haste,combat damage player grow
 timing=fmain
-requires_card_code

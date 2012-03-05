@@ -9,6 +9,5 @@ color=r
 converted=3
 cost={1}{R}{R}
 pt=1/1
-ability=double strike
+ability=double strike,combat damage player grow
 timing=main
-requires_card_code

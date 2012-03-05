@@ -7,6 +7,5 @@ type=Artifact,Creature
 subtype=Slith
 converted=2
 cost={2}
-ability=modular 1
+ability=combat damage player grow,modular 1
 timing=main
-requires_card_code

@@ -9,6 +9,5 @@ color=r
 converted=2
 cost={1}{R}
 pt=2/1
-ability=attacks each turn if able
+ability=attacks each turn if able,combat damage player grow
 timing=main
-requires_card_code
