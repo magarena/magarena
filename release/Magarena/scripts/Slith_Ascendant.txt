@@ -1,0 +1,13 @@
+>Slith Ascendant
+url=http://magiccards.info/mi/en/23.html
+image=http://magiccards.info/scans/en/mi/23.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Slith
+color=w
+converted=3
+cost={1}{W}{W}
+pt=1/1
+ability=flying,combat damage player grow
+timing=main

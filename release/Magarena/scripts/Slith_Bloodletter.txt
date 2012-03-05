@@ -1,0 +1,13 @@
+>Slith Bloodletter
+url=http://magiccards.info/mi/en/77.html
+image=http://magiccards.info/scans/en/mi/77.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Slith
+color=b
+converted=2
+cost={B}{B}
+pt=1/1
+ability=combat damage player grow,regenerate {1}{B}
+timing=main
