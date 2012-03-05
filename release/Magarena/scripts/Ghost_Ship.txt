@@ -1,0 +1,13 @@
+>Ghost Ship
+url=http://magiccards.info/4e/en/75.html
+image=http://magiccards.info/scans/en/4e/75.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Spirit
+color=u
+converted=4
+cost={2}{U}{U}
+pt=2/4
+ability=flying,regenerate {U}{U}{U}
+timing=main
