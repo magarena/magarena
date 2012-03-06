@@ -9,5 +9,5 @@ color=b
 converted=4
 cost={2}{B}{B}
 pt=3/2
-ability=flying,first strike,haste,combat damage grow
+ability=flying,first strike,haste,combat damage grow creature
 timing=fmain
