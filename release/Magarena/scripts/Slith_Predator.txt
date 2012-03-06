@@ -9,5 +9,5 @@ color=g
 converted=2
 cost={G}{G}
 pt=1/1
-ability=trample,combat damage player grow
+ability=trample,combat damage grow player
 timing=main

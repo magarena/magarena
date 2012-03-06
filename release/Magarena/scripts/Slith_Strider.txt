@@ -9,6 +9,6 @@ color=u
 converted=3
 cost={1}{U}{U}
 pt=1/1
-ability=combat damage player grow
+ability=combat damage grow player
 timing=main
 requires_card_code

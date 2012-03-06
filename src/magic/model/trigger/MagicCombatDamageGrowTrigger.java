@@ -9,13 +9,13 @@ import magic.model.event.MagicEvent;
 
 public class MagicCombatDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
 
-	private static final MagicCombatDamageGrowTrigger INSTANCE = new MagicCombatDamageGrowTrigger();
-
-    private MagicCombatDamageGrowTrigger() {}
-
-    public static MagicCombatDamageGrowTrigger create() {
-        return INSTANCE;
-    }
+	private final boolean combat;
+	private final boolean player;
+	
+    public MagicCombatDamageGrowTrigger(final boolean combat,final boolean player) {
+		this.combat = combat;
+		this.player = player;
+	}
 
 	@Override
 	public MagicEvent executeTrigger(
@@ -23,8 +23,10 @@ public class MagicCombatDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger 
 			final MagicPermanent permanent,
 			final MagicDamage damage) {
 		return (damage.getSource() == permanent &&
-				damage.getTarget().isPlayer() &&
-				damage.isCombat()) ?
+				(!player || damage.getTarget().isPlayer()) &&
+				(player || (damage.getTarget().isPermanent() &&
+				((MagicPermanent)damage.getTarget()).isCreature(game))) &&
+				(!combat || damage.isCombat())) ?
             new MagicEvent(
                     permanent,
                     permanent.getController(),

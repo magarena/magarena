@@ -305,19 +305,18 @@ public enum MagicAbility {
             card.add(new MagicThiefTrigger(true,false,1));
         }
     },
-    CombatDamagePlayerGrow("combat damage player grow",10) {
+    DamageGrow("damage grow",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicCombatDamageGrowTrigger.create());
+        	final String[] tokens = arg.split(" ");
+        	final boolean player = "player".equals(tokens[0]);
+        	card.add(new MagicCombatDamageGrowTrigger(false, player));
         }
     },
     CombatDamageGrow("combat damage grow",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicVeteranTrigger(true));
-        }
-    },
-    DamageGrow("damage grow",10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(new MagicVeteranTrigger(false));
+        	final String[] tokens = arg.split(" ");
+        	final boolean player = "player".equals(tokens[0]);
+        	card.add(new MagicCombatDamageGrowTrigger(true, player));
         }
     },
     GraveyardToLibrary("graveyard to library",10) {

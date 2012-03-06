@@ -9,5 +9,5 @@ color=w
 converted=3
 cost={1}{W}{W}
 pt=1/1
-ability=flying,combat damage player grow
+ability=flying,combat damage grow player
 timing=main
