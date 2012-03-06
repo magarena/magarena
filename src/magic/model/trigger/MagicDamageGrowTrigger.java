@@ -7,12 +7,12 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
 
-public class MagicCombatDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
+public class MagicDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
 
 	private final boolean combat;
 	private final boolean player;
 	
-    public MagicCombatDamageGrowTrigger(final boolean combat,final boolean player) {
+    public MagicDamageGrowTrigger(final boolean combat,final boolean player) {
 		this.combat = combat;
 		this.player = player;
 	}

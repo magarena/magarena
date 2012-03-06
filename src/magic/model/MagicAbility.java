@@ -309,14 +309,14 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
         	final String[] tokens = arg.split(" ");
         	final boolean player = "player".equals(tokens[0]);
-        	card.add(new MagicCombatDamageGrowTrigger(false, player));
+        	card.add(new MagicDamageGrowTrigger(false, player));
         }
     },
     CombatDamageGrow("combat damage grow",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
         	final String[] tokens = arg.split(" ");
         	final boolean player = "player".equals(tokens[0]);
-        	card.add(new MagicCombatDamageGrowTrigger(true, player));
+        	card.add(new MagicDamageGrowTrigger(true, player));
         }
     },
     GraveyardToLibrary("graveyard to library",10) {
