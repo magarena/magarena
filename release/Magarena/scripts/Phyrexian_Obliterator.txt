@@ -1,0 +1,14 @@
+>Phyrexian Obliterator
+url=http://magiccards.info/nph/en/68.html
+image=http://magiccards.info/scans/en/nph/68.jpg
+value=5
+rarity=M
+type=Creature
+subtype=Horror
+color=b
+converted=4
+cost={B}{B}{B}{B}
+pt=5/5
+ability=trample
+timing=main
+requires_card_code
