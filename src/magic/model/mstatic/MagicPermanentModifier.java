@@ -1,6 +1,7 @@
 package magic.model.mstatic;
 
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
@@ -9,6 +10,8 @@ import java.util.EnumSet;
 
 // Determines variable power, toughness, abilities, sub types and colors for a single creature permanent.
 public interface MagicPermanentModifier {
+
+    MagicPlayer getController(final MagicGame game, final MagicPermanent permanent); 
 
 	void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt);
 	

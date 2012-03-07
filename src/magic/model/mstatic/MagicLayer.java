@@ -1,6 +1,7 @@
 package magic.model.mstatic; 
 
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
@@ -24,12 +25,25 @@ public enum MagicLayer {
     Player,      //8.  affect player, not objects
     Game,        //9.  affect game rules, not objects
     ;
+    
+    public static MagicPlayer getController(final MagicGame game, final MagicPermanent permanent) {
+        MagicPlayer controller = permanent.getController();
+
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Control)) {
+            final MagicStatic mstatic = mpstatic.getStatic();
+            if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
+                controller = mstatic.getController(game, permanent);
+            }
+        }
+
+        return controller;
+    }
         
     public static void getPowerToughness(final MagicGame game, final MagicPermanent permanent, final MagicPowerToughness pt) {
         for (final MagicLayer layer : EnumSet.range(MagicLayer.SetPT, MagicLayer.SwitchPT)) {
             for (final MagicPermanentStatic mpstatic : game.getStatics(layer)) {
                 final MagicStatic mstatic = mpstatic.getStatic();
-                if (mstatic.accept(game, mpstatic.getPermanent(),permanent)) {
+                if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
                     mstatic.getPowerToughness(game, permanent, pt);
                 }
             }
@@ -39,7 +53,7 @@ public enum MagicLayer {
     public static long getAbilityFlags(final MagicGame game, final MagicPermanent permanent, long flags) {
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Ability)) {
             final MagicStatic mstatic = mpstatic.getStatic();
-            if (mstatic.accept(game, mpstatic.getPermanent(),permanent)) {
+            if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
                 flags = mstatic.getAbilityFlags(game, permanent, flags);
             }
         }
@@ -49,7 +63,7 @@ public enum MagicLayer {
     public static int getTypeFlags(final MagicGame game, final MagicPermanent permanent, int flags) {
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
             final MagicStatic mstatic = mpstatic.getStatic();
-            if (mstatic.accept(game, mpstatic.getPermanent(),permanent)) {
+            if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
 			    flags = mstatic.getTypeFlags(permanent,flags);
             }
 		}
@@ -62,7 +76,7 @@ public enum MagicLayer {
             EnumSet<MagicSubType> flags) {
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
             final MagicStatic mstatic = mpstatic.getStatic();
-            if (mstatic.accept(game, mpstatic.getPermanent(),permanent)) {
+            if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
 			    flags = mstatic.getSubTypeFlags(permanent,flags);
             }
 		}
@@ -72,7 +86,7 @@ public enum MagicLayer {
     public static int getColorFlags(final MagicGame game, final MagicPermanent permanent, int flags) {
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Color)) {
             final MagicStatic mstatic = mpstatic.getStatic();
-            if (mstatic.accept(game, mpstatic.getPermanent(),permanent)) {
+            if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
 			    flags = mstatic.getColorFlags(permanent,flags);
             }
 		}
