@@ -1,0 +1,13 @@
+>Squirrel Mob
+url=http://magiccards.info/od/en/273.html
+image=http://magiccards.info/scans/en/od/273.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Squirrel
+color=g
+converted=3
+cost={1}{G}{G}
+pt=2/2
+timing=main
+requires_card_code
