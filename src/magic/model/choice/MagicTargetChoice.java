@@ -260,7 +260,7 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice POS_TARGET_SAMURAI =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_SAMURAI,true,MagicTargetHint.Positive,
 					"target Samurai");
-	private static final MagicTargetChoice SACRIFICE_PERMANENT=
+	public static final MagicTargetChoice SACRIFICE_PERMANENT =
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a creature to sacrifice");
