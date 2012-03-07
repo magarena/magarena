@@ -223,6 +223,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		this.controller=controller;
 	}
 	
+    public MagicPlayer getController(final MagicGame game) {
+		return MagicLayer.getController(game, this);
+	}
+	
 	public MagicPlayer getController() {
 		return controller;
 	}
@@ -345,7 +349,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		}
 		
         //get starting P/T from card def (includes CDA)
-		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController(),this);
+		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController(game), this);
 
         //apply global effects
         MagicLayer.getPowerToughness(game, this, pt);
@@ -619,7 +623,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
 			if (!enchantedCreature.isValid() || 
-                !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
+                !game.isLegalTarget(getController(game),this,tchoice,enchantedCreature) ||
                 enchantedCreature.hasProtectionFrom(game,this)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
@@ -946,12 +950,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	@Override
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
 		final long flags=getAllAbilityFlags(game);
+
 		// Can't be the target of spells or abilities.
 		if (MagicAbility.Shroud.hasAbility(flags)) {
 			return false;
 		}
+
 		// Can't be the target of spells or abilities your opponents controls.
-		if (MagicAbility.CannotBeTheTarget.hasAbility(flags)&&source.getController()!=controller) {
+		if (MagicAbility.CannotBeTheTarget.hasAbility(flags) && source.getController() != controller) {
 			return false;
 		}
 
