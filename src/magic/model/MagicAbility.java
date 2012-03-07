@@ -474,6 +474,12 @@ public enum MagicAbility {
             }
         }
     },
+    Bloodthirst("bloodthirst",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicBloodthirstTrigger(n));
+        }
+    },
     None("",0);
 
 	public static final long PROTECTION_FLAGS=

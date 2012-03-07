@@ -95,6 +95,7 @@ public class MagicDealDamageAction extends MagicAction {
 			} else {
 				game.doAction(new MagicChangeLifeAction(targetPlayer,-dealtAmount));
 			}
+			game.doAction(new MagicChangePlayerStateAction(targetPlayer,MagicPlayerState.WasDealtDamage,true));
 		}
 
 		damage.setDealtAmount(dealtAmount);
