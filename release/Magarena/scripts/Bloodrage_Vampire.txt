@@ -1,0 +1,13 @@
+>Bloodrage Vampire
+url=http://magiccards.info/m12/en/83.html
+image=http://magiccards.info/scans/en/m12/83.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire
+color=b
+converted=3
+cost={2}{B}
+pt=3/1
+ability=bloodthirst 1
+timing=main

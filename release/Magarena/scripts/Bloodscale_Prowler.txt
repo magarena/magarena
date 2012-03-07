@@ -1,0 +1,13 @@
+>Bloodscale Prowler
+url=http://magiccards.info/gp/en/64.html
+image=http://magiccards.info/scans/en/gp/64.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Viashino,Warrior
+color=r
+converted=3
+cost={2}{R}
+pt=3/1
+ability=bloodthirst 1
+timing=main
