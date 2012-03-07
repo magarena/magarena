@@ -15,14 +15,18 @@ public class MagicShuffleIntoLibraryAction extends MagicAction {
 
 	@Override
 	public void doAction(final MagicGame game) {
-		final MagicCardList library=card.getOwner().getLibrary();
-		oldLibrary=new MagicCardList(library);
-		library.addToTop(card);
-		library.shuffle(library.getCardsId());
+		if (!card.isToken()) {
+			final MagicCardList library=card.getOwner().getLibrary();
+			oldLibrary=new MagicCardList(library);
+			library.addToTop(card);
+			library.shuffle(library.getCardsId());
+		}	
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		card.getOwner().getLibrary().setCards(oldLibrary);
+		if (!card.isToken()) {
+			card.getOwner().getLibrary().setCards(oldLibrary);
+		}
 	}
 }
