@@ -1,0 +1,13 @@
+>Gorehorn Minotaurs
+url=http://magiccards.info/m12/en/144.html
+image=http://magiccards.info/scans/en/m12/144.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Minotaur,Warrior
+color=r
+converted=4
+cost={2}{R}{R}
+pt=3/3
+ability=bloodthirst 2
+timing=main
