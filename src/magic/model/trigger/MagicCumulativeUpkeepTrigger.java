@@ -26,10 +26,17 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
 	}
 
     @Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer data) {
+	public MagicEvent executeTrigger(
+			final MagicGame game,
+			final MagicPermanent permanent,
+			final MagicPlayer data) {
     	final MagicPlayer player = permanent.getController();
     	if (player == data) {
-			game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,1,true));
+			game.doAction(new MagicChangeCountersAction(
+					permanent,
+					MagicCounterType.Charge,
+					1,
+					true));
 			final int amount = permanent.getCounters(MagicCounterType.Charge);
 			StringBuilder totalCost = new StringBuilder();
 			for (int i=0;i<amount;i++) {
@@ -40,7 +47,8 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
                     permanent.getController(),
                     new MagicMayChoice(
                             player + " may " + genDescription(amount),
-                            new MagicPayManaCostChoice(MagicManaCost.createCost(totalCost.toString()))),
+							new MagicPayManaCostChoice(
+									MagicManaCost.createCost(totalCost.toString()))),
                     new Object[]{permanent},
                     this,
                     player + " may$ " + genDescription(amount) +

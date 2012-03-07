@@ -20,7 +20,10 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
 	}
     
     @Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer data) {
+	public MagicEvent executeTrigger(
+			final MagicGame game,
+			final MagicPermanent permanent,
+			final MagicPlayer data) {
     	final MagicPlayer player = permanent.getController();
 		return (player == data &&
 			permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?

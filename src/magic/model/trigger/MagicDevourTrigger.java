@@ -20,29 +20,38 @@ import magic.model.target.MagicTargetHint;
 public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
 
 	private final int amount;
-	
+
 	public MagicDevourTrigger(final int amount) {
-		this.amount=amount;
+		this.amount = amount;
 	}
-	
+
 	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-        final String name = getCardDefinition().getFullName();
-        final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
-        final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                targetFilter,false,MagicTargetHint.None,"a creature other than "+name+" to sacrifice");
-        final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+name+".",targetChoice);
-		return (player.getNrOfPermanentsWithType(MagicType.Creature,game)>1) ?
-            new MagicEvent(
-                    permanent,
-                    player,
-                    devourChoice,
-                    MagicSacrificeTargetPicker.getInstance(),
-                    new Object[]{permanent},
-                    this,
-                    "You may$ sacrifice a creature$ to "+name+"."):
-            MagicEvent.NONE;
+	public MagicEvent executeTrigger(
+			final MagicGame game,
+			final MagicPermanent permanent,
+			final MagicPlayer player) {
+		final String name = getCardDefinition().getFullName();
+		final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+				MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+				permanent);
+		final MagicTargetChoice targetChoice = new MagicTargetChoice(
+				targetFilter,
+				false,
+				MagicTargetHint.None,
+				"a creature other than " + name + " to sacrifice");
+		final MagicChoice devourChoice = new MagicMayChoice(
+				"You may sacrifice a creature to " + name + ".",
+				targetChoice);
+		return (player.getNrOfPermanentsWithType(MagicType.Creature, game) > 1) ?
+				new MagicEvent(
+						permanent,
+						player,
+						devourChoice,
+						MagicSacrificeTargetPicker.getInstance(),
+						new Object[] {permanent},
+						this,
+						"You may$ sacrifice a creature$ to " + name + ".") :
+				MagicEvent.NONE;
 	}
 
 	@Override
@@ -51,18 +60,29 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
 	}
 
 	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+	public void executeEvent(
+			final MagicGame game,
+			final MagicEvent event,
+			final Object[] data,
+			final Object[] choiceResults) {
 		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-            event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final MagicPermanent permanent=(MagicPermanent)data[0];
-                    game.doAction(new MagicSacrificeAction(creature));
-                    game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount,true));
-                    final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
-                    if (newEvent.isValid()) {
-                        game.doAction(new MagicAddEventAction(newEvent));
-                    }
-                }
+			event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+				public void doAction(final MagicPermanent creature) {
+					final MagicPermanent permanent = (MagicPermanent)data[0];
+					game.doAction(new MagicSacrificeAction(creature));
+					game.doAction(new MagicChangeCountersAction(
+							permanent,
+							MagicCounterType.PlusOne,
+							amount,
+							true));
+					final MagicEvent newEvent = executeTrigger(
+							game,
+							permanent,
+							permanent.getController());
+					if (newEvent.isValid()) {
+						game.doAction(new MagicAddEventAction(newEvent));
+					}
+				}
 			});
 		}
 	}

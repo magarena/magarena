@@ -11,14 +11,20 @@ public class MagicBecomesBlockedPumpTrigger extends MagicWhenBecomesBlockedTrigg
 	private final int amountToughness;
 	private final boolean forEachBlocker;
 	
-    public MagicBecomesBlockedPumpTrigger(final int amountPower,final int amountToughness,final boolean forEachBlocker) {
+	public MagicBecomesBlockedPumpTrigger(
+			final int amountPower,
+			final int amountToughness,
+			final boolean forEachBlocker) {
     	this.amountPower = amountPower;
     	this.amountToughness = amountToughness;
     	this.forEachBlocker = forEachBlocker;
 	}
 
-    @Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+	@Override
+	public MagicEvent executeTrigger(
+			final MagicGame game,
+			final MagicPermanent permanent,
+			final MagicPermanent data) {
 		if (permanent == data ) {
 			int size = forEachBlocker ?
 					permanent.getBlockingCreatures().size() :

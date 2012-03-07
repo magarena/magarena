@@ -17,7 +17,9 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
     private final int n;
     private final MagicTargetChoice targetChoice;
 
-    public MagicEntersDamageTargetTrigger(final MagicTargetChoice targetChoice, final int n) {
+	public MagicEntersDamageTargetTrigger(
+			final MagicTargetChoice targetChoice,
+			final int n) {
         this.n = n;
         this.targetChoice = targetChoice;
     }
@@ -34,7 +36,10 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
 	}
     
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+	public MagicEvent executeTrigger(
+			final MagicGame game,
+			final MagicPermanent permanent,
+			final MagicPlayer player) {
         return new MagicEvent(
                 permanent,
                 player,
@@ -53,7 +58,11 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
             final Object[] choiceResults) {
         event.processTarget(game,choiceResults,0,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),target,n,false);
+				final MagicDamage damage = new MagicDamage(
+						event.getSource(),
+						target,
+						n,
+						false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         });
