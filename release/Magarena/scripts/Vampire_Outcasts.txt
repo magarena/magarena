@@ -1,0 +1,13 @@
+>Vampire Outcasts
+url=http://magiccards.info/m12/en/115.html
+image=http://magiccards.info/scans/en/m12/115.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Vampire
+color=b
+converted=4
+cost={2}{B}{B}
+pt=2/2
+ability=bloodthirst 2,lifelink
+timing=main
