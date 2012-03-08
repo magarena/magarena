@@ -1,0 +1,14 @@
+>Gristleback
+url=http://magiccards.info/gp/en/87.html
+image=http://magiccards.info/scans/en/gp/87.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Boar,Beast
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+ability=bloodthirst 1
+timing=main
+requires_card_code
