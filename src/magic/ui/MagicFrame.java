@@ -48,13 +48,13 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String NAME = "Magarena";
 	private static final String SAVE_DUEL_ITEM = "Save";
 	private static final String RESTART_DUEL_ITEM = "Restart";
-	private static final String RESET_DUEL_ITEM = "Reset";
+	private static final String RESET_DUEL_ITEM = "ResetDuel";
 	private static final String NEW_DECK_ITEM = "NewDeck";
 	private static final String LOAD_DECK_ITEM = "LoadDeck";
 	private static final String SAVE_DECK_ITEM = "SaveDeck";
 	private static final String SWAP_DECKS_ITEM = "Swap";
 	private static final String PLAY_GAME_ITEM = "Play";
-	private static final String RESET_GAME_ITEM = "Reset";
+	private static final String RESET_GAME_ITEM = "ResetGame";
 	private static final String CONCEDE_GAME_ITEM = "Concede";
 	private static final String CARD_EXPLORER_ITEM = "Explorer";
 	private static final String KEYWORDS_ITEM = "Keywords";
