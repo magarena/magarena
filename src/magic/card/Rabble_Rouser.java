@@ -22,8 +22,8 @@ public class Rabble_Rouser {
 			new MagicCondition[]{
 					MagicCondition.CAN_TAP_CONDITION,
 					MagicManaCost.RED.getCondition()},
-            new MagicActivationHints(MagicTiming.Removal),
-            "Damage") {
+            new MagicActivationHints(MagicTiming.Block),
+            "Pump") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[] {new MagicPayManaCostTapEvent(
