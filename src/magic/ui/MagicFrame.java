@@ -301,7 +301,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 
 		duelMenu.addSeparator();
 
-		playGameItem=new JMenuItem("Play game");
+		playGameItem=new JMenuItem("Start duel");
 		playGameItem.addActionListener(this);
 		duelMenu.add(playGameItem);
 		
@@ -378,6 +378,9 @@ public class MagicFrame extends JFrame implements ActionListener {
 			enableMenuItem(SAVE_DECK_ITEM,true);
 			enableMenuItem(SWAP_DECKS_ITEM,duel.isEditable());
 			enableMenuItem(PLAY_GAME_ITEM,!duel.isFinished());
+			playGameItem.setText((duel.getGamesPlayed() == 0 ?
+						"Start duel" :
+						"Continue duel"));
             if (System.getProperty("selfMode") != null) {
                 if (!duel.isFinished()) {
                     nextGame();
