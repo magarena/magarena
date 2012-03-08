@@ -1,0 +1,14 @@
+>Rabble-Rouser
+url=http://magiccards.info/gp/en/73.html
+image=http://magiccards.info/scans/en/gp/73.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Goblin,Shaman
+color=r
+converted=4
+cost={3}{R}
+pt=1/1
+ability=bloodthirst 1
+timing=main
+requires_card_code

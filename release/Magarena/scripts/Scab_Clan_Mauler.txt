@@ -1,0 +1,13 @@
+>Scab-Clan Mauler
+url=http://magiccards.info/gp/en/128.html
+image=http://magiccards.info/scans/en/gp/128.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Berserker
+color=rg
+converted=2
+cost={R}{G}
+pt=1/1
+ability=bloodthirst 2,trample
+timing=main
