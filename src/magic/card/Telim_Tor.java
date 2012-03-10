@@ -2,6 +2,7 @@ package magic.card;
 
 import java.util.Collection;
 
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -12,7 +13,7 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Telim_Tor {
-    public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
+    public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,
@@ -39,7 +40,10 @@ public class Telim_Tor {
                     (MagicPlayer)data[0],
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
 			for (final MagicTarget target : targets) {
-				game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,1,1));
+				final MagicPermanent creature = (MagicPermanent)target;
+				if (creature.hasAbility(game,MagicAbility.Flanking)) {
+					game.doAction(new MagicChangeTurnPTAction(creature,1,1));	
+				}
 			}
 		}		
     };
