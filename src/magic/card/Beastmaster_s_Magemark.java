@@ -31,7 +31,7 @@ public class Beastmaster_s_Magemark {
     
     public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-			MagicPumpTargetPicker.getInstance());
+			MagicPumpTargetPicker.create());
     
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
 		@Override

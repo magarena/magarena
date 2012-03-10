@@ -19,7 +19,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 public class Snake_Umbra {
 	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
             MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.getInstance());	
+            MagicPumpTargetPicker.create());	
 
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override

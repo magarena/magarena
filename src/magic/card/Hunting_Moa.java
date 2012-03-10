@@ -25,7 +25,7 @@ public class Hunting_Moa {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     player + " puts a +1/+1 counter on target creature$.");
@@ -60,7 +60,7 @@ public class Hunting_Moa {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     player + " puts a +1/+1 counter on target creature$.") :

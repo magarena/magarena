@@ -36,7 +36,7 @@ public class Extruder {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     source.getController() + " puts a +1/+1 counter on target creature$.");

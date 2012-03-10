@@ -26,7 +26,7 @@ public class Sigil_Blessing {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack,player},
                     this,
                     "Until end of turn, target creature$ you control gets +3/+3 and other creatures you control get +1/+1.");

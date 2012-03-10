@@ -22,7 +22,7 @@ public class Colossal_Might {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +4/+2 and gains trample until end of turn.");

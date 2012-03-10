@@ -21,7 +21,7 @@ public class Inspirit {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Untap target creature$. It gets +2/+4 until end of turn.");

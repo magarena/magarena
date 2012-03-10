@@ -18,7 +18,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 public class Curiosity {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-			MagicPumpTargetPicker.getInstance());
+			MagicPumpTargetPicker.create());
 	
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override

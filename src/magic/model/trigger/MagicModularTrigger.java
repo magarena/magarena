@@ -36,7 +36,7 @@ public class MagicModularTrigger extends MagicWhenPutIntoGraveyardTrigger {
                 			player + " may put " + amount + " +1/+1 counters on target artifact creature." :
                 			player + " may put a +1/+1 counter on target artifact creature.",
                         MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE),
-                MagicPumpTargetPicker.getInstance(),
+                MagicPumpTargetPicker.create(),
                 new Object[]{amount},
                 this,
                 amount > 1 ?

@@ -24,7 +24,7 @@ public class Elder_Cathar {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     player + " puts a +1/+1 counter on target creature he or she controls. " +

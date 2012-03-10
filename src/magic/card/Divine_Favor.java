@@ -7,5 +7,5 @@ import magic.model.target.MagicPumpTargetPicker;
 public class Divine_Favor {
 	public static final MagicPlayAuraEvent A = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-			MagicPumpTargetPicker.getInstance());
+			MagicPumpTargetPicker.create());
 }

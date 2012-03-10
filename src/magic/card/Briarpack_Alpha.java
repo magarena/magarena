@@ -22,7 +22,7 @@ public class Briarpack_Alpha {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
 				    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +2/+2 until end of turn.");

@@ -8,5 +8,5 @@ import magic.model.target.MagicPumpTargetPicker;
 public class Unholy_Strength {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.getInstance());
+            MagicPumpTargetPicker.create());
 }

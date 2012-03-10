@@ -20,7 +20,7 @@ public class Giant_Growth {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +3/+3 until end of turn.");

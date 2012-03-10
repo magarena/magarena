@@ -28,7 +28,7 @@ public class Vines_of_Vastwood {
                         MagicTargetChoice.TARGET_CREATURE,
                         MagicManaCost.GREEN,
                         false),
-				    MagicPumpTargetPicker.getInstance(),
+				    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ can't be the target of spells or abilities your opponent controls this turn. " + 

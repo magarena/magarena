@@ -17,7 +17,7 @@ public class Angelic_Destiny {
 	
     public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.getInstance());
+            MagicPumpTargetPicker.create());
 
 	public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override

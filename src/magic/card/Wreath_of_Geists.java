@@ -28,5 +28,5 @@ public class Wreath_of_Geists {
     
     public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-			MagicPumpTargetPicker.getInstance());
+			MagicPumpTargetPicker.create());
 }

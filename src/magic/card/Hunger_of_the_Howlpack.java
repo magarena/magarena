@@ -23,7 +23,7 @@ public class Hunger_of_the_Howlpack {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     player + " puts a +1/+1 counter on target creature$.");

@@ -32,7 +32,7 @@ public class Kabuto_Moth {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
 				    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +1/+2 until end of turn.");

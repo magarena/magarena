@@ -23,7 +23,7 @@ public class Aggressive_Urge {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack,player},
                     this,
                     "Target creature$ gets +1/+1 until end of turn.");

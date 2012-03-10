@@ -23,7 +23,7 @@ public class Untamed_Might {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack,amount},
                     this,
                     "Target creature$ gets +" + amount +

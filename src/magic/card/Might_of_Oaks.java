@@ -22,7 +22,7 @@ public class Might_of_Oaks {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +7/+7 until end of turn.");

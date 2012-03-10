@@ -12,11 +12,12 @@ import magic.model.target.MagicTargetType;
 import magic.ui.GameController;
 
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.Map;
+import java.util.HashMap;
 import java.util.Set;
+import java.util.HashSet;
 
 public class MagicTargetChoice extends MagicChoice {
-	
     public static final MagicTargetChoice TARGET_NONE =
 		new MagicTargetChoice(MagicTargetFilter.ALL,false,MagicTargetHint.None,"nothing") {
             @Override
@@ -451,4 +452,19 @@ public class MagicTargetChoice extends MagicChoice {
 		}
 		return new Object[]{controller.getChoiceClicked()};
 	}
+   
+
+    private static Map<String, MagicTargetChoice> targetChoice =
+        new HashMap<String, MagicTargetChoice>();
+
+    static {
+        targetChoice.put("pos creature", POS_TARGET_CREATURE);
+        targetChoice.put("neg creature", NEG_TARGET_CREATURE);
+        targetChoice.put("neg creature or land", NEG_TARGET_CREATURE_OR_LAND);
+    }
+	
+
+    public static MagicTargetChoice create(String arg) {
+        return targetChoice.get(arg);
+    }
 }

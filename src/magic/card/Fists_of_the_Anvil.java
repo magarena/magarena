@@ -22,7 +22,7 @@ public class Fists_of_the_Anvil {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},this,"Target creature$ gets +4/+0 until end of turn.");
 		}
 		@Override

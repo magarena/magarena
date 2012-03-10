@@ -28,7 +28,7 @@ public class Cradle_of_Vitality {
                             "You may pay {1}{W}.",
                             new MagicPayManaCostChoice(MagicManaCost.ONE_WHITE),
                             MagicTargetChoice.POS_TARGET_CREATURE),
-                            MagicPumpTargetPicker.getInstance(),
+                            MagicPumpTargetPicker.create(),
                     new Object[]{amount},
                     this,
                     "You may$ pay {1}{W}$. If you do, put a +1/+1 counter " +

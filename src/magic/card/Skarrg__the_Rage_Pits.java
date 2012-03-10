@@ -39,7 +39,7 @@ public class Skarrg__the_Rage_Pits {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +1/+1 and gains trample until end of turn.");

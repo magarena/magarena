@@ -8,5 +8,5 @@ import magic.model.target.MagicPumpTargetPicker;
 public class Spider_Umbra {
 	public static final MagicSpellCardEvent E =new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.getInstance());	
+            MagicPumpTargetPicker.create());	
 }

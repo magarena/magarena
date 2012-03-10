@@ -40,7 +40,7 @@ public class Kessig_Wolf_Run {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{amount},
                     this,
                     "Target creature$ gets +" + amount +

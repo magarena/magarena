@@ -18,7 +18,7 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Ferocity {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.getInstance());
+            MagicPumpTargetPicker.create());
 	
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
 		@Override

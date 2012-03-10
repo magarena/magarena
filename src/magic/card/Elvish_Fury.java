@@ -25,7 +25,7 @@ public class Elvish_Fury {
                     new MagicBuybackChoice(
                     		MagicTargetChoice.POS_TARGET_CREATURE,
                     		MagicManaCost.FOUR),
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +2/+2 until end of turn. If the " +

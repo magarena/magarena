@@ -14,7 +14,7 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 public class Favor_of_the_Woods {
 	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
 			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.getInstance());
+            MagicPumpTargetPicker.create());
 	
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
     	@Override

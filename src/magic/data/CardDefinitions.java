@@ -9,6 +9,7 @@ import magic.model.MagicStaticType;
 import magic.model.MagicType;
 import magic.model.MagicSubType;
 import magic.model.event.MagicTiming;
+import magic.model.event.MagicPlayAuraEvent;
 import magic.model.mstatic.MagicStatic;
 
 import java.io.File;
@@ -115,6 +116,8 @@ public class CardDefinitions {
 			}
 		} else if ("mana_or_combat".equals(property)) {
             card.setExcludeManaOrCombat();
+		} else if ("enchant".equals(property)) {
+            card.add(MagicPlayAuraEvent.create(value));
 		} else if ("requires_card_code".equals(property)) {
 	        addCardSpecificCode(card);	
         } else {

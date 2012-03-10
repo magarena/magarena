@@ -41,7 +41,7 @@ public class Quest_for_the_Gemblades {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     "Put four +1/+1 counters on target creature$.");

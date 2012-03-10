@@ -25,7 +25,7 @@ public class Seething_Anger {
                     new MagicBuybackChoice(
                     		MagicTargetChoice.POS_TARGET_CREATURE,
                     		MagicManaCost.THREE),
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +3/+0 until end of turn. If the " +

@@ -32,7 +32,7 @@ public class Infantry_Veteran {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_ATTACKING_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
 				    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +1/+1 until end of turn.");

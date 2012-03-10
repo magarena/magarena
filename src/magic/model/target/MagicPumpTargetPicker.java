@@ -8,8 +8,8 @@ import magic.model.MagicPowerToughness;
 
 public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicPumpTargetPicker();
-	
+	private static final MagicPumpTargetPicker INSTANCE=new MagicPumpTargetPicker();
+	   
 	private static final int ATTACKING_UNBLOCKED=5<<12;
 	private static final int ATTACKING_TRAMPLE=4<<12;
 	private static final int ATTACKING=3<<12;
@@ -19,8 +19,18 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	private static final int DOUBLE_STRIKE=2<<8;
 	private static final int LIFELINK=1<<8;
 
-	private MagicPumpTargetPicker() {
-		
+    static {
+        MagicTargetPicker.register("pump", INSTANCE);
+    }
+
+	private MagicPumpTargetPicker() {}
+
+	public MagicPumpTargetPicker create(String[] args) {
+		return INSTANCE;
+	}
+	
+    public static MagicPumpTargetPicker create() {
+		return INSTANCE;
 	}
 	
 	@Override
@@ -66,10 +76,5 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		}
 
 		return permanent.getController()==player?score:-score;
-	}
-
-	public static MagicTargetPicker getInstance() {
-		
-		return INSTANCE;
 	}
 }

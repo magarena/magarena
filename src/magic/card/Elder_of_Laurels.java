@@ -33,7 +33,7 @@ public class Elder_of_Laurels {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicPumpTargetPicker.getInstance(),
+                    MagicPumpTargetPicker.create(),
                     new Object[]{source.getController()},
                     this,
                     "Target creature gets +X/+X until end of turn, " +
