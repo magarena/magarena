@@ -9,5 +9,5 @@ color=r
 converted=2
 cost={1}{R}
 pt=1/1
-ability=first strike,landfall pump
+ability=first strike,landfall pump +2/+2
 timing=main
