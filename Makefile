@@ -97,7 +97,7 @@ cards/existing_scripts.txt: $(wildcard release/Magarena/scripts/*.txt)
 	sed -i 's/\r//' $@
 
 cards/existing_tokens.txt: $(wildcard release/Magarena/scripts/*.txt)
-	cat `grep token= $^ | cut -d':' -f1` | grep "^>" | sed 's/>//' | sort > $@
+	grep -hr "^>" `grep token= -r release/Magarena/scripts | cut -d':' -f1` | sed 's/>//' | sort > $@
 
 cards/existing.txt: cards/existing_scripts.txt cards/existing_tokens.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
