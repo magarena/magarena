@@ -94,6 +94,11 @@ public enum MagicAbility {
             card.add(MagicModularTrigger.create());
         }
     },
+    Flanking("flanking",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicFlankingTrigger.create());
+        }
+    },
     Exalted("exalted",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicExaltedTrigger.create());
@@ -107,11 +112,6 @@ public enum MagicAbility {
     LivingWeapon("living weapon", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicLivingWeaponTrigger.create());
-        }
-    },
-    Flanking("flanking",10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicFlankingTrigger.create());
         }
     },
     Regenerate("regenerate",30) {
