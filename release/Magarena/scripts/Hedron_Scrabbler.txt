@@ -8,5 +8,5 @@ subtype=Construct
 converted=2
 cost={2}
 pt=1/1
+ability=landfall pump +1/+1
 timing=main
-requires_card_code
