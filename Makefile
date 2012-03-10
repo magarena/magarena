@@ -1,6 +1,6 @@
 JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true 
 LIBS=.:lib/annotations.jar:lib/jsr305.jar
-JAVA=java -Xms256M -Xmx256M -Ddebug=true -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar 
+JAVA=${JAVAEA} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar 
 SHELL=/bin/bash
 BUILD=build
 JOPTS=-Xlint:all -d $(BUILD) -cp $(LIBS):$(BUILD):.
