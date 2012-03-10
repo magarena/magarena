@@ -234,7 +234,10 @@ public enum MagicAbility {
     },
     LandfallPump("landfall pump",20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-	        card.add(MagicLandfallPumpTrigger.create());
+        	final String[] pt = arg.replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+	        card.add(new MagicLandfallPumpTrigger(power,toughness));
         }
     },
     TapAddMana("tap add mana",10) {

@@ -9,5 +9,5 @@ color=w
 converted=1
 cost={W}
 pt=0/1
-ability=landfall pump
+ability=landfall pump +2/+2
 timing=main
