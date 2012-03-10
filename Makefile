@@ -93,7 +93,7 @@ cards/new.txt: cards/existing.txt
 	diff $^ cards/existing_old.txt | grep "<" | sed 's/< /  /' > $@
 
 cards/existing_scripts.txt: $(wildcard release/Magarena/scripts/*.txt)
-	cat $^ | grep "^>" | sed 's/>//' | sort > $@
+	grep "^>" -hr release/Magarena/scripts | sed 's/>//' | sort > $@
 	sed -i 's/\r//' $@
 
 cards/existing_tokens.txt: $(wildcard release/Magarena/scripts/*.txt)
