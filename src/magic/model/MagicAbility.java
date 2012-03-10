@@ -87,6 +87,13 @@ public enum MagicAbility {
 	Undying("undying",60),
     // 60 keyword ability
     
+	Modular("modular", 10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+			card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+            card.add(MagicModularTrigger.create());
+        }
+    },
     Exalted("exalted",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicExaltedTrigger.create());
@@ -328,13 +335,6 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(new MagicEntersExileCreatureOrSacrificeTrigger(arg));
             card.add(MagicLeavesReturnExileTrigger.create());
-        }
-    },
-    Modular("modular", 10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final int n = Integer.parseInt(arg);
-			card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
-            card.add(MagicModularTrigger.create());
         }
     },
     EntersGainLife("enters gain life", 10) {
