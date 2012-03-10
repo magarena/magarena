@@ -155,7 +155,7 @@ $(BUILD)/javac.last: $(SRC)
 	touch $@
 
 tags: $(SRC) 
-	ctags -R .
+	ctags -R src
 
 .Test%: $(MAG)
 	$(JAVA) -DtestGame=Test$* -jar $^
