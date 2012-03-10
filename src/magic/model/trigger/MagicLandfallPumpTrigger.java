@@ -8,17 +8,19 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger {
-
-    private static final MagicLandfallPumpTrigger INSTANCE = new MagicLandfallPumpTrigger();
-
-    private MagicLandfallPumpTrigger() {}
-
-    public static final MagicLandfallPumpTrigger create() {
-        return INSTANCE;
+	private final int power;
+    private final int toughness;
+    
+    public MagicLandfallPumpTrigger(final int power, final int toughness) {
+        this.power = power;
+        this.toughness = toughness;
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+	public MagicEvent executeTrigger(
+			final MagicGame game,
+			final MagicPermanent permanent,
+			final MagicPermanent played) {
         final MagicPlayer player = permanent.getController();
         return (player == played.getController() && played.isLand()) ?
             new MagicEvent(
@@ -26,7 +28,8 @@ public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger
                 player,
                 new Object[]{permanent},
                 this,
-                permanent + " gets +2/+2 until end of turn."):
+                permanent + " gets " + getString(power) + 
+                "/" + getString(toughness) + " until end of turn.") :
             MagicEvent.NONE;
     }
     
@@ -36,6 +39,15 @@ public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
-    }		
+    	game.doAction(new MagicChangeTurnPTAction(
+				(MagicPermanent)data[0],
+				power,
+				toughness));
+    }
+    
+    private String getString(final int pt) {
+		return pt >= 0 ?
+				"+" + pt :
+				Integer.toString(pt);
+	}
 }
