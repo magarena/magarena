@@ -468,7 +468,7 @@ public class MagicTargetChoice extends MagicChoice {
     }
 	
 
-    public static MagicTargetChoice create(String arg) {
+    public static MagicTargetChoice build(String arg) {
         return factory.get(arg);
     }
 }

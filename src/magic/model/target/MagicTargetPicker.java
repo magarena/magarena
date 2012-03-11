@@ -36,12 +36,7 @@ public abstract class MagicTargetPicker<T> {
 
     static {
         register("pump", MagicPumpTargetPicker.create());
-        register("weaken -13/-0", new MagicWeakenTargetPicker(13,0));
-        register("weaken -3/-0", new MagicWeakenTargetPicker(3,0));
-        register("weaken -4/-1", new MagicWeakenTargetPicker(4,1));
-        register("weaken +2/-2", new MagicWeakenTargetPicker(2,2));
-        register("weaken -2/-2", new MagicWeakenTargetPicker(2,2));
-        register("weaken -2/-1", new MagicWeakenTargetPicker(2,1));
+        register("weaken", new MagicWeakenTargetPicker(0,0));
         register("flying", MagicFlyingTargetPicker.create());
         register("lifelink", MagicLifelinkTargetPicker.create());
         register("copy", MagicCopyTargetPicker.create());
@@ -58,9 +53,18 @@ public abstract class MagicTargetPicker<T> {
         register("tap", new MagicNoCombatTargetPicker(true,true,false));
         register("indestructible", MagicIndestructibleTargetPicker.create());
     }
+    
+    public MagicTargetPicker<MagicPermanent> create(String arg) {
+        return null;
+    }
 
-    public static MagicTargetPicker<MagicPermanent> create(String arg) {
-        return factory.get(arg);
+    public static MagicTargetPicker<MagicPermanent> build(String arg) {
+        if (factory.containsKey(arg)) {
+            return factory.get(arg);
+        } else {
+            final String[] args = arg.split(" ", 2);
+            return factory.get(args[0]).create(args[1]);
+        }
     }
 
     public static void register(String key, MagicTargetPicker<MagicPermanent> tp) {
