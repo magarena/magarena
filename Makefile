@@ -286,3 +286,9 @@ cards/current-magic-excel.txt:
 up:
 	hg pull -u
 	cd wiki; hg pull -u; cd ..
+
+cards/with_card_code:
+	ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort > $@
+
+cards/require_card_code:
+	 grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort > $@
