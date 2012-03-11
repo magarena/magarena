@@ -55,7 +55,7 @@ public abstract class MagicTargetPicker<T> {
     }
     
     public MagicTargetPicker<MagicPermanent> create(String arg) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public static MagicTargetPicker<MagicPermanent> build(String arg) {
