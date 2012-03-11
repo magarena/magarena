@@ -66,6 +66,7 @@ public abstract class WebDownloader {
             ex.printStackTrace();
 		} finally {
             magic.data.FileIO.close(inputStream);
+            magic.data.FileIO.close(dataStream);
         }
 		
 		return sb.toString();
