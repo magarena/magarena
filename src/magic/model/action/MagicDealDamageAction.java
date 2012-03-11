@@ -18,7 +18,7 @@ public class MagicDealDamageAction extends MagicAction {
 	private MagicTarget target;
 	private int oldDamage;
 	private int oldPrevent;
-    private final int UNINIT = Integer.MIN_VALUE;
+    private static final int UNINIT = Integer.MIN_VALUE;
 	
 	public MagicDealDamageAction(final MagicDamage damage) {
 		this.damage=damage;
