@@ -7,15 +7,18 @@ import magic.model.MagicPlayer;
 
 public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE = new MagicLifelinkTargetPicker();
+	private static final MagicLifelinkTargetPicker INSTANCE = new MagicLifelinkTargetPicker();
 	
 	private static final int ATTACKING_UNBLOCKED = 5<<8;
 	private static final int BLOCKED_OR_BLOCKING = 4<<8;
 	private static final int CAN_TAP = 3<<8;
 	private static final int DOUBLE_STRIKE = 2<<8;
 	private static final int FIRST_STRIKE = 1<<8;
+
+	private MagicLifelinkTargetPicker() {}
 	
-	private MagicLifelinkTargetPicker() {
+	public static MagicLifelinkTargetPicker create() {
+		return INSTANCE;
 	}
 
 	@Override
@@ -55,9 +58,5 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
 		}
 		
 		return permanent.getPower(game) + score;
-	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
 	}
 }

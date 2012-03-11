@@ -9,4 +9,5 @@ color=u
 converted=1
 cost={U}
 timing=aura
+enchant=pump,pos creature
 requires_card_code

@@ -7,9 +7,13 @@ import magic.model.MagicPlayer;
 
 public class MagicUnblockableTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicUnblockableTargetPicker();
+	private static final MagicUnblockableTargetPicker INSTANCE = new MagicUnblockableTargetPicker();
 	
 	private MagicUnblockableTargetPicker() {}
+	
+    public static MagicUnblockableTargetPicker create() {
+		return INSTANCE;
+	}	
 	
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
@@ -24,8 +28,4 @@ public class MagicUnblockableTargetPicker extends MagicTargetPicker<MagicPermane
 		}
 		return 1+permanent.getPower(game);
 	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
-	}	
 }

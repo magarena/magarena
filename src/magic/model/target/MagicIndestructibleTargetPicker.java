@@ -7,9 +7,13 @@ import magic.model.MagicPlayer;
 
 public class MagicIndestructibleTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicIndestructibleTargetPicker();
+	private static final MagicIndestructibleTargetPicker INSTANCE=new MagicIndestructibleTargetPicker();
 	
 	private MagicIndestructibleTargetPicker() {}
+	
+	public static MagicIndestructibleTargetPicker create() {
+		return INSTANCE;
+	}
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
@@ -17,9 +21,5 @@ public class MagicIndestructibleTargetPicker extends MagicTargetPicker<MagicPerm
 			return 0;
 		}
 		return 100+permanent.getPower(game)*2+permanent.getDamage()-permanent.getToughness(game);
-	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
 	}
 }

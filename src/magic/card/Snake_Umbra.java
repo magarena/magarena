@@ -7,20 +7,11 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
-
 public class Snake_Umbra {
-	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
-            MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.create());	
-
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {

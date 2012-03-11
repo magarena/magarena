@@ -7,19 +7,11 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.target.MagicPumpTargetPicker;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Ferocity {
-	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.create());
-	
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {

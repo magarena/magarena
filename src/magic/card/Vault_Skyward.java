@@ -22,7 +22,7 @@ public class Vault_Skyward {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFlyingTargetPicker.getInstance(),
+                    MagicFlyingTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gains flying until end of turn. Untap it.");

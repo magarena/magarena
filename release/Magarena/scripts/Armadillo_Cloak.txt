@@ -11,4 +11,5 @@ cost={1}{G}{W}
 given_pt=2/2
 given_ability=trample
 timing=aura
+enchant=pump,pos creature
 requires_card_code

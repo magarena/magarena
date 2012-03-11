@@ -5,18 +5,10 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDealDamageAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.target.MagicNoCombatTargetPicker;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Spiteful_Shadows {
-	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
-			MagicTargetChoice.NEG_TARGET_CREATURE,
-            new MagicNoCombatTargetPicker(true,true,true));	
-
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(

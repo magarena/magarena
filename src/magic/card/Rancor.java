@@ -15,10 +15,6 @@ import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Rancor {
-	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicTrampleTargetPicker.getInstance());
-
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {

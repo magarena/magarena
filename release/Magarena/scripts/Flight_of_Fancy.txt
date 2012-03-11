@@ -10,4 +10,5 @@ converted=4
 cost={3}{U}
 given_ability=flying
 timing=aura
+enchant=flying,pos creature
 requires_card_code

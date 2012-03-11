@@ -7,9 +7,13 @@ import magic.model.MagicPlayer;
 
 public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicTrampleTargetPicker();
-	
+	private static final MagicTrampleTargetPicker INSTANCE=new MagicTrampleTargetPicker();
+
 	private MagicTrampleTargetPicker() {}
+	
+	public static MagicTrampleTargetPicker create() {
+		return INSTANCE;
+	}
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
@@ -20,9 +24,5 @@ public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> 
 			return 1+permanent.getPower(game);
 		}
 		return 0;
-	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
 	}
 }

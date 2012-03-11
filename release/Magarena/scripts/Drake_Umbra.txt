@@ -12,4 +12,4 @@ given_pt=3/3
 ability=totem armor
 given_ability=flying
 timing=aura
-requires_card_code
+enchant=pump,pos creature

@@ -14,10 +14,6 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 
 public class Fists_of_Ironwood {
-	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicTrampleTargetPicker.getInstance());
-
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {

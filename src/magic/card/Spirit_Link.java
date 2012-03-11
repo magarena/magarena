@@ -5,18 +5,10 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.target.MagicLifelinkTargetPicker;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Spirit_Link {
-	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
-			MagicTargetChoice.TARGET_CREATURE,
-			MagicLifelinkTargetPicker.getInstance());
-	
 	public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {

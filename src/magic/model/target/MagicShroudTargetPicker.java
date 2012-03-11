@@ -7,9 +7,13 @@ import magic.model.MagicPlayer;
 
 public class MagicShroudTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicShroudTargetPicker();
-	
+	private static final MagicShroudTargetPicker INSTANCE=new MagicShroudTargetPicker();
+
 	private MagicShroudTargetPicker() {}
+	
+	public static MagicShroudTargetPicker create() {
+		return INSTANCE;
+	}
 	
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
@@ -18,9 +22,5 @@ public class MagicShroudTargetPicker extends MagicTargetPicker<MagicPermanent> {
 			return 0;
 		}
 		return permanent.getScore(game);
-	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
 	}
 }

@@ -11,4 +11,4 @@ cost={1}{R}
 given_pt=2/2
 given_ability=haste
 timing=aura
-requires_card_code
+enchant=haste,pos creature

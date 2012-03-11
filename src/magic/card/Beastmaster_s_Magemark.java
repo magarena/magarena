@@ -4,14 +4,10 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
@@ -28,10 +24,6 @@ public class Beastmaster_s_Magemark {
     		return target.isEnchanted();
         }
     };
-    
-    public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,
-			MagicPumpTargetPicker.create());
     
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
 		@Override

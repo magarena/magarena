@@ -12,4 +12,4 @@ given_pt=5/5
 given_ability=trample
 ability=flash
 timing=pump
-requires_card_code
+enchant=pump,pos creature

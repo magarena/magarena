@@ -11,4 +11,4 @@ converted=2
 cost={1}{B}
 given_pt=-4/-1
 timing=removal
-requires_card_code
+enchant=weaken -4/-1,neg creature

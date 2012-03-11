@@ -19,7 +19,7 @@ public class Neurok_Invisimancer {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
-                    MagicUnblockableTargetPicker.getInstance(),
+                    MagicUnblockableTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     "Target creature$ is unblockable this turn.");

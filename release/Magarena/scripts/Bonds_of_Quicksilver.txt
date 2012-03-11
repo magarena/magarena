@@ -12,4 +12,4 @@ cost={3}{U}
 given_ability=doesn't untap during untap step
 ability=flash
 timing=tapping
-requires_card_code
+enchant=can't attack or block,neg creature

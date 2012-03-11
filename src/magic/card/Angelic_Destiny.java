@@ -14,11 +14,6 @@ import magic.model.target.MagicPumpTargetPicker;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Angelic_Destiny {
-	
-    public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,
-            MagicPumpTargetPicker.create());
-
 	public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {

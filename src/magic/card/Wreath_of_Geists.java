@@ -25,8 +25,4 @@ public class Wreath_of_Geists {
         	return target == source.getEnchantedCreature();
         }
     };
-    
-    public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,
-			MagicPumpTargetPicker.create());
 }

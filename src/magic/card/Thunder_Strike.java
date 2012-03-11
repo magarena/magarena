@@ -22,7 +22,7 @@ public class Thunder_Strike {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFirstStrikeTargetPicker.getInstance(),
+                    MagicFirstStrikeTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +2/+0 and gains first strike until end of turn.");

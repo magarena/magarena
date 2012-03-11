@@ -11,4 +11,5 @@ converted=3
 cost={2}{U}
 ability=vanishing 3
 timing=main
+enchant=sacrifice,neg permanent
 requires_card_code

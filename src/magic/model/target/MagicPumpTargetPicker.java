@@ -19,16 +19,8 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	private static final int DOUBLE_STRIKE=2<<8;
 	private static final int LIFELINK=1<<8;
 
-    static {
-        MagicTargetPicker.register("pump", INSTANCE);
-    }
-
 	private MagicPumpTargetPicker() {}
 
-	public MagicPumpTargetPicker create(String[] args) {
-		return INSTANCE;
-	}
-	
     public static MagicPumpTargetPicker create() {
 		return INSTANCE;
 	}

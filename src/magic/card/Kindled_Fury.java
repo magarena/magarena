@@ -22,7 +22,7 @@ public class Kindled_Fury {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFirstStrikeTargetPicker.getInstance(),
+                    MagicFirstStrikeTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +1/+0 and gains first strike until end of turn.");

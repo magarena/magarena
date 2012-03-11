@@ -35,7 +35,7 @@ public class Alabaster_Mage {
 					source,
 					source.getController(),
 					MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-					MagicLifelinkTargetPicker.getInstance(),
+					MagicLifelinkTargetPicker.create(),
 					MagicEvent.NO_DATA,
 					this,
 					"Target creature$ you control gains lifelink until end of turn.");

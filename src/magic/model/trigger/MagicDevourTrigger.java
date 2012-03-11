@@ -47,7 +47,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
 						permanent,
 						player,
 						devourChoice,
-						MagicSacrificeTargetPicker.getInstance(),
+						MagicSacrificeTargetPicker.create(),
 						new Object[] {permanent},
 						this,
 						"You may$ sacrifice a creature$ to " + name + ".") :

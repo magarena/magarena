@@ -11,4 +11,4 @@ cost={2}{W}
 ability=enters draw card
 given_ability=protection from creatures
 timing=aura
-requires_card_code
+enchant=unblockable,pos creature

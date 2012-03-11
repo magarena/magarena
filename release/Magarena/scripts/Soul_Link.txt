@@ -10,4 +10,5 @@ color=wb
 converted=3
 cost={1}{W}{B}
 timing=aura
+enchant=can't attack or block,creature
 requires_card_code

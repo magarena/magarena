@@ -33,7 +33,7 @@ public class Goblin_Tunneler {
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_POWER_2_OR_LESS,
-                    MagicUnblockableTargetPicker.getInstance(),
+                    MagicUnblockableTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     "Target creature$ with power 2 or less is unblockable this turn.");

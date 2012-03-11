@@ -23,7 +23,7 @@ public class Withstand_Death {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicIndestructibleTargetPicker.getInstance(),
+                    MagicIndestructibleTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ is indestructible turn.");

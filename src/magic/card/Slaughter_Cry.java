@@ -22,7 +22,7 @@ public class Slaughter_Cry {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFirstStrikeTargetPicker.getInstance(),
+                    MagicFirstStrikeTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +3/+0 and gains first strike until end of turn.");

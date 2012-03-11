@@ -43,7 +43,7 @@ public class Skullmulcher {
 							permanent,
 							player,
 							devourChoice,
-							MagicSacrificeTargetPicker.getInstance(),
+							MagicSacrificeTargetPicker.create(),
 							new Object[]{permanent},
 							this,
 							"You may$ sacrifice a creature$ to "+permanent+".");

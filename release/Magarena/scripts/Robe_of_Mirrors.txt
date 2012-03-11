@@ -10,4 +10,4 @@ converted=1
 cost={U}
 given_ability=shroud
 timing=aura
-requires_card_code
+enchant=shroud,pos creature

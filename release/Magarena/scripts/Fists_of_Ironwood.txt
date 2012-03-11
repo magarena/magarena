@@ -10,4 +10,5 @@ converted=2
 cost={1}{G}
 given_ability=trample
 timing=aura
+enchant=trample,pos creature
 requires_card_code

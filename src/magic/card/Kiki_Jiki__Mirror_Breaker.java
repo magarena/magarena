@@ -35,7 +35,7 @@ public class Kiki_Jiki__Mirror_Breaker {
                     source,
                     player,
                     MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
-                    MagicCopyTargetPicker.getInstance(),
+                    MagicCopyTargetPicker.create(),
                     new Object[]{player},
                     this,
                     "Put a token that's a copy of target nonlegendary creature$ you control onto the battlefield. "+

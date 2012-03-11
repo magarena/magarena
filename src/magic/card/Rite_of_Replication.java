@@ -32,7 +32,7 @@ public class Rite_of_Replication {
                     		MagicTargetChoice.TARGET_CREATURE,
                     		MagicManaCost.FIVE,
                     		false),
-				    MagicCopyTargetPicker.getInstance(),
+				    MagicCopyTargetPicker.create(),
                     new Object[]{cardOnStack,player},
                     this,
                     "Put a token onto the battlefield that's a copy of " +

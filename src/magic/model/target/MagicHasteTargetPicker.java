@@ -6,9 +6,13 @@ import magic.model.MagicPlayer;
 
 public class MagicHasteTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicHasteTargetPicker();
-	
+	private static final MagicHasteTargetPicker INSTANCE=new MagicHasteTargetPicker();
+
 	private MagicHasteTargetPicker() {}
+	
+	public static MagicHasteTargetPicker create() {
+		return INSTANCE;
+	}
 	
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
@@ -16,9 +20,5 @@ public class MagicHasteTargetPicker extends MagicTargetPicker<MagicPermanent> {
 			return 0;
 		}
 		return 1+permanent.getPower(game)+permanent.getActivations().size();
-	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
 	}
 }

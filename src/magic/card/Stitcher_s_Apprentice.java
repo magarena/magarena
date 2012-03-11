@@ -54,7 +54,7 @@ public class Stitcher_s_Apprentice {
                     (MagicPermanent)data[0],
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
-                    MagicSacrificeTargetPicker.getInstance(),
+                    MagicSacrificeTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     EVENT_ACTION,
                     "Choose a creature to sacrifice$."));

@@ -5,19 +5,10 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeLifeAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.target.MagicNoCombatTargetPicker;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Soul_Link {
-
-	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
-			MagicTargetChoice.TARGET_CREATURE,
-            new MagicNoCombatTargetPicker(true,true,true));	
-
     //deals damage
     public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
 		@Override

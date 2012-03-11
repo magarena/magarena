@@ -8,6 +8,6 @@ subtype=Aura
 color=r
 converted=1
 cost={R}
-given_pt=2/-2
+given_pt=+2/-2
 timing=aura
-requires_card_code
+enchant=weaken +2/-2,creature

@@ -22,7 +22,7 @@ public class Angelic_Blessing {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFlyingTargetPicker.getInstance(),
+                    MagicFlyingTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +3/+3 and gains flying until end of turn.");

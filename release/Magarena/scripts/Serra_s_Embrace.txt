@@ -11,4 +11,4 @@ cost={2}{W}{W}
 given_pt=2/2
 given_ability=flying,vigilance
 timing=aura
-requires_card_code
+enchant=pump,pos creature

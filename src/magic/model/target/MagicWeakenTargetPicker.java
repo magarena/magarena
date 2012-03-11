@@ -13,10 +13,6 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	private static final int CAN_TAP=1<<8;
 		
 	private final int amountToughness;
-    
-    static {
-        MagicTargetPicker.register("weaken", new MagicWeakenTargetPicker(0,0));
-    }
 	
 	public MagicWeakenTargetPicker(final int amountPower,final int amountToughness) {
 		this.amountToughness=amountToughness;

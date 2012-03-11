@@ -46,7 +46,7 @@ public class Tribute_to_Hunger {
                             cardOnStack.getCard(),
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE,
-                            MagicSacrificeTargetPicker.getInstance(),
+                            MagicSacrificeTargetPicker.create(),
                             new Object[]{(MagicPlayer)data[1]},
                             EVENT_ACTION,
                             "Choose a creature to sacrifice$."));

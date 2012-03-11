@@ -22,7 +22,7 @@ public class Moment_of_Heroism {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicLifelinkTargetPicker.getInstance(),
+                    MagicLifelinkTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gets +2/+2 and gains lifelink until end of turn.");

@@ -11,4 +11,5 @@ converted=3
 cost={1}{U}{U}
 given_ability=doesn't untap during untap step
 timing=tapping
+enchant=can't attack or block,neg creature 
 requires_card_code

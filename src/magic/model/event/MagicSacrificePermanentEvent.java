@@ -34,7 +34,7 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
             source,
             player,
             targetChoice,
-            MagicSacrificeTargetPicker.getInstance(),
+            MagicSacrificeTargetPicker.create(),
             MagicEvent.NO_DATA,
             EVENT_ACTION,
             "Choose "+targetChoice.getTargetDescription()+"$."

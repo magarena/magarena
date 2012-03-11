@@ -49,7 +49,7 @@ public class Merfolk_Sovereign {
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_MERFOLK_CREATURE,
-                    MagicUnblockableTargetPicker.getInstance(),
+                    MagicUnblockableTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     "Target Merfolk creature$ is unblockable this turn.");

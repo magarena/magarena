@@ -93,7 +93,7 @@ public class CardDefinitions {
             if (!card.isEquipment() && !card.isAura()) {
                 throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_pt");
             }
-            final String[] pt = value.split("/");
+            final String[] pt = value.replace('+','0').split("/");
 			card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
 		} else if ("given_ability".equals(property)) {
             if (!card.isEquipment() && !card.isAura()) {
@@ -195,8 +195,8 @@ public class CardDefinitions {
 		MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
 		while (sc.hasNextLine()) {
 			final String line=sc.nextLine().trim();
-            if (line.length() == 0) {
-                //blank line
+            if (line.length() == 0 || line.startsWith("#")) {
+                //blank line or comment
             } else if (line.startsWith(">")) {
                 //start of a card
 				final String name=line.substring(1);

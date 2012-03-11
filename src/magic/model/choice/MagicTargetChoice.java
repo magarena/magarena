@@ -454,17 +454,21 @@ public class MagicTargetChoice extends MagicChoice {
 	}
    
 
-    private static Map<String, MagicTargetChoice> targetChoice =
+    private static Map<String, MagicTargetChoice> factory =
         new HashMap<String, MagicTargetChoice>();
 
     static {
-        targetChoice.put("pos creature", POS_TARGET_CREATURE);
-        targetChoice.put("neg creature", NEG_TARGET_CREATURE);
-        targetChoice.put("neg creature or land", NEG_TARGET_CREATURE_OR_LAND);
+        factory.put("creature", TARGET_CREATURE);
+        factory.put("pos creature", POS_TARGET_CREATURE);
+        factory.put("neg creature", NEG_TARGET_CREATURE);
+        factory.put("neg creature or land", NEG_TARGET_CREATURE_OR_LAND);
+        factory.put("pos permanent", POS_TARGET_PERMANENT);
+        factory.put("neg permanent", NEG_TARGET_PERMANENT);
+        factory.put("neg nonbasic land", NEG_TARGET_NONBASIC_LAND);
     }
 	
 
     public static MagicTargetChoice create(String arg) {
-        return targetChoice.get(arg);
+        return factory.get(arg);
     }
 }

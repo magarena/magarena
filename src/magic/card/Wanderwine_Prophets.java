@@ -27,7 +27,7 @@ public class Wanderwine_Prophets {
                             "You may sacrifice a Merfolk. " +
                             "If you do, take an extra turn after this one.",
                             MagicTargetChoice.SACRIFICE_MERFOLK),
-                        MagicSacrificeTargetPicker.getInstance(),
+                        MagicSacrificeTargetPicker.create(),
                         new Object[]{permanent.getController()},
                         this,
                         "You may$ sacrifice a Merfolk$. " +

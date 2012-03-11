@@ -43,7 +43,7 @@ public class Marrow_Chomper {
 							permanent,
 							player,
 							devourChoice,
-							MagicSacrificeTargetPicker.getInstance(),
+							MagicSacrificeTargetPicker.create(),
 							new Object[]{permanent},
 							this,
 							player + " may$ sacrifice a creature$ to "+permanent+".");

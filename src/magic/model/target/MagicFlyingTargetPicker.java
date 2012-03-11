@@ -7,9 +7,13 @@ import magic.model.MagicPlayer;
 
 public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicFlyingTargetPicker();
-	
+	private static final MagicFlyingTargetPicker INSTANCE=new MagicFlyingTargetPicker();
+
 	private MagicFlyingTargetPicker() {}
+	
+	public static MagicFlyingTargetPicker create() {
+		return INSTANCE;
+	}
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
@@ -28,9 +32,5 @@ public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 			return 50+power;
 		}
 		return 100+power;
-	}
-	
-	public static MagicTargetPicker getInstance() {
-		return INSTANCE;
 	}
 }

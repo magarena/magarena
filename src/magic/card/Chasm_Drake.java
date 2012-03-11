@@ -22,7 +22,7 @@ public class Chasm_Drake {
                         permanent,
                         player,
                         MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                        MagicFlyingTargetPicker.getInstance(),
+                        MagicFlyingTargetPicker.create(),
                         new Object[]{permanent},
                         this,
                         "Target creature$ you control gains flying until end of turn."):

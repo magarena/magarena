@@ -11,10 +11,6 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Reality_Acid {
-    public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
-			MagicTargetChoice.NEG_TARGET_PERMANENT,
-			new MagicDestroyTargetPicker(false));
-    
     public static final MagicWhenLeavesPlayTrigger T = new MagicWhenLeavesPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {

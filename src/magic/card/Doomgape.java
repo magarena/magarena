@@ -60,7 +60,7 @@ public class Doomgape {
                     (MagicPermanent)data[0],
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
-                    MagicSacrificeTargetPicker.getInstance(),
+                    MagicSacrificeTargetPicker.create(),
                     new Object[]{player},
                     EAT,
                     "Choose a creature to sacrifice$."));

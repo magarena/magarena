@@ -14,10 +14,6 @@ import magic.model.target.MagicNoCombatTargetPicker;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Druid_s_Call {
-	public static final MagicSpellCardEvent E = new MagicPlayAuraEvent(
-			MagicTargetChoice.POS_TARGET_CREATURE,
-            new MagicNoCombatTargetPicker(true,true,true));	
-
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
 		@Override
 		public MagicEvent executeTrigger(

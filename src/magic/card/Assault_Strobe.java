@@ -23,7 +23,7 @@ public class Assault_Strobe {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE,
-                    MagicFirstStrikeTargetPicker.getInstance(),
+                    MagicFirstStrikeTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Target creature$ gains double strike until end of turn.");

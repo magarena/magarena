@@ -6,22 +6,14 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.action.MagicTapAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicPayManaCostEvent;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
-import magic.model.target.MagicNoCombatTargetPicker;
 
 public class Burden_of_Guilt {
-	public static final MagicSpellCardEvent S = new MagicPlayAuraEvent(
-			MagicTargetChoice.NEG_TARGET_CREATURE,
-            new MagicNoCombatTargetPicker(true,true,false));
-	
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
 				MagicCondition.ENCHANTED_IS_UNTAPPED_CONDITION,

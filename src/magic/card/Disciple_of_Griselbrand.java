@@ -39,7 +39,7 @@ public class Disciple_of_Griselbrand {
                     source,
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
-                    MagicSacrificeTargetPicker.getInstance(),
+                    MagicSacrificeTargetPicker.create(),
                     new Object[]{player},
                     this,
                     "Sacrifice a creature. " + player + " gains life " +

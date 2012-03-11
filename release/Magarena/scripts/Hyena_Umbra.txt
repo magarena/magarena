@@ -12,4 +12,4 @@ given_pt=1/1
 ability=totem armor
 given_ability=first strike
 timing=aura
-requires_card_code
+enchant=first strike,pos creature

@@ -11,4 +11,5 @@ cost={G}
 given_pt=2/0
 given_ability=trample
 timing=aura
+enchant=trample,pos creature
 requires_card_code

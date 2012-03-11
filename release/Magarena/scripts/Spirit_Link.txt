@@ -9,4 +9,5 @@ color=w
 converted=1
 cost={W}
 timing=aura
+enchant=lifelink,creature
 requires_card_code

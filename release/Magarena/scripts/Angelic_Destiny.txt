@@ -12,4 +12,5 @@ given_pt=4/4
 given_ability=flying,first strike
 given_subtype=Angel
 timing=aura	
+enchant=pump,pos creature
 requires_card_code

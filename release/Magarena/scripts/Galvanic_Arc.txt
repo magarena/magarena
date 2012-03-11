@@ -12,4 +12,4 @@ cost={2}{R}
 given_ability=first strike
 ability=enters damage target 3
 timing=removal
-requires_card_code
+enchant=first strike,creature

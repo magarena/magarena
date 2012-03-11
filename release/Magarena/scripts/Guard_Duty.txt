@@ -10,4 +10,4 @@ converted=1
 cost={W}
 given_ability=defender
 timing=aura
-requires_card_code
+enchant=defender,neg creature

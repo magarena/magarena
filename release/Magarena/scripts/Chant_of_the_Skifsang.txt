@@ -10,4 +10,4 @@ converted=3
 cost={2}{U}
 given_pt=-13/-0
 timing=removal
-requires_card_code
+enchant=weaken -13/-0,neg creature

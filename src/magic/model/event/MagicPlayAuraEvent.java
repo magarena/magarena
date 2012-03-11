@@ -15,7 +15,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 	private final MagicTargetChoice targetChoice;
 	private final MagicTargetPicker targetPicker;
 	
-    public MagicPlayAuraEvent(
+    private MagicPlayAuraEvent(
             final MagicTargetChoice targetChoice,
             final MagicTargetPicker targetPicker) {
 		this.targetChoice=targetChoice;
@@ -59,7 +59,8 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
         String[] token = script.split(",");
         final MagicTargetPicker targetPicker = MagicTargetPicker.create(token[0]); 
         final MagicTargetChoice targetChoice = MagicTargetChoice.create(token[1]);
-        assert targetPicker != null && targetChoice != null;
+        assert targetPicker != null : "targetPicker is null";
+        assert targetChoice != null : "targetChoice is null";
         return new MagicPlayAuraEvent(targetChoice, targetPicker);
     }
 }
