@@ -66,7 +66,7 @@ public class MagicFrame extends JFrame implements ActionListener {
 	private static final String DOCUMENTATION_URL =
 			"http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
-    public static boolean MAC_OS_X = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
+    public static final boolean MAC_OS_X = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
 	
 	private final GeneralConfig config;
 	private final JPanel contentPanel;
