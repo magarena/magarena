@@ -1,0 +1,14 @@
+>Alexi's Cloak
+url=http://magiccards.info/pr/en/29.html
+image=http://magiccards.info/scans/en/pr/29.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=u
+converted=2
+cost={1}{U}
+ability=flash
+given_ability=shroud
+timing=flash
+enchant=shroud,pos creature
