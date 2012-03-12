@@ -1,0 +1,14 @@
+>Eland Umbra
+url=http://magiccards.info/roe/en/19.html
+image=http://magiccards.info/scans/en/roe/19.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+given_pt=0/4
+ability=totem armor
+timing=aura
+enchant=pump,pos creature
