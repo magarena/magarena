@@ -15,7 +15,7 @@ import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 
 public class Rootwalla {
-	public static final MagicPermanentActivation T = new MagicPermanentActivation(
+	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
 					MagicCondition.ABILITY_ONCE_CONDITION,
 					MagicManaCost.ONE_GREEN.getCondition()},
