@@ -294,4 +294,4 @@ cards/require_card_code:
 	 grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort > $@
 
 code_clones:
-	LANGUAGE=java ~/App/pmd-4.2.5/bin/cpd.sh src/magic/card > $@
+	~/App/pmd-bin-5.0-alpha/bin/run.sh cpd --minimum-tokens 100 --files src/magic/card --language java > $@
