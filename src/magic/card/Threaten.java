@@ -39,9 +39,9 @@ public class Threaten {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicUntapAction(creature));
                     game.doAction(new MagicGainControlAction((MagicPlayer)data[1],creature));
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.ReturnToOwnerAtEndOfTurn,true));
-                    game.doAction(new MagicUntapAction(creature));
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
                 }
 			});
