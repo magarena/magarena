@@ -24,38 +24,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Mikaeus__the_Lunarch {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-                final MagicCardOnStack cardOnStack,
-                final MagicPayedCost payedCost) {
-			final int amount = payedCost.getX();
-            final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
-                    card,
-                    cardOnStack.getController(),
-                    new Object[]{cardOnStack,amount},
-                    this,
-                    card + " enters the battlefield with " + amount + " +1/+1 counters on it.");
-		}
-
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object[] data,
-                final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			final MagicPermanent permanent = action.getPermanent();
-			game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        (Integer)data[1],
-                        true));
-		}
-	};
+	public static final Object S = Primordial_Hydra.E;
 	
 	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
