@@ -7,7 +7,6 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 
-
 public class Brink_of_Disaster {
 	public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
     	@Override
