@@ -14,24 +14,7 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 
 public class Spiteful_Visions {
-	public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-				return new MagicEvent(
-						permanent,
-						player,
-						new Object[]{player},
-						this,
-						player + " draws a card.");
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-		
-			final MagicPlayer player = (MagicPlayer)data[0];
-			game.doAction(new MagicDrawAction(player,1));
-		}
-    };
+	public static final Object T1 = Rites_of_Flourishing.T3;
     
     public static final MagicWhenDrawnTrigger T2 = new MagicWhenDrawnTrigger() {
     	@Override
