@@ -9,7 +9,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Bant_Sureblade {
-	private static boolean isValid(final MagicPermanent owner, final MagicGame game) {
+	static boolean isValid(final MagicPermanent owner, final MagicGame game) {
 		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
 			if (permanent != owner && MagicColor.isMulti(permanent.getColorFlags(game))) {
 				return true;
