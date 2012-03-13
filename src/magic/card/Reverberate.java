@@ -12,7 +12,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Reverberate {
-	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
 		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 			final MagicPlayer player = cardOnStack.getController();
