@@ -22,20 +22,20 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetPicker;
 
 public class Karn__Silver_Golem {
-	private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+	static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int cmc = permanent.getCardDefinition().getConvertedCost();
 			pt.set(cmc,cmc);
 		}
     };
-    private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+    static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
 			return flags|MagicType.Artifact.getMask()|MagicType.Creature.getMask();
 		}
 	};
-    private static final MagicTargetPicker<MagicPermanent> TP = new MagicTargetPicker<MagicPermanent>() {
+    static final MagicTargetPicker<MagicPermanent> TP = new MagicTargetPicker<MagicPermanent>() {
         @Override
     	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
             final MagicPowerToughness pt=permanent.getPowerToughness(game);

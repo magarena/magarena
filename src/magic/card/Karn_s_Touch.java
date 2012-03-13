@@ -19,29 +19,9 @@ import magic.model.mstatic.MagicLayer;
 
 public class Karn_s_Touch {
 
-    private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int cmc = permanent.getCardDefinition().getConvertedCost();
-			pt.set(cmc,cmc);
-		}
-    };
-    private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-        @Override
-        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Artifact.getMask()|MagicType.Creature.getMask();
-		}
-	};
-    private static final MagicTargetPicker<MagicPermanent> TP = new MagicTargetPicker<MagicPermanent>() {
-        @Override
-    	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-            final MagicPowerToughness pt=permanent.getPowerToughness(game);
-            final int power = permanent.getCardDefinition().getConvertedCost();
-            final int toughness = permanent.getCardDefinition().getConvertedCost();
-            int score=(pt.power()-power)*2+(pt.toughness()-toughness);
-            return permanent.getController()==player?-score:score;
-        }
-    };
+    static final MagicStatic PT = Karn__Silver_Golem.PT;
+    static final MagicStatic ST = Karn__Silver_Golem.ST;
+    static final MagicTargetPicker<MagicPermanent> TP = Karn__Silver_Golem.TP;
 	
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
 		@Override
