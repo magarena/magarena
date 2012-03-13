@@ -50,22 +50,5 @@ public class The_Rack {
 		}
     };
     
-    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			permanent.setChosenTarget(game.getOpponent(player));
-			return MagicEvent.NONE;
-		}
-
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object data[],
-				final Object[] choiceResults) {
-		}
-    };
+    public static final Object T2 = Black_Vise.T2;
 }
