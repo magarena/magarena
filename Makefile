@@ -233,6 +233,9 @@ cards/adam_cube.txt:
 cards/AWinnarIsYou_cube.txt:
 	wget -O - http://www.tomlapille.com/cube/winnar_list.html | sed 's/<[^>]*>//g;s/^[ ]*//g;/^$$/d' > $@
 
+cards/mtgo_cube.txt:
+	wget -O - https://www.wizards.com/magic/magazine/article.aspx?x=mtg/daily/arcana/927 | grep autoCard | sed 's/<[^<]*>//g;s/^[ ]*//g' > $@
+
 daily: $(EXE)
 	mv $^ Magarena_`hg id -n`.exe
 	scripts/googlecode_upload.py \
