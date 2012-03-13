@@ -20,40 +20,7 @@ import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Sunspring_Expedition {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-			final MagicPlayer player = permanent.getController();
-			return (player == played.getController() && played.isLand()) ?
-				new MagicEvent(
-                    permanent,
-                    player,
-                    new MagicSimpleMayChoice(
-                            player + " may put a quest counter on " + permanent + ".",
-                            MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                            1,
-                            MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{permanent},
-                    this,
-                    player + " may$ put a quest counter on " + permanent + ".") :
-                MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeCountersAction(
-						(MagicPermanent)data[0],
-						MagicCounterType.Charge,
-						1,
-						true));
-			}
-		}		
-    };
+    public static final MagicWhenOtherComesIntoPlayTrigger T = Ior_Ruin_Expedition.T;
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
