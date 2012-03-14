@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicGainControlAction extends MagicAction {
 
@@ -13,8 +14,8 @@ public class MagicGainControlAction extends MagicAction {
 	
 	public MagicGainControlAction(final MagicPlayer player,final MagicPermanent permanent) {
 		
-		this.player=player;
-		this.permanent=permanent;
+		this.player = player;
+		this.permanent = permanent;
 	}
 	
 	@Override
@@ -22,13 +23,17 @@ public class MagicGainControlAction extends MagicAction {
 
 		oldController=permanent.getController();
 		if (player!=oldController) {
-			int score=permanent.getScore(game);
+			int score = permanent.getScore(game);
+			
+			// Execute trigger here so that full permanent state is preserved.
+			game.executeTrigger(MagicTriggerType.WhenLoseControl, permanent);
+			
 			oldController.removePermanent(permanent);
 			permanent.setController(player);
 			player.addPermanent(permanent);
 			permanent.setState(MagicPermanentState.Summoned);
-			score+=permanent.getScore(game);
-			setScore(player,score);
+			score += permanent.getScore(game);
+			setScore(player, score);
 			game.setStateCheckRequired();
 		}
 	}

@@ -19,6 +19,7 @@ public enum MagicTriggerType {
 	WhenBecomesBlocked,		// permanent
 	WhenAttacksUnblocked,	// permanent
     WhenTargeted,           // permanent
+    	WhenLoseControl,	// permanent
 	IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
 	;

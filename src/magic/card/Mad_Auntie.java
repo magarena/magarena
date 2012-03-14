@@ -37,7 +37,7 @@ public class Mad_Auntie {
     };
 
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-	    new MagicCondition[] { MagicCondition.CAN_TAP_CONDITION },
+	    new MagicCondition[] { MagicCondition.CAN_TAP_CONDITION, MagicCondition.CAN_REGENERATE_CONDITION },
 	    new MagicActivationHints(MagicTiming.Pump, false), "Regen") {
 
 	@Override

@@ -24,16 +24,18 @@ public class Recurring_Nightmare {
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
 	                MagicCondition.ONE_CREATURE_CONDITION,
-	                MagicCondition.SORCERY_CONDITION
+	                MagicCondition.SORCERY_CONDITION,
+	                MagicCondition.GRAVEYARD_CONTAINS_CREATURE
 	            },
             new MagicActivationHints(MagicTiming.Pump),
             "Return") {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
+		    MagicTargetChoice creatureChoice = MagicTargetChoice.SACRIFICE_CREATURE;
 			return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),
-                    MagicTargetChoice.SACRIFICE_CREATURE)};
+                    creatureChoice)};
 		}
 		@Override
 		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
