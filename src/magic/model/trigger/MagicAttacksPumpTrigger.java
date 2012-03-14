@@ -7,8 +7,8 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class MagicAttacksPumpTrigger extends MagicWhenAttacksTrigger {
-    final int power;
-    final int toughness;
+    private final int power;
+    private final int toughness;
 
     public MagicAttacksPumpTrigger(final int power, final int toughness) {
         this.power = power;
