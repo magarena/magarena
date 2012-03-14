@@ -1,0 +1,15 @@
+>Feebleness
+url=http://magiccards.info/ts/en/110.html
+image=http://magiccards.info/scans/en/ts/110.jpg
+value=2
+removal=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=2
+cost={1}{B}
+ability=flash
+given_pt=-2/-1
+timing=flash
+enchant=weaken -2/-1,neg creature

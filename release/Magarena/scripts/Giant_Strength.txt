@@ -1,0 +1,13 @@
+>Giant Strength
+url=http://magiccards.info/6e/en/181.html
+image=http://magiccards.info/scans/en/6e/181.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=r
+converted=2
+cost={R}{R}
+given_pt=2/2
+timing=aura
+enchant=pump,pos creature
