@@ -1,0 +1,14 @@
+>Enfeeblement
+url=http://magiccards.info/9e/en/127.html
+image=http://magiccards.info/scans/en/9e/127.jpg
+value=3
+removal=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=b
+converted=2
+cost={B}{B}
+given_pt=-2/-2
+timing=removal
+enchant=weaken -2/-2,neg creature
