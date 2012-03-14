@@ -38,7 +38,7 @@ public class Heckling_Fiends {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicMustAttackTargetPicker.getInstance(),
+                    MagicMustAttackTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
                     "Target creature$ attacks this turn if able.");
