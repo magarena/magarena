@@ -1,0 +1,13 @@
+>Goretusk Firebeast
+url=http://magiccards.info/ju/en/91.html
+image=http://magiccards.info/scans/en/ju/91.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Elemental,Boar,Beast
+color=r
+converted=6
+cost={5}{R}
+pt=2/2
+ability=enters damage target player 4
+timing=main

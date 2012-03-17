@@ -1,0 +1,13 @@
+>Goblin Commando
+url=http://magiccards.info/st/en/100.html
+image=http://magiccards.info/scans/en/st/100.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Goblin
+color=r
+converted=5
+cost={4}{R}
+pt=2/2
+ability=enters damage target creature 2
+timing=main
