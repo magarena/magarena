@@ -5,7 +5,7 @@ public enum MagicType {
     // these are supertypes
     Basic,
     Legendary,
-    Onging,
+    Ongoing,
     Snow,
     World,
     
