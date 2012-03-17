@@ -1,5 +1,7 @@
 package magic.model;
 
+import java.util.EnumSet;
+
 public enum MagicType {
 
     // these are supertypes
@@ -22,6 +24,8 @@ public enum MagicType {
     Tribal,
     Vanguard,
     ;
+    
+    public static final EnumSet<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
     
     private final int mask;
     
