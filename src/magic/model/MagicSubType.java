@@ -91,7 +91,7 @@ public enum MagicSubType {
 	public static MagicSubType getSubType(final String name) {
         final String cname = name.replaceAll("[^A-Za-z]", "_");
 		for (final MagicSubType type : values()) {
-			if (type.toString().equalsIgnoreCase(name)) {
+			if (type.toString().equalsIgnoreCase(cname)) {
 				return type;
 			}
 		}
