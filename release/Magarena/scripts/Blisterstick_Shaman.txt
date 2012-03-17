@@ -1,0 +1,13 @@
+>Blisterstick Shaman
+url=http://magiccards.info/mbs/en/58.html
+image=http://magiccards.info/scans/en/mbs/58.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+color=r
+converted=3
+cost={2}{R}
+pt=2/1
+ability=enters damage target 1
+timing=main

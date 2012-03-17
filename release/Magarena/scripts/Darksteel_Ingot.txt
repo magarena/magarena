@@ -1,0 +1,10 @@
+>Darksteel Ingot
+url=http://magiccards.info/ds/en/112.html
+image=http://magiccards.info/scans/en/ds/112.jpg
+value=3
+rarity=C
+type=Artifact
+converted=3
+cost={3}
+ability=indestructible,tap add mana any
+timing=artifact
