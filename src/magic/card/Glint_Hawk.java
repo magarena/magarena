@@ -22,7 +22,7 @@ public class Glint_Hawk {
                     player,
                     new MagicMayChoice(
                         "You may return an artifact you control to its owner's hand.",
-                        MagicTargetChoice.TARGET_ARTIFACT_YOU_CONTROL),
+                        MagicTargetChoice.ARTIFACT_YOU_CONTROL),
                     MagicBounceTargetPicker.getInstance(),
                     new Object[]{permanent},
                     this,
