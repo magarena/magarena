@@ -1,0 +1,13 @@
+>Fire Imp
+url=http://magiccards.info/po/en/131.html
+image=http://magiccards.info/scans/en/po/131.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Imp
+color=r
+converted=3
+cost={2}{R}
+pt=2/1
+ability=enters damage target creature 2
+timing=main
