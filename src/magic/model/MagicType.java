@@ -2,15 +2,25 @@ package magic.model;
 
 public enum MagicType {
 
+    // these are supertypes
 	Basic("Basic"),
 	Legendary("Legendary"),
-	Tribal("Tribal"),
-	Land("Land"),
-	Creature("Creature"),
-	Sorcery("Sorcery"),
-	Instant("Instant"),
+    Onging("Onging"),
+    Snow("Snow"),
+    World("World"),
+	
+    // these are card types
 	Artifact("Artifact"),
-	Enchantment("Enchantment")
+	Creature("Creature"),
+	Enchantment("Enchantment"),
+	Instant("Instant"),
+	Land("Land"),
+	Plane("Plane"),
+	Planeswalker("Planeswalker"),
+	Scheme("Scheme"),
+	Sorcery("Sorcery"),
+    Tribal("Tribal"),
+    Vanguard("Vanguard"),
 	;
 	
 	private final String name;
