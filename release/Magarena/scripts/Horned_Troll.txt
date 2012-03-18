@@ -1,0 +1,13 @@
+>Horned Troll
+url=http://magiccards.info/8e/en/257.html
+image=http://magiccards.info/scans/en/8e/257.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Troll
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+ability=regenerate {G}
+timing=main
