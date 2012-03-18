@@ -1,0 +1,13 @@
+>Cantivore
+url=http://magiccards.info/od/en/13.html
+image=http://magiccards.info/scans/en/od/13.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Lhurgoyf
+color=w
+converted=3
+cost={1}{W}{W}
+ability=vigilance
+timing=main
+requires_card_code

@@ -1625,6 +1625,24 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
 		}
 	};
+	
+	MagicTargetFilter TARGET_ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().isEnchantment();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
+		}
+	};
+	
+	MagicTargetFilter TARGET_INSTANT_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().isInstant();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
+		}
+	};
 
 	MagicTargetFilter TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
