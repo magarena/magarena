@@ -1,0 +1,13 @@
+>Jungle Troll
+url=http://magiccards.info/mr/en/329.html
+image=http://magiccards.info/scans/en/mr/329.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Troll
+color=g
+converted=3
+cost={1}{R}{G}
+pt=2/1
+ability=regenerate {R/G}
+timing=main

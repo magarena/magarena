@@ -1,0 +1,13 @@
+>Lim-Dul's High Guard
+url=http://magiccards.info/ai/en/18.html
+image=http://magiccards.info/scans/en/ai/18.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Skeleton
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/1
+ability=first strike,regenerate {1}{B}
+timing=main
