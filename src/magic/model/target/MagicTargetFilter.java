@@ -1643,6 +1643,24 @@ public interface MagicTargetFilter {
 			return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
 		}
 	};
+	
+	MagicTargetFilter TARGET_SORCERY_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().isSorcery();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
+		}
+	};
+	
+	MagicTargetFilter TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return ((MagicCard)target).getCardDefinition().isLand();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType==MagicTargetType.Graveyard||targetType==MagicTargetType.OpponentsGraveyard;
+		}
+	};
 
 	MagicTargetFilter TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {

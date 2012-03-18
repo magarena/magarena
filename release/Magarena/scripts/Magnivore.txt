@@ -1,0 +1,13 @@
+>Magnivore
+url=http://magiccards.info/od/en/204.html
+image=http://magiccards.info/scans/en/od/204.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Lhurgoyf
+color=r
+converted=4
+cost={2}{R}{R}
+ability=haste
+timing=fmain
+requires_card_code
