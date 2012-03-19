@@ -94,9 +94,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		
 		// Type
 		typePopup = addFilterPopupPanel("Card Type");
-		typeCheckBoxes = new JCheckBox[MagicType.values().length];
+		typeCheckBoxes = new JCheckBox[MagicType.FILTER_TYPES.size()];
 		typeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
-		populateCheckboxPopup(typePopup, MagicType.values(), typeCheckBoxes, typeFilterChoices, false);
+		populateCheckboxPopup(typePopup, MagicType.FILTER_TYPES.toArray(), typeCheckBoxes, typeFilterChoices, false);
 		
 		// Color
 		colorPopup = addFilterPopupPanel("Color");
@@ -315,7 +315,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 		if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices, 
 			new CardChecker() {
 				public boolean checkCard(MagicCardDefinition card, int i) {
-					return card.hasType(MagicType.values()[i]);
+					return card.hasType((MagicType)MagicType.FILTER_TYPES.toArray()[i]);
 				}
 			})) {
 			return false;
