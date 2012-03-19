@@ -1,0 +1,12 @@
+>Pewter Golem
+url=http://magiccards.info/mi/en/227.html
+image=http://magiccards.info/scans/en/mi/227.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+converted=5
+cost={5}
+pt=4/2
+ability=regenerate {1}{B}
+timing=main

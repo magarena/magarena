@@ -1,0 +1,13 @@
+>Odious Trow
+url=http://magiccards.info/eve/en/125.html
+image=http://magiccards.info/scans/en/eve/125.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Troll
+color=bg
+converted=1
+cost={B/G}
+pt=1/1
+ability=regenerate {1}{B/G}
+timing=main
