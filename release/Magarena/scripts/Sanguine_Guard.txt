@@ -1,0 +1,13 @@
+>Sanguine Guard
+url=http://magiccards.info/us/en/155.html
+image=http://magiccards.info/scans/en/us/155.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Zombie,Knight
+color=b
+converted=3
+cost={1}{B}{B}
+pt=2/2
+ability=first strike,regenerate {1}{B}
+timing=main
