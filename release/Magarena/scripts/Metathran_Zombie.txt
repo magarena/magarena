@@ -1,0 +1,13 @@
+>Metathran Zombie
+url=http://magiccards.info/in/en/63.html
+image=http://magiccards.info/scans/en/in/63.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Metathran,Zombie
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=regenerate {B}
+timing=main

@@ -1,0 +1,13 @@
+>Malach of the Dawn
+url=http://magiccards.info/pc/en/24.html
+image=http://magiccards.info/scans/en/pc/24.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=4
+cost={2}{W}{W}
+pt=2/4
+ability=flying,regenerate {W}{W}{W}
+timing=main
