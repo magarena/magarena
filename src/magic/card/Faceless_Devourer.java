@@ -19,7 +19,7 @@ public class Faceless_Devourer {
 			final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
 	                MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW,permanent);
 			final MagicTargetChoice targetChoice = new MagicTargetChoice(
-	                targetFilter,false,MagicTargetHint.None,"another creature with shadow to exile");
+	                targetFilter,true,MagicTargetHint.None,"another creature with shadow to exile");
 			return new MagicEvent(
                     permanent,
                     player,
