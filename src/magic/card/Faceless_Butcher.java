@@ -19,7 +19,7 @@ public class Faceless_Butcher {
 			final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
 	                MagicTargetFilter.TARGET_CREATURE,permanent);
 			final MagicTargetChoice targetChoice = new MagicTargetChoice(
-	                targetFilter,false,MagicTargetHint.None,"another creature to exile");
+	                targetFilter,true,MagicTargetHint.None,"another creature to exile");
 			return new MagicEvent(
                     permanent,
                     player,
