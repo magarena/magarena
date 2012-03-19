@@ -1,0 +1,13 @@
+>Ranger en-Vec
+url=http://magiccards.info/tp/en/343.html
+image=http://magiccards.info/scans/en/tp/343.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Soldier,Archer
+color=gw
+converted=3
+cost={1}{G}{W}
+pt=2/2
+ability=first strike,regenerate {G}
+timing=main
