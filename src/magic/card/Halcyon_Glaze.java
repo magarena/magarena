@@ -10,7 +10,7 @@ import magic.model.MagicType;
 import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
+import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
@@ -42,7 +42,7 @@ public class Halcyon_Glaze {
 		}
 	};
 
-    public static final MagicWhenSpellIsPlayedTrigger T = new MagicWhenSpellIsPlayedTrigger() {
+    public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
 			final MagicPlayer player=permanent.getController();

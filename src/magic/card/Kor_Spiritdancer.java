@@ -12,7 +12,7 @@ import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
+import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 
 public class Kor_Spiritdancer {
@@ -30,7 +30,7 @@ public class Kor_Spiritdancer {
 		}
     };
     
-    public static final MagicWhenSpellIsPlayedTrigger T = new MagicWhenSpellIsPlayedTrigger() {
+    public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player = permanent.getController();

@@ -26,7 +26,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.trigger.MagicWhenSpellIsPlayedTrigger;
+import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 public class Shrine_of_Burning_Rage {
 
@@ -109,7 +109,7 @@ public class Shrine_of_Burning_Rage {
 		}		
     };
     
-    public static final MagicWhenSpellIsPlayedTrigger T2 = new MagicWhenSpellIsPlayedTrigger() {
+    public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
 		@Override
 		public MagicEvent executeTrigger(
                 final MagicGame game,

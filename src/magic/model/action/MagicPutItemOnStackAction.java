@@ -30,7 +30,9 @@ public class MagicPutItemOnStackAction extends MagicAction {
 				game.executeTrigger(trigger,MagicPermanent.NONE,itemOnStack.getSource(),(MagicCardOnStack)itemOnStack);
 			}
 			
-			game.executeTrigger(MagicTriggerType.WhenSpellIsPlayed,itemOnStack);
+			// execute other spell is cast triggers
+			game.executeTrigger(MagicTriggerType.WhenOtherSpellIsCast,itemOnStack);
+			
 			game.setSpellsPlayed(game.getSpellsPlayed() + 1);
 		}
 		// Avoid unnecessary actions on stack by reducing score.
