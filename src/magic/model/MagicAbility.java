@@ -483,6 +483,11 @@ public enum MagicAbility {
             card.add(new MagicBloodthirstTrigger(n));
         }
     },
+    Storm("storm", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicStormTrigger.create());
+        }
+    },
     None("",0);
 
 	public static final long PROTECTION_FLAGS=
