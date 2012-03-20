@@ -86,6 +86,7 @@ public class MagicCardDefinition {
 	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
 	private final Collection<MagicTrigger> comeIntoPlayTriggers=new ArrayList<MagicTrigger>();
+	private final Collection<MagicTrigger> spellIsCastTriggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicTrigger> putIntoGraveyardTriggers=new ArrayList<MagicTrigger>();
 	private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
@@ -656,6 +657,9 @@ public class MagicCardDefinition {
 		
 	private void addTrigger(final MagicTrigger trigger) {
 		switch (trigger.getType()) {
+			case WhenSpellIsCast:
+				spellIsCastTriggers.add(trigger);
+				break;
 			case WhenComesIntoPlay:
 				comeIntoPlayTriggers.add(trigger);
 				break;
@@ -680,6 +684,10 @@ public class MagicCardDefinition {
 		return statics;
 	}
 	
+    public Collection<MagicTrigger> getSpellIsCastTriggers() {
+		return spellIsCastTriggers;
+	}
+    
 	public Collection<MagicTrigger> getComeIntoPlayTriggers() {
 		return comeIntoPlayTriggers;
 	}
