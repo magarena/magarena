@@ -70,6 +70,7 @@ public class MagicGame {
 	private int startTurn=0;
 	private int mainPhaseCount=100000000;
 	private int landPlayed=0;
+	private int spellsPlayed = 0;
 	private boolean creatureDiedThisTurn = false;
 	private boolean priorityPassed=false;
 	private int priorityPassedCount=0;
@@ -159,6 +160,7 @@ public class MagicGame {
         this.turn = game.turn;
 		this.startTurn = game.startTurn;
 		this.landPlayed = game.landPlayed;
+		this.spellsPlayed = game.spellsPlayed;
 		this.creatureDiedThisTurn = game.creatureDiedThisTurn;
 		this.priorityPassed = game.priorityPassed;
         this.priorityPassedCount = game.priorityPassedCount;
@@ -739,7 +741,14 @@ public class MagicGame {
     public void setLandPlayed(final int lp) {
 		this.landPlayed = lp;
 	}
+    
+	public int getSpellsPlayed() {
+		return spellsPlayed;
+	}
 	
+	public void setSpellsPlayed(int spells) {
+		spellsPlayed = spells;
+	}
     public boolean getCreatureDiedThisTurn() {
     	return creatureDiedThisTurn;
     }
