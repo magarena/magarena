@@ -1,0 +1,13 @@
+>Artisan of Kozilek
+url=http://magiccards.info/roe/en/2.html
+image=http://magiccards.info/scans/en/roe/2.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Eldrazi
+converted=9
+cost={9}
+pt=10/9
+ability=annihilator 2
+timing=main
+requires_card_code

@@ -488,6 +488,12 @@ public enum MagicAbility {
             card.add(MagicStormTrigger.create());
         }
     },
+    Annihilator("annihilator", 80) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicAnnihilatorTrigger(n));
+        }
+    },
     None("",0);
 
 	public static final long PROTECTION_FLAGS=
