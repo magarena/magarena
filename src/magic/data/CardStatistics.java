@@ -89,7 +89,7 @@ public class CardStatistics {
 					manaCurve[0]++;
 				} else {
 					final int convertedCost=card.getConvertedCost();
-					manaCurve[convertedCost>=MANA_CURVE_SIZE?MANA_CURVE_SIZE-1:convertedCost+1]++;
+					manaCurve[convertedCost+1>=MANA_CURVE_SIZE?MANA_CURVE_SIZE-1:convertedCost+1]++;
 				}
 				
 				averageCost+=card.getConvertedCost();
