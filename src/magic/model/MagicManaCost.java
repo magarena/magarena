@@ -18,7 +18,7 @@ public class MagicManaCost {
 	private static final Map<String,MagicManaCost> COSTS_MAP=new HashMap<String,MagicManaCost>();
 	private static final Map<String,MagicCondition> CONDS_MAP=new HashMap<String,MagicCondition>();
 
-	private static final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d/]+\\})(?:\\{.+)?");
+	private static final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d+/]+\\})(?:\\{.+)?");
 
 	private static final int SINGLE_PENALTY[]={0,1,1,3,6,9};
 	private static final int DOUBLE_PENALTY[]={0,0,1,2,4,6};
@@ -33,7 +33,9 @@ public class MagicManaCost {
 		IconImages.COST_SIX,
 		IconImages.COST_SEVEN,
 		IconImages.COST_EIGHT,
-		IconImages.COST_NINE
+		IconImages.COST_NINE,
+		IconImages.COST_TEN,
+		IconImages.COST_ELEVEN
 	};
 	
 	public static final MagicManaCost X=MagicManaCost.createCost("{X}");
@@ -171,13 +173,12 @@ public class MagicManaCost {
 	}
 	
 	private boolean addType(final String typeText) {
-
-		final char symbol=typeText.charAt(1);
-		if (symbol=='X') {
+		final String symbol = typeText.substring(1, typeText.length() - 1);
+		if (symbol.equals("X")) {
 			hasX=true;
 			return true;
-		} else if (symbol>='0'&&symbol<='9') {
-			addType(MagicCostManaType.Colorless,symbol-'0');
+		} else if (isNumeric(symbol)) {
+			addType(MagicCostManaType.Colorless,Integer.parseInt(symbol));
 			return true;
 		} else {
 			for (final MagicCostManaType type : MagicCostManaType.values()) {
@@ -190,7 +191,16 @@ public class MagicManaCost {
 			return false;
 		}
 	}
-			
+	
+	private static boolean isNumeric(String str) {
+		for (char c : str.toCharArray()) {
+			if (!Character.isDigit(c)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	private void setText(final String aCostText) {
 		this.costText=aCostText;
 	}
@@ -253,9 +263,9 @@ public class MagicManaCost {
 		
 			int amount=amounts[i];
 			if (types[i]==MagicCostManaType.Colorless) {
-				if (amount>9) {
-					icons.add(COLORLESS_ICONS[9]);
-					amount-=9;
+				if (amount>11) {
+					icons.add(COLORLESS_ICONS[11]);
+					amount-=11;
 				}
 				icons.add(COLORLESS_ICONS[amount]);
 			} else {
