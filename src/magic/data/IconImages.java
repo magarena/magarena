@@ -14,10 +14,8 @@ public class IconImages {
 	public static final BufferedImage MISSING2=loadImage("icons/missing2.png");
 	public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
 	public static final ImageIcon     MISSING_ICON=loadIcon("missing2.png");
-    
-    //use mana symbols by goblin hero if it exists
+   
     private static final BufferedImage MANA = loadImage("icons/Mana.png");
-	
 	public static final BufferedImage LOGO=loadImage("textures/logo.jpg");
 	public static final BufferedImage WIZARD=loadImage("icons/wizard.png");
 	public static final BufferedImage WOOD=loadImage("textures/wood.jpg");
@@ -109,42 +107,42 @@ public class IconImages {
 	public static final ImageIcon DEATHTOUCH=loadIcon("deathtouch.png");
 
 	public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
-	public static final ImageIcon TAPPED=loadSymbolIcon("tapped.gif", 50, false);
-	public static final ImageIcon ONE=loadSymbolIcon("big_one.gif", 1, true);
-	public static final ImageIcon WHITE=loadSymbolIcon("big_white.gif", 24, true);
-	public static final ImageIcon BLUE=loadSymbolIcon("big_blue.gif", 25, true);
-	public static final ImageIcon BLACK=loadSymbolIcon("big_black.gif", 26, true);
-	public static final ImageIcon RED=loadSymbolIcon("big_red.gif", 27, true);
-	public static final ImageIcon GREEN=loadSymbolIcon("big_green.gif", 28, true);	
-	public static final ImageIcon COST_WHITE=loadSymbolIcon("white.gif", 24, false);
-	public static final ImageIcon COST_BLUE=loadSymbolIcon("blue.gif", 25, false);
-	public static final ImageIcon COST_BLACK=loadSymbolIcon("black.gif", 26, false);
-	public static final ImageIcon COST_RED=loadSymbolIcon("red.gif", 27, false);
-	public static final ImageIcon COST_GREEN=loadSymbolIcon("green.gif", 28, false);	
-	public static final ImageIcon COST_WHITE_BLUE=loadSymbolIcon("white_blue.gif", 30, false);
-	public static final ImageIcon COST_WHITE_BLACK=loadSymbolIcon("white_black.gif", 31, false);
-	public static final ImageIcon COST_BLUE_BLACK=loadSymbolIcon("blue_black.gif", 32, false);
-	public static final ImageIcon COST_BLUE_RED=loadSymbolIcon("blue_red.gif", 33, false);
-	public static final ImageIcon COST_BLACK_RED=loadSymbolIcon("black_red.gif", 34, false);
-	public static final ImageIcon COST_BLACK_GREEN=loadSymbolIcon("black_green.gif", 35, false);
-	public static final ImageIcon COST_RED_WHITE=loadSymbolIcon("red_white.gif", 36, false);
-	public static final ImageIcon COST_RED_GREEN=loadSymbolIcon("red_green.gif", 37, false);
-	public static final ImageIcon COST_GREEN_WHITE=loadSymbolIcon("green_white.gif", 38, false);
-	public static final ImageIcon COST_GREEN_BLUE=loadSymbolIcon("green_blue.gif", 39, false);
-	public static final ImageIcon COST_ZERO=loadSymbolIcon("zero.gif", 0, false);
-	public static final ImageIcon COST_ONE=loadSymbolIcon("one.gif", 1, false);
-	public static final ImageIcon COST_TWO=loadSymbolIcon("two.gif", 2, false);
-	public static final ImageIcon COST_THREE=loadSymbolIcon("three.gif", 3, false);
-	public static final ImageIcon COST_FOUR=loadSymbolIcon("four.gif", 4, false);
-	public static final ImageIcon COST_FIVE=loadSymbolIcon("five.gif", 5, false);
-	public static final ImageIcon COST_SIX=loadSymbolIcon("six.gif", 6, false);
-	public static final ImageIcon COST_SEVEN=loadSymbolIcon("seven.gif", 7, false);
-	public static final ImageIcon COST_EIGHT=loadSymbolIcon("eight.gif", 8, false);
-	public static final ImageIcon COST_NINE=loadSymbolIcon("nine.gif", 9, false);
-	public static final ImageIcon COST_TEN=loadSymbolIcon("nine.gif", 10, false);
-	public static final ImageIcon COST_ELEVEN=loadSymbolIcon("nine.gif", 11, false);
-	public static final ImageIcon COST_NINE_OR_MORE=loadIcon("nineplus.gif");
-	public static final ImageIcon COST_X=loadSymbolIcon("x.gif", 21, false);
+	public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
+	public static final ImageIcon ONE=loadSymbolIcon(1, true);
+	public static final ImageIcon WHITE=loadSymbolIcon(24, true);
+	public static final ImageIcon BLUE=loadSymbolIcon(25, true);
+	public static final ImageIcon BLACK=loadSymbolIcon(26, true);
+	public static final ImageIcon RED=loadSymbolIcon(27, true);
+	public static final ImageIcon GREEN=loadSymbolIcon(28, true);	
+	public static final ImageIcon COST_WHITE=loadSymbolIcon(24, false);
+	public static final ImageIcon COST_BLUE=loadSymbolIcon(25, false);
+	public static final ImageIcon COST_BLACK=loadSymbolIcon(26, false);
+	public static final ImageIcon COST_RED=loadSymbolIcon(27, false);
+	public static final ImageIcon COST_GREEN=loadSymbolIcon(28, false);	
+	public static final ImageIcon COST_WHITE_BLUE=loadSymbolIcon(30, false);
+	public static final ImageIcon COST_WHITE_BLACK=loadSymbolIcon(31, false);
+	public static final ImageIcon COST_BLUE_BLACK=loadSymbolIcon(32, false);
+	public static final ImageIcon COST_BLUE_RED=loadSymbolIcon(33, false);
+	public static final ImageIcon COST_BLACK_RED=loadSymbolIcon(34, false);
+	public static final ImageIcon COST_BLACK_GREEN=loadSymbolIcon(35, false);
+	public static final ImageIcon COST_RED_WHITE=loadSymbolIcon(36, false);
+	public static final ImageIcon COST_RED_GREEN=loadSymbolIcon(37, false);
+	public static final ImageIcon COST_GREEN_WHITE=loadSymbolIcon(38, false);
+	public static final ImageIcon COST_GREEN_BLUE=loadSymbolIcon(39, false);
+	public static final ImageIcon COST_ZERO=loadSymbolIcon(0, false);
+	public static final ImageIcon COST_ONE=loadSymbolIcon(1, false);
+	public static final ImageIcon COST_TWO=loadSymbolIcon(2, false);
+	public static final ImageIcon COST_THREE=loadSymbolIcon(3, false);
+	public static final ImageIcon COST_FOUR=loadSymbolIcon(4, false);
+	public static final ImageIcon COST_FIVE=loadSymbolIcon(5, false);
+	public static final ImageIcon COST_SIX=loadSymbolIcon(6, false);
+	public static final ImageIcon COST_SEVEN=loadSymbolIcon(7, false);
+	public static final ImageIcon COST_EIGHT=loadSymbolIcon(8, false);
+	public static final ImageIcon COST_NINE=loadSymbolIcon(9, false);
+	public static final ImageIcon COST_TEN=loadSymbolIcon(10, false);
+	public static final ImageIcon COST_ELEVEN=loadSymbolIcon(11, false);
+//	public static final ImageIcon COST_NINE_OR_MORE=loadIcon("nineplus.gif");
+	public static final ImageIcon COST_X=loadSymbolIcon(21, false);
 		
 	private static BufferedImage loadImage(final String name) {
         return FileIO.toImg(IconImages.class.getResource(name), MISSING2);
@@ -155,30 +153,21 @@ public class IconImages {
 		return new ImageIcon(image);
 	}
 
-	private static ImageIcon loadSymbolIcon(final String name, final int pos, final boolean big) {
-        if (MANA != MISSING2) {
-            final int imgW = 75;
-            final int imgH = 75;
-            final int icoW = 15;
-            final int icoH = 15;
-            final int bigW = 25;
-            final int bigH = 25;
-            final int row = pos / 10;
-            final int col = pos % 10;
-            final BufferedImage subimage = MANA.getSubimage(col * imgW, row * imgH, imgW, imgH);
-            if (big) {
-                return new ImageIcon(magic.GraphicsUtilities.scale(subimage,bigW,bigH));
-            } else {
-                return new ImageIcon(magic.GraphicsUtilities.scale(subimage,icoW,icoH));
-            }
-        }
-		final File iconFile=new File(
-                MagicMain.getGamePath() + File.separator + 
-                "symbols" + File.separator + 
-                name);
-		return (iconFile.exists()) ?
-			new ImageIcon(iconFile.getAbsolutePath()):
-            MISSING_ICON;
+	private static ImageIcon loadSymbolIcon(final int pos, final boolean big) {
+		final int imgW = 75;
+		final int imgH = 75;
+		final int icoW = 15;
+		final int icoH = 15;
+		final int bigW = 25;
+		final int bigH = 25;
+		final int row = pos / 10;
+		final int col = pos % 10;
+		final BufferedImage subimage = MANA.getSubimage(col * imgW, row * imgH, imgW, imgH);
+		if (big) {
+			return new ImageIcon(magic.GraphicsUtilities.scale(subimage,bigW,bigH));
+		} else {
+			return new ImageIcon(magic.GraphicsUtilities.scale(subimage,icoW,icoH));
+		}
 	}
 	
     private static void reloadSymbolIcon(final ImageIcon imgico, final String name) {
