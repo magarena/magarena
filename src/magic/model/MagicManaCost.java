@@ -35,7 +35,12 @@ public class MagicManaCost {
 		IconImages.COST_EIGHT,
 		IconImages.COST_NINE,
 		IconImages.COST_TEN,
-		IconImages.COST_ELEVEN
+		IconImages.COST_ELEVEN,
+		IconImages.COST_TWELVE,
+		IconImages.COST_THIRTEEN,
+		IconImages.COST_FOURTEEN,
+		IconImages.COST_FIFTEEN,
+		IconImages.COST_SIXTEEN
 	};
 	
 	public static final MagicManaCost X=MagicManaCost.createCost("{X}");
@@ -263,9 +268,9 @@ public class MagicManaCost {
 		
 			int amount=amounts[i];
 			if (types[i]==MagicCostManaType.Colorless) {
-				if (amount>11) {
-					icons.add(COLORLESS_ICONS[11]);
-					amount-=11;
+				if (amount>16) {
+					icons.add(COLORLESS_ICONS[16]);
+					amount-=16;
 				}
 				icons.add(COLORLESS_ICONS[amount]);
 			} else {

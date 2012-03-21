@@ -141,6 +141,11 @@ public class IconImages {
 	public static final ImageIcon COST_NINE=loadSymbolIcon(9, false);
 	public static final ImageIcon COST_TEN=loadSymbolIcon(10, false);
 	public static final ImageIcon COST_ELEVEN=loadSymbolIcon(11, false);
+	public static final ImageIcon COST_TWELVE=loadSymbolIcon(12, false);
+	public static final ImageIcon COST_THIRTEEN=loadSymbolIcon(13, false);
+	public static final ImageIcon COST_FOURTEEN=loadSymbolIcon(14, false);
+	public static final ImageIcon COST_FIFTEEN=loadSymbolIcon(15, false);
+	public static final ImageIcon COST_SIXTEEN=loadSymbolIcon(16, false);
 //	public static final ImageIcon COST_NINE_OR_MORE=loadIcon("nineplus.gif");
 	public static final ImageIcon COST_X=loadSymbolIcon(21, false);
 		
