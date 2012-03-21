@@ -29,8 +29,12 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 	private final int maximumCount;
 	private int count;
 
-	
-	public MultiKickerChoicePanel(final GameController controller,final MagicSource source,final MagicManaCost cost,final int maximumCount) {
+	public MultiKickerChoicePanel(
+			final GameController controller,
+			final MagicSource source,
+			final MagicManaCost cost,
+			final int maximumCount,
+			final boolean replicate) {
 	
 		this.controller=controller;
 		this.maximumCount=maximumCount;
@@ -39,7 +43,8 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 		setLayout(new BorderLayout());
 		setOpaque(false);
 		
-		final String message="Choose how many times to pay the kicker "+cost.getText()+".";
+		final String message = "Choose how many times to pay the " + 
+				(replicate ? "replicate " : "kicker ") + cost.getText() + ".";
 		final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),GameViewer.TEXT_WIDTH,true);
 		add(textLabel,BorderLayout.CENTER);
 

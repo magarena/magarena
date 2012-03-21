@@ -24,12 +24,14 @@ public class MagicKickerChoice extends MagicChoice {
 	private final MagicChoice otherChoice;
 	private final MagicManaCost cost;
 	private final boolean multi;
+	private final boolean replicate;
 	
     public MagicKickerChoice(final MagicManaCost cost,final boolean multi) {
 		super("Choose to many times to pay the kicker cost.");
 		this.otherChoice=MagicChoice.NONE;
 		this.cost=cost;
 		this.multi=multi;
+		this.replicate = false;
 	}
 	
 	public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost,final boolean multi) {
@@ -37,6 +39,15 @@ public class MagicKickerChoice extends MagicChoice {
 		this.otherChoice=otherChoice;
 		this.cost=cost;
 		this.multi=multi;
+		this.replicate = false;
+	}
+	
+	public MagicKickerChoice(final MagicManaCost cost,final boolean multi,final boolean replicate) {
+		super("Choose to many times to pay the kicker cost.");
+		this.otherChoice=MagicChoice.NONE;
+		this.cost=cost;
+		this.multi=multi;
+		this.replicate = replicate;
 	}
 
 	@Override
@@ -139,7 +150,7 @@ public class MagicKickerChoice extends MagicChoice {
 			// Multiple kickers.
 			final MultiKickerChoicePanel kickerPanel = controller.showComponent(new Callable<MultiKickerChoicePanel>() {
                 public MultiKickerChoicePanel call() {
-			        return new MultiKickerChoicePanel(controller,source,cost,maximumCount);
+			        return new MultiKickerChoicePanel(controller,source,cost,maximumCount,replicate);
                 }
             });
 			if (controller.waitForInputOrUndo()) {
