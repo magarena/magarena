@@ -1,0 +1,12 @@
+>Gigadrowse
+url=http://magiccards.info/gp/en/26.html
+image=http://magiccards.info/scans/en/gp/26.jpg
+value=2
+rarity=C
+type=Instant
+color=u
+converted=1
+cost={U}
+ability=replicate
+timing=tapping
+requires_card_code

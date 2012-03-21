@@ -494,6 +494,11 @@ public enum MagicAbility {
             card.add(new MagicAnnihilatorTrigger(n));
         }
     },
+    Replicate("replicate", 20) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicReplicateTrigger.create());
+        }
+    },
     None("",0);
 
 	public static final long PROTECTION_FLAGS=
