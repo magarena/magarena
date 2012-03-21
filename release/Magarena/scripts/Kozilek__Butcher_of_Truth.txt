@@ -1,0 +1,13 @@
+>Kozilek, Butcher of Truth
+url=http://magiccards.info/roe/en/6.html
+image=http://magiccards.info/scans/en/roe/6.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Eldrazi
+converted=10
+cost={10}
+pt=12/12
+ability=annihilator 4
+timing=main
+requires_card_code

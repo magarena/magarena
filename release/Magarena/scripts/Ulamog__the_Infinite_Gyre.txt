@@ -1,0 +1,14 @@
+>Ulamog, the Infinite Gyre
+url=http://magiccards.info/roe/en/12.html
+image=http://magiccards.info/scans/en/roe/12.jpg
+value=5
+removal=3
+rarity=M
+type=Legendary,Creature
+subtype=Eldrazi
+converted=11
+cost={11}
+pt=10/10
+ability=annihilator 4,indestructible
+timing=main
+requires_card_code
