@@ -20,6 +20,7 @@ import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicGainActivation;
+import magic.model.event.MagicPlayMulticounterEvent;
 
 import magic.model.trigger.*;
 
@@ -497,6 +498,12 @@ public enum MagicAbility {
     Replicate("replicate", 20) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             card.add(MagicReplicateTrigger.create());
+        }
+    },
+    Multicounter("enters with +1/+1 for each kick", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+            card.add(new MagicPlayMulticounterEvent(manaCost));
         }
     },
     None("",0);

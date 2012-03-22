@@ -9,6 +9,5 @@ color=u
 converted=3
 cost={2}{U}
 pt=2/2
-ability=islandwalk
+ability=islandwalk,enters with +1/+1 for each kick {1}{U}
 timing=main
-requires_card_code

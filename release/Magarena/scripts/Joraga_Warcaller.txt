@@ -9,6 +9,7 @@ color=g
 converted=1
 cost={G}
 pt=1/1
+ability=enters with +1/+1 for each kick {1}{G}
 static=player
 timing=fmain
 requires_card_code

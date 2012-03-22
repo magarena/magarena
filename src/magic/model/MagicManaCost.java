@@ -137,9 +137,9 @@ public class MagicManaCost {
 		typeCount=0;
 		converted=0;
 
-		String text=costText;
-		boolean ok=true;
-		while (ok&&text.length()>0) {
+		String text = costText;
+		boolean ok = text.length() > 0;
+		while (ok && text.length() > 0) {
 			ok=false;
 			final Matcher matcher=PATTERN.matcher(text);
 			if (matcher.matches()) {
@@ -151,7 +151,7 @@ public class MagicManaCost {
 			}
 		}
 		if (!ok) {
-			throw new RuntimeException("Invalid cost " + costText);
+			throw new RuntimeException("Invalid cost \"" + costText + "\"");
 		}
 
 		buildIcons();
