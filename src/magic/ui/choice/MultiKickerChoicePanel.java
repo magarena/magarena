@@ -44,7 +44,8 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 		setOpaque(false);
 		
 		final String message = "Choose how many times to pay the " + 
-				(replicate ? "replicate " : "kicker ") + cost.getText() + ".";
+				(replicate ? "replicate " : "kicker ") +
+				"cost of " + cost.getText() + ".";
 		final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),GameViewer.TEXT_WIDTH,true);
 		add(textLabel,BorderLayout.CENTER);
 
