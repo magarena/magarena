@@ -1,0 +1,13 @@
+>Wall of Brambles
+url=http://magiccards.info/5e/en/200.html
+image=http://magiccards.info/scans/en/5e/200.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Plant,Wall
+color=g
+converted=3
+cost={2}{G}
+pt=2/3
+ability=defender,regenerate {G}
+timing=smain

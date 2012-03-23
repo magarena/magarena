@@ -1,0 +1,13 @@
+>Wall of Pine Needles
+url=http://magiccards.info/ia/en/162.html
+image=http://magiccards.info/scans/en/ia/162.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Plant,Wall
+color=g
+converted=4
+cost={3}{G}
+pt=3/3
+ability=defender,regenerate {G}
+timing=smain
