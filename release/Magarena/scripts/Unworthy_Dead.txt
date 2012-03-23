@@ -1,0 +1,13 @@
+>Unworthy Dead
+url=http://magiccards.info/us/en/163.html
+image=http://magiccards.info/scans/en/us/163.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Skeleton
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+ability=regenerate {B}
+timing=main
