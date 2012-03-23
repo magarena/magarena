@@ -1,0 +1,13 @@
+>Tel-Jilad Exile
+url=http://magiccards.info/mi/en/133.html
+image=http://magiccards.info/scans/en/mi/133.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Troll,Warrior
+color=g
+converted=4
+cost={3}{G}
+pt=2/3
+ability=regenerate {1}{G}
+timing=main

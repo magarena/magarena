@@ -1,0 +1,13 @@
+>Toxic Nim
+url=http://magiccards.info/nph/en/75.html
+image=http://magiccards.info/scans/en/nph/75.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=6
+cost={4}{B}{B}
+pt=4/1
+ability=infect,regenerate {B}
+timing=main
