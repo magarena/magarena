@@ -1,0 +1,13 @@
+>Tattered Drake
+url=http://magiccards.info/rav/en/68.html
+image=http://magiccards.info/scans/en/rav/68.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie,Drake
+color=u
+converted=5
+cost={4}{U}
+pt=2/2
+ability=flying,regenerate {B}
+timing=main
