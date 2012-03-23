@@ -1,0 +1,13 @@
+>Skeletal Changeling
+url=http://magiccards.info/lw/en/140.html
+image=http://magiccards.info/scans/en/lw/140.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Shapeshifter
+color=b
+converted=2
+cost={1}{B}
+pt=1/1
+ability=changeling,regenerate {1}{B}
+timing=main

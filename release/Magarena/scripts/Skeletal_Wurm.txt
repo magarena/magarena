@@ -1,0 +1,13 @@
+>Skeletal Wurm
+url=http://magiccards.info/roe/en/127.html
+image=http://magiccards.info/scans/en/roe/127.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Skeleton,Wurm
+color=b
+converted=8
+cost={7}{B}
+pt=7/6
+ability=regenerate {B}
+timing=main
