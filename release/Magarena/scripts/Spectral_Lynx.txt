@@ -1,0 +1,13 @@
+>Spectral Lynx
+url=http://magiccards.info/ap/en/17.html
+image=http://magiccards.info/scans/en/ap/17.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Cat,Spirit
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+ability=protection from green,regenerate {B}
+timing=main
