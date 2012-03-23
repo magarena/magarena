@@ -1,0 +1,13 @@
+>Yavimaya Gnats
+url=http://magiccards.info/ia/en/168.html
+image=http://magiccards.info/scans/en/ia/168.jpg
+value=1
+rarity=U
+type=Creature
+subtype=Insect
+color=g
+converted=3
+cost={2}{G}
+pt=0/1
+ability=flying,regenerate {G}
+timing=main
