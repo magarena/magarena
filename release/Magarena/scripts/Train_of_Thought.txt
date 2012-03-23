@@ -1,0 +1,12 @@
+>Train of Thought
+url=http://magiccards.info/gp/en/39.html
+image=http://magiccards.info/scans/en/gp/39.jpg
+value=2
+rarity=C
+type=Sorcery
+color=u
+converted=2
+cost={1}{U}
+ability=replicate
+timing=draw
+requires_card_code

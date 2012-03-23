@@ -1,0 +1,13 @@
+>Vacuumelt
+url=http://magiccards.info/gp/en/40.html
+image=http://magiccards.info/scans/en/gp/40.jpg
+value=2
+removal=2
+rarity=U
+type=Sorcery
+color=u
+converted=3
+cost={2}{U}
+ability=replicate
+timing=removal
+requires_card_code
