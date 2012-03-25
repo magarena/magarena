@@ -16,26 +16,40 @@ for (card <- src \ "card") {
     val pow = (card \ "pow").text
     val tgh = (card \ "tgh").text
     
-    val types = card \ "typelist"
-    val rules = card \ "rulelist"
+    val types = card \ "typelist" \ "type"
+    val rules = card \ "rulelist" \ "rule"
     
-    var scriptable = (rules \ "rule").filter(_.text.trim() != "").forall(x => isScriptable(name, x.text))
+    var scriptable = rules
+        .filter(_.text.trim() != "")
+        .forall(x => isScriptable(name, x.text))
+    
     if (scriptable) {
         Console.println(">" + name);
-        /*
         Console.println("value=?")
         Console.println("rarity=?")
-        Console.println("type=Creature")
-        Console.println("subtype=Beast,Human")
-        Console.println("color=g")
-        Console.println("converted=6")
-        Console.println("cost={4}{G}{G}")
-        Console.println("power=6")
-        Console.println("toughness=5")
-        Console.println("timing=main")
-        */
-        for (rule <- rules \ "rule" if rule.text.trim != "") {
-            Console.println(rule.text)
+
+        val typeStr = types
+        .filter(x => (x \ "@type").text == "card" || (x \ "@type").text == "super")
+        .map(_.text)
+        .mkString(",")
+        
+        Console.println("type=" + typeStr);
+
+        val subtypeStr = types
+        .filter(x => (x \ "@type").text == "sub")
+        .map(_.text)
+        .mkString(",")
+
+        Console.println("subtype=" + subtypeStr)
+        
+        Console.println("color=?")
+        Console.println("converted=?")
+        Console.println("cost=" + cost)
+        Console.println("power=" + pow )
+        Console.println("toughness=" + tgh)
+        Console.println("timing=?")
+        for (rule <- rules if rule.text.trim != "") {
+            Console.println("ability=" + rule.text)
         }
         Console.println()
     }
@@ -54,7 +68,7 @@ def isScriptable(name:String, rule:String):Boolean = {
     }
 
     //if not, print it out
-    Console.err.println(norm + "\t" + name);
+    //Console.err.println(norm + "\t" + name);
     return false
 }
 

@@ -273,7 +273,7 @@ download/Magarena-%.zip:
 			$^
 
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
-	scala $^ > $@ 2> cards/others.txt
+	scala $^ > $@
 
 cards/magicdraftsim-rating: cards/card-ratings
 	for i in `cat $^`; do \
