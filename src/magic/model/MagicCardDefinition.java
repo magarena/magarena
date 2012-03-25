@@ -80,7 +80,7 @@ public class MagicCardDefinition {
 	private String text = "";
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
-	private MagicCardEvent cardEvent=MagicPlayCardEvent.getInstance();
+	private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
     private MagicActivation cardActivation;
 	private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
 	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();

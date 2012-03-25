@@ -11,6 +11,10 @@ public class MagicPlayCardEvent implements MagicCardEvent,MagicEventAction {
 	
 	private MagicPlayCardEvent() {}
 	
+	public static MagicPlayCardEvent create() {
+		return INSTANCE;
+	}
+	
 	@Override
 	public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
 		return new MagicEvent(
@@ -25,9 +29,5 @@ public class MagicPlayCardEvent implements MagicCardEvent,MagicEventAction {
 	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
 		final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
 		game.doAction(new MagicPlayCardFromStackAction(cardOnStack));
-	}
-	
-	public static MagicCardEvent getInstance() {
-		return INSTANCE;
 	}
 }
