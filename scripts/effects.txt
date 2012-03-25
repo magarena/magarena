@@ -39,6 +39,7 @@ protection from creatures
 protection from demons
 protection from dragons
 reach
+shadow
 shroud
 swampwalk
 trample
@@ -192,18 +193,17 @@ You control enchanted creature.
 @ gets +1/+0 for each artifact you control.
 @ gets +2/+2 for each Aura attached to it.
 At the beginning of the end step, sacrifice @.
+At the beginning of your upkeep, put a spore counter on @.
+At the beginning of your upkeep, you may put a verse counter on @.
 Landfall — Whenever a land enters the battlefield under your control, @ gets +2/+2 until end of turn.
 Metalcraft — @ gets +2/+2 as long as you control three or more artifacts.
 @ is unblockable as long as defending player controls an artifact.
 Untap @.
 
 ### unimplemented abilities ###
-Shadow
-Protection from artifacts
-As an additional cost to cast @, sacrifice a creature.
-At the beginning of your upkeep, put a spore counter on @.
-At the beginning of your upkeep, you may put a verse counter on @.
-When @ becomes the target of a spell or ability, sacrifice it.
+# Protection from artifacts
+# As an additional cost to cast @, sacrifice a creature.
+# When @ becomes the target of a spell or ability, sacrifice it.
 
 
 ### misc ###
