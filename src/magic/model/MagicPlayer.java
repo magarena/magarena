@@ -41,8 +41,6 @@ public class MagicPlayer implements MagicTarget {
 	private int stateFlags;
 	private int preventDamage;
 	private int extraTurns;
-	private int attackers;
-	private int blockers;
 	private boolean SmartShuffleUsed;
     private final MagicCardList hand;
 	private final MagicCardList library;
@@ -85,8 +83,6 @@ public class MagicPlayer implements MagicTarget {
 		stateFlags=sourcePlayer.stateFlags;
 		preventDamage=sourcePlayer.preventDamage;
 		extraTurns=sourcePlayer.extraTurns;
-		attackers=sourcePlayer.attackers;
-		blockers=sourcePlayer.blockers;
 		hand=new MagicCardList(copyMap, sourcePlayer.hand);
 		library=new MagicCardList(copyMap, sourcePlayer.library);
 		graveyard=new MagicCardList(copyMap, sourcePlayer.graveyard);
@@ -116,8 +112,6 @@ public class MagicPlayer implements MagicTarget {
             stateFlags,
             preventDamage,
             extraTurns,
-            attackers,
-            blockers,
             hand.getSortedCardsId(),
             library.getCardsId(),
             graveyard.getCardsId(),
@@ -403,20 +397,24 @@ public class MagicPlayer implements MagicTarget {
 		return getManaActivationsCount(game)-builderCost.getMinimumAmount()-cost.getConvertedCost();
 	}
 
-	public void setNrOfAttackers(final int aAttackers) {
-		this.attackers=aAttackers;
-	}
-	
 	public int getNrOfAttackers() {
-		return attackers;
-	}
-	
-    public void setNrOfBlockers(final int aBlockers) {
-		this.blockers=aBlockers;
+        int count=0;
+        for (final MagicPermanent permanent : permanents) {
+            if (permanent.hasState(MagicPermanentState.Attacking)) {
+                count++;
+            }
+        }
+        return count;
 	}
 	
 	public int getNrOfBlockers() {
-		return blockers;
+        int count=0;
+        for (final MagicPermanent permanent : permanents) {
+            if (permanent.hasState(MagicPermanentState.Blocking)) {
+                count++;
+            }
+        }
+        return count;
 	}
 	
 	public boolean controlsPermanentWithType(final MagicType type, final MagicGame game) {

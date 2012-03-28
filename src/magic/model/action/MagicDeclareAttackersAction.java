@@ -7,19 +7,14 @@ import magic.model.choice.MagicDeclareAttackersResult;
 
 public class MagicDeclareAttackersAction extends MagicAction {
 
-	private final MagicPlayer player;
 	private final MagicDeclareAttackersResult result;
-	private int oldAttackers;
 	
-	public MagicDeclareAttackersAction(final MagicPlayer player,final MagicDeclareAttackersResult result) {
-		this.player=player;
+	public MagicDeclareAttackersAction(final MagicDeclareAttackersResult result) {
 		this.result=result;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		oldAttackers=player.getNrOfAttackers();
-		player.setNrOfAttackers(result.size());
 		for (final MagicPermanent attacker : result) {
 			game.doAction(new MagicDeclareAttackerAction(attacker));
 		}		
@@ -27,6 +22,5 @@ public class MagicDeclareAttackersAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		player.setNrOfAttackers(oldAttackers);
 	}
 }
