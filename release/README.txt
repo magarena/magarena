@@ -54,6 +54,191 @@ Thank you for your support and have fun!
 
 
 
+Release 1.24 (March 31, 2012)
+============
+- added mulligan
+- added support for using last known information
+- added two decks (BU_Card_Advantage.dec and Goblin_Sacrifice_40.dec)
+- added "enchant" property to card script
+- generalized "landfall pump" ability in card script to allow different power/toughness
+- added "enters with +1/+1 for each kick <mana cost>" to card script
+
+- fixed: casting cost of Crimson Mage was {R}, should be {1}{R})
+- fixed: automatic paying of mana cost not taking into account charge counters
+- fixed: ability granted by Livewire Lash doesn't obey protection-based targeting restrictions
+- fixed: wrath effects interact incorrectly with Knight Exemplar
+- fixed: token getting shuffled into the library
+- fixed: Fiend Hunters ability was not targetted
+- fixed: Arcbound Overseer's upkeep trigger doesn't work
+- fixed: Glint Hawk's ability was targetted, but it should be non targetted
+- fixed: A creature with shroud is offered as target for Faceless Butcher's effect.
+- fixed: Faceless Devourer's ability was not targetted
+- fixed: Leonin Relic-Warder's ability was not targetted
+- fixed: Fumiko the Lowblood doesn't get bushido credit from Hero of Bladehold's new soldiers
+
+- added the following cards:
+  Acorn Catapult
+  Alexi's Cloak
+  Ancient Silverback
+  Antagonism
+  Archangel's Light
+  Artisan of Kozilek
+  Astral Steel
+  Avacyn's Collar
+  Bar the Door
+  Battle Mastery
+  Blisterstick Shaman
+  Blood Ogre
+  Bloodrage Vampire
+  Bloodscale Prowler
+  Bloodshed Fever
+  Bogardan Lancer
+  Bone to Ash
+  Briarpack Alpha
+  Buoyancy
+  Burden of Guilt
+  Cantivore
+  Carnage Wurm
+  Carnassid
+  Carrion Wall
+  Chant of the Skifsang
+  Cinderbones
+  Clay Statue
+  Clinging Mists
+  Cognivore
+  Corrupt Eunuchs
+  Darkling Stalker
+  Darksteel Ingot
+  Deranged Outcast
+  Divine Transformation
+  Drogskol Captain
+  Drogskol Reaver
+  Drowned
+  Druid's Call
+  Dungeon Geists
+  Duskhunter Bat
+  Eland Umbra
+  Elgaud Inquisitor
+  Enfeeblement
+  Eron the Relentless
+  Executioner's Hood
+  Favor of the Woods
+  Feast of the Unicorn
+  Feebleness
+  Fire Imp
+  Flowstone Charger
+  Fog of Gnats
+  Furyborn Hellkite
+  Gather the Townsfolk
+  Gavony Ironwright
+  Geralf's Mindcrusher
+  Ghor-Clan Savage
+  Ghost Ship
+  Giant Strength
+  Gigadrowse
+  Goblin Commando
+  Gorehorn Minotaurs
+  Goretusk Firebeast
+  Gorilla Chieftain
+  Gravetiller Wurm
+  Grim Backwoods
+  Grim Flowering
+  Griptide
+  Gristleback
+  Gwafa Hazid, Profiteer
+  Havengul Runebinder
+  Heavy Mattock
+  Hollow Dogs
+  Hollowhenge Beast
+  Hollowhenge Spirit
+  Horned Troll
+  Hunger of the Howlpack
+  Jungle Troll
+  Kessig Recluse
+  Kiln Walker
+  Kozilek, Butcher of Truth
+  Krosan Beast
+  Leap of Flame
+  Lim-Dul's High Guard
+  Living Airship
+  Living Wall
+  Lurking Crocodile
+  Lurking Nightstalker
+  Magnivore
+  Malach of the Dawn
+  Mammoth Umbra
+  Metathran Zombie
+  Midnight Guard
+  Nephalia Seakite
+  Niblis of the Breath
+  Niblis of the Mist
+  Niblis of the Urn
+  Odious Trow
+  Pewter Golem
+  Phyrexian Monitor
+  Phyrexian Obliterator
+  Pyromatics
+  Rabble-Rouser
+  Ranger en-Vec
+  Ravenous Skirge
+  Requiem Angel
+  Restless Dead
+  Revered Dead
+  Sanctuary Cat
+  Sanguine Guard
+  Scab-Clan Mauler
+  Screeching Harpy
+  Screeching Skaab
+  Seance
+  Shattering Spree
+  Shriekgeist
+  Silverclaw Griffin
+  Skeletal Changeling
+  Skeletal Wurm
+  Skillful Lunge
+  Skyshroud Troll
+  Slith Ascendant
+  Slith Bloodletter
+  Slith Firewalker
+  Slith Predator
+  Somberwald Dryad
+  Spectral Lynx
+  Squirrel Mob
+  Stormbound Geist
+  Sudden Disappearance
+  Tangle Hulk
+  Tarmogoyf
+  Tattered Drake
+  Tel-Jilad Exile
+  Terravore
+  Thought Scour
+  Thraben Doomsayer
+  Toxic Nim
+  Tragic Slip
+  Train of Thought
+  Ulamog's Crusher
+  Ulamog, the Infinite Gyre
+  Ulvenwald Bear
+  Unworthy Dead
+  Uthden Troll
+  Vacuumelt
+  Vampire Outcasts
+  Vault of the Archangel
+  Vengeful Vampire
+  Vicious Kavu
+  Village Survivors
+  Votary of the Conclave
+  Wakedancer
+  Walking Dead
+  Wall of Brambles
+  Wall of Pine Needles
+  War Elemental
+  Wei Ambush Force
+  Will-o'-the-Wisp
+  Yavimaya Gnats
+  Young Wolf
+  Zombie Apocalypse
+
 Release 1.23 (February 25, 2012)
 ============
 - added double-clicking right mouse button in deck pane adds a copy of selected card to deck
