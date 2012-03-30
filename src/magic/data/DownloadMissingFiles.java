@@ -17,26 +17,26 @@ import java.util.Scanner;
  */
 public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	public DownloadMissingFiles(final String filename) {
+    public DownloadMissingFiles(final String filename) {
         loadDownloadImageFiles(filename);
-	}	
-	
-	private void loadDownloadImageFiles(final String filename) {
-		final InputStream stream;
-		
-		// download additional images
-		if (filename.startsWith("file://")) {
+    }    
+    
+    private void loadDownloadImageFiles(final String filename) {
+        final InputStream stream;
+        
+        // download additional images
+        if (filename.startsWith("file://")) {
             try { //create file input stream
-    			stream=new FileInputStream(filename.substring(7));
+                stream=new FileInputStream(filename.substring(7));
             } catch (final FileNotFoundException ex) {
                 System.err.println("ERROR! Unable to find " + filename);
                 return;
             }
-		} else {
-			stream=this.getClass().getResourceAsStream(filename);
-		}
+        } else {
+            stream=this.getClass().getResourceAsStream(filename);
+        }
 
         String content = null;
         try { //load list of images
@@ -47,81 +47,84 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
         }
 
         final Scanner sc = new Scanner(content);
-		final File gamePathFile=new File(MagicMain.getGamePath());
+        final File gamePathFile=new File(MagicMain.getGamePath());
         File imagesPathFile = null;
 
-		while (sc.hasNextLine()) {
-			final String line = sc.nextLine();
-			if (line.startsWith(">")) {
-				imagesPathFile=new File(gamePathFile,line.substring(1).trim());
+        while (sc.hasNextLine()) {
+            final String line = sc.nextLine();
+            if (line.startsWith(">")) {
+                imagesPathFile=new File(gamePathFile,line.substring(1).trim());
                 if (!imagesPathFile.exists() && !imagesPathFile.mkdir()) {
                     System.err.println("WARNING. Unable to create " + imagesPathFile);
                 }
-			} else {
-				final String parts[]=line.trim().split(";");
-				if (parts.length==2&&!parts[1].isEmpty()) {
-					final File imageFile=new File(imagesPathFile,parts[0]);
+            } else {
+                final String parts[]=line.trim().split(";");
+                if (parts.length==2&&!parts[1].isEmpty()) {
+                    final File imageFile=new File(imagesPathFile,parts[0]);
 
                     //download if the file does not exist OR it is zero length
-					if (!imageFile.exists() || imageFile.length() == 0L) {
+                    if (!imageFile.exists() || imageFile.length() == 0L) {
                         try { //create URL
-    						add(new DownloadImageFile(imageFile,new URL(parts[1])));
+                            add(new DownloadImageFile(imageFile,new URL(parts[1])));
                         } catch (final java.net.MalformedURLException ex) {
                             System.err.println("ERROR! URL malformed " + parts[1]);
                         }
-					}
-				}
-			}
-		}
-		
-		// download card images and texts
-		final File cardsPathFile=new File(gamePathFile, CardDefinitions.CARD_IMAGE_FOLDER);
-		final File tokensPathFile = new File(gamePathFile, CardDefinitions.TOKEN_IMAGE_FOLDER);
-		final File textPathFile = new File(gamePathFile, CardDefinitions.CARD_TEXT_FOLDER);
-		
+                    }
+                }
+            }
+        }
+        
+        // download card images and texts
+        final File cardsPathFile=new File(gamePathFile, CardDefinitions.CARD_IMAGE_FOLDER);
+        final File tokensPathFile = new File(gamePathFile, CardDefinitions.TOKEN_IMAGE_FOLDER);
+        final File textPathFile = new File(gamePathFile, CardDefinitions.CARD_TEXT_FOLDER);
+        
         if (!tokensPathFile.exists() && !tokensPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + tokensPathFile);
         }
         if (!textPathFile.exists() && !textPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + textPathFile);
         }
-		
-		for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
-			// card image
-			final String imageURL = cardDefinition.getImageURL();
-			if (imageURL != null) {
-				final File imageFile = cardDefinition.isToken()? 
-					new File(tokensPathFile, cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT) :
-					new File(cardsPathFile, cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT);
+        
+        for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
+            // card image
+            final String imageURL = cardDefinition.getImageURL();
+            if (imageURL != null) {
+                final File imageFile = cardDefinition.isToken()? 
+                    new File(tokensPathFile, 
+                             cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT) :
+                    new File(cardsPathFile, 
+                             cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT);
 
                 //download if the file does not exists OR it is zero length OR it is outdated
-				if (!imageFile.exists() || 
-						imageFile.length() == 0L ||
-						cardDefinition.isIgnored(imageFile.length())) {
+                if (!imageFile.exists() || 
+                    imageFile.length() == 0L ||
+                    cardDefinition.isIgnored(imageFile.length())) {
                     try { //create URL
-    					add(new DownloadImageFile(imageFile,new URL(imageURL)));
+                        add(new DownloadImageFile(imageFile,new URL(imageURL)));
                     } catch (final java.net.MalformedURLException ex) {
                         System.err.println("ERROR! URL malformed " + imageURL);
                     }
-				}
-			}
-			
-			// card text
-			final String textUrl = cardDefinition.getCardInfoURL();
-			if (textUrl != null && textUrl.length() > 0) {
-				final File textFile = new File(textPathFile, cardDefinition.getCardTextName() + CardDefinitions.CARD_TEXT_EXT);
-				
-				// download if the file does not exists OR it is zero length OR it is outdated
-				if (!textFile.exists() || 
-						textFile.length() == 0L ||
-						cardDefinition.isIgnored(textFile.length())) {
+                }
+            }
+            
+            // card text
+            final String textUrl = cardDefinition.getCardInfoURL();
+            if (textUrl != null && textUrl.length() > 0) {
+                final File textFile = new File(textPathFile, 
+                    cardDefinition.getCardTextName() + CardDefinitions.CARD_TEXT_EXT);
+                
+                // download if the file does not exists OR it is zero length OR it is outdated
+                if (!textFile.exists() || 
+                    textFile.length() == 0L ||
+                    cardDefinition.isIgnored(textFile.length())) {
                     try { // create URL
-    					add(new DownloadCardTextFile(textFile, new URL(textUrl)));
+                        add(new DownloadCardTextFile(textFile, new URL(textUrl)));
                     } catch (final java.net.MalformedURLException ex) {
                         System.err.println("ERROR! URL malformed " + textUrl);
                     }
-				}
-			}
-		}
-	}
+                }
+            }
+        }
+    }
 }
