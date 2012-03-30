@@ -57,23 +57,29 @@ Thank you for your support and have fun!
 Release 1.24 (March 31, 2012)
 ============
 - added mulligan
+- added basic game log
 - added support for using last known information
 - added two decks (BU_Card_Advantage.dec and Goblin_Sacrifice_40.dec)
+- added support for Bloodthirst ability
 - added "enchant" property to card script
 - generalized "landfall pump" ability in card script to allow different power/toughness
 - added "enters with +1/+1 for each kick <mana cost>" to card script
+- added support for Annihilator ability
 
 - fixed: casting cost of Crimson Mage was {R}, should be {1}{R})
 - fixed: automatic paying of mana cost not taking into account charge counters
 - fixed: ability granted by Livewire Lash doesn't obey protection-based targeting restrictions
 - fixed: wrath effects interact incorrectly with Knight Exemplar
 - fixed: token getting shuffled into the library
-- fixed: Fiend Hunters ability was not targetted
+- fixed: morbid trigger from Reaper from the Abyss doesn't target creatures you own
+- fixed: copying Ravaging Riftwurm doesn't put counters on it when it enters the battlefield
+- fixed: Fiend Hunters ability was not targeted
 - fixed: Arcbound Overseer's upkeep trigger doesn't work
-- fixed: Glint Hawk's ability was targetted, but it should be non targetted
+- fixed: Telim'Tor gives a bonus to every attacking creature
+- fixed: Glint Hawk's ability was targeted, but it should be non targeted
 - fixed: A creature with shroud is offered as target for Faceless Butcher's effect.
-- fixed: Faceless Devourer's ability was not targetted
-- fixed: Leonin Relic-Warder's ability was not targetted
+- fixed: Faceless Devourer's ability was not targeted
+- fixed: Leonin Relic-Warder's ability was not targeted
 - fixed: Fumiko the Lowblood doesn't get bushido credit from Hero of Bladehold's new soldiers
 
 - added the following cards:
