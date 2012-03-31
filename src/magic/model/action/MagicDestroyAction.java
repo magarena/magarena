@@ -43,14 +43,19 @@ public class MagicDestroyAction extends MagicAction {
 	            destroy = false;
 	        } 
 	        
-	        // Totem armor.
+	        // Totem armor
 	        if (permanent.isEnchanted()) {
 	            for (final MagicPermanent aura : permanent.getAuraPermanents()) {
 	                if (aura.getCardDefinition().hasAbility(MagicAbility.TotemArmor)) {
 	                    game.logAppendMessage(permanent.getController(),"Remove all damage from "+permanent.getName()+'.');
 	                    game.doAction(new MagicRemoveAllDamageAction(permanent));
-	                    game.doAction(new MagicDestroyAction(aura));
+                        toBeDestroyed.add(aura);
 	                    destroy = false;
+                        //Only the first aura with totem armor will be
+                        //destroyed.  If there are multiple auras with totem
+                        //armor, player can choose the one to be destroyed, but
+                        //this is not implemented
+                        break;
 	                }
 	            }
 	        }
