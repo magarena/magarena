@@ -11,8 +11,11 @@ public class MagicChangeCountersAction extends MagicAction {
 	private final int amount;
 	private final boolean hasScore;
 	
-	public MagicChangeCountersAction(final MagicPermanent permanent,final MagicCounterType counterType,final int amount,final boolean hasScore) {
-		
+	public MagicChangeCountersAction(
+            final MagicPermanent permanent,
+            final MagicCounterType counterType,
+            final int amount,
+            final boolean hasScore) {
 		this.permanent=permanent;
 		this.counterType=counterType;
 		this.amount=amount;
@@ -21,7 +24,6 @@ public class MagicChangeCountersAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		final int oldScore=hasScore?permanent.getScore(game):0;
 		permanent.changeCounters(counterType,amount);
 		if (hasScore) {
@@ -32,7 +34,6 @@ public class MagicChangeCountersAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		permanent.changeCounters(counterType,-amount);
 	}
 }
