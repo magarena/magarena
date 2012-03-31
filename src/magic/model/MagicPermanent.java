@@ -340,6 +340,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
 	public MagicPowerToughness getPowerToughness(final MagicGame game,final boolean turn) {
 		if (!isOnBattlefield(game)) {
+            assert lastKnownPowerToughness != null : "last known p/t is null";
 			return lastKnownPowerToughness;
 		}
 		
