@@ -3,14 +3,17 @@ package magic.card;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Lumberknot {
-    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
+    public static final Object T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+		public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPermanent otherPermanent) {
 			return (otherPermanent.isCreature(game)) ?
 				new MagicEvent(
                     permanent,
