@@ -39,9 +39,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return this;
         }
     	@Override
-        public boolean isOnBattlefield(final MagicGame game) {
-    		return true;
+	    public MagicPowerToughness getPowerToughness(final MagicGame game,final boolean turn) {
+            return new MagicPowerToughness(0,0);
     	}
+        @Override
+        public boolean hasAbility(final MagicGame game,final MagicAbility ability) {
+            return false;
+        }
     };
 		
 	private final long id;
@@ -63,16 +67,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	private long turnAbilityFlags=0;
 	private int turnPowerIncr=0;
 	private int turnToughnessIncr=0;
-	private MagicPowerToughness lastKnownPowerToughness;
-	private long lastKnownAbilityFlags = 0;
-	private EnumSet<MagicSubType> lastKnownSubTypeFlags;
-	private int lastKnownTypeFlags = 0;
-	private int lastKnownColorFlags = 0;
 	private int turnColorFlags=NO_COLOR_FLAGS;
 	private int abilityPlayedThisTurn=0;
 	private int damage=0;
 	private int preventDamage=0;
-    private final int fixedScore;	
+    private final int fixedScore;
+
+    // last known information
+	private EnumSet<MagicSubType> lastKnownSubTypeFlags;
+	private MagicPowerToughness lastKnownPowerToughness;
+	private long lastKnownAbilityFlags = 0;
+	private int lastKnownTypeFlags = 0;
+	private int lastKnownColorFlags = 0;
 
     // Allows cached retrieval of power, toughness and abilities.
 	private boolean cached=false;
@@ -123,6 +129,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		damage=sourcePermanent.damage;
 		preventDamage=sourcePermanent.preventDamage;
 		fixedScore=sourcePermanent.fixedScore;
+		
+        lastKnownPowerToughness = sourcePermanent.lastKnownPowerToughness;
+		lastKnownAbilityFlags = sourcePermanent.lastKnownAbilityFlags;
+		lastKnownSubTypeFlags = sourcePermanent.lastKnownSubTypeFlags;
+		lastKnownTypeFlags = sourcePermanent.lastKnownTypeFlags;
+		lastKnownColorFlags = sourcePermanent.lastKnownColorFlags;
     }
 	
 	@Override
@@ -148,14 +160,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !isValid();
     }
     
-    public boolean isOnBattlefield(final MagicGame game) {
-    	for (final MagicPlayer player : game.getPlayers()) {
-			if (player.controlsPermanent(this)) {
-				return true;
-			}
-		}
-		return false;		
-
+    private boolean isOnBattlefield(final MagicGame game) {
+        return getController().controlsPermanent(this);
     }
 	
 	long getPermanentId() {
@@ -222,10 +228,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	public void setController(final MagicPlayer controller) {
 		this.controller=controller;
 	}
-	
+
+    /*
     public MagicPlayer getController(final MagicGame game) {
 		return MagicLayer.getController(game, this);
 	}
+    */
 	
 	public MagicPlayer getController() {
 		return controller;
@@ -346,11 +354,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		
 		// Check if cached.
 		if (cached&&turn) {
+            assert cachedTurnPowerToughness != null : "cached p/t is null";
 			return cachedTurnPowerToughness;
 		}
 		
         //get starting P/T from card def (includes CDA)
-		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController(game), this);
+		final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController(), this);
 
         //apply global effects
         MagicLayer.getPowerToughness(game, this, pt);
@@ -359,6 +368,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		if (turn) {
 			pt.add(turnPowerIncr, turnToughnessIncr);
 		}
+            
+        assert pt != null : "p/t is null";
 		return pt;
 	}
 	
@@ -624,7 +635,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
 			if (!enchantedCreature.isValid() || 
-                !game.isLegalTarget(getController(game),this,tchoice,enchantedCreature) ||
+                !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
                 enchantedCreature.hasProtectionFrom(game,this)) {
 				game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
 				actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
