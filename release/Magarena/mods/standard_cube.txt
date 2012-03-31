@@ -18,6 +18,7 @@ Angel of Flight Alabaster
 Angel's Feather
 Angel's Mercy
 Arbalest Elite
+Archangel's Light
 Archon of Justice
 Ardent Recruit
 Argent Sphinx
@@ -32,12 +33,14 @@ Auramancer
 Auriok Edgewright
 Auriok Sunchaser
 Avacynian Priest
+Avacyn's Collar
 Avacyn's Pilgrim
 Aven Fleetwing
 Azure Mage
 Balefire Dragon
 Barbed Battlegear
 Barrage Ogre
+Bar the Door
 Batterskull
 Battleground Geist
 Bellowing Tanglewurm
@@ -56,32 +59,40 @@ Blighted Agent
 Blight Mamba
 Blightwidow
 Blistergrub
+Blisterstick Shaman
 Bloodcrazed Neonate
 Bloodgift Demon
+Blood Ogre
+Bloodrage Vampire
 Blood Seeker
 Bloodshot Trainee
 Blunt the Assault
 Bonds of Quicksilver
 Bonebreaker Giant
 Bonehoard
+Bone to Ash
 Boneyard Wurm
 Bountiful Harvest
 Brain Weevil
 Bramblecrush
 Break of Day
+Briarpack Alpha
 Brindle Boar
 Brink of Disaster
+Burden of Guilt
 Burn the Impure
 Butcher's Cleaver
 Call to the Grave
 Cancel
 Carapace Forger
+Carnage Wurm
 Carnifex Demon
 Carrion Call
 Celestial Purge
 Cemetery Reaper
 Champion of the Parish
 Chandra's Outrage
+Chant of the Skifsang
 Chapel Geist
 Charmbreaker Devils
 Chasm Drake
@@ -91,6 +102,7 @@ Chrome Steed
 Circle of Flame
 Claustrophobia
 Clifftop Retreat
+Clinging Mists
 Cobbled Wings
 Combust
 Concussive Bolt
@@ -123,6 +135,7 @@ Deathmark
 Death's Caress
 Demon's Horn
 Demystify
+Deranged Outcast
 Devouring Swarm
 Diregraf Captain
 Diregraf Ghoul
@@ -137,12 +150,16 @@ Doomed Traveler
 Dragon's Claw
 Dragonskull Summit
 Drifting Shade
+Drogskol Captain
+Drogskol Reaver
 Dross Hopper
 Drowned Catacomb
 Dungrove Elder
+Duskhunter Bat
 Elder Cathar
 Elder of Laurels
 Elesh Norn, Grand Cenobite
+Elgaud Inquisitor
 Elite Inquisitor
 Elite Vanguard
 Embersmith
@@ -150,6 +167,7 @@ Endless Ranks of the Dead
 Engulfing Slagwurm
 Erdwal Ripper
 Etched Champion
+Executioner's Hood
 Ezuri, Renegade Leader
 Ezuri's Archers
 Ezuri's Brigade
@@ -158,6 +176,7 @@ Falkenrath Marauders
 Falkenrath Noble
 Falkenrath Torturer
 Farbog Boneflinger
+Favor of the Woods
 Feral Ridgewolf
 Ferrovore
 Festerhide Boar
@@ -176,14 +195,18 @@ Fortress Crab
 Frightful Delusion
 Frost Titan
 Fume Spitter
+Furyborn Hellkite
 Gallows Warden
 Galvanic Juggernaut
 Garruk's Companion
+Gather the Townsfolk
+Gavony Ironwright
 Gavony Township
 Geistcatcher's Rig
 Geist-Honored Monk
 Geist of Saint Traft
 Geralf's Messenger
+Geralf's Mindcrusher
 Ghalma's Warden
 Ghoulraiser
 Giant Spider
@@ -210,22 +233,29 @@ Golden Urn
 Gold Myr
 Golem Foundry
 Golem's Heart
+Gorehorn Minotaurs
 Grasp of Darkness
 Grave Bramble
 Gravedigger
+Gravetiller Wurm
 Grave Titan
 Graveyard Shovel
 Greater Basilisk
 Greatsword
 Griffin Rider
 Griffin Sentinel
+Grim Backwoods
+Grim Flowering
 Grimgrin, Corpse-Born
 Grimoire of the Dead
+Griptide
 Guardians' Pledge
 Halt Order
 Hamlet Captain
 Hand of the Praetors
 Harrowing Journey
+Havengul Runebinder
+Heavy Mattock
 Heckling Fiends
 Hellrider
 Hero of Bladehold
@@ -233,9 +263,12 @@ Hideous Visage
 Highborn Ghoul
 Hinterland Harbor
 Hoard-Smelter Dragon
+Hollowhenge Beast
 Hollowhenge Scavenger
+Hollowhenge Spirit
 Honor of the Pure
 Hovermyr
+Hunger of the Howlpack
 Hysterical Blindness
 Ichorclaw Myr
 Ichor Rats
@@ -253,8 +286,10 @@ Jade Mage
 Kemba, Kha Regent
 Kemba's Skyguard
 Kessig Cagebreakers
+Kessig Recluse
 Kessig Wolf
 Kessig Wolf Run
+Kiln Walker
 Kindercatch
 Kite Shield
 Koth's Courier
@@ -278,6 +313,7 @@ Loxodon Wayfarer
 Lumberknot
 Lumengrid Drake
 Lumengrid Gargoyle
+Lurking Crocodile
 Make a Wish
 Mana Leak
 Manalith
@@ -296,6 +332,7 @@ Memnite
 Mentor of the Meek
 Merfolk Looter
 Mesa Enchantress
+Midnight Guard
 Midnight Haunting
 Mighty Leap
 Mikaeus, the Lunarch
@@ -324,7 +361,11 @@ Necropede
 Necropouncer
 Negate
 Nephalia Drownyard
+Nephalia Seakite
 Neurok Invisimancer
+Niblis of the Breath
+Niblis of the Mist
+Niblis of the Urn
 Night Revelers
 Oblivion Ring
 One-Eyed Scarecrow
@@ -340,6 +381,7 @@ Phyrexian Crusader
 Phyrexian Digester
 Phyrexian Hulk
 Phyrexian Juggernaut
+Phyrexian Obliterator
 Phyrexian Rager
 Phyrexian Vatmother
 Pierce Strider
@@ -363,6 +405,7 @@ Razorverge Thicket
 Reaper from the Abyss
 Rebuke
 Reclaim
+Requiem Angel
 Reverberate
 Riot Devils
 Rites of Flourishing
@@ -374,12 +417,14 @@ Runeclaw Bear
 Russet Wolves
 Rusted Sentinel
 Sacred Wolf
+Sanctuary Cat
 Sangromancer
 Scorch the Fields
 Scoria Elemental
 Scourge of Geier Reach
 Scourge Servant
 Screeching Silcaw
+Screeching Skaab
 Seachrome Coast
 Selfless Cathar
 Selhoff Occultist
@@ -391,14 +436,17 @@ Sharpened Pitchfork
 Shattered Angel
 Sheoldred, Whispering One
 Shock
+Shriekgeist
 Shrine of Burning Rage
 Sickleslicer
 Siege Mastodon
 Sightless Ghoul
 Signal Pest
 Silverchase Fox
+Silverclaw Griffin
 Silver-Inlaid Dagger
 Silver Myr
+Skillful Lunge
 Skinrender
 Skinshifter
 Skinwing
@@ -411,6 +459,7 @@ Slayer of the Wicked
 Smallpox
 Smite the Monstrous
 Snapsail Glider
+Somberwald Dryad
 Somberwald Spider
 Sorin's Thirst
 Sorin's Vengeance
@@ -427,6 +476,7 @@ Stampeding Rhino
 Stensia Bloodhall
 Stingerfling Spider
 Stitcher's Apprentice
+Stormbound Geist
 Stormfront Pegasus
 Strandwalker
 Strangleroot Geist
@@ -435,6 +485,7 @@ Stromkirk Captain
 Stromkirk Noble
 Stromkirk Patrol
 Sturmgeist
+Sudden Disappearance
 Sulfur Falls
 Sunblast Angel
 Sunpetal Grove
@@ -447,8 +498,11 @@ Sword of Body and Mind
 Sword of Feast and Famine
 Sword of War and Peace
 Sylvok Lifestaff
+Tangle Hulk
 Tangle Mantis
 Taste of Blood
+Thought Scour
+Thraben Doomsayer
 Thraben Purebloods
 Thran Golem
 Thrun, the Last Troll
@@ -457,6 +511,8 @@ Tine Shrike
 Titanic Growth
 Torch Fiend
 Tormented Soul
+Toxic Nim
+Tragic Slip
 Traitorous Blood
 Tree of Redemption
 Tribute to Hunger
@@ -465,6 +521,7 @@ Tumble Magnet
 Turn the Tide
 Turn to Frog
 Typhoid Rats
+Ulvenwald Bear
 Unbreathing Horde
 Unruly Mob
 Unsummon
@@ -472,15 +529,19 @@ Untamed Might
 Urabrask the Hidden
 Urgent Exorcism
 Vampire Interloper
+Vampire Outcasts
 Vampiric Fury
 Vapor Snag
 Vastwood Gorger
+Vault of the Archangel
 Vault Skyward
 Vedalken Certarch
+Vengeful Vampire
 Victim of Night
 Victory's Herald
 Village Bell-Ringer
 Village Cannibals
+Village Survivors
 Viridian Betrayers
 Viridian Claw
 Visions of Beyond
@@ -489,6 +550,7 @@ Voiceless Spirit
 Volcanic Dragon
 Vorapede
 Vulshok Refugee
+Wakedancer
 Walking Corpse
 Wall of Torches
 Warpath Ghoul
@@ -503,5 +565,7 @@ Wreath of Geists
 Wring Flesh
 Wurmcoil Engine
 Wurm's Tooth
+Young Wolf
+Zombie Apocalypse
 Zombie Goliath
 Zombie Infestation
