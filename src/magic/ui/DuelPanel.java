@@ -231,13 +231,20 @@ public class DuelPanel extends JPanel implements ActionListener {
 			
 			// table of cards
 			cardTables[i] = new CardTable(player.getDeck(), cardViewer, generateTitle(player.getDeck()), true);
+	
+            // add scrolling to right side
+            JScrollPane rightScrollPane = new JScrollPane(rightPanel);
+            rightScrollPane.setBorder(FontsAndBorders.NO_BORDER);
+            rightScrollPane.setOpaque(false);
+            rightScrollPane.getViewport().setOpaque(false);
+            rightScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 			
 			// contents of tab
 			JPanel tabPanel = new JPanel();
 			SpringLayout tabLayout = new SpringLayout();
 			tabPanel.setLayout(tabLayout);			
 			tabPanel.add(cardTables[i]);
-			tabPanel.add(rightPanel);
+			tabPanel.add(rightScrollPane);
 			
 			tabLayout.putConstraint(SpringLayout.WEST, cardTables[i],
 								 SPACING, SpringLayout.WEST, tabPanel);
@@ -247,12 +254,14 @@ public class DuelPanel extends JPanel implements ActionListener {
 								 -SPACING, SpringLayout.SOUTH, tabPanel);
 								 
 			tabLayout.putConstraint(SpringLayout.EAST, cardTables[i],
-								 -SPACING, SpringLayout.WEST, rightPanel);
+								 -SPACING, SpringLayout.WEST, rightScrollPane);
 								 
-			tabLayout.putConstraint(SpringLayout.EAST, rightPanel,
+			tabLayout.putConstraint(SpringLayout.EAST, rightScrollPane,
 								 -SPACING, SpringLayout.EAST, tabPanel);
-			tabLayout.putConstraint(SpringLayout.NORTH, rightPanel,
+			tabLayout.putConstraint(SpringLayout.NORTH, rightScrollPane,
 								 SPACING, SpringLayout.NORTH, tabPanel);
+			tabLayout.putConstraint(SpringLayout.SOUTH, rightScrollPane,
+								 -SPACING, SpringLayout.SOUTH, tabPanel);
 			
 			// add as a tab
 			tabbedPane.addTab(player.getName() + "   ", theme.getAvatarIcon(player.getFace(), 2), tabPanel);
