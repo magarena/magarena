@@ -80,7 +80,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 	
 	private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 	
-	public ExplorerFilterPanel(JFrame frame, final ExplorerPanel explorerPanel,final int mode,final MagicPlayerProfile profile,final MagicCubeDefinition cube) {
+	public ExplorerFilterPanel(
+            final JFrame frame, 
+            final ExplorerPanel explorerPanel,
+            final int mode,
+            final MagicPlayerProfile profile,
+            final MagicCubeDefinition cube) {
 		this.frame = frame;
 		this.explorerPanel=explorerPanel;
 		this.mode=mode;
