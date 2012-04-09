@@ -312,3 +312,8 @@ code_clones:
 			--ignore-identifiers true \
 			--language java \
 			--files src/magic/card > $@
+
+github/push:
+	hg gexport
+	git push origin master
+
