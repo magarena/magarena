@@ -275,7 +275,16 @@ download/Magarena-%.zip:
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
 	scala $^ > $@
 
-cards/magicdraftsim-rating: cards/card-ratings
+cards/magicdraftsim-sets:
+	curl www.magicdraftsim.com/card-ratings | \
+	grep Kamigawa | \
+	head -1 | \
+	sed 's/value=/\n/g' | \
+	sed 's/<.*//' | \
+	cut -d\' -f2 | \
+	sed '/^$$/d' > $@
+
+cards/magicdraftsim-rating: cards/magicdraftsim-sets
 	for i in `cat $^`; do \
 	curl http://www.magicdraftsim.com/card-ratings/$$i | \
 	pandoc -f html -t plain | \
