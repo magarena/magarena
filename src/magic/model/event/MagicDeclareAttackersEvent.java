@@ -9,13 +9,15 @@ import magic.model.choice.MagicDeclareAttackersResult;
 public class MagicDeclareAttackersEvent extends MagicEvent {
 	
 	private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-		
 		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-
-			final MagicPlayer player=(MagicPlayer)data[0];
-			final MagicDeclareAttackersResult result=(MagicDeclareAttackersResult)choiceResults[0];
-			game.doAction(new MagicDeclareAttackersAction(result));
+		public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+			final MagicPlayer player = (MagicPlayer)data[0];
+			final MagicDeclareAttackersResult result = (MagicDeclareAttackersResult)choiceResults[0];
+			game.doAction(new MagicDeclareAttackersAction(player,result));
 			game.logAttackers(player,result);
 		}
 	};
