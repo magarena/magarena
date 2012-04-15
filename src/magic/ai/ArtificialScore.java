@@ -24,17 +24,17 @@ public class ArtificialScore {
         return score;
     }
 	
-	boolean isBetter(final ArtificialScore other,final boolean best) {
+	boolean isBetter(final ArtificialScore other,final boolean max) {
 		if (other==INVALID_SCORE) {
 			return false;
 		} else if (this==INVALID_SCORE) {
 			return true;
 		} else if (score==other.score) {
-			return depth<other.depth;
-		} else if (best) {
-			return score<other.score;
+			return other.depth < depth;
+		} else if (max) {
+			return other.score > score;
 		} else {
-			return score>other.score;
+			return other.score < score;
 		}
 	}
 	
