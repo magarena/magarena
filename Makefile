@@ -171,24 +171,21 @@ clean:
 jar: $(MAG)
 	$(JAVA) -jar $^
 
-%.g: $(MAG)
-	$(JAVA) -DrndSeed=$* magic.MagicMain |& tee $*.log
-
 inf: $(MAG)
 	-while true; do make `date +%H%M%S`.t; done
-
-test: $(MAG)
-	-make `date +%H%M%S`.g
-
-%.speed: $(MAg)
-	$(JAVA) magic.DeckStrCal --deck1 release/decks/LSK_B.dec --deck2 release/decks/LSK_G.dec --ai1 $* --ai2 $* --games 100
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVAEA) -DrndSeed=$* -DselfMode -jar $^ >> $*.log 2>&1
 
+test: $(MAG)
+	-make `date +%H%M%S`.d
+
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
+
+%.speed: $(MAg)
+	$(JAVA) magic.DeckStrCal --deck1 release/decks/LSK_B.dec --deck2 release/decks/LSK_G.dec --ai1 $* --ai2 $* --games 100
 
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@ 
