@@ -1,4 +1,5 @@
 #!/bin/sh
-base="${0%/*}"
-cd "$base"; java -Xms256M -Xmx256M -jar Magarena.exe
-
+self=`readlink -en "$0"`
+base=`dirname "$self"`
+cd "$base"
+exec java -Xms256M -Xmx256M -jar Magarena.exe
