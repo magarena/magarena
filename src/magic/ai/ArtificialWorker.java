@@ -29,54 +29,22 @@ public class ArtificialWorker {
 	}
 	
 	private ArtificialScore runGame(final Object nextChoiceResults[],final ArtificialPruneScore pruneScore,int depth) {
-		if (depth>maxDepth) {
-			throw new MaximumExceededException();
+		game.startActions();
+		
+        if (nextChoiceResults!=null) {
+			game.executeNextEvent(nextChoiceResults);
 		}
 		
-		game.startActions();
-		if (nextChoiceResults!=null) {
-			game.executeNextEvent(nextChoiceResults);
+        if (depth>maxDepth) {
+            final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
+            game.undoActions();
+            gameCount++;
+            return aiScore;
 		}
 
 		// Play game until given end turn for all possible choices.
 		while (!game.isFinished()) {
-			
-			if (game.hasNextEvent()) {
-				final MagicEvent event=game.getNextEvent();
-				if (event.hasChoice()) {
-					final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
-					final int nrOfChoices=choiceResultsList.size();
-					if (nrOfChoices==0) {
-						// No choices, score is invalid.
-						game.undoActions();
-						return ArtificialScore.INVALID_SCORE;
-					} else if (nrOfChoices==1) {
-						depth++;
-						game.executeNextEvent(choiceResultsList.get(0));
-					} else {
-						final boolean best=game.getScorePlayer()==event.getPlayer();
-						depth+=nrOfChoices;
-						ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
-						ArtificialPruneScore newPruneScore=pruneScore;
-						for (final Object choiceResults[] : choiceResultsList) {
-
-							final ArtificialScore score=runGame(choiceResults,newPruneScore,depth);
-							if (bestScore.isBetter(score,best)) {
-								bestScore=score;
-								// Stop when best score can no longer become the best score at previous levels.
-								if (pruneScore.pruneScore(bestScore.getScore(),best)) {
-									break;
-								}
-								newPruneScore=newPruneScore.getPruneScore(bestScore.getScore(),best);
-							}
-						}
-						game.undoActions();
-						return bestScore;
-					}
-				} else {
-					game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
-				}
-			} else {
+			if (!game.hasNextEvent()) {
 				final MagicPhase phase=game.getPhase();
 				phase.executePhase(game);
 								
@@ -92,17 +60,55 @@ public class ArtificialWorker {
 					}
 					game.undoActions();
 					return bestScore;
-				}				
-			}
+				}
+                continue;
+            }
+        
+            final MagicEvent event=game.getNextEvent();
+
+            if (!event.hasChoice()) {
+                game.executeNextEvent(MagicEvent.NO_CHOICE_RESULTS);
+                continue;
+            }
+
+            final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
+            final int nrOfChoices=choiceResultsList.size();
+            
+            assert nrOfChoices > 0 : "nrOfChoices is 0";
+            depth+=nrOfChoices;
+            
+            if (nrOfChoices==1) {
+                game.executeNextEvent(choiceResultsList.get(0));
+                continue;
+            }
+            
+            final boolean best=game.getScorePlayer()==event.getPlayer();
+            ArtificialScore bestScore=ArtificialScore.INVALID_SCORE;
+            ArtificialPruneScore newPruneScore=pruneScore;
+            for (final Object choiceResults[] : choiceResultsList) {
+                final ArtificialScore score=runGame(choiceResults,newPruneScore,depth);
+                if (bestScore.isBetter(score,best)) {
+                    bestScore=score;
+                    // Stop when best score can no longer become the best score at previous levels.
+                    if (pruneScore.pruneScore(bestScore.getScore(),best)) {
+                        break;
+                    }
+                    newPruneScore=newPruneScore.getPruneScore(bestScore.getScore(),best);
+                }
+            }
+            game.undoActions();
+            return bestScore;
 		}
 
 		// Game is finished.
 		final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
 		game.undoActions();
 		gameCount++;
+        /*
 		if (gameCount>maxGames) {
 			throw new MaximumExceededException();
 		}
+        */
 		return aiScore;
 	}
 
