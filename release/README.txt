@@ -57,7 +57,6 @@ Thank you for your support and have fun!
 Release 1.25 (April 29, 2012)
 ============
 - fixed unreachable buttons on duel panel for smaller screens
-- mirror repository on github
 - fixed bug with exalted by making the declare attackers step follow the rules
   more closely
 - improved Linux launch script thanks to suggestion from pablo.castellazzi
