@@ -94,11 +94,14 @@ public class MMAB implements MagicAI {
         final int MAX_TIME_PER_CHOICE = MAX_TIME / achoices.size();
         int mainPhases = 1;
 
-		final ArtificialChoiceResults firstChoice = achoices.get(0).choiceResults[0] == MagicPlayChoiceResult.PASS ? 
+		final ArtificialChoiceResults firstChoice = achoices.get(0);
+        /*
+        .choiceResults[0] == MagicPlayChoiceResult.PASS ? 
             achoices.get(1) :
             achoices.get(0);
+        */
         
-        while (System.currentTimeMillis() - START_TIME < MAX_TIME_PER_CHOICE) {
+        while (System.currentTimeMillis() - START_TIME < MAX_TIME_PER_CHOICE / 5) {
 			pruneScore = createPruneScore();
 			processingLeft = 1;
 			startWorker(firstChoice,mainPhases,INITIAL_MAX_DEPTH,INITIAL_MAX_GAMES);
