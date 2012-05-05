@@ -1,0 +1,12 @@
+>Stone Rain
+url=http://magiccards.info/9e/en/221.html
+image=http://magiccards.info/scans/en/9e/221.jpg
+value=2
+removal=3
+rarity=C
+type=Sorcery
+color=r
+converted=3
+cost={2}{R}
+timing=removal
+requires_card_code
