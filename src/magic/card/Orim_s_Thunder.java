@@ -97,7 +97,7 @@ public class Orim_s_Thunder {
                             KICKED,
         	                source + " deals " + amount + " damage to target creature$."
                         );
-        				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(source,triggerEvent)));
+        				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
         			}
                 }
 			});

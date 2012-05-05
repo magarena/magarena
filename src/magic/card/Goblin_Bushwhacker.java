@@ -73,7 +73,7 @@ public class Goblin_Bushwhacker {
                         new Object[]{player},
                         KICKED,
 					    "Creatures you control get +1/+0 and gain haste until end of turn.");
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
 	};

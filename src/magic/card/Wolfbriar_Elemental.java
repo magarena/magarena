@@ -70,7 +70,7 @@ public class Wolfbriar_Elemental {
                         new Object[]{player,kickerCount},
                         KICKED,
                         "Put "+kickerCount+" 2/2 green Wolf creature tokens onto the battlefield.");
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
 	};

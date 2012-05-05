@@ -64,7 +64,7 @@ public class Lightkeeper_of_Emeria {
                     KICKED,
                     player + " gains " + life + " life."
                 );
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
 	};

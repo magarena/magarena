@@ -61,7 +61,7 @@ public class Infiltration_Lens {
 	                    DRAW,
 	                    player + " may draw two cards."
 	                );
-					game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+					game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
     };
@@ -93,7 +93,7 @@ public class Infiltration_Lens {
 	                    DRAW,
 	                    player + " may draw two cards."
 	                );
-					game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+					game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
         }
     };

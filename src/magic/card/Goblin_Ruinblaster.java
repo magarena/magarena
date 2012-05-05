@@ -69,7 +69,7 @@ public class Goblin_Ruinblaster {
                     KICKED,
                     "Destroy target nonbasic land$."
                 );
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
 	};

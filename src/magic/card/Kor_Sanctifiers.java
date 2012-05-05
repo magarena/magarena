@@ -72,7 +72,7 @@ public class Kor_Sanctifiers {
                     KICKED,
 	                "Destroy target artifact or enchantment$."
                 );
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
 	};

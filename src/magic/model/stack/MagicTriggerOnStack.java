@@ -2,15 +2,14 @@ package magic.model.stack;
 
 import magic.data.IconImages;
 import magic.model.MagicCopyMap;
-import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 
 import javax.swing.ImageIcon;
 
 public class MagicTriggerOnStack extends MagicItemOnStack {
-	public MagicTriggerOnStack(final MagicSource source,final MagicEvent event) {
-		setSource(source);
-		setController(source.getController());
+	public MagicTriggerOnStack(final MagicEvent event) {
+		setSource(event.getSource());
+		setController(event.getSource().getController());
 		setEvent(event);
 	}
 	

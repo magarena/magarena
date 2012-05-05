@@ -75,7 +75,7 @@ public class Gatekeeper_of_Malakir {
                     KICKED,
                     "Target player$ sacrifices a creature."
                 );
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
 	};

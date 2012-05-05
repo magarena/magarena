@@ -70,7 +70,7 @@ public class Kor_Aeronaut {
                     KICKED,
                     "Target creature$ gains flying until end of turn."
                 );
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(permanent,triggerEvent)));
+				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}
 	};

@@ -1158,7 +1158,7 @@ public class MagicGame {
 					event.executeEvent(this,MagicEvent.NO_CHOICE_RESULTS);
 				}				
 			} else if (trigger.usesStack()) {
-				doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(source,event)));
+				doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
 			} else {
 				addEvent(event);		
 			}
