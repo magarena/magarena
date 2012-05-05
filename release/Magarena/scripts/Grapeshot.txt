@@ -1,0 +1,13 @@
+>Grapeshot
+url=http://magiccards.info/ts/en/160.html
+image=http://magiccards.info/scans/en/ts/160.jpg
+value=1
+removal=1
+rarity=C
+type=Sorcery
+color=r
+converted=2
+cost={1}{R}
+timing=storm
+ability=storm
+requires_card_code
