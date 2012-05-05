@@ -37,6 +37,7 @@ public enum MagicTiming {
 	NextTurn("nextturn",9), 		// Second main
 	MustAttack("mustattack",8),		// First main opponent's turn
 	Spell("spell",9),               // When there is a spell on stack
+	Storm("storm",1),				// When a spell was played this turn, second main
 	
 	// No timing
 	None("none",0),				    // No restrictions.
@@ -137,6 +138,9 @@ public enum MagicTiming {
 			case MustAttack:
 				return game.getTurnPlayer()!=controller && 
                        game.isPhase(MagicPhaseType.FirstMain);
+			case Storm:
+				return game.getSpellsPlayed() > 0 ||
+						game.isPhase(MagicPhaseType.SecondMain);
 			default:
 				return true;
 		}
