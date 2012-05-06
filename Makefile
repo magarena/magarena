@@ -157,7 +157,7 @@ $(BUILD)/javac.last: $(SRC)
 tags: $(SRC) 
 	ctags -R src
 
-.Test%: $(MAG)
+Test/%: $(MAG)
 	$(JAVA) -DtestGame=Test$* -jar $^
 
 $(EXE): $(MAG)
