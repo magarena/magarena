@@ -5,7 +5,8 @@ public enum MagicPlayerState {
 	PreventAllDamage("prevent all damage that would be dealt to you or creatures you control this turn"),
 	PreventAllCombatDamage("prevent all combat damage that would be dealt this turn"),
 	Exhausted("creatures and lands don't untap during your next untap step"),
-	WasDealtDamage("")
+	WasDealtDamage(""),
+	CantCastSpells("can't cast spells this turn")
 	;
 
 	public static final int CLEANUP_MASK=Exhausted.getMask();

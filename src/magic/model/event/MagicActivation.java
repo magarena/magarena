@@ -7,6 +7,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -114,7 +115,9 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         }
         
         if (source instanceof MagicPermanent &&
-            ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities)) {
+            ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities)
+            ||
+            player.hasState(MagicPlayerState.CantCastSpells)) {
             return false;
         }
 		
