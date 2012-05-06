@@ -9,7 +9,6 @@ import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 
 public class The_Rack {

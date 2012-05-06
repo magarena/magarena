@@ -2,9 +2,7 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
 import magic.model.MagicPayedCost;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicMoveCardAction;
@@ -15,7 +13,6 @@ import magic.model.action.MagicBecomesCreatureAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
 
 public class Karn_s_Touch {
 

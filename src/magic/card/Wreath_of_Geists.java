@@ -3,12 +3,8 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.target.MagicPumpTargetPicker;
 import magic.model.target.MagicTargetFilter;
 
 public class Wreath_of_Geists {

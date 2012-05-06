@@ -6,11 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicPlayTokenAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.target.MagicNoCombatTargetPicker;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Druid_s_Call {

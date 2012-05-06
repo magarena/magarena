@@ -6,11 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.event.MagicSpellCardEvent;
-import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
