@@ -1,0 +1,13 @@
+>Shu Soldier-Farmers
+url=http://magiccards.info/p3k/en/27.html
+image=http://magiccards.info/scans/en/p3k/27.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=5
+cost={4}{W}
+pt=2/4
+ability=enters gain life 4
+timing=main

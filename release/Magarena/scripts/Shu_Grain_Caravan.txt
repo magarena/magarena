@@ -1,0 +1,13 @@
+>Shu Grain Caravan
+url=http://magiccards.info/p3k/en/26.html
+image=http://magiccards.info/scans/en/p3k/26.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=3
+cost={2}{W}
+pt=2/2
+ability=enters gain life 2
+timing=main
