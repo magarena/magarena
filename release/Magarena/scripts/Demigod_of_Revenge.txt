@@ -1,0 +1,14 @@
+>Demigod of Revenge
+url=http://magiccards.info/shm/en/183.html
+image=http://magiccards.info/scans/en/shm/183.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Spirit,Avatar
+color=br
+converted=5
+cost={B/R}{B/R}{B/R}{B/R}{B/R}
+pt=5/4
+ability=flying,haste
+timing=fmain
+requires_card_code
