@@ -114,10 +114,11 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             }
         }
         
-        if (source instanceof MagicPermanent &&
-            ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities)
+        if ((source instanceof MagicPermanent &&
+            ((MagicPermanent)source).hasState(MagicPermanentState.LosesAllAbilities))
             ||
-            player.hasState(MagicPlayerState.CantCastSpells)) {
+            (source.isSpell() &&
+            player.hasState(MagicPlayerState.CantCastSpells))) {
             return false;
         }
 		
