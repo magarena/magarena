@@ -1,0 +1,13 @@
+>Kingfisher
+url=http://magiccards.info/ud/en/36.html
+image=http://magiccards.info/scans/en/ud/36.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Bird
+color=u
+converted=4
+cost={3}{U}
+pt=2/2
+ability=flying,die draw card
+timing=main

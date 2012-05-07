@@ -1,0 +1,13 @@
+>Riptide Crab
+url=http://magiccards.info/in/en/266.html
+image=http://magiccards.info/scans/en/in/266.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Crab
+color=wu
+converted=3
+cost={1}{W}{U}
+pt=1/3
+ability=vigilance,die draw card
+timing=main
