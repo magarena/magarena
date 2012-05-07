@@ -1,0 +1,13 @@
+>Tireless Missionaries
+url=http://magiccards.info/m11/en/36.html
+image=http://magiccards.info/scans/en/m11/36.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=5
+cost={4}{W}
+pt=2/3
+ability=enters gain life 3
+timing=main
