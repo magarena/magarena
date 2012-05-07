@@ -1,0 +1,13 @@
+>Oculus
+url=http://magiccards.info/mbs/en/29.html
+image=http://magiccards.info/scans/en/mbs/29.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Homunculus
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+ability=die may draw card
+timing=main
