@@ -11,7 +11,7 @@ import magic.model.event.MagicEvent;
 
 public class MagicUndyingTrigger extends MagicWhenPutIntoGraveyardTrigger {
 
-	private static final MagicTrigger INSTANCE = new MagicUndyingTrigger();
+	private static final MagicUndyingTrigger INSTANCE = new MagicUndyingTrigger();
 
     private MagicUndyingTrigger() {}
 	
@@ -48,7 +48,7 @@ public class MagicUndyingTrigger extends MagicWhenPutIntoGraveyardTrigger {
 				MagicPlayCardAction.UNDYING));
 	}
 	
-	public static final MagicTrigger getInstance() {	
+	public static final MagicUndyingTrigger getInstance() {	
 		return INSTANCE;
 	}
 }

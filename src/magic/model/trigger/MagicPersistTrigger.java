@@ -11,7 +11,7 @@ import magic.model.event.MagicEvent;
 
 public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
 
-	private static final MagicTrigger INSTANCE=new MagicPersistTrigger();
+	private static final MagicPersistTrigger INSTANCE = new MagicPersistTrigger();
 
     private MagicPersistTrigger() {}
 	
@@ -32,8 +32,7 @@ public class MagicPersistTrigger extends MagicWhenPutIntoGraveyardTrigger {
 		game.doAction(new MagicReanimateAction(card.getOwner(),card,MagicPlayCardAction.PERSIST));
 	}
 	
-	public static final MagicTrigger getInstance() {
-		
+	public static final MagicPersistTrigger getInstance() {	
 		return INSTANCE;
 	}
 }
