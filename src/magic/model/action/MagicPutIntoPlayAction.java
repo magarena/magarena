@@ -33,7 +33,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         game.addCardStatics(permanent);
 	
         //execute come into play triggers
-		for (final MagicTrigger trigger : permanent.getCardDefinition().getComeIntoPlayTriggers()) {
+		for (final MagicTrigger<?> trigger : permanent.getCardDefinition().getComeIntoPlayTriggers()) {
 			game.executeTrigger(trigger,permanent,permanent,permanent.getController());
 		}
 

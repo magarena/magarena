@@ -83,11 +83,11 @@ public class MagicCardDefinition {
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
     private MagicActivation cardActivation;
 	private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
-	private final Collection<MagicTrigger> triggers=new ArrayList<MagicTrigger>();
+	private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
 	private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
-	private final Collection<MagicTrigger> comeIntoPlayTriggers=new ArrayList<MagicTrigger>();
-	private final Collection<MagicTrigger> spellIsCastTriggers=new ArrayList<MagicTrigger>();
-	private final Collection<MagicTrigger> putIntoGraveyardTriggers=new ArrayList<MagicTrigger>();
+	private final Collection<MagicTrigger<?>> comeIntoPlayTriggers = new ArrayList<MagicTrigger<?>>();
+	private final Collection<MagicTrigger<?>> spellIsCastTriggers = new ArrayList<MagicTrigger<?>>();
+	private final Collection<MagicTrigger<?>> putIntoGraveyardTriggers = new ArrayList<MagicTrigger<?>>();
 	private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
 	private boolean excludeManaOrCombat=false;
@@ -265,7 +265,7 @@ public class MagicCardDefinition {
             System.err.println("Adding mana activation to " + getFullName());
             numManaActivations++;
         } else if (obj instanceof MagicTrigger) {
-            final MagicTrigger mtrig = (MagicTrigger)obj;
+            final MagicTrigger<?> mtrig = (MagicTrigger<?>)obj;
             addTrigger(mtrig);
             mtrig.setCardIndex(index);
             System.err.println("Adding trigger to " + getFullName());
@@ -655,7 +655,7 @@ public class MagicCardDefinition {
 		return cardActivation;
 	}
 		
-	private void addTrigger(final MagicTrigger trigger) {
+	private void addTrigger(final MagicTrigger<?> trigger) {
 		switch (trigger.getType()) {
 			case WhenSpellIsCast:
 				spellIsCastTriggers.add(trigger);
@@ -676,7 +676,7 @@ public class MagicCardDefinition {
         statics.add(mstatic);
     }
 	
-	public Collection<MagicTrigger> getTriggers() {
+	public Collection<MagicTrigger<?>> getTriggers() {
 		return triggers;
 	}
 	
@@ -684,15 +684,15 @@ public class MagicCardDefinition {
 		return statics;
 	}
 	
-    public Collection<MagicTrigger> getSpellIsCastTriggers() {
+    public Collection<MagicTrigger<?>> getSpellIsCastTriggers() {
 		return spellIsCastTriggers;
 	}
     
-	public Collection<MagicTrigger> getComeIntoPlayTriggers() {
+	public Collection<MagicTrigger<?>> getComeIntoPlayTriggers() {
 		return comeIntoPlayTriggers;
 	}
 	
-	public Collection<MagicTrigger> getPutIntoGraveyardTriggers() {
+	public Collection<MagicTrigger<?>> getPutIntoGraveyardTriggers() {
 		return putIntoGraveyardTriggers;
 	}
 	

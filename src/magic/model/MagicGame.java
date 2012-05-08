@@ -1098,12 +1098,12 @@ public class MagicGame {
 	}
 	
 	public void addTriggers(final MagicPermanent permanent) {
-        for (final MagicTrigger trigger : permanent.getCardDefinition().getTriggers()) {
+        for (final MagicTrigger<?> trigger : permanent.getCardDefinition().getTriggers()) {
             addTrigger(permanent, trigger);
         }
 	}
 
-	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent, final MagicTrigger trigger) {
+	public MagicPermanentTrigger addTrigger(final MagicPermanent permanent, final MagicTrigger<?> trigger) {
         return addTrigger(new MagicPermanentTrigger(getUniqueId(),permanent,trigger));
 	}
 		
@@ -1112,7 +1112,7 @@ public class MagicGame {
         return permanentTrigger;
 	}
 
-	public MagicPermanentTrigger addTurnTrigger(final MagicPermanent permanent,final MagicTrigger trigger) {
+	public MagicPermanentTrigger addTurnTrigger(final MagicPermanent permanent,final MagicTrigger<?> trigger) {
 		final MagicPermanentTrigger permanentTrigger = addTrigger(permanent,trigger);
 		turnTriggers.add(permanentTrigger);
 		return permanentTrigger;

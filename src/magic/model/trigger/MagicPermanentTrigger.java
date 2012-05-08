@@ -7,9 +7,9 @@ public class MagicPermanentTrigger implements Comparable<MagicPermanentTrigger> 
 
 	private final long id;
 	private final MagicPermanent permanent;
-	private final MagicTrigger trigger;
+	private final MagicTrigger<?> trigger;
 	
-	public MagicPermanentTrigger(final long id,final MagicPermanent permanent,final MagicTrigger trigger) {
+	public MagicPermanentTrigger(final long id,final MagicPermanent permanent,final MagicTrigger<?> trigger) {
 		this.id=id;
 		this.permanent=permanent;
 		this.trigger=trigger;
@@ -29,7 +29,7 @@ public class MagicPermanentTrigger implements Comparable<MagicPermanentTrigger> 
 		return permanent;
 	}
 	
-	public MagicTrigger getTrigger() {
+	public MagicTrigger<?> getTrigger() {
 		return trigger;
 	}
 	

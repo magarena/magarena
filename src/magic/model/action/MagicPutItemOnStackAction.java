@@ -26,7 +26,7 @@ public class MagicPutItemOnStackAction extends MagicAction {
 		}
 		if (itemOnStack.isSpell()) {
 			// execute spell is cast triggers
-			for (final MagicTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
+			for (final MagicTrigger<?> trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
 				game.executeTrigger(trigger,MagicPermanent.NONE,itemOnStack.getSource(),(MagicCardOnStack)itemOnStack);
 			}
 			

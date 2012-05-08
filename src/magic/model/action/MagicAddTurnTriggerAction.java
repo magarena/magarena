@@ -8,10 +8,10 @@ import magic.model.trigger.MagicTrigger;
 public class MagicAddTurnTriggerAction extends MagicAction {
 
 	private final MagicPermanent permanent;
-	private final MagicTrigger trigger;
+	private final MagicTrigger<?> trigger;
 	private MagicPermanentTrigger permanentTrigger;
 	
-	public MagicAddTurnTriggerAction(final MagicPermanent permanent,final MagicTrigger trigger) {
+	public MagicAddTurnTriggerAction(final MagicPermanent permanent,final MagicTrigger<?> trigger) {
 		this.permanent=permanent;
 		this.trigger=trigger;
 	}
