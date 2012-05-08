@@ -1,0 +1,14 @@
+>Wingcrafter
+url=http://magiccards.info/avr/en/83.html
+image=http://magiccards.info/scans/en/avr/83.jpg 
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=1
+cost={U}
+pt=1/1
+ability=soulbond
+timing=main
+requires_card_code
