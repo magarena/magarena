@@ -1,9 +1,13 @@
 package magic.model.action;
 
 import magic.ai.ArtificialScoringSystem;
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicType;
+import magic.model.event.MagicSoulbondEvent;
+import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
@@ -35,6 +39,19 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
         //execute other come into player triggers
 		game.executeTrigger(MagicTriggerType.WhenOtherComesIntoPlay,permanent);
+		
+		// Soulbond
+		if (permanent.isCreature(game) && 
+			controller.getNrOfPermanentsWithType(MagicType.Creature,game) > 1) {
+			final boolean hasSoulbond = permanent.hasAbility(game,MagicAbility.Soulbond);
+			if ((hasSoulbond &&
+				game.filterTargets(controller,MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)
+				||
+				(!hasSoulbond &&
+				game.filterTargets(controller,MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE).size() > 0)) {
+				game.addEvent(new MagicSoulbondEvent(permanent,hasSoulbond));
+			}
+		}
 		
 		setScore(controller,permanent.getScore(game)+permanent.getStaticScore(game)+score);
 		

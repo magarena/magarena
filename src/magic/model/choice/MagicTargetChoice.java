@@ -346,6 +346,10 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice TARGET_GOBLIN_CARD_FROM_HAND =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_GOBLIN_CARD_FROM_HAND,false,MagicTargetHint.None,
 			"a Goblin permanent card from your hand");
+	
+	public static final MagicTargetChoice TARGET_UNPAIRED_SOULBOND_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE,false,MagicTargetHint.None,
+			"an unpaired Soulbond creature");
 		
 	private final String targetDescription;
 	private final MagicTargetFilter targetFilter;

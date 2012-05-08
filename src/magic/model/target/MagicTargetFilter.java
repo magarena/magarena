@@ -1769,6 +1769,29 @@ public interface MagicTargetFilter {
 		}						
 	};
 	
+	MagicTargetFilter TARGET_UNPAIRED_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player && 
+                   ((MagicPermanent)target).isCreature(game) &&
+                   !((MagicPermanent)target).isPaired();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
+	MagicTargetFilter TARGET_UNPAIRED_SOULBOND_CREATURE = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.getController() == player && 
+                   ((MagicPermanent)target).isCreature(game) && 
+                   ((MagicPermanent)target).hasAbility(game,MagicAbility.Soulbond) &&
+                   !((MagicPermanent)target).isPaired();
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	// Permanent reference can not be used because game is copied.
 	public static final class MagicOtherPermanentTargetFilter implements MagicTargetFilter {
 
