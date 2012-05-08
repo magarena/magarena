@@ -13,11 +13,11 @@ import magic.model.target.MagicTargetPicker;
 public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 	
 	private final MagicTargetChoice targetChoice;
-	private final MagicTargetPicker targetPicker;
+	private final MagicTargetPicker<?> targetPicker;
 	
     private MagicPlayAuraEvent(
             final MagicTargetChoice targetChoice,
-            final MagicTargetPicker targetPicker) {
+            final MagicTargetPicker<?> targetPicker) {
 		this.targetChoice=targetChoice;
 		this.targetPicker=targetPicker;
 	}
@@ -57,7 +57,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 
     public static MagicPlayAuraEvent create(String script) {
         String[] token = script.split(",");
-        final MagicTargetPicker targetPicker = MagicTargetPicker.build(token[0]); 
+        final MagicTargetPicker<?> targetPicker = MagicTargetPicker.build(token[0]); 
         final MagicTargetChoice targetChoice = MagicTargetChoice.build(token[1]);
         assert targetPicker != null : "targetPicker is null";
         assert targetChoice != null : "targetChoice is null";
