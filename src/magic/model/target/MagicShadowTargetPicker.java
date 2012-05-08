@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 
 public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE = new MagicShadowTargetPicker();
+	private static final MagicShadowTargetPicker INSTANCE = new MagicShadowTargetPicker();
 	
 	private MagicShadowTargetPicker() {
 	}
@@ -46,7 +46,7 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		return 10 + permanent.getPower(game);
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicShadowTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

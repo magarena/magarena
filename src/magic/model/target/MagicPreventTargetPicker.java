@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 /** Creature permanent or player. */
 public class MagicPreventTargetPicker extends MagicTargetPicker<MagicTarget> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicPreventTargetPicker();
+	private static final MagicPreventTargetPicker INSTANCE = new MagicPreventTargetPicker();
 	
 	private MagicPreventTargetPicker() {}
 
@@ -20,7 +20,7 @@ public class MagicPreventTargetPicker extends MagicTargetPicker<MagicTarget> {
 		return 10-permanent.getToughness(game)+permanent.getDamage()-permanent.getPreventDamage();
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicPreventTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

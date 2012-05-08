@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 
 public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE = new MagicDeathtouchTargetPicker();
+	private static final MagicDeathtouchTargetPicker INSTANCE = new MagicDeathtouchTargetPicker();
 	
 	private static final int BLOCKED = 4<<8;
 	private static final int BLOCKING = 3<<8;
@@ -48,7 +48,7 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
 		return permanent.getPower(game) + score;
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicDeathtouchTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

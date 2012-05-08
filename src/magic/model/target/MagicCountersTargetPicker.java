@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 
 public class MagicCountersTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicCountersTargetPicker();
+	private static final MagicCountersTargetPicker INSTANCE = new MagicCountersTargetPicker();
 	
 	private MagicCountersTargetPicker() {}
 	
@@ -21,7 +21,7 @@ public class MagicCountersTargetPicker extends MagicTargetPicker<MagicPermanent>
 		return permanent.getController()==player?-score:score;
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicCountersTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

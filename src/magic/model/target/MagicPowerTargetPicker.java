@@ -6,7 +6,7 @@ import magic.model.MagicPlayer;
 
 public class MagicPowerTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicPowerTargetPicker();
+	private static final MagicPowerTargetPicker INSTANCE = new MagicPowerTargetPicker();
 	
 	private MagicPowerTargetPicker() {}
 	
@@ -15,7 +15,7 @@ public class MagicPowerTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		return permanent.getPower(game);
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicPowerTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 
 public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicRegenerateTargetPicker();
+	private static final MagicRegenerateTargetPicker INSTANCE = new MagicRegenerateTargetPicker();
 	
 	private MagicRegenerateTargetPicker() {}
 	
@@ -23,7 +23,7 @@ public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanen
 		return 0;
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicRegenerateTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

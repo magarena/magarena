@@ -8,7 +8,7 @@ import magic.model.stack.MagicCardOnStack;
 /** Creatures or spells from both players. */
 public class MagicBounceTargetPicker extends MagicTargetPicker<MagicTarget> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicBounceTargetPicker();
+	private static final MagicBounceTargetPicker INSTANCE = new MagicBounceTargetPicker();
 	
 	private MagicBounceTargetPicker() {}
 	
@@ -29,7 +29,7 @@ public class MagicBounceTargetPicker extends MagicTargetPicker<MagicTarget> {
         }
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicBounceTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

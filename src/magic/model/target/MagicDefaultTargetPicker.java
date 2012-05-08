@@ -7,7 +7,7 @@ import java.util.Collection;
 
 public class MagicDefaultTargetPicker extends MagicTargetPicker<MagicTarget> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicDefaultTargetPicker();
+	private static final MagicDefaultTargetPicker INSTANCE = new MagicDefaultTargetPicker();
 	
 	private MagicDefaultTargetPicker() {}
 	
@@ -24,7 +24,7 @@ public class MagicDefaultTargetPicker extends MagicTargetPicker<MagicTarget> {
 		return options;
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicDefaultTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }

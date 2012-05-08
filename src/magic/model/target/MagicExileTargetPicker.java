@@ -6,7 +6,7 @@ import magic.model.MagicPlayer;
 
 public class MagicExileTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicTargetPicker INSTANCE=new MagicExileTargetPicker();
+	private static final MagicExileTargetPicker INSTANCE = new MagicExileTargetPicker();
 	
 	private MagicExileTargetPicker() {}
 	
@@ -16,7 +16,7 @@ public class MagicExileTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		return permanent.getController()==player?-score:score;
 	}
 	
-	public static MagicTargetPicker getInstance() {
+	public static MagicExileTargetPicker getInstance() {
 		return INSTANCE;
 	}
 }
