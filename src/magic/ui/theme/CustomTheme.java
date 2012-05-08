@@ -22,7 +22,6 @@ public class CustomTheme extends AbstractTheme {
 	
 	private final File file;
 	private ZipFile zipFile=null;
-	private final boolean loaded=false;
     private final PlayerAvatar[] playerAvatars;	
 	private int nrOfAvatars=0;
 	
@@ -112,10 +111,6 @@ public class CustomTheme extends AbstractTheme {
 	
 	@Override
 	public void load() {
-		if (loaded) {
-			return;
-		}
-		
         if (file.isFile()) {
             try { //create zip file
                 zipFile=new ZipFile(file);
