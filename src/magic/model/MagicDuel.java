@@ -219,7 +219,7 @@ public class MagicDuel {
 	public void buildDeck(MagicPlayerDefinition player) {
 		final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(configuration.getCube());
         final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
-        if(player.getDeckGenerator() == null && player.getProfile().getNrOfColors() == 0) {
+        if (player.getDeckGenerator() == null) {
         	DeckUtils.loadRandomDeck(player);
         } else {
         	player.generateDeck(generator);
