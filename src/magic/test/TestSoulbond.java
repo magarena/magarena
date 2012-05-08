@@ -11,7 +11,7 @@ import magic.model.phase.MagicMainPhase;
 
 // The two creatures become unpaired if either of them leaves the battlefield,
 // is no longer under your control, or stops being a creature.
-class TestTest extends TestGameBuilder {    
+class TestSoulbond extends TestGameBuilder {    
 
     public MagicGame getGame() {
 		final MagicDuel duel=new MagicDuel();
