@@ -27,7 +27,7 @@ public class MagicKickerChoice extends MagicChoice {
 	private final boolean replicate;
 	
     public MagicKickerChoice(final MagicManaCost cost,final boolean multi) {
-		super("Choose to many times to pay the kicker cost.");
+		super("Choose how many times to pay the kicker cost.");
 		this.otherChoice=MagicChoice.NONE;
 		this.cost=cost;
 		this.multi=multi;
@@ -35,7 +35,7 @@ public class MagicKickerChoice extends MagicChoice {
 	}
 	
 	public MagicKickerChoice(final MagicChoice otherChoice,final MagicManaCost cost,final boolean multi) {
-		super("Choose to many times to pay the kicker cost.");
+		super("Choose how many times to pay the kicker cost.");
 		this.otherChoice=otherChoice;
 		this.cost=cost;
 		this.multi=multi;
@@ -43,7 +43,7 @@ public class MagicKickerChoice extends MagicChoice {
 	}
 	
 	public MagicKickerChoice(final MagicManaCost cost,final boolean multi,final boolean replicate) {
-		super("Choose to many times to pay the kicker cost.");
+		super("Choose how many times to pay the kicker cost.");
 		this.otherChoice=MagicChoice.NONE;
 		this.cost=cost;
 		this.multi=multi;
