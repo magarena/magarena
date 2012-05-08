@@ -58,6 +58,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final MagicPermanentSet auraPermanents;	
 	private MagicPermanent blockedCreature = MagicPermanent.NONE;
     private final MagicPermanentList blockingCreatures;	
+    private MagicPermanent pairedCreature = MagicPermanent.NONE;
     private MagicCardList exiledCards;
     private MagicTarget chosenTarget;
 	private int counters[]=new int[MagicCounterType.NR_COUNTERS];
@@ -124,6 +125,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 		auraPermanents=new MagicPermanentSet(copyMap,sourcePermanent.auraPermanents);
 		blockedCreature=copyMap.copy(sourcePermanent.blockedCreature);
 		blockingCreatures=new MagicPermanentList(copyMap,sourcePermanent.blockingCreatures);
+		pairedCreature = copyMap.copy(sourcePermanent.pairedCreature);
 		exiledCards = new MagicCardList(copyMap,sourcePermanent.exiledCards);
 		chosenTarget = copyMap.copy(sourcePermanent.chosenTarget);
 		damage=sourcePermanent.damage;
@@ -591,6 +593,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 	
 	public void removeBlockingCreatures() {
 		blockingCreatures.clear();
+	}
+	
+	public MagicPermanent getPairedCreature() {
+		return pairedCreature;
+	}
+	
+	public void setPairedCreature(final MagicPermanent creature) {
+		pairedCreature = creature;
+	}
+	
+	public boolean isPaired() {
+		return pairedCreature != MagicPermanent.NONE;
 	}
 	
 	public MagicCardList getExiledCards() {
