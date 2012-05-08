@@ -86,7 +86,8 @@ public enum MagicAbility {
 	Intimidate("intimidate",45),
 	Infect("infect",35),
 	Undying("undying",60),
-    // 60 keyword ability
+	Soulbond("soulbond",30),
+    // 61 keyword ability
     
 	Modular("modular", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
