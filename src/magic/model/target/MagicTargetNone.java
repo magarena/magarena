@@ -1,7 +1,6 @@
 package magic.model.target;
 
 import magic.model.MagicCopyMap;
-import magic.model.MagicCopyable;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;

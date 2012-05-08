@@ -1,9 +1,6 @@
 package magic.model.event;
 
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;

@@ -1,20 +1,15 @@
 package magic.model.condition;
 
-import java.util.Collection;
-
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.phase.MagicPhaseType;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetFilter;
 
 public interface MagicCondition {
     
