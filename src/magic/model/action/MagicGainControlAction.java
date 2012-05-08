@@ -32,6 +32,9 @@ public class MagicGainControlAction extends MagicAction {
 			permanent.setController(player);
 			player.addPermanent(permanent);
 			permanent.setState(MagicPermanentState.Summoned);
+			if (permanent.getPairedCreature().isValid()) {;
+				game.doAction(new MagicSoulbondAction(permanent,permanent.getPairedCreature(),false));
+			}
 			score += permanent.getScore(game);
 			setScore(player, score);
 			game.setStateCheckRequired();

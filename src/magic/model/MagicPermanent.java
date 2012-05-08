@@ -10,6 +10,7 @@ import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicGainControlAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
+import magic.model.action.MagicSoulbondAction;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.target.MagicTarget;
@@ -641,6 +642,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 				actions.add(new MagicDestroyAction(this));
 			} else if (toughness-damage<=0) {
 				actions.add(new MagicDestroyAction(this));
+			}
+			
+			// Soulbond
+			if (pairedCreature.isValid() &&
+				!pairedCreature.isCreature(game)) {
+				game.doAction(new MagicSoulbondAction(this,pairedCreature,false));
 			}
 		} 
 				

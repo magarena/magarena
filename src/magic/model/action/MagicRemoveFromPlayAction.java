@@ -60,6 +60,11 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
 			aura.setEnchantedCreature(MagicPermanent.NONE);
 		}
+		
+		// Soulbond
+		if (permanent.getPairedCreature().isValid()) {
+			game.doAction(new MagicSoulbondAction(permanent,permanent.getPairedCreature(),false));
+		}
 
 		game.doAction(new MagicRemoveFromCombatAction(permanent));
 
