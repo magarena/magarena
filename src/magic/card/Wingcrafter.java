@@ -8,7 +8,7 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
 public class Wingcrafter {
-    public static final MagicStatic S1 = new MagicStatic(
+    public static final MagicStatic S = new MagicStatic(
         MagicLayer.Ability, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
@@ -23,20 +23,8 @@ public class Wingcrafter {
 				final MagicGame game,
 				final MagicPermanent source,
 				final MagicPermanent target) {
-        	return source.getPairedCreature() == target;
+        	return source.getPairedCreature() == target ||
+        			(source == target && source.isPaired());
         }
     };
-    
-	public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
-        @Override
-		public long getAbilityFlags(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final long flags) {
-        	if (permanent.isPaired()) {
-        		return flags | MagicAbility.Flying.getMask();
-        	}
-        	return flags;
-        }
-	};
 }
