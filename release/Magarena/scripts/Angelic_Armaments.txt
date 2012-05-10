@@ -1,0 +1,15 @@
+>Angelic Armaments
+url=http://magiccards.info/avr/en/212.html
+image=http://magiccards.info/scans/en/avr/212.jpg
+value=3
+rarity=U
+type=Artifact
+subtype=Equipment
+converted=3
+cost={3}
+equip={4}
+given_pt=2/2
+given_ability=flying
+given_subtype=Angel
+given_color=w
+timing=equipment

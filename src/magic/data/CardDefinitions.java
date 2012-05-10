@@ -105,6 +105,11 @@ public class CardDefinitions {
                 throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_subtype");
             }
             card.add(MagicStatic.genSTStatic(MagicSubType.getSubTypes(value.split(","))));
+		} else if ("given_color".equals(property)) {
+            if (!card.isEquipment() && !card.isAura()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_subtype");
+            }
+            card.add(MagicStatic.genCOStatic(MagicColor.getFlags(value)));
 		} else if ("static".equals(property)) {
 			card.setStaticType(MagicStaticType.getStaticTypeFor(value));
 		} else if ("timing".equals(property)) {

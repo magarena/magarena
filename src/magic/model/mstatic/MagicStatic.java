@@ -126,4 +126,21 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
             }
         };
 	}
+    
+    public static MagicStatic genCOStatic(final int givenColorFlags) {
+        return new MagicStatic(MagicLayer.Color) {
+            @Override
+			public int getColorFlags(
+				final MagicPermanent permanent,
+				final int flags) {
+        		return flags | givenColorFlags;
+        	}
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return (source.isEquipment()) ? 
+                    source.getEquippedCreature() == target :
+                    source.getEnchantedCreature() == target;
+            }
+        };
+	}
 }
