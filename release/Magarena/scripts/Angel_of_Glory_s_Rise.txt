@@ -1,0 +1,15 @@
+>Angel of Glory's Rise
+url=http://magiccards.info/avr/en/1.html
+image=http://magiccards.info/scans/en/avr/1.jpg
+value=5
+removal=2
+rarity=R
+type=Creature
+subtype=Angel
+color=w
+converted=7
+cost={5}{W}{W}
+pt=4/6
+ability=flying
+timing=main
+requires_card_code
