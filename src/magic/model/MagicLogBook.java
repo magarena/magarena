@@ -10,7 +10,8 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
 
     @Override
     public boolean add(final MagicMessage msg) {
-    	MagicGameLog.log("LOG: " + msg.getText());
+    	final String player = msg.getPlayer().getIndex() == 0 ? "P" : "C";
+    	MagicGameLog.log("LOG (" + player + "): " + msg.getText());
         if (System.getProperty("debug") != null) {
             System.err.println("LOG: " + msg.getText());
         }
