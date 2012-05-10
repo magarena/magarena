@@ -1,0 +1,12 @@
+>Aggravate
+url=http://magiccards.info/avr/en/125.html
+image=http://magiccards.info/scans/en/avr/125.jpg
+value=4
+removal=2
+rarity=U
+type=Instant
+color=r
+converted=5
+cost={3}{R}{R}
+timing=removal
+requires_card_code

@@ -1,0 +1,13 @@
+>Alchemist's Apprentice
+url=http://magiccards.info/avr/en/42.html
+image=http://magiccards.info/scans/en/avr/42.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=2
+cost={1}{U}
+pt=1/1
+timing=main
+requires_card_code
