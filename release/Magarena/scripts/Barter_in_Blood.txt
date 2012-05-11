@@ -1,0 +1,12 @@
+>Barter in Blood
+url=http://magiccards.info/avr/en/85.html
+image=http://magiccards.info/scans/en/avr/85.jpg
+value=3
+removal=4
+rarity=U
+type=Sorcery
+color=b
+converted=4
+cost={2}{B}{B}
+timing=removal
+requires_card_code
