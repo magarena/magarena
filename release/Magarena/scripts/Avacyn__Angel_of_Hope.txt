@@ -1,0 +1,15 @@
+>Avacyn, Angel of Hope
+url=http://magiccards.info/avr/en/6.html
+image=http://magiccards.info/scans/en/avr/6.jpg
+value=5
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+color=w
+converted=8
+cost={5}{W}{W}{W}
+pt=8/8
+ability=flying,vigilance
+static=player
+timing=fmain
+requires_card_code
