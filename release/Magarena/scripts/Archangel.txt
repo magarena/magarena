@@ -1,0 +1,13 @@
+>Archangel
+url=http://magiccards.info/avr/en/5.html
+image=http://magiccards.info/scans/en/avr/5.jpg
+value=5
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=7
+cost={5}{W}{W}
+pt=5/5
+ability=flying,vigilance
+timing=main
