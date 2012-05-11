@@ -1,0 +1,13 @@
+>Bladed Bracers
+url=http://magiccards.info/avr/en/213.html
+image=http://magiccards.info/scans/en/avr/213.jpg
+value=3
+rarity=C
+type=Artifact
+subtype=Equipment
+converted=1
+cost={1}
+equip={2}
+given_pt=1/1
+timing=equipment
+requires_card_code
