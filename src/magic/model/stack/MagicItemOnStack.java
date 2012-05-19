@@ -2,6 +2,7 @@ package magic.model.stack;
 
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
@@ -52,6 +53,11 @@ public abstract class MagicItemOnStack implements MagicTarget {
 	@Override
 	public MagicPlayer getController() {
 		return controller;
+	}
+	
+	@Override
+    public MagicCardDefinition getCardDefinition() {
+		return getSource().getCardDefinition();
 	}
 	
 	void setActivation(final MagicActivation activation) {

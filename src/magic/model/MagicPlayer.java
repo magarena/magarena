@@ -444,6 +444,11 @@ public class MagicPlayer implements MagicTarget {
 		return false;		
 	}
 	
+    @Override
+	public MagicCardDefinition getCardDefinition() {
+        throw new RuntimeException("player has no card definition"); 
+	}
+	
 	@Override
 	public String getName() {
 		return playerDefinition.getName();

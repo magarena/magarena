@@ -3,6 +3,7 @@ package magic.model.target;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicSource;
 
 public class MagicTargetNone implements MagicTarget {
@@ -63,7 +64,12 @@ public class MagicTargetNone implements MagicTarget {
 
 	@Override
 	public MagicPlayer getController() {
-        throw new RuntimeException("getting controller of MagicTargetNone");
+        throw new RuntimeException("MagicTargetNone has no controller");
+	}
+	
+    @Override
+	public MagicCardDefinition getCardDefinition() {
+        throw new RuntimeException("MagicTargetNone has no card definition");
 	}
 	
 	public static final MagicTarget getInstance() {

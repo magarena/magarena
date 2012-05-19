@@ -229,13 +229,11 @@ public interface MagicTargetFilter {
 	MagicTargetFilter TARGET_NONLAND_PERMANENT=new MagicTargetFilter() {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			
 			final MagicPermanent targetPermanent=(MagicPermanent)target;
 			return !targetPermanent.isLand();
 		}
 
 		public boolean acceptType(final MagicTargetType targetType) {
-			
 			return targetType==MagicTargetType.Permanent;
 		}
 	};
@@ -1861,7 +1859,7 @@ public interface MagicTargetFilter {
 		
 		@Override
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
-			final MagicCardDefinition cDef = ((MagicCard)target).getCardDefinition();
+			final MagicCardDefinition cDef = target.getCardDefinition();
 			boolean accept = false;
 			switch (operator) {
 			case LESS_THAN:

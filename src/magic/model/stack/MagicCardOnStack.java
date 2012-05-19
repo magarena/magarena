@@ -59,10 +59,6 @@ public class MagicCardOnStack extends MagicItemOnStack {
 		return (MagicCard)getSource();
 	}
 	
-	public MagicCardDefinition getCardDefinition() {
-		return getCard().getCardDefinition();
-	}
-
 	public void setMoveLocation(final MagicLocationType moveLocation) {
 		this.moveLocation=moveLocation;
 	}
