@@ -1,3 +1,5 @@
+#!/usr/bin/awk -f
+
 # read a list of decks in chronological order and produce a score for each card that appears
 
 # skip comments
