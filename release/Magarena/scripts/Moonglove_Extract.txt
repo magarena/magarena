@@ -1,4 +1,4 @@
->Moonglove Extract
+name=Moonglove Extract
 url=http://magiccards.info/ddf/en/67.html
 image=http://magiccards.info/scans/en/evg/24.jpg
 value=3

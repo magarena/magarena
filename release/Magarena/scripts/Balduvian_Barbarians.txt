@@ -1,4 +1,4 @@
->Balduvian Barbarians
+name=Balduvian Barbarians
 url=http://magiccards.info/9e/en/174.html
 image=http://magiccards.info/scans/en/9e/174.jpg 
 value=3

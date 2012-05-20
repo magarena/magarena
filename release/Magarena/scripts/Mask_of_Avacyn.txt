@@ -1,4 +1,4 @@
->Mask of Avacyn
+name=Mask of Avacyn
 url=http://magiccards.info/isd/en/229.html
 image=http://magiccards.info/scans/en/isd/229.jpg
 value=3

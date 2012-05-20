@@ -1,4 +1,4 @@
->Shivan Hellkite
+name=Shivan Hellkite
 url=http://magiccards.info/ddg/en/60.html
 image=http://magiccards.info/scans/en/10e/231.jpg
 value=5

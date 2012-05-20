@@ -1,4 +1,4 @@
->Cavern Thoctar
+name=Cavern Thoctar
 url=http://magiccards.info/ala/en/125.html
 image=http://magiccards.info/scans/en/ala/125.jpg
 value=4

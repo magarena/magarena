@@ -1,4 +1,4 @@
->Soltari Lancer
+name=Soltari Lancer
 url=http://magiccards.info/tp/en/256.html
 image=http://magiccards.info/scans/en/tp/256.jpg
 value=3

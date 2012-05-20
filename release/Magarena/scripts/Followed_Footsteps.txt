@@ -1,4 +1,4 @@
->Followed Footsteps
+name=Followed Footsteps
 url=http://magiccards.info/rav/en/51.html
 image=http://magiccards.info/scans/en/rav/51.jpg
 value=4

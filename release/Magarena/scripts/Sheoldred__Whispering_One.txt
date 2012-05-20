@@ -1,4 +1,4 @@
->Sheoldred, Whispering One
+name=Sheoldred, Whispering One
 url=http://magiccards.info/nph/en/73.html
 image=http://magiccards.info/scans/en/nph/73.jpg
 value=5

@@ -1,4 +1,4 @@
->Marrow Chomper
+name=Marrow Chomper
 url=http://magiccards.info/arb/en/93.html
 image=http://magiccards.info/scans/en/arb/93.jpg
 value=3

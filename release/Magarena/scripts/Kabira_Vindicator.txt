@@ -1,4 +1,4 @@
->Kabira Vindicator
+name=Kabira Vindicator
 url=http://magiccards.info/roe/en/28.html
 image=http://magiccards.info/scans/en/roe/28.jpg
 value=3

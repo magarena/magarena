@@ -1,4 +1,4 @@
->Crescendo of War
+name=Crescendo of War
 url=http://magiccards.info/cmd/en/12.html
 image=http://magiccards.info/scans/en/cmd/12.jpg
 value=3

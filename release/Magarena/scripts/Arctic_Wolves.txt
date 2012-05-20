@@ -1,4 +1,4 @@
->Arctic Wolves
+name=Arctic Wolves
 url=http://magiccards.info/wl/en/60.html
 image=http://magiccards.info/scans/en/wl/60.jpg
 value=4

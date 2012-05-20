@@ -1,4 +1,4 @@
->Nezumi Cutthroat
+name=Nezumi Cutthroat
 url=http://magiccards.info/chk/en/128.html
 image=http://magiccards.info/scans/en/chk/128.jpg 
 value=2

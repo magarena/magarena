@@ -1,4 +1,4 @@
->Duskworker
+name=Duskworker
 url=http://magiccards.info/mi/en/166.html
 image=http://magiccards.info/scans/en/mi/166.jpg
 value=3

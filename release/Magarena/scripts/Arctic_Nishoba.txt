@@ -1,4 +1,4 @@
->Arctic Nishoba
+name=Arctic Nishoba
 url=http://magiccards.info/cs/en/102.html
 image=http://magiccards.info/scans/en/cs/102.jpg
 value=5

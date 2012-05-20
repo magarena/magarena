@@ -1,4 +1,4 @@
->Molimo, Maro-Sorcerer
+name=Molimo, Maro-Sorcerer
 url=http://magiccards.info/dpa/en/74.html
 image=http://magiccards.info/scans/en/10e/280.jpg
 value=5

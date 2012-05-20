@@ -1,4 +1,4 @@
->Orchard Spirit
+name=Orchard Spirit
 url=http://magiccards.info/isd/en/198.html
 image=http://magiccards.info/scans/en/isd/198.jpg
 value=2

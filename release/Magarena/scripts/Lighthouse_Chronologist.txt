@@ -1,4 +1,4 @@
->Lighthouse Chronologist
+name=Lighthouse Chronologist
 url=http://magiccards.info/roe/en/75.html
 image=http://magiccards.info/scans/en/roe/75.jpg
 value=2

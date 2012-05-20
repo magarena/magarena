@@ -1,4 +1,4 @@
->Elder of Laurels
+name=Elder of Laurels
 url=http://magiccards.info/isd/en/177.html
 image=http://magiccards.info/scans/en/isd/177.jpg
 value=3

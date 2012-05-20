@@ -1,4 +1,4 @@
->Sanguine Bond
+name=Sanguine Bond
 url=http://magiccards.info/m10/en/111.html
 image=http://magiccards.info/scans/en/m10/111.jpg
 value=4

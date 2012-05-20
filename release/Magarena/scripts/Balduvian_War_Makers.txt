@@ -1,4 +1,4 @@
->Balduvian War-Makers
+name=Balduvian War-Makers
 url=http://magiccards.info/ai/en/98.html
 image=http://magiccards.info/scans/en/ai/97.jpg
 value=3

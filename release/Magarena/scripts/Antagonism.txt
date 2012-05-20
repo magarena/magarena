@@ -1,4 +1,4 @@
->Antagonism
+name=Antagonism
 url=http://magiccards.info/us/en/173.html
 image=http://magiccards.info/scans/en/us/173.jpg
 value=3

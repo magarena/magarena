@@ -1,4 +1,4 @@
->Drowned
+name=Drowned
 url=http://magiccards.info/dk/en/23.html
 image=http://magiccards.info/scans/en/dk/23.jpg
 value=1

@@ -1,4 +1,4 @@
->Night's Whisper
+name=Night's Whisper
 url=http://magiccards.info/5dn/en/55.html
 image=http://magiccards.info/scans/en/5dn/55.jpg
 value=2

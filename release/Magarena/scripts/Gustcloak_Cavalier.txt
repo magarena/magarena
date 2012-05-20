@@ -1,4 +1,4 @@
->Gustcloak Cavalier
+name=Gustcloak Cavalier
 url=http://magiccards.info/ts/en/22.html
 image=http://magiccards.info/scans/en/ts/22.jpg
 value=3

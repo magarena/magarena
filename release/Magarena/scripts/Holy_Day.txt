@@ -1,4 +1,4 @@
->Holy Day
+name=Holy Day
 url=http://magiccards.info/10e/en/21.html
 image=http://magiccards.info/scans/en/10e/21.jpg
 value=2

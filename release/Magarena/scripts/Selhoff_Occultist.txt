@@ -1,4 +1,4 @@
->Selhoff Occultist
+name=Selhoff Occultist
 url=http://magiccards.info/isd/en/73.html
 image=http://magiccards.info/scans/en/isd/73.jpg
 value=2

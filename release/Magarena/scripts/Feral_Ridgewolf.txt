@@ -1,4 +1,4 @@
->Feral Ridgewolf
+name=Feral Ridgewolf
 url=http://magiccards.info/isd/en/142.html
 image=http://magiccards.info/scans/en/isd/142.jpg
 value=2

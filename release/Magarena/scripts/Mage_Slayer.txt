@@ -1,4 +1,4 @@
->Mage Slayer
+name=Mage Slayer
 url=http://magiccards.info/pch/en/91.html
 image=http://magiccards.info/scans/en/arb/57.jpg
 value=4

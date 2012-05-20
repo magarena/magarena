@@ -1,4 +1,4 @@
->Elder Cathar
+name=Elder Cathar
 url=http://magiccards.info/isd/en/12.html
 image=http://magiccards.info/scans/en/isd/12.jpg
 value=2

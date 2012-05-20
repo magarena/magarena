@@ -1,4 +1,4 @@
->Prickly Boggart
+name=Prickly Boggart
 url=http://magiccards.info/mt/en/74.html
 image=http://magiccards.info/scans/en/mt/74.jpg
 value=1

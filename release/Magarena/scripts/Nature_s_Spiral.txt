@@ -1,4 +1,4 @@
->Nature's Spiral
+name=Nature's Spiral
 url=http://magiccards.info/dpa/en/77.html
 image=http://magiccards.info/scans/en/dpa/77.jpg
 value=3

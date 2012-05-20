@@ -1,4 +1,4 @@
->Russet Wolves
+name=Russet Wolves
 url=http://magiccards.info/dka/en/102.html
 image=http://magiccards.info/scans/en/dka/102.jpg
 value=3

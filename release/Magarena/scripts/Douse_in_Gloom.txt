@@ -1,4 +1,4 @@
->Douse in Gloom
+name=Douse in Gloom
 url=http://magiccards.info/gp/en/49.html
 image=http://magiccards.info/scans/en/gp/49.jpg
 value=2

@@ -1,4 +1,4 @@
->Zodiac Monkey
+name=Zodiac Monkey
 url=http://magiccards.info/9e/en/285.html
 image=http://magiccards.info/scans/en/9e/285.jpg 
 value=1

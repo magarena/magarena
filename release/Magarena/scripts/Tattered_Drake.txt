@@ -1,4 +1,4 @@
->Tattered Drake
+name=Tattered Drake
 url=http://magiccards.info/rav/en/68.html
 image=http://magiccards.info/scans/en/rav/68.jpg
 value=3

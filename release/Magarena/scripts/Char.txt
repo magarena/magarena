@@ -1,4 +1,4 @@
->Char
+name=Char
 url=http://magiccards.info/15ann/en/1.html
 image=http://magiccards.info/scans/en/rav/117.jpg
 value=4

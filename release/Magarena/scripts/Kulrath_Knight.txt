@@ -1,4 +1,4 @@
->Kulrath Knight
+name=Kulrath Knight
 url=http://magiccards.info/shm/en/190.html
 image=http://magiccards.info/scans/en/shm/190.jpg
 value=4

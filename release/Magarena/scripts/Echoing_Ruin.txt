@@ -1,4 +1,4 @@
->Echoing Ruin
+name=Echoing Ruin
 url=http://magiccards.info/ds/en/59.html
 image=http://magiccards.info/scans/en/ds/59.jpg
 value=3

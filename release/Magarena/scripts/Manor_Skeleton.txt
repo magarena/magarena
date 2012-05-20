@@ -1,4 +1,4 @@
->Manor Skeleton
+name=Manor Skeleton
 url=http://magiccards.info/isd/en/106.html
 image=http://magiccards.info/scans/en/isd/106.jpg
 value=1

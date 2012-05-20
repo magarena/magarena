@@ -1,4 +1,4 @@
->Quietus Spike
+name=Quietus Spike
 url=http://magiccards.info/ala/en/217.html
 image=http://magiccards.info/scans/en/ala/217.jpg
 value=4

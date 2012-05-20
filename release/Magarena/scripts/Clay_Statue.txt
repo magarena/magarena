@@ -1,4 +1,4 @@
->Clay Statue
+name=Clay Statue
 url=http://magiccards.info/4e/en/323.html
 image=http://magiccards.info/scans/en/4e/323.jpg
 value=2

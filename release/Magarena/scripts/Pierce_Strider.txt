@@ -1,4 +1,4 @@
->Pierce Strider
+name=Pierce Strider
 url=http://magiccards.info/mbs/en/123.html
 image=http://magiccards.info/scans/en/mbs/123.jpg
 value=3

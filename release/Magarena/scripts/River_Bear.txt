@@ -1,4 +1,4 @@
->River Bear
+name=River Bear
 url=http://magiccards.info/9e/en/266.html
 image=http://magiccards.info/scans/en/9e/266.jpg 
 value=3

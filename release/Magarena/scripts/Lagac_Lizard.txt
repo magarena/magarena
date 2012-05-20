@@ -1,4 +1,4 @@
->Lagac Lizard
+name=Lagac Lizard
 url=http://magiccards.info/roe/en/154.html
 image=http://magiccards.info/scans/en/roe/154.jpg
 value=3

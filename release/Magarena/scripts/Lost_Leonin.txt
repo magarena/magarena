@@ -1,4 +1,4 @@
->Lost Leonin
+name=Lost Leonin
 url=http://magiccards.info/nph/en/13.html
 image=http://magiccards.info/scans/en/nph/13.jpg 
 value=1

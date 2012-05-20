@@ -1,4 +1,4 @@
->Flametongue Kavu
+name=Flametongue Kavu
 url=http://magiccards.info/cmd/en/123.html
 image=http://magiccards.info/scans/en/pch/54.jpg
 value=4

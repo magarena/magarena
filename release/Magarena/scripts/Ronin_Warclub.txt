@@ -1,4 +1,4 @@
->Ronin Warclub
+name=Ronin Warclub
 url=http://magiccards.info/bok/en/158.html
 image=http://magiccards.info/scans/en/bok/158.jpg
 value=3

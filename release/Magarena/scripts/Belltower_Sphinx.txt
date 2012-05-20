@@ -1,4 +1,4 @@
->Belltower Sphinx
+name=Belltower Sphinx
 url=http://magiccards.info/m12/en/46.html
 image=http://magiccards.info/scans/en/m12/46.jpg
 value=4

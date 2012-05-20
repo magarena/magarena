@@ -1,4 +1,4 @@
->Bonebreaker Giant
+name=Bonebreaker Giant
 url=http://magiccards.info/m12/en/123.html
 image=http://magiccards.info/scans/en/m12/123.jpg 
 value=4

@@ -1,4 +1,4 @@
->Wall of Stone
+name=Wall of Stone
 url=http://magiccards.info/8e/en/232.html
 image=http://magiccards.info/scans/en/8e/232.jpg 
 value=2

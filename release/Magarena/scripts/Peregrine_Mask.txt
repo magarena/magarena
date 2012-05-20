@@ -1,4 +1,4 @@
->Peregrine Mask
+name=Peregrine Mask
 url=http://magiccards.info/rav/en/268.html
 image=http://magiccards.info/scans/en/rav/268.jpg
 value=2

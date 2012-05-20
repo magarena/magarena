@@ -1,4 +1,4 @@
->Glass Golem
+name=Glass Golem
 url=http://magiccards.info/rav/en/261.html
 image=http://magiccards.info/scans/en/rav/261.jpg 
 value=3

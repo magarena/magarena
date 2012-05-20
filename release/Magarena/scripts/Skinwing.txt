@@ -1,4 +1,4 @@
->Skinwing
+name=Skinwing
 url=http://magiccards.info/mbs/en/133.html
 image=http://magiccards.info/scans/en/mbs/133.jpg
 value=3

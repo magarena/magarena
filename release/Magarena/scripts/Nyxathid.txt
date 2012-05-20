@@ -1,4 +1,4 @@
->Nyxathid
+name=Nyxathid
 url=http://magiccards.info/cfx/en/49.html
 image=http://magiccards.info/scans/en/cfx/49.jpg
 value=3

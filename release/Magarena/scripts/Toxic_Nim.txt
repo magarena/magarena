@@ -1,4 +1,4 @@
->Toxic Nim
+name=Toxic Nim
 url=http://magiccards.info/nph/en/75.html
 image=http://magiccards.info/scans/en/nph/75.jpg
 value=3

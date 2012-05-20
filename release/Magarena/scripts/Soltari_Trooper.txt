@@ -1,4 +1,4 @@
->Soltari Trooper
+name=Soltari Trooper
 url=http://magiccards.info/tp/en/259.html
 image=http://magiccards.info/scans/en/tp/259.jpg
 value=2

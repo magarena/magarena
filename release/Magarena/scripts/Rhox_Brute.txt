@@ -1,4 +1,4 @@
->Rhox Brute
+name=Rhox Brute
 url=http://magiccards.info/arb/en/59.html
 image=http://magiccards.info/scans/en/arb/59.jpg 
 value=4

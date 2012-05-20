@@ -1,4 +1,4 @@
->Clinging Mists
+name=Clinging Mists
 url=http://magiccards.info/dka/en/109.html
 image=http://magiccards.info/scans/en/dka/109.jpg
 value=3

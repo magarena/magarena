@@ -1,4 +1,4 @@
->Goblin Chieftain
+name=Goblin Chieftain
 url=http://magiccards.info/m12/en/138.html
 image=http://magiccards.info/scans/en/m11/141.jpg
 value=3

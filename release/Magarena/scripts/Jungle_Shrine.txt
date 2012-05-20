@@ -1,10 +1,10 @@
->Jungle Shrine
+name=Jungle Shrine
 url=http://magiccards.info/ddh/en/34.html
 image=http://magiccards.info/scans/en/ala/226.jpg
 value=4
 rarity=U
 type=Land
 mana=r3g3w3
-ability=tap add mana {R} or {G} or {W}
-ability=enters tapped
+ability=tap add mana {R} or {G} or {W},\
+        enters tapped
 timing=tapland

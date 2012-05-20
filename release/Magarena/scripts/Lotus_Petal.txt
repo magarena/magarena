@@ -1,4 +1,4 @@
->Lotus Petal
+name=Lotus Petal
 url=http://magiccards.info/fve/en/7.html
 image=http://magiccards.info/scans/en/fve/7.jpg
 value=3

@@ -1,4 +1,4 @@
->Rith, the Awakener
+name=Rith, the Awakener
 url=http://magiccards.info/pvc/en/48.html
 image=http://magiccards.info/scans/en/pvc/48.jpg
 value=5

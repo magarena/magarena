@@ -1,4 +1,4 @@
->Teeka's Dragon
+name=Teeka's Dragon
 url=http://magiccards.info/mr/en/285.html
 image=http://magiccards.info/scans/en/mr/285.jpg
 value=4

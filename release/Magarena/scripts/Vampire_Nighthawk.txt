@@ -1,4 +1,4 @@
->Vampire Nighthawk
+name=Vampire Nighthawk
 url=http://magiccards.info/cmd/en/106.html
 image=http://magiccards.info/scans/en/zen/116.jpg
 value=3

@@ -1,4 +1,4 @@
->Dragon
+name=Dragon
 token=Dragon4
 image=http://magiccards.info/extras/token/shards-of-alara/dragon.jpg
 value=4

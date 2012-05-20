@@ -1,10 +1,10 @@
->Copperline Gorge
+name=Copperline Gorge
 url=http://magiccards.info/som/en/225.html
 image=http://magiccards.info/scans/en/som/225.jpg
 value=4
 rarity=R
 type=Land
 mana=r3g3
-ability=tap add mana {R} or {G}
-ability=enters tapped unless two
+ability=tap add mana {R} or {G},\
+        enters tapped unless two
 timing=land

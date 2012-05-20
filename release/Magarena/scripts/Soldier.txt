@@ -1,4 +1,4 @@
->Soldier
+name=Soldier
 token=Soldier
 image=http://magiccards.info/extras/token/magic-2010/soldier.jpg
 value=1

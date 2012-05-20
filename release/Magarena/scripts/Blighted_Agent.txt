@@ -1,4 +1,4 @@
->Blighted Agent
+name=Blighted Agent
 url=http://magiccards.info/nph/en/29.html
 image=http://magiccards.info/scans/en/nph/29.jpg
 value=3

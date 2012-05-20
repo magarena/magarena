@@ -1,4 +1,4 @@
->Phyrexian Rager
+name=Phyrexian Rager
 url=http://magiccards.info/mbs/en/51.html
 image=http://magiccards.info/scans/en/mbs/51.jpg
 value=3

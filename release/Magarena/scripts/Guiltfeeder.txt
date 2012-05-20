@@ -1,4 +1,4 @@
->Guiltfeeder
+name=Guiltfeeder
 url=http://magiccards.info/ju/en/68.html
 image=http://magiccards.info/scans/en/ju/68.jpg
 value=3

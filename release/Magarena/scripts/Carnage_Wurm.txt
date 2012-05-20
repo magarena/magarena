@@ -1,4 +1,4 @@
->Carnage Wurm
+name=Carnage Wurm
 url=http://magiccards.info/m12/en/168.html
 image=http://magiccards.info/scans/en/m12/168.jpg
 value=5

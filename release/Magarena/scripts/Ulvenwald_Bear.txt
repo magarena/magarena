@@ -1,4 +1,4 @@
->Ulvenwald Bear
+name=Ulvenwald Bear
 url=http://magiccards.info/dka/en/129.html
 image=http://magiccards.info/scans/en/dka/129.jpg
 value=2

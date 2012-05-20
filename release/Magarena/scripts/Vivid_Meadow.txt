@@ -1,4 +1,4 @@
->Vivid Meadow
+name=Vivid Meadow
 url=http://magiccards.info/cmd/en/297.html
 image=http://magiccards.info/scans/en/lw/279.jpg
 value=3

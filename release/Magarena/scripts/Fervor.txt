@@ -1,4 +1,4 @@
->Fervor
+name=Fervor
 url=http://magiccards.info/7e/en/181.html
 image=http://magiccards.info/scans/en/7e/181.jpg
 value=3

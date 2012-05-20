@@ -1,4 +1,4 @@
->Lava Axe
+name=Lava Axe
 url=http://magiccards.info/m12/en/148.html
 image=http://magiccards.info/scans/en/m12/148.jpg
 value=3

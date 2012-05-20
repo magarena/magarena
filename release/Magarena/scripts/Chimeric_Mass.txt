@@ -1,4 +1,4 @@
->Chimeric Mass
+name=Chimeric Mass
 url=http://magiccards.info/som/en/141.html
 image=http://magiccards.info/scans/en/som/141.jpg
 value=3

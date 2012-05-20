@@ -1,4 +1,4 @@
->Faerie Conclave
+name=Faerie Conclave
 url=http://magiccards.info/10e/en/351.html
 image=http://magiccards.info/scans/en/10e/351.jpg
 value=4

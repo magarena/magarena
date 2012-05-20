@@ -1,4 +1,4 @@
->Wing Splicer
+name=Wing Splicer
 url=http://magiccards.info/nph/en/50.html
 image=http://magiccards.info/scans/en/nph/50.jpg
 value=4

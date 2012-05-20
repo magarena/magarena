@@ -1,4 +1,4 @@
->Nightsoil Kami
+name=Nightsoil Kami
 url=http://magiccards.info/sok/en/139.html
 image=http://magiccards.info/scans/en/sok/139.jpg
 value=4

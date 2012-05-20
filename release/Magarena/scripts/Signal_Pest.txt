@@ -1,4 +1,4 @@
->Signal Pest
+name=Signal Pest
 url=http://magiccards.info/mbs/en/131.html
 image=http://magiccards.info/scans/en/mbs/131.jpg
 value=2

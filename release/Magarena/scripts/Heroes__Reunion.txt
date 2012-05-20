@@ -1,4 +1,4 @@
->Heroes' Reunion
+name=Heroes' Reunion
 url=http://magiccards.info/ddg/en/29.html
 image=http://magiccards.info/scans/en/arc/87.jpg
 value=3

@@ -1,4 +1,4 @@
->Cloud Crusader
+name=Cloud Crusader
 url=http://magiccards.info/m11/en/10.html
 image=http://magiccards.info/scans/en/m11/10.jpg 
 value=4

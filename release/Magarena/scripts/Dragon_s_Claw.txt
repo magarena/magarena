@@ -1,4 +1,4 @@
->Dragon's Claw
+name=Dragon's Claw
 url=http://magiccards.info/m12/en/206.html
 image=http://magiccards.info/scans/en/m10/210.jpg
 value=2

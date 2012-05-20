@@ -1,4 +1,4 @@
->Esper Battlemage
+name=Esper Battlemage
 url=http://magiccards.info/ala/en/40.html
 image=http://magiccards.info/scans/en/ala/40.jpg
 value=3

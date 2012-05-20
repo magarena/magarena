@@ -1,4 +1,4 @@
->Inferno Elemental
+name=Inferno Elemental
 url=http://magiccards.info/m10/en/142.html
 image=http://magiccards.info/scans/en/m10/142.jpg
 value=4

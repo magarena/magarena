@@ -1,10 +1,10 @@
->Crumbling Necropolis
+name=Crumbling Necropolis
 url=http://magiccards.info/ddh/en/74.html
 image=http://magiccards.info/scans/en/ala/222.jpg
 value=4
 rarity=U
 type=Land
 mana=u3b3r3
-ability=tap add mana {U} or {B} or {R}
-ability=enters tapped
+ability=tap add mana {U} or {B} or {R},\
+        enters tapped
 timing=tapland

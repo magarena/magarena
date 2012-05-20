@@ -1,4 +1,4 @@
->Imperious Perfect
+name=Imperious Perfect
 url=http://magiccards.info/dpa/en/71.html
 image=http://magiccards.info/scans/en/dpa/71.jpg
 value=4

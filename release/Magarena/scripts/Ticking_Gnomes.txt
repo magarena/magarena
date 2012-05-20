@@ -1,4 +1,4 @@
->Ticking Gnomes
+name=Ticking Gnomes
 url=http://magiccards.info/ul/en/136.html
 image=http://magiccards.info/scans/en/ul/136.jpg
 value=3

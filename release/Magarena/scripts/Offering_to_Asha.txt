@@ -1,4 +1,4 @@
->Offering to Asha
+name=Offering to Asha
 url=http://magiccards.info/arb/en/9.html
 image=http://magiccards.info/scans/en/arb/9.jpg
 value=2

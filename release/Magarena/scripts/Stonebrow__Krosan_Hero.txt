@@ -1,4 +1,4 @@
->Stonebrow, Krosan Hero
+name=Stonebrow, Krosan Hero
 url=http://magiccards.info/ts/en/247.html
 image=http://magiccards.info/scans/en/ts/247.jpg
 value=5

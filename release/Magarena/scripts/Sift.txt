@@ -1,4 +1,4 @@
->Sift
+name=Sift
 url=http://magiccards.info/10e/en/108.html
 image=http://magiccards.info/scans/en/10e/108.jpg
 value=3

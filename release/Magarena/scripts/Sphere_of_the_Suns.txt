@@ -1,4 +1,4 @@
->Sphere of the Suns
+name=Sphere of the Suns
 url=http://magiccards.info/mbs/en/134.html
 image=http://magiccards.info/scans/en/mbs/134.jpg
 value=3

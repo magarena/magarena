@@ -1,4 +1,4 @@
->Foul Imp
+name=Foul Imp
 url=http://magiccards.info/dvd/en/32.html
 image=http://magiccards.info/scans/en/dvd/32.jpg
 value=2

@@ -1,4 +1,4 @@
->Mentor of the Meek
+name=Mentor of the Meek
 url=http://magiccards.info/isd/en/21.html
 image=http://magiccards.info/scans/en/isd/21.jpg
 value=2

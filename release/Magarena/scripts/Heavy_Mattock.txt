@@ -1,4 +1,4 @@
->Heavy Mattock
+name=Heavy Mattock
 url=http://magiccards.info/dka/en/150.html
 image=http://magiccards.info/scans/en/dka/150.jpg
 value=2

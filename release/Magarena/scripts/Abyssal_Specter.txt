@@ -1,4 +1,4 @@
->Abyssal Specter
+name=Abyssal Specter
 url=http://magiccards.info/dpa/en/18.html
 image=http://magiccards.info/scans/en/dpa/18.jpg
 value=3

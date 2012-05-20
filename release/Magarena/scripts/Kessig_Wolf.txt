@@ -1,4 +1,4 @@
->Kessig Wolf
+name=Kessig Wolf
 url=http://magiccards.info/isd/en/151.html
 image=http://magiccards.info/scans/en/isd/151.jpg
 value=2

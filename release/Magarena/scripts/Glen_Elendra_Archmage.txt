@@ -1,4 +1,4 @@
->Glen Elendra Archmage
+name=Glen Elendra Archmage
 url=http://magiccards.info/eve/en/22.html
 image=http://magiccards.info/scans/en/eve/22.jpg
 value=3

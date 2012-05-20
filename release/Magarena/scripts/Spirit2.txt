@@ -1,4 +1,4 @@
->Spirit
+name=Spirit
 token=Spirit2
 image=http://magiccards.info/extras/token/shadowmoor/spirit.jpg
 value=1

@@ -1,4 +1,4 @@
->Arcbound Fiend
+name=Arcbound Fiend
 url=http://magiccards.info/ds/en/96.html
 image=http://magiccards.info/scans/en/ds/96.jpg
 value=3

@@ -1,4 +1,4 @@
->Wort, Boggart Auntie
+name=Wort, Boggart Auntie
 url=http://magiccards.info/lw/en/252.html
 image=http://magiccards.info/scans/en/lw/252.jpg
 value=4

@@ -1,4 +1,4 @@
->Griffin Guide
+name=Griffin Guide
 url=http://magiccards.info/ddh/en/25.html
 image=http://magiccards.info/scans/en/ts/21.jpg
 value=4

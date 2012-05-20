@@ -1,4 +1,4 @@
->Hunting Moa
+name=Hunting Moa
 url=http://magiccards.info/arc/en/60.html
 image=http://magiccards.info/scans/en/arc/60.jpg
 value=3

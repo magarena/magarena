@@ -1,4 +1,4 @@
->Slagwurm Armor
+name=Slagwurm Armor
 url=http://magiccards.info/mi/en/243.html
 image=http://magiccards.info/scans/en/mi/243.jpg
 value=2

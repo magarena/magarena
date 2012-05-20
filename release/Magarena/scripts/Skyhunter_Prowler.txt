@@ -1,4 +1,4 @@
->Skyhunter Prowler
+name=Skyhunter Prowler
 url=http://magiccards.info/10e/en/42.html
 image=http://magiccards.info/scans/en/10e/42.jpg
 value=3

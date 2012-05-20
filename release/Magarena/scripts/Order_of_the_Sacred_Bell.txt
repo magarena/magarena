@@ -1,4 +1,4 @@
->Order of the Sacred Bell
+name=Order of the Sacred Bell
 url=http://magiccards.info/9e/en/261.html
 image=http://magiccards.info/scans/en/9e/261.jpg 
 value=3

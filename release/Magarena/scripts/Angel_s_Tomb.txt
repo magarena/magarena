@@ -1,4 +1,4 @@
->Angel's Tomb
+name=Angel's Tomb
 url=http://magiccards.info/avr/en/211.html
 image=http://magiccards.info/scans/en/avr/211.jpg
 value=3

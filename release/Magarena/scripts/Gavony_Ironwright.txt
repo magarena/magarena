@@ -1,4 +1,4 @@
->Gavony Ironwright
+name=Gavony Ironwright
 url=http://magiccards.info/dka/en/9.html
 image=http://magiccards.info/scans/en/dka/9.jpg 
 value=3

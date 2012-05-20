@@ -1,4 +1,4 @@
->Twinblade Slasher
+name=Twinblade Slasher
 url=http://magiccards.info/eve/en/79.html
 image=http://magiccards.info/scans/en/eve/79.jpg
 value=1

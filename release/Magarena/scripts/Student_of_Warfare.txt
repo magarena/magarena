@@ -1,4 +1,4 @@
->Student of Warfare
+name=Student of Warfare
 url=http://magiccards.info/roe/en/47.html
 image=http://magiccards.info/scans/en/roe/47.jpg
 value=2

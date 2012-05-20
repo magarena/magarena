@@ -1,4 +1,4 @@
->Surrakar Marauder
+name=Surrakar Marauder
 url=http://magiccards.info/zen/en/113.html
 image=http://magiccards.info/scans/en/zen/113.jpg
 value=2

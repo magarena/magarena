@@ -1,4 +1,4 @@
->Mesa Enchantress
+name=Mesa Enchantress
 url=http://magiccards.info/m12/en/25.html
 image=http://magiccards.info/scans/en/m12/25.jpg
 value=3

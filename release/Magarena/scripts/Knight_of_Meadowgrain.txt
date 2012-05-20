@@ -1,4 +1,4 @@
->Knight of Meadowgrain
+name=Knight of Meadowgrain
 url=http://magiccards.info/ddg/en/5.html
 image=http://magiccards.info/scans/en/lw/28.jpg
 value=3

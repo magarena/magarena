@@ -1,4 +1,4 @@
->Merfolk Seastalkers
+name=Merfolk Seastalkers
 url=http://magiccards.info/zen/en/55.html
 image=http://magiccards.info/scans/en/zen/55.jpg
 value=3

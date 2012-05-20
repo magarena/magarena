@@ -1,4 +1,4 @@
->Artisan of Kozilek
+name=Artisan of Kozilek
 url=http://magiccards.info/roe/en/2.html
 image=http://magiccards.info/scans/en/roe/2.jpg
 value=5

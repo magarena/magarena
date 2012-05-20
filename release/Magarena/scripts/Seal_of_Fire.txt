@@ -1,4 +1,4 @@
->Seal of Fire
+name=Seal of Fire
 url=http://magiccards.info/jvc/en/50.html
 image=http://magiccards.info/scans/en/di/71.jpg
 value=2

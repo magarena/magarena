@@ -1,4 +1,4 @@
->Darkthicket Wolf
+name=Darkthicket Wolf
 url=http://magiccards.info/isd/en/175.html
 image=http://magiccards.info/scans/en/isd/175.jpg
 value=2

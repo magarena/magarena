@@ -1,4 +1,4 @@
->Wall of Torches
+name=Wall of Torches
 url=http://magiccards.info/m12/en/159.html
 image=http://magiccards.info/scans/en/m12/159.jpg 
 value=2

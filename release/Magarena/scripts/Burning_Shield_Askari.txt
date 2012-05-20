@@ -1,4 +1,4 @@
->Burning Shield Askari
+name=Burning Shield Askari
 url=http://magiccards.info/mr/en/162.html
 image=http://magiccards.info/scans/en/mr/162.jpg
 value=3

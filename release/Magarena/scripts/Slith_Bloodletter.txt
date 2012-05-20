@@ -1,4 +1,4 @@
->Slith Bloodletter
+name=Slith Bloodletter
 url=http://magiccards.info/mi/en/77.html
 image=http://magiccards.info/scans/en/mi/77.jpg
 value=2

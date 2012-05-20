@@ -1,4 +1,4 @@
->Pegasus Charger
+name=Pegasus Charger
 url=http://magiccards.info/9e/en/34.html
 image=http://magiccards.info/scans/en/9e/34.jpg 
 value=2

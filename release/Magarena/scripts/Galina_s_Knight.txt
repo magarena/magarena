@@ -1,4 +1,4 @@
->Galina's Knight
+name=Galina's Knight
 url=http://magiccards.info/in/en/248.html
 image=http://magiccards.info/scans/en/in/248.jpg 
 value=2

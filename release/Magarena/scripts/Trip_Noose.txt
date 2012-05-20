@@ -1,4 +1,4 @@
->Trip Noose
+name=Trip Noose
 url=http://magiccards.info/ddf/en/65.html
 image=http://magiccards.info/scans/en/shm/266.jpg
 value=3

@@ -1,4 +1,4 @@
->Charging Paladin
+name=Charging Paladin
 url=http://magiccards.info/dvd/en/4.html
 image=http://magiccards.info/scans/en/dvd/4.jpg
 value=3

@@ -1,4 +1,4 @@
->Rhox War Monk
+name=Rhox War Monk
 url=http://magiccards.info/ala/en/188.html
 image=http://magiccards.info/scans/en/ala/188.jpg
 value=4

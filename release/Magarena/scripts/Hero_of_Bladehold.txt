@@ -1,4 +1,4 @@
->Hero of Bladehold
+name=Hero of Bladehold
 url=http://magiccards.info/mbs/en/8.html
 image=http://magiccards.info/scans/en/mbs/8.jpg
 value=4

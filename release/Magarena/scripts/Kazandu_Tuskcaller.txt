@@ -1,4 +1,4 @@
->Kazandu Tuskcaller
+name=Kazandu Tuskcaller
 url=http://magiccards.info/roe/en/191.html
 image=http://magiccards.info/scans/en/roe/191.jpg
 value=2

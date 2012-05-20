@@ -1,4 +1,4 @@
->Needleshot Gourna
+name=Needleshot Gourna
 url=http://magiccards.info/le/en/133.html
 image=http://magiccards.info/scans/en/le/133.jpg 
 value=4

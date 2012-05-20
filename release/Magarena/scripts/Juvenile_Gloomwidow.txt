@@ -1,4 +1,4 @@
->Juvenile Gloomwidow
+name=Juvenile Gloomwidow
 url=http://magiccards.info/shm/en/121.html
 image=http://magiccards.info/scans/en/shm/121.jpg 
 value=2

@@ -1,4 +1,4 @@
->Ghoulraiser
+name=Ghoulraiser
 url=http://magiccards.info/isd/en/102.html
 image=http://magiccards.info/scans/en/isd/102.jpg
 value=3

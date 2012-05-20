@@ -1,4 +1,4 @@
->Ajani's Pridemate
+name=Ajani's Pridemate
 url=http://magiccards.info/ddh/en/9.html
 image=http://magiccards.info/scans/en/m11/3.jpg
 value=3

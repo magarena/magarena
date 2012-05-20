@@ -1,4 +1,4 @@
->Wreath of Geists
+name=Wreath of Geists
 url=http://magiccards.info/isd/en/211.html
 image=http://magiccards.info/scans/en/isd/211.jpg
 value=3

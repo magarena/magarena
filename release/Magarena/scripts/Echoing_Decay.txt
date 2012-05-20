@@ -1,4 +1,4 @@
->Echoing Decay
+name=Echoing Decay
 url=http://magiccards.info/ds/en/41.html
 image=http://magiccards.info/scans/en/ds/41.jpg
 value=3

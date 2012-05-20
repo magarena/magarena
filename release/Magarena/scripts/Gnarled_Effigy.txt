@@ -1,4 +1,4 @@
->Gnarled Effigy
+name=Gnarled Effigy
 url=http://magiccards.info/shm/en/251.html
 image=http://magiccards.info/scans/en/shm/251.jpg
 value=2

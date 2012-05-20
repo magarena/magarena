@@ -1,4 +1,4 @@
->Vapor Snag
+name=Vapor Snag
 url=http://magiccards.info/ddh/en/58.html
 image=http://magiccards.info/scans/en/ddh/58.jpg
 value=3

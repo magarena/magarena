@@ -1,10 +1,10 @@
->Clifftop Retreat
+name=Clifftop Retreat
 url=http://magiccards.info/isd/en/238.html
 image=http://magiccards.info/scans/en/isd/238.jpg
 value=4
 rarity=R
 type=Land
 mana=r3w3
-ability=tap add mana {R} or {W}
-ability=enters tapped unless mountain plains
+ability=tap add mana {R} or {W},\
+        enters tapped unless mountain plains
 timing=land

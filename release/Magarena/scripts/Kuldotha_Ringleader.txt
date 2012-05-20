@@ -1,4 +1,4 @@
->Kuldotha Ringleader
+name=Kuldotha Ringleader
 url=http://magiccards.info/mbs/en/70.html
 image=http://magiccards.info/scans/en/mbs/70.jpg 
 value=4

@@ -1,4 +1,4 @@
->Spectral Flight
+name=Spectral Flight
 url=http://magiccards.info/isd/en/79.html
 image=http://magiccards.info/scans/en/isd/79.jpg
 value=3

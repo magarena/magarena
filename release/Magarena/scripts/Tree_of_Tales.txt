@@ -1,4 +1,4 @@
->Tree of Tales
+name=Tree of Tales
 url=http://magiccards.info/pch/en/140.html
 image=http://magiccards.info/scans/en/pch/140.jpg
 value=2

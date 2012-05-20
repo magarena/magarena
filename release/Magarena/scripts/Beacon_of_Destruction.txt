@@ -1,4 +1,4 @@
->Beacon of Destruction
+name=Beacon of Destruction
 url=http://magiccards.info/10e/en/189.html
 image=http://magiccards.info/scans/en/10e/189.jpg
 value=4

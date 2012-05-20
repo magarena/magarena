@@ -1,4 +1,4 @@
->Skullclamp
+name=Skullclamp
 url=http://magiccards.info/cmd/en/260.html
 image=http://magiccards.info/scans/en/fve/12.jpg
 value=4

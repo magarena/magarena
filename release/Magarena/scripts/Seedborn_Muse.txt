@@ -1,4 +1,4 @@
->Seedborn Muse
+name=Seedborn Muse
 url=http://magiccards.info/10e/en/296.html
 image=http://magiccards.info/scans/en/10e/296.jpg
 value=4

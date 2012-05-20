@@ -1,11 +1,11 @@
->Akoum Refuge
+name=Akoum Refuge
 url=http://magiccards.info/cmd/en/264.html
 image=http://magiccards.info/scans/en/zen/210.jpg
 value=3
 rarity=U
 type=Land
 mana=b3r3
-ability=tap add mana {B} or {R}
-ability=enters tapped
-ability=enters gain life 1
+ability=tap add mana {B} or {R},\
+        enters tapped,\
+        enters gain life 1
 timing=tapland

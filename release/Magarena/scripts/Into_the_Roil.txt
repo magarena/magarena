@@ -1,4 +1,4 @@
->Into the Roil
+name=Into the Roil
 url=http://magiccards.info/zen/en/48.html
 image=http://magiccards.info/scans/en/zen/48.jpg
 value=3

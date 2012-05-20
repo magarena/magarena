@@ -1,4 +1,4 @@
->Saproling
+name=Saproling
 token=Saproling
 image=http://magiccards.info/extras/token/tenth-edition/saproling.jpg
 value=1

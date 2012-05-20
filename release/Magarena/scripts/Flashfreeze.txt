@@ -1,4 +1,4 @@
->Flashfreeze
+name=Flashfreeze
 url=http://magiccards.info/m12/en/52.html
 image=http://magiccards.info/scans/en/m11/53.jpg
 value=3

@@ -1,4 +1,4 @@
->Youthful Knight
+name=Youthful Knight
 url=http://magiccards.info/10e/en/62.html
 image=http://magiccards.info/scans/en/10e/62.jpg 
 value=2

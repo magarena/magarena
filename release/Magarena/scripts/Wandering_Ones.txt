@@ -1,4 +1,4 @@
->Wandering Ones
+name=Wandering Ones
 url=http://magiccards.info/chk/en/100.html
 image=http://magiccards.info/scans/en/chk/100.jpg 
 value=1

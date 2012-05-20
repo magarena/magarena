@@ -1,4 +1,4 @@
->Kavu Climber
+name=Kavu Climber
 url=http://magiccards.info/10e/en/273.html
 image=http://magiccards.info/scans/en/10e/273.jpg
 value=3

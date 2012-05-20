@@ -1,4 +1,4 @@
->Bat
+name=Bat
 token=Bat
 image=http://img.photobucket.com/albums/v237/Xand0r/bat-token_guildpact_300.jpg
 value=2

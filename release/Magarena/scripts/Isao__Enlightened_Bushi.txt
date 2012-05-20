@@ -1,4 +1,4 @@
->Isao, Enlightened Bushi
+name=Isao, Enlightened Bushi
 url=http://magiccards.info/bok/en/129.html
 image=http://magiccards.info/scans/en/bok/129.jpg
 value=4

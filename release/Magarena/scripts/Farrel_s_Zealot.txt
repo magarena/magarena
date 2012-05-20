@@ -1,4 +1,4 @@
->Farrel's Zealot
+name=Farrel's Zealot
 url=http://magiccards.info/fe/en/139.html
 image=http://magiccards.info/scans/en/fe/139.jpg
 value=2

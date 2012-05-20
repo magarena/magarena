@@ -1,4 +1,4 @@
->Aven Envoy
+name=Aven Envoy
 url=http://magiccards.info/le/en/30.html
 image=http://magiccards.info/scans/en/le/30.jpg 
 value=1

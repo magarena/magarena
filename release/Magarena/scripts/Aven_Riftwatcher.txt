@@ -1,4 +1,4 @@
->Aven Riftwatcher
+name=Aven Riftwatcher
 url=http://magiccards.info/pc/en/1.html
 image=http://magiccards.info/scans/en/pc/1.jpg
 value=3

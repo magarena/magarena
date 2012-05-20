@@ -1,4 +1,4 @@
->Eldrazi Spawn
+name=Eldrazi Spawn
 token=Eldrazi Spawn
 image=http://magiccards.info/extras/token/rise-of-the-eldrazi/eldrazi-spawn-1.jpg
 value=1

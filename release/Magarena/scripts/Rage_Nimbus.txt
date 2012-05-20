@@ -1,4 +1,4 @@
->Rage Nimbus
+name=Rage Nimbus
 url=http://magiccards.info/roe/en/160.html
 image=http://magiccards.info/scans/en/roe/160.jpg
 value=3

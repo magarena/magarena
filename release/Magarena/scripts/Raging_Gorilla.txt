@@ -1,4 +1,4 @@
->Raging Gorilla
+name=Raging Gorilla
 url=http://magiccards.info/vi/en/90.html
 image=http://magiccards.info/scans/en/vi/90.jpg
 value=2

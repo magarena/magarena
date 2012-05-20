@@ -1,4 +1,4 @@
->Bone to Ash
+name=Bone to Ash
 url=http://magiccards.info/dka/en/29.html
 image=http://magiccards.info/scans/en/dka/29.jpg
 value=3

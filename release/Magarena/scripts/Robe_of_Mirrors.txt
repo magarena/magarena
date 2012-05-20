@@ -1,4 +1,4 @@
->Robe of Mirrors
+name=Robe of Mirrors
 url=http://magiccards.info/10e/en/101.html
 image=http://magiccards.info/scans/en/10e/101.jpg
 value=3

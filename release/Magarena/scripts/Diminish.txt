@@ -1,4 +1,4 @@
->Diminish
+name=Diminish
 url=http://magiccards.info/m11/en/52.html
 image=http://magiccards.info/scans/en/m11/52.jpg
 value=2

@@ -1,4 +1,4 @@
->Ghitu Slinger
+name=Ghitu Slinger
 url=http://magiccards.info/ul/en/77.html
 image=http://magiccards.info/scans/en/ul/77.jpg
 value=3

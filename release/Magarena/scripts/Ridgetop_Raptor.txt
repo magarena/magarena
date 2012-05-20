@@ -1,4 +1,4 @@
->Ridgetop Raptor
+name=Ridgetop Raptor
 url=http://magiccards.info/le/en/108.html
 image=http://magiccards.info/scans/en/le/108.jpg 
 value=3

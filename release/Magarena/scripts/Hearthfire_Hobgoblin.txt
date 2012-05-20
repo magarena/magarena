@@ -1,4 +1,4 @@
->Hearthfire Hobgoblin
+name=Hearthfire Hobgoblin
 url=http://magiccards.info/pch/en/102.html
 image=http://magiccards.info/scans/en/pch/102.jpg
 value=3

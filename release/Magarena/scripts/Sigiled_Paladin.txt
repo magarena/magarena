@@ -1,4 +1,4 @@
->Sigiled Paladin
+name=Sigiled Paladin
 url=http://magiccards.info/ala/en/27.html
 image=http://magiccards.info/scans/en/ala/27.jpg
 value=3

@@ -1,4 +1,4 @@
->Revered Dead
+name=Revered Dead
 url=http://magiccards.info/pc/en/29.html
 image=http://magiccards.info/scans/en/pc/29.jpg
 value=1

@@ -1,4 +1,4 @@
->Jungle Troll
+name=Jungle Troll
 url=http://magiccards.info/mr/en/329.html
 image=http://magiccards.info/scans/en/mr/329.jpg
 value=2

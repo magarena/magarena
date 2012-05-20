@@ -1,4 +1,4 @@
->Rapacious One
+name=Rapacious One
 url=http://magiccards.info/cmd/en/133.html
 image=http://magiccards.info/scans/en/cmd/133.jpg 
 value=5

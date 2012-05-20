@@ -1,4 +1,4 @@
->Traitorous Blood
+name=Traitorous Blood
 url=http://magiccards.info/isd/en/166.html
 image=http://magiccards.info/scans/en/isd/166.jpg
 value=4

@@ -1,4 +1,4 @@
->Blunt the Assault
+name=Blunt the Assault
 url=http://magiccards.info/som/en/113.html
 image=http://magiccards.info/scans/en/som/113.jpg
 value=3

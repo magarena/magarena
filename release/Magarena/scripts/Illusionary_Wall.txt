@@ -1,4 +1,4 @@
->Illusionary Wall
+name=Illusionary Wall
 url=http://magiccards.info/ia/en/78.html
 image=http://magiccards.info/scans/en/ia/78.jpg
 value=4

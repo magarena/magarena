@@ -1,4 +1,4 @@
->Viridian Betrayers
+name=Viridian Betrayers
 url=http://magiccards.info/nph/en/124.html
 image=http://magiccards.info/scans/en/nph/124.jpg
 value=3

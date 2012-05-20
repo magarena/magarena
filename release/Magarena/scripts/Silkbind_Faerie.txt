@@ -1,4 +1,4 @@
->Silkbind Faerie
+name=Silkbind Faerie
 url=http://magiccards.info/shm/en/148.html
 image=http://magiccards.info/scans/en/shm/148.jpg
 value=3

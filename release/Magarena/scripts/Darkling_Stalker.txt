@@ -1,4 +1,4 @@
->Darkling Stalker
+name=Darkling Stalker
 url=http://magiccards.info/tp/en/13.html
 image=http://magiccards.info/scans/en/tp/13.jpg
 value=2

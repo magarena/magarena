@@ -1,4 +1,4 @@
->Enfeeblement
+name=Enfeeblement
 url=http://magiccards.info/9e/en/127.html
 image=http://magiccards.info/scans/en/9e/127.jpg
 value=3

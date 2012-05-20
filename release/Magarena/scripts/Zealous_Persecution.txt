@@ -1,4 +1,4 @@
->Zealous Persecution
+name=Zealous Persecution
 url=http://magiccards.info/arb/en/85.html
 image=http://magiccards.info/scans/en/arb/85.jpg
 value=4

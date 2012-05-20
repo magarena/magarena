@@ -1,4 +1,4 @@
->Burn the Impure
+name=Burn the Impure
 url=http://magiccards.info/mbs/en/59.html
 image=http://magiccards.info/scans/en/mbs/59.jpg
 value=3

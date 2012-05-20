@@ -1,4 +1,4 @@
->Crazed Goblin
+name=Crazed Goblin
 url=http://magiccards.info/ds/en/56.html
 image=http://magiccards.info/scans/en/ds/56.jpg 
 value=1

@@ -1,4 +1,4 @@
->Riptide Crab
+name=Riptide Crab
 url=http://magiccards.info/in/en/266.html
 image=http://magiccards.info/scans/en/in/266.jpg
 value=2

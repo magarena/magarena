@@ -1,4 +1,4 @@
->Vulshok Refugee
+name=Vulshok Refugee
 url=http://magiccards.info/nph/en/101.html
 image=http://magiccards.info/scans/en/nph/101.jpg
 value=3

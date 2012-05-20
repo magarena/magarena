@@ -1,4 +1,4 @@
->Knighthood
+name=Knighthood
 url=http://magiccards.info/7e/en/25.html
 image=http://magiccards.info/scans/en/7e/25.jpg
 value=3

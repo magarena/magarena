@@ -1,4 +1,4 @@
->Phyrexian Slayer
+name=Phyrexian Slayer
 url=http://magiccards.info/in/en/118.html
 image=http://magiccards.info/scans/en/in/118.jpg
 value=3

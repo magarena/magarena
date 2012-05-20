@@ -1,4 +1,4 @@
->Glorious Anthem
+name=Glorious Anthem
 url=http://magiccards.info/10e/en/17.html
 image=http://magiccards.info/scans/en/10e/17.jpg
 value=4

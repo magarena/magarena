@@ -1,4 +1,4 @@
->Champion of the Parish
+name=Champion of the Parish
 url=http://magiccards.info/isd/en/6.html
 image=http://magiccards.info/scans/en/isd/6.jpg
 value=2

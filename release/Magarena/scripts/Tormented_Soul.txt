@@ -1,4 +1,4 @@
->Tormented Soul
+name=Tormented Soul
 url=http://magiccards.info/m12/en/114.html
 image=http://magiccards.info/scans/en/m12/114.jpg
 value=2

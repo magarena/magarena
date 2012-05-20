@@ -1,4 +1,4 @@
->Wrexial, the Risen Deep
+name=Wrexial, the Risen Deep
 url=http://magiccards.info/cmd/en/239.html
 image=http://magiccards.info/scans/en/wwk/120.jpg
 value=5

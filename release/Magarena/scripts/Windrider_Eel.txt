@@ -1,4 +1,4 @@
->Windrider Eel
+name=Windrider Eel
 url=http://magiccards.info/zen/en/78.html
 image=http://magiccards.info/scans/en/zen/78.jpg
 value=3

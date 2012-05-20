@@ -1,4 +1,4 @@
->Drudge Skeletons
+name=Drudge Skeletons
 url=http://magiccards.info/dpa/en/22.html
 image=http://magiccards.info/scans/en/m10/95.jpg
 value=2

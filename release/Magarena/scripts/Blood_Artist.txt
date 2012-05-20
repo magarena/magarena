@@ -1,4 +1,4 @@
->Blood Artist
+name=Blood Artist
 url=http://magiccards.info/avr/en/86.html
 image=http://magiccards.info/scans/en/avr/86.jpg
 value=2

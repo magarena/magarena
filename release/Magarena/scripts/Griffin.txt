@@ -1,4 +1,4 @@
->Griffin
+name=Griffin
 token=Griffin
 image=http://i248.photobucket.com/albums/gg179/AC666AC/MTG/Griffinfull.jpg
 value=3

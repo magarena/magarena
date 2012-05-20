@@ -1,4 +1,4 @@
->Vampiric Fury
+name=Vampiric Fury
 url=http://magiccards.info/isd/en/167.html
 image=http://magiccards.info/scans/en/isd/167.jpg
 value=2

@@ -1,4 +1,4 @@
->Steel Wall
+name=Steel Wall
 url=http://magiccards.info/ddf/en/41.html
 image=http://magiccards.info/scans/en/mi/248.jpg
 value=1

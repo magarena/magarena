@@ -1,4 +1,4 @@
->Wickerbough Elder
+name=Wickerbough Elder
 url=http://magiccards.info/arc/en/74.html
 image=http://magiccards.info/scans/en/arc/74.jpg
 value=4

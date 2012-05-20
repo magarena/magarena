@@ -1,4 +1,4 @@
->Angelic Blessing
+name=Angelic Blessing
 url=http://magiccards.info/10e/en/3.html
 image=http://magiccards.info/scans/en/10e/3.jpg
 value=3

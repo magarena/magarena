@@ -1,4 +1,4 @@
->Oxidda Scrapmelter
+name=Oxidda Scrapmelter
 url=http://magiccards.info/som/en/101.html
 image=http://magiccards.info/scans/en/som/101.jpg
 value=3

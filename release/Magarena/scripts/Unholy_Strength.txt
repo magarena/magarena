@@ -1,4 +1,4 @@
->Unholy Strength
+name=Unholy Strength
 url=http://magiccards.info/dpa/en/36.html
 image=http://magiccards.info/scans/en/m11/119.jpg
 value=2

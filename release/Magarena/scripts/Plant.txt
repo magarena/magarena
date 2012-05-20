@@ -1,4 +1,4 @@
->Plant
+name=Plant
 token=Plant
 image=http://magiccards.info/extras/token/worldwake/plant.jpg
 value=1

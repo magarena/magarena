@@ -1,4 +1,4 @@
->Dread
+name=Dread
 url=http://magiccards.info/lw/en/107.html
 image=http://magiccards.info/scans/en/lw/107.jpg
 value=5

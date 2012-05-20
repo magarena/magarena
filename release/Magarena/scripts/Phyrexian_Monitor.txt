@@ -1,4 +1,4 @@
->Phyrexian Monitor
+name=Phyrexian Monitor
 url=http://magiccards.info/ud/en/64.html
 image=http://magiccards.info/scans/en/ud/64.jpg
 value=2

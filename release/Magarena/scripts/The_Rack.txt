@@ -1,4 +1,4 @@
->The Rack
+name=The Rack
 url=http://magiccards.info/tsts/en/113.html
 image=http://magiccards.info/scans/en/tsts/113.jpg
 value=3

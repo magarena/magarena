@@ -1,4 +1,4 @@
->Wall of Reverence
+name=Wall of Reverence
 url=http://magiccards.info/cfx/en/20.html
 image=http://magiccards.info/scans/en/cfx/20.jpg
 value=3

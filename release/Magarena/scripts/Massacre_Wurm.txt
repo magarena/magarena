@@ -1,4 +1,4 @@
->Massacre Wurm
+name=Massacre Wurm
 url=http://magiccards.info/mbs/en/46.html
 image=http://magiccards.info/scans/en/mbs/46.jpg
 value=5

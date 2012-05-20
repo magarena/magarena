@@ -1,4 +1,4 @@
->Echoing Truth
+name=Echoing Truth
 url=http://magiccards.info/ds/en/21.html
 image=http://magiccards.info/scans/en/ds/21.jpg
 value=3

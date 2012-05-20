@@ -1,4 +1,4 @@
->Vulshok Battlegear
+name=Vulshok Battlegear
 url=http://magiccards.info/mi/en/272.html
 image=http://magiccards.info/scans/en/mi/272.jpg
 value=4

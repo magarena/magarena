@@ -1,4 +1,4 @@
->Alabaster Mage
+name=Alabaster Mage
 url=http://magiccards.info/m12/en/2.html
 image=http://magiccards.info/scans/en/m12/2.jpg
 value=3

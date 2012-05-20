@@ -1,4 +1,4 @@
->Forbidding Watchtower
+name=Forbidding Watchtower
 url=http://magiccards.info/10e/en/352.html
 image=http://magiccards.info/scans/en/10e/352.jpg
 value=4

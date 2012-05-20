@@ -1,4 +1,4 @@
->Aven Mimeomancer
+name=Aven Mimeomancer
 url=http://magiccards.info/arb/en/2.html
 image=http://magiccards.info/scans/en/arb/2.jpg
 value=4

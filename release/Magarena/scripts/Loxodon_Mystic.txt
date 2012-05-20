@@ -1,4 +1,4 @@
->Loxodon Mystic
+name=Loxodon Mystic
 url=http://magiccards.info/10e/en/26.html
 image=http://magiccards.info/scans/en/10e/26.jpg
 value=3

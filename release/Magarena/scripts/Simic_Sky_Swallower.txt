@@ -1,4 +1,4 @@
->Simic Sky Swallower
+name=Simic Sky Swallower
 url=http://magiccards.info/cmd/en/226.html
 image=http://magiccards.info/scans/en/di/130.jpg
 value=5

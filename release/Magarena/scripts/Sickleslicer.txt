@@ -1,4 +1,4 @@
->Sickleslicer
+name=Sickleslicer
 url=http://magiccards.info/nph/en/157.html
 image=http://magiccards.info/scans/en/nph/157.jpg
 value=2

@@ -1,4 +1,4 @@
->Sentinels of Glen Elendra
+name=Sentinels of Glen Elendra
 url=http://magiccards.info/lw/en/84.html
 image=http://magiccards.info/scans/en/lw/84.jpg
 value=3

@@ -1,4 +1,4 @@
->Lord of the Unreal
+name=Lord of the Unreal
 url=http://magiccards.info/m12/en/62.html
 image=http://magiccards.info/scans/en/m12/62.jpg
 value=3

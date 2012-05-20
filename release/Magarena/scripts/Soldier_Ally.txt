@@ -1,4 +1,4 @@
->Soldier Ally
+name=Soldier Ally
 token=Soldier Ally
 image=http://magiccards.info/extras/token/worldwake/soldier-ally.jpg
 value=1

@@ -1,4 +1,4 @@
->Dauthi Marauder
+name=Dauthi Marauder
 url=http://magiccards.info/tp/en/17.html
 image=http://magiccards.info/scans/en/tp/17.jpg
 value=2

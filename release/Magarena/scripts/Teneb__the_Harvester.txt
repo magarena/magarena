@@ -1,4 +1,4 @@
->Teneb, the Harvester
+name=Teneb, the Harvester
 url=http://magiccards.info/cmd/en/230.html
 image=http://magiccards.info/scans/en/pc/163.jpg
 value=5

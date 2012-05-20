@@ -1,4 +1,4 @@
->Squirrel Mob
+name=Squirrel Mob
 url=http://magiccards.info/od/en/273.html
 image=http://magiccards.info/scans/en/od/273.jpg
 value=3

@@ -1,4 +1,4 @@
->Guard Gomazoa
+name=Guard Gomazoa
 url=http://magiccards.info/cmd/en/49.html
 image=http://magiccards.info/scans/en/roe/70.jpg
 value=3

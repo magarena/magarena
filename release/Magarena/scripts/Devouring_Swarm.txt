@@ -1,4 +1,4 @@
->Devouring Swarm
+name=Devouring Swarm
 url=http://magiccards.info/m12/en/91.html
 image=http://magiccards.info/scans/en/m12/91.jpg
 value=2

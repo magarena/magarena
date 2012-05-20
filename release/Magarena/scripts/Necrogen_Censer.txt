@@ -1,4 +1,4 @@
->Necrogen Censer
+name=Necrogen Censer
 url=http://magiccards.info/som/en/184.html
 image=http://magiccards.info/scans/en/som/184.jpg
 value=3

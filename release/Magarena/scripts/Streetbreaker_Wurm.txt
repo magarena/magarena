@@ -1,4 +1,4 @@
->Streetbreaker Wurm
+name=Streetbreaker Wurm
 url=http://magiccards.info/gp/en/133.html
 image=http://magiccards.info/scans/en/gp/133.jpg 
 value=4

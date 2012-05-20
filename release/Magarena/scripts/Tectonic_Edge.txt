@@ -1,4 +1,4 @@
->Tectonic Edge
+name=Tectonic Edge
 url=http://magiccards.info/wwk/en/145.html
 image=http://magiccards.info/scans/en/wwk/145.jpg
 value=3

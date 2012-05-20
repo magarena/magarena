@@ -1,4 +1,4 @@
->Iizuka the Ruthless
+name=Iizuka the Ruthless
 url=http://magiccards.info/sok/en/104.html
 image=http://magiccards.info/scans/en/sok/104.jpg
 value=4

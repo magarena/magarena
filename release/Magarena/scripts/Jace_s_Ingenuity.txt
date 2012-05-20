@@ -1,4 +1,4 @@
->Jace's Ingenuity
+name=Jace's Ingenuity
 url=http://magiccards.info/m11/en/60.html
 image=http://magiccards.info/scans/en/m11/60.jpg
 value=3

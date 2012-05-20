@@ -1,4 +1,4 @@
->Guardians' Pledge
+name=Guardians' Pledge
 url=http://magiccards.info/m12/en/22.html
 image=http://magiccards.info/scans/en/m12/22.jpg
 value=3

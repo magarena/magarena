@@ -1,4 +1,4 @@
->Master of Etherium
+name=Master of Etherium
 url=http://magiccards.info/ddf/en/48.html
 image=http://magiccards.info/scans/en/ddf/48.jpg
 value=3

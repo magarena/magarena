@@ -1,4 +1,4 @@
->AEther Membrane
+name=AEther Membrane
 url=http://magiccards.info/pc/en/93.html
 image=http://magiccards.info/scans/en/pc/93.jpg
 value=3

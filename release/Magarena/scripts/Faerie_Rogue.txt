@@ -1,4 +1,4 @@
->Faerie Rogue
+name=Faerie Rogue
 token=Faerie Rogue
 image=http://magiccards.info/extras/token/morningtide/faerie-rogue.jpg
 value=2

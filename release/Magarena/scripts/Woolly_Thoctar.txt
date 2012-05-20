@@ -1,4 +1,4 @@
->Woolly Thoctar
+name=Woolly Thoctar
 url=http://magiccards.info/ddh/en/13.html
 image=http://magiccards.info/scans/en/ala/209.jpg
 value=4

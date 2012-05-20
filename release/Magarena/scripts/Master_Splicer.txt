@@ -1,4 +1,4 @@
->Master Splicer
+name=Master Splicer
 url=http://magiccards.info/nph/en/16.html
 image=http://magiccards.info/scans/en/nph/16.jpg
 value=4

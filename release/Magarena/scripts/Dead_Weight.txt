@@ -1,4 +1,4 @@
->Dead Weight
+name=Dead Weight
 url=http://magiccards.info/isd/en/96.html
 image=http://magiccards.info/scans/en/isd/96.jpg
 value=3

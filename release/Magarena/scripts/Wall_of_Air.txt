@@ -1,4 +1,4 @@
->Wall of Air
+name=Wall of Air
 url=http://magiccards.info/10e/en/124.html
 image=http://magiccards.info/scans/en/10e/124.jpg 
 value=3

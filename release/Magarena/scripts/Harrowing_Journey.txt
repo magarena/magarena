@@ -1,4 +1,4 @@
->Harrowing Journey
+name=Harrowing Journey
 url=http://magiccards.info/dka/en/67.html
 image=http://magiccards.info/scans/en/dka/67.jpg
 value=4

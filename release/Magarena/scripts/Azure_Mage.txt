@@ -1,4 +1,4 @@
->Azure Mage
+name=Azure Mage
 url=http://magiccards.info/m12/en/45.html
 image=http://magiccards.info/scans/en/m12/45.jpg
 value=3

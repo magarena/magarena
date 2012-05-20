@@ -1,4 +1,4 @@
->Rally the Forces
+name=Rally the Forces
 url=http://magiccards.info/mbs/en/73.html
 image=http://magiccards.info/scans/en/mbs/73.jpg
 value=3

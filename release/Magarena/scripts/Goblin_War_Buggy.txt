@@ -1,4 +1,4 @@
->Goblin War Buggy
+name=Goblin War Buggy
 url=http://magiccards.info/us/en/196.html
 image=http://magiccards.info/scans/en/us/196.jpg
 value=2

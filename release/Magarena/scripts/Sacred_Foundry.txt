@@ -1,4 +1,4 @@
->Sacred Foundry
+name=Sacred Foundry
 url=http://magiccards.info/rav/en/280.html
 image=http://magiccards.info/scans/en/rav/280.jpg
 value=4
@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Mountain,Plains
 mana=r3w3
-ability=tap add mana {R} or {W}
-ability=shock land
+ability=tap add mana {R} or {W},\
+        shock land
 timing=land

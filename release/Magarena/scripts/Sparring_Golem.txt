@@ -1,4 +1,4 @@
->Sparring Golem
+name=Sparring Golem
 url=http://magiccards.info/in/en/312.html
 image=http://magiccards.info/scans/en/in/312.jpg
 value=2

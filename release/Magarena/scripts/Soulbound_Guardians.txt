@@ -1,4 +1,4 @@
->Soulbound Guardians
+name=Soulbound Guardians
 url=http://magiccards.info/roe/en/45.html
 image=http://magiccards.info/scans/en/roe/45.jpg 
 value=3

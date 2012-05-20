@@ -1,4 +1,4 @@
->Ranger en-Vec
+name=Ranger en-Vec
 url=http://magiccards.info/tp/en/343.html
 image=http://magiccards.info/scans/en/tp/343.jpg
 value=3

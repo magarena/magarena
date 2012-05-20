@@ -1,4 +1,4 @@
->Battered Golem
+name=Battered Golem
 url=http://magiccards.info/5dn/en/106.html
 image=http://magiccards.info/scans/en/5dn/106.jpg
 value=3

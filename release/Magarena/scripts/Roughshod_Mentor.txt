@@ -1,4 +1,4 @@
->Roughshod Mentor
+name=Roughshod Mentor
 url=http://magiccards.info/dpa/en/81.html
 image=http://magiccards.info/scans/en/shm/128.jpg
 value=4

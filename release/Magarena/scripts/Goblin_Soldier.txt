@@ -1,4 +1,4 @@
->Goblin Soldier
+name=Goblin Soldier
 token=Goblin Soldier
 image=http://magiccards.info/extras/token/eventide/goblin-soldier.jpg
 value=1

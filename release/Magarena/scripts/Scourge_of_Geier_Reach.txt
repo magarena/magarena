@@ -1,4 +1,4 @@
->Scourge of Geier Reach
+name=Scourge of Geier Reach
 url=http://magiccards.info/isd/en/162.html
 image=http://magiccards.info/scans/en/isd/162.jpg
 value=3

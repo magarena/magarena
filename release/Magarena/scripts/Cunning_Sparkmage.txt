@@ -1,4 +1,4 @@
->Cunning Sparkmage
+name=Cunning Sparkmage
 url=http://magiccards.info/wwk/en/79.html
 image=http://magiccards.info/scans/en/wwk/79.jpg
 value=3

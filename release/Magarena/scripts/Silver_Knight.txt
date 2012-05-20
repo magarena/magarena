@@ -1,4 +1,4 @@
->Silver Knight
+name=Silver Knight
 url=http://magiccards.info/ddg/en/8.html
 image=http://magiccards.info/scans/en/sc/23.jpg
 value=3

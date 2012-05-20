@@ -1,4 +1,4 @@
->Nettle Sentinel
+name=Nettle Sentinel
 url=http://magiccards.info/eve/en/71.html
 image=http://magiccards.info/scans/en/eve/71.jpg
 value=2

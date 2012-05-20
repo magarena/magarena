@@ -1,4 +1,4 @@
->Goblin Tunneler
+name=Goblin Tunneler
 url=http://magiccards.info/m12/en/142.html
 image=http://magiccards.info/scans/en/m12/142.jpg
 value=2

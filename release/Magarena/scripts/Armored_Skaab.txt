@@ -1,4 +1,4 @@
->Armored Skaab
+name=Armored Skaab
 url=http://magiccards.info/isd/en/43.html
 image=http://magiccards.info/scans/en/isd/43.jpg
 value=2

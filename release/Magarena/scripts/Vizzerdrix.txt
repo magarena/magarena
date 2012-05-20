@@ -1,4 +1,4 @@
->Vizzerdrix
+name=Vizzerdrix
 url=http://magiccards.info/9eb/en/7.html
 image=http://magiccards.info/scans/en/9eb/7.jpg 
 value=4

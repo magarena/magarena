@@ -1,4 +1,4 @@
->Puppeteer Clique
+name=Puppeteer Clique
 url=http://magiccards.info/shm/en/75.html
 image=http://magiccards.info/scans/en/shm/75.jpg
 value=4

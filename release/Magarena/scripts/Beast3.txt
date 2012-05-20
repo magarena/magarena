@@ -1,4 +1,4 @@
->Beast
+name=Beast
 token=Beast3
 image=http://magiccards.info/extras/token/magic-2011/beast.jpg
 value=3

@@ -1,4 +1,4 @@
->Aurification
+name=Aurification
 url=http://magiccards.info/on/en/6.html
 image=http://magiccards.info/scans/en/on/6.jpg
 value=4

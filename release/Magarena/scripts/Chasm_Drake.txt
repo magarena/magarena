@@ -1,4 +1,4 @@
->Chasm Drake
+name=Chasm Drake
 url=http://magiccards.info/m12/en/48.html
 image=http://magiccards.info/scans/en/m12/48.jpg
 value=3

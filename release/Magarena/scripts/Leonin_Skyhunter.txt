@@ -1,4 +1,4 @@
->Leonin Skyhunter
+name=Leonin Skyhunter
 url=http://magiccards.info/ddg/en/7.html
 image=http://magiccards.info/scans/en/mbs/11.jpg 
 value=3

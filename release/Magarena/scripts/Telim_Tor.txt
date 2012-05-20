@@ -1,4 +1,4 @@
->Telim'Tor
+name=Telim'Tor
 url=http://magiccards.info/mr/en/197.html
 image=http://magiccards.info/scans/en/mr/197.jpg
 value=4

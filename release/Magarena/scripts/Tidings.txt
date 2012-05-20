@@ -1,4 +1,4 @@
->Tidings
+name=Tidings
 url=http://magiccards.info/10e/en/116.html
 image=http://magiccards.info/scans/en/10e/116.jpg
 value=4

@@ -1,4 +1,4 @@
->Dust Corona
+name=Dust Corona
 url=http://magiccards.info/pc/en/97.html
 image=http://magiccards.info/scans/en/pc/97.jpg
 value=2

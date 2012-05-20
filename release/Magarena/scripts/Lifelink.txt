@@ -1,4 +1,4 @@
->Lifelink
+name=Lifelink
 url=http://magiccards.info/m12/en/24.html
 image=http://magiccards.info/scans/en/m12/24.jpg
 value=1

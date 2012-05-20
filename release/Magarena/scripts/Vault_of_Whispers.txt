@@ -1,4 +1,4 @@
->Vault of Whispers
+name=Vault of Whispers
 url=http://magiccards.info/pch/en/141.html
 image=http://magiccards.info/scans/en/pch/141.jpg
 value=2

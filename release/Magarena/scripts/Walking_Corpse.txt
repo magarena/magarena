@@ -1,4 +1,4 @@
->Walking Corpse
+name=Walking Corpse
 url=http://magiccards.info/isd/en/126.html
 image=http://magiccards.info/scans/en/isd/126.jpg
 value=2

@@ -1,4 +1,4 @@
->Volcanic Strength
+name=Volcanic Strength
 url=http://magiccards.info/m11/en/158.html
 image=http://magiccards.info/scans/en/m11/158.jpg
 value=3

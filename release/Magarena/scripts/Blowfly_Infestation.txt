@@ -1,4 +1,4 @@
->Blowfly Infestation
+name=Blowfly Infestation
 url=http://magiccards.info/shm/en/58.html
 image=http://magiccards.info/scans/en/shm/58.jpg
 value=3

@@ -1,4 +1,4 @@
->Warpath Ghoul
+name=Warpath Ghoul
 url=http://magiccards.info/m12/en/117.html
 image=http://magiccards.info/scans/en/m10/120.jpg 
 value=3

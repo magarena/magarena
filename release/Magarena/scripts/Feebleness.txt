@@ -1,4 +1,4 @@
->Feebleness
+name=Feebleness
 url=http://magiccards.info/ts/en/110.html
 image=http://magiccards.info/scans/en/ts/110.jpg
 value=2

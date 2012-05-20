@@ -1,4 +1,4 @@
->Gelectrode
+name=Gelectrode
 url=http://magiccards.info/gp/en/113.html
 image=http://magiccards.info/scans/en/gp/113.jpg
 value=3

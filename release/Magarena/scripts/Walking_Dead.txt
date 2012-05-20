@@ -1,4 +1,4 @@
->Walking Dead
+name=Walking Dead
 url=http://magiccards.info/lg/en/40.html
 image=http://magiccards.info/scans/en/lg/40.jpg
 value=2

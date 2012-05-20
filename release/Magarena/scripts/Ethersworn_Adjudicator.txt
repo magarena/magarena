@@ -1,4 +1,4 @@
->Ethersworn Adjudicator
+name=Ethersworn Adjudicator
 url=http://magiccards.info/cfx/en/26.html
 image=http://magiccards.info/scans/en/cfx/26.jpg
 value=4

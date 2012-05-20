@@ -1,4 +1,4 @@
->Amphibious Kavu
+name=Amphibious Kavu
 url=http://magiccards.info/ps/en/78.html
 image=http://magiccards.info/scans/en/ps/78.jpg
 value=3

@@ -1,4 +1,4 @@
->Sidar Jabari
+name=Sidar Jabari
 url=http://magiccards.info/mr/en/243.html
 image=http://magiccards.info/scans/en/mr/243.jpg
 value=3

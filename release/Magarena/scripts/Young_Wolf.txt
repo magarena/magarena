@@ -1,4 +1,4 @@
->Young Wolf
+name=Young Wolf
 url=http://magiccards.info/dka/en/134.html
 image=http://magiccards.info/scans/en/dka/134.jpg
 value=2

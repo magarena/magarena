@@ -1,4 +1,4 @@
->Utvara Scalper
+name=Utvara Scalper
 url=http://magiccards.info/di/en/76.html
 image=http://magiccards.info/scans/en/di/76.jpg
 value=2

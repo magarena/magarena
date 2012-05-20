@@ -1,4 +1,4 @@
->Rite of Replication
+name=Rite of Replication
 url=http://magiccards.info/zen/en/61.html
 image=http://magiccards.info/scans/en/zen/61.jpg
 value=4

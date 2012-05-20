@@ -1,4 +1,4 @@
->Koth's Courier
+name=Koth's Courier
 url=http://magiccards.info/mbs/en/68.html
 image=http://magiccards.info/scans/en/mbs/68.jpg
 value=3

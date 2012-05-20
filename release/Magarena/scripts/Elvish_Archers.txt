@@ -1,4 +1,4 @@
->Elvish Archers
+name=Elvish Archers
 url=http://magiccards.info/7e/en/239.html
 image=http://magiccards.info/scans/en/7e/239.jpg 
 value=3

@@ -1,4 +1,4 @@
->Corrupted Harvester
+name=Corrupted Harvester
 url=http://magiccards.info/som/en/59.html
 image=http://magiccards.info/scans/en/som/59.jpg
 value=4

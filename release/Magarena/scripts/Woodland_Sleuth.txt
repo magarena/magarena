@@ -1,4 +1,4 @@
->Woodland Sleuth
+name=Woodland Sleuth
 url=http://magiccards.info/isd/en/210.html
 image=http://magiccards.info/scans/en/isd/210.jpg
 value=3

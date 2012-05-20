@@ -1,4 +1,4 @@
->Deranged Outcast
+name=Deranged Outcast
 url=http://magiccards.info/dka/en/112.html
 image=http://magiccards.info/scans/en/dka/112.jpg
 value=3

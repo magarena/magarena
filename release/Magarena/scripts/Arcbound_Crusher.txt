@@ -1,4 +1,4 @@
->Arcbound Crusher
+name=Arcbound Crusher
 url=http://magiccards.info/pch/en/105.html
 image=http://magiccards.info/scans/en/pch/105.jpg
 value=2

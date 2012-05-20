@@ -1,4 +1,4 @@
->Hunding Gjornersen
+name=Hunding Gjornersen
 url=http://magiccards.info/lg/en/271.html
 image=http://magiccards.info/scans/en/me3/152.jpg
 value=4

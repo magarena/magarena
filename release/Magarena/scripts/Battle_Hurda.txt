@@ -1,4 +1,4 @@
->Battle Hurda
+name=Battle Hurda
 url=http://magiccards.info/wwk/en/4.html
 image=http://magiccards.info/scans/en/wwk/4.jpg 
 value=3

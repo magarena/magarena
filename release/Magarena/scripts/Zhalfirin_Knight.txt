@@ -1,4 +1,4 @@
->Zhalfirin Knight
+name=Zhalfirin Knight
 url=http://magiccards.info/mr/en/254.html
 image=http://magiccards.info/scans/en/mr/254.jpg
 value=3

@@ -1,4 +1,4 @@
->Goldenglow Moth
+name=Goldenglow Moth
 url=http://magiccards.info/m11/en/15.html
 image=http://magiccards.info/scans/en/m11/15.jpg
 value=2

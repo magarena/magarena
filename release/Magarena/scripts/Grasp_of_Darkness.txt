@@ -1,4 +1,4 @@
->Grasp of Darkness
+name=Grasp of Darkness
 url=http://magiccards.info/som/en/65.html
 image=http://magiccards.info/scans/en/som/65.jpg
 value=3

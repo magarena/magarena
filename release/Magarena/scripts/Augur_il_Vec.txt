@@ -1,4 +1,4 @@
->Augur il-Vec
+name=Augur il-Vec
 url=http://magiccards.info/fut/en/2.html
 image=http://magiccards.info/scans/en/fut/2.jpg
 value=2

@@ -1,4 +1,4 @@
->Basilisk Collar
+name=Basilisk Collar
 url=http://magiccards.info/wwk/en/122.html
 image=http://magiccards.info/scans/en/wwk/122.jpg
 value=4

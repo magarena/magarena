@@ -1,4 +1,4 @@
->Ruhan of the Fomori
+name=Ruhan of the Fomori
 url=http://magiccards.info/cmd/en/221.html
 image=http://magiccards.info/scans/en/cmd/221.jpg
 value=5

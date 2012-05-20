@@ -1,4 +1,4 @@
->Black Vise
+name=Black Vise
 url=http://magiccards.info/fvr/en/2.html
 image=http://magiccards.info/scans/en/fvr/2.jpg
 value=3

@@ -1,4 +1,4 @@
->Vivid Crag
+name=Vivid Crag
 url=http://magiccards.info/cmd/en/293.html
 image=http://magiccards.info/scans/en/lw/275.jpg
 value=3

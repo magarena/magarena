@@ -1,4 +1,4 @@
->Thalakos Deceiver
+name=Thalakos Deceiver
 url=http://magiccards.info/sh/en/45.html
 image=http://magiccards.info/scans/en/sh/45.jpg
 value=3

@@ -1,4 +1,4 @@
->Arcbound Lancer
+name=Arcbound Lancer
 url=http://magiccards.info/ds/en/98.html
 image=http://magiccards.info/scans/en/ds/98.jpg
 value=4

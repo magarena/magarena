@@ -1,4 +1,4 @@
->Tuktuk the Returned
+name=Tuktuk the Returned
 token=Tuktuk the Returned
 image=http://magiccards.info/extras/token/rise-of-the-eldrazi/tuktuk-the-returned.jpg
 value=4

@@ -1,4 +1,4 @@
->Gravelgill Axeshark
+name=Gravelgill Axeshark
 url=http://magiccards.info/shm/en/164.html
 image=http://magiccards.info/scans/en/shm/164.jpg 
 value=3

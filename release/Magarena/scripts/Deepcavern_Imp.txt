@@ -1,4 +1,4 @@
->Deepcavern Imp
+name=Deepcavern Imp
 url=http://magiccards.info/fut/en/83.html
 image=http://magiccards.info/scans/en/fut/83.jpg
 value=3

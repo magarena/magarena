@@ -1,4 +1,4 @@
->Battle Mastery
+name=Battle Mastery
 url=http://magiccards.info/lw/en/5.html
 image=http://magiccards.info/scans/en/lw/5.jpg
 value=3

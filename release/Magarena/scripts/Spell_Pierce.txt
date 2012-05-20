@@ -1,4 +1,4 @@
->Spell Pierce
+name=Spell Pierce
 url=http://magiccards.info/zen/en/67.html
 image=http://magiccards.info/scans/en/zen/67.jpg
 value=3

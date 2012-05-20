@@ -1,4 +1,4 @@
->Double Cleave
+name=Double Cleave
 url=http://magiccards.info/pch/en/100.html
 image=http://magiccards.info/scans/en/pch/100.jpg
 value=2

@@ -1,4 +1,4 @@
->Aggravate
+name=Aggravate
 url=http://magiccards.info/avr/en/125.html
 image=http://magiccards.info/scans/en/avr/125.jpg
 value=4

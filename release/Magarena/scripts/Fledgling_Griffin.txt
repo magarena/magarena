@@ -1,4 +1,4 @@
->Fledgling Griffin
+name=Fledgling Griffin
 url=http://magiccards.info/wwk/en/5.html
 image=http://magiccards.info/scans/en/wwk/5.jpg
 value=2

@@ -1,4 +1,4 @@
->Grim Backwoods
+name=Grim Backwoods
 url=http://magiccards.info/dka/en/156.html
 image=http://magiccards.info/scans/en/dka/156.jpg
 value=4

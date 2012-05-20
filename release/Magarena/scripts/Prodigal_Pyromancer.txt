@@ -1,4 +1,4 @@
->Prodigal Pyromancer
+name=Prodigal Pyromancer
 url=http://magiccards.info/dpa/en/51.html
 image=http://magiccards.info/scans/en/dpa/51.jpg
 value=3

@@ -1,4 +1,4 @@
->Blinking Spirit
+name=Blinking Spirit
 url=http://magiccards.info/9e/en/8.html
 image=http://magiccards.info/scans/en/9e/8.jpg
 value=3

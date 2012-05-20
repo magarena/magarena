@@ -1,4 +1,4 @@
->Howling Mine
+name=Howling Mine
 url=http://magiccards.info/cmd/en/251.html
 image=http://magiccards.info/scans/en/cmd/251.jpg
 value=2

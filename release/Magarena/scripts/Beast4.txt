@@ -1,4 +1,4 @@
->Beast
+name=Beast
 token=Beast4
 image=http://magiccards.info/extras/token/zendikar/beast.jpg
 value=3

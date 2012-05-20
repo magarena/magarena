@@ -1,4 +1,4 @@
->Gemstone Mine
+name=Gemstone Mine
 url=http://magiccards.info/tsts/en/119.html
 image=http://magiccards.info/scans/en/tsts/119.jpg
 value=3

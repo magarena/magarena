@@ -1,4 +1,4 @@
->Gatekeeper of Malakir
+name=Gatekeeper of Malakir
 url=http://magiccards.info/zen/en/89.html
 image=http://magiccards.info/scans/en/zen/89.jpg
 value=3

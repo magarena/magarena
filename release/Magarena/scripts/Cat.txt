@@ -1,4 +1,4 @@
->Cat
+name=Cat
 token=Cat2
 image=http://magiccards.info/extras/token/scars-of-mirrodin/cat.jpg
 value=2

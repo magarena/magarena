@@ -1,4 +1,4 @@
->Wolfbriar Elemental
+name=Wolfbriar Elemental
 url=http://magiccards.info/wwk/en/118.html
 image=http://magiccards.info/scans/en/wwk/118.jpg
 value=5

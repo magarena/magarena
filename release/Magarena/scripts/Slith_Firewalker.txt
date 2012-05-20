@@ -1,4 +1,4 @@
->Slith Firewalker
+name=Slith Firewalker
 url=http://magiccards.info/mi/en/107.html
 image=http://magiccards.info/scans/en/mi/107.jpg
 value=2

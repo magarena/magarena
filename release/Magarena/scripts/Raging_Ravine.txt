@@ -1,4 +1,4 @@
->Raging Ravine
+name=Raging Ravine
 url=http://magiccards.info/wwk/en/141.html
 image=http://magiccards.info/scans/en/wwk/141.jpg
 value=4

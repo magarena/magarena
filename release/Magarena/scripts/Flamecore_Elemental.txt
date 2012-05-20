@@ -1,4 +1,4 @@
->Flamecore Elemental
+name=Flamecore Elemental
 url=http://magiccards.info/ts/en/154.html
 image=http://magiccards.info/scans/en/ts/154.jpg
 value=4

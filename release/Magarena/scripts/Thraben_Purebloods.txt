@@ -1,4 +1,4 @@
->Thraben Purebloods
+name=Thraben Purebloods
 url=http://magiccards.info/isd/en/37.html
 image=http://magiccards.info/scans/en/isd/37.jpg
 value=3

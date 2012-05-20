@@ -1,4 +1,4 @@
->Flameblast Dragon
+name=Flameblast Dragon
 url=http://magiccards.info/m12/en/133.html
 image=http://magiccards.info/scans/en/arc/38.jpg
 value=5

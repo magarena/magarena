@@ -1,4 +1,4 @@
->Butcher's Cleaver
+name=Butcher's Cleaver
 url=http://magiccards.info/isd/en/217.html
 image=http://magiccards.info/scans/en/isd/217.jpg
 value=3

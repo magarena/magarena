@@ -1,4 +1,4 @@
->Guul Draz Assassin
+name=Guul Draz Assassin
 url=http://magiccards.info/roe/en/112.html
 image=http://magiccards.info/scans/en/roe/112.jpg
 value=2

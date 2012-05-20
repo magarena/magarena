@@ -1,4 +1,4 @@
->Moss Monster
+name=Moss Monster
 url=http://magiccards.info/8e/en/267.html
 image=http://magiccards.info/scans/en/8e/267.jpg 
 value=4

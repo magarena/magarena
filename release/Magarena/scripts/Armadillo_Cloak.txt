@@ -1,4 +1,4 @@
->Armadillo Cloak
+name=Armadillo Cloak
 url=http://magiccards.info/arc/en/78.html
 image=http://magiccards.info/scans/en/arc/78.jpg
 value=4

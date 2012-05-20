@@ -1,4 +1,4 @@
->Watery Grave
+name=Watery Grave
 url=http://magiccards.info/rav/en/286.html
 image=http://magiccards.info/scans/en/rav/286.jpg
 value=4
@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Island,Swamp
 mana=u3b3
-ability=tap add mana {U} or {B}
-ability=shock land
+ability=tap add mana {U} or {B},\
+        shock land
 timing=land

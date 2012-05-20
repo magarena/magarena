@@ -1,4 +1,4 @@
->Scuttling Death
+name=Scuttling Death
 url=http://magiccards.info/chk/en/142.html
 image=http://magiccards.info/scans/en/chk/142.jpg
 value=3

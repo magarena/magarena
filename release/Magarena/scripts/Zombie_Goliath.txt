@@ -1,4 +1,4 @@
->Zombie Goliath
+name=Zombie Goliath
 url=http://magiccards.info/m12/en/119.html
 image=http://magiccards.info/scans/en/m10/123.jpg 
 value=3

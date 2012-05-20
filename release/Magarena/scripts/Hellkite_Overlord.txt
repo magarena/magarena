@@ -1,4 +1,4 @@
->Hellkite Overlord
+name=Hellkite Overlord
 url=http://magiccards.info/ala/en/172.html
 image=http://magiccards.info/scans/en/ala/172.jpg
 value=5

@@ -1,4 +1,4 @@
->Putrid Leech
+name=Putrid Leech
 url=http://magiccards.info/arb/en/95.html
 image=http://magiccards.info/scans/en/arb/95.jpg
 value=3

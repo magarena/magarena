@@ -1,4 +1,4 @@
->Iron Myr
+name=Iron Myr
 url=http://magiccards.info/som/en/168.html
 image=http://magiccards.info/scans/en/som/168.jpg
 value=3

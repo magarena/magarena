@@ -1,4 +1,4 @@
->Mordant Dragon
+name=Mordant Dragon
 url=http://magiccards.info/ddg/en/58.html
 image=http://magiccards.info/scans/en/wwk/85.jpg
 value=5

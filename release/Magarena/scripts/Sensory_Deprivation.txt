@@ -1,4 +1,4 @@
->Sensory Deprivation
+name=Sensory Deprivation
 url=http://magiccards.info/isd/en/74.html
 image=http://magiccards.info/scans/en/isd/74.jpg
 value=2

@@ -1,4 +1,4 @@
->Quirion Dryad
+name=Quirion Dryad
 url=http://magiccards.info/10e/en/287.html
 image=http://magiccards.info/scans/en/10e/287.jpg
 value=3

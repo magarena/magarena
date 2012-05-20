@@ -1,4 +1,4 @@
->Elvish Pioneer
+name=Elvish Pioneer
 url=http://magiccards.info/8e/en/243.html
 image=http://magiccards.info/scans/en/8e/243.jpg
 value=2

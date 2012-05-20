@@ -1,4 +1,4 @@
->Nantuko Shade
+name=Nantuko Shade
 url=http://magiccards.info/m11/en/106.html
 image=http://magiccards.info/scans/en/m11/106.jpg
 value=4

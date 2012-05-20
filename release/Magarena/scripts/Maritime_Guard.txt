@@ -1,4 +1,4 @@
->Maritime Guard
+name=Maritime Guard
 url=http://magiccards.info/m11/en/63.html
 image=http://magiccards.info/scans/en/m11/63.jpg 
 value=1

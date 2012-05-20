@@ -1,4 +1,4 @@
->Coral Merfolk
+name=Coral Merfolk
 url=http://magiccards.info/m12/en/49.html
 image=http://magiccards.info/scans/en/m10/47.jpg 
 value=1

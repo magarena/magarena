@@ -1,4 +1,4 @@
->Midnight Guard
+name=Midnight Guard
 url=http://magiccards.info/dka/en/14.html
 image=http://magiccards.info/scans/en/dka/14.jpg
 value=2

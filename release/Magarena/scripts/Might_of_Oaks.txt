@@ -1,4 +1,4 @@
->Might of Oaks
+name=Might of Oaks
 url=http://magiccards.info/m10/en/192.html
 image=http://magiccards.info/scans/en/m10/192.jpg
 value=4

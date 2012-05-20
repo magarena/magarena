@@ -1,4 +1,4 @@
->Corrupt Official
+name=Corrupt Official
 url=http://magiccards.info/mm/en/128.html
 image=http://magiccards.info/scans/en/mm/128.jpg
 value=3

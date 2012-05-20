@@ -1,4 +1,4 @@
->Hand of Honor
+name=Hand of Honor
 url=http://magiccards.info/sok/en/12.html
 image=http://magiccards.info/scans/en/sok/12.jpg
 value=3

@@ -1,4 +1,4 @@
->Molten Rain
+name=Molten Rain
 url=http://magiccards.info/mi/en/101.html
 image=http://magiccards.info/scans/en/mi/101.jpg
 value=3

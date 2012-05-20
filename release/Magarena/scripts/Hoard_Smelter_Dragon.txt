@@ -1,4 +1,4 @@
->Hoard-Smelter Dragon
+name=Hoard-Smelter Dragon
 url=http://magiccards.info/som/en/93.html
 image=http://magiccards.info/scans/en/som/93.jpg
 value=5

@@ -1,4 +1,4 @@
->Terror
+name=Terror
 url=http://magiccards.info/dpa/en/34.html
 image=http://magiccards.info/scans/en/dpa/34.jpg
 value=2

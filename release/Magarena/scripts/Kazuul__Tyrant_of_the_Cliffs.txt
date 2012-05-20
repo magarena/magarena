@@ -1,4 +1,4 @@
->Kazuul, Tyrant of the Cliffs
+name=Kazuul, Tyrant of the Cliffs
 url=http://magiccards.info/wwk/en/84.html
 image=http://magiccards.info/scans/en/wwk/84.jpg
 value=5

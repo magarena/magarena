@@ -1,4 +1,4 @@
->Border Patrol
+name=Border Patrol
 url=http://magiccards.info/ju/en/6.html
 image=http://magiccards.info/scans/en/ju/6.jpg 
 value=2

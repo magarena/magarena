@@ -1,4 +1,4 @@
->Serra Angel
+name=Serra Angel
 url=http://magiccards.info/m12/en/33.html
 image=http://magiccards.info/scans/en/dvd/10.jpg
 value=4

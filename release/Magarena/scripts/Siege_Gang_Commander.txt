@@ -1,4 +1,4 @@
->Siege-Gang Commander
+name=Siege-Gang Commander
 url=http://magiccards.info/m10/en/157.html
 image=http://magiccards.info/scans/en/m10/157.jpg
 value=4

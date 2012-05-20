@@ -1,4 +1,4 @@
->Copper Myr
+name=Copper Myr
 url=http://magiccards.info/som/en/146.html
 image=http://magiccards.info/scans/en/som/146.jpg
 value=3

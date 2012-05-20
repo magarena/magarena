@@ -1,4 +1,4 @@
->Phyrexian Prowler
+name=Phyrexian Prowler
 url=http://magiccards.info/ne/en/65.html
 image=http://magiccards.info/scans/en/ne/65.jpg
 value=3

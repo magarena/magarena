@@ -1,4 +1,4 @@
->Raven's Run Dragoon
+name=Raven's Run Dragoon
 url=http://magiccards.info/shm/en/235.html
 image=http://magiccards.info/scans/en/shm/235.jpg
 value=3

@@ -1,4 +1,4 @@
->Kabuto Moth
+name=Kabuto Moth
 url=http://magiccards.info/chk/en/20.html
 image=http://magiccards.info/scans/en/chk/20.jpg
 value=4

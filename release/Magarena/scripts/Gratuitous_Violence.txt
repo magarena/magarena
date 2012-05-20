@@ -1,4 +1,4 @@
->Gratuitous Violence
+name=Gratuitous Violence
 url=http://magiccards.info/on/en/212.html
 image=http://magiccards.info/scans/en/on/212.jpg
 value=4

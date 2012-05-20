@@ -1,4 +1,4 @@
->Jhessian Infiltrator
+name=Jhessian Infiltrator
 url=http://magiccards.info/ala/en/174.html
 image=http://magiccards.info/scans/en/ala/174.jpg
 value=3

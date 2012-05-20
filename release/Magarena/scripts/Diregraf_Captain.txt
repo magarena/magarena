@@ -1,4 +1,4 @@
->Diregraf Captain
+name=Diregraf Captain
 url=http://magiccards.info/dka/en/135.html
 image=http://magiccards.info/scans/en/dka/135.jpg
 value=3

@@ -1,4 +1,4 @@
->Boartusk Liege
+name=Boartusk Liege
 url=http://magiccards.info/shm/en/202.html
 image=http://magiccards.info/scans/en/shm/202.jpg
 value=4

@@ -1,4 +1,4 @@
->Stomping Ground
+name=Stomping Ground
 url=http://magiccards.info/gp/en/165.html
 image=http://magiccards.info/scans/en/gp/165.jpg
 value=4
@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Mountain,Forest
 mana=r3g3
-ability=tap add mana {R} or {G}
-ability=shock land
+ability=tap add mana {R} or {G},\
+        shock land
 timing=land

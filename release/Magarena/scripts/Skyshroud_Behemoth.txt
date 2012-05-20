@@ -1,4 +1,4 @@
->Skyshroud Behemoth
+name=Skyshroud Behemoth
 url=http://magiccards.info/ne/en/116.html
 image=http://magiccards.info/scans/en/ne/116.jpg
 value=5

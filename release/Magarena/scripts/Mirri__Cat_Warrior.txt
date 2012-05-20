@@ -1,4 +1,4 @@
->Mirri, Cat Warrior
+name=Mirri, Cat Warrior
 url=http://magiccards.info/10e/en/279.html
 image=http://magiccards.info/scans/en/10e/279.jpg
 value=4

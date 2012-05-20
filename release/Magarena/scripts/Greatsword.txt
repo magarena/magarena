@@ -1,4 +1,4 @@
->Greatsword
+name=Greatsword
 url=http://magiccards.info/m12/en/209.html
 image=http://magiccards.info/scans/en/m12/209.jpg
 value=3

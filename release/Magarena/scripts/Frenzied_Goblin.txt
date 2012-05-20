@@ -1,4 +1,4 @@
->Frenzied Goblin
+name=Frenzied Goblin
 url=http://magiccards.info/rav/en/125.html
 image=http://magiccards.info/scans/en/rav/125.jpg
 value=2

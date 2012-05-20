@@ -1,4 +1,4 @@
->Woodfall Primus
+name=Woodfall Primus
 url=http://magiccards.info/shm/en/135.html
 image=http://magiccards.info/scans/en/shm/135.jpg
 value=5

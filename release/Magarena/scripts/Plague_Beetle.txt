@@ -1,4 +1,4 @@
->Plague Beetle
+name=Plague Beetle
 url=http://magiccards.info/10e/en/168.html
 image=http://magiccards.info/scans/en/10e/168.jpg 
 value=1

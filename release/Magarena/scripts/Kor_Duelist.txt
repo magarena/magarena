@@ -1,4 +1,4 @@
->Kor Duelist
+name=Kor Duelist
 url=http://magiccards.info/zen/en/19.html
 image=http://magiccards.info/scans/en/zen/19.jpg
 value=1

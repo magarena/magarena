@@ -1,4 +1,4 @@
->Char-Rumbler
+name=Char-Rumbler
 url=http://magiccards.info/fut/en/96.html
 image=http://magiccards.info/scans/en/fut/96.jpg
 value=2

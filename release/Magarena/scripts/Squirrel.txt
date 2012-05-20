@@ -1,4 +1,4 @@
->Squirrel
+name=Squirrel
 token=Squirrel1
 image=http://magiccards.info/extras/token/player-rewards-2002/squirrel.jpg
 value=1

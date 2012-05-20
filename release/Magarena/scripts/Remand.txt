@@ -1,4 +1,4 @@
->Remand
+name=Remand
 url=http://magiccards.info/rav/en/63.html
 image=http://magiccards.info/scans/en/rav/63.jpg
 value=3

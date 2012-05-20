@@ -1,4 +1,4 @@
->Elvish Visionary
+name=Elvish Visionary
 url=http://magiccards.info/dpa/en/63.html
 image=http://magiccards.info/scans/en/m10/178.jpg
 value=2

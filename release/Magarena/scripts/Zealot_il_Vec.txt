@@ -1,4 +1,4 @@
->Zealot il-Vec
+name=Zealot il-Vec
 url=http://magiccards.info/ts/en/47.html
 image=http://magiccards.info/scans/en/ts/47.jpg
 value=2

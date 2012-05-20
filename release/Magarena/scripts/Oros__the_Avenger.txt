@@ -1,4 +1,4 @@
->Oros, the Avenger
+name=Oros, the Avenger
 url=http://magiccards.info/cmd/en/216.html
 image=http://magiccards.info/scans/en/pc/161.jpg
 value=5

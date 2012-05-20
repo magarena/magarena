@@ -1,4 +1,4 @@
->Typhoid Rats
+name=Typhoid Rats
 url=http://magiccards.info/isd/en/120.html
 image=http://magiccards.info/scans/en/isd/120.jpg
 value=1

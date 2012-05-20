@@ -1,4 +1,4 @@
->Midnight Haunting
+name=Midnight Haunting
 url=http://magiccards.info/isd/en/22.html
 image=http://magiccards.info/scans/en/isd/22.jpg
 value=3

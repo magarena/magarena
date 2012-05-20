@@ -1,4 +1,4 @@
->Regrowth
+name=Regrowth
 url=http://magiccards.info/jr/en/23.html
 image=http://magiccards.info/scans/en/me4/163.jpg
 value=4

@@ -1,4 +1,4 @@
->Oblivion Ring
+name=Oblivion Ring
 url=http://magiccards.info/m12/en/27.html
 image=http://magiccards.info/scans/en/m12/27.jpg
 value=3

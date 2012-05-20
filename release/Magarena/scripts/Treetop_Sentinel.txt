@@ -1,4 +1,4 @@
->Treetop Sentinel
+name=Treetop Sentinel
 url=http://magiccards.info/od/en/111.html
 image=http://magiccards.info/scans/en/od/111.jpg 
 value=3

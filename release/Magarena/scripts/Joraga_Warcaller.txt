@@ -1,4 +1,4 @@
->Joraga Warcaller
+name=Joraga Warcaller
 url=http://magiccards.info/wwk/en/106.html
 image=http://magiccards.info/scans/en/wwk/106.jpg
 value=2

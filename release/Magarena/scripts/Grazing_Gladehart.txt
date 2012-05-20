@@ -1,4 +1,4 @@
->Grazing Gladehart
+name=Grazing Gladehart
 url=http://magiccards.info/ddh/en/11.html
 image=http://magiccards.info/scans/en/ddh/11.jpg
 value=3

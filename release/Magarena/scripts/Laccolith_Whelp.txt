@@ -1,4 +1,4 @@
->Laccolith Whelp
+name=Laccolith Whelp
 url=http://magiccards.info/ne/en/91.html
 image=http://magiccards.info/scans/en/ne/91.jpg
 value=1

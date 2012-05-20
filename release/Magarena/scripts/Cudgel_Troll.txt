@@ -1,4 +1,4 @@
->Cudgel Troll
+name=Cudgel Troll
 url=http://magiccards.info/m12/en/169.html
 image=http://magiccards.info/scans/en/m11/167.jpg
 value=4

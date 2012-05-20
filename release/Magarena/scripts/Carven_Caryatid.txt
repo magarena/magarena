@@ -1,4 +1,4 @@
->Carven Caryatid
+name=Carven Caryatid
 url=http://magiccards.info/rav/en/155.html
 image=http://magiccards.info/scans/en/rav/155.jpg
 value=3

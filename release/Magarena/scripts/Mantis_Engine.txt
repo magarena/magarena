@@ -1,4 +1,4 @@
->Mantis Engine
+name=Mantis Engine
 url=http://magiccards.info/10e/en/333.html
 image=http://magiccards.info/scans/en/10e/333.jpg
 value=3

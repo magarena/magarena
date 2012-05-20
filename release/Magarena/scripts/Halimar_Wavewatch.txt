@@ -1,4 +1,4 @@
->Halimar Wavewatch
+name=Halimar Wavewatch
 url=http://magiccards.info/roe/en/72.html
 image=http://magiccards.info/scans/en/roe/72.jpg
 value=2

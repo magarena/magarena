@@ -1,4 +1,4 @@
->Deathrender
+name=Deathrender
 url=http://magiccards.info/lw/en/255.html
 image=http://magiccards.info/scans/en/lw/255.jpg
 value=3

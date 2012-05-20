@@ -1,4 +1,4 @@
->Aura Shards
+name=Aura Shards
 url=http://magiccards.info/cmd/en/182.html
 image=http://magiccards.info/scans/en/cmd/182.jpg
 value=4

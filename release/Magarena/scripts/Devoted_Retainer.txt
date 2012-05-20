@@ -1,4 +1,4 @@
->Devoted Retainer
+name=Devoted Retainer
 url=http://magiccards.info/chk/en/7.html
 image=http://magiccards.info/scans/en/chk/7.jpg
 value=1

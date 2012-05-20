@@ -1,4 +1,4 @@
->Ondu Cleric
+name=Ondu Cleric
 url=http://magiccards.info/zen/en/30.html
 image=http://magiccards.info/scans/en/zen/30.jpg
 value=2

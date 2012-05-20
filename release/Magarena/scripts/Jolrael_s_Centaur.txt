@@ -1,4 +1,4 @@
->Jolrael's Centaur
+name=Jolrael's Centaur
 url=http://magiccards.info/mr/en/120.html
 image=http://magiccards.info/scans/en/mr/120.jpg
 value=3

@@ -1,4 +1,4 @@
->Changeling Hero
+name=Changeling Hero
 url=http://magiccards.info/lw/en/9.html
 image=http://magiccards.info/scans/en/lw/9.jpg
 value=4

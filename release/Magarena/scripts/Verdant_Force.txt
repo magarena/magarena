@@ -1,4 +1,4 @@
->Verdant Force
+name=Verdant Force
 url=http://magiccards.info/dpa/en/87.html
 image=http://magiccards.info/scans/en/10e/307.jpg
 value=5

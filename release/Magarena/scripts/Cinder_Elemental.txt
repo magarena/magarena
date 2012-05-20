@@ -1,4 +1,4 @@
->Cinder Elemental
+name=Cinder Elemental
 url=http://magiccards.info/pch/en/51.html
 image=http://magiccards.info/scans/en/pch/51.jpg
 value=3

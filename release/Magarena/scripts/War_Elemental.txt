@@ -1,4 +1,4 @@
->War Elemental
+name=War Elemental
 url=http://magiccards.info/mi/en/112.html
 image=http://magiccards.info/scans/en/mi/112.jpg
 value=3

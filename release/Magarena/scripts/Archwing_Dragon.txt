@@ -1,4 +1,4 @@
->Archwing Dragon
+name=Archwing Dragon
 url=http://magiccards.info/avr/en/126.html
 image=http://magiccards.info/scans/en/avr/126.jpg
 value=4

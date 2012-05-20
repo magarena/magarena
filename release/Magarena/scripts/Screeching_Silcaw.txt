@@ -1,4 +1,4 @@
->Screeching Silcaw
+name=Screeching Silcaw
 url=http://magiccards.info/som/en/42.html
 image=http://magiccards.info/scans/en/som/42.jpg
 value=2

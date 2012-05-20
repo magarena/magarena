@@ -1,4 +1,4 @@
->Vedalken Outlander
+name=Vedalken Outlander
 url=http://magiccards.info/cfx/en/132.html
 image=http://magiccards.info/scans/en/cfx/132.jpg
 value=2

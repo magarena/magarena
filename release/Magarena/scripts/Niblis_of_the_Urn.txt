@@ -1,4 +1,4 @@
->Niblis of the Urn
+name=Niblis of the Urn
 url=http://magiccards.info/dka/en/16.html
 image=http://magiccards.info/scans/en/dka/16.jpg
 value=2

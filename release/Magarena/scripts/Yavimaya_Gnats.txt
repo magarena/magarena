@@ -1,4 +1,4 @@
->Yavimaya Gnats
+name=Yavimaya Gnats
 url=http://magiccards.info/ia/en/168.html
 image=http://magiccards.info/scans/en/ia/168.jpg
 value=1

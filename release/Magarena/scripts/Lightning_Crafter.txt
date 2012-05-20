@@ -1,4 +1,4 @@
->Lightning Crafter
+name=Lightning Crafter
 url=http://magiccards.info/mt/en/93.html
 image=http://magiccards.info/scans/en/mt/93.jpg
 value=4

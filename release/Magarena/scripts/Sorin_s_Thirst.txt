@@ -1,4 +1,4 @@
->Sorin's Thirst
+name=Sorin's Thirst
 url=http://magiccards.info/m12/en/110.html
 image=http://magiccards.info/scans/en/m12/110.jpg
 value=2

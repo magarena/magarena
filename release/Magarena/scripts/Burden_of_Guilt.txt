@@ -1,4 +1,4 @@
->Burden of Guilt
+name=Burden of Guilt
 url=http://magiccards.info/dka/en/4.html
 image=http://magiccards.info/scans/en/dka/4.jpg
 value=2

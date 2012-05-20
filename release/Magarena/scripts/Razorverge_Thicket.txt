@@ -1,10 +1,10 @@
->Razorverge Thicket
+name=Razorverge Thicket
 url=http://magiccards.info/som/en/228.html
 image=http://magiccards.info/scans/en/som/228.jpg
 value=4
 rarity=R
 type=Land
 mana=g3w3
-ability=tap add mana {G} or {W}
-ability=enters tapped unless two
+ability=tap add mana {G} or {W},\
+        enters tapped unless two
 timing=land

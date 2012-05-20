@@ -1,4 +1,4 @@
->Temple Garden
+name=Temple Garden
 url=http://magiccards.info/rav/en/284.html
 image=http://magiccards.info/scans/en/rav/284.jpg
 value=4
@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Forest,Plains
 mana=g3w3
-ability=tap add mana {G} or {W}
-ability=shock land
+ability=tap add mana {G} or {W},\
+        shock land
 timing=land

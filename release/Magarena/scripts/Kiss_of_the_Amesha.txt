@@ -1,4 +1,4 @@
->Kiss of the Amesha
+name=Kiss of the Amesha
 url=http://magiccards.info/ala/en/177.html
 image=http://magiccards.info/scans/en/ala/177.jpg
 value=3

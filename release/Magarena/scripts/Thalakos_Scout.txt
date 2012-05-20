@@ -1,4 +1,4 @@
->Thalakos Scout
+name=Thalakos Scout
 url=http://magiccards.info/ex/en/48.html
 image=http://magiccards.info/scans/en/ex/48.jpg
 value=2

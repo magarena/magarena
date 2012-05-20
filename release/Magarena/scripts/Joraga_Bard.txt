@@ -1,4 +1,4 @@
->Joraga Bard
+name=Joraga Bard
 url=http://magiccards.info/zen/en/166.html
 image=http://magiccards.info/scans/en/zen/166.jpg
 value=2

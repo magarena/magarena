@@ -1,4 +1,4 @@
->Brimstone Mage
+name=Brimstone Mage
 url=http://magiccards.info/roe/en/137.html
 image=http://magiccards.info/scans/en/roe/137.jpg
 value=2

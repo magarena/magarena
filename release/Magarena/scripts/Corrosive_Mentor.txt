@@ -1,4 +1,4 @@
->Corrosive Mentor
+name=Corrosive Mentor
 url=http://magiccards.info/shm/en/61.html
 image=http://magiccards.info/scans/en/shm/61.jpg
 value=3

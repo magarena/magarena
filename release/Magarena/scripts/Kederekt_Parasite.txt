@@ -1,4 +1,4 @@
->Kederekt Parasite
+name=Kederekt Parasite
 url=http://magiccards.info/cfx/en/48.html
 image=http://magiccards.info/scans/en/cfx/48.jpg
 value=2

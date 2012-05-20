@@ -1,4 +1,4 @@
->Avacyn's Collar
+name=Avacyn's Collar
 url=http://magiccards.info/dka/en/145.html
 image=http://magiccards.info/scans/en/dka/145.jpg
 value=2

@@ -1,4 +1,4 @@
->Zombie Infestation
+name=Zombie Infestation
 url=http://magiccards.info/m12/en/120.html
 image=http://magiccards.info/scans/en/m12/120.jpg
 value=2

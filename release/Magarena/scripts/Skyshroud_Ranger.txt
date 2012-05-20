@@ -1,4 +1,4 @@
->Skyshroud Ranger
+name=Skyshroud Ranger
 url=http://magiccards.info/10e/en/297.html
 image=http://magiccards.info/scans/en/10e/297.jpg
 value=2

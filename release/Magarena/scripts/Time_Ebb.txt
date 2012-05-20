@@ -1,4 +1,4 @@
->Time Ebb
+name=Time Ebb
 url=http://magiccards.info/9e/en/107.html
 image=http://magiccards.info/scans/en/9e/107.jpg
 value=3

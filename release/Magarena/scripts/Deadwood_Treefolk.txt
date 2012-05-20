@@ -1,4 +1,4 @@
->Deadwood Treefolk
+name=Deadwood Treefolk
 url=http://magiccards.info/cmd/en/150.html
 image=http://magiccards.info/scans/en/cmd/150.jpg
 value=4

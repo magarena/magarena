@@ -1,4 +1,4 @@
->Merfolk Sovereign
+name=Merfolk Sovereign
 url=http://magiccards.info/m11/en/65.html
 image=http://magiccards.info/scans/en/m11/65.jpg
 value=3

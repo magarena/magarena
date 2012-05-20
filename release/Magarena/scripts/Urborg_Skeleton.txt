@@ -1,4 +1,4 @@
->Urborg Skeleton
+name=Urborg Skeleton
 url=http://magiccards.info/in/en/134.html
 image=http://magiccards.info/scans/en/in/134.jpg
 value=1

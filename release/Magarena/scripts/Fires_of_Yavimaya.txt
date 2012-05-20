@@ -1,4 +1,4 @@
->Fires of Yavimaya
+name=Fires of Yavimaya
 url=http://magiccards.info/arc/en/86.html
 image=http://magiccards.info/scans/en/pch/87.jpg
 value=4

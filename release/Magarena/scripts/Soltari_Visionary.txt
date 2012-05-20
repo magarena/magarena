@@ -1,4 +1,4 @@
->Soltari Visionary
+name=Soltari Visionary
 url=http://magiccards.info/ex/en/20.html
 image=http://magiccards.info/scans/en/ex/20.jpg
 value=3

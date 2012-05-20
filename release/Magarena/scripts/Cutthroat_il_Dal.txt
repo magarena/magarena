@@ -1,4 +1,4 @@
->Cutthroat il-Dal
+name=Cutthroat il-Dal
 url=http://magiccards.info/fut/en/64.html
 image=http://magiccards.info/scans/en/fut/64.jpg
 value=2

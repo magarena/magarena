@@ -1,4 +1,4 @@
->Cradle Guard
+name=Cradle Guard
 url=http://magiccards.info/us/en/245.html
 image=http://magiccards.info/scans/en/us/245.jpg
 value=5

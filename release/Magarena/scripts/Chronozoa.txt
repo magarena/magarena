@@ -1,4 +1,4 @@
->Chronozoa
+name=Chronozoa
 url=http://magiccards.info/pc/en/37.html
 image=http://magiccards.info/scans/en/pc/37.jpg
 value=4

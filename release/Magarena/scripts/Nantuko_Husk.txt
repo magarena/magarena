@@ -1,4 +1,4 @@
->Nantuko Husk
+name=Nantuko Husk
 url=http://magiccards.info/cmd/en/90.html
 image=http://magiccards.info/scans/en/cmd/90.jpg
 value=3

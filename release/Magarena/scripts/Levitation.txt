@@ -1,4 +1,4 @@
->Levitation
+name=Levitation
 url=http://magiccards.info/m12/en/61.html
 image=http://magiccards.info/scans/en/m10/60.jpg
 value=3

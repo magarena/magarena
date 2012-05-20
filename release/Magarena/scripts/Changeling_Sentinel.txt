@@ -1,4 +1,4 @@
->Changeling Sentinel
+name=Changeling Sentinel
 url=http://magiccards.info/mt/en/6.html
 image=http://magiccards.info/scans/en/mt/6.jpg 
 value=3

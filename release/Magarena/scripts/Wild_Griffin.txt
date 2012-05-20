@@ -1,4 +1,4 @@
->Wild Griffin
+name=Wild Griffin
 url=http://magiccards.info/m11/en/40.html
 image=http://magiccards.info/scans/en/m11/40.jpg 
 value=2

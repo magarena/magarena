@@ -1,4 +1,4 @@
->Beacon of Unrest
+name=Beacon of Unrest
 url=http://magiccards.info/arc/en/10.html
 image=http://magiccards.info/scans/en/arc/10.jpg
 value=4

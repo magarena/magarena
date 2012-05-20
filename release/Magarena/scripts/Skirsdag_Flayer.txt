@@ -1,4 +1,4 @@
->Skirsdag Flayer
+name=Skirsdag Flayer
 url=http://magiccards.info/dka/en/74.html
 image=http://magiccards.info/scans/en/dka/74.jpg
 value=2

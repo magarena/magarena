@@ -1,4 +1,4 @@
->Elite Inquisitor
+name=Elite Inquisitor
 url=http://magiccards.info/isd/en/13.html
 image=http://magiccards.info/scans/en/isd/13.jpg
 value=3

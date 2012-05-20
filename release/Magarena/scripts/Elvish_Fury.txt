@@ -1,4 +1,4 @@
->Elvish Fury
+name=Elvish Fury
 url=http://magiccards.info/tp/en/120.html
 image=http://magiccards.info/scans/en/tp/120.jpg
 value=2

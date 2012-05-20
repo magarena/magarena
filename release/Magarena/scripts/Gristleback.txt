@@ -1,4 +1,4 @@
->Gristleback
+name=Gristleback
 url=http://magiccards.info/gp/en/87.html
 image=http://magiccards.info/scans/en/gp/87.jpg
 value=2

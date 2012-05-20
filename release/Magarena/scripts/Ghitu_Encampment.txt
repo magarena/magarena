@@ -1,4 +1,4 @@
->Ghitu Encampment
+name=Ghitu Encampment
 url=http://magiccards.info/10e/en/353.html
 image=http://magiccards.info/scans/en/10e/353.jpg
 value=4

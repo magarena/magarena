@@ -1,4 +1,4 @@
->Shriekgeist
+name=Shriekgeist
 url=http://magiccards.info/dka/en/49.html
 image=http://magiccards.info/scans/en/dka/49.jpg
 value=2

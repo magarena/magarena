@@ -1,4 +1,4 @@
->Disturbed Burial
+name=Disturbed Burial
 url=http://magiccards.info/tp/en/23.html
 image=http://magiccards.info/scans/en/tp/23.jpg
 value=2

@@ -1,4 +1,4 @@
->Norwood Warrior
+name=Norwood Warrior
 url=http://magiccards.info/po2/en/80.html
 image=http://magiccards.info/scans/en/po2/80.jpg
 value=2

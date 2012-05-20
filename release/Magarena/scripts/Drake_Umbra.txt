@@ -1,4 +1,4 @@
->Drake Umbra
+name=Drake Umbra
 url=http://magiccards.info/roe/en/63.html
 image=http://magiccards.info/scans/en/roe/63.jpg
 value=4

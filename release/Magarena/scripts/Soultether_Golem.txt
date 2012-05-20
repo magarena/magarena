@@ -1,4 +1,4 @@
->Soultether Golem
+name=Soultether Golem
 url=http://magiccards.info/fut/en/164.html
 image=http://magiccards.info/scans/en/fut/164.jpg
 value=3

@@ -1,4 +1,4 @@
->Lantern Kami
+name=Lantern Kami
 url=http://magiccards.info/chk/en/32.html
 image=http://magiccards.info/scans/en/chk/32.jpg 
 value=2

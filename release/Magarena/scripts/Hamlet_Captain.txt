@@ -1,4 +1,4 @@
->Hamlet Captain
+name=Hamlet Captain
 url=http://magiccards.info/isd/en/187.html
 image=http://magiccards.info/scans/en/isd/187.jpg
 value=2

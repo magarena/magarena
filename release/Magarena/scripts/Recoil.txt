@@ -1,4 +1,4 @@
->Recoil
+name=Recoil
 url=http://magiccards.info/ddh/en/61.html
 image=http://magiccards.info/scans/en/in/264.jpg
 value=3

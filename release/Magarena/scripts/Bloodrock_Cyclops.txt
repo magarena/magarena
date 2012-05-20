@@ -1,4 +1,4 @@
->Bloodrock Cyclops
+name=Bloodrock Cyclops
 url=http://magiccards.info/10e/en/192.html
 image=http://magiccards.info/scans/en/10e/192.jpg
 value=2

@@ -1,4 +1,4 @@
->Repulse
+name=Repulse
 url=http://magiccards.info/cmd/en/58.html
 image=http://magiccards.info/scans/en/jvc/25.jpg
 value=3

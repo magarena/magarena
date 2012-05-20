@@ -1,4 +1,4 @@
->Arcanis the Omnipotent
+name=Arcanis the Omnipotent
 url=http://magiccards.info/10e/en/66.html
 image=http://magiccards.info/scans/en/10e/66.jpg
 value=5

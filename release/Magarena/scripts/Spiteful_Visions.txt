@@ -1,4 +1,4 @@
->Spiteful Visions
+name=Spiteful Visions
 url=http://magiccards.info/shm/en/198.html
 image=http://magiccards.info/scans/en/shm/198.jpg
 value=3

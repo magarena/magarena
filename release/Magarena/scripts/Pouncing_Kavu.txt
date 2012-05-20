@@ -1,4 +1,4 @@
->Pouncing Kavu
+name=Pouncing Kavu
 url=http://magiccards.info/in/en/158.html
 image=http://magiccards.info/scans/en/in/158.jpg
 value=2

@@ -1,4 +1,4 @@
->Tidehollow Strix
+name=Tidehollow Strix
 url=http://magiccards.info/ala/en/203.html
 image=http://magiccards.info/scans/en/ala/203.jpg
 value=3

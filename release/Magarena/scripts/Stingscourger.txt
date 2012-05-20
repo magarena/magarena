@@ -1,4 +1,4 @@
->Stingscourger
+name=Stingscourger
 url=http://magiccards.info/pc/en/107.html
 image=http://magiccards.info/scans/en/pc/107.jpg
 value=3

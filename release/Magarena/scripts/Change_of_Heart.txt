@@ -1,4 +1,4 @@
->Change of Heart
+name=Change of Heart
 url=http://magiccards.info/sh/en/103.html
 image=http://magiccards.info/scans/en/sh/103.jpg
 value=2

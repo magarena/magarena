@@ -1,4 +1,4 @@
->Ape
+name=Ape
 token=Ape
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=42431&stc=1&d=1173951187
 value=3

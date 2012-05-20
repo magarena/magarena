@@ -1,4 +1,4 @@
->Skywinder Drake
+name=Skywinder Drake
 url=http://magiccards.info/m12/en/75.html
 image=http://magiccards.info/scans/en/m12/75.jpg
 value=3

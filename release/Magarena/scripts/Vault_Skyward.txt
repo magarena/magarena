@@ -1,4 +1,4 @@
->Vault Skyward
+name=Vault Skyward
 url=http://magiccards.info/som/en/51.html
 image=http://magiccards.info/scans/en/som/51.jpg
 value=1

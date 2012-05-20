@@ -1,4 +1,4 @@
->Courier Hawk
+name=Courier Hawk
 url=http://magiccards.info/rav/en/12.html
 image=http://magiccards.info/scans/en/rav/12.jpg 
 value=2

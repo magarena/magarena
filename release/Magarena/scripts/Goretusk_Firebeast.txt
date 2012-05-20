@@ -1,4 +1,4 @@
->Goretusk Firebeast
+name=Goretusk Firebeast
 url=http://magiccards.info/ju/en/91.html
 image=http://magiccards.info/scans/en/ju/91.jpg
 value=3

@@ -1,4 +1,4 @@
->Doomgape
+name=Doomgape
 url=http://magiccards.info/eve/en/120.html
 image=http://magiccards.info/scans/en/eve/120.jpg
 value=5

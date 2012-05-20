@@ -1,4 +1,4 @@
->Zombie Apocalypse
+name=Zombie Apocalypse
 url=http://magiccards.info/dka/en/80.html
 image=http://magiccards.info/scans/en/dka/80.jpg
 value=5

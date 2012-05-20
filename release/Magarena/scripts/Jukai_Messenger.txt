@@ -1,4 +1,4 @@
->Jukai Messenger
+name=Jukai Messenger
 url=http://magiccards.info/chk/en/218.html
 image=http://magiccards.info/scans/en/chk/218.jpg 
 value=1

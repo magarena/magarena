@@ -1,4 +1,4 @@
->Ronin Cliffrider
+name=Ronin Cliffrider
 url=http://magiccards.info/bok/en/116.html
 image=http://magiccards.info/scans/en/bok/116.jpg
 value=3

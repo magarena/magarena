@@ -1,4 +1,4 @@
->Maul Splicer
+name=Maul Splicer
 url=http://magiccards.info/nph/en/114.html
 image=http://magiccards.info/scans/en/nph/114.jpg
 value=5

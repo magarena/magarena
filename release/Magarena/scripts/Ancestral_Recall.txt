@@ -1,4 +1,4 @@
->Ancestral Recall
+name=Ancestral Recall
 url=http://magiccards.info/un/en/48.html
 image=http://magiccards.info/scans/en/un/48.jpg
 value=5

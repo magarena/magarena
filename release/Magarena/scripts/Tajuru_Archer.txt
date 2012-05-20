@@ -1,4 +1,4 @@
->Tajuru Archer
+name=Tajuru Archer
 url=http://magiccards.info/zen/en/185.html
 image=http://magiccards.info/scans/en/zen/185.jpg
 value=2

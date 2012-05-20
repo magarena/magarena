@@ -1,4 +1,4 @@
->Giant Strength
+name=Giant Strength
 url=http://magiccards.info/6e/en/181.html
 image=http://magiccards.info/scans/en/6e/181.jpg
 value=2

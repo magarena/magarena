@@ -1,4 +1,4 @@
->Cursed Ronin
+name=Cursed Ronin
 url=http://magiccards.info/chk/en/107.html
 image=http://magiccards.info/scans/en/chk/107.jpg
 value=3

@@ -1,4 +1,4 @@
->Angel
+name=Angel
 token=Angel4
 image=http://magiccards.info/extras/token/conflux/angel.jpg
 value=4

@@ -1,4 +1,4 @@
->Stun Sniper
+name=Stun Sniper
 url=http://magiccards.info/arb/en/100.html
 image=http://magiccards.info/scans/en/arb/100.jpg
 value=3

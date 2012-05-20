@@ -1,4 +1,4 @@
->Thalakos Drifters
+name=Thalakos Drifters
 url=http://magiccards.info/ex/en/47.html
 image=http://magiccards.info/scans/en/ex/47.jpg
 value=3

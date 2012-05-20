@@ -1,4 +1,4 @@
->Homunculus
+name=Homunculus
 token=Homunculus2
 image=http://magiccards.info/extras/token/innistrad/homunculus.jpg
 value=2

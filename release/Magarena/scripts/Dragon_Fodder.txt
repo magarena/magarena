@@ -1,4 +1,4 @@
->Dragon Fodder
+name=Dragon Fodder
 url=http://magiccards.info/ddg/en/65.html
 image=http://magiccards.info/scans/en/arc/34.jpg
 value=3

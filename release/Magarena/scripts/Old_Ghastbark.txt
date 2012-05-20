@@ -1,4 +1,4 @@
->Old Ghastbark
+name=Old Ghastbark
 url=http://magiccards.info/shm/en/232.html
 image=http://magiccards.info/scans/en/shm/232.jpg 
 value=4

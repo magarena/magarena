@@ -1,4 +1,4 @@
->Elf Warrior
+name=Elf Warrior
 token=Elf1
 image=http://magiccards.info/extras/token/shadowmoor/elf-warrior-1.jpg
 value=1

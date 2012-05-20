@@ -1,4 +1,4 @@
->Rampaging Baloths
+name=Rampaging Baloths
 url=http://magiccards.info/zen/en/178.html
 image=http://magiccards.info/scans/en/zen/178.jpg
 value=5

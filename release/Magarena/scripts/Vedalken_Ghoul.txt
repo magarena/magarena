@@ -1,4 +1,4 @@
->Vedalken Ghoul
+name=Vedalken Ghoul
 url=http://magiccards.info/arb/en/32.html
 image=http://magiccards.info/scans/en/arb/32.jpg
 value=2

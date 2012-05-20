@@ -1,4 +1,4 @@
->Konda's Hatamoto
+name=Konda's Hatamoto
 url=http://magiccards.info/chk/en/31.html
 image=http://magiccards.info/scans/en/chk/31.jpg
 value=2

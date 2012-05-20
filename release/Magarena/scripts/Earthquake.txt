@@ -1,4 +1,4 @@
->Earthquake
+name=Earthquake
 url=http://magiccards.info/cmd/en/121.html
 image=http://magiccards.info/scans/en/m10/134.jpg
 value=3

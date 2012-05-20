@@ -1,4 +1,4 @@
->Rabble-Rouser
+name=Rabble-Rouser
 url=http://magiccards.info/gp/en/73.html
 image=http://magiccards.info/scans/en/gp/73.jpg
 value=2

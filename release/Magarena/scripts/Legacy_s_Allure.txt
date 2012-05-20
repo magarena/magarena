@@ -1,4 +1,4 @@
->Legacy's Allure
+name=Legacy's Allure
 url=http://magiccards.info/tp/en/71.html
 image=http://magiccards.info/scans/en/tp/71.jpg
 value=3

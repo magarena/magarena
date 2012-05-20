@@ -1,4 +1,4 @@
->Deathgazer
+name=Deathgazer
 url=http://magiccards.info/9e/en/124.html
 image=http://magiccards.info/scans/en/9e/124.jpg
 value=3

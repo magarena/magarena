@@ -1,4 +1,4 @@
->Trapjaw Kelpie
+name=Trapjaw Kelpie
 url=http://magiccards.info/eve/en/164.html
 image=http://magiccards.info/scans/en/eve/164.jpg 
 value=4

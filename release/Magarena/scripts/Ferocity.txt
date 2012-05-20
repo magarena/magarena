@@ -1,4 +1,4 @@
->Ferocity
+name=Ferocity
 url=http://magiccards.info/mm/en/245.html
 image=http://magiccards.info/scans/en/mm/245.jpg
 value=3

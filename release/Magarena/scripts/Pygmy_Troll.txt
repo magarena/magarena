@@ -1,4 +1,4 @@
->Pygmy Troll
+name=Pygmy Troll
 url=http://magiccards.info/ex/en/118.html
 image=http://magiccards.info/scans/en/ex/118.jpg
 value=2

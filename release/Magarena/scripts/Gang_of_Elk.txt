@@ -1,4 +1,4 @@
->Gang of Elk
+name=Gang of Elk
 url=http://magiccards.info/7e/en/247.html
 image=http://magiccards.info/scans/en/7e/247.jpg
 value=4

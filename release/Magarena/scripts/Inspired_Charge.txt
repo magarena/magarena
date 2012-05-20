@@ -1,4 +1,4 @@
->Inspired Charge
+name=Inspired Charge
 url=http://magiccards.info/m11/en/19.html
 image=http://magiccards.info/scans/en/m11/19.jpg
 value=3

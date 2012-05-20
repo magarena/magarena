@@ -1,4 +1,4 @@
->Shepherd of the Lost
+name=Shepherd of the Lost
 url=http://magiccards.info/zen/en/34.html
 image=http://magiccards.info/scans/en/zen/34.jpg
 value=4

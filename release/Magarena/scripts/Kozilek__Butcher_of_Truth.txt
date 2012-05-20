@@ -1,4 +1,4 @@
->Kozilek, Butcher of Truth
+name=Kozilek, Butcher of Truth
 url=http://magiccards.info/roe/en/6.html
 image=http://magiccards.info/scans/en/roe/6.jpg
 value=5

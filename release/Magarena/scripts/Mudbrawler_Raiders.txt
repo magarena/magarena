@@ -1,4 +1,4 @@
->Mudbrawler Raiders
+name=Mudbrawler Raiders
 url=http://magiccards.info/shm/en/213.html
 image=http://magiccards.info/scans/en/shm/213.jpg
 value=3

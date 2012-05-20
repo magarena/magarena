@@ -1,4 +1,4 @@
->Leaf Dancer
+name=Leaf Dancer
 url=http://magiccards.info/od/en/249.html
 image=http://magiccards.info/scans/en/od/249.jpg 
 value=2

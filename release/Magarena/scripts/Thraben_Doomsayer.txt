@@ -1,4 +1,4 @@
->Thraben Doomsayer
+name=Thraben Doomsayer
 url=http://magiccards.info/dka/en/25.html
 image=http://magiccards.info/scans/en/dka/25.jpg
 value=3

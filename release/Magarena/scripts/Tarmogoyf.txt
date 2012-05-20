@@ -1,4 +1,4 @@
->Tarmogoyf
+name=Tarmogoyf
 url=http://magiccards.info/fut/en/153.html
 image=http://magiccards.info/scans/en/fut/153.jpg
 value=3

@@ -1,4 +1,4 @@
->Takeno's Cavalry
+name=Takeno's Cavalry
 url=http://magiccards.info/bok/en/24.html
 image=http://magiccards.info/scans/en/bok/24.jpg
 value=2

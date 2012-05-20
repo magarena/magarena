@@ -1,4 +1,4 @@
->Searing Touch
+name=Searing Touch
 url=http://magiccards.info/tp/en/201.html
 image=http://magiccards.info/scans/en/tp/201.jpg
 value=1

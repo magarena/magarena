@@ -1,4 +1,4 @@
->Bird
+name=Bird
 token=Bird
 image=http://magiccards.info/extras/token/magic-2011/bird.jpg
 value=3

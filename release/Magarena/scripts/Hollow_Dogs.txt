@@ -1,4 +1,4 @@
->Hollow Dogs
+name=Hollow Dogs
 url=http://magiccards.info/9e/en/139.html
 image=http://magiccards.info/scans/en/9e/139.jpg
 value=3

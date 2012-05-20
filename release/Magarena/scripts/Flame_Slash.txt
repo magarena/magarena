@@ -1,4 +1,4 @@
->Flame Slash
+name=Flame Slash
 url=http://magiccards.info/roe/en/145.html
 image=http://magiccards.info/scans/en/roe/145.jpg
 value=3

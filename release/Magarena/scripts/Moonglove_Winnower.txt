@@ -1,4 +1,4 @@
->Moonglove Winnower
+name=Moonglove Winnower
 url=http://magiccards.info/dpa/en/29.html
 image=http://magiccards.info/scans/en/dpa/29.jpg 
 value=3

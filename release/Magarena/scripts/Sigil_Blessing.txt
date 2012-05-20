@@ -1,4 +1,4 @@
->Sigil Blessing
+name=Sigil Blessing
 url=http://magiccards.info/ddg/en/30.html
 image=http://magiccards.info/scans/en/ala/195.jpg
 value=3

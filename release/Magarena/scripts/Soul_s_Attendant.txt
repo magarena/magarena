@@ -1,4 +1,4 @@
->Soul's Attendant
+name=Soul's Attendant
 url=http://magiccards.info/roe/en/44.html
 image=http://magiccards.info/scans/en/roe/44.jpg
 value=2

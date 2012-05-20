@@ -1,4 +1,4 @@
->Empyrial Archangel
+name=Empyrial Archangel
 url=http://magiccards.info/ala/en/166.html
 image=http://magiccards.info/scans/en/ala/166.jpg
 value=5

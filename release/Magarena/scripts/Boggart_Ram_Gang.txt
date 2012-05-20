@@ -1,4 +1,4 @@
->Boggart Ram-Gang
+name=Boggart Ram-Gang
 url=http://magiccards.info/pd2/en/13.html
 image=http://magiccards.info/scans/en/shm/203.jpg
 value=3

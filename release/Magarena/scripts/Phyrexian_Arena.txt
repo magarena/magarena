@@ -1,4 +1,4 @@
->Phyrexian Arena
+name=Phyrexian Arena
 url=http://magiccards.info/pvc/en/27.html
 image=http://magiccards.info/scans/en/pch/36.jpg
 value=4

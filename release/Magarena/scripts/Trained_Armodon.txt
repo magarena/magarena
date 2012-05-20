@@ -1,4 +1,4 @@
->Trained Armodon
+name=Trained Armodon
 url=http://magiccards.info/dpa/en/85.html
 image=http://magiccards.info/scans/en/dpa/85.jpg 
 value=3

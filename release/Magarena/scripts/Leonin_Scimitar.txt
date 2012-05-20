@@ -1,4 +1,4 @@
->Leonin Scimitar
+name=Leonin Scimitar
 url=http://magiccards.info/10e/en/331.html
 image=http://magiccards.info/scans/en/10e/331.jpg
 value=2

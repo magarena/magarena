@@ -1,4 +1,4 @@
->Keldon Marauders
+name=Keldon Marauders
 url=http://magiccards.info/pc/en/102.html
 image=http://magiccards.info/scans/en/pc/102.jpg
 value=3

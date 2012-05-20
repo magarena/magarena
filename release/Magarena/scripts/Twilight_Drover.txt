@@ -1,4 +1,4 @@
->Twilight Drover
+name=Twilight Drover
 url=http://magiccards.info/rav/en/33.html
 image=http://magiccards.info/scans/en/rav/33.jpg
 value=2

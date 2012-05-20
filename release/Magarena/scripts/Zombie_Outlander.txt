@@ -1,4 +1,4 @@
->Zombie Outlander
+name=Zombie Outlander
 url=http://magiccards.info/cfx/en/133.html
 image=http://magiccards.info/scans/en/cfx/133.jpg
 value=2

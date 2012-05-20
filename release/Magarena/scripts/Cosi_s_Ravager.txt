@@ -1,4 +1,4 @@
->Cosi's Ravager
+name=Cosi's Ravager
 url=http://magiccards.info/wwk/en/77.html
 image=http://magiccards.info/scans/en/wwk/77.jpg
 value=3

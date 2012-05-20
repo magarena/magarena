@@ -1,4 +1,4 @@
->Thoughtweft Gambit
+name=Thoughtweft Gambit
 url=http://magiccards.info/shm/en/154.html
 image=http://magiccards.info/scans/en/shm/154.jpg
 value=4

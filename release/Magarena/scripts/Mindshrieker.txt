@@ -1,4 +1,4 @@
->Mindshrieker
+name=Mindshrieker
 url=http://magiccards.info/isd/en/67.html
 image=http://magiccards.info/scans/en/isd/67.jpg
 value=2

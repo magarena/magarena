@@ -1,4 +1,4 @@
->Grappler Spider
+name=Grappler Spider
 url=http://magiccards.info/wwk/en/102.html
 image=http://magiccards.info/scans/en/wwk/102.jpg 
 value=1

@@ -1,4 +1,4 @@
->Blood Crypt
+name=Blood Crypt
 url=http://magiccards.info/di/en/171.html
 image=http://magiccards.info/scans/en/di/171.jpg
 value=4
@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Swamp,Mountain
 mana=b3r3
-ability=tap add mana {B} or {R}
-ability=shock land
+ability=tap add mana {B} or {R},\
+        shock land
 timing=land

@@ -1,4 +1,4 @@
->Dauthi Slayer
+name=Dauthi Slayer
 url=http://magiccards.info/tp/en/20.html
 image=http://magiccards.info/scans/en/tp/20.jpg
 value=2

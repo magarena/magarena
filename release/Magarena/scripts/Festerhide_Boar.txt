@@ -1,4 +1,4 @@
->Festerhide Boar
+name=Festerhide Boar
 url=http://magiccards.info/isd/en/179.html
 image=http://magiccards.info/scans/en/isd/179.jpg
 value=3

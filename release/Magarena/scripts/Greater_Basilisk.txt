@@ -1,4 +1,4 @@
->Greater Basilisk
+name=Greater Basilisk
 url=http://magiccards.info/m12/en/179.html
 image=http://magiccards.info/scans/en/m11/180.jpg 
 value=4

@@ -1,4 +1,4 @@
->Stalker Hag
+name=Stalker Hag
 url=http://magiccards.info/eve/en/129.html
 image=http://magiccards.info/scans/en/eve/129.jpg
 value=3

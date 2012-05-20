@@ -1,4 +1,4 @@
->Shadowmage Infiltrator
+name=Shadowmage Infiltrator
 url=http://magiccards.info/tsts/en/99.html
 image=http://magiccards.info/scans/en/tsts/99.jpg
 value=4

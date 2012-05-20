@@ -1,4 +1,4 @@
->Mothrider Samurai
+name=Mothrider Samurai
 url=http://magiccards.info/chk/en/34.html
 image=http://magiccards.info/scans/en/chk/34.jpg
 value=3

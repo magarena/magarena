@@ -1,4 +1,4 @@
->Dross Hopper
+name=Dross Hopper
 url=http://magiccards.info/som/en/60.html
 image=http://magiccards.info/scans/en/som/60.jpg
 value=2

@@ -1,4 +1,4 @@
->Journey to Nowhere
+name=Journey to Nowhere
 url=http://magiccards.info/cmd/en/17.html
 image=http://magiccards.info/scans/en/cmd/17.jpg
 value=3

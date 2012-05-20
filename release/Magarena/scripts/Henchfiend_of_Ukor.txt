@@ -1,4 +1,4 @@
->Henchfiend of Ukor
+name=Henchfiend of Ukor
 url=http://magiccards.info/fut/en/117.html
 image=http://magiccards.info/scans/en/fut/117.jpg
 value=3

@@ -1,4 +1,4 @@
->Griffin Sentinel
+name=Griffin Sentinel
 url=http://magiccards.info/m12/en/21.html
 image=http://magiccards.info/scans/en/m10/12.jpg 
 value=2

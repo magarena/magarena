@@ -1,4 +1,4 @@
->Swamp Mosquito
+name=Swamp Mosquito
 url=http://magiccards.info/ai/en/30.html
 image=http://magiccards.info/scans/en/ai/30.jpg
 value=1

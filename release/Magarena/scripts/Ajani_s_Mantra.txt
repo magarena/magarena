@@ -1,4 +1,4 @@
->Ajani's Mantra
+name=Ajani's Mantra
 url=http://magiccards.info/ddh/en/22.html
 image=http://magiccards.info/scans/en/m11/2.jpg
 value=3

@@ -1,4 +1,4 @@
->Wren's Run Packmaster
+name=Wren's Run Packmaster
 url=http://magiccards.info/lw/en/244.html
 image=http://magiccards.info/scans/en/lw/244.jpg
 value=5

@@ -1,4 +1,4 @@
->Goblin Shortcutter
+name=Goblin Shortcutter
 url=http://magiccards.info/zen/en/128.html
 image=http://magiccards.info/scans/en/zen/128.jpg
 value=2

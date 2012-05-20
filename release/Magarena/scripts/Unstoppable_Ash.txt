@@ -1,4 +1,4 @@
->Unstoppable Ash
+name=Unstoppable Ash
 url=http://magiccards.info/mt/en/137.html
 image=http://magiccards.info/scans/en/mt/137.jpg
 value=5

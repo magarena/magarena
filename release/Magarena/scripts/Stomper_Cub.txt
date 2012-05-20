@@ -1,4 +1,4 @@
->Stomper Cub
+name=Stomper Cub
 url=http://magiccards.info/roe/en/210.html
 image=http://magiccards.info/scans/en/roe/210.jpg 
 value=4

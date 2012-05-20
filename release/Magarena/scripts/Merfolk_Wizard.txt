@@ -1,4 +1,4 @@
->Merfolk Wizard
+name=Merfolk Wizard
 token=Merfolk Wizard
 image=http://magiccards.info/extras/token/lorwyn/merfolk-wizard.jpg
 value=1

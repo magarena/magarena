@@ -1,4 +1,4 @@
->Omnibian
+name=Omnibian
 url=http://magiccards.info/di/en/119.html
 image=http://magiccards.info/scans/en/di/119.jpg
 value=4

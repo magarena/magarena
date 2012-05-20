@@ -1,4 +1,4 @@
->Halt Order
+name=Halt Order
 url=http://magiccards.info/som/en/34.html
 image=http://magiccards.info/scans/en/som/34.jpg
 value=3

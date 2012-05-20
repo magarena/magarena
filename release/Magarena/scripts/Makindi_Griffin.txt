@@ -1,4 +1,4 @@
->Makindi Griffin
+name=Makindi Griffin
 url=http://magiccards.info/roe/en/36.html
 image=http://magiccards.info/scans/en/roe/36.jpg 
 value=3

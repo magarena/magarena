@@ -1,4 +1,4 @@
->Petravark
+name=Petravark
 url=http://magiccards.info/tr/en/109.html
 image=http://magiccards.info/scans/en/tr/109.jpg
 value=2

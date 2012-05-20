@@ -1,4 +1,4 @@
->Loxodon Hierarch
+name=Loxodon Hierarch
 url=http://magiccards.info/ddh/en/15.html
 image=http://magiccards.info/scans/en/rav/214.jpg
 value=4

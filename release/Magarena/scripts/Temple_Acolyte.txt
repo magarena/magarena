@@ -1,4 +1,4 @@
->Temple Acolyte
+name=Temple Acolyte
 url=http://magiccards.info/po2/en/143.html
 image=http://magiccards.info/scans/en/po2/143.jpg
 value=2

@@ -1,4 +1,4 @@
->Guardian of the Guildpact
+name=Guardian of the Guildpact
 url=http://magiccards.info/di/en/10.html
 image=http://magiccards.info/scans/en/di/10.jpg
 value=4

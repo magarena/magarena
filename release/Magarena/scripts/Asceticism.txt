@@ -1,4 +1,4 @@
->Asceticism
+name=Asceticism
 url=http://magiccards.info/som/en/110.html
 image=http://magiccards.info/scans/en/som/110.jpg
 value=5

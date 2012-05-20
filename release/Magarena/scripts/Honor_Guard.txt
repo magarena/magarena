@@ -1,4 +1,4 @@
->Honor Guard
+name=Honor Guard
 url=http://magiccards.info/10e/en/23.html
 image=http://magiccards.info/scans/en/10e/23.jpg
 value=1

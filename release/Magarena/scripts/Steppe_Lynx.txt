@@ -1,4 +1,4 @@
->Steppe Lynx
+name=Steppe Lynx
 url=http://magiccards.info/zen/en/36.html
 image=http://magiccards.info/scans/en/zen/36.jpg
 value=2

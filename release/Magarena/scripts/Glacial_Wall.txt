@@ -1,4 +1,4 @@
->Glacial Wall
+name=Glacial Wall
 url=http://magiccards.info/7e/en/78.html
 image=http://magiccards.info/scans/en/7e/78.jpg 
 value=2

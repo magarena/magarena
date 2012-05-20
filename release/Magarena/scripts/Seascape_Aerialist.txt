@@ -1,4 +1,4 @@
->Seascape Aerialist
+name=Seascape Aerialist
 url=http://magiccards.info/zen/en/64.html
 image=http://magiccards.info/scans/en/zen/64.jpg
 value=2

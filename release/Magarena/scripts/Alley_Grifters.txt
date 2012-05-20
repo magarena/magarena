@@ -1,4 +1,4 @@
->Alley Grifters
+name=Alley Grifters
 url=http://magiccards.info/mm/en/115.html
 image=http://magiccards.info/scans/en/mm/115.jpg
 value=3

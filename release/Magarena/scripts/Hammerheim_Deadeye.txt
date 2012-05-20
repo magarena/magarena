@@ -1,4 +1,4 @@
->Hammerheim Deadeye
+name=Hammerheim Deadeye
 url=http://magiccards.info/pc/en/101.html
 image=http://magiccards.info/scans/en/pc/101.jpg
 value=3

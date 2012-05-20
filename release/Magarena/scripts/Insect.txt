@@ -1,4 +1,4 @@
->Insect
+name=Insect
 token=Insect1
 image=http://magiccards.info/extras/token/scars-of-mirrodin/insect.jpg
 value=1

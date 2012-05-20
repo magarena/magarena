@@ -1,4 +1,4 @@
->AEther Figment
+name=AEther Figment
 url=http://magiccards.info/zen/en/40.html
 image=http://magiccards.info/scans/en/zen/40.jpg
 value=2

@@ -1,4 +1,4 @@
->Suq'Ata Lancer
+name=Suq'Ata Lancer
 url=http://magiccards.info/tsts/en/69.html
 image=http://magiccards.info/scans/en/tsts/69.jpg
 value=3

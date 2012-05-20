@@ -1,4 +1,4 @@
->True Conviction
+name=True Conviction
 url=http://magiccards.info/som/en/25.html
 image=http://magiccards.info/scans/en/som/25.jpg
 value=4

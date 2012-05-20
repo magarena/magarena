@@ -1,4 +1,4 @@
->Devout Lightcaster
+name=Devout Lightcaster
 url=http://magiccards.info/zen/en/10.html
 image=http://magiccards.info/scans/en/zen/10.jpg
 value=3

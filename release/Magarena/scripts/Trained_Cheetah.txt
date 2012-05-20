@@ -1,4 +1,4 @@
->Trained Cheetah
+name=Trained Cheetah
 url=http://magiccards.info/p3k/en/154.html
 image=http://magiccards.info/scans/en/p3k/154.jpg
 value=2

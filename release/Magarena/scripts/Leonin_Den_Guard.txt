@@ -1,4 +1,4 @@
->Leonin Den-Guard
+name=Leonin Den-Guard
 url=http://magiccards.info/mi/en/9.html
 image=http://magiccards.info/scans/en/mi/9.jpg
 value=2

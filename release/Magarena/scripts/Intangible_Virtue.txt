@@ -1,4 +1,4 @@
->Intangible Virtue
+name=Intangible Virtue
 url=http://magiccards.info/isd/en/19.html
 image=http://magiccards.info/scans/en/isd/19.jpg
 value=3

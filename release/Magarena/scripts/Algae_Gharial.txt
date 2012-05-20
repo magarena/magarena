@@ -1,4 +1,4 @@
->Algae Gharial
+name=Algae Gharial
 url=http://magiccards.info/ala/en/123.html
 image=http://magiccards.info/scans/en/ala/123.jpg
 value=2

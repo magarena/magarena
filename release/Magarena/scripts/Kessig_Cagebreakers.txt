@@ -1,4 +1,4 @@
->Kessig Cagebreakers
+name=Kessig Cagebreakers
 url=http://magiccards.info/isd/en/189.html
 image=http://magiccards.info/scans/en/isd/189.jpg
 value=4

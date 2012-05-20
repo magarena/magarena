@@ -1,4 +1,4 @@
->Charging Bandits
+name=Charging Bandits
 url=http://magiccards.info/po/en/6.html
 image=http://magiccards.info/scans/en/po/6.jpg
 value=3

@@ -1,4 +1,4 @@
->Mind Spring
+name=Mind Spring
 url=http://magiccards.info/dpa/en/12.html
 image=http://magiccards.info/scans/en/m10/64.jpg
 value=4

@@ -1,4 +1,4 @@
->Scab-Clan Mauler
+name=Scab-Clan Mauler
 url=http://magiccards.info/gp/en/128.html
 image=http://magiccards.info/scans/en/gp/128.jpg
 value=2

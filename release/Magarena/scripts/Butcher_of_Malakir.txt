@@ -1,4 +1,4 @@
->Butcher of Malakir
+name=Butcher of Malakir
 url=http://magiccards.info/cmd/en/75.html
 image=http://magiccards.info/scans/en/wwk/53.jpg
 value=5

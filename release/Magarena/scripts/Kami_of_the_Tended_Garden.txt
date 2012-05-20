@@ -1,4 +1,4 @@
->Kami of the Tended Garden
+name=Kami of the Tended Garden
 url=http://magiccards.info/sok/en/134.html
 image=http://magiccards.info/scans/en/sok/134.jpg
 value=3

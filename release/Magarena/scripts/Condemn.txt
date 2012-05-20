@@ -1,4 +1,4 @@
->Condemn
+name=Condemn
 url=http://magiccards.info/m11/en/11.html
 image=http://magiccards.info/scans/en/m11/11.jpg
 value=2

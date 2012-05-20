@@ -1,4 +1,4 @@
->Trusty Machete
+name=Trusty Machete
 url=http://magiccards.info/zen/en/209.html
 image=http://magiccards.info/scans/en/zen/209.jpg
 value=2

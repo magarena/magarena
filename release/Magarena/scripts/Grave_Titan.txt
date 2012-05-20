@@ -1,4 +1,4 @@
->Grave Titan
+name=Grave Titan
 url=http://magiccards.info/m12/en/98.html
 image=http://magiccards.info/scans/en/m11/97.jpg
 value=5

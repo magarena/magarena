@@ -1,4 +1,4 @@
->Treva, the Renewer
+name=Treva, the Renewer
 url=http://magiccards.info/pvc/en/49.html
 image=http://magiccards.info/scans/en/pvc/49.jpg
 value=5

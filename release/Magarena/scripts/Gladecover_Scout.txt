@@ -1,4 +1,4 @@
->Gladecover Scout
+name=Gladecover Scout
 url=http://magiccards.info/m12/en/178.html
 image=http://magiccards.info/scans/en/m12/178.jpg
 value=2

@@ -1,4 +1,4 @@
->Sword of Light and Shadow
+name=Sword of Light and Shadow
 url=http://magiccards.info/ds/en/149.html
 image=http://magiccards.info/scans/en/ds/149.jpg
 value=5

@@ -1,4 +1,4 @@
->Rendclaw Trow
+name=Rendclaw Trow
 url=http://magiccards.info/eve/en/127.html
 image=http://magiccards.info/scans/en/eve/127.jpg
 value=2

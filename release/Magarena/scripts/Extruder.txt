@@ -1,4 +1,4 @@
->Extruder
+name=Extruder
 url=http://magiccards.info/ud/en/130.html
 image=http://magiccards.info/scans/en/ud/130.jpg
 value=4

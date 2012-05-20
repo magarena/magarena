@@ -1,4 +1,4 @@
->Ghalma's Warden
+name=Ghalma's Warden
 url=http://magiccards.info/som/en/8.html
 image=http://magiccards.info/scans/en/som/8.jpg
 value=3

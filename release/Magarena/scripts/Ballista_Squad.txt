@@ -1,4 +1,4 @@
->Ballista Squad
+name=Ballista Squad
 url=http://magiccards.info/10e/en/8.html
 image=http://magiccards.info/scans/en/10e/8.jpg
 value=3

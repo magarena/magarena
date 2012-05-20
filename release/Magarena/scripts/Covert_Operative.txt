@@ -1,4 +1,4 @@
->Covert Operative
+name=Covert Operative
 url=http://magiccards.info/le/en/33.html
 image=http://magiccards.info/scans/en/le/33.jpg 
 value=3

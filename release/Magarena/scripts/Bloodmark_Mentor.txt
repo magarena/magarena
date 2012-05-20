@@ -1,4 +1,4 @@
->Bloodmark Mentor
+name=Bloodmark Mentor
 url=http://magiccards.info/ddg/en/50.html
 image=http://magiccards.info/scans/en/shm/83.jpg
 value=2

@@ -1,4 +1,4 @@
->Mox Opal
+name=Mox Opal
 url=http://magiccards.info/som/en/179.html
 image=http://magiccards.info/scans/en/som/179.jpg
 value=5

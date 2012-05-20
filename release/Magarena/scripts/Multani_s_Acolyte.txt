@@ -1,4 +1,4 @@
->Multani's Acolyte
+name=Multani's Acolyte
 url=http://magiccards.info/ul/en/108.html
 image=http://magiccards.info/scans/en/ul/108.jpg
 value=2

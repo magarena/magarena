@@ -1,4 +1,4 @@
->Keiga, the Tide Star
+name=Keiga, the Tide Star
 url=http://magiccards.info/chk/en/72.html
 image=http://magiccards.info/scans/en/chk/72.jpg
 value=5

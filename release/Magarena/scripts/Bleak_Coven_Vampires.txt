@@ -1,4 +1,4 @@
->Bleak Coven Vampires
+name=Bleak Coven Vampires
 url=http://magiccards.info/som/en/55.html
 image=http://magiccards.info/scans/en/som/55.jpg
 value=3

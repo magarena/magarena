@@ -1,4 +1,4 @@
->Sokenzan Bruiser
+name=Sokenzan Bruiser
 url=http://magiccards.info/chk/en/188.html
 image=http://magiccards.info/scans/en/chk/188.jpg 
 value=3

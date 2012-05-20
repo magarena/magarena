@@ -1,4 +1,4 @@
->Kingfisher
+name=Kingfisher
 url=http://magiccards.info/ud/en/36.html
 image=http://magiccards.info/scans/en/ud/36.jpg
 value=2

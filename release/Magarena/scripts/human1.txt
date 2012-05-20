@@ -1,4 +1,4 @@
->Human
+name=Human
 token=Human1
 image=http://magiccards.info/extras/token/dark-ascension/human.jpg
 value=1

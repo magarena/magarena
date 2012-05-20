@@ -1,4 +1,4 @@
->Yavimaya Enchantress
+name=Yavimaya Enchantress
 url=http://magiccards.info/10e/en/310.html
 image=http://magiccards.info/scans/en/10e/310.jpg
 value=3

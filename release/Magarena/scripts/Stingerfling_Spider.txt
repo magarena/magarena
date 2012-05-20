@@ -1,4 +1,4 @@
->Stingerfling Spider
+name=Stingerfling Spider
 url=http://magiccards.info/m12/en/197.html
 image=http://magiccards.info/scans/en/m12/197.jpg
 value=3

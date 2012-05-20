@@ -1,4 +1,4 @@
->Spark Elemental
+name=Spark Elemental
 url=http://magiccards.info/pd2/en/4.html
 image=http://magiccards.info/scans/en/10e/237.jpg
 value=2

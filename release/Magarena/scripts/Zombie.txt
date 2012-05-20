@@ -1,4 +1,4 @@
->Zombie
+name=Zombie
 token=Zombie
 image=http://magiccards.info/extras/token/shards-of-alara/zombie.jpg
 value=2

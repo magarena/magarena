@@ -1,4 +1,4 @@
->Heckling Fiends
+name=Heckling Fiends
 url=http://magiccards.info/dka/en/92.html
 image=http://magiccards.info/scans/en/dka/92.jpg
 value=2

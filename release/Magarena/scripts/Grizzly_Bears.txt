@@ -1,4 +1,4 @@
->Grizzly Bears
+name=Grizzly Bears
 url=http://magiccards.info/10e/en/268.html
 image=http://magiccards.info/scans/en/10e/268.jpg 
 value=1

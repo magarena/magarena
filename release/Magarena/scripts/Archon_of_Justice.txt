@@ -1,4 +1,4 @@
->Archon of Justice
+name=Archon of Justice
 url=http://magiccards.info/m12/en/6.html
 image=http://magiccards.info/scans/en/eve/1.jpg
 value=4

@@ -1,4 +1,4 @@
->Leatherback Baloth
+name=Leatherback Baloth
 url=http://magiccards.info/wwk/en/107.html
 image=http://magiccards.info/scans/en/wwk/107.jpg 
 value=4

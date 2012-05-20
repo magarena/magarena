@@ -1,4 +1,4 @@
->Wall of Tears
+name=Wall of Tears
 url=http://magiccards.info/sh/en/50.html
 image=http://magiccards.info/scans/en/sh/50.jpg
 value=2

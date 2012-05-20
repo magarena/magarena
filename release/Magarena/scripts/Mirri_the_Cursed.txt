@@ -1,4 +1,4 @@
->Mirri the Cursed
+name=Mirri the Cursed
 url=http://magiccards.info/pc/en/75.html
 image=http://magiccards.info/scans/en/pc/75.jpg
 value=4

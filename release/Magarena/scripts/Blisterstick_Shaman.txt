@@ -1,4 +1,4 @@
->Blisterstick Shaman
+name=Blisterstick Shaman
 url=http://magiccards.info/mbs/en/58.html
 image=http://magiccards.info/scans/en/mbs/58.jpg
 value=2

@@ -1,4 +1,4 @@
->Blood Ogre
+name=Blood Ogre
 url=http://magiccards.info/m12/en/122.html
 image=http://magiccards.info/scans/en/m12/122.jpg
 value=3

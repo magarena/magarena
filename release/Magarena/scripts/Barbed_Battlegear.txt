@@ -1,4 +1,4 @@
->Barbed Battlegear
+name=Barbed Battlegear
 url=http://magiccards.info/som/en/139.html
 image=http://magiccards.info/scans/en/som/139.jpg
 value=3

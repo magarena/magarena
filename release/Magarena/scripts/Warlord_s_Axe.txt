@@ -1,4 +1,4 @@
->Warlord's Axe
+name=Warlord's Axe
 url=http://magiccards.info/m11/en/220.html
 image=http://magiccards.info/scans/en/m11/220.jpg
 value=2

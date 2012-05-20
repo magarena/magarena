@@ -1,4 +1,4 @@
->Arcbound Slith
+name=Arcbound Slith
 url=http://magiccards.info/pch/en/106.html
 image=http://magiccards.info/scans/en/pch/106.jpg
 value=2

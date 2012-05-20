@@ -1,4 +1,4 @@
->Sickle Ripper
+name=Sickle Ripper
 url=http://magiccards.info/shm/en/77.html
 image=http://magiccards.info/scans/en/shm/77.jpg
 value=2

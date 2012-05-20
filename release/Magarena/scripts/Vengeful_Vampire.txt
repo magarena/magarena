@@ -1,4 +1,4 @@
->Vengeful Vampire
+name=Vengeful Vampire
 url=http://magiccards.info/dka/en/78.html
 image=http://magiccards.info/scans/en/dka/78.jpg
 value=3

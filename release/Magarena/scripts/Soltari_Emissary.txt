@@ -1,4 +1,4 @@
->Soltari Emissary
+name=Soltari Emissary
 url=http://magiccards.info/tp/en/254.html
 image=http://magiccards.info/scans/en/tp/254.jpg
 value=3

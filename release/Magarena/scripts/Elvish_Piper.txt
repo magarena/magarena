@@ -1,4 +1,4 @@
->Elvish Piper
+name=Elvish Piper
 url=http://magiccards.info/m10/en/177.html
 image=http://magiccards.info/scans/en/m10/177.jpg
 value=3

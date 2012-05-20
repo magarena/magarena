@@ -1,4 +1,4 @@
->Angel of Mercy
+name=Angel of Mercy
 url=http://magiccards.info/dvd/en/9.html
 image=http://magiccards.info/scans/en/10e/2.jpg
 value=3

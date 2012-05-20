@@ -1,4 +1,4 @@
->Kitsune Blademaster
+name=Kitsune Blademaster
 url=http://magiccards.info/chk/en/25.html
 image=http://magiccards.info/scans/en/chk/25.jpg
 value=3

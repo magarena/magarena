@@ -1,4 +1,4 @@
->Affa Guard Hound
+name=Affa Guard Hound
 url=http://magiccards.info/roe/en/14.html
 image=http://magiccards.info/scans/en/roe/14.jpg
 value=3

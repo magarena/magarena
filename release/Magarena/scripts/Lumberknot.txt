@@ -1,4 +1,4 @@
->Lumberknot
+name=Lumberknot
 url=http://magiccards.info/isd/en/191.html
 image=http://magiccards.info/scans/en/isd/191.jpg
 value=2

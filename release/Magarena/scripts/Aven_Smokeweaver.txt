@@ -1,4 +1,4 @@
->Aven Smokeweaver
+name=Aven Smokeweaver
 url=http://magiccards.info/od/en/64.html
 image=http://magiccards.info/scans/en/od/64.jpg 
 value=3

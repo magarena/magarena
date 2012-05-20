@@ -1,4 +1,4 @@
->Vastwood Gorger
+name=Vastwood Gorger
 url=http://magiccards.info/m12/en/200.html
 image=http://magiccards.info/scans/en/zen/192.jpg 
 value=4

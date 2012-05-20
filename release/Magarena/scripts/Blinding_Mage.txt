@@ -1,4 +1,4 @@
->Blinding Mage
+name=Blinding Mage
 url=http://magiccards.info/m11/en/8.html
 image=http://magiccards.info/scans/en/m11/8.jpg
 value=2

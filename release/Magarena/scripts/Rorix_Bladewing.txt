@@ -1,4 +1,4 @@
->Rorix Bladewing
+name=Rorix Bladewing
 url=http://magiccards.info/pch/en/65.html
 image=http://magiccards.info/scans/en/pch/65.jpg
 value=5

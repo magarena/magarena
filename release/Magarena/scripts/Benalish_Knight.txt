@@ -1,4 +1,4 @@
->Benalish Knight
+name=Benalish Knight
 url=http://magiccards.info/10e/en/11.html
 image=http://magiccards.info/scans/en/10e/11.jpg 
 value=3

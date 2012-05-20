@@ -1,4 +1,4 @@
->Snorting Gahr
+name=Snorting Gahr
 url=http://magiccards.info/mm/en/272.html
 image=http://magiccards.info/scans/en/mm/272.jpg
 value=3

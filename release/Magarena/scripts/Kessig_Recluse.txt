@@ -1,4 +1,4 @@
->Kessig Recluse
+name=Kessig Recluse
 url=http://magiccards.info/dka/en/121.html
 image=http://magiccards.info/scans/en/dka/121.jpg
 value=3

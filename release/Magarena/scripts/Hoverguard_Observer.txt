@@ -1,4 +1,4 @@
->Hoverguard Observer
+name=Hoverguard Observer
 url=http://magiccards.info/ds/en/22.html
 image=http://magiccards.info/scans/en/ds/22.jpg 
 value=3

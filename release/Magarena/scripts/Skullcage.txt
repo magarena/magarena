@@ -1,4 +1,4 @@
->Skullcage
+name=Skullcage
 url=http://magiccards.info/arc/en/115.html
 image=http://magiccards.info/scans/en/arc/115.jpg
 value=4

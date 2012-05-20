@@ -1,4 +1,4 @@
->Llanowar Knight
+name=Llanowar Knight
 url=http://magiccards.info/in/en/254.html
 image=http://magiccards.info/scans/en/in/254.jpg 
 value=2

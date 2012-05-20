@@ -1,4 +1,4 @@
->Disenchant
+name=Disenchant
 url=http://magiccards.info/tsts/en/6.html
 image=http://magiccards.info/scans/en/tsts/6.jpg
 value=2

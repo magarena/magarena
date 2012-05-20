@@ -1,4 +1,4 @@
->Exhume
+name=Exhume
 url=http://magiccards.info/br/en/24.html
 image=http://magiccards.info/scans/en/br/24.jpg
 value=2

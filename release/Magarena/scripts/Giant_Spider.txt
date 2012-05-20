@@ -1,4 +1,4 @@
->Giant Spider
+name=Giant Spider
 url=http://magiccards.info/m12/en/177.html
 image=http://magiccards.info/scans/en/dpa/67.jpg 
 value=3

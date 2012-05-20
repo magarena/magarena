@@ -1,4 +1,4 @@
->Shadow Rider
+name=Shadow Rider
 url=http://magiccards.info/wl/en/21.html
 image=http://magiccards.info/scans/en/wl/21.jpg
 value=3

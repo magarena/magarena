@@ -1,4 +1,4 @@
->Anaba Bodyguard
+name=Anaba Bodyguard
 url=http://magiccards.info/10e/en/187.html
 image=http://magiccards.info/scans/en/10e/187.jpg 
 value=1

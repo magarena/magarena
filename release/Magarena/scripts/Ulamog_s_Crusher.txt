@@ -1,4 +1,4 @@
->Ulamog's Crusher
+name=Ulamog's Crusher
 url=http://magiccards.info/roe/en/13.html
 image=http://magiccards.info/scans/en/roe/13.jpg
 value=5

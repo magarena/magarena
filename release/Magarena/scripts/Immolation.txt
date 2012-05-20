@@ -1,4 +1,4 @@
->Immolation
+name=Immolation
 url=http://magiccards.info/4e/en/222.html
 image=http://magiccards.info/scans/en/4e/222.jpg
 value=2

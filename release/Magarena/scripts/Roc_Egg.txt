@@ -1,4 +1,4 @@
->Roc Egg
+name=Roc Egg
 url=http://magiccards.info/m12/en/32.html
 image=http://magiccards.info/scans/en/m12/32.jpg
 value=3

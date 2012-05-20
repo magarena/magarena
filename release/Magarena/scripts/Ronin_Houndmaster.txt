@@ -1,4 +1,4 @@
->Ronin Houndmaster
+name=Ronin Houndmaster
 url=http://magiccards.info/chk/en/184.html
 image=http://magiccards.info/scans/en/chk/184.jpg
 value=2

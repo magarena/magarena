@@ -1,4 +1,4 @@
->Break of Day
+name=Break of Day
 url=http://magiccards.info/dka/en/3.html
 image=http://magiccards.info/scans/en/dka/3.jpg
 value=3

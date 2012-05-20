@@ -1,4 +1,4 @@
->Mycoid Shepherd
+name=Mycoid Shepherd
 url=http://magiccards.info/arb/en/73.html
 image=http://magiccards.info/scans/en/arb/73.jpg
 value=4

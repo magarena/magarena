@@ -1,4 +1,4 @@
->Anurid Murkdiver
+name=Anurid Murkdiver
 url=http://magiccards.info/on/en/124.html
 image=http://magiccards.info/scans/en/on/124.jpg 
 value=4

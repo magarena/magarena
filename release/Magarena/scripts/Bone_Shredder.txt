@@ -1,4 +1,4 @@
->Bone Shredder
+name=Bone Shredder
 url=http://magiccards.info/pvc/en/5.html
 image=http://magiccards.info/scans/en/pvc/5.jpg
 value=2

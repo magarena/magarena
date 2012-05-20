@@ -1,4 +1,4 @@
->Zombie Giant
+name=Zombie Giant
 token=Zombie Giant
 image=http://magiccards.info/extras/token/zendikar/zombie-giant.jpg
 value=4

@@ -1,4 +1,4 @@
->Cloudcrown Oak
+name=Cloudcrown Oak
 url=http://magiccards.info/lw/en/201.html
 image=http://magiccards.info/scans/en/lw/201.jpg 
 value=3

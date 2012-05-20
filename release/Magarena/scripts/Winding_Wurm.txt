@@ -1,4 +1,4 @@
->Winding Wurm
+name=Winding Wurm
 url=http://magiccards.info/us/en/285.html
 image=http://magiccards.info/scans/en/us/285.jpg
 value=5

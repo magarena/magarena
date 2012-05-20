@@ -1,4 +1,4 @@
->Acridian
+name=Acridian
 url=http://magiccards.info/us/en/230.html
 image=http://magiccards.info/scans/en/us/230.jpg
 value=2

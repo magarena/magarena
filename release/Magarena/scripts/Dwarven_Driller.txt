@@ -1,4 +1,4 @@
->Dwarven Driller
+name=Dwarven Driller
 url=http://magiccards.info/ju/en/85.html
 image=http://magiccards.info/scans/en/ju/85.jpg
 value=3

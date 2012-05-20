@@ -1,4 +1,4 @@
->Wall of Brambles
+name=Wall of Brambles
 url=http://magiccards.info/5e/en/200.html
 image=http://magiccards.info/scans/en/5e/200.jpg
 value=3

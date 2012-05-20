@@ -1,4 +1,4 @@
->Game-Trail Changeling
+name=Game-Trail Changeling
 url=http://magiccards.info/mt/en/123.html
 image=http://magiccards.info/scans/en/mt/123.jpg 
 value=4

@@ -1,4 +1,4 @@
->Mirror Entity
+name=Mirror Entity
 url=http://magiccards.info/lw/en/31.html
 image=http://magiccards.info/scans/en/lw/31.jpg
 value=4

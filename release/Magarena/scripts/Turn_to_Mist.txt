@@ -1,4 +1,4 @@
->Turn to Mist
+name=Turn to Mist
 url=http://magiccards.info/shm/en/155.html
 image=http://magiccards.info/scans/en/shm/155.jpg
 value=3

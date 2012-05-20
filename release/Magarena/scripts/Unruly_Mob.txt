@@ -1,4 +1,4 @@
->Unruly Mob
+name=Unruly Mob
 url=http://magiccards.info/isd/en/39.html
 image=http://magiccards.info/scans/en/isd/39.jpg
 value=2

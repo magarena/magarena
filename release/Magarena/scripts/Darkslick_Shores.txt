@@ -1,10 +1,10 @@
->Darkslick Shores
+name=Darkslick Shores
 url=http://magiccards.info/som/en/226.html
 image=http://magiccards.info/scans/en/som/226.jpg
 value=4
 rarity=R
 type=Land
 mana=u3b3
-ability=tap add mana {U} or {B}
-ability=enters tapped unless two
+ability=tap add mana {U} or {B},\
+        enters tapped unless two
 timing=land

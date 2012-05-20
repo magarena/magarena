@@ -1,4 +1,4 @@
->Troll Ascetic
+name=Troll Ascetic
 url=http://magiccards.info/cmd/en/176.html
 image=http://magiccards.info/scans/en/10e/305.jpg
 value=4

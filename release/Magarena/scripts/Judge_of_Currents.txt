@@ -1,4 +1,4 @@
->Judge of Currents
+name=Judge of Currents
 url=http://magiccards.info/lw/en/22.html
 image=http://magiccards.info/scans/en/lw/22.jpg
 value=2

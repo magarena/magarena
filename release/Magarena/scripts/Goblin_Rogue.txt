@@ -1,4 +1,4 @@
->Goblin Rogue
+name=Goblin Rogue
 token=Goblin Rogue1
 image=http://magiccards.info/extras/token/lorwyn/goblin-rogue.jpg
 value=1

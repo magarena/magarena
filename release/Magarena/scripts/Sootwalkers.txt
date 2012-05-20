@@ -1,4 +1,4 @@
->Sootwalkers
+name=Sootwalkers
 url=http://magiccards.info/shm/en/196.html
 image=http://magiccards.info/scans/en/shm/196.jpg
 value=3

@@ -1,4 +1,4 @@
->Guard Duty
+name=Guard Duty
 url=http://magiccards.info/roe/en/23.html
 image=http://magiccards.info/scans/en/roe/23.jpg
 value=2

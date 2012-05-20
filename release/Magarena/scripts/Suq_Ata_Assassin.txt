@@ -1,4 +1,4 @@
->Suq'Ata Assassin
+name=Suq'Ata Assassin
 url=http://magiccards.info/vi/en/19.html
 image=http://magiccards.info/scans/en/vi/19.jpg
 value=2

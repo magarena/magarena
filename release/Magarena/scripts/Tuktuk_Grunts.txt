@@ -1,4 +1,4 @@
->Tuktuk Grunts
+name=Tuktuk Grunts
 url=http://magiccards.info/zen/en/152.html
 image=http://magiccards.info/scans/en/zen/152.jpg
 value=3

@@ -1,4 +1,4 @@
->Nephalia Seakite
+name=Nephalia Seakite
 url=http://magiccards.info/dka/en/43.html
 image=http://magiccards.info/scans/en/dka/43.jpg
 value=3

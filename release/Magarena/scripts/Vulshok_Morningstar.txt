@@ -1,4 +1,4 @@
->Vulshok Morningstar
+name=Vulshok Morningstar
 url=http://magiccards.info/9e/en/315.html
 image=http://magiccards.info/scans/en/ds/157.jpg
 value=3

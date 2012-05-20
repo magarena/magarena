@@ -1,4 +1,4 @@
->Turn to Frog
+name=Turn to Frog
 url=http://magiccards.info/m12/en/78.html
 image=http://magiccards.info/scans/en/m12/78.jpg
 value=3

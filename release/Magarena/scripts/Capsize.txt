@@ -1,4 +1,4 @@
->Capsize
+name=Capsize
 url=http://magiccards.info/tp/en/55.html
 image=http://magiccards.info/scans/en/tp/55.jpg
 value=3

@@ -1,4 +1,4 @@
->Markov Blademaster
+name=Markov Blademaster
 url=http://magiccards.info/dka/en/96.html
 image=http://magiccards.info/scans/en/dka/96.jpg
 value=2

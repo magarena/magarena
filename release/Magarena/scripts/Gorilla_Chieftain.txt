@@ -1,4 +1,4 @@
->Gorilla Chieftain
+name=Gorilla Chieftain
 url=http://magiccards.info/7e/en/250.html
 image=http://magiccards.info/scans/en/7e/250.jpg
 value=3

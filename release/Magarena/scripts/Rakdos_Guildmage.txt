@@ -1,4 +1,4 @@
->Rakdos Guildmage
+name=Rakdos Guildmage
 url=http://magiccards.info/arc/en/92.html
 image=http://magiccards.info/scans/en/di/145.jpg
 value=3

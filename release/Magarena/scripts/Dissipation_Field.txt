@@ -1,4 +1,4 @@
->Dissipation Field
+name=Dissipation Field
 url=http://magiccards.info/som/en/32.html
 image=http://magiccards.info/scans/en/som/32.jpg
 value=4

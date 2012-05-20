@@ -1,4 +1,4 @@
->Fervent Charge
+name=Fervent Charge
 url=http://magiccards.info/ap/en/98.html
 image=http://magiccards.info/scans/en/ap/98.jpg
 value=4

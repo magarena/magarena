@@ -1,4 +1,4 @@
->Ravenous Skirge
+name=Ravenous Skirge
 url=http://magiccards.info/us/en/152.html
 image=http://magiccards.info/scans/en/us/152.jpg
 value=2

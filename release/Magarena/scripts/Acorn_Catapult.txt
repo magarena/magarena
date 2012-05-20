@@ -1,4 +1,4 @@
->Acorn Catapult
+name=Acorn Catapult
 url=http://magiccards.info/cmd/en/241.html
 image=http://magiccards.info/scans/en/cmd/241.jpg
 value=4

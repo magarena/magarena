@@ -1,4 +1,4 @@
->Ezuri's Brigade
+name=Ezuri's Brigade
 url=http://magiccards.info/som/en/121.html
 image=http://magiccards.info/scans/en/som/121.jpg
 value=4

@@ -1,4 +1,4 @@
->Kokusho, the Evening Star
+name=Kokusho, the Evening Star
 url=http://magiccards.info/fvd/en/9.html
 image=http://magiccards.info/scans/en/chk/122.jpg
 value=5

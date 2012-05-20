@@ -1,4 +1,4 @@
->Lightning Helix
+name=Lightning Helix
 url=http://magiccards.info/ddh/en/23.html
 image=http://magiccards.info/scans/en/pch/90.jpg
 value=4

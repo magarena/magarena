@@ -1,4 +1,4 @@
->Vug Lizard
+name=Vug Lizard
 url=http://magiccards.info/us/en/227.html
 image=http://magiccards.info/scans/en/us/227.jpg
 value=3

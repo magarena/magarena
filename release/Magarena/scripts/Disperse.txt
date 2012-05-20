@@ -1,4 +1,4 @@
->Disperse
+name=Disperse
 url=http://magiccards.info/som/en/31.html
 image=http://magiccards.info/scans/en/som/31.jpg
 value=2

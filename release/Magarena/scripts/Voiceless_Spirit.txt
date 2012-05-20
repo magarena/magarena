@@ -1,4 +1,4 @@
->Voiceless Spirit
+name=Voiceless Spirit
 url=http://magiccards.info/isd/en/42.html
 image=http://magiccards.info/scans/en/isd/42.jpg
 value=2

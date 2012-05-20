@@ -1,4 +1,4 @@
->Skyhunter Skirmisher
+name=Skyhunter Skirmisher
 url=http://magiccards.info/10e/en/43.html
 image=http://magiccards.info/scans/en/10e/43.jpg
 value=2

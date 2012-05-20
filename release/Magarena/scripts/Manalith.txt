@@ -1,4 +1,4 @@
->Manalith
+name=Manalith
 url=http://magiccards.info/m12/en/212.html
 image=http://magiccards.info/scans/en/m12/212.jpg
 value=3

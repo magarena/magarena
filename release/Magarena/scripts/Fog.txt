@@ -1,4 +1,4 @@
->Fog
+name=Fog
 url=http://magiccards.info/m12/en/173.html
 image=http://magiccards.info/scans/en/m12/173.jpg
 value=2

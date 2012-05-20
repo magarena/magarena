@@ -1,4 +1,4 @@
->Furnace Whelp
+name=Furnace Whelp
 url=http://magiccards.info/cmd/en/124.html
 image=http://magiccards.info/scans/en/arc/39.jpg
 value=4

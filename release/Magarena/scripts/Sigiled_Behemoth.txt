@@ -1,4 +1,4 @@
->Sigiled Behemoth
+name=Sigiled Behemoth
 url=http://magiccards.info/arb/en/79.html
 image=http://magiccards.info/scans/en/arb/79.jpg 
 value=4

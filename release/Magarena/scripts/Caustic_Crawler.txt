@@ -1,4 +1,4 @@
->Caustic Crawler
+name=Caustic Crawler
 url=http://magiccards.info/wwk/en/54.html
 image=http://magiccards.info/scans/en/wwk/54.jpg
 value=4

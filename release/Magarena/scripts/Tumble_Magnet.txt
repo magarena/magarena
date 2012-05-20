@@ -1,4 +1,4 @@
->Tumble Magnet
+name=Tumble Magnet
 url=http://magiccards.info/som/en/218.html
 image=http://magiccards.info/scans/en/som/218.jpg
 value=4

@@ -1,4 +1,4 @@
->Rise from the Grave
+name=Rise from the Grave
 url=http://magiccards.info/cmd/en/96.html
 image=http://magiccards.info/scans/en/cmd/96.jpg
 value=4

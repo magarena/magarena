@@ -1,4 +1,4 @@
->Skyshroud Troll
+name=Skyshroud Troll
 url=http://magiccards.info/tp/en/151.html
 image=http://magiccards.info/scans/en/tp/151.jpg
 value=3

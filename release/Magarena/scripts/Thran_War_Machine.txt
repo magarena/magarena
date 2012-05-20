@@ -1,4 +1,4 @@
->Thran War Machine
+name=Thran War Machine
 url=http://magiccards.info/ul/en/134.html
 image=http://magiccards.info/scans/en/ul/134.jpg
 value=4

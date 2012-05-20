@@ -1,4 +1,4 @@
->Last Gasp
+name=Last Gasp
 url=http://magiccards.info/rav/en/93.html
 image=http://magiccards.info/scans/en/rav/93.jpg
 value=3

@@ -1,4 +1,4 @@
->Beast
+name=Beast
 token=Beast8
 image=http://magiccards.info/extras/token/shards-of-alara/beast.jpg
 value=3

@@ -1,4 +1,4 @@
->Bogardan Firefiend
+name=Bogardan Firefiend
 url=http://magiccards.info/pch/en/48.html
 image=http://magiccards.info/scans/en/10e/193.jpg
 value=2

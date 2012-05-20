@@ -1,4 +1,4 @@
->Boros Guildmage
+name=Boros Guildmage
 url=http://magiccards.info/cmd/en/186.html
 image=http://magiccards.info/scans/en/pch/99.jpg
 value=3

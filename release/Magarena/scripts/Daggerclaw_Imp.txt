@@ -1,4 +1,4 @@
->Daggerclaw Imp
+name=Daggerclaw Imp
 url=http://magiccards.info/dvd/en/33.html
 image=http://magiccards.info/scans/en/dvd/33.jpg
 value=3

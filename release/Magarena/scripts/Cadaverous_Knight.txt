@@ -1,4 +1,4 @@
->Cadaverous Knight
+name=Cadaverous Knight
 url=http://magiccards.info/pch/en/20.html
 image=http://magiccards.info/scans/en/pch/20.jpg
 value=3

@@ -1,4 +1,4 @@
->Trained Orgg
+name=Trained Orgg
 url=http://magiccards.info/7e/en/224.html
 image=http://magiccards.info/scans/en/7e/224.jpg 
 value=4

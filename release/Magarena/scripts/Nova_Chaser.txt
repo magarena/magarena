@@ -1,4 +1,4 @@
->Nova Chaser
+name=Nova Chaser
 url=http://magiccards.info/lw/en/187.html
 image=http://magiccards.info/scans/en/lw/187.jpg
 value=5

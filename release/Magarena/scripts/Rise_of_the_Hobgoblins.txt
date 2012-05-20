@@ -1,4 +1,4 @@
->Rise of the Hobgoblins
+name=Rise of the Hobgoblins
 url=http://magiccards.info/eve/en/145.html
 image=http://magiccards.info/scans/en/eve/145.jpg
 value=3

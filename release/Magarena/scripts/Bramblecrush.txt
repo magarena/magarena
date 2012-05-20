@@ -1,4 +1,4 @@
->Bramblecrush
+name=Bramblecrush
 url=http://magiccards.info/isd/en/172.html
 image=http://magiccards.info/scans/en/isd/172.jpg
 value=3

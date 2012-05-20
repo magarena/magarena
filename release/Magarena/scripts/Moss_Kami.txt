@@ -1,4 +1,4 @@
->Moss Kami
+name=Moss Kami
 url=http://magiccards.info/chk/en/228.html
 image=http://magiccards.info/scans/en/chk/228.jpg 
 value=4

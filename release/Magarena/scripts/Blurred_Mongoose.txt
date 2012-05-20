@@ -1,4 +1,4 @@
->Blurred Mongoose
+name=Blurred Mongoose
 url=http://magiccards.info/in/en/183.html
 image=http://magiccards.info/scans/en/in/183.jpg 
 value=3

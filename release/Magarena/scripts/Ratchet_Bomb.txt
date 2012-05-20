@@ -1,4 +1,4 @@
->Ratchet Bomb
+name=Ratchet Bomb
 url=http://magiccards.info/som/en/196.html
 image=http://magiccards.info/scans/en/som/196.jpg
 value=4

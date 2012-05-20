@@ -1,4 +1,4 @@
->Viashino Weaponsmith
+name=Viashino Weaponsmith
 url=http://magiccards.info/us/en/226.html
 image=http://magiccards.info/scans/en/us/226.jpg
 value=3

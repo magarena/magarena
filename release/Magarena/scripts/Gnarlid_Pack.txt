@@ -1,4 +1,4 @@
->Gnarlid Pack
+name=Gnarlid Pack
 url=http://magiccards.info/wwk/en/101.html
 image=http://magiccards.info/scans/en/wwk/101.jpg
 value=2

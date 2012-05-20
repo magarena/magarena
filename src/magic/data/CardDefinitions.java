@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Properties;
 
 /**
  * Load card definitions from cards.txt
@@ -37,7 +38,7 @@ public class CardDefinitions {
 	private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
 	private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
 	private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
-	
+
 	private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
                if ("image".equals(property)) {
             card.setImageURL(value);
@@ -96,8 +97,8 @@ public class CardDefinitions {
             final String[] pt = value.replace('+','0').split("/");
 			card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
 		} else if ("given_ability".equals(property)) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_ability");
+            if (!card.isEquipment() && !card.isAura() && !card.isEnchantment()) {
+                throw new RuntimeException(card.getFullName() + ": only equipment/aura/enchantment may have given_ability");
             }
             card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(","))));
 		} else if ("given_subtype".equals(property)) {
@@ -125,6 +126,8 @@ public class CardDefinitions {
             card.add(MagicPlayAuraEvent.create(value));
 		} else if ("requires_card_code".equals(property)) {
 	        addCardSpecificCode(card);	
+        } else if ("name".equals(property)) {
+            //ignore
         } else {
             throw new RuntimeException("Unknown card property " + property + "=" + value);
 		}
@@ -141,9 +144,7 @@ public class CardDefinitions {
 	}
 
 	private static void checkCard(final MagicCardDefinition card) {
-		if (card == null) {
-			throw new RuntimeException("CardDefinitions.checkCard passed null");
-		}
+		assert card != null : "CardDefinitions.checkCard passed null";
 		
         //every card should have a timing hint
         if (!card.isToken() && card.getTiming()==MagicTiming.None) {
@@ -153,15 +154,11 @@ public class CardDefinitions {
 	}
 	
 	private static void addDefinition(final MagicCardDefinition cardDefinition) {
-		if (cardDefinition == null) {
-			throw new RuntimeException("CardDefinitions.addDefinition passed null");
-		}
+		assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
+		assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
 
-        if (cardDefinition.getIndex() == -1) {
-            cardDefinition.setIndex(cards.size());
-            cards.add(cardDefinition);
-        }
-
+        cardDefinition.setIndex(cards.size());
+        cards.add(cardDefinition);
 		cardsMap.put(cardDefinition.getFullName(),cardDefinition);
 
         //add to default all (vintage) cube
@@ -188,54 +185,29 @@ public class CardDefinitions {
             throw new RuntimeException(ex);
         }
     }
-	
-	private static void addDefinitions(final List<MagicCardDefinition> cardDefinitions) {
-		for (final MagicCardDefinition cardDefinition : cardDefinitions) {
-			addDefinition(cardDefinition);
-		}
-	}
+    
+    private static MagicCardDefinition prop2carddef(final Properties content) {
+	    final MagicCardDefinition cardDefinition=new MagicCardDefinition(content.getProperty("name"));
 
-    private static MagicCardDefinition string2carddef(final String content) {
-        final Scanner sc = new Scanner(content);
-		MagicCardDefinition cardDefinition = MagicCardDefinition.UNKNOWN;
-		while (sc.hasNextLine()) {
-			final String line=sc.nextLine().trim();
-            if (line.length() == 0 || line.startsWith("#")) {
-                //blank line or comment
-            } else if (line.startsWith(">")) {
-                //start of a card
-				final String name=line.substring(1);
-				cardDefinition=new MagicCardDefinition(name);
-		        cardDefinition.setIndex(cards.size());
-                cards.add(cardDefinition);
-			} else {
-                //property of a card
-                int i = line.indexOf("=");
-				if (i < 0) {
-                    setProperty(cardDefinition, line, "");
-                } else {
-                    setProperty(cardDefinition, line.substring(0, i), line.substring(i+1));
-                } 
-			}
-		}
-		if (cardDefinition == MagicCardDefinition.UNKNOWN) {				
-            throw new RuntimeException("Malformed card script");
-        } else {
-            return cardDefinition;
+        //set type and subtype first
+        setProperty(cardDefinition, "type", content.getProperty("type"));
+        if (content.getProperty("subtype") != null) {
+            setProperty(cardDefinition, "subtype", content.getProperty("subtype"));
         }
+
+        //run through the list of properties
+        for (String key : content.stringPropertyNames()) {
+            setProperty(cardDefinition, key, content.getProperty(key));
+        }
+
+        return cardDefinition;
     }
 	
     private static void loadCardDefinition(final File file) {
-        try { //load card definitions
-            System.err.println("Parsing " + file);
-            final String content = FileIO.toStr(file);
-            final MagicCardDefinition cdef = string2carddef(content);
-            checkCard(cdef);
-            addDefinition(cdef);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load card definitions from " + file);
-            return;
-        }
+        System.err.println("Parsing " + file);
+        final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
+        checkCard(cdef);
+        addDefinition(cdef);
     }
 	
 	public static void loadCardDefinitions() {

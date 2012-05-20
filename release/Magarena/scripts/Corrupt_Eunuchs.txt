@@ -1,4 +1,4 @@
->Corrupt Eunuchs
+name=Corrupt Eunuchs
 url=http://magiccards.info/p3k/en/106.html
 image=http://magiccards.info/scans/en/p3k/106.jpg
 value=3

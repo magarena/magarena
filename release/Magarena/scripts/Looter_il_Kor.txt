@@ -1,4 +1,4 @@
->Looter il-Kor
+name=Looter il-Kor
 url=http://magiccards.info/ts/en/66.html
 image=http://magiccards.info/scans/en/ts/66.jpg
 value=2

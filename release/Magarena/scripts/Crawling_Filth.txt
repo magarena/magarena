@@ -1,4 +1,4 @@
->Crawling Filth
+name=Crawling Filth
 url=http://magiccards.info/bok/en/64.html
 image=http://magiccards.info/scans/en/bok/64.jpg
 value=3

@@ -1,4 +1,4 @@
->Ethercaste Knight
+name=Ethercaste Knight
 url=http://magiccards.info/arb/en/3.html
 image=http://magiccards.info/scans/en/arb/3.jpg
 value=2

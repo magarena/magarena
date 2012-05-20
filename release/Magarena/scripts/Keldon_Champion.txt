@@ -1,4 +1,4 @@
->Keldon Champion
+name=Keldon Champion
 url=http://magiccards.info/pch/en/58.html
 image=http://magiccards.info/scans/en/pch/58.jpg
 value=3

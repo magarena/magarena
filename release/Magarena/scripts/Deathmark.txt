@@ -1,4 +1,4 @@
->Deathmark
+name=Deathmark
 url=http://magiccards.info/m12/en/90.html
 image=http://magiccards.info/scans/en/m11/91.jpg
 value=3

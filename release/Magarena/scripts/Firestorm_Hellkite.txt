@@ -1,4 +1,4 @@
->Firestorm Hellkite
+name=Firestorm Hellkite
 url=http://magiccards.info/vi/en/130.html
 image=http://magiccards.info/scans/en/vi/130.jpg
 value=5

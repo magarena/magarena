@@ -1,4 +1,4 @@
->Voja
+name=Voja
 token=Voja
 image=http://img.photobucket.com/albums/v237/Xand0r/voja-token_ravnica_300-2.jpg
 value=2

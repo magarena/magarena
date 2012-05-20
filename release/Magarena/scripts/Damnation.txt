@@ -1,4 +1,4 @@
->Damnation
+name=Damnation
 url=http://magiccards.info/pc/en/85.html
 image=http://magiccards.info/scans/en/pc/85.jpg
 value=4

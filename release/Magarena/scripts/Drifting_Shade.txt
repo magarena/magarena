@@ -1,4 +1,4 @@
->Drifting Shade
+name=Drifting Shade
 url=http://magiccards.info/m12/en/96.html
 image=http://magiccards.info/scans/en/m12/96.jpg
 value=4

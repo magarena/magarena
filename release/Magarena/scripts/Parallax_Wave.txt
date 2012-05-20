@@ -1,4 +1,4 @@
->Parallax Wave
+name=Parallax Wave
 url=http://magiccards.info/ne/en/17.html
 image=http://magiccards.info/scans/en/ne/17.jpg
 value=3

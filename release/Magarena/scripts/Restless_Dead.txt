@@ -1,4 +1,4 @@
->Restless Dead
+name=Restless Dead
 url=http://magiccards.info/mr/en/36.html
 image=http://magiccards.info/scans/en/mr/36.jpg
 value=1

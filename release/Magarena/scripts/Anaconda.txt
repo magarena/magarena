@@ -1,4 +1,4 @@
->Anaconda
+name=Anaconda
 url=http://magiccards.info/9e/en/229.html
 image=http://magiccards.info/scans/en/9e/229.jpg 
 value=3

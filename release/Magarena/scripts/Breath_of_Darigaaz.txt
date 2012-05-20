@@ -1,4 +1,4 @@
->Breath of Darigaaz
+name=Breath of Darigaaz
 url=http://magiccards.info/cmd/en/112.html
 image=http://magiccards.info/scans/en/arc/31.jpg
 value=3

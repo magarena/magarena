@@ -1,4 +1,4 @@
->Yavimaya Hollow
+name=Yavimaya Hollow
 url=http://magiccards.info/ud/en/143.html
 image=http://magiccards.info/scans/en/ud/143.jpg
 value=4

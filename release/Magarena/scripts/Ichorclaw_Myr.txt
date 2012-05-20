@@ -1,4 +1,4 @@
->Ichorclaw Myr
+name=Ichorclaw Myr
 url=http://magiccards.info/som/en/166.html
 image=http://magiccards.info/scans/en/som/166.jpg
 value=2

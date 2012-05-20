@@ -1,4 +1,4 @@
->Deluge
+name=Deluge
 url=http://magiccards.info/dpa/en/6.html
 image=http://magiccards.info/scans/en/10e/79.jpg
 value=3

@@ -1,4 +1,4 @@
->Rootwater Commando
+name=Rootwater Commando
 url=http://magiccards.info/10e/en/102.html
 image=http://magiccards.info/scans/en/10e/102.jpg 
 value=2

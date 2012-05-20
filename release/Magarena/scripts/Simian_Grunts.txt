@@ -1,4 +1,4 @@
->Simian Grunts
+name=Simian Grunts
 url=http://magiccards.info/ul/en/113.html
 image=http://magiccards.info/scans/en/ul/113.jpg
 value=3

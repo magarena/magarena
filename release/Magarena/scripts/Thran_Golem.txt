@@ -1,4 +1,4 @@
->Thran Golem
+name=Thran Golem
 url=http://magiccards.info/m12/en/220.html
 image=http://magiccards.info/scans/en/m12/220.jpg
 value=3

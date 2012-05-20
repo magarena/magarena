@@ -1,4 +1,4 @@
->Mistral Charger
+name=Mistral Charger
 url=http://magiccards.info/di/en/13.html
 image=http://magiccards.info/scans/en/di/13.jpg 
 value=2

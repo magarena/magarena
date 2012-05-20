@@ -1,4 +1,4 @@
->Hissing Miasma
+name=Hissing Miasma
 url=http://magiccards.info/gp/en/51.html
 image=http://magiccards.info/scans/en/gp/51.jpg
 value=3

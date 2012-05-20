@@ -1,4 +1,4 @@
->Karn's Touch
+name=Karn's Touch
 url=http://magiccards.info/mm/en/86.html
 image=http://magiccards.info/scans/en/mm/86.jpg
 value=3

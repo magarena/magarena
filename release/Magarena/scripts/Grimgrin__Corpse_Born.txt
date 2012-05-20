@@ -1,4 +1,4 @@
->Grimgrin, Corpse-Born
+name=Grimgrin, Corpse-Born
 url=http://magiccards.info/isd/en/214.html
 image=http://magiccards.info/scans/en/isd/214.jpg
 value=5

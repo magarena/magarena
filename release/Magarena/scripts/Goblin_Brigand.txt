@@ -1,4 +1,4 @@
->Goblin Brigand
+name=Goblin Brigand
 url=http://magiccards.info/9e/en/190.html
 image=http://magiccards.info/scans/en/9e/190.jpg 
 value=1

@@ -1,4 +1,4 @@
->Safehold Elite
+name=Safehold Elite
 url=http://magiccards.info/shm/en/239.html
 image=http://magiccards.info/scans/en/shm/239.jpg
 value=2

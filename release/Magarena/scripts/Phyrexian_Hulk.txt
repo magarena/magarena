@@ -1,4 +1,4 @@
->Phyrexian Hulk
+name=Phyrexian Hulk
 url=http://magiccards.info/nph/en/150.html
 image=http://magiccards.info/scans/en/nph/150.jpg 
 value=4

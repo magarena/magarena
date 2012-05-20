@@ -1,4 +1,4 @@
->Bant Sureblade
+name=Bant Sureblade
 url=http://magiccards.info/arb/en/143.html
 image=http://magiccards.info/scans/en/arb/143.jpg
 value=3

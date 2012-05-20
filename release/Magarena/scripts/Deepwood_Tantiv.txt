@@ -1,4 +1,4 @@
->Deepwood Tantiv
+name=Deepwood Tantiv
 url=http://magiccards.info/mm/en/241.html
 image=http://magiccards.info/scans/en/mm/241.jpg
 value=4

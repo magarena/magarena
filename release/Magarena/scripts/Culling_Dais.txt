@@ -1,4 +1,4 @@
->Culling Dais
+name=Culling Dais
 url=http://magiccards.info/som/en/148.html
 image=http://magiccards.info/scans/en/som/148.jpg
 value=3

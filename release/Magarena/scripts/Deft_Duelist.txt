@@ -1,4 +1,4 @@
->Deft Duelist
+name=Deft Duelist
 url=http://magiccards.info/ala/en/165.html
 image=http://magiccards.info/scans/en/ala/165.jpg
 value=2

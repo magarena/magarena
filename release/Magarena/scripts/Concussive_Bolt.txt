@@ -1,4 +1,4 @@
->Concussive Bolt
+name=Concussive Bolt
 url=http://magiccards.info/mbs/en/60.html
 image=http://magiccards.info/scans/en/mbs/60.jpg
 value=3

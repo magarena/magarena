@@ -1,4 +1,4 @@
->Goblin
+name=Goblin
 token=Goblin2
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1157620938
 value=1

@@ -1,4 +1,4 @@
->Lumengrid Warden
+name=Lumengrid Warden
 url=http://magiccards.info/10e/en/89.html
 image=http://magiccards.info/scans/en/10e/89.jpg 
 value=1

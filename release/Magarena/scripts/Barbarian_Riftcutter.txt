@@ -1,4 +1,4 @@
->Barbarian Riftcutter
+name=Barbarian Riftcutter
 url=http://magiccards.info/rav/en/114.html
 image=http://magiccards.info/scans/en/rav/114.jpg
 value=3

@@ -1,4 +1,4 @@
->Ghost Ship
+name=Ghost Ship
 url=http://magiccards.info/4e/en/75.html
 image=http://magiccards.info/scans/en/4e/75.jpg
 value=3

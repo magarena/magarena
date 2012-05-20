@@ -1,10 +1,10 @@
->Drowned Catacomb
+name=Drowned Catacomb
 url=http://magiccards.info/m12/en/226.html
 image=http://magiccards.info/scans/en/m11/224.jpg
 value=4
 rarity=R
 type=Land
 mana=u3b3
-ability=tap add mana {U} or {B}
-ability=enters tapped unless island swamp
+ability=tap add mana {U} or {B},\
+        enters tapped unless island swamp
 timing=land

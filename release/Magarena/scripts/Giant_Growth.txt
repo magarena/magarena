@@ -1,4 +1,4 @@
->Giant Growth
+name=Giant Growth
 url=http://magiccards.info/dpa/en/66.html
 image=http://magiccards.info/scans/en/m11/178.jpg
 value=2

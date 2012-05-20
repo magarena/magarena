@@ -1,4 +1,4 @@
->Ogre
+name=Ogre
 token=Ogre
 image=http://magiccards.info/extras/token/worldwake/ogre.jpg
 value=3

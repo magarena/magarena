@@ -1,4 +1,4 @@
->Silver-Inlaid Dagger
+name=Silver-Inlaid Dagger
 url=http://magiccards.info/isd/en/233.html
 image=http://magiccards.info/scans/en/isd/233.jpg
 value=2

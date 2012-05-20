@@ -1,4 +1,4 @@
->Ravenous Rats
+name=Ravenous Rats
 url=http://magiccards.info/dpa/en/31.html
 image=http://magiccards.info/scans/en/10e/171.jpg
 value=2

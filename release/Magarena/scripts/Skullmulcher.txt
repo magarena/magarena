@@ -1,4 +1,4 @@
->Skullmulcher
+name=Skullmulcher
 url=http://magiccards.info/ala/en/148.html
 image=http://magiccards.info/scans/en/ala/148.jpg
 value=3

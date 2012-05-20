@@ -1,4 +1,4 @@
->Spirit
+name=Spirit
 token=Spirit1
 image=http://magiccards.info/extras/token/player-rewards-2004/spirit.jpg
 value=1

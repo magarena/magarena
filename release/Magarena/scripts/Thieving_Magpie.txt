@@ -1,4 +1,4 @@
->Thieving Magpie
+name=Thieving Magpie
 url=http://magiccards.info/dpa/en/16.html
 image=http://magiccards.info/scans/en/10e/115.jpg
 value=2

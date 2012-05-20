@@ -1,4 +1,4 @@
->Nagao, Bound by Honor
+name=Nagao, Bound by Honor
 url=http://magiccards.info/chk/en/36.html
 image=http://magiccards.info/scans/en/chk/36.jpg
 value=5

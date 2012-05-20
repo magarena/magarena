@@ -1,4 +1,4 @@
->Soul's Majesty
+name=Soul's Majesty
 url=http://magiccards.info/cfx/en/92.html
 image=http://magiccards.info/scans/en/cfx/92.jpg
 value=3

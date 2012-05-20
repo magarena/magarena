@@ -1,4 +1,4 @@
->Havoc Demon
+name=Havoc Demon
 url=http://magiccards.info/le/en/74.html
 image=http://magiccards.info/scans/en/le/74.jpg
 value=5

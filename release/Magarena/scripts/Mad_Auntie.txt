@@ -1,4 +1,4 @@
->Mad Auntie
+name=Mad Auntie
 url=http://magiccards.info/lw/en/123.html
 image=http://magiccards.info/scans/en/lw/123.jpg
 value=3

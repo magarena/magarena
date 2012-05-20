@@ -1,4 +1,4 @@
->Nirkana Cutthroat
+name=Nirkana Cutthroat
 url=http://magiccards.info/roe/en/119.html
 image=http://magiccards.info/scans/en/roe/119.jpg
 value=3

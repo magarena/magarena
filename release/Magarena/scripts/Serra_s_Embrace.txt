@@ -1,4 +1,4 @@
->Serra's Embrace
+name=Serra's Embrace
 url=http://magiccards.info/dvd/en/21.html
 image=http://magiccards.info/scans/en/dvd/21.jpg
 value=4

@@ -1,4 +1,4 @@
->Chain Reaction
+name=Chain Reaction
 url=http://magiccards.info/cmd/en/113.html
 image=http://magiccards.info/scans/en/wwk/74.jpg
 value=4

@@ -1,4 +1,4 @@
->Skeletal Vampire
+name=Skeletal Vampire
 url=http://magiccards.info/gvl/en/46.html
 image=http://magiccards.info/scans/en/gvl/46.jpg
 value=5

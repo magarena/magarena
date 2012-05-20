@@ -1,4 +1,4 @@
->Boggart Shenanigans
+name=Boggart Shenanigans
 url=http://magiccards.info/lw/en/155.html
 image=http://magiccards.info/scans/en/lw/155.jpg
 value=3

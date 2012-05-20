@@ -1,4 +1,4 @@
->Tangle Mantis
+name=Tangle Mantis
 url=http://magiccards.info/mbs/en/91.html
 image=http://magiccards.info/scans/en/mbs/91.jpg 
 value=3

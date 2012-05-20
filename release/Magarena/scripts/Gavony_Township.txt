@@ -1,4 +1,4 @@
->Gavony Township
+name=Gavony Township
 url=http://magiccards.info/isd/en/239.html
 image=http://magiccards.info/scans/en/isd/239.jpg
 value=4

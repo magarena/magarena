@@ -1,4 +1,4 @@
->Grapeshot
+name=Grapeshot
 url=http://magiccards.info/ts/en/160.html
 image=http://magiccards.info/scans/en/ts/160.jpg
 value=1

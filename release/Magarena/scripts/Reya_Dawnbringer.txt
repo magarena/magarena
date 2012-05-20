@@ -1,4 +1,4 @@
->Reya Dawnbringer
+name=Reya Dawnbringer
 url=http://magiccards.info/dvd/en/13.html
 image=http://magiccards.info/scans/en/10e/35.jpg
 value=5

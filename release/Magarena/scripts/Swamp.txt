@@ -1,4 +1,4 @@
->Swamp
+name=Swamp
 url=http://magiccards.info/isd/en/256.html
 image=http://magiccards.info/scans/en/zen/238.jpg
 num_images=2

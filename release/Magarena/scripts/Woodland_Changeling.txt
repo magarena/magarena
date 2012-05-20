@@ -1,4 +1,4 @@
->Woodland Changeling
+name=Woodland Changeling
 url=http://magiccards.info/lw/en/242.html
 image=http://magiccards.info/scans/en/lw/242.jpg 
 value=1

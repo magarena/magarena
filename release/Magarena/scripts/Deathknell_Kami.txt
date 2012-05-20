@@ -1,4 +1,4 @@
->Deathknell Kami
+name=Deathknell Kami
 url=http://magiccards.info/sok/en/65.html
 image=http://magiccards.info/scans/en/sok/65.jpg
 value=1

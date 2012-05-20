@@ -1,4 +1,4 @@
->Kamahl, Fist of Krosa
+name=Kamahl, Fist of Krosa
 url=http://magiccards.info/arc/en/61.html
 image=http://magiccards.info/scans/en/arc/61.jpg
 value=4

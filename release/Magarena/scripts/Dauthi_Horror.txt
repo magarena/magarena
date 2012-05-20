@@ -1,4 +1,4 @@
->Dauthi Horror
+name=Dauthi Horror
 url=http://magiccards.info/tp/en/16.html
 image=http://magiccards.info/scans/en/tp/16.jpg
 value=2

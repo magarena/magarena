@@ -1,4 +1,4 @@
->Naya Hushblade
+name=Naya Hushblade
 url=http://magiccards.info/arb/en/141.html
 image=http://magiccards.info/scans/en/arb/141.jpg
 value=3

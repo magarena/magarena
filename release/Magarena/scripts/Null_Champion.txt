@@ -1,4 +1,4 @@
->Null Champion
+name=Null Champion
 url=http://magiccards.info/roe/en/121.html
 image=http://magiccards.info/scans/en/roe/121.jpg
 value=2

@@ -1,4 +1,4 @@
->Volcanic Fallout
+name=Volcanic Fallout
 url=http://magiccards.info/arc/en/51.html
 image=http://magiccards.info/scans/en/arc/51.jpg
 value=3

@@ -1,4 +1,4 @@
->Talon Trooper
+name=Talon Trooper
 url=http://magiccards.info/arb/en/14.html
 image=http://magiccards.info/scans/en/arb/14.jpg 
 value=3

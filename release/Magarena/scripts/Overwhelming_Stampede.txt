@@ -1,4 +1,4 @@
->Overwhelming Stampede
+name=Overwhelming Stampede
 url=http://magiccards.info/m11/en/189.html
 image=http://magiccards.info/scans/en/m11/189.jpg
 value=4

@@ -1,4 +1,4 @@
->Skillful Lunge
+name=Skillful Lunge
 url=http://magiccards.info/dka/en/22.html
 image=http://magiccards.info/scans/en/dka/22.jpg
 value=2

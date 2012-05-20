@@ -1,4 +1,4 @@
->Hysterical Blindness
+name=Hysterical Blindness
 url=http://magiccards.info/isd/en/59.html
 image=http://magiccards.info/scans/en/isd/59.jpg
 value=3

@@ -1,4 +1,4 @@
->Geistcatcher's Rig
+name=Geistcatcher's Rig
 url=http://magiccards.info/isd/en/223.html
 image=http://magiccards.info/scans/en/isd/223.jpg
 value=4

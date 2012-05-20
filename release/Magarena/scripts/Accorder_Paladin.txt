@@ -1,4 +1,4 @@
->Accorder Paladin
+name=Accorder Paladin
 url=http://magiccards.info/mbs/en/1.html
 image=http://magiccards.info/scans/en/mbs/1.jpg
 value=2

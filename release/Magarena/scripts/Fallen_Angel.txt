@@ -1,4 +1,4 @@
->Fallen Angel
+name=Fallen Angel
 url=http://magiccards.info/cmd/en/82.html
 image=http://magiccards.info/scans/en/dvd/42.jpg
 value=4

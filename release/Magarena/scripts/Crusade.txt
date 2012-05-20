@@ -1,4 +1,4 @@
->Crusade
+name=Crusade
 url=http://magiccards.info/ddf/en/27.html
 image=http://magiccards.info/scans/en/ddf/27.jpg
 value=3

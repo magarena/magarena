@@ -1,4 +1,4 @@
->Sunspear Shikari
+name=Sunspear Shikari
 url=http://magiccards.info/som/en/23.html
 image=http://magiccards.info/scans/en/som/23.jpg
 value=2

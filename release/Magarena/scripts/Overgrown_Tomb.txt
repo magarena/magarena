@@ -1,4 +1,4 @@
->Overgrown Tomb
+name=Overgrown Tomb
 url=http://magiccards.info/rav/en/279.html
 image=http://magiccards.info/scans/en/rav/279.jpg
 value=4
@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Swamp,Forest
 mana=b3g3
-ability=tap add mana {B} or {G}
-ability=shock land
+ability=tap add mana {B} or {G},\
+        shock land
 timing=land

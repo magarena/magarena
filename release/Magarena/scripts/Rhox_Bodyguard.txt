@@ -1,4 +1,4 @@
->Rhox Bodyguard
+name=Rhox Bodyguard
 url=http://magiccards.info/cfx/en/122.html
 image=http://magiccards.info/scans/en/cfx/122.jpg
 value=3

@@ -1,4 +1,4 @@
->Cobbled Wings
+name=Cobbled Wings
 url=http://magiccards.info/isd/en/219.html
 image=http://magiccards.info/scans/en/isd/219.jpg
 value=2

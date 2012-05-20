@@ -1,4 +1,4 @@
->Erdwal Ripper
+name=Erdwal Ripper
 url=http://magiccards.info/dka/en/86.html
 image=http://magiccards.info/scans/en/dka/86.jpg
 value=2

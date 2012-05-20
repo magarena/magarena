@@ -1,4 +1,4 @@
->Drogskol Captain
+name=Drogskol Captain
 url=http://magiccards.info/dka/en/136.html
 image=http://magiccards.info/scans/en/dka/136.jpg
 value=3

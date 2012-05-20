@@ -1,4 +1,4 @@
->Ib Halfheart, Goblin Tactician
+name=Ib Halfheart, Goblin Tactician
 url=http://magiccards.info/ts/en/163.html
 image=http://magiccards.info/scans/en/ts/163.jpg
 value=4

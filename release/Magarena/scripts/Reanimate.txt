@@ -1,4 +1,4 @@
->Reanimate
+name=Reanimate
 url=http://magiccards.info/arc/en/21.html
 image=http://magiccards.info/scans/en/arc/21.jpg
 value=3

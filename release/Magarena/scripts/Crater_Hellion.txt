@@ -1,4 +1,4 @@
->Crater Hellion
+name=Crater Hellion
 url=http://magiccards.info/us/en/179.html
 image=http://magiccards.info/scans/en/us/179.jpg
 value=5

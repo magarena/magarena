@@ -1,4 +1,4 @@
->Sensor Splicer
+name=Sensor Splicer
 url=http://magiccards.info/nph/en/22.html
 image=http://magiccards.info/scans/en/nph/22.jpg
 value=4

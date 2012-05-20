@@ -1,4 +1,4 @@
->Canyon Wildcat
+name=Canyon Wildcat
 url=http://magiccards.info/ddh/en/6.html
 image=http://magiccards.info/scans/en/8e/181.jpg 
 value=2

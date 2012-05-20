@@ -1,4 +1,4 @@
->Scepter of Dominance
+name=Scepter of Dominance
 url=http://magiccards.info/cfx/en/17.html
 image=http://magiccards.info/scans/en/cfx/17.jpg
 value=4

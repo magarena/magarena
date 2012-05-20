@@ -1,4 +1,4 @@
->Withstand
+name=Withstand
 url=http://magiccards.info/gp/en/21.html
 image=http://magiccards.info/scans/en/gp/21.jpg
 value=3

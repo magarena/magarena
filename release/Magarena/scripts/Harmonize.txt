@@ -1,4 +1,4 @@
->Harmonize
+name=Harmonize
 url=http://magiccards.info/cmd/en/158.html
 image=http://magiccards.info/scans/en/evg/22.jpg
 value=4

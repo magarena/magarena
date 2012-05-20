@@ -1,4 +1,4 @@
->Kird Ape
+name=Kird Ape
 url=http://magiccards.info/ddh/en/2.html
 image=http://magiccards.info/scans/en/9e/199.jpg
 value=2

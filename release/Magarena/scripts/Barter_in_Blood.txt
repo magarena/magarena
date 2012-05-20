@@ -1,4 +1,4 @@
->Barter in Blood
+name=Barter in Blood
 url=http://magiccards.info/avr/en/85.html
 image=http://magiccards.info/scans/en/avr/85.jpg
 value=3

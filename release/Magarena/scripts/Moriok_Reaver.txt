@@ -1,4 +1,4 @@
->Moriok Reaver
+name=Moriok Reaver
 url=http://magiccards.info/som/en/70.html
 image=http://magiccards.info/scans/en/som/70.jpg 
 value=3

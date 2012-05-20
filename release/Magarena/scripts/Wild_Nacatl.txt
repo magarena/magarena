@@ -1,4 +1,4 @@
->Wild Nacatl
+name=Wild Nacatl
 url=http://magiccards.info/ddh/en/4.html
 image=http://magiccards.info/scans/en/ala/152.jpg
 value=2

@@ -1,4 +1,4 @@
->Searing Meditation
+name=Searing Meditation
 url=http://magiccards.info/ddh/en/27.html
 image=http://magiccards.info/scans/en/ddh/27.jpg
 value=3

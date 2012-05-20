@@ -1,4 +1,4 @@
->Geyser Glider
+name=Geyser Glider
 url=http://magiccards.info/zen/en/124.html
 image=http://magiccards.info/scans/en/zen/124.jpg
 value=3

@@ -1,4 +1,4 @@
->Halimar Excavator
+name=Halimar Excavator
 url=http://magiccards.info/wwk/en/29.html
 image=http://magiccards.info/scans/en/wwk/29.jpg
 value=2

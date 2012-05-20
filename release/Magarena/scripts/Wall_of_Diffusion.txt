@@ -1,4 +1,4 @@
->Wall of Diffusion
+name=Wall of Diffusion
 url=http://magiccards.info/tp/en/211.html
 image=http://magiccards.info/scans/en/tp/211.jpg
 value=2

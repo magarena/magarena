@@ -1,4 +1,4 @@
->Victim of Night
+name=Victim of Night
 url=http://magiccards.info/isd/en/124.html
 image=http://magiccards.info/scans/en/isd/124.jpg
 ignore=57071

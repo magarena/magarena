@@ -1,4 +1,4 @@
->Riot Devils
+name=Riot Devils
 url=http://magiccards.info/isd/en/160.html
 image=http://magiccards.info/scans/en/isd/160.jpg
 value=2

@@ -1,4 +1,4 @@
->Raging Kavu
+name=Raging Kavu
 url=http://magiccards.info/ptc/en/12.html
 image=http://magiccards.info/scans/en/in/262.jpg
 ignore=59949

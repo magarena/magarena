@@ -1,4 +1,4 @@
->Stronghold Overseer
+name=Stronghold Overseer
 url=http://magiccards.info/ts/en/133.html
 image=http://magiccards.info/scans/en/ts/133.jpg
 value=5

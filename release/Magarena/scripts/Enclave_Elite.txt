@@ -1,4 +1,4 @@
->Enclave Elite
+name=Enclave Elite
 url=http://magiccards.info/wwk/en/27.html
 image=http://magiccards.info/scans/en/wwk/27.jpg
 value=3

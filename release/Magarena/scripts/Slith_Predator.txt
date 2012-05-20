@@ -1,4 +1,4 @@
->Slith Predator
+name=Slith Predator
 url=http://magiccards.info/mi/en/129.html
 image=http://magiccards.info/scans/en/mi/129.jpg
 value=2

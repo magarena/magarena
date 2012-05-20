@@ -1,4 +1,4 @@
->Gustcloak Harrier
+name=Gustcloak Harrier
 url=http://magiccards.info/on/en/34.html
 image=http://magiccards.info/scans/en/on/34.jpg
 value=3

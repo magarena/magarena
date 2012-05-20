@@ -1,4 +1,4 @@
->Hurricane
+name=Hurricane
 url=http://magiccards.info/10e/en/270.html
 image=http://magiccards.info/scans/en/10e/270.jpg
 value=3

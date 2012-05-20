@@ -1,4 +1,4 @@
->Rancor
+name=Rancor
 url=http://magiccards.info/arc/en/67.html
 image=http://magiccards.info/scans/en/gvl/15.jpg
 value=3

@@ -1,4 +1,4 @@
->Ulamog, the Infinite Gyre
+name=Ulamog, the Infinite Gyre
 url=http://magiccards.info/roe/en/12.html
 image=http://magiccards.info/scans/en/roe/12.jpg
 value=5

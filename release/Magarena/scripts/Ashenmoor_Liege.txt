@@ -1,4 +1,4 @@
->Ashenmoor Liege
+name=Ashenmoor Liege
 url=http://magiccards.info/shm/en/181.html
 image=http://magiccards.info/scans/en/shm/181.jpg
 value=4

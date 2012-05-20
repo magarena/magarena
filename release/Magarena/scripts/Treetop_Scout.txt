@@ -1,4 +1,4 @@
->Treetop Scout
+name=Treetop Scout
 url=http://magiccards.info/sc/en/130.html
 image=http://magiccards.info/scans/en/sc/130.jpg 
 value=1

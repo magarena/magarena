@@ -1,4 +1,4 @@
->Lord of Extinction
+name=Lord of Extinction
 url=http://magiccards.info/arb/en/91.html
 image=http://magiccards.info/scans/en/arb/91.jpg
 value=5

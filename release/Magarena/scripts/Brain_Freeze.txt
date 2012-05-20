@@ -1,4 +1,4 @@
->Brain Freeze
+name=Brain Freeze
 url=http://magiccards.info/sc/en/29.html
 image=http://magiccards.info/scans/en/sc/29.jpg
 value=3

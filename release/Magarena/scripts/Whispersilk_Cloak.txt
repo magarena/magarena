@@ -1,4 +1,4 @@
->Whispersilk Cloak
+name=Whispersilk Cloak
 url=http://magiccards.info/m11/en/221.html
 image=http://magiccards.info/scans/en/m11/221.jpg
 value=3

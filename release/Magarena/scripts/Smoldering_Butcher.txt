@@ -1,4 +1,4 @@
->Smoldering Butcher
+name=Smoldering Butcher
 url=http://magiccards.info/eve/en/42.html
 image=http://magiccards.info/scans/en/eve/42.jpg
 value=3

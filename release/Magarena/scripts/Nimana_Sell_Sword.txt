@@ -1,4 +1,4 @@
->Nimana Sell-Sword
+name=Nimana Sell-Sword
 url=http://magiccards.info/zen/en/106.html
 image=http://magiccards.info/scans/en/zen/106.jpg
 value=2

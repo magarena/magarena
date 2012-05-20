@@ -1,4 +1,4 @@
->Oversoul of Dusk
+name=Oversoul of Dusk
 url=http://magiccards.info/shm/en/234.html
 image=http://magiccards.info/scans/en/shm/234.jpg
 value=5

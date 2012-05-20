@@ -1,4 +1,4 @@
->Bog Imp
+name=Bog Imp
 url=http://magiccards.info/9e/en/116.html
 image=http://magiccards.info/scans/en/9e/116.jpg 
 value=2

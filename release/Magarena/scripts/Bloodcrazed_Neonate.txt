@@ -1,4 +1,4 @@
->Bloodcrazed Neonate
+name=Bloodcrazed Neonate
 url=http://magiccards.info/isd/en/131.html
 image=http://magiccards.info/scans/en/isd/131.jpg
 value=2

@@ -1,4 +1,4 @@
->Leaden Myr
+name=Leaden Myr
 url=http://magiccards.info/som/en/170.html
 image=http://magiccards.info/scans/en/som/170.jpg
 value=3

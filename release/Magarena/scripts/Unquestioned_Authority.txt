@@ -1,4 +1,4 @@
->Unquestioned Authority
+name=Unquestioned Authority
 url=http://magiccards.info/ju/en/31.html
 image=http://magiccards.info/scans/en/ju/31.jpg
 value=4

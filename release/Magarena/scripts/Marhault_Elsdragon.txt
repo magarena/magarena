@@ -1,4 +1,4 @@
->Marhault Elsdragon
+name=Marhault Elsdragon
 url=http://magiccards.info/ch/en/114.html
 image=http://magiccards.info/scans/en/ch/114.jpg
 value=4

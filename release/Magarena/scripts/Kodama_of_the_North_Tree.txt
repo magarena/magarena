@@ -1,4 +1,4 @@
->Kodama of the North Tree
+name=Kodama of the North Tree
 url=http://magiccards.info/chk/en/222.html
 image=http://magiccards.info/scans/en/chk/222.jpg 
 value=5

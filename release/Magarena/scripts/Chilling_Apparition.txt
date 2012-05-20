@@ -1,4 +1,4 @@
->Chilling Apparition
+name=Chilling Apparition
 url=http://magiccards.info/pr/en/59.html
 image=http://magiccards.info/scans/en/pr/59.jpg
 value=2

@@ -1,4 +1,4 @@
->Lantern Spirit
+name=Lantern Spirit
 url=http://magiccards.info/isd/en/62.html
 image=http://magiccards.info/scans/en/isd/62.jpg
 value=2

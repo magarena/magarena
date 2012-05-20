@@ -1,4 +1,4 @@
->Longbow Archer
+name=Longbow Archer
 url=http://magiccards.info/7e/en/26.html
 image=http://magiccards.info/scans/en/7e/26.jpg 
 value=2

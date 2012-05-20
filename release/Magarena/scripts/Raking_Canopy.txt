@@ -1,4 +1,4 @@
->Raking Canopy
+name=Raking Canopy
 url=http://magiccards.info/shm/en/127.html
 image=http://magiccards.info/scans/en/shm/127.jpg
 value=3

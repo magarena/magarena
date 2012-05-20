@@ -1,4 +1,4 @@
->Stone Golem
+name=Stone Golem
 url=http://magiccards.info/m11/en/215.html
 image=http://magiccards.info/scans/en/m11/215.jpg 
 value=4

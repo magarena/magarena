@@ -1,4 +1,4 @@
->Gwafa Hazid, Profiteer
+name=Gwafa Hazid, Profiteer
 url=http://magiccards.info/cfx/en/110.html
 image=http://magiccards.info/scans/en/cfx/110.jpg
 value=4

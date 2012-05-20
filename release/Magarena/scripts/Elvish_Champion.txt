@@ -1,4 +1,4 @@
->Elvish Champion
+name=Elvish Champion
 url=http://magiccards.info/dpa/en/60.html
 image=http://magiccards.info/scans/en/10e/261.jpg
 value=3

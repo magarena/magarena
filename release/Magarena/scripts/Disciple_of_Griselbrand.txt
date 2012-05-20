@@ -1,4 +1,4 @@
->Disciple of Griselbrand
+name=Disciple of Griselbrand
 url=http://magiccards.info/isd/en/98.html
 image=http://magiccards.info/scans/en/isd/98.jpg
 value=1

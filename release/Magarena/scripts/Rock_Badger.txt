@@ -1,4 +1,4 @@
->Rock Badger
+name=Rock Badger
 url=http://magiccards.info/10e/en/226.html
 image=http://magiccards.info/scans/en/10e/226.jpg
 value=3

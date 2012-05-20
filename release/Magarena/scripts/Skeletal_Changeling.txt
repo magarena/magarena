@@ -1,4 +1,4 @@
->Skeletal Changeling
+name=Skeletal Changeling
 url=http://magiccards.info/lw/en/140.html
 image=http://magiccards.info/scans/en/lw/140.jpg
 value=2

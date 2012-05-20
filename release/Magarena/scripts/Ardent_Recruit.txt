@@ -1,4 +1,4 @@
->Ardent Recruit
+name=Ardent Recruit
 url=http://magiccards.info/mbs/en/2.html
 image=http://magiccards.info/scans/en/mbs/2.jpg
 value=1

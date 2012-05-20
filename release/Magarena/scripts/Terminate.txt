@@ -1,4 +1,4 @@
->Terminate
+name=Terminate
 url=http://magiccards.info/cmd/en/231.html
 image=http://magiccards.info/scans/en/arc/95.jpg
 value=4

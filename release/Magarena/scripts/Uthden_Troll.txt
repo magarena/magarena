@@ -1,4 +1,4 @@
->Uthden Troll
+name=Uthden Troll
 url=http://magiccards.info/4e/en/246.html
 image=http://magiccards.info/scans/en/4e/246.jpg
 value=2

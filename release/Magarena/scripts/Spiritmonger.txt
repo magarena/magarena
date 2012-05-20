@@ -1,4 +1,4 @@
->Spiritmonger
+name=Spiritmonger
 url=http://magiccards.info/gpx/en/2.html
 image=http://magiccards.info/scans/en/ap/121.jpg
 value=5

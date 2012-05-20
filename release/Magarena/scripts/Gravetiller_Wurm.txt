@@ -1,4 +1,4 @@
->Gravetiller Wurm
+name=Gravetiller Wurm
 url=http://magiccards.info/dka/en/116.html
 image=http://magiccards.info/scans/en/dka/116.jpg
 value=4

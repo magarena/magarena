@@ -1,4 +1,4 @@
->Venomous Dragonfly
+name=Venomous Dragonfly
 url=http://magiccards.info/mm/en/282.html
 image=http://magiccards.info/scans/en/mm/282.jpg
 value=2

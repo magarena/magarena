@@ -1,4 +1,4 @@
->Changeling Berserker
+name=Changeling Berserker
 url=http://magiccards.info/lw/en/160.html
 image=http://magiccards.info/scans/en/lw/160.jpg
 value=4

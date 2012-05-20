@@ -1,4 +1,4 @@
->Scourge Servant
+name=Scourge Servant
 url=http://magiccards.info/mbs/en/54.html
 image=http://magiccards.info/scans/en/mbs/54.jpg 
 value=3

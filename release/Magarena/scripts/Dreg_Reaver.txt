@@ -1,4 +1,4 @@
->Dreg Reaver
+name=Dreg Reaver
 url=http://magiccards.info/ala/en/73.html
 image=http://magiccards.info/scans/en/ala/73.jpg 
 value=3

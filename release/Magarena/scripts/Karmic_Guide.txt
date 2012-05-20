@@ -1,4 +1,4 @@
->Karmic Guide
+name=Karmic Guide
 url=http://magiccards.info/ul/en/11.html
 image=http://magiccards.info/scans/en/ul/11.jpg
 value=4

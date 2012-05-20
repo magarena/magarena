@@ -1,4 +1,4 @@
->Yavimaya Barbarian
+name=Yavimaya Barbarian
 url=http://magiccards.info/in/en/290.html
 image=http://magiccards.info/scans/en/in/290.jpg 
 value=2

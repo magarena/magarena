@@ -1,4 +1,4 @@
->Benalish Veteran
+name=Benalish Veteran
 url=http://magiccards.info/m12/en/10.html
 image=http://magiccards.info/scans/en/m12/10.jpg
 value=3

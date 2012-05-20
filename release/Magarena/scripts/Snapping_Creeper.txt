@@ -1,4 +1,4 @@
->Snapping Creeper
+name=Snapping Creeper
 url=http://magiccards.info/wwk/en/112.html
 image=http://magiccards.info/scans/en/wwk/112.jpg
 value=2

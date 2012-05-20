@@ -1,4 +1,4 @@
->Body of Jukai
+name=Body of Jukai
 url=http://magiccards.info/bok/en/121.html
 image=http://magiccards.info/scans/en/bok/121.jpg
 value=5

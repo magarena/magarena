@@ -1,4 +1,4 @@
->Phyrexian Digester
+name=Phyrexian Digester
 url=http://magiccards.info/mbs/en/120.html
 image=http://magiccards.info/scans/en/mbs/120.jpg 
 value=2

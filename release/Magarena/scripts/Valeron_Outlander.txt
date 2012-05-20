@@ -1,4 +1,4 @@
->Valeron Outlander
+name=Valeron Outlander
 url=http://magiccards.info/cfx/en/130.html
 image=http://magiccards.info/scans/en/cfx/130.jpg 
 value=2

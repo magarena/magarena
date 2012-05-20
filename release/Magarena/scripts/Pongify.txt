@@ -1,4 +1,4 @@
->Pongify
+name=Pongify
 url=http://magiccards.info/pc/en/44.html
 image=http://magiccards.info/scans/en/pc/44.jpg
 value=3

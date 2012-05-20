@@ -1,4 +1,4 @@
->Insect
+name=Insect
 token=Insect2
 image=http://forums.mtgsalvation.com/attachment.php?attachmentid=42433&amp;stc=1&amp;d=1173951402
 value=3

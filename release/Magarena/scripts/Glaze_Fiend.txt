@@ -1,4 +1,4 @@
->Glaze Fiend
+name=Glaze Fiend
 url=http://magiccards.info/ala/en/77.html
 image=http://magiccards.info/scans/en/ala/77.jpg
 value=2

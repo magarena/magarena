@@ -1,4 +1,4 @@
->Eel Umbra
+name=Eel Umbra
 url=http://magiccards.info/roe/en/65.html
 image=http://magiccards.info/scans/en/roe/65.jpg
 value=3

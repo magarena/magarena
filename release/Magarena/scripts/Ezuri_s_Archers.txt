@@ -1,4 +1,4 @@
->Ezuri's Archers
+name=Ezuri's Archers
 url=http://magiccards.info/som/en/120.html
 image=http://magiccards.info/scans/en/som/120.jpg
 value=2

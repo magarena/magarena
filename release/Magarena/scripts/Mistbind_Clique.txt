@@ -1,4 +1,4 @@
->Mistbind Clique
+name=Mistbind Clique
 url=http://magiccards.info/lw/en/75.html
 image=http://magiccards.info/scans/en/lw/75.jpg
 value=5

@@ -1,4 +1,4 @@
->Trumpet Blast
+name=Trumpet Blast
 url=http://magiccards.info/m10/en/160.html
 image=http://magiccards.info/scans/en/m10/160.jpg
 value=3

@@ -1,4 +1,4 @@
->Wolf
+name=Wolf
 token=Wolf
 image=http://magiccards.info/extras/token/zendikar/wolf.jpg
 value=2

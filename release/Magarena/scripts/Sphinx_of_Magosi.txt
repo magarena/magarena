@@ -1,4 +1,4 @@
->Sphinx of Magosi
+name=Sphinx of Magosi
 url=http://magiccards.info/roe/en/89.html
 image=http://magiccards.info/scans/en/roe/89.jpg
 value=5

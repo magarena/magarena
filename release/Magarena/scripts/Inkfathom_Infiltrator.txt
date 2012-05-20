@@ -1,4 +1,4 @@
->Inkfathom Infiltrator
+name=Inkfathom Infiltrator
 url=http://magiccards.info/shm/en/167.html
 image=http://magiccards.info/scans/en/shm/167.jpg
 value=3

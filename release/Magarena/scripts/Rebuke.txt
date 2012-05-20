@@ -1,4 +1,4 @@
->Rebuke
+name=Rebuke
 url=http://magiccards.info/isd/en/29.html
 image=http://magiccards.info/scans/en/isd/29.jpg
 value=3

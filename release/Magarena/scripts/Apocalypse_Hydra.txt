@@ -1,4 +1,4 @@
->Apocalypse Hydra
+name=Apocalypse Hydra
 url=http://magiccards.info/cfx/en/98.html
 image=http://magiccards.info/scans/en/cfx/98.jpg
 value=3

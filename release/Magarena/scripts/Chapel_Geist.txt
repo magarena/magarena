@@ -1,4 +1,4 @@
->Chapel Geist
+name=Chapel Geist
 url=http://magiccards.info/isd/en/7.html
 image=http://magiccards.info/scans/en/isd/7.jpg
 value=2

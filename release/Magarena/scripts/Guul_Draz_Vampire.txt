@@ -1,4 +1,4 @@
->Guul Draz Vampire
+name=Guul Draz Vampire
 url=http://magiccards.info/zen/en/93.html
 image=http://magiccards.info/scans/en/zen/93.jpg
 value=2

@@ -1,4 +1,4 @@
->Abbey Griffin
+name=Abbey Griffin
 url=http://magiccards.info/isd/en/1.html
 image=http://magiccards.info/scans/en/isd/1.jpg
 value=3

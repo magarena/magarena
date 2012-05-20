@@ -1,4 +1,4 @@
->Aggressive Urge
+name=Aggressive Urge
 url=http://magiccards.info/10e/en/250.html
 image=http://magiccards.info/scans/en/10e/250.jpg
 value=2

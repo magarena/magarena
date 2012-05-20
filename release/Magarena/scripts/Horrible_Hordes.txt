@@ -1,4 +1,4 @@
->Horrible Hordes
+name=Horrible Hordes
 url=http://magiccards.info/mr/en/269.html
 image=http://magiccards.info/scans/en/mr/269.jpg
 value=2

@@ -1,4 +1,4 @@
->Hedron-Field Purists
+name=Hedron-Field Purists
 url=http://magiccards.info/roe/en/25.html
 image=http://magiccards.info/scans/en/roe/25.jpg
 value=2

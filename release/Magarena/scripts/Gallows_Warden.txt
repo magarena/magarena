@@ -1,4 +1,4 @@
->Gallows Warden
+name=Gallows Warden
 url=http://magiccards.info/isd/en/16.html
 image=http://magiccards.info/scans/en/isd/16.jpg
 value=4

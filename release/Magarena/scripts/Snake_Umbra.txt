@@ -1,4 +1,4 @@
->Snake Umbra
+name=Snake Umbra
 url=http://magiccards.info/roe/en/207.html
 image=http://magiccards.info/scans/en/roe/207.jpg
 value=3

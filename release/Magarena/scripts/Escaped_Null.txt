@@ -1,4 +1,4 @@
->Escaped Null
+name=Escaped Null
 url=http://magiccards.info/roe/en/109.html
 image=http://magiccards.info/scans/en/roe/109.jpg
 value=2

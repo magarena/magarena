@@ -1,4 +1,4 @@
->Strangleroot Geist
+name=Strangleroot Geist
 url=http://magiccards.info/dka/en/127.html
 image=http://magiccards.info/scans/en/dka/127.jpg
 value=3

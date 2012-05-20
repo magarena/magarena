@@ -1,4 +1,4 @@
->Colossal Might
+name=Colossal Might
 url=http://magiccards.info/cmd/en/190.html
 image=http://magiccards.info/scans/en/arc/83.jpg
 value=3

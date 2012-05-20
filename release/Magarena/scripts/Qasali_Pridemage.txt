@@ -1,4 +1,4 @@
->Qasali Pridemage
+name=Qasali Pridemage
 url=http://magiccards.info/ddh/en/10.html
 image=http://magiccards.info/scans/en/arb/75.jpg
 value=3

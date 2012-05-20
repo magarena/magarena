@@ -1,4 +1,4 @@
->Guardian Seraph
+name=Guardian Seraph
 url=http://magiccards.info/m10/en/13.html
 image=http://magiccards.info/scans/en/m10/13.jpg
 value=4

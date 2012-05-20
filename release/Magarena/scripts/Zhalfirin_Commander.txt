@@ -1,4 +1,4 @@
->Zhalfirin Commander
+name=Zhalfirin Commander
 url=http://magiccards.info/ddg/en/13.html
 image=http://magiccards.info/scans/en/ddg/13.jpg
 value=3

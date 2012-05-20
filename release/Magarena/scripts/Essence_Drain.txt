@@ -1,4 +1,4 @@
->Essence Drain
+name=Essence Drain
 url=http://magiccards.info/dpa/en/24.html
 image=http://magiccards.info/scans/en/10e/141.jpg
 value=4

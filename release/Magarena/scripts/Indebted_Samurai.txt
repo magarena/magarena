@@ -1,4 +1,4 @@
->Indebted Samurai
+name=Indebted Samurai
 url=http://magiccards.info/bok/en/9.html
 image=http://magiccards.info/scans/en/bok/9.jpg
 value=3

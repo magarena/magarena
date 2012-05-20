@@ -1,4 +1,4 @@
->Stupor
+name=Stupor
 url=http://magiccards.info/tsts/en/48.html
 image=http://magiccards.info/scans/en/tsts/48.jpg
 value=3

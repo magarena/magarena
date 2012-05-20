@@ -1,4 +1,4 @@
->Living Wall
+name=Living Wall
 url=http://magiccards.info/rv/en/262.html
 image=http://magiccards.info/scans/en/rv/262.jpg
 value=3

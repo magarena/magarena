@@ -1,4 +1,4 @@
->Scavenger Drake
+name=Scavenger Drake
 url=http://magiccards.info/ala/en/85.html
 image=http://magiccards.info/scans/en/ala/85.jpg
 value=2

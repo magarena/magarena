@@ -1,4 +1,4 @@
->Kazuul Warlord
+name=Kazuul Warlord
 url=http://magiccards.info/zen/en/134.html
 image=http://magiccards.info/scans/en/zen/134.jpg
 value=4

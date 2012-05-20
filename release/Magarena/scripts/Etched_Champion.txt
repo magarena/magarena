@@ -1,4 +1,4 @@
->Etched Champion
+name=Etched Champion
 url=http://magiccards.info/som/en/154.html
 image=http://magiccards.info/scans/en/som/154.jpg
 value=2

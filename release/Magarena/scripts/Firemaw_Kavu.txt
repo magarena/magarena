@@ -1,4 +1,4 @@
->Firemaw Kavu
+name=Firemaw Kavu
 url=http://magiccards.info/ts/en/153.html
 image=http://magiccards.info/scans/en/ts/153.jpg
 value=4

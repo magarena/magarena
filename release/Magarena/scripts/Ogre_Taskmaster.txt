@@ -1,4 +1,4 @@
->Ogre Taskmaster
+name=Ogre Taskmaster
 url=http://magiccards.info/9e/en/205.html
 image=http://magiccards.info/scans/en/9e/205.jpg 
 value=3

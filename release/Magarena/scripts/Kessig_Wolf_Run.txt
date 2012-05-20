@@ -1,4 +1,4 @@
->Kessig Wolf Run
+name=Kessig Wolf Run
 url=http://magiccards.info/isd/en/243.html
 image=http://magiccards.info/scans/en/isd/243.jpg
 value=4

@@ -1,4 +1,4 @@
->Mausoleum Guard
+name=Mausoleum Guard
 url=http://magiccards.info/isd/en/20.html
 image=http://magiccards.info/scans/en/isd/20.jpg
 value=2

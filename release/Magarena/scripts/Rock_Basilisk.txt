@@ -1,4 +1,4 @@
->Rock Basilisk
+name=Rock Basilisk
 url=http://magiccards.info/mr/en/339.html
 image=http://magiccards.info/scans/en/mr/339.jpg
 value=4

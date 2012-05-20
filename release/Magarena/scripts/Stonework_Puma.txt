@@ -1,4 +1,4 @@
->Stonework Puma
+name=Stonework Puma
 url=http://magiccards.info/zen/en/207.html
 image=http://magiccards.info/scans/en/zen/207.jpg 
 value=1

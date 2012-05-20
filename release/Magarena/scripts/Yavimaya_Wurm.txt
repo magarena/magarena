@@ -1,4 +1,4 @@
->Yavimaya Wurm
+name=Yavimaya Wurm
 url=http://magiccards.info/m11/en/200.html
 image=http://magiccards.info/scans/en/m11/200.jpg 
 value=4

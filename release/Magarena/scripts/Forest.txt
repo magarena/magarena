@@ -1,4 +1,4 @@
->Forest
+name=Forest
 url=http://magiccards.info/isd/en/262.html
 image=http://magiccards.info/scans/en/zen/246.jpg
 num_images=2

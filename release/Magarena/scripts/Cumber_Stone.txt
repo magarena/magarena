@@ -1,4 +1,4 @@
->Cumber Stone
+name=Cumber Stone
 url=http://magiccards.info/cfx/en/24.html
 image=http://magiccards.info/scans/en/cfx/24.jpg
 value=3

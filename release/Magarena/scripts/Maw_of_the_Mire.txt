@@ -1,4 +1,4 @@
->Maw of the Mire
+name=Maw of the Mire
 url=http://magiccards.info/isd/en/108.html
 image=http://magiccards.info/scans/en/isd/108.jpg
 value=3

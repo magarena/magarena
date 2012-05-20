@@ -1,4 +1,4 @@
->Will-o'-the-Wisp
+name=Will-o'-the-Wisp
 url=http://magiccards.info/9e/en/169.html
 image=http://magiccards.info/scans/en/9e/169.jpg
 value=1

@@ -1,4 +1,4 @@
->Birds of Paradise
+name=Birds of Paradise
 url=http://magiccards.info/m12/en/165.html
 image=http://magiccards.info/scans/en/m11/165.jpg
 value=4

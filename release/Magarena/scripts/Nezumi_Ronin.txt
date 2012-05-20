@@ -1,4 +1,4 @@
->Nezumi Ronin
+name=Nezumi Ronin
 url=http://magiccards.info/chk/en/130.html
 image=http://magiccards.info/scans/en/chk/130.jpg
 value=2

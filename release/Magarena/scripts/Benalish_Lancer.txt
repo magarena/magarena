@@ -1,4 +1,4 @@
->Benalish Lancer
+name=Benalish Lancer
 url=http://magiccards.info/in/en/7.html
 image=http://magiccards.info/scans/en/in/7.jpg
 value=2

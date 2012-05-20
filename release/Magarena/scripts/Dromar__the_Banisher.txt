@@ -1,4 +1,4 @@
->Dromar, the Banisher
+name=Dromar, the Banisher
 url=http://magiccards.info/in/en/244.html
 image=http://magiccards.info/scans/en/in/244.jpg
 value=5

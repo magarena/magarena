@@ -1,4 +1,4 @@
->Dusk Imp
+name=Dusk Imp
 url=http://magiccards.info/dpa/en/23.html
 image=http://magiccards.info/scans/en/dpa/23.jpg 
 value=2

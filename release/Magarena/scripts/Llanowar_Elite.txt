@@ -1,4 +1,4 @@
->Llanowar Elite
+name=Llanowar Elite
 url=http://magiccards.info/in/en/196.html
 image=http://magiccards.info/scans/en/in/196.jpg
 value=1

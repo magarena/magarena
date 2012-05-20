@@ -1,4 +1,4 @@
->Samurai Enforcers
+name=Samurai Enforcers
 url=http://magiccards.info/chk/en/42.html
 image=http://magiccards.info/scans/en/chk/42.jpg
 value=4

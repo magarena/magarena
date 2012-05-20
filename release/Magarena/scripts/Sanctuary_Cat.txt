@@ -1,4 +1,4 @@
->Sanctuary Cat
+name=Sanctuary Cat
 url=http://magiccards.info/dka/en/19.html
 image=http://magiccards.info/scans/en/dka/19.jpg
 value=1

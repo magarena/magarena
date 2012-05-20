@@ -1,4 +1,4 @@
->Righteousness
+name=Righteousness
 url=http://magiccards.info/m10/en/27.html
 image=http://magiccards.info/scans/en/m10/27.jpg
 ignore=62602

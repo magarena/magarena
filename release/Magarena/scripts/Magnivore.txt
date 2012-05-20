@@ -1,4 +1,4 @@
->Magnivore
+name=Magnivore
 url=http://magiccards.info/od/en/204.html
 image=http://magiccards.info/scans/en/od/204.jpg
 value=3

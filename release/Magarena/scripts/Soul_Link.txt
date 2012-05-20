@@ -1,4 +1,4 @@
->Soul Link
+name=Soul Link
 url=http://magiccards.info/ap/en/120.html
 image=http://magiccards.info/scans/en/ap/120.jpg
 value=3

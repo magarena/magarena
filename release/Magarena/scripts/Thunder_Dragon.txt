@@ -1,4 +1,4 @@
->Thunder Dragon
+name=Thunder Dragon
 url=http://magiccards.info/ddg/en/61.html
 image=http://magiccards.info/scans/en/fvd/14.jpg
 value=5

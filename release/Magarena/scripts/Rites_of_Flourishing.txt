@@ -1,4 +1,4 @@
->Rites of Flourishing
+name=Rites of Flourishing
 url=http://magiccards.info/m12/en/192.html
 image=http://magiccards.info/scans/en/m12/192.jpg
 value=3

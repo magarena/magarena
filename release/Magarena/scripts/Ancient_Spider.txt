@@ -1,4 +1,4 @@
->Ancient Spider
+name=Ancient Spider
 url=http://magiccards.info/ps/en/96.html
 image=http://magiccards.info/scans/en/ps/96.jpg 
 value=3

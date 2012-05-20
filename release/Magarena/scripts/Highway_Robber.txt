@@ -1,4 +1,4 @@
->Highway Robber
+name=Highway Robber
 url=http://magiccards.info/10e/en/150.html
 image=http://magiccards.info/scans/en/10e/150.jpg
 value=3

@@ -1,4 +1,4 @@
->Arcbound Bruiser
+name=Arcbound Bruiser
 url=http://magiccards.info/ds/en/94.html
 image=http://magiccards.info/scans/en/ds/94.jpg
 value=3

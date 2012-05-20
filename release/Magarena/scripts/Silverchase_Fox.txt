@@ -1,4 +1,4 @@
->Silverchase Fox
+name=Silverchase Fox
 url=http://magiccards.info/isd/en/31.html
 image=http://magiccards.info/scans/en/isd/31.jpg
 value=2

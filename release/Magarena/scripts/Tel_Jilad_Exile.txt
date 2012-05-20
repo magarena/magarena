@@ -1,4 +1,4 @@
->Tel-Jilad Exile
+name=Tel-Jilad Exile
 url=http://magiccards.info/mi/en/133.html
 image=http://magiccards.info/scans/en/mi/133.jpg
 value=2

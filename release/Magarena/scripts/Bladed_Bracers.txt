@@ -1,4 +1,4 @@
->Bladed Bracers
+name=Bladed Bracers
 url=http://magiccards.info/avr/en/213.html
 image=http://magiccards.info/scans/en/avr/213.jpg
 value=3

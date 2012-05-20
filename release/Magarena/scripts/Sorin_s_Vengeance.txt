@@ -1,4 +1,4 @@
->Sorin's Vengeance
+name=Sorin's Vengeance
 url=http://magiccards.info/m12/en/111.html
 image=http://magiccards.info/scans/en/m12/111.jpg
 value=4

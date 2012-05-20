@@ -1,4 +1,4 @@
->Angelic Destiny
+name=Angelic Destiny
 url=http://magiccards.info/m12/en/3.html
 image=http://magiccards.info/scans/en/m12/3.jpg
 value=5
@@ -11,6 +11,6 @@ cost={2}{W}{W}
 given_pt=4/4
 given_ability=flying,first strike
 given_subtype=Angel
-timing=aura	
+timing=aura
 enchant=pump,pos creature
 requires_card_code

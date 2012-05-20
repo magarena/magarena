@@ -1,4 +1,4 @@
->Mortivore
+name=Mortivore
 url=http://magiccards.info/cmd/en/89.html
 image=http://magiccards.info/scans/en/cmd/89.jpg
 value=3

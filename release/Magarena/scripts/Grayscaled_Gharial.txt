@@ -1,4 +1,4 @@
->Grayscaled Gharial
+name=Grayscaled Gharial
 url=http://magiccards.info/rav/en/52.html
 image=http://magiccards.info/scans/en/rav/52.jpg 
 value=1

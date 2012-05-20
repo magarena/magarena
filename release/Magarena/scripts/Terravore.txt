@@ -1,4 +1,4 @@
->Terravore
+name=Terravore
 url=http://magiccards.info/od/en/278.html
 image=http://magiccards.info/scans/en/od/278.jpg
 value=3

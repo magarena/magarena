@@ -1,4 +1,4 @@
->Invisible Stalker
+name=Invisible Stalker
 url=http://magiccards.info/isd/en/60.html
 image=http://magiccards.info/scans/en/isd/60.jpg
 value=2

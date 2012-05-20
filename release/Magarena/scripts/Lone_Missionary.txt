@@ -1,4 +1,4 @@
->Lone Missionary
+name=Lone Missionary
 url=http://magiccards.info/roe/en/34.html
 image=http://magiccards.info/scans/en/roe/34.jpg
 value=2

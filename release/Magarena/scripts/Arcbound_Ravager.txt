@@ -1,4 +1,4 @@
->Arcbound Ravager
+name=Arcbound Ravager
 url=http://magiccards.info/ds/en/100.html
 image=http://magiccards.info/scans/en/ds/100.jpg
 value=3

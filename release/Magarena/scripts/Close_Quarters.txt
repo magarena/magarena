@@ -1,4 +1,4 @@
->Close Quarters
+name=Close Quarters
 url=http://magiccards.info/mm/en/184.html
 image=http://magiccards.info/scans/en/mm/184.jpg
 value=3

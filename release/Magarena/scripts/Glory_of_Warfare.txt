@@ -1,4 +1,4 @@
->Glory of Warfare
+name=Glory of Warfare
 url=http://magiccards.info/pch/en/88.html
 image=http://magiccards.info/scans/en/arb/98.jpg
 value=4

@@ -1,4 +1,4 @@
->Pillory of the Sleepless
+name=Pillory of the Sleepless
 url=http://magiccards.info/gp/en/125.html
 image=http://magiccards.info/scans/en/gp/125.jpg
 value=4

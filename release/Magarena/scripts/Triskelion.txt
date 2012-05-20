@@ -1,4 +1,4 @@
->Triskelion
+name=Triskelion
 url=http://magiccards.info/ddf/en/57.html
 image=http://magiccards.info/scans/en/m11/218.jpg
 value=3

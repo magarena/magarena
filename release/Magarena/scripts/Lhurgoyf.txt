@@ -1,4 +1,4 @@
->Lhurgoyf
+name=Lhurgoyf
 url=http://magiccards.info/cmd/en/165.html
 image=http://magiccards.info/scans/en/cmd/165.jpg
 value=3

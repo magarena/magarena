@@ -1,4 +1,4 @@
->Wrecking Ball
+name=Wrecking Ball
 url=http://magiccards.info/cmd/en/238.html
 image=http://magiccards.info/scans/en/di/139.jpg
 value=3

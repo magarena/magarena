@@ -1,4 +1,4 @@
->Chub Toad
+name=Chub Toad
 url=http://magiccards.info/5e/en/145.html
 image=http://magiccards.info/scans/en/5e/145.jpg
 value=2

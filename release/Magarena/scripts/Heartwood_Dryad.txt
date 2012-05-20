@@ -1,4 +1,4 @@
->Heartwood Dryad
+name=Heartwood Dryad
 url=http://magiccards.info/tp/en/125.html
 image=http://magiccards.info/scans/en/tp/125.jpg
 value=2

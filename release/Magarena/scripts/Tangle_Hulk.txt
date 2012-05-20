@@ -1,4 +1,4 @@
->Tangle Hulk
+name=Tangle Hulk
 url=http://magiccards.info/mbs/en/139.html
 image=http://magiccards.info/scans/en/mbs/139.jpg
 value=4

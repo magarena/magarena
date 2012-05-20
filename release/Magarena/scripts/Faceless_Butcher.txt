@@ -1,4 +1,4 @@
->Faceless Butcher
+name=Faceless Butcher
 url=http://magiccards.info/tr/en/60.html
 image=http://magiccards.info/scans/en/tr/60.jpg
 value=3

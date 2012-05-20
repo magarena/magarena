@@ -1,4 +1,4 @@
->Kami of the Honored Dead
+name=Kami of the Honored Dead
 url=http://magiccards.info/bok/en/12.html
 image=http://magiccards.info/scans/en/bok/12.jpg
 value=4

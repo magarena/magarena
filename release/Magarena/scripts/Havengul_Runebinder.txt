@@ -1,4 +1,4 @@
->Havengul Runebinder
+name=Havengul Runebinder
 url=http://magiccards.info/dka/en/39.html
 image=http://magiccards.info/scans/en/dka/39.jpg
 value=4

@@ -1,4 +1,4 @@
->Veteran Swordsmith
+name=Veteran Swordsmith
 url=http://magiccards.info/m10/en/39.html
 image=http://magiccards.info/scans/en/m10/39.jpg
 value=2

@@ -1,4 +1,4 @@
->Yotian Soldier
+name=Yotian Soldier
 url=http://magiccards.info/mi/en/277.html
 image=http://magiccards.info/scans/en/mi/277.jpg 
 value=2

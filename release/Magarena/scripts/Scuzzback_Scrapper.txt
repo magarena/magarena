@@ -1,4 +1,4 @@
->Scuzzback Scrapper
+name=Scuzzback Scrapper
 url=http://magiccards.info/shm/en/217.html
 image=http://magiccards.info/scans/en/shm/217.jpg
 value=1

@@ -1,4 +1,4 @@
->Auriok Glaivemaster
+name=Auriok Glaivemaster
 url=http://magiccards.info/ds/en/1.html
 image=http://magiccards.info/scans/en/ds/1.jpg
 value=1

@@ -1,10 +1,10 @@
->Glacial Fortress
+name=Glacial Fortress
 url=http://magiccards.info/m12/en/227.html
 image=http://magiccards.info/scans/en/m11/225.jpg
 value=4
 rarity=R
 type=Land
 mana=w3u3
-ability=tap add mana {W} or {U}
-ability=enters tapped unless plains island
+ability=tap add mana {W} or {U},\
+        enters tapped unless plains island
 timing=land

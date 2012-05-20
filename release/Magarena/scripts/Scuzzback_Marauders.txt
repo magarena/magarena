@@ -1,4 +1,4 @@
->Scuzzback Marauders
+name=Scuzzback Marauders
 url=http://magiccards.info/shm/en/216.html
 image=http://magiccards.info/scans/en/shm/216.jpg
 value=4

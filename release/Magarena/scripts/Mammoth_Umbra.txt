@@ -1,4 +1,4 @@
->Mammoth Umbra
+name=Mammoth Umbra
 url=http://magiccards.info/roe/en/37.html
 image=http://magiccards.info/scans/en/roe/37.jpg
 value=4

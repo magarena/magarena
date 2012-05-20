@@ -1,4 +1,4 @@
->Jund Hackblade
+name=Jund Hackblade
 url=http://magiccards.info/arb/en/138.html
 image=http://magiccards.info/scans/en/arb/138.jpg
 value=3

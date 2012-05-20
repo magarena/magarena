@@ -1,4 +1,4 @@
->Mighty Leap
+name=Mighty Leap
 url=http://magiccards.info/m12/en/26.html
 image=http://magiccards.info/scans/en/m11/22.jpg
 value=3

@@ -1,4 +1,4 @@
->Rat
+name=Rat
 token=Rat1
 image=http://magiccards.info/extras/token/shadowmoor/rat.jpg
 value=1

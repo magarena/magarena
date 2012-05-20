@@ -1,4 +1,4 @@
->Valiant Guard
+name=Valiant Guard
 url=http://magiccards.info/cfx/en/19.html
 image=http://magiccards.info/scans/en/cfx/19.jpg 
 value=1

@@ -1,4 +1,4 @@
->Kuro's Taken
+name=Kuro's Taken
 url=http://magiccards.info/sok/en/79.html
 image=http://magiccards.info/scans/en/sok/79.jpg
 value=2

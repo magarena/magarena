@@ -1,4 +1,4 @@
->Kiki-Jiki, Mirror Breaker
+name=Kiki-Jiki, Mirror Breaker
 url=http://magiccards.info/fvl/en/4.html
 image=http://magiccards.info/scans/en/chk/175.jpg
 value=5

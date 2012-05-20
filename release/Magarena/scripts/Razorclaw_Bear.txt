@@ -1,4 +1,4 @@
->Razorclaw Bear
+name=Razorclaw Bear
 url=http://magiccards.info/po2/en/82.html
 image=http://magiccards.info/scans/en/po2/82.jpg
 value=3

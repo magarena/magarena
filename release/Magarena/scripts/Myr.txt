@@ -1,4 +1,4 @@
->Myr
+name=Myr
 token=Myr1
 image=http://magiccards.info/extras/token/scars-of-mirrodin/myr.jpg
 value=1

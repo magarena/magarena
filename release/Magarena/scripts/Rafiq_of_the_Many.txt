@@ -1,4 +1,4 @@
->Rafiq of the Many
+name=Rafiq of the Many
 url=http://magiccards.info/fvl/en/10.html
 image=http://magiccards.info/scans/en/ala/185.jpg
 value=4

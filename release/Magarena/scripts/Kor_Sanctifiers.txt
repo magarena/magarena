@@ -1,4 +1,4 @@
->Kor Sanctifiers
+name=Kor Sanctifiers
 url=http://magiccards.info/zen/en/22.html
 image=http://magiccards.info/scans/en/zen/22.jpg
 value=2

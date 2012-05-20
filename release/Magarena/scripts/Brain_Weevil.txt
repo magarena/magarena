@@ -1,4 +1,4 @@
->Brain Weevil
+name=Brain Weevil
 url=http://magiccards.info/isd/en/91.html
 image=http://magiccards.info/scans/en/isd/91.jpg
 value=2

@@ -1,4 +1,4 @@
->Gather the Townsfolk
+name=Gather the Townsfolk
 url=http://magiccards.info/dka/en/8.html
 image=http://magiccards.info/scans/en/dka/8.jpg
 value=3

@@ -1,4 +1,4 @@
->Lab Rats
+name=Lab Rats
 url=http://magiccards.info/sh/en/11.html
 image=http://magiccards.info/scans/en/sh/11.jpg
 value=2

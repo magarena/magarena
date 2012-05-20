@@ -1,4 +1,4 @@
->Vivid Grove
+name=Vivid Grove
 url=http://magiccards.info/cmd/en/295.html
 image=http://magiccards.info/scans/en/lw/277.jpg
 value=3

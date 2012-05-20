@@ -1,4 +1,4 @@
->Reaper from the Abyss
+name=Reaper from the Abyss
 url=http://magiccards.info/isd/en/112.html
 image=http://magiccards.info/scans/en/isd/112.jpg
 value=5

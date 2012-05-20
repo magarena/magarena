@@ -1,4 +1,4 @@
->Cruel Edict
+name=Cruel Edict
 url=http://magiccards.info/dvd/en/48.html
 image=http://magiccards.info/scans/en/dvd/48.jpg
 value=2

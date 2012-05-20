@@ -1,4 +1,4 @@
->Reclaim
+name=Reclaim
 url=http://magiccards.info/m12/en/191.html
 image=http://magiccards.info/scans/en/m12/191.jpg
 value=3

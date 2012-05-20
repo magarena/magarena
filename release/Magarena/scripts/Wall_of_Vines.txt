@@ -1,4 +1,4 @@
->Wall of Vines
+name=Wall of Vines
 url=http://magiccards.info/m11/en/199.html
 image=http://magiccards.info/scans/en/m11/199.jpg 
 value=1

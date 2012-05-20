@@ -1,4 +1,4 @@
->Brion Stoutarm
+name=Brion Stoutarm
 url=http://magiccards.info/cmd/en/187.html
 image=http://magiccards.info/scans/en/lw/246.jpg
 value=5

@@ -1,4 +1,4 @@
->Geist-Honored Monk
+name=Geist-Honored Monk
 url=http://magiccards.info/isd/en/17.html
 image=http://magiccards.info/scans/en/isd/17.jpg
 value=4

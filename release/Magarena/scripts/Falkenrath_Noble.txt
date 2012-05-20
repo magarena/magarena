@@ -1,4 +1,4 @@
->Falkenrath Noble
+name=Falkenrath Noble
 url=http://magiccards.info/isd/en/100.html
 image=http://magiccards.info/scans/en/isd/100.jpg
 value=2

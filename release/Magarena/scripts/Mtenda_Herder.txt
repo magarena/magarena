@@ -1,4 +1,4 @@
->Mtenda Herder
+name=Mtenda Herder
 url=http://magiccards.info/mr/en/233.html
 image=http://magiccards.info/scans/en/mr/233.jpg
 value=2

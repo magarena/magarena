@@ -1,4 +1,4 @@
->Guul Draz Specter
+name=Guul Draz Specter
 url=http://magiccards.info/zen/en/92.html
 image=http://magiccards.info/scans/en/zen/92.jpg
 value=4

@@ -1,4 +1,4 @@
->Mask of Memory
+name=Mask of Memory
 url=http://magiccards.info/pch/en/119.html
 image=http://magiccards.info/scans/en/pch/119.jpg
 value=3

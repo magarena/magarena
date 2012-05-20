@@ -1,4 +1,4 @@
->Bloodrage Vampire
+name=Bloodrage Vampire
 url=http://magiccards.info/m12/en/83.html
 image=http://magiccards.info/scans/en/m12/83.jpg
 value=2

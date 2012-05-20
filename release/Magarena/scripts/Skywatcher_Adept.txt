@@ -1,4 +1,4 @@
->Skywatcher Adept
+name=Skywatcher Adept
 url=http://magiccards.info/roe/en/88.html
 image=http://magiccards.info/scans/en/roe/88.jpg
 value=2

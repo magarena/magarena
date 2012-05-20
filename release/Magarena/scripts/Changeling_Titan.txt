@@ -1,4 +1,4 @@
->Changeling Titan
+name=Changeling Titan
 url=http://magiccards.info/lw/en/200.html
 image=http://magiccards.info/scans/en/lw/200.jpg
 value=5

@@ -1,4 +1,4 @@
->Dross Prowler
+name=Dross Prowler
 url=http://magiccards.info/mi/en/64.html
 image=http://magiccards.info/scans/en/mi/64.jpg 
 value=3

@@ -1,4 +1,4 @@
->Hada Spy Patrol
+name=Hada Spy Patrol
 url=http://magiccards.info/roe/en/71.html
 image=http://magiccards.info/scans/en/roe/71.jpg
 value=2

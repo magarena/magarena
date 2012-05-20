@@ -1,4 +1,4 @@
->Quest for the Gravelord
+name=Quest for the Gravelord
 url=http://magiccards.info/zen/en/108.html
 image=http://magiccards.info/scans/en/zen/108.jpg
 value=3

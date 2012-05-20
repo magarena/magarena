@@ -1,4 +1,4 @@
->Caravan Hurda
+name=Caravan Hurda
 url=http://magiccards.info/zen/en/5.html
 image=http://magiccards.info/scans/en/zen/5.jpg 
 value=2

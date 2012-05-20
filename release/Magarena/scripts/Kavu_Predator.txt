@@ -1,4 +1,4 @@
->Kavu Predator
+name=Kavu Predator
 url=http://magiccards.info/pc/en/132.html
 image=http://magiccards.info/scans/en/pc/132.jpg
 value=3

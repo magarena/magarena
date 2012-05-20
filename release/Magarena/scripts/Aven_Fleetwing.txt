@@ -1,4 +1,4 @@
->Aven Fleetwing
+name=Aven Fleetwing
 url=http://magiccards.info/m12/en/44.html
 image=http://magiccards.info/scans/en/m12/44.jpg 
 value=3

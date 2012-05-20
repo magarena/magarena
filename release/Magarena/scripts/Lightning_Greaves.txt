@@ -1,4 +1,4 @@
->Lightning Greaves
+name=Lightning Greaves
 url=http://magiccards.info/cmd/en/253.html
 image=http://magiccards.info/scans/en/pvc/19.jpg
 value=4

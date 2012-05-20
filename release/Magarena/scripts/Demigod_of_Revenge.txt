@@ -1,4 +1,4 @@
->Demigod of Revenge
+name=Demigod of Revenge
 url=http://magiccards.info/shm/en/183.html
 image=http://magiccards.info/scans/en/shm/183.jpg
 value=5

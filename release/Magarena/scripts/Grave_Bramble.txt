@@ -1,4 +1,4 @@
->Grave Bramble
+name=Grave Bramble
 url=http://magiccards.info/isd/en/184.html
 image=http://magiccards.info/scans/en/isd/184.jpg
 value=2

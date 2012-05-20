@@ -1,4 +1,4 @@
->Venerable Kumo
+name=Venerable Kumo
 url=http://magiccards.info/chk/en/248.html
 image=http://magiccards.info/scans/en/chk/248.jpg
 value=3

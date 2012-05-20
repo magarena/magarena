@@ -1,4 +1,4 @@
->Konda, Lord of Eiganjo
+name=Konda, Lord of Eiganjo
 url=http://magiccards.info/chk/en/30.html
 image=http://magiccards.info/scans/en/chk/30.jpg
 value=5

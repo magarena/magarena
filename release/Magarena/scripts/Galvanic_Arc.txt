@@ -1,4 +1,4 @@
->Galvanic Arc
+name=Galvanic Arc
 url=http://magiccards.info/rav/en/126.html
 image=http://magiccards.info/scans/en/rav/126.jpg
 value=3

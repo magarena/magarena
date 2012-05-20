@@ -1,4 +1,4 @@
->Volcanic Dragon
+name=Volcanic Dragon
 url=http://magiccards.info/m12/en/158.html
 image=http://magiccards.info/scans/en/m12/158.jpg
 value=4

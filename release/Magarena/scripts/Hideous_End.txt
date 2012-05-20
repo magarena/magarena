@@ -1,4 +1,4 @@
->Hideous End
+name=Hideous End
 url=http://magiccards.info/pvc/en/26.html
 image=http://magiccards.info/scans/en/zen/98.jpg
 value=3

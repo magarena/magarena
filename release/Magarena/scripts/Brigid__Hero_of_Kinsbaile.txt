@@ -1,4 +1,4 @@
->Brigid, Hero of Kinsbaile
+name=Brigid, Hero of Kinsbaile
 url=http://magiccards.info/lw/en/6.html
 image=http://magiccards.info/scans/en/lw/6.jpg
 value=4

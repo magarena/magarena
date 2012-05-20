@@ -1,4 +1,4 @@
->Hagra Crocodile
+name=Hagra Crocodile
 url=http://magiccards.info/zen/en/94.html
 image=http://magiccards.info/scans/en/zen/94.jpg
 value=3

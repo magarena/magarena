@@ -1,4 +1,4 @@
->Visara the Dreadful
+name=Visara the Dreadful
 url=http://magiccards.info/fvl/en/15.html
 image=http://magiccards.info/scans/en/on/179.jpg
 value=5

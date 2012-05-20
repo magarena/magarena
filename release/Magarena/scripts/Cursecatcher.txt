@@ -1,4 +1,4 @@
->Cursecatcher
+name=Cursecatcher
 url=http://magiccards.info/shm/en/34.html
 image=http://magiccards.info/scans/en/shm/34.jpg
 value=1

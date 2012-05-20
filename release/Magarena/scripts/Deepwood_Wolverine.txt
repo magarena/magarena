@@ -1,4 +1,4 @@
->Deepwood Wolverine
+name=Deepwood Wolverine
 url=http://magiccards.info/mm/en/242.html
 image=http://magiccards.info/scans/en/mm/242.jpg
 value=1

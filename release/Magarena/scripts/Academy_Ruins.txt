@@ -1,4 +1,4 @@
->Academy Ruins
+name=Academy Ruins
 url=http://magiccards.info/ts/en/269.html
 image=http://magiccards.info/scans/en/ts/269.jpg
 value=3

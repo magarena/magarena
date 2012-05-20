@@ -1,4 +1,4 @@
->Alluring Siren
+name=Alluring Siren
 url=http://magiccards.info/m12/en/42.html
 image=http://magiccards.info/scans/en/m12/42.jpg
 value=2

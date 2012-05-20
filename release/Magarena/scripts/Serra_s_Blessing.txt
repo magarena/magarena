@@ -1,4 +1,4 @@
->Serra's Blessing
+name=Serra's Blessing
 url=http://magiccards.info/9e/en/44.html
 image=http://magiccards.info/scans/en/9e/44.jpg
 value=3

@@ -1,4 +1,4 @@
->Jhessian Balmgiver
+name=Jhessian Balmgiver
 url=http://magiccards.info/cfx/en/112.html
 image=http://magiccards.info/scans/en/cfx/112.jpg
 value=3

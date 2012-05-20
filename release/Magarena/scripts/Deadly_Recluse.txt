@@ -1,4 +1,4 @@
->Deadly Recluse
+name=Deadly Recluse
 url=http://magiccards.info/cmd/en/149.html
 image=http://magiccards.info/scans/en/m10/175.jpg
 value=2

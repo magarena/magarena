@@ -1,4 +1,4 @@
->Bog Raiders
+name=Bog Raiders
 url=http://magiccards.info/m11/en/86.html
 image=http://magiccards.info/scans/en/m11/86.jpg 
 value=2

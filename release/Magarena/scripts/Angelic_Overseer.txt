@@ -1,4 +1,4 @@
->Angelic Overseer
+name=Angelic Overseer
 url=http://magiccards.info/isd/en/3.html
 image=http://magiccards.info/scans/en/isd/3.jpg
 value=5

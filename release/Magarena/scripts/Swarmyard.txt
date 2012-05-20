@@ -1,4 +1,4 @@
->Swarmyard
+name=Swarmyard
 url=http://magiccards.info/ts/en/278.html
 image=http://magiccards.info/scans/en/ts/278.jpg
 value=3

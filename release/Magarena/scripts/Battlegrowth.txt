@@ -1,4 +1,4 @@
->Battlegrowth
+name=Battlegrowth
 url=http://magiccards.info/mi/en/113.html
 image=http://magiccards.info/scans/en/mi/113.jpg
 value=1

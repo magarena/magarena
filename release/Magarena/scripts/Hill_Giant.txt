@@ -1,4 +1,4 @@
->Hill Giant
+name=Hill Giant
 url=http://magiccards.info/dpa/en/47.html
 image=http://magiccards.info/scans/en/dpa/47.jpg 
 value=3

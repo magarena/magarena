@@ -1,4 +1,4 @@
->To Arms!
+name=To Arms!
 url=http://magiccards.info/gp/en/20.html
 image=http://magiccards.info/scans/en/gp/20.jpg
 value=2

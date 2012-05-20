@@ -1,4 +1,4 @@
->Axegrinder Giant
+name=Axegrinder Giant
 url=http://magiccards.info/lw/en/151.html
 image=http://magiccards.info/scans/en/lw/151.jpg 
 value=4

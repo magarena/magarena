@@ -1,4 +1,4 @@
->Wall of Denial
+name=Wall of Denial
 url=http://magiccards.info/cmd/en/237.html
 image=http://magiccards.info/scans/en/arb/16.jpg
 value=4

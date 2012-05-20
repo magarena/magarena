@@ -1,4 +1,4 @@
->Selfless Cathar
+name=Selfless Cathar
 url=http://magiccards.info/isd/en/30.html
 image=http://magiccards.info/scans/en/isd/30.jpg
 value=2

@@ -1,4 +1,4 @@
->Bogardan Lancer
+name=Bogardan Lancer
 url=http://magiccards.info/fut/en/95.html
 image=http://magiccards.info/scans/en/fut/95.jpg
 value=2

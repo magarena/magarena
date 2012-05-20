@@ -1,4 +1,4 @@
->Cognivore
+name=Cognivore
 url=http://magiccards.info/od/en/77.html
 image=http://magiccards.info/scans/en/od/77.jpg
 value=4

@@ -1,4 +1,4 @@
->Disfigure
+name=Disfigure
 url=http://magiccards.info/zen/en/87.html
 image=http://magiccards.info/scans/en/zen/87.jpg
 value=2

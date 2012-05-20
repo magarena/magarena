@@ -1,4 +1,4 @@
->Guardians of Akrasa
+name=Guardians of Akrasa
 url=http://magiccards.info/ala/en/12.html
 image=http://magiccards.info/scans/en/ala/12.jpg 
 value=2

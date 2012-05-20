@@ -1,4 +1,4 @@
->Ezuri, Renegade Leader
+name=Ezuri, Renegade Leader
 url=http://magiccards.info/som/en/119.html
 image=http://magiccards.info/scans/en/som/119.jpg
 value=4

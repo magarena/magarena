@@ -1,4 +1,4 @@
->Sword of War and Peace
+name=Sword of War and Peace
 url=http://magiccards.info/nph/en/161.html
 image=http://magiccards.info/scans/en/nph/161.jpg
 value=5

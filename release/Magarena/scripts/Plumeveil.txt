@@ -1,4 +1,4 @@
->Plumeveil
+name=Plumeveil
 url=http://magiccards.info/cmd/en/218.html
 image=http://magiccards.info/scans/en/shm/145.jpg
 value=4

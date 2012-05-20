@@ -1,4 +1,4 @@
->Phyrexian Crusader
+name=Phyrexian Crusader
 url=http://magiccards.info/mbs/en/50.html
 image=http://magiccards.info/scans/en/mbs/50.jpg
 value=4

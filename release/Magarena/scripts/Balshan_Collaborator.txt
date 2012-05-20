@@ -1,4 +1,4 @@
->Balshan Collaborator
+name=Balshan Collaborator
 url=http://magiccards.info/tr/en/25.html
 image=http://magiccards.info/scans/en/tr/25.jpg
 value=3

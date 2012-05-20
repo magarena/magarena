@@ -1,4 +1,4 @@
->Goblin Lackey
+name=Goblin Lackey
 url=http://magiccards.info/fve/en/5.html
 image=http://magiccards.info/scans/en/fve/5.jpg
 value=2

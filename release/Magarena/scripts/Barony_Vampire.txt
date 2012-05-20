@@ -1,4 +1,4 @@
->Barony Vampire
+name=Barony Vampire
 url=http://magiccards.info/m11/en/82.html
 image=http://magiccards.info/scans/en/m11/82.jpg 
 value=3

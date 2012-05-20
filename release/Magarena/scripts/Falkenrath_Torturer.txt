@@ -1,4 +1,4 @@
->Falkenrath Torturer
+name=Falkenrath Torturer
 url=http://magiccards.info/dka/en/60.html
 image=http://magiccards.info/scans/en/dka/60.jpg
 value=2

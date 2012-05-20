@@ -1,4 +1,4 @@
->Cradle of Vitality
+name=Cradle of Vitality
 url=http://magiccards.info/ala/en/7.html
 image=http://magiccards.info/scans/en/ala/7.jpg
 value=4

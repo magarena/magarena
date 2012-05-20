@@ -1,4 +1,4 @@
->Ferrovore
+name=Ferrovore
 url=http://magiccards.info/som/en/88.html
 image=http://magiccards.info/scans/en/som/88.jpg
 value=2

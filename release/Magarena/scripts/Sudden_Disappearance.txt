@@ -1,4 +1,4 @@
->Sudden Disappearance
+name=Sudden Disappearance
 url=http://magiccards.info/dka/en/23.html
 image=http://magiccards.info/scans/en/dka/23.jpg
 value=4

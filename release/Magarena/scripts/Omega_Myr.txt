@@ -1,4 +1,4 @@
->Omega Myr
+name=Omega Myr
 url=http://magiccards.info/mi/en/223.html
 image=http://magiccards.info/scans/en/mi/223.jpg 
 value=1

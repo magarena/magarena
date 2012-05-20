@@ -1,4 +1,4 @@
->Drogskol Reaver
+name=Drogskol Reaver
 url=http://magiccards.info/dka/en/137.html
 image=http://magiccards.info/scans/en/dka/137.jpg
 value=5

@@ -1,4 +1,4 @@
->Awakening Zone
+name=Awakening Zone
 url=http://magiccards.info/cmd/en/142.html
 image=http://magiccards.info/scans/en/roe/176.jpg
 value=4

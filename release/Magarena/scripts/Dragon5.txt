@@ -1,4 +1,4 @@
->Dragon
+name=Dragon
 token=Dragon5
 image=http://magiccards.info/extras/token/worldwake/dragon.jpg
 value=5

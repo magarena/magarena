@@ -1,4 +1,4 @@
->Dauthi Cutthroat
+name=Dauthi Cutthroat
 url=http://magiccards.info/ex/en/57.html
 image=http://magiccards.info/scans/en/ex/57.jpg
 value=2

@@ -1,4 +1,4 @@
->Sharpened Pitchfork
+name=Sharpened Pitchfork
 url=http://magiccards.info/isd/en/232.html
 image=http://magiccards.info/scans/en/isd/232.jpg
 value=2

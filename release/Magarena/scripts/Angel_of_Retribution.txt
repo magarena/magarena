@@ -1,4 +1,4 @@
->Angel of Retribution
+name=Angel of Retribution
 url=http://magiccards.info/tr/en/1.html
 image=http://magiccards.info/scans/en/tr/1.jpg 
 value=4

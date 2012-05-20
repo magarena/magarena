@@ -1,4 +1,4 @@
->Kraken's Eye
+name=Kraken's Eye
 url=http://magiccards.info/m12/en/211.html
 image=http://magiccards.info/scans/en/m10/213.jpg
 value=2

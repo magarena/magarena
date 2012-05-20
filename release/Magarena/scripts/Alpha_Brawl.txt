@@ -1,4 +1,4 @@
->Alpha Brawl
+name=Alpha Brawl
 url=http://magiccards.info/dka/en/82.html
 image=http://magiccards.info/scans/en/dka/82.jpg
 value=5

@@ -1,4 +1,4 @@
->Goliath Sphinx
+name=Goliath Sphinx
 url=http://magiccards.info/wwk/en/28.html
 image=http://magiccards.info/scans/en/wwk/28.jpg
 value=5

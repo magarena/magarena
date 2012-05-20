@@ -1,4 +1,4 @@
->Exclude
+name=Exclude
 url=http://magiccards.info/in/en/56.html
 image=http://magiccards.info/scans/en/in/56.jpg
 value=3

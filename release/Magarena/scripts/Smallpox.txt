@@ -1,4 +1,4 @@
->Smallpox
+name=Smallpox
 url=http://magiccards.info/m12/en/108.html
 image=http://magiccards.info/scans/en/m12/108.jpg
 value=3

@@ -1,4 +1,4 @@
->Barrage Ogre
+name=Barrage Ogre
 url=http://magiccards.info/som/en/83.html
 image=http://magiccards.info/scans/en/som/83.jpg
 value=3

@@ -1,4 +1,4 @@
->Seer's Sundial
+name=Seer's Sundial
 url=http://magiccards.info/wwk/en/130.html
 image=http://magiccards.info/scans/en/wwk/130.jpg
 value=3

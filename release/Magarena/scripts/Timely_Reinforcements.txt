@@ -1,4 +1,4 @@
->Timely Reinforcements
+name=Timely Reinforcements
 url=http://magiccards.info/m12/en/40.html
 image=http://magiccards.info/scans/en/m12/40.jpg
 value=3

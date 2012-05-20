@@ -1,4 +1,4 @@
->Sporecap Spider
+name=Sporecap Spider
 url=http://magiccards.info/roe/en/209.html
 image=http://magiccards.info/scans/en/roe/209.jpg 
 value=2

@@ -1,4 +1,4 @@
->Veteran Armorsmith
+name=Veteran Armorsmith
 url=http://magiccards.info/m10/en/38.html
 image=http://magiccards.info/scans/en/m10/38.jpg
 value=2

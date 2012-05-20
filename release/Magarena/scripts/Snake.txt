@@ -1,4 +1,4 @@
->Snake
+name=Snake
 token=Snake
 image=http://magiccards.info/extras/token/zendikar/snake.jpg
 value=1

@@ -1,4 +1,4 @@
->Souls of the Faultless
+name=Souls of the Faultless
 url=http://magiccards.info/gp/en/131.html
 image=http://magiccards.info/scans/en/gp/131.jpg
 value=3

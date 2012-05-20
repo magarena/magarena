@@ -1,4 +1,4 @@
->Goblin Outlander
+name=Goblin Outlander
 url=http://magiccards.info/cfx/en/109.html
 image=http://magiccards.info/scans/en/cfx/109.jpg
 value=2

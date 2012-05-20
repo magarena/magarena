@@ -1,4 +1,4 @@
->Steam Vents
+name=Steam Vents
 url=http://magiccards.info/gp/en/164.html
 image=http://magiccards.info/scans/en/gp/164.jpg
 value=4
@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Island,Mountain
 mana=u3r3
-ability=tap add mana {U} or {R}
-ability=shock land
+ability=tap add mana {U} or {R},\
+        shock land
 timing=land

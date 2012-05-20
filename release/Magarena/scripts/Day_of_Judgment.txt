@@ -1,4 +1,4 @@
->Day of Judgment
+name=Day of Judgment
 url=http://magiccards.info/m12/en/12.html
 image=http://magiccards.info/scans/en/m11/12.jpg
 value=4

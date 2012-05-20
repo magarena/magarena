@@ -1,10 +1,10 @@
->Sulfur Falls
+name=Sulfur Falls
 url=http://magiccards.info/isd/en/248.html
 image=http://magiccards.info/scans/en/isd/248.jpg
 value=4
 rarity=R
 type=Land
 mana=u3r3
-ability=tap add mana {U} or {R}
-ability=enters tapped unless island mountain
+ability=tap add mana {U} or {R},\
+        enters tapped unless island mountain
 timing=land

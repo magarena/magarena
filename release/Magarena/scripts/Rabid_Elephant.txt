@@ -1,4 +1,4 @@
->Rabid Elephant
+name=Rabid Elephant
 url=http://magiccards.info/od/en/263.html
 image=http://magiccards.info/scans/en/od/263.jpg
 value=2

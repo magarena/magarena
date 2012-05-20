@@ -1,4 +1,4 @@
->Crucible of Fire
+name=Crucible of Fire
 url=http://magiccards.info/ala/en/96.html
 image=http://magiccards.info/scans/en/ala/96.jpg
 value=4

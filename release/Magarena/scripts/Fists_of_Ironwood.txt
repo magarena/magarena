@@ -1,4 +1,4 @@
->Fists of Ironwood
+name=Fists of Ironwood
 url=http://magiccards.info/cmd/en/156.html
 image=http://magiccards.info/scans/en/rav/164.jpg
 value=3

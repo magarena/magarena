@@ -1,4 +1,4 @@
->Wei Ambush Force
+name=Wei Ambush Force
 url=http://magiccards.info/p3k/en/85.html
 image=http://magiccards.info/scans/en/p3k/85.jpg
 value=2

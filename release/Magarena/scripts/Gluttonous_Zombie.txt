@@ -1,4 +1,4 @@
->Gluttonous Zombie
+name=Gluttonous Zombie
 url=http://magiccards.info/9e/en/134.html
 image=http://magiccards.info/scans/en/9e/134.jpg 
 value=4

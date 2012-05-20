@@ -1,4 +1,4 @@
->Radiant's Dragoons
+name=Radiant's Dragoons
 url=http://magiccards.info/ul/en/21.html
 image=http://magiccards.info/scans/en/ul/21.jpg
 value=3

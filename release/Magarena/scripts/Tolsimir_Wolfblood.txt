@@ -1,4 +1,4 @@
->Tolsimir Wolfblood
+name=Tolsimir Wolfblood
 url=http://magiccards.info/rav/en/236.html
 image=http://magiccards.info/scans/en/rav/236.jpg
 value=4

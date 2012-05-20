@@ -1,4 +1,4 @@
->Anoint
+name=Anoint
 url=http://magiccards.info/tp/en/215.html
 image=http://magiccards.info/scans/en/tp/215.jpg
 value=2

@@ -1,4 +1,4 @@
->Perimeter Captain
+name=Perimeter Captain
 url=http://magiccards.info/wwk/en/16.html
 image=http://magiccards.info/scans/en/wwk/16.jpg
 value=2

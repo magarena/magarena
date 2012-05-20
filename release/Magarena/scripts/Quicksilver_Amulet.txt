@@ -1,4 +1,4 @@
->Quicksilver Amulet
+name=Quicksilver Amulet
 url=http://magiccards.info/m12/en/214.html
 image=http://magiccards.info/scans/en/m12/214.jpg
 value=4

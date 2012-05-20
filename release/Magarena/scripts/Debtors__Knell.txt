@@ -1,4 +1,4 @@
->Debtors' Knell
+name=Debtors' Knell
 url=http://magiccards.info/gp/en/141.html
 image=http://magiccards.info/scans/en/gp/141.jpg
 value=5

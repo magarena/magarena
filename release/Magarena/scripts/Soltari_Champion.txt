@@ -1,4 +1,4 @@
->Soltari Champion
+name=Soltari Champion
 url=http://magiccards.info/sh/en/118.html
 image=http://magiccards.info/scans/en/sh/118.jpg
 value=3

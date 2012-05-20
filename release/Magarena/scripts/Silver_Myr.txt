@@ -1,4 +1,4 @@
->Silver Myr
+name=Silver Myr
 url=http://magiccards.info/som/en/202.html
 image=http://magiccards.info/scans/en/som/202.jpg
 value=3

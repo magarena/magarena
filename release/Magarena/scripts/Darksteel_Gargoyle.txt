@@ -1,4 +1,4 @@
->Darksteel Gargoyle
+name=Darksteel Gargoyle
 url=http://magiccards.info/ds/en/111.html
 image=http://magiccards.info/scans/en/ds/111.jpg 
 value=4

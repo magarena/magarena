@@ -1,4 +1,4 @@
->Phyrexian Bloodstock
+name=Phyrexian Bloodstock
 url=http://magiccards.info/ps/en/50.html
 image=http://magiccards.info/scans/en/ps/50.jpg
 value=3

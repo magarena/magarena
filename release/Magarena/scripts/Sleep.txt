@@ -1,4 +1,4 @@
->Sleep
+name=Sleep
 url=http://magiccards.info/m11/en/73.html
 image=http://magiccards.info/scans/en/m11/73.jpg
 value=4

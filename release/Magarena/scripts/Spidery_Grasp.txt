@@ -1,4 +1,4 @@
->Spidery Grasp
+name=Spidery Grasp
 url=http://magiccards.info/isd/en/204.html
 image=http://magiccards.info/scans/en/isd/204.jpg
 value=3

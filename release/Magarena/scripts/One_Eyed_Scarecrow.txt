@@ -1,4 +1,4 @@
->One-Eyed Scarecrow
+name=One-Eyed Scarecrow
 url=http://magiccards.info/isd/en/230.html
 image=http://magiccards.info/scans/en/isd/230.jpg
 value=3

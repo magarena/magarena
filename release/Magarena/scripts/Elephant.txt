@@ -1,4 +1,4 @@
->Elephant
+name=Elephant
 token=Elephant
 image=http://magiccards.info/extras/token/worldwake/elephant.jpg
 value=3

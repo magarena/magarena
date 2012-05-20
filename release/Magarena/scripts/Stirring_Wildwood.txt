@@ -1,4 +1,4 @@
->Stirring Wildwood
+name=Stirring Wildwood
 url=http://magiccards.info/wwk/en/144.html
 image=http://magiccards.info/scans/en/wwk/144.jpg
 value=4

@@ -1,4 +1,4 @@
->Kodama of the Center Tree
+name=Kodama of the Center Tree
 url=http://magiccards.info/bok/en/131.html
 image=http://magiccards.info/scans/en/bok/131.jpg
 value=3

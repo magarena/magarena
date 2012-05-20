@@ -1,10 +1,10 @@
->Seachrome Coast
+name=Seachrome Coast
 url=http://magiccards.info/som/en/229.html
 image=http://magiccards.info/scans/en/som/229.jpg
 value=4
 rarity=R
 type=Land
 mana=w3u3
-ability=tap add mana {W} or {U}
-ability=enters tapped unless two
+ability=tap add mana {W} or {U},\
+        enters tapped unless two
 timing=land

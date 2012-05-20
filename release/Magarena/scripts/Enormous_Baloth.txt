@@ -1,4 +1,4 @@
->Enormous Baloth
+name=Enormous Baloth
 url=http://magiccards.info/m10/en/180.html
 image=http://magiccards.info/scans/en/m10/180.jpg 
 value=4

@@ -1,4 +1,4 @@
->Yavimaya Ants
+name=Yavimaya Ants
 url=http://magiccards.info/ai/en/93.html
 image=http://magiccards.info/scans/en/ai/93.jpg
 value=4

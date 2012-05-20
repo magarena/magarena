@@ -1,4 +1,4 @@
->Karn, Silver Golem
+name=Karn, Silver Golem
 url=http://magiccards.info/fvr/en/6.html
 image=http://magiccards.info/scans/en/fvr/6.jpg
 value=3

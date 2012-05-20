@@ -1,4 +1,4 @@
->Moonveil Dragon
+name=Moonveil Dragon
 url=http://magiccards.info/dka/en/99.html
 image=http://magiccards.info/scans/en/dka/99.jpg
 value=5

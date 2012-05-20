@@ -1,4 +1,4 @@
->Corpse Dance
+name=Corpse Dance
 url=http://magiccards.info/tp/en/10.html
 image=http://magiccards.info/scans/en/tp/10.jpg
 value=3

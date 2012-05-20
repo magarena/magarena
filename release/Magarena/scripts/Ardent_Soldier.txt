@@ -1,4 +1,4 @@
->Ardent Soldier
+name=Ardent Soldier
 url=http://magiccards.info/in/en/3.html
 image=http://magiccards.info/scans/en/in/3.jpg
 value=2

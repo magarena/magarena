@@ -1,4 +1,4 @@
->Spidersilk Net
+name=Spidersilk Net
 url=http://magiccards.info/zen/en/206.html
 image=http://magiccards.info/scans/en/zen/206.jpg
 value=1

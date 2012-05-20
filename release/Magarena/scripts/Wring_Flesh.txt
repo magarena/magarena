@@ -1,4 +1,4 @@
->Wring Flesh
+name=Wring Flesh
 url=http://magiccards.info/m12/en/118.html
 image=http://magiccards.info/scans/en/m12/118.jpg
 value=2

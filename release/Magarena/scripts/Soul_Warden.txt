@@ -1,4 +1,4 @@
->Soul Warden
+name=Soul Warden
 url=http://magiccards.info/pch/en/7.html
 image=http://magiccards.info/scans/en/pch/7.jpg
 value=2

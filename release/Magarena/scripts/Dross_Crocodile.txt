@@ -1,4 +1,4 @@
->Dross Crocodile
+name=Dross Crocodile
 url=http://magiccards.info/10e/en/138.html
 image=http://magiccards.info/scans/en/10e/138.jpg 
 value=3

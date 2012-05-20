@@ -1,4 +1,4 @@
->Banners Raised
+name=Banners Raised
 url=http://magiccards.info/avr/en/127.html
 image=http://magiccards.info/scans/en/avr/127.jpg
 value=1

@@ -1,4 +1,4 @@
->Silhana Ledgewalker
+name=Silhana Ledgewalker
 url=http://magiccards.info/gp/en/94.html
 image=http://magiccards.info/scans/en/gp/94.jpg
 value=2

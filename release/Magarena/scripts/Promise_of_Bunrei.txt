@@ -1,4 +1,4 @@
->Promise of Bunrei
+name=Promise of Bunrei
 url=http://magiccards.info/sok/en/24.html
 image=http://magiccards.info/scans/en/sok/24.jpg
 value=4

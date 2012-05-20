@@ -1,10 +1,10 @@
->Isolated Chapel
+name=Isolated Chapel
 url=http://magiccards.info/isd/en/242.html
 image=http://magiccards.info/scans/en/isd/242.jpg
 value=4
 rarity=R
 type=Land
 mana=w3b3
-ability=tap add mana {W} or {B}
-ability=enters tapped unless plains swamp
+ability=tap add mana {W} or {B},\
+        enters tapped unless plains swamp
 timing=land

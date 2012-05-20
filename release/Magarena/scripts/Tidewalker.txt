@@ -1,4 +1,4 @@
->Tidewalker
+name=Tidewalker
 url=http://magiccards.info/pc/en/49.html
 image=http://magiccards.info/scans/en/pc/49.jpg
 value=3

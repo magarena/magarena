@@ -1,4 +1,4 @@
->Pulse of the Fields
+name=Pulse of the Fields
 url=http://magiccards.info/ds/en/11.html
 image=http://magiccards.info/scans/en/ds/11.jpg
 value=4

@@ -1,4 +1,4 @@
->Lurking Crocodile
+name=Lurking Crocodile
 url=http://magiccards.info/m12/en/184.html
 image=http://magiccards.info/scans/en/m12/184.jpg
 value=2

@@ -1,4 +1,4 @@
->Creeping Mold
+name=Creeping Mold
 url=http://magiccards.info/10e/en/258.html
 image=http://magiccards.info/scans/en/10e/258.jpg
 value=3

@@ -1,4 +1,4 @@
->Murasa Pyromancer
+name=Murasa Pyromancer
 url=http://magiccards.info/zen/en/139.html
 image=http://magiccards.info/scans/en/zen/139.jpg
 value=3

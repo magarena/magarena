@@ -1,4 +1,4 @@
->Beastmaster Ascension
+name=Beastmaster Ascension
 url=http://magiccards.info/zen/en/159.html
 image=http://magiccards.info/scans/en/zen/159.jpg
 value=3

@@ -1,4 +1,4 @@
->Iron-Barb Hellion
+name=Iron-Barb Hellion
 url=http://magiccards.info/5dn/en/69.html
 image=http://magiccards.info/scans/en/5dn/69.jpg 
 value=4

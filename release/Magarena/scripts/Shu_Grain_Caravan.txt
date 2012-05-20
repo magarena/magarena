@@ -1,4 +1,4 @@
->Shu Grain Caravan
+name=Shu Grain Caravan
 url=http://magiccards.info/p3k/en/26.html
 image=http://magiccards.info/scans/en/p3k/26.jpg
 value=2

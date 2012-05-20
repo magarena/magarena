@@ -1,4 +1,4 @@
->Ravaging Riftwurm
+name=Ravaging Riftwurm
 url=http://magiccards.info/fut/en/135.html
 image=http://magiccards.info/scans/en/fut/135.jpg
 value=5

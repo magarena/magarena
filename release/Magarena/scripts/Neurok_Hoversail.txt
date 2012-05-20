@@ -1,4 +1,4 @@
->Neurok Hoversail
+name=Neurok Hoversail
 url=http://magiccards.info/mi/en/218.html
 image=http://magiccards.info/scans/en/mi/218.jpg
 value=2

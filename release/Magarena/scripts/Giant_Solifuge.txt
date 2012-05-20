@@ -1,4 +1,4 @@
->Giant Solifuge
+name=Giant Solifuge
 url=http://magiccards.info/gp/en/143.html
 image=http://magiccards.info/scans/en/gp/143.jpg 
 value=3

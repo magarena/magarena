@@ -1,4 +1,4 @@
->Elven Warhounds
+name=Elven Warhounds
 url=http://magiccards.info/tp/en/119.html
 image=http://magiccards.info/scans/en/tp/119.jpg
 value=3

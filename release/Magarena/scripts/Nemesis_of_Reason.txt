@@ -1,4 +1,4 @@
->Nemesis of Reason
+name=Nemesis of Reason
 url=http://magiccards.info/arb/en/28.html
 image=http://magiccards.info/scans/en/arb/28.jpg
 value=4

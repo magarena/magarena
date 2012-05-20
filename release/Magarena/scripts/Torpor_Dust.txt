@@ -1,4 +1,4 @@
->Torpor Dust
+name=Torpor Dust
 url=http://magiccards.info/shm/en/177.html
 image=http://magiccards.info/scans/en/shm/177.jpg
 value=3

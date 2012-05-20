@@ -1,4 +1,4 @@
->Sanguine Guard
+name=Sanguine Guard
 url=http://magiccards.info/us/en/155.html
 image=http://magiccards.info/scans/en/us/155.jpg
 value=3

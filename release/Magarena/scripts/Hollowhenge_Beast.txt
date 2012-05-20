@@ -1,4 +1,4 @@
->Hollowhenge Beast
+name=Hollowhenge Beast
 url=http://magiccards.info/dka/en/118.html
 image=http://magiccards.info/scans/en/dka/118.jpg
 value=4

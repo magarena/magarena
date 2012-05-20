@@ -1,4 +1,4 @@
->Smite
+name=Smite
 url=http://magiccards.info/roe/en/43.html
 image=http://magiccards.info/scans/en/roe/43.jpg
 value=3

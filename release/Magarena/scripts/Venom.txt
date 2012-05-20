@@ -1,4 +1,4 @@
->Venom
+name=Venom
 url=http://magiccards.info/5e/en/198.html
 image=http://magiccards.info/scans/en/5e/198.jpg
 value=3

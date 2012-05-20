@@ -1,4 +1,4 @@
->Angel of Glory's Rise
+name=Angel of Glory's Rise
 url=http://magiccards.info/avr/en/1.html
 image=http://magiccards.info/scans/en/avr/1.jpg
 value=5

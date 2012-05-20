@@ -1,4 +1,4 @@
->Faceless Devourer
+name=Faceless Devourer
 url=http://magiccards.info/ts/en/108.html
 image=http://magiccards.info/scans/en/ts/108.jpg
 value=3

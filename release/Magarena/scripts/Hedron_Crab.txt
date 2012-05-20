@@ -1,4 +1,4 @@
->Hedron Crab
+name=Hedron Crab
 url=http://magiccards.info/zen/en/47.html
 image=http://magiccards.info/scans/en/zen/47.jpg
 value=2

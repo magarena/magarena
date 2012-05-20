@@ -1,4 +1,4 @@
->Black Cat
+name=Black Cat
 url=http://magiccards.info/dka/en/54.html
 image=http://magiccards.info/scans/en/dka/54.jpg
 value=2

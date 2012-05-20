@@ -1,4 +1,4 @@
->Esper Stormblade
+name=Esper Stormblade
 url=http://magiccards.info/arb/en/132.html
 image=http://magiccards.info/scans/en/arb/132.jpg
 value=3

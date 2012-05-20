@@ -1,4 +1,4 @@
->Lord of Shatterskull Pass
+name=Lord of Shatterskull Pass
 url=http://magiccards.info/roe/en/156.html
 image=http://magiccards.info/scans/en/roe/156.jpg
 value=4

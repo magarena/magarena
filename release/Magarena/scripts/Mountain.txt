@@ -1,4 +1,4 @@
->Mountain
+name=Mountain
 url=http://magiccards.info/isd/en/259.html
 image=http://magiccards.info/scans/en/zen/242.jpg
 num_images=2

@@ -1,4 +1,4 @@
->Kraken Hatchling
+name=Kraken Hatchling
 url=http://magiccards.info/zen/en/50.html
 image=http://magiccards.info/scans/en/zen/50.jpg 
 value=2

@@ -1,4 +1,4 @@
->Plover Knights
+name=Plover Knights
 url=http://magiccards.info/ddg/en/20.html
 image=http://magiccards.info/scans/en/lw/35.jpg 
 value=4

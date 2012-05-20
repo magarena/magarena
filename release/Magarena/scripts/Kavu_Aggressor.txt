@@ -1,4 +1,4 @@
->Kavu Aggressor
+name=Kavu Aggressor
 url=http://magiccards.info/in/en/148.html
 image=http://magiccards.info/scans/en/in/148.jpg
 value=2

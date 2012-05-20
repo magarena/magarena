@@ -1,4 +1,4 @@
->Beloved Chaplain
+name=Beloved Chaplain
 url=http://magiccards.info/od/en/11.html
 image=http://magiccards.info/scans/en/od/11.jpg
 value=3

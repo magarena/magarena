@@ -1,4 +1,4 @@
->Dwarven Vigilantes
+name=Dwarven Vigilantes
 url=http://magiccards.info/vi/en/77.html
 image=http://magiccards.info/scans/en/vi/77.jpg
 value=2

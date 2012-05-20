@@ -1,4 +1,4 @@
->Angelic Shield
+name=Angelic Shield
 url=http://magiccards.info/in/en/228.html
 image=http://magiccards.info/scans/en/in/228.jpg
 value=3

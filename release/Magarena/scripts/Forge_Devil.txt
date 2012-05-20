@@ -1,4 +1,4 @@
->Forge Devil
+name=Forge Devil
 url=http://magiccards.info/dka/en/91.html
 image=http://magiccards.info/scans/en/dka/91.jpg
 value=2

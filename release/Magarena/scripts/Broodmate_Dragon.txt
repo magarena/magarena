@@ -1,4 +1,4 @@
->Broodmate Dragon
+name=Broodmate Dragon
 url=http://magiccards.info/ala/en/160.html
 image=http://magiccards.info/scans/en/ala/160.jpg
 value=5
