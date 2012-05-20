@@ -320,3 +320,5 @@ github/push:
 	hg gexport
 	git push origin master
 
+unique_property:
+	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
