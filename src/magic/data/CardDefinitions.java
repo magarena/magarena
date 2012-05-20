@@ -187,9 +187,11 @@ public class CardDefinitions {
     }
     
     private static MagicCardDefinition prop2carddef(final Properties content) {
+        assert content.getProperty("name") != null : "name property does not exist";
 	    final MagicCardDefinition cardDefinition=new MagicCardDefinition(content.getProperty("name"));
 
         //set type and subtype first
+        assert content.getProperty("type") != null : "type property does not exist";
         setProperty(cardDefinition, "type", content.getProperty("type"));
         if (content.getProperty("subtype") != null) {
             setProperty(cardDefinition, "subtype", content.getProperty("subtype"));
