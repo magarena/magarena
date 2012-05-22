@@ -1,0 +1,9 @@
+name=Wasteland
+url=http://magiccards.info/tp/en/340.html
+image=http://magiccards.info/scans/en/tp/340.jpg
+value=4
+rarity=U
+type=Land
+ability=tap add mana {1}
+timing=land
+requires_card_code
