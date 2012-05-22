@@ -1,0 +1,13 @@
+name=Wolfir Avenger
+url=http://magiccards.info/avr/en/205.html
+image=http://magiccards.info/scans/en/avr/205.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Wolf,Warrior
+color=g
+converted=3
+cost={1}{G}{G}
+pt=3/3
+ability=flash,regenerate {1}{G}
+timing=flash
