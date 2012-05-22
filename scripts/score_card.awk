@@ -12,7 +12,7 @@
     # decay of scores
     if (FILENAME != prev) {
         for (i in score) {
-            score[i] = 0.99 * score[i]
+            score[i] = 0.95 * score[i]
         }
         prev = FILENAME
     }
