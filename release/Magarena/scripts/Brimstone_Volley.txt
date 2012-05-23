@@ -1,0 +1,11 @@
+name=Brimstone Volley
+url=http://magiccards.info/isd/en/132.html
+image=http://magiccards.info/scans/en/isd/132.jpg
+value=3
+rarity=C
+type=Instant
+color=r
+converted=3
+cost={2}{R}
+timing=removal
+requires_card_code
