@@ -54,7 +54,7 @@ public class MagicCardDefinition {
     private static int numModifications = 0;
     private static int numCDAs = 0;
 
-	private final String name;
+	private String name;
 	private String fullName;
 	private String imageURL;
 	private String cardInfoUrl = "";
@@ -101,6 +101,10 @@ public class MagicCardDefinition {
 	public MagicCardDefinition(final String name) {
 		this(name,name);
 	}
+
+	public MagicCardDefinition() {
+		this(null,null);
+	}
 	
 	protected void initialize() {}
 	
@@ -134,8 +138,12 @@ public class MagicCardDefinition {
 		return name;
 	}
 	
+    public void setName(String name) {
+		this.name = name;
+	}
+	
 	public String getFullName() {
-		return fullName;
+		return fullName != null ? fullName : name;
 	}
 	
 	public void setFullName(String name) {
