@@ -89,15 +89,16 @@ cards/standard_all.txt:
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' > $@
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 
-cards/new.txt: cards/existing.txt
-	diff $^ cards/existing_old.txt | grep "<" | sed 's/< /  /' > $@
+cards/new_%.txt: 
+	grep "name=" -h $$(hg diff -r $* | grep -B 1 "^--- /dev/null" | grep release/Magarena/scripts | cut -d' ' -f4) | sed 's/name=//' > $@
+	flip -u $@
 
 cards/existing_scripts.txt: $(wildcard release/Magarena/scripts/*.txt)
-	grep "^>" -hr release/Magarena/scripts | sed 's/>//' | sort > $@
+	grep "^name=" -hr release/Magarena/scripts | sed 's/name=//' | sort > $@
 	sed -i 's/\r//' $@
 
 cards/existing_tokens.txt: $(wildcard release/Magarena/scripts/*.txt)
-	grep -hr "^>" `grep token= -r release/Magarena/scripts | cut -d':' -f1` | sed 's/>//' | sort > $@
+	grep -hr "^name=" `grep token= -r release/Magarena/scripts | cut -d':' -f1` | sed 's/name=//' | sort > $@
 
 cards/existing.txt: cards/existing_scripts.txt cards/existing_tokens.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
