@@ -36,10 +36,7 @@ public class Tragic_Slip {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));		
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {	
                 public void doAction(final MagicPermanent creature) {
-                	int amount = -1;
-        			if (game.getCreatureDiedThisTurn()) {
-        				amount = -13;
-        			}
+                	final int amount = game.getCreatureDiedThisTurn() ? -13 : -1;
                     game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
                 }
 			});
