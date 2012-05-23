@@ -1,21 +1,12 @@
 package magic.data;
 
 import magic.MagicMain;
-import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicManaCost;
-import magic.model.MagicStaticType;
-import magic.model.MagicType;
-import magic.model.MagicSubType;
 import magic.model.event.MagicTiming;
-import magic.model.event.MagicPlayAuraEvent;
-import magic.model.mstatic.MagicStatic;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -40,97 +31,11 @@ public class CardDefinitions {
 	private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
 
 	private static void setProperty(final MagicCardDefinition card,final String property,final String value) {
-               if ("image".equals(property)) {
-            card.setImageURL(value);
-		} else if ("url".equals(property)) {
-			card.setCardInfoURL(value);
-		} else if ("num_images".equals(property)) {
-			card.setImageCount(Integer.parseInt(value));
-        } else if ("cube".equals(property)) {
-			CubeDefinitions.getCubeDefinition(value).add(card.getName());
-		} else if ("token".equals(property)) {
-			TokenCardDefinitions.add(card, value);
-		} else if ("value".equals(property)) {
-			card.setValue(Integer.parseInt(value));
-		} else if ("removal".equals(property)) {
-			card.setRemoval(Integer.parseInt(value));
-		} else if ("rarity".equals(property)) {
-			card.setRarity(value.charAt(0));
-		} else if ("type".equals(property)) {
-			final String names[]=value.split(",");
-			for (final String name : names) {
-				card.addType(MagicType.getType(name));
-			}
-		} else if ("subtype".equals(property)) {
-			card.setSubTypes(value.split(","));
-		} else if ("color".equals(property)) {
-			card.setColors(value);
-			card.setColoredType();
-		} else if ("converted".equals(property)) {
-			card.setConvertedCost(Integer.parseInt(value));
-		} else if ("cost".equals(property)) {
-			card.setCost(MagicManaCost.createCost(value));
-		} else if ("equip".equals(property)) {
-            if (!card.isEquipment()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment may have equip cost");
-            }
-			card.setEquipCost(MagicManaCost.createCost(value));
-		} else if ("mana".equals(property)) {
-			card.setManaSourceText(value);
-		} else if ("pt".equals(property)) {
-            if (!card.isCreature()) {
-                throw new RuntimeException(card.getFullName() + ": only creatures may have power/toughness");
-            }
-            final String[] pt = value.split("/");
-			card.setPowerToughness(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
-		} else if ("ability".equals(property)) {
-			final String names[]=value.split(",");
-			for (final String name : names) {
-                final MagicAbility ability = MagicAbility.getAbility(name);
-                final String arg = name.substring(ability.toString().length()).trim();
-				card.setAbility(ability, arg);
-			}
-		} else if ("given_pt".equals(property)) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_pt");
-            }
-            final String[] pt = value.replace('+','0').split("/");
-			card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
-		} else if ("given_ability".equals(property)) {
-            if (!card.isEquipment() && !card.isAura() && !card.isEnchantment()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment/aura/enchantment may have given_ability");
-            }
-            card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(","))));
-		} else if ("given_subtype".equals(property)) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_subtype");
-            }
-            card.add(MagicStatic.genSTStatic(MagicSubType.getSubTypes(value.split(","))));
-		} else if ("given_color".equals(property)) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_subtype");
-            }
-            card.add(MagicStatic.genCOStatic(MagicColor.getFlags(value)));
-		} else if ("static".equals(property)) {
-			card.setStaticType(MagicStaticType.getStaticTypeFor(value));
-		} else if ("timing".equals(property)) {
-			card.setTiming(MagicTiming.getTimingFor(value));
-		} else if ("ignore".equals(property)) {
-			final String sizes[]=value.split(",");
-			for (final String size : sizes) {
-				card.addIgnore(Long.parseLong(size));
-			}
-		} else if ("mana_or_combat".equals(property)) {
-            card.setExcludeManaOrCombat();
-		} else if ("enchant".equals(property)) {
-            card.add(MagicPlayAuraEvent.create(value));
-		} else if ("requires_card_code".equals(property)) {
-	        addCardSpecificCode(card);	
-        } else if ("name".equals(property)) {
-            //ignore
-        } else {
-            throw new RuntimeException("Unknown card property " + property + "=" + value);
-		}
+        try {
+            CardProperty.valueOf(property.toUpperCase()).setProperty(card, value);
+        } catch (IllegalArgumentException e) {
+            throw new RuntimeException("Unsupported card property: " + property);
+        }
 	}
     
 	private static void filterCards() {
@@ -166,25 +71,6 @@ public class CardDefinitions {
 			CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
         }
 	}
-        
-    private static void addCardSpecificCode(final MagicCardDefinition cardDefinition) {
-        //link to companion object containing static variables
-        final String fname = cardDefinition.getFullName();
-        final String cname = fname.replaceAll("[^A-Za-z]", "_");
-        try { //reflection
-            final Class c = Class.forName("magic.card." + cname);
-            final Field[] fields = c.getDeclaredFields();
-            for (final Field field : fields) {
-                if (Modifier.isPublic(field.getModifiers())) {
-                    cardDefinition.add(field.get(null));
-                }
-            }
-        } catch (final ClassNotFoundException ex) {
-            throw new RuntimeException(ex);
-        } catch (final IllegalAccessException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
     
     private static MagicCardDefinition prop2carddef(final Properties content) {
         assert content.getProperty("name") != null : "name property does not exist";
