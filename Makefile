@@ -89,8 +89,8 @@ cards/standard_all.txt:
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' > $@
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 
-cards/new_%.txt: 
-	grep "name=" -h $$(hg diff -r $* | grep -B 1 "^--- /dev/null" | grep release/Magarena/scripts | cut -d' ' -f4) | sed 's/name=//' > $@
+cards/new_%.txt: release/Magarena/scripts 
+	grep "name=" -h $$(hg diff -r $* | grep -B 1 "^--- /dev/null" | grep $^ | cut -d' ' -f4) | sed 's/name=//' > $@
 	flip -u $@
 
 cards/existing_scripts.txt: $(wildcard release/Magarena/scripts/*.txt)
