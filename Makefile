@@ -324,5 +324,7 @@ github/push:
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
 
-cards/scored_by_dd.tsv:
-	./scripts/score_card.awk `ls -1 decks/dd* | sort -n -t_ -k2` | sort -rg > $@
+cards/scored_by_dd.tsv: cards/existing.txt
+	./scripts/score_card.awk `ls -1 decks/dd* | sort -n -t_ -k2` |\
+	sort -rg |\
+	./scripts/keep_unimplemented.awk $^ /dev/stdin  > $@
