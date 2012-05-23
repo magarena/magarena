@@ -1,0 +1,13 @@
+name=Cathedral Sanctifier
+url=http://magiccards.info/avr/en/11.html
+image=http://magiccards.info/scans/en/avr/11.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=1
+cost={W}
+pt=1/1
+ability=enters gain life 3
+timing=main
