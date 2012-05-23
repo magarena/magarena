@@ -29,10 +29,12 @@ import java.util.List;
 
 public class MagicCardDefinition {
 
-	public static final MagicCardDefinition UNKNOWN = new MagicCardDefinition("Unknown") {
+	public static final MagicCardDefinition UNKNOWN = new MagicCardDefinition() {
         //definition for unknown cards
 		@Override
 		protected void initialize() {
+            setName("Unknown");
+            setFullName("Unknown");
 			setToken();
 			setValue(1);
 			addType(MagicType.Creature);
@@ -66,6 +68,7 @@ public class MagicCardDefinition {
 	private int score=-1; // not initialized
 	private MagicRarity rarity;
 	private boolean token=false;
+	private boolean hasCode=false;
 	private int typeFlags=0;
 	private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
 	private int colorFlags=0;
@@ -92,19 +95,9 @@ public class MagicCardDefinition {
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
 	private boolean excludeManaOrCombat=false;
 	
-	protected MagicCardDefinition(final String name,final String fullName) {
-		this.name=name;
-		this.fullName=fullName;
-		initialize();
-	}
-	
-	public MagicCardDefinition(final String name) {
-		this(name,name);
-	}
-
 	public MagicCardDefinition() {
-		this(null,null);
-	}
+        initialize();	
+    }
 	
 	protected void initialize() {}
 	
@@ -143,11 +136,19 @@ public class MagicCardDefinition {
 	}
 	
 	public String getFullName() {
-		return fullName != null ? fullName : name;
+		return fullName;
 	}
 	
 	public void setFullName(String name) {
-		this.fullName = name;
+		fullName = name;
+	}
+    
+    public void setHasCode() {
+		hasCode = true;
+	}
+    
+    public boolean hasCode() {
+		return hasCode;
 	}
 	
 	public void setIndex(final int index) {

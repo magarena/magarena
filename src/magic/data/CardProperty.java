@@ -1,8 +1,5 @@
 package magic.data;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicType;
@@ -28,17 +25,6 @@ public enum CardProperty {
     NUM_IMAGES() {
         void setProperty(final MagicCardDefinition card, final String value) {
 			card.setImageCount(Integer.parseInt(value));
-        }
-    },
-    CUBE() {
-        void setProperty(final MagicCardDefinition card, final String value) {
-			CubeDefinitions.getCubeDefinition(value).add(card.getName());
-        }
-    },
-    TOKEN() {
-        void setProperty(final MagicCardDefinition card, final String value) {
-            card.setToken();
-            card.setFullName(value);
         }
     },
     VALUE() {
@@ -160,29 +146,23 @@ public enum CardProperty {
             card.add(MagicPlayAuraEvent.create(value));
         }
     },
-    REQUIRES_CARD_CODE() {
-        void setProperty(final MagicCardDefinition cardDefinition, final String value) {
-            //link to companion object containing static variables
-            final String fname = cardDefinition.getFullName();
-            final String cname = fname.replaceAll("[^A-Za-z]", "_");
-            try { //reflection
-                final Class c = Class.forName("magic.card." + cname);
-                final Field[] fields = c.getDeclaredFields();
-                for (final Field field : fields) {
-                    if (Modifier.isPublic(field.getModifiers())) {
-                        cardDefinition.add(field.get(null));
-                    }
-                }
-            } catch (final ClassNotFoundException ex) {
-                throw new RuntimeException(ex);
-            } catch (final IllegalAccessException ex) {
-                throw new RuntimeException(ex);
-            }
+    TOKEN() {
+        void setProperty(final MagicCardDefinition card, final String value) {
+            card.setToken();
+            card.setFullName(value);
         }
     },
     NAME() {
         void setProperty(final MagicCardDefinition card, final String value) {
             card.setName(value);
+            if (card.getFullName() == null) {
+                card.setFullName(value);
+            }
+        }
+    },
+    REQUIRES_CARD_CODE() {
+        void setProperty(final MagicCardDefinition card, final String value) {
+            card.setHasCode();
         }
     };
     

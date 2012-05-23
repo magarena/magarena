@@ -7,6 +7,8 @@ import magic.model.event.MagicTiming;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -75,22 +77,38 @@ public class CardDefinitions {
 	}
     
     private static MagicCardDefinition prop2carddef(final Properties content) {
-        assert content.getProperty("name") != null : "name property does not exist";
-	    final MagicCardDefinition cardDefinition=new MagicCardDefinition(content.getProperty("name"));
-
-        //set type and subtype first
-        assert content.getProperty("type") != null : "type property does not exist";
-        setProperty(cardDefinition, "type", content.getProperty("type"));
-        if (content.getProperty("subtype") != null) {
-            setProperty(cardDefinition, "subtype", content.getProperty("subtype"));
-        }
+	    final MagicCardDefinition cardDefinition=new MagicCardDefinition();
 
         //run through the list of properties
         for (String key : content.stringPropertyNames()) {
             setProperty(cardDefinition, key, content.getProperty(key));
         }
 
+        //add card specific code
+        if (cardDefinition.hasCode()) {
+            addCardSpecificCode(cardDefinition);
+        }
+
         return cardDefinition;
+    }
+        
+    //link to companion object containing static variables
+    private static void addCardSpecificCode(final MagicCardDefinition cardDefinition) {
+        final String fname = cardDefinition.getFullName();
+        final String cname = fname.replaceAll("[^A-Za-z]", "_");
+        try { //reflection
+            final Class c = Class.forName("magic.card." + cname);
+            final Field[] fields = c.getDeclaredFields();
+            for (final Field field : fields) {
+                if (Modifier.isPublic(field.getModifiers())) {
+                    cardDefinition.add(field.get(null));
+                }
+            }
+        } catch (final ClassNotFoundException ex) {
+            throw new RuntimeException(ex);
+        } catch (final IllegalAccessException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 	
     private static void loadCardDefinition(final File file) {
@@ -131,12 +149,7 @@ public class CardDefinitions {
 	public static MagicCardDefinition getCard(final String name) {
 		final MagicCardDefinition cardDefinition=cardsMap.get(name);
 		if (cardDefinition == null) {
-            return new MagicCardDefinition(name) {
-                @Override
-                public boolean isValid() {
-                    return false;
-                }
-            };
+            throw new RuntimeException("Unknown card: " + name);
 		}
 		return cardDefinition;
 	}
