@@ -1,0 +1,11 @@
+name=Dissipate
+url=http://magiccards.info/isd/en/53.html
+image=http://magiccards.info/scans/en/isd/53.jpg
+value=3
+rarity=U
+type=Instant
+color=u
+converted=3
+cost={1}{U}{U}
+timing=counter
+requires_card_code
