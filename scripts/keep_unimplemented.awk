@@ -1,3 +1,8 @@
+#!/usr/bin/awk -f
+
+# read list of existing cards and list of scored cards
+# keep those scored cards that are not implemented
+
 BEGIN {
     FS = "\t"
 }
