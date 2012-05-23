@@ -1,0 +1,13 @@
+name=Wolfir Silverheart
+url=http://magiccards.info/avr/en/206.html
+image=http://magiccards.info/scans/en/avr/206.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Wolf,Warrior
+color=g
+converted=5
+cost={3}{G}{G}
+pt=4/4
+ability=soulbond
+timing=main
