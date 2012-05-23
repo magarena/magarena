@@ -23,8 +23,6 @@ public class TokenCardDefinitions {
 	}
 	
 	public static void add(MagicCardDefinition token, String fullName) {		
-		token.setToken();
-		token.setFullName(fullName);
 		tokensMap.put(fullName, token);
 	}
 }

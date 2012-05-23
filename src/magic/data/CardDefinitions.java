@@ -66,8 +66,10 @@ public class CardDefinitions {
         cards.add(cardDefinition);
 		cardsMap.put(cardDefinition.getFullName(),cardDefinition);
 
-        //add to default all (vintage) cube
-        if (!cardDefinition.isToken()) {
+        //add to tokens or all (vintage) cube
+        if (cardDefinition.isToken()) {
+			TokenCardDefinitions.add(cardDefinition, cardDefinition.getFullName());
+        } else {
 			CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
         }
 	}

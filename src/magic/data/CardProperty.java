@@ -37,7 +37,8 @@ public enum CardProperty {
     },
     TOKEN() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			TokenCardDefinitions.add(card, value);
+            card.setToken();
+            card.setFullName(value);
         }
     },
     VALUE() {
@@ -86,9 +87,6 @@ public enum CardProperty {
     },
     EQUIP() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            if (!card.isEquipment()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment may have equip cost");
-            }
 			card.setEquipCost(MagicManaCost.createCost(value));
         }
     },
@@ -99,9 +97,6 @@ public enum CardProperty {
     },
     PT() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            if (!card.isCreature()) {
-                throw new RuntimeException(card.getFullName() + ": only creatures may have power/toughness");
-            }
             final String[] pt = value.split("/");
 			card.setPowerToughness(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
         }
@@ -118,34 +113,22 @@ public enum CardProperty {
     },
     GIVEN_PT() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_pt");
-            }
             final String[] pt = value.replace('+','0').split("/");
 			card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
         }
     },
     GIVEN_ABILITY() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            if (!card.isEquipment() && !card.isAura() && !card.isEnchantment()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment/aura/enchantment may have given_ability");
-            }
             card.add(MagicStatic.genABStatic(MagicAbility.getAbilities(value.split(","))));
         }
     },
     GIVEN_SUBTYPE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_subtype");
-            }
             card.add(MagicStatic.genSTStatic(MagicSubType.getSubTypes(value.split(","))));
         }
     },
     GIVEN_COLOR() {
         void setProperty(final MagicCardDefinition card, final String value) {
-            if (!card.isEquipment() && !card.isAura()) {
-                throw new RuntimeException(card.getFullName() + ": only equipment or aura may have given_subtype");
-            }
             card.add(MagicStatic.genCOStatic(MagicColor.getFlags(value)));
         }
     },
@@ -197,7 +180,11 @@ public enum CardProperty {
             }
         }
     },
-    NAME();
+    NAME() {
+        void setProperty(final MagicCardDefinition card, final String value) {
+            card.setName(value);
+        }
+    };
     
     void setProperty(final MagicCardDefinition card, final String value) {
         //do nothing
