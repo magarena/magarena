@@ -1,0 +1,14 @@
+name=Silverblade Paladin
+url=http://magiccards.info/avr/en/36.html
+image=http://magiccards.info/scans/en/avr/36.jpg
+value=4
+rarity=R
+type=Creature
+subtype=Human,Knight
+color=w
+converted=3
+cost={1}{W}{W}
+pt=2/2
+ability=soulbond
+timing=main
+requires_card_code
