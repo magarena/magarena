@@ -25,6 +25,10 @@ public class DownloadCardTextFile extends WebDownloader {
     public File getFile() {
 		return file;
 	}
+
+    public boolean exists() {
+        return file.exists();
+    }
 	
 	public void download(final Proxy proxy) {
         String html = WebDownloader.getHTML(proxy, url);
