@@ -17,6 +17,8 @@ public abstract class WebDownloader {
 	public abstract String getFilename();
 	
     public abstract File getFile();
+
+    public abstract boolean exists();
 	
 	public static void downloadToFile(final Proxy proxy, final URL url, final File file) {
         OutputStream outputStream = null;

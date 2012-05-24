@@ -62,13 +62,13 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
                 if (parts.length==2&&!parts[1].isEmpty()) {
                     final File imageFile=new File(imagesPathFile,parts[0]);
 
-                    //download if the file does not exist OR it is zero length
-                    if (!imageFile.exists() || imageFile.length() == 0L) {
-                        try { //create URL
-                            add(new DownloadImageFile(imageFile,new URL(parts[1])));
-                        } catch (final java.net.MalformedURLException ex) {
-                            System.err.println("ERROR! URL malformed " + parts[1]);
+                    try { //create URL
+                        WebDownloader dl = new DownloadImageFile(imageFile,new URL(parts[1]));
+                        if (!dl.exists()) {
+                            add(dl);
                         }
+                    } catch (final java.net.MalformedURLException ex) {
+                        System.err.println("ERROR! URL malformed " + parts[1]);
                     }
                 }
             }
@@ -96,15 +96,13 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
                     new File(cardsPathFile, 
                              cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT);
 
-                //download if the file does not exists OR it is zero length OR it is outdated
-                if (!imageFile.exists() || 
-                    imageFile.length() == 0L ||
-                    cardDefinition.isIgnored(imageFile.length())) {
-                    try { //create URL
-                        add(new DownloadImageFile(imageFile,new URL(imageURL)));
-                    } catch (final java.net.MalformedURLException ex) {
-                        System.err.println("ERROR! URL malformed " + imageURL);
+                try { //create URL
+                    WebDownloader dl = new DownloadImageFile(imageFile,new URL(imageURL),cardDefinition);
+                    if (!dl.exists()) {
+                        add(dl);
                     }
+                } catch (final java.net.MalformedURLException ex) {
+                    System.err.println("ERROR! URL malformed " + imageURL);
                 }
             }
             

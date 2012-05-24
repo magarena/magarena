@@ -181,7 +181,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 }
             }
             
-            if (!file.getFile().exists()) {
+            if (!file.exists()) {
                 file.download(proxy);
             }
 
