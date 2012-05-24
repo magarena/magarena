@@ -2,6 +2,7 @@ package magic.model.event;
 
 import magic.data.CardDefinitions;
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
@@ -16,15 +17,15 @@ import magic.model.stack.MagicCardOnStack;
 
 public class MagicCardActivation extends MagicActivation {
 	
-	public MagicCardActivation(final int cardIndex) {
+	public MagicCardActivation(final MagicCardDefinition cdef) {
 		super(0,
               new MagicCondition[]{
                   MagicCondition.CARD_CONDITION,
-                  CardDefinitions.getCard(cardIndex).getCost().getCondition()},
-              CardDefinitions.getCard(cardIndex).getActivationHints(),
+                  cdef.getCost().getCondition()},
+              cdef.getActivationHints(),
               "Play"
              );
-        setCardIndex(cardIndex);
+        setCardDefinition(cdef);
 	}
 	
 	@Override

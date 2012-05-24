@@ -23,7 +23,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
     private final MagicCondition conditions[];
 	private final MagicActivationHints hints;
 	
-    private int cardIndex;
+    private MagicCardDefinition cdef;
 	private long id;
 
 	MagicActivation(
@@ -47,17 +47,17 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         }
         
         //depends on the card
-        this.cardIndex = -1;
+        this.cdef = null;
         this.id = -1;
 	}
     
-    public void setCardIndex(final int cardIndex) {
-        this.cardIndex = cardIndex;
-        this.id = (cardIndex << 16) + index;
+    public void setCardDefinition(final MagicCardDefinition cdef) {
+        this.cdef = cdef;
+        this.id = (cdef.hashCode() << 16) + index;
     }
 	
     final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getCard(cardIndex);
+		return cdef;
 	}
 		
 	private final MagicCondition[] getConditions() {

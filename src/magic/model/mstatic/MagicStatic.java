@@ -20,7 +20,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
 	private final MagicLayer layer;
 
     //card definition providing the effect
-	private int cardIndex;
+	private MagicCardDefinition cdef;
 
     private boolean isUntilEOT;
 
@@ -42,12 +42,12 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
         this(aLayer, MagicTargetFilter.SELF, false);
 	}
 
-    public void setCardIndex(final int cardIndex) {
-        this.cardIndex = cardIndex;
+    public void setCardDefinition(final MagicCardDefinition cdef) {
+        this.cdef = cdef;
     }
 	
 	final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getCard(cardIndex);
+		return cdef;
 	}
 		
 	public final MagicLayer getLayer() {
@@ -71,6 +71,17 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
     public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
         return true;
     }
+
+    private static boolean acceptLinked(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+        if (source.isEquipment()) {
+            return source.getEquippedCreature() == target;
+        } else if (source.isEnchantment()) {
+            return source.getEnchantedCreature() == target;
+        } else {
+            return source.getPairedCreature() == target ||
+                (source == target && source.isPaired());
+        }
+    }
     
     public static MagicStatic genPTStatic(final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.ModPT) {
@@ -83,9 +94,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                return (source.isEquipment()) ? 
-                    source.getEquippedCreature() == target :
-                    source.getEnchantedCreature() == target;
+                return MagicStatic.acceptLinked(game, source, target);
             }
         };
     }
@@ -101,9 +110,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                return (source.isEquipment()) ? 
-                    source.getEquippedCreature() == target :
-                    source.getEnchantedCreature() == target;
+                return MagicStatic.acceptLinked(game, source, target);
             }
         };
     }
@@ -120,9 +127,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                return (source.isEquipment()) ? 
-                    source.getEquippedCreature() == target :
-                    source.getEnchantedCreature() == target;
+                return MagicStatic.acceptLinked(game, source, target);
             }
         };
 	}
@@ -137,9 +142,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
         	}
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                return (source.isEquipment()) ? 
-                    source.getEquippedCreature() == target :
-                    source.getEnchantedCreature() == target;
+                return MagicStatic.acceptLinked(game, source, target);
             }
         };
 	}

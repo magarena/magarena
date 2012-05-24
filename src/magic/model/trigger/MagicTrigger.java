@@ -13,7 +13,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
 	private static final int DEFAULT_PRIORITY=10;
 	
 	private final int priority;
-	private int cardIndex;
+	private MagicCardDefinition cdef;
 
     protected MagicTrigger(final int priority) {
         this.priority = priority;
@@ -23,12 +23,12 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
 		this(DEFAULT_PRIORITY);
 	}
 
-    public void setCardIndex(final int cardIndex) {
-        this.cardIndex = cardIndex;
+    public void setCardDefinition(final MagicCardDefinition cdef) {
+        this.cdef = cdef;
     }
 	
 	final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getCard(cardIndex);
+		return cdef;
 	}
 		
 	public final int getPriority() {

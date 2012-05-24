@@ -265,7 +265,7 @@ public class MagicCardDefinition {
         } else if (obj instanceof MagicSpellCardEvent) {
             final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
             setCardEvent(cevent);
-            cevent.setCardIndex(index);
+            cevent.setCardDefinition(this);
             System.err.println("Adding spell card event to " + getFullName());
             numSpellEvent++;
         } else if (obj instanceof MagicManaActivation) {
@@ -276,19 +276,19 @@ public class MagicCardDefinition {
         } else if (obj instanceof MagicTrigger) {
             final MagicTrigger<?> mtrig = (MagicTrigger<?>)obj;
             addTrigger(mtrig);
-            mtrig.setCardIndex(index);
+            mtrig.setCardDefinition(this);
             System.err.println("Adding trigger to " + getFullName());
             numTriggers++;
         } else if (obj instanceof MagicStatic) {
             final MagicStatic mstatic = (MagicStatic)obj;
             addStatic(mstatic);
-            mstatic.setCardIndex(index);
+            mstatic.setCardDefinition(this);
             System.err.println("Adding static to " + getFullName());
             numStatics++;
         } else if (obj instanceof MagicPermanentActivation) {
             final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
             addActivation(mact);
-            mact.setCardIndex(index);
+            mact.setCardDefinition(this);
             System.err.println("Adding permanent activation to " + getFullName());
             numPermanentActivations++;
         } else if (obj instanceof MagicChangeCardDefinition) {
@@ -659,7 +659,7 @@ public class MagicCardDefinition {
 	
 	public MagicActivation getCardActivation() {
 		if (cardActivation==null) {
-			cardActivation=new MagicCardActivation(index);
+			cardActivation=new MagicCardActivation(this);
 		}
 		return cardActivation;
 	}

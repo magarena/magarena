@@ -6,16 +6,16 @@ import magic.model.MagicGame;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction {
 
-	private int cardIndex;
+	private MagicCardDefinition cdef;
     
     public MagicSpellCardEvent() {}
 
-    public void setCardIndex(final int cardIndex) {
-        this.cardIndex = cardIndex;
+    public void setCardDefinition(final MagicCardDefinition cdef) {
+        this.cdef = cdef;
     }
 	
 	public final MagicCardDefinition getCardDefinition() {
-		return CardDefinitions.getCard(cardIndex);
+		return cdef;
     }
 	
     @Override
