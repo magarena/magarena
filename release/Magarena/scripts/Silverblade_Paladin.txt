@@ -10,5 +10,5 @@ converted=3
 cost={1}{W}{W}
 pt=2/2
 ability=soulbond
+given_ability=double strike
 timing=main
-requires_card_code
