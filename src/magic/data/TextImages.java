@@ -19,6 +19,13 @@ public class TextImages {
 		TEXT_ICONS.put("{7}",IconImages.COST_SEVEN);
 		TEXT_ICONS.put("{8}",IconImages.COST_EIGHT);
 		TEXT_ICONS.put("{9}",IconImages.COST_NINE);
+		TEXT_ICONS.put("{10}",IconImages.COST_TEN);
+		TEXT_ICONS.put("{11}",IconImages.COST_ELEVEN);
+		TEXT_ICONS.put("{12}",IconImages.COST_TWELVE);
+		TEXT_ICONS.put("{13}",IconImages.COST_THIRTEEN);
+		TEXT_ICONS.put("{14}",IconImages.COST_FOURTEEN);
+		TEXT_ICONS.put("{15}",IconImages.COST_FIFTEEN);
+		TEXT_ICONS.put("{16}",IconImages.COST_SIXTEEN);
 		TEXT_ICONS.put("{X}",IconImages.COST_X);
 		
 		TEXT_ICONS.put("{B}",IconImages.COST_BLACK);
