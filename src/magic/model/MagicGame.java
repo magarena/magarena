@@ -479,7 +479,13 @@ public class MagicGame {
 		
 	public void doAction(final MagicAction action) {
 		actions.add(action);
-		action.doAction(this);
+
+        try {
+    		action.doAction(this);
+        } catch (Throwable ex) {
+            MagicGameReport.buildReport(this, Thread.currentThread(), ex);
+            System.exit(1);
+        }
 
         //performing actions update the score
 		score += action.getScore(scorePlayer);

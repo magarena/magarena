@@ -103,7 +103,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 		return report.toString();
 	}
 
-    private static void buildReport(final MagicGame game, final Thread th, final Throwable ex) {
+    public static void buildReport(final MagicGame game, final Thread th, final Throwable ex) {
         final StringBuilder sb = new StringBuilder();
         sb.append("CRASH REPORT FOR MAGARENA THREAD " + th);
         sb.append('\n');
