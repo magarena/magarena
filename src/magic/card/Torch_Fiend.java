@@ -21,7 +21,7 @@ public class Torch_Fiend {
 
 	public static final MagicPermanentActivation A = new MagicPermanentActivation(
 			new MagicCondition[]{
-                MagicManaCost.ONE_RED.getCondition()
+                MagicManaCost.RED.getCondition()
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
@@ -29,7 +29,7 @@ public class Torch_Fiend {
 		@Override
 		public MagicEvent[] getCostEvent(final MagicSource source) {
 			return new MagicEvent[]{
-				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED),
+				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.RED),
 				new MagicSacrificeEvent((MagicPermanent)source)};
 		}
 
