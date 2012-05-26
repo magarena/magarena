@@ -58,12 +58,12 @@ public class Ulamog__the_Infinite_Gyre {
 				final MagicGraveyardTriggerData triggerData) {
 			final MagicPlayer player = triggerData.card.getController();
 			return new MagicEvent(
-			    permanent,
+                //source may be permanent if on battlefield or card (exile, hand)
+			    permanent.isValid() ? permanent : triggerData.card,
 			    player,
 			    new Object[]{player},
 			    this,
-			    player + " shuffles his or her graveyard into " +
-	                    "his or her library.");
+			    player + " shuffles his or her graveyard into his or her library.");
 		}
 		
 		@Override

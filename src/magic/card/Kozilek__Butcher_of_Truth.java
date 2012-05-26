@@ -41,39 +41,5 @@ public class Kozilek__Butcher_of_Truth {
 		}
     };
     
-    public static final MagicWhenPutIntoGraveyardTrigger T2 = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicGraveyardTriggerData triggerData) {
-			final MagicPlayer player = triggerData.card.getController();
-			return new MagicEvent(
-			    permanent,
-			    player,
-			    new Object[]{player},
-			    this,
-			    player + " shuffles his or her graveyard into " +
-	                    "his or her library.");
-		}
-		
-		@Override
-		public void executeEvent(
-                final MagicGame game,
-                final MagicEvent event,
-                final Object data[],
-                final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-			for (final MagicCard card : graveyard) {
-				game.doAction(new MagicRemoveCardAction(
-						card,
-						MagicLocationType.Graveyard));
-				game.doAction(new MagicMoveCardAction(
-						card,
-						MagicLocationType.Graveyard,
-						MagicLocationType.OwnersLibrary));			
-			}
-		}
-    };
+    public static final Object T2 = Ulamog__the_Infinite_Gyre.T2;
 }
