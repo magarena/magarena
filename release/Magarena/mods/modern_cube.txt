@@ -9,6 +9,12 @@ Acid Web Spider
 Act of Treason
 Admonition Angel
 Adventuring Gear
+AEther Adept
+AEther Figment
+AEtherflame Wall
+AEther Membrane
+AEther Vial
+AEther Web
 Affa Guard Hound
 Afflict
 Ageless Entity
@@ -124,10 +130,12 @@ Ballynock Cohort
 Bandage
 Baneslayer Angel
 Bant Sureblade
+Barbarian Riftcutter
 Barbed Battlegear
 Barony Vampire
 Barrage Ogre
 Barrenton Cragtreads
+Barter in Blood
 Bar the Door
 Basalt Gargoyle
 Basilisk Collar
@@ -229,6 +237,7 @@ Briarberry Cohort
 Briarpack Alpha
 Brigid, Hero of Kinsbaile
 Brimstone Mage
+Brimstone Volley
 Brindle Boar
 Brink of Disaster
 Brion Stoutarm
@@ -384,6 +393,7 @@ Deepcavern Imp
 Deep-Slumber Titan
 Deft Duelist
 Deluge
+Demigod of Revenge
 Demolish
 Demon's Horn
 Demystify
@@ -393,6 +403,7 @@ Devoted Retainer
 Devouring Swarm
 Devout Lightcaster
 Diminish
+Dingus Egg
 Diregraf Captain
 Diregraf Ghoul
 Disciple of Griselbrand
@@ -401,6 +412,7 @@ Disentomb
 Disfigure
 Dismal Failure
 Disperse
+Dissipate
 Dissipation Field
 Divination
 Divine Favor
@@ -651,6 +663,7 @@ Goliath Spider
 Gorehorn Minotaurs
 Gorger Wurm
 Gorgon Flail
+Grapeshot
 Grappler Spider
 Grasp of Darkness
 Grave Bramble
@@ -797,6 +810,7 @@ Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
 Jayemdae Tome
+Jedit's Dragoons
 Jenara, Asura of War
 Jhessian Balmgiver
 Jhessian Infiltrator
@@ -1087,6 +1101,7 @@ Nulltread Gargantuan
 Nyxathid
 Oakgnarl Warrior
 Oblivion Ring
+Oculus
 Odious Trow
 Offering to Asha
 Ogre Leadfoot
@@ -1117,6 +1132,7 @@ Oxidize
 Pacifism
 Paladin en-Vec
 Paraselene
+Peace Strider
 Pegasus Charger
 Pelakka Wurm
 Peregrine Griffin
@@ -1198,6 +1214,7 @@ Raksha Golden Cub
 Rally the Forces
 Rampaging Baloths
 Rapacious One
+Ratchet Bomb
 Ravaging Riftwurm
 Ravenous Rats
 Raven's Run Dragoon
@@ -1226,6 +1243,7 @@ Revered Dead
 Reviving Dose
 Reya Dawnbringer
 Rhox
+Rhox Bodyguard
 Rhox Brute
 Rhox Charger
 Rhox Pikemaster
@@ -1347,6 +1365,7 @@ Sigiled Behemoth
 Sigiled Paladin
 Signal Pest
 Sign in Blood
+Silence
 Silhana Ledgewalker
 Silkbind Faerie
 Silverback Ape
@@ -1452,6 +1471,7 @@ Stalker Hag
 Stampeding Rhino
 Standing Troops
 Starlight Invoker
+Staunch Defenders
 Steadfast Guard
 Steam Vents
 Steel Wall
@@ -1467,6 +1487,7 @@ Stomper Cub
 Stomping Ground
 Stonebrow, Krosan Hero
 Stone Golem
+Stone Rain
 Stonework Puma
 Stonybrook Schoolmaster
 Stormbound Geist
@@ -1567,6 +1588,7 @@ Time Ebb
 Timely Reinforcements
 Time Warp
 Tine Shrike
+Tireless Missionaries
 Titanic Growth
 Titanic Ultimatum
 To Arms!

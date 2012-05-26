@@ -24,6 +24,7 @@ Affa Guard Hound
 Afflict
 Afterlife
 Ageless Entity
+Aggravate
 Aggressive Urge
 Air Elemental
 Air Servant
@@ -37,6 +38,7 @@ Akroma, Angel of Wrath
 Akroma's Memorial
 Alabaster Mage
 Albino Troll
+Alchemist's Apprentice
 Alexi's Cloak
 Algae Gharial
 Allay
@@ -58,6 +60,7 @@ Ancient Silverback
 Ancient Spider
 Angelfire Crusader
 Angelheart Vial
+Angelic Armaments
 Angelic Blessing
 Angelic Chorus
 Angelic Destiny
@@ -66,10 +69,12 @@ Angelic Shield
 Angelic Wall
 Angel of Despair
 Angel of Flight Alabaster
+Angel of Glory's Rise
 Angel of Mercy
 Angel of Retribution
 Angel's Feather
 Angel's Mercy
+Angel's Tomb
 Anoint
 Antagonism
 Anurid Murkdiver
@@ -91,9 +96,11 @@ Arcbound Reclaimer
 Arcbound Slith
 Arcbound Stinger
 Arcbound Worker
+Archangel
 Archangel's Light
 Archon of Justice
 Archon of Redemption
+Archwing Dragon
 Arc Runner
 Arctic Nishoba
 Arctic Wolves
@@ -121,6 +128,7 @@ Assassinate
 Assault Griffin
 Assault Strobe
 Assault Zeppelid
+Astral Steel
 Augur il-Vec
 Auramancer
 Aura Shards
@@ -128,6 +136,7 @@ Aurification
 Auriok Edgewright
 Auriok Glaivemaster
 Auriok Sunchaser
+Avacyn, Angel of Hope
 Avacynian Priest
 Avacyn's Collar
 Avacyn's Pilgrim
@@ -160,11 +169,14 @@ Ballynock Cohort
 Balshan Collaborator
 Bandage
 Baneslayer Angel
+Banners Raised
 Bant Sureblade
+Barbarian Riftcutter
 Barbed Battlegear
 Barony Vampire
 Barrage Ogre
 Barrenton Cragtreads
+Barter in Blood
 Bar the Door
 Basalt Gargoyle
 Basilisk Collar
@@ -200,6 +212,7 @@ Blackcleave Cliffs
 Blackcleave Goblin
 Black Knight
 Black Sun's Zenith
+Bladed Bracers
 Bladed Pinions
 Blade of the Bloodchief
 Blade of the Sixth Pride
@@ -221,6 +234,7 @@ Blinking Spirit
 Blistergrub
 Blistering Dieflyn
 Blisterstick Shaman
+Blood Artist
 Bloodcrazed Neonate
 Blood Crypt
 Bloodgift Demon
@@ -268,6 +282,7 @@ Boros Recruit
 Boros Swiftblade
 Bottle Gnomes
 Bountiful Harvest
+Brain Freeze
 Brain Weevil
 Bramble Creeper
 Bramblecrush
@@ -278,6 +293,7 @@ Briarberry Cohort
 Briarpack Alpha
 Brigid, Hero of Kinsbaile
 Brimstone Mage
+Brimstone Volley
 Brindle Boar
 Brink of Disaster
 Brion Stoutarm
@@ -320,6 +336,7 @@ Carrion Ants
 Carrion Call
 Carrion Wall
 Carven Caryatid
+Cathedral Sanctifier
 Caustic Crawler
 Cavern Thoctar
 Cave Tiger
@@ -428,6 +445,7 @@ Cunning Sparkmage
 Curiosity
 Cursecatcher
 Cursed Ronin
+Custody Battle
 Cutthroat il-Dal
 Cylian Elf
 Cystbearer
@@ -484,6 +502,7 @@ Defender en-Vec
 Defiant Elf
 Deft Duelist
 Deluge
+Demigod of Revenge
 Demolish
 Demon's Horn
 Demystify
@@ -493,7 +512,9 @@ Desert
 Devoted Retainer
 Devouring Swarm
 Devout Lightcaster
+Devout Monk
 Diminish
+Dingus Egg
 Diregraf Captain
 Diregraf Ghoul
 Disciple of Griselbrand
@@ -502,6 +523,7 @@ Disentomb
 Disfigure
 Dismal Failure
 Disperse
+Dissipate
 Dissipation Field
 Disturbed Burial
 Divination
@@ -551,6 +573,7 @@ Duskwalker
 Duskworker
 Dust Corona
 Dwarven Berserker
+Dwarven Driller
 Dwarven Grunt
 Dwarven Vigilantes
 Eager Cadet
@@ -816,6 +839,7 @@ Goretusk Firebeast
 Gorger Wurm
 Gorgon Flail
 Gorilla Chieftain
+Grapeshot
 Grappler Spider
 Grasp of Darkness
 Gratuitous Violence
@@ -982,6 +1006,7 @@ Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
 Jayemdae Tome
+Jedit's Dragoons
 Jenara, Asura of War
 Jhessian Balmgiver
 Jhessian Infiltrator
@@ -1047,6 +1072,7 @@ Kiln Walker
 Kindercatch
 Kindled Fury
 King Cheetah
+Kingfisher
 Kinsbaile Cavalier
 Kird Ape
 Kiss of the Amesha
@@ -1318,6 +1344,7 @@ Nulltread Gargantuan
 Nyxathid
 Oakgnarl Warrior
 Oblivion Ring
+Oculus
 Odious Trow
 Odylic Wraith
 Offering to Asha
@@ -1354,6 +1381,7 @@ Parallax Nexus
 Parallax Tide
 Parallax Wave
 Paraselene
+Peace Strider
 Pegasus Charger
 Pelakka Wurm
 Peregrine Griffin
@@ -1452,6 +1480,7 @@ Rampaging Baloths
 Rancor
 Ranger en-Vec
 Rapacious One
+Ratchet Bomb
 Ravaging Riftwurm
 Ravenous Baloth
 Ravenous Rats
@@ -1493,6 +1522,7 @@ Revered Unicorn
 Reviving Dose
 Reya Dawnbringer
 Rhox
+Rhox Bodyguard
 Rhox Brute
 Rhox Charger
 Rhox Pikemaster
@@ -1503,6 +1533,7 @@ Righteous Cause
 Righteousness
 Riot Devils
 Rip-Clan Crasher
+Riptide Crab
 Rise from the Grave
 Rise of the Hobgoblins
 Rite of Replication
@@ -1630,6 +1661,8 @@ Shivan Zombie
 Shock
 Shriekgeist
 Shrine of Burning Rage
+Shu Grain Caravan
+Shu Soldier-Farmers
 Sickle Ripper
 Sickleslicer
 Sidar Jabari
@@ -1642,11 +1675,13 @@ Sigiled Behemoth
 Sigiled Paladin
 Signal Pest
 Sign in Blood
+Silence
 Silhana Ledgewalker
 Silkbind Faerie
 Silkenfist Fighter
 Silkenfist Order
 Silverback Ape
+Silverblade Paladin
 Silverchase Fox
 Silverclaw Griffin
 Silvercoat Lion
@@ -1761,6 +1796,7 @@ Spirit Link
 Spirit Mantle
 Spiritmonger
 Spirit of the Hearth
+Spiritual Guardian
 Spiteful Shadows
 Spiteful Visions
 Spitemare
@@ -1772,6 +1808,7 @@ Stalker Hag
 Stampeding Rhino
 Standing Troops
 Starlight Invoker
+Staunch Defenders
 Steadfast Guard
 Steam Vents
 Steel Wall
@@ -1788,6 +1825,7 @@ Stomper Cub
 Stomping Ground
 Stonebrow, Krosan Hero
 Stone Golem
+Stone Rain
 Stonework Puma
 Stonybrook Schoolmaster
 Stormbound Geist
@@ -1863,10 +1901,12 @@ Telim'Tor
 Tel-Jilad Exile
 Tel-Jilad Wolf
 Tempest of Light
+Temple Acolyte
 Temple Garden
 Temporal Isolation
 Teneb, the Harvester
 Terminate
+Teroh's Faithful
 Terra Stomper
 Terravore
 Territorial Baloth
@@ -1905,6 +1945,7 @@ Time Ebb
 Timely Reinforcements
 Time Warp
 Tine Shrike
+Tireless Missionaries
 Titanic Growth
 Titanic Ultimatum
 To Arms!
@@ -2078,6 +2119,7 @@ Warlord's Axe
 Warpath Ghoul
 Warstorm Surge
 Wasp Lancer
+Wasteland
 Watchwolf
 Watery Grave
 Waveskimmer Aven
@@ -2099,6 +2141,7 @@ Windbrisk Raptor
 Wind Drake
 Winding Wurm
 Windrider Eel
+Wingcrafter
 Winged Coatl
 Wing Splicer
 Wirewood Lodge
@@ -2106,6 +2149,8 @@ Witherscale Wurm
 Withstand
 Withstand Death
 Wolfbriar Elemental
+Wolfir Avenger
+Wolfir Silverheart
 Wolverine Pack
 Wooden Stake
 Woodfall Primus
@@ -2128,6 +2173,7 @@ Wrexial, the Risen Deep
 Wring Flesh
 Wurmcoil Engine
 Wurm's Tooth
+Xantid Swarm
 Yavimaya Ants
 Yavimaya Barbarian
 Yavimaya Enchantress
@@ -2138,6 +2184,7 @@ Yotian Soldier
 Young Wolf
 Youthful Knight
 Zealot il-Vec
+Zealous Conscripts
 Zealous Guardian
 Zealous Persecution
 Zendikar Farguide

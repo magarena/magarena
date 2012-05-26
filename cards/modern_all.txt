@@ -327,8 +327,8 @@ Ardent Recruit
 Artful Dodge
 Assault (Assault/Battery)
 Assault Strobe
-Æther Vial
-Æther Spellbomb
+AEther Spellbomb
+AEther Vial
 Aura Finesse
 Auriok Glaivemaster
 Auriok Transfixer
@@ -1089,10 +1089,10 @@ Ashling the Pilgrim
 Ashling's Prerogative
 Ashmouth Hound
 Aspect of Mongoose
-Æther Web
-Ætherflame Wall
+AEther Figment
+AEther Web
+AEtherflame Wall
 Atog
-Æther Figment
 Augur il-Vec
 Augur of Skulls
 Augury Owl
@@ -2257,7 +2257,7 @@ Vampire Hexmage
 Vampire Interloper
 Vampiric Fury
 Vault Skirge
-Vedalken Æthermage
+Vedalken AEthermage
 Vedalken Engineer
 Vedalken Ghoul
 Vedalken Heretic
@@ -2366,7 +2366,7 @@ Arcane Teachings
 Archmage Ascension
 Ardent Plea
 Argent Mutation
-Arm with Æther
+Arm with AEther
 Armed Response
 Armored Skaab
 Arrest
@@ -2375,9 +2375,9 @@ Asha's Favor
 Ashenmoor Gouger
 Assassinate
 Assembly-Worker
-Æther Adept
-Æther Tradewinds
-Æther Membrane
+AEther Adept
+AEther Membrane
+AEther Tradewinds
 Augury Adept
 Auntie's Snitch
 Aura Barbs
@@ -2394,7 +2394,7 @@ Avian Changeling
 Awakener Druid
 Awakening Zone
 Azamuki, Treachery Incarnate
-Azorius Æthermage
+Azorius AEthermage
 Azorius Herald
 Azusa, Lost but Seeking
 Balduvian Barbarians
@@ -3859,11 +3859,11 @@ Ashenmoor Liege
 Ashling, the Extinguisher
 Assault Griffin
 Assault Zeppelid
-Ætherplasm
-Æthertow
-Æther Shockwave
+AEther Shockwave
+AEthermage's Touch
+AEtherplasm
+AEthertow
 Auramancer's Guise
-Æthermage's Touch
 Auriok Salvagers
 Auriok Windwalker
 Aurora Eidolon
@@ -4165,7 +4165,7 @@ Flowstone Slide
 Flying Carpet
 Fodder Cannon
 Fodder Launch
-Fold into Æther
+Fold into AEther
 Font of Mythos
 Foot Soldiers
 Foresee
@@ -4176,7 +4176,7 @@ Frazzle
 Fresh Meat
 Frogmite
 Frostwielder
-Frozen Æther
+Frozen AEther
 Fuel for the Cause
 Fumiko the Lowblood
 Fungal Behemoth
@@ -4719,7 +4719,7 @@ Scarwood Treefolk
 Scattering Stroke
 Scavenger Drake
 Scavenging Scarab
-Scornful Æther-Lich
+Scornful AEther-Lich
 Scour
 Scourge of Numai
 Scrapbasket
@@ -4855,7 +4855,7 @@ Sunder from Within
 Sunhome Enforcer
 Sunweb
 Surgespanner
-Surging Æther
+Surging AEther
 Surreal Memoir
 Swans of Bryn Argoll
 Swirl the Mists
@@ -5076,7 +5076,7 @@ Ardent Militia
 Armored Cancrix
 Arrow Volley Trap
 Asceticism
-Æther Snap
+AEther Snap
 Aven Flock
 Aven Windreader
 Ayumi, the Last Visitor
@@ -5907,7 +5907,7 @@ Ascendant Evincar
 Ashen Monstrosity
 Ashenmoor Cohort
 Assert Authority
-Æthersnipe
+AEthersnipe
 Auratouched Mage
 Auriok Siege Sled
 Auriok Survivors
@@ -6130,7 +6130,7 @@ Gaea's Liege
 Gaea's Revenge
 Garruk's Horde
 Garza Zol, Plague Queen
-Gate to the Æther
+Gate to the AEther
 Gather Specimens
 Geistcatcher's Rig
 Gemini Engine

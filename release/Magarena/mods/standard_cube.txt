@@ -5,21 +5,30 @@ Accorder's Shield
 Acidic Slime
 Acid Web Spider
 Act of Treason
+AEther Adept
+Aggravate
 Alabaster Mage
+Alchemist's Apprentice
 Alloy Myr
 Alluring Siren
 Alpha Brawl
 Alpha Tyrranax
 Ambush Viper
 Amphin Cutthroat
+Angelic Armaments
 Angelic Destiny
 Angelic Overseer
+Angelic Wall
 Angel of Flight Alabaster
+Angel of Glory's Rise
 Angel's Feather
 Angel's Mercy
+Angel's Tomb
 Arbalest Elite
+Archangel
 Archangel's Light
 Archon of Justice
+Archwing Dragon
 Ardent Recruit
 Argent Sphinx
 Argentum Armor
@@ -32,14 +41,17 @@ Assault Strobe
 Auramancer
 Auriok Edgewright
 Auriok Sunchaser
+Avacyn, Angel of Hope
 Avacynian Priest
 Avacyn's Collar
 Avacyn's Pilgrim
 Aven Fleetwing
 Azure Mage
 Balefire Dragon
+Banners Raised
 Barbed Battlegear
 Barrage Ogre
+Barter in Blood
 Bar the Door
 Batterskull
 Battleground Geist
@@ -51,6 +63,7 @@ Black Cat
 Blackcleave Cliffs
 Blackcleave Goblin
 Black Sun's Zenith
+Bladed Bracers
 Bladed Pinions
 Blade Splicer
 Blade-Tribe Berserkers
@@ -60,6 +73,7 @@ Blight Mamba
 Blightwidow
 Blistergrub
 Blisterstick Shaman
+Blood Artist
 Bloodcrazed Neonate
 Bloodgift Demon
 Blood Ogre
@@ -77,6 +91,7 @@ Brain Weevil
 Bramblecrush
 Break of Day
 Briarpack Alpha
+Brimstone Volley
 Brindle Boar
 Brink of Disaster
 Burden of Guilt
@@ -88,6 +103,7 @@ Carapace Forger
 Carnage Wurm
 Carnifex Demon
 Carrion Call
+Cathedral Sanctifier
 Celestial Purge
 Cemetery Reaper
 Champion of the Parish
@@ -133,6 +149,7 @@ Day of Judgment
 Dead Weight
 Deathmark
 Death's Caress
+Demolish
 Demon's Horn
 Demystify
 Deranged Outcast
@@ -142,6 +159,7 @@ Diregraf Ghoul
 Disciple of Griselbrand
 Disentomb
 Disperse
+Dissipate
 Dissipation Field
 Divination
 Divine Favor
@@ -220,6 +238,7 @@ Glissa's Courier
 Glissa's Scorn
 Glissa, the Traitor
 Glistener Elf
+Gloomwidow
 Goblin Arsonist
 Goblin Chieftain
 Goblin Fireslinger
@@ -368,6 +387,7 @@ Niblis of the Mist
 Niblis of the Urn
 Night Revelers
 Oblivion Ring
+Oculus
 One-Eyed Scarecrow
 Onyx Mage
 Orchard Spirit
@@ -375,6 +395,7 @@ Overrun
 Oxidda Scrapmelter
 Pacifism
 Paraselene
+Peace Strider
 Peregrine Griffin
 Perilous Myr
 Phyrexian Crusader
@@ -399,6 +420,7 @@ Quicksilver Amulet
 Rage Thrower
 Rakish Heir
 Rally the Forces
+Ratchet Bomb
 Razorfield Rhino
 Razor Swine
 Razorverge Thicket
@@ -442,6 +464,7 @@ Sickleslicer
 Siege Mastodon
 Sightless Ghoul
 Signal Pest
+Silverblade Paladin
 Silverchase Fox
 Silverclaw Griffin
 Silver-Inlaid Dagger
@@ -555,8 +578,11 @@ Walking Corpse
 Wall of Torches
 Warpath Ghoul
 Warstorm Surge
+Wingcrafter
 Wing Splicer
 Withstand Death
+Wolfir Avenger
+Wolfir Silverheart
 Wooden Stake
 Woodland Cemetery
 Woodland Sleuth
@@ -566,6 +592,7 @@ Wring Flesh
 Wurmcoil Engine
 Wurm's Tooth
 Young Wolf
+Zealous Conscripts
 Zombie Apocalypse
 Zombie Goliath
 Zombie Infestation
