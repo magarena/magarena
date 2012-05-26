@@ -35,7 +35,7 @@ Thanks to
   IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
-  David, Grundomu, jeffwadsworth, Kuno, LSK and sponeta for contributing custom decks
+  Old Nick, David, Grundomu, jeffwadsworth, Kuno, LSK and sponeta for contributing custom decks
   pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
@@ -53,6 +53,72 @@ Thanks to
 Thank you for your support and have fun!
 
 
+
+Release 1.26 (May 26, 2012)
+============
+- added decks Black_and_White.dec, Haunted_Humans.dec, Lingering_Spirits.dec,
+  and Token_Humans.dec by Old Nick
+- added support for Soulbond in card script
+- added player name to game.log
+
+- changed card script so that card name is described using "name=" instead of ">"
+- improved exception handling so that crash.log captures the relevant game state
+
+- fixed: generate deck does not use user's settings (issue 213) 
+- fixed: Scorch the Fields not dealing damage to all humans (issue 214)
+- fixed: program crash when loading Fallen_Knights_60.dec due to missing comment symbol
+- fixed: card image was not downloaded even though current image should be ignored
+- fixed: cost of Torch Fiend's ability should be {R} instead of {1}{R}
+- fixed: crash bug due to Ulamog and Kozilek's second ability
+
+- added the following cards:
+  Aggravate
+  Alchemist's Apprentice
+  Angel of Glory's Rise
+  Angel's Tomb
+  Angelic Armaments
+  Archangel
+  Archwing Dragon
+  Astral Steel
+  Avacyn, Angel of Hope
+  Banners Raised
+  Barbarian Riftcutter
+  Barter in Blood
+  Bladed Bracers
+  Blood Artist
+  Brain Freeze
+  Brimstone Volley
+  Cathedral Sanctifier
+  Custody Battle
+  Demigod of Revenge
+  Devout Monk
+  Dingus Egg
+  Dissipate
+  Dwarven Driller
+  Grapeshot
+  Jedit's Dragoons
+  Kingfisher
+  Oculus
+  Peace Strider
+  Ratchet Bomb
+  Rhox Bodyguard
+  Riptide Crab
+  Shu Grain Caravan
+  Shu Soldier-Farmers
+  Silence
+  Silverblade Paladin
+  Spiritual Guardian
+  Staunch Defenders
+  Stone Rain
+  Temple Acolyte
+  Teroh's Faithful
+  Tireless Missionaries
+  Wasteland
+  Wingcrafter
+  Wolfir Avenger
+  Wolfir Silverheart
+  Xantid Swarm
+  Zealous Conscripts
 
 Release 1.25 (April 29, 2012)
 ============
