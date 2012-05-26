@@ -75,6 +75,7 @@ cards/modern_all.txt:
 	curl "http://magiccards.info/query?q=cmc%3D4+f%3Amodern&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 	curl "http://magiccards.info/query?q=cmc%3D5+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 	curl "http://magiccards.info/query?q=cmc>%3D6+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	sed -i 's/Æ/AE/' $@
 
 cards/extended_all.txt:
 	curl "http://magiccards.info/query?q=cmc%3D0+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' > $@
@@ -84,10 +85,12 @@ cards/extended_all.txt:
 	curl "http://magiccards.info/query?q=cmc%3D4+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 	curl "http://magiccards.info/query?q=cmc%3D5+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 	curl "http://magiccards.info/query?q=cmc>%3D6+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	sed -i 's/Æ/AE/' $@
 
 cards/standard_all.txt:
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' > $@
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	sed -i 's/Æ/AE/' $@
 
 cards/new_%.txt: release/Magarena/scripts 
 	grep "name=" -h $$(hg diff -r $* | grep -B 1 "^--- /dev/null" | grep $^ | cut -d' ' -f4) | sed 's/name=//' > $@
