@@ -9,7 +9,6 @@ public class MagicGraveyardTriggerData {
 	public final MagicLocationType fromLocation;
 	
 	public MagicGraveyardTriggerData(final MagicCard card,final MagicLocationType fromLocation) {
-		
 		this.card=card;
 		this.fromLocation=fromLocation;
 	}
