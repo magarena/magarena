@@ -50,7 +50,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	@Override
 	public MagicCard map(final MagicGame game) {
 		final MagicPlayer mappedOwner=owner.map(game);
-        MagicCard card = game.getStack().getCard(id);
+        MagicCard card = MagicCard.NONE;
         if (card == MagicCard.NONE) {
             card = mappedOwner.getHand().getCard(id);
         }
