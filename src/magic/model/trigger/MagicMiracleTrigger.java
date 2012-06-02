@@ -35,7 +35,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
                 card.getOwner(),
                 new MagicMayChoice(
                         "You may pay " + cost + ".",
-                        new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE)),
+                        new MagicPayManaCostChoice(cost)),
                 MagicEvent.NO_DATA,
                 this,
                 "You may$ cast this card for it's miracle cost") :
