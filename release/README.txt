@@ -54,6 +54,10 @@ Thank you for your support and have fun!
 
 
 
+Release 1.27 (June XX, 2012)
+============
+- added support for Miracle in card script
+
 Release 1.26 (May 26, 2012)
 ============
 - added decks Black_and_White.dec, Haunted_Humans.dec, Lingering_Spirits.dec,
