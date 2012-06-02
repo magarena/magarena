@@ -47,8 +47,10 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        final MagicCard card = (MagicCard)event.getSource();
-        final MagicCardActivation act = card.getCardDefinition().getCardActivation();
-        game.doAction(new MagicAddEventAction(act.getEvent(card)));
+        if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            final MagicCard card = (MagicCard)event.getSource();
+            final MagicCardActivation act = card.getCardDefinition().getCardActivation();
+            game.doAction(new MagicAddEventAction(act.getEvent(card)));
+        }
     }
 }

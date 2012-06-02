@@ -28,8 +28,7 @@ class TestTemporalMastery extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Temporal Mastery", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
-	    addToHand(P,"Kor Firewalker",3); 
-	    addToHand(P,"Sun Titan",3);
+	    addToHand(P,"Repulse",3);
        
 
         P = opponent;

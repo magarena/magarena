@@ -114,7 +114,8 @@ public class CardDefinitions {
     }
 	
     private static void loadCardDefinition(final File file) {
-        System.err.println("Parsing " + file);
+        System.err.print("Parsing ");
+        System.err.println(file);
         final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
         checkCard(cdef);
         addDefinition(cdef);
