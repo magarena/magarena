@@ -43,7 +43,7 @@ public class MagicDrawAction extends MagicAction {
 			for (final MagicTrigger<?> trigger : card.getCardDefinition().getDrawnTriggers()) {
 				game.executeTrigger(trigger,MagicPermanent.NONE,card,card);
 			}
-			game.executeTrigger(MagicTriggerType.WhenDrawn,card);
+			game.executeTrigger(MagicTriggerType.WhenOtherDrawn,card);
 		}
 		setScore(player,score);
 		game.setStateCheckRequired();			
