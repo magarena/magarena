@@ -1,0 +1,12 @@
+name=Temporal Mastery
+url=http://magiccards.info/avr/en/81.html
+image=http://magiccards.info/scans/en/avr/81.jpg
+value=5
+rarity=M
+type=Sorcery
+color=u
+converted=7
+cost={5}{U}{U}
+timing=nextturn
+ability=miracle {1}{U}
+requires_card_code
