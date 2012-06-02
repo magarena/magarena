@@ -448,12 +448,10 @@ public class MagicCardDefinition {
 	}
 	
 	public void setColors(final String colors) {
-		
 		colorFlags=MagicColor.getFlags(colors);		
 	}
 	
 	protected void setColor(final MagicColor color) {
-		
 		colorFlags|=color.getMask();
 	}
 	
@@ -462,12 +460,10 @@ public class MagicCardDefinition {
 	}
 		
 	public int getColorFlags() {
-		
 		return colorFlags;
 	}
 	
 	public void setColoredType() {
-		
 		int count=0;
 		for (final MagicColor color : MagicColor.values()) {
 			
