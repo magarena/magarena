@@ -28,11 +28,11 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-        return data.getOwner().getDrawnCards() == 1 ?
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent none,final MagicCard card) {
+        return card.getOwner().getDrawnCards() == 1 ?
             new MagicEvent(
-                data,
-                data.getOwner(),
+                card,
+                card.getOwner(),
                 new MagicMayChoice(
                         "You may pay " + cost + ".",
                         new MagicPayManaCostChoice(MagicManaCost.ONE_BLUE)),
