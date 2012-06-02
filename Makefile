@@ -319,7 +319,7 @@ code_clones:
 
 cards/mtg-data:
 	wget `curl "http://www.slightlymagic.net/forum/viewtopic.php?f=27&t=1347&sid=965fac256e7153d8af4da259b57d0a7b" |\
-	grep -o http://dl[^\"]*mtg-data[^\"]*.zip page | head -1` -O mtg-data.zip
+	grep -o http://dl[^\"]*mtg-data[^\"]*.zip | head -1` -O mtg-data.zip
 	unzip -j mtg-data.zip -d cards
 	rm mtg-data.zip
 
