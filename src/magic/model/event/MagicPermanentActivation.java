@@ -67,6 +67,6 @@ public abstract class MagicPermanentActivation extends MagicActivation {
             final MagicEvent event, 
             final Object data[], 
             final Object[] choiceResults) {
-        throw new RuntimeException(getClass() + "did not override executeEvent");
+        throw new RuntimeException(getClass() + " did not override executeEvent");
     }
 }

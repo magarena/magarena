@@ -24,6 +24,6 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             final MagicEvent event, 
             final Object data[], 
             final Object[] choiceResults) {
-        throw new RuntimeException(getClass() + "did not override executeEvent");
+        throw new RuntimeException(getClass() + " did not override executeEvent");
     }
 }

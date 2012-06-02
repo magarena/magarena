@@ -45,7 +45,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
             final MagicEvent event, 
             final Object data[], 
             final Object[] choiceResults) {
-        throw new RuntimeException(getClass() + "did not override executeEvent");
+        throw new RuntimeException(getClass() + " did not override executeEvent");
     }
 	
     public abstract MagicTriggerType getType();
