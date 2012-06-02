@@ -195,7 +195,7 @@ exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@ 
 
 decks/dd:
-	for i in `grep -o mtg/daily/deck/[0-9]* dailydeck | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
+	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
 
 decks/dd_%.dec: scripts/dailyhtml2dec.awk
 	curl "http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$*" | awk -f $^ > $@
