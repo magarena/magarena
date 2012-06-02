@@ -3,11 +3,13 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicSource;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicCardDefinition;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;
 
-public abstract class MagicManaActivation {
+public abstract class MagicManaActivation implements MagicChangeCardDefinition {
 	
 	private final List<MagicManaType> manaTypes;
 	private final MagicCondition conditions[];
@@ -41,4 +43,9 @@ public abstract class MagicManaActivation {
 	}
 	
 	public abstract MagicEvent[] getCostEvent(final MagicSource source);
+    
+    @Override
+    public void change(MagicCardDefinition cdef) {
+        cdef.add(this);
+    }
 }

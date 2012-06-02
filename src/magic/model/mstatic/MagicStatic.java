@@ -2,6 +2,7 @@ package magic.model.mstatic;
 
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
@@ -9,7 +10,7 @@ import magic.model.MagicPermanent;
 import magic.model.target.MagicTargetFilter;
 import java.util.EnumSet;
 
-public abstract class MagicStatic extends MagicDummyPermanentModifier {
+public abstract class MagicStatic extends MagicDummyPermanentModifier implements MagicChangeCardDefinition {
 
     public static final boolean UntilEOT = true;
 
@@ -49,6 +50,12 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier {
 	final MagicCardDefinition getCardDefinition() {
 		return cdef;
 	}
+    
+    @Override
+    public void change(MagicCardDefinition cdef) {
+        cdef.add(this);
+        setCardDefinition(cdef);
+    }
 		
 	public final MagicLayer getLayer() {
 		return layer;

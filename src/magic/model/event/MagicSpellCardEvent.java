@@ -3,8 +3,9 @@ package magic.model.event;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicChangeCardDefinition;
 
-public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction {
+public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 
 	private MagicCardDefinition cdef;
     
@@ -25,5 +26,11 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             final Object data[], 
             final Object[] choiceResults) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
+    }
+   
+    @Override
+    public void change(MagicCardDefinition cdef) {
+        cdef.add(this);
+        setCardDefinition(cdef);
     }
 }

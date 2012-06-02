@@ -260,54 +260,6 @@ public class MagicCardDefinition {
         return typeFlags;
     }
     
-    public void add(final Object obj) {
-        if (obj == null) {
-            throw new RuntimeException("MagicCardDefinition.add passed null");
-        } else if (obj instanceof MagicSpellCardEvent) {
-            final MagicSpellCardEvent cevent = (MagicSpellCardEvent)obj;
-            setCardEvent(cevent);
-            cevent.setCardDefinition(this);
-            System.err.println("Adding spell card event to " + getFullName());
-            numSpellEvent++;
-        } else if (obj instanceof MagicManaActivation) {
-            final MagicManaActivation mact = (MagicManaActivation)obj;
-            addManaActivation(mact);
-            System.err.println("Adding mana activation to " + getFullName());
-            numManaActivations++;
-        } else if (obj instanceof MagicTrigger) {
-            final MagicTrigger<?> mtrig = (MagicTrigger<?>)obj;
-            addTrigger(mtrig);
-            mtrig.setCardDefinition(this);
-            System.err.println("Adding trigger to " + getFullName());
-            numTriggers++;
-        } else if (obj instanceof MagicStatic) {
-            final MagicStatic mstatic = (MagicStatic)obj;
-            addStatic(mstatic);
-            mstatic.setCardDefinition(this);
-            System.err.println("Adding static to " + getFullName());
-            numStatics++;
-        } else if (obj instanceof MagicPermanentActivation) {
-            final MagicPermanentActivation mact = (MagicPermanentActivation)obj;
-            addActivation(mact);
-            mact.setCardDefinition(this);
-            System.err.println("Adding permanent activation to " + getFullName());
-            numPermanentActivations++;
-        } else if (obj instanceof MagicChangeCardDefinition) {
-            final MagicChangeCardDefinition chg = (MagicChangeCardDefinition)obj;
-            chg.change(this);
-            System.err.println("Adding modification to " + getFullName());
-            numModifications++;
-        } else if (obj instanceof MagicCDA) {
-            final MagicCDA cda = (MagicCDA)obj;
-            CDAs.add(cda);
-            System.err.println("Adding CDA to " + getFullName());
-            numCDAs++;
-        } else {
-            System.err.println("ERROR! Unable to add object to MagicCardDefinition");
-            throw new RuntimeException("Unknown field in companion object");
-        }
-    }
-	
 	public void addType(final MagicType type) {
 		typeFlags|=type.getMask();
 	}
@@ -564,7 +516,7 @@ public class MagicCardDefinition {
 			manaTypes.add(MagicColor.getColor(basicText.charAt(i)).getManaType());
 		}
 		manaTypes.add(MagicManaType.Colorless);
-		addManaActivation(new MagicTapManaActivation(manaTypes,0));
+		add(new MagicTapManaActivation(manaTypes,0));
 	}
 	
 	
@@ -642,8 +594,9 @@ public class MagicCardDefinition {
 		return timing;
 	}
 	
-	private void setCardEvent(final MagicCardEvent cardEvent) {
+	public void add(final MagicCardEvent cardEvent) {
 		this.cardEvent=cardEvent;
+        numSpellEvent++;
 	}
 	
 	public MagicCardEvent getCardEvent() {
@@ -660,8 +613,13 @@ public class MagicCardDefinition {
 		}
 		return cardActivation;
 	}
+	
+    public void add(final MagicCDA cda) {
+        CDAs.add(cda);
+        numCDAs++;
+    }
 		
-	private void addTrigger(final MagicTrigger<?> trigger) {
+	public void add(final MagicTrigger<?> trigger) {
 		switch (trigger.getType()) {
 			case WhenSpellIsCast:
 				spellIsCastTriggers.add(trigger);
@@ -679,10 +637,12 @@ public class MagicCardDefinition {
 				triggers.add(trigger);
 				break;
 		}
+        numTriggers++;
 	}
 	
-    private void addStatic(final MagicStatic mstatic) {
+    public void add(final MagicStatic mstatic) {
         statics.add(mstatic);
+        numStatics++;
     }
 	
 	public Collection<MagicTrigger<?>> getTriggers() {
@@ -709,16 +669,18 @@ public class MagicCardDefinition {
 		return drawnTriggers;
 	}
 	
-	private void addActivation(final MagicPermanentActivation activation) {
+	public void add(final MagicPermanentActivation activation) {
 		activations.add(activation);
+        numPermanentActivations++;
 	}
 	
 	public Collection<MagicActivation> getActivations() {
 		return activations;
 	}
 	
-	public void addManaActivation(final MagicManaActivation activation) {
+	public void add(final MagicManaActivation activation) {
 		manaActivations.add(activation);
+        numManaActivations++;
 	}
 	
 	public Collection<MagicManaActivation> getManaActivations() {

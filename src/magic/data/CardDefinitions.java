@@ -2,6 +2,7 @@ package magic.data;
 
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.event.MagicTiming;
 
@@ -101,7 +102,8 @@ public class CardDefinitions {
             final Field[] fields = c.getDeclaredFields();
             for (final Field field : fields) {
                 if (Modifier.isPublic(field.getModifiers())) {
-                    cardDefinition.add(field.get(null));
+                    final MagicChangeCardDefinition ccd = (MagicChangeCardDefinition)field.get(null);
+                    ccd.change(cardDefinition);
                 }
             }
         } catch (final ClassNotFoundException ex) {

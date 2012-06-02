@@ -1,12 +1,14 @@
 package magic.model.mstatic;
 
+import java.util.EnumSet;
+
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
-
-import java.util.EnumSet;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicCardDefinition;
 
 /*
 604.3a A static ability is a characteristic-defining ability if it meets
@@ -20,7 +22,7 @@ an object grants to itself; and (5) it does not set the values of such
 characteristics only if certain conditions are met.
 */
 
-public abstract class MagicCDA {
+public abstract class MagicCDA implements MagicChangeCardDefinition {
 
 	public int getColorFlags(final MagicGame game, final MagicPlayer player,final int flags) {
         return flags;
@@ -42,5 +44,10 @@ public abstract class MagicCDA {
             final MagicGame game,
             final MagicPlayer player,
             final MagicPowerToughness pt) {
+    }
+    
+    @Override
+    public void change(MagicCardDefinition cdef) {
+        cdef.add(this);
     }
 }

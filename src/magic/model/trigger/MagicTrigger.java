@@ -4,11 +4,12 @@ import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicChangeCardDefinition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 
 /** Lower priority values trigger before higher priority values. */
-public abstract class MagicTrigger<T> implements MagicEventAction {
+public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCardDefinition {
 
 	private static final int DEFAULT_PRIORITY=10;
 	
@@ -51,4 +52,10 @@ public abstract class MagicTrigger<T> implements MagicEventAction {
     public abstract MagicTriggerType getType();
 	
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
+    
+    @Override
+    public void change(MagicCardDefinition cdef) {
+        cdef.add(this);
+        setCardDefinition(cdef);
+    }
 }

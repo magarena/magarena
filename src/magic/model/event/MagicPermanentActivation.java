@@ -4,12 +4,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicCardDefinition;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 
-public abstract class MagicPermanentActivation extends MagicActivation {
+public abstract class MagicPermanentActivation extends MagicActivation implements MagicChangeCardDefinition {
 	
 	private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
 		@Override
@@ -68,5 +70,11 @@ public abstract class MagicPermanentActivation extends MagicActivation {
             final Object data[], 
             final Object[] choiceResults) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
+    }
+    
+    @Override
+    public void change(MagicCardDefinition cdef) {
+        cdef.add(this);
+        setCardDefinition(cdef);
     }
 }
