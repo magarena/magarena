@@ -18,12 +18,12 @@ public class Spiteful_Visions {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer player = data.getOwner();
-    			return new MagicEvent(
-    					permanent,
-    					permanent.getController(),
-    					new Object[]{permanent,player},
-    					this,
-    					permanent + " deals 1 damage to " + player + ".");
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                new Object[]{permanent,player},
+                this,
+                permanent + " deals 1 damage to " + player + ".");
     	}
     	
     	@Override
