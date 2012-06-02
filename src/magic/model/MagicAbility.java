@@ -507,6 +507,12 @@ public enum MagicAbility {
             card.add(new MagicPlayMulticounterEvent(manaCost));
         }
     },
+    Miracle("miracle", 0) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+            card.add(new MagicMiracleTrigger(manaCost));
+        }
+    },
     None("",0);
 
 	public static final long PROTECTION_FLAGS=

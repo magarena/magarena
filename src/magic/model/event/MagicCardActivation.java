@@ -44,7 +44,7 @@ public class MagicCardActivation extends MagicActivation {
 	}
 
 	@Override
-	MagicEvent getEvent(final MagicSource source) {
+	public MagicEvent getEvent(final MagicSource source) {
 		return new MagicEvent(source,source.getController(),new Object[]{source},this,"Play "+source.getName()+".");
 	}
 

@@ -84,12 +84,13 @@ public class MagicCardDefinition {
 	private MagicStaticType staticType=MagicStaticType.None;
 	private MagicTiming timing=MagicTiming.None;
 	private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
-    private MagicActivation cardActivation;
+    private MagicCardActivation cardActivation;
 	private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
 	private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
 	private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
 	private final Collection<MagicTrigger<?>> comeIntoPlayTriggers = new ArrayList<MagicTrigger<?>>();
 	private final Collection<MagicTrigger<?>> spellIsCastTriggers = new ArrayList<MagicTrigger<?>>();
+	private final Collection<MagicTrigger<?>> drawnTriggers = new ArrayList<MagicTrigger<?>>();
 	private final Collection<MagicTrigger<?>> putIntoGraveyardTriggers = new ArrayList<MagicTrigger<?>>();
 	private final Collection<MagicActivation> activations=new ArrayList<MagicActivation>();
 	private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
@@ -653,7 +654,7 @@ public class MagicCardDefinition {
 		return new MagicActivationHints(timing,true,0);
 	}
 	
-	public MagicActivation getCardActivation() {
+	public MagicCardActivation getCardActivation() {
 		if (cardActivation==null) {
 			cardActivation=new MagicCardActivation(this);
 		}
@@ -670,6 +671,9 @@ public class MagicCardDefinition {
 				break;
 			case WhenPutIntoGraveyard:
 				putIntoGraveyardTriggers.add(trigger);
+				break;
+			case WhenDrawn:
+                drawnTriggers.add(trigger);
 				break;
 			default:
 				triggers.add(trigger);
@@ -699,6 +703,10 @@ public class MagicCardDefinition {
 	
 	public Collection<MagicTrigger<?>> getPutIntoGraveyardTriggers() {
 		return putIntoGraveyardTriggers;
+	}
+	
+    public Collection<MagicTrigger<?>> getDrawnTriggers() {
+		return drawnTriggers;
 	}
 	
 	private void addActivation(final MagicPermanentActivation activation) {

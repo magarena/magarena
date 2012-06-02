@@ -37,10 +37,11 @@ public class MagicPlayer implements MagicTarget {
 	private final int index;
 	
     private int life;
-	private int poison;
 	private int stateFlags;
+	private int poison;
 	private int preventDamage;
 	private int extraTurns;
+    private int drawnCards;
 	private boolean SmartShuffleUsed;
     private final MagicCardList hand;
 	private final MagicCardList library;
@@ -59,7 +60,6 @@ public class MagicPlayer implements MagicTarget {
 		playerDefinition = aPlayerDefinition;
 		index = aIndex;
 		life = aLife;
-		poison = 0;
 		
         hand=new MagicCardList();
 		library=new MagicCardList();
@@ -83,6 +83,7 @@ public class MagicPlayer implements MagicTarget {
 		stateFlags=sourcePlayer.stateFlags;
 		preventDamage=sourcePlayer.preventDamage;
 		extraTurns=sourcePlayer.extraTurns;
+        drawnCards=sourcePlayer.drawnCards;
 		hand=new MagicCardList(copyMap, sourcePlayer.hand);
 		library=new MagicCardList(copyMap, sourcePlayer.library);
 		graveyard=new MagicCardList(copyMap, sourcePlayer.graveyard);
@@ -492,5 +493,21 @@ public class MagicPlayer implements MagicTarget {
 	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
         final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getCard("Spirit of the Hearth").getIndex();
 		return source.getController() == this || getCount(SPIRIT_OF_THE_HEARTH) == 0;
-	}	
+	}
+
+    public void incDrawnCards() {
+        drawnCards++;
+    }
+    
+    public void decDrawnCards() {
+        drawnCards--;
+    }
+
+    public void setDrawnCards(final int drawnCards) {
+        this.drawnCards = drawnCards;
+    }
+
+    public int getDrawnCards() {
+        return drawnCards;
+    }
 }

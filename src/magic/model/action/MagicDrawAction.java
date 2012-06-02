@@ -4,8 +4,10 @@ import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTriggerType;
+import magic.model.trigger.MagicTrigger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +37,12 @@ public class MagicDrawAction extends MagicAction {
 			} 
 			final MagicCard card=library.removeCardAtTop();
 			player.addCardToHand(card);
+            player.incDrawnCards();
 			drawnCards.add(card);
 			score+=ArtificialScoringSystem.getCardScore(card);
+			for (final MagicTrigger<?> trigger : card.getCardDefinition().getDrawnTriggers()) {
+				game.executeTrigger(trigger,MagicPermanent.NONE,card,card);
+			}
 			game.executeTrigger(MagicTriggerType.WhenDrawn,card);
 		}
 		setScore(player,score);
@@ -49,6 +55,7 @@ public class MagicDrawAction extends MagicAction {
 			final MagicCard card=drawnCards.get(index);
 			player.removeCardFromHand(card);
 			player.getLibrary().addToTop(card);
+            player.decDrawnCards();
 		}
 	}
 }
