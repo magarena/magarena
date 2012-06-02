@@ -38,7 +38,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
                         new MagicPayManaCostChoice(cost)),
                 MagicEvent.NO_DATA,
                 this,
-                "You may$ cast this card for it's miracle cost") :
+                "You may$ cast this card for its miracle cost") :
             MagicEvent.NONE;
     }
     @Override
