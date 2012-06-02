@@ -10,7 +10,7 @@ import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenDrawnTrigger;
+import magic.model.trigger.MagicWhenOtherDrawnTrigger;
 
 public class Kederekt_Parasite {
 	
@@ -23,7 +23,7 @@ public class Kederekt_Parasite {
 		return false;
 	}
 
-    public static final MagicWhenDrawnTrigger T = new MagicWhenDrawnTrigger() {
+    public static final Object T = new MagicWhenOtherDrawnTrigger() {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer player = data.getOwner();

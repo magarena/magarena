@@ -9,10 +9,10 @@ import magic.model.MagicSource;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicWhenDrawnTrigger;
+import magic.model.trigger.MagicWhenOtherDrawnTrigger;
 
 public class Underworld_Dreams {
-    public static final MagicWhenDrawnTrigger T1 = new MagicWhenDrawnTrigger() {
+    public static final Object T1 = new MagicWhenOtherDrawnTrigger() {
     	@Override
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
     		final MagicPlayer player = data.getOwner();
