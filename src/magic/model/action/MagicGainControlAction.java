@@ -23,7 +23,7 @@ public class MagicGainControlAction extends MagicAction {
 
 		oldController=permanent.getController();
 		if (player!=oldController) {
-			int score = permanent.getScore(game);
+			int score = permanent.getScore();
 			
 			// Execute trigger here so that full permanent state is preserved.
 			game.executeTrigger(MagicTriggerType.WhenLoseControl, permanent);
@@ -35,7 +35,7 @@ public class MagicGainControlAction extends MagicAction {
 			if (permanent.getPairedCreature().isValid()) {;
 				game.doAction(new MagicSoulbondAction(permanent,permanent.getPairedCreature(),false));
 			}
-			score += permanent.getScore(game);
+			score += permanent.getScore();
 			setScore(player, score);
 			game.setStateCheckRequired();
 		}

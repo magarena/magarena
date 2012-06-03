@@ -76,7 +76,7 @@ public class PermanentViewerInfo {
 		this.permanent=permanent;
 		cardDefinition=permanent.getCardDefinition();
 		name=permanent.getName();
-		icon=permanent.getIcon(game);
+		icon=permanent.getIcon();
 		index=permanent.getCard().getImageIndex();
 		powerToughness=getPowerToughness(permanent);
 		abilityFlags=permanent.getAllAbilityFlags();
@@ -93,7 +93,7 @@ public class PermanentViewerInfo {
             (permanent.isEnchantment()&&permanent.getEnchantedCreature().isInvalid());
 		root=permanent.getEnchantedCreature().isInvalid() && permanent.getEquippedCreature().isInvalid();
 		tapped=permanent.isTapped();
-		canNotTap=!tapped&&!permanent.canTap(game);
+		canNotTap=!tapped&&!permanent.canTap();
 		attacking=permanent.isAttacking();
 		blocking=permanent.isBlocking();
 		blockingInvalid=permanent.getBlockedCreature().isInvalid();
@@ -123,7 +123,7 @@ public class PermanentViewerInfo {
 		}		
 		if (permanent.isTapped()) {
 			textBuffer.append(MagicPermanentState.Tapped.getText());
-		} else if (!permanent.canTap(game)) {
+		} else if (!permanent.canTap()) {
 			textBuffer.append("{S}");
 		}
 		if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {

@@ -16,7 +16,7 @@ public class MagicHasteTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		if (permanent.isTapped()||permanent.canTap(game)) {
+		if (permanent.isTapped()||permanent.canTap()) {
 			return 0;
 		}
 		return 1+permanent.getPower()+permanent.getActivations().size();

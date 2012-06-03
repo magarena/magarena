@@ -91,10 +91,10 @@ public class ArtificialScoringSystem {
 		return score;
 	}
 	
-	public static int getVariablePermanentScore(final MagicGame game,final MagicPermanent permanent) {
+	public static int getVariablePermanentScore(final MagicPermanent permanent) {
 		int score=permanent.getCounters(MagicCounterType.Charge)*30;
-		if (!permanent.canTap(game)) {
-			score+=getTappedScore(permanent,game);
+		if (!permanent.canTap()) {
+			score+=getTappedScore(permanent);
 		}
 		if (permanent.isCreature()) {
 			final MagicPowerToughness pt=permanent.getPowerToughness(false);
@@ -105,7 +105,7 @@ public class ArtificialScoringSystem {
 		return score;
 	}
 	
-	public static int getTappedScore(final MagicPermanent permanent,final MagicGame game) {
+	public static int getTappedScore(final MagicPermanent permanent) {
 		return permanent.isCreature()?-10:-5;
 	}
 	

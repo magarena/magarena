@@ -52,7 +52,7 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
                 return 0;
             }
             final int leftToughness=permanent.getToughness()-permanent.getDamage()-actualAmount;
-            final int score=leftToughness<=0?permanent.getScore(game):20-leftToughness;
+            final int score=leftToughness<=0?permanent.getScore():20-leftToughness;
             return permanent.getController()==player?-score:score;
         } else {
             throw new RuntimeException("target is neither MagicPlayer nor MagicPermanent");

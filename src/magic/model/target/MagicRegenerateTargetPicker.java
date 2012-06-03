@@ -18,7 +18,7 @@ public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanen
 			if (MagicAbility.Persist.hasAbility(flags)||MagicAbility.Indestructible.hasAbility(flags)) {
 				return permanent.getDamage()+1;
 			}
-			return permanent.getScore(game);
+			return permanent.getScore();
 		}		
 		return 0;
 	}

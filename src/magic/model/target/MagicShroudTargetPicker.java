@@ -21,6 +21,6 @@ public class MagicShroudTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		if (MagicAbility.Shroud.hasAbility(flags)||MagicAbility.CannotBeTheTarget.hasAbility(flags)) {
 			return 0;
 		}
-		return permanent.getScore(game);
+		return permanent.getScore();
 	}
 }

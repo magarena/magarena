@@ -79,14 +79,14 @@ public interface MagicCondition {
 	MagicCondition CAN_TAP_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
-			return permanent.canTap(game);
+			return permanent.canTap();
 		}
 	};
 
 	MagicCondition CAN_UNTAP_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent=(MagicPermanent)source;
-			return permanent.canUntap(game);
+			return permanent.canUntap();
 		}
 	};
 	
@@ -190,19 +190,19 @@ public interface MagicCondition {
 		
 	MagicCondition CONTROL_BAT_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithSubType(MagicSubType.Bat,game);
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Bat);
 		}
 	};
 
 	MagicCondition CONTROL_BEAST_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithSubType(MagicSubType.Beast,game);
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Beast);
 		}
 	};
 	
 	MagicCondition CONTROL_GOBLIN_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithSubType(MagicSubType.Goblin,game);
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Goblin);
 		}
 	};
 	
@@ -214,7 +214,7 @@ public interface MagicCondition {
 	
 	MagicCondition CONTROL_GOLEM_CONDITION = new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithSubType(MagicSubType.Golem,game);
+			return source.getController().controlsPermanentWithSubType(MagicSubType.Golem);
 		}
 	};
 	

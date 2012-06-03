@@ -11,7 +11,7 @@ public interface MagicTarget extends MagicCopyable, MagicMappable {
 	boolean     isPlayer();
 	boolean     isSpell();
 	boolean     isPermanent();
-	boolean     isValidTarget(final MagicGame game,final MagicSource source);
+	boolean     isValidTarget(final MagicSource source);
 	int         getPreventDamage();
 	String      getName();
 	MagicPlayer getController();

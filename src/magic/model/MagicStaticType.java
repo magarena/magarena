@@ -18,7 +18,7 @@ public enum MagicStaticType {
 		return name;
 	}
 	
-	public int getScore(final MagicGame game,final MagicPermanent scorePermanent) {
+	public int getScore(final MagicPermanent scorePermanent) {
 		if (this==None) {
 			return 0;
 		}
@@ -28,14 +28,14 @@ public enum MagicStaticType {
 		if (this==All||this==Player) {
 			for (final MagicPermanent permanent : player.getPermanents()) {
 				if (permanent.isCreature()&&permanent!=scorePermanent) {
-					score+=permanent.getScore(game);
+					score+=permanent.getScore();
 				}
 			}
 		}
 		if (this==All||this==Opponent) {
-			for (final MagicPermanent permanent : game.getOpponent(player).getPermanents()) {
+			for (final MagicPermanent permanent : player.getOpponent().getPermanents()) {
 				if (permanent.isCreature()) {
-					score-=permanent.getScore(game);
+					score-=permanent.getScore();
 				}
 			}
 		}

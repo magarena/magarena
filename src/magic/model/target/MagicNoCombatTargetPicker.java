@@ -39,10 +39,10 @@ public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent>
 		// Until end of turn.
 		final boolean turn=game.getTurnPlayer()==player;
 		if (turn) {
-			if (!noBlocking||!permanent.canBlock(game)) {
+			if (!noBlocking||!permanent.canBlock()) {
 				return 0;
 			}
-		} else if (!noAttacking||!permanent.canAttack(game)) {
+		} else if (!noAttacking||!permanent.canAttack()) {
 			return 0;
 		}
 		final MagicPowerToughness pt=permanent.getPowerToughness();

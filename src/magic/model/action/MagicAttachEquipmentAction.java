@@ -36,9 +36,9 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		oldEquippedCreature=equipment.getEquippedCreature();
 		if (oldEquippedCreature.isValid()) {
             game.doAction(new MagicPlayAbilityAction(equipment));
-			score-=oldEquippedCreature.getScore(game);
+			score-=oldEquippedCreature.getScore();
 			oldEquippedCreature.removeEquipment(equipment);
-			score+=oldEquippedCreature.getScore(game);
+			score+=oldEquippedCreature.getScore();
 			if (oldEquippedCreature.getController()==equipment.getController()) {
 				// Prevent unnecessary equips.
 				if (oldEquippedCreature==creature) {
@@ -52,7 +52,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
 		}
 		validCreature = creature.isValid() && creature.getController().controlsPermanent(creature);
 		if (validCreature) {
-			score-=creature.getScore(game);
+			score-=creature.getScore();
 
 			creature.addEquipment(equipment);
 			equipment.setEquippedCreature(creature);
@@ -61,7 +61,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
             oldStatics = game.removeCardStatics(equipment);
             game.addCardStatics(equipment);
 
-			score+=creature.getScore(game);
+			score+=creature.getScore();
 		} else {
 			equipment.setEquippedCreature(MagicPermanent.NONE);
 		}

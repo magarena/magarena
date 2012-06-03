@@ -43,7 +43,7 @@ public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent>
 		} else if (permanent.isBlocking()) {
 			// possible to not gain life when attacker has first strike
 			score = BLOCKED_OR_BLOCKING;
-		} else if (permanent.canTap(game)) {
+		} else if (permanent.canTap()) {
 			// can be in combat later or possibly use a damage ability
 			score = CAN_TAP;
 		} 

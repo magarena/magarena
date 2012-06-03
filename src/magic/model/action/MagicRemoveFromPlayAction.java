@@ -32,7 +32,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 			return;
 		}
 			
-		final int score=permanent.getScore(game)+permanent.getStaticScore(game);
+		final int score=permanent.getScore()+permanent.getStaticScore();
 
 		// Execute trigger here so that full permanent state is preserved.
 		if (toLocation==MagicLocationType.Graveyard) {
@@ -42,7 +42,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 			}
 		}
 		
-		permanent.setLastKnownInfo(game);
+		permanent.setLastKnownInfo();
 		game.executeTrigger(MagicTriggerType.WhenLeavesPlay,permanent);
 		
 		// Equipment
@@ -70,7 +70,7 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 
 		controller.removePermanent(permanent);
 
-		setScore(controller,permanent.getStaticScore(game)-score);
+		setScore(controller,permanent.getStaticScore()-score);
         
         // Trigger
 		removedTriggers = game.removeTriggers(permanent);

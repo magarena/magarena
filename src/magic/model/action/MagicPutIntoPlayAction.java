@@ -19,7 +19,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 	@Override
 	public void doAction(final MagicGame game) {
 		permanent=createPermanent(game);
-		final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore(game);
+		final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore();
 		
 		final MagicPlayer controller=permanent.getController();
 		controller.addPermanent(permanent);
@@ -53,7 +53,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 			}
 		}
 		
-		setScore(controller,permanent.getScore(game)+permanent.getStaticScore(game)+score);
+		setScore(controller,permanent.getScore()+permanent.getStaticScore()+score);
 		
 		game.checkLegendRule(permanent);
 		game.setStateCheckRequired();

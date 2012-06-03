@@ -137,7 +137,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	}
 	
 	@Override
-	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
+	public boolean isValidTarget(final MagicSource source) {
 		return true;
 	}
 

@@ -966,7 +966,7 @@ public class MagicGame {
         }
 
         for (final MagicTarget target : targets) {
-            if (target.isValidTarget(this,source)) {
+            if (target.isValidTarget(source)) {
                 return true;
             }
         }
@@ -984,7 +984,7 @@ public class MagicGame {
         if (targetChoice.isTargeted()) {
             options=new ArrayList<Object>();
             for (final MagicTarget target : targets) {
-                if (target.isValidTarget(this,source)) {
+                if (target.isValidTarget(source)) {
                     options.add(target);
                 }
             }
@@ -1054,7 +1054,7 @@ public class MagicGame {
             final MagicTarget target) {
         
         if (filterTarget(player,targetChoice.getTargetFilter(),target)) {
-            return !targetChoice.isTargeted()||target.isValidTarget(this,source);
+            return !targetChoice.isTargeted()||target.isValidTarget(source);
         }
         return false;
     }

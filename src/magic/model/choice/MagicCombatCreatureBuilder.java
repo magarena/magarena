@@ -46,7 +46,7 @@ public class MagicCombatCreatureBuilder {
 	boolean buildBlockers() {
 		blockers=new HashSet<MagicCombatCreature>();
 		for (final MagicPermanent permanent : defendingPlayer.getPermanents()) {
-			if (permanent.canBlock(game)) {
+			if (permanent.canBlock()) {
 				blockers.add(new MagicCombatCreature(game,permanent));
 			}
 		}
@@ -62,7 +62,7 @@ public class MagicCombatCreatureBuilder {
 	boolean buildAttackers() {
 		attackers=new TreeSet<MagicCombatCreature>(ATTACKER_COMPARATOR);
 		for (final MagicPermanent permanent : attackingPlayer.getPermanents()) {
-			if (permanent.canAttack(game)) {
+			if (permanent.canAttack()) {
 				attackers.add(createAttacker(permanent));
 			}
 		}
@@ -72,7 +72,7 @@ public class MagicCombatCreatureBuilder {
 	boolean buildBlockableAttackers() {
 		attackers=new TreeSet<MagicCombatCreature>(ATTACKER_COMPARATOR);
 		for (final MagicPermanent permanent : attackingPlayer.getPermanents()) {
-			if (permanent.isAttacking()&&permanent.canBeBlocked(game,defendingPlayer)) {
+			if (permanent.isAttacking()&&permanent.canBeBlocked(defendingPlayer)) {
 				final MagicCombatCreature attacker=createAttacker(permanent);
 				if (attacker.candidateBlockers.length>0) {
 					attackers.add(attacker);

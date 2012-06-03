@@ -436,7 +436,7 @@ public class MagicPlayer implements MagicTarget {
         return false;
     }
     
-    public boolean controlsPermanentWithSubType(final MagicSubType subType, final MagicGame game) {
+    public boolean controlsPermanentWithSubType(final MagicSubType subType) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasSubType(subType)) {
                 return true;
@@ -445,7 +445,7 @@ public class MagicPlayer implements MagicTarget {
         return false;        
     }
     
-    public boolean controlsPermanentWithAbility(final MagicAbility ability, final MagicGame game) {
+    public boolean controlsPermanentWithAbility(final MagicAbility ability) {
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasAbility(ability)) {
                 return true;
@@ -497,9 +497,13 @@ public class MagicPlayer implements MagicTarget {
     public boolean isValid() {
         return true;
     }
+
+    public MagicPlayer getOpponent() {
+        return game.getOpponent(this);
+    }
     
     @Override
-    public boolean isValidTarget(final MagicGame game,final MagicSource source) {
+    public boolean isValidTarget(final MagicSource source) {
         final int SPIRIT_OF_THE_HEARTH = CardDefinitions.getCard("Spirit of the Hearth").getIndex();
         return source.getController() == this || getCount(SPIRIT_OF_THE_HEARTH) == 0;
     }

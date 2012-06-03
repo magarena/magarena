@@ -44,7 +44,7 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 			}
 		} else if (permanent.isBlocking()) {
 			score=BLOCKING;
-		} else if (permanent.canTap(game)) {
+		} else if (permanent.canTap()) {
 			score=CAN_TAP;
 		} 
 

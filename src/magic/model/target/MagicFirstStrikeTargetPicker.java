@@ -28,7 +28,7 @@ public class MagicFirstStrikeTargetPicker extends MagicTargetPicker<MagicPermane
 		if (permanent.isBlocked()||permanent.isBlocking()) {
 			return power+permanent.getBlockingCreatures().size()+100;
 		} 
-		if (permanent.canTap(game)) {
+		if (permanent.canTap()) {
 			return power+50;
 		} 
 		return power+1;

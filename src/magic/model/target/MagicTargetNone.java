@@ -28,7 +28,7 @@ public class MagicTargetNone implements MagicTarget {
 	}
 	
 	@Override
-	public boolean isValidTarget(final MagicGame game,final MagicSource source) {
+	public boolean isValidTarget(final MagicSource source) {
 		return false;
 	}
 	

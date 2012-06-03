@@ -16,7 +16,7 @@ public class MagicBounceTargetPicker extends MagicTargetPicker<MagicTarget> {
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 		if (target.isPermanent()) {
 			final MagicPermanent permanent=(MagicPermanent)target;
-			int score=permanent.getScore(game);
+			int score=permanent.getScore();
 			if (permanent.getCardDefinition().getComeIntoPlayTriggers().size()>0) {
 				score-=1000;
 			}

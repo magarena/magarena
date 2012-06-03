@@ -18,7 +18,7 @@ public class MagicMustAttackTargetPicker extends MagicTargetPicker<MagicPermanen
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		if (!permanent.canAttack(game)) {
+		if (!permanent.canAttack()) {
 			return -100;
 		}		
 		if (permanent.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {

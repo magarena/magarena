@@ -80,7 +80,7 @@ public class MagicColorChoice extends MagicChoice {
 		for (final MagicTarget target : targets) {
 			
 			final MagicPermanent permanent=(MagicPermanent)target;
-			int score=permanent.getScore(game);
+			int score=permanent.getScore();
 			if (permanent.getController()==player) {
 				score=-score;
 			}

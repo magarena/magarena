@@ -20,7 +20,7 @@ public class MagicUntapAction extends MagicAction {
 		isTapped=permanent.hasState(MagicPermanentState.Tapped);
 		if (isTapped) {
 			permanent.clearState(MagicPermanentState.Tapped);
-			setScore(permanent.getController(),-ArtificialScoringSystem.getTappedScore(permanent,game));
+			setScore(permanent.getController(),-ArtificialScoringSystem.getTappedScore(permanent));
 			game.setStateCheckRequired();
 		}
 	}

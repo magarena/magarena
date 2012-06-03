@@ -432,7 +432,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return turnAbilityFlags;
     }
     
-    public void setLastKnownInfo(final MagicGame game) {
+    public void setLastKnownInfo() {
         lastKnownPowerToughness = getPowerToughness();
         lastKnownAbilityFlags = getAllAbilityFlags();
         lastKnownSubTypeFlags = getSubTypeFlags();
@@ -465,7 +465,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     @Override
     public boolean hasAbility(final MagicAbility ability) {
-        final MagicGame game = getGame();
         if (!isOnBattlefield()) {
             return ability.hasAbility(lastKnownAbilityFlags);
         }
@@ -481,12 +480,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return ability.hasAbility(flags);
     }
     
-    public int getScore(final MagicGame game) {
-        return fixedScore + ArtificialScoringSystem.getVariablePermanentScore(game,this);
+    public int getScore() {
+        return fixedScore + ArtificialScoringSystem.getVariablePermanentScore(this);
     }
     
-    public int getStaticScore(final MagicGame game) {
-        return cardDefinition.getStaticType().getScore(game,this);
+    public int getStaticScore() {
+        return cardDefinition.getStaticType().getScore(this);
     }
     
     void setCached(final boolean aCached) {
@@ -523,7 +522,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     // Tap symbol.
-    public boolean canTap(final MagicGame game) {
+    public boolean canTap() {
         return !hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
              !isCreature() || 
@@ -532,7 +531,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     // Untap symbol.
-    public boolean canUntap(final MagicGame game) {
+    public boolean canUntap() {
         return hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
              !isCreature() || 
@@ -661,14 +660,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
             if (!enchantedCreature.isValid() || 
                 !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
-                enchantedCreature.hasProtectionFrom(game,this)) {
+                enchantedCreature.hasProtectionFrom(this)) {
                 game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
                 actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             }
         } 
         
         if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
-            if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(game,this)) {
+            if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(this)) {
                 actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
             }
         }
@@ -685,7 +684,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
     }
     
-    private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source, final MagicGame game) {
+    private static boolean hasProtectionFrom(final long abilityFlags,final MagicSource source) {
         
         // Check if there is a protection ability.
         if ((abilityFlags&MagicAbility.PROTECTION_FLAGS)==0) {
@@ -755,14 +754,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return false;
     }
     
-    public boolean hasProtectionFrom(final MagicGame game,final MagicSource source) {
+    public boolean hasProtectionFrom(final MagicSource source) {
         final long abilityFlags=getAllAbilityFlags();
-        return hasProtectionFrom(abilityFlags,source,game);
+        return hasProtectionFrom(abilityFlags,source);
     }
     
-    public boolean canAttack(final MagicGame game) {
+    public boolean canAttack() {
         if (!isCreature() || 
-            !canTap(game) || 
+            !canTap() || 
             hasState(MagicPermanentState.ExcludeFromCombat) ||
             hasState(MagicPermanentState.CannotAttack)) {
             return false;
@@ -771,7 +770,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !MagicAbility.CannotAttackOrBlock.hasAbility(flags) && !MagicAbility.Defender.hasAbility(flags);
     }
     
-    public boolean canBeBlocked(final MagicGame game,final MagicPlayer player) {
+    public boolean canBeBlocked(final MagicPlayer player) {
         final long flags=getAllAbilityFlags();
         
         // Unblockable
@@ -782,7 +781,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         // Landwalk
         for (final MagicColor color : MagicColor.values()) {
             if (color.getLandwalkAbility().hasAbility(flags) && 
-                player.controlsPermanentWithSubType(color.getLandSubType(),game)) {
+                player.controlsPermanentWithSubType(color.getLandSubType())) {
                 return false;
             }
         }
@@ -790,7 +789,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return true;
     }
     
-    public boolean canBlock(final MagicGame game) {
+    public boolean canBlock() {
         if (!isCreature()||isTapped()||hasState(MagicPermanentState.ExcludeFromCombat)) {
             return false;
         }
@@ -798,7 +797,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !MagicAbility.CannotAttackOrBlock.hasAbility(flags)&&!MagicAbility.CannotBlock.hasAbility(flags);
     }
     
-    public boolean canBlock(final MagicGame game,final MagicPermanent attacker) {
+    public boolean canBlock(final MagicPermanent attacker) {
         final long attackerFlags=attacker.getAllAbilityFlags();
 
         // Fear and Intimidate
@@ -865,7 +864,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
              
         // Protection
-        return !hasProtectionFrom(attackerFlags,this,game);
+        return !hasProtectionFrom(attackerFlags,this);
     }
         
     public MagicPermanent getEquippedCreature() {
@@ -985,7 +984,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }    
     
     @Override
-    public boolean isValidTarget(final MagicGame game,final MagicSource source) {
+    public boolean isValidTarget(final MagicSource source) {
         final long flags=getAllAbilityFlags();
 
         // Can't be the target of spells or abilities.
@@ -1009,7 +1008,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
 
         // Protection.
-        return !hasProtectionFrom(flags,source,game);
+        return !hasProtectionFrom(flags,source);
     }
 
     @Override
@@ -1051,7 +1050,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return false;
     }
     
-    public ImageIcon getIcon(final MagicGame game) {
+    public ImageIcon getIcon() {
         if (isAttacking()) {
             return IconImages.ATTACK;
         } 

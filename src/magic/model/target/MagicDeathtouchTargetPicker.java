@@ -34,7 +34,7 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
 		} else if (permanent.isBlocking()) {
 			// good chance to destroy attacker
 			score = BLOCKING;
-		} else if (permanent.canTap(game)) {
+		} else if (permanent.canTap()) {
 			// can be in combat later or possibly use a damage ability
 			score = CAN_TAP;
 		} 

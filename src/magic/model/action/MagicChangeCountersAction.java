@@ -24,10 +24,10 @@ public class MagicChangeCountersAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		final int oldScore=hasScore?permanent.getScore(game):0;
+		final int oldScore=hasScore?permanent.getScore():0;
 		permanent.changeCounters(counterType,amount);
 		if (hasScore) {
-			setScore(permanent.getController(),permanent.getScore(game)-oldScore);
+			setScore(permanent.getController(),permanent.getScore()-oldScore);
 		}
 		game.setStateCheckRequired();
 	}

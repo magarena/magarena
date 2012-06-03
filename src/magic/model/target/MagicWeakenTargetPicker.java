@@ -31,7 +31,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 		final int lethalToughness=pt.getPositiveToughness()-permanent.getDamage();
 		if (lethalToughness<=amountToughness) {
-			return permanent.getScore(game)<<12;
+			return permanent.getScore()<<12;
 		}		
 
 		int score=0;
@@ -45,7 +45,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 			}
 		} else if (permanent.isBlocking()) {
 			score=BLOCKING;
-		} else if (permanent.canTap(game)) {
+		} else if (permanent.canTap()) {
 			score=CAN_TAP;
 		}
 

@@ -25,7 +25,7 @@ public class MagicCombatCreature {
 	
 	MagicCombatCreature(final MagicGame game,final MagicPermanent permanent) {
 		this.permanent = permanent;
-		this.score = permanent.getScore(game);
+		this.score = permanent.getScore();
 		final MagicPowerToughness pt = permanent.getPowerToughness();
 		lethalDamage = permanent.getLethalDamage(pt.toughness());
 		flags = permanent.getAllAbilityFlags();
@@ -55,7 +55,7 @@ public class MagicCombatCreature {
 		final SortedSet<MagicCombatCreature> candidateBlockersSet = 
             new TreeSet<MagicCombatCreature>(new BlockerComparator(this));
 		for (final MagicCombatCreature blocker : blockers) {
-			if (blocker.permanent.canBlock(game,permanent)) {
+			if (blocker.permanent.canBlock(permanent)) {
 				candidateBlockersSet.add(blocker);
 			}
 		}			

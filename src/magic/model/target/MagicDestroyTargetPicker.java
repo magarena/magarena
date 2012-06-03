@@ -21,7 +21,7 @@ public class MagicDestroyTargetPicker extends MagicTargetPicker<MagicPermanent> 
 		if (permanent.isRegenerated()&&!noRegeneration) {
 			return 0;
 		}
-		final int score=permanent.getScore(game);
+		final int score=permanent.getScore();
 		return permanent.getController()==player?-score:score;
 	}
 }

@@ -28,8 +28,8 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		// attacking
 		if (game.getTurnPlayer() == player) {
 			// no score for not being able to attack or being unblockable
-			if (!permanent.canAttack(game) ||
-				!permanent.canBeBlocked(game,game.getOpponent(player))) {
+			if (!permanent.canAttack() ||
+				!permanent.canBeBlocked(game.getOpponent(player))) {
 				return 0;
 			}
 		}
@@ -37,8 +37,8 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		else {
 			// no score for not being able to block
 			// or opponent has no shadow creatures
-			if (!permanent.canBlock(game) ||
-				!game.getOpponent(player).controlsPermanentWithAbility(MagicAbility.Shadow,game)) {
+			if (!permanent.canBlock() ||
+				!game.getOpponent(player).controlsPermanentWithAbility(MagicAbility.Shadow)) {
 				return 0;
 			}
 		}
