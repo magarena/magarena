@@ -140,7 +140,7 @@ public class PermanentViewerInfo {
 		}
 		
 		// Colors
-		final int colorFlags=permanent.getColorFlags(game);
+		final int colorFlags=permanent.getColorFlags();
 		for (final MagicColor color : MagicColor.values()) {
 			
 			if (color.hasColor(colorFlags)) {			

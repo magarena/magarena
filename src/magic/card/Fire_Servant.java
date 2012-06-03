@@ -14,7 +14,7 @@ public class Fire_Servant {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicSource source=damage.getSource();
 			if (source.getController()==permanent.getController()&&source.isSpell()&&
-				MagicColor.Red.hasColor(source.getColorFlags(game))&&source.getCardDefinition().isSpell()) {
+				MagicColor.Red.hasColor(source.getColorFlags())&&source.getCardDefinition().isSpell()) {
 				// Generates no event or action.
 				damage.setAmount(damage.getAmount()<<1);
 			}			

@@ -51,7 +51,7 @@ public class Rith__the_Awakener {
                     game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
 				for (final MagicTarget target : targets) {
 					final MagicPermanent permanent=(MagicPermanent)target;
-					if (color.hasColor(permanent.getColorFlags(game))) {
+					if (color.hasColor(permanent.getColorFlags())) {
 						game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Saproling")));
 					}
 				}

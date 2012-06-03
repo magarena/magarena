@@ -286,7 +286,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     @Override
-    public int getColorFlags(final MagicGame game) {
+    public int getColorFlags() {
         // Check if cached.
         if (cached) {
             return cachedColorFlags;
@@ -298,7 +298,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         
         int flags = cardDefinition.getColorFlags();
 
-        flags = MagicLayer.getColorFlags(game, this, flags);
+        flags = MagicLayer.getColorFlags(getGame(), this, flags);
         
         return flags;
     }
@@ -436,7 +436,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         lastKnownAbilityFlags = getAllAbilityFlags(game);
         lastKnownSubTypeFlags = getSubTypeFlags(game);
         lastKnownTypeFlags = getTypeFlags(game);
-        lastKnownColorFlags = getColorFlags(game);
+        lastKnownColorFlags = getColorFlags();
     }
     
     public long getAllAbilityFlags(final MagicGame game,final boolean turn) {
@@ -493,7 +493,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             cachedTurnAbilityFlags=getAllAbilityFlags(game,true);
             cachedSubTypeFlags=getSubTypeFlags(game);
             cachedTypeFlags=getTypeFlags(game);
-            cachedColorFlags=getColorFlags(game);
+            cachedColorFlags=getColorFlags();
         } 
         this.cached=aCached;
     }
@@ -694,12 +694,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         if (//source.getColoredType() == MagicColoredType.MonoColored &&
             //added to fix bug with Raging Raving creature not able to block
             //creature with protection from monocolored
-            MagicColor.isMono(source.getColorFlags(game)) &&
+            MagicColor.isMono(source.getColorFlags()) &&
             MagicAbility.ProtectionFromMonoColored.hasAbility(abilityFlags)) {
             return true;
         }
         
-        final int colorFlags=source.getColorFlags(game);
+        final int colorFlags=source.getColorFlags();
         if (colorFlags>0) {
             // From all colors.
             if (MagicAbility.ProtectionFromAllColors.hasAbility(abilityFlags)) {
@@ -801,11 +801,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
         // Fear and Intimidate
         if (!isArtifact()) {
-            final int colorFlags=getColorFlags(game);
+            final int colorFlags=getColorFlags();
             if (MagicAbility.Fear.hasAbility(attackerFlags)&&!MagicColor.Black.hasColor(colorFlags)) {
                 return false;
             }
-            if (MagicAbility.Intimidate.hasAbility(attackerFlags)&&((colorFlags&attacker.getColorFlags(game))==0)) {
+            if (MagicAbility.Intimidate.hasAbility(attackerFlags)&&((colorFlags&attacker.getColorFlags())==0)) {
                 return false;
             }
         }
@@ -856,7 +856,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
         // Can't be blocked by a color
         for (final MagicColor color : MagicColor.values()) {
-            if (color.hasColor(this.getColorFlags(game)) &&
+            if (color.hasColor(this.getColorFlags()) &&
                 color.getCannotBeBlockedByAbility().hasAbility(attackerFlags)) {
                 return false;
             }

@@ -16,7 +16,7 @@ public class Kederekt_Parasite {
 	
 	private static boolean isValid(final MagicPermanent owner, final MagicGame game) {
 		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-			if (permanent != owner && MagicColor.Red.hasColor(permanent.getColorFlags(game))) {
+			if (permanent != owner && MagicColor.Red.hasColor(permanent.getColorFlags())) {
 				return true;
 			}
 		}

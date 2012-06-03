@@ -18,7 +18,7 @@ public class Angel_s_Feather {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player = permanent.getController();
 			final MagicCard card = data.getCard();
-			return (MagicColor.White.hasColor(card.getColorFlags(game))) ?
+			return (MagicColor.White.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
                         permanent,
                         player,

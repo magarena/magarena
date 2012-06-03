@@ -167,7 +167,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	}
 
 	@Override
-	public int getColorFlags(final MagicGame game) {
+	public int getColorFlags() {
 		return getCardDefinition().getColorFlags();
 	}
 	

@@ -19,7 +19,7 @@ public class Nettle_Sentinel {
 			final MagicPlayer player = permanent.getController();
 			final MagicCard card = data.getCard();
 			return (card.getOwner() == player &&
-					MagicColor.Green.hasColor(card.getColorFlags(game)) &&
+					MagicColor.Green.hasColor(card.getColorFlags()) &&
 					permanent.isTapped()) ?
                 new MagicEvent(
                         permanent,

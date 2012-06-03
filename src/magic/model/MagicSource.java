@@ -13,6 +13,6 @@ public interface MagicSource extends MagicCopyable, MagicMappable {
 	String              getName();
 	MagicPlayer         getController();
 	MagicColoredType    getColoredType();
-	int                 getColorFlags(final MagicGame game);
+	int                 getColorFlags();
 	Collection<MagicActivation> getActivations();
 }

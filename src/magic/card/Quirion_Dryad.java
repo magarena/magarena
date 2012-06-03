@@ -18,10 +18,10 @@ public class Quirion_Dryad {
 			final MagicPlayer player = permanent.getController();
 			final MagicCard card = data.getCard();
 			return (card.getOwner() == player &&
-					(MagicColor.White.hasColor(card.getColorFlags(game)) ||
-					MagicColor.Blue.hasColor(card.getColorFlags(game)) ||
-					MagicColor.Black.hasColor(card.getColorFlags(game)) ||
-					MagicColor.Red.hasColor(card.getColorFlags(game))) ) ?
+					(MagicColor.White.hasColor(card.getColorFlags()) ||
+					MagicColor.Blue.hasColor(card.getColorFlags()) ||
+					MagicColor.Black.hasColor(card.getColorFlags()) ||
+					MagicColor.Red.hasColor(card.getColorFlags())) ) ?
                 new MagicEvent(
                         permanent,
                         player,

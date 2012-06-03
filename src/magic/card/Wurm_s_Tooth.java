@@ -19,7 +19,7 @@ public class Wurm_s_Tooth {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player = permanent.getController();
 			final MagicCard card = data.getCard();
-			return (MagicColor.Green.hasColor(card.getColorFlags(game))) ?
+			return (MagicColor.Green.hasColor(card.getColorFlags())) ?
 					new MagicEvent(
 	                        permanent,
 	                        player,

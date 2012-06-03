@@ -11,7 +11,7 @@ import magic.model.mstatic.MagicStatic;
 public class Bant_Sureblade {
 	static boolean isValid(final MagicPermanent owner, final MagicGame game) {
 		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-			if (permanent != owner && MagicColor.isMulti(permanent.getColorFlags(game))) {
+			if (permanent != owner && MagicColor.isMulti(permanent.getColorFlags())) {
 				return true;
 			}
 		}

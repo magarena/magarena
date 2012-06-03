@@ -19,7 +19,7 @@ public class Demon_s_Horn {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
 			final MagicPlayer player = permanent.getController();
 			final MagicCard card = data.getCard();
-			return (MagicColor.Black.hasColor(card.getColorFlags(game))) ?
+			return (MagicColor.Black.hasColor(card.getColorFlags())) ?
 					new MagicEvent(
 	                        permanent,
 	                        player,
