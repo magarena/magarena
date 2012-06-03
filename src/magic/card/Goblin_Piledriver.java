@@ -38,7 +38,7 @@ public class Goblin_Piledriver {
 			for (final MagicTarget target : targets) {
 				if (creature!=target) {
 					final MagicPermanent attacker=(MagicPermanent)target;
-					if (attacker.hasSubType(MagicSubType.Goblin,game)) {
+					if (attacker.hasSubType(MagicSubType.Goblin)) {
 						power+=2;
 					}
 				}

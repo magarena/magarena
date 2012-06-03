@@ -32,7 +32,7 @@ public class Mage_Slayer {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
-			final MagicDamage damage=new MagicDamage(permanent,(MagicTarget)data[1],permanent.getPower(game),false);
+			final MagicDamage damage=new MagicDamage(permanent,(MagicTarget)data[1],permanent.getPower(),false);
 			game.doAction(new MagicDealDamageAction(damage));
 		}
     };

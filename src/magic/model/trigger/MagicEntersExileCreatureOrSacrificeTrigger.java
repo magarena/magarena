@@ -42,7 +42,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
                 final MagicPermanent creature = (MagicPermanent)target;
                 boolean hasSubType = subtypes.length == 0;
                 for (final MagicSubType subtype : subtypes) {
-                    hasSubType |= creature.hasSubType(subtype,game);
+                    hasSubType |= creature.hasSubType(subtype);
                 }
                 return hasSubType && 
                     creature.isCreature() && 

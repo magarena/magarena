@@ -25,7 +25,7 @@ public class Doomgape {
             final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final int toughness=creature.getToughness(game);
+                    final int toughness=creature.getToughness();
                     game.doAction(new MagicSacrificeAction(creature));
                     game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
                 }
@@ -55,7 +55,7 @@ public class Doomgape {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player=(MagicPlayer)data[1];
-			if (player.controlsPermanentWithType(MagicType.Creature,game)) {
+			if (player.controlsPermanentWithType(MagicType.Creature)) {
 				game.addEvent(new MagicEvent(
                     (MagicPermanent)data[0],
                     player,

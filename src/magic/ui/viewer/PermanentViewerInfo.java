@@ -78,14 +78,14 @@ public class PermanentViewerInfo {
 		name=permanent.getName();
 		icon=permanent.getIcon(game);
 		index=permanent.getCard().getImageIndex();
-		powerToughness=getPowerToughness(game,permanent);
-		abilityFlags=permanent.getAllAbilityFlags(game);
+		powerToughness=getPowerToughness(permanent);
+		abilityFlags=permanent.getAllAbilityFlags();
 		chargeCounters=permanent.getCounters(MagicCounterType.Charge);
 		text=getText(game,permanent,abilityFlags);
 		damage=permanent.getDamage();
-		position=getPosition(permanent,game);
+		position=getPosition(permanent);
 		visible=permanent.getController()==game.getVisiblePlayer();
-		basic=permanent.hasType(MagicType.Basic,game);
+		basic=permanent.hasType(MagicType.Basic);
 		mana=permanent.producesMana();
 		creature=permanent.isCreature();
 		artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature().isInvalid());
@@ -100,15 +100,15 @@ public class PermanentViewerInfo {
 		lowered=attacking||
             (permanent.getEquippedCreature().isValid() && permanent.getEquippedCreature().isAttacking())||
 		  	(permanent.getEnchantedCreature().isValid() && permanent.getEnchantedCreature().isAttacking());
-		manaColor=getManaColor(permanent,game);
+		manaColor=getManaColor(permanent);
 		blockers=getBlockers(game,permanent);
 		linked=getLinked(game,permanent);
 		blockedName = (blocking) ? permanent.getBlockedName() : permanent.getName() + permanent.getId();
 	}
 	
-	private static String getPowerToughness(final MagicGame game,final MagicPermanent permanent) {
+	private static String getPowerToughness(final MagicPermanent permanent) {
 		if (permanent.isCreature()) {
-			return permanent.getPowerToughness(game).toString();
+			return permanent.getPowerToughness().toString();
 		} else { 
     		return "";
         }
@@ -175,7 +175,7 @@ public class PermanentViewerInfo {
 
 		// Sub types.
 		if (!MagicAbility.Changeling.hasAbility(abilityFlags)) {
-			final EnumSet<MagicSubType> subTypeFlags=permanent.getSubTypeFlags(game);
+			final EnumSet<MagicSubType> subTypeFlags=permanent.getSubTypeFlags();
 			if (subTypeFlags.equals(MagicSubType.ALL_CREATURES)) {
 				if (first) {
 					first = false;
@@ -223,7 +223,7 @@ public class PermanentViewerInfo {
 		return textBuffer.toString();
 	}	
 	
-	private static int getPosition(final MagicPermanent permanent, final MagicGame game) {
+	private static int getPosition(final MagicPermanent permanent) {
 		if (permanent.isCreature()) {
 			return 2;
 		} else if (permanent.isLand()) {
@@ -244,8 +244,8 @@ public class PermanentViewerInfo {
 		return false;
 	}
 	
-	private static MagicColor getManaColor(final MagicPermanent permanent, final MagicGame game) {
-		final EnumSet<MagicSubType> flags=permanent.getSubTypeFlags(game);
+	private static MagicColor getManaColor(final MagicPermanent permanent) {
+		final EnumSet<MagicSubType> flags=permanent.getSubTypeFlags();
 		for (final MagicColor color : MagicColor.values()) {
 			if (color.getLandSubType().hasSubType(flags)) {
 				return color;

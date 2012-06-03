@@ -17,7 +17,7 @@ public class Champion_of_the_Parish {
 			return (otherPermanent != permanent &&
 					otherPermanent.isCreature() && 
                     otherPermanent.getController() == player &&
-                    otherPermanent.hasSubType(MagicSubType.Human,game)) ?
+                    otherPermanent.hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
                         permanent,
                         player,

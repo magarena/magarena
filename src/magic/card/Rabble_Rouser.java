@@ -54,7 +54,7 @@ public class Rabble_Rouser {
 			for (final MagicTarget target : targets) {
 				game.doAction(new MagicChangeTurnPTAction(
 						(MagicPermanent)target,
-						permanent.getPower(game),
+						permanent.getPower(),
 						0));
 			}
 		}

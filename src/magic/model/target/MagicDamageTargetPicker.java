@@ -51,7 +51,7 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
             if (actualAmount<=0) {
                 return 0;
             }
-            final int leftToughness=permanent.getToughness(game)-permanent.getDamage()-actualAmount;
+            final int leftToughness=permanent.getToughness()-permanent.getDamage()-actualAmount;
             final int score=leftToughness<=0?permanent.getScore(game):20-leftToughness;
             return permanent.getController()==player?-score:score;
         } else {

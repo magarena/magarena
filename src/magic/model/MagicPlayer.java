@@ -364,7 +364,7 @@ public class MagicPlayer implements MagicTarget {
     public int getNrOfPermanentsWithType(final MagicType type, final MagicGame game) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasType(type,game)) {
+            if (permanent.hasType(type)) {
                 count++;
             }
         }
@@ -374,16 +374,16 @@ public class MagicPlayer implements MagicTarget {
     public int getNrOfPermanentsWithSubType(final MagicSubType subType, final MagicGame game) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasSubType(subType, game)) {
+            if (permanent.hasSubType(subType)) {
                 count++;
             }
         }
         return count;
     }
     
-    public void setCached(final MagicGame game,final boolean cached) {
+    public void setCached(final boolean cached) {
         for (final MagicPermanent permanent : permanents) {
-            permanent.setCached(game,cached);
+            permanent.setCached(cached);
         }
     }
     
@@ -427,9 +427,9 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
     
-    public boolean controlsPermanentWithType(final MagicType type, final MagicGame game) {
+    public boolean controlsPermanentWithType(final MagicType type) {
         for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasType(type,game)) {
+            if (permanent.hasType(type)) {
                 return true;
             }
         }
@@ -438,7 +438,7 @@ public class MagicPlayer implements MagicTarget {
     
     public boolean controlsPermanentWithSubType(final MagicSubType subType, final MagicGame game) {
         for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasSubType(subType,game)) {
+            if (permanent.hasSubType(subType)) {
                 return true;
             }
         }

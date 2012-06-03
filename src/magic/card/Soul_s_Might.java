@@ -40,7 +40,7 @@ public class Soul_s_Might {
                     game.doAction(new MagicChangeCountersAction(
                                 creature,
                                 MagicCounterType.PlusOne,
-                                creature.getPower(game),
+                                creature.getPower(),
                                 true));
                 }
 			});

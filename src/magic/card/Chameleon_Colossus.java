@@ -38,7 +38,7 @@ public class Chameleon_Colossus {
                 final Object[] data,
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
-			final int power=permanent.getPower(game);
+			final int power=permanent.getPower();
 			game.doAction(new MagicChangeTurnPTAction(permanent,power,power));
 		}
 	};

@@ -14,7 +14,7 @@ public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanen
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		if (permanent.canRegenerate()) {
-			final long flags=permanent.getAllAbilityFlags(game);
+			final long flags=permanent.getAllAbilityFlags();
 			if (MagicAbility.Persist.hasAbility(flags)||MagicAbility.Indestructible.hasAbility(flags)) {
 				return permanent.getDamage()+1;
 			}

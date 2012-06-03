@@ -39,7 +39,7 @@ public class Engulfing_Slagwurm {
 				game.doAction(new MagicDestroyAction(blocker));
 				game.doAction(new MagicChangeLifeAction(
 						(MagicPlayer)data[1],
-						blocker.getToughness(game)));
+						blocker.getToughness()));
         	}
 		}
     };
@@ -67,7 +67,7 @@ public class Engulfing_Slagwurm {
 			game.doAction(new MagicDestroyAction(blocker));
 			game.doAction(new MagicChangeLifeAction(
 					(MagicPlayer)data[1],
-					blocker.getToughness(game)));
+					blocker.getToughness()));
 		}
     };
 }

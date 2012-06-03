@@ -12,7 +12,7 @@ public class MagicPowerTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		return permanent.getPower(game);
+		return permanent.getPower();
 	}
 	
 	public static MagicPowerTargetPicker getInstance() {

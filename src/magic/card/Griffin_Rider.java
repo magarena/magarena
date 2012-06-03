@@ -11,7 +11,7 @@ import magic.model.mstatic.MagicStatic;
 public class Griffin_Rider {
 	private static boolean isValid(final MagicPermanent owner,final MagicGame game) {
 		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-			if (permanent != owner && permanent.hasSubType(MagicSubType.Griffin,game)) {
+			if (permanent != owner && permanent.hasSubType(MagicSubType.Griffin)) {
 				return true;
 			}
 		}

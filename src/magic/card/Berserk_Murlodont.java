@@ -14,7 +14,7 @@ public class Berserk_Murlodont {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
 			final MagicPlayer player = permanent.getController();
             if (player == data.getController() &&
-            	data.hasSubType(MagicSubType.Beast,game)) {
+            	data.hasSubType(MagicSubType.Beast)) {
             	final int amount = data.getBlockingCreatures().size();
             	return new MagicEvent(
             			permanent,

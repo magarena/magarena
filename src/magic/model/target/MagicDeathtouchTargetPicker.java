@@ -19,7 +19,7 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		final long flags = permanent.getAllAbilityFlags(game);
+		final long flags = permanent.getAllAbilityFlags();
 		int score = 0;
 
 		// no score for ability overlap or not being able to deal combat damage
@@ -45,7 +45,7 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
 			score += FIRST_STRIKE;
 		}
 		
-		return permanent.getPower(game) + score;
+		return permanent.getPower() + score;
 	}
 	
 	public static MagicDeathtouchTargetPicker getInstance() {

@@ -27,7 +27,7 @@ public class Archon_of_Redemption {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[1];
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower(game)));
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
 		}		
     };
 
@@ -54,7 +54,7 @@ public class Archon_of_Redemption {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPermanent permanent=(MagicPermanent)data[1];
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower(game)));
+			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
 		}		
     };
 }

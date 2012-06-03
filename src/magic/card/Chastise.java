@@ -39,7 +39,7 @@ public class Chastise {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final int power=creature.getPower(game);
+                    final int power=creature.getPower();
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],power));
                 }

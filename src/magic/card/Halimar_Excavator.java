@@ -16,7 +16,7 @@ public class Halimar_Excavator {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
 			return (otherPermanent.getController() == player &&
-                    otherPermanent.hasSubType(MagicSubType.Ally,game)) ?
+                    otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                         permanent,
                         player,

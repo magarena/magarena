@@ -58,7 +58,7 @@ public class Brion_Stoutarm {
 			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicPermanent sacrificed=(MagicPermanent)data[1];
-                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],player,sacrificed.getPower(game),false);
+                    final MagicDamage damage=new MagicDamage((MagicPermanent)data[0],player,sacrificed.getPower(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
 			});

@@ -36,7 +36,7 @@ public class Soul_s_Majesty {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],creature.getPower(game)));
+                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],creature.getPower()));
                 }
 			});
 		}

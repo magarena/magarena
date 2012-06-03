@@ -18,7 +18,7 @@ public class Venom {
             if (creature == enchantedCreature) {
             	final MagicPermanentList plist = new MagicPermanentList();
             	for (final MagicPermanent blocker : enchantedCreature.getBlockingCreatures()) {
-            		if (!blocker.hasSubType(MagicSubType.Wall,game)) {
+            		if (!blocker.hasSubType(MagicSubType.Wall)) {
             			plist.add(blocker);
             		}
             	}
@@ -56,7 +56,7 @@ public class Venom {
             final MagicPermanent blocked = enchantedCreature.getBlockedCreature();
 			return (enchantedCreature == data &&
 					blocked.isValid() &&
-					!blocked.hasSubType(MagicSubType.Wall,game)) ?
+					!blocked.hasSubType(MagicSubType.Wall)) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),

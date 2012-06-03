@@ -19,7 +19,7 @@ public class Soltari_Visionary {
 			if (damage.getSource() == permanent &&
 				damage.getTarget().isPlayer()) {
 				final MagicPlayer target = (MagicPlayer)damage.getTarget();
-				if (target.controlsPermanentWithType(MagicType.Enchantment,game)) {
+				if (target.controlsPermanentWithType(MagicType.Enchantment)) {
 					final MagicPlayer player = permanent.getController();
 					return new MagicEvent(
                         permanent,

@@ -27,7 +27,7 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		final MagicPowerToughness pt=permanent.getPowerToughness(game);
+		final MagicPowerToughness pt=permanent.getPowerToughness();
 
 		final int lethalToughness=pt.getPositiveToughness()-permanent.getDamage();
 		if (lethalToughness<=amountToughness) {

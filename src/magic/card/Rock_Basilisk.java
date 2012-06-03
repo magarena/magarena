@@ -17,7 +17,7 @@ public class Rock_Basilisk {
             if (creature == permanent) {
             	final MagicPermanentList plist = new MagicPermanentList();
             	for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-            		if (!blocker.hasSubType(MagicSubType.Wall,game)) {
+            		if (!blocker.hasSubType(MagicSubType.Wall)) {
             			plist.add(blocker);
             		}
             	}
@@ -54,7 +54,7 @@ public class Rock_Basilisk {
             final MagicPermanent blocked = permanent.getBlockedCreature();
 			return (permanent == data &&
 					blocked.isValid() &&
-					!blocked.hasSubType(MagicSubType.Wall,game)) ?
+					!blocked.hasSubType(MagicSubType.Wall)) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),

@@ -51,7 +51,7 @@ public class Alpha_Brawl {
     					final MagicDamage damage = new MagicDamage(
     							permanent,
     							creature,
-    							permanent.getPower(game),
+    							permanent.getPower(),
     							false);
     					game.doAction(new MagicDealDamageAction(damage));
     				}
@@ -60,7 +60,7 @@ public class Alpha_Brawl {
     					final MagicDamage damage = new MagicDamage(
     							source,
     							permanent,
-    							source.getPower(game),
+    							source.getPower(),
     							false);
     					game.doAction(new MagicDealDamageAction(damage));
     				}

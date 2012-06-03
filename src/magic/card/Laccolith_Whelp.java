@@ -27,7 +27,7 @@ public class Laccolith_Whelp {
     	                            player + " may have " + permanent + " deal " +
     	                            "damage equal to its power to target creature.",
     	                            MagicTargetChoice.NEG_TARGET_CREATURE),
-    	                    new MagicDamageTargetPicker(permanent.getPower(game)),
+    	                    new MagicDamageTargetPicker(permanent.getPower()),
                             new Object[]{permanent},
                             this,
                             player + " may$ have " + permanent + " deal " +
@@ -49,7 +49,7 @@ public class Laccolith_Whelp {
                     	final MagicDamage damage = new MagicDamage(
                     			permanent,
                     			creature,
-                    			permanent.getPower(game),
+                    			permanent.getPower(),
                     			false);
 	                    game.doAction(new MagicDealDamageAction(damage));
 	                    game.doAction(new MagicChangeStateAction(

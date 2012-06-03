@@ -49,7 +49,7 @@ public class Hateflayer {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicPermanent permanent=(MagicPermanent)data[0];
-                    final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower(game),false);
+                    final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
 			});

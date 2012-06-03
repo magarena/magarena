@@ -40,7 +40,7 @@ public class Swords_to_Plowshares {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeLifeAction(
                                 creature.getController(),
-                                creature.getPower(game)));
+                                creature.getPower()));
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
                 }
 			});

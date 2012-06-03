@@ -22,7 +22,7 @@ public class Warstorm_Surge {
                         permanent,
                         player,
                         MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
-                        new MagicDamageTargetPicker(otherPermanent.getPower(game)),
+                        new MagicDamageTargetPicker(otherPermanent.getPower()),
                         new Object[]{otherPermanent},
                         this,
                         "Whenever a creature enters the battlefield under your control, " +
@@ -35,7 +35,7 @@ public class Warstorm_Surge {
 			final MagicPermanent permanent = (MagicPermanent)data[0];
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage(permanent,target,permanent.getPower(game),false);
+                    final MagicDamage damage = new MagicDamage(permanent,target,permanent.getPower(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
 			});

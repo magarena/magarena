@@ -34,7 +34,7 @@ public class Call_to_the_Grave {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player = (MagicPlayer)data[1];
-			if (player.controlsPermanentWithType(MagicType.Creature,game)) {
+			if (player.controlsPermanentWithType(MagicType.Creature)) {
 				game.addEvent(new MagicSacrificePermanentEvent(
                             (MagicPermanent)data[0],
                             player,

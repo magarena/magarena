@@ -15,7 +15,7 @@ public class Kresh_the_Bloodbraided {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
-			final int power = otherPermanent.getPower(game);
+			final int power = otherPermanent.getPower();
 			return (permanent != otherPermanent &&
 					otherPermanent.isCreature()) ?
 				new MagicEvent(

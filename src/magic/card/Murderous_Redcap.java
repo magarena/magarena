@@ -17,7 +17,7 @@ public class Murderous_Redcap {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			final int power=permanent.getPower(game);
+			final int power=permanent.getPower();
 			return new MagicEvent(
                     permanent,
                     player,
@@ -33,7 +33,7 @@ public class Murderous_Redcap {
 			final MagicPermanent permanent=(MagicPermanent)data[0];
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-                    final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower(game),false);
+                    final MagicDamage damage=new MagicDamage(permanent,target,permanent.getPower(),false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
 			});

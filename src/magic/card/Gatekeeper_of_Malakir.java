@@ -29,7 +29,7 @@ public class Gatekeeper_of_Malakir {
             final Object[] choiceResults) {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
-                    if (opponent.controlsPermanentWithType(MagicType.Creature,game)) {
+                    if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                         game.addEvent(new MagicSacrificePermanentEvent(
                             event.getSource(),
                             game.getOpponent(event.getPlayer()),

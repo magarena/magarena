@@ -27,7 +27,7 @@ public class MagicAllyGrowTrigger extends MagicWhenOtherComesIntoPlayTrigger {
 			final MagicPermanent otherPermanent) {
         final MagicPlayer player = permanent.getController();
         return (otherPermanent.getController() == player &&
-                otherPermanent.hasSubType(MagicSubType.Ally,game)) ?
+                otherPermanent.hasSubType(MagicSubType.Ally)) ?
             new MagicEvent(
                     permanent,
                     player,

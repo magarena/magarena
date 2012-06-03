@@ -12,7 +12,7 @@ public class Night_Revelers {
         @Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
         	for (final MagicPermanent target : game.getOpponent(permanent.getController()).getPermanents()) {
-    			if (target != permanent && target.hasSubType(MagicSubType.Human,game)) {
+    			if (target != permanent && target.hasSubType(MagicSubType.Human)) {
     				return flags | MagicAbility.Haste.getMask();
     			}
     		}

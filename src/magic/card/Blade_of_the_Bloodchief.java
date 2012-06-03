@@ -13,7 +13,7 @@ public class Blade_of_the_Bloodchief {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPermanent equippedCreature = permanent.getEquippedCreature();
-			final boolean isVampire = equippedCreature.hasSubType(MagicSubType.Vampire, game);
+			final boolean isVampire = equippedCreature.hasSubType(MagicSubType.Vampire);
 			return (equippedCreature != MagicPermanent.NONE && otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,

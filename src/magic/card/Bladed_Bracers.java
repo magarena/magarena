@@ -25,8 +25,8 @@ public class Bladed_Bracers {
 				final MagicPermanent source,
 				final MagicPermanent target) {
 			return target == source.getEquippedCreature() &&
-					(source.getEquippedCreature().hasSubType(MagicSubType.Human,game) ||
-					source.getEquippedCreature().hasSubType(MagicSubType.Angel,game));
+					(source.getEquippedCreature().hasSubType(MagicSubType.Human) ||
+					source.getEquippedCreature().hasSubType(MagicSubType.Angel));
 		}
 	};
 }

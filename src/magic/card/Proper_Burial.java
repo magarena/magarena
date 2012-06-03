@@ -12,7 +12,7 @@ public class Proper_Burial {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
-			final int toughness = otherPermanent.getToughness(game);
+			final int toughness = otherPermanent.getToughness();
 			return (otherPermanent.isCreature() &&
 					otherPermanent.getController() == player &&
 					toughness > 0) ?

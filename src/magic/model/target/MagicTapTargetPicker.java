@@ -22,7 +22,7 @@ public class MagicTapTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		}		
 		final boolean owner=permanent.getController()==player;
 		if (owner==tapped) {
-			return 1+permanent.getPower(game)+permanent.getActivations().size();			
+			return 1+permanent.getPower()+permanent.getActivations().size();			
 		}
 		return 0;
 	}

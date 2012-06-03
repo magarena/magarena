@@ -19,6 +19,6 @@ public class MagicHasteTargetPicker extends MagicTargetPicker<MagicPermanent> {
 		if (permanent.isTapped()||permanent.canTap(game)) {
 			return 0;
 		}
-		return 1+permanent.getPower(game)+permanent.getActivations().size();
+		return 1+permanent.getPower()+permanent.getActivations().size();
 	}
 }

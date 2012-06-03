@@ -51,9 +51,9 @@ public class MagicCombatDamageAction extends MagicAction {
 				for (final MagicPermanent blocker : attacker.getBlockingCreatures()) {
 
 					// Checks if blocker deals first strike or regular combat damage.
-					final long flags=blocker.getAllAbilityFlags(game);
+					final long flags=blocker.getAllAbilityFlags();
 					if (dealsCombatDamage(flags)) {
-						final int power=blocker.getPower(game);
+						final int power=blocker.getPower();
 						// Checks if blocker has power > 0.
 						if (power>0) {
 							combatDamage.add(new MagicDamage(blocker,attacker,power,true));
@@ -62,10 +62,10 @@ public class MagicCombatDamageAction extends MagicAction {
 				}
 
 				// Check if attacker deals first strike or regular combat damage.
-				final long flags=attacker.getAllAbilityFlags(game);
+				final long flags=attacker.getAllAbilityFlags();
 				if (dealsCombatDamage(flags)) {
 					// Checks if attacker has power > 0.
-					int power=attacker.getPower(game);
+					int power=attacker.getPower();
 					if (power>0 && !attacker.hasState(MagicPermanentState.NoCombatDamage)) {
 						if (attacker.hasState(MagicPermanentState.Blocked)) {
 							// Determine what damage must be dealt to each blocker.
@@ -75,7 +75,7 @@ public class MagicCombatDamageAction extends MagicAction {
 							for (int index=0;power>0&&index<attackerDamage.length;index++) {
 								
 								final MagicPermanent blocker=blockers.get(index);
-								final int toughness=blocker.getToughness(game);
+								final int toughness=blocker.getToughness();
 								attackerDamage[index]=Math.min(deathtouch?1:power,blocker.getLethalDamage(toughness));
 								power-=attackerDamage[index];								
 							}

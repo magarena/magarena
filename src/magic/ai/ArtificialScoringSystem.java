@@ -97,8 +97,8 @@ public class ArtificialScoringSystem {
 			score+=getTappedScore(permanent,game);
 		}
 		if (permanent.isCreature()) {
-			final MagicPowerToughness pt=permanent.getPowerToughness(game,false);
-			final long abilityFlags=permanent.getAllAbilityFlags(game,false);
+			final MagicPowerToughness pt=permanent.getPowerToughness(false);
+			final long abilityFlags=permanent.getAllAbilityFlags(false);
 			score+=pt.power()*300+pt.getPositiveToughness()*200+MagicAbility.getScore(abilityFlags)*(pt.getPositivePower()+1)/2;
 			score+=permanent.getEquipmentPermanents().size()*50+permanent.getAuraPermanents().size()*100;
 		} 

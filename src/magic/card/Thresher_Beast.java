@@ -31,7 +31,7 @@ public class Thresher_Beast {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer opponent = (MagicPlayer)data[1];
-			if (opponent.controlsPermanentWithType(MagicType.Land,game)) {
+			if (opponent.controlsPermanentWithType(MagicType.Land)) {
 				game.addEvent(new MagicSacrificePermanentEvent(
                     (MagicPermanent)data[0],
                     opponent,

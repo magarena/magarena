@@ -19,7 +19,7 @@ public class Avacyn_s_Collar {
 			final MagicPlayer player = permanent.getController();
 			final MagicPermanent equipped = permanent.getEquippedCreature();
 			return (equipped == data &&
-					equipped.hasSubType(MagicSubType.Human,game)) ?
+					equipped.hasSubType(MagicSubType.Human)) ?
 				new MagicEvent(
                     permanent,
                     player,

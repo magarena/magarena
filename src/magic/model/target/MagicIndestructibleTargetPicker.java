@@ -20,6 +20,6 @@ public class MagicIndestructibleTargetPicker extends MagicTargetPicker<MagicPerm
 		if (permanent.hasAbility(MagicAbility.Indestructible)) {
 			return 0;
 		}
-		return 100+permanent.getPower(game)*2+permanent.getDamage()-permanent.getToughness(game);
+		return 100+permanent.getPower()*2+permanent.getDamage()-permanent.getToughness();
 	}
 }

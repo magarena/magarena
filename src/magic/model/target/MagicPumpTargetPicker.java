@@ -27,8 +27,8 @@ public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		final MagicPowerToughness pt=permanent.getPowerToughness(game);
-		final long flags=permanent.getAllAbilityFlags(game);
+		final MagicPowerToughness pt=permanent.getPowerToughness();
+		final long flags=permanent.getAllAbilityFlags();
 		int score=0;
 
 		// First level.

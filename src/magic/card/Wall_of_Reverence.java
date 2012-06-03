@@ -34,7 +34,7 @@ public class Wall_of_Reverence {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],creature.getPower(game)));
+                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],creature.getPower()));
                 }
 			});
 		}

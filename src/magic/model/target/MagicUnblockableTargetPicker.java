@@ -24,8 +24,8 @@ public class MagicUnblockableTargetPicker extends MagicTargetPicker<MagicPermane
 			return 0;
 		}
 		if (permanent.isAttacking()) {
-			return 100+permanent.getPower(game);
+			return 100+permanent.getPower();
 		}
-		return 1+permanent.getPower(game);
+		return 1+permanent.getPower();
 	}
 }

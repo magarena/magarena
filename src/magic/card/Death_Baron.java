@@ -19,8 +19,8 @@ public class Death_Baron {
 		}
 		@Override
 		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			return target.hasSubType(MagicSubType.Skeleton,game) || 
-					(source != target && target.hasSubType(MagicSubType.Zombie,game));
+			return target.hasSubType(MagicSubType.Skeleton) || 
+					(source != target && target.hasSubType(MagicSubType.Zombie));
 		}
 	};
     
@@ -33,8 +33,8 @@ public class Death_Baron {
     	}
     	@Override
     	public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		return target.hasSubType(MagicSubType.Skeleton,game) || 
-    				(source != target && target.hasSubType(MagicSubType.Zombie,game));
+    		return target.hasSubType(MagicSubType.Skeleton) || 
+    				(source != target && target.hasSubType(MagicSubType.Zombie));
     	}
     };
 }

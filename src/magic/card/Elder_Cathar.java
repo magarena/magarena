@@ -40,7 +40,7 @@ public class Elder_Cathar {
                 final Object[] choiceResults) {
 			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                	final int amount = creature.hasSubType(MagicSubType.Human,game) ? 2 : 1;
+                	final int amount = creature.hasSubType(MagicSubType.Human) ? 2 : 1;
                 	game.doAction(new MagicChangeCountersAction(
         					creature,
         					MagicCounterType.PlusOne,

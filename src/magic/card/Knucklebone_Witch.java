@@ -20,7 +20,7 @@ public class Knucklebone_Witch {
 	    final MagicPlayer player = permanent.getController();
 	    return (permanent != otherPermanent &&
 		    otherPermanent.getController() == player &&
-		    otherPermanent.hasSubType(MagicSubType.Goblin, game)) ? new MagicEvent(
+		    otherPermanent.hasSubType(MagicSubType.Goblin)) ? new MagicEvent(
 			    permanent, 
 			    player,
 			    new MagicSimpleMayChoice(

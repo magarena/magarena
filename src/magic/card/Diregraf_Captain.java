@@ -36,7 +36,7 @@ public class Diregraf_Captain {
 			return (permanent != otherPermanent &&
 					otherPermanent.getController() == permanent.getController() &&
 					otherPermanent.isCreature() &&
-					otherPermanent.hasSubType(MagicSubType.Zombie,game)) ?
+					otherPermanent.hasSubType(MagicSubType.Zombie)) ?
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

@@ -30,7 +30,7 @@ public class Angelic_Chorus {
                 final Object data[],
                 final Object[] choiceResults) {
 			// get toughness here so counters on the creature are considered
-			final int toughness = ((MagicPermanent)data[1]).getToughness(game);
+			final int toughness = ((MagicPermanent)data[1]).getToughness();
 			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
 		}
     };

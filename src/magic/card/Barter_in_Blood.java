@@ -36,7 +36,7 @@ public class Barter_in_Blood {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			for (final MagicPlayer player : game.getPlayers()) {
 				for (int i=2;i>0;i--) {
-					if (player.controlsPermanentWithType(MagicType.Creature,game)) {
+					if (player.controlsPermanentWithType(MagicType.Creature)) {
 	    				game.addEvent(new MagicSacrificePermanentEvent(
 	                        cardOnStack.getCard(),
 	                        player,

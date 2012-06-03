@@ -18,13 +18,13 @@ public class MagicFirstStrikeTargetPicker extends MagicTargetPicker<MagicPermane
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		if (permanent.getController()!=player) {
-			return -50-permanent.getPower(game);
+			return -50-permanent.getPower();
 		}
-		final long flags=permanent.getAllAbilityFlags(game);
+		final long flags=permanent.getAllAbilityFlags();
 		if (MagicAbility.FirstStrike.hasAbility(flags)||MagicAbility.DoubleStrike.hasAbility(flags)) {
 			return 0;
 		}
-		final int power=permanent.getPower(game);
+		final int power=permanent.getPower();
 		if (permanent.isBlocked()||permanent.isBlocking()) {
 			return power+permanent.getBlockingCreatures().size()+100;
 		} 

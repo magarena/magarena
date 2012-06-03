@@ -33,7 +33,7 @@ public class Endless_Wurm {
                 final Object[] choiceResults) {
 			final MagicPermanent permanent = (MagicPermanent)data[0];
 			final MagicPlayer player = (MagicPlayer)data[1];
-			if (player.controlsPermanentWithType(MagicType.Enchantment,game)) {
+			if (player.controlsPermanentWithType(MagicType.Enchantment)) {
 				game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_ENCHANTMENT));
 			} else {
 				game.doAction(new MagicSacrificeAction(permanent));				

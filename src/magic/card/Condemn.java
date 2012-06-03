@@ -39,7 +39,7 @@ public class Condemn {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeLifeAction(
                                 creature.getController(),
-                                creature.getToughness(game)));
+                                creature.getToughness()));
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.BottomOfOwnersLibrary));
                 }
 			});

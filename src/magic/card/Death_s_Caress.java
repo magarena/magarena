@@ -42,10 +42,10 @@ public class Death_s_Caress {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                	if (creature.hasSubType(MagicSubType.Human, game)) {
+                	if (creature.hasSubType(MagicSubType.Human)) {
                 		game.doAction(new MagicChangeLifeAction(
                 				cardOnStack.getController(),
-                                creature.getToughness(game)));
+                                creature.getToughness()));
                 	}
                     game.doAction(new MagicDestroyAction(creature));
                 }

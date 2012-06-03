@@ -14,7 +14,7 @@ public class Village_Cannibals {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (permanent != otherPermanent &&
 					otherPermanent.isCreature() &&
-					otherPermanent.hasSubType(MagicSubType.Human,game)) ?
+					otherPermanent.hasSubType(MagicSubType.Human)) ?
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

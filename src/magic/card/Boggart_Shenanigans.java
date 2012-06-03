@@ -24,7 +24,7 @@ public class Boggart_Shenanigans {
 	    final MagicPlayer player = permanent.getController();
 	    return (permanent != otherPermanent &&
 		    otherPermanent.getController() == player &&
-		    otherPermanent.hasSubType(MagicSubType.Goblin, game)) ? new MagicEvent(
+		    otherPermanent.hasSubType(MagicSubType.Goblin)) ? new MagicEvent(
 	                    permanent,
 	                    permanent.getController(),
 	                    new MagicMayChoice(

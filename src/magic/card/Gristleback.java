@@ -43,7 +43,7 @@ public class Gristleback {
 			final MagicPermanent permanent = (MagicPermanent)data[1];
 			game.doAction(new MagicChangeLifeAction(
 					(MagicPlayer)data[0],
-					permanent.getPower(game)));
+					permanent.getPower()));
 		}
 	};
 }

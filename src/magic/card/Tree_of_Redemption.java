@@ -49,7 +49,7 @@ public class Tree_of_Redemption {
 			final MagicPermanent permanent = (MagicPermanent)data[0];
 			final MagicPlayer player = (MagicPlayer)data[1];
 			final int life = player.getLife();
-			final int toughness = permanent.getToughness(game);
+			final int toughness = permanent.getToughness();
 			// exchange life with toughness even when they are equal
 			// because toughness can be modified in layer ModPT (7c)
 			game.doAction(new MagicChangeLifeAction(player,toughness - life));

@@ -43,7 +43,7 @@ public class Wrack_with_Madness {
                     final MagicDamage damage = new MagicDamage(
                     		(MagicSource)target,
                     		target,
-                    		creature.getPower(game),
+                    		creature.getPower(),
                     		false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }

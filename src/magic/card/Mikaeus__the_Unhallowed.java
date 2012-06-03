@@ -50,7 +50,7 @@ public class Mikaeus__the_Unhallowed {
 			final MagicPlayer player = permanent.getController();
 			return (damage.getTarget() == player && 
                     damage.getSource().isPermanent() &&
-                    ((MagicPermanent)damage.getSource()).hasSubType(MagicSubType.Human,game)) ?
+                    ((MagicPermanent)damage.getSource()).hasSubType(MagicSubType.Human)) ?
                 new MagicEvent(
                         permanent,
                         player,

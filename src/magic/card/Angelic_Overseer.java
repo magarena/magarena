@@ -12,7 +12,7 @@ public class Angelic_Overseer {
         @Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
         	for (final MagicPermanent target : permanent.getController().getPermanents()) {
-    			if (target != permanent && target.hasSubType(MagicSubType.Human,game)) {
+    			if (target != permanent && target.hasSubType(MagicSubType.Human)) {
     				return flags | 
     						MagicAbility.CannotBeTheTarget.getMask() |
     		            	MagicAbility.Indestructible.getMask();

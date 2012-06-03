@@ -46,7 +46,7 @@ public class Rhox {
 				final MagicDamage damage = new MagicDamage(
 						permanent,
 						(MagicTarget)data[1],
-						permanent.getPower(game),
+						permanent.getPower(),
 						true);
 				game.doAction(new MagicDealDamageAction(damage));
 				game.doAction(new MagicChangeStateAction(

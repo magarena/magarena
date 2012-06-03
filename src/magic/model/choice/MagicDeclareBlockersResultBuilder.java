@@ -49,12 +49,12 @@ public class MagicDeclareBlockersResultBuilder {
 		
         // Caching for better speed and immediate mode for triggers.
 		game.setImmediate(true);
-		attackingPlayer.setCached(game,true);
-		defendingPlayer.setCached(game,true);
+		attackingPlayer.setCached(true);
+		defendingPlayer.setCached(true);
 		build();
 		game.setImmediate(false);
-		attackingPlayer.setCached(game,false);
-		defendingPlayer.setCached(game,false);
+		attackingPlayer.setCached(false);
+		defendingPlayer.setCached(false);
 	}
 
 	Collection<Object> getResults() {

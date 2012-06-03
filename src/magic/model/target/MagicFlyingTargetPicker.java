@@ -17,11 +17,11 @@ public class MagicFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		final long flags=permanent.getAllAbilityFlags(game);
+		final long flags=permanent.getAllAbilityFlags();
 		if (MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
 			return 0;
 		}
-		final int power=permanent.getPower(game);
+		final int power=permanent.getPower();
 		if (MagicAbility.Flying.hasAbility(flags)) {
 			return power;
 		} 

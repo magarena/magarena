@@ -38,7 +38,7 @@ public class Karn__Silver_Golem {
     static final MagicTargetPicker<MagicPermanent> TP = new MagicTargetPicker<MagicPermanent>() {
         @Override
     	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-            final MagicPowerToughness pt=permanent.getPowerToughness(game);
+            final MagicPowerToughness pt=permanent.getPowerToughness();
             final int power = permanent.getCardDefinition().getConvertedCost();
             final int toughness = permanent.getCardDefinition().getConvertedCost();
             int score = (pt.power()-power)*2+(pt.toughness()-toughness);

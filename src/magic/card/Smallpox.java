@@ -44,13 +44,13 @@ public class Smallpox {
 						player,
 						1,
 						false));
-				if (player.controlsPermanentWithType(MagicType.Creature,game)) {
+				if (player.controlsPermanentWithType(MagicType.Creature)) {
     				game.addEvent(new MagicSacrificePermanentEvent(
                         cardOnStack.getCard(),
                         player,
                         MagicTargetChoice.SACRIFICE_CREATURE));
                 }
-				if (player.controlsPermanentWithType(MagicType.Land,game)) {
+				if (player.controlsPermanentWithType(MagicType.Land)) {
     				game.addEvent(new MagicSacrificePermanentEvent(
                         cardOnStack.getCard(),
                         player,

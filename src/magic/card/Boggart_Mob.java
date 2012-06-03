@@ -22,7 +22,7 @@ public class Boggart_Mob {
 			return (damage.isCombat() && 
 					damage.getTarget().isPlayer() &&
 					source.getController() == player &&
-					((MagicPermanent)source).hasSubType(MagicSubType.Goblin,game)) ?
+					((MagicPermanent)source).hasSubType(MagicSubType.Goblin)) ?
                 new MagicEvent(
                         permanent,
                         player,

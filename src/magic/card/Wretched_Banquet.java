@@ -44,11 +44,11 @@ public class Wretched_Banquet {
                 	final Collection<MagicTarget> targets = game.filterTargets(
                 			game.getPlayer(0),
                 			MagicTargetFilter.TARGET_CREATURE);
-                	final int power = creature.getPower(game);
+                	final int power = creature.getPower();
                 	boolean least = true;
                 	for (final MagicTarget target : targets) {
                 		final MagicPermanent permanent = (MagicPermanent)target;
-                		if (permanent.getPower(game) < power) {
+                		if (permanent.getPower() < power) {
                 			least = false;
                 			break;
                 		}

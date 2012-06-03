@@ -32,7 +32,7 @@ public class Sosuke__Son_of_Seshiro {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			return (damage.getSource().getController() == permanent.getController() &&
                     damage.getSource().isPermanent() &&
-					((MagicPermanent)damage.getSource()).hasSubType(MagicSubType.Warrior,game) &&
+					((MagicPermanent)damage.getSource()).hasSubType(MagicSubType.Warrior) &&
                     damage.isCombat() &&
 					damage.getTarget().isPermanent() &&
 					((MagicPermanent)damage.getTarget()).isCreature()) ?

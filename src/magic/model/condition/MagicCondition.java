@@ -208,7 +208,7 @@ public interface MagicCondition {
 	
 	MagicCondition CONTROL_ARTIFACT_CONDITION = new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().controlsPermanentWithType(MagicType.Artifact,game);
+			return source.getController().controlsPermanentWithType(MagicType.Artifact);
 		}
 	};
 	
@@ -251,7 +251,7 @@ public interface MagicCondition {
 	MagicCondition POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
 			final MagicPermanent permanent = (MagicPermanent)source;
-			return permanent.getPower(game) >= 4;
+			return permanent.getPower() >= 4;
 		}
 	};
 	

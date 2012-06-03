@@ -18,7 +18,7 @@ public class Indebted_Samurai {
 			final MagicPlayer player = permanent.getController();
             return (otherPermanent.isCreature() &&
             		otherPermanent.getController() == player &&
-            		otherPermanent.hasSubType(MagicSubType.Samurai,game)) ?
+            		otherPermanent.hasSubType(MagicSubType.Samurai)) ?
 				new MagicEvent(
                         permanent,
                         player,

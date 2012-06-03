@@ -41,7 +41,7 @@ public class Tribute_to_Hunger {
 			game.doAction(new MagicMoveCardAction(cardOnStack));
 			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
-        			if (opponent.controlsPermanentWithType(MagicType.Creature,game)) {
+        			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
         				game.addEvent(new MagicEvent(
                             cardOnStack.getCard(),
                             opponent,
@@ -66,7 +66,7 @@ public class Tribute_to_Hunger {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicSacrificeAction(permanent));
-                    final int toughness = permanent.getToughness(game);
+                    final int toughness = permanent.getToughness();
                     game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
                 }
             });

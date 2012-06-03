@@ -17,7 +17,7 @@ public class MagicPreventTargetPicker extends MagicTargetPicker<MagicTarget> {
 			return 15-player.getLife();
 		} 
 		final MagicPermanent permanent=(MagicPermanent)target;		
-		return 10-permanent.getToughness(game)+permanent.getDamage()-permanent.getPreventDamage();
+		return 10-permanent.getToughness()+permanent.getDamage()-permanent.getPreventDamage();
 	}
 	
 	public static MagicPreventTargetPicker getInstance() {

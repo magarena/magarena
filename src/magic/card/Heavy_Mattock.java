@@ -24,7 +24,7 @@ public class Heavy_Mattock {
 				final MagicGame game,
 				final MagicPermanent source,
 				final MagicPermanent target) {	
-        	return source.getEquippedCreature().hasSubType(MagicSubType.Human,game) &&
+        	return source.getEquippedCreature().hasSubType(MagicSubType.Human) &&
         			target == source.getEquippedCreature();
         }
     };

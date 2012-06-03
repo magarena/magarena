@@ -19,7 +19,7 @@ public class Wooden_Stake {
             if (creature == equippedCreature) {
             	final MagicPermanentList plist = new MagicPermanentList();
             	for (final MagicPermanent blocker : equippedCreature.getBlockingCreatures()) {
-            		if (blocker.hasSubType(MagicSubType.Vampire,game)) {
+            		if (blocker.hasSubType(MagicSubType.Vampire)) {
             			plist.add(blocker);
             		}
             	}
@@ -58,7 +58,7 @@ public class Wooden_Stake {
             final MagicPermanent blocked = equippedCreature.getBlockedCreature();
 			return (equippedCreature == data &&
 					blocked.isValid() &&
-					blocked.hasSubType(MagicSubType.Vampire,game)) ?
+					blocked.hasSubType(MagicSubType.Vampire)) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
