@@ -176,14 +176,14 @@ jar: $(MAG)
 	$(JAVA) -jar $^
 
 inf: $(MAG)
-	-while true; do make `date +%H%M%S`.t; done
+	-while true; do make `date +%s`.t; done
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
 	$(JAVAEA) -DrndSeed=$* -DselfMode -jar $^ >> $*.log 2>&1
 
 test: $(MAG)
-	-make `date +%H%M%S`.d
+	-make `date +%s`.d
 
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
