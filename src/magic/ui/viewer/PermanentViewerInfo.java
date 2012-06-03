@@ -88,7 +88,7 @@ public class PermanentViewerInfo {
 		basic=permanent.hasType(MagicType.Basic,game);
 		mana=permanent.producesMana();
 		creature=permanent.isCreature();
-		artifact=permanent.isEquipped()||(permanent.isArtifact(game)&&permanent.getEquippedCreature().isInvalid());
+		artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature().isInvalid());
 		enchantment=permanent.isEnchanted()||
             (permanent.isEnchantment()&&permanent.getEnchantedCreature().isInvalid());
 		root=permanent.getEnchantedCreature().isInvalid() && permanent.getEquippedCreature().isInvalid();
@@ -228,7 +228,7 @@ public class PermanentViewerInfo {
 			return 2;
 		} else if (permanent.isLand()) {
 			return 1;
-		} else if (permanent.isArtifact(game)) {
+		} else if (permanent.isArtifact()) {
 			return 3;
 		} else {
 			return 4;

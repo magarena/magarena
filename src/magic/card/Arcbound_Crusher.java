@@ -12,7 +12,7 @@ public class Arcbound_Crusher {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (otherPermanent != permanent &&
-					otherPermanent.isArtifact(game)) ?
+					otherPermanent.isArtifact()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

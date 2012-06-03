@@ -14,7 +14,7 @@ public class Tel_Jilad_Wolf {
             if (creature == permanent) {
             	final MagicPermanentList plist = new MagicPermanentList();
             	for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-            		if (blocker.isArtifact(game) && blocker.isCreature()) {
+            		if (blocker.isArtifact() && blocker.isCreature()) {
             			plist.add(blocker);
             		}
             	}

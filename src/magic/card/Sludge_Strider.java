@@ -18,7 +18,7 @@ public class Sludge_Strider {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (otherPermanent != permanent &&
-					otherPermanent.isArtifact(game)) ?
+					otherPermanent.isArtifact()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -52,7 +52,7 @@ public class Sludge_Strider {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
 			return (data != permanent &&
-					data.isArtifact(game)) ?
+					data.isArtifact()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

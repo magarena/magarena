@@ -46,7 +46,7 @@ public class Echoing_Ruin {
                         game.filterTargets(cardOnStack.getController(),targetFilter);
                     for (final MagicTarget target : targets) {
                     	final MagicPermanent permanent = (MagicPermanent)target;
-                    	if (permanent.isArtifact(game)) {
+                    	if (permanent.isArtifact()) {
                     		game.doAction(new MagicDestroyAction(permanent));
                     	}
                     }
