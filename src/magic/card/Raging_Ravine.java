@@ -34,7 +34,7 @@ public class Raging_Ravine {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent creature) {
-			return (permanent == creature && permanent.isCreature(game)) ?
+			return (permanent == creature && permanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

@@ -14,7 +14,7 @@ public class Falkenrath_Noble {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
-			return (otherPermanent.isCreature(game)) ?
+			return (otherPermanent.isCreature()) ?
 				new MagicEvent(
 					permanent,
 					player,

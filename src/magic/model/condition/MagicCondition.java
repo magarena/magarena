@@ -122,7 +122,7 @@ public interface MagicCondition {
     
     MagicCondition NOT_CREATURE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-            return !source.isCreature(game);
+            return !source.isCreature();
 		}
 	};
     

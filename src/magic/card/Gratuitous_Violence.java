@@ -14,7 +14,7 @@ public class Gratuitous_Violence {
 			final MagicSource source=damage.getSource();
 			if (source.getController()==permanent.getController()&&source.isPermanent()) {
 				final MagicPermanent sourcePermanent=(MagicPermanent)source;
-				if (sourcePermanent.isCreature(game)) {
+				if (sourcePermanent.isCreature()) {
 					// Generates no event or action.
 					damage.setAmount(damage.getAmount()<<1);
 				}

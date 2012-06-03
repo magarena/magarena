@@ -16,7 +16,7 @@ public class Mentor_of_the_Meek {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
 			return (otherPermanent != permanent &&
-					otherPermanent.isCreature(game) && 
+					otherPermanent.isCreature() && 
                     otherPermanent.getController() == player &&
                     otherPermanent.getPower(game) <= 2) ?
                 new MagicEvent(

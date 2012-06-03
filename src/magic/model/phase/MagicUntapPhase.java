@@ -39,7 +39,7 @@ public class MagicUntapPhase extends MagicPhase {
 					!permanent.hasAbility(game,MagicAbility.DoesNotUntap) &&
 					(!exhausted ||
 					!(permanent.isLand() ||
-					permanent.isCreature(game)))) {
+					permanent.isCreature()))) {
 				game.doAction(new MagicUntapAction(permanent));
 			}
 		}		

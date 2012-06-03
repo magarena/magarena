@@ -14,7 +14,7 @@ public class Midnight_Guard {
 				final MagicPermanent permanent,
 				final MagicPermanent otherPermanent) {
 			return (permanent != otherPermanent &&
-					otherPermanent.isCreature(game) &&
+					otherPermanent.isCreature() &&
 					permanent.isTapped()) ?
 				new MagicEvent(
 					permanent,

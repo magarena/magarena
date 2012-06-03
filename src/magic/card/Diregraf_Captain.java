@@ -35,7 +35,7 @@ public class Diregraf_Captain {
 			final MagicPlayer opponent = game.getOpponent(permanent.getController());
 			return (permanent != otherPermanent &&
 					otherPermanent.getController() == permanent.getController() &&
-					otherPermanent.isCreature(game) &&
+					otherPermanent.isCreature() &&
 					otherPermanent.hasSubType(MagicSubType.Zombie,game)) ?
 				new MagicEvent(
                     permanent,

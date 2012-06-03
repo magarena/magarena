@@ -10,7 +10,7 @@ public class Goblin_Sharpshooter {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent.isCreature(game) &&
+			return (otherPermanent.isCreature() &&
 					permanent.isTapped()) ?
 				new MagicEvent(
                     permanent,

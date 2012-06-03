@@ -13,7 +13,7 @@ public class Village_Cannibals {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (permanent != otherPermanent &&
-					otherPermanent.isCreature(game) &&
+					otherPermanent.isCreature() &&
 					otherPermanent.hasSubType(MagicSubType.Human,game)) ?
 				new MagicEvent(
                     permanent,

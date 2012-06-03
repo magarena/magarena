@@ -15,7 +15,7 @@ public class Murder_of_Crows {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (permanent != otherPermanent &&
-					otherPermanent.isCreature(game)) ?
+					otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

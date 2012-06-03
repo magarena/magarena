@@ -13,7 +13,7 @@ public class Selhoff_Occultist {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent.isCreature(game)) ?
+			return (otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

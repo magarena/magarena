@@ -14,7 +14,7 @@ public class Lumberknot {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent otherPermanent) {
-			return (otherPermanent.isCreature(game)) ?
+			return (otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     permanent.getController(),

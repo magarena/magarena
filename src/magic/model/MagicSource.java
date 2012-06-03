@@ -7,7 +7,7 @@ import java.util.Collection;
 public interface MagicSource extends MagicCopyable, MagicMappable {
 	boolean             isSpell();
 	boolean             isPermanent();
-	boolean             isCreature(final MagicGame game);
+	boolean             isCreature();
 	boolean             hasAbility(final MagicGame game,final MagicAbility ability);	
 	MagicCardDefinition getCardDefinition();
 	String              getName();

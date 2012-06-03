@@ -14,7 +14,7 @@ public class Lowland_Basilisk {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			return (damage.getSource() == permanent &&
 					damage.getTarget().isPermanent() &&
-					((MagicPermanent)damage.getTarget()).isCreature(game)) ?
+					((MagicPermanent)damage.getTarget()).isCreature()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

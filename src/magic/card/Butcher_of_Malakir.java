@@ -50,7 +50,7 @@ public class Butcher_of_Malakir {
 			final MagicPlayer controller = permanent.getController();
 			return (otherPermanent != permanent && 
                     otherPermanent.getController() == controller && 
-                    otherPermanent.isCreature(game)) ?
+                    otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     controller,

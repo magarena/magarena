@@ -45,7 +45,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
                     hasSubType |= creature.hasSubType(subtype,game);
                 }
                 return hasSubType && 
-                    creature.isCreature(game) && 
+                    creature.isCreature() && 
                     creature.getController() == player &&
                     creature.getId() != permanent.getId();
             }

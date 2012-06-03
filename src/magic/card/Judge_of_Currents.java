@@ -16,7 +16,7 @@ public class Judge_of_Currents {
     	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
     		final MagicPlayer player = permanent.getController();
     		return (data.getController() == player &&
-    				data.isCreature(game) &&
+    				data.isCreature() &&
     				data.hasSubType(MagicSubType.Merfolk,game)) ?
     						new MagicEvent(
     		                        permanent,

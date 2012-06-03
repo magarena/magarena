@@ -16,7 +16,7 @@ public class Algae_Gharial {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
 			return (permanent != otherPermanent &&
-					otherPermanent.isCreature(game)) ?
+					otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     player,

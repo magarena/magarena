@@ -37,7 +37,7 @@ public class Hedron_Field_Purists {
 				!damage.isUnpreventable() &&
 				amountDamage > 0) {
 				if ((damage.getTarget().isPermanent() &&
-					((MagicPermanent)damage.getTarget()).isCreature(game) &&
+					((MagicPermanent)damage.getTarget()).isCreature() &&
 					damage.getTarget().getController() == player) ||
 					damage.getTarget() == player) {
 					final int amountPrevented = amountCounters >= 5 ? 2:1;

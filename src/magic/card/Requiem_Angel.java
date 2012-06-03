@@ -19,7 +19,7 @@ public class Requiem_Angel {
 			final MagicPlayer player = permanent.getController();
 			return (permanent != otherPermanent &&
 					otherPermanent.getController() == player &&
-					otherPermanent.isCreature(game) &&
+					otherPermanent.isCreature() &&
 					!otherPermanent.hasSubType(MagicSubType.Spirit,game)) ?
 				new MagicEvent(
                     permanent,

@@ -25,7 +25,7 @@ public class MagicDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
 		return (damage.getSource() == permanent &&
 				(!player || damage.getTarget().isPlayer()) &&
 				(player || (damage.getTarget().isPermanent() &&
-				((MagicPermanent)damage.getTarget()).isCreature(game))) &&
+				((MagicPermanent)damage.getTarget()).isCreature())) &&
 				(!combat || damage.isCombat())) ?
             new MagicEvent(
                     permanent,

@@ -14,7 +14,7 @@ public class Ogre_Leadfoot {
             if (creature == permanent) {
             	final MagicPermanentList plist = new MagicPermanentList();
             	for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-            		if (blocker.isArtifact(game) && blocker.isCreature(game)) {
+            		if (blocker.isArtifact(game) && blocker.isCreature()) {
             			plist.add(blocker);
             		}
             	}

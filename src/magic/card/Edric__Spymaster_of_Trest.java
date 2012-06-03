@@ -17,7 +17,7 @@ public class Edric__Spymaster_of_Trest {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player = permanent.getController();
 			return (damage.getTarget() == game.getOpponent(player) && 
-                    damage.getSource().isCreature(game) &&
+                    damage.getSource().isCreature() &&
                     damage.isCombat()) ?
                     		new MagicEvent(
                                     permanent,

@@ -16,7 +16,7 @@ public class Blood_Seeker {
             final MagicPlayer player = permanent.getController();
             final MagicPlayer controller = otherPermanent.getController();
 			return (otherPermanent != permanent &&
-					otherPermanent.isCreature(game) &&
+					otherPermanent.isCreature() &&
 					controller != player) ?
                 new MagicEvent(
                     permanent,

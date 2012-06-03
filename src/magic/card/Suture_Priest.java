@@ -17,7 +17,7 @@ public class Suture_Priest {
             final MagicPlayer controller = otherPermanent.getController();
             final boolean same = controller == player;
 			return (otherPermanent != permanent &&
-					otherPermanent.isCreature(game)) ?
+					otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
                     player,

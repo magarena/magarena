@@ -11,7 +11,7 @@ public class Galvanic_Juggernaut {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			return (permanent != otherPermanent &&
-					otherPermanent.isCreature(game) &&
+					otherPermanent.isCreature() &&
 					permanent.isTapped()) ?
 				new MagicEvent(
                     permanent,

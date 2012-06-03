@@ -24,7 +24,7 @@ public class Twilight_Drover {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
 			final MagicPlayer player = permanent.getController();
-			return (data.isCreature(game) &&
+			return (data.isCreature() &&
 					data.getCardDefinition().isToken()) ?
                 new MagicEvent(
                         permanent,

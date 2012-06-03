@@ -14,7 +14,7 @@ public class Unruly_Mob {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
 			return (permanent != otherPermanent &&
-					otherPermanent.isCreature(game) &&
+					otherPermanent.isCreature() &&
 					otherPermanent.getController() == player) ?
 				new MagicEvent(
                     permanent,

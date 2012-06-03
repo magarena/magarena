@@ -17,7 +17,7 @@ public class Blood_Artist {
 				final MagicPermanent permanent,
 				final MagicPermanent otherPermanent) {
 			final MagicPlayer controller = permanent.getController();
-			return (otherPermanent.isCreature(game)) ?
+			return (otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     controller,

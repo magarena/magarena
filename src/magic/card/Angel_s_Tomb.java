@@ -80,7 +80,7 @@ public class Angel_s_Tomb {
 				final MagicPermanent otherPermanent) {
 			final MagicPlayer player = permanent.getController();
 			return (otherPermanent.getController() == player &&
-					otherPermanent.isCreature(game)) ?
+					otherPermanent.isCreature()) ?
                 new MagicEvent(
                         permanent,
                         player,

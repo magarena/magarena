@@ -31,7 +31,7 @@ public class Ib_Halfheart__Goblin_Tactician {
 	    final MagicPlayer player = permanent.getController();
             if (permanent != otherPermanent &&
 		otherPermanent.getController() == player &&
-		otherPermanent.isCreature(game) &&
+		otherPermanent.isCreature() &&
 		otherPermanent.hasSubType(MagicSubType.Goblin, game)) {
             	return new MagicEvent(
             			permanent,

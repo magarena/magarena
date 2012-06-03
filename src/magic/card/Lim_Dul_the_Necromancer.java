@@ -46,7 +46,7 @@ public class Lim_Dul_the_Necromancer {
 		    final MagicPlayer player = permanent.getController();	
 			final MagicPlayer otherController = otherPermanent.getController();
 			return (otherController != player &&
-					otherPermanent.isCreature(game)) ?
+					otherPermanent.isCreature()) ?
 				new MagicEvent(
                         permanent,
                         player,
@@ -73,7 +73,7 @@ public class Lim_Dul_the_Necromancer {
 					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
 					game.doAction(action);
 					final MagicPermanent permanent = action.getPermanent();
-					if (permanent.isCreature(game)) {
+					if (permanent.isCreature()) {
 						game.doAction(new MagicAddStaticAction(permanent,Zombie));
 					}
 				}

@@ -26,7 +26,7 @@ public class Vigor {
                 target.isPermanent() && 
                 target.getController()==player) {
 				final MagicPermanent creature=(MagicPermanent)target;
-				if (creature.isCreature(game)) {
+				if (creature.isCreature()) {
 					// Prevention effect.
 					damage.setAmount(0);
 					return new MagicEvent(

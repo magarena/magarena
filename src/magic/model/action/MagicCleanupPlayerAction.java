@@ -28,7 +28,7 @@ public class MagicCleanupPlayerAction extends MagicAction {
         player.setDrawnCards(0);
 
 		for (final MagicPermanent permanent : player.getPermanents()) {
-			if (permanent.isCreature(game)) {
+			if (permanent.isCreature()) {
 				game.doAction(new MagicCleanupCreatureAction(permanent));
 			} else {
 				game.doAction(new MagicCleanupPermanentAction(permanent));

@@ -87,7 +87,7 @@ public class PermanentViewerInfo {
 		visible=permanent.getController()==game.getVisiblePlayer();
 		basic=permanent.hasType(MagicType.Basic,game);
 		mana=permanent.producesMana();
-		creature=permanent.isCreature(game);
+		creature=permanent.isCreature();
 		artifact=permanent.isEquipped()||(permanent.isArtifact(game)&&permanent.getEquippedCreature().isInvalid());
 		enchantment=permanent.isEnchanted()||
             (permanent.isEnchantment()&&permanent.getEnchantedCreature().isInvalid());
@@ -107,7 +107,7 @@ public class PermanentViewerInfo {
 	}
 	
 	private static String getPowerToughness(final MagicGame game,final MagicPermanent permanent) {
-		if (permanent.isCreature(game)) {
+		if (permanent.isCreature()) {
 			return permanent.getPowerToughness(game).toString();
 		} else { 
     		return "";
@@ -160,7 +160,7 @@ public class PermanentViewerInfo {
 			}
 		}
 		
-		if (permanent.isCreature(game)) {
+		if (permanent.isCreature()) {
 			// Damage
 			if (permanent.getDamage()>0) {
 				textBuffer.append("{D}").append(permanent.getDamage()).append(' ');
@@ -224,7 +224,7 @@ public class PermanentViewerInfo {
 	}	
 	
 	private static int getPosition(final MagicPermanent permanent, final MagicGame game) {
-		if (permanent.isCreature(game)) {
+		if (permanent.isCreature()) {
 			return 2;
 		} else if (permanent.isLand()) {
 			return 1;

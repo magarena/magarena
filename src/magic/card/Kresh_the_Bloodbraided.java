@@ -17,7 +17,7 @@ public class Kresh_the_Bloodbraided {
 			final MagicPlayer player = permanent.getController();
 			final int power = otherPermanent.getPower(game);
 			return (permanent != otherPermanent &&
-					otherPermanent.isCreature(game)) ?
+					otherPermanent.isCreature()) ?
 				new MagicEvent(
                     permanent,
                     player,

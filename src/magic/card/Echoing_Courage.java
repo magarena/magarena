@@ -46,7 +46,7 @@ public class Echoing_Courage {
                         game.filterTargets(cardOnStack.getController(),targetFilter);
                     for (final MagicTarget target : targets) {
                     	final MagicPermanent permanent = (MagicPermanent)target;
-                    	if (permanent.isCreature(game)) {
+                    	if (permanent.isCreature()) {
                     		game.doAction(new MagicChangeTurnPTAction(permanent,2,2));
                     	}
                     }

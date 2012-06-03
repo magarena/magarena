@@ -14,7 +14,7 @@ public class Dread {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicPlayer player=permanent.getController();
 			return (damage.getTarget()==player && 
-                    damage.getSource().isCreature(game)) ?
+                    damage.getSource().isCreature()) ?
                 new MagicEvent(
                         permanent,
                         player,

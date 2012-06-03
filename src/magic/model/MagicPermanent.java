@@ -232,11 +232,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         this.controller=controller;
     }
 
-    /*
-    public MagicPlayer getController(final MagicGame game) {
-        return MagicLayer.getController(game, this);
+    private MagicGame getGame() {
+        return getOwner().getGame();
     }
-    */
+
+    public MagicPlayer getOwner() {
+        return card.getOwner();
+    }
     
     public MagicPlayer getController() {
         return controller;
@@ -522,7 +524,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public boolean canTap(final MagicGame game) {
         return !hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
-             !isCreature(game) || 
+             !isCreature() || 
              hasAbility(game,MagicAbility.Haste)
             );
     }
@@ -531,7 +533,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public boolean canUntap(final MagicGame game) {
         return hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
-             !isCreature(game) || 
+             !isCreature() || 
              hasAbility(game,MagicAbility.Haste)
             );        
     }
@@ -632,7 +634,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     void checkState(final MagicGame game, final List<MagicAction> actions) {
-        if (isCreature(game)) {
+        if (isCreature()) {
             final int toughness=getToughness(game);
             if (toughness<=0) {
                 game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
@@ -646,7 +648,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             
             // Soulbond
             if (pairedCreature.isValid() &&
-                !pairedCreature.isCreature(game)) {
+                !pairedCreature.isCreature()) {
                 game.doAction(new MagicSoulbondAction(this,pairedCreature,false));
             }
         } 
@@ -664,7 +666,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         } 
         
         if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
-            if (isCreature(game) || !equippedCreature.isCreature(game) || equippedCreature.hasProtectionFrom(game,this)) {
+            if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(game,this)) {
                 actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
             }
         }
@@ -715,7 +717,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 
         if (source.isPermanent()) {
             final MagicPermanent sourcePermanent=(MagicPermanent)source;
-            if (sourcePermanent.isCreature(game)) {
+            if (sourcePermanent.isCreature()) {
                 // From creatures.
                 if (MagicAbility.ProtectionFromCreatures.hasAbility(abilityFlags)) {
                     return true;
@@ -757,7 +759,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean canAttack(final MagicGame game) {
-        if (!isCreature(game) || 
+        if (!isCreature() || 
             !canTap(game) || 
             hasState(MagicPermanentState.ExcludeFromCombat) ||
             hasState(MagicPermanentState.CannotAttack)) {
@@ -787,7 +789,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean canBlock(final MagicGame game) {
-        if (!isCreature(game)||isTapped()||hasState(MagicPermanentState.ExcludeFromCombat)) {
+        if (!isCreature()||isTapped()||hasState(MagicPermanentState.ExcludeFromCombat)) {
             return false;
         }
         final long flags=getAllAbilityFlags(game);
@@ -949,8 +951,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return cardDefinition.isLand();
     }
     
-    public boolean isCreature(final MagicGame game) {
-        return MagicType.Creature.hasType(getTypeFlags(game));
+    public boolean isCreature() {
+        return MagicType.Creature.hasType(getTypeFlags(getGame()));
     }
     
     public boolean isEquipment() {
@@ -1041,7 +1043,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         } else if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
             game.logAppendMessage(controller,"Return "+this.getName()+" to its owner (end of turn).");
             game.doAction(new MagicChangeStateAction(this,MagicPermanentState.ReturnToOwnerAtEndOfTurn,false));
-            game.doAction(new MagicGainControlAction(card.getOwner(),this));
+            game.doAction(new MagicGainControlAction(getOwner(),this));
             return true;
         }
         return false;
@@ -1054,7 +1056,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         if (isBlocking()) {
             return IconImages.BLOCK;
         }
-        if (isCreature(game)) {
+        if (isCreature()) {
             return IconImages.CREATURE;
         }
         return cardDefinition.getIcon();

@@ -96,7 +96,7 @@ public class ArtificialScoringSystem {
 		if (!permanent.canTap(game)) {
 			score+=getTappedScore(permanent,game);
 		}
-		if (permanent.isCreature(game)) {
+		if (permanent.isCreature()) {
 			final MagicPowerToughness pt=permanent.getPowerToughness(game,false);
 			final long abilityFlags=permanent.getAllAbilityFlags(game,false);
 			score+=pt.power()*300+pt.getPositiveToughness()*200+MagicAbility.getScore(abilityFlags)*(pt.getPositivePower()+1)/2;
@@ -106,7 +106,7 @@ public class ArtificialScoringSystem {
 	}
 	
 	public static int getTappedScore(final MagicPermanent permanent,final MagicGame game) {
-		return permanent.isCreature(game)?-10:-5;
+		return permanent.isCreature()?-10:-5;
 	}
 	
 	public static int getLifeScore(final int life) {
