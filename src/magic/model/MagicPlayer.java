@@ -51,6 +51,7 @@ public class MagicPlayer implements MagicTarget {
 	private final MagicPermanentSet manaPermanents;
 	private final MagicCardCounter cardCounter;
 	private final MagicActivationMap activationMap;
+    private MagicGame game;
     private MagicBuilderManaCost builderCost;
 	private MagicActivationPriority activationPriority;
 
@@ -105,6 +106,14 @@ public class MagicPlayer implements MagicTarget {
 	public MagicPlayer map(final MagicGame game) {
 		return game.getPlayer(index);
 	}
+
+    public void setGame(final MagicGame aGame) {
+        game = aGame;
+    }
+
+    public MagicGame getGame() {
+        return game;
+    }
 	
     long getPlayerId() {
         keys = new long[] {

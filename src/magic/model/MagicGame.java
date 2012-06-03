@@ -125,6 +125,9 @@ public class MagicGame {
 		this.duel=duel;
 		this.gameplay=gameplay;
 		this.players=players;
+        for (final MagicPlayer player : players) {
+            player.setGame(this);
+        }
 		this.sound=sound;
 		
         triggers=new MagicPermanentTriggerMap();
@@ -168,7 +171,10 @@ public class MagicGame {
 		
         //copied and stored in copyMap
         final MagicCopyMap copyMap=new MagicCopyMap();		
-		this.players=copyMap.copyObjects(game.players,MagicPlayer.class);		
+        this.players=copyMap.copyObjects(game.players,MagicPlayer.class);		
+        for (final MagicPlayer player : players) {
+            player.setGame(this);
+        }
 		this.scorePlayer=copyMap.copy(scorePlayer);
 		this.visiblePlayer=copyMap.copy(game.visiblePlayer);
 		this.turnPlayer=copyMap.copy(game.turnPlayer);
