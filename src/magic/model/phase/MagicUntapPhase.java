@@ -36,7 +36,7 @@ public class MagicUntapPhase extends MagicPhase {
 			if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
 				game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DoesNotUntapDuringNext,false));
 			} else if (permanent.isTapped() &&
-					!permanent.hasAbility(game,MagicAbility.DoesNotUntap) &&
+					!permanent.hasAbility(MagicAbility.DoesNotUntap) &&
 					(!exhausted ||
 					!(permanent.isLand() ||
 					permanent.isCreature()))) {

@@ -21,7 +21,7 @@ public class MagicMustAttackTargetPicker extends MagicTargetPicker<MagicPermanen
 		if (!permanent.canAttack(game)) {
 			return -100;
 		}		
-		if (permanent.hasAbility(game,MagicAbility.AttacksEachTurnIfAble)) {
+		if (permanent.hasAbility(MagicAbility.AttacksEachTurnIfAble)) {
 			return -50;
 		}
 		final MagicPowerToughness pt=permanent.getPowerToughness(game);

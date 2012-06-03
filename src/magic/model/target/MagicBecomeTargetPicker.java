@@ -23,7 +23,7 @@ public class MagicBecomeTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final MagicPowerToughness pt=permanent.getPowerToughness(game);
 		int score=(pt.power()-power)*2+(pt.toughness()-toughness);
-		if (flying&&!permanent.hasAbility(game,MagicAbility.Flying)) {
+		if (flying&&!permanent.hasAbility(MagicAbility.Flying)) {
 			score-=5;
 		}
 		return permanent.getController()==player?-score:score;

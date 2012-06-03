@@ -22,7 +22,7 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
     	if (data == permanent) {
         	final MagicPermanentList plist = new MagicPermanentList();
         	for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
-        		if (!blocker.hasAbility(game,MagicAbility.Flanking)) {
+        		if (!blocker.hasAbility(MagicAbility.Flanking)) {
         			plist.add(blocker);
         		}
         	}

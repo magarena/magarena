@@ -42,7 +42,7 @@ public class Burn_the_Impure {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage1 = new MagicDamage(cardOnStack.getCard(),creature,3,false);
                     game.doAction(new MagicDealDamageAction(damage1));
-                    if (creature.hasAbility(game,MagicAbility.Infect)) {
+                    if (creature.hasAbility(MagicAbility.Infect)) {
                     	final MagicDamage damage2 = new MagicDamage(cardOnStack.getCard(),creature.getController(),3,false);
                         game.doAction(new MagicDealDamageAction(damage2));
                     }

@@ -16,7 +16,7 @@ public class Perimeter_Captain {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer player=permanent.getController();
             return (creature.getController() == player &&
-                    creature.hasAbility(game,MagicAbility.Defender)) ?
+                    creature.hasAbility(MagicAbility.Defender)) ?
                     		new MagicEvent(
                                     permanent,
                                     player,

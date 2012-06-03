@@ -14,7 +14,7 @@ public class Raking_Canopy {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			return (creature.getController()!=permanent.getController()&&creature.hasAbility(game,MagicAbility.Flying)) ?
+			return (creature.getController()!=permanent.getController()&&creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

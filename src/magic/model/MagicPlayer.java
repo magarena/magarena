@@ -447,7 +447,7 @@ public class MagicPlayer implements MagicTarget {
     
     public boolean controlsPermanentWithAbility(final MagicAbility ability, final MagicGame game) {
         for (final MagicPermanent permanent : permanents) {
-            if (permanent.hasAbility(game,ability)) {
+            if (permanent.hasAbility(ability)) {
                 return true;
             }
         }

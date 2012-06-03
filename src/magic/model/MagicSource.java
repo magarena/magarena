@@ -8,7 +8,7 @@ public interface MagicSource extends MagicCopyable, MagicMappable {
 	boolean             isSpell();
 	boolean             isPermanent();
 	boolean             isCreature();
-	boolean             hasAbility(final MagicGame game,final MagicAbility ability);	
+	boolean             hasAbility(final MagicAbility ability);	
 	MagicCardDefinition getCardDefinition();
 	String              getName();
 	MagicPlayer         getController();

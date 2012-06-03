@@ -14,7 +14,7 @@ public class Stonebrow__Krosan_Hero {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer player=permanent.getController();
 			return (creature.getController() == player && 
-                creature.hasAbility(game,MagicAbility.Trample)) ?
+                creature.hasAbility(MagicAbility.Trample)) ?
 				new MagicEvent(
                     permanent,
                     player,

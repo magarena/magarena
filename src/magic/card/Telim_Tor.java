@@ -41,7 +41,7 @@ public class Telim_Tor {
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
 			for (final MagicTarget target : targets) {
 				final MagicPermanent creature = (MagicPermanent)target;
-				if (creature.hasAbility(game,MagicAbility.Flanking)) {
+				if (creature.hasAbility(MagicAbility.Flanking)) {
 					game.doAction(new MagicChangeTurnPTAction(creature,1,1));	
 				}
 			}

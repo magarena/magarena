@@ -41,7 +41,7 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
 		} else if (target.isPermanent()) {		
             // Permanent
             final MagicPermanent permanent=(MagicPermanent)target;
-            if (permanent.hasAbility(game,MagicAbility.Indestructible)) {
+            if (permanent.hasAbility(MagicAbility.Indestructible)) {
                 return 0;
             }		
             if (permanent.isRegenerated()&&!noRegeration) {

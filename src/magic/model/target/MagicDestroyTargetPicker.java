@@ -15,7 +15,7 @@ public class MagicDestroyTargetPicker extends MagicTargetPicker<MagicPermanent> 
 
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		if (permanent.hasAbility(game,MagicAbility.Indestructible)) {
+		if (permanent.hasAbility(MagicAbility.Indestructible)) {
 			return 0;
 		}
 		if (permanent.isRegenerated()&&!noRegeneration) {

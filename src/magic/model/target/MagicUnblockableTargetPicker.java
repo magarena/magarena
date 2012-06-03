@@ -19,7 +19,7 @@ public class MagicUnblockableTargetPicker extends MagicTargetPicker<MagicPermane
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final MagicPlayer controller=permanent.getController();
 		if (game.getTurnPlayer()!=controller||
-			permanent.hasAbility(game,MagicAbility.Unblockable)||
+			permanent.hasAbility(MagicAbility.Unblockable)||
 			!permanent.canBeBlocked(game,game.getOpponent(controller))) {
 			return 0;
 		}

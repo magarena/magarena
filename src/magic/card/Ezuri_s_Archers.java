@@ -14,7 +14,7 @@ public class Ezuri_s_Archers {
             final MagicPermanent blocked=permanent.getBlockedCreature();
 			return (permanent==data && 
                     blocked.isValid() &&
-                    blocked.hasAbility(game,MagicAbility.Flying)) ?
+                    blocked.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),

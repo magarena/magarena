@@ -79,18 +79,18 @@ public class MagicDealDamageAction extends MagicAction {
 			if (damage.hasNoRegeneration()) {
 				game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.CannotBeRegenerated,true));
 			}
-			if (source.hasAbility(game,MagicAbility.Wither)||source.hasAbility(game,MagicAbility.Infect)) {
+			if (source.hasAbility(MagicAbility.Wither)||source.hasAbility(MagicAbility.Infect)) {
 				game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.MinusOne,dealtAmount,true));
 			} else {
 				oldDamage=targetPermanent.getDamage();
 				targetPermanent.setDamage(oldDamage+dealtAmount);
 			}
-			if (source.hasAbility(game,MagicAbility.Deathtouch)) {
+			if (source.hasAbility(MagicAbility.Deathtouch)) {
 				game.doAction(new MagicChangeStateAction(targetPermanent,MagicPermanentState.Destroyed,true));
 			}
 		} else if (target.isPlayer()) {
             final MagicPlayer targetPlayer = (MagicPlayer)target;
-			if (source.hasAbility(game,MagicAbility.Infect)) {
+			if (source.hasAbility(MagicAbility.Infect)) {
 				game.doAction(new MagicChangePoisonAction(targetPlayer,dealtAmount));
 			} else {
 				game.doAction(new MagicChangeLifeAction(targetPlayer,-dealtAmount));
@@ -99,7 +99,7 @@ public class MagicDealDamageAction extends MagicAction {
 		}
 
 		damage.setDealtAmount(dealtAmount);
-		if (source.hasAbility(game,MagicAbility.LifeLink)) {
+		if (source.hasAbility(MagicAbility.LifeLink)) {
 			game.doAction(new MagicChangeLifeAction(source.getController(),dealtAmount));
 		}
 		game.executeTrigger(MagicTriggerType.WhenDamageIsDealt,damage);

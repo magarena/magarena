@@ -18,7 +18,7 @@ public class Circle_of_Flame {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
 			final MagicPlayer controller = creature.getController();
 			return (controller != permanent.getController() &&
-					!creature.hasAbility(game,MagicAbility.Flying)) ?
+					!creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,
                         controller,

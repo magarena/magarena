@@ -24,7 +24,7 @@ public class Hand_of_the_Praetors {
         }
     	@Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		return source != target && target.hasAbility(game,MagicAbility.Infect);
+    		return source != target && target.hasAbility(MagicAbility.Infect);
         }
     };
     

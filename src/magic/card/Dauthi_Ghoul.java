@@ -16,7 +16,7 @@ public class Dauthi_Ghoul {
 			final MagicPlayer player = permanent.getController();
 			return (otherPermanent != permanent &&
                     otherPermanent.isCreature() && 
-                    otherPermanent.hasAbility(game,MagicAbility.Shadow)) ?
+                    otherPermanent.hasAbility(MagicAbility.Shadow)) ?
                     		new MagicEvent(
         		                    permanent,
         		                    player,

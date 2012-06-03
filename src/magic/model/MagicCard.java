@@ -172,7 +172,7 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
 	}
 	
 	@Override
-	public boolean hasAbility(final MagicGame game,final MagicAbility ability) {
+	public boolean hasAbility(final MagicAbility ability) {
 		return getCardDefinition().hasAbility(ability);
 	}
 	

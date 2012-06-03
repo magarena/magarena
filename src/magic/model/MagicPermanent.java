@@ -44,7 +44,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return new MagicPowerToughness(0,0);
         }
         @Override
-        public boolean hasAbility(final MagicGame game,final MagicAbility ability) {
+        public boolean hasAbility(final MagicAbility ability) {
             return false;
         }
     };
@@ -463,7 +463,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     @Override
-    public boolean hasAbility(final MagicGame game,final MagicAbility ability) {
+    public boolean hasAbility(final MagicAbility ability) {
+        final MagicGame game = getGame();
         if (!isOnBattlefield(game)) {
             return ability.hasAbility(lastKnownAbilityFlags);
         }
@@ -525,7 +526,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
              !isCreature() || 
-             hasAbility(game,MagicAbility.Haste)
+             hasAbility(MagicAbility.Haste)
             );
     }
     
@@ -534,7 +535,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return hasState(MagicPermanentState.Tapped) && 
             (!hasState(MagicPermanentState.Summoned) || 
              !isCreature() || 
-             hasAbility(game,MagicAbility.Haste)
+             hasAbility(MagicAbility.Haste)
             );        
     }
     

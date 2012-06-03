@@ -82,7 +82,7 @@ public class MagicMoveCardAction extends MagicAction {
 			}
 			
 			// Persist.
-			if (permanent.isValid() && permanent.hasAbility(game,MagicAbility.Persist)) {
+			if (permanent.isValid() && permanent.hasAbility(MagicAbility.Persist)) {
 				game.executeTrigger(
                         MagicPersistTrigger.getInstance(),
                         permanent,
@@ -91,7 +91,7 @@ public class MagicMoveCardAction extends MagicAction {
 			}
 			
 			// Undying.
-			if (permanent.isValid() && permanent.hasAbility(game,MagicAbility.Undying)) {
+			if (permanent.isValid() && permanent.hasAbility(MagicAbility.Undying)) {
 				game.executeTrigger(
 						MagicUndyingTrigger.getInstance(),
 						permanent,

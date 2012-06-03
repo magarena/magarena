@@ -1213,7 +1213,7 @@ public interface MagicTargetFilter {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return target.getController() == player && 
                    ((MagicPermanent)target).isCreature() && 
-                   ((MagicPermanent)target).hasAbility(game,MagicAbility.Modular);
+                   ((MagicPermanent)target).hasAbility(MagicAbility.Modular);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Permanent;
@@ -1319,7 +1319,7 @@ public interface MagicTargetFilter {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent=(MagicPermanent)target;
-			return permanent.isCreature()&&!permanent.hasAbility(game,MagicAbility.Flying);
+			return permanent.isCreature()&&!permanent.hasAbility(MagicAbility.Flying);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
@@ -1331,7 +1331,7 @@ public interface MagicTargetFilter {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent=(MagicPermanent)target;
-			return permanent.isCreature()&&permanent.hasAbility(game,MagicAbility.Flying);
+			return permanent.isCreature()&&permanent.hasAbility(MagicAbility.Flying);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
@@ -1344,7 +1344,7 @@ public interface MagicTargetFilter {
 			final MagicPermanent permanent = (MagicPermanent)target;
 			return target.getController() != player &&
 					permanent.isCreature() &&
-					permanent.hasAbility(game,MagicAbility.Flying);
+					permanent.hasAbility(MagicAbility.Flying);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Permanent;
@@ -1355,7 +1355,7 @@ public interface MagicTargetFilter {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent = (MagicPermanent)target;
 			return permanent.isCreature() &&
-					permanent.hasAbility(game,MagicAbility.Shadow);
+					permanent.hasAbility(MagicAbility.Shadow);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Permanent;
@@ -1366,7 +1366,7 @@ public interface MagicTargetFilter {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent = (MagicPermanent)target;
 			return permanent.isCreature() &&
-					!permanent.hasAbility(game,MagicAbility.Shadow);
+					!permanent.hasAbility(MagicAbility.Shadow);
 		}
 		public boolean acceptType(final MagicTargetType targetType) {
 			return targetType == MagicTargetType.Permanent;
@@ -1453,7 +1453,7 @@ public interface MagicTargetFilter {
 
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent=(MagicPermanent)target;
-			return permanent.isCreature()&&permanent.isAttacking()&&permanent.hasAbility(game,MagicAbility.Flying);
+			return permanent.isCreature()&&permanent.isAttacking()&&permanent.hasAbility(MagicAbility.Flying);
 		}
 		
 		public boolean acceptType(final MagicTargetType targetType) {
@@ -1791,7 +1791,7 @@ public interface MagicTargetFilter {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			return target.getController() == player && 
                    ((MagicPermanent)target).isCreature() && 
-                   ((MagicPermanent)target).hasAbility(game,MagicAbility.Soulbond) &&
+                   ((MagicPermanent)target).hasAbility(MagicAbility.Soulbond) &&
                    !((MagicPermanent)target).isPaired();
 		}
 		public boolean acceptType(final MagicTargetType targetType) {

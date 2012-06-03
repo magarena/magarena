@@ -22,7 +22,7 @@ public class MagicDeclareAttackersAction extends MagicAction {
 	public void doAction(final MagicGame game) {
         // 508.1f The active player taps the chosen creatures.
 		for (final MagicPermanent attacker : attackers) {
-		    if (!attacker.hasAbility(game,MagicAbility.Vigilance)) {
+		    if (!attacker.hasAbility(MagicAbility.Vigilance)) {
                 game.doAction(new MagicTapAction(attacker, false));
             }
 		}		

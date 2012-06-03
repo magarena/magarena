@@ -29,7 +29,7 @@ public class MagicDestroyAction extends MagicAction {
 			final MagicPermanent permanent = (MagicPermanent)target;
 			
 			// Indestructible
-			if (permanent.hasAbility(game,MagicAbility.Indestructible)) {
+			if (permanent.hasAbility(MagicAbility.Indestructible)) {
 	            destroy = false;
 	        }
 			
