@@ -241,7 +241,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public MagicPlayer getController() {
-        return controller;
+        final MagicPlayer owner = getOwner();
+
+        return MagicLayer.getController(getGame(), this, owner);
     }
             
     public void setState(final MagicPermanentState state) {

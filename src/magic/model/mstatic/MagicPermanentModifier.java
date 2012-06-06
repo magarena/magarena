@@ -11,7 +11,7 @@ import java.util.EnumSet;
 // Determines variable power, toughness, abilities, sub types and colors for a single creature permanent.
 public interface MagicPermanentModifier {
 
-    MagicPlayer getController(final MagicGame game, final MagicPermanent permanent); 
+    MagicPlayer getController(final MagicGame game, final MagicPermanent permanent, final MagicPlayer controller); 
 
 	void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt);
 	

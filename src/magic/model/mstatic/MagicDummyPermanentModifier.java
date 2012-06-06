@@ -11,8 +11,8 @@ import java.util.EnumSet;
 public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     
     @Override
-    public MagicPlayer getController(final MagicGame game, final MagicPermanent permanent) {
-        return permanent.getController();
+    public MagicPlayer getController(final MagicGame game, final MagicPermanent permanent, final MagicPlayer controller) {
+        return controller;
     }
 	
 	@Override

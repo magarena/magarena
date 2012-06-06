@@ -26,16 +26,14 @@ public enum MagicLayer {
     Game,        //9.  affect game rules, not objects
     ;
     
-    public static MagicPlayer getController(final MagicGame game, final MagicPermanent permanent) {
-        MagicPlayer controller = permanent.getController();
-
+    public static MagicPlayer getController(final MagicGame game, final MagicPermanent permanent, final MagicPlayer owner) {
+        MagicPlayer controller = owner;
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Control)) {
             final MagicStatic mstatic = mpstatic.getStatic();
             if (mstatic.accept(game, mpstatic.getPermanent(), permanent)) {
-                controller = mstatic.getController(game, permanent);
+                controller = mstatic.getController(game, permanent, controller);
             }
         }
-
         return controller;
     }
         
