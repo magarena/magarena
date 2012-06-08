@@ -16,9 +16,7 @@ public class Canker_Abomination {
 				final MagicGame game,
 				final MagicPermanent permanent,
 				final MagicPlayer player) {
-			final int amount = game.getOpponent(player).getNrOfPermanentsWithType(
-					MagicType.Creature,
-					game);
+			final int amount = game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature);
 			return (amount > 0) ?
 				new MagicEvent(
                     permanent,

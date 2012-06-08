@@ -42,7 +42,7 @@ public class Ondu_Cleric {
 			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
 				final MagicPlayer player = (MagicPlayer)data[0];
 				final int amount =
-            			player.getNrOfPermanentsWithSubType(MagicSubType.Ally,game);
+            			player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                 if (amount > 0) {
                 	game.doAction(new MagicChangeLifeAction(player,amount));
                 }

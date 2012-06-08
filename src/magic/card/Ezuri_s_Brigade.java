@@ -12,7 +12,7 @@ public class Ezuri_s_Brigade {
 	public static final MagicStatic S1 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3 ?
+			return permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact) >= 3 ?
                 flags | MagicAbility.Trample.getMask() :
                 flags;
         }
@@ -21,7 +21,7 @@ public class Ezuri_s_Brigade {
 	public static final MagicStatic S2 = new MagicStatic(MagicLayer.ModPT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			if (permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3) {
+			if (permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact) >= 3) {
 				pt.add(4,4);
 			}
 		}

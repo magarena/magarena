@@ -18,7 +18,7 @@ public class Indomitable_Archangel {
 		}
 		@Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			return source.getController().getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3;
+			return source.getController().getNrOfPermanentsWithType(MagicType.Artifact) >= 3;
         }
 	};
 }

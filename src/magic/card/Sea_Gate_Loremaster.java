@@ -41,7 +41,7 @@ public class Sea_Gate_Loremaster {
                 final Object[] choiceResults) {
 			final MagicPlayer player = (MagicPlayer)data[0];
 			final int amount =
-        			player.getNrOfPermanentsWithSubType(MagicSubType.Ally,game);
+        			player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
 			game.doAction(new MagicDrawAction(player,amount));
 		}
 	};

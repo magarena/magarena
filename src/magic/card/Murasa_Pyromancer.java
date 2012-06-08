@@ -29,7 +29,7 @@ public class Murasa_Pyromancer {
                         		"number of Allies he or she controls.",
     							MagicTargetChoice.NEG_TARGET_CREATURE),
     					// estimated. Amount of damage can be different on resolution
-    					new MagicDamageTargetPicker(player.getNrOfPermanentsWithSubType(MagicSubType.Ally,game)),
+    					new MagicDamageTargetPicker(player.getNrOfPermanentsWithSubType(MagicSubType.Ally)),
                         new Object[]{player,permanent},
                         this,
                         player + " may$ have " + permanent + " deal " +
@@ -49,7 +49,7 @@ public class Murasa_Pyromancer {
                     public void doAction(final MagicPermanent creature) {
 	                	final MagicPlayer player = (MagicPlayer)data[0];
 	                	final int amount =
-	                			player.getNrOfPermanentsWithSubType(MagicSubType.Ally,game);
+	                			player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
 	                    if (amount > 0) {
 	                    	final MagicDamage damage = new MagicDamage(
 	                    			(MagicPermanent)data[1],

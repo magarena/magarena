@@ -53,7 +53,7 @@ public class Tuktuk_Scrapper {
 	                    	(card.isToken() &&
 	                    	!card.getOwner().getPermanents().contains(target))) {
 	                    	final int amount =
-		                			player.getNrOfPermanentsWithSubType(MagicSubType.Ally,game);
+		                			player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
 		                    if (amount > 0) {
 		                    	final MagicDamage damage = new MagicDamage(
 		                    			(MagicPermanent)data[1],

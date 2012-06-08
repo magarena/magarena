@@ -15,7 +15,7 @@ public class Geist_Honored_Monk {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
 		public void getPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
-			final int amount = player.getNrOfPermanentsWithType(MagicType.Creature,game);
+			final int amount = player.getNrOfPermanentsWithType(MagicType.Creature);
 			pt.set(amount, amount);
 		}
     };

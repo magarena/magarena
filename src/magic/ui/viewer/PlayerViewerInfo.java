@@ -31,7 +31,7 @@ public class PlayerViewerInfo {
 		life=player.getLife();
 		poison=player.getPoison();
 		preventDamage=player.getPreventDamage();
-		lands=player.getNrOfPermanentsWithType(MagicType.Land,game);
+		lands=player.getNrOfPermanentsWithType(MagicType.Land);
 		hand=new MagicCardList(player.getHand());
 		graveyard=new MagicCardList(player.getGraveyard());
 		exile=new MagicCardList(player.getExile());

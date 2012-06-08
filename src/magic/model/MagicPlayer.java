@@ -361,7 +361,7 @@ public class MagicPlayer implements MagicTarget {
         return cardCounter.getCount(cardDefinitionIndex);
     }
     
-    public int getNrOfPermanentsWithType(final MagicType type, final MagicGame game) {
+    public int getNrOfPermanentsWithType(final MagicType type) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasType(type)) {
@@ -371,7 +371,7 @@ public class MagicPlayer implements MagicTarget {
         return count;
     }
 
-    public int getNrOfPermanentsWithSubType(final MagicSubType subType, final MagicGame game) {
+    public int getNrOfPermanentsWithSubType(final MagicSubType subType) {
         int count=0;
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasSubType(subType)) {

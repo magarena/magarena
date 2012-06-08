@@ -50,7 +50,7 @@ public class Concussive_Bolt {
                     final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),targetPlayer,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
                     final MagicPlayer player = (MagicPlayer)data[1];
-                    if (player.getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3) {
+                    if (player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3) {
                     	final Collection<MagicTarget> targets =
                     			game.filterTargets(targetPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     	for (final MagicTarget target : targets) {

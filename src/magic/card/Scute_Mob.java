@@ -15,7 +15,7 @@ public class Scute_Mob {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
 			final MagicPlayer player = permanent.getController();
 			return (player == data &&
-					player.getNrOfPermanentsWithType(MagicType.Land,game) >= 5) ?
+					player.getNrOfPermanentsWithType(MagicType.Land) >= 5) ?
                 new MagicEvent(
                         permanent,
                         player,

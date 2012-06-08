@@ -14,7 +14,7 @@ public class Blade_Tribe_Berserkers {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			if (player.getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3) {
+			if (player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3) {
 				game.doAction(new MagicChangeTurnPTAction(permanent,3,3));
                 game.doAction(new MagicSetAbilityAction(permanent,MagicAbility.Haste));
 			}

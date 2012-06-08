@@ -42,7 +42,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		
 		// Soulbond
 		if (permanent.isCreature() && 
-			controller.getNrOfPermanentsWithType(MagicType.Creature,game) > 1) {
+			controller.getNrOfPermanentsWithType(MagicType.Creature) > 1) {
 			final boolean hasSoulbond = permanent.hasAbility(MagicAbility.Soulbond);
 			if ((hasSoulbond &&
 				game.filterTargets(controller,MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)

@@ -11,7 +11,7 @@ public class Auriok_Edgewright {
 	public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3 ?
+			return permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact) >= 3 ?
                 flags | MagicAbility.DoubleStrike.getMask() :
                 flags;
         }

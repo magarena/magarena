@@ -39,7 +39,7 @@ public class Halimar_Excavator {
 				public void doAction(final MagicPlayer targetPlayer) {
 					final MagicPlayer player = (MagicPlayer)data[0];
 					final int amount =
-							player.getNrOfPermanentsWithSubType(MagicSubType.Ally,game);
+							player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
 					if (amount > 0) {
 						game.doAction(new MagicMillLibraryAction(targetPlayer,amount));
 					}

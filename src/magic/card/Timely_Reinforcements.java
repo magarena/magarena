@@ -40,8 +40,8 @@ public class Timely_Reinforcements {
 			if (player.getLife() < game.getOpponent(player).getLife()) {
 				game.doAction(new MagicChangeLifeAction(player,6));
 			}	
-			if (player.getNrOfPermanentsWithType(MagicType.Creature,game) < 
-					game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature,game)) {
+			if (player.getNrOfPermanentsWithType(MagicType.Creature) < 
+					game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature)) {
 				for (int count = 3; count > 0; count--) {
 					game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
 				}

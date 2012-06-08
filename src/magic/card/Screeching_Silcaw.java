@@ -17,7 +17,7 @@ public class Screeching_Silcaw {
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
 			final MagicTarget target = damage.getTarget();
 			final MagicPlayer player = permanent.getController();
-			return (player.getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3 &&
+			return (player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3 &&
 					permanent == damage.getSource() && 
                     target.isPlayer() && 
                     damage.isCombat()) ?

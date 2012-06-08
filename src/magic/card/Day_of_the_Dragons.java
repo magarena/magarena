@@ -23,7 +23,7 @@ public class Day_of_the_Dragons {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			final int amount = player.getNrOfPermanentsWithType(MagicType.Creature,game);
+			final int amount = player.getNrOfPermanentsWithType(MagicType.Creature);
 			return new MagicEvent(
                     permanent,
                     player,

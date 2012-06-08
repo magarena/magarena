@@ -149,7 +149,7 @@ public interface MagicCondition {
 
 	MagicCondition METALCRAFT_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().getNrOfPermanentsWithType(MagicType.Artifact,game)>=3;
+			return source.getController().getNrOfPermanentsWithType(MagicType.Artifact)>=3;
 		}
     };
 
@@ -220,25 +220,25 @@ public interface MagicCondition {
 	
     MagicCondition ONE_CREATURE_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().getNrOfPermanentsWithType(MagicType.Creature,game)>=1;
+			return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=1;
 		}
 	};
 	
 	MagicCondition TWO_CREATURES_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().getNrOfPermanentsWithType(MagicType.Creature,game)>=2;
+			return source.getController().getNrOfPermanentsWithType(MagicType.Creature)>=2;
 		}
 	};
 	
 	MagicCondition TWO_MOUNTAINS_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Mountain, game)>=2;
+			return source.getController().getNrOfPermanentsWithSubType(MagicSubType.Mountain)>=2;
 		}
 	};
 
 	MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
 		public boolean accept(final MagicGame game,final MagicSource source) {
-			return game.getOpponent(source.getController()).getNrOfPermanentsWithType(MagicType.Land,game)>=4;
+			return game.getOpponent(source.getController()).getNrOfPermanentsWithType(MagicType.Land)>=4;
 		}
 	};
 	

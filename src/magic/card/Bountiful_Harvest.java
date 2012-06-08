@@ -30,7 +30,7 @@ public class Bountiful_Harvest {
                 final Object[] choiceResults) {
 			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
 			final MagicPlayer player = (MagicPlayer)data[1];
-			final int amount = player.getNrOfPermanentsWithType(MagicType.Land, game);
+			final int amount = player.getNrOfPermanentsWithType(MagicType.Land);
 			if (amount > 0) {
 				game.doAction(new MagicChangeLifeAction(player,amount));
 			}

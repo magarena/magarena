@@ -10,7 +10,7 @@ public class Darksteel_Juggernaut {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-			final int amount = player.getNrOfPermanentsWithType(MagicType.Artifact,game);
+			final int amount = player.getNrOfPermanentsWithType(MagicType.Artifact);
 			pt.set(amount,amount);
 		}
 	};

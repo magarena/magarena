@@ -11,7 +11,7 @@ public class Razorfield_Rhino {
 	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
 		@Override
 		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			if (permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3) {
+			if (permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact) >= 3) {
 				pt.add(2,2);
 			}
 		}

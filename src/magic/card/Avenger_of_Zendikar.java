@@ -40,7 +40,7 @@ public class Avenger_of_Zendikar {
                 final Object data[],
                 final Object[] choiceResults) {
 			final MagicPlayer player = (MagicPlayer)data[0];
-			int amount = player.getNrOfPermanentsWithType(MagicType.Land,game);
+			int amount = player.getNrOfPermanentsWithType(MagicType.Land);
 			for (;amount>0;amount--) {
 				game.doAction(new MagicPlayTokenAction(
 						player,

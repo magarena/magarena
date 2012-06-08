@@ -43,7 +43,7 @@ public class Hagra_Diabolist {
 	                public void doAction(final MagicPlayer targetPlayer) {
 	                	final MagicPlayer player = (MagicPlayer)data[0];
 	                	final int amount =
-	                			player.getNrOfPermanentsWithSubType(MagicSubType.Ally,game);
+	                			player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
 	                    if (amount > 0) {
 	                    	game.doAction(new MagicChangeLifeAction(targetPlayer,-amount));
 	                    }

@@ -16,7 +16,7 @@ public class Lumengrid_Drake {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
 		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return player.getNrOfPermanentsWithType(MagicType.Artifact,game) >= 3 ?
+			return player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3 ?
 				new MagicEvent(
                     permanent,
                     player,
