@@ -40,12 +40,32 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return this;
         }
         @Override
+        public MagicPowerToughness getPowerToughness(final boolean turn) {
+            return new MagicPowerToughness(0,0);
+        }
+        @Override
         public MagicPlayer getController() {
             return MagicPlayer.NONE;
         }
         @Override
-        public MagicPowerToughness getPowerToughness(final boolean turn) {
-            return new MagicPowerToughness(0,0);
+        public int getColorFlags() {
+            return 0;
+        }
+        @Override
+        public boolean hasType(final MagicType type) {
+            return false;
+        }
+        @Override
+        public EnumSet<MagicSubType> getSubTypeFlags() {
+            return EnumSet.noneOf(MagicSubType.class);
+        }
+        @Override
+        public boolean hasSubType(final MagicSubType type) {
+            return false;
+        }
+        @Override
+        public long getAllAbilityFlags(final boolean turn) {
+            return 0L;
         }
         @Override
         public boolean hasAbility(final MagicAbility ability) {
