@@ -1,0 +1,15 @@
+name=Call to Serve
+url=http://magiccards.info/avr/en/9.html
+image=http://magiccards.info/scans/en/avr/9.jpg
+value=3
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+given_pt=1/2
+given_ability=flying
+given_subtype=Angel
+timing=aura
+enchant=pump,pos nonblack creature
