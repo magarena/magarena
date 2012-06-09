@@ -29,6 +29,10 @@ public class MagicPlayer implements MagicTarget {
         public MagicPlayer copy(final MagicCopyMap copyMap) {
             return this;
         }
+        @Override
+        public MagicGame getGame() {
+            throw new RuntimeException("getGame called for MagicPlayer.NONE");
+        }
     };
 
     private static final long ID_FACTOR=31;
@@ -112,7 +116,6 @@ public class MagicPlayer implements MagicTarget {
     }
 
     public MagicGame getGame() {
-        assert currGame != null;
         return currGame;
     }
     
@@ -258,7 +261,7 @@ public class MagicPlayer implements MagicTarget {
 
     void createHandAndLibrary(final int handSize) {
         for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
-            final long id = MagicGame.getInstance().getUniqueId();
+            final long id = currGame.getUniqueId();
             library.add(new MagicCard(cardDefinition,this,id));
         }
 
