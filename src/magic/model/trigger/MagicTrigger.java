@@ -55,7 +55,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     
     @Override
     public void change(MagicCardDefinition cdef) {
-        cdef.add(this);
+        cdef.addTrigger(this);
         setCardDefinition(cdef);
     }
 }

@@ -30,7 +30,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
    
     @Override
     public void change(MagicCardDefinition cdef) {
-        cdef.add(this);
+        cdef.addEvent(this);
         setCardDefinition(cdef);
     }
 }

@@ -488,7 +488,7 @@ public class MagicCardDefinition {
 	}
 		
 	public void setEquipCost(final MagicManaCost equipCost) {
-		add(new MagicEquipActivation(equipCost));
+        add(new MagicEquipActivation(equipCost));
 	}
 		
 	public void setManaSourceText(final String sourceText) {
@@ -516,7 +516,7 @@ public class MagicCardDefinition {
 			manaTypes.add(MagicColor.getColor(basicText.charAt(i)).getManaType());
 		}
 		manaTypes.add(MagicManaType.Colorless);
-		add(new MagicTapManaActivation(manaTypes,0));
+        add(new MagicTapManaActivation(manaTypes,0));
 	}
 	
 	
@@ -593,8 +593,12 @@ public class MagicCardDefinition {
 	public MagicTiming getTiming() {
 		return timing;
 	}
+
+    public void add(final MagicChangeCardDefinition mod) {
+        mod.change(this);
+    }
 	
-	public void add(final MagicCardEvent cardEvent) {
+	public void addEvent(final MagicCardEvent cardEvent) {
 		this.cardEvent=cardEvent;
         numSpellEvent++;
 	}
@@ -614,12 +618,12 @@ public class MagicCardDefinition {
 		return cardActivation;
 	}
 	
-    public void add(final MagicCDA cda) {
+    public void addCDA(final MagicCDA cda) {
         CDAs.add(cda);
         numCDAs++;
     }
 		
-	public void add(final MagicTrigger<?> trigger) {
+	public void addTrigger(final MagicTrigger<?> trigger) {
 		switch (trigger.getType()) {
 			case WhenSpellIsCast:
 				spellIsCastTriggers.add(trigger);
@@ -640,7 +644,7 @@ public class MagicCardDefinition {
         numTriggers++;
 	}
 	
-    public void add(final MagicStatic mstatic) {
+    public void addStatic(final MagicStatic mstatic) {
         statics.add(mstatic);
         numStatics++;
     }
@@ -669,7 +673,7 @@ public class MagicCardDefinition {
 		return drawnTriggers;
 	}
 	
-	public void add(final MagicPermanentActivation activation) {
+	public void addAct(final MagicPermanentActivation activation) {
 		activations.add(activation);
         numPermanentActivations++;
 	}
@@ -678,7 +682,7 @@ public class MagicCardDefinition {
 		return activations;
 	}
 	
-	public void add(final MagicManaActivation activation) {
+	public void addManaAct(final MagicManaActivation activation) {
 		manaActivations.add(activation);
         numManaActivations++;
 	}

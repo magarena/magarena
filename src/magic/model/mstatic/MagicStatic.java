@@ -53,7 +53,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     
     @Override
     public void change(MagicCardDefinition cdef) {
-        cdef.add(this);
+        cdef.addStatic(this);
         setCardDefinition(cdef);
     }
 		

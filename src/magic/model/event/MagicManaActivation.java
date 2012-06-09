@@ -46,6 +46,6 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     
     @Override
     public void change(MagicCardDefinition cdef) {
-        cdef.add(this);
+        cdef.addManaAct(this);
     }
 }

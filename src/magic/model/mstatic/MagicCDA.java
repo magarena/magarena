@@ -48,6 +48,6 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
     
     @Override
     public void change(MagicCardDefinition cdef) {
-        cdef.add(this);
+        cdef.addCDA(this);
     }
 }
