@@ -14,7 +14,7 @@ public class MagicBuilderManaCost {
 	private int compressedAmounts[];
 	private int typeCount;
 	private int minimumAmount;
-	private boolean hasX;
+	private int XCount;
 
 	public MagicBuilderManaCost() {
 		amounts=new int[MagicCostManaType.NR_OF_TYPES];
@@ -22,7 +22,7 @@ public class MagicBuilderManaCost {
 		compressedAmounts=new int[0];
 		typeCount=0;
 		minimumAmount=0;
-		hasX=false;
+		XCount=0;
 	}
 	
 	public MagicBuilderManaCost(final MagicBuilderManaCost cost) {
@@ -31,7 +31,7 @@ public class MagicBuilderManaCost {
 		compressedAmounts=Arrays.copyOf(cost.compressedAmounts,cost.compressedAmounts.length);
 		typeCount=cost.typeCount;
 		minimumAmount=cost.minimumAmount;
-		hasX=cost.hasX;
+		XCount=cost.XCount;
 	}
 
 	public void compress() {
@@ -60,18 +60,18 @@ public class MagicBuilderManaCost {
 	public int getMinimumAmount() {
 		return minimumAmount;
 	}
-	
-	public void setHasX() {
-		addType(MagicCostManaType.Colorless,1);
-		hasX=true;
-	}
 		
 	boolean hasX() {
-		return hasX;
+		return XCount > 0;
+	}
+	
+	public void setXCount(final int amount) {
+		addType(MagicCostManaType.Colorless,amount);
+		XCount = amount;
 	}
 	
 	int getX(final int amount) {
-		return hasX?amount-minimumAmount+1:0;
+		return hasX() ? (amount-minimumAmount)/XCount + 1 : 0;
 	}
 
 	public boolean isEmpty() {

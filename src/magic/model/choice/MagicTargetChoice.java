@@ -152,6 +152,8 @@ public class MagicTargetChoice extends MagicChoice {
 			new MagicTargetChoice(MagicTargetFilter.TARGET_NONCREATURE,true,MagicTargetHint.Negative,"target noncreature");
 	public static final MagicTargetChoice NEG_TARGET_NONBLACK_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONBLACK_CREATURE,true,MagicTargetHint.Negative,"target nonblack creature");
+	public static final MagicTargetChoice POS_TARGET_NONBLACK_CREATURE =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_NONBLACK_CREATURE,true,MagicTargetHint.Positive,"target nonblack creature");
 	public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE=
 		new MagicTargetChoice(MagicTargetFilter.TARGET_NONARTIFACT_CREATURE,true,MagicTargetHint.Negative,"target nonartifact creature");
 	public static final MagicTargetChoice TARGET_NONARTIFACT_NONBLACK_CREATURE =
@@ -471,6 +473,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("pos permanent", POS_TARGET_PERMANENT);
         factory.put("neg permanent", NEG_TARGET_PERMANENT);
         factory.put("neg nonbasic land", NEG_TARGET_NONBASIC_LAND);
+        factory.put("pos nonblack creature", POS_TARGET_NONBLACK_CREATURE);
     }
 	
 

@@ -1,0 +1,13 @@
+name=Bloodflow Connoisseur
+url=http://magiccards.info/avr/en/87.html
+image=http://magiccards.info/scans/en/avr/87.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Vampire
+color=b
+converted=3
+cost={2}{B}
+pt=1/1
+timing=main
+requires_card_code

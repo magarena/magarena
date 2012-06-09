@@ -124,7 +124,7 @@ public class MagicManaCost {
 	private final int amounts[];
 	private int typeCount;
 	private int converted;
-	private boolean hasX;
+	private int XCount;
 	private String costText;
 	private List<ImageIcon> icons;
     private final MagicBuilderManaCost builderCost;	
@@ -133,7 +133,7 @@ public class MagicManaCost {
 		this.costText=costText;
 		types=new MagicCostManaType[MagicCostManaType.NR_OF_TYPES];
 		amounts=new int[MagicCostManaType.NR_OF_TYPES];
-		hasX=false;
+		XCount = 0;
 		typeCount=0;
 		converted=0;
 
@@ -180,7 +180,7 @@ public class MagicManaCost {
 	private boolean addType(final String typeText) {
 		final String symbol = typeText.substring(1, typeText.length() - 1);
 		if (symbol.equals("X")) {
-			hasX=true;
+			XCount++;
 			return true;
 		} else if (isNumeric(symbol)) {
 			addType(MagicCostManaType.Colorless,Integer.parseInt(symbol));
@@ -219,8 +219,11 @@ public class MagicManaCost {
 		return costText;
 	}
 	
+    public int getXCount() {
+		return XCount;
+	}
 	public boolean hasX() {
-		return hasX;
+		return XCount > 0;
 	}
 				
 	public MagicCondition getCondition() {
@@ -261,7 +264,7 @@ public class MagicManaCost {
 	private void buildIcons() {
 		
 		icons=new ArrayList<ImageIcon>();
-		if (hasX) {
+		for (int x=XCount;x>0;x--) {
 			icons.add(IconImages.COST_X);
 		}
 		for (int i=0;i<typeCount;i++) {
@@ -330,8 +333,8 @@ public class MagicManaCost {
 		for (int index=0;index<typeCount;index++) {
 			aBuilderCost.addType(types[index],amounts[index]);
 		}
-		if (hasX) {
-			aBuilderCost.setHasX();
+		if (hasX()) {
+			aBuilderCost.setXCount(XCount);
 		}	
 		aBuilderCost.compress();
 	}

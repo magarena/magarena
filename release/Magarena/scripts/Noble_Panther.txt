@@ -1,0 +1,13 @@
+name=Noble Panther
+url=http://magiccards.info/in/en/257.html
+image=http://magiccards.info/scans/en/in/257.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Cat
+color=gw
+converted=3
+cost={1}{G}{W}
+pt=3/3
+ability=gains {1} first strike
+timing=main
