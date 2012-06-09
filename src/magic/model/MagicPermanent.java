@@ -40,6 +40,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return this;
         }
         @Override
+        public MagicPlayer getController() {
+            return MagicPlayer.NONE;
+        }
+        @Override
         public MagicPowerToughness getPowerToughness(final boolean turn) {
             return new MagicPowerToughness(0,0);
         }
@@ -243,7 +247,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public MagicPlayer getController() {
         final MagicPlayer owner = controller;
 
-        return owner; //MagicLayer.getController(getGame(), this, owner);
+        return MagicLayer.getController(getGame(), this, owner);
     }
             
     public void setState(final MagicPermanentState state) {
