@@ -1,0 +1,13 @@
+name=Bonfire of the Damned
+url=http://magiccards.info/avr/en/129.html
+image=http://magiccards.info/scans/en/avr/129.jpg
+value=4
+removal=2
+rarity=M
+type=Sorcery
+color=r
+converted=1
+cost={X}{X}{R}
+timing=removal
+ability=miracle {X}{R}
+requires_card_code
