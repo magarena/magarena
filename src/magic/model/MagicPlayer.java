@@ -408,7 +408,10 @@ public class MagicPlayer implements MagicTarget {
     }
     
     public int getMaximumX(final MagicGame game,final MagicManaCost cost) {
-        return getManaActivationsCount(game)-builderCost.getMinimumAmount()-cost.getConvertedCost();
+        return (getManaActivationsCount(game) -
+        		builderCost.getMinimumAmount() -
+        		cost.getConvertedCost()) /
+        		cost.getXCount();
     }
 
     public int getNrOfAttackers() {
