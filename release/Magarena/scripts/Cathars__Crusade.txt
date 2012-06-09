@@ -1,0 +1,11 @@
+name=Cathars' Crusade
+url=http://magiccards.info/avr/en/10.html
+image=http://magiccards.info/scans/en/avr/10.jpg
+value=4
+rarity=R
+type=Enchantment
+color=w
+converted=5
+cost={3}{W}{W}
+timing=enchantment
+requires_card_code
