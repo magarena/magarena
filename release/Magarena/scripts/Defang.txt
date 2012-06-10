@@ -1,0 +1,13 @@
+name=Defang
+url=http://magiccards.info/avr/en/15.html
+image=http://magiccards.info/scans/en/avr/15.jpg
+value=2
+rarity=C
+type=Enchantment
+subtype=Aura
+color=w
+converted=2
+cost={1}{W}
+timing=aura
+enchant=can't attack or block,neg creature
+requires_card_code
