@@ -1,0 +1,13 @@
+name=Commander's Authority
+url=http://magiccards.info/avr/en/13.html
+image=http://magiccards.info/scans/en/avr/13.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=w
+converted=5
+cost={4}{W}
+timing=aura
+enchant=pump,pos creature
+requires_card_code
