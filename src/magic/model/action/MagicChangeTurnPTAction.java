@@ -2,6 +2,9 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPowerToughness;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 
 public class MagicChangeTurnPTAction extends MagicAction {
 
@@ -17,14 +20,20 @@ public class MagicChangeTurnPTAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-		permanent.changeTurnPower(power);
-		permanent.changeTurnToughness(toughness);
-		game.setStateCheckRequired();
+        game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
+                MagicLayer.ModPT,
+                MagicStatic.UntilEOT) {
+            @Override
+            public void getPowerToughness(
+                    final MagicGame game,
+                    final MagicPermanent permanent,
+                    final MagicPowerToughness pt) {
+                pt.add(power, toughness);
+            }   
+        }));
 	}
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		permanent.changeTurnPower(-power);
-		permanent.changeTurnToughness(-toughness);
 	}
 }

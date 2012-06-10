@@ -93,8 +93,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             MagicPermanentState.Summoned.getMask() |
             MagicPermanentState.MustPayEchoCost.getMask();
     private long turnAbilityFlags=0;
-    private int turnPowerIncr=0;
-    private int turnToughnessIncr=0;
     private int abilityPlayedThisTurn=0;
     private int damage=0;
     private int preventDamage=0;
@@ -140,8 +138,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         controller = copyMap.copy(sourcePermanent.controller);
         stateFlags=sourcePermanent.stateFlags;
         turnAbilityFlags=sourcePermanent.turnAbilityFlags;
-        turnPowerIncr=sourcePermanent.turnPowerIncr;
-        turnToughnessIncr=sourcePermanent.turnToughnessIncr;
         counters=Arrays.copyOf(sourcePermanent.counters,MagicCounterType.NR_COUNTERS);
         abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
         equippedCreature=copyMap.copy(sourcePermanent.equippedCreature);
@@ -202,8 +198,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             counters[2],
             counters[3],
             turnAbilityFlags,
-            turnPowerIncr,
-            turnToughnessIncr,
             abilityPlayedThisTurn,
             damage,
             preventDamage,
@@ -377,12 +371,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 mstatic.getPowerToughness(game, perm, perm.cachedPowerToughness);
             }
         }}}}
-        
-        //apply turn effects
-        for (final MagicPlayer player : game.getPlayers()) {
-        for (final MagicPermanent perm : player.getPermanents()) {
-            perm.cachedPowerToughness.add(perm.turnPowerIncr, perm.turnToughnessIncr);
-        }}
     }
 
     public void setState(final MagicPermanentState state) {
@@ -464,30 +452,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getPowerToughness(true).getPositiveToughness();
     }
     
-    public int getTurnPower() {
-        return turnPowerIncr;
-    }
-    
-    public void setTurnPower(final int power) {
-        turnPowerIncr=power;
-    }
-    
-    public void changeTurnPower(final int amount) {
-        turnPowerIncr+=amount;
-    }
-    
-    public int getTurnToughness() {
-        return turnToughnessIncr;
-    }
-    
-    public void setTurnToughness(final int toughness) {
-        turnToughnessIncr=toughness;
-    }
-    
-    public void changeTurnToughness(final int amount) {
-        turnToughnessIncr+=amount;
-    }
-            
     public void setTurnAbilityFlags(final long flags) {
         turnAbilityFlags=flags;
     }

@@ -8,8 +8,6 @@ public class MagicCleanupCreatureAction extends MagicAction {
 
 	private final MagicPermanent permanent;
 	private long oldTurnAbilityFlags;
-	private int oldTurnPower;
-	private int oldTurnToughness;
 	private int oldAbilityPlayedThisTurn;
 	private int oldDamage;
 	private int oldPreventDamage;
@@ -23,10 +21,6 @@ public class MagicCleanupCreatureAction extends MagicAction {
 	public void doAction(final MagicGame game) {
 		oldTurnAbilityFlags=permanent.getTurnAbilityFlags();
 		permanent.setTurnAbilityFlags(0);
-		oldTurnPower=permanent.getTurnPower();
-		permanent.setTurnPower(0);
-		oldTurnToughness=permanent.getTurnToughness();
-		permanent.setTurnToughness(0);
 		oldAbilityPlayedThisTurn=permanent.getAbilityPlayedThisTurn();
 		permanent.setAbilityPlayedThisTurn(0);
 		oldDamage=permanent.getDamage();
@@ -40,8 +34,6 @@ public class MagicCleanupCreatureAction extends MagicAction {
 	@Override
 	public void undoAction(final MagicGame game) {
 		permanent.setTurnAbilityFlags(oldTurnAbilityFlags);
-		permanent.setTurnPower(oldTurnPower);
-		permanent.setTurnToughness(oldTurnToughness);
 		permanent.setAbilityPlayedThisTurn(oldAbilityPlayedThisTurn);
 		permanent.setDamage(oldDamage);
 		permanent.setPreventDamage(oldPreventDamage);
