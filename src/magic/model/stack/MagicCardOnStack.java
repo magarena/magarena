@@ -3,7 +3,6 @@ package magic.model.stack;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;

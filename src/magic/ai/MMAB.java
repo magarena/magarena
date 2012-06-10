@@ -3,7 +3,6 @@ package magic.ai;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
-import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;

@@ -1,6 +1,5 @@
 package magic.model.event;
 
-import magic.data.CardDefinitions;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
