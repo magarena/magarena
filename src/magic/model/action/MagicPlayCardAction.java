@@ -25,7 +25,6 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 	private final int action;
 	
 	public MagicPlayCardAction(final MagicCard card,final MagicPlayer controller,final int action) {
-
 		this.card=card;
 		this.controller=controller;
 		this.action=action;
@@ -33,7 +32,6 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 
 	@Override
 	protected MagicPermanent createPermanent(final MagicGame game) {
-
 		final MagicPermanent permanent=game.createPermanent(card,controller);
 		switch (action) {
 			case PERSIST:
