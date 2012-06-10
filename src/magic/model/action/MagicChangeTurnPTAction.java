@@ -10,7 +10,6 @@ public class MagicChangeTurnPTAction extends MagicAction {
 	private final int toughness;
 	
 	public MagicChangeTurnPTAction(final MagicPermanent permanent,final int power,final int toughness) {
-		
 		this.permanent=permanent;
 		this.power=power;
 		this.toughness=toughness;
@@ -18,7 +17,6 @@ public class MagicChangeTurnPTAction extends MagicAction {
 	
 	@Override
 	public void doAction(final MagicGame game) {
-
 		permanent.changeTurnPower(power);
 		permanent.changeTurnToughness(toughness);
 		game.setStateCheckRequired();
@@ -26,7 +24,6 @@ public class MagicChangeTurnPTAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		permanent.changeTurnPower(-power);
 		permanent.changeTurnToughness(-toughness);
 	}
