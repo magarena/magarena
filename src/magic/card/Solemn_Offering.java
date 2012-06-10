@@ -39,9 +39,9 @@ public class Solemn_Offering {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
+                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
                 }
 			});
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],4));
 		}
 	};
 }
