@@ -1,0 +1,11 @@
+name=Defy Death
+url=http://magiccards.info/avr/en/16.html
+image=http://magiccards.info/scans/en/avr/16.jpg
+value=3
+rarity=U
+type=Sorcery
+color=w
+converted=5
+cost={3}{W}{W}
+timing=main
+requires_card_code
