@@ -20,9 +20,8 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 	public void doAction(final MagicGame game) {
 		permanent=createPermanent(game);
 		final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore();
-		
-		final MagicPlayer controller=permanent.getController();
-		controller.addPermanent(permanent);
+	
+		final MagicPlayer controller = permanent.getController();
 				
 		if (enchantedPermanent.isValid()) {
 			enchantedPermanent.addAura(permanent);

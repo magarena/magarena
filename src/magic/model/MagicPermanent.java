@@ -16,6 +16,8 @@ import magic.model.event.MagicPlayAuraEvent;
 import magic.model.target.MagicTarget;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicPermanentStatic;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
@@ -93,23 +95,16 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private long turnAbilityFlags=0;
     private int turnPowerIncr=0;
     private int turnToughnessIncr=0;
-    private int turnColorFlags=NO_COLOR_FLAGS;
     private int abilityPlayedThisTurn=0;
     private int damage=0;
     private int preventDamage=0;
     private final int fixedScore;
 
-    // last known information
-    private EnumSet<MagicSubType> lastKnownSubTypeFlags;
-    private MagicPowerToughness lastKnownPowerToughness;
-    private long lastKnownAbilityFlags = 0;
-    private int lastKnownTypeFlags = 0;
-    private int lastKnownColorFlags = 0;
-
     // Allows cached retrieval of power, toughness and abilities.
-    private boolean cached=false;
-    private MagicPowerToughness cachedTurnPowerToughness;
-    private long cachedTurnAbilityFlags=0;
+    // also acts as last known information
+    private MagicPowerToughness cachedPowerToughness;
+    private MagicPlayer cachedController;
+    private long cachedAbilityFlags=0;
     private EnumSet<MagicSubType> cachedSubTypeFlags;
     private int cachedTypeFlags=0;
     private int cachedColorFlags=0;
@@ -122,11 +117,17 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         this.card=card;
         this.cardDefinition=card.getCardDefinition();
         this.controller=controller;
+        
         equipmentPermanents=new MagicPermanentSet();
         auraPermanents=new MagicPermanentSet();
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
         fixedScore=ArtificialScoringSystem.getFixedPermanentScore(this);
+        
+        if (controller != MagicPlayer.NONE) {
+            controller.addPermanent(this);
+            MagicPermanent.update(getGame());
+        }
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -138,7 +139,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         card = copyMap.copy(sourcePermanent.card);
         controller = copyMap.copy(sourcePermanent.controller);
         stateFlags=sourcePermanent.stateFlags;
-        turnColorFlags=sourcePermanent.turnColorFlags;
         turnAbilityFlags=sourcePermanent.turnAbilityFlags;
         turnPowerIncr=sourcePermanent.turnPowerIncr;
         turnToughnessIncr=sourcePermanent.turnToughnessIncr;
@@ -156,12 +156,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         damage=sourcePermanent.damage;
         preventDamage=sourcePermanent.preventDamage;
         fixedScore=sourcePermanent.fixedScore;
-        
-        lastKnownPowerToughness = sourcePermanent.lastKnownPowerToughness;
-        lastKnownAbilityFlags = sourcePermanent.lastKnownAbilityFlags;
-        lastKnownSubTypeFlags = sourcePermanent.lastKnownSubTypeFlags;
-        lastKnownTypeFlags = sourcePermanent.lastKnownTypeFlags;
-        lastKnownColorFlags = sourcePermanent.lastKnownColorFlags;
+    
+        cachedController     = copyMap.copy(sourcePermanent.cachedController);
+        cachedTypeFlags      = sourcePermanent.cachedTypeFlags;
+        cachedSubTypeFlags   = sourcePermanent.cachedSubTypeFlags;
+        cachedColorFlags     = sourcePermanent.cachedColorFlags;
+        cachedAbilityFlags   = sourcePermanent.cachedAbilityFlags;
+        cachedPowerToughness = sourcePermanent.cachedPowerToughness;
     }
     
     @Override
@@ -187,10 +188,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return !isValid();
     }
     
-    private boolean isOnBattlefield() {
-        return getController().controlsPermanent(this);
-    }
-    
     long getPermanentId() {
         final long[] input = {
             cardDefinition.getIndex(),
@@ -207,7 +204,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             turnAbilityFlags,
             turnPowerIncr,
             turnToughnessIncr,
-            turnColorFlags,
             abilityPlayedThisTurn,
             damage,
             preventDamage,
@@ -252,8 +248,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getName();
     }
         
-    public void setController(final MagicPlayer controller) {
-        this.controller=controller;
+    public void setController(final MagicPlayer aController) {
+        assert aController != null : "aController is null in setController";
+        controller = aController;
     }
 
     private MagicGame getGame() {
@@ -265,11 +262,129 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public MagicPlayer getController() {
-        final MagicPlayer owner = controller;
-
-        return MagicLayer.getController(getGame(), this, owner);
+        assert cachedController != null : "cachedController is null in " + this;
+        return cachedController;
     }
-            
+    
+    public static void update(final MagicGame game) {
+        MagicPermanent.updateController(game);
+        MagicPermanent.updateType(game);
+        MagicPermanent.updateColor(game);
+        MagicPermanent.updateAbility(game);
+        MagicPermanent.updatePT(game);
+    }
+
+    public static void updateController(final MagicGame game) {
+        //initial value
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            perm.cachedController = perm.controller;
+        }}
+
+        //apply continous effects
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Control)) {
+        final MagicStatic mstatic = mpstatic.getStatic();
+        final MagicPermanent source = mpstatic.getPermanent();
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            if (mstatic.accept(game, source, perm)) {
+                perm.cachedController = mstatic.getController(game, perm, perm.cachedController);
+            }
+        }}}
+    }
+
+    public static void updateType(final MagicGame game) {
+        //initial value
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            perm.cachedTypeFlags = perm.getCardDefinition().getTypeFlags();
+            perm.cachedSubTypeFlags = perm.getCardDefinition().getSubTypeFlags();
+        }}
+        
+        //apply continous effects
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
+        final MagicStatic mstatic = mpstatic.getStatic();
+        final MagicPermanent source = mpstatic.getPermanent();
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            if (mstatic.accept(game, source, perm)) {
+                perm.cachedTypeFlags = mstatic.getTypeFlags(perm, perm.cachedTypeFlags);
+                perm.cachedSubTypeFlags = mstatic.getSubTypeFlags(perm, perm.cachedSubTypeFlags);
+            }
+        }}}
+    }
+    
+    public static void updateColor(final MagicGame game) {
+        //initial value
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            perm.cachedColorFlags = perm.getCardDefinition().getColorFlags();
+        }}
+        
+        //apply continous effects
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Color)) {
+        final MagicStatic mstatic = mpstatic.getStatic();
+        final MagicPermanent source = mpstatic.getPermanent();
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            if (mstatic.accept(game, source, perm)) {
+                perm.cachedColorFlags = mstatic.getColorFlags(perm, perm.cachedColorFlags);
+            }
+        }}}
+    }
+    
+    public static void updateAbility(final MagicGame game) {
+        //initial value
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            perm.cachedAbilityFlags = perm.getCardDefinition().getAbilityFlags();
+        }}
+        
+        //apply continous effects
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Ability)) {
+        final MagicStatic mstatic = mpstatic.getStatic();
+        final MagicPermanent source = mpstatic.getPermanent();
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            if (mstatic.accept(game, source, perm)) {
+                perm.cachedAbilityFlags = mstatic.getAbilityFlags(game, perm, perm.cachedAbilityFlags);
+            }
+        }}}
+
+        //apply turn effects
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            perm.cachedAbilityFlags |= perm.turnAbilityFlags;
+            perm.cachedAbilityFlags &= MagicAbility.EXCLUDE_MASK;
+        }}
+    }
+    
+    public static void updatePT(final MagicGame game) {
+        //initial value
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            perm.cachedPowerToughness = perm.getCardDefinition().genPowerToughness(game, perm.getController(), perm);
+        }}
+        
+        //apply continous effects
+        for (final MagicLayer layer : EnumSet.range(MagicLayer.SetPT, MagicLayer.SwitchPT)) {
+        for (final MagicPermanentStatic mpstatic : game.getStatics(layer)) {
+        final MagicStatic mstatic = mpstatic.getStatic();
+        final MagicPermanent source = mpstatic.getPermanent();
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            if (mstatic.accept(game, source, perm)) {
+                mstatic.getPowerToughness(game, perm, perm.cachedPowerToughness);
+            }
+        }}}}
+        
+        //apply turn effects
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            perm.cachedPowerToughness.add(perm.turnPowerIncr, perm.turnToughnessIncr);
+        }}
+    }
+
     public void setState(final MagicPermanentState state) {
         stateFlags|=state.getMask();
     }
@@ -303,44 +418,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return cardDefinition.getColoredType();
     }
     
-    public void setTurnColorFlags(final int colorFlags) {
-        turnColorFlags=colorFlags;
-    }
-    
-    public int getTurnColorFlags() {
-        return turnColorFlags;
-    }
-    
     @Override
     public int getColorFlags() {
-        // Check if cached.
-        if (cached) {
-            return cachedColorFlags;
-        }
-        // Check if until end of turn color flags.
-        if (turnColorFlags!=NO_COLOR_FLAGS) {
-            return turnColorFlags;
-        }
-        
-        int flags = cardDefinition.getColorFlags();
-
-        flags = MagicLayer.getColorFlags(getGame(), this, flags);
-        
-        return flags;
+        return cachedColorFlags;
     }
         
     public void changeCounters(final MagicCounterType counterType,final int amount) {
         counters[counterType.ordinal()]+=amount;
-        if (cached) {
-            switch (counterType) {
-                case PlusOne:
-                    cachedTurnPowerToughness.add(amount,amount);
-                    break;
-                case MinusOne:
-                    cachedTurnPowerToughness.add(-amount,-amount);
-                    break;
-            }
-        }
     }
     
     public int getCounters(final MagicCounterType counterType) {
@@ -357,20 +441,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public EnumSet<MagicSubType> getSubTypeFlags() {
-        // Check if cached.
-        if (cached) {
-            return cachedSubTypeFlags;
-        }
-        
-        EnumSet<MagicSubType> flags=cardDefinition.getSubTypeFlags();
-        
-        if (getCardDefinition().hasAbility(MagicAbility.Changeling)) {
-            flags.addAll(MagicSubType.ALL_CREATURES);
-        }
-        
-        flags = MagicLayer.getSubTypeFlags(getGame(),this,flags);
-
-        return flags;
+        return cachedSubTypeFlags;
     }
 
     public boolean hasSubType(final MagicSubType subType) {
@@ -378,31 +449,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public MagicPowerToughness getPowerToughness(final boolean turn) {
-        final MagicGame game = getGame();
-        if (!isOnBattlefield()) {
-            assert lastKnownPowerToughness != null : "last known p/t is null";
-            return lastKnownPowerToughness;
-        }
-        
-        // Check if cached.
-        if (cached&&turn) {
-            assert cachedTurnPowerToughness != null : "cached p/t is null";
-            return cachedTurnPowerToughness;
-        }
-        
-        //get starting P/T from card def (includes CDA)
-        final MagicPowerToughness pt = cardDefinition.genPowerToughness(game, getController(), this);
-
-        //apply global effects
-        MagicLayer.getPowerToughness(game, this, pt);
-
-        //apply turn effects
-        if (turn) {
-            pt.add(turnPowerIncr, turnToughnessIncr);
-        }
-            
-        assert pt != null : "p/t is null";
-        return pt;
+        return cachedPowerToughness;
     }
     
     public MagicPowerToughness getPowerToughness() {
@@ -427,9 +474,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public void changeTurnPower(final int amount) {
         turnPowerIncr+=amount;
-        if (cached) {
-            cachedTurnPowerToughness.add(amount,0);
-        }
     }
     
     public int getTurnToughness() {
@@ -442,16 +486,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public void changeTurnToughness(final int amount) {
         turnToughnessIncr+=amount;
-        if (cached) {
-            cachedTurnPowerToughness.add(0,amount);
-        }
     }
             
     public void setTurnAbilityFlags(final long flags) {
         turnAbilityFlags=flags;
-        if (cached) {
-            cachedTurnAbilityFlags|=flags;
-        }
     }
     
     public long getTurnAbilityFlags() {
@@ -459,51 +497,19 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public void setLastKnownInfo() {
-        lastKnownPowerToughness = getPowerToughness();
-        lastKnownAbilityFlags = getAllAbilityFlags();
-        lastKnownSubTypeFlags = getSubTypeFlags();
-        lastKnownTypeFlags = getTypeFlags();
-        lastKnownColorFlags = getColorFlags();
     }
     
     public long getAllAbilityFlags(final boolean turn) {
-        // Check if cached.
-        if (cached&&turn) {
-            return cachedTurnAbilityFlags;
-        }    
-        long flags = getCurrentAbilityFlags();
-        if (turn) {
-            flags|=turnAbilityFlags;
-        }
-        return flags&MagicAbility.EXCLUDE_MASK;
+        return cachedAbilityFlags;
     }
 
-    private long getCurrentAbilityFlags() {
-        long flags=cardDefinition.getAbilityFlags();
-
-        //apply global effects
-        return MagicLayer.getAbilityFlags(getGame(), this, flags);
-    }
-    
     public long getAllAbilityFlags() {
         return getAllAbilityFlags(true);
     }
 
     @Override
     public boolean hasAbility(final MagicAbility ability) {
-        if (!isOnBattlefield()) {
-            return ability.hasAbility(lastKnownAbilityFlags);
-        }
-        
-        // Check if cached.
-        if (cached) {
-            return ability.hasAbility(cachedTurnAbilityFlags);
-        }
-        if (ability.hasAbility(turnAbilityFlags)) {
-            return true;
-        }
-        long flags = getCurrentAbilityFlags();
-        return ability.hasAbility(flags);
+        return ability.hasAbility(cachedAbilityFlags);
     }
     
     public int getScore() {
@@ -515,14 +521,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     void setCached(final boolean aCached) {
-        if (aCached) {
-            cachedTurnPowerToughness=getPowerToughness(true);
-            cachedTurnAbilityFlags=getAllAbilityFlags(true);
-            cachedSubTypeFlags=getSubTypeFlags();
-            cachedTypeFlags=getTypeFlags();
-            cachedColorFlags=getColorFlags();
-        } 
-        this.cached=aCached;
     }
     
     public int getDamage() {
@@ -958,16 +956,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     private int getTypeFlags() {
-        // Check if cached.
-        if (cached) {
-            return cachedTypeFlags;
-        }
-        
-        int flags = cardDefinition.getTypeFlags();
-
-        flags = MagicLayer.getTypeFlags(getGame(),this,flags);
-
-        return flags;
+        return cachedTypeFlags;
     }
     
     public boolean hasType(final MagicType type) {

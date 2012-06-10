@@ -496,6 +496,10 @@ public class MagicGame {
         //performing actions update the score
         score += action.getScore(scorePlayer);
     }
+    
+    public void update() {
+        MagicPermanent.update(this);
+    }
         
     public void undoActions() {
         //undo each action up to and including the first MagicMarkerAction
@@ -815,6 +819,7 @@ public class MagicGame {
     
     public void checkState() {
         while (stateCheckRequired) {
+            update();
             stateCheckRequired = false;
            
             //accumulate the state-based actions
