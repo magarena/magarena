@@ -17,6 +17,7 @@ public class MagicAddStaticAction extends MagicAction {
 	@Override
 	public void doAction(final MagicGame game) {
         game.addStatic(permanent, mstatic);
+        game.setStateCheckRequired();
 	}
 
 	@Override
