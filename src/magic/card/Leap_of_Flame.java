@@ -40,10 +40,10 @@ public class Leap_of_Flame {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,0));
-							game.doAction(new MagicSetAbilityAction(
-									creature,
-									MagicAbility.Flying.getMask() |
-									MagicAbility.FirstStrike.getMask()));
+                    game.doAction(new MagicSetAbilityAction(
+                            creature,
+                            MagicAbility.Flying.getMask() |
+                            MagicAbility.FirstStrike.getMask()));
                 }
 			});
 		}

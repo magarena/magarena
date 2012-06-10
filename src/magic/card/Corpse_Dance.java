@@ -51,7 +51,7 @@ public class Corpse_Dance {
 				game.doAction(new MagicReanimateAction(
 						(MagicPlayer)data[1],
 						card,
-						MagicPlayCardAction.HASTE_REMOVE_AT_END_OF_TURN));
+						MagicPlayCardAction.HASTE_UEOT_REMOVE_AT_END_OF_TURN));
 				if (MagicBuybackChoice.isYesChoice(choiceResults[1])) {
 					game.doAction(new MagicMoveCardAction(
 							cardOnStack.getCard(),

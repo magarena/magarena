@@ -92,20 +92,19 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int stateFlags = 
             MagicPermanentState.Summoned.getMask() |
             MagicPermanentState.MustPayEchoCost.getMask();
-    private long turnAbilityFlags=0;
     private int abilityPlayedThisTurn=0;
     private int damage=0;
     private int preventDamage=0;
     private final int fixedScore;
 
-    // Allows cached retrieval of power, toughness and abilities.
+    // Allows cached retrieval of controller, type, subtype, color, abilites, and p/t
     // also acts as last known information
-    private MagicPowerToughness cachedPowerToughness;
     private MagicPlayer cachedController;
-    private long cachedAbilityFlags=0;
-    private EnumSet<MagicSubType> cachedSubTypeFlags;
     private int cachedTypeFlags=0;
+    private EnumSet<MagicSubType> cachedSubTypeFlags;
     private int cachedColorFlags=0;
+    private long cachedAbilityFlags=0;
+    private MagicPowerToughness cachedPowerToughness;
 
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
@@ -137,7 +136,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         card = copyMap.copy(sourcePermanent.card);
         controller = copyMap.copy(sourcePermanent.controller);
         stateFlags=sourcePermanent.stateFlags;
-        turnAbilityFlags=sourcePermanent.turnAbilityFlags;
         counters=Arrays.copyOf(sourcePermanent.counters,MagicCounterType.NR_COUNTERS);
         abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
         equippedCreature=copyMap.copy(sourcePermanent.equippedCreature);
@@ -197,7 +195,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             counters[1],
             counters[2],
             counters[3],
-            turnAbilityFlags,
             abilityPlayedThisTurn,
             damage,
             preventDamage,
@@ -348,7 +345,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         //apply turn effects
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
-            perm.cachedAbilityFlags |= perm.turnAbilityFlags;
             perm.cachedAbilityFlags &= MagicAbility.EXCLUDE_MASK;
         }}
     }
@@ -450,14 +446,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     public int getToughness() {
         return getPowerToughness(true).getPositiveToughness();
-    }
-    
-    public void setTurnAbilityFlags(final long flags) {
-        turnAbilityFlags=flags;
-    }
-    
-    public long getTurnAbilityFlags() {
-        return turnAbilityFlags;
     }
     
     public void setLastKnownInfo() {

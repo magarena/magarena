@@ -13,6 +13,7 @@ import java.util.EnumSet;
 public abstract class MagicStatic extends MagicDummyPermanentModifier implements MagicChangeCardDefinition {
 
     public static final boolean UntilEOT = true;
+    public static final boolean Forever = !UntilEOT;
 
     //permanents affected by the static effect
     protected MagicTargetFilter filter;

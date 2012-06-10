@@ -7,7 +7,6 @@ import magic.model.MagicPermanentState;
 public class MagicCleanupCreatureAction extends MagicAction {
 
 	private final MagicPermanent permanent;
-	private long oldTurnAbilityFlags;
 	private int oldAbilityPlayedThisTurn;
 	private int oldDamage;
 	private int oldPreventDamage;
@@ -19,8 +18,6 @@ public class MagicCleanupCreatureAction extends MagicAction {
 
 	@Override
 	public void doAction(final MagicGame game) {
-		oldTurnAbilityFlags=permanent.getTurnAbilityFlags();
-		permanent.setTurnAbilityFlags(0);
 		oldAbilityPlayedThisTurn=permanent.getAbilityPlayedThisTurn();
 		permanent.setAbilityPlayedThisTurn(0);
 		oldDamage=permanent.getDamage();
@@ -33,7 +30,6 @@ public class MagicCleanupCreatureAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		permanent.setTurnAbilityFlags(oldTurnAbilityFlags);
 		permanent.setAbilityPlayedThisTurn(oldAbilityPlayedThisTurn);
 		permanent.setDamage(oldDamage);
 		permanent.setPreventDamage(oldPreventDamage);

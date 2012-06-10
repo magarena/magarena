@@ -7,6 +7,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.action.MagicSetAbilityAction;
 
 public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 
@@ -17,7 +19,7 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 	public static final int HASTE_SACRIFICE_AT_END_OF_TURN=4;
 	public static final int TAPPED_ATTACKING=5;
 	public static final int TAPPED=6;
-	public static final int HASTE_REMOVE_AT_END_OF_TURN=7;
+	public static final int HASTE_UEOT_REMOVE_AT_END_OF_TURN=7;
 	public static final int UNDYING = 8;
 	
 	private final MagicCard card;
@@ -41,12 +43,12 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 				permanent.setState(MagicPermanentState.RemoveAtEndOfTurn);
 				break;
 			case HASTE_REMOVE_AT_END_OF_YOUR_TURN:
+				game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever)); 
 				permanent.setState(MagicPermanentState.RemoveAtEndOfYourTurn);
-				permanent.setTurnAbilityFlags(permanent.getTurnAbilityFlags()|MagicAbility.Haste.getMask());
 				break;
 			case HASTE_SACRIFICE_AT_END_OF_TURN:
+				game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever)); 
 				permanent.setState(MagicPermanentState.SacrificeAtEndOfTurn);
-				permanent.setTurnAbilityFlags(permanent.getTurnAbilityFlags()|MagicAbility.Haste.getMask());				
 				break;
 			case TAPPED_ATTACKING:
 				permanent.setState(MagicPermanentState.Tapped);
@@ -55,9 +57,9 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 			case TAPPED:
 				permanent.setState(MagicPermanentState.Tapped);
 				break;
-			case HASTE_REMOVE_AT_END_OF_TURN:
+			case HASTE_UEOT_REMOVE_AT_END_OF_TURN:
+				game.doAction(new MagicSetAbilityAction(permanent, MagicAbility.Haste)); 
 				permanent.setState(MagicPermanentState.RemoveAtEndOfTurn);
-				permanent.setTurnAbilityFlags(permanent.getTurnAbilityFlags()|MagicAbility.Haste.getMask());
 				break;
 			case UNDYING:
 				permanent.changeCounters(MagicCounterType.PlusOne,1);
