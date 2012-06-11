@@ -23,7 +23,7 @@ public class Evacuation {
                     cardOnStack.getController(),
                     new Object[]{cardOnStack},
                     this,
-                    "Return all creatures to their owner's hand.");
+                    "Return all creatures to their owners' hands.");
 		}
 		@Override
 		public void executeEvent(
