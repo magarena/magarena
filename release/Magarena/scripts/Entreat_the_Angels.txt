@@ -1,0 +1,12 @@
+name=Entreat the Angels
+url=http://magiccards.info/avr/en/20.html
+image=http://magiccards.info/scans/en/avr/20.jpg
+value=4
+rarity=M
+type=Sorcery
+color=w
+converted=3
+cost={X}{X}{W}{W}{W}
+timing=main
+ability=miracle {X}{W}{W}
+requires_card_code
