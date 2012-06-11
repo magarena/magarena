@@ -39,7 +39,6 @@ public class MagicBuilderManaCost {
 		compressedAmounts=new int[typeCount];
 		int compressedIndex=0;
 		for (int index=0;index<MagicCostManaType.NR_OF_TYPES;index++) {
-
 			final int amount=amounts[index];
 			if (amount>0) {
 				compressedTypes[compressedIndex]=MagicCostManaType.values()[index];
@@ -108,8 +107,7 @@ public class MagicBuilderManaCost {
 	@Override
 	public String toString() {
 		final StringBuilder builder=new StringBuilder();
-		for (int index=0;index<compressedTypes.length;index++) {
-			
+		for (int index=0;index<compressedTypes.length;index++) {	
 			builder.append(compressedTypes[index]).append('=').append(compressedAmounts[index]).append(' ');
 		}
 		builder.append("Total=").append(minimumAmount);

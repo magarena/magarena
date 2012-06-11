@@ -1,0 +1,11 @@
+name=Demonic Rising
+url=http://magiccards.info/avr/en/94.html
+image=http://magiccards.info/scans/en/avr/94.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=5
+cost={3}{B}{B}
+timing=enchantment
+requires_card_code

@@ -1,0 +1,14 @@
+name=Demonic Taskmaster
+url=http://magiccards.info/avr/en/95.html
+image=http://magiccards.info/scans/en/avr/95.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Demon
+color=b
+converted=3
+cost={2}{B}
+pt=4/3
+ability=flying
+timing=main
+requires_card_code

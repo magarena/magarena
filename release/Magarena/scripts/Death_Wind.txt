@@ -1,0 +1,12 @@
+name=Death Wind
+url=http://magiccards.info/avr/en/93.html
+image=http://magiccards.info/scans/en/avr/93.jpg
+value=2
+removal=2
+rarity=C
+type=Instant
+color=b
+converted=1
+cost={X}{B}
+timing=removal
+requires_card_code

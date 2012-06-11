@@ -25,31 +25,26 @@ public class MagicPayManaCostChoice extends MagicChoice {
 	private final MagicManaCost cost;
 	
 	public MagicPayManaCostChoice(final MagicManaCost cost) {
-
 		super("Choose how to pay the mana cost.");
 		this.cost=cost;
 	}
 	
 	private MagicManaCost getCost() {
-
 		return cost;
 	}
 	
 	@Override
 	public int getManaChoiceResultIndex() {
-
 		return 0;
 	}
 
 	@Override
 	boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
-
 		final MagicPayManaCostResultBuilder builder=new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost());
 		return builder.hasResults();
 	}
 	
 	private Collection<Object> buildDelayedPayManaCostResults(final MagicGame game,final MagicPlayer player) {
-		
 		if (cost.hasX()) {
 			final int maxX=player.getMaximumX(game,cost);
 			if (maxX==1) {
@@ -94,7 +89,6 @@ public class MagicPayManaCostChoice extends MagicChoice {
 	
 	@Override
 	public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
-
 		controller.disableActionButton(false);
 		
 		final int x;
@@ -120,7 +114,6 @@ public class MagicPayManaCostChoice extends MagicChoice {
 		final boolean canSkip = MagicGame.canSkipSingleManaChoice();
 		
 		for (final MagicCostManaType costManaType : costManaTypes) {
-
 			if (canSkip&&builder.useAllManaSources(costManaType)) {
 				controller.update();
 				break;

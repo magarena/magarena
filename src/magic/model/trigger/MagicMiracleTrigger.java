@@ -1,22 +1,14 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
-import magic.model.MagicPayedCost;
 import magic.model.MagicManaCost;
-import magic.model.MagicLocationType;
-import magic.model.action.MagicPlayerAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicAddEventAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicCardActivation;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 
 public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {

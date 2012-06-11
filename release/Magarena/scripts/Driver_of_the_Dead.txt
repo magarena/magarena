@@ -1,0 +1,13 @@
+name=Driver of the Dead
+url=http://magiccards.info/avr/en/99.html
+image=http://magiccards.info/scans/en/avr/99.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Vampire
+color=b
+converted=4
+cost={3}{B}
+pt=3/2
+timing=main
+requires_card_code

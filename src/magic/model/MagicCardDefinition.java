@@ -10,7 +10,6 @@ import magic.model.event.MagicEquipActivation;
 import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicPlayCardEvent;
-import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.trigger.MagicTrigger;

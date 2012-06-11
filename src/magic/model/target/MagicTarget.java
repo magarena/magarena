@@ -1,7 +1,6 @@
 package magic.model.target;
 
 import magic.model.MagicCopyable;
-import magic.model.MagicGame;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicMappable;
 import magic.model.MagicPlayer;

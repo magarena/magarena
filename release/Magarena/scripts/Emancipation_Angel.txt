@@ -1,0 +1,15 @@
+name=Emancipation Angel
+url=http://magiccards.info/avr/en/19.html
+image=http://magiccards.info/scans/en/avr/19.jpg
+value=3
+removal=2
+rarity=U
+type=Creature
+subtype=Angel
+color=w
+converted=3
+cost={1}{W}{W}
+pt=3/3
+ability=flying
+timing=main
+requires_card_code

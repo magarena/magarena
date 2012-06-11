@@ -1,0 +1,14 @@
+name=Craterhoof Behemoth
+url=http://magiccards.info/avr/en/172.html
+image=http://magiccards.info/scans/en/avr/172.jpg 
+value=5
+rarity=M
+type=Creature
+subtype=Beast
+color=g
+converted=8
+cost={5}{G}{G}{G}
+pt=5/5
+ability=haste
+timing=fmain
+requires_card_code

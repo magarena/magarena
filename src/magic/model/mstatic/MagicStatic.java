@@ -1,6 +1,5 @@
 package magic.model.mstatic;
 
-import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;

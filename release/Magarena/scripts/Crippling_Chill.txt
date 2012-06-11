@@ -1,0 +1,11 @@
+name=Crippling Chill
+url=http://magiccards.info/avr/en/46.html
+image=http://magiccards.info/scans/en/avr/46.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=3
+cost={2}{U}
+timing=tapping
+requires_card_code

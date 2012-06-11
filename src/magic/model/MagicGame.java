@@ -592,8 +592,7 @@ public class MagicGame {
         for (final MagicPermanent attacker : result) {
             names.add(attacker.getName());
         }
-        final String playerName = player.getName();
-        final StringBuilder builder = new StringBuilder(playerName + " attacks with ");
+        final StringBuilder builder = new StringBuilder(player + " attacks with ");
         MagicMessage.addNames(builder,names);
         builder.append('.');
         logBook.add(new MagicMessage(this,player,builder.toString()));
@@ -612,8 +611,7 @@ public class MagicGame {
         if (names.isEmpty()) {
             return;
         }
-        final String playerName = player.getName();
-        final StringBuilder builder=new StringBuilder(playerName + " blocks with ");
+        final StringBuilder builder = new StringBuilder(player + " blocks with ");
         MagicMessage.addNames(builder,names);
         builder.append('.');
         logBook.add(new MagicMessage(this,player,builder.toString()));
@@ -627,8 +625,8 @@ public class MagicGame {
         logAppendEvent(event,choiceResults);
     
         // Payed cost.
-        if (choiceResults.length==1) {
-            payedCost.set(choiceResults[0]);
+        if (choiceResults.length > 0) {
+            payedCost.set(choiceResults[choiceResults.length - 1]);
         }
         
         event.executeEvent(this,choiceResults);

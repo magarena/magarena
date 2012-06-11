@@ -3,7 +3,6 @@ package magic.model.stack;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCard;
 import magic.model.event.MagicActivation;
 
 import java.util.Arrays;

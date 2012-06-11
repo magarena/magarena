@@ -1,0 +1,13 @@
+name=Crypt Creeper
+url=http://magiccards.info/avr/en/91.html
+image=http://magiccards.info/scans/en/avr/91.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=3
+cost={1}{B}
+pt=2/1
+timing=main
+requires_card_code

@@ -1,6 +1,5 @@
 package magic.model.trigger;
 
-import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;

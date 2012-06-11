@@ -1,0 +1,12 @@
+name=Eaten by Spiders
+url=http://magiccards.info/avr/en/177.html
+image=http://magiccards.info/scans/en/avr/177.jpg
+value=3
+removal=3
+rarity=U
+type=Instant
+color=g
+converted=3
+cost={2}{G}
+timing=removal
+requires_card_code
