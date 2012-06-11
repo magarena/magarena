@@ -823,7 +823,7 @@ public class MagicGame {
             stateCheckRequired = false;
            
             //accumulate the state-based actions
-            final List<MagicAction> stateBasedActions = new ArrayList<MagicAction>(100);
+            final List<MagicAction> stateBasedActions = new ArrayList<MagicAction>();
         
             // Check if a player has lost
             for (final MagicPlayer player : players) {
