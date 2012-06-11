@@ -11,6 +11,7 @@ import magic.model.action.MagicGainControlAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicSoulbondAction;
+import magic.model.action.MagicChangeControlAction;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicPlayAuraEvent;
 import magic.model.target.MagicTarget;
@@ -21,6 +22,7 @@ import magic.model.mstatic.MagicPermanentStatic;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.EnumSet;
 import java.util.List;
@@ -78,7 +80,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private final long id;
     private final MagicCardDefinition cardDefinition;
     private final MagicCard card;
-    private MagicPlayer controller;
+    private final MagicPlayer firstController;
     private MagicPermanent equippedCreature = MagicPermanent.NONE;
     private final MagicPermanentSet equipmentPermanents;    
     private MagicPermanent enchantedCreature = MagicPermanent.NONE;
@@ -96,6 +98,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     private int damage=0;
     private int preventDamage=0;
     private final int fixedScore;
+    private int score;
 
     // Allows cached retrieval of controller, type, subtype, color, abilites, and p/t
     // also acts as last known information
@@ -109,11 +112,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
 
-    public MagicPermanent(final long id,final MagicCard card,final MagicPlayer controller) {
-        this.id=id;
-        this.card=card;
-        this.cardDefinition=card.getCardDefinition();
-        this.controller=controller;
+    public MagicPermanent(final long aId,final MagicCard aCard,final MagicPlayer aController) {
+        id = aId;
+        card = aCard;
+        cardDefinition = card.getCardDefinition();
+        firstController = aController;
         
         equipmentPermanents=new MagicPermanentSet();
         auraPermanents=new MagicPermanentSet();
@@ -121,8 +124,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         exiledCards = new MagicCardList();
         fixedScore=ArtificialScoringSystem.getFixedPermanentScore(this);
         
-        if (controller != MagicPlayer.NONE) {
-            controller.addPermanent(this);
+        if (firstController != MagicPlayer.NONE) {
+            firstController.addPermanent(this);
             MagicPermanent.update(getGame());
         }
     }
@@ -134,7 +137,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         copyMap.put(sourcePermanent, this);
         
         card = copyMap.copy(sourcePermanent.card);
-        controller = copyMap.copy(sourcePermanent.controller);
+        firstController = copyMap.copy(sourcePermanent.firstController);
         stateFlags=sourcePermanent.stateFlags;
         counters=Arrays.copyOf(sourcePermanent.counters,MagicCounterType.NR_COUNTERS);
         abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
@@ -166,7 +169,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     
     @Override
     public MagicPermanent map(final MagicGame game) {
-        final MagicPlayer mappedController=controller.map(game);
+        final MagicPlayer mappedController=getController().map(game);
         return mappedController.getPermanents().getPermanent(id);
     }
     
@@ -238,11 +241,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public String toString() {
         return getName();
     }
-        
-    public void setController(final MagicPlayer aController) {
-        assert aController != null : "aController is null in setController";
-        controller = aController;
-    }
 
     private MagicGame getGame() {
         return getOwner().getGame();
@@ -263,13 +261,30 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         MagicPermanent.updateColor(game);
         MagicPermanent.updateAbility(game);
         MagicPermanent.updatePT(game);
+        MagicPermanent.updateScoreFixController(game);
+    }
+    
+    public static void updateScoreFixController(final MagicGame game) {
+        final List<MagicAction> actions = new ArrayList<MagicAction>();
+        for (final MagicPlayer player : game.getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            final MagicPlayer curr = perm.getController();
+            if (!curr.controlsPermanent(perm)) {
+                actions.add(new MagicChangeControlAction(curr, perm, perm.getScore()));
+            } 
+            perm.updateScore();
+        }}
+
+        for (final MagicAction action : actions) {
+            game.doAction(action);
+        }
     }
 
     public static void updateController(final MagicGame game) {
         //initial value
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
-            perm.cachedController = perm.controller;
+            perm.cachedController = perm.firstController;
         }}
 
         //apply continous effects
@@ -463,9 +478,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public boolean hasAbility(final MagicAbility ability) {
         return ability.hasAbility(cachedAbilityFlags);
     }
+        
+    private void updateScore() {
+        score = fixedScore + ArtificialScoringSystem.getVariablePermanentScore(this);
+    }
     
     public int getScore() {
-        return fixedScore + ArtificialScoringSystem.getVariablePermanentScore(this);
+        return score;
     }
     
     public int getStaticScore() {
@@ -614,7 +633,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         if (isCreature()) {
             final int toughness=getToughness();
             if (toughness<=0) {
-                game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
+                game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
                 actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
                 actions.add(new MagicChangeStateAction(this,MagicPermanentState.Destroyed,false));
@@ -637,7 +656,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             if (!enchantedCreature.isValid() || 
                 !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
                 enchantedCreature.hasProtectionFrom(this)) {
-                game.logAppendMessage(controller,getName()+" is put into its owner's graveyard.");
+                game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
                 actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             }
         } 
@@ -960,7 +979,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
 
         // Can't be the target of spells or abilities your opponents controls.
-        if (MagicAbility.CannotBeTheTarget.hasAbility(flags) && source.getController() != controller) {
+        if (MagicAbility.CannotBeTheTarget.hasAbility(flags) && source.getController() != getController()) {
             return false;
         }
 
@@ -997,19 +1016,19 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     public boolean endOfTurn(final MagicGame game) {
         if (MagicPermanentState.RemoveAtEndOfTurn.hasState(stateFlags)) {
-            game.logAppendMessage(controller,"Exile "+this.getName()+" (end of turn).");
+            game.logAppendMessage(getController(),"Exile "+this.getName()+" (end of turn).");
             game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
             return true;
-        } else if (MagicPermanentState.RemoveAtEndOfYourTurn.hasState(stateFlags)&&controller==game.getTurnPlayer()) {
-            game.logAppendMessage(controller,"Exile "+this.getName()+" (end of turn).");
+        } else if (MagicPermanentState.RemoveAtEndOfYourTurn.hasState(stateFlags) && getController()==game.getTurnPlayer()) {
+            game.logAppendMessage(getController(),"Exile "+this.getName()+" (end of turn).");
             game.doAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Exile));
             return true;
         } else if (MagicPermanentState.SacrificeAtEndOfTurn.hasState(stateFlags)) {
-            game.logAppendMessage(controller,"Sacrifice "+this.getName()+" (end of turn).");
+            game.logAppendMessage(getController(),"Sacrifice "+this.getName()+" (end of turn).");
             game.doAction(new MagicSacrificeAction(this));
             return true;
         } else if (MagicPermanentState.ReturnToOwnerAtEndOfTurn.hasState(stateFlags)) {
-            game.logAppendMessage(controller,"Return "+this.getName()+" to its owner (end of turn).");
+            game.logAppendMessage(getController(),"Return "+this.getName()+" to its owner (end of turn).");
             game.doAction(new MagicChangeStateAction(this,MagicPermanentState.ReturnToOwnerAtEndOfTurn,false));
             game.doAction(new MagicGainControlAction(getOwner(),this));
             return true;

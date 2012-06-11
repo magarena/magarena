@@ -18,6 +18,7 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.mstatic.MagicStatic;
 
 public class Zealous_Conscripts {
 	public static final Object T = new MagicWhenComesIntoPlayTrigger() {
@@ -38,8 +39,7 @@ public class Zealous_Conscripts {
 		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
-                    game.doAction(new MagicGainControlAction((MagicPlayer)data[1],perm));
-                    game.doAction(new MagicChangeStateAction(perm,MagicPermanentState.ReturnToOwnerAtEndOfTurn,true));
+                    game.doAction(new MagicGainControlAction((MagicPlayer)data[1],perm,MagicStatic.UntilEOT));
                     game.doAction(new MagicUntapAction(perm));
                     game.doAction(new MagicSetAbilityAction(perm,MagicAbility.Haste));
                 }
