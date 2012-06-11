@@ -1,0 +1,12 @@
+name=Favorable Winds
+url=http://magiccards.info/avr/en/51.html
+image=http://magiccards.info/scans/en/avr/51.jpg
+value=3
+rarity=U
+type=Enchantment
+color=u
+converted=2
+cost={1}{U}
+static=player
+timing=enchantment
+requires_card_code

@@ -1,0 +1,14 @@
+name=Falkenrath Exterminator
+url=http://magiccards.info/avr/en/134.html
+image=http://magiccards.info/scans/en/avr/134.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Vampire,Archer
+color=r
+converted=2
+cost={1}{R}
+pt=1/1
+ability=combat damage grow player
+timing=main
+requires_card_code

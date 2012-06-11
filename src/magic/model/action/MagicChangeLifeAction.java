@@ -25,6 +25,8 @@ public class MagicChangeLifeAction extends MagicAction {
 		setScore(player,ArtificialScoringSystem.getLifeScore(newLife)-ArtificialScoringSystem.getLifeScore(oldLife));
 		if (newLife > oldLife) {
 			game.executeTrigger(MagicTriggerType.WhenLifeIsGained,new Object[]{player,newLife-oldLife});
+		} else if (newLife < oldLife) {
+			game.executeTrigger(MagicTriggerType.WhenLifeIsLost,new Object[]{player,oldLife-newLife});
 		}
 		game.setStateCheckRequired();
 	}

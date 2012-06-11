@@ -1,0 +1,11 @@
+name=Essence Harvest
+url=http://magiccards.info/avr/en/100.html
+image=http://magiccards.info/scans/en/avr/100.jpg
+value=2
+rarity=C
+type=Sorcery
+color=b
+converted=3
+cost={2}{B}
+timing=removal
+requires_card_code
