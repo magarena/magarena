@@ -1,0 +1,13 @@
+name=Evernight Shade
+url=http://magiccards.info/avr/en/101.html
+image=http://magiccards.info/scans/en/avr/101.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Shade
+color=b
+converted=4
+cost={3}{B}
+pt=1/1
+ability=pump {B} +1/+1,undying
+timing=main
