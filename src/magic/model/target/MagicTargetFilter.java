@@ -1731,6 +1731,26 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+    // Permanent reference can not be used because game is copied.
+	public static final class MagicPermanentTargetFilter implements MagicTargetFilter {
+
+        private final long id;		
+
+		public MagicPermanentTargetFilter(final MagicPermanent validPermanent) {
+			id = validPermanent.getId();
+		}
+
+		@Override
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			return target.isPermanent() && ((MagicPermanent)target).getId() == id;
+		}
+		
+		@Override
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	public static final class MagicPowerTargetFilter implements MagicTargetFilter {
 
 		private final MagicTargetFilter targetFilter;

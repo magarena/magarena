@@ -1146,6 +1146,10 @@ public class MagicGame {
         triggers.remove(permanentTrigger);
         turnTriggers.remove(permanentTrigger);
     }
+    
+    public void removeTrigger(final MagicPermanentTrigger permanentTrigger) {
+        triggers.remove(permanentTrigger);
+    }
 
     public List<MagicPermanentTrigger> removeTurnTriggers() {
         if (turnTriggers.isEmpty()) {
