@@ -1,0 +1,11 @@
+name=Exquisite Blood
+url=http://magiccards.info/avr/en/102.html
+image=http://magiccards.info/scans/en/avr/102.jpg
+value=4
+rarity=R
+type=Enchantment
+color=b
+converted=5
+cost={4}{B}
+timing=enchantment
+requires_card_code
