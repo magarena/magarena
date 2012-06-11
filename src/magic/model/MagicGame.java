@@ -623,8 +623,8 @@ public class MagicGame {
         logAppendEvent(event,choiceResults);
     
         // Payed cost.
-        if (choiceResults.length==1) {
-            payedCost.set(choiceResults[0]);
+        if (choiceResults.length > 0) {
+            payedCost.set(choiceResults[choiceResults.length - 1]);
         }
         
         event.executeEvent(this,choiceResults);
