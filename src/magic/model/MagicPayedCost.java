@@ -6,7 +6,7 @@ import magic.model.target.MagicTargetNone;
 
 public class MagicPayedCost {
 
-	public static final MagicPayedCost NO_COST=new MagicPayedCost();
+	public static final MagicPayedCost NO_COST = new MagicPayedCost();
 	
 	private MagicTarget target;
 	private int x;
@@ -16,17 +16,17 @@ public class MagicPayedCost {
 	}
 	
 	MagicPayedCost(final MagicCopyMap copyMap,final MagicPayedCost payedCost) {
-		target=copyMap.copy(payedCost.target);
-		x=payedCost.x;
+		target = copyMap.copy(payedCost.target);
+		x = payedCost.x;
 	}
 
 	private void clear() {
-		target=MagicTargetNone.getInstance();
-		x=0;
+		target = MagicTargetNone.getInstance();
+		x = 0;
 	}
 	
 	public void setTarget(final MagicTarget target) {
-		this.target=target;
+		this.target = target;
 	}
 	
 	public MagicTarget getTarget() {
@@ -34,7 +34,7 @@ public class MagicPayedCost {
 	}
 	
 	public void setX(final int x) {
-		this.x=x;	
+		this.x = x;	
 	}
 		
 	public int getX() {
