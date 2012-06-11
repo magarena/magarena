@@ -1,0 +1,14 @@
+name=Diregraf Escort
+url=http://magiccards.info/avr/en/174.html
+image=http://magiccards.info/scans/en/avr/174.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Cleric
+color=g
+converted=1
+cost={G}
+pt=1/1
+ability=soulbond
+given_ability=protection from Zombies
+timing=main
