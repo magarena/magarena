@@ -1,4 +1,4 @@
->Dungeon Geists
+name=Dungeon Geists
 url=http://magiccards.info/dka/en/36.html
 image=http://magiccards.info/scans/en/dka/36.jpg
 value=4
