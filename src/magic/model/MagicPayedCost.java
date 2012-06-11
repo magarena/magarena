@@ -42,12 +42,10 @@ public class MagicPayedCost {
 	}	
 	
 	void set(final Object choiceResult) {
-		if (choiceResult!=null) {
-			if (choiceResult instanceof MagicTarget) {
-				setTarget((MagicTarget)choiceResult);
-			} else if (choiceResult instanceof MagicPayManaCostResult) {
-				setX(((MagicPayManaCostResult)choiceResult).getX());
-			}
+		if (choiceResult instanceof MagicTarget) {
+			setTarget((MagicTarget)choiceResult);
+		} else if (choiceResult instanceof MagicPayManaCostResult) {
+			setX(((MagicPayManaCostResult)choiceResult).getX());
 		}
 	}
 }
