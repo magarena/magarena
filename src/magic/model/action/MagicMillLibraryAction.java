@@ -30,7 +30,10 @@ public class MagicMillLibraryAction extends MagicAction {
 				game.doAction(new MagicRemoveCardAction(milledCard,MagicLocationType.OwnersLibrary));
 				game.doAction(new MagicMoveCardAction(milledCard,MagicLocationType.OwnersLibrary,MagicLocationType.Graveyard));
 			}
-			game.logMessage(player,"You put the top "+count+" cards of your library into your graveyard.");
+			game.logMessage(
+					player,
+					player + " puts the top " + count +
+					" cards of his or her library into his or her graveyard.");
 		}
 	}
 
