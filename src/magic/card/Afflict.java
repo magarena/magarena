@@ -38,9 +38,9 @@ public class Afflict {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
+                    game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
                 }
 			});
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
 		}
 	};
 }
