@@ -33,6 +33,5 @@ public class MagicBecomesCreatureAction extends MagicAction {
 		if (!oldState) {
 			permanent.clearState(MagicPermanentState.Animated);
 		}
-		game.setStateCheckRequired();
 	}
 }

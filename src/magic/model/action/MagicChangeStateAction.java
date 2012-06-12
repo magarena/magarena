@@ -38,7 +38,6 @@ public class MagicChangeStateAction extends MagicAction {
 			} else {
 				permanent.setState(state);
 			}
-			game.setStateCheckRequired();
 		}
 	}
 }

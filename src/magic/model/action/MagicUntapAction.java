@@ -29,7 +29,6 @@ public class MagicUntapAction extends MagicAction {
 	public void undoAction(final MagicGame game) {
 		if (isTapped) {
 			permanent.setState(MagicPermanentState.Tapped);
-			game.setStateCheckRequired();
 		}
 	}
 	

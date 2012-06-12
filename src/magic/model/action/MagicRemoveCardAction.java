@@ -62,7 +62,6 @@ public class MagicRemoveCardAction extends MagicAction {
 				owner.getExile().add(index,card);
 				break;
 		}
-		game.setStateCheckRequired();
 	}
 	
 	@Override

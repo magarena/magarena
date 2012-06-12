@@ -475,6 +475,10 @@ public class MagicGame {
     }
     */
 
+    Collection<MagicAction> getActions() {
+        return actions;
+    }
+
     public int getNumActions() {
         return actions.size();
     }
@@ -500,7 +504,7 @@ public class MagicGame {
     public void update() {
         MagicPermanent.update(this);
     }
-        
+       
     public void undoActions() {
         //undo each action up to and including the first MagicMarkerAction
         MagicAction action;
@@ -508,16 +512,14 @@ public class MagicGame {
             action = actions.removeLast();
             action.undoAction(this);
         } while (!(action instanceof MagicMarkerAction));
+        update();
     }
     
     public void undoAllActions() {
         while (!actions.isEmpty()) {
             actions.removeLast().undoAction(this);
         }
-    }
-    
-    Collection<MagicAction> getActions() {
-        return actions;
+        update();
     }
     
     public void createUndoPoint() {
@@ -534,6 +536,7 @@ public class MagicGame {
             action = actions.removeLast();
             action.undoAction(this);
         } while (!(action == markerAction));
+        update();
     }
             
     public int getNrOfUndoPoints() {

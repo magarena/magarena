@@ -49,6 +49,5 @@ public class MagicChangeControlAction extends MagicAction {
         curr.removePermanent(perm);
         prev.addPermanent(perm);
         perm.clearState(MagicPermanentState.Summoned);
-        game.setStateCheckRequired();
     }
 }

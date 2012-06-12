@@ -122,6 +122,6 @@ public class MagicCombatDamageAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-        game.setStateCheckRequired();
+		
 	}
 }

@@ -54,6 +54,5 @@ public class MagicRemoveFromCombatAction extends MagicAction {
 				blockedCreature.setBlockingCreatures(blockingCreatures);
 			}
 		}
-		game.setStateCheckRequired();
 	}
 }

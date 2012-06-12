@@ -33,6 +33,6 @@ public class MagicCounterItemOnStackAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-        game.setStateCheckRequired();
+		
 	}
 }

@@ -11,12 +11,14 @@ public class MagicChangePoisonAction extends MagicAction {
 	private final int amount;
 	
 	public MagicChangePoisonAction(final MagicPlayer player,final int amount) {
+	
 		this.player=player;
 		this.amount=amount;
 	}
 	
 	@Override
 	public void doAction(final MagicGame game) {
+
 		final int oldPoison=player.getPoison();
 		final int newPoison=oldPoison+amount;
 		player.setPoison(newPoison);
@@ -26,11 +28,12 @@ public class MagicChangePoisonAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		game.setStateCheckRequired();
+
 	}
 	
 	@Override
 	public String toString() {
+
 		return getClass().getSimpleName()+" ("+player.getName()+','+amount+')';
 	}
 }

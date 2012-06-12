@@ -116,6 +116,5 @@ public class MagicDealDamageAction extends MagicAction {
 		if (oldPrevent!=UNINIT) {
 			target.setPreventDamage(oldPrevent);
 		}
-		game.setStateCheckRequired();
 	}
 }

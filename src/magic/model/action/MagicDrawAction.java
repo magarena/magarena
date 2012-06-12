@@ -57,6 +57,5 @@ public class MagicDrawAction extends MagicAction {
 			player.getLibrary().addToTop(card);
             player.decDrawnCards();
 		}
-		game.setStateCheckRequired();			
 	}
 }

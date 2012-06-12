@@ -35,6 +35,5 @@ public class MagicChangeCountersAction extends MagicAction {
 	@Override
 	public void undoAction(final MagicGame game) {
 		permanent.changeCounters(counterType,-amount);
-		game.setStateCheckRequired();
 	}
 }

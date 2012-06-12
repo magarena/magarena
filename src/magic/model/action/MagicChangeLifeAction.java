@@ -33,7 +33,7 @@ public class MagicChangeLifeAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-		game.setStateCheckRequired();
+
 	}
 	
 	@Override
