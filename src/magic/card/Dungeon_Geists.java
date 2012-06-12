@@ -66,7 +66,9 @@ public class Dungeon_Geists {
                                 MagicGame game, 
                                 MagicPermanent permanent, 
                                 MagicPermanent data) {
-                                game.doAction(new MagicRemoveStaticAction(permanent, S));
+                            	if (permanent.getId() == data.getId()) {
+                            		game.doAction(new MagicRemoveStaticAction(permanent, S));
+                            	}
                                 return MagicEvent.NONE;
                             }
                         };
