@@ -47,7 +47,6 @@ public class MagicMoveCardAction extends MagicAction {
 
 	@Override
 	public void doAction(final MagicGame game) {
-
 		// Move card.
 		if (!card.isToken()) {
 			final MagicPlayer owner=card.getOwner();
@@ -110,7 +109,6 @@ public class MagicMoveCardAction extends MagicAction {
 
 	@Override
 	public void undoAction(final MagicGame game) {
-
 		if (!card.isToken()) {
 			final MagicPlayer owner=card.getOwner();
 			switch (toLocation) {
@@ -129,5 +127,7 @@ public class MagicMoveCardAction extends MagicAction {
 					break;
 			}			
 		}
+
+		game.setStateCheckRequired();
 	}
 }

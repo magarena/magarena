@@ -43,5 +43,6 @@ public class MagicCleanupPlayerAction extends MagicAction {
 		player.setStateFlags(oldStateFlags);
 		player.setPreventDamage(oldPreventDamage);
         player.setDrawnCards(oldDrawnCards);
+		game.setStateCheckRequired();
 	}
 }

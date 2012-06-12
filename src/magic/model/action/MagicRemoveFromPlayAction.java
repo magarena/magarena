@@ -116,6 +116,8 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 		for (final MagicPermanentStatic permanentStatic : removedStatics) {
 			game.addStatic(permanentStatic);
 		}
+		
+        game.setStateCheckRequired();
 	}
 
 	@Override

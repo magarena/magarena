@@ -67,6 +67,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 		permanent.getController().removePermanent(permanent);
 		game.removeTriggers(permanent);
 		game.removeCardStatics(permanent);
+		game.setStateCheckRequired();
 	}
 	
 	void setEnchantedPermanent(final MagicPermanent aEnchantedPermanent) {

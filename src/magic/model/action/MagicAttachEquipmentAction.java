@@ -86,5 +86,7 @@ public class MagicAttachEquipmentAction extends MagicAction {
         if (oldEquippedCreature.isValid()) {
             oldEquippedCreature.addEquipment(equipment);
         }
+		
+        game.setStateCheckRequired();
 	}
 }

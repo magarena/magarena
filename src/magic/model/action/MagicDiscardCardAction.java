@@ -31,6 +31,7 @@ public class MagicDiscardCardAction extends MagicAction {
 	public void undoAction(final MagicGame game) {
         if (index >= 0) {
     		player.addCardToHand(card,index);
+            game.setStateCheckRequired();
         }
 	}
 }
