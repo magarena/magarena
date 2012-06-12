@@ -23,8 +23,8 @@ public class MagicAddStaticAction extends MagicAction {
 	@Override
 	public void undoAction(final MagicGame game) {
         game.removeStatic(permanent, mstatic);
+        game.setStateCheckRequired();
 	}
-	
 	
 	@Override
 	public String toString() {
