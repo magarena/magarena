@@ -44,7 +44,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return this;
         }
         @Override
-        public MagicPowerToughness getPowerToughness(final boolean turn) {
+        public MagicPowerToughness getPowerToughness() {
             return new MagicPowerToughness(0,0);
         }
         @Override
@@ -68,7 +68,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             return false;
         }
         @Override
-        public long getAllAbilityFlags(final boolean turn) {
+        public long getAllAbilityFlags() {
             return 0L;
         }
         @Override
@@ -343,7 +343,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         //initial value
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
-            perm.cachedAbilityFlags = perm.getCardDefinition().getAbilityFlags();
+            perm.cachedAbilityFlags = perm.getCardDefinition().getAbilityFlags() & MagicAbility.EXCLUDE_MASK;
         }}
         
         //apply continous effects
@@ -356,12 +356,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 perm.cachedAbilityFlags = mstatic.getAbilityFlags(game, perm, perm.cachedAbilityFlags);
             }
         }}}
-
-        //apply turn effects
-        for (final MagicPlayer player : game.getPlayers()) {
-        for (final MagicPermanent perm : player.getPermanents()) {
-            perm.cachedAbilityFlags &= MagicAbility.EXCLUDE_MASK;
-        }}
     }
     
     public static void updatePT(final MagicGame game) {
@@ -447,31 +441,23 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return subType.hasSubType(getSubTypeFlags());
     }
 
-    public MagicPowerToughness getPowerToughness(final boolean turn) {
+    public MagicPowerToughness getPowerToughness() {
         return cachedPowerToughness;
     }
     
-    public MagicPowerToughness getPowerToughness() {
-        return getPowerToughness(true);
-    }
-        
     public int getPower() {
-        return getPowerToughness(true).getPositivePower();
+        return getPowerToughness().getPositivePower();
     }
     
     public int getToughness() {
-        return getPowerToughness(true).getPositiveToughness();
+        return getPowerToughness().getPositiveToughness();
     }
     
     public void setLastKnownInfo() {
     }
     
-    public long getAllAbilityFlags(final boolean turn) {
-        return cachedAbilityFlags;
-    }
-
     public long getAllAbilityFlags() {
-        return getAllAbilityFlags(true);
+        return cachedAbilityFlags;
     }
 
     @Override

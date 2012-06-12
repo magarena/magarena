@@ -97,8 +97,9 @@ public class ArtificialScoringSystem {
 			score+=getTappedScore(permanent);
 		}
 		if (permanent.isCreature()) {
-			final MagicPowerToughness pt=permanent.getPowerToughness(false);
-			final long abilityFlags=permanent.getAllAbilityFlags(false);
+            // used to consider pt and abilities without EOT effects, now includes EOT effects
+			final MagicPowerToughness pt=permanent.getPowerToughness();
+			final long abilityFlags=permanent.getAllAbilityFlags();
 			score+=pt.power()*300+pt.getPositiveToughness()*200+MagicAbility.getScore(abilityFlags)*(pt.getPositivePower()+1)/2;
 			score+=permanent.getEquipmentPermanents().size()*50+permanent.getAuraPermanents().size()*100;
 		} 
