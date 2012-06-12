@@ -287,7 +287,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             perm.cachedController = perm.firstController;
         }}
 
-        //apply continous effects
+        //apply continuous effects
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Control)) {
         final MagicStatic mstatic = mpstatic.getStatic();
         final MagicPermanent source = mpstatic.getPermanent();
@@ -307,7 +307,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             perm.cachedSubTypeFlags = perm.getCardDefinition().getSubTypeFlags();
         }}
         
-        //apply continous effects
+        //apply continuous effects
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Type)) {
         final MagicStatic mstatic = mpstatic.getStatic();
         final MagicPermanent source = mpstatic.getPermanent();
@@ -327,7 +327,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             perm.cachedColorFlags = perm.getCardDefinition().getColorFlags();
         }}
         
-        //apply continous effects
+        //apply continuous effects
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Color)) {
         final MagicStatic mstatic = mpstatic.getStatic();
         final MagicPermanent source = mpstatic.getPermanent();
@@ -346,7 +346,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             perm.cachedAbilityFlags = perm.getCardDefinition().getAbilityFlags() & MagicAbility.EXCLUDE_MASK;
         }}
         
-        //apply continous effects
+        //apply continuous effects
         for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Ability)) {
         final MagicStatic mstatic = mpstatic.getStatic();
         final MagicPermanent source = mpstatic.getPermanent();
@@ -365,7 +365,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             perm.cachedPowerToughness = perm.getCardDefinition().genPowerToughness(game, perm.getController(), perm);
         }}
         
-        //apply continous effects
+        //apply continuous effects
         for (final MagicLayer layer : EnumSet.range(MagicLayer.SetPT, MagicLayer.SwitchPT)) {
         for (final MagicPermanentStatic mpstatic : game.getStatics(layer)) {
         final MagicStatic mstatic = mpstatic.getStatic();

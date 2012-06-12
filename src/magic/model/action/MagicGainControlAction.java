@@ -26,7 +26,7 @@ public class MagicGainControlAction extends MagicAction {
     
     @Override
     public void doAction(final MagicGame game) {
-        //insert continous effect
+        //insert continuous effect
         game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
                 MagicLayer.Control,
                 duration) {
