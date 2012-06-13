@@ -19,20 +19,13 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLoseControlTrigger;
 
 public class Dungeon_Geists {
-    private static final MagicTargetChoice victimChoice = new MagicTargetChoice(
-	    MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
-        true, 
-        MagicTargetHint.Negative, 
-        "target creature your opponent controls"
-    );
-    
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
             permanent,
             player,
-            victimChoice,
+	        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
             MagicEvent.NO_DATA,
             this,
             "Tap target creature opponent controls$. " + 
