@@ -165,7 +165,7 @@ tags: $(SRC)
 	ctags -R src
 
 Test%.run: $(MAG)
-	$(JAVA) -DtestGame=Test$* -jar $^
+	$(JAVA) -DtestGame=Test$* -jar $^ 2>&1 | tee Test$*.log
 
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
