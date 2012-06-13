@@ -1,0 +1,12 @@
+name=Haunted Guardian
+url=http://magiccards.info/avr/en/216.html
+image=http://magiccards.info/scans/en/avr/216.jpg
+value=2
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+converted=2
+cost={2}
+pt=2/1
+ability=defender,first strike
+timing=main
