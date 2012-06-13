@@ -8,7 +8,7 @@ import magic.model.MagicSubType;
 
 public class Zombie_Madness_DeckGenerator extends DefaultDeckGenerator {
 
-	private final String colorText = "b";
+	private static final String colorText = "b";
 	private static final String[] cards = {
         "Cemetery Reaper", 
         "Cemetery Reaper", 
