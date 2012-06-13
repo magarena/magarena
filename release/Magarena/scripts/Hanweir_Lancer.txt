@@ -1,0 +1,14 @@
+name=Hanweir Lancer
+url=http://magiccards.info/avr/en/138.html
+image=http://magiccards.info/scans/en/avr/138.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+ability=soulbond
+given_ability=first strike
+timing=main
