@@ -80,9 +80,10 @@ public class MagicPermanentStaticMap {
             final MagicPermanentStatic permanentStatic = iterator.next();
             if (permanentStatic.getPermanent() == permanent && permanentStatic.getStatic() == mstatic) {
                 iterator.remove();
-                break;
+                return;
             }
         }
+        throw new RuntimeException("nothing to remove");
     }
     
     public Collection<MagicPermanentStatic> remove(final MagicPermanent permanent, final Collection<MagicStatic> statics) {
