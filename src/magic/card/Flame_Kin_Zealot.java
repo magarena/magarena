@@ -17,8 +17,10 @@ import java.util.Collection;
 public class Flame_Kin_Zealot {
 	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			
+		public MagicEvent executeTrigger(
+				final MagicGame game,
+				final MagicPermanent permanent,
+				final MagicPlayer player) {	
 			return new MagicEvent(
                     permanent,
                     player,
@@ -33,8 +35,9 @@ public class Flame_Kin_Zealot {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+			final Collection<MagicTarget> targets = game.filterTargets(
+					(MagicPlayer)data[0],
+					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
 			for (final MagicTarget target : targets) {
 				final MagicPermanent creature=(MagicPermanent)target;
 				game.doAction(new MagicChangeTurnPTAction(creature,1,1));
