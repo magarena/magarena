@@ -1,0 +1,11 @@
+name=Spirit
+token=Spirit1 Blue
+image=http://magiccards.info/extras/token/avacyn-restored/spirit-2.jpg
+value=1
+type=Creature
+subtype=Spirit
+color=u
+converted=0
+cost={0}
+pt=1/1
+ability=flying

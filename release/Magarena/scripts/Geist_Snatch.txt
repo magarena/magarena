@@ -1,0 +1,11 @@
+name=Geist Snatch
+url=http://magiccards.info/avr/en/55.html
+image=http://magiccards.info/scans/en/avr/55.jpg
+value=3
+rarity=C
+type=Instant
+color=u
+converted=4
+cost={2}{U}{U}
+timing=counter
+requires_card_code
