@@ -1,0 +1,13 @@
+name=Grounded
+url=http://magiccards.info/avr/en/181.html
+image=http://magiccards.info/scans/en/avr/181.jpg
+value=1
+rarity=C
+type=Enchantment
+subtype=Aura
+color=g
+converted=2
+cost={1}{G}
+timing=aura
+enchant=lose flying,neg creature
+requires_card_code

@@ -53,6 +53,7 @@ public abstract class MagicTargetPicker<T> {
         register("tap", new MagicNoCombatTargetPicker(true,true,false));
         register("indestructible", MagicIndestructibleTargetPicker.create());
         register("must attack", MagicMustAttackTargetPicker.create());
+        register("lose flying", MagicLoseFlyingTargetPicker.create());
     }
     
     public MagicTargetPicker<MagicPermanent> create(String arg) {
