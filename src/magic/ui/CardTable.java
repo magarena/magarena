@@ -201,7 +201,7 @@ public class CardTable extends JPanel implements ListSelectionListener {
 		}
 	}
 	
-	private class ManaCostCellRenderer extends DefaultTableCellRenderer {
+	private static class ManaCostCellRenderer extends DefaultTableCellRenderer {
 		private static final long serialVersionUID = 113245L;
 		
 		@Override
