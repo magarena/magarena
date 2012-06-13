@@ -49,4 +49,9 @@ public class MagicSetAbilityAction extends MagicAction {
 	@Override
 	public void undoAction(final MagicGame game) {
 	}
+	
+    @Override
+	public String toString() {
+        return super.toString() + " (" + permanent + "," + abilities + ')';
+	}
 }
