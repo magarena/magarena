@@ -19,10 +19,10 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLoseControlTrigger;
 
 public class Dungeon_Geists {
-    private static MagicTargetChoice victimChoice = new MagicTargetChoice(
+    private static final MagicTargetChoice victimChoice = new MagicTargetChoice(
 	    MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
         true, 
-        MagicTargetHint.None, 
+        MagicTargetHint.Negative, 
         "target creature your opponent controls"
     );
     
