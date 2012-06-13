@@ -28,7 +28,7 @@ public class Vampiric_Fury {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Vampire creatures you control get +2/+0 " +
+                    "Vampire creatures " + player + " controls get +2/+0 " +
                     "and gain first strike until end of turn.");
 		}
 		@Override

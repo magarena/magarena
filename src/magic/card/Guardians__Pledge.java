@@ -24,7 +24,7 @@ public class Guardians__Pledge {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "White creatures you control get +2/+2 until end of turn.");
+                    "White creatures " + player + " controls get +2/+2 until end of turn.");
 		}
 		@Override
 		public void executeEvent(

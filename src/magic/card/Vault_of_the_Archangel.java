@@ -47,8 +47,8 @@ public class Vault_of_the_Archangel {
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
-                    "Creatures you control gain deathtouch " +
-                    "and lifelink until end of turn.");
+                    "Creatures " + source.getController() +
+                    " controls gain deathtouch and lifelink until end of turn.");
 		}
 		@Override
 		public void executeEvent(

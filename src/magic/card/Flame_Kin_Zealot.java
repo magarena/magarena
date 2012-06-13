@@ -24,7 +24,8 @@ public class Flame_Kin_Zealot {
                     player,
                     new Object[]{player},
                     this,
-                    "Creatures you control get +1/+1 and gain haste until end of turn.");
+                    "Creatures " + player + " controls get " +
+                    "+1/+1 and gain haste until end of turn.");
 		}
 		@Override
 		public void executeEvent(

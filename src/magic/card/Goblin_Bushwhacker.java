@@ -52,7 +52,8 @@ public class Goblin_Bushwhacker {
                     new Object[]{cardOnStack},
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " + 
-                    "creatures you control get +1/+0 and gain haste until end of turn.");
+                    "Creatures " + cardOnStack.getController() +
+                    " controls get +1/+0 and gain haste until end of turn.");
 		}
 		@Override
 		public void executeEvent(
@@ -72,7 +73,8 @@ public class Goblin_Bushwhacker {
                         player,
                         new Object[]{player},
                         KICKED,
-					    "Creatures you control get +1/+0 and gain haste until end of turn.");
+                        "Creatures " + player +
+                        " controls get +1/+0 and gain haste until end of turn.");
 				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
 			}
 		}

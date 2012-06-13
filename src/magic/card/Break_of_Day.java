@@ -26,7 +26,7 @@ public class Break_of_Day {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Creatures you control get +1/+1 until end of turn.");
+                    "Creatures " + player + " controls get +1/+1 until end of turn.");
 		}
 		@Override
 		public void executeEvent(

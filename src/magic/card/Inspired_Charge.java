@@ -24,7 +24,7 @@ public class Inspired_Charge {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Creatures you control get +2/+1 until end of turn.");
+                    "Creatures " + player + " controls get +2/+1 until end of turn.");
 		}
 		@Override
 		public void executeEvent(

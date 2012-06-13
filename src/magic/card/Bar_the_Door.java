@@ -26,7 +26,7 @@ public class Bar_the_Door {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Creatures you control get +0/+4 until end of turn.");
+                    "Creatures " + player + " controls get +0/+4 until end of turn.");
 		}
 		@Override
 		public void executeEvent(

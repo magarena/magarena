@@ -36,8 +36,8 @@ public class Elder_of_Laurels {
                     MagicPumpTargetPicker.create(),
                     new Object[]{source.getController()},
                     this,
-                    "Target creature gets +X/+X until end of turn, " +
-                    "where X is the number of creatures you control.");
+                    "Target creature gets +X/+X until end of turn, where X " +
+                    "is the number of creatures " + source.getController() + " controls.");
 		}
 		@Override
 		public void executeEvent(

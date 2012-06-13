@@ -25,8 +25,9 @@ public class Craterhoof_Behemoth {
                     player,
                     new Object[]{player},
                     this,
-                    "Creatures you control gain trample and get +X/+X until end " +
-                    "of turn, where X is the number of creatures you control.");
+                    "Creatures " + player + " controls gain trample " +
+                    "and get +X/+X until end of turn, where X is " +
+                    "the number of creatures " + player + " controls.");
 		}
 		@Override
 		public void executeEvent(

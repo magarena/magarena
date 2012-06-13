@@ -25,7 +25,8 @@ public class Soltari_Champion {
                     player,
                     new Object[]{permanent,player},
                     this,
-                    "Other creatures you control get +1/+1 until end of turn."):
+                    "Other creatures " + player +
+                    " controls get +1/+1 until end of turn."):
                 MagicEvent.NONE;
 		}	
 		@Override

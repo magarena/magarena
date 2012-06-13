@@ -28,7 +28,7 @@ public class Essence_Harvest {
                     new Object[]{cardOnStack,player},
                     this,
                     "Target player$ loses X life and you gain X life, where " +
-                    "X is the greatest power among creatures you control.");
+                    "X is the greatest power among creatures " + player + " controls.");
 		}
 		@Override
 		public void executeEvent(

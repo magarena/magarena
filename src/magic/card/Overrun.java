@@ -26,7 +26,8 @@ public class Overrun {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Creatures you control get +3/+3 and gain trample until end of turn.");
+                    "Creatures " + player +
+                    " controls get +3/+3 and gain trample until end of turn.");
 		}
 		@Override
 		public void executeEvent(

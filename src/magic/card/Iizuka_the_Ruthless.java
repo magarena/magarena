@@ -47,7 +47,8 @@ public class Iizuka_the_Ruthless {
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
-                    "Samurai creatures you control gain double strike until end of turn.");
+                    "Samurai creatures " + source.getController() +
+                    " controls gain double strike until end of turn.");
         }
 
         @Override

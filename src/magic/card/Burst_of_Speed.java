@@ -25,7 +25,7 @@ public class Burst_of_Speed {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Until end of turn, creatures you control gain haste.");
+                    "Creatures " + player + " controls gain haste until end of turn.");
 		}
 
 		@Override

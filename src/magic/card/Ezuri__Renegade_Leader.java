@@ -85,7 +85,8 @@ public class Ezuri__Renegade_Leader {
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
-                    "Elf creatures you control get +3/+3 and gain trample until end of turn.");
+                    "Elf creatures " + source.getController() + " controls " +
+                    "get +3/+3 and gain trample until end of turn.");
         }
 
         @Override

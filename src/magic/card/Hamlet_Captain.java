@@ -23,7 +23,8 @@ public class Hamlet_Captain {
                         permanent.getController(),
                         new Object[]{permanent,permanent.getController()},
                         this,
-                        "Other Human creatures you control get +1/+1 until end of turn."):
+                        "Other Human creatures " + permanent.getController() +
+                        " controls get +1/+1 until end of turn."):
                 MagicEvent.NONE;
 		}
 		@Override
@@ -52,7 +53,8 @@ public class Hamlet_Captain {
                         permanent.getController(),
                         new Object[]{permanent,permanent.getController()},
                         this,
-                        "Other Human creatures you control get +1/+1 until end of turn."):
+                        "Other Human creatures " + permanent.getController() +
+                        " controls get +1/+1 until end of turn."):
                 MagicEvent.NONE;
 		}
 		@Override

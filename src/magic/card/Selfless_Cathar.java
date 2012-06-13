@@ -36,7 +36,8 @@ public class Selfless_Cathar {
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
-                    "Creatures you control get +1/+1 until end of turn.");
+                    "Creatures " + source.getController() +
+                    " controls get +1/+1 until end of turn.");
 		}
 
 		@Override

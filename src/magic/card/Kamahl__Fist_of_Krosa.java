@@ -94,7 +94,8 @@ public class Kamahl__Fist_of_Krosa {
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
-                    "Creatures you control get +3/+3 and gain trample until end of turn.");
+                    "Creatures " + source.getController() +
+                    " controls get +3/+3 and gain trample until end of turn.");
         }
 
         @Override

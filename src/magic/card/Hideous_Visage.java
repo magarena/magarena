@@ -25,7 +25,7 @@ public class Hideous_Visage {
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                    "Creatures you control gain intimidate until end of turn.");
+                    "Creatures " + player + " controls gain intimidate until end of turn.");
 		}
 
 		@Override

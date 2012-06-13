@@ -43,7 +43,8 @@ public class Mirror_Entity {
                     source.getController(),
                     new Object[]{source,x},
                     this,
-                    "Creatures you control become "+x+"/"+x+" and gain all creature types until end of turn.");
+                    "Creatures " + source.getController() + " controls become "+
+                    x+"/"+x+" and gain all creature types until end of turn.");
 		}
 		@Override
 		public void executeEvent(

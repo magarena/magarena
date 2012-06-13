@@ -22,7 +22,8 @@ public class Nagao__Bound_by_Honor {
                         player,
                         new Object[]{player},
                         this,
-                        "Samurai creatures you control get +1/+1 until end of turn.") :
+                        "Samurai creatures " + player +
+                        " controls get +1/+1 until end of turn.") :
                 MagicEvent.NONE;
 		}
 		
