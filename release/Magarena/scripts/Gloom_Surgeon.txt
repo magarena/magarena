@@ -1,0 +1,13 @@
+name=Gloom Surgeon
+url=http://magiccards.info/avr/en/104.html
+image=http://magiccards.info/scans/en/avr/104.jpg
+value=2
+rarity=R
+type=Creature
+subtype=Spirit
+color=b
+converted=2
+cost={1}{B}
+pt=2/1
+timing=main
+requires_card_code
