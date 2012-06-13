@@ -1,0 +1,13 @@
+name=Gryff Vanguard
+url=http://magiccards.info/avr/en/59.html
+image=http://magiccards.info/scans/en/avr/59.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Knight
+color=u
+converted=5
+cost={4}{U}
+pt=3/2
+ability=flying,enters draw card
+timing=main
