@@ -48,24 +48,26 @@ public class CardTableModel implements TableModel {
 		listeners.remove(l);
 	}
 	
-	public static final String[] COLUMN_NAMES = new String[] {	"#", // 0
-																"Name", // 1
-																"CC", // 2
-																"P", // 3
-																"T", // 4
-																"Type", // 5
-																"Subtype", // 6
-																"Rarity", // 7
-																"Text"}; // 8
-	public static final int[] COLUMN_MIN_WIDTHS = new int[] {	40, // 0 #
-																180, // 1 name
-																140, // 2 cc
-																30, // 3 P
-																30, // 4 T
-																140, // 5 type
-																140, // 6 subtype 
-																90, // 7 rarity
-																2000}; // 8 text
+    static final String[] COLUMN_NAMES = new String[] {   
+                                                "#", // 0
+                                                "Name", // 1
+                                                "CC", // 2
+                                                "P", // 3
+                                                "T", // 4
+                                                "Type", // 5
+                                                "Subtype", // 6
+                                                "Rarity", // 7
+                                                "Text"}; // 8
+    static final int[] COLUMN_MIN_WIDTHS = new int[] {   
+                                                40, // 0 #
+                                                180, // 1 name
+                                                140, // 2 cc
+                                                30, // 3 P
+                                                30, // 4 T
+                                                140, // 5 type
+                                                140, // 6 subtype 
+                                                90, // 7 rarity
+                                                2000}; // 8 text
 	public static final int COST_COLUMN_INDEX = 2;
 	
 	private final boolean isDeck;
