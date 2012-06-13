@@ -1,0 +1,14 @@
+name=Geist Trappers
+url=http://magiccards.info/avr/en/179.html
+image=http://magiccards.info/scans/en/avr/179.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Human,Warrior
+color=g
+converted=5
+cost={4}{G}
+pt=3/5
+ability=soulbond
+given_ability=reach
+timing=main
