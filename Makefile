@@ -92,7 +92,10 @@ cards/standard_all.txt:
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 	sed -i 's/Æ/AE/' $@
 
-cards/new_%.txt: release/Magarena/scripts 
+cards/new_%.txt: cards/new_scripts_%.txt cards/existing_tokens.txt
+	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
+
+cards/new_scripts_%.txt: release/Magarena/scripts
 	grep "name=" -h $$(hg diff -r $* | grep -B 1 "^--- /dev/null" | grep $^ | cut -d' ' -f4) | sed 's/name=//' > $@
 	flip -u $@
 
