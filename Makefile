@@ -48,7 +48,7 @@ warnings_H.txt: warnings.txt
 	grep "(H)" $^ | grep -v System.out | grep -v System.err | grep -v EXS > $@
 
 warnings.txt: $(MAG)
-	~/App/findbugs-2.0.0/bin/findbugs \
+	~/App/findbugs/bin/findbugs \
 			-textui \
 			-progress \
 			-sortByClass \
