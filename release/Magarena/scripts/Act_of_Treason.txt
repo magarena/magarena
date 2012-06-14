@@ -8,5 +8,5 @@ type=Sorcery
 color=r
 converted=3
 cost={2}{R}
-timing=fmain
+timing=main
 requires_card_code
