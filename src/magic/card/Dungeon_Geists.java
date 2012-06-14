@@ -16,7 +16,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.trigger.MagicWhenLoseControlTrigger;
 
 public class Dungeon_Geists {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
