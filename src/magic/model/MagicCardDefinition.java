@@ -528,12 +528,16 @@ public class MagicCardDefinition {
         return power;
     }
     
-    public int getPower(final MagicGame game, final MagicPlayer player) {
-        return genPowerToughness(game,player).power();
-    }
-
     public int getCardToughness() {
         return toughness;
+    }
+
+    public MagicPowerToughness genCardPowerToughness() {
+        return new MagicPowerToughness(power, toughness);
+    }
+    
+    public int getPower(final MagicGame game, final MagicPlayer player) {
+        return genPowerToughness(game,player).power();
     }
     
     public int getToughness(final MagicGame game, final MagicPlayer player) {
@@ -545,11 +549,19 @@ public class MagicCardDefinition {
     }
 
     public MagicPowerToughness genPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent perm) {
-        final MagicPowerToughness pt = new MagicPowerToughness(power, toughness);
+        final MagicPowerToughness pt = genCardPowerToughness();
+        applyCDAPowerToughness(game, player, perm, pt);
+        return pt;
+    }
+        
+    public void applyCDAPowerToughness(
+            final MagicGame game, 
+            final MagicPlayer player, 
+            final MagicPermanent perm,
+            final MagicPowerToughness pt) {
         for (final MagicCDA lv : CDAs) {
             lv.getPowerToughness(game, player, perm, pt);
         }
-        return pt;
     }
 
     public void setAbility(final MagicAbility ability) {
