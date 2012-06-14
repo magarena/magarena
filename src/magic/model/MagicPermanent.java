@@ -261,19 +261,14 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public static void updateScoreFixController(final MagicGame game) {
-        final List<MagicAction> actions = new ArrayList<MagicAction>();
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
             final MagicPlayer curr = perm.getController();
             if (!curr.controlsPermanent(perm)) {
-                actions.add(new MagicChangeControlAction(curr, perm, perm.getScore()));
+                game.addDelayedAction(new MagicChangeControlAction(curr, perm, perm.getScore()));
             } 
             perm.updateScore();
         }}
-
-        for (final MagicAction action : actions) {
-            game.doAction(action);
-        }
     }
 
     public static void updateProperties(final MagicGame game) {
@@ -329,7 +324,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 mstatic.getPowerToughness(game, this, cachedPowerToughness);
                 break;
             default:
-                throw new RuntimeException(layer + " not handled in MagicPermanent.apply");
+                throw new RuntimeException("No case for " + layer + " in MagicPermanent.apply");
         }
     }
 
@@ -570,17 +565,18 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         chosenTarget = target;
     }
     
-    void checkState(final MagicGame game, final List<MagicAction> actions) {
+    void checkState() {
+        final MagicGame game = getGame();
         if (isCreature()) {
             final int toughness=getToughness();
             if (toughness<=0) {
                 game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
-                actions.add(new MagicChangeStateAction(this,MagicPermanentState.Destroyed,false));
-                actions.add(new MagicDestroyAction(this));
+                game.addDelayedAction(new MagicChangeStateAction(this,MagicPermanentState.Destroyed,false));
+                game.addDelayedAction(new MagicDestroyAction(this));
             } else if (toughness-damage<=0) {
-                actions.add(new MagicDestroyAction(this));
+                game.addDelayedAction(new MagicDestroyAction(this));
             }
             
             // Soulbond
@@ -598,13 +594,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
                 enchantedCreature.hasProtectionFrom(this)) {
                 game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                actions.add(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
             }
         } 
         
         if (cardDefinition.isEquipment() && equippedCreature.isValid()) {
             if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(this)) {
-                actions.add(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
+                game.addDelayedAction(new MagicAttachEquipmentAction(this,MagicPermanent.NONE));
             }
         }
         
@@ -614,8 +610,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             final int minusCounters=getCounters(MagicCounterType.MinusOne);
             if (minusCounters>0) {
                 final int amount=-Math.min(plusCounters,minusCounters);
-                actions.add(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));
-                actions.add(new MagicChangeCountersAction(this,MagicCounterType.MinusOne,amount,false));
+                game.addDelayedAction(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));
+                game.addDelayedAction(new MagicChangeCountersAction(this,MagicCounterType.MinusOne,amount,false));
             }
         }
     }

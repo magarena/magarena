@@ -88,6 +88,7 @@ public class MagicGame {
     private MagicStep step;
     private final MagicPayedCost payedCost;    
     private final MagicActionList actions;    
+    private final MagicActionList delayedActions;    
     private MagicActionList undoPoints;
     private MagicLogBook logBook;
     private MagicLogMessageBuilder logMessageBuilder;
@@ -140,6 +141,7 @@ public class MagicGame {
         scorePlayer=visiblePlayer;
         turnPlayer=startPlayer;
         actions=new MagicActionList();
+        delayedActions=new MagicActionList();
         undoPoints=new MagicActionList();
         logBook=new MagicLogBook();
         logMessageBuilder=new MagicLogMessageBuilder(this);
@@ -202,6 +204,7 @@ public class MagicGame {
         
         //historical items are cleared
         this.actions=new MagicActionList();
+        this.delayedActions=new MagicActionList();
         this.disableLog = true;
         /*
         this.undoPoints=null;
@@ -486,6 +489,10 @@ public class MagicGame {
     public void startActions() {
         doAction(new MagicMarkerAction());
     }
+
+    public void addDelayedAction(final MagicAction action) {
+        delayedActions.add(action);
+    }
         
     public void doAction(final MagicAction action) {
         actions.add(action);
@@ -503,6 +510,14 @@ public class MagicGame {
     
     public void update() {
         MagicPermanent.update(this);
+        doDelayedActions();
+    }
+
+    private void doDelayedActions() {
+        while (!delayedActions.isEmpty()) {
+            final MagicAction action = delayedActions.removeFirst();
+            doAction(action);
+        }
     }
        
     public void undoActions() {
@@ -516,9 +531,12 @@ public class MagicGame {
     }
     
     public void undoAllActions() {
+        MagicAction action = null;
         while (!actions.isEmpty()) {
-            actions.removeLast().undoAction(this);
+            action = actions.removeLast();
+            action.undoAction(this);
         }
+        assert action instanceof MagicMarkerAction : "last action not MagicMarkerAction";
         update();
     }
     
@@ -820,34 +838,28 @@ public class MagicGame {
     
     public void checkState() {
         while (stateCheckRequired) {
-            update();
             stateCheckRequired = false;
+            
+            update();
            
-            //accumulate the state-based actions
-            final List<MagicAction> stateBasedActions = new ArrayList<MagicAction>();
-        
             // Check if a player has lost
             for (final MagicPlayer player : players) {
                 if (player.getLife() <= 0) {
-                    stateBasedActions.add(new MagicLoseGameAction(player,MagicLoseGameAction.LIFE_REASON));
+                    addDelayedAction(new MagicLoseGameAction(player,MagicLoseGameAction.LIFE_REASON));
                 }
                 if (player.getPoison() >= LOSING_POISON) {
-                    stateBasedActions.add(new MagicLoseGameAction(player,MagicLoseGameAction.POISON_REASON));
+                    addDelayedAction(new MagicLoseGameAction(player,MagicLoseGameAction.POISON_REASON));
                 }
             }
 
             // Check permanents' state
             for (final MagicPlayer player : players) {
-                for (final MagicPermanent permanent : player.getPermanents()) {
-                    permanent.checkState(this, stateBasedActions);
-                }
-            }
+            for (final MagicPermanent permanent : player.getPermanents()) {
+                permanent.checkState();
+                
+            }}
             
-            //perform all the actions at once
-            for (final MagicAction action : stateBasedActions) {
-                doAction(action);
-            }
-
+            doDelayedActions();
             //some action may set stateCheckRequired to true, if so loop again
         }
     }
