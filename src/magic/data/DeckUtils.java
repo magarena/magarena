@@ -169,7 +169,9 @@ public class DeckUtils {
             colorText.append(MagicColor.values()[index].getSymbol());
             colorCount[index]=0;
         }
-        player.setProfile(new MagicPlayerProfile(colorText.toString()));
+        final MagicPlayerProfile profile = new MagicPlayerProfile(colorText.toString());
+		profile.setPreConstructed();
+        player.setProfile(profile);
 	}
 		
     public static void showUnsupportedCards(final MagicDeck unsupported) {

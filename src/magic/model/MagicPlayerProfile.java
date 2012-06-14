@@ -5,6 +5,7 @@ public class MagicPlayerProfile {
 	private String deckGeneratorName;	
 	private String colorText;
 	private MagicColor[] colors;
+	private boolean isPreConstructed = false;
 	
 	public MagicPlayerProfile(final String colorText) {
 		this(colorText, null);
@@ -66,5 +67,13 @@ public class MagicPlayerProfile {
 			}
 		}
 		return false;
-	}			
+	}
+	
+	public void setPreConstructed() {
+		isPreConstructed = true;
+	}
+	
+	public boolean isPreConstructed() {
+		return isPreConstructed;
+	}
 }
