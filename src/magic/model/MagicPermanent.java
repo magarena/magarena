@@ -249,6 +249,10 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     public MagicPlayer getOwner() {
         return card.getOwner();
     }
+
+    public MagicPlayer getFirstController() {
+        return firstController;
+    }
     
     public MagicPlayer getController() {
         assert cachedController != null : "cachedController is null in " + this;
