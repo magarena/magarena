@@ -272,11 +272,11 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public static void updateProperties(final MagicGame game) {
-        for (final MagicPlayer player : game.getPlayers()) {
-        for (final MagicPermanent perm : player.getPermanents()) {
-            perm.init();
-        }}
         for (final MagicLayer layer : MagicLayer.values()) {
+            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPermanent perm : player.getPermanents()) {
+                perm.apply(layer);
+            }}
             for (final MagicPermanentStatic mpstatic : game.getStatics(layer)) {
                 final MagicStatic mstatic = mpstatic.getStatic();
                 final MagicPermanent source = mpstatic.getPermanent();
@@ -290,17 +290,26 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
     }
     
-    public void init() {
-        final MagicGame game = getGame();
-        cachedController = firstController;
-        cachedTypeFlags = getCardDefinition().getTypeFlags();
-        cachedSubTypeFlags = getCardDefinition().getSubTypeFlags();
-        cachedColorFlags = getCardDefinition().getColorFlags();
-        cachedAbilityFlags = getCardDefinition().getAbilityFlags() & MagicAbility.EXCLUDE_MASK;
-        cachedPowerToughness = getCardDefinition().genPowerToughness(game, getController(), this);
+    private void apply(final MagicLayer layer) {
+        final MagicCardDefinition cdef = getCardDefinition();
+        switch (layer) {
+            case Card:
+                cachedController = firstController;
+                cachedTypeFlags = cdef.getTypeFlags();
+                cachedSubTypeFlags = cdef.getSubTypeFlags();
+                cachedColorFlags = cdef.getColorFlags();
+                cachedAbilityFlags = cdef.getAbilityFlags() & MagicAbility.EXCLUDE_MASK;
+                cachedPowerToughness = cdef.genCardPowerToughness();
+                break;
+            case CDAPT:
+                cdef.applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
+                break;
+            default:
+                break;
+        }
     }
 
-    public void apply(final MagicStatic mstatic) {
+    private void apply(final MagicStatic mstatic) {
         final MagicGame game = getGame();
         final MagicLayer layer = mstatic.getLayer();
         switch (layer) {

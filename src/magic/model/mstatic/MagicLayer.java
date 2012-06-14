@@ -9,6 +9,7 @@ import magic.model.MagicPowerToughness;
 import java.util.EnumSet;
 
 public enum MagicLayer {
+    Card,        //0.  properties from the card, not formally defined in rules
     Copy,        //1.  copy 
     Control,     //2.  control changing
     Text,        //3.  text changing
