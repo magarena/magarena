@@ -1,10 +1,10 @@
-JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true 
+JAVAEA=java -ea -Xms256M -Xmx256M -Ddebug=true
 LIBS=.:lib/annotations.jar:lib/jsr305.jar
-JAVA=${JAVAEA} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar 
+JAVA=${JAVAEA} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
 SHELL=/bin/bash
 BUILD=build
 JOPTS=-Xlint:all -d $(BUILD) -cp $(LIBS):$(BUILD):.
-SRC=$(shell find src -iname *.java) 
+SRC=$(shell find src -iname *.java)
 MAG:=release/Magarena.jar
 EXE:=release/Magarena.exe
 
@@ -41,7 +41,7 @@ cards_diff: $(MAG)
 code_to_remove: $(MAG)
 	cat src/magic/card/*.java | sed 's/\s\+//g' | sed 's/(.*)/(...)/g' | sort | uniq -c | sort -n | grep publicstaticfinal | grep ");" > $@
 
-casts: $(MAG) 
+casts: $(MAG)
 	grep -n "([A-Z]\+[a-z]\+[A-Za-z]*)" -r src/ | flip -u > $@
 
 warnings_H.txt: warnings.txt
@@ -148,9 +148,9 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	cp -r Magarena.app Magarena-1.$*.app
 	cd Magarena-1.$*.app/Contents/Resources; ln -s ../../../Magarena-1.$* Java
 	chmod a+x Magarena-1.$*.app/Contents/MacOS/JavaApplicationStub
-	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app 
+	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app
 
-$(MAG): $(SRC) 
+$(MAG): $(SRC)
 	ant -f build.xml
 
 class: $(BUILD)/javac.last
@@ -161,7 +161,7 @@ $(BUILD)/javac.last: $(SRC)
 	cp -r resources/* $(BUILD)
 	touch $@
 
-tags: $(SRC) 
+tags: $(SRC)
 	ctags -R src
 
 Test%.run: $(MAG)
@@ -172,8 +172,8 @@ $(EXE): $(MAG)
 
 clean:
 	-ant clean
-	-rm $(BUILD)/javac.last
-	-rm $(MAG)
+	-rm -f $(BUILD)/javac.last
+	-rm -f $(MAG)
 
 jar: $(MAG)
 	$(JAVA) -jar $^
@@ -195,7 +195,7 @@ test: $(MAG)
 	$(JAVA) magic.DeckStrCal --deck1 release/decks/LSK_B.dec --deck2 release/decks/LSK_G.dec --ai1 $* --ai2 $* --games 100
 
 exp/%.log: $(MAG)
-	scripts/evaluate_ai.sh $* > $@ 
+	scripts/evaluate_ai.sh $* > $@
 
 decks/dd:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
@@ -203,7 +203,7 @@ decks/dd:
 decks/dd_%.dec: scripts/dailyhtml2dec.awk
 	curl "http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$*" | awk -f $^ > $@
 
-decks/ml_%.dec: scripts/apprentice2dec.awk 
+decks/ml_%.dec: scripts/apprentice2dec.awk
 	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
 
 # Mike Flores 1 - 212
