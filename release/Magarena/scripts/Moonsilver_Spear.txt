@@ -1,0 +1,13 @@
+name=Moonsilver Spear
+url=http://magiccards.info/avr/en/217.html
+image=http://magiccards.info/scans/en/avr/217.jpg
+value=4
+rarity=R
+type=Artifact
+subtype=Equipment
+converted=4
+cost={4}
+equip={4}
+given_ability=first strike
+timing=equipment
+requires_card_code
