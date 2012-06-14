@@ -22,7 +22,7 @@ public class Condemn {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_CREATURE,
-                    MagicExileTargetPicker.getInstance(), // could use a better TargetPicker
+                    MagicExileTargetPicker.create(), // could use a better TargetPicker
                     new Object[]{cardOnStack},
                     this,
                     "Put target creature$ on the bottom of its owner's library. " +

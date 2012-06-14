@@ -74,7 +74,7 @@ public class Legacy_s_Allure {
                     source,
                     source.getController(),
                     targetChoice,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
 				    new Object[]{source.getController()},
                     this,
                     "Gain control of target creature$ with power less than or " +

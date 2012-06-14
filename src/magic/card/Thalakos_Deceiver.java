@@ -25,7 +25,7 @@ public class Thalakos_Deceiver {
 	                            player + " may sacrifice " + permanent +
 	                            ". If you do, gain control of target creature.",
 	                            MagicTargetChoice.NEG_TARGET_CREATURE),
-	                    MagicExileTargetPicker.getInstance(),
+	                    MagicExileTargetPicker.create(),
 						new Object[]{permanent,player},
 						this,
 						player + " may$ sacrifice " + permanent +

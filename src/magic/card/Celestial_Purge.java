@@ -24,7 +24,7 @@ public class Celestial_Purge {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_BLACK_RED_PERMANENT,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,				
                     "Exile target black or red permanent$.");

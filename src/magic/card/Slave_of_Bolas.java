@@ -27,7 +27,7 @@ public class Slave_of_Bolas {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{cardOnStack,player},
                     this,
                     "Gain control of target creature$. Untap that creature. " + 

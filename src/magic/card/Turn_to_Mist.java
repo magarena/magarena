@@ -20,7 +20,7 @@ public class Turn_to_Mist {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Exile target creature$. Return that card to the battlefield under its owner's control at end of turn.");

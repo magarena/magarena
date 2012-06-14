@@ -28,7 +28,7 @@ public class Threaten {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
 				    new Object[]{cardOnStack,player},
 				    this,
 				    "Untap target creature$ and gain control of it until end of turn." +

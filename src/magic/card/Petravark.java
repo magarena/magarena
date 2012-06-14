@@ -18,7 +18,7 @@ public class Petravark {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_LAND,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{permanent},
                     this,
                     "Exile target land$.");

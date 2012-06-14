@@ -24,7 +24,7 @@ public class Swords_to_Plowshares {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Exile target creature$. Its controller gains life equal to its power.");

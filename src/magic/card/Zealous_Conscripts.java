@@ -28,7 +28,7 @@ public class Zealous_Conscripts {
                     permanent,
                     player,
                     MagicTargetChoice.NEG_TARGET_PERMANENT,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{permanent,player},
                     this,
 				    "Gain control of target permanent$ until end of turn. Untap that permanent. " +

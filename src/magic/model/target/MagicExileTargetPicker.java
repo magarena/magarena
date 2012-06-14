@@ -10,13 +10,14 @@ public class MagicExileTargetPicker extends MagicTargetPicker<MagicPermanent> {
 	
 	private MagicExileTargetPicker() {}
 	
+    public static MagicExileTargetPicker create() {
+		return INSTANCE;
+	}
+	
 	@Override
 	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
 		final int score=permanent.getScore();
 		return permanent.getController()==player?-score:score;
 	}
 	
-	public static MagicExileTargetPicker getInstance() {
-		return INSTANCE;
-	}
 }

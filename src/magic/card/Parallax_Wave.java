@@ -38,7 +38,7 @@ public class Parallax_Wave {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{source},
                     this,
                     "Exile target creature$.");

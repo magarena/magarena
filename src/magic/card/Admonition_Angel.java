@@ -38,7 +38,7 @@ public class Admonition_Angel {
                     permanent,
                     player,
                     mayChoice,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{permanent},
                     this,
                     player + " may$ exile another target nonland permanent$.");

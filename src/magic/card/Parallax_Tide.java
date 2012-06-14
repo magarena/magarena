@@ -38,7 +38,7 @@ public class Parallax_Tide {
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_LAND,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{source},
                     this,
                     "Exile target land$.");

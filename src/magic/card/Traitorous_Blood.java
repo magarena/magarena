@@ -28,7 +28,7 @@ public class Traitorous_Blood {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
 				    new Object[]{cardOnStack,player},
 				    this,
 				    "Gain control of target creature$ until end of turn. Untap it. " +

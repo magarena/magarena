@@ -21,7 +21,7 @@ public class Unmake {
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
                     "Exile target creature$.");

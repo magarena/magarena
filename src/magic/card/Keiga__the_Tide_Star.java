@@ -21,7 +21,7 @@ public class Keiga__the_Tide_Star {
                         permanent,
                         permanent.getController(),
                         MagicTargetChoice.TARGET_CREATURE,
-                        MagicExileTargetPicker.getInstance(),
+                        MagicExileTargetPicker.create(),
                         new Object[]{permanent.getController()},
                         this,
                         "Gain control of target creature$."):

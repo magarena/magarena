@@ -23,7 +23,7 @@ public class Archon_of_Justice {
                         permanent,
                         permanent.getController(),
                         MagicTargetChoice.TARGET_PERMANENT,
-                        MagicExileTargetPicker.getInstance(),
+                        MagicExileTargetPicker.create(),
                         MagicEvent.NO_DATA,
                         this,
                         "Exile target permanent$."):

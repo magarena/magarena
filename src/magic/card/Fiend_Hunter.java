@@ -27,7 +27,7 @@ public class Fiend_Hunter {
                     permanent,
                     player,
                     championChoice,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{permanent},
                     this,
                     player + " may$ exile another creature$.");

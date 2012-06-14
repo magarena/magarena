@@ -24,7 +24,7 @@ public class Oblivion_Ring {
                     permanent,
                     player,
                     targetChoice,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{permanent},
                     this,
                     "Exile another target nonland permanent$.");

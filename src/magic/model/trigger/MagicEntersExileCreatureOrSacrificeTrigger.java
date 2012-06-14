@@ -69,7 +69,7 @@ public class MagicEntersExileCreatureOrSacrificeTrigger extends MagicWhenComesIn
                 permanent,
                 player,
                 championChoice,
-                MagicExileTargetPicker.getInstance(),
+                MagicExileTargetPicker.create(),
                 new Object[]{permanent},
                 this,
                 "You may$ exile another " + targets + " you control$. " +

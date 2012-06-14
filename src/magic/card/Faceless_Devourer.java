@@ -24,7 +24,7 @@ public class Faceless_Devourer {
                     permanent,
                     player,
                     targetChoice,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{permanent},
                     this,
                     "Exile another creature with shadow$.");

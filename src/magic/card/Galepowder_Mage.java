@@ -22,7 +22,7 @@ public class Galepowder_Mage {
             				permanent,
             				player,
             				MagicTargetChoice.TARGET_CREATURE,
-            				MagicExileTargetPicker.getInstance(),
+            				MagicExileTargetPicker.create(),
             				MagicEvent.NO_DATA,
             				this,
             				"Exile target creature$. Return that card to the " +

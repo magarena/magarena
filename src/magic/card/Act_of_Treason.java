@@ -28,7 +28,7 @@ public class Act_of_Treason {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
 				    new Object[]{cardOnStack,player},this,
 				    "Gain control of target creature$ until end of turn. Untap that creature. " +
 				    "It gains haste until end of turn.");

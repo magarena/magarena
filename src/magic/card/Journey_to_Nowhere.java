@@ -18,7 +18,7 @@ public class Journey_to_Nowhere {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
                     new Object[]{permanent},
                     this,
                     "Exile target creature$.");

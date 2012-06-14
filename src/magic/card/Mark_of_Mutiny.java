@@ -31,7 +31,7 @@ public class Mark_of_Mutiny {
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
-                    MagicExileTargetPicker.getInstance(),
+                    MagicExileTargetPicker.create(),
 				    new Object[]{cardOnStack,player},this,
 				    "Gain control of target creature$ until end of turn. Put a +1/+1 counter on it and untap it. " +
                     "That creature gains haste until end of turn.");
