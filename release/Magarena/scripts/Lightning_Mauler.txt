@@ -1,0 +1,14 @@
+name=Lightning Mauler
+url=http://magiccards.info/avr/en/144.html
+image=http://magiccards.info/scans/en/avr/144.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Berserker
+color=r
+converted=2
+cost={1}{R}
+pt=2/1
+ability=soulbond
+given_ability=haste
+timing=main

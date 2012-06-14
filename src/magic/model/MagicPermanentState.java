@@ -25,7 +25,8 @@ public enum MagicPermanentState {
 	DestroyAtEndOfCombat("destroy at end of combat",""),
 	CannotAttack("can't attack",""),
 	NoCombatDamage("assigns no combat damage",""),
-	MustPayEchoCost("","")
+	MustPayEchoCost("",""),
+	PreventAllDamage("prevent all damage that would be dealt this turn","")
 	;
 
 	public static final int CLEANUP_MASK =

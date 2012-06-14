@@ -1,0 +1,13 @@
+name=Kruin Striker
+url=http://magiccards.info/avr/en/143.html
+image=http://magiccards.info/scans/en/avr/143.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Warrior
+color=r
+converted=2
+cost={1}{R}
+pt=2/1
+timing=main
+requires_card_code

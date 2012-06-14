@@ -1,0 +1,13 @@
+name=Latch Seeker
+url=http://magiccards.info/avr/en/63.html
+image=http://magiccards.info/scans/en/avr/63.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Spirit
+color=u
+converted=3
+cost={1}{U}{U}
+pt=3/1
+ability=unblockable
+timing=main

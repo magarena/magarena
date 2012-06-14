@@ -35,19 +35,20 @@ public class MagicDealDamageAction extends MagicAction {
 		if (target.getController().hasState(MagicPlayerState.PreventAllDamage)) {
 			return 0;
 		}
-		// Prevent all damage by abilities when target is permanent.
+		// Prevent all combat damage.
+		if (target.getController().hasState(MagicPlayerState.PreventAllCombatDamage) &&
+			damage.isCombat()) {
+			return 0;
+		}
 		if (target.isPermanent()) {
-			final MagicPermanent targetPermanent=(MagicPermanent)target;
-			if (targetPermanent.hasProtectionFrom(damage.getSource())) {
+			final MagicPermanent targetPermanent = (MagicPermanent)target;
+			if (targetPermanent.hasProtectionFrom(damage.getSource()) ||
+				targetPermanent.hasState(MagicPermanentState.PreventAllDamage)) {
 				return 0;
 			}
 		}
-		// Prevent all combat damage.
-		if (target.getController().hasState(MagicPlayerState.PreventAllCombatDamage) &&
-				damage.isCombat()) {
-			return 0;
-		}
-		// Prevent damage.
+		
+		// Prevent x amount of damage.
 		final int prevent=target.getPreventDamage();
 		if (prevent>0) {
 			final int min=Math.min(amount,prevent);

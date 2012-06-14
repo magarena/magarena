@@ -1,0 +1,11 @@
+name=Leap of Faith
+url=http://magiccards.info/avr/en/26.html
+image=http://magiccards.info/scans/en/avr/26.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=3
+cost={2}{W}
+timing=pump
+requires_card_code

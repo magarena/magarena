@@ -1,0 +1,11 @@
+name=Mass Appeal
+url=http://magiccards.info/avr/en/66.html
+image=http://magiccards.info/scans/en/avr/66.jpg
+value=2
+rarity=U
+type=Sorcery
+color=u
+converted=3
+cost={2}{U}
+timing=draw
+requires_card_code
