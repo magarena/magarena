@@ -7,5 +7,5 @@ type=Sorcery
 color=r
 converted=1
 cost={R}
-timing=removal
+timing=draw
 requires_card_code
