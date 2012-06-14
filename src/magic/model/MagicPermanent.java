@@ -307,7 +307,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
 
     public void apply(final MagicStatic mstatic) {
         final MagicGame game = getGame();
-        switch (mstatic.getLayer()) {
+        final MagicLayer layer = mstatic.getLayer();
+        switch (layer) {
             case Control:
                 cachedController = mstatic.getController(game, this, cachedController);
                 break;
@@ -323,9 +324,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 break;
             case SetPT:
             case ModPT:
+            case CountersPT:
             case SwitchPT:
                 mstatic.getPowerToughness(game, this, cachedPowerToughness);
                 break;
+            default:
+                throw new RuntimeException(layer + " not handled in MagicPermanent.apply");
         }
     }
 
