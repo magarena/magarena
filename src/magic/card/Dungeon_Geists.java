@@ -25,7 +25,7 @@ public class Dungeon_Geists {
             return new MagicEvent(
             permanent,
             player,
-	        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
+            MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
             MagicEvent.NO_DATA,
             this,
             "Tap target creature opponent controls$. " + 
@@ -44,6 +44,7 @@ public class Dungeon_Geists {
                     game.doAction(new MagicTapAction(perm, true));
                     final MagicTargetFilter filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
                     final MagicStatic S = new MagicStatic(MagicLayer.Ability,filter) {
+                            final int you = source.getController().getIndex();
                             @Override
                             public long getAbilityFlags(
                                 final MagicGame game, 
@@ -51,21 +52,21 @@ public class Dungeon_Geists {
                                 final long flags) {
                                 return flags | MagicAbility.DoesNotUntap.getMask();
                             }
-                        };
-                    game.doAction(new MagicAddStaticAction(source, S));
-                    final MagicWhenLoseControlTrigger T = new MagicWhenLoseControlTrigger() {
                             @Override
-                            public MagicEvent executeTrigger(
-                                MagicGame game, 
-                                MagicPermanent permanent, 
-                                MagicPermanent data) {
-                            	if (permanent.getId() == data.getId()) {
-                            		game.doAction(new MagicRemoveStaticAction(permanent, S));
-                            	}
-                                return MagicEvent.NONE;
+                            public boolean condition(
+                                final MagicGame game,
+                                final MagicPermanent source,
+                                final MagicPermanent target) {
+                                if (you != source.getController().getIndex()) {
+                                    //remove this static after the update
+                                    game.addDelayedAction(new MagicRemoveStaticAction(source, this));
+                                    return false;
+                                } else {
+                                    return true;
+                                }
                             }
                         };
-                    game.doAction(new MagicAddTriggerAction(source, T));
+                    game.doAction(new MagicAddStaticAction(source, S));
                 }
             });
         }
