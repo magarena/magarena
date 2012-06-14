@@ -527,7 +527,6 @@ public class MagicGame {
             action = actions.removeLast();
             action.undoAction(this);
         } while (!(action instanceof MagicMarkerAction));
-        update();
     }
     
     public void undoAllActions() {
@@ -536,8 +535,7 @@ public class MagicGame {
             action = actions.removeLast();
             action.undoAction(this);
         }
-        assert action instanceof MagicMarkerAction : "last action not MagicMarkerAction";
-        update();
+        assert action == null; 
     }
     
     public void createUndoPoint() {
@@ -554,7 +552,6 @@ public class MagicGame {
             action = actions.removeLast();
             action.undoAction(this);
         } while (!(action == markerAction));
-        update();
     }
             
     public int getNrOfUndoPoints() {

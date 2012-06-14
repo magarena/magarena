@@ -85,5 +85,7 @@ public class MagicMarkerAction extends MagicAction {
 		player2.setLife(oldLife2);
 		player2.setPoison(oldPoison2);
 		player2.setActivationPriority(oldActivationPriority2);
+
+        game.update();
 	}
 }
