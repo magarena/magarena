@@ -6,7 +6,7 @@ removal=1
 rarity=U
 type=Instant
 color=b
-converted=1
+converted=2
 cost={1}{B}
 timing=mustattack
 requires_card_code
