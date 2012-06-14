@@ -25,7 +25,7 @@ class TestDungeonGeists extends TestGameBuilder {
 
         MagicPlayer P = player;
 
-        P.setLife(4);
+        P.setLife(20);
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
 	    addToHand(P,"Dungeon Geists",1);
@@ -33,10 +33,10 @@ class TestDungeonGeists extends TestGameBuilder {
 
         P = opponent;
 		
-        P.setLife(4);
+        P.setLife(20);
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
-		createPermanent(game,P,"Darkslick Drake",false,1);
+		createPermanent(game,P,"Serra Angel",false,1);
 	    addToHand(P,"Act of Treason",1);
 		
 		return game;
