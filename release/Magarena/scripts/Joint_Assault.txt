@@ -1,0 +1,11 @@
+name=Joint Assault
+url=http://magiccards.info/avr/en/183.html
+image=http://magiccards.info/scans/en/avr/183.jpg
+value=2
+rarity=C
+type=Instant
+color=g
+converted=1
+cost={G}
+timing=pump
+requires_card_code
