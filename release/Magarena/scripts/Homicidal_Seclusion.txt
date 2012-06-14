@@ -1,0 +1,11 @@
+name=Homicidal Seclusion
+url=http://magiccards.info/avr/en/108.html
+image=http://magiccards.info/scans/en/avr/108.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=5
+cost={4}{B}
+timing=enchantment
+requires_card_code

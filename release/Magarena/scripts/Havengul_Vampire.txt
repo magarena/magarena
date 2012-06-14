@@ -1,0 +1,14 @@
+name=Havengul Vampire
+url=http://magiccards.info/avr/en/139.html
+image=http://magiccards.info/scans/en/avr/139.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Vampire
+color=r
+converted=4
+cost={3}{R}
+pt=2/2
+ability=combat damage grow player
+timing=main
+requires_card_code
