@@ -1,0 +1,11 @@
+name=Wheel of Fortune
+url=http://magiccards.info/rv/en/184.html
+image=http://magiccards.info/scans/en/rv/184.jpg
+value=2
+rarity=C
+type=Sorcery
+color=r
+converted=3
+cost={2}{R}
+timing=removal
+requires_card_code

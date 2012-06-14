@@ -1,0 +1,11 @@
+name=Phyrexian Walker
+url=http://magiccards.info/vi/en/152.html
+image=http://magiccards.info/scans/en/vi/152.jpg
+value=1
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+converted=0
+cost={0}
+pt=0/3
+timing=main

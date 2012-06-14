@@ -1,0 +1,11 @@
+name=Burning Inquiry
+url=http://magiccards.info/m10/en/128.html
+image=http://magiccards.info/scans/en/m10/128.jpg
+value=2
+rarity=C
+type=Sorcery
+color=r
+converted=1
+cost={R}
+timing=removal
+requires_card_code
