@@ -1,0 +1,10 @@
+name=Otherworld Atlas
+url=http://magiccards.info/avr/en/219.html
+image=http://magiccards.info/scans/en/avr/219.jpg
+value=4
+rarity=R
+type=Artifact
+converted=4
+cost={4}
+timing=artifact
+requires_card_code
