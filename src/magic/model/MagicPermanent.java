@@ -126,7 +126,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         
         if (firstController != MagicPlayer.NONE) {
             firstController.addPermanent(this);
-            MagicPermanent.update(getGame());
+            firstController.getGame().update();
         }
     }
 
