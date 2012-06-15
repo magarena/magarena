@@ -1,0 +1,14 @@
+name=Nearheath Pilgrim
+url=http://magiccards.info/avr/en/31.html
+image=http://magiccards.info/scans/en/avr/31.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Human,Cleric
+color=w
+converted=2
+cost={1}{W}
+pt=2/1
+ability=soulbond
+given_ability=lifelink
+timing=main

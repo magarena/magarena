@@ -1,0 +1,12 @@
+name=Natural End
+url=http://magiccards.info/avr/en/185.html
+image=http://magiccards.info/scans/en/avr/185.jpg
+value=3
+removal=1
+rarity=C
+type=Instant
+color=g
+converted=3
+cost={2}{G}
+timing=removal
+requires_card_code
