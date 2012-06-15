@@ -50,4 +50,9 @@ public class MagicChangeControlAction extends MagicAction {
         prev.addPermanent(perm);
         perm.clearState(MagicPermanentState.Summoned);
     }
+    
+    @Override
+    public String toString() {
+        return super.toString() + " (" + curr + "," + perm + ')';
+    }
 }
