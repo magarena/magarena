@@ -1,0 +1,14 @@
+name=Nightshade Peddler
+url=http://magiccards.info/avr/en/187.html
+image=http://magiccards.info/scans/en/avr/187.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Druid
+color=g
+converted=2
+cost={1}{G}
+pt=1/1
+ability=soulbond
+given_ability=deathtouch
+timing=main

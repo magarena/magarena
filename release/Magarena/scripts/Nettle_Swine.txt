@@ -1,0 +1,12 @@
+name=Nettle Swine
+url=http://magiccards.info/avr/en/186.html
+image=http://magiccards.info/scans/en/avr/186.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Boar
+color=g
+converted=4
+cost={3}{G}
+pt=4/3
+timing=main
