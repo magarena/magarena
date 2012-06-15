@@ -15,7 +15,9 @@ import magic.model.target.MagicDestroyTargetPicker;
 public class Disenchant {
 	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
 		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+		public MagicEvent getEvent(
+				final MagicCardOnStack cardOnStack,
+				final MagicPayedCost payedCost) {
 			return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
@@ -31,8 +33,7 @@ public class Disenchant {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
+			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
