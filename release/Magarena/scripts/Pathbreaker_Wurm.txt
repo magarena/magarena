@@ -1,0 +1,14 @@
+name=Pathbreaker Wurm
+url=http://magiccards.info/avr/en/188.html
+image=http://magiccards.info/scans/en/avr/188.jpg
+value=5
+rarity=C
+type=Creature
+subtype=Wurm
+color=g
+converted=6
+cost={4}{G}{G}
+pt=6/4
+ability=soulbond
+given_ability=trample
+timing=main

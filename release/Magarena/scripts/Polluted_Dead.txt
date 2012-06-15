@@ -1,0 +1,14 @@
+name=Polluted Dead
+url=http://magiccards.info/avr/en/116.html
+image=http://magiccards.info/scans/en/avr/116.jpg
+value=3
+removal=1
+rarity=C
+type=Creature
+subtype=Zombie
+color=b
+converted=5
+cost={4}{B}
+pt=3/3
+timing=main
+requires_card_code
