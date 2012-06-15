@@ -530,12 +530,7 @@ public class MagicGame {
     }
     
     public void undoAllActions() {
-        MagicAction action = null;
-        while (!actions.isEmpty()) {
-            action = actions.removeLast();
-            action.undoAction(this);
-        }
-        assert action == null; 
+        assert actions.isEmpty() : "actions is NOT empty";
     }
     
     public void createUndoPoint() {
