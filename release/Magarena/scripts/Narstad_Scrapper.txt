@@ -1,0 +1,12 @@
+name=Narstad Scrapper
+url=http://magiccards.info/avr/en/218.html
+image=http://magiccards.info/scans/en/avr/218.jpg
+value=3
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+converted=5
+cost={5}
+pt=3/3
+ability=pump {2} +1/+0
+timing=main

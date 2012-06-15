@@ -1,0 +1,13 @@
+name=Moorland Inquisitor
+url=http://magiccards.info/avr/en/30.html
+image=http://magiccards.info/scans/en/avr/30.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+color=w
+converted=2
+cost={1}{W}
+pt=2/2
+ability=gains {2}{W} first strike
+timing=main
