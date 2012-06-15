@@ -1,0 +1,13 @@
+name=Confiscate
+url=http://magiccards.info/9e/en/68.html
+image=http://magiccards.info/scans/en/9e/68.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=u
+converted=6
+cost={4}{U}{U}
+timing=aura
+enchant=gain control,neg permanent
+requires_card_code
