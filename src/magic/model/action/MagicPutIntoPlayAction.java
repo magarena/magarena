@@ -20,8 +20,6 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 	public void doAction(final MagicGame game) {
 		permanent=createPermanent(game);
 		final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore();
-	
-		final MagicPlayer controller = permanent.getController();
 				
 		if (enchantedPermanent.isValid()) {
 			enchantedPermanent.addAura(permanent);
@@ -31,9 +29,11 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
         game.addTriggers(permanent);
         game.addCardStatics(permanent);
 	
+		final MagicPlayer controller = permanent.getController();
+
         //execute come into play triggers
 		for (final MagicTrigger<?> trigger : permanent.getCardDefinition().getComeIntoPlayTriggers()) {
-			game.executeTrigger(trigger,permanent,permanent,permanent.getController());
+			game.executeTrigger(trigger,permanent,permanent,controller);
 		}
 
         //execute other come into player triggers
