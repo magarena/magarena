@@ -52,10 +52,10 @@ public class Roil_Elemental {
                                 final int you = source.getController().getIndex();
                                 @Override
                                 public MagicPlayer getController(
-                                    final MagicGame game, 
+                                    final MagicPermanent source, 
                                     final MagicPermanent permanent, 
                                     final MagicPlayer player) {
-                                    return game.getPlayer(you);
+                                    return source.getController();
                                 }
                                 @Override
                                 public boolean condition(

@@ -32,9 +32,10 @@ public class MagicGainControlAction extends MagicAction {
                 duration) {
             @Override
             public MagicPlayer getController(
-                    final MagicGame game,
+                    final MagicPermanent source,
                     final MagicPermanent permanent,
                     final MagicPlayer controller) {
+                final MagicGame game = controller.getGame();
                 return game.getPlayer(player.getIndex());
             }   
         }));

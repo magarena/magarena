@@ -287,7 +287,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 for (final MagicPlayer player : game.getPlayers()) {
                 for (final MagicPermanent perm : player.getPermanents()) {
                     if (mstatic.accept(game, source, perm)) {
-                       perm.apply(mstatic);
+                       perm.apply(source, mstatic);
                     }
                 }}
             }
@@ -313,12 +313,12 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         }
     }
 
-    private void apply(final MagicStatic mstatic) {
+    private void apply(final MagicPermanent source, final MagicStatic mstatic) {
         final MagicGame game = getGame();
         final MagicLayer layer = mstatic.getLayer();
         switch (layer) {
             case Control:
-                cachedController = mstatic.getController(game, this, cachedController);
+                cachedController = mstatic.getController(source, this, cachedController);
                 break;
             case Type:
                 cachedTypeFlags = mstatic.getTypeFlags(this, cachedTypeFlags);
