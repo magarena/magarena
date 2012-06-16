@@ -1,0 +1,13 @@
+name=Riot Ringleader
+url=http://magiccards.info/avr/en/152.html
+image=http://magiccards.info/scans/en/avr/152.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Warrior
+color=r
+converted=3
+cost={2}{R}
+pt=2/2
+timing=main
+requires_card_code
