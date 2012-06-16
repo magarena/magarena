@@ -268,6 +268,9 @@ public class MagicTargetChoice extends MagicChoice {
 	public static final MagicTargetChoice NEG_TARGET_HUMAN_CREATURE =
 			new MagicTargetChoice(MagicTargetFilter.TARGET_HUMAN,true,MagicTargetHint.Negative,
 					"target Human creature");
+	public static final MagicTargetChoice TARGET_NON_ANGEL_CREATURE_YOU_CONTROL =
+			new MagicTargetChoice(MagicTargetFilter.TARGET_NON_ANGEL_CREATURE_YOU_CONTROL,true,MagicTargetHint.None,
+					"target non-Angel creature you control");
 	public static final MagicTargetChoice SACRIFICE_PERMANENT =
 		new MagicTargetChoice(MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL,false,MagicTargetHint.None,"a permanent to sacrifice");
 	public static final MagicTargetChoice SACRIFICE_CREATURE=

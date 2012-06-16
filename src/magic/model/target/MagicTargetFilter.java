@@ -1252,6 +1252,18 @@ public interface MagicTargetFilter {
 		}		
 	};
 	
+	MagicTargetFilter TARGET_NON_ANGEL_CREATURE_YOU_CONTROL = new MagicTargetFilter() {
+		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+			final MagicPermanent permanent = (MagicPermanent)target;
+			return target.getController() == player &&
+					permanent.isCreature() &&
+					!permanent.hasSubType(MagicSubType.Angel);
+		}
+		public boolean acceptType(final MagicTargetType targetType) {
+			return targetType == MagicTargetType.Permanent;
+		}		
+	};
+	
 	MagicTargetFilter TARGET_CREATURE_WITHOUT_FLYING=new MagicTargetFilter() {
 		public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
 			final MagicPermanent permanent=(MagicPermanent)target;
