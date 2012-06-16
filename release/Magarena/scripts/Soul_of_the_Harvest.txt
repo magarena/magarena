@@ -1,0 +1,14 @@
+name=Soul of the Harvest
+url=http://magiccards.info/avr/en/195.html
+image=http://magiccards.info/scans/en/avr/195.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Elemental
+color=g
+converted=6
+cost={4}{G}{G}
+pt=6/6
+ability=trample
+timing=main
+requires_card_code
