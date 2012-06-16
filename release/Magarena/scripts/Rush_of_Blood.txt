@@ -1,0 +1,11 @@
+name=Rush of Blood
+url=http://magiccards.info/avr/en/154.html
+image=http://magiccards.info/scans/en/avr/154.jpg
+value=2
+rarity=U
+type=Instant
+color=r
+converted=3
+cost={2}{R}
+timing=pump
+requires_card_code

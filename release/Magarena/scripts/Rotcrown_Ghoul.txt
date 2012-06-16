@@ -1,0 +1,13 @@
+name=Rotcrown Ghoul
+url=http://magiccards.info/avr/en/72.html
+image=http://magiccards.info/scans/en/avr/72.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Zombie
+color=u
+converted=5
+cost={4}{U}
+pt=3/3
+timing=main
+requires_card_code
