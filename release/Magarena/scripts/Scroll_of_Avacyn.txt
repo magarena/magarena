@@ -1,0 +1,10 @@
+name=Scroll of Avacyn
+url=http://magiccards.info/avr/en/220.html
+image=http://magiccards.info/scans/en/avr/220.jpg
+value=2
+rarity=C
+type=Artifact
+converted=1
+cost={1}
+timing=artifact
+requires_card_code

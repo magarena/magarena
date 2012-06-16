@@ -1,0 +1,10 @@
+name=Scroll of Griselbrand
+url=http://magiccards.info/avr/en/221.html
+image=http://magiccards.info/scans/en/avr/221.jpg
+value=2
+rarity=C
+type=Artifact
+converted=1
+cost={1}
+timing=artifact
+requires_card_code
