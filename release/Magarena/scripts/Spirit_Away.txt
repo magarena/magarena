@@ -11,5 +11,5 @@ cost={5}{U}{U}
 given_pt=2/2
 given_ability=flying
 timing=aura
-enchant=gain control,neg permanent
+enchant=gain control,neg creature
 requires_card_code
