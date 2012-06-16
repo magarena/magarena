@@ -23,13 +23,13 @@ public enum MagicRarity {
         return toString().replace('_',' ');
     }
     
-	public static MagicRarity getRarity(final char c) {
-		for (final MagicRarity type : values()) {
-			if (type.c == c) {
-				return type;
-			}
-		}
+    public static MagicRarity getRarity(final char c) {
+        for (final MagicRarity type : values()) {
+            if (type.c == c) {
+                return type;
+            }
+        }
         throw new RuntimeException("Unknown rarity " + c);
-	}
+    }
 }
 

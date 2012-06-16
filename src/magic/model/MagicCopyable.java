@@ -1,5 +1,5 @@
 package magic.model;
 
 public interface MagicCopyable {
-	MagicCopyable copy(final MagicCopyMap copyMap);
+    MagicCopyable copy(final MagicCopyMap copyMap);
 }

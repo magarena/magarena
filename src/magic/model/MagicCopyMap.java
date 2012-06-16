@@ -6,45 +6,45 @@ import java.util.HashMap;
 
 public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	@SuppressWarnings("unchecked")
-	public <E extends MagicCopyable> E copy(final E source) {
-		if (source == null) { 
-			return source;
-		}		
-		E target=(E)get(source);
-		if (target==null) {			
-			target=(E)source.copy(this);
-			put(source,target);
-		}
-		return target;
-	}
-		
-	private Object copyObject(final Object source) {
+    @SuppressWarnings("unchecked")
+    public <E extends MagicCopyable> E copy(final E source) {
+        if (source == null) { 
+            return source;
+        }        
+        E target=(E)get(source);
+        if (target==null) {            
+            target=(E)source.copy(this);
+            put(source,target);
+        }
+        return target;
+    }
+        
+    private Object copyObject(final Object source) {
         if (source != null && source instanceof MagicCopyable) {
-			return copy((MagicCopyable)source);
-		} else {
-			return source;
-		}
-	}
-	
-	@SuppressWarnings("unchecked")
-	public <E> E[] copyObjects(final E[] sources,final Class<E> clazz) {
-		if (sources==null||sources.length==0) {
-			return sources;
-		}
-		final E targets[]=(E[])Array.newInstance(clazz,sources.length);
-		for (int index=0;index<targets.length;index++) {
-			targets[index]=(E)copyObject(sources[index]);
-		}
-		return targets;
-	}
-	
-	@SuppressWarnings("unchecked")
-	public <E> void copyCollection(final Collection<E> sourceCollection,final Collection<E> targetCollection) {
-		for (final E object : sourceCollection) {
-			targetCollection.add((E)copyObject(object));
-		}
-	}
+            return copy((MagicCopyable)source);
+        } else {
+            return source;
+        }
+    }
+    
+    @SuppressWarnings("unchecked")
+    public <E> E[] copyObjects(final E[] sources,final Class<E> clazz) {
+        if (sources==null||sources.length==0) {
+            return sources;
+        }
+        final E targets[]=(E[])Array.newInstance(clazz,sources.length);
+        for (int index=0;index<targets.length;index++) {
+            targets[index]=(E)copyObject(sources[index]);
+        }
+        return targets;
+    }
+    
+    @SuppressWarnings("unchecked")
+    public <E> void copyCollection(final Collection<E> sourceCollection,final Collection<E> targetCollection) {
+        for (final E object : sourceCollection) {
+            targetCollection.add((E)copyObject(object));
+        }
+    }
 }

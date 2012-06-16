@@ -4,12 +4,12 @@ import java.util.EnumSet;
 
 public enum MagicSubType {
     //basic land subtypes
-	Forest,
-	Island,
-	Mountain,
-	Plains,
-	Swamp,
-	
+    Forest,
+    Island,
+    Mountain,
+    Plains,
+    Swamp,
+    
     //other land subtypes
     Desert,
     Lair,
@@ -20,7 +20,7 @@ public enum MagicSubType {
     Urza_s,
 
     //artifact subtypes
-	Contraption, 
+    Contraption, 
     Equipment,
     Fortification,
 
@@ -73,36 +73,36 @@ public enum MagicSubType {
 
     ;
 
-	public static final EnumSet<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
-	
+    public static final EnumSet<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
+    
     public static final EnumSet<MagicSubType> ALL_CREATURES = EnumSet.range(Advisor, Zubera);
-	
-	private MagicSubType() {
-	}
-	
-	public boolean isCreatureType() {
-	    return ALL_CREATURES.contains(this);
-	}
-	
-	public boolean hasSubType(final EnumSet flags) {
-		return flags.contains(this);
-	}
-	
-	public static MagicSubType getSubType(final String name) {
+    
+    private MagicSubType() {
+    }
+    
+    public boolean isCreatureType() {
+        return ALL_CREATURES.contains(this);
+    }
+    
+    public boolean hasSubType(final EnumSet flags) {
+        return flags.contains(this);
+    }
+    
+    public static MagicSubType getSubType(final String name) {
         final String cname = name.replaceAll("[^A-Za-z]", "_");
-		for (final MagicSubType type : values()) {
-			if (type.toString().equalsIgnoreCase(cname)) {
-				return type;
-			}
-		}
+        for (final MagicSubType type : values()) {
+            if (type.toString().equalsIgnoreCase(cname)) {
+                return type;
+            }
+        }
         throw new RuntimeException("Unknown subtype " + name);
-	}
+    }
     
     public static EnumSet<MagicSubType> getSubTypes(final String[] subTypeNames) {
-		final EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
-		for (final String subTypeName : subTypeNames) {
+        final EnumSet<MagicSubType> givenSubTypeFlags = EnumSet.noneOf(MagicSubType.class);
+        for (final String subTypeName : subTypeNames) {
             givenSubTypeFlags.add(getSubType(subTypeName));
-		}
+        }
         return givenSubTypeFlags;
-	}
+    }
 }
