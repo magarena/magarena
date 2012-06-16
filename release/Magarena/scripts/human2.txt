@@ -1,0 +1,11 @@
+name=Human
+token=Human2
+image=http://magiccards.info/extras/token/avacyn-restored/human-2.jpg
+value=1
+type=Creature
+subtype=Human
+color=r
+converted=0
+cost={0}
+pt=1/1
+ability=haste
