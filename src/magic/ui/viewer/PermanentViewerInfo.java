@@ -88,22 +88,41 @@ public class PermanentViewerInfo {
         basic=permanent.hasType(MagicType.Basic);
         mana=permanent.producesMana();
         creature=permanent.isCreature();
-        artifact=permanent.isEquipped()||(permanent.isArtifact()&&permanent.getEquippedCreature().isInvalid());
-        enchantment=permanent.isEnchanted()||
-            (permanent.isEnchantment()&&permanent.getEnchantedCreature().isInvalid());
-        root=permanent.getEnchantedCreature().isInvalid() && permanent.getEquippedCreature().isInvalid();
-        tapped=permanent.isTapped();
-        canNotTap=!tapped&&!permanent.canTap();
         attacking=permanent.isAttacking();
         blocking=permanent.isBlocking();
         blockingInvalid=permanent.getBlockedCreature().isInvalid();
-        lowered=attacking||
-            (permanent.getEquippedCreature().isValid() && permanent.getEquippedCreature().isAttacking())||
-              (permanent.getEnchantedCreature().isValid() && permanent.getEnchantedCreature().isAttacking());
+
+        artifact=permanent.isEquipped() || 
+            (permanent.isArtifact() && permanent.getEquippedCreature().isInvalid());
+        
+        enchantment=permanent.isEnchanted() ||
+            (permanent.isEnchantment() && permanent.getEnchantedCreature().isInvalid());
+        
+        root=permanent.getEnchantedCreature().isInvalid() && permanent.getEquippedCreature().isInvalid();
+
+        tapped=permanent.isTapped();
+
+        canNotTap=!tapped && !permanent.canTap();
+        
+        lowered=isLowered(permanent);
+        
         manaColor=getManaColor(permanent);
         blockers=getBlockers(game,permanent);
         linked=getLinked(game,permanent);
+        
         blockedName = (blocking) ? permanent.getBlockedName() : permanent.getName() + permanent.getId();
+    }
+
+    private static boolean isLowered(final MagicPermanent permanent) {
+        if (permanent.isAttacking()) {
+            return true;
+        } else if (permanent.getEquippedCreature().isValid()) {
+            return isLowered(permanent.getEquippedCreature());
+        } else if (permanent.getEnchantedCreature().isValid()) {
+            return isLowered(permanent.getEnchantedCreature());
+        } else {
+            return false;
+        }
     }
     
     private static String getPowerToughness(final MagicPermanent permanent) {
