@@ -1,0 +1,13 @@
+name=Soulcage Fiend
+url=http://magiccards.info/avr/en/120.html
+image=http://magiccards.info/scans/en/avr/120.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Demon
+color=b
+converted=3
+cost={1}{B}{B}
+pt=3/2
+timing=main
+requires_card_code

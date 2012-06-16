@@ -1,0 +1,14 @@
+name=Spectral Gateguards
+url=http://magiccards.info/avr/en/37.html
+image=http://magiccards.info/scans/en/avr/37.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit,Soldier
+color=w
+converted=5
+cost={4}{W}
+pt=2/5
+ability=soulbond
+given_ability=vigilance
+timing=main
