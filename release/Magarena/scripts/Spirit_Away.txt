@@ -1,0 +1,15 @@
+name=Spirit Away
+url=http://magiccards.info/avr/en/76.html
+image=http://magiccards.info/scans/en/avr/76.jpg
+value=4
+rarity=R
+type=Enchantment
+subtype=Aura
+color=u
+converted=7
+cost={5}{U}{U}
+given_pt=2/2
+given_ability=flying
+timing=aura
+enchant=gain control,neg permanent
+requires_card_code
