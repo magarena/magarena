@@ -1,0 +1,13 @@
+name=Terminus
+url=http://magiccards.info/avr/en/38.html
+image=http://magiccards.info/scans/en/avr/38.jpg
+value=4
+removal=2
+rarity=R
+type=Sorcery
+color=w
+converted=6
+cost={4}{W}{W}
+ability=miracle {W}
+timing=removal
+requires_card_code
