@@ -266,9 +266,11 @@ public class PermanentViewerInfo {
 		final SortedSet<PermanentViewerInfo> linked=new TreeSet<PermanentViewerInfo>(NAME_COMPARATOR);
 		for (final MagicPermanent equipment : permanent.getEquipmentPermanents()) {
 			linked.add(new PermanentViewerInfo(game,equipment));
+            linked.addAll(getLinked(game, equipment));
 		}
 		for (final MagicPermanent aura : permanent.getAuraPermanents()) {
 			linked.add(new PermanentViewerInfo(game,aura));
+            linked.addAll(getLinked(game, aura));
 		}
 		return linked;
 	}
