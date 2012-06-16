@@ -29,7 +29,6 @@ class TestRoilElemental extends TestGameBuilder {
         addToLibrary(P, "Plains", 10);
 		createPermanent(game,P,"Rupture Spire",false,8);
 	    addToHand(P,"Roil Elemental",1);
-	    addToHand(P,"Confiscate",1);
        
 
         P = opponent;
