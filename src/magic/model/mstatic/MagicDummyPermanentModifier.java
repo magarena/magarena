@@ -16,7 +16,7 @@ public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     }
     
     @Override
-    public void getPowerToughness(final MagicGame game, final MagicPermanent permanent, final MagicPowerToughness pt) {
+    public void modPowerToughness(final MagicGame game, final MagicPermanent permanent, final MagicPowerToughness pt) {
         //leave power and toughness unchanged
     }
 
@@ -26,8 +26,8 @@ public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     }
 
     @Override
-    public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent, final EnumSet<MagicSubType> flags) {
-        return flags;
+    public void modSubTypeFlags(final MagicPermanent permanent, final EnumSet<MagicSubType> flags) {
+        //leave subtype unchanged
     }
     
     @Override

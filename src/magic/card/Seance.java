@@ -28,10 +28,8 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 public class Seance {
 	private static final MagicStatic Spirit = new MagicStatic(MagicLayer.Type) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-			final EnumSet<MagicSubType> mod = flags.clone();
-			mod.add(MagicSubType.Spirit);
-			return mod;
+		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+			flags.add(MagicSubType.Spirit);
 		}
 	};
    

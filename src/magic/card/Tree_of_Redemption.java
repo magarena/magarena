@@ -56,7 +56,7 @@ public class Tree_of_Redemption {
 			game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
 					MagicLayer.SetPT) {
 				@Override
-				public void getPowerToughness(
+				public void modPowerToughness(
 						final MagicGame game,
 						final MagicPermanent permanent,
 						final MagicPowerToughness pt) {

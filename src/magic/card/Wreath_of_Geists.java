@@ -12,7 +12,7 @@ public class Wreath_of_Geists {
         MagicLayer.ModPT, 
 	    MagicTargetFilter.TARGET_CREATURE) {
         @Override
-        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
         	final int amount = game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
             pt.add(amount,amount);
         }

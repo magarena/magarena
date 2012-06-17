@@ -11,7 +11,7 @@ import magic.model.mstatic.MagicStatic;
 public class Halimar_Wavewatch {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {

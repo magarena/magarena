@@ -19,7 +19,7 @@ import java.util.EnumSet;
 public class Halcyon_Glaze {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(4,4);
 		}
     };
@@ -31,10 +31,8 @@ public class Halcyon_Glaze {
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-            final EnumSet<MagicSubType> mod = flags.clone();
-            mod.add(MagicSubType.Illusion);
-			return mod;
+		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.add(MagicSubType.Illusion);
 		}
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {

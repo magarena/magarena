@@ -68,12 +68,10 @@ public class Aurification {
 					MagicLayer.Type,
 					MagicTargetFilter.TARGET_CREATURE) {
 				@Override
-				public EnumSet<MagicSubType> getSubTypeFlags(
+				public void modSubTypeFlags(
 						final MagicPermanent permanent,
 						final EnumSet<MagicSubType> flags) {
-		            final EnumSet<MagicSubType> mod = flags.clone();
-		            mod.add(MagicSubType.Wall);
-					return mod;
+		            flags.add(MagicSubType.Wall);
 				}
 				@Override
 				public boolean accept(

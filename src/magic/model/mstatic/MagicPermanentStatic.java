@@ -13,7 +13,7 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
             MagicLayer.CountersPT, 
             MagicTargetFilter.TARGET_CREATURE) {
             @Override
-            public void getPowerToughness(
+            public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {

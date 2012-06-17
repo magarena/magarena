@@ -43,15 +43,15 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
             final EnumSet<MagicSubType> flags) {
     }
     
-    public void getPowerToughness(
+    public void modPowerToughness(
             final MagicGame game,
             final MagicPlayer player,
             final MagicPermanent permanent,
             final MagicPowerToughness pt) {
-        getPowerToughness(game, player, pt);
+        modPowerToughness(game, player, pt);
     }
     
-    public void getPowerToughness(
+    public void modPowerToughness(
             final MagicGame game,
             final MagicPlayer player,
             final MagicPowerToughness pt) {

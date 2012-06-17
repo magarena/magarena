@@ -12,7 +12,7 @@ public class Master_Splicer {
 			MagicLayer.ModPT, 
 			MagicTargetFilter.TARGET_GOLEM_YOU_CONTROL) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.add(1,1);
 		}
 	};

@@ -12,7 +12,7 @@ import java.util.Collection;
 public class Wild_Nacatl {
 	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final Collection<MagicTarget> targets1 =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_MOUNTAIN_YOU_CONTROL);
 			if (targets1.size() > 0) {

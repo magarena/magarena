@@ -26,7 +26,7 @@ public class Myr_Galvanizer {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_MYR_YOU_CONTROL) {
         @Override
-        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
         }
         @Override

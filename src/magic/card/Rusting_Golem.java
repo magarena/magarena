@@ -10,7 +10,7 @@ import magic.model.mstatic.MagicCDA;
 public class Rusting_Golem {
 	public static final MagicCDA cda = new MagicCDA() {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPlayer player,
                 final MagicPermanent permanent,

@@ -60,7 +60,7 @@ public class Raging_Ravine {
 
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
@@ -70,12 +70,10 @@ public class Raging_Ravine {
 
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(
+		public void modSubTypeFlags(
                 final MagicPermanent permanent,
                 final EnumSet<MagicSubType> flags) {
-            final EnumSet<MagicSubType> mod = flags.clone();
-            mod.add(MagicSubType.Elemental);
-			return mod;
+            flags.add(MagicSubType.Elemental);
 		}
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {

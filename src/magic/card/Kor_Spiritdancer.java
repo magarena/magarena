@@ -18,7 +18,7 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 public class Kor_Spiritdancer {
 	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {

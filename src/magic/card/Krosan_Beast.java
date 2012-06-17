@@ -9,7 +9,7 @@ import magic.model.mstatic.MagicStatic;
 public class Krosan_Beast {
 	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {

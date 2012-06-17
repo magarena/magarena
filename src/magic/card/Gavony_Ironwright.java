@@ -12,7 +12,7 @@ public class Gavony_Ironwright {
 	        MagicLayer.ModPT, 
 		    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {

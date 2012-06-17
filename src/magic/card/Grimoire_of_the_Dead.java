@@ -36,10 +36,8 @@ import magic.model.target.MagicTargetFilter;
 public class Grimoire_of_the_Dead {
 	private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-			final EnumSet<MagicSubType> mod = flags.clone();
-			mod.add(MagicSubType.Zombie);
-			return mod;
+		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+			flags.add(MagicSubType.Zombie);
 		}
 	};
 

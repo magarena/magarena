@@ -93,7 +93,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     public static MagicStatic genPTStatic(final int givenPower, final int givenToughness) {
         return new MagicStatic(MagicLayer.ModPT) {
             @Override
-            public void getPowerToughness(
+            public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
@@ -125,12 +125,10 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     public static MagicStatic genSTStatic(final EnumSet<MagicSubType> givenSubTypeFlags) {
         return new MagicStatic(MagicLayer.Type) {
             @Override
-            public EnumSet<MagicSubType> getSubTypeFlags(
+            public void modSubTypeFlags(
                 final MagicPermanent permanent,
                 final EnumSet<MagicSubType> flags) {
-                final EnumSet<MagicSubType> mod = flags.clone();
-                mod.addAll(givenSubTypeFlags);
-                return mod;
+                flags.addAll(givenSubTypeFlags);
             }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

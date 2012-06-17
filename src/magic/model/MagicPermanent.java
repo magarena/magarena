@@ -325,7 +325,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 break;
             case Type:
                 cachedTypeFlags = mstatic.getTypeFlags(this, cachedTypeFlags);
-                cachedSubTypeFlags = mstatic.getSubTypeFlags(this, cachedSubTypeFlags);
+                mstatic.modSubTypeFlags(this, cachedSubTypeFlags);
                 break;
             case Color:
                 cachedColorFlags = mstatic.getColorFlags(this, cachedColorFlags);
@@ -337,7 +337,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             case ModPT:
             case CountersPT:
             case SwitchPT:
-                mstatic.getPowerToughness(game, this, cachedPowerToughness);
+                mstatic.modPowerToughness(game, this, cachedPowerToughness);
                 break;
             default:
                 throw new RuntimeException("No case for " + layer + " in MagicPermanent.apply");

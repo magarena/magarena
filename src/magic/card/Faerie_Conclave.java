@@ -26,7 +26,7 @@ import java.util.EnumSet;
 public class Faerie_Conclave {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(2,1);
 		}
     };
@@ -38,10 +38,8 @@ public class Faerie_Conclave {
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-            final EnumSet<MagicSubType> mod = flags.clone();
-            mod.add(MagicSubType.Faerie);
-			return mod;
+		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.add(MagicSubType.Faerie);
 		}
         @Override
 		public int getTypeFlags(final MagicPermanent permanent,final int flags) {

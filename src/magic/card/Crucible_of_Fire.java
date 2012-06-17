@@ -13,7 +13,7 @@ public class Crucible_of_Fire {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_DRAGON_YOU_CONTROL) {
         @Override
-        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(3,3);
         }
     };

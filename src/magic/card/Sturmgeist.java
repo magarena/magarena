@@ -13,7 +13,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 public class Sturmgeist {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
 			final int amount = player.getHandSize();
 			pt.set(amount,amount);
 		}

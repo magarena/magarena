@@ -24,7 +24,7 @@ import magic.model.target.MagicTargetPicker;
 public class Karn__Silver_Golem {
 	static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int cmc = permanent.getCardDefinition().getConvertedCost();
 			pt.set(cmc,cmc);
 		}

@@ -25,7 +25,7 @@ public class Skinshifter {
 	// becomes a 4/4 Rhino and gains trample
     private static final MagicStatic PT1 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(4,4);
 		}
     };
@@ -37,8 +37,9 @@ public class Skinshifter {
     };
     private static final MagicStatic ST1 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-			return EnumSet.of(MagicSubType.Rhino);
+		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.removeAll(MagicSubType.ALL_CREATURES);
+			flags.add(MagicSubType.Rhino);
 		}
 	};
 
@@ -84,7 +85,7 @@ public class Skinshifter {
 	// becomes a 2/2 Bird and gains flying
     private static final MagicStatic PT2 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(2,2);
 		}
     };
@@ -96,8 +97,9 @@ public class Skinshifter {
     };
     private static final MagicStatic ST2 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-			return EnumSet.of(MagicSubType.Bird);
+		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.removeAll(MagicSubType.ALL_CREATURES);
+			flags.add(MagicSubType.Bird);
 		}
 	};
 
@@ -143,14 +145,15 @@ public class Skinshifter {
 	// becomes a 0/8 Plant
     private static final MagicStatic PT3 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.set(0,8);
 		}
     };
     private static final MagicStatic ST3 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-			return EnumSet.of(MagicSubType.Plant);
+		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.removeAll(MagicSubType.ALL_CREATURES);
+			flags.add(MagicSubType.Plant);
 		}
 	};
 

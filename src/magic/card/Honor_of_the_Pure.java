@@ -13,7 +13,7 @@ public class Honor_of_the_Pure {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_WHITE_CREATURE_YOU_CONTROL) {
         @Override
-        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
         }
     };

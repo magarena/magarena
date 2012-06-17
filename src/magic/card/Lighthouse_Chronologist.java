@@ -14,7 +14,7 @@ import magic.model.trigger.MagicAtEndOfTurnTrigger;
 public class Lighthouse_Chronologist {
 	public static final MagicStatic S = new MagicStatic(MagicLayer.SetPT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final int charges = permanent.getCounters(MagicCounterType.Charge);
 			if (charges >= 7) {
 				pt.set(3,5);

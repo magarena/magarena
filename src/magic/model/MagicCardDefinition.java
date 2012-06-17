@@ -572,7 +572,7 @@ public class MagicCardDefinition {
             final MagicPermanent perm,
             final MagicPowerToughness pt) {
         for (final MagicCDA lv : CDAs) {
-            lv.getPowerToughness(game, player, perm, pt);
+            lv.modPowerToughness(game, player, perm, pt);
         }
     }
     

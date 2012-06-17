@@ -10,7 +10,7 @@ import magic.model.mstatic.MagicLayer;
 public class Squirrel_Mob {
 	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
 				final MagicGame game,
 				final MagicPermanent permanent,
 				final MagicPowerToughness pt) {

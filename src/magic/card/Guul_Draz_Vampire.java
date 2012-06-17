@@ -10,7 +10,7 @@ import magic.model.mstatic.MagicStatic;
 public class Guul_Draz_Vampire {
 	public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (game.getOpponent(permanent.getController()).getLife() <= 10) {
 				pt.add(2,1);
 			}

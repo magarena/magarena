@@ -11,7 +11,7 @@ import magic.model.mstatic.MagicStatic;
 public class Auriok_Glaivemaster {
 	public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.isEquipped()) {
 				pt.add(1,1);
 			}

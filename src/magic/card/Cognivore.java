@@ -9,7 +9,7 @@ import magic.model.mstatic.MagicCDA;
 public class Cognivore {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
 				final MagicGame game,
 				final MagicPlayer player,
 				final MagicPowerToughness pt) {

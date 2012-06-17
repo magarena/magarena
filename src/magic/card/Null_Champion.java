@@ -20,7 +20,7 @@ import magic.model.mstatic.MagicStatic;
 public class Null_Champion {
 	public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final int charges = permanent.getCounters(MagicCounterType.Charge);
 			if (charges >= 4) {
 				pt.set(7,3);

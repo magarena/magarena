@@ -13,7 +13,7 @@ public class Godhead_of_Awe {
         MagicLayer.SetPT, 
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
-        public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.set(1,1);
         }
         @Override

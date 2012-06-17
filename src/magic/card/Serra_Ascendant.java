@@ -10,7 +10,7 @@ import magic.model.mstatic.MagicStatic;
 public class Serra_Ascendant {
 	public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			if (permanent.getController().getLife() >= 30) {
 				pt.add(5,5);
 			}

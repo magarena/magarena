@@ -23,7 +23,7 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 public class Kodama_of_the_Center_Tree {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
-		public void getPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
 			final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size();
 			pt.set(amount, amount);
 		}

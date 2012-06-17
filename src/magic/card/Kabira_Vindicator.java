@@ -11,7 +11,7 @@ import magic.model.target.MagicTargetFilter;
 public class Kabira_Vindicator {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
@@ -43,7 +43,7 @@ public class Kabira_Vindicator {
         }
 
     	@Override
-    	public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+    	public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
     		pt.add(amount, amount);
     	}
 

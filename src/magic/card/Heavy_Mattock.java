@@ -13,7 +13,7 @@ public class Heavy_Mattock {
         MagicLayer.ModPT, 
 	    MagicTargetFilter.TARGET_CREATURE) {
         @Override
-		public void getPowerToughness(
+		public void modPowerToughness(
 				final MagicGame game,
 				final MagicPermanent permanent,
 				final MagicPowerToughness pt) {

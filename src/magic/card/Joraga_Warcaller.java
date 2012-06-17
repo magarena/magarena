@@ -21,7 +21,7 @@ public class Joraga_Warcaller {
         }
 
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			pt.add(amount, amount);
 		}
 		@Override

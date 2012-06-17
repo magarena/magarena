@@ -25,7 +25,7 @@ public class Angel_s_Tomb {
 			MagicStatic.UntilEOT) {
 
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
 				final MagicGame game,
 				final MagicPermanent permanent,
 				final MagicPowerToughness pt) {
@@ -49,12 +49,10 @@ public class Angel_s_Tomb {
 			MagicStatic.UntilEOT) {
 
 		@Override
-		public EnumSet<MagicSubType> getSubTypeFlags(
+		public void modSubTypeFlags(
 				final MagicPermanent permanent,
 				final EnumSet<MagicSubType> flags) {
-			final EnumSet<MagicSubType> mod = flags.clone();
-			mod.add(MagicSubType.Angel);
-			return mod;
+			flags.add(MagicSubType.Angel);
 		}
 
 		@Override

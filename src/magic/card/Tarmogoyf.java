@@ -11,7 +11,7 @@ import magic.model.mstatic.MagicCDA;
 public class Tarmogoyf {
 	public static final MagicCDA CDA = new MagicCDA() {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
 			MagicCardList cardList = new MagicCardList(player.getGraveyard());
 			cardList.addAll(game.getOpponent(player).getGraveyard());
 			int types = 0;

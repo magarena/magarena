@@ -25,7 +25,7 @@ public class Konda_s_Hatamoto {
 	
 	public static final MagicStatic S2 = new MagicStatic(MagicLayer.ModPT) {
 		@Override
-		public void getPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
 			final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL);
 			if (targets.size() > 0) {

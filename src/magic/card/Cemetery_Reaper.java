@@ -31,7 +31,7 @@ public class Cemetery_Reaper {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL) {
         @Override
-        public void getPowerToughness(
+        public void modPowerToughness(
         		final MagicGame game,
         		final MagicPermanent permanent,
         		final MagicPowerToughness pt) {

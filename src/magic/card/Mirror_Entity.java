@@ -56,7 +56,7 @@ public class Mirror_Entity {
             final Integer X = (Integer)data[1];
 			final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         		@Override
-        		public void getPowerToughness(
+        		public void modPowerToughness(
                         final MagicGame game,
                         final MagicPermanent permanent,
                         final MagicPowerToughness pt) {
@@ -65,12 +65,10 @@ public class Mirror_Entity {
             };
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 		        @Override
-        		public EnumSet<MagicSubType> getSubTypeFlags(
+        		public void modSubTypeFlags(
                         final MagicPermanent permanent,
                         final EnumSet<MagicSubType> flags) {
-                    final EnumSet<MagicSubType> mod = flags.clone();
-                    mod.addAll(MagicSubType.ALL_CREATURES);
-        			return mod;
+                    flags.addAll(MagicSubType.ALL_CREATURES);
 	            }
             };
 			final Collection<MagicTarget> creatures=game.filterTargets(

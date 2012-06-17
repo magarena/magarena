@@ -27,7 +27,7 @@ public class Crescendo_of_War {
         }
 
 		@Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
@@ -51,7 +51,7 @@ public class Crescendo_of_War {
         }
 		
         @Override
-		public void getPowerToughness(
+		public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {

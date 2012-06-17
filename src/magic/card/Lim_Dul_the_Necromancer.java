@@ -33,10 +33,8 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 public class Lim_Dul_the_Necromancer {
 	private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
         @Override
-        public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-            final EnumSet<MagicSubType> mod = flags.clone();
-            mod.add(MagicSubType.Zombie);
-            return mod;
+        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.add(MagicSubType.Zombie);
         }
    };
 
