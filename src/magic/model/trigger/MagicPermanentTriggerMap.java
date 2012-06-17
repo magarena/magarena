@@ -15,18 +15,18 @@ public class MagicPermanentTriggerMap {
     
     private final Map<MagicTriggerType,SortedSet<MagicPermanentTrigger>> effects = 
         new EnumMap<MagicTriggerType,SortedSet<MagicPermanentTrigger>>(MagicTriggerType.class);
-	
-	public MagicPermanentTriggerMap() {
+    
+    public MagicPermanentTriggerMap() {
         for (MagicTriggerType type : MagicTriggerType.values()) {
             effects.put(type, new TreeSet<MagicPermanentTrigger>());
         }
     }
-	
+    
     public MagicPermanentTriggerMap(final MagicCopyMap copyMap, final MagicPermanentTriggerMap sourceMap) {
         for (MagicTriggerType type : MagicTriggerType.values()) {
             effects.put(type, new TreeSet<MagicPermanentTrigger>());
         }
-	    
+        
         for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : sourceMap.effects.entrySet()) {
             for (final MagicPermanentTrigger mptrigger : type.getValue()) {
                 add(new MagicPermanentTrigger(copyMap, mptrigger));
@@ -44,7 +44,7 @@ public class MagicPermanentTriggerMap {
     
     public Collection<MagicPermanentTrigger> remove(final MagicPermanent permanent) {
         final Collection<MagicPermanentTrigger> removedTriggers = new ArrayList<MagicPermanentTrigger>();
-	    for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
+        for (final Map.Entry<MagicTriggerType, SortedSet<MagicPermanentTrigger>> type : effects.entrySet()) {
             final Collection<MagicPermanentTrigger> triggers = type.getValue();
             for (final Iterator<MagicPermanentTrigger> iterator = triggers.iterator();iterator.hasNext();) {
                 final MagicPermanentTrigger permanentTrigger = iterator.next();

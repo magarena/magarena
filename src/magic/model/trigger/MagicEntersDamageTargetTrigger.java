@@ -17,29 +17,29 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
     private final int n;
     private final MagicTargetChoice targetChoice;
 
-	public MagicEntersDamageTargetTrigger(
-			final MagicTargetChoice targetChoice,
-			final int n) {
+    public MagicEntersDamageTargetTrigger(
+            final MagicTargetChoice targetChoice,
+            final int n) {
         this.n = n;
         this.targetChoice = targetChoice;
     }
     
     private final String genDescription(final MagicTargetChoice targetChoice) {
-    	String description = "creature or player$.";
-    	if (targetChoice == MagicTargetChoice.TARGET_CREATURE) {
-    		description = "creature$.";
-    	}
-    	else if (targetChoice == MagicTargetChoice.NEG_TARGET_PLAYER) {
-    		description = "player$.";
-    	}
-    	return description;
-	}
+        String description = "creature or player$.";
+        if (targetChoice == MagicTargetChoice.TARGET_CREATURE) {
+            description = "creature$.";
+        }
+        else if (targetChoice == MagicTargetChoice.NEG_TARGET_PLAYER) {
+            description = "player$.";
+        }
+        return description;
+    }
     
     @Override
-	public MagicEvent executeTrigger(
-			final MagicGame game,
-			final MagicPermanent permanent,
-			final MagicPlayer player) {
+    public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicPlayer player) {
         return new MagicEvent(
                 permanent,
                 player,
@@ -48,7 +48,7 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
                 MagicEvent.NO_DATA,
                 this,
                 permanent + " deals " + n + " damage to target " +
-                		genDescription(targetChoice));
+                        genDescription(targetChoice));
     }
     @Override
     public void executeEvent(
@@ -58,11 +58,11 @@ public class MagicEntersDamageTargetTrigger extends MagicWhenComesIntoPlayTrigge
             final Object[] choiceResults) {
         event.processTarget(game,choiceResults,0,new MagicTargetAction() {
             public void doAction(final MagicTarget target) {
-				final MagicDamage damage = new MagicDamage(
-						event.getSource(),
-						target,
-						n,
-						false);
+                final MagicDamage damage = new MagicDamage(
+                        event.getSource(),
+                        target,
+                        n,
+                        false);
                 game.doAction(new MagicDealDamageAction(damage));
             }
         });

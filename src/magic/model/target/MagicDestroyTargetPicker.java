@@ -7,21 +7,21 @@ import magic.model.MagicPlayer;
 
 public class MagicDestroyTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private final boolean noRegeneration;
+    private final boolean noRegeneration;
 
-	public MagicDestroyTargetPicker(final boolean noRegeneration) {
-		this.noRegeneration=noRegeneration;
-	}
+    public MagicDestroyTargetPicker(final boolean noRegeneration) {
+        this.noRegeneration=noRegeneration;
+    }
 
-	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		if (permanent.hasAbility(MagicAbility.Indestructible)) {
-			return 0;
-		}
-		if (permanent.isRegenerated()&&!noRegeneration) {
-			return 0;
-		}
-		final int score=permanent.getScore();
-		return permanent.getController()==player?-score:score;
-	}
+    @Override
+    protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+        if (permanent.hasAbility(MagicAbility.Indestructible)) {
+            return 0;
+        }
+        if (permanent.isRegenerated()&&!noRegeneration) {
+            return 0;
+        }
+        final int score=permanent.getScore();
+        return permanent.getController()==player?-score:score;
+    }
 }

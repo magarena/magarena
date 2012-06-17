@@ -11,34 +11,34 @@ import magic.model.event.MagicEvent;
 
 public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
 
-	private final boolean combat;
-	private final boolean mustDraw;
-	private final int amount;
-	
+    private final boolean combat;
+    private final boolean mustDraw;
+    private final int amount;
+    
     public MagicThiefTrigger(final boolean combat,final boolean mustDraw,final int amount) {
-		this.combat = combat;
-		this.mustDraw = mustDraw;
-		this.amount = amount;
-	}
-	
-	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-		if (damage.getSource() == permanent &&
-			damage.getTarget().isPlayer() &&
-			(!combat || damage.isCombat())) {
-			final MagicPlayer player = permanent.getController();
-			if (mustDraw) {
-				return new MagicEvent(
+        this.combat = combat;
+        this.mustDraw = mustDraw;
+        this.amount = amount;
+    }
+    
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        if (damage.getSource() == permanent &&
+            damage.getTarget().isPlayer() &&
+            (!combat || damage.isCombat())) {
+            final MagicPlayer player = permanent.getController();
+            if (mustDraw) {
+                return new MagicEvent(
                         permanent,
                         player,
                         new Object[]{player},
                         this,
                         (amount > 1) ?
-                        	player + " draws " + amount + " cards." :
-                        	player + " draws a card.");
-			}
-			else {
-    			return new MagicEvent(
+                            player + " draws " + amount + " cards." :
+                            player + " draws a card.");
+            }
+            else {
+                return new MagicEvent(
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
@@ -49,23 +49,23 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
                         new Object[]{player},
                         this,
                         (amount > 1) ?
-                            	player + " may$ draw " + amount + " cards." :
-                            	player + " may$ draw a card.");
-    		}
-		}
-		return MagicEvent.NONE;
-	}
+                                player + " may$ draw " + amount + " cards." :
+                                player + " may$ draw a card.");
+            }
+        }
+        return MagicEvent.NONE;
+    }
 
-	@Override
+    @Override
     public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-    	if (mustDraw) {
-    		game.doAction(new MagicDrawAction((MagicPlayer)data[0],amount));
-    	} else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-			game.doAction(new MagicDrawAction((MagicPlayer)data[0],amount));
-		}
+        if (mustDraw) {
+            game.doAction(new MagicDrawAction((MagicPlayer)data[0],amount));
+        } else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            game.doAction(new MagicDrawAction((MagicPlayer)data[0],amount));
+        }
     }
 }

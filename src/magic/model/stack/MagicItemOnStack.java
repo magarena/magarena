@@ -14,147 +14,147 @@ import magic.model.target.MagicTarget;
 import javax.swing.ImageIcon;
 
 public abstract class MagicItemOnStack implements MagicTarget {
-	
-	private MagicSource source;
-	private MagicPlayer controller;
-	private MagicEvent event;
-	private MagicActivation activation; //may be null
-	private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
-	private long id;
+    
+    private MagicSource source;
+    private MagicPlayer controller;
+    private MagicEvent event;
+    private MagicActivation activation; //may be null
+    private Object choiceResults[]=MagicEvent.NO_CHOICE_RESULTS;
+    private long id;
    
     MagicItemOnStack() {}
 
     MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
-		source = copyMap.copy(sourceItem.source);
-		controller = copyMap.copy(sourceItem.controller);
-		activation = sourceItem.activation;
-		event = copyMap.copy(sourceItem.event);
-		choiceResults = copyMap.copyObjects(sourceItem.choiceResults,Object.class);
-		id=sourceItem.id;
-	}
-	
-	@Override
-	public MagicItemOnStack map(final MagicGame game) {
-		return game.getStack().getItemOnStack(id);
-	}
+        source = copyMap.copy(sourceItem.source);
+        controller = copyMap.copy(sourceItem.controller);
+        activation = sourceItem.activation;
+        event = copyMap.copy(sourceItem.event);
+        choiceResults = copyMap.copyObjects(sourceItem.choiceResults,Object.class);
+        id=sourceItem.id;
+    }
+    
+    @Override
+    public MagicItemOnStack map(final MagicGame game) {
+        return game.getStack().getItemOnStack(id);
+    }
 
-	void setSource(final MagicSource source) {
-		this.source=source;
-	}
-		
-	public MagicSource getSource() {
-		return source;
-	}
-	
-	void setController(final MagicPlayer controller) {
-		this.controller=controller;
-	}
-	
-	@Override
-	public MagicPlayer getController() {
-		return controller;
-	}
-	
-	@Override
+    void setSource(final MagicSource source) {
+        this.source=source;
+    }
+        
+    public MagicSource getSource() {
+        return source;
+    }
+    
+    void setController(final MagicPlayer controller) {
+        this.controller=controller;
+    }
+    
+    @Override
+    public MagicPlayer getController() {
+        return controller;
+    }
+    
+    @Override
     public MagicCardDefinition getCardDefinition() {
-		return getSource().getCardDefinition();
-	}
-	
-	void setActivation(final MagicActivation activation) {
-		this.activation=activation;
-	}
-	
-	MagicActivation getActivation() {
+        return getSource().getCardDefinition();
+    }
+    
+    void setActivation(final MagicActivation activation) {
+        this.activation=activation;
+    }
+    
+    MagicActivation getActivation() {
         return activation;
-	}
-			
-	void setEvent(final MagicEvent event) {
-		this.event=event;
-	}
-	
-	public MagicEvent getEvent() {
-		return event;
-	}
-	
-	public boolean hasChoices() {
-		return event.hasChoice();
-	}
+    }
+            
+    void setEvent(final MagicEvent event) {
+        this.event=event;
+    }
+    
+    public MagicEvent getEvent() {
+        return event;
+    }
+    
+    public boolean hasChoices() {
+        return event.hasChoice();
+    }
 
-	public void setChoiceResults(final Object choiceResults[]) {
-		this.choiceResults=choiceResults;
-	}
-	
-	public Object[] getChoiceResults() {
-		return choiceResults;
-	}
-	
-	public boolean containsInChoiceResults(final MagicPermanent permanent) {
-		if (choiceResults!=null) {
-			for (final Object choiceResult : choiceResults) {
-				if (choiceResult==permanent) {
-					return true;
-				}
-			}
-		}
-		return false;
-	}
-	
-	public void setId(final long id) {
-		this.id=id;
-	}
-	
-	public long getId() {
-		return id;
-	}
-	
-	public void resolve(final MagicGame game) {
-		game.executeEvent(event,choiceResults);
-	}
-	
-	@Override
-	public String getName() {
-		return source.getName();
-	}
-	
-	public String getDescription() {
-		return event.getDescription(choiceResults);
-	}
-	
-	@Override
-	public String toString() {
-		return getName();
-	}
-		
-	@Override
-	public boolean isPermanent() {
-		return false;
-	}
+    public void setChoiceResults(final Object choiceResults[]) {
+        this.choiceResults=choiceResults;
+    }
+    
+    public Object[] getChoiceResults() {
+        return choiceResults;
+    }
+    
+    public boolean containsInChoiceResults(final MagicPermanent permanent) {
+        if (choiceResults!=null) {
+            for (final Object choiceResult : choiceResults) {
+                if (choiceResult==permanent) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    public void setId(final long id) {
+        this.id=id;
+    }
+    
+    public long getId() {
+        return id;
+    }
+    
+    public void resolve(final MagicGame game) {
+        game.executeEvent(event,choiceResults);
+    }
+    
+    @Override
+    public String getName() {
+        return source.getName();
+    }
+    
+    public String getDescription() {
+        return event.getDescription(choiceResults);
+    }
+    
+    @Override
+    public String toString() {
+        return getName();
+    }
+        
+    @Override
+    public boolean isPermanent() {
+        return false;
+    }
 
-	@Override
-	public boolean isPlayer() {
-		return false;
-	}
+    @Override
+    public boolean isPlayer() {
+        return false;
+    }
 
-	@Override
-	public int getPreventDamage() {
-		return 0;
-	}
-	
-	@Override
-	public void setPreventDamage(final int amount) {
-		
-	}
+    @Override
+    public int getPreventDamage() {
+        return 0;
+    }
+    
+    @Override
+    public void setPreventDamage(final int amount) {
+        
+    }
 
-	@Override
-	public boolean isValidTarget(final MagicSource aSource) {
-		return aSource!=this.source;
-	}
+    @Override
+    public boolean isValidTarget(final MagicSource aSource) {
+        return aSource!=this.source;
+    }
 
     long getItemId() {
         final Object[] CR = choiceResults;
         final long[] keys = {
             id,
-	        source != null ?  source.getId() : -1L,
+            source != null ?  source.getId() : -1L,
             controller != null ? controller.getId() : -1L,
             activation != null ? activation.hashCode() : -1L,
             event != null ? event.getEventId() : -1L,
@@ -171,9 +171,9 @@ public abstract class MagicItemOnStack implements MagicTarget {
         return magic.MurmurHash3.hash(keys);
     }
 
-	public abstract boolean isSpell();
+    public abstract boolean isSpell();
 
-	public abstract boolean canBeCountered();
+    public abstract boolean canBeCountered();
 
-	public abstract ImageIcon getIcon();
+    public abstract ImageIcon getIcon();
 }

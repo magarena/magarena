@@ -7,19 +7,19 @@ import magic.model.MagicPlayer;
 
 public class MagicIndestructibleTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicIndestructibleTargetPicker INSTANCE=new MagicIndestructibleTargetPicker();
-	
-	private MagicIndestructibleTargetPicker() {}
-	
-	public static MagicIndestructibleTargetPicker create() {
-		return INSTANCE;
-	}
+    private static final MagicIndestructibleTargetPicker INSTANCE=new MagicIndestructibleTargetPicker();
+    
+    private MagicIndestructibleTargetPicker() {}
+    
+    public static MagicIndestructibleTargetPicker create() {
+        return INSTANCE;
+    }
 
-	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		if (permanent.hasAbility(MagicAbility.Indestructible)) {
-			return 0;
-		}
-		return 100+permanent.getPower()*2+permanent.getDamage()-permanent.getToughness();
-	}
+    @Override
+    protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+        if (permanent.hasAbility(MagicAbility.Indestructible)) {
+            return 0;
+        }
+        return 100+permanent.getPower()*2+permanent.getDamage()-permanent.getToughness();
+    }
 }

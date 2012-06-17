@@ -12,34 +12,34 @@ import magic.model.action.MagicPayDelayedCostAction;
  */
 public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
 
-	private final MagicManaCost cost;
-	private final int x;
-	
-	MagicDelayedPayManaCostResult(final MagicManaCost cost,final int x) {
-		this.cost=cost;
-		this.x=x;
-	}
-	
-	public MagicManaCost getCost() {
-		return cost;
-	}
+    private final MagicManaCost cost;
+    private final int x;
+    
+    MagicDelayedPayManaCostResult(final MagicManaCost cost,final int x) {
+        this.cost=cost;
+        this.x=x;
+    }
+    
+    public MagicManaCost getCost() {
+        return cost;
+    }
 
     public String toString() {
         return cost.getText() + x;
     }
 
-	@Override
-	public int getX() {
-		return x;
-	}
-	
-	@Override
-	public int getConverted() {
-		return x+cost.getConvertedCost();
-	}
+    @Override
+    public int getX() {
+        return x;
+    }
+    
+    @Override
+    public int getConverted() {
+        return x+cost.getConvertedCost();
+    }
 
-	@Override
-	public void doAction(final MagicGame game,final MagicPlayer player) {
-		game.doAction(new MagicPayDelayedCostAction(player,this));
-	}
+    @Override
+    public void doAction(final MagicGame game,final MagicPlayer player) {
+        game.doAction(new MagicPayDelayedCostAction(player,this));
+    }
 }

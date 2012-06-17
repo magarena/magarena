@@ -7,21 +7,21 @@ import magic.model.event.MagicExcludeEvent;
 
 public class MagicDrawPhase extends MagicPhase {
 
-	private static final MagicPhase INSTANCE=new MagicDrawPhase();
+    private static final MagicPhase INSTANCE=new MagicDrawPhase();
 
-	public MagicDrawPhase() {
-		super(MagicPhaseType.Draw);
-	}
-	
-	public static MagicPhase getInstance() {
-		return INSTANCE;
-	}
+    public MagicDrawPhase() {
+        super(MagicPhaseType.Draw);
+    }
+    
+    public static MagicPhase getInstance() {
+        return INSTANCE;
+    }
 
-	@Override
-	public void executeBeginStep(final MagicGame game) {
+    @Override
+    public void executeBeginStep(final MagicGame game) {
         //skip draw phase for first turn
         if (game.getTurn() == 1) {
-			game.setStep(MagicStep.NextPhase);
+            game.setStep(MagicStep.NextPhase);
             return;
         }
 
@@ -34,5 +34,5 @@ public class MagicDrawPhase extends MagicPhase {
         if (player.getPlayerDefinition().isArtificial()) {
             game.addEvent(new MagicExcludeEvent(player));
         }
-	}
+    }
 }

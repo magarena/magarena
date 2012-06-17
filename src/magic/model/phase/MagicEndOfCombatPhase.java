@@ -13,24 +13,24 @@ import magic.model.action.MagicRemoveFromPlayAction;
 
 public class MagicEndOfCombatPhase extends MagicPhase {
 
-	private static final MagicPhase INSTANCE=new MagicEndOfCombatPhase();
-	
-	private MagicEndOfCombatPhase() {
-		super(MagicPhaseType.EndOfCombat);	
-	}
-	
-	public static MagicPhase getInstance() {
-		return INSTANCE;
-	}
-	
-	@Override
-	public void executeBeginStep(final MagicGame game) {
-		game.setStep(game.canSkip()?MagicStep.NextPhase:MagicStep.ActivePlayer);
-	}
+    private static final MagicPhase INSTANCE=new MagicEndOfCombatPhase();
+    
+    private MagicEndOfCombatPhase() {
+        super(MagicPhaseType.EndOfCombat);    
+    }
+    
+    public static MagicPhase getInstance() {
+        return INSTANCE;
+    }
+    
+    @Override
+    public void executeBeginStep(final MagicGame game) {
+        game.setStep(game.canSkip()?MagicStep.NextPhase:MagicStep.ActivePlayer);
+    }
 
-	@Override
-	public void executeEndOfPhase(final MagicGame game) {
-		for (final MagicPlayer player : game.getPlayers()) {
+    @Override
+    public void executeEndOfPhase(final MagicGame game) {
+        for (final MagicPlayer player : game.getPlayers()) {
             final MagicPermanentList toBeExiled = new MagicPermanentList();
             final MagicPermanentList toBeDestroyed = new MagicPermanentList();
             final MagicPermanentList toBeReturned = new MagicPermanentList();
@@ -38,26 +38,26 @@ public class MagicEndOfCombatPhase extends MagicPhase {
                 if (permanent.hasState(MagicPermanentState.ExileAtEndOfCombat)) {
                     toBeExiled.add(permanent);
                 } else if (permanent.hasState(MagicPermanentState.DestroyAtEndOfCombat)) {
-                	toBeDestroyed.add(permanent);
+                    toBeDestroyed.add(permanent);
                 } else if (permanent.hasState(MagicPermanentState.ReturnToHandOfOwnerAtEndOfCombat)) {
-                	toBeReturned.add(permanent);
+                    toBeReturned.add(permanent);
                 } else if (permanent.isAttacking()||permanent.isBlocking()) {
                     game.doAction(new MagicRemoveFromCombatAction(permanent));
                 }
             }
             for (final MagicPermanent permanent : toBeExiled) {
                 game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
-			}
+            }
             for (final MagicPermanent permanent : toBeDestroyed) {
-            	game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DestroyAtEndOfCombat,false));
-            	game.doAction(new MagicDestroyAction(permanent));
-			}
+                game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.DestroyAtEndOfCombat,false));
+                game.doAction(new MagicDestroyAction(permanent));
+            }
             for (final MagicPermanent permanent : toBeReturned) {
-            	game.logAppendMessage(
-            			permanent.getController(),
-            			"Return " + permanent + " to its owner's hand (end of combat).");
-    			game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-			}
-		}
-	}
+                game.logAppendMessage(
+                        permanent.getController(),
+                        "Return " + permanent + " to its owner's hand (end of combat).");
+                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+            }
+        }
+    }
 }

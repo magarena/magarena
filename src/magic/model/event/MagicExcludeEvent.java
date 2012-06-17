@@ -7,19 +7,19 @@ import magic.model.choice.MagicExcludeResult;
 
 public class MagicExcludeEvent extends MagicEvent {
 
-	private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-		@Override
-		public void executeEvent(
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicExcludeResult result=(MagicExcludeResult)choiceResults[0];
-			result.exclude(game);			
-		}
-	};
-	
-	public MagicExcludeEvent(final MagicPlayer player) {
-		super(MagicEvent.NO_SOURCE,player,MagicExcludeChoice.getInstance(),MagicEvent.NO_DATA,EVENT_ACTION,"");
-	}
+            final MagicExcludeResult result=(MagicExcludeResult)choiceResults[0];
+            result.exclude(game);            
+        }
+    };
+    
+    public MagicExcludeEvent(final MagicPlayer player) {
+        super(MagicEvent.NO_SOURCE,player,MagicExcludeChoice.getInstance(),MagicEvent.NO_DATA,EVENT_ACTION,"");
+    }
 }

@@ -13,29 +13,29 @@ import magic.model.target.MagicEquipTargetPicker;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 
-	private final MagicManaCost equipCost;
-	
-	public MagicEquipActivation(final MagicManaCost equipCost) {
-		super(
+    private final MagicManaCost equipCost;
+    
+    public MagicEquipActivation(final MagicManaCost equipCost) {
+        super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
                 MagicCondition.NOT_CREATURE_CONDITION,
                 equipCost.getCondition()
             },
-	        new MagicActivationHints(MagicTiming.Equipment,false,2),
+            new MagicActivationHints(MagicTiming.Equipment,false,2),
             "Equip"
             );
-		this.equipCost=equipCost;
-	}
+        this.equipCost=equipCost;
+    }
 
-	@Override
-	protected MagicEvent[] getCostEvent(final MagicSource source) {
-		return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),equipCost)};
-	}
+    @Override
+    protected MagicEvent[] getCostEvent(final MagicSource source) {
+        return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),equipCost)};
+    }
 
-	@Override
-	public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-		return new MagicEvent(
+    @Override
+    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+        return new MagicEvent(
                 source,
                 source.getController(),
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
@@ -43,14 +43,14 @@ public class MagicEquipActivation extends MagicPermanentActivation {
                 new Object[]{source},
                 this,
                 "Attach " + source + " to target creature$ you control.");
-	}
+    }
 
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+    @Override
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
         event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
                 game.doAction(new MagicAttachEquipmentAction((MagicPermanent)data[0],creature));
             }
         });
-	}
+    }
 }

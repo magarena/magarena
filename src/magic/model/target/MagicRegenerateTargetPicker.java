@@ -7,23 +7,23 @@ import magic.model.MagicPlayer;
 
 public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicRegenerateTargetPicker INSTANCE = new MagicRegenerateTargetPicker();
-	
-	private MagicRegenerateTargetPicker() {}
-	
-	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		if (permanent.canRegenerate()) {
-			final long flags=permanent.getAllAbilityFlags();
-			if (MagicAbility.Persist.hasAbility(flags)||MagicAbility.Indestructible.hasAbility(flags)) {
-				return permanent.getDamage()+1;
-			}
-			return permanent.getScore();
-		}		
-		return 0;
-	}
-	
-	public static MagicRegenerateTargetPicker getInstance() {
-		return INSTANCE;
-	}
+    private static final MagicRegenerateTargetPicker INSTANCE = new MagicRegenerateTargetPicker();
+    
+    private MagicRegenerateTargetPicker() {}
+    
+    @Override
+    protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+        if (permanent.canRegenerate()) {
+            final long flags=permanent.getAllAbilityFlags();
+            if (MagicAbility.Persist.hasAbility(flags)||MagicAbility.Indestructible.hasAbility(flags)) {
+                return permanent.getDamage()+1;
+            }
+            return permanent.getScore();
+        }        
+        return 0;
+    }
+    
+    public static MagicRegenerateTargetPicker getInstance() {
+        return INSTANCE;
+    }
 }

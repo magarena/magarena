@@ -13,20 +13,20 @@ import magic.model.event.MagicEvent;
 
 public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
 
-	private MagicManaCost manaCost;
-	
+    private MagicManaCost manaCost;
+    
     public MagicEchoTrigger(final MagicManaCost manaCost) {
-    	this.manaCost = manaCost;
-	}
+        this.manaCost = manaCost;
+    }
     
     @Override
-	public MagicEvent executeTrigger(
-			final MagicGame game,
-			final MagicPermanent permanent,
-			final MagicPlayer data) {
-    	final MagicPlayer player = permanent.getController();
-		return (player == data &&
-			permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?
+    public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicPlayer data) {
+        final MagicPlayer player = permanent.getController();
+        return (player == data &&
+            permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?
             new MagicEvent(
                     permanent,
                     player,
@@ -37,23 +37,23 @@ public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
                     this,
                     player + " may$ pay " + manaCost +
                     ". If he or she doesn't, sacrifice " + permanent + ".") :
-		   MagicEvent.NONE;
-	}
+           MagicEvent.NONE;
+    }
 
-	@Override
-	public void executeEvent(
+    @Override
+    public void executeEvent(
             final MagicGame game,
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-		final MagicPermanent permanent = (MagicPermanent)data[0];
-		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-			game.doAction(new MagicChangeStateAction(
-					permanent,
-					MagicPermanentState.MustPayEchoCost,false));
-		} else {
-			game.doAction(new MagicSacrificeAction(permanent));
-		}
-	}
+        final MagicPermanent permanent = (MagicPermanent)data[0];
+        if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            game.doAction(new MagicChangeStateAction(
+                    permanent,
+                    MagicPermanentState.MustPayEchoCost,false));
+        } else {
+            game.doAction(new MagicSacrificeAction(permanent));
+        }
+    }
 }
 

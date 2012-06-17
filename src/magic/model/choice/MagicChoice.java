@@ -13,15 +13,15 @@ import java.util.Collections;
 import java.util.List;
 
 public abstract class MagicChoice {
-	
-	static final String YES_CHOICE="yes";
-	static final String NO_CHOICE="no";
-	
-	public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
+    
+    static final String YES_CHOICE="yes";
+    static final String NO_CHOICE="no";
+    
+    public static final Object[] UNDO_CHOICE_RESULTS=new Object[]{"Undo"};
 
     public static final MagicChoice NONE = new MagicChoice("none") {
         @Override
-	    public Collection<Object> getArtificialOptions(
+        public Collection<Object> getArtificialOptions(
                 final MagicGame game,
                 final MagicEvent event,
                 final MagicPlayer player,
@@ -41,86 +41,86 @@ public abstract class MagicChoice {
             return false;
         }
     };
-	
-	private final String description;
-	
-	MagicChoice(final String description) {
-		this.description=description;
-	}
-	
-	public final String getDescription() {
-		return description;
-	}
-	
-	public MagicTargetChoice getTargetChoice() {
-		return MagicTargetChoice.TARGET_NONE;
-	}
-	
-	public int getManaChoiceResultIndex() {
-		return -1;
-	}
+    
+    private final String description;
+    
+    MagicChoice(final String description) {
+        this.description=description;
+    }
+    
+    public final String getDescription() {
+        return description;
+    }
+    
+    public MagicTargetChoice getTargetChoice() {
+        return MagicTargetChoice.TARGET_NONE;
+    }
+    
+    public int getManaChoiceResultIndex() {
+        return -1;
+    }
 
     public boolean isValid() {
         return true;
     }
 
-	/** Checks if there are valid options for the choice. */
-	boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
-		return true;
-	}
-	
-	/** Gets the available options for AI. */
-	abstract Collection<Object> getArtificialOptions(
-			final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source);
-	
-	/** Gets the choice results for AI. */
-	public List<Object[]> getArtificialChoiceResults(
-			final MagicGame game,
+    /** Checks if there are valid options for the choice. */
+    boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+        return true;
+    }
+    
+    /** Gets the available options for AI. */
+    abstract Collection<Object> getArtificialOptions(
+            final MagicGame game,final MagicEvent event,final MagicPlayer player,final MagicSource source);
+    
+    /** Gets the choice results for AI. */
+    public List<Object[]> getArtificialChoiceResults(
+            final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
-		final Collection<Object> options=getArtificialOptions(game,event,player,source);
-		final int size=options.size();
+        final Collection<Object> options=getArtificialOptions(game,event,player,source);
+        final int size=options.size();
         if (size == 0) {
             throw new RuntimeException("no artificial choice result");
         } else if (size == 1) {
-			return Collections.singletonList(new Object[]{options.iterator().next()});
-		} else {
+            return Collections.singletonList(new Object[]{options.iterator().next()});
+        } else {
             final List<Object[]> choiceResultsList=new ArrayList<Object[]>(size);
             for (final Object option : options) {
                 choiceResultsList.add(new Object[]{option});
             }
             return choiceResultsList;
         }
-	}
+    }
 
-	/** Gets one choice results for simulation. */
+    /** Gets one choice results for simulation. */
     public Object[] getSimulationChoiceResult(
-			final MagicGame game,
+            final MagicGame game,
             final MagicEvent event,
             final MagicPlayer player,
             final MagicSource source) {
 
         final List<Object[]> choices = getArtificialChoiceResults(game, event, player, source);
-		final int size = choices.size();
+        final int size = choices.size();
         if (size == 0) {
             throw new RuntimeException("no simulation choice result");
         } 
         return choices.get(MagicRandom.nextInt(choices.size()));
     }
-	
-	/** Gets the choice results of the player. */
-	public abstract Object[] getPlayerChoiceResults(
+    
+    /** Gets the choice results of the player. */
+    public abstract Object[] getPlayerChoiceResults(
             final GameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source);
 
-	public static boolean isYesChoice(final Object choiceResult) {
-		return YES_CHOICE==choiceResult;
-	}
+    public static boolean isYesChoice(final Object choiceResult) {
+        return YES_CHOICE==choiceResult;
+    }
 
-	public static boolean isNoChoice(final Object choiceResult) {
-		return NO_CHOICE==choiceResult;
-	}
+    public static boolean isNoChoice(final Object choiceResult) {
+        return NO_CHOICE==choiceResult;
+    }
 }

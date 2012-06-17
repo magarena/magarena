@@ -9,35 +9,35 @@ import magic.model.event.MagicEvent;
 import javax.swing.ImageIcon;
 
 public class MagicTriggerOnStack extends MagicItemOnStack {
-	public MagicTriggerOnStack(final MagicEvent event) {
+    public MagicTriggerOnStack(final MagicEvent event) {
         assert event.getSource() != MagicCard.NONE : event.toString();
-		setSource(event.getSource());
+        setSource(event.getSource());
         assert event.getSource().getController() != MagicPlayer.NONE : event.toString(); 
-		setController(event.getSource().getController());
-		setEvent(event);
-	}
-	
+        setController(event.getSource().getController());
+        setEvent(event);
+    }
+    
     private MagicTriggerOnStack(final MagicCopyMap copyMap ,final MagicTriggerOnStack source) {
         super(copyMap, source);
-	}
-	
+    }
+    
     @Override
-	public MagicTriggerOnStack copy(final MagicCopyMap copyMap) {
+    public MagicTriggerOnStack copy(final MagicCopyMap copyMap) {
         return new MagicTriggerOnStack(copyMap, this);
     }
 
-	@Override
-	public boolean isSpell() {
-		return false;
-	}
-	
-	@Override
-	public boolean canBeCountered() {
-		return true;
-	}
-		
-	@Override
-	public ImageIcon getIcon() {
-		return IconImages.TRIGGER;
-	}	
+    @Override
+    public boolean isSpell() {
+        return false;
+    }
+    
+    @Override
+    public boolean canBeCountered() {
+        return true;
+    }
+        
+    @Override
+    public ImageIcon getIcon() {
+        return IconImages.TRIGGER;
+    }    
 }

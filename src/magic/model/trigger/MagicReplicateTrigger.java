@@ -18,36 +18,36 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
     }
 
     @Override
-	public MagicEvent executeTrigger(
-			final MagicGame game,
-			final MagicPermanent permanent,
-			final MagicCardOnStack data) {
-		return new MagicEvent(
-				data.getSource(),
-				data.getController(),
+    public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicCardOnStack data) {
+        return new MagicEvent(
+                data.getSource(),
+                data.getController(),
                 new MagicKickerChoice(data.getCardDefinition().getCost(),true,true),
                 new Object[]{data},
                 this,
-				"");
-	}
-	
-	@Override
-	public void executeEvent(
-			final MagicGame game,
-			final MagicEvent event,
-			final Object data[],
-			final Object[] choiceResults) {
-		int kickerCount = (Integer)choiceResults[1];
-		final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-		for (;kickerCount>0;kickerCount--) {
-			game.doAction(new MagicCopyCardOnStackAction(
-					cardOnStack.getController(),
-					cardOnStack));
-		}
-	}
-	
-	@Override
-	public boolean usesStack() {
-		return false;
-	}
+                "");
+    }
+    
+    @Override
+    public void executeEvent(
+            final MagicGame game,
+            final MagicEvent event,
+            final Object data[],
+            final Object[] choiceResults) {
+        int kickerCount = (Integer)choiceResults[1];
+        final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+        for (;kickerCount>0;kickerCount--) {
+            game.doAction(new MagicCopyCardOnStackAction(
+                    cardOnStack.getController(),
+                    cardOnStack));
+        }
+    }
+    
+    @Override
+    public boolean usesStack() {
+        return false;
+    }
 }

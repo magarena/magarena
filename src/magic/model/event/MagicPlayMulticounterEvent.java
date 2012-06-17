@@ -14,7 +14,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {  		
+public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {          
 
     final MagicManaCost cost;
 

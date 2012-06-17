@@ -6,19 +6,19 @@ import magic.model.MagicPermanentState;
 
 public class MagicDeclareAttackerAction extends MagicAction {
 
-	private final MagicPermanent attacker;
-	
-	MagicDeclareAttackerAction(final MagicPermanent attacker) {
-		this.attacker=attacker;
-	}
+    private final MagicPermanent attacker;
+    
+    MagicDeclareAttackerAction(final MagicPermanent attacker) {
+        this.attacker=attacker;
+    }
 
-	@Override
-	public void doAction(final MagicGame game) {
-		attacker.setState(MagicPermanentState.Attacking);
-	}
+    @Override
+    public void doAction(final MagicGame game) {
+        attacker.setState(MagicPermanentState.Attacking);
+    }
 
-	@Override
-	public void undoAction(final MagicGame game) {
-		attacker.clearState(MagicPermanentState.Attacking);
-	}
+    @Override
+    public void undoAction(final MagicGame game) {
+        attacker.clearState(MagicPermanentState.Attacking);
+    }
 }

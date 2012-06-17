@@ -7,56 +7,56 @@ import magic.model.MagicPlayer;
 
 public class MagicLifelinkTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicLifelinkTargetPicker INSTANCE = new MagicLifelinkTargetPicker();
-	
-	private static final int ATTACKING_UNBLOCKED = 5<<8;
-	private static final int BLOCKED_OR_BLOCKING = 4<<8;
-	private static final int CAN_TAP = 3<<8;
-	private static final int DOUBLE_STRIKE = 2<<8;
-	private static final int FIRST_STRIKE = 1<<8;
+    private static final MagicLifelinkTargetPicker INSTANCE = new MagicLifelinkTargetPicker();
+    
+    private static final int ATTACKING_UNBLOCKED = 5<<8;
+    private static final int BLOCKED_OR_BLOCKING = 4<<8;
+    private static final int CAN_TAP = 3<<8;
+    private static final int DOUBLE_STRIKE = 2<<8;
+    private static final int FIRST_STRIKE = 1<<8;
 
-	private MagicLifelinkTargetPicker() {}
-	
-	public static MagicLifelinkTargetPicker create() {
-		return INSTANCE;
-	}
+    private MagicLifelinkTargetPicker() {}
+    
+    public static MagicLifelinkTargetPicker create() {
+        return INSTANCE;
+    }
 
-	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		final long flags = permanent.getAllAbilityFlags();
-		int score = 0;
+    @Override
+    protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+        final long flags = permanent.getAllAbilityFlags();
+        int score = 0;
 
-		// no score for ability overlap or not being able to deal combat damage
-		if (MagicAbility.LifeLink.hasAbility(flags) ||
-			MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
-			return 0;
-		}
-		
-		if (permanent.isAttacking()) {
-			if (!permanent.isBlocked()) {
-				// unblocked attacker has the highest chance of gaining life
-				score = ATTACKING_UNBLOCKED;
-			} else {
-				// possible to not gain life when blocker has first strike
-				score = BLOCKED_OR_BLOCKING;
-			}
-		} else if (permanent.isBlocking()) {
-			// possible to not gain life when attacker has first strike
-			score = BLOCKED_OR_BLOCKING;
-		} else if (permanent.canTap()) {
-			// can be in combat later or possibly use a damage ability
-			score = CAN_TAP;
-		} 
+        // no score for ability overlap or not being able to deal combat damage
+        if (MagicAbility.LifeLink.hasAbility(flags) ||
+            MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
+            return 0;
+        }
+        
+        if (permanent.isAttacking()) {
+            if (!permanent.isBlocked()) {
+                // unblocked attacker has the highest chance of gaining life
+                score = ATTACKING_UNBLOCKED;
+            } else {
+                // possible to not gain life when blocker has first strike
+                score = BLOCKED_OR_BLOCKING;
+            }
+        } else if (permanent.isBlocking()) {
+            // possible to not gain life when attacker has first strike
+            score = BLOCKED_OR_BLOCKING;
+        } else if (permanent.canTap()) {
+            // can be in combat later or possibly use a damage ability
+            score = CAN_TAP;
+        } 
 
-		if (MagicAbility.DoubleStrike.hasAbility(flags)) {
-			// chance to deal combat damage twice
-			score += DOUBLE_STRIKE;
-		}
-		if (MagicAbility.FirstStrike.hasAbility(flags)) {
-			// higher chance to deal combat damage
-			score += FIRST_STRIKE;
-		}
-		
-		return permanent.getPower() + score;
-	}
+        if (MagicAbility.DoubleStrike.hasAbility(flags)) {
+            // chance to deal combat damage twice
+            score += DOUBLE_STRIKE;
+        }
+        if (MagicAbility.FirstStrike.hasAbility(flags)) {
+            // higher chance to deal combat damage
+            score += FIRST_STRIKE;
+        }
+        
+        return permanent.getPower() + score;
+    }
 }

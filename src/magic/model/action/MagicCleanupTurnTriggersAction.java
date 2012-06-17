@@ -7,15 +7,15 @@ import java.util.List;
 
 public class MagicCleanupTurnTriggersAction extends MagicAction {
 
-	private List<MagicPermanentTrigger> removedTriggers;
-	
-	@Override
-	public void doAction(final MagicGame game) {
-		removedTriggers=game.removeTurnTriggers();		
-	}
+    private List<MagicPermanentTrigger> removedTriggers;
+    
+    @Override
+    public void doAction(final MagicGame game) {
+        removedTriggers=game.removeTurnTriggers();        
+    }
 
-	@Override
-	public void undoAction(final MagicGame game) {
-		game.addTurnTriggers(removedTriggers);
-	}
+    @Override
+    public void undoAction(final MagicGame game) {
+        game.addTurnTriggers(removedTriggers);
+    }
 }

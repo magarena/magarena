@@ -2,18 +2,18 @@ package magic.model.phase;
 
 public enum MagicStep {
     /** Begin of each phase */
-	Begin, 
+    Begin, 
     
     /** Let active player play spells until pass. */
-    ActivePlayer, 	
+    ActivePlayer,     
     
     /** Let other player play spells until pass. If spells were played, go back
      * to ActivePlayer. */
-    OtherPlayer,	
+    OtherPlayer,    
     
     /** If stack is empty, go to StackResolved. Otherwise resolve top spell of
      * stack and go back to ActivePlayer. */
-    Resolve, 	
+    Resolve,     
     
     /** Go to the next phase. */
     NextPhase, 

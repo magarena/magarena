@@ -8,73 +8,73 @@ import magic.model.MagicSource;
 
 public class MagicTargetNone implements MagicTarget {
 
-	private static final MagicTarget INSTANCE=new MagicTargetNone();
-	
-	private MagicTargetNone() {}
-	
-	@Override
-	public MagicTargetNone map(final MagicGame game) {
-		return this;
-	}
-	
-	@Override
-	public MagicTarget copy(final MagicCopyMap copyMap) {
-        return this;
-	}
-	
-	@Override
-	public void setPreventDamage(final int amount) {
-		
-	}
-	
-	@Override
-	public boolean isValidTarget(final MagicSource source) {
-		return false;
-	}
-	
-	@Override
-	public boolean isSpell() {
-		return false;
-	}
-	
-	@Override
-	public boolean isPlayer() {
-		return false;
-	}
-	
-	@Override
-	public boolean isPermanent() {
-		return false;
-	}
-	
-	@Override
-	public int getPreventDamage() {
-		return 0;
-	}
-	
-	@Override
-	public String getName() {
-		return "no legal targets";
-	}
-	
-	@Override
-	public String toString() {
-		return getName();
-	}
-
-	@Override
-	public MagicPlayer getController() {
-        throw new RuntimeException("MagicTargetNone has no controller");
-	}
-	
+    private static final MagicTarget INSTANCE=new MagicTargetNone();
+    
+    private MagicTargetNone() {}
+    
     @Override
-	public MagicCardDefinition getCardDefinition() {
+    public MagicTargetNone map(final MagicGame game) {
+        return this;
+    }
+    
+    @Override
+    public MagicTarget copy(final MagicCopyMap copyMap) {
+        return this;
+    }
+    
+    @Override
+    public void setPreventDamage(final int amount) {
+        
+    }
+    
+    @Override
+    public boolean isValidTarget(final MagicSource source) {
+        return false;
+    }
+    
+    @Override
+    public boolean isSpell() {
+        return false;
+    }
+    
+    @Override
+    public boolean isPlayer() {
+        return false;
+    }
+    
+    @Override
+    public boolean isPermanent() {
+        return false;
+    }
+    
+    @Override
+    public int getPreventDamage() {
+        return 0;
+    }
+    
+    @Override
+    public String getName() {
+        return "no legal targets";
+    }
+    
+    @Override
+    public String toString() {
+        return getName();
+    }
+
+    @Override
+    public MagicPlayer getController() {
+        throw new RuntimeException("MagicTargetNone has no controller");
+    }
+    
+    @Override
+    public MagicCardDefinition getCardDefinition() {
         throw new RuntimeException("MagicTargetNone has no card definition");
-	}
-	
-	public static final MagicTarget getInstance() {
-		return INSTANCE;
-	}
+    }
+    
+    public static final MagicTarget getInstance() {
+        return INSTANCE;
+    }
 
     public long getId() {
         return hashCode();

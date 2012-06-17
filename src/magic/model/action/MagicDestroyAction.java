@@ -10,68 +10,68 @@ import magic.model.MagicPermanentState;
 import magic.model.target.MagicTarget;
 
 public class MagicDestroyAction extends MagicAction {
-	
-	final private Collection<MagicTarget> targets = new ArrayList<MagicTarget>();
-	
-	public MagicDestroyAction(final MagicPermanent permanent) {
-		this.targets.add(permanent);
-	}
-	
-	public MagicDestroyAction(final Collection<MagicTarget> targets) {
-		this.targets.addAll(targets);
-	}
-	
-	@Override
-	public void doAction(final MagicGame game) {
-		final Collection<MagicPermanent> toBeDestroyed = new ArrayList<MagicPermanent>();
-		for (final MagicTarget target : targets) {
-			boolean destroy = true;
-			final MagicPermanent permanent = (MagicPermanent)target;
-			
-			// Indestructible
-			if (permanent.hasAbility(MagicAbility.Indestructible)) {
-	            destroy = false;
-	        }
-			
-			// Regeneration
-	        if (permanent.isRegenerated()) {
-	            game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
-	            game.doAction(new MagicTapAction(permanent,false));
-	            game.doAction(new MagicRemoveAllDamageAction(permanent));
-	            game.doAction(new MagicRemoveFromCombatAction(permanent));
-	            game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Regenerated,false));
-	            destroy = false;
-	        } 
-	        
-	        // Totem armor
-	        if (permanent.isEnchanted()) {
-	            for (final MagicPermanent aura : permanent.getAuraPermanents()) {
-	                if (aura.getCardDefinition().hasAbility(MagicAbility.TotemArmor)) {
-	                    game.logAppendMessage(permanent.getController(),"Remove all damage from "+permanent.getName()+'.');
-	                    game.doAction(new MagicRemoveAllDamageAction(permanent));
+    
+    final private Collection<MagicTarget> targets = new ArrayList<MagicTarget>();
+    
+    public MagicDestroyAction(final MagicPermanent permanent) {
+        this.targets.add(permanent);
+    }
+    
+    public MagicDestroyAction(final Collection<MagicTarget> targets) {
+        this.targets.addAll(targets);
+    }
+    
+    @Override
+    public void doAction(final MagicGame game) {
+        final Collection<MagicPermanent> toBeDestroyed = new ArrayList<MagicPermanent>();
+        for (final MagicTarget target : targets) {
+            boolean destroy = true;
+            final MagicPermanent permanent = (MagicPermanent)target;
+            
+            // Indestructible
+            if (permanent.hasAbility(MagicAbility.Indestructible)) {
+                destroy = false;
+            }
+            
+            // Regeneration
+            if (permanent.isRegenerated()) {
+                game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
+                game.doAction(new MagicTapAction(permanent,false));
+                game.doAction(new MagicRemoveAllDamageAction(permanent));
+                game.doAction(new MagicRemoveFromCombatAction(permanent));
+                game.doAction(new MagicChangeStateAction(permanent,MagicPermanentState.Regenerated,false));
+                destroy = false;
+            } 
+            
+            // Totem armor
+            if (permanent.isEnchanted()) {
+                for (final MagicPermanent aura : permanent.getAuraPermanents()) {
+                    if (aura.getCardDefinition().hasAbility(MagicAbility.TotemArmor)) {
+                        game.logAppendMessage(permanent.getController(),"Remove all damage from "+permanent.getName()+'.');
+                        game.doAction(new MagicRemoveAllDamageAction(permanent));
                         toBeDestroyed.add(aura);
-	                    destroy = false;
+                        destroy = false;
                         //Only the first aura with totem armor will be
                         //destroyed.  If there are multiple auras with totem
                         //armor, player can choose the one to be destroyed, but
                         //this is not implemented
                         break;
-	                }
-	            }
-	        }
-	        
-	        if (destroy) {
-				toBeDestroyed.add(permanent);
-			}
-		}
+                    }
+                }
+            }
+            
+            if (destroy) {
+                toBeDestroyed.add(permanent);
+            }
+        }
         
-		for (final MagicPermanent permanent : toBeDestroyed) {
-			// Destroyed
-	        game.logAppendMessage(permanent.getController(),permanent.getName()+" is destroyed.");
-	        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
-		}  
-	}
+        for (final MagicPermanent permanent : toBeDestroyed) {
+            // Destroyed
+            game.logAppendMessage(permanent.getController(),permanent.getName()+" is destroyed.");
+            game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
+        }  
+    }
 
-	@Override
-	public void undoAction(final MagicGame game) {}
+    @Override
+    public void undoAction(final MagicGame game) {}
 }

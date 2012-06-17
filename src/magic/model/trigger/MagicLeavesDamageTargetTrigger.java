@@ -23,15 +23,15 @@ public class MagicLeavesDamageTargetTrigger extends MagicWhenLeavesPlayTrigger {
     }
     
     private final String genDescription(final MagicTargetChoice targetChoice) {
-    	String description = "creature or player$.";
-    	if (targetChoice == MagicTargetChoice.TARGET_CREATURE) {
-    		description = "creature$.";
-    	}
-    	else if (targetChoice == MagicTargetChoice.NEG_TARGET_PLAYER) {
-    		description = "player$.";
-    	}
-    	return description;
-	}
+        String description = "creature or player$.";
+        if (targetChoice == MagicTargetChoice.TARGET_CREATURE) {
+            description = "creature$.";
+        }
+        else if (targetChoice == MagicTargetChoice.NEG_TARGET_PLAYER) {
+            description = "player$.";
+        }
+        return description;
+    }
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
@@ -45,7 +45,7 @@ public class MagicLeavesDamageTargetTrigger extends MagicWhenLeavesPlayTrigger {
                 MagicEvent.NO_DATA,
                 this,
                 permanent + " deals " + n + " damage to target " +
-                		genDescription(targetChoice)) :
+                        genDescription(targetChoice)) :
             MagicEvent.NONE;
     }
     @Override

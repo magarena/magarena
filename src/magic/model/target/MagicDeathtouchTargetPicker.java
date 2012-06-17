@@ -7,48 +7,48 @@ import magic.model.MagicPlayer;
 
 public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicDeathtouchTargetPicker INSTANCE = new MagicDeathtouchTargetPicker();
-	
-	private static final int BLOCKED = 4<<8;
-	private static final int BLOCKING = 3<<8;
-	private static final int CAN_TAP = 2<<8;
-	private static final int FIRST_STRIKE = 1<<8;
-	
-	private MagicDeathtouchTargetPicker() {
-	}
+    private static final MagicDeathtouchTargetPicker INSTANCE = new MagicDeathtouchTargetPicker();
+    
+    private static final int BLOCKED = 4<<8;
+    private static final int BLOCKING = 3<<8;
+    private static final int CAN_TAP = 2<<8;
+    private static final int FIRST_STRIKE = 1<<8;
+    
+    private MagicDeathtouchTargetPicker() {
+    }
 
-	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		final long flags = permanent.getAllAbilityFlags();
-		int score = 0;
+    @Override
+    protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+        final long flags = permanent.getAllAbilityFlags();
+        int score = 0;
 
-		// no score for ability overlap or not being able to deal combat damage
-		if (MagicAbility.Deathtouch.hasAbility(flags) ||
-			MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
-			return 0;
-		}
-			
-		if (permanent.isBlocked()) {
-			score = BLOCKED;
-			// possibility to destroy more than one blocker
-		} else if (permanent.isBlocking()) {
-			// good chance to destroy attacker
-			score = BLOCKING;
-		} else if (permanent.canTap()) {
-			// can be in combat later or possibly use a damage ability
-			score = CAN_TAP;
-		} 
+        // no score for ability overlap or not being able to deal combat damage
+        if (MagicAbility.Deathtouch.hasAbility(flags) ||
+            MagicAbility.CannotAttackOrBlock.hasAbility(flags)) {
+            return 0;
+        }
+            
+        if (permanent.isBlocked()) {
+            score = BLOCKED;
+            // possibility to destroy more than one blocker
+        } else if (permanent.isBlocking()) {
+            // good chance to destroy attacker
+            score = BLOCKING;
+        } else if (permanent.canTap()) {
+            // can be in combat later or possibly use a damage ability
+            score = CAN_TAP;
+        } 
 
-		if (MagicAbility.FirstStrike.hasAbility(flags) ||
-			MagicAbility.DoubleStrike.hasAbility(flags)) {
-			// higher chance to deal combat damage
-			score += FIRST_STRIKE;
-		}
-		
-		return permanent.getPower() + score;
-	}
-	
-	public static MagicDeathtouchTargetPicker getInstance() {
-		return INSTANCE;
-	}
+        if (MagicAbility.FirstStrike.hasAbility(flags) ||
+            MagicAbility.DoubleStrike.hasAbility(flags)) {
+            // higher chance to deal combat damage
+            score += FIRST_STRIKE;
+        }
+        
+        return permanent.getPower() + score;
+    }
+    
+    public static MagicDeathtouchTargetPicker getInstance() {
+        return INSTANCE;
+    }
 }

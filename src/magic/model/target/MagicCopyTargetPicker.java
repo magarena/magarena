@@ -6,16 +6,16 @@ import magic.model.MagicPlayer;
 
 public class MagicCopyTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
-	private static final MagicCopyTargetPicker INSTANCE=new MagicCopyTargetPicker();
+    private static final MagicCopyTargetPicker INSTANCE=new MagicCopyTargetPicker();
 
-	private MagicCopyTargetPicker() {}
+    private MagicCopyTargetPicker() {}
 
-	public static MagicCopyTargetPicker create() {
-		return INSTANCE;
-	}
-	
-	@Override
-	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-		return permanent.getCardDefinition().getScore();
-	}
+    public static MagicCopyTargetPicker create() {
+        return INSTANCE;
+    }
+    
+    @Override
+    protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+        return permanent.getCardDefinition().getScore();
+    }
 }

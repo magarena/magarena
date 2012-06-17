@@ -29,11 +29,11 @@ import java.util.List;
 public class MagicEvent implements MagicCopyable {
 
     public static final MagicSource NO_SOURCE = MagicCard.NONE;
-	public static final Object NO_CHOICE_RESULTS[] = new Object[0];
-	public static final Object NO_DATA[] = new Object[0];
-	public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
-	private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
-	private static final MagicEventAction NO_ACTION = new MagicEventAction() {
+    public static final Object NO_CHOICE_RESULTS[] = new Object[0];
+    public static final Object NO_DATA[] = new Object[0];
+    public static final MagicEvent NO_EVENTS[] = new MagicEvent[0];
+    private static final MagicChoice NO_CHOICES = MagicChoice.NONE;
+    private static final MagicEventAction NO_ACTION = new MagicEventAction() {
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
@@ -42,7 +42,7 @@ public class MagicEvent implements MagicCopyable {
             //do nothing
         }
     };
-	
+    
     public static final MagicEvent NONE = new MagicEvent(NO_SOURCE, MagicPlayer.NONE, NO_DATA, NO_ACTION, "") {
         @Override
         public boolean isValid() {
@@ -58,145 +58,145 @@ public class MagicEvent implements MagicCopyable {
         }
     };
 
-	private final MagicSource source;
-	private final MagicPlayer player;
-	private final MagicChoice choice;
-	private final MagicTargetPicker targetPicker;
-	private final MagicEventAction action;
-	private final String description;
-	
+    private final MagicSource source;
+    private final MagicPlayer player;
+    private final MagicChoice choice;
+    private final MagicTargetPicker targetPicker;
+    private final MagicEventAction action;
+    private final String description;
+    
     private final Object[] data;
 
-	public MagicEvent(
+    public MagicEvent(
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
-			final MagicTargetPicker targetPicker,
+            final MagicTargetPicker targetPicker,
             final Object data[],
             final MagicEventAction action,
             final String description) {
         this.source=source;
-		this.player=player;
-		this.choice=choice;
-		this.targetPicker=targetPicker;
-		this.data=data;
-		this.action=action;
-		this.description=description;
-	}
+        this.player=player;
+        this.choice=choice;
+        this.targetPicker=targetPicker;
+        this.data=data;
+        this.action=action;
+        this.description=description;
+    }
 
-	public MagicEvent(
+    public MagicEvent(
             final MagicSource source,
             final MagicPlayer player,
             final MagicChoice choice,
-			final Object data[],
+            final Object data[],
             final MagicEventAction action,
             final String description) {
-		this(source,player,choice,MagicDefaultTargetPicker.getInstance(),data,action,description);
-	}
-	
-	public MagicEvent(
+        this(source,player,choice,MagicDefaultTargetPicker.getInstance(),data,action,description);
+    }
+    
+    public MagicEvent(
             final MagicSource source,
             final MagicPlayer player,
             final Object data[],
             final MagicEventAction action,
             final String description) {
-		this(source,player,NO_CHOICES,MagicDefaultTargetPicker.getInstance(),data,action,description);
-	}
-	
+        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.getInstance(),data,action,description);
+    }
+    
     private MagicEvent(final MagicCopyMap copyMap, final MagicEvent sourceEvent) {
         copyMap.put(sourceEvent,this);
         
         source = copyMap.copy(sourceEvent.source);
-		player = copyMap.copy(sourceEvent.player);
-		choice = sourceEvent.choice;
-		targetPicker = sourceEvent.targetPicker;
+        player = copyMap.copy(sourceEvent.player);
+        choice = sourceEvent.choice;
+        targetPicker = sourceEvent.targetPicker;
         data = copyMap.copyObjects(sourceEvent.data,Object.class);
-		action = sourceEvent.action;
-		description = sourceEvent.description;
+        action = sourceEvent.action;
+        description = sourceEvent.description;
     }
-	
-	@Override
-	public MagicEvent copy(final MagicCopyMap copyMap) {
+    
+    @Override
+    public MagicEvent copy(final MagicCopyMap copyMap) {
         return new MagicEvent(copyMap, this);
-	}
+    }
 
     public boolean isValid() {
         return true;
     }
-	
-	public final MagicSource getSource() {
-		return source;
-	}
-	
-	public final MagicPlayer getPlayer() {
-		return player;
-	}
-		
-	public final boolean hasChoice() {
-		return choice.isValid();
-	}
-	
-	public final MagicChoice getChoice() {
-		return choice;
-	}
-	
-	public final MagicTargetPicker getTargetPicker() {
-		return targetPicker;
-	}
-	
-	public final List<Object[]> getArtificialChoiceResults(final MagicGame game) {
+    
+    public final MagicSource getSource() {
+        return source;
+    }
+    
+    public final MagicPlayer getPlayer() {
+        return player;
+    }
+        
+    public final boolean hasChoice() {
+        return choice.isValid();
+    }
+    
+    public final MagicChoice getChoice() {
+        return choice;
+    }
+    
+    public final MagicTargetPicker getTargetPicker() {
+        return targetPicker;
+    }
+    
+    public final List<Object[]> getArtificialChoiceResults(final MagicGame game) {
         final long start = System.currentTimeMillis();
         final List<Object[]> choices = choice.getArtificialChoiceResults(game,this,player,source);
-		final long time = System.currentTimeMillis() - start;
+        final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
             System.err.println("WARNING. ACR:  " + choice.getDescription() + description + " time: " + time);
         }
         return choices;
-	}
-	
+    }
+    
     public final Object[] getSimulationChoiceResult(final MagicGame game) {
         final long start = System.currentTimeMillis();
         final Object[] res = choice.getSimulationChoiceResult(game,this,player,source);
-		final long time = System.currentTimeMillis() - start;
+        final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
             System.err.println("WARNING. RCR:  " + choice.getDescription() + description + " time: " + time);
         }
         return res;
-	}
+    }
 
-	public MagicTargetChoice getTargetChoice() {
-		return choice.getTargetChoice();
-	}
-	
-	private final int getManaChoiceResultIndex() {
-		return choice.getManaChoiceResultIndex();
-	}
+    public MagicTargetChoice getTargetChoice() {
+        return choice.getTargetChoice();
+    }
+    
+    private final int getManaChoiceResultIndex() {
+        return choice.getManaChoiceResultIndex();
+    }
 
-	private final Object[] getData() {
-		return data;
-	}
-	
-	public final String getDescription(final Object choiceResults[]) {
+    private final Object[] getData() {
+        return data;
+    }
+    
+    public final String getDescription(final Object choiceResults[]) {
         return MagicMessage.replaceChoices(description,choiceResults);
-	}
+    }
 
-	public final String getChoiceDescription() {
-		final String tDescription=getDescription(MagicEvent.NO_CHOICE_RESULTS);
-		if (tDescription.length() > 0) {
-			return tDescription;
-		}
-		return hasChoice()?choice.getDescription():"";
-	}
-	
-	private final MagicTarget getTarget(final MagicGame game,final Object choiceResults[],final int index) {
-		final MagicTargetChoice targetChoice=getTargetChoice();
-		final MagicTarget target=(MagicTarget)choiceResults[index];
-		if (game.isLegalTarget(player,source,targetChoice,target)) {
-			return target;
-		} else {
-    		return MagicTargetNone.getInstance();
+    public final String getChoiceDescription() {
+        final String tDescription=getDescription(MagicEvent.NO_CHOICE_RESULTS);
+        if (tDescription.length() > 0) {
+            return tDescription;
         }
-	}
+        return hasChoice()?choice.getDescription():"";
+    }
+    
+    private final MagicTarget getTarget(final MagicGame game,final Object choiceResults[],final int index) {
+        final MagicTargetChoice targetChoice=getTargetChoice();
+        final MagicTarget target=(MagicTarget)choiceResults[index];
+        if (game.isLegalTarget(player,source,targetChoice,target)) {
+            return target;
+        } else {
+            return MagicTargetNone.getInstance();
+        }
+    }
     
     public final boolean processTarget(
             final MagicGame game,
@@ -212,7 +212,7 @@ public class MagicEvent implements MagicCopyable {
             return false;
         }
     }
-	
+    
     public final boolean processTargetPermanent(
             final MagicGame game,
             final Object choiceResults[],
@@ -273,30 +273,30 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-	static final void payManaCost(
+    static final void payManaCost(
             final MagicGame game,
             final MagicPlayer player,
             final Object choiceResults[],
             final int index) {
-		final MagicPayManaCostResult result=(MagicPayManaCostResult)choiceResults[index];
-		// Result can be null when paying cost is optional.
-		if (result!=null) {
-			result.doAction(game,player);
-			// Let each payed mana cost influence score.
-			game.changeScore(ArtificialScoringSystem.getManaScore(result.getConverted()));
-		}
-	}
-	
-	final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object choiceResults[]) {
-		final int manaIndex=getManaChoiceResultIndex();
-		if (manaIndex>=0) {
-			payManaCost(game,aPlayer,choiceResults,manaIndex);
-		}
-	}
-	
-	public final void executeEvent(final MagicGame game,final Object choiceResults[]) {
-		action.executeEvent(game,this,data,choiceResults);
-	}
+        final MagicPayManaCostResult result=(MagicPayManaCostResult)choiceResults[index];
+        // Result can be null when paying cost is optional.
+        if (result!=null) {
+            result.doAction(game,player);
+            // Let each payed mana cost influence score.
+            game.changeScore(ArtificialScoringSystem.getManaScore(result.getConverted()));
+        }
+    }
+    
+    final void payManaCost(final MagicGame game,final MagicPlayer aPlayer,final Object choiceResults[]) {
+        final int manaIndex=getManaChoiceResultIndex();
+        if (manaIndex>=0) {
+            payManaCost(game,aPlayer,choiceResults,manaIndex);
+        }
+    }
+    
+    public final void executeEvent(final MagicGame game,final Object choiceResults[]) {
+        action.executeEvent(game,this,data,choiceResults);
+    }
 
     public String toString() {
         return "EVENT: " + player.getIndex() + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
@@ -306,8 +306,8 @@ public class MagicEvent implements MagicCopyable {
         final long[] keys = {
             (source != null ? source.getId() : -1L),
             (player != null ? player.getIndex() : -1L),
-	        (choice != null ? choice.hashCode() : -1L),
-	        (targetPicker != null ? targetPicker.hashCode() : -1L),
+            (choice != null ? choice.hashCode() : -1L),
+            (targetPicker != null ? targetPicker.hashCode() : -1L),
             (action != null ? action.hashCode() : -1L),
             (data != null && data.length > 0 && data[0] != null) ?
                 ((data[0] instanceof MagicMappable) ? ((MagicMappable)data[0]).getId() : data[0].hashCode()) : -1L,

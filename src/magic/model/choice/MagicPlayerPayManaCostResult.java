@@ -5,35 +5,35 @@ import magic.model.MagicPlayer;
 
 public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
 
-	private final int x;
-	private final int converted;
-	
-	MagicPlayerPayManaCostResult(final int x,final int converted) {
+    private final int x;
+    private final int converted;
+    
+    MagicPlayerPayManaCostResult(final int x,final int converted) {
 
-		this.x=x;
-		this.converted=converted;
-	}
-	
-	@Override
-	public int getX() {
+        this.x=x;
+        this.converted=converted;
+    }
+    
+    @Override
+    public int getX() {
 
-		return x;
-	}
-	
-	@Override
-	public int getConverted() {
+        return x;
+    }
+    
+    @Override
+    public int getConverted() {
 
-		return converted;
-	}
+        return converted;
+    }
 
-	@Override
-	public void doAction(final MagicGame game,final MagicPlayer player) {
-		
-	}	
-	
-	@Override
-	public String toString() {
+    @Override
+    public void doAction(final MagicGame game,final MagicPlayer player) {
+        
+    }    
+    
+    @Override
+    public String toString() {
 
-		return x>0?"X is "+x:"";
-	}
+        return x>0?"X is "+x:"";
+    }
 }

@@ -18,25 +18,25 @@ public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyar
         return INSTANCE;
     }
 
-	@Override
-	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-		final MagicCard card=triggerData.card;
-		return (!card.isToken()) ?
-			new MagicEvent(
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
+        final MagicCard card=triggerData.card;
+        return (!card.isToken()) ?
+            new MagicEvent(
                 card,
                 triggerData.card.getController(),
                 new Object[]{card},
                 this,
                 "Shuffle "+card.getName()+" into its owners library."):
             MagicEvent.NONE;
-	}
+    }
 
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-		final MagicCard card=(MagicCard)data[0];
-		if (card.getOwner().getGraveyard().contains(card)) {
-			game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-			game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
-		}
-	}
+    @Override
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        final MagicCard card=(MagicCard)data[0];
+        if (card.getOwner().getGraveyard().contains(card)) {
+            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+            game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+        }
+    }
 }

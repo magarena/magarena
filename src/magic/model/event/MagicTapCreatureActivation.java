@@ -10,13 +10,13 @@ import magic.model.condition.MagicCondition;
 import magic.model.target.MagicTapTargetPicker;
 
 public abstract class MagicTapCreatureActivation extends MagicPermanentActivation {
-		
-	public MagicTapCreatureActivation(
+        
+    public MagicTapCreatureActivation(
             final MagicCondition[] conds, 
             final MagicActivationHints hints,
             final String text) {
-		super(conds,hints,text);
-	}
+        super(conds,hints,text);
+    }
 
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

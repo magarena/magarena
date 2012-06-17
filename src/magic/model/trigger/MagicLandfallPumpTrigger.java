@@ -8,7 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger {
-	private final int power;
+    private final int power;
     private final int toughness;
     
     public MagicLandfallPumpTrigger(final int power, final int toughness) {
@@ -17,10 +17,10 @@ public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger
     }
 
     @Override
-	public MagicEvent executeTrigger(
-			final MagicGame game,
-			final MagicPermanent permanent,
-			final MagicPermanent played) {
+    public MagicEvent executeTrigger(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicPermanent played) {
         final MagicPlayer player = permanent.getController();
         return (player == played.getController() && played.isLand()) ?
             new MagicEvent(
@@ -39,15 +39,15 @@ public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-    	game.doAction(new MagicChangeTurnPTAction(
-				(MagicPermanent)data[0],
-				power,
-				toughness));
+        game.doAction(new MagicChangeTurnPTAction(
+                (MagicPermanent)data[0],
+                power,
+                toughness));
     }
     
     private String getString(final int pt) {
-		return pt >= 0 ?
-				"+" + pt :
-				Integer.toString(pt);
-	}
+        return pt >= 0 ?
+                "+" + pt :
+                Integer.toString(pt);
+    }
 }

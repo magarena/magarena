@@ -7,15 +7,15 @@ import java.util.Collection;
 
 public class MagicCleanupTurnStaticsAction extends MagicAction {
 
-	private Collection<MagicPermanentStatic> removedStatics;
-	
-	@Override
-	public void doAction(final MagicGame game) {
-		removedStatics = game.removeTurnStatics();		
-	}
+    private Collection<MagicPermanentStatic> removedStatics;
+    
+    @Override
+    public void doAction(final MagicGame game) {
+        removedStatics = game.removeTurnStatics();        
+    }
 
-	@Override
-	public void undoAction(final MagicGame game) {
-		game.addStatics(removedStatics);
-	}
+    @Override
+    public void undoAction(final MagicGame game) {
+        game.addStatics(removedStatics);
+    }
 }

@@ -8,18 +8,18 @@ import magic.model.mstatic.MagicStatic;
 
 public class MagicChangeTurnPTAction extends MagicAction {
 
-	private final MagicPermanent permanent;
-	private final int power;
-	private final int toughness;
-	
-	public MagicChangeTurnPTAction(final MagicPermanent permanent,final int power,final int toughness) {
-		this.permanent=permanent;
-		this.power=power;
-		this.toughness=toughness;
-	}
-	
-	@Override
-	public void doAction(final MagicGame game) {
+    private final MagicPermanent permanent;
+    private final int power;
+    private final int toughness;
+    
+    public MagicChangeTurnPTAction(final MagicPermanent permanent,final int power,final int toughness) {
+        this.permanent=permanent;
+        this.power=power;
+        this.toughness=toughness;
+    }
+    
+    @Override
+    public void doAction(final MagicGame game) {
         game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
                 MagicLayer.ModPT,
                 MagicStatic.UntilEOT) {
@@ -31,9 +31,9 @@ public class MagicChangeTurnPTAction extends MagicAction {
                 pt.add(power, toughness);
             }   
         }));
-	}
+    }
 
-	@Override
-	public void undoAction(final MagicGame game) {
-	}
+    @Override
+    public void undoAction(final MagicGame game) {
+    }
 }

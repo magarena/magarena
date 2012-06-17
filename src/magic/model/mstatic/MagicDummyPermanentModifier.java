@@ -14,29 +14,29 @@ public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     public MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer controller) {
         return controller;
     }
-	
-	@Override
-	public void getPowerToughness(final MagicGame game, final MagicPermanent permanent, final MagicPowerToughness pt) {
-        //leave power and toughness unchanged
-	}
-
-	@Override
-	public long getAbilityFlags(final MagicGame game, final MagicPermanent permanent, final long flags) {
-		return flags;
-	}
-
-	@Override
-	public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent, final EnumSet<MagicSubType> flags) {
-		return flags;
-	}
-	
+    
     @Override
-	public int getTypeFlags(final MagicPermanent permanent, final int flags) {
-		return flags;
-	}
+    public void getPowerToughness(final MagicGame game, final MagicPermanent permanent, final MagicPowerToughness pt) {
+        //leave power and toughness unchanged
+    }
 
-	@Override
-	public int getColorFlags(final MagicPermanent permanent, final int flags) {
-		return flags;
-	}	
+    @Override
+    public long getAbilityFlags(final MagicGame game, final MagicPermanent permanent, final long flags) {
+        return flags;
+    }
+
+    @Override
+    public EnumSet<MagicSubType> getSubTypeFlags(final MagicPermanent permanent, final EnumSet<MagicSubType> flags) {
+        return flags;
+    }
+    
+    @Override
+    public int getTypeFlags(final MagicPermanent permanent, final int flags) {
+        return flags;
+    }
+
+    @Override
+    public int getColorFlags(final MagicPermanent permanent, final int flags) {
+        return flags;
+    }    
 }

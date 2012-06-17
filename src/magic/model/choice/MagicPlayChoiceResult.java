@@ -7,40 +7,40 @@ import magic.model.event.MagicActivation;
 
 public class MagicPlayChoiceResult implements MagicMappable {
 
-	public static final MagicPlayChoiceResult PASS=new MagicPlayChoiceResult();
-	public static final MagicPlayChoiceResult SKIP=new MagicPlayChoiceResult();
+    public static final MagicPlayChoiceResult PASS=new MagicPlayChoiceResult();
+    public static final MagicPlayChoiceResult SKIP=new MagicPlayChoiceResult();
 
     public MagicSource source;
-	public MagicActivation activation;
-	
-	MagicPlayChoiceResult(final MagicSource source,final MagicActivation activation) {
-		this.source=source;
-		this.activation=activation;
-	}
+    public MagicActivation activation;
+    
+    MagicPlayChoiceResult(final MagicSource source,final MagicActivation activation) {
+        this.source=source;
+        this.activation=activation;
+    }
 
     private MagicPlayChoiceResult() {}
-	
-	@Override
-	public MagicPlayChoiceResult map(final MagicGame game) {
-		if (this==PASS) {
-			return PASS;
+    
+    @Override
+    public MagicPlayChoiceResult map(final MagicGame game) {
+        if (this==PASS) {
+            return PASS;
         } else if (this==SKIP) {
             return SKIP;
-		} else {
-    		return new MagicPlayChoiceResult((MagicSource)source.map(game),activation);
+        } else {
+            return new MagicPlayChoiceResult((MagicSource)source.map(game),activation);
         }
-	}
-	
-	@Override
-	public String toString() {
-		if (this==PASS) {
-			return "pass";
+    }
+    
+    @Override
+    public String toString() {
+        if (this==PASS) {
+            return "pass";
         } else if (this==SKIP) {
-			return "skip";
-		} else {
-			return source.getName();
-		}
-	}
+            return "skip";
+        } else {
+            return source.getName();
+        }
+    }
 
     public String getText() {
         return activation.getText();

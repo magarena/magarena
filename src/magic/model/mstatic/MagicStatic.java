@@ -18,10 +18,10 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
     protected MagicTargetFilter filter;
 
     //layer where this effect operate
-	private final MagicLayer layer;
+    private final MagicLayer layer;
 
     //card definition providing the effect
-	private MagicCardDefinition cdef;
+    private MagicCardDefinition cdef;
 
     private boolean isUntilEOT;
 
@@ -29,37 +29,37 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
         filter = aFilter;
         layer = aLayer;
         isUntilEOT = aIsUntilEOT;
-	}
+    }
     
     protected MagicStatic(final MagicLayer aLayer, final MagicTargetFilter aFilter) {
         this(aLayer, aFilter, false);
-	}
+    }
     
     protected MagicStatic(final MagicLayer aLayer, final boolean aIsUntilEOT) {
         this(aLayer, MagicTargetFilter.SELF, aIsUntilEOT);
-	}
+    }
     
     protected MagicStatic(final MagicLayer aLayer) {
         this(aLayer, MagicTargetFilter.SELF, false);
-	}
+    }
 
     public void setCardDefinition(final MagicCardDefinition cdef) {
         this.cdef = cdef;
     }
-	
-	final MagicCardDefinition getCardDefinition() {
-		return cdef;
-	}
+    
+    final MagicCardDefinition getCardDefinition() {
+        return cdef;
+    }
     
     @Override
     public void change(MagicCardDefinition cdef) {
         cdef.addStatic(this);
         setCardDefinition(cdef);
     }
-		
-	public final MagicLayer getLayer() {
-		return layer;
-	}
+        
+    public final MagicLayer getLayer() {
+        return layer;
+    }
 
     public final boolean isUntilEOT() {
         return isUntilEOT;
@@ -137,20 +137,20 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
                 return MagicStatic.acceptLinked(game, source, target);
             }
         };
-	}
+    }
     
     public static MagicStatic genCOStatic(final int givenColorFlags) {
         return new MagicStatic(MagicLayer.Color) {
             @Override
-			public int getColorFlags(
-				final MagicPermanent permanent,
-				final int flags) {
-        		return flags | givenColorFlags;
-        	}
+            public int getColorFlags(
+                final MagicPermanent permanent,
+                final int flags) {
+                return flags | givenColorFlags;
+            }
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
                 return MagicStatic.acceptLinked(game, source, target);
             }
         };
-	}
+    }
 }

@@ -5,16 +5,16 @@ import magic.model.MagicCopyMap;
 import java.util.LinkedList;
 
 public class MagicEventQueue extends LinkedList<MagicEvent> {
-	
-	private static final long serialVersionUID = 1L;
+    
+    private static final long serialVersionUID = 1L;
 
-	public MagicEventQueue() {}
-	
-	public MagicEventQueue(final MagicCopyMap copyMap,final MagicEventQueue source) {
-		for (final MagicEvent event : source) {
-			add(copyMap.copy(event));
-		}
-	}	
+    public MagicEventQueue() {}
+    
+    public MagicEventQueue(final MagicCopyMap copyMap,final MagicEventQueue source) {
+        for (final MagicEvent event : source) {
+            add(copyMap.copy(event));
+        }
+    }    
 
     public long getEventsId() {
         int idx = 0;

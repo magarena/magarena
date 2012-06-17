@@ -11,11 +11,11 @@ import magic.model.condition.MagicSingleActivationCondition;
 
 public class MagicRegenerationActivation extends MagicPermanentActivation {
 
-	private static final MagicActivationHints ACTIVATION_HINTS = new MagicActivationHints(MagicTiming.Pump);
-	private final MagicManaCost cost;
-	
+    private static final MagicActivationHints ACTIVATION_HINTS = new MagicActivationHints(MagicTiming.Pump);
+    private final MagicManaCost cost;
+    
     public MagicRegenerationActivation(final MagicManaCost cost) {
-		super(
+        super(
             new MagicCondition[]{
                 MagicCondition.CAN_REGENERATE_CONDITION,
                 cost.getCondition(),
@@ -23,26 +23,26 @@ public class MagicRegenerationActivation extends MagicPermanentActivation {
             },
             ACTIVATION_HINTS, 
             "Regen");
-		this.cost=cost;
-	}
-	
-	@Override
-	public MagicEvent[] getCostEvent(final MagicSource source) {
-		return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
-	}
+        this.cost=cost;
+    }
+    
+    @Override
+    public MagicEvent[] getCostEvent(final MagicSource source) {
+        return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
+    }
 
-	@Override
-	public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-		return new MagicEvent(
+    @Override
+    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+        return new MagicEvent(
                 source,
                 source.getController(),
                 new Object[]{source},
                 this,
                 "Regenerate "+source+".");
-	}
+    }
 
-	@Override
-	public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
-		game.doAction(new MagicRegenerateAction((MagicPermanent)data[0]));
-	}
+    @Override
+    public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choices) {
+        game.doAction(new MagicRegenerateAction((MagicPermanent)data[0]));
+    }
 }

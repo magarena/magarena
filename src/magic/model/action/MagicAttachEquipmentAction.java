@@ -14,66 +14,66 @@ import java.util.Collections;
  */
 public class MagicAttachEquipmentAction extends MagicAction {
 
-	private final MagicPermanent equipment;
-	private final MagicPermanent creature;
-	private MagicPermanent oldEquippedCreature = MagicPermanent.NONE;
+    private final MagicPermanent equipment;
+    private final MagicPermanent creature;
+    private MagicPermanent oldEquippedCreature = MagicPermanent.NONE;
     private Collection<MagicPermanentStatic> oldStatics = Collections.emptyList();
-	private boolean validEquipment;
-	private boolean validCreature;
-	
-	public MagicAttachEquipmentAction(final MagicPermanent equipment,final MagicPermanent creature) {
-		this.equipment=equipment;
-		this.creature=creature;
-	}
-	
-	@Override
-	public void doAction(final MagicGame game) {
-		validEquipment=equipment.getController().controlsPermanent(equipment);
-		if (!validEquipment) {
-			return;
-		}
-		int score=ArtificialScoringSystem.getTurnScore(game);
-		oldEquippedCreature=equipment.getEquippedCreature();
-		if (oldEquippedCreature.isValid()) {
+    private boolean validEquipment;
+    private boolean validCreature;
+    
+    public MagicAttachEquipmentAction(final MagicPermanent equipment,final MagicPermanent creature) {
+        this.equipment=equipment;
+        this.creature=creature;
+    }
+    
+    @Override
+    public void doAction(final MagicGame game) {
+        validEquipment=equipment.getController().controlsPermanent(equipment);
+        if (!validEquipment) {
+            return;
+        }
+        int score=ArtificialScoringSystem.getTurnScore(game);
+        oldEquippedCreature=equipment.getEquippedCreature();
+        if (oldEquippedCreature.isValid()) {
             game.doAction(new MagicPlayAbilityAction(equipment));
-			score-=oldEquippedCreature.getScore();
-			oldEquippedCreature.removeEquipment(equipment);
-			score+=oldEquippedCreature.getScore();
-			if (oldEquippedCreature.getController()==equipment.getController()) {
-				// Prevent unnecessary equips.
-				if (oldEquippedCreature==creature) {
-				    score+=ArtificialScoringSystem.UNNECESSARY_EQUIP_SCORE;
-				} else {
-				    score+=ArtificialScoringSystem.UNEQUIP_SCORE;
-				}
-			} else {
-				score=-score;
-			}
-		}
-		validCreature = creature.isValid() && creature.getController().controlsPermanent(creature);
-		if (validCreature) {
-			score-=creature.getScore();
+            score-=oldEquippedCreature.getScore();
+            oldEquippedCreature.removeEquipment(equipment);
+            score+=oldEquippedCreature.getScore();
+            if (oldEquippedCreature.getController()==equipment.getController()) {
+                // Prevent unnecessary equips.
+                if (oldEquippedCreature==creature) {
+                    score+=ArtificialScoringSystem.UNNECESSARY_EQUIP_SCORE;
+                } else {
+                    score+=ArtificialScoringSystem.UNEQUIP_SCORE;
+                }
+            } else {
+                score=-score;
+            }
+        }
+        validCreature = creature.isValid() && creature.getController().controlsPermanent(creature);
+        if (validCreature) {
+            score-=creature.getScore();
 
-			creature.addEquipment(equipment);
-			equipment.setEquippedCreature(creature);
+            creature.addEquipment(equipment);
+            equipment.setEquippedCreature(creature);
 
             //update the timestamp of the equipment's effects
             oldStatics = game.removeCardStatics(equipment);
             game.addCardStatics(equipment);
 
-			score+=creature.getScore();
-		} else {
-			equipment.setEquippedCreature(MagicPermanent.NONE);
-		}
-		setScore(equipment.getController(),score);		
-		game.setStateCheckRequired();
-	}
+            score+=creature.getScore();
+        } else {
+            equipment.setEquippedCreature(MagicPermanent.NONE);
+        }
+        setScore(equipment.getController(),score);        
+        game.setStateCheckRequired();
+    }
 
-	@Override
-	public void undoAction(final MagicGame game) {
-		if (!validEquipment) {
-			return;
-		}
+    @Override
+    public void undoAction(final MagicGame game) {
+        if (!validEquipment) {
+            return;
+        }
 
         if (validCreature) {
             creature.removeEquipment(equipment);
@@ -86,5 +86,5 @@ public class MagicAttachEquipmentAction extends MagicAction {
         if (oldEquippedCreature.isValid()) {
             oldEquippedCreature.addEquipment(equipment);
         }
-	}
+    }
 }

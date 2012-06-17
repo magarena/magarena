@@ -10,77 +10,77 @@ import java.util.LinkedList;
 /** First creature in array is the attacker, the other creatures are blockers. */
 public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]> implements MagicMappable,MagicScoreResult {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	private final int position;
-	private final int score;
+    private final int position;
+    private final int score;
 
-	MagicDeclareBlockersResult(final int position,final int score) {
-		this.position=position;
-		this.score=score;		
-	}
-	
-	MagicDeclareBlockersResult(final MagicDeclareBlockersResult result,final int position,final int score) {
-		this(position,score);
-		for (final MagicCombatCreature creatures[] : result) {
-			add(Arrays.copyOf(creatures,creatures.length));
-		}
-	}
+    MagicDeclareBlockersResult(final int position,final int score) {
+        this.position=position;
+        this.score=score;        
+    }
+    
+    MagicDeclareBlockersResult(final MagicDeclareBlockersResult result,final int position,final int score) {
+        this(position,score);
+        for (final MagicCombatCreature creatures[] : result) {
+            add(Arrays.copyOf(creatures,creatures.length));
+        }
+    }
 
-	@Override
-	public MagicDeclareBlockersResult map(final MagicGame game) {
-		final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(position,score);
-		for (final MagicCombatCreature creatures[] : this) {
-			final int size=creatures.length;
-			final MagicCombatCreature mappedCreatures[]=new MagicCombatCreature[size];
-			for (int index=size-1;index>=0;index--) {
-				mappedCreatures[index]=new MagicCombatCreature(game,creatures[index]);
-			}
-			result.add(mappedCreatures);
-		}
-		return result;
-	}
+    @Override
+    public MagicDeclareBlockersResult map(final MagicGame game) {
+        final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(position,score);
+        for (final MagicCombatCreature creatures[] : this) {
+            final int size=creatures.length;
+            final MagicCombatCreature mappedCreatures[]=new MagicCombatCreature[size];
+            for (int index=size-1;index>=0;index--) {
+                mappedCreatures[index]=new MagicCombatCreature(game,creatures[index]);
+            }
+            result.add(mappedCreatures);
+        }
+        return result;
+    }
 
-	@Override
-	public int getPosition() {
-		return position;
-	}
+    @Override
+    public int getPosition() {
+        return position;
+    }
 
-	@Override
-	public int getScore() {
-		return score;
-	}
-	
-	@Override
-	public String toString() {
-		final StringBuilder builder=new StringBuilder();
-		//builder.append(score);
-		for (final MagicCombatCreature creatures[] : this) {
-			if (creatures.length>1) {
-				builder.append(' ');
+    @Override
+    public int getScore() {
+        return score;
+    }
+    
+    @Override
+    public String toString() {
+        final StringBuilder builder=new StringBuilder();
+        //builder.append(score);
+        for (final MagicCombatCreature creatures[] : this) {
+            if (creatures.length>1) {
+                builder.append(' ');
                 builder.append(creatures[0].getName());
                 builder.append('=');
                 builder.append(creatures[1].getName());
                 builder.append(creatures.length > 2 ? "+" + (creatures.length-2) : "");
-			}
-		}
-		return builder.toString();
-	}
+            }
+        }
+        return builder.toString();
+    }
 
     @Override
     public long getId() {
         int size = 1;
-		for (final MagicCombatCreature[] creatures : this) {
+        for (final MagicCombatCreature[] creatures : this) {
             size += creatures.length;
-		}
+        }
         int idx = 0;
-		final long[] input = new long[size + 1];
-		for (final MagicCombatCreature[] creatures : this) {
+        final long[] input = new long[size + 1];
+        for (final MagicCombatCreature[] creatures : this) {
             for (final MagicCombatCreature creature : creatures) {
                 input[idx] = creature.permanent.getId();
                 idx++;
             }
         }
-		return magic.MurmurHash3.hash(input);
+        return magic.MurmurHash3.hash(input);
     }
 }

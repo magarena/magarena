@@ -6,15 +6,15 @@ import magic.model.event.MagicActivation;
 
 public class MagicSingleActivationCondition implements MagicCondition {
 
-	private MagicActivation act;
+    private MagicActivation act;
 
-	/** This must be set by the activation. */
-	public void setActivation(final MagicActivation aAct) {
+    /** This must be set by the activation. */
+    public void setActivation(final MagicActivation aAct) {
         act = aAct;
-	}
+    }
 
-	@Override
-	public boolean accept(final MagicGame game,final MagicSource source) {
-		return !game.getStack().hasActivationOnTop(source,act);
-	}
+    @Override
+    public boolean accept(final MagicGame game,final MagicSource source) {
+        return !game.getStack().hasActivationOnTop(source,act);
+    }
 }

@@ -5,5 +5,5 @@ import magic.model.stack.MagicCardOnStack;
 
 public interface MagicCardEvent {
 
-	MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost);
+    MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost);
 }

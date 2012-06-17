@@ -8,7 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class MagicLeavesGainLifeTrigger extends MagicWhenLeavesPlayTrigger {
-	
+    
     private final int life;
 
     public MagicLeavesGainLifeTrigger(final int amount) {

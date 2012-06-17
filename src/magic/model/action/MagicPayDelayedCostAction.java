@@ -7,28 +7,28 @@ import magic.model.choice.MagicDelayedPayManaCostResult;
 
 public class MagicPayDelayedCostAction extends MagicAction {
 
-	private final MagicPlayer player;
-	private final MagicDelayedPayManaCostResult result;
-	private MagicBuilderManaCost oldBuilderCost;
-	
-	public MagicPayDelayedCostAction(final MagicPlayer player,final MagicDelayedPayManaCostResult result) {
+    private final MagicPlayer player;
+    private final MagicDelayedPayManaCostResult result;
+    private MagicBuilderManaCost oldBuilderCost;
+    
+    public MagicPayDelayedCostAction(final MagicPlayer player,final MagicDelayedPayManaCostResult result) {
 
-		this.player=player;
-		this.result=result;
-	}
+        this.player=player;
+        this.result=result;
+    }
 
-	@Override
-	public void doAction(final MagicGame game) {
+    @Override
+    public void doAction(final MagicGame game) {
 
-		oldBuilderCost=player.getBuilderCost();
-		final MagicBuilderManaCost builderCost=new MagicBuilderManaCost(oldBuilderCost);
-		result.getCost().addTo(builderCost,result.getX());
-		player.setBuilderCost(builderCost);	
-	}
+        oldBuilderCost=player.getBuilderCost();
+        final MagicBuilderManaCost builderCost=new MagicBuilderManaCost(oldBuilderCost);
+        result.getCost().addTo(builderCost,result.getX());
+        player.setBuilderCost(builderCost);    
+    }
 
-	@Override
-	public void undoAction(final MagicGame game) {
+    @Override
+    public void undoAction(final MagicGame game) {
 
-		player.setBuilderCost(oldBuilderCost);
-	}
+        player.setBuilderCost(oldBuilderCost);
+    }
 }

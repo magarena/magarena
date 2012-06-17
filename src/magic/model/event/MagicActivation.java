@@ -15,17 +15,17 @@ import magic.model.condition.MagicSingleActivationCondition;
 public abstract class MagicActivation implements MagicEventAction, Comparable<MagicActivation> {
 
     public static final MagicCondition[] NO_COND = new MagicCondition[0];
-	
-	private final int priority;
+    
+    private final int priority;
     private final int index;
     private final String text;
     private final MagicCondition conditions[];
-	private final MagicActivationHints hints;
-	
+    private final MagicActivationHints hints;
+    
     private MagicCardDefinition cdef;
-	private long id;
+    private long id;
 
-	MagicActivation(
+    MagicActivation(
         final int index,
         final MagicCondition conditions[],
         final MagicActivationHints hints,
@@ -33,9 +33,9 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         
         this.text = txt;
         this.index = index;
-		this.conditions=conditions;
-		this.hints=hints;
-		this.priority=hints.getTiming().getPriority();
+        this.conditions=conditions;
+        this.hints=hints;
+        this.priority=hints.getTiming().getPriority();
         
         // set the activation for the single activation condition
         for (final MagicCondition condition : conditions) {
@@ -48,64 +48,64 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         //depends on the card
         this.cdef = null;
         this.id = -1;
-	}
+    }
     
     public void setCardDefinition(final MagicCardDefinition cdef) {
         this.cdef = cdef;
         this.id = (cdef.hashCode() << 16) + index;
     }
-	
+    
     final MagicCardDefinition getCardDefinition() {
-		return cdef;
-	}
-		
-	private final MagicCondition[] getConditions() {
-		return conditions;
-	}
+        return cdef;
+    }
+        
+    private final MagicCondition[] getConditions() {
+        return conditions;
+    }
 
-	public final MagicActivationHints getActivationHints() {
-		return hints;
-	}
-	
-	public final long getId() {
-		return id;
-	}
+    public final MagicActivationHints getActivationHints() {
+        return hints;
+    }
+    
+    public final long getId() {
+        return id;
+    }
 
     public final String getText() {
         return text;
     }
-	
-	private final boolean checkActivationPriority(final MagicSource source) {
-		final MagicActivationPriority actpri = source.getController().getActivationPriority();
-		final int priorityDif = priority - actpri.getPriority();
-		if (priorityDif > 0) {
-			return true;
-		} else if (priorityDif < 0) {
-			return false;
-		} 
-		return id >= actpri.getActivationId();		
-	}
-	
-	void changeActivationPriority(final MagicGame game,final MagicPlayer player) {
+    
+    private final boolean checkActivationPriority(final MagicSource source) {
+        final MagicActivationPriority actpri = source.getController().getActivationPriority();
+        final int priorityDif = priority - actpri.getPriority();
+        if (priorityDif > 0) {
+            return true;
+        } else if (priorityDif < 0) {
+            return false;
+        } 
+        return id >= actpri.getActivationId();        
+    }
+    
+    void changeActivationPriority(final MagicGame game,final MagicPlayer player) {
         final MagicActivationPriority actpri = player.getActivationPriority();
-		actpri.setPriority(priority);
-		actpri.setActivationId(id);
-	}
-	
-	public final boolean canPlay(
+        actpri.setPriority(priority);
+        actpri.setActivationId(id);
+    }
+    
+    public final boolean canPlay(
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source,
             final boolean useHints) {
-		
-		if (useHints && 
+        
+        if (useHints && 
             (!checkActivationPriority(source) || 
              !hints.getTiming().canPlay(game,source) || 
              hints.isMaximum(source)
             )
            ) {
-			return false;
-		}
+            return false;
+        }
 
         for (final MagicCondition condition : conditions) {
             if (!condition.accept(game,source)) {
@@ -120,23 +120,23 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
             player.hasState(MagicPlayerState.CantCastSpells))) {
             return false;
         }
-		
+        
         // Check for legal targets.
-		final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
+        final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
         final MagicTargetChoice targetChoice = getTargetChoice(source); 
-		return game.hasLegalTargets(player,source,targetChoice,useTargetHints);
-	}
-	
-	@Override
-	public int compareTo(final MagicActivation other) {
-		return Long.signum(id-other.id);
-	}
-	
-	abstract boolean usesStack();
-	
-	protected abstract MagicEvent[] getCostEvent(final MagicSource source);
-	
-	abstract MagicEvent getEvent(final MagicSource source);
-	
-	abstract MagicTargetChoice getTargetChoice(final MagicSource source);	
+        return game.hasLegalTargets(player,source,targetChoice,useTargetHints);
+    }
+    
+    @Override
+    public int compareTo(final MagicActivation other) {
+        return Long.signum(id-other.id);
+    }
+    
+    abstract boolean usesStack();
+    
+    protected abstract MagicEvent[] getCostEvent(final MagicSource source);
+    
+    abstract MagicEvent getEvent(final MagicSource source);
+    
+    abstract MagicTargetChoice getTargetChoice(final MagicSource source);    
 }

@@ -24,14 +24,14 @@ characteristics only if certain conditions are met.
 
 public abstract class MagicCDA implements MagicChangeCardDefinition {
 
-	public int getColorFlags(final MagicGame game, final MagicPlayer player,final int flags) {
+    public int getColorFlags(final MagicGame game, final MagicPlayer player,final int flags) {
         return flags;
     }
-	
+    
     public EnumSet<MagicSubType> getSubTypeFlags(final MagicGame game, final MagicPlayer player,final EnumSet<MagicSubType> flags) {
         return flags;
     }
-	
+    
     public void getPowerToughness(
             final MagicGame game,
             final MagicPlayer player,

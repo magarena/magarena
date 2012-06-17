@@ -11,30 +11,30 @@ import magic.model.event.MagicEvent;
 
 //When C is put into a graveyard from the battlefield, you may or must draw a card.
 public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
-	
-	private final boolean mustDraw;
-	
-	public MagicDieDrawCardTrigger(final boolean mandatory) {
-		this.mustDraw = mandatory;
-	}
-	
+    
+    private final boolean mustDraw;
+    
+    public MagicDieDrawCardTrigger(final boolean mandatory) {
+        this.mustDraw = mandatory;
+    }
+    
     @Override
     public MagicEvent executeTrigger(
-    		final MagicGame game,
-    		final MagicPermanent permanent,
-    		final MagicGraveyardTriggerData triggerData) {
-    	final MagicPlayer player = permanent.getController();
-    	if (MagicLocationType.Play == triggerData.fromLocation) {
-    		if (mustDraw) {
-    			return new MagicEvent(
+            final MagicGame game,
+            final MagicPermanent permanent,
+            final MagicGraveyardTriggerData triggerData) {
+        final MagicPlayer player = permanent.getController();
+        if (MagicLocationType.Play == triggerData.fromLocation) {
+            if (mustDraw) {
+                return new MagicEvent(
                         permanent,
                         player,
                         new Object[]{player},
                         this,
                         player + " draws a card.");
-    		}
-    		else {
-    			return new MagicEvent(
+            }
+            else {
+                return new MagicEvent(
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
@@ -45,9 +45,9 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
                         new Object[]{player},
                         this,
                         player + " may$ draw a card.");
-    		}
-    	}
-    	return MagicEvent.NONE;
+            }
+        }
+        return MagicEvent.NONE;
     }
     @Override
     public void executeEvent(
@@ -55,10 +55,10 @@ public class MagicDieDrawCardTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-    	if (mustDraw) {
-    		game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-    	} else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-		}
+        if (mustDraw) {
+            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+        } else if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+        }
     }
 }

@@ -19,15 +19,15 @@ public class MagicExileCardEvent extends MagicEvent {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-        	event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
-        		public void doAction(final MagicCard card) {
-        			game.doAction(new MagicRemoveCardAction(
-                    		card,
-                    		MagicLocationType.Graveyard));
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicRemoveCardAction(
+                            card,
+                            MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
-                    		card,
-                    		MagicLocationType.Graveyard,
-                    		MagicLocationType.Exile));
+                            card,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.Exile));
                 }
             });
         }
