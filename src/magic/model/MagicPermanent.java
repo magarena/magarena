@@ -885,23 +885,23 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     public boolean isLand() {
-        return cardDefinition.isLand();
+        return hasType(MagicType.Land);
     }
     
     public boolean isCreature() {
-        return MagicType.Creature.hasType(getTypeFlags());
+        return hasType(MagicType.Creature);
     }
     
     public boolean isEquipment() {
-        return cardDefinition.isEquipment();
+        return isArtifact() && hasSubType(MagicSubType.Equipment);
     }
     
     public boolean isArtifact() {
-        return MagicType.Artifact.hasType(getTypeFlags());
+        return hasType(MagicType.Artifact);
     }
     
     public boolean isEnchantment() {
-        return cardDefinition.isEnchantment();
+        return hasType(MagicType.Enchantment);
     }
     
     @Override
