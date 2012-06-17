@@ -18,7 +18,7 @@ public class Mox_Opal {
         public MagicEvent[] getCostEvent(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return new MagicEvent[]{new MagicTapEvent(permanent)};
-        }	
+        }    
     };
     
 }

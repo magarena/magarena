@@ -12,43 +12,43 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Engulfing_Slagwurm {
     public static final MagicWhenBecomesBlockedTrigger T1 = new MagicWhenBecomesBlockedTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             if (creature == permanent) {
-            	final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
-            	return new MagicEvent(
-            			permanent,
-            			permanent.getController(),
-            			new Object[]{plist,permanent.getController()},
-            			this,
-            			plist.size() > 1 ?
-            				"Destroy blocking creatures. You gain life equal to those creatures toughness." :
-            				"Destroy " + plist.get(0) + ". You gain life equal to its toughness.");
+                final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
+                return new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        new Object[]{plist,permanent.getController()},
+                        this,
+                        plist.size() > 1 ?
+                            "Destroy blocking creatures. You gain life equal to those creatures toughness." :
+                            "Destroy " + plist.get(0) + ". You gain life equal to its toughness.");
             }
             return MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPermanentList plist = (MagicPermanentList)data[0];
-			for (final MagicPermanent blocker : plist) {
-				game.doAction(new MagicDestroyAction(blocker));
-				game.doAction(new MagicChangeLifeAction(
-						(MagicPlayer)data[1],
-						blocker.getToughness()));
-        	}
-		}
+            final MagicPermanentList plist = (MagicPermanentList)data[0];
+            for (final MagicPermanent blocker : plist) {
+                game.doAction(new MagicDestroyAction(blocker));
+                game.doAction(new MagicChangeLifeAction(
+                        (MagicPlayer)data[1],
+                        blocker.getToughness()));
+            }
+        }
     };
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-			return (permanent == data && blocked.isValid()) ?
+            return (permanent == data && blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
@@ -56,18 +56,18 @@ public class Engulfing_Slagwurm {
                     this,
                     "Destroy " + blocked + ". You gain life equal to its toughness."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPermanent blocker = (MagicPermanent)data[0];
-			game.doAction(new MagicDestroyAction(blocker));
-			game.doAction(new MagicChangeLifeAction(
-					(MagicPlayer)data[1],
-					blocker.getToughness()));
-		}
+            final MagicPermanent blocker = (MagicPermanent)data[0];
+            game.doAction(new MagicDestroyAction(blocker));
+            game.doAction(new MagicChangeLifeAction(
+                    (MagicPlayer)data[1],
+                    blocker.getToughness()));
+        }
     };
 }

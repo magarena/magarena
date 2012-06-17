@@ -20,27 +20,27 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicTapTargetPicker;
 
 public class Holy_Justiciar {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.TWO_WHITE.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.TWO_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(
-					source,
-					source.getController(),
-					MagicManaCost.TWO_WHITE)
-			};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.TWO_WHITE)
+            };
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -48,10 +48,10 @@ public class Holy_Justiciar {
                     MagicEvent.NO_DATA,
                     this,
                     "Tap target creature$. If that creature is a Zombie, exile it.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -60,12 +60,12 @@ public class Holy_Justiciar {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
                     if (creature.hasSubType(MagicSubType.Zombie)) {
-                    	game.doAction(new MagicRemoveFromPlayAction(
-                    			creature,
-                    			MagicLocationType.Exile));
+                        game.doAction(new MagicRemoveFromPlayAction(
+                                creature,
+                                MagicLocationType.Exile));
                     }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

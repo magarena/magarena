@@ -18,20 +18,20 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 import java.util.Collection;
 
 public class Lord_of_Shatterskull_Pass {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.SetPT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			if (permanent.getCounters(MagicCounterType.Charge)>0) {
-				pt.set(6,6);
-			} 
-		}		
-	};
-		
+    public static final MagicStatic S = new MagicStatic(MagicLayer.SetPT) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            if (permanent.getCounters(MagicCounterType.Charge)>0) {
+                pt.set(6,6);
+            } 
+        }        
+    };
+        
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();
-			return (permanent==creature&&permanent.getCounters(MagicCounterType.Charge)>=6) ?
+            return (permanent==creature&&permanent.getCounters(MagicCounterType.Charge)>=6) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -39,21 +39,21 @@ public class Lord_of_Shatterskull_Pass {
                         this,
                         permanent + " deals 6 damage to each creature defending player controls."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicSource source=(MagicSource)data[0];
-			final MagicPlayer defendingPlayer=(MagicPlayer)data[1];
-			final Collection<MagicTarget> creatures=
+            final MagicSource source=(MagicSource)data[0];
+            final MagicPlayer defendingPlayer=(MagicPlayer)data[1];
+            final Collection<MagicTarget> creatures=
                 game.filterTargets(defendingPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget creature : creatures) {
-				final MagicDamage damage=new MagicDamage(source,creature,6,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
-		}
+            for (final MagicTarget creature : creatures) {
+                final MagicDamage damage=new MagicDamage(source,creature,6,false);
+                game.doAction(new MagicDealDamageAction(damage));
+            }
+        }
     };
 }

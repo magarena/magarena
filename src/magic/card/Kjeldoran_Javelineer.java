@@ -19,20 +19,20 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Kjeldoran_Javelineer {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final int amount = source.getCounters(MagicCounterType.Charge);
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final int amount = source.getCounters(MagicCounterType.Charge);
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
@@ -40,20 +40,20 @@ public class Kjeldoran_Javelineer {
                     new Object[]{source,amount},
                     this,
                     source + " deals " + amount + " damage to target creature$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage(
-                    		(MagicSource)data[0],
-                    		target,
-                    		(Integer)data[1],
-                    		false);
+                            (MagicSource)data[0],
+                            target,
+                            (Integer)data[1],
+                            false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

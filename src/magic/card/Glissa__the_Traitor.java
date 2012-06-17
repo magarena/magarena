@@ -16,12 +16,12 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Glissa__the_Traitor {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
-			return (otherPermanent.getController() != player &&
-					otherPermanent.isCreature()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            return (otherPermanent.getController() != player &&
+                    otherPermanent.isCreature()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -34,21 +34,21 @@ public class Glissa__the_Traitor {
                     player + " may$ return target artifact card$ " +
                     "from his or her graveyard to his or her hand.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-				}
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                }
                 });
-			}
-		}
+            }
+        }
     };
 }

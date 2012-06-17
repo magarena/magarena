@@ -10,14 +10,14 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Kird_Ape {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			final Collection<MagicTarget> targets =
+    public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final Collection<MagicTarget> targets =
                     game.filterTargets(permanent.getController(),MagicTargetFilter.TARGET_FOREST_YOU_CONTROL);
-			if (targets.size() > 0) {
-				pt.add(1,2);
-			}		
-		}
-	};
+            if (targets.size() > 0) {
+                pt.add(1,2);
+            }        
+        }
+    };
 }

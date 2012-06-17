@@ -18,45 +18,45 @@ import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
 
 public class Scroll_of_Avacyn {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicManaCost.ONE.getCondition()
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPermanent permanent = (MagicPermanent)source;
-			return new MagicEvent[]{
-				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
-				new MagicSacrificeEvent(permanent)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
+                new MagicSacrificeEvent(permanent)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                 source,
                 player,
                 MagicEvent.NO_DATA,
                 this,
                 player + " draws a card. If he or she controls an Angel, " +
                 player + " gains 5 life.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayer player = event.getPlayer();
-			game.doAction(new MagicDrawAction(player,1));
-			if (player.controlsPermanentWithSubType(MagicSubType.Angel)) {
-				game.doAction(new MagicChangeLifeAction(player,5));
-			}
-		}
-	};
+            final MagicPlayer player = event.getPlayer();
+            game.doAction(new MagicDrawAction(player,1));
+            if (player.controlsPermanentWithSubType(MagicSubType.Angel)) {
+                game.doAction(new MagicChangeLifeAction(player,5));
+            }
+        }
+    };
 }

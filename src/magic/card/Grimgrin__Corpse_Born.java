@@ -23,51 +23,51 @@ import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Grimgrin__Corpse_Born {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
                 MagicCondition.TWO_CREATURES_CONDITION
             },
-			new MagicActivationHints(MagicTiming.Pump),
+            new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,(MagicPermanent)source);
-			final MagicTargetChoice targetChoice = new MagicTargetChoice(
-					targetFilter,false,MagicTargetHint.None,"a creature other than " + source + " to sacrifice");
-			return new MagicEvent[]{new MagicSacrificePermanentEvent(
-					source,
-					source.getController(),
-					targetChoice)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,(MagicPermanent)source);
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                    targetFilter,false,MagicTargetHint.None,"a creature other than " + source + " to sacrifice");
+            return new MagicEvent[]{new MagicSacrificePermanentEvent(
+                    source,
+                    source.getController(),
+                    targetChoice)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
-					source,
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                    source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Untap " + source + " and put a +1/+1 counter on it.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
-			game.doAction(new MagicChangeCountersAction(
-					(MagicPermanent)data[0],
-					MagicCounterType.PlusOne,
-					1,
-					true));
-		}
-	};
-	
-	public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+            game.doAction(new MagicChangeCountersAction(
+                    (MagicPermanent)data[0],
+                    MagicCounterType.PlusOne,
+                    1,
+                    true));
+        }
+    };
+    
+    public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == creature) ?
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -78,24 +78,24 @@ public class Grimgrin__Corpse_Born {
                         "Destroy target creature$ your opponent controls, " +
                         "then put a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;           
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
                 }
-			});
-			game.doAction(new MagicChangeCountersAction(
-					(MagicPermanent)data[0],
-					MagicCounterType.PlusOne,
-					1,
-					true));
-		}
+            });
+            game.doAction(new MagicChangeCountersAction(
+                    (MagicPermanent)data[0],
+                    MagicCounterType.PlusOne,
+                    1,
+                    true));
+        }
     };
 }

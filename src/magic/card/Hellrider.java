@@ -10,13 +10,13 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Hellrider {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPermanent creature) {
-			final MagicPlayer player = permanent.getController();
-			return (creature.getController() == player) ?
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPermanent creature) {
+            final MagicPlayer player = permanent.getController();
+            return (creature.getController() == player) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -24,20 +24,20 @@ public class Hellrider {
                         this,
                         permanent + " deals 1 damage to " + game.getOpponent(player) + ".") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicDamage damage = new MagicDamage(
-					(MagicPermanent)data[0],
-					(MagicPlayer)data[1],
-					1,
-					false);
+            final MagicDamage damage = new MagicDamage(
+                    (MagicPermanent)data[0],
+                    (MagicPlayer)data[1],
+                    1,
+                    false);
             game.doAction(new MagicDealDamageAction(damage));
-		}
+        }
     };
 }

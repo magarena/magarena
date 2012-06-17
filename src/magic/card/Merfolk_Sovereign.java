@@ -23,7 +23,7 @@ import magic.model.target.MagicTargetFilter;
 public class Merfolk_Sovereign {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.ModPT, 
-	    MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
@@ -33,19 +33,19 @@ public class Merfolk_Sovereign {
             return source != target;
         }
     };
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Attack),
             "Unblockable") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_MERFOLK_CREATURE,
@@ -53,15 +53,15 @@ public class Merfolk_Sovereign {
                     MagicEvent.NO_DATA,
                     this,
                     "Target Merfolk creature$ is unblockable this turn.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Unblockable));
                 }
-			});
-		}	
-	};
+            });
+        }    
+    };
 }

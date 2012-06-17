@@ -12,9 +12,9 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Raking_Canopy {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			return (creature.getController()!=permanent.getController()&&creature.hasAbility(MagicAbility.Flying)) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            return (creature.getController()!=permanent.getController()&&creature.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -22,16 +22,16 @@ public class Raking_Canopy {
                         this,
                         permanent + " deals 4 damage to "+creature+".") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],4,false);
-			game.doAction(new MagicDealDamageAction(damage));
-		}
+            final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],4,false);
+            game.doAction(new MagicDealDamageAction(damage));
+        }
     };
 }

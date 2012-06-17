@@ -38,11 +38,11 @@ public class Rise_from_the_Grave {
          }
     };
 
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
@@ -52,16 +52,16 @@ public class Rise_from_the_Grave {
                     "Put target creature$ card from a graveyard onto the " +
                     "battlefield under your control. That creature is a black " +
                     "Zombie in addition to its other colors and types.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-			event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     final MagicPlayer player = (MagicPlayer)data[1];
 
@@ -77,7 +77,7 @@ public class Rise_from_the_Grave {
                     game.doAction(new MagicAddStaticAction(permanent, Zombie));
                     game.doAction(new MagicAddStaticAction(permanent, Black));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

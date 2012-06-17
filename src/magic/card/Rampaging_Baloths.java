@@ -12,11 +12,11 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Rampaging_Baloths {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-			final MagicPlayer player = permanent.getController();
-			return (player == played.getController() &&
-					played.isLand()) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+            final MagicPlayer player = permanent.getController();
+            return (player == played.getController() &&
+                    played.isLand()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -31,18 +31,18 @@ public class Rampaging_Baloths {
                         player + " may$ put a 4/4 green Beast " +
                         "creature token onto the battlefield."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicPlayTokenAction(
-						(MagicPlayer)data[0],
-						TokenCardDefinitions.get("Beast4")));
-			}
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicPlayTokenAction(
+                        (MagicPlayer)data[0],
+                        TokenCardDefinitions.get("Beast4")));
+            }
+        }        
     };
 }

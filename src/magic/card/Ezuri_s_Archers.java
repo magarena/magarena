@@ -9,10 +9,10 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Ezuri_s_Archers {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-			return (permanent==data && 
+            return (permanent==data && 
                     blocked.isValid() &&
                     blocked.hasAbility(MagicAbility.Flying)) ?
                 new MagicEvent(
@@ -22,14 +22,14 @@ public class Ezuri_s_Archers {
                         this,
                         permanent + " gets +3/+0 until end of turn."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
-		}
+            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
+        }
     };
 }

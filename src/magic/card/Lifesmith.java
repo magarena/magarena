@@ -14,12 +14,12 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 public class Lifesmith {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player = permanent.getController();
-			final MagicCard card = data.getCard();
-			return (card.getOwner() == player &&
-					data.getCardDefinition().isArtifact()) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player = permanent.getController();
+            final MagicCard card = data.getCard();
+            return (card.getOwner() == player &&
+                    data.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -30,13 +30,13 @@ public class Lifesmith {
                         this,
                         player + " may$ pay {1}$. If you do, you gain 3 life."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
-			}
-		}
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+            }
+        }
     };
 }

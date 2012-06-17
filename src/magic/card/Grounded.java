@@ -11,19 +11,19 @@ public class Grounded {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.Ability, 
         MagicTargetFilter.TARGET_CREATURE) {
-    	@Override
-		public long getAbilityFlags(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final long flags) {
-			return flags & ~MagicAbility.Flying.getMask();
-		}
-    	@Override
-		public boolean condition(
-				final MagicGame game,
-				final MagicPermanent source,
-				final MagicPermanent target) {
-    		return target == source.getEnchantedCreature();
+        @Override
+        public long getAbilityFlags(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final long flags) {
+            return flags & ~MagicAbility.Flying.getMask();
+        }
+        @Override
+        public boolean condition(
+                final MagicGame game,
+                final MagicPermanent source,
+                final MagicPermanent target) {
+            return target == source.getEnchantedCreature();
         }
     };
 }

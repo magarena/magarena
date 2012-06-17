@@ -16,65 +16,65 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class Gustcloak_Cavalier {
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == creature) ?
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
                         new MagicMayChoice(player + " may tap target creature.",
-                        		MagicTargetChoice.NEG_TARGET_CREATURE),
+                                MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicTapTargetPicker(true,false),
                         MagicEvent.NO_DATA,
                         this,
                         player + " may$ tap target creature$."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicTapAction(creature,true));
                     }
                 });
-			}
-		}		
+            }
+        }        
     };
     
     public static final MagicWhenBecomesBlockedTrigger T3 = new MagicWhenBecomesBlockedTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			final MagicPlayer player = permanent.getController();
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
-            		new MagicEvent(
+                    new MagicEvent(
                             permanent,
                             player,
                             new MagicMayChoice(player + " may untap " + permanent +
-                            		" and remove it from combat."),
+                                    " and remove it from combat."),
                             new Object[]{permanent},
                             this, 
                             player + " may$ untap " + permanent +
-                    		" and remove it from combat.") :
+                            " and remove it from combat.") :
             MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent permanent = (MagicPermanent)data[0];
-				game.doAction(new MagicUntapAction(permanent));
-				game.doAction(new MagicRemoveFromCombatAction(permanent));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                final MagicPermanent permanent = (MagicPermanent)data[0];
+                game.doAction(new MagicUntapAction(permanent));
+                game.doAction(new MagicRemoveFromCombatAction(permanent));
+            }
+        }
     };
 }

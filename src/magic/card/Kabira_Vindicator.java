@@ -10,25 +10,25 @@ import magic.model.target.MagicTargetFilter;
 
 public class Kabira_Vindicator {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
-		@Override
-		public void modPowerToughness(
+        @Override
+        public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-			final int charges = permanent.getCounters(MagicCounterType.Charge);
-			if (charges >= 5) {
-				pt.set(4,8);
-			} else if (charges >= 2) {
-				pt.set(3,6);
-			}
-		}
+            final int charges = permanent.getCounters(MagicCounterType.Charge);
+            if (charges >= 5) {
+                pt.set(4,8);
+            } else if (charges >= 2) {
+                pt.set(3,6);
+            }
+        }
     };
 
     public static final MagicStatic S2 = new MagicStatic(
-    		MagicLayer.ModPT, 
-    		MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
 
-    	private int amount = 0;
+        private int amount = 0;
 
         @Override
         public void setSource(final MagicPermanent source) {
@@ -42,14 +42,14 @@ public class Kabira_Vindicator {
             }
         }
 
-    	@Override
-    	public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-    		pt.add(amount, amount);
-    	}
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(amount, amount);
+        }
 
-    	@Override
-    	public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		return source != target;
-    	}
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
     };
 }

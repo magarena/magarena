@@ -12,10 +12,10 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Sidar_Jabari {
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == creature) ?
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -25,18 +25,18 @@ public class Sidar_Jabari {
                         this,
                         "Tap target creature defending player controls."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
                 }
             });
-		}		
+        }        
     };
 }

@@ -9,34 +9,34 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Transcendent_Master {
-	public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			final int charges = permanent.getCounters(MagicCounterType.Charge);
-			if (charges >= 12) {
-				pt.set(9,9);
-			} else if (charges >= 6) {
-				pt.set(6,6);
-			}
-		}		
-	};
-	
-	public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
-		@Override
-		public long getAbilityFlags(
+    public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final int charges = permanent.getCounters(MagicCounterType.Charge);
+            if (charges >= 12) {
+                pt.set(9,9);
+            } else if (charges >= 6) {
+                pt.set(6,6);
+            }
+        }        
+    };
+    
+    public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public long getAbilityFlags(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final long flags) {
-			final int charges = permanent.getCounters(MagicCounterType.Charge);
-			if (charges >= 12) {
-				return flags |
-					MagicAbility.LifeLink.getMask() |
-					MagicAbility.Indestructible.getMask();
-			} else if (charges >= 6) {
-				return flags | MagicAbility.LifeLink.getMask();
-			} else {
+            final int charges = permanent.getCounters(MagicCounterType.Charge);
+            if (charges >= 12) {
+                return flags |
+                    MagicAbility.LifeLink.getMask() |
+                    MagicAbility.Indestructible.getMask();
+            } else if (charges >= 6) {
+                return flags | MagicAbility.LifeLink.getMask();
+            } else {
                 return flags;
             }
-		}
+        }
     };
 }

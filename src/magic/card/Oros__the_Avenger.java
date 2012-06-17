@@ -18,10 +18,10 @@ import java.util.Collection;
 
 public class Oros__the_Avenger {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player=permanent.getController();		
-			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            final MagicPlayer player=permanent.getController();        
+            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -33,19 +33,19 @@ public class Oros__the_Avenger {
                         "You may$ pay {2}{W}$. If you do, " + permanent + 
                         " deals 3 damage to each nonwhite creature."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent permanent=(MagicPermanent)data[1];
-				final Collection<MagicTarget> targets=
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                final MagicPermanent permanent=(MagicPermanent)data[1];
+                final Collection<MagicTarget> targets=
                     game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_NONWHITE_CREATURE);
-				for (final MagicTarget target : targets) {
-					final MagicDamage damage=new MagicDamage(permanent,target,3,false);
-					game.doAction(new MagicDealDamageAction(damage));
-				}
-			}
-		}
+                for (final MagicTarget target : targets) {
+                    final MagicDamage damage=new MagicDamage(permanent,target,3,false);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            }
+        }
     };
 }

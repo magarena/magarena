@@ -18,12 +18,12 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Pongify {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
@@ -32,27 +32,27 @@ public class Pongify {
                     "Destroy target creature$. It can't be regenerated. " +
                     "That creature's controller puts a 3/3 green Ape " +
                     "creature onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer controller = creature.getController();
                     game.doAction(new MagicChangeStateAction(
-                    		creature,
-                    		MagicPermanentState.CannotBeRegenerated,
-                    		true));
+                            creature,
+                            MagicPermanentState.CannotBeRegenerated,
+                            true));
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokenAction(
-                    		controller,
-                    		TokenCardDefinitions.get("Ape")));
+                            controller,
+                            TokenCardDefinitions.get("Ape")));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

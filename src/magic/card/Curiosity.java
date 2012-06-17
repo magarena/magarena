@@ -12,11 +12,11 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Curiosity {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player = permanent.getController();
-			return (damage.getSource() == permanent.getEnchantedCreature() &&
-					damage.getTarget().isPlayer()) ?
+            return (damage.getSource() == permanent.getEnchantedCreature() &&
+                    damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -29,17 +29,17 @@ public class Curiosity {
                         this,
                         player + " may$ draw a card.") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            }
+        }
     };
 }

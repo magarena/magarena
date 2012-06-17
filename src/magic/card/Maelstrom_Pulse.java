@@ -17,10 +17,10 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Maelstrom_Pulse {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,
@@ -28,15 +28,15 @@ public class Maelstrom_Pulse {
                     new Object[]{cardOnStack},
                     this,
                     "Destroy target nonland permanent$ and all other permanents with the same name as that permanent.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent targetPermanent) {
                     final MagicTargetFilter targetFilter = 
@@ -47,7 +47,7 @@ public class Maelstrom_Pulse {
                         game.doAction(new MagicDestroyAction((MagicPermanent)target));
                     }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

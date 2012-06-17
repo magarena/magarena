@@ -16,11 +16,11 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Reanimate {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
@@ -28,23 +28,23 @@ public class Reanimate {
                     new Object[]{cardOnStack,player},
                     this,
                     "Put target creature card$ from a graveyard onto the battlefield under your control. " +
-                    		player + " loses life equal to its converted mana cost.");
-		}
+                            player + " loses life equal to its converted mana cost.");
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     final MagicPlayer player=(MagicPlayer)data[1];
                     game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
                     game.doAction(new MagicChangeLifeAction(player,-targetCard.getCardDefinition().getConvertedCost()));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

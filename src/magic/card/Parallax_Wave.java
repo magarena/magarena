@@ -26,15 +26,15 @@ public class Parallax_Wave {
             new MagicActivationHints(MagicTiming.Pump),
             "Exile") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -42,45 +42,45 @@ public class Parallax_Wave {
                     new Object[]{source},
                     this,
                     "Exile target creature$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                	game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                			(MagicPermanent)data[0],
-                			permanent));
+                    game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                            (MagicPermanent)data[0],
+                            permanent));
                 }
-			});
-		}
-	};
-	
-	public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
-			if (permanent == data &&
-				!permanent.getExiledCards().isEmpty()) {
-				final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
-				return new MagicEvent(
-						permanent,
-						permanent.getController(),
-						new Object[]{permanent},
-						this,
-						clist.size() > 1 ?
-								"Return exiled creatures to the battlefield " :
-								"Return " + clist.get(0) + " to the battlefield ");
-			}
+            });
+        }
+    };
+    
+    public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent data) {
+            if (permanent == data &&
+                !permanent.getExiledCards().isEmpty()) {
+                final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
+                return new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        new Object[]{permanent},
+                        this,
+                        clist.size() > 1 ?
+                                "Return exiled creatures to the battlefield " :
+                                "Return " + clist.get(0) + " to the battlefield ");
+            }
             return MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));
-		}
+            final MagicPermanent permanent = (MagicPermanent)data[0];
+            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));
+        }
     };
 }

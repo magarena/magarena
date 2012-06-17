@@ -22,19 +22,19 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Iizuka_the_Ruthless {
-	
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicManaCost.TWO_RED.getCondition(),
-            		MagicCondition.ONE_CREATURE_CONDITION},
+                    MagicManaCost.TWO_RED.getCondition(),
+                    MagicCondition.ONE_CREATURE_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Strike") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-            		new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED),
-            		new MagicSacrificePermanentEvent(
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_RED),
+                    new MagicSacrificePermanentEvent(
                             source,
                             source.getController(),
                             MagicTargetChoice.SACRIFICE_SAMURAI)};
@@ -57,12 +57,12 @@ public class Iizuka_the_Ruthless {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-        	final Collection<MagicTarget> targets =
+            final Collection<MagicTarget> targets =
                     game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL);
-    			for (final MagicTarget target : targets) {
-    				final MagicPermanent creature = (MagicPermanent)target;
-    				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.DoubleStrike));
-    			}
+                for (final MagicTarget target : targets) {
+                    final MagicPermanent creature = (MagicPermanent)target;
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.DoubleStrike));
+                }
         }
     };
 }

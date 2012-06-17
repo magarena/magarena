@@ -18,19 +18,19 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicShadowTargetPicker;
 
 public class Dauthi_Embrace {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.BLACK_BLACK.getCondition()},
             new MagicActivationHints(MagicTiming.Animate,true),
             "Shadow") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK_BLACK)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLACK_BLACK)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
@@ -38,10 +38,10 @@ public class Dauthi_Embrace {
                     MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gains shadow until end of turn.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -50,7 +50,7 @@ public class Dauthi_Embrace {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Shadow));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

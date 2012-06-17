@@ -19,19 +19,19 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Tumble_Magnet {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "Tap") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPermanent permanent=(MagicPermanent)source;
-			return new MagicEvent[]{
-				new MagicTapEvent(permanent),
-				new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return new MagicEvent[]{
+                new MagicTapEvent(permanent),
+                new MagicRemoveCounterEvent(permanent,MagicCounterType.Charge,1)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE,
@@ -39,9 +39,9 @@ public class Tumble_Magnet {
                     MagicEvent.NO_DATA,
                     this,
                     "Tap target artifact or creature$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -50,7 +50,7 @@ public class Tumble_Magnet {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

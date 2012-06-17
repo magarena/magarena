@@ -20,28 +20,28 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Driver_of_the_Dead {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-    	@Override
+        @Override
         public MagicEvent executeTrigger(
-        		final MagicGame game,
-        		final MagicPermanent permanent,
-        		final MagicGraveyardTriggerData triggerData) {
-        	if (MagicLocationType.Play == triggerData.fromLocation) {
-    			final MagicPlayer player = permanent.getController();
-    			final MagicTargetFilter targetFilter =
-    					new MagicTargetFilter.MagicCMCTargetFilter(
-    	                MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-    	                MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
-    	                2);
-    			final MagicTargetChoice targetChoice = 
-    					new MagicTargetChoice(
-    	                targetFilter,false,MagicTargetHint.None,
-    	                "target creature card from your graveyard)");
-    			final MagicChoice mayChoice = 
-    	        		new MagicMayChoice(
-    	        		player + " may return target creature card with " +
-    	        		"converted mana cost 2 or less " +
-    	                "from his or her graveyard to the battlefield.",
-    	        		targetChoice);
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicGraveyardTriggerData triggerData) {
+            if (MagicLocationType.Play == triggerData.fromLocation) {
+                final MagicPlayer player = permanent.getController();
+                final MagicTargetFilter targetFilter =
+                        new MagicTargetFilter.MagicCMCTargetFilter(
+                        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                        MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
+                        2);
+                final MagicTargetChoice targetChoice = 
+                        new MagicTargetChoice(
+                        targetFilter,false,MagicTargetHint.None,
+                        "target creature card from your graveyard)");
+                final MagicChoice mayChoice = 
+                        new MagicMayChoice(
+                        player + " may return target creature card with " +
+                        "converted mana cost 2 or less " +
+                        "from his or her graveyard to the battlefield.",
+                        targetChoice);
                 return new MagicEvent(
                         permanent,
                         player,
@@ -50,27 +50,27 @@ public class Driver_of_the_Dead {
                         MagicEvent.NO_DATA,
                         this,
                         player + " may$ return target creature card$ with " +
-        		        "converted mana cost 2 or less " +
-                		"from his or her graveyard to the battlefield.");
-    		}
-    		return MagicEvent.NONE;
+                        "converted mana cost 2 or less " +
+                        "from his or her graveyard to the battlefield.");
+            }
+            return MagicEvent.NONE;
         }
         @Override
-    	public void executeEvent(
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                    	game.doAction(new MagicReanimateAction(
-                    			event.getPlayer(),
-                    			card,
-                    			MagicPlayCardAction.NONE));
+                        game.doAction(new MagicReanimateAction(
+                                event.getPlayer(),
+                                card,
+                                MagicPlayCardAction.NONE));
                     }
                 });
             }
-    	}
+        }
     };
 }

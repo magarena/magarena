@@ -10,19 +10,19 @@ import magic.model.target.MagicTargetFilter;
 
 
 public class Field_Marshal {
-	public static final MagicStatic S1 = new MagicStatic(
-			MagicLayer.Ability, 
-			MagicTargetFilter.TARGET_SOLDIER) {
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return flags | MagicAbility.FirstStrike.getMask();
-		}
-		@Override
-		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			return source != target;
-		}
-	};
-	    
+    public static final MagicStatic S1 = new MagicStatic(
+            MagicLayer.Ability, 
+            MagicTargetFilter.TARGET_SOLDIER) {
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return flags | MagicAbility.FirstStrike.getMask();
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
+        
     public static final MagicStatic S2 = new MagicStatic(
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_SOLDIER) {

@@ -17,22 +17,22 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicPumpTargetPicker;
 
 public class Extruder {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
                 MagicCondition.CONTROL_ARTIFACT_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicSacrificePermanentEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.SACRIFICE_ARTIFACT)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
@@ -40,22 +40,22 @@ public class Extruder {
                     MagicEvent.NO_DATA,
                     this,
                     source.getController() + " puts a +1/+1 counter on target creature$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(
-                    		creature,
-                    		MagicCounterType.PlusOne,
-                    		1,
-                    		true));
+                            creature,
+                            MagicCounterType.PlusOne,
+                            1,
+                            true));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

@@ -14,11 +14,11 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 public class Mesa_Enchantress {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player = permanent.getController();
-			final MagicCard card = data.getCard();
-			return (card.getOwner() == player && card.getCardDefinition().isEnchantment()) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player = permanent.getController();
+            final MagicCard card = data.getCard();
+            return (card.getOwner() == player && card.getCardDefinition().isEnchantment()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -31,13 +31,13 @@ public class Mesa_Enchantress {
                         this,
                         player + " may$ draw a card."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-			}
-		}
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            }
+        }
     };
 }

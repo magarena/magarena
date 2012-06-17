@@ -10,25 +10,25 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Griffin_Guide {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPlayer player=permanent.getController();
-			return (permanent.getEnchantedCreature()==data) ?
-				new MagicEvent(
+            return (permanent.getEnchantedCreature()==data) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     "Put a 2/2 white Griffin creature token with flying onto the battlefield."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Griffin")));
-		}
+            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Griffin")));
+        }
     };
 }

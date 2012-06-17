@@ -20,7 +20,7 @@ import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Kor_Sanctifiers {
-                	
+                    
     private static final MagicEventAction KICKED = new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -36,12 +36,12 @@ public class Kor_Sanctifiers {
         }
     };
 
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.WHITE,false),
@@ -49,31 +49,31 @@ public class Kor_Sanctifiers {
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " +
                     "destroy target artifact or enchantment.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final int kickerCount = (Integer)choiceResults[1];
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			if (kickerCount > 0) {
-				final MagicPermanent permanent = action.getPermanent();
-				final MagicPlayer player = permanent.getController();
-				final MagicEvent triggerEvent = new MagicEvent(
-					permanent,
-					player,
-					MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
-					new MagicDestroyTargetPicker(false),
-					MagicEvent.NO_DATA,
+            final int kickerCount = (Integer)choiceResults[1];
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
+            game.doAction(action);
+            if (kickerCount > 0) {
+                final MagicPermanent permanent = action.getPermanent();
+                final MagicPlayer player = permanent.getController();
+                final MagicEvent triggerEvent = new MagicEvent(
+                    permanent,
+                    player,
+                    MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                    new MagicDestroyTargetPicker(false),
+                    MagicEvent.NO_DATA,
                     KICKED,
-	                "Destroy target artifact or enchantment$."
+                    "Destroy target artifact or enchantment$."
                 );
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
-			}
-		}
-	};
+                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+            }
+        }
+    };
 }

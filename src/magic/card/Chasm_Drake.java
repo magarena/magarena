@@ -14,10 +14,10 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Chasm_Drake {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == creature) ?
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -27,10 +27,10 @@ public class Chasm_Drake {
                         this,
                         "Target creature$ you control gains flying until end of turn."):
                 MagicEvent.NONE;           
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -40,6 +40,6 @@ public class Chasm_Drake {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));
                 }
             });
-		}
+        }
     };
 }

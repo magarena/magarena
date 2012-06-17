@@ -15,12 +15,12 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 public class Myrsmith {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player = permanent.getController();
-			final MagicCard card = data.getCard();
-			return (card.getOwner() == player &&
-					data.getCardDefinition().isArtifact()) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player = permanent.getController();
+            final MagicCard card = data.getCard();
+            return (card.getOwner() == player &&
+                    data.getCardDefinition().isArtifact()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -32,13 +32,13 @@ public class Myrsmith {
                         player + " may$ pay {1}$. If you do, put a 1/1 " +
                         "colorless Myr artifact creature token onto the battlefield."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Myr1")));
-			}
-		}
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Myr1")));
+            }
+        }
     };
 }

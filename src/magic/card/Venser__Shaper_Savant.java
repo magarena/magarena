@@ -18,9 +18,9 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Venser__Shaper_Savant {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.NEG_TARGET_SPELL_OR_PERMANENT,
@@ -28,9 +28,9 @@ public class Venser__Shaper_Savant {
                     MagicEvent.NO_DATA,
                     this,
                     "Return target spell or permanent$ to its owner's hand.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -48,7 +48,7 @@ public class Venser__Shaper_Savant {
                                     MagicLocationType.OwnersHand));
                     }
                 }
-			});
-		}
+            });
+        }
     };
 }

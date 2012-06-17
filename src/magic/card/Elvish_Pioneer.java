@@ -17,36 +17,36 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Elvish_Pioneer {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
-							player + " may put a basic land card from his or her hand into play tapped.",
-							MagicTargetChoice.TARGET_BASIC_LAND_CARD_FROM_HAND),
-					new MagicGraveyardTargetPicker(true),
+                            player + " may put a basic land card from his or her hand into play tapped.",
+                            MagicTargetChoice.TARGET_BASIC_LAND_CARD_FROM_HAND),
+                    new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
-					player + " may$ put a basic land card$ from his or her hand into play tapped.");
-		}
-		@Override
-		public void executeEvent(
+                    player + " may$ put a basic land card$ from his or her hand into play tapped.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
-					public void doAction(final MagicCard card) {
-						game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-						final MagicPlayCardAction action = 
-								new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE);
-						game.doAction(action);
-						game.doAction(new MagicTapAction(action.getPermanent(),false));
-					}
-				});
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+                        final MagicPlayCardAction action = 
+                                new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE);
+                        game.doAction(action);
+                        game.doAction(new MagicTapAction(action.getPermanent(),false));
+                    }
+                });
+            }
+        }
     };
 }

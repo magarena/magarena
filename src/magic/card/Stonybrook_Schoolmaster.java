@@ -10,10 +10,10 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 
 public class Stonybrook_Schoolmaster {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
-    	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-    		final MagicPlayer player = permanent.getController();
-    		return (permanent == data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+            final MagicPlayer player = permanent.getController();
+            return (permanent == data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -21,14 +21,14 @@ public class Stonybrook_Schoolmaster {
                         this,
                         player + " puts a 1/1 blue Merfolk Wizard creature token onto the battlefield.") :
                 MagicEvent.NONE;
-    	}
-    	@Override
-    	public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Merfolk Wizard")));
-    	}
+            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Merfolk Wizard")));
+        }
     };
 }

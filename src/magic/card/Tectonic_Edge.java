@@ -21,25 +21,25 @@ import magic.model.target.MagicDestroyTargetPicker;
 public class Tectonic_Edge {
 
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
+            new MagicCondition[]{
                 MagicManaCost.TWO.getCondition(),  //add ONE for the card itself
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicCondition.OPP_FOUR_LANDS_CONDITION
             },
-			new MagicActivationHints(MagicTiming.Removal),
+            new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-			    new MagicTapEvent((MagicPermanent)source),
-			    new MagicSacrificeEvent((MagicPermanent)source),
-				new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicTapEvent((MagicPermanent)source),
+                new MagicSacrificeEvent((MagicPermanent)source),
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			return new MagicEvent(
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_NONBASIC_LAND,
@@ -47,9 +47,9 @@ public class Tectonic_Edge {
                     MagicEvent.NO_DATA,
                     this,
                     "Destroy target nonbasic land$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -58,7 +58,7 @@ public class Tectonic_Edge {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

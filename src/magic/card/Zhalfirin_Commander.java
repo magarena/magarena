@@ -21,13 +21,13 @@ public class Zhalfirin_Commander {
             new MagicCondition[]{MagicManaCost.ONE_WHITE_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_WHITE_WHITE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_WHITE_WHITE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_KNIGHT_CREATURE,
@@ -35,9 +35,9 @@ public class Zhalfirin_Commander {
                     MagicEvent.NO_DATA,
                     this,
                     "Target Knight creature$ gets +1/+1 until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -46,7 +46,7 @@ public class Zhalfirin_Commander {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

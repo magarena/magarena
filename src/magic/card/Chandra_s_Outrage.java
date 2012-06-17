@@ -16,12 +16,12 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Chandra_s_Outrage {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -29,16 +29,16 @@ public class Chandra_s_Outrage {
                     new Object[]{cardOnStack,player},
                     this,
                     card + " deals 4 damage to target creature$ and 2 damage " +
-                    		"to that creature's controller.");
-		}
-		@Override
-		public void executeEvent(
+                            "to that creature's controller.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));			
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));            
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     MagicDamage damage = new MagicDamage(cardOnStack.getCard(),target,4,false);
@@ -46,7 +46,7 @@ public class Chandra_s_Outrage {
                     damage = new MagicDamage(cardOnStack.getCard(),target.getController(),2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

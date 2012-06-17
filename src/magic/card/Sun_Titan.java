@@ -15,8 +15,8 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Sun_Titan {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             return new MagicEvent(
                     permanent,
                     player,
@@ -26,10 +26,10 @@ public class Sun_Titan {
                     this,
                     "Return target permanent card$ with converted mana cost 3 or less " + 
                     "from your graveyard to the battlefield.");
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -38,15 +38,15 @@ public class Sun_Titan {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
                 }
-			});
-		}
+            });
+        }
     };
     
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPlayer player = permanent.getController(); 
-			return (permanent==data) ?
+            return (permanent==data) ?
                 new MagicEvent(
                     permanent,
                     player,
@@ -57,10 +57,10 @@ public class Sun_Titan {
                     "Return target permanent card$ with converted mana cost 3 or less " + 
                     "from your graveyard to the battlefield."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -69,7 +69,7 @@ public class Sun_Titan {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
                 }
-			});
-		}
+            });
+        }
     };
 }

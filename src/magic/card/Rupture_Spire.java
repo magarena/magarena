@@ -12,9 +12,9 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Rupture_Spire {
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -23,16 +23,16 @@ public class Rupture_Spire {
                     new Object[]{permanent},
                     this,
                     "You may$ pay {1}. If you don't, sacrifice " + permanent + ".");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-				game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
-			}
-		}
+            if (MagicMayChoice.isNoChoice(choiceResults[0])) {
+                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            }
+        }
     };
 }

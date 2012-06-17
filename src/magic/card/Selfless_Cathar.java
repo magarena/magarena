@@ -19,34 +19,34 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Selfless_Cathar {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicManaCost.ONE_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.ONE_WHITE)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.ONE_WHITE)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
                     "Creatures " + source.getController() +
                     " controls get +1/+1 until end of turn.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final Collection<MagicTarget> targets =
-					game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,1,1));
-			}
-		}
-	};
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            final Collection<MagicTarget> targets =
+                    game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicTarget target : targets) {
+                game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,1,1));
+            }
+        }
+    };
 }

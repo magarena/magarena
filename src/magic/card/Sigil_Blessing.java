@@ -18,11 +18,11 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Sigil_Blessing {
-	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
@@ -30,14 +30,14 @@ public class Sigil_Blessing {
                     new Object[]{cardOnStack,player},
                     this,
                     "Until end of turn, target creature$ you control gets +3/+3 and other creatures you control get +1/+1.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final Collection<MagicTarget> targets=game.filterTargets(
@@ -53,6 +53,6 @@ public class Sigil_Blessing {
                     }
                 }
             });
-		}
-	};
+        }
+    };
 }

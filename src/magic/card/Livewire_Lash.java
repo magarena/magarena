@@ -16,11 +16,11 @@ public class Livewire_Lash {
     public static final MagicWhenTargetedTrigger T = new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-        	final MagicPermanent equippedCreature = permanent.getEquippedCreature();
+            final MagicPermanent equippedCreature = permanent.getEquippedCreature();
             return (target.containsInChoiceResults(equippedCreature) &&
-            		target.isSpell()) ?
+                    target.isSpell()) ?
                 new MagicEvent(
-                	equippedCreature,
+                    equippedCreature,
                     permanent.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
                     new MagicDamageTargetPicker(2),
@@ -36,13 +36,13 @@ public class Livewire_Lash {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-        	final MagicPermanent source = (MagicPermanent)data[0];
-        	event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+            final MagicPermanent source = (MagicPermanent)data[0];
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(source,target,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
+            });
         }
     };
 }

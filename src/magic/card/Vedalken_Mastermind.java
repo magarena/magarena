@@ -18,17 +18,17 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Vedalken_Mastermind {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
@@ -36,9 +36,9 @@ public class Vedalken_Mastermind {
                     MagicEvent.NO_DATA,
                     this,
                     "Return target permanent you control$ to its owner's hand.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -46,8 +46,8 @@ public class Vedalken_Mastermind {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
-			    }
+                }
             });
-		}
-	};
+        }
+    };
 }

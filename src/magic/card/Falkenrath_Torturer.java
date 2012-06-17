@@ -20,57 +20,57 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 
 public class Falkenrath_Torturer {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
                 MagicCondition.ONE_CREATURE_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicSacrificePermanentEvent(
+        
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicSacrificePermanentEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.SACRIFICE_CREATURE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			String message = source + " gains flying until end of turn.";
-			boolean isHuman = false;
-			final MagicTarget target = payedCost.getTarget();
-			if (target != MagicTargetNone.getInstance()) {
-				final MagicPermanent sacrificed = (MagicPermanent)payedCost.getTarget();
-				isHuman = sacrificed.getCardDefinition().hasSubType(MagicSubType.Human);
-				if (isHuman) {
-					message += " Put a +1/+1 counter on " + source + ".";
-				}
-			}
-			return new MagicEvent(
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            String message = source + " gains flying until end of turn.";
+            boolean isHuman = false;
+            final MagicTarget target = payedCost.getTarget();
+            if (target != MagicTargetNone.getInstance()) {
+                final MagicPermanent sacrificed = (MagicPermanent)payedCost.getTarget();
+                isHuman = sacrificed.getCardDefinition().hasSubType(MagicSubType.Human);
+                if (isHuman) {
+                    message += " Put a +1/+1 counter on " + source + ".";
+                }
+            }
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source,isHuman},
                     this,
                     message);
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicSetAbilityAction(
-					(MagicPermanent)data[0],
-					MagicAbility.Flying));
-			if ((Boolean)data[1]) {
-				game.doAction(new MagicChangeCountersAction(
-						(MagicPermanent)data[0],
-						MagicCounterType.PlusOne,
-						1,
-						true));
-			}
-		}
-	};
+            game.doAction(new MagicSetAbilityAction(
+                    (MagicPermanent)data[0],
+                    MagicAbility.Flying));
+            if ((Boolean)data[1]) {
+                game.doAction(new MagicChangeCountersAction(
+                        (MagicPermanent)data[0],
+                        MagicCounterType.PlusOne,
+                        1,
+                        true));
+            }
+        }
+    };
 }

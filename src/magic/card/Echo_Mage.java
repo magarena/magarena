@@ -22,52 +22,52 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 
 public class Echo_Mage {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.SetPT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			final int charges=permanent.getCounters(MagicCounterType.Charge);
-			if (charges>=4) {
-				pt.set(2,5);
-			} else if (charges>=2) {
-				pt.set(2,4);
-			}
-		}		
-	};
-	
-	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-			new MagicCondition[]{
+    public static final MagicStatic S = new MagicStatic(MagicLayer.SetPT) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final int charges=permanent.getCounters(MagicCounterType.Charge);
+            if (charges>=4) {
+                pt.set(2,5);
+            } else if (charges>=2) {
+                pt.set(2,4);
+            }
+        }        
+    };
+    
+    public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
+            new MagicCondition[]{
                 MagicCondition.TWO_CHARGE_COUNTERS_CONDITION,
                 MagicCondition.CAN_TAP_CONDITION,MagicManaCost.BLUE_BLUE.getCondition()},
-			new MagicActivationHints(MagicTiming.Spell),
+            new MagicActivationHints(MagicTiming.Spell),
             "Copy") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE_BLUE)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.BLUE_BLUE)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player=source.getController();
-			final int amount=source.getCounters(MagicCounterType.Charge)>=4?2:1;
-			final String description = amount == 2 ?
-					"Copy target instant or sorcery spell$ twice. You may choose new targets for the copies.":
-					"Copy target instant or sorcery spell$. You may choose new targets for the copy.";
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player=source.getController();
+            final int amount=source.getCounters(MagicCounterType.Charge)>=4?2:1;
+            final String description = amount == 2 ?
+                    "Copy target instant or sorcery spell$ twice. You may choose new targets for the copies.":
+                    "Copy target instant or sorcery spell$. You may choose new targets for the copy.";
+            return new MagicEvent(
                     source,
                     player,
                     MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
                     new Object[]{player,amount},
                     this,
                     description);
-		}
+        }
 
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object[] data,
-				final Object[] choiceResults) {
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     final MagicPlayer player=(MagicPlayer)data[0];
@@ -76,7 +76,7 @@ public class Echo_Mage {
                         game.doAction(new MagicCopyCardOnStackAction(player,targetSpell));
                     }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

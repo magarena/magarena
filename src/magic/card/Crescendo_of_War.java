@@ -13,73 +13,73 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Crescendo_of_War {
-	
-	
-	public static final MagicStatic S1 = new MagicStatic(
-	        MagicLayer.ModPT, 
-		    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
-
-	    private int amount = 0;
-
-        @Override
-        public void setSource(final MagicPermanent source) {
-            amount = source.getCounters(MagicCounterType.Charge);
-        }
-
-		@Override
-		public void modPowerToughness(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPowerToughness pt) {
-            pt.add(amount,0);
-		}
-		@Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return target.isBlocking();
-        }
-    };
     
-	public static final MagicStatic S2 = new MagicStatic(
-	        MagicLayer.ModPT, 
-		    MagicTargetFilter.TARGET_CREATURE) {
-	    
+    
+    public static final MagicStatic S1 = new MagicStatic(
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+
         private int amount = 0;
 
         @Override
         public void setSource(final MagicPermanent source) {
             amount = source.getCounters(MagicCounterType.Charge);
         }
-		
+
         @Override
-		public void modPowerToughness(
+        public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             pt.add(amount,0);
-		}
-		@Override
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return target.isBlocking();
+        }
+    };
+    
+    public static final MagicStatic S2 = new MagicStatic(
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_CREATURE) {
+        
+        private int amount = 0;
+
+        @Override
+        public void setSource(final MagicPermanent source) {
+            amount = source.getCounters(MagicCounterType.Charge);
+        }
+        
+        @Override
+        public void modPowerToughness(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+            pt.add(amount,0);
+        }
+        @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return target.isAttacking();
         }
     };
     
     public static final MagicAtUpkeepTrigger T2 = new MagicAtUpkeepTrigger() {
-    	@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            return new MagicEvent(
                         permanent,
                         permanent.getController(),
                         new Object[]{permanent},
                         this,
                         "Put a strife counter on " + permanent + ".");
-		}	
-    	@Override
-		public void executeEvent(
+        }    
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-    		game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
-		}
-	};
+            game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+        }
+    };
 }

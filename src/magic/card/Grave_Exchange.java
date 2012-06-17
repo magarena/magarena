@@ -21,7 +21,7 @@ import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Grave_Exchange {
-	private static final MagicEventAction EVENT = new MagicEventAction() {
+    private static final MagicEventAction EVENT = new MagicEventAction() {
         @Override
         public void executeEvent(
             final MagicGame game,
@@ -41,13 +41,13 @@ public class Grave_Exchange {
         }
     };
     
-	public static final MagicSpellCardEvent S =new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S =new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
@@ -55,35 +55,35 @@ public class Grave_Exchange {
                     new Object[]{cardOnStack,player},
                     this,
                     "Return target creature card$ from your graveyard to your hand.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(
-                    		targetCard,
-                    		MagicLocationType.Graveyard));
+                            targetCard,
+                            MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
-                    		targetCard,
-                    		MagicLocationType.Graveyard,
-                    		MagicLocationType.OwnersHand));
+                            targetCard,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.OwnersHand));
                 }
-			});
+            });
             final MagicEvent triggerEvent = new MagicEvent(
-					event.getSource(),
-					event.getPlayer(),
-					MagicTargetChoice.NEG_TARGET_PLAYER,
-					MagicEvent.NO_DATA,
+                    event.getSource(),
+                    event.getPlayer(),
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    MagicEvent.NO_DATA,
                     EVENT,
                     "Target player$ sacrifices a creature."
                 );
-				game.doAction(new MagicPutItemOnStackAction(
-						new MagicTriggerOnStack(triggerEvent)));
-		}
-	};
+                game.doAction(new MagicPutItemOnStackAction(
+                        new MagicTriggerOnStack(triggerEvent)));
+        }
+    };
 }

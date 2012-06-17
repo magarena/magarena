@@ -15,33 +15,33 @@ import magic.model.event.MagicPlayAbilityEvent;
 import magic.model.event.MagicTiming;
 
 public class Thalakos_Drifters {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.HAS_CARD_CONDITION},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.HAS_CARD_CONDITION},
             new MagicActivationHints(MagicTiming.Pump,false,1),
             "Shadow") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicDiscardEvent(source,source.getController(),1,false),
-				new MagicPlayAbilityEvent((MagicPermanent)source)
-			};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicDiscardEvent(source,source.getController(),1,false),
+                new MagicPlayAbilityEvent((MagicPermanent)source)
+            };
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     source + " gains shadow until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.Shadow));
-		}
-	};
+            game.doAction(new MagicSetAbilityAction((MagicPermanent)data[0],MagicAbility.Shadow));
+        }
+    };
 }

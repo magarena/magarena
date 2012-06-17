@@ -15,36 +15,36 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 
 public class Sokenzan_Spellblade {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.ONE_RED.getCondition()},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_RED)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source,source.getController()},
                     this,
                     source + " gets +X/+0 until end of turn, where " +
                     "X is the number of cards in your hand.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[1];
-			game.doAction(new MagicChangeTurnPTAction(
-					(MagicPermanent)data[0],
-					player.getHandSize(),
-					0));
-			
-		}
-	};
+            final MagicPlayer player = (MagicPlayer)data[1];
+            game.doAction(new MagicChangeTurnPTAction(
+                    (MagicPermanent)data[0],
+                    player.getHandSize(),
+                    0));
+            
+        }
+    };
 }

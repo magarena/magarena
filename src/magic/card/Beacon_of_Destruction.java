@@ -16,12 +16,12 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Beacon_of_Destruction {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			final MagicCard card=cardOnStack.getCard();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            final MagicCard card=cardOnStack.getCard();
+            return new MagicEvent(
                     card,
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
@@ -30,21 +30,21 @@ public class Beacon_of_Destruction {
                     this,
                     card + " deals 5 damage to target creature or player$. " + 
                     "Shuffle " + card + " into its owner's library.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCard card=(MagicCard)data[0];
+            final MagicCard card=(MagicCard)data[0];
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(card,target,5,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-			game.doAction(new MagicShuffleIntoLibraryAction(card));
-		}
-	};
+            });
+            game.doAction(new MagicShuffleIntoLibraryAction(card));
+        }
+    };
 }

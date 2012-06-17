@@ -20,24 +20,24 @@ public class Urabrask_the_Hidden {
         }
     };
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent.isCreature() && 
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            return (otherPermanent.isCreature() && 
                     otherPermanent.getController()!=permanent.getController()) ?
                 new MagicTapEvent(otherPermanent):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {}
 
-		@Override
-		public boolean usesStack() {
-			return false;
-		}		
+        @Override
+        public boolean usesStack() {
+            return false;
+        }        
     };
 }

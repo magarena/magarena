@@ -20,29 +20,29 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Arcbound_Reclaimer {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-			new MagicCondition[] {MagicCondition.PLUS_COUNTER_CONDITION},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation( 
+            new MagicCondition[] {MagicCondition.PLUS_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Main),
             "Card") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
-				    MagicEvent.NO_DATA,
+                    MagicEvent.NO_DATA,
                     this,
                     "Put target artifact card$ from your graveyard on top of your library");
-		}
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+        }
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
@@ -50,7 +50,7 @@ public class Arcbound_Reclaimer {
                             MagicLocationType.Graveyard,
                             MagicLocationType.TopOfOwnersLibrary));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

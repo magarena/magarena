@@ -11,7 +11,7 @@ import magic.model.target.MagicTargetFilter;
 public class Raksha_Golden_Cub {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.ModPT, 
-	    MagicTargetFilter.TARGET_CAT_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_CAT_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(2,2);
@@ -31,7 +31,7 @@ public class Raksha_Golden_Cub {
             }
             @Override
             public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            	return source.isEquipped();
+                return source.isEquipped();
             }
         };
 }

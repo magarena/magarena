@@ -18,10 +18,10 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Teneb__the_Harvester {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
-			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -34,21 +34,21 @@ public class Teneb__the_Harvester {
                         "You may$ pay {2}{B}$. If you do, put target creature card$ " + 
                         "in a graveyard into play under your control."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,2,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
-                    }				
+                    }                
                 });
-		    }
+            }
         }
     };
 }

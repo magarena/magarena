@@ -39,7 +39,7 @@ import magic.model.target.MagicTarget;
 //cost={2}{W}
 //timing=removal
 public class Orim_s_Thunder {
-                        	
+                            
     private static final MagicEventAction KICKED = new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -56,12 +56,12 @@ public class Orim_s_Thunder {
         }
     };
 
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(
@@ -73,35 +73,35 @@ public class Orim_s_Thunder {
                     "Destroy target artifact or enchantment$." + 
                     "If " + card + " was kicked$, " + 
                     "it deals damage equal to that permanent's converted mana cost to target creature.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final int kickerCount = (Integer)choiceResults[1];
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];		
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            final int kickerCount = (Integer)choiceResults[1];
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];        
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
                     if (kickerCount > 0) {
-        				final MagicSource source = cardOnStack.getSource();
-        				final int amount = target.getCardDefinition().getConvertedCost();
-        				final MagicEvent triggerEvent = new MagicEvent(
-        					source,
-        					cardOnStack.getController(),
-        					MagicTargetChoice.NEG_TARGET_CREATURE,
-        					new MagicDamageTargetPicker(amount),
-        					new Object[]{cardOnStack,amount},
+                        final MagicSource source = cardOnStack.getSource();
+                        final int amount = target.getCardDefinition().getConvertedCost();
+                        final MagicEvent triggerEvent = new MagicEvent(
+                            source,
+                            cardOnStack.getController(),
+                            MagicTargetChoice.NEG_TARGET_CREATURE,
+                            new MagicDamageTargetPicker(amount),
+                            new Object[]{cardOnStack,amount},
                             KICKED,
-        	                source + " deals " + amount + " damage to target creature$."
+                            source + " deals " + amount + " damage to target creature$."
                         );
-        				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
-        			}
+                        game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+                    }
                 }
-			});
-			game.doAction(new MagicMoveCardAction(cardOnStack));
-		}
-	};
+            });
+            game.doAction(new MagicMoveCardAction(cardOnStack));
+        }
+    };
 }

@@ -42,9 +42,9 @@ public class Ashenmoor_Liege {
     public static final MagicWhenTargetedTrigger T = new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-        	final MagicPlayer targetPlayer = target.getController();
+            final MagicPlayer targetPlayer = target.getController();
             return (target.containsInChoiceResults(permanent) &&
-            		targetPlayer != permanent.getController()) ?
+                    targetPlayer != permanent.getController()) ?
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
@@ -60,7 +60,7 @@ public class Ashenmoor_Liege {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-        	game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-4));
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-4));
         }
     };
 }

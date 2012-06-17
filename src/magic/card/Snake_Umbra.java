@@ -13,12 +13,12 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Snake_Umbra {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			final MagicPlayer player=permanent.getController();
-			final MagicTarget target=damage.getTarget();
-			return (damage.getSource() == permanent.getEnchantedCreature() && target.isPlayer()&&target!=player) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            final MagicPlayer player=permanent.getController();
+            final MagicTarget target=damage.getTarget();
+            return (damage.getSource() == permanent.getEnchantedCreature() && target.isPlayer()&&target!=player) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -30,16 +30,16 @@ public class Snake_Umbra {
                     this,
                     player + " may$ draw a card.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-			}
-		}
+            if (MagicChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            }
+        }
     };
 }

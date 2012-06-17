@@ -31,7 +31,7 @@ import magic.model.target.MagicRegenerateTargetPicker;
 import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Lim_Dul_the_Necromancer {
-	private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
+    private static final MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
             flags.add(MagicSubType.Zombie);
@@ -39,44 +39,44 @@ public class Lim_Dul_the_Necromancer {
    };
 
    public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-		    final MagicPlayer player = permanent.getController();	
-			final MagicPlayer otherController = otherPermanent.getController();
-			return (otherController != player &&
-					otherPermanent.isCreature()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();    
+            final MagicPlayer otherController = otherPermanent.getController();
+            return (otherController != player &&
+                    otherPermanent.isCreature()) ?
+                new MagicEvent(
                         permanent,
                         player,
                         new MagicMayChoice(
-                        		"You may pay {1}{B}.",
-                        		new MagicPayManaCostChoice(MagicManaCost.ONE_BLACK)),
+                                "You may pay {1}{B}.",
+                                new MagicPayManaCostChoice(MagicManaCost.ONE_BLACK)),
                         new Object[]{player,otherPermanent.getCard()},
                         this,
                         "You may$ pay {1}{B}$. If you do, return " + otherPermanent + 
                         " to the battlefield under your control. If it's a " +
                         "creature, it's a Zombie in addition to its other creature types."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicCard card = (MagicCard)data[1];
-				if (card.getOwner().getGraveyard().contains(card)) {
-					final MagicPlayCardAction action = new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE);
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-					game.doAction(action);
-					final MagicPermanent permanent = action.getPermanent();
-					if (permanent.isCreature()) {
-						game.doAction(new MagicAddStaticAction(permanent,Zombie));
-					}
-				}
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                final MagicCard card = (MagicCard)data[1];
+                if (card.getOwner().getGraveyard().contains(card)) {
+                    final MagicPlayCardAction action = new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE);
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(action);
+                    final MagicPermanent permanent = action.getPermanent();
+                    if (permanent.isCreature()) {
+                        game.doAction(new MagicAddStaticAction(permanent,Zombie));
+                    }
+                }
+            }
+        }
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(

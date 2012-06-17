@@ -9,10 +9,10 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Arcbound_Crusher {
     public static final MagicWhenOtherComesIntoPlayTrigger T3 = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent != permanent &&
-					otherPermanent.isArtifact()) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            return (otherPermanent != permanent &&
+                    otherPermanent.isArtifact()) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -20,19 +20,19 @@ public class Arcbound_Crusher {
                         this,
                         "Put a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
-					(MagicPermanent)data[0],
-					MagicCounterType.PlusOne,
-					1,
-					true));			
-		}		
+            game.doAction(new MagicChangeCountersAction(
+                    (MagicPermanent)data[0],
+                    MagicCounterType.PlusOne,
+                    1,
+                    true));            
+        }        
     };
 }

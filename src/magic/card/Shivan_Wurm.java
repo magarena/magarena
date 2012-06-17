@@ -13,11 +13,11 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 
 public class Shivan_Wurm {
-	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.RED_OR_GREEN_CREATURE_YOU_CONTROL,
@@ -25,15 +25,15 @@ public class Shivan_Wurm {
                     MagicEvent.NO_DATA,
                     this,
                     "Return a red or green creature you control$ to its owner's hand.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                 }
-			});
-		}
+            });
+        }
     };
 }

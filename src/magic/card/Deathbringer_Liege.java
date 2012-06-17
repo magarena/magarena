@@ -46,11 +46,11 @@ public class Deathbringer_Liege {
         }
     };
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player=permanent.getController();
-			final MagicCard card=data.getCard();
-			return (card.getOwner()==player&&MagicColor.Black.hasColor(card.getColorFlags())) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player=permanent.getController();
+            final MagicCard card=data.getCard();
+            return (card.getOwner()==player&&MagicColor.Black.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -62,49 +62,49 @@ public class Deathbringer_Liege {
                         this,
                         player + " may$ destroy target creature$ if it's tapped."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        if (creature.isTapped()) {					
+                        if (creature.isTapped()) {                    
                             game.doAction(new MagicDestroyAction(creature));
                         }
                     }
                 });
             }
-		}
+        }
     };
     
     public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player=permanent.getController();
-			final MagicCard card=data.getCard();
-			return (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags())) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player=permanent.getController();
+            final MagicCard card=data.getCard();
+            return (card.getOwner()==player&&MagicColor.White.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
                         permanent,
                         player,
                         new MagicMayChoice(
-                        	player + " may tap target creature.",
-                        	MagicTargetChoice.NEG_TARGET_CREATURE),
+                            player + " may tap target creature.",
+                            MagicTargetChoice.NEG_TARGET_CREATURE),
                         new MagicTapTargetPicker(true,false),
                         MagicEvent.NO_DATA,
                         this,
                         player + " may$ tap target creature$."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        }
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicTapAction(creature,true));
                     }
                 });
-			}
-		}
+            }
+        }
     };
 }

@@ -23,53 +23,53 @@ import java.util.EnumSet;
 
 public class Mutavault {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.set(2,2);
-		}
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.set(2,2);
+        }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-    	@Override
-		public void modSubTypeFlags(
+        @Override
+        public void modSubTypeFlags(
                 final MagicPermanent permanent,
                 final EnumSet<MagicSubType> flags) {
             flags.addAll(MagicSubType.ALL_CREATURES);
         }
         @Override
-		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Creature.getMask();
-		}
-	};
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags|MagicType.Creature.getMask();
+        }
+    };
 
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{new MagicArtificialCondition(
-			MagicManaCost.ONE.getCondition(),
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{new MagicArtificialCondition(
+            MagicManaCost.ONE.getCondition(),
             MagicManaCost.TWO.getCondition())},
-			new MagicActivationHints(MagicTiming.Animate),
+            new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     source + " becomes a 2/2 creature with all creature types until end of turn. " + 
                     "It's still a land.");
-		}
+        }
 
-		@Override
+        @Override
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
-			game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST));
-		}
-	};
+            final MagicPermanent permanent=(MagicPermanent)data[0];
+            game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST));
+        }
+    };
 }

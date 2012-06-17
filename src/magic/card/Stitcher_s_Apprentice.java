@@ -21,36 +21,36 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicSacrificeTargetPicker;
 
 public class Stitcher_s_Apprentice {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicCondition.CAN_TAP_CONDITION,
-            		MagicManaCost.ONE_BLUE.getCondition()},
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.ONE_BLUE.getCondition()},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{source,player},
                     this,
                     player + " puts a 2/2 blue Homunculus creature token " +
                     "onto the battlefield, then sacrifices a creature.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[1];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Homunculus2")));
-			game.addEvent(new MagicEvent(
+            final MagicPlayer player = (MagicPlayer)data[1];
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Homunculus2")));
+            game.addEvent(new MagicEvent(
                     (MagicPermanent)data[0],
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
@@ -58,10 +58,10 @@ public class Stitcher_s_Apprentice {
                     MagicEvent.NO_DATA,
                     EVENT_ACTION,
                     "Choose a creature to sacrifice$."));
-		}
-	};
-	
-	private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+        }
+    };
+    
+    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(
                 final MagicGame game,

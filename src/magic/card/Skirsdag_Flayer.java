@@ -18,48 +18,48 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Skirsdag_Flayer {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-	                MagicManaCost.THREE_BLACK.getCondition(),
-	                MagicCondition.ONE_CREATURE_CONDITION,
-	                MagicCondition.CAN_TAP_CONDITION,
-	            },
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicManaCost.THREE_BLACK.getCondition(),
+                    MagicCondition.ONE_CREATURE_CONDITION,
+                    MagicCondition.CAN_TAP_CONDITION,
+                },
             new MagicActivationHints(MagicTiming.Removal),
             "Destroy") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(
-							source,
-							source.getController(),
-							MagicManaCost.THREE_BLACK),
-					new MagicSacrificePermanentEvent(
-							source,
-							source.getController(),
-							MagicTargetChoice.SACRIFICE_HUMAN)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicPayManaCostTapEvent(
+                            source,
+                            source.getController(),
+                            MagicManaCost.THREE_BLACK),
+                    new MagicSacrificePermanentEvent(
+                            source,
+                            source.getController(),
+                            MagicTargetChoice.SACRIFICE_HUMAN)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-					"Destroy target creature$.");
-		}
-		@Override
-		public void executeEvent(
+                    "Destroy target creature$.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

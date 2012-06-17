@@ -19,21 +19,21 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicExileTargetPicker;
 
 public class Brittle_Effigy {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.FOUR.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.FOUR),
-				new MagicExileEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.FOUR),
+                new MagicExileEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -41,10 +41,10 @@ public class Brittle_Effigy {
                     MagicEvent.NO_DATA,
                     this,
                     "Exile target creature$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -53,7 +53,7 @@ public class Brittle_Effigy {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

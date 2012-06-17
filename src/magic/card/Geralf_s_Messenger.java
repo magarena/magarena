@@ -12,31 +12,31 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Geralf_s_Messenger {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
                     MagicEvent.NO_DATA,
                     this,
                     "Target opponent$ loses 2 life.");
-		}
-		
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object data[],
-				final Object[] choiceResults) {
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+        }
+        
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-2));
                 }
-			});
-		}		
+            });
+        }        
     };
 }

@@ -17,12 +17,12 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Essence_Drain {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
@@ -30,23 +30,23 @@ public class Essence_Drain {
                     new Object[]{cardOnStack,player},
                     this,
                     card + " deals 3 damage to target creature or player$ and " +
-                    		player + " gains 3 life.");
-		}
-		@Override
-		public void executeEvent(
+                            player + " gains 3 life.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,3,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],3));
-		}
-	};
+            });
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],3));
+        }
+    };
 }

@@ -23,7 +23,7 @@ public class Roil_Elemental {
     public static final Object T = new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent played) {
-			final MagicPlayer player = permanent.getController();
+            final MagicPlayer player = permanent.getController();
             return (player == played.getController() && played.isLand()) ?
                 new MagicEvent(
                     permanent,
@@ -43,7 +43,7 @@ public class Roil_Elemental {
                 final MagicEvent event, 
                 final Object data[], 
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
                         final MagicPermanent source = (MagicPermanent)event.getSource();

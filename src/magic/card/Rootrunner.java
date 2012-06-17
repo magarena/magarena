@@ -18,37 +18,37 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Rootrunner {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicManaCost.GREEN_GREEN.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicManaCost.GREEN_GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Bounce") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.GREEN_GREEN)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostSacrificeEvent(source,source.getController(),MagicManaCost.GREEN_GREEN)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_LAND,
                     MagicBounceTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,
                     this,
-					"Put target land$ on top of its owner's library.");
-		}
+                    "Put target land$ on top of its owner's library.");
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(
                                 creature,
                                 MagicLocationType.TopOfOwnersLibrary));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

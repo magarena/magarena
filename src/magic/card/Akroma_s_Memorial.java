@@ -15,12 +15,12 @@ public class Akroma_s_Memorial {
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
             return flags | 
                    MagicAbility.Flying.getMask() |
-		           MagicAbility.FirstStrike.getMask() |
-		           MagicAbility.Vigilance.getMask() |
-		           MagicAbility.Trample.getMask() |
-		           MagicAbility.Haste.getMask() |
-		           MagicAbility.ProtectionFromBlack.getMask() |
-		           MagicAbility.ProtectionFromRed.getMask();
+                   MagicAbility.FirstStrike.getMask() |
+                   MagicAbility.Vigilance.getMask() |
+                   MagicAbility.Trample.getMask() |
+                   MagicAbility.Haste.getMask() |
+                   MagicAbility.ProtectionFromBlack.getMask() |
+                   MagicAbility.ProtectionFromRed.getMask();
         }
     };
 }

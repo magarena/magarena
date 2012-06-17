@@ -16,9 +16,9 @@ import magic.model.stack.MagicCardOnStack;
 public class Wheel_of_Fortune {
     public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
         @Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack.getCard(),
                 cardOnStack.getController(),
@@ -29,18 +29,18 @@ public class Wheel_of_Fortune {
         }
 
         @Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object[] data,
-				final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));
             for (final MagicPlayer player : game.getPlayers()) {
-            	final MagicCardList hand = new MagicCardList(player.getHand());
-            	for (final MagicCard card : hand) {
-            		game.doAction(new MagicDiscardCardAction(player,card));
-            	}            
+                final MagicCardList hand = new MagicCardList(player.getHand());
+                for (final MagicCard card : hand) {
+                    game.doAction(new MagicDiscardCardAction(player,card));
+                }            
                 game.doAction(new MagicDrawAction(player, 7));
             }
         }

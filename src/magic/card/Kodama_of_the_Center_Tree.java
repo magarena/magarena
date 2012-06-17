@@ -21,39 +21,39 @@ import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Kodama_of_the_Center_Tree {
-	public static final MagicCDA CDA = new MagicCDA() {
-		@Override
-		public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
-			final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size();
-			pt.set(amount, amount);
-		}
+    public static final MagicCDA CDA = new MagicCDA() {
+        @Override
+        public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
+            final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size();
+            pt.set(amount, amount);
+        }
     };
-	
+    
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-    	@Override
+        @Override
         public MagicEvent executeTrigger(
-        		final MagicGame game,
-        		final MagicPermanent permanent,
-        		final MagicGraveyardTriggerData triggerData) {
-        	if (MagicLocationType.Play == triggerData.fromLocation) {
-    			final MagicPlayer player = permanent.getController();
-    			final int cmc = game.filterTargets(player,
-    					MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size()+1;
-    			final MagicTargetFilter targetFilter =
-    					new MagicTargetFilter.MagicCMCTargetFilter(
-    	                MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
-    	                MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
-    	                cmc);
-    			final MagicTargetChoice targetChoice = 
-    					new MagicTargetChoice(
-    	                targetFilter,false,MagicTargetHint.None,
-    	                "a Spirit card from your graveyard)");
-    			final MagicChoice mayChoice = 
-    	        		new MagicMayChoice(
-    	        		player + " may return target Spirit card with " +
-    	        		"converted mana cost " + cmc + " or less " +
-    	                "from his or her graveyard to his or her hand.",
-    	        		targetChoice);
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicGraveyardTriggerData triggerData) {
+            if (MagicLocationType.Play == triggerData.fromLocation) {
+                final MagicPlayer player = permanent.getController();
+                final int cmc = game.filterTargets(player,
+                        MagicTargetFilter.TARGET_SPIRIT_YOU_CONTROL).size()+1;
+                final MagicTargetFilter targetFilter =
+                        new MagicTargetFilter.MagicCMCTargetFilter(
+                        MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
+                        MagicTargetFilter.MagicCMCTargetFilter.LESS_THAN_OR_EQUAL,
+                        cmc);
+                final MagicTargetChoice targetChoice = 
+                        new MagicTargetChoice(
+                        targetFilter,false,MagicTargetHint.None,
+                        "a Spirit card from your graveyard)");
+                final MagicChoice mayChoice = 
+                        new MagicMayChoice(
+                        player + " may return target Spirit card with " +
+                        "converted mana cost " + cmc + " or less " +
+                        "from his or her graveyard to his or her hand.",
+                        targetChoice);
                 return new MagicEvent(
                         permanent,
                         player,
@@ -62,30 +62,30 @@ public class Kodama_of_the_Center_Tree {
                         MagicEvent.NO_DATA,
                         this,
                         player + " may$ return target Spirit card$ with " +
-        		        "converted mana cost " + cmc + " or less " +
-                		"from his or her graveyard to his or her hand.");
-    		}
-    		return MagicEvent.NONE;
+                        "converted mana cost " + cmc + " or less " +
+                        "from his or her graveyard to his or her hand.");
+            }
+            return MagicEvent.NONE;
         }
         @Override
-    	public void executeEvent(
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(
-                        		card,
-                        		MagicLocationType.Graveyard));
+                                card,
+                                MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(
-                        		card,
-                        		MagicLocationType.Graveyard,
-                        		MagicLocationType.OwnersHand));
+                                card,
+                                MagicLocationType.Graveyard,
+                                MagicLocationType.OwnersHand));
                     }
                 });
             }
-    	}
+        }
     };
 }

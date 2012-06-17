@@ -17,73 +17,73 @@ import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 
 public class Otherworld_Atlas {
-	
+    
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Charge") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			return new MagicEvent(
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Put a charge counter on " + source + ".");
-		}
-		
+        }
+        
         @Override
-		public void executeEvent(
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
+            game.doAction(new MagicChangeCountersAction(
                         (MagicPermanent)data[0],
                         MagicCounterType.Charge,
                         1,
                         true));
-		}		
-	};
+        }        
+    };
 
-	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					new MagicArtificialCondition(
-						MagicCondition.NONE,
-					    MagicCondition.CHARGE_COUNTER_CONDITION)
-			},
+    public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    new MagicArtificialCondition(
+                        MagicCondition.NONE,
+                        MagicCondition.CHARGE_COUNTER_CONDITION)
+            },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			return new MagicEvent(
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Each player draws a card for each charge counter on " +
                     source + ".");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -93,6 +93,6 @@ public class Otherworld_Atlas {
             for (final MagicPlayer player : game.getPlayers()) {
                 game.doAction(new MagicDrawAction(player,amount));
             }
-		}
-	};
+        }
+    };
 }

@@ -16,12 +16,12 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Auramancer {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
-	                new MagicMayChoice(
+                    new MagicMayChoice(
                         player + " may return target enchantment card from " +
                         "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD),
@@ -30,11 +30,11 @@ public class Auramancer {
                     this,
                     player + " may$ return target enchantment card$ from " +
                     "his or her graveyard to his or her hand.");
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
@@ -42,6 +42,6 @@ public class Auramancer {
                     }
                 });
             }
-		}
+        }
     };
 }

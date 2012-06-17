@@ -18,17 +18,17 @@ import magic.model.target.MagicRegenerateTargetPicker;
 
 public class Yavimaya_Hollow {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-    		new MagicCondition[]{
-    				MagicCondition.CAN_TAP_CONDITION,
-    				MagicManaCost.GREEN.getCondition()
-    		},
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.GREEN.getCondition()
+            },
             new MagicActivationHints(MagicTiming.Pump,false),
             "Regen") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-        	return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)};
+            return new MagicEvent[]{
+                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)};
         }
 
         @Override

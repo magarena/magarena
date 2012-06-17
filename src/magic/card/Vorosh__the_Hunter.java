@@ -16,13 +16,13 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 public class Vorosh__the_Hunter {
 
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
-			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
                     player,
@@ -33,20 +33,20 @@ public class Vorosh__the_Hunter {
                     this,
                     "You may$ pay {2}{G}$. If you do, put six +1/+1 counters on " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeCountersAction(
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeCountersAction(
                             (MagicPermanent)data[0],
                             MagicCounterType.PlusOne,
                             6,
                             true));
-			}
-		}
+            }
+        }
     };
 }

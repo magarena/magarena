@@ -11,12 +11,12 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 // this card ignores the part that deals with Arcane spells
 public class Thief_of_Hope {
-	public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player = permanent.getController();
-			return (data.getCard().getOwner() == player &&
-					data.getCardDefinition().hasSubType(MagicSubType.Spirit)) ?
+    public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player = permanent.getController();
+            return (data.getCard().getOwner() == player &&
+                    data.getCardDefinition().hasSubType(MagicSubType.Spirit)) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -25,16 +25,16 @@ public class Thief_of_Hope {
                         game.getOpponent(player) + " loses 1 life and " +
                         player + " gains 1 life."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-1));
-			game.doAction(new MagicChangeLifeAction(player,1));
-		}		
+            final MagicPlayer player = (MagicPlayer)data[0];
+            game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-1));
+            game.doAction(new MagicChangeLifeAction(player,1));
+        }        
     };
 }

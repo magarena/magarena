@@ -10,13 +10,13 @@ import magic.model.target.MagicTargetFilter;
 public class Bonehoard {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.ModPT, 
-	    MagicTargetFilter.TARGET_CREATURE) {
-    	
+        MagicTargetFilter.TARGET_CREATURE) {
+        
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int amount = game.filterTargets(
-						game.getPlayer(0),
-						MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
+                        game.getPlayer(0),
+                        MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
             pt.add(amount,amount);
         }
         @Override

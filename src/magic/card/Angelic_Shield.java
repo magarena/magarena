@@ -29,31 +29,31 @@ public class Angelic_Shield {
             pt.add(0,1);
         }
     };
-	
+    
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Removal),
             "Return") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicBounceTargetPicker.getInstance(),
-				    MagicEvent.NO_DATA,
+                    MagicEvent.NO_DATA,
                     this,
                     "Return target creature$ to its owner's hand.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -62,7 +62,7 @@ public class Angelic_Shield {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

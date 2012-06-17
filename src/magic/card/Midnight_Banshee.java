@@ -15,10 +15,10 @@ import java.util.Collection;
 
 public class Midnight_Banshee {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player=permanent.getController();
-			return (player==data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player=permanent.getController();
+            return (player==data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -26,18 +26,18 @@ public class Midnight_Banshee {
                         this,
                         "Put a -1/-1 counter on each nonblack creature."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets=
+            final Collection<MagicTarget> targets=
                 game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_NONBLACK_CREATURE);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.MinusOne,1,true));
-			}
-		}
+            for (final MagicTarget target : targets) {
+                game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.MinusOne,1,true));
+            }
+        }
     };
 }

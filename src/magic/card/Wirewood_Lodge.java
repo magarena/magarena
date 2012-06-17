@@ -18,22 +18,22 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Wirewood_Lodge {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-				MagicCondition.CAN_TAP_CONDITION,
-				MagicManaCost.GREEN.getCondition()
-			},
+            new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicManaCost.GREEN.getCondition()
+            },
             new MagicActivationHints(MagicTiming.Tapping),
             "Untap") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.GREEN)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_ELF,
@@ -41,15 +41,15 @@ public class Wirewood_Lodge {
                     MagicEvent.NO_DATA,
                     this,
                     "Untap target Elf$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicUntapAction(creature));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

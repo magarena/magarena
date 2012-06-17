@@ -11,10 +11,10 @@ import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Angel_of_Despair {
-	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_PERMANENT,
@@ -22,15 +22,15 @@ public class Angel_of_Despair {
                     MagicEvent.NO_DATA,
                     this,
                     "Destroy target permanent$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
                 }
-			});
-		}
+            });
+        }
     };
 }

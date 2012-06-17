@@ -22,22 +22,22 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetPicker;
 
 public class Karn__Silver_Golem {
-	static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+    static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int cmc = permanent.getCardDefinition().getConvertedCost();
-			pt.set(cmc,cmc);
-		}
+            pt.set(cmc,cmc);
+        }
     };
     static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Artifact.getMask()|MagicType.Creature.getMask();
-		}
-	};
+            return flags|MagicType.Artifact.getMask()|MagicType.Creature.getMask();
+        }
+    };
     static final MagicTargetPicker<MagicPermanent> TP = new MagicTargetPicker<MagicPermanent>() {
         @Override
-    	protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+        protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
             final MagicPowerToughness pt=permanent.getPowerToughness();
             final int power = permanent.getCardDefinition().getConvertedCost();
             final int toughness = permanent.getCardDefinition().getConvertedCost();
@@ -46,41 +46,41 @@ public class Karn__Silver_Golem {
         }
     };
     
-	public static final MagicPermanentActivation A =new MagicPermanentActivation(
-			new MagicCondition[]{MagicManaCost.ONE.getCondition()},
+    public static final MagicPermanentActivation A =new MagicPermanentActivation(
+            new MagicCondition[]{MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player=source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player=source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
                     TP,
-				    MagicEvent.NO_DATA,
-				    this,
-				    "Target noncreature artifact$ becomes an artifact creature with " + 
+                    MagicEvent.NO_DATA,
+                    this,
+                    "Target noncreature artifact$ becomes an artifact creature with " + 
                     "power and toughness each equal to its converted mana cost until end of turn");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-			        game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
+                    game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

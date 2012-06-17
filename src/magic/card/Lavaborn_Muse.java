@@ -13,9 +13,9 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Lavaborn_Muse {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-			return (permanent.getController()!=player&&player.getHandSize()<3) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+            return (permanent.getController()!=player&&player.getHandSize()<3) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -23,16 +23,16 @@ public class Lavaborn_Muse {
                         this,
                         permanent + " deals 3 damage to " + player + "."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],3,false);
-			game.doAction(new MagicDealDamageAction(damage));
-		}
+            final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],3,false);
+            game.doAction(new MagicDealDamageAction(damage));
+        }
     };
 }

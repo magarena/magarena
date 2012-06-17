@@ -12,12 +12,12 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Grave_Pact {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
-			return (otherPermanent.isCreature() &&
-					otherPermanent.getController() == player) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            return (otherPermanent.isCreature() &&
+                    otherPermanent.getController() == player) ?
+                new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
@@ -25,23 +25,23 @@ public class Grave_Pact {
                     this,
                     "Opponent$ sacrifices a creature.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
-        			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
-        				game.addEvent(new MagicSacrificePermanentEvent(
+                    if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+                        game.addEvent(new MagicSacrificePermanentEvent(
                             (MagicPermanent)data[0],
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE));
                     }
                 }
-			});
-		}
+            });
+        }
     };
 }

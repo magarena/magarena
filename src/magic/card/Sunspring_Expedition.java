@@ -20,32 +20,32 @@ public class Sunspring_Expedition {
     public static final MagicWhenOtherComesIntoPlayTrigger T = Ior_Ruin_Expedition.T;
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
+            new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Life") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3),
-				new MagicSacrificeEvent((MagicPermanent)source)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player=source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3),
+                new MagicSacrificeEvent((MagicPermanent)source)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player=source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{player},
                     this,
                     player + " gains 8 life");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],8));
-		}
-	};
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],8));
+        }
+    };
 }

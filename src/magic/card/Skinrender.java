@@ -14,9 +14,9 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Skinrender {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
@@ -24,9 +24,9 @@ public class Skinrender {
                     MagicEvent.NO_DATA,
                     this,
                     "Put three -1/-1 counters on target creature$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -35,7 +35,7 @@ public class Skinrender {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,3,true));
                 }
-			});
-		}
+            });
+        }
     };
 }

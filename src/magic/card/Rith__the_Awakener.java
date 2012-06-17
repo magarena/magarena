@@ -21,10 +21,10 @@ import java.util.Collection;
 
 public class Rith__the_Awakener {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
-			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -37,25 +37,25 @@ public class Rith__the_Awakener {
                         "You may$ pay {2}{G}$. If you do, choose a color$. "+
                         "Put a 1/1 green Saproling creature token onto the battlefield for each permanent of that color."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPlayer player=(MagicPlayer)data[0];
-				final MagicColor color=(MagicColor)choiceResults[2];
-				final Collection<MagicTarget> targets=
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                final MagicPlayer player=(MagicPlayer)data[0];
+                final MagicColor color=(MagicColor)choiceResults[2];
+                final Collection<MagicTarget> targets=
                     game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
-				for (final MagicTarget target : targets) {
-					final MagicPermanent permanent=(MagicPermanent)target;
-					if (color.hasColor(permanent.getColorFlags())) {
-						game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Saproling")));
-					}
-				}
-			}
-		}
+                for (final MagicTarget target : targets) {
+                    final MagicPermanent permanent=(MagicPermanent)target;
+                    if (color.hasColor(permanent.getColorFlags())) {
+                        game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Saproling")));
+                    }
+                }
+            }
+        }
     };
 }

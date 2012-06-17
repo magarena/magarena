@@ -19,45 +19,45 @@ import magic.model.event.MagicTiming;
 
 public class Grim_Backwoods {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-			new MagicCondition[]{
-				MagicManaCost.THREE_BLACK_GREEN.getCondition(), //add ONE for the card itself
-				MagicCondition.CAN_TAP_CONDITION,
-				MagicCondition.ONE_CREATURE_CONDITION
+            new MagicCondition[]{
+                MagicManaCost.THREE_BLACK_GREEN.getCondition(), //add ONE for the card itself
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicCondition.ONE_CREATURE_CONDITION
             },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicTapEvent((MagicPermanent)source),
-					new MagicPayManaCostEvent(
-							source,
-							source.getController(),
-							MagicManaCost.TWO_BLACK_GREEN),
-					new MagicSacrificePermanentEvent(
-		                    source,
-		                    source.getController(),
-		                    MagicTargetChoice.SACRIFICE_CREATURE)
-			};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicTapEvent((MagicPermanent)source),
+                    new MagicPayManaCostEvent(
+                            source,
+                            source.getController(),
+                            MagicManaCost.TWO_BLACK_GREEN),
+                    new MagicSacrificePermanentEvent(
+                            source,
+                            source.getController(),
+                            MagicTargetChoice.SACRIFICE_CREATURE)
+            };
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
                     source.getController() + " draws a card.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-		}
-	};
+            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+        }
+    };
 }

@@ -17,10 +17,10 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Frenzied_Goblin {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();
-			return (permanent==creature) ?
+            return (permanent==creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -33,17 +33,17 @@ public class Frenzied_Goblin {
                         this,
                         "You may$ pay {R}$. If you do, target creature$ can't block this turn."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-					    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBlock));
-				    }
+                        game.doAction(new MagicSetAbilityAction(creature,MagicAbility.CannotBlock));
+                    }
                 });
-			}
-		}
+            }
+        }
     };
 }

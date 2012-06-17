@@ -41,10 +41,10 @@ public class Creakwood_Liege {
         }
     };
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player = permanent.getController();
-			return (player == data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player = permanent.getController();
+            return (player == data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -59,16 +59,16 @@ public class Creakwood_Liege {
                         player + " may$ put a 1/1 black and green " +
                         "Worm creature token onto the battlefield."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Worm")));
-			}
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Worm")));
+            }
+        }        
     };
 }

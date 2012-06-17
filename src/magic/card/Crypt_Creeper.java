@@ -19,21 +19,21 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Crypt_Creeper {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicSacrificeEvent((MagicPermanent)source)
-			};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicSacrificeEvent((MagicPermanent)source)
+            };
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CARD_FROM_ALL_GRAVEYARDS,
@@ -42,24 +42,24 @@ public class Crypt_Creeper {
                     MagicEvent.NO_DATA,
                     this,
                     "Exile target card$ from a graveyard.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(
-                    		card,
-                    		MagicLocationType.Graveyard));
+                            card,
+                            MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
-                    		card,
-                    		MagicLocationType.Graveyard,
-                    		MagicLocationType.Exile));
+                            card,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.Exile));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

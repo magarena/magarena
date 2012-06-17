@@ -17,13 +17,13 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Death_Grasp {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final int amount=payedCost.getX();
-			final MagicPlayer player=cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final int amount=payedCost.getX();
+            final MagicPlayer player=cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
@@ -31,24 +31,24 @@ public class Death_Grasp {
                     new Object[]{cardOnStack,player,amount},
                     this,
                     card + " deals " + amount + " damage to target creature or player$. " +
-                    		player + " gains "+amount+" life.");
-		}
-		@Override
-		public void executeEvent(
+                            player + " gains "+amount+" life.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final int amount=(Integer)data[2];
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
+            final int amount=(Integer)data[2];
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage=new MagicDamage(cardOnStack.getCard(),target,amount,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],amount));
-		}
-	};
+            });
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],amount));
+        }
+    };
 }

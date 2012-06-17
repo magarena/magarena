@@ -11,12 +11,12 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Soulcage_Fiend {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicGraveyardTriggerData triggerData) {
-			return (MagicLocationType.Play == triggerData.fromLocation) ?
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicGraveyardTriggerData triggerData) {
+            return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -24,16 +24,16 @@ public class Soulcage_Fiend {
                         this,
                         "Each player loses 3 life."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			for (final MagicPlayer player : game.getPlayers()) {
-				game.doAction(new MagicChangeLifeAction(player,-3));
-			}
-		}
+            for (final MagicPlayer player : game.getPlayers()) {
+                game.doAction(new MagicChangeLifeAction(player,-3));
+            }
+        }
     };
 }

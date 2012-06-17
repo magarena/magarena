@@ -17,7 +17,7 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicRegenerateTargetPicker;
 
 public class Isao__Enlightened_Bushi {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.TWO.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Regen") {

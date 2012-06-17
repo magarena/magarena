@@ -24,7 +24,7 @@ public class Goblin_Chieftain {
     
     public static final MagicStatic S1 = new MagicStatic(
         MagicLayer.ModPT, 
-	    MagicTargetFilter.TARGET_GOBLIN_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_GOBLIN_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);

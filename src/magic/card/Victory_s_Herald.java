@@ -13,43 +13,43 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 import java.util.Collection;
 
 public class Victory_s_Herald {
-	
+    
     private static final long VICTORYS_HERALD_FLAGS=
-		MagicAbility.Flying.getMask() |
+        MagicAbility.Flying.getMask() |
         MagicAbility.LifeLink.getMask();
 
     public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent data) {
             final MagicPlayer player = permanent.getController();
-			return (permanent==data) ?
-				new MagicEvent(
+            return (permanent==data) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     "Attacking creatures gain flying and lifelink until end of turn."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
 
-			final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicTarget> targets = game.filterTargets(
                     (MagicPlayer)data[0],
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicSetAbilityAction(
+            for (final MagicTarget target : targets) {
+                game.doAction(new MagicSetAbilityAction(
                             (MagicPermanent)target,
                             VICTORYS_HERALD_FLAGS));
-			}
-		}		
+            }
+        }        
     };
 }

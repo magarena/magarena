@@ -23,46 +23,46 @@ import java.util.EnumSet;
 
 public class Omnibian {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.set(3,3);
-		}
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.set(3,3);
+        }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-		@Override
-		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
             flags.removeAll(MagicSubType.ALL_CREATURES);
             flags.add(MagicSubType.Frog);
-		}
-	};
+        }
+    };
 
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "Frog") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
                     new MagicBecomeTargetPicker(3,3,false),
                     MagicEvent.NO_DATA,this,"Target creature$ becomes a 3/3 Frog until end of turn.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

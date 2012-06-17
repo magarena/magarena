@@ -14,11 +14,11 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 public class Angel_s_Feather {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player = permanent.getController();
-			final MagicCard card = data.getCard();
-			return (MagicColor.White.hasColor(card.getColorFlags())) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player = permanent.getController();
+            final MagicCard card = data.getCard();
+            return (MagicColor.White.hasColor(card.getColorFlags())) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -31,13 +31,13 @@ public class Angel_s_Feather {
                         this,
                         player + " may$ gain 1 life.") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
-			}
-		}
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+            }
+        }
     };
 }

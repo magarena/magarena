@@ -8,11 +8,11 @@ import magic.model.mstatic.MagicStatic;
 
 public class Viridian_Betrayers {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
-    	@Override
+        @Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-    		return game.getOpponent(permanent.getController()).getPoison() > 0 ?
-    			flags | MagicAbility.Infect.getMask() :
-    			flags;
+            return game.getOpponent(permanent.getController()).getPoison() > 0 ?
+                flags | MagicAbility.Infect.getMask() :
+                flags;
         }
     };
 }

@@ -12,38 +12,38 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Knucklebone_Witch {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-	@Override
-	public MagicEvent executeTrigger(
-		final MagicGame game,
-		final MagicPermanent permanent, 
-		final MagicPermanent otherPermanent) {
-	    final MagicPlayer player = permanent.getController();
-	    return (permanent != otherPermanent &&
-		    otherPermanent.getController() == player &&
-		    otherPermanent.hasSubType(MagicSubType.Goblin)) ? new MagicEvent(
-			    permanent, 
-			    player,
-			    new MagicSimpleMayChoice(
-	                            	player + " may put a +1/+1 counter on " + permanent + ".",
-	                            	MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-	                            	1,
-	                            	MagicSimpleMayChoice.DEFAULT_YES),
-			    new Object[] { permanent },
-			    this, 
-			    player + " may$ put a +1/+1 counter on " + permanent + ".") : MagicEvent.NONE;
-	}
+    @Override
+    public MagicEvent executeTrigger(
+        final MagicGame game,
+        final MagicPermanent permanent, 
+        final MagicPermanent otherPermanent) {
+        final MagicPlayer player = permanent.getController();
+        return (permanent != otherPermanent &&
+            otherPermanent.getController() == player &&
+            otherPermanent.hasSubType(MagicSubType.Goblin)) ? new MagicEvent(
+                permanent, 
+                player,
+                new MagicSimpleMayChoice(
+                                    player + " may put a +1/+1 counter on " + permanent + ".",
+                                    MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
+                                    1,
+                                    MagicSimpleMayChoice.DEFAULT_YES),
+                new Object[] { permanent },
+                this, 
+                player + " may$ put a +1/+1 counter on " + permanent + ".") : MagicEvent.NONE;
+    }
 
-	@Override
-	public void executeEvent(
-		final MagicGame game, 
-		final MagicEvent event,
-		final Object data[], 
-		final Object[] choiceResults) {
-	    		game.doAction(new MagicChangeCountersAction(
-	    			(MagicPermanent) data[0], 
-	    			MagicCounterType.PlusOne,
-	    			1, 
-	    			true));
-	}
+    @Override
+    public void executeEvent(
+        final MagicGame game, 
+        final MagicEvent event,
+        final Object data[], 
+        final Object[] choiceResults) {
+                game.doAction(new MagicChangeCountersAction(
+                    (MagicPermanent) data[0], 
+                    MagicCounterType.PlusOne,
+                    1, 
+                    true));
+    }
     };
 }

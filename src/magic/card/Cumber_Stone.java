@@ -13,7 +13,7 @@ public class Cumber_Stone {
         MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-		    pt.add(-1,0);
+            pt.add(-1,0);
         }
     };
 }

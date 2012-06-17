@@ -13,32 +13,32 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 public class Briarpack_Alpha {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
 
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
                     MagicPumpTargetPicker.create(),
-				    MagicEvent.NO_DATA,
+                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +2/+2 until end of turn.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object data[],
-				final Object[] choiceResults) {
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,2,2));
                 }
-			});
-		}
+            });
+        }
     };
 }

@@ -14,12 +14,12 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Timely_Reinforcements {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new Object[]{cardOnStack,player},
@@ -27,25 +27,25 @@ public class Timely_Reinforcements {
                     "If you have less life than an opponent, you gain 6 life. " +
                     "If you control fewer creatures than an opponent, " +
                     "put three 1/1 white Soldier creature tokens onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));		
-			final MagicPlayer player = (MagicPlayer)data[1];
-			if (player.getLife() < game.getOpponent(player).getLife()) {
-				game.doAction(new MagicChangeLifeAction(player,6));
-			}	
-			if (player.getNrOfPermanentsWithType(MagicType.Creature) < 
-					game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature)) {
-				for (int count = 3; count > 0; count--) {
-					game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
-				}
-			}
-		}
-	};
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));        
+            final MagicPlayer player = (MagicPlayer)data[1];
+            if (player.getLife() < game.getOpponent(player).getLife()) {
+                game.doAction(new MagicChangeLifeAction(player,6));
+            }    
+            if (player.getNrOfPermanentsWithType(MagicType.Creature) < 
+                    game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature)) {
+                for (int count = 3; count > 0; count--) {
+                    game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
+                }
+            }
+        }
+    };
 }

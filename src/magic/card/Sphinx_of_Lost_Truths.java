@@ -18,57 +18,57 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 
 public class Sphinx_of_Lost_Truths {
-	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
             final MagicCard card=cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.ONE_BLUE,false),
-				    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack,player},
                     this,
                     "$Play " + card + ". When " + card + 
                     " enters the battlefield, draw three cards. Then if it wasn't kicked$, discard three cards.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction((MagicCardOnStack)data[0]);
-			action.setKicked(((Integer)choiceResults[1])>0);
-			game.doAction(action);
-		}
-	};
-	
+            final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction((MagicCardOnStack)data[0]);
+            action.setKicked(((Integer)choiceResults[1])>0);
+            game.doAction(action);
+        }
+    };
+    
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			
-			final boolean kicked=permanent.hasState(MagicPermanentState.Kicked);
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            
+            final boolean kicked=permanent.hasState(MagicPermanentState.Kicked);
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player,permanent,kicked},
                     this,
                     kicked ? player + " draws three cards." :
-                    	player + " draws three cards. Then discards three cards.");
-		}
-		@Override
-		public void executeEvent(
+                        player + " draws three cards. Then discards three cards.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicDrawAction(player,3));
-			final boolean kicked=(Boolean)data[2];
-			if (!kicked) {
-				game.addEvent(new MagicDiscardEvent((MagicPermanent)data[1],player,3,false));
-			}
-		}		
+            final MagicPlayer player=(MagicPlayer)data[0];
+            game.doAction(new MagicDrawAction(player,3));
+            final boolean kicked=(Boolean)data[2];
+            if (!kicked) {
+                game.addEvent(new MagicDiscardEvent((MagicPermanent)data[1],player,3,false));
+            }
+        }        
     };
 }

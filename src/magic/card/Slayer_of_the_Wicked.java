@@ -13,10 +13,10 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 
 public class Slayer_of_the_Wicked {
-	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -26,21 +26,21 @@ public class Slayer_of_the_Wicked {
                     MagicEvent.NO_DATA,
                     this,
                     player + " may$ destroy target Vampire, Werewolf, or Zombie$.");
-		}
-                	
-		@Override
-		public void executeEvent(
+        }
+                    
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicDestroyAction(permanent));
                     }
                 });
             }
-		}
+        }
     };
 }

@@ -16,11 +16,11 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Necropede {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-			final MagicPlayer player = permanent.getController();
-			return (MagicLocationType.Play == triggerData.fromLocation) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
+            final MagicPlayer player = permanent.getController();
+            return (MagicLocationType.Play == triggerData.fromLocation) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -31,21 +31,21 @@ public class Necropede {
                     this,
                     player + " may put a -1/-1 counter on target creature.") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
-	                public void doAction(final MagicPermanent creature) {
-	                    game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,1,true));
-	                }
-				});
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,1,true));
+                    }
+                });
+            }
+        }
     };
 }

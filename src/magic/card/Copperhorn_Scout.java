@@ -13,36 +13,36 @@ import java.util.Collection;
 
 public class Copperhorn_Scout {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent data) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == data) ?
-				new MagicEvent(
+            return (permanent == data) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{permanent,player},
                     this,
                     "Untap each other creature you control."):
                 MagicEvent.NONE;
-		}	
-		@Override
-		public void executeEvent(
+        }    
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			final Collection<MagicTarget> targets = game.filterTargets(
+            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final Collection<MagicTarget> targets = game.filterTargets(
                     (MagicPlayer)data[1],
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				if (target != permanent) {
-					game.doAction(new MagicUntapAction((MagicPermanent)target));
-				}
-			}
-		}		
+            for (final MagicTarget target : targets) {
+                if (target != permanent) {
+                    game.doAction(new MagicUntapAction((MagicPermanent)target));
+                }
+            }
+        }        
     };
 }

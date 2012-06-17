@@ -13,15 +13,15 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Deadly_Grub {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicGraveyardTriggerData triggerData) {
-			final MagicPlayer player = permanent.getController();
-			return (MagicLocationType.Play == triggerData.fromLocation &&
-					permanent.getCounters(MagicCounterType.Charge) == 0) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicGraveyardTriggerData triggerData) {
+            final MagicPlayer player = permanent.getController();
+            return (MagicLocationType.Play == triggerData.fromLocation &&
+                    permanent.getCounters(MagicCounterType.Charge) == 0) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
@@ -29,16 +29,16 @@ public class Deadly_Grub {
                     player + " puts a 6/1 green Insect creature token " +
                     "with shroud onto the battlefield.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction(
-					(MagicPlayer)data[0],
-					TokenCardDefinitions.get("Insect2")));
-		}
+            game.doAction(new MagicPlayTokenAction(
+                    (MagicPlayer)data[0],
+                    TokenCardDefinitions.get("Insect2")));
+        }
     };
 }

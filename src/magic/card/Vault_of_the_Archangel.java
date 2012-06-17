@@ -22,49 +22,49 @@ import magic.model.target.MagicTargetFilter;
 
 public class Vault_of_the_Archangel {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-			new MagicCondition[]{
-				MagicManaCost.THREE_WHITE_BLACK.getCondition(), //add ONE for the card itself
-				MagicCondition.CAN_TAP_CONDITION
+            new MagicCondition[]{
+                MagicManaCost.THREE_WHITE_BLACK.getCondition(), //add ONE for the card itself
+                MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicTapEvent((MagicPermanent)source),
-					new MagicPayManaCostEvent(
-							source,
-							source.getController(),
-							MagicManaCost.TWO_WHITE_BLACK)
-			};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicTapEvent((MagicPermanent)source),
+                    new MagicPayManaCostEvent(
+                            source,
+                            source.getController(),
+                            MagicManaCost.TWO_WHITE_BLACK)
+            };
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
                     "Creatures " + source.getController() +
                     " controls gain deathtouch and lifelink until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets = game.filterTargets(
+            final Collection<MagicTarget> targets = game.filterTargets(
                     (MagicPlayer)data[0],
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				final MagicPermanent creature = (MagicPermanent)target;
-				game.doAction(new MagicSetAbilityAction(
-						creature,
-						MagicAbility.Deathtouch.getMask()|MagicAbility.LifeLink.getMask()));
-			}
-		}
-	};
+            for (final MagicTarget target : targets) {
+                final MagicPermanent creature = (MagicPermanent)target;
+                game.doAction(new MagicSetAbilityAction(
+                        creature,
+                        MagicAbility.Deathtouch.getMask()|MagicAbility.LifeLink.getMask()));
+            }
+        }
+    };
 }

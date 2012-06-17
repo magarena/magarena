@@ -15,40 +15,40 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 
 public class Jayemdae_Tome {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[] { MagicCondition.CAN_TAP_CONDITION, MagicManaCost.FOUR.getCondition() },
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[] { new MagicPayManaCostTapEvent(
-		                    source,
-		                    source.getController(),
-		                    MagicManaCost.FOUR)
-			};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[] { new MagicPayManaCostTapEvent(
+                            source,
+                            source.getController(),
+                            MagicManaCost.FOUR)
+            };
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{player},
                     this,
                     player + " draws a card.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object[] data,
-				final Object[] choiceResults) {
-			game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-		}
-	};
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object[] data,
+                final Object[] choiceResults) {
+            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+        }
+    };
 }

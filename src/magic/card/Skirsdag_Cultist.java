@@ -22,24 +22,24 @@ import magic.model.target.MagicTarget;
 
 
 public class Skirsdag_Cultist {
-	public static final MagicPermanentActivation A =new MagicPermanentActivation(
-			new MagicCondition[]{
-				MagicCondition.CAN_TAP_CONDITION,
-				MagicCondition.ONE_CREATURE_CONDITION,
+    public static final MagicPermanentActivation A =new MagicPermanentActivation(
+            new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
+                MagicCondition.ONE_CREATURE_CONDITION,
                 MagicManaCost.RED.getCondition()
             },
             new MagicActivationHints(MagicTiming.Removal),
             "Exile") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent[]{
-				new MagicPayManaCostTapEvent(source,player,MagicManaCost.RED),
-				new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(source,player,MagicManaCost.RED),
+                new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_CREATURE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
@@ -47,19 +47,19 @@ public class Skirsdag_Cultist {
                     new Object[]{source},
                     this,
                     source + " deals 2 damage to target creature or player$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
                     final MagicDamage damage = new MagicDamage((MagicSource)data[0],target,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

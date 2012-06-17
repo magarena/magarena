@@ -16,29 +16,29 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 
 public class Kozilek__Butcher_of_Truth {
-	public static final MagicWhenSpellIsCastTrigger T1 = new MagicWhenSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicCardOnStack data) {
-			final MagicPlayer player = data.getController();
-			return new MagicEvent(
-					data.getSource(),
+    public static final MagicWhenSpellIsCastTrigger T1 = new MagicWhenSpellIsCastTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicCardOnStack data) {
+            final MagicPlayer player = data.getController();
+            return new MagicEvent(
+                    data.getSource(),
                     player,
                     new Object[]{player},
                     this,
                     player + " draws four cards.");
-		}
-		
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object data[],
-				final Object[] choiceResults) {
-			game.doAction(new MagicDrawAction((MagicPlayer)data[0],4));
-		}
+        }
+        
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+            game.doAction(new MagicDrawAction((MagicPlayer)data[0],4));
+        }
     };
     
     public static final Object T2 = Ulamog__the_Infinite_Gyre.T2;

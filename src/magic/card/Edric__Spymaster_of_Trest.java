@@ -13,13 +13,13 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Edric__Spymaster_of_Trest {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			final MagicPlayer player = permanent.getController();
-			return (damage.getTarget() == game.getOpponent(player) && 
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            final MagicPlayer player = permanent.getController();
+            return (damage.getTarget() == game.getOpponent(player) && 
                     damage.getSource().isCreature() &&
                     damage.isCombat()) ?
-                    		new MagicEvent(
+                            new MagicEvent(
                                     permanent,
                                     player,
                                     new MagicSimpleMayChoice(
@@ -31,17 +31,17 @@ public class Edric__Spymaster_of_Trest {
                                     this,
                                     player + " may$ draw a card.") :
                                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
-			}
-		}
+            if (MagicChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            }
+        }
     };
 }

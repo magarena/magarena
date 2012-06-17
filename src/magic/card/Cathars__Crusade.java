@@ -14,15 +14,15 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Cathars__Crusade {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
-			return (otherPermanent.isCreature() && 
-				otherPermanent.getController() == player) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            return (otherPermanent.isCreature() && 
+                otherPermanent.getController() == player) ?
+                new MagicEvent(
                         permanent,
                         player,
                         MagicEvent.NO_DATA,
@@ -30,24 +30,24 @@ public class Cathars__Crusade {
                         player + " puts a +1/+1 counter on " +
                         "each creature he or she controls.") :
                MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets = game.filterTargets(
-					event.getPlayer(),
-					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicChangeCountersAction(
-						(MagicPermanent)target,
-						MagicCounterType.PlusOne,
-						1,
-						true));
-			}
-		}
+            final Collection<MagicTarget> targets = game.filterTargets(
+                    event.getPlayer(),
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+            for (final MagicTarget target : targets) {
+                game.doAction(new MagicChangeCountersAction(
+                        (MagicPermanent)target,
+                        MagicCounterType.PlusOne,
+                        1,
+                        true));
+            }
+        }
     };
 }

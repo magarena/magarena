@@ -13,37 +13,37 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Deranged_Hermit {
-	public static final MagicStatic S = new MagicStatic(
-	        MagicLayer.ModPT, 
-	        MagicTargetFilter.TARGET_SQUIRREL_CREATURE) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.add(1,1);
-		}
-	};
-	    
-	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-			return new MagicEvent(
+    public static final MagicStatic S = new MagicStatic(
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_SQUIRREL_CREATURE) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1,1);
+        }
+    };
+        
+    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts four 1/1 green Squirrel creature tokens onto the battlefield.");
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			for (int i=4;i>0;i--) {
-				game.doAction(new MagicPlayTokenAction(
-						(MagicPlayer)data[0],
-						TokenCardDefinitions.get("Squirrel1")));
-			}
-		}		
+            for (int i=4;i>0;i--) {
+                game.doAction(new MagicPlayTokenAction(
+                        (MagicPlayer)data[0],
+                        TokenCardDefinitions.get("Squirrel1")));
+            }
+        }        
     };
 }

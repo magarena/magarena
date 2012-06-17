@@ -12,11 +12,11 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Emeria_Angel {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-			final MagicPlayer player = permanent.getController();
-			return (player == played.getController() && played.isLand()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+            final MagicPlayer player = permanent.getController();
+            return (player == played.getController() && played.isLand()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -30,19 +30,19 @@ public class Emeria_Angel {
                     player + " may$ put a 1/1 white Bird creature " +
                     "token with flying onto the battlefield."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicPlayTokenAction(
-						(MagicPlayer)data[0],
-						TokenCardDefinitions.get("Bird1")));
-			}
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicPlayTokenAction(
+                        (MagicPlayer)data[0],
+                        TokenCardDefinitions.get("Bird1")));
+            }
+        }        
     };
 }

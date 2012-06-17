@@ -12,10 +12,10 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Awakening_Zone {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player = permanent.getController();
-			return (player == data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player = permanent.getController();
+            return (player == data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -31,16 +31,16 @@ public class Awakening_Zone {
                         "creature token onto the battlefield. It has " +
                         "\"Sacrifice this creature: Add {1} to your mana pool.\""):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Eldrazi Spawn")));
-			}
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Eldrazi Spawn")));
+            }
+        }        
     };
 }

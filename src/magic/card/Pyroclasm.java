@@ -18,33 +18,33 @@ import java.util.Collection;
 
 public class Pyroclasm {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new Object[]{cardOnStack},
                     this,
                     card + " deals 2 damage to each creature.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final int amount=2;
-			final MagicSource source=cardOnStack.getCard();
-			final Collection<MagicTarget> targets=
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
+            final int amount=2;
+            final MagicSource source=cardOnStack.getCard();
+            final Collection<MagicTarget> targets=
                 game.filterTargets(cardOnStack.getController(),MagicTargetFilter.TARGET_CREATURE);
-			for (final MagicTarget target : targets) {
-				final MagicDamage damage=new MagicDamage(source,target,amount,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
-		}
-	};
+            for (final MagicTarget target : targets) {
+                final MagicDamage damage=new MagicDamage(source,target,amount,false);
+                game.doAction(new MagicDealDamageAction(damage));
+            }
+        }
+    };
 }

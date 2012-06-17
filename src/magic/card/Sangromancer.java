@@ -13,12 +13,12 @@ import magic.model.trigger.MagicWhenDiscardedTrigger;
 
 public class Sangromancer {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T1 = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
-			final MagicPlayer otherController = otherPermanent.getController();
-			return (otherController != player && otherPermanent.isCreature()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            final MagicPlayer otherController = otherPermanent.getController();
+            return (otherController != player && otherPermanent.isCreature()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -30,26 +30,26 @@ public class Sangromancer {
                     this,
                     player + " may$ gain 3 life.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+            }
+        }
     };
     
     public static final MagicWhenDiscardedTrigger T2 =new MagicWhenDiscardedTrigger() {
-    	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-    		final MagicPlayer otherController = data.getOwner();
-    		final MagicPlayer player = permanent.getController();
-    		return (otherController != player) ?
-    			new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
+            final MagicPlayer otherController = data.getOwner();
+            final MagicPlayer player = permanent.getController();
+            return (otherController != player) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -61,17 +61,17 @@ public class Sangromancer {
                     this,
                     player + " may$ gain 3 life.") :
                 MagicEvent.NONE;
-    	}
+        }
 
-    	@Override
-    	public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
-			}
-    	}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+            }
+        }
     };
 }

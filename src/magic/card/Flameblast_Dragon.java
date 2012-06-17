@@ -19,10 +19,10 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Flameblast_Dragon {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();
-			return (permanent==creature) ?
+            return (permanent==creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -36,11 +36,11 @@ public class Flameblast_Dragon {
                         "You may pay$ {X}{R}$. If you do, " + permanent + 
                         " deals X damage to target creature or player$."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTarget(game,choiceResults,2,new MagicTargetAction() {
                     public void doAction(final MagicTarget target) {
                         final MagicPayManaCostResult payedManaCost=(MagicPayManaCostResult)choiceResults[1];
@@ -49,6 +49,6 @@ public class Flameblast_Dragon {
                     }
                 });
             }
-		}
+        }
     };
 }

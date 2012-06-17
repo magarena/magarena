@@ -14,10 +14,10 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Lumengrid_Drake {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3 ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3 ?
+                new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
@@ -26,9 +26,9 @@ public class Lumengrid_Drake {
                     this,
                     "Return target creature$ to its owner's hand.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -37,7 +37,7 @@ public class Lumengrid_Drake {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                 }
-			});
-		}
+            });
+        }
     };
 }

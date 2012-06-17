@@ -18,24 +18,24 @@ public class Hand_of_the_Praetors {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
-    	@Override
+        @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
         }
-    	@Override
+        @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		return source != target && target.hasAbility(MagicAbility.Infect);
+            return source != target && target.hasAbility(MagicAbility.Infect);
         }
     };
     
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player = permanent.getController();
-			final MagicCard card = data.getCard();
-			return (card.getOwner() == player &&
-					data.getCardDefinition().isCreature() &&
-					data.getCardDefinition().hasAbility(MagicAbility.Infect)) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player = permanent.getController();
+            final MagicCard card = data.getCard();
+            return (card.getOwner() == player &&
+                    data.getCardDefinition().isCreature() &&
+                    data.getCardDefinition().hasAbility(MagicAbility.Infect)) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -43,14 +43,14 @@ public class Hand_of_the_Praetors {
                         this,
                         game.getOpponent(player) + " gets a poison counter."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangePoisonAction((MagicPlayer)data[0],1));
-		}		
+            game.doAction(new MagicChangePoisonAction((MagicPlayer)data[0],1));
+        }        
     };
 }

@@ -18,12 +18,12 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Afterlife {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
@@ -32,27 +32,27 @@ public class Afterlife {
                     "Destroy target creature$. It can't be regenerated. " +
                     "Its controller puts a 1/1 white Spirit creature " +
                     "token with flying onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer controller=creature.getController();
                     game.doAction(new MagicChangeStateAction(
-                    		creature,
-                    		MagicPermanentState.CannotBeRegenerated,
-                    		true));
+                            creature,
+                            MagicPermanentState.CannotBeRegenerated,
+                            true));
                     game.doAction(new MagicDestroyAction(creature));
                     game.doAction(new MagicPlayTokenAction(
-                    		controller,
-                    		TokenCardDefinitions.get("Spirit2")));
+                            controller,
+                            TokenCardDefinitions.get("Spirit2")));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

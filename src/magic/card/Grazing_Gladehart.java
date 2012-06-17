@@ -11,11 +11,11 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Grazing_Gladehart {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-			final MagicPlayer player = permanent.getController();
-			return (player == played.getController() && played.isLand()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+            final MagicPlayer player = permanent.getController();
+            return (player == played.getController() && played.isLand()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -27,17 +27,17 @@ public class Grazing_Gladehart {
                     this,
                     player + " may gain 2 life."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
-			}
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+            }
+        }        
     };
 }

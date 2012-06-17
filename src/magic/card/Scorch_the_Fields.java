@@ -19,12 +19,12 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Scorch_the_Fields {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_LAND,
@@ -33,32 +33,32 @@ public class Scorch_the_Fields {
                     this,
                     "Destroy target land$. " + cardOnStack + 
                     " deals 1 damage to each Human creature.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                	game.doAction(new MagicDestroyAction(permanent));
-                	final Collection<MagicTarget> targets = game.filterTargets(
-                			game.getOpponent(cardOnStack.getController()),
-                			MagicTargetFilter.TARGET_HUMAN);
-                	for (final MagicTarget target : targets) {
-                		final MagicDamage damage = new MagicDamage(
-                				cardOnStack.getCard(),
-                				target,
-                				1,
-                				false);
-                		game.doAction(new MagicDealDamageAction(damage));
-                	}
+                    game.doAction(new MagicDestroyAction(permanent));
+                    final Collection<MagicTarget> targets = game.filterTargets(
+                            game.getOpponent(cardOnStack.getController()),
+                            MagicTargetFilter.TARGET_HUMAN);
+                    for (final MagicTarget target : targets) {
+                        final MagicDamage damage = new MagicDamage(
+                                cardOnStack.getCard(),
+                                target,
+                                1,
+                                false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

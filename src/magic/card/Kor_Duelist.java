@@ -8,15 +8,15 @@ import magic.model.MagicPermanent;
 import magic.model.mstatic.MagicStatic;
 
 public class Kor_Duelist {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
-		@Override
-		public long getAbilityFlags(
+    public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public long getAbilityFlags(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final long flags) {
-			return permanent.isEquipped() ? 
-				flags|MagicAbility.DoubleStrike.getMask():
-	            flags;
-		}
+            return permanent.isEquipped() ? 
+                flags|MagicAbility.DoubleStrike.getMask():
+                flags;
+        }
     };
 }

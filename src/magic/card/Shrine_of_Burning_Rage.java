@@ -30,26 +30,26 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 public class Shrine_of_Burning_Rage {
 
-	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{
                 MagicCondition.CAN_TAP_CONDITION,
                 MagicManaCost.THREE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPermanent permanent=(MagicPermanent)source;
-			return new MagicEvent[]{
-				new MagicTapEvent(permanent),
-				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE),
-				new MagicSacrificeEvent(permanent)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return new MagicEvent[]{
+                new MagicTapEvent(permanent),
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.THREE),
+                new MagicSacrificeEvent(permanent)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			return new MagicEvent(
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
@@ -57,10 +57,10 @@ public class Shrine_of_Burning_Rage {
                     new Object[]{source},
                     this,
                     source + " deals damage equal to the number of charge counters on it to target creature or player$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -74,70 +74,70 @@ public class Shrine_of_Burning_Rage {
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 }
-			});
-		}
-	};
-	
+            });
+        }
+    };
+    
     public static final MagicAtUpkeepTrigger T1 = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer data) {
-			final MagicPlayer player=permanent.getController();
-			return (player==data) ?
-				new MagicEvent(
+            final MagicPlayer player=permanent.getController();
+            return (player==data) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{permanent},
                     this,
                     "Put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
+            game.doAction(new MagicChangeCountersAction(
                         (MagicPermanent)data[0],
                         MagicCounterType.Charge,
                         1,
                         true));
-		}		
+        }        
     };
     
     public static final MagicWhenOtherSpellIsCastTrigger T2 = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicCardOnStack data) {
-			final MagicPlayer player=permanent.getController();
-			final MagicCard card=data.getCard();
-			return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
-				new MagicEvent(
+            final MagicPlayer player=permanent.getController();
+            final MagicCard card=data.getCard();
+            return (card.getOwner()==player&&MagicColor.Red.hasColor(card.getColorFlags())) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{permanent},
                     this,
                     "Put a charge counter on " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
+            game.doAction(new MagicChangeCountersAction(
                         (MagicPermanent)data[0],
                         MagicCounterType.Charge,
                         1,
                         true));
-		}		
+        }        
     };
 }

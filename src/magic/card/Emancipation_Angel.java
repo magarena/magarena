@@ -13,12 +13,12 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Emancipation_Angel {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_PERMANENT_YOU_CONTROL,
@@ -26,9 +26,9 @@ public class Emancipation_Angel {
                     MagicEvent.NO_DATA,
                     this,
                     "Return a permanent$ you control to its owner's hand.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -36,10 +36,10 @@ public class Emancipation_Angel {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(
-                    		permanent,
-                    		MagicLocationType.OwnersHand));
+                            permanent,
+                            MagicLocationType.OwnersHand));
                 }
-			});
-		}
+            });
+        }
     };
 }

@@ -20,20 +20,20 @@ import magic.model.target.MagicDestroyTargetPicker;
 
 public class Woodripper {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-			new MagicCondition[] {
-					MagicCondition.CHARGE_COUNTER_CONDITION,
-					MagicManaCost.ONE.getCondition()},
+            new MagicCondition[] {
+                    MagicCondition.CHARGE_COUNTER_CONDITION,
+                    MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE),
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT,
@@ -41,14 +41,14 @@ public class Woodripper {
                     MagicEvent.NO_DATA,
                     this,
                     "Destroy target artifact$.");
-		}
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+        }
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

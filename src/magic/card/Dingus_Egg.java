@@ -10,33 +10,33 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Dingus_Egg {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPermanent otherPermanent) {
-			return (otherPermanent.isLand()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPermanent otherPermanent) {
+            return (otherPermanent.isLand()) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{otherPermanent.getController()},
                     this,
                     permanent + " deals 2 damage to " +
-                    		otherPermanent.getController() + ".") :
+                            otherPermanent.getController() + ".") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicDamage damage = new MagicDamage(
-					event.getSource(),
-					(MagicTarget)data[0],
-					2,
-					false);
+            final MagicDamage damage = new MagicDamage(
+                    event.getSource(),
+                    (MagicTarget)data[0],
+                    2,
+                    false);
             game.doAction(new MagicDealDamageAction(damage));
-		}
+        }
     };
 }

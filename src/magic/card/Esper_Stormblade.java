@@ -7,14 +7,14 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Esper_Stormblade {
-	public static final MagicStatic S1 = Bant_Sureblade.S1;
-	
-	public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
+    public static final MagicStatic S1 = Bant_Sureblade.S1;
+    
+    public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return (Bant_Sureblade.isValid(permanent,game)) ?
+            return (Bant_Sureblade.isValid(permanent,game)) ?
                 flags | MagicAbility.Flying.getMask() :
                 flags;
         }
-	};
+    };
 }

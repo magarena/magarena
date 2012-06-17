@@ -28,19 +28,19 @@ public class Fires_of_Yavimaya {
             return flags | MagicAbility.Haste.getMask();
         }
     };
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
@@ -48,10 +48,10 @@ public class Fires_of_Yavimaya {
                     MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets +2/+2 until end of turn.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -60,7 +60,7 @@ public class Fires_of_Yavimaya {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,2,2));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

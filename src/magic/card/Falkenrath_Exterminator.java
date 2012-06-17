@@ -19,25 +19,25 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 
 public class Falkenrath_Exterminator {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.TWO_RED.getCondition()},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicPayManaCostEvent(
-							source,
-							source.getController(),
-							MagicManaCost.TWO_RED)
-			};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			final int amount = source.getCounters(MagicCounterType.PlusOne);
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicPayManaCostEvent(
+                            source,
+                            source.getController(),
+                            MagicManaCost.TWO_RED)
+            };
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            final int amount = source.getCounters(MagicCounterType.PlusOne);
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -45,23 +45,23 @@ public class Falkenrath_Exterminator {
                     new Object[]{amount},
                     this,
                     source + " deals " + amount + " damage to target creature$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicDamage damage = new MagicDamage(
-                    		event.getSource(),
-                    		creature,
-                    		(Integer)data[0],
-                    		false);
+                            event.getSource(),
+                            creature,
+                            (Integer)data[0],
+                            false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

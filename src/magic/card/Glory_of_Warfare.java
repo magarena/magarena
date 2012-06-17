@@ -13,11 +13,11 @@ public class Glory_of_Warfare {
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			if (game.hasTurn(permanent.getController())) {
-				pt.add(2,0);
-			} else {
-				pt.add(0,2);
-			}
+            if (game.hasTurn(permanent.getController())) {
+                pt.add(2,0);
+            } else {
+                pt.add(0,2);
+            }
         }
     };
 }

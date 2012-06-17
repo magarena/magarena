@@ -20,36 +20,36 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
 public class Spiritmonger {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.GREEN.getCondition()},
-			new MagicActivationHints(MagicTiming.Pump,false,1),
+            new MagicActivationHints(MagicTiming.Pump,false,1),
             "Color") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),
-                		MagicManaCost.GREEN),
+                        MagicManaCost.GREEN),
                 new MagicPlayAbilityEvent((MagicPermanent)source)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			return new MagicEvent(
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicColorChoice.BLUE_RED_WHITE_INSTANCE,
                     new Object[]{source},
                     this,
                     source + " becomes the color$ of your choice until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=(MagicPermanent)data[0];
             game.doAction(new MagicAddStaticAction(permanent, 
                 new MagicStatic(MagicLayer.SwitchPT,MagicStatic.UntilEOT) {
                 @Override
@@ -59,7 +59,7 @@ public class Spiritmonger {
                     return ((MagicColor)choiceResults[0]).getMask();
                 }   
             }));
-			game.doAction(new MagicPlayAbilityAction(permanent));
-		}
-	};
+            game.doAction(new MagicPlayAbilityAction(permanent));
+        }
+    };
 }

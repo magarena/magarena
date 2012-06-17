@@ -19,43 +19,43 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 
 public class Stuffy_Doll {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     source + " deals 1 damage to itself.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
-			final MagicDamage damage=new MagicDamage(permanent,permanent,1,false);
-			game.doAction(new MagicDealDamageAction(damage));
-		}
-	};
-	
+            final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicDamage damage=new MagicDamage(permanent,permanent,1,false);
+            game.doAction(new MagicDealDamageAction(damage));
+        }
+    };
+    
     public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {  
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {  
             if (damage.getTarget() == permanent) {
-            	final MagicPlayer player = permanent.getController();
+                final MagicPlayer player = permanent.getController();
                 final int amount = damage.getDealtAmount();
                 final MagicTarget target = permanent.getChosenTarget();
-				return new MagicEvent(
+                return new MagicEvent(
                         permanent,
                         player,
                         new Object[]{permanent,target,amount},
@@ -64,38 +64,38 @@ public class Stuffy_Doll {
                         " damage to " + target + ".");
             }
             return MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicDamage damage = new MagicDamage(
-					(MagicSource)data[0],
-					(MagicTarget)data[1],
-					(Integer)data[2],
-					false);
-			game.doAction(new MagicDealDamageAction(damage));
-		}
+            final MagicDamage damage = new MagicDamage(
+                    (MagicSource)data[0],
+                    (MagicTarget)data[1],
+                    (Integer)data[2],
+                    false);
+            game.doAction(new MagicDealDamageAction(damage));
+        }
     };
     
     public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			permanent.setChosenTarget(game.getOpponent(player));
-			return MagicEvent.NONE;
-		}
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            permanent.setChosenTarget(game.getOpponent(player));
+            return MagicEvent.NONE;
+        }
 
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object data[],
-				final Object[] choiceResults) {
-		}
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+        }
     };
 }

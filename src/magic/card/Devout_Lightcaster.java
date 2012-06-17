@@ -13,28 +13,28 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Devout_Lightcaster {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_BLACK_PERMANENT,
                     MagicExileTargetPicker.create(),
                     MagicEvent.NO_DATA,
                     this,
-					"Exile target black permanent$.");
-		}
-		@Override
-		public void executeEvent(
+                    "Exile target black permanent$.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
                 }
-			});
-		}
+            });
+        }
     };
 }

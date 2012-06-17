@@ -19,25 +19,25 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Moonveil_Dragon {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicManaCost.RED.getCondition()},
+                    MagicManaCost.RED.getCondition()},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
 
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
-					new MagicPayManaCostEvent(
-							source,
-							source.getController(),
-							MagicManaCost.RED)};
+                    new MagicPayManaCostEvent(
+                            source,
+                            source.getController(),
+                            MagicManaCost.RED)};
         }
 
         @Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
             return new MagicEvent(
                     source,
                     source.getController(),
@@ -52,12 +52,12 @@ public class Moonveil_Dragon {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets = game.filterTargets(
-					(MagicPlayer)data[0],
-					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-    			for (final MagicTarget target : targets) {
-    				game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,1,0));
-    			}
+            final Collection<MagicTarget> targets = game.filterTargets(
+                    (MagicPlayer)data[0],
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                for (final MagicTarget target : targets) {
+                    game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,1,0));
+                }
         }
     };
 }

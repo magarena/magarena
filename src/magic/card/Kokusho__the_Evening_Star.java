@@ -11,9 +11,9 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Kokusho__the_Evening_Star {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-			return (MagicLocationType.Play==triggerData.fromLocation) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
+            return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -21,16 +21,16 @@ public class Kokusho__the_Evening_Star {
                         this,
                         "Your opponent loses 5 life. You gain 5 life."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-5));
-			game.doAction(new MagicChangeLifeAction(player,5));
-		}
+            final MagicPlayer player=(MagicPlayer)data[0];
+            game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-5));
+            game.doAction(new MagicChangeLifeAction(player,5));
+        }
     };
 }

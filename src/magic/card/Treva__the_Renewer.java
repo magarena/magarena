@@ -20,10 +20,10 @@ import java.util.Collection;
 
 public class Treva__the_Renewer {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
-			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -36,28 +36,28 @@ public class Treva__the_Renewer {
                         "You may$ pay {2}{W}$. If you do, choose a color$. " + 
                         player + " gains 1 life for each permanent of that color."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				int life=0;
-				final MagicPlayer player=(MagicPlayer)data[0];
-				final MagicColor color=(MagicColor)choiceResults[2];
-				final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
-				for (final MagicTarget target : targets) {
-					final MagicPermanent permanent=(MagicPermanent)target;
-					if (color.hasColor(permanent.getColorFlags())) {
-						life++;
-					}
-				}				
-				if (life>0) {
-					game.doAction(new MagicChangeLifeAction(player,life));
-				}
-			}
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                int life=0;
+                final MagicPlayer player=(MagicPlayer)data[0];
+                final MagicColor color=(MagicColor)choiceResults[2];
+                final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
+                for (final MagicTarget target : targets) {
+                    final MagicPermanent permanent=(MagicPermanent)target;
+                    if (color.hasColor(permanent.getColorFlags())) {
+                        life++;
+                    }
+                }                
+                if (life>0) {
+                    game.doAction(new MagicChangeLifeAction(player,life));
+                }
+            }
+        }        
     };
 }

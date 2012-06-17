@@ -12,12 +12,12 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Algae_Gharial {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
-			return (permanent != otherPermanent &&
-					otherPermanent.isCreature()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            return (permanent != otherPermanent &&
+                    otherPermanent.isCreature()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -29,20 +29,20 @@ public class Algae_Gharial {
                     this,
                     player + " may put a +1/+1 counter on " + permanent + ".") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeCountersAction(
-						(MagicPermanent)data[0],
-						MagicCounterType.PlusOne,
-						1,
-						true));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeCountersAction(
+                        (MagicPermanent)data[0],
+                        MagicCounterType.PlusOne,
+                        1,
+                        true));
+            }
+        }
     };
 }

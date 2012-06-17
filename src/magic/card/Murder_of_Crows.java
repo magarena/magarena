@@ -12,11 +12,11 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Murder_of_Crows {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (permanent != otherPermanent &&
-					otherPermanent.isCreature()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            return (permanent != otherPermanent &&
+                    otherPermanent.isCreature()) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new MagicSimpleMayChoice(
@@ -28,18 +28,18 @@ public class Murder_of_Crows {
                         this,
                         "You may$ draw a card. If you do, discard a card."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicChoice.isYesChoice(choiceResults[0])) {
-				final MagicPlayer player=(MagicPlayer)data[1];
-				game.doAction(new MagicDrawAction(player,1));
-				game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],player,1,false));
-			}
-		}
+            if (MagicChoice.isYesChoice(choiceResults[0])) {
+                final MagicPlayer player=(MagicPlayer)data[1];
+                game.doAction(new MagicDrawAction(player,1));
+                game.addEvent(new MagicDiscardEvent((MagicPermanent)data[0],player,1,false));
+            }
+        }
     };
 }

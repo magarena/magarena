@@ -13,12 +13,12 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Eaten_by_Spiders {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
@@ -27,22 +27,22 @@ public class Eaten_by_Spiders {
                     this,
                     "Destroy target creature$ with flying and " +
                     "all Equipment attached to that creature.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
                     for (final MagicPermanent equipment : creature.getEquipmentPermanents()) {
-                    	game.doAction(new MagicDestroyAction(equipment));
-            		}
+                        game.doAction(new MagicDestroyAction(equipment));
+                    }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

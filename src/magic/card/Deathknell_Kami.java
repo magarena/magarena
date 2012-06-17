@@ -16,38 +16,38 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 
 public class Deathknell_Kami {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicManaCost.TWO.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicManaCost.TWO.getCondition()},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(
-					source,
-					source.getController(),
-					MagicManaCost.TWO)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.TWO)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     source + " gets +1/+1 until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
-			game.doAction(new MagicChangeStateAction(
-					permanent,
-					MagicPermanentState.SacrificeAtEndOfTurn,
-					true));
-		}
-	};
+            final MagicPermanent permanent = (MagicPermanent)data[0];
+            game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
+            game.doAction(new MagicChangeStateAction(
+                    permanent,
+                    MagicPermanentState.SacrificeAtEndOfTurn,
+                    true));
+        }
+    };
 }

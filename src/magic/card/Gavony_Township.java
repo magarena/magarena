@@ -22,40 +22,40 @@ import java.util.Collection;
 
 public class Gavony_Township {
     public static final MagicPermanentActivation A = new MagicPermanentActivation( 
-			new MagicCondition[]{
-				MagicManaCost.THREE_GREEN_WHITE.getCondition(), //add ONE for the card itself
-				MagicCondition.CAN_TAP_CONDITION
+            new MagicCondition[]{
+                MagicManaCost.THREE_GREEN_WHITE.getCondition(), //add ONE for the card itself
+                MagicCondition.CAN_TAP_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicTapEvent((MagicPermanent)source),
-					new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN_WHITE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicTapEvent((MagicPermanent)source),
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.TWO_GREEN_WHITE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source.getController()},
                     this,
                     "Put a +1/+1 counter on each creature you control.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			final Collection<MagicTarget> targets =
+            final MagicPlayer player = (MagicPlayer)data[0];
+            final Collection<MagicTarget> targets =
                 game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-					game.doAction(new MagicChangeCountersAction(
-							(MagicPermanent)target,MagicCounterType.PlusOne,1,true));
-			}
-		}
-	};
+            for (final MagicTarget target : targets) {
+                    game.doAction(new MagicChangeCountersAction(
+                            (MagicPermanent)target,MagicCounterType.PlusOne,1,true));
+            }
+        }
+    };
 }

@@ -14,10 +14,10 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Boomerang {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.TARGET_PERMANENT,
@@ -25,21 +25,21 @@ public class Boomerang {
                     new Object[]{cardOnStack},
                     this,
                     "Return target permanent$ to its owner's hand.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

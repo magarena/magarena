@@ -15,12 +15,12 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicFirstStrikeTargetPicker;
 
 public class Leap_of_Flame {
-	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
@@ -29,14 +29,14 @@ public class Leap_of_Flame {
                     this,
                     "Target creature$ gets +1/+0 and gains flying" +
                     "and first strike until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,0));
@@ -45,7 +45,7 @@ public class Leap_of_Flame {
                             MagicAbility.Flying.getMask() |
                             MagicAbility.FirstStrike.getMask()));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

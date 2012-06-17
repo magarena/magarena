@@ -12,13 +12,13 @@ import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Archon_of_Justice {
-	public static final MagicWhenPutIntoGraveyardTrigger T =new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+    public static final MagicWhenPutIntoGraveyardTrigger T =new MagicWhenPutIntoGraveyardTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-			return (MagicLocationType.Play==triggerData.fromLocation) ?
+            return (MagicLocationType.Play==triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -28,10 +28,10 @@ public class Archon_of_Justice {
                         this,
                         "Exile target permanent$."):
                 MagicEvent.NONE;
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -40,7 +40,7 @@ public class Archon_of_Justice {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
                 }
-			});
-		}
+            });
+        }
     };
 }

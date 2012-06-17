@@ -27,20 +27,20 @@ public class Kor_Aeronaut {
             final MagicEvent event,
             final Object[] data,
             final Object[] choiceResults) {
-        	event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Flying));
                 }
-			});
+            });
         }
     };
 
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.ONE_WHITE,false),
@@ -48,30 +48,30 @@ public class Kor_Aeronaut {
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " +
                     "target creature gains flying until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final int kickerCount = (Integer)choiceResults[1];
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			if (kickerCount > 0) {
-				final MagicPermanent permanent = action.getPermanent();
-				final MagicPlayer player = permanent.getController();
-				final MagicEvent triggerEvent = new MagicEvent(
-					permanent,
-					player,
-					MagicTargetChoice.POS_TARGET_CREATURE,
-					MagicEvent.NO_DATA,
+            final int kickerCount = (Integer)choiceResults[1];
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
+            game.doAction(action);
+            if (kickerCount > 0) {
+                final MagicPermanent permanent = action.getPermanent();
+                final MagicPlayer player = permanent.getController();
+                final MagicEvent triggerEvent = new MagicEvent(
+                    permanent,
+                    player,
+                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicEvent.NO_DATA,
                     KICKED,
                     "Target creature$ gains flying until end of turn."
                 );
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
-			}
-		}
-	};
+                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+            }
+        }
+    };
 }

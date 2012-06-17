@@ -32,39 +32,39 @@ public class Cemetery_Reaper {
         MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(
-        		final MagicGame game,
-        		final MagicPermanent permanent,
-        		final MagicPowerToughness pt) {
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
             pt.add(1,1);
         }
         @Override
         public boolean condition(
-        		final MagicGame game,
-        		final MagicPermanent source,
-        		final MagicPermanent target) {
+                final MagicGame game,
+                final MagicPermanent source,
+                final MagicPermanent target) {
             return source != target;
         }
     };
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.TWO_BLACK.getCondition()
-			},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.TWO_BLACK.getCondition()
+            },
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicPayManaCostTapEvent(
-						source,
-						source.getController(),
-						MagicManaCost.TWO_BLACK)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(
-				final MagicPermanent source,
-				final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicPayManaCostTapEvent(
+                        source,
+                        source.getController(),
+                        MagicManaCost.TWO_BLACK)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(
+                final MagicPermanent source,
+                final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
@@ -74,9 +74,9 @@ public class Cemetery_Reaper {
                     this,
                     "Exile target creature card from a graveyard. " +
                     "Put a 2/2 black Zombie creature token onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -85,17 +85,17 @@ public class Cemetery_Reaper {
                 public void doAction(final MagicCard card) {
                     final MagicPlayer player=(MagicPlayer)data[0];
                     game.doAction(new MagicRemoveCardAction(
-                    		card,
-                    		MagicLocationType.Graveyard));
+                            card,
+                            MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(
-                    		card,
-                    		MagicLocationType.Graveyard,
-                    		MagicLocationType.Exile));
+                            card,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.Exile));
                     game.doAction(new MagicPlayTokenAction(
-                    		player,
-                    		TokenCardDefinitions.get("Zombie")));
+                            player,
+                            TokenCardDefinitions.get("Zombie")));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

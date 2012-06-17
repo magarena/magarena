@@ -9,26 +9,26 @@ import magic.model.trigger.MagicWhenBecomesBlockedTrigger;
 
 public class Vedalken_Ghoul {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-			final MagicPlayer player = permanent.getController();
-			return (permanent == data ) ?
-		            new MagicEvent(
-		                    permanent,
-		                    player,
-		                    new Object[]{game.getOpponent(player)},
-		                    this,
-		                    game.getOpponent(player) + " loses 4 life."):
-		            MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+            final MagicPlayer player = permanent.getController();
+            return (permanent == data ) ?
+                    new MagicEvent(
+                            permanent,
+                            player,
+                            new Object[]{game.getOpponent(player)},
+                            this,
+                            game.getOpponent(player) + " loses 4 life."):
+                    MagicEvent.NONE;
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-4));
-		}
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-4));
+        }
     };
 }

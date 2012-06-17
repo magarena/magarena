@@ -24,72 +24,72 @@ import magic.model.mstatic.MagicLayer;
 import java.util.EnumSet;
 
 public class Stirring_Wildwood {
-	
+    
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void modPowerToughness(
+        @Override
+        public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-			pt.set(3,4);
-		}
+            pt.set(3,4);
+        }
     };
     private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
-		@Override
-		public long getAbilityFlags(
+        @Override
+        public long getAbilityFlags(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final long flags) {
-			return flags|MagicAbility.Reach.getMask();
-		}
+            return flags|MagicAbility.Reach.getMask();
+        }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-		@Override
-		public void modSubTypeFlags(
+        @Override
+        public void modSubTypeFlags(
                 final MagicPermanent permanent,
                 final EnumSet<MagicSubType> flags) {
             flags.add(MagicSubType.Elemental);
-		}
+        }
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Creature.getMask();
-		}
+            return flags|MagicType.Creature.getMask();
+        }
     };
     private static final MagicStatic C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
-		@Override
-		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-			return MagicColor.Green.getMask()|MagicColor.White.getMask();
-		}		
-	};
+        @Override
+        public int getColorFlags(final MagicPermanent permanent,final int flags) {
+            return MagicColor.Green.getMask()|MagicColor.White.getMask();
+        }        
+    };
 
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-					MagicManaCost.ONE_GREEN_WHITE.getCondition(),
+                    MagicManaCost.ONE_GREEN_WHITE.getCondition(),
                     MagicManaCost.GREEN_GREEN_WHITE_WHITE.getCondition())},
-			new MagicActivationHints(MagicTiming.Animate),
+            new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),
                 MagicManaCost.ONE_GREEN_WHITE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},this,
                     "Until end of turn, " + source + 
                     " becomes a 3/4 green and white Elemental creature with reach. It's still a land.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
-		}
-	};
+            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
+        }
+    };
 }

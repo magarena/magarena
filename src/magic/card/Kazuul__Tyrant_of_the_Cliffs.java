@@ -11,10 +11,10 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Kazuul__Tyrant_of_the_Cliffs {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			final MagicPlayer player=permanent.getController();
-			return (creature.getController()!=player) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            final MagicPlayer player=permanent.getController();
+            return (creature.getController()!=player) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -22,19 +22,19 @@ public class Kazuul__Tyrant_of_the_Cliffs {
                         this,
                         "Put a 3/3 red Ogre creature token onto the battlefield unless your opponent pays {3}."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player=(MagicPlayer)data[1];
-			game.addEvent(new MagicPlayOgreUnlessEvent(
+            final MagicPlayer player=(MagicPlayer)data[1];
+            game.addEvent(new MagicPlayOgreUnlessEvent(
                         (MagicPermanent)data[0],
                         game.getOpponent(player),
                         player,
                         MagicManaCost.THREE));
-		}
+        }
     };
 }

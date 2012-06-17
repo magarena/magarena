@@ -18,11 +18,11 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicSacrificeTargetPicker;
 
 public class Tribute_to_Hunger {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
@@ -30,19 +30,19 @@ public class Tribute_to_Hunger {
                     this,
                     "Target opponent$ sacrifices a creature. " + player + 
                     " gains life equal to that creature's toughness.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer opponent) {
-        			if (opponent.controlsPermanentWithType(MagicType.Creature)) {
-        				game.addEvent(new MagicEvent(
+                    if (opponent.controlsPermanentWithType(MagicType.Creature)) {
+                        game.addEvent(new MagicEvent(
                             cardOnStack.getCard(),
                             opponent,
                             MagicTargetChoice.SACRIFICE_CREATURE,
@@ -52,11 +52,11 @@ public class Tribute_to_Hunger {
                             "Choose a creature to sacrifice$."));
                     }
                 }
-			});
-		}
-	};
-	
-	private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+            });
+        }
+    };
+    
+    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(
                 final MagicGame game,

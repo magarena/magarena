@@ -17,37 +17,37 @@ import magic.model.event.MagicTiming;
 
 
 public class Argent_Sphinx {
-	public static final MagicPermanentActivation A =new MagicPermanentActivation(
-			new MagicCondition[]{
-				MagicManaCost.BLUE.getCondition(),
+    public static final MagicPermanentActivation A =new MagicPermanentActivation(
+            new MagicCondition[]{
+                MagicManaCost.BLUE.getCondition(),
                 MagicCondition.METALCRAFT_CONDITION
             },
             new MagicActivationHints(MagicTiming.Removal,false,1),
             "Exile") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPlayer player=source.getController();
-			return new MagicEvent[]{					
-				new MagicPayManaCostEvent(source,player,MagicManaCost.BLUE),
-				new MagicPlayAbilityEvent((MagicPermanent)source)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPlayer player=source.getController();
+            return new MagicEvent[]{                    
+                new MagicPayManaCostEvent(source,player,MagicManaCost.BLUE),
+                new MagicPlayAbilityEvent((MagicPermanent)source)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Exile " + source + ". Return it to the battlefield " +
                     "under your control at the end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicExileUntilEndOfTurnAction((MagicPermanent)data[0]));
-		}
-	};
+            game.doAction(new MagicExileUntilEndOfTurnAction((MagicPermanent)data[0]));
+        }
+    };
 }

@@ -15,9 +15,9 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Draining_Whelk {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_SPELL,
@@ -25,9 +25,9 @@ public class Draining_Whelk {
                     this,
                     "Counter target spell$. Put X +1/+1 counters on " + permanent + 
                     ", where X is that spell's converted mana cost.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -41,7 +41,7 @@ public class Draining_Whelk {
                                 card.getConvertedCost(),
                                 true));
                 }
-			});
-		}
+            });
+        }
     };
 }

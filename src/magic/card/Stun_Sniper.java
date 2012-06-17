@@ -19,17 +19,17 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicTapTargetPicker;
 
 public class Stun_Sniper {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -37,9 +37,9 @@ public class Stun_Sniper {
                     new Object[]{source},
                     this,
                     source + " deals 1 damage to target creature$. Tap that creature.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -50,7 +50,7 @@ public class Stun_Sniper {
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicTapAction(creature,true));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

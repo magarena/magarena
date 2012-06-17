@@ -16,36 +16,36 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Thoughtweft_Gambit {
-	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     new Object[]{cardOnStack,player},
                     this,
-                   	"Tap all creatures your opponent controls and untap all creatures you control.");
-		}
-		@Override
-		public void executeEvent(
+                       "Tap all creatures your opponent controls and untap all creatures you control.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
-			final MagicPlayer player=(MagicPlayer)data[1];
-			final Collection<MagicTarget> targets=
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
+            final MagicPlayer player=(MagicPlayer)data[1];
+            final Collection<MagicTarget> targets=
                 game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE);
-			for (final MagicTarget target : targets) {
-				final MagicPermanent creature=(MagicPermanent)target;
-				if (creature.getController()==player) {
-					game.doAction(new MagicUntapAction(creature));
-				} else {
-					game.doAction(new MagicTapAction(creature,true));
-				}
-			}
-		}
-	};
+            for (final MagicTarget target : targets) {
+                final MagicPermanent creature=(MagicPermanent)target;
+                if (creature.getController()==player) {
+                    game.doAction(new MagicUntapAction(creature));
+                } else {
+                    game.doAction(new MagicTapAction(creature,true));
+                }
+            }
+        }
+    };
 }

@@ -16,12 +16,12 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Reya_Dawnbringer {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player = permanent.getController();
-			return (player != data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player = permanent.getController();
+            return (player != data) ?
                 MagicEvent.NONE :
-				new MagicEvent(
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -33,20 +33,20 @@ public class Reya_Dawnbringer {
                     this,
                     player + " may$ return target creature card$ from " +
                     "his or her graveyard to the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
-					public void doAction(final MagicCard card) {
-						game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
-					}
-				});
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                    }
+                });
+            }
+        }
     };
 }

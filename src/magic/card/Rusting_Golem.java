@@ -8,15 +8,15 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicCDA;
 
 public class Rusting_Golem {
-	public static final MagicCDA cda = new MagicCDA() {
-		@Override
-		public void modPowerToughness(
+    public static final MagicCDA cda = new MagicCDA() {
+        @Override
+        public void modPowerToughness(
                 final MagicGame game,
                 final MagicPlayer player,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-			final int amount = permanent.getCounters(MagicCounterType.Charge);
-			pt.set(amount,amount);
-		}
+            final int amount = permanent.getCounters(MagicCounterType.Charge);
+            pt.set(amount,amount);
+        }
     };
 }

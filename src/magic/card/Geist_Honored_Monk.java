@@ -12,34 +12,34 @@ import magic.model.mstatic.MagicCDA;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Geist_Honored_Monk {
-	public static final MagicCDA CDA = new MagicCDA() {
-		@Override
-		public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
-			final int amount = player.getNrOfPermanentsWithType(MagicType.Creature);
-			pt.set(amount, amount);
-		}
+    public static final MagicCDA CDA = new MagicCDA() {
+        @Override
+        public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
+            final int amount = player.getNrOfPermanentsWithType(MagicType.Creature);
+            pt.set(amount, amount);
+        }
     };
     
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts two 1/1 white Spirit creature tokens with flying onto the battlefield.");
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
-		}		
+            final MagicPlayer player = (MagicPlayer)data[0];
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Spirit2")));
+        }        
     };
 }

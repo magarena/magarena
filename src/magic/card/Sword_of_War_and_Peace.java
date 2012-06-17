@@ -14,12 +14,12 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Sword_of_War_and_Peace {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
             final MagicTarget targetPlayer=damage.getTarget();
-			return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
-				new MagicEvent(
+            return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{permanent,player,targetPlayer},
@@ -28,24 +28,24 @@ public class Sword_of_War_and_Peace {
                     " equal to the number of cards in his or her hand and " +
                     player + " gains 1 life for each card in your hand."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer targetPlayer=(MagicPlayer)data[2];
-			final int amount1=targetPlayer.getHand().size();
-			if (amount1>0) {
-				final MagicDamage damage=new MagicDamage((MagicSource)data[0],targetPlayer,amount1,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
-			final MagicPlayer player=(MagicPlayer)data[1];
-			final int amount2=player.getHand().size();
-			if (amount2>0) {
-				game.doAction(new MagicChangeLifeAction(player,amount2));
-			}
-		}
+            final MagicPlayer targetPlayer=(MagicPlayer)data[2];
+            final int amount1=targetPlayer.getHand().size();
+            if (amount1>0) {
+                final MagicDamage damage=new MagicDamage((MagicSource)data[0],targetPlayer,amount1,false);
+                game.doAction(new MagicDealDamageAction(damage));
+            }
+            final MagicPlayer player=(MagicPlayer)data[1];
+            final int amount2=player.getHand().size();
+            if (amount2>0) {
+                game.doAction(new MagicChangeLifeAction(player,amount2));
+            }
+        }
     };
 }

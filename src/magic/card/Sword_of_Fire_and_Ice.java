@@ -17,10 +17,10 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Sword_of_Fire_and_Ice {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
-			return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -30,10 +30,10 @@ public class Sword_of_Fire_and_Ice {
                         this,
                         permanent + " deals 2 damage to target creature or player$ and you draw a card."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -43,8 +43,8 @@ public class Sword_of_Fire_and_Ice {
                     final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-			game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
-		}
+            });
+            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+        }
     };
 }

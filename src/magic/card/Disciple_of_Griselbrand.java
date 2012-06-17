@@ -19,23 +19,23 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicSacrificeTargetPicker;
 
 public class Disciple_of_Griselbrand {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicManaCost.ONE.getCondition(),
-					MagicCondition.ONE_CREATURE_CONDITION
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicManaCost.ONE.getCondition(),
+                    MagicCondition.ONE_CREATURE_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent[]{
-					new MagicPayManaCostEvent(source,player,MagicManaCost.ONE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent[]{
+                    new MagicPayManaCostEvent(source,player,MagicManaCost.ONE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE,
@@ -44,20 +44,20 @@ public class Disciple_of_Griselbrand {
                     this,
                     "Sacrifice a creature. " + player + " gains life " +
                     "equal to sacrificed creature's toughness.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
+            event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final int toughness=creature.getToughness();
                     game.doAction(new MagicSacrificeAction(creature));
                     game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],toughness));
                 }
             });
-		}
-	};
+        }
+    };
 }

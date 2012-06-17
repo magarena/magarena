@@ -15,10 +15,10 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Debtors__Knell {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player=permanent.getController();
-			return (player==data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player=permanent.getController();
+            return (player==data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -28,15 +28,15 @@ public class Debtors__Knell {
                         this,
                         "Put target creature card$ in a graveyard onto the battlefield under your control."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
                 }
-			});
-		}
+            });
+        }
     };
 }

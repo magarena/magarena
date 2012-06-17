@@ -11,18 +11,18 @@ import magic.model.event.MagicTiming;
 import magic.model.event.MagicWeakenCreatureActivation;
 
 public class Gnarled_Effigy {
-	public static final MagicPermanentActivation A = new MagicWeakenCreatureActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.FOUR.getCondition()},
+    public static final MagicPermanentActivation A = new MagicWeakenCreatureActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.FOUR.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(
-					source,
-					source.getController(),
-					MagicManaCost.FOUR)};
-		}
-	};
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.FOUR)};
+        }
+    };
 }

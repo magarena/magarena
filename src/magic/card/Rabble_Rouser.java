@@ -18,45 +18,45 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Rabble_Rouser {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.RED.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.RED.getCondition()},
             new MagicActivationHints(MagicTiming.Block),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[] {new MagicPayManaCostTapEvent(
-					source,
-					source.getController(),
-					MagicManaCost.RED)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[] {new MagicPayManaCostTapEvent(
+                    source,
+                    source.getController(),
+                    MagicManaCost.RED)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Attacking creatures get +X/+0 until end of turn, " +
                     "where X is " + source + "'s power.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			final Collection<MagicTarget> targets = game.filterTargets(
+            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final Collection<MagicTarget> targets = game.filterTargets(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicChangeTurnPTAction(
-						(MagicPermanent)target,
-						permanent.getPower(),
-						0));
-			}
-		}
-	};
+            for (final MagicTarget target : targets) {
+                game.doAction(new MagicChangeTurnPTAction(
+                        (MagicPermanent)target,
+                        permanent.getPower(),
+                        0));
+            }
+        }
+    };
 }

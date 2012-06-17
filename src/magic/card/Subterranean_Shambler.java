@@ -15,63 +15,63 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 public class Subterranean_Shambler {
-	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			return new MagicEvent(
+    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{permanent,player},
                     this,
                     permanent + " deals 1 damage to each creature without flying.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicSource source = (MagicSource)data[0];
-			final Collection<MagicTarget> creatures =
+            final MagicSource source = (MagicSource)data[0];
+            final Collection<MagicTarget> creatures =
                 game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
-			for (final MagicTarget creature : creatures) {
-				final MagicDamage damage = new MagicDamage(source,creature,1,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
-		}
+            for (final MagicTarget creature : creatures) {
+                final MagicDamage damage = new MagicDamage(source,creature,1,false);
+                game.doAction(new MagicDealDamageAction(damage));
+            }
+        }
     };
     
     public static final MagicWhenLeavesPlayTrigger T3 = new MagicWhenLeavesPlayTrigger() {
-    	@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPermanent data) {
-			return (permanent == data) ?
-				new MagicEvent(
-						permanent,
-						permanent.getController(),
-	                    new Object[]{permanent,permanent.getController()},
-	                    this,
-	                    permanent + " deals 1 damage to each creature without flying.") :
-			MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPermanent data) {
+            return (permanent == data) ?
+                new MagicEvent(
+                        permanent,
+                        permanent.getController(),
+                        new Object[]{permanent,permanent.getController()},
+                        this,
+                        permanent + " deals 1 damage to each creature without flying.") :
+            MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicSource source = (MagicSource)data[0];
-			final Collection<MagicTarget> creatures =
+            final MagicSource source = (MagicSource)data[0];
+            final Collection<MagicTarget> creatures =
                 game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
-			for (final MagicTarget creature : creatures) {
-				final MagicDamage damage = new MagicDamage(source,creature,1,false);
-				game.doAction(new MagicDealDamageAction(damage));
-			}
-		}
+            for (final MagicTarget creature : creatures) {
+                final MagicDamage damage = new MagicDamage(source,creature,1,false);
+                game.doAction(new MagicDealDamageAction(damage));
+            }
+        }
     };
 }

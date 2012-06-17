@@ -16,11 +16,11 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicDestroyTargetPicker;
 
 public class Corpsehatch {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
@@ -29,23 +29,23 @@ public class Corpsehatch {
                     this,
                     "Destroy target nonblack creature$. " + 
                     "Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. " +
-    				"They have \"Sacrifice this creature: Add {1} to your mana pool.\"");
-		}
-		@Override
-		public void executeEvent(
+                    "They have \"Sacrifice this creature: Add {1} to your mana pool.\"");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicDestroyAction(creature));
                 }
-			});
-			final MagicPlayer player=(MagicPlayer)data[1];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
-		}
-	};
+            });
+            final MagicPlayer player=(MagicPlayer)data[1];
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Eldrazi Spawn")));
+        }
+    };
 }

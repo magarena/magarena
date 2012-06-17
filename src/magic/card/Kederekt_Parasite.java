@@ -13,38 +13,38 @@ import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenOtherDrawnTrigger;
 
 public class Kederekt_Parasite {
-	
-	private static boolean isValid(final MagicPermanent owner, final MagicGame game) {
-		for (final MagicPermanent permanent : owner.getController().getPermanents()) {
-			if (permanent != owner && MagicColor.Red.hasColor(permanent.getColorFlags())) {
-				return true;
-			}
-		}
-		return false;
-	}
+    
+    private static boolean isValid(final MagicPermanent owner, final MagicGame game) {
+        for (final MagicPermanent permanent : owner.getController().getPermanents()) {
+            if (permanent != owner && MagicColor.Red.hasColor(permanent.getColorFlags())) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     public static final Object T = new MagicWhenOtherDrawnTrigger() {
-    	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
-    		final MagicPlayer player = data.getOwner();
-    		return (permanent.getController() != player && isValid(permanent,game)) ?
-    			new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard data) {
+            final MagicPlayer player = data.getOwner();
+            return (permanent.getController() != player && isValid(permanent,game)) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{permanent,player},
                     this,
                     permanent + " deals 1 damage to your opponent."):
                 MagicEvent.NONE;
-    	}
-    	
-    	@Override
-    	public void executeEvent(
-    			final MagicGame game,
-    			final MagicEvent event,
-    			final Object data[],
-    			final Object[] choiceResults) {
-    		final MagicDamage damage = new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
-    		game.doAction(new MagicDealDamageAction(damage));
-    	}		
+        }
+        
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+            final MagicDamage damage = new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
+            game.doAction(new MagicDealDamageAction(damage));
+        }        
     };
 }

@@ -8,25 +8,25 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Goblin_Sharpshooter {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent.isCreature() &&
-					permanent.isTapped()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            return (otherPermanent.isCreature() &&
+                    permanent.isTapped()) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
                     "Untap " + permanent + ".") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
-		}
+            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+        }
     };
 }

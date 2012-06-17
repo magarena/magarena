@@ -15,49 +15,49 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.trigger.MagicWhenAttacksUnblockedTrigger;
 
 public class Dwarven_Vigilantes {
-	public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+    public static final MagicWhenAttacksUnblockedTrigger T = new MagicWhenAttacksUnblockedTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             if (creature == permanent) {
-            	final MagicPlayer player = permanent.getController();
-            	return new MagicEvent(
-						permanent,
-						player,
-						new MagicMayChoice(
-	                            player + " may have " + permanent + " deal " +
-	                            "damage equal to its power to target creature.",
-	                            MagicTargetChoice.NEG_TARGET_CREATURE),
-	                    new MagicDamageTargetPicker(permanent.getPower()),
-						new Object[]{permanent},
-						this,
-						player + " may$ have " + permanent + " deal " +
-	                    "damage equal to its power to target creature$.");
+                final MagicPlayer player = permanent.getController();
+                return new MagicEvent(
+                        permanent,
+                        player,
+                        new MagicMayChoice(
+                                player + " may have " + permanent + " deal " +
+                                "damage equal to its power to target creature.",
+                                MagicTargetChoice.NEG_TARGET_CREATURE),
+                        new MagicDamageTargetPicker(permanent.getPower()),
+                        new Object[]{permanent},
+                        this,
+                        player + " may$ have " + permanent + " deal " +
+                        "damage equal to its power to target creature$.");
             }
             return MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                    	final MagicPermanent permanent = (MagicPermanent)data[0];
-                    	final MagicDamage damage = new MagicDamage(
-                    			permanent,
-                    			creature,
-                    			permanent.getPower(),
-                    			false);
-	                    game.doAction(new MagicDealDamageAction(damage));
-	                    game.doAction(new MagicChangeStateAction(
-	    						permanent,
-	    						MagicPermanentState.NoCombatDamage,true));
-				    }
+                        final MagicPermanent permanent = (MagicPermanent)data[0];
+                        final MagicDamage damage = new MagicDamage(
+                                permanent,
+                                creature,
+                                permanent.getPower(),
+                                false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                        game.doAction(new MagicChangeStateAction(
+                                permanent,
+                                MagicPermanentState.NoCombatDamage,true));
+                    }
                 });
-			}
-		}
+            }
+        }
     };
 }

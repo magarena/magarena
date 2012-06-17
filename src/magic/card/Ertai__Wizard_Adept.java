@@ -17,39 +17,39 @@ import magic.model.event.MagicTiming;
 import magic.model.stack.MagicCardOnStack;
 
 public class Ertai__Wizard_Adept {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.TWO_BLUE_BLUE.getCondition()
-				},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.TWO_BLUE_BLUE.getCondition()
+                },
             new MagicActivationHints(MagicTiming.Counter),
             "Counter") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicPayManaCostTapEvent(source,source.getController(),
-					MagicManaCost.TWO_BLUE_BLUE)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicPayManaCostTapEvent(source,source.getController(),
+                    MagicManaCost.TWO_BLUE_BLUE)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_SPELL,
                     new Object[]{source},
                     this,
-					"Counter target spell$.");
-		}
+                    "Counter target spell$.");
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
                     game.doAction(new MagicCounterItemOnStackAction(targetSpell));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

@@ -11,13 +11,13 @@ import magic.model.trigger.MagicGraveyardTriggerData;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Weatherseed_Treefolk {
-	public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+    public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicGraveyardTriggerData triggerData) {
-			return (MagicLocationType.Play == triggerData.fromLocation) ?
+            return (MagicLocationType.Play == triggerData.fromLocation) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -25,17 +25,17 @@ public class Weatherseed_Treefolk {
                         this,
                         "Return " + permanent + " to its owner's hand."):
                 MagicEvent.NONE;
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicCard card = (MagicCard)data[0];
-			game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+            final MagicCard card = (MagicCard)data[0];
+            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-		}
+        }
     };
 }

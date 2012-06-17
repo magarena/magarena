@@ -13,15 +13,15 @@ import magic.model.event.MagicTiming;
 import magic.model.event.MagicUntapEvent;
 
 public class Silkbind_Faerie {
-	public static final MagicPermanentActivation A1 = new MagicTapCreatureActivation(
-			new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicManaCost.ONE_WHITE_OR_BLUE.getCondition()},
-			new MagicActivationHints(MagicTiming.Tapping),
+    public static final MagicPermanentActivation A1 = new MagicTapCreatureActivation(
+            new MagicCondition[]{MagicCondition.CAN_UNTAP_CONDITION,MagicManaCost.ONE_WHITE_OR_BLUE.getCondition()},
+            new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_WHITE_OR_BLUE),
-				new MagicUntapEvent((MagicPermanent)source)};
+            return new MagicEvent[]{
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_WHITE_OR_BLUE),
+                new MagicUntapEvent((MagicPermanent)source)};
         }
     };
 }

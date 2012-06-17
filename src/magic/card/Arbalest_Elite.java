@@ -20,17 +20,17 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicDamageTargetPicker;
 
 public class Arbalest_Elite {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO_WHITE.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO_WHITE.getCondition()},
             new MagicActivationHints(MagicTiming.Removal),
             "Damage") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.TWO_WHITE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.TWO_WHITE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
@@ -39,9 +39,9 @@ public class Arbalest_Elite {
                     this,
                     source + " deals 3 damage to target attacking or blocking creature$. " +
                     source + " doesn't untap during your next untap step.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -52,7 +52,7 @@ public class Arbalest_Elite {
                     game.doAction(new MagicDealDamageAction(damage));
                     game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DoesNotUntapDuringNext,true));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

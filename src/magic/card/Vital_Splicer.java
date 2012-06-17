@@ -21,8 +21,8 @@ public class Vital_Splicer {
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicManaCost.ONE.getCondition(),
-            		MagicCondition.CONTROL_GOLEM_CONDITION},
+                    MagicManaCost.ONE.getCondition(),
+                    MagicCondition.CONTROL_GOLEM_CONDITION},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Regen") {
 

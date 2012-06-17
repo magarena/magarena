@@ -10,10 +10,10 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Dread {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			final MagicPlayer player=permanent.getController();
-			return (damage.getTarget()==player && 
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            final MagicPlayer player=permanent.getController();
+            return (damage.getTarget()==player && 
                     damage.getSource().isCreature()) ?
                 new MagicEvent(
                         permanent,
@@ -22,15 +22,15 @@ public class Dread {
                         this,
                         "Destroy "+damage.getSource()+"."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
-		}
+            game.doAction(new MagicDestroyAction((MagicPermanent)data[0]));
+        }
     };
 }

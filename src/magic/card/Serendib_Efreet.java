@@ -13,10 +13,10 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Serendib_Efreet {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player=permanent.getController();
-			return (player==data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player=permanent.getController();
+            return (player==data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -24,15 +24,15 @@ public class Serendib_Efreet {
                         this,
                         permanent + " deals 1 damage to you.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
-			game.doAction(new MagicDealDamageAction(damage));
-		}
+            final MagicDamage damage=new MagicDamage((MagicSource)data[0],(MagicTarget)data[1],1,false);
+            game.doAction(new MagicDealDamageAction(damage));
+        }
     };
 }

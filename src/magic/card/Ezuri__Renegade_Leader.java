@@ -28,7 +28,7 @@ import magic.model.target.MagicTargetHint;
 public class Ezuri__Renegade_Leader {
     public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicManaCost.GREEN.getCondition()},
+                    MagicManaCost.GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,false),
             "Regen") {
 
@@ -39,10 +39,10 @@ public class Ezuri__Renegade_Leader {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-        	final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-					MagicTargetFilter.TARGET_ELF,source);
-			final MagicTargetChoice targetChoice = new MagicTargetChoice(
-					targetFilter,true,MagicTargetHint.Positive,"another target Elf");
+            final MagicTargetFilter targetFilter = new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_ELF,source);
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                    targetFilter,true,MagicTargetHint.Positive,"another target Elf");
             return new MagicEvent(
                     source,
                     source.getController(),
@@ -69,7 +69,7 @@ public class Ezuri__Renegade_Leader {
     
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
-            		MagicManaCost.TWO_GREEN_GREEN_GREEN.getCondition()},
+                    MagicManaCost.TWO_GREEN_GREEN_GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true),
             "Pump") {
 
@@ -95,13 +95,13 @@ public class Ezuri__Renegade_Leader {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-        	final Collection<MagicTarget> targets =
+            final Collection<MagicTarget> targets =
                     game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_ELF_YOU_CONTROL);
-    			for (final MagicTarget target : targets) {
-    				final MagicPermanent creature = (MagicPermanent)target;
-    				game.doAction(new MagicChangeTurnPTAction(creature,3,3));
-    				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
-    			}
+                for (final MagicTarget target : targets) {
+                    final MagicPermanent creature = (MagicPermanent)target;
+                    game.doAction(new MagicChangeTurnPTAction(creature,3,3));
+                    game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Trample));
+                }
         }
     };
 }

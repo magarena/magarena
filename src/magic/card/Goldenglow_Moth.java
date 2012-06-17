@@ -11,33 +11,33 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Goldenglow_Moth {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			final MagicPlayer player = permanent.getController();
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            final MagicPlayer player = permanent.getController();
             return (creature == permanent) ?
-            		new MagicEvent(
+                    new MagicEvent(
                             permanent,
                             player,
                             new MagicSimpleMayChoice(
-                        		player + " may gain 4 life.",
-                        		MagicSimpleMayChoice.GAIN_LIFE,
-                        		3,
-                        		MagicSimpleMayChoice.DEFAULT_YES),
+                                player + " may gain 4 life.",
+                                MagicSimpleMayChoice.GAIN_LIFE,
+                                3,
+                                MagicSimpleMayChoice.DEFAULT_YES),
                             new Object[]{player},
                             this,
                             player + " may$ gain 4 life.") :
                     MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
+            }
+        }
     };
 }

@@ -11,10 +11,10 @@ import magic.model.event.MagicTapCreatureActivation;
 import magic.model.event.MagicTiming;
 
 public class Blinding_Mage {
-	public static final MagicPermanentActivation A = new MagicTapCreatureActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.WHITE.getCondition()},
-			new MagicActivationHints(MagicTiming.Tapping),
-			"Tap") {
+    public static final MagicPermanentActivation A = new MagicTapCreatureActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.WHITE.getCondition()},
+            new MagicActivationHints(MagicTiming.Tapping),
+            "Tap") {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{

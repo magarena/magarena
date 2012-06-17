@@ -18,19 +18,19 @@ import magic.model.target.MagicTapTargetPicker;
 
 public class Vedalken_Certarch {
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicCondition.METALCRAFT_CONDITION},
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicCondition.METALCRAFT_CONDITION},
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPermanent permanent=(MagicPermanent)source;
-			return new MagicEvent[]{new MagicTapEvent(permanent)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return new MagicEvent[]{new MagicTapEvent(permanent)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
@@ -38,9 +38,9 @@ public class Vedalken_Certarch {
                     MagicEvent.NO_DATA,
                     this,
                     "Tap target artifact, creature, or land$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -49,7 +49,7 @@ public class Vedalken_Certarch {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicTapAction(creature,true));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

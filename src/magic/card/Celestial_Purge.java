@@ -17,31 +17,31 @@ import magic.model.target.MagicExileTargetPicker;
 public class Celestial_Purge {
     public static final MagicSpellCardEvent EXILE=new MagicSpellCardEvent() {
 
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_BLACK_RED_PERMANENT,
                     MagicExileTargetPicker.create(),
                     new Object[]{cardOnStack},
-                    this,				
+                    this,                
                     "Exile target black or red permanent$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent perm) {
                     game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

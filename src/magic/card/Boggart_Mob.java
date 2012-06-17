@@ -15,20 +15,20 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Boggart_Mob {
     public static final MagicWhenDamageIsDealtTrigger T3 = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			final MagicPlayer player = permanent.getController();
-			final MagicSource source = damage.getSource();
-			return (damage.isCombat() && 
-					damage.getTarget().isPlayer() &&
-					source.getController() == player &&
-					((MagicPermanent)source).hasSubType(MagicSubType.Goblin)) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            final MagicPlayer player = permanent.getController();
+            final MagicSource source = damage.getSource();
+            return (damage.isCombat() && 
+                    damage.getTarget().isPlayer() &&
+                    source.getController() == player &&
+                    ((MagicPermanent)source).hasSubType(MagicSubType.Goblin)) ?
                 new MagicEvent(
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
                                 player + " may put a 1/1 black Goblin Rogue " +
-                                		"creature token onto the battlefield.",
+                                        "creature token onto the battlefield.",
                                 MagicSimpleMayChoice.PLAY_TOKEN,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
@@ -37,16 +37,16 @@ public class Boggart_Mob {
                         player + " may$ put a 1/1 black Goblin Rogue " +
                         "creature token onto the battlefield."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Goblin Rogue1")));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Goblin Rogue1")));
+            }
+        }
     };
 }

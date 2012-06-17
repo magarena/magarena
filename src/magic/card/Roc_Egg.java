@@ -12,26 +12,26 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Roc_Egg {
     public static final MagicWhenPutIntoGraveyardTrigger T = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-			final MagicPlayer player = permanent.getController();
-			return (MagicLocationType.Play == triggerData.fromLocation) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
+            final MagicPlayer player = permanent.getController();
+            return (MagicLocationType.Play == triggerData.fromLocation) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts a 3/3 white Bird creature token with flying onto the battlefield.") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Bird")));
-		}
+            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Bird")));
+        }
     };
 }

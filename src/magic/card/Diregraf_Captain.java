@@ -27,31 +27,31 @@ public class Diregraf_Captain {
     };
     
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPermanent otherPermanent) {
-			final MagicPlayer opponent = game.getOpponent(permanent.getController());
-			return (permanent != otherPermanent &&
-					otherPermanent.getController() == permanent.getController() &&
-					otherPermanent.isCreature() &&
-					otherPermanent.hasSubType(MagicSubType.Zombie)) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPermanent otherPermanent) {
+            final MagicPlayer opponent = game.getOpponent(permanent.getController());
+            return (permanent != otherPermanent &&
+                    otherPermanent.getController() == permanent.getController() &&
+                    otherPermanent.isCreature() &&
+                    otherPermanent.hasSubType(MagicSubType.Zombie)) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{opponent},
                     this,
                     opponent + " loses 1 life."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-1));
-		}
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-1));
+        }
     };
 }

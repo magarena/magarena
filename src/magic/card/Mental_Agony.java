@@ -13,38 +13,38 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Mental_Agony {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new Object[]{cardOnStack},
                     this,
                     "Target player$ discards two cards and loses 2 life.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.addEvent(new MagicDiscardEvent(
-                    		cardOnStack.getCard(),
-                    		player,
-                    		2,
-                    		false));
+                            cardOnStack.getCard(),
+                            player,
+                            2,
+                            false));
                     game.doAction(new MagicChangeLifeAction(player,-2));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

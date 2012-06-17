@@ -31,21 +31,21 @@ public class Goblin_Bushwhacker {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets = 
+            final Collection<MagicTarget> targets = 
                 game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				final MagicPermanent creature=(MagicPermanent)target;
-				game.doAction(new MagicChangeTurnPTAction(creature,1,0));
-				game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
-			}			
-		}
-	};
+            for (final MagicTarget target : targets) {
+                final MagicPermanent creature=(MagicPermanent)target;
+                game.doAction(new MagicChangeTurnPTAction(creature,1,0));
+                game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
+            }            
+        }
+    };
 
-	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     new MagicKickerChoice(MagicManaCost.RED,false),
@@ -54,29 +54,29 @@ public class Goblin_Bushwhacker {
                     "$Play " + card + ". If " + card + " was kicked$, " + 
                     "Creatures " + cardOnStack.getController() +
                     " controls get +1/+0 and gain haste until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final int kickerCount=(Integer)choiceResults[1];
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			if (kickerCount>0) {
-				final MagicPermanent permanent=action.getPermanent();
-				final MagicPlayer player=permanent.getController();
-				final MagicEvent triggerEvent=new MagicEvent(
+            final int kickerCount=(Integer)choiceResults[1];
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
+            game.doAction(action);
+            if (kickerCount>0) {
+                final MagicPermanent permanent=action.getPermanent();
+                final MagicPlayer player=permanent.getController();
+                final MagicEvent triggerEvent=new MagicEvent(
                         permanent,
                         player,
                         new Object[]{player},
                         KICKED,
                         "Creatures " + player +
                         " controls get +1/+0 and gain haste until end of turn.");
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
-			}
-		}
-	};
+                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+            }
+        }
+    };
 }

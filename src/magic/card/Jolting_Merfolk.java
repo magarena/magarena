@@ -13,13 +13,13 @@ import magic.model.event.MagicTiming;
 
 public class Jolting_Merfolk {
     public static final MagicPermanentActivation A = new MagicTapCreatureActivation(
-			new MagicCondition[]{MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicCondition[]{MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
         }
     };
 }

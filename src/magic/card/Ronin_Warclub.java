@@ -9,29 +9,29 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Ronin_Warclub {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player=permanent.getController();
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player=permanent.getController();
             return (otherPermanent.isCreature() && 
                     otherPermanent.getController()==player) ?
-				new MagicEvent(
+                new MagicEvent(
                         permanent,
                         player,
                         new Object[]{permanent,otherPermanent},
                         this,
                          "Attach " + permanent + " to " + otherPermanent + ".") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicAttachEquipmentAction(
-					(MagicPermanent)data[0],
-					(MagicPermanent)data[1]));
-		}
+            game.doAction(new MagicAttachEquipmentAction(
+                    (MagicPermanent)data[0],
+                    (MagicPermanent)data[1]));
+        }
     };
 }

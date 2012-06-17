@@ -17,11 +17,11 @@ import magic.model.trigger.MagicWhenLifeIsGainedTrigger;
 
 public class Searing_Meditation {
     public static final MagicWhenLifeIsGainedTrigger T = new MagicWhenLifeIsGainedTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object[] data) {
-			final MagicPlayer player = permanent.getController();
-			return (player == (MagicPlayer)data[0]) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object[] data) {
+            final MagicPlayer player = permanent.getController();
+            return (player == (MagicPlayer)data[0]) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -34,21 +34,21 @@ public class Searing_Meditation {
                     "You may$ pay {2}$. If you do, " + permanent + " deals 2 " +
                     "damage to target creature or player$."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTarget(game,choiceResults,2,new MagicTargetAction() {
-	                public void doAction(final MagicTarget target) {
-	                    final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,2,false);
-	                    game.doAction(new MagicDealDamageAction(damage));
-	                }
-				});
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTarget(game,choiceResults,2,new MagicTargetAction() {
+                    public void doAction(final MagicTarget target) {
+                        final MagicDamage damage = new MagicDamage((MagicPermanent)data[0],target,2,false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                });
             }
-		}
+        }
     };
 }

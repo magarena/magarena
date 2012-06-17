@@ -19,12 +19,12 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Into_the_Roil {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
             final MagicCard card=cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(
@@ -34,14 +34,14 @@ public class Into_the_Roil {
                     new Object[]{cardOnStack,player},
                     this,
                     "Return target nonland permanent$ to its owner's hand. If " + card + " was kicked$, draw a card.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
@@ -49,7 +49,7 @@ public class Into_the_Roil {
                         game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
                     }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

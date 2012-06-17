@@ -29,12 +29,12 @@ public class Pouncing_Wurm {
         }
     };
 
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.TWO_GREEN,false),
@@ -42,26 +42,26 @@ public class Pouncing_Wurm {
                     this,
                     "$Play " + card + ". If " + card + " was kicked$, " + 
                     "it enters the battlefield with three +1/+1 counters on it and with haste.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final boolean kicked = ((Integer)choiceResults[1]) > 0;
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			final MagicPermanent permanent = action.getPermanent();
-			if (kicked) {
-				game.doAction(new MagicChangeCountersAction(
-						permanent,
-	            		MagicCounterType.PlusOne,
-	            		3,
-	            		true));
+            final boolean kicked = ((Integer)choiceResults[1]) > 0;
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
+            game.doAction(action);
+            final MagicPermanent permanent = action.getPermanent();
+            if (kicked) {
+                game.doAction(new MagicChangeCountersAction(
+                        permanent,
+                        MagicCounterType.PlusOne,
+                        3,
+                        true));
                 game.doAction(new MagicAddStaticAction(permanent,Haste));
-			}
-		}
-	};
+            }
+        }
+    };
 }

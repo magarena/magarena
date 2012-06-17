@@ -13,10 +13,10 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Aura_Shards {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
-			return (otherPermanent.isCreature() && otherPermanent.getController() == player) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            return (otherPermanent.isCreature() && otherPermanent.getController() == player) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -27,22 +27,22 @@ public class Aura_Shards {
                         MagicEvent.NO_DATA,
                         this,
                         player + " may$ destroy target artifact or enchantment$."):
-	            MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+                MagicEvent.NONE;
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicDestroyAction(permanent));
                     }
                 });
-		    } 
+            } 
         }
     };
 }

@@ -16,10 +16,10 @@ import magic.model.trigger.MagicWhenBecomesTappedTrigger;
 
 public class Surgespanner {
     public static final MagicWhenBecomesTappedTrigger T = new MagicWhenBecomesTappedTrigger() {
-    	@Override
-    	public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-    		final MagicPlayer player = permanent.getController();
-    		return (permanent == data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
+            final MagicPlayer player = permanent.getController();
+            return (permanent == data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -33,20 +33,20 @@ public class Surgespanner {
                         "You may$ pay {1}{U}$. If you do, " +
                         "Return target permanent$ to its owner's hand.") :
                 MagicEvent.NONE;
-    	}
-    	@Override
-    	public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-    		if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-    			event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetPermanent(game,choiceResults,2,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                     }
-    			});
+                });
             }
-    	}
+        }
     };
 }

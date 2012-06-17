@@ -12,58 +12,58 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 
 public class Goblin_Marshal {
-	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-			return new MagicEvent(
+    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts two 1/1 red Goblin creature tokens onto the battlefield.");
-		}	
-		@Override
-		public void executeEvent(
+        }    
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(
-					player,
-					TokenCardDefinitions.get("Goblin1")));
-			game.doAction(new MagicPlayTokenAction(
-					player,
-					TokenCardDefinitions.get("Goblin1")));
-		}		
+            final MagicPlayer player = (MagicPlayer)data[0];
+            game.doAction(new MagicPlayTokenAction(
+                    player,
+                    TokenCardDefinitions.get("Goblin1")));
+            game.doAction(new MagicPlayTokenAction(
+                    player,
+                    TokenCardDefinitions.get("Goblin1")));
+        }        
     };
     
     public static final MagicWhenPutIntoGraveyardTrigger T3 = new MagicWhenPutIntoGraveyardTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
-			final MagicPlayer player = permanent.getController();
-			return (MagicLocationType.Play == triggerData.fromLocation) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicGraveyardTriggerData triggerData) {
+            final MagicPlayer player = permanent.getController();
+            return (MagicLocationType.Play == triggerData.fromLocation) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts two 1/1 red Goblin creature tokens onto the battlefield.") :
                 MagicEvent.NONE;
-		}	
-		@Override
-		public void executeEvent(
+        }    
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(
-					player,
-					TokenCardDefinitions.get("Goblin1")));
-			game.doAction(new MagicPlayTokenAction(
-					player,
-					TokenCardDefinitions.get("Goblin1")));
-		}
+            final MagicPlayer player = (MagicPlayer)data[0];
+            game.doAction(new MagicPlayTokenAction(
+                    player,
+                    TokenCardDefinitions.get("Goblin1")));
+            game.doAction(new MagicPlayTokenAction(
+                    player,
+                    TokenCardDefinitions.get("Goblin1")));
+        }
     };
 }

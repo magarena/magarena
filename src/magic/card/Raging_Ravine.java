@@ -29,101 +29,101 @@ import java.util.EnumSet;
 public class Raging_Ravine {
                         
     private static final MagicWhenAttacksTrigger CT = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
+        @Override
+        public MagicEvent executeTrigger(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent creature) {
-			return (permanent == creature && permanent.isCreature()) ?
-				new MagicEvent(
+            return (permanent == creature && permanent.isCreature()) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
                     "Put a +1/+1 counter on " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
+            game.doAction(new MagicChangeCountersAction(
                         (MagicPermanent)data[0],
                         MagicCounterType.PlusOne,
                         1,
                         true));
-		}
-	};
+        }
+    };
 
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void modPowerToughness(
+        @Override
+        public void modPowerToughness(
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-			pt.set(3,3);
-		}
+            pt.set(3,3);
+        }
     };
 
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-		@Override
-		public void modSubTypeFlags(
+        @Override
+        public void modSubTypeFlags(
                 final MagicPermanent permanent,
                 final EnumSet<MagicSubType> flags) {
             flags.add(MagicSubType.Elemental);
-		}
+        }
         @Override
-		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Creature.getMask();
-		}
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags|MagicType.Creature.getMask();
+        }
     };
 
     private static final MagicStatic C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
-		@Override
-		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-			return MagicColor.Red.getMask()|MagicColor.Green.getMask();
-		}		
-	};
+        @Override
+        public int getColorFlags(final MagicPermanent permanent,final int flags) {
+            return MagicColor.Red.getMask()|MagicColor.Green.getMask();
+        }        
+    };
 
-	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-					MagicManaCost.TWO_RED_GREEN.getCondition(),
+                    MagicManaCost.TWO_RED_GREEN.getCondition(),
                     MagicManaCost.ONE_RED_RED_GREEN_GREEN.getCondition())},
-			new MagicActivationHints(MagicTiming.Animate),
+            new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
                 new MagicPayManaCostEvent(source,source.getController(),
                 MagicManaCost.TWO_RED_GREEN)};
-		}
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			return new MagicEvent(
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Until end of turn, " + source + " becomes a 3/3 red and green Elemental creature with " + 
                     "\"Whenever this creature attacks, put a +1/+1 counter on it.\" It's still a land.");
-		}
+        }
 
-		@Override
+        @Override
         public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
-			game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST,C));
-			game.doAction(new MagicAddTurnTriggerAction(permanent,CT));
+            final MagicPermanent permanent=(MagicPermanent)data[0];
+            game.doAction(new MagicBecomesCreatureAction(permanent,PT,ST,C));
+            game.doAction(new MagicAddTurnTriggerAction(permanent,CT));
         }
     };
 }

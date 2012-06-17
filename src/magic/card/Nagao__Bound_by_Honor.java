@@ -12,11 +12,11 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Nagao__Bound_by_Honor {
-	public static final MagicWhenAttacksTrigger T3 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			final MagicPlayer player = creature.getController();
-			return (permanent == creature) ?
+    public static final MagicWhenAttacksTrigger T3 = new MagicWhenAttacksTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            final MagicPlayer player = creature.getController();
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -25,20 +25,20 @@ public class Nagao__Bound_by_Honor {
                         "Samurai creatures " + player +
                         " controls get +1/+1 until end of turn.") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets =
-					game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				final MagicPermanent creature = (MagicPermanent)target;
-					game.doAction(new MagicChangeTurnPTAction(creature,1,1));
-			}
-		}
+            final Collection<MagicTarget> targets =
+                    game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL);
+            for (final MagicTarget target : targets) {
+                final MagicPermanent creature = (MagicPermanent)target;
+                    game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+            }
+        }
     };
 }

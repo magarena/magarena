@@ -14,13 +14,13 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 
 public class Archangel_s_Light {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     new Object[]{cardOnStack,player},
@@ -28,26 +28,26 @@ public class Archangel_s_Light {
                     player + " gains 2 life for each card in his or her " +
                     "graveyard, then shuffles his or her graveyard into " +
                     "his or her library.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[1];
-			final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-			for (final MagicCard card : graveyard) {
-				game.doAction(new MagicChangeLifeAction(player,2));
-				game.doAction(new MagicRemoveCardAction(
-						card,
-						MagicLocationType.Graveyard));
-				game.doAction(new MagicMoveCardAction(
-						card,
-						MagicLocationType.Graveyard,
-						MagicLocationType.OwnersLibrary));			
-			}
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-		}
-	};
+            final MagicPlayer player = (MagicPlayer)data[1];
+            final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
+            for (final MagicCard card : graveyard) {
+                game.doAction(new MagicChangeLifeAction(player,2));
+                game.doAction(new MagicRemoveCardAction(
+                        card,
+                        MagicLocationType.Graveyard));
+                game.doAction(new MagicMoveCardAction(
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.OwnersLibrary));            
+            }
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+        }
+    };
 }

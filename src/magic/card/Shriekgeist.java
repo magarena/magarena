@@ -11,14 +11,14 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Shriekgeist {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicDamage damage) {
-			final MagicTarget target = damage.getTarget();
-			final MagicPlayer player = permanent.getController();
-			return (permanent == damage.getSource() && 
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicDamage damage) {
+            final MagicTarget target = damage.getTarget();
+            final MagicPlayer player = permanent.getController();
+            return (permanent == damage.getSource() && 
                     target.isPlayer() && 
                     damage.isCombat()) ?
                 new MagicEvent(
@@ -29,14 +29,14 @@ public class Shriekgeist {
                         target + " puts the top two cards of " +
                         "his or her library into his or her graveyard."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],2));
-		}
+            game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],2));
+        }
     };
 }

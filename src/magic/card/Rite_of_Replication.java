@@ -18,34 +18,34 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicCopyTargetPicker;
 
 public class Rite_of_Replication {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(
-				final MagicCardOnStack cardOnStack,
-				final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(
+                final MagicCardOnStack cardOnStack,
+                final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(
-                    		MagicTargetChoice.TARGET_CREATURE,
-                    		MagicManaCost.FIVE,
-                    		false),
-				    MagicCopyTargetPicker.create(),
+                            MagicTargetChoice.TARGET_CREATURE,
+                            MagicManaCost.FIVE,
+                            false),
+                    MagicCopyTargetPicker.create(),
                     new Object[]{cardOnStack,player},
                     this,
                     "Put a token onto the battlefield that's a copy of " +
                     "target creature$. If " + card + " was kicked$, put " +
                     "five of those tokens onto the battlefield instead.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     final MagicPlayer player = (MagicPlayer)data[1];
@@ -55,7 +55,7 @@ public class Rite_of_Replication {
                         game.doAction(new MagicPlayTokenAction(player,cardDefinition));
                     }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

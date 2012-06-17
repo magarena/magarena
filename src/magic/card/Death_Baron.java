@@ -10,31 +10,31 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
 public class Death_Baron {
-	public static final MagicStatic S = new MagicStatic(
-			MagicLayer.ModPT, 
-			MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.add(1,1);
-		}
-		@Override
-		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			return target.hasSubType(MagicSubType.Skeleton) || 
-					(source != target && target.hasSubType(MagicSubType.Zombie));
-		}
-	};
+    public static final MagicStatic S = new MagicStatic(
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1,1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Skeleton) || 
+                    (source != target && target.hasSubType(MagicSubType.Zombie));
+        }
+    };
     
     public static final MagicStatic S2 = new MagicStatic(
-    		MagicLayer.Ability, 
-    		MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
-    	@Override
-    	public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-    		return flags | MagicAbility.Deathtouch.getMask();
-    	}
-    	@Override
-    	public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		return target.hasSubType(MagicSubType.Skeleton) || 
-    				(source != target && target.hasSubType(MagicSubType.Zombie));
-    	}
+            MagicLayer.Ability, 
+            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return flags | MagicAbility.Deathtouch.getMask();
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Skeleton) || 
+                    (source != target && target.hasSubType(MagicSubType.Zombie));
+        }
     };
 }

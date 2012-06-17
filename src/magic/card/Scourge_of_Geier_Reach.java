@@ -8,11 +8,11 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
 public class Scourge_of_Geier_Reach {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			final int amount = game.getOpponent(permanent.getController()).getNrOfPermanentsWithType(MagicType.Creature);
-			pt.add(amount,amount);
-		}
-	};
+    public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final int amount = game.getOpponent(permanent.getController()).getNrOfPermanentsWithType(MagicType.Creature);
+            pt.add(amount,amount);
+        }
+    };
 }

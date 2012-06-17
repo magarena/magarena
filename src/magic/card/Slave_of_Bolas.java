@@ -19,11 +19,11 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicExileTargetPicker;
 
 public class Slave_of_Bolas {
-	public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent E = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.NEG_TARGET_CREATURE,
@@ -32,14 +32,14 @@ public class Slave_of_Bolas {
                     this,
                     "Gain control of target creature$. Untap that creature. " + 
                     "It gains haste until end of turn. Sacrifice it at end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicGainControlAction((MagicPlayer)data[1],creature));
@@ -47,7 +47,7 @@ public class Slave_of_Bolas {
                     game.doAction(new MagicSetAbilityAction(creature,MagicAbility.Haste));
                     game.doAction(new MagicChangeStateAction(creature,MagicPermanentState.SacrificeAtEndOfTurn,true));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

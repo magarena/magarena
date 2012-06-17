@@ -23,60 +23,60 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 
 public class Umezawa_s_Jitte {
-	// equipped creature gets +2/+2 until end of turn
-	public static final MagicPermanentActivation A1 = new MagicPermanentActivation( 
-			new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
+    // equipped creature gets +2/+2 until end of turn
+    public static final MagicPermanentActivation A1 = new MagicPermanentActivation( 
+            new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "+2/+2") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicSource equippedCreature = source.getEquippedCreature();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicSource equippedCreature = source.getEquippedCreature();
+            return new MagicEvent(
                     source,
                     source.getController(),
-				    new Object[]{equippedCreature},
+                    new Object[]{equippedCreature},
                     this,
                     equippedCreature + " gets +2/+2 until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
-		}
-	};
-	
-	// target creature gets -1/-1 until end of turn
-	public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
-			new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
+            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
+        }
+    };
+    
+    // target creature gets -1/-1 until end of turn
+    public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
+            new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
-				    MagicEvent.NO_DATA,
+                    MagicEvent.NO_DATA,
                     this,
                     "Target creature$ gets -1/-1 until end of turn.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -85,60 +85,60 @@ public class Umezawa_s_Jitte {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
                 }
-			});
-		}
-	};
-	
-	// you gain 2 life
-	public static final MagicPermanentActivation A3 = new MagicPermanentActivation( 
-			new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
-			new MagicActivationHints(MagicTiming.Pump),
-			"life + 2") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+            });
+        }
+    };
+    
+    // you gain 2 life
+    public static final MagicPermanentActivation A3 = new MagicPermanentActivation( 
+            new MagicCondition[] {MagicCondition.CHARGE_COUNTER_CONDITION},
+            new MagicActivationHints(MagicTiming.Pump),
+            "life + 2") {
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{player},
                     this,
                     player + " gains 2 life.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
-		}
-	};
-		
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+        }
+    };
+        
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			return (damage.getSource() == permanent.getEquippedCreature() &&
-					damage.isCombat()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            return (damage.getSource() == permanent.getEquippedCreature() &&
+                    damage.isCombat()) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
                     "Put two charge counters on " + permanent + ".") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
+            game.doAction(new MagicChangeCountersAction(
                     (MagicPermanent)data[0],
                     MagicCounterType.Charge,
                     2,

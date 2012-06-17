@@ -13,37 +13,37 @@ import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Karmic_Guide {
-	public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			return new MagicEvent(
+    public static final MagicWhenComesIntoPlayTrigger T2 = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
-	                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
                     new Object[]{player},
                     this,
                     "Return target creature card$ from " +
                     "your graveyard to the battlefield.");
-		}
-		
-		@Override
-		public void executeEvent(
-				final MagicGame game,
-				final MagicEvent event,
-				final Object data[],
-				final Object[] choiceResults) {
-			event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+        }
+        
+        @Override
+        public void executeEvent(
+                final MagicGame game,
+                final MagicEvent event,
+                final Object data[],
+                final Object[] choiceResults) {
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
-					game.doAction(new MagicReanimateAction(
-							(MagicPlayer)data[0],
-							targetCard,
-							MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(
+                            (MagicPlayer)data[0],
+                            targetCard,
+                            MagicPlayCardAction.NONE));
                 }
-			});
-		}
+            });
+        }
     };
 }

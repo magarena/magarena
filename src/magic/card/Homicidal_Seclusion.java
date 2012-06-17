@@ -14,13 +14,13 @@ public class Homicidal_Seclusion {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
-		public void modPowerToughness(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPowerToughness pt) {
-			if (permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1) {
-				pt.add(3,1);
-			}
+        public void modPowerToughness(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+            if (permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1) {
+                pt.add(3,1);
+            }
         }
     };
     
@@ -28,14 +28,14 @@ public class Homicidal_Seclusion {
             MagicLayer.Ability, 
             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
             @Override
-		public long getAbilityFlags(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final long flags) {
-    			if (permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1) {
-    				return flags | MagicAbility.LifeLink.getMask();
-    			}
-    			return flags;
+        public long getAbilityFlags(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final long flags) {
+                if (permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1) {
+                    return flags | MagicAbility.LifeLink.getMask();
+                }
+                return flags;
             }
         };
 }

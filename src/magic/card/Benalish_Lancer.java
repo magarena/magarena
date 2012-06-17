@@ -18,11 +18,11 @@ import magic.model.stack.MagicCardOnStack;
 
 public class Benalish_Lancer {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.TWO_WHITE,false),
@@ -31,28 +31,28 @@ public class Benalish_Lancer {
                     "$Play " + card + ". If " + card + " was kicked$, " +
                     "it enters the battlefield with two +1/+1 counters " +
                     "on it and with first strike.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final int kickerCount = (Integer)choiceResults[1];
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			if (kickerCount > 0) {
-				final MagicPermanent permanent = action.getPermanent();
-				game.doAction(new MagicChangeCountersAction(
-						permanent,
-	            		MagicCounterType.PlusOne,
-	            		2,
-	            		true));
-				game.doAction(new MagicSetAbilityAction(
-						permanent,
-						MagicAbility.FirstStrike));
-			}
-		}
-	};
+            final int kickerCount = (Integer)choiceResults[1];
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(cardOnStack);
+            game.doAction(action);
+            if (kickerCount > 0) {
+                final MagicPermanent permanent = action.getPermanent();
+                game.doAction(new MagicChangeCountersAction(
+                        permanent,
+                        MagicCounterType.PlusOne,
+                        2,
+                        true));
+                game.doAction(new MagicSetAbilityAction(
+                        permanent,
+                        MagicAbility.FirstStrike));
+            }
+        }
+    };
 }

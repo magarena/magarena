@@ -8,15 +8,15 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Sunspear_Shikari {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return permanent.isEquipped() ? 
+    public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return permanent.isEquipped() ? 
                 flags | 
                 MagicAbility.FirstStrike.getMask() |
                 MagicAbility.LifeLink.getMask()
                 :
                 flags;
-		}
-	};
+        }
+    };
 }

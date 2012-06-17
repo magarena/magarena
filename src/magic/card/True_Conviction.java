@@ -15,7 +15,7 @@ public class True_Conviction {
         public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
             return flags | 
                    MagicAbility.DoubleStrike.getMask() |
-		           MagicAbility.LifeLink.getMask();
+                   MagicAbility.LifeLink.getMask();
         }
     };
 }

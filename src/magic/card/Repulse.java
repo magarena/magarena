@@ -16,11 +16,11 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicBounceTargetPicker;
 
 public class Repulse {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CREATURE,
@@ -28,20 +28,20 @@ public class Repulse {
                     new Object[]{cardOnStack,player},
                     this,
                     "Return target creature$ to its owner's hand. Draw a card.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                 }
-			});
-			game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
-		}
-	};
+            });
+            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+        }
+    };
 }

@@ -20,75 +20,75 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Mikaeus__the_Lunarch {
-	public static final Object S = Primordial_Hydra.E;
-	
-	public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
+    public static final Object S = Primordial_Hydra.E;
+    
+    public static final MagicPermanentActivation A1 = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Add") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{player,source},
                     this,
                     "Put a +1/+1 counter on " + source + ".");
         }
-		
+        
         @Override
-		public void executeEvent(
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction((MagicPermanent)data[1],MagicCounterType.PlusOne,1,true));
         }
-	};
-	
-	public static final MagicPermanentActivation A2 = new MagicPermanentActivation( 
-			new MagicCondition[]{
-				MagicCondition.CAN_TAP_CONDITION,
+    };
+    
+    public static final MagicPermanentActivation A2 = new MagicPermanentActivation( 
+            new MagicCondition[]{
+                MagicCondition.CAN_TAP_CONDITION,
                 MagicCondition.PLUS_COUNTER_CONDITION,
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Remove") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicTapEvent((MagicPermanent)source),
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicTapEvent((MagicPermanent)source),
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.PlusOne,1)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Put a +1/+1 counter on each other creature you control.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent creature = (MagicPermanent)data[0];
-			final Collection<MagicTarget> targets =
+            final MagicPermanent creature = (MagicPermanent)data[0];
+            final Collection<MagicTarget> targets =
                 game.filterTargets(creature.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				if (target != creature) {
-					game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.PlusOne,1,true));
-				}
-			}
-		}
-	};
+            for (final MagicTarget target : targets) {
+                if (target != creature) {
+                    game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.PlusOne,1,true));
+                }
+            }
+        }
+    };
 }

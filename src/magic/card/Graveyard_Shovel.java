@@ -24,18 +24,18 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Graveyard_Shovel {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,MagicManaCost.TWO.getCondition()},
             new MagicActivationHints(MagicTiming.Main),
             "Exile") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.TWO)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.TWO)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     MagicTargetChoice.TARGET_PLAYER,
@@ -43,46 +43,46 @@ public class Graveyard_Shovel {
                     this,
                     "Target player$ exiles a card from his or her graveyard. " +
                     "If it's a creature card, " + player + " gains 2 life.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
-                	if (targetPlayer.getGraveyard().size() > 0) {
-                		final MagicPlayer player = (MagicPlayer)data[0];
-                		game.addEvent(new MagicEvent(
-                				(MagicSource)data[1],
-                				targetPlayer,
+                    if (targetPlayer.getGraveyard().size() > 0) {
+                        final MagicPlayer player = (MagicPlayer)data[0];
+                        game.addEvent(new MagicEvent(
+                                (MagicSource)data[1],
+                                targetPlayer,
                                 MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
                                 new MagicGraveyardTargetPicker(true),
                                 new Object[]{player},
                                 EVENT_ACTION,
                                 targetPlayer + " exiles a card$ from his or her graveyard."));
-                	}
+                    }
                 }
-			});
-		}
-		private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-	        @Override
-	        public void executeEvent(
-	                final MagicGame game,
-	                final MagicEvent event,
-	                final Object[] data,
-	                final Object[] choiceResults) {
-	        	event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
-	                public void doAction(final MagicCard card) {
-	                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-	                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-	                    if (card.getCardDefinition().isCreature()) {
-	                    	game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
-	                    }
-	                }
-				});
-	        }
-	    };
-	};
+            });
+        }
+        private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+            @Override
+            public void executeEvent(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final Object[] data,
+                    final Object[] choiceResults) {
+                event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                        if (card.getCardDefinition().isCreature()) {
+                            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+                        }
+                    }
+                });
+            }
+        };
+    };
 }

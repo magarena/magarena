@@ -11,31 +11,31 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Archon_of_Redemption {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player,permanent},
                     this,
                     player + " gains life equal to " + permanent + "'s power.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[1];
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
-		}		
+            final MagicPermanent permanent=(MagicPermanent)data[1];
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
+        }        
     };
 
     public static final MagicWhenOtherComesIntoPlayTrigger T2 = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player=permanent.getController();
-			return (otherPermanent!=permanent && 
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player=permanent.getController();
+            return (otherPermanent!=permanent && 
                     otherPermanent.getController()==player && 
                     otherPermanent.isCreature() &&
                     otherPermanent.hasAbility(MagicAbility.Flying)) ?
@@ -46,15 +46,15 @@ public class Archon_of_Redemption {
                         this,
                         player + " gains life equal to the power of "+otherPermanent+'.'):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[1];
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
-		}		
+            final MagicPermanent permanent=(MagicPermanent)data[1];
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],permanent.getPower()));
+        }        
     };
 }

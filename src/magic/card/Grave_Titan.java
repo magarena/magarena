@@ -11,32 +11,32 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Grave_Titan {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts two 2/2 black Zombie creature tokens onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
-		}		
+            final MagicPlayer player=(MagicPlayer)data[0];
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
+        }        
     };
 
     public static final MagicWhenAttacksTrigger T2 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player=permanent.getController();
-			return (permanent==creature) ?
+            return (permanent==creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -44,16 +44,16 @@ public class Grave_Titan {
                         this,
                         player + " puts two 2/2 black Zombie creature tokens onto the battlefield."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player=(MagicPlayer)data[0];
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
-			game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
-		}		
+            final MagicPlayer player=(MagicPlayer)data[0];
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
+            game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
+        }        
     };
 }

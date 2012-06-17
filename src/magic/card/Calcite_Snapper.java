@@ -13,11 +13,11 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Calcite_Snapper {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-			final MagicPlayer player = permanent.getController();
-			return (player == played.getController() && played.isLand()) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+            final MagicPlayer player = permanent.getController();
+            return (player == played.getController() && played.isLand()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -28,28 +28,28 @@ public class Calcite_Snapper {
                     player + " may$ switch " + permanent + "'s " +
                     "power and toughness until end of turn."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPermanent permanent = (MagicPermanent)data[0];
-				game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
-						MagicLayer.SwitchPT,
-						MagicStatic.UntilEOT) {
-					@Override
-					public void modPowerToughness(
-							final MagicGame game,
-							final MagicPermanent permanent,
-							final MagicPowerToughness pt) {
-						pt.set(pt.toughness(),pt.power());
-					}   
-				}));
-			}
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                final MagicPermanent permanent = (MagicPermanent)data[0];
+                game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
+                        MagicLayer.SwitchPT,
+                        MagicStatic.UntilEOT) {
+                    @Override
+                    public void modPowerToughness(
+                            final MagicGame game,
+                            final MagicPermanent permanent,
+                            final MagicPowerToughness pt) {
+                        pt.set(pt.toughness(),pt.power());
+                    }   
+                }));
+            }
+        }        
     };
 }

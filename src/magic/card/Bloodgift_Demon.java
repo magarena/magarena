@@ -12,10 +12,10 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Bloodgift_Demon {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player = permanent.getController();
-			return (player == data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player = permanent.getController();
+            return (player == data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -24,19 +24,19 @@ public class Bloodgift_Demon {
                         this,
                         "Target player$ draws a card and loses 1 life.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicDrawAction(player,1));
                     game.doAction(new MagicChangeLifeAction(player,-1));
                 }
-			});
-		}
+            });
+        }
     };
 }

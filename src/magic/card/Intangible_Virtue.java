@@ -20,11 +20,11 @@ public class Intangible_Virtue {
     };
     
     public static final MagicStatic S2 = new MagicStatic(
-    		MagicLayer.Ability, 
-    		MagicTargetFilter.TARGET_TOKEN_YOU_CONTROL) {
-    	@Override
-    	public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-    		return flags | MagicAbility.Vigilance.getMask();
-    	}
+            MagicLayer.Ability, 
+            MagicTargetFilter.TARGET_TOKEN_YOU_CONTROL) {
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return flags | MagicAbility.Vigilance.getMask();
+        }
     };
 }

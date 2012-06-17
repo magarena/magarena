@@ -9,23 +9,23 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Ichor_Rats {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     MagicEvent.NO_DATA,
                     this,
                     "Each player gets a poison counter.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangePoisonAction(game.getPlayer(0),1));
-			game.doAction(new MagicChangePoisonAction(game.getPlayer(1),1));
-		}
+            game.doAction(new MagicChangePoisonAction(game.getPlayer(0),1));
+            game.doAction(new MagicChangePoisonAction(game.getPlayer(1),1));
+        }
     };
 }

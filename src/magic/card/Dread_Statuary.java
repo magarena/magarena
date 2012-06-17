@@ -22,35 +22,35 @@ import java.util.EnumSet;
 
 public class Dread_Statuary {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.set(4,2);
-		}
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.set(4,2);
+        }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-		@Override
-		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-            flags.add(MagicSubType.Golem);
-		}
         @Override
-		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags |
-					MagicType.Artifact.getMask() |
-					MagicType.Creature.getMask();
-		}
+        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.add(MagicSubType.Golem);
+        }
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags |
+                    MagicType.Artifact.getMask() |
+                    MagicType.Creature.getMask();
+        }
     };
 
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicManaCost.FOUR.getCondition()},
-			new MagicActivationHints(MagicTiming.Animate),
+            new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FOUR)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.FOUR)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
@@ -58,14 +58,14 @@ public class Dread_Statuary {
                     "Until end of turn, " + source + 
                     " becomes a 4/2 Golem artifact creature. " + 
                     "It's still a land.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,ST));
-		}
-	};
+            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,ST));
+        }
+    };
 }

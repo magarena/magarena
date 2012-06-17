@@ -15,36 +15,36 @@ import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 
 public class Merfolk_Looter {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION,},
             new MagicActivationHints(MagicTiming.Draw),
             "Draw") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player=source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player=source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{player,source},
                     this,
                     player + " draws a card, then discards a card.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			game.doAction(new MagicDrawAction(player,1));
-			game.addEvent(new MagicDiscardEvent((MagicPermanent)data[1],player,1,false));
-		}
-	};
+            final MagicPlayer player = (MagicPlayer)data[0];
+            game.doAction(new MagicDrawAction(player,1));
+            game.addEvent(new MagicDiscardEvent((MagicPermanent)data[1],player,1,false));
+        }
+    };
 }

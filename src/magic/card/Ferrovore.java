@@ -17,40 +17,40 @@ import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.event.MagicTiming;
 
 public class Ferrovore {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-				MagicManaCost.RED.getCondition(),
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                MagicManaCost.RED.getCondition(),
                 MagicCondition.ONE_CREATURE_CONDITION,
                 MagicCondition.CONTROL_ARTIFACT_CONDITION
             },
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent[]{
-					new MagicPayManaCostEvent(source,player,MagicManaCost.RED),
-					new MagicSacrificePermanentEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent[]{
+                    new MagicPayManaCostEvent(source,player,MagicManaCost.RED),
+                    new MagicSacrificePermanentEvent(
                     source,
                     player,
                     MagicTargetChoice.SACRIFICE_ARTIFACT)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     source + " gets +3/+0 until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
-		}
-	};
+            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],3,0));
+        }
+    };
 }

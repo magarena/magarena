@@ -7,11 +7,11 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.mstatic.MagicCDA;
 
 public class Dauthi_Warlord {
-	public static final MagicCDA CDA = new MagicCDA() {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-			final int size = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW).size();
-			pt.setPower(size);
-		}
-	};
+    public static final MagicCDA CDA = new MagicCDA() {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+            final int size = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_WITH_SHADOW).size();
+            pt.setPower(size);
+        }
+    };
 }

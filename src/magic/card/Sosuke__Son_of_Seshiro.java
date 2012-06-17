@@ -14,44 +14,44 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Sosuke__Son_of_Seshiro {
-	public static final MagicStatic S = new MagicStatic(
-			MagicLayer.ModPT, 
-			MagicTargetFilter.TARGET_SNAKE_YOU_CONTROL) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.add(1,0);
-		}
-		@Override
-		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			return source != target;
-		}
-	};
-	    
+    public static final MagicStatic S = new MagicStatic(
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_SNAKE_YOU_CONTROL) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1,0);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
+        
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			return (damage.getSource().getController() == permanent.getController() &&
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            return (damage.getSource().getController() == permanent.getController() &&
                     damage.getSource().isPermanent() &&
-					((MagicPermanent)damage.getSource()).hasSubType(MagicSubType.Warrior) &&
+                    ((MagicPermanent)damage.getSource()).hasSubType(MagicSubType.Warrior) &&
                     damage.isCombat() &&
-					damage.getTarget().isPermanent() &&
-					((MagicPermanent)damage.getTarget()).isCreature()) ?
+                    damage.getTarget().isPermanent() &&
+                    ((MagicPermanent)damage.getTarget()).isCreature()) ?
                 new MagicEvent(
-                		damage.getSource(),
+                        damage.getSource(),
                         permanent.getController(),
                         new Object[]{damage.getTarget()},
                         this,
                         "Destroy " + damage.getTarget() + " at end of combat."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DestroyAtEndOfCombat,true));
+            game.doAction(new MagicChangeStateAction((MagicPermanent)data[0],MagicPermanentState.DestroyAtEndOfCombat,true));
         }
     };
 }

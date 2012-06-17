@@ -9,29 +9,29 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 
 public class Glaze_Fiend {
-	public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
+    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
             return (otherPermanent != permanent &&
-            		otherPermanent.isArtifact() &&
-            		otherPermanent.getController() == player) ?
-				new MagicEvent(
+                    otherPermanent.isArtifact() &&
+                    otherPermanent.getController() == player) ?
+                new MagicEvent(
                         permanent,
                         player,
                         new Object[]{permanent},
                         this,
                         permanent + " gets +2/+2 until end of turn") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
-		}
+            game.doAction(new MagicChangeTurnPTAction((MagicPermanent)data[0],2,2));
+        }
     };
 }

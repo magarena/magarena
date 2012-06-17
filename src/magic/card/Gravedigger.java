@@ -17,12 +17,12 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Gravedigger {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
-	                new MagicMayChoice(
+                    new MagicMayChoice(
                         player + " may return target creature card from " +
                         "his or her graveyard to his or her hand.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
@@ -31,18 +31,18 @@ public class Gravedigger {
                     this,
                     player + " may$ return target creature card$ from" +
                     " his or her graveyard to his or her hand.");
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
-				});
-			}
-		}
+                });
+            }
+        }
     };
 }

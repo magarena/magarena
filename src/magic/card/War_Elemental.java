@@ -14,41 +14,41 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class War_Elemental {
     public static final MagicWhenComesIntoPlayTrigger T1 = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			final MagicPlayer opponent = game.getOpponent(player);
-    		return (!opponent.hasState(MagicPlayerState.WasDealtDamage)) ?
-    			new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            final MagicPlayer opponent = game.getOpponent(player);
+            return (!opponent.hasState(MagicPlayerState.WasDealtDamage)) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     new Object[]{permanent},
                     this,
                     "Sacrifice " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
-		}
+            game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+        }
     };
     
     public static final MagicWhenDamageIsDealtTrigger T2 = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicDamage damage) {
-			final MagicPlayer player = permanent.getController();
-			final MagicPlayer opponent = game.getOpponent(player);
-			final int amount = damage.getDealtAmount();
-			return (damage.getTarget() == opponent) ?
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicDamage damage) {
+            final MagicPlayer player = permanent.getController();
+            final MagicPlayer opponent = game.getOpponent(player);
+            final int amount = damage.getDealtAmount();
+            return (damage.getTarget() == opponent) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -56,18 +56,18 @@ public class War_Elemental {
                         this,
                         player + " puts " + amount + " +1/+1 counters on " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeCountersAction(
-					(MagicPermanent)data[0],
-					MagicCounterType.PlusOne,
-					(Integer)data[1],
-					true));
-		}
+            game.doAction(new MagicChangeCountersAction(
+                    (MagicPermanent)data[0],
+                    MagicCounterType.PlusOne,
+                    (Integer)data[1],
+                    true));
+        }
     };
 }

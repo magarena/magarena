@@ -29,12 +29,12 @@ public class Lightkeeper_of_Emeria {
         }
     };
 
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
             final MagicCard card=cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.WHITE,true),
@@ -42,22 +42,22 @@ public class Lightkeeper_of_Emeria {
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " + 
                     player + " gains 2 life for each time it was kicked$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final int kickerCount=(Integer)choiceResults[1];
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			if (kickerCount>0) {
-				final MagicPermanent permanent=action.getPermanent();
-				final MagicPlayer player=permanent.getController();
-				final int life=kickerCount*2;
-				final MagicEvent triggerEvent=new MagicEvent(
+            final int kickerCount=(Integer)choiceResults[1];
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
+            game.doAction(action);
+            if (kickerCount>0) {
+                final MagicPermanent permanent=action.getPermanent();
+                final MagicPlayer player=permanent.getController();
+                final int life=kickerCount*2;
+                final MagicEvent triggerEvent=new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player,life},
@@ -65,7 +65,7 @@ public class Lightkeeper_of_Emeria {
                     player + " gains " + life + " life."
                 );
                 game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
-			}
-		}
-	};
+            }
+        }
+    };
 }

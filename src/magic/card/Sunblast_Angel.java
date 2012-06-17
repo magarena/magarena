@@ -13,26 +13,26 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import java.util.Collection;
 
 public class Sunblast_Angel {
-	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			
-			return new MagicEvent(
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     "Destroy all tapped creatures.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets =
+            final Collection<MagicTarget> targets =
                 game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_TAPPED_CREATURE);
-			game.doAction(new MagicDestroyAction(targets));
-		}
+            game.doAction(new MagicDestroyAction(targets));
+        }
     };
 }

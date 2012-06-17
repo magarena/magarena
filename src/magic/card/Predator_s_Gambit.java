@@ -9,23 +9,23 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 
 public class Predator_s_Gambit {
-	public static final MagicStatic S = new MagicStatic(
-			MagicLayer.Ability, 
-			MagicTargetFilter.TARGET_CREATURE) {
-		@Override
-		public long getAbilityFlags(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final long flags) {
-			return flags | MagicAbility.Intimidate.getMask();
-		}
-		@Override
-		public boolean condition(
-				final MagicGame game,
-				final MagicPermanent source,
-				final MagicPermanent target) {
-			return target == source.getEnchantedCreature() &&
-					source.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1;
-		}
-	};
+    public static final MagicStatic S = new MagicStatic(
+            MagicLayer.Ability, 
+            MagicTargetFilter.TARGET_CREATURE) {
+        @Override
+        public long getAbilityFlags(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final long flags) {
+            return flags | MagicAbility.Intimidate.getMask();
+        }
+        @Override
+        public boolean condition(
+                final MagicGame game,
+                final MagicPermanent source,
+                final MagicPermanent target) {
+            return target == source.getEnchantedCreature() &&
+                    source.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1;
+        }
+    };
 }

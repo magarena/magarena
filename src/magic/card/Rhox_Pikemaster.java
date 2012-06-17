@@ -16,9 +16,9 @@ public class Rhox_Pikemaster {
             return flags | MagicAbility.FirstStrike.getMask();
         }
         @Override
-    	public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-    		return source != target;
-    	}
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
     };
     
 }

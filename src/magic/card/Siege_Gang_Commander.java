@@ -24,21 +24,21 @@ import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Siege_Gang_Commander {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicManaCost.ONE_RED.getCondition(),MagicCondition.CONTROL_GOBLIN_CONDITION},
-			new MagicActivationHints(MagicTiming.Removal,true),
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicManaCost.ONE_RED.getCondition(),MagicCondition.CONTROL_GOBLIN_CONDITION},
+            new MagicActivationHints(MagicTiming.Removal,true),
             "Damage") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			final MagicPlayer player=source.getController();
-			return new MagicEvent[]{					
-				new MagicPayManaCostEvent(source,player,MagicManaCost.ONE_RED),
-				new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_GOBLIN)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            final MagicPlayer player=source.getController();
+            return new MagicEvent[]{                    
+                new MagicPayManaCostEvent(source,player,MagicManaCost.ONE_RED),
+                new MagicSacrificePermanentEvent(source,player,MagicTargetChoice.SACRIFICE_GOBLIN)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
@@ -46,9 +46,9 @@ public class Siege_Gang_Commander {
                     new Object[]{source},
                     this,
                     source + " deals 2 damage to target creature or player$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -58,30 +58,30 @@ public class Siege_Gang_Commander {
                     final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,2,false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-		}
-	};
-	
+            });
+        }
+    };
+    
     public static final MagicWhenComesIntoPlayTrigger T =new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts three 1/1 red Goblin creature tokens onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player=(MagicPlayer)data[0];
-			for (int count=3;count>0;count--) {
-				game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Goblin1")));
-			}
-		}		
+            final MagicPlayer player=(MagicPlayer)data[0];
+            for (int count=3;count>0;count--) {
+                game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Goblin1")));
+            }
+        }        
     };
 }

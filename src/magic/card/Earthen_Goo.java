@@ -8,11 +8,11 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Earthen_Goo {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			final int amount = permanent.getCounters(MagicCounterType.Charge);
-			pt.add(amount,amount);
-		}
+    public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final int amount = permanent.getCounters(MagicCounterType.Charge);
+            pt.add(amount,amount);
+        }
     };
 }

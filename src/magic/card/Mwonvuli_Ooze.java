@@ -8,15 +8,15 @@ import magic.model.MagicPowerToughness;
 import magic.model.mstatic.MagicCDA;
 
 public class Mwonvuli_Ooze {
-	public static final MagicCDA S = new MagicCDA() {
-		@Override
-		public void modPowerToughness(
+    public static final MagicCDA S = new MagicCDA() {
+        @Override
+        public void modPowerToughness(
                 final MagicGame game,
                 final MagicPlayer player,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-			final int amount = permanent.getCounters(MagicCounterType.Charge) * 2 + 1;
-			pt.set(amount,amount);
-		}
+            final int amount = permanent.getCounters(MagicCounterType.Charge) * 2 + 1;
+            pt.set(amount,amount);
+        }
     };
 }

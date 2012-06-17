@@ -25,59 +25,59 @@ import java.util.Collection;
 import java.util.EnumSet;
 
 public class Mirror_Entity {
-	public static final MagicPermanentActivation A  = new MagicPermanentActivation( 
-			new MagicCondition[]{MagicManaCost.X.getCondition()},
+    public static final MagicPermanentActivation A  = new MagicPermanentActivation( 
+            new MagicCondition[]{MagicManaCost.X.getCondition()},
             new MagicActivationHints(MagicTiming.Pump,true,1),
             "X/X") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-					new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X),
-					new MagicPlayAbilityEvent((MagicPermanent)source)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final int x=payedCost.getX();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                    new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.X),
+                    new MagicPlayAbilityEvent((MagicPermanent)source)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final int x=payedCost.getX();
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source,x},
                     this,
                     "Creatures " + source.getController() + " controls become "+
                     x+"/"+x+" and gain all creature types until end of turn.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
+            final MagicPermanent permanent=(MagicPermanent)data[0];
             final Integer X = (Integer)data[1];
-			final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-        		@Override
-        		public void modPowerToughness(
+            final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+                @Override
+                public void modPowerToughness(
                         final MagicGame game,
                         final MagicPermanent permanent,
                         final MagicPowerToughness pt) {
-		    	    pt.set(X,X);
-	        	}
+                    pt.set(X,X);
+                }
             };
             final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-		        @Override
-        		public void modSubTypeFlags(
+                @Override
+                public void modSubTypeFlags(
                         final MagicPermanent permanent,
                         final EnumSet<MagicSubType> flags) {
                     flags.addAll(MagicSubType.ALL_CREATURES);
-	            }
+                }
             };
-			final Collection<MagicTarget> creatures=game.filterTargets(
+            final Collection<MagicTarget> creatures=game.filterTargets(
                     permanent.getController(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget creature : creatures) {
-				game.doAction(new MagicBecomesCreatureAction((MagicPermanent)creature,PT,ST));
-			}
-			game.doAction(new MagicPlayAbilityAction(permanent));
-		}
-	};
+            for (final MagicTarget creature : creatures) {
+                game.doAction(new MagicBecomesCreatureAction((MagicPermanent)creature,PT,ST));
+            }
+            game.doAction(new MagicPlayAbilityAction(permanent));
+        }
+    };
 }

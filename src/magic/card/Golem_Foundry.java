@@ -23,63 +23,63 @@ import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 
 public class Golem_Foundry {
     public static final MagicWhenOtherSpellIsCastTrigger T = new MagicWhenOtherSpellIsCastTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
-			final MagicPlayer player = permanent.getController();
-			final MagicCard card = data.getCard();
-			return (card.getOwner() == player &&
-					data.getCardDefinition().isArtifact()) ?
-						new MagicEvent(
-							permanent,
-				            player,
-				            new MagicSimpleMayChoice(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack data) {
+            final MagicPlayer player = permanent.getController();
+            final MagicCard card = data.getCard();
+            return (card.getOwner() == player &&
+                    data.getCardDefinition().isArtifact()) ?
+                        new MagicEvent(
+                            permanent,
+                            player,
+                            new MagicSimpleMayChoice(
                                 player + " may put a charge counter on " + permanent + ".",
                                 MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-	                        new Object[]{permanent},
-	                        this,
-	                        player + " may$ put a charge counter on " + permanent + "."):
-				       MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+                            new Object[]{permanent},
+                            this,
+                            player + " may$ put a charge counter on " + permanent + "."):
+                       MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
-			}	
-		}		
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeCountersAction((MagicPermanent)data[0],MagicCounterType.Charge,1,true));
+            }    
+        }        
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
+            new MagicCondition[]{MagicCondition.THREE_CHARGE_COUNTERS_CONDITION},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player = source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,3)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player = source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts a 3/3 colorless Golem artifact creature token onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Golem3")));
-		}
-	};
+            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Golem3")));
+        }
+    };
 }

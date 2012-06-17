@@ -15,11 +15,11 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class Reclaim {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
@@ -27,14 +27,14 @@ public class Reclaim {
                     new Object[]{cardOnStack,player},
                     this,
                     "Put target card$ from your graveyard on top of your library.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
@@ -43,7 +43,7 @@ public class Reclaim {
                             MagicLocationType.Graveyard,
                             MagicLocationType.TopOfOwnersLibrary));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

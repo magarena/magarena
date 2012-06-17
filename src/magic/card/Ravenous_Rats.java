@@ -11,27 +11,27 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 public class Ravenous_Rats {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
             final MagicPlayer opponent = game.getOpponent(player);
-			return new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{permanent,opponent},
                     this,
                     opponent + " discards a card.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.addEvent(
-					new MagicDiscardEvent(
-							(MagicPermanent)data[0],
-							(MagicPlayer)data[1],
-							1,
-							false));
-		}		
+            game.addEvent(
+                    new MagicDiscardEvent(
+                            (MagicPermanent)data[0],
+                            (MagicPlayer)data[1],
+                            1,
+                            false));
+        }        
     };
 }

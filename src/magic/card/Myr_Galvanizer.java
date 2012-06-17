@@ -36,39 +36,39 @@ public class Myr_Galvanizer {
     };
     
     public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.ONE.getCondition()},
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Tapping),
             "Untap") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source,source.getController()},
                     this,
                     "Untap each other Myr you control.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			final Collection<MagicTarget> targets = game.filterTargets(
+            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final Collection<MagicTarget> targets = game.filterTargets(
                     (MagicPlayer)data[1],
                     MagicTargetFilter.TARGET_MYR_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				if (target != permanent) {
-					game.doAction(new MagicUntapAction((MagicPermanent)target));
-				}
-			}
-		}
-	};
+            for (final MagicTarget target : targets) {
+                if (target != permanent) {
+                    game.doAction(new MagicUntapAction((MagicPermanent)target));
+                }
+            }
+        }
+    };
 }

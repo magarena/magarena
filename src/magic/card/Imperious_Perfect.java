@@ -32,34 +32,34 @@ public class Imperious_Perfect {
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source != target;
         }
-    };	
-	
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION, MagicManaCost.GREEN.getCondition()},
+    };    
+    
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION, MagicManaCost.GREEN.getCondition()},
             new MagicActivationHints(MagicTiming.Token),
             "Token") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source), 
-				new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			final MagicPlayer player=source.getController();
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source), 
+                new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.GREEN)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final MagicPlayer player=source.getController();
+            return new MagicEvent(
                     source,
                     player,
                     new Object[]{player},
                     this,
                     player + " puts a 1/1 green Elf Warrior creature token onto the battlefield.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction((MagicPlayer) data[0], TokenCardDefinitions.get("Elf1")));			
-		}
-	};
+            game.doAction(new MagicPlayTokenAction((MagicPlayer) data[0], TokenCardDefinitions.get("Elf1")));            
+        }
+    };
 }

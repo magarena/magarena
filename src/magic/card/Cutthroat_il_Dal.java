@@ -7,11 +7,11 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Cutthroat_il_Dal {
-	public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return permanent.getController().getHandSize() == 0 ?
-				flags|MagicAbility.Shadow.getMask() : flags;
-		}
-	};
+    public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return permanent.getController().getHandSize() == 0 ?
+                flags|MagicAbility.Shadow.getMask() : flags;
+        }
+    };
 }

@@ -18,7 +18,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicTriggerOnStack;
 
 public class Wolfbriar_Elemental {
-	            		
+                        
     private static final MagicEventAction KICKED = new MagicEventAction() {
         @Override
         public void executeEvent(
@@ -37,12 +37,12 @@ public class Wolfbriar_Elemental {
         }
     };
 
-	public static final MagicSpellCardEvent E =new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player=cardOnStack.getController();
+    public static final MagicSpellCardEvent E =new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player=cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     new MagicKickerChoice(MagicManaCost.GREEN,true),
@@ -50,28 +50,28 @@ public class Wolfbriar_Elemental {
                     this,
                     "$Play " + card + ". When " + card + " enters the battlefield, " + 
                     "put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final int kickerCount=(Integer)choiceResults[1];
-			final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
-			final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
-			game.doAction(action);
-			if (kickerCount>0) {
-				final MagicPermanent permanent=action.getPermanent();
-				final MagicPlayer player=permanent.getController();
-				final MagicEvent triggerEvent=new MagicEvent(
+            final int kickerCount=(Integer)choiceResults[1];
+            final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
+            final MagicPlayCardFromStackAction action=new MagicPlayCardFromStackAction(cardOnStack);
+            game.doAction(action);
+            if (kickerCount>0) {
+                final MagicPermanent permanent=action.getPermanent();
+                final MagicPlayer player=permanent.getController();
+                final MagicEvent triggerEvent=new MagicEvent(
                         permanent,
                         player,
                         new Object[]{player,kickerCount},
                         KICKED,
                         "Put "+kickerCount+" 2/2 green Wolf creature tokens onto the battlefield.");
-				game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
-			}
-		}
-	};
+                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+            }
+        }
+    };
 }

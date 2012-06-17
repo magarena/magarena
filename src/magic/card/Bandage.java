@@ -15,11 +15,11 @@ import magic.model.target.MagicPreventTargetPicker;
 import magic.model.target.MagicTarget;
 
 public class Bandage {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
-			return new MagicEvent(
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
+            return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
@@ -28,21 +28,21 @@ public class Bandage {
                     this,
                     "Prevent the next 1 damage that would be dealt to target " +
                     "creature or player$ this turn. Draw a card.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
+            game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTarget(game,choiceResults,0,new MagicTargetAction() {
                 public void doAction(final MagicTarget target) {
-				    game.doAction(new MagicPreventDamageAction(target,1));
+                    game.doAction(new MagicPreventDamageAction(target,1));
                 }
-			});
-			game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
-		}
-	};
+            });
+            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+        }
+    };
 }

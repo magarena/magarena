@@ -17,21 +17,21 @@ import magic.model.event.MagicTiming;
 import magic.model.target.MagicTapTargetPicker;
 
 public class Icy_Manipulator {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.ONE.getCondition()},
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.ONE.getCondition()},
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
@@ -39,10 +39,10 @@ public class Icy_Manipulator {
                     MagicEvent.NO_DATA,
                     this,
                     "Tap target artifact, creature, or land$.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -51,7 +51,7 @@ public class Icy_Manipulator {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicTapAction(permanent,true));
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

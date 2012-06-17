@@ -24,52 +24,52 @@ import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 
 public class Lord_of_the_Undead {
-	public static final MagicStatic S = new MagicStatic(
-			MagicLayer.ModPT, 
-			MagicTargetFilter.TARGET_ZOMBIE) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.add(1,1);
-		}
-		@Override
-		public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-			return source != target;
-		}
-	};
-	    
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
-					MagicCondition.CAN_TAP_CONDITION,
-					MagicManaCost.ONE_BLACK.getCondition()},
+    public static final MagicStatic S = new MagicStatic(
+            MagicLayer.ModPT, 
+            MagicTargetFilter.TARGET_ZOMBIE) {
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.add(1,1);
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return source != target;
+        }
+    };
+        
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
+                    MagicCondition.CAN_TAP_CONDITION,
+                    MagicManaCost.ONE_BLACK.getCondition()},
             new MagicActivationHints(MagicTiming.FirstMain),
             "Return") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLACK)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostTapEvent(source,source.getController(),MagicManaCost.ONE_BLACK)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.TARGET_ZOMBIE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
                     MagicEvent.NO_DATA,
                     this,
-					"Return target Zombie card$ from your graveyard to your hand.");
-		}
-		@Override
-		public void executeEvent(
+                    "Return target Zombie card$ from your graveyard to your hand.");
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
-				public void doAction(final MagicCard card) {
-					game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-					game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-				}
-			});
-		}
-	};
+            event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                }
+            });
+        }
+    };
 }

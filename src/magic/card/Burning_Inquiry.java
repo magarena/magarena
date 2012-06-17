@@ -36,7 +36,7 @@ public class Burning_Inquiry {
             final Object[] data,
             final Object[] choiceResults)
         {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
 
             game.doAction(new MagicMoveCardAction(cardOnStack));
 

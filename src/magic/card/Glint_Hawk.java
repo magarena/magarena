@@ -15,9 +15,9 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Glint_Hawk {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicMayChoice(
@@ -28,23 +28,23 @@ public class Glint_Hawk {
                     this,
                     "You may$ return an artifact you control to its owner's hand. " +
                     "If you don't, sacrifice " + permanent + ".");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isNoChoice(choiceResults[0])) {
-				game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
-			}
-			else {
-				event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
-	                public void doAction(final MagicPermanent creature) {
-	                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
-	                }
-				});
-			}
-		}
+            if (MagicMayChoice.isNoChoice(choiceResults[0])) {
+                game.doAction(new MagicSacrificeAction((MagicPermanent)data[0]));
+            }
+            else {
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+                    }
+                });
+            }
+        }
     };
 }

@@ -21,12 +21,12 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
 public class Aggravate {
-	public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
-		@Override
-		public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-			final MagicPlayer player = cardOnStack.getController();
+    public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicPlayer player = cardOnStack.getController();
             final MagicCard card = cardOnStack.getCard();
-			return new MagicEvent(
+            return new MagicEvent(
                     card,
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
@@ -35,35 +35,35 @@ public class Aggravate {
                     card + " deals 1 damage to each creature target player$ " +
                     "controls. Each creature dealt damage this way attacks " +
                     "this turn if able.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
-			game.doAction(new MagicMoveCardAction(cardOnStack));			
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+            final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+            game.doAction(new MagicMoveCardAction(cardOnStack));            
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer targetPlayer) {
-                	final Collection<MagicTarget> targets = game.filterTargets(
-                			targetPlayer,
-                			MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                	for (final MagicTarget target : targets) {
-						final MagicDamage damage = new MagicDamage(
-								cardOnStack.getCard(),
-								target,
-								1,
-								false);
-						game.doAction(new MagicDealDamageAction(damage));
-						if (damage.getDealtAmount() > 0) {
-							game.doAction(new MagicSetAbilityAction(
-									(MagicPermanent)target,
-									MagicAbility.AttacksEachTurnIfAble));
-						}
-                	}
+                    final Collection<MagicTarget> targets = game.filterTargets(
+                            targetPlayer,
+                            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    for (final MagicTarget target : targets) {
+                        final MagicDamage damage = new MagicDamage(
+                                cardOnStack.getCard(),
+                                target,
+                                1,
+                                false);
+                        game.doAction(new MagicDealDamageAction(damage));
+                        if (damage.getDealtAmount() > 0) {
+                            game.doAction(new MagicSetAbilityAction(
+                                    (MagicPermanent)target,
+                                    MagicAbility.AttacksEachTurnIfAble));
+                        }
+                    }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

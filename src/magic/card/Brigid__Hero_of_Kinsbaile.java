@@ -21,30 +21,30 @@ import magic.model.target.MagicTargetFilter;
 import java.util.Collection;
 
 public class Brigid__Hero_of_Kinsbaile {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Block),
             "Damage") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-				    new Object[]{source},
+                    new Object[]{source},
                     this,
                     source + " deals 2 damage to each attacking or blocking creature target player$ controls.");
-		}
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     final MagicSource source=(MagicSource)data[0];
                     final Collection<MagicTarget> targets=
@@ -54,7 +54,7 @@ public class Brigid__Hero_of_Kinsbaile {
                         game.doAction(new MagicDealDamageAction(damage));
                     }
                 }
-			});
-		}
-	};
+            });
+        }
+    };
 }

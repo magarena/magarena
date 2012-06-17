@@ -12,12 +12,12 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Perimeter_Captain {
     public static final MagicWhenBlocksTrigger T = new MagicWhenBlocksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			final MagicPlayer player=permanent.getController();
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            final MagicPlayer player=permanent.getController();
             return (creature.getController() == player &&
                     creature.hasAbility(MagicAbility.Defender)) ?
-                    		new MagicEvent(
+                            new MagicEvent(
                                     permanent,
                                     player,
                                     new MagicSimpleMayChoice(
@@ -29,17 +29,17 @@ public class Perimeter_Captain {
                                     this,
                                     player + " may$ gain 2 life.") :
                                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+            }
+        }
     };
 }

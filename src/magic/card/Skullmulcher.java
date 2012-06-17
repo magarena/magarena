@@ -20,60 +20,60 @@ import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Skullmulcher {
-	private static void drawCards(final MagicGame game,final MagicPermanent permanent) {
-		if (permanent.hasCounters()) {
-			game.doAction(
-				new MagicDrawAction(
-						permanent.getController(),
-						permanent.getCounters(
-						MagicCounterType.PlusOne)));
-		}
-	}
-	
-	public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-					MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
-			final MagicTargetChoice targetChoice=new MagicTargetChoice(
-					targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");
-			final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+permanent+".",targetChoice);
-			if (player.getNrOfPermanentsWithType(MagicType.Creature)>1) {
-					return new MagicEvent(
-							permanent,
-							player,
-							devourChoice,
-							MagicSacrificeTargetPicker.create(),
-							new Object[]{permanent},
-							this,
-							"You may$ sacrifice a creature$ to "+permanent+".");
-			}
-			drawCards(game,permanent);
-			return MagicEvent.NONE;
-		}
+    private static void drawCards(final MagicGame game,final MagicPermanent permanent) {
+        if (permanent.hasCounters()) {
+            game.doAction(
+                new MagicDrawAction(
+                        permanent.getController(),
+                        permanent.getCounters(
+                        MagicCounterType.PlusOne)));
+        }
+    }
+    
+    public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            final MagicTargetFilter targetFilter=new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,permanent);
+            final MagicTargetChoice targetChoice=new MagicTargetChoice(
+                    targetFilter,false,MagicTargetHint.None,"a creature other than "+permanent+" to sacrifice");
+            final MagicChoice devourChoice=new MagicMayChoice("You may sacrifice a creature to "+permanent+".",targetChoice);
+            if (player.getNrOfPermanentsWithType(MagicType.Creature)>1) {
+                    return new MagicEvent(
+                            permanent,
+                            player,
+                            devourChoice,
+                            MagicSacrificeTargetPicker.create(),
+                            new Object[]{permanent},
+                            this,
+                            "You may$ sacrifice a creature$ to "+permanent+".");
+            }
+            drawCards(game,permanent);
+            return MagicEvent.NONE;
+        }
 
-		@Override
-		public boolean usesStack() {
-			return false;
-		}
+        @Override
+        public boolean usesStack() {
+            return false;
+        }
 
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
-			final MagicPermanent permanent=(MagicPermanent)data[0];
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
-					public void doAction(final MagicPermanent creature) {
-						game.doAction(new MagicSacrificeAction(creature));
-						game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,1,true));
-						final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
-						if (newEvent.isValid()) {
-							game.doAction(new MagicAddEventAction(newEvent));
-						}
-					}
-				});
-			} else {
-				drawCards(game,permanent);
-			}
-		}
-	};
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
+            final MagicPermanent permanent=(MagicPermanent)data[0];
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicSacrificeAction(creature));
+                        game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,1,true));
+                        final MagicEvent newEvent=executeTrigger(game,permanent,permanent.getController());
+                        if (newEvent.isValid()) {
+                            game.doAction(new MagicAddEventAction(newEvent));
+                        }
+                    }
+                });
+            } else {
+                drawCards(game,permanent);
+            }
+        }
+    };
 }

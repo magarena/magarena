@@ -16,13 +16,13 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Restoration_Angel {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer player) {
-			return new MagicEvent(
-					permanent,
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer player) {
+            return new MagicEvent(
+                    permanent,
                     player,
                     new MagicMayChoice(
                             "You may exile target non-Angel creature you control.",
@@ -32,29 +32,29 @@ public class Restoration_Angel {
                     this,
                     "You may$ exile target non-Angel creature$ you control, then return " +
                     "that card to the battlefield under your control.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
-					public void doAction(final MagicPermanent creature) {
-						game.doAction(new MagicRemoveFromPlayAction(
-								creature,
-								MagicLocationType.Exile));
-						game.doAction(new MagicRemoveCardAction(
-								creature.getCard(),
-								MagicLocationType.Exile));
-						game.doAction(new MagicPlayCardAction(
-								creature.getCard(),
-								event.getPlayer(),
-								MagicPlayCardAction.NONE));
-					}
-				});
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicRemoveFromPlayAction(
+                                creature,
+                                MagicLocationType.Exile));
+                        game.doAction(new MagicRemoveCardAction(
+                                creature.getCard(),
+                                MagicLocationType.Exile));
+                        game.doAction(new MagicPlayCardAction(
+                                creature.getCard(),
+                                event.getPlayer(),
+                                MagicPlayCardAction.NONE));
+                    }
+                });
+            }
+        }
     };
 }

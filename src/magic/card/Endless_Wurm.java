@@ -12,10 +12,10 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Endless_Wurm {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player = permanent.getController();
-			return (player == data) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player = permanent.getController();
+            return (player == data) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -23,21 +23,21 @@ public class Endless_Wurm {
                         this,
                         "Sacrifice " + permanent + " unless you sacrifice an enchantment."):
                 MagicEvent.NONE;
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			final MagicPlayer player = (MagicPlayer)data[1];
-			if (player.controlsPermanentWithType(MagicType.Enchantment)) {
-				game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_ENCHANTMENT));
-			} else {
-				game.doAction(new MagicSacrificeAction(permanent));				
-			}			
-		}
+            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPlayer player = (MagicPlayer)data[1];
+            if (player.controlsPermanentWithType(MagicType.Enchantment)) {
+                game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_ENCHANTMENT));
+            } else {
+                game.doAction(new MagicSacrificeAction(permanent));                
+            }            
+        }
     };
 }

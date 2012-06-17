@@ -10,15 +10,15 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Commander_s_Authority {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer data) {
-			final MagicPermanent enchanted = permanent.getEnchantedCreature();
-		    final MagicPlayer controller = enchanted.getController();
-			return (controller == data) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer data) {
+            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            final MagicPlayer controller = enchanted.getController();
+            return (controller == data) ?
+                new MagicEvent(
                         enchanted,
                         controller,
                         new Object[]{controller},
@@ -26,16 +26,16 @@ public class Commander_s_Authority {
                         controller + " puts a 1/1 white Human " +
                         "creature token onto the battlefield.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicPlayTokenAction(
-					(MagicPlayer)data[0],
-					TokenCardDefinitions.get("Human1")));
-		}
+            game.doAction(new MagicPlayTokenAction(
+                    (MagicPlayer)data[0],
+                    TokenCardDefinitions.get("Human1")));
+        }
     };
 }

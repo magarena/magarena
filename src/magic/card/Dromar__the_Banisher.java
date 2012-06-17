@@ -21,10 +21,10 @@ import java.util.Collection;
 
 public class Dromar__the_Banisher {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
-			return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.getSource()==permanent&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -37,21 +37,21 @@ public class Dromar__the_Banisher {
                         "You may$ pay {2}{U}$. If you do, choose a color$. " + 
                         "Return all creatures of that color to their owner's hand."):
                  MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicColor color=(MagicColor)choiceResults[2];
-				final Collection<MagicTarget> targets=
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                final MagicColor color=(MagicColor)choiceResults[2];
+                final Collection<MagicTarget> targets=
                     game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE);
-				for (final MagicTarget target : targets) {
-					final MagicPermanent creature=(MagicPermanent)target;
-					if (color.hasColor(creature.getColorFlags())) {
-						game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
-					}
-				}
-			}			
-		}
+                for (final MagicTarget target : targets) {
+                    final MagicPermanent creature=(MagicPermanent)target;
+                    if (color.hasColor(creature.getColorFlags())) {
+                        game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+                    }
+                }
+            }            
+        }
     };
 }

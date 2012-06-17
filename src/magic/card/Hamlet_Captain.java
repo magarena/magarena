@@ -15,9 +15,9 @@ import magic.model.trigger.MagicWhenBlocksTrigger;
 
 public class Hamlet_Captain {
     public static final MagicWhenAttacksTrigger T1 = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			return (permanent == creature) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -26,28 +26,28 @@ public class Hamlet_Captain {
                         "Other Human creatures " + permanent.getController() +
                         " controls get +1/+1 until end of turn."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets =
-	            game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				final MagicPermanent creature = (MagicPermanent)target;
-				if (creature != (MagicPermanent)data[0]) {
-					game.doAction(new MagicChangeTurnPTAction(creature,1,1));
-				}
-			}
-		}
+            final Collection<MagicTarget> targets =
+                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
+            for (final MagicTarget target : targets) {
+                final MagicPermanent creature = (MagicPermanent)target;
+                if (creature != (MagicPermanent)data[0]) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+                }
+            }
+        }
     };
     
     public static final MagicWhenBlocksTrigger T2 = new MagicWhenBlocksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-			return (permanent == creature) ?
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -56,21 +56,21 @@ public class Hamlet_Captain {
                         "Other Human creatures " + permanent.getController() +
                         " controls get +1/+1 until end of turn."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final Collection<MagicTarget> targets =
-	            game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				final MagicPermanent creature = (MagicPermanent)target;
-				if (creature != (MagicPermanent)data[0]) {
-					game.doAction(new MagicChangeTurnPTAction(creature,1,1));
-				}
-			}
-		}
+            final Collection<MagicTarget> targets =
+                game.filterTargets((MagicPlayer)data[1],MagicTargetFilter.TARGET_HUMAN_YOU_CONTROL);
+            for (final MagicTarget target : targets) {
+                final MagicPermanent creature = (MagicPermanent)target;
+                if (creature != (MagicPermanent)data[0]) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+                }
+            }
+        }
     };
 }

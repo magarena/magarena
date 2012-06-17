@@ -14,10 +14,10 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Geist_of_Saint_Traft {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == creature) ?
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -27,18 +27,18 @@ public class Geist_of_Saint_Traft {
                         "flying onto the battlefield tapped and attacking. " +
                         "Exile that token at end of combat."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
-			final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING);
-			game.doAction(action);
-			game.doAction(new MagicChangeStateAction(action.getPermanent(),MagicPermanentState.ExileAtEndOfCombat,true));
-		}		
+            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
+            final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING);
+            game.doAction(action);
+            game.doAction(new MagicChangeStateAction(action.getPermanent(),MagicPermanentState.ExileAtEndOfCombat,true));
+        }        
     };
 }

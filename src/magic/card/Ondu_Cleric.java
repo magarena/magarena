@@ -12,17 +12,17 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 
 public class Ondu_Cleric {
     public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			final MagicPlayer player = permanent.getController();
-			return (otherPermanent.getController() == player &&
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final MagicPlayer player = permanent.getController();
+            return (otherPermanent.getController() == player &&
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                        		player + " may gain life equal to " +
-                        		"the number of Allies he or she controls.",
+                                player + " may gain life equal to " +
+                                "the number of Allies he or she controls.",
                                 MagicSimpleMayChoice.GAIN_LIFE,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
@@ -31,22 +31,22 @@ public class Ondu_Cleric {
                         player + " may$ gain life equal to " +
                         "the number of Allies he or she controls.") :
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				final MagicPlayer player = (MagicPlayer)data[0];
-				final int amount =
-            			player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                final MagicPlayer player = (MagicPlayer)data[0];
+                final int amount =
+                        player.getNrOfPermanentsWithSubType(MagicSubType.Ally);
                 if (amount > 0) {
-                	game.doAction(new MagicChangeLifeAction(player,amount));
+                    game.doAction(new MagicChangeLifeAction(player,amount));
                 }
-			}			
-		}		
+            }            
+        }        
     };
 }

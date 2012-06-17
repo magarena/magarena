@@ -25,47 +25,47 @@ import java.util.EnumSet;
 
 public class Faerie_Conclave {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
-		@Override
-		public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-			pt.set(2,1);
-		}
+        @Override
+        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            pt.set(2,1);
+        }
     };
     private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
-		@Override
-		public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-			return flags|MagicAbility.Flying.getMask();
-		}
+        @Override
+        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+            return flags|MagicAbility.Flying.getMask();
+        }
     };
     private static final MagicStatic ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-		@Override
-		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-            flags.add(MagicSubType.Faerie);
-		}
         @Override
-		public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-			return flags|MagicType.Creature.getMask();
-		}
+        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.add(MagicSubType.Faerie);
+        }
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags|MagicType.Creature.getMask();
+        }
     };
     private static final MagicStatic C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
-		@Override
-		public int getColorFlags(final MagicPermanent permanent,final int flags) {
-			return MagicColor.Blue.getMask();
-		}		
-	};
+        @Override
+        public int getColorFlags(final MagicPermanent permanent,final int flags) {
+            return MagicColor.Blue.getMask();
+        }        
+    };
 
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{new MagicArtificialCondition(
-			    MagicManaCost.ONE_BLUE.getCondition(),
+                MagicManaCost.ONE_BLUE.getCondition(),
                 MagicManaCost.BLUE_BLUE.getCondition())},
-			new MagicActivationHints(MagicTiming.Animate),
+            new MagicActivationHints(MagicTiming.Animate),
             "Animate") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.ONE_BLUE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
@@ -73,14 +73,14 @@ public class Faerie_Conclave {
                     "Until end of turn, " + source + 
                     " becomes a 2/1 blue Faerie creature with flying. " + 
                     "It's still a land.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
-		}
-	};
+            game.doAction(new MagicBecomesCreatureAction((MagicPermanent)data[0],PT,AB,ST,C));
+        }
+    };
 }

@@ -12,11 +12,11 @@ import magic.model.trigger.MagicWhenOtherPutIntoGraveyardFromPlayTrigger;
 
 public class Blowfly_Infestation {
     public static final MagicWhenOtherPutIntoGraveyardFromPlayTrigger T = new MagicWhenOtherPutIntoGraveyardFromPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-			return (otherPermanent.isCreature() &&
-					otherPermanent.getCounters(MagicCounterType.MinusOne) > 0) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            return (otherPermanent.isCreature() &&
+                    otherPermanent.getCounters(MagicCounterType.MinusOne) > 0) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     MagicTargetChoice.TARGET_CREATURE,
@@ -25,9 +25,9 @@ public class Blowfly_Infestation {
                     this,
                     "Put a -1/-1 counter on target creature$."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -36,7 +36,7 @@ public class Blowfly_Infestation {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.MinusOne,1,true));
                 }
-			});
-		}
+            });
+        }
     };
 }

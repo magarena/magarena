@@ -26,21 +26,21 @@ import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Seance {
-	private static final MagicStatic Spirit = new MagicStatic(MagicLayer.Type) {
-		@Override
-		public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
-			flags.add(MagicSubType.Spirit);
-		}
-	};
+    private static final MagicStatic Spirit = new MagicStatic(MagicLayer.Type) {
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {
+            flags.add(MagicSubType.Spirit);
+        }
+    };
    
-	public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(
-				final MagicGame game,
-				final MagicPermanent permanent,
-				final MagicPlayer data) {
-			final MagicPlayer player = permanent.getController();
-		    return new MagicEvent(
+    public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(
+                final MagicGame game,
+                final MagicPermanent permanent,
+                final MagicPlayer data) {
+            final MagicPlayer player = permanent.getController();
+            return new MagicEvent(
                 permanent,
                 player,
                 new MagicMayChoice(
@@ -53,38 +53,38 @@ public class Seance {
                 "If he or she does, put a token onto the battlefield that's a copy " +
                 "of that card except it's a Spirit in addition to its other types. " +
                 "Exile it at the beginning of the next end step.");
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
-	                public void doAction(final MagicCard card) {
-	                    final MagicPlayer player=(MagicPlayer)data[0];
-	                    game.doAction(new MagicRemoveCardAction(
-	                    		card,
-	                    		MagicLocationType.Graveyard));
-	                    game.doAction(new MagicMoveCardAction(
-	                    		card,
-	                    		MagicLocationType.Graveyard,
-	                    		MagicLocationType.Exile));
-	                    final MagicAction action = new MagicPlayTokenAction(
-	                    		player,
-	                    		card.getCardDefinition());
-	                    game.doAction(action);
-	                    final MagicPermanent permanent = ((MagicPutIntoPlayAction)action).getPermanent();
-	                    game.doAction(new MagicChangeStateAction(
-	        					permanent,
-	        					MagicPermanentState.SacrificeAtEndOfTurn,
-	        					true));
-	                    game.doAction(new MagicAddStaticAction(permanent,Spirit));
-	                }
-				});
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        final MagicPlayer player=(MagicPlayer)data[0];
+                        game.doAction(new MagicRemoveCardAction(
+                                card,
+                                MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(
+                                card,
+                                MagicLocationType.Graveyard,
+                                MagicLocationType.Exile));
+                        final MagicAction action = new MagicPlayTokenAction(
+                                player,
+                                card.getCardDefinition());
+                        game.doAction(action);
+                        final MagicPermanent permanent = ((MagicPutIntoPlayAction)action).getPermanent();
+                        game.doAction(new MagicChangeStateAction(
+                                permanent,
+                                MagicPermanentState.SacrificeAtEndOfTurn,
+                                true));
+                        game.doAction(new MagicAddStaticAction(permanent,Spirit));
+                    }
+                });
+            }
+        }
     };
 }

@@ -12,11 +12,11 @@ import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 public class Wall_of_Reverence {
     public static final MagicAtEndOfTurnTrigger T = new MagicAtEndOfTurnTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player=permanent.getController();
-			return (player==data) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player=permanent.getController();
+            return (player==data) ?
+                new MagicEvent(
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
@@ -25,9 +25,9 @@ public class Wall_of_Reverence {
                     this,
                     player + " gains life equal to the power of target creature$ he or she controls."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -36,7 +36,7 @@ public class Wall_of_Reverence {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],creature.getPower()));
                 }
-			});
-		}
+            });
+        }
     };
 }

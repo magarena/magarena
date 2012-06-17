@@ -11,7 +11,7 @@ import magic.model.target.MagicTargetFilter;
 public class Lord_of_the_Unreal {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.ModPT, 
-	    MagicTargetFilter.TARGET_ILLUSION_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_ILLUSION_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);

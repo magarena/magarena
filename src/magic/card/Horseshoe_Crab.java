@@ -15,33 +15,33 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTiming;
 
 public class Horseshoe_Crab {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
-			new MagicCondition[]{
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
+            new MagicCondition[]{
                 MagicCondition.TAPPED_CONDITION,
                 MagicManaCost.BLUE.getCondition(),
                 new MagicSingleActivationCondition()},
-			new MagicActivationHints(MagicTiming.Tapping),
+            new MagicActivationHints(MagicTiming.Tapping),
             "Untap") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLUE)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),MagicManaCost.BLUE)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source},
                     this,
                     "Untap " + source + ".");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
-		}
-	};
+            game.doAction(new MagicUntapAction((MagicPermanent)data[0]));
+        }
+    };
 }

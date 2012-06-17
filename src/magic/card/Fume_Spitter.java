@@ -11,13 +11,13 @@ import magic.model.event.MagicTiming;
 import magic.model.event.MagicWeakenCreatureActivation;
 
 public class Fume_Spitter {
-	public static final MagicPermanentActivation A1 = new MagicWeakenCreatureActivation(
+    public static final MagicPermanentActivation A1 = new MagicWeakenCreatureActivation(
             MagicActivation.NO_COND,
             new MagicActivationHints(MagicTiming.Removal),
             "-1/-1") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
-		}
-	};
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicSacrificeEvent((MagicPermanent)source)};
+        }
+    };
 }

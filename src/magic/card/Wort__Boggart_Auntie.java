@@ -17,11 +17,11 @@ import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class Wort__Boggart_Auntie {
     public static final MagicAtUpkeepTrigger T = new MagicAtUpkeepTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
-			final MagicPlayer player = permanent.getController();
-			return (player == data) ?
-				new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
+            final MagicPlayer player = permanent.getController();
+            return (player == data) ?
+                new MagicEvent(
                         permanent,
                         player,
                         new MagicMayChoice(
@@ -34,14 +34,14 @@ public class Wort__Boggart_Auntie {
                         player + " may$ return target Goblin card$ from " +
                         "his or her graveyard to his or her hand."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
@@ -49,6 +49,6 @@ public class Wort__Boggart_Auntie {
                     }
                 });
             }
-		}
+        }
     };
 }

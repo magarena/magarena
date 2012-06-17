@@ -13,27 +13,27 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Village_Bell_Ringer {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+            return new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player},
                     this,
                     "Untap all creatures you control.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			final Collection<MagicTarget> targets=
+            final MagicPlayer player = (MagicPlayer)data[0];
+            final Collection<MagicTarget> targets=
                 game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-			for (final MagicTarget target : targets) {
-				game.doAction(new MagicUntapAction((MagicPermanent)target));
-			}
-		}
+            for (final MagicTarget target : targets) {
+                game.doAction(new MagicUntapAction((MagicPermanent)target));
+            }
+        }
     };
 }

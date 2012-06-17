@@ -15,10 +15,10 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class Spitemare {
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final int amount=damage.getDealtAmount();
-			return (damage.getTarget()==permanent) ?
+            return (damage.getTarget()==permanent) ?
                 new MagicEvent(
                         permanent,
                         permanent.getController(),
@@ -28,9 +28,9 @@ public class Spitemare {
                         this,
                         permanent + " deals "+amount+" damage to target creature or player$."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
@@ -40,7 +40,7 @@ public class Spitemare {
                     final MagicDamage damage=new MagicDamage((MagicSource)data[0],target,(Integer)data[1],false);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
-			});
-		}
+            });
+        }
     };
 }

@@ -11,11 +11,11 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 public class Soul_Link {
     //deals damage
     public static final MagicWhenDamageIsDealtTrigger T1 = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
             final int amount=damage.getDealtAmount();
-			return (damage.getSource()==permanent.getEnchantedCreature()) ?
+            return (damage.getSource()==permanent.getEnchantedCreature()) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -23,38 +23,38 @@ public class Soul_Link {
                         this,
                         player + " gains " + amount + " life.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
-		}
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+        }
     };
     
     //dealt damage
     public static final MagicWhenDamageIsDealtTrigger T2 = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player=permanent.getController();
             final int amount=damage.getDealtAmount();
-			return (damage.getTarget()==permanent.getEnchantedCreature()) ?
-				new MagicEvent(
+            return (damage.getTarget()==permanent.getEnchantedCreature()) ?
+                new MagicEvent(
                     permanent,
                     player,
                     new Object[]{player,amount},this,
                     player + " gains " + amount + " life.") :
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
-		}
+            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+        }
     };
 }

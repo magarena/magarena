@@ -10,27 +10,27 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Nemesis_of_Reason {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == creature) ?
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
                         new Object[]{game.getOpponent(player)},
                         this,
                         game.getOpponent(player) + " puts the top ten cards " +
-                        		"of his or her library into his or her graveyard."):
+                                "of his or her library into his or her graveyard."):
                 MagicEvent.NONE;
-		}
-		
-		@Override
-		public void executeEvent(
+        }
+        
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],10));
-		}
+            game.doAction(new MagicMillLibraryAction((MagicPlayer)data[0],10));
+        }
     };
 }

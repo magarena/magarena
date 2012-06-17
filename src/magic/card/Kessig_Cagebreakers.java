@@ -13,10 +13,10 @@ import magic.model.trigger.MagicWhenAttacksTrigger;
 
 public class Kessig_Cagebreakers {
     public static final MagicWhenAttacksTrigger T = new MagicWhenAttacksTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPlayer player = permanent.getController();
-			return (permanent == creature) ?
+            return (permanent == creature) ?
                 new MagicEvent(
                         permanent,
                         player,
@@ -26,19 +26,19 @@ public class Kessig_Cagebreakers {
                         "the battlefield tapped and attacking for each creature " +
                         "card in his or her graveyard."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			final MagicPlayer player = (MagicPlayer)data[0];
-			final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
-			for (int count=amount;count>0;count--) {
-				final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Wolf"),player);
-				game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
-			}
-		}		
+            final MagicPlayer player = (MagicPlayer)data[0];
+            final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
+            for (int count=amount;count>0;count--) {
+                final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Wolf"),player);
+                game.doAction(new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING));
+            }
+        }        
     };
 }

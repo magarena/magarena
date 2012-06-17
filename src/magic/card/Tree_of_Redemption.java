@@ -18,51 +18,51 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
 public class Tree_of_Redemption {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CAN_TAP_CONDITION},
             new MagicActivationHints(MagicTiming.Main),
             "Life") {
 
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
-		}
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{new MagicTapEvent((MagicPermanent)source)};
+        }
 
-		@Override
-		public MagicEvent getPermanentEvent(
+        @Override
+        public MagicEvent getPermanentEvent(
                 final MagicPermanent source,
                 final MagicPayedCost payedCost) {
-			return new MagicEvent(
+            return new MagicEvent(
                     source,
                     source.getController(),
                     new Object[]{source,source.getController()},
                     this,
                     "Exchange your life total with "+ source + "'s toughness.");
-		}
+        }
 
-		@Override
-		public void executeEvent(
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-			final MagicPermanent permanent = (MagicPermanent)data[0];
-			final MagicPlayer player = (MagicPlayer)data[1];
-			final int life = player.getLife();
-			final int toughness = permanent.getToughness();
-			// exchange life with toughness even when they are equal
-			// because toughness can be modified in layer ModPT (7c)
-			game.doAction(new MagicChangeLifeAction(player,toughness - life));
-			game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
-					MagicLayer.SetPT) {
-				@Override
-				public void modPowerToughness(
-						final MagicGame game,
-						final MagicPermanent permanent,
-						final MagicPowerToughness pt) {
-					pt.setToughness(life);
-				}   
-			}));
-		}
-	};
+            final MagicPermanent permanent = (MagicPermanent)data[0];
+            final MagicPlayer player = (MagicPlayer)data[1];
+            final int life = player.getLife();
+            final int toughness = permanent.getToughness();
+            // exchange life with toughness even when they are equal
+            // because toughness can be modified in layer ModPT (7c)
+            game.doAction(new MagicChangeLifeAction(player,toughness - life));
+            game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
+                    MagicLayer.SetPT) {
+                @Override
+                public void modPowerToughness(
+                        final MagicGame game,
+                        final MagicPermanent permanent,
+                        final MagicPowerToughness pt) {
+                    pt.setToughness(life);
+                }   
+            }));
+        }
+    };
 }

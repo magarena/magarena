@@ -25,19 +25,19 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 
 public class Quest_for_the_Gemblades {
-	public static final MagicPermanentActivation A = new MagicPermanentActivation(
+    public static final MagicPermanentActivation A = new MagicPermanentActivation(
             new MagicCondition[]{MagicCondition.CHARGE_COUNTER_CONDITION},
             new MagicActivationHints(MagicTiming.Pump),
             "Pump") {
-		@Override
-		public MagicEvent[] getCostEvent(final MagicSource source) {
-			return new MagicEvent[]{
-				new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1),
-				new MagicSacrificeEvent((MagicPermanent)source)};
-		}
-		@Override
-		public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-			return new MagicEvent(
+        @Override
+        public MagicEvent[] getCostEvent(final MagicSource source) {
+            return new MagicEvent[]{
+                new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.Charge,1),
+                new MagicSacrificeEvent((MagicPermanent)source)};
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            return new MagicEvent(
                     source,
                     source.getController(),
                     MagicTargetChoice.POS_TARGET_CREATURE,
@@ -45,9 +45,9 @@ public class Quest_for_the_Gemblades {
                     MagicEvent.NO_DATA,
                     this,
                     "Put four +1/+1 counters on target creature$.");
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object[] data,
@@ -56,17 +56,17 @@ public class Quest_for_the_Gemblades {
                 public void doAction(final MagicPermanent creature) {
                     game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,4,true));
                 }
-			});
-		}
-	};
-	
+            });
+        }
+    };
+    
     public static final MagicWhenDamageIsDealtTrigger T = new MagicWhenDamageIsDealtTrigger() {
-		@Override
-		public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-			final MagicPlayer player=permanent.getController();
-			final MagicSource source=damage.getSource();
-			final MagicTarget target=damage.getTarget();
-			return (damage.isCombat() && 
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            final MagicPlayer player=permanent.getController();
+            final MagicSource source=damage.getSource();
+            final MagicTarget target=damage.getTarget();
+            return (damage.isCombat() && 
                     source.getController()==player && 
                     source.isPermanent() && 
                     target.isPermanent() &&
@@ -76,28 +76,28 @@ public class Quest_for_the_Gemblades {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                            	player + " may put a quest counter on " + permanent + ".",
-                            	MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
-                            	1,
-                            	MagicSimpleMayChoice.DEFAULT_YES),
+                                player + " may put a quest counter on " + permanent + ".",
+                                MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                                1,
+                                MagicSimpleMayChoice.DEFAULT_YES),
                         new Object[]{permanent},
                         this,
                         player + " may$ put a quest counter on " + permanent + "."):
                 MagicEvent.NONE;
-		}
-		@Override
-		public void executeEvent(
+        }
+        @Override
+        public void executeEvent(
                 final MagicGame game,
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-			if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-				game.doAction(new MagicChangeCountersAction(
-						(MagicPermanent)data[0],
-						MagicCounterType.Charge,
-						1,
-						true));
-			}
-		}
+            if (MagicMayChoice.isYesChoice(choiceResults[0])) {
+                game.doAction(new MagicChangeCountersAction(
+                        (MagicPermanent)data[0],
+                        MagicCounterType.Charge,
+                        1,
+                        true));
+            }
+        }
     };
 }
