@@ -22,6 +22,8 @@ import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicGainActivation;
 import magic.model.event.MagicPlayMulticounterEvent;
 
+import magic.model.mstatic.MagicCDA;
+
 import magic.model.trigger.*;
 
 public enum MagicAbility {
@@ -44,7 +46,11 @@ public enum MagicAbility {
     CannotBeTheTarget("hexproof",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
-    Changeling("changeling",10),
+    Changeling("changeling",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicCDA.Changeling);
+        }
+    },
     Deathtouch("deathtouch",60),
     Defender("defender",-100),
     DoesNotUntap("doesn't untap during untap step",-30),

@@ -24,12 +24,23 @@ characteristics only if certain conditions are met.
 
 public abstract class MagicCDA implements MagicChangeCardDefinition {
 
+    public static final MagicCDA Changeling = new MagicCDA() {
+        public void getSubTypeFlags(
+                final MagicGame game, 
+                final MagicPlayer player,
+                final EnumSet<MagicSubType> flags) {
+            flags.addAll(MagicSubType.ALL_CREATURES);
+        }
+    };
+
     public int getColorFlags(final MagicGame game, final MagicPlayer player,final int flags) {
         return flags;
     }
     
-    public EnumSet<MagicSubType> getSubTypeFlags(final MagicGame game, final MagicPlayer player,final EnumSet<MagicSubType> flags) {
-        return flags;
+    public void getSubTypeFlags(
+            final MagicGame game, 
+            final MagicPlayer player,
+            final EnumSet<MagicSubType> flags) {
     }
     
     public void getPowerToughness(

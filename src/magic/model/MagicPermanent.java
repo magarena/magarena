@@ -300,10 +300,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             case Card:
                 cachedController = firstController;
                 cachedTypeFlags = cdef.getTypeFlags();
-                cachedSubTypeFlags = cdef.getSubTypeFlags();
+                cachedSubTypeFlags = cdef.genCardSubTypeFlags();
                 cachedColorFlags = cdef.getColorFlags();
                 cachedAbilityFlags = cdef.getAbilityFlags() & MagicAbility.EXCLUDE_MASK;
                 cachedPowerToughness = cdef.genCardPowerToughness();
+                break;
+            case CDASubtype:
+                cdef.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
                 break;
             case CDAPT:
                 cdef.applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
@@ -401,9 +404,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public boolean hasSubType(final MagicSubType subType) {
-        if (subType.isCreatureType() && hasAbility(MagicAbility.Changeling)) {
-            return true;
-        }
         return subType.hasSubType(getSubTypeFlags());
     }
 

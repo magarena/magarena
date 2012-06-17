@@ -379,9 +379,24 @@ public class MagicCardDefinition {
             subTypeFlags.add(subType);
         }
     }
+
+    EnumSet<MagicSubType> genCardSubTypeFlags() {
+        return subTypeFlags.clone();
+    }
     
     EnumSet<MagicSubType> getSubTypeFlags() {
-        return subTypeFlags;
+        final EnumSet<MagicSubType> subTypes = genCardSubTypeFlags();
+        applyCDASubType(null, null, subTypes);
+        return subTypes;
+    }
+    
+    public void applyCDASubType(
+            final MagicGame game, 
+            final MagicPlayer player, 
+            final EnumSet<MagicSubType> flags) {
+        for (final MagicCDA lv : CDAs) {
+            lv.getSubTypeFlags(game, player, flags);
+        }
     }
     
     public String getSubTypeString() {
@@ -393,10 +408,7 @@ public class MagicCardDefinition {
     }
     
     public boolean hasSubType(final MagicSubType subType) {
-        if (subType.isCreatureType() && hasAbility(MagicAbility.Changeling)) {
-            return true;
-        }
-        return subType.hasSubType(subTypeFlags);        
+        return subType.hasSubType(getSubTypeFlags());        
     }
     
     public void setColors(final String colors) {
@@ -563,7 +575,7 @@ public class MagicCardDefinition {
             lv.getPowerToughness(game, player, perm, pt);
         }
     }
-
+    
     public void setAbility(final MagicAbility ability) {
         setAbility(ability, "");
     }
