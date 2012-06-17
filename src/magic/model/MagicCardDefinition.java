@@ -284,7 +284,7 @@ public class MagicCardDefinition {
     }
         
     public boolean isEquipment() {
-        return isArtifact()&&hasSubType(MagicSubType.Equipment);
+        return isArtifact() && hasSubType(MagicSubType.Equipment);
     }
     
     public boolean isEnchantment() {
