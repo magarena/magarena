@@ -9,6 +9,8 @@ import magic.data.IconImages;
 import magic.data.WebDownloader;
 import magic.data.FileIO;
 
+import java.awt.Container;
+import java.awt.Dimension;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -27,11 +29,13 @@ import java.awt.event.ActionListener;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 
-import net.miginfocom.swing.MigLayout;
+import javax.swing.SpringLayout;
 
 public class DownloadImagesDialog extends JFrame implements Runnable,ActionListener {
 	private static final long serialVersionUID = 1L;
 
+	private static final int GAP = 20;
+	private static final int RGAP = 10;
 	private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
 	
 	private final MagicFrame frame;
@@ -56,64 +60,225 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 
         this.frame = frame;
 		this.downloader = new Thread(this);
-		
-        this.setLayout(new MigLayout("ins 20, fillx, wrap 1","[grow]"));
+	
+		final SpringLayout springLayout = new SpringLayout();
+        this.setLayout(springLayout);
 		this.setLocationRelativeTo(frame);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-		add(new JLabel("Import data from previous version"), "gapbottom rel, w 300");
+        final Container contentPane = this.getContentPane();
+
+        final JLabel dirLabel = new JLabel("Import data from previous version");
+		add(dirLabel);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, dirLabel,
+                GAP, 
+                SpringLayout.NORTH, contentPane);  
+        springLayout.putConstraint(
+                SpringLayout.WEST, dirLabel,
+                GAP, 
+                SpringLayout.WEST, contentPane);  
 		
         dirButton = new JButton("Select Magarena data folder");
 		dirButton.addActionListener(this);
-        add(dirButton, "growx, gapbottom rel"); 
-        
-        add(new JLabel("Selected:"), "split 2");
+        final Dimension d = dirButton.getPreferredSize();
+        dirButton.setPreferredSize(new Dimension(300, d.height));
+        add(dirButton); 
+        springLayout.putConstraint(
+                SpringLayout.NORTH, dirButton,
+                RGAP,
+                SpringLayout.SOUTH, dirLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, dirButton,
+                GAP,
+                SpringLayout.WEST, contentPane);
+      
+        final JLabel dirStatus = new JLabel("Selected:");
+        add(dirStatus);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, dirStatus,
+                RGAP,
+                SpringLayout.SOUTH, dirButton);
+        springLayout.putConstraint(
+                SpringLayout.WEST, dirStatus,
+                GAP,
+                SpringLayout.WEST, contentPane);
+      
 
         dirChosen = new JLabel("None");
-        add(dirChosen, "growx, gapbottom unrel");
+        add(dirChosen);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, dirChosen,
+                RGAP,
+                SpringLayout.SOUTH, dirButton);
+        springLayout.putConstraint(
+                SpringLayout.WEST, dirChosen,
+                RGAP,
+                SpringLayout.EAST, dirStatus);
 
-		add(new JLabel("Proxy configuration"), "gapbottom rel");
+        final JLabel proxyLabel = new JLabel("Proxy configuration");
+        add(proxyLabel);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, proxyLabel,
+                GAP,
+                SpringLayout.SOUTH, dirChosen);
+        springLayout.putConstraint(
+                SpringLayout.WEST, proxyLabel,
+                GAP,
+                SpringLayout.WEST, contentPane);
 
         final Proxy.Type[] proxyTypes=Proxy.Type.values();
 		final DefaultComboBoxModel proxyModel=new DefaultComboBoxModel(proxyTypes);
 		proxyComboBox=new JComboBox(proxyModel);
 		proxyComboBox.setFocusable(false);
 		proxyComboBox.addActionListener(this);
-        add(proxyComboBox, "growx, gapbottom rel");
+        add(proxyComboBox);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, proxyComboBox,
+                RGAP,
+                SpringLayout.SOUTH, proxyLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, proxyComboBox,
+                GAP,
+                SpringLayout.WEST, contentPane);
+        springLayout.putConstraint(
+                SpringLayout.EAST, proxyComboBox,
+                -GAP,
+                SpringLayout.EAST, contentPane);
 
-	    add(new JLabel("URL"), "split 2");
+        final JLabel urlLabel = new JLabel("URL");
+        add(urlLabel);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, urlLabel,
+                RGAP,
+                SpringLayout.SOUTH, proxyComboBox);
+        springLayout.putConstraint(
+                SpringLayout.WEST, urlLabel,
+                GAP,
+                SpringLayout.WEST, contentPane);
+
         addressTextField=new JTextField();
-        add(addressTextField, "growx, gapbottom rel");
+        add(addressTextField);
+        springLayout.putConstraint(
+                SpringLayout.BASELINE, addressTextField,
+                0,
+                SpringLayout.BASELINE, urlLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, addressTextField,
+                RGAP,
+                SpringLayout.EAST, urlLabel);
+        springLayout.putConstraint(
+                SpringLayout.EAST, addressTextField,
+                -GAP,
+                SpringLayout.EAST, contentPane);
 
-        add(new JLabel("Port"), "split 2");
+
+        final JLabel portLabel = new JLabel("Port");
+        add(portLabel);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, portLabel,
+                RGAP,
+                SpringLayout.SOUTH, urlLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, portLabel,
+                GAP,
+                SpringLayout.WEST, contentPane);
+
 		portTextField=new JTextField();
-        add(portTextField, "growx, gapbottom unrel");
-		
-        add(new JLabel("Progress"), "gapbottom rel");
+        add(portTextField);
+        springLayout.putConstraint(
+                SpringLayout.BASELINE, portTextField,
+                0,
+                SpringLayout.BASELINE, portLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, portTextField,
+                RGAP,
+                SpringLayout.EAST, urlLabel);
+        springLayout.putConstraint(
+                SpringLayout.EAST, portTextField,
+                -GAP,
+                SpringLayout.EAST, contentPane);
+
+        final JLabel progressLabel = new JLabel("Progress");
+        add(progressLabel);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, progressLabel,
+                GAP,
+                SpringLayout.SOUTH, portLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, progressLabel,
+                GAP,
+                SpringLayout.WEST, contentPane);
+        
+        downloadProgressLabel = new JLabel();
+		downloadProgressLabel.setText("");
+        add(downloadProgressLabel);
+        springLayout.putConstraint(
+                SpringLayout.BASELINE, downloadProgressLabel,
+                0,
+                SpringLayout.BASELINE, progressLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, downloadProgressLabel,
+                RGAP,
+                SpringLayout.EAST, progressLabel);
 		
 		progressBar=new JProgressBar();
-        add(progressBar, "growx");
-
+        add(progressBar);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, progressBar,
+                RGAP,
+                SpringLayout.SOUTH, progressLabel);
+        springLayout.putConstraint(
+                SpringLayout.WEST, progressBar,
+                GAP,
+                SpringLayout.WEST, contentPane);
+        springLayout.putConstraint(
+                SpringLayout.EAST, progressBar,
+                -GAP,
+                SpringLayout.EAST, contentPane);
+		
 		downloadLabel=new JLabel();
 		downloadLabel.setText("");
-        add(downloadLabel, "growx");
+        add(downloadLabel);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, downloadLabel ,
+                RGAP,
+                SpringLayout.SOUTH, progressBar);
+        springLayout.putConstraint(
+                SpringLayout.WEST, downloadLabel,
+                GAP,
+                SpringLayout.WEST, contentPane);
 
-		downloadProgressLabel = new JLabel();
-		downloadProgressLabel.setText("");
-        add(downloadProgressLabel, "growx");
+        
+        cancelButton=new JButton("Cancel");
+		cancelButton.setFocusable(false);
+		cancelButton.setIcon(IconImages.CANCEL);
+		cancelButton.addActionListener(this);
+        add(cancelButton);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, cancelButton,
+                GAP,
+                SpringLayout.SOUTH, downloadLabel);
+        springLayout.putConstraint(
+                SpringLayout.EAST, cancelButton,
+                -GAP,
+                SpringLayout.EAST, contentPane);
         
 		okButton=new JButton("OK");
 		okButton.setFocusable(false);
 		okButton.setIcon(IconImages.OK);
 		okButton.addActionListener(this);
-        add(okButton, "tag ok, split 2");
-		
-        cancelButton=new JButton("Cancel");
-		cancelButton.setFocusable(false);
-		cancelButton.setIcon(IconImages.CANCEL);
-		cancelButton.addActionListener(this);
-        add(cancelButton, "tag cancel");
+        add(okButton);
+        springLayout.putConstraint(
+                SpringLayout.NORTH, okButton,
+                GAP,
+                SpringLayout.SOUTH, downloadLabel);
+        springLayout.putConstraint(
+                SpringLayout.EAST, okButton,
+                -RGAP,
+                SpringLayout.WEST, cancelButton);
+        
 
 		files=new DownloadMissingFiles(DOWNLOAD_IMAGES_FILENAME);
 		if (files.isEmpty()) {
@@ -126,8 +291,18 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 		}
 
 		updateProxy();
+
+        springLayout.putConstraint(
+                SpringLayout.EAST, contentPane,
+                GAP,
+                SpringLayout.EAST, dirButton);
+        springLayout.putConstraint(
+                SpringLayout.SOUTH, contentPane,
+                GAP,
+                SpringLayout.SOUTH, cancelButton);
+    
         this.pack();
-		this.setVisible(true);		
+		this.setVisible(true);
 	}
 	
 	private void updateProxy() {
@@ -136,7 +311,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 		portTextField.setEnabled(use);
 		if (use) {
 			addressTextField.requestFocus();
-		}		
+		}
 	}
 
     @Override
