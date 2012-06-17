@@ -45,7 +45,6 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
     private final JTextField portTextField;
     private final JProgressBar progressBar;
     private final JLabel downloadLabel;
-    private final JLabel downloadProgressLabel;
     private final JLabel dirChosen;
     private final JButton okButton;
     private final JButton cancelButton;
@@ -211,18 +210,6 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 GAP,
                 SpringLayout.WEST, contentPane);
         
-        downloadProgressLabel = new JLabel();
-        downloadProgressLabel.setText("");
-        add(downloadProgressLabel);
-        springLayout.putConstraint(
-                SpringLayout.BASELINE, downloadProgressLabel,
-                0,
-                SpringLayout.BASELINE, progressLabel);
-        springLayout.putConstraint(
-                SpringLayout.WEST, downloadProgressLabel,
-                RGAP,
-                SpringLayout.EAST, progressLabel);
-        
         progressBar=new JProgressBar();
         add(progressBar);
         springLayout.putConstraint(
@@ -287,6 +274,8 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
             progressBar.setValue(1);
             downloadLabel.setText("All images and text are present.");
         } else {
+            progressBar.setString("0/" + files.size());
+            progressBar.setStringPainted(true);
             downloadLabel.setText("Press OK to begin or Cancel.");
         }
 
@@ -335,10 +324,8 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         int count=0;
 
         for (final WebDownloader file : files) {
-            final int curr = count + 1;
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
-                    downloadProgressLabel.setText(curr+"/"+files.size());
                     downloadLabel.setText(file.getFilename());
                 }
             });
@@ -369,6 +356,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
             final int fcount = count;
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
+                    progressBar.setString(fcount+"/"+files.size());
                     progressBar.setValue(fcount);
                 }
             });
