@@ -1,0 +1,13 @@
+name=Timberland Guide
+url=http://magiccards.info/avr/en/197.html
+image=http://magiccards.info/scans/en/avr/197.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Scout
+color=g
+converted=2
+cost={1}{G}
+pt=1/1
+timing=main
+requires_card_code

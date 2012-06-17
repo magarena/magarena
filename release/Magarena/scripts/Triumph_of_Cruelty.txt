@@ -1,0 +1,11 @@
+name=Triumph of Cruelty
+url=http://magiccards.info/avr/en/122.html
+image=http://magiccards.info/scans/en/avr/122.jpg
+value=3
+rarity=U
+type=Enchantment
+color=b
+converted=3
+cost={2}{B}
+timing=enchantment
+requires_card_code
