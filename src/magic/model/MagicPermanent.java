@@ -401,6 +401,9 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     public boolean hasSubType(final MagicSubType subType) {
+        if (subType.isCreatureType() && hasAbility(MagicAbility.Changeling)) {
+            return true;
+        }
         return subType.hasSubType(getSubTypeFlags());
     }
 
