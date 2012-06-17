@@ -1,0 +1,11 @@
+name=Uncanny Speed
+url=http://magiccards.info/avr/en/163.html
+image=http://magiccards.info/scans/en/avr/163.jpg
+value=3
+rarity=C
+type=Instant
+color=r
+converted=2
+cost={1}{R}
+timing=fmain
+requires_card_code
