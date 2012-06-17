@@ -1,0 +1,13 @@
+name=Vanishment
+url=http://magiccards.info/avr/en/82.html
+image=http://magiccards.info/scans/en/avr/82.jpg
+value=3
+removal=3
+rarity=U
+type=Instant
+color=u
+converted=5
+cost={4}{U}
+ability=miracle {U}
+timing=removal
+requires_card_code
