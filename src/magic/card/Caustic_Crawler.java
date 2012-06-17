@@ -26,7 +26,7 @@ public class Caustic_Crawler {
                     new MagicWeakenTargetPicker(1,1),
                     MagicEvent.NO_DATA,
                     this,
-                    player + " may have target creature get -1/-1 until end of turn."):
+                    player + " may$ have target creature$ get -1/-1 until end of turn."):
                 MagicEvent.NONE;
 		}
 		
