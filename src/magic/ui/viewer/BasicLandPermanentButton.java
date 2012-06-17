@@ -15,56 +15,56 @@ import java.util.Set;
 
 public class BasicLandPermanentButton extends PanelButton implements ChoiceViewer {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	private final PermanentViewerInfo permanentInfo;
-	private final GameController controller;
-	private final JPanel landPanel;
-	
-	public BasicLandPermanentButton(final PermanentViewerInfo permanentInfo,final GameController controller) {
-		
-		this.permanentInfo=permanentInfo;
-		this.controller=controller;
-		
-		landPanel=new JPanel(new BorderLayout());
-		landPanel.setOpaque(false);
-		landPanel.setBorder(FontsAndBorders.NO_TARGET_BORDER);
-		
-		final JLabel manaLabel=new JLabel();
-		manaLabel.setHorizontalAlignment(JLabel.CENTER);
-		manaLabel.setPreferredSize(new Dimension(0,30));
-		manaLabel.setIcon(permanentInfo.manaColor.getIcon());
-		landPanel.add(manaLabel,BorderLayout.CENTER);
-		
-		final JLabel tappedLabel=new JLabel(permanentInfo.tapped?IconImages.TAPPED:null);
-		tappedLabel.setPreferredSize(new Dimension(0,16));
-		landPanel.add(tappedLabel,BorderLayout.SOUTH);
-		
-		setComponent(landPanel);
-		showValidChoices(controller.getValidChoices());
-	}
+    private final PermanentViewerInfo permanentInfo;
+    private final GameController controller;
+    private final JPanel landPanel;
+    
+    public BasicLandPermanentButton(final PermanentViewerInfo permanentInfo,final GameController controller) {
+        
+        this.permanentInfo=permanentInfo;
+        this.controller=controller;
+        
+        landPanel=new JPanel(new BorderLayout());
+        landPanel.setOpaque(false);
+        landPanel.setBorder(FontsAndBorders.NO_TARGET_BORDER);
+        
+        final JLabel manaLabel=new JLabel();
+        manaLabel.setHorizontalAlignment(JLabel.CENTER);
+        manaLabel.setPreferredSize(new Dimension(0,30));
+        manaLabel.setIcon(permanentInfo.manaColor.getIcon());
+        landPanel.add(manaLabel,BorderLayout.CENTER);
+        
+        final JLabel tappedLabel=new JLabel(permanentInfo.tapped?IconImages.TAPPED:null);
+        tappedLabel.setPreferredSize(new Dimension(0,16));
+        landPanel.add(tappedLabel,BorderLayout.SOUTH);
+        
+        setComponent(landPanel);
+        showValidChoices(controller.getValidChoices());
+    }
 
-	@Override
-	public void mouseClicked() {
+    @Override
+    public void mouseClicked() {
 
-		controller.processClick(permanentInfo.permanent);
-	}
+        controller.processClick(permanentInfo.permanent);
+    }
 
-	@Override
-	public void mouseEntered() {
+    @Override
+    public void mouseEntered() {
 
-		controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);		
-	}
-	
-	@Override
-	public void showValidChoices(final Set<Object> validChoices) {
+        controller.viewCard(permanentInfo.cardDefinition,permanentInfo.index);        
+    }
+    
+    @Override
+    public void showValidChoices(final Set<Object> validChoices) {
 
-		setValid(validChoices.contains(permanentInfo.permanent));
-	}
+        setValid(validChoices.contains(permanentInfo.permanent));
+    }
 
-	@Override
-	public Color getValidColor() {
+    @Override
+    public Color getValidColor() {
 
-		return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
-	}
+        return ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+    }
 }
