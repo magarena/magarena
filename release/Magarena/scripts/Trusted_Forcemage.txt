@@ -1,0 +1,14 @@
+name=Trusted Forcemage
+url=http://magiccards.info/avr/en/199.html
+image=http://magiccards.info/scans/en/avr/199.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Human,Shaman
+color=g
+converted=3
+cost={2}{G}
+pt=2/2
+ability=soulbond
+given_pt=1/1
+timing=main
