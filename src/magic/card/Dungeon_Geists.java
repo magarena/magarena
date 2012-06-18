@@ -7,14 +7,12 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveStaticAction;
 import magic.model.action.MagicAddStaticAction;
-import magic.model.action.MagicAddTriggerAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 public class Dungeon_Geists {

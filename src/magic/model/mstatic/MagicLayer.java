@@ -1,12 +1,4 @@
-package magic.model.mstatic; 
-
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicSubType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPowerToughness;
-
-import java.util.EnumSet;
+package magic.model.mstatic;
 
 public enum MagicLayer {
     Card,        //0.  properties from the card, not formally defined in rules

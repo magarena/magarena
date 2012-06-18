@@ -5,8 +5,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
 
 public class MagicChangeControlAction extends MagicAction {
 

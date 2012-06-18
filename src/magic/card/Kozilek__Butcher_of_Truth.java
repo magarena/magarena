@@ -1,18 +1,11 @@
 package magic.card;
 
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.trigger.MagicGraveyardTriggerData;
-import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 
 public class Kozilek__Butcher_of_Truth {
