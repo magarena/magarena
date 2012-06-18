@@ -42,7 +42,7 @@ public class Demigod_of_Revenge {
                     MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD);
             for (final MagicTarget target : cards) {
                 final MagicCard card = (MagicCard)target;
-                if (card.getName() == event.getSource().getName()) {
+                if (card.getName().equals(event.getSource().getName())) {
                     game.doAction(new MagicReanimateAction(
                             event.getPlayer(),
                             card,
