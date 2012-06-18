@@ -1,0 +1,11 @@
+name=Vessel of Endless Rest
+url=http://magiccards.info/avr/en/224.html
+image=http://magiccards.info/scans/en/avr/224.jpg
+value=3
+rarity=U
+type=Artifact
+converted=3
+cost={3}
+ability=tap add mana any
+timing=artifact
+requires_card_code
