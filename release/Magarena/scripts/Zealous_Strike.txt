@@ -1,0 +1,11 @@
+name=Zealous Strike
+url=http://magiccards.info/avr/en/41.html
+image=http://magiccards.info/scans/en/avr/41.jpg
+value=2
+rarity=C
+type=Instant
+color=w
+converted=2
+cost={1}{W}
+timing=pump
+requires_card_code
