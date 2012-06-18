@@ -1,0 +1,14 @@
+name=Elder Land Wurm
+url=http://magiccards.info/4e/en/274.html
+image=http://magiccards.info/scans/en/4e/274.jpg
+value=5
+rarity=R
+type=Creature
+subtype=Dragon,Wurm
+color=w
+converted=7
+cost={4}{W}{W}{W}
+pt=5/5
+ability=defender,trample
+timing=main
+requires_card_code
