@@ -29,12 +29,12 @@ public class MagicDestroyAction extends MagicAction {
             final MagicPermanent permanent = (MagicPermanent)target;
             
             // Indestructible
-            if (permanent.hasAbility(MagicAbility.Indestructible)) {
+            if (destroy && permanent.hasAbility(MagicAbility.Indestructible)) {
                 destroy = false;
             }
             
             // Regeneration
-            if (permanent.isRegenerated()) {
+            if (destroy && permanent.isRegenerated()) {
                 game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
                 game.doAction(new MagicTapAction(permanent,false));
                 game.doAction(new MagicRemoveAllDamageAction(permanent));
@@ -44,7 +44,7 @@ public class MagicDestroyAction extends MagicAction {
             } 
             
             // Totem armor
-            if (permanent.isEnchanted()) {
+            if (destroy && permanent.isEnchanted()) {
                 for (final MagicPermanent aura : permanent.getAuraPermanents()) {
                     if (aura.getCardDefinition().hasAbility(MagicAbility.TotemArmor)) {
                         game.logAppendMessage(permanent.getController(),"Remove all damage from "+permanent.getName()+'.');
