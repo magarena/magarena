@@ -42,7 +42,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
             }
         }
         
-        permanent.setLastKnownInfo();
         game.executeTrigger(MagicTriggerType.WhenLeavesPlay,permanent);
         
         // Equipment
