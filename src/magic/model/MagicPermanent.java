@@ -419,9 +419,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getPowerToughness().getPositiveToughness();
     }
     
-    public void setLastKnownInfo() {
-    }
-    
     public long getAllAbilityFlags() {
         return cachedAbilityFlags;
     }

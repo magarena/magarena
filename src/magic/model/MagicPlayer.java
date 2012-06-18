@@ -313,7 +313,7 @@ public class MagicPlayer implements MagicTarget {
 
     public void addPermanent(final MagicPermanent permanent) {
         boolean added = permanents.add(permanent);
-        assert added == true;
+        assert added == true : permanent + " cannot be added to " + this;
         if (permanent.producesMana()) {
             manaPermanents.add(permanent);
         }
@@ -323,7 +323,7 @@ public class MagicPlayer implements MagicTarget {
 
     public void removePermanent(final MagicPermanent permanent) {
         boolean removed = permanents.remove(permanent);
-        assert removed == true;
+        assert removed == true : permanent + " cannot be removed from " + this;
         if (permanent.producesMana()) {
             manaPermanents.remove(permanent);
         }
