@@ -1,0 +1,13 @@
+name=Wildwood Geist
+url=http://magiccards.info/avr/en/204.html
+image=http://magiccards.info/scans/en/avr/204.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Spirit
+color=g
+converted=5
+cost={4}{G}
+pt=3/3
+timing=main
+requires_card_code
