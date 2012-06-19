@@ -1,0 +1,13 @@
+name=Biting Tether
+url=http://magiccards.info/shm/en/29.html
+image=http://magiccards.info/scans/en/shm/29.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=u
+converted=5
+cost={4}{U}
+timing=aura
+enchant=gain control,neg creature
+requires_card_code
