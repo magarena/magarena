@@ -119,6 +119,6 @@ public class MagicRemoveFromPlayAction extends MagicAction {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName()+" ("+permanent.getName()+','+permanent.getAuraPermanents().size()+')';
+        return super.toString()+" ("+permanent.getName()+','+permanent.getAuraPermanents().size()+')';
     }
 }

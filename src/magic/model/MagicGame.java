@@ -530,7 +530,7 @@ public class MagicGame {
     }
     
     public void undoAllActions() {
-        assert actions.isEmpty() : "actions is NOT empty";
+        assert actions.isEmpty() : "actions: " + actions; 
     }
     
     public void createUndoPoint() {

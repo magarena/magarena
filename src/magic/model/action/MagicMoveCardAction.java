@@ -130,4 +130,9 @@ public class MagicMoveCardAction extends MagicAction {
             }            
         }
     }
+    
+    @Override
+    public String toString() {
+        return super.toString()+" ("+card+','+fromLocation+','+toLocation+')';
+    }
 }

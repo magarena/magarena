@@ -55,4 +55,9 @@ public class MagicRemoveFromCombatAction extends MagicAction {
             }
         }
     }
+    
+    @Override
+    public String toString() {
+        return super.toString()+" ("+permanent.getName()+')';
+    }
 }
