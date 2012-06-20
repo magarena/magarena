@@ -1,0 +1,5 @@
+package magic.card;
+
+public class Persuasion {
+    public static final Object S = Control_Magic.S;
+}

@@ -1,0 +1,15 @@
+name=Yavimaya's Embrace
+url=http://magiccards.info/ap/en/127.html
+image=http://magiccards.info/scans/en/ap/127.jpg
+value=4
+rarity=R
+type=Enchantment
+subtype=Aura
+color=gu
+converted=8
+cost={5}{G}{U}{U}
+given_pt=2/2
+given_ability=trample
+timing=aura
+enchant=gain control,neg creature
+requires_card_code
