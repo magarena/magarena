@@ -58,6 +58,9 @@ warnings.txt: $(MAG)
 			-sourcepath src \
 			build
 
+cards/legacy_banned.txt:
+	curl https://www.wizards.com/Magic/TCG/Resources.aspx?x=judge/resources/sfrlegacy | grep nodec | grep -o ">[^<]*</a" | sed 's/>//g;s/<\/a//;' > $@
+
 release/Magarena/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
