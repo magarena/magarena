@@ -1,0 +1,13 @@
+name=Mind Control
+url=http://magiccards.info/m12/en/67.html
+image=http://magiccards.info/scans/en/m12/67.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=u
+converted=5
+cost={3}{U}{U}
+timing=aura
+enchant=gain control,neg creature
+requires_card_code

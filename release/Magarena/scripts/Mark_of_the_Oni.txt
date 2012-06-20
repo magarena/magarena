@@ -1,0 +1,13 @@
+name=Mark of the Oni
+url=http://magiccards.info/bok/en/73.html
+image=http://magiccards.info/scans/en/bok/73.jpg
+value=3
+rarity=U
+type=Enchantment
+subtype=Aura
+color=b
+converted=3
+cost={2}{B}
+timing=aura
+enchant=gain control,neg creature
+requires_card_code
