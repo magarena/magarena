@@ -20,7 +20,6 @@ public class MagicUndyingTrigger extends MagicWhenPutIntoGraveyardTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicGraveyardTriggerData triggerData) {
-        System.err.println("undying trigger");
         if (triggerData.fromLocation == MagicLocationType.Play &&
             permanent.getCounters(MagicCounterType.PlusOne) == 0) {
             final MagicCard card = triggerData.card;
