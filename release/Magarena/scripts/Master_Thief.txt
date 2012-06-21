@@ -1,0 +1,13 @@
+name=Master Thief
+url=http://magiccards.info/m12/en/64.html
+image=http://magiccards.info/scans/en/m12/64.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Rogue
+color=u
+converted=4
+cost={2}{U}{U}
+pt=2/2
+timing=main
+requires_card_code

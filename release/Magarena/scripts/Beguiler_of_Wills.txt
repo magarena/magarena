@@ -1,0 +1,13 @@
+name=Beguiler of Wills
+url=http://magiccards.info/dka/en/28.html
+image=http://magiccards.info/scans/en/dka/28.jpg
+value=4
+rarity=M
+type=Creature
+subtype=Human,Wizard
+color=u
+converted=5
+cost={3}{U}{U}
+pt=1/1
+timing=main
+requires_card_code
