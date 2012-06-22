@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elf,Knight
 color=gw
-converted=4
 cost={2}{G/W}{G/W}
 pt=3/3
 ability=can't be blocked by black creatures

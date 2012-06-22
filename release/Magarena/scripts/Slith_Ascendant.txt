@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Slith
 color=w
-converted=3
 cost={1}{W}{W}
 pt=1/1
 ability=flying,combat damage grow player

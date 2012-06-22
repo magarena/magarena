@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Zombie,Shaman
 color=br
-converted=2
 cost={B/R}{B/R}
 pt=2/2
 timing=fmain

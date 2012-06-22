@@ -5,7 +5,6 @@ value=3
 type=Creature
 subtype=Insect
 color=g
-converted=0
 cost={0}
 pt=6/1
 ability=shroud

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Cyclops
 color=r
-converted=3
 cost={2}{R}
 pt=3/3
 ability=attacks each turn if able

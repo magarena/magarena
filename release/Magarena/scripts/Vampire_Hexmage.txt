@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Vampire,Shaman
 color=b
-converted=2
 cost={B}{B}
 pt=2/1
 ability=first strike

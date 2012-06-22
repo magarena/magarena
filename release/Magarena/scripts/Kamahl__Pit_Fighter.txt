@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Human,Barbarian
 color=r
-converted=6
 cost={4}{R}{R}
 pt=6/1
 ability=haste

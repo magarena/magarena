@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Beast
 color=rw
-converted=4
 cost={2}{R}{W}
 pt=2/5
 ability=attacks pump +3/-3

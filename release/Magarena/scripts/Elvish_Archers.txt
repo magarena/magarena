@@ -7,7 +7,6 @@ rarity=R
 type=Creature
 subtype=Elf,Archer
 color=g
-converted=2
 cost={1}{G}
 pt=2/1
 timing=main

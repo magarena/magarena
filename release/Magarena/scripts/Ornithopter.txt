@@ -6,7 +6,6 @@ ability=flying
 rarity=C
 type=Artifact,Creature
 subtype=Thopter
-converted=0
 cost={0}
 pt=0/2
 timing=main

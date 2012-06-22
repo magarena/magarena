@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Goblin
 color=r
-converted=0
 cost={0}
 pt=1/1

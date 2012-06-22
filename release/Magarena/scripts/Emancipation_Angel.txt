@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Angel
 color=w
-converted=3
 cost={1}{W}{W}
 pt=3/3
 ability=flying

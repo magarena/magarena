@@ -63,7 +63,8 @@ public enum CardProperty {
     },
     CONVERTED() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setConvertedCost(Integer.parseInt(value));
+            //not needed, derive from mana cost
+            //left here for backward compatibility with old card script format
         }
     },
     COST() {

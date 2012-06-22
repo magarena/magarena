@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 color=u
-converted=8
 cost={6}{U}{U}
 ability=flying
 timing=main

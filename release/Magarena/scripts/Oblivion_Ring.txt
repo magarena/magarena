@@ -6,7 +6,6 @@ removal=2
 rarity=C
 type=Enchantment
 color=w
-converted=3
 cost={2}{W}
 ability=leaves return exile
 timing=removal

@@ -6,7 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 color=w
-converted=4
 cost={2}{W}{W}
 given_pt=3/3
 timing=aura

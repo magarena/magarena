@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Artifact,Creature
 subtype=Construct
-converted=4
 cost={4}
 pt=2/2
 ability=pump {3} +1/+0

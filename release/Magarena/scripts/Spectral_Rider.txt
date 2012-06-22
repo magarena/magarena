@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit,Knight
 color=w
-converted=2
 cost={W}{W}
 pt=2/2
 ability=intimidate

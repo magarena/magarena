@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Orc,Warrior
 color=r
-converted=3
 cost={1}{R}{R}
 pt=1/3
 timing=main

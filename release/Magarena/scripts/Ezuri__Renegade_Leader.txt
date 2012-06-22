@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior
 color=g
-converted=3
 cost={1}{G}{G}
 pt=2/2
 timing=fmain

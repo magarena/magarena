@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Zombie
 color=b
-converted=3
 cost={2}{B}
 timing=main
 requires_card_code

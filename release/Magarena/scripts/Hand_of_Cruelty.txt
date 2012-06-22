@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Samurai
 color=b
-converted=2
 cost={B}{B}
 pt=2/2
 ability=protection from white,bushido 1

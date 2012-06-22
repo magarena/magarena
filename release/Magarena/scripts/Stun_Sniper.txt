@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Archer
 color=rw
-converted=2
 cost={R}{W}
 pt=1/1
 timing=main

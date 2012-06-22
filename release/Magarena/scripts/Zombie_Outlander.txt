@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Zombie,Scout
 color=bu
-converted=2
 cost={U}{B}
 pt=2/2
 timing=main

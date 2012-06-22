@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Spider
 color=g
-converted=2
 cost={1}{G}
 pt=1/2
 ability=reach,deathtouch

@@ -6,7 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=w
-converted=2
 cost={1}{W}
 timing=aura
 enchant=can't attack or block,neg creature

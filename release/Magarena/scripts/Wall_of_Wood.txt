@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Wall
 color=g
-converted=1
 cost={G}
 pt=0/3
 timing=smain

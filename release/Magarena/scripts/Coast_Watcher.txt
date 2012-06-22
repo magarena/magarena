@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Bird,Soldier
 color=u
-converted=2
 cost={1}{U}
 pt=1/1
 timing=main

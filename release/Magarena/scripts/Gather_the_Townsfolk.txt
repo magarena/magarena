@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Sorcery
 color=w
-converted=2
 cost={1}{W}
 timing=main
 requires_card_code

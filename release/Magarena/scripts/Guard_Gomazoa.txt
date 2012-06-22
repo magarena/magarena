@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Jellyfish
 color=u
-converted=3
 cost={2}{U}
 pt=1/3
 ability=defender,flying

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Merfolk,Rogue
 color=ub
-converted=2
 cost={U/B}{U/B}
 pt=2/1
 ability=can't block,unblockable

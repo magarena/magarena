@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Vampire,Warrior
 color=b
-converted=3
 cost={2}{B}
 pt=3/2
 ability=level up {2}{B} 3

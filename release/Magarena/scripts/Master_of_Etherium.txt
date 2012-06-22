@@ -6,7 +6,6 @@ rarity=R
 type=Artifact,Creature
 subtype=Vedalken,Wizard
 color=u
-converted=3
 cost={2}{U}
 static=player
 timing=fmain

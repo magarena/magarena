@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Efreet
 color=u
-converted=3
 cost={2}{U}
 pt=3/4
 ability=flying

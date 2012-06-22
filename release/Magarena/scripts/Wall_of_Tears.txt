@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Wall
 color=u
-converted=2
 cost={1}{U}
 pt=0/4
 ability=defender

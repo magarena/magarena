@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Warrior
 color=b
-converted=3
 cost={2}{B}
 pt=3/2
 timing=main

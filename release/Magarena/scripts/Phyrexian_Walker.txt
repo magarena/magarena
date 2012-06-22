@@ -5,7 +5,6 @@ value=1
 rarity=C
 type=Artifact,Creature
 subtype=Construct
-converted=0
 cost={0}
 pt=0/3
 timing=main

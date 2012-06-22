@@ -6,7 +6,6 @@ rarity=U
 type=Legendary,Creature
 subtype=Human,Samurai
 color=w
-converted=4
 cost={3}{W}
 pt=3/3
 ability=bushido 1

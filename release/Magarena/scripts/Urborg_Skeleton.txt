@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Skeleton
 color=b
-converted=1
 cost={B}
 pt=0/1
 timing=main

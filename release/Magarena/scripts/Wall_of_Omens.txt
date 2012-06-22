@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Wall
 color=w
-converted=2
 cost={1}{W}
 pt=0/4
 ability=defender,enters draw card

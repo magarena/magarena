@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Human,Rogue
 color=uw
-converted=2
 cost={W}{U}
 pt=2/1
 timing=fmain

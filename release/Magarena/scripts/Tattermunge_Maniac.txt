@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Goblin,Warrior
 color=rg
-converted=1
 cost={R/G}
 pt=2/1
 ability=attacks each turn if able

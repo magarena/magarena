@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Artifact,Creature
 subtype=Golem
-converted=2
 cost={2}
 pt=3/3
 ability=vanishing 1

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Crab
 color=u
-converted=1
 cost={U}
 pt=0/2
 timing=main

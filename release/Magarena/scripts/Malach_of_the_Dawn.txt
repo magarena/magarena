@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Angel
 color=w
-converted=4
 cost={2}{W}{W}
 pt=2/4
 ability=flying,regenerate {W}{W}{W}

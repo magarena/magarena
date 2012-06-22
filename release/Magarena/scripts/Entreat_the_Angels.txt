@@ -5,7 +5,6 @@ value=4
 rarity=M
 type=Sorcery
 color=w
-converted=3
 cost={X}{X}{W}{W}{W}
 timing=main
 ability=miracle {X}{W}{W}

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Ogre,Samurai,Shaman
 color=r
-converted=5
 cost={4}{R}
 pt=2/3
 ability=bushido 1

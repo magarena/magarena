@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Ooze
 color=g
-converted=3
 cost={2}{G}
 pt=2/2
 ability=flash,devour 1

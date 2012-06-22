@@ -7,7 +7,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=w
-converted=1
 cost={W}
 timing=tapping
 enchant=tap,neg creature

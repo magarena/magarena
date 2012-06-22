@@ -6,7 +6,6 @@ ability=flash,vigilance,indestructible
 rarity=U
 type=Artifact,Creature
 subtype=Golem
-converted=6
 cost={6}
 pt=3/3
 timing=main

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elf,Warrior
 color=g
-converted=3
 cost={1}{G}{G}
 pt=3/1
 timing=main

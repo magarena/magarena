@@ -37,7 +37,6 @@ public class MagicCardDefinition {
             setToken();
             setValue(1);
             addType(MagicType.Creature);
-            setConvertedCost(8);
             setCost(MagicManaCost.EIGHT);
             setPowerToughness(1,1);
             setAbility(MagicAbility.Defender);
@@ -71,7 +70,6 @@ public class MagicCardDefinition {
     private int typeFlags=0;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private int colorFlags=0;
-    private int convertedCost=0;
     private MagicColoredType coloredType=MagicColoredType.Colorless;
     private MagicManaCost cost=MagicManaCost.ZERO;
     private String manaSourceText="";
@@ -448,20 +446,17 @@ public class MagicCardDefinition {
         return coloredType;
     }
         
-    public void setConvertedCost(final int convertedCost) {
-        this.convertedCost = convertedCost;
-    }
     
     public int getConvertedCost() {
-        return convertedCost;
+        return cost.getConvertedCost();
     }
     
     public boolean hasConvertedCost(int c) {
-        return convertedCost == c;
+        return getConvertedCost() == c;
     }
     
     public int getCostBucket() {
-        switch (convertedCost) {
+        switch (getConvertedCost()) {
             case 0:
             case 1:
             case 2:

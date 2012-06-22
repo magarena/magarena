@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elf,Druid
 color=g
-converted=1
 cost={G}
 pt=1/1
 ability=tap add mana {G}

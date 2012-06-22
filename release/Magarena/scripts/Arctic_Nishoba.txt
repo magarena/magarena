@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Cat,Warrior
 color=g
-converted=6
 cost={5}{G}
 pt=6/6
 ability=trample,cumulative upkeep {G/W}

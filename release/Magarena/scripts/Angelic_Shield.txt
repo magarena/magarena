@@ -6,7 +6,6 @@ removal=1
 rarity=U
 type=Enchantment
 color=wu
-converted=2
 cost={W}{U}
 static=player
 timing=enchantment

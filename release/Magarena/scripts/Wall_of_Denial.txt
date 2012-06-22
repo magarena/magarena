@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Wall
 color=wu
-converted=3
 cost={1}{W}{U}
 pt=0/8
 ability=defender,flying,shroud

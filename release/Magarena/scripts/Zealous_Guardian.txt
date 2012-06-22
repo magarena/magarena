@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Kithkin,Soldier
 color=uw
-converted=1
 cost={W/U}
 pt=1/1
 timing=flash

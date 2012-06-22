@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Wall
 color=w
-converted=4
 cost={3}{W}
 pt=0/5
 ability=defender,pump {W} +0/+1

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Horror
 color=b
-converted=3
 cost={2}{B}
 pt=3/3
 ability=flying,enters lose life 3

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Spirit
 color=g
-converted=6
 cost={3}{G}{G}{G}
 pt=6/6
 timing=main

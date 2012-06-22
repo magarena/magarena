@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Vampire
 color=b
-converted=4
 cost={2}{B}{B}
 pt=2/2
 ability=bloodthirst 2,lifelink

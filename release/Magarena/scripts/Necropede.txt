@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Artifact,Creature
 subtype=Insect
-converted=2
 cost={2}
 pt=1/1
 ability=infect

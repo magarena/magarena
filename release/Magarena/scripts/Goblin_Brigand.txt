@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Goblin,Warrior
 color=r
-converted=2
 cost={1}{R}
 pt=2/2
 timing=main

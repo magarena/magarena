@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Goblin,Berserker
 color=r
-converted=1
 cost={R}
 pt=1/1
 timing=main

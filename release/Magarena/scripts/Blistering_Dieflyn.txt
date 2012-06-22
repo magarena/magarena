@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Imp
 color=r
-converted=4
 cost={3}{R}
 pt=0/1
 ability=flying,pump {B/R} +1/+0

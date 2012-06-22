@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/zen/199.jpg
 value=5
 rarity=M
 type=Artifact
-converted=5
 cost={5}
 static=player
 timing=fmain

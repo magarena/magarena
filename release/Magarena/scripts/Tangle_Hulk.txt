@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Artifact,Creature
 subtype=beast
-converted=5
 cost={5}
 pt=5/3
 ability=regenerate {2}{G}

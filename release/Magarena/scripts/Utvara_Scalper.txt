@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Goblin,Scout
 color=r
-converted=2
 cost={1}{R}
 pt=1/2
 ability=flying,attacks each turn if able

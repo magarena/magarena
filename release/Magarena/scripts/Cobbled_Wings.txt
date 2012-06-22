@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Artifact
 subtype=Equipment
-converted=2
 cost={2}
 equip={1}
 given_ability=flying

@@ -6,7 +6,6 @@ rarity=M
 type=Legendary,Creature
 subtype=Praetor
 color=w
-converted=7
 cost={5}{W}{W}
 pt=4/7
 ability=vigilance

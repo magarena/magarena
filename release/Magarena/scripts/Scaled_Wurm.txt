@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Wurm
 color=g
-converted=8
 cost={7}{G}
 pt=7/6
 timing=main

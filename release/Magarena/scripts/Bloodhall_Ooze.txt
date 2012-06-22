@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Ooze
 color=r
-converted=1
 cost={R}
 pt=1/1
 timing=main

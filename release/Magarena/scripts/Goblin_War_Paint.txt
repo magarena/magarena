@@ -6,7 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=r
-converted=2
 cost={1}{R}
 given_pt=2/2
 given_ability=haste

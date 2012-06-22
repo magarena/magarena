@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Kor,Spirit
 color=w
-converted=5
 cost={4}{W}
 pt=4/5
 timing=smain

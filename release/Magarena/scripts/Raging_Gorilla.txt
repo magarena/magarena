@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Ape
 color=r
-converted=3
 cost={2}{R}
 pt=2/3
 ability=blocks or blocked pump +2/-2

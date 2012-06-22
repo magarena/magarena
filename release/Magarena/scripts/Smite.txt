@@ -6,7 +6,6 @@ removal=3
 rarity=C
 type=Instant
 color=w
-converted=1
 cost={W}
 timing=block
 requires_card_code

@@ -7,7 +7,6 @@ removal=2
 type=Creature
 subtype=Zombie
 color=b
-converted=5
 cost={4}{B}
 pt=2/2
 timing=fmain

@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Enchantment
 color=rw
-converted=4
 cost={2}{R}{W}
 static=player
 timing=enchantment

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Hag
 color=bg
-converted=3
 cost={B/G}{B/G}{B/G}
 pt=3/2
 ability=swampwalk,forestwalk

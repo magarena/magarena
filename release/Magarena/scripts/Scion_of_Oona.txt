@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Faerie,Soldier
 color=u
-converted=3
 cost={2}{U}
 pt=1/1
 ability=flash,flying

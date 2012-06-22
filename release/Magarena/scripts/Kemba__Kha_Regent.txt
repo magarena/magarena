@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Cat,Cleric
 color=w
-converted=3
 cost={1}{W}{W}
 pt=2/4
 timing=main

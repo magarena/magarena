@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Soldier
 color=b
-converted=2
 cost={1}{B}
 pt=2/2
 ability=attacks pump +2/+0

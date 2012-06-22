@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Zombie
 color=b
-converted=4
 cost={3}{B}
 pt=3/2
 ability=infect

@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Goblin,Assassin
 color=br
-converted=4
 cost={2}{B/R}{B/R}
 pt=2/2
 ability=persist

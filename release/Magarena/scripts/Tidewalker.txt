@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Elemental
 color=u
-converted=3
 cost={2}{U}
 timing=main
 requires_card_code

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Goblin
 color=r
-converted=2
 cost={R}{R}
 pt=2/2
 timing=fmain

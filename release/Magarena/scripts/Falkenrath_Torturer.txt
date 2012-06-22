@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Vampire
 color=b
-converted=3
 cost={2}{B}
 pt=2/1
 timing=main

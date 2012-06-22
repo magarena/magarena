@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Minotaur,Warrior
 color=r
-converted=4
 cost={2}{R}{R}
 pt=3/3
 ability=bloodthirst 2

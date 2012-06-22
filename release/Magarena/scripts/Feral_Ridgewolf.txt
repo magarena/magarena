@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Wolf
 color=r
-converted=3
 cost={2}{R}
 pt=1/2
 ability=trample,pump {1}{R} +2/+0

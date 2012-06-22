@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Snake
 color=gu
-converted=3
 cost={1}{G}{U}
 pt=1/1
 ability=flash,flying,deathtouch

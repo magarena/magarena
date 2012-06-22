@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Giant
 color=r
-converted=5
 cost={3}{R}{R}
 pt=4/3
 timing=fmain

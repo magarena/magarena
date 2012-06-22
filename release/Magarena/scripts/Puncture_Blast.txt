@@ -6,7 +6,6 @@ removal=3
 rarity=C
 type=Instant
 color=r
-converted=3
 cost={2}{R}
 ability=wither
 timing=removal

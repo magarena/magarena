@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Artifact
 subtype=Equipment
-converted=2
 cost={2}
 equip={0}
 given_ability=shroud,haste

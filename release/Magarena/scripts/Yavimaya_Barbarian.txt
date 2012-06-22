@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Elf,Barbarian
 color=rg
-converted=2
 cost={R}{G}
 pt=2/2
 timing=main

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Vampire
 color=r
-converted=2
 cost={1}{R}
 pt=2/1
 ability=attacks each turn if able,combat damage grow player

@@ -7,7 +7,6 @@ rarity=R
 type=Creature
 subtype=Spirit,Avatar
 color=wu
-converted=5
 cost={W/U}{W/U}{W/U}{W/U}{W/U}
 pt=4/4
 ability=flying

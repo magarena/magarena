@@ -7,7 +7,6 @@ rarity=R
 type=Creature
 subtype=Serpent
 color=u
-converted=8
 cost={5}{U}{U}{U}
 pt=7/6
 timing=main

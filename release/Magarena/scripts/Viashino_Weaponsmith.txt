@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Viashino
 color=r
-converted=4
 cost={3}{R}
 pt=2/2
 ability=blocked by pump +2/+2

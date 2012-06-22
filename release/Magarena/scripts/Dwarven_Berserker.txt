@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Dwarf,Berserker
 color=r
-converted=2
 cost={1}{R}
 pt=1/1
 timing=main

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Viashino
 color=r
-converted=3
 cost={2}{R}
 pt=4/3
 timing=main

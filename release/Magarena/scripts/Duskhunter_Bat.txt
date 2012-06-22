@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Bat
 color=b
-converted=2
 cost={1}{B}
 pt=1/1
 ability=bloodthirst 1,flying

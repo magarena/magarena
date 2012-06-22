@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Snake
 color=g
-converted=2
 cost={1}{G}
 pt=1/1
 ability=infect,regenerate {1}{G}

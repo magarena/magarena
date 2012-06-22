@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Knight
 color=u
-converted=5
 cost={4}{U}
 pt=3/2
 ability=flying,enters draw card

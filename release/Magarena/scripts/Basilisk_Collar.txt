@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Artifact
 subtype=Equipment
-converted=1
 cost={1}
 equip={2}
 given_ability=deathtouch,lifelink

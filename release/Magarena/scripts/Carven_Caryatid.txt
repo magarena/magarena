@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit
 color=g
-converted=3
 cost={1}{G}{G}
 pt=2/5
 ability=defender,enters draw card

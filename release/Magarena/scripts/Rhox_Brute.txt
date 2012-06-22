@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Rhino,Warrior
 color=rg
-converted=4
 cost={2}{R}{G}
 pt=4/4
 timing=main

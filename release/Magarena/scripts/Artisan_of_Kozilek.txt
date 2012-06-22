@@ -5,7 +5,6 @@ value=5
 rarity=U
 type=Creature
 subtype=Eldrazi
-converted=9
 cost={9}
 pt=10/9
 ability=annihilator 2

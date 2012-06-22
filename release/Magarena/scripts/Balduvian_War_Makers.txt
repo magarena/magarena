@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Barbarian
 color=r
-converted=5
 cost={4}{R}
 pt=3/3
 ability=haste,rampage 1

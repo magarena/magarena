@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Wizard
 color=r
-converted=2
 cost={1}{R}
 pt=1/1
 ability=enters damage target 1

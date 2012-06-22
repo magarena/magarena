@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Eldrazi,Drone
 color=r
-converted=6
 cost={5}{R}
 pt=5/4
 ability=trample

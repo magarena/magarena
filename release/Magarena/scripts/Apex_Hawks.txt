@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Bird
 color=w
-converted=3
 cost={2}{W}
 pt=2/2
 ability=flying,enters with +1/+1 for each kick {1}{W}

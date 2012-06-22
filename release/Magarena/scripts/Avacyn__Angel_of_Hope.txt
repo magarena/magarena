@@ -6,7 +6,6 @@ rarity=M
 type=Legendary,Creature
 subtype=Angel
 color=w
-converted=8
 cost={5}{W}{W}{W}
 pt=8/8
 ability=flying,vigilance

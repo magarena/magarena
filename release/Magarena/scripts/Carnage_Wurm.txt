@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Wurm
 color=g
-converted=7
 cost={6}{G}
 pt=6/6
 ability=bloodthirst 3,trample

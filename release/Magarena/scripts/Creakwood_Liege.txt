@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Horror
 color=bg
-converted=4
 cost={1}{B/G}{B/G}{B/G}
 pt=2/2
 static=player

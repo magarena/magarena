@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Troll
 color=bg
-converted=1
 cost={B/G}
 pt=1/1
 ability=regenerate {1}{B/G}

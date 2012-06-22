@@ -7,7 +7,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=r
-converted=3
 cost={2}{R}
 given_ability=first strike
 ability=enters damage target 3

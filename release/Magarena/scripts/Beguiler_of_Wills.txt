@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Human,Wizard
 color=u
-converted=5
 cost={3}{U}{U}
 pt=1/1
 timing=main

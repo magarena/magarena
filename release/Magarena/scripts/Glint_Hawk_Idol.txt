@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/som/156.jpg
 value=2
 rarity=C
 type=Artifact
-converted=2
 cost={2}
 timing=artifact
 requires_card_code

@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Sorcery
 color=g
-converted=4
 cost={2}{G}{G}
 timing=draw
 requires_card_code

@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Goblin,Soldier
 color=rw
-converted=3
 cost={R/W}{R/W}{R/W}
 pt=2/2
 timing=main

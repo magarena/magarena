@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Zombie,Soldier
 color=ub
-converted=3
 cost={1}{U}{B}
 pt=2/2
 ability=deathtouch

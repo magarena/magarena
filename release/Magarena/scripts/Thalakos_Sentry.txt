@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Thalakos,Soldier
 color=u
-converted=2
 cost={1}{U}
 pt=1/2
 ability=shadow

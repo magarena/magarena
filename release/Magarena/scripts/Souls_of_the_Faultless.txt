@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit
 color=wb
-converted=3
 cost={W}{B}{B}
 pt=0/4
 ability=defender

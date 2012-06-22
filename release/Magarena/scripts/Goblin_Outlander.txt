@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Goblin,Scout
 color=rb
-converted=2
 cost={B}{R}
 pt=2/2
 timing=main

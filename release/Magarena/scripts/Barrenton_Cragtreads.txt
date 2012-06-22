@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Kithkin,Scout
 color=wu
-converted=4
 cost={2}{W/U}{W/U}
 pt=3/3
 ability=can't be blocked by red creatures

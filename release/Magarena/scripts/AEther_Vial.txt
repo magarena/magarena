@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/ds/91.jpg
 value=2
 rarity=U
 type=Artifact
-converted=1
 cost={1}
 timing=main
 requires_card_code

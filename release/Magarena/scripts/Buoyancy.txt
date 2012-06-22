@@ -6,7 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=u
-converted=2
 cost={1}{U}
 ability=flash
 given_ability=flying

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Treefolk,Shaman
 color=g
-converted=8
 cost={5}{G}{G}{G}
 pt=6/6
 ability=trample,persist

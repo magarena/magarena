@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Kithkin,Knight
 color=w
-converted=2
 cost={W}{W}
 pt=2/2
 ability=first strike,lifelink

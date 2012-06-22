@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Goblin
 color=r
-converted=3
 cost={2}{R}
 pt=1/1
 ability=doesn't untap during untap step,ping 1

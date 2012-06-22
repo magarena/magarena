@@ -6,7 +6,6 @@ removal=2
 rarity=C
 type=Instant
 color=u
-converted=3
 cost={2}{U}
 timing=removal
 requires_card_code

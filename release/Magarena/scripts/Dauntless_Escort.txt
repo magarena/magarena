@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Rhino,Soldier
 color=gw
-converted=3
 cost={1}{G}{W}
 pt=3/3
 timing=fmain

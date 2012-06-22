@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Instant
 color=w
-converted=3
 cost={2}{W}
 timing=tapping
 requires_card_code

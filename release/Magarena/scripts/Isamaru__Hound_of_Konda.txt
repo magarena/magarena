@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Hound
 color=w
-converted=1
 cost={W}
 pt=2/2
 timing=main

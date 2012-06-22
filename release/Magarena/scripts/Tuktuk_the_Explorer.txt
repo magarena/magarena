@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Goblin
 color=r
-converted=3
 cost={2}{R}
 pt=1/1
 ability=haste

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/mbs/134.jpg
 value=3
 rarity=U
 type=Artifact
-converted=2
 cost={2}
 ability=enters tapped,enters with charge 3,tap drain add mana any
 timing=tapland

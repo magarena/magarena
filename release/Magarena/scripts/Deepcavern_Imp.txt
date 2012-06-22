@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Imp,Rebel
 color=b
-converted=3
 cost={2}{B}
 pt=2/2
 ability=flying,haste

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Elf,Shaman
 color=g
-converted=3
 cost={2}{G}
 pt=2/2
 timing=main

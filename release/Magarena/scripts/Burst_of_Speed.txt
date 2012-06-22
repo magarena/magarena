@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Sorcery
 color=r
-converted=1
 cost={R}
 timing=fmain
 requires_card_code

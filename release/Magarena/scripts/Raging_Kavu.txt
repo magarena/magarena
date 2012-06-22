@@ -8,7 +8,6 @@ rarity=R
 type=Creature
 subtype=Kavu
 color=rg
-converted=3
 cost={1}{R}{G}
 pt=3/1
 timing=fmain

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Faerie,Rogue
 color=u
-converted=2
 cost={1}{U}
 pt=1/1
 ability=flying,die may draw card

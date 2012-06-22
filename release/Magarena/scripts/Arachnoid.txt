@@ -6,7 +6,6 @@ ability=reach
 rarity=U
 type=Artifact,Creature
 subtype=Spider
-converted=6
 cost={6}
 pt=2/6
 timing=main

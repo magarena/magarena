@@ -6,7 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=u
-converted=1
 cost={U}
 given_ability=shroud
 timing=aura

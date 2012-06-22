@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Elk,Beast
 color=g
-converted=6
 cost={5}{G}
 pt=5/4
 ability=blocked by pump +2/+2

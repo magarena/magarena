@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Sorcery
 color=u
-converted=2
 cost={1}{U}
 timing=nextturn
 requires_card_code

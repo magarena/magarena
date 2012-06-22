@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Wolverine
 color=g
-converted=1
 cost={G}
 pt=1/1
 ability=blocked pump +2/+0

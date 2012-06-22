@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Knight
 color=w
-converted=2
 cost={1}{W}
 pt=2/2
 timing=main

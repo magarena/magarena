@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Artifact,Creature
 subtype=Slith
-converted=2
 cost={2}
 ability=combat damage grow player,modular 1
 timing=main

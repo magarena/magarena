@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Spider
 color=g
-converted=3
 cost={2}{G}
 pt=1/5
 timing=main

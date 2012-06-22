@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Bird
 color=guw
-converted=4
 cost={2}{G/U}{W}
 pt=2/2
 ability=flying,enters draw card

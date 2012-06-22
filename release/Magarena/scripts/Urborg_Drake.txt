@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Drake
 color=bu
-converted=3
 cost={1}{U}{B}
 pt=2/3
 timing=main

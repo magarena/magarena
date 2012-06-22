@@ -6,7 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 color=g
-converted=2
 cost={1}{G}
 timing=aura
 enchant=can't attack or block,pos creature

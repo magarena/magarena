@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Human,Druid
 color=g
-converted=1
 cost={G}
 pt=0/1
 ability=exalted,tap add mana {G} or {W} or {U}

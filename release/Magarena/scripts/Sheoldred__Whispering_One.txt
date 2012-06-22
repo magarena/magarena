@@ -6,7 +6,6 @@ rarity=M
 type=Legendary,Creature
 subtype=Praetor
 color=b
-converted=7
 cost={5}{B}{B}
 pt=6/6
 ability=swampwalk

@@ -6,7 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=r
-converted=1
 cost={R}
 given_ability=attacks each turn if able
 given_pt=+1/-1

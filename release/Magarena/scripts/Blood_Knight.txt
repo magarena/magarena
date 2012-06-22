@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Human,Knight
 color=r
-converted=2
 cost={R}{R}
 pt=2/2
 timing=main

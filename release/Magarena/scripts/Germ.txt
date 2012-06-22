@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Germ
 color=b
-converted=0
 cost={0}
 pt=0/0

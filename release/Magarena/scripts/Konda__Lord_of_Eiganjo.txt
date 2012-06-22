@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Human,Samurai
 color=w
-converted=7
 cost={5}{W}{W}
 pt=3/3
 ability=vigilance,indestructible,bushido 5

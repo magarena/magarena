@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Zombie,Giant
 color=b
-converted=5
 cost={4}{B}
 pt=4/3
 timing=main

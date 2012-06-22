@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elf,Scout
 color=gw
-converted=2
 cost={1}{G/W}
 pt=2/2
 ability=persist

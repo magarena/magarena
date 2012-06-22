@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Artifact,Creature
 subtype=Golem
-converted=8
 cost={8}
 ability=modular 6
 timing=main

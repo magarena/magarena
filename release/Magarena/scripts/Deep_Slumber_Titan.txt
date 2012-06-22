@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Giant,Warrior
 color=r
-converted=4
 cost={2}{R}{R}
 pt=7/7
 ability=doesn't untap during untap step,enters tapped

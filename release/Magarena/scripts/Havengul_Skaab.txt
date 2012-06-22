@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Zombie,Horror
 color=u
-converted=6
 cost={5}{U}
 pt=4/5
 timing=main

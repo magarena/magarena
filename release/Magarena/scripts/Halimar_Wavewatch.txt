@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Merfolk,Soldier
 color=u
-converted=2
 cost={1}{U}
 pt=0/3
 ability=level up {2} 5

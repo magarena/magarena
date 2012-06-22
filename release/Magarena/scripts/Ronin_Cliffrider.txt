@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Samurai
 color=r
-converted=5
 cost={3}{R}{R}
 pt=2/2
 ability=bushido 1

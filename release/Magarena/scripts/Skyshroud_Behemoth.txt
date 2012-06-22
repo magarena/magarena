@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Beast
 color=g
-converted=7
 cost={5}{G}{G}
 pt=10/10
 ability=enters tapped,fading 2

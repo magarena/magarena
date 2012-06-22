@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Giant
 color=w
-converted=3
 cost={2}{W}
 pt=3/3
 ability=cumulative upkeep {W/U}

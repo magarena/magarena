@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Artifact,Creature
 subtype=Wurm
-converted=6
 cost={6}
 pt=6/6
 ability=deathtouch,lifelink

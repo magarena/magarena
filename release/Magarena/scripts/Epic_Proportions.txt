@@ -6,7 +6,6 @@ rarity=R
 type=Enchantment
 subtype=Aura
 color=g
-converted=6
 cost={4}{G}{G}
 given_pt=5/5
 given_ability=trample

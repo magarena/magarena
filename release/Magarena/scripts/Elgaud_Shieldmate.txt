@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Soldier
 color=u
-converted=4
 cost={3}{U}
 pt=2/3
 ability=soulbond

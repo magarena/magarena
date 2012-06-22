@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Instant
 color=ub
-converted=3
 cost={U}{U}{B}
 timing=counter
 requires_card_code

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Badger,Beast
 color=r
-converted=5
 cost={4}{R}
 pt=3/3
 ability=mountainwalk

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Vampire
 color=r
-converted=1
 cost={R}
 pt=1/1
 ability=can't be blocked by humans,combat damage grow player

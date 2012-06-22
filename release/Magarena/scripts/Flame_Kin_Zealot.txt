@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Elemental,Berserker
 color=rw
-converted=4
 cost={1}{R}{R}{W}
 pt=2/2
 timing=fmain

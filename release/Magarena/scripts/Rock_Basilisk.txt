@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Basilisk
 color=rg
-converted=6
 cost={4}{R}{G}
 pt=4/5
 timing=main

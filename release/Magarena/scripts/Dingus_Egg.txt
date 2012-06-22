@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/8e/297.jpg
 value=3
 rarity=R
 type=Artifact
-converted=4
 cost={4}
 timing=main
 requires_card_code

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Ogre,Shaman,Ally
 color=b
-converted=5
 cost={4}{B}
 pt=3/2
 timing=main

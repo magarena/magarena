@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Artifact
 subtype=Equipment
-converted=6
 cost={6}
 equip={6}
 given_pt=6/6

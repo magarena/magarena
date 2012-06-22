@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Insect
 color=g
-converted=2
 cost={1}{G}
 pt=2/4
 timing=main

@@ -6,7 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 color=g
-converted=1
 cost={G}
 timing=enchantment
 enchant=pump,pos creature

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elf,Rogue
 color=rwg
-converted=2
 cost={R/W}{G}
 pt=2/1
 timing=main

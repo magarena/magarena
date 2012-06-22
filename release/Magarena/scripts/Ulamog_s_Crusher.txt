@@ -5,7 +5,6 @@ value=5
 rarity=C
 type=Creature
 subtype=Eldrazi
-converted=8
 cost={8}
 pt=8/8
 ability=annihilator 2,attacks each turn if able

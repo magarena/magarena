@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Insect
 color=g
-converted=3
 cost={2}{G}
 pt=0/1
 ability=flying,regenerate {G}

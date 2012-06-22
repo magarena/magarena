@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Goblin,Shaman
 color=r
-converted=4
 cost={3}{R}
 pt=1/1
 ability=bloodthirst 1

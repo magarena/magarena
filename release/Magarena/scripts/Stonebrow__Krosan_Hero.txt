@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Centaur,Warrior
 color=rg
-converted=5
 cost={3}{R}{G}
 pt=4/4
 ability=trample

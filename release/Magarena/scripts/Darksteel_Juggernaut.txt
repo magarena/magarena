@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Artifact,Creature
 subtype=Juggernaut
-converted=5
 cost={5}
 ability=indestructible,attacks each turn if able
 timing=main

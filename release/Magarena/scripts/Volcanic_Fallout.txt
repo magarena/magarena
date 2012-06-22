@@ -6,7 +6,6 @@ removal=2
 rarity=U
 type=Instant
 color=r
-converted=3
 cost={1}{R}{R}
 ability=can't be countered
 timing=removal

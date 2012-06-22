@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elemental,Ox
 color=r
-converted=3
 cost={2}{R}
 pt=5/1
 ability=haste

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Elf,Knight
 color=gw
-converted=3
 cost={G/W}{G/W}{G/W}
 pt=3/4
 ability=vigilance

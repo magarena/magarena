@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/fve/7.jpg
 value=3
 rarity=M
 type=Artifact
-converted=0
 cost={0}
 ability=tap sac add mana any
 timing=artifact

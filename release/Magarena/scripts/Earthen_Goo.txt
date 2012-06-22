@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Ooze
 color=r
-converted=3
 cost={2}{R}
 pt=2/2
 ability=trample,cumulative upkeep {R/G}

@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Jellyfish
 color=u
-converted=3
 cost={2}{U}
 pt=2/2
 timing=fmain

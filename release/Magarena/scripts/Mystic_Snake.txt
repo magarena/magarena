@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Snake
 color=gu
-converted=4
 cost={1}{G}{U}{U}
 pt=2/2
 ability=flash

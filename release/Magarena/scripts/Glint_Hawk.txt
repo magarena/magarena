@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Bird
 color=w
-converted=1
 cost={W}
 pt=2/2
 ability=flying

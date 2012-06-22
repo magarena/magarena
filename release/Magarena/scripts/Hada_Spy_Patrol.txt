@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Rogue
 color=u
-converted=2
 cost={1}{U}
 pt=1/1
 ability=level up {2}{U} 3

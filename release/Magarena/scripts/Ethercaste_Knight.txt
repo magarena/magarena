@@ -6,7 +6,6 @@ rarity=C
 type=Artifact,Creature
 subtype=Human,Knight
 color=wu
-converted=2
 cost={W}{U}
 pt=1/3
 ability=exalted

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Elemental,Hound
 color=r
-converted=4
 cost={2}{R}{R}
 pt=2/2
 ability=double strike,undying

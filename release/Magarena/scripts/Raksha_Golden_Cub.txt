@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Cat,Soldier
 color=w
-converted=7
 cost={5}{W}{W}
 pt=3/4
 ability=vigilance

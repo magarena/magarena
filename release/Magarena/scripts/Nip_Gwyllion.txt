@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Hag
 color=bw
-converted=1
 cost={W/B}
 pt=1/1
 timing=main

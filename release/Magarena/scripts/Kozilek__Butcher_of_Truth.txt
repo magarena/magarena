@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi
-converted=10
 cost={10}
 pt=12/12
 ability=annihilator 4

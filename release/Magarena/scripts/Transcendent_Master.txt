@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Human,Cleric,Avatar
 color=w
-converted=3
 cost={1}{W}{W}
 pt=3/3
 ability=level up {1} 12

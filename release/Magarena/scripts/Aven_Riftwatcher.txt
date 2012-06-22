@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Bird,Rebel,Soldier
 color=w
-converted=3
 cost={2}{W}
 pt=2/3
 ability=flying,vanishing 3,enters gain life 2,leaves gain life 2 

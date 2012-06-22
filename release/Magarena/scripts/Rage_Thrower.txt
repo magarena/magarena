@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Shaman
 color=r
-converted=6
 cost={5}{R}
 pt=4/2
 timing=main

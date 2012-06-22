@@ -6,7 +6,6 @@ removal=1
 rarity=C
 type=Sorcery
 color=r
-converted=2
 cost={1}{R}
 timing=storm
 ability=storm

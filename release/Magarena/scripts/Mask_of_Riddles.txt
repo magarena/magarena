@@ -6,7 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 color=ub
-converted=2
 cost={U}{B}
 equip={2}
 given_ability=fear

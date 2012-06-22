@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Cleric
 color=w
-converted=1
 cost={W}
 pt=1/1
 ability=enters gain life 3

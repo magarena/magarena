@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Spirit,Wall
 color=w
-converted=4
 cost={3}{W}
 pt=1/6
 ability=defender,flying

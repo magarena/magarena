@@ -6,7 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 color=wu
-converted=2
 cost={W}{U}
 equip={2}
 given_pt=0/2

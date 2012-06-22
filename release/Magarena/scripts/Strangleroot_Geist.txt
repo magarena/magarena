@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit
 color=g
-converted=2
 cost={G}{G}
 pt=2/1
 ability=haste,undying

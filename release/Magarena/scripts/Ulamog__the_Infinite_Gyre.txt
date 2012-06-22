@@ -6,7 +6,6 @@ removal=3
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi
-converted=11
 cost={11}
 pt=10/10
 ability=annihilator 4,indestructible

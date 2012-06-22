@@ -7,7 +7,6 @@ rarity=R
 type=Creature
 subtype=Kraken
 color=u
-converted=8
 cost={5}{U}{U}{U}
 pt=6/6
 timing=main

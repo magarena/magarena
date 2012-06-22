@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Lizard
 color=bgr
-converted=3
 cost={B}{G}{R}
 pt=3/3
 timing=main

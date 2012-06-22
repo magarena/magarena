@@ -4,6 +4,5 @@ image=http://magiccards.info/extras/token/scars-of-mirrodin/golem.jpg
 value=3
 type=Artifact,Creature
 subtype=Golem
-converted=0
 cost={0}
 pt=3/3

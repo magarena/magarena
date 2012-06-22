@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Beast
 color=g
-converted=7
 cost={5}{G}{G}
 pt=9/9
 ability=shroud

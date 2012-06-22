@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Bird,Beast
 color=g
-converted=3
 cost={2}{G}
 pt=3/2
 timing=main

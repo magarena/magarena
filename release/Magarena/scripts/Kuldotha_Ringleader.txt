@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Giant,Berserker
 color=r
-converted=5
 cost={4}{R}
 pt=4/4
 timing=fmain

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Angel
 color=w
-converted=4
 cost={3}{W}
 pt=3/4
 ability=flash,flying

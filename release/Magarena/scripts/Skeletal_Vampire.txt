@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Vampire,Skeleton
 color=b
-converted=6
 cost={4}{B}{B}
 pt=3/3
 ability=flying

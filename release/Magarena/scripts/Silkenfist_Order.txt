@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Kor,Soldier
 color=w
-converted=5
 cost={3}{W}{W}
 pt=3/5
 timing=main

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Troll
 color=r
-converted=3
 cost={2}{R}
 pt=2/2
 ability=regenerate {R}

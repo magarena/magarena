@@ -6,7 +6,6 @@ removal=3
 rarity=U
 type=Instant
 color=r
-converted=6
 cost={4}{R}{R}
 ability=miracle {R}
 timing=removal

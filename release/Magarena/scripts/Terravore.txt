@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 color=g
-converted=3
 cost={1}{G}{G}
 ability=trample
 timing=main

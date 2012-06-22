@@ -7,7 +7,6 @@ rarity=C
 type=Artifact,Creature
 subtype=Bird
 color=uw
-converted=4
 cost={2}{W}{U}
 pt=3/3
 timing=main

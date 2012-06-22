@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elemental
 color=g
-converted=5
 cost={4}{G}
 pt=0/3
 ability=attacks pump +5/+0

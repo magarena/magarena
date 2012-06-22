@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Sphinx
 color=u
-converted=5
 cost={4}{U}
 pt=2/5
 ability=flying

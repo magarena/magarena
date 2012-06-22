@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Shapeshifter
 color=r
-converted=3
 cost={2}{R}
 pt=2/2
 ability=changeling

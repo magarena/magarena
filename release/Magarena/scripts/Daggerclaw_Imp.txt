@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Imp
 color=b
-converted=3
 cost={2}{B}
 pt=3/1
 ability=flying,can't block

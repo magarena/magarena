@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elf,Berserker
 color=g
-converted=1
 cost={G}
 pt=1/1
 ability=blocked by pump +1/+1

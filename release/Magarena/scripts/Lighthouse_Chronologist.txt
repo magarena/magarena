@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Human,Wizard
 color=u
-converted=2
 cost={1}{U}
 pt=1/3
 ability=level up {U} 7

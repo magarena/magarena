@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Ape
 color=g
-converted=3
 cost={2}{G}
 pt=3/4
 ability=flash,echo

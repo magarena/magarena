@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Artificer
 color=r
-converted=2
 cost={1}{R}
 pt=2/1
 timing=fmain

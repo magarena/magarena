@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Slith
 color=g
-converted=2
 cost={G}{G}
 pt=1/1
 ability=trample,combat damage grow player

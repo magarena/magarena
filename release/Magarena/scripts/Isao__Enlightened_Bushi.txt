@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Human,Samurai
 color=g
-converted=3
 cost={2}{G}
 pt=2/1
 ability=can't be countered,bushido 2

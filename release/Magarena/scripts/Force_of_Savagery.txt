@@ -7,7 +7,6 @@ rarity=R
 type=Creature
 subtype=Elemental
 color=g
-converted=3
 cost={2}{G}
 pt=8/0
 timing=main

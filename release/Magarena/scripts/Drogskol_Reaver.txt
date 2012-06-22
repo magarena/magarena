@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Spirit
 color=wu
-converted=7
 cost={5}{W}{U}
 pt=3/5
 ability=flying,double strike,lifelink

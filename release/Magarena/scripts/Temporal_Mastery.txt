@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Sorcery
 color=u
-converted=7
 cost={5}{U}{U}
 timing=nextturn
 ability=miracle {1}{U}

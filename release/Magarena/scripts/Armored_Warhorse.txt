@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Horse
 color=w
-converted=2
 cost={W}{W}
 pt=2/3
 timing=main

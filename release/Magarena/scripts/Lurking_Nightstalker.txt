@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Nightstalker
 color=b
-converted=2
 cost={B}{B}
 pt=1/1
 ability=attacks pump +2/+0

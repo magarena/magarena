@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Leviathan
 color=gu
-converted=7
 cost={5}{G}{U}
 pt=6/6
 ability=flying,trample,shroud

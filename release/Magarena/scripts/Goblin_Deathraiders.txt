@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Goblin,Warrior
 color=br
-converted=2
 cost={B}{R}
 pt=3/1
 ability=trample

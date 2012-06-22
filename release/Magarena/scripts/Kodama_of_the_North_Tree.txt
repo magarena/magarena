@@ -7,7 +7,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Spirit
 color=g
-converted=5
 cost={2}{G}{G}{G}
 pt=6/4
 timing=fmain

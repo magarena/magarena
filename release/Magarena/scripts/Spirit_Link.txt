@@ -6,7 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 color=w
-converted=1
 cost={W}
 timing=aura
 enchant=lifelink,creature

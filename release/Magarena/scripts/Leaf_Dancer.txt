@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Centaur
 color=g
-converted=3
 cost={1}{G}{G}
 pt=2/2
 timing=main

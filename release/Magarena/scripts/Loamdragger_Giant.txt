@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Giant,Warrior
 color=rg
-converted=7
 cost={4}{R/G}{R/G}{R/G}
 pt=7/6
 timing=main

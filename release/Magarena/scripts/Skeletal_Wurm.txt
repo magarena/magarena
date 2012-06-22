@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Skeleton,Wurm
 color=b
-converted=8
 cost={7}{B}
 pt=7/6
 ability=regenerate {B}

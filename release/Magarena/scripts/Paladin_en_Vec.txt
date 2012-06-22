@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Human,Knight
 color=w
-converted=3
 cost={1}{W}{W}
 pt=2/2
 ability=first strike,protection from black,protection from red

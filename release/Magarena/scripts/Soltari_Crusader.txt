@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Soltari,Knight
 color=w
-converted=3
 cost={2}{W}
 pt=2/1
 ability=shadow,pump {1}{W} +1/+0

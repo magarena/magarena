@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Zombie,Drake
 color=rbu
-converted=4
 cost={2}{B}{U/R}
 pt=3/1
 timing=fmain

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Elemental,Horse
 color=g
-converted=4
 cost={3}{G}
 pt=5/5
 ability=haste,echo {5}{G}

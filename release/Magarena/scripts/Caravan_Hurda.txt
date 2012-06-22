@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Giant
 color=w
-converted=5
 cost={4}{W}
 pt=1/5
 timing=main

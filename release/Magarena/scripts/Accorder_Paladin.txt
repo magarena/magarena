@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Knight
 color=w
-converted=2
 cost={1}{W}
 pt=3/1
 ability=battle cry

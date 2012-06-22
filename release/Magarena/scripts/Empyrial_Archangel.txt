@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Angel
 color=gwu
-converted=8
 cost={4}{G}{W}{W}{U}
 pt=5/8
 ability=flying,shroud

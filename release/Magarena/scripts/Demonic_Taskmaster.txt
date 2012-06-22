@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Demon
 color=b
-converted=3
 cost={2}{B}
 pt=4/3
 ability=flying

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Shade,Spirit
 color=b
-converted=4
 cost={3}{B}
 pt=1/1
 ability=regenerate {B},pump {B} +1/+1

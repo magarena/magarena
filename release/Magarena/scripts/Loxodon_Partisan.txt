@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elephant,Soldier
 color=w
-converted=5
 cost={4}{W}
 pt=3/4
 ability=battle cry

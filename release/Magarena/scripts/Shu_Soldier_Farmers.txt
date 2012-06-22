@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Soldier
 color=w
-converted=5
 cost={4}{W}
 pt=2/4
 ability=enters gain life 4

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Wurm
 color=g
-converted=5
 cost={3}{G}{G}
 pt=9/9
 ability=trample

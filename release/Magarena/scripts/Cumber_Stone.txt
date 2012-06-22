@@ -6,7 +6,6 @@ removal=1
 rarity=U
 type=Artifact
 color=u
-converted=4
 cost={3}{U}
 static=opponent
 timing=artifact

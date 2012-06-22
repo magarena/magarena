@@ -6,7 +6,6 @@ ability=flying,vigilance
 rarity=C
 type=Artifact,Creature
 subtype=Myr
-converted=2
 cost={2}
 pt=1/2
 timing=main

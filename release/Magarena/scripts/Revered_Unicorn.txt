@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Unicorn
 color=w
-converted=2
 cost={1}{W}
 pt=2/3
 ability=cumulative upkeep {1}

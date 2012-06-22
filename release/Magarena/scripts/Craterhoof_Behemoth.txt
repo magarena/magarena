@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Beast
 color=g
-converted=8
 cost={5}{G}{G}{G}
 pt=5/5
 ability=haste

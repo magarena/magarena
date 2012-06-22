@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit
 color=b
-converted=7
 cost={5}{B}{B}
 pt=3/3
 ability=soulshift 6

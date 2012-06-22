@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Plant,Wall
 color=g
-converted=2
 cost={1}{G}
 pt=0/4
 ability=defender,tap add mana {G}

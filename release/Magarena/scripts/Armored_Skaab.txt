@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Zombie,Warrior
 color=u
-converted=3
 cost={2}{U}
 pt=1/4
 timing=main

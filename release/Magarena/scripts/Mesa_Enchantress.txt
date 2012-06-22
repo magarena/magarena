@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Human,Druid
 color=w
-converted=3
 cost={1}{W}{W}
 pt=0/2
 timing=fmain

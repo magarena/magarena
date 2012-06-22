@@ -6,7 +6,6 @@ rarity=C
 type=Artifact,Creature
 subtype=Vedalken,Wizard
 color=wbu
-converted=2
 cost={W/B}{U}
 pt=2/1
 timing=main

@@ -6,7 +6,6 @@ value=2
 rarity=R
 type=Instant
 color=w
-converted=1
 cost={W}
 timing=pump
 requires_card_code

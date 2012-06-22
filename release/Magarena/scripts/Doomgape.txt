@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Elemental
 color=bg
-converted=7
 cost={4}{B/G}{B/G}{B/G}
 pt=10/10
 ability=trample

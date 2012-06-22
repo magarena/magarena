@@ -7,7 +7,6 @@ rarity=U
 type=Creature
 subtype=Pegasus
 color=w
-converted=2
 cost={1}{W}
 pt=2/1
 timing=main

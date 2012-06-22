@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Soldier
 color=w
-converted=1
 cost={W}
 pt=0/4
 ability=defender

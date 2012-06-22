@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Merfolk,Wizard,Ally
 color=u
-converted=5
 cost={4}{U}
 pt=1/3
 timing=main

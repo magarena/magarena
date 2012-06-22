@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Merfolk,Wizard
 color=u
-converted=0
 cost={0}
 pt=1/1

@@ -6,7 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 color=ub
-converted=3
 cost={2}{U/B}
 given_pt=-3/0
 ability=flash

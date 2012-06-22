@@ -6,7 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 color=rg
-converted=3
 cost={1}{R}{G}
 equip={3}
 timing=equipment

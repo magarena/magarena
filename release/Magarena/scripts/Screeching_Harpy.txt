@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Harpy,Beast
 color=b
-converted=4
 cost={2}{B}{B}
 pt=2/2
 ability=flying,regenerate {1}{B}

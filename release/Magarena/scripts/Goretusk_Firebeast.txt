@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elemental,Boar,Beast
 color=r
-converted=6
 cost={5}{R}
 pt=2/2
 ability=enters damage target player 4

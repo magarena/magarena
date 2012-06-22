@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Cat
 color=g
-converted=4
 cost={2}{G}{G}
 pt=3/3
 ability=blocked pump +2/+2

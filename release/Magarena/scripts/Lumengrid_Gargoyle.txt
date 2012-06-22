@@ -6,7 +6,6 @@ ability=flying
 rarity=U
 type=Artifact,Creature
 subtype=Gargoyle
-converted=6
 cost={6}
 pt=4/4
 timing=main

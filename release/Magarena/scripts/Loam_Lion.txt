@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Cat
 color=w
-converted=1
 cost={W}
 pt=1/1
 timing=main

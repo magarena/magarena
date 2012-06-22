@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Goblin
 color=r
-converted=2
 cost={1}{R}
 pt=1/2
 ability=protection from blue

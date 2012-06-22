@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Enchantment
 color=g
-converted=3
 cost={1}{G}{G}
 timing=enchantment
 requires_card_code

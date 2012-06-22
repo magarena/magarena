@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Vampire,Soldier
 color=br
-converted=3
 cost={1}{B}{R}
 pt=2/2
 ability=first strike

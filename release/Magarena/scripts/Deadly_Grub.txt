@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Insect
 color=b
-converted=3
 cost={2}{B}
 pt=3/1
 ability=vanishing 3

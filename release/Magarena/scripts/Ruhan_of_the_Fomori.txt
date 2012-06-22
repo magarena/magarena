@@ -6,7 +6,6 @@ rarity=M
 type=Legendary,Creature
 subtype=Giant,Warrior
 color=wur
-converted=4
 cost={1}{R}{W}{U}
 pt=7/7
 ability=attacks each turn if able

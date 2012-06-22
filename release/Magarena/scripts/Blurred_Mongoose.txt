@@ -7,7 +7,6 @@ rarity=R
 type=Creature
 subtype=Mongoose
 color=g
-converted=2
 cost={1}{G}
 pt=2/1
 timing=fmain

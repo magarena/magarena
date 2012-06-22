@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Hydra
 color=r
-converted=5
 cost={4}{R}
 pt=5/1
 ability=fading 5

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/isd/226.jpg
 value=4
 rarity=M
 type=Legendary,Artifact
-converted=4
 cost={4}
 timing=artifact
 requires_card_code

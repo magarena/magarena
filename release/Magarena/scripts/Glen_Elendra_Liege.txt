@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Faerie,Knight
 color=ub
-converted=4
 cost={1}{U/B}{U/B}{U/B}
 pt=2/3
 ability=flying

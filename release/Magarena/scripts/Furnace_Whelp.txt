@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Dragon
 color=r
-converted=4
 cost={2}{R}{R}
 pt=2/2
 ability=flying,pump {R} +1/+0

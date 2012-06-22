@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Warrior
 color=r
-converted=2
 cost={1}{R}
 pt=3/3
 ability=vanishing 2,enters damage target player 1,leaves damage target player 1

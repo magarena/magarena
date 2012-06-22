@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Dauthi,Soldier
 color=b
-converted=2
 cost={B}{B}
 pt=2/2
 ability=shadow,attacks each turn if able

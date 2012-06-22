@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Soldier
 color=w
-converted=3
 cost={2}{W}
 pt=1/4
 timing=main

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Zombie
 color=b
-converted=1
 cost={B}
 pt=2/2
 timing=main

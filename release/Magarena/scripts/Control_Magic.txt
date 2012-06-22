@@ -6,7 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 color=u
-converted=4
 cost={2}{U}{U}
 timing=aura
 enchant=gain control,neg creature

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/som/179.jpg
 value=5
 rarity=M
 type=Legendary,Artifact
-converted=0
 cost={0}
 timing=artifact
 requires_card_code

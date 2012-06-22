@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit
 color=w
-converted=2
 cost={1}{W}
 pt=1/1
 ability=flying

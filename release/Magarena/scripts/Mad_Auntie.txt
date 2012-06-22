@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Goblin,Shaman
 color=b
-converted=3
 cost={2}{B}
 pt=2/2
 static=player

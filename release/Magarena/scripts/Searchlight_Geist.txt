@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Spirit
 color=b
-converted=3
 cost={2}{B}
 pt=2/1
 ability=flying,gains {3}{B} deathtouch

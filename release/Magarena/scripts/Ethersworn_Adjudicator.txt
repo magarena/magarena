@@ -6,7 +6,6 @@ rarity=M
 type=Artifact,Creature
 subtype=Vedalken,Knight
 color=u
-converted=5
 cost={4}{U}
 pt=4/4
 ability=flying

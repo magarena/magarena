@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Sorcery
 color=b
-converted=1
 cost={B}
 timing=token
 requires_card_code

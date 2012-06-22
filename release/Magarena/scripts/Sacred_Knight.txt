@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Knight
 color=w
-converted=4
 cost={3}{W}
 pt=3/2
 ability=can't be blocked by black creatures,can't be blocked by red creatures

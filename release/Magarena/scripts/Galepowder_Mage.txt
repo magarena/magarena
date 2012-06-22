@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Kithkin,Wizard
 color=w
-converted=4
 cost={3}{W}
 pt=3/3
 ability=flying

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Drake
 color=g
-converted=1
 cost={G}
 pt=2/1
 ability=flying,haste,echo {1}{G}{G}

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Imp
 color=r
-converted=3
 cost={2}{R}
 pt=2/1
 ability=enters damage target creature 2

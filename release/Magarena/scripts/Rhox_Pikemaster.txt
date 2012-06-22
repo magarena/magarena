@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Rhino,Soldier
 color=w
-converted=4
 cost={2}{W}{W}
 pt=3/3
 ability=first strike

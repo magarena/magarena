@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Horror
 color=g
-converted=3
 cost={1}{G}{G}
 pt=2/3
 ability=mountainwalk

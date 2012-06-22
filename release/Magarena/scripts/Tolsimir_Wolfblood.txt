@@ -6,7 +6,6 @@ rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior
 color=gw
-converted=6
 cost={4}{G}{W}
 pt=3/4
 static=player

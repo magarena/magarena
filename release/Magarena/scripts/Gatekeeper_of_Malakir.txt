@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Vampire,Warrior
 color=b
-converted=2
 cost={B}{B}
 pt=2/2
 timing=fmain

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit
 color=u
-converted=3
 cost={1}{U}{U}
 pt=3/1
 ability=unblockable

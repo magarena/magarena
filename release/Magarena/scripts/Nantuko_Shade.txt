@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Insect,Shade
 color=b
-converted=2
 cost={B}{B}
 pt=2/1
 ability=pump {B} +1/+1

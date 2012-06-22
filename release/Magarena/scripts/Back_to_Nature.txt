@@ -5,7 +5,6 @@ value=1
 removal=2
 rarity=U
 type=Instant
-converted=2
 cost={1}{G}
 color=g
 timing=removal

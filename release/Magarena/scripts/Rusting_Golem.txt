@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Artifact,Creature
 subtype=Golem
-converted=4
 cost={4}
 ability=fading 5
 timing=main

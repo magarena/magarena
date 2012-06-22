@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Enchantment
 color=wb
-converted=7
 cost={4}{W/B}{W/B}{W/B}
 timing=enchantment
 requires_card_code

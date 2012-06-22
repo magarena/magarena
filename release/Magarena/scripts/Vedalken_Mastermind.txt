@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Vedalken,Wizard
 color=u
-converted=2
 cost={U}{U}
 pt=1/2
 timing=main

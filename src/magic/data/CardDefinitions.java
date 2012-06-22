@@ -55,7 +55,6 @@ public class CardDefinitions {
 		
         //every card should have a timing hint
         if (!card.isToken() && card.getTiming()==MagicTiming.None) {
-            System.err.println("ERROR! No timing hint for " + card.getName());
             throw new RuntimeException(card.getName() + " does not have a timing hint");
         }
 	}

@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Elemental
 color=bg
-converted=5
 cost={3}{B}{G}
 timing=smain
 requires_card_code

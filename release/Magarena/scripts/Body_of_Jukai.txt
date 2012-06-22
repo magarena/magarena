@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Spirit
 color=g
-converted=9
 cost={7}{G}{G}
 pt=8/5
 ability=trample,soulshift 8

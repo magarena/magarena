@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Goblin,Shaman
 color=r
-converted=3
 cost={2}{R}
 pt=2/1
 ability=haste

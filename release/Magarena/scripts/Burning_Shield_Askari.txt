@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Knight
 color=r
-converted=3
 cost={2}{R}
 pt=2/2
 ability=flanking,gains {R}{R} first strike

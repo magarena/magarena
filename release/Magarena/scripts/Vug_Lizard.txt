@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Lizard
 color=r
-converted=3
 cost={1}{R}{R}
 pt=3/4
 ability=mountainwalk,echo

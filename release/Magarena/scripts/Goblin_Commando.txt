@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Goblin
 color=r
-converted=5
 cost={4}{R}
 pt=2/2
 ability=enters damage target creature 2

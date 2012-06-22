@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Human,Knight
 color=w
-converted=1
 cost={W}
 pt=1/1
 ability=level up {W} 7

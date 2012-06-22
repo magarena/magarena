@@ -6,7 +6,6 @@ rarity=M
 type=Legendary,Creature
 subtype=Spirit,Cleric
 color=wu
-converted=3
 cost={1}{W}{U}
 pt=2/2
 ability=hexproof

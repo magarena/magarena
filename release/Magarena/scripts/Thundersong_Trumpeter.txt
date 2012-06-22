@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Soldier
 color=rw
-converted=2
 cost={R}{W}
 pt=2/1
 timing=smain

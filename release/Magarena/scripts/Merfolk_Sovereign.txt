@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Merfolk
 color=u
-converted=3
 cost={1}{U}{U}
 pt=2/2
 timing=fmain

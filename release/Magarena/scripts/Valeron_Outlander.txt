@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Human,Scout
 color=gw
-converted=2
 cost={G}{W}
 pt=2/2
 timing=main

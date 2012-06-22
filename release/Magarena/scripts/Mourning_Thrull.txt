@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Thrull
 color=bw
-converted=2
 cost={1}{W/B}
 pt=1/1
 timing=main

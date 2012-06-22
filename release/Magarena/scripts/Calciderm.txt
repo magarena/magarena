@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Beast
 color=w
-converted=4
 cost={2}{W}{W}
 pt=5/5
 ability=shroud,vanishing 4

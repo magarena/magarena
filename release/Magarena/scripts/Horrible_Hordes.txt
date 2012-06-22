@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Artifact,Creature
 subtype=Spirit
-converted=3
 cost={3}
 pt=2/2
 ability=rampage 1

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Treefolk,Horror
 color=bg
-converted=4
 cost={2}{B/G}{B/G}
 pt=6/6
 timing=main

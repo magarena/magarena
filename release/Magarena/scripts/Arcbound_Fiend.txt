@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Artifact,Creature
 subtype=Horror
-converted=6
 cost={6}
 ability=fear,modular 3
 timing=main

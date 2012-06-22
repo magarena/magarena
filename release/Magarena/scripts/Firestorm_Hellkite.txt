@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Dragon
 color=ur
-converted=6
 cost={4}{U}{R}
 pt=6/6
 ability=flying,trample,cumulative upkeep {U}{R}

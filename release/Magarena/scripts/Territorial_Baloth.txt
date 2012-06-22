@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Beast
 color=g
-converted=5
 cost={4}{G}
 pt=4/4
 ability=landfall pump +2/+2

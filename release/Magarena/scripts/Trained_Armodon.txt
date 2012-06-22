@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Elephant
 color=g
-converted=3
 cost={1}{G}{G}
 pt=3/3
 timing=main

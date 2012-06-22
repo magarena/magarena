@@ -6,7 +6,6 @@ rarity=M
 type=Creature
 subtype=Horror
 color=b
-converted=4
 cost={B}{B}{B}{B}
 pt=5/5
 ability=trample

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Elemental
 color=g
-converted=3
 cost={2}{G}
 ability=trample
 timing=main

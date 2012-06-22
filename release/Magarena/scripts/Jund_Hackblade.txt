@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Goblin,Berserker
 color=bgr
-converted=2
 cost={B/G}{R}
 pt=2/1
 timing=fmain

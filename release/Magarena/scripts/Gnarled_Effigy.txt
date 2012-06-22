@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/shm/251.jpg
 value=2
 rarity=U
 type=Artifact
-converted=4
 cost={4}
 timing=main
 requires_card_code

@@ -7,7 +7,6 @@ rarity=C
 type=Creature
 subtype=Faerie,Soldier
 color=bu
-converted=1
 cost={U/B}
 pt=2/1
 timing=smain

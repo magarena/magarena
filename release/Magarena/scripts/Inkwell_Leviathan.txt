@@ -7,7 +7,6 @@ rarity=R
 type=Artifact,Creature
 subtype=Leviathan
 color=u
-converted=9
 cost={7}{U}{U}
 pt=7/11
 timing=fmain

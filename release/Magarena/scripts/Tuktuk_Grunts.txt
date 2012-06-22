@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Goblin,Warrior,Ally
 color=r
-converted=5
 cost={4}{R}
 pt=2/2
 ability=haste,ally grow

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Wolverine
 color=g
-converted=4
 cost={2}{G}{G}
 pt=2/4
 ability=rampage 2

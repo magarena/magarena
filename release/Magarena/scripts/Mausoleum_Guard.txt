@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Scout
 color=w
-converted=4
 cost={3}{W}
 pt=2/2
 timing=main

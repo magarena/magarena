@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Artificer
 color=w
-converted=5
 cost={4}{W}
 pt=1/1
 static=player

@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Mercenary
 color=b
-converted=4
 cost={2}{B}{B}
 pt=2/2
 timing=main

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Elf,Cleric
 color=gw
-converted=3
 cost={2}{G/W}
 pt=2/2
 timing=smain

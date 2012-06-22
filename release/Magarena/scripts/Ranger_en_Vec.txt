@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Human,Soldier,Archer
 color=gw
-converted=3
 cost={1}{G}{W}
 pt=2/2
 ability=first strike,regenerate {G}

@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Elemental,Warrior
 color=br
-converted=3
 cost={B/R}{B/R}{B/R}
 pt=4/4
 ability=can't block

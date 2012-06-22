@@ -6,7 +6,6 @@ removal=4
 rarity=C
 type=Sorcery
 color=b
-converted=1
 cost={B}
 timing=removal
 

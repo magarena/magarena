@@ -6,7 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 color=w
-converted=2
 cost={1}{W}
 given_pt=1/1
 given_ability=protection from creatures

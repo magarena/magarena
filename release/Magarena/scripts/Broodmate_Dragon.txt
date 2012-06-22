@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Dragon
 color=brg
-converted=6
 cost={3}{B}{R}{G}
 pt=4/4
 ability=flying

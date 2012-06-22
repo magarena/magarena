@@ -6,7 +6,6 @@ removal=2
 rarity=C
 type=Enchantment
 color=r
-converted=1
 cost={R}
 timing=enchantment
 requires_card_code

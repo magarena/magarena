@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Plant,Wall
 color=g
-converted=4
 cost={3}{G}
 pt=3/3
 ability=defender,regenerate {G}

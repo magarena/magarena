@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Goblin,Shaman
 color=b
-converted=1
 cost={B}
 pt=1/1
 timing=fmain

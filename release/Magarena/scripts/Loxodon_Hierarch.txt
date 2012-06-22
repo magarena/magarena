@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Elephant,Cleric
 color=gw
-converted=4
 cost={2}{G}{W}
 pt=4/4
 ability=enters gain life 4

@@ -6,7 +6,6 @@ rarity=R
 type=Creature
 subtype=Minotaur,Shaman
 color=r
-converted=4
 cost={3}{R}
 pt=3/3
 ability=level up {1}{R} 6

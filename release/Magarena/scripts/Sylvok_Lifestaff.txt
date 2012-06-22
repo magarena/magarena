@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Artifact
 subtype=Equipment
-converted=1
 cost={1}
 equip={1}
 given_pt=1/0

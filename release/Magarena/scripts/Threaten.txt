@@ -6,7 +6,6 @@ removal=5
 rarity=U
 type=Sorcery
 color=r
-converted=3
 cost={2}{R}
 timing=removal
 requires_card_code

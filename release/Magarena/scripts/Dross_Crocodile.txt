@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Zombie,Crocodile
 color=b
-converted=4
 cost={3}{B}
 pt=5/1
 timing=main

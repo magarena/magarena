@@ -6,7 +6,6 @@ rarity=C
 type=Creature
 subtype=Goblin,Knight
 color=r
-converted=3
 cost={2}{R}
 pt=3/2
 timing=main

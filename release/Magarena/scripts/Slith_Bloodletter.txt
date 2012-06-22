@@ -6,7 +6,6 @@ rarity=U
 type=Creature
 subtype=Slith
 color=b
-converted=2
 cost={B}{B}
 pt=1/1
 ability=combat damage grow player,regenerate {1}{B}
