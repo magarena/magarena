@@ -54,7 +54,7 @@ public class Fettergeist {
                 final Object[] choiceResults) {
             final int x = event.getPlayer().controlsPermanent((MagicPermanent)event.getSource()) ? 1 : 0;
             final int amount = event.getPlayer().getNrOfPermanentsWithType(MagicType.Creature) - x;
-            final MagicManaCost cost = MagicManaCost.createCost("{"+amount+"}");
+            final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
             final MagicEvent triggerEvent = new MagicEvent(
                     event.getSource(),
                     event.getPlayer(),

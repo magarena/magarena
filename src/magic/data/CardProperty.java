@@ -69,12 +69,12 @@ public enum CardProperty {
     },
     COST() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setCost(MagicManaCost.createCost(value));
+			card.setCost(MagicManaCost.create(value));
         }
     },
     EQUIP() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setEquipCost(MagicManaCost.createCost(value));
+			card.setEquipCost(MagicManaCost.create(value));
         }
     },
     MANA() {

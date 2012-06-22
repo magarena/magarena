@@ -48,7 +48,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
                     new MagicMayChoice(
                             player + " may " + genDescription(amount),
                             new MagicPayManaCostChoice(
-                                    MagicManaCost.createCost(totalCost.toString()))),
+                                    MagicManaCost.create(totalCost.toString()))),
                     new Object[]{permanent},
                     this,
                     player + " may$ " + genDescription(amount) +

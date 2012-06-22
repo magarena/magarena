@@ -93,7 +93,7 @@ public class MagicKickerChoice extends MagicChoice {
             for (int c=count;c>0;c--) {
                 costText.append(text);
             }            
-            return MagicManaCost.createCost(costText.toString());
+            return MagicManaCost.create(costText.toString());
         }
     }
 

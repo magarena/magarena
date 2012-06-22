@@ -124,7 +124,7 @@ public enum MagicAbility {
     },
     Regenerate("regenerate",30) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(new MagicRegenerationActivation(manaCost));
         }
     },
@@ -158,7 +158,7 @@ public enum MagicAbility {
     Pump("pump", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final String[] token = arg.split(" ");
-            final MagicManaCost cost = MagicManaCost.createCost(token[0]);
+            final MagicManaCost cost = MagicManaCost.create(token[0]);
             final String[] pt = token[1].replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -167,14 +167,14 @@ public enum MagicAbility {
     },
     CumulativeUpkeep("cumulative upkeep",-30) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(new MagicCumulativeUpkeepTrigger(manaCost));
         }
     },
     LevelUp("level up", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final String[] token = arg.split(" ");
-            final MagicManaCost cost = MagicManaCost.createCost(token[0]);
+            final MagicManaCost cost = MagicManaCost.create(token[0]);
             final int maxLevel = Integer.parseInt(token[1]);
             card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
@@ -276,7 +276,7 @@ public enum MagicAbility {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
             final int idx = arg.indexOf(' ');
             final String[] token = {arg.substring(0,idx), arg.substring(idx+1)};
-            final MagicManaCost cost = MagicManaCost.createCost(token[0]);
+            final MagicManaCost cost = MagicManaCost.create(token[0]);
             final MagicAbility ability = MagicAbility.getAbility(token[1]);
             final MagicTiming timing = (ability == Haste || ability == Vigilance) ?
                 MagicTiming.FirstMain :
@@ -481,7 +481,7 @@ public enum MagicAbility {
             if (arg.isEmpty()) {
                 card.add(new MagicEchoTrigger(card.getCost()));
             } else {
-                card.add(new MagicEchoTrigger(MagicManaCost.createCost(arg)));
+                card.add(new MagicEchoTrigger(MagicManaCost.create(arg)));
             }
         }
     },
@@ -509,13 +509,13 @@ public enum MagicAbility {
     },
     Multicounter("enters with +1/+1 for each kick", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(new MagicPlayMulticounterEvent(manaCost));
         }
     },
     Miracle("miracle", 0) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.createCost(arg);
+            final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(new MagicMiracleTrigger(manaCost));
         }
     },
