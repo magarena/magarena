@@ -128,7 +128,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
             
             final MagicCardDefinition cardDefinition=card.getCardDefinition();
 
-            final CostPanel costPanel=new CostPanel(graveyard||cardDefinition.isLand()?null:cardDefinition.getCost());
+            final CostPanel costPanel=new CostPanel(graveyard||cardDefinition.isLand()?null:card.getCost());
             
             nameLabel=new JLabel(cardDefinition.getName());
             nameLabel.setForeground(cardDefinition.getRarityColor());

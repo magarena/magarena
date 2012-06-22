@@ -1,9 +1,5 @@
 package magic.model.mstatic;
 
-import magic.model.MagicGame;
-import magic.model.MagicSource;
-import magic.model.MagicManaCost;
-
 public enum MagicLayer {
     Card,        //0.  properties from the card, not formally defined in rules
     Copy,        //1.  copy 
@@ -22,13 +18,4 @@ public enum MagicLayer {
     Player,      //8.  affect player, not objects
     Game,        //9.  affect game rules, not objects
     ;
-
-    public static MagicManaCost getManaCost(final MagicSource source) {
-        final MagicManaCost cost = source.getCardDefinition().getCost();
-        final MagicGame game = source.getGame();
-
-        //cost modifications due to continous effects
-
-        return cost;
-    }
 }

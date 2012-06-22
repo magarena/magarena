@@ -97,6 +97,15 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         return token;
     }
     
+    public MagicManaCost getCost() {
+        final MagicManaCost cost = getCardDefinition().getCost();
+        final MagicGame game = getGame();
+
+        //cost modifications due to continous effects
+
+        return cost;
+    }
+    
     public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition,final MagicPlayer owner) {
         final MagicCard card=new MagicCard(cardDefinition,owner,MagicCard.TOKEN_ID);    
         card.setToken();
