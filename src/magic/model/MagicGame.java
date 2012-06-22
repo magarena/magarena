@@ -202,9 +202,13 @@ public class MagicGame {
         //score is RESET to zero
         this.score=0;
         
-        //historical items are cleared
+        //historical actions are not carried over
         this.actions=new MagicActionList();
+
+        //there should be no pending actions
+        assert game.delayedActions.isEmpty() : "delayedActions: " + game.delayedActions; 
         this.delayedActions=new MagicActionList();
+
         this.disableLog = true;
         /*
         this.undoPoints=null;
