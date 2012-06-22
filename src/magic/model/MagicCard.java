@@ -2,6 +2,9 @@ package magic.model;
 
 import magic.model.event.MagicActivation;
 import magic.model.target.MagicTarget;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicPermanentStatic;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -97,11 +100,42 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
         return token;
     }
     
+    public int getPower() {
+        return genPowerToughness().power();
+    }
+    
+    public int getToughness() {
+        return genPowerToughness().toughness();
+    }    
+    
+    public MagicPowerToughness genPowerToughness() {
+        return genPowerToughness(MagicPermanent.NONE);
+    }
+
+    public MagicPowerToughness genPowerToughness(final MagicPermanent perm) {
+        final MagicPowerToughness pt = cardDefinition.genCardPowerToughness();
+        cardDefinition.applyCDAPowerToughness(
+                getGame(), 
+                perm.isValid() ? perm.getController() : getOwner(),
+                perm,
+                pt);
+        return pt;
+    }
+    
     public MagicManaCost getCost() {
         final MagicManaCost cost = getCardDefinition().getCost();
         final MagicGame game = getGame();
 
         //cost modifications due to continous effects
+        for (final MagicPermanentStatic mpstatic : game.getStatics(MagicLayer.Game)) {
+            final MagicStatic mstatic = mpstatic.getStatic();
+            final MagicPermanent source = mpstatic.getPermanent();
+            /*
+            if (mstatic.accept(game, source, this)) {
+               mstatic.modManaCost(soure, this, cost);
+            }
+            */
+        }
 
         return cost;
     }

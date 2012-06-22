@@ -167,7 +167,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 }
                 if (cardDefinition.isCreature()) {
                     ImageDrawingUtils.drawAbilityInfo(g,this,cardDefinition.getAbilityFlags(),x1+2,y2-18);
-                    final String pt = cardDefinition.genPowerToughness(controller.getGame(),card.getOwner()).toString();
+                    final String pt = card.genPowerToughness().toString();
                     final int ptWidth=metrics.stringWidth(pt);                
                     ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,"",x2-ptWidth-4,y2-18,false);
                 }
