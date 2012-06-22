@@ -13,6 +13,7 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.mstatic.MagicLayer;
 
 public class MagicCardActivation extends MagicActivation {
     
@@ -34,7 +35,8 @@ public class MagicCardActivation extends MagicActivation {
 
     @Override
     protected MagicEvent[] getCostEvent(final MagicSource source) {
-        final MagicManaCost cost=getCardDefinition().getCost();
+        final MagicManaCost cost = MagicLayer.getManaCost(source);
+
         if (cost!=MagicManaCost.ZERO) {
             return new MagicEvent[]{new MagicPayManaCostEvent(source,source.getController(),cost)};
         } else {

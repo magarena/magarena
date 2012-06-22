@@ -242,7 +242,8 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
         return getName();
     }
 
-    private MagicGame getGame() {
+    @Override
+    public MagicGame getGame() {
         return getOwner().getGame();
     }
 

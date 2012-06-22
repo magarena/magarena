@@ -185,4 +185,9 @@ public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard> 
     public int compareTo(final MagicCard card) {
         return Long.signum(id - card.id);
     }
+    
+    @Override
+    public MagicGame getGame() {
+        return owner.getGame();
+    }
 }
