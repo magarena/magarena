@@ -20,4 +20,9 @@ public class MagicAddEventAction extends MagicAction {
     public void undoAction(final MagicGame game) {
         game.getEvents().removeLast();
     }
+    
+    @Override
+    public String toString() {
+        return super.toString() + " (" + event + ')';
+    }
 }
