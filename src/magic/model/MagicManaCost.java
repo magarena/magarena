@@ -139,16 +139,17 @@ public class MagicManaCost {
         String text = costText;
         boolean ok = text.length() > 0;
         while (ok && text.length() > 0) {
-            ok=false;
-            final Matcher matcher=PATTERN.matcher(text);
+            ok = false;
+            final Matcher matcher = PATTERN.matcher(text);
             if (matcher.matches()) {
-                final String type=matcher.group(1);
+                final String type = matcher.group(1);
                 if (addType(type, XCountArr, convertedArr)) {
-                    text=text.substring(type.length());
-                    ok=true;
+                    text = text.substring(type.length());
+                    ok = true;
                 }
             }
         }
+
         if (!ok) {
             throw new RuntimeException("Invalid cost \"" + costText + "\"");
         }
@@ -241,7 +242,7 @@ public class MagicManaCost {
         for (final MagicCostManaType type : MagicCostManaType.values()) {
             int amount = amounts[type.ordinal()];
             if (type == MagicCostManaType.Colorless) {
-                if (amount>16) {
+                while (amount>16) {
                     icons.add(COLORLESS_ICONS[16]);
                     amount-=16;
                 }
