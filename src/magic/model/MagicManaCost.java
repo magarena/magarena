@@ -121,23 +121,20 @@ public class MagicManaCost {
     public static final MagicManaCost GREEN_GREEN_WHITE_WHITE=MagicManaCost.create("{G}{G}{W}{W}");
     public static final MagicManaCost WHITE_OR_BLACK=MagicManaCost.create("{W/B}");
     public static final MagicManaCost WHITE_OR_BLACK_WHITE_OR_BLACK=MagicManaCost.create("{W/B}{W/B}");
-        
-    private final MagicCostManaType types[];
+
     private final int amounts[];
-    private int typeCount;
-    private int converted;
-    private int XCount;
-    private String costText;
-    private List<ImageIcon> icons;
-    private final MagicBuilderManaCost builderCost;    
+    private final String costText;
+    private final int converted;
+    private final int XCount;
+    private final MagicBuilderManaCost builderCost;
+    private final List<ImageIcon> icons;
     
-    private MagicManaCost(final String costText) {
-        this.costText=costText;
-        types=new MagicCostManaType[MagicCostManaType.NR_OF_TYPES];
-        amounts=new int[MagicCostManaType.NR_OF_TYPES];
-        XCount = 0;
-        typeCount=0;
-        converted=0;
+    private MagicManaCost(final String aCostText) {
+        costText = aCostText;
+        amounts = new int[MagicCostManaType.NR_OF_TYPES];
+        
+        final int XCountArr[] = {0}; 
+        final int convertedArr[] = {0};
 
         String text = costText;
         boolean ok = text.length() > 0;
@@ -146,7 +143,7 @@ public class MagicManaCost {
             final Matcher matcher=PATTERN.matcher(text);
             if (matcher.matches()) {
                 final String type=matcher.group(1);
-                if (addType(type)) {
+                if (addType(type, XCountArr, convertedArr)) {
                     text=text.substring(type.length());
                     ok=true;
                 }
@@ -155,40 +152,34 @@ public class MagicManaCost {
         if (!ok) {
             throw new RuntimeException("Invalid cost \"" + costText + "\"");
         }
-
+        
+        XCount = XCountArr[0];
+        converted = convertedArr[0];
+        
+        icons=new ArrayList<ImageIcon>();
         buildIcons();
 
         builderCost=new MagicBuilderManaCost();
         addTo(builderCost);
     }
     
-    private void addType(final MagicCostManaType type,final int amount) {
-        converted+=amount;
-        
-        for (int index=0;index<typeCount;index++) {
-            if (types[index]==type) {
-                amounts[index]+=amount;
-                return;
-            }
-        }
-        
-        types[typeCount]=type;
-        amounts[typeCount]=amount;
-        typeCount++;
+    private void addType(final MagicCostManaType type,final int amount,final int convertedArr[]) {
+        convertedArr[0] += amount;
+        amounts[type.ordinal()] += amount;
     }
     
-    private boolean addType(final String typeText) {
+    private boolean addType(final String typeText, final int XCountArr[], final int convertedArr[]) {
         final String symbol = typeText.substring(1, typeText.length() - 1);
         if (symbol.equals("X")) {
-            XCount++;
+            XCountArr[0]++;
             return true;
         } else if (isNumeric(symbol)) {
-            addType(MagicCostManaType.Colorless,Integer.parseInt(symbol));
+            addType(MagicCostManaType.Colorless,Integer.parseInt(symbol),convertedArr);
             return true;
         } else {
             for (final MagicCostManaType type : MagicCostManaType.values()) {
                 if (type.getText().equals(typeText)) {
-                    addType(type,1);
+                    addType(type,1,convertedArr);
                     return true;
                 }
             }
@@ -205,10 +196,6 @@ public class MagicManaCost {
         return true;
     }
 
-    private void setText(final String aCostText) {
-        this.costText=aCostText;
-    }
-    
     public String getText() {
         return costText;
     }
@@ -224,24 +211,14 @@ public class MagicManaCost {
     public boolean hasX() {
         return XCount > 0;
     }
-                
-    public MagicCondition getCondition() {
-        MagicCondition cond = CONDS_MAP.get(costText);
-        if (cond == null) {
-            cond = new MagicManaCostCondition(this);
-            CONDS_MAP.put(costText, cond);
-        }
-        return cond;
-    }
     
     public List<MagicCostManaType> getCostManaTypes(final int x) {
         final List<MagicCostManaType> costManaTypes=new ArrayList<MagicCostManaType>();
         int colorless=x;
 
-        for (int index=0;index<typeCount;index++) {
-            final MagicCostManaType costManaType=types[index];
-            int amount=amounts[index];
-            if (costManaType==MagicCostManaType.Colorless) {
+        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
+            int amount=amounts[costManaType.ordinal()];
+            if (costManaType == MagicCostManaType.Colorless) {
                 colorless+=amount;
             } else {
                 for (;amount>0;amount--) {
@@ -258,20 +235,19 @@ public class MagicManaCost {
     }
 
     private void buildIcons() {
-        icons=new ArrayList<ImageIcon>();
         for (int x=XCount;x>0;x--) {
             icons.add(IconImages.COST_X);
         }
-        for (int i=0;i<typeCount;i++) {
-            int amount=amounts[i];
-            if (types[i]==MagicCostManaType.Colorless) {
+        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
+            int amount = amounts[costManaType.ordinal()];
+            if (costManaType == MagicCostManaType.Colorless) {
                 if (amount>16) {
                     icons.add(COLORLESS_ICONS[16]);
                     amount-=16;
                 }
                 icons.add(COLORLESS_ICONS[amount]);
             } else {
-                final ImageIcon icon=types[i].getIcon();
+                final ImageIcon icon = costManaType.getIcon();
                 for (int a=amount;a>0;a--) {
                     icons.add(icon);
                 }
@@ -284,32 +260,32 @@ public class MagicManaCost {
     }
     
     int getCostScore(final MagicPlayerProfile profile) {
-
         final int singleCounts[]=new int[MagicManaType.NR_OF_TYPES];
         int doubleCount=0;
         int maxSingleCount=0;
-        for (int index=0;index<typeCount;index++) {    
-            if (types[index]!=MagicCostManaType.Colorless) {
-                final MagicManaType profileTypes[]=types[index].getTypes(profile);
-                final int amount=amounts[index];
-                switch (profileTypes.length) {
-                    case 0:
-                        return 0;
-                    case 1:
-                        final int typeIndex=profileTypes[0].ordinal();
-                        singleCounts[typeIndex]+=amount;
-                        maxSingleCount=Math.max(maxSingleCount,singleCounts[typeIndex]);
-                        break;
-                    case 2:
-                        doubleCount+=amount;
-                        break;
-                }
-            } 
+        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
+            final int amount = amounts[costManaType.ordinal()];
+            if (costManaType == MagicCostManaType.Colorless || amount == 0) {
+                continue;
+            }
+            final MagicManaType profileTypes[] = costManaType.getTypes(profile);
+            switch (profileTypes.length) {
+                case 0:
+                    return 0;
+                case 1:
+                    final int typeIndex=profileTypes[0].ordinal();
+                    singleCounts[typeIndex]+=amount;
+                    maxSingleCount=Math.max(maxSingleCount,singleCounts[typeIndex]);
+                    break;
+                case 2:
+                    doubleCount+=amount;
+                    break;
+            }
         }
         return 2*converted+3*(10-SINGLE_PENALTY[maxSingleCount]-DOUBLE_PENALTY[doubleCount]);
     }
     
-    public int getConvertedCost() {    
+    public int getConvertedCost() {
         return converted;
     }
         
@@ -318,8 +294,8 @@ public class MagicManaCost {
     }
     
     public void addTo(final MagicBuilderManaCost aBuilderCost) {
-        for (int index=0;index<typeCount;index++) {
-            aBuilderCost.addType(types[index],amounts[index]);
+        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
+            aBuilderCost.addType(costManaType,amounts[costManaType.ordinal()]);
         }
         if (hasX()) {
             aBuilderCost.setXCount(XCount);
@@ -328,17 +304,26 @@ public class MagicManaCost {
     }
     
     public void addTo(final MagicBuilderManaCost aBuilderCost,final int x) {
-        for (int index=0;index<typeCount;index++) {
-            aBuilderCost.addType(types[index],amounts[index]);
+        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
+            aBuilderCost.addType(costManaType,amounts[costManaType.ordinal()]);
         }
         aBuilderCost.addType(MagicCostManaType.Colorless,x);
         aBuilderCost.compress();
     }
+                
+    public MagicCondition getCondition() {
+        MagicCondition cond = CONDS_MAP.get(costText);
+        if (cond == null) {
+            cond = new MagicManaCostCondition(this);
+            CONDS_MAP.put(costText, cond);
+        }
+        return cond;
+    }
     
     public static MagicManaCost create(final String costText) {
-        MagicManaCost cost=COSTS_MAP.get(costText);
-        if (cost==null) {
-            cost=new MagicManaCost(costText);
+        MagicManaCost cost = COSTS_MAP.get(costText);
+        if (cost == null) {
+            cost = new MagicManaCost(costText);
             COSTS_MAP.put(costText,cost);
         }
         return cost;
