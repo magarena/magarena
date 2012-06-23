@@ -213,41 +213,41 @@ public class MagicManaCost {
     }
     
     public List<MagicCostManaType> getCostManaTypes(final int x) {
-        final List<MagicCostManaType> costManaTypes=new ArrayList<MagicCostManaType>();
+        final List<MagicCostManaType> types=new ArrayList<MagicCostManaType>();
         int colorless=x;
 
-        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
-            int amount=amounts[costManaType.ordinal()];
-            if (costManaType == MagicCostManaType.Colorless) {
+        for (final MagicCostManaType type : MagicCostManaType.values()) {
+            int amount=amounts[type.ordinal()];
+            if (type == MagicCostManaType.Colorless) {
                 colorless+=amount;
             } else {
                 for (;amount>0;amount--) {
-                    costManaTypes.add(costManaType);
+                    types.add(type);
                 }
             }
         }
         
         for (;colorless>0;colorless--) {
-            costManaTypes.add(MagicCostManaType.Colorless);
+            types.add(MagicCostManaType.Colorless);
         }
         
-        return costManaTypes;
+        return types;
     }
 
     private void buildIcons() {
         for (int x=XCount;x>0;x--) {
             icons.add(IconImages.COST_X);
         }
-        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
-            int amount = amounts[costManaType.ordinal()];
-            if (costManaType == MagicCostManaType.Colorless) {
+        for (final MagicCostManaType type : MagicCostManaType.values()) {
+            int amount = amounts[type.ordinal()];
+            if (type == MagicCostManaType.Colorless) {
                 if (amount>16) {
                     icons.add(COLORLESS_ICONS[16]);
                     amount-=16;
                 }
                 icons.add(COLORLESS_ICONS[amount]);
             } else {
-                final ImageIcon icon = costManaType.getIcon();
+                final ImageIcon icon = type.getIcon();
                 for (int a=amount;a>0;a--) {
                     icons.add(icon);
                 }
@@ -263,12 +263,12 @@ public class MagicManaCost {
         final int singleCounts[]=new int[MagicManaType.NR_OF_TYPES];
         int doubleCount=0;
         int maxSingleCount=0;
-        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
-            final int amount = amounts[costManaType.ordinal()];
-            if (costManaType == MagicCostManaType.Colorless || amount == 0) {
+        for (final MagicCostManaType type : MagicCostManaType.values()) {
+            final int amount = amounts[type.ordinal()];
+            if (type == MagicCostManaType.Colorless || amount == 0) {
                 continue;
             }
-            final MagicManaType profileTypes[] = costManaType.getTypes(profile);
+            final MagicManaType profileTypes[] = type.getTypes(profile);
             switch (profileTypes.length) {
                 case 0:
                     return 0;
@@ -294,8 +294,8 @@ public class MagicManaCost {
     }
     
     public void addTo(final MagicBuilderManaCost aBuilderCost) {
-        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
-            aBuilderCost.addType(costManaType,amounts[costManaType.ordinal()]);
+        for (final MagicCostManaType type : MagicCostManaType.values()) {
+            aBuilderCost.addType(type,amounts[type.ordinal()]);
         }
         if (hasX()) {
             aBuilderCost.setXCount(XCount);
@@ -304,8 +304,8 @@ public class MagicManaCost {
     }
     
     public void addTo(final MagicBuilderManaCost aBuilderCost,final int x) {
-        for (final MagicCostManaType costManaType : MagicCostManaType.values()) {
-            aBuilderCost.addType(costManaType,amounts[costManaType.ordinal()]);
+        for (final MagicCostManaType type : MagicCostManaType.values()) {
+            aBuilderCost.addType(type,amounts[type.ordinal()]);
         }
         aBuilderCost.addType(MagicCostManaType.Colorless,x);
         aBuilderCost.compress();
