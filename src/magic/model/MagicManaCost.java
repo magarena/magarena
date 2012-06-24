@@ -18,7 +18,7 @@ public class MagicManaCost {
     private static final Map<String,MagicManaCost> COSTS_MAP=new HashMap<String,MagicManaCost>();
     private static final Map<String,MagicCondition> CONDS_MAP=new HashMap<String,MagicCondition>();
 
-    private static final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d+/]+\\})(?:\\{.+)?");
+    private static final Pattern PATTERN=Pattern.compile("\\{[A-Z\\d/]+\\}");
 
     private static final int SINGLE_PENALTY[]={0,1,1,3,6,9};
     private static final int DOUBLE_PENALTY[]={0,0,1,2,4,6};
@@ -136,22 +136,9 @@ public class MagicManaCost {
         final int XCountArr[] = {0}; 
         final int convertedArr[] = {0};
 
-        String text = costText;
-        boolean ok = text.length() > 0;
-        while (ok && text.length() > 0) {
-            ok = false;
-            final Matcher matcher = PATTERN.matcher(text);
-            if (matcher.matches()) {
-                final String type = matcher.group(1);
-                if (addType(type, XCountArr, convertedArr)) {
-                    text = text.substring(type.length());
-                    ok = true;
-                }
-            }
-        }
-
-        if (!ok) {
-            throw new RuntimeException("Invalid cost \"" + costText + "\"");
+        final Matcher matcher = PATTERN.matcher(costText);
+        while (matcher.find()) {
+            addType(matcher.group(), XCountArr, convertedArr);
         }
         
         XCount = XCountArr[0];
@@ -163,22 +150,20 @@ public class MagicManaCost {
         amounts[type.ordinal()] += amount;
     }
     
-    private boolean addType(final String typeText, final int XCountArr[], final int convertedArr[]) {
+    private void addType(final String typeText, final int XCountArr[], final int convertedArr[]) {
         final String symbol = typeText.substring(1, typeText.length() - 1);
         if (symbol.equals("X")) {
             XCountArr[0]++;
-            return true;
         } else if (isNumeric(symbol)) {
             addType(MagicCostManaType.Colorless,Integer.parseInt(symbol),convertedArr);
-            return true;
         } else {
             for (final MagicCostManaType type : MagicCostManaType.values()) {
                 if (type.getText().equals(typeText)) {
                     addType(type,1,convertedArr);
-                    return true;
+                    return;
                 }
             }
-            return false;
+            throw new RuntimeException("Invalid cost \"" + costText + "\"");
         }
     }
     
