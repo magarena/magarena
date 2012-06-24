@@ -126,13 +126,15 @@ public class MagicManaCost {
     private final int amounts[];
     private final int converted;
     private final int XCount;
+    private final List<MagicCostManaType> order;
     private MagicBuilderManaCost builderCost;
     private List<ImageIcon> icons;
 
     private MagicManaCost(final String aCostText) {
         costText = aCostText;
         amounts = new int[MagicCostManaType.NR_OF_TYPES];
-        
+        order = new ArrayList<MagicCostManaType>();
+
         final int XCountArr[] = {0}; 
         final int convertedArr[] = {0};
 
@@ -148,6 +150,9 @@ public class MagicManaCost {
     private void addType(final MagicCostManaType type,final int amount,final int convertedArr[]) {
         convertedArr[0] += amount;
         amounts[type.ordinal()] += amount;
+        if (!order.contains(type)) {
+            order.add(type);
+        }
     }
     
     private void addType(final String typeText, final int XCountArr[], final int convertedArr[]) {
@@ -196,7 +201,7 @@ public class MagicManaCost {
         final List<MagicCostManaType> types=new ArrayList<MagicCostManaType>();
         int colorless=x;
 
-        for (final MagicCostManaType type : MagicCostManaType.values()) {
+        for (final MagicCostManaType type : order) {
             int amount=amounts[type.ordinal()];
             if (type == MagicCostManaType.Colorless) {
                 colorless+=amount;
@@ -214,11 +219,37 @@ public class MagicManaCost {
         return types;
     }
 
+    private String getCanonicalText() {
+        final StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < XCount; i++) {
+            sb.append('{');
+            sb.append('X');
+            sb.append('}');
+        }
+        for (final MagicCostManaType type : order) {
+            final int amt = amounts[type.ordinal()];
+            if (type == MagicCostManaType.Colorless && amt > 0) {
+                sb.append('{');
+                sb.append(amt);
+                sb.append('}');
+                continue;
+            }
+            for (int i = 0; i < amt; i++) {
+                sb.append(type.getText());
+            }
+        }
+        if (sb.length() == 0) {
+            return "{0}";
+        } else {
+            return sb.toString();
+        }
+    }
+
     private void buildIcons() {
         for (int x=XCount;x>0;x--) {
             icons.add(IconImages.COST_X);
         }
-        for (final MagicCostManaType type : MagicCostManaType.values()) {
+        for (final MagicCostManaType type : order) {
             int amount = amounts[type.ordinal()];
             if (type == MagicCostManaType.Colorless) {
                 while (amount > 16) {
@@ -249,7 +280,7 @@ public class MagicManaCost {
         final int singleCounts[]=new int[MagicManaType.NR_OF_TYPES];
         int doubleCount=0;
         int maxSingleCount=0;
-        for (final MagicCostManaType type : MagicCostManaType.values()) {
+        for (final MagicCostManaType type : order) {
             final int amount = amounts[type.ordinal()];
             if (type == MagicCostManaType.Colorless || amount == 0) {
                 continue;
@@ -284,7 +315,7 @@ public class MagicManaCost {
     }
     
     public void addTo(final MagicBuilderManaCost aBuilderCost) {
-        for (final MagicCostManaType type : MagicCostManaType.values()) {
+        for (final MagicCostManaType type : order) {
             aBuilderCost.addType(type,amounts[type.ordinal()]);
         }
         if (hasX()) {
@@ -294,7 +325,7 @@ public class MagicManaCost {
     }
     
     public void addTo(final MagicBuilderManaCost aBuilderCost,final int x) {
-        for (final MagicCostManaType type : MagicCostManaType.values()) {
+        for (final MagicCostManaType type : order) {
             aBuilderCost.addType(type,amounts[type.ordinal()]);
         }
         aBuilderCost.addType(MagicCostManaType.Colorless,x);
