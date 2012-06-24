@@ -122,13 +122,13 @@ public class MagicManaCost {
     public static final MagicManaCost WHITE_OR_BLACK=MagicManaCost.create("{W/B}");
     public static final MagicManaCost WHITE_OR_BLACK_WHITE_OR_BLACK=MagicManaCost.create("{W/B}{W/B}");
 
-    private final int amounts[];
     private final String costText;
+    private final int amounts[];
     private final int converted;
     private final int XCount;
     private MagicBuilderManaCost builderCost;
     private List<ImageIcon> icons;
-    
+
     private MagicManaCost(final String aCostText) {
         costText = aCostText;
         amounts = new int[MagicCostManaType.NR_OF_TYPES];
