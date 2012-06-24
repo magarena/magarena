@@ -345,3 +345,8 @@ cards/scored_by_td.tsv: cards/existing.txt
 	./scripts/score_card.awk `ls -1 decks/td* | sort -n -t_ -k2` |\
 	sort -rg |\
 	./scripts/keep_unimplemented.awk $^ /dev/stdin  > $@
+
+verify_mana_cost_order:
+	join -v2 \
+	<(grep -ho "\(\{[^\}]\+\}\)\+" -r cards/cards.xml | sort | uniq) \
+	<(grep -ho "\(\{[^\}]\+\}\)\+" -r src/magic/model/MagicManaCost.java release/Magarena/scripts | sort | uniq)
