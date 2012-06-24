@@ -6,7 +6,7 @@ rarity=U
 type=Creature
 subtype=Lizard
 color=bgr
-cost={B}{G}{R}
+cost={B}{R}{G}
 pt=3/3
 timing=main
 requires_card_code
