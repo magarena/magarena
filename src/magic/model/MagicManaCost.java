@@ -126,8 +126,8 @@ public class MagicManaCost {
     private final String costText;
     private final int converted;
     private final int XCount;
-    private final MagicBuilderManaCost builderCost;
-    private final List<ImageIcon> icons;
+    private MagicBuilderManaCost builderCost;
+    private List<ImageIcon> icons;
     
     private MagicManaCost(final String aCostText) {
         costText = aCostText;
@@ -156,12 +156,6 @@ public class MagicManaCost {
         
         XCount = XCountArr[0];
         converted = convertedArr[0];
-        
-        icons=new ArrayList<ImageIcon>();
-        buildIcons();
-
-        builderCost=new MagicBuilderManaCost();
-        addTo(builderCost);
     }
     
     private void addType(final MagicCostManaType type,final int amount,final int convertedArr[]) {
@@ -257,6 +251,10 @@ public class MagicManaCost {
     }
     
     public List<ImageIcon> getIcons() {
+        if (icons == null) {
+            icons=new ArrayList<ImageIcon>();
+            buildIcons();
+        }
         return icons;
     }
     
@@ -291,6 +289,10 @@ public class MagicManaCost {
     }
         
     public MagicBuilderManaCost getBuilderCost() {
+        if (builderCost == null) {
+            builderCost=new MagicBuilderManaCost();
+            addTo(builderCost);
+        }
         return builderCost;
     }
     
