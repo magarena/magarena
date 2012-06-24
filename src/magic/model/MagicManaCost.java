@@ -236,11 +236,13 @@ public class MagicManaCost {
         for (final MagicCostManaType type : MagicCostManaType.values()) {
             int amount = amounts[type.ordinal()];
             if (type == MagicCostManaType.Colorless) {
-                while (amount>16) {
+                while (amount > 16) {
                     icons.add(COLORLESS_ICONS[16]);
                     amount-=16;
                 }
-                icons.add(COLORLESS_ICONS[amount]);
+                if (amount > 0) {
+                    icons.add(COLORLESS_ICONS[amount]);
+                }
             } else {
                 final ImageIcon icon = type.getIcon();
                 for (int a=amount;a>0;a--) {

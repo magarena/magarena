@@ -38,7 +38,9 @@ public class MagicBuilderManaCost {
         compressedTypes=new MagicCostManaType[typeCount];
         compressedAmounts=new int[typeCount];
         int compressedIndex=0;
-        for (int index=0;index<MagicCostManaType.NR_OF_TYPES;index++) {
+        
+        // Ordered from most restrictive to least restrictive.
+        for (int index = MagicCostManaType.NR_OF_TYPES - 1; index >= 0; index--) {
             final int amount=amounts[index];
             if (amount>0) {
                 compressedTypes[compressedIndex]=MagicCostManaType.values()[index];

@@ -8,23 +8,24 @@ import java.util.List;
 
 public enum MagicCostManaType {
 
-    // Ordered from most restrictive to least restrictive.
-    Black("black","{B}",Arrays.asList(MagicManaType.Black)),
-    Blue("blue","{U}",Arrays.asList(MagicManaType.Blue)),
-    Green("green","{G}",Arrays.asList(MagicManaType.Green)),
-    Red("red","{R}",Arrays.asList(MagicManaType.Red)),
-    White("white","{W}",Arrays.asList(MagicManaType.White)),    
-    BlackGreen("black/green","{B/G}",Arrays.asList(MagicManaType.Black,MagicManaType.Green)),
-    BlackRed("black/red","{B/R}",Arrays.asList(MagicManaType.Black,MagicManaType.Red)),
+    // Ordered from least restrictive to most restrictive.
+    // Same order as in mana cost
+    Colorless("colorless","{1}",MagicManaType.ALL_TYPES),
+    WhiteBlue("white/blue","{W/U}",Arrays.asList(MagicManaType.White,MagicManaType.Blue)),
+    WhiteBlack("white/black","{W/B}",Arrays.asList(MagicManaType.White,MagicManaType.Black)),
     BlueBlack("blue/black","{U/B}",Arrays.asList(MagicManaType.Blue,MagicManaType.Black)),
     BlueRed("blue/red","{U/R}",Arrays.asList(MagicManaType.Blue,MagicManaType.Red)),
-    GreenBlue("green/blue","{G/U}",Arrays.asList(MagicManaType.Green,MagicManaType.Blue)),
-    GreenWhite("green/white","{G/W}",Arrays.asList(MagicManaType.Green,MagicManaType.White)),
+    BlackRed("black/red","{B/R}",Arrays.asList(MagicManaType.Black,MagicManaType.Red)),
+    BlackGreen("black/green","{B/G}",Arrays.asList(MagicManaType.Black,MagicManaType.Green)),
     RedGreen("red/green","{R/G}",Arrays.asList(MagicManaType.Red,MagicManaType.Green)),
     RedWhite("red/white","{R/W}",Arrays.asList(MagicManaType.Red,MagicManaType.White)),
-    WhiteBlack("white/black","{W/B}",Arrays.asList(MagicManaType.White,MagicManaType.Black)),
-    WhiteBlue("white/blue","{W/U}",Arrays.asList(MagicManaType.White,MagicManaType.Blue)),
-    Colorless("colorless","{1}",MagicManaType.ALL_TYPES),
+    GreenWhite("green/white","{G/W}",Arrays.asList(MagicManaType.Green,MagicManaType.White)),
+    GreenBlue("green/blue","{G/U}",Arrays.asList(MagicManaType.Green,MagicManaType.Blue)),
+    White("white","{W}",Arrays.asList(MagicManaType.White)),    
+    Blue("blue","{U}",Arrays.asList(MagicManaType.Blue)),
+    Black("black","{B}",Arrays.asList(MagicManaType.Black)),
+    Red("red","{R}",Arrays.asList(MagicManaType.Red)),
+    Green("green","{G}",Arrays.asList(MagicManaType.Green)),
     ;
     
     public static final int NR_OF_TYPES=values().length;
