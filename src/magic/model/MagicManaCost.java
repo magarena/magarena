@@ -256,7 +256,7 @@ public class MagicManaCost {
         }
 
         //add mono
-        MagicCostManaType curr = findStart();
+        MagicCostManaType curr = findFirstMonoSymbol();
         for (int i = 0; i < 5; i++, curr = curr.next()) {
             final int amt = amounts[curr.ordinal()];
             if (amt > 0) {
@@ -268,7 +268,7 @@ public class MagicManaCost {
     }
 
     //find the first mono color in the mana cost order
-    private MagicCostManaType findStart() {
+    private MagicCostManaType findFirstMonoSymbol() {
         List<MagicCostManaType> cand = new ArrayList<MagicCostManaType>();
         cand.addAll(MagicCostManaType.MONO);
 
