@@ -1,10 +1,12 @@
 package magic.model;
 
-import magic.data.TextImages;
-
-import javax.swing.ImageIcon;
 import java.util.Arrays;
 import java.util.List;
+import java.util.EnumSet;
+
+import javax.swing.ImageIcon;
+
+import magic.data.TextImages;
 
 public enum MagicCostManaType {
 
@@ -29,6 +31,9 @@ public enum MagicCostManaType {
     ;
     
     public static final int NR_OF_TYPES=values().length;
+    public static final EnumSet<MagicCostManaType> HYBRID = EnumSet.range(WhiteBlue, GreenBlue);
+    public static final EnumSet<MagicCostManaType> MONO = EnumSet.range(White, Green);
+    public static final EnumSet<MagicCostManaType> NON_MONO = EnumSet.range(Colorless, GreenBlue);
     
     private final String name;
     private final String text;
@@ -38,6 +43,28 @@ public enum MagicCostManaType {
         this.name=name;
         this.text=text;
         this.types=types;
+    }
+    
+    public MagicCostManaType next() {
+        switch (this) {
+            case White: return Blue;
+            case Blue:  return Black;
+            case Black: return Red;
+            case Red:   return Green;
+            case Green: return White;
+            default: throw new RuntimeException("No next mana cost type for " + this);
+        }
+    }
+    
+    public MagicCostManaType prev() {
+        switch (this) {
+            case White: return Green;
+            case Blue:  return White;
+            case Black: return Blue;
+            case Red:   return Black;
+            case Green: return Red;
+            default: throw new RuntimeException("No next mana cost type for " + this);
+        }
     }
     
     public String getName() {
