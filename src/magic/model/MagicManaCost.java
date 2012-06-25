@@ -285,18 +285,12 @@ public class MagicManaCost {
             return MagicCostManaType.White;
         } else if (cand.size() == 1) {
             return cand.get(0);
+        } else {
+            //cand.size() == 2
+            final MagicCostManaType t1 = cand.get(0);
+            final MagicCostManaType t2 = cand.get(1);
+            return (t1.prev().prev() == t2) ? t2 : t1;
         }
-
-        //remove color without next next
-        for (Iterator<MagicCostManaType> iter = cand.listIterator(); iter.hasNext();) {
-            final MagicCostManaType curr = iter.next();
-            final MagicCostManaType nnext = curr.next().next();
-            if (amounts[nnext.ordinal()] == 0) {
-                iter.remove();
-            }
-        }
-
-        return cand.get(0);
     }
 
     private void buildIcons() {
