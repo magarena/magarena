@@ -269,24 +269,25 @@ public class MagicManaCost {
 
     //find the first mono color in the mana cost order
     private MagicCostManaType findFirstMonoSymbol() {
+        //keep color with amount > 0 and has no prev
         List<MagicCostManaType> cand = new ArrayList<MagicCostManaType>();
-        cand.addAll(MagicCostManaType.MONO);
-
-        //remove color with amount == 0 or has prev
-        for (Iterator<MagicCostManaType> iter = cand.listIterator(); iter.hasNext();) {
-            final MagicCostManaType curr = iter.next();
-            final MagicCostManaType prev = curr.prev();
-            if (amounts[curr.ordinal()] == 0 || amounts[prev.ordinal()] > 0) {
-                iter.remove();
+        for (final MagicCostManaType color : MagicCostManaType.MONO) {
+            final int amt_c = amounts[color.ordinal()];
+            final int amt_p = amounts[color.prev().ordinal()];
+            if (amt_c > 0 && amt_p == 0) {
+                cand.add(color);
             }
         }
 
         if (cand.size() == 0) {
+            //WUBRG
             return MagicCostManaType.White;
         } else if (cand.size() == 1) {
+            //Linear chain
             return cand.get(0);
         } else {
             //cand.size() == 2
+            //Wedge
             final MagicCostManaType t1 = cand.get(0);
             final MagicCostManaType t2 = cand.get(1);
             return (t1.prev().prev() == t2) ? t2 : t1;
