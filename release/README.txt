@@ -35,7 +35,7 @@ Thanks to
   IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
   Salasnet for the felt theme and pedro1973 for the dark battle theme
   singularita for creating the scripts to add over 300 additional creature cards
-  Old Nick, David, Grundomu, jeffwadsworth, Kuno, LSK and sponeta for contributing custom decks
+  glorfindel, Old Nick, David, Grundomu, jeffwadsworth, Kuno, LSK and sponeta for contributing custom decks
   pedro1973 for creating new themes, see http://www.slightlymagic.net/forum/viewforum.php?f=89
   mtgrares for the publicity
   Goblin Hero for providing the images for some of the symbols
@@ -47,7 +47,7 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
-  Tyrael for implementing new cards
+  pcastellazzi and Tyrael for implementing new cards
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
@@ -56,7 +56,18 @@ Thank you for your support and have fun!
 
 Release 1.27 (June XX, 2012)
 ============
-- added support for Miracle in card script
+- added support for "miracle <mana cost>" in ability property of card script
+- added support for "{X}{X}" mana cost
+- added decks Glorfindel-Bant-Aggro.dec, Glorfindel_GWR_Zoo.dec, and
+  Glorfindel_G_Infect_40.dec
+
+- improved support for control changing effects
+
+- fixed: Geist of Saint Traft and Edric, Spymaster of Trest not Legendary
+- fixed: Imps' Taunt has wrong converted mana cost
+- fixed: "Generate Deck" button loads a random saved deck
+
+- added the following cards:
 
 Release 1.26 (May 26, 2012)
 ============
