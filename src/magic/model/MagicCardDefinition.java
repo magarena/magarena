@@ -506,10 +506,6 @@ public class MagicCardDefinition {
             manaSource[color.ordinal()]=source;
         }
     }
-
-    private String getManaSourceText() {
-        return manaSourceText;
-    }
     
     public int getManaSource(final MagicColor color) {
         return manaSource[color.ordinal()];
