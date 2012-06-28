@@ -152,6 +152,7 @@ Beacon of Unrest
 Beastbreaker of Bala Ged
 Beastmaster Ascension
 Beastmaster's Magemark
+Beguiler of Wills
 Behemoth Sledge
 Bellowing Tanglewurm
 Belltower Sphinx
@@ -161,6 +162,7 @@ Benalish Veteran
 Berserkers of Blood Ridge
 Bestial Menace
 Birds of Paradise
+Biting Tether
 Black Cat
 Blackcleave Cliffs
 Blackcleave Goblin
@@ -245,6 +247,7 @@ Brittle Effigy
 Broodmate Dragon
 Bull Cerodon
 Burden of Guilt
+Burning Inquiry
 Burn the Impure
 Burr Grafter
 Burst Lightning
@@ -313,6 +316,7 @@ Colossal Might
 Combust
 Concussive Bolt
 Condemn
+Confiscate
 Contagious Nim
 Copperhorn Scout
 Copperline Gorge
@@ -323,6 +327,7 @@ Coral Merfolk
 Corpse Cur
 Corpsehatch
 Corrosive Mentor
+Corrupted Conscience
 Corrupted Harvester
 Corrupted Resolve
 Cosi's Ravager
@@ -445,6 +450,7 @@ Dross Prowler
 Drowned Catacomb
 Drudge Reavers
 Drudge Skeletons
+Dungeon Geists
 Dungrove Elder
 Duskdale Wurm
 Duskhunter Bat
@@ -488,6 +494,7 @@ Endless Ranks of the Dead
 Enfeeblement
 Engulfing Slagwurm
 Enormous Baloth
+Enslave
 Epic Proportions
 Erdwal Ripper
 Eron the Relentless
@@ -543,6 +550,7 @@ Flame Slash
 Flashfreeze
 Flayer Husk
 Fledgling Griffin
+Fleeting Distraction
 Fleeting Image
 Flensermite
 Flight
@@ -968,6 +976,7 @@ Mantis Engine
 Marisi's Twinclaws
 Maritime Guard
 Mark of Mutiny
+Mark of the Oni
 Markov Blademaster
 Markov Patrician
 Marrow Chomper
@@ -981,6 +990,7 @@ Massacre Wurm
 Mass of Ghouls
 Master of Etherium
 Master Splicer
+Master Thief
 Maul Splicer
 Mausoleum Guard
 Maw of the Mire
@@ -1001,6 +1011,7 @@ Might of Oaks
 Mighty Leap
 Mikaeus, the Lunarch
 Mikaeus, the Unhallowed
+Mind Control
 Mind Rot
 Mindshrieker
 Mind Spring
@@ -1010,6 +1021,7 @@ Mirran Crusader
 Mirri, Cat Warrior
 Mirri the Cursed
 Mirror Entity
+Mirrorworks
 Mistbind Clique
 Mist Leopard
 Mistral Charger
@@ -1139,6 +1151,7 @@ Peregrine Griffin
 Peregrine Mask
 Perilous Myr
 Perimeter Captain
+Persuasion
 Pewter Golem
 Phantom Warrior
 Phobian Phantasm
@@ -1176,6 +1189,7 @@ Priests of Norn
 Primal Rage
 Primordial Hydra
 Prodigal Pyromancer
+Prodigal Sorcerer
 Promised Kannushi
 Promise of Bunrei
 Proper Burial
@@ -1262,6 +1276,7 @@ Robe of Mirrors
 Roc Egg
 Rock Badger
 Rockslide Elemental
+Roil Elemental
 Ronin Cavekeeper
 Ronin Cliffrider
 Ronin Houndmaster
