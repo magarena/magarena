@@ -345,8 +345,20 @@ cards/scored_by_td.tsv: cards/existing.txt
 	./scripts/score_card.awk `ls -1 decks/td* | sort -n -t_ -k2` |\
 	sort -rg |\
 	./scripts/keep_unimplemented.awk $^ /dev/stdin  > $@
+	
+cards/mtg_mana_costs:
+	grep -ho "\(\{[^\}]\+\}\)\+" -r cards/cards.xml | sort | uniq > $@
+	
+cards/mag_mana_costs:
+	grep -ho "\(\{[^\}]\+\}\)\+" -r src/magic/model/MagicManaCost.java release/Magarena/scripts | sort | uniq > $@
 
-verify_mana_cost_order:
-	join -v2 \
-	<(grep -ho "\(\{[^\}]\+\}\)\+" -r cards/cards.xml | sort | uniq) \
-	<(grep -ho "\(\{[^\}]\+\}\)\+" -r src/magic/model/MagicManaCost.java release/Magarena/scripts | sort | uniq)
+cards/mana_cost_graph.dot: cards/mtg_mana_costs
+	cat $^ |\
+	sed 's/{X}//g;s/{[[:digit:]]*}//g;s/{[CPQT]*}//g;/^$$/d' |\
+	awk -f scripts/mana_cost_graph.awk > $@
+
+cards/mana_cost_graph.png: cards/mana_cost_graph.dot
+	circo $^ -Tpng -o $@
+
+verify_mana_cost_order: cards/mtg_mana_costs cards/mag_mana_costs
+	join -v2 $^
