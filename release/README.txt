@@ -47,7 +47,7 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
-  mecheng, pcastellazzi, and Tyrael for implementing new cards
+  mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
