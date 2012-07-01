@@ -54,7 +54,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.27 (June XX, 2012)
+Release 1.27 (July 1, 2012)
 ============
 - added support for "miracle <mana cost>" in ability property of card script
 - added support for "{X}{X}" mana cost
