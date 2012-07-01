@@ -115,7 +115,7 @@ cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 %_full.txt: %.txt cards/mtg-data.txt
 	awk -f scripts/extract_existing.awk $^ > $@
 
-cards/candidates_full.txt: scripts/extract_candidates.awk cards/candidates.txt cards/mtg-data.txt
+cards/candidates_full.txt: scripts/extract_candidates.awk cards/scored_by_dd.tsv cards/mtg-data.txt
 	awk -f $^ | sort -rg | sed 's/\t/\n/g' > $@
 
 %.out: $(MAG)

@@ -4,8 +4,9 @@ BEGIN {
     ORS = ""
 }
 
-FILENAME ~ /data/ {
+FILENAME ~ /mtg-data/ {
     if ($1 in score) {
+        found[$1] = 1
         print score[$1] "\t"
         print "NOTE:"comment[$1] "\t"
         print "NAME:"$1 "\t"
@@ -20,16 +21,24 @@ FILENAME ~ /data/ {
     next
 }
 
-NF == 1 {
-    score[$1] = 1
-}
-
-NF >= 2 {
-    score[$2] = $1
-    comment[$2] = $3
-    next
+{
+    if (NF == 1) {
+        score[$1] = 1
+    } else if (NF == 2) {
+        score[$2] = $1
+        comment[$2] = $3
+    } else {
+        print "unsupported format"
+        exit 1
+    }
 }
 
 END {
-    print "found " cnt " card" > "/dev/stderr"
+    ORS = "\n"
+    print "found " cnt " cards" > "/dev/stderr"
+    for (i in score) {
+        if (!(i in found)) {
+            print i " not found" > "/dev/stderr"
+        }
+    }
 }
