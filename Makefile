@@ -95,21 +95,21 @@ cards/standard_all.txt:
 	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
 	sed -i 's/Æ/AE/' $@
 
-cards/new_%.txt: cards/new_scripts_%.txt cards/existing_tokens.txt
+cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 cards/new_scripts_%.txt: release/Magarena/scripts
 	grep "name=" -h $$(hg diff -r $* | grep -B 1 "^--- /dev/null" | grep $^ | cut -d' ' -f4) | sed 's/name=//' > $@
 	flip -u $@
 
-cards/existing_scripts.txt: $(wildcard release/Magarena/scripts/*.txt)
-	grep "^name=" -hr release/Magarena/scripts | sed 's/name=//' | sort > $@
+cards/existing_scripts_%.txt: $(wildcard release/Magarena/scripts/*.txt)
+	hg cat -r $* release/Magarena/scripts | grep "^name=" | sed 's/name=//' | sort > $@
 	sed -i 's/\r//' $@
 
-cards/existing_tokens.txt: $(wildcard release/Magarena/scripts/*.txt)
-	grep -hr "^name=" `grep token= -r release/Magarena/scripts | cut -d':' -f1` | sed 's/name=//' | sort > $@
+cards/existing_tokens_%.txt: $(wildcard release/Magarena/scripts/*.txt)
+	hg cat -r $* release/Magarena/scripts | grep -C 1 "^token=" | grep "^name=" | sed 's/name=//' | sort > $@
 
-cards/existing.txt: cards/existing_scripts.txt cards/existing_tokens.txt
+cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 %_full.txt: %.txt cards/mtg-data.txt
