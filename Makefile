@@ -61,10 +61,10 @@ warnings.txt: $(MAG)
 cards/legacy_banned.txt:
 	curl https://www.wizards.com/Magic/TCG/Resources.aspx?x=judge/resources/sfrlegacy | grep nodec | grep -o ">[^<]*</a" | sed 's/>//g;s/<\/a//;' > $@
 
-release/Magarena/mods/legacy_cube.txt: cards/existing.txt cards/legacy_banned.txt
+release/Magarena/mods/legacy_cube.txt: cards/existing_tip.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-release/Magarena/mods/%_cube.txt: cards/existing.txt cards/%_all.txt
+release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 cards/modern_all.txt:
@@ -336,12 +336,12 @@ github/push:
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
 
-cards/scored_by_dd.tsv: cards/existing.txt
+cards/scored_by_dd.tsv: cards/existing_tip.txt
 	./scripts/score_card.awk `ls -1 decks/dd* | sort -n -t_ -k2` |\
 	sort -rg |\
 	./scripts/keep_unimplemented.awk $^ /dev/stdin  > $@
 
-cards/scored_by_td.tsv: cards/existing.txt
+cards/scored_by_td.tsv: cards/existing_tip.txt
 	./scripts/score_card.awk `ls -1 decks/td* | sort -n -t_ -k2` |\
 	sort -rg |\
 	./scripts/keep_unimplemented.awk $^ /dev/stdin  > $@
