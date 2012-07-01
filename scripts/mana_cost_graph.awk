@@ -11,7 +11,7 @@ BEGIN {
                 printf("\"%s\"", $i);
                 first = 1;
             } else { 
-                printf("-> \"%s\"", $i);
+                printf(" -> \"%s\"", $i);
             }
         }
     }
