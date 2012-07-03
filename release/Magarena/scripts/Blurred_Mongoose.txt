@@ -6,7 +6,6 @@ ability=can't be countered,shroud
 rarity=R
 type=Creature
 subtype=Mongoose
-color=g
 cost={1}{G}
 pt=2/1
 timing=fmain

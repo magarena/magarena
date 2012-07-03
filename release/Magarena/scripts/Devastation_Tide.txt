@@ -5,7 +5,6 @@ value=4
 removal=2
 rarity=R
 type=Sorcery
-color=u
 cost={3}{U}{U}
 timing=removal
 ability=miracle {1}{U}

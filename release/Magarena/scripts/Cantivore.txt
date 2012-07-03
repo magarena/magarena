@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Creature
 subtype=Lhurgoyf
-color=w
 cost={1}{W}{W}
 ability=vigilance
 timing=main

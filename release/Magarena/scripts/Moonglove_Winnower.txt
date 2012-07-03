@@ -6,7 +6,6 @@ ability=deathtouch
 rarity=C
 type=Creature
 subtype=Elf,Rogue
-color=b
 cost={3}{B}
 pt=2/3
 timing=main

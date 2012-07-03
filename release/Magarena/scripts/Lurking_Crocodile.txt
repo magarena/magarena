@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Crocodile
-color=g
 cost={2}{G}
 pt=2/2
 ability=bloodthirst 1,islandwalk

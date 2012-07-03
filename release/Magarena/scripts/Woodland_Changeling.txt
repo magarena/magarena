@@ -6,7 +6,6 @@ ability=changeling
 rarity=C
 type=Creature
 subtype=Shapeshifter
-color=g
 cost={1}{G}
 pt=2/2
 timing=main

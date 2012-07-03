@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Dragon,Skeleton
-color=b
 cost={3}{B}{B}
 pt=4/4
 ability=flying,infect,regenerate {B}{B},gains {B} haste

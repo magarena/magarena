@@ -6,7 +6,6 @@ ability=mountainwalk
 rarity=C
 type=Creature
 subtype=Goblin,Scout
-color=r
 cost={R}
 pt=1/1
 timing=main

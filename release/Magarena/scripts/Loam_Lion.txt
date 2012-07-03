@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Cat
-color=w
 cost={W}
 pt=1/1
 timing=main

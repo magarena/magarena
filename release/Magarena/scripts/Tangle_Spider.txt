@@ -6,7 +6,6 @@ ability=flash,reach
 rarity=C
 type=Creature
 subtype=Spider
-color=g
 cost={4}{G}{G}
 pt=3/4
 timing=flash

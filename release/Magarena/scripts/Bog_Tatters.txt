@@ -6,7 +6,6 @@ ability=swampwalk
 rarity=C
 type=Creature
 subtype=Wraith
-color=b
 cost={4}{B}
 pt=4/2
 timing=main

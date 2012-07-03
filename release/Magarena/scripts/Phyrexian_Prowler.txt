@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Zombie,Mercenary
-color=b
 cost={3}{B}
 pt=3/3
 ability=fading 3

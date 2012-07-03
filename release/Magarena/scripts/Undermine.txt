@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/in/282.jpg
 value=3
 rarity=R
 type=Instant
-color=ub
 cost={U}{U}{B}
 timing=counter
 requires_card_code

@@ -6,7 +6,6 @@ ability=can't block
 rarity=C
 type=Creature
 subtype=Insect
-color=b
 cost={3}{B}
 pt=3/3
 timing=fmain

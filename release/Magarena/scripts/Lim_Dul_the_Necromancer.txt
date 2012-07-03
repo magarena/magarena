@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
-color=b
 cost={5}{B}{B}
 pt=4/4
 timing=fmain

@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Kor,Knight
-color=w
 cost={1}{W}
 pt=2/2
 ability=level up {3} 4

@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Wolf
-color=g
 cost={3}{G}
 pt=3/3
 ability=flash

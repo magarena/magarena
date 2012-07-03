@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Elemental
-color=rg
 cost={1}{R}{G}{G}
 pt=5/5
 timing=main

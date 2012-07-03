@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Creature
 subtype=Giant
-color=b
 cost={4}{B}{B}
 pt=6/6
 ability=deathtouch

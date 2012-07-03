@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Tribal,Enchantment
 subtype=Goblin
-color=r
 cost={2}{R}
 timing=enchantment
 requires_card_code

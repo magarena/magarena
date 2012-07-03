@@ -6,7 +6,6 @@ ability=reach,deathtouch
 rarity=C
 type=Creature
 subtype=Elf,Archer
-color=g
 cost={1}{G}
 pt=2/1
 timing=main

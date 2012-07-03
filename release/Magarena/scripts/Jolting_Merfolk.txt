@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Merfolk
-color=u
 cost={2}{U}{U}
 pt=2/2
 ability=fading 4

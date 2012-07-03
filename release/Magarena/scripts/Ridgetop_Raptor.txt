@@ -6,7 +6,6 @@ ability=double strike
 rarity=U
 type=Creature
 subtype=Lizard,Beast
-color=r
 cost={3}{R}
 pt=2/1
 timing=main

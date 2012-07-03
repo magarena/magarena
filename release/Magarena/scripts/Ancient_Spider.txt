@@ -6,7 +6,6 @@ ability=first strike,reach
 rarity=R
 type=Creature
 subtype=Spider
-color=gw
 cost={2}{G}{W}
 pt=2/5
 timing=main

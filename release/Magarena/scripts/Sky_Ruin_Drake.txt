@@ -6,7 +6,6 @@ ability=flying
 rarity=C
 type=Creature
 subtype=Drake
-color=u
 cost={4}{U}
 pt=2/5
 timing=main

@@ -6,7 +6,6 @@ ability=trample
 rarity=C
 type=Creature
 subtype=Spirit
-color=g
 cost={5}{G}
 pt=5/5
 timing=main

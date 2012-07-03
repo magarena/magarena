@@ -6,7 +6,6 @@ ability=unblockable
 rarity=R
 type=Creature
 subtype=Kraken
-color=u
 cost={5}{U}{U}{U}
 pt=6/6
 timing=main

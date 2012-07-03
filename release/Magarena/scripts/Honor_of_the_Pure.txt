@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/m11/17.jpg
 value=4
 rarity=R
 type=Enchantment
-color=w
 cost={1}{W}
 static=player
 timing=enchantment

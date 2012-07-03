@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Bird
-color=g
 cost={G}
 pt=0/1
 ability=flying,tap add mana any

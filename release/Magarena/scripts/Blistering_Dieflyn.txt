@@ -5,7 +5,6 @@ value=1
 rarity=C
 type=Creature
 subtype=Imp
-color=r
 cost={3}{R}
 pt=0/1
 ability=flying,pump {B/R} +1/+0

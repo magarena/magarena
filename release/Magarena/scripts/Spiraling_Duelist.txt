@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Human,Berserker
-color=r
 cost={2}{R}{R}
 pt=3/1
 timing=main

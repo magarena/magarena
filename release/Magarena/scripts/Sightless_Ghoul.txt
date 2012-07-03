@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Zombie,Soldier
-color=b
 cost={3}{B}
 pt=2/2
 ability=can't block,undying

@@ -6,7 +6,6 @@ ability=flying
 rarity=C
 type=Creature
 subtype=Griffin
-color=w
 cost={2}{W}
 pt=2/2
 timing=main

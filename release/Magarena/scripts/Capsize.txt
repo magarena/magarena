@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/tp/55.jpg
 value=3
 rarity=C
 type=Instant
-color=u
 cost={1}{U}{U}
 timing=removal
 requires_card_code

@@ -6,7 +6,6 @@ ability=first strike,haste
 rarity=C
 type=Creature
 subtype=Goblin,Berserker
-color=r
 cost={1}{R}
 pt=1/1
 timing=fmain

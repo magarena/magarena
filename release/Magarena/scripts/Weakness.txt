@@ -6,7 +6,6 @@ removal=1
 rarity=C
 type=Enchantment
 subtype=Aura
-color=b
 cost={B}
 given_pt=-2/-1
 timing=removal

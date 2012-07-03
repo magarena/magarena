@@ -5,7 +5,6 @@ value=4
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Elf
-color=bg
 cost={B}{G}{G}
 pt=3/3
 ability=first strike,deathtouch

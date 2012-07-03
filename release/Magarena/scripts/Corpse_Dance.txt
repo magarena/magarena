@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/tp/10.jpg
 value=3
 rarity=R
 type=Instant
-color=b
 cost={2}{B}
 timing=animate
 requires_card_code

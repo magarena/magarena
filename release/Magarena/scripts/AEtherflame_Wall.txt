@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Wall
-color=r
 cost={1}{R}
 pt=0/4
 ability=defender,can block creatures with shadow,pump {R} +1/+0

@@ -5,7 +5,6 @@ value=2
 rarity=R
 type=Creature
 subtype=Homunculus
-color=u
 cost={2}{U}
 pt=1/4
 timing=main

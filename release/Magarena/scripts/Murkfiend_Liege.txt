@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Horror
-color=gu
 cost={2}{G/U}{G/U}{G/U}
 pt=4/4
 static=player

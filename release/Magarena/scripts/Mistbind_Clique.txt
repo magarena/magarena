@@ -6,7 +6,6 @@ removal=2
 rarity=R
 type=Creature
 subtype=Faerie,Wizard
-color=u
 cost={3}{U}
 pt=4/4
 ability=flash,flying

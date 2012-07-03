@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Spirit
-color=b
 cost={3}{B}
 pt=2/2
 ability=fear,persist

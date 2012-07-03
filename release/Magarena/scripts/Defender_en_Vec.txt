@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Human,Cleric
-color=w
 cost={3}{W}
 pt=2/4
 ability=fading 4

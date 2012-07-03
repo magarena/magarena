@@ -6,7 +6,6 @@ removal=2
 rarity=R
 type=Creature
 subtype=Elemental,Warrior
-color=r
 cost={3}{R}
 pt=10/2
 ability=trample,champion Elemental

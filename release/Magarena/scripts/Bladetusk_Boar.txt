@@ -6,7 +6,6 @@ ability=intimidate
 rarity=C
 type=Creature
 subtype=Boar
-color=r
 cost={3}{R}
 pt=3/2
 timing=main

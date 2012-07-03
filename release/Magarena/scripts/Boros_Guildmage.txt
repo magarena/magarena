@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Human,Wizard
-color=rw
 cost={R/W}{R/W}
 pt=2/2
 timing=fmain

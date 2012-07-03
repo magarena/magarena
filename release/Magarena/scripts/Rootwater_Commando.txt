@@ -6,7 +6,6 @@ ability=islandwalk
 rarity=C
 type=Creature
 subtype=Merfolk
-color=u
 cost={2}{U}
 pt=2/2
 timing=main

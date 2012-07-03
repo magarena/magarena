@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/ala/204.jpg
 value=4
 rarity=R
 type=Sorcery
-color=rgw
 cost={R}{R}{G}{G}{G}{W}{W}
 timing=pump
 requires_card_code

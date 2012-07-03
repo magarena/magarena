@@ -6,7 +6,6 @@ ability=exalted
 rarity=C
 type=Creature
 subtype=Beast
-color=gw
 cost={4}{G}{W}
 pt=5/4
 timing=main

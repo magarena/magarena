@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Goblin,Knight
-color=r
 cost={2}{R}
 pt=3/2
 timing=main

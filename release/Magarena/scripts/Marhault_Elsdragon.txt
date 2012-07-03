@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Legendary,Creature
 subtype=Elf,Warrior
-color=rg
 cost={3}{R}{R}{G}
 pt=4/6
 ability=rampage 1

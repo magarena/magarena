@@ -6,7 +6,6 @@ ability=deathtouch
 rarity=C
 type=Creature
 subtype=Basilisk
-color=g
 cost={3}{G}{G}
 pt=3/5
 timing=main

@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Human,Barbarian
-color=r
 cost={2}{R}{R}
 pt=3/2
 ability=haste,echo,enters damage target player 3

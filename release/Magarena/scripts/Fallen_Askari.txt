@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Human,Knight
-color=b
 cost={1}{B}
 pt=2/2
 ability=flanking,can't block

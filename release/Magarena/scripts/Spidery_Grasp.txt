@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/isd/204.jpg
 value=3
 rarity=C
 type=Instant
-color=g
 cost={2}{G}
 timing=tapping
 requires_card_code

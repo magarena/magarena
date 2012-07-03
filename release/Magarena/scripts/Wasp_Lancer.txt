@@ -6,7 +6,6 @@ ability=flying
 rarity=U
 type=Creature
 subtype=Faerie,Soldier
-color=bu
 cost={U/B}{U/B}{U/B}
 pt=3/2
 timing=main

@@ -450,8 +450,9 @@ public class MagicCardDefinition {
         return cost.hasX();
     }
 
-    public void setCost(final MagicManaCost cost) {
-        this.cost=cost;
+    public void setCost(final MagicManaCost aCost) {
+        cost = aCost;
+        colorFlags |= cost.getColorFlags();
     }
 
     public void validate() {                                                           

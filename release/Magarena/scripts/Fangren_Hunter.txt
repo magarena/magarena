@@ -6,7 +6,6 @@ ability=trample
 rarity=C
 type=Creature
 subtype=Beast
-color=g
 cost={3}{G}{G}
 pt=4/4
 timing=main

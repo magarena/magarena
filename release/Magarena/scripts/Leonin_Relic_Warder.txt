@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Cat,Cleric
-color=w
 cost={W}{W}
 pt=2/2
 ability=leaves return exile

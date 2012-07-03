@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard
-color=w
 cost={2}{W}
 pt=1/2
 timing=main

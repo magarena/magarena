@@ -6,7 +6,6 @@ removal=3
 rarity=R
 type=Creature
 subtype=Spirit,Avatar
-color=wu
 cost={W/U}{W/U}{W/U}{W/U}{W/U}
 pt=4/4
 ability=flying

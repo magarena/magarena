@@ -6,7 +6,6 @@ ability=flying
 rarity=C
 type=Creature
 subtype=Insect
-color=b
 cost={3}{B}
 pt=3/2
 timing=main

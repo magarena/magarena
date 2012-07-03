@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Creature
 subtype=Goblin,Shaman
-color=b
 cost={B}
 pt=1/1
 timing=fmain

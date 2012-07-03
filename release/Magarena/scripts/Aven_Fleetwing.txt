@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Bird,Soldier
-color=u
 cost={3}{U}
 pt=2/2
 ability=flying,hexproof

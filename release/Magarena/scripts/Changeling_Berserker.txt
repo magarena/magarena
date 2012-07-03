@@ -6,7 +6,6 @@ removal=2
 rarity=U
 type=Creature
 subtype=Shapeshifter
-color=r
 cost={3}{R}
 pt=5/3
 ability=changeling,haste,champion creature

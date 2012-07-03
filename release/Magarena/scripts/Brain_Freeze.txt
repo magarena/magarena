@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/sc/29.jpg
 value=3
 rarity=U
 type=Instant
-color=u
 cost={1}{U}
 timing=storm
 ability=storm

@@ -5,7 +5,6 @@ ignore=62602
 value=2
 rarity=R
 type=Instant
-color=w
 cost={W}
 timing=pump
 requires_card_code

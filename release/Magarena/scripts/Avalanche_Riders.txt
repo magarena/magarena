@@ -6,7 +6,6 @@ removal=1
 rarity=U
 type=Creature
 subtype=Human,Nomad
-color=r
 cost={3}{R}
 pt=2/2
 ability=haste,echo

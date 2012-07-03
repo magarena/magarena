@@ -6,7 +6,6 @@ removal=2
 rarity=C
 type=Creature
 subtype=Human,Nomad
-color=r
 cost={2}{R}
 pt=2/2
 ability=echo,enters damage target 2

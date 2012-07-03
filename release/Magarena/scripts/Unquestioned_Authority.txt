@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Enchantment
 subtype=Aura
-color=w
 cost={2}{W}
 ability=enters draw card
 given_ability=protection from creatures

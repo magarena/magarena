@@ -6,7 +6,6 @@ ability=first strike
 rarity=C
 type=Creature
 subtype=Human,Knight
-color=w
 cost={1}{W}
 pt=2/1
 timing=main

@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Enchantment
 subtype=Aura
-color=u
 cost={3}{U}{U}
 given_ability=infect
 timing=aura

@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Dragon,Wurm
-color=w
 cost={4}{W}{W}{W}
 pt=5/5
 ability=defender,trample

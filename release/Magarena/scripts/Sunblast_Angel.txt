@@ -6,7 +6,6 @@ removal=2
 rarity=R
 type=Creature
 subtype=Angel
-color=w
 cost={4}{W}{W}
 pt=4/5
 ability=flying

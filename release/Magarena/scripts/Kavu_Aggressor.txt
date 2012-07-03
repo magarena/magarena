@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Kavu
-color=r
 cost={2}{R}
 pt=3/2
 ability=can't block

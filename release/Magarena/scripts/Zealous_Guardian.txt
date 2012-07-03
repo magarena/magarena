@@ -6,7 +6,6 @@ ability=flash
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier
-color=uw
 cost={W/U}
 pt=1/1
 timing=flash

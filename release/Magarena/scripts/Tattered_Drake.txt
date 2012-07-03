@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Zombie,Drake
-color=u
 cost={4}{U}
 pt=2/2
 ability=flying,regenerate {B}

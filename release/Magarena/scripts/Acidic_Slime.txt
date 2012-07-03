@@ -6,7 +6,6 @@ removal=2
 rarity=U
 type=Creature
 subtype=Ooze
-color=g
 cost={3}{G}{G}
 pt=2/2
 ability=deathtouch

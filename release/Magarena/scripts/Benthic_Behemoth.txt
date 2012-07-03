@@ -6,7 +6,6 @@ ability=islandwalk
 rarity=R
 type=Creature
 subtype=Serpent
-color=u
 cost={5}{U}{U}{U}
 pt=7/6
 timing=main

@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Legendary,Creature
 subtype=Giant,Warrior
-color=rw
 cost={2}{R}{W}
 pt=4/4
 ability=lifelink

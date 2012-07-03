@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Creature
 subtype=Beast
-color=g
 cost={5}{G}
 pt=5/5
 ability=pump {1}{R} +1/+0

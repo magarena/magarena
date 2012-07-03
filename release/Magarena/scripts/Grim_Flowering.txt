@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/dka/117.jpg
 value=4
 rarity=U
 type=Sorcery
-color=g
 cost={5}{G}
 timing=draw
 requires_card_code

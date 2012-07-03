@@ -6,7 +6,6 @@ removal=1
 rarity=U
 type=Creature
 subtype=Minion
-color=b
 cost={2}{B}
 pt=1/1
 ability=flying,echo

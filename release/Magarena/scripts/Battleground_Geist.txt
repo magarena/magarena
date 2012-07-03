@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Spirit
-color=u
 cost={4}{U}
 pt=3/3
 ability=flying

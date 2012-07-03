@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Kraken
-color=ub
 cost={3}{U}{U}{B}
 pt=5/8
 ability=islandwalk,swampwalk

@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Enchantment
 subtype=Aura
-color=w
 cost={1}{W}
 ability=flash
 given_ability=shadow

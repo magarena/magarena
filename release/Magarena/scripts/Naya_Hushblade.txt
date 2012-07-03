@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Elf,Rogue
-color=rwg
 cost={R/W}{G}
 pt=2/1
 timing=main

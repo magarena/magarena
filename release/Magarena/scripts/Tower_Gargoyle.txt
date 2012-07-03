@@ -6,7 +6,6 @@ ability=flying
 rarity=U
 type=Artifact,Creature
 subtype=Gargoyle
-color=buw
 cost={1}{W}{U}{B}
 pt=4/4
 timing=main

@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Cat,Knight
-color=w
 cost={1}{W}{W}
 pt=2/2
 ability=flying,enters gain life 2

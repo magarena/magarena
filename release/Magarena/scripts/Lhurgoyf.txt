@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Creature
 subtype=Lhurgoyf
-color=g
 cost={2}{G}{G}
 timing=smain
 requires_card_code

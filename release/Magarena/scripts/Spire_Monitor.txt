@@ -6,7 +6,6 @@ ability=flash,flying
 rarity=C
 type=Creature
 subtype=Drake
-color=u
 cost={4}{U}
 pt=3/3
 timing=flash

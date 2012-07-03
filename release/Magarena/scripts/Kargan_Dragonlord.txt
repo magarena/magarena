@@ -5,7 +5,6 @@ value=3
 rarity=M
 type=Creature
 subtype=Human,Warrior
-color=r
 cost={R}{R}
 pt=2/2
 ability=level up {R} 8

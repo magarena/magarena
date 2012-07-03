@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Cat,Knight
-color=w
 cost={1}{W}{W}
 pt=1/1
 ability=flying,double strike

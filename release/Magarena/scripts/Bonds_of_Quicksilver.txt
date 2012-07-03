@@ -6,7 +6,6 @@ removal=3
 rarity=C
 type=Enchantment
 subtype=Aura
-color=u
 cost={3}{U}
 given_ability=doesn't untap during untap step
 ability=flash

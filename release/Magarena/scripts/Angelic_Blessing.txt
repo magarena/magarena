@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/10e/3.jpg
 value=3
 rarity=C
 type=Sorcery
-color=w
 cost={2}{W}
 timing=pump
 requires_card_code

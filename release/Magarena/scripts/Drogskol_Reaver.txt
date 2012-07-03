@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Creature
 subtype=Spirit
-color=wu
 cost={5}{W}{U}
 pt=3/5
 ability=flying,double strike,lifelink

@@ -6,7 +6,6 @@ ability=protection from blue
 rarity=C
 type=Creature
 subtype=Cat,Scout
-color=rg
 cost={R}{G}
 pt=2/2
 timing=main

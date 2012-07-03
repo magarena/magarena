@@ -6,7 +6,6 @@ ability=flying
 rarity=C
 type=Artifact,Creature
 subtype=Bird
-color=uw
 cost={2}{W}{U}
 pt=3/3
 timing=main

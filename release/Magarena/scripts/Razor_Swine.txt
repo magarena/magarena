@@ -6,7 +6,6 @@ ability=first strike,infect
 rarity=C
 type=Creature
 subtype=Boar
-color=r
 cost={2}{R}
 pt=2/1
 timing=main

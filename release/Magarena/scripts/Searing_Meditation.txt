@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/ddh/27.jpg
 value=3
 rarity=R
 type=Enchantment
-color=rw
 cost={1}{R}{W}
 timing=enchantment
 requires_card_code

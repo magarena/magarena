@@ -6,7 +6,6 @@ ability=flying,vigilance
 rarity=C
 type=Creature
 subtype=Bird
-color=w
 cost={1}{W}
 pt=1/2
 timing=main

@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Human,Rogue
-color=b
 cost={4}{B}
 pt=3/3
 ability=attacks pump +2/+0

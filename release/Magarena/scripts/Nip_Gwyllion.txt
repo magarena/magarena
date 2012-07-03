@@ -6,7 +6,6 @@ ability=lifelink
 rarity=C
 type=Creature
 subtype=Hag
-color=bw
 cost={W/B}
 pt=1/1
 timing=main

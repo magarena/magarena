@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Beast
-color=g
 cost={6}{G}
 pt=7/7
 timing=main

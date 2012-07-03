@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/rv/184.jpg
 value=2
 rarity=R
 type=Sorcery
-color=r
 cost={2}{R}
 timing=draw
 requires_card_code

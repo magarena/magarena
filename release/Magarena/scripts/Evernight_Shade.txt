@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Shade
-color=b
 cost={3}{B}
 pt=1/1
 ability=pump {B} +1/+1,undying

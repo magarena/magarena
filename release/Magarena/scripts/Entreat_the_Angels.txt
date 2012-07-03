@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/avr/20.jpg
 value=4
 rarity=M
 type=Sorcery
-color=w
 cost={X}{X}{W}{W}{W}
 timing=main
 ability=miracle {X}{W}{W}

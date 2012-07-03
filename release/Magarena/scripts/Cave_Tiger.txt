@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Cat
-color=g
 cost={2}{G}
 pt=2/2
 ability=blocked pump +1/+1

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/pch/100.jpg
 value=2
 rarity=C
 type=Instant
-color=rw
 cost={1}{R/W}
 timing=block
 requires_card_code

@@ -5,7 +5,6 @@ value=4
 rarity=M
 type=Creature
 subtype=Hydra
-color=g
 cost={X}{G}{G}
 timing=main
 requires_card_code

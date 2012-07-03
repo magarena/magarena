@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Creature
 subtype=Spirit
-color=u
 cost={3}{U}{U}
 ability=flying
 timing=main

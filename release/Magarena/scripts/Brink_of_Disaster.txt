@@ -6,7 +6,6 @@ removal=4
 rarity=C
 type=Enchantment
 subtype=Aura
-color=b
 cost={2}{B}{B}
 timing=removal
 enchant=destroy,neg creature or land

@@ -7,7 +7,6 @@ ability=flash,haste
 rarity=R
 type=Creature
 subtype=Kavu
-color=rg
 cost={1}{R}{G}
 pt=3/1
 timing=fmain

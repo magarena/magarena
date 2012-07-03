@@ -5,7 +5,6 @@ value=5
 rarity=U
 type=Creature
 subtype=Skeleton,Wurm
-color=b
 cost={7}{B}
 pt=7/6
 ability=regenerate {B}

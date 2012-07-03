@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/ne/37.jpg
 value=3
 rarity=R
 type=Enchantment
-color=u
 cost={2}{U}{U}
 ability=fading 5
 timing=enchantment

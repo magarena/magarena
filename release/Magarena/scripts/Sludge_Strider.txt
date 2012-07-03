@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Artifact,Creature
 subtype=Insect
-color=wub
 cost={1}{W}{U}{B}
 pt=3/3
 timing=fmain

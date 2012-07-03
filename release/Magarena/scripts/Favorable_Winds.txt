@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/avr/51.jpg
 value=3
 rarity=U
 type=Enchantment
-color=u
 cost={1}{U}
 static=player
 timing=enchantment

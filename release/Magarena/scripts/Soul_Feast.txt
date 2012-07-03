@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/10e/179.jpg
 value=2
 rarity=U
 type=Sorcery
-color=b
 cost={3}{B}{B}
 timing=removal
 requires_card_code

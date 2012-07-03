@@ -6,7 +6,6 @@ ability=vigilance,trample
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior
-color=g
 cost={5}{G}{G}
 pt=5/7
 timing=main

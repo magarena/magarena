@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Dauthi,Minion
-color=b
 cost={2}{B}
 pt=3/1
 ability=shadow

@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Insect
-color=b
 cost={3}{B}{B}
 pt=4/3
 timing=main

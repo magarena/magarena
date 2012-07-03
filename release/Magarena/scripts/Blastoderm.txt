@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Creature
 subtype=Beast
-color=g
 cost={2}{G}{G}
 pt=5/5
 ability=shroud,fading 3

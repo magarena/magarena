@@ -6,7 +6,6 @@ value=3
 removal=4
 rarity=C
 type=Instant
-color=b
 cost={B}{B}
 timing=removal
 requires_card_code

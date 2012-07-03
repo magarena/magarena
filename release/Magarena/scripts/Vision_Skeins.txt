@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/cmd/67.jpg
 value=3
 rarity=C
 type=Instant
-color=u
 cost={1}{U}
 timing=draw
 requires_card_code

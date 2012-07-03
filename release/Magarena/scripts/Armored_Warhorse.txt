@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Horse
-color=w
 cost={W}{W}
 pt=2/3
 timing=main

@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Hellion,Beast
-color=r
 cost={4}{R}{R}
 pt=6/6
 timing=main

@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Snake
-color=g
 cost={1}{G}
 pt=2/1
 ability=swampwalk,regenerate {G}

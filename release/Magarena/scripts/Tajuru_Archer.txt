@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Elf,Archer,Ally
-color=g
 cost={2}{G}
 pt=1/2
 timing=main

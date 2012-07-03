@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Shapeshifter
-color=b
 cost={4}{B}
 pt=4/4
 ability=changeling

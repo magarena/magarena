@@ -6,7 +6,6 @@ ability=haste
 rarity=C
 type=Creature
 subtype=Human,Berserker
-color=r
 cost={3}{R}
 pt=3/2
 timing=fmain

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/tp/14.jpg
 value=3
 rarity=U
 type=Enchantment
-color=b
 cost={2}{B}
 timing=enchantment
 requires_card_code

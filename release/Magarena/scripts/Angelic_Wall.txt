@@ -6,7 +6,6 @@ ability=defender,flying
 rarity=C
 type=Creature
 subtype=Wall
-color=w
 cost={1}{W}
 pt=0/4
 timing=smain

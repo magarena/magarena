@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Sphinx
-color=u
 cost={3}{U}{U}{U}
 pt=6/6
 ability=flying

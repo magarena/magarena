@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Wall
-color=w
 cost={3}{W}
 pt=0/5
 ability=defender,pump {W} +0/+1

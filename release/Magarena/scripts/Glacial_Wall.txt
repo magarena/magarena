@@ -6,7 +6,6 @@ ability=defender
 rarity=U
 type=Creature
 subtype=Wall
-color=u
 cost={2}{U}
 pt=0/7
 timing=smain

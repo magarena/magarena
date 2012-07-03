@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Creature
 subtype=Thalakos
-color=u
 cost={2}{U}{U}
 pt=3/3
 timing=main

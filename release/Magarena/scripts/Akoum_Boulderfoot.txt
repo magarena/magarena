@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Giant,Warrior
-color=r
 cost={4}{R}{R}
 pt=4/5
 ability=enters damage target 1

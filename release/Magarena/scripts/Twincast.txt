@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/m10/78.jpg
 value=3
 rarity=R
 type=Instant
-color=u
 cost={U}{U}
 timing=spell
 requires_card_code

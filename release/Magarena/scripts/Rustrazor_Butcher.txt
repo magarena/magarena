@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
-color=r
 cost={1}{R}
 pt=1/2
 ability=first strike,wither

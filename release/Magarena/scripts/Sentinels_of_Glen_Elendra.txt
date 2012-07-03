@@ -6,7 +6,6 @@ ability=flash,flying
 rarity=C
 type=Creature
 subtype=Faerie,Soldier
-color=u
 cost={3}{U}
 pt=2/3
 timing=main

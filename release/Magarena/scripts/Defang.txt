@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Enchantment
 subtype=Aura
-color=w
 cost={1}{W}
 timing=aura
 enchant=can't attack or block,neg creature

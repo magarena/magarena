@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Human,Rogue
-color=u
 cost={1}{U}
 pt=1/1
 ability=infect,unblockable

@@ -6,7 +6,6 @@ ability=flying
 rarity=U
 type=Creature
 subtype=Elemental
-color=u
 cost={3}{U}{U}
 pt=4/4
 timing=main

@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Ape
-color=g
 cost={4}{G}{G}
 pt=6/5
 ability=regenerate {G}

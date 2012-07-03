@@ -6,7 +6,6 @@ ability=battle cry,attacks each turn if able
 rarity=C
 type=Creature
 subtype=Giant,Berserker
-color=r
 cost={4}{R}
 pt=4/4
 timing=fmain

@@ -6,7 +6,6 @@ removal=3
 rarity=C
 type=Enchantment
 subtype=Aura
-color=w
 cost={1}{W}
 given_ability=can't attack or block
 timing=tapping

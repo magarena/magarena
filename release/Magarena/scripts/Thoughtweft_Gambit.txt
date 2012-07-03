@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/shm/154.jpg
 value=4
 rarity=U
 type=Instant
-color=wu
 cost={4}{W/U}{W/U}
 timing=tapping
 requires_card_code

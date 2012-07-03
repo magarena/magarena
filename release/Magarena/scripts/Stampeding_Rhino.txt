@@ -6,7 +6,6 @@ ability=trample
 rarity=C
 type=Creature
 subtype=Rhino
-color=g
 cost={4}{G}
 pt=4/4
 timing=main

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/m12/101.jpg
 value=2
 rarity=C
 type=Sorcery
-color=b
 cost={2}{B}
 timing=removal
 requires_card_code

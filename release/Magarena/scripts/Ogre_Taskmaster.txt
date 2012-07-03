@@ -6,7 +6,6 @@ ability=can't block
 rarity=U
 type=Creature
 subtype=Ogre
-color=r
 cost={3}{R}
 pt=4/3
 timing=fmain

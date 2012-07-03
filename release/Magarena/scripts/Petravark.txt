@@ -6,7 +6,6 @@ removal=2
 rarity=C
 type=Creature
 subtype=Nightmare,Beast
-color=r
 cost={3}{R}
 pt=2/2
 ability=leaves return exile

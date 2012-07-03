@@ -6,7 +6,6 @@ ability=defender
 rarity=C
 type=Creature
 subtype=Ogre,Warrior
-color=r
 cost={1}{R}
 pt=3/3
 timing=smain

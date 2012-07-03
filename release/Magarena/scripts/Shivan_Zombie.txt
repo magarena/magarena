@@ -6,7 +6,6 @@ ability=protection from white
 rarity=C
 type=Creature
 subtype=Barbarian,Zombie
-color=rb
 cost={B}{R}
 pt=2/2
 timing=main

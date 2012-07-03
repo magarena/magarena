@@ -6,7 +6,6 @@ ability=can't be blocked except by creatures with flying
 rarity=C
 type=Creature
 subtype=Elf,Scout
-color=g
 cost={G}
 pt=1/1
 timing=main

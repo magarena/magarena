@@ -6,7 +6,6 @@ removal=1
 rarity=C
 type=Creature
 subtype=Human,Rogue
-color=r
 cost={2}{R}
 pt=4/1
 timing=main

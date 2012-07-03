@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard
-color=u
 cost={U}
 pt=0/1
 ability=level up {1}{U} 3

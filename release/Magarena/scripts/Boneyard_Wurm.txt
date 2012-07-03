@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Wurm
-color=g
 cost={1}{G}
 timing=main
 requires_card_code

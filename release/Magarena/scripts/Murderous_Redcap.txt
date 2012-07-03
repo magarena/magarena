@@ -6,7 +6,6 @@ removal=2
 rarity=U
 type=Creature
 subtype=Goblin,Assassin
-color=br
 cost={2}{B/R}{B/R}
 pt=2/2
 ability=persist

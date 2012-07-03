@@ -6,7 +6,6 @@ ability=fear,can't block
 rarity=C
 type=Creature
 subtype=Rat,Warrior
-color=b
 cost={1}{B}
 pt=2/1
 timing=fmain

@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Faerie,Rogue
-color=uw
 cost={2}{W/U}
 pt=1/3
 ability=flying

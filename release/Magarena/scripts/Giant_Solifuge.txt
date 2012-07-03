@@ -6,7 +6,6 @@ ability=trample,haste,shroud
 rarity=R
 type=Creature
 subtype=Insect
-color=rg
 cost={2}{R/G}{R/G}
 pt=4/1
 timing=fmain

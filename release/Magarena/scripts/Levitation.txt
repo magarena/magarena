@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/m10/60.jpg
 value=3
 rarity=U
 type=Enchantment
-color=u
 cost={2}{U}{U}
 static=player
 timing=enchantment

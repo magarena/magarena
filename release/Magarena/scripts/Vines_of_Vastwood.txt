@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/zen/193.jpg
 value=3
 rarity=C
 type=Instant
-color=g
 cost={G}
 timing=pump
 requires_card_code

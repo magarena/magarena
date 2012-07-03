@@ -5,7 +5,6 @@ value=5
 rarity=U
 type=Creature
 subtype=Spirit
-color=g
 cost={7}{G}{G}
 pt=8/5
 ability=trample,soulshift 8

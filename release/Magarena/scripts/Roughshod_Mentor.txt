@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Giant,Warrior
-color=g
 cost={5}{G}
 pt=5/4
 timing=main

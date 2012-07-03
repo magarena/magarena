@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Elf,Warrior
-color=g
 cost={2}{G}
 pt=2/2
 static=player

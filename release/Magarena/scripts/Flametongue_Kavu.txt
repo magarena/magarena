@@ -6,7 +6,6 @@ removal=2
 rarity=U
 type=Creature
 subtype=Kavu
-color=r
 cost={3}{R}
 pt=4/2
 ability=enters damage target creature 4

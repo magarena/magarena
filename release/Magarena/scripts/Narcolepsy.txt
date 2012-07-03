@@ -6,7 +6,6 @@ removal=2
 rarity=C
 type=Enchantment
 subtype=Aura
-color=u
 cost={1}{U}
 timing=nextturn
 enchant=can't attack or block,neg creature

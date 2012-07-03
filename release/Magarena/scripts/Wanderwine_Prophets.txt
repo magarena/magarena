@@ -6,7 +6,6 @@ removal=2
 rarity=R
 type=Creature
 subtype=Merfolk,Wizard
-color=u
 cost={4}{U}{U}
 pt=4/4
 ability=champion Merfolk

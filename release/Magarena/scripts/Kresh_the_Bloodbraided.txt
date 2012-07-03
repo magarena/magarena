@@ -5,7 +5,6 @@ value=4
 rarity=M
 type=Legendary,Creature
 subtype=Human,Warrior
-color=brg
 cost={2}{B}{R}{G}
 pt=3/3
 timing=main

@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Creature
 subtype=Beast
-color=rgw
 cost={4}{R}{G}{G}{W}
 pt=8/8
 ability=vigilance

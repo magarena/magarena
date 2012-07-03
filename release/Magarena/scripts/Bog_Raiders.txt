@@ -6,7 +6,6 @@ ability=swampwalk
 rarity=C
 type=Creature
 subtype=Zombie
-color=b
 cost={2}{B}
 pt=2/2
 timing=main

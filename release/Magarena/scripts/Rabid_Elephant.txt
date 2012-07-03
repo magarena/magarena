@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Elephant
-color=g
 cost={4}{G}
 pt=3/4
 ability=blocked by pump +2/+2

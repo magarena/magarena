@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/m12/191.jpg
 value=3
 rarity=C
 type=Instant
-color=g
 cost={G}
 timing=draw
 requires_card_code

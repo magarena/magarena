@@ -6,7 +6,6 @@ ability=islandwalk
 rarity=C
 type=Creature
 subtype=Crocodile
-color=u
 cost={U}
 pt=1/1
 timing=main

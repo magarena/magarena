@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Elemental,Incarnation
-color=g
 cost={3}{G}{G}{G}
 pt=6/6
 ability=trample,graveyard to library

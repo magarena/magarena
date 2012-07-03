@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Human,Berserker
-color=rg
 cost={R}{G}
 pt=1/1
 ability=bloodthirst 2,trample

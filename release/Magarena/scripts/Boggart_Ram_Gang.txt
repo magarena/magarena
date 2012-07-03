@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Goblin,Warrior
-color=rg
 cost={R/G}{R/G}{R/G}
 pt=3/3
 ability=haste,wither

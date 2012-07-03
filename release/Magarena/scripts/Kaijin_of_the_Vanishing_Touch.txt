@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Spirit
-color=u
 cost={1}{U}
 pt=0/3
 ability=defender

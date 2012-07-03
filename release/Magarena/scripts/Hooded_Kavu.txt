@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Kavu
-color=r
 cost={2}{R}
 pt=2/2
 ability=gains {B} fear

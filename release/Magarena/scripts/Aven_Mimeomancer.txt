@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Bird,Wizard
-color=wu
 cost={1}{W}{U}
 pt=3/1
 ability=flying

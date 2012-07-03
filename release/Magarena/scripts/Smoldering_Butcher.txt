@@ -6,7 +6,6 @@ ability=wither
 rarity=C
 type=Creature
 subtype=Elemental,Warrior
-color=b
 cost={3}{B}
 pt=4/2
 timing=main

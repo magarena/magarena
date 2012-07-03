@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Human,Soldier
-color=w
 cost={4}{W}{W}
 pt=3/3
 ability=vigilance

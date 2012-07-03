@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Creature
 subtype=Giant
-color=u
 cost={4}{U}{U}
 pt=6/6
 timing=fmain

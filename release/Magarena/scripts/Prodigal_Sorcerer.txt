@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Human,Wizard
-color=U
 cost={2}{U}
 pt=1/1
 ability=ping 1

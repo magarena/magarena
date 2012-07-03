@@ -6,7 +6,6 @@ ability=first strike,reach
 rarity=U
 type=Creature
 subtype=Human,Soldier,Archer
-color=w
 cost={W}{W}
 pt=2/2
 timing=main

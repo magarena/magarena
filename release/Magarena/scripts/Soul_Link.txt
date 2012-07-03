@@ -6,7 +6,6 @@ removal=1
 rarity=C
 type=Enchantment
 subtype=Aura
-color=wb
 cost={1}{W}{B}
 timing=aura
 enchant=can't attack or block,creature

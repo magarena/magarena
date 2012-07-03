@@ -6,7 +6,6 @@ ability=reach
 rarity=C
 type=Creature
 subtype=Beast
-color=g
 cost={4}{G}{G}
 pt=3/6
 timing=main

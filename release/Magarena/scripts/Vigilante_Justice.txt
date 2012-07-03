@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/avr/165.jpg
 value=2
 rarity=U
 type=Enchantment
-color=r
 cost={3}{R}
 timing=enchantment
 requires_card_code

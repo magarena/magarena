@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Artifact,Creature
 subtype=Sphinx
-color=wub
 cost={5}{W}{U}{B}
 pt=6/6
 ability=flying,first strike,vigilance,lifelink,protection from red,protection from green

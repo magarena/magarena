@@ -6,7 +6,6 @@ ability=persist
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier
-color=bu
 cost={4}{U/B}
 pt=3/3
 timing=main

@@ -6,7 +6,6 @@ ability=deathtouch
 rarity=C
 type=Creature
 subtype=Scorpion
-color=b
 cost={2}{B}
 pt=1/3
 timing=main

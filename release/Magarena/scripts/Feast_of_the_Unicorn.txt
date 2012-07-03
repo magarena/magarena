@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Enchantment
 subtype=Aura
-color=b
 cost={3}{B}
 given_pt=4/0
 timing=aura

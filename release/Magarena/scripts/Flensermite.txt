@@ -6,7 +6,6 @@ ability=infect,lifelink
 rarity=C
 type=Creature
 subtype=Gremlin
-color=b
 cost={1}{B}
 pt=1/1
 timing=main

@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Unicorn
-color=w
 cost={1}{W}
 pt=2/3
 ability=cumulative upkeep {1}

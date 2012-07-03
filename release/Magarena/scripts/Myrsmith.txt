@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Human,Artificer
-color=w
 cost={1}{W}
 pt=2/1
 timing=fmain

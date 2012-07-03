@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Dwarf
-color=r
 cost={3}{R}
 pt=2/2
 timing=main

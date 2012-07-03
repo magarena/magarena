@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Plant,Wall
-color=g
 cost={2}{G}
 pt=2/3
 ability=defender,regenerate {G}

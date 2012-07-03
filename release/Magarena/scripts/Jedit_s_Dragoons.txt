@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Cat,Soldier
-color=w
 cost={5}{W}
 pt=2/5
 ability=vigilance,enters gain life 4

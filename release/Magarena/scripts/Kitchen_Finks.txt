@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Ouphe
-color=gw
 cost={1}{G/W}{G/W}
 pt=3/2
 ability=persist,enters gain life 2

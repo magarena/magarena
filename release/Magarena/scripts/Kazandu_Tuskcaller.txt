@@ -5,7 +5,6 @@ value=2
 rarity=R
 type=Creature
 subtype=Human,Shaman
-color=g
 cost={1}{G}
 pt=1/1
 ability=level up {1}{G} 6

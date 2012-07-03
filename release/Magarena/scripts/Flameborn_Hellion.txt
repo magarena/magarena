@@ -6,7 +6,6 @@ ability=haste,attacks each turn if able
 rarity=C
 type=Creature
 subtype=Hellion
-color=r
 cost={5}{R}
 pt=5/4
 timing=fmain

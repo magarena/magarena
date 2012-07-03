@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Creature
 subtype=Artificer
-color=w
 cost={4}{W}
 pt=1/1
 static=player

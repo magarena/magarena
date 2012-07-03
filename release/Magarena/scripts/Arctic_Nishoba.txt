@@ -5,7 +5,6 @@ value=5
 rarity=U
 type=Creature
 subtype=Cat,Warrior
-color=g
 cost={5}{G}
 pt=6/6
 ability=trample,cumulative upkeep {G/W}

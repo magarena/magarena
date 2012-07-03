@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Human,Warrior
-color=r
 cost={4}{R}
 pt=3/3
 timing=main

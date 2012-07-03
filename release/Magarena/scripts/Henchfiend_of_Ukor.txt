@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Ogre
-color=r
 cost={3}{R}
 pt=3/2
 ability=haste,echo {1}{B},pump {B/R} +1/+0

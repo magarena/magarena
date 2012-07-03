@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/avr/158.jpg
 value=3
 rarity=C
 type=Sorcery
-color=r
 cost={2}{R}
 timing=fmain
 requires_card_code

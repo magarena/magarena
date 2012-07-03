@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Centaur,Archer
-color=g
 cost={1}{G}{G}
 pt=2/2
 ability=flanking,shroud

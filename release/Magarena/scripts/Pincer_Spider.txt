@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Spider
-color=g
 cost={2}{G}
 pt=2/3
 ability=reach

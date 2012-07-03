@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Spirit,Horror
-color=rw
 cost={2}{R/W}{R/W}{R/W}
 pt=2/4
 static=player

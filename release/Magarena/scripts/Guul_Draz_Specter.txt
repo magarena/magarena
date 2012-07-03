@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Specter
-color=b
 cost={2}{B}{B}
 pt=2/2
 ability=flying,combat damage discard card

@@ -6,7 +6,6 @@ removal=2
 rarity=R
 type=Creature
 subtype=Goblin,Shaman
-color=r
 cost={3}{R}
 pt=3/3
 ability=champion Goblin or Shaman,ping 3

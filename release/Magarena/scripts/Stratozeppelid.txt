@@ -6,7 +6,6 @@ ability=flying,can't block creatures without flying
 rarity=U
 type=Creature
 subtype=Beast
-color=u
 cost={4}{U}
 pt=4/4
 timing=fmain

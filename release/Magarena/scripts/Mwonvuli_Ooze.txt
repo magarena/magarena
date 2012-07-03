@@ -5,7 +5,6 @@ value=2
 rarity=R
 type=Creature
 subtype=Ooze
-color=g
 cost={G}
 ability=cumulative upkeep {2}
 timing=main

@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Wurm
-color=g
 cost={4}{G}{G}
 pt=9/9
 timing=main

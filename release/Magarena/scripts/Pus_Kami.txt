@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Spirit
-color=b
 cost={5}{B}{B}
 pt=3/3
 ability=soulshift 6

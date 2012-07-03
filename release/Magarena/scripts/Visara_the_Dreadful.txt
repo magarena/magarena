@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Gorgon
-color=b
 cost={3}{B}{B}{B}
 pt=5/5
 ability=flying

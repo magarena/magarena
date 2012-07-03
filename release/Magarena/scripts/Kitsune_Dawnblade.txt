@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Fox,Samurai
-color=w
 cost={4}{W}
 pt=2/3
 ability=bushido 1

@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Elemental
-color=bg
 cost={4}{B/G}{B/G}{B/G}
 pt=10/10
 ability=trample

@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Insect
-color=g
 cost={1}{G}
 pt=2/4
 timing=main

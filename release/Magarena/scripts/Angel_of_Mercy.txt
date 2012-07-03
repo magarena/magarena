@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Angel
-color=w
 cost={4}{W}
 pt=3/3
 ability=flying,enters gain life 3

@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Elf,Archer
-color=g
 cost={G}
 pt=1/2
 ability=reach

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/jvc/24.jpg
 value=3
 rarity=C
 type=Instant
-color=u
 cost={U}{U}
 timing=counter
 requires_card_code

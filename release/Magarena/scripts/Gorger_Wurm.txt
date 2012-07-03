@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Creature
 subtype=Wurm
-color=rg
 cost={3}{R}{G}
 pt=5/5
 ability=devour 1

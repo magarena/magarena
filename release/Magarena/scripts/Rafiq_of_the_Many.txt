@@ -5,7 +5,6 @@ value=4
 rarity=M
 type=Legendary,Creature
 subtype=Human,Knight
-color=gwu
 cost={1}{G}{W}{U}
 pt=3/3
 ability=exalted

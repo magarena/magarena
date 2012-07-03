@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Enchantment
 subtype=Aura
-color=u
 cost={1}{U}
 ability=flash
 given_ability=shroud

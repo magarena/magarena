@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Vedalken,Wizard
-color=u
 cost={U}{U}
 pt=1/2
 timing=main

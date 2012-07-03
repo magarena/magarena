@@ -6,7 +6,6 @@ removal=2
 rarity=U
 type=Creature
 subtype=Giant,Warrior
-color=r
 cost={3}{R}
 pt=3/3
 ability=echo {5}{R}

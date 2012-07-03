@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Goblin,Shaman
-color=r
 cost={2}{R}
 pt=2/1
 ability=enters damage target 1

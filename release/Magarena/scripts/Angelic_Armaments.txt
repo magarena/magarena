@@ -10,5 +10,4 @@ equip={4}
 given_pt=2/2
 given_ability=flying
 given_subtype=Angel
-given_color=w
 timing=equipment

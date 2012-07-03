@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/shm/198.jpg
 value=3
 rarity=R
 type=Enchantment
-color=br
 cost={2}{B/R}{B/R}
 timing=enchantment
 requires_card_code

@@ -6,7 +6,6 @@ ability=flying,first strike,vigilance
 rarity=U
 type=Creature
 subtype=Angel
-color=w
 cost={4}{W}
 pt=3/3
 timing=main

@@ -6,7 +6,6 @@ ability=double strike
 rarity=U
 type=Creature
 subtype=Human,Soldier
-color=rw
 cost={R}{W}
 pt=1/2
 timing=main

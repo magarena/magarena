@@ -6,7 +6,6 @@ ability=trample
 rarity=R
 type=Creature
 subtype=Elemental
-color=g
 cost={2}{G}
 pt=8/0
 timing=main

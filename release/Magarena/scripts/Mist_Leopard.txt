@@ -6,7 +6,6 @@ ability=shroud
 rarity=C
 type=Creature
 subtype=Cat
-color=g
 cost={3}{G}
 pt=3/2
 timing=fmain

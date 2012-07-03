@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Treefolk
-color=g
 cost={5}{G}
 pt=3/6
 ability=vanishing 3

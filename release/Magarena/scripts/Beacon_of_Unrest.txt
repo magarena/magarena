@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/arc/10.jpg
 value=4
 rarity=R
 type=Sorcery
-color=b
 cost={3}{B}{B}
 timing=main
 requires_card_code

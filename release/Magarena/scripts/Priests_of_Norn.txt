@@ -6,7 +6,6 @@ ability=vigilance,infect
 rarity=C
 type=Creature
 subtype=Cleric
-color=w
 cost={2}{W}
 pt=1/4
 timing=main

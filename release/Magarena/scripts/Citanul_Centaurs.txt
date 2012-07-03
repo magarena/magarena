@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Centaur
-color=g
 cost={3}{G}
 pt=6/3
 ability=shroud,echo

@@ -6,7 +6,6 @@ ability=wither
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
-color=rg
 cost={R/G}
 pt=1/1
 timing=main

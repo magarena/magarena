@@ -5,7 +5,6 @@ value=1
 rarity=C
 type=Creature
 subtype=Zombie
-color=u
 cost={1}{U}
 pt=1/1
 ability=regenerate {B}

@@ -6,7 +6,6 @@ ability=fear
 rarity=C
 type=Creature
 subtype=Rat
-color=b
 cost={2}{B}
 pt=2/1
 timing=main

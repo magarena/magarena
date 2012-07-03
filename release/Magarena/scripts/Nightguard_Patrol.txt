@@ -6,7 +6,6 @@ ability=first strike,vigilance
 rarity=C
 type=Creature
 subtype=Human,Soldier
-color=w
 cost={2}{W}
 pt=2/1
 timing=main

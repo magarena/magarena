@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Viashino
-color=r
 cost={3}{R}
 pt=2/2
 ability=blocked by pump +2/+2

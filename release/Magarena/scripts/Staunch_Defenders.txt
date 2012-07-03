@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Human,Soldier
-color=w
 cost={3}{W}{W}
 pt=3/4
 ability=enters gain life 4

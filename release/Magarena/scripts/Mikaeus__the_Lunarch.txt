@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Human,Cleric
-color=w
 cost={X}{W}
 timing=main
 requires_card_code

@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Spirit
-color=g
 cost={G}{G}
 pt=2/1
 ability=haste,undying

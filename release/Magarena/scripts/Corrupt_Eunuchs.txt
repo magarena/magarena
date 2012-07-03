@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Human,Advisor
-color=r
 cost={3}{R}
 pt=2/2
 ability=enters damage target creature 2

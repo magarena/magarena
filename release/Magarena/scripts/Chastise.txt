@@ -5,7 +5,6 @@ value=4
 removal=4
 rarity=U
 type=Instant
-color=w
 cost={3}{W}
 timing=attack
 requires_card_code

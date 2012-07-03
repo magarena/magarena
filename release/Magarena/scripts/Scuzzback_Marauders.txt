@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
-color=rg
 cost={4}{R/G}
 pt=5/2
 ability=trample,persist

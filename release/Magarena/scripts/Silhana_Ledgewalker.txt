@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Elf,Rogue
-color=g
 cost={1}{G}
 pt=1/1
 ability=can't be blocked except by creatures with flying,hexproof

@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Troll
-color=g
 cost={1}{G}
 pt=1/1
 ability=blocked by pump +1/+1,regenerate {G} 

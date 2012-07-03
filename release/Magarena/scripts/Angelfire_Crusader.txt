@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Human,Soldier,Knight
-color=w
 cost={3}{W}
 pt=2/3
 ability=pump {R} +1/+0

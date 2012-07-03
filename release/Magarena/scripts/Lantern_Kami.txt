@@ -6,7 +6,6 @@ ability=flying
 rarity=C
 type=Creature
 subtype=Spirit
-color=w
 cost={W}
 pt=1/1
 timing=main

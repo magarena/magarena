@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Cat
-color=w
 cost={W}
 pt=0/1
 ability=landfall pump +2/+2

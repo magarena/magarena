@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Elephant,Cleric
-color=w
 cost={3}{W}{W}
 pt=3/3
 timing=main

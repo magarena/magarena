@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/m11/30.jpg
 value=3
 rarity=R
 type=Instant
-color=w
 cost={W}
 timing=fmain
 requires_card_code

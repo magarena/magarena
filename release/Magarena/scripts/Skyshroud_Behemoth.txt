@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Beast
-color=g
 cost={5}{G}{G}
 pt=10/10
 ability=enters tapped,fading 2

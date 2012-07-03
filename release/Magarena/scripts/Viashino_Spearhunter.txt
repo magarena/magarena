@@ -6,7 +6,6 @@ ability=first strike
 rarity=C
 type=Creature
 subtype=Viashino,Warrior
-color=r
 cost={2}{R}
 pt=2/1
 timing=main

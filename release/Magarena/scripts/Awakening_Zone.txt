@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/roe/176.jpg
 value=4
 rarity=R
 type=Enchantment
-color=g
 cost={2}{G}
 timing=enchantment
 requires_card_code

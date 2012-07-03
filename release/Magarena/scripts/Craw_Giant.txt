@@ -5,7 +5,6 @@ value=5
 rarity=U
 type=Creature
 subtype=Giant
-color=g
 cost={3}{G}{G}{G}{G}
 pt=6/4
 ability=trample,rampage 2

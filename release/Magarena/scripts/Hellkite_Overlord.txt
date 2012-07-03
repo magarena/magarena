@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Dragon
-color=brg
 cost={4}{B}{R}{R}{G}
 pt=8/8
 ability=flying,trample,haste,regenerate {B}{G},pump {B} +1/+0

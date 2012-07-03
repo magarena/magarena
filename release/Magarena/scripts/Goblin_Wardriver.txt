@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Goblin,Warrior
-color=r
 cost={R}{R}
 pt=2/2
 ability=battle cry

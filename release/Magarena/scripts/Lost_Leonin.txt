@@ -6,7 +6,6 @@ ability=infect
 rarity=C
 type=Creature
 subtype=Cat,Soldier
-color=w
 cost={1}{W}
 pt=2/1
 timing=main

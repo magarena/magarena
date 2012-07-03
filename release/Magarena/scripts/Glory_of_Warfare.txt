@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/arb/98.jpg
 value=4
 rarity=R
 type=Enchantment
-color=rw
 cost={2}{R}{W}
 static=player
 timing=enchantment

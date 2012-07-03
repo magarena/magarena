@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Wolf
-color=gw
 cost={G}{W}
 pt=3/3
 timing=main

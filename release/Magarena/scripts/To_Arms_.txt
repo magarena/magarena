@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/gp/20.jpg
 value=2
 rarity=U
 type=Instant
-color=w
 cost={1}{W}
 timing=tapping
 requires_card_code

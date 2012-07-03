@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Hound
-color=w
 cost={4}{W}
 pt=3/5
 timing=main

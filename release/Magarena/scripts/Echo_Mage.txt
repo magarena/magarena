@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Creature
 subtype=Human,Wizard
-color=u
 cost={1}{U}{U}
 pt=2/3
 ability=level up {1}{U} 4

@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Creature
 subtype=Vampire,Soldier
-color=b
 cost={4}{B}
 pt=4/3
 ability=combat damage grow player

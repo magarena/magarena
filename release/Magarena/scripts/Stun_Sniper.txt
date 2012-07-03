@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Human,Archer
-color=rw
 cost={R}{W}
 pt=1/1
 timing=main

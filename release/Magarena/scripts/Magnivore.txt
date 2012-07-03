@@ -5,7 +5,6 @@ value=3
 rarity=R
 type=Creature
 subtype=Lhurgoyf
-color=r
 cost={2}{R}{R}
 ability=haste
 timing=fmain

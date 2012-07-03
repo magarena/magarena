@@ -6,7 +6,6 @@ ability=flying,vigilance
 rarity=R
 type=Creature
 subtype=Angel
-color=w
 cost={3}{W}{W}
 pt=4/4
 timing=main

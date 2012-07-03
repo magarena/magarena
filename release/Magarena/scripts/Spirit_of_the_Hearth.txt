@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Cat,Spirit
-color=w
 cost={4}{W}{W}
 pt=4/5
 ability=flying

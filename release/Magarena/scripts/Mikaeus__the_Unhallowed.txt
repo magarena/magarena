@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Cleric
-color=b
 cost={3}{B}{B}{B}
 pt=5/5
 ability=intimidate

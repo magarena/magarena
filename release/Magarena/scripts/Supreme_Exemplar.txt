@@ -6,7 +6,6 @@ removal=2
 rarity=R
 type=Creature
 subtype=Elemental
-color=u
 cost={6}{U}
 pt=10/10
 ability=flying,champion Elemental

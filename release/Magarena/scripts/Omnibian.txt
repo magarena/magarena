@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Frog
-color=gu
 cost={1}{G}{G}{U}
 pt=3/3
 timing=smain

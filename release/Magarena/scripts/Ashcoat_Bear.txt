@@ -6,7 +6,6 @@ ability=flash
 rarity=C
 type=Creature
 subtype=Bear
-color=g
 cost={1}{G}
 pt=2/2
 timing=flash

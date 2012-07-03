@@ -6,7 +6,6 @@ removal=2
 rarity=M
 type=Creature
 subtype=Wurm
-color=b
 cost={3}{B}{B}{B}
 pt=6/5
 timing=fmain

@@ -5,7 +5,6 @@ value=5
 rarity=R
 type=Creature
 subtype=Demon
-color=b
 cost={4}{B}{B}
 pt=6/6
 ability=flying,enters with -1/-1 2

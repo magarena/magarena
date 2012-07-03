@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Human,Shaman
-color=r
 cost={5}{R}
 pt=4/2
 timing=main

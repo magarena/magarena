@@ -5,7 +5,6 @@ value=5
 rarity=U
 type=Creature
 subtype=Wurm
-color=g
 cost={4}{G}{G}{G}
 pt=7/7
 ability=trample,enters gain life 7,die draw card

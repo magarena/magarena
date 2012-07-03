@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Warrior
-color=ub
 cost={3}{U}{B}
 pt=5/5
 ability=doesn't untap during untap step,enters tapped

@@ -6,7 +6,6 @@ ability=reach
 rarity=C
 type=Creature
 subtype=Ape
-color=g
 cost={G}
 pt=1/1
 timing=main

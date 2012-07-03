@@ -6,7 +6,6 @@ ability=defender,reach
 rarity=C
 type=Creature
 subtype=Plant,Wall
-color=g
 cost={G}
 pt=0/3
 timing=smain

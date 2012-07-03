@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/zen/37.jpg
 value=3
 rarity=C
 type=Enchantment
-color=w
 cost={W}
 timing=enchantment
 requires_card_code

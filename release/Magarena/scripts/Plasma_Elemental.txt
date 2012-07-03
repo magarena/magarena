@@ -6,7 +6,6 @@ ability=unblockable
 rarity=U
 type=Creature
 subtype=Elemental
-color=u
 cost={5}{U}
 pt=4/1
 timing=main

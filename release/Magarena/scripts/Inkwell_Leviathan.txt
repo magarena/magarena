@@ -6,7 +6,6 @@ ability=islandwalk,trample,shroud
 rarity=R
 type=Artifact,Creature
 subtype=Leviathan
-color=u
 cost={7}{U}{U}
 pt=7/11
 timing=fmain

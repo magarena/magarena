@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Creature
 subtype=Dragon
-color=r
 cost={3}{R}{R}{R}
 pt=5/5
 ability=flying

@@ -6,7 +6,6 @@ removal=1
 rarity=U
 type=Creature
 subtype=Kavu
-color=r
 cost={5}{R}
 pt=4/2
 ability=echo,enters damage target creature 2,leaves damage target creature 4

@@ -6,7 +6,6 @@ ability=flying,attacks each turn if able
 rarity=U
 type=Creature
 subtype=Drake
-color=bu
 cost={1}{U}{B}
 pt=2/3
 timing=main

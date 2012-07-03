@@ -6,7 +6,6 @@ ability=attacks each turn if able
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
-color=r
 cost={R}
 pt=1/1
 timing=main

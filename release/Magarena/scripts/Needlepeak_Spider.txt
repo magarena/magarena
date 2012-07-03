@@ -6,7 +6,6 @@ ability=reach
 rarity=C
 type=Creature
 subtype=Spider
-color=r
 cost={3}{R}
 pt=4/2
 timing=main

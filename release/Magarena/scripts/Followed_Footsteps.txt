@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Enchantment
 subtype=Aura
-color=u
 cost={3}{U}{U}
 timing=aura
 enchant=copy,creature

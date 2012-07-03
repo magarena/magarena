@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Zombie,Lizard
-color=bg
 cost={3}{B}{G}
 pt=3/3
 timing=main

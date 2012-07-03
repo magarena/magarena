@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Vampire
-color=b
 cost={4}{B}{B}
 pt=3/2
 ability=flying,undying

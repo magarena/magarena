@@ -6,7 +6,6 @@ ability=first strike,protection from red
 rarity=U
 type=Creature
 subtype=Human,Knight
-color=w
 cost={W}{W}
 pt=2/2
 timing=main

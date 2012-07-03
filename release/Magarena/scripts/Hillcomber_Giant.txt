@@ -6,7 +6,6 @@ ability=mountainwalk
 rarity=C
 type=Creature
 subtype=Giant,Scout
-color=w
 cost={2}{W}{W}
 pt=3/3
 timing=main

@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Human,Knight
-color=gw
 cost={3}{G}{W}
 pt=2/4
 timing=fmain

@@ -5,7 +5,6 @@ value=1
 rarity=C
 type=Creature
 subtype=Human,Samurai
-color=w
 cost={W}
 pt=1/1
 ability=bushido 1

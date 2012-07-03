@@ -5,7 +5,6 @@ value=3
 rarity=U
 type=Creature
 subtype=Wall
-color=u
 cost={1}{U}{U}
 pt=0/7
 ability=defender

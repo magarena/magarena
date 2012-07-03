@@ -6,7 +6,6 @@ ability=flying,protection from green
 rarity=C
 type=Creature
 subtype=Bird,Soldier
-color=u
 cost={1}{U}
 pt=1/1
 timing=main

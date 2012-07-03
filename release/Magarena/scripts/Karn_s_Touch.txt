@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/mm/86.jpg
 value=3
 rarity=R
 type=Instant
-color=u
 cost={U}{U}
 timing=animate
 requires_card_code

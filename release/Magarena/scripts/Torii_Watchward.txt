@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Spirit
-color=w
 cost={4}{W}
 pt=3/3
 ability=vigilance,soulshift 4

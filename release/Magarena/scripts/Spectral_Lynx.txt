@@ -5,7 +5,6 @@ value=2
 rarity=R
 type=Creature
 subtype=Cat,Spirit
-color=w
 cost={1}{W}
 pt=2/1
 ability=protection from green,regenerate {B}

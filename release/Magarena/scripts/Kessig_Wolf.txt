@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Creature
 subtype=Wolf
-color=r
 cost={2}{R}
 pt=3/1
 ability=gains {1}{R} first strike

@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Kavu
-color=g
 cost={4}{G}
 pt=4/4
 ability=gains {R} haste

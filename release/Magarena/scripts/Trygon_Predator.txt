@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Beast
-color=ug
 cost={1}{G}{U}
 pt=2/3
 ability=flying

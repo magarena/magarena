@@ -6,7 +6,6 @@ ability=flying,lifelink
 rarity=C
 type=Creature
 subtype=Thrull
-color=bw
 cost={1}{W/B}
 pt=1/1
 timing=main

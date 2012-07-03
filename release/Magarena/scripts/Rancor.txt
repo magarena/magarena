@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Enchantment
 subtype=Aura
-color=g
 cost={G}
 given_pt=2/0
 given_ability=trample

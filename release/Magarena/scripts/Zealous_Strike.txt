@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/avr/41.jpg
 value=2
 rarity=C
 type=Instant
-color=w
 cost={1}{W}
 timing=pump
 requires_card_code

@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/avr/12.jpg
 value=3
 rarity=C
 type=Instant
-color=w
 cost={W}
 timing=removal
 requires_card_code

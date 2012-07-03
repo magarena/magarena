@@ -6,7 +6,6 @@ ability=islandwalk
 rarity=U
 type=Creature
 subtype=Bear
-color=g
 cost={3}{G}
 pt=3/3
 timing=main

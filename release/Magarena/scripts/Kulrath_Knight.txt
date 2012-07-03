@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Elemental,Knight
-color=br
 cost={3}{B/R}{B/R}
 pt=3/3
 ability=flying,wither

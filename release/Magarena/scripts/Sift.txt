@@ -4,7 +4,6 @@ image=http://magiccards.info/scans/en/10e/108.jpg
 value=3
 rarity=C
 type=Sorcery
-color=u
 cost={3}{U}
 timing=draw
 requires_card_code

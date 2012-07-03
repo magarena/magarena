@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Beast
-color=rw
 cost={R}{W}
 pt=2/2
 ability=vigilance,haste

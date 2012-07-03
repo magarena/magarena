@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Creature
 subtype=Giant
-color=w
 cost={4}{W}{W}
 pt=6/6
 ability=vigilance

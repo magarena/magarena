@@ -5,7 +5,6 @@ value=5
 rarity=U
 type=Creature
 subtype=Angel
-color=w
 cost={4}{W}{W}
 pt=4/4
 ability=flying

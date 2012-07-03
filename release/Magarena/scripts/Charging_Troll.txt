@@ -5,7 +5,6 @@ value=4
 rarity=U
 type=Creature
 subtype=Troll
-color=gw
 cost={2}{G}{W}
 pt=3/3
 ability=vigilance,regenerate {G}

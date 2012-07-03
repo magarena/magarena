@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Human,Druid,Knight
-color=gw
 cost={G}{W}
 pt=2/2
 ability=vigilance,tap add mana {G}

@@ -6,7 +6,6 @@ ability=can't block
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
-color=r
 cost={1}{R}
 pt=2/2
 timing=fmain

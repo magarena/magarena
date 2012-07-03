@@ -6,7 +6,6 @@ ability=shroud
 rarity=C
 type=Creature
 subtype=Human,Monk
-color=g
 cost={1}{G}
 pt=2/2
 timing=fmain

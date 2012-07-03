@@ -6,7 +6,6 @@ ability=protection from black
 rarity=C
 type=Creature
 subtype=Elf,Knight
-color=gw
 cost={G}{W}
 pt=2/2
 timing=main

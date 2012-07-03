@@ -6,7 +6,6 @@ ability=first strike,shroud
 rarity=C
 type=Creature
 subtype=Human,Rogue
-color=uw
 cost={W}{U}
 pt=2/1
 timing=fmain

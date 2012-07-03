@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Zombie,Leech
-color=bg
 cost={B}{G}
 pt=2/2
 timing=main

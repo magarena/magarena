@@ -6,7 +6,6 @@ ability=flying,first strike
 rarity=C
 type=Creature
 subtype=Pegasus
-color=w
 cost={2}{W}
 pt=2/1
 timing=main

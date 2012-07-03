@@ -5,7 +5,6 @@ value=2
 rarity=U
 type=Creature
 subtype=Dauthi,Minion
-color=b
 cost={2}{B}
 pt=1/1
 timing=main

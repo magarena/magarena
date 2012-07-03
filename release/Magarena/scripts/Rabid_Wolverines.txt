@@ -5,7 +5,6 @@ value=4
 rarity=C
 type=Creature
 subtype=Wolverine
-color=g
 cost={3}{G}{G}
 pt=4/4
 ability=blocked by pump +1/+1

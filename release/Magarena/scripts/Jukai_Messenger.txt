@@ -6,7 +6,6 @@ ability=forestwalk
 rarity=C
 type=Creature
 subtype=Human,Monk
-color=g
 cost={G}
 pt=1/1
 timing=main

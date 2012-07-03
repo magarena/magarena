@@ -6,7 +6,6 @@ ability=vigilance
 rarity=C
 type=Creature
 subtype=Human,Knight
-color=w
 cost={W}{W}
 pt=2/2
 timing=main

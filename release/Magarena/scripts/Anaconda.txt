@@ -6,7 +6,6 @@ ability=swampwalk
 rarity=U
 type=Creature
 subtype=Snake
-color=g
 cost={3}{G}
 pt=3/3
 timing=main

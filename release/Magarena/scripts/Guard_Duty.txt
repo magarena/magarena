@@ -5,7 +5,6 @@ value=2
 rarity=C
 type=Enchantment
 subtype=Aura
-color=w
 cost={W}
 given_ability=defender
 timing=aura

@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Spirit
-color=g
 cost={3}{G}{G}
 pt=2/4
 timing=main

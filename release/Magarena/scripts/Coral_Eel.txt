@@ -5,7 +5,6 @@ value=1
 rarity=C
 type=Creature
 subtype=Fish
-color=u
 cost={1}{U}
 pt=2/1
 timing=main

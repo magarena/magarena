@@ -5,7 +5,6 @@ value=3
 rarity=C
 type=Creature
 subtype=Beast
-color=gu
 cost={2}{G}{U}
 pt=3/3
 ability=flying,trample

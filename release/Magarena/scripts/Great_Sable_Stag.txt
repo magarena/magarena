@@ -5,7 +5,6 @@ value=4
 rarity=R
 type=Creature
 subtype=Elk
-color=g
 cost={1}{G}{G}
 pt=3/3
 ability=can't be countered,protection from blue,protection from black

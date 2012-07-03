@@ -5,7 +5,6 @@ value=4
 removal=5
 rarity=U
 type=Sorcery
-color=r
 cost={2}{R}
 timing=main
 requires_card_code

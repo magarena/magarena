@@ -5,7 +5,6 @@ value=5
 rarity=M
 type=Legendary,Creature
 subtype=Praetor
-color=w
 cost={5}{W}{W}
 pt=4/7
 ability=vigilance

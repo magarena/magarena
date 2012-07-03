@@ -6,7 +6,6 @@ ability=exalted
 rarity=C
 type=Creature
 subtype=Human,Knight
-color=u
 cost={3}{U}
 pt=2/2
 timing=main

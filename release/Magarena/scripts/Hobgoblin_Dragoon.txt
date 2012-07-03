@@ -6,7 +6,6 @@ ability=flying,first strike
 rarity=C
 type=Creature
 subtype=Goblin,Knight
-color=rw
 cost={2}{R/W}
 pt=1/2
 timing=main
