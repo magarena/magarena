@@ -1,0 +1,13 @@
+name=Goblin King
+url=http://magiccards.info/10e/en/207.html
+image=http://magiccards.info/scans/en/10e/207.jpg
+value=3
+rarity=R
+type=Creature
+subtype=Goblin
+color=r
+cost={1}{R}{R}
+pt=2/2
+static=player
+timing=fmain
+requires_card_code
