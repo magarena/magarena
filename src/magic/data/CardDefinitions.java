@@ -50,15 +50,6 @@ public class CardDefinitions {
 		}
 	}
 
-	private static void checkCard(final MagicCardDefinition card) {
-		assert card != null : "CardDefinitions.checkCard passed null";
-		
-        //every card should have a timing hint
-        if (!card.isToken() && card.getTiming()==MagicTiming.None) {
-            throw new RuntimeException(card.getName() + " does not have a timing hint");
-        }
-	}
-	
 	private static void addDefinition(final MagicCardDefinition cardDefinition) {
 		assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
 		assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
@@ -115,7 +106,7 @@ public class CardDefinitions {
         //System.err.print("Parsing ");
         //System.err.println(file);
         final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
-        checkCard(cdef);
+        cdef.validate();
         addDefinition(cdef);
     }
 	

@@ -413,10 +413,6 @@ public class MagicCardDefinition {
         colorFlags=MagicColor.getFlags(colors);        
     }
     
-    protected void setColor(final MagicColor color) {
-        colorFlags|=color.getMask();
-    }
-    
     public boolean hasColor(final MagicColor color) {
         return (colorFlags&color.getMask())!=0;
     }
@@ -428,7 +424,6 @@ public class MagicCardDefinition {
     public void setColoredType() {
         int count=0;
         for (final MagicColor color : MagicColor.values()) {
-            
             if (color.hasColor(colorFlags)) {
                 count++;
             }
@@ -475,6 +470,22 @@ public class MagicCardDefinition {
 
     public void setCost(final MagicManaCost cost) {
         this.cost=cost;
+    }
+
+    public void validate() {                                                           
+        //every card should have a timing hint                                                                                        
+        if (!isToken() && getTiming() == MagicTiming.None) {
+            throw new RuntimeException(
+                getName() + " does not have a timing hint"
+            );
+        }
+
+        //check colorFlags and color from mana cost matches
+        if (!isToken() && cost.getColorFlags() != colorFlags) {
+            throw new RuntimeException(
+                "name=" + name + " costColorFlags: " + cost.getColorFlags() + " != colorFlags: " + colorFlags
+            );
+        }
     }
 
     public MagicManaCost getCost() {

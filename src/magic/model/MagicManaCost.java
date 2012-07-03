@@ -221,6 +221,18 @@ public class MagicManaCost {
         
         return types;
     }
+        
+    public int getColorFlags() {
+        int colorFlags = 0;
+        for (final MagicCostManaType costType : order) {
+            if (costType != MagicCostManaType.Colorless) {
+                for (final MagicManaType manaType : costType.getTypes()) {
+                    colorFlags |= manaType.getColor().getMask();
+                }
+            }
+        }
+        return colorFlags;
+    }
     
     private String getCanonicalText() {
         final StringBuilder sb = new StringBuilder();

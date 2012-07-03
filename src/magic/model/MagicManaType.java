@@ -75,6 +75,17 @@ public enum MagicManaType {
         return text;
     }
     
+    public MagicColor getColor() {
+        switch (this) {
+            case Black: return MagicColor.Black;
+            case Blue: return MagicColor.Blue;
+            case Green: return MagicColor.Green;
+            case Red: return MagicColor.Red;
+            case White: return MagicColor.White;
+        }
+        throw new RuntimeException("No color available for MagicManaType " + this);
+    }
+    
     public ImageIcon getIcon(final boolean small) {
         switch (this) {
             case Colorless: return small?IconImages.COST_ONE:IconImages.ONE;
