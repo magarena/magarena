@@ -1,0 +1,10 @@
+name=Volcanic Island
+url=http://magiccards.info/me4/en/260.html
+image=http://magiccards.info/scans/en/me4/260.jpg
+value=4
+rarity=R
+type=Land
+subtype=Mountain,Island
+mana=r4u4
+ability=tap add mana {R} or {U}
+timing=land

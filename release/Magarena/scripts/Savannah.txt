@@ -1,0 +1,10 @@
+name=Savannah
+url=http://magiccards.info/me4/en/250.html
+image=http://magiccards.info/scans/en/me4/250.jpg
+value=4
+rarity=R
+type=Land
+subtype=Plains,Forest
+mana=w4g4
+ability=tap add mana {W} or {G}
+timing=land

@@ -1,0 +1,10 @@
+name=Underground Sea
+url=http://magiccards.info/me4/en/256.html
+image=http://magiccards.info/scans/en/me4/256.jpg
+value=4
+rarity=R
+type=Land
+subtype=Swamp,Island
+mana=b4u4
+ability=tap add mana {B} or {U}
+timing=land

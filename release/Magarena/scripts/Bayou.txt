@@ -1,0 +1,10 @@
+name=Bayou
+url=http://magiccards.info/me4/en/242.html
+image=http://magiccards.info/scans/en/me4/242.jpg
+value=4
+rarity=R
+type=Land
+subtype=Swamp,Forest
+mana=b4g4
+ability=tap add mana {B} or {G}
+timing=land

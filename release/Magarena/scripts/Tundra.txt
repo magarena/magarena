@@ -1,0 +1,10 @@
+name=Tundra
+url=http://magiccards.info/me4/en/255.html
+image=http://magiccards.info/scans/en/me4/255.jpg
+value=4
+rarity=R
+type=Land
+subtype=Island,Plains
+mana=u4w4
+ability=tap add mana {U} or {W}
+timing=land
