@@ -58,7 +58,6 @@ public enum CardProperty {
     COLOR() {
         void setProperty(final MagicCardDefinition card, final String value) {
 			card.setColors(value);
-			card.setColoredType();
         }
     },
     CONVERTED() {

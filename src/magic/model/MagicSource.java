@@ -12,7 +12,6 @@ public interface MagicSource extends MagicCopyable, MagicMappable {
     MagicCardDefinition getCardDefinition();
     String              getName();
     MagicPlayer         getController();
-    MagicColoredType    getColoredType();
     int                 getColorFlags();
     Collection<MagicActivation> getActivations();
     MagicGame           getGame();

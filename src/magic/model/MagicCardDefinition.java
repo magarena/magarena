@@ -70,7 +70,6 @@ public class MagicCardDefinition {
     private int typeFlags=0;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private int colorFlags=0;
-    private MagicColoredType coloredType=MagicColoredType.Colorless;
     private MagicManaCost cost=MagicManaCost.ZERO;
     private String manaSourceText="";
     private final int manaSource[]=new int[MagicColor.NR_COLORS];
@@ -416,31 +415,14 @@ public class MagicCardDefinition {
     public boolean hasColor(final MagicColor color) {
         return (colorFlags&color.getMask())!=0;
     }
+
+    public boolean isColorless() {
+        return colorFlags == 0;
+    }
         
     public int getColorFlags() {
         return colorFlags;
     }
-    
-    public void setColoredType() {
-        int count=0;
-        for (final MagicColor color : MagicColor.values()) {
-            if (color.hasColor(colorFlags)) {
-                count++;
-            }
-        }
-        if (count>1) {
-            coloredType=MagicColoredType.MultiColored;
-        } else if (count==1) {
-            coloredType=MagicColoredType.MonoColored;
-        } else {
-            coloredType=MagicColoredType.Colorless;
-        }
-    }
-    
-    public MagicColoredType getColoredType() {
-        return coloredType;
-    }
-        
     
     public int getConvertedCost() {
         return cost.getConvertedCost();

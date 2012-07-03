@@ -2,7 +2,6 @@ package magic.generator;
 
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicColoredType;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
@@ -110,7 +109,7 @@ public class DefaultDeckGenerator {
 				countNonlandNoncreature++;
 			}
 			
-			if(card.getColoredType() == MagicColoredType.Colorless) {
+			if(card.isColorless()) {
 				countColorless++;
 			}
 			
@@ -134,7 +133,7 @@ public class DefaultDeckGenerator {
 					continue;
 				}
 				
-				final boolean colorless = cardDefinition.getColoredType() == MagicColoredType.Colorless;
+				final boolean colorless = cardDefinition.isColorless();
 				if (!ignoreMaxColorless() && colorless && countColorless >= maxColorless) {
 					continue;
 				}

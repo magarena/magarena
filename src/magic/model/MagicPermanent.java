@@ -374,11 +374,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
     
     @Override
-    public MagicColoredType getColoredType() {
-        return cardDefinition.getColoredType();
-    }
-    
-    @Override
     public int getColorFlags() {
         return cachedColorFlags;
     }
