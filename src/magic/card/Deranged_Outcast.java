@@ -25,7 +25,7 @@ public class Deranged_Outcast {
                     MagicCondition.ONE_CREATURE_CONDITION,
                 },
             new MagicActivationHints(MagicTiming.Removal),
-            "Destroy") {
+            "Pump") {
         @Override
         public MagicEvent[] getCostEvent(final MagicSource source) {
             return new MagicEvent[]{
