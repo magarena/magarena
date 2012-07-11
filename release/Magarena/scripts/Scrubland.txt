@@ -1,0 +1,10 @@
+name=Scrubland
+url=http://magiccards.info/me4/en/251.html
+image=http://magiccards.info/scans/en/me4/251.jpg
+value=4
+rarity=R
+type=Land
+subtype=Swamp,Plains
+mana=b4w4
+ability=tap add mana {B} or {W}
+timing=land

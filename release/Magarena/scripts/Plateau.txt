@@ -1,0 +1,10 @@
+name=Plateau
+url=http://magiccards.info/me4/en/249.html
+image=http://magiccards.info/scans/en/me4/249.jpg
+value=4
+rarity=R
+type=Land
+subtype=Mountain,Plains
+mana=r4w4
+ability=tap add mana {R} or {W}
+timing=land
