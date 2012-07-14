@@ -21,7 +21,7 @@ public class Niblis_of_the_Breath {
     public static final MagicPermanentActivation A1 = new MagicTapCreatureActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.WHITE.getCondition()
+                    MagicManaCost.BLUE.getCondition()
             },
             new MagicActivationHints(MagicTiming.Tapping),
             "Tap") {
@@ -31,7 +31,7 @@ public class Niblis_of_the_Breath {
                 new MagicPayManaCostTapEvent(
                         source,
                         source.getController(),
-                        MagicManaCost.WHITE)
+                        MagicManaCost.BLUE)
             };
         }
     };
@@ -39,7 +39,7 @@ public class Niblis_of_the_Breath {
     public static final MagicPermanentActivation A2 = new MagicPermanentActivation(
             new MagicCondition[]{
                     MagicCondition.CAN_TAP_CONDITION,
-                    MagicManaCost.WHITE.getCondition()
+                    MagicManaCost.BLUE.getCondition()
             },
             new MagicActivationHints(MagicTiming.Tapping),
             "Untap") {
@@ -49,7 +49,7 @@ public class Niblis_of_the_Breath {
                 new MagicPayManaCostTapEvent(
                         source,
                         source.getController(),
-                        MagicManaCost.WHITE)
+                        MagicManaCost.BLUE)
             };
         }
 
