@@ -1,14 +1,10 @@
-package magic;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.Serializable;
-import java.util.Random;
+package ec.util;
+import java.io.*;
+import java.util.*;
 
 /** 
  * <h3>MersenneTwister and MersenneTwisterFast</h3>
- * <p><b>Version 16</b>, based on version MT199937(99/10/29)
+ * <p><b>Version 17</b>, based on version MT199937(99/10/29)
  * of the Mersenne Twister algorithm found at 
  * <a href="http://www.math.keio.ac.jp/matumoto/emt.html">
  * The Mersenne Twister Home Page</a>, with the initialization
@@ -45,6 +41,10 @@ import java.util.Random;
  * Vol. 8, No. 1, January 1998, pp 3--30.
  *
  * <h3>About this Version</h3>
+ *
+ * <p><b>Changes since V16:</b> Added nextDouble(includeZero, includeOne) and
+ * nextFloat(includeZero, includeOne) to allow for half-open, fully-closed, and
+ * fully-open intervals.
  *
  * <p><b>Changes Since V15:</b> Added serialVersionUID to quiet compiler warnings
  * from Sun's overly verbose compilers as of JDK 1.5.
@@ -154,7 +154,7 @@ import java.util.Random;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  * POSSIBILITY OF SUCH DAMAGE.
  *
- @version 16
+ @version 17
 */
 
 // Note: this class is hard-inlined in all of its methods.  This makes some of
@@ -195,20 +195,20 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         {
         try
             {
-            final MersenneTwisterFast f = (MersenneTwisterFast)(super.clone());
-            f.mt = mt.clone();
-            f.mag01 = mag01.clone();
+            MersenneTwisterFast f = (MersenneTwisterFast)(super.clone());
+            f.mt = (int[])(mt.clone());
+            f.mag01 = (int[])(mag01.clone());
             return f;
             }
         catch (CloneNotSupportedException e) { throw new InternalError(); } // should never happen
         }
     
-    private boolean stateEquals(final Object o)
+    public boolean stateEquals(Object o)
         {
         if (o==this) return true;
         if (o == null || !(o instanceof MersenneTwisterFast))
             return false;
-        final MersenneTwisterFast other = (MersenneTwisterFast) o;
+        MersenneTwisterFast other = (MersenneTwisterFast) o;
         if (mti != other.mti) return false;
         for(int x=0;x<mag01.length;x++)
             if (mag01[x] != other.mag01[x]) return false;
@@ -218,7 +218,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
     /** Reads the entire state of the MersenneTwister RNG from the stream */
-    private void readState(final DataInputStream stream) throws IOException
+    public void readState(DataInputStream stream) throws IOException
         {
         int len = mt.length;
         for(int x=0;x<len;x++) mt[x] = stream.readInt();
@@ -232,7 +232,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
         
     /** Writes the entire state of the MersenneTwister RNG to the stream */
-    private void writeState(final DataOutputStream stream) throws IOException
+    public void writeState(DataOutputStream stream) throws IOException
         {
         int len = mt.length;
         for(int x=0;x<len;x++) stream.writeInt(mt[x]);
@@ -270,7 +270,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * in the array are used; if the array is shorter than this then
      * integers are repeatedly used in a wrap-around fashion.
      */
-    private MersenneTwisterFast(final int[] array)
+    public MersenneTwisterFast(final int[] array)
         {
         setSeed(array);
         }
@@ -282,7 +282,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * only uses the first 32 bits for its seed).   
      */
 
-    private synchronized void setSeed(final long seed)
+    synchronized public void setSeed(final long seed)
         {
         // Due to a bug in java.util.Random clear up to 1.2, we're
         // doing our own Gaussian variable.
@@ -316,7 +316,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
      * integers are repeatedly used in a wrap-around fashion.
      */
 
-    private synchronized void setSeed(final int[] array)
+    synchronized public void setSeed(final int[] array)
         {
         if (array.length == 0)
             throw new IllegalArgumentException("Array length must be greater than zero");
@@ -347,7 +347,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    private final int nextInt()
+    public final int nextInt()
         {
         int y;
         
@@ -384,7 +384,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
 
 
-    private final short nextShort()
+    public final short nextShort()
         {
         int y;
         
@@ -421,7 +421,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
 
 
-    private final char nextChar()
+    public final char nextChar()
         {
         int y;
         
@@ -457,7 +457,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    private final boolean nextBoolean()
+    public final boolean nextBoolean()
         {
         int y;
         
@@ -489,7 +489,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         y ^= (y << 15) & TEMPERING_MASK_C;      // TEMPERING_SHIFT_T(y)
         y ^= (y >>> 18);                        // TEMPERING_SHIFT_L(y)
 
-        return (y >>> 31) != 0;
+        return (boolean)((y >>> 31) != 0);
         }
 
 
@@ -500,7 +500,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         event as nextBoolean(double), but twice as fast. To explicitly
         use this, remember you may need to cast to float first. */
 
-    private final boolean nextBoolean(final float probability)
+    public final boolean nextBoolean(final float probability)
         {
         int y;
         
@@ -544,7 +544,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         of returning true, else returning false.  <tt>probability</tt> must
         be between 0.0 and 1.0, inclusive. */
 
-    private final boolean nextBoolean(final double probability)
+    public final boolean nextBoolean(final double probability)
         {
         int y;
         int z;
@@ -614,7 +614,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    private final byte nextByte()
+    public final byte nextByte()
         {
         int y;
         
@@ -650,7 +650,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    private final void nextBytes(final byte[] bytes)
+    public final void nextBytes(byte[] bytes)
         {
         int y;
         
@@ -689,7 +689,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         }
 
 
-    private final long nextLong()
+    public final long nextLong()
         {
         int y;
         int z;
@@ -757,7 +757,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
     /** Returns a long drawn uniformly from 0 to n-1.  Suffice it to say,
         n must be > 0, or an IllegalArgumentException is raised. */
-    private final long nextLong(final long n)
+    public final long nextLong(final long n)
         {
         if (n<=0)
             throw new IllegalArgumentException("n must be positive, got: " + n);
@@ -832,7 +832,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
     /** Returns a random double in the half-open range from [0.0,1.0).  Thus 0.0 is a valid
         result but 1.0 is not. */
-    private final double nextDouble()
+    public final double nextDouble()
         {
         int y;
         int z;
@@ -899,9 +899,34 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
 
 
+    /** Returns a double in the range from 0.0 to 1.0, possibly inclusive of 0.0 and 1.0 themselves.  Thus:
+
+        <p><table border=0>
+        <th><td>Expression<td>Interval
+        <tr><td>nextDouble(false, false)<td>(0.0, 1.0)
+        <tr><td>nextDouble(true, false)<td>[0.0, 1.0)
+        <tr><td>nextDouble(false, true)<td>(0.0, 1.0]
+        <tr><td>nextDouble(true, true)<td>[0.0, 1.0]
+        </table>
+        
+        <p>This version preserves all possible random values in the double range.
+        */
+    public double nextDouble(boolean includeZero, boolean includeOne)
+        {
+        double d = 0.0;
+        do
+            {
+            d = nextDouble();                           // grab a value, initially from half-open [0.0, 1.0)
+            if (includeOne && nextBoolean()) d += 1.0;  // if includeOne, with 1/2 probability, push to [1.0, 2.0)
+            } 
+        while ( (d > 1.0) ||                            // everything above 1.0 is always invalid
+                (!includeZero && d == 0.0));            // if we're not including zero, 0.0 is invalid
+        return d;
+        }
 
 
-    private final double nextGaussian()
+
+    public final double nextGaussian()
         {
         if (__haveNextNextGaussian)
             {
@@ -1038,7 +1063,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
                     - 1;
                 s = v1 * v1 + v2 * v2;
                 } while (s >= 1 || s==0);
-            final double multiplier = StrictMath.sqrt(-2 * StrictMath.log(s)/s);
+            double multiplier = StrictMath.sqrt(-2 * StrictMath.log(s)/s);
             __nextNextGaussian = v2 * multiplier;
             __haveNextNextGaussian = true;
             return v1 * multiplier;
@@ -1051,7 +1076,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
 
     /** Returns a random float in the half-open range from [0.0f,1.0f).  Thus 0.0f is a valid
         result but 1.0f is not. */
-    private final float nextFloat()
+    public final float nextFloat()
         {
         int y;
         
@@ -1084,6 +1109,32 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         y ^= (y >>> 18);                        // TEMPERING_SHIFT_L(y)
 
         return (y >>> 8) / ((float)(1 << 24));
+        }
+
+
+    /** Returns a float in the range from 0.0f to 1.0f, possibly inclusive of 0.0f and 1.0f themselves.  Thus:
+
+        <p><table border=0>
+        <th><td>Expression<td>Interval
+        <tr><td>nextFloat(false, false)<td>(0.0f, 1.0f)
+        <tr><td>nextFloat(true, false)<td>[0.0f, 1.0f)
+        <tr><td>nextFloat(false, true)<td>(0.0f, 1.0f]
+        <tr><td>nextFloat(true, true)<td>[0.0f, 1.0f]
+        </table>
+        
+        <p>This version preserves all possible random values in the float range.
+        */
+    public double nextFloat(boolean includeZero, boolean includeOne)
+        {
+        float d = 0.0f;
+        do
+            {
+            d = nextFloat();                            // grab a value, initially from half-open [0.0f, 1.0f)
+            if (includeOne && nextBoolean()) d += 1.0f; // if includeOne, with 1/2 probability, push to [1.0f, 2.0f)
+            } 
+        while ( (d > 1.0f) ||                           // everything above 1.0f is always invalid
+                (!includeZero && d == 0.0f));           // if we're not including zero, 0.0f is invalid
+        return d;
         }
 
 
@@ -1173,7 +1224,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
     /**
      * Tests the code.
      */
-    public static void main(final String args[])
+    public static void main(String args[])
         { 
         int j;
 
@@ -1202,7 +1253,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         int xx; long ms;
         System.out.println("\nTime to test grabbing 100000000 ints");
           
-        final Random rr = new Random(SEED);
+        Random rr = new Random(SEED);
         xx = 0;
         ms = System.currentTimeMillis();
         for (j = 0; j < 100000000; j++)
@@ -1232,7 +1283,7 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         r = new MersenneTwisterFast(SEED);
         for (j = 0; j < 1000; j++)
             {
-            System.out.print(r.nextBoolean((j/999.0)) + " ");
+            System.out.print(r.nextBoolean((double)(j/999.0)) + " ");
             if (j%8==7) System.out.println();
             }
         if (!(j%8==7)) System.out.println();
@@ -1241,12 +1292,12 @@ public strictfp class MersenneTwisterFast implements Serializable, Cloneable
         r = new MersenneTwisterFast(SEED);
         for (j = 0; j < 1000; j++)
             {
-            System.out.print(r.nextBoolean((j/999.0f)) + " ");
+            System.out.print(r.nextBoolean((float)(j/999.0f)) + " ");
             if (j%8==7) System.out.println();
             }
         if (!(j%8==7)) System.out.println();
           
-        final byte[] bytes = new byte[1000];
+        byte[] bytes = new byte[1000];
         System.out.println("\nGrab the first 1000 bytes using nextBytes");
         r = new MersenneTwisterFast(SEED);
         r.nextBytes(bytes);
