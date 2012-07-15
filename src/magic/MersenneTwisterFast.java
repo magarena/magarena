@@ -1,4 +1,4 @@
-package ec.util;
+package magic;
 import java.io.*;
 import java.util.*;
 
