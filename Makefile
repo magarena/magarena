@@ -194,8 +194,8 @@ test: $(MAG)
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
 
-%.speed: $(MAg)
-	$(JAVA) magic.DeckStrCal --deck1 release/decks/LSK_B.dec --deck2 release/decks/LSK_G.dec --ai1 $* --ai2 $* --games 100
+%.speed: $(MAG) release/Magarena/decks/LSK_B.dec release/Magarena/decks/LSK_G.dec
+	$(JAVA) magic.DeckStrCal --deck1 $(word 2,$^) --deck2 $(word 3,$^) --ai1 $* --ai2 $* --games 1000
 
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@
