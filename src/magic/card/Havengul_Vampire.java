@@ -34,7 +34,7 @@ public class Havengul_Vampire {
                 final Object[] choiceResults) {
             game.doAction(new MagicChangeCountersAction(
                     (MagicPermanent)data[0],
-                    MagicCounterType.MinusOne,
+                    MagicCounterType.PlusOne,
                     1,
                     true));
         }
