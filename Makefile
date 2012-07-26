@@ -210,19 +210,23 @@ exp/%.log: $(MAG)
 decks/dd:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
 
+decks/td:
+	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=topdeck | grep -o mtg/daily/td/[0-9]* | cut -d'/' -f4`; do make decks/td_$$i.dec; done
+
+# Daily Deck
 decks/dd_%.dec: scripts/dailyhtml2dec.awk
 	curl "http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/deck/$*" | awk -f $^ > $@
 
-decks/ml_%.dec: scripts/apprentice2dec.awk
-	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
-
-# Mike Flores 1 - 212
+# Mike Flores
 decks/mf_%.dec: scripts/dailyhtml2dec.awk
 	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtgcom/daily/mf$* | awk -f $^ > $@
 
-# Top Decks 1 - 147
+# Top Decks
 decks/td_%.dec: scripts/dailyhtml2dec.awk
 	curl http://www.wizards.com/Magic/Magazine/Article.aspx?x=mtg/daily/td/$* | awk -f $^ > $@
+
+decks/ml_%.dec: scripts/apprentice2dec.awk
+	wget "http://www.magic-league.com/decks/download.php?deck=$*&index=1" -O - | flip -u - | awk -f $^ > $@
 
 ref/rules.txt:
 	curl http://www.wizards.com`wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
