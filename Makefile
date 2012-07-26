@@ -345,15 +345,15 @@ github/push:
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
 
-cards/scored_by_dd.tsv: cards/existing_tip.txt
+cards/scored_by_dd.tsv: cards/existing_tip.txt $(wildcard decks/dd*)
 	./scripts/score_card.awk `ls -1 decks/dd* | sort -n -t_ -k2` |\
 	sort -rg |\
-	./scripts/keep_unimplemented.awk $^ /dev/stdin  > $@
+	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin  > $@
 
-cards/scored_by_td.tsv: cards/existing_tip.txt
+cards/scored_by_td.tsv: cards/existing_tip.txt $(wildcard decks/td*)
 	./scripts/score_card.awk `ls -1 decks/td* | sort -n -t_ -k2` |\
 	sort -rg |\
-	./scripts/keep_unimplemented.awk $^ /dev/stdin  > $@
+	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin  > $@
 	
 cards/mtg_mana_costs:
 	grep -ho "\(\{[^\}]\+\}\)\+" -r cards/cards.xml | sort | uniq > $@
