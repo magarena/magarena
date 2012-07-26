@@ -17,7 +17,8 @@ public class Malignus {
                 final MagicGame game,
                 final MagicPlayer player,
                 final MagicPowerToughness pt) {
-            int amount = (int)Math.ceil(Math.max(player.getLife(),game.getOpponent(player).getLife()) / 2.0);
+            // floor((x + 1) / 2) == ceil(x / 2)
+            final int amount = (game.getOpponent(player).getLife() + 1) / 2;
             pt.set(amount,amount);
         }
     };
