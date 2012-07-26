@@ -194,8 +194,15 @@ test: $(MAG)
 %.d: $(MAG)
 	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
 
-%.speed: $(MAG) release/Magarena/decks/LSK_B.dec release/Magarena/decks/LSK_G.dec
-	$(JAVA) magic.DeckStrCal --deck1 $(word 2,$^) --deck2 $(word 3,$^) --ai1 $* --ai2 $* --games 1000
+# Z = 4.4172 (99.999%)
+# E = 0.01
+# best estimator for r is p = h / (h + t)
+# this estimator has a maring of error E, |p - r| < E at a particular Z, p - E < r < p + E
+# n = Z^2 / 4E^2
+#   = 48780
+#   ~ 50000
+%.str: $(MAG) release/Magarena/decks/JustRelentlessRats.dec release/Magarena/decks/LSK_G.dec
+	$(JAVA) magic.DeckStrCal --deck1 $(word 2,$^) --deck2 $(word 3,$^) --ai1 $* --ai2 $* --games 50000 > $@
 
 exp/%.log: $(MAG)
 	scripts/evaluate_ai.sh $* > $@
@@ -327,10 +334,9 @@ code_clones:
 			--files src/magic/card > $@
 
 cards/mtg-data:
-	wget `curl "http://www.slightlymagic.net/forum/viewtopic.php?f=27&t=1347&sid=965fac256e7153d8af4da259b57d0a7b" |\
-	grep -o http://dl[^\"]*mtg-data[^\"]*.zip | head -1` -O mtg-data.zip
-	unzip -j mtg-data.zip -d cards
-	rm mtg-data.zip
+	curl https://dl.dropbox.com/u/2771470/index.html | grep -o 'href="mtg.*.zip' | head -1 | sed 's/href="//' | xargs -I'{}' wget https://dl.dropbox.com/u/2771470/'{}'
+	unzip -j mtg-data*.zip -d cards
+	rm mtg-data*.zip
 
 github/push:
 	hg gexport
