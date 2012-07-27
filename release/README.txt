@@ -54,6 +54,49 @@ Thank you for your support and have fun!
 
 
 
+Release 1.28 (July 29, 2012)
+============
+includes contributions from mecheng, Melvin, Pablo Castellazzi, and sponeta 
+
+- fixed: Jungle Troll not considered red
+- fixed: Ulvenwald Bear's was using Festerhide Boar's ability
+- fixed: Nibilis of the Breath's ability cost {U} not {W}
+- fixed: Havengul Vampire gets -1/-1 instead of +1/+1
+- fixed: Malignus' power and toughness
+
+- added the following premade decks:
+  BG_Sniper_40.dec
+  BU_Gluttony_40.dec
+  BU_Gluttony_60.dec
+  BU_Mind_Mangler_40.dec
+  BU_Mind_Mangler_60.dec
+  BU_Nightmare_Control_40.dec
+  GW_Samurai_40.dec
+  RB_Vampire_Count_40.dec
+  RG_Rush_40.dec
+  RW_Flash_40.dec
+  RW_Holy_Fire_40.dec
+  Rainbow_Dragonlord_60.dec
+  Relentless_Rats.dec
+  WB_Spirit_Tokens_40.dec
+  W_Holy_Arms_40.dec
+
+- added the following cards:
+  Badlands
+  Bayou
+  Goblin King
+  Granite Gargoyle
+  Plateau
+  Roc of Kher Ridges
+  Savannah
+  Scrubland
+  Scryb Sprites
+  Tropical Island
+  Tundra
+  Underground Sea
+  Volcanic Island
+  Wall of Fire
+
 Release 1.27 (July 1, 2012)
 ============
 - added support for "miracle <mana cost>" in ability property of card script
