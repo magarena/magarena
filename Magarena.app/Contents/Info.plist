@@ -7,9 +7,9 @@
 	<key>CFBundleIdentifier</key>
 	<string>magic.MagicMain</string>
 	<key>CFBundleVersion</key>
-	<string>1.27</string>
+	<string>1.28</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.27</string>
+	<string>1.28</string>
 	<key>CFBundleAllowMixedLocalizations</key>
 	<string>true</string>
 	<key>CFBundleExecutable</key>
