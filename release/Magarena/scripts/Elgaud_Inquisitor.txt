@@ -10,4 +10,3 @@ pt=2/2
 ability=lifelink
 timing=main
 requires_card_code
-	
