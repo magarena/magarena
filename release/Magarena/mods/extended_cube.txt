@@ -1174,6 +1174,7 @@ Walking Corpse
 Wall of Bone
 Wall of Denial
 Wall of Faith
+Wall of Fire
 Wall of Frost
 Wall of Omens
 Wall of Reverence

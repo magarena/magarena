@@ -159,6 +159,7 @@ Azure Drake
 Azure Mage
 Backlash
 Back to Nature
+Badlands
 Bad Moon
 Balduvian Barbarians
 Balduvian War-Makers
@@ -189,6 +190,7 @@ Battlegrowth
 Battle Hurda
 Battle-Mad Ronin
 Battle Mastery
+Bayou
 Beacon of Destruction
 Beacon of Unrest
 Beastbreaker of Bala Ged
@@ -858,6 +860,7 @@ Goblin Deathraiders
 Goblin Fireslinger
 Goblin Gaveleer
 Goblin Glider
+Goblin King
 Goblin Lackey
 Goblin Marshal
 Goblin Mountaineer
@@ -896,6 +899,7 @@ Goretusk Firebeast
 Gorger Wurm
 Gorgon Flail
 Gorilla Chieftain
+Granite Gargoyle
 Grapeshot
 Grappler Spider
 Grasp of Darkness
@@ -1522,6 +1526,7 @@ Plague Stinger
 Plague Wind
 Plains
 Plasma Elemental
+Plateau
 Plated Geopede
 Plated Seastrider
 Platinum Angel
@@ -1661,6 +1666,7 @@ Roc Egg
 Rock Badger
 Rock Basilisk
 Rockslide Elemental
+Roc of Kher Ridges
 Roil Elemental
 Ronin Cavekeeper
 Ronin Cliffrider
@@ -1705,6 +1711,7 @@ Sanguine Guard
 Saprazzan Heir
 Savage Lands
 Savage Twister
+Savannah
 Scab-Clan Mauler
 Scalding Devil
 Scaled Wurm
@@ -1728,6 +1735,8 @@ Scrib Nibblers
 Scroll of Avacyn
 Scroll of Griselbrand
 Scroll Thief
+Scrubland
+Scryb Sprites
 Scute Mob
 Scuttling Death
 Scuzzback Marauders
@@ -2116,6 +2125,7 @@ Triskelion
 Triumph of Cruelty
 Triumph of Ferocity
 Troll Ascetic
+Tropical Island
 True Conviction
 Trumpet Blast
 Trusted Forcemage
@@ -2125,6 +2135,7 @@ Tuktuk Grunts
 Tuktuk Scrapper
 Tuktuk the Explorer
 Tumble Magnet
+Tundra
 Tundra Wolves
 Turn the Tide
 Turntimber Ranger
@@ -2145,6 +2156,7 @@ Unbreathing Horde
 Uncanny Speed
 Uncontrolled Infestation
 Undead Executioner
+Underground Sea
 Undermine
 Underworld Dreams
 Unhallowed Pact
@@ -2229,6 +2241,7 @@ Voice of the Provinces
 Volcanic Dragon
 Volcanic Fallout
 Volcanic Hammer
+Volcanic Island
 Volcanic Strength
 Vorapede
 Vorosh, the Hunter
@@ -2249,6 +2262,7 @@ Wall of Brambles
 Wall of Denial
 Wall of Diffusion
 Wall of Faith
+Wall of Fire
 Wall of Frost
 Wall of Omens
 Wall of Pine Needles
