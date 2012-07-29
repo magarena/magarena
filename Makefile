@@ -272,7 +272,7 @@ daily: $(EXE)
 
 download/Magarena-%.app.zip:
 	scripts/googlecode_upload.py \
-			-s "Magarena 1.23 (Mac)" \
+			-s "Magarena $* (Mac)" \
 			-p magarena \
 			-u melvinzhang@gmail.com \
 			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
@@ -281,12 +281,12 @@ download/Magarena-%.app.zip:
 
 download/Magarena-%.zip:
 	scripts/googlecode_upload.py \
-			-s "Magarena 1.23" \
+			-s "Magarena $*" \
 			-p magarena \
 			-u melvinzhang@gmail.com \
 			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
 			-l Featured,Type-Archive,OpSys-Linux,OpSys-Windows \
-			Magarena-$*.app.zip
+			Magarena-$*.zip
 
 %.up: %
 	scripts/googlecode_upload.py \
