@@ -270,30 +270,30 @@ daily: $(EXE)
 			-l Deprecated \
 			Magarena_`hg id -n`.exe
 
-download/Magarena-%.app.zip:
+download/Magarena-%.app.zip: 
 	scripts/googlecode_upload.py \
-			-s "Magarena $* (Mac)" \
 			-p magarena \
 			-u melvinzhang@gmail.com \
 			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
+			-s "Magarena $* (Mac)" \
 			-l Featured,Type-Installer,OpSys-OSX \
 			Magarena-$*.app.zip
 
 download/Magarena-%.zip:
 	scripts/googlecode_upload.py \
-			-s "Magarena $*" \
 			-p magarena \
 			-u melvinzhang@gmail.com \
 			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
+			-s "Magarena $*" \
 			-l Featured,Type-Archive,OpSys-Linux,OpSys-Windows \
 			Magarena-$*.zip
 
 %.up: %
 	scripts/googlecode_upload.py \
-			-s "$^" \
 			-p magarena \
 			-u melvinzhang@gmail.com \
 			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
+			-s "$^" \
 			$^
 
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml
