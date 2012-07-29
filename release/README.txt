@@ -56,7 +56,7 @@ Thank you for your support and have fun!
 
 Release 1.28 (July 29, 2012)
 ============
-includes contributions from mecheng, Melvin, Pablo Castellazzi, and sponeta 
+includes contributions from mecheng, melvin, pcastellazzi, and sponeta 
 
 - fixed: Jungle Troll not considered red
 - fixed: Ulvenwald Bear's was using Festerhide Boar's ability
