@@ -8,39 +8,39 @@ import magic.model.phase.MagicPhaseType;
 public enum MagicTiming {
     
     // Creature spells
-    Main("main",5),                      // Main
-    FirstMain("fmain",5),            // First main : haste, can't block, shroud,
+    Main("main",5),                 // Main
+    FirstMain("fmain",5),           // First main : haste, can't block, shroud,
                                     // comes into play, static effect, non tap ability, combat trigger
     SecondMain("smain",5),          // Second main : defender, non combat or defensive ability, red mana unlikely
-    Flash("flash",5),                // Declare attackers or end of turn from opponent
+    Flash("flash",5),               // Declare attackers or end of turn from opponent
     CounterFlash("counterflash",9), // Like flash, but also when there is a spell of opponent on stack    
     PumpFlash("pumpFlash",6),       // Like flash, but also declare blockers, as response
 
     // Other permanent spells
-    Land("land",1),                    // Main
-    TapLand("tapland",1),            // Second main
-    Enchantment("enchantment",4),    // Main
+    Land("land",1),                 // Main
+    TapLand("tapland",1),           // Second main
+    Enchantment("enchantment",4),   // Main
     Artifact("artifact",4),         // Main
-    Aura("aura",7),                    // Main
-    Equipment("equipment",7),         // Main
+    Aura("aura",7),                 // Main
+    Equipment("equipment",7),       // Main
     
     // Remaining spells & abilities.
     Draw("draw",1),                 // Main
-    Tapping("tapping",2),            // Main, declare attackers or as response
-    Removal("removal",3),            // Main, declare blockers or as response
+    Tapping("tapping",2),           // Main, declare attackers or as response
+    Removal("removal",3),           // Main, declare blockers or as response
     Pump("pump",8),                 // First main your turn, declare blockers or as response
-    Counter("counter",9),            // When there is a spell of opponent on stack
-    Attack("attack",8),                // Declare attackers
-    Block("block",8),                 // Declare blockers
-    Animate("animate",6),            // First main of your turn, declare attackers opponent's turn
-    Token("token",6),                // First main of your turn, declare attackers or end of turn opponent, as response
+    Counter("counter",9),           // When there is a spell of opponent on stack
+    Attack("attack",8),             // Declare attackers
+    Block("block",8),               // Declare blockers
+    Animate("animate",6),           // First main of your turn, declare attackers opponent's turn
+    Token("token",6),               // First main of your turn, declare attackers or end of turn opponent, as response
     NextTurn("nextturn",9),         // Second main
-    MustAttack("mustattack",8),        // First main opponent's turn
+    MustAttack("mustattack",8),     // First main opponent's turn
     Spell("spell",9),               // When there is a spell on stack
-    Storm("storm",1),                // When a spell was played this turn, second main
+    Storm("storm",1),               // When a spell was played this turn, second main
     
     // No timing
-    None("none",0),                    // No restrictions.
+    None("none",0),                 // No restrictions.
     ;
     
     private final String code;
