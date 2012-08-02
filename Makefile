@@ -192,7 +192,7 @@ test: $(MAG)
 	-make `date +%s`.d
 
 %.d: $(MAG)
-	$(JAVAEA) -DrndSeed=$* -jar $^ |& tee $*.log
+	$(JAVAEA) -DrndSeed=$* -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
 
 # Z = 4.4172 (99.999%)
 # E = 0.01
