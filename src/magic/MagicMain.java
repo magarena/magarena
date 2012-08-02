@@ -18,7 +18,12 @@ public class MagicMain {
 	private static final String GAME_FOLDER  = "Magarena";
 	private static final String MODS_PATH    = "mods";
 	private static final String SCRIPTS_PATH = "scripts";
-    private static final String GAME_PATH    = System.getProperty("user.dir")+File.separatorChar+GAME_FOLDER;		
+    private static final String GAME_PATH    = 
+         (System.getProperty("magarena.dir") != null ?
+          System.getProperty("magarena.dir") :
+          System.getProperty("user.dir")) +
+         File.separatorChar +
+         GAME_FOLDER;
 	
 	public static void main(final String args[]) {	
         // setup the handler for any uncaught exception
