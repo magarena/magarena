@@ -1,0 +1,11 @@
+name=Knight of Infamy
+url=http://magiccards.info/m13/en/96.html
+image=http://magiccards.info/scans/en/m13/96.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{B}
+pt=2/1
+ability=exalted,protection from white
+timing=main
