@@ -1,0 +1,11 @@
+name=Duty-Bound Dead
+url=http://magiccards.info/m13/en/92.html
+image=http://magiccards.info/scans/en/m13/92.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Skeleton
+cost={B}
+pt=0/2
+ability=exalted,regenerate {3}{B}
+timing=main
