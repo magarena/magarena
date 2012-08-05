@@ -1,0 +1,10 @@
+name=Cathedral of War
+url=http://magiccards.info/m13/en/221.html
+image=http://magiccards.info/scans/en/m13/221.jpg
+value=4
+rarity=R
+type=Land
+ability=tap add mana {1},\
+        enters tapped,\
+        exalted
+timing=land
