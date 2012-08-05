@@ -1,0 +1,11 @@
+name=Knight of Glory
+url=http://magiccards.info/m13/en/21.html
+image=http://magiccards.info/scans/en/m13/21.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{W}
+pt=2/1
+ability=exalted,protection from black
+timing=main
