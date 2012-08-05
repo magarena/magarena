@@ -168,7 +168,7 @@ tags: $(SRC)
 	ctags -R src
 
 Test%.run: $(MAG)
-	$(JAVA) -DtestGame=Test$* -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
+	$(JAVAEA) -DtestGame=Test$* -Dmagarena.dir=`pwd`/release -jar $^ 2>&1 | tee Test$*.log
 
 $(EXE): $(MAG)
 	cd launch4j; ./launch4j ../release/magarena.xml
@@ -177,9 +177,6 @@ clean:
 	-ant clean
 	-rm -f $(BUILD)/javac.last
 	-rm -f $(MAG)
-
-jar: $(MAG)
-	$(JAVA) -jar $^
 
 inf: $(MAG)
 	-while true; do make `date +%s`.t; done
@@ -197,7 +194,7 @@ test: $(MAG)
 # Z = 4.4172 (99.999%)
 # E = 0.01
 # best estimator for r is p = h / (h + t)
-# this estimator has a maring of error E, |p - r| < E at a particular Z, p - E < r < p + E
+# this estimator has a margin of error E, |p - r| < E at a particular Z, p - E < r < p + E
 # n = Z^2 / 4E^2
 #   = 48780
 #   ~ 50000
