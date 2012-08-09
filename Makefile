@@ -378,17 +378,17 @@ verify_mana_cost_order: cards/mtg_mana_costs cards/mag_mana_costs
 	join -v2 $^
 
 # added -L to follow redirect, needed for card names without accented letters
-gatherer_rankings: cards/existing_tip.txt
+cards/gatherer_rankings: cards/existing_tip.txt
 	IFS=$$'\n'; for i in `cat $^`; do\
 		echo -n -e "$$i\t";\
 		echo $$(curl -sL http://gatherer.wizards.com/pages/card/details.aspx?name=`echo $$i | sed 's/ /%20/g'` | grep "textRatingValue" | grep -o "[0-9]\.[^<]*");\
 	done > $@
 
-update_value_from_rankings:
+update_value_from_rankings: cards/gatherer_rankings
 	for i in release/Magarena/scripts/*; do \
 		if grep token= $$i; then \
 			echo $$i; \
 		else \
-			sed -i "s/value=.*/value=$$(join -t'	' <(head -1 $$i | sed 's/name=//') gatherer_rankings | cut -f2)/" $$i;\
+			sed -i "s/value=.*/value=$$(join -t'	' <(head -1 $$i | sed 's/name=//') $^ | cut -f2)/" $$i;\
 		fi \
 	done
