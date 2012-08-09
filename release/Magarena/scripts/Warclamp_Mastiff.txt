@@ -1,0 +1,11 @@
+name=Warclamp Mastiff
+url=http://magiccards.info/m13/en/40.html
+image=http://magiccards.info/scans/en/m13/40.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Hound
+cost={W}
+pt=1/1
+ability=first strike
+timing=main

@@ -1,0 +1,11 @@
+name=Ajani's Sunstriker
+url=http://magiccards.info/m13/en/2.html
+image=http://magiccards.info/scans/en/m13/2.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Cat,Cleric
+cost={W}{W}
+pt=2/2
+ability=lifelink
+timing=main
