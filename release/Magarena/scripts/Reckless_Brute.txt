@@ -1,0 +1,11 @@
+name=Reckless Brute
+url=http://magiccards.info/m13/en/144.html
+image=http://magiccards.info/scans/en/m13/144.jpg
+value=2
+rarity=C
+type=Creature
+subtype=Ogre,Warrior
+cost={2}{R}
+pt=3/1
+ability=haste,attacks each turn if able
+timing=fmain
