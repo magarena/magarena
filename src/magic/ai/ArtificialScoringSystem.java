@@ -36,31 +36,23 @@ public class ArtificialScoringSystem {
 	}
 	
 	public static int getCardDefinitionScore(final MagicCardDefinition cardDefinition) {
-		if (cardDefinition.isLand()) {
-			int score=cardDefinition.getValue()*50;
-			for (final MagicColor color : MagicColor.values()) {
-				score+=cardDefinition.getManaSource(color)*50;
-			}
-			return score;
-		}
-		final int score=cardDefinition.getValue()*100-cardDefinition.getConvertedCost()*20;
-		if (cardDefinition.isCreature()) {
-			return score+(cardDefinition.getCardPower()+cardDefinition.getCardToughness())*10;
-		} else {
-			return score+cardDefinition.getRemoval()*50+cardDefinition.getRarity()*30;
-		}
+        return getCardDefinitionScore(cardDefinition, 1);
 	}
 	
 	// score for a card that gets put into play without paying the mana cost
 	public static int getFreeCardDefinitionScore(final MagicCardDefinition cardDefinition) {
+        return getCardDefinitionScore(cardDefinition, 0);
+	}
+	
+    private static int getCardDefinitionScore(final MagicCardDefinition cardDefinition, int costFactor) {
 		if (cardDefinition.isLand()) {
-			int score=cardDefinition.getValue()*50;
+			int score=(int)(cardDefinition.getValue()*50);
 			for (final MagicColor color : MagicColor.values()) {
 				score+=cardDefinition.getManaSource(color)*50;
 			}
 			return score;
 		}
-		final int score=cardDefinition.getValue()*100;
+		final int score=(int)(cardDefinition.getValue()*100) - costFactor * cardDefinition.getConvertedCost() * 20;
 		if (cardDefinition.isCreature()) {
 			return score+(cardDefinition.getCardPower()+cardDefinition.getCardToughness())*10;
 		} else {

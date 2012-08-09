@@ -29,7 +29,7 @@ public enum CardProperty {
     },
     VALUE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setValue(Integer.parseInt(value));
+			card.setValue(Double.parseDouble(value));
         }
     },
     REMOVAL() {

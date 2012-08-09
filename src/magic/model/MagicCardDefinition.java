@@ -61,7 +61,7 @@ public class MagicCardDefinition {
     private int imageCount = 1;
     private Collection<Long> ignore;
     private int index=-1;
-    private int value=0;
+    private double value=0;
     private int removal=0;
     private int score=-1; // not initialized
     private MagicRarity rarity;
@@ -188,11 +188,11 @@ public class MagicCardDefinition {
         return getImageName();
     }
         
-    public void setValue(final int value) {
+    public void setValue(final double value) {
         this.value = value;
     }
 
-    public int getValue() {
+    public double getValue() {
         return value;
     }
     
