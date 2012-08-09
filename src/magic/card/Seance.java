@@ -25,7 +25,7 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
-public class S_ance {
+public class Seance {
     private static final MagicStatic Spirit = new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags) {

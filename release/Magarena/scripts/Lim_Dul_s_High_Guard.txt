@@ -1,4 +1,4 @@
-name=Lim-Dûl's High Guard
+name=Lim-Dul's High Guard
 url=http://magiccards.info/ai/en/18.html
 image=http://magiccards.info/scans/en/ai/18.jpg
 value=3.516
