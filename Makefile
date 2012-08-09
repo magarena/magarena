@@ -376,3 +376,16 @@ cards/mana_cost_graph.png: cards/mana_cost_graph.dot
 
 verify_mana_cost_order: cards/mtg_mana_costs cards/mag_mana_costs
 	join -v2 $^
+
+gatherer_rankings: cards/existing_tip.txt
+	IFS=$$'\n'; for i in `cat $^`; do\
+		echo -n -e "$$i\t";\
+		echo $$(curl -s http://gatherer.wizards.com/pages/card/details.aspx?name=`echo $$i | sed 's/ /%20/g'` | grep "textRatingValue" | grep -o "[0-9]\.[^<]*");\
+	done > $@
+
+update_value_from_rankings:
+	for i in release/Magarena/scripts/*; do \
+		sed -i "s/value=.*/value=$$(join -t'	' <(head -1 $$i | sed 's/name=//') gatherer_rankings | cut -f2)/" $$i;\
+	done
+		#sed -i "s/value=$$/value=1/" $$i;\
+
