@@ -1,7 +1,7 @@
 name=Wolfir Silverheart
 url=http://magiccards.info/avr/en/206.html
 image=http://magiccards.info/scans/en/avr/206.jpg
-value=4.373
+value=4.379
 rarity=R
 type=Creature
 subtype=Wolf,Warrior
