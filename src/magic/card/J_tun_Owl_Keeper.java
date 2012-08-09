@@ -9,7 +9,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
-public class Jotun_Owl_Keeper {
+public class J_tun_Owl_Keeper {
     public static final MagicWhenLeavesPlayTrigger T2 = new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {

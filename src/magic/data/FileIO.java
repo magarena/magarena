@@ -73,7 +73,7 @@ public class FileIO {
     public static Properties toProp(final InputStream ins) {
         final Properties properties = new Properties();
         try {
-            properties.load(ins);
+            properties.load(new BufferedReader(new InputStreamReader(ins, "utf-8")));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load from input stream, " + ex.getMessage());
         } finally {
