@@ -385,7 +385,9 @@ gatherer_rankings: cards/existing_tip.txt
 
 update_value_from_rankings:
 	for i in release/Magarena/scripts/*; do \
-		sed -i "s/value=.*/value=$$(join -t'	' <(head -1 $$i | sed 's/name=//') gatherer_rankings | cut -f2)/" $$i;\
+		if grep token= $$i; then \
+			echo $$i; \
+		else \
+			sed -i "s/value=.*/value=$$(join -t'	' <(head -1 $$i | sed 's/name=//') gatherer_rankings | cut -f2)/" $$i;\
+		fi \
 	done
-		#sed -i "s/value=$$/value=1/" $$i;\
-
