@@ -1,7 +1,7 @@
 name=Lord of Shatterskull Pass
 url=http://magiccards.info/roe/en/156.html
 image=http://magiccards.info/scans/en/roe/156.jpg
-value=4
+value=4.256
 rarity=R
 type=Creature
 subtype=Minotaur,Shaman

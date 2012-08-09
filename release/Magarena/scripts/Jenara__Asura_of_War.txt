@@ -1,7 +1,7 @@
 name=Jenara, Asura of War
 url=http://magiccards.info/arb/en/128.html
 image=http://magiccards.info/scans/en/arb/128.jpg
-value=4
+value=4.406
 rarity=M
 type=Legendary,Creature
 subtype=Angel

@@ -1,7 +1,7 @@
 name=Ajani's Mantra
 url=http://magiccards.info/ddh/en/22.html
 image=http://magiccards.info/scans/en/m11/2.jpg
-value=3
+value=2.950
 rarity=C
 type=Enchantment
 cost={1}{W}

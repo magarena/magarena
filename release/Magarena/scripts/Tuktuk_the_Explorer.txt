@@ -1,7 +1,7 @@
 name=Tuktuk the Explorer
 url=http://magiccards.info/roe/en/169.html
 image=http://magiccards.info/scans/en/roe/169.jpg
-value=4
+value=4.079
 rarity=R
 type=Legendary,Creature
 subtype=Goblin

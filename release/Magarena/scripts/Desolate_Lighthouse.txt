@@ -1,7 +1,7 @@
 name=Desolate Lighthouse
 url=http://magiccards.info/avr/en/227.html
 image=http://magiccards.info/scans/en/avr/227.jpg
-value=3
+value=4.079
 rarity=R
 type=Land
 ability=tap add mana {1}

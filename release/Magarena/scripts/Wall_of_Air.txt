@@ -1,7 +1,7 @@
 name=Wall of Air
 url=http://magiccards.info/10e/en/124.html
 image=http://magiccards.info/scans/en/10e/124.jpg 
-value=3
+value=3.446
 ability=defender,flying
 rarity=U
 type=Creature

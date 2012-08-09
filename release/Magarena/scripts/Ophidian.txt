@@ -1,7 +1,7 @@
 name=Ophidian
 url=http://magiccards.info/wl/en/45.html
 image=http://magiccards.info/scans/en/wl/45.jpg
-value=2
+value=3.707
 rarity=C
 type=Creature
 subtype=Snake

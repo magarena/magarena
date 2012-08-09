@@ -1,7 +1,7 @@
 name=Gods' Eye, Gate to the Reikai
 url=http://magiccards.info/bok/en/164.html
 image=http://magiccards.info/scans/en/bok/164.jpg
-value=3
+value=3.354
 rarity=U
 type=Legendary,Land
 ability=tap add mana {1}

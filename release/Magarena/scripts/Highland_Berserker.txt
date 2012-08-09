@@ -1,7 +1,7 @@
 name=Highland Berserker
 url=http://magiccards.info/zen/en/132.html
 image=http://magiccards.info/scans/en/zen/132.jpg
-value=2
+value=3.167
 rarity=C
 type=Creature
 subtype=Human,Berserker,Ally

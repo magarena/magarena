@@ -1,7 +1,7 @@
 name=Skyhunter Patrol
 url=http://magiccards.info/ddg/en/19.html
 image=http://magiccards.info/scans/en/10e/41.jpg
-value=3
+value=3.205
 rarity=C
 type=Creature
 subtype=Cat,Knight

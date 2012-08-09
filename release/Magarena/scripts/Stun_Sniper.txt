@@ -1,7 +1,7 @@
 name=Stun Sniper
 url=http://magiccards.info/arb/en/100.html
 image=http://magiccards.info/scans/en/arb/100.jpg
-value=3
+value=3.955
 rarity=U
 type=Creature
 subtype=Human,Archer

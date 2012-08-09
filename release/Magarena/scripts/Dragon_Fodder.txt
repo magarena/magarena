@@ -1,7 +1,7 @@
 name=Dragon Fodder
 url=http://magiccards.info/ddg/en/65.html
 image=http://magiccards.info/scans/en/arc/34.jpg
-value=3
+value=3.731
 rarity=C
 type=Sorcery
 cost={1}{R}

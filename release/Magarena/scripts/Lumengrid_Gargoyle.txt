@@ -1,7 +1,7 @@
 name=Lumengrid Gargoyle
 url=http://magiccards.info/mbs/en/112.html
 image=http://magiccards.info/scans/en/mbs/112.jpg 
-value=4
+value=1.958
 ability=flying
 rarity=U
 type=Artifact,Creature

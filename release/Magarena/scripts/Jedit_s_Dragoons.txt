@@ -1,7 +1,7 @@
 name=Jedit's Dragoons
 url=http://magiccards.info/ts/en/25.html
 image=http://magiccards.info/scans/en/ts/25.jpg
-value=3
+value=1.318
 rarity=C
 type=Creature
 subtype=Cat,Soldier

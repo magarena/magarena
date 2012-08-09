@@ -1,7 +1,7 @@
 name=Phyrexian Crusader
 url=http://magiccards.info/mbs/en/50.html
 image=http://magiccards.info/scans/en/mbs/50.jpg
-value=4
+value=4.302
 rarity=R
 type=Creature
 subtype=Zombie,Knight

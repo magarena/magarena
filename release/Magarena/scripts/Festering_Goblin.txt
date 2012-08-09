@@ -1,7 +1,7 @@
 name=Festering Goblin
 url=http://magiccards.info/arc/en/16.html
 image=http://magiccards.info/scans/en/10e/143.jpg
-value=1
+value=4.359
 rarity=C
 type=Creature
 subtype=Zombie,Goblin

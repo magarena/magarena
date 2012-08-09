@@ -1,7 +1,7 @@
 name=Wall of Frost
 url=http://magiccards.info/m11/en/79.html
 image=http://magiccards.info/scans/en/m11/79.jpg
-value=3
+value=3.722
 rarity=U
 type=Creature
 subtype=Wall

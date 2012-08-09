@@ -1,7 +1,7 @@
 name=Septic Rats
 url=http://magiccards.info/mbs/en/55.html
 image=http://magiccards.info/scans/en/mbs/55.jpg
-value=3
+value=3.534
 rarity=U
 type=Creature
 subtype=Rat

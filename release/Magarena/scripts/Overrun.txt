@@ -1,7 +1,7 @@
 name=Overrun
 url=http://magiccards.info/m12/en/186.html
 image=http://magiccards.info/scans/en/dpa/78.jpg
-value=4
+value=4.583
 rarity=U
 type=Sorcery
 cost={2}{G}{G}{G}

@@ -1,7 +1,7 @@
 name=Uncontrolled Infestation
 url=http://magiccards.info/sc/en/108.html
 image=http://magiccards.info/scans/en/sc/108.jpg
-value=2
+value=2.595
 removal=2
 rarity=C
 type=Enchantment

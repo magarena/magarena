@@ -1,7 +1,7 @@
 name=Sharpened Pitchfork
 url=http://magiccards.info/isd/en/232.html
 image=http://magiccards.info/scans/en/isd/232.jpg
-value=2
+value=3.231
 rarity=U
 type=Artifact
 subtype=Equipment

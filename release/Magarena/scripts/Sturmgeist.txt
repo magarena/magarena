@@ -1,7 +1,7 @@
 name=Sturmgeist
 url=http://magiccards.info/isd/en/82.html
 image=http://magiccards.info/scans/en/isd/82.jpg
-value=3
+value=3.566
 rarity=R
 type=Creature
 subtype=Spirit

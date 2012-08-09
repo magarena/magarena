@@ -1,7 +1,7 @@
 name=Elvish Berserker
 url=http://magiccards.info/10e/en/260.html
 image=http://magiccards.info/scans/en/10e/260.jpg
-value=2
+value=3.574
 rarity=C
 type=Creature
 subtype=Elf,Berserker

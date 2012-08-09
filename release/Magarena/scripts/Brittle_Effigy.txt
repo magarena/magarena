@@ -1,7 +1,7 @@
 name=Brittle Effigy
 url=http://magiccards.info/m11/en/202.html
 image=http://magiccards.info/scans/en/m11/202.jpg
-value=3
+value=3.995
 removal=4
 rarity=R
 type=Artifact

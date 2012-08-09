@@ -1,7 +1,7 @@
 name=Tundra
 url=http://magiccards.info/me4/en/255.html
 image=http://magiccards.info/scans/en/me4/255.jpg
-value=4
+value=4.708
 rarity=R
 type=Land
 subtype=Island,Plains

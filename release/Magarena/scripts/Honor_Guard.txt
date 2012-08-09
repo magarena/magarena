@@ -1,7 +1,7 @@
 name=Honor Guard
 url=http://magiccards.info/10e/en/23.html
 image=http://magiccards.info/scans/en/10e/23.jpg
-value=1
+value=2.783
 rarity=C
 type=Creature
 subtype=Human,Soldier

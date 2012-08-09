@@ -1,7 +1,7 @@
 name=Journey to Nowhere
 url=http://magiccards.info/cmd/en/17.html
 image=http://magiccards.info/scans/en/cmd/17.jpg
-value=3
+value=4.000
 removal=2
 rarity=C
 type=Enchantment

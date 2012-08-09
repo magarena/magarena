@@ -1,7 +1,7 @@
 name=Demon's Horn
 url=http://magiccards.info/m12/en/205.html
 image=http://magiccards.info/scans/en/m10/209.jpg
-value=2
+value=1.582
 rarity=U
 type=Artifact
 cost={2}

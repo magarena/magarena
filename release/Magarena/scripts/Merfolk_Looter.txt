@@ -1,7 +1,7 @@
 name=Merfolk Looter
 url=http://magiccards.info/m12/en/65.html
 image=http://magiccards.info/scans/en/m10/61.jpg
-value=2
+value=4.035
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

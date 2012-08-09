@@ -1,7 +1,7 @@
 name=Rhox Brute
 url=http://magiccards.info/arb/en/59.html
 image=http://magiccards.info/scans/en/arb/59.jpg 
-value=4
+value=2.685
 rarity=C
 type=Creature
 subtype=Rhino,Warrior

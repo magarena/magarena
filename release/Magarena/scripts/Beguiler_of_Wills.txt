@@ -1,7 +1,7 @@
 name=Beguiler of Wills
 url=http://magiccards.info/dka/en/28.html
 image=http://magiccards.info/scans/en/dka/28.jpg
-value=4
+value=3.449
 rarity=M
 type=Creature
 subtype=Human,Wizard

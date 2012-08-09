@@ -1,7 +1,7 @@
 name=Iridescent Angel
 url=http://magiccards.info/od/en/288.html
 image=http://magiccards.info/scans/en/od/288.jpg
-value=4
+value=4.417
 rarity=R
 type=Creature
 subtype=Angel

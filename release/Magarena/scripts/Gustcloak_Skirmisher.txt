@@ -1,7 +1,7 @@
 name=Gustcloak Skirmisher
 url=http://magiccards.info/on/en/38.html
 image=http://magiccards.info/scans/en/on/38.jpg
-value=3
+value=3.200
 rarity=U
 type=Creature
 subtype=Bird,Soldier

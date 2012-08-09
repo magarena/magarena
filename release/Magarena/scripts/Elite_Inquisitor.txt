@@ -1,7 +1,7 @@
 name=Elite Inquisitor
 url=http://magiccards.info/isd/en/13.html
 image=http://magiccards.info/scans/en/isd/13.jpg
-value=3
+value=4.058
 rarity=R
 type=Creature
 subtype=Human,Soldier

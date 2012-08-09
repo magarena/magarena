@@ -1,7 +1,7 @@
 name=Havengul Skaab
 url=http://magiccards.info/avr/en/60.html
 image=http://magiccards.info/scans/en/avr/60.jpg
-value=4
+value=1.672
 rarity=C
 type=Creature
 subtype=Zombie,Horror

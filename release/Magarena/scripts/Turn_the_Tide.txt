@@ -1,7 +1,7 @@
 name=Turn the Tide
 url=http://magiccards.info/mbs/en/35.html
 image=http://magiccards.info/scans/en/mbs/35.jpg
-value=3
+value=2.673
 rarity=C
 type=Instant
 cost={1}{U}

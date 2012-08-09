@@ -1,7 +1,7 @@
 name=Halberdier
 url=http://magiccards.info/od/en/196.html
 image=http://magiccards.info/scans/en/od/196.jpg 
-value=3
+value=2.733
 ability=first strike
 rarity=C
 type=Creature

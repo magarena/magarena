@@ -1,7 +1,7 @@
 name=Predator Dragon
 url=http://magiccards.info/ala/en/109.html
 image=http://magiccards.info/scans/en/ala/109.jpg
-value=5
+value=4.395
 rarity=R
 type=Creature
 subtype=Dragon

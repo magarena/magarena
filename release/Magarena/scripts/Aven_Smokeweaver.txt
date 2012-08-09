@@ -1,7 +1,7 @@
 name=Aven Smokeweaver
 url=http://magiccards.info/od/en/64.html
 image=http://magiccards.info/scans/en/od/64.jpg 
-value=3
+value=3.000
 ability=flying,protection from red
 rarity=U
 type=Creature

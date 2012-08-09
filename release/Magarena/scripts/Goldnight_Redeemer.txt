@@ -1,7 +1,7 @@
 name=Goldnight Redeemer
 url=http://magiccards.info/avr/en/23.html
 image=http://magiccards.info/scans/en/avr/23.jpg
-value=5
+value=3.310
 rarity=U
 type=Creature
 subtype=Angel

@@ -1,7 +1,7 @@
 name=Kederekt Parasite
 url=http://magiccards.info/cfx/en/48.html
 image=http://magiccards.info/scans/en/cfx/48.jpg
-value=2
+value=4.218
 rarity=R
 type=Creature
 subtype=Horror

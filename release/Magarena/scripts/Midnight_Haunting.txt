@@ -1,7 +1,7 @@
 name=Midnight Haunting
 url=http://magiccards.info/isd/en/22.html
 image=http://magiccards.info/scans/en/isd/22.jpg
-value=3
+value=3.851
 rarity=U
 type=Instant
 cost={2}{W}

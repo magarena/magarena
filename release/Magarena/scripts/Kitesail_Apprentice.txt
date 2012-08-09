@@ -1,7 +1,7 @@
 name=Kitesail Apprentice
 url=http://magiccards.info/wwk/en/10.html
 image=http://magiccards.info/scans/en/wwk/10.jpg
-value=1
+value=3.375
 rarity=C
 type=Creature
 subtype=Kor,Soldier

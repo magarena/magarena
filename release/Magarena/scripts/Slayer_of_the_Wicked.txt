@@ -1,7 +1,7 @@
 name=Slayer of the Wicked
 url=http://magiccards.info/isd/en/32.html
 image=http://magiccards.info/scans/en/isd/32.jpg
-value=3
+value=3.111
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Uktabi Efreet
 url=http://magiccards.info/wl/en/85.html
 image=http://magiccards.info/scans/en/wl/85.jpg
-value=4
+value=2.371
 rarity=C
 type=Creature
 subtype=Efreet

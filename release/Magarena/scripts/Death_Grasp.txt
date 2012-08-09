@@ -1,7 +1,7 @@
 name=Death Grasp
 url=http://magiccards.info/ap/en/95.html
 image=http://magiccards.info/scans/en/ap/95.jpg
-value=4
+value=4.358
 removal=4
 rarity=R
 type=Sorcery

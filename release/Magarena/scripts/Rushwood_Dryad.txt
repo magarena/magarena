@@ -1,7 +1,7 @@
 name=Rushwood Dryad
 url=http://magiccards.info/10e/en/294.html
 image=http://magiccards.info/scans/en/10e/294.jpg 
-value=1
+value=3.052
 ability=forestwalk
 rarity=C
 type=Creature

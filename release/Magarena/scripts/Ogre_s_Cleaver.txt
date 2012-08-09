@@ -1,7 +1,7 @@
 name=Ogre's Cleaver
 url=http://magiccards.info/roe/en/220.html
 image=http://magiccards.info/scans/en/roe/220.jpg
-value=3
+value=2.863
 rarity=U
 type=Artifact
 subtype=Equipment

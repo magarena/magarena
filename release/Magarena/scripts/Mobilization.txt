@@ -1,7 +1,7 @@
 name=Mobilization
 url=http://magiccards.info/10e/en/29.html
 image=http://magiccards.info/scans/en/10e/29.jpg
-value=4
+value=4.312
 rarity=R
 type=Enchantment
 cost={2}{W}

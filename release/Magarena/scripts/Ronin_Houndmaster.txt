@@ -1,7 +1,7 @@
 name=Ronin Houndmaster
 url=http://magiccards.info/chk/en/184.html
 image=http://magiccards.info/scans/en/chk/184.jpg
-value=2
+value=2.605
 rarity=C
 type=Creature
 subtype=Human,Samurai

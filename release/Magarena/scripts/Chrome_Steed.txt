@@ -1,7 +1,7 @@
 name=Chrome Steed
 url=http://magiccards.info/som/en/142.html
 image=http://magiccards.info/scans/en/som/142.jpg
-value=2
+value=2.344
 rarity=C
 type=Artifact,Creature
 subtype=Horse

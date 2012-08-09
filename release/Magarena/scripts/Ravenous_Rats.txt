@@ -1,7 +1,7 @@
 name=Ravenous Rats
 url=http://magiccards.info/dpa/en/31.html
 image=http://magiccards.info/scans/en/10e/171.jpg
-value=2
+value=3.963
 rarity=C
 type=Creature
 subtype=Rat

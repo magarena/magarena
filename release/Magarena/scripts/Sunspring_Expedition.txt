@@ -1,7 +1,7 @@
 name=Sunspring Expedition
 url=http://magiccards.info/zen/en/37.html
 image=http://magiccards.info/scans/en/zen/37.jpg
-value=3
+value=3.331
 rarity=C
 type=Enchantment
 cost={W}

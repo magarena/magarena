@@ -1,7 +1,7 @@
 name=Duty-Bound Dead
 url=http://magiccards.info/m13/en/92.html
 image=http://magiccards.info/scans/en/m13/92.jpg
-value=2
+value=3.762
 rarity=C
 type=Creature
 subtype=Skeleton

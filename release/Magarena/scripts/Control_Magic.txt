@@ -1,7 +1,7 @@
 name=Control Magic
 url=http://magiccards.info/4e/en/64.html
 image=http://magiccards.info/scans/en/4e/64.jpg
-value=3
+value=4.840
 rarity=U
 type=Enchantment
 subtype=Aura

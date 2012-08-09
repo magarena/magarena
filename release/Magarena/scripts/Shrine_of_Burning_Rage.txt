@@ -1,7 +1,7 @@
 name=Shrine of Burning Rage
 url=http://magiccards.info/nph/en/153.html
 image=http://magiccards.info/scans/en/nph/153.jpg
-value=3
+value=4.026
 rarity=U
 type=Artifact
 cost={2}

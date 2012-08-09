@@ -1,7 +1,7 @@
 name=Worship
 url=http://magiccards.info/9e/en/55.html
 image=http://magiccards.info/scans/en/9e/55.jpg 
-value=5
+value=4.610
 rarity=R
 type=Enchantment
 cost={3}{W}

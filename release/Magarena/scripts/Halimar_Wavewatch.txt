@@ -1,7 +1,7 @@
 name=Halimar Wavewatch
 url=http://magiccards.info/roe/en/72.html
 image=http://magiccards.info/scans/en/roe/72.jpg
-value=2
+value=3.281
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier

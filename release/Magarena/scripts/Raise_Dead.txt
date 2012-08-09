@@ -1,7 +1,7 @@
 name=Raise Dead
 url=http://magiccards.info/9e/en/156.html
 image=http://magiccards.info/scans/en/9e/156.jpg
-value=2
+value=3.850
 rarity=C
 type=Sorcery
 cost={B}

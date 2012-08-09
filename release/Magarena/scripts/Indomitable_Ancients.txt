@@ -1,7 +1,7 @@
 name=Indomitable Ancients
 url=http://magiccards.info/mt/en/13.html
 image=http://magiccards.info/scans/en/mt/13.jpg
-value=4
+value=4.169
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior

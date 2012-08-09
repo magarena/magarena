@@ -1,7 +1,7 @@
 name=Dramatic Entrance
 url=http://magiccards.info/shm/en/111.html
 image=http://magiccards.info/scans/en/shm/111.jpg
-value=3
+value=4.282
 rarity=R
 type=Instant
 cost={3}{G}{G}

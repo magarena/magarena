@@ -1,7 +1,7 @@
 name=Charging Troll
 url=http://magiccards.info/pvc/en/45.html
 image=http://magiccards.info/scans/en/pvc/45.jpg
-value=4
+value=4.145
 rarity=U
 type=Creature
 subtype=Troll

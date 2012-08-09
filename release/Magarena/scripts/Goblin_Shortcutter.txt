@@ -1,7 +1,7 @@
 name=Goblin Shortcutter
 url=http://magiccards.info/zen/en/128.html
 image=http://magiccards.info/scans/en/zen/128.jpg
-value=2
+value=3.417
 rarity=C
 type=Creature
 subtype=Goblin,Scout

@@ -1,7 +1,7 @@
 name=Argentum Armor
 url=http://magiccards.info/som/en/137.html
 image=http://magiccards.info/scans/en/som/137.jpg
-value=5
+value=4.076
 rarity=R
 type=Artifact
 subtype=Equipment

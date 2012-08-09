@@ -1,7 +1,7 @@
 name=Rage Reflection
 url=http://magiccards.info/dpa/en/52.html
 image=http://magiccards.info/scans/en/shm/104.jpg
-value=4
+value=3.618
 rarity=R
 type=Enchantment
 cost={4}{R}{R}

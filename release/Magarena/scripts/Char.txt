@@ -1,7 +1,7 @@
 name=Char
 url=http://magiccards.info/15ann/en/1.html
 image=http://magiccards.info/scans/en/rav/117.jpg
-value=4
+value=3.453
 removal=3
 rarity=R
 type=Instant

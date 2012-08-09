@@ -1,7 +1,7 @@
 name=Pierce Strider
 url=http://magiccards.info/mbs/en/123.html
 image=http://magiccards.info/scans/en/mbs/123.jpg
-value=3
+value=3.720
 rarity=U
 type=Artifact,Creature
 subtype=Construct

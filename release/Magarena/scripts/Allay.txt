@@ -1,7 +1,7 @@
 name=Allay
 url=http://magiccards.info/ex/en/1.html
 image=http://magiccards.info/scans/en/ex/1.jpg
-value=2
+value=2.852
 removal=1
 rarity=C
 type=Instant

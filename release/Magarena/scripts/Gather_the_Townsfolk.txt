@@ -1,7 +1,7 @@
 name=Gather the Townsfolk
 url=http://magiccards.info/dka/en/8.html
 image=http://magiccards.info/scans/en/dka/8.jpg
-value=3
+value=3.854
 rarity=C
 type=Sorcery
 cost={1}{W}

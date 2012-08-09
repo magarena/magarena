@@ -1,7 +1,7 @@
 name=Darksteel Plate
 url=http://magiccards.info/mbs/en/104.html
 image=http://magiccards.info/scans/en/mbs/104.jpg
-value=4
+value=4.133
 rarity=R
 type=Artifact
 subtype=Equipment

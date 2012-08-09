@@ -1,7 +1,7 @@
 name=Torch Fiend
 url=http://magiccards.info/dka/en/106.html
 image=http://magiccards.info/scans/en/dka/106.jpg
-value=3
+value=3.081
 rarity=C
 type=Creature
 subtype=Devil

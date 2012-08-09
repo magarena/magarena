@@ -1,7 +1,7 @@
 name=Iizuka the Ruthless
 url=http://magiccards.info/sok/en/104.html
 image=http://magiccards.info/scans/en/sok/104.jpg
-value=4
+value=3.394
 rarity=R
 type=Legendary,Creature
 subtype=Human,Samurai

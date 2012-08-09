@@ -1,7 +1,7 @@
 name=Pygmy Troll
 url=http://magiccards.info/ex/en/118.html
 image=http://magiccards.info/scans/en/ex/118.jpg
-value=2
+value=3.583
 rarity=C
 type=Creature
 subtype=Troll

@@ -1,7 +1,7 @@
 name=Ageless Sentinels
 url=http://magiccards.info/sc/en/1.html
 image=http://magiccards.info/scans/en/sc/1.jpg
-value=4
+value=3.870
 rarity=R
 type=Creature
 subtype=Wall

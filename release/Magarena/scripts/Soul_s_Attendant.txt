@@ -1,7 +1,7 @@
 name=Soul's Attendant
 url=http://magiccards.info/roe/en/44.html
 image=http://magiccards.info/scans/en/roe/44.jpg
-value=2
+value=4.237
 rarity=C
 type=Creature
 subtype=Human,Cleric

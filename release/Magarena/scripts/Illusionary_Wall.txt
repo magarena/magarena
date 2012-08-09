@@ -1,7 +1,7 @@
 name=Illusionary Wall
 url=http://magiccards.info/ia/en/78.html
 image=http://magiccards.info/scans/en/ia/78.jpg
-value=4
+value=3.843
 rarity=C
 type=Creature
 subtype=Illusion,Wall

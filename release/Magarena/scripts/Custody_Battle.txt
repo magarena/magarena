@@ -1,7 +1,7 @@
 name=Custody Battle
 url=http://magiccards.info/on/en/197.html
 image=http://magiccards.info/scans/en/on/197.jpg
-value=3
+value=3.560
 rarity=U
 type=Enchantment
 subtype=Aura

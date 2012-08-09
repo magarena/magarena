@@ -1,7 +1,7 @@
 name=Madrush Cyclops
 url=http://magiccards.info/arb/en/119.html
 image=http://magiccards.info/scans/en/arb/119.jpg
-value=4
+value=3.804
 rarity=R
 type=Creature
 subtype=Cyclops,Warrior

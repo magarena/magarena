@@ -1,7 +1,7 @@
 name=Nantuko Husk
 url=http://magiccards.info/cmd/en/90.html
 image=http://magiccards.info/scans/en/cmd/90.jpg
-value=3
+value=4.000
 rarity=U
 type=Creature
 subtype=Zombie,Insect

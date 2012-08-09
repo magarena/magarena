@@ -1,7 +1,7 @@
 name=Dismal Failure
 url=http://magiccards.info/pc/en/39.html
 image=http://magiccards.info/scans/en/pc/39.jpg
-value=2
+value=3.592
 rarity=U
 type=Instant
 cost={2}{U}{U}

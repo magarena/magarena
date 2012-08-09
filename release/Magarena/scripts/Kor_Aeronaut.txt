@@ -1,7 +1,7 @@
 name=Kor Aeronaut
 url=http://magiccards.info/ddf/en/10.html
 image=http://magiccards.info/scans/en/zen/17.jpg
-value=2
+value=4.019
 rarity=U
 type=Creature
 subtype=Kor,Soldier

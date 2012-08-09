@@ -1,7 +1,7 @@
 name=Mnemonic Wall
 url=http://magiccards.info/roe/en/78.html
 image=http://magiccards.info/scans/en/roe/78.jpg
-value=3
+value=3.146
 rarity=C
 type=Creature
 subtype=Wall

@@ -1,7 +1,7 @@
 name=Celestial Colonnade
 url=http://magiccards.info/wwk/en/133.html
 image=http://magiccards.info/scans/en/wwk/133.jpg
-value=4
+value=4.620
 rarity=R
 type=Land
 mana=w3u3

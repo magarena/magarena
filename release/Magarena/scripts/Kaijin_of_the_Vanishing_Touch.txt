@@ -1,7 +1,7 @@
 name=Kaijin of the Vanishing Touch
 url=http://magiccards.info/bok/en/39.html
 image=http://magiccards.info/scans/en/bok/39.jpg
-value=2
+value=2.941
 rarity=U
 type=Creature
 subtype=Spirit

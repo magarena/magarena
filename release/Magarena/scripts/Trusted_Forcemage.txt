@@ -1,7 +1,7 @@
 name=Trusted Forcemage
 url=http://magiccards.info/avr/en/199.html
 image=http://magiccards.info/scans/en/avr/199.jpg
-value=2
+value=3.060
 rarity=C
 type=Creature
 subtype=Human,Shaman

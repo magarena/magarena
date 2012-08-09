@@ -1,7 +1,7 @@
 name=Fireslinger
 url=http://magiccards.info/jvc/en/36.html
 image=http://magiccards.info/scans/en/jvc/36.jpg
-value=2
+value=3.588
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,7 +1,7 @@
 name=Mirrorworks
 url=http://magiccards.info/mbs/en/114.html
 image=http://magiccards.info/scans/en/mbs/114.jpg
-value=3
+value=3.846
 rarity=R
 type=Artifact
 cost={5}

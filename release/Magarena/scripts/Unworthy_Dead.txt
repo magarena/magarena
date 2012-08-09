@@ -1,7 +1,7 @@
 name=Unworthy Dead
 url=http://magiccards.info/us/en/163.html
 image=http://magiccards.info/scans/en/us/163.jpg
-value=2
+value=3.583
 rarity=C
 type=Creature
 subtype=Skeleton

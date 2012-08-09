@@ -1,7 +1,7 @@
 name=Bitterblossom
 url=http://magiccards.info/mt/en/58.html
 image=http://magiccards.info/scans/en/mt/58.jpg
-value=4
+value=4.632
 rarity=R
 type=Tribal,Enchantment
 subtype=Faerie

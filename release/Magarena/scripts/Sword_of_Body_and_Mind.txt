@@ -1,7 +1,7 @@
 name=Sword of Body and Mind
 url=http://magiccards.info/som/en/208.html
 image=http://magiccards.info/scans/en/som/208.jpg
-value=5
+value=4.386
 rarity=M
 type=Artifact
 subtype=Equipment

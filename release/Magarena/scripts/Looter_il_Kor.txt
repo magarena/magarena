@@ -1,7 +1,7 @@
 name=Looter il-Kor
 url=http://magiccards.info/ts/en/66.html
 image=http://magiccards.info/scans/en/ts/66.jpg
-value=2
+value=4.058
 rarity=C
 type=Creature
 subtype=Kor,Rogue

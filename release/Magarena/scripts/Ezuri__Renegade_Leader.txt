@@ -1,7 +1,7 @@
 name=Ezuri, Renegade Leader
 url=http://magiccards.info/som/en/119.html
 image=http://magiccards.info/scans/en/som/119.jpg
-value=4
+value=4.235
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior

@@ -1,7 +1,7 @@
 name=Transcendent Master
 url=http://magiccards.info/roe/en/51.html
 image=http://magiccards.info/scans/en/roe/51.jpg
-value=3
+value=4.282
 rarity=M
 type=Creature
 subtype=Human,Cleric,Avatar

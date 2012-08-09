@@ -1,7 +1,7 @@
 name=Evernight Shade
 url=http://magiccards.info/avr/en/101.html
 image=http://magiccards.info/scans/en/avr/101.jpg
-value=4
+value=3.500
 rarity=U
 type=Creature
 subtype=Shade

@@ -1,7 +1,7 @@
 name=Living Airship
 url=http://magiccards.info/ap/en/28.html
 image=http://magiccards.info/scans/en/ap/28.jpg
-value=3
+value=2.609
 rarity=C
 type=Creature
 subtype=Metathran

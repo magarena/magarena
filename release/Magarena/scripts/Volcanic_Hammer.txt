@@ -1,7 +1,7 @@
 name=Volcanic Hammer
 url=http://magiccards.info/9e/en/226.html
 image=http://magiccards.info/scans/en/9e/226.jpg
-value=3
+value=2.710
 removal=3
 rarity=C
 type=Sorcery

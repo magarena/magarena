@@ -1,7 +1,7 @@
 name=Savannah
 url=http://magiccards.info/me4/en/250.html
 image=http://magiccards.info/scans/en/me4/250.jpg
-value=4
+value=4.837
 rarity=R
 type=Land
 subtype=Plains,Forest

@@ -1,7 +1,7 @@
 name=Yavimaya Gnats
 url=http://magiccards.info/ia/en/168.html
 image=http://magiccards.info/scans/en/ia/168.jpg
-value=1
+value=2.886
 rarity=U
 type=Creature
 subtype=Insect

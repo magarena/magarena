@@ -1,7 +1,7 @@
 name=Shadow Rift
 url=http://magiccards.info/tp/en/86.html
 image=http://magiccards.info/scans/en/tp/86.jpg
-value=2
+value=4.385
 rarity=C
 type=Instant
 cost={U}

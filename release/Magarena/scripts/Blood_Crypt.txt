@@ -1,7 +1,7 @@
 name=Blood Crypt
 url=http://magiccards.info/di/en/171.html
 image=http://magiccards.info/scans/en/di/171.jpg
-value=4
+value=4.524
 rarity=R
 type=Land
 subtype=Swamp,Mountain

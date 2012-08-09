@@ -1,7 +1,7 @@
 name=Darksteel Sentinel
 url=http://magiccards.info/som/en/152.html
 image=http://magiccards.info/scans/en/som/152.jpg
-value=4
+value=3.473
 ability=flash,vigilance,indestructible
 rarity=U
 type=Artifact,Creature

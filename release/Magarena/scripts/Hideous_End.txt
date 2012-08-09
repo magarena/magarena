@@ -1,7 +1,7 @@
 name=Hideous End
 url=http://magiccards.info/pvc/en/26.html
 image=http://magiccards.info/scans/en/zen/98.jpg
-value=3
+value=3.865
 removal=4
 rarity=C
 type=Instant

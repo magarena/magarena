@@ -1,7 +1,7 @@
 name=Angelheart Vial
 url=http://magiccards.info/roe/en/215.html
 image=http://magiccards.info/scans/en/roe/215.jpg
-value=4
+value=2.543
 rarity=R
 type=Artifact
 cost={5}

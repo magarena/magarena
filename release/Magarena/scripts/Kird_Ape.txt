@@ -1,7 +1,7 @@
 name=Kird Ape
 url=http://magiccards.info/ddh/en/2.html
 image=http://magiccards.info/scans/en/9e/199.jpg
-value=2
+value=4.434
 rarity=C
 type=Creature
 subtype=Ape

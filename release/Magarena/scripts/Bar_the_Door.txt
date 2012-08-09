@@ -1,7 +1,7 @@
 name=Bar the Door
 url=http://magiccards.info/dka/en/2.html
 image=http://magiccards.info/scans/en/dka/2.jpg
-value=3
+value=2.183
 rarity=C
 type=Instant
 cost={2}{W}

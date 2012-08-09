@@ -1,7 +1,7 @@
 name=Lightning Angel
 url=http://magiccards.info/tsts/en/94.html
 image=http://magiccards.info/scans/en/tsts/94.jpg
-value=4
+value=4.582
 rarity=R
 type=Creature
 subtype=Angel

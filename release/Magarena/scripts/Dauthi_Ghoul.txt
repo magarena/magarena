@@ -1,7 +1,7 @@
 name=Dauthi Ghoul
 url=http://magiccards.info/tp/en/15.html
 image=http://magiccards.info/scans/en/tp/15.jpg
-value=2
+value=3.939
 rarity=U
 type=Creature
 subtype=Dauthi,Zombie

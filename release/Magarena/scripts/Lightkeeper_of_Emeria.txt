@@ -1,7 +1,7 @@
 name=Lightkeeper of Emeria
 url=http://magiccards.info/cmd/en/18.html
 image=http://magiccards.info/scans/en/wwk/12.jpg
-value=3
+value=2.596
 rarity=U
 type=Creature
 subtype=Angel

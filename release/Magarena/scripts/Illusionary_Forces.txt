@@ -1,7 +1,7 @@
 name=Illusionary Forces
 url=http://magiccards.info/ia/en/75.html
 image=http://magiccards.info/scans/en/ia/75.jpg
-value=4
+value=2.776
 rarity=C
 type=Creature
 subtype=Illusion

@@ -1,7 +1,7 @@
 name=Lightning Bolt
 url=http://magiccards.info/pd2/en/17.html
 image=http://magiccards.info/scans/en/m11/149.jpg
-value=3
+value=4.842
 removal=3
 rarity=C
 type=Instant

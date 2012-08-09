@@ -1,7 +1,7 @@
 name=Soul Feast
 url=http://magiccards.info/10e/en/179.html
 image=http://magiccards.info/scans/en/10e/179.jpg
-value=2
+value=3.174
 rarity=U
 type=Sorcery
 cost={3}{B}{B}

@@ -1,7 +1,7 @@
 name=Griffin Rider
 url=http://magiccards.info/m12/en/20.html
 image=http://magiccards.info/scans/en/m12/20.jpg
-value=2
+value=3.616
 rarity=C
 type=Creature
 subtype=Human,Knight

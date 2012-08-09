@@ -1,7 +1,7 @@
 name=Double Cleave
 url=http://magiccards.info/pch/en/100.html
 image=http://magiccards.info/scans/en/pch/100.jpg
-value=2
+value=4.038
 rarity=C
 type=Instant
 cost={1}{R/W}

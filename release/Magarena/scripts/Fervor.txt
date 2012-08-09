@@ -1,7 +1,7 @@
 name=Fervor
 url=http://magiccards.info/7e/en/181.html
 image=http://magiccards.info/scans/en/7e/181.jpg
-value=3
+value=3.909
 rarity=R
 type=Enchantment
 cost={2}{R}

@@ -1,7 +1,7 @@
 name=Nearheath Pilgrim
 url=http://magiccards.info/avr/en/31.html
 image=http://magiccards.info/scans/en/avr/31.jpg
-value=2
+value=3.712
 rarity=U
 type=Creature
 subtype=Human,Cleric

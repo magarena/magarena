@@ -1,7 +1,7 @@
 name=Barony Vampire
 url=http://magiccards.info/m11/en/82.html
 image=http://magiccards.info/scans/en/m11/82.jpg 
-value=3
+value=2.356
 rarity=C
 type=Creature
 subtype=Vampire

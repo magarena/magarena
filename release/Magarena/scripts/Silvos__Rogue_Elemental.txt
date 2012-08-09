@@ -1,7 +1,7 @@
 name=Silvos, Rogue Elemental
 url=http://magiccards.info/on/en/282.html
 image=http://magiccards.info/scans/en/on/282.jpg
-value=5
+value=4.636
 rarity=R
 type=Legendary,Creature
 subtype=Elemental

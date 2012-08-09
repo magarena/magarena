@@ -1,7 +1,7 @@
 name=Aven Squire
 url=http://magiccards.info/cfx/en/3.html
 image=http://magiccards.info/scans/en/cfx/3.jpg 
-value=2
+value=3.242
 ability=flying,exalted
 rarity=C
 type=Creature

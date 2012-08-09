@@ -1,7 +1,7 @@
 name=Ancient Silverback
 url=http://magiccards.info/9e/en/230.html
 image=http://magiccards.info/scans/en/9e/230.jpg
-value=5
+value=3.981
 rarity=R
 type=Creature
 subtype=Ape

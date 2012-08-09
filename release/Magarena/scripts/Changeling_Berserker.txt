@@ -1,7 +1,7 @@
 name=Changeling Berserker
 url=http://magiccards.info/lw/en/160.html
 image=http://magiccards.info/scans/en/lw/160.jpg
-value=4
+value=3.693
 removal=2
 rarity=U
 type=Creature

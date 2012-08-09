@@ -1,7 +1,7 @@
 name=Cliff Threader
 url=http://magiccards.info/zen/en/7.html
 image=http://magiccards.info/scans/en/zen/7.jpg 
-value=2
+value=2.538
 ability=mountainwalk
 rarity=C
 type=Creature

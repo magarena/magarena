@@ -1,7 +1,7 @@
 name=Mist Leopard
 url=http://magiccards.info/m10/en/193.html
 image=http://magiccards.info/scans/en/m10/193.jpg 
-value=3
+value=2.524
 ability=shroud
 rarity=C
 type=Creature

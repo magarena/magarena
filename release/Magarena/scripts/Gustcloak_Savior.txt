@@ -1,7 +1,7 @@
 name=Gustcloak Savior
 url=http://magiccards.info/on/en/36.html
 image=http://magiccards.info/scans/en/on/36.jpg
-value=4
+value=3.879
 rarity=R
 type=Creature
 subtype=Bird,Soldier

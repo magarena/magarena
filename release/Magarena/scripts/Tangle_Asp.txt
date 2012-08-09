@@ -1,7 +1,7 @@
 name=Tangle Asp
 url=http://magiccards.info/5dn/en/94.html
 image=http://magiccards.info/scans/en/5dn/94.jpg
-value=2
+value=3.881
 rarity=C
 type=Creature
 subtype=Snake

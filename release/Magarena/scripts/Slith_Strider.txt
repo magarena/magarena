@@ -1,7 +1,7 @@
 name=Slith Strider
 url=http://magiccards.info/mi/en/50.html
 image=http://magiccards.info/scans/en/mi/50.jpg
-value=2
+value=3.667
 rarity=U
 type=Creature
 subtype=Slith

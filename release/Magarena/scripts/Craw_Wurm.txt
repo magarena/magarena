@@ -1,7 +1,7 @@
 name=Craw Wurm
 url=http://magiccards.info/m10/en/173.html
 image=http://magiccards.info/scans/en/m10/173.jpg 
-value=4
+value=2.289
 rarity=C
 type=Creature
 subtype=Wurm

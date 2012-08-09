@@ -1,7 +1,7 @@
 name=Call to Serve
 url=http://magiccards.info/avr/en/9.html
 image=http://magiccards.info/scans/en/avr/9.jpg
-value=3
+value=3.029
 rarity=C
 type=Enchantment
 subtype=Aura

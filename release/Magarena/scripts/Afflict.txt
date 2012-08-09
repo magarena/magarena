@@ -1,7 +1,7 @@
 name=Afflict
 url=http://magiccards.info/10e/en/125.html
 image=http://magiccards.info/scans/en/10e/125.jpg
-value=2
+value=2.367
 removal=1
 rarity=C
 type=Instant

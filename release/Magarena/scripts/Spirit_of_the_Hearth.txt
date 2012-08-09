@@ -1,7 +1,7 @@
 name=Spirit of the Hearth
 url=http://magiccards.info/eve/en/14.html
 image=http://magiccards.info/scans/en/eve/14.jpg
-value=5
+value=4.062
 rarity=R
 type=Creature
 subtype=Cat,Spirit

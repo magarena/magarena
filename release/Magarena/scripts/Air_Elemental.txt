@@ -1,7 +1,7 @@
 name=Air Elemental
 url=http://magiccards.info/dpa/en/1.html
 image=http://magiccards.info/scans/en/dpa/1.jpg
-value=4
+value=3.340
 ability=flying
 rarity=U
 type=Creature

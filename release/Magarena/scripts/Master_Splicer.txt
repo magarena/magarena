@@ -1,7 +1,7 @@
 name=Master Splicer
 url=http://magiccards.info/nph/en/16.html
 image=http://magiccards.info/scans/en/nph/16.jpg
-value=4
+value=3.673
 rarity=U
 type=Creature
 subtype=Human,Artificer

@@ -1,7 +1,7 @@
 name=Alpha Myr
 url=http://magiccards.info/mi/en/142.html
 image=http://magiccards.info/scans/en/mi/142.jpg 
-value=1
+value=2.078
 rarity=C
 type=Artifact,Creature
 subtype=Myr

@@ -1,7 +1,7 @@
 name=Demigod of Revenge
 url=http://magiccards.info/shm/en/183.html
 image=http://magiccards.info/scans/en/shm/183.jpg
-value=5
+value=4.582
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

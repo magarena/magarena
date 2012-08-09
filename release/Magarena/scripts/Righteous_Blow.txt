@@ -1,7 +1,7 @@
 name=Righteous Blow
 url=http://magiccards.info/avr/en/34.html
 image=http://magiccards.info/scans/en/avr/34.jpg
-value=2
+value=3.155
 removal=1
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Clifftop Retreat
 url=http://magiccards.info/isd/en/238.html
 image=http://magiccards.info/scans/en/isd/238.jpg
-value=4
+value=3.831
 rarity=R
 type=Land
 mana=r3w3

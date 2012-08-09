@@ -1,7 +1,7 @@
 name=Adventuring Gear
 url=http://magiccards.info/zen/en/195.html
 image=http://magiccards.info/scans/en/zen/195.jpg
-value=2
+value=3.389
 rarity=C
 type=Artifact
 subtype=Equipment

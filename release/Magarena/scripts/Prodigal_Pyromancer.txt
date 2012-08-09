@@ -1,7 +1,7 @@
 name=Prodigal Pyromancer
 url=http://magiccards.info/dpa/en/51.html
 image=http://magiccards.info/scans/en/dpa/51.jpg
-value=3
+value=3.388
 rarity=U
 type=Creature
 subtype=Human,Wizard

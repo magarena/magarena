@@ -1,7 +1,7 @@
 name=Corrupted Resolve
 url=http://magiccards.info/nph/en/32.html
 image=http://magiccards.info/scans/en/nph/32.jpg
-value=3
+value=4.028
 rarity=U
 type=Instant
 cost={1}{U}

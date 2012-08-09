@@ -1,7 +1,7 @@
 name=Spirit Away
 url=http://magiccards.info/avr/en/76.html
 image=http://magiccards.info/scans/en/avr/76.jpg
-value=4
+value=2.833
 rarity=R
 type=Enchantment
 subtype=Aura

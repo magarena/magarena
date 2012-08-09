@@ -1,7 +1,7 @@
 name=Benalish Cavalry
 url=http://magiccards.info/ts/en/4.html
 image=http://magiccards.info/scans/en/ts/4.jpg
-value=2
+value=3.640
 rarity=C
 type=Creature
 subtype=Human,Knight

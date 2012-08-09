@@ -1,7 +1,7 @@
 name=Goblin Mountaineer
 url=http://magiccards.info/ala/en/102.html
 image=http://magiccards.info/scans/en/ala/102.jpg 
-value=1
+value=2.597
 ability=mountainwalk
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Beastbreaker of Bala Ged
 url=http://magiccards.info/roe/en/178.html
 image=http://magiccards.info/scans/en/roe/178.jpg
-value=2
+value=3.395
 rarity=U
 type=Creature
 subtype=Human,Warrior

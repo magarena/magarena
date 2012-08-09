@@ -1,7 +1,7 @@
 name=Screeching Skaab
 url=http://magiccards.info/dka/en/47.html
 image=http://magiccards.info/scans/en/dka/47.jpg
-value=1
+value=3.086
 rarity=C
 type=Creature
 subtype=Zombie

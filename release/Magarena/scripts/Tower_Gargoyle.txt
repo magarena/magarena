@@ -1,7 +1,7 @@
 name=Tower Gargoyle
 url=http://magiccards.info/ala/en/205.html
 image=http://magiccards.info/scans/en/ala/205.jpg
-value=4
+value=3.724
 ability=flying
 rarity=U
 type=Artifact,Creature

@@ -1,7 +1,7 @@
 name=Kargan Dragonlord
 url=http://magiccards.info/roe/en/152.html
 image=http://magiccards.info/scans/en/roe/152.jpg
-value=3
+value=4.383
 rarity=M
 type=Creature
 subtype=Human,Warrior

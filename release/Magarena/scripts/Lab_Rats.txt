@@ -1,7 +1,7 @@
 name=Lab Rats
 url=http://magiccards.info/sh/en/11.html
 image=http://magiccards.info/scans/en/sh/11.jpg
-value=2
+value=3.075
 rarity=C
 type=Sorcery
 cost={B}

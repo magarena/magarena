@@ -1,7 +1,7 @@
 name=Kor Spiritdancer
 url=http://magiccards.info/roe/en/31.html
 image=http://magiccards.info/scans/en/roe/31.jpg
-value=2
+value=3.955
 rarity=R
 type=Creature
 subtype=Kor,Wizard

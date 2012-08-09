@@ -1,7 +1,7 @@
 name=Drogskol Captain
 url=http://magiccards.info/dka/en/136.html
 image=http://magiccards.info/scans/en/dka/136.jpg
-value=3
+value=4.105
 rarity=U
 type=Creature
 subtype=Spirit,Soldier

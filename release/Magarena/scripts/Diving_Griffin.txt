@@ -1,7 +1,7 @@
 name=Diving Griffin
 url=http://magiccards.info/8e/en/17.html
 image=http://magiccards.info/scans/en/8e/17.jpg 
-value=3
+value=3.632
 ability=flying,vigilance
 rarity=C
 type=Creature

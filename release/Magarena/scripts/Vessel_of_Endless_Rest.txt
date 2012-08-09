@@ -1,7 +1,7 @@
 name=Vessel of Endless Rest
 url=http://magiccards.info/avr/en/224.html
 image=http://magiccards.info/scans/en/avr/224.jpg
-value=3
+value=3.607
 rarity=U
 type=Artifact
 cost={3}

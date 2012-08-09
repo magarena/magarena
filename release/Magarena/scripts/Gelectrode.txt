@@ -1,7 +1,7 @@
 name=Gelectrode
 url=http://magiccards.info/gp/en/113.html
 image=http://magiccards.info/scans/en/gp/113.jpg
-value=3
+value=4.590
 rarity=U
 type=Creature
 subtype=Weird

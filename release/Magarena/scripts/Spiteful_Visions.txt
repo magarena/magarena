@@ -1,7 +1,7 @@
 name=Spiteful Visions
 url=http://magiccards.info/shm/en/198.html
 image=http://magiccards.info/scans/en/shm/198.jpg
-value=3
+value=3.457
 rarity=R
 type=Enchantment
 cost={2}{B/R}{B/R}

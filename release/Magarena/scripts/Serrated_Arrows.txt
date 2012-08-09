@@ -1,7 +1,7 @@
 name=Serrated Arrows
 url=http://magiccards.info/gvl/en/20.html
 image=http://magiccards.info/scans/en/gvl/20.jpg
-value=4
+value=4.076
 removal=2
 rarity=C
 type=Artifact

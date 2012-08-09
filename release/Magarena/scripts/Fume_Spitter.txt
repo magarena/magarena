@@ -1,7 +1,7 @@
 name=Fume Spitter
 url=http://magiccards.info/som/en/63.html
 image=http://magiccards.info/scans/en/som/63.jpg
-value=2
+value=4.296
 rarity=C
 type=Creature
 subtype=Horror

@@ -1,7 +1,7 @@
 name=Glen Elendra Archmage
 url=http://magiccards.info/eve/en/22.html
 image=http://magiccards.info/scans/en/eve/22.jpg
-value=3
+value=4.517
 rarity=R
 type=Creature
 subtype=Faerie,Wizard

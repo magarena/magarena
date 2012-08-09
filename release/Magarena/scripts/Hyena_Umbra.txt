@@ -1,7 +1,7 @@
 name=Hyena Umbra
 url=http://magiccards.info/roe/en/26.html
 image=http://magiccards.info/scans/en/roe/26.jpg
-value=2
+value=4.188
 rarity=C
 type=Enchantment
 subtype=Aura

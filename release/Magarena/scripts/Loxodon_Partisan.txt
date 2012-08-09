@@ -1,7 +1,7 @@
 name=Loxodon Partisan
 url=http://magiccards.info/mbs/en/12.html
 image=http://magiccards.info/scans/en/mbs/12.jpg 
-value=3
+value=2.470
 rarity=C
 type=Creature
 subtype=Elephant,Soldier

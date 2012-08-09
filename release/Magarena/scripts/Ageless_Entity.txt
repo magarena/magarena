@@ -1,7 +1,7 @@
 name=Ageless Entity
 url=http://magiccards.info/ddh/en/18.html
 image=http://magiccards.info/scans/en/ddh/18.jpg
-value=4
+value=4.477
 rarity=R
 type=Creature
 subtype=Elemental

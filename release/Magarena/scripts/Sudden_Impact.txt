@@ -1,7 +1,7 @@
 name=Sudden Impact
 url=http://magiccards.info/pd2/en/25.html
 image=http://magiccards.info/scans/en/10e/241.jpg
-value=2
+value=3.500
 rarity=U
 type=Instant
 cost={3}{R}

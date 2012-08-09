@@ -1,7 +1,7 @@
 name=Wing Splicer
 url=http://magiccards.info/nph/en/50.html
 image=http://magiccards.info/scans/en/nph/50.jpg
-value=4
+value=3.511
 rarity=U
 type=Creature
 subtype=Human,Artificer

@@ -1,7 +1,7 @@
 name=Gallows Warden
 url=http://magiccards.info/isd/en/16.html
 image=http://magiccards.info/scans/en/isd/16.jpg
-value=4
+value=2.720
 rarity=U
 type=Creature
 subtype=Spirit

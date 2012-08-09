@@ -1,7 +1,7 @@
 name=Ghalma's Warden
 url=http://magiccards.info/som/en/8.html
 image=http://magiccards.info/scans/en/som/8.jpg
-value=3
+value=2.685
 rarity=C
 type=Creature
 subtype=Elephant,Soldier

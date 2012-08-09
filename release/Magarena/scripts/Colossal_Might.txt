@@ -1,7 +1,7 @@
 name=Colossal Might
 url=http://magiccards.info/cmd/en/190.html
 image=http://magiccards.info/scans/en/arc/83.jpg
-value=3
+value=3.154
 rarity=C
 type=Instant
 cost={R}{G}

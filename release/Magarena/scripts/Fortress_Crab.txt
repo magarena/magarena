@@ -1,7 +1,7 @@
 name=Fortress Crab
 url=http://magiccards.info/isd/en/56.html
 image=http://magiccards.info/scans/en/isd/56.jpg
-value=2
+value=2.885
 rarity=C
 type=Creature
 subtype=Crab

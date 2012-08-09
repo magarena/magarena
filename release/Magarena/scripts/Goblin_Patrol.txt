@@ -1,7 +1,7 @@
 name=Goblin Patrol
 url=http://magiccards.info/us/en/193.html
 image=http://magiccards.info/scans/en/us/193.jpg
-value=1
+value=3.500
 rarity=C
 type=Creature
 subtype=Goblin

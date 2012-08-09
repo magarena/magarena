@@ -1,7 +1,7 @@
 name=Leonin Den-Guard
 url=http://magiccards.info/mi/en/9.html
 image=http://magiccards.info/scans/en/mi/9.jpg
-value=2
+value=3.900
 rarity=C
 type=Creature
 subtype=Cat,Soldier

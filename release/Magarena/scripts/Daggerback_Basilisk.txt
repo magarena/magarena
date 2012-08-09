@@ -1,7 +1,7 @@
 name=Daggerback Basilisk
 url=http://magiccards.info/roe/en/182.html
 image=http://magiccards.info/scans/en/roe/182.jpg 
-value=2
+value=3.066
 ability=deathtouch
 rarity=C
 type=Creature

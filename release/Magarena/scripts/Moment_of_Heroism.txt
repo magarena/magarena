@@ -1,7 +1,7 @@
 name=Moment of Heroism
 url=http://magiccards.info/isd/en/24.html
 image=http://magiccards.info/scans/en/isd/24.jpg
-value=3
+value=2.825
 rarity=C
 type=Instant
 cost={1}{W}

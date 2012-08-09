@@ -1,7 +1,7 @@
 name=Beastmaster's Magemark
 url=http://magiccards.info/gp/en/80.html
 image=http://magiccards.info/scans/en/gp/80.jpg
-value=2
+value=2.742
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Vedalken Mastermind
 url=http://magiccards.info/10e/en/123.html
 image=http://magiccards.info/scans/en/10e/123.jpg
-value=3
+value=4.447
 rarity=U
 type=Creature
 subtype=Vedalken,Wizard

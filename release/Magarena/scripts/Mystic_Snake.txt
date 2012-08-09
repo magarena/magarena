@@ -1,7 +1,7 @@
 name=Mystic Snake
 url=http://magiccards.info/tsts/en/97.html
 image=http://magiccards.info/scans/en/tsts/97.jpg
-value=3
+value=4.668
 rarity=R
 type=Creature
 subtype=Snake

@@ -1,7 +1,7 @@
 name=Brink of Disaster
 url=http://magiccards.info/m12/en/84.html
 image=http://magiccards.info/scans/en/m12/84.jpg
-value=3
+value=1.939
 removal=4
 rarity=C
 type=Enchantment

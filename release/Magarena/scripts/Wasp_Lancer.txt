@@ -1,7 +1,7 @@
 name=Wasp Lancer
 url=http://magiccards.info/shm/en/179.html
 image=http://magiccards.info/scans/en/shm/179.jpg
-value=3
+value=3.532
 ability=flying
 rarity=U
 type=Creature

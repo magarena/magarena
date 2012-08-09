@@ -1,7 +1,7 @@
 name=Knight of Meadowgrain
 url=http://magiccards.info/ddg/en/5.html
 image=http://magiccards.info/scans/en/lw/28.jpg
-value=3
+value=4.033
 rarity=U
 type=Creature
 subtype=Kithkin,Knight

@@ -1,7 +1,7 @@
 name=Razortooth Rats
 url=http://magiccards.info/9e/en/158.html
 image=http://magiccards.info/scans/en/9e/158.jpg 
-value=2
+value=2.833
 ability=fear
 rarity=C
 type=Creature

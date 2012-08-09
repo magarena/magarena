@@ -1,7 +1,7 @@
 name=Rorix Bladewing
 url=http://magiccards.info/pch/en/65.html
 image=http://magiccards.info/scans/en/pch/65.jpg
-value=5
+value=4.460
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

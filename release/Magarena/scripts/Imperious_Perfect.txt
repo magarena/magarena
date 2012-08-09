@@ -1,7 +1,7 @@
 name=Imperious Perfect
 url=http://magiccards.info/dpa/en/71.html
 image=http://magiccards.info/scans/en/dpa/71.jpg
-value=4
+value=4.533
 rarity=U
 type=Creature
 subtype=Elf,Warrior

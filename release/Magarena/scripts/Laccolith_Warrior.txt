@@ -1,7 +1,7 @@
 name=Laccolith Warrior
 url=http://magiccards.info/ne/en/90.html
 image=http://magiccards.info/scans/en/ne/90.jpg
-value=3
+value=3.769
 rarity=U
 type=Creature
 subtype=Beast

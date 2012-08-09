@@ -1,7 +1,7 @@
 name=Nightshade Stinger
 url=http://magiccards.info/lw/en/132.html
 image=http://magiccards.info/scans/en/lw/132.jpg 
-value=1
+value=2.897
 ability=flying,can't block
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Bloodscale Prowler
 url=http://magiccards.info/gp/en/64.html
 image=http://magiccards.info/scans/en/gp/64.jpg
-value=2
+value=2.371
 rarity=C
 type=Creature
 subtype=Viashino,Warrior

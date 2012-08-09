@@ -1,7 +1,7 @@
 name=Underground Sea
 url=http://magiccards.info/me4/en/256.html
 image=http://magiccards.info/scans/en/me4/256.jpg
-value=4
+value=4.736
 rarity=R
 type=Land
 subtype=Swamp,Island

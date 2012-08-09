@@ -1,7 +1,7 @@
 name=Tidal Kraken
 url=http://magiccards.info/9e/en/105.html
 image=http://magiccards.info/scans/en/9e/105.jpg 
-value=5
+value=3.819
 ability=unblockable
 rarity=R
 type=Creature

@@ -1,7 +1,7 @@
 name=Oakgnarl Warrior
 url=http://magiccards.info/lw/en/232.html
 image=http://magiccards.info/scans/en/lw/232.jpg 
-value=4
+value=3.276
 ability=vigilance,trample
 rarity=C
 type=Creature

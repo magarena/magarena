@@ -1,7 +1,7 @@
 name=Bone Dancer
 url=http://magiccards.info/wl/en/4.html
 image=http://magiccards.info/scans/en/wl/4.jpg
-value=3
+value=4.330
 rarity=R
 type=Creature
 subtype=Zombie

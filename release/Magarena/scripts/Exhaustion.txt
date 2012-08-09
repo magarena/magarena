@@ -1,7 +1,7 @@
 name=Exhaustion
 url=http://magiccards.info/9e/en/76.html
 image=http://magiccards.info/scans/en/9e/76.jpg
-value=3
+value=4.098
 removal=1
 rarity=U
 type=Sorcery

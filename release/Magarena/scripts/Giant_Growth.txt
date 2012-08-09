@@ -1,7 +1,7 @@
 name=Giant Growth
 url=http://magiccards.info/dpa/en/66.html
 image=http://magiccards.info/scans/en/m11/178.jpg
-value=2
+value=4.542
 rarity=C
 type=Instant
 cost={G}

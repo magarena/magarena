@@ -1,7 +1,7 @@
 name=Elder Land Wurm
 url=http://magiccards.info/4e/en/274.html
 image=http://magiccards.info/scans/en/4e/274.jpg
-value=5
+value=2.020
 rarity=R
 type=Creature
 subtype=Dragon,Wurm

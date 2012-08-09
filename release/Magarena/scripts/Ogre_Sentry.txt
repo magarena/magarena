@@ -1,7 +1,7 @@
 name=Ogre Sentry
 url=http://magiccards.info/roe/en/159.html
 image=http://magiccards.info/scans/en/roe/159.jpg 
-value=2
+value=2.564
 ability=defender
 rarity=C
 type=Creature

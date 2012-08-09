@@ -1,7 +1,7 @@
 name=Sabretooth Tiger
 url=http://magiccards.info/8e/en/217.html
 image=http://magiccards.info/scans/en/8e/217.jpg 
-value=1
+value=2.467
 ability=first strike
 rarity=C
 type=Creature

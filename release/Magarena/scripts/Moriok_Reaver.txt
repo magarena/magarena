@@ -1,7 +1,7 @@
 name=Moriok Reaver
 url=http://magiccards.info/som/en/70.html
 image=http://magiccards.info/scans/en/som/70.jpg 
-value=3
+value=1.833
 rarity=C
 type=Creature
 subtype=Human,Warrior

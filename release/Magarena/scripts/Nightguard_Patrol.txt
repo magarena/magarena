@@ -1,7 +1,7 @@
 name=Nightguard Patrol
 url=http://magiccards.info/rav/en/26.html
 image=http://magiccards.info/scans/en/rav/26.jpg 
-value=2
+value=2.932
 ability=first strike,vigilance
 rarity=C
 type=Creature

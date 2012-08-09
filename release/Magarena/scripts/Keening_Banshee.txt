@@ -1,7 +1,7 @@
 name=Keening Banshee
 url=http://magiccards.info/gvl/en/44.html
 image=http://magiccards.info/scans/en/rav/92.jpg
-value=4
+value=3.242
 rarity=U
 removal=2
 type=Creature

@@ -1,7 +1,7 @@
 name=Molder Beast
 url=http://magiccards.info/som/en/125.html
 image=http://magiccards.info/scans/en/som/125.jpg
-value=4
+value=3.103
 rarity=C
 type=Creature
 subtype=Beast

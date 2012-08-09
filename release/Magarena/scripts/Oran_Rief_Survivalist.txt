@@ -1,7 +1,7 @@
 name=Oran-Rief Survivalist
 url=http://magiccards.info/zen/en/174.html
 image=http://magiccards.info/scans/en/zen/174.jpg
-value=2
+value=3.858
 rarity=C
 type=Creature
 subtype=Human,Warrior,Ally

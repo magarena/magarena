@@ -1,7 +1,7 @@
 name=Vodalian Zombie
 url=http://magiccards.info/in/en/286.html
 image=http://magiccards.info/scans/en/in/286.jpg 
-value=2
+value=3.452
 ability=protection from green
 rarity=C
 type=Creature

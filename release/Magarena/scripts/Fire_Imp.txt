@@ -1,7 +1,7 @@
 name=Fire Imp
 url=http://magiccards.info/po/en/131.html
 image=http://magiccards.info/scans/en/po/131.jpg
-value=2
+value=3.817
 rarity=U
 type=Creature
 subtype=Imp

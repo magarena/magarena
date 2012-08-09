@@ -1,7 +1,7 @@
 name=Night Revelers
 url=http://magiccards.info/isd/en/153.html
 image=http://magiccards.info/scans/en/isd/153.jpg
-value=4
+value=2.212
 rarity=C
 type=Creature
 subtype=Vampire

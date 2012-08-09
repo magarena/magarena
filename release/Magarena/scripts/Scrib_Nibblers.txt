@@ -1,7 +1,7 @@
 name=Scrib Nibblers
 url=http://magiccards.info/wwk/en/66.html
 image=http://magiccards.info/scans/en/wwk/66.jpg
-value=1
+value=3.326
 rarity=U
 type=Creature
 subtype=Rat

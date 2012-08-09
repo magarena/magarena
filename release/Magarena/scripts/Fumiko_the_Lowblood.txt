@@ -1,7 +1,7 @@
 name=Fumiko the Lowblood
 url=http://magiccards.info/bok/en/104.html
 image=http://magiccards.info/scans/en/bok/104.jpg
-value=4
+value=4.056
 rarity=R
 type=Legendary,Creature
 subtype=Human,Samurai

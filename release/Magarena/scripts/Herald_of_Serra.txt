@@ -1,7 +1,7 @@
 name=Herald of Serra
 url=http://magiccards.info/us/en/17.html
 image=http://magiccards.info/scans/en/us/17.jpg
-value=4
+value=2.134
 rarity=R
 type=Creature
 subtype=Angel

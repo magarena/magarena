@@ -1,7 +1,7 @@
 name=Treetop Village
 url=http://magiccards.info/10e/en/361.html
 image=http://magiccards.info/scans/en/10e/361.jpg
-value=4
+value=4.080
 rarity=U
 type=Land
 mana=g3

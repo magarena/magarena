@@ -1,7 +1,7 @@
 name=Mogg Fanatic
 url=http://magiccards.info/pd2/en/3.html
 image=http://magiccards.info/scans/en/10e/219.jpg
-value=2
+value=4.300
 rarity=U
 type=Creature
 subtype=Goblin

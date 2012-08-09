@@ -1,7 +1,7 @@
 name=Angel's Feather
 url=http://magiccards.info/m12/en/202.html
 image=http://magiccards.info/scans/en/m10/206.jpg
-value=2
+value=1.725
 rarity=U
 type=Artifact
 cost={2}

@@ -1,7 +1,7 @@
 name=Falkenrath Exterminator
 url=http://magiccards.info/avr/en/134.html
 image=http://magiccards.info/scans/en/avr/134.jpg
-value=3
+value=3.516
 rarity=U
 type=Creature
 subtype=Vampire,Archer

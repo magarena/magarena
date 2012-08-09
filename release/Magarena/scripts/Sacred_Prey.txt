@@ -1,7 +1,7 @@
 name=Sacred Prey
 url=http://magiccards.info/mm/en/268.html
 image=http://magiccards.info/scans/en/mm/268.jpg
-value=1
+value=2.474
 rarity=C
 type=Creature
 subtype=Horse

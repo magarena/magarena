@@ -1,7 +1,7 @@
 name=Wrath of God
 url=http://magiccards.info/10e/en/61.html
 image=http://magiccards.info/scans/en/10e/61.jpg
-value=4
+value=4.781
 removal=2
 rarity=R
 type=Sorcery

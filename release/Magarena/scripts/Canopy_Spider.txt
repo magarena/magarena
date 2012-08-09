@@ -1,7 +1,7 @@
 name=Canopy Spider
 url=http://magiccards.info/10e/en/254.html
 image=http://magiccards.info/scans/en/10e/254.jpg 
-value=2
+value=3.272
 ability=reach
 rarity=C
 type=Creature

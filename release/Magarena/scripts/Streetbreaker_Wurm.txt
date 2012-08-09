@@ -1,7 +1,7 @@
 name=Streetbreaker Wurm
 url=http://magiccards.info/gp/en/133.html
 image=http://magiccards.info/scans/en/gp/133.jpg 
-value=4
+value=2.797
 rarity=C
 type=Creature
 subtype=Wurm

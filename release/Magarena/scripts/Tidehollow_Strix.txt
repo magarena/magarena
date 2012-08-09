@@ -1,7 +1,7 @@
 name=Tidehollow Strix
 url=http://magiccards.info/ala/en/203.html
 image=http://magiccards.info/scans/en/ala/203.jpg
-value=3
+value=4.320
 rarity=C
 type=Artifact,Creature
 subtype=Bird

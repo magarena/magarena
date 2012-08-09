@@ -1,7 +1,7 @@
 name=Crabapple Cohort
 url=http://magiccards.info/shm/en/109.html
 image=http://magiccards.info/scans/en/shm/109.jpg
-value=4
+value=2.152
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior

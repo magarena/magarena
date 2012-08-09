@@ -1,7 +1,7 @@
 name=Join the Ranks
 url=http://magiccards.info/wwk/en/9.html
 image=http://magiccards.info/scans/en/wwk/9.jpg
-value=3
+value=3.794
 rarity=C
 type=Instant
 cost={3}{W}

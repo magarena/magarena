@@ -1,7 +1,7 @@
 name=Fangren Hunter
 url=http://magiccards.info/mi/en/119.html
 image=http://magiccards.info/scans/en/mi/119.jpg 
-value=4
+value=2.938
 ability=trample
 rarity=C
 type=Creature

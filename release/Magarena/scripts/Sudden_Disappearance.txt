@@ -1,7 +1,7 @@
 name=Sudden Disappearance
 url=http://magiccards.info/dka/en/23.html
 image=http://magiccards.info/scans/en/dka/23.jpg
-value=4
+value=3.521
 rarity=R
 type=Sorcery
 cost={5}{W}

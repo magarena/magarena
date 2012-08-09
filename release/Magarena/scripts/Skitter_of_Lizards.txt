@@ -1,7 +1,7 @@
 name=Skitter of Lizards
 url=http://magiccards.info/wwk/en/91.html
 image=http://magiccards.info/scans/en/wwk/91.jpg
-value=1
+value=3.685
 rarity=C
 type=Creature
 subtype=Lizard

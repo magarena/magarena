@@ -1,7 +1,7 @@
 name=Stillmoon Cavalier
 url=http://magiccards.info/eve/en/95.html
 image=http://magiccards.info/scans/en/eve/95.jpg
-value=3
+value=4.434
 rarity=R
 type=Creature
 subtype=Zombie,Knight

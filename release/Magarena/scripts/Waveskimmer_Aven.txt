@@ -1,7 +1,7 @@
 name=Waveskimmer Aven
 url=http://magiccards.info/ala/en/207.html
 image=http://magiccards.info/scans/en/ala/207.jpg 
-value=3
+value=1.616
 ability=flying,exalted
 rarity=C
 type=Creature

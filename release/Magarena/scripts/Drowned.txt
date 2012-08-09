@@ -1,7 +1,7 @@
 name=Drowned
 url=http://magiccards.info/dk/en/23.html
 image=http://magiccards.info/scans/en/dk/23.jpg
-value=1
+value=3.397
 rarity=C
 type=Creature
 subtype=Zombie

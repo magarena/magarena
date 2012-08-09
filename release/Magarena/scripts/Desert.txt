@@ -1,7 +1,7 @@
 name=Desert
 url=http://magiccards.info/tsts/en/118.html
 image=http://magiccards.info/scans/en/tsts/118.jpg
-value=3
+value=4.239
 rarity=C
 type=Land
 subtype=Desert

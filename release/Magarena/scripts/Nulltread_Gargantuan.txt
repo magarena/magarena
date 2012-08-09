@@ -1,7 +1,7 @@
 name=Nulltread Gargantuan
 url=http://magiccards.info/arb/en/102.html
 image=http://magiccards.info/scans/en/arb/102.jpg
-value=4
+value=4.181
 rarity=U
 type=Creature
 subtype=Beast

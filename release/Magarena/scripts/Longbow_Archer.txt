@@ -1,7 +1,7 @@
 name=Longbow Archer
 url=http://magiccards.info/7e/en/26.html
 image=http://magiccards.info/scans/en/7e/26.jpg 
-value=2
+value=4.362
 ability=first strike,reach
 rarity=U
 type=Creature

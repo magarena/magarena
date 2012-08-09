@@ -1,7 +1,7 @@
 name=Inner-Chamber Guard
 url=http://magiccards.info/sok/en/13.html
 image=http://magiccards.info/scans/en/sok/13.jpg
-value=2
+value=3.152
 rarity=U
 type=Creature
 subtype=Human,Samurai

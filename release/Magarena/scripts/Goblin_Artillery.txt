@@ -1,7 +1,7 @@
 name=Goblin Artillery
 url=http://magiccards.info/m10/en/138.html
 image=http://magiccards.info/scans/en/m10/138.jpg
-value=3
+value=2.745
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

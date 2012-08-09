@@ -1,7 +1,7 @@
 name=Dromar, the Banisher
 url=http://magiccards.info/in/en/244.html
 image=http://magiccards.info/scans/en/in/244.jpg
-value=5
+value=4.066
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

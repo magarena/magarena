@@ -1,7 +1,7 @@
 name=Temporal Mastery
 url=http://magiccards.info/avr/en/81.html
 image=http://magiccards.info/scans/en/avr/81.jpg
-value=5
+value=4.194
 rarity=M
 type=Sorcery
 cost={5}{U}{U}

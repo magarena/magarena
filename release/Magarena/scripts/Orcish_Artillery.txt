@@ -1,7 +1,7 @@
 name=Orcish Artillery
 url=http://magiccards.info/10e/en/220.html
 image=http://magiccards.info/scans/en/10e/220.jpg
-value=3
+value=3.193
 rarity=U
 type=Creature
 subtype=Orc,Warrior

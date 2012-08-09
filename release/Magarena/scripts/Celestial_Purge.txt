@@ -1,7 +1,7 @@
 name=Celestial Purge
 url=http://magiccards.info/m12/en/11.html
 image=http://magiccards.info/scans/en/m11/9.jpg
-value=3
+value=3.640
 removal=4
 rarity=U
 type=Instant

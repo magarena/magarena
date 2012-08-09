@@ -1,7 +1,7 @@
 name=Winged Coatl
 url=http://magiccards.info/arb/en/105.html
 image=http://magiccards.info/scans/en/arb/105.jpg
-value=3
+value=4.184
 removal=2
 rarity=C
 type=Creature

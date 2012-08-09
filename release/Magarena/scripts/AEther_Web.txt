@@ -1,7 +1,7 @@
 name=AEther Web
 url=http://magiccards.info/ts/en/189.html
 image=http://magiccards.info/scans/en/ts/189.jpg
-value=3
+value=3.386
 rarity=C
 type=Enchantment
 subtype=Aura

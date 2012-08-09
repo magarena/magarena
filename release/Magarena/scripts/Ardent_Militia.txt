@@ -1,7 +1,7 @@
 name=Ardent Militia
 url=http://magiccards.info/8e/en/3.html
 image=http://magiccards.info/scans/en/8e/3.jpg 
-value=3
+value=2.365
 ability=vigilance
 rarity=U
 type=Creature

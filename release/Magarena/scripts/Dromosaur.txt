@@ -1,7 +1,7 @@
 name=Dromosaur
 url=http://magiccards.info/us/en/182.html
 image=http://magiccards.info/scans/en/us/182.jpg
-value=3
+value=2.619
 rarity=C
 type=Creature
 subtype=Lizard

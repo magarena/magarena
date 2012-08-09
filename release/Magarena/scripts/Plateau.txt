@@ -1,7 +1,7 @@
 name=Plateau
 url=http://magiccards.info/me4/en/249.html
 image=http://magiccards.info/scans/en/me4/249.jpg
-value=4
+value=4.794
 rarity=R
 type=Land
 subtype=Mountain,Plains

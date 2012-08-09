@@ -1,7 +1,7 @@
 name=Yavimaya Hollow
 url=http://magiccards.info/ud/en/143.html
 image=http://magiccards.info/scans/en/ud/143.jpg
-value=4
+value=4.537
 rarity=R
 type=Legendary,Land
 ability=tap add mana {1}

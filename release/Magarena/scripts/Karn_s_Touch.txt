@@ -1,7 +1,7 @@
 name=Karn's Touch
 url=http://magiccards.info/mm/en/86.html
 image=http://magiccards.info/scans/en/mm/86.jpg
-value=3
+value=3.923
 rarity=R
 type=Instant
 cost={U}{U}

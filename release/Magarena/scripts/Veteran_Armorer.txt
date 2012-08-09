@@ -1,7 +1,7 @@
 name=Veteran Armorer
 url=http://magiccards.info/rav/en/34.html
 image=http://magiccards.info/scans/en/rav/34.jpg
-value=2
+value=4.000
 rarity=C
 type=Creature
 subtype=Human,Soldier

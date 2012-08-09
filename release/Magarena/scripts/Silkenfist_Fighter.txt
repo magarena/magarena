@@ -1,7 +1,7 @@
 name=Silkenfist Fighter
 url=http://magiccards.info/ne/en/19.html
 image=http://magiccards.info/scans/en/ne/19.jpg
-value=2
+value=3.091
 rarity=C
 type=Creature
 subtype=Kor,Soldier

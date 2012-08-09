@@ -1,7 +1,7 @@
 name=Force of Savagery
 url=http://magiccards.info/fut/en/126.html
 image=http://magiccards.info/scans/en/fut/126.jpg 
-value=3
+value=3.851
 ability=trample
 rarity=R
 type=Creature

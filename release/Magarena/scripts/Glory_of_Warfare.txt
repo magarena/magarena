@@ -1,7 +1,7 @@
 name=Glory of Warfare
 url=http://magiccards.info/pch/en/88.html
 image=http://magiccards.info/scans/en/arb/98.jpg
-value=4
+value=4.226
 rarity=R
 type=Enchantment
 cost={2}{R}{W}

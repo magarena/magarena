@@ -1,7 +1,7 @@
 name=Benthic Behemoth
 url=http://magiccards.info/7e/en/63.html
 image=http://magiccards.info/scans/en/7e/63.jpg 
-value=4
+value=2.798
 ability=islandwalk
 rarity=R
 type=Creature

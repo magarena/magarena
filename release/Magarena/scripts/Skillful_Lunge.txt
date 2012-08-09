@@ -1,7 +1,7 @@
 name=Skillful Lunge
 url=http://magiccards.info/dka/en/22.html
 image=http://magiccards.info/scans/en/dka/22.jpg
-value=2
+value=2.422
 rarity=C
 type=Instant
 cost={1}{W}

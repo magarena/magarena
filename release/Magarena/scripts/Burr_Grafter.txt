@@ -1,7 +1,7 @@
 name=Burr Grafter
 url=http://magiccards.info/chk/en/203.html
 image=http://magiccards.info/scans/en/chk/203.jpg
-value=2
+value=2.552
 rarity=C
 type=Creature
 subtype=Spirit

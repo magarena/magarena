@@ -1,7 +1,7 @@
 name=Extruder
 url=http://magiccards.info/ud/en/130.html
 image=http://magiccards.info/scans/en/ud/130.jpg
-value=4
+value=3.154
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

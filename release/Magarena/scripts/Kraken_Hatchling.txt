@@ -1,7 +1,7 @@
 name=Kraken Hatchling
 url=http://magiccards.info/zen/en/50.html
 image=http://magiccards.info/scans/en/zen/50.jpg 
-value=2
+value=3.269
 rarity=C
 type=Creature
 subtype=Kraken

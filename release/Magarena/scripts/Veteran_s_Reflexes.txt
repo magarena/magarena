@@ -1,7 +1,7 @@
 name=Veteran's Reflexes
 url=http://magiccards.info/wwk/en/23.html
 image=http://magiccards.info/scans/en/wwk/23.jpg
-value=2
+value=2.953
 rarity=C
 type=Instant
 cost={W}

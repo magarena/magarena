@@ -1,7 +1,7 @@
 name=Turn to Frog
 url=http://magiccards.info/m12/en/78.html
 image=http://magiccards.info/scans/en/m12/78.jpg
-value=3
+value=4.399
 removal=3
 rarity=U
 type=Instant

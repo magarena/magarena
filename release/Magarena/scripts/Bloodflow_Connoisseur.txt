@@ -1,7 +1,7 @@
 name=Bloodflow Connoisseur
 url=http://magiccards.info/avr/en/87.html
 image=http://magiccards.info/scans/en/avr/87.jpg
-value=2
+value=3.129
 rarity=C
 type=Creature
 subtype=Vampire

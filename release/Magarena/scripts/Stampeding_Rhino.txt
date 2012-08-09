@@ -1,7 +1,7 @@
 name=Stampeding Rhino
 url=http://magiccards.info/m12/en/196.html
 image=http://magiccards.info/scans/en/m10/204.jpg 
-value=4
+value=2.895
 ability=trample
 rarity=C
 type=Creature

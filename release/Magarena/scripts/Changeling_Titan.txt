@@ -1,7 +1,7 @@
 name=Changeling Titan
 url=http://magiccards.info/lw/en/200.html
 image=http://magiccards.info/scans/en/lw/200.jpg
-value=5
+value=3.824
 removal=2
 rarity=U
 type=Creature

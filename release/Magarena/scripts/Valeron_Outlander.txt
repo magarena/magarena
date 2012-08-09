@@ -1,7 +1,7 @@
 name=Valeron Outlander
 url=http://magiccards.info/cfx/en/130.html
 image=http://magiccards.info/scans/en/cfx/130.jpg 
-value=2
+value=3.012
 ability=protection from black
 rarity=C
 type=Creature

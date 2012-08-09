@@ -1,7 +1,7 @@
 name=Gnarled Mass
 url=http://magiccards.info/bok/en/127.html
 image=http://magiccards.info/scans/en/bok/127.jpg 
-value=3
+value=2.353
 rarity=C
 type=Creature
 subtype=Spirit

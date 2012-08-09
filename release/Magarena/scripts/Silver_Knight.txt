@@ -1,7 +1,7 @@
 name=Silver Knight
 url=http://magiccards.info/ddg/en/8.html
 image=http://magiccards.info/scans/en/sc/23.jpg
-value=3
+value=4.450
 ability=first strike,protection from red
 rarity=U
 type=Creature

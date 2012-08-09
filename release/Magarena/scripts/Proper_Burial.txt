@@ -1,7 +1,7 @@
 name=Proper Burial
 url=http://magiccards.info/di/en/16.html
 image=http://magiccards.info/scans/en/di/16.jpg
-value=3
+value=3.905
 rarity=R
 type=Enchantment
 cost={3}{W}

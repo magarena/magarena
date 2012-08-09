@@ -1,7 +1,7 @@
 name=Duskworker
 url=http://magiccards.info/mi/en/166.html
 image=http://magiccards.info/scans/en/mi/166.jpg
-value=3
+value=2.096
 rarity=U
 type=Artifact,Creature
 subtype=Construct

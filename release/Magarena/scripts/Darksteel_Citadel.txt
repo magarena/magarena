@@ -1,7 +1,7 @@
 name=Darksteel Citadel
 url=http://magiccards.info/ds/en/164.html
 image=http://magiccards.info/scans/en/ds/164.jpg
-value=2
+value=4.627
 rarity=C
 type=Artifact,Land
 ability=indestructible,tap add mana {1}

@@ -1,7 +1,7 @@
 name=Loxodon Warhammer
 url=http://magiccards.info/ddg/en/31.html
 image=http://magiccards.info/scans/en/pch/118.jpg
-value=5
+value=4.623
 rarity=R
 type=Artifact
 subtype=Equipment

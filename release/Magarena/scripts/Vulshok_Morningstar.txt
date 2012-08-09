@@ -1,7 +1,7 @@
 name=Vulshok Morningstar
 url=http://magiccards.info/9e/en/315.html
 image=http://magiccards.info/scans/en/ds/157.jpg
-value=3
+value=3.389
 rarity=C
 type=Artifact
 subtype=Equipment

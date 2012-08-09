@@ -1,7 +1,7 @@
 name=Victory's Herald
 url=http://magiccards.info/mbs/en/18.html
 image=http://magiccards.info/scans/en/mbs/18.jpg
-value=5
+value=3.971
 rarity=R
 type=Creature
 subtype=Angel

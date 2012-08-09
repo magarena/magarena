@@ -1,7 +1,7 @@
 name=Crucible of Fire
 url=http://magiccards.info/ala/en/96.html
 image=http://magiccards.info/scans/en/ala/96.jpg
-value=4
+value=3.463
 rarity=R
 type=Enchantment
 cost={3}{R}

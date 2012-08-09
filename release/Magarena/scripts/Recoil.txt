@@ -1,7 +1,7 @@
 name=Recoil
 url=http://magiccards.info/ddh/en/61.html
 image=http://magiccards.info/scans/en/in/264.jpg
-value=3
+value=4.414
 rarity=C
 type=Instant
 cost={1}{U}{B}

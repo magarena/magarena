@@ -1,7 +1,7 @@
 name=Field Marshal
 url=http://magiccards.info/10e/en/15.html
 image=http://magiccards.info/scans/en/10e/15.jpg
-value=3
+value=4.439
 rarity=R
 type=Creature
 subtype=Human,Soldier

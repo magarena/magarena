@@ -1,7 +1,7 @@
 name=Eager Cadet
 url=http://magiccards.info/9eb/en/1.html
 image=http://magiccards.info/scans/en/9eb/1.jpg 
-value=1
+value=1.733
 rarity=C
 type=Creature
 subtype=Human,Soldier

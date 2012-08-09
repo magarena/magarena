@@ -1,7 +1,7 @@
 name=Essence Harvest
 url=http://magiccards.info/avr/en/100.html
 image=http://magiccards.info/scans/en/avr/100.jpg
-value=2
+value=3.473
 rarity=C
 type=Sorcery
 cost={2}{B}

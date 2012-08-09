@@ -1,7 +1,7 @@
 name=Night's Whisper
 url=http://magiccards.info/5dn/en/55.html
 image=http://magiccards.info/scans/en/5dn/55.jpg
-value=2
+value=4.315
 rarity=U
 type=Sorcery
 cost={1}{B}

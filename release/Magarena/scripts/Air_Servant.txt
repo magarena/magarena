@@ -1,7 +1,7 @@
 name=Air Servant
 url=http://magiccards.info/m11/en/42.html
 image=http://magiccards.info/scans/en/m11/42.jpg
-value=4
+value=3.269
 rarity=U
 type=Creature
 subtype=Elemental

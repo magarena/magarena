@@ -1,7 +1,7 @@
 name=Wurm's Tooth
 url=http://magiccards.info/m12/en/223.html
 image=http://magiccards.info/scans/en/m10/222.jpg
-value=2
+value=1.750
 rarity=U
 type=Artifact
 cost={2}

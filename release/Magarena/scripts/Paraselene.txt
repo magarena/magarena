@@ -1,7 +1,7 @@
 name=Paraselene
 url=http://magiccards.info/isd/en/26.html
 image=http://magiccards.info/scans/en/isd/26.jpg
-value=2
+value=3.500
 removal=2
 rarity=U
 type=Sorcery

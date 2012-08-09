@@ -1,7 +1,7 @@
 name=To Arms!
 url=http://magiccards.info/gp/en/20.html
 image=http://magiccards.info/scans/en/gp/20.jpg
-value=2
+value=4.094
 rarity=U
 type=Instant
 cost={1}{W}

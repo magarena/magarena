@@ -1,7 +1,7 @@
 name=Circle of Flame
 url=http://magiccards.info/m12/en/127.html
 image=http://magiccards.info/scans/en/m12/127.jpg
-value=3
+value=3.577
 rarity=U
 type=Enchantment
 cost={1}{R}

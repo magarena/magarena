@@ -1,7 +1,7 @@
 name=Boggart Mob
 url=http://magiccards.info/lw/en/104.html
 image=http://magiccards.info/scans/en/lw/104.jpg
-value=5
+value=3.902
 removal=2
 rarity=R
 type=Creature

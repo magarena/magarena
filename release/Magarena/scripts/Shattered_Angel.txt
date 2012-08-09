@@ -1,7 +1,7 @@
 name=Shattered Angel
 url=http://magiccards.info/cmd/en/31.html
 image=http://magiccards.info/scans/en/cmd/31.jpg
-value=4
+value=3.333
 rarity=U
 type=Creature
 subtype=Angel

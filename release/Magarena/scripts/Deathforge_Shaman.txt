@@ -1,7 +1,7 @@
 name=Deathforge Shaman
 url=http://magiccards.info/wwk/en/80.html
 image=http://magiccards.info/scans/en/wwk/80.jpg
-value=4
+value=3.200
 rarity=U
 type=Creature
 subtype=Ogre,Shaman

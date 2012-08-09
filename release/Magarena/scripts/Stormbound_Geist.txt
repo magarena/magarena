@@ -1,7 +1,7 @@
 name=Stormbound Geist
 url=http://magiccards.info/dka/en/51.html
 image=http://magiccards.info/scans/en/dka/51.jpg
-value=2
+value=3.545
 rarity=C
 type=Creature
 subtype=Spirit

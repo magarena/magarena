@@ -1,7 +1,7 @@
 name=Stitcher's Apprentice
 url=http://magiccards.info/isd/en/81.html
 image=http://magiccards.info/scans/en/isd/81.jpg
-value=2
+value=3.393
 rarity=C
 type=Creature
 subtype=Homunculus

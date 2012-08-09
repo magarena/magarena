@@ -1,7 +1,7 @@
 name=Assault Zeppelid
 url=http://magiccards.info/di/en/103.html
 image=http://magiccards.info/scans/en/di/103.jpg
-value=3
+value=3.810
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,7 +1,7 @@
 name=Giant Scorpion
 url=http://magiccards.info/zen/en/90.html
 image=http://magiccards.info/scans/en/zen/90.jpg
-value=2
+value=2.800
 ability=deathtouch
 rarity=C
 type=Creature

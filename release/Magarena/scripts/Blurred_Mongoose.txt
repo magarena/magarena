@@ -1,7 +1,7 @@
 name=Blurred Mongoose
 url=http://magiccards.info/in/en/183.html
 image=http://magiccards.info/scans/en/in/183.jpg 
-value=3
+value=4.065
 ability=can't be countered,shroud
 rarity=R
 type=Creature

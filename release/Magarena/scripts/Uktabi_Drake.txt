@@ -1,7 +1,7 @@
 name=Uktabi Drake
 url=http://magiccards.info/pc/en/141.html
 image=http://magiccards.info/scans/en/pc/141.jpg
-value=2
+value=3.894
 rarity=C
 type=Creature
 subtype=Drake

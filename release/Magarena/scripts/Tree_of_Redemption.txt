@@ -1,7 +1,7 @@
 name=Tree of Redemption
 url=http://magiccards.info/isd/en/207.html
 image=http://magiccards.info/scans/en/isd/207.jpg
-value=4
+value=3.933
 rarity=M
 type=Creature
 subtype=Plant

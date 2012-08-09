@@ -1,7 +1,7 @@
 name=Vivid Marsh
 url=http://magiccards.info/cmd/en/296.html
 image=http://magiccards.info/scans/en/lw/278.jpg
-value=3
+value=2.906
 rarity=U
 type=Land
 mana=b3g1r1u1w1

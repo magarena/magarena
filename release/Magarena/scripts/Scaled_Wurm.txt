@@ -1,7 +1,7 @@
 name=Scaled Wurm
 url=http://magiccards.info/9e/en/269.html
 image=http://magiccards.info/scans/en/9e/269.jpg 
-value=4
+value=2.358
 rarity=C
 type=Creature
 subtype=Wurm

@@ -1,7 +1,7 @@
 name=Reviving Dose
 url=http://magiccards.info/10e/en/34.html
 image=http://magiccards.info/scans/en/10e/34.jpg
-value=2
+value=2.846
 rarity=C
 type=Instant
 cost={2}{W}

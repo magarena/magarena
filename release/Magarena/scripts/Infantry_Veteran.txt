@@ -1,7 +1,7 @@
 name=Infantry Veteran
 url=http://magiccards.info/ddf/en/4.html
 image=http://magiccards.info/scans/en/ddf/4.jpg
-value=2
+value=3.071
 rarity=C
 type=Creature
 subtype=Human,Soldier

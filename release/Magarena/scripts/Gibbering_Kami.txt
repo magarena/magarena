@@ -1,7 +1,7 @@
 name=Gibbering Kami
 url=http://magiccards.info/chk/en/112.html
 image=http://magiccards.info/scans/en/chk/112.jpg
-value=2
+value=2.060
 rarity=C
 type=Creature
 subtype=Spirit

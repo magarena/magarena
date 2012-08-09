@@ -1,7 +1,7 @@
 name=Commander Eesha
 url=http://magiccards.info/ju/en/9.html
 image=http://magiccards.info/scans/en/ju/9.jpg 
-value=5
+value=4.263
 ability=flying,protection from creatures
 rarity=R
 type=Legendary,Creature

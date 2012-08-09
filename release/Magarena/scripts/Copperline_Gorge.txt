@@ -1,7 +1,7 @@
 name=Copperline Gorge
 url=http://magiccards.info/som/en/225.html
 image=http://magiccards.info/scans/en/som/225.jpg
-value=4
+value=4.280
 rarity=R
 type=Land
 mana=r3g3

@@ -1,7 +1,7 @@
 name=Canyon Wildcat
 url=http://magiccards.info/ddh/en/6.html
 image=http://magiccards.info/scans/en/8e/181.jpg 
-value=2
+value=3.333
 ability=mountainwalk
 rarity=C
 type=Creature

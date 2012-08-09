@@ -1,7 +1,7 @@
 name=Rakish Heir
 url=http://magiccards.info/isd/en/158.html
 image=http://magiccards.info/scans/en/isd/158.jpg
-value=3
+value=3.866
 rarity=U
 type=Creature
 subtype=Vampire

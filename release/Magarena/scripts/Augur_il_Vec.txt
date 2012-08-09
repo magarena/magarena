@@ -1,7 +1,7 @@
 name=Augur il-Vec
 url=http://magiccards.info/fut/en/2.html
 image=http://magiccards.info/scans/en/fut/2.jpg
-value=2
+value=2.724
 rarity=C
 type=Creature
 subtype=Human,Cleric

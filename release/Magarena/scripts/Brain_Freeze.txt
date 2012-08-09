@@ -1,7 +1,7 @@
 name=Brain Freeze
 url=http://magiccards.info/sc/en/29.html
 image=http://magiccards.info/scans/en/sc/29.jpg
-value=3
+value=4.672
 rarity=U
 type=Instant
 cost={1}{U}

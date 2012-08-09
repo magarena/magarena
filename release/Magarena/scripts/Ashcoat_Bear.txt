@@ -1,7 +1,7 @@
 name=Ashcoat Bear
 url=http://magiccards.info/ts/en/190.html
 image=http://magiccards.info/scans/en/ts/190.jpg 
-value=2
+value=4.089
 ability=flash
 rarity=C
 type=Creature

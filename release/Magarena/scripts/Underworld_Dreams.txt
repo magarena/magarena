@@ -1,7 +1,7 @@
 name=Underworld Dreams
 url=http://magiccards.info/dpa/en/35.html
 image=http://magiccards.info/scans/en/dpa/35.jpg
-value=3
+value=4.472
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

@@ -1,7 +1,7 @@
 name=Vulshok Berserker
 url=http://magiccards.info/m11/en/159.html
 image=http://magiccards.info/scans/en/m11/159.jpg 
-value=3
+value=2.750
 ability=haste
 rarity=C
 type=Creature

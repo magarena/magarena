@@ -1,7 +1,7 @@
 name=Rain of Tears
 url=http://magiccards.info/10e/en/170.html
 image=http://magiccards.info/scans/en/10e/170.jpg
-value=2
+value=3.900
 removal=3
 rarity=U
 type=Sorcery

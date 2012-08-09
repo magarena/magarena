@@ -1,7 +1,7 @@
 name=Devouring Swarm
 url=http://magiccards.info/m12/en/91.html
 image=http://magiccards.info/scans/en/m12/91.jpg
-value=2
+value=2.802
 rarity=C
 type=Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Pewter Golem
 url=http://magiccards.info/mi/en/227.html
 image=http://magiccards.info/scans/en/mi/227.jpg
-value=3
+value=1.824
 rarity=C
 type=Artifact,Creature
 subtype=Golem

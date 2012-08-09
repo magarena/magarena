@@ -1,7 +1,7 @@
 name=Hissing Miasma
 url=http://magiccards.info/gp/en/51.html
 image=http://magiccards.info/scans/en/gp/51.jpg
-value=3
+value=3.864
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

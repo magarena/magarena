@@ -1,7 +1,7 @@
 name=Sphinx of Lost Truths
 url=http://magiccards.info/zen/en/69.html
 image=http://magiccards.info/scans/en/zen/69.jpg
-value=4
+value=4.050
 rarity=R
 type=Creature
 subtype=Sphinx

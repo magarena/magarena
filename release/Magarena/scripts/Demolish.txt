@@ -1,7 +1,7 @@
 name=Demolish
 url=http://magiccards.info/m11/en/132.html
 image=http://magiccards.info/scans/en/m11/132.jpg
-value=2
+value=2.444
 removal=1
 rarity=U
 type=Sorcery

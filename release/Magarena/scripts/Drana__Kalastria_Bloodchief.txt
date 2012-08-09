@@ -1,7 +1,7 @@
 name=Drana, Kalastria Bloodchief
 url=http://magiccards.info/roe/en/107.html
 image=http://magiccards.info/scans/en/roe/107.jpg
-value=5
+value=4.391
 rarity=R
 type=Legendary,Creature
 subtype=Vampire,Shaman

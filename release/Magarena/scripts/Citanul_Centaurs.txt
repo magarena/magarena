@@ -1,7 +1,7 @@
 name=Citanul Centaurs
 url=http://magiccards.info/us/en/243.html
 image=http://magiccards.info/scans/en/us/243.jpg
-value=5
+value=3.500
 rarity=R
 type=Creature
 subtype=Centaur

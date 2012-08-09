@@ -1,7 +1,7 @@
 name=Temple Garden
 url=http://magiccards.info/rav/en/284.html
 image=http://magiccards.info/scans/en/rav/284.jpg
-value=4
+value=4.605
 rarity=R
 type=Land
 subtype=Forest,Plains

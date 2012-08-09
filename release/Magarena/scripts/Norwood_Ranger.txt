@@ -1,7 +1,7 @@
 name=Norwood Ranger
 url=http://magiccards.info/9e/en/260.html
 image=http://magiccards.info/scans/en/9e/260.jpg
-value=1
+value=2.719
 rarity=C
 type=Creature
 subtype=Elf,Scout

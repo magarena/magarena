@@ -1,7 +1,7 @@
 name=Bottle Gnomes
 url=http://magiccards.info/jvc/en/7.html
 image=http://magiccards.info/scans/en/jvc/7.jpg
-value=3
+value=4.034
 rarity=U
 type=Artifact,Creature
 subtype=Gnome

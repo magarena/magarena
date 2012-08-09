@@ -1,7 +1,7 @@
 name=Femeref Knight
 url=http://magiccards.info/mr/en/222.html
 image=http://magiccards.info/scans/en/mr/222.jpg
-value=3
+value=3.280
 rarity=C
 type=Creature
 subtype=Human,Knight

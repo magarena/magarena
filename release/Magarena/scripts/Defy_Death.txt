@@ -1,7 +1,7 @@
 name=Defy Death
 url=http://magiccards.info/avr/en/16.html
 image=http://magiccards.info/scans/en/avr/16.jpg
-value=3
+value=3.909
 rarity=U
 type=Sorcery
 cost={3}{W}{W}

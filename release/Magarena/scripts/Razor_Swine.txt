@@ -1,7 +1,7 @@
 name=Razor Swine
 url=http://magiccards.info/nph/en/92.html
 image=http://magiccards.info/scans/en/nph/92.jpg 
-value=3
+value=3.788
 ability=first strike,infect
 rarity=C
 type=Creature

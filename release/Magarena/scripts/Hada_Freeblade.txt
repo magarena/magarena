@@ -1,7 +1,7 @@
 name=Hada Freeblade
 url=http://magiccards.info/wwk/en/7.html
 image=http://magiccards.info/scans/en/wwk/7.jpg
-value=2
+value=4.292
 rarity=U
 type=Creature
 subtype=Human,Soldier,Ally

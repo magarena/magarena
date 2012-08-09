@@ -1,7 +1,7 @@
 name=Hunding Gjornersen
 url=http://magiccards.info/lg/en/271.html
 image=http://magiccards.info/scans/en/me3/152.jpg
-value=4
+value=2.911
 rarity=U
 type=Legendary,Creature
 subtype=Human,Warrior

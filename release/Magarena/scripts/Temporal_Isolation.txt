@@ -1,7 +1,7 @@
 name=Temporal Isolation
 url=http://magiccards.info/ts/en/43.html
 image=http://magiccards.info/scans/en/ts/43.jpg
-value=2
+value=4.027
 rarity=C
 type=Enchantment
 subtype=Aura

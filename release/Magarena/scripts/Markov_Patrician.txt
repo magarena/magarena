@@ -1,7 +1,7 @@
 name=Markov Patrician
 url=http://magiccards.info/isd/en/107.html
 image=http://magiccards.info/scans/en/isd/107.jpg
-value=2
+value=3.170
 rarity=C
 type=Creature
 subtype=Vampire

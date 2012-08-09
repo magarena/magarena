@@ -1,7 +1,7 @@
 name=Fanning the Flames
 url=http://magiccards.info/sh/en/80.html
 image=http://magiccards.info/scans/en/sh/80.jpg
-value=3
+value=3.617
 removal=3
 rarity=U
 type=Sorcery

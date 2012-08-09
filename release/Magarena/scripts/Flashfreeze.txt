@@ -1,7 +1,7 @@
 name=Flashfreeze
 url=http://magiccards.info/m12/en/52.html
 image=http://magiccards.info/scans/en/m11/53.jpg
-value=3
+value=3.528
 rarity=U
 type=Instant
 cost={1}{U}

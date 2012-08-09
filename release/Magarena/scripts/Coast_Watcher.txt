@@ -1,7 +1,7 @@
 name=Coast Watcher
 url=http://magiccards.info/sc/en/30.html
 image=http://magiccards.info/scans/en/sc/30.jpg 
-value=2
+value=2.773
 ability=flying,protection from green
 rarity=C
 type=Creature

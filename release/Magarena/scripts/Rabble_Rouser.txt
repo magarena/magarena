@@ -1,7 +1,7 @@
 name=Rabble-Rouser
 url=http://magiccards.info/gp/en/73.html
 image=http://magiccards.info/scans/en/gp/73.jpg
-value=2
+value=2.214
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

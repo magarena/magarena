@@ -1,7 +1,7 @@
 name=Vigor
 url=http://magiccards.info/dpa/en/88.html
 image=http://magiccards.info/scans/en/lw/240.jpg
-value=5
+value=4.660
 rarity=R
 type=Creature
 subtype=Elemental,Incarnation

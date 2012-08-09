@@ -1,7 +1,7 @@
 name=Lightning Mauler
 url=http://magiccards.info/avr/en/144.html
 image=http://magiccards.info/scans/en/avr/144.jpg
-value=2
+value=3.786
 rarity=U
 type=Creature
 subtype=Human,Berserker

@@ -1,7 +1,7 @@
 name=Sky Ruin Drake
 url=http://magiccards.info/zen/en/66.html
 image=http://magiccards.info/scans/en/zen/66.jpg 
-value=3
+value=2.153
 ability=flying
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Mind Peel
 url=http://magiccards.info/sh/en/13.html
 image=http://magiccards.info/scans/en/sh/13.jpg
-value=2
+value=3.196
 rarity=U
 type=Sorcery
 cost={B}

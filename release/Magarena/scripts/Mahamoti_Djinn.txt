@@ -1,7 +1,7 @@
 name=Mahamoti Djinn
 url=http://magiccards.info/dpa/en/10.html
 image=http://magiccards.info/scans/en/dpa/10.jpg
-value=5
+value=3.357
 ability=flying
 rarity=R
 type=Creature

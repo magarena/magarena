@@ -1,7 +1,7 @@
 name=Telim'Tor
 url=http://magiccards.info/mr/en/197.html
 image=http://magiccards.info/scans/en/mr/197.jpg
-value=4
+value=3.148
 rarity=R
 type=Legendary,Creature
 subtype=Human,Knight

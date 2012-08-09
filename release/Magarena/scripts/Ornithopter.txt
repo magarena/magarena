@@ -1,7 +1,7 @@
 name=Ornithopter
 url=http://magiccards.info/m11/en/211.html
 image=http://magiccards.info/scans/en/m11/211.jpg
-value=2
+value=4.616
 ability=flying
 rarity=C
 type=Artifact,Creature

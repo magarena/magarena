@@ -1,7 +1,7 @@
 name=Spark Elemental
 url=http://magiccards.info/pd2/en/4.html
 image=http://magiccards.info/scans/en/10e/237.jpg
-value=2
+value=4.194
 rarity=C
 type=Creature
 subtype=Elemental

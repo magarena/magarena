@@ -1,7 +1,7 @@
 name=Chastise
 url=http://magiccards.info/9e/en/9.html
 image=http://magiccards.info/scans/en/9e/9.jpg
-value=4
+value=3.792
 removal=4
 rarity=U
 type=Instant

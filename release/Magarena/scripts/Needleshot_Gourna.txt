@@ -1,7 +1,7 @@
 name=Needleshot Gourna
 url=http://magiccards.info/le/en/133.html
 image=http://magiccards.info/scans/en/le/133.jpg 
-value=4
+value=1.844
 ability=reach
 rarity=C
 type=Creature

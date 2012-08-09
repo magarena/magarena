@@ -1,7 +1,7 @@
 name=Waning Wurm
 url=http://magiccards.info/pc/en/83.html
 image=http://magiccards.info/scans/en/pc/83.jpg
-value=5
+value=3.134
 rarity=U
 type=Creature
 subtype=Zombie,Wurm

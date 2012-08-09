@@ -1,7 +1,7 @@
 name=Death Wind
 url=http://magiccards.info/avr/en/93.html
 image=http://magiccards.info/scans/en/avr/93.jpg
-value=2
+value=3.016
 removal=2
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Lightning Dragon
 url=http://magiccards.info/us/en/202.html
 image=http://magiccards.info/scans/en/us/202.jpg
-value=4
+value=4.129
 rarity=R
 type=Creature
 subtype=Dragon

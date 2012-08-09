@@ -1,7 +1,7 @@
 name=Maelstrom Pulse
 url=http://magiccards.info/arb/en/92.html
 image=http://magiccards.info/scans/en/arb/92.jpg
-value=4
+value=4.761
 removal=5
 rarity=R
 type=Sorcery

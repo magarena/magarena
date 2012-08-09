@@ -1,7 +1,7 @@
 name=Thrun, the Last Troll
 url=http://magiccards.info/mbs/en/92.html
 image=http://magiccards.info/scans/en/mbs/92.jpg
-value=4
+value=4.494
 rarity=M
 type=Legendary,Creature
 subtype=Troll,Shaman

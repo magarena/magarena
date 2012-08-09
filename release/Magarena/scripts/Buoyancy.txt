@@ -1,7 +1,7 @@
 name=Buoyancy
 url=http://magiccards.info/mm/en/63.html
 image=http://magiccards.info/scans/en/mm/63.jpg
-value=1
+value=2.780
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Sentinels of Glen Elendra
 url=http://magiccards.info/lw/en/84.html
 image=http://magiccards.info/scans/en/lw/84.jpg
-value=3
+value=2.692
 ability=flash,flying
 rarity=C
 type=Creature

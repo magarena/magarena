@@ -1,7 +1,7 @@
 name=Zombie Outlander
 url=http://magiccards.info/cfx/en/133.html
 image=http://magiccards.info/scans/en/cfx/133.jpg
-value=2
+value=3.098
 ability=protection from green
 rarity=C
 type=Creature

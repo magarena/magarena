@@ -1,7 +1,7 @@
 name=Levitation
 url=http://magiccards.info/m12/en/61.html
 image=http://magiccards.info/scans/en/m10/60.jpg
-value=3
+value=3.906
 rarity=U
 type=Enchantment
 cost={2}{U}{U}

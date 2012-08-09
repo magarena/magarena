@@ -1,7 +1,7 @@
 name=Screeching Harpy
 url=http://magiccards.info/tp/en/49.html
 image=http://magiccards.info/scans/en/tp/49.jpg
-value=3
+value=2.692
 rarity=U
 type=Creature
 subtype=Harpy,Beast

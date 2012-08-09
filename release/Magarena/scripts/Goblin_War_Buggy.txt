@@ -1,7 +1,7 @@
 name=Goblin War Buggy
 url=http://magiccards.info/us/en/196.html
 image=http://magiccards.info/scans/en/us/196.jpg
-value=2
+value=3.719
 rarity=C
 type=Creature
 subtype=Goblin

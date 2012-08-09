@@ -1,7 +1,7 @@
 name=Homicidal Seclusion
 url=http://magiccards.info/avr/en/108.html
 image=http://magiccards.info/scans/en/avr/108.jpg
-value=3
+value=3.011
 rarity=U
 type=Enchantment
 cost={4}{B}

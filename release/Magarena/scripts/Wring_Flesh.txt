@@ -1,7 +1,7 @@
 name=Wring Flesh
 url=http://magiccards.info/m12/en/118.html
 image=http://magiccards.info/scans/en/m12/118.jpg
-value=2
+value=2.888
 removal=2
 rarity=C
 type=Instant

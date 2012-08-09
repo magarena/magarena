@@ -1,7 +1,7 @@
 name=Tattermunge Maniac
 url=http://magiccards.info/shm/en/219.html
 image=http://magiccards.info/scans/en/shm/219.jpg
-value=1
+value=4.202
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

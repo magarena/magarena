@@ -1,7 +1,7 @@
 name=Blighted Agent
 url=http://magiccards.info/nph/en/29.html
 image=http://magiccards.info/scans/en/nph/29.jpg
-value=3
+value=4.135
 rarity=C
 type=Creature
 subtype=Human,Rogue

@@ -1,7 +1,7 @@
 name=Armored Warhorse
 url=http://magiccards.info/m12/en/7.html
 image=http://magiccards.info/scans/en/m12/7.jpg 
-value=2
+value=3.059
 rarity=C
 type=Creature
 subtype=Horse

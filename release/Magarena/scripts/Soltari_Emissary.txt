@@ -1,7 +1,7 @@
 name=Soltari Emissary
 url=http://magiccards.info/tp/en/254.html
 image=http://magiccards.info/scans/en/tp/254.jpg
-value=3
+value=3.708
 rarity=R
 type=Creature
 subtype=Soltari,Soldier

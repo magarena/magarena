@@ -1,7 +1,7 @@
 name=Sigil Blessing
 url=http://magiccards.info/ddg/en/30.html
 image=http://magiccards.info/scans/en/ala/195.jpg
-value=3
+value=3.500
 rarity=C
 type=Instant
 cost={G}{W}

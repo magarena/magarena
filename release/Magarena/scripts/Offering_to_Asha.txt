@@ -1,7 +1,7 @@
 name=Offering to Asha
 url=http://magiccards.info/arb/en/9.html
 image=http://magiccards.info/scans/en/arb/9.jpg
-value=2
+value=3.182
 rarity=C
 type=Instant
 cost={2}{W}{U}

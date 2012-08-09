@@ -1,7 +1,7 @@
 name=Kite Shield
 url=http://magiccards.info/m12/en/210.html
 image=http://magiccards.info/scans/en/m12/210.jpg
-value=2
+value=1.010
 rarity=U
 type=Artifact
 subtype=Equipment

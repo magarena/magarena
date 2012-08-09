@@ -1,7 +1,7 @@
 name=Knight of Cliffhaven
 url=http://magiccards.info/roe/en/29.html
 image=http://magiccards.info/scans/en/roe/29.jpg
-value=2
+value=3.037
 rarity=C
 type=Creature
 subtype=Kor,Knight

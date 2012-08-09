@@ -1,7 +1,7 @@
 name=Fledgling Griffin
 url=http://magiccards.info/wwk/en/5.html
 image=http://magiccards.info/scans/en/wwk/5.jpg
-value=2
+value=2.735
 rarity=C
 type=Creature
 subtype=Griffin

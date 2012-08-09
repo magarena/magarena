@@ -1,7 +1,7 @@
 name=Malignus
 url=http://magiccards.info/avr/en/148.html
 image=http://magiccards.info/scans/en/avr/148.jpg
-value=5
+value=3.644
 rarity=M
 type=Creature
 subtype=Elemental,Spirit

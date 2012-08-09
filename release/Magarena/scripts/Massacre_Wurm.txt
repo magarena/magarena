@@ -1,7 +1,7 @@
 name=Massacre Wurm
 url=http://magiccards.info/mbs/en/46.html
 image=http://magiccards.info/scans/en/mbs/46.jpg
-value=5
+value=4.502
 removal=2
 rarity=M
 type=Creature

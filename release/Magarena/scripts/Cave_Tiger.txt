@@ -1,7 +1,7 @@
 name=Cave Tiger
 url=http://magiccards.info/us/en/241.html
 image=http://magiccards.info/scans/en/us/241.jpg
-value=2
+value=2.759
 rarity=C
 type=Creature
 subtype=Cat

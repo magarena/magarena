@@ -1,7 +1,7 @@
 name=Necrogen Scudder
 url=http://magiccards.info/som/en/71.html
 image=http://magiccards.info/scans/en/som/71.jpg
-value=2
+value=3.500
 rarity=U
 type=Creature
 subtype=Horror

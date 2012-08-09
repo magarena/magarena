@@ -1,7 +1,7 @@
 name=Gorgon Flail
 url=http://magiccards.info/m10/en/211.html
 image=http://magiccards.info/scans/en/m10/211.jpg
-value=3
+value=4.138
 rarity=U
 type=Artifact
 subtype=Equipment

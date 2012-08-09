@@ -1,7 +1,7 @@
 name=Court Archers
 url=http://magiccards.info/ala/en/126.html
 image=http://magiccards.info/scans/en/ala/126.jpg 
-value=2
+value=2.375
 ability=reach,exalted
 rarity=C
 type=Creature

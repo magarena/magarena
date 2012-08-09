@@ -1,7 +1,7 @@
 name=Smother
 url=http://magiccards.info/wwk/en/68.html
 image=http://magiccards.info/scans/en/wwk/68.jpg
-value=3
+value=4.357
 removal=2
 rarity=U
 type=Instant

@@ -1,7 +1,7 @@
 name=Balefire Liege
 url=http://magiccards.info/pch/en/97.html
 image=http://magiccards.info/scans/en/pch/97.jpg
-value=4
+value=4.638
 rarity=R
 type=Creature
 subtype=Spirit,Horror

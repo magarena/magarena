@@ -1,7 +1,7 @@
 name=Sift
 url=http://magiccards.info/10e/en/108.html
 image=http://magiccards.info/scans/en/10e/108.jpg
-value=3
+value=3.375
 rarity=C
 type=Sorcery
 cost={3}{U}

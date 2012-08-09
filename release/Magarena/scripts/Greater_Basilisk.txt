@@ -1,7 +1,7 @@
 name=Greater Basilisk
 url=http://magiccards.info/m12/en/179.html
 image=http://magiccards.info/scans/en/m11/180.jpg 
-value=4
+value=3.153
 ability=deathtouch
 rarity=C
 type=Creature

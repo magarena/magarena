@@ -1,7 +1,7 @@
 name=Harmonize
 url=http://magiccards.info/cmd/en/158.html
 image=http://magiccards.info/scans/en/evg/22.jpg
-value=4
+value=4.102
 rarity=U
 type=Sorcery
 cost={2}{G}{G}

@@ -1,7 +1,7 @@
 name=Bog Tatters
 url=http://magiccards.info/zen/en/84.html
 image=http://magiccards.info/scans/en/zen/84.jpg 
-value=3
+value=2.167
 ability=swampwalk
 rarity=C
 type=Creature

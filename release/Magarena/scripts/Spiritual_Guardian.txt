@@ -1,7 +1,7 @@
 name=Spiritual Guardian
 url=http://magiccards.info/po/en/189.html
 image=http://magiccards.info/scans/en/po/189.jpg
-value=3
+value=2.893
 rarity=R
 type=Creature
 subtype=Spirit

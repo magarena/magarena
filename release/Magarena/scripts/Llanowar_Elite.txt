@@ -1,7 +1,7 @@
 name=Llanowar Elite
 url=http://magiccards.info/in/en/196.html
 image=http://magiccards.info/scans/en/in/196.jpg
-value=1
+value=3.431
 rarity=C
 type=Creature
 subtype=Elf

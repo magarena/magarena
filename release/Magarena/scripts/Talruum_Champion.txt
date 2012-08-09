@@ -1,7 +1,7 @@
 name=Talruum Champion
 url=http://magiccards.info/vi/en/97.html
 image=http://magiccards.info/scans/en/vi/97.jpg
-value=4
+value=3.350
 rarity=C
 type=Creature
 subtype=Minotaur

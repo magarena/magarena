@@ -1,7 +1,7 @@
 name=Ronin Warclub
 url=http://magiccards.info/bok/en/158.html
 image=http://magiccards.info/scans/en/bok/158.jpg
-value=3
+value=3.079
 rarity=U
 type=Artifact
 subtype=Equipment

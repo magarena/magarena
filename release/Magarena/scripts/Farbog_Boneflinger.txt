@@ -1,7 +1,7 @@
 name=Farbog Boneflinger
 url=http://magiccards.info/dka/en/61.html
 image=http://magiccards.info/scans/en/dka/61.jpg
-value=2
+value=1.303
 rarity=U
 removal=2
 type=Creature

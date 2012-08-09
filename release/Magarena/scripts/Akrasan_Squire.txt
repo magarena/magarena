@@ -1,7 +1,7 @@
 name=Akrasan Squire
 url=http://magiccards.info/ala/en/1.html
 image=http://magiccards.info/scans/en/ala/1.jpg
-value=2
+value=4.133
 rarity=C
 type=Creature
 subtype=Human,Soldier

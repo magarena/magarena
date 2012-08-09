@@ -1,7 +1,7 @@
 name=Boneyard Wurm
 url=http://magiccards.info/isd/en/171.html
 image=http://magiccards.info/scans/en/isd/171.jpg
-value=2
+value=3.859
 rarity=U
 type=Creature
 subtype=Wurm

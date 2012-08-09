@@ -1,7 +1,7 @@
 name=Tormented Soul
 url=http://magiccards.info/m12/en/114.html
 image=http://magiccards.info/scans/en/m12/114.jpg
-value=2
+value=3.540
 rarity=C
 type=Creature
 subtype=Spirit

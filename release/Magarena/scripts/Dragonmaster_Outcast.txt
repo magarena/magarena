@@ -1,7 +1,7 @@
 name=Dragonmaster Outcast
 url=http://magiccards.info/wwk/en/81.html
 image=http://magiccards.info/scans/en/wwk/81.jpg
-value=2
+value=4.624
 rarity=M
 type=Creature
 subtype=Human,Shaman

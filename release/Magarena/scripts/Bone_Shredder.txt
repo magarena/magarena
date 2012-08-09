@@ -1,7 +1,7 @@
 name=Bone Shredder
 url=http://magiccards.info/pvc/en/5.html
 image=http://magiccards.info/scans/en/pvc/5.jpg
-value=2
+value=3.569
 removal=1
 rarity=U
 type=Creature

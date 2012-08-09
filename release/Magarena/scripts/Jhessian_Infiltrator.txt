@@ -1,7 +1,7 @@
 name=Jhessian Infiltrator
 url=http://magiccards.info/ala/en/174.html
 image=http://magiccards.info/scans/en/ala/174.jpg
-value=3
+value=4.235
 rarity=U
 type=Creature
 subtype=Human,Rogue

@@ -1,7 +1,7 @@
 name=Skyknight Legionnaire
 url=http://magiccards.info/rav/en/232.html
 image=http://magiccards.info/scans/en/rav/232.jpg
-value=3
+value=4.045
 ability=flying,haste
 rarity=C
 type=Creature

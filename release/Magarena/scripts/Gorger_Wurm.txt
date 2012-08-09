@@ -1,7 +1,7 @@
 name=Gorger Wurm
 url=http://magiccards.info/arb/en/56.html
 image=http://magiccards.info/scans/en/arb/56.jpg
-value=4
+value=3.164
 rarity=C
 type=Creature
 subtype=Wurm

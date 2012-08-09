@@ -1,7 +1,7 @@
 name=Subversion
 url=http://magiccards.info/ul/en/68.html
 image=http://magiccards.info/scans/en/ul/68.jpg
-value=3
+value=4.018
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

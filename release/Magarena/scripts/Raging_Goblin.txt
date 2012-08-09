@@ -1,7 +1,7 @@
 name=Raging Goblin
 url=http://magiccards.info/m10/en/153.html
 image=http://magiccards.info/scans/en/m10/153.jpg
-value=1
+value=3.977
 ability=haste
 rarity=C
 type=Creature

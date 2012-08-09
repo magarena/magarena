@@ -1,7 +1,7 @@
 name=Arcbound Reclaimer
 url=http://magiccards.info/ds/en/101.html
 image=http://magiccards.info/scans/en/ds/101.jpg
-value=3
+value=3.554
 rarity=R
 type=Artifact,Creature
 subtype=Golem

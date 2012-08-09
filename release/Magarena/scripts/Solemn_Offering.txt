@@ -1,7 +1,7 @@
 name=Solemn Offering
 url=http://magiccards.info/m11/en/32.html
 image=http://magiccards.info/scans/en/m11/32.jpg
-value=3
+value=2.972
 removal=1
 rarity=C
 type=Sorcery

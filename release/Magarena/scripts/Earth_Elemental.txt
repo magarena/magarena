@@ -1,7 +1,7 @@
 name=Earth Elemental
 url=http://magiccards.info/dpa/en/42.html
 image=http://magiccards.info/scans/en/dpa/42.jpg 
-value=4
+value=2.750
 rarity=U
 type=Creature
 subtype=Elemental

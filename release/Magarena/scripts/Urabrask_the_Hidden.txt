@@ -1,7 +1,7 @@
 name=Urabrask the Hidden
 url=http://magiccards.info/nph/en/98.html
 image=http://magiccards.info/scans/en/nph/98.jpg
-value=5
+value=4.454
 rarity=M
 type=Legendary,Creature
 subtype=Praetor

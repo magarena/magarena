@@ -1,7 +1,7 @@
 name=Rusted Sentinel
 url=http://magiccards.info/m12/en/215.html
 image=http://magiccards.info/scans/en/m12/215.jpg
-value=3
+value=1.780
 rarity=U
 type=Artifact,Creature
 subtype=Golem

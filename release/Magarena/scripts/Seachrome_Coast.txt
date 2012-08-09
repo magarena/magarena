@@ -1,7 +1,7 @@
 name=Seachrome Coast
 url=http://magiccards.info/som/en/229.html
 image=http://magiccards.info/scans/en/som/229.jpg
-value=4
+value=4.349
 rarity=R
 type=Land
 mana=w3u3

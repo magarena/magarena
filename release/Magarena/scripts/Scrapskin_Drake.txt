@@ -1,7 +1,7 @@
 name=Scrapskin Drake
 url=http://magiccards.info/avr/en/73.html
 image=http://magiccards.info/scans/en/avr/73.jpg 
-value=3
+value=2.380
 rarity=C
 type=Creature
 subtype=Zombie,Drake

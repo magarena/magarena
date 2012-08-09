@@ -1,7 +1,7 @@
 name=Spirit Link
 url=http://magiccards.info/10e/en/45.html
 image=http://magiccards.info/scans/en/10e/45.jpg
-value=1
+value=4.062
 rarity=U
 type=Enchantment
 subtype=Aura

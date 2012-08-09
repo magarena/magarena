@@ -1,7 +1,7 @@
 name=Lavaborn Muse
 url=http://magiccards.info/10e/en/216.html
 image=http://magiccards.info/scans/en/10e/216.jpg
-value=4
+value=4.154
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,7 +1,7 @@
 name=Ashenmoor Cohort
 url=http://magiccards.info/shm/en/56.html
 image=http://magiccards.info/scans/en/shm/56.jpg
-value=4
+value=1.096
 rarity=C
 type=Creature
 subtype=Elemental,Warrior

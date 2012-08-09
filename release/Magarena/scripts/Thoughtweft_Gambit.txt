@@ -1,7 +1,7 @@
 name=Thoughtweft Gambit
 url=http://magiccards.info/shm/en/154.html
 image=http://magiccards.info/scans/en/shm/154.jpg
-value=4
+value=3.172
 rarity=U
 type=Instant
 cost={4}{W/U}{W/U}

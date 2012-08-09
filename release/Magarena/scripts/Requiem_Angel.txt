@@ -1,7 +1,7 @@
 name=Requiem Angel
 url=http://magiccards.info/dka/en/18.html
 image=http://magiccards.info/scans/en/dka/18.jpg
-value=5
+value=3.500
 rarity=R
 type=Creature
 subtype=Angel

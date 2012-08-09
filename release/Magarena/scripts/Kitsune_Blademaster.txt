@@ -1,7 +1,7 @@
 name=Kitsune Blademaster
 url=http://magiccards.info/chk/en/25.html
 image=http://magiccards.info/scans/en/chk/25.jpg
-value=3
+value=3.761
 rarity=C
 type=Creature
 subtype=Fox,Samurai

@@ -1,7 +1,7 @@
 name=Ticking Gnomes
 url=http://magiccards.info/ul/en/136.html
 image=http://magiccards.info/scans/en/ul/136.jpg
-value=3
+value=2.600
 removal=1
 rarity=U
 type=Artifact,Creature

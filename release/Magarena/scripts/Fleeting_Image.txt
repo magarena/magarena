@@ -1,7 +1,7 @@
 name=Fleeting Image
 url=http://magiccards.info/9e/en/78.html
 image=http://magiccards.info/scans/en/9e/78.jpg
-value=2
+value=3.286
 rarity=R
 type=Creature
 subtype=Illusion

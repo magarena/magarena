@@ -1,7 +1,7 @@
 name=Urborg Drake
 url=http://magiccards.info/in/en/283.html
 image=http://magiccards.info/scans/en/in/283.jpg 
-value=2
+value=3.611
 ability=flying,attacks each turn if able
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Terminus
 url=http://magiccards.info/avr/en/38.html
 image=http://magiccards.info/scans/en/avr/38.jpg
-value=4
+value=4.145
 removal=2
 rarity=R
 type=Sorcery

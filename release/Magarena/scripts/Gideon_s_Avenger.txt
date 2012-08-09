@@ -1,7 +1,7 @@
 name=Gideon's Avenger
 url=http://magiccards.info/m12/en/17.html
 image=http://magiccards.info/scans/en/m12/17.jpg
-value=3
+value=3.935
 rarity=R
 type=Creature
 subtype=Human,Soldier

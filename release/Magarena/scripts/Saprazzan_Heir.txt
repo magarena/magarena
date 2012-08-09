@@ -1,7 +1,7 @@
 name=Saprazzan Heir
 url=http://magiccards.info/mm/en/99.html
 image=http://magiccards.info/scans/en/mm/99.jpg
-value=3
+value=3.603
 rarity=R
 type=Creature
 subtype=Merfolk

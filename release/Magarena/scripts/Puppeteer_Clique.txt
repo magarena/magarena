@@ -1,7 +1,7 @@
 name=Puppeteer Clique
 url=http://magiccards.info/shm/en/75.html
 image=http://magiccards.info/scans/en/shm/75.jpg
-value=4
+value=3.784
 rarity=R
 type=Creature
 subtype=Faerie,Wizard

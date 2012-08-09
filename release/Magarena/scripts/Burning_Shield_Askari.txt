@@ -1,7 +1,7 @@
 name=Burning Shield Askari
 url=http://magiccards.info/mr/en/162.html
 image=http://magiccards.info/scans/en/mr/162.jpg
-value=3
+value=3.500
 rarity=C
 type=Creature
 subtype=Human,Knight

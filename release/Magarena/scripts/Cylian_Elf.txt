@@ -1,7 +1,7 @@
 name=Cylian Elf
 url=http://magiccards.info/ala/en/127.html
 image=http://magiccards.info/scans/en/ala/127.jpg 
-value=1
+value=2.080
 rarity=C
 type=Creature
 subtype=Elf,Scout

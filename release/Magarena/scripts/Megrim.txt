@@ -1,7 +1,7 @@
 name=Megrim
 url=http://magiccards.info/dpa/en/26.html
 image=http://magiccards.info/scans/en/m10/104.jpg
-value=3
+value=3.982
 rarity=U
 type=Enchantment
 cost={2}{B}

@@ -1,7 +1,7 @@
 name=Lord of the Unreal
 url=http://magiccards.info/m12/en/62.html
 image=http://magiccards.info/scans/en/m12/62.jpg
-value=3
+value=4.068
 rarity=R
 type=Creature
 subtype=Human,Wizard

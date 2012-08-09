@@ -1,7 +1,7 @@
 name=Shield of the Righteous
 url=http://magiccards.info/arb/en/11.html
 image=http://magiccards.info/scans/en/arb/11.jpg
-value=3
+value=3.258
 rarity=U
 type=Artifact
 subtype=Equipment

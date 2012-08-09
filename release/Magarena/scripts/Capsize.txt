@@ -1,7 +1,7 @@
 name=Capsize
 url=http://magiccards.info/tp/en/55.html
 image=http://magiccards.info/scans/en/tp/55.jpg
-value=3
+value=4.531
 rarity=C
 type=Instant
 cost={1}{U}{U}

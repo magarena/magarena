@@ -1,7 +1,7 @@
 name=Mortify
 url=http://magiccards.info/cmd/en/211.html
 image=http://magiccards.info/scans/en/gp/122.jpg
-value=4
+value=4.060
 removal=5
 rarity=U
 type=Instant

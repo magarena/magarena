@@ -1,7 +1,7 @@
 name=Confiscate
 url=http://magiccards.info/9e/en/68.html
 image=http://magiccards.info/scans/en/9e/68.jpg
-value=3
+value=4.225
 rarity=U
 type=Enchantment
 subtype=Aura

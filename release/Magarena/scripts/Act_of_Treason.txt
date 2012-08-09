@@ -1,7 +1,7 @@
 name=Act of Treason
 url=http://magiccards.info/m12/en/121.html
 image=http://magiccards.info/scans/en/m12/121.jpg
-value=4
+value=3.724
 removal=5
 rarity=U
 type=Sorcery

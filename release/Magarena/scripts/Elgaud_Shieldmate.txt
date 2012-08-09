@@ -1,7 +1,7 @@
 name=Elgaud Shieldmate
 url=http://magiccards.info/avr/en/50.html
 image=http://magiccards.info/scans/en/avr/50.jpg 
-value=3
+value=3.918
 rarity=C
 type=Creature
 subtype=Human,Soldier

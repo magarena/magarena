@@ -1,7 +1,7 @@
 name=Benalish Lancer
 url=http://magiccards.info/in/en/7.html
 image=http://magiccards.info/scans/en/in/7.jpg
-value=2
+value=3.071
 rarity=C
 type=Creature
 subtype=Human,Knight

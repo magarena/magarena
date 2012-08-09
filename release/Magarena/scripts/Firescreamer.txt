@@ -1,7 +1,7 @@
 name=Firescreamer
 url=http://magiccards.info/in/en/106.html
 image=http://magiccards.info/scans/en/in/106.jpg
-value=3
+value=2.133
 rarity=C
 type=Creature
 subtype=Kavu

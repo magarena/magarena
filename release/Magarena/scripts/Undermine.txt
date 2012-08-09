@@ -1,7 +1,7 @@
 name=Undermine
 url=http://magiccards.info/ddh/en/62.html
 image=http://magiccards.info/scans/en/in/282.jpg
-value=3
+value=4.608
 rarity=R
 type=Instant
 cost={U}{U}{B}

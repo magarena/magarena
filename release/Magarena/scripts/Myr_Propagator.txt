@@ -1,7 +1,7 @@
 name=Myr Propagator
 url=http://magiccards.info/som/en/182.html
 image=http://magiccards.info/scans/en/som/182.jpg
-value=4
+value=3.507
 rarity=R
 type=Artifact,Creature
 subtype=Myr

@@ -1,7 +1,7 @@
 name=Shadowstorm
 url=http://magiccards.info/tp/en/202.html
 image=http://magiccards.info/scans/en/tp/202.jpg
-value=2
+value=2.019
 removal=1
 rarity=U
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Firemaw Kavu
 url=http://magiccards.info/ts/en/153.html
 image=http://magiccards.info/scans/en/ts/153.jpg
-value=4
+value=2.297
 removal=1
 rarity=U
 type=Creature

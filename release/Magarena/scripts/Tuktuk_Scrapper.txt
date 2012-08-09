@@ -1,7 +1,7 @@
 name=Tuktuk Scrapper
 url=http://magiccards.info/wwk/en/94.html
 image=http://magiccards.info/scans/en/wwk/94.jpg
-value=3
+value=4.018
 rarity=U
 type=Creature
 subtype=Goblin,Artificer,Ally

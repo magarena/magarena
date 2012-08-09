@@ -1,7 +1,7 @@
 name=Mordant Dragon
 url=http://magiccards.info/ddg/en/58.html
 image=http://magiccards.info/scans/en/wwk/85.jpg
-value=5
+value=3.779
 rarity=R
 type=Creature
 subtype=Dragon

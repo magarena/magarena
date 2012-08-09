@@ -1,7 +1,7 @@
 name=Woodland Druid
 url=http://magiccards.info/od/en/284.html
 image=http://magiccards.info/scans/en/od/284.jpg 
-value=1
+value=2.750
 rarity=C
 type=Creature
 subtype=Human,Druid

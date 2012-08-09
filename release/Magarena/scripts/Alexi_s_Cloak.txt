@@ -1,7 +1,7 @@
 name=Alexi's Cloak
 url=http://magiccards.info/pr/en/29.html
 image=http://magiccards.info/scans/en/pr/29.jpg
-value=2
+value=4.309
 rarity=C
 type=Enchantment
 subtype=Aura

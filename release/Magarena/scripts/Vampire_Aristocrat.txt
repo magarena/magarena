@@ -1,7 +1,7 @@
 name=Vampire Aristocrat
 url=http://magiccards.info/m10/en/117.html
 image=http://magiccards.info/scans/en/m10/117.jpg
-value=3
+value=3.514
 rarity=C
 type=Creature
 subtype=Vampire,Rogue

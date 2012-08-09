@@ -1,7 +1,7 @@
 name=Revered Dead
 url=http://magiccards.info/pc/en/29.html
 image=http://magiccards.info/scans/en/pc/29.jpg
-value=1
+value=3.171
 rarity=C
 type=Creature
 subtype=Spirit,Soldier

@@ -1,7 +1,7 @@
 name=Burst Lightning
 url=http://magiccards.info/zen/en/119.html
 image=http://magiccards.info/scans/en/zen/119.jpg
-value=2
+value=4.129
 removal=3
 rarity=C
 type=Instant

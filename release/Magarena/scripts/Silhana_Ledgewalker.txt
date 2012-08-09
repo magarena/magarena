@@ -1,7 +1,7 @@
 name=Silhana Ledgewalker
 url=http://magiccards.info/gp/en/94.html
 image=http://magiccards.info/scans/en/gp/94.jpg
-value=2
+value=4.200
 rarity=C
 type=Creature
 subtype=Elf,Rogue

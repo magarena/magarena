@@ -1,7 +1,7 @@
 name=Edric, Spymaster of Trest
 url=http://magiccards.info/cmd/en/196.html
 image=http://magiccards.info/scans/en/cmd/196.jpg
-value=3
+value=4.368
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Rogue

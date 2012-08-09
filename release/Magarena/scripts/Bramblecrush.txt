@@ -1,7 +1,7 @@
 name=Bramblecrush
 url=http://magiccards.info/isd/en/172.html
 image=http://magiccards.info/scans/en/isd/172.jpg
-value=3
+value=3.848
 removal=3
 rarity=U
 type=Sorcery

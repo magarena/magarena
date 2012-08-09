@@ -1,7 +1,7 @@
 name=Reanimate
 url=http://magiccards.info/arc/en/21.html
 image=http://magiccards.info/scans/en/arc/21.jpg
-value=3
+value=4.798
 rarity=U
 type=Sorcery
 cost={B}

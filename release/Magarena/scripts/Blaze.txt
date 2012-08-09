@@ -1,7 +1,7 @@
 name=Blaze
 url=http://magiccards.info/dpa/en/39.html
 image=http://magiccards.info/scans/en/pch/47.jpg
-value=4
+value=3.213
 removal=4
 rarity=U
 type=Sorcery

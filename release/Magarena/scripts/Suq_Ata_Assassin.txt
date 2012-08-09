@@ -1,7 +1,7 @@
 name=Suq'Ata Assassin
 url=http://magiccards.info/vi/en/19.html
 image=http://magiccards.info/scans/en/vi/19.jpg
-value=2
+value=3.081
 rarity=U
 type=Creature
 subtype=Human,Assassin

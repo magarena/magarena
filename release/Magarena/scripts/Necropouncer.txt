@@ -1,7 +1,7 @@
 name=Necropouncer
 url=http://magiccards.info/nph/en/147.html
 image=http://magiccards.info/scans/en/nph/147.jpg
-value=4
+value=2.642
 rarity=U
 type=Artifact
 subtype=Equipment

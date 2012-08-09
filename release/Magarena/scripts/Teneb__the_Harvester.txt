@@ -1,7 +1,7 @@
 name=Teneb, the Harvester
 url=http://magiccards.info/cmd/en/230.html
 image=http://magiccards.info/scans/en/pc/163.jpg
-value=5
+value=3.912
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

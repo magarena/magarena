@@ -1,7 +1,7 @@
 name=Auriok Sunchaser
 url=http://magiccards.info/som/en/4.html
 image=http://magiccards.info/scans/en/som/4.jpg
-value=1
+value=3.347
 rarity=C
 type=Creature
 subtype=Human,Soldier

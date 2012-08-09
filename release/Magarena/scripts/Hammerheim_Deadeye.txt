@@ -1,7 +1,7 @@
 name=Hammerheim Deadeye
 url=http://magiccards.info/pc/en/101.html
 image=http://magiccards.info/scans/en/pc/101.jpg
-value=3
+value=1.783
 removal=2
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Time Ebb
 url=http://magiccards.info/9e/en/107.html
 image=http://magiccards.info/scans/en/9e/107.jpg
-value=3
+value=3.809
 removal=3
 rarity=C
 type=Sorcery

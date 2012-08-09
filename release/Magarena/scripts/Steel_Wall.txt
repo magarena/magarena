@@ -1,7 +1,7 @@
 name=Steel Wall
 url=http://magiccards.info/ddf/en/41.html
 image=http://magiccards.info/scans/en/mi/248.jpg
-value=1
+value=4.092
 rarity=C
 type=Artifact,Creature
 subtype=Wall

@@ -1,7 +1,7 @@
 name=Tangle Spider
 url=http://magiccards.info/10e/en/303.html
 image=http://magiccards.info/scans/en/10e/303.jpg 
-value=3
+value=2.300
 ability=flash,reach
 rarity=C
 type=Creature

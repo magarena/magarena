@@ -1,7 +1,7 @@
 name=Remand
 url=http://magiccards.info/rav/en/63.html
 image=http://magiccards.info/scans/en/rav/63.jpg
-value=3
+value=4.350
 rarity=U
 type=Instant
 cost={1}{U}

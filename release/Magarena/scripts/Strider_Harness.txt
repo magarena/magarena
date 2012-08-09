@@ -1,7 +1,7 @@
 name=Strider Harness
 url=http://magiccards.info/som/en/207.html
 image=http://magiccards.info/scans/en/som/207.jpg
-value=3
+value=3.140
 rarity=C
 type=Artifact
 subtype=Equipment

@@ -1,7 +1,7 @@
 name=Demonic Taskmaster
 url=http://magiccards.info/avr/en/95.html
 image=http://magiccards.info/scans/en/avr/95.jpg
-value=4
+value=3.904
 rarity=U
 type=Creature
 subtype=Demon

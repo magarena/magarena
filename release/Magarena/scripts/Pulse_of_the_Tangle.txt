@@ -1,7 +1,7 @@
 name=Pulse of the Tangle
 url=http://magiccards.info/ds/en/80.html
 image=http://magiccards.info/scans/en/ds/80.jpg
-value=4
+value=4.343
 rarity=R
 type=Sorcery
 cost={1}{G}{G}

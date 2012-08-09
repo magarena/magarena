@@ -1,7 +1,7 @@
 name=Stitch Together
 url=http://magiccards.info/cmd/en/102.html
 image=http://magiccards.info/scans/en/cmd/102.jpg
-value=3
+value=4.276
 rarity=U
 type=Sorcery
 cost={B}{B}

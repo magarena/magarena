@@ -1,7 +1,7 @@
 name=Geralf's Mindcrusher
 url=http://magiccards.info/dka/en/37.html
 image=http://magiccards.info/scans/en/dka/37.jpg
-value=5
+value=3.603
 rarity=R
 type=Creature
 subtype=Zombie,Horror

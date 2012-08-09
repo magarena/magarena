@@ -1,7 +1,7 @@
 name=Hedron Rover
 url=http://magiccards.info/wwk/en/125.html
 image=http://magiccards.info/scans/en/wwk/125.jpg
-value=2
+value=2.347
 rarity=C
 type=Artifact,Creature
 subtype=Construct

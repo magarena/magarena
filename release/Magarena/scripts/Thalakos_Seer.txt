@@ -1,7 +1,7 @@
 name=Thalakos Seer
 url=http://magiccards.info/tp/en/94.html
 image=http://magiccards.info/scans/en/tp/94.jpg
-value=2
+value=3.825
 rarity=C
 type=Creature
 subtype=Thalakos,Wizard

@@ -1,7 +1,7 @@
 name=Hooded Kavu
 url=http://magiccards.info/in/en/147.html
 image=http://magiccards.info/scans/en/in/147.jpg
-value=2
+value=2.483
 rarity=C
 type=Creature
 subtype=Kavu

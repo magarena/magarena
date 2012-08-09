@@ -1,7 +1,7 @@
 name=Oracle of Nectars
 url=http://magiccards.info/shm/en/233.html
 image=http://magiccards.info/scans/en/shm/233.jpg
-value=2
+value=4.208
 rarity=R
 type=Creature
 subtype=Elf,Cleric

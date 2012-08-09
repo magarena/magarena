@@ -1,7 +1,7 @@
 name=Soul of the Harvest
 url=http://magiccards.info/avr/en/195.html
 image=http://magiccards.info/scans/en/avr/195.jpg
-value=5
+value=4.198
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,7 +1,7 @@
 name=King Cheetah
 url=http://magiccards.info/9e/en/250.html
 image=http://magiccards.info/scans/en/9e/250.jpg 
-value=3
+value=3.333
 ability=flash
 rarity=U
 type=Creature

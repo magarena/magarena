@@ -1,7 +1,7 @@
 name=Stromkirk Noble
 url=http://magiccards.info/isd/en/164.html
 image=http://magiccards.info/scans/en/isd/164.jpg
-value=2
+value=3.978
 rarity=R
 type=Creature
 subtype=Vampire

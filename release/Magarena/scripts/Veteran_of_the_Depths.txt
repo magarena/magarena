@@ -1,7 +1,7 @@
 name=Veteran of the Depths
 url=http://magiccards.info/lw/en/46.html
 image=http://magiccards.info/scans/en/lw/46.jpg
-value=3
+value=3.350
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

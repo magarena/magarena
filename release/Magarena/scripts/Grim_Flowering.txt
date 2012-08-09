@@ -1,7 +1,7 @@
 name=Grim Flowering
 url=http://magiccards.info/dka/en/117.html
 image=http://magiccards.info/scans/en/dka/117.jpg
-value=4
+value=3.057
 rarity=U
 type=Sorcery
 cost={5}{G}

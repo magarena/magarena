@@ -1,7 +1,7 @@
 name=Empyrial Archangel
 url=http://magiccards.info/ala/en/166.html
 image=http://magiccards.info/scans/en/ala/166.jpg
-value=5
+value=4.404
 rarity=M
 type=Creature
 subtype=Angel

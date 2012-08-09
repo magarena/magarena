@@ -1,7 +1,7 @@
 name=Caravan Hurda
 url=http://magiccards.info/zen/en/5.html
 image=http://magiccards.info/scans/en/zen/5.jpg 
-value=2
+value=1.178
 ability=lifelink
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Weatherseed Treefolk
 url=http://magiccards.info/ul/en/116.html
 image=http://magiccards.info/scans/en/ul/116.jpg
-value=4
+value=4.467
 rarity=R
 type=Creature
 subtype=Treefolk

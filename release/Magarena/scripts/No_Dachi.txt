@@ -1,7 +1,7 @@
 name=No-Dachi
 url=http://magiccards.info/chk/en/264.html
 image=http://magiccards.info/scans/en/chk/264.jpg
-value=3
+value=3.023
 rarity=U
 type=Artifact
 subtype=Equipment

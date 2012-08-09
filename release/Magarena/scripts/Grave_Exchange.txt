@@ -1,7 +1,7 @@
 name=Grave Exchange
 url=http://magiccards.info/avr/en/105.html
 image=http://magiccards.info/scans/en/avr/105.jpg
-value=4
+value=1.851
 rarity=C
 type=Sorcery
 cost={4}{B}{B}

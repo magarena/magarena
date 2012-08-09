@@ -1,7 +1,7 @@
 name=Soltari Priest
 url=http://magiccards.info/tp/en/258.html
 image=http://magiccards.info/scans/en/tp/258.jpg
-value=3
+value=4.344
 rarity=U
 type=Creature
 subtype=Soltari,Cleric

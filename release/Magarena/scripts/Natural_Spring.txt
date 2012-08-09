@@ -1,7 +1,7 @@
 name=Natural Spring
 url=http://magiccards.info/dpa/en/75.html
 image=http://magiccards.info/scans/en/10e/281.jpg
-value=3
+value=2.346
 rarity=C
 type=Sorcery
 cost={3}{G}{G}

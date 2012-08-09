@@ -1,7 +1,7 @@
 name=Divine Transformation
 url=http://magiccards.info/6e/en/17.html
 image=http://magiccards.info/scans/en/6e/17.jpg
-value=3
+value=2.854
 rarity=U
 type=Enchantment
 subtype=Aura

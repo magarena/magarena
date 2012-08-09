@@ -1,7 +1,7 @@
 name=Torii Watchward
 url=http://magiccards.info/sok/en/30.html
 image=http://magiccards.info/scans/en/sok/30.jpg
-value=3
+value=2.167
 rarity=C
 type=Creature
 subtype=Spirit

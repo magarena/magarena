@@ -1,7 +1,7 @@
 name=Cantivore
 url=http://magiccards.info/od/en/13.html
 image=http://magiccards.info/scans/en/od/13.jpg
-value=3
+value=2.717
 rarity=R
 type=Creature
 subtype=Lhurgoyf

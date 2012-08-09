@@ -1,7 +1,7 @@
 name=Warstorm Surge
 url=http://magiccards.info/m12/en/160.html
 image=http://magiccards.info/scans/en/m12/160.jpg
-value=5
+value=3.312
 rarity=R
 type=Enchantment
 cost={5}{R}

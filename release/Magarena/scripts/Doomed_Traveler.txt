@@ -1,7 +1,7 @@
 name=Doomed Traveler
 url=http://magiccards.info/isd/en/11.html
 image=http://magiccards.info/scans/en/isd/11.jpg
-value=1
+value=4.359
 rarity=C
 type=Creature
 subtype=Human,Soldier

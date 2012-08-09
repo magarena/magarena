@@ -1,7 +1,7 @@
 name=Jolrael's Centaur
 url=http://magiccards.info/mr/en/120.html
 image=http://magiccards.info/scans/en/mr/120.jpg
-value=3
+value=4.167
 rarity=C
 type=Creature
 subtype=Centaur,Archer

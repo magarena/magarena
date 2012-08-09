@@ -1,7 +1,7 @@
 name=Kami of Empty Graves
 url=http://magiccards.info/sok/en/75.html
 image=http://magiccards.info/scans/en/sok/75.jpg
-value=3
+value=1.304
 rarity=C
 type=Creature
 subtype=Spirit

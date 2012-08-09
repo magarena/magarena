@@ -1,7 +1,7 @@
 name=Spider Umbra
 url=http://magiccards.info/arc/en/70.html
 image=http://magiccards.info/scans/en/arc/70.jpg
-value=2
+value=3.750
 rarity=C
 type=Enchantment
 subtype=Aura

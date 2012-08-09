@@ -1,7 +1,7 @@
 name=Embersmith
 url=http://magiccards.info/som/en/87.html
 image=http://magiccards.info/scans/en/som/87.jpg
-value=2
+value=3.449
 rarity=U
 type=Creature
 subtype=Human,Artificer

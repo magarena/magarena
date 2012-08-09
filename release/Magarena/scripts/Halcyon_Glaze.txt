@@ -1,7 +1,7 @@
 name=Halcyon Glaze
 url=http://magiccards.info/rav/en/54.html
 image=http://magiccards.info/scans/en/rav/54.jpg
-value=4
+value=3.424
 rarity=U
 type=Enchantment
 cost={1}{U}{U}

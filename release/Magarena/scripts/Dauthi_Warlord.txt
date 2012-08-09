@@ -1,7 +1,7 @@
 name=Dauthi Warlord
 url=http://magiccards.info/ex/en/59.html
 image=http://magiccards.info/scans/en/ex/59.jpg
-value=3
+value=3.932
 rarity=U
 type=Creature
 subtype=Dauthi,Soldier

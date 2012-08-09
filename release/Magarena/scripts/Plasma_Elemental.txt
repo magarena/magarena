@@ -1,7 +1,7 @@
 name=Plasma Elemental
 url=http://magiccards.info/5dn/en/34.html
 image=http://magiccards.info/scans/en/5dn/34.jpg 
-value=4
+value=3.015
 ability=unblockable
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Skeletal Vampire
 url=http://magiccards.info/gvl/en/46.html
 image=http://magiccards.info/scans/en/gvl/46.jpg
-value=5
+value=3.828
 rarity=R
 type=Creature
 subtype=Vampire,Skeleton

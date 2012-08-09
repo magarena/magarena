@@ -1,7 +1,7 @@
 name=Ikiral Outrider
 url=http://magiccards.info/roe/en/27.html
 image=http://magiccards.info/scans/en/roe/27.jpg
-value=2
+value=2.689
 rarity=C
 type=Creature
 subtype=Human,Soldier

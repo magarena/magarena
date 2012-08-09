@@ -1,7 +1,7 @@
 name=Crater Hellion
 url=http://magiccards.info/us/en/179.html
 image=http://magiccards.info/scans/en/us/179.jpg
-value=5
+value=4.242
 rarity=R
 type=Creature
 subtype=Hellion,Beast

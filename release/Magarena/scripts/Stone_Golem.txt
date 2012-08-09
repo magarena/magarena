@@ -1,7 +1,7 @@
 name=Stone Golem
 url=http://magiccards.info/m11/en/215.html
 image=http://magiccards.info/scans/en/m11/215.jpg 
-value=4
+value=2.603
 rarity=U
 type=Artifact,Creature
 subtype=Golem

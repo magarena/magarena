@@ -1,7 +1,7 @@
 name=Druid's Call
 url=http://magiccards.info/od/en/239.html
 image=http://magiccards.info/scans/en/od/239.jpg
-value=2
+value=4.057
 rarity=U
 type=Enchantment
 subtype=Aura

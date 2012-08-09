@@ -1,7 +1,7 @@
 name=Bloodgift Demon
 url=http://magiccards.info/isd/en/89.html
 image=http://magiccards.info/scans/en/isd/89.jpg
-value=4
+value=4.337
 rarity=R
 type=Creature
 subtype=Demon

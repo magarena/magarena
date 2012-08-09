@@ -1,7 +1,7 @@
 name=Diregraf Ghoul
 url=http://magiccards.info/isd/en/97.html
 image=http://magiccards.info/scans/en/isd/97.jpg
-value=2
+value=3.984
 rarity=U
 type=Creature
 subtype=Zombie

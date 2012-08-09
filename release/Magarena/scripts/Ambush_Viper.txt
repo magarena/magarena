@@ -1,7 +1,7 @@
 name=Ambush Viper
 url=http://magiccards.info/isd/en/169.html
 image=http://magiccards.info/scans/en/isd/169.jpg
-value=3
+value=4.170
 removal=2
 rarity=C
 type=Creature

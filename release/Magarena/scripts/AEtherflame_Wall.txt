@@ -1,7 +1,7 @@
 name=AEtherflame Wall
 url=http://magiccards.info/ts/en/142.html
 image=http://magiccards.info/scans/en/ts/142.jpg
-value=3
+value=3.293
 rarity=C
 type=Creature
 subtype=Wall

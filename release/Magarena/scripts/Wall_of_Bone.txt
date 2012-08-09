@@ -1,7 +1,7 @@
 name=Wall of Bone
 url=http://magiccards.info/gvl/en/41.html
 image=http://magiccards.info/scans/en/gvl/41.jpg
-value=3
+value=3.755
 rarity=U
 type=Creature
 subtype=Skeleton,Wall

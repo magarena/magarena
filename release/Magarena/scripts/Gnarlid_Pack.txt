@@ -1,7 +1,7 @@
 name=Gnarlid Pack
 url=http://magiccards.info/wwk/en/101.html
 image=http://magiccards.info/scans/en/wwk/101.jpg
-value=2
+value=2.768
 rarity=C
 type=Creature
 subtype=Beast

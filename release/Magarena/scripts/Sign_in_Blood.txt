@@ -1,7 +1,7 @@
 name=Sign in Blood
 url=http://magiccards.info/cmd/en/101.html
 image=http://magiccards.info/scans/en/m11/117.jpg
-value=3
+value=3.893
 rarity=C
 type=Sorcery
 cost={B}{B}

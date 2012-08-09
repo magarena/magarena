@@ -1,7 +1,7 @@
 name=Carnassid
 url=http://magiccards.info/sh/en/53.html
 image=http://magiccards.info/scans/en/sh/53.jpg
-value=5
+value=3.226
 rarity=R
 type=Creature
 subtype=Beast

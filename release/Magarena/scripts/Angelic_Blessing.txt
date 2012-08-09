@@ -1,7 +1,7 @@
 name=Angelic Blessing
 url=http://magiccards.info/10e/en/3.html
 image=http://magiccards.info/scans/en/10e/3.jpg
-value=3
+value=2.810
 rarity=C
 type=Sorcery
 cost={2}{W}

@@ -1,7 +1,7 @@
 name=Hobgoblin Dragoon
 url=http://magiccards.info/eve/en/142.html
 image=http://magiccards.info/scans/en/eve/142.jpg 
-value=3
+value=2.255
 ability=flying,first strike
 rarity=C
 type=Creature

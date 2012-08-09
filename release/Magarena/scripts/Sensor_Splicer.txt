@@ -1,7 +1,7 @@
 name=Sensor Splicer
 url=http://magiccards.info/nph/en/22.html
 image=http://magiccards.info/scans/en/nph/22.jpg
-value=4
+value=2.615
 rarity=C
 type=Creature
 subtype=Artificer

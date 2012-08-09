@@ -1,7 +1,7 @@
 name=Lavacore Elemental
 url=http://magiccards.info/pc/en/103.html
 image=http://magiccards.info/scans/en/pc/103.jpg
-value=3
+value=2.808
 rarity=U
 type=Creature
 subtype=Elemental

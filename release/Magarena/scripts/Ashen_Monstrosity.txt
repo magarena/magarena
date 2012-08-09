@@ -1,7 +1,7 @@
 name=Ashen Monstrosity
 url=http://magiccards.info/bok/en/93.html
 image=http://magiccards.info/scans/en/bok/93.jpg 
-value=4
+value=2.786
 ability=haste,attacks each turn if able
 rarity=U
 type=Creature

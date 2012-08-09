@@ -1,7 +1,7 @@
 name=Fledgling Dragon
 url=http://magiccards.info/ju/en/90.html
 image=http://magiccards.info/scans/en/ju/90.jpg
-value=3
+value=4.011
 rarity=R
 type=Creature
 subtype=Dragon

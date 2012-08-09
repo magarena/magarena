@@ -1,7 +1,7 @@
 name=Drudge Reavers
 url=http://magiccards.info/ts/en/105.html
 image=http://magiccards.info/scans/en/ts/105.jpg
-value=3
+value=2.795
 rarity=C
 type=Creature
 subtype=Skeleton

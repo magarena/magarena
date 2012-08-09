@@ -1,7 +1,7 @@
 name=Corrupt Eunuchs
 url=http://magiccards.info/p3k/en/106.html
 image=http://magiccards.info/scans/en/p3k/106.jpg
-value=3
+value=3.045
 rarity=U
 type=Creature
 subtype=Human,Advisor

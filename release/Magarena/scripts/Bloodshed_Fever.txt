@@ -1,7 +1,7 @@
 name=Bloodshed Fever
 url=http://magiccards.info/shm/en/84.html
 image=http://magiccards.info/scans/en/shm/84.jpg
-value=1
+value=2.000
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Mark of Mutiny
 url=http://magiccards.info/zen/en/137.html
 image=http://magiccards.info/scans/en/zen/137.jpg
-value=4
+value=3.417
 removal=5
 rarity=U
 type=Sorcery

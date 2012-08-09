@@ -1,7 +1,7 @@
 name=Antagonism
 url=http://magiccards.info/us/en/173.html
 image=http://magiccards.info/scans/en/us/173.jpg
-value=3
+value=3.684
 rarity=R
 type=Enchantment
 cost={3}{R}

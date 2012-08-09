@@ -1,7 +1,7 @@
 name=Aven Cloudchaser
 url=http://magiccards.info/10e/en/7.html
 image=http://magiccards.info/scans/en/10e/7.jpg
-value=3
+value=3.024
 rarity=C
 type=Creature
 subtype=Bird,Soldier

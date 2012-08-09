@@ -1,7 +1,7 @@
 name=Reckless Brute
 url=http://magiccards.info/m13/en/144.html
 image=http://magiccards.info/scans/en/m13/144.jpg
-value=2
+value=2.735
 rarity=C
 type=Creature
 subtype=Ogre,Warrior

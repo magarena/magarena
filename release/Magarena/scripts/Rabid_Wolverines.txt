@@ -1,7 +1,7 @@
 name=Rabid Wolverines
 url=http://magiccards.info/ex/en/119.html
 image=http://magiccards.info/scans/en/ex/119.jpg
-value=4
+value=3.250
 rarity=C
 type=Creature
 subtype=Wolverine

@@ -1,7 +1,7 @@
 name=Clinging Mists
 url=http://magiccards.info/dka/en/109.html
 image=http://magiccards.info/scans/en/dka/109.jpg
-value=3
+value=2.566
 rarity=C
 type=Instant
 cost={2}{G}

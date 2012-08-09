@@ -1,7 +1,7 @@
 name=Guise of Fire
 url=http://magiccards.info/avr/en/137.html
 image=http://magiccards.info/scans/en/avr/137.jpg
-value=1
+value=1.411
 rarity=C
 type=Enchantment
 subtype=Aura

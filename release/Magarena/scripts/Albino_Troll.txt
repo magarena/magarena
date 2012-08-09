@@ -1,7 +1,7 @@
 name=Albino Troll
 url=http://magiccards.info/us/en/231.html
 image=http://magiccards.info/scans/en/us/231.jpg
-value=3
+value=3.881
 rarity=U
 type=Creature
 subtype=Troll

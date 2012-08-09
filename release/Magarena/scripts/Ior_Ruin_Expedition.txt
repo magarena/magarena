@@ -1,7 +1,7 @@
 name=Ior Ruin Expedition
 url=http://magiccards.info/zen/en/49.html
 image=http://magiccards.info/scans/en/zen/49.jpg
-value=3
+value=3.071
 rarity=C
 type=Enchantment
 cost={1}{U}

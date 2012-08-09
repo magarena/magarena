@@ -1,7 +1,7 @@
 name=Zhalfirin Commander
 url=http://magiccards.info/ddg/en/13.html
 image=http://magiccards.info/scans/en/ddg/13.jpg
-value=3
+value=3.700
 rarity=U
 type=Creature
 subtype=Human,Knight

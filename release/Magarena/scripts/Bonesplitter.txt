@@ -1,7 +1,7 @@
 name=Bonesplitter
 url=http://magiccards.info/mi/en/146.html
 image=http://magiccards.info/scans/en/mi/146.jpg
-value=3
+value=4.352
 rarity=C
 type=Artifact
 subtype=Equipment

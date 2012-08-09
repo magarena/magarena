@@ -1,7 +1,7 @@
 name=Kami of Lunacy
 url=http://magiccards.info/chk/en/119.html
 image=http://magiccards.info/scans/en/chk/119.jpg
-value=3
+value=1.667
 rarity=U
 type=Creature
 subtype=Spirit

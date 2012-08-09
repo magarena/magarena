@@ -1,7 +1,7 @@
 name=Omnibian
 url=http://magiccards.info/di/en/119.html
 image=http://magiccards.info/scans/en/di/119.jpg
-value=4
+value=4.146
 rarity=R
 type=Creature
 subtype=Frog

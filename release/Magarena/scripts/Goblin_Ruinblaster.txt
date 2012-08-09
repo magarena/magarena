@@ -1,7 +1,7 @@
 name=Goblin Ruinblaster
 url=http://magiccards.info/zen/en/127.html
 image=http://magiccards.info/scans/en/zen/127.jpg
-value=3
+value=3.975
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

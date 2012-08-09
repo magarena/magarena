@@ -1,7 +1,7 @@
 name=Razorjaw Oni
 url=http://magiccards.info/cmd/en/94.html
 image=http://magiccards.info/scans/en/sok/87.jpg
-value=4
+value=2.393
 rarity=U
 type=Creature
 subtype=Demon,Spirit

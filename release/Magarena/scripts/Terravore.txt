@@ -1,7 +1,7 @@
 name=Terravore
 url=http://magiccards.info/od/en/278.html
 image=http://magiccards.info/scans/en/od/278.jpg
-value=3
+value=4.286
 rarity=R
 type=Creature
 subtype=Lhurgoyf

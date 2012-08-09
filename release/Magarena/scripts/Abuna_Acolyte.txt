@@ -1,7 +1,7 @@
 name=Abuna Acolyte
 url=http://magiccards.info/som/en/1.html
 image=http://magiccards.info/scans/en/som/1.jpg
-value=2
+value=2.714
 rarity=U
 type=Creature
 subtype=Cat,Cleric

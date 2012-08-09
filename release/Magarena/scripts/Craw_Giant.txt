@@ -1,7 +1,7 @@
 name=Craw Giant
 url=http://magiccards.info/tsts/en/76.html
 image=http://magiccards.info/scans/en/tsts/76.jpg
-value=5
+value=3.541
 rarity=U
 type=Creature
 subtype=Giant

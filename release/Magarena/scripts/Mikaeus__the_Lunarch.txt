@@ -1,7 +1,7 @@
 name=Mikaeus, the Lunarch
 url=http://magiccards.info/isd/en/23.html
 image=http://magiccards.info/scans/en/isd/23.jpg
-value=5
+value=3.959
 rarity=M
 type=Legendary,Creature
 subtype=Human,Cleric

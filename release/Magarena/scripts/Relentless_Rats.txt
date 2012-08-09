@@ -1,7 +1,7 @@
 name=Relentless Rats
 url=http://magiccards.info/m11/en/113.html
 image=http://magiccards.info/scans/en/m11/113.jpg
-value=2
+value=4.005
 rarity=U
 type=Creature
 subtype=Rat

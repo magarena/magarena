@@ -1,7 +1,7 @@
 name=Absorb
 url=http://magiccards.info/in/en/226.html
 image=http://magiccards.info/scans/en/in/226.jpg
-value=3
+value=4.104
 rarity=R
 type=Instant
 cost={W}{U}{U}

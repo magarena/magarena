@@ -1,7 +1,7 @@
 name=Esper Cormorants
 url=http://magiccards.info/cfx/en/105.html
 image=http://magiccards.info/scans/en/cfx/105.jpg 
-value=3
+value=2.438
 ability=flying
 rarity=C
 type=Artifact,Creature

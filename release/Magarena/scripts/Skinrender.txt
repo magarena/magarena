@@ -1,7 +1,7 @@
 name=Skinrender
 url=http://magiccards.info/som/en/78.html
 image=http://magiccards.info/scans/en/som/78.jpg
-value=4
+value=4.500
 rarity=U
 removal=3
 type=Creature

@@ -1,7 +1,7 @@
 name=Vault of the Archangel
 url=http://magiccards.info/dka/en/158.html
 image=http://magiccards.info/scans/en/dka/158.jpg
-value=4
+value=4.461
 rarity=R
 type=Land
 ability=tap add mana {1}

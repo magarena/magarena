@@ -1,7 +1,7 @@
 name=Wretched Banquet
 url=http://magiccards.info/cfx/en/56.html
 image=http://magiccards.info/scans/en/cfx/56.jpg
-value=3
+value=3.086
 removal=4
 rarity=C
 type=Sorcery

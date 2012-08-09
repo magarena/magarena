@@ -1,7 +1,7 @@
 name=Galepowder Mage
 url=http://magiccards.info/lw/en/15.html
 image=http://magiccards.info/scans/en/lw/15.jpg
-value=4
+value=3.700
 rarity=R
 type=Creature
 subtype=Kithkin,Wizard

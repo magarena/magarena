@@ -1,7 +1,7 @@
 name=Boggart Shenanigans
 url=http://magiccards.info/lw/en/155.html
 image=http://magiccards.info/scans/en/lw/155.jpg
-value=3
+value=3.705
 rarity=U
 type=Tribal,Enchantment
 subtype=Goblin

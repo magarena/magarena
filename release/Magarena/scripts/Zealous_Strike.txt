@@ -1,7 +1,7 @@
 name=Zealous Strike
 url=http://magiccards.info/avr/en/41.html
 image=http://magiccards.info/scans/en/avr/41.jpg
-value=2
+value=2.917
 rarity=C
 type=Instant
 cost={1}{W}

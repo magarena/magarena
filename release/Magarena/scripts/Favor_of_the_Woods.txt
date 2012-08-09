@@ -1,7 +1,7 @@
 name=Favor of the Woods
 url=http://magiccards.info/dka/en/113.html
 image=http://magiccards.info/scans/en/dka/113.jpg
-value=2
+value=0.962
 rarity=C
 type=Enchantment
 subtype=Aura

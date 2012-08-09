@@ -1,7 +1,7 @@
 name=Endless Wurm
 url=http://magiccards.info/us/en/249.html
 image=http://magiccards.info/scans/en/us/249.jpg
-value=4
+value=4.190
 rarity=R
 type=Creature
 subtype=Wurm

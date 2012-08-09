@@ -1,7 +1,7 @@
 name=Reprisal
 url=http://magiccards.info/ddg/en/27.html
 image=http://magiccards.info/scans/en/ddg/27.jpg
-value=3
+value=4.330
 removal=3
 rarity=C
 type=Instant

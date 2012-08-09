@@ -1,7 +1,7 @@
 name=Stromkirk Captain
 url=http://magiccards.info/dka/en/143.html
 image=http://magiccards.info/scans/en/dka/143.jpg
-value=3
+value=4.020
 rarity=U
 type=Creature
 subtype=Vampire,Soldier

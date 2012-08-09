@@ -1,7 +1,7 @@
 name=Balduvian Barbarians
 url=http://magiccards.info/9e/en/174.html
 image=http://magiccards.info/scans/en/9e/174.jpg 
-value=3
+value=2.536
 rarity=C
 type=Creature
 subtype=Human,Barbarian

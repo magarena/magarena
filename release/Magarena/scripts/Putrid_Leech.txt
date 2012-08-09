@@ -1,7 +1,7 @@
 name=Putrid Leech
 url=http://magiccards.info/arb/en/95.html
 image=http://magiccards.info/scans/en/arb/95.jpg
-value=3
+value=4.421
 rarity=C
 type=Creature
 subtype=Zombie,Leech

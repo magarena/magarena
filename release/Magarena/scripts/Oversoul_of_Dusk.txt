@@ -1,7 +1,7 @@
 name=Oversoul of Dusk
 url=http://magiccards.info/shm/en/234.html
 image=http://magiccards.info/scans/en/shm/234.jpg
-value=5
+value=4.441
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

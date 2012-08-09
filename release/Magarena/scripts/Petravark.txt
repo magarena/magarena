@@ -1,7 +1,7 @@
 name=Petravark
 url=http://magiccards.info/tr/en/109.html
 image=http://magiccards.info/scans/en/tr/109.jpg
-value=2
+value=2.833
 removal=2
 rarity=C
 type=Creature

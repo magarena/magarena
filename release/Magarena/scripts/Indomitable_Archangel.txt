@@ -1,7 +1,7 @@
 name=Indomitable Archangel
 url=http://magiccards.info/som/en/11.html
 image=http://magiccards.info/scans/en/som/11.jpg
-value=5
+value=4.238
 rarity=M
 type=Creature
 subtype=Angel

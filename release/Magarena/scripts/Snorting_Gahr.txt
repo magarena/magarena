@@ -1,7 +1,7 @@
 name=Snorting Gahr
 url=http://magiccards.info/mm/en/272.html
 image=http://magiccards.info/scans/en/mm/272.jpg
-value=3
+value=3.184
 rarity=C
 type=Creature
 subtype=Rhino,Beast

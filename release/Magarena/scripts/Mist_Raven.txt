@@ -1,7 +1,7 @@
 name=Mist Raven
 url=http://magiccards.info/avr/en/67.html
 image=http://magiccards.info/scans/en/avr/67.jpg
-value=3
+value=3.771
 removal=2
 rarity=C
 type=Creature

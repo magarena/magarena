@@ -1,7 +1,7 @@
 name=Entreat the Angels
 url=http://magiccards.info/avr/en/20.html
 image=http://magiccards.info/scans/en/avr/20.jpg
-value=4
+value=4.253
 rarity=M
 type=Sorcery
 cost={X}{X}{W}{W}{W}

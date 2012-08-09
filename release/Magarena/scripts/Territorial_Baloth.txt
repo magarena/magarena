@@ -1,7 +1,7 @@
 name=Territorial Baloth
 url=http://magiccards.info/zen/en/188.html
 image=http://magiccards.info/scans/en/zen/188.jpg
-value=4
+value=2.910
 rarity=C
 type=Creature
 subtype=Beast

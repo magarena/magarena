@@ -1,7 +1,7 @@
 name=Aggressive Urge
 url=http://magiccards.info/10e/en/250.html
 image=http://magiccards.info/scans/en/10e/250.jpg
-value=2
+value=3.062
 rarity=C
 type=Instant
 cost={1}{G}

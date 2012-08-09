@@ -1,7 +1,7 @@
 name=Sleep
 url=http://magiccards.info/m11/en/73.html
 image=http://magiccards.info/scans/en/m11/73.jpg
-value=4
+value=3.958
 removal=1
 rarity=U
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Ghostway
 url=http://magiccards.info/gp/en/6.html
 image=http://magiccards.info/scans/en/gp/6.jpg
-value=3
+value=4.206
 rarity=R
 type=Instant
 cost={2}{W}

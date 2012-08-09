@@ -1,7 +1,7 @@
 name=Malach of the Dawn
 url=http://magiccards.info/pc/en/24.html
 image=http://magiccards.info/scans/en/pc/24.jpg
-value=3
+value=3.100
 rarity=U
 type=Creature
 subtype=Angel

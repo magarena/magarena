@@ -1,7 +1,7 @@
 name=Molimo, Maro-Sorcerer
 url=http://magiccards.info/dpa/en/74.html
 image=http://magiccards.info/scans/en/10e/280.jpg
-value=5
+value=4.029
 rarity=R
 type=Legendary,Creature
 subtype=Elemental

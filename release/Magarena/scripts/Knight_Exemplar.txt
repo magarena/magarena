@@ -1,7 +1,7 @@
 name=Knight Exemplar
 url=http://magiccards.info/ddg/en/14.html
 image=http://magiccards.info/scans/en/m11/20.jpg
-value=4
+value=4.366
 rarity=R
 type=Creature
 subtype=Human,Knight

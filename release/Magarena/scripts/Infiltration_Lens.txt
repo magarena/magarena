@@ -1,7 +1,7 @@
 name=Infiltration Lens
 url=http://magiccards.info/som/en/167.html
 image=http://magiccards.info/scans/en/som/167.jpg
-value=3
+value=4.403
 rarity=U
 type=Artifact
 subtype=Equipment

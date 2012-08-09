@@ -1,7 +1,7 @@
 name=Snapsail Glider
 url=http://magiccards.info/som/en/203.html
 image=http://magiccards.info/scans/en/som/203.jpg
-value=2
+value=2.515
 rarity=C
 type=Artifact,Creature
 subtype=Construct

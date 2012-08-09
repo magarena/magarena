@@ -1,7 +1,7 @@
 name=Phyrexian Walker
 url=http://magiccards.info/vi/en/152.html
 image=http://magiccards.info/scans/en/vi/152.jpg
-value=1
+value=4.426
 rarity=C
 type=Artifact,Creature
 subtype=Construct

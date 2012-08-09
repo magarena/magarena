@@ -1,7 +1,7 @@
 name=Blunt the Assault
 url=http://magiccards.info/som/en/113.html
 image=http://magiccards.info/scans/en/som/113.jpg
-value=3
+value=2.868
 rarity=C
 type=Instant
 cost={3}{G}

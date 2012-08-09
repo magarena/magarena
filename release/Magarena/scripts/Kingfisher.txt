@@ -1,7 +1,7 @@
 name=Kingfisher
 url=http://magiccards.info/ud/en/36.html
 image=http://magiccards.info/scans/en/ud/36.jpg
-value=2
+value=3.100
 rarity=C
 type=Creature
 subtype=Bird

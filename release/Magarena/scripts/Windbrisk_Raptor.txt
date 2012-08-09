@@ -1,7 +1,7 @@
 name=Windbrisk Raptor
 url=http://magiccards.info/shm/en/26.html
 image=http://magiccards.info/scans/en/shm/26.jpg
-value=5
+value=3.914
 rarity=R
 type=Creature
 subtype=Bird

@@ -1,7 +1,7 @@
 name=Ashenmoor Gouger
 url=http://magiccards.info/shm/en/180.html
 image=http://magiccards.info/scans/en/shm/180.jpg
-value=3
+value=4.250
 rarity=U
 type=Creature
 subtype=Elemental,Warrior

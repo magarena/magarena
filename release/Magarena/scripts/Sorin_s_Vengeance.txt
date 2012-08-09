@@ -1,7 +1,7 @@
 name=Sorin's Vengeance
 url=http://magiccards.info/m12/en/111.html
 image=http://magiccards.info/scans/en/m12/111.jpg
-value=4
+value=4.047
 rarity=R
 type=Sorcery
 cost={4}{B}{B}{B}

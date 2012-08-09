@@ -1,7 +1,7 @@
 name=Timely Reinforcements
 url=http://magiccards.info/m12/en/40.html
 image=http://magiccards.info/scans/en/m12/40.jpg
-value=3
+value=4.144
 rarity=U
 type=Sorcery
 cost={2}{W}

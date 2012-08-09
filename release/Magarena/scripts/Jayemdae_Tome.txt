@@ -1,7 +1,7 @@
 name=Jayemdae Tome
 url=http://magiccards.info/10e/en/327.html
 image=http://magiccards.info/scans/en/10e/327.jpg
-value=4
+value=2.867
 rarity=R
 type=Artifact
 cost={4}

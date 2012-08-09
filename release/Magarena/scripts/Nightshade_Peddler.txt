@@ -1,7 +1,7 @@
 name=Nightshade Peddler
 url=http://magiccards.info/avr/en/187.html
 image=http://magiccards.info/scans/en/avr/187.jpg
-value=2
+value=3.681
 rarity=C
 type=Creature
 subtype=Human,Druid

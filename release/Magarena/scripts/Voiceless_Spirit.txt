@@ -1,7 +1,7 @@
 name=Voiceless Spirit
 url=http://magiccards.info/isd/en/42.html
 image=http://magiccards.info/scans/en/isd/42.jpg
-value=2
+value=3.305
 rarity=C
 type=Creature
 subtype=Spirit

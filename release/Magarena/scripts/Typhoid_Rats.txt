@@ -1,7 +1,7 @@
 name=Typhoid Rats
 url=http://magiccards.info/isd/en/120.html
 image=http://magiccards.info/scans/en/isd/120.jpg
-value=1
+value=3.935
 rarity=C
 type=Creature
 subtype=Rat

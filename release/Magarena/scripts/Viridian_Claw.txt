@@ -1,7 +1,7 @@
 name=Viridian Claw
 url=http://magiccards.info/mbs/en/143.html
 image=http://magiccards.info/scans/en/mbs/143.jpg
-value=3
+value=3.784
 rarity=U
 type=Artifact
 subtype=Equipment

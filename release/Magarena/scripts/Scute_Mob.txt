@@ -1,7 +1,7 @@
 name=Scute Mob
 url=http://magiccards.info/zen/en/182.html
 image=http://magiccards.info/scans/en/zen/182.jpg
-value=2
+value=4.325
 rarity=R
 type=Creature
 subtype=Insect

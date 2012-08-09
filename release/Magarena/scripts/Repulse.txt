@@ -1,7 +1,7 @@
 name=Repulse
 url=http://magiccards.info/cmd/en/58.html
 image=http://magiccards.info/scans/en/jvc/25.jpg
-value=3
+value=3.712
 removal=2
 rarity=C
 type=Instant

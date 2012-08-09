@@ -1,7 +1,7 @@
 name=Kami of the Palace Fields
 url=http://magiccards.info/chk/en/24.html
 image=http://magiccards.info/scans/en/chk/24.jpg
-value=3
+value=1.667
 rarity=U
 type=Creature
 subtype=Spirit

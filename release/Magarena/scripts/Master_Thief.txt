@@ -1,7 +1,7 @@
 name=Master Thief
 url=http://magiccards.info/m12/en/64.html
 image=http://magiccards.info/scans/en/m12/64.jpg
-value=3
+value=3.750
 rarity=U
 type=Creature
 subtype=Human,Rogue

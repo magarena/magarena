@@ -1,7 +1,7 @@
 name=Sacred Wolf
 url=http://magiccards.info/m12/en/194.html
 image=http://magiccards.info/scans/en/m11/196.jpg 
-value=2
+value=3.570
 rarity=C
 type=Creature
 subtype=Wolf

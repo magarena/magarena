@@ -1,7 +1,7 @@
 name=Order of Yawgmoth
 url=http://magiccards.info/pvc/en/11.html
 image=http://magiccards.info/scans/en/pvc/11.jpg
-value=2
+value=4.133
 rarity=U
 type=Creature
 subtype=Zombie,Knight

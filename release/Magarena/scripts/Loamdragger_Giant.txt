@@ -1,7 +1,7 @@
 name=Loamdragger Giant
 url=http://magiccards.info/shm/en/210.html
 image=http://magiccards.info/scans/en/shm/210.jpg 
-value=4
+value=2.382
 rarity=C
 type=Creature
 subtype=Giant,Warrior

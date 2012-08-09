@@ -1,7 +1,7 @@
 name=Youthful Knight
 url=http://magiccards.info/10e/en/62.html
 image=http://magiccards.info/scans/en/10e/62.jpg 
-value=2
+value=3.783
 ability=first strike
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Lurking Nightstalker
 url=http://magiccards.info/po2/en/17.html
 image=http://magiccards.info/scans/en/po2/17.jpg
-value=2
+value=3.460
 rarity=C
 type=Creature
 subtype=Nightstalker

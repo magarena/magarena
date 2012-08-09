@@ -1,7 +1,7 @@
 name=Trained Armodon
 url=http://magiccards.info/dpa/en/85.html
 image=http://magiccards.info/scans/en/dpa/85.jpg 
-value=3
+value=2.949
 rarity=C
 type=Creature
 subtype=Elephant

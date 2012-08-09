@@ -1,7 +1,7 @@
 name=Rusting Golem
 url=http://magiccards.info/ne/en/138.html
 image=http://magiccards.info/scans/en/ne/138.jpg
-value=3
+value=2.609
 rarity=U
 type=Artifact,Creature
 subtype=Golem

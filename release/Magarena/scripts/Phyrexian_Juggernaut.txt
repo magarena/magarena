@@ -1,7 +1,7 @@
 name=Phyrexian Juggernaut
 url=http://magiccards.info/mbs/en/121.html
 image=http://magiccards.info/scans/en/mbs/121.jpg
-value=4
+value=3.705
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

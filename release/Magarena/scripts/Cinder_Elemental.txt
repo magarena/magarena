@@ -1,7 +1,7 @@
 name=Cinder Elemental
 url=http://magiccards.info/pch/en/51.html
 image=http://magiccards.info/scans/en/pch/51.jpg
-value=3
+value=3.588
 rarity=U
 type=Creature
 subtype=Elemental

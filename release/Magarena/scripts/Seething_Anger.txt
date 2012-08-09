@@ -1,7 +1,7 @@
 name=Seething Anger
 url=http://magiccards.info/sh/en/96.html
 image=http://magiccards.info/scans/en/sh/96.jpg
-value=1
+value=2.743
 rarity=C
 type=Sorcery
 cost={R}

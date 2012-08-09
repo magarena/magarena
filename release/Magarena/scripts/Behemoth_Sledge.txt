@@ -1,7 +1,7 @@
 name=Behemoth Sledge
 url=http://magiccards.info/ddh/en/28.html
 image=http://magiccards.info/scans/en/arb/65.jpg
-value=5
+value=3.891
 rarity=U
 type=Artifact
 subtype=Equipment

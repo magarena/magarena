@@ -1,7 +1,7 @@
 name=Canyon Minotaur
 url=http://magiccards.info/m11/en/126.html
 image=http://magiccards.info/scans/en/m11/126.jpg 
-value=3
+value=1.613
 rarity=C
 type=Creature
 subtype=Minotaur,Warrior

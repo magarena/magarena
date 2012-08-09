@@ -1,7 +1,7 @@
 name=Moroii
 url=http://magiccards.info/ddh/en/51.html
 image=http://magiccards.info/scans/en/rav/216.jpg
-value=4
+value=3.432
 rarity=U
 type=Creature
 subtype=Vampire

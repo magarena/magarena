@@ -1,7 +1,7 @@
 name=Moonsilver Spear
 url=http://magiccards.info/avr/en/217.html
 image=http://magiccards.info/scans/en/avr/217.jpg
-value=4
+value=3.793
 rarity=R
 type=Artifact
 subtype=Equipment

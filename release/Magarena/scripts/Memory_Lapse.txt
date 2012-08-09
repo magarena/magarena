@@ -1,7 +1,7 @@
 name=Memory Lapse
 url=http://magiccards.info/7e/en/88.html
 image=http://magiccards.info/scans/en/7e/88.jpg
-value=3
+value=4.196
 rarity=C
 type=Instant
 cost={1}{U}

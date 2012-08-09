@@ -1,7 +1,7 @@
 name=Thieving Magpie
 url=http://magiccards.info/dpa/en/16.html
 image=http://magiccards.info/scans/en/10e/115.jpg
-value=2
+value=4.394
 rarity=U
 type=Creature
 subtype=Bird

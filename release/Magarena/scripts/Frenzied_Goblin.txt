@@ -1,7 +1,7 @@
 name=Frenzied Goblin
 url=http://magiccards.info/rav/en/125.html
 image=http://magiccards.info/scans/en/rav/125.jpg
-value=2
+value=3.904
 rarity=U
 type=Creature
 subtype=Goblin,Berserker

@@ -1,7 +1,7 @@
 name=Thatcher Revolt
 url=http://magiccards.info/avr/en/158.html
 image=http://magiccards.info/scans/en/avr/158.jpg
-value=3
+value=3.797
 rarity=C
 type=Sorcery
 cost={2}{R}

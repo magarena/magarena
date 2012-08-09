@@ -1,7 +1,7 @@
 name=Vicious Kavu
 url=http://magiccards.info/in/en/284.html
 image=http://magiccards.info/scans/en/in/284.jpg
-value=2
+value=3.365
 rarity=U
 type=Creature
 subtype=Kavu

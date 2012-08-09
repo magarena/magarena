@@ -1,7 +1,7 @@
 name=Cancel
 url=http://magiccards.info/m12/en/47.html
 image=http://magiccards.info/scans/en/m12/47.jpg
-value=3
+value=2.737
 rarity=C
 type=Instant
 cost={1}{U}{U}

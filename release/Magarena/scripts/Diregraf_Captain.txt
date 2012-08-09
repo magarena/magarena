@@ -1,7 +1,7 @@
 name=Diregraf Captain
 url=http://magiccards.info/dka/en/135.html
 image=http://magiccards.info/scans/en/dka/135.jpg
-value=3
+value=4.045
 rarity=U
 type=Creature
 subtype=Zombie,Soldier

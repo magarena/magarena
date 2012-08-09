@@ -1,7 +1,7 @@
 name=Defender en-Vec
 url=http://magiccards.info/ne/en/5.html
 image=http://magiccards.info/scans/en/ne/5.jpg
-value=3
+value=2.625
 rarity=C
 type=Creature
 subtype=Human,Cleric

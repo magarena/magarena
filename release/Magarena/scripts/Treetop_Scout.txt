@@ -1,7 +1,7 @@
 name=Treetop Scout
 url=http://magiccards.info/sc/en/130.html
 image=http://magiccards.info/scans/en/sc/130.jpg 
-value=1
+value=3.903
 ability=can't be blocked except by creatures with flying
 rarity=C
 type=Creature

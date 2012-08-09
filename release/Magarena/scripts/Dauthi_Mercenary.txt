@@ -1,7 +1,7 @@
 name=Dauthi Mercenary
 url=http://magiccards.info/tp/en/18.html
 image=http://magiccards.info/scans/en/tp/18.jpg
-value=3
+value=4.033
 rarity=U
 type=Creature
 subtype=Dauthi,Knight,Mercenary

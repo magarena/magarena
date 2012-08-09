@@ -1,7 +1,7 @@
 name=Chimeric Mass
 url=http://magiccards.info/som/en/141.html
 image=http://magiccards.info/scans/en/som/141.jpg
-value=3
+value=4.071
 rarity=R
 type=Artifact
 cost={X}

@@ -1,7 +1,7 @@
 name=Indrik Stomphowler
 url=http://magiccards.info/gvl/en/10.html
 image=http://magiccards.info/scans/en/gvl/10.jpg
-value=4
+value=3.944
 rarity=U
 type=Creature
 subtype=Beast

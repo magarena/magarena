@@ -1,7 +1,7 @@
 name=Balefire Dragon
 url=http://magiccards.info/isd/en/129.html
 image=http://magiccards.info/scans/en/isd/129.jpg
-value=5
+value=3.981
 rarity=M
 type=Creature
 subtype=Dragon

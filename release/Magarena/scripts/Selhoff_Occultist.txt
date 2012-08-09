@@ -1,7 +1,7 @@
 name=Selhoff Occultist
 url=http://magiccards.info/isd/en/73.html
 image=http://magiccards.info/scans/en/isd/73.jpg
-value=2
+value=2.950
 rarity=C
 type=Creature
 subtype=Human,Rogue

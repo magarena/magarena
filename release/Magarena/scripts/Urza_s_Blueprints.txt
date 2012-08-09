@@ -1,7 +1,7 @@
 name=Urza's Blueprints
 url=http://magiccards.info/ul/en/137.html
 image=http://magiccards.info/scans/en/ul/137.jpg
-value=5
+value=2.884
 rarity=R
 type=Artifact
 cost={6}

@@ -1,7 +1,7 @@
 name=Enormous Baloth
 url=http://magiccards.info/m10/en/180.html
 image=http://magiccards.info/scans/en/m10/180.jpg 
-value=4
+value=2.930
 rarity=U
 type=Creature
 subtype=Beast

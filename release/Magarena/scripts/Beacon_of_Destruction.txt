@@ -1,7 +1,7 @@
 name=Beacon of Destruction
 url=http://magiccards.info/10e/en/189.html
 image=http://magiccards.info/scans/en/10e/189.jpg
-value=4
+value=4.186
 removal=4
 rarity=R
 type=Instant
