@@ -1,7 +1,7 @@
 name=Angel's Mercy
 url=http://magiccards.info/m12/en/4.html
 image=http://magiccards.info/scans/en/m12/4.jpg
-value=1.208
+value=1.230
 rarity=C
 type=Instant
 cost={2}{W}{W}

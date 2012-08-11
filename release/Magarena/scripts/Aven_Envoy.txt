@@ -1,7 +1,7 @@
 name=Aven Envoy
 url=http://magiccards.info/le/en/30.html
 image=http://magiccards.info/scans/en/le/30.jpg 
-value=2.167
+value=2.186
 ability=flying
 rarity=C
 type=Creature
