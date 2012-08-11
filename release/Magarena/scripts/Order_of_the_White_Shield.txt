@@ -1,0 +1,13 @@
+name=Order of the White Shield
+url=http://magiccards.info/me2/en/26.html
+image=http://magiccards.info/scans/en/me2/26.jpg
+value=4.018
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={W}{W}
+pt=2/1
+ability=protection from black,\
+        gains {W} first strike,\
+        pump {W}{W} +1/+0
+timing=main
