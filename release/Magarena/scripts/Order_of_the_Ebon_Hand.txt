@@ -1,0 +1,13 @@
+name=Order of the Ebon Hand
+url=http://magiccards.info/med/en/78.html
+image=http://magiccards.info/scans/en/med/78.jpg
+value=4.333
+rarity=C
+type=Creature
+subtype=Cleric,Knight
+cost={B}{B}
+pt=2/1
+ability=protection from white,\
+        gains {B} first strike,\
+        pump {B}{B} +1/+0
+timing=main
