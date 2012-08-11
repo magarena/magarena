@@ -392,3 +392,13 @@ update_value_from_rankings: cards/gatherer_rankings
 			sed -i "s/value=.*/value=$$(join -t'	' <(head -1 $$i | sed 's/name=//') $^ | cut -f2)/" $$i;\
 		fi \
 	done
+
+%.update_value: %
+	if grep token= $^; then \
+		echo "ERROR: Not applicable to tokens"; \
+	else \
+		name=$$(grep name= $^ | sed 's/name=//' | sed 's/ /%20/g');\
+		value=$$(curl -sL http://gatherer.wizards.com/pages/card/details.aspx?name=$$name | grep "textRatingValue" | grep -o "[0-9]\.[^<]*");\
+		sed -i "s/value=.*/value=$$value/" $^;\
+	fi \
+
