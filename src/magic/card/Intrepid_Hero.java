@@ -14,6 +14,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicTapEvent;
 import magic.model.event.MagicTiming;
 import magic.model.target.MagicDestroyTargetPicker;
+import magic.model.target.MagicTargetFilter;
 
 public class Intrepid_Hero {
 
@@ -44,7 +45,7 @@ public class Intrepid_Hero {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    if (creature.getPower() >= 4) {
+                    if (MagicTargetFilter.TARGET_CREATURE_POWER_4_OR_MORE.accept(game, event.getPlayer(), creature)) {
                         game.doAction(new MagicDestroyAction(creature));
                     }
                 }
