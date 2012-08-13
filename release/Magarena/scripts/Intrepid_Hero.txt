@@ -1,0 +1,11 @@
+name=Intrepid Hero
+url=http://magiccards.info/m13/en/20.html
+image=http://magiccards.info/scans/en/m13/20.jpg
+value=4.122
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/1
+timing=main
+requires_card_code
