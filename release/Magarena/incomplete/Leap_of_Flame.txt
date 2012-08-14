@@ -1,11 +1,9 @@
->Leap of Flame
+name=Leap of Flame
 url=http://magiccards.info/gp/en/121.html
 image=http://magiccards.info/scans/en/gp/121.jpg
-value=3
+value=2.950
 rarity=C
 type=Instant
-color=ur
-converted=2
 cost={U}{R}
 ability=replicate
 timing=pump

@@ -1,12 +1,10 @@
->Shattering Spree
+name=Shattering Spree
 url=http://magiccards.info/gp/en/75.html
 image=http://magiccards.info/scans/en/gp/75.jpg
-value=2
+value=4.647
 removal=1
 rarity=U
 type=Sorcery
-color=r
-converted=1
 cost={R}
 ability=replicate
 timing=removal
