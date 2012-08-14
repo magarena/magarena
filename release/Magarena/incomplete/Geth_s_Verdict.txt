@@ -1,0 +1,10 @@
+name=Geth's Verdict
+url=http://magiccards.info/nph/en/61.html
+image=http://magiccards.info/scans/en/nph/61.jpg
+value=4.145
+removal=1
+rarity=C
+type=Sorcery
+cost={B}{B}
+timing=removal
+requires_card_code
