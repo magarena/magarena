@@ -1,0 +1,10 @@
+name=Angelic Benediction
+url=http://magiccards.info/m13/en/4.html
+image=http://magiccards.info/scans/en/m13/4.jpg
+value=3.281
+rarity=U
+type=Enchantment
+cost={3}{W}
+timing=enchantment
+ability=exalted
+requires_card_code
