@@ -256,6 +256,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_ELF =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ELF,true,MagicTargetHint.Positive,
                     "target Elf");
+    public static final MagicTargetChoice POS_TARGET_FOREST =
+            new MagicTargetChoice(MagicTargetFilter.TARGET_FOREST,true,MagicTargetHint.Positive,
+                    "target Forest");
     public static final MagicTargetChoice POS_TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL =
             new MagicTargetChoice(MagicTargetFilter.TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL,true,MagicTargetHint.Positive,
                     "target Insect, Rat, Spider, or Squirrel");
