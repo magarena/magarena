@@ -1,0 +1,12 @@
+name=Mycoloth
+url=http://magiccards.info/ala/en/140.html
+image=http://magiccards.info/scans/en/ala/140.jpg
+value=4.238
+rarity=R
+type=Creature
+subtype=Fungus
+cost={3}{G}{G}
+pt=4/4
+ability=devour 2
+timing=main
+requires_card_code
