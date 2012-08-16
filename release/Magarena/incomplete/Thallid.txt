@@ -1,0 +1,11 @@
+name=Thallid
+url=http://magiccards.info/tsts/en/86.html
+image=http://magiccards.info/scans/en/tsts/86.jpg
+value=3.955
+rarity=C
+type=Creature
+subtype=Fungus
+cost={G}
+pt=1/1
+timing=main
+requires_card_code
