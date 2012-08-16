@@ -1,0 +1,11 @@
+name=Psychotrope Thallid
+url=http://magiccards.info/pc/en/137.html
+image=http://magiccards.info/scans/en/pc/137.jpg
+value=3.444
+rarity=U
+type=Creature
+subtype=Fungus
+cost={2}{G}
+pt=1/1
+timing=main
+requires_card_code
