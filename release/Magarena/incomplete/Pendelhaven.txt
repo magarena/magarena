@@ -1,0 +1,9 @@
+name=Pendelhaven
+url=http://magiccards.info/tsts/en/120.html
+image=http://magiccards.info/scans/en/tsts/120.jpg
+value=4.676
+rarity=R
+type=Legendary,Land
+ability=tap add mana {G}
+timing=land
+requires_card_code
