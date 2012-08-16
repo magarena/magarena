@@ -1,0 +1,11 @@
+name=Thallid Germinator
+url=http://magiccards.info/ts/en/225.html
+image=http://magiccards.info/scans/en/ts/225.jpg
+value=3.065
+rarity=C
+type=Creature
+subtype=Fungus
+cost={2}{G}
+pt=2/2
+timing=main
+requires_card_code
