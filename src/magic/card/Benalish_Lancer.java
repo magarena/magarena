@@ -15,6 +15,7 @@ import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.mstatic.MagicStatic;
 
 public class Benalish_Lancer {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -51,7 +52,9 @@ public class Benalish_Lancer {
                         true));
                 game.doAction(new MagicSetAbilityAction(
                         permanent,
-                        MagicAbility.FirstStrike));
+                        MagicAbility.FirstStrike,
+                        MagicStatic.Forever
+                        ));
             }
         }
     };
