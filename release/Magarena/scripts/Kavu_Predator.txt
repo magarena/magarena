@@ -7,5 +7,6 @@ type=Creature
 subtype=Kavu
 cost={1}{G}
 pt=2/2
+ability=trample
 timing=main
 requires_card_code
