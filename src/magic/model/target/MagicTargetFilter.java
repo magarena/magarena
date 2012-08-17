@@ -371,6 +371,16 @@ public interface MagicTargetFilter {
         }        
     };
     
+    MagicTargetFilter TARGET_1_1_CREATURE=new MagicTargetFilter() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
+            final MagicPermanent perm = (MagicPermanent)target;
+            return perm.isCreature() && perm.getPower() == 1 && perm.getToughness() == 1;
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Permanent;
+        }        
+    };
+    
     MagicTargetFilter TARGET_NONCREATURE=new MagicTargetFilter() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
             return !((MagicPermanent)target).isCreature();
