@@ -79,7 +79,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
         return true;
     }
 
-    private static boolean acceptLinked(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+    public static boolean acceptLinked(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
         if (source.isEquipment()) {
             return source.getEquippedCreature() == target;
         } else if (source.isEnchantment()) {
