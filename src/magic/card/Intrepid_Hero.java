@@ -45,9 +45,7 @@ public class Intrepid_Hero {
                 final Object[] choiceResults) {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    if (MagicTargetFilter.TARGET_CREATURE_POWER_4_OR_MORE.accept(game, event.getPlayer(), creature)) {
-                        game.doAction(new MagicDestroyAction(creature));
-                    }
+                    game.doAction(new MagicDestroyAction(creature));
                 }
             });
         }
