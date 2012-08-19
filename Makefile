@@ -68,31 +68,23 @@ release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 cards/modern_all.txt:
-	curl "http://magiccards.info/query?q=cmc%3D0+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' > $@
-	curl "http://magiccards.info/query?q=cmc%3D1+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D2+f%3Amodern&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D2+f%3Amodern&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D3+f%3Amodern&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D3+f%3Amodern&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D4+f%3Amodern&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D4+f%3Amodern&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D5+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc>%3D6+f%3Amodern&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	touch $@
+	for color in w u b r g c l; do \
+		curl "http://magiccards.info/query?q=c%21$$color+f%3Amodern&s=cname&v=olist&p=1" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=c%21$$color+f%3Amodern&s=cname&v=olist&p=2" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=c%21$$color+f%3Amodern&s=cname&v=olist&p=3" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+	done
 	sed -i 's/Æ/AE/' $@
 
 cards/extended_all.txt:
-	curl "http://magiccards.info/query?q=cmc%3D0+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' > $@
-	curl "http://magiccards.info/query?q=cmc%3D1+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D2+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D3+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D4+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc%3D5+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
-	curl "http://magiccards.info/query?q=cmc>%3D6+f%3Aextended&s=cname&v=olist" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=1" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' > $@
+	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=2" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@
+	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=3" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@
 	sed -i 's/Æ/AE/' $@
 
 cards/standard_all.txt:
-	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/" | sed 's/<[^>]*>//g' > $@
-	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/" | sed 's/<[^>]*>//g' >> $@
+	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' > $@
+	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@
 	sed -i 's/Æ/AE/' $@
 
 cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
