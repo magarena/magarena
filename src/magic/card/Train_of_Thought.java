@@ -33,7 +33,7 @@ public class Train_of_Thought {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],2));
+            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
         }
     };
 }
