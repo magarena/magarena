@@ -1,0 +1,11 @@
+name=Primal Huntbeast
+url=http://magiccards.info/m13/en/182.html
+image=http://magiccards.info/scans/en/m13/182.jpg
+value=3.229
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{G}
+pt=3/3
+ability=hexproof
+timing=main
