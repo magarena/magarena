@@ -1,0 +1,11 @@
+name=Grand Abolisher
+url=http:http://magiccards.info/m12/en/19.html
+image=http://magiccards.info/scans/en/m12/19.jpg
+value=4.520
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={W}{W}
+pt=2/2
+timing=main
+requires_card_code
