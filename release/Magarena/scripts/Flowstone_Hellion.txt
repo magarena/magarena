@@ -1,0 +1,11 @@
+name=Flowstone Hellion
+url=http://magiccards.info/sh/en/84.html
+image=http://magiccards.info/scans/en/sh/84.jpg
+value=3.848
+rarity=U
+type=Creature
+subtype=Hellion,Beast
+cost={4}{R}
+pt=3/3
+ability=haste,pump {0} +1/-1
+timing=main
