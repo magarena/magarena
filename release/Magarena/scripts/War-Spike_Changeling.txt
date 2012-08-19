@@ -1,0 +1,11 @@
+name=War-Spike Changeling
+url=http://magiccards.info/mt/en/112.html
+image=http://magiccards.info/scans/en/mt/112.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Shapeshifter
+cost={3}{R}
+pt=3/3
+ability=changeling,gains {R} first strike
+timing=main
