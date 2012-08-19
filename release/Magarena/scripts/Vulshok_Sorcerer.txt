@@ -1,0 +1,11 @@
+name=Vulshok Sorcerer
+url=http://magiccards.info/ddi/en/50.html
+image=http://magiccards.info/scans/en/ddi/50.jpg
+value=4.167
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}{R}
+pt=1/1
+ability=haste,ping 1
+timing=main
