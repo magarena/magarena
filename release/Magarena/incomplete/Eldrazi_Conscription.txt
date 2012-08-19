@@ -1,0 +1,12 @@
+name=Eldrazi Conscription
+url=http://magiccards.info/roe/en/3.html
+image=http://magiccards.info/scans/en/roe/3.jpg
+value=4.323
+rarity=R
+type=Tribal,Enchantment
+subtype=Eldrazi,Aura
+cost={8}
+given_pt=10/10
+given_ability=trample,annihilator 2
+timing=aura
+enchant=pump,pos creature
