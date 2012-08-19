@@ -3,9 +3,11 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicManaCost;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -20,7 +22,7 @@ public class Gigadrowse {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
-                    MagicTargetChoice.NEG_TARGET_PERMANENT,
+                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_PERMANENT, MagicManaCost.BLUE, true, true),
                     new MagicTapTargetPicker(true,false),
                     MagicEvent.NO_DATA,
                     this,
