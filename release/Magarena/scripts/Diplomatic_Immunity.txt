@@ -1,0 +1,12 @@
+name=Diplomatic Immunity
+url=http://magiccards.info/mm/en/75.html
+image=http://magiccards.info/scans/en/mm/75.jpg
+value=4.659
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=shroud
+ability=shroud
+timing=aura
+enchant=shroud,pos creature
