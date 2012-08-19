@@ -3,12 +3,14 @@ package magic.card;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
+import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSetAbilityAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -23,7 +25,7 @@ public class Leap_of_Flame {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    new MagicKickerChoice(MagicTargetChoice.POS_TARGET_PERMANENT, MagicManaCost.BLUE_RED, true, true),
                     MagicFirstStrikeTargetPicker.create(),
                     new Object[]{cardOnStack},
                     this,
