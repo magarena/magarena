@@ -57,35 +57,35 @@ public class Orim_s_Thunder {
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
-                    if (kickerCount > 0) {
-                        final MagicSource source = cardOnStack.getSource();
-                        final int amount = target.getCardDefinition().getConvertedCost();
-                        game.addEvent(new MagicEvent(
-                            source,
-                            cardOnStack.getController(),
-                            MagicTargetChoice.NEG_TARGET_CREATURE,
-                            new MagicDamageTargetPicker(amount),
-                            new Object[]{cardOnStack,amount},
-                            new MagicEventAction() {
-                                @Override
-                                public void executeEvent(
-                                    final MagicGame game,
-                                    final MagicEvent event,
-                                    final Object[] data,
-                                    final Object[] choiceResults) {
-                                    event.processTarget(game,choiceResults,0,new MagicTargetAction() {
-                                        public void doAction(final MagicTarget target) {
-                                            final MagicDamage damage = new MagicDamage((MagicCard)data[0],target,(Integer)data[1],false);
-                                            game.doAction(new MagicDealDamageAction(damage));
-                                        }
-                                    });
-                                }
-                            },
-                            source + " deals " + amount + " damage to target creature$."
-                        ));
-                    }
                 }
             });
+            if (kickerCount > 0) {
+                final MagicSource source = cardOnStack.getSource();
+                final int amount = ((MagicPermanent)choiceResults[0]).getCardDefinition().getConvertedCost();
+                game.addEvent(new MagicEvent(
+                    source,
+                    cardOnStack.getController(),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicDamageTargetPicker(amount),
+                    new Object[]{cardOnStack,amount},
+                    new MagicEventAction() {
+                        @Override
+                        public void executeEvent(
+                            final MagicGame game,
+                            final MagicEvent event,
+                            final Object[] data,
+                            final Object[] choiceResults) {
+                            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                                public void doAction(final MagicTarget target) {
+                                    final MagicDamage damage = new MagicDamage((MagicCard)data[0],target,(Integer)data[1],false);
+                                    game.doAction(new MagicDealDamageAction(damage));
+                                }
+                            });
+                        }
+                    },
+                    source + " deals " + amount + " damage to target creature$."
+                ));
+            }
         }
     };
 }
