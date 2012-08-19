@@ -1,0 +1,11 @@
+name=Kyren Glider
+url=http://magiccards.info/mm/en/196.html
+image=http://magiccards.info/scans/en/mm/196.jpg
+value=1.939
+rarity=C
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=1/1
+timing=main
+ability=can't block,flying
