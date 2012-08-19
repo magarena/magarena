@@ -1,0 +1,11 @@
+name=Blockade Runner
+url=http://magiccards.info/mm/en/60.html
+image=http://magiccards.info/scans/en/mm/60.jpg
+value=2.214
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={3}{U}
+pt=2/2
+ability=gains {U} unblockable
+timing=main
