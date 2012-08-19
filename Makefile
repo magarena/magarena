@@ -69,10 +69,10 @@ release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 
 cards/modern_all.txt:
 	touch $@
-	for color in w u b r g c l; do \
-		curl "http://magiccards.info/query?q=c%21$$color+f%3Amodern&s=cname&v=olist&p=1" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
-		curl "http://magiccards.info/query?q=c%21$$color+f%3Amodern&s=cname&v=olist&p=2" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
-		curl "http://magiccards.info/query?q=c%21$$color+f%3Amodern&s=cname&v=olist&p=3" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+	for rarity in mythic rare uncommon common land special; do \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3Amodern&s=cname&v=olist&p=1" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3Amodern&s=cname&v=olist&p=2" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3Amodern&s=cname&v=olist&p=3" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
 	done
 	sed -i 's/Æ/AE/' $@
 
