@@ -1,0 +1,9 @@
+name=Ichor Wellspring
+url=http://magiccards.info/mbs/en/110.html
+image=http://magiccards.info/scans/en/mbs/110.jpg
+value=4.033
+rarity=C
+type=Artifact
+cost={2}
+timing=artifact
+ability=enters draw card,die draw card
