@@ -1,0 +1,11 @@
+name=Psionic Gift
+url=http://magiccards.info/od/en/95.html
+image=http://magiccards.info/scans/en/od/95.jpg
+value=3.867
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=ping 1
+timing=aura
+enchant=pump,pos creature
