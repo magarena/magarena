@@ -2,11 +2,13 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
+import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -21,7 +23,7 @@ public class Shattering_Spree {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
-                    MagicTargetChoice.NEG_TARGET_ARTIFACT,
+                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_ARTIFACT, MagicManaCost.RED, true, true),
                     new MagicDestroyTargetPicker(false),
                     new Object[]{cardOnStack},
                     this,
