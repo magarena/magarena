@@ -1,0 +1,11 @@
+name=Nightwind Glider
+url=hhttp://magiccards.info/mm/en/31.html
+image=http://magiccards.info/scans/en/mm/31.jpg
+value=3.053
+rarity=C
+type=Creature
+subtype=Human,Rebel
+cost={2}{W}
+pt=2/1
+timing=main
+ability=protection from black,flying
