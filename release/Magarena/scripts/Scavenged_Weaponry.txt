@@ -1,0 +1,12 @@
+name=Scavenged Weaponry
+url=http://magiccards.info/in/en/123.html
+image=http://magiccards.info/scans/en/in/123.jpg
+value=2.635
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=enters draw card
+given_pt=1/1
+timing=aura
+enchant=pump,pos creature
