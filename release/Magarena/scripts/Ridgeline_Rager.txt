@@ -1,0 +1,11 @@
+name=Ridgeline Rager
+url=http://magiccards.info/8e/en/215.html
+image=http://magiccards.info/scans/en/8e/215.jpg
+value=3.190
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{R}
+pt=1/2
+ability=pump {R} +1/+0
+timing=main
