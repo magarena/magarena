@@ -1,0 +1,11 @@
+name=Tahngarth's Rage
+url=http://magiccards.info/tp/en/209.html
+image=http://magiccards.info/scans/en/tp/209.jpg
+value=2.514
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={R}
+timing=removal?
+enchant=pump?,creature
+requires_card_code
