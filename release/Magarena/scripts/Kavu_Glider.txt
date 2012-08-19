@@ -1,0 +1,11 @@
+name=Kavu Glider
+url=http://magiccards.info/ap/en/64.html
+image=http://magiccards.info/scans/en/ap/64.jpg
+value=1.690
+rarity=C
+type=Creature
+subtype=Kavu
+cost={2}{R}
+pt=2/1
+ability=pump {W} +0/+1,gains {U} flying
+timing=main
