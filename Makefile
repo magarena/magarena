@@ -328,7 +328,7 @@ cards/with_card_code:
 	ls -1 src/magic/card/*.java | cut -d'/' -f 4 | sed 's/.java//' | sort > $@
 
 cards/require_card_code:
-	 grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort > $@
+	grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort > $@
 
 check_requires_card_code: cards/with_card_code cards/require_card_code
 	diff $^
