@@ -1,0 +1,11 @@
+name=Flowstone Crusher
+url=http://magiccards.info/9e/en/184.html
+image=http://magiccards.info/scans/en/9e/184.jpg
+value=3.380
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{R}{R}
+pt=4/4
+ability=pump {R} +1/-1
+timing=main
