@@ -1,0 +1,11 @@
+name=Kabira Crossroads
+url=http://magiccards.info/ddf/en/33.html
+image=http://magiccards.info/scans/en/ddf/33.jpg
+value=3.422
+rarity=C
+type=Land
+mana=w4
+ability=tap add mana {W},\
+        enters tapped,\
+        enters gain life 2
+timing=land
