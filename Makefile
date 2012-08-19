@@ -410,3 +410,5 @@ update_value_from_rankings: cards/gatherer_rankings
 	make $^.update_value
 	vim $^
 	hg add $^
+	name=$$(grep name= $^ | sed 's/name=//' | sed 's/ /%20/g');\
+	hg commit -m "added $$name" -u "a. benedict balbuena <abcbalbuena@gmail.com>" $^

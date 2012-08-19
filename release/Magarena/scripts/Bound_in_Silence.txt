@@ -1,0 +1,12 @@
+name=Bound in Silence
+url=http://magiccards.info/fut/en/20.html
+image=http://magiccards.info/scans/en/fut/20.jpg
+value=2.757
+removal=3
+rarity=U
+type=Tribal,Enchantment
+subtype=Rebel,Aura
+cost={2}{W}
+given_ability=can't attack or block
+timing=tapping
+enchant=can't attack or block,neg creature
