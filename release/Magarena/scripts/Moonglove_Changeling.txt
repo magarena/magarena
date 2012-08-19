@@ -1,0 +1,11 @@
+name=Moonglove Changeling
+url=http://magiccards.info/mt/en/67.html
+image=http://magiccards.info/scans/en/mt/67.jpg
+value=2.914
+rarity=C
+type=Creature
+subtype=Shapeshifter
+cost={2}{B}
+pt=2/2
+ability=changeling,gains {B} deathtouch
+timing=main
