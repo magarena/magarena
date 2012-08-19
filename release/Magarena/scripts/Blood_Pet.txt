@@ -1,0 +1,11 @@
+name=Blood Pet
+url=http://magiccards.info/7e/en/121.html
+image=http://magiccards.info/scans/en/7e/121.jpg
+value=3.702
+rarity=C
+type=Creature
+subtype=Thrull
+cost={B}
+ability=sac add mana {B}
+pt=1/1
+timing=main
