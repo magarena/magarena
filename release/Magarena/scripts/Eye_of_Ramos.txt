@@ -1,0 +1,9 @@
+name=Eye of Ramos
+url=http://magiccards.info/mm/en/294.html
+image=http://magiccards.info/scans/en/mm/294.jpg
+value=3.460
+rarity=R
+type=Artifact
+cost={3}
+ability=tap add mana {U},sac add mana {U}
+timing=artifact
