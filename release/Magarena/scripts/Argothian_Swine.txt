@@ -1,0 +1,11 @@
+name=Argothian Swine
+url=http://magiccards.info/us/en/235.html
+image=http://magiccards.info/scans/en/us/235.jpg
+value=3.625
+rarity=C
+type=Creature
+subtype=Boar
+cost={3}{G}
+pt=3/3
+ability=trample
+timing=main
