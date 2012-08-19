@@ -1,0 +1,11 @@
+name=Wild Cantor
+url=http://magiccards.info/gp/en/149.html
+image=http://magiccards.info/scans/en/gp/149.jpg
+value=3.919
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={R/G}
+ability=sac add mana any
+pt=1/1
+timing=main
