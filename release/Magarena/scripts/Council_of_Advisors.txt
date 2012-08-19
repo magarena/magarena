@@ -1,0 +1,11 @@
+name=Council of Advisors
+url=http://magiccards.info/p3k/en/40.html
+image=http://magiccards.info/scans/en/p3k/40.jpg
+value=1.923
+rarity=U
+type=Creature
+subtype=Human,Advisor
+cost={2}{U}
+pt=1/1
+ability=enters draw card
+timing=main
