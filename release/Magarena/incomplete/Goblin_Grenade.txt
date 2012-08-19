@@ -1,0 +1,9 @@
+name=Goblin Grenade
+url=http://magiccards.info/m12/en/140.html
+image=http://magiccards.info/scans/en/m12/140.jpg
+value=4.578
+rarity=U
+type=Sorcery
+cost={R}
+timing=removal
+requires_card_code

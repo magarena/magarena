@@ -402,3 +402,8 @@ update_value_from_rankings: cards/gatherer_rankings
 		sed -i "s/value=.*/value=$$value/" $^;\
 	fi \
 
+%.normalize: %
+	flip -u $^
+	make $^.update_value
+	vim $^
+	hg add $^
