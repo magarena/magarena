@@ -1,0 +1,12 @@
+name=Maniacal Rage
+url=http://magiccards.info/cfx/en/68.html
+image=http://magiccards.info/scans/en/cfx/68.jpg
+value=2.837
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+given_pt=2/2
+given_ability=can't block
+timing=aura
+enchant=pump,pos creature
