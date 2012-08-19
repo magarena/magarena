@@ -1,0 +1,11 @@
+name=Goblin Matron
+url=http://magiccards.info/evg/en/39.html
+image=http://magiccards.info/scans/en/evg/39.jpg
+value=4.486
+rarity=U
+type=Creature
+subtype=Goblin
+cost={2}{R}
+pt=1/1
+timing=main
+requires_card_code
