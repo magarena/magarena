@@ -25,37 +25,8 @@ import magic.model.target.MagicDamageTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicTarget;
 
-//Backed out this card because it doesn't function properly.
-//It creates two effects on the stack where it should be one.
-//
-//>Orim's Thunder
-//image=http://magiccards.info/scans/en/cmd/24.jpg
-//value=3
-//removal=2
-//rarity=C
-//type=Instant
-//color=w
-//converted=3
-//cost={2}{W}
-//timing=removal
 public class Orim_s_Thunder {
                             
-    private static final MagicEventAction KICKED = new MagicEventAction() {
-        @Override
-        public void executeEvent(
-            final MagicGame game,
-            final MagicEvent event,
-            final Object[] data,
-            final Object[] choiceResults) {
-            event.processTarget(game,choiceResults,0,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage((MagicCard)data[0],target,(Integer)data[1],false);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
-            });
-        }
-    };
-
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
@@ -82,26 +53,39 @@ public class Orim_s_Thunder {
                 final Object[] choiceResults) {
             final int kickerCount = (Integer)choiceResults[1];
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];        
+            game.doAction(new MagicMoveCardAction(cardOnStack));
             event.processTargetPermanent(game,choiceResults,0,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent target) {
                     game.doAction(new MagicDestroyAction(target));
                     if (kickerCount > 0) {
                         final MagicSource source = cardOnStack.getSource();
                         final int amount = target.getCardDefinition().getConvertedCost();
-                        final MagicEvent triggerEvent = new MagicEvent(
+                        game.addEvent(new MagicEvent(
                             source,
                             cardOnStack.getController(),
                             MagicTargetChoice.NEG_TARGET_CREATURE,
                             new MagicDamageTargetPicker(amount),
                             new Object[]{cardOnStack,amount},
-                            KICKED,
+                            new MagicEventAction() {
+                                @Override
+                                public void executeEvent(
+                                    final MagicGame game,
+                                    final MagicEvent event,
+                                    final Object[] data,
+                                    final Object[] choiceResults) {
+                                    event.processTarget(game,choiceResults,0,new MagicTargetAction() {
+                                        public void doAction(final MagicTarget target) {
+                                            final MagicDamage damage = new MagicDamage((MagicCard)data[0],target,(Integer)data[1],false);
+                                            game.doAction(new MagicDealDamageAction(damage));
+                                        }
+                                    });
+                                }
+                            },
                             source + " deals " + amount + " damage to target creature$."
-                        );
-                        game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+                        ));
                     }
                 }
             });
-            game.doAction(new MagicMoveCardAction(cardOnStack));
         }
     };
 }
