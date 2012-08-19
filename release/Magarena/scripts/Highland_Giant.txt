@@ -1,0 +1,10 @@
+name=Highland Giant
+url=http://magiccards.info/po/en/137.html
+image=http://magiccards.info/scans/en/po/137.jpg
+value=2.870
+rarity=C
+type=Creature
+subtype=Giant
+cost={2}{R}{R}
+pt=3/4
+timing=main
