@@ -1,0 +1,11 @@
+name=Duergar Cave-Guard
+url=http://magiccards.info/eve/en/51.html
+image=http://magiccards.info/scans/en/eve/51.jpg
+value=2.461
+rarity=U
+type=Creature
+subtype=Dwarf,Warrior
+cost={3}{R}
+pt=1/3
+ability=wither,pump {R/W} +1/+0
+timing=main
