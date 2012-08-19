@@ -1,0 +1,10 @@
+name=Obsidian Giant
+url=http://magiccards.info/po2/en/109.html
+image=http://magiccards.info/scans/en/po2/109.jpg
+value=2.114
+rarity=U
+type=Creature
+subtype=Giant
+cost={4}{R}
+pt=4/4
+timing=main
