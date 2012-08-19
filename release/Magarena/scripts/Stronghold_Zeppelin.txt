@@ -1,0 +1,11 @@
+name=Stronghold Zeppelin
+url=http://magiccards.info/ne/en/47.html
+image=http://magiccards.info/scans/en/ne/47.jpg
+value=2.827
+rarity=U
+type=Creature
+subtype=Human
+cost={2}{U}{U}
+pt=3/3
+ability=can't block creatures without flying,flying
+timing=main
