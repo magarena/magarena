@@ -1,0 +1,9 @@
+name=Mox Jet
+url=http://magiccards.info/cedi/en/264.html
+image=http://magiccards.info/cedi/en/264.html
+value=4.661
+rarity=R
+type=Artifact
+cost={0}
+ability=tap add mana {B}
+timing=artifact
