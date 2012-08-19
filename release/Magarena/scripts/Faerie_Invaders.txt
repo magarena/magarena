@@ -1,0 +1,11 @@
+name=Faerie Invaders
+url=http://magiccards.info/m13/en/51.html
+image=http://magiccards.info/scans/en/m13/51.jpg
+value=2.825
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={4}{U}
+pt=3/3
+ability=flash,flying
+timing=main
