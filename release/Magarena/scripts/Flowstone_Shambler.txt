@@ -1,0 +1,11 @@
+name=Flowstone Shambler
+url=http://magiccards.info/9e/en/185.html
+image=http://magiccards.info/scans/en/9e/185.jpg
+value=2.426
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{R}
+pt=2/2
+ability=pump {R} +1/-1
+timing=main
