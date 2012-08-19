@@ -1,0 +1,11 @@
+name=Baleful Strix
+url=http://magiccards.info/pc2/en/82.html
+image=http://magiccards.info/scans/en/pc2/82.jpg
+value=4.771
+rarity=U
+type=Artifact,Creature
+subtype=Bird
+cost={U}{B}
+pt=1/1
+ability=flying,deathtouch,enters draw card
+timing=main
