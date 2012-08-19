@@ -1,0 +1,11 @@
+name=Flowstone Wall
+url=http://magiccards.info/ne/en/86.html
+image=http://magiccards.info/scans/en/ne/86.jpg
+value=2.545
+rarity=C
+type=Creature
+subtype=Wall
+cost={2}{R}
+pt=0/6
+ability=defender,pump {R} +1/-1
+timing=main
