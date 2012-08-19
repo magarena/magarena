@@ -1,0 +1,12 @@
+name=Gift of Granite
+url=http://magiccards.info/fut/en/7.html
+image=http://magiccards.info/scans/en/fut/7.jpg
+value=1.859
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+given_pt=0/2
+ability=flash
+timing=pumpflash
+enchant=pump,pos creature
