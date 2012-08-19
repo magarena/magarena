@@ -1,0 +1,11 @@
+name=Cemetery Gate
+url=http://magiccards.info/hl/en/4.html
+image=http://magiccards.info/scans/en/hl/4.jpg
+value=3.077
+rarity=C
+type=Creature
+subtype=Wall
+cost={2}{B}
+pt=0/5
+ability=defender,protection from black
+timing=main
