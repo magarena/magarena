@@ -1,0 +1,11 @@
+name=Jungle Barrier
+url=http://magiccards.info/ap/en/106.html
+image=http://magiccards.info/scans/en/ap/106.jpg
+value=3.643
+rarity=U
+type=Creature
+subtype=Plant,Wall
+cost={2}{G}{U}
+pt=2/6
+ability=enters draw card,defender
+timing=main
