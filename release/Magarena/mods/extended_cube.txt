@@ -15,10 +15,12 @@ Air Elemental
 Air Servant
 Ajani's Mantra
 Ajani's Pridemate
+Ajani's Sunstriker
 Akoum Battlesinger
 Akoum Boulderfoot
 Akoum Refuge
 Akrasan Squire
+Akroma's Memorial
 Alabaster Mage
 Alchemist's Apprentice
 Algae Gharial
@@ -31,6 +33,7 @@ Amphin Cutthroat
 Ancient Hellkite
 Angelheart Vial
 Angelic Armaments
+Angelic Benediction
 Angelic Destiny
 Angelic Overseer
 Angelic Wall
@@ -42,6 +45,7 @@ Angel's Tomb
 Apex Hawks
 Apocalypse Hydra
 Arbalest Elite
+Arbor Elf
 Arcane Sanctum
 Archangel
 Archangel's Light
@@ -180,6 +184,7 @@ Carnage Wurm
 Carnifex Demon
 Carrion Call
 Cathars' Crusade
+Cathedral of War
 Cathedral Sanctifier
 Caustic Crawler
 Cavern Thoctar
@@ -233,6 +238,7 @@ Craterhoof Behemoth
 Craw Wurm
 Creeping Tar Pit
 Crimson Mage
+Crippling Blight
 Crippling Chill
 Crossway Vampire
 Crucible of Fire
@@ -296,6 +302,7 @@ Divine Favor
 Doom Blade
 Doomed Traveler
 Dragon Fodder
+Dragon Hatchling
 Dragonmaster Outcast
 Dragon's Claw
 Dragonskull Summit
@@ -316,6 +323,8 @@ Dungeon Geists
 Dungrove Elder
 Duskdale Wurm
 Duskhunter Bat
+Duskmantle Prowler
+Duty-Bound Dead
 Earthquake
 Earth Servant
 Eaten by Spiders
@@ -350,6 +359,7 @@ Escaped Null
 Esper Battlemage
 Esper Cormorants
 Esper Stormblade
+Essence Drain
 Essence Harvest
 Essence Scatter
 Etched Champion
@@ -362,6 +372,7 @@ Exquisite Blood
 Ezuri, Renegade Leader
 Ezuri's Archers
 Ezuri's Brigade
+Faerie Invaders
 Falkenrath Aristocrat
 Falkenrath Exterminator
 Falkenrath Marauders
@@ -374,10 +385,12 @@ Favor of the Woods
 Feral Ridgewolf
 Ferrovore
 Fervent Cathar
+Fervor
 Festerhide Boar
 Fettergeist
 Fiend Hunter
 Fiery Hellhound
+Fire Elemental
 Fire Servant
 Flameblast Dragon
 Flameborn Hellion
@@ -395,6 +408,7 @@ Fortress Crab
 Frightful Delusion
 Frost Titan
 Fume Spitter
+Furnace Whelp
 Furyborn Hellkite
 Gallows Warden
 Galvanic Juggernaut
@@ -410,6 +424,7 @@ Geist Snatch
 Geist Trappers
 Geralf's Messenger
 Geralf's Mindcrusher
+Geth's Verdict
 Geyser Glider
 Ghalma's Warden
 Ghoulflesh
@@ -552,6 +567,7 @@ Hypnotic Specter
 Hysterical Blindness
 Ichorclaw Myr
 Ichor Rats
+Ichor Wellspring
 Ikiral Outrider
 Incinerate
 Incurable Ogre
@@ -567,6 +583,7 @@ Inspired Charge
 Instill Infection
 Intangible Virtue
 Into the Roil
+Intrepid Hero
 Invisible Stalker
 Ior Ruin Expedition
 Iron Myr
@@ -575,6 +592,7 @@ Isolated Chapel
 Jace's Ingenuity
 Jade Mage
 Jagwasp Swarm
+Jayemdae Tome
 Jenara, Asura of War
 Jhessian Balmgiver
 Jhessian Infiltrator
@@ -588,6 +606,7 @@ Jund Hackblade
 Jungle Shrine
 Jwari Scuttler
 Jwar Isle Refuge
+Kabira Crossroads
 Kabira Vindicator
 Kalonian Behemoth
 Kargan Dragonlord
@@ -615,6 +634,8 @@ Kitesail Apprentice
 Kite Shield
 Knight Exemplar
 Knight of Cliffhaven
+Knight of Glory
+Knight of Infamy
 Kor Aeronaut
 Kor Duelist
 Kor Firewalker
@@ -676,11 +697,13 @@ Malignus
 Mammoth Umbra
 Mana Leak
 Manalith
+Maniacal Rage
 Manic Vandal
 Manor Skeleton
 Marisi's Twinclaws
 Maritime Guard
 Mark of Mutiny
+Mark of the Vampire
 Markov Blademaster
 Markov Patrician
 Marrow Chomper
@@ -704,6 +727,7 @@ Memnite
 Mental Agony
 Mentor of the Meek
 Merfolk Looter
+Merfolk of the Pearl Trident
 Merfolk Seastalkers
 Merfolk Sovereign
 Mesa Enchantress
@@ -739,6 +763,7 @@ Mox Opal
 Murasa Pyromancer
 Murder of Crows
 Mycoid Shepherd
+Mycoloth
 Myr Galvanizer
 Myr Propagator
 Myrsmith
@@ -828,6 +853,7 @@ Predator Dragon
 Predator's Gambit
 Pride Guardian
 Priests of Norn
+Primal Huntbeast
 Primordial Hydra
 Prodigal Pyromancer
 Psychic Barrier
@@ -840,6 +866,7 @@ Quest for the Gemblades
 Quest for the Gravelord
 Quicksilver Amulet
 Quietus Spike
+Quirion Dryad
 Rafiq of the Many
 Rage Nimbus
 Rage Thrower
@@ -849,8 +876,10 @@ Raging Ravine
 Rakish Heir
 Rally the Forces
 Rampaging Baloths
+Rancor
 Rapacious One
 Ratchet Bomb
+Ravenous Rats
 Razorfield Rhino
 Razorfoot Griffin
 Razor Swine
@@ -858,6 +887,7 @@ Razorverge Thicket
 Realm Razer
 Reaper from the Abyss
 Rebuke
+Reckless Brute
 Reclaim
 Reforge the Soul
 Relentless Rats
@@ -927,11 +957,13 @@ Selfless Cathar
 Selhoff Occultist
 Sensor Splicer
 Sensory Deprivation
+Sentinel Spider
 Septic Rats
 Seraph of Dawn
 Seraph Sanctuary
 Serra Angel
 Serra Ascendant
+Servant of Nefarox
 Sewn-Eye Drake
 Sharpened Pitchfork
 Shattered Angel
@@ -1011,6 +1043,7 @@ Sphinx of the Steel Wind
 Spidersilk Net
 Spider Umbra
 Spidery Grasp
+Spiked Baloth
 Spined Wurm
 Spiraling Duelist
 Spire Monitor
@@ -1039,6 +1072,7 @@ Stromkirk Captain
 Stromkirk Noble
 Stromkirk Patrol
 Student of Warfare
+Stuffy Doll
 Stun Sniper
 Sturmgeist
 Sudden Disappearance
@@ -1096,6 +1130,7 @@ Traitorous Blood
 Transcendent Master
 Tree of Redemption
 Tribute to Hunger
+Tricks of the Trade
 Triskelion
 Triumph of Cruelty
 Triumph of Ferocity
@@ -1180,9 +1215,11 @@ Wall of Omens
 Wall of Reverence
 Wall of Torches
 Wall of Vines
+Warclamp Mastiff
 Warlord's Axe
 Warpath Ghoul
 Warstorm Surge
+Watercourser
 Waveskimmer Aven
 Weakness
 Welkin Tern
