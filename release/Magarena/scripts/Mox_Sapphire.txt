@@ -1,0 +1,9 @@
+name=Mox Sapphire
+url=http://magiccards.info/cedi/en/267.html
+image=http://magiccards.info/scans/en/cedi/267.jpg
+value=4.820
+rarity=R
+type=Artifact
+cost={0}
+ability=tap add mana {U}
+timing=artifact
