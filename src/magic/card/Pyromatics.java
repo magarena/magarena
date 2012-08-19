@@ -3,10 +3,12 @@ package magic.card;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
+import magic.model.MagicManaCost;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicTargetAction;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.choice.MagicKickerChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
@@ -22,12 +24,12 @@ public class Pyromatics {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                    new MagicKickerChoice(MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER, MagicManaCost.ONE_RED, true, true),
                     new MagicDamageTargetPicker(1),
                     new Object[]{cardOnStack},
                     this,
                     cardOnStack.getCard() + " deals 1 damage to " +
-                            "target creature or player$.");
+                    "target creature or player$.");
         }
         @Override
         public void executeEvent(
