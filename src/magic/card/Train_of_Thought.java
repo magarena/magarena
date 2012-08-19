@@ -2,12 +2,14 @@ package magic.card;
 
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
+import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.choice.MagicKickerChoice;
 
 public class Train_of_Thought {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -19,6 +21,7 @@ public class Train_of_Thought {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
+                    new MagicKickerChoice(MagicManaCost.ONE_BLUE, true, true),
                     new Object[]{cardOnStack,player},
                     this,
                     "Draw a card.");

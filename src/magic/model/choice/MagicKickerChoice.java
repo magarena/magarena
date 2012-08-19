@@ -38,6 +38,10 @@ public class MagicKickerChoice extends MagicChoice {
         this(otherChoice, cost, multi, false);
     }
     
+    public MagicKickerChoice(final MagicManaCost cost,final boolean multi, boolean replicate) {
+        this(MagicChoice.NONE, cost, multi, replicate);
+    }
+    
     public MagicKickerChoice(final MagicManaCost cost,final boolean multi) {
         this(MagicChoice.NONE, cost, multi, false);
     }
