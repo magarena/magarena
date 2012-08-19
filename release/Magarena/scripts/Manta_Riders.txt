@@ -1,0 +1,11 @@
+name=Manta Riders
+url=http://magiccards.info/tp/en/74.html
+image=http://magiccards.info/scans/en/tp/74.jpg
+value=2.707
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={U}
+pt=1/1
+ability=gains {U} flying
+timing=main
