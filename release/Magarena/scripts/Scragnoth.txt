@@ -1,0 +1,11 @@
+name=Scragnoth
+url=http://magiccards.info/tsts/en/83.html
+image=http://magiccards.info/scans/en/tsts/83.jpg
+value=3.914
+rarity=U
+type=Creature
+subtype=Beast
+cost={4}{G}
+pt=3/4
+ability=can't be countered,protection from blue
+timing=main
