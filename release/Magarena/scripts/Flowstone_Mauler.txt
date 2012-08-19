@@ -1,0 +1,11 @@
+name=Flowstone Mauler
+url=http://magiccards.info/sh/en/85.html
+image=http://magiccards.info/scans/en/sh/85.jpg
+value=2.696
+rarity=R
+type=Creature
+subtype=Beast
+cost={4}{R}{R}
+pt=4/5
+ability=trample,pump {R} +1/-1
+timing=main
