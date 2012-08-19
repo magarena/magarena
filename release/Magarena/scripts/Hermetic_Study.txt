@@ -1,0 +1,11 @@
+name=Hermetic Study
+url=http://magiccards.info/us/en/78.html
+image=http://magiccards.info/scans/en/us/78.jpg
+value=3.792
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=ping 1
+timing=aura
+enchant=pump,pos creature
