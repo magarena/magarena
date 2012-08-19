@@ -1,0 +1,12 @@
+name=Crippling Blight
+url=http://magiccards.info/m13/en/85.html
+image=http://magiccards.info/scans/en/m13/85.jpg
+value=2.273
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+given_pt=-1/-1
+given_ability=can't block
+timing=removal
+enchant=weaken -1/-1,neg creature
