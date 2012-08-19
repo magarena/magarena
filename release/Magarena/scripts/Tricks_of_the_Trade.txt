@@ -1,0 +1,12 @@
+name=Tricks of the Trade
+url=http://magiccards.info/m13/en/74.html
+image=http://magiccards.info/scans/en/m13/74.jpg
+value=3.139
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{U}
+given_pt=2/0
+given_ability=unblockable
+timing=aura
+enchant=pump,pos creature
