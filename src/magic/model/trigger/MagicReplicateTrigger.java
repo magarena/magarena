@@ -21,14 +21,16 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
     public MagicEvent executeTrigger(
             final MagicGame game,
             final MagicPermanent permanent,
-            final MagicCardOnStack data) {
-        return new MagicEvent(
-                data.getSource(),
-                data.getController(),
-                new MagicKickerChoice(data.getCardDefinition().getCost(),true,true),
-                new Object[]{data},
+            final MagicCardOnStack cardOnStack) {
+        int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
+        return (kickerCount > 0) ?
+            new MagicEvent(
+                cardOnStack.getSource(),
+                cardOnStack.getController(),
+                new Object[]{cardOnStack},
                 this,
-                "");
+                "Copy " + cardOnStack.getSource() + " for each time its replicate cost was paid.") :
+            MagicEvent.NONE;
     }
     
     @Override
@@ -37,17 +39,12 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicEvent event,
             final Object data[],
             final Object[] choiceResults) {
-        int kickerCount = (Integer)choiceResults[1];
         final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
+        int kickerCount = (Integer)cardOnStack.getChoiceResults()[1];
         for (;kickerCount>0;kickerCount--) {
             game.doAction(new MagicCopyCardOnStackAction(
                     cardOnStack.getController(),
                     cardOnStack));
         }
-    }
-    
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }
