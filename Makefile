@@ -330,6 +330,9 @@ cards/with_card_code:
 cards/require_card_code:
 	 grep requires_card_code release/Magarena/scripts/* | cut -d'/' -f4 | sed 's/.txt:.*//' | sort > $@
 
+check_requires_card_code: cards/with_card_code cards/require_card_code
+	diff $^
+
 code_clones:
 	~/App/pmd-bin-5.0-alpha/bin/run.sh cpd \
 			--minimum-tokens 100 \
