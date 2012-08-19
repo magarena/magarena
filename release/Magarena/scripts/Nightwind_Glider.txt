@@ -1,5 +1,5 @@
 name=Nightwind Glider
-url=hhttp://magiccards.info/mm/en/31.html
+url=http://magiccards.info/mm/en/31.html
 image=http://magiccards.info/scans/en/mm/31.jpg
 value=3.053
 rarity=C
