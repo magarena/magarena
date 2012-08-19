@@ -1,0 +1,12 @@
+name=Mark of the Vampire
+url=http://magiccards.info/m13/en/99.html
+image=http://magiccards.info/scans/en/m13/99.jpg
+value=2.711
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{B}
+given_pt=2/2
+given_ability=lifelink
+timing=aura
+enchant=lifelink,pos creature
