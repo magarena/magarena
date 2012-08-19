@@ -1,0 +1,9 @@
+name=Mox Ruby
+url=http://magiccards.info/cedi/en/266.html
+image=http://magiccards.info/scans/en/cedi/266.jpg
+value=4.668
+rarity=R
+type=Artifact
+cost={0}
+ability=tap add mana {R}
+timing=artifact
