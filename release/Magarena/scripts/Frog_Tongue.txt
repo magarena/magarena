@@ -1,0 +1,12 @@
+name=Frog Tongue
+url=http://magiccards.info/tp/en/122.html
+image=http://magiccards.info/scans/en/tp/122.jpg
+value=3.727
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+given_ability=reach
+ability=enters draw card
+timing=aura
+enchant=pump,pos creature
