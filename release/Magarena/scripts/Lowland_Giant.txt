@@ -1,0 +1,10 @@
+name=Lowland Giant
+url=http://magiccards.info/tp/en/187.html
+image=http://magiccards.info/scans/en/tp/187.jpg
+value=2.914
+rarity=C
+type=Creature
+subtype=Giant
+cost={2}{R}{R}
+pt=4/3
+timing=main
