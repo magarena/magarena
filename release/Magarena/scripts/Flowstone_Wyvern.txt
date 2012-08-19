@@ -1,0 +1,11 @@
+name=Flowstone Wyvern
+url=http://magiccards.info/tp/en/176.html
+image=http://magiccards.info/scans/en/tp/176.jpg
+value=2.550
+rarity=R
+type=Creature
+subtype=Drake
+cost={3}{R}{R}
+pt=3/3
+ability=flying,pump {R} +2/-2
+timing=main
