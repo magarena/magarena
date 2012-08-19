@@ -46,11 +46,6 @@ public enum MagicAbility {
     CannotBeTheTarget("hexproof",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
-    Changeling("changeling",10) {
-        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-            card.add(MagicCDA.Changeling);
-        }
-    },
     Deathtouch("deathtouch",60),
     Defender("defender",-100),
     DoesNotUntap("doesn't untap during untap step",-30),
@@ -93,7 +88,13 @@ public enum MagicAbility {
     Infect("infect",35),
     Undying("undying",60),
     Soulbond("soulbond",30),
-    // 61 keyword ability
+    // 60 keyword ability
+    
+    Changeling("changeling",10) {
+        public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
+            card.add(MagicCDA.Changeling);
+        }
+    },
     
     Modular("modular", 10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
@@ -553,7 +554,7 @@ public enum MagicAbility {
     private MagicAbility(final String name,final int score) {
         this.name=name;
         this.score=score;
-        mask = (ordinal() < 63) ?
+        mask = (ordinal() < 60) ?
             1L<<ordinal() :
             0;
     }
@@ -610,6 +611,11 @@ public enum MagicAbility {
     public static long getAbilities(final String[] names) {
         long flags = 0;
         for (final String name : names) {
+            final MagicAbility ability = getAbility(name);
+            final long mask = ability.getMask(); 
+            if (mask == 0) {
+                throw new RuntimeException(ability + " cannot be used in given_ability");
+            }
             flags |= getAbility(name).getMask();
         }
         return flags;

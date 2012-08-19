@@ -193,32 +193,29 @@ public class PermanentViewerInfo {
         boolean first=true;
 
         // Sub types.
-        if (!MagicAbility.Changeling.hasAbility(abilityFlags)) {
-            final EnumSet<MagicSubType> subTypeFlags=permanent.getSubTypeFlags();
-            if (subTypeFlags.equals(MagicSubType.ALL_CREATURES)) {
-                if (first) {
-                    first = false;
-                    if (textBuffer.length() > 0) {
-                        textBuffer.append('|');
-                    } 
-                } else {
-                    textBuffer.append(", ");
-                }
-                textBuffer.append("All creature types");
+        final EnumSet<MagicSubType> subTypeFlags=permanent.getSubTypeFlags();
+        if (subTypeFlags.equals(MagicSubType.ALL_CREATURES)) {
+            if (first) {
+                first = false;
+                if (textBuffer.length() > 0) {
+                    textBuffer.append('|');
+                } 
+            } else {
+                textBuffer.append(", ");
             }
-            else {
-                for (final MagicSubType subType : MagicSubType.values()) {
-                    if (subType.hasSubType(subTypeFlags)) {
-                        if (first) {
-                            first=false;
-                            if (textBuffer.length()>0) {
-                                textBuffer.append('|');
-                            } 
-                        } else {
-                            textBuffer.append(", ");
-                        }
-                        textBuffer.append(subType.toString());
+            textBuffer.append("All creature types");
+        } else {
+            for (final MagicSubType subType : MagicSubType.values()) {
+                if (subType.hasSubType(subTypeFlags)) {
+                    if (first) {
+                        first=false;
+                        if (textBuffer.length()>0) {
+                            textBuffer.append('|');
+                        } 
+                    } else {
+                        textBuffer.append(", ");
                     }
+                    textBuffer.append(subType.toString());
                 }
             }
         }
