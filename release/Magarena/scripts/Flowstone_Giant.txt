@@ -1,0 +1,11 @@
+name=Flowstone Giant
+url=http://magiccards.info/tp/en/174.html
+image=http://magiccards.info/scans/en/tp/174.jpg
+value=2.567
+rarity=C
+type=Creature
+subtype=Giant
+cost={2}{R}{R}
+pt=3/3
+ability=pump {R} +2/-2
+timing=main
