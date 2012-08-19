@@ -1,0 +1,9 @@
+name=Skull of Ramos
+url=http://magiccards.info/mm/en/312.html
+image=http://magiccards.info/scans/en/mm/312.jpg
+value=2.717
+rarity=R
+type=Artifact
+cost={3}
+ability=tap add mana {B},sac add mana {B}
+timing=artifact
