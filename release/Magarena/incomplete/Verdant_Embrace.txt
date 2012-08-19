@@ -1,0 +1,12 @@
+name=Verdant Embrace
+url=http://magiccards.info/ts/en/232.html
+image=http://magiccards.info/scans/en/ts/232.jpg
+value=3.706
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{G}{G}
+given_pt=3/3
+timing=main
+enchant=pump,pos creature
+requires_card_code
