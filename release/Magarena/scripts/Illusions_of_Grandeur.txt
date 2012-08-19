@@ -1,0 +1,9 @@
+name=Illusions of Grandeur
+url=http://magiccards.info/med/en/40.html
+image=http://magiccards.info/scans/en/med/40.jpg
+value=4.540
+rarity=R
+type=Enchantment
+cost={3}{U}
+ability=enters gain life 20,leaves lose life 20,cumulative upkeep {2}
+timing=enchantment
