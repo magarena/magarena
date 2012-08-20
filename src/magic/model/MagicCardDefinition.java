@@ -548,8 +548,11 @@ public class MagicCardDefinition {
     }
     
     public void setAbility(final MagicAbility ability, final String arg) {
-        abilityFlags |= ability.getMask();
         ability.addAbilityImpl(this, arg);
+    }
+
+    void setAbilityFlags(final long flags) {
+        abilityFlags = flags;
     }
 
     public long getAbilityFlags() {
