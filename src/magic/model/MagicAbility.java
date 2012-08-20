@@ -88,7 +88,11 @@ public enum MagicAbility {
     Infect("infect",35),
     Undying("undying",60),
     Soulbond("soulbond",30),
-    // 60 keyword ability
+    
+    // 60 core ability (do not override addAbilityImpl)
+    // the rest override addAbilityImpl
+
+    // Ability should either be stored in abilityFlags OR override addAbilityImpl, but not both
     
     Changeling("changeling",10) {
         public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
