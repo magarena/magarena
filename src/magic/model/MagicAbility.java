@@ -551,12 +551,10 @@ public enum MagicAbility {
     private final int score;
     private final long mask;
     
-    private MagicAbility(final String name,final int score) {
-        this.name=name;
-        this.score=score;
-        mask = (ordinal() < 60) ?
-            1L<<ordinal() :
-            0;
+    private MagicAbility(final String aName,final int aScore) {
+        name  = aName;
+        score = aScore;
+        mask  = 1L<<ordinal();
     }
     
     public String getName() {
@@ -564,7 +562,7 @@ public enum MagicAbility {
     }
 
     public void addAbilityImpl(final MagicCardDefinition card, final String arg) {
-        return;
+        card.setAbilityFlags(card.getAbilityFlags() | getMask());
     }
     
     @Override
@@ -577,6 +575,12 @@ public enum MagicAbility {
     }
     
     public long getMask() {
+        try {
+            assert MagicAbility.class.getMethod("addAbilityImpl", MagicCardDefinition.class, String.class).getDeclaringClass() == getClass() :
+                   this + " cannot be used in given_ability";
+        } catch (NoSuchMethodException ex) {
+            throw new RuntimeException(ex);
+        }
         return mask;
     }
 
@@ -611,11 +615,6 @@ public enum MagicAbility {
     public static long getAbilities(final String[] names) {
         long flags = 0;
         for (final String name : names) {
-            final MagicAbility ability = getAbility(name);
-            final long mask = ability.getMask(); 
-            if (mask == 0) {
-                throw new RuntimeException(ability + " cannot be used in given_ability");
-            }
             flags |= getAbility(name).getMask();
         }
         return flags;
