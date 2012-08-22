@@ -1,0 +1,13 @@
+name=Lightning Reflexes
+url=http://magiccards.info/mr/en/186.html
+image=http://magiccards.info/scans/en/mr/186.jpg
+value=3.000
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+given_pt=1/0
+given_ability=first strike
+ability=flash
+timing=flash
+enchant=pump,pos creature
