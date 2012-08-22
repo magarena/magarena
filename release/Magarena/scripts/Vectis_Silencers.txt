@@ -1,0 +1,11 @@
+name=Vectis Silencers
+url=http://magiccards.info/ala/en/62.html
+image=http://magiccards.info/scans/en/ala/62.jpg
+value=1.036
+rarity=C
+type=Artifact,Creature
+subtype=Human,Rogue
+pt=1/2
+cost={2}{U}
+ability=gains {2}{B} deathtouch
+timing=main
