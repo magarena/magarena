@@ -1,0 +1,11 @@
+name=Voice of Duty
+url=http://magiccards.info/ud/en/23.html
+image=http://magiccards.info/scans/en/ud/23.jpg
+value=3.375
+rarity=U
+type=Creature
+subtype=Angel
+pt=2/2
+cost={3}{W}
+ability=protection from green,flying
+timing=main
