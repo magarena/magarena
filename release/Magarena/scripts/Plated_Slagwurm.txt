@@ -1,0 +1,11 @@
+name=Plated Slagwurm
+url=http://magiccards.info/gvl/en/12.html
+image=http://magiccards.info/scans/en/gvl/12.jpg
+value=4.624
+rarity=R
+type=Creature
+subtype=Wurm
+pt=8/8
+cost={4}{G}{G}{G}
+ability=hexproof
+timing=main
