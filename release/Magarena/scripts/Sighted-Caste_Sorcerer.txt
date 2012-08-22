@@ -1,0 +1,11 @@
+name=Sighted-Caste Sorcerer
+url=http://magiccards.info/ala/en/26.html
+image=http://magiccards.info/scans/en/ala/26.jpg
+value=2.543
+rarity=C
+type=Creature
+subtype=Human,Wizard
+pt=1/1
+cost={1}{W}
+ability=exalted,gains {U} shroud
+timing=main
