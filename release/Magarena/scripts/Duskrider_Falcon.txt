@@ -1,0 +1,11 @@
+name=Duskrider Falcon
+url=http://magiccards.info/wl/en/128.html
+image=http://magiccards.info/scans/en/wl/128.jpg
+value=3.059
+rarity=C
+type=Creature
+subtype=Bird
+pt=1/1
+cost={1}{W}
+ability=protection from black,flying
+timing=main
