@@ -1,0 +1,11 @@
+name=Loxodon Stalwart
+url=http://magiccards.info/5dn/en/11.html
+image=http://magiccards.info/scans/en/5dn/11.jpg
+value=2.906
+rarity=U
+type=Creature
+subtype=Elephant,Soldier
+pt=3/3
+cost={3}{W}{W}
+ability=vigilance,pump {W} +0/+1
+timing=main
