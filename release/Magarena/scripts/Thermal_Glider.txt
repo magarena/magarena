@@ -1,0 +1,11 @@
+name=Thermal Glider
+url=http://magiccards.info/mm/en/53.html
+image=http://magiccards.info/scans/en/mm/53.jpg
+value=3.136
+rarity=C
+type=Creature
+subtype=Human,Rebel
+pt=2/1
+cost={2}{W}
+ability=protection from red,flying
+timing=main
