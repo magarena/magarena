@@ -1,0 +1,11 @@
+name=Bay Falcon
+url=http://magiccards.info/mr/en/54.html
+image=http://magiccards.info/scans/en/mr/54.jpg
+value=3.038
+rarity=C
+type=Creature
+subtype=Bird
+pt=1/1
+cost={1}{U}
+ability=vigilance,flying
+timing=main
