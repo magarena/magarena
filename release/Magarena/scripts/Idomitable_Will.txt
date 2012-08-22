@@ -1,0 +1,12 @@
+name=Idomitable Will
+url=http://magiccards.info/chk/en/17.html
+image=http://magiccards.info/scans/en/chk/17.jpg
+value=2.547
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_pt=1/2
+ability=flash
+timing=flash
+enchant=pump,pos creature
