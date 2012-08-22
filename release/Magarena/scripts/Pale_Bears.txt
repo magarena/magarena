@@ -1,0 +1,11 @@
+name=Pale Bears
+url=http://magiccards.info/ia/en/144.html
+image=http://magiccards.info/scans/en/ia/144.jpg
+value=2.645
+rarity=C
+type=Creature
+subtype=Bear
+pt=2/2
+cost={2}{G}
+ability=islandwalk
+timing=main
