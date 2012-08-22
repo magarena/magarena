@@ -1,0 +1,11 @@
+name=Heartwood Treefolk
+url=http://magiccards.info/tp/en/127.html
+image=http://magiccards.info/scans/en/tp/127.jpg
+value=2.673
+rarity=C
+type=Creature
+subtype=Treefolk
+pt=3/4
+cost={2}{G}{G}
+ability=forestwalk
+timing=main
