@@ -1,0 +1,11 @@
+name=Rib Cage Spider
+url=http://magiccards.info/pr/en/121.html
+image=http://magiccards.info/scans/en/pr/121.jpg
+value=3.022
+rarity=C
+type=Creature
+subtype=Spider
+pt=1/4
+cost={2}{G}
+ability=reach
+timing=main
