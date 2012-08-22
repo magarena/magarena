@@ -1,0 +1,11 @@
+name=Lost Soul
+url=http://magiccards.info/6e/en/142.html
+image=http://magiccards.info/scans/en/6e/142.jpg
+value=1.981
+rarity=C
+type=Creature
+subtype=Spirit,Minion
+pt=2/1
+cost={1}{B}{B}
+ability=swampwalk
+timing=main
