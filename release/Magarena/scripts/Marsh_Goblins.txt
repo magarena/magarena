@@ -1,0 +1,11 @@
+name=Marsh Goblins
+url=http://magiccards.info/dk/en/118.html
+image=http://magiccards.info/scans/en/dk/118.jpg
+value=1.443
+rarity=C
+type=Creature
+subtype=Goblin
+pt=1/1
+cost={B}{R}
+ability=swampwalk
+timing=main
