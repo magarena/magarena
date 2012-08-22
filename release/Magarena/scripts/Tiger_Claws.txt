@@ -1,0 +1,13 @@
+name=Tiger Claws
+url=http://magiccards.info/mm/en/279.html
+image=http://magiccards.info/scans/en/mm/279.jpg
+value=3.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+given_pt=+1/+1
+given_ability=trample
+ability=flash
+timing=flash
+enchant=pump,pos creature
