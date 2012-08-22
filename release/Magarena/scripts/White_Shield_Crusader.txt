@@ -1,0 +1,11 @@
+name=White Shield Crusader
+url=http://magiccards.info/cs/en/24.html
+image=http://magiccards.info/scans/en/cs/24.jpg
+value=4.202
+rarity=U
+type=Creature
+subtype=Human,Knight
+pt=2/1
+cost={W}{W}
+ability=protection from black,gains {W} flying,pump {W}{W} +1/+0
+timing=main
