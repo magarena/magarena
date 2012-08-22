@@ -1,0 +1,11 @@
+name=Keeper of Kookus
+url=http://magiccards.info/vi/en/85.html
+image=http://magiccards.info/scans/en/vi/85.jpg
+value=3.244
+rarity=U
+type=Creature
+subtype=Goblin
+pt=1/1
+cost={R}
+ability=gains {R} protection from red
+timing=main
