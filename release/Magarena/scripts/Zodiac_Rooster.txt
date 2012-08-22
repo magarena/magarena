@@ -1,0 +1,11 @@
+name=Zodiac Rooster
+url=http://magiccards.info/p3k/en/163.html
+image=http://magiccards.info/scans/en/p3k/163.jpg
+value=3.956
+rarity=C
+type=Creature
+subtype=Bird
+pt=2/1
+cost={1}{G}
+ability=plainswalk
+timing=main
