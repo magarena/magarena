@@ -1,0 +1,11 @@
+name=Giant Crab
+url=http://magiccards.info/bd/en/9.html
+image=http://magiccards.info/scans/en/bd/9.jpg
+value=3.071
+rarity=C
+type=Creature
+subtype=Crab
+pt=3/3
+cost={4}{U}
+ability=gains {U} shroud
+timing=main
