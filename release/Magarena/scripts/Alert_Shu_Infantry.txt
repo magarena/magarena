@@ -1,0 +1,11 @@
+name=Alert Shu Infantry
+url=http://magiccards.info/p3k/en/1.html
+image=http://magiccards.info/scans/en/p3k/1.jpg
+value=2.812
+rarity=C
+type=Creature
+subtype=Human,Soldier
+pt=2/2
+cost={2}{W}
+ability=vigilance
+timing=main
