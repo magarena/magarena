@@ -1,0 +1,11 @@
+name=Slippery Bogle
+url=http://magiccards.info/eve/en/160.html
+image=http://magiccards.info/scans/en/eve/160.jpg
+value=3.957
+rarity=C
+type=Creature
+subtype=Beast
+pt=1/1
+cost={G/U}
+ability=hexproof
+timing=main
