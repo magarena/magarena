@@ -1,0 +1,11 @@
+name=Guma
+url=http://magiccards.info/us/en/197.html
+image=http://magiccards.info/scans/en/us/197.jpg
+value=3.240
+rarity=U
+type=Creature
+subtype=Cat
+pt=2/2
+cost={2}{R}
+ability=protection from blue
+timing=main
