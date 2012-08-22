@@ -1,0 +1,11 @@
+name=Whispering Shade
+url=http://magiccards.info/od/en/167.html
+image=http://magiccards.info/scans/en/od/167.jpg
+value=2.875
+rarity=C
+type=Creature
+subtype=Shade
+pt=1/1
+cost={3}{B}
+ability=swampwalk,pump {B} +1/+1
+timing=main
