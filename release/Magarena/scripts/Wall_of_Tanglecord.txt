@@ -1,0 +1,11 @@
+name=Wall of Tanglecord
+url=http://magiccards.info/som/en/222.html
+image=http://magiccards.info/scans/en/som/222.jpg
+value=4.030
+rarity=C
+type=Artifact,Creature
+subtype=Wall
+pt=0/6
+cost={2}
+ability=defender,gains {G} reach
+timing=main
