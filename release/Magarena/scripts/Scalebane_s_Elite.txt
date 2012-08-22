@@ -1,0 +1,11 @@
+name=Scalebane's Elite
+url=http://magiccards.info/vi/en/135.html
+image=http://magiccards.info/scans/en/vi/135.jpg
+value=2.966
+rarity=U
+type=Creature
+subtype=Human,Soldier
+pt=4/4
+cost={3}{W}{G}
+ability=protection from black
+timing=main
