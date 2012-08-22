@@ -1,0 +1,11 @@
+name=Wild Ox
+url=http://magiccards.info/me4/en/174.html
+image=http://magiccards.info/scans/en/me4/174.jpg
+value=2.967
+rarity=U
+type=Creature
+subtype=Ox
+pt=3/3
+cost={3}{G}
+ability=swampwalk
+timing=main
