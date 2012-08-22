@@ -103,11 +103,13 @@ public class CardDefinitions {
     }
 	
     private static void loadCardDefinition(final File file) {
-        //System.err.print("Parsing ");
-        //System.err.println(file);
-        final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
-        cdef.validate();
-        addDefinition(cdef);
+        try {
+            final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
+            cdef.validate();
+            addDefinition(cdef);
+        } catch (final Throwable cause) {
+            throw new RuntimeException("Error loading " + file, cause);
+        }
     }
 	
 	public static void loadCardDefinitions() {
