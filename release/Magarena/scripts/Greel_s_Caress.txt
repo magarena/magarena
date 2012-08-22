@@ -1,0 +1,12 @@
+name=Greel's Caress
+url=http://magiccards.info/pr/en/67.html
+image=http://magiccards.info/scans/en/pr/67.jpg
+value=2.315
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+given_pt=-3/-0
+ability=flash
+timing=flash
+enchant=weaken -3/-0,neg creature
