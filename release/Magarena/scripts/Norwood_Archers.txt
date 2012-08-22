@@ -1,0 +1,11 @@
+name=Norwood Archers
+url=http://magiccards.info/po2/en/76.html
+image=http://magiccards.info/scans/en/po2/76.jpg
+value=3.071
+rarity=C
+type=Creature
+subtype=Elf,Archer
+pt=3/3
+cost={3}{G}
+ability=reach
+timing=main
