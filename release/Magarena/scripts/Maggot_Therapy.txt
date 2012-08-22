@@ -1,0 +1,12 @@
+name=Maggot Therapy
+url=http://magiccards.info/mm/en/145.html
+image=http://magiccards.info/scans/en/mm/145.jpg
+value=3.156
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+given_pt=+2/-2
+ability=flash
+timing=flash
+enchant=pump,creature
