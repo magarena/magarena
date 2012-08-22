@@ -1,0 +1,11 @@
+name=Tempest Drake
+url=http://magiccards.info/vi/en/139.html
+image=http://magiccards.info/scans/en/vi/139.jpg
+value=3.513
+rarity=U
+type=Creature
+subtype=Drake
+pt=2/2
+cost={1}{W}{U}
+ability=vigilance,flying
+timing=main
