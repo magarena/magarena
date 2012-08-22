@@ -1,0 +1,11 @@
+name=Willow Dryad
+url=http://magiccards.info/po/en/119.html
+image=http://magiccards.info/scans/en/po/119.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dryad
+pt=1/1
+cost={G}
+ability=forestwalk
+timing=main
