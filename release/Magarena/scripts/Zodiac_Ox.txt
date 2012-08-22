@@ -1,0 +1,11 @@
+name=Zodiac Ox
+url=http://magiccards.info/p3k/en/161.html
+image=http://magiccards.info/scans/en/p3k/161.jpg
+value=3.250
+rarity=U
+type=Creature
+subtype=Ox
+pt=3/3
+cost={3}{G}
+ability=swampwalk
+timing=main
