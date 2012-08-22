@@ -1,0 +1,11 @@
+name=Segovian Leviathan
+url=http://magiccards.info/6e/en/97.html
+image=http://magiccards.info/scans/en/6e/97.jpg
+value=2.238
+rarity=C
+type=Creature
+subtype=Leviathan
+pt=3/3
+cost={4}{U}
+ability=islandwalk
+timing=main
