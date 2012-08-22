@@ -1,0 +1,11 @@
+name=Elite Cat Warrior
+url=http://magiccards.info/me4/en/151.html
+image=http://magiccards.info/scans/en/me4/151.jpg
+value=3.333
+rarity=C
+type=Creature
+subtype=Cat,Warrior
+pt=2/3
+cost={2}{G}
+ability=forestwalk
+timing=main
