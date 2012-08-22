@@ -1,0 +1,11 @@
+name=Sea Sprite
+url=http://magiccards.info/med/en/48.html
+image=http://magiccards.info/scans/en/med/48.jpg
+value=3.500
+rarity=C
+type=Creature
+subtype=Faerie
+pt=1/1
+cost={1}{U}
+ability=protection from red,flying
+timing=main
