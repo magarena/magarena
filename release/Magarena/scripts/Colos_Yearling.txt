@@ -1,0 +1,11 @@
+name=Colos Yearling
+url=http://magiccards.info/ud/en/79.html
+image=http://magiccards.info/scans/en/ud/79.jpg
+value=2.767
+rarity=C
+type=Creature
+subtype=Goat,Beast
+pt=1/1
+cost={2}{R}
+ability=mountainwalk,pump {R} +1/+0
+timing=main
