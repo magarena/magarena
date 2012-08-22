@@ -1,0 +1,11 @@
+name=Deeptread Merrow
+url=http://magiccards.info/lw/en/57.html
+image=http://magiccards.info/scans/en/lw/57.jpg
+value=2.212
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+pt=2/1
+cost={1}{U}
+ability=gains {U} islandwalk
+timing=main
