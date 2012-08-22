@@ -1,0 +1,11 @@
+name=Steam Spitter
+url=http://magiccards.info/cs/en/124.html
+image=http://magiccards.info/scans/en/cs/124.jpg
+value=2.018
+rarity=U
+type=Creature
+subtype=Spider
+pt=1/5
+cost={4}{G}
+ability=reach,pump {R} +1/+0
+timing=main
