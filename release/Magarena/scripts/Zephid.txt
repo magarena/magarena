@@ -1,0 +1,11 @@
+name=Zephid
+url=http://magiccards.info/us/en/113.html
+image=http://magiccards.info/scans/en/us/113.jpg
+value=3.278
+rarity=R
+type=Creature
+subtype=Illusion
+pt=3/4
+cost={4}{U}{U}
+ability=flying,shroud
+timing=main
