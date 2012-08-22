@@ -1,0 +1,11 @@
+name=Death Speakers
+url=http://magiccards.info/med/en/7.html
+image=http://magiccards.info/scans/en/med/7.jpg
+value=3.417
+rarity=C
+type=Creature
+subtype=Human,Cleric
+pt=1/1
+cost={W}
+ability=protection from black
+timing=main
