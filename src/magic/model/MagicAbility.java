@@ -579,13 +579,18 @@ public enum MagicAbility {
     }
     
     public long getMask() {
+        assert !hasImpl() : this + " cannot be used in given_ability";
+        return mask;
+    }
+    
+    private boolean hasImpl() {
         try {
-            assert MagicAbility.class.getMethod("addAbilityImpl", MagicCardDefinition.class, String.class).getDeclaringClass() == getClass() :
-                   this + " cannot be used in given_ability";
+            return MagicAbility.class
+                   .getMethod("addAbilityImpl", MagicCardDefinition.class, String.class)
+                   .getDeclaringClass() != getClass();
         } catch (NoSuchMethodException ex) {
             throw new RuntimeException(ex);
         }
-        return mask;
     }
 
     public boolean hasAbility(final long flags) {
