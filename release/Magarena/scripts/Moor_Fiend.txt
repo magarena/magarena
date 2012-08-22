@@ -1,0 +1,11 @@
+name=Moor Fiend
+url=http://magiccards.info/ia/en/41.html
+image=http://magiccards.info/scans/en/ia/41.jpg
+value=2.914
+rarity=C
+type=Creature
+subtype=Horror
+pt=3/3
+cost={3}{B}
+ability=swampwalk
+timing=main
