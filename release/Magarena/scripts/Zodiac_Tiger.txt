@@ -1,0 +1,11 @@
+name=Zodiac Tiger
+url=http://magiccards.info/p3k/en/164.html
+image=http://magiccards.info/scans/en/p3k/164.jpg
+value=3.155
+rarity=U
+type=Creature
+subtype=Cat
+pt=3/4
+cost={2}{G}{G}
+ability=forestwalk
+timing=main
