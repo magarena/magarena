@@ -1,0 +1,11 @@
+name=Jhovall Queen
+url=http://magiccards.info/mm/en/25.html
+image=http://magiccards.info/scans/en/mm/25.jpg
+value=3.741
+rarity=R
+type=Creature
+subtype=Cat,Rebel
+pt=4/7
+cost={4}{W}{W}
+ability=vigilance
+timing=main
