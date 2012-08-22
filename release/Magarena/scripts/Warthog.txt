@@ -1,0 +1,11 @@
+name=Warthog
+url=http://magiccards.info/6e/en/267.html
+image=http://magiccards.info/scans/en/6e/267.jpg
+value=3.500
+rarity=U
+type=Creature
+subtype=Boar
+pt=3/2
+cost={1}{G}{G}
+ability=swampwalk
+timing=main
