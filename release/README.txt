@@ -54,6 +54,16 @@ Thank you for your support and have fun!
 
 
 
+Release 1.29 (August 25, 2012)
+============
+includes contributions from QQQ
+
+- fixed: 
+
+- added the following premade decks:
+
+- added the following cards:
+
 Release 1.28 (July 29, 2012)
 ============
 includes contributions from mecheng, melvin, pcastellazzi, and sponeta 
