@@ -1,0 +1,11 @@
+name=Melesse Spirit
+url=http://magiccards.info/mr/en/231.html
+image=http://magiccards.info/scans/en/mr/231.jpg
+value=2.816
+rarity=U
+type=Creature
+subtype=Angel,Spirit
+pt=3/3
+cost={3}{W}{W}
+ability=flying,protection from black
+timing=main
