@@ -1,0 +1,11 @@
+name=Zodiac Rat
+url=http://magiccards.info/p3k/en/98.html
+image=http://magiccards.info/scans/en/p3k/98.jpg
+value=3.000
+rarity=C
+type=Creature
+subtype=Rat
+pt=1/1
+cost={B}
+ability=swampwalk
+timing=main
