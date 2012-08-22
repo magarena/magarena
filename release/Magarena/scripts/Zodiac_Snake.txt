@@ -1,0 +1,11 @@
+name=Zodiac Snake
+url=http://magiccards.info/p3k/en/99.html
+image=http://magiccards.info/scans/en/p3k/99.jpg
+value=2.932
+rarity=C
+type=Creature
+subtype=Snake
+pt=2/2
+cost={2}{B}
+ability=swampwalk
+timing=main
