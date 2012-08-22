@@ -1,0 +1,11 @@
+name=Repentant Blacksmith
+url=http://magiccards.info/5e/en/330.html
+image=http://magiccards.info/scans/en/5e/330.jpg
+value=3.217
+rarity=C
+type=Creature
+subtype=Human
+pt=1/2
+cost={1}{W}
+ability=protection from red
+timing=main
