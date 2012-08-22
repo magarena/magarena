@@ -1,0 +1,11 @@
+name=Wall of Light
+url=http://magiccards.info/me3/en/27.html
+image=http://magiccards.info/scans/en/me3/27.jpg
+value=3.118
+rarity=U
+type=Creature
+subtype=Wall
+pt=1/5
+cost={2}{W}
+ability=defender,protection from black
+timing=main
