@@ -1,0 +1,12 @@
+name=Mageta's Boon
+url=http://magiccards.info/pr/en/14.html
+image=http://magiccards.info/scans/en/pr/14.jpg
+value=3.022
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_pt=1/2
+ability=flash
+timing=flash
+enchant=pump,pos creature
