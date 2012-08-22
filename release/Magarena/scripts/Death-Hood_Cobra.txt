@@ -1,0 +1,11 @@
+name=Death-Hood Cobra
+url=http://magiccards.info/nph/en/108.html
+image=http://magiccards.info/scans/en/nph/108.jpg
+value=3.080
+rarity=C
+type=Creature
+subtype=Snake
+pt=2/2
+cost={1}{G}
+ability=gains {1}{G} deathtouch,gains {1}{G} reach
+timing=main
