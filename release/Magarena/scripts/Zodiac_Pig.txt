@@ -1,0 +1,11 @@
+name=Zodiac Pig
+url=http://magiccards.info/p3k/en/97.html
+image=http://magiccards.info/scans/en/p3k/97.jpg
+value=3.250
+rarity=U
+type=Creature
+subtype=Boar
+pt=3/3
+cost={3}{B}
+ability=swampwalk
+timing=main
