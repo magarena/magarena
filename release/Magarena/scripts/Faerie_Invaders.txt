@@ -8,4 +8,4 @@ subtype=Faerie,Rogue
 cost={4}{U}
 pt=3/3
 ability=flash,flying
-timing=main
+timing=flash
