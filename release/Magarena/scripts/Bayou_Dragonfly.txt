@@ -1,0 +1,11 @@
+name=Bayou Dragonfly
+url=http://magiccards.info/tp/en/109.html
+image=http://magiccards.info/scans/en/tp/109.jpg
+value=3.382
+rarity=C
+type=Creature
+subtype=Insect
+pt=1/1
+cost={1}{G}
+ability=flying,swampwalk
+timing=main
