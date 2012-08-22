@@ -1,0 +1,11 @@
+name=Freewind Falcon
+url=http://magiccards.info/vi/en/105.html
+image=http://magiccards.info/scans/en/vi/105.jpg
+value=3.205
+rarity=C
+type=Creature
+subtype=Bird
+pt=1/1
+cost={1}{W}
+ability=protection from red,flying
+timing=main
