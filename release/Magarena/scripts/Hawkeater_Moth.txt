@@ -1,0 +1,11 @@
+name=Hawkeater Moth
+url=http://magiccards.info/us/en/259.html
+image=http://magiccards.info/scans/en/us/259.jpg
+value=2.422
+rarity=C
+type=Creature
+subtype=Insect
+pt=1/2
+cost={3}{G}
+ability=flying,shroud
+timing=main
