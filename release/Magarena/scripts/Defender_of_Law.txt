@@ -1,0 +1,11 @@
+name=Defender of Law
+url=http://magiccards.info/ul/en/5.html
+image=http://magiccards.info/scans/en/ul/5.jpg
+value=3.375
+rarity=C
+type=Creature
+subtype=Human,Knight
+pt=2/1
+cost={2}{W}
+ability=flash,protection from red
+timing=flash
