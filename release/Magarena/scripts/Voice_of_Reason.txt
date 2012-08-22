@@ -1,0 +1,11 @@
+name=Voice of Reason
+url=http://magiccards.info/ud/en/24.html
+image=http://magiccards.info/scans/en/ud/24.jpg
+value=3.457
+rarity=U
+type=Creature
+subtype=Angel
+pt=2/2
+cost={3}{W}
+ability=protection from blue,flying
+timing=main
