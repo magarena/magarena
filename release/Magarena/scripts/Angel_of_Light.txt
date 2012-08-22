@@ -1,0 +1,11 @@
+name=Angel of Light
+url=http://magiccards.info/me2/en/3.html
+image=http://magiccards.info/scans/en/me2/3.jpg
+value=2.395
+rarity=U
+type=Creature
+subtype=Angel
+pt=3/3
+cost={4}{W}
+ability=vigilance,flying
+timing=main
