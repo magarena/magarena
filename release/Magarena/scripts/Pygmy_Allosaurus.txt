@@ -1,0 +1,11 @@
+name=Pygmy Allosaurus
+url=http://magiccards.info/ia/en/145.html
+image=http://magiccards.info/scans/en/ia/145.jpg
+value=2.571
+rarity=R
+type=Creature
+subtype=Lizard
+pt=2/2
+cost={2}{G}
+ability=swampwalk
+timing=main
