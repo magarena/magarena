@@ -1,0 +1,11 @@
+name=Serra Sphinx
+url=http://magiccards.info/pc/en/62.html
+image=http://magiccards.info/scans/en/pc/62.jpg
+value=4.129
+rarity=R
+type=Creature
+subtype=Sphinx
+pt=4/4
+cost={3}{U}{U}
+ability=vigilance,flying
+timing=main
