@@ -1,0 +1,11 @@
+name=Bladed Sentinel
+url=http://magiccards.info/mbs/en/98.html
+image=http://magiccards.info/scans/en/mbs/98.jpg
+value=1.941
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+pt=2/4
+cost={4}
+ability=gains {W} vigilance
+timing=main
