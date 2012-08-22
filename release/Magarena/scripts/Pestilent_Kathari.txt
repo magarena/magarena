@@ -1,0 +1,11 @@
+name=Pestilent Kathari
+url=http://magiccards.info/cfx/en/50.html
+image=http://magiccards.info/scans/en/cfx/50.jpg
+value=2.939
+rarity=C
+type=Creature
+subtype=Bird,Warrior
+pt=1/1
+cost={2}{B}
+ability=flying,deathtouch,gains {2}{R} first strike
+timing=main
