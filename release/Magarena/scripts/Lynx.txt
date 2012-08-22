@@ -1,0 +1,11 @@
+name=Lynx
+url=http://magiccards.info/po2/en/72.html
+image=http://magiccards.info/scans/en/po2/72.jpg
+value=3.075
+rarity=U
+type=Creature
+subtype=Cat
+pt=2/1
+cost={1}{G}
+ability=forestwalk
+timing=main
