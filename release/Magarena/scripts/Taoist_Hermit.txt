@@ -1,0 +1,11 @@
+name=Taoist Hermit
+url=http://magiccards.info/p3k/en/150.html
+image=http://magiccards.info/scans/en/p3k/150.jpg
+value=3.400
+rarity=U
+type=Creature
+subtype=Human,Mystic
+pt=2/2
+cost={2}{G}
+ability=hexproof
+timing=main
