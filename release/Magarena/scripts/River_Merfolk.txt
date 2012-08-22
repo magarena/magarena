@@ -1,0 +1,11 @@
+name=River Merfolk
+url=http://magiccards.info/med/en/47.html
+image=http://magiccards.info/scans/en/med/47.jpg
+value=3.333
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={U}{U}
+pt=2/1
+ability=gains {U} mountainwalk
+timing=main
