@@ -1,0 +1,11 @@
+name=Abbey Gargoyles
+url=http://magiccards.info/me2/en/1.html
+image=http://magiccards.info/scans/en/me2/1.jpg
+value=2.450
+rarity=U
+type=Creature
+subtype=Gargoyle
+cost={2}{W}{W}{W}
+pt=3/4
+ability=flying,protection from red
+timing=main
