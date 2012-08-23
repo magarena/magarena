@@ -73,10 +73,11 @@ release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 cards/%_all.out:
 	touch $@
 	for rarity in mythic rare uncommon common land special; do \
-		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=1" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
-		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=2" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
-		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=3" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=1" | grep "en/" >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=2" | grep "en/" >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=3" | grep "en/" >> $@; \
 	done
+	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
 	sed -i 's/Æ/AE/' $@
 
 cards/%_all.txt: cards/%_all.out
