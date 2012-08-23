@@ -64,7 +64,6 @@ public class MagicGame {
     private final MagicStack stack;
     private final MagicPlayer scorePlayer;
     private final boolean sound;
-    //private long identifiers[];
     private int score=0;
     private int turn=1;
     private int startTurn=0;
@@ -256,10 +255,6 @@ public class MagicGame {
             getPayedCost().getX(),
             stack.getItemsId(),
             events.getEventsId(),
-            //time,
-            //identifiers[0],
-            //identifiers[1],
-            //identifiers[2],
             players[0].getPlayerId(),
             players[1].getPlayerId(),
         };
@@ -463,24 +458,6 @@ public class MagicGame {
             player.getLibrary().setKnown(false);
         }        
     }
-
-    /*
-    public long createIdentifier(final MagicIdentifierType type) {
-        return identifiers[type.ordinal()]++;
-    }
-    
-    public void releaseIdentifier(final MagicIdentifierType type) {
-        identifiers[type.ordinal()]--;
-    }
-    
-    public void setIdentifiers(final long identifiers[]) {
-        this.identifiers=identifiers;
-    }
-    
-    public long[] getIdentifiers() {
-        return Arrays.copyOf(identifiers,identifiers.length);
-    }
-    */
 
     Collection<MagicAction> getActions() {
         return actions;
