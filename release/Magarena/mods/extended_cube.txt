@@ -113,6 +113,7 @@ Black Knight
 Black Sun's Zenith
 Bladed Bracers
 Bladed Pinions
+Bladed Sentinel
 Blade of the Bloodchief
 Blade Splicer
 Blade-Tribe Berserkers
@@ -211,6 +212,7 @@ Clifftop Retreat
 Clinging Mists
 Cloud Crusader
 Cloud Elemental
+Cloudheath Drake
 Cloudshift
 Cobbled Wings
 Colossal Might
@@ -269,6 +271,7 @@ Dead Weight
 Death Baron
 Deathforge Shaman
 Deathgreeter
+Death-Hood Cobra
 Deathless Angel
 Deathmark
 Death's Caress
@@ -508,6 +511,7 @@ Grounded
 Gryff Vanguard
 Guard Duty
 Guard Gomazoa
+Guardian Lions
 Guardian Seraph
 Guardians of Akrasa
 Guardians' Pledge
@@ -830,6 +834,7 @@ Pelakka Wurm
 Peregrine Griffin
 Perilous Myr
 Perimeter Captain
+Pestilent Kathari
 Phantom Warrior
 Phyrexian Crusader
 Phyrexian Digester
@@ -973,11 +978,13 @@ Shepherd of the Lost
 Shield of the Righteous
 Shivan Dragon
 Shock
+Shore Snapper
 Shriekgeist
 Shrine of Burning Rage
 Sickleslicer
 Siege-Gang Commander
 Siege Mastodon
+Sighted-Caste Sorcerer
 Sightless Ghoul
 Sigil Blessing
 Sigiled Behemoth
@@ -1175,6 +1182,7 @@ Vapor Snag
 Vastwood Gorger
 Vault of the Archangel
 Vault Skyward
+Vectis Silencers
 Vedalken Certarch
 Vedalken Ghoul
 Vedalken Outlander
@@ -1213,6 +1221,7 @@ Wall of Fire
 Wall of Frost
 Wall of Omens
 Wall of Reverence
+Wall of Tanglecord
 Wall of Torches
 Wall of Vines
 Warclamp Mastiff

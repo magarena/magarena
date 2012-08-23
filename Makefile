@@ -17,6 +17,9 @@ check_literals:
 	grep "\"" src/magic/card/* | awk -f scripts/check_literals.awk
 
 cubes: \
+	cards/standard_all.txt \
+	cards/extended_all.txt \
+	cards/modern_all.txt \
 	release/Magarena/mods/legacy_cube.txt \
 	release/Magarena/mods/extended_cube.txt \
 	release/Magarena/mods/standard_cube.txt \
@@ -67,25 +70,17 @@ release/Magarena/mods/legacy_cube.txt: cards/existing_tip.txt cards/legacy_banne
 release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-cards/modern_all.txt:
+cards/%_all.out:
 	touch $@
 	for rarity in mythic rare uncommon common land special; do \
-		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3Amodern&s=cname&v=olist&p=1" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
-		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3Amodern&s=cname&v=olist&p=2" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
-		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3Amodern&s=cname&v=olist&p=3" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=1" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=2" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
+		curl "http://magiccards.info/query?q=r%3A$$rarity+f%3A$*&s=cname&v=olist&p=3" | grep "en/"     | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@; \
 	done
 	sed -i 's/Æ/AE/' $@
 
-cards/extended_all.txt:
-	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=1" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' > $@
-	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=2" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@
-	curl "http://magiccards.info/query?q=f%3Aextended&s=cname&v=olist&p=3" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@
-	sed -i 's/Æ/AE/' $@
-
-cards/standard_all.txt:
-	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=1" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' > $@
-	curl "http://magiccards.info/query?q=f%3Astandard&s=cname&v=olist&p=2" | grep "en/"      | sed 's/<[^>]*>//g;s/^[ ]*//g' >> $@
-	sed -i 's/Æ/AE/' $@
+cards/%_all.txt: cards/%_all.out
+	sort $^ | uniq > $@
 
 cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@

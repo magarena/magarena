@@ -71,6 +71,7 @@ Blackcleave Goblin
 Black Sun's Zenith
 Bladed Bracers
 Bladed Pinions
+Bladed Sentinel
 Blade Splicer
 Blade-Tribe Berserkers
 Bladetusk Boar
@@ -175,6 +176,7 @@ Darkthicket Wolf
 Day of Judgment
 Deadly Recluse
 Dead Weight
+Death-Hood Cobra
 Deathmark
 Death's Caress
 Death Wind
@@ -346,6 +348,7 @@ Grimoire of the Dead
 Griptide
 Grounded
 Gryff Vanguard
+Guardian Lions
 Guardians of Akrasa
 Guardians' Pledge
 Guise of Fire
@@ -766,6 +769,7 @@ Vulshok Refugee
 Wakedancer
 Walking Corpse
 Wall of Fire
+Wall of Tanglecord
 Wall of Torches
 Warclamp Mastiff
 Warpath Ghoul

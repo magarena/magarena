@@ -8,6 +8,7 @@ Acidic Slime
 Acid Web Spider
 Act of Treason
 Admonition Angel
+Advanced Hoverguard
 Adventuring Gear
 AEther Adept
 AEther Figment
@@ -182,6 +183,7 @@ Black Knight
 Black Sun's Zenith
 Bladed Bracers
 Bladed Pinions
+Bladed Sentinel
 Blade of the Bloodchief
 Blade of the Sixth Pride
 Blade Splicer
@@ -334,6 +336,7 @@ Clinging Mists
 Cloudcrown Oak
 Cloud Crusader
 Cloud Elemental
+Cloudheath Drake
 Cloudshift
 Cloud Sprite
 Cobbled Wings
@@ -420,6 +423,7 @@ Deathbringer Liege
 Deathforge Shaman
 Deathgazer
 Deathgreeter
+Death-Hood Cobra
 Deathknell Kami
 Deathless Angel
 Deathmark
@@ -429,6 +433,7 @@ Death Wind
 Debtors' Knell
 Deepcavern Imp
 Deep-Slumber Titan
+Deeptread Merrow
 Defang
 Deft Duelist
 Defy Death
@@ -784,6 +789,7 @@ Grounded
 Gryff Vanguard
 Guard Duty
 Guard Gomazoa
+Guardian Lions
 Guardian of the Guildpact
 Guardian Seraph
 Guardians of Akrasa
@@ -1039,6 +1045,7 @@ Lightning Talons
 Liliana's Caress
 Liliana's Specter
 Lingering Tormentor
+Lionheart Maverick
 Livewire Lash
 Llanowar Elves
 Loamdragger Giant
@@ -1054,6 +1061,7 @@ Lost Leonin
 Loxodon Hierarch
 Loxodon Mystic
 Loxodon Partisan
+Loxodon Stalwart
 Loxodon Warhammer
 Loxodon Wayfarer
 Loyal Sentry
@@ -1284,6 +1292,7 @@ Peregrine Mask
 Perilous Myr
 Perimeter Captain
 Persuasion
+Pestilent Kathari
 Pewter Golem
 Phantom Warrior
 Phobian Phantasm
@@ -1308,6 +1317,7 @@ Plains
 Plasma Elemental
 Plated Geopede
 Plated Seastrider
+Plated Slagwurm
 Platinum Angel
 Plover Knights
 Plumeveil
@@ -1510,6 +1520,7 @@ Serra Angel
 Serra Ascendant
 Serra's Blessing
 Serra's Embrace
+Serra Sphinx
 Serrated Arrows
 Servant of Nefarox
 Severed Legion
@@ -1526,6 +1537,7 @@ Shield of the Righteous
 Shivan Dragon
 Shivan Hellkite
 Shock
+Shore Snapper
 Shriekgeist
 Shrine of Burning Rage
 Sickle Ripper
@@ -1533,6 +1545,7 @@ Sickleslicer
 Siege-Gang Commander
 Siege Mastodon
 Sift
+Sighted-Caste Sorcerer
 Sightless Ghoul
 Sigil Blessing
 Sigiled Behemoth
@@ -1581,6 +1594,7 @@ Slayer of the Wicked
 Slayers' Stronghold
 Sleep
 Slinking Giant
+Slippery Bogle
 Slith Ascendant
 Slith Bloodletter
 Slith Firewalker
@@ -1655,6 +1669,7 @@ Standing Troops
 Starlight Invoker
 Staunch Defenders
 Steadfast Guard
+Steam Spitter
 Steam Vents
 Steel Wall
 Stensia Bloodhall
@@ -1858,6 +1873,7 @@ Vapor Snag
 Vastwood Gorger
 Vault of the Archangel
 Vault Skyward
+Vectis Silencers
 Vedalken Certarch
 Vedalken Ghoul
 Vedalken Mastermind
@@ -1924,6 +1940,7 @@ Wall of Reverence
 Wall of Spears
 Wall of Stone
 Wall of Swords
+Wall of Tanglecord
 Wall of Torches
 Wall of Vines
 Wall of Wood
@@ -1947,9 +1964,11 @@ Welkin Tern
 Whispersilk Cloak
 Whispers of the Muse
 White Knight
+White Shield Crusader
 Wickerbough Elder
 Wild Cantor
 Wild Defiance
+Wildfire Emissary
 Wild Griffin
 Wildsize
 Wildslayer Elves
