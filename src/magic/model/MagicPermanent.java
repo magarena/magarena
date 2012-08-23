@@ -201,6 +201,13 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             abilityPlayedThisTurn,
             damage,
             preventDamage,
+            cachedController.getId(),
+            cachedTypeFlags,
+            // cachedSubTypeFlags,
+            cachedColorFlags,
+            cachedAbilityFlags,
+            cachedPowerToughness.power(),
+            cachedPowerToughness.toughness(),
         };
         return magic.MurmurHash3.hash(input);
      }
