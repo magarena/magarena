@@ -273,7 +273,10 @@ public class MCTSAI implements MagicAI {
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
             
             assert !curr.hasDetails() || MCTSGameTree.checkNode(curr, choices) : 
-                "ERROR! Inconsistent node found" + "\n" + game + printPath(path) + MCTSGameTree.printNode(curr, choices);
+                "ERROR! Inconsistent node found" + "\n" +
+                game + " " + 
+                printPath(path) + " " + 
+                MCTSGameTree.printNode(curr, choices);
           
             final MagicEvent event = game.getNextEvent();
            
