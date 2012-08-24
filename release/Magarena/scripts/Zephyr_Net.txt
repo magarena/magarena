@@ -1,0 +1,11 @@
+name=Zephyr Net
+url=http://magiccards.info/lw/en/98.html
+image=http://magiccards.info/scans/en/lw/98.jpg
+value=2.182
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=defender,flying
+timing=aura
+enchant=defender,creature
