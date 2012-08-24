@@ -1,0 +1,11 @@
+name=Glimmerdust Nap
+url=http://magiccards.info/lw/en/68.html
+image=http://magiccards.info/scans/en/lw/68.jpg
+value=2.062
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+given_ability=doesn't untap during untap step
+timing=aura
+enchant=can't attack or block,neg creature
