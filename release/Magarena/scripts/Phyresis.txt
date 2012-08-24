@@ -1,0 +1,11 @@
+name=Phyresis
+url=http://magiccards.info/mbs/en/49.html
+image=http://magiccards.info/scans/en/mbs/49.jpg
+value=3.506
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+given_ability=infect
+timing=aura
+enchant=first strike,pos creature
