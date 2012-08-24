@@ -1,0 +1,12 @@
+name=Wings of Aesthir
+url=http://magiccards.info/cstd/en/43.html
+image=http://magiccards.info/scans/en/cstd/43.jpg
+value=3.414
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}{U}
+given_ability=flying,first strike
+given_pt=1/0
+timing=aura
+enchant=flying,pos creature
