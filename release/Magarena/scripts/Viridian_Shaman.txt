@@ -1,7 +1,7 @@
 name=Viridian Shaman
 url=http://magiccards.info/10e/en/308.html
 image=http://magiccards.info/scans/en/10e/308.jpg
-value=3.986
+value=4.000
 rarity=U
 type=Creature
 subtype=Elf,Shaman

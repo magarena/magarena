@@ -1,7 +1,7 @@
 name=Restoration Angel
 url=http://magiccards.info/avr/en/32.html
 image=http://magiccards.info/scans/en/avr/32.jpg
-value=4.473
+value=4.478
 rarity=R
 type=Creature
 subtype=Angel

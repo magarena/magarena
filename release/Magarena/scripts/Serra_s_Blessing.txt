@@ -1,7 +1,7 @@
 name=Serra's Blessing
 url=http://magiccards.info/9e/en/44.html
 image=http://magiccards.info/scans/en/9e/44.jpg
-value=4.516
+value=4.524
 rarity=U
 type=Enchantment
 cost={1}{W}

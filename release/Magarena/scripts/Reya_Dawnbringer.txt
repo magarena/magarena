@@ -1,7 +1,7 @@
 name=Reya Dawnbringer
 url=http://magiccards.info/dvd/en/13.html
 image=http://magiccards.info/scans/en/10e/35.jpg
-value=4.557
+value=4.561
 rarity=R
 type=Legendary,Creature
 subtype=Angel

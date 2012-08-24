@@ -1,7 +1,7 @@
 name=Oblivion Ring
 url=http://magiccards.info/m12/en/27.html
 image=http://magiccards.info/scans/en/m12/27.jpg
-value=4.250
+value=4.273
 removal=2
 rarity=C
 type=Enchantment

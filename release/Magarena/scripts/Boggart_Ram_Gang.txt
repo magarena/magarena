@@ -1,7 +1,7 @@
 name=Boggart Ram-Gang
 url=http://magiccards.info/pd2/en/13.html
 image=http://magiccards.info/scans/en/shm/203.jpg
-value=4.439
+value=4.448
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

@@ -1,7 +1,7 @@
 name=Heavy Mattock
 url=http://magiccards.info/dka/en/150.html
 image=http://magiccards.info/scans/en/dka/150.jpg
-value=1.125
+value=1.181
 rarity=C
 type=Artifact
 subtype=Equipment

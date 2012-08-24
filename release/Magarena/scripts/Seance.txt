@@ -1,7 +1,7 @@
 name=Seance
 url=http://magiccards.info/dka/en/20.html
 image=http://magiccards.info/scans/en/dka/20.jpg
-value=3.074
+value=3.073
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

@@ -1,7 +1,7 @@
 name=Scroll Thief
 url=http://magiccards.info/m11/en/72.html
 image=http://magiccards.info/scans/en/m11/72.jpg
-value=3.412
+value=3.500
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

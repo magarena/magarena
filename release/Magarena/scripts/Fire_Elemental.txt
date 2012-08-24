@@ -1,7 +1,7 @@
 name=Fire Elemental
 url=http://magiccards.info/7e/en/183.html
 image=http://magiccards.info/scans/en/7e/183.jpg 
-value=2.932
+value=2.870
 rarity=U
 type=Creature
 subtype=Elemental

@@ -1,7 +1,7 @@
 name=Nettle Sentinel
 url=http://magiccards.info/eve/en/71.html
 image=http://magiccards.info/scans/en/eve/71.jpg
-value=4.575
+value=4.580
 rarity=C
 type=Creature
 subtype=Elf,Warrior

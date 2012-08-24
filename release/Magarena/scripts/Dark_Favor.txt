@@ -1,7 +1,7 @@
 name=Dark Favor
 url=http://magiccards.info/m12/en/89.html
 image=http://magiccards.info/scans/en/m12/89.jpg
-value=2.714
+value=2.609
 rarity=C
 type=Enchantment
 subtype=Aura

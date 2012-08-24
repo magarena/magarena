@@ -1,7 +1,7 @@
 name=Hollowhenge Scavenger
 url=http://magiccards.info/isd/en/188.html
 image=http://magiccards.info/scans/en/isd/188.jpg
-value=3.106
+value=3.074
 rarity=U
 type=Creature
 subtype=Elemental

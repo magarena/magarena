@@ -1,7 +1,7 @@
 name=Kemba, Kha Regent
 url=http://magiccards.info/som/en/12.html
 image=http://magiccards.info/scans/en/som/12.jpg
-value=4.198
+value=4.195
 rarity=R
 type=Legendary,Creature
 subtype=Cat,Cleric

@@ -1,7 +1,7 @@
 name=Kor Duelist
 url=http://magiccards.info/zen/en/19.html
 image=http://magiccards.info/scans/en/zen/19.jpg
-value=4.184
+value=4.193
 rarity=U
 type=Creature
 subtype=Kor,Soldier

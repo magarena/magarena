@@ -1,7 +1,7 @@
 name=Inkfathom Infiltrator
 url=http://magiccards.info/shm/en/167.html
 image=http://magiccards.info/scans/en/shm/167.jpg
-value=4.138
+value=4.150
 rarity=U
 type=Creature
 subtype=Merfolk,Rogue

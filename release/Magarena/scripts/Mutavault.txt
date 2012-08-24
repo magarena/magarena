@@ -1,7 +1,7 @@
 name=Mutavault
 url=http://magiccards.info/mt/en/148.html
 image=http://magiccards.info/scans/en/mt/148.jpg
-value=4.640
+value=4.643
 rarity=R
 type=Land
 ability=tap add mana {1}

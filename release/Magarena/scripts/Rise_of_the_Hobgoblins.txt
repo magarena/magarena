@@ -1,7 +1,7 @@
 name=Rise of the Hobgoblins
 url=http://magiccards.info/eve/en/145.html
 image=http://magiccards.info/scans/en/eve/145.jpg
-value=4.099
+value=4.104
 rarity=R
 type=Enchantment
 cost={R/W}{R/W}

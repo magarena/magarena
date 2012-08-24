@@ -1,7 +1,7 @@
 name=Emancipation Angel
 url=http://magiccards.info/avr/en/19.html
 image=http://magiccards.info/scans/en/avr/19.jpg
-value=4.070
+value=4.077
 removal=2
 rarity=U
 type=Creature

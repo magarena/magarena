@@ -1,7 +1,7 @@
 name=Disperse
 url=http://magiccards.info/som/en/31.html
 image=http://magiccards.info/scans/en/som/31.jpg
-value=3.380
+value=3.409
 rarity=C
 type=Instant
 cost={1}{U}

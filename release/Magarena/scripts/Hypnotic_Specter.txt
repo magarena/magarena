@@ -1,7 +1,7 @@
 name=Hypnotic Specter
 url=http://magiccards.info/m10/en/100.html
 image=http://magiccards.info/scans/en/m10/100.jpg
-value=4.673
+value=4.675
 rarity=U
 type=Creature
 subtype=Specter

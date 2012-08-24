@@ -1,7 +1,7 @@
 name=Quicksilver Amulet
 url=http://magiccards.info/m12/en/214.html
 image=http://magiccards.info/scans/en/m12/214.jpg
-value=4.222
+value=4.230
 rarity=R
 type=Artifact
 cost={4}

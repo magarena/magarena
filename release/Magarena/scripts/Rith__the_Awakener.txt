@@ -1,7 +1,7 @@
 name=Rith, the Awakener
 url=http://magiccards.info/pvc/en/48.html
 image=http://magiccards.info/scans/en/pvc/48.jpg
-value=4.433
+value=4.413
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

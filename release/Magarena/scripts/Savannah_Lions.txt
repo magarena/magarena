@@ -1,7 +1,7 @@
 name=Savannah Lions
 url=http://magiccards.info/me4/en/24.html
 image=http://magiccards.info/scans/en/me4/24.jpg
-value=4.224
+value=4.217
 rarity=U
 type=Creature
 subtype=Cat

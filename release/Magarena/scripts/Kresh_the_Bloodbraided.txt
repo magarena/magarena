@@ -1,7 +1,7 @@
 name=Kresh the Bloodbraided
 url=http://magiccards.info/ala/en/178.html
 image=http://magiccards.info/scans/en/ala/178.jpg
-value=3.825
+value=3.839
 rarity=M
 type=Legendary,Creature
 subtype=Human,Warrior

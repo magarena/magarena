@@ -1,7 +1,7 @@
 name=Alloy Myr
 url=http://magiccards.info/nph/en/129.html
 image=http://magiccards.info/scans/en/nph/129.jpg
-value=3.830
+value=3.848
 rarity=U
 type=Artifact,Creature
 subtype=Myr

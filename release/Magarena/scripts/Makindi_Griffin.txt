@@ -1,7 +1,7 @@
 name=Makindi Griffin
 url=http://magiccards.info/roe/en/36.html
 image=http://magiccards.info/scans/en/roe/36.jpg 
-value=2.738
+value=2.744
 ability=flying
 rarity=C
 type=Creature

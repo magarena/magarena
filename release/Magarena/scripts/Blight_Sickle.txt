@@ -1,7 +1,7 @@
 name=Blight Sickle
 url=http://magiccards.info/shm/en/247.html
 image=http://magiccards.info/scans/en/shm/247.jpg
-value=2.989
+value=3.032
 rarity=C
 type=Artifact
 subtype=Equipment

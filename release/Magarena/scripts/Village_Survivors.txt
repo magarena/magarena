@@ -1,7 +1,7 @@
 name=Village Survivors
 url=http://magiccards.info/dka/en/130.html
 image=http://magiccards.info/scans/en/dka/130.jpg
-value=3.156
+value=3.212
 rarity=U
 type=Creature
 subtype=Human

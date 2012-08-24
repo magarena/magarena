@@ -1,7 +1,7 @@
 name=Might of Oaks
 url=http://magiccards.info/m10/en/192.html
 image=http://magiccards.info/scans/en/m10/192.jpg
-value=3.957
+value=3.958
 rarity=R
 type=Instant
 cost={3}{G}

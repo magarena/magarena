@@ -1,7 +1,7 @@
 name=Counterspell
 url=http://magiccards.info/jvc/en/24.html
 image=http://magiccards.info/scans/en/jvc/24.jpg
-value=4.798
+value=4.801
 rarity=C
 type=Instant
 cost={U}{U}

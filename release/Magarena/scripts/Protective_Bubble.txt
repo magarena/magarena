@@ -1,7 +1,7 @@
 name=Protective Bubble
 url=http://magiccards.info/lw/en/80.html
 image=http://magiccards.info/scans/en/lw/80.jpg
-value=3.400
+value=3.402
 rarity=C
 type=Enchantment
 subtype=Aura

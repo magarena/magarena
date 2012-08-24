@@ -1,7 +1,7 @@
 name=Mox Ruby
 url=http://magiccards.info/cedi/en/266.html
 image=http://magiccards.info/scans/en/cedi/266.jpg
-value=4.668
+value=4.672
 rarity=R
 type=Artifact
 cost={0}

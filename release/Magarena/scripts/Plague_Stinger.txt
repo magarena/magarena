@@ -1,7 +1,7 @@
 name=Plague Stinger
 url=http://magiccards.info/som/en/75.html
 image=http://magiccards.info/scans/en/som/75.jpg
-value=4.262
+value=4.255
 rarity=C
 type=Creature
 subtype=Insect,Horror

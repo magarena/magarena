@@ -1,7 +1,7 @@
 name=Rapacious One
 url=http://magiccards.info/cmd/en/133.html
 image=http://magiccards.info/scans/en/cmd/133.jpg 
-value=3.533
+value=3.548
 rarity=U
 type=Creature
 subtype=Eldrazi,Drone

@@ -1,7 +1,7 @@
 name=Deranged Hermit
 url=http://magiccards.info/ul/en/101.html
 image=http://magiccards.info/scans/en/ul/101.jpg
-value=4.463
+value=4.404
 rarity=R
 type=Creature
 subtype=Elf

@@ -1,7 +1,7 @@
 name=Seraph of Dawn
 url=http://magiccards.info/avr/en/35.html
 image=http://magiccards.info/scans/en/avr/35.jpg
-value=3.962
+value=3.972
 rarity=C
 type=Creature
 subtype=Angel

@@ -1,7 +1,7 @@
 name=Carrion Wall
 url=http://magiccards.info/8e/en/121.html
 image=http://magiccards.info/scans/en/8e/121.jpg
-value=3.130
+value=3.125
 rarity=U
 type=Creature
 subtype=Wall

@@ -1,7 +1,7 @@
 name=Primordial Hydra
 url=http://magiccards.info/m12/en/189.html
 image=http://magiccards.info/scans/en/m12/189.jpg
-value=3.970
+value=4.079
 rarity=M
 type=Creature
 subtype=Hydra

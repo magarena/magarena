@@ -1,7 +1,7 @@
 name=Stratozeppelid
 url=http://magiccards.info/gp/en/36.html
 image=http://magiccards.info/scans/en/gp/36.jpg 
-value=1.946
+value=2.000
 ability=flying,can't block creatures without flying
 rarity=U
 type=Creature

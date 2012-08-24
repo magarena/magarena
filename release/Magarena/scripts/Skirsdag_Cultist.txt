@@ -1,7 +1,7 @@
 name=Skirsdag Cultist
 url=http://magiccards.info/isd/en/163.html
 image=http://magiccards.info/scans/en/isd/163.jpg
-value=2.773
+value=2.778
 rarity=U
 type=Creature
 subtype=Human,Shaman

@@ -1,7 +1,7 @@
 name=Serra Angel
 url=http://magiccards.info/m12/en/33.html
 image=http://magiccards.info/scans/en/dvd/10.jpg
-value=3.942
+value=3.967
 ability=flying,vigilance
 rarity=R
 type=Creature

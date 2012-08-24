@@ -1,7 +1,7 @@
 name=Boar Umbra
 url=http://magiccards.info/roe/en/179.html
 image=http://magiccards.info/scans/en/roe/179.jpg
-value=3.900
+value=3.333
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Woodripper
 url=http://magiccards.info/ne/en/125.html
 image=http://magiccards.info/scans/en/ne/125.jpg
-value=2.812
+value=2.803
 rarity=U
 type=Creature
 subtype=Beast

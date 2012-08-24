@@ -1,7 +1,7 @@
 name=Duskdale Wurm
 url=http://magiccards.info/dpa/en/58.html
 image=http://magiccards.info/scans/en/dpa/58.jpg 
-value=3.219
+value=3.194
 ability=trample
 rarity=U
 type=Creature

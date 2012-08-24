@@ -1,7 +1,7 @@
 name=Godsire
 url=http://magiccards.info/ala/en/170.html
 image=http://magiccards.info/scans/en/ala/170.jpg
-value=4.317
+value=4.321
 rarity=M
 type=Creature
 subtype=Beast

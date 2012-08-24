@@ -1,7 +1,7 @@
 name=Sunpetal Grove
 url=http://magiccards.info/m12/en/229.html
 image=http://magiccards.info/scans/en/m11/228.jpg
-value=3.840
+value=3.904
 rarity=R
 type=Land
 mana=g3w3

@@ -1,7 +1,7 @@
 name=Guul Draz Specter
 url=http://magiccards.info/zen/en/92.html
 image=http://magiccards.info/scans/en/zen/92.jpg
-value=4.114
+value=4.125
 rarity=R
 type=Creature
 subtype=Specter

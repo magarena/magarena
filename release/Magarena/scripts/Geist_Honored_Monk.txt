@@ -1,7 +1,7 @@
 name=Geist-Honored Monk
 url=http://magiccards.info/isd/en/17.html
 image=http://magiccards.info/scans/en/isd/17.jpg
-value=3.927
+value=3.940
 rarity=R
 type=Creature
 subtype=Human,Monk

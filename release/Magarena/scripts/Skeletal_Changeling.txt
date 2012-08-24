@@ -1,7 +1,7 @@
 name=Skeletal Changeling
 url=http://magiccards.info/lw/en/140.html
 image=http://magiccards.info/scans/en/lw/140.jpg
-value=2.717
+value=2.729
 rarity=C
 type=Creature
 subtype=Shapeshifter

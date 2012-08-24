@@ -1,7 +1,7 @@
 name=Seal of Doom
 url=http://magiccards.info/di/en/53.html
 image=http://magiccards.info/scans/en/di/53.jpg
-value=3.894
+value=3.897
 removal=3
 rarity=C
 type=Enchantment

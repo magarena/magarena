@@ -1,7 +1,7 @@
 name=Rupture Spire
 url=http://magiccards.info/ddh/en/75.html
 image=http://magiccards.info/scans/en/cfx/144.jpg
-value=2.750
+value=2.778
 rarity=C
 type=Land
 mana=b3g3r3u3w3

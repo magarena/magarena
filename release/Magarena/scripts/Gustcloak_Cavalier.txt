@@ -1,7 +1,7 @@
 name=Gustcloak Cavalier
 url=http://magiccards.info/ts/en/22.html
 image=http://magiccards.info/scans/en/ts/22.jpg
-value=2.911
+value=2.948
 rarity=U
 type=Creature
 subtype=Human,Knight

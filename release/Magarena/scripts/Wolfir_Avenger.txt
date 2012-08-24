@@ -1,7 +1,7 @@
 name=Wolfir Avenger
 url=http://magiccards.info/avr/en/205.html
 image=http://magiccards.info/scans/en/avr/205.jpg
-value=4.262
+value=4.273
 rarity=U
 type=Creature
 subtype=Wolf,Warrior

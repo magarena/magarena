@@ -1,7 +1,7 @@
 name=Dancing Scimitar
 url=http://magiccards.info/9e/en/292.html
 image=http://magiccards.info/scans/en/9e/292.jpg 
-value=3.105
+value=3.132
 ability=flying
 rarity=R
 type=Artifact,Creature

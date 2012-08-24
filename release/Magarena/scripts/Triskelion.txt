@@ -1,7 +1,7 @@
 name=Triskelion
 url=http://magiccards.info/ddf/en/57.html
 image=http://magiccards.info/scans/en/m11/218.jpg
-value=4.018
+value=4.029
 rarity=R
 type=Artifact,Creature
 subtype=Construct

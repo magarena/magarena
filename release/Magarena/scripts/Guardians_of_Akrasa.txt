@@ -1,7 +1,7 @@
 name=Guardians of Akrasa
 url=http://magiccards.info/ala/en/12.html
 image=http://magiccards.info/scans/en/ala/12.jpg 
-value=2.619
+value=2.636
 ability=defender,exalted
 rarity=C
 type=Creature

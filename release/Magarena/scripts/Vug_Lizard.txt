@@ -1,7 +1,7 @@
 name=Vug Lizard
 url=http://magiccards.info/us/en/227.html
 image=http://magiccards.info/scans/en/us/227.jpg
-value=3.000
+value=2.969
 rarity=U
 type=Creature
 subtype=Lizard

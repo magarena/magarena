@@ -1,7 +1,7 @@
 name=Tireless Missionaries
 url=http://magiccards.info/m11/en/36.html
 image=http://magiccards.info/scans/en/m11/36.jpg
-value=0.920
+value=0.914
 rarity=C
 type=Creature
 subtype=Human,Cleric

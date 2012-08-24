@@ -1,7 +1,7 @@
 name=Kazandu Blademaster
 url=http://magiccards.info/zen/en/16.html
 image=http://magiccards.info/scans/en/zen/16.jpg
-value=4.392
+value=4.396
 rarity=U
 type=Creature
 subtype=Human,Soldier,Ally

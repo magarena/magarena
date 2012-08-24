@@ -1,7 +1,7 @@
 name=Bladetusk Boar
 url=http://magiccards.info/zen/en/118.html
 image=http://magiccards.info/scans/en/zen/118.jpg 
-value=2.750
+value=2.771
 ability=intimidate
 rarity=C
 type=Creature

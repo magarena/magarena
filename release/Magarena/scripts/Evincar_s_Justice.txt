@@ -1,7 +1,7 @@
 name=Evincar's Justice
 url=http://magiccards.info/cmd/en/80.html
 image=http://magiccards.info/scans/en/cmd/80.jpg
-value=3.382
+value=3.417
 removal=2
 rarity=C
 type=Sorcery

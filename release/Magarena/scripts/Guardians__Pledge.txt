@@ -1,7 +1,7 @@
 name=Guardians' Pledge
 url=http://magiccards.info/m12/en/22.html
 image=http://magiccards.info/scans/en/m12/22.jpg
-value=3.062
+value=3.102
 rarity=C
 type=Instant
 cost={1}{W}{W}

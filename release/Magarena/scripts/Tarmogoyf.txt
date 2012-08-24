@@ -1,7 +1,7 @@
 name=Tarmogoyf
 url=http://magiccards.info/fut/en/153.html
 image=http://magiccards.info/scans/en/fut/153.jpg
-value=4.437
+value=4.429
 rarity=R
 type=Creature
 subtype=Lhurgoyf

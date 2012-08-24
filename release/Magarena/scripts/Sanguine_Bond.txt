@@ -1,7 +1,7 @@
 name=Sanguine Bond
 url=http://magiccards.info/m10/en/111.html
 image=http://magiccards.info/scans/en/m10/111.jpg
-value=4.391
+value=4.392
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

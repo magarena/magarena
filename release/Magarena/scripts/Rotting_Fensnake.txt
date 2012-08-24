@@ -1,7 +1,7 @@
 name=Rotting Fensnake
 url=http://magiccards.info/isd/en/113.html
 image=http://magiccards.info/scans/en/isd/113.jpg
-value=2.430
+value=2.480
 rarity=C
 type=Creature
 subtype=Zombie,Snake

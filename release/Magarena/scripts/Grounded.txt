@@ -1,7 +1,7 @@
 name=Grounded
 url=http://magiccards.info/avr/en/181.html
 image=http://magiccards.info/scans/en/avr/181.jpg
-value=0.949
+value=1.030
 rarity=C
 type=Enchantment
 subtype=Aura

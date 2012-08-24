@@ -1,7 +1,7 @@
 name=Moorland Inquisitor
 url=http://magiccards.info/avr/en/30.html
 image=http://magiccards.info/scans/en/avr/30.jpg
-value=2.480
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Kamahl, Pit Fighter
 url=http://magiccards.info/dpa/en/49.html
 image=http://magiccards.info/scans/en/10e/214.jpg
-value=4.244
+value=4.253
 rarity=R
 type=Legendary,Creature
 subtype=Human,Barbarian

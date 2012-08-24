@@ -1,7 +1,7 @@
 name=Flowstone Charger
 url=http://magiccards.info/ap/en/99.html
 image=http://magiccards.info/scans/en/ap/99.jpg
-value=2.940
+value=2.942
 rarity=U
 type=Creature
 subtype=Beast

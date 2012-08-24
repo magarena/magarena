@@ -1,7 +1,7 @@
 name=Chasm Drake
 url=http://magiccards.info/m12/en/48.html
 image=http://magiccards.info/scans/en/m12/48.jpg
-value=3.067
+value=3.076
 rarity=C
 type=Creature
 subtype=Drake

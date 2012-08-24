@@ -1,7 +1,7 @@
 name=Armament Master
 url=http://magiccards.info/zen/en/1.html
 image=http://magiccards.info/scans/en/zen/1.jpg
-value=4.136
+value=4.152
 rarity=R
 type=Creature
 subtype=Kor,Soldier

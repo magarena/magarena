@@ -1,7 +1,7 @@
 name=Ruthless Cullblade
 url=http://magiccards.info/wwk/en/65.html
 image=http://magiccards.info/scans/en/wwk/65.jpg
-value=3.023
+value=3.067
 rarity=C
 type=Creature
 subtype=Vampire,Warrior

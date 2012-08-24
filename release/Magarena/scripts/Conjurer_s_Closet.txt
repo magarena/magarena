@@ -1,7 +1,7 @@
 name=Conjurer's Closet
 url=http://magiccards.info/avr/en/214.html
 image=http://magiccards.info/scans/en/avr/214.jpg
-value=3.906
+value=3.940
 rarity=R
 type=Artifact
 cost={5}

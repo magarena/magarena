@@ -1,7 +1,7 @@
 name=Etched Champion
 url=http://magiccards.info/som/en/154.html
 image=http://magiccards.info/scans/en/som/154.jpg
-value=4.307
+value=4.312
 rarity=R
 type=Artifact,Creature
 subtype=Soldier

@@ -1,7 +1,7 @@
 name=Skyhunter Cub
 url=http://magiccards.info/mi/en/21.html
 image=http://magiccards.info/scans/en/mi/21.jpg
-value=3.017
+value=3.016
 rarity=C
 type=Creature
 subtype=Cat,Knight

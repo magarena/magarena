@@ -1,7 +1,7 @@
 name=Guiltfeeder
 url=http://magiccards.info/ju/en/68.html
 image=http://magiccards.info/scans/en/ju/68.jpg
-value=4.298
+value=4.302
 rarity=R
 type=Creature
 subtype=Horror

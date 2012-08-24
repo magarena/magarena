@@ -1,7 +1,7 @@
 name=Champion of the Parish
 url=http://magiccards.info/isd/en/6.html
 image=http://magiccards.info/scans/en/isd/6.jpg
-value=4.088
+value=4.104
 rarity=R
 type=Creature
 subtype=Human,Soldier

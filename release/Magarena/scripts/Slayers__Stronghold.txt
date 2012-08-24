@@ -1,7 +1,7 @@
 name=Slayers' Stronghold
 url=http://magiccards.info/avr/en/229.html
 image=http://magiccards.info/scans/en/avr/229.jpg
-value=3.798
+value=3.826
 rarity=R
 type=Land
 ability=tap add mana {1}

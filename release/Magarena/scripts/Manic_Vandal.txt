@@ -1,7 +1,7 @@
 name=Manic Vandal
 url=http://magiccards.info/m12/en/151.html
 image=http://magiccards.info/scans/en/m12/151.jpg
-value=3.808
+value=3.812
 removal=1
 rarity=C
 type=Creature

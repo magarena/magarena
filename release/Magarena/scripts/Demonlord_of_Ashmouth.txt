@@ -1,7 +1,7 @@
 name=Demonlord of Ashmouth
 url=http://magiccards.info/avr/en/96.html
 image=http://magiccards.info/scans/en/avr/96.jpg
-value=3.914
+value=3.933
 rarity=R
 type=Creature
 subtype=Demon

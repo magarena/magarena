@@ -1,7 +1,7 @@
 name=Kazandu Refuge
 url=http://magiccards.info/ddh/en/35.html
 image=http://magiccards.info/scans/en/arc/126.jpg
-value=3.250
+value=3.000
 rarity=U
 type=Land
 mana=r3g3

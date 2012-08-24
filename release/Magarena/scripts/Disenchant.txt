@@ -1,7 +1,7 @@
 name=Disenchant
 url=http://magiccards.info/tsts/en/6.html
 image=http://magiccards.info/scans/en/tsts/6.jpg
-value=4.433
+value=4.435
 removal=1
 rarity=C
 type=Instant

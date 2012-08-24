@@ -1,7 +1,7 @@
 name=Lone Missionary
 url=http://magiccards.info/roe/en/34.html
 image=http://magiccards.info/scans/en/roe/34.jpg
-value=4.049
+value=4.055
 rarity=C
 type=Creature
 subtype=Kor,Monk

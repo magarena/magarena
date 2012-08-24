@@ -1,7 +1,7 @@
 name=Horrible Hordes
 url=http://magiccards.info/mr/en/269.html
 image=http://magiccards.info/scans/en/mr/269.jpg
-value=2.692
+value=2.750
 rarity=U
 type=Artifact,Creature
 subtype=Spirit

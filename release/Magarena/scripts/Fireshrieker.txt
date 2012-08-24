@@ -1,7 +1,7 @@
 name=Fireshrieker
 url=http://magiccards.info/mi/en/171.html
 image=http://magiccards.info/scans/en/mi/171.jpg
-value=4.328
+value=4.331
 rarity=U
 type=Artifact
 subtype=Equipment

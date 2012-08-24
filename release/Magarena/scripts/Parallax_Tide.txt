@@ -1,7 +1,7 @@
 name=Parallax Tide
 url=http://magiccards.info/ne/en/37.html
 image=http://magiccards.info/scans/en/ne/37.jpg
-value=4.000
+value=3.986
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

@@ -1,7 +1,7 @@
 name=Explore
 url=http://magiccards.info/wwk/en/99.html
 image=http://magiccards.info/scans/en/wwk/99.jpg
-value=4.009
+value=4.018
 rarity=C
 type=Sorcery
 cost={1}{G}

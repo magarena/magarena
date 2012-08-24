@@ -1,7 +1,7 @@
 name=Knight of Infamy
 url=http://magiccards.info/m13/en/96.html
 image=http://magiccards.info/scans/en/m13/96.jpg
-value=3.950
+value=4.000
 rarity=U
 type=Creature
 subtype=Human,Knight

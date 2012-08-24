@@ -1,7 +1,7 @@
 name=Scion of the Wild
 url=http://magiccards.info/10e/en/295.html
 image=http://magiccards.info/scans/en/10e/295.jpg
-value=4.062
+value=4.082
 rarity=R
 type=Creature
 subtype=Avatar

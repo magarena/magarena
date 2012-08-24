@@ -1,7 +1,7 @@
 name=Glissa, the Traitor
 url=http://magiccards.info/mbs/en/96.html
 image=http://magiccards.info/scans/en/mbs/96.jpg
-value=4.667
+value=4.669
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Elf

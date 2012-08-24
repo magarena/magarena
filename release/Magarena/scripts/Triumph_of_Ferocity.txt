@@ -1,7 +1,7 @@
 name=Triumph of Ferocity
 url=http://magiccards.info/avr/en/198.html
 image=http://magiccards.info/scans/en/avr/198.jpg
-value=3.547
+value=3.568
 rarity=U
 type=Enchantment
 cost={2}{G}

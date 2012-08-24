@@ -1,7 +1,7 @@
 name=Damnation
 url=http://magiccards.info/pc/en/85.html
 image=http://magiccards.info/scans/en/pc/85.jpg
-value=4.793
+value=4.795
 removal=2
 rarity=R
 type=Sorcery

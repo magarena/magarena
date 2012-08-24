@@ -1,7 +1,7 @@
 name=Angel of Despair
 url=http://magiccards.info/cmd/en/180.html
 image=http://magiccards.info/scans/en/gp/101.jpg
-value=4.279
+value=4.290
 removal=4
 rarity=R
 type=Creature

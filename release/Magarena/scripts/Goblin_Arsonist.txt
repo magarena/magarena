@@ -1,7 +1,7 @@
 name=Goblin Arsonist
 url=http://magiccards.info/m12/en/136.html
 image=http://magiccards.info/scans/en/m12/136.jpg
-value=3.304
+value=3.365
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

@@ -1,7 +1,7 @@
 name=Steadfast Guard
 url=http://magiccards.info/10e/en/48.html
 image=http://magiccards.info/scans/en/10e/48.jpg 
-value=4.011
+value=4.022
 ability=vigilance
 rarity=C
 type=Creature

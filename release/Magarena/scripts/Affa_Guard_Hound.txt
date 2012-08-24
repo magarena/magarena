@@ -1,7 +1,7 @@
 name=Affa Guard Hound
 url=http://magiccards.info/roe/en/14.html
 image=http://magiccards.info/scans/en/roe/14.jpg
-value=2.972
+value=2.973
 rarity=U
 type=Creature
 subtype=Hound

@@ -1,7 +1,7 @@
 name=Fire Servant
 url=http://magiccards.info/pd2/en/15.html
 image=http://magiccards.info/scans/en/m11/137.jpg
-value=4.284
+value=4.297
 rarity=U
 type=Creature
 subtype=Elemental

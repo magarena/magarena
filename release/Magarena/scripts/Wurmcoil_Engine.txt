@@ -1,7 +1,7 @@
 name=Wurmcoil Engine
 url=http://magiccards.info/som/en/223.html
 image=http://magiccards.info/scans/en/som/223.jpg
-value=4.605
+value=4.606
 rarity=M
 type=Artifact,Creature
 subtype=Wurm

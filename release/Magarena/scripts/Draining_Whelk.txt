@@ -1,7 +1,7 @@
 name=Draining Whelk
 url=http://magiccards.info/ts/en/57.html
 image=http://magiccards.info/scans/en/ts/57.jpg
-value=4.175
+value=4.180
 rarity=R
 type=Creature
 subtype=Illusion

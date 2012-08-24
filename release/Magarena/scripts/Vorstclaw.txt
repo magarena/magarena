@@ -1,7 +1,7 @@
 name=Vorstclaw
 url=http://magiccards.info/avr/en/201.html
 image=http://magiccards.info/scans/en/avr/201.jpg 
-value=3.233
+value=3.273
 rarity=U
 type=Creature
 subtype=Elemental,Horror

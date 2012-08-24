@@ -1,7 +1,7 @@
 name=Flight of Fancy
 url=http://magiccards.info/rav/en/49.html
 image=http://magiccards.info/scans/en/rav/49.jpg
-value=3.779
+value=3.761
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Curiosity
 url=http://magiccards.info/isd/en/49.html
 image=http://magiccards.info/scans/en/isd/49.jpg
-value=4.058
+value=4.064
 rarity=U
 type=Enchantment
 subtype=Aura

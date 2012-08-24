@@ -1,7 +1,7 @@
 name=Sphinx of Magosi
 url=http://magiccards.info/roe/en/89.html
 image=http://magiccards.info/scans/en/roe/89.jpg
-value=4.381
+value=4.385
 rarity=R
 type=Creature
 subtype=Sphinx

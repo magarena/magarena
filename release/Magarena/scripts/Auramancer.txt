@@ -1,7 +1,7 @@
 name=Auramancer
 url=http://magiccards.info/m12/en/9.html
 image=http://magiccards.info/scans/en/m12/9.jpg
-value=4.083
+value=4.188
 rarity=C
 type=Creature
 subtype=Human,Wizard

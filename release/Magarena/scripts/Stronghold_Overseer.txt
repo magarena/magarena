@@ -1,7 +1,7 @@
 name=Stronghold Overseer
 url=http://magiccards.info/ts/en/133.html
 image=http://magiccards.info/scans/en/ts/133.jpg
-value=4.383
+value=4.385
 rarity=R
 type=Creature
 subtype=Demon

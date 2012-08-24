@@ -1,7 +1,7 @@
 name=Qasali Pridemage
 url=http://magiccards.info/ddh/en/10.html
 image=http://magiccards.info/scans/en/arb/75.jpg
-value=4.566
+value=4.475
 rarity=C
 type=Creature
 subtype=Cat,Wizard

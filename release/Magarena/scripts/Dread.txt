@@ -1,7 +1,7 @@
 name=Dread
 url=http://magiccards.info/lw/en/107.html
 image=http://magiccards.info/scans/en/lw/107.jpg
-value=4.431
+value=4.436
 rarity=R
 type=Creature
 subtype=Elemental,Incarnation

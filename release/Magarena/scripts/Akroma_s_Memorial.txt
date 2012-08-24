@@ -1,7 +1,7 @@
 name=Akroma's Memorial
 url=http://magiccards.info/fut/en/159.html
 image=http://magiccards.info/scans/en/fut/159.jpg
-value=3.984
+value=3.992
 rarity=R
 type=Legendary,Artifact
 cost={7}

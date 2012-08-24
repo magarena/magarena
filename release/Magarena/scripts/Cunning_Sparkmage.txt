@@ -1,7 +1,7 @@
 name=Cunning Sparkmage
 url=http://magiccards.info/wwk/en/79.html
 image=http://magiccards.info/scans/en/wwk/79.jpg
-value=4.151
+value=4.154
 rarity=U
 type=Creature
 subtype=Human,Shaman

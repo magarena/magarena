@@ -1,7 +1,7 @@
 name=Human Frailty
 url=http://magiccards.info/avr/en/109.html
 image=http://magiccards.info/scans/en/avr/109.jpg
-value=3.088
+value=3.043
 removal=2
 rarity=U
 type=Instant

@@ -1,7 +1,7 @@
 name=Dwarven Berserker
 url=http://magiccards.info/wl/en/97.html
 image=http://magiccards.info/scans/en/wl/97.jpg
-value=3.512
+value=3.549
 rarity=C
 type=Creature
 subtype=Dwarf,Berserker

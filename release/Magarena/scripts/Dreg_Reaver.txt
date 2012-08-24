@@ -1,7 +1,7 @@
 name=Dreg Reaver
 url=http://magiccards.info/ala/en/73.html
 image=http://magiccards.info/scans/en/ala/73.jpg 
-value=1.136
+value=1.134
 rarity=C
 type=Creature
 subtype=Zombie,Beast

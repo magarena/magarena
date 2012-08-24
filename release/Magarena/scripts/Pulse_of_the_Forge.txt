@@ -1,7 +1,7 @@
 name=Pulse of the Forge
 url=http://magiccards.info/ds/en/66.html
 image=http://magiccards.info/scans/en/ds/66.jpg
-value=4.132
+value=4.157
 removal=4
 rarity=R
 type=Instant

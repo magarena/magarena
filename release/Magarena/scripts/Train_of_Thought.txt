@@ -1,7 +1,7 @@
 name=Train of Thought
 url=http://magiccards.info/gp/en/39.html
 image=http://magiccards.info/scans/en/gp/39.jpg
-value=2.725
+value=2.720
 rarity=C
 type=Sorcery
 cost={1}{U}

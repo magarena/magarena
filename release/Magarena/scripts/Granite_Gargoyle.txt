@@ -1,7 +1,7 @@
 name=Granite Gargoyle
 url=http://magiccards.info/med/en/99.html
 image=http://magiccards.info/scans/en/med/99.jpg
-value=3.648
+value=3.656
 ability=flying,pump {R} +0/+1
 rarity=R
 type=Creature

@@ -1,7 +1,7 @@
 name=Akoum Boulderfoot
 url=http://magiccards.info/roe/en/134.html
 image=http://magiccards.info/scans/en/roe/134.jpg
-value=1.519
+value=1.525
 rarity=U
 type=Creature
 subtype=Giant,Warrior

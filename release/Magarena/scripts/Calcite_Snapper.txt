@@ -1,7 +1,7 @@
 name=Calcite Snapper
 url=http://magiccards.info/wwk/en/25.html
 image=http://magiccards.info/scans/en/wwk/25.jpg
-value=3.942
+value=3.946
 rarity=C
 type=Creature
 subtype=Turtle

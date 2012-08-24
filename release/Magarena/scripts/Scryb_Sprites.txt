@@ -1,7 +1,7 @@
 name=Scryb Sprites
 url=http://magiccards.info/me3/en/132.html
 image=http://magiccards.info/scans/en/me3/132.jpg
-value=4.206
+value=4.203
 ability=flying
 rarity=C
 type=Creature

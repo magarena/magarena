@@ -1,7 +1,7 @@
 name=Glacial Wall
 url=http://magiccards.info/7e/en/78.html
 image=http://magiccards.info/scans/en/7e/78.jpg 
-value=3.041
+value=3.054
 ability=defender
 rarity=U
 type=Creature

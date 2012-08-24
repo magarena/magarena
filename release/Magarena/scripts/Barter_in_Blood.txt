@@ -1,7 +1,7 @@
 name=Barter in Blood
 url=http://magiccards.info/avr/en/85.html
 image=http://magiccards.info/scans/en/avr/85.jpg
-value=3.812
+value=3.796
 removal=4
 rarity=U
 type=Sorcery

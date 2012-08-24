@@ -1,7 +1,7 @@
 name=Skywatcher Adept
 url=http://magiccards.info/roe/en/88.html
 image=http://magiccards.info/scans/en/roe/88.jpg
-value=3.117
+value=3.156
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

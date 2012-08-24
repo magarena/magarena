@@ -1,7 +1,7 @@
 name=Anoint
 url=http://magiccards.info/tp/en/215.html
 image=http://magiccards.info/scans/en/tp/215.jpg
-value=1.914
+value=1.903
 rarity=C
 type=Instant
 cost={W}

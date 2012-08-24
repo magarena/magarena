@@ -1,7 +1,7 @@
 name=Avalanche Riders
 url=http://magiccards.info/ul/en/74.html
 image=http://magiccards.info/scans/en/ul/74.jpg
-value=4.228
+value=4.216
 removal=1
 rarity=U
 type=Creature

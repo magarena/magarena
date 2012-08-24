@@ -1,7 +1,7 @@
 name=Raksha Golden Cub
 url=http://magiccards.info/5dn/en/12.html
 image=http://magiccards.info/scans/en/5dn/12.jpg
-value=4.113
+value=4.111
 rarity=R
 type=Legendary,Creature
 subtype=Cat,Soldier

@@ -1,7 +1,7 @@
 name=Vorapede
 url=http://magiccards.info/dka/en/131.html
 image=http://magiccards.info/scans/en/dka/131.jpg
-value=3.981
+value=4.000
 rarity=M
 type=Creature
 subtype=Insect

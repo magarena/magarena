@@ -1,7 +1,7 @@
 name=Vampire Hexmage
 url=http://magiccards.info/zen/en/114.html
 image=http://magiccards.info/scans/en/zen/114.jpg
-value=4.520
+value=4.524
 rarity=U
 type=Creature
 subtype=Vampire,Shaman

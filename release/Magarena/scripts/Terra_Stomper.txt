@@ -1,7 +1,7 @@
 name=Terra Stomper
 url=http://magiccards.info/zen/en/187.html
 image=http://magiccards.info/scans/en/zen/187.jpg
-value=4.313
+value=4.319
 rarity=R
 type=Creature
 subtype=Beast

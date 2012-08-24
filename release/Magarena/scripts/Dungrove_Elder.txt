@@ -1,7 +1,7 @@
 name=Dungrove Elder
 url=http://magiccards.info/m12/en/171.html
 image=http://magiccards.info/scans/en/m12/171.jpg
-value=4.135
+value=4.149
 rarity=R
 type=Creature
 subtype=Treefolk

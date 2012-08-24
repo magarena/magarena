@@ -1,7 +1,7 @@
 name=White Knight
 url=http://magiccards.info/ddg/en/9.html
 image=http://magiccards.info/scans/en/m11/39.jpg
-value=4.355
+value=4.359
 rarity=U
 type=Creature
 subtype=Human,Knight

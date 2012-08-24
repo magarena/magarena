@@ -1,7 +1,7 @@
 name=Darksteel Juggernaut
 url=http://magiccards.info/som/en/150.html
 image=http://magiccards.info/scans/en/som/150.jpg
-value=4.189
+value=4.190
 rarity=R
 type=Artifact,Creature
 subtype=Juggernaut

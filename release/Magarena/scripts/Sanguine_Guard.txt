@@ -1,7 +1,7 @@
 name=Sanguine Guard
 url=http://magiccards.info/us/en/155.html
 image=http://magiccards.info/scans/en/us/155.jpg
-value=3.900
+value=3.903
 rarity=U
 type=Creature
 subtype=Zombie,Knight

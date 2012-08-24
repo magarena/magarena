@@ -1,7 +1,7 @@
 name=Ball Lightning
 url=http://magiccards.info/pd2/en/12.html
 image=http://magiccards.info/scans/en/m10/125.jpg
-value=4.695
+value=4.709
 rarity=R
 type=Creature
 subtype=Elemental

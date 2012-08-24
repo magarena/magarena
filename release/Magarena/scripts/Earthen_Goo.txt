@@ -1,7 +1,7 @@
 name=Earthen Goo
 url=http://magiccards.info/cs/en/80.html
 image=http://magiccards.info/scans/en/cs/80.jpg
-value=2.887
+value=2.891
 rarity=U
 type=Creature
 subtype=Ooze

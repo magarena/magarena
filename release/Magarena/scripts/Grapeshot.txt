@@ -1,7 +1,7 @@
 name=Grapeshot
 url=http://magiccards.info/ts/en/160.html
 image=http://magiccards.info/scans/en/ts/160.jpg
-value=4.298
+value=4.302
 removal=1
 rarity=C
 type=Sorcery

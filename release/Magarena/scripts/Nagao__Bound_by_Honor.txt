@@ -1,7 +1,7 @@
 name=Nagao, Bound by Honor
 url=http://magiccards.info/chk/en/36.html
 image=http://magiccards.info/scans/en/chk/36.jpg
-value=3.762
+value=3.780
 rarity=U
 type=Legendary,Creature
 subtype=Human,Samurai

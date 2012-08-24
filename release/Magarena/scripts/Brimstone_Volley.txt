@@ -1,7 +1,7 @@
 name=Brimstone Volley
 url=http://magiccards.info/isd/en/132.html
 image=http://magiccards.info/scans/en/isd/132.jpg
-value=3.892
+value=3.882
 rarity=C
 type=Instant
 cost={2}{R}

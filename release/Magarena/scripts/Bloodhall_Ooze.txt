@@ -1,7 +1,7 @@
 name=Bloodhall Ooze
 url=http://magiccards.info/cfx/en/59.html
 image=http://magiccards.info/scans/en/cfx/59.jpg
-value=4.241
+value=4.231
 rarity=R
 type=Creature
 subtype=Ooze

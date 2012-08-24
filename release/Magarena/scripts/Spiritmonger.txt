@@ -1,7 +1,7 @@
 name=Spiritmonger
 url=http://magiccards.info/gpx/en/2.html
 image=http://magiccards.info/scans/en/ap/121.jpg
-value=4.797
+value=4.798
 rarity=R
 type=Creature
 subtype=Beast
