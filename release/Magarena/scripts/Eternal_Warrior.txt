@@ -8,4 +8,4 @@ subtype=Aura
 cost={R}
 given_ability=vigilance
 timing=aura
-enchant=default,pos creature
+enchant=first strike,pos creature
