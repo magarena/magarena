@@ -1,0 +1,11 @@
+name=Coma Veil
+url=http://magiccards.info/ala/en/36.html
+image=http://magiccards.info/scans/en/ala/36.jpg
+value=0.908
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={4}{U}
+given_ability=doesn't untap during untap step
+timing=aura
+enchant=can't attack or block,neg artifact or creature
