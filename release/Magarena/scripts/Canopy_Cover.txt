@@ -1,0 +1,11 @@
+name=Canopy Cover
+url=http://magiccards.info/wwk/en/98.html
+image=http://magiccards.info/scans/en/wwk/98.jpg
+value=3.979
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+given_ability=can't be blocked except by creatures with flying or reach,can't be the target of spells or abilities your opponents control
+timing=aura
+enchant=shroud,pos creature
