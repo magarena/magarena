@@ -1,0 +1,11 @@
+name=Fear
+url=http://magiccards.info/10e/en/142.html
+image=http://magiccards.info/scans/en/10e/142.jpg
+value=2.310
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}{B}
+given_ability=fear
+timing=aura
+enchant=unblockable,pos creature
