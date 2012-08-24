@@ -1,0 +1,12 @@
+name=Zephid's Embrace
+url=http://magiccards.info/us/en/114.html
+image=http://magiccards.info/scans/en/us/114.jpg
+value=3.946
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+given_ability=flying,shroud
+given_pt=2/2
+timing=aura
+enchant=pump,pos creature
