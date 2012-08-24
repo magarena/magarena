@@ -1,0 +1,11 @@
+name=Lance
+url=http://magiccards.info/ced/en/213.html
+image=http://magiccards.info/scans/en/ced/213.jpg
+value=2.351
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=first strike
+timing=aura
+enchant=first strike,pos creature
