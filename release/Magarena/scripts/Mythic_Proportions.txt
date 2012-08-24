@@ -1,0 +1,12 @@
+name=Mythic Proportions
+url=http://magiccards.info/on/en/274.html
+image=http://magiccards.info/scans/en/on/274.jpg
+value=3.639
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={4}{G}{G}{G}
+given_ability=trample
+given_pt=8/8
+timing=aura
+enchant=trample,pos creature
