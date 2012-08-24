@@ -1,0 +1,11 @@
+name=Eternal Warrior
+url=http://magiccards.info/lg/en/142.html
+image=http://magiccards.info/scans/en/lg/142.jpg
+value=2.629
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+given_ability=vigilance
+timing=aura
+enchant=default,pos creature
