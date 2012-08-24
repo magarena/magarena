@@ -1,0 +1,11 @@
+name=Primal Frenzy
+url=http://magiccards.info/od/en/262.html
+image=http://magiccards.info/scans/en/od/262.jpg
+value=1.952
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+given_ability=trample
+timing=aura
+enchant=trample,pos creature
