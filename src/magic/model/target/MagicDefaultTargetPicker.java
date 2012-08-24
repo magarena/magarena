@@ -11,6 +11,10 @@ public class MagicDefaultTargetPicker extends MagicTargetPicker<MagicTarget> {
     
     private MagicDefaultTargetPicker() {}
     
+    public static MagicDefaultTargetPicker create() {
+        return INSTANCE;
+    }
+    
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicTarget target) {
         return 0;
@@ -22,9 +26,5 @@ public class MagicDefaultTargetPicker extends MagicTargetPicker<MagicTarget> {
             final MagicPlayer player,
             final Collection<MagicTarget> options) {
         return options;
-    }
-    
-    public static MagicDefaultTargetPicker getInstance() {
-        return INSTANCE;
     }
 }
