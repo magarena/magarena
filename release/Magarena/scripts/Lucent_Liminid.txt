@@ -1,0 +1,11 @@
+name=Lucent Liminid
+url=http://magiccards.info/fut/en/24.html
+image=http://magiccards.info/scans/en/fut/24.jpg
+value=3.019
+rarity=C
+type=Enchantment,Creature
+subtype=Elemental
+cost={3}{W}{W}
+pt=3/3
+ability=flying
+timing=main
