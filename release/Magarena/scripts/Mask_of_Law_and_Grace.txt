@@ -1,0 +1,11 @@
+name=Mask of Law and Grace
+url=http://magiccards.info/ud/en/11.html
+image=http://magiccards.info/scans/en/ud/11.jpg
+value=3.315
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=protection from red,protection from black
+timing=aura
+enchant=unblockable,pos creature
