@@ -1,0 +1,11 @@
+name=Air Bladder
+url=http://magiccards.info/ne/en/28.html
+image=http://magiccards.info/ne/en/28.html
+value=1.391
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+given_ability=flying,can't block creatures without flying
+timing=aura
+enchant=flying,pos creature
