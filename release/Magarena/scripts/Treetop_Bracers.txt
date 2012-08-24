@@ -1,0 +1,12 @@
+name=Treetop Bracers
+url=http://magiccards.info/10e/en/304.html
+image=http://magiccards.info/scans/en/10e/304.jpg
+valuei=2.948
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+given_ability=can't be blocked except by creatures with flying
+given_pt=1/1
+timing=aura
+enchant=unblockable,pos creature
