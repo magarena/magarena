@@ -1,0 +1,12 @@
+name=Web
+url=http://magiccards.info/9e/en/281.html
+image=http://magiccards.info/scans/en/9e/281.jpg
+value=2.815
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+given_ability=reach
+given_pt=0/2
+timing=aura
+enchant=flying,pos creature
