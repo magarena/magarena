@@ -1,0 +1,11 @@
+name=Reflexes
+url=http://magiccards.info/9e/en/211.html
+image=http://magiccards.info/scans/en/9e/211.jpg
+value=2.605
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+given_ability=first strike
+timing=aura
+enchant=first strike,pos creature
