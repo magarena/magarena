@@ -1,4 +1,4 @@
-name=Idomitable Will
+name=Indomitable Will
 url=http://magiccards.info/chk/en/17.html
 image=http://magiccards.info/scans/en/chk/17.jpg
 value=2.547
