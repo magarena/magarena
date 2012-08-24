@@ -2,6 +2,7 @@ name=Crippling Blight
 url=http://magiccards.info/m13/en/85.html
 image=http://magiccards.info/scans/en/m13/85.jpg
 value=2.273
+removal=1
 rarity=C
 type=Enchantment
 subtype=Aura
