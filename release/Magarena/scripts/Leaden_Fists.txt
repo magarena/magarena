@@ -1,0 +1,12 @@
+name=Leaden Fists
+url=http://magiccards.info/fut/en/38.html
+image=http://magiccards.info/scans/en/fut/38.jpg
+value=2.888
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+given_ability=doesn't untap during untap step
+given_pt=3/3
+timing=aura
+enchant=can't attack or block,creature
