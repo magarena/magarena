@@ -8,5 +8,6 @@ subtype=Aura
 cost={2}{U}
 given_ability=doesn't untap during untap step
 given_pt=3/3
-timing=aura
+ability=flash
+timing=flash
 enchant=can't attack or block,creature
