@@ -1,7 +1,7 @@
 name=Treetop Bracers
 url=http://magiccards.info/10e/en/304.html
 image=http://magiccards.info/scans/en/10e/304.jpg
-valuei=2.948
+value=2.948
 rarity=C
 type=Enchantment
 subtype=Aura
