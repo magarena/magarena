@@ -1,0 +1,11 @@
+name=Dehydration
+url=http://magiccards.info/10e/en/78.html
+image=http://magiccards.info/scans/en/10e/78.jpg
+value=2.176
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{U}
+given_ability=doesn't untap during untap step
+timing=aura
+enchant=can't attack or block,neg creature
