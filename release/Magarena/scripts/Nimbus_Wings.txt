@@ -1,0 +1,12 @@
+name=Nimbus Wings
+url=http://magiccards.info/zen/en/28.html
+image=http://magiccards.info/scans/en/zen/28.jpg
+value=2.984
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_ability=flying
+given_pt=1/2
+timing=aura
+enchant=flying,pos creature
