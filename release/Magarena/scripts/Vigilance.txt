@@ -1,0 +1,11 @@
+name=Vigilance
+url=http://magiccards.info/chk/en/49.html
+image=http://magiccards.info/scans/en/chk/49.jpg
+value=2.553
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=vigilance
+timing=aura
+enchant=first strike,pos creature
