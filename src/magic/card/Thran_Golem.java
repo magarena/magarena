@@ -20,7 +20,7 @@ public class Thran_Golem {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return permanent.isEnchanted() ? 
                     flags |
                         MagicAbility.Flying.getMask() |

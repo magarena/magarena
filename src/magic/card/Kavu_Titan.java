@@ -23,7 +23,7 @@ public class Kavu_Titan {
     private static MagicStatic Trample = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(
-            final MagicGame game,
+            final MagicPermanent source,
             final MagicPermanent permanent,
             final long flags) {
             return flags|MagicAbility.Trample.getMask();

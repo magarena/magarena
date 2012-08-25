@@ -13,7 +13,7 @@ public class Elder_Land_Wurm {
    private static final MagicStatic AB = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
             return flags & ~MagicAbility.Defender.getMask();

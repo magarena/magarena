@@ -9,7 +9,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Griffin_Rider {
-    private static boolean isValid(final MagicPermanent owner,final MagicGame game) {
+    private static boolean isValid(final MagicPermanent owner) {
         for (final MagicPermanent permanent : owner.getController().getPermanents()) {
             if (permanent != owner && permanent.hasSubType(MagicSubType.Griffin)) {
                 return true;
@@ -21,7 +21,7 @@ public class Griffin_Rider {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            if (isValid(permanent,game)) {
+            if (isValid(permanent)) {
                 pt.add(3,3);
             }
         }        
@@ -29,8 +29,8 @@ public class Griffin_Rider {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-            return (isValid(permanent,game)) ?
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
+            return (isValid(permanent)) ?
                 flags | MagicAbility.Flying.getMask() :
                 flags;
         }

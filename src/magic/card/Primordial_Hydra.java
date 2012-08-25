@@ -20,7 +20,7 @@ public class Primordial_Hydra {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
             final int amount = permanent.getCounters(MagicCounterType.PlusOne);

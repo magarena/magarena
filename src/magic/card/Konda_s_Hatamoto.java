@@ -15,7 +15,8 @@ public class Konda_s_Hatamoto {
     
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
+            final MagicGame game = source.getGame();
             return game.filterTargets(permanent.getController(),
                     MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL).size() > 0 ?
                 flags | MagicAbility.Vigilance.getMask() :

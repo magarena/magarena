@@ -18,7 +18,8 @@ public class Guul_Draz_Vampire {
     };
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
+            final MagicGame game = source.getGame();
             return game.getOpponent(permanent.getController()).getLife() <= 10 ? 
                 flags|MagicAbility.Intimidate.getMask():
                 flags;

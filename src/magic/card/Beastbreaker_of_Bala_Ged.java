@@ -27,7 +27,7 @@ public class Beastbreaker_of_Bala_Ged {
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
             if (permanent.getCounters(MagicCounterType.Charge) >= 4) {

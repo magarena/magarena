@@ -29,7 +29,7 @@ public class Gwafa_Hazid__Profiteer {
             MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
             return flags | MagicAbility.CannotAttackOrBlock.getMask();

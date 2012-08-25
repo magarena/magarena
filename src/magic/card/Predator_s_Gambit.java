@@ -14,7 +14,7 @@ public class Predator_s_Gambit {
             MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
             return flags | MagicAbility.Intimidate.getMask();

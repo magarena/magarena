@@ -27,7 +27,7 @@ public class Student_of_Warfare {
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
             final int charges=permanent.getCounters(MagicCounterType.Charge);

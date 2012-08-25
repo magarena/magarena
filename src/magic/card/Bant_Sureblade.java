@@ -9,7 +9,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
 public class Bant_Sureblade {
-    static boolean isValid(final MagicPermanent owner, final MagicGame game) {
+    static boolean isValid(final MagicPermanent owner) {
         for (final MagicPermanent permanent : owner.getController().getPermanents()) {
             if (permanent != owner && MagicColor.isMulti(permanent.getColorFlags())) {
                 return true;
@@ -21,7 +21,7 @@ public class Bant_Sureblade {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            if (isValid(permanent,game)) {
+            if (isValid(permanent)) {
                 pt.add(1,1);
             }
         }        
@@ -29,8 +29,8 @@ public class Bant_Sureblade {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-            return (isValid(permanent,game)) ?
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
+            return (isValid(permanent)) ?
                 flags | MagicAbility.FirstStrike.getMask() :
                 flags;
         }

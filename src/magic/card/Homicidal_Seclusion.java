@@ -29,7 +29,7 @@ public class Homicidal_Seclusion {
             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
             @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
                 if (permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1) {

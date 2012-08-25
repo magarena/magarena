@@ -24,7 +24,7 @@ public class Transcendent_Master {
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final long flags) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);

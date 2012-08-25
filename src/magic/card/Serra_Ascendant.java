@@ -19,7 +19,7 @@ public class Serra_Ascendant {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return permanent.getController().getLife() >= 30 ?
                 flags|MagicAbility.Flying.getMask() : flags;
         }

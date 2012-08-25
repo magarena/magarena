@@ -110,7 +110,7 @@ public abstract class MagicStatic extends MagicDummyPermanentModifier implements
         return new MagicStatic(MagicLayer.Ability) {
             @Override
             public long getAbilityFlags(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 long flags) {
                 return flags | givenAbilityFlags;

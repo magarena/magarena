@@ -17,7 +17,7 @@ public class Blade_Splicer {
             MagicLayer.Ability, 
             MagicTargetFilter.TARGET_GOLEM_YOU_CONTROL) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.FirstStrike.getMask();
         }
     };

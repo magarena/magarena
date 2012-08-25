@@ -12,7 +12,7 @@ public class Village_Survivors {
             MagicLayer.Ability, 
             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return permanent.getController().getLife() <= 5 ?
                     flags|MagicAbility.Vigilance.getMask() : flags;
         }

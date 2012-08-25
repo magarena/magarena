@@ -339,7 +339,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
                 cachedColorFlags = mstatic.getColorFlags(this, cachedColorFlags);
                 break;
             case Ability:
-                cachedAbilityFlags = mstatic.getAbilityFlags(game, this, cachedAbilityFlags);
+                cachedAbilityFlags = mstatic.getAbilityFlags(source, this, cachedAbilityFlags);
                 break;
             case SetPT:
             case ModPT:

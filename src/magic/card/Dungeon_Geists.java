@@ -44,7 +44,7 @@ public class Dungeon_Geists {
                             final int you = source.getController().getIndex();
                             @Override
                             public long getAbilityFlags(
-                                final MagicGame game, 
+                                final MagicPermanent source, 
                                 final MagicPermanent permanent, 
                                 final long flags) {
                                 return flags | MagicAbility.DoesNotUntap.getMask();

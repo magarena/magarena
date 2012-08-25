@@ -11,8 +11,8 @@ public class Naya_Hushblade {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
-            return (Bant_Sureblade.isValid(permanent,game)) ?
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
+            return (Bant_Sureblade.isValid(permanent)) ?
                 flags | MagicAbility.Shroud.getMask() :
                 flags;
         }

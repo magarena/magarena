@@ -31,7 +31,7 @@ public class Skinshifter {
     };
     private static final MagicStatic AB1 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags|MagicAbility.Trample.getMask();
         }
     };
@@ -91,7 +91,7 @@ public class Skinshifter {
     };
     private static final MagicStatic AB2 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags|MagicAbility.Flying.getMask();
         }
     };

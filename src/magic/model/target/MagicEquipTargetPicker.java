@@ -18,7 +18,7 @@ public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
         MagicPowerToughness pt = new MagicPowerToughness(0,0);
 
         for (final MagicStatic mstatic : cardDefinition.getStatics()) {
-            ability = mstatic.getAbilityFlags(MagicGame.getInstance(), MagicPermanent.NONE, ability);
+            ability = mstatic.getAbilityFlags(MagicPermanent.NONE, MagicPermanent.NONE, ability);
             mstatic.modPowerToughness(MagicGame.getInstance(), MagicPermanent.NONE, pt);
         }
 

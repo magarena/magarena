@@ -17,7 +17,7 @@ public class Fumiko_the_Lowblood {
             MagicLayer.Ability, 
             MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.AttacksEachTurnIfAble.getMask();
         }
     };

@@ -22,7 +22,7 @@ public class Duskwalker {
     private static MagicStatic Fear = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(
-            final MagicGame game,
+            final MagicPermanent source,
             final MagicPermanent permanent,
             final long flags) {
             return flags | MagicAbility.Fear.getMask();

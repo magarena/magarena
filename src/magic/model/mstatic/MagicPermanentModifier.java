@@ -15,7 +15,7 @@ public interface MagicPermanentModifier {
 
     void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt);
     
-    long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags);
+    long getAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final long flags);
 
     void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags);
     

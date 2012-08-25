@@ -14,7 +14,7 @@ public class Elvish_Champion {
             MagicLayer.Ability, 
             MagicTargetFilter.TARGET_ELF) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.Forestwalk.getMask();
         }
         @Override

@@ -12,7 +12,7 @@ public class Avacyn__Angel_of_Hope {
         MagicLayer.Ability, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.Indestructible.getMask();
         }
 //        @Override

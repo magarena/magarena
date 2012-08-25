@@ -27,8 +27,9 @@ public class Cairn_Wanderer {
 
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
         @Override
-        public long getAbilityFlags(final MagicGame game,final MagicPermanent permanent,final long flags) {
+        public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             long newFlags = 0;
+            final MagicGame game = source.getGame();
             for (final MagicPlayer player : game.getPlayers()) {
                 for (final MagicCard card : player.getGraveyard()) {
                     final MagicCardDefinition cardDefinition = card.getCardDefinition();
