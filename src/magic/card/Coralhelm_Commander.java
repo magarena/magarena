@@ -15,7 +15,7 @@ public class Coralhelm_Commander {
             MagicTargetFilter.TARGET_MERFOLK_YOU_CONTROL) {
 
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
         }
         @Override
@@ -27,7 +27,7 @@ public class Coralhelm_Commander {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);

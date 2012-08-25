@@ -29,7 +29,7 @@ import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
 public class Glint_Hawk_Idol {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.set(2,2);
         }
     };

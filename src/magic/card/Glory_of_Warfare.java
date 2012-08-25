@@ -12,7 +12,8 @@ public class Glory_of_Warfare {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final MagicGame game = source.getGame();
             if (game.hasTurn(permanent.getController())) {
                 pt.add(2,0);
             } else {

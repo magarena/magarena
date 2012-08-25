@@ -12,16 +12,9 @@ public class Joraga_Warcaller {
     public static final MagicStatic S = new MagicStatic(
             MagicLayer.ModPT, 
             MagicTargetFilter.TARGET_ELF_YOU_CONTROL) {
-
-        private int amount = 0;
-
         @Override
-        public void setSource(final MagicPermanent source) {
-            amount = source.getCounters(MagicCounterType.PlusOne);
-        }
-
-        @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            final int amount = source.getCounters(MagicCounterType.PlusOne);
             pt.add(amount, amount);
         }
         @Override

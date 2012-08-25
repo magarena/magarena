@@ -11,7 +11,7 @@ import magic.model.mstatic.MagicStatic;
 public class Transcendent_Master {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);
             if (charges >= 12) {
                 pt.set(9,9);

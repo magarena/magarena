@@ -20,7 +20,7 @@ public class Fledgling_Dragon {
     public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             if (permanent.getController().getGraveyard().size() >= 7) {

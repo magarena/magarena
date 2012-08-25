@@ -14,7 +14,7 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
             MagicTargetFilter.TARGET_CREATURE) {
             @Override
             public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
                 final int amt = permanent.getCounters(MagicCounterType.PlusOne) - 
@@ -46,7 +46,6 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     }
     
     public MagicStatic getStatic() {
-        mstatic.setSource(permanent);
         return mstatic;
     }
     

@@ -12,7 +12,7 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 public class Nyxathid {
     public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final MagicPlayer opponent = (MagicPlayer)permanent.getChosenTarget();
             final int amount = opponent.getHandSize();
             pt.add(-amount,-amount);

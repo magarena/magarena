@@ -25,7 +25,7 @@ import magic.model.target.MagicTarget;
 public class Brimstone_Mage {
     public static final MagicStatic S = new MagicStatic(MagicLayer.SetPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);
             if (charges >= 3) {
                 pt.set(2,4);

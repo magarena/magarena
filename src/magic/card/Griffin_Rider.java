@@ -20,7 +20,7 @@ public class Griffin_Rider {
 
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             if (isValid(permanent)) {
                 pt.add(3,3);
             }

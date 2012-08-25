@@ -43,7 +43,7 @@ public class Calcite_Snapper {
                         MagicStatic.UntilEOT) {
                     @Override
                     public void modPowerToughness(
-                            final MagicGame game,
+                            final MagicPermanent source,
                             final MagicPermanent permanent,
                             final MagicPowerToughness pt) {
                         pt.set(pt.toughness(),pt.power());

@@ -20,7 +20,7 @@ public class Ezuri_s_Brigade {
     
     public static final MagicStatic S2 = new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             if (permanent.getController().getNrOfPermanentsWithType(MagicType.Artifact) >= 3) {
                 pt.add(4,4);
             }

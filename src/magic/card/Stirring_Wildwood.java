@@ -28,7 +28,7 @@ public class Stirring_Wildwood {
     private static final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             pt.set(3,4);

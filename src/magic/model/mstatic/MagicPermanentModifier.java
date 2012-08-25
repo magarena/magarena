@@ -1,6 +1,5 @@
 package magic.model.mstatic;
 
-import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
@@ -13,13 +12,13 @@ public interface MagicPermanentModifier {
 
     MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer controller); 
 
-    void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt);
+    void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt);
     
     long getAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final long flags);
 
-    void modSubTypeFlags(final MagicPermanent permanent,final EnumSet<MagicSubType> flags);
+    void modSubTypeFlags(final MagicPermanent permanent, final EnumSet<MagicSubType> flags);
     
-    int getTypeFlags(final MagicPermanent permanent,final int flags);
+    int getTypeFlags(final MagicPermanent permanent, final int flags);
     
-    int getColorFlags(final MagicPermanent permanent,final int flags);    
+    int getColorFlags(final MagicPermanent permanent, final int flags);    
 }

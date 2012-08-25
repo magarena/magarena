@@ -9,7 +9,7 @@ import magic.model.mstatic.MagicStatic;
 public class Goblin_Gaveleer {
     public static final MagicStatic S = new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             if (permanent.isEquipped()) {
                 pt.add(2 * permanent.getEquipmentPermanents().size(),0);
             }

@@ -13,7 +13,7 @@ public class Raksha_Golden_Cub {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_CAT_YOU_CONTROL) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(2,2);
         }
         @Override

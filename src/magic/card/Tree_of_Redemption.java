@@ -57,7 +57,7 @@ public class Tree_of_Redemption {
                     MagicLayer.SetPT) {
                 @Override
                 public void modPowerToughness(
-                        final MagicGame game,
+                        final MagicPermanent source,
                         final MagicPermanent permanent,
                         final MagicPowerToughness pt) {
                     pt.setToughness(life);

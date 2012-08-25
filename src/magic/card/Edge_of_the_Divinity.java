@@ -17,7 +17,7 @@ public class Edge_of_the_Divinity {
     public static final Object S1 = new MagicStatic(MagicLayer.ModPT) {
             @Override
             public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
                 pt.add(1, 2);
@@ -31,7 +31,7 @@ public class Edge_of_the_Divinity {
     public static final Object S2 = new MagicStatic(MagicLayer.ModPT) {
             @Override
             public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
                 pt.add(2, 1);

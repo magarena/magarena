@@ -18,19 +18,12 @@ public class Crescendo_of_War {
     public static final MagicStatic S1 = new MagicStatic(
             MagicLayer.ModPT, 
             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
-
-        private int amount = 0;
-
-        @Override
-        public void setSource(final MagicPermanent source) {
-            amount = source.getCounters(MagicCounterType.Charge);
-        }
-
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
+            final int amount = source.getCounters(MagicCounterType.Charge);
             pt.add(amount,0);
         }
         @Override
@@ -42,19 +35,12 @@ public class Crescendo_of_War {
     public static final MagicStatic S2 = new MagicStatic(
             MagicLayer.ModPT, 
             MagicTargetFilter.TARGET_CREATURE) {
-        
-        private int amount = 0;
-
-        @Override
-        public void setSource(final MagicPermanent source) {
-            amount = source.getCounters(MagicCounterType.Charge);
-        }
-        
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
+            final int amount = source.getCounters(MagicCounterType.Charge);
             pt.add(amount,0);
         }
         @Override

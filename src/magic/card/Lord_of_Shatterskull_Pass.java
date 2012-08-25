@@ -20,7 +20,7 @@ import java.util.Collection;
 public class Lord_of_Shatterskull_Pass {
     public static final MagicStatic S = new MagicStatic(MagicLayer.SetPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             if (permanent.getCounters(MagicCounterType.Charge)>0) {
                 pt.set(6,6);
             } 

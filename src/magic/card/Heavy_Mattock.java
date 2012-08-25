@@ -14,7 +14,7 @@ public class Heavy_Mattock {
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             pt.add(1,1);

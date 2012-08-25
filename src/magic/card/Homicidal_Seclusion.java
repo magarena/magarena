@@ -15,7 +15,7 @@ public class Homicidal_Seclusion {
         MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             if (permanent.getController().getNrOfPermanentsWithType(MagicType.Creature) == 1) {

@@ -16,7 +16,7 @@ public class MagicDummyPermanentModifier implements MagicPermanentModifier {
     }
     
     @Override
-    public void modPowerToughness(final MagicGame game, final MagicPermanent permanent, final MagicPowerToughness pt) {
+    public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
         //leave power and toughness unchanged
     }
 

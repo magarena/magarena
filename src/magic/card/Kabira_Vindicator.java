@@ -12,7 +12,7 @@ public class Kabira_Vindicator {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);
@@ -27,23 +27,15 @@ public class Kabira_Vindicator {
     public static final MagicStatic S2 = new MagicStatic(
             MagicLayer.ModPT, 
             MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
-
-        private int amount = 0;
-
         @Override
-        public void setSource(final MagicPermanent source) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int charges = source.getCounters(MagicCounterType.Charge);
+            int amount = 0;
             if (charges >= 5) {
                 amount = 2;
             } else if (charges >= 2) {
                 amount = 1;
-            } else {
-                amount = 0;
-            }
-        }
-
-        @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+            } 
             pt.add(amount, amount);
         }
 

@@ -12,7 +12,7 @@ public class Ikiral_Outrider {
     public static final MagicStatic S1 = new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(
-                final MagicGame game,
+                final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
             final int charges = permanent.getCounters(MagicCounterType.Charge);

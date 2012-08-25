@@ -325,7 +325,6 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
     }
 
     private void apply(final MagicPermanent source, final MagicStatic mstatic) {
-        final MagicGame game = getGame();
         final MagicLayer layer = mstatic.getLayer();
         switch (layer) {
             case Control:
@@ -345,7 +344,7 @@ public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicP
             case ModPT:
             case CountersPT:
             case SwitchPT:
-                mstatic.modPowerToughness(game, this, cachedPowerToughness);
+                mstatic.modPowerToughness(source, this, cachedPowerToughness);
                 break;
             default:
                 throw new RuntimeException("No case for " + layer + " in MagicPermanent.apply");

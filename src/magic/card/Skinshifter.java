@@ -25,7 +25,7 @@ public class Skinshifter {
     // becomes a 4/4 Rhino and gains trample
     private static final MagicStatic PT1 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.set(4,4);
         }
     };
@@ -85,7 +85,7 @@ public class Skinshifter {
     // becomes a 2/2 Bird and gains flying
     private static final MagicStatic PT2 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.set(2,2);
         }
     };
@@ -145,7 +145,7 @@ public class Skinshifter {
     // becomes a 0/8 Plant
     private static final MagicStatic PT3 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.set(0,8);
         }
     };

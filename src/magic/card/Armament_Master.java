@@ -12,15 +12,9 @@ public class Armament_Master {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_KOR_YOU_CONTROL) {
         
-        private int amount = 0;
-
         @Override
-        public void setSource(final MagicPermanent source) {
-            amount = 2 * source.getEquipmentPermanents().size();
-        }
-        
-        @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+                final int amount = 2 * source.getEquipmentPermanents().size();
                 pt.add(amount, amount);
         }
         @Override

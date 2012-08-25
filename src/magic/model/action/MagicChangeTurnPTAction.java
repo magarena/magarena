@@ -25,7 +25,7 @@ public class MagicChangeTurnPTAction extends MagicAction {
                 MagicStatic.UntilEOT) {
             @Override
             public void modPowerToughness(
-                    final MagicGame game,
+                    final MagicPermanent source,
                     final MagicPermanent permanent,
                     final MagicPowerToughness pt) {
                 pt.add(power, toughness);

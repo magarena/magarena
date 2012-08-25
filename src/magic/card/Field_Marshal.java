@@ -27,7 +27,7 @@ public class Field_Marshal {
         MagicLayer.ModPT, 
         MagicTargetFilter.TARGET_SOLDIER) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(1,1);
         }
         @Override
