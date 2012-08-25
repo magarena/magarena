@@ -108,7 +108,7 @@ cards/candidates_full.txt: scripts/extract_candidates.awk cards/scored_by_dd.tsv
 
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
-
+	
 M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	grep "VERSION.*1.$*" -Ir src/
 	grep "Release.*1.$*" release/README.txt
@@ -165,6 +165,12 @@ clean:
 	-ant clean
 	-rm -f $(BUILD)/javac.last
 	-rm -f $(MAG)
+
+clean/%: Magarena-%.zip Magarena-%.app.zip 
+	-rm -rf Magarena-$*
+	-rm -rf Magarena-$*.app
+	-rm Magarena-$*.zip
+	-rm Magarena-$*.app.zip
 
 inf: $(MAG)
 	-while true; do make `date +%s`.t; done
