@@ -98,6 +98,7 @@ Armored Warhorse
 Artisan of Kozilek
 Ascendant Evincar
 Asceticism
+Asha's Favor
 Ashcoat Bear
 Ashen Monstrosity
 Ashenmoor Cohort
@@ -282,6 +283,7 @@ Call to Serve
 Call to the Grave
 Cancel
 Canker Abomination
+Canopy Cover
 Canopy Spider
 Canyon Minotaur
 Canyon Wildcat
@@ -341,6 +343,7 @@ Cloudshift
 Cloud Sprite
 Cobbled Wings
 Colossal Might
+Coma Veil
 Combust
 Commander's Authority
 Concussive Bolt
@@ -437,6 +440,7 @@ Deeptread Merrow
 Defang
 Deft Duelist
 Defy Death
+Dehydration
 Deluge
 Demigod of Revenge
 Demolish
@@ -593,6 +597,7 @@ Farbog Boneflinger
 Farbog Explorer
 Favorable Winds
 Favor of the Woods
+Fear
 Feebleness
 Femeref Archers
 Feral Ridgewolf
@@ -646,6 +651,7 @@ Fugitive Wizard
 Fume Spitter
 Fumiko the Lowblood
 Furnace Whelp
+Furor of the Bitten
 Furyborn Hellkite
 Galepowder Mage
 Gallows Warden
@@ -694,6 +700,7 @@ Glass Golem
 Glaze Fiend
 Glen Elendra Archmage
 Glen Elendra Liege
+Glimmerdust Nap
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
@@ -892,6 +899,7 @@ Indebted Samurai
 Indestructibility
 Indomitable Ancients
 Indomitable Archangel
+Indomitable Will
 Indrik Stomphowler
 Infantry Veteran
 Inferno Elemental
@@ -1019,6 +1027,7 @@ Latch Seeker
 Lava Axe
 Lavaborn Muse
 Lavacore Elemental
+Leaden Fists
 Leaden Myr
 Leap of Faith
 Leap of Flame
@@ -1065,6 +1074,7 @@ Loxodon Stalwart
 Loxodon Warhammer
 Loxodon Wayfarer
 Loyal Sentry
+Lucent Liminid
 Lumberknot
 Lumengrid Drake
 Lumengrid Gargoyle
@@ -1076,6 +1086,7 @@ Mad Auntie
 Mad Prophet
 Madrush Cyclops
 Maelstrom Pulse
+Magefire Wings
 Mage Slayer
 Magnivore
 Mahamoti Djinn
@@ -1237,6 +1248,7 @@ Nightshade Stinger
 Nightsoil Kami
 Night's Whisper
 Nimana Sell-Sword
+Nimbus Wings
 Nip Gwyllion
 Nirkana Cutthroat
 Noble Hierarch
@@ -1281,6 +1293,7 @@ Oxidda Scrapmelter
 Oxidize
 Pacifism
 Paladin en-Vec
+Paralyzing Grasp
 Paraselene
 Pathbreaker Wurm
 Peace Strider
@@ -1296,6 +1309,7 @@ Pestilent Kathari
 Pewter Golem
 Phantom Warrior
 Phobian Phantasm
+Phyresis
 Phyrexian Arena
 Phyrexian Crusader
 Phyrexian Digester
@@ -1394,6 +1408,7 @@ Reckless Brute
 Reclaim
 Recollect
 Recover
+Reflexes
 Reforge the Soul
 Reiterate
 Relentless Rats
@@ -1695,6 +1710,7 @@ Strangleroot Geist
 Stratozeppelid
 Streetbreaker Wurm
 Strider Harness
+Stromgald Crusader
 Stromkirk Captain
 Stromkirk Noble
 Stromkirk Patrol
@@ -1811,6 +1827,7 @@ Trapjaw Kelpie
 Treasure Hunter
 Tree Monkey
 Tree of Redemption
+Treetop Bracers
 Treetop Village
 Trespasser il-Vec
 Tribute to Hunger
@@ -1893,6 +1910,7 @@ Veteran Swordsmith
 Viashino Spearhunter
 Victim of Night
 Victory's Herald
+Vigilance
 Vigilante Justice
 Vigor
 Village Bell-Ringer
@@ -1960,6 +1978,7 @@ Watercourser
 Watery Grave
 Waveskimmer Aven
 Weakness
+Web
 Welkin Tern
 Whispersilk Cloak
 Whispers of the Muse
@@ -2019,6 +2038,7 @@ Zealous Guardian
 Zealous Persecution
 Zealous Strike
 Zendikar Farguide
+Zephyr Net
 Zephyr Sprite
 Zhalfirin Commander
 Zodiac Monkey

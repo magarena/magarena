@@ -30,6 +30,7 @@ Ageless Entity
 Ageless Sentinels
 Aggravate
 Aggressive Urge
+Air Bladder
 Air Elemental
 Air Servant
 Ajani's Mantra
@@ -130,6 +131,7 @@ Artifact Mutation
 Artisan of Kozilek
 Ascendant Evincar
 Asceticism
+Asha's Favor
 Ashcoat Bear
 Ashen Monstrosity
 Ashenmoor Cohort
@@ -350,6 +352,7 @@ Call to Serve
 Call to the Grave
 Cancel
 Canker Abomination
+Canopy Cover
 Canopy Spider
 Cantivore
 Canyon Minotaur
@@ -434,6 +437,7 @@ Cobbled Wings
 Cognivore
 Colossal Might
 Colos Yearling
+Coma Veil
 Combust
 Commander Eesha
 Commander's Authority
@@ -497,6 +501,7 @@ Cunning Sparkmage
 Curiosity
 Cursebreak
 Cursecatcher
+Cursed Flesh
 Cursed Ronin
 Custody Battle
 Cutthroat il-Dal
@@ -562,6 +567,7 @@ Defender of Law
 Defiant Elf
 Deft Duelist
 Defy Death
+Dehydration
 Deluge
 Delusions of Mediocrity
 Demigod of Revenge
@@ -722,6 +728,7 @@ Essence Drain
 Essence Harvest
 Essence Scatter
 Etched Champion
+Eternal Warrior
 Eternal Witness
 Eternity Snare
 Ethercaste Knight
@@ -761,6 +768,7 @@ Farbog Explorer
 Farrel's Zealot
 Favorable Winds
 Favor of the Woods
+Fear
 Feast of the Unicorn
 Feebleness
 Femeref Archers
@@ -839,6 +847,7 @@ Fugitive Wizard
 Fume Spitter
 Fumiko the Lowblood
 Furnace Whelp
+Furor of the Bitten
 Furyborn Hellkite
 Gaea's Skyfolk
 Galepowder Mage
@@ -896,6 +905,7 @@ Glass Golem
 Glaze Fiend
 Glen Elendra Archmage
 Glen Elendra Liege
+Glimmerdust Nap
 Glimmering Angel
 Glint Hawk
 Glint Hawk Idol
@@ -1122,7 +1132,6 @@ Ichorclaw Myr
 Ichor Rats
 Ichor Wellspring
 Icy Manipulator
-Idomitable Will
 Ihsan's Shade
 Iizuka the Ruthless
 Ikiral Outrider
@@ -1138,6 +1147,7 @@ Indebted Samurai
 Indestructibility
 Indomitable Ancients
 Indomitable Archangel
+Indomitable Will
 Indrik Stomphowler
 Infantry Veteran
 Inferno Elemental
@@ -1288,6 +1298,7 @@ Laccolith Titan
 Laccolith Warrior
 Laccolith Whelp
 Lagac Lizard
+Lance
 Lantern Kami
 Lantern Spirit
 Last Gasp
@@ -1295,6 +1306,7 @@ Latch Seeker
 Lava Axe
 Lavaborn Muse
 Lavacore Elemental
+Leaden Fists
 Leaden Myr
 Leaf Dancer
 Leap of Faith
@@ -1356,6 +1368,7 @@ Loxodon Stalwart
 Loxodon Warhammer
 Loxodon Wayfarer
 Loyal Sentry
+Lucent Liminid
 Lumberknot
 Lumengrid Drake
 Lumengrid Gargoyle
@@ -1369,6 +1382,7 @@ Mad Auntie
 Mad Prophet
 Madrush Cyclops
 Maelstrom Pulse
+Magefire Wings
 Mage Slayer
 Mageta's Boon
 Maggot Therapy
@@ -1402,6 +1416,7 @@ Marsh Goblins
 Marsh Threader
 Martial Coup
 Mask of Avacyn
+Mask of Law and Grace
 Mask of Memory
 Mask of Riddles
 Massacre Wurm
@@ -1500,6 +1515,7 @@ Myr Galvanizer
 Myr Propagator
 Myrsmith
 Mystic Snake
+Mythic Proportions
 Nacatl Outlander
 Nagao, Bound by Honor
 Nantuko Husk
@@ -1549,6 +1565,7 @@ Nightsoil Kami
 Night's Whisper
 Nightwind Glider
 Nimana Sell-Sword
+Nimbus Wings
 Nip Gwyllion
 Nirkana Cutthroat
 Noble Hierarch
@@ -1609,6 +1626,7 @@ Pale Bears
 Parallax Nexus
 Parallax Tide
 Parallax Wave
+Paralyzing Grasp
 Paraselene
 Pathbreaker Wurm
 Peace Strider
@@ -1625,6 +1643,7 @@ Petravark
 Pewter Golem
 Phantom Warrior
 Phobian Phantasm
+Phyresis
 Phyrexian Arena
 Phyrexian Bloodstock
 Phyrexian Crusader
@@ -1670,6 +1689,7 @@ Predator's Gambit
 Prickly Boggart
 Pride Guardian
 Priests of Norn
+Primal Frenzy
 Primal Huntbeast
 Primal Rage
 Primordial Hydra
@@ -1749,6 +1769,7 @@ Recollect
 Recover
 Recurring Nightmare
 Redwood Treefolk
+Reflexes
 Reforge the Soul
 Regrowth
 Reiterate
@@ -1932,6 +1953,7 @@ Shatterskull Giant
 Shatterstorm
 Sheoldred, Whispering One
 Shepherd of the Lost
+Shield of Duty and Reason
 Shield of the Righteous
 Shivan Dragon
 Shivan Hellkite
@@ -2129,7 +2151,7 @@ Stratozeppelid
 Streetbreaker Wurm
 Strider Harness
 Striped Bears
-Stromgald_Crusader
+Stromgald Crusader
 Stromkirk Captain
 Stromkirk Noble
 Stromkirk Patrol
@@ -2275,6 +2297,7 @@ Treasure Hunter
 Tree Monkey
 Tree of Redemption
 Tree of Tales
+Treetop Bracers
 Treetop Scout
 Treetop Sentinel
 Treetop Village
@@ -2378,6 +2401,7 @@ Viashino Weaponsmith
 Vicious Kavu
 Victim of Night
 Victory's Herald
+Vigilance
 Vigilante Justice
 Vigor
 Village Bell-Ringer
@@ -2466,6 +2490,7 @@ Waveskimmer Aven
 Weakness
 Weatherseed Faeries
 Weatherseed Treefolk
+Web
 Wei Ambush Force
 Welkin Tern
 Whispering Shade
@@ -2494,6 +2519,8 @@ Windrider Eel
 Windseeker Centaur
 Wingcrafter
 Winged Coatl
+Wings of Aesthir
+Wings of Hope
 Wing Splicer
 Wirewood Lodge
 Wistful Selkie
@@ -2544,7 +2571,9 @@ Zealous Persecution
 Zealous Strike
 Zendikar Farguide
 Zephid
+Zephid's Embrace
 Zephyr Falcon
+Zephyr Net
 Zephyr Sprite
 Zhalfirin Commander
 Zhalfirin Knight

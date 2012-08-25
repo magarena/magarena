@@ -281,6 +281,7 @@ Frightful Delusion
 Frost Titan
 Fume Spitter
 Furnace Whelp
+Furor of the Bitten
 Furyborn Hellkite
 Gallows Warden
 Galvanic Juggernaut
@@ -531,6 +532,7 @@ Pathbreaker Wurm
 Peace Strider
 Peregrine Griffin
 Perilous Myr
+Phyresis
 Phyrexian Crusader
 Phyrexian Digester
 Phyrexian Hulk

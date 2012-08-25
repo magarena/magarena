@@ -62,6 +62,7 @@ Armored Skaab
 Armored Warhorse
 Artisan of Kozilek
 Asceticism
+Asha's Favor
 Ashmouth Hound
 Assassinate
 Assault Griffin
@@ -175,6 +176,7 @@ Calcite Snapper
 Call to Serve
 Call to the Grave
 Cancel
+Canopy Cover
 Canyon Minotaur
 Captain of the Mists
 Captain of the Watch
@@ -216,6 +218,7 @@ Cloudheath Drake
 Cloudshift
 Cobbled Wings
 Colossal Might
+Coma Veil
 Combust
 Commander's Authority
 Concussive Bolt
@@ -412,6 +415,7 @@ Frightful Delusion
 Frost Titan
 Fume Spitter
 Furnace Whelp
+Furor of the Bitten
 Furyborn Hellkite
 Gallows Warden
 Galvanic Juggernaut
@@ -693,6 +697,7 @@ Maalfeld Twins
 Mad Prophet
 Madrush Cyclops
 Maelstrom Pulse
+Magefire Wings
 Mage Slayer
 Make a Wish
 Makindi Griffin
@@ -803,6 +808,7 @@ Nightmare
 Night Revelers
 Nightshade Peddler
 Nimana Sell-Sword
+Nimbus Wings
 Nirkana Cutthroat
 Noble Hierarch
 Novablast Wurm
@@ -827,6 +833,7 @@ Overrun
 Overwhelming Stampede
 Oxidda Scrapmelter
 Pacifism
+Paralyzing Grasp
 Paraselene
 Pathbreaker Wurm
 Peace Strider
@@ -836,6 +843,7 @@ Perilous Myr
 Perimeter Captain
 Pestilent Kathari
 Phantom Warrior
+Phyresis
 Phyrexian Crusader
 Phyrexian Digester
 Phyrexian Hulk
