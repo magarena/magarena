@@ -6,6 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-given_ability=can't be blocked except by creatures with flying or reach,can't be the target of spells or abilities your opponents control
+given_ability=can't be blocked except by creatures with flying or reach
 timing=aura
 enchant=shroud,pos creature
+requires_card_code
