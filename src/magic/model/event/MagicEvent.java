@@ -91,7 +91,7 @@ public class MagicEvent implements MagicCopyable {
             final Object data[],
             final MagicEventAction action,
             final String description) {
-        this(source,player,choice,MagicDefaultTargetPicker.getInstance(),data,action,description);
+        this(source,player,choice,MagicDefaultTargetPicker.create(),data,action,description);
     }
     
     public MagicEvent(
@@ -100,7 +100,7 @@ public class MagicEvent implements MagicCopyable {
             final Object data[],
             final MagicEventAction action,
             final String description) {
-        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.getInstance(),data,action,description);
+        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),data,action,description);
     }
     
     private MagicEvent(final MagicCopyMap copyMap, final MagicEvent sourceEvent) {
