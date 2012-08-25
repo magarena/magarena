@@ -47,7 +47,7 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
-  mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
+  a. benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, and Tyrael for implementing new cards
   everyone on the CCGHQ forum (http://slightlymagic.net/forum/)
 
 Thank you for your support and have fun!
@@ -56,13 +56,86 @@ Thank you for your support and have fun!
 
 Release 1.29 (August 25, 2012)
 ============
-includes contributions from QQQ
+includes contributions from melvin, a. benedict balbuena, spartan vi, Braullynn
 
-- fixed: 
+- allow "replicate" keyword in ability property of card script 
+- "value" property in card script should be determined from Gatherer's
+  community rating
+- improved checking of abilities in card script
+- improved error message when card script cannot be loaded
+
+- fixed: description of Smite the Monstrous's effect
+- fixed: Kavu Predator missing trample
+- fixed: Benalish Lancer only gained first strike until end of turn
 
 - added the following premade decks:
+2012Affinity.dec, 2012BWcontrol.dec, 2012RGfires.dec, 2012bant.dec,
+2012bantGeist.dec, 2012bantTempo.dec, 2012bitterFaeries.dec,
+2012blueControl.dec, 2012brAggro.dec, 2012brExalted.dec, 2012buZombies.dec,
+2012bwExalted.dec, 2012dredge.dec, 2012elves.dec, 2012enchantress.dec,
+2012gbControl.dec, 2012goblins.dec, 2012gwAggro.dec, 2012innistradDredge.dec,
+2012innistradHumans.dec, 2012jund.dec, 2012kikiRestoration.dec,
+2012landdestruction.dec, 2012lifegainWeenie.dec, 2012miracle.dec,
+2012poison.dec, 2012poisonBudget.dec, 2012poisonBudgetPump.dec,
+2012poisonGW.dec, 2012reanimator.dec, 2012redDeckWins.dec, 2012rgwAggro.dec,
+2012rgwZoo.dec, 2012spirits.dec, 2012stompy.dec, 2012suicideBlack.dec,
+2012ubMIll.dec, 2012uwControl.dec, 2012uwControlagain.dec, 2012wbtokens.dec,
+2012zombies.dec
 
 - added the following cards:
+Abbey Gargoyles, Advanced Hoverguard, Aesthir Glider, Air Bladder,
+Ajani's Sunstriker, Alaborn Grenadier, Alert Shu Infantry,
+Angelic Benediction, Angel of Light, Arbor Elf, Argothian Swine,
+Armored Griffin, Asha's Favor, Baleful Strix, Bay Falcon, Bayou Dragonfly,
+Bladed Sentinel, Blockade Runner, Blood Pet, Bog Smugglers, Boreal Druid,
+Bound in Silence, Canopy Cover, Cathedral of War, Cat Warriors,
+Cavern Crawler, Cemetery Gate, Cerulean Wyvern, Cloak of Mists,
+Cloudheath Drake, Colos Yearling, Coma Veil, Council of Advisors,
+Crippling Blight, Cursed Flesh, Death-Hood Cobra, Death Speakers,
+Deeptread Merrow, Defender of Chaos, Defender of Law, Dehydration,
+Delusions of Mediocrity, Devouring Deep, Diplomatic Immunity,
+Dirtwater Wraith, Dragon Hatchling, Duergar Cave-Guard, Duskmantle Prowler,
+Duskrider Falcon, Duty-Bound Dead, Edge of the Divinity, Elite Cat Warrior,
+Elvish Lookout, Enslaved Scout, Eternal Warrior, Eternity Snare, Eviscerator,
+Eye of Ramos, Faerie Invaders, Fear, Flaming Sword, Flowstone Crusher,
+Flowstone Giant, Flowstone Hellion, Flowstone Mauler, Flowstone Shambler,
+Flowstone Wall, Flowstone Wyvern, Freewind Falcon, Frog Tongue,
+Furor of the Bitten, Geth's Verdict, Ghostly Changeling, Giant Crab,
+Giant Mantis, Gift of Granite, Gigadrowse, Glimmerdust Nap, Glimmering Angel,
+Gnat Alley Creeper, Greel's Caress, Guardian Lions, Guma, Hawkeater Moth,
+Hazerider Drake, Heart of Ramos, Heartwood Treefolk, Highland Giant,
+Horn of Ramos, Ichor Wellspring, Ihsan's Shade, Illusions of Grandeur,
+Indomitable Will, Intrepid Hero, Jhovall Queen, Jungle Barrier,
+Kabira Crossroads, Karoo Meerkat, Kavu Glider, Keen-Eyed Archers,
+Keeper of Kookus, Knight of Glory, Knight of Infamy, Knight of Stromgald,
+Kyren Glider, Lance, Leaden Fists, Leap of Flame, Lionheart Maverick,
+Llanowar Cavalry, Lost Soul, Lowland Giant, Loxodon Stalwart, Lucent Liminid,
+Lynx, Magefire Wings, Mageta's Boon, Maggot Therapy, Maniacal Rage,
+Manta Riders, Mark of the Vampire, Marsh Goblins, Mask of Law and Grace,
+Melesse Spirit, Merchant of Secrets, Moonglove Changeling, Moor Fiend,
+Mountain Goat, Mox Emerald, Mox Jet, Mox Pearl, Mox Ruby, Mox Sapphire,
+Mycoloth, Mythic Proportions, Nightwind Glider, Nimbus Wings, Norwood Archers,
+Obsidian Giant, Oraxid, Order of Leitbur, Order of the Ebon Hand,
+Order of the White Shield, Orim's Thunder, Pale Bears, Paralyzing Grasp,
+Pendelhaven, Pestilent Kathari, Phyresis, Plated Slagwurm, Plated Spider,
+Primal Frenzy, Primal Huntbeast, Pygmy Allosaurus, Pyromatics, Reckless Brute,
+Reflexes, Repentant Blacksmith, Rib Cage Spider, Ridgeline Rager,
+Righteous Avengers, River Merfolk, Savannah Lions, Scalebane's Elite,
+Scavenged Weaponry, Scragnoth, Sea Sprite, Segovian Leviathan,
+Sentinel Spider, Serra Sphinx, Servant of Nefarox, Shattering Spree,
+Shield of Duty and Reason, Shore Snapper, Sighted-Caste Sorcerer,
+Skull of Ramos, Slippery Bogle, Spiked Baloth, Steam Spitter, Striped Bears,
+Stromgald Crusader, Stronghold Zeppelin, Taoist Hermit, Tempest Drake,
+Thermal Glider, Tiger Claws, Tooth of Ramos, Train of Thought,
+Treetop Bracers, Tricks of the Trade, Vacuumelt, Vectis Silencers, Vigilance,
+Voice of Duty, Voice of Grace, Voice of Law, Voice of Reason, Voice of Truth,
+Vulshok Sorcerer, Wall of Light, Wall of Tanglecord, Warclamp Mastiff,
+War-Spike Changeling, Warthog, Watercourser, Weatherseed Faeries, Web,
+Whispering Shade, White Shield Crusader, Wild Cantor, Wildfire Emissary,
+Wild Ox, Willow Dryad, Windreaper Falcon, Windseeker Centaur,
+Wings of Aesthir, Wings of Hope, Wistful Selkie, Zephid, Zephid's Embrace,
+Zephyr Falcon, Zephyr Net, Zodiac Ox, Zodiac Pig, Zodiac Rat, Zodiac Rooster,
+Zodiac Snake, Zodiac Tiger
 
 Release 1.28 (July 29, 2012)
 ============
