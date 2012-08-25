@@ -25,7 +25,7 @@ public class Triumph_of_Cruelty {
                             player,
                             new Object[]{player},
                             this,
-                            game.getOpponent(player) + " discards a card " +
+                            player.getOpponent() + " discards a card " +
                             "if you control the creature with the greatest " +
                             "power or tied for the greatest power.") :
                 MagicEvent.NONE;
@@ -50,7 +50,7 @@ public class Triumph_of_Cruelty {
             if (highest.getController() == player) {
                 game.addEvent(new MagicDiscardEvent(
                         event.getSource(),
-                        game.getOpponent(player),
+                        player.getOpponent(),
                         1,
                         false));
             }

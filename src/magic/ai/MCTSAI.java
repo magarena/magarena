@@ -407,7 +407,7 @@ public class MCTSAI implements MagicAI {
                     game.setLosingPlayer(game.getScorePlayer());
                 }
                 if (game.getScore() > MIN_SCORE) {
-                    game.setLosingPlayer(game.getOpponent(game.getScorePlayer()));
+                    game.setLosingPlayer(game.getScorePlayer().getOpponent());
                 }
             } else {
                 //get list of possible AI choices

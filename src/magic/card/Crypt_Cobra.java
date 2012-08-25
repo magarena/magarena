@@ -13,7 +13,7 @@ public class Crypt_Cobra {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             if (creature == permanent) {
                 final MagicPlayer player = permanent.getController();
-                final MagicPlayer opponent = game.getOpponent(player);
+                final MagicPlayer opponent = player.getOpponent();
                 return new MagicEvent(
                         permanent,
                         player,

@@ -36,7 +36,7 @@ public class ViewerInfo {
     public synchronized void update(final MagicGame game) {
         final MagicPlayer player=game.getVisiblePlayer();
         playerInfo=new PlayerViewerInfo(game,player);
-        opponentInfo=new PlayerViewerInfo(game,game.getOpponent(player));
+        opponentInfo=new PlayerViewerInfo(game,player.getOpponent());
 
         stack=new ArrayList<StackViewerInfo>();
         for (final MagicItemOnStack itemOnStack : game.getStack()) {

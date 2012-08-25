@@ -29,7 +29,7 @@ public class Kokusho__the_Evening_Star {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicPlayer player=(MagicPlayer)data[0];
-            game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-5));
+            game.doAction(new MagicChangeLifeAction(player.getOpponent(),-5));
             game.doAction(new MagicChangeLifeAction(player,5));
         }
     };

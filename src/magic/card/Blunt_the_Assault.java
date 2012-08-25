@@ -38,7 +38,7 @@ public class Blunt_the_Assault {
                 game.doAction(new MagicChangeLifeAction(player,amount));
             }
             game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage,true));
-            game.doAction(new MagicChangePlayerStateAction(game.getOpponent(player),MagicPlayerState.PreventAllCombatDamage,true));
+            game.doAction(new MagicChangePlayerStateAction(player.getOpponent(),MagicPlayerState.PreventAllCombatDamage,true));
         }
     };
 }

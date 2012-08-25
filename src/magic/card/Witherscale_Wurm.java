@@ -85,7 +85,7 @@ public class Witherscale_Wurm {
                 final MagicDamage damage) {
             final MagicPlayer player = permanent.getController();
             return (damage.getSource() == permanent &&
-                    damage.getTarget() == game.getOpponent(player) &&
+                    damage.getTarget() == player.getOpponent() &&
                     permanent.getCounters(MagicCounterType.MinusOne) > 0) ?
                 new MagicEvent(
                     permanent,

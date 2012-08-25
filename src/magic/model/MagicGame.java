@@ -662,7 +662,7 @@ public class MagicGame {
         return players[index];
     }
     
-    public MagicPlayer getOpponent(final MagicPlayer player) {
+    MagicPlayer getOpponent(final MagicPlayer player) {
         return players[1-player.getIndex()];        
     }
     

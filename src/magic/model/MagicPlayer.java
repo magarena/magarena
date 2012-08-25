@@ -6,6 +6,7 @@ import magic.model.event.MagicActivationMap;
 import magic.model.event.MagicActivationPriority;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -509,6 +510,10 @@ public class MagicPlayer implements MagicTarget {
 
     public MagicPlayer getOpponent() {
         return currGame.getOpponent(this);
+    }
+    
+    public List<MagicTarget> filterTargets(final MagicTargetFilter targetFilter) {
+        return currGame.filterTargets(this, targetFilter);
     }
     
     @Override

@@ -238,7 +238,7 @@ public interface MagicCondition {
 
     MagicCondition OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicGame game,final MagicSource source) {
-            return game.getOpponent(source.getController()).getNrOfPermanentsWithType(MagicType.Land)>=4;
+            return source.getController().getOpponent().getNrOfPermanentsWithType(MagicType.Land)>=4;
         }
     };
     

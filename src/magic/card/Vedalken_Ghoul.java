@@ -16,9 +16,9 @@ public class Vedalken_Ghoul {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{game.getOpponent(player)},
+                            new Object[]{player.getOpponent()},
                             this,
-                            game.getOpponent(player) + " loses 4 life."):
+                            player.getOpponent() + " loses 4 life."):
                     MagicEvent.NONE;
         }
         

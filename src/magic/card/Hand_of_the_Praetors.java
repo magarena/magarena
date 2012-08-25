@@ -39,9 +39,9 @@ public class Hand_of_the_Praetors {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{game.getOpponent(player)},
+                        new Object[]{player.getOpponent()},
                         this,
-                        game.getOpponent(player) + " gets a poison counter."):
+                        player.getOpponent() + " gets a poison counter."):
                 MagicEvent.NONE;
         }
         @Override

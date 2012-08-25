@@ -34,7 +34,7 @@ public class Turn_the_Tide {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer opponent=game.getOpponent((MagicPlayer)data[1]);
+            final MagicPlayer opponent=((MagicPlayer)data[1]).getOpponent();
             final Collection<MagicTarget> targets=
                 game.filterTargets(opponent,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {

@@ -32,7 +32,7 @@ public class Kazuul__Tyrant_of_the_Cliffs {
             final MagicPlayer player=(MagicPlayer)data[1];
             game.addEvent(new MagicPlayOgreUnlessEvent(
                         (MagicPermanent)data[0],
-                        game.getOpponent(player),
+                        player.getOpponent(),
                         player,
                         MagicManaCost.THREE));
         }

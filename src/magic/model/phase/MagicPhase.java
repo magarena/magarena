@@ -34,7 +34,7 @@ public abstract class MagicPhase {
                 break;
             case OtherPlayer:
                 game.checkState();
-                game.addEvent(new MagicPriorityEvent(game.getOpponent(game.getTurnPlayer())));
+                game.addEvent(new MagicPriorityEvent(game.getTurnPlayer().getOpponent()));
                 break;
             case Resolve:
                 // Stack can be empty at this point, for instance by a counter unless event.

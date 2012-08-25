@@ -46,7 +46,7 @@ public class Alpha_Brawl {
                 final MagicPlayer player = (MagicPlayer)data[1];
                 public void doAction(final MagicPermanent permanent) {
                     final Collection<MagicTarget> creatures = 
-                            game.filterTargets(game.getOpponent(player),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                            game.filterTargets(player.getOpponent(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                     for (final MagicTarget creature : creatures) {
                         final MagicDamage damage = new MagicDamage(
                                 permanent,

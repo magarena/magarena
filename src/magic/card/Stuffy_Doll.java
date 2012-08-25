@@ -86,7 +86,7 @@ public class Stuffy_Doll {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
-            permanent.setChosenTarget(game.getOpponent(player));
+            permanent.setChosenTarget(player.getOpponent());
             return MagicEvent.NONE;
         }
 

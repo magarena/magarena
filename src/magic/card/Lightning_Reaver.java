@@ -44,7 +44,7 @@ public class Lightning_Reaver {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,game.getOpponent(player)},
+                        new Object[]{permanent,player.getOpponent()},
                         this,
                         permanent + " deals damage equal to the number of " + 
                         "charge counters on it to your opponent."):

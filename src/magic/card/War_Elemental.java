@@ -19,7 +19,7 @@ public class War_Elemental {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
-            final MagicPlayer opponent = game.getOpponent(player);
+            final MagicPlayer opponent = player.getOpponent();
             return (!opponent.hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,
@@ -46,7 +46,7 @@ public class War_Elemental {
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
             final MagicPlayer player = permanent.getController();
-            final MagicPlayer opponent = game.getOpponent(player);
+            final MagicPlayer opponent = player.getOpponent();
             final int amount = damage.getDealtAmount();
             return (damage.getTarget() == opponent) ?
                 new MagicEvent(

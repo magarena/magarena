@@ -16,7 +16,7 @@ public class Exquisite_Blood {
                 final Object[] data) {
             final MagicPlayer player = permanent.getController();
             final int amount = (Integer)data[1];
-            return (game.getOpponent(player) == (MagicPlayer)data[0]) ?
+            return (player.getOpponent() == (MagicPlayer)data[0]) ?
                 new MagicEvent(
                     permanent,
                     player,

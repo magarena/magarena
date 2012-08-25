@@ -35,7 +35,7 @@ public class Pulse_of_the_Fields {
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             final MagicPlayer player = (MagicPlayer)data[1];
             game.doAction(new MagicChangeLifeAction(player,4));
-            final boolean more = game.getOpponent(player).getLife() > player.getLife();
+            final boolean more = player.getOpponent().getLife() > player.getLife();
             final MagicLocationType location = more ? MagicLocationType.OwnersHand : MagicLocationType.Graveyard;
             game.doAction(new MagicMoveCardAction(cardOnStack.getCard(),MagicLocationType.Stack,location));
         }

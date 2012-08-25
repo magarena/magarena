@@ -55,11 +55,11 @@ public class Scroll_of_Griselbrand {
             final MagicPlayer player = event.getPlayer();
             game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
-                    game.getOpponent(player),
+                    player.getOpponent(),
                     1,
                     false));
             if (player.controlsPermanentWithSubType(MagicSubType.Demon)) {
-                game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-3));
+                game.doAction(new MagicChangeLifeAction(player.getOpponent(),-3));
             }
         }
     };

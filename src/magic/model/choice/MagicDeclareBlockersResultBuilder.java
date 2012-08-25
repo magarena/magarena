@@ -44,7 +44,7 @@ public class MagicDeclareBlockersResultBuilder {
     MagicDeclareBlockersResultBuilder(final MagicGame game,final MagicPlayer defendingPlayer,final boolean fast) {
         this.game=game;
         this.defendingPlayer=defendingPlayer;
-        this.attackingPlayer=game.getOpponent(defendingPlayer);
+        this.attackingPlayer=defendingPlayer.getOpponent();
         this.fast=fast;
         
         // Caching for better speed and immediate mode for triggers.

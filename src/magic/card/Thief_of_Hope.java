@@ -22,7 +22,7 @@ public class Thief_of_Hope {
                         player,
                         new Object[]{player},
                         this,
-                        game.getOpponent(player) + " loses 1 life and " +
+                        player.getOpponent() + " loses 1 life and " +
                         player + " gains 1 life."):
                 MagicEvent.NONE;
         }
@@ -33,7 +33,7 @@ public class Thief_of_Hope {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicPlayer player = (MagicPlayer)data[0];
-            game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-1));
+            game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1));
             game.doAction(new MagicChangeLifeAction(player,1));
         }        
     };

@@ -27,7 +27,7 @@ public class Fumiko_the_Lowblood {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             if (permanent == data) {
                 final MagicPlayer player = permanent.getController();
-                final int amount = game.getOpponent(player).getNrOfAttackers();
+                final int amount = player.getOpponent().getNrOfAttackers();
                 return new MagicEvent(
                         permanent,
                         player,

@@ -45,10 +45,10 @@ public class Exhume {
                     game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
                     game.addEvent(new MagicEvent(
                             cardOnStack.getCard(),
-                            game.getOpponent(player),
+                            player.getOpponent(),
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                             new MagicGraveyardTargetPicker(true),
-                            new Object[]{game.getOpponent(player)},
+                            new Object[]{player.getOpponent()},
                             EVENT_ACTION,
                             ""));
                 }

@@ -20,9 +20,9 @@ public class Hellrider {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,game.getOpponent(player)},
+                        new Object[]{permanent,player.getOpponent()},
                         this,
-                        permanent + " deals 1 damage to " + game.getOpponent(player) + ".") :
+                        permanent + " deals 1 damage to " + player.getOpponent() + ".") :
                 MagicEvent.NONE;
         }
         

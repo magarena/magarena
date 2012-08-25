@@ -13,7 +13,7 @@ public class Tarmogoyf {
         @Override
         public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
             MagicCardList cardList = new MagicCardList(player.getGraveyard());
-            cardList.addAll(game.getOpponent(player).getGraveyard());
+            cardList.addAll(player.getOpponent().getGraveyard());
             int types = 0;
             for (final MagicType type : MagicType.ALL_CARD_TYPES) {
                 for (final MagicCard card : cardList) {

@@ -102,7 +102,7 @@ public class MagicPlayChoice extends MagicChoice {
              game.isPhase(MagicPhaseType.CombatDamage) ||
              game.isPhase(MagicPhaseType.EndOfCombat)) &&
             player.getNrOfAttackers() == 0 && 
-            game.getOpponent(player).getNrOfAttackers() == 0) {
+            player.getOpponent().getNrOfAttackers() == 0) {
             return PASS_CHOICE_RESULTS;
         }
 
@@ -124,7 +124,7 @@ public class MagicPlayChoice extends MagicChoice {
 
             //if AI blocks, don't skip priority so that user can observe how the AI is blocking
             if (game.isPhase(MagicPhaseType.DeclareBlockers) && 
-                game.getOpponent(player).getNrOfBlockers() > 0 && 
+                player.getOpponent().getNrOfBlockers() > 0 && 
                 game.getStack().isEmpty()) {
                 skip = false;
             }

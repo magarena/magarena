@@ -20,7 +20,7 @@ public class Massacre_Wurm {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{game.getOpponent(player)},
+                    new Object[]{player.getOpponent()},
                     this,
                     "Creatures your opponent controls get -2/-2 until end of turn.");
         }

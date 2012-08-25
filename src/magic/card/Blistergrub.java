@@ -20,7 +20,7 @@ public class Blistergrub {
                         player,
                         new Object[]{player},
                         this,
-                        game.getOpponent(player)+ " loses 2 life."):
+                        player.getOpponent()+ " loses 2 life."):
                 MagicEvent.NONE;
         }
         @Override
@@ -30,7 +30,7 @@ public class Blistergrub {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicPlayer player=(MagicPlayer)data[0];
-            game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-2));
+            game.doAction(new MagicChangeLifeAction(player.getOpponent(),-2));
         }
     };
 }

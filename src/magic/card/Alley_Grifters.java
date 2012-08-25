@@ -11,7 +11,7 @@ public class Alley_Grifters {
     public static final MagicWhenBecomesBlockedTrigger T = new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
-            final MagicPlayer defendingPlayer = game.getOpponent(permanent.getController());
+            final MagicPlayer defendingPlayer = permanent.getController().getOpponent();
             return (permanent == data ) ?
                     new MagicEvent(
                             permanent,

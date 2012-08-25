@@ -26,7 +26,7 @@ public class Ronin_Cliffrider {
                         new MagicMayChoice(
                                 player + " may$ have " + permanent + " deal 1 damage " +
                                 "to each creature defending player controls."),
-                        new Object[]{permanent,game.getOpponent(player)},
+                        new Object[]{permanent,player.getOpponent()},
                         this,
                         player + " may$ have " + permanent + " deal 1 damage " +
                         "to each creature defending player controls.") :

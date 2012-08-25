@@ -44,7 +44,7 @@ public class Mistbind_Clique {
                     player,
                     championChoice,
                     MagicExileTargetPicker.create(),
-                    new Object[]{permanent,game.getOpponent(player)},
+                    new Object[]{permanent,player.getOpponent()},
                     this,
                     "You may$ exile another Faerie you control$. " +
                     "If you don't, sacrifice " + permanent + ".");

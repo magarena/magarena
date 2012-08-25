@@ -16,7 +16,7 @@ public class Antagonism {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer player) {
-            final MagicPlayer opponent = game.getOpponent(player);
+            final MagicPlayer opponent = player.getOpponent();
             return (!opponent.hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,

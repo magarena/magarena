@@ -31,7 +31,7 @@ public class Subversion {
                 final Object data[],
                 final Object[] choiceResults) {
             final MagicPlayer player = (MagicPlayer)data[0];
-            game.doAction(new MagicChangeLifeAction(game.getOpponent(player),-1));
+            game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1));
             game.doAction(new MagicChangeLifeAction(player,1));
         }        
     };

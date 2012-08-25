@@ -22,7 +22,7 @@ public class Butcher_of_Malakir {
                 new MagicEvent(
                     permanent,
                     controller,
-                    new Object[]{permanent,game.getOpponent(controller)},
+                    new Object[]{permanent,controller.getOpponent()},
                     this,
                     "Your opponent sacrifices a creature."):
                 MagicEvent.NONE;
@@ -54,7 +54,7 @@ public class Butcher_of_Malakir {
                 new MagicEvent(
                     permanent,
                     controller,
-                    new Object[]{permanent,game.getOpponent(controller)},
+                    new Object[]{permanent,controller.getOpponent()},
                     this,
                     "Your opponent sacrifices a creature."):
                 MagicEvent.NONE;

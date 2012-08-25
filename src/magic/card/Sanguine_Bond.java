@@ -17,9 +17,9 @@ public class Sanguine_Bond {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{game.getOpponent(player),amount},
+                    new Object[]{player.getOpponent(),amount},
                     this,
-                    game.getOpponent(player) + " loses " + amount + " life."):
+                    player.getOpponent() + " loses " + amount + " life."):
                 MagicEvent.NONE;
         }
         @Override

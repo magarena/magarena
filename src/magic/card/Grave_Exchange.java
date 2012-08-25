@@ -33,7 +33,7 @@ public class Grave_Exchange {
                     if (opponent.controlsPermanentWithType(MagicType.Creature)) {
                         game.addEvent(new MagicSacrificePermanentEvent(
                             event.getSource(),
-                            game.getOpponent(event.getPlayer()),
+                            event.getPlayer().getOpponent(),
                             MagicTargetChoice.SACRIFICE_CREATURE));
                     }
                 }

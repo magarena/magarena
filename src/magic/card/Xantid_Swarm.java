@@ -23,7 +23,7 @@ public class Xantid_Swarm {
                         player,
                         MagicEvent.NO_DATA,
                         this,
-                        game.getOpponent(player) + " can't cast spells this turn."):
+                        player.getOpponent() + " can't cast spells this turn."):
                 MagicEvent.NONE;           
         }
         
@@ -34,7 +34,7 @@ public class Xantid_Swarm {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicChangePlayerStateAction(
-                    game.getOpponent(event.getPlayer()),
+                    event.getPlayer().getOpponent(),
                     MagicPlayerState.CantCastSpells,
                     true));
         }

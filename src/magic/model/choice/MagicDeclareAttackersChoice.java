@@ -42,7 +42,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
             final MagicSource source) {
         
         final MagicDeclareAttackersResult result = new MagicDeclareAttackersResult();
-        final MagicCombatCreatureBuilder builder = new MagicCombatCreatureBuilder(game,player,game.getOpponent(player));
+        final MagicCombatCreatureBuilder builder = new MagicCombatCreatureBuilder(game,player,player.getOpponent());
         builder.buildBlockers();        
         
         if (builder.buildAttackers()) {
@@ -66,7 +66,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
         final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult();
-        final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player,game.getOpponent(player));
+        final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player,player.getOpponent());
         builder.buildBlockers();        
         
         final Set<Object> validChoices=new HashSet<Object>();

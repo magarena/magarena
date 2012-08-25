@@ -47,7 +47,7 @@ public class Scorch_the_Fields {
                 public void doAction(final MagicPermanent permanent) {
                     game.doAction(new MagicDestroyAction(permanent));
                     final Collection<MagicTarget> targets = game.filterTargets(
-                            game.getOpponent(cardOnStack.getController()),
+                            cardOnStack.getController().getOpponent(),
                             MagicTargetFilter.TARGET_HUMAN);
                     for (final MagicTarget target : targets) {
                         final MagicDamage damage = new MagicDamage(

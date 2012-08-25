@@ -17,7 +17,7 @@ public class Custody_Battle {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer data) {
             final MagicPermanent enchanted = permanent.getEnchantedCreature();
             final MagicPlayer player = enchanted.getController();
-            final MagicPlayer opponent = game.getOpponent(player);
+            final MagicPlayer opponent = player.getOpponent();
             return (player == data) ?
                 new MagicEvent(
                         enchanted,

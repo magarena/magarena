@@ -12,7 +12,7 @@ public class Septic_Rats {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent data) {
             final MagicPlayer player=permanent.getController();
-            return (permanent==data && game.getOpponent(player).getPoison()>0) ?
+            return (permanent==data && player.getOpponent().getPoison()>0) ?
                     new MagicEvent(
                             permanent,
                             player,

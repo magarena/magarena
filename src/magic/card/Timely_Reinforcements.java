@@ -37,11 +37,11 @@ public class Timely_Reinforcements {
             final MagicCardOnStack cardOnStack = (MagicCardOnStack)data[0];
             game.doAction(new MagicMoveCardAction(cardOnStack));        
             final MagicPlayer player = (MagicPlayer)data[1];
-            if (player.getLife() < game.getOpponent(player).getLife()) {
+            if (player.getLife() < player.getOpponent().getLife()) {
                 game.doAction(new MagicChangeLifeAction(player,6));
             }    
             if (player.getNrOfPermanentsWithType(MagicType.Creature) < 
-                    game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature)) {
+                    player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature)) {
                 for (int count = 3; count > 0; count--) {
                     game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Soldier")));
                 }

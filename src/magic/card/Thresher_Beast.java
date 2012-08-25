@@ -18,9 +18,9 @@ public class Thresher_Beast {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{permanent,game.getOpponent(player)},
+                            new Object[]{permanent,player.getOpponent()},
                             this,
-                            game.getOpponent(player) + " sacrifices a land."):
+                            player.getOpponent() + " sacrifices a land."):
                     MagicEvent.NONE;
         }
         

@@ -11,8 +11,7 @@ public class Night_Revelers {
     public static final MagicStatic S = new MagicStatic(MagicLayer.Ability) {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
-            final MagicGame game = source.getGame();
-            for (final MagicPermanent target : game.getOpponent(permanent.getController()).getPermanents()) {
+            for (final MagicPermanent target : permanent.getController().getOpponent().getPermanents()) {
                 if (target != permanent && target.hasSubType(MagicSubType.Human)) {
                     return flags | MagicAbility.Haste.getMask();
                 }

@@ -462,7 +462,7 @@ public class MagicTargetChoice extends MagicChoice {
                 return new Object[]{player};
             }
             // Only valid choice is opponent.
-            final MagicPlayer opponent=game.getOpponent(player);
+            final MagicPlayer opponent=player.getOpponent();
             if (validChoices.contains(opponent)) {
                 return new Object[]{opponent};
             }

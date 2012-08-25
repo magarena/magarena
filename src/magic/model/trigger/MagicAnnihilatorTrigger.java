@@ -20,7 +20,7 @@ public class MagicAnnihilatorTrigger extends MagicWhenAttacksTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicPermanent creature) {
-        final MagicPlayer opponent = game.getOpponent(permanent.getController());
+        final MagicPlayer opponent = permanent.getController().getOpponent();
         return (permanent == creature) ?
             new MagicEvent(
                     permanent,

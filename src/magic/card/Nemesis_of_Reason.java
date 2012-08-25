@@ -17,9 +17,9 @@ public class Nemesis_of_Reason {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{game.getOpponent(player)},
+                        new Object[]{player.getOpponent()},
                         this,
-                        game.getOpponent(player) + " puts the top ten cards " +
+                        player.getOpponent() + " puts the top ten cards " +
                                 "of his or her library into his or her graveyard."):
                 MagicEvent.NONE;
         }

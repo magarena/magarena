@@ -26,7 +26,7 @@ public class Balefire_Dragon {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{permanent,game.getOpponent(player),amount},
+                        new Object[]{permanent,player.getOpponent(),amount},
                         this,
                         permanent + " deals " + amount + 
                         " damage to each creature defending player controls."):

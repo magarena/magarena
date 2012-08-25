@@ -19,7 +19,7 @@ public class Black_Cat {
             if (triggerData.fromLocation != MagicLocationType.Play) {
                 return MagicEvent.NONE;
             }
-            final MagicPlayer opponent = game.getOpponent(permanent.getController());
+            final MagicPlayer opponent = permanent.getController().getOpponent();
             return new MagicEvent(
                         permanent,
                         permanent.getController(),

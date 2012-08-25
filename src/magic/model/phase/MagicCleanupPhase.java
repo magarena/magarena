@@ -43,7 +43,7 @@ public class MagicCleanupPhase extends MagicPhase {
             final String playerName = turnPlayer.getName();
             game.logMessage(turnPlayer,playerName + " takes an extra turn.");
         } else {
-            turnPlayer=game.getOpponent(turnPlayer);
+            turnPlayer=turnPlayer.getOpponent();
             game.setTurnPlayer(turnPlayer);
         }
         if (!turnPlayer.getBuilderCost().isEmpty()) {

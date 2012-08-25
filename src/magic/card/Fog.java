@@ -31,7 +31,7 @@ public class Fog {
             final MagicPlayer player = (MagicPlayer)data[1];
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.PreventAllCombatDamage,true));
-            game.doAction(new MagicChangePlayerStateAction(game.getOpponent(player),MagicPlayerState.PreventAllCombatDamage,true));
+            game.doAction(new MagicChangePlayerStateAction(player.getOpponent(),MagicPlayerState.PreventAllCombatDamage,true));
         }
     };
 }

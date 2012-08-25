@@ -46,7 +46,7 @@ public class Clinging_Mists {
                     MagicPlayerState.PreventAllCombatDamage,
                     true));
             game.doAction(new MagicChangePlayerStateAction(
-                    game.getOpponent(player),
+                    player.getOpponent(),
                     MagicPlayerState.PreventAllCombatDamage,
                     true));
             if (player.getLife() <= 5) {

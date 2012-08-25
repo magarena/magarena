@@ -20,7 +20,7 @@ public class Mage_Slayer {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{equippedCreature,game.getOpponent(player)},
+                        new Object[]{equippedCreature,player.getOpponent()},
                         this,
                         equippedCreature+ " deals damage equal to its power to defending player."):
                 MagicEvent.NONE;

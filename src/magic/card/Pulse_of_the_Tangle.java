@@ -36,7 +36,7 @@ public class Pulse_of_the_Tangle {
             final MagicCardOnStack cardOnStack=(MagicCardOnStack)data[0];
             final MagicPlayer player=(MagicPlayer)data[1];
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Beast3")));
-            final boolean more=game.getOpponent(player).getNrOfPermanentsWithType(MagicType.Creature)>
+            final boolean more=player.getOpponent().getNrOfPermanentsWithType(MagicType.Creature)>
             player.getNrOfPermanentsWithType(MagicType.Creature);            
             final MagicLocationType location=more?MagicLocationType.OwnersHand:MagicLocationType.Graveyard;
             game.doAction(new MagicMoveCardAction(cardOnStack.getCard(),MagicLocationType.Stack,location));

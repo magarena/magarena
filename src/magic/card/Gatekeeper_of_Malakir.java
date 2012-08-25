@@ -31,7 +31,7 @@ public class Gatekeeper_of_Malakir {
                 public void doAction(final MagicPlayer opponent) {
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
-                        game.getOpponent(event.getPlayer()),
+                        event.getPlayer().getOpponent(),
                         MagicTargetChoice.SACRIFICE_CREATURE));
                 }
             });

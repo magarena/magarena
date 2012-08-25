@@ -20,7 +20,7 @@ public class Rhox {
                 final MagicPermanent permanent,
                 final MagicPermanent data) {
             final MagicPlayer player = permanent.getController();
-            final MagicPlayer defendingPlayer = game.getOpponent(player);
+            final MagicPlayer defendingPlayer = player.getOpponent();
             return (permanent == data ) ?
                     new MagicEvent(
                             permanent,

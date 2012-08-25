@@ -17,7 +17,7 @@ public class MagicDeclareAttackersResultBuilder {
     private static final int MAX_ATTACKERS[]={5,4,3,2,1,0,0,0};
 
     static Collection<Object> buildResults(final MagicGame game, final MagicPlayer attackingPlayer) {
-        final MagicPlayer defendingPlayer = game.getOpponent(attackingPlayer);
+        final MagicPlayer defendingPlayer = attackingPlayer.getOpponent();
         final MagicCombatCreatureBuilder creatureBuilder=new MagicCombatCreatureBuilder(game,attackingPlayer,defendingPlayer);
         creatureBuilder.buildBlockers();
         

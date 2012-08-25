@@ -66,7 +66,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     public Object[] getPlayerChoiceResults(final GameController controller,final MagicGame game,final MagicPlayer player,final MagicSource source) {
 
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
-        final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,game.getOpponent(player),player);
+        final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player.getOpponent(),player);
         builder.buildBlockers();
 
         if (!builder.buildBlockableAttackers()&&game.canSkipDeclareBlockersSingleChoice()) {
@@ -137,7 +137,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
             final MagicSource source) {
         
         final MagicDeclareBlockersResult result=new MagicDeclareBlockersResult(0,0);
-        final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,game.getOpponent(player),player);
+        final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player.getOpponent(),player);
 
         //check if any of the defending creatures can block
         if (!builder.buildBlockers()) {

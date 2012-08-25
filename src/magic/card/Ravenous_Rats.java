@@ -12,7 +12,7 @@ public class Ravenous_Rats {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            final MagicPlayer opponent = game.getOpponent(player);
+            final MagicPlayer opponent = player.getOpponent();
             return new MagicEvent(
                     permanent,
                     player,
