@@ -255,7 +255,7 @@ daily: $(EXE)
 			-l Deprecated \
 			Magarena_`hg id -n`.exe
 
-upload/%: 
+upload/%: Magarena-%.zip Magarena-%.app.zip 
 	make upload/Magarena-$*.app.zip 
 	make upload/Magarena-$*.zip
 
