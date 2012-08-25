@@ -12,13 +12,13 @@ public class MagicEquipTargetPicker extends MagicTargetPicker<MagicPermanent> {
     private final long givenAbilityFlags;
     private final MagicPowerToughness givenPT;
     
-    public MagicEquipTargetPicker(final MagicCardDefinition cardDefinition) {
+    public MagicEquipTargetPicker(final MagicPermanent equipment) {
         // determine given ability and given pt of equipment from list of static abilities
         long ability = 0;
         MagicPowerToughness pt = new MagicPowerToughness(0,0);
 
-        for (final MagicStatic mstatic : cardDefinition.getStatics()) {
-            ability = mstatic.getAbilityFlags(MagicPermanent.NONE, MagicPermanent.NONE, ability);
+        for (final MagicStatic mstatic : equipment.getCardDefinition().getStatics()) {
+            ability = mstatic.getAbilityFlags(equipment, MagicPermanent.NONE, ability);
             mstatic.modPowerToughness(MagicGame.getInstance(), MagicPermanent.NONE, pt);
         }
 

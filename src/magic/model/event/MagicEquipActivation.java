@@ -39,7 +39,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
                 source,
                 source.getController(),
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                new MagicEquipTargetPicker(getCardDefinition()),
+                new MagicEquipTargetPicker(source),
                 new Object[]{source},
                 this,
                 "Attach " + source + " to target creature$ you control.");
