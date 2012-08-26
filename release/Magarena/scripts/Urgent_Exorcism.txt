@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={1}{W}
 timing=removal
-requires_card_code
+effect=Destroy target Spirit or enchantment
