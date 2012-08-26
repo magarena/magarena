@@ -36,7 +36,7 @@ public class MagicMulliganEvent extends MagicEvent {
                 final MagicCardList library = player.getLibrary();
                 library.shuffle(library.getCardsId());
                 game.doAction(new MagicDrawAction(player,size - 1));
-                    game.addEvent(new MagicMulliganEvent(player));
+                game.addEvent(new MagicMulliganEvent(player));
             }
         }
     };
