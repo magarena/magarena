@@ -508,7 +508,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target tapped creature", NEG_TARGET_TAPPED_CREATURE);
         factory.put("neg target spirit or enchantment", NEG_TARGET_SPIRIT_OR_ENCHANTMENT);
         factory.put("neg target permanent", NEG_TARGET_PERMANENT);
-        factory.put("neg target enchantment ", NEG_TARGET_ENCHANTMENT);
+        factory.put("neg target enchantment", NEG_TARGET_ENCHANTMENT);
         factory.put("neg target creature with power 4 or greater", NEG_TARGET_CREATURE_POWER_4_OR_MORE);
         factory.put("neg target creature with flying", NEG_TARGET_CREATURE_WITH_FLYING);
         factory.put("neg target non-vampire, non-werewolf, non-zombie creature", NEG_TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
