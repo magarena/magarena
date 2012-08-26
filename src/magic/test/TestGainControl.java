@@ -9,29 +9,29 @@ import magic.model.phase.MagicMainPhase;
 
 class TestGainControl extends TestGameBuilder {    
     public MagicGame getGame() {
-		final MagicDuel duel=new MagicDuel();
-		duel.setDifficulty(6);
-		
-		final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
-		final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
-		final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
-		duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-		duel.setStartPlayer(0);
-		
-		final MagicGame game=duel.nextGame(true);
-		game.setPhase(MagicMainPhase.getFirstInstance());
-		final MagicPlayer player=game.getPlayer(0);
-		final MagicPlayer opponent=game.getPlayer(1);
+        final MagicDuel duel=new MagicDuel();
+        duel.setDifficulty(6);
+        
+        final MagicPlayerProfile profile=new MagicPlayerProfile("bgruw");
+        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
+        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
+        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
+        duel.setStartPlayer(0);
+        
+        final MagicGame game=duel.nextGame(true);
+        game.setPhase(MagicMainPhase.getFirstInstance());
+        final MagicPlayer player=game.getPlayer(0);
+        final MagicPlayer opponent=game.getPlayer(1);
 
         MagicPlayer P = player;
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-		createPermanent(game,P,"Rupture Spire",false,8);
-		createPermanent(game,P,"Creeping Tar Pit",false,1);
-		createPermanent(game,P,"Raging Ravine",false,1);
+        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(game,P,"Creeping Tar Pit",false,1);
+        createPermanent(game,P,"Raging Ravine",false,1);
         createPermanent(game,P,"Grizzly Bears",false,3);
-	    addToHand(P,"Act of Treason",1);
+        addToHand(P,"Act of Treason",1);
         addToHand(P,"Threaten",1);
         addToHand(P,"Slave of Bolas",1);
         addToHand(P,"Traitorous Blood",1);
@@ -44,12 +44,12 @@ class TestGainControl extends TestGameBuilder {
 
 
         P = opponent;
-		
+        
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-		createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(game,P,"Rupture Spire",false,8);
         createPermanent(game,P,"Grizzly Bears",false,3);
-		
-		return game;
+        
+        return game;
     }
 }
