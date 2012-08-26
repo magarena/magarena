@@ -8,4 +8,4 @@ rarity=R
 type=Sorcery
 cost={1}{W}{B}
 timing=removal
-requires_card_code
+efffect=Destroy target permanent
