@@ -19,10 +19,7 @@ public class MagicMulliganPhase extends MagicPhase {
     @Override
     public void executeBeginStep(final MagicGame game) {
         for (final MagicPlayer player : game.getPlayers()) {
-            // only use mulligan when smart shuffle is not used
-            if (!player.getSmartShuffleUsed()) {
-                game.addEvent(new MagicMulliganEvent(player));
-            }
+            game.addEvent(new MagicMulliganEvent(player));
         }
         game.setStep(MagicStep.NextPhase);
     }
