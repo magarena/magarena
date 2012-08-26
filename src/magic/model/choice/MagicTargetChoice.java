@@ -488,10 +488,15 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg permanent", NEG_TARGET_PERMANENT);
         factory.put("neg nonbasic land", NEG_TARGET_NONBASIC_LAND);
         factory.put("pos nonblack creature", POS_TARGET_NONBLACK_CREATURE);
+       
+        factory.put("neg target nonartifact creature", NEG_TARGET_NONARTIFACT_CREATURE); 
     }
-    
 
     public static MagicTargetChoice build(String arg) {
-        return factory.get(arg);
+        if (factory.containsKey(arg)) {
+            return factory.get(arg);
+        } else {
+            throw new RuntimeException("unknown target choice \"" + arg + "\"");
+        }
     }
 }

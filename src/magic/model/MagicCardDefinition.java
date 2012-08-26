@@ -591,7 +591,7 @@ public class MagicCardDefinition {
         mod.change(this);
     }
     
-    public void addEvent(final MagicCardEvent cardEvent) {
+    public void setEvent(final MagicCardEvent cardEvent) {
         this.cardEvent=cardEvent;
         numSpellEvent++;
     }

@@ -9,6 +9,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicStaticType;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicPlayAuraEvent;
+import magic.model.event.MagicSpellCardEvent;
 import magic.model.mstatic.MagicStatic;
 
 public enum CardProperty {
@@ -158,6 +159,11 @@ public enum CardProperty {
             if (card.getFullName() == null) {
                 card.setFullName(value);
             }
+        }
+    },
+    EFFECT() {
+        void setProperty(final MagicCardDefinition card, final String value) {
+            card.add(MagicSpellCardEvent.create(value));
         }
     },
     REQUIRES_CARD_CODE() {
