@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={1}{G}
 timing=removal
-requires_card_code
+effect=Destroy target creature$ with flying

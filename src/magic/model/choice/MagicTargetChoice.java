@@ -509,6 +509,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target permanent", NEG_TARGET_PERMANENT);
         factory.put("neg target enchantment ", NEG_TARGET_ENCHANTMENT);
         factory.put("neg target creature with power 4 or greater", NEG_TARGET_CREATURE_POWER_4_OR_MORE);
+        factory.put("neg target creature with flying", NEG_TARGET_CREATURE_WITH_FLYING);
     }
 
     public static MagicTargetChoice build(String arg) {
