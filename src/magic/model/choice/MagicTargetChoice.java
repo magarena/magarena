@@ -491,8 +491,10 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg nonbasic land", NEG_TARGET_NONBASIC_LAND);
         factory.put("pos nonblack creature", POS_TARGET_NONBLACK_CREATURE);
        
+        factory.put("neg target artifact", NEG_TARGET_ARTIFACT);
         factory.put("neg target artifact or enchantment", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT); 
         factory.put("neg target artifact or land", NEG_TARGET_ARTIFACT_OR_LAND);
+        factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         factory.put("neg target attacking creature", NEG_TARGET_ATTACKING_CREATURE); 
         factory.put("neg target blocked creature", NEG_TARGET_BLOCKED_CREATURE); 
         factory.put("neg target creature", NEG_TARGET_CREATURE);
@@ -503,7 +505,6 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target nonblack creature", NEG_TARGET_NONBLACK_CREATURE); 
         factory.put("neg target noncreature permanent", NEG_TARGET_NONCREATURE);
         factory.put("neg target land", NEG_TARGET_LAND);
-        factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         factory.put("neg target green or white creature", NEG_TARGET_GREEN_OR_WHITE_CREATURE);
         factory.put("neg target tapped creature", NEG_TARGET_TAPPED_CREATURE);
         factory.put("neg target spirit or enchantment", NEG_TARGET_SPIRIT_OR_ENCHANTMENT);

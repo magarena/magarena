@@ -8,4 +8,4 @@ type=Sorcery
 cost={R}
 ability=replicate
 timing=removal
-requires_card_code
+effect=Destroy target artifact
