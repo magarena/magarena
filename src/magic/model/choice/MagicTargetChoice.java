@@ -498,6 +498,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target artifact or land", NEG_TARGET_ARTIFACT_OR_LAND);
         factory.put("neg target noncreature permanent", NEG_TARGET_NONCREATURE);
         factory.put("neg target creature", NEG_TARGET_CREATURE);
+        factory.put("neg target land", NEG_TARGET_LAND);
     }
 
     public static MagicTargetChoice build(String arg) {
