@@ -7,4 +7,4 @@ rarity=U
 type=Instant
 cost={1}{W}{B}
 timing=removal
-requires_card_code
+effect=Destroy target creature or enchantment
