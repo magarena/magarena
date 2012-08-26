@@ -517,6 +517,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target spell", NEG_TARGET_SPELL);
         factory.put("neg target red or green spell", NEG_TARGET_RED_GREEN_SPELL);
         factory.put("neg target noncreature spell", NEG_TARGET_NONCREATURE_SPELL);
+        factory.put("neg target creature spell", NEG_TARGET_CREATURE_SPELL);
     }
 
     public static MagicTargetChoice build(String arg) {
