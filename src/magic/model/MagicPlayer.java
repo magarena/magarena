@@ -47,7 +47,7 @@ public class MagicPlayer implements MagicTarget {
     private int preventDamage;
     private int extraTurns;
     private int drawnCards;
-    private boolean SmartShuffleUsed;
+    private boolean smartShuffleUsed;
     private final MagicCardList hand;
     private final MagicCardList library;
     private final MagicCardList graveyard;
@@ -289,11 +289,11 @@ public class MagicPlayer implements MagicTarget {
     }
     
     public boolean getSmartShuffleUsed() {
-        return SmartShuffleUsed;
+        return smartShuffleUsed;
     }
     
-    private void setSmartShuffleUsed(boolean b) {
-        this.SmartShuffleUsed = b;
+    private void setSmartShuffleUsed(boolean used) {
+        smartShuffleUsed = used;
     }
 
     public MagicCardList getLibrary() {
