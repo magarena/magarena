@@ -212,7 +212,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a creature you control");
     public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL=
         new MagicTargetChoice(MagicTargetFilter.TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL,false,MagicTargetHint.None,"a red or green creature you control");
-    public static final MagicTargetChoice NEG_GREEN_OR_WHITE_CREATURE =
+    public static final MagicTargetChoice NEG_TARGET_GREEN_OR_WHITE_CREATURE =
         new MagicTargetChoice(MagicTargetFilter.TARGET_GREEN_OR_WHITE_CREATURE,true,MagicTargetHint.Negative,"target green or white creature");
     public static final MagicTargetChoice NEG_WHITE_OR_BLUE_CREATURE =
         new MagicTargetChoice(MagicTargetFilter.TARGET_WHITE_OR_BLUE_CREATURE,true,MagicTargetHint.Negative,"target white or blue creature");
@@ -501,7 +501,8 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target noncreature permanent", NEG_TARGET_NONCREATURE);
         factory.put("neg target creature", NEG_TARGET_CREATURE);
         factory.put("neg target land", NEG_TARGET_LAND);
-        factory.put("neg target artifact, enchantment, or land ", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
+        factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
+        factory.put("neg target green or white creature", NEG_TARGET_GREEN_OR_WHITE_CREATURE);
     }
 
     public static MagicTargetChoice build(String arg) {
