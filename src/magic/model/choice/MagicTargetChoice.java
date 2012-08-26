@@ -497,23 +497,22 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         factory.put("neg target attacking creature", NEG_TARGET_ATTACKING_CREATURE); 
         factory.put("neg target blocked creature", NEG_TARGET_BLOCKED_CREATURE); 
+        factory.put("neg target tapped creature", NEG_TARGET_TAPPED_CREATURE);
         factory.put("neg target creature", NEG_TARGET_CREATURE);
         factory.put("neg target creature or enchantment", NEG_TARGET_CREATURE_OR_ENCHANTMENT); 
         factory.put("neg target creature or land", NEG_TARGET_CREATURE_OR_LAND);
+        factory.put("neg target creature with power 4 or greater", NEG_TARGET_CREATURE_POWER_4_OR_MORE);
+        factory.put("neg target creature with flying", NEG_TARGET_CREATURE_WITH_FLYING);
         factory.put("neg target nonartifact creature", NEG_TARGET_NONARTIFACT_CREATURE); 
-        factory.put("neg target human creature", NEG_TARGET_HUMAN_CREATURE); 
         factory.put("neg target nonblack creature", NEG_TARGET_NONBLACK_CREATURE); 
         factory.put("neg target noncreature permanent", NEG_TARGET_NONCREATURE);
-        factory.put("neg target land", NEG_TARGET_LAND);
+        factory.put("neg target human creature", NEG_TARGET_HUMAN_CREATURE); 
         factory.put("neg target green or white creature", NEG_TARGET_GREEN_OR_WHITE_CREATURE);
-        factory.put("neg target tapped creature", NEG_TARGET_TAPPED_CREATURE);
+        factory.put("neg target land", NEG_TARGET_LAND);
         factory.put("neg target spirit or enchantment", NEG_TARGET_SPIRIT_OR_ENCHANTMENT);
         factory.put("neg target permanent", NEG_TARGET_PERMANENT);
         factory.put("neg target enchantment", NEG_TARGET_ENCHANTMENT);
-        factory.put("neg target creature with power 4 or greater", NEG_TARGET_CREATURE_POWER_4_OR_MORE);
-        factory.put("neg target creature with flying", NEG_TARGET_CREATURE_WITH_FLYING);
         factory.put("neg target non-vampire, non-werewolf, non-zombie creature", NEG_TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
-
     }
 
     public static MagicTargetChoice build(String arg) {
