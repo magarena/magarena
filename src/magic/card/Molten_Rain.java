@@ -25,7 +25,8 @@ public class Molten_Rain {
                     new MagicDestroyTargetPicker(false),
                     new Object[]{cardOnStack},
                     this,
-                    "Destroy target land$.");
+                    "Destroy target land$. " + 
+                    "If that land was nonbasic, Molten Rain deals 2 damage to the land's controller.");
         }
 
         @Override
