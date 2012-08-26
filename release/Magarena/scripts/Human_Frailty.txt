@@ -7,4 +7,4 @@ rarity=U
 type=Instant
 cost={B}
 timing=removal
-requires_card_code
+effect=Destroy target Human creature
