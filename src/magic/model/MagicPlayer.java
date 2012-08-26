@@ -47,7 +47,6 @@ public class MagicPlayer implements MagicTarget {
     private int preventDamage;
     private int extraTurns;
     private int drawnCards;
-    private boolean smartShuffleUsed;
     private final MagicCardList hand;
     private final MagicCardList library;
     private final MagicCardList graveyard;
@@ -275,25 +274,11 @@ public class MagicPlayer implements MagicTarget {
                 System.currentTimeMillis()
         });
 
-        if (library.useSmartShuffle()) {
-            library.smartShuffle(seed);
-            setSmartShuffleUsed(true);
-        } else {
-            library.shuffle(seed);
-            setSmartShuffleUsed(false);
-        }
+        library.initialShuffle(seed);
 
         for (int count = handSize; count > 0 && !library.isEmpty(); count--) {
             addCardToHand(library.removeCardAtTop());
         }
-    }
-    
-    public boolean getSmartShuffleUsed() {
-        return smartShuffleUsed;
-    }
-    
-    private void setSmartShuffleUsed(boolean used) {
-        smartShuffleUsed = used;
     }
 
     public MagicCardList getLibrary() {

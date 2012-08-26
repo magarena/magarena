@@ -111,13 +111,26 @@ public class MagicCardList extends ArrayList<MagicCard> {
         return lands;
     }
     
-    boolean useSmartShuffle() {
+    private boolean useSmartShuffle() {
         final int lands = getNrOfLands();
         final int total = size();
         return lands == 16 && total == 40;
     }
+
+    //use smart shuffle if possible
+    public void initialShuffle(final long seed) {
+        if (useSmartShuffle()) {
+            smartShuffle(seed);
+        } else {
+            shuffle(seed);
+        }
+    }
+
+    public void shuffle() {
+        shuffle(getCardsId());
+    }
     
-    public void shuffle(final long seed) {
+    private void shuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
         final MagicCardList oldCards = new MagicCardList(this);
         clear();
@@ -129,7 +142,7 @@ public class MagicCardList extends ArrayList<MagicCard> {
         }
     }
     
-    void smartShuffle(final long seed) {
+    private void smartShuffle(final long seed) {
         final magic.MersenneTwisterFast rng = new magic.MersenneTwisterFast(seed);
         final int size=size();
         final List<MagicCard> lands=new ArrayList<MagicCard>();
