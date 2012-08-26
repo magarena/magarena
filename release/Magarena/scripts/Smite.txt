@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={W}
 timing=block
-requires_card_code
+effect=Destroy target blocked creature
