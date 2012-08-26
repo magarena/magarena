@@ -491,6 +491,7 @@ public class MagicTargetChoice extends MagicChoice {
        
         factory.put("neg target nonartifact creature", NEG_TARGET_NONARTIFACT_CREATURE); 
         factory.put("neg target creature or enchantment", NEG_TARGET_CREATURE_OR_ENCHANTMENT); 
+        factory.put("neg target artifact or enchantment", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT); 
     }
 
     public static MagicTargetChoice build(String arg) {
