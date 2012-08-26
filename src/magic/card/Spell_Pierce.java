@@ -15,12 +15,13 @@ public class Spell_Pierce {
     public static final MagicSpellCardEvent SPELL_PIERCE=new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            
             return new MagicEvent(
                     cardOnStack.getCard(),
                     cardOnStack.getController(),
                     MagicTargetChoice.NEG_TARGET_NONCREATURE_SPELL,
-                    new Object[]{cardOnStack},this,"Counter target noncreature spell$ unless its controller pays {2}.");
+                    new Object[]{cardOnStack},
+                    this,
+                    "Counter target noncreature spell$ unless its controller pays {2}.");
         }
 
         @Override
