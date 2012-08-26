@@ -12,178 +12,178 @@ import java.util.Properties;
 
 public class DuelConfig {
 
-	private static final DuelConfig INSTANCE=new DuelConfig();
+    private static final DuelConfig INSTANCE=new DuelConfig();
 
-	private static final String ANY_DECK="@";
-	private static final String ANY_THREE="***";
-	private static final String ANY_TWO="**";
-	private static final String ANY_ONE="*";
-	
-	private static final String CONFIG_FILENAME="duel.cfg";
-	private static final String AVATAR="avatar";
-	private static final String NAME="name";
-	private static final String START_LIFE="life";
-	private static final String HAND_SIZE="hand";
-	private static final String GAMES="games";
-	private static final String PLAYER="player";
-	private static final String OPPONENT="opponent";
-	private static final String CUBE="cube";
-	private static final String AI="ai";
+    private static final String ANY_DECK="@";
+    private static final String ANY_THREE="***";
+    private static final String ANY_TWO="**";
+    private static final String ANY_ONE="*";
+    
+    private static final String CONFIG_FILENAME="duel.cfg";
+    private static final String AVATAR="avatar";
+    private static final String NAME="name";
+    private static final String START_LIFE="life";
+    private static final String HAND_SIZE="hand";
+    private static final String GAMES="games";
+    private static final String PLAYER="player";
+    private static final String OPPONENT="opponent";
+    private static final String CUBE="cube";
+    private static final String AI="ai";
 
-	private int avatar=0;
-	private String name="Player";
-	private int startLife=20;
-	private int handSize=7;
-	private int games=7;
-	private String playerColors=ANY_THREE;
-	private String opponentColors=ANY_THREE;
-	private String cube=CubeDefinitions.DEFAULT_NAME;
-	private String ai="minimax";
-	
-	public DuelConfig() {
-		
-	}
-	
-	public DuelConfig(final DuelConfig duelConfig) {
-		avatar=duelConfig.avatar;
-		startLife=duelConfig.startLife;
-		handSize=duelConfig.handSize;
-		games=duelConfig.games;
-		playerColors=duelConfig.playerColors;
-		opponentColors=duelConfig.opponentColors;
+    private int avatar=0;
+    private String name="Player";
+    private int startLife=20;
+    private int handSize=7;
+    private int games=7;
+    private String playerColors=ANY_THREE;
+    private String opponentColors=ANY_THREE;
+    private String cube=CubeDefinitions.DEFAULT_NAME;
+    private String ai="minimax";
+    
+    public DuelConfig() {
+        
+    }
+    
+    public DuelConfig(final DuelConfig duelConfig) {
+        avatar=duelConfig.avatar;
+        startLife=duelConfig.startLife;
+        handSize=duelConfig.handSize;
+        games=duelConfig.games;
+        playerColors=duelConfig.playerColors;
+        opponentColors=duelConfig.opponentColors;
         ai=duelConfig.ai;
-	}
-	
-	public int getAvatar() {
-		return avatar;
-	}
+    }
+    
+    public int getAvatar() {
+        return avatar;
+    }
 
-	public void setAvatar(final int avatar) {
-		this.avatar = avatar;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-	public void setName(final String name) {
-		this.name=name;
-	}
+    public void setAvatar(final int avatar) {
+        this.avatar = avatar;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(final String name) {
+        this.name=name;
+    }
 
-	public int getStartLife() {
-		return startLife;
-	}
+    public int getStartLife() {
+        return startLife;
+    }
 
-	public void setStartLife(final int startLife) {
-		this.startLife = startLife;
-	}
+    public void setStartLife(final int startLife) {
+        this.startLife = startLife;
+    }
 
-	public int getHandSize() {
-		return handSize;
-	}
+    public int getHandSize() {
+        return handSize;
+    }
 
-	public void setHandSize(final int handSize) {
-		this.handSize = handSize;
-	}
-	
-	public void setNrOfGames(final int aGames) {
-		this.games = aGames; 
-	}
-	
-	public int getNrOfGames() {
-		return games;
-	}
-	
-	private static MagicPlayerProfile getProfile(final String colorText) {
-		if (ANY_DECK.equals(colorText)) {
-			return new MagicPlayerProfile("");
-		} else if (ANY_THREE.equals(colorText)) {
-			return new MagicPlayerProfile(MagicColor.getRandomColors(3));
-		} else if (ANY_TWO.equals(colorText)) {
-			return new MagicPlayerProfile(MagicColor.getRandomColors(2));
-		} else if (ANY_ONE.equals(colorText)) {
-			return new MagicPlayerProfile(MagicColor.getRandomColors(1));
-		} else if (DeckGenerators.getInstance().getGeneratorNames().contains(colorText)) {
-			// custom deck generator
-			return new MagicPlayerProfile("", colorText);
-		}
-		return new MagicPlayerProfile(colorText);
-	}
-	
-	public String getPlayerColors() {
-		return playerColors;
-	}
-	
-	public void setPlayerColors(final String colors) {
-		playerColors=colors;
-	}
-	
-	public MagicPlayerProfile getPlayerProfile() {
-		return getProfile(playerColors);
-	}
-	
-	public String getOpponentColors() {
-		return opponentColors;
-	}
-	
-	public void setOpponentColors(final String colors) {
-		opponentColors=colors;
-	}
-	
-	public MagicPlayerProfile getOpponentProfile() {
-		return getProfile(opponentColors);
-	}
-	
-	public String getCube() {
-		return cube;
-	}
-	
-	public void setCube(final String cube) {
-		this.cube=cube;
-	}
-	
+    public void setHandSize(final int handSize) {
+        this.handSize = handSize;
+    }
+    
+    public void setNrOfGames(final int aGames) {
+        this.games = aGames; 
+    }
+    
+    public int getNrOfGames() {
+        return games;
+    }
+    
+    private static MagicPlayerProfile getProfile(final String colorText) {
+        if (ANY_DECK.equals(colorText)) {
+            return new MagicPlayerProfile("");
+        } else if (ANY_THREE.equals(colorText)) {
+            return new MagicPlayerProfile(MagicColor.getRandomColors(3));
+        } else if (ANY_TWO.equals(colorText)) {
+            return new MagicPlayerProfile(MagicColor.getRandomColors(2));
+        } else if (ANY_ONE.equals(colorText)) {
+            return new MagicPlayerProfile(MagicColor.getRandomColors(1));
+        } else if (DeckGenerators.getInstance().getGeneratorNames().contains(colorText)) {
+            // custom deck generator
+            return new MagicPlayerProfile("", colorText);
+        }
+        return new MagicPlayerProfile(colorText);
+    }
+    
+    public String getPlayerColors() {
+        return playerColors;
+    }
+    
+    public void setPlayerColors(final String colors) {
+        playerColors=colors;
+    }
+    
+    public MagicPlayerProfile getPlayerProfile() {
+        return getProfile(playerColors);
+    }
+    
+    public String getOpponentColors() {
+        return opponentColors;
+    }
+    
+    public void setOpponentColors(final String colors) {
+        opponentColors=colors;
+    }
+    
+    public MagicPlayerProfile getOpponentProfile() {
+        return getProfile(opponentColors);
+    }
+    
+    public String getCube() {
+        return cube;
+    }
+    
+    public void setCube(final String cube) {
+        this.cube=cube;
+    }
+    
     public MagicAI[] getPlayerAIs() {
-		final MagicAI playerAI = MagicAIImpl.getAI(ai).getAI();
-		return new MagicAI[]{playerAI, playerAI};
-	}
-	
+        final MagicAI playerAI = MagicAIImpl.getAI(ai).getAI();
+        return new MagicAI[]{playerAI, playerAI};
+    }
+    
     public String getAI() {
-		return ai;
-	}
-	
-	public void setAI(final String ai) {
-		this.ai=ai;
-	}
+        return ai;
+    }
+    
+    public void setAI(final String ai) {
+        this.ai=ai;
+    }
 
-	public void load(final Properties properties) {
-		avatar=Integer.parseInt(properties.getProperty(AVATAR,Integer.toString(avatar)));
-		name=properties.getProperty(NAME,name);
-		startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
-		handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
-		games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
-		playerColors=properties.getProperty(PLAYER,playerColors);
-		opponentColors=properties.getProperty(OPPONENT,opponentColors);
-		cube=properties.getProperty(CUBE,cube);
-		ai=properties.getProperty(AI,ai);
-	}
-	
-	public void load() {
+    public void load(final Properties properties) {
+        avatar=Integer.parseInt(properties.getProperty(AVATAR,Integer.toString(avatar)));
+        name=properties.getProperty(NAME,name);
+        startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
+        handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
+        games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
+        playerColors=properties.getProperty(PLAYER,playerColors);
+        opponentColors=properties.getProperty(OPPONENT,opponentColors);
+        cube=properties.getProperty(CUBE,cube);
+        ai=properties.getProperty(AI,ai);
+    }
+    
+    public void load() {
         load(FileIO.toProp(getConfigFile()));
-	}
-	
-	public void save(final Properties properties) {
-		properties.setProperty(AVATAR,Integer.toString(avatar));
-		properties.setProperty(NAME,name);
-		properties.setProperty(START_LIFE,Integer.toString(startLife));
-		properties.setProperty(HAND_SIZE,Integer.toString(handSize));
-		properties.setProperty(GAMES, Integer.toString(games));
-		properties.setProperty(PLAYER,playerColors);
-		properties.setProperty(OPPONENT,opponentColors);
-		properties.setProperty(CUBE,cube);
-		properties.setProperty(AI,ai);
-	}
-	
-	public void save() {
+    }
+    
+    public void save(final Properties properties) {
+        properties.setProperty(AVATAR,Integer.toString(avatar));
+        properties.setProperty(NAME,name);
+        properties.setProperty(START_LIFE,Integer.toString(startLife));
+        properties.setProperty(HAND_SIZE,Integer.toString(handSize));
+        properties.setProperty(GAMES, Integer.toString(games));
+        properties.setProperty(PLAYER,playerColors);
+        properties.setProperty(OPPONENT,opponentColors);
+        properties.setProperty(CUBE,cube);
+        properties.setProperty(AI,ai);
+    }
+    
+    public void save() {
         final Properties properties=new Properties();
         save(properties);
         try { //save config
@@ -192,13 +192,13 @@ public class DuelConfig {
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save duel config");
         }
-	}
-	
-	private static File getConfigFile() {
-		return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
-	}
-	
-	public static DuelConfig getInstance() {
-		return INSTANCE;
-	}
+    }
+    
+    private static File getConfigFile() {
+        return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
+    }
+    
+    public static DuelConfig getInstance() {
+        return INSTANCE;
+    }
 }

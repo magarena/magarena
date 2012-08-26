@@ -10,18 +10,18 @@ import java.awt.image.BufferedImage;
  */
 public interface CardImagesProvider {
 
-	String IMAGE_EXTENSION=".jpg";
+    String IMAGE_EXTENSION=".jpg";
 
     //native resolution of images from magiccards.info
-	int CARD_WIDTH=312;
-	int CARD_HEIGHT=445;
-	
-	Dimension CARD_DIMENSION = new Dimension(CARD_WIDTH, CARD_HEIGHT);
+    int CARD_WIDTH=312;
+    int CARD_HEIGHT=445;
+    
+    Dimension CARD_DIMENSION = new Dimension(CARD_WIDTH, CARD_HEIGHT);
 
-	BufferedImage getImage(
+    BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
             final int index,
             final boolean high);
 
-	void clearCache();
+    void clearCache();
 }

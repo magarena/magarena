@@ -10,7 +10,7 @@ Abstract: Hooks existing preferences/about/quit functionality from an
     to be both built and run on any platform without any stubs or 
     placeholders. Useful for developers looking to implement Mac OS X 
     features while supporting multiple platforms with minimal impact.
-			
+            
 Version: 2.0
 
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by 

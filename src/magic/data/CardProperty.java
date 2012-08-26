@@ -12,52 +12,52 @@ import magic.model.event.MagicPlayAuraEvent;
 import magic.model.mstatic.MagicStatic;
 
 public enum CardProperty {
-	IMAGE() {
+    IMAGE() {
         void setProperty(final MagicCardDefinition card, final String value) {
             card.setImageURL(value);
         }
     },
     URL() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setCardInfoURL(value);
+            card.setCardInfoURL(value);
         }
     },
     NUM_IMAGES() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setImageCount(Integer.parseInt(value));
+            card.setImageCount(Integer.parseInt(value));
         }
     },
     VALUE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setValue(Double.parseDouble(value));
+            card.setValue(Double.parseDouble(value));
         }
     },
     REMOVAL() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setRemoval(Integer.parseInt(value));
+            card.setRemoval(Integer.parseInt(value));
         }
     },
     RARITY() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setRarity(value.charAt(0));
+            card.setRarity(value.charAt(0));
         }
     },
     TYPE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			final String names[]=value.split(",");
-			for (final String name : names) {
-				card.addType(MagicType.getType(name));
-			}
+            final String names[]=value.split(",");
+            for (final String name : names) {
+                card.addType(MagicType.getType(name));
+            }
         }
     },
     SUBTYPE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setSubTypes(value.split(","));
+            card.setSubTypes(value.split(","));
         }
     },
     COLOR() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setColors(value);
+            card.setColors(value);
         }
     },
     CONVERTED() {
@@ -68,39 +68,39 @@ public enum CardProperty {
     },
     COST() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setCost(MagicManaCost.create(value));
+            card.setCost(MagicManaCost.create(value));
         }
     },
     EQUIP() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setEquipCost(MagicManaCost.create(value));
+            card.setEquipCost(MagicManaCost.create(value));
         }
     },
     MANA() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setManaSourceText(value);
+            card.setManaSourceText(value);
         }
     },
     PT() {
         void setProperty(final MagicCardDefinition card, final String value) {
             final String[] pt = value.split("/");
-			card.setPowerToughness(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
+            card.setPowerToughness(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
         }
     },
     ABILITY() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			final String names[]=value.split(",");
-			for (final String name : names) {
+            final String names[]=value.split(",");
+            for (final String name : names) {
                 final MagicAbility ability = MagicAbility.getAbility(name);
                 final String arg = name.substring(ability.toString().length()).trim();
-				card.setAbility(ability, arg);
-			}
+                card.setAbility(ability, arg);
+            }
         }
     },
     GIVEN_PT() {
         void setProperty(final MagicCardDefinition card, final String value) {
             final String[] pt = value.replace('+','0').split("/");
-			card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+            card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
         }
     },
     GIVEN_ABILITY() {
@@ -120,20 +120,20 @@ public enum CardProperty {
     },
     STATIC() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setStaticType(MagicStaticType.getStaticTypeFor(value));
+            card.setStaticType(MagicStaticType.getStaticTypeFor(value));
         }
     },
     TIMING() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			card.setTiming(MagicTiming.getTimingFor(value));
+            card.setTiming(MagicTiming.getTimingFor(value));
         }
     },
     IGNORE() {
         void setProperty(final MagicCardDefinition card, final String value) {
-			final String sizes[]=value.split(",");
-			for (final String size : sizes) {
-				card.addIgnore(Long.parseLong(size));
-			}
+            final String sizes[]=value.split(",");
+            for (final String size : sizes) {
+                card.addIgnore(Long.parseLong(size));
+            }
         }
     },
     MANA_OR_COMBAT() {

@@ -12,36 +12,36 @@ import java.util.Map;
  * the cards directory
  */
 public class HighQualityCardImagesProvider implements CardImagesProvider {
-	
-	private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
+    
+    private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
 
     private static final int MAX_IMAGES=100;
-	private final Map<String,BufferedImage> scaledImages = 
+    private final Map<String,BufferedImage> scaledImages = 
         new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
-	private final Map<String,BufferedImage> origImages = 
+    private final Map<String,BufferedImage> origImages = 
         new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
-	
-	private HighQualityCardImagesProvider() {}
-	
-	private static final String getFilename(
+    
+    private HighQualityCardImagesProvider() {}
+    
+    private static final String getFilename(
             final MagicCardDefinition cardDefinition,
             final int index) {
-		final int imageIndex=index%cardDefinition.getImageCount();
-		final StringBuilder buffer=new StringBuilder();
-		buffer.append(MagicMain.getGamePath()).append(File.separator);
-		buffer.append(cardDefinition.isToken()? CardDefinitions.TOKEN_IMAGE_FOLDER : CardDefinitions.CARD_IMAGE_FOLDER).append(File.separator);
-		buffer.append(cardDefinition.getImageName());
+        final int imageIndex=index%cardDefinition.getImageCount();
+        final StringBuilder buffer=new StringBuilder();
+        buffer.append(MagicMain.getGamePath()).append(File.separator);
+        buffer.append(cardDefinition.isToken()? CardDefinitions.TOKEN_IMAGE_FOLDER : CardDefinitions.CARD_IMAGE_FOLDER).append(File.separator);
+        buffer.append(cardDefinition.getImageName());
         buffer.append(imageIndex>0?String.valueOf(imageIndex+1):"");
-		buffer.append(IMAGE_EXTENSION);
-		return buffer.toString();
-	}
-	
-	private static BufferedImage loadCardImage(final String filename) {
+        buffer.append(IMAGE_EXTENSION);
+        return buffer.toString();
+    }
+    
+    private static BufferedImage loadCardImage(final String filename) {
         return FileIO.toImg(new File(filename), IconImages.MISSING_CARD);
-	}
-	
-	@Override
-	public BufferedImage getImage(
+    }
+    
+    @Override
+    public BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
             final int index,
             final boolean orig) {
@@ -66,14 +66,14 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         }
 
         return orig ? origImages.get(filename) : scaledImages.get(filename);
-	}
-	
-	public static CardImagesProvider getInstance() {
-		return INSTANCE;
-	}
-	
-	public void clearCache() {		
-		origImages.clear();
-		scaledImages.clear();
-	}
+    }
+    
+    public static CardImagesProvider getInstance() {
+        return INSTANCE;
+    }
+    
+    public void clearCache() {        
+        origImages.clear();
+        scaledImages.clear();
+    }
 }

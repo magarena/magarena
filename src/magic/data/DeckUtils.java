@@ -23,87 +23,87 @@ import javax.swing.filechooser.FileFilter;
 
 public class DeckUtils {
 
-	public static final String DECK_EXTENSION=".dec";
-	
-	public static final FileFilter DECK_FILEFILTER=new FileFilter() {
-		@Override
-		public boolean accept(final File file) {
-			return file.isDirectory()||file.getName().endsWith(DECK_EXTENSION);
-		}
-		@Override
-		public String getDescription() {
-			return "Magarena deck";
-		}
-	};
-	
-	private static final String CARD_TYPES[]={"creatures","spells","lands"};
-	
-	public static String getDeckFolder() {
-		return MagicMain.getGamePath()+File.separator+"decks";
-	}
-	
-	public static void createDeckFolder() {
-		final File deckFolderFile=new File(getDeckFolder());
-		if (!deckFolderFile.exists() && !deckFolderFile.mkdir()) {
+    public static final String DECK_EXTENSION=".dec";
+    
+    public static final FileFilter DECK_FILEFILTER=new FileFilter() {
+        @Override
+        public boolean accept(final File file) {
+            return file.isDirectory()||file.getName().endsWith(DECK_EXTENSION);
+        }
+        @Override
+        public String getDescription() {
+            return "Magarena deck";
+        }
+    };
+    
+    private static final String CARD_TYPES[]={"creatures","spells","lands"};
+    
+    public static String getDeckFolder() {
+        return MagicMain.getGamePath()+File.separator+"decks";
+    }
+    
+    public static void createDeckFolder() {
+        final File deckFolderFile=new File(getDeckFolder());
+        if (!deckFolderFile.exists() && !deckFolderFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + getDeckFolder());
-		}
-	}
-	
-	public static boolean saveDeck(final String filename,final MagicPlayerDefinition player) {
-		final List<SortedMap<String,Integer>> cardMaps=new ArrayList<SortedMap<String,Integer>>();
-		boolean isSuccessful = true;
+        }
+    }
+    
+    public static boolean saveDeck(final String filename,final MagicPlayerDefinition player) {
+        final List<SortedMap<String,Integer>> cardMaps=new ArrayList<SortedMap<String,Integer>>();
+        boolean isSuccessful = true;
 
         for (int count=3;count>0;count--) {
-			cardMaps.add(new TreeMap<String, Integer>());
-		}
-		
-		for (final MagicCardDefinition cardDefinition : player.getDeck()) {
-			final String name=cardDefinition.getName();
-			int index;
-			if (cardDefinition.isLand()) {
-				index=2;
-			} else if (cardDefinition.isCreature()) {
-				index=0;
-			} else {
-				index=1;
-			}
-			final SortedMap<String,Integer> cardMap=cardMaps.get(index);
-			final Integer count=cardMap.get(name);
-			cardMap.put(name,count==null?Integer.valueOf(1):Integer.valueOf(count+1));
-		}
-		
-	    BufferedWriter writer = null;
-		try { //save deck						
+            cardMaps.add(new TreeMap<String, Integer>());
+        }
+        
+        for (final MagicCardDefinition cardDefinition : player.getDeck()) {
+            final String name=cardDefinition.getName();
+            int index;
+            if (cardDefinition.isLand()) {
+                index=2;
+            } else if (cardDefinition.isCreature()) {
+                index=0;
+            } else {
+                index=1;
+            }
+            final SortedMap<String,Integer> cardMap=cardMaps.get(index);
+            final Integer count=cardMap.get(name);
+            cardMap.put(name,count==null?Integer.valueOf(1):Integer.valueOf(count+1));
+        }
+        
+        BufferedWriter writer = null;
+        try { //save deck                        
             writer = new BufferedWriter(new FileWriter(filename));
-			for (int index=0;index<=2;index++) {
-				final SortedMap<String,Integer> cardMap=cardMaps.get(index);
-				if (!cardMap.isEmpty()) {
-					writer.write("# "+cardMap.size()+" "+CARD_TYPES[index]);
-					writer.newLine();
-					for (final Map.Entry<String,Integer> entry : cardMap.entrySet()) {
-						writer.write(entry.getValue()+" "+entry.getKey());
-						writer.newLine();
-					}
-					writer.newLine();
-				}
-			}
-			final String description = player.getDeck().getDescription();
-			if (description != null) {
-				writer.write(">" + description);
-			}
-		} catch (final IOException ex) {
-			isSuccessful = false;
+            for (int index=0;index<=2;index++) {
+                final SortedMap<String,Integer> cardMap=cardMaps.get(index);
+                if (!cardMap.isEmpty()) {
+                    writer.write("# "+cardMap.size()+" "+CARD_TYPES[index]);
+                    writer.newLine();
+                    for (final Map.Entry<String,Integer> entry : cardMap.entrySet()) {
+                        writer.write(entry.getValue()+" "+entry.getKey());
+                        writer.newLine();
+                    }
+                    writer.newLine();
+                }
+            }
+            final String description = player.getDeck().getDescription();
+            if (description != null) {
+                writer.write(">" + description);
+            }
+        } catch (final IOException ex) {
+            isSuccessful = false;
             System.err.println("ERROR! Unable to save deck");
             System.err.println(ex.getMessage());
             ex.printStackTrace();
         } finally {
             magic.data.FileIO.close(writer);
         }
-		
-		return isSuccessful;
-	}
-	
-	public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
+        
+        return isSuccessful;
+    }
+    
+    public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
         String content = "";
         try { //load deck
             content = FileIO.toStr(new File(filename));
@@ -120,33 +120,33 @@ public class DeckUtils {
         final MagicDeck unsupported = new MagicDeck();
         
         deck.setName(new File(filename).getName());
-		deck.clear(); // remove previous cards
+        deck.clear(); // remove previous cards
 
         while (sc.hasNextLine()) {
             final String line = sc.nextLine().trim();
             if (!line.isEmpty()&&!line.startsWith("#")) {
-            	if (line.startsWith(">")) {
-            		deck.setDescription(line.substring(1));
-            	} else {
-            		final int index = line.indexOf(' ');
-            		final int amount = Integer.parseInt(line.substring(0,index));
-            		final String name=line.substring(index+1).trim();
-            		final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
-            		for (int count=amount;count>0;count--) {
-            			final int colorFlags=cardDefinition.getColorFlags();
-            			for (final MagicColor color : MagicColor.values()) {
-            				if (color.hasColor(colorFlags)) {
-            					colorCount[color.ordinal()]++;
-            				}
-            			}
-            			if (cardDefinition.isValid()) {
-            				deck.add(cardDefinition);
-            			} else {
-            				unsupported.add(cardDefinition);
-            				break; // multiple copies of unsupported card -> ignore other copies
-            			}
-            		}
-            	}
+                if (line.startsWith(">")) {
+                    deck.setDescription(line.substring(1));
+                } else {
+                    final int index = line.indexOf(' ');
+                    final int amount = Integer.parseInt(line.substring(0,index));
+                    final String name=line.substring(index+1).trim();
+                    final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
+                    for (int count=amount;count>0;count--) {
+                        final int colorFlags=cardDefinition.getColorFlags();
+                        for (final MagicColor color : MagicColor.values()) {
+                            if (color.hasColor(colorFlags)) {
+                                colorCount[color.ordinal()]++;
+                            }
+                        }
+                        if (cardDefinition.isValid()) {
+                            deck.add(cardDefinition);
+                        } else {
+                            unsupported.add(cardDefinition);
+                            break; // multiple copies of unsupported card -> ignore other copies
+                        }
+                    }
+                }
             }
         }
 
@@ -170,10 +170,10 @@ public class DeckUtils {
             colorCount[index]=0;
         }
         final MagicPlayerProfile profile = new MagicPlayerProfile(colorText.toString());
-		profile.setPreConstructed();
+        profile.setPreConstructed();
         player.setProfile(profile);
-	}
-		
+    }
+        
     public static void showUnsupportedCards(final MagicDeck unsupported) {
         if (unsupported.isEmpty()) {
             return;
@@ -206,39 +206,39 @@ public class DeckUtils {
         
         unsupported.clear();
     }
-	
-	private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
-		final File files[]=folder.listFiles();
-		for (final File file : files) {
-			
-			if (file.isDirectory()) {
-				retrieveDeckFiles(file,deckFiles);
-			} else if (file.getName().endsWith(DECK_EXTENSION)) {
-				deckFiles.add(file);
-			}
-		}
-	}
-	
-	public static void loadRandomDeck(final MagicPlayerDefinition player) {
-		final File deckFile=new File(getDeckFolder());
-		final List<File> deckFiles=new ArrayList<File>();
-		retrieveDeckFiles(deckFile,deckFiles);		
-		final int size=deckFiles.size();
-		if (size==0) {
-			// Creates a simple default deck.
-			final MagicDeck deck = player.getDeck();
-			deck.setName("Default.dec");
-			final MagicCardDefinition creature=CardDefinitions.getCard("Elite Vanguard");
-			final MagicCardDefinition land=CardDefinitions.getCard("Plains");
-			for (int count=24;count>0;count--) {
-				deck.add(creature);
-			}
-			for (int count=16;count>0;count--) {
-				deck.add(land);
-			}
-			player.setProfile(new MagicPlayerProfile("w"));
-		} else {
-			loadDeck(deckFiles.get(MagicRandom.nextInt(size)).toString(),player);
-		}
-	}
+    
+    private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {
+        final File files[]=folder.listFiles();
+        for (final File file : files) {
+            
+            if (file.isDirectory()) {
+                retrieveDeckFiles(file,deckFiles);
+            } else if (file.getName().endsWith(DECK_EXTENSION)) {
+                deckFiles.add(file);
+            }
+        }
+    }
+    
+    public static void loadRandomDeck(final MagicPlayerDefinition player) {
+        final File deckFile=new File(getDeckFolder());
+        final List<File> deckFiles=new ArrayList<File>();
+        retrieveDeckFiles(deckFile,deckFiles);        
+        final int size=deckFiles.size();
+        if (size==0) {
+            // Creates a simple default deck.
+            final MagicDeck deck = player.getDeck();
+            deck.setName("Default.dec");
+            final MagicCardDefinition creature=CardDefinitions.getCard("Elite Vanguard");
+            final MagicCardDefinition land=CardDefinitions.getCard("Plains");
+            for (int count=24;count>0;count--) {
+                deck.add(creature);
+            }
+            for (int count=16;count>0;count--) {
+                deck.add(land);
+            }
+            player.setProfile(new MagicPlayerProfile("w"));
+        } else {
+            loadDeck(deckFiles.get(MagicRandom.nextInt(size)).toString(),player);
+        }
+    }
 }
