@@ -7,6 +7,7 @@ import magic.model.MagicPayedCost;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTargetPicker;
+import magic.model.target.MagicDefaultTargetPicker;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 
@@ -51,7 +52,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                         cardOnStack.getCard(),
                         cardOnStack.getController(),
                         choice,
-                        picker,
+                        (picker != null ? picker : MagicDefaultTargetPicker.create()),
                         new Object[]{cardOnStack},
                         action,
                         effect + "$.");

@@ -513,6 +513,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target permanent", NEG_TARGET_PERMANENT);
         factory.put("neg target enchantment", NEG_TARGET_ENCHANTMENT);
         factory.put("neg target non-vampire, non-werewolf, non-zombie creature", NEG_TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
+        factory.put("neg target spell", NEG_TARGET_SPELL);
     }
 
     public static MagicTargetChoice build(String arg) {
