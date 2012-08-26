@@ -14,18 +14,18 @@ import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
 public class MagicMain {
-	
-	private static final String GAME_FOLDER  = "Magarena";
-	private static final String MODS_PATH    = "mods";
-	private static final String SCRIPTS_PATH = "scripts";
+    
+    private static final String GAME_FOLDER  = "Magarena";
+    private static final String MODS_PATH    = "mods";
+    private static final String SCRIPTS_PATH = "scripts";
     private static final String GAME_PATH    = 
          (System.getProperty("magarena.dir") != null ?
           System.getProperty("magarena.dir") :
           System.getProperty("user.dir")) +
          File.separatorChar +
          GAME_FOLDER;
-	
-	public static void main(final String args[]) {	
+    
+    public static void main(final String args[]) {
         // setup the handler for any uncaught exception
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
         
@@ -34,28 +34,28 @@ public class MagicMain {
         
         // show the data folder being used
         System.err.println("Data folder : "+GAME_PATH);
-		
-		// try to set the look and feel
-	    try {
-			for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-				if ("Nimbus".equals(info.getName())) {
-					UIManager.setLookAndFeel(info.getClassName());
-					break;
-				}
-			}
-			
-			// customize nimbus look
-			UIManager.getLookAndFeelDefaults().put("Table.showGrid", true);
+        
+        // try to set the look and feel
+        try {
+            for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+            
+            // customize nimbus look
+            UIManager.getLookAndFeelDefaults().put("Table.showGrid", true);
             // removes hardcoded border
-			UIManager.getLookAndFeelDefaults().put("ScrollPane[Enabled].borderPainter", null); 
-		} 
-		catch (Exception e) {
-			System.err.println("Unable to set look and feel. Probably missing the latest version of Java 6.");
-			e.printStackTrace();
-		}
-	
+            UIManager.getLookAndFeelDefaults().put("ScrollPane[Enabled].borderPainter", null); 
+        } 
+        catch (Exception e) {
+            System.err.println("Unable to set look and feel. Probably missing the latest version of Java 6.");
+            e.printStackTrace();
+        }
+    
         final long start_time = System.currentTimeMillis();
-		initialize();
+        initialize();
         final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
         System.err.println("Initalization of engine took " + duration + "s");
         SwingUtilities.invokeLater(new Runnable() {
@@ -63,33 +63,33 @@ public class MagicMain {
                 new MagicFrame();
             }
         });
-	}	
-		
+    }    
+        
 
-	public static String getGamePath() {
-		return GAME_PATH;
-	}
-	
+    public static String getGamePath() {
+        return GAME_PATH;
+    }
+    
     public static String getGameFolder() {
-		return GAME_FOLDER;
-	}
-	
-	public static String getModsPath() {
-		return getGamePath()+File.separatorChar+MODS_PATH;
-	}
-	
+        return GAME_FOLDER;
+    }
+    
+    public static String getModsPath() {
+        return getGamePath()+File.separatorChar+MODS_PATH;
+    }
+    
     public static String getScriptsPath() {
-		return getGamePath()+File.separatorChar+SCRIPTS_PATH;
-	}
+        return getGamePath()+File.separatorChar+SCRIPTS_PATH;
+    }
 
-	static void initializeEngine() {
+    static void initializeEngine() {
         CardDefinitions.loadCardDefinitions();
         CubeDefinitions.loadCubeDefinitions();
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
-		DeckGenerators.getInstance().loadDeckGenerators();
-	}
-	
-	private static void initialize() {
+        DeckGenerators.getInstance().loadDeckGenerators();
+    }
+    
+    private static void initialize() {
         final File gamePathFile = new File(getGamePath());
         if (!gamePathFile.exists() && !gamePathFile.mkdir()) {
             System.err.println("Unable to create directory " + getGamePath());
@@ -103,5 +103,5 @@ public class MagicMain {
         DeckUtils.createDeckFolder();
         History.createHistoryFolder();
         initializeEngine();
-	}
+    }
 }
