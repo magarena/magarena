@@ -7,7 +7,7 @@ import magic.model.MagicPlayerProfile;
 
 public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
 
-	private static final String colorText = "wg";
+    private static final String colorText = "wg";
     private static final String[] spells = {
         "Hero of Bladehold",
         "Hero of Bladehold",
@@ -30,7 +30,7 @@ public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
         "Vital Splicer"
     };
 
-	private static final String[] lands = {
+    private static final String[] lands = {
         "Razorverge Thicket",
         "Razorverge Thicket",
         "Razorverge Thicket",
@@ -40,33 +40,33 @@ public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
         "Sunpetal Grove",
         "Sunpetal Grove"
     };
-	
-	public Token_Madness_DeckGenerator() {
-		super(null);
-		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-	}
-	
-	public String getColorText() {
-		return colorText;
-	}
-	
-	public int getMinRarity() {
-		return 2;
-	}
-	
-	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
-		return !card.isCreature() || card.hasText("token");
-	}
-	
-	public void addRequiredSpells(MagicCondensedDeck deck) {
-		addRequiredCards(deck, spells);
-	}
-	
-	public void addRequiredLands(MagicCondensedDeck deck) {
-		addRequiredCards(deck, lands);
-	}
-	
-	public void setColors(MagicPlayerProfile profile) {
-		profile.setColors(getColorText());
-	}
+    
+    public Token_Madness_DeckGenerator() {
+        super(null);
+        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
+    }
+    
+    public String getColorText() {
+        return colorText;
+    }
+    
+    public int getMinRarity() {
+        return 2;
+    }
+    
+    public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
+        return !card.isCreature() || card.hasText("token");
+    }
+    
+    public void addRequiredSpells(MagicCondensedDeck deck) {
+        addRequiredCards(deck, spells);
+    }
+    
+    public void addRequiredLands(MagicCondensedDeck deck) {
+        addRequiredCards(deck, lands);
+    }
+    
+    public void setColors(MagicPlayerProfile profile) {
+        profile.setColors(getColorText());
+    }
 }

@@ -8,8 +8,8 @@ import magic.model.MagicSubType;
 
 public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
 
-	private static final String colorText = "br";
-	private static final String[] spells = {
+    private static final String colorText = "br";
+    private static final String[] spells = {
         "Falkenrath Marauders", 
         "Falkenrath Noble", 
         "Markov Patrician", 
@@ -25,7 +25,7 @@ public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
         "Go for the Throat", 
         "Mask of Avacyn"
     };
-		
+        
     private static final String[] lands = {
         "Blackcleave Cliffs", 
         "Blackcleave Cliffs", 
@@ -39,33 +39,33 @@ public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
         "Dragonskull Summit", 
         "Dragonskull Summit"
     };
-	
-	public Vampire_Rage_DeckGenerator() {
-		super(null);
-		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-	}
-	
-	public String getColorText() {
-		return colorText;
-	}
-	
-	public int getMinRarity() {
-		return 2;
-	}
-	
-	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
-		return !card.isCreature() || card.hasSubType(MagicSubType.Vampire);
-	}
-	
-	public void addRequiredSpells(MagicCondensedDeck deck) {
-		addRequiredCards(deck, spells);
-	}
-	
-	public void addRequiredLands(MagicCondensedDeck deck) {
-		addRequiredCards(deck, lands);
-	}
-	
-	public void setColors(MagicPlayerProfile profile) {
-		profile.setColors(getColorText());
-	}
+    
+    public Vampire_Rage_DeckGenerator() {
+        super(null);
+        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
+    }
+    
+    public String getColorText() {
+        return colorText;
+    }
+    
+    public int getMinRarity() {
+        return 2;
+    }
+    
+    public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
+        return !card.isCreature() || card.hasSubType(MagicSubType.Vampire);
+    }
+    
+    public void addRequiredSpells(MagicCondensedDeck deck) {
+        addRequiredCards(deck, spells);
+    }
+    
+    public void addRequiredLands(MagicCondensedDeck deck) {
+        addRequiredCards(deck, lands);
+    }
+    
+    public void setColors(MagicPlayerProfile profile) {
+        profile.setColors(getColorText());
+    }
 }

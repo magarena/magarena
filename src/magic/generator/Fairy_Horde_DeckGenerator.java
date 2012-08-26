@@ -8,8 +8,8 @@ import magic.model.MagicSubType;
 
 public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
 
-	private static final String colorText = "bu";
-	private static final String[] spells = {
+    private static final String colorText = "bu";
+    private static final String[] spells = {
         "Scion of Oona",
         "Scion of Oona",
         "Scion of Oona",
@@ -23,7 +23,7 @@ public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
         "Mistbind Clique",
         "Mistbind Clique"
     };
-		
+        
     private static final String[] lands = {
         "Mutavault",
         "Mutavault",
@@ -33,37 +33,37 @@ public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
         "Watery Grave",
         "Watery Grave"
     };
-	
-	public Fairy_Horde_DeckGenerator() {
-		super(null);
-		setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-	}
-	
-	public String getColorText() {
-		return colorText;
-	}
-	
-	public int getMinRarity() {
-		return 2;
-	}
-	
-	public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
-		return !card.isCreature() || card.hasSubType(MagicSubType.Faerie);
-	}
-	
-	public void addRequiredSpells(MagicCondensedDeck deck) {
-		addRequiredCards(deck, spells);
-	}
-	
-	public void addRequiredLands(MagicCondensedDeck deck) {
-		addRequiredCards(deck, lands);
-	}
-	
-	public void setColors(MagicPlayerProfile profile) {
-		profile.setColors(getColorText());
-	}
-	
-	public boolean ignoreMaxCost() {
-		return true;
-	}
+    
+    public Fairy_Horde_DeckGenerator() {
+        super(null);
+        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
+    }
+    
+    public String getColorText() {
+        return colorText;
+    }
+    
+    public int getMinRarity() {
+        return 2;
+    }
+    
+    public boolean acceptPossibleSpellCard(MagicCardDefinition card) {
+        return !card.isCreature() || card.hasSubType(MagicSubType.Faerie);
+    }
+    
+    public void addRequiredSpells(MagicCondensedDeck deck) {
+        addRequiredCards(deck, spells);
+    }
+    
+    public void addRequiredLands(MagicCondensedDeck deck) {
+        addRequiredCards(deck, lands);
+    }
+    
+    public void setColors(MagicPlayerProfile profile) {
+        profile.setColors(getColorText());
+    }
+    
+    public boolean ignoreMaxCost() {
+        return true;
+    }
 }
