@@ -104,7 +104,7 @@ public class MCTSAI implements MagicAI {
     }
 
     private void log(final String message) {
-    	MagicGameLog.log(message);
+        MagicGameLog.log(message);
         if (LOGGING) {
             System.err.println(message);
         }

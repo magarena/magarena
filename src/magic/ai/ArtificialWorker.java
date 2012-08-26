@@ -7,60 +7,60 @@ import magic.model.phase.MagicPhase;
 import java.util.List;
 
 public class ArtificialWorker {
-	
-	private static final class MaximumExceededException extends RuntimeException {
-		private static final long serialVersionUID = 1L;
-		public MaximumExceededException() {
-			super("Maximum is exceeded.");
-		}
-	};
-	
-	private final int id;
-	private final MagicGame game;
-	private final ArtificialScoreBoard scoreBoard;
-	private int gameCount;
-	private int maxDepth;
-	private int maxGames;
-	
-	ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
-		this.id=id;
-		this.game=game;
-		this.scoreBoard=scoreBoard;
-	}
-	
-	private ArtificialScore runGame(final Object nextChoiceResults[],final ArtificialPruneScore pruneScore,int depth) {
-		game.startActions();
-		
+    
+    private static final class MaximumExceededException extends RuntimeException {
+        private static final long serialVersionUID = 1L;
+        public MaximumExceededException() {
+            super("Maximum is exceeded.");
+        }
+    };
+    
+    private final int id;
+    private final MagicGame game;
+    private final ArtificialScoreBoard scoreBoard;
+    private int gameCount;
+    private int maxDepth;
+    private int maxGames;
+    
+    ArtificialWorker(final int id,final MagicGame game,final ArtificialScoreBoard scoreBoard) {
+        this.id=id;
+        this.game=game;
+        this.scoreBoard=scoreBoard;
+    }
+    
+    private ArtificialScore runGame(final Object nextChoiceResults[],final ArtificialPruneScore pruneScore,int depth) {
+        game.startActions();
+        
         if (nextChoiceResults!=null) {
-			game.executeNextEvent(nextChoiceResults);
-		}
-		
+            game.executeNextEvent(nextChoiceResults);
+        }
+        
         if (depth>maxDepth) {
             final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
             game.undoActions();
             gameCount++;
             return aiScore;
-		}
+        }
 
-		// Play game until given end turn for all possible choices.
-		while (!game.isFinished()) {
-			if (!game.hasNextEvent()) {
-				final MagicPhase phase=game.getPhase();
-				phase.executePhase(game);
-								
-				// Caching of best score for game situations.
-				if (game.cacheState()) {
-					final long gameId=game.getGameId(pruneScore.getScore());
-					ArtificialScore bestScore=scoreBoard.getGameScore(gameId);
-					if (bestScore==null) {
-						bestScore=runGame(null,pruneScore,depth);
-						scoreBoard.setGameScore(gameId,bestScore.getScore(-depth));
-					} else {
-						bestScore=bestScore.getScore(depth);
-					}
-					game.undoActions();
-					return bestScore;
-				}
+        // Play game until given end turn for all possible choices.
+        while (!game.isFinished()) {
+            if (!game.hasNextEvent()) {
+                final MagicPhase phase=game.getPhase();
+                phase.executePhase(game);
+                                
+                // Caching of best score for game situations.
+                if (game.cacheState()) {
+                    final long gameId=game.getGameId(pruneScore.getScore());
+                    ArtificialScore bestScore=scoreBoard.getGameScore(gameId);
+                    if (bestScore==null) {
+                        bestScore=runGame(null,pruneScore,depth);
+                        scoreBoard.setGameScore(gameId,bestScore.getScore(-depth));
+                    } else {
+                        bestScore=bestScore.getScore(depth);
+                    }
+                    game.undoActions();
+                    return bestScore;
+                }
                 continue;
             }
         
@@ -98,39 +98,39 @@ public class ArtificialWorker {
             }
             game.undoActions();
             return bestScore;
-		}
+        }
 
-		// Game is finished.
-		final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
-		game.undoActions();
-		gameCount++;
+        // Game is finished.
+        final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
+        game.undoActions();
+        gameCount++;
         /*
-		if (gameCount>maxGames) {
-			throw new MaximumExceededException();
-		}
+        if (gameCount>maxGames) {
+            throw new MaximumExceededException();
+        }
         */
-		return aiScore;
-	}
+        return aiScore;
+    }
 
-	void evaluateGame(
+    void evaluateGame(
             final ArtificialChoiceResults aiChoiceResults,
             final ArtificialPruneScore pruneScore,
-			final int mainPhases,
+            final int mainPhases,
             final int aMaxDepth,
             final int aMaxGames) {
-		gameCount=0;
-		this.maxDepth=aMaxDepth;
-		this.maxGames=aMaxGames;
-		game.setMainPhases(mainPhases);
-		aiChoiceResults.worker=id;
+        gameCount=0;
+        this.maxDepth=aMaxDepth;
+        this.maxGames=aMaxGames;
+        game.setMainPhases(mainPhases);
+        aiChoiceResults.worker=id;
 
         try { //check depth exceeded
-			aiChoiceResults.aiScore=runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
-		} catch (final MaximumExceededException ex) {
-			aiChoiceResults.aiScore=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE;
-		} 
+            aiChoiceResults.aiScore=runGame(game.map(aiChoiceResults.choiceResults),pruneScore,0);
+        } catch (final MaximumExceededException ex) {
+            aiChoiceResults.aiScore=ArtificialScore.MAXIMUM_DEPTH_EXCEEDED_SCORE;
+        } 
 
-		aiChoiceResults.gameCount=gameCount;
-		game.undoAllActions();
-	}	
+        aiChoiceResults.gameCount=gameCount;
+        game.undoAllActions();
+    }    
 }
