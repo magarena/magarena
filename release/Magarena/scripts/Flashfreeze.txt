@@ -6,4 +6,4 @@ rarity=U
 type=Instant
 cost={1}{U}
 timing=counter
-requires_card_code
+effect=Counter target red or green spell
