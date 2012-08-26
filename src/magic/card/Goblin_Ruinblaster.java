@@ -63,8 +63,11 @@ public class Goblin_Ruinblaster {
             if (kickerCount>0) {
                 final MagicPermanent permanent=action.getPermanent();
                 final MagicPlayer player=permanent.getController();
-                final MagicEvent triggerEvent=new MagicEvent(permanent,player,
-                    MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,new MagicDestroyTargetPicker(false),
+                final MagicEvent triggerEvent=new MagicEvent(
+                    permanent,
+                    player,
+                    MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,
+                    new MagicDestroyTargetPicker(false),
                     MagicEvent.NO_DATA,
                     KICKED,
                     "Destroy target nonbasic land$."
