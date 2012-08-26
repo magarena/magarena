@@ -124,6 +124,8 @@ public class MagicTargetChoice extends MagicChoice {
             "target artifact or enchantment your opponent controls");
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=
         new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,true,MagicTargetHint.None,"target artifact, enchantment or land");
+    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=
+        new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND,true,MagicTargetHint.Negative,"target artifact, enchantment or land");
     public static final MagicTargetChoice POS_TARGET_ARTIFACT_CREATURE =
             new MagicTargetChoice(MagicTargetFilter.TARGET_ARTIFACT_CREATURE,true,MagicTargetHint.Positive,
                     "target artifact creature");
@@ -499,6 +501,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target noncreature permanent", NEG_TARGET_NONCREATURE);
         factory.put("neg target creature", NEG_TARGET_CREATURE);
         factory.put("neg target land", NEG_TARGET_LAND);
+        factory.put("neg target artifact, enchantment, or land ", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
     }
 
     public static MagicTargetChoice build(String arg) {
