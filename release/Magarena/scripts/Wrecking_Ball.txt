@@ -7,4 +7,4 @@ rarity=C
 type=Instant
 cost={2}{B}{R}
 timing=removal
-requires_card_code
+effect=Destroy target creature or land

@@ -497,6 +497,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target blocked creature", NEG_TARGET_BLOCKED_CREATURE); 
         factory.put("neg target creature", NEG_TARGET_CREATURE);
         factory.put("neg target creature or enchantment", NEG_TARGET_CREATURE_OR_ENCHANTMENT); 
+        factory.put("neg target creature or land", NEG_TARGET_CREATURE_OR_LAND);
         factory.put("neg target nonartifact creature", NEG_TARGET_NONARTIFACT_CREATURE); 
         factory.put("neg target human creature", NEG_TARGET_HUMAN_CREATURE); 
         factory.put("neg target nonblack creature", NEG_TARGET_NONBLACK_CREATURE); 
