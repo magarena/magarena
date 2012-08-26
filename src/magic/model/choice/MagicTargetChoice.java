@@ -503,6 +503,7 @@ public class MagicTargetChoice extends MagicChoice {
         factory.put("neg target land", NEG_TARGET_LAND);
         factory.put("neg target artifact, enchantment, or land", NEG_TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         factory.put("neg target green or white creature", NEG_TARGET_GREEN_OR_WHITE_CREATURE);
+        factory.put("neg target tapped creature", NEG_TARGET_TAPPED_CREATURE);
     }
 
     public static MagicTargetChoice build(String arg) {
