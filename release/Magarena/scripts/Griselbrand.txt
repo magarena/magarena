@@ -1,0 +1,12 @@
+name=Griselbrand
+url=http://magiccards.info/avr/en/106.html
+image=http://magiccards.info/scans/en/avr/106.jpg
+value=4.564
+rarity=M
+type=Legendary,Creature
+subtype=Demon
+cost={4}{B}{B}{B}{B}
+pt=7/7
+timing=main
+ability=flying,lifelink
+requires_card_code

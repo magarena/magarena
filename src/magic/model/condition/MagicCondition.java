@@ -54,25 +54,31 @@ public interface MagicCondition {
 
     MagicCondition ONE_LIFE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicGame game,final MagicSource source) {
-            return source.getController().getLife()>0;
+            return source.getController().getLife() >= 1;
         }
     };
 
     MagicCondition TWO_LIFE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicGame game,final MagicSource source) {
-            return source.getController().getLife()>1;
+            return source.getController().getLife() >= 2;
+        }
+    };
+    
+    MagicCondition SEVEN_LIFE_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicGame game,final MagicSource source) {
+            return source.getController().getLife() >= 7;
         }
     };
     
     MagicCondition HAS_CARD_CONDITION=new MagicCondition() {
         public boolean accept(final MagicGame game,final MagicSource source) {
-            return source.getController().getHandSize()>0;
+            return source.getController().getHandSize() >= 1;
         }
     };
     
     MagicCondition HAS_TWO_CARDS_CONDITION = new MagicCondition() {
         public boolean accept(final MagicGame game,final MagicSource source) {
-            return source.getController().getHandSize() > 1;
+            return source.getController().getHandSize() >= 2;
         }
     };
     
