@@ -10,14 +10,10 @@ import magic.model.target.MagicTargetFilter;
 public class Avacyn__Angel_of_Hope {
     public static final MagicStatic S = new MagicStatic(
         MagicLayer.Ability, 
-        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL) {
+        MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL) {
         @Override
         public long getAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final long flags) {
             return flags | MagicAbility.Indestructible.getMask();
         }
-//        @Override
-//        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-//            return source != target;
-//        }
     };
 }
