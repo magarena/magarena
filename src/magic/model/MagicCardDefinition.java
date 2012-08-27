@@ -51,7 +51,6 @@ public class MagicCardDefinition {
     private static int numPermanentActivations = 0;
     private static int numManaActivations = 0;
     private static int numSpellEvent = 0;
-    private static int numModifications = 0;
     private static int numCDAs = 0;
 
     private String name;
@@ -104,7 +103,6 @@ public class MagicCardDefinition {
         System.err.println(numPermanentActivations + " permanent activations");
         System.err.println(numManaActivations + " mana activations");
         System.err.println(numSpellEvent + " spell event");
-        System.err.println(numModifications + " card modifications");
         System.err.println(numCDAs + " CDAs");
     }
     
