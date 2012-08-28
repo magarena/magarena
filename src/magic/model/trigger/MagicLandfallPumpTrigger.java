@@ -5,9 +5,9 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
-public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger {
+public class MagicLandfallPumpTrigger extends MagicLandfallTrigger {
     private final int power;
     private final int toughness;
     
@@ -17,20 +17,14 @@ public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPermanent played) {
-        final MagicPlayer player = permanent.getController();
-        return (player == played.getController() && played.isLand()) ?
-            new MagicEvent(
+    protected MagicEvent getEvent(final MagicPermanent permanent) {
+        return new MagicEvent(
                 permanent,
-                player,
-                new Object[]{permanent},
+                permanent.getController(),
+                MagicEvent.NO_DATA,
                 this,
                 permanent + " gets " + getString(power) + 
-                "/" + getString(toughness) + " until end of turn.") :
-            MagicEvent.NONE;
+                "/" + getString(toughness) + " until end of turn.");
     }
     
     @Override
@@ -40,7 +34,7 @@ public class MagicLandfallPumpTrigger extends MagicWhenOtherComesIntoPlayTrigger
             final Object data[],
             final Object[] choiceResults) {
         game.doAction(new MagicChangeTurnPTAction(
-                (MagicPermanent)data[0],
+                (MagicPermanent)event.getSource(),
                 power,
                 toughness));
     }
