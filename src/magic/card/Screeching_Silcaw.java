@@ -4,7 +4,7 @@ import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicMillLibraryAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
@@ -17,7 +17,7 @@ public class Screeching_Silcaw {
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
             final MagicPlayer player = permanent.getController();
-            return (player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3 &&
+            return (MagicCondition.METALCRAFT_CONDITION.accept(permanent) &&
                     permanent == damage.getSource() && 
                     target.isPlayer() && 
                     damage.isCombat()) ?

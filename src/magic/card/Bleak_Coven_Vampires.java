@@ -3,7 +3,7 @@ package magic.card;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
-import magic.model.MagicType;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
@@ -14,7 +14,7 @@ public class Bleak_Coven_Vampires {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            return player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3 ?
+            return MagicCondition.METALCRAFT_CONDITION.accept(permanent) ?
                 new MagicEvent(
                     permanent,
                     player,

@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicType;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
@@ -16,7 +16,7 @@ public class Lumengrid_Drake {
     public static final MagicWhenComesIntoPlayTrigger T = new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-            return player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3 ?
+            return MagicCondition.METALCRAFT_CONDITION.accept(permanent) ?
                 new MagicEvent(
                     permanent,
                     player,

@@ -9,7 +9,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicDealDamageAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPlayerAction;
@@ -33,7 +33,7 @@ public class Concussive_Bolt {
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(4),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     card + " deals 4 damage to target player$.");
         }
@@ -49,8 +49,7 @@ public class Concussive_Bolt {
                 public void doAction(final MagicPlayer targetPlayer) {
                     final MagicDamage damage = new MagicDamage(cardOnStack.getCard(),targetPlayer,4,false);
                     game.doAction(new MagicDealDamageAction(damage));
-                    final MagicPlayer player = (MagicPlayer)data[1];
-                    if (player.getNrOfPermanentsWithType(MagicType.Artifact) >= 3) {
+                    if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                         final Collection<MagicTarget> targets =
                                 game.filterTargets(targetPlayer,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
                         for (final MagicTarget target : targets) {
