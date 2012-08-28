@@ -8,15 +8,14 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicSimpleMayChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Emeria_Angel {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        protected MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -28,8 +27,7 @@ public class Emeria_Angel {
                     new Object[]{player},
                     this,
                     player + " may$ put a 1/1 white Bird creature " +
-                    "token with flying onto the battlefield."):
-                MagicEvent.NONE;
+                    "token with flying onto the battlefield.");
         }
         
         @Override
