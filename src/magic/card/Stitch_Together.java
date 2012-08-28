@@ -15,21 +15,21 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.condition.MagicCondition;
 
 public class Stitch_Together {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicPlayer player = cardOnStack.getController();
             // estimated number of cards in the graveyard. this may change
             // before resolution but we need to make a choice here
-            final boolean threshold = player.getGraveyard().size() >= 7;
+            final MagicCard card = cardOnStack.getCard();
             return new MagicEvent(
-                    cardOnStack.getCard(),
-                    player,
+                    card,
+                    cardOnStack.getController(),
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
-                    new MagicGraveyardTargetPicker(threshold ?true:false),
-                    new Object[]{cardOnStack,player},
+                    new MagicGraveyardTargetPicker(MagicCondition.THRESHOLD_CONDITION.accept(card)),
+                    new Object[]{cardOnStack},
                     this,
                     "Return target creature card$ from your graveyard to your hand. " +
                     "Return that card from your graveyard to the battlefield instead " +
@@ -41,12 +41,11 @@ public class Stitch_Together {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[1];
-            final boolean threshold = player.getGraveyard().size() >= 7;
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {              
-                    if (threshold) {
+                    if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
                         game.doAction(new MagicReanimateAction(player,targetCard,MagicPlayCardAction.NONE));
                     } else {
                         game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
