@@ -16,34 +16,35 @@ import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Admonition_Angel {
-    public static final MagicWhenOtherComesIntoPlayTrigger T1 = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T1 = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        protected MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            if (player == played.getController() && played.isLand()) {
-                final MagicTargetFilter targetFilter = 
-                        new MagicTargetFilter.MagicOtherPermanentTargetFilter(
-                        MagicTargetFilter.TARGET_NONLAND_PERMANENT,permanent);
-                final MagicTargetChoice targetChoice = 
-                        new MagicTargetChoice(
-                        targetFilter,true,MagicTargetHint.None,"another target nonland permanent to exile");
-                final MagicChoice mayChoice = 
-                        new MagicMayChoice(
+            final MagicTargetFilter targetFilter = 
+                    new MagicTargetFilter.MagicOtherPermanentTargetFilter(
+                        MagicTargetFilter.TARGET_NONLAND_PERMANENT,
+                        permanent);
+            final MagicTargetChoice targetChoice = 
+                    new MagicTargetChoice(
+                        targetFilter,
+                        true,
+                        MagicTargetHint.None,
+                        "another target nonland permanent to exile");
+            final MagicChoice mayChoice = 
+                    new MagicMayChoice(
                         player + " may exile another target nonland permanent.",
                         targetChoice);
-                return new MagicEvent(
-                    permanent,
-                    player,
-                    mayChoice,
-                    MagicExileTargetPicker.create(),
-                    new Object[]{permanent},
-                    this,
-                    player + " may$ exile another target nonland permanent$.");
-            }
-            return MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                player,
+                mayChoice,
+                MagicExileTargetPicker.create(),
+                MagicEvent.NO_DATA,
+                this,
+                player + " may$ exile another target nonland permanent$.");
         }
         
         @Override
@@ -55,7 +56,7 @@ public class Admonition_Angel {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetPermanent(game,choiceResults,1,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent target) {
-                        game.doAction(new MagicExileUntilThisLeavesPlayAction((MagicPermanent)data[0],target));
+                        game.doAction(new MagicExileUntilThisLeavesPlayAction(event.getPermanent(),target));
                     }
                 });
             }
@@ -71,7 +72,7 @@ public class Admonition_Angel {
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
+                        MagicEvent.NO_DATA,
                         this,
                         clist.size() > 1 ?
                                 "Return exiled cards to the battlefield." :
@@ -85,8 +86,7 @@ public class Admonition_Angel {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[0];
-            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.Play));
+            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(event.getPermanent(),MagicLocationType.Play));
         }
     };
 }
