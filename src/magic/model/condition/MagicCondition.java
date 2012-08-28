@@ -265,6 +265,12 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition HELLBENT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getHandSize() == 0;
+        }
+    };
+    
     MagicCondition POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
