@@ -35,7 +35,7 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     
     public final boolean canPlay(final MagicGame game,final MagicSource source) {
         for (final MagicCondition condition : conditions) {
-            if (!condition.accept(game,source)) {
+            if (!condition.accept(source)) {
                 return false;
             }
         }

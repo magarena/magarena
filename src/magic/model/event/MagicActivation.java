@@ -108,7 +108,7 @@ public abstract class MagicActivation implements MagicEventAction, Comparable<Ma
         }
 
         for (final MagicCondition condition : conditions) {
-            if (!condition.accept(game,source)) {
+            if (!condition.accept(source)) {
                 return false;
             }
         }

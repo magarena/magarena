@@ -14,7 +14,8 @@ public class MagicArtificialCondition implements MagicCondition {
     }
 
     @Override
-    public boolean accept(final MagicGame game,final MagicSource source) {
-        return game.isArtificial()?artificialCondition.accept(game,source):normalCondition.accept(game,source);
+    public boolean accept(final MagicSource source) {
+        final MagicGame game = source.getGame();
+        return game.isArtificial()?artificialCondition.accept(source):normalCondition.accept(source);
     }
 }

@@ -60,7 +60,7 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
         }
         
         @Override
-        public boolean accept(final MagicGame game,final MagicSource source) {
+        public boolean accept(final MagicSource source) {
             return ((MagicPermanent)source).getCounters(MagicCounterType.Charge)<maximum;
         }        
     };

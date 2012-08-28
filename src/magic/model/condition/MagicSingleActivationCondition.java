@@ -14,7 +14,8 @@ public class MagicSingleActivationCondition implements MagicCondition {
     }
 
     @Override
-    public boolean accept(final MagicGame game,final MagicSource source) {
+    public boolean accept(final MagicSource source) {
+        final MagicGame game = source.getGame();
         return !game.getStack().hasActivationOnTop(source,act);
     }
 }

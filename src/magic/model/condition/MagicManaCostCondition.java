@@ -17,7 +17,7 @@ public class MagicManaCostCondition implements MagicCondition {
     }
 
     @Override
-    public boolean accept(final MagicGame game,final MagicSource source) {
+    public boolean accept(final MagicSource source) {
         final MagicPlayer player=source.getController();
         final MagicBuilderManaCost builderCost;
         if (player.getBuilderCost().isEmpty()) {
@@ -26,6 +26,6 @@ public class MagicManaCostCondition implements MagicCondition {
             builderCost=new MagicBuilderManaCost(player.getBuilderCost());
             cost.addTo(builderCost);
         }        
-        return new MagicPayManaCostResultBuilder(game,player,builderCost).hasResults();
+        return new MagicPayManaCostResultBuilder(source.getGame(),player,builderCost).hasResults();
     }
 }
