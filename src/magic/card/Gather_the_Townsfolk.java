@@ -9,6 +9,7 @@ import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.condition.MagicCondition;
 
 public class Gather_the_Townsfolk {
     public static final MagicSpellCardEvent S = new MagicSpellCardEvent() {
@@ -20,7 +21,7 @@ public class Gather_the_Townsfolk {
             return new MagicEvent(
                     cardOnStack.getCard(),
                     player,
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     player + " puts two 1/1 white Human " +
                     "creature tokens onto the battlefield.");
@@ -32,11 +33,10 @@ public class Gather_the_Townsfolk {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicMoveCardAction((MagicCardOnStack)data[0]));
-            final MagicPlayer player = (MagicPlayer)data[1];
-            int amount = (player.getLife() <= 5) ? 5 : 2;
+            int amount = MagicCondition.FATEFUL_HOUR.accept(event.getSource()) ? 5 : 2;
             for (;amount>0;amount--) {
                 game.doAction(new MagicPlayTokenAction(
-                        player,
+                        event.getPlayer(),
                         TokenCardDefinitions.get("Human1")));
             }
         }

@@ -259,6 +259,12 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition FATEFUL_HOUR = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getLife() <= 5;
+        }
+    };
+    
     MagicCondition POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
