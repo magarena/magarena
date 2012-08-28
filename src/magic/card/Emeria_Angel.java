@@ -24,7 +24,7 @@ public class Emeria_Angel {
                             MagicSimpleMayChoice.PLAY_TOKEN,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{player},
+                    MagicEvent.NO_DATA,
                     this,
                     player + " may$ put a 1/1 white Bird creature " +
                     "token with flying onto the battlefield.");
@@ -38,7 +38,7 @@ public class Emeria_Angel {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicPlayTokenAction(
-                        (MagicPlayer)data[0],
+                        event.getPlayer(),
                         TokenCardDefinitions.get("Bird1")));
             }
         }        
