@@ -128,6 +128,10 @@ public class MagicEvent implements MagicCopyable {
         return source;
     }
     
+    public final MagicPermanent getPermanent() {
+        return (MagicPermanent)source;
+    }
+    
     public final MagicPlayer getPlayer() {
         return player;
     }
