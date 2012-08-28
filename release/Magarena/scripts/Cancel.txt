@@ -6,4 +6,4 @@ rarity=C
 type=Instant
 cost={1}{U}{U}
 timing=counter
-requires_card_code
+effect=Counter target spell
