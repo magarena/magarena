@@ -1,6 +1,7 @@
 name=Mox Jet
 url=http://magiccards.info/cedi/en/264.html
-image=http://magiccards.info/cedi/en/264.html
+image=http://magiccards.info/scans/en/cedi/264.jpg
+ignore=12475
 value=4.661
 rarity=R
 type=Artifact

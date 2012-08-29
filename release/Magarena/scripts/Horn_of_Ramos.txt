@@ -1,6 +1,7 @@
 name=Horn of Ramos
 url=http://magiccards.info/mm/en/299.html
-image=http://magiccards.info/mm/en/299.html
+image=http://magiccards.info/scans/en/mm/299.jpg
+ignore=12606
 value=3.404
 rarity=R
 type=Artifact
