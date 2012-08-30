@@ -19,7 +19,6 @@ public class Doomed_Traveler {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 white Spirit creature token with flying onto the battlefield.") :
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Doomed_Traveler {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Spirit2")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Spirit2")));
         }
     };
 }
