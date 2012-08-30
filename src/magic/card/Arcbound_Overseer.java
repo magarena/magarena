@@ -21,7 +21,6 @@ public class Arcbound_Overseer {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts a +1/+1 counter on each creature " +
                         "with modular he or she controls."):
@@ -33,7 +32,7 @@ public class Arcbound_Overseer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_MODULAR_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
