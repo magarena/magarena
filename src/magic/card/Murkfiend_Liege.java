@@ -47,7 +47,6 @@ public class Murkfiend_Liege {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         "Untap all green and/or blue creatures you control."):
                 MagicEvent.NONE;
@@ -59,7 +58,7 @@ public class Murkfiend_Liege {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature=(MagicPermanent)target;
                 final int colorFlags=creature.getColorFlags();
