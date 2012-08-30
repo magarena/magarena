@@ -61,7 +61,6 @@ public class Ulamog__the_Infinite_Gyre {
                 //source may be permanent if on battlefield or card (exile, hand)
                 permanent.isValid() ? permanent : triggerData.card,
                 player,
-                new Object[]{player},
                 this,
                 player + " shuffles his or her graveyard into his or her library.");
         }
@@ -72,7 +71,7 @@ public class Ulamog__the_Infinite_Gyre {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
                 game.doAction(new MagicRemoveCardAction(
