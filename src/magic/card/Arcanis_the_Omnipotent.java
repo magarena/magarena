@@ -32,7 +32,6 @@ public class Arcanis_the_Omnipotent {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws three cards.");
         }
@@ -42,7 +41,7 @@ public class Arcanis_the_Omnipotent {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],3));
+            game.doAction(new MagicDrawAction(event.getPlayer(),3));
         }
     };
     
