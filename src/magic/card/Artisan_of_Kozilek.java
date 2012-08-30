@@ -30,7 +30,6 @@ public class Artisan_of_Kozilek {
                             "from his or her graveyard to the battlefield.",
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     player + " may$ return target creature card$ from " +
                     "his or her graveyard to the battlefield.");
@@ -46,7 +45,7 @@ public class Artisan_of_Kozilek {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicReanimateAction(
-                                (MagicPlayer)data[0],
+                                event.getPlayer(),
                                 card,
                                 MagicPlayCardAction.NONE));
                     }
