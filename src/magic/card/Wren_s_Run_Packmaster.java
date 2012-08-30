@@ -46,7 +46,6 @@ public class Wren_s_Run_Packmaster {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 2/2 green Wolf creature token onto the battlefield.");
         }
@@ -58,7 +57,7 @@ public class Wren_s_Run_Packmaster {
                 final Object[] data,
                 final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Wolf")));
         }
     };
