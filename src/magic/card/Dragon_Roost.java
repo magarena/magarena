@@ -32,7 +32,6 @@ public class Dragon_Roost {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Put a 5/5 red Dragon creature token with flying onto the battlefield.");
         }
@@ -43,7 +42,7 @@ public class Dragon_Roost {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Dragon5")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Dragon5")));
         }
     };
 }
