@@ -29,7 +29,6 @@ public class Victory_s_Herald {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Attacking creatures gain flying and lifelink until end of turn."):
                 MagicEvent.NONE;
@@ -43,7 +42,7 @@ public class Victory_s_Herald {
                 final Object[] choiceResults) {
 
             final Collection<MagicTarget> targets = game.filterTargets(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     MagicTargetFilter.TARGET_ATTACKING_CREATURE);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicSetAbilityAction(

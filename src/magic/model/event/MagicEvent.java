@@ -112,6 +112,14 @@ public class MagicEvent implements MagicCopyable {
         this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),data,action,description);
     }
     
+    public MagicEvent(
+            final MagicSource source,
+            final MagicPlayer player,
+            final MagicEventAction action,
+            final String description) {
+        this(source,player,NO_CHOICES,MagicDefaultTargetPicker.create(),NO_DATA,action,description);
+    }
+    
     private MagicEvent(final MagicCopyMap copyMap, final MagicEvent sourceEvent) {
         copyMap.put(sourceEvent,this);
         
