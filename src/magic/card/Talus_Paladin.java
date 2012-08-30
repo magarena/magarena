@@ -33,7 +33,6 @@ public class Talus_Paladin {
                                 MagicSimpleMayChoice.PUMP,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{player},
                         this,
                         player + " may$ have Ally creatures he or " +
                         "she controls gain lifelink until end of turn.") :
@@ -48,7 +47,7 @@ public class Talus_Paladin {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final Collection<MagicTarget> targets =
-                        game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
+                        game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_ALLY_YOU_CONTROL);
                     for (final MagicTarget target : targets) {
                         final MagicPermanent creature = (MagicPermanent)target;
                         game.doAction(new MagicSetAbilityAction(creature,MagicAbility.LifeLink));
