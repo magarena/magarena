@@ -21,13 +21,12 @@ public class Ophidian {
                         permanent,
                         player,
                         new MagicSimpleMayChoice(
-                                player + " may draw a card.",
-                                MagicSimpleMayChoice.DRAW_CARDS,
-                                1,
-                                MagicSimpleMayChoice.DEFAULT_NONE),
-                                new Object[]{player,permanent},
-                                this,
-                                player + " may$ draw a card.");
+                            player + " may draw a card.",
+                            MagicSimpleMayChoice.DRAW_CARDS,
+                            1,
+                            MagicSimpleMayChoice.DEFAULT_NONE),
+                        this,
+                        player + " may$ draw a card.");
             }
             return MagicEvent.NONE;
         }
@@ -39,9 +38,9 @@ public class Ophidian {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicDrawAction(event.getPlayer(),1));
                 game.doAction(new MagicChangeStateAction(
-                        (MagicPermanent)data[1],
+                        event.getPermanent(),
                         MagicPermanentState.NoCombatDamage,true));
             }
         }
