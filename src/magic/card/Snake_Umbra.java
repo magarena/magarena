@@ -26,7 +26,6 @@ public class Snake_Umbra {
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
                         MagicSimpleMayChoice.DEFAULT_NONE),
-                    new Object[]{player},
                     this,
                     player + " may$ draw a card.") :
                 MagicEvent.NONE;
@@ -38,7 +37,7 @@ public class Snake_Umbra {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }
     };
