@@ -23,7 +23,6 @@ public class Realm_Razer {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,permanent},
                     this,
                     "Exile all lands.");
         }
@@ -34,10 +33,10 @@ public class Realm_Razer {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                    game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_LAND);
+                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_LAND);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                        (MagicPermanent)data[1],
+                        event.getPermanent(),
                         (MagicPermanent)target));
             }
         }
@@ -52,7 +51,6 @@ public class Realm_Razer {
                 return new MagicEvent(
                         permanent,
                         permanent.getController(),
-                        new Object[]{permanent},
                         this,
                         clist.size() > 1 ?
                                 "Return exiled cards to the battlefield." :
@@ -67,7 +65,7 @@ public class Realm_Razer {
                 final Object data[],
                 final Object[] choiceResults) {
             game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(
-                    (MagicPermanent)data[0],
+                    event.getPermanent(),
                     MagicLocationType.Play,
                     MagicPlayCardAction.TAPPED));
         }
