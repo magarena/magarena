@@ -31,7 +31,6 @@ public class Treva__the_Renewer {
                             "You may pay {2}{W}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO_WHITE),
                             MagicColorChoice.MOST_INSTANCE),
-                        new Object[]{player},
                         this,
                         "You may$ pay {2}{W}$. If you do, choose a color$. " + 
                         player + " gains 1 life for each permanent of that color."):
@@ -45,7 +44,7 @@ public class Treva__the_Renewer {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 int life=0;
-                final MagicPlayer player=(MagicPlayer)data[0];
+                final MagicPlayer player=event.getPlayer();
                 final MagicColor color=(MagicColor)choiceResults[2];
                 final Collection<MagicTarget> targets=game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT);
                 for (final MagicTarget target : targets) {
