@@ -22,7 +22,6 @@ public class Midnight_Banshee {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         "Put a -1/-1 counter on each nonblack creature."):
                 MagicEvent.NONE;
@@ -34,7 +33,7 @@ public class Midnight_Banshee {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_NONBLACK_CREATURE);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_NONBLACK_CREATURE);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicChangeCountersAction((MagicPermanent)target,MagicCounterType.MinusOne,1,true));
             }
