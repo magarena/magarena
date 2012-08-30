@@ -19,7 +19,6 @@ public class Subversion {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         "Your opponent loses 1 life. You gain 1 life."):
                 MagicEvent.NONE;
@@ -30,7 +29,7 @@ public class Subversion {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1));
             game.doAction(new MagicChangeLifeAction(player,1));
         }        
