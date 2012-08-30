@@ -21,7 +21,6 @@ public class Quietus_Spike {
                 new MagicEvent(
                         permanent,
                         (MagicPlayer)target,
-                        new Object[]{target},
                         this,
                         "You lose half your life, rounded up."):
                 MagicEvent.NONE;
@@ -32,7 +31,7 @@ public class Quietus_Spike {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicChangeLifeAction(player,-(player.getLife()+1)/2));
         }
     };
