@@ -48,7 +48,6 @@ public class Exhume {
                             player.getOpponent(),
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                             new MagicGraveyardTargetPicker(true),
-                            new Object[]{player.getOpponent()},
                             EVENT_ACTION,
                             ""));
                 }
@@ -63,7 +62,7 @@ public class Exhume {
                     final Object[] choiceResults) {
                 event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        final MagicPlayer opponent = (MagicPlayer)data[0];
+                        final MagicPlayer opponent = event.getPlayer();
                         game.doAction(new MagicReanimateAction(opponent,card,MagicPlayCardAction.NONE));
                     }
                 });
