@@ -27,7 +27,6 @@ public class Edric__Spymaster_of_Trest {
                                         MagicSimpleMayChoice.DRAW_CARDS,
                                         1,
                                         MagicSimpleMayChoice.DEFAULT_NONE),
-                                    new Object[]{player},
                                     this,
                                     player + " may$ draw a card.") :
                                 MagicEvent.NONE;
@@ -40,7 +39,7 @@ public class Edric__Spymaster_of_Trest {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+                game.doAction(new MagicDrawAction(event.getPlayer(),1));
             }
         }
     };
