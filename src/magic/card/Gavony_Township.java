@@ -39,7 +39,6 @@ public class Gavony_Township {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source.getController()},
                     this,
                     "Put a +1/+1 counter on each creature you control.");
         }
@@ -49,7 +48,7 @@ public class Gavony_Township {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets =
                 game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
