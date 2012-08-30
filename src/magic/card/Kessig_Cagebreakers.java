@@ -20,7 +20,6 @@ public class Kessig_Cagebreakers {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts a 2/2 green Wolf creature token onto " +
                         "the battlefield tapped and attacking for each creature " +
@@ -33,7 +32,7 @@ public class Kessig_Cagebreakers {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final int amount = game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD).size();
             for (int count=amount;count>0;count--) {
                 final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Wolf"),player);
