@@ -24,7 +24,7 @@ public class Withstand {
                     player,
                     MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
                     MagicPreventTargetPicker.getInstance(),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     "Prevent the next 3 damage that would be dealt to target creature or player$ this turn. Draw a card.");
         }
@@ -41,7 +41,7 @@ public class Withstand {
                     game.doAction(new MagicPreventDamageAction(target,3));
                 }
             });
-            game.doAction(new MagicDrawAction((MagicPlayer)data[1],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
