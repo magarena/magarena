@@ -15,7 +15,6 @@ public class Hollowhenge_Scavenger {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{player},
                             this,
                             player + " gains 5 life.") :
                MagicEvent.NONE;
@@ -26,7 +25,7 @@ public class Hollowhenge_Scavenger {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],5));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),5));
         }
     };
 }
