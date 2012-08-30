@@ -19,7 +19,6 @@ public class Mausoleum_Guard {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts two 1/1 white Spirit creature " +
                     "tokens with flying onto the battlefield.") :
@@ -32,8 +31,8 @@ public class Mausoleum_Guard {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Spirit2")));
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Spirit2")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Spirit2")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Spirit2")));
         }
     };
 }
