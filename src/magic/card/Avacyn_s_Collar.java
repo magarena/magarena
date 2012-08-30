@@ -23,7 +23,6 @@ public class Avacyn_s_Collar {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 white Spirit creature " +
                     "token with flying onto the battlefield."):
@@ -35,7 +34,7 @@ public class Avacyn_s_Collar {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(
                     player,
                     TokenCardDefinitions.get("Spirit2")));
