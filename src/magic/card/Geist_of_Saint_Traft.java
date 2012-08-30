@@ -21,7 +21,6 @@ public class Geist_of_Saint_Traft {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts a 4/4 white Angel creature token with " +
                         "flying onto the battlefield tapped and attacking. " +
@@ -34,7 +33,7 @@ public class Geist_of_Saint_Traft {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("Angel4"),player);
             final MagicPlayCardAction action = new MagicPlayCardAction(card,player,MagicPlayCardAction.TAPPED_ATTACKING);
             game.doAction(action);
