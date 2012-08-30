@@ -28,7 +28,6 @@ public class Deranged_Hermit {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts four 1/1 green Squirrel creature tokens onto the battlefield.");
         }
@@ -41,7 +40,7 @@ public class Deranged_Hermit {
                 final Object[] choiceResults) {
             for (int i=4;i>0;i--) {
                 game.doAction(new MagicPlayTokenAction(
-                        (MagicPlayer)data[0],
+                        event.getPlayer(),
                         TokenCardDefinitions.get("Squirrel1")));
             }
         }        
