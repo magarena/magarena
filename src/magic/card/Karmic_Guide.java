@@ -24,7 +24,6 @@ public class Karmic_Guide {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     "Return target creature card$ from " +
                     "your graveyard to the battlefield.");
@@ -39,7 +38,7 @@ public class Karmic_Guide {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard targetCard) {
                     game.doAction(new MagicReanimateAction(
-                            (MagicPlayer)data[0],
+                            event.getPlayer(),
                             targetCard,
                             MagicPlayCardAction.NONE));
                 }
