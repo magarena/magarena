@@ -18,7 +18,6 @@ public class Highway_Robber {
                     permanent,
                     player,
                     MagicTargetChoice.TARGET_OPPONENT,
-                    new Object[]{player},
                     this,
                     "Target opponent$ loses 2 life and " + player + " gains 2 life.");
         }
@@ -31,7 +30,7 @@ public class Highway_Robber {
             event.processTargetPlayer(game,choiceResults,0,new MagicPlayerAction() {
                 public void doAction(final MagicPlayer player) {
                     game.doAction(new MagicChangeLifeAction(player,-2));
-                    game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
                 }
             });
         }        
