@@ -16,7 +16,6 @@ public class Pride_Guardian {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " gains 3 life."):
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Pride_Guardian {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],3));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
         }
     };
 }
