@@ -66,7 +66,6 @@ public class Twilight_Drover {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts two 1/1 white Spirit creature " +
                     "tokens with flying onto the battlefield.");
@@ -74,10 +73,10 @@ public class Twilight_Drover {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Spirit2")));
             game.doAction(new MagicPlayTokenAction(
-                    (MagicPlayer)data[0],
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Spirit2")));
         }
     };
