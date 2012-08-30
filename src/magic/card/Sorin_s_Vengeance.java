@@ -27,7 +27,7 @@ public class Sorin_s_Vengeance {
                     player,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
                     new MagicDamageTargetPicker(10),
-                    new Object[]{cardOnStack,player},
+                    new Object[]{cardOnStack},
                     this,
                     card + " deals 10 damage to target player$ and " +
                     player + " gains 10 life.");
@@ -46,7 +46,7 @@ public class Sorin_s_Vengeance {
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[1],10));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),10));
         }
     };
 }
