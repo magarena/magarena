@@ -32,7 +32,6 @@ public class Urza_s_Blueprints {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " draws a card.");
         }
@@ -43,7 +42,7 @@ public class Urza_s_Blueprints {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
