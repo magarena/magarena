@@ -50,7 +50,6 @@ public class Angelheart_Vial {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " gains 2 life and draws a card");
         }
@@ -61,8 +60,8 @@ public class Angelheart_Vial {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 
