@@ -29,7 +29,6 @@ public class Teneb__the_Harvester {
                             "You may pay {2}{B}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO_BLACK),
                             MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS),
-                        new Object[]{player},
                         this,
                         "You may$ pay {2}{B}$. If you do, put target creature card$ " + 
                         "in a graveyard into play under your control."):
@@ -45,7 +44,7 @@ public class Teneb__the_Harvester {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,2,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                        game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
                     }                
                 });
             }
