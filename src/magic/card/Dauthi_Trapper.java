@@ -32,7 +32,7 @@ public class Dauthi_Trapper {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    MagicTargetChoice.POS_TARGET_CREATURE,
+                    MagicTargetChoice.TARGET_CREATURE,
                     MagicShadowTargetPicker.getInstance(),
                     MagicEvent.NO_DATA,
                     this,
