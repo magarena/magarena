@@ -20,7 +20,6 @@ public class Seedborn_Muse {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         "Untap all permanents you control."):
                 MagicEvent.NONE;
@@ -31,7 +30,7 @@ public class Seedborn_Muse {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets =
                 game.filterTargets(player,MagicTargetFilter.TARGET_PERMANENT_YOU_CONTROL);
             for (final MagicTarget target : targets) {
