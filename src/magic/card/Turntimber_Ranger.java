@@ -32,7 +32,6 @@ public class Turntimber_Ranger {
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
                         new MagicDestroyTargetPicker(false),
-                        new Object[]{player,permanent},
                         this,
                         player + " may$ put a 2/2 green Wolf creature " +
                         "token onto the battlefield. If you do, put a " +
@@ -48,10 +47,10 @@ public class Turntimber_Ranger {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicPlayTokenAction(
-                        (MagicPlayer)data[0],
+                        event.getPlayer(),
                         TokenCardDefinitions.get("Wolf")));
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[1],
+                        event.getPermanent(),
                         MagicCounterType.PlusOne,
                         1,
                         true));
