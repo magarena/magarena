@@ -18,7 +18,6 @@ public class Mogg_War_Marshal {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 red Goblin creature token onto the battlefield.");
         }    
@@ -28,7 +27,7 @@ public class Mogg_War_Marshal {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(
                     player,
                     TokenCardDefinitions.get("Goblin1")));
@@ -43,7 +42,6 @@ public class Mogg_War_Marshal {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 red Goblin creature token onto the battlefield.") :
                 MagicEvent.NONE;
@@ -54,7 +52,7 @@ public class Mogg_War_Marshal {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             game.doAction(new MagicPlayTokenAction(
                     player,
                     TokenCardDefinitions.get("Goblin1")));
