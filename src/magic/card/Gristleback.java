@@ -30,7 +30,6 @@ public class Gristleback {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player,source},
                     this,
                     player + " gains life equal to " + source + "'s power.");
         }
@@ -40,10 +39,9 @@ public class Gristleback {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPermanent permanent = (MagicPermanent)data[1];
             game.doAction(new MagicChangeLifeAction(
-                    (MagicPlayer)data[0],
-                    permanent.getPower()));
+                    event.getPlayer(),
+                    event.getPermanent().getPower()));
         }
     };
 }
