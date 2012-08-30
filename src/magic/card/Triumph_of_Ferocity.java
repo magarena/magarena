@@ -23,7 +23,6 @@ public class Triumph_of_Ferocity {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{player},
                             this,
                             player + " draws a card if he or she " +
                             "controls the creature with the greatest " +
