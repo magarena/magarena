@@ -32,7 +32,7 @@ public class Goblin_Bushwhacker {
                 final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets = 
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature=(MagicPermanent)target;
                 game.doAction(new MagicChangeTurnPTAction(creature,1,0));
@@ -71,7 +71,6 @@ public class Goblin_Bushwhacker {
                 final MagicEvent triggerEvent=new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         KICKED,
                         "Creatures " + player +
                         " controls get +1/+0 and gain haste until end of turn.");
