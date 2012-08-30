@@ -33,7 +33,6 @@ public class Dauntless_Escort {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Creatures " + player + " control are indestructible this turn.");
         }
@@ -44,7 +43,7 @@ public class Dauntless_Escort {
                 final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> creatures=
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget creature : creatures) {
                 game.doAction(new MagicSetAbilityAction((MagicPermanent)creature,MagicAbility.Indestructible));
             }
