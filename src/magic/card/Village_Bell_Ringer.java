@@ -18,7 +18,6 @@ public class Village_Bell_Ringer {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Untap all creatures you control.");
         }
@@ -28,7 +27,7 @@ public class Village_Bell_Ringer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets=
                 game.filterTargets(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
