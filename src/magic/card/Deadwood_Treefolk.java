@@ -23,7 +23,6 @@ public class Deadwood_Treefolk {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(false),
-                    new Object[]{player},
                     this,
                     "Return another target creature card$ from your graveyard to your hand.");
         }
