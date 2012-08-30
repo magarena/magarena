@@ -16,7 +16,6 @@ public class Grave_Titan {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts two 2/2 black Zombie creature tokens onto the battlefield.");
         }
@@ -26,7 +25,7 @@ public class Grave_Titan {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
         }        
@@ -40,7 +39,6 @@ public class Grave_Titan {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts two 2/2 black Zombie creature tokens onto the battlefield."):
                 MagicEvent.NONE;
@@ -51,7 +49,7 @@ public class Grave_Titan {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Zombie")));
         }        
