@@ -17,7 +17,6 @@ public class Stonybrook_Schoolmaster {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts a 1/1 blue Merfolk Wizard creature token onto the battlefield.") :
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Stonybrook_Schoolmaster {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Merfolk Wizard")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Merfolk Wizard")));
         }
     };
 }
