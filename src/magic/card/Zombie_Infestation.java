@@ -32,7 +32,6 @@ public class Zombie_Infestation {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 2/2 black Zombie creature token onto the battlefield.");
         }
@@ -42,9 +41,8 @@ public class Zombie_Infestation {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
             game.doAction(new MagicPlayTokenAction(
-                    player,
+                    event.getPlayer(),
                     TokenCardDefinitions.get("Zombie")));
         }
     };
