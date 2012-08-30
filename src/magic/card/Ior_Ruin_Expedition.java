@@ -17,15 +17,14 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicRemoveCounterEvent;
 import magic.model.event.MagicSacrificeEvent;
 import magic.model.event.MagicTiming;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Ior_Ruin_Expedition {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
+        public MagicEvent getEvent(final MagicPermanent permanent) {
             final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     player,
                     new MagicSimpleMayChoice(
@@ -33,10 +32,9 @@ public class Ior_Ruin_Expedition {
                             MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
                             1,
                             MagicSimpleMayChoice.DEFAULT_YES),
-                    new Object[]{permanent},
+                    MagicEvent.NO_DATA,
                     this,
-                    player + " may$ put a quest counter on " + permanent + ".") :
-                MagicEvent.NONE;
+                    player + " may$ put a quest counter on " + permanent + ".");
         }
         
         @Override
@@ -47,7 +45,7 @@ public class Ior_Ruin_Expedition {
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 game.doAction(new MagicChangeCountersAction(
-                        (MagicPermanent)data[0],
+                        event.getPermanent(),
                         MagicCounterType.Charge,
                         1,
                         true));
