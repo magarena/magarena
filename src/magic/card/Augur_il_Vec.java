@@ -28,7 +28,6 @@ public class Augur_il_Vec {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " gains 4 life.");
         }
@@ -38,7 +37,7 @@ public class Augur_il_Vec {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],4));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),4));
         }
     };
 }
