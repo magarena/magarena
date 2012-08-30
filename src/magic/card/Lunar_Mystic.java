@@ -29,7 +29,6 @@ public class Lunar_Mystic {
                         new MagicMayChoice(
                                 "You may pay {1}.",
                                 new MagicPayManaCostChoice(MagicManaCost.ONE)),
-                        new Object[]{player},
                         this,
                         player + " may$ pay {1}$. If you do, draw a card."):
                 MagicEvent.NONE;
