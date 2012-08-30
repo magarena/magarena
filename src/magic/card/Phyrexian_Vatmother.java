@@ -17,7 +17,6 @@ public class Phyrexian_Vatmother {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " gets a poison counter."):
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Phyrexian_Vatmother {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangePoisonAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangePoisonAction(event.getPlayer(),1));
         }
     };
 }
