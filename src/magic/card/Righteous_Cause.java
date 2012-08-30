@@ -16,7 +16,6 @@ public class Righteous_Cause {
             return new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " gains 1 life.");
         }
@@ -27,7 +26,7 @@ public class Righteous_Cause {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
         }
     };
 }
