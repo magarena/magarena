@@ -47,7 +47,6 @@ public class Seance {
                         player + " may exile target creature card from your graveyard.",
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                         new MagicGraveyardTargetPicker(true),
-                new Object[]{player},
                 this,
                 player + " may$ exile target creature card$ from his or her graveyard. " +
                 "If he or she does, put a token onto the battlefield that's a copy " +
@@ -64,7 +63,7 @@ public class Seance {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 event.processTargetCard(game,choiceResults,1,new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        final MagicPlayer player=(MagicPlayer)data[0];
+                        final MagicPlayer player=event.getPlayer();
                         game.doAction(new MagicRemoveCardAction(
                                 card,
                                 MagicLocationType.Graveyard));
