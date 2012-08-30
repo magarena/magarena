@@ -16,7 +16,6 @@ public class Slith_Strider {
                     new MagicEvent(
                             permanent,
                             player,
-                            new Object[]{player},
                             this,
                             player + " draws a card."):
                     MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Slith_Strider {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicDrawAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicDrawAction(event.getPlayer(),1));
         }
     };
 }
