@@ -47,7 +47,6 @@ public class Mobilization {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts a 1/1 white Soldier creature token onto the battlefield.");
         }
@@ -58,7 +57,7 @@ public class Mobilization {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Soldier")));
+            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Soldier")));
         }
     };
 }
