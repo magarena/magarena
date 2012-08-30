@@ -27,7 +27,6 @@ public class Sheoldred__Whispering_One {
                     player,
                     MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     "Return target creature card$ from your graveyard to the battlefield.");
         }
@@ -39,7 +38,7 @@ public class Sheoldred__Whispering_One {
                 final Object[] choiceResults) {
             event.processTargetCard(game,choiceResults,0,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicReanimateAction((MagicPlayer)data[0],card,MagicPlayCardAction.NONE));
+                    game.doAction(new MagicReanimateAction(event.getPlayer(),card,MagicPlayCardAction.NONE));
                 }
             });
         }
