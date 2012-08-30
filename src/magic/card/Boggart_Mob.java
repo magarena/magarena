@@ -32,7 +32,6 @@ public class Boggart_Mob {
                                 MagicSimpleMayChoice.PLAY_TOKEN,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{player},
                         this,
                         player + " may$ put a 1/1 black Goblin Rogue " +
                         "creature token onto the battlefield."):
@@ -45,7 +44,7 @@ public class Boggart_Mob {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Goblin Rogue1")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Goblin Rogue1")));
             }
         }
     };
