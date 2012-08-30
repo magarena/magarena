@@ -7,23 +7,20 @@ import magic.model.action.MagicMillLibraryAction;
 import magic.model.action.MagicPlayerAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicLandfallTrigger;
 
 public class Hedron_Crab {
-    public static final MagicWhenOtherComesIntoPlayTrigger T = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final MagicLandfallTrigger T = new MagicLandfallTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-            final MagicPlayer player = permanent.getController();
-            return (player == played.getController() && played.isLand()) ?
-                new MagicEvent(
+        public MagicEvent getEvent(final MagicPermanent permanent) {
+            return new MagicEvent(
                     permanent,
-                    player,
+                    permanent.getController(),
                     MagicTargetChoice.TARGET_PLAYER,
                     MagicEvent.NO_DATA,
                     this,
                     "Target player$ puts the top three cards " +
-                    "of his or her library into his or her graveyard."):
-                MagicEvent.NONE;
+                    "of his or her library into his or her graveyard.");
         }
         
         @Override
