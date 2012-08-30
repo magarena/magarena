@@ -17,7 +17,6 @@ public class Pillory_of_the_Sleepless {
                 new MagicEvent(
                         enchanted,
                         player,
-                        new Object[]{player},
                         this,
                         enchanted.getController() + " loses 1 life.") :
                 MagicEvent.NONE;
@@ -28,7 +27,7 @@ public class Pillory_of_the_Sleepless {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],-1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-1));
         }
     };
 }
