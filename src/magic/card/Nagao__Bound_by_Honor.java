@@ -20,7 +20,6 @@ public class Nagao__Bound_by_Honor {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         "Samurai creatures " + player +
                         " controls get +1/+1 until end of turn.") :
@@ -34,7 +33,7 @@ public class Nagao__Bound_by_Honor {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                    game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL);
+                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_SAMURAI_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent creature = (MagicPermanent)target;
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));
