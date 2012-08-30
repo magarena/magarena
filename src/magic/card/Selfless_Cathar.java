@@ -34,7 +34,6 @@ public class Selfless_Cathar {
             return new MagicEvent(
                     source,
                     source.getController(),
-                    new Object[]{source.getController()},
                     this,
                     "Creatures " + source.getController() +
                     " controls get +1/+1 until end of turn.");
@@ -43,7 +42,7 @@ public class Selfless_Cathar {
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object[] data,final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                    game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 game.doAction(new MagicChangeTurnPTAction((MagicPermanent)target,1,1));
             }
