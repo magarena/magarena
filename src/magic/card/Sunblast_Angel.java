@@ -20,7 +20,6 @@ public class Sunblast_Angel {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     "Destroy all tapped creatures.");
         }
@@ -31,7 +30,7 @@ public class Sunblast_Angel {
                 final Object data[],
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets =
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_TAPPED_CREATURE);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_TAPPED_CREATURE);
             game.doAction(new MagicDestroyAction(targets));
         }
     };
