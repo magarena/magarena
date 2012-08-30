@@ -20,7 +20,6 @@ public class Endless_Ranks_of_the_Dead {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " puts X 2/2 black Zombie creature tokens onto the " +
                         "battlefield, where X is half the number of Zombies you control, rounded down"):
@@ -32,7 +31,7 @@ public class Endless_Ranks_of_the_Dead {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player = (MagicPlayer)data[0];
+            final MagicPlayer player = event.getPlayer();
             final Collection<MagicTarget> targets =
                     game.filterTargets(player,MagicTargetFilter.TARGET_ZOMBIE_YOU_CONTROL);
             final int amount = targets.size() / 2;
