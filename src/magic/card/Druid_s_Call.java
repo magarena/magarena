@@ -16,16 +16,16 @@ public class Druid_s_Call {
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
             final int amount = damage.getDealtAmount();
             final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
+            final MagicPlayer player = enchantedCreature.getController();
             return (damage.getTarget() == enchantedCreature) ?
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{enchantedCreature.getController(),amount},
+                    new Object[]{amount},
                     this,
-                    enchantedCreature.getController() + " puts " + amount +
+                    player + " puts " + amount +
                     " 1/1 green Squirrel creature tokens onto the battlefield.") :
                 MagicEvent.NONE;
         }
@@ -35,9 +35,9 @@ public class Druid_s_Call {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            for (int i=(Integer)data[1];i>0;i--) {
+            for (int i=(Integer)data[0];i>0;i--) {
                 game.doAction(new MagicPlayTokenAction(
-                        (MagicPlayer)data[0],
+                        event.getPlayer(),
                         TokenCardDefinitions.get("Squirrel1")));
             }
         }
