@@ -19,7 +19,7 @@ public class Soul_Link {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player,amount},
+                        new Object[]{amount},
                         this,
                         player + " gains " + amount + " life.") :
                 MagicEvent.NONE;
@@ -30,7 +30,7 @@ public class Soul_Link {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),(Integer)data[0]));
         }
     };
     
@@ -44,7 +44,8 @@ public class Soul_Link {
                 new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player,amount},this,
+                    new Object[]{amount},
+                    this,
                     player + " gains " + amount + " life.") :
                 MagicEvent.NONE;
         }
@@ -54,7 +55,7 @@ public class Soul_Link {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],(Integer)data[1]));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),(Integer)data[0]));
         }
     };
 }
