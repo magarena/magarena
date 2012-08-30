@@ -35,7 +35,6 @@ public class Loxodon_Hierarch {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     "Regenerate each creature you control.");
         }
@@ -46,7 +45,7 @@ public class Loxodon_Hierarch {
                 final Object[] data,
                 final Object[] choiceResults) {
             final Collection<MagicTarget> targets=
-                game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicTarget target : targets) {
                 final MagicPermanent permanent=(MagicPermanent)target;
                 if (permanent.canRegenerate()) {
