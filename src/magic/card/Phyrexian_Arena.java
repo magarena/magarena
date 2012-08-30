@@ -18,7 +18,6 @@ public class Phyrexian_Arena {
                 new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " draws a card and loses 1 life."):
                 MagicEvent.NONE;
@@ -29,7 +28,7 @@ public class Phyrexian_Arena {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicDrawAction(player,1));
             game.doAction(new MagicChangeLifeAction(player,-1));
         }
