@@ -28,7 +28,6 @@ public class Maul_Splicer {
             return new MagicEvent(
                     permanent,
                     player,
-                    new Object[]{player},
                     this,
                     player + " puts two 3/3 colorless Golem artifact creature tokens onto the battlefield.");
         }
@@ -39,7 +38,7 @@ public class Maul_Splicer {
                 final MagicEvent event,
                 final Object data[],
                 final Object[] choiceResults) {
-            final MagicPlayer player=(MagicPlayer)data[0];
+            final MagicPlayer player=event.getPlayer();
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
             game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("Golem3")));
         }        
