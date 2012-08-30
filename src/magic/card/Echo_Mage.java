@@ -57,7 +57,7 @@ public class Echo_Mage {
                     source,
                     player,
                     MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_SPELL,
-                    new Object[]{player,amount},
+                    new Object[]{amount},
                     this,
                     description);
         }
@@ -70,8 +70,8 @@ public class Echo_Mage {
                 final Object[] choiceResults) {
             event.processTargetCardOnStack(game,choiceResults,0,new MagicCardOnStackAction() {
                 public void doAction(final MagicCardOnStack targetSpell) {
-                    final MagicPlayer player=(MagicPlayer)data[0];
-                    final int amount=(Integer)data[1];
+                    final MagicPlayer player = event.getPlayer();
+                    final int amount=(Integer)data[0];
                     for (int count=amount;count>0;count--) {
                         game.doAction(new MagicCopyCardOnStackAction(player,targetSpell));
                     }
