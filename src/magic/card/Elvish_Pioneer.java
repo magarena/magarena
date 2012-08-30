@@ -26,7 +26,6 @@ public class Elvish_Pioneer {
                             player + " may put a basic land card from his or her hand into play tapped.",
                             MagicTargetChoice.TARGET_BASIC_LAND_CARD_FROM_HAND),
                     new MagicGraveyardTargetPicker(true),
-                    new Object[]{player},
                     this,
                     player + " may$ put a basic land card$ from his or her hand into play tapped.");
         }
@@ -41,7 +40,7 @@ public class Elvish_Pioneer {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
                         final MagicPlayCardAction action = 
-                                new MagicPlayCardAction(card,(MagicPlayer)data[0],MagicPlayCardAction.NONE);
+                                new MagicPlayCardAction(card,event.getPlayer(),MagicPlayCardAction.NONE);
                         game.doAction(action);
                         game.doAction(new MagicTapAction(action.getPermanent(),false));
                     }
