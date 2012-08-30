@@ -23,7 +23,6 @@ public class Drelnoch {
                                     MagicSimpleMayChoice.DRAW_CARDS,
                                     2,
                                     MagicSimpleMayChoice.DEFAULT_NONE),
-                            new Object[]{player},
                             this,
                             player + " may$ draw two cards."):
                     MagicEvent.NONE;
@@ -36,7 +35,7 @@ public class Drelnoch {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicDrawAction((MagicPlayer)data[0],2));
+                game.doAction(new MagicDrawAction(event.getPlayer(),2));
             }
         }
     };
