@@ -47,7 +47,6 @@ public class Beguiler_of_Wills {
                     player,
                     targetChoice,
                     MagicExileTargetPicker.create(),
-                    new Object[]{player},
                     this,
                     "Gain control of target creature$ with power less " +
                     "than or equal to the number of creatures you control.");
