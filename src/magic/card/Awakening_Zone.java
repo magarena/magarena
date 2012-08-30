@@ -25,7 +25,6 @@ public class Awakening_Zone {
                                 MagicSimpleMayChoice.PLAY_TOKEN,
                                 1,
                                 MagicSimpleMayChoice.DEFAULT_YES),
-                        new Object[]{player},
                         this,
                         player + " may$ put a 0/1 colorless Eldrazi Spawn " +
                         "creature token onto the battlefield. It has " +
@@ -39,7 +38,7 @@ public class Awakening_Zone {
                 final Object data[],
                 final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
-                game.doAction(new MagicPlayTokenAction((MagicPlayer)data[0],TokenCardDefinitions.get("Eldrazi Spawn")));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("Eldrazi Spawn")));
             }
         }        
     };
