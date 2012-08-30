@@ -32,7 +32,6 @@ public class Dromar__the_Banisher {
                             "You may pay {2}{U}.",
                             new MagicPayManaCostChoice(MagicManaCost.TWO_BLUE),
                             MagicColorChoice.UNSUMMON_INSTANCE),
-                        new Object[]{player},
                         this,
                         "You may$ pay {2}{U}$. If you do, choose a color$. " + 
                         "Return all creatures of that color to their owner's hand."):
@@ -43,8 +42,7 @@ public class Dromar__the_Banisher {
         public void executeEvent(final MagicGame game,final MagicEvent event,final Object data[],final Object[] choiceResults) {
             if (MagicMayChoice.isYesChoice(choiceResults[0])) {
                 final MagicColor color=(MagicColor)choiceResults[2];
-                final Collection<MagicTarget> targets=
-                    game.filterTargets((MagicPlayer)data[0],MagicTargetFilter.TARGET_CREATURE);
+                final Collection<MagicTarget> targets=game.filterTargets(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
                 for (final MagicTarget target : targets) {
                     final MagicPermanent creature=(MagicPermanent)target;
                     if (color.hasColor(creature.getColorFlags())) {
