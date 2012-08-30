@@ -33,7 +33,6 @@ public class Lighthouse_Chronologist {
                     new MagicEvent(
                         permanent,
                         player,
-                        new Object[]{player},
                         this,
                         player + " takes an extra turn after this one.") :
                     MagicEvent.NONE;
@@ -44,7 +43,7 @@ public class Lighthouse_Chronologist {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeExtraTurnsAction((MagicPlayer)data[0],1));
+            game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
         }
     };
 }
