@@ -32,7 +32,6 @@ public class Rejuvenation_Chamber {
             return new MagicEvent(
                     source,
                     player,
-                    new Object[]{player},
                     this,
                     player + " gains 2 life");
         }
@@ -43,7 +42,7 @@ public class Rejuvenation_Chamber {
                 final MagicEvent event,
                 final Object[] data,
                 final Object[] choiceResults) {
-            game.doAction(new MagicChangeLifeAction((MagicPlayer)data[0],2));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
         }
     };
 }
